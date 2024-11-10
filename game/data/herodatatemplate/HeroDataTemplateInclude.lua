@@ -1,0 +1,6 @@
+﻿BaseHeroDataTemplate = import("game.data.heroDataTemplate.BaseHeroDataTemplate")
+DefalutHeroDataTemplate = import("game.data.heroDataTemplate.DefalutHeroDataTemplate")
+TemplateHeroDataTemplate = import("game.data.heroDataTemplate.TemplateHeroDataTemplate")
+ForeignHeroDataTemplate = import("game.data.heroDataTemplate.ForeignHeroDataTemplate")
+PolyhedronHeroDataTemplate = import("game.data.heroDataTemplate.PolyhedronHeroDataTemplate")
+PreviewHeroDataTemplate = import("game.data.heroDataTemplate.PreviewHeroDataTemplate")
