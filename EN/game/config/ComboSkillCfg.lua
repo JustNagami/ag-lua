@@ -858,7 +858,26 @@
 			1095065
 		}
 	},
-	[51] = {
+	{
+		maxLevel = 3,
+		skill_id = 1028282,
+		end_prefab_path = "",
+		id = 50,
+		prefab_path = "comboskill_1119_1028",
+		cooperate_role_ids = {
+			1119,
+			1028
+		},
+		cooperate_thrown_ids = {
+			1119056,
+			1028062
+		},
+		hit_damage_percent_grp = {
+			50,
+			50
+		}
+	},
+	{
 		maxLevel = 3,
 		skill_id = 1284208,
 		end_prefab_path = "",
@@ -940,6 +959,7 @@
 		47,
 		48,
 		49,
+		50,
 		51,
 		53
 	}

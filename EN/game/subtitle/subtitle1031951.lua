@@ -85,7 +85,7 @@
 		{
 			start = 12.64,
 			content = "あ…その　えっと",
-			endTime = 17.52
+			endTime = 20.27
 		},
 		{
 			start = 17.31,
@@ -95,7 +95,7 @@
 		{
 			start = 25.31,
 			content = "タリンナ",
-			endTime = 26.56
+			endTime = 29.31
 		},
 		{
 			start = 26.52,
@@ -150,7 +150,7 @@
 		{
 			start = 59.18,
 			content = "あっ　ちょ…撮るなら一声かけてください！",
-			endTime = 62.22
+			endTime = 63.35
 		},
 		{
 			start = 61.35,

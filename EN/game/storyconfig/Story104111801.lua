@@ -150,7 +150,7 @@
 
 				SetActive(arg_1_1.leftNameGo_, true)
 
-				local var_4_33 = arg_1_1:FormatText(StoryNameCfg[703].name)
+				local var_4_33 = arg_1_1:FormatText(StoryNameCfg[1155].name)
 
 				arg_1_1.leftNameTxt_.text = var_4_33
 
@@ -356,7 +356,7 @@
 				arg_11_1.dialog_:SetActive(true)
 				SetActive(arg_11_1.leftNameGo_, true)
 
-				local var_14_2 = arg_11_1:FormatText(StoryNameCfg[703].name)
+				local var_14_2 = arg_11_1:FormatText(StoryNameCfg[1155].name)
 
 				arg_11_1.leftNameTxt_.text = var_14_2
 
@@ -722,7 +722,7 @@
 				arg_19_1.dialog_:SetActive(true)
 				SetActive(arg_19_1.leftNameGo_, true)
 
-				local var_22_8 = arg_19_1:FormatText(StoryNameCfg[703].name)
+				local var_22_8 = arg_19_1:FormatText(StoryNameCfg[1155].name)
 
 				arg_19_1.leftNameTxt_.text = var_22_8
 
@@ -844,7 +844,7 @@
 				arg_23_1.dialog_:SetActive(true)
 				SetActive(arg_23_1.leftNameGo_, true)
 
-				local var_26_2 = arg_23_1:FormatText(StoryNameCfg[703].name)
+				local var_26_2 = arg_23_1:FormatText(StoryNameCfg[1155].name)
 
 				arg_23_1.leftNameTxt_.text = var_26_2
 
@@ -1172,7 +1172,7 @@
 				arg_31_1.dialog_:SetActive(true)
 				SetActive(arg_31_1.leftNameGo_, true)
 
-				local var_34_8 = arg_31_1:FormatText(StoryNameCfg[703].name)
+				local var_34_8 = arg_31_1:FormatText(StoryNameCfg[1155].name)
 
 				arg_31_1.leftNameTxt_.text = var_34_8
 
@@ -1472,7 +1472,7 @@
 				arg_39_1.dialog_:SetActive(true)
 				SetActive(arg_39_1.leftNameGo_, true)
 
-				local var_42_8 = arg_39_1:FormatText(StoryNameCfg[703].name)
+				local var_42_8 = arg_39_1:FormatText(StoryNameCfg[1155].name)
 
 				arg_39_1.leftNameTxt_.text = var_42_8
 
@@ -1594,7 +1594,7 @@
 				arg_43_1.dialog_:SetActive(true)
 				SetActive(arg_43_1.leftNameGo_, true)
 
-				local var_46_2 = arg_43_1:FormatText(StoryNameCfg[703].name)
+				local var_46_2 = arg_43_1:FormatText(StoryNameCfg[1155].name)
 
 				arg_43_1.leftNameTxt_.text = var_46_2
 
@@ -2000,7 +2000,7 @@
 				arg_55_1.dialog_:SetActive(true)
 				SetActive(arg_55_1.leftNameGo_, true)
 
-				local var_58_8 = arg_55_1:FormatText(StoryNameCfg[703].name)
+				local var_58_8 = arg_55_1:FormatText(StoryNameCfg[1155].name)
 
 				arg_55_1.leftNameTxt_.text = var_58_8
 
@@ -2288,7 +2288,7 @@
 				arg_63_1.dialog_:SetActive(true)
 				SetActive(arg_63_1.leftNameGo_, true)
 
-				local var_66_8 = arg_63_1:FormatText(StoryNameCfg[703].name)
+				local var_66_8 = arg_63_1:FormatText(StoryNameCfg[1155].name)
 
 				arg_63_1.leftNameTxt_.text = var_66_8
 

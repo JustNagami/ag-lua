@@ -229,29 +229,33 @@ function var_0_0.GetNowAllRolePool(arg_14_0)
 		end
 	end
 
+	table.sort(var_14_1, function(arg_15_0, arg_15_1)
+		return DrawPoolCfg[arg_15_0].order < DrawPoolCfg[arg_15_1].order
+	end)
+
 	return var_14_1
 end
 
-function var_0_0.GetNowAllServantPool(arg_15_0)
-	local var_15_0 = var_0_0:GetNowAllPool()
-	local var_15_1 = {}
+function var_0_0.GetNowAllServantPool(arg_16_0)
+	local var_16_0 = var_0_0:GetNowAllPool()
+	local var_16_1 = {}
 
-	for iter_15_0, iter_15_1 in ipairs(var_15_0) do
-		if DrawPoolCfg[iter_15_1].pool_type == 2 then
-			table.insert(var_15_1, iter_15_1)
+	for iter_16_0, iter_16_1 in ipairs(var_16_0) do
+		if DrawPoolCfg[iter_16_1].pool_type == 2 then
+			table.insert(var_16_1, iter_16_1)
 		end
 	end
 
-	return var_15_1
+	return var_16_1
 end
 
-function var_0_0.GetRoleUpPoolID(arg_16_0, arg_16_1)
-	local var_16_0 = var_0_0:GetNowAllPool()
+function var_0_0.GetRoleUpPoolID(arg_17_0, arg_17_1)
+	local var_17_0 = var_0_0:GetNowAllPool()
 
-	for iter_16_0, iter_16_1 in ipairs(var_16_0) do
-		for iter_16_2, iter_16_3 in ipairs(var_0_2(iter_16_1)) do
-			if iter_16_3 == arg_16_1 then
-				return iter_16_1
+	for iter_17_0, iter_17_1 in ipairs(var_17_0) do
+		for iter_17_2, iter_17_3 in ipairs(var_0_2(iter_17_1)) do
+			if iter_17_3 == arg_17_1 then
+				return iter_17_1
 			end
 		end
 	end

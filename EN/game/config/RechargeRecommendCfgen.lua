@@ -1221,7 +1221,7 @@
 		info_desc = "",
 		title = "56509af537ef5d218095ce70a2a363c2",
 		sub_title = "f66a1fb63cd8c96f0d21e68018b3ec1e",
-		show_time = "2024.12.3-2025.1.6",
+		show_time = "",
 		icon = "100026",
 		order = 2,
 		jump = {

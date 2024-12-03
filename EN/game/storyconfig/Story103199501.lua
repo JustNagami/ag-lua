@@ -3829,45 +3829,35 @@
 				arg_91_1.dialogCg_.alpha = 1
 
 				arg_91_1.dialog_:SetActive(true)
-				SetActive(arg_91_1.leftNameGo_, true)
-
-				local var_94_2 = arg_91_1:FormatText(StoryNameCfg[699].name)
-
-				arg_91_1.leftNameTxt_.text = var_94_2
-
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_91_1.leftNameTxt_.transform)
+				SetActive(arg_91_1.leftNameGo_, false)
 
 				arg_91_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
 				arg_91_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_91_1:RecordName(arg_91_1.leftNameTxt_.text)
-				SetActive(arg_91_1.iconTrs_.gameObject, true)
-				arg_91_1.iconController_:SetSelectedState("hero")
-
-				arg_91_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_grandpaa")
-
+				arg_91_1:RecordName(arg_91_1:FormatText(GetTips("TIP_NARRATOR")))
+				SetActive(arg_91_1.iconTrs_.gameObject, false)
 				arg_91_1.callingController_:SetSelectedState("normal")
 
-				local var_94_3 = arg_91_1:GetWordFromCfg(319951023)
-				local var_94_4 = arg_91_1:FormatText(var_94_3.content)
+				local var_94_2 = arg_91_1:GetWordFromCfg(319951023)
+				local var_94_3 = arg_91_1:FormatText(var_94_2.content)
 
-				arg_91_1.text_.text = var_94_4
+				arg_91_1.text_.text = var_94_3
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_91_1.text_)
 
-				local var_94_5 = 44
-				local var_94_6 = utf8.len(var_94_4)
-				local var_94_7 = var_94_5 <= 0 and var_94_1 or var_94_1 * (var_94_6 / var_94_5)
+				local var_94_4 = 44
+				local var_94_5 = utf8.len(var_94_3)
+				local var_94_6 = var_94_4 <= 0 and var_94_1 or var_94_1 * (var_94_5 / var_94_4)
 
-				if var_94_7 > 0 and var_94_1 < var_94_7 then
-					arg_91_1.talkMaxDuration = var_94_7
+				if var_94_6 > 0 and var_94_1 < var_94_6 then
+					arg_91_1.talkMaxDuration = var_94_6
 
-					if var_94_7 + var_94_0 > arg_91_1.duration_ then
-						arg_91_1.duration_ = var_94_7 + var_94_0
+					if var_94_6 + var_94_0 > arg_91_1.duration_ then
+						arg_91_1.duration_ = var_94_6 + var_94_0
 					end
 				end
 
-				arg_91_1.text_.text = var_94_4
+				arg_91_1.text_.text = var_94_3
 				arg_91_1.typewritter.percent = 0
 
 				arg_91_1.typewritter:SetDirty()
@@ -3875,15 +3865,15 @@
 				arg_91_1:RecordContent(arg_91_1.text_.text)
 			end
 
-			local var_94_8 = math.max(var_94_1, arg_91_1.talkMaxDuration)
+			local var_94_7 = math.max(var_94_1, arg_91_1.talkMaxDuration)
 
-			if var_94_0 <= arg_91_1.time_ and arg_91_1.time_ < var_94_0 + var_94_8 then
-				arg_91_1.typewritter.percent = (arg_91_1.time_ - var_94_0) / var_94_8
+			if var_94_0 <= arg_91_1.time_ and arg_91_1.time_ < var_94_0 + var_94_7 then
+				arg_91_1.typewritter.percent = (arg_91_1.time_ - var_94_0) / var_94_7
 
 				arg_91_1.typewritter:SetDirty()
 			end
 
-			if arg_91_1.time_ >= var_94_0 + var_94_8 and arg_91_1.time_ < var_94_0 + var_94_8 + arg_94_0 then
+			if arg_91_1.time_ >= var_94_0 + var_94_7 and arg_91_1.time_ < var_94_0 + var_94_7 + arg_94_0 then
 				arg_91_1.typewritter.percent = 1
 
 				arg_91_1.typewritter:SetDirty()
@@ -3921,45 +3911,35 @@
 				arg_95_1.dialogCg_.alpha = 1
 
 				arg_95_1.dialog_:SetActive(true)
-				SetActive(arg_95_1.leftNameGo_, true)
-
-				local var_98_2 = arg_95_1:FormatText(StoryNameCfg[699].name)
-
-				arg_95_1.leftNameTxt_.text = var_98_2
-
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_95_1.leftNameTxt_.transform)
+				SetActive(arg_95_1.leftNameGo_, false)
 
 				arg_95_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
 				arg_95_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_95_1:RecordName(arg_95_1.leftNameTxt_.text)
-				SetActive(arg_95_1.iconTrs_.gameObject, true)
-				arg_95_1.iconController_:SetSelectedState("hero")
-
-				arg_95_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_grandpaa")
-
+				arg_95_1:RecordName(arg_95_1:FormatText(GetTips("TIP_NARRATOR")))
+				SetActive(arg_95_1.iconTrs_.gameObject, false)
 				arg_95_1.callingController_:SetSelectedState("normal")
 
-				local var_98_3 = arg_95_1:GetWordFromCfg(319951024)
-				local var_98_4 = arg_95_1:FormatText(var_98_3.content)
+				local var_98_2 = arg_95_1:GetWordFromCfg(319951024)
+				local var_98_3 = arg_95_1:FormatText(var_98_2.content)
 
-				arg_95_1.text_.text = var_98_4
+				arg_95_1.text_.text = var_98_3
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_95_1.text_)
 
-				local var_98_5 = 44
-				local var_98_6 = utf8.len(var_98_4)
-				local var_98_7 = var_98_5 <= 0 and var_98_1 or var_98_1 * (var_98_6 / var_98_5)
+				local var_98_4 = 44
+				local var_98_5 = utf8.len(var_98_3)
+				local var_98_6 = var_98_4 <= 0 and var_98_1 or var_98_1 * (var_98_5 / var_98_4)
 
-				if var_98_7 > 0 and var_98_1 < var_98_7 then
-					arg_95_1.talkMaxDuration = var_98_7
+				if var_98_6 > 0 and var_98_1 < var_98_6 then
+					arg_95_1.talkMaxDuration = var_98_6
 
-					if var_98_7 + var_98_0 > arg_95_1.duration_ then
-						arg_95_1.duration_ = var_98_7 + var_98_0
+					if var_98_6 + var_98_0 > arg_95_1.duration_ then
+						arg_95_1.duration_ = var_98_6 + var_98_0
 					end
 				end
 
-				arg_95_1.text_.text = var_98_4
+				arg_95_1.text_.text = var_98_3
 				arg_95_1.typewritter.percent = 0
 
 				arg_95_1.typewritter:SetDirty()
@@ -3967,15 +3947,15 @@
 				arg_95_1:RecordContent(arg_95_1.text_.text)
 			end
 
-			local var_98_8 = math.max(var_98_1, arg_95_1.talkMaxDuration)
+			local var_98_7 = math.max(var_98_1, arg_95_1.talkMaxDuration)
 
-			if var_98_0 <= arg_95_1.time_ and arg_95_1.time_ < var_98_0 + var_98_8 then
-				arg_95_1.typewritter.percent = (arg_95_1.time_ - var_98_0) / var_98_8
+			if var_98_0 <= arg_95_1.time_ and arg_95_1.time_ < var_98_0 + var_98_7 then
+				arg_95_1.typewritter.percent = (arg_95_1.time_ - var_98_0) / var_98_7
 
 				arg_95_1.typewritter:SetDirty()
 			end
 
-			if arg_95_1.time_ >= var_98_0 + var_98_8 and arg_95_1.time_ < var_98_0 + var_98_8 + arg_98_0 then
+			if arg_95_1.time_ >= var_98_0 + var_98_7 and arg_95_1.time_ < var_98_0 + var_98_7 + arg_98_0 then
 				arg_95_1.typewritter.percent = 1
 
 				arg_95_1.typewritter:SetDirty()
@@ -5358,7 +5338,7 @@
 				arg_131_1:ShowNextGo(false)
 			end
 
-			local var_134_19 = 0.1
+			local var_134_19 = 0.0166666666666667
 
 			if var_134_19 < arg_131_1.time_ and arg_131_1.time_ <= var_134_19 + arg_134_0 then
 				arg_131_1.var_.oldValueTypewriter = arg_131_1.fswtw_.percent
@@ -5366,8 +5346,8 @@
 				arg_131_1:ShowNextGo(false)
 			end
 
-			local var_134_20 = 0
-			local var_134_21 = 0
+			local var_134_20 = 2
+			local var_134_21 = 0.133333333333333
 			local var_134_22 = arg_131_1:GetWordFromCfg(319951033)
 			local var_134_23 = arg_131_1:FormatText(var_134_22.content)
 			local var_134_24, var_134_25 = arg_131_1:GetPercentByPara(var_134_23, 1)
@@ -5386,7 +5366,7 @@
 				end
 			end
 
-			local var_134_27 = 0
+			local var_134_27 = 0.133333333333333
 			local var_134_28 = math.max(var_134_27, arg_131_1.talkMaxDuration)
 
 			if var_134_19 <= arg_131_1.time_ and arg_131_1.time_ < var_134_19 + var_134_28 then
@@ -5407,7 +5387,7 @@
 				arg_131_1.typewritterCharCountI18N = var_134_25
 			end
 
-			local var_134_30 = 0.0166666666666667
+			local var_134_30 = 0.1
 
 			if var_134_30 < arg_131_1.time_ and arg_131_1.time_ <= var_134_30 + arg_134_0 then
 				arg_131_1.var_.oldValueTypewriter = arg_131_1.fswtw_.percent
@@ -5415,8 +5395,8 @@
 				arg_131_1:ShowNextGo(false)
 			end
 
-			local var_134_31 = 2
-			local var_134_32 = 0.133333333333333
+			local var_134_31 = 0
+			local var_134_32 = 0
 			local var_134_33 = arg_131_1:GetWordFromCfg(319951033)
 			local var_134_34 = arg_131_1:FormatText(var_134_33.content)
 			local var_134_35, var_134_36 = arg_131_1:GetPercentByPara(var_134_34, 1)
@@ -5435,7 +5415,7 @@
 				end
 			end
 
-			local var_134_38 = 0.133333333333333
+			local var_134_38 = 0
 			local var_134_39 = math.max(var_134_38, arg_131_1.talkMaxDuration)
 
 			if var_134_30 <= arg_131_1.time_ and arg_131_1.time_ < var_134_30 + var_134_39 then
@@ -5464,8 +5444,8 @@
 				local var_134_42 = arg_131_1.cswt_:GetComponent("RectTransform")
 
 				arg_131_1.cswt_.alignment = UnityEngine.TextAnchor.MiddleCenter
-				var_134_42.offsetMin = Vector2.New(410, 330)
-				var_134_42.offsetMax = Vector2.New(-400, -180)
+				var_134_42.offsetMin = Vector2.New(0, 330)
+				var_134_42.offsetMax = Vector2.New(0, -180)
 
 				local var_134_43 = arg_131_1:GetWordFromCfg(419082)
 				local var_134_44 = arg_131_1:FormatText(var_134_43.content)

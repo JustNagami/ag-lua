@@ -2891,6 +2891,52 @@
 			}
 		}
 	},
+	[1284] = {
+		idol_usable = 0,
+		idol_weight = "",
+		idol_base_attribute = "",
+		idol_passive_skill_list = "",
+		idol_style = "",
+		speed = 2.5,
+		idol_active_skill_list = "",
+		id = 1284,
+		skill_list = {
+			124,
+			113
+		},
+		level_reward = {
+			{
+				101
+			},
+			{
+				201
+			},
+			{
+				101
+			},
+			{
+				202
+			},
+			{
+				101
+			},
+			{
+				204
+			},
+			{
+				101
+			},
+			{
+				203
+			},
+			{
+				101
+			},
+			{
+				101
+			}
+		}
+	},
 	[1197] = {
 		idol_usable = 1,
 		speed = 2.5,
@@ -3079,6 +3125,7 @@
 		1138,
 		1139,
 		1068,
+		1284,
 		1197,
 		1132
 	}

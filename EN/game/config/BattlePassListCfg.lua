@@ -858,13 +858,12 @@
 		}
 	},
 	[20016] = {
-		prefab_path = "Widget/System/Passport/bg/passportBg_00055",
-		poster_ui = "TextureConfig/Passport/hero_s/Passport_icon_00055",
-		servant_list = "",
+		prefab_path = "Widget/System/Passport/bg/passportBg_00061",
+		poster_ui = "TextureConfig/Passport/hero_s/Passport_icon_00061",
 		battlepass_type = 16,
 		activity_id = 241001,
 		id = 20016,
-		slogan_ui = "I18NImg/%s/Passport/passpory_copy_00055",
+		slogan_ui = "I18NImg/%s/Passport/passpory_copy_00061",
 		extra_reward_01 = {},
 		extra_reward_02 = {
 			{
@@ -917,6 +916,14 @@
 				1,
 				1000
 			}
+		},
+		servant_list = {
+			2510009,
+			2520006,
+			2540006,
+			2530007,
+			2520003,
+			2540003
 		}
 	},
 	[20017] = {

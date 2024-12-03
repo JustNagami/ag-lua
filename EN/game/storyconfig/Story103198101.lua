@@ -6736,8 +6736,8 @@
 				local var_198_41 = arg_195_1.cswt_:GetComponent("RectTransform")
 
 				arg_195_1.cswt_.alignment = UnityEngine.TextAnchor.MiddleCenter
-				var_198_41.offsetMin = Vector2.New(410, 330)
-				var_198_41.offsetMax = Vector2.New(-400, -180)
+				var_198_41.offsetMin = Vector2.New(0, 330)
+				var_198_41.offsetMax = Vector2.New(0, -180)
 
 				local var_198_42 = arg_195_1:GetWordFromCfg(419056)
 				local var_198_43 = arg_195_1:FormatText(var_198_42.content)

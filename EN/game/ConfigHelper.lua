@@ -43,7 +43,8 @@ local var_0_1 = {
 	},
 	{
 		ShopCfg,
-		ShopCfg2
+		ShopCfg2,
+		ShopCfg3
 	}
 }
 

@@ -72,7 +72,12 @@ function var_0_0.AddUIListener(arg_5_0)
 		var_0_1 = OperationAction.GetOperationUrl("Facebook_PageId") or ""
 
 		if var_10_0 then
-			arg_5_0:SendMessageToFollow(1, var_0_2, var_10_0, var_0_1, var_0_3, var_0_4)
+			if GameToSDK.IsPCPlatform() then
+				Application.OpenURL(var_10_0)
+			else
+				arg_5_0:SendMessageToFollow(1, var_0_2, var_10_0, var_0_1, var_0_3, var_0_4)
+			end
+
 			SurveyAction.FollowPlatform(OperationConst.PLATFORM.FACEBOOK)
 		else
 			ShowTips("ERROR_NO_TEMPLATE")
@@ -86,7 +91,12 @@ function var_0_0.AddUIListener(arg_5_0)
 		var_0_4 = OperationAction.GetOperationUrl("DISCORDCLIENTSECRET") or ""
 
 		if var_11_0 then
-			arg_5_0:SendMessageToFollow(0, var_0_2, var_11_0, var_0_1, var_0_3, var_0_4)
+			if GameToSDK.IsPCPlatform() then
+				Application.OpenURL(var_11_0)
+			else
+				arg_5_0:SendMessageToFollow(0, var_0_2, var_11_0, var_0_1, var_0_3, var_0_4)
+			end
+
 			SurveyAction.FollowPlatform(OperationConst.PLATFORM.DISCORD)
 		else
 			ShowTips("ERROR_NO_TEMPLATE")
@@ -96,7 +106,12 @@ function var_0_0.AddUIListener(arg_5_0)
 		local var_12_0 = OperationAction.GetOperationUrl("FOLLOW_YOUTUBE")
 
 		if var_12_0 then
-			arg_5_0:SendMessageToFollow(2, var_0_2, var_12_0, var_0_1, var_0_3, var_0_4)
+			if GameToSDK.IsPCPlatform() then
+				Application.OpenURL(var_12_0)
+			else
+				arg_5_0:SendMessageToFollow(2, var_0_2, var_12_0, var_0_1, var_0_3, var_0_4)
+			end
+
 			SurveyAction.FollowPlatform(OperationConst.PLATFORM.YOUTUBE)
 		else
 			ShowTips("ERROR_NO_TEMPLATE")

@@ -808,6 +808,12 @@ function var_0_0.CheckSystemShow(arg_40_0)
 	if arg_40_0 == 401 then
 		return (TowerData:CheckTowerOver())
 	end
+
+	if arg_40_0 == 701 then
+		local var_40_5 = SPHeroChallengeData:GetActivityData(ActivityConst.ACTIVITY_HERO_CHALLENGE_3_1)
+
+		return var_40_5 and not var_40_5:CheckDailyScheduleAwardReceived() and (not var_40_5:CheckHasReceiveHeroAward() or not var_40_5:CheckHasReceiveWeaponAward())
+	end
 end
 
 function var_0_0.GetSystemRewardInfo(arg_41_0)
@@ -915,6 +921,14 @@ function var_0_0.GetSystemRewardInfo(arg_41_0)
 	if arg_41_0 == 305 then
 		var_41_0 = 40415
 		var_41_1 = 40310
+	end
+
+	if arg_41_0 == 701 then
+		var_41_0 = SPHeroChallengeData.activityCfg[ActivityConst.ACTIVITY_HERO_CHALLENGE_3_1].heroID or 0
+
+		local var_41_16 = ShopCfg[SPHeroChallengeData.activityCfg[ActivityConst.ACTIVITY_HERO_CHALLENGE_3_1].shopItemID]
+
+		var_41_1 = var_41_16 and var_41_16.give_id or 0
 	end
 
 	return {

@@ -10846,11 +10846,11 @@
 		arg_285_1.frameCnt_ = 0
 		arg_285_1.state_ = "playing"
 		arg_285_1.curTalkId_ = 319501070
-		arg_285_1.duration_ = 8.233
+		arg_285_1.duration_ = 8.166
 
 		local var_285_0 = {
 			zh = 3.7,
-			ja = 8.233
+			ja = 8.166
 		}
 		local var_285_1 = manager.audio:GetLocalizationFlag()
 
@@ -11551,11 +11551,11 @@
 		arg_301_1.frameCnt_ = 0
 		arg_301_1.state_ = "playing"
 		arg_301_1.curTalkId_ = 319501074
-		arg_301_1.duration_ = 6.9
+		arg_301_1.duration_ = 6.666
 
 		local var_301_0 = {
 			zh = 3.266,
-			ja = 6.9
+			ja = 6.666
 		}
 		local var_301_1 = manager.audio:GetLocalizationFlag()
 

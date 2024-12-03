@@ -195,7 +195,21 @@ function var_0_0.OnPreOpenPage(arg_16_0)
 			local var_16_4 = var_16_3.servantData
 
 			if var_16_3.isFullScreen then
-				arg_16_0:OnFullScreenBtnClick(var_16_4)
+				if var_16_4.uid then
+					if WeaponServantData:GetServantDataByUID(var_16_4.uid) then
+						arg_16_0:OnFullScreenBtnClick(var_16_4)
+					elseif not arg_16_0.data.heroId then
+						if WeaponServantData:GetServantNum() == 0 then
+							arg_16_0:OnHoldBtnClick()
+						else
+							arg_16_0:OnFullScreenBtnClick()
+						end
+					else
+						arg_16_0:OnFullScreenBtnClick()
+					end
+				else
+					arg_16_0:OnFullScreenBtnClick(var_16_4)
+				end
 			elseif var_16_3.viewIdx == 1 then
 				arg_16_0:OnHoldBtnClick(var_16_4)
 			elseif var_16_4.id and var_16_4.id ~= 0 then
@@ -574,9 +588,12 @@ function var_0_0.EnterFullScreenView(arg_52_0, arg_52_1, arg_52_2)
 		end
 
 		manager.heroRaiseTrack:PlayServantAnim("Light")
-		manager.heroRaiseTrack:SetWeaponServantID(arg_52_0.data.curServantData.id)
-		arg_52_0:OnHoldBtnClick()
-		arg_52_0:RefreshTabCount()
+
+		if arg_52_0.data.curServantData then
+			manager.heroRaiseTrack:SetWeaponServantID(arg_52_0.data.curServantData.id)
+			arg_52_0:OnHoldBtnClick()
+			arg_52_0:RefreshTabCount()
+		end
 	end
 end
 

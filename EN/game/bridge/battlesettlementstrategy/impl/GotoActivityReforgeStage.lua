@@ -40,6 +40,10 @@ function var_0_0.GotoActivityReforgeStage(arg_2_0, arg_2_1, arg_2_2, arg_2_3, ar
 	else
 		arg_2_0:GotoBattleFaild(arg_2_1, arg_2_2, arg_2_3, arg_2_4)
 	end
+
+	local var_2_0 = RedPointConst.ACTIVITY_REFORGE_NEW_CHPATER .. arg_2_2:GetChapterActivityID()
+
+	manager.redPoint:setTip(var_2_0, 0)
 end
 
 return var_0_0

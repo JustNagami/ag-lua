@@ -14053,7 +14053,7 @@
 	},
 	[1101905179] = {
 		speaker = "奥丁",
-		prefab_name = "",
+		prefab_name = "1029ui_story",
 		content = "595ea44aaaf84e4259247b578bc094d0",
 		id = 1101905179
 	},
@@ -20545,7 +20545,7 @@
 	},
 	[411241001] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "32774680e1a36f8ac665e2e0c0a61009",
 		id = 411241001
 	},
@@ -20563,7 +20563,7 @@
 	},
 	[411241004] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "0bb93028a649dccd6bbc131ac2b3dd16",
 		id = 411241004
 	},
@@ -20581,7 +20581,7 @@
 	},
 	[411241007] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "59097da3ab43ac8966adb0047c588b70",
 		id = 411241007
 	},
@@ -20593,13 +20593,13 @@
 	},
 	[411241009] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "532a94976508bf6ca02bffc4500cf3fe",
 		id = 411241009
 	},
 	[411241010] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "9d1215b67741621ffc8d0a1ed25dbbf1",
 		id = 411241010
 	},
@@ -20617,7 +20617,7 @@
 	},
 	[411241013] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "694608551b759e986607286dd9f136f5",
 		id = 411241013
 	},
@@ -20635,7 +20635,7 @@
 	},
 	[411241016] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "320ffa11f983a194d16f808c4c9b3472",
 		id = 411241016
 	},
@@ -20659,13 +20659,13 @@
 	},
 	[411241020] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "8873bcce68d339f3b28f7c186e3a69cc",
 		id = 411241020
 	},
 	[411241021] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "16ae53a97dd521d1865aeaa68fc3b5ef",
 		id = 411241021
 	},
@@ -20683,7 +20683,7 @@
 	},
 	[411241024] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "7e77e752d2ccbfb9ebd9271718f1ca78",
 		id = 411241024
 	},
@@ -20695,7 +20695,7 @@
 	},
 	[411241026] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "b9596adcd30fb83656a4a1727e175e0c",
 		id = 411241026
 	},
@@ -20713,7 +20713,7 @@
 	},
 	[411241029] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "812776e03ce04b22f925c3334170d266",
 		id = 411241029
 	},
@@ -20737,7 +20737,7 @@
 	},
 	[411241033] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "50e61cfc3a25e4084eaf1565c802ddf5",
 		id = 411241033
 	},
@@ -20749,7 +20749,7 @@
 	},
 	[411241035] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "853866b6371e92ab3e7c66bd02106da4",
 		id = 411241035
 	},
@@ -20767,7 +20767,7 @@
 	},
 	[411241038] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "bdb6a2525628216619c594d4aaa79f40",
 		id = 411241038
 	},
@@ -20791,7 +20791,7 @@
 	},
 	[411241042] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "b95d2fe139b60b22e5c86735e496b279",
 		id = 411241042
 	},
@@ -20809,7 +20809,7 @@
 	},
 	[411241045] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "3e8a95f2dac94ca1ae46ae6e45202c00",
 		id = 411241045
 	},
@@ -20827,7 +20827,7 @@
 	},
 	[411241048] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "66b872433d89cf3117407f9dcd1257b5",
 		id = 411241048
 	},
@@ -20845,7 +20845,7 @@
 	},
 	[411241051] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "cb0d81b6791ee1e80a2ea47b10a0b026",
 		id = 411241051
 	},
@@ -20857,7 +20857,7 @@
 	},
 	[411241053] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "c70312c6a9b286862e284f1457fddeae",
 		id = 411241053
 	},
@@ -20881,7 +20881,7 @@
 	},
 	[411241057] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "5a232fdf27ed3afe2d8ff25f4788f0d4",
 		id = 411241057
 	},
@@ -20899,7 +20899,7 @@
 	},
 	[411241060] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "401136f285fb7e3cf1f415ce004083d3",
 		id = 411241060
 	},
@@ -20911,7 +20911,7 @@
 	},
 	[411241062] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "a3c9bf6384fef6389a1dc2d8c3a40aa2",
 		id = 411241062
 	},
@@ -20947,7 +20947,7 @@
 	},
 	[411241068] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "b71c905501d673ad508561c2a163a7e8",
 		id = 411241068
 	},
@@ -20977,25 +20977,25 @@
 	},
 	[411241073] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "49fb0d81bb06a2e3cb51e8b7fa469e0e",
 		id = 411241073
 	},
 	[411241074] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "ef6954739b9e5b6c678b04a496ee434b",
 		id = 411241074
 	},
 	[411241075] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "48e78793c068cffcd3f0b876a6ad87e8",
 		id = 411241075
 	},
 	[411241076] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "a9abd7eb5912c621a3b6f79930b053e1",
 		id = 411241076
 	},
@@ -21019,7 +21019,7 @@
 	},
 	[411241080] = {
 		speaker = "托特",
-		prefab_name = "1095ui_story",
+		prefab_name = "10058ui_story",
 		content = "d165aea04b6ebbf5fcb7edbc8b735b47",
 		id = 411241080
 	},

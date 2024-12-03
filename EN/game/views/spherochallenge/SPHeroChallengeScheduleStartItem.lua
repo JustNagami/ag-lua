@@ -33,6 +33,12 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1)
 		arg_4_0.iconImg_.sprite = SPHeroChallengeTools:GetScheduleIcon(arg_4_0.scheduleID)
 		arg_4_0.nameText_.text = ActivityHeroChallengeScheduleCfg[arg_4_0.scheduleID].name
 		arg_4_0.descText_.text = ActivityHeroChallengeScheduleCfg[arg_4_0.scheduleID].linkgame_des
+
+		if arg_4_1.isFinish then
+			arg_4_0.stateController:SetSelectedState("grey")
+		else
+			arg_4_0.stateController:SetSelectedState("start")
+		end
 	end
 end
 

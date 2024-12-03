@@ -738,11 +738,11 @@
 	{
 		name = "84a8a7eb99b2d6f4d72ac96565967ddd",
 		equip_skill_icon = "47",
-		stage_up_list = 0,
+		stage_up_list = 1,
 		power_score = 10,
 		desc = "334df49063e0813990cfd63b556cbe3e",
 		need = 3,
-		inherit_cost_type = 0,
+		inherit_cost_type = 1,
 		equip_type = 1,
 		id = 47,
 		icon = "47",

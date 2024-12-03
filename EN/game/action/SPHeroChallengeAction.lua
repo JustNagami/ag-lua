@@ -65,7 +65,9 @@ manager.net:Bind(83017, function(arg_5_0)
 end)
 
 function var_0_0.ConfirmScheduleList(arg_6_0, arg_6_1, arg_6_2)
-	local var_6_0 = {}
+	local var_6_0 = SPHeroChallengeData:GetActivityID()
+	local var_6_1 = SPHeroChallengeData:GetActivityData(var_6_0)
+	local var_6_2 = {}
 
 	if not arg_6_1 then
 		return
@@ -78,23 +80,24 @@ function var_0_0.ConfirmScheduleList(arg_6_0, arg_6_1, arg_6_2)
 			return
 		end
 
-		local var_6_1 = {
+		local var_6_3 = {
 			is_finish = false,
 			index = iter_6_0,
 			schedule_id = iter_6_1
 		}
+		local var_6_4 = var_6_1:GetStartListScheduleInfoByList(iter_6_0)
 
-		table.insert(var_6_0, var_6_1)
+		if not var_6_4 or not var_6_4.isFinish then
+			table.insert(var_6_2, var_6_3)
+		end
 	end
-
-	local var_6_2 = SPHeroChallengeData:GetActivityID()
 
 	if arg_6_2 then
 		for iter_6_2, iter_6_3 in ipairs(arg_6_1) do
 			SDKTools.SendMessageToSDK("task_accept", {
 				opt = 2,
 				type = 2,
-				activity_id = var_6_2,
+				activity_id = var_6_0,
 				task_id = iter_6_3
 			})
 		end
@@ -103,15 +106,15 @@ function var_0_0.ConfirmScheduleList(arg_6_0, arg_6_1, arg_6_2)
 			SDKTools.SendMessageToSDK("task_accept", {
 				opt = 1,
 				type = 2,
-				activity_id = var_6_2,
+				activity_id = var_6_0,
 				task_id = iter_6_5
 			})
 		end
 	end
 
 	manager.net:SendWithLoadingNew(83003, {
-		schedule_info_list = var_6_0,
-		activity_id = var_6_2
+		schedule_info_list = var_6_2,
+		activity_id = var_6_0
 	}, 83004, var_0_0.ConfirmScheduleListCallBack)
 end
 
@@ -369,6 +372,7 @@ end
 function var_0_0.UseEntrustAcceleratorCallBack(arg_22_0, arg_22_1)
 	if isSuccess(arg_22_0.result) then
 		SPHeroChallengeData:GetActivityData(arg_22_1.activity_id):InitCurEntrustList(arg_22_0.begin_entrust_list)
+		SPHeroChallengeRedPointTools:UpdataCanGetEntrustRewardRedPoint(arg_22_1.activity_id)
 		manager.notify:Invoke(SP_HERO_CHALLENGE_START_ENTRUST)
 	else
 		ShowTips(arg_22_0.result)

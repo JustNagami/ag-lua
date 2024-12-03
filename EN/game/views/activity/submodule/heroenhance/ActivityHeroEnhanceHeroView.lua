@@ -199,7 +199,14 @@ function var_0_0.SelectGroup(arg_22_0, arg_22_1, arg_22_2)
 
 	if arg_22_2 == nil then
 		arg_22_2 = ActivityHeroEnhanceTools.GetTalentListActivatedIdx(arg_22_0.activityId_, var_22_1)
-		arg_22_2 = arg_22_2 > 0 and arg_22_2 or 1
+
+		if arg_22_2 <= 0 then
+			if arg_22_0.lastGroupIdx_ == arg_22_1 then
+				arg_22_2 = arg_22_0.lastTalentIdx_ and arg_22_0.lastTalentIdx_ or 1
+			else
+				arg_22_2 = 1
+			end
+		end
 	end
 
 	arg_22_0.middleView_:SelectGroupIdx(arg_22_1, arg_22_2)

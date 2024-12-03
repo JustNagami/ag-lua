@@ -6089,7 +6089,8 @@
 		value = {
 			112041,
 			112051,
-			112052
+			112052,
+			112053
 		}
 	},
 	activity_hero_challenge_train_num_1 = {
@@ -6158,6 +6159,14 @@
 		value2 = "",
 		value = {
 			300
+		}
+	},
+	hero_challenge_game_describe1 = {
+		id = "hero_challenge_game_describe1",
+		value2 = "",
+		value = {
+			"Widget/System/SPHeroChallenge/SPHeroChallengeDescription_01",
+			"Widget/System/SPHeroChallenge/SPHeroChallengeDescription_02"
 		}
 	},
 	core_verification_boss_hero_num = {

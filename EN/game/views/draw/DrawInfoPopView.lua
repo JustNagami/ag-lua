@@ -420,7 +420,7 @@ function var_0_0.DescModule(arg_15_0, arg_15_1, arg_15_2)
 			var_15_7 = var_15_7 .. string.format("<color=#E78300>「%s」</color>", HeroTools.GetHeroFullName(var_15_6.optional_detail[iter_15_0]))
 
 			if iter_15_0 ~= #var_15_6.optional_detail then
-				var_15_7 = var_15_7 .. "、"
+				var_15_7 = var_15_7 .. GetTips("POOL_DETAIL_SYMBOL")
 			end
 		end
 

@@ -46,7 +46,7 @@ function var_0_0.SetData(arg_7_0, arg_7_1)
 end
 
 function var_0_0.SelectGroupIdx(arg_8_0, arg_8_1, arg_8_2)
-	if arg_8_0.selectGroupIdx_ == arg_8_1 then
+	if arg_8_0.selectGroupIdx_ == arg_8_1 and (arg_8_1 <= 0 or arg_8_0.talentGroups_[arg_8_1].selectIdx_ == arg_8_2) then
 		return
 	end
 

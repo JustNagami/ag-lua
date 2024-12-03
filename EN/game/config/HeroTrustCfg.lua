@@ -791,7 +791,165 @@
 		condition_list = {},
 		reward_item_list = {}
 	},
+	[101901] = {
+		hero_id = 1019,
+		trust_level = 1,
+		id = 101901,
+		reward_des = "",
+		condition_list = {
+			2101,
+			5108
+		},
+		reward_item_list = {
+			{
+				1,
+				50
+			}
+		}
+	},
+	[101902] = {
+		hero_id = 1019,
+		trust_level = 2,
+		id = 101902,
+		reward_des = "",
+		condition_list = {
+			5101,
+			5109
+		},
+		reward_item_list = {
+			{
+				1,
+				80
+			}
+		}
+	},
+	[101903] = {
+		hero_id = 1019,
+		trust_level = 3,
+		id = 101903,
+		reward_des = "",
+		condition_list = {
+			5102,
+			5110
+		},
+		reward_item_list = {
+			{
+				1,
+				100
+			}
+		}
+	},
+	[101904] = {
+		hero_id = 1019,
+		trust_level = 4,
+		id = 101904,
+		reward_des = "",
+		condition_list = {
+			5103,
+			5111
+		},
+		reward_item_list = {
+			{
+				950023,
+				1
+			}
+		}
+	},
+	[101905] = {
+		hero_id = 1019,
+		trust_level = 5,
+		id = 101905,
+		reward_des = "",
+		condition_list = {},
+		reward_item_list = {}
+	},
+	[111901] = {
+		hero_id = 1119,
+		trust_level = 1,
+		id = 111901,
+		reward_des = "",
+		condition_list = {
+			2101,
+			5108
+		},
+		reward_item_list = {
+			{
+				1,
+				50
+			}
+		}
+	},
+	[111902] = {
+		hero_id = 1119,
+		trust_level = 2,
+		id = 111902,
+		reward_des = "",
+		condition_list = {
+			5101,
+			5109
+		},
+		reward_item_list = {
+			{
+				1,
+				80
+			}
+		}
+	},
+	[111903] = {
+		hero_id = 1119,
+		trust_level = 3,
+		id = 111903,
+		reward_des = "",
+		condition_list = {
+			5102,
+			5110
+		},
+		reward_item_list = {
+			{
+				1,
+				100
+			}
+		}
+	},
+	[111904] = {
+		hero_id = 1119,
+		trust_level = 4,
+		id = 111904,
+		reward_des = "",
+		condition_list = {
+			5103,
+			5111
+		},
+		reward_item_list = {
+			{
+				950022,
+				1
+			}
+		}
+	},
+	[111905] = {
+		hero_id = 1119,
+		trust_level = 5,
+		id = 111905,
+		reward_des = "",
+		condition_list = {},
+		reward_item_list = {}
+	},
 	get_id_list_by_hero_id = {
+		[1119] = {
+			111901,
+			111902,
+			111903,
+			111904,
+			111905
+		},
+		[1019] = {
+			101901,
+			101902,
+			101903,
+			101904,
+			101905
+		},
 		[1139] = {
 			113901,
 			113902,
@@ -925,6 +1083,16 @@
 		113902,
 		113903,
 		113904,
-		113905
+		113905,
+		101901,
+		101902,
+		101903,
+		101904,
+		101905,
+		111901,
+		111902,
+		111903,
+		111904,
+		111905
 	}
 }

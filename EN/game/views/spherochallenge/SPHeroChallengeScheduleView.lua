@@ -27,7 +27,7 @@ end
 
 function var_0_0.OnEnter(arg_6_0)
 	arg_6_0.data = SPHeroChallengeData:GetCurActivityInfo()
-	arg_6_0.scheduleStart = arg_6_0.data:CheckCurScheduleStart()
+	arg_6_0.scheduleStart = false
 
 	arg_6_0:RegisterEvents()
 	arg_6_0:InitCanChooseScheduleList()
@@ -52,8 +52,7 @@ end
 function var_0_0.RefreshBar(arg_10_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR,
-		HOME_BAR,
-		INFO_BAR
+		HOME_BAR
 	})
 end
 
@@ -147,10 +146,13 @@ function var_0_0.RefreshHadChossScheduleList(arg_20_0)
 	arg_20_0.hadChooseList = {}
 
 	for iter_20_0 = 1, SpHeroChallengeConst.scheduleNum do
+		local var_20_1 = arg_20_0.data:GetStartListScheduleInfoByList(iter_20_0)
+
 		if var_20_0[iter_20_0] and var_20_0[iter_20_0] ~= 0 then
 			arg_20_0.hadChooseList[iter_20_0] = {
 				scheduleID = var_20_0[iter_20_0],
-				index = iter_20_0
+				index = iter_20_0,
+				isFinish = var_20_1 and var_20_1.isFinish
 			}
 		else
 			arg_20_0.hadChooseList[iter_20_0] = {

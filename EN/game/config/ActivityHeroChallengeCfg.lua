@@ -5,6 +5,7 @@
 		hero_id = 1284,
 		activity_id = 242841,
 		task_id = 202805,
+		shop_item_id = 216000001,
 		refresh_cost = {
 			{
 				1,
@@ -84,7 +85,8 @@
 		close_condition = {
 			112041,
 			112051,
-			112052
+			112052,
+			112053
 		}
 	},
 	all = {

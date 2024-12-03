@@ -2880,7 +2880,87 @@
 		initAISAC = "",
 		detail = "ba2c5bb3b8a993d2b5e9b4df99e72109"
 	},
+	{
+		cueName = "bgm_activity_3_2_ui",
+		authorName = "2a974e7833ed2fae4aba212201eb87f8",
+		ableBGM = 1,
+		album = 18,
+		cuesheet = "bgm_activity_3_2_ui",
+		musicName = "68ad8d3bb3db0542a814a2ee5ce70afb",
+		id = 234,
+		awbName = "bgm_activity_3_2_ui",
+		initAISAC = "",
+		detail = "f4b68e2f0095d67ccc3296b8c8ba88b8"
+	},
+	{
+		cueName = "bgm_activity_3_2_battle_corridor_dream",
+		authorName = "7e0f58b1e59967576fb07ea371b2510b",
+		ableBGM = 1,
+		album = 18,
+		cuesheet = "bgm_activity_3_2_battle_corridor_dream",
+		musicName = "c4779c1167f74df9d6ea9facfb90bbf4",
+		id = 235,
+		awbName = "bgm_activity_3_2_battle_corridor_dream",
+		initAISAC = "",
+		detail = "0b19dfa9077cff6071889ed23b089cfa"
+	},
+	{
+		cueName = "bgm_activity_3_2_story_corridor_dream",
+		authorName = "ad2523fcf723614cefda76fb4ca961d4",
+		ableBGM = 1,
+		album = 18,
+		cuesheet = "bgm_activity_3_2_story_corridor_dream",
+		musicName = "bbb31d06cc9017d9b8eb1cbc6625b729",
+		id = 236,
+		awbName = "bgm_activity_3_2_story_corridor_dream",
+		initAISAC = "",
+		detail = "b3a1df71e61c0086e8a33de2eba6e6c1"
+	},
+	{
+		cueName = "bgm_activity_3_2_story_corridor_slow",
+		authorName = "cb3f26f0ba29fa1fdc918fe1c6aeff76",
+		ableBGM = 1,
+		album = 18,
+		cuesheet = "bgm_activity_3_2_story_corridor_slow",
+		musicName = "128f1fb10fe05fa78e010a8cca0e447b",
+		id = 237,
+		awbName = "bgm_activity_3_2_story_corridor_slow",
+		initAISAC = "",
+		detail = "59d6bfd5949e5ac463670b63f867c852"
+	},
+	{
+		cueName = "bgm_activity_3_2_story_house_nightmare",
+		authorName = "e1b541c974743290c5739f6e13632f57",
+		ableBGM = 1,
+		album = 18,
+		cuesheet = "bgm_activity_3_2_story_house_nightmare",
+		musicName = "3d2825dacfbe39ab2f2b40c5b0660f7a",
+		id = 238,
+		awbName = "bgm_activity_3_2_story_house_nightmare",
+		initAISAC = "",
+		detail = "cb012d7f0ccb12a65de7215d7c9579c1"
+	},
+	{
+		cueName = "bgm_minigame_2",
+		authorName = "16534d4f2146e3494c8b75b726127d03",
+		ableBGM = 1,
+		album = 18,
+		cuesheet = "bgm_minigame_2",
+		musicName = "d6fdf50feac9276c2ca596a3363c3b23",
+		id = 239,
+		awbName = "bgm_minigame_2",
+		initAISAC = "",
+		detail = "7981269143cc42e1a89639a34022a6c0"
+	},
 	get_id_list_by_album = {
+		[18] = {
+			234,
+			235,
+			236,
+			237,
+			238,
+			239
+		},
 		[17] = {
 			203,
 			204,
@@ -3382,6 +3462,12 @@
 		230,
 		231,
 		232,
-		233
+		233,
+		234,
+		235,
+		236,
+		237,
+		238,
+		239
 	}
 }

@@ -47,7 +47,10 @@ function SPHeroChallengeActivityTemplate.InitCurScheduleList(arg_3_0, arg_3_1, a
 		end
 	end
 
-	arg_3_0.curScheduleList = {}
+	if not arg_3_0:CheckCurScheduleStart() then
+		arg_3_0.curScheduleList = {}
+		arg_3_0.dailyList = {}
+	end
 
 	if arg_3_1 then
 		for iter_3_2, iter_3_3 in ipairs(arg_3_1) do
@@ -55,6 +58,7 @@ function SPHeroChallengeActivityTemplate.InitCurScheduleList(arg_3_0, arg_3_1, a
 
 			if var_3_1 then
 				arg_3_0.curScheduleList[var_3_1.index] = var_3_1
+				arg_3_0.dailyList[var_3_1.index] = var_3_1.scheduleID
 			end
 		end
 	end
@@ -495,6 +499,14 @@ end
 
 function SPHeroChallengeActivityTemplate.ClearScheduleDailyList(arg_41_0)
 	arg_41_0.dailyList = {}
+
+	for iter_41_0, iter_41_1 in ipairs(arg_41_0.curScheduleList) do
+		local var_41_0 = arg_41_0.curScheduleList[iter_41_0]
+
+		if var_41_0 and var_41_0.isFinish then
+			arg_41_0.dailyList[var_41_0.index] = var_41_0.scheduleID
+		end
+	end
 end
 
 function SPHeroChallengeActivityTemplate.InitBossInfo(arg_42_0, arg_42_1)
@@ -585,4 +597,17 @@ function SPHeroChallengeActivityTemplate.CheckCanGetHeroChipTaskAward(arg_47_0)
 			return true, nil, var_47_3, var_47_2
 		end
 	end
+end
+
+function SPHeroChallengeActivityTemplate.CheckHasReceiveHeroAward(arg_48_0)
+	local var_48_0 = SPHeroChallengeData.activityCfg[arg_48_0.activityID].HeroChipTask
+	local var_48_1 = TaskData2:GetTask(var_48_0)
+
+	return var_48_1 and var_48_1.complete_flag > 0
+end
+
+function SPHeroChallengeActivityTemplate.CheckHasReceiveWeaponAward(arg_49_0)
+	local var_49_0 = SPHeroChallengeData.activityCfg[arg_49_0.activityID].shopItemID
+
+	return ShopTools.CheckSoldOut(var_49_0)
 end

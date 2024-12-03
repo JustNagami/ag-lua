@@ -63,7 +63,7 @@ function var_0_0.RefreshTalentInfoUi(arg_6_0, arg_6_1)
 	local var_6_1 = var_6_0.pre_id
 
 	if var_6_1 ~= 0 then
-		arg_6_0.conditiondescireText_.text = string.format(GetTips("ACTIVITY_ZUMA_TALENT_UNLOCK_CONDITION"), ActivityZumaTalentCfg[var_6_1].name)
+		arg_6_0.conditiondescireText_.text = string.format(GetTips("ACTIVITY_ZUMA_TALENT_UNLOCK_CONDITION"), GetI18NText(ActivityZumaTalentCfg[var_6_1].name))
 	end
 
 	if ZumaData:GetZumaTalentIsOpen(arg_6_1) then

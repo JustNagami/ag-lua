@@ -63,6 +63,7 @@ end
 
 function var_0_0.ShowInfo(arg_8_0, arg_8_1)
 	SetActive(arg_8_0.goInfo_, arg_8_1)
+	manager.notify:Invoke(SHOW_AFFIX_INFO, arg_8_1)
 
 	if arg_8_1 then
 		LayoutRebuilder.ForceRebuildLayoutImmediate(arg_8_0.transformInfoName_)

@@ -25,7 +25,8 @@ var_0_0.activityCfg = {
 		acceleratorTime = GameSetting.activity_hero_challenge_certificate_time.value[1],
 		HeroChipTask = ActivityHeroChallengeCfg[ActivityConst.ACTIVITY_HERO_CHALLENGE_3_1].task_id,
 		refreshEntrustCost = ActivityHeroChallengeCfg[ActivityConst.ACTIVITY_HERO_CHALLENGE_3_1].refresh_cost,
-		heroID = ActivityHeroChallengeCfg[ActivityConst.ACTIVITY_HERO_CHALLENGE_3_1].hero_id
+		heroID = ActivityHeroChallengeCfg[ActivityConst.ACTIVITY_HERO_CHALLENGE_3_1].hero_id,
+		shopItemID = ActivityHeroChallengeCfg[ActivityConst.ACTIVITY_HERO_CHALLENGE_3_1].shop_item_id or 216000001
 	}
 }
 

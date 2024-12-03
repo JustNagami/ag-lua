@@ -95,6 +95,12 @@
 		albumName = "Separatio Iunctionis",
 		verName = "3883cf3464a25937880c19de19307ce7"
 	},
+	[18] = {
+		id = 18,
+		cover = "icon_CD_18",
+		albumName = "Kid's Initial Courage",
+		verName = "89d4415061508521caf4484eaa52d6a4"
+	},
 	all = {
 		1,
 		2,
@@ -111,6 +117,7 @@
 		13,
 		14,
 		15,
-		16
+		16,
+		18
 	}
 }

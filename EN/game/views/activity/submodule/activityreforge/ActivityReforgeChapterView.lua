@@ -72,10 +72,6 @@ function var_0_0.AddUIListeners(arg_5_0)
 
 			if ActivityTools.GetActivityIsOpenWithTip(var_11_0) then
 				if ActivityReforgeData:GetChapterIsUnlock(var_11_0) then
-					local var_11_1 = RedPointConst.ACTIVITY_REFORGE_NEW_CHPATER .. var_11_0
-
-					manager.redPoint:setTip(var_11_1, 0)
-
 					arg_5_0.curSelectIndex_ = iter_5_0
 
 					arg_5_0:RefreshUI()
@@ -214,10 +210,6 @@ function var_0_0.RefreshUI(arg_21_0)
 	arg_21_0.desText_.text = var_21_2.chapter_des
 
 	arg_21_0.bossChartController_:SetSelectedState(arg_21_0.curSelectIndex_)
-
-	local var_21_3 = RedPointConst.ACTIVITY_REFORGE_NEW_CHPATER .. var_21_1
-
-	manager.redPoint:setTip(var_21_3, 0)
 end
 
 function var_0_0.CheckCacheAddGoldNum(arg_22_0)

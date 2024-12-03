@@ -230,7 +230,7 @@
 		{
 			start = 406.77,
 			content = "持ってくの？",
-			endTime = 408.2
+			endTime = 410.22
 		},
 		{
 			start = 408.18,

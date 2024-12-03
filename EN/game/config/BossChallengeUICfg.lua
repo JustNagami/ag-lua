@@ -4744,34 +4744,34 @@
 	},
 	[3091010] = {
 		main_name = "34c01de647c1d17532f50c89848e9204",
-		icon = "Bgbc3036",
+		icon = "Bgbc3008",
 		ID = 3091010,
 		custom_affix = "",
 		descripe = "",
 		weakness = "",
 		boss_id_list = {
-			3036
+			3008
 		},
 		appear_ani = {
-			"skill5"
+			"appear_1"
 		},
 		model_pos = {
 			{
-				0.7,
-				-184,
-				-4
+				0.435,
+				-182.9,
+				-1
 			}
 		},
 		model_rot = {
 			{
 				0,
-				60,
+				0,
 				0
 			}
 		},
 		model_scale = {
 			{
-				1,
+				1.05,
 				1,
 				1
 			}

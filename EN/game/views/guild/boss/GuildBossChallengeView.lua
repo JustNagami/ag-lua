@@ -72,6 +72,7 @@ function var_0_0.AddEventListeners(arg_13_0)
 	arg_13_0:RegistEventListener(GUILD_EXIT, function()
 		arg_13_0:Go("/home")
 	end)
+	arg_13_0:RegistEventListener(SHOW_AFFIX_INFO, handler(arg_13_0, arg_13_0.OnShowAffixInfo))
 end
 
 function var_0_0.OnTop(arg_16_0)
@@ -301,6 +302,10 @@ function var_0_0.Dispose(arg_32_0)
 	end
 
 	var_0_0.super.Dispose(arg_32_0)
+end
+
+function var_0_0.OnShowAffixInfo(arg_33_0, arg_33_1)
+	SetActive(arg_33_0.bgBtn_.gameObject, arg_33_1)
 end
 
 return var_0_0

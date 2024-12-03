@@ -5852,8 +5852,8 @@
 				local var_138_57 = arg_135_1.cswt_:GetComponent("RectTransform")
 
 				arg_135_1.cswt_.alignment = UnityEngine.TextAnchor.MiddleCenter
-				var_138_57.offsetMin = Vector2.New(410, 330)
-				var_138_57.offsetMax = Vector2.New(-400, -175)
+				var_138_57.offsetMin = Vector2.New(0, 330)
+				var_138_57.offsetMax = Vector2.New(0, -175)
 
 				local var_138_58 = arg_135_1:GetWordFromCfg(419059)
 				local var_138_59 = arg_135_1:FormatText(var_138_58.content)
@@ -6377,8 +6377,8 @@
 				local var_154_21 = arg_151_1.cswt_:GetComponent("RectTransform")
 
 				arg_151_1.cswt_.alignment = UnityEngine.TextAnchor.MiddleCenter
-				var_154_21.offsetMin = Vector2.New(410, 330)
-				var_154_21.offsetMax = Vector2.New(-400, -175)
+				var_154_21.offsetMin = Vector2.New(0, 330)
+				var_154_21.offsetMax = Vector2.New(0, -175)
 
 				local var_154_22 = arg_151_1:GetWordFromCfg(419062)
 				local var_154_23 = arg_151_1:FormatText(var_154_22.content)
@@ -13174,8 +13174,8 @@
 				local var_348_39 = arg_345_1.cswt_:GetComponent("RectTransform")
 
 				arg_345_1.cswt_.alignment = UnityEngine.TextAnchor.MiddleCenter
-				var_348_39.offsetMin = Vector2.New(410, 330)
-				var_348_39.offsetMax = Vector2.New(-400, -180)
+				var_348_39.offsetMin = Vector2.New(0, 0)
+				var_348_39.offsetMax = Vector2.New(0, 0)
 
 				local var_348_40 = arg_345_1:GetWordFromCfg(419063)
 				local var_348_41 = arg_345_1:FormatText(var_348_40.content)
@@ -13184,7 +13184,7 @@
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_345_1.cswt_)
 
-				arg_345_1.cswt_.fontSize = 175
+				arg_345_1.cswt_.fontSize = 130
 				arg_345_1.cswt_:GetComponent("Text").color = Color(1, 1, 1)
 				arg_345_1.cswt_.font = Asset.Load("Fonts/SourceHanSans")
 			end

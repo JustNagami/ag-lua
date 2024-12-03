@@ -123,7 +123,13 @@ function var_0_0.RefreshLockState(arg_15_0)
 
 		if arg_15_0.params_.reason then
 			if not arg_15_0.info.bossStart then
-				arg_15_0.lockText.text = GetTips("SOLO_NOT_OPEN")
+				local var_15_0 = SPHeroChallengeData.activityCfg[arg_15_0.activityID]
+
+				if SPHeroChallengeTools:GetChapterIsOpen(var_15_0.storyChapter) and SPHeroChallengeTools:GetChapterIsOpen(var_15_0.trainChapter) then
+					arg_15_0.lockText.text = GetTips("ACTIVITY_HERO_CHALLENGE_BOSS_OPEN_TIME")
+				else
+					arg_15_0.lockText.text = GetTips("ACTIVITY_HERO_CHALLENGE_LOCK_TIP")
+				end
 			else
 				arg_15_0.lockText.text = GetTips(arg_15_0.params_.reason)
 			end

@@ -13,14 +13,17 @@
 		lock = "lock"
 	},
 	ScheduleID = {
-		Decode = 2428406,
-		Endurance = 2428402,
 		Barbecue = 2428407,
-		Boss = 2428405,
+		Decode = 2428406,
+		Decode_hero = 202803,
 		Deter = 2428403,
 		Explode = 2428404,
-		Awake = 2428401,
-		Entrust = 2428408
+		Awake_hero = 202801,
+		Barbecue_hero = 202802,
+		Endurance = 2428402,
+		Boss = 2428405,
+		Entrust = 2428408,
+		Awake = 2428401
 	},
 	ScheduleTypeName = {
 		MiniGame = "ACTIVITY_HERO_CHALLENGE_GAME_TYPE",
@@ -84,5 +87,12 @@ var_0_0.PriorityType = {
 	var_0_0.ScheduleType.Entrust
 }
 var_0_0.scheduleNum = GameSetting.activity_hero_challenge_schedule_limit.value[1]
+var_0_0.scheduleTask = {
+	[var_0_0.ScheduleSubType.train1] = var_0_0.ScheduleID.Awake_hero,
+	[var_0_0.ScheduleSubType.train2] = var_0_0.ScheduleID.Awake_hero,
+	[var_0_0.ScheduleSubType.train3] = var_0_0.ScheduleID.Awake_hero,
+	[var_0_0.ScheduleSubType.decode] = var_0_0.ScheduleID.Decode_hero,
+	[var_0_0.ScheduleSubType.barbuce] = var_0_0.ScheduleID.Barbecue_hero
+}
 
 return var_0_0

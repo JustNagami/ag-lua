@@ -35,25 +35,53 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1)
 			else
 				arg_4_0.stateController:SetSelectedState("Normal")
 			end
+
+			UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_4_0.trs1_)
+			UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_4_0.trs2_)
+			UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_4_0.trs3_)
+			UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_4_0.trs4_)
+			UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_4_0.trs5_)
+			UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_4_0.trs6_)
+
+			arg_4_0.Timer = FrameTimer.New(function()
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_4_0.trs1_)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_4_0.trs2_)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_4_0.trs3_)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_4_0.trs4_)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_4_0.trs5_)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_4_0.trs6_)
+
+				if arg_4_0.Timer then
+					arg_4_0.Timer:Stop()
+
+					arg_4_0.Timer = nil
+				end
+			end, 1, 1)
+
+			arg_4_0.Timer:Start()
 		else
 			arg_4_0.stateController:SetSelectedState("add")
 		end
 	end
 end
 
-function var_0_0.AddUIListener(arg_5_0)
-	arg_5_0:AddBtnListener(arg_5_0.addBtn_, nil, function()
-		if arg_5_0.state == "empty" then
+function var_0_0.AddUIListener(arg_6_0)
+	arg_6_0:AddBtnListener(arg_6_0.addBtn_, nil, function()
+		if arg_6_0.state == "empty" then
 			JumpTools.OpenPageByJump("/spHeroChallengeScheduleView")
 		end
 	end)
 end
 
-function var_0_0.Dispose(arg_7_0)
-	arg_7_0.gameObject_ = nil
-	arg_7_0.transform_ = nil
+function var_0_0.Dispose(arg_8_0)
+	arg_8_0.gameObject_ = nil
+	arg_8_0.transform_ = nil
 
-	var_0_0.super.Dispose(arg_7_0)
+	if arg_8_0.Timer then
+		arg_8_0.Timer:Stop()
+	end
+
+	var_0_0.super.Dispose(arg_8_0)
 end
 
 return var_0_0

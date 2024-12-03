@@ -3801,8 +3801,8 @@
 				local var_102_36 = arg_99_1.cswt_:GetComponent("RectTransform")
 
 				arg_99_1.cswt_.alignment = UnityEngine.TextAnchor.MiddleCenter
-				var_102_36.offsetMin = Vector2.New(410, 330)
-				var_102_36.offsetMax = Vector2.New(-400, -175)
+				var_102_36.offsetMin = Vector2.New(0, 330)
+				var_102_36.offsetMax = Vector2.New(0, -175)
 
 				local var_102_37 = arg_99_1:GetWordFromCfg(419080)
 				local var_102_38 = arg_99_1:FormatText(var_102_37.content)
@@ -9735,8 +9735,8 @@
 				local var_266_44 = arg_263_1.cswt_:GetComponent("RectTransform")
 
 				arg_263_1.cswt_.alignment = UnityEngine.TextAnchor.MiddleCenter
-				var_266_44.offsetMin = Vector2.New(410, 330)
-				var_266_44.offsetMax = Vector2.New(-400, -180)
+				var_266_44.offsetMin = Vector2.New(0, 330)
+				var_266_44.offsetMax = Vector2.New(0, -180)
 
 				local var_266_45 = arg_263_1:GetWordFromCfg(419081)
 				local var_266_46 = arg_263_1:FormatText(var_266_45.content)

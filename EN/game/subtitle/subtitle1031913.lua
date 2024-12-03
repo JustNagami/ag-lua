@@ -193,7 +193,7 @@
 		},
 		{
 			start = 26.96,
-			content = "다치지 마!",
+			content = "이거 놔!",
 			endTime = 28.48
 		},
 		{
