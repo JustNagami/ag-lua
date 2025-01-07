@@ -269,9 +269,7 @@ function var_0_0.AddUIListeners(arg_5_0)
 	arg_5_0:AddBtnListener(arg_5_0.sceneBtn_, nil, function()
 		local var_35_0 = HomeSceneSettingData:GetCurScene()
 
-		JumpTools.OpenPageByJump("/scenePreview", {
-			sceneID = var_35_0
-		})
+		JumpTools.OpenPageByJump("/scenePreview")
 	end)
 
 	if arg_5_0.capsuleToysBtn_ then

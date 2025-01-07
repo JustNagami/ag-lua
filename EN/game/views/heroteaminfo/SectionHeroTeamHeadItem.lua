@@ -145,4 +145,18 @@ function var_0_1.SetSoloChallengeIndex(arg_19_0, arg_19_1)
 	end
 end
 
+function var_0_1.SetChallengeRogueTeamModify(arg_20_0, arg_20_1)
+	if arg_20_1.modifyLevel or arg_20_1.tempID then
+		arg_20_0.levelText_.text = "<color=#3596ED>" .. arg_20_1.level .. "</color>"
+	else
+		arg_20_0.levelText_.text = arg_20_1.level
+	end
+
+	if arg_20_1.modifyStar or arg_20_1.tempID then
+		SetActive(arg_20_0.starBgGo_, true)
+	else
+		SetActive(arg_20_0.starBgGo_, false)
+	end
+end
+
 return var_0_1

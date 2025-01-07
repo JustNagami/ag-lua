@@ -42,6 +42,22 @@
 		id = 101901,
 		desc = "e2cd7e8c37b369e53afbb8ec778644f7"
 	},
+	[102001] = {
+		list_icon = "",
+		name = "da5aea09b6b290fb6fb4f4635263208e",
+		list_name = "",
+		combine_char = "",
+		id = 102001,
+		desc = "d74ebfd3ba63eb388b4c48cb485cde76"
+	},
+	[102101] = {
+		list_icon = "",
+		name = "41d5f915042f8f31867f6ef0fd68bab3",
+		list_name = "",
+		combine_char = "",
+		id = 102101,
+		desc = "02e151411679e3456603afc976619dbd"
+	},
 	[102701] = {
 		list_icon = "",
 		name = "5f4fc33b6b4c16a55d366727a3deb8ed",
@@ -1199,6 +1215,14 @@
 		id = 119701,
 		desc = "2b949bd7cbe7e569e389446a9f2fe93e"
 	},
+	[108901] = {
+		list_icon = "",
+		name = "15b9a92e05d95dc22a7f4e27a6737ee7",
+		list_name = "",
+		combine_char = "",
+		id = 108901,
+		desc = "924575417f01fdec9890a9c925a1777a"
+	},
 	[128401] = {
 		list_icon = "",
 		name = "439fe00d15fde13e3091dbbc2038efa7",
@@ -1238,6 +1262,14 @@
 		combine_char = "",
 		id = 609001,
 		desc = "4b0b3d7b257801ff2166ebcc6f8341e5"
+	},
+	[611001] = {
+		list_icon = "",
+		name = "27685eda80887a02676eb5b9fa443cd8",
+		list_name = "",
+		combine_char = "",
+		id = 611001,
+		desc = "1575fa6c936390dc9bf0b6797223b47e"
 	},
 	[904901] = {
 		list_icon = "",
@@ -1279,11 +1311,29 @@
 		id = 109501,
 		desc = "01a749041b86d5101fce8243805ceabc"
 	},
+	[102201] = {
+		list_icon = "",
+		name = "62a334858f60ede5e5acd75b74fe6aad",
+		list_name = "",
+		combine_char = "",
+		id = 102201,
+		desc = "c02eeb8c413d4e7954509b0c735c1898"
+	},
+	[115601] = {
+		list_icon = "",
+		name = "e0d2c404ba569648b0bd184606df09c4",
+		list_name = "",
+		combine_char = "",
+		id = 115601,
+		desc = "bfe10afcb5d0e84a0f96cee95806086a"
+	},
 	all = {
 		101101,
 		101102,
 		101501,
 		101901,
+		102001,
+		102101,
 		102701,
 		102702,
 		103601,
@@ -1370,15 +1420,19 @@
 		106101,
 		115001,
 		119701,
+		108901,
 		128401,
 		608701,
 		608801,
 		608901,
 		609001,
+		611001,
 		904901,
 		905501,
 		906001,
 		906101,
-		109501
+		109501,
+		102201,
+		115601
 	}
 }

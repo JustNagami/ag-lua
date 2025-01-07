@@ -22,6 +22,26 @@ function var_0_0.OnGotoSettlement(arg_1_0, arg_1_1)
 		local var_1_8 = AdvanceTestData:GetBattleResultScore()
 
 		arg_1_0:GotoScoreResult(var_1_8, var_1_1, var_1_0, var_1_2, var_1_3, var_1_4, true)
+	elseif var_1_5 == BattleConst.STAGE_TYPE_NEW.ADVANCE_MONSTER_TEST then
+		local var_1_9 = var_1_0:GetStageId()
+		local var_1_10 = 0
+
+		for iter_1_0, iter_1_1 in pairs(ActivityAdvanceMonsterTestCfg.all) do
+			if ActivityAdvanceMonsterTestCfg[iter_1_1].stage_id == var_1_9 then
+				var_1_10 = iter_1_1
+
+				break
+			end
+		end
+
+		local var_1_11 = ActivityAdvanceMonsterTestCfg[var_1_10].base_point
+		local var_1_12 = AdvanceMonsterTestData:GetCustomList(var_1_10)
+
+		for iter_1_2, iter_1_3 in pairs(var_1_12) do
+			var_1_11 = var_1_11 + ActivityAffixPoolCfg[iter_1_3].point
+		end
+
+		arg_1_0:GotoScoreResult(var_1_11, var_1_1, var_1_0, var_1_2, var_1_3, var_1_4, true)
 	end
 end
 

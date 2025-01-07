@@ -36,6 +36,11 @@ end
 
 function var_0_1.OnEnter(arg_6_0)
 	var_0_1.super.OnEnter(arg_6_0)
+
+	if arg_6_0.descText_ then
+		arg_6_0.descText_.text = GetTips("ACTIVITY_SLAYER_GENERAL_DESCRIBE")
+	end
+
 	manager.redPoint:bindUIandKey(arg_6_0.m_rewardBtn.transform, string.format("%s_%s", RedPointConst.SLYAER_REWARD, arg_6_0.activityID_))
 	manager.redPoint:bindUIandKey(arg_6_0.m_entrustBtn.transform, string.format("%s_%s", RedPointConst.SLYAER_REGIONS, arg_6_0.activityID_))
 end
@@ -48,7 +53,7 @@ end
 
 function var_0_1.RefreshTimeText(arg_8_0)
 	if arg_8_0.m_timeLab then
-		arg_8_0.m_timeLab.text = manager.time:GetLostTimeStrWith2Unit(arg_8_0.stopTime_, true)
+		arg_8_0.m_timeLab.text = manager.time:GetLostTimeStrWith2UnitWithPrefix(arg_8_0.stopTime_, true)
 	end
 end
 

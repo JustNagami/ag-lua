@@ -42,7 +42,7 @@ end
 function var_0_0.RefreshUI(arg_6_0, arg_6_1)
 	local var_6_0 = getChapterClientCfgByChapterID(arg_6_1)
 
-	if #var_6_0.chapter_list > 1 and (var_6_0.id == ChapterConst.CHAPTER_CLIENT_XUHENG_PART_2_2 or var_6_0.id == ChapterConst.CHAPTER_CLIENT_LUWU_ZHIMING) then
+	if #var_6_0.chapter_list > 1 and (var_6_0.id == ChapterConst.CHAPTER_CLIENT_XUHENG_PART_2_2 or var_6_0.id == ChapterConst.CHAPTER_CLIENT_LUWU_ZHIMING or var_6_0.id == ChapterConst.CHAPTER_CLIENT_OUMOFEISI) then
 		arg_6_0:Show(true)
 
 		for iter_6_0 = 1, 2 do

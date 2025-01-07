@@ -64,8 +64,8 @@
 		require("game.dorm.interacts.d08"),
 		require("game.dorm.interacts.d09")
 	},
-	["game.dorm.interacts.male.dorm_drink"] = {
-		require("game.dorm.interacts.male.dorm_drink")
+	["game.dorm.interacts.DJ_music"] = {
+		require("game.dorm.interacts.DJ_music")
 	},
 	["game.dorm.interacts.dorm_drink"] = {
 		require("game.dorm.interacts.dorm_drink")
@@ -106,6 +106,12 @@
 		require("game.dorm.interacts.happy02"),
 		require("game.dorm.interacts.happy03")
 	},
+	["game.dorm.interacts.illu_female"] = {
+		require("game.dorm.interacts.illu_female01")
+	},
+	["game.dorm.interacts.illu_male"] = {
+		require("game.dorm.interacts.illu_male01")
+	},
 	["game.dorm.interacts.koi_naicha"] = {
 		require("game.dorm.interacts.koi_naicha")
 	},
@@ -125,6 +131,9 @@
 	["game.dorm.interacts.luosen_icecream"] = {
 		require("game.dorm.interacts.luosen_icecream")
 	},
+	["game.dorm.interacts.mic_sing"] = {
+		require("game.dorm.interacts.mic_sing")
+	},
 	["game.dorm.interacts.nangua_kick"] = {
 		require("game.dorm.interacts.nangua_kick")
 	},
@@ -136,6 +145,23 @@
 	},
 	["game.dorm.interacts.play_train"] = {
 		require("game.dorm.interacts.play_train")
+	},
+	["game.dorm.interacts.pole_dance"] = {
+		require("game.dorm.interacts.pole_dance")
+	},
+	["game.dorm.interacts.saodi_move"] = {
+		require("game.dorm.interacts.saodi_move")
+	},
+	["game.dorm.interacts.simbusiness_goods_take"] = {
+		require("game.dorm.interacts.simbusiness_goods_take1"),
+		require("game.dorm.interacts.simbusiness_goods_take2")
+	},
+	["game.dorm.interacts.simbusiness_goods_take1_"] = {
+		require("game.dorm.interacts.simbusiness_goods_take1_2")
+	},
+	["game.dorm.interacts.snake_dance"] = {
+		require("game.dorm.interacts.snake_dance01"),
+		require("game.dorm.interacts.snake_dance02")
 	},
 	["game.dorm.interacts.sofa_no_idle"] = {
 		require("game.dorm.interacts.sofa_no_idle")
@@ -167,6 +193,9 @@
 	["game.dorm.interacts.train_show"] = {
 		require("game.dorm.interacts.train_show01"),
 		require("game.dorm.interacts.train_show02")
+	},
+	["game.dorm.interacts.virtual_train"] = {
+		require("game.dorm.interacts.virtual_train")
 	},
 	["game.dorm.interacts.xiaoyuan_kezhuo"] = {
 		require("game.dorm.interacts.xiaoyuan_kezhuo02"),
@@ -202,6 +231,9 @@
 	},
 	["game.dorm.interacts.1019.1119_kafeizhuo"] = {
 		require("game.dorm.interacts.1019.1119_kafeizhuo")
+	},
+	["game.dorm.interacts.1024.1024_weight_lifting"] = {
+		require("game.dorm.interacts.1024.1024_weight_lifting")
 	},
 	["game.dorm.interacts.1027.1127_umbrella"] = {
 		require("game.dorm.interacts.1027.1127_umbrella")
@@ -259,6 +291,9 @@
 	["game.dorm.interacts.1081.1081_car"] = {
 		require("game.dorm.interacts.1081.1081_car")
 	},
+	["game.dorm.interacts.1081.1081_haidao"] = {
+		require("game.dorm.interacts.1081.1081_haidao")
+	},
 	["game.dorm.interacts.1084.aaa"] = {
 		require("game.dorm.interacts.1084.aaa")
 	},
@@ -271,11 +306,27 @@
 	["game.dorm.interacts.1084.zhongqiu_mooncake"] = {
 		require("game.dorm.interacts.1084.zhongqiu_mooncake")
 	},
+	["game.dorm.interacts.1093.1093_dharma"] = {
+		require("game.dorm.interacts.1093.1093_dharma")
+	},
 	["game.dorm.interacts.1093.1093_tuanziwu"] = {
 		require("game.dorm.interacts.1093.1093_tuanziwu")
 	},
 	["game.dorm.interacts.1094.1094_coffin_bed"] = {
 		require("game.dorm.interacts.1094.1094_coffin_bed")
+	},
+	["game.dorm.interacts.109502.tuote_chuang"] = {
+		require("game.dorm.interacts.109502.tuote_chuang1"),
+		require("game.dorm.interacts.109502.tuote_chuang2")
+	},
+	["game.dorm.interacts.109502.tuote_shafa"] = {
+		require("game.dorm.interacts.109502.tuote_shafa")
+	},
+	["game.dorm.interacts.109502.tuote_shugui"] = {
+		require("game.dorm.interacts.109502.tuote_shugui")
+	},
+	["game.dorm.interacts.109502_01.tuote_chuang"] = {
+		require("game.dorm.interacts.109502_01.tuote_chuang1")
 	},
 	["game.dorm.interacts.1099.1099_shejian"] = {
 		require("game.dorm.interacts.1099.1099_shejian")
@@ -372,7 +423,8 @@
 		require("game.dorm.interacts.dance.type1_b8_03"),
 		require("game.dorm.interacts.dance.type1_b8_04"),
 		require("game.dorm.interacts.dance.type1_b8_05"),
-		require("game.dorm.interacts.dance.type1_b8_06")
+		require("game.dorm.interacts.dance.type1_b8_06"),
+		require("game.dorm.interacts.dance.type1_b8_07")
 	},
 	["game.dorm.interacts.dance.type2_b16_"] = {
 		require("game.dorm.interacts.dance.type2_b16_01"),
@@ -385,7 +437,8 @@
 		require("game.dorm.interacts.dance.type2_b8_03"),
 		require("game.dorm.interacts.dance.type2_b8_04"),
 		require("game.dorm.interacts.dance.type2_b8_05"),
-		require("game.dorm.interacts.dance.type2_b8_06")
+		require("game.dorm.interacts.dance.type2_b8_06"),
+		require("game.dorm.interacts.dance.type2_b8_07")
 	},
 	["game.dorm.interacts.dance.type3_b16_"] = {
 		require("game.dorm.interacts.dance.type3_b16_01")
@@ -396,7 +449,8 @@
 		require("game.dorm.interacts.dance.type3_b8_03"),
 		require("game.dorm.interacts.dance.type3_b8_04"),
 		require("game.dorm.interacts.dance.type3_b8_05"),
-		require("game.dorm.interacts.dance.type3_b8_06")
+		require("game.dorm.interacts.dance.type3_b8_06"),
+		require("game.dorm.interacts.dance.type3_b8_07")
 	},
 	["game.dorm.interacts.dance.type4_b16_"] = {
 		require("game.dorm.interacts.dance.type4_b16_01")
@@ -407,7 +461,8 @@
 		require("game.dorm.interacts.dance.type4_b8_03"),
 		require("game.dorm.interacts.dance.type4_b8_04"),
 		require("game.dorm.interacts.dance.type4_b8_05"),
-		require("game.dorm.interacts.dance.type4_b8_06")
+		require("game.dorm.interacts.dance.type4_b8_06"),
+		require("game.dorm.interacts.dance.type4_b8_07")
 	},
 	["game.dorm.interacts.dance.type5_b16_"] = {
 		require("game.dorm.interacts.dance.type5_b16_01")
@@ -421,7 +476,8 @@
 		require("game.dorm.interacts.dance.type5_b8_03"),
 		require("game.dorm.interacts.dance.type5_b8_04"),
 		require("game.dorm.interacts.dance.type5_b8_05"),
-		require("game.dorm.interacts.dance.type5_b8_06")
+		require("game.dorm.interacts.dance.type5_b8_06"),
+		require("game.dorm.interacts.dance.type5_b8_07")
 	},
 	["game.dorm.interacts.dance.wudao_aa"] = {
 		require("game.dorm.interacts.dance.wudao_aa")
@@ -453,6 +509,14 @@
 	["game.dorm.interacts.dance.wudao_be"] = {
 		require("game.dorm.interacts.dance.wudao_be")
 	},
+	["game.dorm.interacts.female.dance_game"] = {
+		require("game.dorm.interacts.female.dance_game01"),
+		require("game.dorm.interacts.female.dance_game02"),
+		require("game.dorm.interacts.female.dance_game03"),
+		require("game.dorm.interacts.female.dance_game04"),
+		require("game.dorm.interacts.female.dance_game05"),
+		require("game.dorm.interacts.female.dance_game06")
+	},
 	["game.dorm.interacts.female.hedan_fen"] = {
 		require("game.dorm.interacts.female.hedan_fen")
 	},
@@ -465,6 +529,14 @@
 	["game.dorm.interacts.female.train_show"] = {
 		require("game.dorm.interacts.female.train_show03")
 	},
+	["game.dorm.interacts.lady.dance_game"] = {
+		require("game.dorm.interacts.lady.dance_game01"),
+		require("game.dorm.interacts.lady.dance_game02"),
+		require("game.dorm.interacts.lady.dance_game03"),
+		require("game.dorm.interacts.lady.dance_game04"),
+		require("game.dorm.interacts.lady.dance_game05"),
+		require("game.dorm.interacts.lady.dance_game06")
+	},
 	["game.dorm.interacts.lady.hedan_fen"] = {
 		require("game.dorm.interacts.lady.hedan_fen")
 	},
@@ -476,6 +548,9 @@
 	},
 	["game.dorm.interacts.lady.train_show"] = {
 		require("game.dorm.interacts.lady.train_show03")
+	},
+	["game.dorm.interacts.male.dorm_drink"] = {
+		require("game.dorm.interacts.male.dorm_drink")
 	},
 	["game.dorm.interacts.male.happy"] = {
 		require("game.dorm.interacts.male.happy01")

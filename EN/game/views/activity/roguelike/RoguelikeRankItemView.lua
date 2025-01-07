@@ -9,6 +9,9 @@ end
 
 function var_0_0.Init(arg_2_0)
 	arg_2_0.gameObject_:InjectUI(arg_2_0)
+
+	arg_2_0.commonPortrait_ = CommonHeadPortrait.New(arg_2_0.GoHeadItem)
+
 	arg_2_0:AddUIListener()
 end
 
@@ -40,8 +43,9 @@ function var_0_0.UpdateView(arg_7_0)
 		var_7_1 = var_7_0[1].hero_id
 	end
 
-	arg_7_0.ImgHead.sprite = ItemTools.getItemSprite(arg_7_0.data.portrait)
-	arg_7_0.ImgFrame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_7_0.data.frame)
+	arg_7_0.commonPortrait_:RenderHead(arg_7_0.data.portrait)
+	arg_7_0.commonPortrait_:RenderFrame(arg_7_0.data.frame)
+
 	arg_7_0.ImgRole.sprite = ItemTools.getItemSprite(var_7_1)
 
 	if arg_7_0.data.rank < 4 then
@@ -69,6 +73,8 @@ function var_0_0.OnMainHomeViewTop(arg_10_0)
 end
 
 function var_0_0.Dispose(arg_11_0)
+	arg_11_0.commonPortrait_:Dispose()
+
 	arg_11_0.data = nil
 
 	var_0_0.super.Dispose(arg_11_0)

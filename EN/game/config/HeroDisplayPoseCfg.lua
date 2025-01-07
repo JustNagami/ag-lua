@@ -2184,6 +2184,46 @@
 		name = "ddda15c1037878ca96b3b825c7df706c",
 		poseName = "ui_stand"
 	},
+	[10490200] = {
+		id = 10490200,
+		name = "232c0fbe1bd06c6e70414ed46f8027ba",
+		poseName = "pose0"
+	},
+	[10490201] = {
+		id = 10490201,
+		name = "a2cc67dfdb4f646ab82f92e2fe75896e",
+		poseName = "pose1"
+	},
+	[10490202] = {
+		id = 10490202,
+		name = "aceec99244415291e0b70f70a4fabf2d",
+		poseName = "pose2"
+	},
+	[10490203] = {
+		id = 10490203,
+		name = "ba7ca6b62d14cbe67a1703254f427db1",
+		poseName = "pose3"
+	},
+	[10490204] = {
+		id = 10490204,
+		name = "0f9cba5ddc8e6446b3ec473cef3647df",
+		poseName = "pose4"
+	},
+	[10490205] = {
+		id = 10490205,
+		name = "9f1f177e725449711fa5299c600c915a",
+		poseName = "pose5"
+	},
+	[10490206] = {
+		id = 10490206,
+		name = "10bc9737c2061198b7f9028e67658a45",
+		poseName = "pose6"
+	},
+	[10490299] = {
+		id = 10490299,
+		name = "1b9baf70c2869786b98358426b20dd02",
+		poseName = "ui_stand"
+	},
 	[115800] = {
 		id = 115800,
 		name = "859930353633161825b06569f7f0325a",
@@ -2504,6 +2544,46 @@
 		name = "1d7020bc2120c67fb08933e2454ea5a2",
 		poseName = "ui_stand"
 	},
+	[10950200] = {
+		id = 10950200,
+		name = "3f24fdafda2d65448e2b138ef6deb768",
+		poseName = "pose0"
+	},
+	[10950201] = {
+		id = 10950201,
+		name = "457dc84467f9e63e1bcc731175e27145",
+		poseName = "pose1"
+	},
+	[10950202] = {
+		id = 10950202,
+		name = "7899c4037141d51c87193974eaba1ee9",
+		poseName = "pose2"
+	},
+	[10950203] = {
+		id = 10950203,
+		name = "f7e90fb7fdeeb56264f06d82f2707c88",
+		poseName = "pose3"
+	},
+	[10950204] = {
+		id = 10950204,
+		name = "6a506ad278de827a72327bfdfe7aca93",
+		poseName = "pose4"
+	},
+	[10950205] = {
+		id = 10950205,
+		name = "ba2b3d982cc1d5ec40c643a19c97e08e",
+		poseName = "pose5"
+	},
+	[10950206] = {
+		id = 10950206,
+		name = "d676e70f5e9388a27e4f3f01e86a66da",
+		poseName = "pose6"
+	},
+	[10950299] = {
+		id = 10950299,
+		name = "a452d17cf9e8fb022e36ff5b57df2cbb",
+		poseName = "ui_stand"
+	},
 	[128400] = {
 		id = 128400,
 		name = "cce0751b4c6a0d11ec01d01d80d0b7ef",
@@ -2582,6 +2662,206 @@
 	[119799] = {
 		id = 119799,
 		name = "3f9081fa60a6224970e03db0748d4710",
+		poseName = "ui_stand"
+	},
+	[102200] = {
+		id = 102200,
+		name = "a3f58d5fcf8753a277711c994a2307e6",
+		poseName = "pose0"
+	},
+	[102201] = {
+		id = 102201,
+		name = "113a00aea2b4af9768fe96d8c5bdf6dc",
+		poseName = "pose1"
+	},
+	[102202] = {
+		id = 102202,
+		name = "79985ec4efad206d46c2df7ff19f4ac0",
+		poseName = "pose2"
+	},
+	[102203] = {
+		id = 102203,
+		name = "380ff6b9f00df6f926ba997bd41c7555",
+		poseName = "pose3"
+	},
+	[102204] = {
+		id = 102204,
+		name = "5473c23fcf6766b3b2c8b01b021d82d2",
+		poseName = "pose4"
+	},
+	[102205] = {
+		id = 102205,
+		name = "f3048faa318a7e966571ca4628cc8677",
+		poseName = "pose5"
+	},
+	[102206] = {
+		id = 102206,
+		name = "eb3b44dc4814cb964073a62c983c2cfd",
+		poseName = "pose6"
+	},
+	[102299] = {
+		id = 102299,
+		name = "7612db898754df3cb3f9504c2a0c3841",
+		poseName = "ui_stand"
+	},
+	[102100] = {
+		id = 102100,
+		name = "107024abb12450d6a4d2c672c4d300d5",
+		poseName = "pose0"
+	},
+	[102101] = {
+		id = 102101,
+		name = "aeccdf735fd5a0e8de38f076b54493aa",
+		poseName = "pose1"
+	},
+	[102102] = {
+		id = 102102,
+		name = "15edbe25f1eeda11f0aa0c868c0f2dda",
+		poseName = "pose2"
+	},
+	[102103] = {
+		id = 102103,
+		name = "e2e330d1a110899cf6b999873357357a",
+		poseName = "pose3"
+	},
+	[102104] = {
+		id = 102104,
+		name = "bfabcbc0b94d44808e786fd776328c78",
+		poseName = "pose4"
+	},
+	[102105] = {
+		id = 102105,
+		name = "924a985fbf26808eb2fb4bec05dca1b7",
+		poseName = "pose5"
+	},
+	[102106] = {
+		id = 102106,
+		name = "0711705cfb46c7ab6cfddcef98cde65a",
+		poseName = "pose6"
+	},
+	[102199] = {
+		id = 102199,
+		name = "d14d7e72e5e555e5fd6fbcd34938543a",
+		poseName = "ui_stand"
+	},
+	[115600] = {
+		id = 115600,
+		name = "0be99ffc49cb1f9139d4945a6abeb25d",
+		poseName = "pose0"
+	},
+	[115601] = {
+		id = 115601,
+		name = "7063793ff7986a935efb5368a0fbf9da",
+		poseName = "pose1"
+	},
+	[115602] = {
+		id = 115602,
+		name = "9566dc0547ed474d22c0410214d89371",
+		poseName = "pose2"
+	},
+	[115603] = {
+		id = 115603,
+		name = "1044190d99635b970b842ab71e386dea",
+		poseName = "pose3"
+	},
+	[115604] = {
+		id = 115604,
+		name = "ff6bc1ae5ad7334ecc47b0204f52f8e9",
+		poseName = "pose4"
+	},
+	[115605] = {
+		id = 115605,
+		name = "ced194ffddd9781d924b22e2582ab5b5",
+		poseName = "pose5"
+	},
+	[115606] = {
+		id = 115606,
+		name = "e1f4895773db42da9e654175cb93c130",
+		poseName = "pose6"
+	},
+	[115699] = {
+		id = 115699,
+		name = "5f4d1172bcfcd50ddb173da91ee04376",
+		poseName = "ui_stand"
+	},
+	[102000] = {
+		id = 102000,
+		name = "62b26fe0741d38be1d861e8e7bf8925e",
+		poseName = "pose0"
+	},
+	[102001] = {
+		id = 102001,
+		name = "c6b7e0ff780afd3b437eeaaf86c112e0",
+		poseName = "pose1"
+	},
+	[102002] = {
+		id = 102002,
+		name = "9e24883816df5f8269721a07e3fa9c19",
+		poseName = "pose2"
+	},
+	[102003] = {
+		id = 102003,
+		name = "3342755b6aae6cd2fa9413e3c19742dd",
+		poseName = "pose3"
+	},
+	[102004] = {
+		id = 102004,
+		name = "c266c6d4d85c5f8dce2944382bd35995",
+		poseName = "pose4"
+	},
+	[102005] = {
+		id = 102005,
+		name = "f3311d602d27ad86788b3dcd7ecb72c9",
+		poseName = "pose5"
+	},
+	[102006] = {
+		id = 102006,
+		name = "61286a91622aaf2309299d7ae79c4ecd",
+		poseName = "pose6"
+	},
+	[102099] = {
+		id = 102099,
+		name = "a1b651cbe3249d95e6691f15cae4359c",
+		poseName = "ui_stand"
+	},
+	[108900] = {
+		id = 108900,
+		name = "c6d72bf6787f6a5426c7dc65b917c32e",
+		poseName = "pose0"
+	},
+	[108901] = {
+		id = 108901,
+		name = "ede9cea21593231af288a68b1c310b07",
+		poseName = "pose1"
+	},
+	[108902] = {
+		id = 108902,
+		name = "75a7017871f7d792952976d50ea3d3bb",
+		poseName = "pose2"
+	},
+	[108903] = {
+		id = 108903,
+		name = "a9327d2909a7bb67630042c264f96318",
+		poseName = "pose3"
+	},
+	[108904] = {
+		id = 108904,
+		name = "33d677e86369a8ade57bf4930e119c01",
+		poseName = "pose4"
+	},
+	[108905] = {
+		id = 108905,
+		name = "a4835f44da272a0c3e0716c04f830578",
+		poseName = "pose5"
+	},
+	[108906] = {
+		id = 108906,
+		name = "663fa930128d69d1f693ecd5f330cb7c",
+		poseName = "pose6"
+	},
+	[108999] = {
+		id = 108999,
+		name = "4b82dcc11e99021dd6cbb97bc6aa33e5",
 		poseName = "ui_stand"
 	},
 	all = {
@@ -3022,6 +3302,14 @@
 		10490105,
 		10490106,
 		10490199,
+		10490200,
+		10490201,
+		10490202,
+		10490203,
+		10490204,
+		10490205,
+		10490206,
+		10490299,
 		115800,
 		115801,
 		115802,
@@ -3086,6 +3374,14 @@
 		10950105,
 		10950106,
 		10950199,
+		10950200,
+		10950201,
+		10950202,
+		10950203,
+		10950204,
+		10950205,
+		10950206,
+		10950299,
 		128400,
 		128401,
 		128402,
@@ -3101,6 +3397,46 @@
 		119704,
 		119705,
 		119706,
-		119799
+		119799,
+		102200,
+		102201,
+		102202,
+		102203,
+		102204,
+		102205,
+		102206,
+		102299,
+		102100,
+		102101,
+		102102,
+		102103,
+		102104,
+		102105,
+		102106,
+		102199,
+		115600,
+		115601,
+		115602,
+		115603,
+		115604,
+		115605,
+		115606,
+		115699,
+		102000,
+		102001,
+		102002,
+		102003,
+		102004,
+		102005,
+		102006,
+		102099,
+		108900,
+		108901,
+		108902,
+		108903,
+		108904,
+		108905,
+		108906,
+		108999
 	}
 }

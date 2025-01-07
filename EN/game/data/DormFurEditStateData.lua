@@ -8,6 +8,8 @@ function var_0_0.EnterEditState(arg_1_0)
 	var_0_1 = {}
 	var_0_4 = {}
 	var_0_3 = {}
+
+	DormFurnitureManager.GetInstance():BeginEdit()
 end
 
 function var_0_0.ExitEditState(arg_2_0)
@@ -16,7 +18,7 @@ function var_0_0.ExitEditState(arg_2_0)
 	var_0_3 = nil
 	var_0_2 = nil
 
-	DormFurnitureManager.GetInstance():RefreshAllFurnitureConnection()
+	DormFurnitureManager.GetInstance():EndEdit()
 end
 
 function var_0_0.GetHadPlaceFurInfoList(arg_3_0)
@@ -164,8 +166,25 @@ function var_0_0.GetCacheFurNumInfo(arg_7_0)
 	end
 end
 
-function var_0_0.SetCacheFurNumInfo(arg_8_0, arg_8_1)
+function var_0_0.SetCacheFurNumInfo(arg_8_0, arg_8_1, arg_8_2)
 	var_0_1 = arg_8_1
+	var_0_4 = arg_8_2
+
+	for iter_8_0, iter_8_1 in pairs(arg_8_1) do
+		if DormSpecialFurnitureTools:JudgeFurIsSpecialType(iter_8_0) and iter_8_1 > 0 then
+			local var_8_0 = {}
+
+			if BackHomeFurniture[iter_8_0].type == DormConst.FLOOR_TYPE_NUM then
+				var_8_0.floorID = iter_8_0
+			elseif BackHomeFurniture[iter_8_0].type == DormConst.WALL_TYPE_NUM then
+				var_8_0.wallID = iter_8_0
+			elseif BackHomeFurniture[iter_8_0].type == DormConst.BACK_GROUND_TYPE then
+				var_8_0.backGroundID = iter_8_0
+			end
+
+			arg_8_0:CacheWallAndFloorInfo(var_8_0)
+		end
+	end
 end
 
 function var_0_0.GetCacheFurNum(arg_9_0, arg_9_1)

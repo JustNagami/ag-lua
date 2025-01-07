@@ -47,15 +47,24 @@ function var_0_0.RefreshUI(arg_6_0)
 end
 
 function var_0_0.RefreshReward(arg_7_0)
-	if arg_7_0.commonItem_ == nil then
-		arg_7_0.commonItem_ = CommonItem.New(arg_7_0.rewardItemGo_)
+	if not arg_7_0.commonItem_ then
+		arg_7_0.commonItem_ = CommonItemView.New(arg_7_0.rewardItemGo_)
 	end
 
-	arg_7_0.commonItem_:RefreshData(formatReward(arg_7_0.rewardCfg_[1]))
-	arg_7_0.commonItem_:RegistCallBack(function()
-		ShowPopItem(POP_ITEM, arg_7_0.rewardCfg_[1])
-	end)
-	arg_7_0.commonItem_:Show(true)
+	if not arg_7_0.itemDataTemplate_ then
+		arg_7_0.itemDataTemplate_ = clone(ItemTemplateData)
+		arg_7_0.itemDataTemplate_.id = arg_7_0.rewardCfg_[1][1]
+		arg_7_0.itemDataTemplate_.number = arg_7_0.rewardCfg_[1][2]
+
+		function arg_7_0.itemDataTemplate_.clickFun(arg_8_0)
+			ShowPopItem(POP_ITEM, {
+				arg_8_0.id,
+				arg_8_0.number
+			})
+		end
+
+		arg_7_0.commonItem_:SetData(arg_7_0.itemDataTemplate_)
+	end
 end
 
 function var_0_0.RefreshStatus(arg_9_0)

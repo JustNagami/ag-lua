@@ -15,6 +15,9 @@ function var_0_0.OnCtor(arg_1_0, arg_1_1)
 	arg_1_0.newFriendCon_ = ControllerUtil.GetController(arg_1_0.transform_, "newFriend")
 
 	arg_1_0:InitUI()
+
+	arg_1_0.commonPortrait_ = CommonHeadPortrait.New(arg_1_0.headItem_)
+
 	arg_1_0:AddUIListeners()
 end
 
@@ -25,7 +28,7 @@ function var_0_0.InitUI(arg_2_0)
 end
 
 function var_0_0.AddUIListeners(arg_3_0)
-	arg_3_0:AddBtnListener(arg_3_0.headBtn_, nil, function()
+	arg_3_0.commonPortrait_:RegisteClickCallback(function()
 		ForeignInfoAction:TryToCheckForeignDetailInfo(arg_3_0.userID)
 	end)
 	arg_3_0:AddBtnListener(arg_3_0.chatBtn_, nil, function()
@@ -89,12 +92,11 @@ function var_0_0.RefreshUI(arg_14_0, arg_14_1, arg_14_2)
 	arg_14_0.userID = arg_14_1.user_id
 	arg_14_0.idTxt_.text = arg_14_1.user_id
 	arg_14_0.nameText_.text = GetI18NText(arg_14_1.nick)
-	arg_14_0.headIcon_.sprite = ItemTools.getItemSprite(arg_14_1.icon)
-
-	arg_14_0.headIcon_:SetNativeSize()
-
 	arg_14_0.data_.icon_frame = arg_14_0.data_.icon_frame ~= 0 and arg_14_0.data_.icon_frame or 2001
-	arg_14_0.frameIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_14_0.data_.icon_frame)
+
+	arg_14_0.commonPortrait_:RenderHead(arg_14_1.icon)
+	arg_14_0.commonPortrait_:RenderFrame(arg_14_0.data_.icon_frame)
+
 	arg_14_0.bg_.sprite = getSpriteWithoutAtlas("TextureConfig/Friends/" .. arg_14_0.data_.bg .. "_s")
 
 	if arg_14_0.curType_ ~= arg_14_0.friendType_.friendsRequest and arg_14_0.curType_ ~= arg_14_0.friendType_.blackList then
@@ -143,6 +145,10 @@ function var_0_0.OnExit(arg_15_0)
 end
 
 function var_0_0.Dispose(arg_16_0)
+	arg_16_0.commonPortrait_:Dispose()
+
+	arg_16_0.commonPortrait_ = nil
+
 	arg_16_0:RemoveAllListeners()
 	var_0_0.super.Dispose(arg_16_0)
 end

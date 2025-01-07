@@ -1,7 +1,7 @@
 ﻿return {
 	{
 		item_id = 22,
-		name = "每日任务评分",
+		name = "fa17e832407b87c92d7ceb019aa0d3dc",
 		id = 1,
 		target = {
 			20,
@@ -85,7 +85,7 @@
 	},
 	{
 		item_id = 23,
-		name = "新人考核评分",
+		name = "9b4fe30f1dfaad0ca6d6d14247335376",
 		id = 2,
 		target = {
 			20,
@@ -199,7 +199,7 @@
 	},
 	{
 		item_id = 35,
-		name = "每周任务",
+		name = "4f7890754f72eac7d2dc9313f47903e4",
 		id = 3,
 		target = {
 			100,

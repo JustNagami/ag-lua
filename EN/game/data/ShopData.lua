@@ -2,6 +2,7 @@
 local var_0_1 = {}
 local var_0_2 = {}
 local var_0_3 = {}
+local var_0_4 = false
 
 function var_0_0.Init()
 	var_0_1 = {}

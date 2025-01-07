@@ -11,6 +11,7 @@ end
 function var_0_0.Init(arg_3_0)
 	arg_3_0:BindCfgUI()
 
+	arg_3_0.skinImage_.immediate = true
 	arg_3_0.popType_ = POP_ITEM
 	arg_3_0.receivedControllerList_ = {}
 	arg_3_0.itemList_ = LuaList.New(handler(arg_3_0, arg_3_0.IndexItem), arg_3_0.itemListGo_, arg_3_0:GetRewardItem())
@@ -115,11 +116,8 @@ end
 
 function var_0_0.RefreshRoleImage(arg_13_0)
 	local var_13_0 = SkinTrialTools.GetHeroStandardID(arg_13_0.skinTrialID_)
-	local var_13_1 = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. SkinCfg[HeroStandardSystemCfg[var_13_0].skin_id].picture_id)
 
-	if var_13_1 ~= nil then
-		arg_13_0.skinImage_.sprite = var_13_1
-	end
+	arg_13_0.skinImage_.spriteSync = "TextureConfig/Character/Portrait/" .. SkinCfg[HeroStandardSystemCfg[var_13_0].skin_id].picture_id
 end
 
 function var_0_0.RefreshReward(arg_14_0)

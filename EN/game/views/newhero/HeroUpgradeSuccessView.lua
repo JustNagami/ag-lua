@@ -1,23 +1,24 @@
-﻿local var_0_0 = class("HeroUpgradeSuccessView", ReduxView)
+﻿local var_0_0 = import("game.views.pop.PopLevelUpBaseView")
+local var_0_1 = class("HeroUpgradeSuccessView", var_0_0)
 
-function var_0_0.UIName(arg_1_0)
+function var_0_1.UIName(arg_1_0)
 	return "Widget/System/Hero_arrt/HeroLevelUpUI"
 end
 
-function var_0_0.UIParent(arg_2_0)
+function var_0_1.UIParent(arg_2_0)
 	return manager.ui.uiPop.transform
 end
 
-function var_0_0.OnCtor(arg_3_0)
+function var_0_1.OnCtor(arg_3_0)
 	return
 end
 
-function var_0_0.Init(arg_4_0)
+function var_0_1.Init(arg_4_0)
 	arg_4_0:InitUI()
 	arg_4_0:AddUIListener()
 end
 
-function var_0_0.InitUI(arg_5_0)
+function var_0_1.InitUI(arg_5_0)
 	arg_5_0:BindCfgUI()
 
 	arg_5_0.fromPropValueTexts_ = {
@@ -46,14 +47,23 @@ function var_0_0.InitUI(arg_5_0)
 	end
 end
 
-function var_0_0.AddUIListener(arg_6_0)
-	arg_6_0:AddBtnListener(arg_6_0.bgBtn_, nil, function()
+function var_0_1.AddUIListener(arg_6_0)
+	arg_6_0:AddBtnListener(arg_6_0.btnBack_, nil, function()
 		arg_6_0:Back()
-		arg_6_0.params_.callback()
+
+		if arg_6_0.params_.callback then
+			local var_7_0 = arg_6_0.params_.callback
+
+			arg_6_0.params_.callBack = nil
+
+			var_7_0()
+		end
 	end)
 end
 
-function var_0_0.OnEnter(arg_8_0)
+function var_0_1.OnEnter(arg_8_0)
+	arg_8_0:CheckBack()
+
 	arg_8_0.oldLv_ = arg_8_0.params_.oldLv
 	arg_8_0.oldAttr_ = arg_8_0.params_.oldAttr
 	arg_8_0.heroViewProxy_ = arg_8_0.params_.proxy
@@ -63,7 +73,7 @@ function var_0_0.OnEnter(arg_8_0)
 	arg_8_0:UpdateView()
 end
 
-function var_0_0.UpdateView(arg_9_0)
+function var_0_1.UpdateView(arg_9_0)
 	arg_9_0.fromLevelText_.text = string.format("%d", arg_9_0.oldLv_)
 	arg_9_0.toLevelText_.text = string.format("%d", arg_9_0.heroInfo_.level)
 
@@ -75,7 +85,7 @@ function var_0_0.UpdateView(arg_9_0)
 	arg_9_0:PlayHeroTalk(arg_9_0.heroInfo_.id)
 end
 
-function var_0_0.PlayHeroTalk(arg_10_0, arg_10_1)
+function var_0_1.PlayHeroTalk(arg_10_0, arg_10_1)
 	if arg_10_0.isTalkCD_ then
 		return
 	end
@@ -90,11 +100,11 @@ function var_0_0.PlayHeroTalk(arg_10_0, arg_10_1)
 	arg_10_0.talkCDTimer_:Start()
 end
 
-function var_0_0.OnExit(arg_12_0)
+function var_0_1.OnExit(arg_12_0)
 	return
 end
 
-function var_0_0.Dispose(arg_13_0)
+function var_0_1.Dispose(arg_13_0)
 	arg_13_0:RemoveAllListeners()
 
 	if arg_13_0.talkCDTimer_ then
@@ -105,7 +115,7 @@ function var_0_0.Dispose(arg_13_0)
 
 	arg_13_0.isTalkCD_ = nil
 
-	var_0_0.super.Dispose(arg_13_0)
+	var_0_1.super.Dispose(arg_13_0)
 end
 
-return var_0_0
+return var_0_1

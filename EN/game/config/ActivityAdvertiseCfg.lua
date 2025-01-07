@@ -231,6 +231,101 @@
 			525
 		}
 	},
+	[25] = {
+		activity_id = 282101,
+		id = 25,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_DeepSea",
+		order = 1000,
+		reward_list = {},
+		jump_system = {
+			15601,
+			281001
+		}
+	},
+	[26] = {
+		activity_id = 281112,
+		id = 26,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_102201_104902",
+		order = 100,
+		reward_list = {},
+		jump_system = {
+			525
+		}
+	},
+	[27] = {
+		activity_id = 282102,
+		id = 27,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_dawn",
+		order = 1000,
+		reward_list = {},
+		jump_system = {
+			15601,
+			281001
+		}
+	},
+	[28] = {
+		activity_id = 281115,
+		id = 28,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_102101",
+		order = 100,
+		reward_list = {},
+		jump_system = {
+			525
+		}
+	},
+	[29] = {
+		activity_id = 292101,
+		id = 29,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_HighWall",
+		order = 1000,
+		reward_list = {},
+		jump_system = {
+			15801,
+			291001
+		}
+	},
+	[30] = {
+		activity_id = 292102,
+		id = 30,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_102001_107402",
+		order = 100,
+		reward_list = {},
+		jump_system = {
+			525
+		}
+	},
+	[31] = {
+		activity_id = 292103,
+		id = 31,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_HighWall_2",
+		order = 1000,
+		reward_list = {},
+		jump_system = {
+			15801,
+			291001
+		}
+	},
+	[32] = {
+		activity_id = 292104,
+		id = 32,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_109502",
+		order = 500,
+		reward_list = {},
+		jump_system = {
+			2901,
+			292211
+		}
+	},
+	[33] = {
+		activity_id = 292105,
+		id = 33,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_108901",
+		order = 100,
+		reward_list = {},
+		jump_system = {
+			525
+		}
+	},
 	[82101] = {
 		activity_id = 82101,
 		id = 82101,
@@ -287,6 +382,15 @@
 		20,
 		21,
 		24,
+		25,
+		26,
+		27,
+		28,
+		29,
+		30,
+		31,
+		32,
+		33,
 		82101,
 		92101,
 		102101

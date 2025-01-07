@@ -163,92 +163,86 @@ function var_0_0.BuyItem(arg_12_0, arg_12_1, arg_12_2)
 		if arg_12_1 then
 			var_12_3 = arg_12_1
 		else
-			var_12_3 = var_12_2.cost
-
-			local var_12_4, var_12_5, var_12_6 = ShopTools.IsOnDiscountArea(iter_12_1.goodID)
-
-			if var_12_4 and var_12_6 then
-				var_12_3 = var_12_2.cheap_cost
-			end
+			var_12_3 = ShopTools.GetPrice(iter_12_1.goodID)
 		end
 
-		local var_12_7 = var_12_3 * iter_12_1.buyNum
-		local var_12_8 = ItemCfg[var_12_2.cost_id].type
-		local var_12_9 = {}
+		local var_12_4 = var_12_3 * iter_12_1.buyNum
+		local var_12_5 = ItemCfg[var_12_2.cost_id].type
+		local var_12_6 = {}
 
 		if var_12_2.cost_type == 2 then
-			local var_12_10 = ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_DIAMOND)
-			local var_12_11 = math.min(var_12_7, var_12_10)
-			local var_12_12 = var_12_7 - var_12_11
+			local var_12_7 = ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_DIAMOND)
+			local var_12_8 = math.min(var_12_4, var_12_7)
+			local var_12_9 = var_12_4 - var_12_8
 
-			table.insert(var_12_9, {
+			table.insert(var_12_6, {
 				id = CurrencyConst.CURRENCY_TYPE_DIAMOND,
-				num = var_12_11
+				num = var_12_8
 			})
 
-			if var_12_12 > 0 then
-				table.insert(var_12_9, {
+			if var_12_9 > 0 then
+				table.insert(var_12_6, {
 					id = CurrencyConst.CURRENCY_TYPE_RECHARGE_DIAMOND_FREE,
-					num = var_12_12
+					num = var_12_9
 				})
 			end
 
-			if var_12_12 > 0 and var_12_12 > CurrencyData:GetRechargeDiamond() then
+			if var_12_9 > 0 and var_12_9 > CurrencyData:GetRechargeDiamond() then
 				ShopTools.DiamondEnoughMessageBox()
 
 				return
 			end
 		else
-			table.insert(var_12_9, {
+			table.insert(var_12_6, {
 				id = var_12_2.cost_id,
-				num = var_12_7
+				num = var_12_4
 			})
 
-			if var_12_8 == ItemConst.ITEM_TYPE.CURRENCY then
-				local var_12_13 = var_12_2.cost_id
-				local var_12_14 = ItemTools.getItemNum(var_12_13)
+			if var_12_5 == ItemConst.ITEM_TYPE.CURRENCY then
+				local var_12_10 = var_12_2.cost_id
+				local var_12_11 = ItemTools.getItemNum(var_12_10)
 
-				if var_12_14 < var_12_7 then
-					if var_12_13 == CurrencyConst.CURRENCY_TYPE_GOLD then
-						local var_12_15 = false
-						local var_12_16 = ItemCfg.get_id_list_by_sub_type[ItemConst.ITEM_SUB_TYPE.PROPS_BOND]
+				if var_12_11 < var_12_4 then
+					if var_12_10 == CurrencyConst.CURRENCY_TYPE_GOLD then
+						local var_12_12 = false
+						local var_12_13 = ItemCfg.get_id_list_by_sub_type[ItemConst.ITEM_SUB_TYPE.PROPS_BOND]
 
-						for iter_12_2, iter_12_3 in ipairs(var_12_16 or {}) do
+						for iter_12_2, iter_12_3 in ipairs(var_12_13 or {}) do
 							if ItemTools.getItemNum(iter_12_3) > 0 then
-								var_12_15 = true
+								var_12_12 = true
 
 								break
 							end
 						end
 
-						if CurrencyData:GetGoldBuyTimes() < GameSetting.coin_max_buy_time.value[1] or var_12_15 then
+						if CurrencyData:GetGoldBuyTimes() < GameSetting.coin_max_buy_time.value[1] or var_12_12 then
 							JumpTools.OpenPopUp("currencyBuyGold", nil, ViewConst.SYSTEM_ID.BUY_GOLD)
 
 							return
 						end
-					elseif var_12_13 == CurrencyConst.CURRENCY_TYPE_DIAMOND then
+					elseif var_12_10 == CurrencyConst.CURRENCY_TYPE_DIAMOND then
 						if AreaDifferenceCfg[GameToSDK.CURRENT_SERVER].payment == 1 then
-							ShopTools.DefaultOpenPopUp(var_12_7 - var_12_14)
+							ShopTools.DefaultOpenPopUp(var_12_4 - var_12_11)
 						else
 							ShowTips("ERROR_ITEM_NOT_ENOUGH_CURRENCY")
 						end
 
 						return
-					elseif var_12_13 == CurrencyConst.CURRENCY_TYPE_RECHARGE_DIAMOND_FREE then
+					elseif var_12_10 == CurrencyConst.CURRENCY_TYPE_RECHARGE_DIAMOND_FREE then
 						ShopTools.DiamondEnoughMessageBox()
 
 						return
 					end
 
-					ShowTips(string.format(GetTips("CURRENCY_NO_ENOUGH"), GetI18NText(ItemCfg[var_12_13].name)))
+					ShowTips(string.format(GetTips("CURRENCY_NO_ENOUGH"), GetI18NText(ItemCfg[var_12_10].name)))
 
 					return
 				end
-			elseif var_12_8 == ItemConst.ITEM_TYPE.MATERIAL then
-				local var_12_17 = var_12_2.cost_id
+			elseif var_12_5 == ItemConst.ITEM_TYPE.MATERIAL then
+				local var_12_14 = var_12_2.cost_id
 
-				if var_12_7 > ItemTools.getItemNum(var_12_17) then
-					ShowTips(string.format(GetTips("CURRENCY_NO_ENOUGH"), GetI18NText(ItemCfg[var_12_17].name)))
+				if var_12_4 > ItemTools.getItemNum(var_12_14) then
+					ShowTips(string.format(GetTips("CURRENCY_NO_ENOUGH"), GetI18NText(ItemCfg[var_12_14].name)))
 
 					return
 				end
@@ -267,14 +261,14 @@ function var_0_0.BuyItem(arg_12_0, arg_12_1, arg_12_2)
 			table.insert(var_12_0, {
 				buy_id = iter_12_1.goodID,
 				buy_num = iter_12_1.buyNum,
-				cost_items = var_12_9
+				cost_items = var_12_6
 			})
 		else
 			print("shopID", var_12_1, "goodID", iter_12_1.goodID)
 		end
 	end
 
-	local var_12_18 = {
+	local var_12_15 = {
 		buy_goods_list = var_12_0,
 		shop_id = var_12_1,
 		buy_source = arg_12_2
@@ -287,7 +281,7 @@ function var_0_0.BuyItem(arg_12_0, arg_12_1, arg_12_2)
 	end
 
 	SendMessageManagerToSDK("purchase_complete_GP_ONCE")
-	manager.net:SendWithLoadingNew(20012, var_12_18, 20013, var_0_0.ShopItemUpdate)
+	manager.net:SendWithLoadingNew(20012, var_12_15, 20013, var_0_0.ShopItemUpdate)
 end
 
 function var_0_0.ShopItemUpdate(arg_13_0, arg_13_1)
@@ -396,6 +390,7 @@ function var_0_0.ShopItemUpdate(arg_13_0, arg_13_1)
 				table.insertto(var_13_0, var_13_13)
 			end
 
+			var_13_0 = ShopTools.revertGoodsReward(var_13_0)
 			var_13_0 = formatRewardCfgList(var_13_0)
 			var_13_0 = mergeReward(var_13_0)
 

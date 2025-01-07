@@ -119,9 +119,8 @@ function var_0_0.AddUIListener(arg_13_0)
 			return false
 		end
 
-		CanteenEntrustData:ConfirmEntrustList()
+		CanteenEntrustData:ConfirmEntrustList(arg_13_0.params_.roomID)
 		JumpTools.OpenPageByJump("/dormTaskDispatchView")
-		ShowTips("CANTEEN_TASK_DISPATCH")
 	end)
 	arg_13_0:AddBtnListener(arg_13_0.bgmaskBtn_, nil, function()
 		JumpTools.Back()

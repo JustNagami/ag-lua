@@ -251,6 +251,24 @@
 		need_coin = 800,
 		target_enemy = 0
 	},
+	[1049] = {
+		id = 1049,
+		standard_id = 3051049,
+		need_coin = 800,
+		target_enemy = 0
+	},
+	[1284] = {
+		id = 1284,
+		standard_id = 3051284,
+		need_coin = 800,
+		target_enemy = 0
+	},
+	[1055] = {
+		id = 1055,
+		standard_id = 3051055,
+		need_coin = 800,
+		target_enemy = 0
+	},
 	all = {
 		1184,
 		1027,
@@ -293,6 +311,9 @@
 		1052,
 		1024,
 		1028,
-		1132
+		1132,
+		1049,
+		1284,
+		1055
 	}
 }

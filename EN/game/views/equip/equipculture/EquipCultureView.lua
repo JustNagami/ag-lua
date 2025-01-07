@@ -116,6 +116,7 @@ function var_0_0.OnEnter(arg_9_0)
 	arg_9_0:RefreshView()
 	arg_9_0:GoToTarget(arg_9_0.params_.pageIndex)
 	arg_9_0:RefreshSideBar(arg_9_0.equipId_)
+	arg_9_0:RegistEventListener(EQUIP_UPGRADE_SUCCESS, handler(arg_9_0, arg_9_0.OnEquipUpgradeSuccess))
 end
 
 function var_0_0.ChangeBar(arg_10_0)
@@ -285,9 +286,9 @@ function var_0_0.RefreshSideBar(arg_19_0, arg_19_1)
 		end
 
 		arg_19_0:GoToTarget(var_19_0)
+		arg_19_0.pages_[var_19_0]:OnEquipChange(arg_19_0.equipId_)
 
 		if var_19_0 == arg_19_0.params_.pageIndex then
-			arg_19_0.pages_[var_19_0]:OnEquipChange(arg_19_0.equipId_)
 			arg_19_0.equipDisc_:RefreshItemByIndex(arg_19_0.index_, arg_19_0.equip)
 		end
 	else
@@ -335,54 +336,63 @@ function var_0_0.ClearSkillSelect(arg_24_0)
 	end
 end
 
-function var_0_0.OnEquipInherit(arg_25_0)
-	arg_25_0.equip = EquipData:GetEquipData(arg_25_0.equipId_)
-
-	arg_25_0.equipDisc_:RefreshItemByIndex(arg_25_0.index_, arg_25_0.equip)
-	arg_25_0.pages_[6]:ResetInherit()
+function var_0_0.OnEquipUpgradeSuccess(arg_25_0, arg_25_1)
+	arg_25_0:RefreshSideBar(arg_25_1.equipId)
+	JumpTools.OpenPageByJump("equipCulturePopView", arg_25_1)
 end
 
-function var_0_0.GetEquipId(arg_26_0)
-	return arg_26_0.equipId_
+function var_0_0.OnEquipInherit(arg_26_0)
+	arg_26_0.equip = EquipData:GetEquipData(arg_26_0.equipId_)
+
+	arg_26_0.equipDisc_:RefreshItemByIndex(arg_26_0.index_, arg_26_0.equip)
+	arg_26_0.pages_[6]:ResetInherit()
 end
 
-function var_0_0.GetCulturePage(arg_27_0)
-	return arg_27_0.curPageIndex_
+function var_0_0.GetEquipId(arg_27_0)
+	return arg_27_0.equipId_
 end
 
-function var_0_0.OnExit(arg_28_0)
+function var_0_0.GetCulturePage(arg_28_0)
+	return arg_28_0.curPageIndex_
+end
+
+function var_0_0.OnExit(arg_29_0)
 	manager.windowBar:HideBar()
-	arg_28_0:HidePop()
+	arg_29_0:HidePop()
 
-	if arg_28_0.curPageIndex_ ~= nil then
-		local var_28_0 = arg_28_0.sidebarCon_[arg_28_0.curPageIndex_]
-		local var_28_1 = arg_28_0.pages_[arg_28_0.curPageIndex_]
+	if arg_29_0.curPageIndex_ ~= nil then
+		local var_29_0 = arg_29_0.sidebarCon_[arg_29_0.curPageIndex_]
+		local var_29_1 = arg_29_0.pages_[arg_29_0.curPageIndex_]
 
-		if var_28_0 then
-			var_28_0:SetSelectedState("false")
+		if var_29_0 then
+			var_29_0:SetSelectedState("false")
 		end
 
-		if var_28_1 then
-			arg_28_0.pages_[arg_28_0.curPageIndex_]:Hide()
+		if var_29_1 then
+			arg_29_0.pages_[arg_29_0.curPageIndex_]:Hide()
 		end
 
-		arg_28_0.curPageIndex_ = nil
+		arg_29_0.curPageIndex_ = nil
 	end
-end
-
-function var_0_0.Dispose(arg_29_0)
-	arg_29_0:RemoveAllListeners()
 
 	for iter_29_0, iter_29_1 in pairs(arg_29_0.pages_) do
-		iter_29_1:Dispose()
+		iter_29_1:OnExit()
+	end
+end
+
+function var_0_0.Dispose(arg_30_0)
+	arg_30_0:RemoveAllListeners()
+
+	for iter_30_0, iter_30_1 in pairs(arg_30_0.pages_) do
+		iter_30_1:Dispose()
 	end
 
-	arg_29_0.pages_ = nil
+	arg_30_0.pages_ = nil
 
-	arg_29_0.equipInfo_:Dispose()
-	arg_29_0.skillInfo_:Dispose()
-	arg_29_0.equipDisc_:Dispose()
-	var_0_0.super.Dispose(arg_29_0)
+	arg_30_0.equipInfo_:Dispose()
+	arg_30_0.skillInfo_:Dispose()
+	arg_30_0.equipDisc_:Dispose()
+	var_0_0.super.Dispose(arg_30_0)
 end
 
 return var_0_0

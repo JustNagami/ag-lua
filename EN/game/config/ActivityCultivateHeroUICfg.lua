@@ -44,6 +44,16 @@
 		reward_ui_path = "Widget/Version/NorseUI_3_2/NorseUI_3_2_ReceivedUI/NorseUI_3_2_RewardPopUI",
 		main_ui_path = "Widget/Version/NorseUI_3_2/NorseUI_3_2_ReceivedUI/NorseUI_3_2_ReceivedUI"
 	},
+	[28] = {
+		activity_theme = 28,
+		reward_ui_path = "Widget/Version/SummerUI_3_3/SummerUI_3_3_ReceivedUI/SummerUI_3_4_RewardPopUI",
+		main_ui_path = "Widget/Version/SummerUI_3_3/SummerUI_3_3_ReceivedUI/SummerUI_3_4_ReceivedUI"
+	},
+	[29] = {
+		activity_theme = 29,
+		reward_ui_path = "Widget/System/Activity_Resident/ActivityReceivedUI/ActivityReceivedPopUI",
+		main_ui_path = "Widget/System/Activity_Resident/ActivityReceivedUI/ActivityReceivedUI"
+	},
 	all = {
 		14,
 		17,
@@ -53,6 +63,8 @@
 		21,
 		23,
 		24,
-		27
+		27,
+		28,
+		29
 	}
 }

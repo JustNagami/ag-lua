@@ -121,11 +121,14 @@ end
 
 function var_0_0.HidePoolNewTag(arg_12_0, arg_12_1)
 	if DrawData:GetPoolIsNew(arg_12_0) == 1 then
-		manager.net:SendWithLoadingNew(16020, {
+		manager.net:Push(16020, {
 			pool_id = arg_12_0
-		}, 16021, var_0_0.OnHidePoolNewTag)
+		})
+		DrawData:SetPoolIsNew(arg_12_0, 0)
 
-		var_0_0.redPointCallback_ = arg_12_1
+		if arg_12_1 ~= nil then
+			arg_12_1(false, arg_12_0)
+		end
 	end
 end
 

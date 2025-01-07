@@ -244,19 +244,64 @@
 		format_str_key = "BUFF_EFFECT_DELAY_ROUND_NEG_7",
 		is_full_info = false
 	},
-	BUFF_EFFECT_8 = {
-		pattern = "1f13a7734e60ac40cb3c95202e6ea4de",
-		format_str_key = "BUFF_EFFECT_8",
+	BUFF_EFFECT_POS_8 = {
+		pattern = "d6b962a9c22e68fe868bc57079a760a4",
+		format_str_key = "BUFF_EFFECT_POS_8",
 		is_full_info = false
 	},
-	BUFF_EFFECT_ROUND_8 = {
-		pattern = "fb4e45789e3c9fc28ff9dd3cef42f241",
-		format_str_key = "BUFF_EFFECT_ROUND_8",
+	BUFF_EFFECT_NEG_8 = {
+		pattern = "11b1c0811779a9da67328c4f91a1bf63",
+		format_str_key = "BUFF_EFFECT_NEG_8",
 		is_full_info = false
 	},
-	BUFF_EFFECT_DELAY_ROUND_8 = {
-		pattern = "0d6362a2a56fb947532c7eb592ec163c",
-		format_str_key = "BUFF_EFFECT_DELAY_ROUND_8",
+	BUFF_EFFECT_ROUND_POS_8 = {
+		pattern = "018fdb3b8baae706c3dd6e044ca556f1",
+		format_str_key = "BUFF_EFFECT_ROUND_POS_8",
+		is_full_info = false
+	},
+	BUFF_EFFECT_ROUND_NEG_8 = {
+		pattern = "ecbb50ad1b4aedfd643b9bf64cb697b8",
+		format_str_key = "BUFF_EFFECT_ROUND_NEG_8",
+		is_full_info = false
+	},
+	BUFF_EFFECT_DELAY_ROUND_POS_8 = {
+		pattern = "45b51f14a5158060b36899bee6193660",
+		format_str_key = "BUFF_EFFECT_DELAY_ROUND_POS_8",
+		is_full_info = false
+	},
+	BUFF_EFFECT_DELAY_ROUND_NEG_8 = {
+		pattern = "33bb626e4859c2a698dc56d12411287c",
+		format_str_key = "BUFF_EFFECT_DELAY_ROUND_NEG_8",
+		is_full_info = false
+	},
+	DEFAULT_CONDITION_1 = {
+		pattern = "375133327f9d1bc14c09c0a4464b52d7",
+		format_str_key = "DEFAULT_CONDITION_1",
+		is_full_info = false
+	},
+	DEFAULT_CONDITION_2 = {
+		pattern = "dfcfab621947fcd666f9cba45147a0d4",
+		format_str_key = "DEFAULT_CONDITION_2",
+		is_full_info = false
+	},
+	DEFAULT_CONDITION_3 = {
+		pattern = "b86ff113400eac45798ff84095e8d619",
+		format_str_key = "DEFAULT_CONDITION_3",
+		is_full_info = false
+	},
+	DEFAULT_CONDITION_4 = {
+		pattern = "3b90c2bf9837da131c8b8c63ec5ddd0f",
+		format_str_key = "DEFAULT_CONDITION_4",
+		is_full_info = false
+	},
+	DEFAULT_CONDITION_5 = {
+		pattern = "8fbc40ef632a04557ea7519abd8874e1",
+		format_str_key = "DEFAULT_CONDITION_5",
+		is_full_info = false
+	},
+	DEFAULT_ROUND_PROBABILITY = {
+		pattern = "99c26d711839e652d1cc3c6c5e7e28d2",
+		format_str_key = "DEFAULT_ROUND_PROBABILITY",
 		is_full_info = false
 	},
 	all = {
@@ -309,8 +354,17 @@
 		BUFF_EFFECT_ROUND_NEG_7,
 		BUFF_EFFECT_DELAY_ROUND_POS_7,
 		BUFF_EFFECT_DELAY_ROUND_NEG_7,
-		BUFF_EFFECT_8,
-		BUFF_EFFECT_ROUND_8,
-		BUFF_EFFECT_DELAY_ROUND_8
+		BUFF_EFFECT_POS_8,
+		BUFF_EFFECT_NEG_8,
+		BUFF_EFFECT_ROUND_POS_8,
+		BUFF_EFFECT_ROUND_NEG_8,
+		BUFF_EFFECT_DELAY_ROUND_POS_8,
+		BUFF_EFFECT_DELAY_ROUND_NEG_8,
+		DEFAULT_CONDITION_1,
+		DEFAULT_CONDITION_2,
+		DEFAULT_CONDITION_3,
+		DEFAULT_CONDITION_4,
+		DEFAULT_CONDITION_5,
+		DEFAULT_ROUND_PROBABILITY
 	}
 }

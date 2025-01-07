@@ -54,6 +54,8 @@ function var_0_0.Create(arg_3_0, arg_3_1, arg_3_2)
 
 		var_3_1 = ObtainHeroMovieView.New(var_3_5, var_3_0, arg_3_0.showSkipHandler, arg_3_0.refreshShareHandler_, arg_3_0.skipStart)
 	else
+		Debug.LogError("获取道具")
+
 		local var_3_6 = Asset.Load("Widget/System/ObtainUI/ObtainItemUI")
 
 		var_3_1 = ObtainItemView.New(var_3_6, var_3_0)

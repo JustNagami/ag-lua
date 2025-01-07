@@ -9,24 +9,31 @@
 		[ReserveConst.RESERVE_TYPE.ATTRIBUTE_ARENA] = "ReserveAttributeArenaTemplate",
 		[ReserveConst.RESERVE_TYPE.GUILD_BOSS] = "ReserveGuildBossTemplate",
 		[ReserveConst.RESERVE_TYPE.CORE_VERIFICATION] = "ReserveCoreVerificationTemplate",
-		[ReserveConst.RESERVE_TYPE.GUILD_ACTIVITY] = "ReserveGuildActivityTemplate"
+		[ReserveConst.RESERVE_TYPE.GUILD_ACTIVITY] = "ReserveGuildActivityTemplate",
+		[ReserveConst.RESERVE_TYPE.WATER] = "ReserveSummerWaterTemplate",
+		[ReserveConst.RESERVE_TYPE.CHALLENGE_ROGUE_TEAM] = "ReserveChallengeRogueTeamTemplate",
+		[ReserveConst.RESERVE_TYPE.SWIMSUIT_BATTLE] = "ReserveSwimsuitBattleTemplate",
+		[ReserveConst.RESERVE_TYPE.AREA_BATTLE] = "ReserveAreaBattleTemplate"
 	},
 	contDataClassDic = {
 		[ReserveConst.RESERVE_TYPE.DEFAULT] = "ReserveContDataTemplate",
 		[ReserveConst.RESERVE_TYPE.PROPOSAL] = "ReserveProposalContDataTemplate",
 		[ReserveConst.RESERVE_TYPE.SOLO_CHALLENGE] = "ReserveSoloChallengeContDataTemplate",
 		[ReserveConst.RESERVE_TYPE.SEQUENTIAL_BATTLE] = "ReserveSequentialContDataTemplate",
-		[ReserveConst.RESERVE_TYPE.MULTI_CHESS] = "ReserveMultiChessContDataTemplate"
+		[ReserveConst.RESERVE_TYPE.MULTI_CHESS] = "ReserveMultiChessContDataTemplate",
+		[ReserveConst.RESERVE_TYPE.CHALLENGE_ROGUE_TEAM] = "ReserveChallengeRogueTeamContDataTemplate"
 	},
 	singleTeamDataClassDic = {
 		[ReserveConst.RESERVE_TYPE.DEFAULT] = "ReserveSingleTeamDataTemplate",
 		[ReserveConst.RESERVE_TYPE.SOLO_CHALLENGE] = "ReserveSoloChallengeSingleTeamDataTemplate",
 		[ReserveConst.RESERVE_TYPE.SEQUENTIAL_BATTLE] = "ReserveSequentialSingleTeamDataTemplate",
-		[ReserveConst.RESERVE_TYPE.MULTI_CHESS] = "ReserveMultiChessSingleTeamDataTemplate"
+		[ReserveConst.RESERVE_TYPE.MULTI_CHESS] = "ReserveMultiChessSingleTeamDataTemplate",
+		[ReserveConst.RESERVE_TYPE.CHALLENGE_ROGUE_TEAM] = "ReserveChangeRogueTeamSingleTeamDataTemplate"
 	},
 	heroPosDataClassDic = {
 		[ReserveConst.RESERVE_TYPE.DEFAULT] = "ReserveHeroPosTemplate",
-		[ReserveConst.RESERVE_TYPE.GUILD_BOSS] = "ReserveGuildBossHeroPosTemplate"
+		[ReserveConst.RESERVE_TYPE.GUILD_BOSS] = "ReserveGuildBossHeroPosTemplate",
+		[ReserveConst.RESERVE_TYPE.CHALLENGE_ROGUE_TEAM] = "ReserveChangeRogueTeamHeroPosTemplate"
 	},
 	mimirDataClassDic = {
 		[ReserveConst.RESERVE_TYPE.DEFAULT] = "ReserveMimirDataTemplate"

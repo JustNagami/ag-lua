@@ -918,7 +918,7 @@ function var_0_0.StopMovieStopTimer(arg_61_0)
 end
 
 function var_0_0.Play(arg_62_0)
-	arg_62_0.dlcPlayer_:SetFile(nil, arg_62_0.start_path, CriMana.Player.SetMode.New)
+	SetFile(arg_62_0.dlcPlayer_, nil, arg_62_0.start_path, CriMana.Player.SetMode.New)
 
 	local var_62_0 = manager.audio:GetMusicVolume()
 

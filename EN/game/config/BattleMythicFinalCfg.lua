@@ -249,7 +249,7 @@
 	[3028020] = {
 		ai_level = 4,
 		name = "b641eb9a6843d87f06d7f46c44e13228",
-		map = "3028022",
+		map = "3028036",
 		id = 3028020,
 		tips = "7486d63163d4f7ad7b874b17863aab2b",
 		background_1 = "difficult_4",
@@ -262,7 +262,7 @@
 	[3028021] = {
 		ai_level = 4,
 		name = "25ad18a80cebc1248e9faa7686a79556",
-		map = "3028023",
+		map = "3028037",
 		id = 3028021,
 		tips = "0d7f1da61b96d22cba8fbb741927171e",
 		background_1 = "difficult_4",
@@ -275,7 +275,7 @@
 	[3028022] = {
 		ai_level = 4,
 		name = "b3b3f68e3a4c06af7a9dde889cce5a3f",
-		map = "3028024",
+		map = "3028020",
 		id = 3028022,
 		tips = "5885c415caa167d145dfb0c16f2b2cf7",
 		background_1 = "difficult_4",
@@ -288,7 +288,7 @@
 	[3028023] = {
 		ai_level = 4,
 		name = "c4e2d694cc02d8cd32bd6b0e8fc1f054",
-		map = "3028025",
+		map = "3028021",
 		id = 3028023,
 		tips = "405176aa79e09e6854483f7bfddb21e0",
 		background_1 = "difficult_4",
@@ -301,7 +301,7 @@
 	[3028024] = {
 		ai_level = 4,
 		name = "6aeb58408d22ba2c14883a98c705e4ed",
-		map = "3028026",
+		map = "3028030",
 		id = 3028024,
 		tips = "57f027f6594021207435ce85e70363ff",
 		background_1 = "difficult_4",
@@ -314,7 +314,7 @@
 	[3028025] = {
 		ai_level = 4,
 		name = "c7807acc6f3b60dd5b1498e04f154249",
-		map = "3028027",
+		map = "3028031",
 		id = 3028025,
 		tips = "784bca0981b43e3cf727a480dde048db",
 		background_1 = "difficult_4",
@@ -327,7 +327,7 @@
 	[3028026] = {
 		ai_level = 4,
 		name = "870713dd21bf273f700b05c8d231b743",
-		map = "3028028",
+		map = "3028032",
 		id = 3028026,
 		tips = "7356b12efda66a02487477a315a9ca8b",
 		background_1 = "difficult_4",
@@ -340,7 +340,7 @@
 	[3028027] = {
 		ai_level = 4,
 		name = "377c17aeda0bf82b1c950a9f78421369",
-		map = "3028029",
+		map = "3028033",
 		id = 3028027,
 		tips = "3c5397900570d956bdfcb21f1a53c780",
 		background_1 = "difficult_4",
@@ -353,7 +353,7 @@
 	[3028028] = {
 		ai_level = 4,
 		name = "9abbee072959e773769e32f2dffd51b9",
-		map = "3028020",
+		map = "3028034",
 		id = 3028028,
 		tips = "912f3c8a6323df0bf44b5966a1e56480",
 		background_1 = "difficult_4",
@@ -366,7 +366,7 @@
 	[3028029] = {
 		ai_level = 4,
 		name = "4a6d83fdc070a4e42d52cb4870198752",
-		map = "3028021",
+		map = "3028035",
 		id = 3028029,
 		tips = "0d2aefd162681aac8f683a06a504f8bc",
 		background_1 = "difficult_4",
@@ -379,7 +379,7 @@
 	[3028030] = {
 		ai_level = 4,
 		name = "dc607dbc716fc7751a7d6a6304814e7f",
-		map = "3028038",
+		map = "3028036",
 		id = 3028030,
 		tips = "a42d3b5d876ecf48b7724395437220fe",
 		background_1 = "difficult_4",
@@ -392,7 +392,7 @@
 	[3028031] = {
 		ai_level = 4,
 		name = "f989577205976d73c2d268d525f849b1",
-		map = "3028039",
+		map = "3028037",
 		id = 3028031,
 		tips = "4095086fe1f920dd21abc376f460fe0c",
 		background_1 = "difficult_4",
@@ -405,7 +405,7 @@
 	[3028032] = {
 		ai_level = 4,
 		name = "761fdcde76166b6bec209fb7d4742cb9",
-		map = "3028030",
+		map = "3028028",
 		id = 3028032,
 		tips = "78218b4fb173bb096e9f139f50b8de6f",
 		background_1 = "difficult_4",
@@ -418,7 +418,7 @@
 	[3028033] = {
 		ai_level = 4,
 		name = "42e99d504b7b9990b4c6212b44b8f959",
-		map = "3028031",
+		map = "3028029",
 		id = 3028033,
 		tips = "943448fcbe703b2599f9284adaa16db8",
 		background_1 = "difficult_4",
@@ -431,7 +431,7 @@
 	[3028034] = {
 		ai_level = 4,
 		name = "a002aec724069954cc2607c4978dd382",
-		map = "3028032",
+		map = "3028030",
 		id = 3028034,
 		tips = "adc7a69bcadce70085102686e6b1481f",
 		background_1 = "difficult_4",
@@ -444,7 +444,7 @@
 	[3028035] = {
 		ai_level = 4,
 		name = "3e55a411fc26146a5d60f04271b642cb",
-		map = "3028033",
+		map = "3028031",
 		id = 3028035,
 		tips = "9b5f949e654506c07d7388a5af656825",
 		background_1 = "difficult_4",
@@ -457,7 +457,7 @@
 	[3028036] = {
 		ai_level = 4,
 		name = "72f169929d52a673826eaa9a125703e8",
-		map = "3028034",
+		map = "3028032",
 		id = 3028036,
 		tips = "e94c45745d485bb7a9738814da403283",
 		background_1 = "difficult_4",
@@ -470,7 +470,7 @@
 	[3028037] = {
 		ai_level = 4,
 		name = "62d61f26c3256bb1bbcf671517797e1d",
-		map = "3028035",
+		map = "3028033",
 		id = 3028037,
 		tips = "4369b1a522b404bfc3cc4a3beae3f7bd",
 		background_1 = "difficult_4",
@@ -509,7 +509,7 @@
 	[3028040] = {
 		ai_level = 4,
 		name = "b41cd2526c6623ffa905e717f1b24bd8",
-		map = "3028038",
+		map = "3028036",
 		id = 3028040,
 		tips = "7f610290ce791b792aea6ad69aec9156",
 		background_1 = "difficult_4",
@@ -522,7 +522,7 @@
 	[3028041] = {
 		ai_level = 4,
 		name = "5ae05e09773b2988eb68b93c75bce04c",
-		map = "3028039",
+		map = "3028037",
 		id = 3028041,
 		tips = "e8159e849e8e88a77d50f41f5139ecc4",
 		background_1 = "difficult_4",

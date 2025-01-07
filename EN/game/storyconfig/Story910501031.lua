@@ -4,7 +4,7 @@
 		arg_1_1.frameCnt_ = 0
 		arg_1_1.state_ = "playing"
 		arg_1_1.curTalkId_ = 910501012
-		arg_1_1.duration_ = 6.999999999999
+		arg_1_1.duration_ = 7
 
 		SetActive(arg_1_1.tipsGo_, false)
 
@@ -957,6 +957,9 @@
 
 				arg_19_1.callingController_:SetSelectedState("normal")
 
+				arg_19_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_19_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_22_9 = arg_19_1:GetWordFromCfg(910501016)
 				local var_22_10 = arg_19_1:FormatText(var_22_9.content)
 
@@ -1048,6 +1051,9 @@
 				arg_23_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_tb_soldiera")
 
 				arg_23_1.callingController_:SetSelectedState("normal")
+
+				arg_23_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_23_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_26_3 = arg_23_1:GetWordFromCfg(910501017)
 				local var_26_4 = arg_23_1:FormatText(var_26_3.content)

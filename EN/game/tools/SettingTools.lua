@@ -19,29 +19,36 @@ function var_0_0.GetSettingScreenSize(arg_2_0)
 	local var_2_1 = _G.SCREEN_HEIGHT
 
 	if GameToSDK.PLATFORM_ID == 0 then
-		local var_2_2 = var_2_0 / var_2_1
+		local var_2_2 = 3000000
+		local var_2_3 = var_2_0 * var_2_1
 
-		var_2_1 = math.min(var_2_1, 1080)
-		var_2_0 = math.floor(var_2_1 * var_2_2)
+		if var_2_2 < var_2_3 then
+			local var_2_4 = math.sqrt(var_2_2 / var_2_3)
+
+			var_2_1 = math.floor(var_2_1 * var_2_4)
+			var_2_0 = math.floor(var_2_0 * var_2_4)
+
+			print(var_2_4)
+		end
 	end
 
-	local var_2_3 = 1
+	local var_2_5 = 1
 
 	if arg_2_0 == 1 then
-		var_2_3 = 0.5
+		var_2_5 = 0.5
 	elseif arg_2_0 == 2 then
-		var_2_3 = 0.75
+		var_2_5 = 0.75
 	end
 
 	if GameToSDK.PLATFORM_ID == 1 then
-		var_2_3 = var_2_3 == 0.5 and 0.75 or 1
+		var_2_5 = var_2_5 == 0.5 and 0.75 or 1
 	end
 
 	if GameToSDK.IsEditorOrPcPlatform() then
-		var_2_3 = 1
+		var_2_5 = 1
 	end
 
-	return var_2_0 * var_2_3, var_2_1 * var_2_3
+	return var_2_0 * var_2_5, var_2_1 * var_2_5
 end
 
 function var_0_0.FullScreenTypeToNum(arg_3_0)

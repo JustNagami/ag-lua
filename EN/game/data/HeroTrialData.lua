@@ -20,6 +20,23 @@ function var_0_0.InitData(arg_2_0, arg_2_1)
 			manager.redPoint:setTip(string.format("%s_%s", RedPointConst.HERO_TRIAL, var_2_0.id), 0)
 		end
 	end
+
+	local var_2_1 = arg_2_1.activity_id
+	local var_2_2 = ActivityCfg[var_2_1].sub_activity_list
+
+	for iter_2_2, iter_2_3 in ipairs(var_2_2) do
+		local var_2_3 = ActivityHeroTrialCfg.get_id_list_by_activity_id[iter_2_3]
+
+		for iter_2_4, iter_2_5 in ipairs(var_2_3) do
+			if not arg_2_0.heroTrialStateList_[iter_2_5] then
+				arg_2_0.heroTrialStateList_[iter_2_5] = 0
+
+				if ActivityData:GetActivityIsOpen(iter_2_3) then
+					manager.redPoint:setTip(string.format("%s_%s", RedPointConst.HERO_TRIAL, iter_2_5), 1)
+				end
+			end
+		end
+	end
 end
 
 function var_0_0.RefreshRedData(arg_3_0)
@@ -98,6 +115,14 @@ end
 
 function var_0_0.GetBattleWay(arg_11_0)
 	return arg_11_0.battleWay_
+end
+
+function var_0_0.GetLastContentPosX(arg_12_0, arg_12_1)
+	return getData(string.format("hero_trial_%d", arg_12_1), "contentPosX")
+end
+
+function var_0_0.SetLastContentPosX(arg_13_0, arg_13_1, arg_13_2)
+	saveData(string.format("hero_trial_%d", arg_13_1), "contentPosX", arg_13_2)
 end
 
 return var_0_0

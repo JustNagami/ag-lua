@@ -15,6 +15,7 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
+	arg_4_0.bgImg_.immediate = true
 	arg_4_0.bgController_ = ControllerUtil.GetController(arg_4_0.transform_, "bg")
 
 	arg_4_0:AddUIListener()
@@ -210,24 +211,24 @@ function var_0_0.RefreshBgUI(arg_18_0)
 			if HeroData:GetHeroData(iter_18_1).unlock == 1 and not var_18_1 then
 				ArchiveAction.SendSetWallPaper(arg_18_0.data_.archive_id, iter_18_1, 1)
 
-				arg_18_0.bgImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. iter_18_1)
+				arg_18_0.bgImg_.spriteSync = "TextureConfig/Character/Icon/" .. iter_18_1
 				var_18_1 = true
 			end
 		end
 
 		if not var_18_1 then
-			arg_18_0.bgImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_18_0.heroIdList_[1])
+			arg_18_0.bgImg_.spriteSync = "TextureConfig/Character/Icon/" .. arg_18_0.heroIdList_[1]
 		end
 	elseif var_18_0.type == 1 or var_18_0.type == 2 then
 		arg_18_0.bgController_:SetSelectedState("role")
 
-		arg_18_0.bgImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_18_0.id)
+		arg_18_0.bgImg_.spriteSync = "TextureConfig/Character/Portrait/" .. var_18_0.id
 	elseif var_18_0.type == 3 then
 		arg_18_0.bgController_:SetSelectedState("plot")
 
 		local var_18_2 = CollectPictureCfg[var_18_0.id].picture
 
-		arg_18_0.plotImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Background/" .. var_18_2)
+		arg_18_0.plotImg_.spriteSync = "TextureConfig/Background/" .. var_18_2
 	end
 end
 

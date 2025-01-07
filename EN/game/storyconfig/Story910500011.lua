@@ -149,6 +149,9 @@
 
 				arg_1_1.callingController_:SetSelectedState("normal")
 
+				arg_1_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_1_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_4_28 = arg_1_1:GetWordFromCfg(910500001)
 				local var_4_29 = arg_1_1:FormatText(var_4_28.content)
 
@@ -243,6 +246,9 @@
 
 				arg_7_1.callingController_:SetSelectedState("normal")
 
+				arg_7_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_7_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_10_3 = arg_7_1:GetWordFromCfg(910500002)
 				local var_10_4 = arg_7_1:FormatText(var_10_3.content)
 
@@ -335,6 +341,9 @@
 
 				arg_11_1.callingController_:SetSelectedState("normal")
 
+				arg_11_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_11_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_14_3 = arg_11_1:GetWordFromCfg(910500003)
 				local var_14_4 = arg_11_1:FormatText(var_14_3.content)
 
@@ -425,6 +434,9 @@
 				arg_15_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_tb_soldiera")
 
 				arg_15_1.callingController_:SetSelectedState("normal")
+
+				arg_15_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_15_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_18_3 = arg_15_1:GetWordFromCfg(910500004)
 				local var_18_4 = arg_15_1:FormatText(var_18_3.content)

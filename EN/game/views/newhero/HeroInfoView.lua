@@ -18,6 +18,7 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
+	arg_3_0.moduleImg_.immediate = true
 	arg_3_0.lockController_ = arg_3_0.controller_:GetController("lock")
 	arg_3_0.pieceEnoughController_ = arg_3_0.controller_:GetController("pieceEnough")
 	arg_3_0.isSelfController_ = arg_3_0.controller_:GetController("isSelf")
@@ -273,7 +274,7 @@ function var_0_0.UpdateModuleView(arg_22_0)
 			arg_22_0.moduleController_:SetSelectedState("unlock")
 
 			arg_22_0.moduleNameText_.text = WeaponModuleCfg[arg_22_0.heroInfo_.id].name
-			arg_22_0.moduleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponModule/" .. arg_22_0.heroInfo_.id)
+			arg_22_0.moduleImg_.spriteSync = "TextureConfig/WeaponModule/" .. arg_22_0.heroInfo_.id
 			arg_22_0.moduleLevelText_.text = "Lv." .. var_22_0
 		end
 	end

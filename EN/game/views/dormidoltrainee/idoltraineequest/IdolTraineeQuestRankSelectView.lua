@@ -26,10 +26,12 @@ function var_0_0.AddUIListener(arg_5_0)
 		local var_6_0 = {}
 
 		for iter_6_0, iter_6_1 in pairs(arg_5_0.selectDic_) do
-			table.insert(var_6_0, {
-				id = iter_6_0,
-				num = iter_6_1
-			})
+			if iter_6_1 ~= 0 then
+				table.insert(var_6_0, {
+					id = iter_6_0,
+					num = iter_6_1
+				})
+			end
 		end
 
 		IdolTraineeAction.GetQuestRankReward(arg_5_0.rank_, var_6_0, function()

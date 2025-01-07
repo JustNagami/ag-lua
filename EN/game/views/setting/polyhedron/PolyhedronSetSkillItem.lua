@@ -34,6 +34,10 @@ function var_0_0.SetData(arg_4_0, arg_4_1)
 
 		local var_4_4 = var_4_1.element_type
 
+		if type(var_4_4) ~= "table" then
+			var_4_4 = {}
+		end
+
 		for iter_4_0, iter_4_1 in pairs(var_4_4) do
 			local var_4_5 = arg_4_0["typeIcon_" .. iter_4_0]
 
@@ -45,6 +49,12 @@ function var_0_0.SetData(arg_4_0, arg_4_1)
 
 					var_4_5.sprite = getSprite("Atlas/Hero_arrtAtlas", SkillElementCfg[iter_4_1].icon)
 				end
+			end
+		end
+
+		for iter_4_2 = 5, #var_4_4 + 1, -1 do
+			if arg_4_0["typeIcon_" .. iter_4_2] then
+				SetActive(arg_4_0["typeIcon_" .. iter_4_2].transform.gameObject, false)
 			end
 		end
 

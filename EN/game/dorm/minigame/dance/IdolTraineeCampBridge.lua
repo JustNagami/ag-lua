@@ -21,11 +21,12 @@ local function var_0_3(arg_3_0)
 	return nullable(Dorm.storage:PickData(var_3_0), "transform")
 end
 
-function var_0_0.Enter(arg_4_0)
+function var_0_0.Enter(arg_4_0, arg_4_1, arg_4_2)
 	arg_4_0.listener = EventListener.New()
 
 	arg_4_0.listener:Register(ON_FINISH_STORY, var_0_0.OnFinishStory)
 	arg_4_0.listener:Register(IDOL_TRAINEE_TRAIN_HERO_PROPERTY_CALLBACK, var_0_0.OnTrainingStart)
+	arg_4_0.listener:Register(DORM_REFRESH_HERO_DEPLOY_LIST, var_0_0.RefreshCharacterAtPos)
 
 	var_0_0.cinemachineBrain = manager.ui.mainCamera:GetComponent("CinemachineBrain")
 	var_0_0.cinemachineBrain.enabled = true
@@ -58,9 +59,7 @@ function var_0_0.Enter(arg_4_0)
 	end
 
 	var_0_0.trainerEntityManager = EntityManager.New(var_4_2)
-
-	gameContext:Go("idolTraineeCamp")
-
+	var_0_0.competitionEntityManager = EntityManager.New(var_4_2)
 	var_0_0.walls = {}
 
 	for iter_4_1, iter_4_2 in Dorm.storage:ForeachData("idol.camp.wall", pairs) do
@@ -72,6 +71,15 @@ function var_0_0.Enter(arg_4_0)
 	var_0_0.RefreshCharacterAtPos(true)
 	var_0_0.GenerateAttackHero()
 	manager.windowBar:SetWhereTag("danceGame")
+	gameContext:Go(arg_4_2)
+
+	local var_4_3 = IdolTraineeData:AcquireLastJumpContext()
+
+	if var_4_3 and var_4_3.trainView then
+		JumpTools.OpenPageByJump("/idolTraineeTrain", {
+			backToDormInfo = var_4_3.backToDormInfo
+		})
+	end
 end
 
 function var_0_0.RefreshCharacterAtPos(arg_7_0)
@@ -111,9 +119,11 @@ end
 function var_0_0.Exit(arg_9_0)
 	var_0_0.entityManager:Clear()
 	var_0_0.trainerEntityManager:Clear()
+	var_0_0.competitionEntityManager:Clear()
 
 	var_0_0.entityManager = nil
 	var_0_0.trainerEntityManager = nil
+	var_0_0.competitionEntityManager = nil
 	var_0_0.cinemachineBrain = nil
 	var_0_0.camera = nil
 	var_0_0.walls = nil
@@ -190,19 +200,31 @@ function var_0_0.SetPosOfCharacter(arg_14_0, arg_14_1)
 	DormData:GetHeroTemplateInfo(var_14_3):GoToDance(arg_14_1)
 end
 
-function var_0_0.GetPosByCharacter(arg_15_0)
-	return nullable(DormUtils.GetEntityData(arg_15_0), "pos")
+function var_0_0.SetPosOfHero(arg_15_0, arg_15_1)
+	local var_15_0 = DormData:GetHeroTemplateInfo(arg_15_0)
+
+	var_15_0:GoToDance(arg_15_1)
+
+	return var_15_0
 end
 
-function var_0_0.SetTrainingCharacter(arg_16_0)
+function var_0_0.RemoveHero(arg_16_0)
+	DormData:GetHeroTemplateInfo(arg_16_0):GoToDance(nil)
+end
+
+function var_0_0.GetPosByCharacter(arg_17_0)
+	return nullable(DormUtils.GetEntityData(arg_17_0), "pos")
+end
+
+function var_0_0.SetTrainingCharacter(arg_18_0)
 	if var_0_0.trainerEntityManager then
-		local var_16_0 = DormData:GetHeroArchiveID(arg_16_0)
+		local var_18_0 = DormData:GetHeroArchiveID(arg_18_0)
 
 		return var_0_0.trainerEntityManager:Update(1, {
 			complex = true,
 			spawnAt = "training",
-			heroID = arg_16_0,
-			archiveID = var_16_0
+			heroID = arg_18_0,
+			archiveID = var_18_0
 		})
 	end
 end
@@ -213,10 +235,29 @@ function var_0_0.RemoveTrainingCharacter()
 	end
 end
 
-function var_0_0.SetVCamActive(arg_18_0, arg_18_1)
-	local var_18_0 = var_0_0.camera[arg_18_0]
+function var_0_0.SetCompetitionCharacter(arg_20_0, arg_20_1)
+	if var_0_0.competitionEntityManager then
+		local var_20_0 = DormData:GetHeroArchiveID(arg_20_0)
 
-	SetActive(var_18_0, arg_18_1)
+		return var_0_0.competitionEntityManager:Update(arg_20_1, {
+			complex = true,
+			heroID = arg_20_0,
+			archiveID = var_20_0,
+			spawnAt = "competition" .. arg_20_1
+		})
+	end
+end
+
+function var_0_0.RemoveCompetitionCharacter()
+	if var_0_0.competitionEntityManager then
+		var_0_0.competitionEntityManager:Clear()
+	end
+end
+
+function var_0_0.SetVCamActive(arg_22_0, arg_22_1)
+	local var_22_0 = var_0_0.camera[arg_22_0]
+
+	SetActive(var_22_0, arg_22_1)
 end
 
 function var_0_0.OnFinishStory()
@@ -229,15 +270,19 @@ function var_0_0.OnFinishStory()
 	end
 end
 
-function var_0_0.OnTrainingStart(arg_20_0, arg_20_1)
-	local var_20_0 = string.format("dorm_idol_train_prefab_type%02d", arg_20_1)
-	local var_20_1 = nullable(GameDisplayCfg, var_20_0, "value")
-	local var_20_2 = var_20_1[math.random(#var_20_1)]
+function var_0_0.OnTrainingStart(arg_24_0, arg_24_1)
+	if (getData("IdolTrainee", "skip_show") or 0) == 1 then
+		return
+	end
 
-	Dorm.LuaBridge.MiniGameBridge.PlayStory(var_20_2, {
-		arg_20_0
+	local var_24_0 = string.format("dorm_idol_train_prefab_type%02d", arg_24_1)
+	local var_24_1 = nullable(GameDisplayCfg, var_24_0, "value")
+	local var_24_2 = var_24_1[math.random(#var_24_1)]
+
+	Dorm.LuaBridge.MiniGameBridge.PlayStory(var_24_2, {
+		arg_24_0
 	}, {
-		var_0_1(arg_20_0)
+		var_0_1(arg_24_0)
 	}, false)
 end
 

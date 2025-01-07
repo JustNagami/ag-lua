@@ -10,7 +10,7 @@ function var_0_0.Enter(arg_2_0)
 	var_0_0.super.Enter(arg_2_0)
 	arg_2_0.actor:EnableEyeController(false)
 
-	local var_2_0 = HeroTools:GetUnlockInteractionCfg(arg_2_0.actor:GetSkinId())
+	local var_2_0 = arg_2_0.actor:GetInteractionCfg()
 	local var_2_1 = var_2_0[arg_2_0.interactionKey]
 	local var_2_2 = var_2_0[arg_2_0.interactionKey .. "_talk"]
 	local var_2_3 = var_2_0[arg_2_0.interactionKey .. "_delay"]
@@ -38,9 +38,11 @@ function var_0_0.Enter(arg_2_0)
 	end
 
 	if var_2_5 then
+		arg_2_0.talking_ = var_2_6
+
 		arg_2_0:PlayAni(var_2_5)
 
-		if var_2_6 and var_2_7 then
+		if var_2_6 and var_2_7 and var_2_7 >= 0 then
 			arg_2_0:PlaySpecialTalk(var_2_6, var_2_7)
 		end
 	end
@@ -52,7 +54,7 @@ end
 
 function var_0_0.RandomIndexOfInteractionType(arg_3_0, arg_3_1)
 	local var_3_0 = arg_3_1 .. "_talk"
-	local var_3_1 = HeroTools:GetUnlockInteractionCfg(arg_3_0.actor:GetSkinId())
+	local var_3_1 = arg_3_0.actor:GetInteractionCfg()
 	local var_3_2 = arg_3_0.lastIndex or 0
 	local var_3_3 = {}
 	local var_3_4 = {}
@@ -119,14 +121,16 @@ function var_0_0.PlaySpecialTalk(arg_4_0, arg_4_1, arg_4_2)
 		arg_4_0.talkDelayTimer_ = nil
 	end
 
+	local var_4_1 = HeroTools.GetInteractionVoiceFileName(arg_4_1)
+
 	if arg_4_2 > 0 then
 		arg_4_0.talkDelayTimer_ = Timer.New(function()
-			arg_4_0.actor:PlayHeroTalk(var_4_0[1], var_4_0[2], nil)
+			arg_4_0.actor:PlayHeroTalk(var_4_0[1], var_4_1, nil)
 		end, arg_4_2 / 1000)
 
 		arg_4_0.talkDelayTimer_:Start()
 	else
-		arg_4_0.actor:PlayHeroTalk(var_4_0[1], var_4_0[2], nil)
+		arg_4_0.actor:PlayHeroTalk(var_4_0[1], var_4_1, nil)
 	end
 end
 

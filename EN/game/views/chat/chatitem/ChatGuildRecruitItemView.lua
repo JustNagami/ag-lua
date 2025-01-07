@@ -6,6 +6,9 @@ function var_0_1.OnCtor(arg_1_0, arg_1_1, arg_1_2)
 	arg_1_0.transform_ = arg_1_0.gameObject_.transform
 
 	arg_1_0:BindCfgUI()
+
+	arg_1_0.commonPortrait_ = CommonHeadPortrait.New(arg_1_0.headItem_)
+
 	arg_1_0:AddListeners()
 
 	arg_1_0.guildItemView_ = ChatGuildInfoView.New(arg_1_0.guildRecruitGo_)
@@ -14,6 +17,10 @@ function var_0_1.OnCtor(arg_1_0, arg_1_1, arg_1_2)
 end
 
 function var_0_1.Dispose(arg_2_0)
+	arg_2_0.commonPortrait_:Dispose()
+
+	arg_2_0.commonPortrait_ = nil
+
 	arg_2_0.guildItemView_:Dispose()
 
 	arg_2_0.guildItemView_ = nil
@@ -30,7 +37,7 @@ function var_0_1.GetUserID(arg_3_0)
 end
 
 function var_0_1.AddListeners(arg_4_0)
-	arg_4_0:AddBtnListener(arg_4_0.buttonHead_, nil, function()
+	arg_4_0.commonPortrait_:RegisteClickCallback(function()
 		if CooperationData:CheckInRoom() then
 			return
 		end
@@ -48,12 +55,14 @@ function var_0_1.SetText(arg_7_0, arg_7_1)
 		local var_7_0 = PlayerData:GetPlayerInfo()
 
 		arg_7_0.textName_.text = GetI18NText(var_7_0.nick)
-		arg_7_0.imageIcon_.sprite = ItemTools.getItemSprite(var_7_0.portrait)
-		arg_7_0.imageFrame_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_7_0.icon_frame)
+
+		arg_7_0.commonPortrait_:RenderHead(var_7_0.portrait)
+		arg_7_0.commonPortrait_:RenderFrame(var_7_0.icon_frame)
 	else
 		arg_7_0.textName_.text = GetI18NText(arg_7_1.nick)
-		arg_7_0.imageIcon_.sprite = getSpriteViaConfig("HeroLittleIcon", ItemCfg[arg_7_1.icon].icon)
-		arg_7_0.imageFrame_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_7_1.iconFrame)
+
+		arg_7_0.commonPortrait_:RenderHead(arg_7_1.icon)
+		arg_7_0.commonPortrait_:RenderFrame(arg_7_1.iconFrame)
 	end
 
 	if arg_7_1.content == "" then

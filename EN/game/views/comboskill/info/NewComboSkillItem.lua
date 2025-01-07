@@ -35,7 +35,15 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1, arg_4_2)
 	arg_4_0.textDesc_.text = GetI18NText(GetCfgDescription(var_4_1.desc[1], var_4_2, 2, var_4_0.maxLevel))
 	arg_4_0.imageIcon_.sprite = getSpriteViaConfig("ComboSkill", var_4_0.skill_id)
 
-	for iter_4_0, iter_4_1 in ipairs(var_4_0.cooperate_role_ids) do
+	local var_4_3 = deepClone(var_4_0.cooperate_role_ids)
+
+	CommonTools.UniversalSortEx(var_4_3, {
+		map = function(arg_5_0)
+			return arg_5_0
+		end
+	})
+
+	for iter_4_0, iter_4_1 in ipairs(var_4_3) do
 		SetActive(arg_4_0[string.format("roleitem%sGo_", iter_4_0)], true)
 
 		arg_4_0[string.format("iconImg%s_", iter_4_0)].sprite = getSpriteViaConfig("HeroLittleIcon", iter_4_1)
@@ -52,8 +60,8 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1, arg_4_2)
 	end
 end
 
-function var_0_0.Dispose(arg_5_0)
-	var_0_0.super.Dispose(arg_5_0)
+function var_0_0.Dispose(arg_6_0)
+	var_0_0.super.Dispose(arg_6_0)
 end
 
 return var_0_0

@@ -1099,8 +1099,14 @@
 		spec_char = {
 			1094
 		},
-		strengthen_description = {},
-		simple_strength_description = {}
+		strengthen_description = {
+			109441,
+			220109401
+		},
+		simple_strength_description = {
+			109441,
+			"7e0a6677e2a7f8a39375dde44159b689"
+		}
 	},
 	[103601] = {
 		simple_description = "",
@@ -1554,8 +1560,14 @@
 		spec_char = {
 			1056
 		},
-		strengthen_description = {},
-		simple_strength_description = {}
+		strengthen_description = {
+			105641,
+			220105601
+		},
+		simple_strength_description = {
+			105641,
+			"9dba09e223561f89c5c1729ba07eeaf5"
+		}
 	},
 	[111101] = {
 		simple_description = "96da6a606d3a7db84707ed9e55d9d467",
@@ -1736,8 +1748,14 @@
 		spec_char = {
 			1035
 		},
-		strengthen_description = {},
-		simple_strength_description = {}
+		strengthen_description = {
+			103541,
+			220103501
+		},
+		simple_strength_description = {
+			103541,
+			"af00aee24d6ead246a45e8efc8a6a633"
+		}
 	},
 	[103301] = {
 		simple_description = "d76d3781f005ca8929bf6ff981c07338",
@@ -1949,8 +1967,14 @@
 		spec_char = {
 			1068
 		},
-		strengthen_description = {},
-		simple_strength_description = {}
+		strengthen_description = {
+			106841,
+			220106801
+		},
+		simple_strength_description = {
+			106841,
+			"fa33300ea044bb4a8dbab8f3ed666332"
+		}
 	},
 	[106701] = {
 		simple_description = "05242a523e3cd2d5650f3efd7e99a263",
@@ -2030,13 +2054,13 @@
 		},
 		level_param = {
 			{
-				24000,
-				24000,
-				24000,
-				24000,
-				24000,
-				24000,
-				24000
+				12000,
+				12000,
+				12000,
+				12000,
+				12000,
+				12000,
+				12000
 			},
 			{
 				40,
@@ -2073,13 +2097,55 @@
 				560,
 				630,
 				700
+			},
+			{
+				6000,
+				6000,
+				6000,
+				6000,
+				6000,
+				6000,
+				6000
+			},
+			{
+				154,
+				154,
+				154,
+				154,
+				154,
+				154,
+				154
+			},
+			{
+				6000,
+				6000,
+				6000,
+				6000,
+				6000,
+				6000,
+				6000
+			},
+			{
+				154,
+				154,
+				154,
+				154,
+				154,
+				154,
+				154
 			}
 		},
 		spec_char = {
 			1024
 		},
-		strengthen_description = {},
-		simple_strength_description = {}
+		strengthen_description = {
+			102441,
+			220102401
+		},
+		simple_strength_description = {
+			102441,
+			"8a7bd198a48892147e9a7a36b4b4916a"
+		}
 	},
 	[101601] = {
 		simple_description = "59f8a8ab8adbc7372d6be3d4183f92ed",
@@ -2110,8 +2176,14 @@
 		spec_char = {
 			1016
 		},
-		strengthen_description = {},
-		simple_strength_description = {}
+		strengthen_description = {
+			101641,
+			220101601
+		},
+		simple_strength_description = {
+			101641,
+			"1817af739e536e047f6df3e7dcf10ef9"
+		}
 	},
 	[105201] = {
 		simple_description = "707e8ccb0e40ff1d6a0f3cd2572ea9ec",
@@ -2214,8 +2286,14 @@
 		spec_char = {
 			1052
 		},
-		strengthen_description = {},
-		simple_strength_description = {}
+		strengthen_description = {
+			105241,
+			220105201
+		},
+		simple_strength_description = {
+			105241,
+			"4026167b61db8f4a0032b924b7732b8f"
+		}
 	},
 	[101701] = {
 		simple_description = "b43968d1b3b5e7321c2b6c34c9049991",
@@ -3272,6 +3350,283 @@
 		strengthen_description = {},
 		simple_strength_description = {}
 	},
+	[102201] = {
+		simple_description = "d7270e6f14e0bb4e7cabfd608df7afbc",
+		id = 102201,
+		description = {
+			500102201
+		},
+		level_param = {
+			{
+				20,
+				25,
+				30,
+				35,
+				40,
+				45,
+				50
+			},
+			{
+				80,
+				80,
+				80,
+				80,
+				80,
+				80,
+				80
+			},
+			{
+				40,
+				50,
+				60,
+				70,
+				80,
+				90,
+				100
+			},
+			{
+				150,
+				150,
+				150,
+				150,
+				150,
+				150,
+				150
+			}
+		},
+		spec_char = {
+			1022
+		},
+		strengthen_description = {},
+		simple_strength_description = {}
+	},
+	[102101] = {
+		simple_description = "c8ead3fd76e05fab1107f3967d8a5c63",
+		id = 102101,
+		description = {
+			500102101
+		},
+		level_param = {
+			{
+				120,
+				150,
+				180,
+				210,
+				240,
+				270,
+				300
+			},
+			{
+				500,
+				500,
+				500,
+				500,
+				500,
+				500,
+				500
+			},
+			{
+				150,
+				150,
+				150,
+				150,
+				150,
+				150,
+				150
+			},
+			{
+				80,
+				100,
+				120,
+				140,
+				160,
+				180,
+				200
+			},
+			{
+				100,
+				100,
+				100,
+				100,
+				100,
+				100,
+				100
+			}
+		},
+		spec_char = {
+			1021
+		},
+		strengthen_description = {},
+		simple_strength_description = {}
+	},
+	[102001] = {
+		simple_description = "851d561cb5e5a57b9dbf83c84280be66",
+		id = 102001,
+		description = {
+			500102001
+		},
+		level_param = {
+			{
+				50,
+				75,
+				100,
+				125,
+				150,
+				175,
+				200
+			},
+			{
+				60,
+				70,
+				80,
+				90,
+				100,
+				110,
+				120
+			},
+			{
+				150,
+				180,
+				210,
+				240,
+				270,
+				300,
+				330
+			},
+			{
+				150,
+				150,
+				150,
+				150,
+				150,
+				150,
+				150
+			},
+			{
+				150,
+				150,
+				150,
+				150,
+				150,
+				150,
+				150
+			},
+			{
+				80,
+				100,
+				120,
+				140,
+				160,
+				180,
+				200
+			},
+			{
+				200,
+				200,
+				200,
+				200,
+				200,
+				200,
+				200
+			}
+		},
+		spec_char = {
+			1020
+		},
+		strengthen_description = {},
+		simple_strength_description = {}
+	},
+	[115601] = {
+		simple_description = "2ec1c7670d5b0f8bede1591585025274",
+		id = 115601,
+		description = {
+			500115601
+		},
+		level_param = {
+			{
+				160,
+				200,
+				240,
+				280,
+				320,
+				360,
+				400
+			},
+			{
+				70,
+				70,
+				70,
+				70,
+				70,
+				70,
+				70
+			}
+		},
+		spec_char = {
+			1156
+		},
+		strengthen_description = {},
+		simple_strength_description = {}
+	},
+	[108901] = {
+		simple_description = "95e71d56c8cfd53388785537f91860af",
+		id = 108901,
+		description = {
+			500108901
+		},
+		level_param = {
+			{
+				80,
+				100,
+				120,
+				140,
+				160,
+				180,
+				200
+			},
+			{
+				80,
+				100,
+				120,
+				140,
+				160,
+				180,
+				200
+			},
+			{
+				500,
+				500,
+				500,
+				500,
+				500,
+				500,
+				500
+			},
+			{
+				120,
+				120,
+				120,
+				120,
+				120,
+				120,
+				120
+			},
+			{
+				100,
+				150,
+				200,
+				250,
+				300,
+				350,
+				400
+			}
+		},
+		spec_char = {
+			1089
+		},
+		strengthen_description = {},
+		simple_strength_description = {}
+	},
 	all = {
 		401,
 		402,
@@ -3357,6 +3712,11 @@
 		101501,
 		109501,
 		128401,
-		119701
+		119701,
+		102201,
+		102101,
+		102001,
+		115601,
+		108901
 	}
 }

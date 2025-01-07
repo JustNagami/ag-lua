@@ -54,7 +54,13 @@ function var_0_0.GetDataClassInstanceByType(arg_2_0, arg_2_1)
 	elseif arg_2_1 == HeroConst.HERO_DATA_TYPE.ADVANCETEST then
 		return AdvanceTestData
 	elseif arg_2_1 == HeroConst.HERO_DATA_TYPE.COOPERATION then
-		return CooperationTools
+		return CooperationData
+	elseif arg_2_1 == HeroConst.HERO_DATA_TYPE.SWIMSUITBATTLE then
+		return SwimsuitBattleHeroData
+	elseif arg_2_1 == HeroConst.HERO_DATA_TYPE.STRATEGYMATRIX then
+		return StrategyMatrixData
+	elseif arg_2_1 == HeroConst.HERO_DATA_TYPE.CHALLENGEROUGETEAM then
+		return ChallengeRogueTeamData.dataList_[2]
 	else
 		return HeroData
 	end
@@ -207,6 +213,24 @@ function var_0_0.SetViewPropertyByType(arg_17_0, arg_17_1)
 		arg_17_0.showDetailBtn = true
 		arg_17_0.showfavorBtn = true
 		arg_17_0.isSelf = true
+	elseif arg_17_1 == HeroConst.HERO_DATA_TYPE.STRATEGYMATRIX then
+		arg_17_0.showHeroHeadRedPoint = true
+		arg_17_0.unlockToggle = true
+		arg_17_0.showDetailBtn = true
+		arg_17_0.hideCultureGrvureBtn = true
+		arg_17_0.hideChipToggle = true
+		arg_17_0.hideTransitionToggle = true
+		arg_17_0.hideModule = true
+		arg_17_0.isTemp = true
+		arg_17_0.showRedPoint = false
+		arg_17_0.notGotoAstrolabeAdjust = false
+	elseif arg_17_1 == HeroConst.HERO_DATA_TYPE.CHALLENGEROUGETEAM then
+		arg_17_0.unlockToggle = true
+		arg_17_0.hideCultureGrvureBtn = true
+		arg_17_0.showHeroHeadRedPoint = true
+		arg_17_0.isTemp = true
+		arg_17_0.hideCultureGrvureBtn = true
+		arg_17_0.notGotoAstrolabeAdjust = false
 	end
 end
 

@@ -1895,6 +1895,302 @@
 		event_type = 8,
 		op_bg = "difficult_2"
 	},
+	[701001] = {
+		op_info = "368632ee558305cb3c722bdad975e482",
+		name = "3fdf2490d1702067b62466b8ea4bcfa8",
+		id = 701001,
+		template_id = 7,
+		event_type = 1,
+		op_bg = "difficult_1"
+	},
+	[701002] = {
+		op_info = "da97557ef90084a73557ecf4cee14acd",
+		name = "276a0a151c205538408214ab3dd089de",
+		id = 701002,
+		template_id = 7,
+		event_type = 1,
+		op_bg = "difficult_1"
+	},
+	[701003] = {
+		op_info = "b9f184c0fe4e15aad20db170f52d2397",
+		name = "c4c4698206e67af22913dec88d63f796",
+		id = 701003,
+		template_id = 7,
+		event_type = 1,
+		op_bg = "difficult_1"
+	},
+	[702001] = {
+		op_info = "7600574ee7ecc90c3ff1c09986768bae",
+		name = "237193091bca455b8d105616a3beab28",
+		id = 702001,
+		template_id = 7,
+		event_type = 2,
+		op_bg = "difficult_1"
+	},
+	[702002] = {
+		op_info = "56e6ee566fe43bfdbb7d20295a24c641",
+		name = "25ba4f738d554209a192938e51ce9fed",
+		id = 702002,
+		template_id = 7,
+		event_type = 2,
+		op_bg = "difficult_1"
+	},
+	[702003] = {
+		op_info = "3e916ccdb603ac0727fde271d0ee542a",
+		name = "31a0b907ca43cc6431227d4d4877014e",
+		id = 702003,
+		template_id = 7,
+		event_type = 2,
+		op_bg = "difficult_1"
+	},
+	[703001] = {
+		op_info = "1019766d940fe0565dbe9c9f780f97a5",
+		name = "a7bb557e63e8bd8f91abdfe812921b0f",
+		id = 703001,
+		template_id = 7,
+		event_type = 3,
+		op_bg = "difficult_1"
+	},
+	[703002] = {
+		op_info = "56f625bf424ad105f831108b61d3adca",
+		name = "4d55433100ed2e5895d00b7174cee140",
+		id = 703002,
+		template_id = 7,
+		event_type = 3,
+		op_bg = "difficult_1"
+	},
+	[703003] = {
+		op_info = "076f6fc4391308f4ba52daed27806fe9",
+		name = "f6a008f81ad3b1007d6725e5bff660ae",
+		id = 703003,
+		template_id = 7,
+		event_type = 3,
+		op_bg = "difficult_1"
+	},
+	[704001] = {
+		op_info = "854566be1604968dc1e9ee8a692cb33a",
+		name = "a5cadc78cadbbbcc26b5de2374385d55",
+		id = 704001,
+		template_id = 7,
+		event_type = 4,
+		op_bg = "difficult_2"
+	},
+	[704002] = {
+		op_info = "14c7e236642bb105225650738756254e",
+		name = "a466f9b2533d2b52319a9f51a935b334",
+		id = 704002,
+		template_id = 7,
+		event_type = 4,
+		op_bg = "difficult_2"
+	},
+	[704003] = {
+		op_info = "ff3fa4bd4d0ebf020e0d7418c29db090",
+		name = "4c77b7fc5a931f4c160dd69990b9c83d",
+		id = 704003,
+		template_id = 7,
+		event_type = 4,
+		op_bg = "difficult_2"
+	},
+	[705001] = {
+		op_info = "ddc3b88dec55a0ca60373047c8c297df",
+		name = "00953e6e8a613aa207c8ab9382d89046",
+		id = 705001,
+		template_id = 7,
+		event_type = 5,
+		op_bg = "difficult_1"
+	},
+	[705002] = {
+		op_info = "66c60333f9d629ab26807cc5015f8abd",
+		name = "1ea4244914a762a36124b608ecc5daa6",
+		id = 705002,
+		template_id = 7,
+		event_type = 5,
+		op_bg = "difficult_1"
+	},
+	[705003] = {
+		op_info = "e6225cc8403bd65523cecf81f2fa8677",
+		name = "bed0c97c8af0138b53c1777404ed9844",
+		id = 705003,
+		template_id = 7,
+		event_type = 5,
+		op_bg = "difficult_1"
+	},
+	[706001] = {
+		op_info = "f48e3edd6c0010488cc1a77b4ddd520a",
+		name = "af6e147e709a6a85d3a4fb3fbb13c8e1",
+		id = 706001,
+		template_id = 7,
+		event_type = 6,
+		op_bg = "difficult_2"
+	},
+	[706002] = {
+		op_info = "24fec9e5174dcf2bfd40b62714e00b52",
+		name = "ee32966e631a353dd9777a176ec3210b",
+		id = 706002,
+		template_id = 7,
+		event_type = 6,
+		op_bg = "difficult_2"
+	},
+	[706003] = {
+		op_info = "c7a9d1f4d7f880b0689cc1ea9483c833",
+		name = "81f6c9267d36c3bbbe61bd0018ef4bbc",
+		id = 706003,
+		template_id = 7,
+		event_type = 6,
+		op_bg = "difficult_2"
+	},
+	[707001] = {
+		op_info = "5d890cc8a22657fe2781bd4e1968a450",
+		name = "8da1df84fc5de9747792809488c61355",
+		id = 707001,
+		template_id = 7,
+		event_type = 7,
+		op_bg = "difficult_1"
+	},
+	[707002] = {
+		op_info = "887d564388bb350abf558ac653ff11e6",
+		name = "82adc2a4cd60c5275a75ecf22ce67f15",
+		id = 707002,
+		template_id = 7,
+		event_type = 7,
+		op_bg = "difficult_1"
+	},
+	[707003] = {
+		op_info = "5e3bf3d4d673cb754d7fc701574e23a8",
+		name = "21bf68010c07358c2a9f1a8eca2b795c",
+		id = 707003,
+		template_id = 7,
+		event_type = 7,
+		op_bg = "difficult_1"
+	},
+	[708001] = {
+		op_info = "f4ab4818bccd35154bb0acfa07c98f49",
+		name = "cc0adbf19671a9fd65ad714a5e6e1fef",
+		id = 708001,
+		template_id = 7,
+		event_type = 8,
+		op_bg = "difficult_2"
+	},
+	[708002] = {
+		op_info = "2bbf8ad21876d3ff9e5bf566561306d3",
+		name = "cc06e0bb380bb89250b3ff08167e42fc",
+		id = 708002,
+		template_id = 7,
+		event_type = 8,
+		op_bg = "difficult_2"
+	},
+	[708003] = {
+		op_info = "96eefb24660d8a9a91775ef9361f58ae",
+		name = "78e38078834a94ec3ade038f7ea656e3",
+		id = 708003,
+		template_id = 7,
+		event_type = 8,
+		op_bg = "difficult_2"
+	},
+	[709001] = {
+		op_info = "3d7cb1dec77c93d9bd1b978f90ac6657",
+		name = "6ed7f3d83a2c5566e162c5e5a91f51d4",
+		id = 709001,
+		template_id = 7,
+		event_type = 9,
+		op_bg = "difficult_3"
+	},
+	[709002] = {
+		op_info = "07f6c4e9b13d3423d7217d7666f6563c",
+		name = "51f3c4e5c2703192120ce4a619e110c9",
+		id = 709002,
+		template_id = 7,
+		event_type = 9,
+		op_bg = "difficult_3"
+	},
+	[709003] = {
+		op_info = "315dfaf6428154699f7540f361659dc8",
+		name = "7059ec61a5a9b0f8abff3c39f032ebcd",
+		id = 709003,
+		template_id = 7,
+		event_type = 10,
+		op_bg = "difficult_3"
+	},
+	[711001] = {
+		op_info = "e6d20c403edfed26040328e7c190d95b",
+		name = "44b0982185e564479710328579123e0b",
+		id = 711001,
+		template_id = 7,
+		event_type = 11,
+		op_bg = "difficult_1"
+	},
+	[711002] = {
+		op_info = "7cdc9af1652979b666c345f1b1f011c5",
+		name = "d770482038d8b6906eb86e6c454780b0",
+		id = 711002,
+		template_id = 7,
+		event_type = 11,
+		op_bg = "difficult_1"
+	},
+	[711003] = {
+		op_info = "14968a6bfad8c3b0a051c5a6f595de4f",
+		name = "0c345542691a27e93c1b1669102c0d51",
+		id = 711003,
+		template_id = 7,
+		event_type = 11,
+		op_bg = "difficult_1"
+	},
+	[712001] = {
+		op_info = "9a6ea3babd3103e9044b69ce8f76bad9",
+		name = "805b66d159922fd2318297f85c3d7fbd",
+		id = 712001,
+		template_id = 7,
+		event_type = 12,
+		op_bg = "difficult_1"
+	},
+	[713101] = {
+		op_info = "bc836a64d2af31960fb40c81d14acda0",
+		name = "29efa6563112f8771c982376ed7c7808",
+		id = 713101,
+		template_id = 7,
+		event_type = 7,
+		op_bg = "difficult_1"
+	},
+	[713102] = {
+		op_info = "21bd894350f2f9ff0a0cab0f6868c90f",
+		name = "19bad28f675efc6907bcd8d945fdc364",
+		id = 713102,
+		template_id = 7,
+		event_type = 5,
+		op_bg = "difficult_1"
+	},
+	[713103] = {
+		op_info = "d621c58be3cb9a30ac61b0f5ebdce1a7",
+		name = "1bec37b913202022449a54f7fd28b6a4",
+		id = 713103,
+		template_id = 7,
+		event_type = 8,
+		op_bg = "difficult_2"
+	},
+	[713104] = {
+		op_info = "79dc8115eea19d3f3f2f1e5dd6980ccd",
+		name = "430c9c7b2be2a34348e516ed62c189f9",
+		id = 713104,
+		template_id = 7,
+		event_type = 6,
+		op_bg = "difficult_2"
+	},
+	[713105] = {
+		op_info = "a6fc030a5545029b25f445051ed14223",
+		name = "8c58122492158208fd07ec02d74d2675",
+		id = 713105,
+		template_id = 7,
+		event_type = 8,
+		op_bg = "difficult_2"
+	},
+	[713106] = {
+		op_info = "b0c2c6162bb23c67b3e150fa65a0da32",
+		name = "983acabc6b79203cbc856a4b2c2c7991",
+		id = 713106,
+		template_id = 7,
+		event_type = 5,
+		op_bg = "difficult_2"
+	},
 	all = {
 		1001,
 		1002,
@@ -2132,6 +2428,43 @@
 		613102,
 		613103,
 		613104,
-		613105
+		613105,
+		701001,
+		701002,
+		701003,
+		702001,
+		702002,
+		702003,
+		703001,
+		703002,
+		703003,
+		704001,
+		704002,
+		704003,
+		705001,
+		705002,
+		705003,
+		706001,
+		706002,
+		706003,
+		707001,
+		707002,
+		707003,
+		708001,
+		708002,
+		708003,
+		709001,
+		709002,
+		709003,
+		711001,
+		711002,
+		711003,
+		712001,
+		713101,
+		713102,
+		713103,
+		713104,
+		713105,
+		713106
 	}
 }

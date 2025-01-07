@@ -62,9 +62,7 @@ function var_0_0.ListenMoveEvent(arg_5_0, arg_5_1, arg_5_2)
 		return
 	end
 
-	if arg_5_2 then
-		arg_5_0:AIChoice(arg_5_1, var_0_3)
-	end
+	arg_5_0:AIChoice(arg_5_1, var_0_3, arg_5_2)
 end
 
 function var_0_0.ListenInteractEvent(arg_6_0, arg_6_1, arg_6_2)
@@ -72,9 +70,7 @@ function var_0_0.ListenInteractEvent(arg_6_0, arg_6_1, arg_6_2)
 		return
 	end
 
-	if arg_6_2 then
-		arg_6_0:AIChoice(arg_6_1, var_0_4, arg_6_2)
-	end
+	arg_6_0:AIChoice(arg_6_1, var_0_4, arg_6_2)
 end
 
 function var_0_0.RemoveListener(arg_7_0)

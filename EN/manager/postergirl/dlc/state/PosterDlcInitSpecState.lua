@@ -7,7 +7,7 @@ end
 function var_0_0.Enter(arg_2_0)
 	var_0_0.super.Enter(arg_2_0)
 	arg_2_0.actor:EnableEyeController(true)
-	arg_2_0.actor:MuteCamera(true)
+	arg_2_0.actor:MuteCamera(manager.posterGirl:GetViewTag() ~= PosterGirlConst.ViewTag.preview)
 
 	local var_2_0 = "action1_1"
 	local var_2_1
@@ -20,7 +20,7 @@ function var_0_0.Enter(arg_2_0)
 		var_2_1 = "action1_" .. var_2_2
 	end
 
-	arg_2_0:PlayAni(var_2_1)
+	arg_2_0:PlayAniWithParams(var_2_1)
 end
 
 function var_0_0.TimelineStopCallback(arg_3_0)

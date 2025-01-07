@@ -249,7 +249,9 @@ function var_0_0.RefreshBottomAmountText(arg_22_0)
 			arg_22_0:SetBottomAmountText(GetTips("LEVEL") .. arg_22_0.info_.equipLevel)
 		end
 	elseif var_22_0 == ItemConst.ITEM_TYPE.WEAPON_SERVANT then
-		-- block empty
+		if arg_22_0.info_.uid == nil and arg_22_0.info_.number ~= nil then
+			arg_22_0:SetBottomAmountText(arg_22_0.info_.number)
+		end
 	elseif arg_22_0.info_.number ~= nil then
 		arg_22_0:SetBottomAmountText(arg_22_0.info_.number)
 	end
@@ -276,8 +278,14 @@ function var_0_0.RefreshBottomRightText(arg_24_0, arg_24_1)
 		else
 			arg_24_1 = true
 		end
+	elseif var_24_0 == ItemConst.ITEM_TYPE.WEAPON_SERVANT then
+		if arg_24_0.info_.uid == nil and arg_24_0.info_.number ~= nil then
+			arg_24_1 = arg_24_1 or false
+		else
+			arg_24_1 = true
+		end
 	else
-		arg_24_1 = var_24_0 == ItemConst.ITEM_TYPE.WEAPON_SERVANT and true or arg_24_1 or arg_24_0.info_.number == nil
+		arg_24_1 = arg_24_1 or arg_24_0.info_.number == nil
 	end
 
 	arg_24_0.bottomAmountController_:SetSelectedState(arg_24_1 and "off" or "on")
@@ -396,7 +404,11 @@ function var_0_0.RefreshCountdown(arg_32_0, arg_32_1)
 	if var_32_0 and var_32_0 > 0 and arg_32_1.need_count_down then
 		arg_32_0.countdownController_:SetSelectedState("on")
 
-		arg_32_0.timeText_.text = ItemTools.GetItemCountdownText(var_32_0)
+		if arg_32_1.count_down_time_text then
+			arg_32_0.timeText_.text = arg_32_1.count_down_time_text
+		else
+			arg_32_0.timeText_.text = ItemTools.GetItemCountdownText(var_32_0, arg_32_1.count_down_use_floor)
+		end
 	else
 		arg_32_0.countdownController_:SetSelectedState("false")
 	end

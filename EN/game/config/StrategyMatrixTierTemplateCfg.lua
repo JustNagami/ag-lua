@@ -2975,6 +2975,582 @@
 			}
 		}
 	},
+	[91001] = {
+		tier = 1,
+		template_id = 9,
+		id = 91001,
+		level = 1,
+		monster_level_coefficient = {
+			{
+				490,
+				700
+			}
+		}
+	},
+	[91002] = {
+		tier = 1,
+		template_id = 9,
+		id = 91002,
+		level = 2,
+		monster_level_coefficient = {
+			{
+				504,
+				737
+			}
+		}
+	},
+	[91003] = {
+		tier = 1,
+		template_id = 9,
+		id = 91003,
+		level = 3,
+		monster_level_coefficient = {
+			{
+				519,
+				775
+			}
+		}
+	},
+	[91004] = {
+		tier = 1,
+		template_id = 9,
+		id = 91004,
+		level = 4,
+		monster_level_coefficient = {
+			{
+				534,
+				814
+			}
+		}
+	},
+	[91005] = {
+		tier = 1,
+		template_id = 9,
+		id = 91005,
+		level = 5,
+		monster_level_coefficient = {
+			{
+				550,
+				854
+			}
+		}
+	},
+	[91006] = {
+		tier = 1,
+		template_id = 9,
+		id = 91006,
+		level = 6,
+		monster_level_coefficient = {
+			{
+				565,
+				895
+			}
+		}
+	},
+	[91007] = {
+		tier = 1,
+		template_id = 9,
+		id = 91007,
+		level = 7,
+		monster_level_coefficient = {
+			{
+				581,
+				936
+			}
+		}
+	},
+	[91008] = {
+		tier = 1,
+		template_id = 9,
+		id = 91008,
+		level = 8,
+		monster_level_coefficient = {
+			{
+				300,
+				3500
+			}
+		}
+	},
+	[92001] = {
+		tier = 2,
+		template_id = 9,
+		id = 92001,
+		level = 1,
+		monster_level_coefficient = {
+			{
+				611,
+				1887
+			}
+		}
+	},
+	[92002] = {
+		tier = 2,
+		template_id = 9,
+		id = 92002,
+		level = 2,
+		monster_level_coefficient = {
+			{
+				626,
+				1981
+			}
+		}
+	},
+	[92003] = {
+		tier = 2,
+		template_id = 9,
+		id = 92003,
+		level = 3,
+		monster_level_coefficient = {
+			{
+				641,
+				2064
+			}
+		}
+	},
+	[92004] = {
+		tier = 2,
+		template_id = 9,
+		id = 92004,
+		level = 4,
+		monster_level_coefficient = {
+			{
+				658,
+				2148
+			}
+		}
+	},
+	[92005] = {
+		tier = 2,
+		template_id = 9,
+		id = 92005,
+		level = 5,
+		monster_level_coefficient = {
+			{
+				674,
+				2232
+			}
+		}
+	},
+	[92006] = {
+		tier = 2,
+		template_id = 9,
+		id = 92006,
+		level = 6,
+		monster_level_coefficient = {
+			{
+				690,
+				2316
+			}
+		}
+	},
+	[92007] = {
+		tier = 2,
+		template_id = 9,
+		id = 92007,
+		level = 7,
+		monster_level_coefficient = {
+			{
+				705,
+				2401
+			}
+		}
+	},
+	[92008] = {
+		tier = 2,
+		template_id = 9,
+		id = 92008,
+		level = 8,
+		monster_level_coefficient = {
+			{
+				600,
+				2700
+			}
+		}
+	},
+	[93001] = {
+		tier = 3,
+		template_id = 9,
+		id = 93001,
+		level = 1,
+		monster_level_coefficient = {
+			{
+				713,
+				2830
+			}
+		}
+	},
+	[93002] = {
+		tier = 3,
+		template_id = 9,
+		id = 93002,
+		level = 2,
+		monster_level_coefficient = {
+			{
+				742,
+				2952
+			}
+		}
+	},
+	[93003] = {
+		tier = 3,
+		template_id = 9,
+		id = 93003,
+		level = 3,
+		monster_level_coefficient = {
+			{
+				770,
+				3075
+			}
+		}
+	},
+	[93004] = {
+		tier = 3,
+		template_id = 9,
+		id = 93004,
+		level = 4,
+		monster_level_coefficient = {
+			{
+				799,
+				3199
+			}
+		}
+	},
+	[93005] = {
+		tier = 3,
+		template_id = 9,
+		id = 93005,
+		level = 5,
+		monster_level_coefficient = {
+			{
+				828,
+				3309
+			}
+		}
+	},
+	[93006] = {
+		tier = 3,
+		template_id = 9,
+		id = 93006,
+		level = 6,
+		monster_level_coefficient = {
+			{
+				858,
+				3433
+			}
+		}
+	},
+	[93007] = {
+		tier = 3,
+		template_id = 9,
+		id = 93007,
+		level = 7,
+		monster_level_coefficient = {
+			{
+				889,
+				3559
+			}
+		}
+	},
+	[93008] = {
+		tier = 3,
+		template_id = 9,
+		id = 93008,
+		level = 8,
+		monster_level_coefficient = {
+			{
+				920,
+				10904
+			}
+		}
+	},
+	[101001] = {
+		tier = 1,
+		template_id = 10,
+		id = 101001,
+		level = 1,
+		monster_level_coefficient = {
+			{
+				784,
+				840
+			}
+		}
+	},
+	[101002] = {
+		tier = 1,
+		template_id = 10,
+		id = 101002,
+		level = 2,
+		monster_level_coefficient = {
+			{
+				806,
+				884
+			}
+		}
+	},
+	[101003] = {
+		tier = 1,
+		template_id = 10,
+		id = 101003,
+		level = 3,
+		monster_level_coefficient = {
+			{
+				830,
+				930
+			}
+		}
+	},
+	[101004] = {
+		tier = 1,
+		template_id = 10,
+		id = 101004,
+		level = 4,
+		monster_level_coefficient = {
+			{
+				854,
+				976
+			}
+		}
+	},
+	[101005] = {
+		tier = 1,
+		template_id = 10,
+		id = 101005,
+		level = 5,
+		monster_level_coefficient = {
+			{
+				880,
+				1024
+			}
+		}
+	},
+	[101006] = {
+		tier = 1,
+		template_id = 10,
+		id = 101006,
+		level = 6,
+		monster_level_coefficient = {
+			{
+				904,
+				1074
+			}
+		}
+	},
+	[101007] = {
+		tier = 1,
+		template_id = 10,
+		id = 101007,
+		level = 7,
+		monster_level_coefficient = {
+			{
+				929,
+				1123
+			}
+		}
+	},
+	[101008] = {
+		tier = 1,
+		template_id = 10,
+		id = 101008,
+		level = 8,
+		monster_level_coefficient = {
+			{
+				400,
+				4200
+			}
+		}
+	},
+	[102001] = {
+		tier = 2,
+		template_id = 10,
+		id = 102001,
+		level = 1,
+		monster_level_coefficient = {
+			{
+				977,
+				2264
+			}
+		}
+	},
+	[102002] = {
+		tier = 2,
+		template_id = 10,
+		id = 102002,
+		level = 2,
+		monster_level_coefficient = {
+			{
+				1001,
+				2377
+			}
+		}
+	},
+	[102003] = {
+		tier = 2,
+		template_id = 10,
+		id = 102003,
+		level = 3,
+		monster_level_coefficient = {
+			{
+				1025,
+				2476
+			}
+		}
+	},
+	[102004] = {
+		tier = 2,
+		template_id = 10,
+		id = 102004,
+		level = 4,
+		monster_level_coefficient = {
+			{
+				1052,
+				2577
+			}
+		}
+	},
+	[102005] = {
+		tier = 2,
+		template_id = 10,
+		id = 102005,
+		level = 5,
+		monster_level_coefficient = {
+			{
+				1078,
+				2678
+			}
+		}
+	},
+	[102006] = {
+		tier = 2,
+		template_id = 10,
+		id = 102006,
+		level = 6,
+		monster_level_coefficient = {
+			{
+				1104,
+				2779
+			}
+		}
+	},
+	[102007] = {
+		tier = 2,
+		template_id = 10,
+		id = 102007,
+		level = 7,
+		monster_level_coefficient = {
+			{
+				1128,
+				2881
+			}
+		}
+	},
+	[102008] = {
+		tier = 2,
+		template_id = 10,
+		id = 102008,
+		level = 8,
+		monster_level_coefficient = {
+			{
+				1200,
+				3200
+			}
+		}
+	},
+	[103001] = {
+		tier = 3,
+		template_id = 10,
+		id = 103001,
+		level = 1,
+		monster_level_coefficient = {
+			{
+				1140,
+				3396
+			}
+		}
+	},
+	[103002] = {
+		tier = 3,
+		template_id = 10,
+		id = 103002,
+		level = 2,
+		monster_level_coefficient = {
+			{
+				1187,
+				3542
+			}
+		}
+	},
+	[103003] = {
+		tier = 3,
+		template_id = 10,
+		id = 103003,
+		level = 3,
+		monster_level_coefficient = {
+			{
+				1232,
+				3690
+			}
+		}
+	},
+	[103004] = {
+		tier = 3,
+		template_id = 10,
+		id = 103004,
+		level = 4,
+		monster_level_coefficient = {
+			{
+				1278,
+				3838
+			}
+		}
+	},
+	[103005] = {
+		tier = 3,
+		template_id = 10,
+		id = 103005,
+		level = 5,
+		monster_level_coefficient = {
+			{
+				1324,
+				3970
+			}
+		}
+	},
+	[103006] = {
+		tier = 3,
+		template_id = 10,
+		id = 103006,
+		level = 6,
+		monster_level_coefficient = {
+			{
+				1372,
+				4119
+			}
+		}
+	},
+	[103007] = {
+		tier = 3,
+		template_id = 10,
+		id = 103007,
+		level = 7,
+		monster_level_coefficient = {
+			{
+				1422,
+				4270
+			}
+		}
+	},
+	[103008] = {
+		tier = 3,
+		template_id = 10,
+		id = 103008,
+		level = 8,
+		monster_level_coefficient = {
+			{
+				1472,
+				13084
+			}
+		}
+	},
 	all = {
 		1001,
 		1002,
@@ -3223,6 +3799,54 @@
 		83005,
 		83006,
 		83007,
-		83008
+		83008,
+		91001,
+		91002,
+		91003,
+		91004,
+		91005,
+		91006,
+		91007,
+		91008,
+		92001,
+		92002,
+		92003,
+		92004,
+		92005,
+		92006,
+		92007,
+		92008,
+		93001,
+		93002,
+		93003,
+		93004,
+		93005,
+		93006,
+		93007,
+		93008,
+		101001,
+		101002,
+		101003,
+		101004,
+		101005,
+		101006,
+		101007,
+		101008,
+		102001,
+		102002,
+		102003,
+		102004,
+		102005,
+		102006,
+		102007,
+		102008,
+		103001,
+		103002,
+		103003,
+		103004,
+		103005,
+		103006,
+		103007,
+		103008
 	}
 }

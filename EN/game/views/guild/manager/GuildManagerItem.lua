@@ -5,6 +5,9 @@ function var_0_0.Ctor(arg_1_0, arg_1_1)
 	arg_1_0.transform_ = arg_1_1.transform
 
 	arg_1_0:BindCfgUI()
+
+	arg_1_0.commonPortrait_ = CommonHeadPortrait.New(arg_1_0.headItem_)
+
 	arg_1_0:AddListeners()
 
 	arg_1_0.memberController_ = arg_1_0.controller:GetController("playerState")
@@ -28,12 +31,13 @@ function var_0_0.RegisterEvents(arg_2_0)
 end
 
 function var_0_0.Dispose(arg_4_0)
+	arg_4_0.commonPortrait_:Dispose()
 	var_0_0.super.Dispose(arg_4_0)
 	arg_4_0:RemoveAllEventListener()
 end
 
 function var_0_0.AddListeners(arg_5_0)
-	arg_5_0:AddBtnListener(arg_5_0.buttonInfo_, nil, function()
+	arg_5_0.commonPortrait_:RegisteClickCallback(function()
 		ForeignInfoAction:TryToCheckForeignDetailInfo(arg_5_0.id_)
 	end)
 	arg_5_0:AddBtnListener(arg_5_0.buttonRemove_, nil, function()
@@ -197,8 +201,9 @@ function var_0_0.SetData(arg_26_0, arg_26_1, arg_26_2, arg_26_3)
 		arg_26_0.buttonController_:SetSelectedState("request")
 	end
 
-	arg_26_0.imageIcon_.sprite = ItemTools.getItemSprite(var_26_0.icon)
-	arg_26_0.imageHeadBg_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_26_0.frame)
+	arg_26_0.commonPortrait_:RenderHead(var_26_0.icon)
+	arg_26_0.commonPortrait_:RenderFrame(var_26_0.frame)
+
 	arg_26_0.textName_.text = GetI18NText(var_26_0.name)
 	arg_26_0.textLevel_.text = GetTips("LEVEL") .. string.format("%s", var_26_0.level)
 	arg_26_0.textContribute_.text = GetI18NText(var_26_0.weekContribute)

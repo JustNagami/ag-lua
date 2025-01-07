@@ -16,6 +16,10 @@ end
 function var_0_0.OnEnter(arg_3_0)
 	var_0_0.super.OnEnter(arg_3_0)
 	arg_3_0:AddTimer()
+
+	if arg_3_0.btnTxt_ then
+		arg_3_0.btnTxt_.text = GetTips("ACTIVITY_PROMOTIONAL_GOTODRAW")
+	end
 end
 
 function var_0_0.OnExit(arg_4_0)
@@ -119,7 +123,7 @@ function var_0_0.RefreshTime(arg_15_0)
 	local var_15_0 = ActivityData:GetActivityData(arg_15_0.activityID_)
 	local var_15_1 = manager.time:GetServerTime()
 
-	arg_15_0.timeText_.text = manager.time:GetLostTimeStrWith2Unit(var_15_0.stopTime)
+	arg_15_0.timeText_.text = manager.time:GetLostTimeStr2(var_15_0.stopTime, true)
 end
 
 function var_0_0.AddTimer(arg_16_0)

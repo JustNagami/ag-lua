@@ -15,51 +15,46 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
-	arg_3_0.commonItem_ = CommonItem.New(arg_3_0.commonItemGo_)
+	arg_3_0.commonItem_ = CommonItemView.New(arg_3_0.commonItem, true)
+end
 
-	arg_3_0.commonItem_:RegistCallBack(function(arg_4_0)
-		ShowPopItem(POP_ITEM, {
-			arg_3_0.id_
+function var_0_0.AddUIListeners(arg_4_0)
+	return
+end
+
+function var_0_0.RefreshData(arg_5_0, arg_5_1, arg_5_2, arg_5_3)
+	arg_5_0:Show(true)
+
+	local var_5_0 = clone(ItemTemplateData)
+
+	var_5_0.id = arg_5_1
+	var_5_0.number = arg_5_2
+	var_5_0.bottomText = arg_5_2
+
+	function var_5_0.clickFun(arg_6_0)
+		ShowPopItem(POP_SOURCE_ITEM, {
+			arg_6_0.id,
+			arg_6_0.number
 		})
-	end)
-end
-
-function var_0_0.AddUIListeners(arg_5_0)
-	return
-end
-
-function var_0_0.OnEnter(arg_6_0)
-	return
-end
-
-function var_0_0.RefreshData(arg_7_0, arg_7_1, arg_7_2)
-	arg_7_0.id_ = arg_7_1
-
-	arg_7_0.commonItem_:RefreshData({
-		id = arg_7_1,
-		number = arg_7_2
-	})
-	arg_7_0.commonItem_:ShowFloor(ItemConst.ITEM_FLOOR.LONG)
-
-	if ItemCfg[arg_7_1].type == ItemConst.ITEM_TYPE.DYNAMIC_STICKER then
-		arg_7_0.commonItem_:ShowStar(false)
-	else
-		arg_7_0.commonItem_:ShowStar(true)
 	end
+
+	arg_5_0.commonItem_:SetData(var_5_0)
+
+	arg_5_0.downText_.text = arg_5_3
 end
 
-function var_0_0.SetBottomText(arg_8_0, arg_8_1)
-	arg_8_0.text_.text = arg_8_1
+function var_0_0.Show(arg_7_0, arg_7_1)
+	SetActive(arg_7_0.gameObject_, arg_7_1)
 end
 
-function var_0_0.OnExit(arg_9_0)
-	arg_9_0.commonItem_:OnExit()
+function var_0_0.OnExit(arg_8_0)
+	arg_8_0.commonItem_:OnExit()
 end
 
-function var_0_0.Dispose(arg_10_0)
-	arg_10_0:RemoveAllListeners()
-	arg_10_0.commonItem_:Dispose()
-	arg_10_0.super.Dispose(arg_10_0)
+function var_0_0.Dispose(arg_9_0)
+	arg_9_0:RemoveAllListeners()
+	arg_9_0.commonItem_:Dispose()
+	arg_9_0.super.Dispose(arg_9_0)
 end
 
 return var_0_0

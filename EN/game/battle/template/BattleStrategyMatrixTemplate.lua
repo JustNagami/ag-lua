@@ -12,10 +12,10 @@ function var_0_0.Ctor(arg_1_0, arg_1_1, arg_1_2, arg_1_3)
 	arg_1_0.systemHeroList = {}
 
 	for iter_1_0, iter_1_1 in ipairs(arg_1_0.heroList) do
-		local var_1_0 = StrategyMatrixData:GetHeroData(arg_1_2, iter_1_1)
+		local var_1_0 = StrategyMatrixData:GetHeroData(iter_1_1)
 
-		if var_1_0 and var_1_0:GetStandardId() ~= 0 then
-			arg_1_0.systemHeroList[iter_1_0] = var_1_0:GetStandardId()
+		if var_1_0 and var_1_0.tempID ~= 0 then
+			arg_1_0.systemHeroList[iter_1_0] = var_1_0.tempID
 		end
 	end
 
@@ -94,7 +94,7 @@ function var_0_0.UpdateRoleDatas(arg_12_0, arg_12_1)
 	local var_12_0 = StrategyMatrixData:GetMatrixBattleHeroTeam(arg_12_0.matrix_activity_id)
 
 	for iter_12_0, iter_12_1 in pairs(var_12_0) do
-		local var_12_1 = StrategyMatrixData:GetHeroData(arg_12_0.matrix_activity_id, iter_12_1)
+		local var_12_1 = StrategyMatrixData:GetHeroDataNew(iter_12_1)
 
 		if not var_12_1:IsDead() then
 			local var_12_2 = BattleController.GetInstance():SetMatrixHeroData(var_12_1, arg_12_1.playerID, arg_12_1.level, arg_12_0.matrix_activity_id)

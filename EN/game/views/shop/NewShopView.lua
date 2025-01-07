@@ -226,8 +226,9 @@ function var_0_0.OnGroupSelect(arg_13_0, arg_13_1, arg_13_2, arg_13_3, arg_13_4)
 		arg_13_0:ClickTitle(arg_13_0.itemToSelect_ or 1)
 	end
 
-	arg_13_0.currentGroupIndex_ = arg_13_1
 	arg_13_0.itemToSelect_ = nil
+
+	arg_13_0:EnterSendMgr(arg_13_1)
 end
 
 function var_0_0.ClickTitle(arg_14_0, arg_14_1)
@@ -236,6 +237,8 @@ function var_0_0.ClickTitle(arg_14_0, arg_14_1)
 	end
 
 	arg_14_0.currentItemIndex_ = arg_14_1
+
+	arg_14_0:EnterSendMgr(nil, arg_14_1)
 
 	local var_14_0 = arg_14_0.groupInfo[arg_14_0.groupInfo.itemIndexes_[arg_14_1]].id
 
@@ -305,6 +308,8 @@ function var_0_0.UpdateBottomView(arg_16_0)
 		arg_16_0.shopController:SetSelectedState("state3")
 	elseif arg_16_0.curShopId_ == ShopConst.SHOP_ID.BLACK_AREA or arg_16_0.curShopId_ == ShopConst.SHOP_ID.EQUIP_DEVELOP then
 		arg_16_0.shopController:SetSelectedState("state4")
+	elseif arg_16_0.curShopId_ == ShopConst.SHOP_ID.DRAW_EXCHANGE_ASSET_SHOP or arg_16_0.curShopId_ == ShopConst.SHOP_ID.GUIDE_SHOP or arg_16_0.curShopId_ == ShopConst.SHOP_ID.PASSPORT_SHOP or arg_16_0.curShopId_ == ShopConst.SHOP_ID.NEW_DUO_WEI then
+		arg_16_0.shopController:SetSelectedState("state5")
 	else
 		arg_16_0.shopController:SetSelectedState("state1")
 	end
@@ -610,8 +615,9 @@ function var_0_0.RefreshListType2(arg_41_0)
 	if arg_41_0.needKeepPos1 then
 		arg_41_0.needKeepPos1 = false
 
-		arg_41_0.loopScrollView_:RefreshScrollView(true)
+		arg_41_0.loopScrollView_:RefreshScrollView(arg_41_0.isFist)
 
+		arg_41_0.isFist = false
 		arg_41_0.diaScrollEx_.verticalNormalizedPosition = var_41_1
 
 		UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_41_0.diaScrollEx_.transform)
@@ -876,6 +882,7 @@ function var_0_0.OnExit(arg_54_0)
 	arg_54_0:StopTimer()
 	arg_54_0:RemoveAllEventListener()
 	arg_54_0:UnBindRedPoints()
+	arg_54_0:ExitUITime()
 end
 
 function var_0_0.StopTimer(arg_55_0)
@@ -897,6 +904,16 @@ function var_0_0.SetTimer(arg_56_0)
 
 	if arg_56_0.curShopId_ == ShopConst.SHOP_ID.DAILY_SHOP then
 		arg_56_0.refreshTimeTxt_.text = string.format(GetTips("TIME_DISPLAY_8"), TimeMgr.GetInstance():GetLostTimeStrWith2Unit(_G.gameTimer:GetNextDayFreshTime()))
+	elseif arg_56_0.curShopId_ == ShopConst.SHOP_ID.DRAW_EXCHANGE_ASSET_SHOP then
+		arg_56_0.refreshTimeTxt_.text = string.format(GetTips("SHOP_LIMITED_GOOD_REFRESH_TIME"), TimeMgr.GetInstance():GetLostTimeStrWith2Unit(_G.gameTimer:GetNextMonthFreshTime()))
+	elseif arg_56_0.curShopId_ == ShopConst.SHOP_ID.PASSPORT_SHOP then
+		arg_56_0.refreshTimeTxt_.text = string.format(GetTips("SHOP_LIMITED_GOOD_REFRESH_TIME"), manager.time:GetLostTimeStrWith2Unit(ActivityData:GetActivityData(201).stopTime))
+	elseif arg_56_0.curShopId_ == ShopConst.SHOP_ID.GUIDE_SHOP then
+		arg_56_0.refreshTimeTxt_.text = string.format(GetTips("SHOP_LIMITED_GOOD_REFRESH_TIME"), TimeMgr.GetInstance():GetLostTimeStrWith2Unit(_G.gameTimer:GetNextWeekFreshTime()))
+	elseif arg_56_0.curShopId_ == ShopConst.SHOP_ID.NEW_DUO_WEI then
+		local var_56_1 = PolyhedronData:GetActivityID()
+
+		arg_56_0.refreshTimeTxt_.text = string.format(GetTips("SHOP_LIMITED_GOOD_REFRESH_TIME"), TimeMgr.GetInstance():GetLostTimeStrWith2Unit(ActivityData:GetActivityData(var_56_1).stopTime))
 	elseif arg_56_0.curShopId_ == ShopConst.SHOP_ID.REPORT_SHOP then
 		arg_56_0.refreshTimeTxt_.text = manager.time:GetLostTimeStrWith2Unit(arg_56_0:GetReportShopRefreshTime())
 	end
@@ -937,8 +954,18 @@ function var_0_0.UpdateTimer(arg_58_0)
 			end
 
 			arg_58_0.refreshTimeTxt_.text = string.format(GetTips("TIME_DISPLAY_8"), TimeMgr.GetInstance():GetLostTimeStrWith2Unit(_G.gameTimer:GetNextDayFreshTime(), true))
+		elseif arg_58_0.curShopId_ == ShopConst.SHOP_ID.DRAW_EXCHANGE_ASSET_SHOP then
+			arg_58_0.refreshTimeTxt_.text = string.format(GetTips("SHOP_LIMITED_GOOD_REFRESH_TIME"), TimeMgr.GetInstance():GetLostTimeStrWith2Unit(_G.gameTimer:GetNextMonthFreshTime()))
+		elseif arg_58_0.curShopId_ == ShopConst.SHOP_ID.PASSPORT_SHOP then
+			arg_58_0.refreshTimeTxt_.text = string.format(GetTips("SHOP_LIMITED_GOOD_REFRESH_TIME"), manager.time:GetLostTimeStrWith2Unit(ActivityData:GetActivityData(201).stopTime))
 		elseif arg_58_0.curShopId_ == ShopConst.SHOP_ID.REPORT_SHOP then
-			arg_58_0.refreshTimeTxt_.text = manager.time:GetLostTimeStrWith2Unit(arg_58_0:GetReportShopRefreshTime())
+			arg_58_0.refreshTimeTxt_.text = string.format(GetTips("SHOP_LIMITED_GOOD_REFRESH_TIME"), manager.time:GetLostTimeStrWith2Unit(arg_58_0:GetReportShopRefreshTime()))
+		elseif arg_58_0.curShopId_ == ShopConst.SHOP_ID.GUIDE_SHOP then
+			arg_58_0.refreshTimeTxt_.text = string.format(GetTips("SHOP_LIMITED_GOOD_REFRESH_TIME"), TimeMgr.GetInstance():GetLostTimeStrWith2Unit(_G.gameTimer:GetNextWeekFreshTime()))
+		elseif arg_58_0.curShopId_ == ShopConst.SHOP_ID.NEW_DUO_WEI then
+			local var_58_0 = PolyhedronData:GetActivityID()
+
+			arg_58_0.refreshTimeTxt_.text = string.format(GetTips("SHOP_LIMITED_GOOD_REFRESH_TIME"), TimeMgr.GetInstance():GetLostTimeStrWith2Unit(ActivityData:GetActivityData(var_58_0).stopTime))
 		end
 	end
 end
@@ -1185,6 +1212,34 @@ end
 
 function var_0_0.LsUpdateItem(arg_75_0, arg_75_1, arg_75_2, arg_75_3)
 	arg_75_1.itemView:SetData(arg_75_2, arg_75_0.titleList, arg_75_0.indexList, arg_75_3, handler(arg_75_0, arg_75_0.ClickCallBack), arg_75_0.equipData)
+end
+
+function var_0_0.EnterSendMgr(arg_76_0, arg_76_1, arg_76_2)
+	arg_76_0.groupIndex_ = arg_76_1 or arg_76_0.groupIndex_
+	arg_76_0.titleIndex_ = arg_76_2 or arg_76_0.titleIndex_
+
+	local var_76_0 = string.format("%s_%s_%s", UITimeConst.shopTransactionGifts, arg_76_0.groupIndex_, arg_76_0.titleIndex_)
+
+	if arg_76_0.groupIndex_ and arg_76_0.titleIndex_ and var_76_0 ~= arg_76_0.lastShopId_ then
+		arg_76_0:ExitSendMgr()
+		manager.uiTime:OnEnterRoute(var_76_0, true)
+
+		arg_76_0.lastShopId_ = var_76_0
+	end
+end
+
+function var_0_0.ExitSendMgr(arg_77_0)
+	if arg_77_0.lastShopId_ then
+		manager.uiTime:OnExitRoute(arg_77_0.lastShopId_, true)
+	end
+end
+
+function var_0_0.ExitUITime(arg_78_0)
+	arg_78_0:ExitSendMgr()
+
+	arg_78_0.lastShopId_ = nil
+	arg_78_0.groupIndex_ = nil
+	arg_78_0.titleIndex_ = nil
 end
 
 return var_0_0

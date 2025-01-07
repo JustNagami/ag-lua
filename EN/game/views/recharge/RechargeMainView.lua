@@ -86,6 +86,8 @@ function var_0_0.OnGroupSelect(arg_7_0, arg_7_1, arg_7_2, arg_7_3, arg_7_4)
 
 	arg_7_0.itemToSelect_ = nil
 	arg_7_0.currentGroupIndex_ = arg_7_1
+
+	arg_7_0:EnterSendMgr(arg_7_1)
 end
 
 function var_0_0.ClickTitle(arg_8_0, arg_8_1)
@@ -100,6 +102,9 @@ function var_0_0.ClickTitle(arg_8_0, arg_8_1)
 	end
 
 	arg_8_0.currentItemIndex_ = arg_8_1
+
+	arg_8_0:EnterSendMgr(nil, arg_8_1)
+
 	arg_8_0.params_.childShopIndex = arg_8_1
 
 	arg_8_0:SwitchToShop(var_8_0)
@@ -118,6 +123,14 @@ function var_0_0.ClickTitle(arg_8_0, arg_8_1)
 		RedPointAction.HandleRedPoint(RED_POINT_ID.RECHARGE)
 		manager.redPoint:setTip(RED_POINT_ID.RECHARGE, 0)
 		SetActive(arg_8_0.redGo2_, false)
+	end
+
+	if var_8_0 == ShopConst.SHOP_ID.OBSERVATION_SHOP and ActivityNoobData:GetFirstMonthlyCardStatus().newTagSignFlag then
+		ActivityNoobAction.UpdateFirstSign()
+	end
+
+	if var_8_0 == ShopConst.SHOP_ID.CONSTANT_OBSERVATIONS and ActivityNoobData:GetFirstMonthlyCardStatus().newTagRoleFlag then
+		ActivityNoobAction.UpdateFirstRecharge()
 	end
 end
 
@@ -248,10 +261,15 @@ end
 
 function var_0_0.CheckPageEnter(arg_13_0, arg_13_1)
 	if not arg_13_0.enteredPage_[arg_13_1] then
-		TimeTools.StartAfterSeconds(0.05, function()
+		arg_13_0.enterTimer = TimeTools.StartAfterSeconds(0.05, function()
+			if arg_13_0.enterTimer == nil then
+				return
+			end
+
 			arg_13_0.pages_[arg_13_1]:OnEnter()
 
 			arg_13_0.enteredPage_[arg_13_1] = true
+			arg_13_0.enterTimer = nil
 		end, {})
 	end
 end
@@ -295,8 +313,11 @@ function var_0_0.OnExit(arg_18_0)
 		end
 	end
 
+	arg_18_0.enterTimer = nil
+
 	arg_18_0:UnbindRedPoint()
 	manager.windowBar:HideBar()
+	arg_18_0:ExitUITime()
 end
 
 function var_0_0.BindRedPoint(arg_19_0)
@@ -400,7 +421,15 @@ function var_0_0.SpecialShop(arg_23_0, arg_23_1)
 end
 
 function var_0_0.CheckShopRedPoint(arg_24_0, arg_24_1)
-	return ShopData.GetRedPointData()[arg_24_1] == true
+	local var_24_0 = ShopData.GetRedPointData()
+
+	if arg_24_1 == ShopConst.SHOP_ID.CONSTANT_OBSERVATIONS then
+		return var_24_0[arg_24_1] == true or ActivityNoobData:GetFirstMonthlyCardStatus().newTagRoleFlag
+	elseif arg_24_1 == ShopConst.SHOP_ID.OBSERVATION_SHOP then
+		return var_24_0[arg_24_1] == true or ActivityNoobData:GetFirstMonthlyCardStatus().newTagSignFlag
+	else
+		return var_24_0[arg_24_1] == true
+	end
 end
 
 function var_0_0.OnTryToUseItem(arg_25_0, arg_25_1, arg_25_2)
@@ -560,6 +589,34 @@ function var_0_0.GetTreeDataByParams(arg_31_0)
 	end
 
 	return var_31_3
+end
+
+function var_0_0.EnterSendMgr(arg_34_0, arg_34_1, arg_34_2)
+	arg_34_0.groupIndex_ = arg_34_1 or arg_34_0.groupIndex_
+	arg_34_0.titleIndex_ = arg_34_2 or arg_34_0.titleIndex_
+
+	local var_34_0 = string.format("%s_%s_%s", UITimeConst.shopRechargeGifts, arg_34_0.groupIndex_, arg_34_0.titleIndex_)
+
+	if arg_34_0.groupIndex_ and arg_34_0.titleIndex_ and var_34_0 ~= arg_34_0.lastShopId_ then
+		arg_34_0:ExitSendMgr()
+		manager.uiTime:OnEnterRoute(var_34_0, true)
+
+		arg_34_0.lastShopId_ = var_34_0
+	end
+end
+
+function var_0_0.ExitSendMgr(arg_35_0)
+	if arg_35_0.lastShopId_ then
+		manager.uiTime:OnExitRoute(arg_35_0.lastShopId_, true)
+	end
+end
+
+function var_0_0.ExitUITime(arg_36_0)
+	arg_36_0:ExitSendMgr()
+
+	arg_36_0.lastShopId_ = nil
+	arg_36_0.groupIndex_ = nil
+	arg_36_0.titleIndex_ = nil
 end
 
 return var_0_0

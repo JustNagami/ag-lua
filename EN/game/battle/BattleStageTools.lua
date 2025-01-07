@@ -227,6 +227,8 @@ function var_0_0.GetStageCfg(arg_5_0, arg_5_1)
 		var_5_0 = BattleAdvanceTestStageCfg[arg_5_1]
 	elseif BattleConst.STAGE_TYPE_NEW.SOLO_HEART_DEMON == arg_5_0 then
 		var_5_0 = BattleSoloHeartDemonCfg[arg_5_1]
+	elseif BattleConst.STAGE_TYPE_NEW.AREA_BATTLE == arg_5_0 then
+		var_5_0 = BattleAreaBattleCfg[arg_5_1]
 	elseif BattleConst.STAGE_TYPE_NEW.DESTROY_BOX_GAME == arg_5_0 then
 		var_5_0 = BattleDestroyBoxGameCfg[arg_5_1]
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_JJT_MAP_GAME == arg_5_0 then
@@ -250,6 +252,28 @@ function var_0_0.GetStageCfg(arg_5_0, arg_5_1)
 		var_5_0 = BattleHeroEnhanceCfg[arg_5_1]
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_REFORGE == arg_5_0 then
 		var_5_0 = BattleActivityReforgeCfg[arg_5_1]
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_CATCH_DUCK == arg_5_0 then
+		var_5_0 = BattleCatchDuckStageCfg[arg_5_1]
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_MONSTER_COSPLAY == arg_5_0 then
+		var_5_0 = BattleActivityMonsterCosplayCfg[arg_5_1]
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_RHYTHM_GAME == arg_5_0 then
+		var_5_0 = BattleRhythmGameStageCfg[arg_5_1]
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_WHACK_MOLE == arg_5_0 then
+		var_5_0 = BattleWhackMoleStageCfg[arg_5_1]
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_SUMMER_WATER == arg_5_0 then
+		var_5_0 = BattleActivityWaterGunnerCfg[arg_5_1]
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_SWIMSUIT_BATTLE == arg_5_0 then
+		var_5_0 = BattleSwimsuitCfg[arg_5_1]
+	elseif BattleConst.STAGE_TYPE_NEW.CHESS_BOARD == arg_5_0 then
+		var_5_0 = BattleChessBoardCfg[arg_5_1]
+	elseif BattleConst.STAGE_TYPE_NEW.ADVANCE_MONSTER_TEST == arg_5_0 then
+		var_5_0 = BattleActivityAdvanceMonsterTestCfg[arg_5_1]
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_SPKALI_CHALLENGE == arg_5_0 then
+		var_5_0 = BattleCoreKaliCfg[arg_5_1]
+	elseif BattleConst.STAGE_TYPE_NEW.CHALLENGE_ROGUE_TEAM == arg_5_0 then
+		var_5_0 = BattleRogueTeamStageCfg[arg_5_1]
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_DODGE_BARRAGE == arg_5_0 then
+		var_5_0 = BattleDodgeBarrageCfg[arg_5_1]
 	end
 
 	if var_5_0 == nil then

@@ -28,7 +28,7 @@ end
 function var_0_1.GetPosition(arg_4_0)
 	local var_4_0 = BattleChapterStageCfg[arg_4_0.stageID_]
 
-	return var_4_0 and var_4_0.position or {
+	return var_4_0 and var_4_0.position ~= "" and var_4_0.position or {
 		0,
 		0
 	}

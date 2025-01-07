@@ -3,6 +3,8 @@
 		arg_1_0:UpdataDormGlobalRedPoint()
 		arg_1_0:UpdateCanteenNotify()
 		arg_1_0:UpdataSuitShopRedPoint()
+		arg_1_0:UpdateDormIlluRedPoint()
+		arg_1_0:RefreshDormIlluNew()
 	end,
 	EnterDormitorySystem = function(arg_2_0)
 		arg_2_0:InitSuitRedPointData()
@@ -596,6 +598,169 @@ function var_0_0.UpdateCanteenNotify(arg_28_0)
 		arg_28_0:CheckUnLockEntrustRedPoint()
 		arg_28_0:CheckUnLockFoodRedPoint()
 		arg_28_0:CheckCanLevelUpFurRedPoint()
+	end
+end
+
+function var_0_0.UpdateDormIlluRedPoint(arg_29_0, arg_29_1)
+	if JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.DORM) then
+		return
+	end
+
+	local var_29_0 = TaskTools:GetFinishTaskIds(TaskConst.TASK_TYPE.DORM_ILLU)
+	local var_29_1 = {}
+
+	for iter_29_0 = 1, #var_29_0 do
+		if arg_29_1 == nil or AssignmentCfg[var_29_0[iter_29_0]].condition == arg_29_1 then
+			table.insert(var_29_1, var_29_0[iter_29_0])
+		end
+	end
+
+	local var_29_2 = 0
+	local var_29_3 = arg_29_1 == DormIlluConst.TaskCondition.hero and 1 or arg_29_1 == DormIlluConst.TaskCondition.dance and 2 or 3
+
+	if #var_29_1 > 0 then
+		manager.redPoint:setTip(RedPointConst.DORM_ILLU_REWARD .. "_" .. tostring(var_29_3), 1)
+	else
+		manager.redPoint:setTip(RedPointConst.DORM_ILLU_REWARD .. "_" .. tostring(var_29_3), 0)
+	end
+end
+
+function var_0_0.SetIlluNewTagRed(arg_30_0, arg_30_1, arg_30_2, arg_30_3, arg_30_4)
+	if JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.DORM) then
+		return
+	end
+
+	local var_30_0 = getData("dormIllu", arg_30_2) or {}
+
+	if var_30_0 then
+		local var_30_1 = 0
+
+		for iter_30_0, iter_30_1 in ipairs(var_30_0) do
+			if iter_30_1 == arg_30_1 then
+				var_30_1 = iter_30_0
+
+				break
+			end
+		end
+
+		local var_30_2 = false
+
+		if var_30_1 > 0 then
+			if not arg_30_4 then
+				var_30_2 = true
+
+				table.remove(var_30_0, var_30_1)
+				manager.redPoint:setTip(arg_30_3 .. arg_30_1, 0, RedPointStyle.SHOW_NEW_TAG)
+			end
+		elseif arg_30_4 then
+			var_30_2 = true
+
+			table.insert(var_30_0, arg_30_1)
+			manager.redPoint:setTip(arg_30_3 .. arg_30_1, 1, RedPointStyle.SHOW_NEW_TAG)
+		end
+
+		if var_30_2 then
+			saveData("dormIllu", arg_30_2, var_30_0)
+		end
+	end
+end
+
+function var_0_0.SetDanceRed(arg_31_0, arg_31_1)
+	if IdolTraineeData:DanceDIYActionAvailable(arg_31_1) then
+		local var_31_0 = RedPointConst.DORM_ILLU_DANCE .. arg_31_1
+
+		manager.redPoint:setTip(var_31_0, 0, RedPointStyle.SHOW_NEW_TAG)
+
+		local var_31_1 = getData("dormIllu", "danceNew") or {}
+
+		table.insert(var_31_1, arg_31_1)
+		saveData("dormIllu", "danceNew", var_31_1)
+	end
+end
+
+function var_0_0.RefreshDormIlluNew(arg_32_0)
+	if JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.DORM) then
+		return
+	end
+
+	local var_32_0 = getData("dormIllu", "heroNew") or {}
+
+	for iter_32_0, iter_32_1 in pairs(HeroCfg.get_id_list_by_private[0]) do
+		if BackHomeHeroCfg[iter_32_1] then
+			local var_32_1 = RedPointConst.DORM_ILLU_HERO .. iter_32_1
+
+			manager.redPoint:setTip(var_32_1, 0, RedPointStyle.SHOW_NEW_TAG)
+		end
+	end
+
+	for iter_32_2, iter_32_3 in pairs(var_32_0) do
+		if BackHomeHeroCfg[iter_32_3] then
+			local var_32_2 = RedPointConst.DORM_ILLU_HERO .. iter_32_3
+
+			manager.redPoint:setTip(var_32_2, 1, RedPointStyle.SHOW_NEW_TAG)
+		end
+	end
+
+	local var_32_3 = getData("dormIllu", "furNew") or {}
+
+	for iter_32_4, iter_32_5 in ipairs(BackHomeFurnitureThemeCfg.all) do
+		local var_32_4 = DormIlluTools.GetFurList(iter_32_5)
+
+		for iter_32_6, iter_32_7 in ipairs(var_32_4) do
+			local var_32_5 = RedPointConst.DORM_ILLU_FUR .. iter_32_7
+
+			manager.redPoint:setTip(var_32_5, 0, RedPointStyle.SHOW_NEW_TAG)
+		end
+	end
+
+	for iter_32_8, iter_32_9 in pairs(var_32_3) do
+		local var_32_6 = RedPointConst.DORM_ILLU_FUR .. iter_32_9
+
+		manager.redPoint:setTip(var_32_6, 1, RedPointStyle.SHOW_NEW_TAG)
+	end
+
+	arg_32_0:RefreshIlluDanceNew()
+end
+
+function var_0_0.RefreshIlluDanceNew(arg_33_0)
+	if JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.DORM) then
+		return
+	end
+
+	local var_33_0 = getData("dormIllu", "danceNew")
+
+	if var_33_0 == nil then
+		local var_33_1 = {}
+		local var_33_2 = IdolDanceDIYActionCfg.all
+
+		for iter_33_0, iter_33_1 in ipairs(var_33_2) do
+			if IdolTraineeData:DanceDIYActionAvailable(iter_33_1) then
+				table.insert(var_33_1, iter_33_1)
+			end
+		end
+
+		saveData("dormIllu", "danceNew", var_33_1)
+
+		var_33_0 = getData("dormIllu", "danceNew")
+	end
+
+	for iter_33_2, iter_33_3 in pairs(IdolDanceDIYActionCfg.all) do
+		if IdolTraineeData:DanceDIYActionAvailable(iter_33_3) then
+			local var_33_3 = RedPointConst.DORM_ILLU_DANCE .. iter_33_3
+			local var_33_4 = false
+
+			for iter_33_4, iter_33_5 in pairs(var_33_0) do
+				if iter_33_5 == iter_33_3 then
+					var_33_4 = true
+
+					break
+				end
+			end
+
+			if not var_33_4 then
+				manager.redPoint:setTip(var_33_3, 1, RedPointStyle.SHOW_NEW_TAG)
+			end
+		end
 	end
 end
 

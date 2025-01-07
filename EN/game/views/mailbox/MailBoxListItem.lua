@@ -68,17 +68,18 @@ function var_0_0.UpdateView(arg_12_0)
 	end
 
 	local var_12_0 = MailData.GetMailTitle(arg_12_0.data_.id)
+	local var_12_1 = GameSetting.admin_mail_title_max_len.value[1]
 
-	arg_12_0.nameText_.text = var_12_0
+	arg_12_0.nameText_.text = utf8.sub(var_12_0, 1, var_12_1 + 1)
 
-	local var_12_1 = arg_12_0.data_.attach_flag > 0
+	local var_12_2 = arg_12_0.data_.attach_flag > 0
 
-	arg_12_0.rewardController_:SetSelectedState(var_12_1 and "true" or "false")
+	arg_12_0.rewardController_:SetSelectedState(var_12_2 and "true" or "false")
 
 	if arg_12_0.data_.attach_flag == 2 then
 		arg_12_0.rewardController_:SetSelectedState("false")
 	else
-		arg_12_0.rewardController_:SetSelectedState(var_12_1 and "true" or "false")
+		arg_12_0.rewardController_:SetSelectedState(var_12_2 and "true" or "false")
 	end
 
 	arg_12_0:UpdateRead()

@@ -54,6 +54,7 @@ function var_0_0.AddListeners(arg_7_0)
 							curNameText = var_8_3
 						})
 						CheckNewGuide()
+						manager.uiTime:StartUITimer()
 
 						if arg_7_0.gameObject_ then
 							SetActive(arg_7_0.gameObject_, false)

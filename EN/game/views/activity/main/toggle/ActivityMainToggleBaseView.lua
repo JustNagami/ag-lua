@@ -154,6 +154,12 @@ function var_0_0.GetToggleCfg(arg_11_0)
 end
 
 function var_0_0.GetActivityID(arg_12_0)
+	local var_12_0 = arg_12_0.params_.activityID
+
+	if ActivityEntraceCfg[var_12_0] == nil then
+		arg_12_0.params_.activityID = ActivityEntraceCfg.get_id_list_by_theme[ActivityCfg[var_12_0].activity_theme][1]
+	end
+
 	return arg_12_0.params_.activityID
 end
 

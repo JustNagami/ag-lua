@@ -66,6 +66,7 @@ function var_0_0.indexItem(arg_11_0, arg_11_1, arg_11_2)
 	local var_11_1 = arg_11_0.itemList_[arg_11_1]
 
 	var_11_0.id = arg_11_0.type_ == "equip" and var_11_1.prefab_id or var_11_1.id
+	var_11_0.hideBottomRightTextFlag = true
 
 	if arg_11_0.type_ == "equip" then
 		var_11_0.equipLevel = EquipTools.CountEquipLevel(var_11_1)

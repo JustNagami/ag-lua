@@ -122,7 +122,7 @@ function var_0_0.MatrixOverCallBack(arg_11_0, arg_11_1)
 
 		local var_11_0 = arg_11_1.activity_id
 
-		if var_11_0 == ActivityConst.ACTIVITY_ROGUELIKE_DIFFICULT_2_1 or var_11_0 == ActivityConst.ACTIVITY_ROGUELIKE_DIFFICULT_2_6 then
+		if var_11_0 == ActivityConst.ACTIVITY_ROGUELIKE_DIFFICULT_2_1 or var_11_0 == ActivityConst.ACTIVITY_ROGUELIKE_DIFFICULT_2_6 or var_11_0 == ActivityConst.ACTIVITY_ROGUELIKE_DIFFICULT_3_5 then
 			JumpTools.OpenPageByJump("/matrixBlank/roguelikeAffix", {
 				activity_id = var_11_0
 			})
@@ -147,6 +147,7 @@ end
 function var_0_0.MatrixGiveUpCallBack(arg_13_0, arg_13_1)
 	if isSuccess(arg_13_0.result) then
 		StrategyMatrixData:UpdateMatrixProcess(arg_13_1.activity_id, MatrixConst.STATE_TYPE.FAIL, arg_13_0.progress)
+		StrategyMatrixData:SetActivityId(arg_13_1.activity_id)
 		JumpTools.GoToSystem("/matrixBlank/strategyMatrixOver", {
 			matrix_activity_id = arg_13_1.activity_id
 		})
@@ -396,6 +397,11 @@ function var_0_0.JumpToStrategyMatrix(arg_26_0, arg_26_1)
 		})
 	elseif var_26_0 == ActivityConst.THEME.ACTIVITY_2_6 then
 		OpenPageUntilLoaded("/matrixBlank/roguelikeMap_2_6", {
+			activity_id = arg_26_0,
+			playerAnim = arg_26_1
+		})
+	elseif var_26_0 == ActivityConst.THEME.ACTIVITY_3_5 then
+		OpenPageUntilLoaded("/matrixBlank/roguelikeMap_3_5", {
 			activity_id = arg_26_0,
 			playerAnim = arg_26_1
 		})

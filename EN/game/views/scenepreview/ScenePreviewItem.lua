@@ -15,6 +15,7 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
+	arg_3_0.icon_.immediate = true
 	arg_3_0.typeCon_ = ControllerUtil.GetController(arg_3_0.transform_, "type")
 	arg_3_0.selectCon_ = ControllerUtil.GetController(arg_3_0.transform_, "select")
 end
@@ -32,7 +33,7 @@ function var_0_0.RefreshData(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
 	arg_6_0.cfg_ = HomeSceneSettingCfg[arg_6_0.id_]
 	arg_6_0.title_.text = arg_6_0.cfg_.title
 	arg_6_0.source_.text = arg_6_0.cfg_.obtain_word
-	arg_6_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/SceneChangeUI/item/" .. arg_6_0.id_)
+	arg_6_0.icon_.spriteSync = "TextureConfig/SceneChangeUI/item/" .. arg_6_0.id_
 
 	arg_6_0:RefreshType(arg_6_2, arg_6_3)
 	manager.redPoint:bindUIandKey(arg_6_0.transform_, RedPointConst.SCENE .. "_" .. arg_6_0.id_)
@@ -49,7 +50,7 @@ function var_0_0.RefreshType(arg_7_0, arg_7_1, arg_7_2)
 		else
 			arg_7_0.typeCon_:SetSelectedState("ban")
 		end
-	elseif var_7_0 == arg_7_0.id_ then
+	elseif var_7_0 == arg_7_0.id_ and not HomeSceneSettingData:IsRandomScene() then
 		if arg_7_1 == 1 then
 			arg_7_0.typeCon_:SetSelectedState("trial")
 		elseif arg_7_1 == 2 then
@@ -69,6 +70,7 @@ function var_0_0.OnExit(arg_9_0)
 end
 
 function var_0_0.Dispose(arg_10_0)
+	manager.redPoint:unbindUIandKey(arg_10_0.transform_)
 	arg_10_0:RemoveAllListeners()
 	var_0_0.super.Dispose(arg_10_0)
 end

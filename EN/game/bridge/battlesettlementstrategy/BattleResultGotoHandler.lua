@@ -12,13 +12,22 @@ StageStrategyType = {
 	GotoSoloSurviveStage = "GotoSoloSurviveStage",
 	GotoStage = "GotoStage",
 	GotoSequentialBattleStage = "GotoSequentialBattleStage",
-	GotoSkadiStage = "GotoSkadiStage",
+	GotoActivitySwimsuitStage = "GotoActivitySwimsuitStage",
 	GotoSlayerStage = "GotoSlayerStage",
 	GotoEquipSeizureScoreStage = "GotoEquipSeizureScoreStage",
 	GotoActivityHeroEnhanceStage = "GotoActivityHeroEnhanceStage",
+	GotoWhackMoleStage = "GotoWhackMoleStage",
 	GotoGuildActivityStage = "GotoGuildActivityStage",
 	GotoMythicFinalStage = "GotoMythicFinalStage",
+	GotoCatchDuckStage = "GotoCatchDuckStage",
 	GotoSPHeroChallengeStage = "GotoSPHeroChallengeStage",
+	GotoActivityRhythmGameStage = "GotoActivityRhythmGameStage",
+	GotoAreaBattleStage = "GotoAreaBattleStage",
+	GotoActivitySummerWaterStage = "GotoActivitySummerWaterStage",
+	GotoSkadiStage = "GotoSkadiStage",
+	GotoChallengeRogueTeamStage = "GotoChallengeRogueTeamStage",
+	GotoSpKaliStage = "GotoSpKaliStage",
+	GotoDodgeBarrageStage = "GotoDodgeBarrageStage",
 	GotoActivityWorldBoss = "GotoActivityWorldBoss",
 	GotoPushSnowBallSingleBattleStage = "GotoPushSnowBallSingleBattleStage",
 	GotoSoloChallengeStage = "GotoSoloChallengeStage",
@@ -35,6 +44,7 @@ StageStrategyType = {
 	GotoActivityReforgeStage = "GotoActivityReforgeStage",
 	GotoMultipleResultStage = "GotoMultipleResultStage",
 	GotoSoloHeartDemonStage = "GotoSoloHeartDemonStage",
+	GotoMonsterCosplayStage = "GotoMonsterCosplayStage",
 	GotoKagutsuchiStage = "GotoKagutsuchiStage"
 }
 var_0_0.CustomStageStrategy = {
@@ -57,6 +67,7 @@ var_0_0.CustomStageStrategy = {
 	[BattleConst.STAGE_TYPE_NEW.AFFIX_SELECT] = StageStrategyType.GotoScoreStage,
 	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_PT2_GAME_HARD] = StageStrategyType.GotoScoreStage,
 	[BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_ADVANCE_TEST] = StageStrategyType.GotoScoreStage,
+	[BattleConst.STAGE_TYPE_NEW.ADVANCE_MONSTER_TEST] = StageStrategyType.GotoScoreStage,
 	[BattleConst.STAGE_TYPE_NEW.SKADI_GAME] = StageStrategyType.GotoSkadiStage,
 	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_MATRIX] = StageStrategyType.GotoActivityMatrixStage,
 	[BattleConst.STAGE_TYPE_NEW.STRATEGY_MATRIX] = StageStrategyType.GotoActivityMatrixStage,
@@ -75,6 +86,7 @@ var_0_0.CustomStageStrategy = {
 	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_WATER] = StageStrategyType.GotoActivityWaterStage,
 	[BattleConst.STAGE_TYPE_NEW.MARDUK_SPECIAL] = StageStrategyType.GotoMardukSpecialStage,
 	[BattleConst.STAGE_TYPE_NEW.SOLO_HEART_DEMON] = StageStrategyType.GotoSoloHeartDemonStage,
+	[BattleConst.STAGE_TYPE_NEW.AREA_BATTLE] = StageStrategyType.GotoAreaBattleStage,
 	[BattleConst.STAGE_TYPE_NEW.DESTROY_BOX_GAME] = StageStrategyType.GotoScoreWithMaxScoreStage,
 	[BattleConst.STAGE_TYPE_NEW.SEQUENTIAL_BATTLE] = StageStrategyType.GotoSequentialBattleStage,
 	[BattleConst.STAGE_TYPE_NEW.PUSH_SNOWBALL_SINGLE] = StageStrategyType.GotoPushSnowBallSingleBattleStage,
@@ -83,7 +95,16 @@ var_0_0.CustomStageStrategy = {
 	[BattleConst.STAGE_TYPE_NEW.CORE_VERIFICATION] = StageStrategyType.GotoCoreVerificationStage,
 	[BattleConst.STAGE_TYPE_NEW.SP_HERO_CHALLENGE_BATTLE_3_1] = StageStrategyType.GotoSPHeroChallengeStage,
 	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_REFORGE] = StageStrategyType.GotoActivityReforgeStage,
-	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_HERO_ENHANCE] = StageStrategyType.GotoActivityHeroEnhanceStage
+	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_HERO_ENHANCE] = StageStrategyType.GotoActivityHeroEnhanceStage,
+	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_WHACK_MOLE] = StageStrategyType.GotoWhackMoleStage,
+	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_SWIMSUIT_BATTLE] = StageStrategyType.GotoActivitySwimsuitStage,
+	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_RHYTHM_GAME] = StageStrategyType.GotoActivityRhythmGameStage,
+	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_SUMMER_WATER] = StageStrategyType.GotoActivitySummerWaterStage,
+	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_MONSTER_COSPLAY] = StageStrategyType.GotoMonsterCosplayStage,
+	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_CATCH_DUCK] = StageStrategyType.GotoCatchDuckStage,
+	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_SPKALI_CHALLENGE] = StageStrategyType.GotoSpKaliStage,
+	[BattleConst.STAGE_TYPE_NEW.CHALLENGE_ROGUE_TEAM] = StageStrategyType.GotoChallengeRogueTeamStage,
+	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_DODGE_BARRAGE] = StageStrategyType.GotoDodgeBarrageStage
 }
 
 function var_0_0.Init(arg_1_0)
@@ -121,22 +142,18 @@ function var_0_0.GotoResult(arg_3_0, arg_3_1, arg_3_2, arg_3_3, arg_3_4, arg_3_5
 end
 
 function var_0_0.SnapShot(arg_4_0)
-	local var_4_0 = SceneManager.sceneCount or 1
-
-	arg_4_0.snapShot = false
-
-	if var_4_0 >= 2 and LuaForUtil.HasBattleWinPos() then
-		local var_4_1 = manager.ui.mainCamera:GetComponent("CameraExtension")
-
-		if not isNil(var_4_1) then
-			var_4_1:CaptureSnapshot()
-
-			arg_4_0.snapShot = true
-		end
+	if arg_4_0.snapShot then
+		arg_4_0:ReleaseSnapShot()
 	end
 
-	if not arg_4_0.snapShot then
-		arg_4_0:ReleaseSnapShot()
+	if (SceneManager.sceneCount or 1) >= 2 and LuaForUtil.HasBattleWinPos() then
+		arg_4_0.snapShot = UnityEngine.RenderTexture.New(math.floor(Screen.width / 1.5), math.floor(Screen.height / 1.5), 0, UnityEngine.RenderTextureFormat.ARGB32)
+
+		local var_4_0 = manager.ui.mainCamera:GetComponent("CameraExtension")
+
+		if not isNil(var_4_0) then
+			var_4_0:CaptureSnapshot(arg_4_0.snapShot)
+		end
 	end
 end
 
@@ -145,7 +162,9 @@ function var_0_0.GetSnapShot(arg_5_0)
 end
 
 function var_0_0.ReleaseSnapShot(arg_6_0)
-	arg_6_0.snapShot = false
+	arg_6_0.snapShot:Release()
+
+	arg_6_0.snapShot = nil
 
 	if manager.ui.mainCamera ~= nil and not isNil(manager.ui.mainCamera) then
 		local var_6_0 = manager.ui.mainCamera:GetComponent("CameraExtension")

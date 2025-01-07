@@ -30,7 +30,7 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
-	arg_4_0.controller_ = ControllerUtil.GetController(arg_4_0.transform_, "status")
+	arg_4_0.controller_ = arg_4_0.controllerEx_:GetController("status")
 	arg_4_0.typeController_ = ControllerUtil.GetController(arg_4_0.transform_, "type")
 end
 

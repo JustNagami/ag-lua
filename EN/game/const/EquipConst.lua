@@ -74,5 +74,19 @@
 	EQUIP_ATTRIBUTE_TYPE = {
 		HERO_EQUIP_SKILL = 1,
 		ENCHANT = 0
+	},
+	EQUIP_LEVEL_UP_MATERIAL_EXP = {
+		{
+			id = 40801,
+			exp = 50
+		},
+		{
+			id = 40802,
+			exp = 100
+		},
+		{
+			id = 40803,
+			exp = 500
+		}
 	}
 }

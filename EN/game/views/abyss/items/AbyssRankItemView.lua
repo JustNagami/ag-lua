@@ -9,6 +9,9 @@ end
 
 function var_0_0.Init(arg_2_0)
 	arg_2_0:InitUI()
+
+	arg_2_0.commonPortrait_ = CommonHeadPortrait.New(arg_2_0.headItem_)
+
 	arg_2_0:AddUIListener()
 end
 
@@ -61,8 +64,8 @@ function var_0_0.SetData(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
 end
 
 function var_0_0.UpdateView(arg_9_0)
-	arg_9_0.headImg_.sprite = ItemTools.getItemSprite(arg_9_0.data_.portrait)
-	arg_9_0.frameImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_9_0.data_.frame)
+	arg_9_0.commonPortrait_:RenderHead(arg_9_0.data_.portrait)
+	arg_9_0.commonPortrait_:RenderFrame(arg_9_0.data_.frame)
 
 	if arg_9_0.data_.rank < 4 then
 		arg_9_0.rankController_:SetSelectedIndex(arg_9_0.data_.rank)
@@ -89,6 +92,8 @@ function var_0_0.OnMainHomeViewTop(arg_12_0)
 end
 
 function var_0_0.Dispose(arg_13_0)
+	arg_13_0.commonPortrait_:Dispose()
+
 	arg_13_0.data_ = nil
 
 	var_0_0.super.Dispose(arg_13_0)

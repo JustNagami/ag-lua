@@ -1,16 +1,19 @@
 ﻿return {
 	InteractionKey = {
-		touch2 = "touch2",
-		idle = "idle",
-		mainQuickTouch = "mainQuickTouch",
 		shaking = "shaking",
 		touch3 = "touch3",
+		idle = "idle",
+		idle2 = "idle2",
 		showing = "showing",
+		touch2 = "touch2",
+		idle3 = "idle3",
+		mainQuickTouch = "mainQuickTouch",
 		greeting = "greeting",
 		mainTouch = "mainTouch"
 	},
 	ViewTag = {
 		playerInfo_other = "playerInfo_other",
+		preview = "preview",
 		chat = "chat",
 		playerInfo = "playerInfo",
 		null = "null",

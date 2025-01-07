@@ -26,6 +26,8 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.typeController_ = arg_4_0.mainControllerEx_:GetController("type")
 	arg_4_0.likeController_ = arg_4_0.mainControllerEx_:GetController("like")
 	arg_4_0.addfriendController_ = arg_4_0.mainControllerEx_:GetController("addfriend")
+	arg_4_0.myPortrait_ = CommonHeadPortrait.New(arg_4_0.myHeadItem_)
+	arg_4_0.enemyPortrait_ = CommonHeadPortrait.New(arg_4_0.enemyHeadItem_)
 end
 
 function var_0_0.AddListeners(arg_5_0)
@@ -76,7 +78,7 @@ function var_0_0.AddListeners(arg_5_0)
 			BackHomeCricketAction:AskPvEBattleData(var_10_2)
 		end
 	end)
-	arg_5_0:AddBtnListener(arg_5_0.enemyHeadBtn, nil, function()
+	arg_5_0.enemyPortrait_:RegisteClickCallback(function()
 		if arg_5_0.enemyID then
 			ForeignInfoAction:TryToCheckForeignDetailInfo(arg_5_0.enemyID, true)
 		end
@@ -103,9 +105,10 @@ function var_0_0.RefreshPlayerInfo(arg_15_0)
 	local var_15_0 = PlayerData:GetPlayerInfo()
 
 	if var_15_0 then
-		arg_15_0.myIcon.sprite = ItemTools.getItemSprite(var_15_0.portrait)
+		arg_15_0.myPortrait_:RenderHead(var_15_0.portrait)
+		arg_15_0.myPortrait_:RenderFrame(var_15_0.icon_frame)
+
 		arg_15_0.myName.text = var_15_0.nick
-		arg_15_0.myFrame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_15_0.icon_frame)
 	end
 
 	local var_15_1 = BackHomeCricketBattleData:GetSingleBattleData()
@@ -121,9 +124,10 @@ function var_0_0.RefreshPlayerInfo(arg_15_0)
 
 		local var_15_2 = IdolTraineeTools:GetEnemyUserData(arg_15_0.enemyID)
 
-		arg_15_0.enemyIcon.sprite = ItemTools.getItemSprite(var_15_2.icon)
+		arg_15_0.enemyPortrait_:RenderHead(var_15_2.icon)
+		arg_15_0.enemyPortrait_:RenderFrame(var_15_2.icon_frame)
+
 		arg_15_0.enemyName.text = var_15_2.nick
-		arg_15_0.enemyFrame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_15_2.icon_frame)
 
 		arg_15_0.addfriendController_:SetSelectedState(FriendsData:IsFriend(arg_15_0.enemyID) and "off" or "on")
 
@@ -142,16 +146,20 @@ function var_0_0.RefreshPlayerInfo(arg_15_0)
 		arg_15_0.enemyID = var_15_4.userID
 
 		if var_15_4.is_attacker then
-			arg_15_0.enemyIcon.sprite = ItemTools.getItemSprite(var_15_4.icon)
+			arg_15_0.enemyPortrait_:RenderHead(var_15_4.icon)
+			arg_15_0.enemyPortrait_:RenderFrame(var_15_4.icon_frame)
+
 			arg_15_0.enemyName.text = var_15_4.nick
-			arg_15_0.enemyFrame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_15_4.icon_frame)
 		else
-			arg_15_0.myIcon.sprite = ItemTools.getItemSprite(var_15_4.icon)
+			arg_15_0.myPortrait_:RenderHead(var_15_4.icon)
+			arg_15_0.myPortrait_:RenderFrame(var_15_4.icon_frame)
+
 			arg_15_0.myName.text = var_15_4.nick
-			arg_15_0.myFrame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_15_4.icon_frame)
-			arg_15_0.enemyIcon.sprite = ItemTools.getItemSprite(var_15_0.portrait)
+
+			arg_15_0.enemyPortrait_:RenderHead(var_15_0.portrait)
+			arg_15_0.enemyPortrait_:RenderFrame(var_15_0.icon_frame)
+
 			arg_15_0.enemyName.text = var_15_0.nick
-			arg_15_0.enemyFrame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_15_0.icon_frame)
 		end
 
 		arg_15_0.enemyID = var_15_4.userID
@@ -225,6 +233,9 @@ function var_0_0.InitResultData(arg_17_0)
 end
 
 function var_0_0.Dispose(arg_18_0)
+	arg_18_0.myPortrait_:Dispose()
+	arg_18_0.enemyPortrait_:Dispose()
+
 	if arg_18_0.scoreList then
 		for iter_18_0, iter_18_1 in pairs(arg_18_0.scoreList) do
 			iter_18_1:Dispose()

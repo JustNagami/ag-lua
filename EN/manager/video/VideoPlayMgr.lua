@@ -106,7 +106,7 @@ function var_0_0.Play(arg_9_0, arg_9_1, arg_9_2, arg_9_3, arg_9_4, arg_9_5, arg_
 		arg_9_0.criplayer_:Loop(arg_9_4)
 	end
 
-	arg_9_0.criplayer_:SetFile(nil, arg_9_1)
+	SetFile(arg_9_0.criplayer_, nil, arg_9_1)
 
 	arg_9_0.onFinishCallback_ = arg_9_2
 	arg_9_0.onPauseCallback = arg_9_5

@@ -918,7 +918,8 @@
 		heart_chain3 = "6bcb106ff5337a44f0af6f1363027e61",
 		weight = "50kg",
 		hero_id = {
-			1056
+			1056,
+			1156
 		},
 		gift_like_id1 = {
 			50029
@@ -1801,7 +1802,159 @@
 		},
 		super_plot_id = {}
 	},
+	[1022] = {
+		birthday = "4ea996d06c210b76057ab6c4a54c4bce",
+		height = "170cm",
+		name = "75efa09cd336ac7074c6b885dfb98962",
+		id = 1022,
+		heart_chain5 = "2c31c34dc1f229645b8a09bc85de75af",
+		heart_chain1 = "c93de4e13b25a60bea10cc7c5c593dd9",
+		plot_tip = "",
+		cv_ko = "",
+		like = "a3933bf5d13bc0e3ce986ef0f44a5588",
+		super_plot_tip = "",
+		plot_tip_picture = "1022",
+		cv_en = "Alex Constantinidi",
+		cv_zh = "a7fa4d95928c842e08c46247f89120f3",
+		cv_ja = "0093a234673c03fe5f5424e24120c8cc",
+		heart_chain2 = "e75dc84dd701f4676be1dca2e0065450",
+		organization = "2d156f884099069ae0e6f5afbe2713d6",
+		heart_chain4 = "48485550c7e551afdabdbdeca59caa03",
+		heart_chain3 = "f2369b0da69b198cadb8f8b59dc1edff",
+		weight = "57kg",
+		hero_id = {
+			1022
+		},
+		gift_like_id1 = {
+			50051
+		},
+		plot_title = {
+			"d26b82c9a561ddf654fffb8edb78e8c9",
+			"90be0058307864aa28a67456576377cb",
+			"5cb795c57b08e14898fadeb78cbff51e",
+			"e7ddfe45522928fd2df0ebe338f43011"
+		},
+		plot_id = {},
+		super_plot_id = {}
+	},
+	[1021] = {
+		birthday = "ba53706725a6dc5304d7a4b9dc28932c",
+		height = "163cm",
+		name = "79ceb87bd59de3ca3a3cdf55601a0b49",
+		id = 1021,
+		heart_chain5 = "8225a76c9b378d6e1407cd81a1122924",
+		heart_chain1 = "d475c4eb9e06ae5832474401981ed287",
+		plot_tip = "",
+		cv_ko = "",
+		like = "3dfe23660083f7c23359a05de1de4565",
+		super_plot_tip = "",
+		plot_tip_picture = "1021",
+		cv_en = "Rebecca Hanssen",
+		cv_zh = "ed9ad924c70482274bb9fca68b3d29de",
+		cv_ja = "7189174f136530bc920ede966309f0fc",
+		heart_chain2 = "f8e0557c316873b6a594e5d4c4ace242",
+		organization = "c98651b2fe0564ff44a5480c21fa37c4",
+		heart_chain4 = "9c81d4bea96d68c951c8d01f98687b91",
+		heart_chain3 = "4630bd59adf377ee8241c13e3de3f181",
+		weight = "48kg",
+		hero_id = {
+			1021
+		},
+		gift_like_id1 = {
+			50050
+		},
+		plot_title = {
+			"e0097d5e28feb5383d53a61d6a190701",
+			"072c3b1f6fba45666776a5807aa9d0d6",
+			"9a51fceb16e58da9b9644127e059747f",
+			"ee5fc0a0e2bebcd097b9c98447b3b75c"
+		},
+		plot_id = {},
+		super_plot_id = {}
+	},
+	[1020] = {
+		birthday = "11d21172987e9ffca21d206edd343c82",
+		height = "146cm",
+		name = "5b9175672574d39bc639cb54d0770f6b",
+		id = 1020,
+		heart_chain5 = "0b2e499227c6da7076916738fa27aeae",
+		heart_chain1 = "8aea563160bbf29f8e27b21ecc9dbe9a",
+		plot_tip = "",
+		cv_ko = "",
+		like = "4fd93a874d736fa6929dc61a42fc58bf",
+		super_plot_tip = "",
+		plot_tip_picture = "1020",
+		cv_en = "",
+		cv_zh = "16edf2652759adccae78da473624a550",
+		cv_ja = "9f2a1f67632b9c6275694733c4b1168f",
+		heart_chain2 = "37bccc2e84261c805db04bbb0be1bfc4",
+		organization = "46bd2c623f69d528f9e2a43f8d244fe4",
+		heart_chain4 = "cdb6e1eba623cecd9ed2e41ceca7fd80",
+		heart_chain3 = "84bde7f7f7825a07b28a961df0c3f6a8",
+		weight = "40kg",
+		hero_id = {
+			1020
+		},
+		gift_like_id1 = {
+			50052
+		},
+		plot_title = {
+			"bc90ba450650fb800aa771cda8f05942",
+			"61b0fbfcf08162ff0872c0976c3aa1de",
+			"2004c7e8245cf749b937546d5d291bbe",
+			"661e1308f0937e11cb6aefe75f3176cd"
+		},
+		plot_id = {},
+		super_plot_id = {}
+	},
+	[1089] = {
+		birthday = "a4f57043348a775429e337eec9b29d7b",
+		height = "170cm",
+		name = "a262d7a76da6f5d1727957c4e45b0f3f",
+		id = 1089,
+		heart_chain5 = "4cbfa163b51db4d83ec3aad37d5a6fbb",
+		heart_chain1 = "fb327ca94cf05b115648dc3d2a892b62",
+		plot_tip = "eba00d251b1be0a9c66c6c7b97a2c85c",
+		cv_ko = "",
+		like = "2ae930824144488e73ebde34acd62dd8",
+		super_plot_tip = "57e7573660f76aa4825466df09e1f4a6",
+		plot_tip_picture = "1089",
+		cv_en = "",
+		cv_zh = "ff6177e3c8937dfb3ed80cccec4d51e3",
+		cv_ja = "ffddfea0013899989a031e53db596932",
+		heart_chain2 = "598ebe161543ac2729e6c770afb69ca5",
+		organization = "882d0808ca359a96821cbd5e34ca2d23",
+		heart_chain4 = "7c165ef1b431a2f409df41b7b9bcd72a",
+		heart_chain3 = "20c04d7eacd367cfbbfdafdeddbe538f",
+		weight = "58kg",
+		hero_id = {
+			1089
+		},
+		gift_like_id1 = {
+			50053
+		},
+		plot_title = {
+			"7bca0061fbf7d1cdf3bcf32c6d803a99",
+			"417df66293602175c7c03d1f7da6f527",
+			"d599ff6cd6eaef06d4ebba33f36fa0f7",
+			"9bea21d7b5568f4582949476af95b22d"
+		},
+		plot_id = {},
+		super_plot_id = {}
+	},
 	get_id_list_by_hero_id = {
+		[1089] = {
+			1089
+		},
+		[1020] = {
+			1020
+		},
+		[1021] = {
+			1021
+		},
+		[1022] = {
+			1022
+		},
 		[1095] = {
 			1095
 		},
@@ -1873,6 +2026,9 @@
 		},
 		[1013] = {
 			1013
+		},
+		[1156] = {
+			1056
 		},
 		[1056] = {
 			1056
@@ -2026,6 +2182,10 @@
 		1076,
 		1055,
 		1049,
-		1095
+		1095,
+		1022,
+		1021,
+		1020,
+		1089
 	}
 }

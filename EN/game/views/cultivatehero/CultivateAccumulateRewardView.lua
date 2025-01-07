@@ -26,7 +26,7 @@ function var_0_0.AddUIListener(arg_5_0)
 end
 
 function var_0_0.OnEnter(arg_7_0)
-	arg_7_0.activityID_ = arg_7_0.params_.activityID
+	arg_7_0.activityID_ = arg_7_0.params_.rewardActivityID
 
 	arg_7_0:RefreshUI()
 end

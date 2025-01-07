@@ -36,6 +36,10 @@
 				if not gameContext:GetOpenPageHandler(iter_1_1[2]) then
 					return false
 				end
+			elseif iter_1_1[1] == "uiParam" then
+				if nullable(gameContext:GetLastOpenPageHandler(), "params_", iter_1_1[2]) ~= iter_1_1[3] then
+					return false
+				end
 			elseif iter_1_1[1] == "uiNameList" then
 				local var_1_2 = iter_1_1[2]
 				local var_1_3 = false
@@ -61,10 +65,16 @@
 				if not GuideData:IsFinish(var_1_5) then
 					return false
 				end
-			elseif iter_1_1[1] == "storyId" then
+			elseif iter_1_1[1] == "notGuide" then
 				local var_1_6 = iter_1_1[2]
 
-				if not manager.story:IsStoryPlayed(var_1_6) then
+				if GuideData:IsFinish(var_1_6) then
+					return false
+				end
+			elseif iter_1_1[1] == "storyId" then
+				local var_1_7 = iter_1_1[2]
+
+				if not manager.story:IsStoryPlayed(var_1_7) then
 					return false
 				end
 			elseif iter_1_1[1] == "drawNewHero" then
@@ -72,79 +82,85 @@
 					return false
 				end
 			elseif iter_1_1[1] == "anyEquipLevel" then
-				local var_1_7 = iter_1_1[2]
-				local var_1_8 = false
+				local var_1_8 = iter_1_1[2]
+				local var_1_9 = false
 
 				for iter_1_4, iter_1_5 in pairs(EquipData:GetEquipList()) do
-					if var_1_7 <= iter_1_5:GetLevel() then
-						var_1_8 = true
+					if var_1_8 <= iter_1_5:GetLevel() then
+						var_1_9 = true
 
 						break
 					end
 				end
 
-				if var_1_8 == false then
+				if var_1_9 == false then
 					return false
 				end
 			elseif iter_1_1[1] == "equip" then
-				local var_1_9 = gameContext:GetOpenPageHandler("equipCultureView")
+				local var_1_10, var_1_11 = gameContext:GetLastOpenPageHandler()
 
-				if var_1_9 == nil then
+				if gameContext:GetCmdEnqueueCount() ~= 0 or var_1_11 ~= "equipCultureView" then
 					return false
 				end
 
-				local var_1_10 = EquipData:GetEquipData(var_1_9:GetEquipId())
+				local var_1_12 = gameContext:GetOpenPageHandler("equipCultureView")
 
-				if not var_1_10 then
+				if var_1_12 == nil then
+					return false
+				end
+
+				local var_1_13 = EquipData:GetEquipData(var_1_12:GetEquipId())
+
+				if not var_1_13 then
 					return false
 				end
 
 				if iter_1_1[2] == "equipLevel" then
-					if iter_1_1[3] > var_1_10:GetLevel() then
+					if iter_1_1[3] > var_1_13:GetLevel() then
 						return false
 					end
 				elseif iter_1_1[2] == "cultureEquipStar" then
-					if iter_1_1[3] > var_1_10.star then
+					if iter_1_1[3] > var_1_13.star then
 						return false
 					end
 				elseif iter_1_1[2] == "cultureEquipReset" then
-					if var_1_10.star < 5 or var_1_10.race ~= 0 and table.keyof(RaceEffectCfg.all, var_1_10.race) == nil then
+					if var_1_13.star < 5 or var_1_13.race ~= 0 and table.keyof(RaceEffectCfg.all, var_1_13.race) == nil then
 						return false
 					end
 				elseif iter_1_1[2] == "page" then
-					local var_1_11 = iter_1_1[3]
+					local var_1_14 = iter_1_1[3]
 
-					if var_1_9:GetCulturePage() ~= var_1_11 then
+					if var_1_12:GetCulturePage() ~= var_1_14 then
 						return false
 					end
 				end
 			elseif iter_1_1[1] == "heroFavorability" then
-				local var_1_12 = iter_1_1[2][1]
+				local var_1_15 = iter_1_1[2][1]
 
-				if var_1_12 == 0 then
-					local var_1_13 = iter_1_1[2][2]
-					local var_1_14 = HeroData:GetHeroList()
-					local var_1_15 = false
+				if var_1_15 == 0 then
+					local var_1_16 = iter_1_1[2][2]
+					local var_1_17 = HeroData:GetHeroList()
+					local var_1_18 = false
 
-					for iter_1_6, iter_1_7 in pairs(var_1_14) do
+					for iter_1_6, iter_1_7 in pairs(var_1_17) do
 						if HeroTools.GetHeroIsUnlock(iter_1_6) then
-							local var_1_16 = HeroRecordCfg.get_id_list_by_hero_id[iter_1_6][1]
+							local var_1_19 = HeroRecordCfg.get_id_list_by_hero_id[iter_1_6][1]
 
-							if var_1_13 <= ArchiveData:GetArchive(var_1_16).lv then
-								var_1_15 = true
+							if var_1_16 <= ArchiveData:GetArchive(var_1_19).lv then
+								var_1_18 = true
 
 								break
 							end
 						end
 					end
 
-					if not var_1_15 then
+					if not var_1_18 then
 						return false
 					end
-				elseif var_1_12 and ArchiveData:GetArchive(var_1_12) then
-					local var_1_17 = ArchiveData:GetArchive(var_1_12).lv
+				elseif var_1_15 and ArchiveData:GetArchive(var_1_15) then
+					local var_1_20 = ArchiveData:GetArchive(var_1_15).lv
 
-					if var_1_17 and var_1_17 < iter_1_1[2][2] then
+					if var_1_20 and var_1_20 < iter_1_1[2][2] then
 						return false
 					end
 				else
@@ -155,9 +171,41 @@
 					return false
 				end
 			elseif iter_1_1[1] == "spHero" then
-				local var_1_18 = gameContext:GetOpenPageHandler("newHero")
+				local var_1_21 = gameContext:GetOpenPageHandler("newHero")
 
-				if var_1_18 == nil or var_1_18.curPageIndex_ ~= 6 or not HeroTools.IsSpHero(var_1_18.curHeroId_) then
+				if var_1_21 == nil or var_1_21.curPageIndex_ ~= 6 or not HeroTools.IsSpHero(var_1_21.curHeroId_) then
+					return false
+				end
+			elseif iter_1_1[1] == "chess" then
+				local var_1_22 = manager.ChessBoardManager
+
+				if var_1_22 then
+					local var_1_23 = iter_1_1[2]
+
+					if var_1_23 == "chanceId" and var_1_22:GetCurChanceInfo().chanceID ~= iter_1_1[3] then
+						return false
+					elseif var_1_23 == "canUseProp" and var_1_22:GetIsCanUseProp() ~= iter_1_1[3] then
+						return false
+					elseif var_1_23 == "hasProp" and #var_1_22:GetHeroProp() <= 0 then
+						return false
+					end
+				else
+					return false
+				end
+			elseif iter_1_1[1] == "idolCompetition" then
+				local var_1_24 = gameContext:GetOpenPageHandler("idolCompetitionMain")
+
+				if var_1_24 == nil then
+					return false
+				end
+
+				if not var_1_24.myTakePartIn_ and var_1_24.curRacePhase_ > 1 then
+					return false
+				end
+			elseif iter_1_1[1] == "selfSticker" then
+				local var_1_25 = gameContext:GetOpenPageHandler("customStickerMain")
+
+				if var_1_25 == nil or var_1_25.params_.foreign then
 					return false
 				end
 			else
@@ -215,33 +263,40 @@ function var_0_0.GetGameContextParams()
 end
 
 function var_0_0.GetListComponets(arg_7_0, arg_7_1, arg_7_2)
-	print("hjd" .. "GetListComponets")
-
 	local var_7_0 = gameContext:GetOpenPageHandler(arg_7_0)
 
 	if not var_7_0 then
 		return {}
 	end
 
-	local var_7_1 = var_7_0[arg_7_1]
+	local var_7_1 = string.split(arg_7_1, "/")
+	local var_7_2
 
-	if not var_7_1 then
+	for iter_7_0, iter_7_1 in ipairs(var_7_1) do
+		if iter_7_0 == 1 then
+			var_7_2 = var_7_0[iter_7_1]
+		else
+			var_7_2 = var_7_2[iter_7_1]
+		end
+	end
+
+	if not var_7_2 then
 		return {}
 	end
 
-	local var_7_2 = var_7_1:GetItemList()
+	local var_7_3 = var_7_2:GetItemList()
 
-	if not var_7_2 or not var_7_2[arg_7_2] then
+	if not var_7_3 or not var_7_3[arg_7_2] then
 		return {}
 	end
 
-	local var_7_3 = var_7_2[arg_7_2]
+	local var_7_4 = var_7_3[arg_7_2]
 
 	var_0_1 = {}
-	var_0_2 = var_7_3
+	var_0_2 = var_7_4
 	var_0_3 = "LuaList_Item"
 
-	var_0_0.GetGuideComponent(var_7_3, "", 0)
+	var_0_0.GetGuideComponent(var_7_4, "", 0)
 
 	return var_0_1
 end

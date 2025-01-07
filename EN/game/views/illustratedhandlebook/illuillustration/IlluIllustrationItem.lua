@@ -15,6 +15,8 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
+	arg_3_0.itemiconImg_.cacheLimit = 3
+	arg_3_0.roleiconImg_.cacheLimit = 3
 	arg_3_0.controller_ = ControllerUtil.GetController(arg_3_0.gameObject_.transform, "conName")
 	arg_3_0.giftCon_ = ControllerUtil.GetController(arg_3_0.gameObject_.transform, "gift")
 	arg_3_0.haveCon_ = ControllerUtil.GetController(arg_3_0.gameObject_.transform, "have")
@@ -29,11 +31,11 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1, arg_4_2)
 	if arg_4_0.type_ == 1 then
 		arg_4_0.controller_:SetSelectedState("item")
 
-		arg_4_0.itemiconImg_.sprite = getSpriteWithoutAtlas(SpritePathCfg.CollectPictureSmall.path .. CollectPictureCfg[arg_4_1.id].picture)
+		arg_4_0.itemiconImg_.spriteSync = SpritePathCfg.CollectPictureSmall.path .. CollectPictureCfg[arg_4_1.id].picture
 	else
 		arg_4_0.controller_:SetSelectedState("role")
 
-		arg_4_0.roleiconImg_.sprite = getSpriteWithoutAtlas(SpritePathCfg.CollectPictureSmall.path .. CollectPictureCfg[arg_4_1.id].picture)
+		arg_4_0.roleiconImg_.spriteSync = SpritePathCfg.CollectPictureSmall.path .. CollectPictureCfg[arg_4_1.id].picture
 	end
 
 	arg_4_0.have_ = IllustratedData:GetIllustrationInfo()[arg_4_0.id_]

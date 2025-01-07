@@ -1,6 +1,6 @@
 ﻿return {
 	{
-		name = "普通",
+		name = "9de49855ab6843eb4d2426a6a0535902",
 		total_check = 20,
 		fail_max = 3,
 		id = 1,
@@ -89,7 +89,7 @@
 		}
 	},
 	{
-		name = "困难",
+		name = "38354fd119c302e7756c15203342b276",
 		total_check = 25,
 		fail_max = 2,
 		id = 2,
@@ -200,7 +200,7 @@
 		}
 	},
 	{
-		name = "极难",
+		name = "34a05eaf5ea53d1d3e722fb5139e0d13",
 		total_check = 30,
 		fail_max = 1,
 		id = 3,

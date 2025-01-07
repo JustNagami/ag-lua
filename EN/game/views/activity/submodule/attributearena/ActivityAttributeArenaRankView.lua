@@ -17,6 +17,9 @@ function var_0_0.Init(arg_3_0)
 	arg_3_0.curRankType_ = var_0_1.ALL
 
 	arg_3_0:InitUI()
+
+	arg_3_0.commonPortrait_ = CommonHeadPortrait.New(arg_3_0.headItem_)
+
 	arg_3_0:AddUIListeners()
 end
 
@@ -106,8 +109,9 @@ end
 function var_0_0.RefreshSelfRank(arg_14_0)
 	local var_14_0 = PlayerData:GetPlayerInfo()
 
-	arg_14_0.icon_.sprite = ItemTools.getItemSprite(var_14_0 and var_14_0.portrait)
-	arg_14_0.frame_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_14_0.icon_frame)
+	arg_14_0.commonPortrait_:RenderHead(var_14_0 and var_14_0.portrait)
+	arg_14_0.commonPortrait_:RenderFrame(var_14_0.icon_frame)
+
 	arg_14_0.name_.text = var_14_0.nick
 
 	if arg_14_0.curRankType_ == var_0_1.ALL then
@@ -174,6 +178,7 @@ end
 
 function var_0_0.Dispose(arg_19_0)
 	arg_19_0:RemoveAllListeners()
+	arg_19_0.commonPortrait_:Dispose()
 	arg_19_0.scrollHelper_:Dispose()
 	arg_19_0.switchList:Dispose()
 	var_0_0.super.Dispose(arg_19_0)

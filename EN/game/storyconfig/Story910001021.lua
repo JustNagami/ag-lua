@@ -1435,7 +1435,7 @@
 		arg_47_1.frameCnt_ = 0
 		arg_47_1.state_ = "playing"
 		arg_47_1.curTalkId_ = 910002012
-		arg_47_1.duration_ = 0.199999999999
+		arg_47_1.duration_ = 0.2
 
 		SetActive(arg_47_1.tipsGo_, false)
 
@@ -1662,31 +1662,83 @@
 				arg_55_1.var_.characterEffect1084ui_story.fillFlat = false
 			end
 
-			local var_58_4 = 0
+			local var_58_4 = "1084ui_story"
 
-			if var_58_4 < arg_55_1.time_ and arg_55_1.time_ <= var_58_4 + arg_58_0 then
+			if arg_55_1.actors_[var_58_4] == nil then
+				local var_58_5 = Object.Instantiate(Asset.Load("Char/" .. var_58_4), arg_55_1.stage_.transform)
+
+				var_58_5.name = var_58_4
+				var_58_5.transform.localPosition = Vector3.New(0, 100, 0)
+				arg_55_1.actors_[var_58_4] = var_58_5
+
+				local var_58_6 = var_58_5:GetComponentInChildren(typeof(CharacterEffect))
+
+				var_58_6.enabled = true
+
+				local var_58_7 = GameObjectTools.GetOrAddComponent(var_58_5, typeof(DynamicBoneHelper))
+
+				if var_58_7 then
+					var_58_7:EnableDynamicBone(false)
+				end
+
+				arg_55_1:ShowWeapon(var_58_6.transform, false)
+
+				arg_55_1.var_[var_58_4 .. "Animator"] = var_58_6.gameObject:GetComponent(typeof(UnityEngine.Animator))
+				arg_55_1.var_[var_58_4 .. "Animator"].applyRootMotion = true
+				arg_55_1.var_[var_58_4 .. "LipSync"] = var_58_6.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
+			end
+
+			local var_58_8 = 0
+
+			if var_58_8 < arg_55_1.time_ and arg_55_1.time_ <= var_58_8 + arg_58_0 then
 				arg_55_1:PlayTimeline("1084ui_story", "StoryTimeline/CharAction/1084/1084actionlink/1084action478")
 			end
 
-			local var_58_5 = 0
+			local var_58_9 = "1084ui_story"
 
-			if var_58_5 < arg_55_1.time_ and arg_55_1.time_ <= var_58_5 + arg_58_0 then
+			if arg_55_1.actors_[var_58_9] == nil then
+				local var_58_10 = Object.Instantiate(Asset.Load("Char/" .. var_58_9), arg_55_1.stage_.transform)
+
+				var_58_10.name = var_58_9
+				var_58_10.transform.localPosition = Vector3.New(0, 100, 0)
+				arg_55_1.actors_[var_58_9] = var_58_10
+
+				local var_58_11 = var_58_10:GetComponentInChildren(typeof(CharacterEffect))
+
+				var_58_11.enabled = true
+
+				local var_58_12 = GameObjectTools.GetOrAddComponent(var_58_10, typeof(DynamicBoneHelper))
+
+				if var_58_12 then
+					var_58_12:EnableDynamicBone(false)
+				end
+
+				arg_55_1:ShowWeapon(var_58_11.transform, false)
+
+				arg_55_1.var_[var_58_9 .. "Animator"] = var_58_11.gameObject:GetComponent(typeof(UnityEngine.Animator))
+				arg_55_1.var_[var_58_9 .. "Animator"].applyRootMotion = true
+				arg_55_1.var_[var_58_9 .. "LipSync"] = var_58_11.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
+			end
+
+			local var_58_13 = 0
+
+			if var_58_13 < arg_55_1.time_ and arg_55_1.time_ <= var_58_13 + arg_58_0 then
 				arg_55_1:PlayTimeline("1084ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface1103cva")
 			end
 
-			local var_58_6 = 0
-			local var_58_7 = 0.125
+			local var_58_14 = 0
+			local var_58_15 = 0.125
 
-			if var_58_6 < arg_55_1.time_ and arg_55_1.time_ <= var_58_6 + arg_58_0 then
+			if var_58_14 < arg_55_1.time_ and arg_55_1.time_ <= var_58_14 + arg_58_0 then
 				arg_55_1.talkMaxDuration = 0
 				arg_55_1.dialogCg_.alpha = 1
 
 				arg_55_1.dialog_:SetActive(true)
 				SetActive(arg_55_1.leftNameGo_, true)
 
-				local var_58_8 = arg_55_1:FormatText(StoryNameCfg[6].name)
+				local var_58_16 = arg_55_1:FormatText(StoryNameCfg[6].name)
 
-				arg_55_1.leftNameTxt_.text = var_58_8
+				arg_55_1.leftNameTxt_.text = var_58_16
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_55_1.leftNameTxt_.transform)
 
@@ -1697,26 +1749,26 @@
 				SetActive(arg_55_1.iconTrs_.gameObject, false)
 				arg_55_1.callingController_:SetSelectedState("normal")
 
-				local var_58_9 = arg_55_1:GetWordFromCfg(910002014)
-				local var_58_10 = arg_55_1:FormatText(var_58_9.content)
+				local var_58_17 = arg_55_1:GetWordFromCfg(910002014)
+				local var_58_18 = arg_55_1:FormatText(var_58_17.content)
 
-				arg_55_1.text_.text = var_58_10
+				arg_55_1.text_.text = var_58_18
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_55_1.text_)
 
-				local var_58_11 = 19
-				local var_58_12 = utf8.len(var_58_10)
-				local var_58_13 = var_58_11 <= 0 and var_58_7 or var_58_7 * (var_58_12 / var_58_11)
+				local var_58_19 = 19
+				local var_58_20 = utf8.len(var_58_18)
+				local var_58_21 = var_58_19 <= 0 and var_58_15 or var_58_15 * (var_58_20 / var_58_19)
 
-				if var_58_13 > 0 and var_58_7 < var_58_13 then
-					arg_55_1.talkMaxDuration = var_58_13
+				if var_58_21 > 0 and var_58_15 < var_58_21 then
+					arg_55_1.talkMaxDuration = var_58_21
 
-					if var_58_13 + var_58_6 > arg_55_1.duration_ then
-						arg_55_1.duration_ = var_58_13 + var_58_6
+					if var_58_21 + var_58_14 > arg_55_1.duration_ then
+						arg_55_1.duration_ = var_58_21 + var_58_14
 					end
 				end
 
-				arg_55_1.text_.text = var_58_10
+				arg_55_1.text_.text = var_58_18
 				arg_55_1.typewritter.percent = 0
 
 				arg_55_1.typewritter:SetDirty()
@@ -1724,15 +1776,15 @@
 				arg_55_1:RecordContent(arg_55_1.text_.text)
 			end
 
-			local var_58_14 = math.max(var_58_7, arg_55_1.talkMaxDuration)
+			local var_58_22 = math.max(var_58_15, arg_55_1.talkMaxDuration)
 
-			if var_58_6 <= arg_55_1.time_ and arg_55_1.time_ < var_58_6 + var_58_14 then
-				arg_55_1.typewritter.percent = (arg_55_1.time_ - var_58_6) / var_58_14
+			if var_58_14 <= arg_55_1.time_ and arg_55_1.time_ < var_58_14 + var_58_22 then
+				arg_55_1.typewritter.percent = (arg_55_1.time_ - var_58_14) / var_58_22
 
 				arg_55_1.typewritter:SetDirty()
 			end
 
-			if arg_55_1.time_ >= var_58_6 + var_58_14 and arg_55_1.time_ < var_58_6 + var_58_14 + arg_58_0 then
+			if arg_55_1.time_ >= var_58_14 + var_58_22 and arg_55_1.time_ < var_58_14 + var_58_22 + arg_58_0 then
 				arg_55_1.typewritter.percent = 1
 
 				arg_55_1.typewritter:SetDirty()
@@ -1782,31 +1834,83 @@
 				arg_59_1.var_.characterEffect1084ui_story.fillFlat = false
 			end
 
-			local var_62_4 = 0
+			local var_62_4 = "1084ui_story"
 
-			if var_62_4 < arg_59_1.time_ and arg_59_1.time_ <= var_62_4 + arg_62_0 then
+			if arg_59_1.actors_[var_62_4] == nil then
+				local var_62_5 = Object.Instantiate(Asset.Load("Char/" .. var_62_4), arg_59_1.stage_.transform)
+
+				var_62_5.name = var_62_4
+				var_62_5.transform.localPosition = Vector3.New(0, 100, 0)
+				arg_59_1.actors_[var_62_4] = var_62_5
+
+				local var_62_6 = var_62_5:GetComponentInChildren(typeof(CharacterEffect))
+
+				var_62_6.enabled = true
+
+				local var_62_7 = GameObjectTools.GetOrAddComponent(var_62_5, typeof(DynamicBoneHelper))
+
+				if var_62_7 then
+					var_62_7:EnableDynamicBone(false)
+				end
+
+				arg_59_1:ShowWeapon(var_62_6.transform, false)
+
+				arg_59_1.var_[var_62_4 .. "Animator"] = var_62_6.gameObject:GetComponent(typeof(UnityEngine.Animator))
+				arg_59_1.var_[var_62_4 .. "Animator"].applyRootMotion = true
+				arg_59_1.var_[var_62_4 .. "LipSync"] = var_62_6.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
+			end
+
+			local var_62_8 = 0
+
+			if var_62_8 < arg_59_1.time_ and arg_59_1.time_ <= var_62_8 + arg_62_0 then
 				arg_59_1:PlayTimeline("1084ui_story", "StoryTimeline/CharAction/1084/1084actionlink/1084action476")
 			end
 
-			local var_62_5 = 0
+			local var_62_9 = "1084ui_story"
 
-			if var_62_5 < arg_59_1.time_ and arg_59_1.time_ <= var_62_5 + arg_62_0 then
+			if arg_59_1.actors_[var_62_9] == nil then
+				local var_62_10 = Object.Instantiate(Asset.Load("Char/" .. var_62_9), arg_59_1.stage_.transform)
+
+				var_62_10.name = var_62_9
+				var_62_10.transform.localPosition = Vector3.New(0, 100, 0)
+				arg_59_1.actors_[var_62_9] = var_62_10
+
+				local var_62_11 = var_62_10:GetComponentInChildren(typeof(CharacterEffect))
+
+				var_62_11.enabled = true
+
+				local var_62_12 = GameObjectTools.GetOrAddComponent(var_62_10, typeof(DynamicBoneHelper))
+
+				if var_62_12 then
+					var_62_12:EnableDynamicBone(false)
+				end
+
+				arg_59_1:ShowWeapon(var_62_11.transform, false)
+
+				arg_59_1.var_[var_62_9 .. "Animator"] = var_62_11.gameObject:GetComponent(typeof(UnityEngine.Animator))
+				arg_59_1.var_[var_62_9 .. "Animator"].applyRootMotion = true
+				arg_59_1.var_[var_62_9 .. "LipSync"] = var_62_11.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
+			end
+
+			local var_62_13 = 0
+
+			if var_62_13 < arg_59_1.time_ and arg_59_1.time_ <= var_62_13 + arg_62_0 then
 				arg_59_1:PlayTimeline("1084ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface3201cva")
 			end
 
-			local var_62_6 = 0
-			local var_62_7 = 0.4
+			local var_62_14 = 0
+			local var_62_15 = 0.4
 
-			if var_62_6 < arg_59_1.time_ and arg_59_1.time_ <= var_62_6 + arg_62_0 then
+			if var_62_14 < arg_59_1.time_ and arg_59_1.time_ <= var_62_14 + arg_62_0 then
 				arg_59_1.talkMaxDuration = 0
 				arg_59_1.dialogCg_.alpha = 1
 
 				arg_59_1.dialog_:SetActive(true)
 				SetActive(arg_59_1.leftNameGo_, true)
 
-				local var_62_8 = arg_59_1:FormatText(StoryNameCfg[6].name)
+				local var_62_16 = arg_59_1:FormatText(StoryNameCfg[6].name)
 
-				arg_59_1.leftNameTxt_.text = var_62_8
+				arg_59_1.leftNameTxt_.text = var_62_16
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_59_1.leftNameTxt_.transform)
 
@@ -1817,26 +1921,26 @@
 				SetActive(arg_59_1.iconTrs_.gameObject, false)
 				arg_59_1.callingController_:SetSelectedState("normal")
 
-				local var_62_9 = arg_59_1:GetWordFromCfg(910002015)
-				local var_62_10 = arg_59_1:FormatText(var_62_9.content)
+				local var_62_17 = arg_59_1:GetWordFromCfg(910002015)
+				local var_62_18 = arg_59_1:FormatText(var_62_17.content)
 
-				arg_59_1.text_.text = var_62_10
+				arg_59_1.text_.text = var_62_18
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_59_1.text_)
 
-				local var_62_11 = 28
-				local var_62_12 = utf8.len(var_62_10)
-				local var_62_13 = var_62_11 <= 0 and var_62_7 or var_62_7 * (var_62_12 / var_62_11)
+				local var_62_19 = 28
+				local var_62_20 = utf8.len(var_62_18)
+				local var_62_21 = var_62_19 <= 0 and var_62_15 or var_62_15 * (var_62_20 / var_62_19)
 
-				if var_62_13 > 0 and var_62_7 < var_62_13 then
-					arg_59_1.talkMaxDuration = var_62_13
+				if var_62_21 > 0 and var_62_15 < var_62_21 then
+					arg_59_1.talkMaxDuration = var_62_21
 
-					if var_62_13 + var_62_6 > arg_59_1.duration_ then
-						arg_59_1.duration_ = var_62_13 + var_62_6
+					if var_62_21 + var_62_14 > arg_59_1.duration_ then
+						arg_59_1.duration_ = var_62_21 + var_62_14
 					end
 				end
 
-				arg_59_1.text_.text = var_62_10
+				arg_59_1.text_.text = var_62_18
 				arg_59_1.typewritter.percent = 0
 
 				arg_59_1.typewritter:SetDirty()
@@ -1844,15 +1948,15 @@
 				arg_59_1:RecordContent(arg_59_1.text_.text)
 			end
 
-			local var_62_14 = math.max(var_62_7, arg_59_1.talkMaxDuration)
+			local var_62_22 = math.max(var_62_15, arg_59_1.talkMaxDuration)
 
-			if var_62_6 <= arg_59_1.time_ and arg_59_1.time_ < var_62_6 + var_62_14 then
-				arg_59_1.typewritter.percent = (arg_59_1.time_ - var_62_6) / var_62_14
+			if var_62_14 <= arg_59_1.time_ and arg_59_1.time_ < var_62_14 + var_62_22 then
+				arg_59_1.typewritter.percent = (arg_59_1.time_ - var_62_14) / var_62_22
 
 				arg_59_1.typewritter:SetDirty()
 			end
 
-			if arg_59_1.time_ >= var_62_6 + var_62_14 and arg_59_1.time_ < var_62_6 + var_62_14 + arg_62_0 then
+			if arg_59_1.time_ >= var_62_14 + var_62_22 and arg_59_1.time_ < var_62_14 + var_62_22 + arg_62_0 then
 				arg_59_1.typewritter.percent = 1
 
 				arg_59_1.typewritter:SetDirty()

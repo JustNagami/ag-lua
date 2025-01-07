@@ -124,8 +124,6 @@ function DormHeroTemplate.SetFatigue(arg_13_0, arg_13_1)
 	end
 
 	arg_13_0.fatigue = arg_13_1
-
-	arg_13_0:UpdataHeroState()
 end
 
 function DormHeroTemplate.CalFatigue(arg_14_0, arg_14_1)
@@ -134,8 +132,6 @@ function DormHeroTemplate.CalFatigue(arg_14_0, arg_14_1)
 	if arg_14_0.fatigue < 0 then
 		arg_14_0.fatigue = 0
 	end
-
-	arg_14_0:UpdataHeroState()
 end
 
 function DormHeroTemplate.UpdataHeroState(arg_15_0)
@@ -378,11 +374,10 @@ function DormHeroTemplate.FeedFood(arg_27_0, arg_27_1, arg_27_2)
 			Dorm.DormEntityManager.SendInteractToEntityCMD(arg_27_1, arg_27_1, arg_27_2, false)
 
 			local var_27_1 = DormInteractSequence[arg_27_2].name
-			local var_27_2 = arg_27_0:GetHeroCurSkinID(arg_27_0.hero_id)
-			local var_27_3 = DormCharacterInteractBehaviour.GetSequence(var_27_2, nil, var_27_1)
+			local var_27_2 = DormCharacterInteractBehaviour.GetSequence(arg_27_1, nil, var_27_1)
 
-			if var_27_3 then
-				var_27_0 = var_27_3.duration
+			if var_27_2 then
+				var_27_0 = var_27_2.duration
 			end
 		end
 
@@ -441,15 +436,14 @@ function DormHeroTemplate.TouchHero(arg_30_0, arg_30_1, arg_30_2)
 	end
 
 	local var_30_0 = DormInteractSequence[arg_30_2].name
-	local var_30_1 = arg_30_0:GetHeroCurSkinID(arg_30_0.hero_id)
-	local var_30_2 = DormCharacterInteractBehaviour.GetSequence(var_30_1, nil, var_30_0)
-	local var_30_3
+	local var_30_1 = DormCharacterInteractBehaviour.GetSequence(arg_30_1, nil, var_30_0)
+	local var_30_2
 
-	if var_30_2 then
-		var_30_3 = var_30_2.duration
+	if var_30_1 then
+		var_30_2 = var_30_1.duration
 	end
 
-	return var_30_3
+	return var_30_2
 end
 
 function DormHeroTemplate.BackToDorm(arg_31_0)
@@ -582,7 +576,7 @@ function DormHeroTemplate.InitDanceTrainData(arg_38_0, arg_38_1)
 		arg_38_0.property = {}
 	end
 
-	arg_38_0.property[arg_38_1.hero_id] = IdolTraineeData:ParseIdolProperty(arg_38_1.attribute_list, arg_38_1.hero_id)
+	arg_38_0.property[arg_38_1.hero_id] = IdolTraineeData.ParseIdolProperty(arg_38_1.attribute_list, arg_38_1.hero_id)
 end
 
 function DormHeroTemplate.UpdataDanceTrainData(arg_39_0, arg_39_1, arg_39_2)

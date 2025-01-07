@@ -1,7 +1,7 @@
 ﻿return {
 	{
 		distortion_effect = 0,
-		name = "极简",
+		name = "8e898ba21b8335295ff74c801b661ae0",
 		resolution = 2,
 		monster_effect = 2,
 		frame = 0,
@@ -16,7 +16,7 @@
 	},
 	{
 		distortion_effect = 0,
-		name = "流畅",
+		name = "112d49f65c22509704f8e4d8d96a96d7",
 		resolution = 2,
 		monster_effect = 2,
 		frame = 0,
@@ -31,7 +31,7 @@
 	},
 	{
 		distortion_effect = 0,
-		name = "清晰",
+		name = "be6ae4272eb075437cd448ac75e72550",
 		resolution = 2,
 		monster_effect = 2,
 		frame = 0,
@@ -46,7 +46,7 @@
 	},
 	{
 		distortion_effect = 1,
-		name = "高清",
+		name = "c9ec0d8df5d1d51b6b040123b5d5a3a6",
 		resolution = 2,
 		monster_effect = 2,
 		frame = 0,
@@ -61,7 +61,7 @@
 	},
 	{
 		distortion_effect = 1,
-		name = "超清",
+		name = "4e8473bfe668809733ff0b5fb07de15e",
 		resolution = 3,
 		monster_effect = 3,
 		frame = 1,
@@ -76,7 +76,7 @@
 	},
 	{
 		distortion_effect = 0,
-		name = "省电",
+		name = "2ab27e7c603cb025f9b9dfce399dc27e",
 		resolution = 1,
 		monster_effect = 1,
 		frame = 0,

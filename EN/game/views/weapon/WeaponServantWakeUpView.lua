@@ -15,6 +15,9 @@ end
 
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
+
+	arg_4_0.characterImg_.immediate = true
+	arg_4_0.iconImg_.immediate = true
 end
 
 function var_0_0.AddUIListener(arg_5_0)
@@ -49,7 +52,7 @@ function var_0_0.OnEnter(arg_9_0)
 
 	local var_9_0 = ServantTools.GetServantSpecHero(arg_9_0.servantID_)
 
-	arg_9_0.characterImg_.sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. var_9_0)
+	arg_9_0.characterImg_.spriteSync = SpritePathCfg.HeroLittleIcon.path .. var_9_0
 	arg_9_0.heronameText_.text = GetI18NText(HeroCfg[var_9_0].name)
 	arg_9_0.servantnameText_.text = string.format(GetTips("SERVANT_WAKE_UP"), ItemTools.getItemName(arg_9_0.servantID_))
 
@@ -58,7 +61,7 @@ function var_0_0.OnEnter(arg_9_0)
 end
 
 function var_0_0.UpdateImg(arg_11_0)
-	arg_11_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/Portrait/" .. arg_11_0.servantID_)
+	arg_11_0.iconImg_.spriteSync = "TextureConfig/WeaponServant/Portrait/" .. arg_11_0.servantID_
 end
 
 function var_0_0.UpdateTips(arg_12_0)

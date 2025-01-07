@@ -103,6 +103,7 @@ function var_0_0.OnEnter(arg_11_0)
 	arg_11_0.curRecordID_ = HeroTools.GetHeroOntologyID(arg_11_0.curHeroID_)
 	arg_11_0.heroInfo_ = arg_11_0.heroViewProxy_:GetHeroData(arg_11_0.curHeroID_)
 	arg_11_0.isEnter = arg_11_0.params_.isEnter
+	arg_11_0.isDraw = arg_11_0.params_.isDraw or false
 	arg_11_0.enteredPage_ = {}
 
 	for iter_11_0, iter_11_1 in pairs(arg_11_0.subPages_) do
@@ -164,7 +165,7 @@ end
 function var_0_0.SwitchPage(arg_17_0, arg_17_1, arg_17_2)
 	if arg_17_1 == arg_17_0.curPageIndex_ and not arg_17_2 then
 		if arg_17_0.subPages_[arg_17_0.curPageIndex_].UpdateView then
-			arg_17_0.subPages_[arg_17_0.curPageIndex_]:UpdateView(arg_17_0.curRecordID_, arg_17_0.curHeroID_)
+			arg_17_0.subPages_[arg_17_0.curPageIndex_]:UpdateView(arg_17_0.curRecordID_, arg_17_0.curHeroID_, arg_17_0.isDraw)
 		end
 
 		arg_17_0.subPages_[arg_17_0.curPageIndex_]:CameraEnter()
@@ -203,7 +204,7 @@ function var_0_0.SwitchPage(arg_17_0, arg_17_1, arg_17_2)
 		arg_17_0.subPages_[arg_17_1]:HideMaskMessage()
 	end
 
-	arg_17_0.subPages_[arg_17_1]:Show(arg_17_0.curRecordID_, arg_17_0.curHeroID_)
+	arg_17_0.subPages_[arg_17_1]:Show(arg_17_0.curRecordID_, arg_17_0.curHeroID_, arg_17_0.isDraw)
 	arg_17_0.subPages_[arg_17_1]:CameraEnter()
 
 	arg_17_0.curPageIndex_ = arg_17_1

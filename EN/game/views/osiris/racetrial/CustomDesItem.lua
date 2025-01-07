@@ -24,22 +24,32 @@ function var_0_0.OnEnter(arg_5_0)
 	return
 end
 
-function var_0_0.RefreshUI(arg_6_0, arg_6_1)
-	local var_6_0 = ActivityAffixPoolCfg[arg_6_1].affix
-	local var_6_1 = {
-		"Ⅰ",
-		"Ⅱ",
-		"Ⅲ",
-		"Ⅳ",
-		"Ⅴ",
-		"Ⅵ",
-		"Ⅶ",
-		"Ⅷ",
-		"Ⅸ"
-	}
+local var_0_1 = {
+	"Ⅰ",
+	"Ⅱ",
+	"Ⅲ",
+	"Ⅳ",
+	"Ⅴ",
+	"Ⅵ",
+	"Ⅶ",
+	"Ⅷ",
+	"Ⅸ"
+}
 
-	arg_6_0.text_.text = string.format("<size=28>%s</size>", GetI18NText(AffixTypeCfg[var_6_0[1]].name) .. var_6_1[var_6_0[2]]) .. "\n" .. string.format("<size=22>%s</size>", getAffixDesc(var_6_0))
-	arg_6_0.icon_.sprite = getAffixSprite(var_6_0)
+function var_0_0.RefreshUI(arg_6_0, arg_6_1, arg_6_2)
+	local var_6_0
+	local var_6_1
+
+	if arg_6_2 then
+		var_6_0 = string.format("<size=28>%s%s(%s)</size>", GetI18NText(AffixTypeCfg[arg_6_1[1]].name), var_0_1[arg_6_1[2]], GetTips("IS_LOCK"))
+	else
+		var_6_0 = string.format("<size=28>%s%s</size>", GetI18NText(AffixTypeCfg[arg_6_1[1]].name), var_0_1[arg_6_1[2]])
+	end
+
+	local var_6_2 = string.format("<size=22>%s</size>", getAffixDesc(arg_6_1))
+
+	arg_6_0.text_.text = var_6_0 .. "\n" .. var_6_2
+	arg_6_0.icon_.sprite = getAffixSprite(arg_6_1)
 end
 
 function var_0_0.OnExit(arg_7_0)

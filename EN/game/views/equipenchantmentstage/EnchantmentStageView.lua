@@ -19,6 +19,7 @@ local var_0_3 = GameSetting.fm_item_refresh_limit_count.value[1]
 local var_0_4 = GameSetting.fm_item_refresh_cost.value
 local var_0_5 = GameSetting.fm_stage_unlock.value[1]
 local var_0_6 = GameSetting.fm_get_refresh_count.value[1]
+local var_0_7 = 203
 
 function var_0_0.UIName(arg_2_0)
 	return "Widget/System/EnchantmentStage/EnchantmentStageUI"
@@ -57,8 +58,9 @@ function var_0_0.InitUI(arg_5_0)
 			end
 
 			arg_5_0:Go("enchantmentSectionInfo", {
-				sectionType = BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_DAILY,
-				section = arg_5_0.curStageIDList_[iter_5_0]
+				sectionType = BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_ENCHANTMENT,
+				section = arg_5_0.curStageIDList_[iter_5_0],
+				chapterID = var_0_7
 			})
 			SetActive(arg_5_0.closeSectionBtn_.gameObject, true)
 			arg_5_0.selectStageController_:SetSelectedState(iter_5_0)
@@ -234,123 +236,171 @@ function var_0_0.OnEnter(arg_20_0)
 
 	arg_20_0.diffSelectController_:SetSelectedState(arg_20_0.selectedDifficulty_)
 	arg_20_0:RefreshUI()
+	arg_20_0:RefreshMultiReward()
+
+	local var_20_1, var_20_2 = ActivityMultiRewardData:GetMultiRatioByChapterOrToggle(nil, 203)
+
+	if var_20_1 > 0 and arg_20_0.multiTimer_ == nil then
+		arg_20_0.multiTimer_ = Timer.New(function()
+			arg_20_0.multiRefreshText_.text = string.format(GetTips("REFRESH_LOST_TIME"), manager.time:GetLostTimeStr(arg_20_0.multiTimeRefresh_))
+		end, 1, -1)
+
+		arg_20_0.multiTimer_:Start()
+	end
 end
 
-function var_0_0.RefreshUI(arg_21_0)
-	arg_21_0:RefreshTimePanel()
-	arg_21_0:RefreshContent()
+function var_0_0.RefreshUI(arg_22_0)
+	arg_22_0:RefreshTimePanel()
+	arg_22_0:RefreshContent()
 end
 
-function var_0_0.during(arg_22_0)
+function var_0_0.during(arg_23_0)
 	return _G.gameTimer:GetNextDayFreshTime() - manager.time:GetServerTime()
 end
 
-function var_0_0.RefreshTimePanel(arg_23_0)
-	if arg_23_0.timer_ then
-		arg_23_0.timer_:Stop()
+function var_0_0.RefreshTimePanel(arg_24_0)
+	if arg_24_0.timer_ then
+		arg_24_0.timer_:Stop()
 
-		arg_23_0.timer_ = nil
+		arg_24_0.timer_ = nil
 	end
 
-	local var_23_0
+	local var_24_0
 
-	arg_23_0.timer_ = Timer.New(function()
-		var_23_0 = arg_23_0:during()
-		arg_23_0.timeText_.text = TimeMgr:DescCDTime(var_23_0)
+	arg_24_0.timer_ = Timer.New(function()
+		var_24_0 = arg_24_0:during()
+		arg_24_0.timeText_.text = TimeMgr:DescCDTime(var_24_0)
 
-		if var_23_0 <= 0 then
-			arg_23_0.timer_:Stop()
+		if var_24_0 <= 0 then
+			arg_24_0.timer_:Stop()
 
-			arg_23_0.timer_ = nil
+			arg_24_0.timer_ = nil
 		end
 	end, 1, -1)
 
-	arg_23_0.timer_:Start()
+	arg_24_0.timer_:Start()
 
-	local var_23_1 = BattleEnchantmentData:GetData()
+	local var_24_1 = BattleEnchantmentData:GetData()
 
-	if var_23_1.freeRefreshTimes > 0 then
-		arg_23_0.refreshController_:SetSelectedState("free")
+	if var_24_1.freeRefreshTimes > 0 then
+		arg_24_0.refreshController_:SetSelectedState("free")
 
-		local var_23_2 = string.format("%d/%d", var_23_1.freeRefreshTimes, var_0_2)
+		local var_24_2 = string.format("%d/%d", var_24_1.freeRefreshTimes, var_0_2)
 
-		arg_23_0.freeText_.text = var_23_2
-	elseif var_23_1.allRefreshedTimes < var_0_3 then
-		arg_23_0.refreshController_:SetSelectedState("buy")
+		arg_24_0.freeText_.text = var_24_2
+	elseif var_24_1.allRefreshedTimes < var_0_3 then
+		arg_24_0.refreshController_:SetSelectedState("buy")
 
-		arg_23_0.butImg_.sprite = ItemTools.getItemSprite(var_0_4[var_23_1.allRefreshedTimes + 1][1])
-		arg_23_0.buyText_.text = string.format("(%d/%d)", var_0_3 - var_23_1.allRefreshedTimes, var_0_3)
-		arg_23_0.butCostText_.text = var_0_4[var_23_1.allRefreshedTimes + 1][2]
+		arg_24_0.butImg_.sprite = ItemTools.getItemSprite(var_0_4[var_24_1.allRefreshedTimes + 1][1])
+		arg_24_0.buyText_.text = string.format("(%d/%d)", var_0_3 - var_24_1.allRefreshedTimes, var_0_3)
+		arg_24_0.butCostText_.text = var_0_4[var_24_1.allRefreshedTimes + 1][2]
 	else
-		arg_23_0.refreshController_:SetSelectedState("none")
+		arg_24_0.refreshController_:SetSelectedState("none")
 
-		arg_23_0.noneText_.text = string.format("/%d", var_0_3)
+		arg_24_0.noneText_.text = string.format("/%d", var_0_3)
 	end
 end
 
-function var_0_0.RefreshContent(arg_25_0)
-	arg_25_0.itempanelAni1_:Play("BossSwitchUI1", 0, 0)
-	arg_25_0.itempanelAni2_:Play("BossSwitchUI1", 0, 0)
-	arg_25_0.itempanelAni3_:Play("BossSwitchUI1", 0, 0)
-	SetActive(arg_25_0.diffPanelGo_, false)
+function var_0_0.RefreshContent(arg_26_0)
+	arg_26_0.itempanelAni1_:Play("BossSwitchUI1", 0, 0)
+	arg_26_0.itempanelAni2_:Play("BossSwitchUI1", 0, 0)
+	arg_26_0.itempanelAni3_:Play("BossSwitchUI1", 0, 0)
+	SetActive(arg_26_0.diffPanelGo_, false)
 
-	arg_25_0.selectingDifficult = false
+	arg_26_0.selectingDifficult = false
 
-	local var_25_0 = BattleEnchantmentData:GetData()
+	local var_26_0 = BattleEnchantmentData:GetData()
 
-	for iter_25_0 = 1, 3 do
-		local var_25_1 = var_25_0.enchantmentBattleList[iter_25_0]
-		local var_25_2 = StageGroupCfg[var_25_1].stage_list[arg_25_0.selectedDifficulty_]
-		local var_25_3 = StageGroupCfg[var_25_1].level
+	for iter_26_0 = 1, 3 do
+		local var_26_1 = var_26_0.enchantmentBattleList[iter_26_0]
+		local var_26_2 = StageGroupCfg[var_26_1].stage_list[arg_26_0.selectedDifficulty_]
+		local var_26_3 = StageGroupCfg[var_26_1].level
 
-		arg_25_0.curStageIDList_[iter_25_0] = var_25_2
+		arg_26_0.curStageIDList_[iter_26_0] = var_26_2
 
-		arg_25_0.stageLuaItem_[iter_25_0]:SetData(var_25_2, var_25_3)
+		arg_26_0.stageLuaItem_[iter_26_0]:SetData(var_26_2, var_26_3)
 	end
 end
 
-function var_0_0.OnExit(arg_26_0)
-	if arg_26_0.timer_ then
-		arg_26_0.timer_:Stop()
+function var_0_0.RefreshMultiReward(arg_27_0)
+	local var_27_0, var_27_1 = ActivityMultiRewardData:GetMultiRatioByChapterOrToggle(nil, 203)
 
-		arg_26_0.timer_ = nil
+	if var_27_0 > 0 then
+		local var_27_2, var_27_3 = ActivityMultiRewardData:GetCountByActivityID(var_27_1)
+
+		arg_27_0.multiCountText_.text = var_27_2 .. "/" .. var_27_3
+		arg_27_0.multiRatioText_.text = var_27_0 / 100
+
+		local var_27_4 = ActivityData:GetActivityData(var_27_1)
+
+		arg_27_0.multiEndText_.text = manager.time:STimeDescS(var_27_4.stopTime, "!%Y/%m/%d %H:%M")
+		arg_27_0.multiTimeRefresh_ = ActivityMultiRewardData:GetTimeByActivityID(var_27_1)
+		arg_27_0.multiRefreshText_.text = string.format(GetTips("REFRESH_LOST_TIME"), manager.time:GetLostTimeStr(arg_27_0.multiTimeRefresh_))
+
+		SetActive(arg_27_0.multiGo_, true)
+	else
+		SetActive(arg_27_0.multiGo_, false)
+	end
+end
+
+function var_0_0.OnExit(arg_28_0)
+	if arg_28_0.timer_ then
+		arg_28_0.timer_:Stop()
+
+		arg_28_0.timer_ = nil
 	end
 
-	if arg_26_0.countdownTimer_ then
-		arg_26_0.countdownTimer_:Stop()
+	if arg_28_0.multiTimer_ then
+		arg_28_0.multiTimer_:Stop()
 
-		arg_26_0.countdownTimer_ = nil
+		arg_28_0.multiTimer_ = nil
+	end
+
+	if arg_28_0.countdownTimer_ then
+		arg_28_0.countdownTimer_:Stop()
+
+		arg_28_0.countdownTimer_ = nil
 	end
 
 	manager.windowBar:HideBar()
 end
 
-function var_0_0.Dispose(arg_27_0)
-	if arg_27_0.timer_ then
-		arg_27_0.timer_:Stop()
+function var_0_0.Dispose(arg_29_0)
+	if arg_29_0.timer_ then
+		arg_29_0.timer_:Stop()
 
-		arg_27_0.timer_ = nil
+		arg_29_0.timer_ = nil
 	end
 
-	if arg_27_0.countdownTimer_ then
-		arg_27_0.countdownTimer_:Stop()
+	if arg_29_0.multiTimer_ then
+		arg_29_0.multiTimer_:Stop()
 
-		arg_27_0.countdownTimer_ = nil
+		arg_29_0.multiTimer_ = nil
 	end
 
-	for iter_27_0 = 1, 3 do
-		arg_27_0.stageLuaItem_[iter_27_0]:Dispose()
+	if arg_29_0.countdownTimer_ then
+		arg_29_0.countdownTimer_:Stop()
+
+		arg_29_0.countdownTimer_ = nil
 	end
 
-	var_0_0.super.Dispose(arg_27_0)
+	for iter_29_0 = 1, 3 do
+		arg_29_0.stageLuaItem_[iter_29_0]:Dispose()
+	end
+
+	var_0_0.super.Dispose(arg_29_0)
 end
 
-function var_0_0.OnEnchantmentRefresh(arg_28_0)
-	arg_28_0:RefreshUI()
+function var_0_0.OnEnchantmentRefresh(arg_30_0)
+	arg_30_0:RefreshUI()
 end
 
-function var_0_0.OnEnchantmentInit(arg_29_0)
-	arg_29_0:RefreshUI()
+function var_0_0.OnEnchantmentInit(arg_31_0)
+	arg_31_0:RefreshUI()
+end
+
+function var_0_0.OnMultipleRewardCountChange(arg_32_0)
+	arg_32_0:RefreshMultiReward()
 end
 
 return var_0_0

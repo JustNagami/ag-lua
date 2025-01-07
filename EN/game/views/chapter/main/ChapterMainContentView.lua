@@ -62,4 +62,8 @@ function var_0_0.SetActive(arg_5_0, arg_5_1)
 	SetActive(arg_5_0.plotExPanel_, arg_5_1)
 end
 
+function var_0_0.RefreshUI(arg_6_0)
+	arg_6_0.lnkView_:RefresLock()
+end
+
 return var_0_0

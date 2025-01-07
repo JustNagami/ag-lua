@@ -2868,19 +2868,7 @@
 		initAISAC = "",
 		detail = "34ee3c9c4c241730bd44ddb2f90b2f1f"
 	},
-	{
-		cueName = "bgm_activity_3_0_story_return_song",
-		authorName = "12f590707f10796bf001992a4aac0999",
-		ableBGM = 1,
-		album = 17,
-		cuesheet = "bgm_activity_3_0_story_return_song",
-		musicName = "eba8ebec93e84fdc8a195ee6e7a8286f",
-		id = 233,
-		awbName = "bgm_activity_3_0_story_return_song",
-		initAISAC = "",
-		detail = "ba2c5bb3b8a993d2b5e9b4df99e72109"
-	},
-	{
+	[234] = {
 		cueName = "bgm_activity_3_2_ui",
 		authorName = "2a974e7833ed2fae4aba212201eb87f8",
 		ableBGM = 1,
@@ -2892,7 +2880,7 @@
 		initAISAC = "",
 		detail = "f4b68e2f0095d67ccc3296b8c8ba88b8"
 	},
-	{
+	[235] = {
 		cueName = "bgm_activity_3_2_battle_corridor_dream",
 		authorName = "7e0f58b1e59967576fb07ea371b2510b",
 		ableBGM = 1,
@@ -2904,7 +2892,7 @@
 		initAISAC = "",
 		detail = "0b19dfa9077cff6071889ed23b089cfa"
 	},
-	{
+	[236] = {
 		cueName = "bgm_activity_3_2_story_corridor_dream",
 		authorName = "ad2523fcf723614cefda76fb4ca961d4",
 		ableBGM = 1,
@@ -2916,7 +2904,7 @@
 		initAISAC = "",
 		detail = "b3a1df71e61c0086e8a33de2eba6e6c1"
 	},
-	{
+	[237] = {
 		cueName = "bgm_activity_3_2_story_corridor_slow",
 		authorName = "cb3f26f0ba29fa1fdc918fe1c6aeff76",
 		ableBGM = 1,
@@ -2928,7 +2916,7 @@
 		initAISAC = "",
 		detail = "59d6bfd5949e5ac463670b63f867c852"
 	},
-	{
+	[238] = {
 		cueName = "bgm_activity_3_2_story_house_nightmare",
 		authorName = "e1b541c974743290c5739f6e13632f57",
 		ableBGM = 1,
@@ -2940,7 +2928,7 @@
 		initAISAC = "",
 		detail = "cb012d7f0ccb12a65de7215d7c9579c1"
 	},
-	{
+	[239] = {
 		cueName = "bgm_minigame_2",
 		authorName = "16534d4f2146e3494c8b75b726127d03",
 		ableBGM = 1,
@@ -2991,8 +2979,7 @@
 			229,
 			230,
 			231,
-			232,
-			233
+			232
 		},
 		[16] = {
 			187,
@@ -3462,7 +3449,6 @@
 		230,
 		231,
 		232,
-		233,
 		234,
 		235,
 		236,

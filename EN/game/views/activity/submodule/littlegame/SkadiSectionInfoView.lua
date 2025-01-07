@@ -66,6 +66,9 @@ end
 
 function var_0_0.InitUI(arg_7_0)
 	arg_7_0:BindCfgUI()
+
+	arg_7_0.sectionImage_.immediate = true
+
 	SetActive(arg_7_0.multiplePanel_, false)
 	SetActive(arg_7_0.tipsPanel_, false)
 	SetActive(arg_7_0.targetPanel_, false)
@@ -152,7 +155,7 @@ function var_0_0.RefreshStageInfo(arg_14_0)
 
 	if arg_14_0.oldCfgID_ ~= var_14_0.id then
 		arg_14_0.sectionName_.text = GetI18NText(var_14_0.name)
-		arg_14_0.sectionImage_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_14_0.background_1))
+		arg_14_0.sectionImage_.spriteSync = string.format("%s%s", SpritePathCfg.Stage.path, var_14_0.background_1)
 		arg_14_0.textStory_.text = GetI18NText(var_14_0.tips)
 		arg_14_0.oldCfgID_ = var_14_0.id
 	end

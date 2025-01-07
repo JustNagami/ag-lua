@@ -53,4 +53,87 @@ function var_0_0.PackUserData(arg_3_0)
 	return string.format("{\"dataType\" : \"%s\",\"money\" : \"%d\",\"createTime\" : \"%d\",\"roleId\" : \"%s\",\"roleName\" : \"%s\",\"level\" : \"%s\",\"serverId\" : \"%s\",\"chapter\" : \"%s\"}", arg_3_0, var_3_1, var_3_2, tostring(var_3_3), tostring(var_3_4), tostring(var_3_5), tostring(var_3_6), tostring(var_3_7))
 end
 
+function var_0_0.GetPlayerFrame(arg_4_0)
+	if arg_4_0 then
+		return getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_4_0)
+	end
+end
+
+function var_0_0.MakeRandomModeData(arg_5_0, arg_5_1)
+	return (arg_5_0 and 1 or 0) + arg_5_1 * 10
+end
+
+function var_0_0.RandomModeDataIsEnable(arg_6_0)
+	return math.fmod(arg_6_0, 10) == 1
+end
+
+function var_0_0.RandomModeDataGetMode(arg_7_0)
+	return math.floor(arg_7_0 / 10)
+end
+
+function var_0_0.UpdateRandomDataAfterLogin()
+	local var_8_0 = false
+	local var_8_1 = HomeSceneSettingData:GetRandomMode()
+
+	if var_8_1 == HomeSceneSettingConst.RANDOM_MODE.EACH_LOGIN then
+		var_0_0.UpdateRandomData(var_8_1)
+	elseif var_8_1 == HomeSceneSettingConst.RANDOM_MODE.EACH_DAY then
+		local var_8_2 = getData("RandomData", "LastLoginTime_SCENE") or 0
+		local var_8_3 = manager.time:GetServerTime()
+		local var_8_4 = getData("RandomData", "LastId_SCENE") or 0
+
+		if var_8_4 == 0 or var_8_2 == 0 or not manager.time:CheckIsToday(var_8_2, var_8_3) then
+			saveData("RandomData", "LastLoginTime_SCENE", var_8_3)
+			var_0_0.UpdateRandomData(var_8_1)
+
+			var_8_0 = true
+		else
+			HomeSceneSettingData:SetRandomScene(var_8_4)
+		end
+	end
+
+	local var_8_5 = PlayerData:GetRandomHeroMode()
+
+	if var_8_5 == HomeSceneSettingConst.RANDOM_MODE.EACH_LOGIN then
+		var_0_0.UpdateRandomData(var_8_5)
+	elseif var_8_5 == HomeSceneSettingConst.RANDOM_MODE.EACH_DAY then
+		local var_8_6 = getData("RandomData", "LastLoginTime_HERO") or 0
+		local var_8_7 = manager.time:GetServerTime()
+		local var_8_8 = getData("RandomData", "LastId_HERO") or 0
+
+		if var_8_8 == 0 or var_8_6 == 0 or not manager.time:CheckIsToday(var_8_6, var_8_7) then
+			saveData("RandomData", "LastLoginTime_HERO", var_8_7)
+			var_0_0.UpdateRandomData(var_8_5)
+			saveData("RandomData", "LastId_HERO", PlayerData:GetRandomHero())
+		else
+			PlayerData:SetRandomHero(var_8_8)
+		end
+	end
+
+	if var_8_0 then
+		saveData("RandomData", "LastId_SCENE", HomeSceneSettingData:GetRandomScene())
+	end
+
+	HomeSceneSettingData:SetIsTimeScene(true)
+end
+
+function var_0_0.UpdateRandomData(arg_9_0)
+	if manager and manager.posterGirl and manager.posterGirl:GetTag() ~= PosterGirlConst.PosterGirlTag.null then
+		return
+	end
+
+	if arg_9_0 == HomeSceneSettingConst.RANDOM_MODE.EACH_ENTER then
+		HomeSceneSettingData:SetIsUseDlcScene(PlayerData:IsRandomHeroUseDlcScene())
+		HomeSceneSettingData:SetIsSwitchTime(false)
+	end
+
+	if arg_9_0 == HomeSceneSettingData:GetRandomMode() then
+		HomeSceneSettingData:CalcNextScene()
+	end
+
+	if arg_9_0 == PlayerData:GetRandomHeroMode() then
+		PlayerData:CalcNextRandomHero()
+	end
+end
+
 return var_0_0

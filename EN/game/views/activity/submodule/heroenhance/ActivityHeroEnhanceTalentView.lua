@@ -65,18 +65,27 @@ function var_0_0.RefreshUI(arg_10_0)
 	local var_10_0 = ActivityHeroEnhanceCfg[arg_10_0.cfgId_]
 	local var_10_1 = var_10_0.activity_id
 	local var_10_2 = var_10_0.hero_id
+	local var_10_3 = {
+		1139,
+		1049,
+		1042
+	}
 
-	arg_10_0.heroImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_10_2)
+	if ActivityTools.GetActivityTheme(var_10_1) == ActivityConst.THEME.ACTIVITY_3_5 and table.indexof(var_10_3, var_10_2) then
+		arg_10_0.heroImage_.sprite = getSpriteWithoutAtlas("TextureBg/Version/SummerUI_3_5/SummerUI_3_5_HeroEnhanceUI/SummerUI3_5_" .. var_10_2)
+	else
+		arg_10_0.heroImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_10_2)
+	end
 
 	arg_10_0.heroImage_:SetNativeSize()
 
-	local var_10_3 = ActivityHeroEnhanceTools.GetCfgTalentDict(var_10_0)
+	local var_10_4 = ActivityHeroEnhanceTools.GetCfgTalentDict(var_10_0)
 
 	for iter_10_0, iter_10_1 in ipairs(arg_10_0.talentGroups_) do
-		local var_10_4 = iter_10_0
-		local var_10_5 = var_10_3[var_10_4]
+		local var_10_5 = iter_10_0
+		local var_10_6 = var_10_4[var_10_5]
 
-		iter_10_1:SetData(arg_10_0.cfgId_, var_10_4, var_10_5)
+		iter_10_1:SetData(arg_10_0.cfgId_, var_10_5, var_10_6)
 		iter_10_1:SetSelected(arg_10_0.selectGroupIdx_ == iter_10_0)
 		iter_10_1:RefreshUI()
 	end

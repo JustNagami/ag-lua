@@ -20,7 +20,7 @@ function var_0_1.GetMatrixHeroTeam(arg_4_0)
 end
 
 function var_0_1.GetHeroData(arg_5_0, arg_5_1)
-	return StrategyMatrixData:GetHeroData(arg_5_0.matrix_activity_id, arg_5_1)
+	return StrategyMatrixData:GetHeroDataNew(arg_5_1)
 end
 
 function var_0_1.GetHeroSkin(arg_6_0, arg_6_1)

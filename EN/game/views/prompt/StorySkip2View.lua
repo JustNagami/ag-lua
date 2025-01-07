@@ -18,6 +18,8 @@ end
 
 function var_0_0.AddUIListeners(arg_4_0)
 	arg_4_0:AddBtnListener(arg_4_0.okBtn_, nil, function()
+		manager.ui:SetUISeparateRender(false)
+
 		if arg_4_0.handler_ then
 			arg_4_0.handler_()
 
@@ -34,6 +36,7 @@ end
 
 function var_0_0.CancelFun(arg_8_0)
 	SetActive(arg_8_0.gameObject_, false)
+	manager.ui:SetUISeparateRender(false)
 
 	if arg_8_0.handler_ then
 		arg_8_0.handler_(true)

@@ -8,7 +8,7 @@ function OnGameSdkCallback(arg_1_0)
 	local var_1_0 = var_0_0.decode(arg_1_0) or {}
 	local var_1_1 = var_1_0.callbackType
 
-	print("OnGameSdkCallback messageType", var_1_1, var_1_0.code)
+	print("OnGameSdkCallback messageType", var_1_1, var_1_0.code, table.toString(var_1_0))
 
 	local var_1_2 = var_0_1[var_1_1]
 
@@ -156,6 +156,36 @@ function OnGameSdkCallback(arg_1_0)
 		manager.notify:Invoke(GET_PLATFORM_DATA_CALLBACK, var_1_0)
 	elseif var_1_1 == "SocailDiscordCancelAuth" then
 		manager.notify:Invoke(SOCAIL_DISCORD_CANCEL, var_1_0)
+	elseif var_1_1 == "getServerTimeResult" then
+		local var_1_11 = var_1_0.timeStamp
+
+		manager.notify:Invoke(SDK_GET_SERVERTIME, var_1_11)
+	elseif var_1_1 == "downloadImage" then
+		if var_1_0.code == 1 then
+			local var_1_12 = var_1_0.downloadPath
+
+			manager.notify:Invoke(SDK_DOWNLOAD_IMG, {
+				code = 1,
+				path = var_1_12
+			})
+		else
+			manager.notify:Invoke(SDK_DOWNLOAD_IMG, {
+				code = 0
+			})
+		end
+	elseif var_1_1 == "uploadImage" then
+		if var_1_0.code == 1 then
+			local var_1_13 = var_1_0.uploadUrl
+
+			manager.notify:Invoke(SDK_UPLOAD_IMG, {
+				code = 1,
+				url = var_1_13
+			})
+		else
+			manager.notify:Invoke(SDK_UPLOAD_IMG, {
+				code = 0
+			})
+		end
 	end
 
 	if var_1_2 then
@@ -166,9 +196,9 @@ function OnGameSdkCallback(arg_1_0)
 		end
 
 		if var_0_3 and var_0_3[var_1_1] and #var_0_3[var_1_1] > 0 then
-			local var_1_11 = table.remove(var_0_3[var_1_1], 1)
+			local var_1_14 = table.remove(var_0_3[var_1_1], 1)
 
-			SendMessageToSDKWithCallBack(var_1_11.sendString, var_1_11.waitTag, var_1_11.callBack)
+			SendMessageToSDKWithCallBack(var_1_14.sendString, var_1_14.waitTag, var_1_14.callBack)
 		end
 	end
 end
@@ -186,85 +216,89 @@ function GetSDKLoginInfo()
 	return var_0_4
 end
 
+function GetSDKLoginToken()
+	return var_0_4.token
+end
+
 local var_0_5 = false
 
-function EvokeGateWayLogin(arg_5_0)
-	print("EvokeGateWayLogin selectRegionServerId : " .. (arg_5_0 or "null"))
+function EvokeGateWayLogin(arg_6_0)
+	print("EvokeGateWayLogin selectRegionServerId : " .. (arg_6_0 or "null"))
 
 	if var_0_4 and var_0_4.token then
 		if not var_0_5 then
 			var_0_5 = true
 
-			RegionServerMgr.instance:UpdateRegionServerInfo(_G.TMP_ACCOUNT_ID or "", function(arg_6_0, arg_6_1)
+			RegionServerMgr.instance:UpdateRegionServerInfo(_G.TMP_ACCOUNT_ID or "", function(arg_7_0, arg_7_1)
 				var_0_5 = false
 
 				if _G.isLogining then
 					return
 				end
 
-				local var_6_0 = true
-				local var_6_1 = GetTips("SERVER_MAINTENANCE")
-				local var_6_2 = RegionServerMgr.instance:GetRegionServerInfo(arg_5_0)
+				local var_7_0 = true
+				local var_7_1 = GetTips("SERVER_MAINTENANCE")
+				local var_7_2 = RegionServerMgr.instance:GetRegionServerInfo(arg_6_0)
 
-				if arg_6_0 and not isNil(var_6_2) then
-					GATEWAY_ADDR = var_6_2.ip
-					GATEWAY_PORT = var_6_2.port
+				if arg_7_0 and not isNil(var_7_2) then
+					GATEWAY_ADDR = var_7_2.ip
+					GATEWAY_PORT = var_7_2.port
 
 					print("EvokeGateWayLogin Info " .. GATEWAY_ADDR .. GATEWAY_PORT)
 
-					var_6_0 = var_6_2.maintain
+					var_7_0 = var_7_2.maintain
 
-					local var_6_3 = var_6_2.maintainReason
+					local var_7_3 = var_7_2.maintainReason
 
-					if not string.isNullOrEmpty(var_6_3) then
-						print(string.format("平台下发维护信息 ：%s", var_6_3))
+					if not string.isNullOrEmpty(var_7_3) then
+						print(string.format("平台下发维护信息 ：%s", var_7_3))
 
-						local var_6_4, var_6_5 = pcall(var_0_0.decode, var_6_3)
+						local var_7_4, var_7_5 = pcall(var_0_0.decode, var_7_3)
 
-						if var_6_4 then
-							local var_6_6 = SettingData:GetCurrentLanguage()
+						if var_7_4 then
+							local var_7_6 = SettingData:GetCurrentLanguage()
 
-							if var_6_6 == "tc" and var_6_5.tw then
-								var_6_1 = var_6_5.tw
-							elseif var_6_6 == "zh_cn" and var_6_5.cn then
-								var_6_1 = var_6_5.cn
-							elseif var_6_5[var_6_6] then
-								var_6_1 = var_6_5[var_6_6]
+							if var_7_6 == "tc" and var_7_5.tw then
+								var_7_1 = var_7_5.tw
+							elseif var_7_6 == "zh_cn" and var_7_5.cn then
+								var_7_1 = var_7_5.cn
+							elseif var_7_5[var_7_6] then
+								var_7_1 = var_7_5[var_7_6]
 							end
 						else
-							var_6_1 = var_6_3
+							var_7_1 = var_7_3
 						end
 					end
 
-					local var_6_7 = gameContext:GetOpenPageHandler("login")
+					local var_7_7 = gameContext:GetOpenPageHandler("login")
 
-					if var_6_7 then
-						var_6_7:SetSDKId()
+					if var_7_7 then
+						var_7_7:SetSDKId()
 					end
 				else
 					print("EvokeGateWayLogin UpdateRegionServerInfo fail")
 
-					var_6_0 = true
+					var_7_0 = true
 				end
 
-				if arg_6_0 then
+				if arg_7_0 then
 					manager.notify:CallUpdateFunc(LOGIN_SEVER_UPDATE)
 				end
 
-				if var_6_0 then
+				if var_7_0 then
 					print("EvokeGateWayLogin Maintain")
 					ShowMessageBox({
 						ButtonType = "SingleBtn",
 						isTop = true,
-						content = var_6_1,
+						content = var_7_1,
 						OkCallback = function()
 							return
 						end
 					})
 				else
 					print("唤起网关登录")
-					PlayerPrefs.SetString("RegionServerId", arg_5_0)
-					RegionServerMgr.instance:UpdateClintConfigs(arg_5_0)
+					PlayerPrefs.SetString("RegionServerId", arg_6_0)
+					RegionServerMgr.instance:UpdateClintConfigs(arg_6_0)
 					GateWayLogin(var_0_4)
 				end
 			end)
@@ -276,14 +310,14 @@ function EvokeGateWayLogin(arg_5_0)
 	end
 end
 
-function GateWayLogin(arg_8_0)
+function GateWayLogin(arg_9_0)
 	SendMessageToSDKWithCallBack("{\"messageType\" : \"GetChannelLoginInfo\"}", "ChannelLoginInfoGet", function()
 		print("sdk登录信息返回")
 
 		if _G.ChannelLoginInfo.code == 0 then
 			CheckVersion(function()
-				print(string.format("请求网关登录: id = %s, token = %s, channelId = %s, appId = %s", arg_8_0.id, arg_8_0.token, arg_8_0.channelId, arg_8_0.appId))
-				LoginAction.GateWayLogin(arg_8_0.id, arg_8_0.token, arg_8_0.channelId, arg_8_0.appId)
+				print(string.format("请求网关登录: id = %s, token = %s, channelId = %s, appId = %s", arg_9_0.id, arg_9_0.token, arg_9_0.channelId, arg_9_0.appId))
+				LoginAction.GateWayLogin(arg_9_0.id, arg_9_0.token, arg_9_0.channelId, arg_9_0.appId)
 			end)
 		end
 	end)
@@ -315,13 +349,13 @@ function ShowQuitConfirm()
 	})
 end
 
-function AntiAddiction(arg_15_0)
-	local var_15_0 = arg_15_0.sdkTip ~= nil and arg_15_0.sdkTip or GetTips("ANTIADDICTION_ONLINE_TIME_LIMIT")
+function AntiAddiction(arg_16_0)
+	local var_16_0 = arg_16_0.sdkTip ~= nil and arg_16_0.sdkTip or GetTips("ANTIADDICTION_ONLINE_TIME_LIMIT")
 
 	ShowMessageBox({
 		isTop = true,
 		ButtonType = "SingleBtn",
-		content = var_15_0,
+		content = var_16_0,
 		OkCallback = function()
 			ReconnectLogic.ReconnectError()
 		end,
@@ -331,95 +365,117 @@ function AntiAddiction(arg_15_0)
 	})
 end
 
-function DeviceInfoGet(arg_18_0)
-	_G.deviceInfo = arg_18_0
+function DeviceInfoGet(arg_19_0)
+	_G.deviceInfo = arg_19_0
 
-	for iter_18_0, iter_18_1 in pairs(arg_18_0) do
-		print(string.format("deviceInfo.%s = %s", iter_18_0, iter_18_1))
+	for iter_19_0, iter_19_1 in pairs(arg_19_0) do
+		print(string.format("deviceInfo.%s = %s", iter_19_0, iter_19_1))
 	end
 end
 
 function MarketCommentsNoSupport()
-	local var_19_0 = {
+	local var_20_0 = {
 		gameAppId = _G.ChannelLoginInfo.channelAppId,
 		token = _G.ChannelLoginInfo.channelToken
 	}
 
-	OperationAction.OpenOperationUrl("OFFICIAL_DISCUSS_URL", var_19_0)
+	OperationAction.OpenOperationUrl("OFFICIAL_DISCUSS_URL", var_20_0)
 end
 
-function ChannelLoginInfoGet(arg_20_0)
-	_G.ChannelLoginInfo = arg_20_0
+function ChannelLoginInfoGet(arg_21_0)
+	_G.ChannelLoginInfo = arg_21_0
 end
 
 function NeedGameUserInfo()
-	local var_21_0 = PlayerData:GetPlayerInfo()
-	local var_21_1 = _G.TMP_ACCOUNT_ID
-	local var_21_2 = var_21_0.nick
-	local var_21_3 = var_21_0.userID
+	local var_22_0 = PlayerData:GetPlayerInfo()
+	local var_22_1 = _G.TMP_ACCOUNT_ID
+	local var_22_2 = var_22_0.nick
+	local var_22_3 = var_22_0.userID
 
-	if var_21_0.userID == 1 then
+	if var_22_0.userID == 1 then
 		return
 	end
 
-	local var_21_4 = BattleChapterStageCfg[BattleInstance.GetCurrentBattleId()].name
-	local var_21_5 = manager.time:STimeDescS(var_21_0.register_timestamp, "!%Y/%m/%d %H:%M")
-	local var_21_6 = var_21_0.userLevel
-	local var_21_7 = TowerData:GetTowerMaxId()
-	local var_21_8 = BattleTowerStageCfg[var_21_7] and BattleTowerStageCfg[var_21_7].name or ""
-	local var_21_9 = tostring(_G.CHANNEL_MASTER_ID)
-	local var_21_10 = tostring(RechargeData:GetTotalRechargeNum())
-	local var_21_11 = "暂无区组"
-	local var_21_12 = tostring(_G.YONGSHI_ID)
-	local var_21_13 = tostring(TowerData:GetTowerMaxId())
-	local var_21_14 = _G.TMP_SERVER_ID
-	local var_21_15 = CurrencyData:GetRechargeDiamond()
+	local var_22_4 = BattleChapterStageCfg[BattleInstance.GetCurrentBattleId()].name
+	local var_22_5 = manager.time:STimeDescS(var_22_0.register_timestamp, "!%Y/%m/%d %H:%M")
+	local var_22_6 = var_22_0.userLevel
+	local var_22_7 = TowerData:GetTowerMaxId()
+	local var_22_8 = BattleTowerStageCfg[var_22_7] and BattleTowerStageCfg[var_22_7].name or ""
+	local var_22_9 = tostring(_G.CHANNEL_MASTER_ID)
+	local var_22_10 = tostring(RechargeData:GetTotalRechargeNum())
+	local var_22_11 = "暂无区组"
+	local var_22_12 = tostring(_G.YONGSHI_ID)
+	local var_22_13 = tostring(TowerData:GetTowerMaxId())
+	local var_22_14 = _G.TMP_SERVER_ID
+	local var_22_15 = CurrencyData:GetRechargeDiamond()
 
-	SendMessageToSDK(string.format("{\"messageType\" : \"SendGameUserInfo\", \"accountId\" : \"%s\",\"nickName\" : \"%s\" , \"uId\" : \"%d\", \"maxChapterLevel\" : \"%s\", \"createTime\" : \"%s\", \"userLv\" : \"%d\", \"maxChallengeLv\" : \"%s\", \"channel\" : \"%s\", \"rechargeNum\" : \"%s\", \"region\" : \"%s\", \"mixId\" : \"%s\", \"maxTower\" : \"%s\", \"serverId\" : \"%d\", \"currency\" : \"%d\" }", var_21_1, var_21_2, var_21_3, var_21_4, var_21_5, var_21_6, var_21_8, var_21_9, var_21_10, var_21_11, var_21_12, var_21_13, var_21_14, var_21_15))
+	SendMessageToSDK(string.format("{\"messageType\" : \"SendGameUserInfo\", \"accountId\" : \"%s\",\"nickName\" : \"%s\" , \"uId\" : \"%d\", \"maxChapterLevel\" : \"%s\", \"createTime\" : \"%s\", \"userLv\" : \"%d\", \"maxChallengeLv\" : \"%s\", \"channel\" : \"%s\", \"rechargeNum\" : \"%s\", \"region\" : \"%s\", \"mixId\" : \"%s\", \"maxTower\" : \"%s\", \"serverId\" : \"%d\", \"currency\" : \"%d\" }", var_22_1, var_22_2, var_22_3, var_22_4, var_22_5, var_22_6, var_22_8, var_22_9, var_22_10, var_22_11, var_22_12, var_22_13, var_22_14, var_22_15))
 	GameToSDK.UpUserInfo(PlayerTools.PackUserData("UpdateData"))
 end
 
-function ReceivePushNotification(arg_22_0)
-	ShowTips(arg_22_0)
+function ReceivePushNotification(arg_23_0)
+	ShowTips(arg_23_0)
 end
 
-function SendMessageToSDK(arg_23_0)
-	Debug.Log("GameToSDK.SendMessage : " .. arg_23_0)
-	GameToSDK.SendMessage(arg_23_0)
+function SendMessageToSDK(arg_24_0)
+	Debug.Log("GameToSDK.SendMessage : " .. arg_24_0)
+	GameToSDK.SendMessage(arg_24_0)
 end
 
-function SendMessageToSDKWithCallBack(arg_24_0, arg_24_1, arg_24_2)
-	if var_0_1[arg_24_1] then
-		if var_0_3[arg_24_1] == nil then
-			var_0_3[arg_24_1] = {}
+function SendMessageToSDKWithCallBack(arg_25_0, arg_25_1, arg_25_2)
+	if var_0_1[arg_25_1] then
+		if var_0_3[arg_25_1] == nil then
+			var_0_3[arg_25_1] = {}
 		end
 
-		table.insert(var_0_3[arg_24_1], {
-			sendString = arg_24_0,
-			waitTag = arg_24_1,
-			callBack = arg_24_2
+		table.insert(var_0_3[arg_25_1], {
+			sendString = arg_25_0,
+			waitTag = arg_25_1,
+			callBack = arg_25_2
 		})
 
 		return
 	end
 
-	print("SendMessageToSDKWithCallBack", arg_24_0, arg_24_1)
-	GameToSDK.SendMessage(arg_24_0)
+	print("SendMessageToSDKWithCallBack", arg_25_0, arg_25_1)
+	GameToSDK.SendMessage(arg_25_0)
 
 	if GameToSDK.CURRENT_SDK_ID == SDK_PLATFORM.DEV then
-		arg_24_2()
+		arg_25_2()
 
 		return
 	end
 
-	var_0_1[arg_24_1] = true
-	var_0_2[arg_24_1] = arg_24_2
+	var_0_1[arg_25_1] = true
+	var_0_2[arg_25_1] = arg_25_2
 end
 
-function ReceiveSavePhotoMessage(arg_25_0, arg_25_1)
-	if arg_25_0 then
+function ReceiveSavePhotoMessage(arg_26_0, arg_26_1)
+	if arg_26_0 then
 		ShowTips("SAVE_PHOTO_SUCCESS")
 	else
 		ShowTips("SAVE_PHOTO_FAIL")
 	end
+end
+
+function GetSDKServerTime()
+	GameToSDK.GetServerTime()
+end
+
+function SetSDKUploadImageLimit(arg_28_0, arg_28_1)
+	local var_28_0 = string.format("{\"messageType\":\"SetImageMaxCount\",\"maxCount\":\"%d\",\"savePath\":\"%s\"}", arg_28_0, arg_28_1)
+
+	GameToSDK.SetImageMaxCount(var_28_0)
+end
+
+function SDKUploadImage(arg_29_0, arg_29_1)
+	local var_29_0 = string.format("{\"messageType\":\"UploadImage\",\"imagePath\":\"%s\",\"moduleStr\":\"%s\"}", arg_29_1, arg_29_0)
+
+	GameToSDK.UploadImage(var_29_0)
+end
+
+function SDKDownloadImage(arg_30_0, arg_30_1)
+	local var_30_0 = string.format("{\"messageType\":\"DownloadImage\",\"path\":\"%s\",\"url\":\"%s\"}", arg_30_1, arg_30_0)
+
+	GameToSDK.DownloadImage(var_30_0)
 end

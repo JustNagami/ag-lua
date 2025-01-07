@@ -73,32 +73,36 @@ function var_0_0.OnGetReward(arg_5_0, arg_5_1, arg_5_2)
 end
 
 function var_0_0.SetPoint(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
-	if ActivityTools.GetMainActivityId(arg_6_1) == ActivityConst.INDIA_VALENTINE_GAME_V2 then
-		local var_6_0, var_6_1 = ValentineGameData:GetQID()
-		local var_6_2 = {
+	local var_6_0 = ActivityTools.GetMainActivityId(arg_6_1)
+
+	if var_6_0 and var_6_0 ~= 0 and ActivityCfg[var_6_0].activity_template == ActivityTemplateConst.INDIA_VALENTINE_GAME_V2 then
+		local var_6_1, var_6_2 = ValentineGameData:GetQID()
+		local var_6_3 = {
 			activity_id = arg_6_1,
 			point = arg_6_2,
-			qa_id = var_6_1,
-			choose_id = var_6_0
+			qa_id = var_6_2,
+			choose_id = var_6_1
 		}
 
-		manager.net:SendWithLoadingNew(64074, var_6_2, 64075, function(arg_7_0, arg_7_1)
+		manager.net:SendWithLoadingNew(64074, var_6_3, 64075, function(arg_7_0, arg_7_1)
 			var_0_0:OnSetPoint(arg_7_0, arg_7_1, arg_6_3)
 		end)
 	else
-		local var_6_3 = {
+		local var_6_4 = {
 			activity_id = arg_6_1,
 			point = arg_6_2
 		}
 
-		manager.net:SendWithLoadingNew(64074, var_6_3, 64075, function(arg_8_0, arg_8_1)
+		manager.net:SendWithLoadingNew(64074, var_6_4, 64075, function(arg_8_0, arg_8_1)
 			var_0_0:OnSetPoint(arg_8_0, arg_8_1)
 		end)
 	end
 end
 
 function var_0_0.OnSetPoint(arg_9_0, arg_9_1, arg_9_2, arg_9_3)
-	if ActivityTools.GetMainActivityId(arg_9_2.activity_id) == ActivityConst.INDIA_VALENTINE_GAME_V2 then
+	local var_9_0 = ActivityTools.GetMainActivityId(arg_9_2.activity_id)
+
+	if var_9_0 and var_9_0 ~= 0 and ActivityCfg[var_9_0].activity_template == ActivityTemplateConst.INDIA_VALENTINE_GAME_V2 then
 		if isSuccess(arg_9_1.result) then
 			ValentineGameData:SetClear(arg_9_2.activity_id, arg_9_2.choose_id, arg_9_2.qa_id)
 

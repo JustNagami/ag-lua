@@ -172,138 +172,202 @@ function var_0_0.AddEventListeners(arg_11_0)
 		arg_11_0:OnWeaponLvUp()
 		arg_11_0:ChangeWindowBar()
 	end)
+	arg_11_0:RegistEventListener(WEAPON_QUICK, function(arg_15_0, arg_15_1, arg_15_2, arg_15_3)
+		arg_11_0:OnWeaponQuick(arg_15_0, arg_15_1, arg_15_2, arg_15_3)
+		arg_11_0:ChangeWindowBar()
+	end)
 end
 
-function var_0_0.AddUIListener(arg_15_0)
-	for iter_15_0 = 1, 2 do
-		arg_15_0:AddToggleListener(arg_15_0[string.format("tabToggle%d_", iter_15_0)], function(arg_16_0)
-			if arg_15_0.data.curTabIdx == iter_15_0 then
+function var_0_0.AddUIListener(arg_16_0)
+	for iter_16_0 = 1, 2 do
+		arg_16_0:AddToggleListener(arg_16_0[string.format("tabToggle%d_", iter_16_0)], function(arg_17_0)
+			if arg_16_0.data.curTabIdx == iter_16_0 then
 				return
 			end
 
-			arg_15_0:OnTabSwitch(iter_15_0, arg_16_0)
+			arg_16_0:OnTabSwitch(iter_16_0, arg_17_0)
 		end)
 	end
 end
 
-function var_0_0.OnTabSwitch(arg_17_0, arg_17_1, arg_17_2)
-	if arg_17_2 then
-		arg_17_0:SwitchToTab(arg_17_1, true)
-		OperationRecorder.Record("hero", string.format("weaponPage2%d", arg_17_1))
+function var_0_0.OnTabSwitch(arg_18_0, arg_18_1, arg_18_2)
+	if arg_18_2 then
+		arg_18_0:SwitchToTab(arg_18_1, true)
+		OperationRecorder.Record("hero", string.format("weaponPage2%d", arg_18_1))
 	end
 end
 
-function var_0_0.SwitchToTab(arg_18_0, arg_18_1, arg_18_2)
-	arg_18_0.data.curTabIdx = arg_18_1
+function var_0_0.SwitchToTab(arg_19_0, arg_19_1, arg_19_2)
+	arg_19_0.data.curTabIdx = arg_19_1
 
-	local var_18_0 = arg_18_0.context.tabGroup
+	local var_19_0 = arg_19_0.context.tabGroup
 
-	for iter_18_0, iter_18_1 in pairs(var_18_0) do
-		if iter_18_0 == arg_18_1 then
-			arg_18_0:SwitchControllerState(var_18_0[iter_18_0].btnState, "true")
+	for iter_19_0, iter_19_1 in pairs(var_19_0) do
+		if iter_19_0 == arg_19_1 then
+			arg_19_0:SwitchControllerState(var_19_0[iter_19_0].btnState, "true")
 
-			if arg_18_2 then
-				var_18_0[iter_18_0].OnEnter(true)
+			if arg_19_2 then
+				var_19_0[iter_19_0].OnEnter(true)
 			end
 		else
-			arg_18_0:SwitchControllerState(var_18_0[iter_18_0].btnState, "false")
+			arg_19_0:SwitchControllerState(var_19_0[iter_19_0].btnState, "false")
 		end
 	end
 end
 
-function var_0_0.OnWeaponBreak(arg_19_0)
-	arg_19_0:ShowBreakTips()
-	arg_19_0:UpdateWeaponInfo()
-	arg_19_0:SwitchToTab(2, false)
-	arg_19_0:SwitchToView(arg_19_0.pageView.lvupView, true)
-	arg_19_0:BuildTabDesc()
-end
-
-function var_0_0.OnWeaponLvUp(arg_20_0)
+function var_0_0.OnWeaponBreak(arg_20_0)
+	arg_20_0:ShowBreakTips()
 	arg_20_0:UpdateWeaponInfo()
-
-	local var_20_0 = arg_20_0.data.weaponInfo
-	local var_20_1 = var_20_0.breakthrough
-	local var_20_2 = GameSetting.weapon_exp_limit.value[var_20_1 + 1]
-
-	if var_20_0.level == HeroConst.WEAPON_LV_MAX then
-		arg_20_0:SwitchToTab(1, true)
-	elseif var_20_0.level == var_20_2 then
-		arg_20_0:SwitchToTab(2, false)
-		arg_20_0:SwitchToView(arg_20_0.pageView.breakView, true)
-	end
-
+	arg_20_0:SwitchToTab(2, false)
+	arg_20_0:SwitchToView(arg_20_0.pageView.lvupView, true)
 	arg_20_0:BuildTabDesc()
 end
 
-function var_0_0.ShowBreakTips(arg_21_0)
-	local var_21_0 = arg_21_0.data.weaponInfo
-	local var_21_1 = arg_21_0.data.heroId
+function var_0_0.OnWeaponLvUp(arg_21_0)
+	arg_21_0:UpdateWeaponInfo()
 
-	JumpTools.OpenPageByJump("weaponBreak", {
-		heroID = var_21_1,
-		breakthrough = var_21_0.breakthrough
+	local var_21_0 = arg_21_0.data.weaponInfo
+	local var_21_1 = var_21_0.breakthrough
+	local var_21_2 = GameSetting.weapon_exp_limit.value[var_21_1 + 1]
+
+	if var_21_0.level == HeroConst.WEAPON_LV_MAX then
+		arg_21_0:SwitchToTab(1, true)
+	elseif var_21_0.level == var_21_2 then
+		arg_21_0:SwitchToTab(2, false)
+		arg_21_0:SwitchToView(arg_21_0.pageView.breakView, true)
+	end
+
+	arg_21_0:BuildTabDesc()
+end
+
+function var_0_0.OnWeaponQuick(arg_22_0, arg_22_1, arg_22_2, arg_22_3, arg_22_4)
+	if arg_22_2.breakthrough_times > 0 then
+		arg_22_0:ShowQuickBreakTips(arg_22_1, arg_22_2, arg_22_3, arg_22_4)
+	else
+		arg_22_0:OpenLvUpPop(arg_22_1, arg_22_2, arg_22_3, arg_22_4)
+	end
+
+	arg_22_0:UpdateWeaponInfo()
+
+	local var_22_0 = arg_22_0.data.weaponInfo
+	local var_22_1 = var_22_0.breakthrough
+	local var_22_2 = GameSetting.weapon_exp_limit.value[var_22_1 + 1]
+
+	if var_22_0.level == HeroConst.WEAPON_LV_MAX then
+		arg_22_0:SwitchToTab(1, true)
+	elseif var_22_0.level == var_22_2 then
+		arg_22_0:SwitchToTab(2, false)
+		arg_22_0:SwitchToView(arg_22_0.pageView.breakView, true)
+	else
+		arg_22_0:SwitchToTab(2, false)
+		arg_22_0:SwitchToView(arg_22_0.pageView.lvupView, true)
+	end
+
+	arg_22_0:BuildTabDesc()
+end
+
+function var_0_0.ShowQuickBreakTips(arg_23_0, arg_23_1, arg_23_2, arg_23_3, arg_23_4)
+	local var_23_0 = arg_23_0.data.heroId
+	local var_23_1 = arg_23_3 + arg_23_2.breakthrough_times
+
+	JumpTools.OpenPageByJump("weaponOneKeyBreak", {
+		heroID = var_23_0,
+		beforeBreak = arg_23_3,
+		afterBreak = var_23_1,
+		beforeLevel = arg_23_4,
+		afterLevel = arg_23_2.target_level,
+		callback = function()
+			arg_23_0:OpenLvUpPop(arg_23_1, arg_23_2, arg_23_3, arg_23_4)
+		end
 	})
 end
 
-function var_0_0.OnSynthesiseSuccess(arg_22_0)
-	arg_22_0:OnGoldChange()
+function var_0_0.OpenLvUpPop(arg_25_0, arg_25_1, arg_25_2, arg_25_3, arg_25_4)
+	local var_25_0 = arg_25_4
+	local var_25_1 = arg_25_2.target_level
+	local var_25_2 = arg_25_3 + arg_25_2.breakthrough_times
+
+	JumpTools.OpenPageByJump("weaponOneKeyStr", {
+		oriLv = var_25_0,
+		afterLv = arg_25_2.target_level,
+		beforeBreak = arg_25_3,
+		afterBreak = var_25_2,
+		callback = function()
+			local var_26_0 = arg_25_1.mat_list
+
+			getReward(formatRewardCfgList(var_26_0))
+		end
+	})
 end
 
-function var_0_0.SwitchControllerState(arg_23_0, arg_23_1, arg_23_2)
-	local var_23_0 = arg_23_0.context.controllerWrap.comps:GetController(arg_23_1)
+function var_0_0.ShowBreakTips(arg_27_0)
+	local var_27_0 = arg_27_0.data.weaponInfo
+	local var_27_1 = arg_27_0.data.heroId
 
-	if var_23_0 then
-		var_23_0:SetSelectedState(arg_23_2)
+	JumpTools.OpenPageByJump("weaponBreak", {
+		heroID = var_27_1,
+		breakthrough = var_27_0.breakthrough
+	})
+end
+
+function var_0_0.OnSynthesiseSuccess(arg_28_0)
+	arg_28_0:OnGoldChange()
+end
+
+function var_0_0.SwitchControllerState(arg_29_0, arg_29_1, arg_29_2)
+	local var_29_0 = arg_29_0.context.controllerWrap.comps:GetController(arg_29_1)
+
+	if var_29_0 then
+		var_29_0:SetSelectedState(arg_29_2)
 	end
 end
 
-function var_0_0.ResetWeaponView(arg_24_0)
-	local var_24_0 = arg_24_0:GetHeroId()
+function var_0_0.ResetWeaponView(arg_30_0)
+	local var_30_0 = arg_30_0:GetHeroId()
 
-	if var_24_0 and var_24_0 ~= 0 then
-		manager.heroRaiseTrack:SetModelState(HeroTools.HeroUsingSkinInfo(var_24_0).id)
+	if var_30_0 and var_30_0 ~= 0 then
+		manager.heroRaiseTrack:SetModelState(HeroTools.HeroUsingSkinInfo(var_30_0).id)
 	end
 end
 
-function var_0_0.BuildTabDesc(arg_25_0)
-	if arg_25_0:CheckWeaponCanBreakUp() then
-		arg_25_0.tab2Txt_.text = GetTips("TIP_BREAK")
+function var_0_0.BuildTabDesc(arg_31_0)
+	if arg_31_0:CheckWeaponCanBreakUp() then
+		arg_31_0.tab2Txt_.text = GetTips("TIP_BREAK")
 	else
-		arg_25_0.tab2Txt_.text = GetTips("TIP_STRENGTH")
+		arg_31_0.tab2Txt_.text = GetTips("TIP_STRENGTH")
 	end
 end
 
-function var_0_0.OnGoldChange(arg_26_0)
-	if arg_26_0.data.curPageIdx == arg_26_0.pageView.lvupView.pageIdx then
-		arg_26_0.pageView.lvupView.view:OnGoldChange()
-	elseif arg_26_0.data.curPageIdx == arg_26_0.pageView.breakView.pageIdx then
-		arg_26_0.pageView.breakView.view:OnGoldChange()
+function var_0_0.OnGoldChange(arg_32_0)
+	if arg_32_0.data.curPageIdx == arg_32_0.pageView.lvupView.pageIdx then
+		arg_32_0.pageView.lvupView.view:OnGoldChange()
+	elseif arg_32_0.data.curPageIdx == arg_32_0.pageView.breakView.pageIdx then
+		arg_32_0.pageView.breakView.view:OnGoldChange()
 	end
 end
 
-function var_0_0.SwitchToDetailTab(arg_27_0, arg_27_1)
-	arg_27_0:SwitchToView(arg_27_0.pageView.detailView, arg_27_1)
+function var_0_0.SwitchToDetailTab(arg_33_0, arg_33_1)
+	arg_33_0:SwitchToView(arg_33_0.pageView.detailView, arg_33_1)
 end
 
-function var_0_0.SwitchToLvUpTab(arg_28_0, arg_28_1)
-	if arg_28_0:CheckWeaponCanBreakUp() then
-		arg_28_0:SwitchToView(arg_28_0.pageView.breakView, arg_28_1)
+function var_0_0.SwitchToLvUpTab(arg_34_0, arg_34_1)
+	if arg_34_0:CheckWeaponCanBreakUp() then
+		arg_34_0:SwitchToView(arg_34_0.pageView.breakView, arg_34_1)
 	else
-		arg_28_0:SwitchToView(arg_28_0.pageView.lvupView, arg_28_1)
+		arg_34_0:SwitchToView(arg_34_0.pageView.lvupView, arg_34_1)
 	end
 end
 
-function var_0_0.IsMeetShowBar(arg_29_0, arg_29_1)
-	if not arg_29_1 or not arg_29_1.barCurrency then
+function var_0_0.IsMeetShowBar(arg_35_0, arg_35_1)
+	if not arg_35_1 or not arg_35_1.barCurrency then
 		return false
 	end
 
-	if arg_29_1.pageIdx == 2 then
-		local var_29_0 = arg_29_0:GetWeaponInfo()
+	if arg_35_1.pageIdx == 2 then
+		local var_35_0 = arg_35_0:GetWeaponInfo()
 
-		if var_29_0 then
-			return var_29_0.level ~= HeroConst.WEAPON_LV_MAX
+		if var_35_0 then
+			return var_35_0.level ~= HeroConst.WEAPON_LV_MAX
 		else
 			return false
 		end
@@ -312,121 +376,121 @@ function var_0_0.IsMeetShowBar(arg_29_0, arg_29_1)
 	return true
 end
 
-function var_0_0.OnTop(arg_30_0)
-	arg_30_0:ChangeWindowBar()
+function var_0_0.OnTop(arg_36_0)
+	arg_36_0:ChangeWindowBar()
 end
 
-function var_0_0.ChangeWindowBar(arg_31_0, arg_31_1)
-	if not arg_31_1 then
-		for iter_31_0, iter_31_1 in pairs(arg_31_0.pageView) do
-			if iter_31_1.view and iter_31_1.pageIdx == arg_31_0.data.curPageIdx then
-				arg_31_1 = iter_31_1
+function var_0_0.ChangeWindowBar(arg_37_0, arg_37_1)
+	if not arg_37_1 then
+		for iter_37_0, iter_37_1 in pairs(arg_37_0.pageView) do
+			if iter_37_1.view and iter_37_1.pageIdx == arg_37_0.data.curPageIdx then
+				arg_37_1 = iter_37_1
 
 				break
 			end
 		end
 	end
 
-	local var_31_0 = {
+	local var_37_0 = {
 		BACK_BAR,
 		HOME_BAR
 	}
 
-	if arg_31_0:IsMeetShowBar(arg_31_1) then
-		for iter_31_2, iter_31_3 in pairs(arg_31_1.barCurrency) do
-			table.insert(var_31_0, iter_31_3)
+	if arg_37_0:IsMeetShowBar(arg_37_1) then
+		for iter_37_2, iter_37_3 in pairs(arg_37_1.barCurrency) do
+			table.insert(var_37_0, iter_37_3)
 		end
 
-		manager.windowBar:SwitchBar(var_31_0)
+		manager.windowBar:SwitchBar(var_37_0)
 
-		for iter_31_4, iter_31_5 in pairs(arg_31_1.barCurrency) do
-			manager.windowBar:SetBarCanAdd(iter_31_5, true)
+		for iter_37_4, iter_37_5 in pairs(arg_37_1.barCurrency) do
+			manager.windowBar:SetBarCanAdd(iter_37_5, true)
 		end
 	else
-		manager.windowBar:SwitchBar(var_31_0)
+		manager.windowBar:SwitchBar(var_37_0)
 	end
 end
 
-function var_0_0.SwitchToView(arg_32_0, arg_32_1, arg_32_2)
-	if arg_32_1 then
-		local var_32_0 = arg_32_0.data.curPageIdx
+function var_0_0.SwitchToView(arg_38_0, arg_38_1, arg_38_2)
+	if arg_38_1 then
+		local var_38_0 = arg_38_0.data.curPageIdx
 
-		arg_32_0:ChangeWindowBar(arg_32_1)
+		arg_38_0:ChangeWindowBar(arg_38_1)
 
-		if var_32_0 ~= arg_32_1.pageIdx then
-			arg_32_0.data.curPageIdx = arg_32_1.pageIdx
+		if var_38_0 ~= arg_38_1.pageIdx then
+			arg_38_0.data.curPageIdx = arg_38_1.pageIdx
 
-			arg_32_0:EnterViewOrInst(arg_32_1, true)
-			arg_32_0:RefreshPageView(arg_32_1.view)
-		elseif arg_32_2 then
-			arg_32_0.data.curPageIdx = arg_32_1.pageIdx
+			arg_38_0:EnterViewOrInst(arg_38_1, true)
+			arg_38_0:RefreshPageView(arg_38_1.view)
+		elseif arg_38_2 then
+			arg_38_0.data.curPageIdx = arg_38_1.pageIdx
 
-			arg_32_0:EnterViewOrInst(arg_32_1, false)
-			arg_32_0:RefreshPageView(arg_32_1.view)
+			arg_38_0:EnterViewOrInst(arg_38_1, false)
+			arg_38_0:RefreshPageView(arg_38_1.view)
 		end
 	end
 end
 
-function var_0_0.RefreshPageView(arg_33_0, arg_33_1)
-	arg_33_1:ShowWeaponInfo(arg_33_0:GetHeroId(), arg_33_0:GetWeaponInfo(), arg_33_0.data.type)
+function var_0_0.RefreshPageView(arg_39_0, arg_39_1)
+	arg_39_1:ShowWeaponInfo(arg_39_0:GetHeroId(), arg_39_0:GetWeaponInfo(), arg_39_0.data.type)
 end
 
-function var_0_0.EnterViewOrInst(arg_34_0, arg_34_1, arg_34_2)
-	if not arg_34_1.view then
-		local var_34_0 = Asset.Load(arg_34_1.uiRootPath)
+function var_0_0.EnterViewOrInst(arg_40_0, arg_40_1, arg_40_2)
+	if not arg_40_1.view then
+		local var_40_0 = Asset.Load(arg_40_1.uiRootPath)
 
-		arg_34_1.viewObj = Object.Instantiate(var_34_0, arg_34_0.pageContainer_)
-		arg_34_1.view = import(arg_34_1.viewPath).New(arg_34_1.viewObj)
+		arg_40_1.viewObj = Object.Instantiate(var_40_0, arg_40_0.pageContainer_)
+		arg_40_1.view = import(arg_40_1.viewPath).New(arg_40_1.viewObj)
 
-		arg_34_1.view:OnEnter()
+		arg_40_1.view:OnEnter()
 	end
 
-	if arg_34_2 then
-		for iter_34_0, iter_34_1 in pairs(arg_34_0.pageView) do
-			if iter_34_1.view then
-				if iter_34_1.pageIdx ~= arg_34_0.data.curPageIdx then
-					iter_34_1.viewObj:SetActive(false)
+	if arg_40_2 then
+		for iter_40_0, iter_40_1 in pairs(arg_40_0.pageView) do
+			if iter_40_1.view then
+				if iter_40_1.pageIdx ~= arg_40_0.data.curPageIdx then
+					iter_40_1.viewObj:SetActive(false)
 				else
-					iter_34_1.viewObj:SetActive(true)
+					iter_40_1.viewObj:SetActive(true)
 				end
 			end
 		end
 	else
-		arg_34_1.viewObj:SetActive(true)
+		arg_40_1.viewObj:SetActive(true)
 	end
 end
 
-function var_0_0.UpdateWeaponInfo(arg_35_0)
-	local var_35_0 = arg_35_0:GetHeroId()
+function var_0_0.UpdateWeaponInfo(arg_41_0)
+	local var_41_0 = arg_41_0:GetHeroId()
 
-	if var_35_0 and var_35_0 ~= 0 then
-		local var_35_1 = deepClone(arg_35_0.data.dataPorxy:GetHeroWeaponInfo(var_35_0))
+	if var_41_0 and var_41_0 ~= 0 then
+		local var_41_1 = deepClone(arg_41_0.data.dataPorxy:GetHeroWeaponInfo(var_41_0))
 
-		arg_35_0.data.weaponInfo = var_35_1
+		arg_41_0.data.weaponInfo = var_41_1
 	end
 end
 
-function var_0_0.GetWeaponInfo(arg_36_0)
-	return arg_36_0.data.weaponInfo
+function var_0_0.GetWeaponInfo(arg_42_0)
+	return arg_42_0.data.weaponInfo
 end
 
-function var_0_0.SetHeroId(arg_37_0, arg_37_1)
-	arg_37_0.data.heroId = arg_37_1
+function var_0_0.SetHeroId(arg_43_0, arg_43_1)
+	arg_43_0.data.heroId = arg_43_1
 end
 
-function var_0_0.GetHeroId(arg_38_0)
-	return arg_38_0.data.heroId
+function var_0_0.GetHeroId(arg_44_0)
+	return arg_44_0.data.heroId
 end
 
-function var_0_0.GetControllerState(arg_39_0)
-	return arg_39_0.context.controllerWrap.state
+function var_0_0.GetControllerState(arg_45_0)
+	return arg_45_0.context.controllerWrap.state
 end
 
-function var_0_0.CheckWeaponCanBreakUp(arg_40_0)
-	local var_40_0 = arg_40_0:GetWeaponInfo()
+function var_0_0.CheckWeaponCanBreakUp(arg_46_0)
+	local var_46_0 = arg_46_0:GetWeaponInfo()
 
-	if var_40_0 then
-		if GameSetting.weapon_exp_limit.value[var_40_0.breakthrough + 1] == var_40_0.level and var_40_0.level ~= HeroConst.WEAPON_LV_MAX then
+	if var_46_0 then
+		if GameSetting.weapon_exp_limit.value[var_46_0.breakthrough + 1] == var_46_0.level and var_46_0.level ~= HeroConst.WEAPON_LV_MAX then
 			return true
 		end
 	else

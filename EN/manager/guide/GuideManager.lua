@@ -45,8 +45,8 @@ function var_0_0.AddGuide(arg_4_0, arg_4_1)
 		var_4_1 = Guide_3.New(arg_4_1)
 	elseif arg_4_1 == 8 then
 		var_4_1 = Guide_8.New(arg_4_1)
-	elseif arg_4_1 == 11 then
-		var_4_1 = Guide_11.New(arg_4_1)
+	elseif arg_4_1 == 1101 then
+		var_4_1 = Guide_1101.New(arg_4_1)
 	elseif arg_4_1 == 14 then
 		var_4_1 = Guide_14.New(arg_4_1)
 	elseif arg_4_1 == 15 then
@@ -59,17 +59,34 @@ function var_0_0.AddGuide(arg_4_0, arg_4_1)
 		var_4_1 = Guide_skuld.New(arg_4_1)
 	elseif arg_4_1 == 28 then
 		var_4_1 = Guide_28.New(arg_4_1)
-	elseif arg_4_1 == 46 then
-		var_4_1 = Guide_46.New(arg_4_1)
+	elseif arg_4_1 == 4601 then
+		var_4_1 = Guide_4601.New(arg_4_1)
 	elseif arg_4_1 == 53 then
 		var_4_1 = Guide_53.New(arg_4_1)
 	elseif arg_4_1 == 60 then
 		var_4_1 = Guide_60.New(arg_4_1)
+	elseif arg_4_1 == 73 then
+		var_4_1 = Guide_73.New(arg_4_1)
+	elseif arg_4_1 == 74 then
+		var_4_1 = Guide_74.New(arg_4_1)
+	elseif arg_4_1 == 76 then
+		var_4_1 = Guide_76.New(arg_4_1)
+	elseif arg_4_1 == 93 then
+		var_4_1 = Guide_93.New(arg_4_1)
+	elseif arg_4_1 == 94 then
+		var_4_1 = Guide_94.New(arg_4_1)
+	elseif arg_4_1 == 95 then
+		var_4_1 = Guide_95.New(arg_4_1)
+	elseif arg_4_1 == 96 then
+		var_4_1 = Guide_96.New(arg_4_1)
+	elseif arg_4_1 == 98 then
+		var_4_1 = Guide_98.New(arg_4_1)
 	else
 		var_4_1 = BaseGuide.New(arg_4_1)
 	end
 
 	if var_4_1 ~= nil then
+		var_4_1:ClearSteps()
 		table.insert(arg_4_0._guides, var_4_1)
 	end
 end
@@ -107,7 +124,7 @@ function var_0_0.Process(arg_6_0)
 	end
 
 	for iter_6_2, iter_6_3 in ipairs(arg_6_0._guides) do
-		if iter_6_3:Check() and manager.story.player_ == nil and not manager.posterGirl:IsPlayingDebut() then
+		if iter_6_3:Check() and manager.story.player_ == nil and not manager.posterGirl:IsPlayingDebut() and not gameContext:GetOpenPageHandler("assetPendPop") then
 			iter_6_3:InitSteps()
 			GuideTool.Log("GuideBase Start id :" .. iter_6_3:GetId())
 
@@ -126,188 +143,212 @@ function var_0_0.onStepStart(arg_7_0)
 	arg_7_0._timer:Stop()
 end
 
-function var_0_0.CheckStuck(arg_8_0, arg_8_1)
-	arg_8_0.startCheckTime_ = arg_8_0.startCheckTime_ or Time.time
+local function var_0_1(arg_8_0)
+	local var_8_0 = GuideBaseCfg.get_id_list_by_not_skip_guide[1]
 
-	if Time.time - arg_8_0.startCheckTime_ > arg_8_0.stuckTime_ and not arg_8_0.hasShowStuckBtn_ and arg_8_1 ~= nil and not table.indexof(GuideBaseCfg.get_id_list_by_not_skip_guide[1], arg_8_1:GetId()) then
-		arg_8_0.view:ShowBreakStuck(arg_8_1, true)
+	if var_8_0 == nil then
+		return false
+	end
 
-		arg_8_0.hasShowStuckBtn_ = true
+	return table.indexof(var_8_0, arg_8_0:GetId())
+end
 
-		GuideTool.Log("GuideBase Stuck id :" .. arg_8_1:GetId())
+function var_0_0.CheckStuck(arg_9_0, arg_9_1)
+	arg_9_0.startCheckTime_ = arg_9_0.startCheckTime_ or Time.time
+
+	if Time.time - arg_9_0.startCheckTime_ > arg_9_0.stuckTime_ and not arg_9_0.ignoreStuck_ and arg_9_1 ~= nil and not var_0_1(arg_9_1) then
+		arg_9_0.view:ShowBreakStuck(arg_9_1, true)
+
+		arg_9_0.ignoreStuck_ = true
+
+		GuideTool.Log("GuideBase Stuck id :" .. arg_9_1:GetId())
 	end
 end
 
-function var_0_0.ClearStuck(arg_9_0)
-	arg_9_0.startCheckTime_ = nil
-
-	arg_9_0.view:ShowBreakStuck(nil, false)
-
-	arg_9_0.hasShowStuckBtn_ = false
+function var_0_0.SetIgnoreStuck(arg_10_0, arg_10_1)
+	arg_10_0.ignoreStuck_ = arg_10_1
 end
 
-function var_0_0.OnStepEnd(arg_10_0, arg_10_1, arg_10_2)
-	if arg_10_2 then
-		arg_10_0.view:Hide()
+function var_0_0.ClearStuck(arg_11_0)
+	arg_11_0.startCheckTime_ = nil
+
+	arg_11_0.view:ShowBreakStuck(nil, false)
+
+	arg_11_0.ignoreStuck_ = false
+end
+
+function var_0_0.OnStepEnd(arg_12_0, arg_12_1, arg_12_2)
+	if arg_12_2 then
+		arg_12_0.view:Hide()
 	else
-		arg_10_0.view:HideButton()
+		arg_12_0.view:HideButton()
 	end
 
-	if arg_10_1:IsPlaying() then
-		arg_10_0._timer:Start()
+	if arg_12_1:IsPlaying() then
+		arg_12_0._timer:Start()
 	else
-		arg_10_0:OnGuideEnd(arg_10_1)
+		arg_12_0:OnGuideEnd(arg_12_1)
 
-		local var_10_0 = table.indexof(arg_10_0._guides, arg_10_1)
+		local var_12_0 = table.indexof(arg_12_0._guides, arg_12_1)
 
-		if var_10_0 then
-			table.remove(arg_10_0._guides, var_10_0)
+		if var_12_0 then
+			table.remove(arg_12_0._guides, var_12_0)
 		end
 
-		if table.length(arg_10_0._guides) > 0 then
-			arg_10_0._timer:Start()
+		if table.length(arg_12_0._guides) > 0 then
+			arg_12_0._timer:Start()
 		else
 			SendMessageManagerToSDK("tutorial_complete")
 		end
 	end
 end
 
-function var_0_0.OnGuideFinish(arg_11_0, arg_11_1)
-	local var_11_0 = arg_11_1:GetId()
+function var_0_0.OnGuideFinish(arg_13_0, arg_13_1)
+	local var_13_0 = arg_13_1:GetId()
 
-	NewPlayerGuideAction.GuideUpdateID(var_11_0)
+	NewPlayerGuideAction.GuideUpdateID(var_13_0)
 	SendMessageManagerToSDK("tutorial", {
-		guideId = var_11_0
+		guideId = var_13_0
 	})
 
-	if var_11_0 == 8 then
+	if var_13_0 == 8 then
 		SendMessageManagerToSDK("tutorial_complete")
 	end
 
-	GuideTool.Log("GuideBase Finish id :" .. arg_11_1:GetId())
+	GuideTool.Log("GuideBase Finish id :" .. arg_13_1:GetId())
 end
 
-function var_0_0.OnGuideEnd(arg_12_0, arg_12_1)
-	local var_12_0 = arg_12_1:GetId()
-	local var_12_1 = arg_12_1:GetStarTime()
-	local var_12_2 = Time.realtimeSinceStartup - var_12_1
+function var_0_0.OnGuideEnd(arg_14_0, arg_14_1)
+	local var_14_0 = arg_14_1:GetId()
+	local var_14_1 = arg_14_1:GetStarTime()
+	local var_14_2 = Time.realtimeSinceStartup - var_14_1
 
-	NewPlayerGuideAction.GuideUpdateIDEnd(var_12_0, var_12_2)
-	GuideTool.Log("GuideBase End id :" .. arg_12_1:GetId() .. "  useTime : " .. var_12_2)
+	NewPlayerGuideAction.GuideUpdateIDEnd(var_14_0, var_14_2)
+	GuideTool.Log("GuideBase End id :" .. arg_14_1:GetId() .. "  useTime : " .. var_14_2)
 
-	local var_12_3 = GuideBaseCfg[var_12_0]
+	local var_14_3 = GuideBaseCfg[var_14_0]
 
-	arg_12_0:UpdateGroupLastTime(var_12_3.group)
+	arg_14_0:UpdateGroupLastTime(var_14_3.group)
 end
 
-function var_0_0.SkipGuide(arg_13_0, arg_13_1)
-	arg_13_0:ClearStuck()
-	arg_13_0:OnGuideFinish(arg_13_1)
+function var_0_0.SkipGuide(arg_15_0, arg_15_1)
+	arg_15_0:ClearStuck()
+	arg_15_0:OnGuideFinish(arg_15_1)
 
-	local var_13_0 = table.indexof(arg_13_0._guides, arg_13_1)
+	local var_15_0 = table.indexof(arg_15_0._guides, arg_15_1)
 
-	if var_13_0 then
-		table.remove(arg_13_0._guides, var_13_0)
+	if var_15_0 then
+		table.remove(arg_15_0._guides, var_15_0)
 	end
 end
 
-function var_0_0.PaseGuide(arg_14_0, arg_14_1)
-	local var_14_0 = table.indexof(arg_14_0._guides, arg_14_1)
+function var_0_0.PaseGuide(arg_16_0, arg_16_1)
+	local var_16_0 = table.indexof(arg_16_0._guides, arg_16_1)
 
-	if var_14_0 then
-		table.remove(arg_14_0._guides, var_14_0)
+	if var_16_0 then
+		table.remove(arg_16_0._guides, var_16_0)
 	end
 end
 
-function var_0_0.SkipAll(arg_15_0)
+function var_0_0.SkipAll(arg_17_0)
 	return
 end
 
-function var_0_0.OnComponentClick(arg_16_0)
-	for iter_16_0, iter_16_1 in ipairs(arg_16_0._guides) do
-		if iter_16_1:IsPlaying() then
-			iter_16_1:Click()
-		end
-	end
-end
-
-function var_0_0.OnEventTrigger(arg_17_0, arg_17_1, arg_17_2)
-	for iter_17_0, iter_17_1 in ipairs(arg_17_0._guides) do
-		if iter_17_1:IsPlaying() then
-			iter_17_1:EventTrigger(arg_17_1, arg_17_2)
-		end
-	end
-end
-
-function var_0_0.OnBattleFinish(arg_18_0, arg_18_1)
+function var_0_0.OnComponentClick(arg_18_0)
 	for iter_18_0, iter_18_1 in ipairs(arg_18_0._guides) do
 		if iter_18_1:IsPlaying() then
-			iter_18_1:BattleFinish(arg_18_1)
+			iter_18_1:Click()
 		end
 	end
 end
 
-function var_0_0.IsGoToHome(arg_19_0)
+function var_0_0.OnEventTrigger(arg_19_0, arg_19_1, arg_19_2)
 	for iter_19_0, iter_19_1 in ipairs(arg_19_0._guides) do
 		if iter_19_1:IsPlaying() then
-			return iter_19_1:IsGoToHome()
+			iter_19_1:EventTrigger(arg_19_1, arg_19_2)
+		end
+	end
+end
+
+function var_0_0.OnBattleFinish(arg_20_0, arg_20_1)
+	for iter_20_0, iter_20_1 in ipairs(arg_20_0._guides) do
+		if iter_20_1:IsPlaying() then
+			iter_20_1:BattleFinish(arg_20_1)
+		end
+	end
+end
+
+function var_0_0.IsGoToHome(arg_21_0)
+	for iter_21_0, iter_21_1 in ipairs(arg_21_0._guides) do
+		if iter_21_1:IsPlaying() then
+			return iter_21_1:IsGoToHome()
 		end
 	end
 
 	return true
 end
 
-function var_0_0.OnLogout(arg_20_0)
-	arg_20_0._timer:Stop()
+function var_0_0.OnLogout(arg_22_0)
+	arg_22_0._timer:Stop()
 
-	for iter_20_0, iter_20_1 in ipairs(arg_20_0._guides) do
-		iter_20_1:Dispose()
+	for iter_22_0, iter_22_1 in ipairs(arg_22_0._guides) do
+		iter_22_1:Dispose()
 	end
 
-	arg_20_0._guides = {}
-	arg_20_0._gorupTimes = {}
+	arg_22_0._guides = {}
+	arg_22_0._gorupTimes = {}
 
-	arg_20_0.view:Dispose()
-	arg_20_0.weakView:Dispose()
+	arg_22_0.view:Dispose()
+	arg_22_0.weakView:Dispose()
 end
 
-function var_0_0.Dispose(arg_21_0)
-	arg_21_0:OnLogout()
+function var_0_0.Dispose(arg_23_0)
+	arg_23_0:OnLogout()
 end
 
-local var_0_1
+local var_0_2
 
-function var_0_0.GetIntervalTime(arg_22_0)
-	if var_0_1 ~= nil then
-		return var_0_1
+function var_0_0.GetIntervalTime(arg_24_0)
+	if var_0_2 ~= nil then
+		return var_0_2
 	end
 
-	var_0_1 = GameSetting.guide_base_time and GameSetting.guide_base_time.value[1] or 0
+	var_0_2 = GameSetting.guide_base_time and GameSetting.guide_base_time.value[1] or 0
 
-	return var_0_1
+	return var_0_2
 end
 
-function var_0_0.UpdateGroupLastTime(arg_23_0, arg_23_1)
-	if arg_23_1 == 0 then
+function var_0_0.UpdateGroupLastTime(arg_25_0, arg_25_1)
+	if arg_25_1 == 0 then
 		return
 	end
 
-	arg_23_0._gorupTimes[arg_23_1] = os.time()
+	arg_25_0._gorupTimes[arg_25_1] = os.time()
 end
 
-function var_0_0.CheckGroupLastTime(arg_24_0, arg_24_1)
-	if arg_24_1 == 0 then
+function var_0_0.CheckGroupLastTime(arg_26_0, arg_26_1)
+	if arg_26_1 == 0 then
 		return true
 	else
-		local var_24_0 = arg_24_0._gorupTimes[arg_24_1] or 0
+		local var_26_0 = arg_26_0._gorupTimes[arg_26_1] or 0
 
-		return arg_24_0:GetIntervalTime() < os.time() - var_24_0
+		return arg_26_0:GetIntervalTime() < os.time() - var_26_0
 	end
 end
 
-function var_0_0.ShowWeakView(arg_25_0, arg_25_1, arg_25_2, arg_25_3)
-	arg_25_0.weakView:Init()
-	arg_25_0.weakView:UpdateView(arg_25_1, arg_25_2, arg_25_3)
+function var_0_0.ShowWeakView(arg_27_0, arg_27_1, arg_27_2, arg_27_3)
+	arg_27_0.weakView:Init()
+	arg_27_0.weakView:UpdateView(arg_27_1, arg_27_2, arg_27_3)
+end
+
+function var_0_0.GetCurrentGuideStepID(arg_28_0)
+	for iter_28_0, iter_28_1 in ipairs(arg_28_0._guides) do
+		if iter_28_1:IsPlaying() then
+			return iter_28_1._steps[1]._stepId
+		end
+	end
+
+	return 0
 end
 
 return var_0_0

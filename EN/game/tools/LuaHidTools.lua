@@ -42,6 +42,7 @@ function var_0_0.ExitInputPage(arg_4_0)
 end
 
 HID_TYPES = {
+	KeyMouse = 5,
 	PS4 = 3,
 	Keyboard = 1,
 	Other = 4,
@@ -155,8 +156,12 @@ function OnGamepadDeviceAdded(arg_8_0, arg_8_1)
 		local var_9_0 = var_0_5[1]
 
 		if manager.managerInit then
-			var_0_0.OpenGamepadSelectWin(var_9_0.gamepadType)
-			table.clean(var_0_5)
+			local var_9_1 = LuaForGamepad.GetGamepadType()
+
+			if var_9_1 == HID_TYPES.Xbox or var_9_1 == HID_TYPES.PS4 then
+				var_0_0.OpenGamepadSelectWin(var_9_0.gamepadType)
+				table.clean(var_0_5)
+			end
 		end
 	end, 1, -1)
 
@@ -268,6 +273,10 @@ function var_0_0.IsOpNotAllow(arg_13_0, arg_13_1)
 		return true
 	end
 
+	if arg_13_0 == HID_TYPES.KeyMouse and (arg_13_1 == "Melee" or arg_13_1 == "CameraLeft" or arg_13_1 == "CameraRight") then
+		return true
+	end
+
 	return false
 end
 
@@ -283,22 +292,34 @@ function var_0_0.SetPlayerSelectJoystick(arg_16_0)
 	LuaForGamepad.SetPlayerSelectJoystick(arg_16_0)
 end
 
-local var_0_10 = "InputRemapNoticeEnableList"
-
-function var_0_0.SetRemapNotice(arg_17_0, arg_17_1)
-	LuaForGamepad.SetNeedRemapNotice(arg_17_0, arg_17_1)
+function var_0_0.GetPlayerSelectKeyboard()
+	return LuaForGamepad.GetPlayerSelectKeyboard()
 end
 
-function var_0_0.GetRemapNotice(arg_18_0)
-	return LuaForGamepad.GetNeedRemapNotice(arg_18_0)
+function var_0_0.SetPlayerSelectKeyboard(arg_18_0)
+	LuaForGamepad.SetPlayerSelectKeyboard(arg_18_0)
+end
+
+function var_0_0.ForceSelectKeyboard(arg_19_0)
+	LuaForGamepad.ForceSelectKeyboard(arg_19_0 or HID_TYPES.None)
+end
+
+local var_0_10 = "InputRemapNoticeEnableList"
+
+function var_0_0.SetRemapNotice(arg_20_0, arg_20_1)
+	LuaForGamepad.SetNeedRemapNotice(arg_20_0, arg_20_1)
+end
+
+function var_0_0.GetRemapNotice(arg_21_0)
+	return LuaForGamepad.GetNeedRemapNotice(arg_21_0)
 end
 
 function var_0_0.ResetRemapNotice()
 	PlayerPrefs.DeleteKey(var_0_10)
 
-	local var_19_0 = var_0_0.GetRemapNotice(HID_TYPES.None)
+	local var_22_0 = var_0_0.GetRemapNotice(HID_TYPES.None)
 
-	var_0_0.SetRemapNotice(HID_TYPES.None, var_19_0)
+	var_0_0.SetRemapNotice(HID_TYPES.None, var_22_0)
 end
 
 function var_0_0.HasSetRemapNotice()
@@ -313,9 +334,9 @@ function var_0_0.HasSetRemapNotice()
 	return false
 end
 
-function var_0_0.SetAllRemapNotice(arg_21_0)
-	for iter_21_0, iter_21_1 in pairs(HID_TYPES) do
-		var_0_0.SetRemapNotice(iter_21_1, arg_21_0)
+function var_0_0.SetAllRemapNotice(arg_24_0)
+	for iter_24_0, iter_24_1 in pairs(HID_TYPES) do
+		var_0_0.SetRemapNotice(iter_24_1, arg_24_0)
 	end
 end
 
@@ -333,6 +354,26 @@ function var_0_0.QueryRemapNotice()
 			JumpTools.Back()
 		end
 	})
+end
+
+function IsPolyhedronGameOver()
+	local var_28_0 = BattleController.GetInstance()
+
+	if not var_28_0 then
+		return false
+	end
+
+	local var_28_1 = var_28_0:GetBattleStageData()
+
+	if not var_28_1 then
+		return false
+	end
+
+	if not BattleFieldData:IsInBattle() and BattleConst.STAGE_TYPE_NEW.POLYHEDRON == var_28_1:GetType() then
+		return true
+	end
+
+	return false
 end
 
 return var_0_0

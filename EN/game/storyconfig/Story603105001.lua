@@ -272,6 +272,9 @@
 
 				arg_7_1.callingController_:SetSelectedState("normal")
 
+				arg_7_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_7_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_10_14 = arg_7_1:GetWordFromCfg(603105002)
 				local var_10_15 = arg_7_1:FormatText(var_10_14.content)
 
@@ -362,6 +365,9 @@
 				arg_11_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_ganglati")
 
 				arg_11_1.callingController_:SetSelectedState("normal")
+
+				arg_11_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_11_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_14_3 = arg_11_1:GetWordFromCfg(603105003)
 				local var_14_4 = arg_11_1:FormatText(var_14_3.content)

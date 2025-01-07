@@ -109,45 +109,29 @@ function var_0_0.GetCanOrderFoodList(arg_10_0)
 	return var_0_5
 end
 
+local var_0_6 = 100000
+
 function var_0_0.CalculateFoodCanCookNum(arg_11_0, arg_11_1)
 	local var_11_0 = CanteenFoodData:CheckIsSignFood(arg_11_1)
 	local var_11_1 = 0
 
 	if not var_11_0 then
 		local var_11_2 = BackHomeCanteenFoodCfg[arg_11_1].ingredient_list
+		local var_11_3 = var_0_6
 
-		if var_11_2 then
-			local var_11_3 = 100000
+		for iter_11_0, iter_11_1 in pairs(var_11_2) do
+			local var_11_4 = iter_11_1[1]
+			local var_11_5 = iter_11_1[2]
+			local var_11_6 = arg_11_0:GetCateenIngredientNum(var_11_4) or 0
+			local var_11_7 = math.floor(var_11_6 / var_11_5)
 
-			for iter_11_0, iter_11_1 in pairs(var_11_2) do
-				local var_11_4 = iter_11_1[1]
-				local var_11_5 = iter_11_1[2]
-				local var_11_6 = arg_11_0:GetCateenIngredientNum(var_11_4) or 0
-
-				if var_0_1 then
-					if var_11_6 < var_11_5 then
-						return 0
-					else
-						local var_11_7 = math.modf(var_11_6 / var_11_5)
-
-						var_11_3 = math.min(var_11_7, var_11_3)
-					end
-				end
-			end
-
-			if var_11_3 ~= 10000 then
-				var_11_1 = var_11_3
-			end
+			var_11_3 = math.min(var_11_7, var_11_3)
 		end
+
+		var_11_1 = var_11_3
 	end
 
-	if var_11_1 >= 0 then
-		return var_11_1
-	else
-		print("可制作数量错误")
-
-		return 0
-	end
+	return var_11_1
 end
 
 function var_0_0.GetSignFoodTime(arg_12_0, arg_12_1)

@@ -25,6 +25,7 @@ function var_0_0.AddUIListener(arg_3_0)
 	arg_3_0:AddBtnListener(arg_3_0.detailBtn_, nil, function()
 		JumpTools.OpenPageByJump("/heroPreviewMain", {
 			isEnter = true,
+			isDraw = true,
 			hid = arg_3_0.heroId
 		})
 	end)
@@ -95,8 +96,14 @@ function var_0_0.Refresh(arg_6_0, arg_6_1)
 	end
 
 	if arg_6_0.upID ~= 0 then
-		arg_6_0.suffixText_.text = GetI18NText(var_6_4.name)
 		arg_6_0.nameText_.text = GetI18NText(var_6_4.suffix)
+
+		if arg_6_0.suffixText_ then
+			arg_6_0.suffixText_.text = GetI18NText(var_6_4.suffix)
+		else
+			arg_6_0.nameText_.text = HeroTools.GetHeroFullName(arg_6_0.heroId)
+		end
+
 		arg_6_0.pic_.sprite = getSpriteWithoutAtlas(string.format("TextureConfig/Character/Portrait/%d", arg_6_0.heroId))
 		arg_6_0.campIcon_.sprite = HeroTools.GetHeroRaceIcon(arg_6_0.heroId)
 

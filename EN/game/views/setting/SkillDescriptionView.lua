@@ -82,45 +82,64 @@ function var_0_0.GetSkills(arg_5_0, arg_5_1, arg_5_2, arg_5_3)
 
 	local var_5_8 = {}
 
-	for iter_5_5, iter_5_6 in ipairs(var_5_0.skills) do
-		if iter_5_6 ~= 0 then
-			local var_5_9 = {
-				id = iter_5_6
+	if ActivityMonsterCosplayCfg[arg_5_1] and arg_5_0.stageData:GetType() == BattleConst.STAGE_TYPE_NEW.ACTIVITY_MONSTER_COSPLAY then
+		local var_5_9 = ActivityMonsterCosplayCfg[arg_5_1]
+
+		for iter_5_5, iter_5_6 in ipairs(var_5_9.skill_list) do
+			local var_5_10 = ActivityMonsterCosplaySkillCfg[iter_5_6]
+			local var_5_11 = {
+				id = iter_5_6,
+				desc = var_5_10.skill_start_description,
+				sprite = getSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_MonsterPlayUI/" .. var_5_10.skill_start_icon)
 			}
 
-			if var_5_3[iter_5_6] then
-				var_5_9.id = var_5_3[iter_5_6]
+			var_5_11.desc = string.gsub(var_5_11.desc, "\n\n", "\n")
+			var_5_11.name = var_5_10.skill_name
+			var_5_11.type = var_5_0.skill_subhead[iter_5_5]
+
+			table.insert(var_5_8, var_5_11)
+		end
+	else
+		for iter_5_7, iter_5_8 in ipairs(var_5_0.skills) do
+			if iter_5_8 ~= 0 then
+				local var_5_12 = {
+					id = iter_5_8
+				}
+
+				if var_5_3[iter_5_8] then
+					var_5_12.id = var_5_3[iter_5_8]
+				end
+
+				local var_5_13 = SkillTools.GetIsDodgeSkill(var_5_12.id)
+				local var_5_14 = 1
+
+				if not var_5_13 then
+					var_5_14 = arg_5_2.skillLevel[iter_5_7 - 1]
+				end
+
+				var_5_12.desc = var_5_7:GetSkillDesc(var_5_12.id, var_5_14, true)
+				var_5_12.desc = string.gsub(var_5_12.desc, "\n\n", "\n")
+
+				if not HeroSkillCfg[var_5_12.id] then
+					CustomLog.Log(debug.traceback(string.format("nil")))
+				end
+
+				var_5_12.name = GetI18NText(HeroSkillCfg[var_5_12.id].name)
+				var_5_12.ele = HeroSkillCfg[var_5_12.id].element_type
+				var_5_12.sprite = getSprite("Atlas/" .. arg_5_1, var_5_12.id)
+				var_5_12.subType = PublicSkillCfg[var_5_12.id].skill_sub_type
+
+				if var_5_12.subType == nil then
+					var_5_12.subType = 0
+				end
+
+				local var_5_15 = SkillSubTypeCfg.get_id_list_by_value[var_5_12.subType]
+
+				var_5_12.subType = SkillSubTypeCfg[var_5_15[1]].annotation
+				var_5_12.type = GetI18NText(var_5_0.skill_subhead[iter_5_7])
+
+				table.insert(var_5_8, var_5_12)
 			end
-
-			local var_5_10 = SkillTools.GetIsDodgeSkill(var_5_9.id)
-			local var_5_11 = 1
-
-			if not var_5_10 then
-				var_5_11 = arg_5_2.skillLevel[iter_5_5 - 1]
-			end
-
-			var_5_9.desc = var_5_7:GetSkillDesc(var_5_9.id, var_5_11, true)
-			var_5_9.desc = string.gsub(var_5_9.desc, "\n\n", "\n")
-
-			if not HeroSkillCfg[var_5_9.id] then
-				CustomLog.Log(debug.traceback(string.format("nil")))
-			end
-
-			var_5_9.name = GetI18NText(HeroSkillCfg[var_5_9.id].name)
-			var_5_9.ele = HeroSkillCfg[var_5_9.id].element_type
-			var_5_9.sprite = getSprite("Atlas/" .. arg_5_1, var_5_9.id)
-			var_5_9.subType = PublicSkillCfg[var_5_9.id].skill_sub_type
-
-			if var_5_9.subType == nil then
-				var_5_9.subType = 0
-			end
-
-			local var_5_12 = SkillSubTypeCfg.get_id_list_by_value[var_5_9.subType]
-
-			var_5_9.subType = SkillSubTypeCfg[var_5_12[1]].annotation
-			var_5_9.type = GetI18NText(var_5_0.skill_subhead[iter_5_5])
-
-			table.insert(var_5_8, var_5_9)
 		end
 	end
 
@@ -128,41 +147,19 @@ function var_0_0.GetSkills(arg_5_0, arg_5_1, arg_5_2, arg_5_3)
 end
 
 function var_0_0.RefreshSkills(arg_6_0)
-	for iter_6_0, iter_6_1 in ipairs(arg_6_0.skills) do
-		local var_6_0 = Object.Instantiate(arg_6_0.explainSkillTplGo_, arg_6_0.suitcontentSkillTrs_)
-		local var_6_1 = var_6_0.transform:Find("skill/bg/icon"):GetComponent("Image")
-		local var_6_2 = var_6_0.transform:Find("Adaptation/name/text"):GetComponent("Text")
-		local var_6_3 = var_6_0.transform:Find("Adaptation/nametext"):GetComponent("Text")
-		local var_6_4 = var_6_0.transform:Find("Adaptation/describetext"):GetComponent("Text")
+	for iter_6_0, iter_6_1 in ipairs(arg_6_0.skillExplainList_) do
+		iter_6_1:Show(false)
+	end
 
-		var_6_1.sprite = iter_6_1.sprite
-		var_6_2.text = GetI18NText(iter_6_1.type)
-		var_6_3.text = GetI18NText(iter_6_1.name)
-		var_6_4.text = GetI18NText(iter_6_1.desc)
+	for iter_6_2, iter_6_3 in ipairs(arg_6_0.skills) do
+		if arg_6_0.skillExplainList_[iter_6_2] == nil then
+			local var_6_0 = Object.Instantiate(arg_6_0.explainSkillTplGo_, arg_6_0.suitcontentSkillTrs_)
 
-		if iter_6_1.ele == "" or iter_6_1.ele == nil then
-			-- block empty
-		else
-			for iter_6_2, iter_6_3 in pairs(iter_6_1.ele) do
-				local var_6_5 = var_6_0.transform:Find("Adaptation/nametext/element_icon_" .. iter_6_2)
-
-				if var_6_5 then
-					local var_6_6 = var_6_5:GetComponent("Image")
-
-					if var_6_6 then
-						local var_6_7 = SkillElementCfg[iter_6_3].icon
-
-						if var_6_7 and var_6_7 ~= "" then
-							SetActive(var_6_5.gameObject, true)
-
-							var_6_6.sprite = getSprite("Atlas/Hero_arrtAtlas", SkillElementCfg[iter_6_3].icon)
-						end
-					end
-				end
-			end
+			arg_6_0.skillExplainList_[iter_6_2] = SkillExplainItem.New(var_6_0)
 		end
 
-		SetActive(var_6_0, true)
+		arg_6_0.skillExplainList_[iter_6_2]:Show(true)
+		arg_6_0.skillExplainList_[iter_6_2]:RefreshData(iter_6_3)
 	end
 
 	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_6_0.suitcontentSkillTrs_)
@@ -190,62 +187,19 @@ function var_0_0.GetRecommendCombo(arg_8_0, arg_8_1)
 end
 
 function var_0_0.RefreshCombos(arg_9_0, arg_9_1)
-	for iter_9_0, iter_9_1 in ipairs(arg_9_0.combos) do
-		local var_9_0 = Object.Instantiate(arg_9_0.explainComboTplGo_, arg_9_0.suitcontentComboTrs_)
-		local var_9_1 = var_9_0.transform:Find("nametext"):GetComponent("Text")
-		local var_9_2 = var_9_0.transform:Find("describetext"):GetComponent("Text")
-		local var_9_3 = var_9_0.transform:Find("panel")
-		local var_9_4 = var_9_0.transform:Find("panel/skill").gameObject
+	for iter_9_0, iter_9_1 in ipairs(arg_9_0.skillComboList_) do
+		iter_9_1:Show(false)
+	end
 
-		if iter_9_1.desc and iter_9_1.desc ~= "" then
-			var_9_2.text = GetI18NText(iter_9_1.desc)
-		else
-			var_9_2.gameObject:SetActive(false)
+	for iter_9_2, iter_9_3 in ipairs(arg_9_0.combos) do
+		if arg_9_0.skillComboList_[iter_9_2] == nil then
+			local var_9_0 = Object.Instantiate(arg_9_0.explainComboTplGo_, arg_9_0.suitcontentComboTrs_)
+
+			arg_9_0.skillComboList_[iter_9_2] = SkillComboItem.New(var_9_0)
 		end
 
-		var_9_1.text = GetI18NText(iter_9_1.name)
-
-		if iter_9_1.list_icon[1] then
-			local var_9_5 = #iter_9_1.list_icon
-
-			for iter_9_2, iter_9_3 in ipairs(iter_9_1.list_icon) do
-				local var_9_6 = Object.Instantiate(var_9_4, var_9_3)
-				local var_9_7 = var_9_6.transform:Find("bg/icon"):GetComponent("Image")
-				local var_9_8 = var_9_6.transform:Find("name/text"):GetComponent("Text")
-
-				var_9_7.sprite = getSprite("Atlas/" .. arg_9_1, iter_9_1.list_icon[iter_9_2])
-				var_9_8.text = GetI18NText(iter_9_1.list_name[iter_9_2])
-
-				SetActive(var_9_6, true)
-
-				local var_9_9 = var_9_6.transform:Find("sign"):GetComponent("Image")
-				local var_9_10 = var_9_6.transform:Find("text"):GetComponent("Text")
-
-				if var_9_5 ~= iter_9_2 then
-					if iter_9_1.combine_char[iter_9_2] == "或" then
-						var_9_9.enabled = false
-						var_9_10.text = GetTips("TIP_OR")
-
-						SetActive(var_9_10.gameObject, true)
-					else
-						var_9_9.enabled = true
-						var_9_9.sprite = getSprite("Atlas/Setting", iter_9_1.combine_char[iter_9_2])
-						var_9_10.text = ""
-
-						SetActive(var_9_10.gameObject, false)
-					end
-				else
-					var_9_9.enabled = false
-					var_9_10.text = ""
-
-					SetActive(var_9_10.gameObject, false)
-				end
-			end
-		else
-			var_9_3.gameObject:SetActive(false)
-		end
-
-		SetActive(var_9_0, true)
+		arg_9_0.skillComboList_[iter_9_2]:Show(true)
+		arg_9_0.skillComboList_[iter_9_2]:RefreshData(iter_9_3, arg_9_1)
 	end
 
 	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_9_0.suitcontentSkillTrs_)
@@ -254,6 +208,8 @@ end
 function var_0_0.InitUI(arg_10_0)
 	arg_10_0:BindCfgUI()
 
+	arg_10_0.skillExplainList_ = {}
+	arg_10_0.skillComboList_ = {}
 	arg_10_0.explainController = ControllerUtil.GetController(arg_10_0.explainGo_.transform, "name")
 	arg_10_0.technicController = ControllerUtil.GetController(arg_10_0.technicGo_.transform, "name")
 	arg_10_0.nType = 1
@@ -325,6 +281,8 @@ function var_0_0.OnEnter(arg_14_0)
 	local var_14_1 = SkinCfg[var_14_0.ID].hero
 
 	arg_14_0.explainTgl_.isOn = true
+
+	SetActive(arg_14_0.technicGo_, arg_14_0.stageData:GetType() ~= BattleConst.STAGE_TYPE_NEW.ACTIVITY_MONSTER_COSPLAY)
 end
 
 function var_0_0.Dispose(arg_15_0)
@@ -334,6 +292,17 @@ function var_0_0.Dispose(arg_15_0)
 		arg_15_0.timerSkill_:Stop()
 	end
 
+	for iter_15_0, iter_15_1 in pairs(arg_15_0.skillExplainList_) do
+		iter_15_1:Dispose()
+	end
+
+	arg_15_0.skillExplainList_ = {}
+
+	for iter_15_2, iter_15_3 in pairs(arg_15_0.skillComboList_) do
+		iter_15_3:Dispose()
+	end
+
+	arg_15_0.skillComboList_ = {}
 	arg_15_0.hander_ = nil
 	arg_15_0.data = nil
 end

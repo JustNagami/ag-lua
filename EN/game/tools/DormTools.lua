@@ -59,257 +59,262 @@
 			return GetTips("DORM_FUR_INFO_TAG5")
 		elseif arg_4_1 == DormConst.BACKHOME_TYPE.PrivateDorm then
 			return GetTips("DORM_FUR_INFO_TAG6")
+		elseif arg_4_1 == DormConst.BACKHOME_TYPE.Canteen then
+			return GetTips("DORM_HERO_AT_CANTEEN")
 		end
 	end,
 	GetAllDormShopIDList = function(arg_5_0)
 		return ShopTools.CollectShopInGroup(GameSetting.dorm_shop_display_group_furniture.value)
 	end,
-	GetShopStyleImage = function(arg_6_0)
-		return getSpriteViaConfig("DormShopPreview", arg_6_0)
+	AnyShopInDiscount = function(arg_6_0)
+		return ShopTools.IsAnyShopDiscount(arg_6_0:GetAllDormShopIDList())
 	end,
-	GetFurLable = function(arg_7_0, arg_7_1)
-		local var_7_0 = {}
-		local var_7_1 = BackHomeFurniture[arg_7_1]
-
-		table.insert(var_7_0, "is_give")
-		table.insert(var_7_0, "dorm_exp")
-		table.insert(var_7_0, "hero_id")
-		table.insert(var_7_0, "scene_id")
-
-		return var_7_0
+	GetShopStyleImage = function(arg_7_0)
+		return getSpriteViaConfig("DormShopPreview", arg_7_0)
 	end,
-	GetFurLableDesc = function(arg_8_0, arg_8_1, arg_8_2)
-		local var_8_0 = ""
+	GetFurLable = function(arg_8_0, arg_8_1)
+		local var_8_0 = {}
+		local var_8_1 = BackHomeFurniture[arg_8_1]
 
-		if arg_8_2 == "is_give" then
-			if BackHomeFurniture[arg_8_1].is_give == 1 then
-				local var_8_1 = BackHomeFurniture[arg_8_1].give_max
-
-				var_8_0 = string.format(GetTips("DORM_FUR_INFO_TAG2"), var_8_1)
-			else
-				var_8_0 = GetTips("DORM_FUR_INFO_TAG1")
-			end
-		elseif arg_8_2 == "dorm_exp" then
-			var_8_0 = string.format(GetTips("DORM_FUR_INFO_TAG7"), BackHomeFurniture[arg_8_1].dorm_exp)
-		elseif arg_8_2 == "hero_id" then
-			local var_8_2 = BackHomeFurniture[arg_8_1].hero_id
-
-			if HeroRecordCfg[var_8_2] then
-				local var_8_3 = HeroRecordCfg[var_8_2].name
-
-				var_8_0 = string.format(GetTips("DORM_FUR_INFO_TAG3"), var_8_3)
-			end
-		elseif arg_8_2 == "scene_id" then
-			local var_8_4 = BackHomeFurniture[arg_8_1].scene_id
-
-			var_8_0 = GetTips("DORM_FUR_INFO_TAG4")
-
-			for iter_8_0, iter_8_1 in ipairs(var_8_4) do
-				var_8_0 = var_8_0 .. arg_8_0:GetRoomTypeName(iter_8_1) .. " "
-			end
-
-			string.sub(var_8_0, 1, -2)
-		end
+		table.insert(var_8_0, "is_give")
+		table.insert(var_8_0, "dorm_exp")
+		table.insert(var_8_0, "hero_id")
+		table.insert(var_8_0, "scene_id")
 
 		return var_8_0
 	end,
-	GetFurGiftTypeDesc = function(arg_9_0, arg_9_1)
+	GetFurLableDesc = function(arg_9_0, arg_9_1, arg_9_2)
 		local var_9_0 = ""
 
-		if BackHomeFurniture[arg_9_1].is_give == 1 then
-			local var_9_1 = BackHomeFurniture[arg_9_1].give_max
+		if arg_9_2 == "is_give" then
+			if BackHomeFurniture[arg_9_1].is_give == 1 then
+				local var_9_1 = BackHomeFurniture[arg_9_1].give_max
 
-			var_9_0 = GetTips("DORM_FUR_INFO_CAN_GIFT")
-		elseif BackHomeFurniture[arg_9_1].is_give == 0 then
-			var_9_0 = GetTips("DORM_FUR_INFO_TAG1")
-		elseif BackHomeFurniture[arg_9_1].is_give == 3 then
+				var_9_0 = string.format(GetTips("DORM_FUR_INFO_TAG2"), var_9_1)
+			else
+				var_9_0 = GetTips("DORM_FUR_INFO_TAG1")
+			end
+		elseif arg_9_2 == "dorm_exp" then
+			var_9_0 = string.format(GetTips("DORM_FUR_INFO_TAG7"), BackHomeFurniture[arg_9_1].dorm_exp)
+		elseif arg_9_2 == "hero_id" then
 			local var_9_2 = BackHomeFurniture[arg_9_1].hero_id
 
 			if HeroRecordCfg[var_9_2] then
 				local var_9_3 = HeroRecordCfg[var_9_2].name
 
-				var_9_0 = string.format(GetTips("DORM_FUR_INFO_TAG3"), GetI18NText(var_9_3))
+				var_9_0 = string.format(GetTips("DORM_FUR_INFO_TAG3"), var_9_3)
 			end
+		elseif arg_9_2 == "scene_id" then
+			local var_9_4 = BackHomeFurniture[arg_9_1].scene_id
+
+			var_9_0 = GetTips("DORM_FUR_INFO_TAG4")
+
+			for iter_9_0, iter_9_1 in ipairs(var_9_4) do
+				var_9_0 = var_9_0 .. arg_9_0:GetRoomTypeName(iter_9_1) .. " "
+			end
+
+			string.sub(var_9_0, 1, -2)
 		end
 
 		return var_9_0
 	end,
-	GetFurPlaceSceneDesc = function(arg_10_0, arg_10_1)
+	GetFurGiftTypeDesc = function(arg_10_0, arg_10_1)
 		local var_10_0 = ""
-		local var_10_1 = BackHomeFurniture[arg_10_1].scene_id
-		local var_10_2 = GetTips("DORM_FUR_INFO_TAG4")
 
-		for iter_10_0, iter_10_1 in ipairs(var_10_1) do
-			var_10_2 = var_10_2 .. arg_10_0:GetRoomTypeName(iter_10_1) .. " "
+		if BackHomeFurniture[arg_10_1].is_give == 1 then
+			local var_10_1 = BackHomeFurniture[arg_10_1].give_max
+
+			var_10_0 = GetTips("DORM_FUR_INFO_CAN_GIFT")
+		elseif BackHomeFurniture[arg_10_1].is_give == 0 then
+			var_10_0 = GetTips("DORM_FUR_INFO_TAG1")
+		elseif BackHomeFurniture[arg_10_1].is_give == 3 then
+			local var_10_2 = BackHomeFurniture[arg_10_1].hero_id
+
+			if HeroRecordCfg[var_10_2] then
+				local var_10_3 = HeroRecordCfg[var_10_2].name
+
+				var_10_0 = string.format(GetTips("DORM_FUR_INFO_TAG3"), GetI18NText(var_10_3))
+			end
 		end
 
-		string.sub(var_10_2, 1, -2)
-
-		return var_10_2
+		return var_10_0
 	end,
-	GetFurGiftMaxDesc = function(arg_11_0, arg_11_1)
-		if BackHomeFurniture[arg_11_1].give_max > 0 then
-			return tostring(BackHomeFurniture[arg_11_1].give_max)
+	GetFurPlaceSceneDesc = function(arg_11_0, arg_11_1)
+		local var_11_0 = ""
+		local var_11_1 = BackHomeFurniture[arg_11_1].scene_id
+		local var_11_2 = GetTips("DORM_FUR_INFO_TAG4")
+
+		for iter_11_0, iter_11_1 in ipairs(var_11_1) do
+			var_11_2 = var_11_2 .. arg_11_0:GetRoomTypeName(iter_11_1) .. " "
+		end
+
+		string.sub(var_11_2, 1, -2)
+
+		return var_11_2
+	end,
+	GetFurGiftMaxDesc = function(arg_12_0, arg_12_1)
+		if BackHomeFurniture[arg_12_1].give_max > 0 then
+			return tostring(BackHomeFurniture[arg_12_1].give_max)
 		else
 			return GetTips("DORM_FUR_GIFT_NUM_NONE")
 		end
 	end,
-	GetFurComfortDesc = function(arg_12_0, arg_12_1)
-		if BackHomeFurniture[arg_12_1].is_give == DormConst.BACKHOME_FUR_GIVE_TYPE.NO_GIFT then
+	GetFurComfortDesc = function(arg_13_0, arg_13_1)
+		if BackHomeFurniture[arg_13_1].is_give == DormConst.BACKHOME_FUR_GIVE_TYPE.NO_GIFT then
 			return GetTips("DORM_FUR_COMFORT_NONE")
 		else
-			return tostring(BackHomeFurniture[arg_12_1].dorm_exp)
+			return tostring(BackHomeFurniture[arg_13_1].dorm_exp)
 		end
 	end,
-	PlayDormAudioEffect = function(arg_13_0, arg_13_1)
-		manager.audio:PlayEffect("ui_dorm", arg_13_1, "")
+	PlayDormAudioEffect = function(arg_14_0, arg_14_1)
+		manager.audio:PlayEffect("ui_dorm", arg_14_1, "")
 	end,
-	ShouldShowBirthdayBtn = function(arg_14_0, arg_14_1)
+	ShouldShowBirthdayBtn = function(arg_15_0, arg_15_1)
 		return false
 	end
 }
 local var_0_1 = {}
 
-function var_0_0.SystemStayTime(arg_15_0, arg_15_1, arg_15_2)
+function var_0_0.SystemStayTime(arg_16_0, arg_16_1, arg_16_2)
 	if not var_0_1 then
 		var_0_1 = {}
 	end
 
-	if arg_15_2 == true then
-		if var_0_1[arg_15_1] then
-			local var_15_0 = manager.time:GetServerTime()
+	if arg_16_2 == true then
+		if var_0_1[arg_16_1] then
+			local var_16_0 = manager.time:GetServerTime()
 
 			SDKTools.SendMessageToSDK("backhome_dorm_opt", {
-				backhome_type = arg_15_1,
-				opt_time = var_15_0 - var_0_1[arg_15_1]
+				backhome_type = arg_16_1,
+				opt_time = var_16_0 - var_0_1[arg_16_1]
 			})
 
-			var_0_1[arg_15_1] = nil
+			var_0_1[arg_16_1] = nil
 		else
 			CustomLog.log("未记录系统开始时间")
 		end
 	else
-		var_0_1[arg_15_1] = manager.time:GetServerTime()
+		var_0_1[arg_16_1] = manager.time:GetServerTime()
 
 		SDKTools.SendMessageToSDK("backhome_dorm_opt", {
 			opt_time = -1,
-			backhome_type = arg_15_1
+			backhome_type = arg_16_1
 		})
 	end
 end
 
-function dump_value_(arg_16_0)
-	if type(arg_16_0) == "string" then
-		arg_16_0 = "\"" .. arg_16_0 .. "\""
+function dump_value_(arg_17_0)
+	if type(arg_17_0) == "string" then
+		arg_17_0 = "\"" .. arg_17_0 .. "\""
 	end
 
-	return tostring(arg_16_0)
+	return tostring(arg_17_0)
 end
 
-function split(arg_17_0, arg_17_1)
-	arg_17_0 = tostring(arg_17_0)
-	arg_17_1 = tostring(arg_17_1)
+function split(arg_18_0, arg_18_1)
+	arg_18_0 = tostring(arg_18_0)
+	arg_18_1 = tostring(arg_18_1)
 
-	if arg_17_1 == "" then
+	if arg_18_1 == "" then
 		return false
 	end
 
-	local var_17_0 = 0
-	local var_17_1 = {}
+	local var_18_0 = 0
+	local var_18_1 = {}
 
-	for iter_17_0, iter_17_1 in function()
-		return string.find(arg_17_0, arg_17_1, var_17_0, true)
+	for iter_18_0, iter_18_1 in function()
+		return string.find(arg_18_0, arg_18_1, var_18_0, true)
 	end do
-		table.insert(var_17_1, string.sub(arg_17_0, var_17_0, iter_17_0 - 1))
+		table.insert(var_18_1, string.sub(arg_18_0, var_18_0, iter_18_0 - 1))
 
-		var_17_0 = iter_17_1 + 1
+		var_18_0 = iter_18_1 + 1
 	end
 
-	table.insert(var_17_1, string.sub(arg_17_0, var_17_0))
+	table.insert(var_18_1, string.sub(arg_18_0, var_18_0))
 
-	return var_17_1
+	return var_18_1
 end
 
-function trim(arg_19_0)
-	return (string.gsub(arg_19_0, "^%s*(.-)%s*$", "%1"))
+function trim(arg_20_0)
+	return (string.gsub(arg_20_0, "^%s*(.-)%s*$", "%1"))
 end
 
-local function var_0_2(arg_20_0)
-	for iter_20_0, iter_20_1 in ipairs(arg_20_0) do
-		print(iter_20_1)
+local function var_0_2(arg_21_0)
+	for iter_21_0, iter_21_1 in ipairs(arg_21_0) do
+		print(iter_21_1)
 	end
 end
 
-function dump(arg_21_0, arg_21_1, arg_21_2, arg_21_3)
-	if type(arg_21_2) ~= "number" then
-		arg_21_2 = 7
+function dump(arg_22_0, arg_22_1, arg_22_2, arg_22_3)
+	if type(arg_22_2) ~= "number" then
+		arg_22_2 = 7
 	end
 
-	local var_21_0 = {}
-	local var_21_1 = {}
-	local var_21_2 = split(debug.traceback("", 2), "\n")
+	local var_22_0 = {}
+	local var_22_1 = {}
+	local var_22_2 = split(debug.traceback("", 2), "\n")
 
-	local function var_21_3(arg_22_0, arg_22_1, arg_22_2, arg_22_3, arg_22_4)
-		arg_22_1 = arg_22_1 or "<var>"
+	local function var_22_3(arg_23_0, arg_23_1, arg_23_2, arg_23_3, arg_23_4)
+		arg_23_1 = arg_23_1 or "<var>"
 
-		local var_22_0 = ""
+		local var_23_0 = ""
 
-		if type(arg_22_4) == "number" then
-			var_22_0 = string.rep(" ", arg_22_4 - string.len(dump_value_(arg_22_1)))
+		if type(arg_23_4) == "number" then
+			var_23_0 = string.rep(" ", arg_23_4 - string.len(dump_value_(arg_23_1)))
 		end
 
-		if type(arg_22_0) ~= "table" then
-			var_21_1[#var_21_1 + 1] = string.format("%s%s%s = %s", arg_22_2, dump_value_(arg_22_1), var_22_0, dump_value_(arg_22_0))
-		elseif var_21_0[tostring(arg_22_0)] then
-			var_21_1[#var_21_1 + 1] = string.format("%s%s%s = *REF*", arg_22_2, dump_value_(arg_22_1), var_22_0)
+		if type(arg_23_0) ~= "table" then
+			var_22_1[#var_22_1 + 1] = string.format("%s%s%s = %s", arg_23_2, dump_value_(arg_23_1), var_23_0, dump_value_(arg_23_0))
+		elseif var_22_0[tostring(arg_23_0)] then
+			var_22_1[#var_22_1 + 1] = string.format("%s%s%s = *REF*", arg_23_2, dump_value_(arg_23_1), var_23_0)
 		else
-			var_21_0[tostring(arg_22_0)] = true
+			var_22_0[tostring(arg_23_0)] = true
 
-			if arg_22_3 > arg_21_2 then
-				var_21_1[#var_21_1 + 1] = string.format("%s%s = *MAX NESTING*", arg_22_2, dump_value_(arg_22_1))
+			if arg_23_3 > arg_22_2 then
+				var_22_1[#var_22_1 + 1] = string.format("%s%s = *MAX NESTING*", arg_23_2, dump_value_(arg_23_1))
 			else
-				var_21_1[#var_21_1 + 1] = string.format("%s%s = {", arg_22_2, dump_value_(arg_22_1))
+				var_22_1[#var_22_1 + 1] = string.format("%s%s = {", arg_23_2, dump_value_(arg_23_1))
 
-				local var_22_1 = arg_22_2 .. "    "
-				local var_22_2 = {}
-				local var_22_3 = 0
-				local var_22_4 = {}
+				local var_23_1 = arg_23_2 .. "    "
+				local var_23_2 = {}
+				local var_23_3 = 0
+				local var_23_4 = {}
 
-				for iter_22_0, iter_22_1 in pairs(arg_22_0) do
-					var_22_2[#var_22_2 + 1] = iter_22_0
+				for iter_23_0, iter_23_1 in pairs(arg_23_0) do
+					var_23_2[#var_23_2 + 1] = iter_23_0
 
-					local var_22_5 = dump_value_(iter_22_0)
-					local var_22_6 = string.len(var_22_5)
+					local var_23_5 = dump_value_(iter_23_0)
+					local var_23_6 = string.len(var_23_5)
 
-					if var_22_3 < var_22_6 then
-						var_22_3 = var_22_6
+					if var_23_3 < var_23_6 then
+						var_23_3 = var_23_6
 					end
 
-					var_22_4[iter_22_0] = iter_22_1
+					var_23_4[iter_23_0] = iter_23_1
 				end
 
-				table.sort(var_22_2, function(arg_23_0, arg_23_1)
-					if type(arg_23_0) == "number" and type(arg_23_1) == "number" then
-						return arg_23_0 < arg_23_1
+				table.sort(var_23_2, function(arg_24_0, arg_24_1)
+					if type(arg_24_0) == "number" and type(arg_24_1) == "number" then
+						return arg_24_0 < arg_24_1
 					else
-						return tostring(arg_23_0) < tostring(arg_23_1)
+						return tostring(arg_24_0) < tostring(arg_24_1)
 					end
 				end)
 
-				for iter_22_2, iter_22_3 in ipairs(var_22_2) do
-					var_21_3(var_22_4[iter_22_3], iter_22_3, var_22_1, arg_22_3 + 1, var_22_3)
+				for iter_23_2, iter_23_3 in ipairs(var_23_2) do
+					var_22_3(var_23_4[iter_23_3], iter_23_3, var_23_1, arg_23_3 + 1, var_23_3)
 				end
 
-				var_21_1[#var_21_1 + 1] = string.format("%s}", arg_22_2)
+				var_22_1[#var_22_1 + 1] = string.format("%s}", arg_23_2)
 			end
 		end
 	end
 
-	var_21_3(arg_21_0, arg_21_1, "- ", 1)
+	var_22_3(arg_22_0, arg_22_1, "- ", 1)
 
-	arg_21_3 = arg_21_3 or var_0_2
+	arg_22_3 = arg_22_3 or var_0_2
 
-	return arg_21_3(var_21_1)
+	return arg_22_3(var_22_1)
 end
 
 return var_0_0

@@ -22,6 +22,10 @@ end
 
 function var_0_0.Dispose(arg_5_0)
 	var_0_0.super.Dispose(arg_5_0)
+	Object.Destroy(arg_5_0.gameObject_)
+
+	arg_5_0.transfrom_ = nil
+	arg_5_0.gameObject_ = nil
 end
 
 return var_0_0

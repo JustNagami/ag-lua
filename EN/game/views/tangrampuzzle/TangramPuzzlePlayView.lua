@@ -25,7 +25,7 @@ function var_0_0.Init(arg_3_0)
 	arg_3_0:AddUIListener()
 
 	arg_3_0.statusController_ = ControllerUtil.GetController(arg_3_0.transform_, "status")
-	arg_3_0.autoPutBtnController_ = ControllerUtil.GetController(arg_3_0.autoBtn_.transform, "status")
+	arg_3_0.autoPutBtnController_ = arg_3_0.autoBtnContoller_:GetController("status")
 	arg_3_0.finalRewardController_ = ControllerUtil.GetController(arg_3_0.finalRewardPanelTrans_, "status")
 	arg_3_0.dragController_ = ControllerUtil.GetController(arg_3_0.transform_, "drag")
 	arg_3_0.beginDragPuzzleHandler_ = handler(arg_3_0, arg_3_0.OnBeginDragPuzzle)
@@ -138,6 +138,8 @@ function var_0_0.ClickFirstTips(arg_12_0)
 end
 
 function var_0_0.OnEnter(arg_13_0)
+	Input.multiTouchEnabled = false
+
 	local var_13_0 = ActivityData:GetActivityData(arg_13_0.params_.activityID)
 
 	arg_13_0.startTime_ = var_13_0.startTime
@@ -178,6 +180,8 @@ function var_0_0.OnEnter(arg_13_0)
 end
 
 function var_0_0.OnExit(arg_14_0)
+	Input.multiTouchEnabled = true
+
 	manager.windowBar:HideBar()
 	arg_14_0:ExitEdit()
 	arg_14_0:StopTimer()
@@ -511,7 +515,7 @@ function var_0_0.OnDragPuzzleEnd(arg_41_0, arg_41_1, arg_41_2)
 	local var_41_3 = arg_41_0.curValidPuzzleList_[var_41_1]
 	local var_41_4 = arg_41_0.puzzleItemList_[var_41_3]
 
-	if var_41_2 > arg_41_0.puzzleCfg_.puzzle_distance or var_41_4 == var_41_0 then
+	if not TangramPuzzleTools.CheckValidDistanceForExchangePuzzle(arg_41_0.activityID_, var_41_2) or var_41_4 == var_41_0 then
 		var_41_0:RecoverTrans()
 	else
 		local var_41_5 = var_41_4:GetGlobalIndex()
@@ -735,16 +739,20 @@ function var_0_0.OnReceivedFinalReward(arg_56_0)
 end
 
 function var_0_0.SpawnClue(arg_57_0)
+	local var_57_0 = PuzzleNewClueCfg.get_id_list_by_main_activity_id[arg_57_0.activityID_] or {}
+
 	arg_57_0.clueItemList_ = {}
 
-	local var_57_0 = arg_57_0.cluePanelTrans_.childCount
+	local var_57_1 = arg_57_0.cluePanelTrans_.childCount
 
-	for iter_57_0 = 1, var_57_0 do
-		local var_57_1 = arg_57_0.cluePanelTrans_:GetChild(iter_57_0 - 1).gameObject
-		local var_57_2 = tonumber(var_57_1.name)
+	for iter_57_0 = 1, var_57_1 do
+		local var_57_2 = arg_57_0.cluePanelTrans_:GetChild(iter_57_0 - 1).gameObject
+		local var_57_3 = var_57_0[iter_57_0] or iter_57_0
 
-		if not arg_57_0.clueItemList_[var_57_2] then
-			arg_57_0.clueItemList_[var_57_2] = TangramPuzzleClueItem.New(var_57_1)
+		var_57_2.name = var_57_3
+
+		if not arg_57_0.clueItemList_[var_57_3] then
+			arg_57_0.clueItemList_[var_57_3] = TangramPuzzleClueItem.New(var_57_2)
 		end
 	end
 end
@@ -788,6 +796,7 @@ end
 function var_0_0.PlayFirstEnterAnim(arg_60_0, arg_60_1)
 	SetActive(arg_60_0.maskGo_, true)
 	SetActive(arg_60_0.firstEnterPanelGo_, false)
+	SetActive(arg_60_0.firstTipsPanelGo_, false)
 
 	local var_60_0 = {}
 	local var_60_1 = TangramPuzzleTools.GetRegionListByType(arg_60_0.activityID_)
@@ -819,12 +828,18 @@ end
 
 function var_0_0.PlayPuzzlePieceEnterAnim(arg_61_0, arg_61_1, arg_61_2)
 	if arg_61_2 > #arg_61_1 then
-		SetActive(arg_61_0.firstEnterPanelGo_, true)
-		arg_61_0:PlayAnim(arg_61_0.firstEnterAnim_, "JigsawPuzzleUI_firstEnterPanel", function()
-			SetActive(arg_61_0.firstEnterPanelGo_, false)
-			SetActive(arg_61_0.maskGo_, false)
+		SetActive(arg_61_0.maskGo_, false)
+
+		if not TangramPuzzleData:GetFirstEnter(arg_61_0.activityID_) then
+			TangramPuzzleData:SetFirstEnter(arg_61_0.activityID_, true)
+			SetActive(arg_61_0.firstEnterPanelGo_, true)
+			arg_61_0:PlayAnim(arg_61_0.firstEnterAnim_, "JigsawPuzzleUI_firstEnterPanel", function()
+				SetActive(arg_61_0.firstEnterPanelGo_, false)
+				arg_61_0:PlayFirstTipsAnim()
+			end)
+		elseif not TangramPuzzleData:GetFirstTips(arg_61_0.activityID_) then
 			arg_61_0:PlayFirstTipsAnim()
-		end)
+		end
 
 		return
 	end

@@ -171,7 +171,7 @@ function var_0_0.AnalyzeComponentCfg(arg_7_0, arg_7_1)
 				end
 			end
 		end
-	elseif var_7_2 == "treeItem" then
+	elseif var_7_2 == "treeGroupChild" then
 		local var_7_35 = arg_7_1[2]
 		local var_7_36 = arg_7_1[3]
 		local var_7_37 = arg_7_1[4]
@@ -179,16 +179,38 @@ function var_0_0.AnalyzeComponentCfg(arg_7_0, arg_7_1)
 		local var_7_39 = arg_7_0:GetViewComponent(var_7_35, var_7_36)
 
 		if var_7_39 then
-			local var_7_40 = var_7_39:GetItemGameObjectById(var_7_37, var_7_38)
+			local var_7_40 = var_7_39:GetGroupGameObjectById(var_7_37)
 
 			if var_7_40 then
-				local var_7_41 = var_7_40:GetComponent("UITreeItem")
+				return var_7_40.transform:Find(var_7_38)
+			end
+		end
+	elseif var_7_2 == "treeItem" then
+		local var_7_41 = arg_7_1[2]
+		local var_7_42 = arg_7_1[3]
+		local var_7_43 = arg_7_1[4]
+		local var_7_44 = arg_7_1[5]
+		local var_7_45 = arg_7_0:GetViewComponent(var_7_41, var_7_42)
 
-				if var_7_41 then
-					return var_7_41.toggle
+		if var_7_45 then
+			local var_7_46 = var_7_45:GetItemGameObjectById(var_7_43, var_7_44)
+
+			if var_7_46 then
+				local var_7_47 = var_7_46:GetComponent("UITreeItem")
+
+				if var_7_47 then
+					return var_7_47.toggle
 				end
 			end
 		end
+	elseif var_7_2 == "rogueTeamBottomBar" then
+		local var_7_48 = arg_7_1[2]
+
+		return manager.rogueTeamInGameInfoBox[var_7_48]
+	elseif var_7_2 == "rogueTeamMechanismBar" then
+		local var_7_49 = arg_7_1[2]
+
+		return manager.rogueTeamMechanismBar[var_7_49]
 	else
 		error("guide unknown way to get component" .. var_7_2)
 	end
@@ -202,6 +224,13 @@ function var_0_0.SetSpecialParams(arg_8_0)
 		manager.notify:Invoke(CHANGE_DUNGEON)
 	elseif arg_8_0._params[1] == "draw" then
 		arg_8_0._guideComponentCfg[4] = GuideTool.GetPoolIndex(arg_8_0._params[2])
+		arg_8_0._maskComponentCfg[4] = GuideTool.GetPoolIndex(arg_8_0._params[2])
+	elseif arg_8_0._params[1] == "chess" then
+		local var_8_0 = manager.ChessBoardManager
+
+		if var_8_0 and #var_8_0:GetHeroProp() > 1 then
+			arg_8_0._guideComponentCfg[3][3] = arg_8_0._params[3]
+		end
 	end
 end
 

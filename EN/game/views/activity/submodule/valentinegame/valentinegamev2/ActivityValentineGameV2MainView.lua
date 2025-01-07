@@ -4,7 +4,7 @@ local var_0_0 = class("ActivityValentineGameV2MainView", ActivityMainBasePanel)
 local var_0_1 = "ACTIVITY_VALENTINE_DESCRIBE"
 
 function var_0_0.GetUIName(arg_1_0)
-	return "UI/VersionUI/IndiaUI_2_8/IndiaValentineUI/IndiaValentineActivityMainUI"
+	return "Widget/Version/SummerUI_Com/SummerUI_Com_IndiaValentineUI/IndiaValentineActivityMainUI"
 end
 
 function var_0_0.AddListeners(arg_2_0)

@@ -68,6 +68,7 @@ end
 function var_0_0.RefrshData(arg_9_0)
 	arg_9_0:IsNotice()
 	arg_9_0:IsLock()
+	arg_9_0:IsAssetPendLock()
 end
 
 function var_0_0.IsNotice(arg_10_0)
@@ -78,81 +79,112 @@ function var_0_0.GetLockState(arg_11_0)
 	return arg_11_0.isLock_
 end
 
-function var_0_0.SetSiblingIndex(arg_12_0, arg_12_1)
-	arg_12_0.transform_:SetSiblingIndex(arg_12_1)
+function var_0_0.GetAssetPendLockkState(arg_12_0)
+	return arg_12_0.isAssetPendLock_
 end
 
-function var_0_0.PlayAnimatorEnter(arg_13_0)
-	if arg_13_0.gameObject_.activeInHierarchy then
-		arg_13_0.animator_:Play("Fx_mapRenderItemt_cx", 0, 0)
-		arg_13_0.animator_:Update(0)
-	end
+function var_0_0.SetSiblingIndex(arg_13_0, arg_13_1)
+	arg_13_0.transform_:SetSiblingIndex(arg_13_1)
 end
 
-function var_0_0.PlayAnimatorExit(arg_14_0)
+function var_0_0.PlayAnimatorEnter(arg_14_0)
 	if arg_14_0.gameObject_.activeInHierarchy then
-		arg_14_0.animator_:Play("Fx_mapRenderItemt_xs", 0, 0)
+		arg_14_0.animator_:Play("Fx_mapRenderItemt_cx", 0, 0)
 		arg_14_0.animator_:Update(0)
 	end
 end
 
-function var_0_0.RefreshItem(arg_15_0)
-	local var_15_0 = ChapterClientCfg[arg_15_0.chapterClientID_]
+function var_0_0.PlayAnimatorExit(arg_15_0)
+	if arg_15_0.gameObject_.activeInHierarchy then
+		arg_15_0.animator_:Play("Fx_mapRenderItemt_xs", 0, 0)
+		arg_15_0.animator_:Update(0)
+	end
+end
 
-	if not var_15_0 then
+function var_0_0.RefreshItem(arg_16_0)
+	local var_16_0 = ChapterClientCfg[arg_16_0.chapterClientID_]
+
+	if not var_16_0 then
 		return
 	end
 
-	arg_15_0.nameText_.text = GetI18NText(var_15_0.name)
+	arg_16_0.nameText_.text = GetI18NText(var_16_0.name)
 
-	arg_15_0:RefreshCustomItem(var_15_0)
+	arg_16_0:RefreshCustomItem(var_16_0)
 end
 
-function var_0_0.RefreshCustomItem(arg_16_0, arg_16_1)
+function var_0_0.RefreshCustomItem(arg_17_0, arg_17_1)
 	return
 end
 
-function var_0_0.RefreshLock(arg_17_0)
-	arg_17_0.lockController_:SetSelectedState(tostring(arg_17_0.isLock_))
+function var_0_0.RefreshLock(arg_18_0)
+	if arg_18_0.isLock_ then
+		arg_18_0.lockController_:SetSelectedState("true")
+	elseif arg_18_0.isAssetPendLock_ then
+		arg_18_0.lockController_:SetSelectedState("assetpend")
+	else
+		arg_18_0.lockController_:SetSelectedState("false")
+	end
 end
 
-function var_0_0.GetLocalPosition(arg_18_0)
-	return arg_18_0.transform_.localPosition
+function var_0_0.GetLocalPosition(arg_19_0)
+	return arg_19_0.transform_.localPosition
 end
 
-function var_0_0.SetPosition(arg_19_0, arg_19_1, arg_19_2, arg_19_3)
-	local var_19_0 = arg_19_0.transform_.localPosition
+function var_0_0.SetPosition(arg_20_0, arg_20_1, arg_20_2, arg_20_3)
+	local var_20_0 = arg_20_0.transform_.localPosition
 
-	arg_19_0.tempVector3_.x = arg_19_1
-	arg_19_0.tempVector3_.y = arg_19_2
-	arg_19_0.tempVector3_.z = var_19_0.z
-	arg_19_0.transform_.localPosition = arg_19_0.tempVector3_
-	arg_19_0.tempVector3_.x = arg_19_3
-	arg_19_0.tempVector3_.y = arg_19_3
-	arg_19_0.tempVector3_.z = 1
-	arg_19_0.transform_.localScale = arg_19_0.tempVector3_
+	arg_20_0.tempVector3_.x = arg_20_1
+	arg_20_0.tempVector3_.y = arg_20_2
+	arg_20_0.tempVector3_.z = var_20_0.z
+	arg_20_0.transform_.localPosition = arg_20_0.tempVector3_
+	arg_20_0.tempVector3_.x = arg_20_3
+	arg_20_0.tempVector3_.y = arg_20_3
+	arg_20_0.tempVector3_.z = 1
+	arg_20_0.transform_.localScale = arg_20_0.tempVector3_
 end
 
-function var_0_0.InvokeBtn(arg_20_0)
-	arg_20_0.isAbove_ = true
+function var_0_0.InvokeBtn(arg_21_0)
+	arg_21_0.isAbove_ = true
 
-	arg_20_0.btn_.onClick:Invoke()
+	arg_21_0.btn_.onClick:Invoke()
 end
 
-function var_0_0.GetChapterClientID(arg_21_0)
-	return arg_21_0.chapterClientID_
+function var_0_0.GetChapterClientID(arg_22_0)
+	return arg_22_0.chapterClientID_
 end
 
-function var_0_0.IsLock(arg_22_0)
-	local var_22_0 = ChapterClientCfg[arg_22_0.chapterClientID_]
-	local var_22_1, var_22_2 = JumpTools.GetSystemLockedText(var_22_0.jump_system)
+function var_0_0.IsLock(arg_23_0)
+	local var_23_0 = ChapterClientCfg[arg_23_0.chapterClientID_]
+	local var_23_1, var_23_2 = JumpTools.GetSystemLockedText(var_23_0.jump_system)
 
-	arg_22_0.isLock_ = var_22_1
-	arg_22_0.lockTips_ = var_22_2
+	arg_23_0.isLock_ = var_23_1
+	arg_23_0.lockTips_ = var_23_2
 end
 
-function var_0_0.GetLockTips(arg_23_0)
-	return arg_23_0.lockTips_
+function var_0_0.IsAssetPendLock(arg_24_0)
+	arg_24_0.asset_pend_key = ChapterClientCfg[arg_24_0.chapterClientID_].asset_pend_key
+	arg_24_0.isAssetPendLock_ = not manager.assetPend:CheckAssetPend(arg_24_0.asset_pend_key)
+end
+
+function var_0_0.GetLockTips(arg_25_0)
+	return arg_25_0.lockTips_
+end
+
+function var_0_0.CheckLock(arg_26_0)
+	if arg_26_0.isLock_ then
+		ShowTips(arg_26_0.lockTips_)
+
+		return true
+	end
+
+	if arg_26_0.isAssetPendLock_ then
+		manager.assetPend:ShowAssetPendMessageBox(arg_26_0.asset_pend_key)
+
+		return true
+	end
+
+	return false
 end
 
 return var_0_0

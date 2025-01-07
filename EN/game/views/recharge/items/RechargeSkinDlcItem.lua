@@ -4,8 +4,10 @@ local var_0_1 = class("RechargeSkinDlcItem", var_0_0)
 function var_0_1.InitUI(arg_1_0)
 	arg_1_0:BindCfgUI()
 
+	arg_1_0.dlcImg_.immediate = true
 	arg_1_0.isLimitTimeController_ = ControllerUtil.GetController(arg_1_0.gameObject_.transform, "isLimitTime")
 	arg_1_0.statusController_ = ControllerUtil.GetController(arg_1_0.gameObject_.transform, "status")
+	arg_1_0.btnController_ = ControllerUtil.GetController(arg_1_0.gameObject_.transform, "btn")
 end
 
 function var_0_1.AddUIListener(arg_2_0)
@@ -87,7 +89,9 @@ function var_0_1.UpdateView(arg_8_0)
 
 	arg_8_0.nameLabel_.text = string.format("%s", arg_8_0.itemCfg.name)
 	arg_8_0.titleLabel_.text = ItemTools.getItemName(var_8_0.id)
-	arg_8_0.dlcImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_8_0.itemCfg.id)
+	arg_8_0.dlcPriceTxt_.text = ShopTools.GetPrice(arg_8_0.goodID)
+	arg_8_0.dlcImg_.spriteSync = "TextureConfig/Character/Icon/" .. arg_8_0.itemCfg.id
+	arg_8_0.costIcon_.sprite = ItemTools.getItemSprite(arg_8_0.shopCfg.cost_id)
 
 	if ShopTools.IsLimitRecharge() then
 		SetActive(arg_8_0.pcBtn_.gameObject, ShopTools.IsRMB(arg_8_0.goodID))
@@ -105,6 +109,8 @@ function var_0_1.RefreshCommonUI(arg_9_0)
 	else
 		SetActive(arg_9_0.limitDiscountGo_, false)
 	end
+
+	arg_9_0.btnController_:SetSelectedState(tostring(ShopTools.HaveSkin(arg_9_0.skinCfg.id) and HomeSceneSettingData:GetUsedState(arg_9_0.itemCfg.id) ~= SceneConst.HOME_SCENE_TYPE.UNLOCK))
 end
 
 function var_0_1.RefreshPriceUI(arg_10_0, arg_10_1)

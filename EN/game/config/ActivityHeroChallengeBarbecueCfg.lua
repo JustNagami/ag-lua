@@ -1,7 +1,7 @@
 ﻿return {
 	[2428601] = {
 		activity_id = 242861,
-		name = "简单",
+		name = "6177d018824e1641b8d970f22a78fcb9",
 		total_check = 20,
 		fail_max = 3,
 		id = 2428601,
@@ -104,7 +104,7 @@
 	},
 	[2428602] = {
 		activity_id = 242861,
-		name = "一般",
+		name = "29439c54c8faab338edf07c17ee86864",
 		total_check = 25,
 		fail_max = 2,
 		id = 2428602,
@@ -232,7 +232,7 @@
 	},
 	[2428603] = {
 		activity_id = 242861,
-		name = "困难",
+		name = "c653043636c3eab2bae09c0cbf3c528d",
 		total_check = 30,
 		fail_max = 1,
 		id = 2428603,

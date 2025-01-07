@@ -1,85 +1,82 @@
 ﻿local var_0_0 = singletonClass("AdvanceTestData", BaseHeroViewData)
 local var_0_1 = {}
-local var_0_2
 
 function var_0_0.Init(arg_1_0)
-	arg_1_0.mainActivityID = 182241
-	arg_1_0.lastSelectIndex = 1
-	arg_1_0.isActivityOpen = false
+	arg_1_0.cacheActivityID = 0
+	arg_1_0.lastSelectIndex = {}
 	arg_1_0.battleResultScore = 0
+	arg_1_0.activityIDList = {}
 	arg_1_0.scoreList = {}
 	arg_1_0.affixList_ = {}
-	var_0_2 = {}
 end
 
-function var_0_0.GetMainActivityID(arg_2_0)
-	return arg_2_0.mainActivityID
+function var_0_0.GetActivityList(arg_2_0)
+	local var_2_0 = {}
+
+	for iter_2_0, iter_2_1 in pairs(arg_2_0.activityIDList) do
+		table.insert(var_2_0, iter_2_1)
+	end
+
+	return var_2_0
 end
 
-function var_0_0.GetLastSelectIndex(arg_3_0)
-	return arg_3_0.lastSelectIndex
+function var_0_0.GetCacheActivityID(arg_3_0)
+	return arg_3_0.cacheActivityID
 end
 
-function var_0_0.SetLastSelectIndex(arg_4_0, arg_4_1)
-	arg_4_0.lastSelectIndex = arg_4_1
+function var_0_0.SetCacheActivityID(arg_4_0, arg_4_1)
+	arg_4_0.cacheActivityID = arg_4_1
 end
 
-function var_0_0.InitDefalutHeroList(arg_5_0)
-	arg_5_0.heroList = clone(HeroData:GetHeroList())
+function var_0_0.GetLastSelectIndex(arg_5_0, arg_5_1)
+	return arg_5_0.lastSelectIndex[arg_5_1] or 1
+end
 
-	for iter_5_0, iter_5_1 in pairs(arg_5_0.heroList) do
-		iter_5_1.servantInfo = clone(iter_5_1:GetServantInfo())
+function var_0_0.SetLastSelectIndex(arg_6_0, arg_6_1, arg_6_2)
+	arg_6_0.lastSelectIndex[arg_6_2] = arg_6_1
+end
 
-		function iter_5_1.GetServantInfo()
-			return iter_5_1.servantInfo
+function var_0_0.InitDefalutHeroList(arg_7_0)
+	arg_7_0.heroList = clone(HeroData:GetHeroList())
+
+	for iter_7_0, iter_7_1 in pairs(arg_7_0.heroList) do
+		iter_7_1.servantInfo = clone(iter_7_1:GetServantInfo())
+
+		function iter_7_1.GetServantInfo()
+			return iter_7_1.servantInfo
 		end
 	end
 end
 
-function var_0_0.GetHeroList(arg_7_0)
-	return arg_7_0.heroList
+function var_0_0.GetHeroList(arg_9_0)
+	return arg_9_0.heroList
 end
 
-function var_0_0.GetSortedHeroList(arg_8_0)
-	return (HeroTools.Sort(arg_8_0:GetHeroList()))
+function var_0_0.GetSortedHeroList(arg_10_0)
+	return (HeroTools.Sort(arg_10_0:GetHeroList()))
 end
 
-function var_0_0.GetAdvanceHeroData(arg_9_0, arg_9_1)
-	return arg_9_0.heroList[arg_9_1]
+function var_0_0.GetAdvanceHeroData(arg_11_0, arg_11_1)
+	return arg_11_0.heroList[arg_11_1]
 end
 
-function var_0_0.GetCurCfgByIndex(arg_10_0, arg_10_1)
-	local var_10_0 = AdvanceTestData.mainActivityID
-	local var_10_1 = AdvanceTestCfg.get_id_list_by_activity_id[var_10_0]
-	local var_10_2
+function var_0_0.GetCurCfgByIndex(arg_12_0, arg_12_1, arg_12_2)
+	local var_12_0 = AdvanceTestCfg.get_id_list_by_activity_id[arg_12_2]
+	local var_12_1
 
-	for iter_10_0, iter_10_1 in pairs(var_10_1) do
-		if AdvanceTestCfg[iter_10_1].stage_type == arg_10_1 then
-			var_10_2 = AdvanceTestCfg[iter_10_1]
+	for iter_12_0, iter_12_1 in pairs(var_12_0) do
+		if AdvanceTestCfg[iter_12_1].stage_type == arg_12_1 then
+			var_12_1 = AdvanceTestCfg[iter_12_1]
 
 			break
 		end
 	end
 
-	return var_10_2
+	return var_12_1
 end
 
-function var_0_0.SetHeroTeam(arg_11_0, arg_11_1, arg_11_2)
-	var_0_2[arg_11_1] = arg_11_2
-end
-
-function var_0_0.GetHeroTeam(arg_12_0, arg_12_1)
-	local var_12_0 = var_0_2[arg_12_1] or {}
-
-	return {
-		var_12_0[1] or 0,
-		var_12_0[2] or 0,
-		var_12_0[3] or 0
-	}
-end
-
-function var_0_0.SetHeroListByDifficult(arg_13_0, arg_13_1)
-	local var_13_0 = arg_13_0:GetCurCfgByIndex(arg_13_1)
+function var_0_0.SetHeroListByDifficult(arg_13_0, arg_13_1, arg_13_2)
+	local var_13_0 = arg_13_0:GetCurCfgByIndex(arg_13_1, arg_13_2)
 	local var_13_1 = var_13_0.character
 	local var_13_2 = var_13_0.weapon
 
@@ -92,26 +89,36 @@ function var_0_0.SetHeroListByDifficult(arg_13_0, arg_13_1)
 	end
 end
 
-function var_0_0.GetisActivityOpen(arg_14_0)
-	return arg_14_0.isActivityOpen
+function var_0_0.GetIsActivityOpen(arg_14_0)
+	local var_14_0
+
+	for iter_14_0, iter_14_1 in pairs(arg_14_0.activityIDList) do
+		if ActivityData:GetActivityIsOpen(iter_14_1) then
+			return true
+		end
+	end
+
+	return false
 end
 
 function var_0_0.OnReceviedAdvanceTestData(arg_15_0, arg_15_1)
 	if arg_15_1 == nil then
-		arg_15_0.isActivityOpen = false
+		return
 	else
-		if arg_15_0.scoreList == nil then
-			arg_15_0.scoreList = {}
+		if not arg_15_0.scoreList[arg_15_1.activity_id] then
+			arg_15_0.scoreList[arg_15_1.activity_id] = {}
 		end
 
-		arg_15_0.isActivityOpen = true
-		arg_15_0.mainActivityID = arg_15_1.activity_id
-		arg_15_0.subActivityList = AdvanceTestCfg.get_id_list_by_activity_id[arg_15_0.mainActivityID]
+		if not arg_15_0.activityIDList[arg_15_1.activity_id] then
+			arg_15_0.activityIDList[arg_15_1.activity_id] = arg_15_1.activity_id
+		end
+
+		arg_15_0.subActivityList = AdvanceTestCfg.get_id_list_by_activity_id[arg_15_1.activity_id]
 
 		for iter_15_0, iter_15_1 in ipairs(arg_15_1.stage_list) do
 			local var_15_0 = AdvanceTestCfg[arg_15_0.subActivityList[iter_15_0]].stage_type
 
-			arg_15_0.scoreList[var_15_0] = iter_15_1.history_max_score
+			arg_15_0.scoreList[arg_15_1.activity_id][var_15_0] = iter_15_1.history_max_score
 		end
 	end
 end
@@ -120,19 +127,24 @@ function var_0_0.OnReceviedBattleResult(arg_16_0, arg_16_1)
 	local var_16_0 = AdvanceTestCfg[arg_16_1.id]
 
 	arg_16_0.battleResultScore = arg_16_1.score
-	arg_16_0.scoreList[var_16_0.stage_type] = arg_16_1.history_max_score
+
+	if not arg_16_0.scoreList[arg_16_1.activity_id] then
+		arg_16_0.scoreList[arg_16_1.activity_id] = {}
+	end
+
+	arg_16_0.scoreList[arg_16_1.activity_id][var_16_0.stage_type] = arg_16_1.history_max_score
 end
 
 function var_0_0.GetBattleResultScore(arg_17_0)
 	return arg_17_0.battleResultScore
 end
 
-function var_0_0.GetHistortyMaxScoreByIndex(arg_18_0, arg_18_1)
-	if not arg_18_0.scoreList or not arg_18_0.scoreList[arg_18_1] then
+function var_0_0.GetHistortyMaxScoreByIndex(arg_18_0, arg_18_1, arg_18_2)
+	if not arg_18_0.scoreList or not arg_18_0.scoreList[arg_18_2] or not arg_18_0.scoreList[arg_18_2][arg_18_1] then
 		return -1
 	end
 
-	return arg_18_0.scoreList[arg_18_1]
+	return arg_18_0.scoreList[arg_18_2][arg_18_1]
 end
 
 function var_0_0.SetAffixList(arg_19_0, arg_19_1)
@@ -143,14 +155,14 @@ function var_0_0.GetAffixList(arg_20_0)
 	return arg_20_0.affixList_ or {}
 end
 
-local var_0_3 = {
+local var_0_2 = {
 	ALL = 1,
 	GUILD = 2
 }
-local var_0_4 = var_0_3.ALL
+local var_0_3 = var_0_2.ALL
 
 function var_0_0.GetCurActivityID(arg_21_0)
-	local var_21_0 = ActivityCfg[arg_21_0.mainActivityID].sub_activity_list
+	local var_21_0 = ActivityCfg[arg_21_0.cacheActivityID].sub_activity_list
 
 	for iter_21_0, iter_21_1 in pairs(var_21_0) do
 		local var_21_1 = ActivityData:GetActivityData(iter_21_1)
@@ -164,15 +176,15 @@ function var_0_0.GetCurActivityID(arg_21_0)
 end
 
 function var_0_0.GetRankTypeConst(arg_22_0)
-	return var_0_3
+	return var_0_2
 end
 
 function var_0_0.GetCurRankType(arg_23_0)
-	return var_0_4
+	return var_0_3
 end
 
 function var_0_0.SetCurRankType(arg_24_0, arg_24_1)
-	var_0_4 = arg_24_1
+	var_0_3 = arg_24_1
 end
 
 return var_0_0

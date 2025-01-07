@@ -35,6 +35,24 @@ function var_0_0.InitUI(arg_4_0)
 			data = clone(ItemTemplateData)
 		})
 	end
+
+	if arg_4_0.itemGo3_ then
+		local var_4_2 = CommonItemView.New(arg_4_0.itemGo3_)
+
+		table.insert(arg_4_0.items_, {
+			item = var_4_2,
+			data = clone(ItemTemplateData)
+		})
+	end
+
+	if arg_4_0.itemGo4_ then
+		local var_4_3 = CommonItemView.New(arg_4_0.itemGo4_)
+
+		table.insert(arg_4_0.items_, {
+			item = var_4_3,
+			data = clone(ItemTemplateData)
+		})
+	end
 end
 
 function var_0_0.AddUIListener(arg_5_0)
@@ -60,10 +78,15 @@ function var_0_0.OnEnter(arg_9_0)
 	arg_9_0.dataList_ = BattlePassListCfg[PassportData:GetId()].display_reward_01
 
 	for iter_9_0, iter_9_1 in ipairs(arg_9_0.items_) do
-		CommonTools.SetCommonData(iter_9_1.item, {
-			id = arg_9_0.dataList_[iter_9_0][1],
-			number = arg_9_0.dataList_[iter_9_0][2] > 1 and arg_9_0.dataList_[iter_9_0][2] or nil
-		}, iter_9_1.data)
+		if arg_9_0.dataList_[iter_9_0] then
+			SetActive(arg_9_0["itemGo" .. iter_9_0 .. "_"], true)
+			CommonTools.SetCommonData(iter_9_1.item, {
+				id = arg_9_0.dataList_[iter_9_0][1],
+				number = arg_9_0.dataList_[iter_9_0][2] > 1 and arg_9_0.dataList_[iter_9_0][2] or nil
+			}, iter_9_1.data)
+		else
+			SetActive(arg_9_0["itemGo" .. iter_9_0 .. "_"], false)
+		end
 	end
 
 	local var_9_0 = PassportData:GetId()

@@ -109,6 +109,10 @@ function var_0_0.Init(arg_2_0)
 			table.insert(var_2_9, string.format("%s_%s", RedPointConst.WAR_CHESS, 71012))
 			table.insert(var_2_9, string.format("%s_%s", RedPointConst.WAR_CHESS, 71011))
 			table.insert(var_2_9, string.format("%s_%s", RedPointConst.ACTIVITY_SIDE_STORY, ActivityConst.THEME.SUMMER))
+		elseif iter_2_7 == 6010012 then
+			local var_2_10 = ActivityConst.SUMMER_CHESS_BOARD_MAIN
+
+			table.insert(var_2_9, string.format("%s%s", ActivityTools.GetRedPointKey(var_2_10), var_2_10))
 		end
 
 		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.COMBAT_SUB_PLOT, iter_2_7), var_2_9)
@@ -124,14 +128,14 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.CHALLENGE_DEMO
 	})
 
-	local var_2_10 = {}
-	local var_2_11 = ChapterClientCfg.get_id_list_by_toggle[401]
+	local var_2_11 = {}
+	local var_2_12 = ChapterClientCfg.get_id_list_by_toggle[401]
 
-	for iter_2_10, iter_2_11 in ipairs(var_2_11) do
-		table.insert(var_2_10, RedPointConst.TOWER_NEW_LEVEL + iter_2_11)
+	for iter_2_10, iter_2_11 in ipairs(var_2_12) do
+		table.insert(var_2_11, RedPointConst.TOWER_NEW_LEVEL + iter_2_11)
 	end
 
-	arg_2_0:addGroup(RedPointConst.TOWER, var_2_10)
+	arg_2_0:addGroup(RedPointConst.TOWER, var_2_11)
 	arg_2_0:addGroup(RedPointConst.CHALLENGE_COMMON, {
 		RedPointConst.MYTHIC_TIMES_AWARD,
 		RedPointConst.MYTHIC_FINAL_AWARD,
@@ -142,7 +146,8 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.TOWER,
 		RedPointConst.WARCHESS,
 		RedPointConst.TEACH,
-		RedPointConst.CORE_VERIFICATION
+		RedPointConst.CORE_VERIFICATION,
+		RedPointConst.CHALLENGE_ROGUE_TEAM
 	})
 	arg_2_0:addGroup(RedPointConst.CHALLENGE_DEMO, {
 		RedPointConst.COOPERATION_DEMO
@@ -151,16 +156,17 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.TEACH_BASE,
 		RedPointConst.TEACH_CHARACTER
 	})
+	arg_2_0:AddRogueTeamGroup()
 
-	local var_2_12 = ChapterTools.GetRedPoint(ChapterConst.DAILY_EQUIP_EXPERIENCE)
+	local var_2_13 = ChapterTools.GetRedPoint(ChapterConst.DAILY_EQUIP_EXPERIENCE)
 
 	arg_2_0:addGroup(RedPointConst.COMBAT_EQUIP, {
 		RedPointConst.BATTLE_EQUIP,
 		RedPointConst.EQUIP_SEIZURE,
-		var_2_12,
+		var_2_13,
 		RedPointConst.DAILY_EQUIP_ENCHANT
 	})
-	arg_2_0:addGroup(var_2_12, {
+	arg_2_0:addGroup(var_2_13, {
 		GetSystemNewRedKeyByChapter(ChapterConst.DAILY_EQUIP_EXPERIENCE)
 	})
 	arg_2_0:addGroup(RedPointConst.DAILY_EQUIP_ENCHANT, {
@@ -171,238 +177,247 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.EQUIP_SEIZURE_UNREAD
 	})
 
-	local var_2_13 = {}
+	local var_2_14 = {}
 
 	for iter_2_12, iter_2_13 in pairs(ChapterClientCfg.get_id_list_by_toggle[BattleConst.TOGGLE.RESOURCE] or {}) do
-		local var_2_14 = ChapterTools.GetRedPoint(iter_2_13)
+		local var_2_15 = ChapterTools.GetRedPoint(iter_2_13)
 
-		table.insert(var_2_13, var_2_14)
-		arg_2_0:addGroup(var_2_14, {
+		table.insert(var_2_14, var_2_15)
+		arg_2_0:addGroup(var_2_15, {
 			GetSystemNewRedKeyByChapter(iter_2_13)
 		})
 	end
 
-	arg_2_0:addGroup(RedPointConst.RESOURSE_STAGE, var_2_13)
+	arg_2_0:addGroup(RedPointConst.RESOURSE_STAGE, var_2_14)
 
-	local var_2_15 = {}
 	local var_2_16 = {}
+	local var_2_17 = {}
 
 	for iter_2_14, iter_2_15 in pairs(HeroCfg.get_id_list_by_private[0]) do
-		local var_2_17 = RedPointConst.HERO_ID .. iter_2_15
+		local var_2_18 = RedPointConst.HERO_ID .. iter_2_15
 
-		table.insert(var_2_16, var_2_17)
+		table.insert(var_2_17, var_2_18)
 
-		local var_2_18 = RedPointConst.HERO_WEAPON_BREAK_ID .. iter_2_15
-		local var_2_19 = RedPointConst.WEAPON_MODULE_UNLOCK .. "_" .. iter_2_15
-		local var_2_20 = RedPointConst.HERO_WEAPON .. iter_2_15
+		local var_2_19 = RedPointConst.HERO_WEAPON_BREAK_ID .. iter_2_15
+		local var_2_20 = RedPointConst.WEAPON_MODULE_UNLOCK .. "_" .. iter_2_15
+		local var_2_21 = RedPointConst.HERO_WEAPON .. iter_2_15
 
-		arg_2_0:addGroup(var_2_20, {
-			var_2_18
+		arg_2_0:addGroup(var_2_21, {
+			var_2_19
 		})
 
-		local var_2_21 = RedPointConst.HERO_UNLOCK_ID .. iter_2_15
-		local var_2_22 = RedPointConst.HERO_PROPERTY_PAGE .. iter_2_15
-		local var_2_23 = RedPointConst.HERO_STAR_ID .. iter_2_15
-		local var_2_24 = RedPointConst.HERO_SKIN_ID .. iter_2_15
-		local var_2_25 = {}
-		local var_2_26 = SkinCfg.get_id_list_by_hero[iter_2_15]
+		local var_2_22 = RedPointConst.HERO_UNLOCK_ID .. iter_2_15
+		local var_2_23 = RedPointConst.HERO_PROPERTY_PAGE .. iter_2_15
+		local var_2_24 = RedPointConst.HERO_STAR_ID .. iter_2_15
+		local var_2_25 = RedPointConst.HERO_SKIN_ID .. iter_2_15
+		local var_2_26 = {}
+		local var_2_27 = SkinCfg.get_id_list_by_hero[iter_2_15]
 
-		for iter_2_16, iter_2_17 in pairs(var_2_26) do
-			table.insert(var_2_25, RedPointConst.HERO_SKIN_ROUTE_ID .. iter_2_17)
+		for iter_2_16, iter_2_17 in pairs(var_2_27) do
+			table.insert(var_2_26, RedPointConst.HERO_SKIN_ROUTE_ID .. iter_2_17)
 		end
 
-		arg_2_0:addGroup(var_2_24, var_2_25)
+		arg_2_0:addGroup(var_2_25, var_2_26)
 
-		local var_2_27 = {}
 		local var_2_28 = {}
+		local var_2_29 = {}
 
 		for iter_2_18, iter_2_19 in pairs(SkinCfg.get_id_list_by_hero[iter_2_15]) do
-			local var_2_29 = RedPointConst.HERO_SKIN_ID_EXTEND .. iter_2_19
+			local var_2_30 = RedPointConst.HERO_SKIN_ID_EXTEND .. iter_2_19
 
-			table.insert(var_2_27, var_2_29)
+			table.insert(var_2_28, var_2_30)
 
 			if #SkinCfg[iter_2_19].gift > 0 then
-				local var_2_30 = RedPointConst.SKIN_GIFT .. "_" .. iter_2_19
+				local var_2_31 = RedPointConst.SKIN_GIFT .. "_" .. iter_2_19
 
-				table.insert(var_2_28, var_2_30)
+				table.insert(var_2_29, var_2_31)
 			end
 		end
 
-		local var_2_31 = {}
+		local var_2_32 = {}
 
-		table.insertto(var_2_31, var_2_27)
-		table.insertto(var_2_31, var_2_28)
-		arg_2_0:addGroup(var_2_24, var_2_31)
+		table.insertto(var_2_32, var_2_28)
+		table.insertto(var_2_32, var_2_29)
+		arg_2_0:addGroup(var_2_25, var_2_32)
 
-		local var_2_32 = string.format("%s_%s", RedPointConst.HERO_REALTION, iter_2_15)
-		local var_2_33 = string.format("%s_%s", RedPointConst.HERO_REALTION_UNLOCK, iter_2_15)
-		local var_2_34 = string.format("%s_%s", RedPointConst.HERO_RELATION_STORY, iter_2_15)
-		local var_2_35 = string.format("%s_%s", RedPointConst.HERO_RELATION_COMBO_SKILL, iter_2_15)
+		local var_2_33 = string.format("%s_%s", RedPointConst.HERO_REALTION, iter_2_15)
+		local var_2_34 = string.format("%s_%s", RedPointConst.HERO_REALTION_UNLOCK, iter_2_15)
+		local var_2_35 = string.format("%s_%s", RedPointConst.HERO_RELATION_STORY, iter_2_15)
+		local var_2_36 = string.format("%s_%s", RedPointConst.HERO_RELATION_COMBO_SKILL, iter_2_15)
 
-		arg_2_0:addGroup(var_2_32, {
-			var_2_33,
+		arg_2_0:addGroup(var_2_33, {
 			var_2_34,
-			var_2_35
+			var_2_35,
+			var_2_36
 		})
-		arg_2_0:addGroup(var_2_22, {
-			var_2_23,
+		arg_2_0:addGroup(var_2_23, {
 			var_2_24,
-			var_2_21,
-			var_2_19
+			var_2_25,
+			var_2_22,
+			var_2_20
 		})
-		table.insert(var_2_15, RedPointConst.HERO_HEART_STORY_ROOT_ID .. iter_2_15)
+		table.insert(var_2_16, RedPointConst.HERO_HEART_STORY_ROOT_ID .. iter_2_15)
 
-		local var_2_36 = HeroTools.GetHeroOntologyID(iter_2_15)
+		local var_2_37 = HeroTools.GetHeroOntologyID(iter_2_15)
 
 		arg_2_0:addGroup(RedPointConst.HERO_ARCHIVE_ID .. iter_2_15, {
-			RedPointConst.HERO_HEARTLINK_ID .. var_2_36,
+			RedPointConst.HERO_HEARTLINK_ID .. var_2_37,
 			string.format("%s_%s", RedPointConst.HERO_TRUST_UP_LEVEL, iter_2_15),
-			var_2_32
+			var_2_33
 		})
 
 		for iter_2_20 = 1, HeroConst.HERO_HEARTLINK_STORY_MAX_COUNT do
-			local var_2_37 = table.concat({
+			local var_2_38 = table.concat({
 				RedPointConst.HERO_HEARTLINK_ID,
-				var_2_36,
+				var_2_37,
 				"_",
 				iter_2_20
 			})
 
-			arg_2_0:addGroup(RedPointConst.HERO_HEARTLINK_ID .. var_2_36, {
-				var_2_37
+			arg_2_0:addGroup(RedPointConst.HERO_HEARTLINK_ID .. var_2_37, {
+				var_2_38
 			})
 		end
 
-		arg_2_0:addGroup(var_2_17, {
-			var_2_23,
+		arg_2_0:addGroup(var_2_18, {
 			var_2_24,
-			var_2_21
+			var_2_25,
+			var_2_22
 		})
 	end
 
-	arg_2_0:addGroup(RedPointConst.HERO, var_2_16)
-	arg_2_0:addGroup(RedPointConst.HERO_HEART_STORY_ROOT_FULL, var_2_15)
+	arg_2_0:addGroup(RedPointConst.HERO, var_2_17)
+	arg_2_0:addGroup(RedPointConst.HERO_HEART_STORY_ROOT_FULL, var_2_16)
 
-	local var_2_38 = {
-		RedPointConst.SIGN_DAILY,
+	local var_2_39 = {
+		RedPointConst.TAROT_SIGN,
 		RedPointConst.BIG_MONTH_CARD
 	}
-	local var_2_39 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.SEVEN_SIGN] or {}
+	local var_2_40 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.SEVEN_SIGN] or {}
 
-	for iter_2_21, iter_2_22 in ipairs(var_2_39) do
-		table.insert(var_2_38, string.format("%s_%s", RedPointConst.SIGN_SEVEN_DAY, iter_2_22))
+	for iter_2_21, iter_2_22 in ipairs(var_2_40) do
+		table.insert(var_2_39, string.format("%s_%s", RedPointConst.SIGN_SEVEN_DAY, iter_2_22))
 	end
 
-	arg_2_0:addGroup(RedPointConst.SIGN, var_2_38)
+	arg_2_0:addGroup(RedPointConst.SIGN, var_2_39)
 
-	local var_2_40 = {}
-	local var_2_41 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.SEVEN_DAY_SIGN_SKIN] or {}
+	local var_2_41 = {}
+	local var_2_42 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.SEVEN_DAY_SIGN_SKIN] or {}
 
-	for iter_2_23, iter_2_24 in ipairs(var_2_41) do
-		table.insert(var_2_40, string.format("%s_%s", RedPointConst.SEVEN_DAY_SIGN_SKIN, iter_2_24))
+	for iter_2_23, iter_2_24 in ipairs(var_2_42) do
+		table.insert(var_2_41, string.format("%s_%s", RedPointConst.SEVEN_DAY_SIGN_SKIN, iter_2_24))
 	end
 
-	arg_2_0:addGroup(RedPointConst.SEVEN_DAY_SIGN_SKIN, var_2_40)
+	arg_2_0:addGroup(RedPointConst.SEVEN_DAY_SIGN_SKIN, var_2_41)
 
-	local var_2_42 = {}
-	local var_2_43 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.SEVEN_DAY_SIGN_SKIN_LUWU] or {}
+	local var_2_43 = {}
+	local var_2_44 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.SEVEN_DAY_SIGN_SKIN_LUWU] or {}
 
-	for iter_2_25, iter_2_26 in ipairs(var_2_43) do
-		table.insert(var_2_42, string.format("%s_%s", RedPointConst.SEVEN_DAY_SIGN_SKIN, iter_2_26))
+	for iter_2_25, iter_2_26 in ipairs(var_2_44) do
+		table.insert(var_2_43, string.format("%s_%s", RedPointConst.SEVEN_DAY_SIGN_SKIN, iter_2_26))
 	end
 
-	arg_2_0:addGroup(RedPointConst.SEVEN_DAY_SIGN_SKIN, var_2_42)
+	arg_2_0:addGroup(RedPointConst.SEVEN_DAY_SIGN_SKIN, var_2_43)
 
-	local var_2_44 = {}
-	local var_2_45 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.SEVEN_DAY_SIGN_SKIN_WORLD_LINE] or {}
+	local var_2_45 = {}
+	local var_2_46 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.SEVEN_DAY_SIGN_SKIN_WORLD_LINE] or {}
 
-	for iter_2_27, iter_2_28 in ipairs(var_2_45) do
-		table.insert(var_2_44, string.format("%s_%s", RedPointConst.SEVEN_DAY_SIGN_SKIN, iter_2_28))
+	for iter_2_27, iter_2_28 in ipairs(var_2_46) do
+		table.insert(var_2_45, string.format("%s_%s", RedPointConst.SEVEN_DAY_SIGN_SKIN, iter_2_28))
 	end
 
-	arg_2_0:addGroup(RedPointConst.SEVEN_DAY_SIGN_SKIN, var_2_44)
+	arg_2_0:addGroup(RedPointConst.SEVEN_DAY_SIGN_SKIN, var_2_45)
 
-	local var_2_46 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.NORSE_SURPRISE_GIFT_DRAW] or {}
+	local var_2_47 = {}
+	local var_2_48 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.SEVEN_DAY_SIGN_SKIN_WORLD_LINE] or {}
 
-	for iter_2_29, iter_2_30 in ipairs(var_2_46) do
-		local var_2_47 = string.format("%s_%s", RedPointConst.ACTIVITY_3_0_SURPRISE_GIFT_DRAW, iter_2_30)
-		local var_2_48 = string.format("%s_%s", RedPointConst.ACTIVITY_3_0_SURPRISE_GIFT_RECEIVE, iter_2_30)
-		local var_2_49 = string.format("%s_%s", RedPointConst.ACTIVITY_3_0_SURPRISE_GIFT, iter_2_30)
+	for iter_2_29, iter_2_30 in ipairs(var_2_48) do
+		table.insert(var_2_47, string.format("%s_%s", RedPointConst.SEVEN_DAY_SIGN_SKIN, iter_2_30))
+	end
 
-		arg_2_0:addGroup(var_2_49, {
-			var_2_47,
-			var_2_48
+	arg_2_0:addGroup(RedPointConst.SEVEN_DAY_SIGN_SKIN, var_2_47)
+
+	local var_2_49 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.NORSE_SURPRISE_GIFT_DRAW] or {}
+
+	for iter_2_31, iter_2_32 in ipairs(var_2_49) do
+		local var_2_50 = string.format("%s_%s", RedPointConst.ACTIVITY_3_0_SURPRISE_GIFT_DRAW, iter_2_32)
+		local var_2_51 = string.format("%s_%s", RedPointConst.ACTIVITY_3_0_SURPRISE_GIFT_RECEIVE, iter_2_32)
+		local var_2_52 = string.format("%s_%s", RedPointConst.ACTIVITY_3_0_SURPRISE_GIFT, iter_2_32)
+
+		arg_2_0:addGroup(var_2_52, {
+			var_2_50,
+			var_2_51
 		})
 	end
 
-	local var_2_50 = string.format("%s_%s", RedPointConst.ACTIVITY_3_0_SURPRISE_GIFT, ActivityConst.ACTIVITY_3_0_SURPRISE_GIFT_DRAW)
+	local var_2_53 = string.format("%s_%s", RedPointConst.ACTIVITY_3_0_SURPRISE_GIFT, ActivityConst.ACTIVITY_3_0_SURPRISE_GIFT_DRAW)
 
 	arg_2_0:addGroup(string.format("%s_%s", RedPointConst.SEVEN_DAY_SIGN_SKIN, ActivityConst.ACTIVITY_3_0_SEVEN_DAY_SKIN_SIGN), {
-		var_2_50
+		var_2_53
 	})
 
-	local var_2_51 = {}
-	local var_2_52 = {}
-	local var_2_53 = {}
+	local var_2_54 = {}
+	local var_2_55 = {}
+	local var_2_56 = {}
 
-	for iter_2_31, iter_2_32 in ipairs(ChipCfg.get_id_list_by_type_id[ChipConst.TYPE_MANAGER]) do
-		table.insert(var_2_52, string.format("%s_%s", RedPointConst.CHIP_MANAGER, iter_2_32))
-		table.insert(var_2_53, string.format("%s_%s", RedPointConst.CHIP_MANAGER, iter_2_32))
+	for iter_2_33, iter_2_34 in ipairs(ChipCfg.get_id_list_by_type_id[ChipConst.TYPE_MANAGER]) do
+		table.insert(var_2_55, string.format("%s_%s", RedPointConst.CHIP_MANAGER, iter_2_34))
+		table.insert(var_2_56, string.format("%s_%s", RedPointConst.CHIP_MANAGER, iter_2_34))
 	end
 
-	for iter_2_33, iter_2_34 in ipairs(ChipCfg.get_id_list_by_type_id[ChipConst.TYPE_CHIP]) do
-		table.insert(var_2_51, string.format("%s_%s", RedPointConst.CHIP_CHIP, iter_2_34))
-		table.insert(var_2_53, string.format("%s_%s", RedPointConst.CHIP_CHIP, iter_2_34))
+	for iter_2_35, iter_2_36 in ipairs(ChipCfg.get_id_list_by_type_id[ChipConst.TYPE_CHIP]) do
+		table.insert(var_2_54, string.format("%s_%s", RedPointConst.CHIP_CHIP, iter_2_36))
+		table.insert(var_2_56, string.format("%s_%s", RedPointConst.CHIP_CHIP, iter_2_36))
 	end
 
-	arg_2_0:addGroup(RedPointConst.CHIP_CHIP, var_2_51)
-	arg_2_0:addGroup(RedPointConst.CHIP_MANAGER_CHIP, var_2_52)
-	arg_2_0:addGroup(RedPointConst.CHIP_MANAGER, var_2_53)
+	arg_2_0:addGroup(RedPointConst.CHIP_CHIP, var_2_54)
+	arg_2_0:addGroup(RedPointConst.CHIP_MANAGER_CHIP, var_2_55)
+	arg_2_0:addGroup(RedPointConst.CHIP_MANAGER, var_2_56)
 
-	for iter_2_35, iter_2_36 in pairs(ChipCfg.get_id_list_by_spec_char) do
-		if iter_2_35 > 0 then
-			local var_2_54 = RedPointConst.CHIP_HERO_CHIP .. "_" .. iter_2_35
-			local var_2_55 = {}
-			local var_2_56 = {}
-
-			for iter_2_37, iter_2_38 in pairs(iter_2_36) do
-				local var_2_57 = RedPointConst.CHIP_HERO_CHIP .. "_" .. iter_2_35 .. "_" .. ChipCfg[iter_2_38].role_type_id .. "_" .. iter_2_38
-
-				if var_2_55[ChipCfg[iter_2_38].role_type_id] then
-					table.insert(var_2_55[ChipCfg[iter_2_38].role_type_id], var_2_57)
-				else
-					var_2_55[ChipCfg[iter_2_38].role_type_id] = {
-						var_2_57
-					}
-				end
-
-				local var_2_58 = RedPointConst.CHIP_HERO_CURRENCY_CHIP .. "_" .. iter_2_35 .. "_" .. ChipCfg[iter_2_38].role_type_id .. "_" .. iter_2_38
-
-				if var_2_56[ChipCfg[iter_2_38].role_type_id] then
-					table.insert(var_2_56[ChipCfg[iter_2_38].role_type_id], var_2_58)
-				else
-					var_2_56[ChipCfg[iter_2_38].role_type_id] = {
-						var_2_58
-					}
-				end
-			end
-
+	for iter_2_37, iter_2_38 in pairs(ChipCfg.get_id_list_by_spec_char) do
+		if iter_2_37 > 0 then
+			local var_2_57 = RedPointConst.CHIP_HERO_CHIP .. "_" .. iter_2_37
+			local var_2_58 = {}
 			local var_2_59 = {}
 
-			for iter_2_39, iter_2_40 in pairs(var_2_55) do
-				local var_2_60 = RedPointConst.CHIP_HERO_CHIP .. "_" .. iter_2_35 .. "_" .. iter_2_39
+			for iter_2_39, iter_2_40 in pairs(iter_2_38) do
+				local var_2_60 = RedPointConst.CHIP_HERO_CHIP .. "_" .. iter_2_37 .. "_" .. ChipCfg[iter_2_40].role_type_id .. "_" .. iter_2_40
 
-				arg_2_0:addGroup(var_2_60, var_2_55[iter_2_39])
-				table.insert(var_2_59, var_2_60)
+				if var_2_58[ChipCfg[iter_2_40].role_type_id] then
+					table.insert(var_2_58[ChipCfg[iter_2_40].role_type_id], var_2_60)
+				else
+					var_2_58[ChipCfg[iter_2_40].role_type_id] = {
+						var_2_60
+					}
+				end
+
+				local var_2_61 = RedPointConst.CHIP_HERO_CURRENCY_CHIP .. "_" .. iter_2_37 .. "_" .. ChipCfg[iter_2_40].role_type_id .. "_" .. iter_2_40
+
+				if var_2_59[ChipCfg[iter_2_40].role_type_id] then
+					table.insert(var_2_59[ChipCfg[iter_2_40].role_type_id], var_2_61)
+				else
+					var_2_59[ChipCfg[iter_2_40].role_type_id] = {
+						var_2_61
+					}
+				end
 			end
 
-			for iter_2_41, iter_2_42 in pairs(var_2_56) do
-				local var_2_61 = RedPointConst.CHIP_HERO_CURRENCY_CHIP .. "_" .. iter_2_35 .. "_" .. iter_2_41
+			local var_2_62 = {}
 
-				arg_2_0:addGroup(var_2_61, var_2_56[iter_2_41])
+			for iter_2_41, iter_2_42 in pairs(var_2_58) do
+				local var_2_63 = RedPointConst.CHIP_HERO_CHIP .. "_" .. iter_2_37 .. "_" .. iter_2_41
+
+				arg_2_0:addGroup(var_2_63, var_2_58[iter_2_41])
+				table.insert(var_2_62, var_2_63)
 			end
 
-			arg_2_0:addGroup(var_2_54, var_2_59)
+			for iter_2_43, iter_2_44 in pairs(var_2_59) do
+				local var_2_64 = RedPointConst.CHIP_HERO_CURRENCY_CHIP .. "_" .. iter_2_37 .. "_" .. iter_2_43
+
+				arg_2_0:addGroup(var_2_64, var_2_59[iter_2_43])
+			end
+
+			arg_2_0:addGroup(var_2_57, var_2_62)
 		end
 	end
 
@@ -410,17 +425,21 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.FRIEND_FRIEND_REQUESTS
 	})
 
-	local var_2_62 = {}
+	local var_2_65 = {}
 
-	for iter_2_43, iter_2_44 in ipairs(ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.SCENE]) do
-		local var_2_63 = HomeSceneSettingCfg[iter_2_44]
+	for iter_2_45, iter_2_46 in ipairs(ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.SCENE]) do
+		local var_2_66 = HomeSceneSettingCfg[iter_2_46]
 
-		if var_2_63 and var_2_63.limit_display == 1 then
-			table.insert(var_2_62, RedPointConst.SCENE .. "_" .. iter_2_44)
+		if var_2_66 and var_2_66.limit_display == 1 then
+			table.insert(var_2_65, RedPointConst.SCENE .. "_" .. iter_2_46)
 		end
 	end
 
-	arg_2_0:addGroup(RedPointConst.SCENE, var_2_62)
+	for iter_2_47, iter_2_48 in pairs(SkinSceneActionCfg.get_id_list_by_special_scene_id) do
+		table.insert(var_2_65, RedPointConst.SCENE .. "_" .. iter_2_47)
+	end
+
+	arg_2_0:addGroup(RedPointConst.SCENE, var_2_65)
 	arg_2_0:addGroup(RedPointConst.FORUM_PLATFORM, {
 		RedPointConst.FORUM,
 		RedPointConst.FORUM_UNREAD
@@ -443,41 +462,52 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.MAIN_HOME_SDK
 	})
 
-	local var_2_64 = {}
-
-	for iter_2_45, iter_2_46 in pairs(AchievementCfg.get_id_list_by_type_id) do
-		table.insert(var_2_64, string.format("%s_%s", RedPointConst.ACHIEVEMENT, iter_2_45))
-	end
-
-	local var_2_65 = {}
-
-	for iter_2_47, iter_2_48 in pairs(AchievementStoryCfg.all) do
-		table.insert(var_2_65, string.format("%s_%s", RedPointConst.ACHIEVEMENT_STORY, iter_2_48))
-	end
-
-	arg_2_0:addGroup(RedPointConst.ACHIEVEMENT_STORY, var_2_65)
-	table.insertto(var_2_64, var_2_65)
-	arg_2_0:addGroup(RedPointConst.ACHIEVEMENT, var_2_64)
-
-	local var_2_66 = {}
-
-	for iter_2_49, iter_2_50 in ipairs(ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.STICKER_BG]) do
-		table.insert(var_2_66, RedPointConst.STICKER_BG .. "_" .. iter_2_50)
-	end
-
-	arg_2_0:addGroup(RedPointConst.STICKER_BG, var_2_66)
-
 	local var_2_67 = {}
-	local var_2_68 = ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.STICKER]
 
-	for iter_2_51, iter_2_52 in ipairs(var_2_68) do
-		table.insert(var_2_67, RedPointConst.STICKER_UNLOCK .. "_" .. iter_2_52)
+	for iter_2_49, iter_2_50 in pairs(AchievementCfg.get_id_list_by_type_id) do
+		table.insert(var_2_67, string.format("%s_%s", RedPointConst.ACHIEVEMENT, iter_2_49))
 	end
 
-	arg_2_0:addGroup(RedPointConst.STICKER, var_2_67)
-	arg_2_0:addGroup(RedPointConst.STICKER_ROOT, {
-		RedPointConst.STICKER,
-		RedPointConst.STICKER_BG
+	local var_2_68 = {}
+
+	for iter_2_51, iter_2_52 in pairs(AchievementStoryCfg.all) do
+		table.insert(var_2_68, string.format("%s_%s", RedPointConst.ACHIEVEMENT_STORY, iter_2_52))
+	end
+
+	arg_2_0:addGroup(RedPointConst.ACHIEVEMENT_STORY, var_2_68)
+	table.insertto(var_2_67, var_2_68)
+	arg_2_0:addGroup(RedPointConst.ACHIEVEMENT, var_2_67)
+
+	local var_2_69 = {}
+	local var_2_70 = {}
+	local var_2_71 = {}
+	local var_2_72 = {}
+
+	for iter_2_53, iter_2_54 in ipairs(ProfileDecorateItemCfg.all) do
+		local var_2_73 = ProfileDecorateItemCfg[iter_2_54]
+
+		if var_2_73.item_type == 4 then
+			table.insert(var_2_69, RedPointConst.CUSTOM_STICKER_ITEM .. "_" .. iter_2_54)
+		elseif var_2_73.item_type == 5 then
+			table.insert(var_2_71, RedPointConst.CUSTOM_STICKER_ITEM .. "_" .. iter_2_54)
+		elseif var_2_73.item_type == 6 then
+			table.insert(var_2_70, RedPointConst.CUSTOM_STICKER_ITEM .. "_" .. iter_2_54)
+		end
+	end
+
+	for iter_2_55, iter_2_56 in ipairs(StickerSuitCfg.all) do
+		table.insert(var_2_72, RedPointConst.CUSTOM_STICKER_SUIT_REWARD .. "_" .. iter_2_56)
+	end
+
+	arg_2_0:addGroup(RedPointConst.CUSTOM_STICKER_BG, var_2_69)
+	arg_2_0:addGroup(RedPointConst.CUSTOM_STICKER_FG, var_2_70)
+	arg_2_0:addGroup(RedPointConst.CUSTOM_STICKER_ST, var_2_71)
+	arg_2_0:addGroup(RedPointConst.CUSTOM_STICKER_SUIT_REWARD, var_2_72)
+	arg_2_0:addGroup(RedPointConst.CUSTOM_STICKER_ROOT, {
+		RedPointConst.CUSTOM_STICKER_ST,
+		RedPointConst.CUSTOM_STICKER_BG,
+		RedPointConst.CUSTOM_STICKER_FG,
+		RedPointConst.CUSTOM_STICKER_SUIT_REWARD
 	})
 	arg_2_0:addGroup(RedPointConst.PASSPORT_TASKS, {
 		RedPointConst.PASSPORT_TASK_BONUS_7,
@@ -547,43 +577,42 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.ILLU_HERO
 	})
 
-	local var_2_69 = {}
-	local var_2_70 = ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.TAG]
+	local var_2_74 = {}
+	local var_2_75 = ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.TAG]
 
-	for iter_2_53, iter_2_54 in ipairs(var_2_70) do
-		if ItemCfg[iter_2_54].sub_type ~= ItemConst.ITEM_SUB_TYPE.TAG_LIMIT then
-			table.insert(var_2_69, RedPointConst.TAG .. "_" .. iter_2_54)
+	for iter_2_57, iter_2_58 in ipairs(var_2_75) do
+		if ItemCfg[iter_2_58].sub_type ~= ItemConst.ITEM_SUB_TYPE.TAG_LIMIT then
+			table.insert(var_2_74, RedPointConst.TAG .. "_" .. iter_2_58)
 		end
 	end
 
-	arg_2_0:addGroup(RedPointConst.TAG, var_2_69)
+	arg_2_0:addGroup(RedPointConst.TAG, var_2_74)
 
-	local var_2_71 = {}
-	local var_2_72 = ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.CARD_BG]
+	local var_2_76 = {}
+	local var_2_77 = ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.CARD_BG]
 
-	for iter_2_55, iter_2_56 in ipairs(var_2_72) do
-		if ItemCfg[iter_2_56].sub_type ~= ItemConst.ITEM_SUB_TYPE.CARD_BG_LIMIT then
-			table.insert(var_2_71, RedPointConst.CARD_BG .. "_" .. iter_2_56)
+	for iter_2_59, iter_2_60 in ipairs(var_2_77) do
+		if ItemCfg[iter_2_60].sub_type ~= ItemConst.ITEM_SUB_TYPE.CARD_BG_LIMIT then
+			table.insert(var_2_76, RedPointConst.CARD_BG .. "_" .. iter_2_60)
 		end
 	end
 
-	arg_2_0:addGroup(RedPointConst.CARD_BG, var_2_71)
+	arg_2_0:addGroup(RedPointConst.CARD_BG, var_2_76)
 
-	local var_2_73 = {}
-	local var_2_74 = GameSetting.profile_chat_bubble_default.value[1]
+	local var_2_78 = {}
+	local var_2_79 = GameSetting.profile_chat_bubble_default.value[1]
 
-	for iter_2_57, iter_2_58 in ipairs(ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.CHAT_BUBBLE]) do
-		if iter_2_58 ~= var_2_74 then
-			table.insert(var_2_73, string.format("%s_%s", RedPointConst.CHAT_BUBBLE, iter_2_58))
+	for iter_2_61, iter_2_62 in ipairs(ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.CHAT_BUBBLE]) do
+		if iter_2_62 ~= var_2_79 then
+			table.insert(var_2_78, string.format("%s_%s", RedPointConst.CHAT_BUBBLE, iter_2_62))
 		end
 	end
 
-	arg_2_0:addGroup(RedPointConst.CHAT_BUBBLE, var_2_73)
+	arg_2_0:addGroup(RedPointConst.CHAT_BUBBLE, var_2_78)
 	arg_2_0:addGroup(RedPointConst.USER_CUSTOM, {
 		RedPointConst.CHAT_BUBBLE
 	})
 	arg_2_0:addGroup(RedPointConst.ILLU_MAIN, {
-		RedPointConst.STICKER_ROOT,
 		RedPointConst.BRITHDAY,
 		RedPointConst.TAG,
 		RedPointConst.USER_CUSTOM
@@ -591,6 +620,27 @@ function var_0_0.Init(arg_2_0)
 	arg_2_0:addGroup(RedPointConst.ILLU_HERO, {
 		RedPointConst.HERO_RACE_COLLECT_REWARD
 	})
+
+	local var_2_80 = {}
+
+	for iter_2_63, iter_2_64 in ipairs(ActivityMonsterCosplayCfg.all) do
+		local var_2_81 = ActivityMonsterCosplayCfg[iter_2_64]
+
+		var_2_80[iter_2_64] = {}
+
+		for iter_2_65, iter_2_66 in ipairs(var_2_81.skill_list) do
+			table.insert(var_2_80[iter_2_64], "MonsterCosPlay" .. iter_2_66)
+		end
+	end
+
+	local var_2_82 = {}
+
+	for iter_2_67, iter_2_68 in ipairs(ActivityMonsterCosplayCfg.all) do
+		arg_2_0:addGroup("MonsterCosPlayMonsterID" .. iter_2_68, var_2_80[iter_2_68])
+		table.insert(var_2_82, "MonsterCosPlayMonsterID" .. iter_2_68)
+	end
+
+	arg_2_0:addGroup(RedPointConst.MONSTER_COSPLAY_SKILL, var_2_82)
 	arg_2_0:addGroup(RedPointConst.NOOB_FIRST_RECHARGE, {
 		RedPointConst.NOOB_FIRST_RECHARGE_1,
 		RedPointConst.NOOB_FIRST_RECHARGE_2
@@ -605,40 +655,40 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.NOOB_BP_RECHARGE
 	})
 
-	local var_2_75 = {}
+	local var_2_83 = {}
 
-	for iter_2_59, iter_2_60 in ipairs(NoobVersionCfg.all) do
-		local var_2_76 = NoobVersionCfg[iter_2_60]
-		local var_2_77 = var_2_76.noob_advance_task_type
+	for iter_2_69, iter_2_70 in ipairs(NoobVersionCfg.all) do
+		local var_2_84 = NoobVersionCfg[iter_2_70]
+		local var_2_85 = var_2_84.noob_advance_task_type
 
-		if type(var_2_77) == "table" then
-			for iter_2_61, iter_2_62 in ipairs(var_2_77) do
-				local var_2_78 = string.format("%s_%d", RedPointConst.NOOB_ADVANCE, iter_2_62)
+		if type(var_2_85) == "table" then
+			for iter_2_71, iter_2_72 in ipairs(var_2_85) do
+				local var_2_86 = string.format("%s_%d", RedPointConst.NOOB_ADVANCE, iter_2_72)
 
-				var_2_75[#var_2_75 + 1] = var_2_78
+				var_2_83[#var_2_83 + 1] = var_2_86
 
-				local var_2_79 = var_2_76.noob_advance_task_phase[iter_2_61]
-				local var_2_80 = NoobAdvanceTaskPhaseListCfg[var_2_79].phase_list
-				local var_2_81 = {}
+				local var_2_87 = var_2_84.noob_advance_task_phase[iter_2_71]
+				local var_2_88 = NoobAdvanceTaskPhaseListCfg[var_2_87].phase_list
+				local var_2_89 = {}
 
-				for iter_2_63, iter_2_64 in ipairs(var_2_80) do
-					local var_2_82 = string.format("%s_%d_%d", RedPointConst.NOOB_ADVANCE, iter_2_62, iter_2_63)
+				for iter_2_73, iter_2_74 in ipairs(var_2_88) do
+					local var_2_90 = string.format("%s_%d_%d", RedPointConst.NOOB_ADVANCE, iter_2_72, iter_2_73)
 
-					var_2_81[#var_2_81 + 1] = var_2_82
+					var_2_89[#var_2_89 + 1] = var_2_90
 
-					local var_2_83 = {}
+					local var_2_91 = {}
 
-					for iter_2_65, iter_2_66 in ipairs(iter_2_64[2]) do
-						var_2_83[#var_2_83 + 1] = string.format("%s_%d_%d_%d", RedPointConst.NOOB_ADVANCE, iter_2_62, iter_2_63, iter_2_66[1])
+					for iter_2_75, iter_2_76 in ipairs(iter_2_74[2]) do
+						var_2_91[#var_2_91 + 1] = string.format("%s_%d_%d_%d", RedPointConst.NOOB_ADVANCE, iter_2_72, iter_2_73, iter_2_76[1])
 					end
 
-					arg_2_0:addGroup(var_2_82, var_2_83)
+					arg_2_0:addGroup(var_2_90, var_2_91)
 				end
 
-				arg_2_0:addGroup(var_2_78, var_2_81)
+				arg_2_0:addGroup(var_2_86, var_2_89)
 			end
 
-			arg_2_0:addGroup(RedPointConst.NOOB_ADVANCE, var_2_75)
+			arg_2_0:addGroup(RedPointConst.NOOB_ADVANCE, var_2_83)
 		end
 	end
 
@@ -663,41 +713,41 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.MATRIX_TERMINAL_GIFT_SHELTER
 	})
 
-	local var_2_84 = {}
+	local var_2_92 = {}
 
-	for iter_2_67, iter_2_68 in pairs(WarchessLevelCfg.get_id_list_by_type) do
-		if iter_2_67 ~= 0 then
-			local var_2_85 = {}
+	for iter_2_77, iter_2_78 in pairs(WarchessLevelCfg.get_id_list_by_type) do
+		if iter_2_77 ~= 0 then
+			local var_2_93 = {}
 
-			for iter_2_69, iter_2_70 in ipairs(iter_2_68) do
-				table.insert(var_2_85, string.format("%s_%s_%s", RedPointConst.WAR_CHESS, iter_2_67, iter_2_70))
+			for iter_2_79, iter_2_80 in ipairs(iter_2_78) do
+				table.insert(var_2_93, string.format("%s_%s_%s", RedPointConst.WAR_CHESS, iter_2_77, iter_2_80))
 			end
 
-			arg_2_0:addGroup(string.format("%s_%s", RedPointConst.WAR_CHESS, iter_2_67), var_2_85)
+			arg_2_0:addGroup(string.format("%s_%s", RedPointConst.WAR_CHESS, iter_2_77), var_2_93)
 		end
 	end
 
-	local var_2_86 = {}
+	local var_2_94 = {}
 
-	for iter_2_71, iter_2_72 in ipairs(StageGroupCfg.get_id_list_by_type[BattleConst.STAGE_TYPE_NEW.OSIRIS_DEMON]) do
-		table.insert(var_2_86, DemonChallengeData:GetRedPointConst(iter_2_71))
+	for iter_2_81, iter_2_82 in ipairs(StageGroupCfg.get_id_list_by_type[BattleConst.STAGE_TYPE_NEW.OSIRIS_DEMON]) do
+		table.insert(var_2_94, DemonChallengeData:GetRedPointConst(iter_2_81))
 	end
 
-	arg_2_0:addGroup(RedPointConst.OSIRIS_DEMON, var_2_86)
+	arg_2_0:addGroup(RedPointConst.OSIRIS_DEMON, var_2_94)
 
-	for iter_2_73, iter_2_74 in ipairs(ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.HERO_TRIAL]) do
-		local var_2_87 = ActivityCfg[iter_2_74].sub_activity_list
-		local var_2_88 = {}
+	for iter_2_83, iter_2_84 in ipairs(ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.HERO_TRIAL]) do
+		local var_2_95 = ActivityCfg[iter_2_84].sub_activity_list
+		local var_2_96 = {}
 
-		for iter_2_75, iter_2_76 in pairs(var_2_87) do
-			local var_2_89 = ActivityHeroTrialCfg.get_id_list_by_activity_id[iter_2_76]
+		for iter_2_85, iter_2_86 in pairs(var_2_95) do
+			local var_2_97 = ActivityHeroTrialCfg.get_id_list_by_activity_id[iter_2_86]
 
-			for iter_2_77, iter_2_78 in ipairs(var_2_89) do
-				table.insert(var_2_88, string.format("%s_%s", RedPointConst.HERO_TRIAL, iter_2_78))
+			for iter_2_87, iter_2_88 in ipairs(var_2_97) do
+				table.insert(var_2_96, string.format("%s_%s", RedPointConst.HERO_TRIAL, iter_2_88))
 			end
 		end
 
-		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.HERO_TRIAL, iter_2_74), var_2_88)
+		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.HERO_TRIAL, iter_2_84), var_2_96)
 	end
 
 	arg_2_0:addGroup(RedPointConst.OSIRIS_ACTIVITY, {
@@ -708,66 +758,66 @@ function var_0_0.Init(arg_2_0)
 		string.format("%s_%s", RedPointConst.HERO_TRIAL, ActivityConst.OSIRIS_HERO_TRIAL_STAGE)
 	})
 
-	for iter_2_79, iter_2_80 in ipairs(ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.SKIN_TRIAL]) do
-		local var_2_90 = ActivityCfg[iter_2_80].sub_activity_list
-		local var_2_91 = {}
+	for iter_2_89, iter_2_90 in ipairs(ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.SKIN_TRIAL]) do
+		local var_2_98 = ActivityCfg[iter_2_90].sub_activity_list
+		local var_2_99 = {}
 
-		for iter_2_81, iter_2_82 in pairs(var_2_90) do
-			local var_2_92 = ActivitySkinTrialCfg.get_id_list_by_activity_id[iter_2_82]
+		for iter_2_91, iter_2_92 in pairs(var_2_98) do
+			local var_2_100 = ActivitySkinTrialCfg.get_id_list_by_activity_id[iter_2_92]
 
-			for iter_2_83, iter_2_84 in ipairs(var_2_92) do
-				table.insert(var_2_91, string.format("%s_%s", RedPointConst.SKIN_TRIAL, iter_2_84))
+			for iter_2_93, iter_2_94 in ipairs(var_2_100 or {}) do
+				table.insert(var_2_99, string.format("%s_%s", RedPointConst.SKIN_TRIAL, iter_2_94))
 			end
 		end
 
-		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.SKIN_TRIAL, iter_2_80), var_2_91)
+		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.SKIN_TRIAL, iter_2_90), var_2_99)
 	end
 
-	local var_2_93 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.SLAYER] or {}
+	local var_2_101 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.SLAYER] or {}
 
-	for iter_2_85, iter_2_86 in ipairs(var_2_93) do
-		local var_2_94 = ActivityCfg[iter_2_86].sub_activity_list
+	for iter_2_95, iter_2_96 in ipairs(var_2_101) do
+		local var_2_102 = ActivityCfg[iter_2_96].sub_activity_list
 
-		if #var_2_94 > 0 then
-			local var_2_95 = {}
+		if #var_2_102 > 0 then
+			local var_2_103 = {}
 
-			for iter_2_87, iter_2_88 in ipairs(var_2_94) do
-				arg_2_0:addGroup(string.format("%s_%s", RedPointConst.SLYAER_REGIONS, iter_2_88), {
-					string.format("%s_%s", RedPointConst.SLAYER_REGIONS_SELECT, iter_2_88),
-					string.format("%s_%s", RedPointConst.SLAYER_REGIONS_REWARD, iter_2_88)
+			for iter_2_97, iter_2_98 in ipairs(var_2_102) do
+				arg_2_0:addGroup(string.format("%s_%s", RedPointConst.SLYAER_REGIONS, iter_2_98), {
+					string.format("%s_%s", RedPointConst.SLAYER_REGIONS_SELECT, iter_2_98),
+					string.format("%s_%s", RedPointConst.SLAYER_REGIONS_REWARD, iter_2_98)
 				})
 
-				var_2_95[#var_2_95 + 1] = string.format("%s_%s", RedPointConst.SLYAER_REGIONS, iter_2_88)
+				var_2_103[#var_2_103 + 1] = string.format("%s_%s", RedPointConst.SLYAER_REGIONS, iter_2_98)
 			end
 
-			arg_2_0:addGroup(string.format("%s_%s", RedPointConst.SLYAER_REGIONS, iter_2_86), var_2_95)
+			arg_2_0:addGroup(string.format("%s_%s", RedPointConst.SLYAER_REGIONS, iter_2_96), var_2_103)
 		end
 
-		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.SLAYER, iter_2_86), {
-			string.format("%s_%s", RedPointConst.SLYAER_REGIONS, iter_2_86),
-			string.format("%s_%s", RedPointConst.SLYAER_REWARD, iter_2_86)
+		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.SLAYER, iter_2_96), {
+			string.format("%s_%s", RedPointConst.SLYAER_REGIONS, iter_2_96),
+			string.format("%s_%s", RedPointConst.SLYAER_REWARD, iter_2_96)
 		})
 	end
 
-	local var_2_96 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.PARKOUR] or {}
+	local var_2_104 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.PARKOUR] or {}
 
-	for iter_2_89, iter_2_90 in ipairs(var_2_96) do
-		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.PARKOUR, iter_2_90), {
-			string.format("%s_%s", RedPointConst.PARKOUR_ENTRUST_ALL, iter_2_90)
+	for iter_2_99, iter_2_100 in ipairs(var_2_104) do
+		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.PARKOUR, iter_2_100), {
+			string.format("%s_%s", RedPointConst.PARKOUR_ENTRUST_ALL, iter_2_100)
 		})
-		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.PARKOUR_ENTRUST_ALL, iter_2_90), {
-			string.format("%s_%s", RedPointConst.PARKOUR_REWARD, iter_2_90),
-			string.format("%s_%s", RedPointConst.PARKOUR_ENTRUST, iter_2_90)
+		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.PARKOUR_ENTRUST_ALL, iter_2_100), {
+			string.format("%s_%s", RedPointConst.PARKOUR_REWARD, iter_2_100),
+			string.format("%s_%s", RedPointConst.PARKOUR_ENTRUST, iter_2_100)
 		})
 
-		local var_2_97 = ActivityCfg[iter_2_90].sub_activity_list
-		local var_2_98 = {}
+		local var_2_105 = ActivityCfg[iter_2_100].sub_activity_list
+		local var_2_106 = {}
 
-		for iter_2_91, iter_2_92 in ipairs(var_2_97) do
-			table.insert(var_2_98, string.format("%s_%s", RedPointConst.PARKOUR_ENTRUST_REWARD, iter_2_92))
+		for iter_2_101, iter_2_102 in ipairs(var_2_105) do
+			table.insert(var_2_106, string.format("%s_%s", RedPointConst.PARKOUR_ENTRUST_REWARD, iter_2_102))
 		end
 
-		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.PARKOUR_REWARD, iter_2_90), var_2_98)
+		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.PARKOUR_REWARD, iter_2_100), var_2_106)
 	end
 
 	arg_2_0:addGroup(RedPointConst.REGRESSION, {
@@ -795,69 +845,69 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.GUILD_BOSS_CHALLENGE_OPEN
 	})
 
-	local var_2_99 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.SINGLE_MATRIX] or {}
+	local var_2_107 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.SINGLE_MATRIX] or {}
 
-	for iter_2_93, iter_2_94 in ipairs(var_2_99) do
-		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.ACTIVITY_MATRIX, iter_2_94), {
-			string.format("%s_%s", RedPointConst.ACTIVITY_MATRIX_REWARD, iter_2_94),
-			string.format("%s_%s", RedPointConst.ACTIVITY_MATRIX_CLUE, iter_2_94),
-			string.format("%s_%s", RedPointConst.ACTIVITY_MATRIX_READ, iter_2_94)
+	for iter_2_103, iter_2_104 in ipairs(var_2_107) do
+		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.ACTIVITY_MATRIX, iter_2_104), {
+			string.format("%s_%s", RedPointConst.ACTIVITY_MATRIX_REWARD, iter_2_104),
+			string.format("%s_%s", RedPointConst.ACTIVITY_MATRIX_CLUE, iter_2_104),
+			string.format("%s_%s", RedPointConst.ACTIVITY_MATRIX_READ, iter_2_104)
 		})
 	end
 
-	local var_2_100 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.ACTIVITY_MUSIC] or {}
+	local var_2_108 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.ACTIVITY_MUSIC] or {}
 
-	for iter_2_95, iter_2_96 in ipairs(var_2_100) do
-		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.MUSIC, iter_2_96), {
-			string.format("%s_%s", RedPointConst.MUSIC_OPEN, iter_2_96),
-			string.format("%s_%s", RedPointConst.MUSIC_REWARD, iter_2_96)
+	for iter_2_105, iter_2_106 in ipairs(var_2_108) do
+		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.MUSIC, iter_2_106), {
+			string.format("%s_%s", RedPointConst.MUSIC_OPEN, iter_2_106),
+			string.format("%s_%s", RedPointConst.MUSIC_REWARD, iter_2_106)
 		})
 	end
 
 	if not ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.ACTIVITY_ZUMA] then
-		local var_2_101 = {}
+		local var_2_109 = {}
 	end
 
-	local var_2_102 = {}
+	local var_2_110 = {}
 
-	table.insert(var_2_102, RedPointConst.ZUMA_REWARD)
-	table.insert(var_2_102, RedPointConst.ZUMA_TALENT)
+	table.insert(var_2_110, RedPointConst.ZUMA_REWARD)
+	table.insert(var_2_110, RedPointConst.ZUMA_TALENT)
 
-	local var_2_103 = ZumaData:GetZumaCfgData()
+	local var_2_111 = ZumaData:GetZumaCfgData()
 
-	for iter_2_97, iter_2_98 in pairs(ZumaConst.ZUMA_DIFFICULT or {}) do
-		local var_2_104 = var_2_103[iter_2_98]
-		local var_2_105 = {}
+	for iter_2_107, iter_2_108 in pairs(ZumaConst.ZUMA_DIFFICULT or {}) do
+		local var_2_112 = var_2_111[iter_2_108]
+		local var_2_113 = {}
 
-		for iter_2_99, iter_2_100 in ipairs(var_2_104) do
-			table.insert(var_2_105, string.format("%s_%s", RedPointConst.ZUMA_OPEN, iter_2_100.activity_id))
+		for iter_2_109, iter_2_110 in ipairs(var_2_112) do
+			table.insert(var_2_113, string.format("%s_%s", RedPointConst.ZUMA_OPEN, iter_2_110.activity_id))
 		end
 
-		local var_2_106 = string.format("%s_%s", RedPointConst.ZUMA_DIFFICULT, iter_2_98)
+		local var_2_114 = string.format("%s_%s", RedPointConst.ZUMA_DIFFICULT, iter_2_108)
 
-		arg_2_0:addGroup(var_2_106, var_2_105)
-		table.insert(var_2_102, var_2_106)
+		arg_2_0:addGroup(var_2_114, var_2_113)
+		table.insert(var_2_110, var_2_114)
 	end
 
-	arg_2_0:addGroup(RedPointConst.ZUMA .. ActivityConst.ACTIVITY_ZUMA, var_2_102)
+	arg_2_0:addGroup(RedPointConst.ZUMA .. ActivityConst.ACTIVITY_ZUMA, var_2_110)
 
-	local var_2_107 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.STRATEGY_MATRIX] or {}
+	local var_2_115 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.STRATEGY_MATRIX] or {}
 
-	for iter_2_101, iter_2_102 in ipairs(var_2_107) do
-		local var_2_108 = StrategyMatrixCfg[iter_2_102]
+	for iter_2_111, iter_2_112 in ipairs(var_2_115) do
+		local var_2_116 = StrategyMatrixCfg[iter_2_112]
 
-		if var_2_108.activity_difficulty == 1 then
-			arg_2_0:addGroup(string.format("%s_%s", RedPointConst.STRATEGY_MATRIX, iter_2_102), {
-				string.format("%s_%s", RedPointConst.STRATEGY_MATRIX_OPEN, iter_2_102),
-				string.format("%s_%s", RedPointConst.STRATEGY_MATRIX_REWARD, iter_2_102)
+		if var_2_116.activity_difficulty == 1 then
+			arg_2_0:addGroup(string.format("%s_%s", RedPointConst.STRATEGY_MATRIX, iter_2_112), {
+				string.format("%s_%s", RedPointConst.STRATEGY_MATRIX_OPEN, iter_2_112),
+				string.format("%s_%s", RedPointConst.STRATEGY_MATRIX_REWARD, iter_2_112)
 			})
 		else
-			local var_2_109 = var_2_108.pre_condition_args[1] and var_2_108.pre_condition_args[1][2][1]
+			local var_2_117 = var_2_116.pre_condition_args[1] and var_2_116.pre_condition_args[1][2][1]
 
-			if var_2_109 then
-				arg_2_0:addGroup(string.format("%s_%s", RedPointConst.STRATEGY_MATRIX, var_2_109), {
-					string.format("%s_%s", RedPointConst.STRATEGY_MATRIX_OPEN, iter_2_102),
-					string.format("%s_%s", RedPointConst.STRATEGY_MATRIX_REWARD, iter_2_102)
+			if var_2_117 then
+				arg_2_0:addGroup(string.format("%s_%s", RedPointConst.STRATEGY_MATRIX, var_2_117), {
+					string.format("%s_%s", RedPointConst.STRATEGY_MATRIX_OPEN, iter_2_112),
+					string.format("%s_%s", RedPointConst.STRATEGY_MATRIX_REWARD, iter_2_112)
 				})
 			else
 				print("困难模式的肉鸽，无法取到前置活动id,联系活动肉鸽策划")
@@ -865,115 +915,115 @@ function var_0_0.Init(arg_2_0)
 		end
 	end
 
-	local var_2_110 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.GUILD_ACTIVITY] or {}
+	local var_2_118 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.GUILD_ACTIVITY] or {}
 
-	for iter_2_103, iter_2_104 in ipairs(var_2_110) do
-		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.GUILD_ACTIVITY, iter_2_104), {
-			string.format("%s_%s", RedPointConst.GUILD_ACTIVITY_RATE, iter_2_104),
+	for iter_2_113, iter_2_114 in ipairs(var_2_118) do
+		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.GUILD_ACTIVITY, iter_2_114), {
+			string.format("%s_%s", RedPointConst.GUILD_ACTIVITY_RATE, iter_2_114),
 			RedPointConst.GUILD_ACTIVITY_UNREGISTER,
-			string.format("%s_%s", RedPointConst.GUILD_ACTIVITY_UNGET_COIN, iter_2_104)
+			string.format("%s_%s", RedPointConst.GUILD_ACTIVITY_UNGET_COIN, iter_2_114)
 		})
 
-		local var_2_111 = {}
+		local var_2_119 = {}
 
-		for iter_2_105, iter_2_106 in pairs(TalentTreeCfg.get_id_list_by_activity_id_and_race[iter_2_104]) do
-			local var_2_112 = string.format("%s_%d_%d", RedPointConst.GUILD_ACTIVITY_AFFIX, iter_2_104, iter_2_105)
+		for iter_2_115, iter_2_116 in pairs(TalentTreeCfg.get_id_list_by_activity_id_and_race[iter_2_114]) do
+			local var_2_120 = string.format("%s_%d_%d", RedPointConst.GUILD_ACTIVITY_AFFIX, iter_2_114, iter_2_115)
 
-			var_2_111[#var_2_111 + 1] = var_2_112
+			var_2_119[#var_2_119 + 1] = var_2_120
 
-			local var_2_113 = {}
+			local var_2_121 = {}
 
-			for iter_2_107, iter_2_108 in pairs(iter_2_106) do
-				var_2_113[#var_2_113 + 1] = string.format("%s_%d_%d_%d", RedPointConst.GUILD_ACTIVITY_AFFIX, iter_2_104, iter_2_105, iter_2_108)
+			for iter_2_117, iter_2_118 in pairs(iter_2_116) do
+				var_2_121[#var_2_121 + 1] = string.format("%s_%d_%d_%d", RedPointConst.GUILD_ACTIVITY_AFFIX, iter_2_114, iter_2_115, iter_2_118)
 			end
 
-			arg_2_0:addGroup(var_2_112, var_2_113)
+			arg_2_0:addGroup(var_2_120, var_2_121)
 		end
 
-		arg_2_0:addGroup(string.format("%s_%d", RedPointConst.GUILD_ACTIVITY_AFFIX, iter_2_104), var_2_111)
+		arg_2_0:addGroup(string.format("%s_%d", RedPointConst.GUILD_ACTIVITY_AFFIX, iter_2_114), var_2_119)
 	end
 
-	local var_2_114 = GuildActivitySPTools:GetActivityState()
+	local var_2_122 = GuildActivitySPTools:GetActivityState()
 
-	for iter_2_109, iter_2_110 in pairs(var_2_114) do
-		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.GUILD_ACTIVITY_SP, iter_2_109), {
+	for iter_2_119, iter_2_120 in pairs(var_2_122) do
+		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.GUILD_ACTIVITY_SP, iter_2_119), {
 			RedPointConst.GUILD_ACTIVITY_SP_UNREGISTER
 		})
 
-		local var_2_115 = iter_2_110.start
+		local var_2_123 = iter_2_120.start
 
-		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.GUILD_ACTIVITY_SP, iter_2_109), {
-			string.format("%s_%s", RedPointConst.GUILD_ACTIVITY_SP_BONUS, var_2_115),
-			string.format("%s_%s", RedPointConst.GUILD_ACTIVITY_SP_UNGET_COIN, var_2_115),
-			string.format("%s_%s", RedPointConst.GUILD_ACTIVITY_SP_HERO_FIGHT, var_2_115)
+		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.GUILD_ACTIVITY_SP, iter_2_119), {
+			string.format("%s_%s", RedPointConst.GUILD_ACTIVITY_SP_BONUS, var_2_123),
+			string.format("%s_%s", RedPointConst.GUILD_ACTIVITY_SP_UNGET_COIN, var_2_123),
+			string.format("%s_%s", RedPointConst.GUILD_ACTIVITY_SP_HERO_FIGHT, var_2_123)
 		})
 
-		local var_2_116 = {}
+		local var_2_124 = {}
 
-		if TalentTreeCfg.get_id_list_by_activity_id_and_race[var_2_115] then
-			for iter_2_111, iter_2_112 in pairs(TalentTreeCfg.get_id_list_by_activity_id_and_race[var_2_115]) do
-				local var_2_117 = string.format("%s_%d_%d", RedPointConst.GUILD_ACTIVITY_SP_AFFIX, var_2_115, iter_2_111)
+		if TalentTreeCfg.get_id_list_by_activity_id_and_race[var_2_123] then
+			for iter_2_121, iter_2_122 in pairs(TalentTreeCfg.get_id_list_by_activity_id_and_race[var_2_123]) do
+				local var_2_125 = string.format("%s_%d_%d", RedPointConst.GUILD_ACTIVITY_SP_AFFIX, var_2_123, iter_2_121)
 
-				var_2_116[#var_2_116 + 1] = var_2_117
+				var_2_124[#var_2_124 + 1] = var_2_125
 
-				local var_2_118 = {}
+				local var_2_126 = {}
 
-				for iter_2_113, iter_2_114 in pairs(iter_2_112) do
-					var_2_118[#var_2_118 + 1] = string.format("%s_%d_%d_%d", RedPointConst.GUILD_ACTIVITY_SP_AFFIX, var_2_115, iter_2_111, iter_2_114)
+				for iter_2_123, iter_2_124 in pairs(iter_2_122) do
+					var_2_126[#var_2_126 + 1] = string.format("%s_%d_%d_%d", RedPointConst.GUILD_ACTIVITY_SP_AFFIX, var_2_123, iter_2_121, iter_2_124)
 				end
 
-				arg_2_0:addGroup(var_2_117, var_2_118)
+				arg_2_0:addGroup(var_2_125, var_2_126)
 			end
 
-			arg_2_0:addGroup(string.format("%s_%d", RedPointConst.GUILD_ACTIVITY_SP_AFFIX, var_2_115), var_2_116)
+			arg_2_0:addGroup(string.format("%s_%d", RedPointConst.GUILD_ACTIVITY_SP_AFFIX, var_2_123), var_2_124)
 		end
 	end
 
-	local var_2_119 = ActivityCfg[ActivityConst.FACTORY_MARDUK].sub_activity_list
-	local var_2_120 = {}
+	local var_2_127 = ActivityCfg[ActivityConst.FACTORY_MARDUK].sub_activity_list
+	local var_2_128 = {}
 
-	for iter_2_115, iter_2_116 in ipairs(var_2_119) do
-		table.insert(var_2_120, string.format("%s_%d", RedPointConst.MARDUK_SPECIAL_NOT_FIGHT, iter_2_116))
+	for iter_2_125, iter_2_126 in ipairs(var_2_127) do
+		table.insert(var_2_128, string.format("%s_%d", RedPointConst.MARDUK_SPECIAL_NOT_FIGHT, iter_2_126))
 	end
 
-	arg_2_0:addGroup(string.format("%s_%d", RedPointConst.MARDUK_SPECIAL_NOT_FIGHT, ActivityConst.FACTORY_MARDUK), var_2_120)
+	arg_2_0:addGroup(string.format("%s_%d", RedPointConst.MARDUK_SPECIAL_NOT_FIGHT, ActivityConst.FACTORY_MARDUK), var_2_128)
 	arg_2_0:addGroup(string.format("%s_%d", RedPointConst.MARDUK_SPECIAL, ActivityConst.FACTORY_MARDUK), {
 		string.format("%s_%d", RedPointConst.MARDUK_SPECIAL_NOT_FIGHT, ActivityConst.FACTORY_MARDUK),
 		string.format("%s_%d", RedPointConst.MARDUK_SPECIAL_REWARD, ActivityConst.FACTORY_MARDUK)
 	})
 
-	local var_2_121 = ActivityCfg[ActivityConst.ACTIVITY_2_2_SPECIAL].sub_activity_list
-	local var_2_122 = {}
+	local var_2_129 = ActivityCfg[ActivityConst.ACTIVITY_2_2_SPECIAL].sub_activity_list
+	local var_2_130 = {}
 
-	for iter_2_117, iter_2_118 in ipairs(var_2_121) do
-		table.insert(var_2_122, string.format("%s_%d", RedPointConst.MARDUK_SPECIAL_NOT_FIGHT, iter_2_118))
+	for iter_2_127, iter_2_128 in ipairs(var_2_129) do
+		table.insert(var_2_130, string.format("%s_%d", RedPointConst.MARDUK_SPECIAL_NOT_FIGHT, iter_2_128))
 	end
 
-	arg_2_0:addGroup(string.format("%s_%d", RedPointConst.MARDUK_SPECIAL_NOT_FIGHT, ActivityConst.ACTIVITY_2_2_SPECIAL), var_2_122)
+	arg_2_0:addGroup(string.format("%s_%d", RedPointConst.MARDUK_SPECIAL_NOT_FIGHT, ActivityConst.ACTIVITY_2_2_SPECIAL), var_2_130)
 	arg_2_0:addGroup(string.format("%s_%d", RedPointConst.MARDUK_SPECIAL, ActivityConst.ACTIVITY_2_2_SPECIAL), {
 		string.format("%s_%d", RedPointConst.MARDUK_SPECIAL_NOT_FIGHT, ActivityConst.ACTIVITY_2_2_SPECIAL),
 		string.format("%s_%d", RedPointConst.MARDUK_SPECIAL_REWARD, ActivityConst.ACTIVITY_2_2_SPECIAL)
 	})
 
-	local var_2_123 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.FIRE_WORK_MAIN] or {}
+	local var_2_131 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.FIRE_WORK_MAIN] or {}
 
-	for iter_2_119, iter_2_120 in ipairs(var_2_123) do
-		local var_2_124 = ActivityCfg[iter_2_120].sub_activity_list
-		local var_2_125 = {}
+	for iter_2_129, iter_2_130 in ipairs(var_2_131) do
+		local var_2_132 = ActivityCfg[iter_2_130].sub_activity_list
+		local var_2_133 = {}
 
-		for iter_2_121, iter_2_122 in ipairs(var_2_124) do
-			if ActivityCfg[iter_2_122].activity_template == ActivityTemplateConst.FIRE_WORK then
-				local var_2_126 = string.format("%s_%s", RedPointConst.FIRE_WORK, iter_2_122)
+		for iter_2_131, iter_2_132 in ipairs(var_2_132) do
+			if ActivityCfg[iter_2_132].activity_template == ActivityTemplateConst.FIRE_WORK then
+				local var_2_134 = string.format("%s_%s", RedPointConst.FIRE_WORK, iter_2_132)
 
-				arg_2_0:addGroup(var_2_126, {
-					string.format("%s_%s", RedPointConst.FIRE_WORK_OPEN, iter_2_122),
-					string.format("%s_%s", RedPointConst.FIRE_WORK_REWARD, iter_2_122)
+				arg_2_0:addGroup(var_2_134, {
+					string.format("%s_%s", RedPointConst.FIRE_WORK_OPEN, iter_2_132),
+					string.format("%s_%s", RedPointConst.FIRE_WORK_REWARD, iter_2_132)
 				})
-				table.insert(var_2_125, var_2_126)
+				table.insert(var_2_133, var_2_134)
 			end
 		end
 
-		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.FIRE_WORK_MAIN, iter_2_120), var_2_125)
+		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.FIRE_WORK_MAIN, iter_2_130), var_2_133)
 	end
 
 	arg_2_0:addGroup(RedPointConst.CANTEEN_DISPATCH, {
@@ -993,120 +1043,181 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.CANTEEN
 	})
 
-	local var_2_127 = #GameSetting.dorm_canteen_task_unlock.value
-	local var_2_128 = {}
+	local var_2_135 = #GameSetting.dorm_canteen_task_unlock.value
+	local var_2_136 = {}
 
-	for iter_2_123 = 1, var_2_127 do
-		var_2_128[iter_2_123] = string.format("%s_%s", RedPointConst.CANTEEN_UNLOCK_ENTRUST, tostring(iter_2_123))
+	for iter_2_133 = 1, var_2_135 do
+		var_2_136[iter_2_133] = string.format("%s_%s", RedPointConst.CANTEEN_UNLOCK_ENTRUST, tostring(iter_2_133))
 	end
 
-	arg_2_0:addGroup(RedPointConst.CANTEEN_UNLOCK_ENTRUST, var_2_128)
+	arg_2_0:addGroup(RedPointConst.CANTEEN_UNLOCK_ENTRUST, var_2_136)
 
-	local var_2_129 = {}
-	local var_2_130 = 1
+	local var_2_137 = {}
+	local var_2_138 = 1
 
-	for iter_2_124, iter_2_125 in pairs(DormEnum.FurnitureTypeNum) do
-		var_2_129[var_2_130] = string.format("%s_%s", RedPointConst.CANTEEN_UNLOCK_FOOD, tostring(iter_2_125))
-		var_2_130 = var_2_130 + 1
+	for iter_2_134, iter_2_135 in pairs(DormEnum.FurnitureTypeNum) do
+		var_2_137[var_2_138] = string.format("%s_%s", RedPointConst.CANTEEN_UNLOCK_FOOD, tostring(iter_2_135))
+		var_2_138 = var_2_138 + 1
 	end
 
-	arg_2_0:addGroup(RedPointConst.CANTEEN_UNLOCK_FOOD, var_2_129)
+	arg_2_0:addGroup(RedPointConst.CANTEEN_UNLOCK_FOOD, var_2_137)
 
-	for iter_2_126, iter_2_127 in pairs(DormEnum.FurnitureTypeNum) do
-		local var_2_131 = {}
+	for iter_2_136, iter_2_137 in pairs(DormEnum.FurnitureTypeNum) do
+		local var_2_139 = {}
 
-		for iter_2_128, iter_2_129 in ipairs(BackHomeCanteenFoodCfg.all) do
-			if BackHomeCanteenFoodCfg[iter_2_129].cook_type == iter_2_127 then
-				local var_2_132 = string.format("%s_%s_%s", RedPointConst.CANTEEN_UNLOCK_FOOD, tostring(iter_2_127), iter_2_129)
+		for iter_2_138, iter_2_139 in ipairs(BackHomeCanteenFoodCfg.all) do
+			if BackHomeCanteenFoodCfg[iter_2_139].cook_type == iter_2_137 then
+				local var_2_140 = string.format("%s_%s_%s", RedPointConst.CANTEEN_UNLOCK_FOOD, tostring(iter_2_137), iter_2_139)
 
-				table.insert(var_2_131, var_2_132)
+				table.insert(var_2_139, var_2_140)
 			end
 		end
 
-		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.CANTEEN_UNLOCK_FOOD, iter_2_127), var_2_131)
+		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.CANTEEN_UNLOCK_FOOD, iter_2_137), var_2_139)
 	end
 
-	local var_2_133 = {}
+	local var_2_141 = {}
 
-	for iter_2_130, iter_2_131 in pairs(DormEnum.FurnitureMainType) do
-		local var_2_134 = string.format("%s_%s", RedPointConst.CANTEEN_UPGRADE_AVAILABLE, tostring(iter_2_131))
+	for iter_2_140, iter_2_141 in pairs(DormEnum.FurnitureMainType) do
+		local var_2_142 = string.format("%s_%s", RedPointConst.CANTEEN_UPGRADE_AVAILABLE, tostring(iter_2_141))
 
-		table.insert(var_2_133, var_2_134)
+		table.insert(var_2_141, var_2_142)
 	end
 
-	arg_2_0:addGroup(RedPointConst.CANTEEN_UPGRADE_AVAILABLE, var_2_133)
+	arg_2_0:addGroup(RedPointConst.CANTEEN_UPGRADE_AVAILABLE, var_2_141)
 	arg_2_0:addGroup(RedPointConst.DORM, {
 		RedPointConst.DORM_PLACEMENT
 	})
 
-	local var_2_135 = {}
-
-	for iter_2_132, iter_2_133 in ipairs(BackHomeCfg.all) do
-		if BackHomeCfg[iter_2_133].type == 3 then
-			table.insert(var_2_135, RedPointConst.DORM_PLACEMENT_ROOM .. iter_2_133)
-		end
-	end
-
-	arg_2_0:addGroup(RedPointConst.DORM_PLACEMENT, var_2_135)
-
-	local var_2_136 = {}
-
-	for iter_2_134 = DormConst.DORM_FUR_TYPE_START, DormConst.DORM_FUR_TYPE_END do
-		table.insert(var_2_136, string.format("%s_%s", RedPointConst.DORM_FURNITURE, tostring(iter_2_134)))
-	end
-
-	table.insert(var_2_136, RedPointConst.DORM_SUIT)
-	arg_2_0:addGroup(RedPointConst.DORM_FURNITURE, var_2_136)
-
-	local var_2_137 = {}
-	local var_2_138 = {}
-	local var_2_139 = DormSuitData:GetSuitIDListByType(DormSuitTools.DORM_SUIT_TYPE.FULL_SET)
-
-	for iter_2_135, iter_2_136 in ipairs(var_2_139) do
-		local var_2_140 = BackHomeSuitCfg[iter_2_136].scene_id[1]
-
-		if var_2_140 == DormConst.BACKHOME_TYPE.PublicDorm then
-			table.insert(var_2_138, string.format("%s_%s", RedPointConst.DORM_FULL_PUBLIC_SUIT, tostring(iter_2_136)))
-		elseif var_2_140 == DormConst.BACKHOME_TYPE.PrivateDorm then
-			table.insert(var_2_137, string.format("%s_%s", RedPointConst.DORM_FULL_PRIVATE_SUIT, tostring(iter_2_136)))
-		end
-	end
-
-	arg_2_0:addGroup(RedPointConst.DORM_FULL_PUBLIC_SUIT, var_2_138)
-	arg_2_0:addGroup(RedPointConst.DORM_FULL_PRIVATE_SUIT, var_2_137)
-
-	local var_2_141 = {}
-	local var_2_142 = DormSuitData:GetSuitIDListByType(DormSuitTools.DORM_SUIT_TYPE.PART_SET)
-
-	for iter_2_137, iter_2_138 in ipairs(var_2_142) do
-		table.insert(var_2_141, string.format("%s_%s", RedPointConst.DORM_PART_SUIT, tostring(iter_2_138)))
-	end
-
-	arg_2_0:addGroup(RedPointConst.DORM_PART_SUIT, var_2_141)
-
 	local var_2_143 = {}
-	local var_2_144 = DormTools:GetAllDormShopIDList()
 
-	for iter_2_139, iter_2_140 in ipairs(var_2_144) do
-		local var_2_145 = DormSuitTools:GetFurSuitGoodListByShopID(iter_2_140)
-		local var_2_146 = {}
+	for iter_2_142, iter_2_143 in ipairs(BackHomeCfg.all) do
+		if BackHomeCfg[iter_2_143].type == 3 then
+			table.insert(var_2_143, RedPointConst.DORM_PLACEMENT_ROOM .. iter_2_143)
+		end
+	end
 
-		if #var_2_145 > 0 then
-			for iter_2_141, iter_2_142 in ipairs(var_2_145) do
-				table.insert(var_2_146, DormRedPointTools.FurnitureItemRedPoint(iter_2_140, iter_2_142))
+	arg_2_0:addGroup(RedPointConst.DORM_PLACEMENT, var_2_143)
+
+	local var_2_144 = {}
+
+	for iter_2_144 = DormConst.DORM_FUR_TYPE_START, DormConst.DORM_FUR_TYPE_END do
+		table.insert(var_2_144, string.format("%s_%s", RedPointConst.DORM_FURNITURE, tostring(iter_2_144)))
+	end
+
+	table.insert(var_2_144, RedPointConst.DORM_SUIT)
+	arg_2_0:addGroup(RedPointConst.DORM_FURNITURE, var_2_144)
+
+	local var_2_145 = {}
+	local var_2_146 = {}
+	local var_2_147 = DormSuitData:GetSuitIDListByType(DormSuitTools.DORM_SUIT_TYPE.FULL_SET)
+
+	for iter_2_145, iter_2_146 in ipairs(var_2_147) do
+		local var_2_148 = BackHomeSuitCfg[iter_2_146].scene_id[1]
+
+		if var_2_148 == DormConst.BACKHOME_TYPE.PublicDorm then
+			table.insert(var_2_146, string.format("%s_%s", RedPointConst.DORM_FULL_PUBLIC_SUIT, tostring(iter_2_146)))
+		elseif var_2_148 == DormConst.BACKHOME_TYPE.PrivateDorm then
+			table.insert(var_2_145, string.format("%s_%s", RedPointConst.DORM_FULL_PRIVATE_SUIT, tostring(iter_2_146)))
+		end
+	end
+
+	arg_2_0:addGroup(RedPointConst.DORM_FULL_PUBLIC_SUIT, var_2_146)
+	arg_2_0:addGroup(RedPointConst.DORM_FULL_PRIVATE_SUIT, var_2_145)
+
+	local var_2_149 = {}
+	local var_2_150 = DormSuitData:GetSuitIDListByType(DormSuitTools.DORM_SUIT_TYPE.PART_SET)
+
+	for iter_2_147, iter_2_148 in ipairs(var_2_150) do
+		table.insert(var_2_149, string.format("%s_%s", RedPointConst.DORM_PART_SUIT, tostring(iter_2_148)))
+	end
+
+	arg_2_0:addGroup(RedPointConst.DORM_PART_SUIT, var_2_149)
+
+	local var_2_151 = {}
+	local var_2_152 = DormTools:GetAllDormShopIDList()
+
+	for iter_2_149, iter_2_150 in ipairs(var_2_152) do
+		local var_2_153 = DormSuitTools:GetFurSuitGoodListByShopID(iter_2_150)
+		local var_2_154 = {}
+
+		if #var_2_153 > 0 then
+			for iter_2_151, iter_2_152 in ipairs(var_2_153) do
+				table.insert(var_2_154, DormRedPointTools.FurnitureItemRedPoint(iter_2_150, iter_2_152))
 			end
 
-			local var_2_147 = ShopTools.GetShopRedPointKey(iter_2_140)
+			local var_2_155 = ShopTools.GetShopRedPointKey(iter_2_150)
 
-			arg_2_0:addGroup(var_2_147, var_2_146)
-			table.insert(var_2_143, var_2_147)
+			arg_2_0:addGroup(var_2_155, var_2_154)
+			table.insert(var_2_151, var_2_155)
 		end
 	end
 
-	arg_2_0:addGroup(RedPointConst.DORM_SUIT_SHOP, var_2_143)
+	arg_2_0:addGroup(RedPointConst.DORM_SUIT_SHOP, var_2_151)
+
+	local var_2_156 = {}
+	local var_2_157 = {}
+	local var_2_158 = {}
+
+	for iter_2_153, iter_2_154 in pairs(HeroCfg.get_id_list_by_private[0]) do
+		if BackHomeHeroCfg[iter_2_154] then
+			local var_2_159 = RedPointConst.DORM_ILLU_HERO .. iter_2_154
+
+			table.insert(var_2_156, var_2_159)
+		end
+	end
+
+	table.insert(var_2_156, RedPointConst.DORM_ILLU_REWARD_1)
+	arg_2_0:addGroup(RedPointConst.DORM_ILLU_HERO_ALL, var_2_156)
+
+	for iter_2_155, iter_2_156 in ipairs(BackHomeFurnitureThemeCfg.all) do
+		local var_2_160 = RedPointConst.DORM_ILLU_FUR_THEME .. iter_2_156
+
+		table.insert(var_2_157, var_2_160)
+	end
+
+	for iter_2_157, iter_2_158 in ipairs(BackHomeFurnitureThemeCfg.all) do
+		local var_2_161 = {}
+		local var_2_162 = DormIlluTools.GetFurList(iter_2_158)
+
+		for iter_2_159, iter_2_160 in ipairs(var_2_162) do
+			local var_2_163 = RedPointConst.DORM_ILLU_FUR .. iter_2_160
+
+			table.insert(var_2_161, var_2_163)
+		end
+
+		arg_2_0:addGroup(RedPointConst.DORM_ILLU_FUR_THEME .. iter_2_158, var_2_161)
+	end
+
+	table.insert(var_2_157, RedPointConst.DORM_ILLU_REWARD_3)
+	arg_2_0:addGroup(RedPointConst.DORM_ILLU_FUR_ALL, var_2_157)
+
+	for iter_2_161, iter_2_162 in ipairs(IdolDanceDIYActionCfg.all) do
+		local var_2_164 = RedPointConst.DORM_ILLU_DANCE .. iter_2_162
+
+		table.insert(var_2_158, var_2_164)
+	end
+
+	table.insert(var_2_158, RedPointConst.DORM_ILLU_REWARD_2)
+	arg_2_0:addGroup(RedPointConst.DORM_ILLU_DANCE_ALL, var_2_158)
+	arg_2_0:addGroup(RedPointConst.DORM_ILLU_NEW, {
+		RedPointConst.DORM_ILLU_HERO_ALL,
+		RedPointConst.DORM_ILLU_FUR_ALL,
+		RedPointConst.DORM_ILLU_DANCE_ALL
+	})
+	arg_2_0:addGroup(RedPointConst.DORM_ILLU_REWARD, {
+		RedPointConst.DORM_ILLU_REWARD_1,
+		RedPointConst.DORM_ILLU_REWARD_2,
+		RedPointConst.DORM_ILLU_REWARD_3
+	})
+	arg_2_0:addGroup(RedPointConst.DORM_ILLU, {
+		RedPointConst.DORM_ILLU_REWARD,
+		RedPointConst.DORM_ILLU_NEW
+	})
 	arg_2_0:addGroup(RedPointConst.BACKHOME, {
 		RedPointConst.DORM,
-		RedPointConst.CANTEEN
+		RedPointConst.CANTEEN,
+		RedPointConst.DORM_ILLU
 	})
 	arg_2_0:addGroup(RedPointConst.ABYSS, {
 		RedPointConst.ABYSS_REWARD,
@@ -1114,22 +1225,22 @@ function var_0_0.Init(arg_2_0)
 		string.format(ServerRedPointPrefix, ServerRedPoint.DISORDER_TRAP_NEW_RED, "ROOT")
 	})
 
-	local var_2_148 = MailSpecialLetterCfg.get_id_list_by_letter_belongs
-	local var_2_149 = {}
+	local var_2_165 = MailSpecialLetterCfg.get_id_list_by_letter_belongs
+	local var_2_166 = {}
 
-	for iter_2_143, iter_2_144 in pairs(var_2_148) do
-		table.insert(var_2_149, RedPointConst.LETTER_SENDER_ID .. iter_2_143)
+	for iter_2_163, iter_2_164 in pairs(var_2_165) do
+		table.insert(var_2_166, RedPointConst.LETTER_SENDER_ID .. iter_2_163)
 
-		local var_2_150 = {}
+		local var_2_167 = {}
 
-		for iter_2_145, iter_2_146 in pairs(iter_2_144) do
-			table.insert(var_2_150, RedPointConst.LETTER_ID .. iter_2_146)
+		for iter_2_165, iter_2_166 in pairs(iter_2_164) do
+			table.insert(var_2_167, RedPointConst.LETTER_ID .. iter_2_166)
 		end
 
-		arg_2_0:addGroup(RedPointConst.LETTER_SENDER_ID .. iter_2_143, var_2_150)
+		arg_2_0:addGroup(RedPointConst.LETTER_SENDER_ID .. iter_2_163, var_2_167)
 	end
 
-	arg_2_0:addGroup(RedPointConst.LETTER_UNREAD, var_2_149)
+	arg_2_0:addGroup(RedPointConst.LETTER_UNREAD, var_2_166)
 	arg_2_0:addGroup(RedPointConst.MAIL_UNREAD, {
 		RedPointConst.LETTER_UNREAD
 	})
@@ -1137,33 +1248,9 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.POLYHEDRON_BEACON_UNLOCK,
 		RedPointConst.POLYHEDRON_POLICY_LEVEL_REWARD,
 		RedPointConst.POLYHEDRON_HERO_UNLOCK,
-		RedPointConst.POLYHEDRON_TASK,
+		RedPointConst.POLYHEDRON_RESIDENT_TASK,
 		RedPointConst.POLYHEDRON_TERMINAL_GIFT,
 		RedPointConst.POLYHEDRON_NEW_SECTION
-	})
-
-	local var_2_151 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.POLYHEDRON_ACTIVITY]
-	local var_2_152 = {}
-	local var_2_153 = {}
-
-	for iter_2_147, iter_2_148 in ipairs(var_2_151) do
-		local var_2_154 = ActivityCfg[iter_2_148].season_task_activity_list or {}
-		local var_2_155 = ActivityCfg[iter_2_148].achievement_task_activity_list or {}
-
-		for iter_2_149, iter_2_150 in ipairs(var_2_154) do
-			var_2_152[#var_2_152 + 1] = string.format("%s_%s", RedPointConst.ACTIVITY_TASK, iter_2_150)
-		end
-
-		for iter_2_151, iter_2_152 in ipairs(var_2_155) do
-			var_2_153[#var_2_153 + 1] = string.format("%s_%s", RedPointConst.ACTIVITY_TASK, iter_2_152)
-		end
-	end
-
-	arg_2_0:addGroup(RedPointConst.POLYHEDRON_TASK_SEASON, var_2_152)
-	arg_2_0:addGroup(RedPointConst.POLYHEDRON_TASK_ACHIEVEMENT, var_2_153)
-	arg_2_0:addGroup(RedPointConst.POLYHEDRON_TASK, {
-		RedPointConst.POLYHEDRON_TASK_SEASON,
-		RedPointConst.POLYHEDRON_TASK_ACHIEVEMENT
 	})
 	arg_2_0:addGroup(RedPointConst.RECALL, {
 		RedPointConst.RECALL_SIGN,
@@ -1171,24 +1258,24 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.RECALL_REWARD
 	})
 
-	local var_2_156 = {}
+	local var_2_168 = {}
 
-	for iter_2_153 = 1, #ExploreMeowCfg.all do
-		local var_2_157 = ExploreMeowCfg.all[iter_2_153]
+	for iter_2_167 = 1, #ExploreMeowCfg.all do
+		local var_2_169 = ExploreMeowCfg.all[iter_2_167]
 
-		var_2_156[iter_2_153] = RedPointConst.EXPLORE_UNLOCK_ADMIN_CAT .. var_2_157
+		var_2_168[iter_2_167] = RedPointConst.EXPLORE_UNLOCK_ADMIN_CAT .. var_2_169
 	end
 
-	local var_2_158 = {}
+	local var_2_170 = {}
 
-	for iter_2_154 = 1, #ExploreAreaCfg.all do
-		local var_2_159 = ExploreAreaCfg.all[iter_2_154]
+	for iter_2_168 = 1, #ExploreAreaCfg.all do
+		local var_2_171 = ExploreAreaCfg.all[iter_2_168]
 
-		var_2_158[iter_2_154] = RedPointConst.EXPLORE_FINISH .. var_2_159
+		var_2_170[iter_2_168] = RedPointConst.EXPLORE_FINISH .. var_2_171
 	end
 
-	arg_2_0:addGroup(RedPointConst.EXPLORE_UNLOCK_ADMIN_CAT, var_2_156)
-	arg_2_0:addGroup(RedPointConst.EXPLORE_FINISH, var_2_158)
+	arg_2_0:addGroup(RedPointConst.EXPLORE_UNLOCK_ADMIN_CAT, var_2_168)
+	arg_2_0:addGroup(RedPointConst.EXPLORE_FINISH, var_2_170)
 	arg_2_0:addGroup(RedPointConst.EXPLORE_MAIN, {
 		RedPointConst.EXPLORE_REWARD,
 		RedPointConst.EXPLORE_UNLOCK_ADMIN_CAT,
@@ -1207,19 +1294,19 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.SETTING_REMIND
 	})
 
-	local var_2_160 = {}
+	local var_2_172 = {}
 
-	for iter_2_155, iter_2_156 in ipairs(RechargeRecommendCfg.all) do
-		table.insert(var_2_160, RedPointConst.RECHARGE_RECOMMEND .. iter_2_156)
+	for iter_2_169, iter_2_170 in ipairs(RechargeRecommendCfg.all) do
+		table.insert(var_2_172, RedPointConst.RECHARGE_RECOMMEND .. iter_2_170)
 	end
 
-	arg_2_0:addGroup(RedPointConst.RECHARGE_RECOMMEND, var_2_160)
+	arg_2_0:addGroup(RedPointConst.RECHARGE_RECOMMEND, var_2_172)
 
-	for iter_2_157, iter_2_158 in ipairs(ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.STRONGHOLD]) do
-		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.STRONGHOLD, iter_2_158), {
-			string.format("%s_%s", RedPointConst.STRONGHOLD_REWARD, iter_2_158),
-			string.format("%s_%s", RedPointConst.STRONGHOLD_INCREASE, iter_2_158),
-			string.format("%s_%s", RedPointConst.STRONGHOLD_TASK, iter_2_158)
+	for iter_2_171, iter_2_172 in ipairs(ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.STRONGHOLD]) do
+		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.STRONGHOLD, iter_2_172), {
+			string.format("%s_%s", RedPointConst.STRONGHOLD_REWARD, iter_2_172),
+			string.format("%s_%s", RedPointConst.STRONGHOLD_INCREASE, iter_2_172),
+			string.format("%s_%s", RedPointConst.STRONGHOLD_TASK, iter_2_172)
 		})
 	end
 
@@ -1228,20 +1315,20 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.SOLO_HEART_DEMON_REWARD
 	})
 
-	local var_2_161 = {}
+	local var_2_173 = {}
 
-	for iter_2_159, iter_2_160 in ipairs(ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.ACTIVITY_SKIN_DRAW]) do
-		table.insert(var_2_161, RedPointConst.ACTIVITY_DRAW .. "_" .. iter_2_160)
+	for iter_2_173, iter_2_174 in ipairs(ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.ACTIVITY_SKIN_DRAW]) do
+		table.insert(var_2_173, RedPointConst.ACTIVITY_DRAW .. "_" .. iter_2_174)
 	end
 
-	arg_2_0:addGroup(RedPointConst.ACTIVITY_DRAW, var_2_161)
+	arg_2_0:addGroup(RedPointConst.ACTIVITY_DRAW, var_2_173)
 
-	local var_2_162 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.ACTIVITY_ATTRIBUTE_ARENA] or {}
+	local var_2_174 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.ACTIVITY_ATTRIBUTE_ARENA] or {}
 
-	for iter_2_161, iter_2_162 in ipairs(var_2_162) do
-		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.ACTIVITY_ATTRIBUTE_ARENA, iter_2_162), {
-			string.format("%s_%s", RedPointConst.ACTIVITY_ATTRIBUTE_ARENA_TASK, iter_2_162),
-			string.format("%s_%s", RedPointConst.ACTIVITY_ATTRIBUTE_ARENA_ENTER, iter_2_162)
+	for iter_2_175, iter_2_176 in ipairs(var_2_174) do
+		arg_2_0:addGroup(string.format("%s_%s", RedPointConst.ACTIVITY_ATTRIBUTE_ARENA, iter_2_176), {
+			string.format("%s_%s", RedPointConst.ACTIVITY_ATTRIBUTE_ARENA_TASK, iter_2_176),
+			string.format("%s_%s", RedPointConst.ACTIVITY_ATTRIBUTE_ARENA_ENTER, iter_2_176)
 		})
 	end
 
@@ -1256,14 +1343,113 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.CORE_VERIFICATION_REWARD4
 	})
 
-	local var_2_163 = SPHeroChallengeData.activityCfg[ActivityConst.ACTIVITY_HERO_CHALLENGE_3_1].heroChipActivityID
-	local var_2_164 = SPHeroChallengeData.activityCfg[ActivityConst.ACTIVITY_HERO_CHALLENGE_3_1].taskActivityID
+	local var_2_175 = SPHeroChallengeData.activityCfg[ActivityConst.ACTIVITY_HERO_CHALLENGE_3_1].heroChipActivityID
+	local var_2_176 = SPHeroChallengeData.activityCfg[ActivityConst.ACTIVITY_HERO_CHALLENGE_3_1].taskActivityID
 
 	arg_2_0:addGroup(RedPointConst.SP_HERO_CHALLENGE_3_1, {
 		RedPointConst.SP_HERO_CHALLENGE_3_1_ENTRUST,
-		string.format("%s_%s", RedPointConst.ACTIVITY_TASK, var_2_163),
-		string.format("%s_%s", RedPointConst.ACTIVITY_TASK, var_2_164)
+		string.format("%s_%s", RedPointConst.ACTIVITY_TASK, var_2_175),
+		string.format("%s_%s", RedPointConst.ACTIVITY_TASK, var_2_176)
 	})
+
+	local var_2_177 = {}
+
+	for iter_2_177, iter_2_178 in ipairs(ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.ACTIVITY_SWIMSUIT_BATTLE_HERO_STAGE]) do
+		table.insert(var_2_177, string.format("%s_%s", RedPointConst.ACTIVITY_SWIMSUIT_BATTLE_HERO, iter_2_178))
+	end
+
+	table.insert(var_2_177, RedPointConst.ACTIVITY_SWIMSUIT_BATTLE_REWARD)
+	arg_2_0:addGroup(string.format("%s%s", ActivityTools.GetRedPointKey(282951), 282951), var_2_177)
+	arg_2_0:addGroup(string.format("%s%s", ActivityTools.GetRedPointKey(282961), 282961), {
+		RedPointConst.ACTIVITY_SWIMSUIT_VOTE_TICKET,
+		RedPointConst.ACTIVITY_SWIMSUIT_VOTE_REWARD
+	})
+
+	local var_2_178 = {}
+	local var_2_179 = {}
+	local var_2_180 = {
+		RedPointConst.CAPTURE_GAME_UNLOCK_STAGE,
+		"_",
+		0
+	}
+	local var_2_181 = {
+		RedPointConst.CAPTURE_GAME_UNLOCK_SECTION,
+		"_",
+		0
+	}
+
+	for iter_2_179, iter_2_180 in ipairs(ActivitySwimSkinSectionCfg.all) do
+		local var_2_182 = ActivitySwimSkinSectionCfg[iter_2_180]
+		local var_2_183 = {}
+
+		var_2_181[3] = iter_2_180
+
+		local var_2_184 = table.concat(var_2_181)
+
+		if var_2_182.mode == CaptureGameConst.CaptureGameMode.Single then
+			for iter_2_181, iter_2_182 in ipairs(var_2_182.sub_section_list) do
+				var_2_180[3] = iter_2_182
+
+				table.insert(var_2_183, table.concat(var_2_180))
+			end
+
+			table.insert(var_2_178, var_2_184)
+		elseif var_2_182.mode == CaptureGameConst.CaptureGameMode.Multiple then
+			for iter_2_183, iter_2_184 in ipairs(var_2_182.sub_section_list) do
+				var_2_180[3] = iter_2_184
+
+				table.insert(var_2_183, table.concat(var_2_180))
+			end
+
+			table.insert(var_2_179, var_2_184)
+		end
+
+		arg_2_0:addGroup(var_2_184, var_2_183)
+	end
+
+	arg_2_0:addGroup(RedPointConst.CAPTURE_GAME_UNLOCK_SINGLE_ROOT, var_2_178)
+	arg_2_0:addGroup(RedPointConst.CAPTURE_GAME_UNLOCK_MULTI_ROOT, var_2_179)
+	arg_2_0:addGroup(RedPointConst.CAPTURE_GAME_UNLOCK_ROOT, {
+		RedPointConst.CAPTURE_GAME_UNLOCK_SINGLE_ROOT,
+		RedPointConst.CAPTURE_GAME_UNLOCK_MULTI_ROOT,
+		RedPointConst.CAPTURE_GAME_TASK_REWARD
+	})
+	arg_2_0:addGroup(ActivityTools.GetRedPointKey(ActivityConst.ACTIVITY_SWIM_SKIN) .. ActivityConst.ACTIVITY_SWIM_SKIN, {
+		RedPointConst.CAPTURE_GAME_UNLOCK_ROOT
+	})
+	arg_2_0:addGroup(RedPointConst.ACTIVITY_3_5_CATCH_DUCK, {
+		RedPointConst.ACTIVITY_3_5_CATCH_DUCK_STAGE,
+		RedPointConst.ACTIVITY_3_5_CATCH_DUCK_TASK
+	})
+	arg_2_0:addGroup(ActivityTools.GetRedPointKey(ActivityConst.SUMMER_CHESS_BOARD_PLUZZE) .. ActivityConst.SUMMER_CHESS_BOARD_PLUZZE, {
+		RedPointConst.ACTIVITY_3_5_TANGRAM_GAME
+	})
+	arg_2_0:addGroup(RedPointConst.ACTIVITY_3_5_TANGRAM_GAME, {
+		RedPointConst.ACTIVITY_3_5_TANGRAM_GAME_CHAPTER,
+		string.format("%s_%s", RedPointConst.ACTIVITY_TASK, ActivityConst.SUMMER_CHESS_BOARD_PLUZZE_TASK)
+	})
+	arg_2_0:addGroup(string.format("%s_%s", RedPointConst.ACTIVITY_TASK, ActivityConst.SUMMER_CHESS_BOARD_PLUZZE_TASK), {
+		string.format("%s_%s", RedPointConst.ACTIVITY_TASK, ActivityConst.ACTIVITY_3_5_TANGRAM_GAME_TASK1),
+		string.format("%s_%s", RedPointConst.ACTIVITY_TASK, ActivityConst.ACTIVITY_3_5_TANGRAM_GAME_TASK2)
+	})
+	arg_2_0:addGroup(string.format("%s%s", ActivityTools.GetRedPointKey(2932801), 2932801), {
+		RedPointConst.ACTIVITY_IDOL_COMPETITION_SIGN,
+		RedPointConst.ACTIVITY_IDOL_COMPETITION_REWARD
+	})
+
+	local var_2_185 = {}
+
+	for iter_2_185, iter_2_186 in ipairs(ActivityTangramGameChapterCfg.all) do
+		local var_2_186 = string.format("%s_%s", RedPointConst.ACTIVITY_3_5_TANGRAM_GAME_CHAPTER, iter_2_186)
+
+		table.insert(var_2_185, var_2_186)
+		arg_2_0:addGroup(var_2_186, {
+			string.format("%s_%s", RedPointConst.ACTIVITY_3_5_TANGRAM_GAME_FULL_CLUE, iter_2_186),
+			string.format("%s_%s", RedPointConst.ACTIVITY_3_5_TANGRAM_GAME_STAGE, iter_2_186)
+		})
+	end
+
+	arg_2_0:addGroup(RedPointConst.ACTIVITY_3_5_TANGRAM_GAME_CHAPTER, var_2_185)
 end
 
 function var_0_0.InitData(arg_3_0)
@@ -1372,6 +1558,98 @@ function var_0_0.PrintAllNilKey()
 			Debug.LogError(iter_21_1)
 		end
 	end
+end
+
+function var_0_0.AddRogueTeamGroup(arg_22_0)
+	local var_22_0 = {}
+
+	for iter_22_0, iter_22_1 in ipairs(RogueTeamCfg.all) do
+		local var_22_1 = ChallengeRogueTeamTools.GetCollectActivityIDByType(iter_22_1, ChallengeRogueTeamConst.COLLECTION_TASK_TYPE.RELIC)
+		local var_22_2 = ChallengeRogueTeamTools.GetCollectActivityIDByType(iter_22_1, ChallengeRogueTeamConst.COLLECTION_TASK_TYPE.EVENT)
+		local var_22_3 = ChallengeRogueTeamTools.GetTaskActivityID(iter_22_1)
+		local var_22_4 = string.format("%s_%s", RedPointConst.CHALLENGE_ROGUE_TEAM, iter_22_1)
+		local var_22_5 = string.format("%s_%s", RedPointConst.ACTIVITY_TASK, var_22_3)
+		local var_22_6 = string.format("%s_%s", RedPointConst.CHALLENGE_ROGUE_TEAM_ILLUSTRATED, iter_22_1)
+		local var_22_7 = string.format("%s_%s", RedPointConst.ACTIVITY_TASK, var_22_1)
+		local var_22_8 = string.format("%s_%s", RedPointConst.ACTIVITY_TASK, var_22_2)
+		local var_22_9 = string.format("%s_%s", RedPointConst.CHALLENGE_ROGUE_TEAM_ILLUSTRATED_CAMP, iter_22_1)
+		local var_22_10 = string.format("%s_%s", RedPointConst.CHALLENGE_ROGUE_TEAM_ILLUSTRATED_END, iter_22_1)
+		local var_22_11, var_22_12 = ChallengeRogueTeamData:GetAllCampTreasureIDListByTemp(RogueTeamCfg[iter_22_1].item_temp)
+		local var_22_13 = {}
+
+		for iter_22_2, iter_22_3 in ipairs(var_22_12) do
+			local var_22_14 = ChallengeRogueTeamTools.GetTreasureCollectionActivityIDByCamp(iter_22_1, iter_22_3)
+			local var_22_15 = string.format("%s_%s", RedPointConst.ACTIVITY_TASK, var_22_14)
+			local var_22_16 = {}
+
+			for iter_22_4, iter_22_5 in ipairs(AssignmentCfg.get_id_list_by_activity_id[var_22_14]) do
+				table.insert(var_22_16, string.format("%s_%s", RedPointConst.ACTIVITY_TASK, iter_22_5))
+			end
+
+			arg_22_0:addGroup(var_22_15, var_22_16)
+			table.insert(var_22_13, var_22_15)
+		end
+
+		arg_22_0:addGroup(var_22_9, var_22_13)
+
+		local var_22_17 = ChallengeRogueTeamData:GetAllCollectionTaskByType(iter_22_1, ChallengeRogueTeamConst.COLLECTION_TASK_TYPE.END)
+		local var_22_18 = {}
+
+		for iter_22_6, iter_22_7 in ipairs(var_22_17) do
+			local var_22_19 = string.format("%s_%s", RedPointConst.ACTIVITY_TASK, iter_22_7)
+
+			table.insert(var_22_18, var_22_19)
+		end
+
+		arg_22_0:addGroup(var_22_10, var_22_18)
+
+		local var_22_20 = AssignmentCfg.get_id_list_by_activity_id[var_22_1]
+		local var_22_21 = {}
+
+		for iter_22_8, iter_22_9 in ipairs(var_22_20) do
+			local var_22_22 = string.format("%s_%s", RedPointConst.ACTIVITY_TASK, iter_22_9)
+
+			table.insert(var_22_21, var_22_22)
+		end
+
+		arg_22_0:addGroup(var_22_7, var_22_21)
+
+		local var_22_23 = AssignmentCfg.get_id_list_by_activity_id[var_22_2]
+		local var_22_24 = {}
+
+		for iter_22_10, iter_22_11 in ipairs(var_22_23) do
+			local var_22_25 = string.format("%s_%s", RedPointConst.ACTIVITY_TASK, iter_22_11)
+
+			table.insert(var_22_24, var_22_25)
+		end
+
+		arg_22_0:addGroup(var_22_8, var_22_24)
+
+		local var_22_26 = AssignmentCfg.get_id_list_by_activity_id[var_22_3]
+		local var_22_27 = {}
+
+		for iter_22_12, iter_22_13 in ipairs(var_22_26) do
+			local var_22_28 = string.format("%s_%s", RedPointConst.ACTIVITY_TASK, iter_22_13)
+
+			table.insert(var_22_27, var_22_28)
+		end
+
+		arg_22_0:addGroup(var_22_5, var_22_27)
+		arg_22_0:addGroup(var_22_6, {
+			var_22_7,
+			var_22_8,
+			var_22_9,
+			var_22_10
+		})
+		arg_22_0:addGroup(var_22_4, {
+			string.format("%s_%s", RedPointConst.ACTIVITY_POINT_REWARD, ChallengeRogueTeamTools.GetPointActivityID(iter_22_1)),
+			var_22_5,
+			var_22_6
+		})
+		table.insert(var_22_0, var_22_4)
+	end
+
+	arg_22_0:addGroup(RedPointConst.CHALLENGE_ROGUE_TEAM, var_22_0)
 end
 
 return var_0_0

@@ -1125,7 +1125,7 @@
 		arg_31_1.frameCnt_ = 0
 		arg_31_1.state_ = "playing"
 		arg_31_1.curTalkId_ = 112062008
-		arg_31_1.duration_ = 1.999999999999
+		arg_31_1.duration_ = 2
 
 		SetActive(arg_31_1.tipsGo_, false)
 
@@ -1421,7 +1421,7 @@
 		arg_39_1.frameCnt_ = 0
 		arg_39_1.state_ = "playing"
 		arg_39_1.curTalkId_ = 112062010
-		arg_39_1.duration_ = 6.933
+		arg_39_1.duration_ = 6.93
 
 		local var_39_0 = {
 			ja = 5.733,
@@ -1568,7 +1568,7 @@
 		arg_43_1.frameCnt_ = 0
 		arg_43_1.state_ = "playing"
 		arg_43_1.curTalkId_ = 112062011
-		arg_43_1.duration_ = 6.866
+		arg_43_1.duration_ = 6.87
 
 		local var_43_0 = {
 			ja = 6.866,

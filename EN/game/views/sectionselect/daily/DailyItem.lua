@@ -48,6 +48,7 @@ function var_0_1.OnClick(arg_6_0)
 		DailyNewRedPoint:CancelNewTag(arg_6_0.stageID_)
 		BattleFieldData:SetStageByClientID(arg_6_0.chapterID_, arg_6_0.stageID_)
 		arg_6_0:Go("dailySectionInfo", {
+			chapterID = arg_6_0.chapterID_,
 			sectionType = BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_DAILY,
 			section = arg_6_0.stageID_
 		})

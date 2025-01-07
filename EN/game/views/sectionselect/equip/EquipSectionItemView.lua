@@ -15,6 +15,7 @@ function var_0_0.AddListeners(arg_3_0)
 	arg_3_0:AddBtnListener(arg_3_0.itemBtn_, nil, function()
 		BattleEquipData:CancelNewTag(arg_3_0.level_)
 		arg_3_0:Go("equipSectionInfo", {
+			chapterID = arg_3_0.chapterID_,
 			sectionType = BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_EQUIP,
 			section = arg_3_0.stageID_
 		})

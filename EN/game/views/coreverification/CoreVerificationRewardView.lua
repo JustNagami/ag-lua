@@ -37,6 +37,7 @@ function var_0_0.OnEnter(arg_6_0)
 	manager.redPoint:bindUIandKey(arg_6_0.subRewardBtn_.transform, RedPointConst.CORE_VERIFICATION_REWARD2)
 	manager.redPoint:bindUIandKey(arg_6_0.diffRewardBtn_.transform, RedPointConst.CORE_VERIFICATION_REWARD3)
 	manager.redPoint:bindUIandKey(arg_6_0.firstRewardBtn_.transform, RedPointConst.CORE_VERIFICATION_REWARD4)
+	SetActive(arg_6_0.tabltem05Btn_, false)
 end
 
 function var_0_0.OnExit(arg_7_0)
@@ -84,6 +85,15 @@ function var_0_0.AddUIListener(arg_8_0)
 
 		arg_8_0:UpdateView()
 	end)
+	arg_8_0:AddBtnListener(arg_8_0.tabltem05Btn_, nil, function()
+		if arg_8_0.selectIndex_ == 5 then
+			return
+		end
+
+		arg_8_0.selectIndex_ = 5
+
+		arg_8_0:UpdateView()
+	end)
 	arg_8_0:AddBtnListener(arg_8_0.allBtn_, nil, function()
 		if CoreVerificationData:GetCanReset() and arg_8_0.selectIndex_ ~= 4 then
 			ShowMessageBox({
@@ -99,95 +109,118 @@ function var_0_0.AddUIListener(arg_8_0)
 	end)
 end
 
-function var_0_0.GetAll(arg_15_0)
-	local var_15_0 = {
+function var_0_0.GetAll(arg_16_0)
+	local var_16_0 = {
 		reward_list = {}
 	}
 
-	for iter_15_0, iter_15_1 in ipairs(arg_15_0.taskData_) do
-		local var_15_1, var_15_2, var_15_3, var_15_4 = CoreVerificationData:GetTaskProcess(iter_15_1)
+	for iter_16_0, iter_16_1 in ipairs(arg_16_0.taskData_) do
+		local var_16_1, var_16_2, var_16_3, var_16_4 = CoreVerificationData:GetTaskProcess(iter_16_1)
 
-		if var_15_3 and not var_15_4 then
-			table.insert(var_15_0.reward_list, iter_15_1)
+		if var_16_3 and not var_16_4 then
+			table.insert(var_16_0.reward_list, iter_16_1)
 		end
 	end
 
-	if #var_15_0.reward_list == 0 then
+	if #var_16_0.reward_list == 0 then
 		return
 	end
 
-	CoreVerificationAction.GetReward(var_15_0)
+	CoreVerificationAction.GetReward(var_16_0)
 end
 
-function var_0_0.UpdateView(arg_16_0)
-	if CoreVerificationData:CheckFirstReward() == "false" and arg_16_0.selectIndex_ == 4 then
-		arg_16_0.selectIndex_ = 1
+function var_0_0.UpdateView(arg_17_0)
+	SetActive(arg_17_0.allBtn_.gameObject, arg_17_0.selectIndex_ ~= 5)
+	SetActive(arg_17_0.rankdesGo_.gameObject, arg_17_0.selectIndex_ == 5)
+	SetActive(arg_17_0.tGo_, arg_17_0.selectIndex_ == 5)
+
+	if CoreVerificationData:CheckFirstReward() == "false" and arg_17_0.selectIndex_ == 4 then
+		arg_17_0.selectIndex_ = 1
 	end
 
-	arg_16_0.firstController_:SetSelectedState(CoreVerificationData:CheckFirstReward())
-	arg_16_0.pageIndexController_:SetSelectedState(arg_16_0.selectIndex_)
+	arg_17_0.firstController_:SetSelectedState(CoreVerificationData:CheckFirstReward())
+	arg_17_0.pageIndexController_:SetSelectedState(arg_17_0.selectIndex_)
 
-	arg_16_0.taskData_ = CoreVerificationData:GetRewardListByType(arg_16_0.selectIndex_)
+	arg_17_0.taskData_ = CoreVerificationData:GetRewardListByType(arg_17_0.selectIndex_)
 
-	table.sort(arg_16_0.taskData_, function(arg_17_0, arg_17_1)
-		local var_17_0, var_17_1, var_17_2, var_17_3 = CoreVerificationData:GetTaskProcess(arg_17_0)
-		local var_17_4, var_17_5, var_17_6, var_17_7 = CoreVerificationData:GetTaskProcess(arg_17_1)
+	table.sort(arg_17_0.taskData_, function(arg_18_0, arg_18_1)
+		local var_18_0, var_18_1, var_18_2, var_18_3 = CoreVerificationData:GetTaskProcess(arg_18_0)
+		local var_18_4, var_18_5, var_18_6, var_18_7 = CoreVerificationData:GetTaskProcess(arg_18_1)
 
-		if var_17_3 ~= var_17_7 then
-			return var_17_7
+		if var_18_3 ~= var_18_7 then
+			return var_18_7
 		end
 
-		if var_17_2 ~= var_17_6 then
-			return var_17_2
+		if var_18_2 ~= var_18_6 then
+			return var_18_2
 		end
 
-		return arg_17_0 < arg_17_1
+		return arg_18_0 < arg_18_1
 	end)
-	arg_16_0.getAllController_:SetSelectedState("false")
+	arg_17_0.getAllController_:SetSelectedState("false")
 
-	for iter_16_0, iter_16_1 in ipairs(arg_16_0.taskData_) do
-		local var_16_0, var_16_1, var_16_2, var_16_3 = CoreVerificationData:GetTaskProcess(iter_16_1)
+	for iter_17_0, iter_17_1 in ipairs(arg_17_0.taskData_) do
+		local var_17_0, var_17_1, var_17_2, var_17_3 = CoreVerificationData:GetTaskProcess(iter_17_1)
 
-		if var_16_2 and not var_16_3 then
-			arg_16_0.getAllController_:SetSelectedState("true")
+		if var_17_2 and not var_17_3 then
+			arg_17_0.getAllController_:SetSelectedState("true")
 
 			break
 		end
 	end
 
-	arg_16_0.taskUILuaList_:StartScroll(#arg_16_0.taskData_)
+	arg_17_0.remainTime = CoreVerificationData:GetRefreshTime()
+
+	local var_17_4 = arg_17_0.remainTime - manager.time:GetServerTime()
+
+	arg_17_0.allfinishtext2Text_.text = manager.time:GetLostTimeStrWith2Unit(arg_17_0.remainTime)
+	arg_17_0.updateTimer_ = Timer.New(function()
+		var_17_4 = arg_17_0.remainTime - manager.time:GetServerTime()
+		arg_17_0.allfinishtext2Text_.text = manager.time:GetLostTimeStrWith2Unit(arg_17_0.remainTime)
+	end, 1, 0)
+
+	arg_17_0.updateTimer_:Start()
+	arg_17_0.taskUILuaList_:StartScroll(#arg_17_0.taskData_)
 end
 
-function var_0_0.ChangeButtonText(arg_18_0)
-	arg_18_0.title1Text_.text = GetTips("CORE_VERIFICATION_BOSS_1")
-	arg_18_0.title11Text_.text = GetTips("CORE_VERIFICATION_BOSS_1")
-	arg_18_0.title2Text_.text = GetTips("CORE_VERIFICATION_BOSS_2")
-	arg_18_0.title22Text_.text = GetTips("CORE_VERIFICATION_BOSS_2")
-	arg_18_0.title3Text_.text = GetTips("CORE_VERIFICATION_LEVEL")
-	arg_18_0.title33Text_.text = GetTips("CORE_VERIFICATION_LEVEL")
-	arg_18_0.title4Text_.text = GetTips("CORE_VERIFICATION_FIRST_PASS")
-	arg_18_0.title44Text_.text = GetTips("CORE_VERIFICATION_FIRST_PASS")
+function var_0_0.ChangeButtonText(arg_20_0)
+	arg_20_0.title1Text_.text = GetTips("CORE_VERIFICATION_BOSS_1")
+	arg_20_0.title11Text_.text = GetTips("CORE_VERIFICATION_BOSS_1")
+	arg_20_0.title2Text_.text = GetTips("CORE_VERIFICATION_BOSS_2")
+	arg_20_0.title22Text_.text = GetTips("CORE_VERIFICATION_BOSS_2")
+	arg_20_0.title3Text_.text = GetTips("CORE_VERIFICATION_LEVEL")
+	arg_20_0.title33Text_.text = GetTips("CORE_VERIFICATION_LEVEL")
+	arg_20_0.title4Text_.text = GetTips("CORE_VERIFICATION_FIRST_PASS")
+	arg_20_0.title44Text_.text = GetTips("CORE_VERIFICATION_FIRST_PASS")
 end
 
-function var_0_0.OnTop(arg_19_0)
+function var_0_0.OnTop(arg_21_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR,
 		HOME_BAR
 	})
 end
 
-function var_0_0.OnCoreVerificationGetReward(arg_20_0)
-	arg_20_0:UpdateView()
+function var_0_0.OnExit(arg_22_0)
+	if arg_22_0.updateTimer_ then
+		arg_22_0.updateTimer_:Stop()
+
+		arg_22_0.updateTimer_ = nil
+	end
 end
 
-function var_0_0.Dispose(arg_21_0)
-	if arg_21_0.taskUILuaList_ then
-		arg_21_0.taskUILuaList_:Dispose()
+function var_0_0.OnCoreVerificationGetReward(arg_23_0)
+	arg_23_0:UpdateView()
+end
 
-		arg_21_0.taskUILuaList_ = nil
+function var_0_0.Dispose(arg_24_0)
+	if arg_24_0.taskUILuaList_ then
+		arg_24_0.taskUILuaList_:Dispose()
+
+		arg_24_0.taskUILuaList_ = nil
 	end
 
-	var_0_0.super.Dispose(arg_21_0)
+	var_0_0.super.Dispose(arg_24_0)
 end
 
 return var_0_0

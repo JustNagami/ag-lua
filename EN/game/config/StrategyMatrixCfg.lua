@@ -183,6 +183,67 @@
 			11261
 		}
 	},
+	[281521] = {
+		activity_difficulty = 1,
+		setting_template_id = 7,
+		enter_story_id = 0,
+		event_template_id = 7,
+		custom_affix = "",
+		activity_id = 281521,
+		init_effect_template_id = 6,
+		attribute_template_id = 2,
+		tier_template_id = 9,
+		pre_condition_args = {},
+		hero_standard_system_id_list = {
+			3031021
+		},
+		tier_story_list = {}
+	},
+	[281522] = {
+		activity_difficulty = 0,
+		setting_template_id = 7,
+		enter_story_id = 0,
+		event_template_id = 7,
+		activity_id = 281522,
+		init_effect_template_id = 6,
+		attribute_template_id = 2,
+		tier_template_id = 10,
+		pre_condition_args = {
+			{
+				50105,
+				{
+					281521,
+					3,
+					8
+				}
+			}
+		},
+		hero_standard_system_id_list = {
+			3031021
+		},
+		tier_story_list = {},
+		custom_affix = {
+			11072,
+			11073,
+			11074,
+			11188,
+			11081,
+			11082,
+			11083,
+			11116,
+			11117,
+			11118,
+			11156,
+			11189,
+			11240,
+			11241,
+			11242,
+			11258,
+			11259,
+			11260,
+			11261
+		}
+	},
 	all = {
 		91521,
 		121521,
@@ -190,6 +251,8 @@
 		171521,
 		171522,
 		201521,
-		201522
+		201522,
+		281521,
+		281522
 	}
 }

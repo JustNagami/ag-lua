@@ -110,7 +110,7 @@ function var_0_0.InitLevelBtns(arg_11_0, arg_11_1)
 		local var_11_2 = {
 			level = var_11_0.level_id,
 			go = var_11_1,
-			rectTransform = var_11_1:GetComponent("RectTransform")
+			rectTransform = var_11_1:GetComponent(typeof(RectTransform))
 		}
 
 		arg_11_0:BindCfgUI(var_11_1, var_11_2)

@@ -318,7 +318,7 @@
 		arg_7_1.frameCnt_ = 0
 		arg_7_1.state_ = "playing"
 		arg_7_1.curTalkId_ = 412013002
-		arg_7_1.duration_ = 3.533
+		arg_7_1.duration_ = 3.53
 
 		local var_7_0 = {
 			zh = 3.533,
@@ -1209,7 +1209,7 @@
 		arg_27_1.frameCnt_ = 0
 		arg_27_1.state_ = "playing"
 		arg_27_1.curTalkId_ = 412013007
-		arg_27_1.duration_ = 7.566
+		arg_27_1.duration_ = 7.57
 
 		local var_27_0 = {
 			zh = 7.566,
@@ -2026,7 +2026,7 @@
 		arg_43_1.frameCnt_ = 0
 		arg_43_1.state_ = "playing"
 		arg_43_1.curTalkId_ = 412013011
-		arg_43_1.duration_ = 14.433
+		arg_43_1.duration_ = 14.43
 
 		local var_43_0 = {
 			zh = 14.433,
@@ -2557,7 +2557,7 @@
 		arg_55_1.frameCnt_ = 0
 		arg_55_1.state_ = "playing"
 		arg_55_1.curTalkId_ = 412013014
-		arg_55_1.duration_ = 12.966
+		arg_55_1.duration_ = 12.97
 
 		local var_55_0 = {
 			zh = 12.966,
@@ -2675,7 +2675,7 @@
 		arg_59_1.frameCnt_ = 0
 		arg_59_1.state_ = "playing"
 		arg_59_1.curTalkId_ = 412013015
-		arg_59_1.duration_ = 10.433
+		arg_59_1.duration_ = 10.43
 
 		local var_59_0 = {
 			zh = 6.066,
@@ -3329,7 +3329,7 @@
 		arg_71_1.frameCnt_ = 0
 		arg_71_1.state_ = "playing"
 		arg_71_1.curTalkId_ = 412013018
-		arg_71_1.duration_ = 6.066
+		arg_71_1.duration_ = 6.07
 
 		SetActive(arg_71_1.tipsGo_, false)
 
@@ -3497,7 +3497,7 @@
 		arg_75_1.frameCnt_ = 0
 		arg_75_1.state_ = "playing"
 		arg_75_1.curTalkId_ = 412013019
-		arg_75_1.duration_ = 9.033
+		arg_75_1.duration_ = 9.03
 
 		local var_75_0 = {
 			zh = 6.666,
@@ -3829,7 +3829,7 @@
 		arg_83_1.frameCnt_ = 0
 		arg_83_1.state_ = "playing"
 		arg_83_1.curTalkId_ = 412013021
-		arg_83_1.duration_ = 5.833
+		arg_83_1.duration_ = 5.83
 
 		local var_83_0 = {
 			zh = 4.566,
@@ -4581,7 +4581,7 @@
 		arg_99_1.frameCnt_ = 0
 		arg_99_1.state_ = "playing"
 		arg_99_1.curTalkId_ = 412013025
-		arg_99_1.duration_ = 18.233
+		arg_99_1.duration_ = 18.23
 
 		local var_99_0 = {
 			zh = 18.233,
@@ -4927,7 +4927,7 @@
 		arg_107_1.frameCnt_ = 0
 		arg_107_1.state_ = "playing"
 		arg_107_1.curTalkId_ = 412013027
-		arg_107_1.duration_ = 3.266
+		arg_107_1.duration_ = 3.27
 
 		local var_107_0 = {
 			zh = 2.833,

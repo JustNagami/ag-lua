@@ -85,214 +85,209 @@ function var_0_0.RefreshText(arg_6_0)
 	arg_6_0.chapterNameText_.text = var_6_2.name
 end
 
-function var_0_0.ShowPanel(arg_7_0)
-	SetActive(arg_7_0.collectBtnGo_, true)
-	SetActive(arg_7_0.selectDifficultGo_, true)
-end
-
-function var_0_0.AddListeners(arg_8_0)
-	var_0_0.super.AddListeners(arg_8_0)
-	arg_8_0:AddBtnListener(arg_8_0.collectBtn_, nil, function()
-		if arg_8_0:IsOpenSectionInfo() then
+function var_0_0.AddListeners(arg_7_0)
+	var_0_0.super.AddListeners(arg_7_0)
+	arg_7_0:AddBtnListener(arg_7_0.collectBtn_, nil, function()
+		if arg_7_0:IsOpenSectionInfo() then
 			JumpTools.Back()
 
 			return
 		end
 
-		arg_8_0.stopMove_ = true
+		arg_7_0.stopMove_ = true
 
 		JumpTools.OpenPageByJump("chapterSectionReward", {
-			chapterID = arg_8_0.chapterID_,
-			level = arg_8_0.hardLevel_
+			chapterID = arg_7_0.chapterID_,
+			level = arg_7_0.hardLevel_
 		})
 	end)
-	arg_8_0:AddBtnListener(arg_8_0.skuldbtn_, nil, function()
+	arg_7_0:AddBtnListener(arg_7_0.skuldbtn_, nil, function()
 		if SkuldTravelData:GetSkuldTravelIsOpen() then
 			JumpTools.GoToSystem("/skuldTravelView")
 		else
-			local var_10_0 = GameSetting.travel_skuld_unlock.value[1]
-			local var_10_1 = getChapterDifficulty(var_10_0)
-			local var_10_2, var_10_3 = BattleStageTools.GetChapterSectionIndex(BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_PLOT, var_10_0)
+			local var_9_0 = GameSetting.travel_skuld_unlock.value[1]
+			local var_9_1 = getChapterDifficulty(var_9_0)
+			local var_9_2, var_9_3 = BattleStageTools.GetChapterSectionIndex(BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_PLOT, var_9_0)
 
-			ShowTips(string.format(GetTips("MISSION_PROGRESS_UNLOCK_EX"), var_10_1, GetI18NText(var_10_2) .. "-" .. GetI18NText(var_10_3)))
+			ShowTips(string.format(GetTips("MISSION_PROGRESS_UNLOCK_EX"), var_9_1, GetI18NText(var_9_2) .. "-" .. GetI18NText(var_9_3)))
 		end
 	end)
 end
 
-function var_0_0.RefreshCustomData(arg_11_0)
-	arg_11_0.hardLevel_ = ChapterCfg[arg_11_0.chapterID_].difficulty
-	arg_11_0.curStar_ = ChapterTools.GetChapterStarCnt(arg_11_0.chapterID_)
-	arg_11_0.totalStar_ = ChapterTools.GetChapterTotalStarCnt(arg_11_0.chapterID_)
+function var_0_0.RefreshCustomData(arg_10_0)
+	arg_10_0.hardLevel_ = ChapterCfg[arg_10_0.chapterID_].difficulty
+	arg_10_0.curStar_ = ChapterTools.GetChapterStarCnt(arg_10_0.chapterID_)
+	arg_10_0.totalStar_ = ChapterTools.GetChapterTotalStarCnt(arg_10_0.chapterID_)
 
-	arg_11_0.hardLevelView_:SetData(arg_11_0.hardLevel_, arg_11_0.curStar_ / arg_11_0.totalStar_)
-	BattleFieldAction.ChangePlotHardLevel(arg_11_0.hardLevel_)
+	arg_10_0.hardLevelView_:SetData(arg_10_0.hardLevel_, arg_10_0.curStar_ / arg_10_0.totalStar_)
+	BattleFieldAction.ChangePlotHardLevel(arg_10_0.hardLevel_)
 end
 
-function var_0_0.SwitchRewardShow(arg_12_0)
-	if arg_12_0:IsOpenRoute("chapterSectionReward") then
-		SetActive(arg_12_0.difficultPanel_, false)
-		SetActive(arg_12_0.collectBtnGo_, false)
+function var_0_0.SwitchRewardShow(arg_11_0)
+	if arg_11_0:IsOpenRoute("chapterSectionReward") then
+		SetActive(arg_11_0.difficultPanel_, false)
+		SetActive(arg_11_0.collectBtnGo_, false)
 
-		arg_12_0.viewportRect_.localScale = Vector3.zero
+		arg_11_0.viewportRect_.localScale = Vector3.zero
 	else
-		SetActive(arg_12_0.collectBtnGo_, true)
+		SetActive(arg_11_0.collectBtnGo_, true)
 
-		arg_12_0.viewportRect_.localScale = Vector3(1, 1, 1)
+		arg_11_0.viewportRect_.localScale = Vector3(1, 1, 1)
 	end
 end
 
-function var_0_0.GetSectionItemClass(arg_13_0)
+function var_0_0.GetSectionItemClass(arg_12_0)
 	return ChapterSectionItem
 end
 
-function var_0_0.IsOpenSectionInfo(arg_14_0)
-	return arg_14_0:IsOpenRoute("chapterSectionInfo")
+function var_0_0.IsOpenSectionInfo(arg_13_0)
+	return arg_13_0:IsOpenRoute("chapterSectionInfo")
 end
 
-function var_0_0.GetCfgName(arg_15_0)
+function var_0_0.GetCfgName(arg_14_0)
 	return BattleChapterStageCfg
 end
 
-function var_0_0.RefreshHardLevelUI(arg_16_0)
-	arg_16_0:RefreshSelectDifficult()
+function var_0_0.RefreshHardLevelUI(arg_15_0)
+	arg_15_0:RefreshSelectDifficult()
 end
 
-function var_0_0.RefreshTogglePanel(arg_17_0)
-	local var_17_0 = ChapterCfg[arg_17_0.params_.chapterID].sub_type
+function var_0_0.RefreshTogglePanel(arg_16_0)
+	local var_16_0 = ChapterCfg[arg_16_0.params_.chapterID].sub_type
 
-	if not getChapterNumList(var_17_0)[2] then
-		SetActive(arg_17_0.selectDifficultGo_, false)
-
-		return
-	end
-
-	local var_17_1 = getChapterNumList(var_17_0)[2][1]
-
-	if #ChapterCfg[var_17_1].section_id_list < 1 then
-		SetActive(arg_17_0.selectDifficultGo_, false)
+	if not getChapterNumList(var_16_0)[2] then
+		SetActive(arg_16_0.selectDifficultGo_, false)
 
 		return
 	end
 
-	if arg_17_0:IsOpenSectionInfo() or arg_17_0:IsOpenRoute("chapterSectionReward") then
-		SetActive(arg_17_0.selectDifficultGo_, false)
+	local var_16_1 = getChapterNumList(var_16_0)[2][1]
+
+	if #ChapterCfg[var_16_1].section_id_list < 1 then
+		SetActive(arg_16_0.selectDifficultGo_, false)
+
+		return
+	end
+
+	if arg_16_0:IsOpenSectionInfo() or arg_16_0:IsOpenRoute("chapterSectionReward") then
+		SetActive(arg_16_0.selectDifficultGo_, false)
 	else
-		SetActive(arg_17_0.selectDifficultGo_, true)
+		SetActive(arg_16_0.selectDifficultGo_, true)
 	end
 end
 
-function var_0_0.RefreshCollectProgress(arg_18_0)
-	arg_18_0.collectTotalText_.text = string.format("/%s", arg_18_0.totalStar_)
-	arg_18_0.collectCurText_.text = arg_18_0.curStar_
+function var_0_0.RefreshCollectProgress(arg_17_0)
+	arg_17_0.collectTotalText_.text = string.format("/%s", arg_17_0.totalStar_)
+	arg_17_0.collectCurText_.text = arg_17_0.curStar_
 end
 
-function var_0_0.RefreshSelectDifficult(arg_19_0)
-	local var_19_0 = arg_19_0.curStar_ / arg_19_0.totalStar_
+function var_0_0.RefreshSelectDifficult(arg_18_0)
+	local var_18_0 = arg_18_0.curStar_ / arg_18_0.totalStar_
 
-	arg_19_0.collectProgress_.fillAmount = var_19_0
+	arg_18_0.collectProgress_.fillAmount = var_18_0
 end
 
-function var_0_0.OnEnter(arg_20_0)
-	var_0_0.super.OnEnter(arg_20_0)
-	arg_20_0.hardLevelView_:OnEnter()
-	arg_20_0.chapterPartBtnView_:OnEnter()
-	arg_20_0:SwitchRewardShow()
-	manager.notify:RegistListener(CHAPTER_SCROLL_STOP, arg_20_0.stopMoveHandler_)
-	manager.redPoint:bindUIandKey(arg_20_0.collectBtnGo_.transform, string.format("%s_%s", RedPointConst.COMBAT_PLOT_CHAPTER_STAR, arg_20_0.chapterID_))
+function var_0_0.OnEnter(arg_19_0)
+	var_0_0.super.OnEnter(arg_19_0)
+	arg_19_0.hardLevelView_:OnEnter()
+	arg_19_0.chapterPartBtnView_:OnEnter()
+	arg_19_0:SwitchRewardShow()
+	manager.notify:RegistListener(CHAPTER_SCROLL_STOP, arg_19_0.stopMoveHandler_)
+	manager.redPoint:bindUIandKey(arg_19_0.collectBtnGo_.transform, string.format("%s_%s", RedPointConst.COMBAT_PLOT_CHAPTER_STAR, arg_19_0.chapterID_))
 
-	local var_20_0 = RedPointConst.TRAVEL_SKULD_BATTLE .. ActivityConst.ACTIVITY_1_6_SKULD_TRAVEL
+	local var_19_0 = RedPointConst.TRAVEL_SKULD_BATTLE .. ActivityConst.ACTIVITY_1_6_SKULD_TRAVEL
 
-	manager.redPoint:bindUIandKey(arg_20_0.skuldbtn_.transform, var_20_0)
+	manager.redPoint:bindUIandKey(arg_19_0.skuldbtn_.transform, var_19_0)
 end
 
-function var_0_0.CheckSkuldBtn(arg_21_0)
-	if not arg_21_0:IsOpenSectionInfo() and not arg_21_0:IsOpenRoute("chapterSectionReward") and ChapterCfg[arg_21_0.params_.chapterID].sub_type == 13 then
+function var_0_0.CheckSkuldBtn(arg_20_0)
+	if not arg_20_0:IsOpenSectionInfo() and not arg_20_0:IsOpenRoute("chapterSectionReward") and ChapterCfg[arg_20_0.params_.chapterID].sub_type == 13 then
 		if SkuldTravelData:GetSkuldTravelIsOpen() then
-			SetActive(arg_21_0.skuldbtn_.gameObject, true)
+			SetActive(arg_20_0.skuldbtn_.gameObject, true)
 		else
-			SetActive(arg_21_0.skuldbtn_.gameObject, false)
+			SetActive(arg_20_0.skuldbtn_.gameObject, false)
 		end
 
-		arg_21_0.skuldBtnController_:SetSelectedState(SkuldTravelData:GetSkuldBtnIsBreach() and "true" or "false")
+		arg_20_0.skuldBtnController_:SetSelectedState(SkuldTravelData:GetSkuldBtnIsBreach() and "true" or "false")
 	else
-		SetActive(arg_21_0.skuldbtn_.gameObject, false)
+		SetActive(arg_20_0.skuldbtn_.gameObject, false)
 	end
 end
 
-function var_0_0.RefreshPartBtn(arg_22_0)
-	if not arg_22_0:IsOpenSectionInfo() and not arg_22_0:IsOpenRoute("chapterSectionReward") then
-		arg_22_0.chapterPartBtnView_:RefreshUI(arg_22_0.chapterID_)
+function var_0_0.RefreshPartBtn(arg_21_0)
+	if not arg_21_0:IsOpenSectionInfo() and not arg_21_0:IsOpenRoute("chapterSectionReward") then
+		arg_21_0.chapterPartBtnView_:RefreshUI(arg_21_0.chapterID_)
 	else
-		SetActive(arg_22_0.chapterBranchGo_, false)
+		SetActive(arg_21_0.chapterBranchGo_, false)
 	end
 end
 
-function var_0_0.OnUpdate(arg_23_0)
-	if arg_23_0.chapterID_ ~= arg_23_0.params_.chapterID then
-		manager.redPoint:unbindUIandKey(arg_23_0.collectBtnGo_.transform, string.format("%s_%s", RedPointConst.COMBAT_PLOT_CHAPTER_STAR, arg_23_0.chapterID_))
-		manager.redPoint:bindUIandKey(arg_23_0.collectBtnGo_.transform, string.format("%s_%s", RedPointConst.COMBAT_PLOT_CHAPTER_STAR, arg_23_0.params_.chapterID))
+function var_0_0.OnUpdate(arg_22_0)
+	if arg_22_0.chapterID_ ~= arg_22_0.params_.chapterID then
+		manager.redPoint:unbindUIandKey(arg_22_0.collectBtnGo_.transform, string.format("%s_%s", RedPointConst.COMBAT_PLOT_CHAPTER_STAR, arg_22_0.chapterID_))
+		manager.redPoint:bindUIandKey(arg_22_0.collectBtnGo_.transform, string.format("%s_%s", RedPointConst.COMBAT_PLOT_CHAPTER_STAR, arg_22_0.params_.chapterID))
 	end
 
-	var_0_0.super.OnUpdate(arg_23_0)
+	var_0_0.super.OnUpdate(arg_22_0)
 end
 
-function var_0_0.OnExit(arg_24_0)
-	if arg_24_0.currentAttachView_ then
-		arg_24_0.currentAttachView_:OnExit()
+function var_0_0.OnExit(arg_23_0)
+	if arg_23_0.currentAttachView_ then
+		arg_23_0.currentAttachView_:OnExit()
 
-		arg_24_0.currentAttachView_ = nil
+		arg_23_0.currentAttachView_ = nil
 	end
 
-	var_0_0.super.OnExit(arg_24_0)
-	arg_24_0.hardLevelView_:OnExit()
-	arg_24_0.chapterPartBtnView_:OnExit()
-	manager.redPoint:unbindUIandKey(arg_24_0.collectBtnGo_.transform, string.format("%s_%s", RedPointConst.COMBAT_PLOT_CHAPTER_STAR, arg_24_0.chapterID_))
+	var_0_0.super.OnExit(arg_23_0)
+	arg_23_0.hardLevelView_:OnExit()
+	arg_23_0.chapterPartBtnView_:OnExit()
+	manager.redPoint:unbindUIandKey(arg_23_0.collectBtnGo_.transform, string.format("%s_%s", RedPointConst.COMBAT_PLOT_CHAPTER_STAR, arg_23_0.chapterID_))
 
-	local var_24_0 = arg_24_0:GetStayTime()
+	local var_23_0 = arg_23_0:GetStayTime()
 
-	OperationRecorder.RecordStayView("STAY_VIEW_SECTION", var_24_0, arg_24_0.chapterID_)
-	manager.notify:RemoveListener(CHAPTER_SCROLL_STOP, arg_24_0.stopMoveHandler_)
-	manager.redPoint:unbindUIandKey(arg_24_0.skuldbtn_.transform, TravelSkuldBattleBtnKey)
+	OperationRecorder.RecordStayView("STAY_VIEW_SECTION", var_23_0, arg_23_0.chapterID_)
+	manager.notify:RemoveListener(CHAPTER_SCROLL_STOP, arg_23_0.stopMoveHandler_)
+	manager.redPoint:unbindUIandKey(arg_23_0.skuldbtn_.transform, TravelSkuldBattleBtnKey)
 end
 
-function var_0_0.Dispose(arg_25_0)
-	for iter_25_0, iter_25_1 in pairs(arg_25_0.attachViewList_) do
-		iter_25_1:Dispose()
+function var_0_0.Dispose(arg_24_0)
+	for iter_24_0, iter_24_1 in pairs(arg_24_0.attachViewList_) do
+		iter_24_1:Dispose()
 	end
 
-	arg_25_0.attachViewList_ = nil
+	arg_24_0.attachViewList_ = nil
 
-	arg_25_0.hardLevelView_:Dispose()
+	arg_24_0.hardLevelView_:Dispose()
 
-	arg_25_0.hardLevelView_ = nil
+	arg_24_0.hardLevelView_ = nil
 
-	arg_25_0.chapterPartBtnView_:Dispose()
+	arg_24_0.chapterPartBtnView_:Dispose()
 
-	arg_25_0.chapterPartBtnView_ = nil
-	arg_25_0.stopMoveHandler_ = nil
+	arg_24_0.chapterPartBtnView_ = nil
+	arg_24_0.stopMoveHandler_ = nil
 
-	var_0_0.super.Dispose(arg_25_0)
+	var_0_0.super.Dispose(arg_24_0)
 end
 
-function var_0_0.HideActivityRedPoint(arg_26_0)
-	local var_26_0 = arg_26_0.chapterID_
-	local var_26_1 = ChapterCfg[var_26_0]
-	local var_26_2
+function var_0_0.HideActivityRedPoint(arg_25_0)
+	local var_25_0 = arg_25_0.chapterID_
+	local var_25_1 = ChapterCfg[var_25_0]
+	local var_25_2
 
-	if var_26_1.unlock_activity_id ~= 0 then
-		var_26_2 = var_26_1.unlock_activity_id
+	if var_25_1.unlock_activity_id ~= 0 then
+		var_25_2 = var_25_1.unlock_activity_id
 	else
-		var_26_2 = var_26_1.activity_id
+		var_25_2 = var_25_1.activity_id
 	end
 
-	if var_26_2 ~= 0 and not RedPointData:GetIsRedPointOpen(RedPointConst.ACTIVITY_RANGE + var_26_2) and ActivityTools.GetActivityStatus(var_26_2) == 1 then
-		RedPointAction.HandleRedPoint(RedPointConst.ACTIVITY_RANGE + var_26_2)
-		manager.redPoint:setTip(string.format("%s%s", ActivityTools.GetRedPointKey(var_26_2), var_26_2), 0)
+	if var_25_2 ~= 0 and not RedPointData:GetIsRedPointOpen(RedPointConst.ACTIVITY_RANGE + var_25_2) and ActivityTools.GetActivityStatus(var_25_2) == 1 then
+		RedPointAction.HandleRedPoint(RedPointConst.ACTIVITY_RANGE + var_25_2)
+		manager.redPoint:setTip(string.format("%s%s", ActivityTools.GetRedPointKey(var_25_2), var_25_2), 0)
 	end
 end
 
-function var_0_0.StopMove(arg_27_0)
-	arg_27_0.stopMove_ = true
+function var_0_0.StopMove(arg_26_0)
+	arg_26_0.stopMove_ = true
 end
 
 return var_0_0

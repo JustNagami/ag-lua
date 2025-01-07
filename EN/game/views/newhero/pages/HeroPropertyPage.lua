@@ -115,7 +115,7 @@ end
 function var_0_0.UpdateView(arg_15_0)
 	arg_15_0:RefreshBtnActive()
 
-	local var_15_0 = HeroTools.GetHeroOntologyID(arg_15_0.heroInfo_.id)
+	local var_15_0 = HeroTools.GetHeroOntologyID(arg_15_0.heroInfo_.id) or arg_15_0.heroInfo_.id
 
 	manager.redPoint:bindUIandKey(arg_15_0.archiveBtn_.transform, RedPointConst.HERO_ARCHIVE_ID .. arg_15_0.heroInfo_.id, {
 		x = 40,
@@ -137,8 +137,12 @@ end
 function var_0_0.RefreshBtnActive(arg_16_0)
 	arg_16_0.archiveID_ = HeroTools.GetHeroOntologyID(arg_16_0.heroInfo_.id)
 
-	if #HeroRecordCfg[arg_16_0.archiveID_].plot_id > 0 then
-		arg_16_0.storyBtn_.gameObject:SetActive(true)
+	if arg_16_0.archiveID_ then
+		if #HeroRecordCfg[arg_16_0.archiveID_].plot_id > 0 then
+			arg_16_0.storyBtn_.gameObject:SetActive(true)
+		else
+			arg_16_0.storyBtn_.gameObject:SetActive(false)
+		end
 	else
 		arg_16_0.storyBtn_.gameObject:SetActive(false)
 	end

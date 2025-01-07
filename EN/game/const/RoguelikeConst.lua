@@ -30,5 +30,19 @@ return {
 			"TextureConfig/VersionUI/JapanRegionUI_2_6/JapanRoguelike1UI/JapanRegionUI2_6_00031",
 			"TextureConfig/VersionUI/JapanRegionUI_2_6/JapanRoguelike1UI/JapanRegionUI2_6_00032"
 		}
+	},
+	[ActivityConst.ACTIVITY_ROGUELIKE_NORMAL_3_5] = {
+		background = {
+			"TextureBg/Version/SummerUI_3_5/SummerUI_3_5_RegionItemUI/SummerUI3_5_00005",
+			"TextureBg/Version/SummerUI_3_5/SummerUI_3_5_RegionItemUI/SummerUI3_5_00005_1",
+			"TextureBg/Version/SummerUI_3_5/SummerUI_3_5_RegionItemUI/SummerUI3_5_00005_2"
+		}
+	},
+	[ActivityConst.ACTIVITY_ROGUELIKE_DIFFICULT_3_5] = {
+		background = {
+			"TextureBg/Version/SummerUI_3_5/SummerUI_3_5_RegionItemUI/SummerUI3_5_00005",
+			"TextureBg/Version/SummerUI_3_5/SummerUI_3_5_RegionItemUI/SummerUI3_5_00005_1",
+			"TextureBg/Version/SummerUI_3_5/SummerUI_3_5_RegionItemUI/SummerUI3_5_00005_2"
+		}
 	}
 }

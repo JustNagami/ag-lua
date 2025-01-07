@@ -105,8 +105,6 @@ function var_0_0.UpdateHeroView(arg_10_0)
 end
 
 function var_0_0.UpdateAvatarView(arg_11_0)
-	SetActive(arg_11_0.m_weaponIcon.gameObject, false)
-
 	if arg_11_0.curPageIndex_ == arg_11_0.pageIndexS_.astrolabe then
 		arg_11_0.heroAvatarView_:ShowHeroModel(false)
 		arg_11_0.heroAvatarView_:SetCameraToPage("heroAstrolabe")
@@ -117,12 +115,8 @@ function var_0_0.UpdateAvatarView(arg_11_0)
 		arg_11_0.heroAvatarView_:ShowHeroModel(false)
 		arg_11_0.heroAvatarView_:SetCameraToPage("heroWeapon")
 
-		local var_11_0 = arg_11_0:GetHeroData(arg_11_0.curHeroId_):GetWeaponServantEffect()
-
-		if var_11_0 ~= 0 then
-			SetActive(arg_11_0.m_weaponIcon.gameObject, true)
-
-			arg_11_0.m_weaponIcon.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/Portrait/" .. var_11_0)
+		if arg_11_0:GetHeroData(arg_11_0.curHeroId_):GetWeaponServantEffect() ~= 0 then
+			-- block empty
 		end
 	else
 		arg_11_0.heroAvatarView_:SetSkinId(arg_11_0:GetHeroSkin(arg_11_0.curHeroId_))
@@ -132,7 +126,7 @@ function var_0_0.UpdateAvatarView(arg_11_0)
 end
 
 function var_0_0.GetHeroData(arg_12_0, arg_12_1)
-	return StrategyMatrixData:GetHeroData(arg_12_0.matrix_activity_id, arg_12_1)
+	return StrategyMatrixData:GetHeroData(arg_12_1)
 end
 
 function var_0_0.GetHeroSkin(arg_13_0, arg_13_1)

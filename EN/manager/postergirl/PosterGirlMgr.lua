@@ -43,36 +43,30 @@ function var_0_0.RefreshModel(arg_5_0)
 	end
 
 	if arg_5_0.actor then
+		arg_5_0.actor:SetSceneID(arg_5_0:GetCurScene())
 		arg_5_0.actor:UpdateViewTag(arg_5_0.view_tag)
 		arg_5_0.actor:DoInit(arg_5_0.view_tag)
 	end
 end
 
 function var_0_0.RefreshCommonModel(arg_6_0)
-	local var_6_0 = PlayerData:GetPlayerInfo().poster_girl
-	local var_6_1 = HeroTools.HeroUsingSkinInfo(var_6_0).id
-	local var_6_2 = SkinCfg[var_6_1]
-	local var_6_3 = SkinSceneActionCfg[var_6_1]
-	local var_6_4 = HomeSceneSettingData:GetCurScene()
+	local var_6_0 = PlayerData:GetPlayerInfo()
+	local var_6_1
 
-	if var_6_3 and var_6_3.special_scene_id == var_6_4 then
-		local var_6_5 = var_6_3.special_action
-
-		if arg_6_0.actor and arg_6_0.actor:GetSkinId() == var_6_1 and arg_6_0.actor:GetModelId() == var_6_5 then
-			return
-		end
-
-		if arg_6_0.actor then
-			arg_6_0.actor:Dispose()
-		end
-
-		if HomeSceneSettingCfg[var_6_4].limit_display == 0 then
-			arg_6_0.actor = PosterGirlDlcActor.New(var_6_1, var_6_5)
-		else
-			arg_6_0.actor = PosterTzeroActor.New(var_6_1, var_6_5)
-		end
+	if arg_6_0.view_tag == PosterGirlConst.ViewTag.preview then
+		var_6_1 = arg_6_0.view_data
 	else
-		local var_6_6 = var_6_2.main_model_id
+		local var_6_2 = PlayerData:GetPosterGirlHeroId()
+
+		var_6_1 = HeroTools.HeroUsingSkinInfo(var_6_2).id
+	end
+
+	local var_6_3 = SkinCfg[var_6_1]
+	local var_6_4 = SkinSceneActionCfg[var_6_1]
+	local var_6_5 = arg_6_0:GetCurScene()
+
+	if var_6_4 and (var_6_4.special_scene_id == var_6_5 or var_6_4.special_scene_id_2 == var_6_5) then
+		local var_6_6 = var_6_4.special_scene_id == var_6_5 and var_6_4.special_action or var_6_4.special_action_2
 
 		if arg_6_0.actor and arg_6_0.actor:GetSkinId() == var_6_1 and arg_6_0.actor:GetModelId() == var_6_6 then
 			return
@@ -82,7 +76,23 @@ function var_0_0.RefreshCommonModel(arg_6_0)
 			arg_6_0.actor:Dispose()
 		end
 
-		arg_6_0.actor = PosterCommonActor.New(var_6_1, var_6_6)
+		if HomeSceneSettingCfg[var_6_5].limit_display == 0 then
+			arg_6_0.actor = PosterGirlDlcActor.New(var_6_1, var_6_6)
+		else
+			arg_6_0.actor = PosterTzeroActor.New(var_6_1, var_6_6)
+		end
+	else
+		local var_6_7 = var_6_3.main_model_id
+
+		if arg_6_0.actor and arg_6_0.actor:GetSkinId() == var_6_1 and arg_6_0.actor:GetModelId() == var_6_7 then
+			return
+		end
+
+		if arg_6_0.actor then
+			arg_6_0.actor:Dispose()
+		end
+
+		arg_6_0.actor = PosterCommonActor.New(var_6_1, var_6_7)
 	end
 end
 
@@ -116,108 +126,116 @@ function var_0_0.GetViewDirect(arg_9_0)
 	return 0
 end
 
-function var_0_0.Dispose(arg_10_0)
-	if arg_10_0.actor then
-		arg_10_0.actor:Dispose()
+function var_0_0.GetCurScene(arg_10_0)
+	if arg_10_0.view_tag == PosterGirlConst.ViewTag.preview then
+		return HomeSceneSettingData:GetPreviewScene()
+	else
+		return HomeSceneSettingData:GetCurScene()
+	end
+end
+
+function var_0_0.Dispose(arg_11_0)
+	if arg_11_0.actor then
+		arg_11_0.actor:Dispose()
 	end
 
-	arg_10_0.actor = nil
-	arg_10_0.view_tag = PosterGirlConst.ViewTag.null
+	arg_11_0.actor = nil
+	arg_11_0.view_tag = PosterGirlConst.ViewTag.null
 end
 
-function var_0_0.SetForceRandomIndex(arg_11_0, arg_11_1)
-	arg_11_0.randomIndex = arg_11_1
+function var_0_0.SetForceRandomIndex(arg_12_0, arg_12_1)
+	arg_12_0.randomIndex = arg_12_1
 end
 
-function var_0_0.GetForceRandomIndex(arg_12_0)
-	local var_12_0 = arg_12_0.randomIndex
+function var_0_0.GetForceRandomIndex(arg_13_0)
+	local var_13_0 = arg_13_0.randomIndex
 
-	arg_12_0.randomIndex = nil
+	arg_13_0.randomIndex = nil
 
-	return var_12_0
+	return var_13_0
 end
 
-function var_0_0.CheckDebut(arg_13_0)
-	if not arg_13_0.actor then
-		return false
-	end
-
-	return arg_13_0.actor:CheckDebut()
-end
-
-function var_0_0.SkipDebut(arg_14_0)
+function var_0_0.CheckDebut(arg_14_0)
 	if not arg_14_0.actor then
 		return false
 	end
 
-	return arg_14_0.actor:SkipDebut()
+	return arg_14_0.actor:CheckDebut()
 end
 
-function var_0_0.IsPlayingDebut(arg_15_0)
-	if arg_15_0.actor then
-		return arg_15_0.actor:IsPlayingDebut()
+function var_0_0.SkipDebut(arg_15_0)
+	if not arg_15_0.actor then
+		return false
+	end
+
+	return arg_15_0.actor:SkipDebut()
+end
+
+function var_0_0.IsPlayingDebut(arg_16_0)
+	if arg_16_0.actor then
+		return arg_16_0.actor:IsPlayingDebut()
 	end
 
 	return false
 end
 
-function var_0_0.DoShacking(arg_16_0)
-	if arg_16_0.actor and #arg_16_0.actor:GetInteractionCfg()[PosterGirlConst.InteractionKey.shaking] ~= 0 then
-		arg_16_0.actor:DoShacking()
+function var_0_0.DoShacking(arg_17_0)
+	if arg_17_0.actor and #arg_17_0.actor:GetInteractionCfg()[PosterGirlConst.InteractionKey.shaking] ~= 0 then
+		arg_17_0.actor:DoShacking()
 	end
 end
 
-function var_0_0.DoTouch(arg_17_0)
-	if arg_17_0.actor and #arg_17_0.actor:GetInteractionCfg()[PosterGirlConst.InteractionKey.mainTouch] ~= 0 then
-		arg_17_0.actor:DoTouch()
+function var_0_0.DoTouch(arg_18_0)
+	if arg_18_0.actor and #arg_18_0.actor:GetInteractionCfg()[PosterGirlConst.InteractionKey.mainTouch] ~= 0 then
+		arg_18_0.actor:DoTouch()
 	end
 end
 
-function var_0_0.DoQuickTouch(arg_18_0)
-	if arg_18_0.actor and #arg_18_0.actor:GetInteractionCfg()[PosterGirlConst.InteractionKey.mainQuickTouch] ~= 0 then
-		arg_18_0.actor:DoQuickTouch()
+function var_0_0.DoQuickTouch(arg_19_0)
+	if arg_19_0.actor and #arg_19_0.actor:GetInteractionCfg()[PosterGirlConst.InteractionKey.mainQuickTouch] ~= 0 then
+		arg_19_0.actor:DoQuickTouch()
 	end
 end
 
-function var_0_0.DoShowing(arg_19_0)
-	if arg_19_0.actor and #arg_19_0.actor:GetInteractionCfg()[PosterGirlConst.InteractionKey.showing] ~= 0 then
-		arg_19_0.actor:DoShowing()
+function var_0_0.DoShowing(arg_20_0)
+	if arg_20_0.actor and #arg_20_0.actor:GetInteractionCfg()[PosterGirlConst.InteractionKey.showing] ~= 0 then
+		arg_20_0.actor:DoShowing()
 	end
 end
 
-function var_0_0.DoGreeting(arg_20_0)
-	if arg_20_0.actor and #arg_20_0.actor:GetInteractionCfg()[PosterGirlConst.InteractionKey.greeting] ~= 0 then
-		arg_20_0.actor:DoGreeting()
+function var_0_0.DoGreeting(arg_21_0)
+	if arg_21_0.actor and #arg_21_0.actor:GetInteractionCfg()[PosterGirlConst.InteractionKey.greeting] ~= 0 then
+		arg_21_0.actor:DoGreeting()
 	end
 end
 
-function var_0_0.DoIdle(arg_21_0)
-	if arg_21_0.actor and #arg_21_0.actor:GetInteractionCfg()[PosterGirlConst.InteractionKey.idle] ~= 0 then
-		arg_21_0.actor:DoIdle()
+function var_0_0.DoIdle(arg_22_0)
+	if arg_22_0.actor and #arg_22_0.actor:GetInteractionCfg()[PosterGirlConst.InteractionKey.idle] ~= 0 then
+		arg_22_0.actor:DoIdle()
 	end
 end
 
-function var_0_0.InitTouchHelp(arg_22_0, arg_22_1)
-	if arg_22_0.actor then
-		arg_22_0.actor:InitTouchHelp(arg_22_1)
-	end
-end
-
-function var_0_0.TouchHelpIdle(arg_23_0)
+function var_0_0.InitTouchHelp(arg_23_0, arg_23_1)
 	if arg_23_0.actor then
-		arg_23_0.actor:TouchHelpIdle()
+		arg_23_0.actor:InitTouchHelp(arg_23_1)
 	end
 end
 
-function var_0_0.TouchHelpSingleDrag(arg_24_0, arg_24_1, arg_24_2)
+function var_0_0.TouchHelpIdle(arg_24_0)
 	if arg_24_0.actor then
-		arg_24_0.actor:TouchHelpSingleDrag(arg_24_1, arg_24_2)
+		arg_24_0.actor:TouchHelpIdle()
 	end
 end
 
-function var_0_0.TouchHelpMutiDrag(arg_25_0, arg_25_1)
+function var_0_0.TouchHelpSingleDrag(arg_25_0, arg_25_1, arg_25_2)
 	if arg_25_0.actor then
-		arg_25_0.actor:TouchHelpMutiDrag(arg_25_1)
+		arg_25_0.actor:TouchHelpSingleDrag(arg_25_1, arg_25_2)
+	end
+end
+
+function var_0_0.TouchHelpMutiDrag(arg_26_0, arg_26_1)
+	if arg_26_0.actor then
+		arg_26_0.actor:TouchHelpMutiDrag(arg_26_1)
 	end
 end
 

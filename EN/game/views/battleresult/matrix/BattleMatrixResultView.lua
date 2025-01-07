@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("BattleMatrixResultView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/BattleResult/BattleVariableUI"
+	return "Widget/System/MatrixlUI/BattleVariableUI"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -215,7 +215,7 @@ function var_0_0.RefreshRewardItemS(arg_25_0)
 		end
 
 		arg_25_0.rewardItems_[iter_25_2]:RefreshData(var_25_0[iter_25_2])
-		arg_25_0.rewardItems_[iter_25_2]:SetBottomText("<color=#%s>" .. var_25_0[iter_25_2].number .. "</color>")
+		arg_25_0.rewardItems_[iter_25_2]:SetBottomText("<color=#%s>" .. var_25_0[iter_25_2].num .. "</color>")
 	end
 end
 

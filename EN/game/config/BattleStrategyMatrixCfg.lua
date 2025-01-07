@@ -1308,6 +1308,251 @@
 		background_1 = "C03a",
 		id = 5130185
 	},
+	[5191301] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130101",
+		background_1 = "C03a",
+		id = 5191301
+	},
+	[5191302] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130102",
+		background_1 = "C03a",
+		id = 5191302
+	},
+	[5191303] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130103",
+		background_1 = "C03a",
+		id = 5191303
+	},
+	[5191304] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130104",
+		background_1 = "C03a",
+		id = 5191304
+	},
+	[5191305] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130105",
+		background_1 = "C03a",
+		id = 5191305
+	},
+	[5191306] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130106",
+		background_1 = "C03a",
+		id = 5191306
+	},
+	[5191307] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130107",
+		background_1 = "C03a",
+		id = 5191307
+	},
+	[5191308] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130108",
+		background_1 = "C03a",
+		id = 5191308
+	},
+	[5191309] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130109",
+		background_1 = "C03a",
+		id = 5191309
+	},
+	[5191310] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130110",
+		background_1 = "C03a",
+		id = 5191310
+	},
+	[5191311] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130111",
+		background_1 = "C03a",
+		id = 5191311
+	},
+	[5191312] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130112",
+		background_1 = "C03a",
+		id = 5191312
+	},
+	[5191321] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5191321",
+		background_1 = "C03a",
+		id = 5191321
+	},
+	[5191322] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5191322",
+		background_1 = "C03a",
+		id = 5191322
+	},
+	[5191323] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130123",
+		background_1 = "C03a",
+		id = 5191323
+	},
+	[5191324] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130124",
+		background_1 = "C03a",
+		id = 5191324
+	},
+	[5191325] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130125",
+		background_1 = "C03a",
+		id = 5191325
+	},
+	[5191326] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130126",
+		background_1 = "C03a",
+		id = 5191326
+	},
+	[5191327] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130127",
+		background_1 = "C03a",
+		id = 5191327
+	},
+	[5191328] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130128",
+		background_1 = "C03a",
+		id = 5191328
+	},
+	[5191329] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130129",
+		background_1 = "C03a",
+		id = 5191329
+	},
+	[5191351] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5191351",
+		background_1 = "MatrixBoss",
+		id = 5191351
+	},
+	[5191352] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5191352",
+		background_1 = "MatrixBoss",
+		id = 5191352
+	},
+	[5191361] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130161",
+		background_1 = "C03a",
+		id = 5191361
+	},
+	[5191362] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130162",
+		background_1 = "C03a",
+		id = 5191362
+	},
+	[5191363] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130163",
+		background_1 = "C03a",
+		id = 5191363
+	},
+	[5191364] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130164",
+		background_1 = "C03a",
+		id = 5191364
+	},
+	[5191365] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130165",
+		background_1 = "C03a",
+		id = 5191365
+	},
+	[5191366] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130166",
+		background_1 = "C03a",
+		id = 5191366
+	},
+	[5191381] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130181",
+		background_1 = "C03a",
+		id = 5191381
+	},
+	[5191382] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130182",
+		background_1 = "C03a",
+		id = 5191382
+	},
+	[5191383] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130183",
+		background_1 = "C03a",
+		id = 5191383
+	},
+	[5191384] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130184",
+		background_1 = "C03a",
+		id = 5191384
+	},
+	[5191385] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130185",
+		background_1 = "C03a",
+		id = 5191385
+	},
+	[5191386] = {
+		monster_level = 40,
+		ai_level = 3034,
+		map = "5130186",
+		background_1 = "C03a",
+		id = 5191386
+	},
 	all = {
 		5051101,
 		5051102,
@@ -1495,6 +1740,41 @@
 		5130182,
 		5130183,
 		5130184,
-		5130185
+		5130185,
+		5191301,
+		5191302,
+		5191303,
+		5191304,
+		5191305,
+		5191306,
+		5191307,
+		5191308,
+		5191309,
+		5191310,
+		5191311,
+		5191312,
+		5191321,
+		5191322,
+		5191323,
+		5191324,
+		5191325,
+		5191326,
+		5191327,
+		5191328,
+		5191329,
+		5191351,
+		5191352,
+		5191361,
+		5191362,
+		5191363,
+		5191364,
+		5191365,
+		5191366,
+		5191381,
+		5191382,
+		5191383,
+		5191384,
+		5191385,
+		5191386
 	}
 }

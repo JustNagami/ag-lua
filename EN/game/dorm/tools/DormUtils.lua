@@ -59,7 +59,8 @@ end
 
 local var_0_2 = {
 	DormEnum.SpecialVfx.Hungry,
-	DormEnum.SpecialVfx.Tired
+	DormEnum.SpecialVfx.Tired,
+	DormEnum.SpecialVfx.Gift
 }
 local var_0_3 = {
 	[DormEnum.SpecialVfx.Hungry] = {
@@ -71,71 +72,104 @@ local var_0_3 = {
 		attachPoint = "root",
 		duration = -1,
 		path = "Dorm/Effect/houzhai/fx_nengliang"
+	},
+	[DormEnum.SpecialVfx.Gift] = {
+		attachPoint = "gua_Hp",
+		duration = -1,
+		path = "Dorm/Effect/houzhai/fx_HZ04_gift"
 	}
 }
 local var_0_4 = DormEnum.Namespace.HeroShowSpecialVfx
 local var_0_5 = {
-	[DormEnum.SpecialVfx.Hungry] = function(arg_10_0)
-		return not DormVisitTools:CheckCurIsVisitRoom() and DormHeroTools:CheckFeedTime(arg_10_0) and not DormHeroTools:CheckDormFatigueLevel(arg_10_0)
+	[DormEnum.SpecialVfx.Hungry] = function(arg_10_0, arg_10_1)
+		return not DormVisitTools:CheckCurIsVisitRoom() and not DormHeroTools:CheckIsVisitHero(arg_10_1) and DormHeroTools:CheckFeedTime(arg_10_0) and not DormHeroTools:CheckDormFatigueLevel(arg_10_0)
 	end,
 	[DormEnum.SpecialVfx.Tired] = function(arg_11_0)
 		return not DormVisitTools:CheckCurIsVisitRoom() and not DormHeroTools:CheckCanteenFatigueLevel(arg_11_0)
+	end,
+	[DormEnum.SpecialVfx.Gift] = function(arg_12_0, arg_12_1)
+		return not DormVisitTools:CheckCurIsVisitRoom() and DormHeroTools:CheckIsVisitHero(arg_12_1) and DormData:CanReceiveVisitReward()
 	end
 }
+local var_0_6 = {
+	[DormEnum.SpecialVfx.Gift] = true
+}
 
-local function var_0_6(arg_12_0)
-	local var_12_0 = var_0_0.GetEntityData(arg_12_0)
-	local var_12_1 = var_12_0.cfgID
-	local var_12_2 = var_12_0.heroID
+local function var_0_7(arg_13_0)
+	local var_13_0 = var_0_0.GetEntityData(arg_13_0)
+	local var_13_1 = var_13_0.cfgID
+	local var_13_2 = var_13_0.heroID
 
-	if var_12_2 == nil then
+	if var_13_2 == nil then
 		return
 	end
 
-	local var_12_3 = Dorm.storage:GetData(var_0_4, var_12_2)
-
-	if var_12_3 == nil then
-		var_12_3 = {
+	if DormHeroTools:CheckIsVisitHero(arg_13_0) then
+		local var_13_3 = {
 			vfxStatus = {}
 		}
 
 		if Dorm.charaVfxActiveType then
-			for iter_12_0, iter_12_1 in ipairs(Dorm.charaVfxActiveType) do
-				local var_12_4 = var_0_5[iter_12_1]
+			for iter_13_0, iter_13_1 in ipairs(Dorm.charaVfxActiveType) do
+				if var_0_6[iter_13_1] then
+					local var_13_4 = var_0_5[iter_13_1]
 
-				var_12_3.vfxStatus[iter_12_1] = var_12_4 and var_12_4(var_12_2)
+					var_13_3.vfxStatus[iter_13_1] = var_13_4 and var_13_4(var_13_2, arg_13_0)
+				end
 			end
 		end
 
-		Dorm.storage:RecordData(var_0_4, var_12_2, var_12_3)
-	end
+		return var_13_3
+	else
+		local var_13_5 = Dorm.storage:GetData(var_0_4, var_13_2)
 
-	return var_12_3
+		if var_13_5 == nil then
+			var_13_5 = {
+				vfxStatus = {}
+			}
+
+			if Dorm.charaVfxActiveType then
+				for iter_13_2, iter_13_3 in ipairs(Dorm.charaVfxActiveType) do
+					local var_13_6 = var_0_5[iter_13_3]
+
+					var_13_5.vfxStatus[iter_13_3] = var_13_6 and var_13_6(var_13_2, arg_13_0)
+				end
+			end
+
+			Dorm.storage:RecordData(var_0_4, var_13_2, var_13_5)
+		end
+
+		return var_13_5
+	end
 end
 
-local var_0_7 = "status"
+local var_0_8 = "status"
 
-function var_0_0.ShowCharaSpecialVfx(arg_13_0, arg_13_1)
-	if arg_13_1 == nil then
+function var_0_0.ShowCharaSpecialVfx(arg_14_0, arg_14_1)
+	if arg_14_1 == nil then
 		return
 	end
 
-	if next(arg_13_1) then
-		local var_13_0 = var_0_6(arg_13_0)
+	if next(arg_14_1) then
+		local var_14_0 = var_0_7(arg_14_0)
 
-		if var_13_0.hideVfx then
-			var_13_0.hideVfx = var_13_0.hideVfx - 1
+		if var_14_0 == nil then
+			return
+		end
 
-			if var_13_0.hideVfx == 0 then
-				var_13_0.hideVfx = nil
+		if var_14_0.hideVfx then
+			var_14_0.hideVfx = var_14_0.hideVfx - 1
+
+			if var_14_0.hideVfx == 0 then
+				var_14_0.hideVfx = nil
 			end
 		end
 
-		for iter_13_0, iter_13_1 in ipairs(arg_13_1) do
-			local var_13_1 = var_0_3[iter_13_1]
+		for iter_14_0, iter_14_1 in ipairs(arg_14_1) do
+			local var_14_1 = var_0_3[iter_14_1]
 
-			if var_13_1 and var_13_0.vfxStatus[iter_13_1] and not var_13_0.hideVfx then
-				Dorm.DormEntityManager.PlayEffect(arg_13_0, var_13_1.attachPoint, var_0_7, var_13_1.path, var_13_1.duration)
+			if var_14_1 and var_14_0.vfxStatus[iter_14_1] and not var_14_0.hideVfx then
+				Dorm.DormEntityManager.PlayEffect(arg_14_0, var_14_1.attachPoint, var_0_8, var_14_1.path, var_14_1.duration)
 
 				return
 			end
@@ -143,43 +177,43 @@ function var_0_0.ShowCharaSpecialVfx(arg_13_0, arg_13_1)
 	end
 end
 
-function var_0_0.ResetCharaSpecialVfx(arg_14_0)
-	local var_14_0 = var_0_6(arg_14_0)
+function var_0_0.ResetCharaSpecialVfx(arg_15_0)
+	local var_15_0 = var_0_7(arg_15_0)
 
-	if nullable(var_14_0, "hideVfx") then
-		var_14_0.hideVfx = nil
+	if nullable(var_15_0, "hideVfx") then
+		var_15_0.hideVfx = nil
 
-		var_0_0.ShowCharaSpecialVfx(arg_14_0, Dorm.charaVfxActiveType)
+		var_0_0.ShowCharaSpecialVfx(arg_15_0, Dorm.charaVfxActiveType)
 	end
 end
 
-function var_0_0.HideCharaSpecialVfx(arg_15_0)
-	local var_15_0 = var_0_6(arg_15_0)
-
-	if var_15_0 then
-		var_15_0.hideVfx = (var_15_0.hideVfx or 0) + 1
-	end
-
-	Dorm.DormEntityManager.ClearAllEffect(arg_15_0, var_0_7)
-end
-
-function var_0_0.ClearCharaHasSpecialVfx(arg_16_0)
-	local var_16_0 = var_0_6(arg_16_0).vfxStatus
+function var_0_0.HideCharaSpecialVfx(arg_16_0)
+	local var_16_0 = var_0_7(arg_16_0)
 
 	if var_16_0 then
-		for iter_16_0, iter_16_1 in ipairs(var_0_2) do
-			var_16_0[iter_16_1] = false
+		var_16_0.hideVfx = (var_16_0.hideVfx or 0) + 1
+	end
+
+	Dorm.DormEntityManager.ClearAllEffect(arg_16_0, var_0_8)
+end
+
+function var_0_0.ClearCharaHasSpecialVfx(arg_17_0)
+	local var_17_0 = nullable(var_0_7(arg_17_0), "vfxStatus")
+
+	if var_17_0 then
+		for iter_17_0, iter_17_1 in ipairs(var_0_2) do
+			var_17_0[iter_17_1] = false
 		end
 	end
 end
 
-function var_0_0.ClearSingleSpecialVfx(arg_17_0, arg_17_1)
-	local var_17_0 = var_0_6(arg_17_0).vfxStatus
+function var_0_0.ClearSingleSpecialVfx(arg_18_0, arg_18_1)
+	local var_18_0 = var_0_7(arg_18_0).vfxStatus
 
-	if var_17_0 then
-		for iter_17_0, iter_17_1 in ipairs(var_0_2) do
-			if iter_17_1 == arg_17_1 then
-				var_17_0[iter_17_1] = false
+	if var_18_0 then
+		for iter_18_0, iter_18_1 in ipairs(var_0_2) do
+			if iter_18_1 == arg_18_1 then
+				var_18_0[iter_18_1] = false
 			end
 		end
 	end
@@ -187,6 +221,10 @@ end
 
 function var_0_0.CharaVfxEnabled()
 	return Dorm.charaVfxActiveType and next(Dorm.charaVfxActiveType)
+end
+
+function var_0_0.ClearSceneItemInfo()
+	Dorm.sceneItemInfo = {}
 end
 
 return var_0_0

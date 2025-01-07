@@ -585,9 +585,9 @@
 		tips = "f01d2efd9bb58617a82fb9d1f04c7153",
 		map = "5170601",
 		need_default_team = 1,
-		user_exp = 30,
+		user_exp = 20,
 		id = 5170601,
-		hero_exp = 60,
+		hero_exp = 40,
 		level = 1,
 		attribute_factor = {
 			1000,
@@ -609,9 +609,9 @@
 		tips = "d6b5cf3a168d6aa901053026a756aeff",
 		map = "5170602",
 		need_default_team = 1,
-		user_exp = 30,
+		user_exp = 20,
 		id = 5170602,
-		hero_exp = 60,
+		hero_exp = 40,
 		level = 1,
 		attribute_factor = {
 			1000,
@@ -633,9 +633,9 @@
 		tips = "6d115d4f341d3464942149813d88fde8",
 		map = "5170603",
 		need_default_team = 1,
-		user_exp = 30,
+		user_exp = 20,
 		id = 5170603,
-		hero_exp = 60,
+		hero_exp = 40,
 		level = 1,
 		attribute_factor = {
 			1000,
@@ -681,9 +681,9 @@
 		tips = "2e1b71f2a661d7cfdcee431020160857",
 		map = "5170701",
 		need_default_team = 1,
-		user_exp = 30,
+		user_exp = 20,
 		id = 5170701,
-		hero_exp = 60,
+		hero_exp = 40,
 		level = 1,
 		attribute_factor = {
 			1000,
@@ -705,9 +705,9 @@
 		tips = "c14c2a98ff75198760d879e78426b711",
 		map = "5170702",
 		need_default_team = 1,
-		user_exp = 30,
+		user_exp = 20,
 		id = 5170702,
-		hero_exp = 60,
+		hero_exp = 40,
 		level = 1,
 		attribute_factor = {
 			1000,
@@ -729,9 +729,9 @@
 		tips = "be011c93c7f25e533d75d512a5fc4dac",
 		map = "5170703",
 		need_default_team = 1,
-		user_exp = 30,
+		user_exp = 20,
 		id = 5170703,
-		hero_exp = 60,
+		hero_exp = 40,
 		level = 1,
 		attribute_factor = {
 			1000,
@@ -777,9 +777,9 @@
 		tips = "ad0eac3d5a459be792c96122b17ddb26",
 		map = "5180201",
 		need_default_team = 1,
-		user_exp = 30,
+		user_exp = 20,
 		id = 5180201,
-		hero_exp = 60,
+		hero_exp = 40,
 		level = 1,
 		attribute_factor = {
 			1000,
@@ -801,9 +801,9 @@
 		tips = "da895e285b4fb33b03f661817882c86b",
 		map = "5180202",
 		need_default_team = 1,
-		user_exp = 30,
+		user_exp = 20,
 		id = 5180202,
-		hero_exp = 60,
+		hero_exp = 40,
 		level = 1,
 		attribute_factor = {
 			1000,
@@ -825,9 +825,9 @@
 		tips = "270270a4a458e8eb520c0e6985c4ba2b",
 		map = "5180203",
 		need_default_team = 1,
-		user_exp = 30,
+		user_exp = 20,
 		id = 5180203,
-		hero_exp = 60,
+		hero_exp = 40,
 		level = 1,
 		attribute_factor = {
 			1000,
@@ -857,6 +857,486 @@
 			1000,
 			1000,
 			12000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5180205] = {
+		monster_level = 80,
+		name = "dd03af1b33ff5ba6afb26abda7b62c6a",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024570,
+		background_1 = "A08",
+		tips = "1c3eabab08a8a6625cebb69e4561d438",
+		map = "5170701",
+		need_default_team = 1,
+		user_exp = 30,
+		id = 5180205,
+		hero_exp = 60,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			80000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5180206] = {
+		monster_level = 80,
+		name = "823b3ade72e7ce551a1dc84528ecebf1",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024571,
+		background_1 = "A08",
+		tips = "e9cc6876555ff9618e59abb53da6340e",
+		map = "5170702",
+		need_default_team = 1,
+		user_exp = 30,
+		id = 5180206,
+		hero_exp = 60,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			20500
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5180207] = {
+		monster_level = 80,
+		name = "04e11a76486683e60c138596a9df9bf5",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024572,
+		background_1 = "A08",
+		tips = "386ef52dbece60adc266b19ae0de472a",
+		map = "5170703",
+		need_default_team = 1,
+		user_exp = 30,
+		id = 5180207,
+		hero_exp = 60,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			18500
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5180208] = {
+		monster_level = 80,
+		name = "6101b78c6234603292d2418371a611d8",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024573,
+		background_1 = "A07",
+		tips = "dca9e428c413e3cf17a6e69abd542b29",
+		map = "5170704",
+		need_default_team = 1,
+		user_exp = 0,
+		id = 5180208,
+		hero_exp = 0,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			12000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5191101] = {
+		monster_level = 80,
+		name = "264fc8e663fd682a11243c567f161f76",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024538,
+		background_1 = "F10",
+		tips = "129a2799b097f717e25316ab83ff6c6e",
+		map = "5191101",
+		need_default_team = 1,
+		user_exp = 20,
+		id = 5191101,
+		hero_exp = 40,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			88000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5191102] = {
+		monster_level = 80,
+		name = "a7481b60289246fed310b2c47ea6e3a4",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024539,
+		background_1 = "F08a",
+		tips = "02c9eeb4d6faea4e0d0aef12f65f6a86",
+		map = "5191102",
+		need_default_team = 1,
+		user_exp = 20,
+		id = 5191102,
+		hero_exp = 40,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			28000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5191103] = {
+		monster_level = 80,
+		name = "c4c883f2a38cd95a6114077b2b4db4ae",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024540,
+		background_1 = "F08c",
+		tips = "727479a8274741c7e4564beab466224e",
+		map = "5191103",
+		need_default_team = 1,
+		user_exp = 20,
+		id = 5191103,
+		hero_exp = 40,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			30000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5191104] = {
+		monster_level = 80,
+		name = "5b5e7f0b3ec1d50b90a00bbe508dedca",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024541,
+		background_1 = "A07",
+		tips = "b96af66e1794d4da2ace761d05720ca8",
+		map = "5191104",
+		need_default_team = 1,
+		user_exp = 0,
+		id = 5191104,
+		hero_exp = 0,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			17000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5191201] = {
+		monster_level = 80,
+		name = "c80777b53d6a5096c2348a3af62fe647",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024542,
+		background_1 = "F09",
+		tips = "188228ebc292b028384e329d0b211233",
+		map = "5191201",
+		need_default_team = 1,
+		user_exp = 20,
+		id = 5191201,
+		hero_exp = 40,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			82000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5191202] = {
+		monster_level = 80,
+		name = "39f9c05e52ca5e164604769edfe8b187",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024543,
+		background_1 = "F10a",
+		tips = "58b213e912f9c2d082db283b4848a59b",
+		map = "5191202",
+		need_default_team = 1,
+		user_exp = 20,
+		id = 5191202,
+		hero_exp = 40,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			26000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5191203] = {
+		monster_level = 80,
+		name = "e0302c6e2bc36b8ebcbda543ce2a149f",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024544,
+		background_1 = "F09",
+		tips = "117393a6e06591fd04310e58c5a31fad",
+		map = "5191203",
+		need_default_team = 1,
+		user_exp = 20,
+		id = 5191203,
+		hero_exp = 40,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			28000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5191204] = {
+		monster_level = 80,
+		name = "362f2ba37bec1b7464e4d4df6b8792a9",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024545,
+		background_1 = "A07",
+		tips = "3ef9f07e58f64fc49e01eeabec576409",
+		map = "5191204",
+		need_default_team = 1,
+		user_exp = 0,
+		id = 5191204,
+		hero_exp = 0,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			16000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5200401] = {
+		monster_level = 80,
+		name = "4d21858ba51182fa62a5c2924cbdf328",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024546,
+		background_1 = "L02",
+		tips = "0b27cd574f6b3026994cca59424ee80a",
+		map = "5200401",
+		need_default_team = 1,
+		user_exp = 30,
+		id = 5200401,
+		hero_exp = 60,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			50000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5200402] = {
+		monster_level = 80,
+		name = "c9f0bb302a069bb5b3091de8bce579fc",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024547,
+		background_1 = "L07",
+		tips = "caa5597f70d0da0666d6b69bbc0dad26",
+		map = "5200402",
+		need_default_team = 1,
+		user_exp = 30,
+		id = 5200402,
+		hero_exp = 60,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			25000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5200403] = {
+		monster_level = 80,
+		name = "4f7b7fa6663de35ccf4c49a7665aec0f",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024548,
+		background_1 = "L02",
+		tips = "39541c707ae530eadd6d960572510a63",
+		map = "5200403",
+		need_default_team = 1,
+		user_exp = 30,
+		id = 5200403,
+		hero_exp = 60,
+		level = 1,
+		attribute_factor = {
+			500,
+			1000,
+			27000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5200404] = {
+		monster_level = 80,
+		name = "3d6f6c44f1725ba0e40a5ceec8e3ed80",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024549,
+		background_1 = "A07",
+		tips = "ad92ca76b52f8b0ec38c68515ca53d69",
+		map = "5200404",
+		need_default_team = 1,
+		user_exp = 0,
+		id = 5200404,
+		hero_exp = 0,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			14500
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5200501] = {
+		monster_level = 80,
+		name = "dc8eb4ea4075dc38a5ee104ffe0c2d79",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024550,
+		background_1 = "L02a",
+		tips = "ba15ced3d8da6136de1cb46c33b535e5",
+		map = "5200501",
+		need_default_team = 1,
+		user_exp = 30,
+		id = 5200501,
+		hero_exp = 60,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			50000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5200502] = {
+		monster_level = 80,
+		name = "952d2971d9010b2ff42d5ffc6156f98c",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024551,
+		background_1 = "L05",
+		tips = "44866051c92fd0c70c033b745c0b6368",
+		map = "5200502",
+		need_default_team = 1,
+		user_exp = 30,
+		id = 5200502,
+		hero_exp = 60,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			25000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5200503] = {
+		monster_level = 80,
+		name = "054aaaf1c5633956f1cf0f06c8df0d16",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024552,
+		background_1 = "L06",
+		tips = "85ccd2d31b6325b1ef7e7cac93e827aa",
+		map = "5200503",
+		need_default_team = 1,
+		user_exp = 30,
+		id = 5200503,
+		hero_exp = 60,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			27000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5200504] = {
+		monster_level = 80,
+		name = "e743f22de8ac7f391a3d342f95b2b925",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024553,
+		background_1 = "A07",
+		tips = "d53949f8b975998b6fa277cbf49dd859",
+		map = "5200504",
+		need_default_team = 1,
+		user_exp = 0,
+		id = 5200504,
+		hero_exp = 0,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			14500
 		},
 		team_type = {
 			201,
@@ -899,6 +1379,26 @@
 		5180201,
 		5180202,
 		5180203,
-		5180204
+		5180204,
+		5180205,
+		5180206,
+		5180207,
+		5180208,
+		5191101,
+		5191102,
+		5191103,
+		5191104,
+		5191201,
+		5191202,
+		5191203,
+		5191204,
+		5200401,
+		5200402,
+		5200403,
+		5200404,
+		5200501,
+		5200502,
+		5200503,
+		5200504
 	}
 }

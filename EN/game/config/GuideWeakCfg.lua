@@ -82,7 +82,7 @@
 		opencondition = {
 			{
 				"playerLevel",
-				35
+				30
 			}
 		},
 		skipcondition = {
@@ -292,7 +292,173 @@
 			285
 		}
 	},
+	[1401] = {
+		closetime = 5,
+		priority = 0,
+		talk_adapt = 1,
+		talk_anchors = 1,
+		name = "home",
+		narrator_icon = "mmr",
+		id = 1401,
+		talk_content = "f0d4bfa7b7cc0ca623c46dd753992c90",
+		narrator_name = "6ea02ecb35ce4069af65309ceb7bb371",
+		guide_component = {
+			"btn_message"
+		},
+		mask_component = {},
+		opencondition = {
+			{
+				"uiName",
+				"home"
+			}
+		},
+		skipcondition = {
+			{
+				"uiName",
+				"userinfo"
+			}
+		},
+		talk_position = {
+			410,
+			-230
+		}
+	},
+	[1402] = {
+		closetime = 5,
+		priority = 0,
+		talk_adapt = 0,
+		talk_anchors = 4,
+		name = "userinfo",
+		narrator_icon = "mmr",
+		id = 1402,
+		talk_content = "301675eb62a888a248ce45aa63b67c77",
+		narrator_name = "f4dd31dee841447dec8f1e400bc97f8d",
+		guide_component = {
+			"illustratedStickerBtn_"
+		},
+		mask_component = {},
+		opencondition = {
+			{
+				"uiName",
+				"userinfo"
+			}
+		},
+		skipcondition = {
+			{
+				"uiName",
+				"customStickerMain"
+			}
+		},
+		talk_position = {
+			1371,
+			125
+		}
+	},
+	[1501] = {
+		closetime = 5,
+		priority = 0,
+		talk_adapt = 1,
+		talk_anchors = 5,
+		name = "polyhedronLobby",
+		narrator_icon = "mmr",
+		id = 1501,
+		talk_content = "8372c54714c731f2e061f51fab8e7366",
+		narrator_name = "681a9acd6c1c1173fbce6646fb2ab47f",
+		guide_component = {
+			"m_policyBtn"
+		},
+		mask_component = {},
+		opencondition = {
+			{
+				"uiName",
+				"polyhedronLobby"
+			}
+		},
+		skipcondition = {
+			{
+				"uiName",
+				"polyhedronPolicyReward"
+			}
+		},
+		talk_position = {
+			830,
+			68
+		}
+	},
+	[1502] = {
+		closetime = 5,
+		priority = 0,
+		talk_adapt = 1,
+		talk_anchors = 5,
+		name = "polyhedronLobby",
+		narrator_icon = "mmr",
+		id = 1502,
+		talk_content = "51a2188bad0c2a9fd6aa641eeffdd183",
+		narrator_name = "d8024f2b9f5fdd4075d55e974f92f463",
+		guide_component = {
+			"m_taskBtn"
+		},
+		mask_component = {},
+		opencondition = {
+			{
+				"uiName",
+				"polyhedronLobby"
+			}
+		},
+		skipcondition = {
+			{
+				"uiName",
+				"polyhedronTask"
+			}
+		},
+		talk_position = {
+			776,
+			-151
+		}
+	},
+	[1601] = {
+		closetime = 5,
+		priority = 1,
+		talk_adapt = 1,
+		talk_anchors = 0,
+		name = "tetrisGameStageView",
+		narrator_icon = "mmr",
+		id = 1601,
+		talk_content = "ac075cd9786ebc8a4f7bd710c4fb0a62",
+		narrator_name = "d6fce1b067c7c7e59bb9d069080a101b",
+		guide_component = {
+			"guideComponents",
+			"guide_mask"
+		},
+		mask_component = {},
+		opencondition = {
+			{
+				"uiName",
+				"tetrisGameStageView"
+			}
+		},
+		skipcondition = {
+			{
+				"uiName",
+				"tetrisGameScorePopView"
+			}
+		},
+		talk_position = {
+			-309,
+			-326
+		}
+	},
 	get_id_list_by_name = {
+		tetrisGameStageView = {
+			1601
+		},
+		polyhedronLobby = {
+			1501,
+			1502
+		},
+		userinfo = {
+			1402
+		},
 		chapterMap = {
 			1101,
 			1102,
@@ -304,7 +470,8 @@
 			1001,
 			1003,
 			1004,
-			1005
+			1005,
+			1401
 		}
 	},
 	all = {
@@ -316,6 +483,11 @@
 		1102,
 		1103,
 		1104,
-		1105
+		1105,
+		1401,
+		1402,
+		1501,
+		1502,
+		1601
 	}
 }

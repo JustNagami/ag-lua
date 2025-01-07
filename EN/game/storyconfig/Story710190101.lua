@@ -4,7 +4,7 @@
 		arg_1_1.frameCnt_ = 0
 		arg_1_1.state_ = "playing"
 		arg_1_1.curTalkId_ = 710190101
-		arg_1_1.duration_ = 1.033399999999
+		arg_1_1.duration_ = 1
 
 		SetActive(arg_1_1.tipsGo_, false)
 
@@ -74,6 +74,7 @@
 				SetActive(arg_1_1.hideBtn_, false)
 				SetActive(arg_1_1.narrativeGo_, true)
 				SetActive(arg_1_1.lastBtn_.gameObject, false)
+				SetActive(arg_1_1.bgmBtn_.gameObject, false)
 
 				local var_4_17 = arg_1_0.narr_chapter_text
 				local var_4_18 = arg_1_0.narr_time_text
@@ -130,7 +131,7 @@
 				SetActive(var_4_24, true)
 			end
 
-			local var_4_28 = 1
+			local var_4_28 = 0.833266666666667
 
 			if var_4_23 <= arg_1_1.time_ and arg_1_1.time_ < var_4_23 + var_4_28 and arg_1_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
 				arg_1_1.narrativeListGo_.verticalNormalizedPosition = 0
@@ -146,7 +147,7 @@
 		arg_5_1.frameCnt_ = 0
 		arg_5_1.state_ = "playing"
 		arg_5_1.curTalkId_ = 710190102
-		arg_5_1.duration_ = 0.999999999999
+		arg_5_1.duration_ = 1
 
 		SetActive(arg_5_1.tipsGo_, false)
 
@@ -204,7 +205,7 @@
 		arg_9_1.frameCnt_ = 0
 		arg_9_1.state_ = "playing"
 		arg_9_1.curTalkId_ = 710190103
-		arg_9_1.duration_ = 0.999999999999
+		arg_9_1.duration_ = 1
 
 		SetActive(arg_9_1.tipsGo_, false)
 
@@ -262,7 +263,7 @@
 		arg_13_1.frameCnt_ = 0
 		arg_13_1.state_ = "playing"
 		arg_13_1.curTalkId_ = 710190104
-		arg_13_1.duration_ = 0.999999999999
+		arg_13_1.duration_ = 1
 
 		SetActive(arg_13_1.tipsGo_, false)
 
@@ -320,7 +321,7 @@
 		arg_17_1.frameCnt_ = 0
 		arg_17_1.state_ = "playing"
 		arg_17_1.curTalkId_ = 710190105
-		arg_17_1.duration_ = 0.999999999999
+		arg_17_1.duration_ = 1
 
 		SetActive(arg_17_1.tipsGo_, false)
 
@@ -378,7 +379,7 @@
 		arg_21_1.frameCnt_ = 0
 		arg_21_1.state_ = "playing"
 		arg_21_1.curTalkId_ = 710190106
-		arg_21_1.duration_ = 0.999999999999
+		arg_21_1.duration_ = 1
 
 		SetActive(arg_21_1.tipsGo_, false)
 
@@ -436,7 +437,7 @@
 		arg_25_1.frameCnt_ = 0
 		arg_25_1.state_ = "playing"
 		arg_25_1.curTalkId_ = 710190107
-		arg_25_1.duration_ = 0.999999999999
+		arg_25_1.duration_ = 1
 
 		SetActive(arg_25_1.tipsGo_, false)
 
@@ -494,7 +495,7 @@
 		arg_29_1.frameCnt_ = 0
 		arg_29_1.state_ = "playing"
 		arg_29_1.curTalkId_ = 710190108
-		arg_29_1.duration_ = 0.999999999999
+		arg_29_1.duration_ = 1
 
 		SetActive(arg_29_1.tipsGo_, false)
 
@@ -552,7 +553,7 @@
 		arg_33_1.frameCnt_ = 0
 		arg_33_1.state_ = "playing"
 		arg_33_1.curTalkId_ = 710190109
-		arg_33_1.duration_ = 0.999999999999
+		arg_33_1.duration_ = 1
 
 		SetActive(arg_33_1.tipsGo_, false)
 
@@ -610,7 +611,7 @@
 		arg_37_1.frameCnt_ = 0
 		arg_37_1.state_ = "playing"
 		arg_37_1.curTalkId_ = 710190110
-		arg_37_1.duration_ = 0.999999999999
+		arg_37_1.duration_ = 1
 
 		SetActive(arg_37_1.tipsGo_, false)
 
@@ -668,7 +669,7 @@
 		arg_41_1.frameCnt_ = 0
 		arg_41_1.state_ = "playing"
 		arg_41_1.curTalkId_ = 710190111
-		arg_41_1.duration_ = 1.033399999999
+		arg_41_1.duration_ = 1.03
 
 		SetActive(arg_41_1.tipsGo_, false)
 

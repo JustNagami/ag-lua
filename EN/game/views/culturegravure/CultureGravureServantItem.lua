@@ -28,6 +28,8 @@ end
 
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
+
+	arg_4_0.roleImg_.immediate = true
 end
 
 function var_0_0.AddListeners(arg_5_0)
@@ -57,7 +59,7 @@ function var_0_0.SetCallBack(arg_10_0, arg_10_1)
 end
 
 function var_0_0.RefreshUI(arg_11_0)
-	arg_11_0.roleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/Icon438x238/" .. arg_11_0.id_)
+	arg_11_0.roleImg_.spriteSync = "TextureConfig/WeaponServant/Icon438x238/" .. arg_11_0.id_
 	arg_11_0.nameText_.text = ItemTools.getItemName(arg_11_0.id_)
 
 	arg_11_0.stateController_:SetSelectedState(arg_11_0.cfg_.starlevel)

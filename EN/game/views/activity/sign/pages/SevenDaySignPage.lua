@@ -101,7 +101,7 @@ function var_0_0.AutoGetReward(arg_12_0)
 	arg_12_0.signIndex_ = SignTools.GetSevenDaySignIndex(arg_12_0.activit_id)
 
 	if arg_12_0.signIndex_ > 0 then
-		manager.ui:UIEventEnabledByUI(false, true)
+		manager.notify:CallUpdateFunc(SIGN_INPUT, false)
 
 		if arg_12_0.timer_ then
 			arg_12_0.timer_:Stop()
@@ -151,7 +151,7 @@ function var_0_0.OnSign(arg_15_0, arg_15_1)
 		local var_15_0 = arg_15_0:GetItem(arg_15_0.signIndex_)
 
 		if not var_15_0 then
-			manager.ui:UIEventEnabledByUI(true, false)
+			manager.notify:CallUpdateFunc(SIGN_INPUT, true)
 			arg_15_0:RefreshSignItem()
 
 			return
@@ -177,11 +177,11 @@ function var_0_0.OnSign(arg_15_0, arg_15_1)
 			end
 		end, 0.033, -1)
 
-		manager.ui:UIEventEnabledByUI(true, false)
+		manager.notify:CallUpdateFunc(SIGN_INPUT, true)
 		manager.notify:CallUpdateFunc(READY_TO_SKIP_SIGN_ANIMATION, false)
 		arg_15_0.timer_:Start()
 	else
-		manager.ui:UIEventEnabledByUI(true, false)
+		manager.notify:CallUpdateFunc(SIGN_INPUT, true)
 		ShowTips(arg_15_1.result)
 	end
 end

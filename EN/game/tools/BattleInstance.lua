@@ -118,6 +118,8 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 
 	local var_5_1 = arg_5_0:GetStageId()
 
+	print(var_5_0, " QuitBattle")
+
 	if BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_CHESS == var_5_0 then
 		if not arg_5_1 and arg_5_0.GetNextStage and arg_5_0:GetNextStage() ~= nil then
 			BattleController.GetInstance():LaunchBattle(arg_5_0:GetNextStage())
@@ -174,6 +176,62 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 		end
 
 		return
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_WHACK_MOLE == var_5_0 then
+		DestroyLua()
+		gameContext:ClearHistoryByName("setting")
+
+		local var_5_2 = arg_5_0:GetDest()
+
+		if ActivityWhackMoleCfg[var_5_2].type ~= WhackMoleConst.STAGE_TYPE.CHESS then
+			LuaExchangeHelper.GoToMain()
+			OpenPageUntilLoaded("/whackMoleMain", {
+				activityID = ActivityWhackMoleCfg[var_5_2].activity_id,
+				targetSessionIndex = WhackMoleTools.GetLastSessionIndex()
+			})
+		else
+			ChessBoardAction.GoBackFromSmallGame(arg_5_0:GetBattleResult() == true and 0 or 1, arg_5_0:GetScore())
+		end
+
+		return
+	elseif BattleConst.STAGE_TYPE_NEW.CHESS_BOARD == var_5_0 then
+		DestroyLua()
+		gameContext:ClearHistoryByName("setting")
+
+		if arg_5_1 then
+			ChessBoardAction.GoBackFromSmallGame(1, 0)
+		else
+			ChessBoardAction.GoBackFromSmallGame(0, 0)
+		end
+
+		return
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_RHYTHM_GAME == var_5_0 then
+		if manager.ChessBoardManager and manager.ChessBoardManager:IsBattleBack() then
+			DestroyLua()
+			gameContext:ClearHistoryByName("setting")
+			ChessBoardAction.GoBackFromSmallGame(arg_5_1 and 1 or 0, 0)
+
+			return
+		else
+			DestroyLua()
+			gameContext:ClearHistoryByName("setting")
+			LuaExchangeHelper.GoToMain()
+		end
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_CATCH_DUCK == var_5_0 then
+		DestroyLua()
+		gameContext:ClearHistoryByName("setting")
+
+		if manager.ChessBoardManager and manager.ChessBoardManager:IsBattleBack() then
+			ChessBoardAction.GoBackFromSmallGame(arg_5_1 and 1 or 0, 0)
+
+			return
+		else
+			LuaExchangeHelper.GoToMain()
+		end
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_MONSTER_COSPLAY == var_5_0 and manager.ChessBoardManager and manager.ChessBoardManager:IsBattleBack() then
+		DestroyLua()
+		ChessBoardAction.GoBackFromSmallGame(arg_5_1 and 1 or 0, 0)
+
+		return
 	else
 		DestroyLua()
 		gameContext:ClearHistoryByName("setting")
@@ -190,16 +248,16 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 		return
 	end
 
-	local var_5_2 = getChapterIDByStageID(var_5_1)
+	local var_5_3 = getChapterIDByStageID(var_5_1)
 
 	if BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_PLOT == var_5_0 then
-		if ChapterCfg[var_5_2].clientID == ChapterConst.CHAPTER_CLIENT_19 then
-			local var_5_3 = BattleFieldData:GetChapterLocationID(var_5_2)
+		if ChapterCfg[var_5_3].clientID == ChapterConst.CHAPTER_CLIENT_19 then
+			local var_5_4 = BattleFieldData:GetChapterLocationID(var_5_3)
 
-			if ChapterTools.HasNewLocationMainStage(var_5_3) then
+			if ChapterTools.HasNewLocationMainStage(var_5_4) then
 				OpenPageUntilLoaded("/chapterPlot19Main/chapterPlot19MapLocationInfo", {
-					chapterID = var_5_2,
-					locationID = var_5_3
+					chapterID = var_5_3,
+					locationID = var_5_4
 				})
 			else
 				OpenPageUntilLoaded("/chapterPlot19Main", {})
@@ -209,43 +267,43 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 		end
 
 		if not arg_5_1 then
-			local var_5_4 = getChapterClientCfgByChapterID(var_5_2)
+			local var_5_5 = getChapterClientCfgByChapterID(var_5_3)
 
-			if #var_5_4.chapter_list > 1 and var_5_4.id ~= ChapterConst.CHAPTER_CLIENT_XUHENG_PART_2_2 and table.keyof(var_5_4.chapter_list, var_5_2) <= #var_5_4.chapter_list and var_5_1 == ChapterCfg[var_5_2].section_id_list[#ChapterCfg[var_5_2].section_id_list] and BattleStageData:GetStageData()[var_5_1].clear_times == 1 then
-				local var_5_5 = ChapterTools.GetChapterBranchURL(var_5_4.id)
+			if #var_5_5.chapter_list > 1 and var_5_5.id ~= ChapterConst.CHAPTER_CLIENT_XUHENG_PART_2_2 and table.keyof(var_5_5.chapter_list, var_5_3) <= #var_5_5.chapter_list and var_5_1 == ChapterCfg[var_5_3].section_id_list[#ChapterCfg[var_5_3].section_id_list] and BattleStageData:GetStageData()[var_5_1].clear_times == 1 then
+				local var_5_6 = ChapterTools.GetChapterBranchURL(var_5_5.id)
 
-				gameContext:OverrideUrl("/chapterSection", var_5_5, nil, "home")
-				OpenPageUntilLoaded(var_5_5, {
-					chapterClientID = var_5_4.id
+				gameContext:OverrideUrl("/chapterSection", var_5_6, nil, "home")
+				OpenPageUntilLoaded(var_5_6, {
+					chapterClientID = var_5_5.id
 				})
 
 				return
 			end
 
-			var_5_2 = StageTools.GetAutoChapter(var_5_2, var_5_1)
+			var_5_3 = StageTools.GetAutoChapter(var_5_3, var_5_1)
 		end
 
 		OpenPageUntilLoaded("/chapterSection", {
-			chapterID = var_5_2
+			chapterID = var_5_3
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_SUB_PLOT == var_5_0 then
-		local var_5_6 = getChapterClientCfgByChapterID(var_5_2)
+		local var_5_7 = getChapterClientCfgByChapterID(var_5_3)
 
-		JumpTools.Jump2SubPlot(var_5_6.id)
+		JumpTools.Jump2SubPlot(var_5_7.id)
 	elseif BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_DAILY == var_5_0 then
 		OpenPageUntilLoaded("/daily", {
-			chapterID = var_5_2
+			chapterID = var_5_3
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_TOWER == var_5_0 then
 		OpenPageUntilLoaded("/tower", {
 			showInfo = true,
-			chapterId = var_5_2
+			chapterId = var_5_3
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_ENCHANTMENT == var_5_0 then
 		OpenPageUntilLoaded("/enchantment")
 	elseif BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_EQUIP == var_5_0 then
 		OpenPageUntilLoaded("/equipSection", {
-			chapterID = var_5_2
+			chapterID = var_5_3
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.EQUIP_BREAK_THROUGH_MATERIAL == var_5_0 then
 		if EquipBreakThroughMaterialData:GetSelectModeID() == 0 then
@@ -287,11 +345,11 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 			OpenPageUntilLoaded("/teachStage")
 		end
 	elseif BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_MATRIX == var_5_0 then
-		local var_5_7 = MatrixData:GetGameState()
+		local var_5_8 = MatrixData:GetGameState()
 
-		if var_5_7 == MatrixConst.STATE_TYPE.SUCCESS or var_5_7 == MatrixConst.STATE_TYPE.FAIL then
+		if var_5_8 == MatrixConst.STATE_TYPE.SUCCESS or var_5_8 == MatrixConst.STATE_TYPE.FAIL then
 			OpenPageUntilLoaded("/matrixBlank/matrixOver")
-		elseif var_5_7 == MatrixConst.STATE_TYPE.STARTED then
+		elseif var_5_8 == MatrixConst.STATE_TYPE.STARTED then
 			OpenPageUntilLoaded("/matrixBlank/matrixOrigin")
 		else
 			OpenPageUntilLoaded("/matrixBlank/matrixPrepare", {
@@ -301,267 +359,264 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 	elseif BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_CHESS == var_5_0 then
 		OpenPageUntilLoaded("/warHome")
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_STORY == var_5_0 then
-		local var_5_8 = arg_5_0:GetActivityID()
-		local var_5_9 = ActivityTools.GetOriginActivityID(var_5_8)
-		local var_5_10 = ActivityTools.GetActivityTheme(var_5_8)
-		local var_5_11 = ActivityTools.GetOriginActivityTheme(var_5_10)
+		local var_5_9 = arg_5_0:GetActivityID()
+		local var_5_10 = ActivityTools.GetOriginActivityID(var_5_9)
+		local var_5_11 = ActivityTools.GetActivityTheme(var_5_9)
+		local var_5_12 = ActivityTools.GetOriginActivityTheme(var_5_11)
 
-		if var_5_9 == ActivityConst.OSIRIS_STROY then
+		if var_5_10 == ActivityConst.OSIRIS_STROY then
 			OpenPageUntilLoaded("/osirisStoryStage")
-		elseif var_5_9 == ActivityConst.HELLA_STORY_STAGE_HELLA or var_5_9 == ActivityConst.HELLA_STORY_STAGE_HERMES then
-			local var_5_12 = StoryStageActivityData:GetHistoryChapter(var_5_8)
+		elseif var_5_10 == ActivityConst.HELLA_STORY_STAGE_HELLA or var_5_10 == ActivityConst.HELLA_STORY_STAGE_HERMES then
+			local var_5_13 = StoryStageActivityData:GetHistoryChapter(var_5_9)
 
 			OpenPageUntilLoaded("/storyStageActivity", {
-				theme = var_5_10,
-				chapterID = var_5_12
-			})
-		elseif var_5_9 == ActivityConst.SUMMER_STORY_ISLAND then
-			local var_5_13 = StoryStageActivityData:GetHistoryChapter(var_5_8)
-
-			OpenPageUntilLoaded("/summerStageMain", {
-				theme = var_5_10,
+				theme = var_5_11,
 				chapterID = var_5_13
 			})
-		elseif var_5_9 == ActivityConst.SUMMER_STORY_SEABED then
-			local var_5_14 = StoryStageActivityData:GetHistoryChapter(var_5_8)
+		elseif var_5_10 == ActivityConst.SUMMER_STORY_ISLAND then
+			local var_5_14 = StoryStageActivityData:GetHistoryChapter(var_5_9)
 
-			OpenPageUntilLoaded("/summerStageSeabed", {
-				theme = var_5_10,
+			OpenPageUntilLoaded("/summerStageMain", {
+				theme = var_5_11,
 				chapterID = var_5_14
 			})
-		elseif var_5_9 == ActivityConst.THIRD_VOLUME_PART_2_SUB_PLOT then
-			local var_5_15 = StoryStageActivityData:GetHistoryChapter(var_5_8)
+		elseif var_5_10 == ActivityConst.SUMMER_STORY_SEABED then
+			local var_5_15 = StoryStageActivityData:GetHistoryChapter(var_5_9)
 
-			OpenPageUntilLoaded("/activityAthenaStoryStage", {
-				theme = var_5_10,
+			OpenPageUntilLoaded("/summerStageSeabed", {
+				theme = var_5_11,
 				chapterID = var_5_15
 			})
-		elseif var_5_11 == ActivityConst.THEME.FACTORY then
-			local var_5_16 = StoryStageActivityData:GetHistoryChapter(var_5_8)
+		elseif var_5_10 == ActivityConst.THIRD_VOLUME_PART_2_SUB_PLOT then
+			local var_5_16 = StoryStageActivityData:GetHistoryChapter(var_5_9)
 
-			OpenPageUntilLoaded("/activityFactoryStoryStage", {
-				theme = var_5_10,
+			OpenPageUntilLoaded("/activityAthenaStoryStage", {
+				theme = var_5_11,
 				chapterID = var_5_16
 			})
+		elseif var_5_12 == ActivityConst.THEME.FACTORY then
+			local var_5_17 = StoryStageActivityData:GetHistoryChapter(var_5_9)
+
+			OpenPageUntilLoaded("/activityFactoryStoryStage", {
+				theme = var_5_11,
+				chapterID = var_5_17
+			})
 		else
-			local var_5_17 = StoryStageActivityData:GetHistoryChapter(var_5_8)
+			local var_5_18 = StoryStageActivityData:GetHistoryChapter(var_5_9)
 
 			OpenPageUntilLoaded("/activityStoryStageBase", {
-				theme = var_5_10,
-				chapterID = var_5_17
+				theme = var_5_11,
+				chapterID = var_5_18
 			})
 		end
 	elseif BattleConst.STAGE_TYPE_NEW.OSIRIS_DEMON == var_5_0 then
-		local var_5_18 = arg_5_0:GetActivityID()
-		local var_5_19 = DemonChallengeCfg[var_5_18].activity_id
-		local var_5_20 = ActivityTools.GetMainActivityId(var_5_19)
-		local var_5_21 = ActivityTools.GetActivityTheme(var_5_20)
-		local var_5_22 = ActivityTools.GetOriginActivityTheme(var_5_21)
+		local var_5_19 = arg_5_0:GetActivityID()
+		local var_5_20 = DemonChallengeCfg[var_5_19].activity_id
+		local var_5_21 = ActivityTools.GetMainActivityId(var_5_20)
+		local var_5_22 = ActivityTools.GetActivityTheme(var_5_21)
+		local var_5_23 = ActivityTools.GetOriginActivityTheme(var_5_22)
 
-		if var_5_22 == ActivityConst.THEME.VOLUME_DOWN then
+		if var_5_23 == ActivityConst.THEME.VOLUME_DOWN then
 			OpenPageUntilLoaded("/volumeDemonChallengeMain", {
-				activityID = var_5_20,
-				childId = var_5_19
+				activityID = var_5_21,
+				childId = var_5_20
 			})
-		elseif var_5_22 == ActivityConst.THEME.DREAM then
+		elseif var_5_23 == ActivityConst.THEME.DREAM then
 			OpenPageUntilLoaded("/dreamDemonChallengeMain", {
-				activityID = var_5_20,
-				childId = var_5_19
+				activityID = var_5_21,
+				childId = var_5_20
 			})
-		elseif var_5_22 == ActivityConst.THEME.ACTIVITY_2_2 then
+		elseif var_5_23 == ActivityConst.THEME.ACTIVITY_2_2 then
 			OpenPageUntilLoaded("/xuHeng3rddreamDemonChallengeMain", {
-				activityID = var_5_20,
-				childId = var_5_19
+				activityID = var_5_21,
+				childId = var_5_20
 			})
 		else
 			OpenPageUntilLoaded("/demonChallengeMain", {
-				activityID = var_5_20,
-				childId = var_5_19
-			})
-		end
-	elseif BattleConst.STAGE_TYPE_NEW.NEW_DEMON == var_5_0 then
-		local var_5_23 = arg_5_0:GetActivityID()
-		local var_5_24 = NewDemonChallengeCfg[var_5_23].activity_id
-		local var_5_25 = ActivityTools.GetMainActivityId(var_5_24)
-		local var_5_26 = ActivityTools.GetActivityTheme(var_5_25)
-
-		if ActivityTools.GetOriginActivityTheme(var_5_26) == ActivityConst.THEME.DREAM then
-			OpenPageUntilLoaded("/newDemonChallengeMain", {
-				activityID = var_5_25,
-				childId = var_5_24
+				activityID = var_5_21,
+				childId = var_5_20
 			})
 		end
 	elseif BattleConst.STAGE_TYPE_NEW.HERO_TRIAL == var_5_0 or BattleConst.STAGE_TYPE_NEW.RESIDENT_HERO_TRIAL == var_5_0 then
 		HeroTrialTools.GoBackFromBattle(arg_5_0)
 	elseif BattleConst.STAGE_TYPE_NEW.SKIN_TRIAL == var_5_0 then
-		local var_5_27 = arg_5_0:GetActivityID()
-		local var_5_28 = SkinTrialData:GetRoute()
-		local var_5_29 = var_5_28.name
+		local var_5_24 = arg_5_0:GetActivityID()
+		local var_5_25 = SkinTrialData:GetRoute()
+		local var_5_26 = var_5_25.name
 
-		if var_5_29 == "heroSkin" then
+		if var_5_26 == "heroSkin" then
 			OpenPageUntilLoaded("/heroSkin", {
-				skinID = var_5_28.skinID,
-				heroID = var_5_28.heroID
+				skinID = var_5_25.skinID,
+				heroID = var_5_25.heroID
 			})
-		elseif var_5_29 == "heroSkinPreview" then
+		elseif var_5_26 == "heroSkinPreview" then
 			OpenPageUntilLoaded("/heroSkinPreview", {
-				skinID = var_5_28.skinID,
-				heroID = var_5_28.heroID,
-				goodId = var_5_28.goodID
+				skinID = var_5_25.skinID,
+				heroID = var_5_25.heroID,
+				goodId = var_5_25.goodID
 			})
-		elseif var_5_29 == "skinTrialSelect" then
-			local var_5_30 = string.format("/skinTrialSelect%d", arg_5_0:GetDest())
+		elseif var_5_26 == "skinTrialSelect" then
+			local var_5_27 = string.format("/skinTrialSelect%d", arg_5_0:GetDest())
 
-			OpenPageUntilLoaded(var_5_30, {
-				activityID = var_5_27,
+			OpenPageUntilLoaded(var_5_27, {
+				activityID = var_5_24,
 				skinTrialID = arg_5_0:GetDest()
 			})
-		elseif var_5_29 == "skinTrialSelectView_2_0" then
+		elseif var_5_26 == "skinTrialSelectView_2_0" then
 			OpenPageUntilLoaded("/skinTrialSelectView_2_0", {
-				activityID = var_5_27,
+				activityID = var_5_24,
 				skinTrialID = arg_5_0:GetDest()
 			})
-		elseif var_5_29 == "skinTrialSelectView_2_2" then
+		elseif var_5_26 == "skinTrialSelectView_2_2" then
 			OpenPageUntilLoaded("/skinTrialSelectView_2_2", {
-				activityID = var_5_27,
+				activityID = var_5_24,
 				skinTrialID = arg_5_0:GetDest()
 			})
-		elseif var_5_29 == "skinTrialSelectView_3_0" then
+		elseif var_5_26 == "skinTrialSelectView_3_0" then
 			OpenPageUntilLoaded("/skinTrialSelectView_3_0", {
-				activityID = var_5_27,
+				activityID = var_5_24,
+				skinTrialID = arg_5_0:GetDest()
+			})
+		elseif var_5_26 == "skinTrialSelectView_Resident" then
+			OpenPageUntilLoaded("/skinTrialSelectView_Resident", {
+				activityID = var_5_24,
 				skinTrialID = arg_5_0:GetDest()
 			})
 		else
 			print("未配置皮肤界面路径！")
 		end
 	elseif BattleConst.STAGE_TYPE_NEW.RACE_TRIAL == var_5_0 then
-		local var_5_31 = arg_5_0:GetActivityID()
-		local var_5_32 = ActivityTools.GetActivityTheme(var_5_31)
-		local var_5_33 = ActivityTools.GetOriginActivityTheme(var_5_32)
-		local var_5_34 = RaceTrialTools.GetMainActivityID(var_5_31)
+		local var_5_28 = arg_5_0:GetActivityID()
+		local var_5_29 = ActivityTools.GetActivityTheme(var_5_28)
+		local var_5_30 = ActivityTools.GetOriginActivityTheme(var_5_29)
+		local var_5_31 = RaceTrialData:GetMainActivityID(var_5_28)
 
-		if var_5_33 == ActivityConst.THEME.OSIRIS then
+		if var_5_30 == ActivityConst.THEME.OSIRIS then
 			OpenPageUntilLoaded("/raceTrial", {
-				activityID = var_5_34
+				activityID = var_5_31
 			})
-		elseif var_5_33 == ActivityConst.THEME.VOLUME_DOWN then
+		elseif var_5_30 == ActivityConst.THEME.VOLUME_DOWN then
 			OpenPageUntilLoaded("/volumeRaceTrialMain", {
-				activityID = var_5_34
+				activityID = var_5_31
 			})
-		else
-			local var_5_35, var_5_36 = ActivityTools.GetActivityMainRouteByTheme(var_5_33)
+		elseif var_5_30 < ActivityConst.THEME.ACTIVITY_3_5 then
+			local var_5_32, var_5_33 = ActivityTools.GetActivityMainRouteByTheme(var_5_30)
 
-			OpenPageUntilLoaded(var_5_35, var_5_36)
+			OpenPageUntilLoaded(var_5_32, var_5_33)
+		else
+			OpenPageUntilLoaded("/raceTrialEnter", {
+				activityID = var_5_31
+			})
 		end
 	elseif BattleConst.STAGE_TYPE_NEW.SLAYER == var_5_0 then
-		local var_5_37 = arg_5_0:GetActivityID()
-		local var_5_38 = arg_5_0:GetDest()
-		local var_5_39 = ActivityTools.GetActivityTheme(var_5_37)
-		local var_5_40 = ActivityTools.GetOriginActivityTheme(var_5_39)
+		local var_5_34 = arg_5_0:GetActivityID()
+		local var_5_35 = arg_5_0:GetDest()
+		local var_5_36 = ActivityTools.GetActivityTheme(var_5_34)
+		local var_5_37 = ActivityTools.GetOriginActivityTheme(var_5_36)
 
-		if var_5_40 == ActivityConst.THEME.HELLA then
+		if var_5_37 == ActivityConst.THEME.HELLA then
 			OpenPageUntilLoaded("/hellaSlayer", {
-				slayer_activity_id = var_5_37
+				slayer_activity_id = var_5_34
 			})
-		elseif var_5_40 == ActivityConst.THEME.VOLUME then
+		elseif var_5_37 == ActivityConst.THEME.VOLUME then
 			OpenPageUntilLoaded("/volumeSlayer", {
-				slayer_activity_id = var_5_37,
-				region_activity_id = var_5_38
+				slayer_activity_id = var_5_34,
+				region_activity_id = var_5_35
 			})
-		elseif var_5_40 == ActivityConst.THEME.TYR then
+		elseif var_5_37 == ActivityConst.THEME.TYR then
 			OpenPageUntilLoaded("/slayerStageView_1_7", {
-				slayer_activity_id = var_5_37,
-				region_activity_id = var_5_38
+				slayer_activity_id = var_5_34,
+				region_activity_id = var_5_35
 			})
 		else
 			OpenPageUntilLoaded("/slayerStageView_2_4", {
-				slayer_activity_id = var_5_37,
-				region_activity_id = var_5_38
+				slayer_activity_id = var_5_34,
+				region_activity_id = var_5_35
 			})
 		end
 	elseif BattleConst.STAGE_TYPE_NEW.PARKOUR == var_5_0 then
-		local var_5_41 = arg_5_0:GetActivityID()
-		local var_5_42 = arg_5_0:GetDest()
-		local var_5_43 = ActivityTools.GetActivityTheme(var_5_41)
+		local var_5_38 = arg_5_0:GetActivityID()
+		local var_5_39 = arg_5_0:GetDest()
+		local var_5_40 = ActivityTools.GetActivityTheme(var_5_38)
 
-		if ActivityTools.GetOriginActivityTheme(var_5_43) == ActivityConst.THEME.HELLA then
-			if ActivityData:GetActivityIsOpen(var_5_41) then
+		if ActivityTools.GetOriginActivityTheme(var_5_40) == ActivityConst.THEME.HELLA then
+			if ActivityData:GetActivityIsOpen(var_5_38) then
 				OpenPageUntilLoaded("/hellaParkourEntrust", {
-					parkour_activity_id = var_5_41,
-					entrust_activity_id = var_5_42
+					parkour_activity_id = var_5_38,
+					entrust_activity_id = var_5_39
 				})
 			else
 				OpenPageUntilLoaded("/hellaParkour", {
-					parkour_activity_id = var_5_41
+					parkour_activity_id = var_5_38
 				})
 			end
 		end
 	elseif BattleConst.STAGE_TYPE_NEW.TOWER_DEFENCE == var_5_0 then
-		local var_5_44 = arg_5_0:GetActivityID()
-		local var_5_45 = ActivityTools.GetActivityTheme(var_5_44)
+		local var_5_41 = arg_5_0:GetActivityID()
+		local var_5_42 = ActivityTools.GetActivityTheme(var_5_41)
 
-		if ActivityTools.GetOriginActivityTheme(var_5_45) == ActivityConst.THEME.HELLA then
+		if ActivityTools.GetOriginActivityTheme(var_5_42) == ActivityConst.THEME.HELLA then
 			OpenPageUntilLoaded("/battleFirstPass", {
-				activityID = ActivityTools.GetParentActivityID(var_5_44)
+				activityID = ActivityTools.GetParentActivityID(var_5_41)
 			})
 		else
-			print("未有绑定对应活动！", var_5_44)
+			print("未有绑定对应活动！", var_5_41)
 		end
 	elseif BattleConst.STAGE_TYPE_NEW.SOLO_CHALLENGE == var_5_0 then
-		local var_5_46 = var_5_1
-		local var_5_47 = SoloChallengeData:GetActivityID(var_5_46)
-		local var_5_48 = SoloChallengeData:GetDifficultyIndex(var_5_46)
-		local var_5_49 = ActivityTools.GetActivityTheme(var_5_47)
-		local var_5_50 = ActivitySoloChallengeCfg[var_5_47].stage_id[var_5_48][2]
-		local var_5_51 = var_5_50[#var_5_50] == var_5_46
+		local var_5_43 = var_5_1
+		local var_5_44 = SoloChallengeData:GetActivityID(var_5_43)
+		local var_5_45 = SoloChallengeData:GetDifficultyIndex(var_5_43)
+		local var_5_46 = ActivityTools.GetActivityTheme(var_5_44)
+		local var_5_47 = ActivitySoloChallengeCfg[var_5_44].stage_id[var_5_45][2]
+		local var_5_48 = var_5_47[#var_5_47] == var_5_43
 
-		if var_5_49 == ActivityConst.THEME.SUMMER then
-			if not arg_5_1 and var_5_51 then
-				local var_5_52 = ActivitySoloChallengeCfg[var_5_47].main_activity_id or ActivityConst.SUMMER_SOLO_CHALLENGE
+		if var_5_46 == ActivityConst.THEME.SUMMER then
+			if not arg_5_1 and var_5_48 then
+				local var_5_49 = ActivitySoloChallengeCfg[var_5_44].main_activity_id or ActivityConst.SUMMER_SOLO_CHALLENGE
 
 				OpenPageUntilLoaded("/soloChallengeMain", {
-					activityID = var_5_52
+					activityID = var_5_49
 				})
 			else
 				OpenPageUntilLoaded("/soloChallengeSelect", {
-					activityID = var_5_47,
-					difficultyIndex = var_5_48
+					activityID = var_5_44,
+					difficultyIndex = var_5_45
 				})
 			end
-		elseif var_5_49 == ActivityConst.THEME.FACTORY then
-			if not arg_5_1 and var_5_51 then
-				local var_5_53 = ActivitySoloChallengeCfg[var_5_47].main_activity_id
+		elseif var_5_46 == ActivityConst.THEME.FACTORY then
+			if not arg_5_1 and var_5_48 then
+				local var_5_50 = ActivitySoloChallengeCfg[var_5_44].main_activity_id
 
 				OpenPageUntilLoaded("/factorySoloChallengeMain", {
-					activityID = var_5_53
+					activityID = var_5_50
 				})
 			else
 				OpenPageUntilLoaded("/factorySoloChallengeSelect", {
-					activityID = var_5_47,
-					difficultyIndex = var_5_48
+					activityID = var_5_44,
+					difficultyIndex = var_5_45
 				})
 			end
-		elseif var_5_49 == ActivityConst.THEME.TYR then
-			if not arg_5_1 and var_5_51 then
-				local var_5_54 = ActivitySoloChallengeCfg[var_5_47].main_activity_id
+		elseif var_5_46 == ActivityConst.THEME.TYR then
+			if not arg_5_1 and var_5_48 then
+				local var_5_51 = ActivitySoloChallengeCfg[var_5_44].main_activity_id
 
 				OpenPageUntilLoaded("/soloChallengeMainView_1_7", {
-					activityID = var_5_54
+					activityID = var_5_51
 				})
 			else
 				OpenPageUntilLoaded("/soloChallengeSelectView_1_7", {
-					activityID = var_5_47,
-					difficultyIndex = var_5_48
+					activityID = var_5_44,
+					difficultyIndex = var_5_45
 				})
 			end
 		else
-			print("未有绑定对应活动！", var_5_47)
+			print("未有绑定对应活动！", var_5_44)
 		end
 	elseif BattleConst.STAGE_TYPE_NEW.LIMITED_CALCULATION == var_5_0 then
-		local var_5_55 = arg_5_0:GetActivityID()
+		local var_5_52 = arg_5_0:GetActivityID()
 
 		OpenPageUntilLoaded("/limitedCalculation", {
-			activityID = var_5_55
+			activityID = var_5_52
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.ARTIFACT == var_5_0 then
 		OpenPageUntilLoaded("/artifactLevel", {
@@ -576,10 +631,10 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 			activityID = ActivityConst.SIKADI_GAME
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_PT_GAME == var_5_0 then
-		local var_5_56 = arg_5_0:GetActivityID()
+		local var_5_53 = arg_5_0:GetActivityID()
 
 		OpenPageUntilLoaded("/activityPt", {
-			activityID = var_5_56
+			activityID = var_5_53
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.GUILD_BOSS_PREPARE == var_5_0 then
 		if GuildData:GetGuildInfo().id == nil or GuildData:GetGuildInfo().id == 0 then
@@ -598,46 +653,46 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 			})
 		end
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_MATRIX == var_5_0 then
-		local var_5_57 = arg_5_0:GetActivityID()
-		local var_5_58 = ActivityMatrixData:GetGameState(var_5_57)
+		local var_5_54 = arg_5_0:GetActivityID()
+		local var_5_55 = ActivityMatrixData:GetGameState(var_5_54)
 
-		if var_5_58 == MatrixConst.STATE_TYPE.SUCCESS or var_5_58 == MatrixConst.STATE_TYPE.FAIL then
+		if var_5_55 == MatrixConst.STATE_TYPE.SUCCESS or var_5_55 == MatrixConst.STATE_TYPE.FAIL then
 			OpenPageUntilLoaded("/matrixBlank/activityMatrixOver", {
-				matrix_activity_id = var_5_57
+				matrix_activity_id = var_5_54
 			})
-		elseif var_5_58 == MatrixConst.STATE_TYPE.STARTED then
+		elseif var_5_55 == MatrixConst.STATE_TYPE.STARTED then
 			OpenPageUntilLoaded("/matrixBlank/activityMatrixOrigin", {
-				matrix_activity_id = var_5_57
+				matrix_activity_id = var_5_54
 			})
 		end
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_RACE == var_5_0 then
-		local var_5_59 = arg_5_0:GetActivityID()
+		local var_5_56 = arg_5_0:GetActivityID()
 
-		if ActivityTools.GetActivityTheme(var_5_59) == ActivityConst.THEME.VOLUME_DOWN then
+		if ActivityTools.GetActivityTheme(var_5_56) == ActivityConst.THEME.VOLUME_DOWN then
 			OpenPageUntilLoaded("/activityRaceSwitch", {
-				activityID = var_5_59,
+				activityID = var_5_56,
 				rankID = ActivityConst.ACTIVITY_RACE_RANK
 			})
 		else
 			OpenPageUntilLoaded("/activityRaceSwitch", {
-				activityID = var_5_59,
+				activityID = var_5_56,
 				rankID = ActivityConst.ACTIVITY_RACE_RANK
 			})
 		end
 	elseif BattleConst.STAGE_TYPE_NEW.STRATEGY_MATRIX == var_5_0 then
-		local var_5_60 = arg_5_0:GetActivityID()
+		local var_5_57 = arg_5_0:GetActivityID()
 
-		StrategyMatrixAction.GotoAfterBattleMatirx(var_5_60)
+		StrategyMatrixAction.GotoAfterBattleMatirx(var_5_57)
 	elseif BattleConst.STAGE_TYPE_NEW.MYTHIC_FINAL == var_5_0 then
 		OpenPageUntilLoaded("/mythicUltimateView")
 	elseif BattleConst.STAGE_TYPE_NEW.SEQUENTIAL_BATTLE == var_5_0 then
-		local var_5_61 = arg_5_0:GetActivityID()
+		local var_5_58 = arg_5_0:GetActivityID()
 
-		SequentialBattleData:ResetChapterTeamData(var_5_61)
+		SequentialBattleData:ResetChapterTeamData(var_5_58)
 
 		if arg_5_2 then
 			OpenPageUntilLoaded("/sequentialBattleFactoryTeam", {
-				activityID = var_5_61
+				activityID = var_5_58
 			})
 		else
 			OpenPageUntilLoaded("/sequentialBattleFactory")
@@ -645,47 +700,47 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 	elseif BattleConst.STAGE_TYPE_NEW.MARDUK_GAME == var_5_0 then
 		OpenPageUntilLoaded("/towerGameView", {})
 	elseif BattleConst.STAGE_TYPE_NEW.MARDUK_SPECIAL == var_5_0 then
-		local var_5_62 = arg_5_0:GetActivityID()
+		local var_5_59 = arg_5_0:GetActivityID()
 
-		if ActivityCfg[var_5_62].activity_theme == ActivityConst.THEME.FACTORY then
+		if ActivityCfg[var_5_59].activity_theme == ActivityConst.THEME.FACTORY then
 			OpenPageUntilLoaded("/mardukSpecialMain", {
 				activityID = ActivityConst.FACTORY_MARDUK
 			})
-		elseif ActivityCfg[var_5_62].activity_theme == ActivityConst.THEME.ACTIVITY_2_2 then
+		elseif ActivityCfg[var_5_59].activity_theme == ActivityConst.THEME.ACTIVITY_2_2 then
 			OpenPageUntilLoaded("/activityMain_2_2", {
 				activityID = ActivityConst.ACTIVITY_2_2,
 				subActivityID = ActivityConst.ACTIVITY_2_2_SPECIAL
 			})
 		end
 	elseif BattleConst.STAGE_TYPE_NEW.SURVIVE_SOLO == var_5_0 then
-		local var_5_63 = arg_5_0:GetActivityID()
-		local var_5_64 = ActivitySoloSlayerCfg[var_5_63].main_activity_id
-		local var_5_65 = ActivityCfg[var_5_64]
+		local var_5_60 = arg_5_0:GetActivityID()
+		local var_5_61 = ActivitySoloSlayerCfg[var_5_60].main_activity_id
+		local var_5_62 = ActivityCfg[var_5_61]
 
-		if var_5_64 == ActivityConst.FACTORY_SURVIVE_SOLO or var_5_64 == ActivityConst.TYR_SURVIVE_SOLO then
+		if var_5_61 == ActivityConst.FACTORY_SURVIVE_SOLO or var_5_61 == ActivityConst.TYR_SURVIVE_SOLO then
 			OpenPageUntilLoaded("/surviveSolo", {
-				activityID = var_5_64
+				activityID = var_5_61
 			})
 		else
-			local var_5_66 = ActivityTools.GetActivityTheme(var_5_64)
-			local var_5_67 = ActivityTools.GetOriginActivityTheme(var_5_66)
-			local var_5_68, var_5_69 = ActivityTools.GetActivityMainRouteByTheme(var_5_67)
+			local var_5_63 = ActivityTools.GetActivityTheme(var_5_61)
+			local var_5_64 = ActivityTools.GetOriginActivityTheme(var_5_63)
+			local var_5_65, var_5_66 = ActivityTools.GetActivityMainRouteByTheme(var_5_64)
 
-			OpenPageUntilLoaded(var_5_68, var_5_69)
+			OpenPageUntilLoaded(var_5_65, var_5_66)
 		end
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_WORLD_BOSS == var_5_0 then
 		OpenPageUntilLoaded("/nienWorldBoss")
 	elseif BattleConst.STAGE_TYPE_NEW.AFFIX_SELECT == var_5_0 then
-		local var_5_70 = ActivityTools.GetMainActivityId(arg_5_0:GetActivityID())
+		local var_5_67 = ActivityTools.GetMainActivityId(arg_5_0:GetActivityID())
 
-		if var_5_70 == ActivityConst.ACTIVITY_3_2_AFFIX_SELECT then
-			OpenPageUntilLoaded("/activityMain_2_8", {
-				activityID = ActivityConst.ACTIVITY_3_2,
-				subActivityID = var_5_70
+		if var_5_67 == ActivityConst.ACTIVITY_3_2_AFFIX_SELECT then
+			OpenPageUntilLoaded("/activityMain_3_3", {
+				activityID = ActivityConst.SUMMER_CHESS_BOARD_ENTRY,
+				subActivityID = var_5_67
 			})
 		else
 			OpenPageUntilLoaded("/affixSelectMain", {
-				activityID = var_5_70
+				activityID = var_5_67
 			})
 		end
 	elseif BattleConst.STAGE_TYPE_NEW.DAMAGE_TEST == var_5_0 then
@@ -693,32 +748,32 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 			damageTestId = DamageTestCfg.get_id_list_by_stage_id[arg_5_0:GetStageId()][1]
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_PT2_GAME_NORMAL == var_5_0 then
-		local var_5_71 = ActivityPt2Tools:GetMainActivityID(arg_5_0:GetActivityID())
+		local var_5_68 = ActivityPt2Tools:GetMainActivityID(arg_5_0:GetActivityID())
 
 		OpenPageUntilLoaded("/activityPt2", {
-			mainActivityId = var_5_71,
+			mainActivityId = var_5_68,
 			activityID = arg_5_0:GetActivityID()
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_PT2_GAME_CHALLENGE == var_5_0 then
-		local var_5_72 = ActivityPt2Tools:GetMainActivityID(arg_5_0:GetActivityID())
+		local var_5_69 = ActivityPt2Tools:GetMainActivityID(arg_5_0:GetActivityID())
 
 		OpenPageUntilLoaded("/activityPt2", {
-			mainActivityId = var_5_72,
+			mainActivityId = var_5_69,
 			activityID = arg_5_0:GetActivityID()
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_PT2_GAME_HARD == var_5_0 then
-		local var_5_73 = ActivityPt2Tools:GetMainActivityID(arg_5_0:GetActivityID())
+		local var_5_70 = ActivityPt2Tools:GetMainActivityID(arg_5_0:GetActivityID())
 
 		OpenPageUntilLoaded("/activityPt2", {
-			mainActivityId = var_5_73,
+			mainActivityId = var_5_70,
 			activityID = arg_5_0:GetActivityID()
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.ABYSS == var_5_0 then
 		OpenPageUntilLoaded("/abyssMain", {})
 	elseif BattleConst.STAGE_TYPE_NEW.POLYHEDRON == var_5_0 then
-		local var_5_74 = PolyhedronData:GetPolyhedronInfo():GetState()
+		local var_5_71 = PolyhedronData:GetPolyhedronInfo():GetState()
 
-		if PolyhedronConst.STATE_TYPE.SETTLEMENT == var_5_74 then
+		if PolyhedronConst.STATE_TYPE.SETTLEMENT == var_5_71 then
 			OpenPageUntilLoaded("/polyhedronBlank/polyhedronOver", {})
 		else
 			OpenPageUntilLoaded("/polyhedronBlank/polyhedronLobby", {})
@@ -728,41 +783,43 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 			activityID = arg_5_0:GetMainActivityId()
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.SAIL_GAME == var_5_0 then
-		local var_5_75 = arg_5_0:GetActivityID()
+		local var_5_72 = arg_5_0:GetActivityID()
 
-		if not ActivityData:GetActivityIsOpen(var_5_75) then
+		if not ActivityData:GetActivityIsOpen(var_5_72) then
 			ShowTips("TIME_OVER")
 			OpenPageUntilLoaded("/sailMain", {
-				activityID = var_5_75
+				activityID = var_5_72
 			})
 
 			return
 		end
 
-		local var_5_76
+		local var_5_73
 
 		if not arg_5_1 then
-			var_5_76 = SailGameConst.GAME_COMMON_TIPS_INDEX.SUCCESS
+			var_5_73 = SailGameConst.GAME_COMMON_TIPS_INDEX.SUCCESS
 		end
 
-		SailGameAction.SetEventEndMark(var_5_75, var_5_76)
+		SailGameAction.SetEventEndMark(var_5_72, var_5_73)
 		OpenPageUntilLoaded("/sailMain", {
-			activityID = var_5_75
+			activityID = var_5_72
 		})
 
 		function _G.OnLoadedCallBack_()
-			SailGameTools.GoToGameView(var_5_75)
+			SailGameTools.GoToGameView(var_5_72)
 		end
 	elseif BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_ADVANCE_TEST == var_5_0 then
-		OpenPageUntilLoaded("/advanceTestMain")
+		OpenPageUntilLoaded("/advanceTestMain", {
+			activityID = AdvanceTestData:GetCacheActivityID()
+		})
 	elseif BattleConst.STAGE_TYPE_NEW.SOLO_HEART_DEMON == var_5_0 then
 		OpenPageUntilLoaded("/soloHeartDemonMain")
 	elseif BattleConst.STAGE_TYPE_NEW.DESTROY_BOX_GAME == var_5_0 then
-		local var_5_77 = arg_5_0:GetDest()
-		local var_5_78 = DestroyBoxGameCfg[var_5_77].main_activity_id
+		local var_5_74 = arg_5_0:GetDest()
+		local var_5_75 = DestroyBoxGameCfg[var_5_74].main_activity_id
 
 		OpenPageUntilLoaded("/destroyBoxGame", {
-			activityID = var_5_78
+			activityID = var_5_75
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_JJT_MAP_GAME == var_5_0 then
 		OpenPageUntilLoaded("/kagutsuchiWork", {})
@@ -799,20 +856,20 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_INDIA_NIAN == var_5_0 then
 		OpenPageUntilLoaded("/indiaNianMain")
 	elseif BattleConst.STAGE_TYPE_NEW.PUSH_BOX_BATTLE == var_5_0 then
-		local var_5_79 = arg_5_0:GetActivityID()
+		local var_5_76 = arg_5_0:GetActivityID()
 
 		OpenPageUntilLoaded("/activityPushBoxMaterial", {
-			activityID = var_5_79
+			activityID = var_5_76
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.CORE_VERIFICATION == var_5_0 then
 		OpenPageUntilLoaded("/coreVerificationInfo", {
 			bossType = arg_5_0:GetContID()
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.SP_HERO_CHALLENGE_BATTLE_3_1 == var_5_0 then
-		local var_5_80 = arg_5_0:GetStageId()
+		local var_5_77 = arg_5_0:GetStageId()
 
 		OpenPageUntilLoaded("/spHeroChallengeBattleToggleView", {
-			stageID = var_5_80
+			stageID = var_5_77
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_HERO_ENHANCE == var_5_0 then
 		OpenPageUntilLoaded("/activityHeroEnhanceSection", {
@@ -821,13 +878,59 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 			cfgId = arg_5_0:GetHeroEnhanceCfgId()
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_REFORGE == var_5_0 then
-		local var_5_81 = arg_5_0:GetMainActivityID()
-		local var_5_82 = arg_5_0:GetChapterActivityID()
-		local var_5_83 = arg_5_0:GetLevelID()
+		local var_5_78 = arg_5_0:GetMainActivityID()
+		local var_5_79 = arg_5_0:GetChapterActivityID()
+		local var_5_80 = arg_5_0:GetLevelID()
 
 		OpenPageUntilLoaded("/activityReforgeLevelView", {
-			activityID = var_5_81,
-			chapterActivityID = var_5_82
+			activityID = var_5_78,
+			chapterActivityID = var_5_79
+		})
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_SUMMER_WATER == var_5_0 then
+		OpenPageUntilLoaded("/summerWaterMain")
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_SWIMSUIT_BATTLE == var_5_0 then
+		local var_5_81 = SwimsuitBattleHeroCfg[arg_5_0:GetActivityID()].activity_id
+
+		OpenPageUntilLoaded("/swimsuitBattleMain", {
+			activity = var_5_81
+		})
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_WHACK_MOLE == var_5_0 then
+		-- block empty
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_RHYTHM_GAME == var_5_0 then
+		ActivityRhythmGameData:SetCurPage(ActivityRhythmGameTools.GetChapterIDByStageID(arg_5_0:GetStageId()))
+
+		local var_5_82 = arg_5_0:GetStageId()
+
+		if ActivityRhythmGameTools.GetStageIsCommand(var_5_82) then
+			OpenPageUntilLoaded("/activityRhythmGameCommandView", {
+				chapterID = ActivityRhythmGameTools.GetChapterIDByStageID(var_5_82),
+				activityID = arg_5_0:GetActivityID()
+			})
+		else
+			OpenPageUntilLoaded("/activityRhythmGameStageView", {
+				activityID = arg_5_0:GetActivityID(),
+				stageID = arg_5_0:GetStageId()
+			})
+		end
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_CATCH_DUCK == var_5_0 then
+		OpenPageUntilLoaded("/catchDuckMain")
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_MONSTER_COSPLAY == var_5_0 then
+		OpenPageUntilLoaded("/MonsterCosplayStage")
+	elseif BattleConst.STAGE_TYPE_NEW.ADVANCE_MONSTER_TEST == var_5_0 then
+		OpenPageUntilLoaded("/advanceMonsterTestMainView")
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_SPKALI_CHALLENGE == var_5_0 then
+		OpenPageUntilLoaded("/SpKaliChallenge")
+	elseif BattleConst.STAGE_TYPE_NEW.CHALLENGE_ROGUE_TEAM == var_5_0 then
+		OpenPageUntilLoaded("/challengeRogueTeamPathMain", {})
+	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_DODGE_BARRAGE == var_5_0 then
+		OpenPageUntilLoaded("/dodgeBarrageMainView")
+	elseif BattleConst.STAGE_TYPE_NEW.AREA_BATTLE == var_5_0 then
+		local var_5_83 = ActivityCfg.get_id_list_by_sub_activity_list[arg_5_0:GetActivityID()][1]
+
+		OpenPageUntilLoaded("/AreaBattleMapView", {
+			activityID = arg_5_0:GetActivityID(),
+			mainActivityID = var_5_83,
+			stageID = arg_5_0:GetStageId()
 		})
 	end
 end

@@ -50,7 +50,9 @@ function DeploySetting(arg_5_0)
 		Screen.SetResolution(var_5_5, var_5_6, true)
 	end
 
-	manager.ui.cameraExtension.hdr = arg_5_0.pic.hdr == 1
+	manager.ui.cameraExtension.hdr = true
+
+	PlayerPrefs.SetInt("allowHDR", 1)
 
 	if PlayerPrefs.GetInt("allowMSAA") == 0 then
 		UnityEngine.Pipelines.SimPipeline.SimPipelineSettings.AliasingEnable = false
@@ -274,7 +276,11 @@ function CheckNewGuide()
 	manager.guide:InitGuide()
 
 	if manager.guide:IsGoToHome() then
-		PreLoadAssetByPlayer()
+		if (GameToSDK.PLATFORM_ID ~= 2 or PlayerPrefs.GetInt("ShowBrahmaBouns", 0) == 1) and ActivityData:GetActivityIsOpen(ActivityConst.ACTIVITY_LOGIN_BONUS) and not LoginBonusData:GetIsFinish() then
+			gameContext:Go("/loginBrahmaBonus", nil, true, true)
+		else
+			PreLoadAssetByPlayer()
+		end
 	else
 		gameContext:ClearHistory()
 	end
@@ -297,6 +303,9 @@ function LateInitData()
 	EquipSeizureAction.InitRedPointEveryDay()
 	GuildActivitySPAction.UpdateRedPoint()
 	ActivityAction.InitLoginShopRedPoint()
+	ActivitySummerChessBoardAction.BindEvent()
+	ActivitySummerChessBoardAction.InitRedPoint()
+	ActivityPointAction.InitRedPoint()
 
 	if var_0_4 then
 		var_0_4:Stop()
@@ -328,6 +337,7 @@ function DisposeData()
 	SequentialBattleAction.ResetData()
 	SpringFestivalRiddleAction.Dispose()
 	ActivityTools.ClearAllActivityTimer()
+	ActivitySummerChessBoardAction.UnbindEvent()
 	BulletinData.OnLogout()
 	manager.rollTips:OnLogout()
 
@@ -405,9 +415,16 @@ function GotoLoginView(arg_27_0)
 		manager.NewChessManager = nil
 	end
 
+	if manager.ChessBoardManager then
+		manager.ChessBoardManager:Dispose()
+
+		manager.ChessBoardManager = nil
+	end
+
 	manager.net:Disconnect()
 	manager.net:ChatDisconnect()
 	manager.guide:OnLogout()
+	manager.uiTime:OnLogout()
 	ActivityAction.OnLogout()
 	ResetSceneDataForExcehange()
 	manager.achievementTips:InitData()
@@ -459,195 +476,214 @@ function SetForceShowQuanquan(arg_31_0)
 	manager.loadui:ForceShowLoad(arg_31_0)
 end
 
-function ShowMessageBox(arg_32_0)
+function RegistChangeSceneClearHandler(arg_32_0)
+	if not ChangeSceneClearHandlerList then
+		ChangeSceneClearHandlerList = {}
+
+		function SceneForLua.clearLuaMemoryHandler()
+			pcall(function()
+				for iter_34_0, iter_34_1 in ipairs(ChangeSceneClearHandlerList) do
+					iter_34_1()
+				end
+			end)
+		end
+	end
+
+	table.insert(ChangeSceneClearHandlerList, arg_32_0)
+end
+
+function ShowMessageBox(arg_35_0)
 	if LuaExchangeHelper.GetSceneIsHanding() then
-		local var_32_0
-		local var_32_1 = FrameTimer.New(function()
+		local var_35_0
+		local var_35_1 = FrameTimer.New(function()
 			if LuaExchangeHelper.GetSceneIsHanding() then
 				return
 			end
 
-			var_32_0:Stop()
+			var_35_0:Stop()
 			CheckManagers()
-			manager.messageBox:ShowMessage(arg_32_0)
+			manager.messageBox:ShowMessage(arg_35_0)
 		end, 1, -1)
 
-		var_32_0 = var_32_1
+		var_35_0 = var_35_1
 
-		var_32_1:Start()
+		var_35_1:Start()
 	else
-		manager.messageBox:ShowMessage(arg_32_0)
+		manager.messageBox:ShowMessage(arg_35_0)
 	end
 end
 
-function cfgToItemTemplate(arg_34_0)
-	if arg_34_0[1] then
-		local var_34_0 = clone(ItemTemplateData)
+function cfgToItemTemplate(arg_37_0)
+	if arg_37_0[1] then
+		local var_37_0 = clone(ItemTemplateData)
 
-		var_34_0.id = arg_34_0[1]
-		var_34_0.number = arg_34_0[2]
-		var_34_0.timeValid = arg_34_0[4]
+		var_37_0.id = arg_37_0[1]
+		var_37_0.number = arg_37_0[2]
+		var_37_0.timeValid = arg_37_0[4]
 
-		return var_34_0
+		return var_37_0
 	end
 
-	return arg_34_0
+	return arg_37_0
 end
 
-function ShowPopItem(arg_35_0, arg_35_1, arg_35_2, arg_35_3)
-	arg_35_1 = cfgToItemTemplate(arg_35_1)
+function ShowPopItem(arg_38_0, arg_38_1, arg_38_2, arg_38_3)
+	arg_38_1 = cfgToItemTemplate(arg_38_1)
 
-	local var_35_0 = arg_35_1.id
-	local var_35_1 = ItemCfg[var_35_0].type
+	local var_38_0 = arg_38_1.id
+	local var_38_1 = ItemCfg[var_38_0].type
+	local var_38_2 = deepClone(arg_38_1)
 
-	if var_35_1 == ItemConst.ITEM_TYPE.EQUIP then
-		local var_35_2 = arg_35_2 and arg_35_2.page or 1
-		local var_35_3 = arg_35_1.equip_id and arg_35_1.equip_id ~= 0 and arg_35_1.equip_id or nil
+	var_38_2.grayFlag = false
+
+	if var_38_1 == ItemConst.ITEM_TYPE.EQUIP then
+		local var_38_3 = arg_38_2 and arg_38_2.page or 1
+		local var_38_4 = var_38_2.equip_id and var_38_2.equip_id ~= 0 and var_38_2.equip_id or nil
 
 		JumpTools.OpenPageByJump("/equipCultureView", {
-			equipId = var_35_3,
-			prefabId = var_35_0,
-			pageIndex = var_35_2
+			equipId = var_38_4,
+			prefabId = var_38_0,
+			pageIndex = var_38_3
 		})
-	elseif var_35_1 == ItemConst.ITEM_TYPE.WEAPON_SERVANT then
+	elseif var_38_1 == ItemConst.ITEM_TYPE.WEAPON_SERVANT then
 		if whereami == "battleResult" then
 			JumpTools.OpenPageByJump("showServantView", {
 				state = "onlydetail",
-				id = var_35_0,
+				id = var_38_0,
 				gameContext:SetSystemLayer("battleResult")
 			})
 		elseif whereami ~= "home" then
 			JumpTools.OpenPageByJump("/showServantView", {
 				state = "onlydetail",
-				id = var_35_0
+				id = var_38_0
 			})
 		else
-			ShowPopItemOnly(arg_35_0, arg_35_1, arg_35_2)
+			ShowPopItemOnly(arg_38_0, var_38_2, arg_38_2)
 		end
-	elseif var_35_1 == ItemConst.ITEM_TYPE.DORM_FURNITURE then
+	elseif var_38_1 == ItemConst.ITEM_TYPE.DORM_FURNITURE then
 		JumpTools.OpenPageByJump("dormItemPopView", {
-			id = var_35_0
+			id = var_38_0
 		})
 	else
-		ShowPopItemOnly(arg_35_0, arg_35_1, arg_35_2)
+		ShowPopItemOnly(arg_38_0, var_38_2, arg_38_2)
 	end
 end
 
-function ShowPopItemOnly(arg_36_0, arg_36_1, arg_36_2)
-	arg_36_1 = cfgToItemTemplate(arg_36_1)
+function ShowPopItemOnly(arg_39_0, arg_39_1, arg_39_2)
+	arg_39_1 = cfgToItemTemplate(arg_39_1)
 
-	if arg_36_0 == POP_ITEM then
+	if arg_39_0 == POP_ITEM then
 		JumpTools.OpenPageByJump("popItem", {
-			popItemInfo = arg_36_1,
-			extraInfo = arg_36_2
+			popItemInfo = arg_39_1,
+			extraInfo = arg_39_2
 		})
-	elseif arg_36_0 == POP_SOURCE_ITEM then
+	elseif arg_39_0 == POP_SOURCE_ITEM then
 		JumpTools.OpenPageByJump("popSourceItem", {
-			popItemInfo = arg_36_1,
-			extraInfo = arg_36_2
+			popItemInfo = arg_39_1,
+			extraInfo = arg_39_2
 		})
-	elseif arg_36_0 == POP_OPERATE_ITEM then
+	elseif arg_39_0 == POP_OPERATE_ITEM then
 		JumpTools.OpenPageByJump("popOperateItem", {
-			popItemInfo = arg_36_1,
-			extraInfo = arg_36_2
+			popItemInfo = arg_39_1,
+			extraInfo = arg_39_2
 		})
-	elseif arg_36_0 == POP_MERGE_ITEM then
+	elseif arg_39_0 == POP_MERGE_ITEM then
 		JumpTools.OpenPageByJump("popMergeItem", {
-			popItemInfo = arg_36_1,
-			extraInfo = arg_36_2
+			popItemInfo = arg_39_1,
+			extraInfo = arg_39_2
 		})
-	elseif arg_36_0 == POP_SOURCE_DES_ITEM then
+	elseif arg_39_0 == POP_SOURCE_DES_ITEM then
 		JumpTools.OpenPageByJump("popSourceDesItem", {
-			popItemInfo = arg_36_1,
-			extraInfo = arg_36_2
+			popItemInfo = arg_39_1,
+			extraInfo = arg_39_2
 		})
-	elseif arg_36_0 == POP_OTHER_ITEM then
+	elseif arg_39_0 == POP_OTHER_ITEM then
 		JumpTools.OpenPageByJump("popItem", {
-			popItemInfo = arg_36_1,
-			extraInfo = arg_36_2
+			popItemInfo = arg_39_1,
+			extraInfo = arg_39_2
 		})
 	end
 end
 
-function ShowPopItemSource(arg_37_0, arg_37_1, arg_37_2)
-	local var_37_0
+function ShowPopItemSource(arg_40_0, arg_40_1, arg_40_2)
+	local var_40_0
 
-	if arg_37_2 then
-		for iter_37_0, iter_37_1 in ipairs(EquipCfg.get_id_list_by_suit[arg_37_2]) do
-			if EquipCfg[iter_37_1].starlevel == 5 then
-				arg_37_0 = iter_37_1
+	if arg_40_2 then
+		for iter_40_0, iter_40_1 in ipairs(EquipCfg.get_id_list_by_suit[arg_40_2]) do
+			if EquipCfg[iter_40_1].starlevel == 5 then
+				arg_40_0 = iter_40_1
 
 				break
 			end
 		end
 	end
 
-	local var_37_1 = EquipStruct.New(0, arg_37_0)
+	local var_40_1 = EquipStruct.New(0, arg_40_0)
 
 	JumpTools.OpenPageByJump("popEquipSourceView", {
 		popItemInfo = {
-			id = arg_37_0
+			id = arg_40_0
 		},
-		equip_info = var_37_1,
-		suitID = arg_37_2
+		equip_info = var_40_1,
+		suitID = arg_40_2
 	})
 end
 
-function ShowPopEquipSuit(arg_38_0, arg_38_1)
+function ShowPopEquipSuit(arg_41_0, arg_41_1)
 	JumpTools.OpenPageByJump("popEquipSuitView", {
-		suitId = arg_38_0,
-		hideBtn = arg_38_1
+		suitId = arg_41_0,
+		hideBtn = arg_41_1
 	})
 end
 
-function saveData(arg_39_0, arg_39_1, arg_39_2)
-	GameLocalData:SaveToTargetModule(arg_39_0, arg_39_1, arg_39_2)
+function saveData(arg_42_0, arg_42_1, arg_42_2)
+	GameLocalData:SaveToTargetModule(arg_42_0, arg_42_1, arg_42_2)
 end
 
-function getData(arg_40_0, arg_40_1)
-	return GameLocalData:GetValueFromTargetModule(arg_40_0, arg_40_1)
+function getData(arg_43_0, arg_43_1)
+	return GameLocalData:GetValueFromTargetModule(arg_43_0, arg_43_1)
 end
 
-function saveModule(arg_41_0, arg_41_1)
-	local var_41_0 = GameLocalData:GetTargetModule(arg_41_0)
+function saveModule(arg_44_0, arg_44_1)
+	local var_44_0 = GameLocalData:GetTargetModule(arg_44_0)
 
-	for iter_41_0, iter_41_1 in pairs(arg_41_1) do
-		var_41_0[iter_41_0] = iter_41_1
+	for iter_44_0, iter_44_1 in pairs(arg_44_1) do
+		var_44_0[iter_44_0] = iter_44_1
 	end
 
-	GameLocalData:SaveTargetModule(arg_41_0, var_41_0)
+	GameLocalData:SaveTargetModule(arg_44_0, var_44_0)
 end
 
-function getModule(arg_42_0)
-	return GameLocalData:GetTargetModule(arg_42_0)
+function getModule(arg_45_0)
+	return GameLocalData:GetTargetModule(arg_45_0)
 end
 
-function getCommonData(arg_43_0, arg_43_1)
-	return GameLocalData:GetValueFromCommonModule(arg_43_0, arg_43_1)
+function getCommonData(arg_46_0, arg_46_1)
+	return GameLocalData:GetValueFromCommonModule(arg_46_0, arg_46_1)
 end
 
-function cleanProtoTable(arg_44_0, arg_44_1)
-	local var_44_0 = {}
+function cleanProtoTable(arg_47_0, arg_47_1)
+	local var_47_0 = {}
 
-	if arg_44_0 then
-		for iter_44_0, iter_44_1 in ipairs(arg_44_0) do
-			if arg_44_1 and type(arg_44_1) == "table" then
-				var_44_0[iter_44_0] = {}
+	if arg_47_0 then
+		for iter_47_0, iter_47_1 in ipairs(arg_47_0) do
+			if arg_47_1 and type(arg_47_1) == "table" then
+				var_47_0[iter_47_0] = {}
 
-				for iter_44_2, iter_44_3 in ipairs(arg_44_1) do
-					var_44_0[iter_44_0][iter_44_3] = iter_44_1[iter_44_3]
+				for iter_47_2, iter_47_3 in ipairs(arg_47_1) do
+					var_47_0[iter_47_0][iter_47_3] = iter_47_1[iter_47_3]
 				end
 			else
-				var_44_0[iter_44_0] = iter_44_1
+				var_47_0[iter_47_0] = iter_47_1
 			end
 		end
 	end
 
-	return var_44_0
+	return var_47_0
 end
 
-function OpenPageUntilLoaded(arg_45_0, arg_45_1, arg_45_2)
-	JumpTools.OpenPageUntilLoaded(arg_45_0, arg_45_1, arg_45_2)
+function OpenPageUntilLoaded(arg_48_0, arg_48_1, arg_48_2)
+	JumpTools.OpenPageUntilLoaded(arg_48_0, arg_48_1, arg_48_2)
 end
 
 function Quit()
@@ -659,7 +695,7 @@ function Quit()
 	SendMessageManagerToSDK("role_logout")
 end
 
-function OnApplicationQuit(arg_47_0)
+function OnApplicationQuit(arg_50_0)
 	manager.net:Disconnect()
 	manager.net:ChatDisconnect()
 	gameContext:DestroyCurRoutes()
@@ -674,6 +710,12 @@ function OnApplicationQuit(arg_47_0)
 		manager.NewChessManager:Dispose()
 
 		manager.NewChessManager = nil
+	end
+
+	if manager.ChessBoardManager then
+		manager.ChessBoardManager:Dispose()
+
+		manager.ChessBoardManager = nil
 	end
 
 	manager.achievementTips:Dispose()
@@ -691,28 +733,34 @@ function OnApplicationQuit(arg_47_0)
 		manager.rollTips = nil
 	end
 
+	if manager.uiTime then
+		manager.uiTime:Dispose()
+
+		manager.uiTime = nil
+	end
+
 	SendMessageManagerToSDK("role_logout")
 end
 
 local var_0_5 = true
 local var_0_6 = false
 
-function OnApplicationFocus(arg_48_0)
-	OnAppFocusPauseStateChange(arg_48_0, var_0_6)
+function OnApplicationFocus(arg_51_0)
+	OnAppFocusPauseStateChange(arg_51_0, var_0_6)
 end
 
-function OnApplicationPause(arg_49_0)
-	OnAppFocusPauseStateChange(var_0_5, arg_49_0)
+function OnApplicationPause(arg_52_0)
+	OnAppFocusPauseStateChange(var_0_5, arg_52_0)
 end
 
-function OnAppFocusPauseStateChange(arg_50_0, arg_50_1)
-	local var_50_0 = var_0_5
-	local var_50_1 = var_0_6
+function OnAppFocusPauseStateChange(arg_53_0, arg_53_1)
+	local var_53_0 = var_0_5
+	local var_53_1 = var_0_6
 
-	var_0_5 = arg_50_0
-	var_0_6 = arg_50_1
+	var_0_5 = arg_53_0
+	var_0_6 = arg_53_1
 
-	if (var_50_1 == false and arg_50_1 == true or var_50_0 == true and arg_50_0 == false) and var_50_1 == false and arg_50_1 == true then
+	if (var_53_1 == false and arg_53_1 == true or var_53_0 == true and arg_53_0 == false) and var_53_1 == false and arg_53_1 == true then
 		GameToSDK.UpUserEvent("{\"eventType\" : \"End\"}")
 		FatigueReminder()
 		DailyFatigueReminder()
@@ -721,7 +769,7 @@ function OnAppFocusPauseStateChange(arg_50_0, arg_50_1)
 		CanteenFullReminder()
 	end
 
-	if var_50_1 == true and arg_50_1 == false then
+	if var_53_1 == true and arg_53_1 == false then
 		GameToSDK.UpUserEvent("{\"eventType\" : \"Begin\"}")
 		StopFatigueReminder()
 		StopDailyFatigueReminder()
@@ -735,7 +783,7 @@ function OnAppFocusPauseStateChange(arg_50_0, arg_50_1)
 	end
 
 	if manager ~= nil and manager.notify ~= nil then
-		manager.notify:Invoke(GAME_FOCUS_CHANGE, arg_50_0, arg_50_1)
+		manager.notify:Invoke(GAME_FOCUS_CHANGE, arg_53_0, arg_53_1)
 	end
 end
 
@@ -744,9 +792,9 @@ function CanteenFullReminder()
 		return
 	end
 
-	local var_51_0 = SettingData:GetRemindSettingData()
+	local var_54_0 = SettingData:GetRemindSettingData()
 
-	if var_51_0 ~= nil and (var_51_0.canteen_full_reminder or 0) == 1 then
+	if var_54_0 ~= nil and (var_54_0.canteen_full_reminder or 0) == 1 then
 		TimerReminderData:SetReminder(TimerReminderConst.CANTEEN_FULL)
 	end
 end
@@ -756,9 +804,9 @@ function CanteenDispatchReminder()
 		return
 	end
 
-	local var_52_0 = SettingData:GetRemindSettingData()
+	local var_55_0 = SettingData:GetRemindSettingData()
 
-	if var_52_0 ~= nil and (var_52_0.canteen_dispatch_reminder or 0) == 1 then
+	if var_55_0 ~= nil and (var_55_0.canteen_dispatch_reminder or 0) == 1 then
 		TimerReminderData:SetReminder(TimerReminderConst.CANTEEN_DISPATCH)
 	end
 end
@@ -768,9 +816,9 @@ function CatExploreReminder()
 		return
 	end
 
-	local var_53_0 = SettingData:GetRemindSettingData()
+	local var_56_0 = SettingData:GetRemindSettingData()
 
-	if var_53_0 ~= nil and (var_53_0.cat_explore_reminder or 0) == 1 then
+	if var_56_0 ~= nil and (var_56_0.cat_explore_reminder or 0) == 1 then
 		TimerReminderData:SetReminder(TimerReminderConst.CAT_EXPLORE)
 	end
 end
@@ -780,9 +828,9 @@ function DailyFatigueReminder()
 		return
 	end
 
-	local var_54_0 = SettingData:GetRemindSettingData()
+	local var_57_0 = SettingData:GetRemindSettingData()
 
-	if var_54_0 ~= nil and (var_54_0.daily_fatigue_reminder or 0) == 1 then
+	if var_57_0 ~= nil and (var_57_0.daily_fatigue_reminder or 0) == 1 then
 		TimerReminderData:SetReminder(TimerReminderConst.DAILYFATIGUE)
 	end
 end
@@ -792,13 +840,13 @@ function FatigueReminder()
 		return
 	end
 
-	local var_55_0 = SettingData:GetRemindSettingData()
+	local var_58_0 = SettingData:GetRemindSettingData()
 
-	if var_55_0 ~= nil then
-		local var_55_1 = var_55_0.fatigue_full_reminder or 0
-		local var_55_2 = CurrencyData:GetFatigueCallFlag()
+	if var_58_0 ~= nil then
+		local var_58_1 = var_58_0.fatigue_full_reminder or 0
+		local var_58_2 = CurrencyData:GetFatigueCallFlag()
 
-		if var_55_1 == 1 and var_55_2 == 1 then
+		if var_58_1 == 1 and var_58_2 == 1 then
 			TimerReminderData:SetReminder(TimerReminderConst.FATIGUE)
 		end
 	end
@@ -827,9 +875,9 @@ end
 _G.OnLoadedCallBackPre_ = nil
 _G.OnLoadedCallBack_ = nil
 
-function RefreshUI(arg_61_0)
-	if arg_61_0 then
-		gameContext:SetSystemLayer(arg_61_0)
+function RefreshUI(arg_64_0)
+	if arg_64_0 then
+		gameContext:SetSystemLayer(arg_64_0)
 	else
 		gameContext:SetSystemLayer("home")
 	end
@@ -858,7 +906,7 @@ function DestroyLua()
 	manager.destroy()
 end
 
-function StatUILoadTimeToServer(arg_63_0)
+function StatUILoadTimeToServer(arg_66_0)
 	return
 end
 
@@ -866,35 +914,35 @@ function LuaGcCollect()
 	collectgarbage("collect")
 end
 
-function SpliceI18NText(arg_65_0)
-	local var_65_0 = #arg_65_0
+function SpliceI18NText(arg_68_0)
+	local var_68_0 = #arg_68_0
 
-	if var_65_0 < 2 then
-		return arg_65_0
+	if var_68_0 < 2 then
+		return arg_68_0
 	end
 
-	local var_65_1 = arg_65_0[1]
-	local var_65_2 = ""
+	local var_68_1 = arg_68_0[1]
+	local var_68_2 = ""
 
 	if SettingData:GetCurrentLanguage() == "en" then
-		var_65_2 = " "
+		var_68_2 = " "
 	end
 
-	for iter_65_0 = 2, var_65_0 do
-		var_65_1 = string.format("%s%s%s", var_65_1, var_65_2, arg_65_0[iter_65_0])
+	for iter_68_0 = 2, var_68_0 do
+		var_68_1 = string.format("%s%s%s", var_68_1, var_68_2, arg_68_0[iter_68_0])
 	end
 
-	return var_65_1
+	return var_68_1
 end
 
-function GetI18NText(arg_66_0)
-	local var_66_0 = I18NRuntimeManager.Instance:GetI18NText(arg_66_0)
+function GetI18NText(arg_69_0)
+	local var_69_0 = I18NRuntimeManager.Instance:GetI18NText(arg_69_0)
 
-	if var_66_0 then
-		return var_66_0
+	if var_69_0 then
+		return var_69_0
 	end
 
-	return arg_66_0
+	return arg_69_0
 end
 
 local var_0_7 = {
@@ -910,10 +958,10 @@ local var_0_7 = {
 	AllTranslateCfg10
 }
 
-function GetTranslateCfg(arg_67_0)
-	for iter_67_0, iter_67_1 in ipairs(var_0_7) do
-		if iter_67_1 and iter_67_1[arg_67_0] then
-			return iter_67_1[arg_67_0]
+function GetTranslateCfg(arg_70_0)
+	for iter_70_0, iter_70_1 in ipairs(var_0_7) do
+		if iter_70_1 and iter_70_1[arg_70_0] then
+			return iter_70_1[arg_70_0]
 		end
 	end
 
@@ -921,48 +969,48 @@ function GetTranslateCfg(arg_67_0)
 end
 
 function GetAllTranslateCfg()
-	local var_68_0 = {}
+	local var_71_0 = {}
 
 	print("GetAllTranslateCfg")
 
-	for iter_68_0, iter_68_1 in ipairs(var_0_7) do
-		if iter_68_1 then
-			for iter_68_2, iter_68_3 in pairs(iter_68_1) do
-				local var_68_1 = TranslateData.New()
+	for iter_71_0, iter_71_1 in ipairs(var_0_7) do
+		if iter_71_1 then
+			for iter_71_2, iter_71_3 in pairs(iter_71_1) do
+				local var_71_1 = TranslateData.New()
 
-				var_68_1.zh_cn = iter_68_2
-				var_68_1.en = iter_68_3.translate_en
-				var_68_1.jp = iter_68_3.translate_jp
-				var_68_1.kr = iter_68_3.translate_kr
-				var_68_1.tc = iter_68_3.translate_tc
-				var_68_0[iter_68_2] = var_68_1
+				var_71_1.zh_cn = iter_71_2
+				var_71_1.en = iter_71_3.translate_en
+				var_71_1.jp = iter_71_3.translate_jp
+				var_71_1.kr = iter_71_3.translate_kr
+				var_71_1.tc = iter_71_3.translate_tc
+				var_71_0[iter_71_2] = var_71_1
 			end
 		end
 	end
 
-	return var_68_0
+	return var_71_0
 end
 
-function OpenDownLoadPage(arg_69_0, arg_69_1)
+function OpenDownLoadPage(arg_72_0, arg_72_1)
 	if gameContext:IsOpenRoute("downLoadPage") then
 		return
 	end
 
 	JumpTools.OpenPageByJump("downLoadPage", {
-		title = arg_69_0,
-		abbr = arg_69_1
+		title = arg_72_0,
+		abbr = arg_72_1
 	})
 end
 
-function SetDownLoadPageProgress(arg_70_0, arg_70_1)
+function SetDownLoadPageProgress(arg_73_0, arg_73_1)
 	if not gameContext:IsOpenRoute("downLoadPage") then
 		JumpTools.OpenPageByJump("downLoadPage")
 	end
 
-	local var_70_0 = gameContext:GetOpenPageHandler(routeName)
+	local var_73_0 = gameContext:GetOpenPageHandler(routeName)
 
-	if var_70_0 then
-		var_70_0:SetProgress(arg_70_0, arg_70_1)
+	if var_73_0 then
+		var_73_0:SetProgress(arg_73_0, arg_73_1)
 	end
 end
 
@@ -972,20 +1020,20 @@ function CloseDownLoadPage()
 	end
 end
 
-function EncodeURL(arg_72_0)
-	arg_72_0 = string.gsub(arg_72_0, "([^%w%p ])", function(arg_73_0)
-		return string.format("%%%02X", string.byte(arg_73_0))
+function EncodeURL(arg_75_0)
+	arg_75_0 = string.gsub(arg_75_0, "([^%w%p ])", function(arg_76_0)
+		return string.format("%%%02X", string.byte(arg_76_0))
 	end)
 
-	return arg_72_0
+	return arg_75_0
 end
 
-function OnHomeVoiceStart(arg_74_0, arg_74_1)
-	manager.notify:CallUpdateFunc(HOME_WORD_DISPLAY_START, arg_74_0, arg_74_1)
+function OnHomeVoiceStart(arg_77_0, arg_77_1)
+	manager.notify:CallUpdateFunc(HOME_WORD_DISPLAY_START, arg_77_0, arg_77_1)
 end
 
-function OnHomeVoiceStop(arg_75_0, arg_75_1)
-	manager.notify:CallUpdateFunc(HOME_WORD_DISPLAY_STOP, arg_75_0, arg_75_1)
+function OnHomeVoiceStop(arg_78_0, arg_78_1)
+	manager.notify:CallUpdateFunc(HOME_WORD_DISPLAY_STOP, arg_78_0, arg_78_1)
 end
 
 local var_0_8 = false
@@ -1024,17 +1072,17 @@ function OnExitInput()
 	end
 
 	if gameContext ~= nil then
-		local var_79_0 = gameContext:GetLastOpenPage()
+		local var_82_0 = gameContext:GetLastOpenPage()
 
-		if var_79_0 == "home" then
+		if var_82_0 == "home" then
 			ShowQuitConfirm()
 
 			return
 		end
 
-		local var_79_1 = gameContext:GetOpenPageHandler(var_79_0)
+		local var_82_1 = gameContext:GetOpenPageHandler(var_82_0)
 
-		if var_79_1 and var_79_1.OnExitInput and var_79_1:OnExitInput() then
+		if var_82_1 and var_82_1.OnExitInput and var_82_1:OnExitInput() then
 			return
 		end
 	end

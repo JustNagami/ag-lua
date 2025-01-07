@@ -9,8 +9,6 @@ function var_0_0.UIParent(arg_2_0)
 end
 
 function var_0_0.Init(arg_3_0)
-	arg_3_0.mainActivityID = AdvanceTestData:GetMainActivityID()
-
 	arg_3_0:BindCfgUI()
 	arg_3_0:AddListeners()
 
@@ -48,11 +46,15 @@ function var_0_0.OnEnter(arg_5_0)
 		INFO_BAR
 	})
 
-	local var_5_0 = ActivityData:GetActivityData(arg_5_0.mainActivityID)
+	arg_5_0.mainActivityID_ = arg_5_0.params_.activityID
+
+	AdvanceTestData:SetCacheActivityID(arg_5_0.mainActivityID_)
+
+	local var_5_0 = ActivityData:GetActivityData(arg_5_0.mainActivityID_)
 
 	arg_5_0.startTime_ = var_5_0.startTime
 	arg_5_0.stopTime_ = var_5_0.stopTime
-	arg_5_0.chooseIndex_ = AdvanceTestData:GetLastSelectIndex()
+	arg_5_0.chooseIndex_ = AdvanceTestData:GetLastSelectIndex(arg_5_0.mainActivityID_)
 	arg_5_0.goBtn_.enabled = false
 
 	AdvanceTestData:InitDefalutHeroList()
@@ -69,7 +71,7 @@ function var_0_0.OnEnter(arg_5_0)
 	end)
 	manager.windowBar:SetGameHelpKey(GetTips("TEST_CHALLENGE_DESCRIBE"))
 
-	local var_5_1 = AdvanceTestCfg.get_id_list_by_activity_id[arg_5_0.mainActivityID]
+	local var_5_1 = AdvanceTestCfg.get_id_list_by_activity_id[arg_5_0.mainActivityID_]
 
 	for iter_5_0 = 1, 3 do
 		SetActive(arg_5_0.stageItem_[iter_5_0].gameObject_, false)
@@ -100,6 +102,7 @@ end
 
 function var_0_0.Dispose(arg_9_0)
 	var_0_0.super.Dispose(arg_9_0)
+	arg_9_0.bossItem_:Dispose()
 
 	arg_9_0.clickItemHandler = nil
 end
@@ -131,16 +134,16 @@ function var_0_0.AddListeners(arg_10_0)
 end
 
 function var_0_0.ClickBtn(arg_13_0)
-	AdvanceTestData:SetLastSelectIndex(arg_13_0.chooseIndex_)
+	AdvanceTestData:SetLastSelectIndex(arg_13_0.chooseIndex_, arg_13_0.mainActivityID_)
 
-	local var_13_0 = AdvanceTestData:GetCurCfgByIndex(arg_13_0.chooseIndex_)
+	local var_13_0 = AdvanceTestData:GetCurCfgByIndex(arg_13_0.chooseIndex_, arg_13_0.mainActivityID_)
 
-	AdvanceTestData:SetHeroListByDifficult(var_13_0.stage_type)
+	AdvanceTestData:SetHeroListByDifficult(var_13_0.stage_type, arg_13_0.mainActivityID_)
 	gameContext:Go("/sectionSelectHero", {
 		section = var_13_0.stage_id,
 		sectionType = BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_ADVANCE_TEST,
 		stageDifficult = var_13_0.stage_type,
-		activityID = arg_13_0.mainActivityID,
+		activityID = arg_13_0.mainActivityID_,
 		dest = var_13_0.id
 	})
 end
@@ -149,7 +152,7 @@ function var_0_0.RefreshUI(arg_14_0)
 	SetActive(arg_14_0.panelGo_, true)
 
 	local var_14_0 = string.split(GetTips("TEST_CHALLENGE_TIPS_1"), ",")
-	local var_14_1 = AdvanceTestData:GetCurCfgByIndex(arg_14_0.chooseIndex_)
+	local var_14_1 = AdvanceTestData:GetCurCfgByIndex(arg_14_0.chooseIndex_, arg_14_0.mainActivityID_)
 
 	if var_14_0 ~= nil then
 		arg_14_0.tipTopText_.text = string.format(var_14_0[1], arg_14_0:GetStrByIndex(arg_14_0.chooseIndex_))

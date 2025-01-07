@@ -109,7 +109,7 @@ function var_0_0.SetData(arg_16_0, arg_16_1, arg_16_2)
 		arg_16_0.masterController:SetSelectedIndex(arg_16_0.roomPlayer.is_master == 1 and 1 or 0)
 
 		local var_16_0 = arg_16_0.roomPlayer.heroList[1].id
-		local var_16_1 = CooperationTools.GetCooperationHeroPower(arg_16_2)
+		local var_16_1 = CooperationData:GetCooperationHeroPower(arg_16_2)
 
 		arg_16_0.m_powerLab.text = string.format(GetTips("COOPERATION_POWER_LAB"), var_16_1)
 

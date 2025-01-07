@@ -40,9 +40,9 @@ function var_0_1.UpdateView(arg_5_0)
 	end
 
 	arg_5_0.remainTime = ActivityData:GetActivityData(arg_5_0.activityID_).stopTime
-	arg_5_0.remainTxt_.text = manager.time:GetLostTimeStrWith2Unit(arg_5_0.remainTime)
+	arg_5_0.remainTxt_.text = GetTips("REMAINING_TIME") .. manager.time:GetLostTimeStrWith2Unit(arg_5_0.remainTime, true)
 	arg_5_0.updateTimer_ = Timer.New(function()
-		arg_5_0.remainTxt_.text = manager.time:GetLostTimeStrWith2Unit(arg_5_0.remainTime)
+		arg_5_0.remainTxt_.text = GetTips("REMAINING_TIME") .. manager.time:GetLostTimeStrWith2Unit(arg_5_0.remainTime, true)
 	end, 1, arg_5_0.remainTime - manager.time:GetServerTime() + 1, 1)
 
 	arg_5_0.updateTimer_:Start()

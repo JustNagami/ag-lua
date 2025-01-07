@@ -18,10 +18,9 @@ function var_0_0.SetLockStatus(arg_3_0, arg_3_1)
 	return
 end
 
-function var_0_0.RefreshData(arg_4_0, arg_4_1, arg_4_2, arg_4_3, arg_4_4)
-	arg_4_0.handler_ = arg_4_1
-	arg_4_0.info_ = arg_4_2
-	arg_4_0.lvmax_ = arg_4_3
+function var_0_0.RefreshData(arg_4_0, arg_4_1, arg_4_2)
+	arg_4_0.info_ = arg_4_1
+	arg_4_0.isShowMax_ = arg_4_2
 
 	arg_4_0:Render()
 end
@@ -46,12 +45,13 @@ function var_0_0.RefreshUI(arg_7_0)
 		arg_7_0.name_.text = GetI18NText(var_7_0.name)
 
 		local var_7_1 = arg_7_0.info_.num > var_7_0.lvmax and var_7_0.lvmax or arg_7_0.info_.num
+		local var_7_2 = arg_7_0.info_.num > var_7_0.lvmax and string.format("<color=#FF000B>%s</color>", arg_7_0.info_.num) or arg_7_0.info_.num
 
-		arg_7_0.lv_.text = GetTips("LEVEL") .. var_7_1
+		arg_7_0.lv_.text = arg_7_0.isShowMax_ and string.format("%s/%s", var_7_2, var_7_0.lvmax) or GetTips("LEVEL") .. var_7_1
 
-		local var_7_2 = arg_7_0.info_.unlockLevel or 0
+		local var_7_3 = arg_7_0.info_.unlockLevel or 0
 
-		if arg_7_0.info_.level and var_7_2 > arg_7_0.info_.level then
+		if arg_7_0.info_.level and var_7_3 > arg_7_0.info_.level then
 			arg_7_0.unlockLv_.text = string.format(GetTips("EQUIP_SKILL_LOCK_LEVEL"), arg_7_0.info_.unlockLevel)
 
 			arg_7_0.lockController_:SetSelectedState("lock")

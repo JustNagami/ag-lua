@@ -54,6 +54,20 @@ function var_0_0.GetStageAffix(arg_10_0)
 		table.insert(var_10_2, iter_10_1[3])
 	end
 
+	if CoreVerificationData:IsChallengeType(arg_10_0.infoID) then
+		local var_10_4 = CoreVerificationData:GetSelectSuffix()
+
+		for iter_10_2, iter_10_3 in ipairs(var_10_4) do
+			local var_10_5 = ActivityAffixPoolCfg[iter_10_3]
+
+			if var_10_5 then
+				table.insert(var_10_0, var_10_5.affix[1])
+				table.insert(var_10_1, var_10_5.affix[2])
+				table.insert(var_10_2, var_10_5.affix[3])
+			end
+		end
+	end
+
 	return var_10_0, var_10_1, var_10_2
 end
 

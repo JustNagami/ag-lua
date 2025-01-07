@@ -9,6 +9,9 @@ end
 
 function var_0_0.Init(arg_2_0)
 	arg_2_0:InitUI()
+
+	arg_2_0.commonPortrait_ = CommonHeadPortrait.New(arg_2_0.headItem_)
+
 	arg_2_0:AddUIListener()
 end
 
@@ -99,8 +102,9 @@ function var_0_0.Check(arg_11_0)
 	local var_11_1 = arg_11_0.inviteTip.invite
 
 	arg_11_0.m_name.text = var_11_1.nick
-	arg_11_0.m_icon.sprite = ItemTools.getItemSprite(var_11_1.icon)
-	arg_11_0.m_frame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_11_1.icon_frame)
+
+	arg_11_0.commonPortrait_:RenderHead(var_11_1.icon)
+	arg_11_0.commonPortrait_:RenderFrame(var_11_1.icon_frame)
 
 	local var_11_2 = arg_11_0.inviteTip.overdue_time - var_11_0
 
@@ -133,6 +137,10 @@ function var_0_0.Process(arg_13_0)
 end
 
 function var_0_0.Dispose(arg_14_0)
+	arg_14_0.commonPortrait_:Dispose()
+
+	arg_14_0.commonPortrait_ = nil
+
 	if arg_14_0.timer_ then
 		arg_14_0.timer_:Stop()
 

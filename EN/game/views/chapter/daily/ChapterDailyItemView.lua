@@ -21,9 +21,7 @@ function var_0_0.RefreshCustomItem(arg_3_0, arg_3_1)
 end
 
 function var_0_0.ClickItem(arg_4_0, arg_4_1)
-	if arg_4_0.isLock_ then
-		ShowTips(arg_4_0.lockTips_)
-
+	if arg_4_0:CheckLock() then
 		return
 	end
 
@@ -40,11 +38,28 @@ function var_0_0.ClickItem(arg_4_0, arg_4_1)
 end
 
 function var_0_0.AddRedPoint(arg_5_0)
-	manager.redPoint:bindUIandKey(arg_5_0.panelTf_, ChapterTools.GetRedPoint(arg_5_0.chapterClientID_))
+	arg_5_0.multiTag_ = ActivityMultiRewardData:GetMultiRatioByChapterOrToggle(nil, arg_5_0.chapterClientID_, true)
+
+	if arg_5_0.multiTag_ <= 0 then
+		SetActive(arg_5_0.multiGo_, false)
+		manager.redPoint:bindUIandKey(arg_5_0.panelTf_, ChapterTools.GetRedPoint(arg_5_0.chapterClientID_))
+	else
+		arg_5_0.multiRatioText_.text = arg_5_0.multiTag_ / 100
+
+		SetActive(arg_5_0.multiGo_, true)
+
+		local var_5_0 = arg_5_0.panelTf_:Find("notice_img")
+
+		if var_5_0 then
+			SetActive(var_5_0.gameObject, false)
+		end
+	end
 end
 
 function var_0_0.RemoveRedPoint(arg_6_0)
-	manager.redPoint:unbindUIandKey(arg_6_0.panelTf_, ChapterTools.GetRedPoint(arg_6_0.chapterClientID_))
+	if not arg_6_0.multiTag_ or arg_6_0.multiTag_ <= 0 then
+		manager.redPoint:unbindUIandKey(arg_6_0.panelTf_, ChapterTools.GetRedPoint(arg_6_0.chapterClientID_))
+	end
 end
 
 return var_0_0

@@ -16,6 +16,7 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
+	arg_4_0.imageImg_.cacheLimit = 3
 	arg_4_0.loadCon_ = ControllerUtil.GetController(arg_4_0.gameObject_.transform, "loading")
 
 	SetActive(arg_4_0.shareBtn_.gameObject, not SDKTools.GetIsOverSea())
@@ -138,7 +139,7 @@ end
 
 function var_0_0.RefreshUI(arg_16_0)
 	function _RefreshUI()
-		arg_16_0.imageImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Background/" .. CollectPictureCfg[arg_16_0.ID_].picture)
+		arg_16_0.imageImg_.spriteSync = "TextureConfig/Background/" .. CollectPictureCfg[arg_16_0.ID_].picture
 		arg_16_0.titleText_.text = GetI18NText(CollectPictureCfg[arg_16_0.ID_].name)
 		arg_16_0.descText_.text = GetI18NText(CollectPictureCfg[arg_16_0.ID_].desc)
 
@@ -159,7 +160,7 @@ function var_0_0.CheckNeedDownloadAssets(arg_18_0, arg_18_1)
 	}
 
 	if AssetDownloadManager.CheckResourcesNeedDownload(var_18_1) then
-		arg_18_0.imageImg_.sprite = nil
+		arg_18_0.imageImg_.spriteSync = nil
 
 		SetForceShowQuanquan(true)
 		AssetDownloadManager.Create()

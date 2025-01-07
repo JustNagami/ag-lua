@@ -184,20 +184,26 @@ function var_0_0.OnPreOpenPage(arg_16_0)
 		if var_16_1 and var_16_1 ~= 0 then
 			arg_16_0:OnCallNameBtnClick(var_16_1, var_16_2)
 		else
-			arg_16_0:OnHoldBtnClick()
+			local var_16_3
+
+			if arg_16_0.data.heroId then
+				var_16_3 = HeroViewDataProxy.New(HeroConst.HERO_DATA_TYPE.DEFAULT):GetHeroServantInfo(arg_16_0.data.heroId)
+			end
+
+			arg_16_0:OnHoldBtnClick(var_16_3)
 		end
 	else
-		local var_16_3 = arg_16_0.params_.tempParams
+		local var_16_4 = arg_16_0.params_.tempParams
 
-		arg_16_0.data.heroId = var_16_3.HeroID or nil
+		arg_16_0.data.heroId = var_16_4.HeroID or nil
 
-		if var_16_3.isFullScreen ~= nil then
-			local var_16_4 = var_16_3.servantData
+		if var_16_4.isFullScreen ~= nil then
+			local var_16_5 = var_16_4.servantData
 
-			if var_16_3.isFullScreen then
-				if var_16_4.uid then
-					if WeaponServantData:GetServantDataByUID(var_16_4.uid) then
-						arg_16_0:OnFullScreenBtnClick(var_16_4)
+			if var_16_4.isFullScreen then
+				if var_16_5.uid then
+					if WeaponServantData:GetServantDataByUID(var_16_5.uid) then
+						arg_16_0:OnFullScreenBtnClick(var_16_5)
 					elseif not arg_16_0.data.heroId then
 						if WeaponServantData:GetServantNum() == 0 then
 							arg_16_0:OnHoldBtnClick()
@@ -208,17 +214,23 @@ function var_0_0.OnPreOpenPage(arg_16_0)
 						arg_16_0:OnFullScreenBtnClick()
 					end
 				else
-					arg_16_0:OnFullScreenBtnClick(var_16_4)
+					arg_16_0:OnFullScreenBtnClick(var_16_5)
 				end
-			elseif var_16_3.viewIdx == 1 then
-				arg_16_0:OnHoldBtnClick(var_16_4)
-			elseif var_16_4.id and var_16_4.id ~= 0 then
-				arg_16_0:OnCallNameBtnClick(arg_16_0:GetServantRace(var_16_4.id), var_16_4.id)
+			elseif var_16_4.viewIdx == 1 then
+				arg_16_0:OnHoldBtnClick(var_16_5)
+			elseif var_16_5.id and var_16_5.id ~= 0 then
+				arg_16_0:OnCallNameBtnClick(arg_16_0:GetServantRace(var_16_5.id), var_16_5.id)
 			else
 				arg_16_0:OnCallNameBtnClick()
 			end
 		else
-			arg_16_0:OnHoldBtnClick()
+			local var_16_6
+
+			if arg_16_0.data.heroId then
+				var_16_6 = HeroViewDataProxy.New(HeroConst.HERO_DATA_TYPE.DEFAULT):GetHeroServantInfo(arg_16_0.data.heroId)
+			end
+
+			arg_16_0:OnHoldBtnClick(var_16_6)
 		end
 	end
 

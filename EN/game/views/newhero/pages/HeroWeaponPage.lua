@@ -131,6 +131,7 @@ end
 function var_0_0.InitUI(arg_11_0)
 	arg_11_0:BindCfgUI()
 
+	arg_11_0.servanticonImg_.immediate = true
 	arg_11_0.servantRareController_ = ControllerUtil.GetController(arg_11_0.servantGo_.transform, "servantrare")
 	arg_11_0.servantController = ControllerUtil.GetController(arg_11_0.servantGo_.transform, "hasservant")
 	arg_11_0.btnStatus_ = "MERGE"
@@ -217,7 +218,7 @@ function var_0_0.RefreshServant(arg_16_0, arg_16_1)
 
 	arg_16_0.servantRareController_:SetSelectedState(tostring(var_16_0.starlevel))
 
-	arg_16_0.servanticonImg_.sprite = getSpriteWithoutAtlas(SpritePathCfg.ServantIcon438.path .. arg_16_1.id)
+	arg_16_0.servanticonImg_.spriteSync = SpritePathCfg.ServantIcon438.path .. arg_16_1.id
 
 	local var_16_1 = WeaponServantCfg[arg_16_1.id].race
 	local var_16_2 = string.format("icon_group_%d_c", var_16_1)

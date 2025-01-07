@@ -8,7 +8,3 @@ DailyNewRedPoint:Init()
 SystemRedPoint = require("game.redPoint.SystemRedPoint")
 
 SystemRedPoint:Init()
-
-PlayerRedPoint = require("game.redPoint.PlayerRedPoint")
-
-PlayerRedPoint:Init()

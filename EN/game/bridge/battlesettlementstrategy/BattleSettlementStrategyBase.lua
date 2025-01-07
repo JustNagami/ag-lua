@@ -135,12 +135,18 @@ function var_0_0.GotoStage(arg_4_0, arg_4_1, arg_4_2, arg_4_3, arg_4_4)
 
 	if isSuccess(arg_4_1) then
 		function BattleCallLuaCallBack()
-			if arg_4_2:GetType() == BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_CHESS then
-				manager.story:CheckChessBattleStory(manager.story.WIN, var_4_2)
-			else
-				local var_7_0 = arg_4_2:GetStageId()
+			local var_7_0 = arg_4_2:GetType()
 
-				manager.story:CheckBattleStory(var_7_0, manager.story.WIN, var_4_2)
+			if var_7_0 == BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_CHESS then
+				manager.story:CheckChessBattleStory(manager.story.WIN, var_4_2)
+			elseif var_7_0 == BattleConst.STAGE_TYPE_NEW.CHESS_BOARD then
+				local var_7_1 = arg_4_2:GetStageId()
+
+				manager.story:CheckBattleStory(var_7_1, manager.story.WIN, var_4_2, false)
+			else
+				local var_7_2 = arg_4_2:GetStageId()
+
+				manager.story:CheckBattleStory(var_7_2, manager.story.WIN, var_4_2)
 			end
 		end
 	else
@@ -170,6 +176,32 @@ function var_0_0.GotoBattleFaild(arg_8_0, arg_8_1, arg_8_2, arg_8_3, arg_8_4)
 
 			manager.story:RemovePlayer()
 			EndBattleLogic(arg_8_1)
+		end)
+	end
+end
+
+function var_0_0.GotoBattleFaildRecommend(arg_11_0, arg_11_1, arg_11_2, arg_11_3, arg_11_4, arg_11_5)
+	function BattleCallLuaCallBack()
+		local var_12_0 = arg_11_2:GetStageId()
+
+		manager.story:CheckBattleStory(var_12_0, manager.story.LOSE, function()
+			if arg_11_5 then
+				JumpTools.OpenPageByJump("/battlefailedChallengeWithButton", {
+					stageData = arg_11_2,
+					battleResult = arg_11_4,
+					isHalfWay_ = arg_11_0.tempData.isHalfWay_
+				})
+			else
+				JumpTools.OpenPageByJump("/battleChallengeFailed", {
+					stageData = arg_11_2,
+					starMissionData = arg_11_3,
+					battleResult = arg_11_4,
+					isHalfWay_ = arg_11_0.tempData.isHalfWay_
+				})
+			end
+
+			manager.story:RemovePlayer()
+			EndBattleLogic(arg_11_1)
 		end)
 	end
 end

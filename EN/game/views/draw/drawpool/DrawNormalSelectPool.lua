@@ -46,6 +46,7 @@ function var_0_0.AddUIListener(arg_4_0)
 		arg_4_0:AddBtnListener(iter_4_1, nil, function()
 			JumpTools.OpenPageByJump("/heroPreviewMain", {
 				isEnter = true,
+				isDraw = true,
 				hid = arg_4_0.btnNameList_[iter_4_0]
 			})
 		end)

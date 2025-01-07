@@ -29,6 +29,7 @@ function var_0_0.Init(arg_3_0)
 		[var_0_1.TASK_TYPE.PLOT] = "Widget/System/Quest/TaskPlotContentView"
 	}
 	arg_3_0.refreshBtnStateHandle = handler(arg_3_0, arg_3_0.RefreshOnceBtnState)
+	arg_3_0.oneKeyCon_ = arg_3_0.transform_:GetComponent("ControllerExCollection"):GetController("onekey")
 
 	arg_3_0:AddBtnListener(arg_3_0.exploreBtn_, nil, function()
 		JumpTools.OpenPageByJump("/adminCatExploreView", nil, ViewConst.SYSTEM_ID.ADMIN_CAT_EXPLORE)
@@ -226,7 +227,7 @@ function var_0_0.OnClickOnceBtn(arg_22_0)
 end
 
 function var_0_0.RefreshOnceBtnState(arg_23_0, arg_23_1)
-	SetActive(arg_23_0.btnGroupObj_, arg_23_1)
+	arg_23_0.oneKeyCon_:SetSelectedState(arg_23_1 and "true" or "false")
 end
 
 return var_0_0

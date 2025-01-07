@@ -181,27 +181,29 @@ function var_0_0.RefreshUI(arg_13_0, arg_13_1)
 	arg_13_0.btn3Controller:SetSelectedIndex(arg_13_1 == 3 and 0 or 1)
 end
 
-function var_0_0.OnEnter(arg_14_0)
+function var_0_0.OnTop(arg_14_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR,
 		HOME_BAR
 	})
-
-	arg_14_0.selType_ = arg_14_0.params_.index or 1
-
-	arg_14_0:RefreshUI(arg_14_0.selType_)
 end
 
-function var_0_0.OnExit(arg_15_0)
+function var_0_0.OnEnter(arg_15_0)
+	arg_15_0.selType_ = arg_15_0.params_.index or 1
+
+	arg_15_0:RefreshUI(arg_15_0.selType_)
+end
+
+function var_0_0.OnExit(arg_16_0)
 	manager.windowBar:HideBar()
 end
 
-function var_0_0.Dispose(arg_16_0)
-	arg_16_0.scroll_:Dispose()
+function var_0_0.Dispose(arg_17_0)
+	arg_17_0.scroll_:Dispose()
 
-	arg_16_0.scroll_ = nil
+	arg_17_0.scroll_ = nil
 
-	var_0_0.super.Dispose(arg_16_0)
+	var_0_0.super.Dispose(arg_17_0)
 end
 
 return var_0_0

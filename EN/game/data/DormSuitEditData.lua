@@ -22,7 +22,7 @@ function var_0_0.ExitFullSuitEditMode(arg_2_0)
 end
 
 function var_0_0.RecoverSceneBeforeEdit(arg_3_0)
-	DormFurEditStateData:SetCacheFurNumInfo(var_0_4)
+	DormFurEditStateData:SetCacheFurNumInfo(var_0_4, var_0_2)
 
 	var_0_4 = nil
 

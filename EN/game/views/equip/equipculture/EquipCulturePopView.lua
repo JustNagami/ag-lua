@@ -1,19 +1,20 @@
-﻿local var_0_0 = class("EquipCulturePopView", ReduxView)
+﻿local var_0_0 = import("game.views.pop.PopLevelUpBaseView")
+local var_0_1 = class("EquipCulturePopView", var_0_0)
 
-function var_0_0.UIName(arg_1_0)
+function var_0_1.UIName(arg_1_0)
 	return "Widget/System/Hero_equip/Develop/EquipupPopUI"
 end
 
-function var_0_0.UIParent(arg_2_0)
+function var_0_1.UIParent(arg_2_0)
 	return manager.ui.uiPop.transform
 end
 
-function var_0_0.Init(arg_3_0)
+function var_0_1.Init(arg_3_0)
 	arg_3_0:InitUI()
 	arg_3_0:AddUIListener()
 end
 
-function var_0_0.InitUI(arg_4_0)
+function var_0_1.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
 	arg_4_0.attrs_ = {}
@@ -28,7 +29,7 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.stateController_ = arg_4_0.transCon_:GetController("state")
 end
 
-function var_0_0.AddUIListener(arg_5_0)
+function var_0_1.AddUIListener(arg_5_0)
 	arg_5_0:AddBtnListener(arg_5_0.btnBack_, nil, function()
 		SetActive(arg_5_0.oldLv_.gameObject, false)
 		manager.notify:Invoke(EQUIP_CULTURE_SUCCESS)
@@ -42,11 +43,12 @@ function var_0_0.AddUIListener(arg_5_0)
 	end)
 end
 
-function var_0_0.OnEnter(arg_7_0)
+function var_0_1.OnEnter(arg_7_0)
+	arg_7_0:CheckBack()
 	arg_7_0:RefreshUI()
 end
 
-function var_0_0.RefreshUI(arg_8_0)
+function var_0_1.RefreshUI(arg_8_0)
 	local var_8_0 = arg_8_0.params_.type
 
 	SetActive(arg_8_0.oldLv_.gameObject, true)
@@ -86,7 +88,7 @@ function var_0_0.RefreshUI(arg_8_0)
 	end
 end
 
-function var_0_0.RefreshType(arg_9_0, arg_9_1)
+function var_0_1.RefreshType(arg_9_0, arg_9_1)
 	local var_9_0 = arg_9_0.params_.oldEquip
 	local var_9_1 = arg_9_0.params_.newEquip
 
@@ -110,7 +112,7 @@ function var_0_0.RefreshType(arg_9_0, arg_9_1)
 	end
 end
 
-function var_0_0.ShowUpGradeTips(arg_10_0)
+function var_0_1.ShowUpGradeTips(arg_10_0)
 	local var_10_0
 
 	var_10_0 = Timer.New(function()
@@ -121,7 +123,7 @@ function var_0_0.ShowUpGradeTips(arg_10_0)
 	var_10_0:Start()
 end
 
-function var_0_0.RefreshSkill(arg_12_0, arg_12_1, arg_12_2)
+function var_0_1.RefreshSkill(arg_12_0, arg_12_1, arg_12_2)
 	local var_12_0 = #arg_12_1
 
 	for iter_12_0 = 1, var_12_0 do
@@ -150,7 +152,7 @@ function var_0_0.RefreshSkill(arg_12_0, arg_12_1, arg_12_2)
 	end
 end
 
-function var_0_0.GetPlayBackwardsAnimator(arg_13_0)
+function var_0_1.GetPlayBackwardsAnimator(arg_13_0)
 	return {
 		{
 			arg_13_0.animator_,
@@ -160,8 +162,8 @@ function var_0_0.GetPlayBackwardsAnimator(arg_13_0)
 	}, nil
 end
 
-function var_0_0.Dispose(arg_14_0)
-	var_0_0.super.Dispose(arg_14_0)
+function var_0_1.Dispose(arg_14_0)
+	var_0_1.super.Dispose(arg_14_0)
 end
 
-return var_0_0
+return var_0_1

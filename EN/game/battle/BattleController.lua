@@ -9,28 +9,36 @@ function var_0_0.SetBattleStageData(arg_2_0, arg_2_1)
 	var_0_1 = arg_2_1
 end
 
-function var_0_0.LaunchBattle(arg_3_0, arg_3_1, arg_3_2, arg_3_3)
+function var_0_0.LaunchBattle(arg_3_0, arg_3_1, arg_3_2, arg_3_3, arg_3_4)
 	WaitStartBattle = nil
 
 	local var_3_0 = arg_3_1:GetType()
 	local var_3_1 = arg_3_1:GetDest()
 	local var_3_2 = arg_3_1:GetMultiple()
 	local var_3_3 = arg_3_1:GetType()
-	local var_3_4, var_3_5 = arg_3_1:GetHeroTeam()
-	local var_3_6 = arg_3_1:GetAssistHeroOwnerList()
-	local var_3_7 = clone(var_3_4)
-	local var_3_8 = clone(var_3_5)
+	local var_3_4, var_3_5 = manager.assetPend:CheckLauncherBattle(var_3_3, var_3_1)
 
-	for iter_3_0 = #var_3_7, 1, -1 do
-		if var_3_7[iter_3_0] == 0 then
-			table.remove(var_3_7, iter_3_0)
-			table.remove(var_3_8, iter_3_0)
+	if not var_3_4 then
+		ShowTips(var_3_5)
+
+		return
+	end
+
+	local var_3_6, var_3_7 = arg_3_1:GetHeroTeam()
+	local var_3_8 = arg_3_1:GetAssistHeroOwnerList()
+	local var_3_9 = clone(var_3_6)
+	local var_3_10 = clone(var_3_7)
+
+	for iter_3_0 = #var_3_9, 1, -1 do
+		if var_3_9[iter_3_0] == 0 then
+			table.remove(var_3_9, iter_3_0)
+			table.remove(var_3_10, iter_3_0)
 		end
 	end
 
 	for iter_3_1 = 1, 2 do
 		for iter_3_2 = iter_3_1 + 1, 3 do
-			if var_3_7[iter_3_1] and var_3_7[iter_3_2] and var_3_7[iter_3_1] ~= 0 and var_3_7[iter_3_1] == var_3_7[iter_3_2] then
+			if var_3_9[iter_3_1] and var_3_9[iter_3_2] and var_3_9[iter_3_1] ~= 0 and var_3_9[iter_3_1] == var_3_9[iter_3_2] then
 				ShowTips("TEAM_REPEAT_HERO")
 
 				return
@@ -39,49 +47,66 @@ function var_0_0.LaunchBattle(arg_3_0, arg_3_1, arg_3_2, arg_3_3)
 	end
 
 	if BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_MATRIX == var_3_3 or BattleConst.STAGE_TYPE_NEW.ACTIVITY_MATRIX == var_3_3 then
-		var_3_7 = arg_3_1:GetSystemHeroTeam()
+		var_3_9 = arg_3_1:GetSystemHeroTeam()
 
-		local var_3_9 = var_3_7
+		local var_3_11 = var_3_9
 	end
 
-	local var_3_10 = arg_3_1:GetComboSkillID() or 0
-	local var_3_11 = arg_3_1:GetSystemHeroTeam()
-	local var_3_12 = {}
+	if BattleConst.STAGE_TYPE_NEW.ACTIVITY_RHYTHM_GAME == var_3_3 then
+		LuaHidTools.ForceSelectKeyboard(HID_TYPES.Keyboard)
+	end
 
-	for iter_3_3, iter_3_4 in ipairs(var_3_7) do
-		var_3_12[iter_3_3] = {}
+	local var_3_12 = arg_3_1:GetComboSkillID() or 0
+	local var_3_13 = arg_3_1:GetComboSkillLevel() or 0
+	local var_3_14 = arg_3_1:GetSystemHeroTeam()
+	local var_3_15 = {}
 
-		if var_3_5[iter_3_3] ~= 0 and var_3_5[iter_3_3] ~= nil then
-			var_3_12[iter_3_3].hero_type = 2
-			var_3_12[iter_3_3].owner_id = BattleTeamData.NO_OWNER
-			var_3_12[iter_3_3].hero_id = var_3_5[iter_3_3]
-		elseif var_3_11[iter_3_3] ~= 0 and var_3_11[iter_3_3] ~= nil then
-			var_3_12[iter_3_3].hero_type = 2
-			var_3_12[iter_3_3].owner_id = BattleTeamData.NO_OWNER
-			var_3_12[iter_3_3].hero_id = var_3_11[iter_3_3]
+	for iter_3_3, iter_3_4 in ipairs(var_3_9) do
+		var_3_15[iter_3_3] = {}
+
+		if var_3_7[iter_3_3] ~= 0 and var_3_7[iter_3_3] ~= nil then
+			var_3_15[iter_3_3].hero_type = 2
+			var_3_15[iter_3_3].owner_id = BattleTeamData.NO_OWNER
+			var_3_15[iter_3_3].hero_id = var_3_7[iter_3_3]
+		elseif var_3_14[iter_3_3] ~= 0 and var_3_14[iter_3_3] ~= nil then
+			var_3_15[iter_3_3].hero_type = 2
+			var_3_15[iter_3_3].owner_id = BattleTeamData.NO_OWNER
+			var_3_15[iter_3_3].hero_id = var_3_14[iter_3_3]
 		else
-			var_3_12[iter_3_3].hero_id = var_3_7[iter_3_3]
-			var_3_12[iter_3_3].owner_id = var_3_6[iter_3_3] or BattleTeamData.NO_OWNER
-			var_3_12[iter_3_3].hero_type = not BattleTeamData.IsValidOwner(var_3_12[iter_3_3].owner_id) and 1 or 3
+			var_3_15[iter_3_3].hero_id = var_3_9[iter_3_3]
+			var_3_15[iter_3_3].owner_id = var_3_8[iter_3_3] or BattleTeamData.NO_OWNER
+			var_3_15[iter_3_3].hero_type = not BattleTeamData.IsValidOwner(var_3_15[iter_3_3].owner_id) and 1 or 3
 		end
 	end
 
-	manager.net:SendWithLoadingNew(54030, {
-		hero_list = var_3_12,
-		dest = var_3_1,
-		activity_id = arg_3_1:GetActivityID() or 0,
-		battle_times = var_3_2,
-		type = var_3_3,
-		index = arg_3_1:GetServerExtant(),
-		cooperate_unique_skill_id = var_3_10,
-		battle_vs = LuaForUtil.GetBattleVersion(),
-		mimir_info = {
-			{
-				mimir_id = arg_3_1:GetChipManagerID(),
-				chip_list = arg_3_1:GetChipList()
+	local var_3_16 = 0
+
+	if arg_3_4 then
+		var_3_16 = 1
+	end
+
+	local var_3_17 = {
+		common_info = {
+			hero_list = var_3_15,
+			dest = var_3_1,
+			activity_id = arg_3_1:GetActivityID() or 0,
+			battle_times = var_3_2,
+			type = var_3_3,
+			index = arg_3_1:GetServerExtant(),
+			cooperate_unique_skill_id = var_3_12,
+			cooperate_unique_skill_level = var_3_13,
+			battle_vs = LuaForUtil.GetBattleVersion(),
+			mimir_info = {
+				{
+					mimir_id = arg_3_1:GetChipManagerID(),
+					chip_list = arg_3_1:GetChipList()
+				}
 			}
-		}
-	}, 54031, function(arg_4_0)
+		},
+		is_restarted_battle = var_3_16
+	}
+
+	manager.net:SendWithLoadingNew(54030, var_3_17, 54031, function(arg_4_0)
 		if arg_3_3 then
 			arg_3_3(arg_4_0)
 		end
@@ -95,6 +120,10 @@ function var_0_0.LaunchBattle(arg_3_0, arg_3_1, arg_3_2, arg_3_3)
 		elseif arg_4_0.result == 2109 and BattleConst.STAGE_TYPE_NEW.GUILD_ACTIVITY == var_3_3 then
 			ShowTips(300114)
 		else
+			if BattleConst.STAGE_TYPE_NEW.ACTIVITY_RHYTHM_GAME == var_3_3 then
+				LuaHidTools.ForceSelectKeyboard(nil)
+			end
+
 			ShowTips(arg_4_0.result)
 		end
 	end)
@@ -123,6 +152,14 @@ function var_0_0.LaunchCooperationBattleWithoutRoom(arg_8_0, arg_8_1)
 end
 
 function var_0_0.LaunchStoryBattle(arg_9_0, arg_9_1, arg_9_2, arg_9_3)
+	local var_9_0, var_9_1 = manager.assetPend:CheckLauncherBattle(arg_9_1, arg_9_2)
+
+	if not var_9_0 then
+		ShowTips(var_9_1)
+
+		return
+	end
+
 	manager.story:CheckBattleStory(arg_9_2, manager.story.BEFORE, function()
 		gameContext:Go("/blank")
 		manager.net:SendWithLoadingNew(54034, {
@@ -232,6 +269,12 @@ function var_0_0.StartBattle(arg_14_0, arg_14_1)
 	LuaExchangeHelper.SetPlayerQuality(var_14_18.pic.user_effect - 1)
 	LuaExchangeHelper.SetAIQuality(var_14_18.pic.teammate_effect - 1)
 	LuaExchangeHelper.SetCooperateUniqueSkillPlayControlledType(var_14_18.game.cus_full_play_controlled_type)
+
+	if var_14_0:GetType() == BattleConst.STAGE_TYPE_NEW.CHALLENGE_ROGUE_TEAM then
+		LuaExchangeHelper.SetFriendQuality(getData("challenge_rogue_team", "hide_effect") or false)
+	else
+		LuaExchangeHelper.SetFriendQuality(false)
+	end
 
 	local var_14_19 = manager.time:GetServerTime()
 
@@ -928,17 +971,18 @@ function var_0_0.SetPolyhedronHeroData(arg_24_0, arg_24_1, arg_24_2, arg_24_3, a
 	return var_24_6
 end
 
-function var_0_0.SetNewWarChessHeroData(arg_25_0, arg_25_1, arg_25_2, arg_25_3, arg_25_4)
+function var_0_0.SetChallengeRogueTeamHeroData(arg_25_0, arg_25_1, arg_25_2, arg_25_3, arg_25_4)
 	local var_25_0
 	local var_25_1
 
 	if arg_25_2 and arg_25_2 ~= 0 then
 		var_25_0, var_25_1 = GetVirtualData(arg_25_2)
+		var_25_0.hpPercent = arg_25_1.hpPercent
 	else
 		var_25_0, var_25_1 = GetPracticalData(arg_25_1)
 	end
 
-	local var_25_2 = GetHeroFinalAttr(var_25_0, var_25_0.servantInfo, var_25_1, arg_25_2)
+	local var_25_2 = ChallengeRogueTeamData:GetHeroFinalAttr(var_25_0, var_25_0.servantInfo, var_25_1, arg_25_2)
 	local var_25_3, var_25_4, var_25_5 = HeroTools.CalTransitionSkillAttribute(var_25_0, var_25_1)
 	local var_25_6 = RoleDataForExchange.New()
 
@@ -947,108 +991,228 @@ function var_0_0.SetNewWarChessHeroData(arg_25_0, arg_25_1, arg_25_2, arg_25_3, 
 	var_25_6.ID = var_25_0.using_skin
 	var_25_6.Level = LvTools.CheckHeroExp(1, var_25_0.exp, HeroConst.HERO_LV_MAX)
 
-	local var_25_7 = var_25_0.id
-
-	var_25_2[2002] = math.ceil(NewWarChessData:GetHeroHp(var_25_7) / NewChessConst.HERO_HP_RATE * var_25_2[3])
-
+	local var_25_7 = {}
 	local var_25_8 = {}
-	local var_25_9 = {}
+	local var_25_9, var_25_10 = BattleTools.FixBattleAttributeListAndWeaponModule(var_25_7, var_25_8, var_25_0.using_skin, var_25_0.weapon_module_level)
+	local var_25_11 = ChallengeRogueTeamData:GetHeroData(var_25_0.id, nil, true).hpPercent
+
+	if var_25_11 then
+		local var_25_12 = var_25_2[3]
+		local var_25_13 = math.ceil(var_25_11 / 10000 * var_25_12)
+
+		var_25_2[2002] = var_25_13
+	end
 
 	for iter_25_0, iter_25_1 in pairs(var_25_2) do
 		if PublicAttrCfg[iter_25_0] or iter_25_0 == 2002 then
-			table.insert(var_25_8, iter_25_0)
-			table.insert(var_25_9, iter_25_1)
+			table.insert(var_25_9, iter_25_0)
+			table.insert(var_25_10, iter_25_1)
 		end
 	end
 
-	local var_25_10, var_25_11 = BattleTools.FixBattleAttributeListAndWeaponModule(var_25_8, var_25_9, var_25_0.using_skin, var_25_0.weapon_module_level)
+	for iter_25_2, iter_25_3 in ipairs(ChallengeRogueTeamTools.GetBuffList()) do
+		local var_25_14 = iter_25_3.effectId
+		local var_25_15 = RogueTeamEffectCfg[var_25_14]
 
-	var_25_6.attributeValue, var_25_6.attributeID = var_25_11, var_25_10
+		if var_25_15.action == ChallengeRogueTeamConst.EFFECT_ACTION.HERO_ATTRIBUTE then
+			local var_25_16 = var_25_15.params
 
-	local var_25_12 = {}
-	local var_25_13 = {}
+			for iter_25_4, iter_25_5 in ipairs(var_25_16) do
+				local var_25_17 = table.keyof(var_25_9, iter_25_5[1])
 
-	for iter_25_2, iter_25_3 in pairs(var_25_4) do
-		table.insert(var_25_12, iter_25_2)
-		table.insert(var_25_13, iter_25_3)
+				if var_25_17 then
+					var_25_10[var_25_17] = var_25_10[var_25_17] + iter_25_5[2]
+				else
+					table.insert(var_25_9, iter_25_5[1])
+					table.insert(var_25_10, iter_25_5[2])
+				end
+			end
+		end
 	end
 
-	var_25_6.equipSkillID = var_25_12
-	var_25_6.equipSkillLv = var_25_13
-
-	local var_25_14 = {}
-	local var_25_15 = AstrolabeTools.GetTotalEffect(var_25_0.using_astrolabe)
-
-	for iter_25_4 = 1, 9 do
-		var_25_14[iter_25_4] = var_25_15[iter_25_4] or 0
-	end
-
-	var_25_6.astrolabe = var_25_14
-
-	local var_25_16 = {}
-	local var_25_17 = EquipTools.GetEffectS(var_25_1, var_25_0)
-
-	for iter_25_5, iter_25_6 in pairs(var_25_17) do
-		table.insert(var_25_16, iter_25_5)
-	end
-
-	var_25_6.equipment = var_25_16
+	var_25_6.attributeID = var_25_9
+	var_25_6.attributeValue = var_25_10
 
 	local var_25_18 = {}
-	local var_25_19 = HeroCfg[var_25_0.id]
+	local var_25_19 = {}
+
+	for iter_25_6, iter_25_7 in pairs(var_25_4) do
+		table.insert(var_25_18, iter_25_6)
+		table.insert(var_25_19, iter_25_7)
+	end
+
+	var_25_6.equipSkillID = var_25_18
+	var_25_6.equipSkillLv = var_25_19
+
 	local var_25_20 = {}
+	local var_25_21 = AstrolabeTools.GetTotalEffect(var_25_0.using_astrolabe)
 
-	for iter_25_7, iter_25_8 in ipairs(var_25_0.skill) do
-		var_25_20[iter_25_8.skill_id] = iter_25_8.skill_level
+	for iter_25_8 = 1, 9 do
+		var_25_20[iter_25_8] = var_25_21[iter_25_8] or 0
 	end
 
-	for iter_25_9, iter_25_10 in pairs(var_25_5) do
-		var_25_20[iter_25_9] = (var_25_20[iter_25_9] or 1) + iter_25_10
-	end
-
-	for iter_25_11, iter_25_12 in ipairs(var_25_19.skills) do
-		var_25_18[iter_25_11] = var_25_20[iter_25_12] or 1
-	end
-
-	var_25_6.skillLevel = var_25_18
-
-	if var_25_0.servantInfo.id and var_25_0.servantInfo.id ~= 0 then
-		local var_25_21 = HeroTools.GetHeroWeaponAddLevel(var_25_0)
-
-		var_25_6.weaponEffectID = WeaponServantCfg[var_25_0.servantInfo.id].effect[1]
-		var_25_6.weaponEffectLevel = var_25_0.servantInfo.stage + var_25_21
-	end
+	var_25_6.astrolabe = var_25_20
 
 	local var_25_22 = {}
-	local var_25_23 = var_0_1:GetChipManagerID() or 0
+	local var_25_23 = EquipTools.GetEffectS(var_25_1, var_25_0)
 
-	if var_25_23 ~= 0 then
-		table.insert(var_25_22, var_25_23)
+	for iter_25_9, iter_25_10 in pairs(var_25_23) do
+		table.insert(var_25_22, iter_25_9)
+	end
+
+	var_25_6.equipment = var_25_22
+
+	local var_25_24 = {}
+	local var_25_25 = HeroCfg[var_25_0.id]
+	local var_25_26 = {}
+
+	for iter_25_11, iter_25_12 in ipairs(var_25_0.skill) do
+		var_25_26[iter_25_12.skill_id] = iter_25_12.skill_level
+	end
+
+	for iter_25_13, iter_25_14 in pairs(var_25_5) do
+		var_25_26[iter_25_13] = (var_25_26[iter_25_13] or 1) + iter_25_14
+	end
+
+	for iter_25_15, iter_25_16 in ipairs(var_25_25.skills) do
+		var_25_24[iter_25_15] = var_25_26[iter_25_16] or 1
+	end
+
+	var_25_6.skillLevel = var_25_24
+
+	if var_25_0.servantInfo.id and var_25_0.servantInfo.id ~= 0 then
+		local var_25_27 = HeroTools.GetHeroWeaponAddLevel(var_25_0)
+
+		var_25_6.weaponEffectID = WeaponServantCfg[var_25_0.servantInfo.id].effect[1]
+		var_25_6.weaponEffectLevel = var_25_0.servantInfo.stage + var_25_27
+	end
+
+	local var_25_28 = {}
+	local var_25_29 = var_0_1:GetChipManagerID() or 0
+
+	if var_25_29 ~= 0 then
+		table.insert(var_25_28, var_25_29)
 	end
 
 	if var_0_1:GetChipOfHeroDic()[var_25_6.ID] then
-		if var_25_23 ~= 0 then
-			for iter_25_13, iter_25_14 in ipairs(ChipData:GetCurChipManagerList(var_25_23)) do
-				table.insert(var_25_22, iter_25_14)
+		if var_25_29 ~= 0 then
+			for iter_25_17, iter_25_18 in ipairs(ChipData:GetCurChipManagerList(var_25_29)) do
+				table.insert(var_25_28, iter_25_18)
 			end
 		end
 
-		for iter_25_15, iter_25_16 in ipairs(var_0_1:GetChipOfHeroDic()[var_25_6.ID]) do
-			table.insert(var_25_22, iter_25_16)
+		for iter_25_19, iter_25_20 in ipairs(var_0_1:GetChipOfHeroDic()[var_25_6.ID]) do
+			table.insert(var_25_28, iter_25_20)
 		end
 	else
-		local var_25_24 = var_0_1:GetChipList()
+		local var_25_30 = var_0_1:GetChipList()
 
-		if var_25_24 then
-			for iter_25_17, iter_25_18 in ipairs(var_25_24) do
-				table.insert(var_25_22, iter_25_18)
+		if var_25_30 then
+			for iter_25_21, iter_25_22 in ipairs(var_25_30) do
+				table.insert(var_25_28, iter_25_22)
 			end
 		end
 	end
 
-	var_25_6.AIChip = var_25_22
+	var_25_6.AIChip = var_25_28
 
 	return var_25_6
+end
+
+function var_0_0.SetNewWarChessHeroData(arg_26_0, arg_26_1, arg_26_2, arg_26_3, arg_26_4)
+	local var_26_0
+	local var_26_1
+
+	if arg_26_2 and arg_26_2 ~= 0 then
+		var_26_0, var_26_1 = GetVirtualData(arg_26_2)
+	else
+		var_26_0, var_26_1 = GetPracticalData(arg_26_1)
+	end
+
+	local var_26_2 = GetHeroFinalAttr(var_26_0, var_26_0.servantInfo, var_26_1, arg_26_2)
+	local var_26_3, var_26_4, var_26_5 = HeroTools.CalTransitionSkillAttribute(var_26_0, var_26_1)
+	local var_26_6 = RoleDataForExchange.New()
+
+	var_26_6.UID = arg_26_3
+	var_26_6.playerLevel = arg_26_4
+	var_26_6.ID = var_26_0.using_skin
+	var_26_6.Level = LvTools.CheckHeroExp(1, var_26_0.exp, HeroConst.HERO_LV_MAX)
+
+	local var_26_7 = var_26_0.id
+
+	var_26_2[2002] = math.ceil(NewWarChessData:GetHeroHp(var_26_7) / NewChessConst.HERO_HP_RATE * var_26_2[3])
+
+	local var_26_8 = {}
+	local var_26_9 = {}
+
+	for iter_26_0, iter_26_1 in pairs(var_26_2) do
+		if PublicAttrCfg[iter_26_0] or iter_26_0 == 2002 then
+			table.insert(var_26_8, iter_26_0)
+			table.insert(var_26_9, iter_26_1)
+		end
+	end
+
+	local var_26_10, var_26_11 = BattleTools.FixBattleAttributeListAndWeaponModule(var_26_8, var_26_9, var_26_0.using_skin, var_26_0.weapon_module_level)
+
+	var_26_6.attributeValue, var_26_6.attributeID = var_26_11, var_26_10
+
+	local var_26_12 = {}
+	local var_26_13 = {}
+
+	for iter_26_2, iter_26_3 in pairs(var_26_4) do
+		table.insert(var_26_12, iter_26_2)
+		table.insert(var_26_13, iter_26_3)
+	end
+
+	var_26_6.equipSkillID = var_26_12
+	var_26_6.equipSkillLv = var_26_13
+
+	local var_26_14 = {}
+	local var_26_15 = AstrolabeTools.GetTotalEffect(var_26_0.using_astrolabe)
+
+	for iter_26_4 = 1, 9 do
+		var_26_14[iter_26_4] = var_26_15[iter_26_4] or 0
+	end
+
+	var_26_6.astrolabe = var_26_14
+
+	local var_26_16 = {}
+	local var_26_17 = EquipTools.GetEffectS(var_26_1, var_26_0)
+
+	for iter_26_5, iter_26_6 in pairs(var_26_17) do
+		table.insert(var_26_16, iter_26_5)
+	end
+
+	var_26_6.equipment = var_26_16
+
+	local var_26_18 = {}
+	local var_26_19 = HeroCfg[var_26_0.id]
+	local var_26_20 = {}
+
+	for iter_26_7, iter_26_8 in ipairs(var_26_0.skill) do
+		var_26_20[iter_26_8.skill_id] = iter_26_8.skill_level
+	end
+
+	for iter_26_9, iter_26_10 in pairs(var_26_5) do
+		var_26_20[iter_26_9] = (var_26_20[iter_26_9] or 1) + iter_26_10
+	end
+
+	for iter_26_11, iter_26_12 in ipairs(var_26_19.skills) do
+		var_26_18[iter_26_11] = var_26_20[iter_26_12] or 1
+	end
+
+	var_26_6.skillLevel = var_26_18
+
+	if var_26_0.servantInfo.id and var_26_0.servantInfo.id ~= 0 then
+		local var_26_21 = HeroTools.GetHeroWeaponAddLevel(var_26_0)
+
+		var_26_6.weaponEffectID = WeaponServantCfg[var_26_0.servantInfo.id].effect[1]
+		var_26_6.weaponEffectLevel = var_26_0.servantInfo.stage + var_26_21
+	end
+
+	var_26_6.AIChip = chipList
+
+	return var_26_6
 end
 
 return var_0_0

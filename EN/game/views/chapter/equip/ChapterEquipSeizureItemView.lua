@@ -7,9 +7,7 @@ function var_0_0.GetLostTime(arg_1_0)
 end
 
 function var_0_0.ClickItem(arg_2_0, arg_2_1)
-	if arg_2_0.isLock_ then
-		ShowTips(arg_2_0.lockTips_)
-
+	if arg_2_0:CheckLock() then
 		return
 	end
 

@@ -107,7 +107,7 @@ function var_0_0.SetData(arg_10_0, arg_10_1)
 
 	arg_10_0.data = arg_10_1
 	arg_10_0.shopCfg = getShopCfg(arg_10_1.id)
-	arg_10_0.goodID = arg_10_1.id
+	arg_10_0.goodID = arg_10_0.shopCfg.goods_id
 	arg_10_0.dlcID = arg_10_0.shopCfg.dlc or nil
 	arg_10_0.haveDlc = arg_10_0.dlcID ~= nil and arg_10_0.dlcID ~= 0
 	arg_10_0.isExchange = arg_10_0.shopCfg.shop_refresh == 2
@@ -116,11 +116,9 @@ function var_0_0.SetData(arg_10_0, arg_10_1)
 	local var_10_0
 
 	if arg_10_0.shopCfg.description then
-		arg_10_0.isDesc = true
 		arg_10_0.itemCfg = RechargeShopDescriptionCfg[arg_10_0.shopCfg.description]
 		var_10_0 = arg_10_0.itemCfg.param[1]
 	else
-		arg_10_0.isDesc = false
 		arg_10_0.itemCfg = ItemCfg[arg_10_0.shopCfg.give_id]
 	end
 
@@ -141,7 +139,12 @@ function var_0_0.SetData(arg_10_0, arg_10_1)
 		arg_10_0.canBuyDlc = ShopConst.SHOP_ID.DLC_SHOP == arg_10_0.shopDlcCfg.shop_id
 	end
 
-	arg_10_0.buyTime = ShopData.GetShop(arg_10_0.shopID)[arg_10_0.goodID] ~= nil and ShopData.GetShop(arg_10_0.shopID)[arg_10_0.goodID].buy_times or 0
+	if ShopData.GetShop(arg_10_0.shopID) == nil then
+		arg_10_0.buyTime = 0
+	else
+		arg_10_0.buyTime = ShopData.GetShop(arg_10_0.shopID)[arg_10_0.goodID] ~= nil and ShopData.GetShop(arg_10_0.shopID)[arg_10_0.goodID].buy_times or 0
+	end
+
 	arg_10_0.restNum = arg_10_0.shopCfg.limit_num - arg_10_0.buyTime
 
 	arg_10_0:UpdateView()

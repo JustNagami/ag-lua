@@ -30,7 +30,9 @@ local function var_0_1()
 end
 
 local function var_0_2(arg_7_0)
-	return DormUtils.GetEntityData(arg_7_0).cfgID
+	local var_7_0 = DormUtils.GetEntityData(arg_7_0)
+
+	return var_7_0.heroID or var_7_0.cfgID
 end
 
 function var_0_0.IndexOf(arg_8_0, arg_8_1)

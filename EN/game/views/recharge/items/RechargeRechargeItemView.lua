@@ -21,6 +21,12 @@ end
 
 function var_0_1.AddUIListener(arg_4_0)
 	arg_4_0:AddBtnListener(arg_4_0.btn_, nil, function()
+		if ShopTools.IsPC() and not SDKTools.GetIsOverSea() then
+			ShopTools.OpenWebRecharge()
+
+			return
+		end
+
 		SDKTools.SendPaymentMessageToSDK("payment_touch", {
 			payment_recharge_id = arg_4_0.Cfg.id
 		})

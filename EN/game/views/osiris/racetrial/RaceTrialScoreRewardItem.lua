@@ -83,16 +83,18 @@ end
 
 function var_0_0.Dispose(arg_12_0)
 	arg_12_0:RemoveAllListeners()
+	arg_12_0:DisposeRewardItems()
+	var_0_0.super.Dispose(arg_12_0)
+end
 
-	for iter_12_0 = 1, #arg_12_0.rewardList_ do
-		arg_12_0.rewardList_[iter_12_0]:Dispose()
+function var_0_0.DisposeRewardItems(arg_13_0)
+	for iter_13_0 = 1, #arg_13_0.rewardList_ do
+		arg_13_0.rewardList_[iter_13_0]:Dispose()
 
-		arg_12_0.rewardList_[iter_12_0] = nil
+		arg_13_0.rewardList_[iter_13_0] = nil
 	end
 
-	arg_12_0.rewardList_ = nil
-
-	var_0_0.super.Dispose(arg_12_0)
+	arg_13_0.rewardList_ = nil
 end
 
 return var_0_0

@@ -70,7 +70,7 @@ function var_0_0.OnEnter(arg_10_0)
 	local var_10_2 = manager.audio:GetMusicVolume()
 
 	arg_10_0.criplayer_:SetVolume(var_10_2)
-	arg_10_0.criplayer_:SetFile(nil, var_10_0.fireworks)
+	SetFile(arg_10_0.criplayer_, nil, var_10_0.fireworks)
 	arg_10_0.criMovie_:Play()
 
 	arg_10_0.criplayer_.statusChangeCallback = handler(arg_10_0, arg_10_0.CirMovieStatusChange)

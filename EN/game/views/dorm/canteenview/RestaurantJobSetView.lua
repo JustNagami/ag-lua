@@ -35,6 +35,12 @@ function var_0_0.Init(arg_4_0)
 	for iter_4_0, iter_4_1 in ipairs(DormConst.DORM_RESTAURANT_SET_JOB_TYPE) do
 		arg_4_0.jobStateController[iter_4_0] = ControllerUtil.GetController(arg_4_0["job" .. iter_4_0 .. "Tgl_"].gameObject.transform, "state")
 	end
+
+	arg_4_0.jobToggleController = {}
+
+	for iter_4_2, iter_4_3 in ipairs(DormConst.DORM_RESTAURANT_SET_JOB_TYPE) do
+		arg_4_0.jobToggleController[iter_4_2] = ControllerUtil.GetController(arg_4_0["job" .. iter_4_2 .. "Tgl_"].gameObject.transform, "toggle")
+	end
 end
 
 function var_0_0.InitUI(arg_6_0)
@@ -91,6 +97,14 @@ end
 function var_0_0.SelJob(arg_16_0, arg_16_1)
 	arg_16_0.jobType = arg_16_1
 	arg_16_0.selHero = nil
+
+	for iter_16_0, iter_16_1 in ipairs(DormConst.DORM_RESTAURANT_SET_JOB_TYPE) do
+		if iter_16_0 == arg_16_0.jobType then
+			arg_16_0.jobToggleController[iter_16_0]:SetSelectedState("on")
+		else
+			arg_16_0.jobToggleController[iter_16_0]:SetSelectedState("off")
+		end
+	end
 
 	arg_16_0:RefreshView()
 end

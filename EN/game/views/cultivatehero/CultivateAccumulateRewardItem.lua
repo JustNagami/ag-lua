@@ -47,10 +47,19 @@ function var_0_0.RefreshUI(arg_5_0)
 end
 
 function var_0_0.RefreshReward(arg_6_0)
-	local var_6_0 = ActivityPointRewardCfg[arg_6_0.taskID_].reward_item_list
+	local var_6_0 = CultivateHeroData:GetAccumulateTaskInfoList(arg_6_0.activityID_)
+	local var_6_1 = var_6_0[arg_6_0.taskID_] and var_6_0[arg_6_0.taskID_].isReceived
+
+	if var_6_1 == true then
+		arg_6_0.rewardState_:SetSelectedState("received")
+	else
+		arg_6_0.rewardState_:SetSelectedState("none")
+	end
+
+	local var_6_2 = ActivityPointRewardCfg[arg_6_0.taskID_].reward_item_list
 
 	for iter_6_0 = 1, arg_6_0.maxRewardNum_ do
-		local var_6_1 = var_6_0[iter_6_0]
+		local var_6_3 = var_6_2[iter_6_0]
 
 		if not arg_6_0.itemDataList_[iter_6_0] then
 			arg_6_0.itemDataList_[iter_6_0] = clone(ItemTemplateData)
@@ -62,12 +71,18 @@ function var_0_0.RefreshReward(arg_6_0)
 			end
 		end
 
-		local var_6_2 = true
+		local var_6_4 = true
 
-		if var_6_1 then
-			arg_6_0.itemDataList_[iter_6_0].id = var_6_1[1]
-			arg_6_0.itemDataList_[iter_6_0].number = var_6_1[2]
-			var_6_2 = false
+		if var_6_3 then
+			arg_6_0.itemDataList_[iter_6_0].id = var_6_3[1]
+			arg_6_0.itemDataList_[iter_6_0].number = var_6_3[2]
+			var_6_4 = false
+
+			if var_6_1 then
+				arg_6_0.itemDataList_[iter_6_0].grayFlag = true
+			else
+				arg_6_0.itemDataList_[iter_6_0].grayFlag = false
+			end
 		end
 
 		if arg_6_0.rewardItemList_[iter_6_0] == nil then
@@ -76,19 +91,11 @@ function var_0_0.RefreshReward(arg_6_0)
 
 		arg_6_0.rewardItemList_[iter_6_0]:Show(true)
 
-		if not var_6_2 then
+		if not var_6_4 then
 			arg_6_0.rewardItemList_[iter_6_0]:SetData(arg_6_0.itemDataList_[iter_6_0])
 		else
 			arg_6_0.rewardItemList_[iter_6_0]:SetData(nil)
 		end
-	end
-
-	local var_6_3 = CultivateHeroData:GetAccumulateTaskInfoList(arg_6_0.activityID_)
-
-	if (var_6_3[arg_6_0.taskID_] and var_6_3[arg_6_0.taskID_].isReceived) == true then
-		arg_6_0.rewardState_:SetSelectedState("received")
-	else
-		arg_6_0.rewardState_:SetSelectedState("none")
 	end
 end
 

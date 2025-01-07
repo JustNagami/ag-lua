@@ -276,6 +276,111 @@
 			3020301
 		}
 	},
+	[282131] = {
+		extra_jump_list = "",
+		hero_skin_id = 169,
+		sy = 282131,
+		prefab_name = "Widget/Version/SummerUI_3_4/SummerUI_3_4_HeroPubliciz/SummerUI_3_4_HeroPublicize01",
+		hero_trial_id = 283,
+		hero_trial_navigation = {
+			15601,
+			281001,
+			281071
+		},
+		hero_skin_navigation = {
+			15601,
+			281001,
+			281311
+		},
+		hero_draw_navigation = {
+			404,
+			3040301
+		}
+	},
+	[282132] = {
+		extra_jump_list = "",
+		hero_skin_id = 173,
+		sy = 282132,
+		prefab_name = "Widget/Version/SummerUI_3_5/SummerUI_3_5_HeroPubliciz/SummerUI_3_5_HeroPublicize01",
+		hero_trial_id = 289,
+		hero_trial_navigation = {
+			15601,
+			281001,
+			281071
+		},
+		hero_skin_navigation = {
+			15601,
+			281001,
+			281311
+		},
+		hero_draw_navigation = {
+			404,
+			3050304
+		}
+	},
+	[292131] = {
+		extra_jump_list = "",
+		hero_skin_id = 306001,
+		sy = 292131,
+		prefab_name = "Widget/System/Activity_Resident/Activity_HeroPubliciz/ActivityHeroPublicize01",
+		hero_trial_id = 295,
+		hero_trial_navigation = {
+			15801,
+			291001,
+			291071
+		},
+		hero_skin_navigation = {
+			15801,
+			291001,
+			291311
+		},
+		hero_draw_navigation = {
+			404,
+			3060301
+		}
+	},
+	[292132] = {
+		extra_jump_list = "",
+		hero_skin_id = 306002,
+		sy = 292132,
+		prefab_name = "Widget/System/Activity_Resident/Activity_HeroPubliciz/ActivityHeroPublicize02",
+		hero_trial_id = 296,
+		hero_trial_navigation = {
+			15801,
+			291001,
+			291071
+		},
+		hero_skin_navigation = {
+			15801,
+			291001,
+			291311
+		},
+		hero_draw_navigation = {
+			404,
+			3060302
+		}
+	},
+	[292133] = {
+		extra_jump_list = "",
+		hero_skin_id = 307001,
+		sy = 292133,
+		prefab_name = "Widget/System/Activity_Resident/Activity_HeroPubliciz/ActivityHeroPublicize03",
+		hero_trial_id = 302,
+		hero_trial_navigation = {
+			15801,
+			291001,
+			291071
+		},
+		hero_skin_navigation = {
+			15801,
+			291001,
+			291312
+		},
+		hero_draw_navigation = {
+			404,
+			3070301
+		}
+	},
 	all = {
 		172131,
 		172132,
@@ -289,6 +394,11 @@
 		232132,
 		242131,
 		242132,
-		272131
+		272131,
+		282131,
+		282132,
+		292131,
+		292132,
+		292133
 	}
 }

@@ -46,4 +46,16 @@ function var_0_0.CallUpdateFunc(arg_5_0, arg_5_1, ...)
 	end
 end
 
+function var_0_0.CallFirstUpdateFunc(arg_6_0, arg_6_1, ...)
+	local var_6_0 = gameContext:GetAllOpenPage()
+
+	for iter_6_0 = #var_6_0, 1, -1 do
+		local var_6_1 = var_6_0[iter_6_0]
+
+		if var_6_1[arg_6_1] then
+			return var_6_1[arg_6_1](var_6_1, ...)
+		end
+	end
+end
+
 return var_0_0

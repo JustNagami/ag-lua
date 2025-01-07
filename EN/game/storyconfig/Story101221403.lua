@@ -296,7 +296,7 @@
 		arg_15_1.frameCnt_ = 0
 		arg_15_1.state_ = "playing"
 		arg_15_1.curTalkId_ = 122143004
-		arg_15_1.duration_ = 8.233
+		arg_15_1.duration_ = 8.23
 
 		local var_15_0 = {
 			ja = 8.233,
@@ -619,7 +619,7 @@
 		arg_19_1.frameCnt_ = 0
 		arg_19_1.state_ = "playing"
 		arg_19_1.curTalkId_ = 122143005
-		arg_19_1.duration_ = 7.366
+		arg_19_1.duration_ = 7.37
 
 		local var_19_0 = {
 			ja = 7.366,
@@ -1144,7 +1144,7 @@
 		arg_31_1.frameCnt_ = 0
 		arg_31_1.state_ = "playing"
 		arg_31_1.curTalkId_ = 122143008
-		arg_31_1.duration_ = 0.999999999999
+		arg_31_1.duration_ = 1
 
 		SetActive(arg_31_1.tipsGo_, false)
 
@@ -1566,6 +1566,9 @@
 
 				arg_41_1.callingController_:SetSelectedState("normal")
 
+				arg_41_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_41_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_44_3 = arg_41_1:GetWordFromCfg(122143010)
 				local var_44_4 = arg_41_1:FormatText(var_44_3.content)
 
@@ -1716,7 +1719,7 @@
 		arg_49_1.frameCnt_ = 0
 		arg_49_1.state_ = "playing"
 		arg_49_1.curTalkId_ = 122143012
-		arg_49_1.duration_ = 8.933
+		arg_49_1.duration_ = 8.93
 
 		local var_49_0 = {
 			ja = 8.933,
@@ -1987,7 +1990,7 @@
 		arg_53_1.frameCnt_ = 0
 		arg_53_1.state_ = "playing"
 		arg_53_1.curTalkId_ = 122143013
-		arg_53_1.duration_ = 1.999999999999
+		arg_53_1.duration_ = 2
 
 		SetActive(arg_53_1.tipsGo_, false)
 
@@ -2435,7 +2438,7 @@
 		arg_65_1.frameCnt_ = 0
 		arg_65_1.state_ = "playing"
 		arg_65_1.curTalkId_ = 122143016
-		arg_65_1.duration_ = 4.333333333332
+		arg_65_1.duration_ = 4.33
 
 		SetActive(arg_65_1.tipsGo_, false)
 
@@ -2683,7 +2686,7 @@
 		arg_69_1.frameCnt_ = 0
 		arg_69_1.state_ = "playing"
 		arg_69_1.curTalkId_ = 122143017
-		arg_69_1.duration_ = 2.366666666666
+		arg_69_1.duration_ = 2.37
 
 		SetActive(arg_69_1.tipsGo_, false)
 
@@ -2780,7 +2783,7 @@
 		arg_73_1.frameCnt_ = 0
 		arg_73_1.state_ = "playing"
 		arg_73_1.curTalkId_ = 122143018
-		arg_73_1.duration_ = 2.749999999999
+		arg_73_1.duration_ = 2.75
 
 		SetActive(arg_73_1.tipsGo_, false)
 
@@ -2877,7 +2880,7 @@
 		arg_77_1.frameCnt_ = 0
 		arg_77_1.state_ = "playing"
 		arg_77_1.curTalkId_ = 122143019
-		arg_77_1.duration_ = 12.166
+		arg_77_1.duration_ = 12.17
 
 		local var_77_0 = {
 			ja = 12.166,
@@ -2959,52 +2962,52 @@
 				arg_77_1.mask_.color = var_80_9
 			end
 
-			local var_80_11 = arg_77_1.actors_["1084ui_story"].transform
-			local var_80_12 = 3.8
+			local var_80_11 = 1.98333333333333
 
-			if var_80_12 < arg_77_1.time_ and arg_77_1.time_ <= var_80_12 + arg_80_0 then
-				arg_77_1.var_.moveOldPos1084ui_story = var_80_11.localPosition
-			end
-
-			local var_80_13 = 0.001
-
-			if var_80_12 <= arg_77_1.time_ and arg_77_1.time_ < var_80_12 + var_80_13 then
-				local var_80_14 = (arg_77_1.time_ - var_80_12) / var_80_13
-				local var_80_15 = Vector3.New(0, -0.97, -6)
-
-				var_80_11.localPosition = Vector3.Lerp(arg_77_1.var_.moveOldPos1084ui_story, var_80_15, var_80_14)
-
-				local var_80_16 = manager.ui.mainCamera.transform.position - var_80_11.position
-
-				var_80_11.forward = Vector3.New(var_80_16.x, var_80_16.y, var_80_16.z)
-
-				local var_80_17 = var_80_11.localEulerAngles
-
-				var_80_17.z = 0
-				var_80_17.x = 0
-				var_80_11.localEulerAngles = var_80_17
-			end
-
-			if arg_77_1.time_ >= var_80_12 + var_80_13 and arg_77_1.time_ < var_80_12 + var_80_13 + arg_80_0 then
-				var_80_11.localPosition = Vector3.New(0, -0.97, -6)
-
-				local var_80_18 = manager.ui.mainCamera.transform.position - var_80_11.position
-
-				var_80_11.forward = Vector3.New(var_80_18.x, var_80_18.y, var_80_18.z)
-
-				local var_80_19 = var_80_11.localEulerAngles
-
-				var_80_19.z = 0
-				var_80_19.x = 0
-				var_80_11.localEulerAngles = var_80_19
-			end
-
-			local var_80_20 = 1.98333333333333
-
-			if var_80_20 < arg_77_1.time_ and arg_77_1.time_ <= var_80_20 + arg_80_0 then
+			if var_80_11 < arg_77_1.time_ and arg_77_1.time_ <= var_80_11 + arg_80_0 then
 				arg_77_1.fswbg_:SetActive(false)
 				arg_77_1.dialog_:SetActive(false)
 				arg_77_1:ShowNextGo(false)
+			end
+
+			local var_80_12 = arg_77_1.actors_["1084ui_story"].transform
+			local var_80_13 = 3.8
+
+			if var_80_13 < arg_77_1.time_ and arg_77_1.time_ <= var_80_13 + arg_80_0 then
+				arg_77_1.var_.moveOldPos1084ui_story = var_80_12.localPosition
+			end
+
+			local var_80_14 = 0.001
+
+			if var_80_13 <= arg_77_1.time_ and arg_77_1.time_ < var_80_13 + var_80_14 then
+				local var_80_15 = (arg_77_1.time_ - var_80_13) / var_80_14
+				local var_80_16 = Vector3.New(0, -0.97, -6)
+
+				var_80_12.localPosition = Vector3.Lerp(arg_77_1.var_.moveOldPos1084ui_story, var_80_16, var_80_15)
+
+				local var_80_17 = manager.ui.mainCamera.transform.position - var_80_12.position
+
+				var_80_12.forward = Vector3.New(var_80_17.x, var_80_17.y, var_80_17.z)
+
+				local var_80_18 = var_80_12.localEulerAngles
+
+				var_80_18.z = 0
+				var_80_18.x = 0
+				var_80_12.localEulerAngles = var_80_18
+			end
+
+			if arg_77_1.time_ >= var_80_13 + var_80_14 and arg_77_1.time_ < var_80_13 + var_80_14 + arg_80_0 then
+				var_80_12.localPosition = Vector3.New(0, -0.97, -6)
+
+				local var_80_19 = manager.ui.mainCamera.transform.position - var_80_12.position
+
+				var_80_12.forward = Vector3.New(var_80_19.x, var_80_19.y, var_80_19.z)
+
+				local var_80_20 = var_80_12.localEulerAngles
+
+				var_80_20.z = 0
+				var_80_20.x = 0
+				var_80_12.localEulerAngles = var_80_20
 			end
 
 			local var_80_21 = arg_77_1.actors_["1084ui_story"]
@@ -3457,7 +3460,7 @@
 		arg_91_1.frameCnt_ = 0
 		arg_91_1.state_ = "playing"
 		arg_91_1.curTalkId_ = 122143022
-		arg_91_1.duration_ = 6.033
+		arg_91_1.duration_ = 6.03
 
 		local var_91_0 = {
 			ja = 6.033,

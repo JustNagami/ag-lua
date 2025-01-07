@@ -15,6 +15,10 @@ function var_0_0.SortAllChatSticker()
 end
 
 function var_0_0.SortFunction(arg_3_0)
+	if arg_3_0 == nil then
+		return {}
+	end
+
 	table.sort(arg_3_0, function(arg_4_0, arg_4_1)
 		local var_4_0 = ChatStickerCfg[arg_4_0]
 		local var_4_1 = ChatStickerCfg[arg_4_1]

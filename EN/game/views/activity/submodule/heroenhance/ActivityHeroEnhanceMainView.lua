@@ -19,9 +19,11 @@ function var_0_1.AddListeners(arg_3_0)
 	end)
 	arg_3_0:AddBtnListener(arg_3_0.descBtn_, nil, function()
 		local var_5_0 = "ACTIVITY_HERO_ENHANCE_DESC"
+		local var_5_1 = ActivityHeroEnhanceTools.GetTutorialCfg(arg_3_0.activityID_)
+		local var_5_2 = HeroTools.GetHeroFullName(var_5_1.hero_id)
 
 		JumpTools.OpenPageByJump("gameHelp", {
-			content = GetTips(var_5_0),
+			content = GetTipsF(var_5_0, var_5_2),
 			key = var_5_0
 		})
 	end)
@@ -51,6 +53,10 @@ end
 function var_0_1.RefreshUI(arg_8_0)
 	arg_8_0.descText_.text = GetTips("ACTIVITY_HERO_ENHANCE_ENTER_TIP")
 
+	if arg_8_0.goText_ then
+		arg_8_0.goText_.text = GetTips("ACTIVITY_HERO_ENHANCE_BUTTON_BEGIN")
+	end
+
 	if arg_8_0.itemList_ == nil then
 		local var_8_0 = ActivityHeroEnhanceTools.GetAllRewardList(arg_8_0.activityID_)
 		local var_8_1 = sortReward(var_8_0)
@@ -62,6 +68,7 @@ function var_0_1.RefreshUI(arg_8_0)
 
 			var_8_2.id = iter_8_1.id
 			var_8_2.number = iter_8_1.num
+			var_8_2.hideBottomRightTextFlag = true
 
 			table.insert(arg_8_0.itemList_, var_8_2)
 		end

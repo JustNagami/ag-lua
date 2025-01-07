@@ -46,7 +46,7 @@ function var_0_0.GetParams(arg_8_0)
 	elseif var_8_0:GetType() == BattleConst.STAGE_TYPE_NEW.ACTIVITY_MATRIX then
 		return ActivityMatrixData:GetArtifactList(var_8_0:GetActivityID())
 	elseif var_8_0:GetType() == BattleConst.STAGE_TYPE_NEW.STRATEGY_MATRIX then
-		arg_8_0.viewList_[view] = MatrixArtifactSettingView.New(arg_8_0.viewListGo_[view], StrategyMatrixData:GetArtifactList(var_8_0:GetActivityID()))
+		return StrategyMatrixData:GetArtifactList(var_8_0:GetActivityID())
 	elseif var_8_0:GetType() == BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_CHESS then
 		local var_8_1 = WarChessData:GetArtifactData()
 		local var_8_2 = {}

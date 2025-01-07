@@ -13,6 +13,7 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
+	arg_3_0.portrait_.immediate = true
 	arg_3_0.starController_ = ControllerUtil.GetController(arg_3_0.starControllerTrs_, "star")
 	arg_3_0.AdaptImg_ = arg_3_0:FindCom("AdaptImage", nil, arg_3_0.portrait_.transform)
 	arg_3_0.SimplePlayer_ = arg_3_0:FindCom("VoiceOfObtainHeroSimplePlayer", "CriwareAudio")
@@ -21,7 +22,7 @@ end
 function var_0_0.PlayGetHeroVoice(arg_4_0)
 	local var_4_0 = arg_4_0:GetHeroID()
 
-	manager.audio:PlayVoice(string.format("vo_sys_%d", var_4_0), string.format("v_s_%d_%s", var_4_0, "get"), string.format("vo_sys_%d.awb", var_4_0))
+	manager.audio:PlayVoice(string.format("vo_sys_%d", var_4_0), string.format("v_s_%d_%s", var_4_0, "get_cg"), string.format("vo_sys_%d.awb", var_4_0))
 end
 
 function var_0_0.GetPlayable(arg_5_0)
@@ -65,7 +66,7 @@ function var_0_0.Show(arg_8_0, arg_8_1)
 end
 
 function var_0_0.RefreshContent(arg_9_0, arg_9_1, arg_9_2)
-	arg_9_0.portrait_.sprite = AssetEx.LoadSprite("TextureConfig/Character/Portrait/" .. arg_9_1)
+	arg_9_0.portrait_.spriteSync = "TextureConfig/Character/Portrait/" .. arg_9_1
 
 	arg_9_0.AdaptImg_:AdaptImg()
 

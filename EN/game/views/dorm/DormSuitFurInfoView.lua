@@ -139,6 +139,10 @@ function var_0_0.RegisterEvents(arg_17_0)
 		if arg_17_0.selIndex then
 			local var_18_0 = arg_17_0.scrollHelper_:GetItemByIndex(arg_17_0.selIndex)
 
+			if var_18_0 == nil then
+				return
+			end
+
 			if arg_17_0.suitID then
 				var_18_0:RefreshUI(arg_17_0.furInfoList[arg_17_0.selIndex], nil, DormEnum.FurItemType.SuitFurShow, nil, arg_17_0.selIndex)
 			elseif arg_17_0.templateID then

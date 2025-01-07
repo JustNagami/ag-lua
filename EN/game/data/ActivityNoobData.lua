@@ -157,7 +157,9 @@ function var_0_0.UpdateRecharge(arg_20_0, arg_20_1)
 		isRecharged = var_20_1.flag,
 		heroRewardFlag = var_20_1.role_reward_flag,
 		signTimes = var_20_1.sign_times,
-		signRewardFlag = var_20_1.sign_reward_flag
+		signRewardFlag = var_20_1.sign_reward_flag,
+		newTagRoleFlag = var_20_1.is_new_tag_role_reward,
+		newTagSignFlag = var_20_1.is_new_tag_sign_reward
 	}
 	arg_20_0.bpRewardStatus_ = arg_20_1.first_battlepass_reward
 end
@@ -166,49 +168,57 @@ function var_0_0.GetFirstRechargeStatus(arg_21_0)
 	return arg_21_0.firstRechargeRewardStatus_
 end
 
-function var_0_0.ReceiveFirstRecharge(arg_22_0, arg_22_1)
-	if arg_22_1 == 0 then
-		arg_22_0.firstRechargeRewardStatus_.firstGearStatus = 2
-	else
-		arg_22_0.firstRechargeRewardStatus_.signTimes = arg_22_0.firstRechargeRewardStatus_.signTimes + 1
-		arg_22_0.firstRechargeRewardStatus_.lastSignTimestamp = manager.time:GetServerTime()
-	end
+function var_0_0.SetNewTagRoleFlag(arg_22_0, arg_22_1)
+	arg_22_0.firstMonthlyCardStatus_.newTagRoleFlag = arg_22_1
 end
 
-function var_0_0.GetFirstMonthlyCardStatus(arg_23_0)
-	return arg_23_0.firstMonthlyCardStatus_
+function var_0_0.SetNewTagSignFlag(arg_23_0, arg_23_1)
+	arg_23_0.firstMonthlyCardStatus_.newTagSignFlag = arg_23_1
 end
 
-function var_0_0.ReceiveMonthlyCard(arg_24_0, arg_24_1)
+function var_0_0.ReceiveFirstRecharge(arg_24_0, arg_24_1)
 	if arg_24_1 == 0 then
-		arg_24_0.firstMonthlyCardStatus_.heroRewardFlag = true
+		arg_24_0.firstRechargeRewardStatus_.firstGearStatus = 2
 	else
-		arg_24_0.firstMonthlyCardStatus_.signRewardFlag = true
+		arg_24_0.firstRechargeRewardStatus_.signTimes = arg_24_0.firstRechargeRewardStatus_.signTimes + 1
+		arg_24_0.firstRechargeRewardStatus_.lastSignTimestamp = manager.time:GetServerTime()
 	end
 end
 
-function var_0_0.SetMonthlyCardSign(arg_25_0)
-	arg_25_0.firstMonthlyCardStatus_.signTimes = arg_25_0.firstMonthlyCardStatus_.signTimes + 1
+function var_0_0.GetFirstMonthlyCardStatus(arg_25_0)
+	return arg_25_0.firstMonthlyCardStatus_
 end
 
-function var_0_0.GetBpRewardStatus(arg_26_0)
-	return arg_26_0.bpRewardStatus_
+function var_0_0.ReceiveMonthlyCard(arg_26_0, arg_26_1)
+	if arg_26_1 == 0 then
+		arg_26_0.firstMonthlyCardStatus_.heroRewardFlag = true
+	else
+		arg_26_0.firstMonthlyCardStatus_.signRewardFlag = true
+	end
 end
 
-function var_0_0.SetBpRewardStatus(arg_27_0)
-	arg_27_0.bpRewardStatus_ = 2
+function var_0_0.SetMonthlyCardSign(arg_27_0)
+	return
 end
 
-function var_0_0.GetRechargeStatus(arg_28_0)
-	return arg_28_0.rechargeStatus_
+function var_0_0.GetBpRewardStatus(arg_28_0)
+	return arg_28_0.bpRewardStatus_
 end
 
-function var_0_0.GetNewbieOpenTime(arg_29_0)
-	return arg_29_0.trigger_time
+function var_0_0.SetBpRewardStatus(arg_29_0)
+	arg_29_0.bpRewardStatus_ = 2
 end
 
-function var_0_0.SetNewbieOpenTime(arg_30_0, arg_30_1)
-	arg_30_0.trigger_time = arg_30_1
+function var_0_0.GetRechargeStatus(arg_30_0)
+	return arg_30_0.rechargeStatus_
+end
+
+function var_0_0.GetNewbieOpenTime(arg_31_0)
+	return arg_31_0.trigger_time
+end
+
+function var_0_0.SetNewbieOpenTime(arg_32_0, arg_32_1)
+	arg_32_0.trigger_time = arg_32_1
 end
 
 return var_0_0

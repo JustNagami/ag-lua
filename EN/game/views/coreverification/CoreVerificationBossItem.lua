@@ -82,6 +82,12 @@ function var_0_0.RefreshUI(arg_7_0)
 	else
 		SetActive(arg_7_0.recommend2Img_.gameObject, false)
 	end
+
+	if table.isEmpty(var_7_4) then
+		SetActive(arg_7_0.recommend1Img_.gameObject, true)
+
+		arg_7_0.recommend1Img_.sprite = HeroTools.GetSkillAttributeIcon()
+	end
 end
 
 function var_0_0.Dispose(arg_8_0)

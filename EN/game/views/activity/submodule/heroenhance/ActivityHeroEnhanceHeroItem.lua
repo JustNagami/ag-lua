@@ -71,7 +71,10 @@ function var_0_0.RefreshUI(arg_9_0)
 
 			arg_9_0.lockText_.text = string.format(var_9_8, var_9_6.startDay - var_9_6.curDay)
 		else
-			arg_9_0.lockText_.text = GetTips("ACTIVITY_HERO_ENHANCE_HERO_UNLOCK_CONDITION_2")
+			local var_9_9 = ActivityHeroEnhanceTools.GetTutorialCfg(var_9_1)
+			local var_9_10 = HeroTools.GetHeroFullName(var_9_9.hero_id)
+
+			arg_9_0.lockText_.text = GetTipsF("ACTIVITY_HERO_ENHANCE_HERO_UNLOCK_CONDITION_2", var_9_10)
 		end
 	end
 end

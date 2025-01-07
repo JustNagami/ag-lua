@@ -85,7 +85,7 @@ function var_0_0.UpdateView(arg_9_0)
 		var_9_8.id = var_9_7.id
 		var_9_8.number = var_9_7.num
 		var_9_8.timeValid = iter_9_1.timeValid or 0
-		var_9_8.completedFlag = arg_9_0.taskComplete_
+		var_9_8.grayFlag = var_9_5
 		var_9_8.clickFun = handler(arg_9_0, arg_9_0.OnClickCommonItem)
 
 		arg_9_0.rewardItems_[iter_9_0]:SetData(var_9_8)
@@ -94,6 +94,9 @@ function var_0_0.UpdateView(arg_9_0)
 	for iter_9_2 = #var_9_0.reward + 1, #arg_9_0.rewardItems_ do
 		arg_9_0.rewardItems_[iter_9_2]:SetData(nil)
 	end
+
+	SetActive(arg_9_0.progressText_.gameObject, arg_9_0.type_ ~= 5)
+	SetActive(arg_9_0.allBtnController_.gameObject, arg_9_0.type_ ~= 5)
 end
 
 function var_0_0.OnClickCommonItem(arg_11_0, arg_11_1)

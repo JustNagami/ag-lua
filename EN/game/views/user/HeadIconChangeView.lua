@@ -29,6 +29,7 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.btnCon_3 = arg_4_0.btn_3.transform:GetComponent("ControllerExCollection"):GetController("status")
 	arg_4_0.btnCon_4 = arg_4_0.btn_4.transform:GetComponent("ControllerExCollection"):GetController("status")
 	arg_4_0.scrollHelper_ = LuaList.New(handler(arg_4_0, arg_4_0.IndexItem), arg_4_0.listGo_, UserHeadItem)
+	arg_4_0.portraitModule = CommonHeadPortrait.New(arg_4_0.portraitObj_)
 end
 
 function var_0_0.IndexItem(arg_5_0, arg_5_1, arg_5_2)
@@ -116,11 +117,11 @@ function var_0_0.OnEnter(arg_14_0)
 		arg_14_0.params_.isEnter = nil
 	end
 
-	arg_14_0:ChangeBtnController(1)
-	arg_14_0:RefreshUI()
-
 	arg_14_0.index_ = arg_14_0.index_ or 1
 	arg_14_0.curPage_ = arg_14_0.page_[arg_14_0.index_]
+
+	arg_14_0:ChangeBtnController(arg_14_0.index_)
+	arg_14_0:RefreshUI()
 
 	if arg_14_0.curPage_ == "portrait" then
 		arg_14_0:SetCurID(arg_14_0.portraitID_)
@@ -163,15 +164,11 @@ function var_0_0.SetCurID(arg_18_0, arg_18_1)
 	local var_18_0 = arg_18_0:IsUsed(arg_18_0.curID_)
 
 	if arg_18_0.curPage_ ~= "chatBubble" then
-		arg_18_0.icon_.sprite = ItemTools.getItemSprite(arg_18_0.curPage_ == "portrait" and arg_18_0.curID_ or arg_18_0.portraitID_)
-
-		arg_18_0.icon_:SetNativeSize()
+		arg_18_0.portraitModule:RenderHead(arg_18_0.curPage_ == "portrait" and arg_18_0.curID_ or arg_18_0.portraitID_)
 
 		local var_18_1 = arg_18_0.curPage_ == "frame" and arg_18_0.curID_ or arg_18_0.frameID_
 
-		arg_18_0.frameIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_18_1)
-
-		arg_18_0.frameIcon_:SetNativeSize()
+		arg_18_0.portraitModule:RenderFrame(var_18_1)
 
 		arg_18_0.cardBgIcon_.sprite = ItemTools.getItemSprite(arg_18_0.curPage_ == "cardBg" and arg_18_0.curID_ or arg_18_0.cardBgID_)
 
@@ -375,6 +372,7 @@ end
 
 function var_0_0.Dispose(arg_34_0)
 	arg_34_0:RemoveAllListeners()
+	arg_34_0.portraitModule:Dispose()
 
 	for iter_34_0, iter_34_1 in pairs(arg_34_0.scrollHelper_:GetItemList()) do
 		iter_34_1:Dispose()

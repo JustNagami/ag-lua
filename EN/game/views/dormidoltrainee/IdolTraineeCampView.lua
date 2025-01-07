@@ -20,6 +20,11 @@ function var_0_0.InitUI(arg_4_0)
 end
 
 function var_0_0.AddUIListener(arg_5_0)
+	arg_5_0:AddBtnListenerScale(arg_5_0.navigationBtn_, nil, function()
+		JumpTools.OpenPageByJump("dormNavigation", {
+			isMain = false
+		})
+	end)
 	arg_5_0:AddBtnListener(arg_5_0.taskBtn_, nil, function()
 		JumpTools.OpenPageByJump("/idolTraineeQuest")
 	end)
@@ -29,6 +34,7 @@ function var_0_0.AddUIListener(arg_5_0)
 	arg_5_0:AddBtnListener(arg_5_0.heroPropBtn_, nil, function()
 		JumpTools.OpenPageByJump("/idolTraineeTrain")
 	end)
+	arg_5_0:AddBtnListener(arg_5_0.danceDIYBtn_, nil, DIYBridge.EnterDIY)
 	arg_5_0:AddBtnListener(arg_5_0.pvpBtn_, nil, function()
 		JumpTools.OpenPageByJump("/idolTraineeEnterBattleView", {
 			pvpBattle = true
@@ -53,70 +59,75 @@ local var_0_1 = {
 	"CamShootAtPos5"
 }
 
-function var_0_0.RestoreVCam(arg_13_0)
-	for iter_13_0, iter_13_1 in ipairs(var_0_1) do
-		IdolTraineeCampBridge.SetVCamActive(iter_13_1, false)
+function var_0_0.RestoreVCam(arg_14_0)
+	for iter_14_0, iter_14_1 in ipairs(var_0_1) do
+		IdolTraineeCampBridge.SetVCamActive(iter_14_1, false)
 	end
 
 	if IdolTraineeCampBridge.cinemachineBrain.IsBlending then
-		arg_13_0:StartWaitCamBlend()
+		arg_14_0:StartWaitCamBlend()
 	end
 end
 
-function var_0_0.RegisterEvents(arg_14_0)
-	arg_14_0:RegistEventListener(DORM_CLICK_ENTITY, function(arg_15_0)
+function var_0_0.RegisterEvents(arg_15_0)
+	arg_15_0:RegistEventListener(DORM_CLICK_ENTITY, function(arg_16_0)
 		manager.windowBar:HideBar()
 
-		local var_15_0 = IdolTraineeCampBridge.GetPosByCharacter(arg_15_0)
+		local var_16_0 = IdolTraineeCampBridge.GetPosByCharacter(arg_16_0)
 
-		IdolTraineeCampBridge.SetVCamActive(var_0_1[var_15_0], true)
-		arg_14_0:StartWaitCamBlend(function()
+		IdolTraineeCampBridge.SetVCamActive(var_0_1[var_16_0], true)
+		arg_15_0:StartWaitCamBlend(function()
 			JumpTools.OpenPageByJump("/heroInteractView", {
-				heroEID = arg_15_0,
-				camPos = var_0_1[var_15_0]
+				heroEID = arg_16_0,
+				camPos = var_0_1[var_16_0]
 			})
 		end)
 		DormTools:PlayDormAudioEffect(DormConst.DORM_AUDIO_EFFECT.InteractCam)
 	end)
 end
 
-function var_0_0.StartWaitCamBlend(arg_17_0, arg_17_1)
-	arg_17_0:StopWaitCamBlend()
-	SetActive(arg_17_0.gameObject_, false)
+function var_0_0.StartWaitCamBlend(arg_18_0, arg_18_1)
+	arg_18_0:StopWaitCamBlend()
+	SetActive(arg_18_0.gameObject_, false)
 
-	arg_17_0.timer = Timer.New(function()
+	arg_18_0.timer = Timer.New(function()
 		if not IdolTraineeCampBridge.cinemachineBrain.IsBlending then
-			arg_17_0:StopWaitCamBlend()
-			SetActive(arg_17_0.gameObject_, true)
+			arg_18_0:StopWaitCamBlend()
+			SetActive(arg_18_0.gameObject_, true)
 
-			if arg_17_1 then
-				arg_17_1()
+			if arg_18_1 then
+				arg_18_1()
 			end
 		end
 	end, 0.34, -1)
 
-	arg_17_0.timer:Start()
+	arg_18_0.timer:Start()
 end
 
-function var_0_0.StopWaitCamBlend(arg_19_0)
-	if arg_19_0.timer then
-		arg_19_0.timer:Stop()
+function var_0_0.StopWaitCamBlend(arg_20_0)
+	if arg_20_0.timer then
+		arg_20_0.timer:Stop()
 
-		arg_19_0.timer = nil
+		arg_20_0.timer = nil
 	end
 end
 
-function var_0_0.OnEnter(arg_20_0)
-	arg_20_0:RefreshBar()
-	arg_20_0:RegisterEvents()
-	arg_20_0.quickView:OnEnter()
-	arg_20_0.quickView:ShowView(false)
-	arg_20_0:RestoreVCam()
-	manager.redPoint:bindUIandKey(arg_20_0.taskBtn_.transform, RedPointConst.IDOL_TRAINEE_DAY_AND_WEEK_TASK)
+function var_0_0.OnEnter(arg_21_0)
+	SetActive(arg_21_0.danceDIYBtn_.gameObject, false)
+	arg_21_0:RegisterEvents()
+	arg_21_0.quickView:OnEnter()
+	arg_21_0.quickView:ShowView(false)
+	arg_21_0:RestoreVCam()
+	manager.redPoint:bindUIandKey(arg_21_0.taskBtn_.transform, RedPointConst.IDOL_TRAINEE_DAY_AND_WEEK_TASK)
+	manager.redPoint:bindUIandKey(arg_21_0.navigationBtn_.transform, RedPointConst.DORM_ILLU)
 	BackHomeCricketBattleData:InvokeDanceBackCB()
 end
 
-function var_0_0.RefreshBar(arg_21_0)
+function var_0_0.OnTop(arg_22_0)
+	arg_22_0:RefreshBar()
+end
+
+function var_0_0.RefreshBar(arg_23_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR,
 		HOME_BAR,
@@ -125,37 +136,35 @@ function var_0_0.RefreshBar(arg_21_0)
 	manager.windowBar:RegistBackCallBack(function()
 		JumpTools.OpenPageByJump("/dormChooseRoomView")
 	end)
-	manager.windowBar:RegistHomeCallBack(function()
-		BackHomeTools:BackHomeGotoMain()
-	end)
 
-	local var_21_0 = GameSetting.idol_dance_info_describe.value
+	local var_23_0 = GameSetting.idol_dance_info_describe.value
 
-	if #var_21_0 > 0 then
+	if #var_23_0 > 0 then
 		manager.windowBar:SetGameHelpKey({
 			view = "/gameHelpPro",
 			type = "jump",
 			params = {
 				hideHomeBtn = 1,
 				isPrefab = true,
-				pages = var_21_0
+				pages = var_23_0
 			}
 		})
 	end
 end
 
-function var_0_0.OnExit(arg_24_0)
+function var_0_0.OnExit(arg_25_0)
 	manager.windowBar:HideBar()
-	arg_24_0:RemoveAllEventListener()
-	arg_24_0:StopWaitCamBlend()
-	arg_24_0.quickView:OnExit()
-	manager.redPoint:unbindUIandKey(arg_24_0.taskBtn_.transform, RedPointConst.IDOL_TRAINEE_DAY_AND_WEEK_TASK)
+	arg_25_0:RemoveAllEventListener()
+	arg_25_0:StopWaitCamBlend()
+	arg_25_0.quickView:OnExit()
+	manager.redPoint:unbindUIandKey(arg_25_0.taskBtn_.transform, RedPointConst.IDOL_TRAINEE_DAY_AND_WEEK_TASK)
+	manager.redPoint:unbindUIandKey(arg_25_0.navigationBtn_.transform, RedPointConst.DORM_ILLU)
 end
 
-function var_0_0.Dispose(arg_25_0)
-	arg_25_0.quickView:Dispose()
-	arg_25_0:StopWaitCamBlend()
-	var_0_0.super.Dispose(arg_25_0)
+function var_0_0.Dispose(arg_26_0)
+	arg_26_0.quickView:Dispose()
+	arg_26_0:StopWaitCamBlend()
+	var_0_0.super.Dispose(arg_26_0)
 end
 
 return var_0_0

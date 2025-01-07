@@ -24,7 +24,7 @@ function var_0_0.InitUI(arg_5_0)
 	arg_5_0:BindCfgUI()
 
 	arg_5_0.okBtnController_ = arg_5_0.controllerEx_:GetController("btn")
-	arg_5_0.scrollHelper = LuaList.New(handler(arg_5_0, arg_5_0.indexItem), arg_5_0.uiList_, CommonItemView)
+	arg_5_0.scrollHelper = LuaList.New(handler(arg_5_0, arg_5_0.indexItem), arg_5_0.uiList_, CommonRecommendItemView)
 end
 
 function var_0_0.indexItem(arg_6_0, arg_6_1, arg_6_2)
@@ -41,6 +41,7 @@ function var_0_0.indexItem(arg_6_0, arg_6_1, arg_6_2)
 	end
 
 	arg_6_2:SetData(var_6_2)
+	arg_6_2:RefreshRecommend()
 end
 
 function var_0_0.AddUIListener(arg_8_0)
@@ -144,7 +145,7 @@ function var_0_0.RefreshSelect(arg_15_0)
 	local var_15_0 = arg_15_0.dataList_[arg_15_0.selectInex_]
 
 	if var_15_0 then
-		arg_15_0.tipText_.text = string.format(GetTips("TIP_SELECT"), ItemTools.getItemName(var_15_0[1]))
+		arg_15_0.tipText_.text = arg_15_0:GetTipsItemName(var_15_0[1])
 
 		arg_15_0.okBtnController_:SetSelectedState("state1")
 	else
@@ -154,28 +155,49 @@ function var_0_0.RefreshSelect(arg_15_0)
 	end
 end
 
-function var_0_0.OnTryToUseItem(arg_16_0, arg_16_1, arg_16_2)
-	if isSuccess(arg_16_1.result) then
-		local var_16_0 = arg_16_0.dataList_[arg_16_0.selectInex_]
+function var_0_0.GetTipsItemName(arg_16_0, arg_16_1)
+	showContent = string.format(GetTips("TIP_SELECT"), ItemTools.getItemName(arg_16_1))
+
+	local var_16_0 = ItemCfg[arg_16_1]
+
+	if var_16_0 and var_16_0.type == ItemConst.ITEM_TYPE.WEAPON_SERVANT then
+		local var_16_1 = WeaponServantCfg[arg_16_1].effect[1]
+		local var_16_2 = 0
+
+		if var_16_1 > 0 then
+			var_16_2 = WeaponEffectCfg[var_16_1].spec_char[1]
+		end
+
+		if var_16_2 ~= nil and var_16_2 > 0 then
+			showContent = string.format("%s,%s", showContent, string.format(GetTips("TIP_SELECT_RECOMEND"), HeroTools.GetHeroFullName(var_16_2)))
+		end
+	end
+
+	return showContent
+end
+
+function var_0_0.OnTryToUseItem(arg_17_0, arg_17_1, arg_17_2)
+	if isSuccess(arg_17_1.result) then
+		local var_17_0 = arg_17_0.dataList_[arg_17_0.selectInex_]
 
 		JumpTools:Back()
-		getReward(arg_16_1.drop_list, {
+		getReward(arg_17_1.drop_list, {
 			ItemConst.ITEM_TYPE.HERO,
 			ItemConst.ITEM_TYPE.HERO_SKIN
 		})
 	else
-		ShowTips(arg_16_1.result)
+		ShowTips(arg_17_1.result)
 	end
 end
 
-function var_0_0.OnExit(arg_17_0)
-	arg_17_0.selectInex_ = 0
-	arg_17_0.lastSelectItem_ = nil
+function var_0_0.OnExit(arg_18_0)
+	arg_18_0.selectInex_ = 0
+	arg_18_0.lastSelectItem_ = nil
 end
 
-function var_0_0.Dispose(arg_18_0)
-	arg_18_0.scrollHelper:Dispose()
-	var_0_0.super.Dispose(arg_18_0)
+function var_0_0.Dispose(arg_19_0)
+	arg_19_0.scrollHelper:Dispose()
+	var_0_0.super.Dispose(arg_19_0)
 end
 
 return var_0_0

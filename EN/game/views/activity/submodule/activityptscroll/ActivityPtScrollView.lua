@@ -232,7 +232,7 @@ function var_0_0.RefreshTime(arg_19_0)
 		end
 
 		if GameSetting.time_remaining_show.value[1] * 86400 > var_19_0 - var_19_1 then
-			arg_19_0.shopTimeLable_.text = manager.time:GetLostTimeStrWith2Unit(var_19_0)
+			arg_19_0.shopTimeLable_.text = manager.time:GetLostTimeStr2(var_19_0, nil, false)
 
 			SetActive(arg_19_0.shopTimeGo_, true)
 		else
@@ -256,7 +256,7 @@ function var_0_0.RefreshTime(arg_19_0)
 			end
 
 			if GameSetting.time_remaining_show.value[1] * 86400 > var_19_0 - var_19_1 then
-				arg_19_0.shopTimeLable_.text = manager.time:GetLostTimeStrWith2Unit(var_19_0)
+				arg_19_0.shopTimeLable_.text = manager.time:GetLostTimeStr2(var_19_0, nil, false)
 
 				SetActive(arg_19_0.shopTimeGo_, true)
 			else
@@ -299,7 +299,12 @@ function var_0_0.RefreshLevel(arg_24_0)
 	arg_24_0.selectLevel_ = 0
 
 	if arg_24_0:IsOpenSectionView() and var_24_0 then
-		arg_24_0:EnterLevel(var_24_0.type, var_24_0.index)
+		local var_24_1 = var_24_0.type
+		local var_24_2 = var_24_0.index
+
+		arg_24_0.selectLevel_ = var_24_2
+
+		ActivityPtScrollData:SetLastStage(arg_24_0.mainActivityID_, var_24_1, var_24_2)
 		arg_24_0.indexCon_:SetSelectedState(var_24_0.type .. "_" .. var_24_0.index)
 	else
 		arg_24_0.indexCon_:SetSelectedState(0)
@@ -413,12 +418,12 @@ function var_0_0.RefreshShop(arg_33_0)
 end
 
 function var_0_0.BindRedPointUI(arg_34_0)
-	manager.redPoint:bindUIandKey(arg_34_0.upRect_, RedPointConst.ACTIVITY_PT_SCROLL_UP_SELECT .. "_" .. arg_34_0.mainActivityID_)
+	manager.redPoint:bindUIandKey(arg_34_0.affixBtn_.transform, RedPointConst.ACTIVITY_PT_SCROLL_UP_SELECT .. "_" .. arg_34_0.mainActivityID_)
 	manager.redPoint:bindUIandKey(arg_34_0.tgl_2.transform, RedPointConst.ACTIVITY_PT_SCROLL_UP_SELECT .. "_" .. arg_34_0.mainActivityID_)
 end
 
 function var_0_0.UnbindRedPointUI(arg_35_0)
-	manager.redPoint:unbindUIandKey(arg_35_0.upRect_, RedPointConst.ACTIVITY_PT_SCROLL_UP_SELECT .. "_" .. arg_35_0.mainActivityID_)
+	manager.redPoint:unbindUIandKey(arg_35_0.affixBtn_.transform, RedPointConst.ACTIVITY_PT_SCROLL_UP_SELECT .. "_" .. arg_35_0.mainActivityID_)
 	manager.redPoint:unbindUIandKey(arg_35_0.tgl_2.transform, RedPointConst.ACTIVITY_PT_SCROLL_UP_SELECT .. "_" .. arg_35_0.mainActivityID_)
 end
 

@@ -326,17 +326,20 @@ function var_0_0.ApplyLockEquipSuccess(arg_19_0, arg_19_1, arg_19_2)
 	var_0_1[arg_19_1].is_lock = arg_19_2
 end
 
-function var_0_0.ApplyUpgradeEquipSuccess(arg_20_0, arg_20_1)
+function var_0_0.ApplyUpgradeEquipSuccess(arg_20_0, arg_20_1, arg_20_2)
+	arg_20_2 = arg_20_2 or 1
+
 	local var_20_0 = arg_20_1
 	local var_20_1 = var_0_1[var_20_0].prefab_id
 	local var_20_2 = EquipCfg[var_20_1]
-	local var_20_3 = var_0_1[var_20_0].now_break_level + 1
+	local var_20_3 = var_0_1[var_20_0].now_break_level + arg_20_2
 	local var_20_4 = var_20_2.max_level[var_20_3]
 
-	var_0_1[var_20_0].now_break_level = var_0_1[var_20_0].now_break_level + 1
-	var_0_1[var_20_0].exp = EquipExpCfg[var_20_4]["exp_sum_" .. var_20_2.starlevel]
+	var_0_1[var_20_0].now_break_level = var_0_1[var_20_0].now_break_level + arg_20_2
 
 	arg_20_0:ResetEquipSort()
+
+	return var_0_1[var_20_0].exp
 end
 
 function var_0_0.RemoveEquip(arg_21_0, arg_21_1)
@@ -404,249 +407,261 @@ function var_0_0.ConfirmEnchant(arg_24_0, arg_24_1, arg_24_2, arg_24_3, arg_24_4
 	end
 end
 
-function var_0_0.GiveUpAllEnchant(arg_25_0, arg_25_1, arg_25_2)
+function var_0_0.DirectionalEnchant(arg_25_0, arg_25_1, arg_25_2, arg_25_3)
 	local var_25_0 = var_0_1[arg_25_1]
 
-	if var_25_0 and var_25_0.enchant_preview[arg_25_2] then
-		var_25_0.enchant_preview[arg_25_2] = {}
+	if var_25_0 then
+		local var_25_1 = var_25_0.enchant[arg_25_2]
+
+		for iter_25_0 = 1, 2 do
+			var_25_1[iter_25_0] = arg_25_3[iter_25_0]
+		end
 	end
 end
 
-function var_0_0.SetPreRace(arg_26_0, arg_26_1, arg_26_2)
-	if var_0_1[arg_26_1] then
-		var_0_1[arg_26_1].race_preview = arg_26_2
+function var_0_0.GiveUpAllEnchant(arg_26_0, arg_26_1, arg_26_2)
+	local var_26_0 = var_0_1[arg_26_1]
+
+	if var_26_0 and var_26_0.enchant_preview[arg_26_2] then
+		var_26_0.enchant_preview[arg_26_2] = {}
 	end
 end
 
-function var_0_0.ConfirmRace(arg_27_0, arg_27_1, arg_27_2)
+function var_0_0.SetPreRace(arg_27_0, arg_27_1, arg_27_2)
 	if var_0_1[arg_27_1] then
-		if arg_27_2 then
-			var_0_1[arg_27_1].race = var_0_1[arg_27_1].race_preview
+		var_0_1[arg_27_1].race_preview = arg_27_2
+	end
+end
+
+function var_0_0.ConfirmRace(arg_28_0, arg_28_1, arg_28_2)
+	if var_0_1[arg_28_1] then
+		if arg_28_2 then
+			var_0_1[arg_28_1].race = var_0_1[arg_28_1].race_preview
 		end
 
-		var_0_1[arg_27_1].race_preview = 0
+		var_0_1[arg_28_1].race_preview = 0
 
-		arg_27_0:ResetEquipSort()
+		arg_28_0:ResetEquipSort()
 	end
 end
 
-function var_0_0.GetEquipList(arg_28_0)
+function var_0_0.GetEquipList(arg_29_0)
 	return var_0_1
 end
 
-function var_0_0.GetEquipData(arg_29_0, arg_29_1)
-	local var_29_0 = var_0_1[arg_29_1]
+function var_0_0.GetEquipData(arg_30_0, arg_30_1)
+	local var_30_0 = var_0_1[arg_30_1]
 
-	if var_29_0 then
-		return var_29_0
+	if var_30_0 then
+		return var_30_0
 	else
 		return nil
 	end
 end
 
-function var_0_0.GetEquipPrefabMap(arg_30_0, arg_30_1)
-	return var_0_6[arg_30_1]
+function var_0_0.GetEquipPrefabMap(arg_31_0, arg_31_1)
+	return var_0_6[arg_31_1]
 end
 
-function var_0_0.GetEquipBagFull(arg_31_0)
+function var_0_0.GetEquipBagFull(arg_32_0)
 	return var_0_3
 end
 
-function var_0_0.GetEquipListBySort(arg_32_0, arg_32_1, arg_32_2)
-	local var_32_0 = arg_32_1 .. arg_32_2
+function var_0_0.GetEquipListBySort(arg_33_0, arg_33_1, arg_33_2)
+	local var_33_0 = arg_33_1 .. arg_33_2
 
-	if var_0_4[var_32_0] then
-		return var_0_4[var_32_0]
+	if var_0_4[var_33_0] then
+		return var_0_4[var_33_0]
 	end
 
-	var_0_4[var_32_0] = EquipTools.EquipSort(var_0_1, arg_32_1, arg_32_2)
+	var_0_4[var_33_0] = EquipTools.EquipSort(var_0_1, arg_33_1, arg_33_2)
 
-	return var_0_4[var_32_0]
+	return var_0_4[var_33_0]
 end
 
-function var_0_0.GetEquipListComplex(arg_33_0, arg_33_1, arg_33_2, arg_33_3, arg_33_4, arg_33_5)
-	local var_33_0 = EquipTools.EquipSort(var_0_1, arg_33_1, arg_33_2)
-	local var_33_1 = type(arg_33_4) == "table"
-	local var_33_2 = type(arg_33_5) == "table"
+function var_0_0.GetEquipListComplex(arg_34_0, arg_34_1, arg_34_2, arg_34_3, arg_34_4, arg_34_5)
+	local var_34_0 = EquipTools.EquipSort(var_0_1, arg_34_1, arg_34_2)
+	local var_34_1 = type(arg_34_4) == "table"
+	local var_34_2 = type(arg_34_5) == "table"
 
-	arg_33_3 = arg_33_3 or 0
+	arg_34_3 = arg_34_3 or 0
 
-	if arg_33_4 == nil or var_33_1 and #arg_33_4 == 0 then
-		arg_33_4 = 0
+	if arg_34_4 == nil or var_34_1 and #arg_34_4 == 0 then
+		arg_34_4 = 0
 	end
 
-	if arg_33_5 == nil or var_33_2 and #arg_33_5 == 0 then
-		arg_33_5 = 0
+	if arg_34_5 == nil or var_34_2 and #arg_34_5 == 0 then
+		arg_34_5 = 0
 	end
 
-	local var_33_3 = {}
+	local var_34_3 = {}
 
-	for iter_33_0, iter_33_1 in ipairs(var_33_0) do
-		local var_33_4 = EquipCfg[iter_33_1.prefab_id]
+	for iter_34_0, iter_34_1 in ipairs(var_34_0) do
+		local var_34_4 = EquipCfg[iter_34_1.prefab_id]
 
-		if (arg_33_3 == 0 or var_33_4.pos == arg_33_3) and (arg_33_4 == 0 or var_33_4.suit == arg_33_4 or var_33_1 and table.indexof(arg_33_4, var_33_4.suit) or arg_33_4 == EquipConst.EX_EQUIP_SUIT_ID and var_33_4.suit >= EquipConst.EX_EQUIP_SUIT_ID) and (arg_33_5 == 0 or iter_33_1:ContainSkill(arg_33_5)) then
-			table.insert(var_33_3, iter_33_1)
+		if (arg_34_3 == 0 or var_34_4.pos == arg_34_3) and (arg_34_4 == 0 or var_34_4.suit == arg_34_4 or var_34_1 and table.indexof(arg_34_4, var_34_4.suit) or arg_34_4 == EquipConst.EX_EQUIP_SUIT_ID and var_34_4.suit >= EquipConst.EX_EQUIP_SUIT_ID) and (arg_34_5 == 0 or iter_34_1:ContainSkill(arg_34_5)) then
+			table.insert(var_34_3, iter_34_1)
 		end
 	end
 
-	return var_33_3
+	return var_34_3
 end
 
-function var_0_0.ResetEquipSort(arg_34_0)
+function var_0_0.ResetEquipSort(arg_35_0)
 	var_0_4 = {}
 end
 
-function var_0_0.GetEnchantMaterial(arg_35_0)
-	local var_35_0 = GameSetting.equip_enchant_cost and GameSetting.equip_enchant_cost.value or {}
-	local var_35_1 = {}
+function var_0_0.GetEnchantMaterial(arg_36_0)
+	local var_36_0 = GameSetting.equip_enchant_cost and GameSetting.equip_enchant_cost.value or {}
+	local var_36_1 = {}
 
-	for iter_35_0, iter_35_1 in pairs(var_35_0) do
-		local var_35_2 = EquipMaterialCfg[iter_35_1] or {}
-		local var_35_3 = var_35_2.item_list[1][2]
-		local var_35_4 = var_35_2.item_list[2][1]
-		local var_35_5 = var_35_2.item_list[2][2]
+	for iter_36_0, iter_36_1 in pairs(var_36_0) do
+		local var_36_2 = EquipMaterialCfg[iter_36_1] or {}
+		local var_36_3 = var_36_2.item_list[1][2]
+		local var_36_4 = var_36_2.item_list[2][1]
+		local var_36_5 = var_36_2.item_list[2][2]
 
-		table.insert(var_35_1, {
-			id = var_35_4,
-			number = var_35_5,
-			money = var_35_3
+		table.insert(var_36_1, {
+			id = var_36_4,
+			number = var_36_5,
+			money = var_36_3
 		})
 	end
 
-	return var_35_1
+	return var_36_1
 end
 
-function var_0_0.GetLockEnchantMaterial(arg_36_0)
-	local var_36_0 = GameSetting.equip_enchant_lock_cost and GameSetting.equip_enchant_lock_cost.value or {}
-	local var_36_1 = arg_36_0:GetEnchantMaterial()
-	local var_36_2 = clone(var_36_1)
+function var_0_0.GetLockEnchantMaterial(arg_37_0)
+	local var_37_0 = GameSetting.equip_enchant_lock_cost and GameSetting.equip_enchant_lock_cost.value or {}
+	local var_37_1 = arg_37_0:GetEnchantMaterial()
+	local var_37_2 = clone(var_37_1)
 
-	for iter_36_0, iter_36_1 in pairs(var_36_0) do
-		local var_36_3 = EquipMaterialCfg[iter_36_1] or {}
-		local var_36_4 = var_36_3.item_list[1][2]
-		local var_36_5 = var_36_3.item_list[2][1]
-		local var_36_6 = var_36_3.item_list[2][2]
+	for iter_37_0, iter_37_1 in pairs(var_37_0) do
+		local var_37_3 = EquipMaterialCfg[iter_37_1] or {}
+		local var_37_4 = var_37_3.item_list[1][2]
+		local var_37_5 = var_37_3.item_list[2][1]
+		local var_37_6 = var_37_3.item_list[2][2]
 
-		for iter_36_2, iter_36_3 in ipairs(var_36_2) do
-			if iter_36_3.id == var_36_5 then
-				var_36_2[iter_36_2].id = var_36_5
-				var_36_2[iter_36_2].number = var_36_6
-				var_36_2[iter_36_2].money = var_36_4
-				var_36_2[iter_36_2].lock = true
+		for iter_37_2, iter_37_3 in ipairs(var_37_2) do
+			if iter_37_3.id == var_37_5 then
+				var_37_2[iter_37_2].id = var_37_5
+				var_37_2[iter_37_2].number = var_37_6
+				var_37_2[iter_37_2].money = var_37_4
+				var_37_2[iter_37_2].lock = true
 			end
 		end
 	end
 
-	return var_36_2
+	return var_37_2
 end
 
-function var_0_0.GetRaceMaterial(arg_37_0, arg_37_1)
-	local var_37_0
+function var_0_0.GetRaceMaterial(arg_38_0, arg_38_1)
+	local var_38_0
 
-	if arg_37_1 == 1 then
-		var_37_0 = GameSetting.equip_reset_cost and GameSetting.equip_reset_cost.value or {}
+	if arg_38_1 == 1 then
+		var_38_0 = GameSetting.equip_reset_cost and GameSetting.equip_reset_cost.value or {}
 	else
-		var_37_0 = GameSetting.equip_hero_reset_cost and GameSetting.equip_hero_reset_cost.value or {}
+		var_38_0 = GameSetting.equip_hero_reset_cost and GameSetting.equip_hero_reset_cost.value or {}
 	end
 
-	local var_37_1 = EquipMaterialCfg[var_37_0[1] or 0]
-	local var_37_2 = 0
-	local var_37_3 = 0
-	local var_37_4 = 0
+	local var_38_1 = EquipMaterialCfg[var_38_0[1] or 0]
+	local var_38_2 = 0
+	local var_38_3 = 0
+	local var_38_4 = 0
 
-	for iter_37_0, iter_37_1 in pairs(var_37_1.item_list) do
-		if iter_37_1[1] == 2 then
-			var_37_4 = iter_37_1[2]
+	for iter_38_0, iter_38_1 in pairs(var_38_1.item_list) do
+		if iter_38_1[1] == 2 then
+			var_38_4 = iter_38_1[2]
 		else
-			var_37_2 = iter_37_1[1]
-			var_37_3 = iter_37_1[2]
+			var_38_2 = iter_38_1[1]
+			var_38_3 = iter_38_1[2]
 		end
 	end
 
 	return {
-		id = var_37_2,
-		number = var_37_3,
-		money = var_37_4
+		id = var_38_2,
+		number = var_38_3,
+		money = var_38_4
 	}
 end
 
-function var_0_0.GetEquipCnt(arg_38_0, arg_38_1)
-	return var_0_5[arg_38_1] or 0
+function var_0_0.GetEquipCnt(arg_39_0, arg_39_1)
+	return var_0_5[arg_39_1] or 0
 end
 
-function var_0_0.GetSelectEnchantMaterialIndex(arg_39_0)
+function var_0_0.GetSelectEnchantMaterialIndex(arg_40_0)
 	return var_0_7
 end
 
-function var_0_0.SetSelectEnchantMaterialIndex(arg_40_0, arg_40_1)
-	var_0_7 = arg_40_1
+function var_0_0.SetSelectEnchantMaterialIndex(arg_41_0, arg_41_1)
+	var_0_7 = arg_41_1
 end
 
-function var_0_0.SetEnchatLockIndex(arg_41_0, arg_41_1, arg_41_2, arg_41_3)
-	var_0_8 = arg_41_1
-	var_0_9 = arg_41_2
-	var_0_10 = arg_41_3
+function var_0_0.SetEnchatLockIndex(arg_42_0, arg_42_1, arg_42_2, arg_42_3)
+	var_0_8 = arg_42_1
+	var_0_9 = arg_42_2
+	var_0_10 = arg_42_3
 end
 
-function var_0_0.GetIsSetLockView(arg_42_0, arg_42_1, arg_42_2)
-	if var_0_8 == arg_42_1 and var_0_9 == arg_42_2 then
+function var_0_0.GetIsSetLockView(arg_43_0, arg_43_1, arg_43_2)
+	if var_0_8 == arg_43_1 and var_0_9 == arg_43_2 then
 		return var_0_10
 	end
 
 	return false
 end
 
-function var_0_0.GetRaceIndex(arg_43_0)
+function var_0_0.GetRaceIndex(arg_44_0)
 	return var_0_11
 end
 
-function var_0_0.SetRaceIndex(arg_44_0, arg_44_1)
-	var_0_11 = arg_44_1
+function var_0_0.SetRaceIndex(arg_45_0, arg_45_1)
+	var_0_11 = arg_45_1
 end
 
-function var_0_0.GetInheritCost(arg_45_0, arg_45_1)
-	local var_45_0 = GameSetting.equip_inherit_cost and GameSetting.equip_inherit_cost.value or {}
-	local var_45_1 = {}
-	local var_45_2 = 0
+function var_0_0.GetInheritCost(arg_46_0, arg_46_1)
+	local var_46_0 = GameSetting.equip_inherit_cost and GameSetting.equip_inherit_cost.value or {}
+	local var_46_1 = {}
+	local var_46_2 = 0
 
-	if EquipSuitCfg[arg_45_1] ~= nil then
-		local var_45_3 = EquipSuitCfg[arg_45_1].inherit_cost_type
-		local var_45_4
+	if EquipSuitCfg[arg_46_1] ~= nil then
+		local var_46_3 = EquipSuitCfg[arg_46_1].inherit_cost_type
+		local var_46_4
 
-		if var_45_3 == 1 then
-			var_45_4 = EquipMaterialCfg[var_45_0[1] or 0]
+		if var_46_3 == 1 then
+			var_46_4 = EquipMaterialCfg[var_46_0[1] or 0]
 		else
-			var_45_4 = EquipMaterialCfg[var_45_0[2] or 0]
+			var_46_4 = EquipMaterialCfg[var_46_0[2] or 0]
 		end
 
-		for iter_45_0, iter_45_1 in pairs(var_45_4.item_list) do
-			local var_45_5 = {}
+		for iter_46_0, iter_46_1 in pairs(var_46_4.item_list) do
+			local var_46_5 = {}
 
-			if iter_45_1[1] == 2 then
-				var_45_2 = iter_45_1[2]
+			if iter_46_1[1] == 2 then
+				var_46_2 = iter_46_1[2]
 			else
-				var_45_5.id = iter_45_1[1]
-				var_45_5.number = iter_45_1[2]
-				var_45_1[#var_45_1 + 1] = var_45_5
+				var_46_5.id = iter_46_1[1]
+				var_46_5.number = iter_46_1[2]
+				var_46_1[#var_46_1 + 1] = var_46_5
 			end
 		end
 	end
 
-	return var_45_1, var_45_2
+	return var_46_1, var_46_2
 end
 
-function var_0_0.InitAutoDecompose(arg_46_0, arg_46_1)
-	for iter_46_0, iter_46_1 in ipairs(arg_46_1.type_list) do
-		autoDecompose_[iter_46_1] = true
+function var_0_0.InitAutoDecompose(arg_47_0, arg_47_1)
+	for iter_47_0, iter_47_1 in ipairs(arg_47_1.type_list) do
+		autoDecompose_[iter_47_1] = true
 	end
 end
 
-function var_0_0.UpdateAutoDecompose(arg_47_0, arg_47_1, arg_47_2)
-	autoDecompose_[arg_47_1] = arg_47_2
+function var_0_0.UpdateAutoDecompose(arg_48_0, arg_48_1, arg_48_2)
+	autoDecompose_[arg_48_1] = arg_48_2
 end
 
-function var_0_0.GetAutoDecompose(arg_48_0, arg_48_1)
-	return autoDecompose_[arg_48_1] == true
+function var_0_0.GetAutoDecompose(arg_49_0, arg_49_1)
+	return autoDecompose_[arg_49_1] == true
 end
 
 return var_0_0

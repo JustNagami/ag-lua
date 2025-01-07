@@ -102,6 +102,7 @@ function var_0_0.UnlockHeroSuccess(arg_7_0, arg_7_1)
 	arg_7_0:GetHeroData(arg_7_1).unlock = 1
 
 	HeroTools.SetHeroNewTagRed(arg_7_1, "unlockHero", RedPointConst.HERO_ID .. arg_7_1, true)
+	DormRedPointTools:SetIlluNewTagRed(arg_7_1, "heroNew", RedPointConst.DORM_ILLU_HERO, true)
 	manager.notify:Invoke(HERO_DATA_MODIFY, arg_7_1)
 	manager.notify:Invoke(HERO_UNLOCK_SUCCESS, arg_7_1)
 end
@@ -579,7 +580,22 @@ function var_0_0.GetHeroStrategyRedPoint(arg_55_0, arg_55_1)
 	return getData("strategy", "strategy_" .. arg_55_1) ~= "1" and not var_55_1
 end
 
-function var_0_0.Init(arg_56_0)
+function var_0_0.GetRecommendEquipSkill(arg_56_0, arg_56_1, arg_56_2)
+	local var_56_0 = {
+		3,
+		2,
+		1
+	}
+	local var_56_1 = HeroCfg[arg_56_1].recommend_equip_skill
+
+	for iter_56_0 = 1, #var_56_1 do
+		if table.indexof(var_56_1[iter_56_0], arg_56_2) then
+			return var_56_0[iter_56_0]
+		end
+	end
+end
+
+function var_0_0.Init(arg_57_0)
 	_G.heroViewPageIndex_ = 1
 end
 

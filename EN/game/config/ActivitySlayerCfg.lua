@@ -501,6 +501,110 @@
 			"f2cf08a109d5e93662c36088abebed1d"
 		}
 	},
+	[291151] = {
+		name = "e9e4f396b4af7718d5952d59226e2530",
+		stage_id = 5200301,
+		activity_id = 291151,
+		icon = "",
+		buff_desc = {
+			"c7da8107d6e591ba04b43b0c219df054",
+			"0b73542ce2192c1465f785fc3b6aa01e",
+			"fdb16512f2b753ae499da5cdbf8a6ec1",
+			"175fd08538f9b79139c12f04caf87a6c",
+			"6293df7dc8506d8f12b40c6b08d58784"
+		}
+	},
+	[291152] = {
+		name = "173711e8f278c1df6b983a13416af477",
+		stage_id = 5200302,
+		activity_id = 291152,
+		icon = "",
+		buff_desc = {
+			"a9534854339fe101ca66410a8a79fe5c",
+			"b2063e6c98323189782645cf6b22d488",
+			"11b7d110aab9d14eedcd3c446a1e72a4",
+			"c708212abd4d9c7e13ca65d4c7d42903",
+			"cebf00c972194294727b194f87ec67d8"
+		}
+	},
+	[291153] = {
+		name = "1428fef36a152c30fd25a051a135d599",
+		stage_id = 5200303,
+		activity_id = 291153,
+		icon = "",
+		buff_desc = {
+			"1ecabebc098fc743d5bea2f65a36d491",
+			"4ee4b6dbac11a9611fa9169377629dad",
+			"1d6b2906358edb6ff4fb738139b07bd2",
+			"4252aae84ded0290a6a04cac818f2d24",
+			"05154fd5fd9d840fc0d0e3364a6368e8"
+		}
+	},
+	[291154] = {
+		name = "441e657e01bc01afd807791089b3cafd",
+		stage_id = 5200304,
+		activity_id = 291154,
+		icon = "",
+		buff_desc = {
+			"b3fa4fa87d22bdfb7de90fae0575ca2c",
+			"18784e4101f05dace736070006a28d64",
+			"47c062e6fff8ea17c368138752790719",
+			"acb491d9c6f648c3ecf46833669776ca",
+			"924f3f51cb03694d8a522062bc2a4819"
+		}
+	},
+	[291155] = {
+		name = "792e6937094c3e804d57d488bb40aaac",
+		stage_id = 5200305,
+		activity_id = 291155,
+		icon = "",
+		buff_desc = {
+			"610bef5ab5cb95492d5c2cccf2addd12",
+			"ae925b174746881062ef43069c844ffe",
+			"bb74189b11903372ad28cf1ade02b46f",
+			"409ba97115057bb36ec327d796da8ad8",
+			"aed20dcfe4997cb74fe95ec863ed5bb5"
+		}
+	},
+	[291156] = {
+		name = "5c3d9b8e88f38ab4ae0b8d7b35988fd4",
+		stage_id = 5200306,
+		activity_id = 291156,
+		icon = "",
+		buff_desc = {
+			"d842eeec4b1d2005f4568f4df4cc7ec5",
+			"4b7b90d091c502a9c33dd06923db1358",
+			"326f56c10d2caec0ec672f72be991ae1",
+			"41207c78cf1c9e1ade153c7ef11172c4",
+			"dd6dc201242b4ce9c947a579a1b45527"
+		}
+	},
+	[291157] = {
+		name = "07e7ce3725154e37e5dbd5edf0a62a65",
+		stage_id = 5200307,
+		activity_id = 291157,
+		icon = "",
+		buff_desc = {
+			"28e22ca882157934ee0bfd7ec948f44f",
+			"f36fe11e01cdae68a8192ca5e6d689a7",
+			"bedb72b84c633abcd65ba68bd282e9ff",
+			"8cb9d8b275b2d3babc349d31dce2a71d",
+			"0def16c82204f4b37a27a9340e39b403"
+		}
+	},
+	[291158] = {
+		name = "275631a5c94159472c5044263e827d0b",
+		stage_id = 5200308,
+		activity_id = 291158,
+		icon = "",
+		buff_desc = {
+			"4e9aaf9d273392a46daf3c62a19fbbf1",
+			"fa7b79e7f056126dcee416fde7fcc148",
+			"185151bf6e91d450abf6d4c62bc7e23f",
+			"66c333434a6aa97123518ae76400845a",
+			"bde22f6fa0b26af74549a70fa2f3c307"
+		}
+	},
 	all = {
 		61091,
 		61092,
@@ -539,6 +643,14 @@
 		191155,
 		191156,
 		191157,
-		191158
+		191158,
+		291151,
+		291152,
+		291153,
+		291154,
+		291155,
+		291156,
+		291157,
+		291158
 	}
 }

@@ -701,6 +701,222 @@
 			0
 		}
 	},
+	[5182001] = {
+		monster_level = 80,
+		name = "46c6d26e696ffa5d33a996ac769c9fc3",
+		ai_level = 3,
+		map = "5192001",
+		need_default_team = 1,
+		id = 5182001,
+		level = 30,
+		attribute_factor = {
+			700,
+			1000,
+			3500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5182002] = {
+		monster_level = 80,
+		name = "7b2ab6ced6643cf34b764b1906bcb822",
+		ai_level = 3,
+		map = "5192002",
+		need_default_team = 1,
+		id = 5182002,
+		level = 30,
+		attribute_factor = {
+			700,
+			1000,
+			3500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5182003] = {
+		monster_level = 80,
+		name = "4c970b2499804bafb1871bd387518da0",
+		ai_level = 3,
+		map = "5192003",
+		need_default_team = 1,
+		id = 5182003,
+		level = 30,
+		attribute_factor = {
+			700,
+			1000,
+			3500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5182004] = {
+		monster_level = 80,
+		name = "4b2310d866d56736ca78cdb44a78a659",
+		ai_level = 3,
+		map = "5192004",
+		need_default_team = 1,
+		id = 5182004,
+		level = 30,
+		attribute_factor = {
+			700,
+			1000,
+			3500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5182005] = {
+		monster_level = 80,
+		name = "25318e233fd649856dfe09184b7d99d6",
+		ai_level = 3,
+		map = "5192005",
+		need_default_team = 1,
+		id = 5182005,
+		level = 30,
+		attribute_factor = {
+			700,
+			1000,
+			3500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5182006] = {
+		monster_level = 80,
+		name = "107ed70b62f08e69c6a0328061c20435",
+		ai_level = 3,
+		map = "5192006",
+		need_default_team = 1,
+		id = 5182006,
+		level = 30,
+		attribute_factor = {
+			700,
+			1000,
+			3500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5182011] = {
+		monster_level = 80,
+		name = "066eac0889383d39f11777b653570a96",
+		ai_level = 3,
+		map = "5192011",
+		need_default_team = 1,
+		id = 5182011,
+		level = 30,
+		attribute_factor = {
+			800,
+			1000,
+			5500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5182012] = {
+		monster_level = 80,
+		name = "f3b251c3be675d12fcc00e9c2516e296",
+		ai_level = 3,
+		map = "5192012",
+		need_default_team = 1,
+		id = 5182012,
+		level = 30,
+		attribute_factor = {
+			800,
+			1000,
+			5500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5182013] = {
+		monster_level = 80,
+		name = "b64cda391f689810d5a8be44c0729f2d",
+		ai_level = 3,
+		map = "5192013",
+		need_default_team = 1,
+		id = 5182013,
+		level = 30,
+		attribute_factor = {
+			800,
+			1000,
+			5500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5182014] = {
+		monster_level = 80,
+		name = "b529bb0e7db0e1fd762e6260b3f836d2",
+		ai_level = 3,
+		map = "5192014",
+		need_default_team = 1,
+		id = 5182014,
+		level = 30,
+		attribute_factor = {
+			800,
+			1000,
+			5500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5182015] = {
+		monster_level = 80,
+		name = "f6b13377c2d8c2d17b2d1fb3e6d0b265",
+		ai_level = 3,
+		map = "5192015",
+		need_default_team = 1,
+		id = 5182015,
+		level = 30,
+		attribute_factor = {
+			800,
+			1000,
+			5500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5182016] = {
+		monster_level = 80,
+		name = "9c8f6b57c780a2fd304148b8a97ce83a",
+		ai_level = 3,
+		map = "5192016",
+		need_default_team = 1,
+		id = 5182016,
+		level = 30,
+		attribute_factor = {
+			800,
+			1000,
+			5500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
 	all = {
 		5020211,
 		5020221,
@@ -740,6 +956,18 @@
 		5150313,
 		5150314,
 		5150315,
-		5150316
+		5150316,
+		5182001,
+		5182002,
+		5182003,
+		5182004,
+		5182005,
+		5182006,
+		5182011,
+		5182012,
+		5182013,
+		5182014,
+		5182015,
+		5182016
 	}
 }

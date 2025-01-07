@@ -16,6 +16,8 @@ function var_0_0.OnGotoSettlement(arg_1_0, arg_1_1)
 
 		arg_1_0:GotoAbyssSuccess(arg_1_1.isHalfWay_, var_1_5, var_1_0, var_1_1, var_1_2, var_1_3)
 	elseif var_1_1:IsBoss() then
+		CheckBattleResultNeedAddHeroExp()
+
 		local var_1_6 = LuaExchangeHelper.GetBattleStatisticsData().dataForLua.recordDatas
 		local var_1_7
 		local var_1_8 = 0

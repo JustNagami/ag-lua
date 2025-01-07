@@ -21,7 +21,7 @@ function var_0_0.GotoNormalBossChallenge(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg
 				battleResult = arg_2_4
 			})
 		else
-			JumpTools.OpenPageByJump("/battlefailedBossChallenge", {
+			JumpTools.OpenPageByJump("/battlefailedBossChallengeStage", {
 				stageData = arg_2_2,
 				battleResult = arg_2_4
 			})
@@ -42,7 +42,7 @@ function var_0_0.GotoAdvanceBossChallenge(arg_4_0, arg_4_1, arg_4_2, arg_4_3, ar
 				battleResult = arg_4_4
 			})
 		else
-			JumpTools.OpenPageByJump("/battlefailedBossChallenge", {
+			JumpTools.OpenPageByJump("/battlefailedBossChallengeStage", {
 				stageData = arg_4_2,
 				battleResult = arg_4_4
 			})

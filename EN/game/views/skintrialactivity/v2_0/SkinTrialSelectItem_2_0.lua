@@ -5,16 +5,18 @@ function var_0_0.OnCtor(arg_1_0, arg_1_1)
 	arg_1_0.transform_ = arg_1_1.transform
 
 	arg_1_0:BindCfgUI()
+
+	arg_1_0.skinImage_.immediate = true
+
 	arg_1_0:AddListeners()
 end
 
 function var_0_0.Dispose(arg_2_0)
 	var_0_0.super.Dispose(arg_2_0)
 
-	local var_2_0 = ActivitySkinTrialCfg[arg_2_0.skinTrialID_]
-	local var_2_1 = string.format("%s_%s", RedPointConst.SKIN_TRIAL, arg_2_0.skinTrialID_)
+	local var_2_0 = string.format("%s_%s", RedPointConst.SKIN_TRIAL, arg_2_0.skinTrialID_)
 
-	manager.redPoint:unbindUIandKey(arg_2_0.transform_, var_2_1)
+	manager.redPoint:unbindUIandKey(arg_2_0.transform_, var_2_0)
 
 	arg_2_0.outOfDataHandler_ = nil
 end
@@ -39,10 +41,9 @@ function var_0_0.AddListeners(arg_3_0)
 end
 
 function var_0_0.SetSkinTrialID(arg_5_0, arg_5_1)
-	local var_5_0 = ActivitySkinTrialCfg[arg_5_1]
-	local var_5_1 = string.format("%s_%s", RedPointConst.SKIN_TRIAL, arg_5_1)
+	local var_5_0 = string.format("%s_%s", RedPointConst.SKIN_TRIAL, arg_5_1)
 
-	manager.redPoint:bindUIandKey(arg_5_0.transform_, var_5_1)
+	manager.redPoint:bindUIandKey(arg_5_0.transform_, var_5_0)
 
 	arg_5_0.skinTrialID_ = arg_5_1
 	arg_5_0.activityID_ = ActivitySkinTrialCfg[arg_5_0.skinTrialID_].activity_id
@@ -58,14 +59,9 @@ function var_0_0.RefreshUI(arg_6_0)
 	local var_6_1 = HeroStandardSystemCfg[var_6_0].skin_id
 	local var_6_2 = HeroStandardSystemCfg[var_6_0].hero_id
 
-	arg_6_0.heroNameText_.text = string.format("%s·%s", GetI18NText(HeroCfg[var_6_2].name), GetI18NText(HeroCfg[var_6_2].suffix))
-	arg_6_0.nameText_.text = string.format("- %s -", GetI18NText(SkinCfg[var_6_1].name))
-
-	local var_6_3 = getSpriteViaConfig("HeroIcon", SkinCfg[var_6_1].picture_id)
-
-	if var_6_3 ~= nil then
-		arg_6_0.skinImage_.sprite = var_6_3
-	end
+	arg_6_0.heroNameText_.text = HeroTools.GetHeroFullName(var_6_2)
+	arg_6_0.nameText_.text = SkinCfg[var_6_1].name
+	arg_6_0.skinImage_.spriteSync = getSpritePathViaConfig("HeroIcon", SkinCfg[var_6_1].picture_id)
 end
 
 function var_0_0.RefreshTime(arg_7_0)
@@ -78,7 +74,7 @@ function var_0_0.RefreshTime(arg_7_0)
 
 	SetActive(arg_7_0.gameObject_, true)
 
-	arg_7_0.textTime_.text = manager.time:GetLostTimeStrWith2Unit(arg_7_0.stopTime_)
+	arg_7_0.textTime_.text = manager.time:GetLostTimeStrWith2UnitWithPrefix(arg_7_0.stopTime_)
 end
 
 function var_0_0.SetOutOfDataHandler(arg_8_0, arg_8_1)

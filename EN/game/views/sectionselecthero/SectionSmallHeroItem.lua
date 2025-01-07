@@ -14,8 +14,9 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
-	arg_3_0.stateController_ = arg_3_0.controllerExCollection_:GetController("state")
 	arg_3_0.emptyController_ = arg_3_0.controllerExCollection_:GetController("empty")
+	arg_3_0.lockController_ = arg_3_0.controllerExCollection_:GetController("lock")
+	arg_3_0.validController_ = arg_3_0.controllerExCollection_:GetController("valid")
 end
 
 function var_0_0.SetData(arg_4_0, arg_4_1)
@@ -36,12 +37,16 @@ function var_0_0.RefreshUI(arg_5_0)
 	end
 end
 
-function var_0_0.RefreshState(arg_6_0, arg_6_1)
-	arg_6_0.stateController_:SetSelectedState(arg_6_1 == true and "on" or "off")
+function var_0_0.RefreshLock(arg_6_0, arg_6_1)
+	arg_6_0.lockController_:SetSelectedState(tostring(arg_6_1))
 end
 
-function var_0_0.Show(arg_7_0, arg_7_1)
-	SetActive(arg_7_0.gameObject_, arg_7_1)
+function var_0_0.RefreshValid(arg_7_0, arg_7_1)
+	arg_7_0.validController_:SetSelectedState(tostring(arg_7_1))
+end
+
+function var_0_0.Show(arg_8_0, arg_8_1)
+	SetActive(arg_8_0.gameObject_, arg_8_1)
 end
 
 return var_0_0

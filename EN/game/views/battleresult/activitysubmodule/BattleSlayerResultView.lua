@@ -1,17 +1,12 @@
-﻿local var_0_0 = import("game.views.battleResult.BattleResultBaseView")
-local var_0_1 = class("BattleResultBaseView", var_0_0)
+﻿local var_0_0 = import("game.views.battleResult.newBattleSettlement.NewBattleSettlementView")
+local var_0_1 = class("BattleSlayerResultView", var_0_0)
 
 function var_0_1.UIName(arg_1_0)
-	return "UI/BattleResult/BattleResultSlayerUI"
+	return "Widget/System/BattleResult/BattleSlayer/ShashwatWinUI"
 end
 
-function var_0_1.RefreshUI(arg_2_0)
-	arg_2_0:SetLevelTitle()
-	arg_2_0:RefreshMyExpS()
-	arg_2_0:RefreshHeroS()
-	arg_2_0:RefreshCommonUI()
+function var_0_1.ShowContent(arg_2_0)
 	arg_2_0:RefreshSummerUI()
-	arg_2_0:RefreshBattleTime()
 end
 
 function var_0_1.RefreshSummerUI(arg_3_0)

@@ -148,14 +148,31 @@ function var_0_0.GetData(arg_20_0)
 	return arg_20_0.tree_.data
 end
 
-function var_0_0.Dispose(arg_21_0)
-	arg_21_0:RemoveListeners()
+function var_0_0.SetGroupItemOn(arg_21_0, arg_21_1, arg_21_2)
+	local var_21_0 = arg_21_0.tree_:GetItemGameObjectById(arg_21_1, arg_21_2)
 
-	if arg_21_0.tree_ ~= nil then
-		arg_21_0.tree_ = nil
+	if var_21_0 == nil then
+		return
 	end
 
-	ReduxFactory.GetInstance():OnManagedObjDisposed(arg_21_0)
+	ControllerUtil.GetController(var_21_0.transform, "toggle"):SetSelectedState("on")
+end
+
+function var_0_0.RefreshSelectGroupItem(arg_22_0, arg_22_1, arg_22_2)
+	local var_22_0 = arg_22_1 - 1
+	local var_22_1 = arg_22_2 - 1
+
+	arg_22_0.tree_:NotifyItemSelect(var_22_0, var_22_1)
+end
+
+function var_0_0.Dispose(arg_23_0)
+	arg_23_0:RemoveListeners()
+
+	if arg_23_0.tree_ ~= nil then
+		arg_23_0.tree_ = nil
+	end
+
+	ReduxFactory.GetInstance():OnManagedObjDisposed(arg_23_0)
 end
 
 return var_0_0

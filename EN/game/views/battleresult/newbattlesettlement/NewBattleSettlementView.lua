@@ -260,6 +260,8 @@ function var_0_0.RenderMaskBg(arg_21_0)
 		SetActive(arg_21_0.commonMaskBg_.gameObject, true)
 		SetActive(arg_21_0.maskBg_.gameObject, false)
 	else
+		arg_21_0.maskBg_.texture = arg_21_0.hasSnapshot_
+
 		SetActive(arg_21_0.commonMaskBg_.gameObject, false)
 		SetActive(arg_21_0.maskBg_.gameObject, true)
 	end
@@ -508,6 +510,7 @@ function var_0_0.OnceMoreFunc(arg_48_0)
 		end
 	else
 		BattleInstance.OnceMoreBattle(arg_48_0.stageData)
+		LuaForCursor.SwitchCursor(false)
 	end
 end
 

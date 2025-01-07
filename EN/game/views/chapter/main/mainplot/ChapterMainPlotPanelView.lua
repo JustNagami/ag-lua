@@ -5,6 +5,9 @@ function var_0_0.Ctor(arg_1_0, arg_1_1)
 	arg_1_0.transform_ = arg_1_1.transform
 
 	arg_1_0:BindCfgUI()
+
+	arg_1_0.chapterImage_.immediate = true
+
 	arg_1_0:AddListeners()
 
 	arg_1_0.controller_ = ControllerUtil.GetController(arg_1_0.transform_, "early")
@@ -34,23 +37,18 @@ function var_0_0.RefreshUI(arg_7_0)
 	local var_7_0 = ChapterClientCfg[arg_7_0.showChapterClientID_]
 	local var_7_1 = SpritePathCfg.ChapterPaint.path .. var_7_0.chapter_paint_2
 
-	getSpriteWithoutAtlasAsync(var_7_1, function(arg_8_0)
-		if arg_7_0.chapterImage_ then
-			arg_7_0.chapterImage_.sprite = arg_8_0
-		end
-	end)
-
+	arg_7_0.chapterImage_.spriteAsync = var_7_1
 	arg_7_0.chapterNameText_.text = var_7_0.name
 	arg_7_0.chapterDescText_.text = var_7_0.desc
 
 	arg_7_0:RefreshActivityState()
 end
 
-function var_0_0.RefreshActivityState(arg_9_0)
-	if arg_9_0.activityID_ ~= 0 then
-		arg_9_0.controller_:SetSelectedState("yes")
+function var_0_0.RefreshActivityState(arg_8_0)
+	if arg_8_0.activityID_ ~= 0 then
+		arg_8_0.controller_:SetSelectedState("yes")
 	else
-		arg_9_0.controller_:SetSelectedState("no")
+		arg_8_0.controller_:SetSelectedState("no")
 	end
 end
 

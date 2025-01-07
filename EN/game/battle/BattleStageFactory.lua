@@ -132,6 +132,30 @@
 			var_1_0 = BattleSPHeroChallengeTemplate.New(arg_1_1, arg_1_2)
 		elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_REFORGE == arg_1_0 then
 			var_1_0 = BattleActivityReforgeTemplate.New(arg_1_1, arg_1_2)
+		elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_WHACK_MOLE == arg_1_0 then
+			var_1_0 = BattleWhackMoleTemplate.New(arg_1_1, arg_1_2)
+		elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_SUMMER_WATER == arg_1_0 then
+			var_1_0 = BattleActivityWaterGunnerTemplate.New(arg_1_1, arg_1_2)
+		elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_SWIMSUIT_BATTLE == arg_1_0 then
+			var_1_0 = BattleSwimsuitTemplate.New(arg_1_1, arg_1_2)
+		elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_RHYTHM_GAME == arg_1_0 then
+			var_1_0 = ActivityRhythmGameTemplate.New(arg_1_1, arg_1_2)
+		elseif BattleConst.STAGE_TYPE_NEW.CHESS_BOARD == arg_1_0 then
+			var_1_0 = BattleChessBoardTemplate.New(arg_1_1, arg_1_2)
+		elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_CATCH_DUCK == arg_1_0 then
+			var_1_0 = BattleCatchDuckTemplate.New(arg_1_1)
+		elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_MONSTER_COSPLAY == arg_1_0 then
+			var_1_0 = BattleMonsterCosplayTemplate.New(arg_1_1, arg_1_2)
+		elseif BattleConst.STAGE_TYPE_NEW.ADVANCE_MONSTER_TEST == arg_1_0 then
+			var_1_0 = BattleAdvanceMonsterTestTemplate.New(arg_1_1, arg_1_2)
+		elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_SPKALI_CHALLENGE == arg_1_0 then
+			var_1_0 = BattleKaliChallengeTemplate.New(arg_1_1, arg_1_2)
+		elseif BattleConst.STAGE_TYPE_NEW.CHALLENGE_ROGUE_TEAM == arg_1_0 then
+			var_1_0 = BattleChallengeRogueTeamTemplate.New(arg_1_1, arg_1_2)
+		elseif BattleConst.STAGE_TYPE_NEW.AREA_BATTLE == arg_1_0 then
+			var_1_0 = BattleAreaBattleTemplate.New(arg_1_1, arg_1_2)
+		elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_DODGE_BARRAGE == arg_1_0 then
+			var_1_0 = BattleDodgeBarrageTemplate.New(arg_1_1, arg_1_2)
 		end
 
 		var_1_0:SetReserveParams(arg_1_3)

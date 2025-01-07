@@ -55,15 +55,11 @@
 		id = "en",
 		language_list = {
 			"en",
-			"jp",
-			"de",
-			"fr"
+			"jp"
 		},
 		language_in_list = {
 			"English",
-			"日本語",
-			"Deutsch",
-			"Français"
+			"日本語"
 		},
 		voice_list = {
 			2,

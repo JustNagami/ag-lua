@@ -196,7 +196,7 @@ function GetHeroFinalAttr(arg_8_0, arg_8_1, arg_8_2, arg_8_3, arg_8_4)
 	if arg_8_3 and arg_8_3 ~= 0 then
 		local var_8_0 = HeroStandardSystemCfg[arg_8_3].hero_attrib
 
-		if type(var_8_0) == "table" then
+		if type(var_8_0) == "table" and not table.isEmpty(var_8_0) then
 			local var_8_1 = {}
 
 			for iter_8_0, iter_8_1 in pairs(var_8_0) do

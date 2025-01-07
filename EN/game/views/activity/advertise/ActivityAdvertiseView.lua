@@ -14,6 +14,12 @@ function var_0_0.Init(arg_3_0)
 end
 
 function var_0_0.OnEnter(arg_4_0)
+	if #ActivityAdvertiseTools.GetOpenActivityCfgIDList() <= 0 then
+		arg_4_0:Back()
+
+		return
+	end
+
 	arg_4_0:CreateItem()
 end
 
@@ -26,9 +32,11 @@ function var_0_0.CreateItem(arg_6_0)
 end
 
 function var_0_0.DestroyItem(arg_7_0)
-	arg_7_0.itemView_:Dispose()
+	if arg_7_0.itemView_ then
+		arg_7_0.itemView_:Dispose()
 
-	arg_7_0.itemView_ = nil
+		arg_7_0.itemView_ = nil
+	end
 end
 
 function var_0_0.Dispose(arg_8_0)

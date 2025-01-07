@@ -29,6 +29,13 @@ end
 
 function var_0_0.OnEnter(arg_7_0)
 	manager.ui:SetMainCamera("homePreview")
+
+	local var_7_0 = HomeSceneSettingData:GetPreviewScene()
+
+	if HomeSceneSettingCfg[var_7_0].limit_display == 0 then
+		manager.posterGirl:SetViewTag(PosterGirlConst.ViewTag.preview, SkinSceneActionCfg.get_id_list_by_special_scene_id[var_7_0][1])
+	end
+
 	manager.loadScene:SetPreviewHomeSceneSoundEffect()
 	arg_7_0:RefreshUI()
 	arg_7_0:PlayBgm()
@@ -61,6 +68,12 @@ function var_0_0.OnTop(arg_10_0)
 end
 
 function var_0_0.OnExit(arg_11_0)
+	local var_11_0 = HomeSceneSettingData:GetPreviewScene()
+
+	if HomeSceneSettingCfg[var_11_0].limit_display == 0 then
+		manager.posterGirl:SetViewTag(PosterGirlConst.ViewTag.null)
+	end
+
 	manager.loadScene:StopSceneSoundEffect()
 	manager.windowBar:HideBar()
 end

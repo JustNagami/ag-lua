@@ -128,7 +128,7 @@ function var_0_0.RefreshUI(arg_16_0)
 end
 
 function var_0_0.CheckRewardPreview(arg_17_0)
-	if not GuideData:IsFinish(13) then
+	if not GuideData:IsFinish(1301) then
 		return
 	end
 

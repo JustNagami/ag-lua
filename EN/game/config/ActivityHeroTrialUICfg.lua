@@ -35,6 +35,14 @@
 		activity_theme = 27,
 		main_ui_path = "Widget/Version/NorseUI_3_2/NorseUI_3_2_HeroTrialUI/NorseUI_3_2_HeroTrialUI"
 	},
+	[28] = {
+		activity_theme = 28,
+		main_ui_path = "Widget/Version/SummerUI_3_3/SummerUI_3_3_HeroTrialUI/SummerUI_3_3_HeroTrialUI"
+	},
+	[29] = {
+		activity_theme = 29,
+		main_ui_path = "Widget/System/Activity_Resident/Activity_HeroTrialUI/Activity_HeroTrialUI"
+	},
 	all = {
 		14,
 		17,
@@ -44,6 +52,8 @@
 		21,
 		23,
 		24,
-		27
+		27,
+		28,
+		29
 	}
 }

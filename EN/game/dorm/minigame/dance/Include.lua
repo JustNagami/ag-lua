@@ -2,3 +2,4 @@
 IdolTraineeCampBridge = import(".IdolTraineeCampBridge")
 DanceGameTaskRunner = import(".DanceGameTaskRunner")
 DanceGame = import(".DanceGame")
+DIYBridge = import(".DIYBridge")

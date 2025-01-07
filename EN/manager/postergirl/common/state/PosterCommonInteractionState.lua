@@ -1,4 +1,4 @@
-﻿local var_0_0 = class("PosterDlcInteractionState", PosterCommonAnimatorState)
+﻿local var_0_0 = class("PosterCommonInteractionState", PosterCommonTimelineState)
 
 function var_0_0.Ctor(arg_1_0, arg_1_1, arg_1_2)
 	var_0_0.super.Ctor(arg_1_0, arg_1_1, arg_1_2)
@@ -15,7 +15,7 @@ function var_0_0.CheckInsteraction(arg_3_0)
 
 	local var_3_0 = arg_3_0.actor:GetSkinId()
 	local var_3_1 = SkinCfg[var_3_0].hero
-	local var_3_2 = HeroTools:GetUnlockInteractionCfg(var_3_1)
+	local var_3_2 = arg_3_0.actor:GetInteractionCfg()
 	local var_3_3 = var_3_2[arg_3_0.interactionKey]
 	local var_3_4 = var_3_2[arg_3_0.interactionKey .. "_talk"]
 	local var_3_5 = var_3_2[arg_3_0.interactionKey .. "_delay"]
@@ -42,6 +42,8 @@ function var_0_0.CheckInsteraction(arg_3_0)
 	end
 
 	if var_3_7 then
+		arg_3_0.talking_ = var_3_8
+
 		arg_3_0:PlayAni(var_3_7)
 
 		if var_3_8 and var_3_9 then
@@ -58,7 +60,7 @@ function var_0_0.RandomIndexOfInteractionType(arg_4_0, arg_4_1)
 	local var_4_0 = arg_4_1 .. "_talk"
 	local var_4_1 = arg_4_0.actor:GetSkinId()
 	local var_4_2 = SkinCfg[var_4_1].hero
-	local var_4_3 = HeroTools:GetUnlockInteractionCfg(var_4_2)
+	local var_4_3 = arg_4_0.actor:GetInteractionCfg()
 	local var_4_4 = arg_4_0.lastIndex or 0
 	local var_4_5 = {}
 	local var_4_6 = {}

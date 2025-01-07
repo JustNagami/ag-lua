@@ -3,6 +3,8 @@ local var_0_1 = 0
 
 function var_0_0.Init(arg_1_0)
 	arg_1_0.view_direct = var_0_1 or PosterGirlConst.ViewDirect.center
+
+	arg_1_0:InitSceneInfo()
 end
 
 function var_0_0.GetTag(arg_2_0)
@@ -14,9 +16,17 @@ function var_0_0.GetViewDirect(arg_3_0)
 end
 
 function var_0_0.GetHeroPosAndRotCfg(arg_4_0)
-	local var_4_0 = arg_4_0.skinId * 100 + arg_4_0.view_direct
+	local var_4_0 = 0
+	local var_4_1 = SkinSceneActionCfg[arg_4_0.skinId]
+	local var_4_2 = arg_4_0:GetSceneID()
 
-	return HeroPosAndRotCfg[var_4_0]
+	if var_4_1.special_scene_id_2 == var_4_2 then
+		var_4_0 = 1
+	end
+
+	local var_4_3 = arg_4_0.skinId * 100 + arg_4_0.view_direct + var_4_0 * 10
+
+	return HeroPosAndRotCfg[var_4_3]
 end
 
 function var_0_0.SwipeToLeft(arg_5_0)
@@ -79,6 +89,45 @@ function var_0_0.UpdateCameraParams(arg_8_0)
 	end
 
 	arg_8_0:SetSelfCamera(0)
+end
+
+local function var_0_2(arg_9_0)
+	local var_9_0 = tonumber(arg_9_0)
+	local var_9_1 = HomeSceneCfg.get_id_list_by_type[SceneConst.HOME_SCENE_IMPACT.TIME]
+
+	for iter_9_0, iter_9_1 in ipairs(var_9_1) do
+		local var_9_2 = HomeSceneCfg[iter_9_1]
+		local var_9_3 = var_9_2.start_time
+		local var_9_4 = var_9_2.end_time
+
+		if var_9_3 <= var_9_0 and var_9_0 <= var_9_4 then
+			return var_9_2.action_suffix
+		end
+	end
+
+	return nil
+end
+
+function var_0_0.InitSceneInfo(arg_10_0)
+	local var_10_0 = arg_10_0:GetSceneID()
+	local var_10_1 = HomeSceneSettingCfg[var_10_0]
+	local var_10_2 = manager.time:GetServerTime()
+
+	for iter_10_0, iter_10_1 in ipairs(var_10_1.impact) do
+		if iter_10_1 == SceneConst.HOME_SCENE_IMPACT.WEATHER then
+			-- block empty
+		elseif iter_10_1 == SceneConst.HOME_SCENE_IMPACT.DATA then
+			-- block empty
+		elseif iter_10_1 == SceneConst.HOME_SCENE_IMPACT.TIME then
+			local var_10_3 = manager.time:STimeDescS(var_10_2, "!%H")
+
+			arg_10_0.time_param = var_0_2(var_10_3)
+		end
+	end
+end
+
+function var_0_0.GetTimeParam(arg_11_0)
+	return arg_11_0.time_param
 end
 
 return var_0_0

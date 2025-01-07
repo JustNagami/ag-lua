@@ -15,6 +15,7 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
+	arg_3_0.iconImg_.cacheLimit = 3
 	arg_3_0.controller_ = ControllerUtil.GetController(arg_3_0.gameObject_.transform, "conName")
 end
 
@@ -34,7 +35,7 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1)
 		manager.redPoint:SetRedPointIndependent(arg_4_0.transform_, false)
 	end
 
-	arg_4_0.iconImg_.sprite = getSpriteWithoutAtlas(string.format("TextureConfig/IllustratedHandbook/boss/%s", arg_4_1.id))
+	arg_4_0.iconImg_.spriteSync = string.format("TextureConfig/IllustratedHandbook/boss/%s", arg_4_1.id)
 end
 
 function var_0_0.AddUIListener(arg_5_0)

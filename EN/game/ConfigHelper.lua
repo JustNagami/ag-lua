@@ -127,6 +127,8 @@ function getChapterClientList()
 	return var_0_6
 end
 
+StageTools.InitStageArchiveCfg()
+
 local function var_0_9(arg_7_0)
 	for iter_7_0, iter_7_1 in ipairs(arg_7_0.all) do
 		if type(arg_7_0[iter_7_1].next_show_id_list) == "table" then
@@ -262,548 +264,565 @@ end
 BackHomeFurniture.AllFurnitureConfig = var_0_23
 
 local var_0_25 = {}
+local var_0_26 = {}
 
 for iter_0_32, iter_0_33 in pairs(HeroSkillCfg.all) do
-	local var_0_26 = HeroSkillCfg[iter_0_33]
+	local var_0_27 = HeroSkillCfg[iter_0_33]
 
-	if type(var_0_26.strengthen_desc) == "table" and var_0_26.strengthen_desc[1] then
-		var_0_25[var_0_26.strengthen_desc[1]] = iter_0_33
-	end
-end
-
-for iter_0_34, iter_0_35 in pairs(WeaponEffectCfg.all) do
-	local var_0_27 = WeaponEffectCfg[iter_0_35]
-
-	if iter_0_35 > 0 and type(var_0_27.strengthen_description) == "table" and var_0_27.strengthen_description[1] then
-		var_0_25[var_0_27.strengthen_description[1]] = WeaponServantCfg.get_id_list_by_effect[iter_0_35][1]
-	end
-end
-
-function getSkillIDOrServantID(arg_9_0)
-	return var_0_25[arg_9_0]
-end
-
-local var_0_28 = {}
-
-for iter_0_36, iter_0_37 in pairs(AstrolabeEffectCfg.all) do
-	local var_0_29 = AstrolabeEffectCfg[iter_0_37]
-
-	if type(var_0_29.equip_orange_desc) == "table" then
-		for iter_0_38, iter_0_39 in pairs(var_0_29.equip_orange_desc) do
-			if var_0_28[iter_0_39[3]] == nil then
-				var_0_28[iter_0_39[3]] = {}
+	if var_0_27.strengthen_desc and var_0_27.strengthen_desc ~= "" then
+		for iter_0_34, iter_0_35 in ipairs(var_0_27.strengthen_desc) do
+			if iter_0_35[1] then
+				var_0_25[iter_0_35[1]] = iter_0_33
 			end
-
-			var_0_28[iter_0_39[3]][iter_0_39[1]] = var_0_29.id
 		end
 	end
 end
 
-function getAstrolabeID(arg_10_0, arg_10_1)
-	if var_0_28[arg_10_0] == nil then
+for iter_0_36, iter_0_37 in pairs(WeaponEffectCfg.all) do
+	local var_0_28 = WeaponEffectCfg[iter_0_37]
+
+	if iter_0_37 > 0 and type(var_0_28.strengthen_description) == "table" and var_0_28.strengthen_description[1] then
+		var_0_26[var_0_28.strengthen_description[1]] = WeaponServantCfg.get_id_list_by_effect[iter_0_37][1]
+	end
+end
+
+function getSkillAffectByModule(arg_9_0)
+	return var_0_25[arg_9_0]
+end
+
+function getWeaponServantAffectByModule(arg_10_0)
+	return var_0_26[arg_10_0]
+end
+
+local var_0_29 = {}
+
+for iter_0_38, iter_0_39 in pairs(AstrolabeEffectCfg.all) do
+	local var_0_30 = AstrolabeEffectCfg[iter_0_39]
+
+	if type(var_0_30.equip_orange_desc) == "table" then
+		for iter_0_40, iter_0_41 in pairs(var_0_30.equip_orange_desc) do
+			if var_0_29[iter_0_41[3]] == nil then
+				var_0_29[iter_0_41[3]] = {}
+			end
+
+			var_0_29[iter_0_41[3]][iter_0_41[1]] = var_0_30.id
+		end
+	end
+end
+
+function getAstrolabeID(arg_11_0, arg_11_1)
+	if var_0_29[arg_11_0] == nil then
 		print("配置错误！检查AstrolabeEffectCfg和WeaponModuleEffectCfg")
 
 		return
 	end
 
-	return var_0_28[arg_10_0][arg_10_1]
+	return var_0_29[arg_11_0][arg_11_1]
 end
 
 HERO_FRAGMENT_VALUE = 10000
 
-for iter_0_40, iter_0_41 in pairs(ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.HERO]) do
-	ItemCfg[iter_0_41].fragment = iter_0_41 + HERO_FRAGMENT_VALUE
+for iter_0_42, iter_0_43 in pairs(ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.HERO]) do
+	ItemCfg[iter_0_43].fragment = iter_0_43 + HERO_FRAGMENT_VALUE
 end
 
-for iter_0_42, iter_0_43 in pairs(ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.HERO_PIECE]) do
-	ItemCfg[iter_0_43].hero_id = iter_0_43 - HERO_FRAGMENT_VALUE
+for iter_0_44, iter_0_45 in pairs(ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.HERO_PIECE]) do
+	ItemCfg[iter_0_45].hero_id = iter_0_45 - HERO_FRAGMENT_VALUE
 end
 
-for iter_0_44, iter_0_45 in pairs(ActivityPtCfg.all) do
-	ItemCfg[ActivityPtCfg[iter_0_45].item_id].activity_id = iter_0_45
+for iter_0_46, iter_0_47 in pairs(ActivityPtCfg.all) do
+	ItemCfg[ActivityPtCfg[iter_0_47].item_id].activity_id = iter_0_47
 end
 
 ActivityPtRepeatCfg.GetCfgFromActivityIdAndStageId = {}
 
-for iter_0_46, iter_0_47 in ipairs(ActivityPtRepeatCfg.all) do
-	local var_0_30 = ActivityPtRepeatCfg[iter_0_47]
+for iter_0_48, iter_0_49 in ipairs(ActivityPtRepeatCfg.all) do
+	local var_0_31 = ActivityPtRepeatCfg[iter_0_49]
 
-	if not ActivityPtRepeatCfg.GetCfgFromActivityIdAndStageId[var_0_30.activity_id] then
-		ActivityPtRepeatCfg.GetCfgFromActivityIdAndStageId[var_0_30.activity_id] = {}
+	if not ActivityPtRepeatCfg.GetCfgFromActivityIdAndStageId[var_0_31.activity_id] then
+		ActivityPtRepeatCfg.GetCfgFromActivityIdAndStageId[var_0_31.activity_id] = {}
 	end
 
-	ActivityPtRepeatCfg.GetCfgFromActivityIdAndStageId[var_0_30.activity_id][var_0_30.stage_id] = var_0_30
+	ActivityPtRepeatCfg.GetCfgFromActivityIdAndStageId[var_0_31.activity_id][var_0_31.stage_id] = var_0_31
 end
 
 ActivityPt2Cfg.GetCfgFromActivityIdAndStageId = {}
 
-for iter_0_48, iter_0_49 in ipairs(ActivityPt2Cfg.all) do
-	local var_0_31 = ActivityPt2Cfg[iter_0_49]
+for iter_0_50, iter_0_51 in ipairs(ActivityPt2Cfg.all) do
+	local var_0_32 = ActivityPt2Cfg[iter_0_51]
 
-	if not ActivityPt2Cfg.GetCfgFromActivityIdAndStageId[var_0_31.activity_id] then
-		ActivityPt2Cfg.GetCfgFromActivityIdAndStageId[var_0_31.activity_id] = {}
+	if not ActivityPt2Cfg.GetCfgFromActivityIdAndStageId[var_0_32.activity_id] then
+		ActivityPt2Cfg.GetCfgFromActivityIdAndStageId[var_0_32.activity_id] = {}
 	end
 
-	ActivityPt2Cfg.GetCfgFromActivityIdAndStageId[var_0_31.activity_id][var_0_31.stage_id] = var_0_31
+	ActivityPt2Cfg.GetCfgFromActivityIdAndStageId[var_0_32.activity_id][var_0_32.stage_id] = var_0_32
 end
 
 ShopListCfg.get_id_list_by_system_and_group = {}
 
-for iter_0_50, iter_0_51 in pairs(ShopListCfg.get_id_list_by_system) do
-	local var_0_32 = {}
+for iter_0_52, iter_0_53 in pairs(ShopListCfg.get_id_list_by_system) do
+	local var_0_33 = {}
 
-	for iter_0_52, iter_0_53 in ipairs(iter_0_51) do
-		local var_0_33 = ShopListCfg[iter_0_53]
+	for iter_0_54, iter_0_55 in ipairs(iter_0_53) do
+		local var_0_34 = ShopListCfg[iter_0_55]
 
-		if not var_0_32[var_0_33.display_group] then
-			var_0_32[var_0_33.display_group] = {}
+		if not var_0_33[var_0_34.display_group] then
+			var_0_33[var_0_34.display_group] = {}
 		end
 
-		table.insert(var_0_32[var_0_33.display_group], var_0_33)
+		table.insert(var_0_33[var_0_34.display_group], var_0_34)
 	end
 
-	ShopListCfg.get_id_list_by_system_and_group[iter_0_50] = var_0_32
+	ShopListCfg.get_id_list_by_system_and_group[iter_0_52] = var_0_33
 end
 
-function UpdateShopCfg(arg_11_0)
-	local var_11_0 = arg_11_0.shop_id
-	local var_11_1 = arg_11_0.goods_list
+function UpdateShopCfg(arg_12_0)
+	local var_12_0 = arg_12_0.shop_id
+	local var_12_1 = arg_12_0.goods_list
 
-	for iter_11_0, iter_11_1 in ipairs(var_11_1) do
-		local var_11_2 = {}
+	for iter_12_0, iter_12_1 in ipairs(var_12_1) do
+		local var_12_2 = {}
 
-		for iter_11_2, iter_11_3 in ipairs(iter_11_1.give_back_list or {}) do
-			table.insert(var_11_2, {
-				id = iter_11_3.id,
-				num = iter_11_3.num
+		for iter_12_2, iter_12_3 in ipairs(iter_12_1.give_back_list or {}) do
+			table.insert(var_12_2, {
+				id = iter_12_3.id,
+				num = iter_12_3.num
 			})
 		end
 
-		ShopCfg[iter_11_1.goods_id] = {
+		ShopCfg[iter_12_1.goods_id] = {
 			taken_down = 0,
 			position = 0,
 			shop_refresh = 3,
-			goods_id = iter_11_1.goods_id,
-			shop_id = var_11_0,
-			shop_sort = iter_11_1.shop_sort,
-			give_id = iter_11_1.give_id,
-			description = iter_11_1.description,
-			give = iter_11_1.give,
-			cost_type = iter_11_1.cost_type,
-			cost_id = iter_11_1.cost_id,
-			cost = iter_11_1.cost,
-			cheap_cost_id = iter_11_1.cheap_cost_id,
-			cheap_cost = iter_11_1.cheap_cost,
-			discount = iter_11_1.discount,
-			limit_num = iter_11_1.limit_num,
-			level_limit = cleanProtoTable(iter_11_1.level_limit),
-			limit_display = iter_11_1.limit_display,
-			pre_goods_id = cleanProtoTable(iter_11_1.pre_goods_id),
-			refresh_cycle = iter_11_1.refresh_cycle,
+			goods_id = iter_12_1.goods_id,
+			shop_id = var_12_0,
+			shop_sort = iter_12_1.shop_sort,
+			give_id = iter_12_1.give_id,
+			description = iter_12_1.description,
+			give = iter_12_1.give,
+			cost_type = iter_12_1.cost_type,
+			cost_id = iter_12_1.cost_id,
+			cost = iter_12_1.cost,
+			cheap_cost_id = iter_12_1.cheap_cost_id,
+			cheap_cost = iter_12_1.cheap_cost,
+			discount = iter_12_1.discount,
+			limit_num = iter_12_1.limit_num,
+			level_limit = cleanProtoTable(iter_12_1.level_limit),
+			limit_display = iter_12_1.limit_display,
+			pre_goods_id = cleanProtoTable(iter_12_1.pre_goods_id),
+			refresh_cycle = iter_12_1.refresh_cycle,
 			open_time = {},
 			close_time = {},
-			is_limit_time_discount = iter_11_1.is_limit_time_discount,
+			is_limit_time_discount = iter_12_1.is_limit_time_discount,
 			cheap_open_time = {},
 			cheap_close_time = {},
-			tag = iter_11_1.tag,
-			backhome_tag = iter_11_1.backhome_tag,
-			next_goods_id = cleanProtoTable(iter_11_1.next_goods_id),
-			give_back_list = var_11_2,
-			dlc = iter_11_1.dlc
+			tag = iter_12_1.tag,
+			backhome_tag = iter_12_1.backhome_tag,
+			next_goods_id = cleanProtoTable(iter_12_1.next_goods_id),
+			give_back_list = var_12_2,
+			dlc = iter_12_1.dlc
 		}
 
-		if iter_11_1.open_time and iter_11_1.open_time.year ~= 0 then
-			local var_11_3 = iter_11_1.open_time
+		if iter_12_1.open_time and iter_12_1.open_time.year ~= 0 then
+			local var_12_3 = iter_12_1.open_time
 
-			ShopCfg[iter_11_1.goods_id].open_time = {
+			ShopCfg[iter_12_1.goods_id].open_time = {
 				{
-					var_11_3.year,
-					var_11_3.month,
-					var_11_3.day
+					var_12_3.year,
+					var_12_3.month,
+					var_12_3.day
 				},
 				{
-					var_11_3.hour,
-					var_11_3.minute,
-					var_11_3.second
+					var_12_3.hour,
+					var_12_3.minute,
+					var_12_3.second
 				}
 			}
 		end
 
-		if iter_11_1.close_time and iter_11_1.close_time.year ~= 0 then
-			local var_11_4 = iter_11_1.close_time
+		if iter_12_1.close_time and iter_12_1.close_time.year ~= 0 then
+			local var_12_4 = iter_12_1.close_time
 
-			ShopCfg[iter_11_1.goods_id].close_time = {
+			ShopCfg[iter_12_1.goods_id].close_time = {
 				{
-					var_11_4.year,
-					var_11_4.month,
-					var_11_4.day
+					var_12_4.year,
+					var_12_4.month,
+					var_12_4.day
 				},
 				{
-					var_11_4.hour,
-					var_11_4.minute,
-					var_11_4.second
+					var_12_4.hour,
+					var_12_4.minute,
+					var_12_4.second
 				}
 			}
 		end
 
-		if iter_11_1.cheap_open_time and iter_11_1.cheap_open_time.year ~= 0 then
-			local var_11_5 = iter_11_1.cheap_open_time
+		if iter_12_1.cheap_open_time and iter_12_1.cheap_open_time.year ~= 0 then
+			local var_12_5 = iter_12_1.cheap_open_time
 
-			ShopCfg[iter_11_1.goods_id].cheap_open_time = {
+			ShopCfg[iter_12_1.goods_id].cheap_open_time = {
 				{
-					var_11_5.year,
-					var_11_5.month,
-					var_11_5.day
+					var_12_5.year,
+					var_12_5.month,
+					var_12_5.day
 				},
 				{
-					var_11_5.hour,
-					var_11_5.minute,
-					var_11_5.second
+					var_12_5.hour,
+					var_12_5.minute,
+					var_12_5.second
 				}
 			}
 		end
 
-		if iter_11_1.cheap_close_time and iter_11_1.cheap_close_time.year ~= 0 then
-			local var_11_6 = iter_11_1.cheap_close_time
+		if iter_12_1.cheap_close_time and iter_12_1.cheap_close_time.year ~= 0 then
+			local var_12_6 = iter_12_1.cheap_close_time
 
-			ShopCfg[iter_11_1.goods_id].cheap_close_time = {
+			ShopCfg[iter_12_1.goods_id].cheap_close_time = {
 				{
-					var_11_6.year,
-					var_11_6.month,
-					var_11_6.day
+					var_12_6.year,
+					var_12_6.month,
+					var_12_6.day
 				},
 				{
-					var_11_6.hour,
-					var_11_6.minute,
-					var_11_6.second
+					var_12_6.hour,
+					var_12_6.minute,
+					var_12_6.second
 				}
 			}
 		end
 
-		ShopCfg.get_id_list_by_shop_id[var_11_0] = ShopCfg.get_id_list_by_shop_id[var_11_0] or {}
+		ShopCfg.get_id_list_by_shop_id[var_12_0] = ShopCfg.get_id_list_by_shop_id[var_12_0] or {}
 
-		if not table.indexof(ShopCfg.get_id_list_by_shop_id[var_11_0]) then
-			table.insert(ShopCfg.get_id_list_by_shop_id[var_11_0], iter_11_1.goods_id)
+		if not table.indexof(ShopCfg.get_id_list_by_shop_id[var_12_0]) then
+			table.insert(ShopCfg.get_id_list_by_shop_id[var_12_0], iter_12_1.goods_id)
 		end
 
-		ShopCfg.get_id_list_by_cost_id[iter_11_1.cost_id] = ShopCfg.get_id_list_by_cost_id[iter_11_1.cost_id] or {}
+		ShopCfg.get_id_list_by_cost_id[iter_12_1.cost_id] = ShopCfg.get_id_list_by_cost_id[iter_12_1.cost_id] or {}
 
-		if not table.indexof(ShopCfg.get_id_list_by_cost_id[iter_11_1.cost_id]) then
-			table.insert(ShopCfg.get_id_list_by_cost_id[iter_11_1.cost_id], iter_11_1.goods_id)
+		if not table.indexof(ShopCfg.get_id_list_by_cost_id[iter_12_1.cost_id]) then
+			table.insert(ShopCfg.get_id_list_by_cost_id[iter_12_1.cost_id], iter_12_1.goods_id)
 		end
 	end
 end
 
-for iter_0_54, iter_0_55 in ipairs(ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.SKIN_CHANGE]) do
-	local var_0_34 = ItemCfg[iter_0_55].param[1]
+for iter_0_56, iter_0_57 in ipairs(ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.SKIN_CHANGE]) do
+	local var_0_35 = ItemCfg[iter_0_57].param[1]
 
-	SkinCfg[var_0_34].change_item = iter_0_55
+	SkinCfg[var_0_35].change_item = iter_0_57
 end
 
-function getChapterIDByStageID(arg_12_0)
-	return var_0_2[arg_12_0]
+function getChapterIDByStageID(arg_13_0)
+	return var_0_2[arg_13_0]
 end
 
-function getChapterClientCfgByChapterID(arg_13_0)
-	local var_13_0 = ChapterCfg[arg_13_0]
+function getChapterClientCfgByChapterID(arg_14_0)
+	local var_14_0 = ChapterCfg[arg_14_0]
 
-	return ChapterClientCfg[var_13_0.clientID]
+	return ChapterClientCfg[var_14_0.clientID]
 end
 
-function getChapterClientCfgByStageID(arg_14_0)
-	local var_14_0 = getChapterIDByStageID(arg_14_0)
-
-	return getChapterClientCfgByChapterID(var_14_0)
-end
-
-function getChapterAndSectionID(arg_15_0)
+function getChapterClientCfgByStageID(arg_15_0)
 	local var_15_0 = getChapterIDByStageID(arg_15_0)
-	local var_15_1 = ChapterCfg[var_15_0]
-	local var_15_2 = var_15_1.section_id_list ~= "" and table.keyof(var_15_1.section_id_list, arg_15_0) or 1
 
-	return var_15_0, var_15_2
+	return getChapterClientCfgByChapterID(var_15_0)
 end
 
-function getChapterToggle(arg_16_0)
-	return ChapterClientCfg[arg_16_0].parentToggle or ChapterClientCfg[arg_16_0].toggle
+function getChapterAndSectionID(arg_16_0)
+	local var_16_0 = getChapterIDByStageID(arg_16_0)
+	local var_16_1 = ChapterCfg[var_16_0]
+	local var_16_2 = var_16_1.section_id_list ~= "" and table.keyof(var_16_1.section_id_list, arg_16_0) or 1
+
+	return var_16_0, var_16_2
 end
 
-function getChapterDifficulty(arg_17_0)
-	local var_17_0 = BattleStageTools.GetChapterByStageId(BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_PLOT, arg_17_0)
-	local var_17_1 = ChapterCfg[var_17_0]
+function getChapterToggle(arg_17_0)
+	return ChapterClientCfg[arg_17_0].parentToggle or ChapterClientCfg[arg_17_0].toggle
+end
 
-	if not var_17_1 then
+function getChapterDifficulty(arg_18_0)
+	local var_18_0 = BattleStageTools.GetChapterByStageId(BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_PLOT, arg_18_0)
+	local var_18_1 = ChapterCfg[var_18_0]
+
+	if not var_18_1 then
 		error("错误的难度参数")
 	end
 
-	local var_17_2 = var_17_1.difficulty
+	local var_18_2 = var_18_1.difficulty
 
-	if var_17_2 == 1 then
+	if var_18_2 == 1 then
 		return GetTips("HARDLEVEL_EASY")
-	elseif var_17_2 == 2 then
+	elseif var_18_2 == 2 then
 		return GetTips("HARDLEVEL_HARD_2")
 	end
 end
 
-function getStageViaStoryID(arg_18_0)
-	return StoryCfg[arg_18_0].trigger[2]
-end
-
-local var_0_35 = {}
-
-function getChapterListByDifficulty(arg_19_0, arg_19_1)
-	arg_19_1 = arg_19_1 or "all"
-
-	if not var_0_35[arg_19_0] then
-		local var_19_0 = {}
-		local var_19_1 = ChapterCfg.get_id_list_by_type[arg_19_0]
-
-		for iter_19_0, iter_19_1 in ipairs(var_19_1) do
-			local var_19_2 = ChapterCfg[iter_19_1].difficulty
-
-			var_19_0[var_19_2] = var_19_0[var_19_2] or {}
-			var_19_0.all = var_19_0.all or {}
-
-			table.insert(var_19_0.all, iter_19_1)
-			table.insert(var_19_0[var_19_2], iter_19_1)
-		end
-
-		var_0_35[arg_19_0] = var_19_0
-	end
-
-	return var_0_35[arg_19_0][arg_19_1] or {}
+function getStageViaStoryID(arg_19_0)
+	return StoryCfg[arg_19_0].trigger[2]
 end
 
 local var_0_36 = {}
 
-for iter_0_56, iter_0_57 in pairs(StoryCfg) do
-	local var_0_37 = iter_0_57.trigger[2]
+function getChapterListByDifficulty(arg_20_0, arg_20_1)
+	arg_20_1 = arg_20_1 or "all"
 
-	if var_0_37 then
-		if not var_0_36[var_0_37] then
-			var_0_36[var_0_37] = {}
+	if not var_0_36[arg_20_0] then
+		local var_20_0 = {}
+		local var_20_1 = ChapterCfg.get_id_list_by_type[arg_20_0]
+
+		for iter_20_0, iter_20_1 in ipairs(var_20_1) do
+			local var_20_2 = ChapterCfg[iter_20_1].difficulty
+
+			var_20_0[var_20_2] = var_20_0[var_20_2] or {}
+			var_20_0.all = var_20_0.all or {}
+
+			table.insert(var_20_0.all, iter_20_1)
+			table.insert(var_20_0[var_20_2], iter_20_1)
 		end
 
-		local var_0_38 = iter_0_57.trigger[3]
+		var_0_36[arg_20_0] = var_20_0
+	end
 
-		var_0_36[var_0_37][var_0_38] = iter_0_57.id
+	return var_0_36[arg_20_0][arg_20_1] or {}
+end
+
+local var_0_37 = {}
+
+for iter_0_58, iter_0_59 in pairs(StoryCfg) do
+	local var_0_38 = iter_0_59.trigger[2]
+
+	if var_0_38 then
+		if not var_0_37[var_0_38] then
+			var_0_37[var_0_38] = {}
+		end
+
+		local var_0_39 = iter_0_59.trigger[3]
+
+		var_0_37[var_0_38][var_0_39] = iter_0_59.id
 	end
 end
 
-function getStoryViaStageID(arg_20_0, arg_20_1)
-	if not var_0_36[arg_20_0] then
+function getStoryViaStageID(arg_21_0, arg_21_1)
+	if not var_0_37[arg_21_0] then
 		return false
 	end
 
-	return var_0_36[arg_20_0][arg_20_1]
+	return var_0_37[arg_21_0][arg_21_1]
 end
 
-for iter_0_58, iter_0_59 in ipairs(WeaponServantCfg.all) do
-	local var_0_39 = ServantTools.GetServantSpecHero(iter_0_59)
+for iter_0_60, iter_0_61 in ipairs(WeaponServantCfg.all) do
+	local var_0_40 = ServantTools.GetServantSpecHero(iter_0_61)
 
-	if var_0_39 then
-		HeroCfg[var_0_39].spec_servant = iter_0_59
+	if var_0_40 then
+		HeroCfg[var_0_40].spec_servant = iter_0_61
 	end
 end
 
-local var_0_40 = {}
+local var_0_41 = {}
 
-for iter_0_60, iter_0_61 in pairs(ItemCfg.get_id_list_by_type[14]) do
-	var_0_40[ItemCfg[iter_0_61].param[1]] = iter_0_61
+for iter_0_62, iter_0_63 in pairs(ItemCfg.get_id_list_by_type[14]) do
+	var_0_41[ItemCfg[iter_0_63].param[1]] = iter_0_63
 end
 
-function getTicketIDBySkinID(arg_21_0)
-	return var_0_40[arg_21_0]
+function getTicketIDBySkinID(arg_22_0)
+	return var_0_41[arg_22_0]
 end
 
 TalentTreeCfg.get_id_list_by_activity_id_and_race = {}
 
-for iter_0_62, iter_0_63 in pairs(TalentTreeCfg.get_id_list_by_activity_id) do
-	TalentTreeCfg.get_id_list_by_activity_id_and_race[iter_0_62] = {}
+for iter_0_64, iter_0_65 in pairs(TalentTreeCfg.get_id_list_by_activity_id) do
+	TalentTreeCfg.get_id_list_by_activity_id_and_race[iter_0_64] = {}
 
-	local var_0_41
+	local var_0_42
 
-	for iter_0_64, iter_0_65 in ipairs(iter_0_63) do
-		local var_0_42 = TalentTreeCfg[iter_0_65].race
+	for iter_0_66, iter_0_67 in ipairs(iter_0_65) do
+		local var_0_43 = TalentTreeCfg[iter_0_67].race
 
-		if TalentTreeCfg.get_id_list_by_activity_id_and_race[iter_0_62][var_0_42] == nil then
-			TalentTreeCfg.get_id_list_by_activity_id_and_race[iter_0_62][var_0_42] = {}
+		if TalentTreeCfg.get_id_list_by_activity_id_and_race[iter_0_64][var_0_43] == nil then
+			TalentTreeCfg.get_id_list_by_activity_id_and_race[iter_0_64][var_0_43] = {}
 		end
 
-		table.insert(TalentTreeCfg.get_id_list_by_activity_id_and_race[iter_0_62][var_0_42], iter_0_65)
+		table.insert(TalentTreeCfg.get_id_list_by_activity_id_and_race[iter_0_64][var_0_43], iter_0_67)
 	end
 end
 
-for iter_0_66, iter_0_67 in ipairs(ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.ACTIVITY_CULTIVATE_HERO]) do
-	if ActivityCultivateHeroCfg[iter_0_67] then
-		local var_0_43 = ActivityCultivateHeroCfg[iter_0_67].group
+for iter_0_68, iter_0_69 in ipairs(ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.ACTIVITY_CULTIVATE_HERO]) do
+	if ActivityCultivateHeroCfg[iter_0_69] then
+		local var_0_44 = ActivityCultivateHeroCfg[iter_0_69].group
 
-		for iter_0_68, iter_0_69 in ipairs(var_0_43) do
-			local var_0_44 = CultivateHeroTaskCfg.get_id_list_by_group_id[iter_0_69]
+		for iter_0_70, iter_0_71 in ipairs(var_0_44) do
+			local var_0_45 = CultivateHeroTaskCfg.get_id_list_by_group_id[iter_0_71]
 
-			for iter_0_70, iter_0_71 in ipairs(var_0_44) do
-				CultivateHeroTaskCfg[iter_0_71].activity_id = iter_0_67
+			for iter_0_72, iter_0_73 in ipairs(var_0_45) do
+				CultivateHeroTaskCfg[iter_0_73].activity_id = iter_0_69
 			end
 		end
 	end
 end
 
-function GetCfgDescription(arg_22_0, arg_22_1, arg_22_2, arg_22_3, arg_22_4)
-	if arg_22_2 == nil then
-		arg_22_2 = 1
+function GetCfgDescription(arg_23_0, arg_23_1, arg_23_2, arg_23_3, arg_23_4, arg_23_5)
+	if arg_23_2 == nil then
+		arg_23_2 = 1
 	end
 
-	local function var_22_0(arg_23_0, arg_23_1)
-		if arg_23_1 then
-			return math.floor(arg_23_0 * 10^arg_23_1 + 0.5) / 10^arg_23_1
+	local function var_23_0(arg_24_0, arg_24_1)
+		if arg_24_1 then
+			return math.floor(arg_24_0 * 10^arg_24_1 + 0.5) / 10^arg_24_1
 		else
-			return math.floor(arg_23_0 + 0.5)
+			return math.floor(arg_24_0 + 0.5)
 		end
 	end
 
-	local var_22_1 = DescriptionCfg[arg_22_0]
+	local var_23_1 = DescriptionCfg[arg_23_0]
 
-	if not var_22_1 then
-		print("错误, 找不到对应id的描述配置 " .. arg_22_0 .. " description.csv 表")
+	if not var_23_1 then
+		print("错误, 找不到对应id的描述配置 " .. arg_23_0 .. " description.csv 表")
 
-		return "错误, 找不到对应id的描述配置 " .. arg_22_0 .. " description.csv 表"
+		return "错误, 找不到对应id的描述配置 " .. arg_23_0 .. " description.csv 表"
 	end
 
-	local var_22_2 = GetI18NText(var_22_1.description)
+	local var_23_2 = GetI18NText(var_23_1.description)
+	local var_23_3 = arg_23_1
 
-	if arg_22_1 == nil then
-		arg_22_1 = 1
+	if arg_23_1 == nil then
+		arg_23_1 = 1
 	end
 
-	if arg_22_3 == nil then
-		arg_22_3 = var_22_1.maxLv
+	if arg_23_3 == nil then
+		arg_23_3 = var_23_1.maxLv
 	end
 
-	if var_22_1.type == 1 then
-		if arg_22_1 > var_22_1.maxLv or arg_22_1 < 1 then
-			print("错误, 找不到对应等级的描述配置 id = " .. arg_22_0 .. " description.csv 表 level = " .. arg_22_1)
+	if var_23_1.type == 1 then
+		if arg_23_1 > var_23_1.maxLv or arg_23_1 < 1 then
+			print("错误, 找不到对应等级的描述配置 id = " .. arg_23_0 .. " description.csv 表 level = " .. arg_23_1)
 
-			return "错误, 找不到对应等级的描述配置 id = " .. arg_22_0 .. " description.csv 表 level = " .. arg_22_1
+			return "错误, 找不到对应等级的描述配置 id = " .. arg_23_0 .. " description.csv 表 level = " .. arg_23_1
 		end
 
-		local var_22_3 = var_22_1.param
+		local var_23_4 = var_23_1.param
 
-		if #var_22_3 >= 1 then
-			local var_22_4 = {
+		if #var_23_4 >= 1 then
+			local var_23_5 = {
 				"0"
 			}
 
-			for iter_22_0, iter_22_1 in ipairs(var_22_3) do
-				local var_22_5 = iter_22_1[1]
-				local var_22_6 = iter_22_1[2]
-				local var_22_7 = iter_22_1[3]
-				local var_22_8 = iter_22_1[4]
-				local var_22_9 = var_22_0(var_22_5 + var_22_6 * (arg_22_1 - 1), arg_22_2)
+			for iter_23_0, iter_23_1 in ipairs(var_23_4) do
+				local var_23_6 = iter_23_1[1]
+				local var_23_7 = iter_23_1[2]
+				local var_23_8 = iter_23_1[4]
+				local var_23_9 = iter_23_1[3]
 
-				if var_22_9 % 1 == 0 then
-					var_22_9 = string.format("%.0f", var_22_9) .. var_22_8
-				else
-					var_22_9 = string.format("%." .. arg_22_2 .. "f", var_22_9) .. var_22_8
+				if arg_23_4 then
+					var_23_9 = false
 				end
 
-				local var_22_10 = var_22_9
+				local var_23_10 = var_23_0(var_23_6 + var_23_7 * (arg_23_1 - 1), arg_23_2)
 
-				if var_22_7 and arg_22_1 < arg_22_3 then
-					local var_22_11 = var_22_0(var_22_5 + var_22_6 * arg_22_1, arg_22_2)
+				if var_23_10 % 1 == 0 then
+					var_23_10 = string.format("%.0f", var_23_10) .. var_23_8
+				else
+					var_23_10 = string.format("%." .. arg_23_2 .. "f", var_23_10) .. var_23_8
+				end
 
-					if var_22_11 % 1 == 0 then
-						var_22_11 = string.format("%.0f", var_22_11) .. var_22_8
+				local var_23_11 = var_23_10
+
+				if var_23_9 and arg_23_1 < arg_23_3 then
+					local var_23_12 = var_23_0(var_23_6 + var_23_7 * arg_23_1, arg_23_2)
+
+					if var_23_12 % 1 == 0 then
+						var_23_12 = string.format("%.0f", var_23_12) .. var_23_8
 					else
-						var_22_11 = string.format("%." .. arg_22_2 .. "f", var_22_11) .. var_22_8
+						var_23_12 = string.format("%." .. arg_23_2 .. "f", var_23_12) .. var_23_8
 					end
 
-					var_22_10 = GetTipsF("DESCRIPTION_NEXT_LEVEL", var_22_9, var_22_11)
+					var_23_11 = GetTipsF("DESCRIPTION_NEXT_LEVEL", var_23_10, var_23_12)
 				end
 
-				table.insert(var_22_4, var_22_10)
+				if arg_23_4 then
+					var_23_11 = ""
+
+					for iter_23_2 = 1, arg_23_3 do
+						local var_23_13 = var_23_0(var_23_6 + var_23_7 * (iter_23_2 - 1), arg_23_2)
+
+						if var_23_13 % 1 == 0 then
+							var_23_13 = string.format("%.0f", var_23_13) .. var_23_8
+						else
+							var_23_13 = string.format("%." .. arg_23_2 .. "f", var_23_13) .. var_23_8
+						end
+
+						if arg_23_5 and var_23_3 == iter_23_2 then
+							var_23_13 = "<color=#E78300>" .. var_23_13 .. "</color>"
+						end
+
+						if var_23_7 ~= 0 then
+							if iter_23_2 > 1 then
+								var_23_11 = var_23_11 .. "/" .. var_23_13
+							else
+								var_23_11 = var_23_13
+							end
+						else
+							var_23_11 = var_23_13
+						end
+					end
+				end
+
+				table.insert(var_23_5, var_23_11)
 			end
 
-			return LuaExchangeHelper.GetDescription(var_22_2, var_22_4)
+			return LuaExchangeHelper.GetDescription(var_23_2, var_23_5)
 		else
-			return var_22_2
+			return var_23_2
 		end
 	else
-		local var_22_12 = var_22_1.param[arg_22_1]
+		local var_23_14 = var_23_1.param[arg_23_1]
 
-		if not var_22_12 then
-			print("错误, 找不到对应等级的描述配置 id = " .. arg_22_0 .. " description.csv 表 level = " .. arg_22_1)
+		if not var_23_14 then
+			print("错误, 找不到对应等级的描述配置 id = " .. arg_23_0 .. " description.csv 表 level = " .. arg_23_1)
 
-			return "错误, 找不到对应等级的描述配置 id = " .. arg_22_0 .. " description.csv 表 level = " .. arg_22_1
+			return "错误, 找不到对应等级的描述配置 id = " .. arg_23_0 .. " description.csv 表 level = " .. arg_23_1
 		end
 
-		if #var_22_12 > 1 then
-			if arg_22_4 then
-				return LuaExchangeHelper.GetDescription(var_22_2, var_22_1.extra_param)
+		if #var_23_14 > 1 then
+			if arg_23_4 then
+				return LuaExchangeHelper.GetDescription(var_23_2, var_23_1.extra_param)
 			end
 
-			return LuaExchangeHelper.GetDescription(var_22_2, var_22_12)
+			return LuaExchangeHelper.GetDescription(var_23_2, var_23_14)
 		else
-			return var_22_2
+			return var_23_2
 		end
 	end
 end
 
-function GetCfgDescriptionWithValue(arg_24_0, arg_24_1)
-	local var_24_0 = DescriptionCfg[arg_24_0]
+function GetCfgDescriptionWithValue(arg_25_0, arg_25_1)
+	local var_25_0 = DescriptionCfg[arg_25_0]
 
-	if not var_24_0 then
-		print("错误, 找不到对应id的描述配置 " .. arg_24_0 .. " description.csv 表")
+	if not var_25_0 then
+		print("错误, 找不到对应id的描述配置 " .. arg_25_0 .. " description.csv 表")
 
-		return "错误, 找不到对应id的描述配置 " .. arg_24_0 .. " description.csv 表"
+		return "错误, 找不到对应id的描述配置 " .. arg_25_0 .. " description.csv 表"
 	end
 
-	local var_24_1 = GetI18NText(var_24_0.description)
-	local var_24_2 = {
+	local var_25_1 = GetI18NText(var_25_0.description)
+	local var_25_2 = {
 		""
 	}
 
-	if type(arg_24_1) ~= "table" then
-		table.insert(var_24_2, arg_24_1)
+	if type(arg_25_1) ~= "table" then
+		table.insert(var_25_2, arg_25_1)
 	else
-		table.insertto(var_24_2, arg_24_1)
+		table.insertto(var_25_2, arg_25_1)
 	end
 
-	return LuaExchangeHelper.GetDescription(var_24_1, var_24_2)
-end
-
-local var_0_45 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.POLYHEDRON_ACTIVITY] or {}
-
-for iter_0_72, iter_0_73 in ipairs(var_0_45) do
-	local var_0_46 = ActivityCfg[iter_0_73].sub_activity_list
-
-	ActivityCfg[iter_0_73].policy_activity_id = iter_0_73
-
-	local var_0_47 = {}
-	local var_0_48 = {}
-
-	for iter_0_74, iter_0_75 in ipairs(var_0_46) do
-		if ActivityCfg[iter_0_75].activity_template == ActivityTemplateConst.TASK then
-			local var_0_49 = AssignmentCfg.get_id_list_by_activity_id[iter_0_75]
-
-			if AssignmentCfg[var_0_49[1]].type == TaskConst.TASK_TYPE.POLYHEDRON_SEASON then
-				var_0_47[#var_0_47 + 1] = iter_0_75
-			elseif AssignmentCfg[var_0_49[1]].type == TaskConst.TASK_TYPE.POLYHEDRON_ACHIEVEMENT then
-				var_0_48[#var_0_48 + 1] = iter_0_75
-			end
-		end
-	end
-
-	ActivityCfg[iter_0_73].season_task_activity_list = var_0_47
-	ActivityCfg[iter_0_73].achievement_task_activity_list = var_0_48
+	return LuaExchangeHelper.GetDescription(var_25_1, var_25_2)
 end
 
 ActivityReprintExCfg = {}
 
-for iter_0_76, iter_0_77 in ipairs(ActivityReprintCfg.all) do
-	for iter_0_78, iter_0_79 in pairs(ActivityReprintCfg[iter_0_77]) do
-		if iter_0_78 ~= "id" then
-			ActivityReprintExCfg[iter_0_79] = {
-				originActivityID = iter_0_77
+for iter_0_74, iter_0_75 in ipairs(ActivityReprintCfg.all) do
+	for iter_0_76, iter_0_77 in pairs(ActivityReprintCfg[iter_0_75]) do
+		if iter_0_76 ~= "id" then
+			ActivityReprintExCfg[iter_0_77] = {
+				originActivityID = iter_0_75
 			}
 		end
 	end
@@ -811,39 +830,49 @@ end
 
 HeroStarUpTemplateCfg.template_dic = {}
 
-for iter_0_80, iter_0_81 in pairs(HeroStarUpTemplateCfg.get_id_list_by_template) do
-	local var_0_50 = {}
+for iter_0_78, iter_0_79 in pairs(HeroStarUpTemplateCfg.get_id_list_by_template) do
+	local var_0_46 = {}
 
-	for iter_0_82, iter_0_83 in ipairs(iter_0_81) do
-		local var_0_51 = HeroStarUpTemplateCfg[iter_0_83].skill_id
-		local var_0_52 = HeroStarUpTemplateCfg[iter_0_83].stage
-		local var_0_53 = HeroStarSkillCfg[var_0_51].type
+	for iter_0_80, iter_0_81 in ipairs(iter_0_79) do
+		local var_0_47 = HeroStarUpTemplateCfg[iter_0_81].skill_id
+		local var_0_48 = HeroStarUpTemplateCfg[iter_0_81].stage
+		local var_0_49 = HeroStarSkillCfg[var_0_47].type
 
-		var_0_50[var_0_53] = var_0_50[var_0_53] or {}
-		var_0_50[var_0_53].stage_dic = var_0_50[var_0_53].stage_dic or {}
-		var_0_50[var_0_53].stage_dic[var_0_52] = var_0_51
+		var_0_46[var_0_49] = var_0_46[var_0_49] or {}
+		var_0_46[var_0_49].stage_dic = var_0_46[var_0_49].stage_dic or {}
+		var_0_46[var_0_49].stage_dic[var_0_48] = var_0_47
 	end
 
-	for iter_0_84, iter_0_85 in pairs(var_0_50) do
-		local var_0_54 = {}
-		local var_0_55 = iter_0_85.stage_dic
+	for iter_0_82, iter_0_83 in pairs(var_0_46) do
+		local var_0_50 = {}
+		local var_0_51 = iter_0_83.stage_dic
 
-		for iter_0_86, iter_0_87 in pairs(var_0_55) do
-			var_0_54[#var_0_54 + 1] = iter_0_86
+		for iter_0_84, iter_0_85 in pairs(var_0_51) do
+			var_0_50[#var_0_50 + 1] = iter_0_84
 		end
 
-		table.sort(var_0_54)
+		table.sort(var_0_50)
 
-		var_0_50[iter_0_84].stage_list = var_0_54
+		var_0_46[iter_0_82].stage_list = var_0_50
 	end
 
-	HeroStarUpTemplateCfg.template_dic[iter_0_80] = var_0_50
+	HeroStarUpTemplateCfg.template_dic[iter_0_78] = var_0_46
 end
 
-function HeroVoiceDescCfg.Get(arg_25_0, arg_25_1)
-	return nullable(HeroVoiceDescCfg, nullable(HeroVoiceDescCfg.get_id_list_by_chara_id_subtitle_id, arg_25_0, arg_25_1, 1), "content")
+function HeroVoiceDescCfg.Get(arg_26_0, arg_26_1)
+	return nullable(HeroVoiceDescCfg, nullable(HeroVoiceDescCfg.get_id_list_by_chara_id_subtitle_id, arg_26_0, arg_26_1, 1), "content")
 end
 
-function ConfigHelper_GetCfg(arg_26_0, arg_26_1, arg_26_2)
-	return _G[arg_26_0][arg_26_1][arg_26_2]
+function HeroVoiceDescCfg.GetByFormID(arg_27_0, arg_27_1)
+	for iter_27_0, iter_27_1 in ipairs(HeroVoiceDescCfg.get_id_list_by_form_id[arg_27_0]) do
+		if HeroVoiceDescCfg[iter_27_1].subtitle_id == arg_27_1 then
+			return HeroVoiceDescCfg[iter_27_1].content
+		end
+	end
+
+	return nil
+end
+
+function ConfigHelper_GetCfg(arg_28_0, arg_28_1, arg_28_2)
+	return _G[arg_28_0][arg_28_1][arg_28_2]
 end

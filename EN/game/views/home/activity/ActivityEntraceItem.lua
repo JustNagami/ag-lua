@@ -61,13 +61,24 @@ end
 function var_0_0.RefreshUI(arg_8_0)
 	local var_8_0 = ActivityData:GetActivityData(arg_8_0.activityID_).startTime
 	local var_8_1 = ActivityEntraceCfg[arg_8_0.activityID_]
-	local var_8_2 = var_8_1.icon
+	local var_8_2 = arg_8_0:GetIndex()
+	local var_8_3 = var_8_1.icon_list[var_8_2]
 
-	if var_8_0 + var_8_1.delay_day * 24 * 3600 < manager.time:GetServerTime() then
-		var_8_2 = var_8_1.icon2
+	arg_8_0.image_.sprite = getSpriteViaConfig("ActivityBannerTextures", var_8_3)
+end
+
+function var_0_0.GetIndex(arg_9_0)
+	local var_9_0 = ActivityData:GetActivityData(arg_9_0.activityID_).startTime
+	local var_9_1 = ActivityEntraceCfg[arg_9_0.activityID_]
+	local var_9_2 = manager.time:GetServerTime()
+
+	for iter_9_0 = #var_9_1.day_list, 1, -1 do
+		if var_9_2 >= var_9_0 + var_9_1.day_list[iter_9_0] * 24 * 3600 then
+			return iter_9_0 + 1
+		end
 	end
 
-	arg_8_0.image_.sprite = getSpriteViaConfig("ActivityBannerTextures", var_8_2 .. SettingData:GetCurrentLanguageKey())
+	return 1
 end
 
 return var_0_0

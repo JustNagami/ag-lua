@@ -41,7 +41,10 @@ function var_0_0.CustomIndexItem(arg_5_0, arg_5_1, arg_5_2)
 end
 
 function var_0_0.CustomDesIndexItem(arg_7_0, arg_7_1, arg_7_2)
-	arg_7_2:RefreshUI(arg_7_0.customSelectList_[arg_7_1])
+	local var_7_0 = arg_7_0.customSelectList_[arg_7_1]
+	local var_7_1 = ActivityAffixPoolCfg[var_7_0].affix
+
+	arg_7_2:RefreshUI(var_7_1)
 end
 
 function var_0_0.AddUIListeners(arg_8_0)

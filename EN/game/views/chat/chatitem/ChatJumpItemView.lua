@@ -6,11 +6,15 @@ function var_0_1.OnCtor(arg_1_0, arg_1_1, arg_1_2)
 	arg_1_0.transform_ = arg_1_0.gameObject_.transform
 
 	arg_1_0:BindCfgUI()
+
+	arg_1_0.commonPortrait_ = CommonHeadPortrait.New(arg_1_0.headItem_)
+
 	arg_1_0:AddListeners()
 	arg_1_0:Show(true)
 end
 
 function var_0_1.Dispose(arg_2_0)
+	arg_2_0.commonPortrait_:Dispose()
 	var_0_1.super.Dispose(arg_2_0)
 	Object.Destroy(arg_2_0.gameObject_)
 
@@ -23,7 +27,7 @@ function var_0_1.GetUserID(arg_3_0)
 end
 
 function var_0_1.AddListeners(arg_4_0)
-	arg_4_0:AddBtnListener(arg_4_0.buttonHead_, nil, function()
+	arg_4_0.commonPortrait_:RegisteClickCallback(function()
 		ForeignInfoAction:TryToCheckForeignDetailInfo(arg_4_0:GetUserID())
 	end)
 	arg_4_0:AddBtnListener(arg_4_0.jumpBtn_, nil, function()
@@ -63,12 +67,14 @@ function var_0_1.SetData(arg_11_0, arg_11_1, arg_11_2)
 		local var_11_0 = PlayerData:GetPlayerInfo()
 
 		arg_11_0.textName_.text = var_11_0.nick
-		arg_11_0.imageIcon_.sprite = ItemTools.getItemSprite(var_11_0.portrait)
-		arg_11_0.imageFrame_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_11_0.icon_frame)
+
+		arg_11_0.commonPortrait_:RenderHead(var_11_0.portrait)
+		arg_11_0.commonPortrait_:RenderFrame(var_11_0.icon_frame)
 	else
 		arg_11_0.textName_.text = arg_11_1.nick
-		arg_11_0.imageIcon_.sprite = getSpriteViaConfig("HeroLittleIcon", ItemCfg[arg_11_1.icon].icon)
-		arg_11_0.imageFrame_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_11_1.iconFrame)
+
+		arg_11_0.commonPortrait_:RenderHead(arg_11_1.icon)
+		arg_11_0.commonPortrait_:RenderFrame(arg_11_1.iconFrame)
 	end
 
 	arg_11_0.textContent_.text = arg_11_1.content

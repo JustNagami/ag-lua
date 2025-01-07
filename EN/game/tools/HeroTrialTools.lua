@@ -21,7 +21,7 @@ function var_0_0.GetMainUIName(arg_2_0)
 	else
 		Debug.Log(string.format("<color=ff0000>ActivityHeroTrialUICfg has no theme(%d)</color>", var_2_0))
 
-		return "UI/VersionUI/XuHengUI/XH2ndHeroTrialUI/XH2ndHeroTrialUI"
+		return "Widget/System/Activity_Resident/Activity_HeroTrialUI/Activity_HeroTrialUI"
 	end
 end
 

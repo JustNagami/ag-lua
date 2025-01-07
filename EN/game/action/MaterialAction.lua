@@ -27,13 +27,13 @@ function var_0_0.OnReadExpiredMaterialCallback(arg_5_0, arg_5_1)
 		for iter_5_0, iter_5_1 in ipairs(var_5_1) do
 			local var_5_2 = iter_5_1.id
 			local var_5_3 = iter_5_1.num
-			local var_5_4 = ItemTimeLimitExchangeCfg[var_5_2]
+			local var_5_4 = ItemCfg[var_5_2]
 
-			if var_5_4 then
-				if not var_5_0[var_5_4.exchange_item[1]] then
-					var_5_0[var_5_4.exchange_item[1]] = var_5_4.exchange_item[2] * var_5_3
+			if var_5_4.time_exchange_item then
+				if not var_5_0[var_5_4.time_exchange_item[1]] then
+					var_5_0[var_5_4.time_exchange_item[1]] = var_5_4.time_exchange_item[2] * var_5_3
 				else
-					var_5_0[var_5_4.exchange_item[1]] = var_5_0[var_5_4.exchange_item[1]] + var_5_4.exchange_item[2] * var_5_3
+					var_5_0[var_5_4.time_exchange_item[1]] = var_5_0[var_5_4.time_exchange_item[1]] + var_5_4.time_exchange_item[2] * var_5_3
 				end
 			end
 		end

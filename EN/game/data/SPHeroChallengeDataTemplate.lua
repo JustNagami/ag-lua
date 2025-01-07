@@ -59,6 +59,7 @@ function SPHeroChallengeActivityTemplate.InitCurScheduleList(arg_3_0, arg_3_1, a
 			if var_3_1 then
 				arg_3_0.curScheduleList[var_3_1.index] = var_3_1
 				arg_3_0.dailyList[var_3_1.index] = var_3_1.scheduleID
+				arg_3_0.dailyList[var_3_1.index] = var_3_1.scheduleID
 			end
 		end
 	end

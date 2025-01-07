@@ -311,4 +311,16 @@ function var_0_0.GetChipManagerIcon(arg_18_0)
 	return getSpriteWithoutAtlas("TextureConfig/Managecat_l/" .. var_18_0.picture_id)
 end
 
+function var_0_0.GetChipManagerIconPath(arg_19_0)
+	local var_19_0 = ChipCfg[arg_19_0]
+
+	if not var_19_0 then
+		Debug.Log(string.format("<color=ff0000>ChipCfg has no ID(%d)</color>", arg_19_0))
+
+		return
+	end
+
+	return "TextureConfig/Managecat_l/" .. var_19_0.picture_id
+end
+
 return var_0_0

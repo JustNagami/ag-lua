@@ -12,45 +12,6 @@
 		},
 		time = {}
 	},
-	[5] = {
-		id = 5,
-		type = 1,
-		picture = "activity2",
-		activityId = 0,
-		order = 102,
-		parameter = {
-			314
-		},
-		time = {
-			{
-				{
-					2020,
-					7,
-					24
-				},
-				{
-					5,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2030,
-					7,
-					24
-				},
-				{
-					5,
-					0,
-					0
-				}
-			}
-		},
-		hide_condition = {
-			60151
-		}
-	},
 	[7] = {
 		id = 7,
 		hide_condition = "",
@@ -817,7 +778,8 @@
 		activityId = 182211,
 		order = 100,
 		parameter = {
-			2901
+			2901,
+			182211
 		},
 		time = {}
 	},
@@ -1369,6 +1331,359 @@
 		},
 		time = {}
 	},
+	[109] = {
+		id = 109,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1076",
+		activityId = 270036,
+		order = 100,
+		parameter = {
+			404,
+			3030304
+		},
+		time = {}
+	},
+	[110] = {
+		id = 110,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1094_1199_1024",
+		activityId = 270035,
+		order = 100,
+		parameter = {
+			404,
+			3030102
+		},
+		time = {}
+	},
+	[111] = {
+		id = 111,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_109303",
+		activityId = 271114,
+		order = 100,
+		parameter = {
+			525
+		},
+		time = {}
+	},
+	[113] = {
+		id = 113,
+		hide_condition = "",
+		type = 1,
+		picture = "activity151",
+		activityId = 0,
+		order = 91,
+		parameter = {
+			2513,
+			51
+		},
+		time = {
+			{
+				{
+					2024,
+					7,
+					18
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2024,
+					9,
+					26
+				},
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[114] = {
+		id = 114,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1022",
+		activityId = 280030,
+		order = 93,
+		parameter = {
+			404,
+			3040301
+		},
+		time = {}
+	},
+	[115] = {
+		id = 115,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1139_1042_1028",
+		activityId = 280032,
+		order = 96,
+		parameter = {
+			404,
+			3040101
+		},
+		time = {}
+	},
+	[116] = {
+		id = 116,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1049",
+		activityId = 280034,
+		order = 94,
+		parameter = {
+			404,
+			3040302
+		},
+		time = {}
+	},
+	[117] = {
+		id = 117,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1150",
+		activityId = 280033,
+		order = 95,
+		parameter = {
+			404,
+			3040303
+		},
+		time = {}
+	},
+	[118] = {
+		id = 118,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_102201",
+		activityId = 281111,
+		order = 90,
+		parameter = {
+			525
+		},
+		time = {}
+	},
+	[119] = {
+		id = 119,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_104902",
+		activityId = 281112,
+		order = 91,
+		parameter = {
+			525
+		},
+		time = {}
+	},
+	[120] = {
+		id = 120,
+		hide_condition = "",
+		type = 1,
+		picture = "activity152",
+		activityId = 0,
+		order = 100,
+		parameter = {
+			524
+		},
+		time = {
+			{
+				{
+					2024,
+					9,
+					26
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2024,
+					11,
+					21
+				},
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[121] = {
+		id = 121,
+		hide_condition = "",
+		type = 1,
+		picture = "activity1021",
+		activityId = 280036,
+		order = 90,
+		parameter = {
+			404,
+			3050602
+		},
+		time = {}
+	},
+	[125] = {
+		id = 125,
+		hide_condition = "",
+		type = 1,
+		picture = "activity102101",
+		activityId = 281115,
+		order = 92,
+		parameter = {
+			525
+		},
+		time = {}
+	},
+	[126] = {
+		id = 126,
+		hide_condition = "",
+		type = 1,
+		picture = "activity107001_107401",
+		activityId = 281116,
+		order = 93,
+		parameter = {
+			525
+		},
+		time = {}
+	},
+	[30601] = {
+		id = 30601,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_Rush",
+		activityId = 131,
+		order = 91,
+		parameter = {
+			302
+		},
+		time = {}
+	},
+	[30602] = {
+		id = 30602,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1020",
+		activityId = 290030,
+		order = 80,
+		parameter = {
+			404,
+			3060601
+		},
+		time = {}
+	},
+	[30603] = {
+		id = 30603,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1156",
+		activityId = 290032,
+		order = 81,
+		parameter = {
+			404,
+			3060602
+		},
+		time = {}
+	},
+	[30604] = {
+		id = 30604,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_Searching",
+		activityId = 0,
+		order = 90,
+		parameter = {
+			336,
+			100001
+		},
+		time = {
+			{
+				{
+					2024,
+					9,
+					26
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2024,
+					11,
+					21
+				},
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[30605] = {
+		id = 30605,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_102001",
+		activityId = 291111,
+		order = 94,
+		parameter = {
+			525
+		},
+		time = {}
+	},
+	[30606] = {
+		id = 30606,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_welfare",
+		activityId = 293401,
+		order = 85,
+		parameter = {
+			15801,
+			291001,
+			293401
+		},
+		time = {}
+	},
+	[132] = {
+		id = 132,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1089",
+		activityId = 290037,
+		order = 80,
+		parameter = {
+			404,
+			3070601
+		},
+		time = {}
+	},
+	[133] = {
+		id = 133,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_108901",
+		activityId = 291114,
+		order = 94,
+		parameter = {
+			525
+		},
+		time = {}
+	},
 	[31000] = {
 		id = 31000,
 		hide_condition = "",
@@ -1685,9 +2000,47 @@
 		},
 		time = {}
 	},
+	[31028] = {
+		id = 31028,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1076",
+		activityId = 280060,
+		order = 100,
+		parameter = {
+			404,
+			31020
+		},
+		time = {}
+	},
+	[31029] = {
+		id = 31029,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1094_1199_1024",
+		activityId = 280061,
+		order = 100,
+		parameter = {
+			404,
+			31021
+		},
+		time = {}
+	},
+	[31030] = {
+		id = 31030,
+		hide_condition = "",
+		type = 1,
+		picture = "activity93",
+		activityId = 280062,
+		order = 100,
+		parameter = {
+			404,
+			31022
+		},
+		time = {}
+	},
 	all = {
 		1,
-		5,
 		7,
 		8,
 		9,
@@ -1785,6 +2138,28 @@
 		105,
 		106,
 		107,
+		109,
+		110,
+		111,
+		113,
+		114,
+		115,
+		116,
+		117,
+		118,
+		119,
+		120,
+		121,
+		125,
+		126,
+		30601,
+		30602,
+		30603,
+		30604,
+		30605,
+		30606,
+		132,
+		133,
 		31000,
 		31001,
 		31003,
@@ -1811,6 +2186,9 @@
 		31024,
 		31025,
 		31026,
-		31027
+		31027,
+		31028,
+		31029,
+		31030
 	}
 }

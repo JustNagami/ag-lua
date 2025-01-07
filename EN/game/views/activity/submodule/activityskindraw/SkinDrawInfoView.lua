@@ -16,170 +16,130 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
-	arg_4_0.mainRewardItems_ = {}
-	arg_4_0.baseRewardItems_ = {}
-	arg_4_0.rewardItems_ = {}
+	arg_4_0.poolList_ = {}
+	arg_4_0.poolItems_ = {}
+	arg_4_0.stateCon_ = arg_4_0.transCon_:GetController("state")
+	arg_4_0.tabCon_ = arg_4_0.transCon_:GetController("tab")
 end
 
 function var_0_0.AddUIListeners(arg_5_0)
-	arg_5_0:AddBtnListener(arg_5_0.bgBtn_, nil, function()
+	arg_5_0:AddBtnListener(arg_5_0.bgMask_, nil, function()
+		arg_5_0.stateCon_:SetSelectedState("info")
 		arg_5_0:Back()
+	end)
+	arg_5_0:AddBtnListener(arg_5_0.btnInfo_, nil, function()
+		arg_5_0.stateCon_:SetSelectedState("info")
+	end)
+	arg_5_0:AddBtnListener(arg_5_0.btnMessage_, nil, function()
+		arg_5_0.stateCon_:SetSelectedState("message")
 	end)
 end
 
-function var_0_0.OnEnter(arg_7_0)
-	arg_7_0:RefreshUI()
+function var_0_0.OnEnter(arg_9_0)
+	arg_9_0.poolID_ = arg_9_0.params_.poolID
+	arg_9_0.activityID_ = arg_9_0.params_.poolActivityID
+
+	arg_9_0.stateCon_:SetSelectedState("info")
+	arg_9_0:RefreshUI()
 end
 
-function var_0_0.RefreshUI(arg_8_0)
-	arg_8_0.poolID_ = arg_8_0.params_.poolID
-	arg_8_0.activityID_ = arg_8_0.params_.poolActivityID
+function var_0_0.RefreshUI(arg_10_0)
+	arg_10_0.tabCon_:SetSelectedState("hide")
+	arg_10_0:RefreshDes()
+	arg_10_0:RefreshData()
+	arg_10_0:RefreshPool()
+end
 
-	local var_8_0 = ActivityLimitedDrawPoolCfg.get_id_list_by_pool_id[arg_8_0.poolID_]
-	local var_8_1 = {}
-	local var_8_2 = {}
-	local var_8_3 = {}
+function var_0_0.RefreshDes(arg_11_0)
+	local var_11_0 = ActivityLimitedDrawPoolListCfg[arg_11_0.poolID_]
 
-	for iter_8_0, iter_8_1 in ipairs(ActivityLimitedDrawPoolListCfg[arg_8_0.poolID_].main_icon_info) do
-		table.insert(var_8_3, iter_8_1[1])
+	arg_11_0.infoTxt_.text = var_11_0.detail_note
+end
+
+function var_0_0.RefreshData(arg_12_0)
+	if arg_12_0.poolList_[arg_12_0.poolID_] then
+		arg_12_0.curPoolData_ = arg_12_0.poolList_[arg_12_0.poolID_]
+
+		return
 	end
 
-	for iter_8_2, iter_8_3 in ipairs(var_8_0) do
-		local var_8_4 = ActivityLimitedDrawPoolCfg[iter_8_3].minimum_guarantee
+	local var_12_0 = {}
+	local var_12_1 = {}
+	local var_12_2 = {}
+	local var_12_3 = {}
+	local var_12_4 = ActivityLimitedDrawPoolCfg.get_id_list_by_pool_id[arg_12_0.poolID_]
 
-		if var_8_4 == 1 then
-			table.insert(var_8_1, iter_8_3)
-		elseif var_8_4 == 2 and not table.indexof(var_8_3, iter_8_3) then
-			table.insert(var_8_2, iter_8_3)
+	for iter_12_0, iter_12_1 in ipairs(ActivityLimitedDrawPoolListCfg[arg_12_0.poolID_].main_icon_info) do
+		table.insert(var_12_1, iter_12_1[1])
+	end
+
+	for iter_12_2, iter_12_3 in ipairs(var_12_4) do
+		local var_12_5 = ActivityLimitedDrawPoolCfg[iter_12_3].minimum_guarantee
+
+		if var_12_5 == 1 then
+			table.insert(var_12_3, iter_12_3)
+		elseif var_12_5 == 2 and not table.indexof(var_12_1, iter_12_3) then
+			table.insert(var_12_2, iter_12_3)
 		end
 	end
 
-	arg_8_0:RefreshMainReward(var_8_3)
-	arg_8_0:RefreshBaseReward(var_8_2)
-	arg_8_0:RefreshOtherReward(var_8_1)
+	local var_12_6 = {
+		name = "主要奖励",
+		list = var_12_1
+	}
+	local var_12_7 = {
+		name = "保底奖励",
+		list = var_12_2
+	}
+	local var_12_8 = {
+		name = "其他奖励",
+		list = var_12_3
+	}
 
-	local var_8_5 = ActivityLimitedDrawPoolListCfg[arg_8_0.poolID_]
+	table.insert(var_12_0, var_12_6)
+	table.insert(var_12_0, var_12_7)
+	table.insert(var_12_0, var_12_8)
 
-	arg_8_0.desc_.text = var_8_5.detail_note
-
-	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_8_0.content1_)
-	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_8_0.content2_)
-	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_8_0.content3_)
-	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_8_0.content4_)
-	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_8_0.content_)
+	arg_12_0.curPoolData_ = var_12_0
+	arg_12_0.poolList_[arg_12_0.poolID_] = var_12_0
 end
 
-function var_0_0.RefreshMainReward(arg_9_0, arg_9_1)
-	for iter_9_0, iter_9_1 in ipairs(arg_9_1) do
-		local var_9_0 = ActivityLimitedDrawPoolCfg[iter_9_1]
-		local var_9_1 = var_9_0.reward[1][1]
-		local var_9_2 = var_9_0.reward[1][2]
+function var_0_0.RefreshPool(arg_13_0)
+	for iter_13_0 = 1, #arg_13_0.curPoolData_ do
+		if not arg_13_0.poolItems_[iter_13_0] then
+			local var_13_0 = Object.Instantiate(arg_13_0.msgItem_, arg_13_0.contentTrs_)
 
-		if not arg_9_0.mainRewardItems_[iter_9_0] then
-			local var_9_3 = Object.Instantiate(arg_9_0.template_, arg_9_0.content1_)
-
-			arg_9_0.mainRewardItems_[iter_9_0] = SkinDrawInfoItem.New(var_9_3)
+			arg_13_0.poolItems_[iter_13_0] = SkinDrawInfoContentItem.New(var_13_0)
 		end
 
-		arg_9_0.mainRewardItems_[iter_9_0]:RefreshData(var_9_1, var_9_2)
-
-		local var_9_4 = var_9_0.total
-		local var_9_5 = ActivitySkinDrawData:GetDrawInfo(arg_9_0.activityID_, iter_9_1)
-		local var_9_6 = var_9_5 and var_9_5.num or var_9_4
-
-		arg_9_0.mainRewardItems_[iter_9_0]:SetBottomText(var_9_6 .. "/" .. var_9_4)
-		SetActive(arg_9_0.mainRewardItems_[iter_9_0].gameObject_, true)
+		arg_13_0.poolItems_[iter_13_0]:RefreshData(arg_13_0.curPoolData_[iter_13_0], arg_13_0.activityID_, iter_13_0 == #arg_13_0.curPoolData_)
 	end
 
-	for iter_9_2 = #arg_9_1 + 1, #arg_9_0.mainRewardItems_ do
-		SetActive(arg_9_0.mainRewardItems_[iter_9_2].gameObject_, false)
+	for iter_13_1 = #arg_13_0.curPoolData_ + 1, #arg_13_0.poolItems_ do
+		arg_13_0.poolItems_[iter_13_1]:Show(false)
+	end
+
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_13_0.contentTrs_)
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_13_0.layout_1)
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_13_0.layout_2)
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_13_0.layout_3)
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_13_0.layout_4)
+end
+
+function var_0_0.OnExit(arg_14_0)
+	for iter_14_0 = 1, #arg_14_0.poolItems_ do
+		arg_14_0.poolItems_[iter_14_0]:OnExit()
 	end
 end
 
-function var_0_0.RefreshBaseReward(arg_10_0, arg_10_1)
-	for iter_10_0, iter_10_1 in ipairs(arg_10_1) do
-		local var_10_0 = ActivityLimitedDrawPoolCfg[iter_10_1]
-		local var_10_1 = var_10_0.reward[1][1]
-		local var_10_2 = var_10_0.reward[1][2]
+function var_0_0.Dispose(arg_15_0)
+	arg_15_0:RemoveAllListeners()
 
-		if not arg_10_0.baseRewardItems_[iter_10_0] then
-			local var_10_3 = Object.Instantiate(arg_10_0.template_, arg_10_0.content2_)
-
-			arg_10_0.baseRewardItems_[iter_10_0] = SkinDrawInfoItem.New(var_10_3)
-		end
-
-		arg_10_0.baseRewardItems_[iter_10_0]:RefreshData(var_10_1, var_10_2)
-
-		local var_10_4 = var_10_0.total
-		local var_10_5 = ActivitySkinDrawData:GetDrawInfo(arg_10_0.activityID_, iter_10_1)
-		local var_10_6 = var_10_5 and var_10_5.num or var_10_4
-
-		arg_10_0.baseRewardItems_[iter_10_0]:SetBottomText(var_10_6 .. "/" .. var_10_4)
-		SetActive(arg_10_0.baseRewardItems_[iter_10_0].gameObject_, true)
+	for iter_15_0 = 1, #arg_15_0.poolItems_ do
+		arg_15_0.poolItems_[iter_15_0]:Dispose()
 	end
 
-	for iter_10_2 = #arg_10_1 + 1, #arg_10_0.baseRewardItems_ do
-		SetActive(arg_10_0.baseRewardItems_[iter_10_2].gameObject_, false)
-	end
-end
-
-function var_0_0.RefreshOtherReward(arg_11_0, arg_11_1)
-	for iter_11_0, iter_11_1 in ipairs(arg_11_1) do
-		local var_11_0 = ActivityLimitedDrawPoolCfg[iter_11_1]
-		local var_11_1 = var_11_0.reward[1][1]
-		local var_11_2 = var_11_0.reward[1][2]
-
-		if not arg_11_0.rewardItems_[iter_11_0] then
-			local var_11_3 = Object.Instantiate(arg_11_0.template_, arg_11_0.content3_)
-
-			arg_11_0.rewardItems_[iter_11_0] = SkinDrawInfoItem.New(var_11_3)
-		end
-
-		arg_11_0.rewardItems_[iter_11_0]:RefreshData(var_11_1, var_11_2)
-
-		local var_11_4 = var_11_0.total
-		local var_11_5 = ActivitySkinDrawData:GetDrawInfo(arg_11_0.activityID_, iter_11_1)
-		local var_11_6 = var_11_5 and var_11_5.num or var_11_4
-
-		arg_11_0.rewardItems_[iter_11_0]:SetBottomText(var_11_6 .. "/" .. var_11_4)
-		SetActive(arg_11_0.rewardItems_[iter_11_0].gameObject_, true)
-	end
-
-	for iter_11_2 = #arg_11_1 + 1, #arg_11_0.rewardItems_ do
-		SetActive(arg_11_0.rewardItems_[iter_11_2].gameObject_, false)
-	end
-end
-
-function var_0_0.OnExit(arg_12_0)
-	for iter_12_0 = 1, #arg_12_0.mainRewardItems_ do
-		arg_12_0.mainRewardItems_[iter_12_0]:OnExit()
-	end
-
-	for iter_12_1 = 1, #arg_12_0.baseRewardItems_ do
-		arg_12_0.baseRewardItems_[iter_12_1]:OnExit()
-	end
-
-	for iter_12_2 = 1, #arg_12_0.rewardItems_ do
-		arg_12_0.rewardItems_[iter_12_2]:OnExit()
-	end
-end
-
-function var_0_0.Dispose(arg_13_0)
-	arg_13_0:RemoveAllListeners()
-
-	for iter_13_0 = 1, #arg_13_0.mainRewardItems_ do
-		arg_13_0.mainRewardItems_[iter_13_0]:Dispose()
-	end
-
-	for iter_13_1 = 1, #arg_13_0.baseRewardItems_ do
-		arg_13_0.baseRewardItems_[iter_13_1]:Dispose()
-	end
-
-	for iter_13_2 = 1, #arg_13_0.rewardItems_ do
-		arg_13_0.rewardItems_[iter_13_2]:Dispose()
-	end
-
-	arg_13_0.super.Dispose(arg_13_0)
+	arg_15_0.super.Dispose(arg_15_0)
 end
 
 return var_0_0

@@ -18,6 +18,7 @@ function var_0_0.InitUI(arg_3_0)
 	arg_3_0.heroCountController_ = arg_3_0.conExCollection_:GetController("heroCount")
 	arg_3_0.rankController_ = arg_3_0.conExCollection_:GetController("rank")
 	arg_3_0.positionController_ = arg_3_0.posExCon_:GetController("position")
+	arg_3_0.commonPortrait_ = CommonHeadPortrait.New(arg_3_0.headItem_)
 end
 
 function var_0_0.SetData(arg_4_0, arg_4_1, arg_4_2)
@@ -32,9 +33,9 @@ function var_0_0.UpdateView(arg_5_0)
 	arg_5_0.nickText_.text = GetI18NText(arg_5_0.data_.nick)
 	arg_5_0.rankText_.text = tostring(arg_5_0.index_)
 	arg_5_0.scoreText_.text = arg_5_0.data_.score
-	arg_5_0.headImg_.sprite = ItemTools.getItemSprite(arg_5_0.data_.icon)
-	arg_5_0.frameImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_5_0.data_.icon_frame)
 
+	arg_5_0.commonPortrait_:RenderHead(arg_5_0.data_.icon)
+	arg_5_0.commonPortrait_:RenderFrame(arg_5_0.data_.icon_frame)
 	arg_5_0.positionController_:SetSelectedState(tostring(arg_5_0.data_.member_post))
 
 	local var_5_0 = math.min(#arg_5_0.data_.hero_type_info, 3)
@@ -80,6 +81,7 @@ function var_0_0.OnMainHomeViewTop(arg_10_0)
 end
 
 function var_0_0.Dispose(arg_11_0)
+	arg_11_0.commonPortrait_:Dispose()
 	var_0_0.super.Dispose(arg_11_0)
 end
 

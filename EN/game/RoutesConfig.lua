@@ -31,6 +31,10 @@
 		component = LoginConceptGuideView
 	},
 	{
+		name = "loginBrahmaBonus",
+		component = LoginBrahmaBonusView
+	},
+	{
 		name = "activityAdvertise",
 		component = ActivityAdvertiseView
 	},
@@ -111,6 +115,10 @@
 	{
 		name = "skinDlcShow",
 		component = SkinDlcShowView
+	},
+	{
+		name = "videoShowView",
+		component = VideoShowView
 	},
 	{
 		name = "heroSkinPreview",
@@ -370,6 +378,10 @@
 		component = ChapterVariant18View
 	},
 	{
+		name = "chapterVariant20",
+		component = ChapterVariant20View
+	},
+	{
 		name = "subPlotSectionInfo",
 		component = SubPlotSectionInfoView
 	},
@@ -450,6 +462,10 @@
 		component = BossCombatSelectView
 	},
 	{
+		name = "advanceTestEntrace",
+		component = AdvanceTestEntraceView
+	},
+	{
 		name = "advanceTestMain",
 		component = AdvanceTestMainView
 	},
@@ -528,6 +544,10 @@
 		component = BattleFailedBossChallengeView
 	},
 	{
+		name = "battlefailedBossChallengeStage",
+		component = BattleFailedBossChallengeStageView
+	},
+	{
 		name = "teachStage",
 		ignoreMerge = true,
 		component = TeachStageView
@@ -577,6 +597,10 @@
 		component = NewHeroTeamInfoBaseView
 	},
 	{
+		name = "filterLockHero",
+		component = FilterLockHeroView
+	},
+	{
 		name = "battleMultipleResult",
 		component = NewBattleMultipleResultView
 	},
@@ -601,6 +625,10 @@
 		component = BattleActivityWorldBossResultView
 	},
 	{
+		name = "activityRhythmScoreResultView",
+		component = ActivityRhythmScoreResultView
+	},
+	{
 		name = "chipMatrixManager",
 		component = ChipManagerMatrixView
 	},
@@ -611,6 +639,10 @@
 	{
 		name = "battleMatrixResult",
 		component = BattleMatrixResultView
+	},
+	{
+		name = "battleMatrixResultNew",
+		component = BattleMatrixResultViewNew
 	},
 	{
 		name = "battleActivityMatrixResult",
@@ -859,6 +891,10 @@
 	{
 		name = "strategyMatrixHero",
 		component = StrategyMatrixHeroView
+	},
+	{
+		name = "strategyMatrixHero_new",
+		component = StrategyMatrixHeroView_new
 	},
 	{
 		name = "strategyMatrixAstrolabeAdjust",
@@ -1129,8 +1165,28 @@
 		component = NewBattleFailedView
 	},
 	{
+		name = "battleChallengeFailed",
+		component = NewBattleChallengeFailedView
+	},
+	{
+		name = "battleChallengeStatistics",
+		component = NewBattleChallengeStatisticsView
+	},
+	{
 		name = "battlefailedWithButton",
 		component = NewBattleFailedWithButtonView
+	},
+	{
+		name = "battlefailedChallengeWithButton",
+		component = NewBattleChallengeFailedWithButtonView
+	},
+	{
+		name = "battleCoreVerificationFailed",
+		component = NewBattleCoreVerificationFailedView
+	},
+	{
+		name = "monsterCosplayBattlefailedWithButton",
+		component = MonsterCosplayBattleFailView
 	},
 	{
 		name = "battlevictory",
@@ -1149,11 +1205,19 @@
 		component = NaviBar
 	},
 	{
+		name = "rechargeRevertPop",
+		component = RechargeRevertPopView
+	},
+	{
 		name = "bulletin",
 		component = BulletinSwitchView
 	},
 	{
 		name = "popItem",
+		component = PopItemNormalView
+	},
+	{
+		name = "popItem2",
 		component = PopItemNormalView
 	},
 	{
@@ -1267,6 +1331,14 @@
 		component = WeaponStrView
 	},
 	{
+		name = "weaponOneKeyBreak",
+		component = WeaponOneKeyBreakView
+	},
+	{
+		name = "weaponOneKeyStr",
+		component = WeaponOneKeyStrView
+	},
+	{
 		name = "weaponServant",
 		component = WeaponServantHomeView
 	},
@@ -1331,6 +1403,34 @@
 		component = ActivityInviteEnterView
 	},
 	{
+		name = "AreaBattleAreaView",
+		component = AreaBattleAreaView
+	},
+	{
+		name = "AreaBattleChapterSectionView",
+		component = AreaBattleChapterSectionView
+	},
+	{
+		name = "AreaBattleEnterView",
+		component = AreaBattleEnterView
+	},
+	{
+		name = "AreaBattleMapView",
+		component = AreaBattleMapView
+	},
+	{
+		name = "AreaBattleRankView",
+		component = AreaBattleRankView
+	},
+	{
+		name = "AreaBattleRewardView",
+		component = AreaBattleRewardView
+	},
+	{
+		name = "AreaBattleSelectView",
+		component = AreaBattleSelectView
+	},
+	{
 		name = "adminCatExploreView",
 		component = AdminCatExploreMainView
 	},
@@ -1371,6 +1471,10 @@
 		component = EquipCultureView
 	},
 	{
+		name = "equipOneKeyCulturePopView",
+		component = EquipOneKeyCulturePopView
+	},
+	{
 		name = "equipDetail",
 		component = EquipDetailView
 	},
@@ -1385,6 +1489,14 @@
 	{
 		name = "equipSkillPreviewPage",
 		component = EquipSkillPreviewPage
+	},
+	{
+		name = "totalEnchantSkillPop",
+		component = TotalEnchantSkillPopView
+	},
+	{
+		name = "equipDirectionalEnchant",
+		component = EquipDirectionalEnchantView
 	},
 	{
 		name = "equipRaceView",
@@ -1787,6 +1899,26 @@
 		component = DormChooseRoomView
 	},
 	{
+		name = "dormIlluMainView",
+		component = DormIlluMainView
+	},
+	{
+		name = "dormIlluHeroDetail",
+		component = DormIlluHeroDetailView
+	},
+	{
+		name = "dormIlluFurnitureDetail",
+		component = DormIlluFurnitureDetailView
+	},
+	{
+		name = "dormIlluDanceDetail",
+		component = DormIlluDanceDetailView
+	},
+	{
+		name = "dromIlluTaskView",
+		component = DromIlluTaskView
+	},
+	{
 		name = "idolTraineeEnterBattleView",
 		component = IdolTraineeEnterBattleView
 	},
@@ -1799,6 +1931,18 @@
 		component = IdolTraineeBattleComparePop
 	},
 	{
+		name = "idolDanceDIY",
+		component = DanceDIYMainView
+	},
+	{
+		name = "idolDanceEdit",
+		component = DanceEditView
+	},
+	{
+		name = "idolDanceSelMusic",
+		component = SelectMusicPopup
+	},
+	{
 		name = "backHomeCricketBattleView",
 		component = BackHomeCricketBattleView
 	},
@@ -1807,12 +1951,28 @@
 		component = DormVisitView
 	},
 	{
-		name = "roomEdit",
-		component = RoomEditView
+		name = "dormInformationView",
+		component = DormInfomationView
 	},
 	{
-		name = "dormSuitRelievePopView",
-		component = DormSuitRelievePopView
+		name = "dormAdviceView",
+		component = DormAdviceView
+	},
+	{
+		name = "dormInfomationTrainSetHeroView",
+		component = DormInfomationTrainSetHeroView
+	},
+	{
+		name = "dormRewardPopView",
+		component = DormVisitRewardPop
+	},
+	{
+		name = "dormRewardNewPopView",
+		component = DormVisitRewardNewPop
+	},
+	{
+		name = "roomEdit",
+		component = RoomEditView
 	},
 	{
 		name = "dormFurBuyAndGiftView",
@@ -1857,6 +2017,18 @@
 	{
 		name = "furnitureEdit",
 		component = FurnitureEditView
+	},
+	{
+		name = "dormNavigation",
+		component = DormNavigationView
+	},
+	{
+		name = "furniturePreview",
+		component = FurniturePreviewView
+	},
+	{
+		name = "furniturePreviewWithEntity",
+		component = FurniturePreviewWithEntityView
 	},
 	{
 		name = "idolTraineeCamp",
@@ -2097,6 +2269,10 @@
 	{
 		name = "raceTrialReady",
 		component = RaceTrialReadyView
+	},
+	{
+		name = "raceTrialEnter",
+		component = RaceTrialEnterView_3_8
 	},
 	{
 		name = "volumeRaceTrialMain",
@@ -2369,6 +2545,10 @@
 	{
 		name = "skinTrialSelectView_3_0",
 		component = SkinTrialSelectView_3_0
+	},
+	{
+		name = "skinTrialSelectView_Resident",
+		component = SkinTrialSelectView_Resident
 	},
 	{
 		name = "skinTrialSelect1001",
@@ -2905,6 +3085,10 @@
 		component = ChapterVariantThothView
 	},
 	{
+		name = "subPlotOuMoFeiSi",
+		component = SubPlotOuMoFeiSiView
+	},
+	{
 		name = "volumeMusicMain",
 		component = VolumeMusicMainView
 	},
@@ -3178,6 +3362,10 @@
 		component = ActivityMainToggleBaseView
 	},
 	{
+		name = "activityMain_3_3",
+		component = ActivityMainToggleBaseView
+	},
+	{
 		name = "heroPreviewMain",
 		component = HeroPreviewMain
 	},
@@ -3374,6 +3562,14 @@
 		component = NewBattleMythicFinalResultView
 	},
 	{
+		name = "battleMythicFinalFailedView",
+		component = NewBattleMythicFinalFailedView
+	},
+	{
+		name = "battleMythicOmegaFailedView",
+		component = NewBattleMythicOmegaFailedView
+	},
+	{
 		name = "mythicFinalRankView",
 		component = MythicFinalRankView
 	},
@@ -3512,6 +3708,10 @@
 	{
 		name = "cooperation",
 		component = CooperationView
+	},
+	{
+		name = "cooperationSectionSelectHero",
+		component = CooperationSectionSelectHeroView
 	},
 	{
 		name = "cooperationInvitation",
@@ -3902,6 +4102,30 @@
 		component = ActivityPtScrollAffixSelectView
 	},
 	{
+		name = "MonsterCosplaySkillInfo",
+		component = MonsterCosplaySkillInfoView
+	},
+	{
+		name = "MonsterCosplaySkillInfo",
+		component = MonsterCosplaySkillInfoView
+	},
+	{
+		name = "MonsterCosplaySkillUp",
+		component = MonsterCosplaySkillUpView
+	},
+	{
+		name = "MonsterCosplayStage",
+		component = MonsterCosplayStageView
+	},
+	{
+		name = "MonsterCosplayMonster",
+		component = MonsterCosplayMonsterView
+	},
+	{
+		name = "MonsterCosplaySectionInfo",
+		component = MonsterCosplaySectionInfo
+	},
+	{
 		name = "abyssMain",
 		component = AbyssMainView
 	},
@@ -4006,6 +4230,10 @@
 		component = WeaponModuleLevelUpPopView
 	},
 	{
+		name = "weaponQuickLevelUp",
+		component = WeaponQuickView
+	},
+	{
 		name = "moduleItemResolveView",
 		component = ModuleItemResolveView
 	},
@@ -4028,6 +4256,10 @@
 	{
 		name = "roguelikeMap_2_6",
 		component = RoguelikeMapView_2_6
+	},
+	{
+		name = "roguelikeMap_3_5",
+		component = RoguelikeMapView_3_5
 	},
 	{
 		name = "roguelikeRank",
@@ -4236,6 +4468,10 @@
 	{
 		name = "sevenDaySkinPopView_2_8",
 		component = SevenDaySkinPopView_2_8
+	},
+	{
+		name = "sevenDaySkinPopView_3_4",
+		component = SevenDaySkinPopView_3_4
 	},
 	{
 		name = "subPlotChessView",
@@ -4526,6 +4762,10 @@
 		component = HeroClueMainView
 	},
 	{
+		name = "heroClueMainView_3_6",
+		component = HeroClueMainView_3_6
+	},
+	{
 		name = "heroClueTask",
 		component = HeroClueTaskView
 	},
@@ -4536,6 +4776,10 @@
 	{
 		name = "heroClueDetail",
 		component = HeroClueDetailView
+	},
+	{
+		name = "heroClueDetailView_3_6",
+		component = HeroClueDetailView_3_6
 	},
 	{
 		name = "activityNewWarChessRewardView",
@@ -4894,6 +5138,10 @@
 		component = SPHeroChallengeChooseEntrustPop
 	},
 	{
+		name = "HeroCooperationView",
+		component = HeroCooperationView
+	},
+	{
 		name = "coreVerificationMain",
 		component = CoreVerificationMainView
 	},
@@ -4924,6 +5172,18 @@
 	{
 		name = "coreVerificationRankInfo",
 		component = CoreVerificationRankInfoView
+	},
+	{
+		name = "coreVerificationRankInfo",
+		component = CoreVerificationRankInfoView
+	},
+	{
+		name = "coreVerificationTeamCheck",
+		component = CoreVerificationTeamCheckView
+	},
+	{
+		name = "CoreVerificationRankSquads",
+		component = CoreVerificationRankSquadsView
 	},
 	{
 		name = "colorPuzzleResultPopup",
@@ -5016,5 +5276,685 @@
 	{
 		name = "newServerCapsuleToysGetReward",
 		component = NewServerCapsuleToysGetRewardView
+	},
+	{
+		name = "captureGameMain",
+		component = CaptureGameMainView
+	},
+	{
+		name = "activitySummerSwimsuitPreheatMain",
+		component = ActivitySummerSwimsuitPreheatMainView
+	},
+	{
+		name = "activitySummerSwimsuitPreheatStage",
+		component = ActivitySummerSwimsuitPreheatStageView
+	},
+	{
+		name = "activitySummerSwimsuitPreheatGame",
+		component = ActivitySummerSwimsuitPreheatGameView
+	},
+	{
+		name = "activitySummerSimBusinessMain",
+		component = SimBusinessMainView
+	},
+	{
+		name = "activitySummerSimBusinessDeploy",
+		component = ShelfEditView
+	},
+	{
+		name = "activitySummerSimBusinessMoveShelf",
+		component = ShelfMoveView
+	},
+	{
+		name = "activitySummerSimBusinessSetGoods",
+		component = ShelfSetGoodsView
+	},
+	{
+		name = "activitySummerSimBusinessGameResult",
+		component = SimBusinessGameResultPopup
+	},
+	{
+		name = "simBusinessChooseStageView",
+		component = SimBusinessChooseStageView
+	},
+	{
+		name = "simBusinessExplainView",
+		component = SimBusinessExplainView
+	},
+	{
+		name = "simBusinessSpecialStageView",
+		component = SimBusinessSpecialStageView
+	},
+	{
+		name = "simBusinessEnterView",
+		component = SimBusinessEnterView
+	},
+	{
+		name = "simBusinessLevelUpView",
+		component = SimBusinessLevelUpView
+	},
+	{
+		name = "summerChessBoardMainEntry",
+		component = SummerChessBoardMainEntryView
+	},
+	{
+		name = "summerChessBoardUnlockArea",
+		component = SummerChessBoardUnlockAreaView
+	},
+	{
+		name = "summerChessBoardTask",
+		component = SummerChessBoardTaskView
+	},
+	{
+		name = "summerChessBoardNote",
+		component = SummerChessBoardExploreNoteView
+	},
+	{
+		name = "summerChessBoardEmergencyView",
+		component = SummerChessBoardEmergencyView
+	},
+	{
+		name = "whackMoleMain",
+		component = WhackMoleMainView
+	},
+	{
+		name = "whackMoleDesc",
+		component = WhackMoleDescView
+	},
+	{
+		name = "battleWhackMoleResult",
+		component = BattleWhackMoleResultView
+	},
+	{
+		name = "whackMoleSectionInfo",
+		component = WhackMoleSectionInfoView
+	},
+	{
+		name = "chessBoardQTEGameView",
+		component = ChessBoardQTEGameView
+	},
+	{
+		name = "chessBoardQTEGameOverView",
+		component = ChessBoardQTEGameOverView
+	},
+	{
+		name = "chessBoardTestLevelView",
+		component = ChessBoardTestLevelView
+	},
+	{
+		name = "chessBoardHomeView",
+		component = ChessBoardHomeView
+	},
+	{
+		name = "chessBoardEnterView",
+		component = ChessBoardEnterView
+	},
+	{
+		name = "chessBoardChanceView",
+		component = ChessBoardChanceView
+	},
+	{
+		name = "chessBoardShopView",
+		component = ChessBoardShopView
+	},
+	{
+		name = "ChessBoardPropView",
+		component = ChessBoardPropView
+	},
+	{
+		name = "chessBoardPropDiceView",
+		component = ChessBoardPropDiceView
+	},
+	{
+		name = "chessBoardSmallMapView",
+		component = ChessBoardSmallMapView
+	},
+	{
+		name = "chessBoardBuffView",
+		component = ChessBoardBuffView
+	},
+	{
+		name = "chessBoardExploreView",
+		component = ChessBoardExploreView
+	},
+	{
+		name = "chessBoardOverView",
+		component = ChessBoardOverView
+	},
+	{
+		name = "blisterGame",
+		component = BlisterGameView
+	},
+	{
+		name = "blisterBattle",
+		component = BlisterBattleInfoView
+	},
+	{
+		name = "blisterResult",
+		component = BlisterBattleResultView
+	},
+	{
+		name = "blisterChapterSectionInfo",
+		component = BlisterChapterSectionInfoView
+	},
+	{
+		name = "BlisterMessageView",
+		component = BlisterMessageView
+	},
+	{
+		name = "activityRhythmGameStageView",
+		component = ActivityRhythmGameStageView
+	},
+	{
+		name = "activityRhythmGameCommandView",
+		component = ActivityRhythmGameCommandView
+	},
+	{
+		name = "activityRhythmGameStageInfoView",
+		component = ActivityRhythmGameStageInfoView
+	},
+	{
+		name = "catchDuckMain",
+		component = CatchDuckMainView
+	},
+	{
+		name = "catchDuckSelectionInfo",
+		component = CatchDuckSelectionInfoView
+	},
+	{
+		name = "catchDuckDetailPop",
+		component = CatchDuckDetailPopView
+	},
+	{
+		name = "battleCatchDuckResult",
+		component = BattleCatchDuckResultView
+	},
+	{
+		name = "catchDuckInfoPop",
+		component = CatchDuckInfoPopView
+	},
+	{
+		name = "tangramGameStageView",
+		component = TangramGameStageView
+	},
+	{
+		name = "tangramGameDecodeView",
+		component = TangramGameDecodeView
+	},
+	{
+		name = "tangramGameShowView",
+		component = TangramGameShowView
+	},
+	{
+		name = "tangramGameMainView",
+		component = TangramGameMainView
+	},
+	{
+		name = "summerChessBoardLevelView",
+		component = SummerChessBoardLevelView
+	},
+	{
+		name = "chessBoardTipsWindowView",
+		component = ChessBoardTipsWindowView
+	},
+	{
+		name = "chessBoardBattleChanceView",
+		component = ChessBoardBattleChanceView
+	},
+	{
+		name = "tangramGameCluePopView",
+		component = TangramGameCluePopView
+	},
+	{
+		name = "captureResultView",
+		component = CaptureGameResultView
+	},
+	{
+		name = "captureSettingView",
+		component = CaptureGameSettingView
+	},
+	{
+		name = "captureGameActivityMain",
+		component = CaptureActivityMainView
+	},
+	{
+		name = "captureSectionPopView",
+		component = CaptureSectionPopView
+	},
+	{
+		name = "captureSectionDetailPopView",
+		component = CaptureSectionDetailPopView
+	},
+	{
+		name = "captureGameTaskView",
+		component = CaptureGameTaskView
+	},
+	{
+		name = "activitySummerSwimsuitPreheatMain",
+		component = ActivitySummerSwimsuitPreheatMainView
+	},
+	{
+		name = "activitySummerSwimsuitPreheatStage",
+		component = ActivitySummerSwimsuitPreheatStageView
+	},
+	{
+		name = "activitySummerSwimsuitPreheatGame",
+		component = ActivitySummerSwimsuitPreheatGameView
+	},
+	{
+		name = "summerWaterMain",
+		component = SummerWaterMainView
+	},
+	{
+		name = "summerTeamInfo",
+		component = summerTeamInfoView
+	},
+	{
+		name = "summerQuestRewardPop",
+		component = SummerQuestRewardPopView
+	},
+	{
+		name = "summerWaterTeamInfo",
+		component = SummerWaterTeamInfoView
+	},
+	{
+		name = "swimsuitBattleMain",
+		component = SwimsuitBattleMainView
+	},
+	{
+		name = "swimsuitBattleTeamInfo",
+		component = SwimsuitBattleTeamInfoView
+	},
+	{
+		name = "swimsuitBattleVote",
+		component = SwimsuitBattleVoteView
+	},
+	{
+		name = "swimsuitBattleVotePop",
+		component = SwimsuitBattleVotePopView
+	},
+	{
+		name = "swimsuitBattleVoteRound",
+		component = SwimsuitBattleVoteRoundView
+	},
+	{
+		name = "swimsuitBattleResult",
+		component = SwimsuitBattleResultView
+	},
+	{
+		name = "summerWaterSectionSelectHero",
+		component = SummerWaterSelectHeroView
+	},
+	{
+		name = "swimsuitVoteQuestPop",
+		component = SwimsuitVoteQuestPopView
+	},
+	{
+		name = "tetrisGameStageView",
+		component = TetrisGameStageView
+	},
+	{
+		name = "tetrisGameMainView",
+		component = TetrisGameMainView
+	},
+	{
+		name = "tetrisGameScorePopView",
+		component = TetrisGameScorePopView
+	},
+	{
+		name = "tetrisGameRankView",
+		component = TetrisGameRankView
+	},
+	{
+		name = "AreaBattleRankSquadsView",
+		component = AreaBattleRankSquadsView
+	},
+	{
+		name = "areaBattleSettlement",
+		component = AreaBattleSettlementView
+	},
+	{
+		name = "tetrisGameTaskView",
+		component = TetrisGameTaskView
+	},
+	{
+		name = "tetrisGameGetSkillView",
+		component = TetrisGameGetSkillView
+	},
+	{
+		name = "tetrisGameChooseStageView",
+		component = TetrisGameChooseStageView
+	},
+	{
+		name = "tetrisGameSkillView",
+		component = TetrisGameSkillView
+	},
+	{
+		name = "SpKaliChallenge",
+		component = SPKailiChallengeView
+	},
+	{
+		name = "TugGameView",
+		component = TugGameView
+	},
+	{
+		name = "SPKailiChallengeSectionView",
+		component = SPKailiChallengeSectionView
+	},
+	{
+		name = "SPKailiTugInfoView",
+		component = SPKailiTugInfoView
+	},
+	{
+		name = "SPKailiTugResuletView",
+		component = SPKailiTugResuletView
+	},
+	{
+		name = "SpShootGameSelectView",
+		component = SpShootGameSelectView
+	},
+	{
+		name = "SPKailiTugSectionView",
+		component = SPKailiTugSectionView
+	},
+	{
+		name = "SpShootGameInfoView",
+		component = SpShootGameInfoView
+	},
+	{
+		name = "SpShootGameResultView",
+		component = SpShootGameResultView
+	},
+	{
+		name = "SPKailiChallengeIllustratedView",
+		component = SPKailiChallengeIllustratedView
+	},
+	{
+		name = "SPKailiChallengeRollView",
+		component = SPKailiChallengeRollView
+	},
+	{
+		name = "dodgeBarrageEnterView",
+		component = DodgeBarrageEnterView
+	},
+	{
+		name = "dodgeBarrageMainView",
+		component = DodgeBarrageMainView
+	},
+	{
+		name = "dodgeBarrageTaskView",
+		component = DodgeBarrageTaskView
+	},
+	{
+		name = "mainHomeRandomSetting",
+		component = MainHomeRandomSettingView
+	},
+	{
+		name = "randomHero",
+		component = RandomHeroView
+	},
+	{
+		name = "randomScene",
+		component = RandomSceneView
+	},
+	{
+		name = "randomSceneModePop",
+		component = RandomSceneModePopView
+	},
+	{
+		name = "randomHeroModePop",
+		component = RandomHeroModePopView
+	},
+	{
+		name = "bloodCardGame",
+		component = BloodCardGameView
+	},
+	{
+		name = "assetPendPop",
+		component = AssetPendPopView
+	},
+	{
+		name = "advanceMonsterTestMainView",
+		component = AdvanceMonsterTestMainView
+	},
+	{
+		name = "advanceMonsterAffixView",
+		component = AdvanceMonsterAffixView
+	},
+	{
+		name = "idolCompetitionMain",
+		component = IdolCompetitionMainView
+	},
+	{
+		name = "idolCompetitionReward",
+		component = IdolCompetitionRewardView
+	},
+	{
+		name = "idolCompetitionSign",
+		component = IdolCompetitionSignView
+	},
+	{
+		name = "idolCompetitionSignSelect",
+		component = IdolCompetitionSignSelectView
+	},
+	{
+		name = "idolCompetitionResult",
+		component = IdolCompetitionResultView
+	},
+	{
+		name = "summerWaterBattleResult",
+		component = SummerWaterBattleResultView
+	},
+	{
+		name = "summerWaterBattleStatistics",
+		component = SummerWaterBattleStatisticsView
+	},
+	{
+		name = "stageArchiveCollect",
+		component = StageArchiveCollectView
+	},
+	{
+		name = "stageArchivePictureInfo",
+		component = StageArchivePictureInfoView
+	},
+	{
+		name = "stageArchiveMomoTalk",
+		component = StageArchiveMomoTalkView
+	},
+	{
+		name = "customStickerMain",
+		component = CustomStickerMainView
+	},
+	{
+		name = "customStickerEdit",
+		component = CustomStickerEditView
+	},
+	{
+		name = "customStickerCollect",
+		component = CustomStickerCollectView
+	},
+	{
+		name = "customStickerBannerPop",
+		component = CustomStickerBannerPopView
+	},
+	{
+		name = "customStickerPreviewPop",
+		component = CustomStickerPreviewPopView
+	},
+	{
+		name = "customStickerCollectPop",
+		component = CustomStickerCollectPopView
+	},
+	{
+		name = "challengeRogueTeamEntrace",
+		component = ChallengeRogueTeamEntraceView
+	},
+	{
+		name = "challengeRogueTeamEntraceDifficulty",
+		component = ChallengeRogueTeamEntraceDifficultyView
+	},
+	{
+		name = "challengeRogueTeamSectionSelectHero",
+		component = ChallengeRogueTeamSectionSelectHeroView
+	},
+	{
+		name = "challengeRogueTeamPathMain",
+		component = ChallengeRogueTeamPathMainView
+	},
+	{
+		name = "challengeRogueTeamReward",
+		component = ChallengeRogueTeamRewardView
+	},
+	{
+		name = "challengeRogueTeamTreasureUpgrade",
+		component = ChallengeRogueTeamTreasureUpgradeView
+	},
+	{
+		name = "challengeRogueTeamTreasureSelect",
+		component = ChallengeRogueTeamTreasureSelectView
+	},
+	{
+		name = "challengeRogueTeamSuitSkill",
+		component = ChallengeRogueTeamSuitSkillView
+	},
+	{
+		name = "challengeRogueTeamBagItemSelect",
+		component = ChallengeRogueTeamBagItemSelectView
+	},
+	{
+		name = "challengeRogueTeamShop",
+		component = ChallengeRogueTeamShopView
+	},
+	{
+		name = "challengeRogueTeamEvent",
+		component = ChallengeRogueTeamEventView
+	},
+	{
+		name = "challengeRogueTeamEventDecide",
+		component = ChallengeRogueTeamEventDecideView
+	},
+	{
+		name = "challengeRogueTeamWorldLine",
+		component = ChallengeRogueTeamWorldLineView
+	},
+	{
+		name = "challengeRogueTeamReplaceNode",
+		component = ChallengeRogueTeamReplaceNodeView
+	},
+	{
+		name = "challengeRogueTeamReplaceNodePop",
+		component = ChallengeRogueTeamReplaceNodePopView
+	},
+	{
+		name = "challengeRogueTeamMapPreview",
+		component = ChallengeRogueTeamMapPreviewView
+	},
+	{
+		name = "challengeRogueTeamMapSwitchEffect",
+		component = ChallengeRogueTeamMapSwitchEffectView
+	},
+	{
+		name = "challengeRogueTeamBag",
+		component = ChallengeRogueTeamBagView
+	},
+	{
+		name = "challengeRogueTeamSectionInfo",
+		component = ChallengeRogueTeamSectionInfoView
+	},
+	{
+		name = "challengeRogueTeamTeamInfo",
+		component = ChallengeRogueTeamTeamInfoView
+	},
+	{
+		name = "challengeRogueTeamHeroSelect",
+		component = ChallengeRogueTeamHeroSelectView
+	},
+	{
+		name = "challengeRogueTeamOverStatistics",
+		component = ChallengeRogueTeamOverView
+	},
+	{
+		name = "challengeRogueTeamResult",
+		component = BattleRogueTeamResultView
+	},
+	{
+		name = "challengeRogueTeamSkillTree",
+		component = ChallengeRogueTeamSkillTreeView
+	},
+	{
+		name = "challengeRogueTeamSkillInfo",
+		component = ChallengeRogueTeamSkillInfoView
+	},
+	{
+		name = "challengeRogueTeamSectionSelectAttriDescription",
+		component = ChallengeRogueTeamSectionSelectAttriDescriptionView
+	},
+	{
+		name = "challengeRogueTeamRewardPop",
+		component = ChallengeRogueTeamRewardPopView
+	},
+	{
+		name = "challengeRogueTeamScorePop",
+		component = ChallengeRogueTeamScorePopView
+	},
+	{
+		name = "challengeRogueTeamIllustratedEntrace",
+		component = ChallengeRogueTeamIllustratedEntraceView
+	},
+	{
+		name = "challengeRogueTeamIllustratedTreasureEntrace",
+		component = ChallengeRogueTeamIllustratedTreasureEntraceView
+	},
+	{
+		name = "challengeRogueTeamIllustratedTreasure",
+		component = ChallengeRogueTeamIllustratedTreasureView
+	},
+	{
+		name = "challengeRogueTeamIllustratedEvent",
+		component = ChallengeRogueTeamIllustratedEventView
+	},
+	{
+		name = "challengeRogueTeamIllustratedRelic",
+		component = ChallengeRogueTeamIllustratedRelicView
+	},
+	{
+		name = "challengeRogueTeamIllustratedMechanism",
+		component = ChallengeRogueTeamIllustratedMechanismView
+	},
+	{
+		name = "challengeRogueTeamIllustratedEndingEntrace",
+		component = ChallengeRogueTeamIllustratedEndingEntraceView
+	},
+	{
+		name = "challengeRogueTeamIllustratedEndingPop",
+		component = ChallengeRogueTeamIllustratedEndingPopView
+	},
+	{
+		name = "challengeRogueTeamIllustratedTaskPop",
+		component = ChallengeRogueTeamIllustratedTaskPopView
+	},
+	{
+		name = "challengeRogueTeamSkillTreeEffectPop",
+		component = ChallengeRogueTeamSkillTreeEffectPopView
+	},
+	{
+		name = "challengeRogueTeamPortraitFull",
+		component = ChallengeRogueTeamPortraitFullView
+	},
+	{
+		name = "heroOneKeyUpgrandView",
+		component = HeroOneKeyUpgrandView
+	},
+	{
+		name = "operationRushPopView",
+		component = OperationRushPopView
+	},
+	{
+		name = "operationRushResultView",
+		component = OperationRushResultView
+	},
+	{
+		name = "operationRushAniView",
+		component = OperationRushAniView
 	}
 }

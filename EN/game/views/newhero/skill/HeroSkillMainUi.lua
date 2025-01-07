@@ -69,10 +69,12 @@ function var_0_0.ChangeTab(arg_9_0, arg_9_1)
 	end
 
 	arg_9_0.tabSelectController_:SetSelectedState(var_0_2[arg_9_1])
+	arg_9_0:ExitSendMgr(arg_9_0.selectTabType)
 
 	arg_9_0.selectTabType = arg_9_1
 
 	arg_9_0.skillView_:ChangeTabShow(arg_9_1)
+	arg_9_0:EnterSendMgr(arg_9_0.selectTabType)
 end
 
 function var_0_0.NotHaveAttrShow(arg_10_0, arg_10_1)
@@ -111,6 +113,8 @@ function var_0_0.OnEnter(arg_14_0)
 
 	if not arg_14_0.selectTabType or arg_14_0.heroViewDataProxy_:GetViewDataType() == HeroConst.HERO_DATA_TYPE.PREVIEW then
 		arg_14_0:ChangeTab(var_0_1.SKILL)
+	else
+		arg_14_0:EnterSendMgr(arg_14_0.selectTabType)
 	end
 
 	arg_14_0:CheckLocked()
@@ -151,6 +155,8 @@ function var_0_0.OnExit(arg_18_0)
 	if arg_18_0.skillView_ and arg_18_0.skillView_.isGoHeroMain then
 		arg_18_0:ChangeTab(var_0_1.SKILL)
 	end
+
+	arg_18_0:ExitSendMgr(arg_18_0.selectTabType)
 end
 
 function var_0_0.OnHeroSkillUpgrade(arg_19_0, arg_19_1, arg_19_2)
@@ -168,6 +174,22 @@ end
 function var_0_0.Dispose(arg_22_0)
 	arg_22_0.skillView_:Dispose()
 	var_0_0.super.Dispose(arg_22_0)
+end
+
+function var_0_0.EnterSendMgr(arg_23_0, arg_23_1)
+	if arg_23_1 then
+		local var_23_0 = var_0_2[arg_23_1]
+
+		manager.uiTime:OnEnterRoute(var_23_0)
+	end
+end
+
+function var_0_0.ExitSendMgr(arg_24_0, arg_24_1)
+	if arg_24_1 then
+		local var_24_0 = var_0_2[arg_24_1]
+
+		manager.uiTime:OnExitRoute(var_24_0)
+	end
 end
 
 return var_0_0

@@ -10,6 +10,9 @@ end
 
 function var_0_0.Init(arg_3_0)
 	arg_3_0:BindCfgUI()
+
+	arg_3_0.iconBg_.immediate = true
+
 	arg_3_0:AddListeners()
 
 	arg_3_0.controller_ = arg_3_0.btnController:GetController("btn")
@@ -61,7 +64,7 @@ function var_0_0.RefreshUI(arg_10_0)
 	local var_10_0 = GuildData:GetCacheGuildInfo(arg_10_0.guildID_)
 	local var_10_1 = ClubHeadIconCfg[var_10_0.icon]
 
-	arg_10_0.iconBg_.sprite = getSpriteViaConfig("ClubHeadIcon", var_10_1.bg)
+	arg_10_0.iconBg_.spriteSync = getSpritePathViaConfig("ClubHeadIcon", var_10_1.bg)
 	arg_10_0.idText_.text = string.format("ID:%s", var_10_0.id)
 	arg_10_0.nameText_.text = GetI18NText(var_10_0.name)
 	arg_10_0.levelText_.text = string.format(GetTips("CLUB_LEVEL"), var_10_0.level)

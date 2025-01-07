@@ -78,7 +78,6 @@ function var_0_0.SetData(arg_9_0, arg_9_1, arg_9_2)
 	arg_9_0.id_ = arg_9_2
 	arg_9_0.regionType_ = PuzzleNewClueCfg[arg_9_0.id_].area_type
 
-	arg_9_0:RebuildDescLayout()
 	arg_9_0:RefreshUI()
 end
 
@@ -99,6 +98,7 @@ function var_0_0.RefreshStatus(arg_11_0)
 
 			if TangramPuzzleData:GetSelecteClue(arg_11_0.activityID_, arg_11_0.id_) == true then
 				arg_11_0.tipsController_:SetSelectedState("on")
+				arg_11_0:RebuildDescLayout()
 				arg_11_0.animator_:Play("puzzleClueTemplate", -1, 99999)
 			else
 				arg_11_0.tipsController_:SetSelectedState("off")
@@ -114,6 +114,7 @@ function var_0_0.SetTipsController(arg_12_0, arg_12_1)
 	if arg_12_0.unlock_ == true then
 		arg_12_0.tipsController_:SetSelectedState(arg_12_1 == true and "on" or "off")
 		TangramPuzzleData:SetSelecteClue(arg_12_0.activityID_, arg_12_0.id_, arg_12_1)
+		arg_12_0:RebuildDescLayout()
 	end
 end
 
@@ -124,7 +125,8 @@ function var_0_0.RebuildDescLayout(arg_13_0)
 		arg_13_0.descRebuildTimer_ = nil
 	end
 
-	arg_13_0.descRebuildTimer_ = FrameTimer.New(function()
+	arg_13_0.descRebuildTimer_ = Timer.New(function()
+		UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_13_0.descText_.transform)
 		UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_13_0.descContentTrans_)
 
 		if arg_13_0.descRebuildTimer_ then
@@ -132,7 +134,7 @@ function var_0_0.RebuildDescLayout(arg_13_0)
 
 			arg_13_0.descRebuildTimer_ = nil
 		end
-	end, 1, 1)
+	end, 0.1, 1)
 
 	arg_13_0.descRebuildTimer_:Start()
 end

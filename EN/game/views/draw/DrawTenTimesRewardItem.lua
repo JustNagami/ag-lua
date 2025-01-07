@@ -29,6 +29,7 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
+	arg_4_0.m_portrait.immediate = true
 	arg_4_0.itemController_ = ControllerUtil.GetController(arg_4_0.transform_, "item")
 	arg_4_0.switchController_ = ControllerUtil.GetController(arg_4_0.transform_, "switch")
 	arg_4_0.rateController_ = ControllerUtil.GetController(arg_4_0.transform_, "rare")
@@ -72,7 +73,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
 		local var_6_9 = RaceEffectCfg[var_6_8.race]
 
 		arg_6_0.m_camp.sprite = getSprite("Atlas/CampItemAtlas", var_6_9.icon)
-		arg_6_0.m_portrait.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_6_3.id)
+		arg_6_0.m_portrait.spriteSync = "TextureConfig/Character/Icon/" .. var_6_3.id
 	elseif var_6_5 == ItemConst.ITEM_TYPE.WEAPON_SERVANT then
 		arg_6_0.itemController_:SetSelectedIndex(1)
 

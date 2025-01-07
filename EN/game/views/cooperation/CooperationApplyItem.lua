@@ -15,15 +15,16 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
-	arg_3_0.stateController = ControllerUtil.GetController(arg_3_0.transform_, "state")
-	arg_3_0.onlineController = ControllerUtil.GetController(arg_3_0.transform_, "online")
+	arg_3_0.commonPortrait_ = CommonHeadPortrait.New(arg_3_0.headItem_)
+	arg_3_0.stateController_ = arg_3_0.controlerEx_:GetController("state")
+	arg_3_0.onlineController_ = ControllerUtil.GetController(arg_3_0.transform_, "online")
 end
 
 function var_0_0.AddUIListener(arg_4_0)
-	arg_4_0:AddBtnListener(nil, arg_4_0.m_agreeBtn, function()
+	arg_4_0:AddBtnListener(nil, arg_4_0.agreeBtn_, function()
 		CooperationAction.ReceiveInvite(arg_4_0.uid)
 	end)
-	arg_4_0:AddBtnListener(nil, arg_4_0.m_refuseBtn, function()
+	arg_4_0:AddBtnListener(nil, arg_4_0.refuseBtn_, function()
 		CooperationAction.DelectInvite({
 			arg_4_0.uid
 		})
@@ -35,12 +36,22 @@ function var_0_0.SetData(arg_7_0, arg_7_1)
 	arg_7_0.dest = arg_7_1.dest
 	arg_7_0.uid = arg_7_1.uid
 	arg_7_0.room_id = arg_7_1.room_id
-	arg_7_0.m_name.text = GetI18NText(arg_7_1.nick)
-	arg_7_0.m_lvLab.text = "LV." .. arg_7_1.level
-	arg_7_0.m_icon.sprite = ItemTools.getItemSprite(arg_7_1.icon)
-	arg_7_0.m_frame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_7_1.icon_frame)
-	arg_7_0.m_timeLab.text = arg_7_0:GetOnLineText(arg_7_1.timestamp)
-	arg_7_0.m_destName.text = CooperationTools.GetCooperationRoomName(arg_7_1.battle_type, arg_7_1.dest, arg_7_1.activity_id)
+	arg_7_0.nameText_.text = GetI18NText(arg_7_1.nick)
+
+	arg_7_0.commonPortrait_:RenderHead(arg_7_1.icon)
+	arg_7_0.commonPortrait_:RenderFrame(arg_7_1.icon_frame)
+
+	arg_7_0.chatText_.text = CooperationTools.GetCooperationRoomName(arg_7_1.battle_type, arg_7_1.dest, arg_7_1.activity_id)
+
+	local var_7_0 = arg_7_1.timestamp or 0
+
+	if var_7_0 == 0 then
+		arg_7_0.onlineController_:SetSelectedIndex(0)
+	else
+		arg_7_0.offlineText_.text = manager.time:GetOnLineText(var_7_0)
+
+		arg_7_0.onlineController_:SetSelectedIndex(1)
+	end
 
 	arg_7_0:UpdateState()
 end
@@ -72,10 +83,11 @@ end
 function var_0_0.UpdateState(arg_9_0)
 	local var_9_0 = arg_9_0.data.refuse
 
-	arg_9_0.stateController:SetSelectedIndex(var_9_0 and 1 or 0)
+	arg_9_0.stateController_:SetSelectedIndex(var_9_0 and 1 or 0)
 end
 
 function var_0_0.Dispose(arg_10_0)
+	arg_10_0.commonPortrait_:Dispose()
 	var_0_0.super.Dispose(arg_10_0)
 end
 

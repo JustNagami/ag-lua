@@ -47,10 +47,12 @@ function var_0_0.UpdateView(arg_7_0)
 end
 
 function var_0_0.OnMonthCardDailyReward(arg_8_0)
+	manager.notify:CallUpdateFunc(SIGN_INPUT, true)
 	arg_8_0:UpdateView()
 end
 
 function var_0_0.AutoGetReward(arg_9_0)
+	manager.notify:CallUpdateFunc(SIGN_INPUT, false)
 	TimeTools.StartAfterSeconds(1, function()
 		PayAction.GetMonthCardBonus()
 	end, {})

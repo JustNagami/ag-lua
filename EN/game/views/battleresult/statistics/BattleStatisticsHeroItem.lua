@@ -54,7 +54,7 @@ function var_0_0.RefreshUI(arg_7_0)
 		local var_7_3 = arg_7_0.maxData_
 		local var_7_4 = arg_7_0.totalData_
 
-		arg_7_0.battleCountIcon_.sprite = HeroTools.GetBigHeadSprite(var_7_0.using_skin)
+		arg_7_0.battleCountIcon_.sprite = getSpriteViaConfig("HeroIcon", var_7_0.skin_id)
 
 		SetActive(arg_7_0.battleCountIcon_.gameObject, true)
 

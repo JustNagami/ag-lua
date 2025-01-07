@@ -114,11 +114,11 @@ function MatrixTools.GetMatrixItemSprite(arg_1_0)
 		return ItemTools.getItemSprite(tonumber(var_1_0.icon))
 	elseif var_1_0.matrix_item_type == MatrixConst.ITEM_TYPE.ASTROLABE then
 		if var_1_0.icon == "red" then
-			return getSprite("Atlas/Common", "icon_red_a")
+			return getSprite("Atlas/MatrixlUIAtlas", "icon_red_a")
 		elseif var_1_0.icon == "blue" then
-			return getSprite("Atlas/Common", "icon_blue_a")
+			return getSprite("Atlas/MatrixlUIAtlas", "icon_blue_a")
 		elseif var_1_0.icon == "yellow" then
-			return getSprite("Atlas/Common", "icon_yellow_a")
+			return getSprite("Atlas/MatrixlUIAtlas", "icon_yellow_a")
 		end
 	end
 

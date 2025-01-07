@@ -107,7 +107,16 @@ function var_0_0.OnMailListGet(arg_7_0)
 			var_0_5[iter_7_1.id].read_flag = var_0_0.GetCachedReadFlag(iter_7_1.id)
 		end
 
-		local var_7_1 = formatRewardCfgList(iter_7_1.attachment_list)
+		local var_7_1 = {}
+
+		for iter_7_8, iter_7_9 in ipairs(iter_7_1.attachment_list) do
+			local var_7_2 = {
+				id = iter_7_9.id,
+				num = iter_7_9.number
+			}
+
+			var_7_1 = mergeRewardItem(var_7_1, var_7_2)
+		end
 
 		var_0_5[iter_7_1.id].rewardList = var_7_1
 	end

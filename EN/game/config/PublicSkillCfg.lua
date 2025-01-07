@@ -5843,6 +5843,206 @@
 		id = 1081403,
 		skill_sub_type = 0
 	},
+	[1089001] = {
+		id = 1089001,
+		skill_sub_type = 0
+	},
+	[1089002] = {
+		id = 1089002,
+		skill_sub_type = 0
+	},
+	[1089003] = {
+		id = 1089003,
+		skill_sub_type = 0
+	},
+	[1089004] = {
+		id = 1089004,
+		skill_sub_type = 0
+	},
+	[1089005] = {
+		id = 1089005,
+		skill_sub_type = 0
+	},
+	[1089006] = {
+		id = 1089006,
+		skill_sub_type = 0
+	},
+	[1089010] = {
+		id = 1089010,
+		skill_sub_type = 0
+	},
+	[1089101] = {
+		id = 1089101,
+		skill_sub_type = 0
+	},
+	[1089102] = {
+		id = 1089102,
+		skill_sub_type = 0
+	},
+	[1089103] = {
+		id = 1089103,
+		skill_sub_type = 0
+	},
+	[1089104] = {
+		id = 1089104,
+		skill_sub_type = 0
+	},
+	[1089105] = {
+		id = 1089105,
+		skill_sub_type = 0
+	},
+	[1089106] = {
+		id = 1089106,
+		skill_sub_type = 0
+	},
+	[1089201] = {
+		id = 1089201,
+		skill_sub_type = 0
+	},
+	[1089211] = {
+		id = 1089211,
+		skill_sub_type = 0
+	},
+	[1089212] = {
+		id = 1089212,
+		skill_sub_type = 0
+	},
+	[1089202] = {
+		id = 1089202,
+		skill_sub_type = 0
+	},
+	[1089221] = {
+		id = 1089221,
+		skill_sub_type = 0
+	},
+	[1089222] = {
+		id = 1089222,
+		skill_sub_type = 0
+	},
+	[1089203] = {
+		id = 1089203,
+		skill_sub_type = 0
+	},
+	[1089051] = {
+		id = 1089051,
+		skill_sub_type = 0
+	},
+	[1089231] = {
+		id = 1089231,
+		skill_sub_type = 0
+	},
+	[1089054] = {
+		id = 1089054,
+		skill_sub_type = 0
+	},
+	[1089232] = {
+		id = 1089232,
+		skill_sub_type = 0
+	},
+	[1089052] = {
+		id = 1089052,
+		skill_sub_type = 0
+	},
+	[1089233] = {
+		id = 1089233,
+		skill_sub_type = 0
+	},
+	[1089053] = {
+		id = 1089053,
+		skill_sub_type = 0
+	},
+	[1089234] = {
+		id = 1089234,
+		skill_sub_type = 0
+	},
+	[1089235] = {
+		id = 1089235,
+		skill_sub_type = 0
+	},
+	[1089236] = {
+		id = 1089236,
+		skill_sub_type = 0
+	},
+	[1089209] = {
+		id = 1089209,
+		skill_sub_type = 0
+	},
+	[1089055] = {
+		id = 1089055,
+		skill_sub_type = 0
+	},
+	[1089302] = {
+		id = 1089302,
+		skill_sub_type = 0
+	},
+	[1089303] = {
+		id = 1089303,
+		skill_sub_type = 0
+	},
+	[1089304] = {
+		id = 1089304,
+		skill_sub_type = 0
+	},
+	[1089305] = {
+		id = 1089305,
+		skill_sub_type = 0
+	},
+	[1089306] = {
+		id = 1089306,
+		skill_sub_type = 0
+	},
+	[1089311] = {
+		id = 1089311,
+		skill_sub_type = 0
+	},
+	[1089312] = {
+		id = 1089312,
+		skill_sub_type = 0
+	},
+	[1089313] = {
+		id = 1089313,
+		skill_sub_type = 0
+	},
+	[1089314] = {
+		id = 1089314,
+		skill_sub_type = 0
+	},
+	[1089315] = {
+		id = 1089315,
+		skill_sub_type = 0
+	},
+	[1089316] = {
+		id = 1089316,
+		skill_sub_type = 0
+	},
+	[1089317] = {
+		id = 1089317,
+		skill_sub_type = 0
+	},
+	[1089319] = {
+		id = 1089319,
+		skill_sub_type = 0
+	},
+	[1089320] = {
+		id = 1089320,
+		skill_sub_type = 0
+	},
+	[1089325] = {
+		id = 1089325,
+		skill_sub_type = 0
+	},
+	[1089329] = {
+		id = 1089329,
+		skill_sub_type = 0
+	},
+	[1089401] = {
+		id = 1089401,
+		skill_sub_type = 0
+	},
+	[1089403] = {
+		id = 1089403,
+		skill_sub_type = 0
+	},
 	[1093101] = {
 		id = 1093101,
 		skill_sub_type = 0
@@ -9175,6 +9375,10 @@
 		id = 6051202,
 		skill_sub_type = 0
 	},
+	[6051221] = {
+		id = 6051221,
+		skill_sub_type = 0
+	},
 	[6051203] = {
 		id = 6051203,
 		skill_sub_type = 0
@@ -10783,6 +10987,10 @@
 		id = 1049090,
 		skill_sub_type = 0
 	},
+	[1049091] = {
+		id = 1049091,
+		skill_sub_type = 0
+	},
 	[1055305] = {
 		id = 1055305,
 		skill_sub_type = 0
@@ -12179,6 +12387,26 @@
 		id = 1284113,
 		skill_sub_type = 0
 	},
+	[1284114] = {
+		id = 1284114,
+		skill_sub_type = 0
+	},
+	[1284115] = {
+		id = 1284115,
+		skill_sub_type = 0
+	},
+	[1284116] = {
+		id = 1284116,
+		skill_sub_type = 0
+	},
+	[1284117] = {
+		id = 1284117,
+		skill_sub_type = 0
+	},
+	[1284118] = {
+		id = 1284118,
+		skill_sub_type = 0
+	},
 	[1284201] = {
 		id = 1284201,
 		skill_sub_type = 0
@@ -12263,8 +12491,24 @@
 		id = 1284065,
 		skill_sub_type = 0
 	},
+	[1284056] = {
+		id = 1284056,
+		skill_sub_type = 0
+	},
+	[1284058] = {
+		id = 1284058,
+		skill_sub_type = 0
+	},
+	[1284067] = {
+		id = 1284067,
+		skill_sub_type = 0
+	},
 	[1284231] = {
 		id = 1284231,
+		skill_sub_type = 0
+	},
+	[1284232] = {
+		id = 1284232,
 		skill_sub_type = 0
 	},
 	[1284209] = {
@@ -12567,8 +12811,1148 @@
 		id = 1197999,
 		skill_sub_type = 0
 	},
+	[1022101] = {
+		id = 1022101,
+		skill_sub_type = 0
+	},
+	[1022053] = {
+		id = 1022053,
+		skill_sub_type = 0
+	},
+	[1022102] = {
+		id = 1022102,
+		skill_sub_type = 0
+	},
+	[1022051] = {
+		id = 1022051,
+		skill_sub_type = 0
+	},
+	[1022052] = {
+		id = 1022052,
+		skill_sub_type = 0
+	},
+	[1022103] = {
+		id = 1022103,
+		skill_sub_type = 0
+	},
+	[1022063] = {
+		id = 1022063,
+		skill_sub_type = 0
+	},
+	[1022104] = {
+		id = 1022104,
+		skill_sub_type = 0
+	},
+	[1022055] = {
+		id = 1022055,
+		skill_sub_type = 0
+	},
+	[1022056] = {
+		id = 1022056,
+		skill_sub_type = 0
+	},
+	[1022058] = {
+		id = 1022058,
+		skill_sub_type = 0
+	},
+	[1022105] = {
+		id = 1022105,
+		skill_sub_type = 0
+	},
+	[1022057] = {
+		id = 1022057,
+		skill_sub_type = 0
+	},
+	[1022106] = {
+		id = 1022106,
+		skill_sub_type = 0
+	},
+	[1022107] = {
+		id = 1022107,
+		skill_sub_type = 0
+	},
+	[1022108] = {
+		id = 1022108,
+		skill_sub_type = 0
+	},
+	[1022109] = {
+		id = 1022109,
+		skill_sub_type = 0
+	},
+	[1022110] = {
+		id = 1022110,
+		skill_sub_type = 0
+	},
+	[1022201] = {
+		id = 1022201,
+		skill_sub_type = 0
+	},
+	[1022211] = {
+		id = 1022211,
+		skill_sub_type = 0
+	},
+	[1022202] = {
+		id = 1022202,
+		skill_sub_type = 0
+	},
+	[1022070] = {
+		id = 1022070,
+		skill_sub_type = 0
+	},
+	[1022221] = {
+		id = 1022221,
+		skill_sub_type = 0
+	},
+	[1022203] = {
+		id = 1022203,
+		skill_sub_type = 0
+	},
+	[1022231] = {
+		id = 1022231,
+		skill_sub_type = 0
+	},
+	[1022073] = {
+		id = 1022073,
+		skill_sub_type = 0
+	},
+	[1022204] = {
+		id = 1022204,
+		skill_sub_type = 0
+	},
+	[1022241] = {
+		id = 1022241,
+		skill_sub_type = 0
+	},
+	[1022064] = {
+		id = 1022064,
+		skill_sub_type = 0
+	},
+	[1022209] = {
+		id = 1022209,
+		skill_sub_type = 0
+	},
+	[1022305] = {
+		id = 1022305,
+		skill_sub_type = 0
+	},
+	[1022306] = {
+		id = 1022306,
+		skill_sub_type = 0
+	},
+	[1022304] = {
+		id = 1022304,
+		skill_sub_type = 0
+	},
+	[1022311] = {
+		id = 1022311,
+		skill_sub_type = 0
+	},
+	[1022314] = {
+		id = 1022314,
+		skill_sub_type = 0
+	},
+	[1022316] = {
+		id = 1022316,
+		skill_sub_type = 0
+	},
+	[1022317] = {
+		id = 1022317,
+		skill_sub_type = 0
+	},
+	[1022315] = {
+		id = 1022315,
+		skill_sub_type = 0
+	},
+	[1022312] = {
+		id = 1022312,
+		skill_sub_type = 0
+	},
+	[1022313] = {
+		id = 1022313,
+		skill_sub_type = 0
+	},
+	[1022319] = {
+		id = 1022319,
+		skill_sub_type = 0
+	},
+	[1022325] = {
+		id = 1022325,
+		skill_sub_type = 0
+	},
+	[1022320] = {
+		id = 1022320,
+		skill_sub_type = 0
+	},
+	[1022403] = {
+		id = 1022403,
+		skill_sub_type = 0
+	},
+	[1022004] = {
+		id = 1022004,
+		skill_sub_type = 0
+	},
+	[1022001] = {
+		id = 1022001,
+		skill_sub_type = 0
+	},
+	[1022302] = {
+		id = 1022302,
+		skill_sub_type = 0
+	},
+	[1022303] = {
+		id = 1022303,
+		skill_sub_type = 0
+	},
+	[1022005] = {
+		id = 1022005,
+		skill_sub_type = 0
+	},
+	[1022006] = {
+		id = 1022006,
+		skill_sub_type = 0
+	},
+	[1022002] = {
+		id = 1022002,
+		skill_sub_type = 0
+	},
+	[1022329] = {
+		id = 1022329,
+		skill_sub_type = 0
+	},
+	[1022401] = {
+		id = 1022401,
+		skill_sub_type = 0
+	},
+	[1022054] = {
+		id = 1022054,
+		skill_sub_type = 0
+	},
+	[1022060] = {
+		id = 1022060,
+		skill_sub_type = 0
+	},
+	[1022212] = {
+		id = 1022212,
+		skill_sub_type = 0
+	},
+	[1022061] = {
+		id = 1022061,
+		skill_sub_type = 0
+	},
+	[1022222] = {
+		id = 1022222,
+		skill_sub_type = 0
+	},
+	[1022062] = {
+		id = 1022062,
+		skill_sub_type = 0
+	},
+	[1022242] = {
+		id = 1022242,
+		skill_sub_type = 0
+	},
+	[1022059] = {
+		id = 1022059,
+		skill_sub_type = 0
+	},
+	[1022213] = {
+		id = 1022213,
+		skill_sub_type = 0
+	},
+	[1022066] = {
+		id = 1022066,
+		skill_sub_type = 0
+	},
+	[1022223] = {
+		id = 1022223,
+		skill_sub_type = 0
+	},
+	[1022067] = {
+		id = 1022067,
+		skill_sub_type = 0
+	},
+	[1022243] = {
+		id = 1022243,
+		skill_sub_type = 0
+	},
+	[1022065] = {
+		id = 1022065,
+		skill_sub_type = 0
+	},
+	[1022068] = {
+		id = 1022068,
+		skill_sub_type = 0
+	},
+	[1022069] = {
+		id = 1022069,
+		skill_sub_type = 0
+	},
+	[1022071] = {
+		id = 1022071,
+		skill_sub_type = 0
+	},
+	[1022072] = {
+		id = 1022072,
+		skill_sub_type = 0
+	},
+	[1022074] = {
+		id = 1022074,
+		skill_sub_type = 0
+	},
+	[1022205] = {
+		id = 1022205,
+		skill_sub_type = 0
+	},
+	[1022251] = {
+		id = 1022251,
+		skill_sub_type = 0
+	},
+	[1021101] = {
+		id = 1021101,
+		skill_sub_type = 0
+	},
+	[1021102] = {
+		id = 1021102,
+		skill_sub_type = 0
+	},
+	[1021103] = {
+		id = 1021103,
+		skill_sub_type = 0
+	},
+	[1021104] = {
+		id = 1021104,
+		skill_sub_type = 0
+	},
+	[1021105] = {
+		id = 1021105,
+		skill_sub_type = 0
+	},
+	[1021106] = {
+		id = 1021106,
+		skill_sub_type = 0
+	},
+	[1021107] = {
+		id = 1021107,
+		skill_sub_type = 0
+	},
+	[1021108] = {
+		id = 1021108,
+		skill_sub_type = 0
+	},
+	[1021109] = {
+		id = 1021109,
+		skill_sub_type = 0
+	},
+	[1021110] = {
+		id = 1021110,
+		skill_sub_type = 0
+	},
+	[1021111] = {
+		id = 1021111,
+		skill_sub_type = 0
+	},
+	[1021112] = {
+		id = 1021112,
+		skill_sub_type = 0
+	},
+	[1021201] = {
+		id = 1021201,
+		skill_sub_type = 0
+	},
+	[1021211] = {
+		id = 1021211,
+		skill_sub_type = 0
+	},
+	[1021212] = {
+		id = 1021212,
+		skill_sub_type = 0
+	},
+	[1021213] = {
+		id = 1021213,
+		skill_sub_type = 0
+	},
+	[1021202] = {
+		id = 1021202,
+		skill_sub_type = 0
+	},
+	[1021203] = {
+		id = 1021203,
+		skill_sub_type = 0
+	},
+	[1021231] = {
+		id = 1021231,
+		skill_sub_type = 0
+	},
+	[1021232] = {
+		id = 1021232,
+		skill_sub_type = 0
+	},
+	[1021204] = {
+		id = 1021204,
+		skill_sub_type = 0
+	},
+	[1021205] = {
+		id = 1021205,
+		skill_sub_type = 0
+	},
+	[1021251] = {
+		id = 1021251,
+		skill_sub_type = 0
+	},
+	[1021051] = {
+		id = 1021051,
+		skill_sub_type = 0
+	},
+	[1021052] = {
+		id = 1021052,
+		skill_sub_type = 0
+	},
+	[1021053] = {
+		id = 1021053,
+		skill_sub_type = 0
+	},
+	[1021054] = {
+		id = 1021054,
+		skill_sub_type = 0
+	},
+	[1021055] = {
+		id = 1021055,
+		skill_sub_type = 0
+	},
+	[1021056] = {
+		id = 1021056,
+		skill_sub_type = 0
+	},
+	[1021057] = {
+		id = 1021057,
+		skill_sub_type = 0
+	},
+	[1021058] = {
+		id = 1021058,
+		skill_sub_type = 0
+	},
+	[1021059] = {
+		id = 1021059,
+		skill_sub_type = 0
+	},
+	[1021060] = {
+		id = 1021060,
+		skill_sub_type = 0
+	},
+	[1021061] = {
+		id = 1021061,
+		skill_sub_type = 0
+	},
+	[1021062] = {
+		id = 1021062,
+		skill_sub_type = 0
+	},
+	[1021063] = {
+		id = 1021063,
+		skill_sub_type = 0
+	},
+	[1021064] = {
+		id = 1021064,
+		skill_sub_type = 0
+	},
+	[1021065] = {
+		id = 1021065,
+		skill_sub_type = 0
+	},
+	[1021066] = {
+		id = 1021066,
+		skill_sub_type = 0
+	},
+	[1021067] = {
+		id = 1021067,
+		skill_sub_type = 0
+	},
+	[1021068] = {
+		id = 1021068,
+		skill_sub_type = 0
+	},
+	[1021069] = {
+		id = 1021069,
+		skill_sub_type = 0
+	},
+	[1021070] = {
+		id = 1021070,
+		skill_sub_type = 0
+	},
+	[1021071] = {
+		id = 1021071,
+		skill_sub_type = 0
+	},
+	[1021073] = {
+		id = 1021073,
+		skill_sub_type = 0
+	},
+	[1021074] = {
+		id = 1021074,
+		skill_sub_type = 0
+	},
+	[1021075] = {
+		id = 1021075,
+		skill_sub_type = 0
+	},
+	[1021076] = {
+		id = 1021076,
+		skill_sub_type = 0
+	},
+	[1021077] = {
+		id = 1021077,
+		skill_sub_type = 0
+	},
+	[1021078] = {
+		id = 1021078,
+		skill_sub_type = 0
+	},
+	[1021079] = {
+		id = 1021079,
+		skill_sub_type = 0
+	},
+	[1021080] = {
+		id = 1021080,
+		skill_sub_type = 0
+	},
+	[1021081] = {
+		id = 1021081,
+		skill_sub_type = 0
+	},
+	[1021209] = {
+		id = 1021209,
+		skill_sub_type = 0
+	},
+	[1021999] = {
+		id = 1021999,
+		skill_sub_type = 0
+	},
+	[1021305] = {
+		id = 1021305,
+		skill_sub_type = 0
+	},
+	[1021306] = {
+		id = 1021306,
+		skill_sub_type = 0
+	},
+	[1021304] = {
+		id = 1021304,
+		skill_sub_type = 0
+	},
+	[1021311] = {
+		id = 1021311,
+		skill_sub_type = 0
+	},
+	[1021312] = {
+		id = 1021312,
+		skill_sub_type = 0
+	},
+	[1021313] = {
+		id = 1021313,
+		skill_sub_type = 0
+	},
+	[1021314] = {
+		id = 1021314,
+		skill_sub_type = 0
+	},
+	[1021315] = {
+		id = 1021315,
+		skill_sub_type = 0
+	},
+	[1021316] = {
+		id = 1021316,
+		skill_sub_type = 0
+	},
+	[1021317] = {
+		id = 1021317,
+		skill_sub_type = 0
+	},
+	[1021319] = {
+		id = 1021319,
+		skill_sub_type = 0
+	},
+	[1021320] = {
+		id = 1021320,
+		skill_sub_type = 0
+	},
+	[1021325] = {
+		id = 1021325,
+		skill_sub_type = 0
+	},
+	[1021329] = {
+		id = 1021329,
+		skill_sub_type = 0
+	},
+	[1021401] = {
+		id = 1021401,
+		skill_sub_type = 0
+	},
+	[1021403] = {
+		id = 1021403,
+		skill_sub_type = 0
+	},
+	[1021001] = {
+		id = 1021001,
+		skill_sub_type = 0
+	},
+	[1021002] = {
+		id = 1021002,
+		skill_sub_type = 0
+	},
+	[1021303] = {
+		id = 1021303,
+		skill_sub_type = 0
+	},
+	[1021302] = {
+		id = 1021302,
+		skill_sub_type = 0
+	},
+	[1021004] = {
+		id = 1021004,
+		skill_sub_type = 0
+	},
+	[1021005] = {
+		id = 1021005,
+		skill_sub_type = 0
+	},
+	[1021006] = {
+		id = 1021006,
+		skill_sub_type = 0
+	},
+	[1021206] = {
+		id = 1021206,
+		skill_sub_type = 0
+	},
+	[1021261] = {
+		id = 1021261,
+		skill_sub_type = 0
+	},
+	[1021262] = {
+		id = 1021262,
+		skill_sub_type = 0
+	},
+	[1020001] = {
+		id = 1020001,
+		skill_sub_type = 0
+	},
+	[1020002] = {
+		id = 1020002,
+		skill_sub_type = 0
+	},
+	[1020003] = {
+		id = 1020003,
+		skill_sub_type = 0
+	},
+	[1020004] = {
+		id = 1020004,
+		skill_sub_type = 0
+	},
+	[1020005] = {
+		id = 1020005,
+		skill_sub_type = 0
+	},
+	[1020006] = {
+		id = 1020006,
+		skill_sub_type = 0
+	},
+	[1020101] = {
+		id = 1020101,
+		skill_sub_type = 0
+	},
+	[1020102] = {
+		id = 1020102,
+		skill_sub_type = 0
+	},
+	[1020103] = {
+		id = 1020103,
+		skill_sub_type = 0
+	},
+	[1020104] = {
+		id = 1020104,
+		skill_sub_type = 0
+	},
+	[1020105] = {
+		id = 1020105,
+		skill_sub_type = 0
+	},
+	[1020106] = {
+		id = 1020106,
+		skill_sub_type = 0
+	},
+	[1020107] = {
+		id = 1020107,
+		skill_sub_type = 0
+	},
+	[1020108] = {
+		id = 1020108,
+		skill_sub_type = 0
+	},
+	[1020109] = {
+		id = 1020109,
+		skill_sub_type = 0
+	},
+	[1020110] = {
+		id = 1020110,
+		skill_sub_type = 0
+	},
+	[1020201] = {
+		id = 1020201,
+		skill_sub_type = 0
+	},
+	[1020211] = {
+		id = 1020211,
+		skill_sub_type = 0
+	},
+	[1020212] = {
+		id = 1020212,
+		skill_sub_type = 0
+	},
+	[1020213] = {
+		id = 1020213,
+		skill_sub_type = 0
+	},
+	[1020202] = {
+		id = 1020202,
+		skill_sub_type = 0
+	},
+	[1020221] = {
+		id = 1020221,
+		skill_sub_type = 0
+	},
+	[1020203] = {
+		id = 1020203,
+		skill_sub_type = 0
+	},
+	[1020231] = {
+		id = 1020231,
+		skill_sub_type = 0
+	},
+	[1020232] = {
+		id = 1020232,
+		skill_sub_type = 0
+	},
+	[1020233] = {
+		id = 1020233,
+		skill_sub_type = 0
+	},
+	[1020204] = {
+		id = 1020204,
+		skill_sub_type = 0
+	},
+	[1020241] = {
+		id = 1020241,
+		skill_sub_type = 0
+	},
+	[1020205] = {
+		id = 1020205,
+		skill_sub_type = 0
+	},
+	[1020251] = {
+		id = 1020251,
+		skill_sub_type = 0
+	},
+	[1020252] = {
+		id = 1020252,
+		skill_sub_type = 0
+	},
+	[1020253] = {
+		id = 1020253,
+		skill_sub_type = 0
+	},
+	[1020254] = {
+		id = 1020254,
+		skill_sub_type = 0
+	},
+	[1020255] = {
+		id = 1020255,
+		skill_sub_type = 0
+	},
+	[1020206] = {
+		id = 1020206,
+		skill_sub_type = 0
+	},
+	[1020207] = {
+		id = 1020207,
+		skill_sub_type = 0
+	},
+	[1020209] = {
+		id = 1020209,
+		skill_sub_type = 0
+	},
+	[1020291] = {
+		id = 1020291,
+		skill_sub_type = 0
+	},
+	[1020292] = {
+		id = 1020292,
+		skill_sub_type = 0
+	},
+	[1020293] = {
+		id = 1020293,
+		skill_sub_type = 0
+	},
+	[1020294] = {
+		id = 1020294,
+		skill_sub_type = 0
+	},
+	[1020302] = {
+		id = 1020302,
+		skill_sub_type = 0
+	},
+	[1020303] = {
+		id = 1020303,
+		skill_sub_type = 0
+	},
+	[1020304] = {
+		id = 1020304,
+		skill_sub_type = 0
+	},
+	[1020305] = {
+		id = 1020305,
+		skill_sub_type = 0
+	},
+	[1020306] = {
+		id = 1020306,
+		skill_sub_type = 0
+	},
+	[1020311] = {
+		id = 1020311,
+		skill_sub_type = 0
+	},
+	[1020312] = {
+		id = 1020312,
+		skill_sub_type = 0
+	},
+	[1020313] = {
+		id = 1020313,
+		skill_sub_type = 0
+	},
+	[1020314] = {
+		id = 1020314,
+		skill_sub_type = 0
+	},
+	[1020315] = {
+		id = 1020315,
+		skill_sub_type = 0
+	},
+	[1020316] = {
+		id = 1020316,
+		skill_sub_type = 0
+	},
+	[1020317] = {
+		id = 1020317,
+		skill_sub_type = 0
+	},
+	[1020319] = {
+		id = 1020319,
+		skill_sub_type = 0
+	},
+	[1020320] = {
+		id = 1020320,
+		skill_sub_type = 0
+	},
+	[1020325] = {
+		id = 1020325,
+		skill_sub_type = 0
+	},
+	[1020329] = {
+		id = 1020329,
+		skill_sub_type = 0
+	},
+	[1020401] = {
+		id = 1020401,
+		skill_sub_type = 0
+	},
+	[1020403] = {
+		id = 1020403,
+		skill_sub_type = 0
+	},
+	[1020051] = {
+		id = 1020051,
+		skill_sub_type = 0
+	},
+	[1020052] = {
+		id = 1020052,
+		skill_sub_type = 0
+	},
+	[1020054] = {
+		id = 1020054,
+		skill_sub_type = 0
+	},
+	[1020055] = {
+		id = 1020055,
+		skill_sub_type = 0
+	},
+	[1020071] = {
+		id = 1020071,
+		skill_sub_type = 0
+	},
+	[1020072] = {
+		id = 1020072,
+		skill_sub_type = 0
+	},
+	[1156001] = {
+		id = 1156001,
+		skill_sub_type = 0
+	},
+	[1156002] = {
+		id = 1156002,
+		skill_sub_type = 0
+	},
+	[1156003] = {
+		id = 1156003,
+		skill_sub_type = 0
+	},
+	[1156004] = {
+		id = 1156004,
+		skill_sub_type = 0
+	},
+	[1156005] = {
+		id = 1156005,
+		skill_sub_type = 0
+	},
+	[1156006] = {
+		id = 1156006,
+		skill_sub_type = 0
+	},
+	[1156010] = {
+		id = 1156010,
+		skill_sub_type = 0
+	},
+	[1156101] = {
+		id = 1156101,
+		skill_sub_type = 0
+	},
+	[1156102] = {
+		id = 1156102,
+		skill_sub_type = 0
+	},
+	[1156103] = {
+		id = 1156103,
+		skill_sub_type = 0
+	},
+	[1156104] = {
+		id = 1156104,
+		skill_sub_type = 0
+	},
+	[1156105] = {
+		id = 1156105,
+		skill_sub_type = 0
+	},
+	[1156106] = {
+		id = 1156106,
+		skill_sub_type = 0
+	},
+	[1156107] = {
+		id = 1156107,
+		skill_sub_type = 0
+	},
+	[1156108] = {
+		id = 1156108,
+		skill_sub_type = 0
+	},
+	[1156109] = {
+		id = 1156109,
+		skill_sub_type = 0
+	},
+	[1156110] = {
+		id = 1156110,
+		skill_sub_type = 0
+	},
+	[1156111] = {
+		id = 1156111,
+		skill_sub_type = 0
+	},
+	[1156112] = {
+		id = 1156112,
+		skill_sub_type = 0
+	},
+	[1156113] = {
+		id = 1156113,
+		skill_sub_type = 0
+	},
+	[1156114] = {
+		id = 1156114,
+		skill_sub_type = 0
+	},
+	[1156115] = {
+		id = 1156115,
+		skill_sub_type = 0
+	},
+	[1156201] = {
+		id = 1156201,
+		skill_sub_type = 0
+	},
+	[1156211] = {
+		id = 1156211,
+		skill_sub_type = 0
+	},
+	[1156212] = {
+		id = 1156212,
+		skill_sub_type = 0
+	},
+	[1156202] = {
+		id = 1156202,
+		skill_sub_type = 0
+	},
+	[1156221] = {
+		id = 1156221,
+		skill_sub_type = 0
+	},
+	[1156222] = {
+		id = 1156222,
+		skill_sub_type = 0
+	},
+	[1156203] = {
+		id = 1156203,
+		skill_sub_type = 1
+	},
+	[1156231] = {
+		id = 1156231,
+		skill_sub_type = 1
+	},
+	[1156232] = {
+		id = 1156232,
+		skill_sub_type = 1
+	},
+	[1156233] = {
+		id = 1156233,
+		skill_sub_type = 1
+	},
+	[1156234] = {
+		id = 1156234,
+		skill_sub_type = 1
+	},
+	[1156235] = {
+		id = 1156235,
+		skill_sub_type = 1
+	},
+	[1156236] = {
+		id = 1156236,
+		skill_sub_type = 1
+	},
+	[1156237] = {
+		id = 1156237,
+		skill_sub_type = 1
+	},
+	[1156209] = {
+		id = 1156209,
+		skill_sub_type = 0
+	},
+	[1156051] = {
+		id = 1156051,
+		skill_sub_type = 0
+	},
+	[1156052] = {
+		id = 1156052,
+		skill_sub_type = 0
+	},
+	[1156059] = {
+		id = 1156059,
+		skill_sub_type = 0
+	},
+	[1156060] = {
+		id = 1156060,
+		skill_sub_type = 0
+	},
+	[1156061] = {
+		id = 1156061,
+		skill_sub_type = 0
+	},
+	[1156302] = {
+		id = 1156302,
+		skill_sub_type = 0
+	},
+	[1156303] = {
+		id = 1156303,
+		skill_sub_type = 0
+	},
+	[1156304] = {
+		id = 1156304,
+		skill_sub_type = 0
+	},
+	[1156305] = {
+		id = 1156305,
+		skill_sub_type = 0
+	},
+	[1156306] = {
+		id = 1156306,
+		skill_sub_type = 0
+	},
+	[1156311] = {
+		id = 1156311,
+		skill_sub_type = 0
+	},
+	[1156312] = {
+		id = 1156312,
+		skill_sub_type = 0
+	},
+	[1156313] = {
+		id = 1156313,
+		skill_sub_type = 0
+	},
+	[1156314] = {
+		id = 1156314,
+		skill_sub_type = 0
+	},
+	[1156315] = {
+		id = 1156315,
+		skill_sub_type = 0
+	},
+	[1156316] = {
+		id = 1156316,
+		skill_sub_type = 0
+	},
+	[1156317] = {
+		id = 1156317,
+		skill_sub_type = 0
+	},
+	[1156319] = {
+		id = 1156319,
+		skill_sub_type = 0
+	},
+	[1156320] = {
+		id = 1156320,
+		skill_sub_type = 0
+	},
+	[1156325] = {
+		id = 1156325,
+		skill_sub_type = 0
+	},
+	[1156329] = {
+		id = 1156329,
+		skill_sub_type = 0
+	},
+	[1156401] = {
+		id = 1156401,
+		skill_sub_type = 0
+	},
+	[1156403] = {
+		id = 1156403,
+		skill_sub_type = 0
+	},
+	[1156501] = {
+		id = 1156501,
+		skill_sub_type = 0
+	},
+	[1156511] = {
+		id = 1156511,
+		skill_sub_type = 0
+	},
+	[1156502] = {
+		id = 1156502,
+		skill_sub_type = 0
+	},
+	[1156999] = {
+		id = 1156999,
+		skill_sub_type = 0
+	},
 	[2017101] = {
 		id = 2017101,
+		skill_sub_type = 0
+	},
+	[2017102] = {
+		id = 2017102,
 		skill_sub_type = 0
 	},
 	[2017201] = {
@@ -16139,6 +17523,10 @@
 		id = 2069102,
 		skill_sub_type = 0
 	},
+	[2069103] = {
+		id = 2069103,
+		skill_sub_type = 0
+	},
 	[2069001] = {
 		id = 2069001,
 		skill_sub_type = 0
@@ -16595,6 +17983,10 @@
 		id = 2076101,
 		skill_sub_type = 0
 	},
+	[2076102] = {
+		id = 2076102,
+		skill_sub_type = 0
+	},
 	[2076201] = {
 		id = 2076201,
 		skill_sub_type = 0
@@ -16611,8 +18003,28 @@
 		id = 2076213,
 		skill_sub_type = 0
 	},
+	[2076202] = {
+		id = 2076202,
+		skill_sub_type = 0
+	},
+	[2076221] = {
+		id = 2076221,
+		skill_sub_type = 0
+	},
+	[2076222] = {
+		id = 2076222,
+		skill_sub_type = 0
+	},
+	[2076223] = {
+		id = 2076223,
+		skill_sub_type = 0
+	},
 	[2076051] = {
 		id = 2076051,
+		skill_sub_type = 0
+	},
+	[2076052] = {
+		id = 2076052,
 		skill_sub_type = 0
 	},
 	[2076001] = {
@@ -17717,6 +19129,22 @@
 	},
 	[2093053] = {
 		id = 2093053,
+		skill_sub_type = 0
+	},
+	[2093201] = {
+		id = 2093201,
+		skill_sub_type = 0
+	},
+	[2093211] = {
+		id = 2093211,
+		skill_sub_type = 0
+	},
+	[2093212] = {
+		id = 2093212,
+		skill_sub_type = 0
+	},
+	[2093213] = {
+		id = 2093213,
 		skill_sub_type = 0
 	},
 	[2093311] = {
@@ -19029,6 +20457,614 @@
 	},
 	[2118323] = {
 		id = 2118323,
+		skill_sub_type = 0
+	},
+	[2119406] = {
+		id = 2119406,
+		skill_sub_type = 0
+	},
+	[2119001] = {
+		id = 2119001,
+		skill_sub_type = 0
+	},
+	[2119002] = {
+		id = 2119002,
+		skill_sub_type = 0
+	},
+	[2119350] = {
+		id = 2119350,
+		skill_sub_type = 0
+	},
+	[2119351] = {
+		id = 2119351,
+		skill_sub_type = 0
+	},
+	[2119101] = {
+		id = 2119101,
+		skill_sub_type = 0
+	},
+	[2119102] = {
+		id = 2119102,
+		skill_sub_type = 0
+	},
+	[2119103] = {
+		id = 2119103,
+		skill_sub_type = 0
+	},
+	[2119104] = {
+		id = 2119104,
+		skill_sub_type = 0
+	},
+	[2119051] = {
+		id = 2119051,
+		skill_sub_type = 0
+	},
+	[2119052] = {
+		id = 2119052,
+		skill_sub_type = 0
+	},
+	[2119201] = {
+		id = 2119201,
+		skill_sub_type = 0
+	},
+	[2119202] = {
+		id = 2119202,
+		skill_sub_type = 0
+	},
+	[2119314] = {
+		id = 2119314,
+		skill_sub_type = 0
+	},
+	[2119316] = {
+		id = 2119316,
+		skill_sub_type = 0
+	},
+	[2119317] = {
+		id = 2119317,
+		skill_sub_type = 0
+	},
+	[2119315] = {
+		id = 2119315,
+		skill_sub_type = 0
+	},
+	[2119312] = {
+		id = 2119312,
+		skill_sub_type = 0
+	},
+	[2119313] = {
+		id = 2119313,
+		skill_sub_type = 0
+	},
+	[2119311] = {
+		id = 2119311,
+		skill_sub_type = 0
+	},
+	[2119320] = {
+		id = 2119320,
+		skill_sub_type = 0
+	},
+	[2119323] = {
+		id = 2119323,
+		skill_sub_type = 0
+	},
+	[2120101] = {
+		id = 2120101,
+		skill_sub_type = 0
+	},
+	[2120102] = {
+		id = 2120102,
+		skill_sub_type = 0
+	},
+	[2120201] = {
+		id = 2120201,
+		skill_sub_type = 0
+	},
+	[2120202] = {
+		id = 2120202,
+		skill_sub_type = 0
+	},
+	[2120221] = {
+		id = 2120221,
+		skill_sub_type = 0
+	},
+	[2120222] = {
+		id = 2120222,
+		skill_sub_type = 0
+	},
+	[2120051] = {
+		id = 2120051,
+		skill_sub_type = 0
+	},
+	[2120052] = {
+		id = 2120052,
+		skill_sub_type = 0
+	},
+	[2120001] = {
+		id = 2120001,
+		skill_sub_type = 0
+	},
+	[2120002] = {
+		id = 2120002,
+		skill_sub_type = 0
+	},
+	[2120311] = {
+		id = 2120311,
+		skill_sub_type = 0
+	},
+	[2120320] = {
+		id = 2120320,
+		skill_sub_type = 0
+	},
+	[2120323] = {
+		id = 2120323,
+		skill_sub_type = 0
+	},
+	[2120325] = {
+		id = 2120325,
+		skill_sub_type = 0
+	},
+	[2120350] = {
+		id = 2120350,
+		skill_sub_type = 0
+	},
+	[2120351] = {
+		id = 2120351,
+		skill_sub_type = 0
+	},
+	[2120353] = {
+		id = 2120353,
+		skill_sub_type = 0
+	},
+	[2120354] = {
+		id = 2120354,
+		skill_sub_type = 0
+	},
+	[2120406] = {
+		id = 2120406,
+		skill_sub_type = 0
+	},
+	[2121406] = {
+		id = 2121406,
+		skill_sub_type = 0
+	},
+	[2121001] = {
+		id = 2121001,
+		skill_sub_type = 0
+	},
+	[2121002] = {
+		id = 2121002,
+		skill_sub_type = 0
+	},
+	[2121350] = {
+		id = 2121350,
+		skill_sub_type = 0
+	},
+	[2121351] = {
+		id = 2121351,
+		skill_sub_type = 0
+	},
+	[2121101] = {
+		id = 2121101,
+		skill_sub_type = 0
+	},
+	[2121102] = {
+		id = 2121102,
+		skill_sub_type = 0
+	},
+	[2121103] = {
+		id = 2121103,
+		skill_sub_type = 0
+	},
+	[2121051] = {
+		id = 2121051,
+		skill_sub_type = 0
+	},
+	[2121052] = {
+		id = 2121052,
+		skill_sub_type = 0
+	},
+	[2121201] = {
+		id = 2121201,
+		skill_sub_type = 0
+	},
+	[2121202] = {
+		id = 2121202,
+		skill_sub_type = 0
+	},
+	[2121221] = {
+		id = 2121221,
+		skill_sub_type = 0
+	},
+	[2121222] = {
+		id = 2121222,
+		skill_sub_type = 0
+	},
+	[2121314] = {
+		id = 2121314,
+		skill_sub_type = 0
+	},
+	[2121316] = {
+		id = 2121316,
+		skill_sub_type = 0
+	},
+	[2121317] = {
+		id = 2121317,
+		skill_sub_type = 0
+	},
+	[2121315] = {
+		id = 2121315,
+		skill_sub_type = 0
+	},
+	[2121312] = {
+		id = 2121312,
+		skill_sub_type = 0
+	},
+	[2121313] = {
+		id = 2121313,
+		skill_sub_type = 0
+	},
+	[2121311] = {
+		id = 2121311,
+		skill_sub_type = 0
+	},
+	[2121320] = {
+		id = 2121320,
+		skill_sub_type = 0
+	},
+	[2121323] = {
+		id = 2121323,
+		skill_sub_type = 0
+	},
+	[2122101] = {
+		id = 2122101,
+		skill_sub_type = 0
+	},
+	[2122201] = {
+		id = 2122201,
+		skill_sub_type = 0
+	},
+	[2122051] = {
+		id = 2122051,
+		skill_sub_type = 0
+	},
+	[2122001] = {
+		id = 2122001,
+		skill_sub_type = 0
+	},
+	[2122002] = {
+		id = 2122002,
+		skill_sub_type = 0
+	},
+	[2122311] = {
+		id = 2122311,
+		skill_sub_type = 0
+	},
+	[2122312] = {
+		id = 2122312,
+		skill_sub_type = 0
+	},
+	[2122313] = {
+		id = 2122313,
+		skill_sub_type = 0
+	},
+	[2122314] = {
+		id = 2122314,
+		skill_sub_type = 0
+	},
+	[2122315] = {
+		id = 2122315,
+		skill_sub_type = 0
+	},
+	[2122316] = {
+		id = 2122316,
+		skill_sub_type = 0
+	},
+	[2122317] = {
+		id = 2122317,
+		skill_sub_type = 0
+	},
+	[2122320] = {
+		id = 2122320,
+		skill_sub_type = 0
+	},
+	[2122350] = {
+		id = 2122350,
+		skill_sub_type = 0
+	},
+	[2122351] = {
+		id = 2122351,
+		skill_sub_type = 0
+	},
+	[2122323] = {
+		id = 2122323,
+		skill_sub_type = 0
+	},
+	[2122324] = {
+		id = 2122324,
+		skill_sub_type = 0
+	},
+	[2122406] = {
+		id = 2122406,
+		skill_sub_type = 0
+	},
+	[2122407] = {
+		id = 2122407,
+		skill_sub_type = 0
+	},
+	[2122408] = {
+		id = 2122408,
+		skill_sub_type = 0
+	},
+	[2123101] = {
+		id = 2123101,
+		skill_sub_type = 0
+	},
+	[2123201] = {
+		id = 2123201,
+		skill_sub_type = 0
+	},
+	[2123051] = {
+		id = 2123051,
+		skill_sub_type = 0
+	},
+	[2123001] = {
+		id = 2123001,
+		skill_sub_type = 0
+	},
+	[2123002] = {
+		id = 2123002,
+		skill_sub_type = 0
+	},
+	[2123311] = {
+		id = 2123311,
+		skill_sub_type = 0
+	},
+	[2123312] = {
+		id = 2123312,
+		skill_sub_type = 0
+	},
+	[2123313] = {
+		id = 2123313,
+		skill_sub_type = 0
+	},
+	[2123314] = {
+		id = 2123314,
+		skill_sub_type = 0
+	},
+	[2123315] = {
+		id = 2123315,
+		skill_sub_type = 0
+	},
+	[2123316] = {
+		id = 2123316,
+		skill_sub_type = 0
+	},
+	[2123317] = {
+		id = 2123317,
+		skill_sub_type = 0
+	},
+	[2123320] = {
+		id = 2123320,
+		skill_sub_type = 0
+	},
+	[2123350] = {
+		id = 2123350,
+		skill_sub_type = 0
+	},
+	[2123351] = {
+		id = 2123351,
+		skill_sub_type = 0
+	},
+	[2123323] = {
+		id = 2123323,
+		skill_sub_type = 0
+	},
+	[2123324] = {
+		id = 2123324,
+		skill_sub_type = 0
+	},
+	[2123406] = {
+		id = 2123406,
+		skill_sub_type = 0
+	},
+	[2123407] = {
+		id = 2123407,
+		skill_sub_type = 0
+	},
+	[2123408] = {
+		id = 2123408,
+		skill_sub_type = 0
+	},
+	[2124101] = {
+		id = 2124101,
+		skill_sub_type = 0
+	},
+	[2124051] = {
+		id = 2124051,
+		skill_sub_type = 0
+	},
+	[2124054] = {
+		id = 2124054,
+		skill_sub_type = 0
+	},
+	[2124102] = {
+		id = 2124102,
+		skill_sub_type = 0
+	},
+	[2124103] = {
+		id = 2124103,
+		skill_sub_type = 0
+	},
+	[2124201] = {
+		id = 2124201,
+		skill_sub_type = 0
+	},
+	[2124052] = {
+		id = 2124052,
+		skill_sub_type = 0
+	},
+	[2124053] = {
+		id = 2124053,
+		skill_sub_type = 0
+	},
+	[2124001] = {
+		id = 2124001,
+		skill_sub_type = 0
+	},
+	[2124002] = {
+		id = 2124002,
+		skill_sub_type = 0
+	},
+	[2124311] = {
+		id = 2124311,
+		skill_sub_type = 0
+	},
+	[2124312] = {
+		id = 2124312,
+		skill_sub_type = 0
+	},
+	[2124313] = {
+		id = 2124313,
+		skill_sub_type = 0
+	},
+	[2124314] = {
+		id = 2124314,
+		skill_sub_type = 0
+	},
+	[2124315] = {
+		id = 2124315,
+		skill_sub_type = 0
+	},
+	[2124316] = {
+		id = 2124316,
+		skill_sub_type = 0
+	},
+	[2124317] = {
+		id = 2124317,
+		skill_sub_type = 0
+	},
+	[2124320] = {
+		id = 2124320,
+		skill_sub_type = 0
+	},
+	[2124350] = {
+		id = 2124350,
+		skill_sub_type = 0
+	},
+	[2124351] = {
+		id = 2124351,
+		skill_sub_type = 0
+	},
+	[2124323] = {
+		id = 2124323,
+		skill_sub_type = 0
+	},
+	[2124324] = {
+		id = 2124324,
+		skill_sub_type = 0
+	},
+	[2124406] = {
+		id = 2124406,
+		skill_sub_type = 0
+	},
+	[2124407] = {
+		id = 2124407,
+		skill_sub_type = 0
+	},
+	[2124408] = {
+		id = 2124408,
+		skill_sub_type = 0
+	},
+	[2125001] = {
+		id = 2125001,
+		skill_sub_type = 0
+	},
+	[2125002] = {
+		id = 2125002,
+		skill_sub_type = 0
+	},
+	[2125323] = {
+		id = 2125323,
+		skill_sub_type = 0
+	},
+	[2125406] = {
+		id = 2125406,
+		skill_sub_type = 0
+	},
+	[2125311] = {
+		id = 2125311,
+		skill_sub_type = 0
+	},
+	[2125316] = {
+		id = 2125316,
+		skill_sub_type = 0
+	},
+	[2125317] = {
+		id = 2125317,
+		skill_sub_type = 0
+	},
+	[2125315] = {
+		id = 2125315,
+		skill_sub_type = 0
+	},
+	[2125312] = {
+		id = 2125312,
+		skill_sub_type = 0
+	},
+	[2125313] = {
+		id = 2125313,
+		skill_sub_type = 0
+	},
+	[2125319] = {
+		id = 2125319,
+		skill_sub_type = 0
+	},
+	[2125314] = {
+		id = 2125314,
+		skill_sub_type = 0
+	},
+	[2125320] = {
+		id = 2125320,
+		skill_sub_type = 0
+	},
+	[2125101] = {
+		id = 2125101,
+		skill_sub_type = 0
+	},
+	[2125051] = {
+		id = 2125051,
+		skill_sub_type = 0
+	},
+	[2125052] = {
+		id = 2125052,
+		skill_sub_type = 0
+	},
+	[2125201] = {
+		id = 2125201,
+		skill_sub_type = 0
+	},
+	[2125211] = {
+		id = 2125211,
+		skill_sub_type = 0
+	},
+	[2125212] = {
+		id = 2125212,
+		skill_sub_type = 0
+	},
+	[2125053] = {
+		id = 2125053,
+		skill_sub_type = 0
+	},
+	[2125054] = {
+		id = 2125054,
+		skill_sub_type = 0
+	},
+	[2125102] = {
+		id = 2125102,
+		skill_sub_type = 0
+	},
+	[2125055] = {
+		id = 2125055,
 		skill_sub_type = 0
 	},
 	[3004101] = {
@@ -21439,6 +23475,110 @@
 		id = 3025406,
 		skill_sub_type = 0
 	},
+	[3026001] = {
+		id = 3026001,
+		skill_sub_type = 0
+	},
+	[3026002] = {
+		id = 3026002,
+		skill_sub_type = 0
+	},
+	[3026101] = {
+		id = 3026101,
+		skill_sub_type = 0
+	},
+	[3026102] = {
+		id = 3026102,
+		skill_sub_type = 0
+	},
+	[3026053] = {
+		id = 3026053,
+		skill_sub_type = 0
+	},
+	[3026201] = {
+		id = 3026201,
+		skill_sub_type = 0
+	},
+	[3026051] = {
+		id = 3026051,
+		skill_sub_type = 0
+	},
+	[3026202] = {
+		id = 3026202,
+		skill_sub_type = 0
+	},
+	[3026221] = {
+		id = 3026221,
+		skill_sub_type = 0
+	},
+	[3026052] = {
+		id = 3026052,
+		skill_sub_type = 0
+	},
+	[3026304] = {
+		id = 3026304,
+		skill_sub_type = 0
+	},
+	[3026309] = {
+		id = 3026309,
+		skill_sub_type = 0
+	},
+	[3026311] = {
+		id = 3026311,
+		skill_sub_type = 0
+	},
+	[3026312] = {
+		id = 3026312,
+		skill_sub_type = 0
+	},
+	[3026313] = {
+		id = 3026313,
+		skill_sub_type = 0
+	},
+	[3026314] = {
+		id = 3026314,
+		skill_sub_type = 0
+	},
+	[3026315] = {
+		id = 3026315,
+		skill_sub_type = 0
+	},
+	[3026316] = {
+		id = 3026316,
+		skill_sub_type = 0
+	},
+	[3026317] = {
+		id = 3026317,
+		skill_sub_type = 0
+	},
+	[3026320] = {
+		id = 3026320,
+		skill_sub_type = 0
+	},
+	[3026326] = {
+		id = 3026326,
+		skill_sub_type = 0
+	},
+	[3026327] = {
+		id = 3026327,
+		skill_sub_type = 0
+	},
+	[3026350] = {
+		id = 3026350,
+		skill_sub_type = 0
+	},
+	[3026351] = {
+		id = 3026351,
+		skill_sub_type = 0
+	},
+	[3026401] = {
+		id = 3026401,
+		skill_sub_type = 0
+	},
+	[3026406] = {
+		id = 3026406,
+		skill_sub_type = 0
+	},
 	[3027001] = {
 		id = 3027001,
 		skill_sub_type = 0
@@ -23459,6 +25599,18 @@
 		id = 3045083,
 		skill_sub_type = 0
 	},
+	[3045084] = {
+		id = 3045084,
+		skill_sub_type = 0
+	},
+	[3045085] = {
+		id = 3045085,
+		skill_sub_type = 0
+	},
+	[3045086] = {
+		id = 3045086,
+		skill_sub_type = 0
+	},
 	[3045201] = {
 		id = 3045201,
 		skill_sub_type = 0
@@ -23485,6 +25637,14 @@
 	},
 	[3045203] = {
 		id = 3045203,
+		skill_sub_type = 0
+	},
+	[3045205] = {
+		id = 3045205,
+		skill_sub_type = 0
+	},
+	[3045251] = {
+		id = 3045251,
 		skill_sub_type = 0
 	},
 	[3045058] = {
@@ -23751,6 +25911,418 @@
 		id = 3046056,
 		skill_sub_type = 0
 	},
+	[3047001] = {
+		id = 3047001,
+		skill_sub_type = 0
+	},
+	[3047002] = {
+		id = 3047002,
+		skill_sub_type = 0
+	},
+	[3047101] = {
+		id = 3047101,
+		skill_sub_type = 0
+	},
+	[3047102] = {
+		id = 3047102,
+		skill_sub_type = 0
+	},
+	[3047103] = {
+		id = 3047103,
+		skill_sub_type = 0
+	},
+	[3047201] = {
+		id = 3047201,
+		skill_sub_type = 0
+	},
+	[3047211] = {
+		id = 3047211,
+		skill_sub_type = 0
+	},
+	[3047212] = {
+		id = 3047212,
+		skill_sub_type = 0
+	},
+	[3047213] = {
+		id = 3047213,
+		skill_sub_type = 0
+	},
+	[3047202] = {
+		id = 3047202,
+		skill_sub_type = 0
+	},
+	[3047051] = {
+		id = 3047051,
+		skill_sub_type = 0
+	},
+	[3047203] = {
+		id = 3047203,
+		skill_sub_type = 0
+	},
+	[3047232] = {
+		id = 3047232,
+		skill_sub_type = 0
+	},
+	[3047052] = {
+		id = 3047052,
+		skill_sub_type = 0
+	},
+	[3047304] = {
+		id = 3047304,
+		skill_sub_type = 0
+	},
+	[3047309] = {
+		id = 3047309,
+		skill_sub_type = 0
+	},
+	[3047326] = {
+		id = 3047326,
+		skill_sub_type = 0
+	},
+	[3047327] = {
+		id = 3047327,
+		skill_sub_type = 0
+	},
+	[3047311] = {
+		id = 3047311,
+		skill_sub_type = 0
+	},
+	[3047312] = {
+		id = 3047312,
+		skill_sub_type = 0
+	},
+	[3047313] = {
+		id = 3047313,
+		skill_sub_type = 0
+	},
+	[3047317] = {
+		id = 3047317,
+		skill_sub_type = 0
+	},
+	[3047316] = {
+		id = 3047316,
+		skill_sub_type = 0
+	},
+	[3047315] = {
+		id = 3047315,
+		skill_sub_type = 0
+	},
+	[3047320] = {
+		id = 3047320,
+		skill_sub_type = 0
+	},
+	[3047350] = {
+		id = 3047350,
+		skill_sub_type = 0
+	},
+	[3047351] = {
+		id = 3047351,
+		skill_sub_type = 0
+	},
+	[3047401] = {
+		id = 3047401,
+		skill_sub_type = 0
+	},
+	[3047406] = {
+		id = 3047406,
+		skill_sub_type = 0
+	},
+	[3048001] = {
+		id = 3048001,
+		skill_sub_type = 0
+	},
+	[3048002] = {
+		id = 3048002,
+		skill_sub_type = 0
+	},
+	[3048101] = {
+		id = 3048101,
+		skill_sub_type = 0
+	},
+	[3048102] = {
+		id = 3048102,
+		skill_sub_type = 0
+	},
+	[3048103] = {
+		id = 3048103,
+		skill_sub_type = 0
+	},
+	[3048201] = {
+		id = 3048201,
+		skill_sub_type = 0
+	},
+	[3048211] = {
+		id = 3048211,
+		skill_sub_type = 0
+	},
+	[3048212] = {
+		id = 3048212,
+		skill_sub_type = 0
+	},
+	[3048213] = {
+		id = 3048213,
+		skill_sub_type = 0
+	},
+	[3048202] = {
+		id = 3048202,
+		skill_sub_type = 0
+	},
+	[3048051] = {
+		id = 3048051,
+		skill_sub_type = 0
+	},
+	[3048203] = {
+		id = 3048203,
+		skill_sub_type = 0
+	},
+	[3048232] = {
+		id = 3048232,
+		skill_sub_type = 0
+	},
+	[3048052] = {
+		id = 3048052,
+		skill_sub_type = 0
+	},
+	[3048304] = {
+		id = 3048304,
+		skill_sub_type = 0
+	},
+	[3048309] = {
+		id = 3048309,
+		skill_sub_type = 0
+	},
+	[3048326] = {
+		id = 3048326,
+		skill_sub_type = 0
+	},
+	[3048327] = {
+		id = 3048327,
+		skill_sub_type = 0
+	},
+	[3048311] = {
+		id = 3048311,
+		skill_sub_type = 0
+	},
+	[3048312] = {
+		id = 3048312,
+		skill_sub_type = 0
+	},
+	[3048313] = {
+		id = 3048313,
+		skill_sub_type = 0
+	},
+	[3048317] = {
+		id = 3048317,
+		skill_sub_type = 0
+	},
+	[3048316] = {
+		id = 3048316,
+		skill_sub_type = 0
+	},
+	[3048315] = {
+		id = 3048315,
+		skill_sub_type = 0
+	},
+	[3048320] = {
+		id = 3048320,
+		skill_sub_type = 0
+	},
+	[3048350] = {
+		id = 3048350,
+		skill_sub_type = 0
+	},
+	[3048351] = {
+		id = 3048351,
+		skill_sub_type = 0
+	},
+	[3048401] = {
+		id = 3048401,
+		skill_sub_type = 0
+	},
+	[3048406] = {
+		id = 3048406,
+		skill_sub_type = 0
+	},
+	[3049101] = {
+		id = 3049101,
+		skill_sub_type = 0
+	},
+	[3049102] = {
+		id = 3049102,
+		skill_sub_type = 0
+	},
+	[3049211] = {
+		id = 3049211,
+		skill_sub_type = 0
+	},
+	[3049201] = {
+		id = 3049201,
+		skill_sub_type = 0
+	},
+	[3049202] = {
+		id = 3049202,
+		skill_sub_type = 0
+	},
+	[3049054] = {
+		id = 3049054,
+		skill_sub_type = 0
+	},
+	[3049221] = {
+		id = 3049221,
+		skill_sub_type = 0
+	},
+	[3049001] = {
+		id = 3049001,
+		skill_sub_type = 0
+	},
+	[3049203] = {
+		id = 3049203,
+		skill_sub_type = 0
+	},
+	[3049231] = {
+		id = 3049231,
+		skill_sub_type = 0
+	},
+	[3049232] = {
+		id = 3049232,
+		skill_sub_type = 0
+	},
+	[3049305] = {
+		id = 3049305,
+		skill_sub_type = 0
+	},
+	[3049306] = {
+		id = 3049306,
+		skill_sub_type = 0
+	},
+	[3049309] = {
+		id = 3049309,
+		skill_sub_type = 0
+	},
+	[3049326] = {
+		id = 3049326,
+		skill_sub_type = 0
+	},
+	[3049327] = {
+		id = 3049327,
+		skill_sub_type = 0
+	},
+	[3049311] = {
+		id = 3049311,
+		skill_sub_type = 0
+	},
+	[3049320] = {
+		id = 3049320,
+		skill_sub_type = 0
+	},
+	[3049002] = {
+		id = 3049002,
+		skill_sub_type = 0
+	},
+	[3049304] = {
+		id = 3049304,
+		skill_sub_type = 0
+	},
+	[3049204] = {
+		id = 3049204,
+		skill_sub_type = 0
+	},
+	[3049051] = {
+		id = 3049051,
+		skill_sub_type = 0
+	},
+	[3049052] = {
+		id = 3049052,
+		skill_sub_type = 0
+	},
+	[3049053] = {
+		id = 3049053,
+		skill_sub_type = 0
+	},
+	[3049205] = {
+		id = 3049205,
+		skill_sub_type = 0
+	},
+	[3049206] = {
+		id = 3049206,
+		skill_sub_type = 0
+	},
+	[3049055] = {
+		id = 3049055,
+		skill_sub_type = 0
+	},
+	[3049056] = {
+		id = 3049056,
+		skill_sub_type = 0
+	},
+	[3049057] = {
+		id = 3049057,
+		skill_sub_type = 0
+	},
+	[3049058] = {
+		id = 3049058,
+		skill_sub_type = 0
+	},
+	[3049059] = {
+		id = 3049059,
+		skill_sub_type = 0
+	},
+	[3049060] = {
+		id = 3049060,
+		skill_sub_type = 0
+	},
+	[3049061] = {
+		id = 3049061,
+		skill_sub_type = 0
+	},
+	[3049062] = {
+		id = 3049062,
+		skill_sub_type = 0
+	},
+	[3049063] = {
+		id = 3049063,
+		skill_sub_type = 0
+	},
+	[3049064] = {
+		id = 3049064,
+		skill_sub_type = 0
+	},
+	[3049065] = {
+		id = 3049065,
+		skill_sub_type = 0
+	},
+	[3049066] = {
+		id = 3049066,
+		skill_sub_type = 0
+	},
+	[3049207] = {
+		id = 3049207,
+		skill_sub_type = 0
+	},
+	[3049329] = {
+		id = 3049329,
+		skill_sub_type = 0
+	},
+	[3049350] = {
+		id = 3049350,
+		skill_sub_type = 0
+	},
+	[3049351] = {
+		id = 3049351,
+		skill_sub_type = 0
+	},
+	[3049406] = {
+		id = 3049406,
+		skill_sub_type = 0
+	},
+	[3049323] = {
+		id = 3049323,
+		skill_sub_type = 0
+	},
+	[3049401] = {
+		id = 3049401,
+		skill_sub_type = 0
+	},
 	[3501101] = {
 		id = 3501101,
 		skill_sub_type = 0
@@ -23801,6 +26373,18 @@
 	},
 	[3517406] = {
 		id = 3517406,
+		skill_sub_type = 0
+	},
+	[3528001] = {
+		id = 3528001,
+		skill_sub_type = 0
+	},
+	[3528101] = {
+		id = 3528101,
+		skill_sub_type = 0
+	},
+	[3528304] = {
+		id = 3528304,
 		skill_sub_type = 0
 	},
 	[4010101] = {
@@ -24135,6 +26719,42 @@
 		id = 4012207,
 		skill_sub_type = 0
 	},
+	[4012208] = {
+		id = 4012208,
+		skill_sub_type = 0
+	},
+	[4012281] = {
+		id = 4012281,
+		skill_sub_type = 0
+	},
+	[4012282] = {
+		id = 4012282,
+		skill_sub_type = 0
+	},
+	[4012283] = {
+		id = 4012283,
+		skill_sub_type = 0
+	},
+	[4012284] = {
+		id = 4012284,
+		skill_sub_type = 0
+	},
+	[4012285] = {
+		id = 4012285,
+		skill_sub_type = 0
+	},
+	[4012286] = {
+		id = 4012286,
+		skill_sub_type = 0
+	},
+	[4012287] = {
+		id = 4012287,
+		skill_sub_type = 0
+	},
+	[4012288] = {
+		id = 4012288,
+		skill_sub_type = 0
+	},
 	[4012051] = {
 		id = 4012051,
 		skill_sub_type = 0
@@ -24157,6 +26777,82 @@
 	},
 	[4012056] = {
 		id = 4012056,
+		skill_sub_type = 0
+	},
+	[4012057] = {
+		id = 4012057,
+		skill_sub_type = 0
+	},
+	[4012058] = {
+		id = 4012058,
+		skill_sub_type = 0
+	},
+	[4012059] = {
+		id = 4012059,
+		skill_sub_type = 0
+	},
+	[4012060] = {
+		id = 4012060,
+		skill_sub_type = 0
+	},
+	[4012061] = {
+		id = 4012061,
+		skill_sub_type = 0
+	},
+	[4012062] = {
+		id = 4012062,
+		skill_sub_type = 0
+	},
+	[4012063] = {
+		id = 4012063,
+		skill_sub_type = 0
+	},
+	[4012064] = {
+		id = 4012064,
+		skill_sub_type = 0
+	},
+	[4012065] = {
+		id = 4012065,
+		skill_sub_type = 0
+	},
+	[4012066] = {
+		id = 4012066,
+		skill_sub_type = 0
+	},
+	[4012067] = {
+		id = 4012067,
+		skill_sub_type = 0
+	},
+	[4012068] = {
+		id = 4012068,
+		skill_sub_type = 0
+	},
+	[4012069] = {
+		id = 4012069,
+		skill_sub_type = 0
+	},
+	[4012070] = {
+		id = 4012070,
+		skill_sub_type = 0
+	},
+	[4012071] = {
+		id = 4012071,
+		skill_sub_type = 0
+	},
+	[4012072] = {
+		id = 4012072,
+		skill_sub_type = 0
+	},
+	[4012073] = {
+		id = 4012073,
+		skill_sub_type = 0
+	},
+	[4012074] = {
+		id = 4012074,
+		skill_sub_type = 0
+	},
+	[4012075] = {
+		id = 4012075,
 		skill_sub_type = 0
 	},
 	[4012304] = {
@@ -24273,6 +26969,10 @@
 	},
 	[4013242] = {
 		id = 4013242,
+		skill_sub_type = 0
+	},
+	[4013063] = {
+		id = 4013063,
 		skill_sub_type = 0
 	},
 	[4013057] = {
@@ -24883,6 +27583,10 @@
 		id = 4020231,
 		skill_sub_type = 0
 	},
+	[4020232] = {
+		id = 4020232,
+		skill_sub_type = 0
+	},
 	[4020204] = {
 		id = 4020204,
 		skill_sub_type = 0
@@ -24897,6 +27601,10 @@
 	},
 	[4020052] = {
 		id = 4020052,
+		skill_sub_type = 0
+	},
+	[4020053] = {
+		id = 4020053,
 		skill_sub_type = 0
 	},
 	[4020304] = {
@@ -25969,6 +28677,18 @@
 	},
 	[4025072] = {
 		id = 4025072,
+		skill_sub_type = 0
+	},
+	[4025234] = {
+		id = 4025234,
+		skill_sub_type = 0
+	},
+	[4025235] = {
+		id = 4025235,
+		skill_sub_type = 0
+	},
+	[4025236] = {
+		id = 4025236,
 		skill_sub_type = 0
 	},
 	[4025204] = {
@@ -27253,6 +29973,14 @@
 	},
 	[4032401] = {
 		id = 4032401,
+		skill_sub_type = 0
+	},
+	[4032501] = {
+		id = 4032501,
+		skill_sub_type = 0
+	},
+	[4032502] = {
+		id = 4032502,
 		skill_sub_type = 0
 	},
 	[4034101] = {
@@ -28647,6 +31375,10 @@
 		id = 4040059,
 		skill_sub_type = 0
 	},
+	[4040257] = {
+		id = 4040257,
+		skill_sub_type = 0
+	},
 	[4040001] = {
 		id = 4040001,
 		skill_sub_type = 0
@@ -28999,6 +31731,374 @@
 		id = 4041304,
 		skill_sub_type = 0
 	},
+	[4042401] = {
+		id = 4042401,
+		skill_sub_type = 0
+	},
+	[4042406] = {
+		id = 4042406,
+		skill_sub_type = 0
+	},
+	[4042101] = {
+		id = 4042101,
+		skill_sub_type = 0
+	},
+	[4042054] = {
+		id = 4042054,
+		skill_sub_type = 0
+	},
+	[4042102] = {
+		id = 4042102,
+		skill_sub_type = 0
+	},
+	[4042103] = {
+		id = 4042103,
+		skill_sub_type = 0
+	},
+	[4042104] = {
+		id = 4042104,
+		skill_sub_type = 0
+	},
+	[4042105] = {
+		id = 4042105,
+		skill_sub_type = 0
+	},
+	[4042106] = {
+		id = 4042106,
+		skill_sub_type = 0
+	},
+	[4042107] = {
+		id = 4042107,
+		skill_sub_type = 0
+	},
+	[4042304] = {
+		id = 4042304,
+		skill_sub_type = 0
+	},
+	[4042320] = {
+		id = 4042320,
+		skill_sub_type = 0
+	},
+	[4042201] = {
+		id = 4042201,
+		skill_sub_type = 0
+	},
+	[4042211] = {
+		id = 4042211,
+		skill_sub_type = 0
+	},
+	[4042212] = {
+		id = 4042212,
+		skill_sub_type = 0
+	},
+	[4042202] = {
+		id = 4042202,
+		skill_sub_type = 0
+	},
+	[4042203] = {
+		id = 4042203,
+		skill_sub_type = 0
+	},
+	[4042204] = {
+		id = 4042204,
+		skill_sub_type = 0
+	},
+	[4042241] = {
+		id = 4042241,
+		skill_sub_type = 0
+	},
+	[4042242] = {
+		id = 4042242,
+		skill_sub_type = 0
+	},
+	[4042205] = {
+		id = 4042205,
+		skill_sub_type = 0
+	},
+	[4042206] = {
+		id = 4042206,
+		skill_sub_type = 0
+	},
+	[4042261] = {
+		id = 4042261,
+		skill_sub_type = 0
+	},
+	[4042262] = {
+		id = 4042262,
+		skill_sub_type = 0
+	},
+	[4042207] = {
+		id = 4042207,
+		skill_sub_type = 0
+	},
+	[4042208] = {
+		id = 4042208,
+		skill_sub_type = 0
+	},
+	[4042281] = {
+		id = 4042281,
+		skill_sub_type = 0
+	},
+	[4042282] = {
+		id = 4042282,
+		skill_sub_type = 0
+	},
+	[4042283] = {
+		id = 4042283,
+		skill_sub_type = 0
+	},
+	[4042001] = {
+		id = 4042001,
+		skill_sub_type = 0
+	},
+	[4042284] = {
+		id = 4042284,
+		skill_sub_type = 0
+	},
+	[4042051] = {
+		id = 4042051,
+		skill_sub_type = 0
+	},
+	[4042052] = {
+		id = 4042052,
+		skill_sub_type = 0
+	},
+	[4042053] = {
+		id = 4042053,
+		skill_sub_type = 0
+	},
+	[4042055] = {
+		id = 4042055,
+		skill_sub_type = 0
+	},
+	[4042056] = {
+		id = 4042056,
+		skill_sub_type = 0
+	},
+	[4042057] = {
+		id = 4042057,
+		skill_sub_type = 0
+	},
+	[4042058] = {
+		id = 4042058,
+		skill_sub_type = 0
+	},
+	[4042059] = {
+		id = 4042059,
+		skill_sub_type = 0
+	},
+	[4042060] = {
+		id = 4042060,
+		skill_sub_type = 0
+	},
+	[4042061] = {
+		id = 4042061,
+		skill_sub_type = 0
+	},
+	[4042062] = {
+		id = 4042062,
+		skill_sub_type = 0
+	},
+	[4042271] = {
+		id = 4042271,
+		skill_sub_type = 0
+	},
+	[4043101] = {
+		id = 4043101,
+		skill_sub_type = 0
+	},
+	[4043102] = {
+		id = 4043102,
+		skill_sub_type = 0
+	},
+	[4043103] = {
+		id = 4043103,
+		skill_sub_type = 0
+	},
+	[4043057] = {
+		id = 4043057,
+		skill_sub_type = 0
+	},
+	[4043104] = {
+		id = 4043104,
+		skill_sub_type = 0
+	},
+	[4043105] = {
+		id = 4043105,
+		skill_sub_type = 0
+	},
+	[4043106] = {
+		id = 4043106,
+		skill_sub_type = 0
+	},
+	[4043059] = {
+		id = 4043059,
+		skill_sub_type = 0
+	},
+	[4043060] = {
+		id = 4043060,
+		skill_sub_type = 0
+	},
+	[4043201] = {
+		id = 4043201,
+		skill_sub_type = 0
+	},
+	[4043051] = {
+		id = 4043051,
+		skill_sub_type = 0
+	},
+	[4043053] = {
+		id = 4043053,
+		skill_sub_type = 0
+	},
+	[4043211] = {
+		id = 4043211,
+		skill_sub_type = 0
+	},
+	[4043212] = {
+		id = 4043212,
+		skill_sub_type = 0
+	},
+	[4043213] = {
+		id = 4043213,
+		skill_sub_type = 0
+	},
+	[4043202] = {
+		id = 4043202,
+		skill_sub_type = 0
+	},
+	[4043061] = {
+		id = 4043061,
+		skill_sub_type = 0
+	},
+	[4043058] = {
+		id = 4043058,
+		skill_sub_type = 0
+	},
+	[4043054] = {
+		id = 4043054,
+		skill_sub_type = 0
+	},
+	[4043203] = {
+		id = 4043203,
+		skill_sub_type = 0
+	},
+	[4043056] = {
+		id = 4043056,
+		skill_sub_type = 0
+	},
+	[4043063] = {
+		id = 4043063,
+		skill_sub_type = 0
+	},
+	[4043231] = {
+		id = 4043231,
+		skill_sub_type = 0
+	},
+	[4043204] = {
+		id = 4043204,
+		skill_sub_type = 0
+	},
+	[4043241] = {
+		id = 4043241,
+		skill_sub_type = 0
+	},
+	[4043205] = {
+		id = 4043205,
+		skill_sub_type = 0
+	},
+	[4043064] = {
+		id = 4043064,
+		skill_sub_type = 0
+	},
+	[4043067] = {
+		id = 4043067,
+		skill_sub_type = 0
+	},
+	[4043251] = {
+		id = 4043251,
+		skill_sub_type = 0
+	},
+	[4043206] = {
+		id = 4043206,
+		skill_sub_type = 0
+	},
+	[4043052] = {
+		id = 4043052,
+		skill_sub_type = 0
+	},
+	[4043055] = {
+		id = 4043055,
+		skill_sub_type = 0
+	},
+	[4043062] = {
+		id = 4043062,
+		skill_sub_type = 0
+	},
+	[4043001] = {
+		id = 4043001,
+		skill_sub_type = 0
+	},
+	[4043002] = {
+		id = 4043002,
+		skill_sub_type = 0
+	},
+	[4043304] = {
+		id = 4043304,
+		skill_sub_type = 0
+	},
+	[4043305] = {
+		id = 4043305,
+		skill_sub_type = 0
+	},
+	[4043306] = {
+		id = 4043306,
+		skill_sub_type = 0
+	},
+	[4043309] = {
+		id = 4043309,
+		skill_sub_type = 0
+	},
+	[4043311] = {
+		id = 4043311,
+		skill_sub_type = 0
+	},
+	[4043320] = {
+		id = 4043320,
+		skill_sub_type = 0
+	},
+	[4043325] = {
+		id = 4043325,
+		skill_sub_type = 0
+	},
+	[4043326] = {
+		id = 4043326,
+		skill_sub_type = 0
+	},
+	[4043327] = {
+		id = 4043327,
+		skill_sub_type = 0
+	},
+	[4043350] = {
+		id = 4043350,
+		skill_sub_type = 0
+	},
+	[4043351] = {
+		id = 4043351,
+		skill_sub_type = 0
+	},
+	[4043406] = {
+		id = 4043406,
+		skill_sub_type = 0
+	},
+	[4043065] = {
+		id = 4043065,
+		skill_sub_type = 0
+	},
+	[4043066] = {
+		id = 4043066,
+		skill_sub_type = 0
+	},
 	[5011101] = {
 		id = 5011101,
 		skill_sub_type = 0
@@ -29201,6 +32301,386 @@
 	},
 	[50110043] = {
 		id = 50110043,
+		skill_sub_type = 0
+	},
+	[5013101] = {
+		id = 5013101,
+		skill_sub_type = 0
+	},
+	[5013102] = {
+		id = 5013102,
+		skill_sub_type = 0
+	},
+	[5013103] = {
+		id = 5013103,
+		skill_sub_type = 0
+	},
+	[5013104] = {
+		id = 5013104,
+		skill_sub_type = 0
+	},
+	[5013105] = {
+		id = 5013105,
+		skill_sub_type = 0
+	},
+	[5013201] = {
+		id = 5013201,
+		skill_sub_type = 0
+	},
+	[5013202] = {
+		id = 5013202,
+		skill_sub_type = 0
+	},
+	[5013203] = {
+		id = 5013203,
+		skill_sub_type = 0
+	},
+	[5013204] = {
+		id = 5013204,
+		skill_sub_type = 0
+	},
+	[5013209] = {
+		id = 5013209,
+		skill_sub_type = 0
+	},
+	[5013001] = {
+		id = 5013001,
+		skill_sub_type = 0
+	},
+	[5013002] = {
+		id = 5013002,
+		skill_sub_type = 0
+	},
+	[5013003] = {
+		id = 5013003,
+		skill_sub_type = 0
+	},
+	[5013004] = {
+		id = 5013004,
+		skill_sub_type = 0
+	},
+	[5013005] = {
+		id = 5013005,
+		skill_sub_type = 0
+	},
+	[5013006] = {
+		id = 5013006,
+		skill_sub_type = 0
+	},
+	[5013010] = {
+		id = 5013010,
+		skill_sub_type = 0
+	},
+	[5013302] = {
+		id = 5013302,
+		skill_sub_type = 0
+	},
+	[5013303] = {
+		id = 5013303,
+		skill_sub_type = 0
+	},
+	[5013304] = {
+		id = 5013304,
+		skill_sub_type = 0
+	},
+	[5013305] = {
+		id = 5013305,
+		skill_sub_type = 0
+	},
+	[5013306] = {
+		id = 5013306,
+		skill_sub_type = 0
+	},
+	[5013311] = {
+		id = 5013311,
+		skill_sub_type = 0
+	},
+	[5013312] = {
+		id = 5013312,
+		skill_sub_type = 0
+	},
+	[5013313] = {
+		id = 5013313,
+		skill_sub_type = 0
+	},
+	[5013314] = {
+		id = 5013314,
+		skill_sub_type = 0
+	},
+	[5013315] = {
+		id = 5013315,
+		skill_sub_type = 0
+	},
+	[5013316] = {
+		id = 5013316,
+		skill_sub_type = 0
+	},
+	[5013317] = {
+		id = 5013317,
+		skill_sub_type = 0
+	},
+	[5013319] = {
+		id = 5013319,
+		skill_sub_type = 0
+	},
+	[5013320] = {
+		id = 5013320,
+		skill_sub_type = 0
+	},
+	[5013325] = {
+		id = 5013325,
+		skill_sub_type = 0
+	},
+	[5013401] = {
+		id = 5013401,
+		skill_sub_type = 0
+	},
+	[5013403] = {
+		id = 5013403,
+		skill_sub_type = 0
+	},
+	[5013051] = {
+		id = 5013051,
+		skill_sub_type = 0
+	},
+	[5013052] = {
+		id = 5013052,
+		skill_sub_type = 0
+	},
+	[5013053] = {
+		id = 5013053,
+		skill_sub_type = 0
+	},
+	[5013054] = {
+		id = 5013054,
+		skill_sub_type = 0
+	},
+	[5013055] = {
+		id = 5013055,
+		skill_sub_type = 0
+	},
+	[5013056] = {
+		id = 5013056,
+		skill_sub_type = 0
+	},
+	[5013057] = {
+		id = 5013057,
+		skill_sub_type = 0
+	},
+	[5013058] = {
+		id = 5013058,
+		skill_sub_type = 0
+	},
+	[5013059] = {
+		id = 5013059,
+		skill_sub_type = 0
+	},
+	[5013060] = {
+		id = 5013060,
+		skill_sub_type = 0
+	},
+	[5013061] = {
+		id = 5013061,
+		skill_sub_type = 0
+	},
+	[5013062] = {
+		id = 5013062,
+		skill_sub_type = 0
+	},
+	[5013063] = {
+		id = 5013063,
+		skill_sub_type = 0
+	},
+	[5013064] = {
+		id = 5013064,
+		skill_sub_type = 0
+	},
+	[5013065] = {
+		id = 5013065,
+		skill_sub_type = 0
+	},
+	[5013066] = {
+		id = 5013066,
+		skill_sub_type = 0
+	},
+	[5013067] = {
+		id = 5013067,
+		skill_sub_type = 0
+	},
+	[5013068] = {
+		id = 5013068,
+		skill_sub_type = 0
+	},
+	[5015001] = {
+		id = 5015001,
+		skill_sub_type = 0
+	},
+	[5015002] = {
+		id = 5015002,
+		skill_sub_type = 0
+	},
+	[5015004] = {
+		id = 5015004,
+		skill_sub_type = 0
+	},
+	[5015005] = {
+		id = 5015005,
+		skill_sub_type = 0
+	},
+	[5015006] = {
+		id = 5015006,
+		skill_sub_type = 0
+	},
+	[5015051] = {
+		id = 5015051,
+		skill_sub_type = 0
+	},
+	[5015052] = {
+		id = 5015052,
+		skill_sub_type = 0
+	},
+	[5015101] = {
+		id = 5015101,
+		skill_sub_type = 0
+	},
+	[5015102] = {
+		id = 5015102,
+		skill_sub_type = 0
+	},
+	[5015103] = {
+		id = 5015103,
+		skill_sub_type = 0
+	},
+	[5015201] = {
+		id = 5015201,
+		skill_sub_type = 0
+	},
+	[5015211] = {
+		id = 5015211,
+		skill_sub_type = 0
+	},
+	[5015212] = {
+		id = 5015212,
+		skill_sub_type = 0
+	},
+	[5015213] = {
+		id = 5015213,
+		skill_sub_type = 0
+	},
+	[5015202] = {
+		id = 5015202,
+		skill_sub_type = 0
+	},
+	[5015221] = {
+		id = 5015221,
+		skill_sub_type = 0
+	},
+	[5015203] = {
+		id = 5015203,
+		skill_sub_type = 0
+	},
+	[5015231] = {
+		id = 5015231,
+		skill_sub_type = 0
+	},
+	[5015232] = {
+		id = 5015232,
+		skill_sub_type = 0
+	},
+	[5015204] = {
+		id = 5015204,
+		skill_sub_type = 0
+	},
+	[5015241] = {
+		id = 5015241,
+		skill_sub_type = 0
+	},
+	[5015242] = {
+		id = 5015242,
+		skill_sub_type = 0
+	},
+	[5015243] = {
+		id = 5015243,
+		skill_sub_type = 0
+	},
+	[5015271] = {
+		id = 5015271,
+		skill_sub_type = 0
+	},
+	[5015273] = {
+		id = 5015273,
+		skill_sub_type = 0
+	},
+	[5015209] = {
+		id = 5015209,
+		skill_sub_type = 0
+	},
+	[5015302] = {
+		id = 5015302,
+		skill_sub_type = 0
+	},
+	[5015303] = {
+		id = 5015303,
+		skill_sub_type = 0
+	},
+	[5015304] = {
+		id = 5015304,
+		skill_sub_type = 0
+	},
+	[5015305] = {
+		id = 5015305,
+		skill_sub_type = 0
+	},
+	[5015306] = {
+		id = 5015306,
+		skill_sub_type = 0
+	},
+	[5015311] = {
+		id = 5015311,
+		skill_sub_type = 0
+	},
+	[5015312] = {
+		id = 5015312,
+		skill_sub_type = 0
+	},
+	[5015313] = {
+		id = 5015313,
+		skill_sub_type = 0
+	},
+	[5015314] = {
+		id = 5015314,
+		skill_sub_type = 0
+	},
+	[5015315] = {
+		id = 5015315,
+		skill_sub_type = 0
+	},
+	[5015316] = {
+		id = 5015316,
+		skill_sub_type = 0
+	},
+	[5015317] = {
+		id = 5015317,
+		skill_sub_type = 0
+	},
+	[5015319] = {
+		id = 5015319,
+		skill_sub_type = 0
+	},
+	[5015320] = {
+		id = 5015320,
+		skill_sub_type = 0
+	},
+	[5015325] = {
+		id = 5015325,
+		skill_sub_type = 0
+	},
+	[5015401] = {
+		id = 5015401,
+		skill_sub_type = 0
+	},
+	[5015403] = {
+		id = 5015403,
 		skill_sub_type = 0
 	},
 	[5016001] = {
@@ -31263,6 +34743,254 @@
 		id = 5055602,
 		skill_sub_type = 0
 	},
+	[5061001] = {
+		id = 5061001,
+		skill_sub_type = 0
+	},
+	[5061002] = {
+		id = 5061002,
+		skill_sub_type = 0
+	},
+	[5061004] = {
+		id = 5061004,
+		skill_sub_type = 0
+	},
+	[5061005] = {
+		id = 5061005,
+		skill_sub_type = 0
+	},
+	[5061006] = {
+		id = 5061006,
+		skill_sub_type = 0
+	},
+	[5061101] = {
+		id = 5061101,
+		skill_sub_type = 0
+	},
+	[5061102] = {
+		id = 5061102,
+		skill_sub_type = 0
+	},
+	[5061103] = {
+		id = 5061103,
+		skill_sub_type = 0
+	},
+	[5061104] = {
+		id = 5061104,
+		skill_sub_type = 0
+	},
+	[5061105] = {
+		id = 5061105,
+		skill_sub_type = 0
+	},
+	[5061201] = {
+		id = 5061201,
+		skill_sub_type = 0
+	},
+	[5061202] = {
+		id = 5061202,
+		skill_sub_type = 0
+	},
+	[5061203] = {
+		id = 5061203,
+		skill_sub_type = 0
+	},
+	[5061231] = {
+		id = 5061231,
+		skill_sub_type = 0
+	},
+	[5061232] = {
+		id = 5061232,
+		skill_sub_type = 0
+	},
+	[5061233] = {
+		id = 5061233,
+		skill_sub_type = 0
+	},
+	[5061204] = {
+		id = 5061204,
+		skill_sub_type = 0
+	},
+	[5061241] = {
+		id = 5061241,
+		skill_sub_type = 0
+	},
+	[5061242] = {
+		id = 5061242,
+		skill_sub_type = 0
+	},
+	[5061243] = {
+		id = 5061243,
+		skill_sub_type = 0
+	},
+	[5061244] = {
+		id = 5061244,
+		skill_sub_type = 0
+	},
+	[5061205] = {
+		id = 5061205,
+		skill_sub_type = 0
+	},
+	[5061251] = {
+		id = 5061251,
+		skill_sub_type = 0
+	},
+	[5061252] = {
+		id = 5061252,
+		skill_sub_type = 0
+	},
+	[5061253] = {
+		id = 5061253,
+		skill_sub_type = 0
+	},
+	[5061206] = {
+		id = 5061206,
+		skill_sub_type = 0
+	},
+	[5061261] = {
+		id = 5061261,
+		skill_sub_type = 0
+	},
+	[5061262] = {
+		id = 5061262,
+		skill_sub_type = 0
+	},
+	[5061209] = {
+		id = 5061209,
+		skill_sub_type = 0
+	},
+	[5061302] = {
+		id = 5061302,
+		skill_sub_type = 0
+	},
+	[5061303] = {
+		id = 5061303,
+		skill_sub_type = 0
+	},
+	[5061304] = {
+		id = 5061304,
+		skill_sub_type = 0
+	},
+	[5061305] = {
+		id = 5061305,
+		skill_sub_type = 0
+	},
+	[5061306] = {
+		id = 5061306,
+		skill_sub_type = 0
+	},
+	[5061311] = {
+		id = 5061311,
+		skill_sub_type = 0
+	},
+	[5061312] = {
+		id = 5061312,
+		skill_sub_type = 0
+	},
+	[5061313] = {
+		id = 5061313,
+		skill_sub_type = 0
+	},
+	[5061314] = {
+		id = 5061314,
+		skill_sub_type = 0
+	},
+	[5061315] = {
+		id = 5061315,
+		skill_sub_type = 0
+	},
+	[5061316] = {
+		id = 5061316,
+		skill_sub_type = 0
+	},
+	[5061317] = {
+		id = 5061317,
+		skill_sub_type = 0
+	},
+	[5061319] = {
+		id = 5061319,
+		skill_sub_type = 0
+	},
+	[5061320] = {
+		id = 5061320,
+		skill_sub_type = 0
+	},
+	[5061325] = {
+		id = 5061325,
+		skill_sub_type = 0
+	},
+	[5061401] = {
+		id = 5061401,
+		skill_sub_type = 0
+	},
+	[5061403] = {
+		id = 5061403,
+		skill_sub_type = 0
+	},
+	[5061051] = {
+		id = 5061051,
+		skill_sub_type = 0
+	},
+	[5061052] = {
+		id = 5061052,
+		skill_sub_type = 0
+	},
+	[5061053] = {
+		id = 5061053,
+		skill_sub_type = 0
+	},
+	[5061054] = {
+		id = 5061054,
+		skill_sub_type = 0
+	},
+	[5061055] = {
+		id = 5061055,
+		skill_sub_type = 0
+	},
+	[5061056] = {
+		id = 5061056,
+		skill_sub_type = 0
+	},
+	[5061057] = {
+		id = 5061057,
+		skill_sub_type = 0
+	},
+	[5061058] = {
+		id = 5061058,
+		skill_sub_type = 0
+	},
+	[5061059] = {
+		id = 5061059,
+		skill_sub_type = 0
+	},
+	[5061060] = {
+		id = 5061060,
+		skill_sub_type = 0
+	},
+	[5061061] = {
+		id = 5061061,
+		skill_sub_type = 0
+	},
+	[5061062] = {
+		id = 5061062,
+		skill_sub_type = 0
+	},
+	[5061063] = {
+		id = 5061063,
+		skill_sub_type = 0
+	},
+	[5061064] = {
+		id = 5061064,
+		skill_sub_type = 0
+	},
+	[5061065] = {
+		id = 5061065,
+		skill_sub_type = 0
+	},
+	[5061066] = {
+		id = 5061066,
+		skill_sub_type = 0
+	},
 	[5067001] = {
 		id = 5067001,
 		skill_sub_type = 0
@@ -33171,10 +36899,6 @@
 		id = 5081242,
 		skill_sub_type = 2
 	},
-	[5081243] = {
-		id = 5081243,
-		skill_sub_type = 0
-	},
 	[5081205] = {
 		id = 5081205,
 		skill_sub_type = 0
@@ -33245,10 +36969,6 @@
 	},
 	[5081325] = {
 		id = 5081325,
-		skill_sub_type = 0
-	},
-	[5081329] = {
-		id = 5081329,
 		skill_sub_type = 0
 	},
 	[5081401] = {
@@ -33913,6 +37633,366 @@
 	},
 	[50940043] = {
 		id = 50940043,
+		skill_sub_type = 0
+	},
+	[5095001] = {
+		id = 5095001,
+		skill_sub_type = 0
+	},
+	[5095002] = {
+		id = 5095002,
+		skill_sub_type = 0
+	},
+	[5095004] = {
+		id = 5095004,
+		skill_sub_type = 0
+	},
+	[5095005] = {
+		id = 5095005,
+		skill_sub_type = 0
+	},
+	[5095006] = {
+		id = 5095006,
+		skill_sub_type = 0
+	},
+	[5095101] = {
+		id = 5095101,
+		skill_sub_type = 0
+	},
+	[5095051] = {
+		id = 5095051,
+		skill_sub_type = 0
+	},
+	[5095102] = {
+		id = 5095102,
+		skill_sub_type = 0
+	},
+	[5095052] = {
+		id = 5095052,
+		skill_sub_type = 0
+	},
+	[5095103] = {
+		id = 5095103,
+		skill_sub_type = 0
+	},
+	[5095053] = {
+		id = 5095053,
+		skill_sub_type = 0
+	},
+	[5095104] = {
+		id = 5095104,
+		skill_sub_type = 0
+	},
+	[5095054] = {
+		id = 5095054,
+		skill_sub_type = 0
+	},
+	[5095105] = {
+		id = 5095105,
+		skill_sub_type = 0
+	},
+	[5095056] = {
+		id = 5095056,
+		skill_sub_type = 0
+	},
+	[5095106] = {
+		id = 5095106,
+		skill_sub_type = 0
+	},
+	[5095107] = {
+		id = 5095107,
+		skill_sub_type = 0
+	},
+	[5095075] = {
+		id = 5095075,
+		skill_sub_type = 0
+	},
+	[5095076] = {
+		id = 5095076,
+		skill_sub_type = 0
+	},
+	[5095108] = {
+		id = 5095108,
+		skill_sub_type = 0
+	},
+	[5095109] = {
+		id = 5095109,
+		skill_sub_type = 0
+	},
+	[5095110] = {
+		id = 5095110,
+		skill_sub_type = 0
+	},
+	[5095055] = {
+		id = 5095055,
+		skill_sub_type = 0
+	},
+	[5095077] = {
+		id = 5095077,
+		skill_sub_type = 0
+	},
+	[5095078] = {
+		id = 5095078,
+		skill_sub_type = 0
+	},
+	[5095079] = {
+		id = 5095079,
+		skill_sub_type = 0
+	},
+	[5095201] = {
+		id = 5095201,
+		skill_sub_type = 0
+	},
+	[5095059] = {
+		id = 5095059,
+		skill_sub_type = 0
+	},
+	[5095211] = {
+		id = 5095211,
+		skill_sub_type = 0
+	},
+	[5095060] = {
+		id = 5095060,
+		skill_sub_type = 0
+	},
+	[5095080] = {
+		id = 5095080,
+		skill_sub_type = 0
+	},
+	[5095212] = {
+		id = 5095212,
+		skill_sub_type = 0
+	},
+	[5095071] = {
+		id = 5095071,
+		skill_sub_type = 0
+	},
+	[5095073] = {
+		id = 5095073,
+		skill_sub_type = 0
+	},
+	[5095074] = {
+		id = 5095074,
+		skill_sub_type = 0
+	},
+	[5095081] = {
+		id = 5095081,
+		skill_sub_type = 0
+	},
+	[5095202] = {
+		id = 5095202,
+		skill_sub_type = 0
+	},
+	[5095057] = {
+		id = 5095057,
+		skill_sub_type = 0
+	},
+	[5095221] = {
+		id = 5095221,
+		skill_sub_type = 0
+	},
+	[5095058] = {
+		id = 5095058,
+		skill_sub_type = 0
+	},
+	[5095072] = {
+		id = 5095072,
+		skill_sub_type = 0
+	},
+	[5095203] = {
+		id = 5095203,
+		skill_sub_type = 0
+	},
+	[5095231] = {
+		id = 5095231,
+		skill_sub_type = 0
+	},
+	[5095062] = {
+		id = 5095062,
+		skill_sub_type = 0
+	},
+	[5095068] = {
+		id = 5095068,
+		skill_sub_type = 0
+	},
+	[5095069] = {
+		id = 5095069,
+		skill_sub_type = 0
+	},
+	[5095070] = {
+		id = 5095070,
+		skill_sub_type = 0
+	},
+	[5095233] = {
+		id = 5095233,
+		skill_sub_type = 0
+	},
+	[5095063] = {
+		id = 5095063,
+		skill_sub_type = 0
+	},
+	[5095234] = {
+		id = 5095234,
+		skill_sub_type = 0
+	},
+	[5095064] = {
+		id = 5095064,
+		skill_sub_type = 0
+	},
+	[5095232] = {
+		id = 5095232,
+		skill_sub_type = 0
+	},
+	[5095065] = {
+		id = 5095065,
+		skill_sub_type = 0
+	},
+	[5095067] = {
+		id = 5095067,
+		skill_sub_type = 0
+	},
+	[5095204] = {
+		id = 5095204,
+		skill_sub_type = 0
+	},
+	[5095235] = {
+		id = 5095235,
+		skill_sub_type = 0
+	},
+	[5095066] = {
+		id = 5095066,
+		skill_sub_type = 0
+	},
+	[5095061] = {
+		id = 5095061,
+		skill_sub_type = 0
+	},
+	[5095209] = {
+		id = 5095209,
+		skill_sub_type = 0
+	},
+	[5095302] = {
+		id = 5095302,
+		skill_sub_type = 0
+	},
+	[5095303] = {
+		id = 5095303,
+		skill_sub_type = 0
+	},
+	[5095304] = {
+		id = 5095304,
+		skill_sub_type = 0
+	},
+	[5095305] = {
+		id = 5095305,
+		skill_sub_type = 0
+	},
+	[5095306] = {
+		id = 5095306,
+		skill_sub_type = 0
+	},
+	[5095311] = {
+		id = 5095311,
+		skill_sub_type = 0
+	},
+	[5095312] = {
+		id = 5095312,
+		skill_sub_type = 0
+	},
+	[5095313] = {
+		id = 5095313,
+		skill_sub_type = 0
+	},
+	[5095314] = {
+		id = 5095314,
+		skill_sub_type = 0
+	},
+	[5095315] = {
+		id = 5095315,
+		skill_sub_type = 0
+	},
+	[5095316] = {
+		id = 5095316,
+		skill_sub_type = 0
+	},
+	[5095317] = {
+		id = 5095317,
+		skill_sub_type = 0
+	},
+	[5095319] = {
+		id = 5095319,
+		skill_sub_type = 0
+	},
+	[5095320] = {
+		id = 5095320,
+		skill_sub_type = 0
+	},
+	[5095325] = {
+		id = 5095325,
+		skill_sub_type = 0
+	},
+	[5095329] = {
+		id = 5095329,
+		skill_sub_type = 0
+	},
+	[5095401] = {
+		id = 5095401,
+		skill_sub_type = 0
+	},
+	[5095403] = {
+		id = 5095403,
+		skill_sub_type = 0
+	},
+	[5095999] = {
+		id = 5095999,
+		skill_sub_type = 0
+	},
+	[50950011] = {
+		id = 50950011,
+		skill_sub_type = 0
+	},
+	[50950012] = {
+		id = 50950012,
+		skill_sub_type = 0
+	},
+	[50950013] = {
+		id = 50950013,
+		skill_sub_type = 0
+	},
+	[50950021] = {
+		id = 50950021,
+		skill_sub_type = 0
+	},
+	[50950022] = {
+		id = 50950022,
+		skill_sub_type = 0
+	},
+	[50950023] = {
+		id = 50950023,
+		skill_sub_type = 0
+	},
+	[50950031] = {
+		id = 50950031,
+		skill_sub_type = 0
+	},
+	[50950032] = {
+		id = 50950032,
+		skill_sub_type = 0
+	},
+	[50950033] = {
+		id = 50950033,
+		skill_sub_type = 0
+	},
+	[50950041] = {
+		id = 50950041,
+		skill_sub_type = 0
+	},
+	[50950042] = {
+		id = 50950042,
+		skill_sub_type = 0
+	},
+	[50950043] = {
+		id = 50950043,
 		skill_sub_type = 0
 	},
 	[5096101] = {
@@ -34949,6 +39029,14 @@
 	},
 	[5139006] = {
 		id = 5139006,
+		skill_sub_type = 0
+	},
+	[5139205] = {
+		id = 5139205,
+		skill_sub_type = 0
+	},
+	[5139206] = {
+		id = 5139206,
 		skill_sub_type = 0
 	},
 	[5119101] = {
@@ -38687,6 +42775,1194 @@
 		id = 61070033,
 		skill_sub_type = 0
 	},
+	[6112001] = {
+		id = 6112001,
+		skill_sub_type = 0
+	},
+	[6112002] = {
+		id = 6112002,
+		skill_sub_type = 0
+	},
+	[6112323] = {
+		id = 6112323,
+		skill_sub_type = 0
+	},
+	[6112406] = {
+		id = 6112406,
+		skill_sub_type = 0
+	},
+	[6112311] = {
+		id = 6112311,
+		skill_sub_type = 0
+	},
+	[6112325] = {
+		id = 6112325,
+		skill_sub_type = 0
+	},
+	[6112101] = {
+		id = 6112101,
+		skill_sub_type = 0
+	},
+	[6112201] = {
+		id = 6112201,
+		skill_sub_type = 0
+	},
+	[6112202] = {
+		id = 6112202,
+		skill_sub_type = 0
+	},
+	[6112221] = {
+		id = 6112221,
+		skill_sub_type = 0
+	},
+	[6112222] = {
+		id = 6112222,
+		skill_sub_type = 0
+	},
+	[6112223] = {
+		id = 6112223,
+		skill_sub_type = 0
+	},
+	[6112224] = {
+		id = 6112224,
+		skill_sub_type = 0
+	},
+	[6112225] = {
+		id = 6112225,
+		skill_sub_type = 0
+	},
+	[6112203] = {
+		id = 6112203,
+		skill_sub_type = 0
+	},
+	[6112204] = {
+		id = 6112204,
+		skill_sub_type = 0
+	},
+	[6112051] = {
+		id = 6112051,
+		skill_sub_type = 0
+	},
+	[6112052] = {
+		id = 6112052,
+		skill_sub_type = 0
+	},
+	[6112053] = {
+		id = 6112053,
+		skill_sub_type = 0
+	},
+	[6112054] = {
+		id = 6112054,
+		skill_sub_type = 0
+	},
+	[6112055] = {
+		id = 6112055,
+		skill_sub_type = 0
+	},
+	[6112056] = {
+		id = 6112056,
+		skill_sub_type = 0
+	},
+	[6113001] = {
+		id = 6113001,
+		skill_sub_type = 0
+	},
+	[6113002] = {
+		id = 6113002,
+		skill_sub_type = 0
+	},
+	[6113311] = {
+		id = 6113311,
+		skill_sub_type = 0
+	},
+	[6113320] = {
+		id = 6113320,
+		skill_sub_type = 0
+	},
+	[6113323] = {
+		id = 6113323,
+		skill_sub_type = 0
+	},
+	[6113350] = {
+		id = 6113350,
+		skill_sub_type = 0
+	},
+	[6113351] = {
+		id = 6113351,
+		skill_sub_type = 0
+	},
+	[6113406] = {
+		id = 6113406,
+		skill_sub_type = 0
+	},
+	[6113101] = {
+		id = 6113101,
+		skill_sub_type = 0
+	},
+	[6113201] = {
+		id = 6113201,
+		skill_sub_type = 0
+	},
+	[6113202] = {
+		id = 6113202,
+		skill_sub_type = 0
+	},
+	[6113203] = {
+		id = 6113203,
+		skill_sub_type = 0
+	},
+	[6113231] = {
+		id = 6113231,
+		skill_sub_type = 0
+	},
+	[6113204] = {
+		id = 6113204,
+		skill_sub_type = 0
+	},
+	[6113312] = {
+		id = 6113312,
+		skill_sub_type = 0
+	},
+	[6113313] = {
+		id = 6113313,
+		skill_sub_type = 0
+	},
+	[6113314] = {
+		id = 6113314,
+		skill_sub_type = 0
+	},
+	[6113315] = {
+		id = 6113315,
+		skill_sub_type = 0
+	},
+	[6113316] = {
+		id = 6113316,
+		skill_sub_type = 0
+	},
+	[6113317] = {
+		id = 6113317,
+		skill_sub_type = 0
+	},
+	[6113205] = {
+		id = 6113205,
+		skill_sub_type = 0
+	},
+	[6113051] = {
+		id = 6113051,
+		skill_sub_type = 0
+	},
+	[6113052] = {
+		id = 6113052,
+		skill_sub_type = 0
+	},
+	[6113053] = {
+		id = 6113053,
+		skill_sub_type = 0
+	},
+	[6113054] = {
+		id = 6113054,
+		skill_sub_type = 0
+	},
+	[6113055] = {
+		id = 6113055,
+		skill_sub_type = 0
+	},
+	[6116001] = {
+		id = 6116001,
+		skill_sub_type = 0
+	},
+	[6116002] = {
+		id = 6116002,
+		skill_sub_type = 0
+	},
+	[6116323] = {
+		id = 6116323,
+		skill_sub_type = 0
+	},
+	[6116406] = {
+		id = 6116406,
+		skill_sub_type = 0
+	},
+	[6116325] = {
+		id = 6116325,
+		skill_sub_type = 0
+	},
+	[6116101] = {
+		id = 6116101,
+		skill_sub_type = 0
+	},
+	[6116201] = {
+		id = 6116201,
+		skill_sub_type = 0
+	},
+	[6116202] = {
+		id = 6116202,
+		skill_sub_type = 0
+	},
+	[6108001] = {
+		id = 6108001,
+		skill_sub_type = 0
+	},
+	[6108002] = {
+		id = 6108002,
+		skill_sub_type = 0
+	},
+	[6108101] = {
+		id = 6108101,
+		skill_sub_type = 0
+	},
+	[6108102] = {
+		id = 6108102,
+		skill_sub_type = 0
+	},
+	[6108103] = {
+		id = 6108103,
+		skill_sub_type = 0
+	},
+	[6108104] = {
+		id = 6108104,
+		skill_sub_type = 0
+	},
+	[6108051] = {
+		id = 6108051,
+		skill_sub_type = 0
+	},
+	[6108052] = {
+		id = 6108052,
+		skill_sub_type = 0
+	},
+	[6108105] = {
+		id = 6108105,
+		skill_sub_type = 0
+	},
+	[6108053] = {
+		id = 6108053,
+		skill_sub_type = 0
+	},
+	[6108054] = {
+		id = 6108054,
+		skill_sub_type = 0
+	},
+	[6108201] = {
+		id = 6108201,
+		skill_sub_type = 0
+	},
+	[6108211] = {
+		id = 6108211,
+		skill_sub_type = 0
+	},
+	[6108212] = {
+		id = 6108212,
+		skill_sub_type = 0
+	},
+	[6108202] = {
+		id = 6108202,
+		skill_sub_type = 0
+	},
+	[6108221] = {
+		id = 6108221,
+		skill_sub_type = 0
+	},
+	[6108222] = {
+		id = 6108222,
+		skill_sub_type = 0
+	},
+	[6108223] = {
+		id = 6108223,
+		skill_sub_type = 0
+	},
+	[6108224] = {
+		id = 6108224,
+		skill_sub_type = 0
+	},
+	[6108225] = {
+		id = 6108225,
+		skill_sub_type = 0
+	},
+	[6108226] = {
+		id = 6108226,
+		skill_sub_type = 0
+	},
+	[6108227] = {
+		id = 6108227,
+		skill_sub_type = 0
+	},
+	[6108055] = {
+		id = 6108055,
+		skill_sub_type = 0
+	},
+	[6108228] = {
+		id = 6108228,
+		skill_sub_type = 0
+	},
+	[6108203] = {
+		id = 6108203,
+		skill_sub_type = 0
+	},
+	[6108056] = {
+		id = 6108056,
+		skill_sub_type = 0
+	},
+	[6108057] = {
+		id = 6108057,
+		skill_sub_type = 0
+	},
+	[6108058] = {
+		id = 6108058,
+		skill_sub_type = 0
+	},
+	[6108059] = {
+		id = 6108059,
+		skill_sub_type = 0
+	},
+	[6108204] = {
+		id = 6108204,
+		skill_sub_type = 0
+	},
+	[6108060] = {
+		id = 6108060,
+		skill_sub_type = 0
+	},
+	[6108061] = {
+		id = 6108061,
+		skill_sub_type = 0
+	},
+	[6108241] = {
+		id = 6108241,
+		skill_sub_type = 0
+	},
+	[6108205] = {
+		id = 6108205,
+		skill_sub_type = 0
+	},
+	[6108251] = {
+		id = 6108251,
+		skill_sub_type = 0
+	},
+	[6108206] = {
+		id = 6108206,
+		skill_sub_type = 0
+	},
+	[6108261] = {
+		id = 6108261,
+		skill_sub_type = 0
+	},
+	[6108062] = {
+		id = 6108062,
+		skill_sub_type = 0
+	},
+	[6108063] = {
+		id = 6108063,
+		skill_sub_type = 0
+	},
+	[6108064] = {
+		id = 6108064,
+		skill_sub_type = 0
+	},
+	[6108065] = {
+		id = 6108065,
+		skill_sub_type = 0
+	},
+	[6108066] = {
+		id = 6108066,
+		skill_sub_type = 0
+	},
+	[6108067] = {
+		id = 6108067,
+		skill_sub_type = 0
+	},
+	[6108068] = {
+		id = 6108068,
+		skill_sub_type = 0
+	},
+	[6108069] = {
+		id = 6108069,
+		skill_sub_type = 0
+	},
+	[6108070] = {
+		id = 6108070,
+		skill_sub_type = 0
+	},
+	[6108071] = {
+		id = 6108071,
+		skill_sub_type = 0
+	},
+	[6108072] = {
+		id = 6108072,
+		skill_sub_type = 0
+	},
+	[6108073] = {
+		id = 6108073,
+		skill_sub_type = 0
+	},
+	[6108074] = {
+		id = 6108074,
+		skill_sub_type = 0
+	},
+	[6108075] = {
+		id = 6108075,
+		skill_sub_type = 0
+	},
+	[6108262] = {
+		id = 6108262,
+		skill_sub_type = 0
+	},
+	[6108208] = {
+		id = 6108208,
+		skill_sub_type = 0
+	},
+	[6108213] = {
+		id = 6108213,
+		skill_sub_type = 0
+	},
+	[6108214] = {
+		id = 6108214,
+		skill_sub_type = 0
+	},
+	[6108215] = {
+		id = 6108215,
+		skill_sub_type = 0
+	},
+	[6108216] = {
+		id = 6108216,
+		skill_sub_type = 0
+	},
+	[6108217] = {
+		id = 6108217,
+		skill_sub_type = 0
+	},
+	[6108229] = {
+		id = 6108229,
+		skill_sub_type = 0
+	},
+	[6108281] = {
+		id = 6108281,
+		skill_sub_type = 0
+	},
+	[6108282] = {
+		id = 6108282,
+		skill_sub_type = 0
+	},
+	[6108283] = {
+		id = 6108283,
+		skill_sub_type = 0
+	},
+	[6108284] = {
+		id = 6108284,
+		skill_sub_type = 0
+	},
+	[6108285] = {
+		id = 6108285,
+		skill_sub_type = 0
+	},
+	[6108286] = {
+		id = 6108286,
+		skill_sub_type = 0
+	},
+	[6108305] = {
+		id = 6108305,
+		skill_sub_type = 0
+	},
+	[6108306] = {
+		id = 6108306,
+		skill_sub_type = 0
+	},
+	[6108309] = {
+		id = 6108309,
+		skill_sub_type = 0
+	},
+	[6108326] = {
+		id = 6108326,
+		skill_sub_type = 0
+	},
+	[6108327] = {
+		id = 6108327,
+		skill_sub_type = 0
+	},
+	[6108323] = {
+		id = 6108323,
+		skill_sub_type = 0
+	},
+	[6108401] = {
+		id = 6108401,
+		skill_sub_type = 0
+	},
+	[6108406] = {
+		id = 6108406,
+		skill_sub_type = 0
+	},
+	[6109101] = {
+		id = 6109101,
+		skill_sub_type = 0
+	},
+	[6109102] = {
+		id = 6109102,
+		skill_sub_type = 0
+	},
+	[6109103] = {
+		id = 6109103,
+		skill_sub_type = 0
+	},
+	[6109104] = {
+		id = 6109104,
+		skill_sub_type = 0
+	},
+	[6109105] = {
+		id = 6109105,
+		skill_sub_type = 0
+	},
+	[6109106] = {
+		id = 6109106,
+		skill_sub_type = 0
+	},
+	[6109201] = {
+		id = 6109201,
+		skill_sub_type = 0
+	},
+	[6109202] = {
+		id = 6109202,
+		skill_sub_type = 0
+	},
+	[6109221] = {
+		id = 6109221,
+		skill_sub_type = 0
+	},
+	[6109203] = {
+		id = 6109203,
+		skill_sub_type = 0
+	},
+	[6109204] = {
+		id = 6109204,
+		skill_sub_type = 0
+	},
+	[6109241] = {
+		id = 6109241,
+		skill_sub_type = 0
+	},
+	[6109242] = {
+		id = 6109242,
+		skill_sub_type = 0
+	},
+	[6109243] = {
+		id = 6109243,
+		skill_sub_type = 0
+	},
+	[6109205] = {
+		id = 6109205,
+		skill_sub_type = 0
+	},
+	[6109206] = {
+		id = 6109206,
+		skill_sub_type = 0
+	},
+	[6109208] = {
+		id = 6109208,
+		skill_sub_type = 0
+	},
+	[6109261] = {
+		id = 6109261,
+		skill_sub_type = 0
+	},
+	[6109262] = {
+		id = 6109262,
+		skill_sub_type = 0
+	},
+	[6109207] = {
+		id = 6109207,
+		skill_sub_type = 0
+	},
+	[6109051] = {
+		id = 6109051,
+		skill_sub_type = 0
+	},
+	[6109052] = {
+		id = 6109052,
+		skill_sub_type = 0
+	},
+	[6109053] = {
+		id = 6109053,
+		skill_sub_type = 0
+	},
+	[6109054] = {
+		id = 6109054,
+		skill_sub_type = 0
+	},
+	[6109055] = {
+		id = 6109055,
+		skill_sub_type = 0
+	},
+	[6109056] = {
+		id = 6109056,
+		skill_sub_type = 0
+	},
+	[6109057] = {
+		id = 6109057,
+		skill_sub_type = 0
+	},
+	[6109058] = {
+		id = 6109058,
+		skill_sub_type = 0
+	},
+	[6109281] = {
+		id = 6109281,
+		skill_sub_type = 0
+	},
+	[6109282] = {
+		id = 6109282,
+		skill_sub_type = 0
+	},
+	[6109304] = {
+		id = 6109304,
+		skill_sub_type = 0
+	},
+	[6109305] = {
+		id = 6109305,
+		skill_sub_type = 0
+	},
+	[6109306] = {
+		id = 6109306,
+		skill_sub_type = 0
+	},
+	[6109307] = {
+		id = 6109307,
+		skill_sub_type = 0
+	},
+	[6109309] = {
+		id = 6109309,
+		skill_sub_type = 0
+	},
+	[6109310] = {
+		id = 6109310,
+		skill_sub_type = 0
+	},
+	[6109326] = {
+		id = 6109326,
+		skill_sub_type = 0
+	},
+	[6109327] = {
+		id = 6109327,
+		skill_sub_type = 0
+	},
+	[6109350] = {
+		id = 6109350,
+		skill_sub_type = 0
+	},
+	[6109351] = {
+		id = 6109351,
+		skill_sub_type = 0
+	},
+	[6109353] = {
+		id = 6109353,
+		skill_sub_type = 0
+	},
+	[6109354] = {
+		id = 6109354,
+		skill_sub_type = 0
+	},
+	[6109001] = {
+		id = 6109001,
+		skill_sub_type = 0
+	},
+	[6109002] = {
+		id = 6109002,
+		skill_sub_type = 0
+	},
+	[6109401] = {
+		id = 6109401,
+		skill_sub_type = 0
+	},
+	[6109406] = {
+		id = 6109406,
+		skill_sub_type = 0
+	},
+	[6109231] = {
+		id = 6109231,
+		skill_sub_type = 0
+	},
+	[6110101] = {
+		id = 6110101,
+		skill_sub_type = 0
+	},
+	[6110102] = {
+		id = 6110102,
+		skill_sub_type = 0
+	},
+	[6110103] = {
+		id = 6110103,
+		skill_sub_type = 0
+	},
+	[6110104] = {
+		id = 6110104,
+		skill_sub_type = 0
+	},
+	[6110105] = {
+		id = 6110105,
+		skill_sub_type = 0
+	},
+	[6110108] = {
+		id = 6110108,
+		skill_sub_type = 0
+	},
+	[6110305] = {
+		id = 6110305,
+		skill_sub_type = 0
+	},
+	[6110306] = {
+		id = 6110306,
+		skill_sub_type = 0
+	},
+	[6110304] = {
+		id = 6110304,
+		skill_sub_type = 0
+	},
+	[6110311] = {
+		id = 6110311,
+		skill_sub_type = 0
+	},
+	[6110314] = {
+		id = 6110314,
+		skill_sub_type = 0
+	},
+	[6110316] = {
+		id = 6110316,
+		skill_sub_type = 0
+	},
+	[6110317] = {
+		id = 6110317,
+		skill_sub_type = 0
+	},
+	[6110315] = {
+		id = 6110315,
+		skill_sub_type = 0
+	},
+	[6110312] = {
+		id = 6110312,
+		skill_sub_type = 0
+	},
+	[6110313] = {
+		id = 6110313,
+		skill_sub_type = 0
+	},
+	[6110319] = {
+		id = 6110319,
+		skill_sub_type = 0
+	},
+	[6110325] = {
+		id = 6110325,
+		skill_sub_type = 0
+	},
+	[6110320] = {
+		id = 6110320,
+		skill_sub_type = 0
+	},
+	[6110004] = {
+		id = 6110004,
+		skill_sub_type = 0
+	},
+	[6110201] = {
+		id = 6110201,
+		skill_sub_type = 0
+	},
+	[6110211] = {
+		id = 6110211,
+		skill_sub_type = 0
+	},
+	[6110202] = {
+		id = 6110202,
+		skill_sub_type = 0
+	},
+	[6110221] = {
+		id = 6110221,
+		skill_sub_type = 0
+	},
+	[6110203] = {
+		id = 6110203,
+		skill_sub_type = 0
+	},
+	[6110231] = {
+		id = 6110231,
+		skill_sub_type = 0
+	},
+	[6110232] = {
+		id = 6110232,
+		skill_sub_type = 0
+	},
+	[6110204] = {
+		id = 6110204,
+		skill_sub_type = 0
+	},
+	[6110241] = {
+		id = 6110241,
+		skill_sub_type = 0
+	},
+	[6110242] = {
+		id = 6110242,
+		skill_sub_type = 0
+	},
+	[6110001] = {
+		id = 6110001,
+		skill_sub_type = 0
+	},
+	[6110303] = {
+		id = 6110303,
+		skill_sub_type = 0
+	},
+	[6110302] = {
+		id = 6110302,
+		skill_sub_type = 0
+	},
+	[6110005] = {
+		id = 6110005,
+		skill_sub_type = 0
+	},
+	[6110002] = {
+		id = 6110002,
+		skill_sub_type = 0
+	},
+	[6110006] = {
+		id = 6110006,
+		skill_sub_type = 0
+	},
+	[6110401] = {
+		id = 6110401,
+		skill_sub_type = 0
+	},
+	[6110051] = {
+		id = 6110051,
+		skill_sub_type = 0
+	},
+	[6110052] = {
+		id = 6110052,
+		skill_sub_type = 0
+	},
+	[6110053] = {
+		id = 6110053,
+		skill_sub_type = 0
+	},
+	[6110054] = {
+		id = 6110054,
+		skill_sub_type = 0
+	},
+	[6110055] = {
+		id = 6110055,
+		skill_sub_type = 0
+	},
+	[6110056] = {
+		id = 6110056,
+		skill_sub_type = 0
+	},
+	[6110057] = {
+		id = 6110057,
+		skill_sub_type = 0
+	},
+	[6110058] = {
+		id = 6110058,
+		skill_sub_type = 0
+	},
+	[6110059] = {
+		id = 6110059,
+		skill_sub_type = 0
+	},
+	[6110060] = {
+		id = 6110060,
+		skill_sub_type = 0
+	},
+	[6110061] = {
+		id = 6110061,
+		skill_sub_type = 0
+	},
+	[6110403] = {
+		id = 6110403,
+		skill_sub_type = 0
+	},
+	[6110209] = {
+		id = 6110209,
+		skill_sub_type = 0
+	},
+	[6110329] = {
+		id = 6110329,
+		skill_sub_type = 0
+	},
+	[6111101] = {
+		id = 6111101,
+		skill_sub_type = 0
+	},
+	[6111051] = {
+		id = 6111051,
+		skill_sub_type = 0
+	},
+	[6111102] = {
+		id = 6111102,
+		skill_sub_type = 0
+	},
+	[6111052] = {
+		id = 6111052,
+		skill_sub_type = 0
+	},
+	[6111053] = {
+		id = 6111053,
+		skill_sub_type = 0
+	},
+	[6111103] = {
+		id = 6111103,
+		skill_sub_type = 0
+	},
+	[6111054] = {
+		id = 6111054,
+		skill_sub_type = 0
+	},
+	[6111104] = {
+		id = 6111104,
+		skill_sub_type = 0
+	},
+	[6111105] = {
+		id = 6111105,
+		skill_sub_type = 0
+	},
+	[6111106] = {
+		id = 6111106,
+		skill_sub_type = 0
+	},
+	[6111107] = {
+		id = 6111107,
+		skill_sub_type = 0
+	},
+	[6111108] = {
+		id = 6111108,
+		skill_sub_type = 0
+	},
+	[6111109] = {
+		id = 6111109,
+		skill_sub_type = 0
+	},
+	[6111110] = {
+		id = 6111110,
+		skill_sub_type = 0
+	},
+	[6111201] = {
+		id = 6111201,
+		skill_sub_type = 0
+	},
+	[6111211] = {
+		id = 6111211,
+		skill_sub_type = 0
+	},
+	[6111212] = {
+		id = 6111212,
+		skill_sub_type = 0
+	},
+	[6111213] = {
+		id = 6111213,
+		skill_sub_type = 0
+	},
+	[6111202] = {
+		id = 6111202,
+		skill_sub_type = 0
+	},
+	[6111221] = {
+		id = 6111221,
+		skill_sub_type = 0
+	},
+	[6111222] = {
+		id = 6111222,
+		skill_sub_type = 0
+	},
+	[6111203] = {
+		id = 6111203,
+		skill_sub_type = 0
+	},
+	[6111231] = {
+		id = 6111231,
+		skill_sub_type = 0
+	},
+	[6111204] = {
+		id = 6111204,
+		skill_sub_type = 0
+	},
+	[6111241] = {
+		id = 6111241,
+		skill_sub_type = 0
+	},
+	[6111242] = {
+		id = 6111242,
+		skill_sub_type = 0
+	},
+	[6111205] = {
+		id = 6111205,
+		skill_sub_type = 0
+	},
+	[6111209] = {
+		id = 6111209,
+		skill_sub_type = 0
+	},
+	[6111055] = {
+		id = 6111055,
+		skill_sub_type = 0
+	},
+	[6111305] = {
+		id = 6111305,
+		skill_sub_type = 0
+	},
+	[6111306] = {
+		id = 6111306,
+		skill_sub_type = 0
+	},
+	[6111304] = {
+		id = 6111304,
+		skill_sub_type = 0
+	},
+	[6111311] = {
+		id = 6111311,
+		skill_sub_type = 0
+	},
+	[6111314] = {
+		id = 6111314,
+		skill_sub_type = 0
+	},
+	[6111316] = {
+		id = 6111316,
+		skill_sub_type = 0
+	},
+	[6111317] = {
+		id = 6111317,
+		skill_sub_type = 0
+	},
+	[6111315] = {
+		id = 6111315,
+		skill_sub_type = 0
+	},
+	[6111312] = {
+		id = 6111312,
+		skill_sub_type = 0
+	},
+	[6111313] = {
+		id = 6111313,
+		skill_sub_type = 0
+	},
+	[6111319] = {
+		id = 6111319,
+		skill_sub_type = 0
+	},
+	[6111325] = {
+		id = 6111325,
+		skill_sub_type = 0
+	},
+	[6111320] = {
+		id = 6111320,
+		skill_sub_type = 0
+	},
+	[6111403] = {
+		id = 6111403,
+		skill_sub_type = 0
+	},
+	[6111004] = {
+		id = 6111004,
+		skill_sub_type = 0
+	},
+	[6111001] = {
+		id = 6111001,
+		skill_sub_type = 0
+	},
+	[6111302] = {
+		id = 6111302,
+		skill_sub_type = 0
+	},
+	[6111303] = {
+		id = 6111303,
+		skill_sub_type = 0
+	},
+	[6111304] = {
+		id = 6111304,
+		skill_sub_type = 0
+	},
+	[6111005] = {
+		id = 6111005,
+		skill_sub_type = 0
+	},
+	[6111006] = {
+		id = 6111006,
+		skill_sub_type = 0
+	},
+	[6111002] = {
+		id = 6111002,
+		skill_sub_type = 0
+	},
+	[6111329] = {
+		id = 6111329,
+		skill_sub_type = 0
+	},
+	[6111401] = {
+		id = 6111401,
+		skill_sub_type = 0
+	},
+	[6111329] = {
+		id = 6111329,
+		skill_sub_type = 0
+	},
+	[6119001] = {
+		id = 6119001,
+		skill_sub_type = 0
+	},
+	[6119304] = {
+		id = 6119304,
+		skill_sub_type = 0
+	},
+	[6118001] = {
+		id = 6118001,
+		skill_sub_type = 0
+	},
+	[6118304] = {
+		id = 6118304,
+		skill_sub_type = 0
+	},
+	[6117001] = {
+		id = 6117001,
+		skill_sub_type = 0
+	},
+	[6117002] = {
+		id = 6117002,
+		skill_sub_type = 0
+	},
+	[6117004] = {
+		id = 6117004,
+		skill_sub_type = 0
+	},
+	[6117051] = {
+		id = 6117051,
+		skill_sub_type = 0
+	},
+	[6117101] = {
+		id = 6117101,
+		skill_sub_type = 0
+	},
+	[6117202] = {
+		id = 6117202,
+		skill_sub_type = 0
+	},
+	[6117302] = {
+		id = 6117302,
+		skill_sub_type = 0
+	},
+	[6117304] = {
+		id = 6117304,
+		skill_sub_type = 0
+	},
+	[6117305] = {
+		id = 6117305,
+		skill_sub_type = 0
+	},
+	[6117311] = {
+		id = 6117311,
+		skill_sub_type = 0
+	},
+	[6121001] = {
+		id = 6121001,
+		skill_sub_type = 0
+	},
+	[6121304] = {
+		id = 6121304,
+		skill_sub_type = 0
+	},
 	[9049201] = {
 		id = 9049201,
 		skill_sub_type = 0
@@ -39635,6 +44911,66 @@
 		id = 10079531,
 		skill_sub_type = 0
 	},
+	[10105001] = {
+		id = 10105001,
+		skill_sub_type = 0
+	},
+	[10105511] = {
+		id = 10105511,
+		skill_sub_type = 0
+	},
+	[10105512] = {
+		id = 10105512,
+		skill_sub_type = 0
+	},
+	[10105513] = {
+		id = 10105513,
+		skill_sub_type = 0
+	},
+	[10105521] = {
+		id = 10105521,
+		skill_sub_type = 0
+	},
+	[10105522] = {
+		id = 10105522,
+		skill_sub_type = 0
+	},
+	[10105523] = {
+		id = 10105523,
+		skill_sub_type = 0
+	},
+	[10105531] = {
+		id = 10105531,
+		skill_sub_type = 0
+	},
+	[10105532] = {
+		id = 10105532,
+		skill_sub_type = 0
+	},
+	[10105533] = {
+		id = 10105533,
+		skill_sub_type = 0
+	},
+	[10105541] = {
+		id = 10105541,
+		skill_sub_type = 0
+	},
+	[10105542] = {
+		id = 10105542,
+		skill_sub_type = 0
+	},
+	[10105543] = {
+		id = 10105543,
+		skill_sub_type = 0
+	},
+	[10105406] = {
+		id = 10105406,
+		skill_sub_type = 0
+	},
+	[10105323] = {
+		id = 10105323,
+		skill_sub_type = 0
+	},
 	[10083101] = {
 		id = 10083101,
 		skill_sub_type = 0
@@ -40015,6 +45351,10 @@
 		id = 800064,
 		skill_sub_type = 0
 	},
+	[800090] = {
+		id = 800090,
+		skill_sub_type = 0
+	},
 	[801051] = {
 		id = 801051,
 		skill_sub_type = 0
@@ -40029,6 +45369,10 @@
 	},
 	[801054] = {
 		id = 801054,
+		skill_sub_type = 0
+	},
+	[801055] = {
+		id = 801055,
 		skill_sub_type = 0
 	},
 	[803051] = {
@@ -40143,6 +45487,66 @@
 		id = 804051,
 		skill_sub_type = 0
 	},
+	[804052] = {
+		id = 804052,
+		skill_sub_type = 0
+	},
+	[804053] = {
+		id = 804053,
+		skill_sub_type = 0
+	},
+	[804054] = {
+		id = 804054,
+		skill_sub_type = 0
+	},
+	[804055] = {
+		id = 804055,
+		skill_sub_type = 0
+	},
+	[804056] = {
+		id = 804056,
+		skill_sub_type = 0
+	},
+	[804057] = {
+		id = 804057,
+		skill_sub_type = 0
+	},
+	[804060] = {
+		id = 804060,
+		skill_sub_type = 0
+	},
+	[804061] = {
+		id = 804061,
+		skill_sub_type = 0
+	},
+	[804062] = {
+		id = 804062,
+		skill_sub_type = 0
+	},
+	[804063] = {
+		id = 804063,
+		skill_sub_type = 0
+	},
+	[804064] = {
+		id = 804064,
+		skill_sub_type = 0
+	},
+	[804065] = {
+		id = 804065,
+		skill_sub_type = 0
+	},
+	[804066] = {
+		id = 804066,
+		skill_sub_type = 0
+	},
+	[804067] = {
+		id = 804067,
+		skill_sub_type = 0
+	},
+	[804068] = {
+		id = 804068,
+		skill_sub_type = 0
+	},
 	[805051] = {
 		id = 805051,
 		skill_sub_type = 0
@@ -40231,6 +45635,202 @@
 		id = 805072,
 		skill_sub_type = 0
 	},
+	[806051] = {
+		id = 806051,
+		skill_sub_type = 0
+	},
+	[806052] = {
+		id = 806052,
+		skill_sub_type = 0
+	},
+	[806053] = {
+		id = 806053,
+		skill_sub_type = 0
+	},
+	[806054] = {
+		id = 806054,
+		skill_sub_type = 0
+	},
+	[806055] = {
+		id = 806055,
+		skill_sub_type = 0
+	},
+	[806056] = {
+		id = 806056,
+		skill_sub_type = 0
+	},
+	[806057] = {
+		id = 806057,
+		skill_sub_type = 0
+	},
+	[806058] = {
+		id = 806058,
+		skill_sub_type = 0
+	},
+	[806059] = {
+		id = 806059,
+		skill_sub_type = 0
+	},
+	[806060] = {
+		id = 806060,
+		skill_sub_type = 0
+	},
+	[806061] = {
+		id = 806061,
+		skill_sub_type = 0
+	},
+	[806062] = {
+		id = 806062,
+		skill_sub_type = 0
+	},
+	[806063] = {
+		id = 806063,
+		skill_sub_type = 0
+	},
+	[806064] = {
+		id = 806064,
+		skill_sub_type = 0
+	},
+	[806065] = {
+		id = 806065,
+		skill_sub_type = 0
+	},
+	[806066] = {
+		id = 806066,
+		skill_sub_type = 0
+	},
+	[806067] = {
+		id = 806067,
+		skill_sub_type = 0
+	},
+	[806068] = {
+		id = 806068,
+		skill_sub_type = 0
+	},
+	[806069] = {
+		id = 806069,
+		skill_sub_type = 0
+	},
+	[806070] = {
+		id = 806070,
+		skill_sub_type = 0
+	},
+	[806071] = {
+		id = 806071,
+		skill_sub_type = 0
+	},
+	[806072] = {
+		id = 806072,
+		skill_sub_type = 0
+	},
+	[806073] = {
+		id = 806073,
+		skill_sub_type = 0
+	},
+	[806074] = {
+		id = 806074,
+		skill_sub_type = 0
+	},
+	[806075] = {
+		id = 806075,
+		skill_sub_type = 0
+	},
+	[806076] = {
+		id = 806076,
+		skill_sub_type = 0
+	},
+	[806077] = {
+		id = 806077,
+		skill_sub_type = 0
+	},
+	[806078] = {
+		id = 806078,
+		skill_sub_type = 0
+	},
+	[806079] = {
+		id = 806079,
+		skill_sub_type = 0
+	},
+	[806080] = {
+		id = 806080,
+		skill_sub_type = 0
+	},
+	[806081] = {
+		id = 806081,
+		skill_sub_type = 0
+	},
+	[806082] = {
+		id = 806082,
+		skill_sub_type = 0
+	},
+	[806083] = {
+		id = 806083,
+		skill_sub_type = 0
+	},
+	[806084] = {
+		id = 806084,
+		skill_sub_type = 0
+	},
+	[806085] = {
+		id = 806085,
+		skill_sub_type = 0
+	},
+	[806086] = {
+		id = 806086,
+		skill_sub_type = 0
+	},
+	[806087] = {
+		id = 806087,
+		skill_sub_type = 0
+	},
+	[806088] = {
+		id = 806088,
+		skill_sub_type = 0
+	},
+	[806089] = {
+		id = 806089,
+		skill_sub_type = 0
+	},
+	[806090] = {
+		id = 806090,
+		skill_sub_type = 0
+	},
+	[806091] = {
+		id = 806091,
+		skill_sub_type = 0
+	},
+	[806092] = {
+		id = 806092,
+		skill_sub_type = 0
+	},
+	[806093] = {
+		id = 806093,
+		skill_sub_type = 0
+	},
+	[806094] = {
+		id = 806094,
+		skill_sub_type = 0
+	},
+	[806095] = {
+		id = 806095,
+		skill_sub_type = 0
+	},
+	[806096] = {
+		id = 806096,
+		skill_sub_type = 0
+	},
+	[806097] = {
+		id = 806097,
+		skill_sub_type = 0
+	},
+	[806098] = {
+		id = 806098,
+		skill_sub_type = 0
+	},
+	[806099] = {
+		id = 806099,
+		skill_sub_type = 0
+	},
 	[1050059] = {
 		id = 1050059,
 		skill_sub_type = 4
@@ -40289,6 +45889,70 @@
 	},
 	[800073] = {
 		id = 800073,
+		skill_sub_type = 0
+	},
+	[800074] = {
+		id = 800074,
+		skill_sub_type = 0
+	},
+	[800075] = {
+		id = 800075,
+		skill_sub_type = 0
+	},
+	[800076] = {
+		id = 800076,
+		skill_sub_type = 0
+	},
+	[800077] = {
+		id = 800077,
+		skill_sub_type = 0
+	},
+	[800078] = {
+		id = 800078,
+		skill_sub_type = 0
+	},
+	[800079] = {
+		id = 800079,
+		skill_sub_type = 0
+	},
+	[800080] = {
+		id = 800080,
+		skill_sub_type = 0
+	},
+	[800081] = {
+		id = 800081,
+		skill_sub_type = 0
+	},
+	[800082] = {
+		id = 800082,
+		skill_sub_type = 0
+	},
+	[800083] = {
+		id = 800083,
+		skill_sub_type = 0
+	},
+	[800084] = {
+		id = 800084,
+		skill_sub_type = 0
+	},
+	[800085] = {
+		id = 800085,
+		skill_sub_type = 0
+	},
+	[800086] = {
+		id = 800086,
+		skill_sub_type = 0
+	},
+	[800087] = {
+		id = 800087,
+		skill_sub_type = 0
+	},
+	[800088] = {
+		id = 800088,
+		skill_sub_type = 0
+	},
+	[800089] = {
+		id = 800089,
 		skill_sub_type = 0
 	},
 	[20001] = {
@@ -40965,6 +46629,102 @@
 	},
 	[1197066] = {
 		id = 1197066,
+		skill_sub_type = 0
+	},
+	[1033282] = {
+		id = 1033282,
+		skill_sub_type = 0
+	},
+	[1033059] = {
+		id = 1033059,
+		skill_sub_type = 0
+	},
+	[1094072] = {
+		id = 1094072,
+		skill_sub_type = 0
+	},
+	[1150282] = {
+		id = 1150282,
+		skill_sub_type = 0
+	},
+	[1150068] = {
+		id = 1150068,
+		skill_sub_type = 0
+	},
+	[1049092] = {
+		id = 1049092,
+		skill_sub_type = 0
+	},
+	[1022208] = {
+		id = 1022208,
+		skill_sub_type = 0
+	},
+	[1022075] = {
+		id = 1022075,
+		skill_sub_type = 0
+	},
+	[1042090] = {
+		id = 1042090,
+		skill_sub_type = 0
+	},
+	[1021208] = {
+		id = 1021208,
+		skill_sub_type = 0
+	},
+	[1021072] = {
+		id = 1021072,
+		skill_sub_type = 0
+	},
+	[1041065] = {
+		id = 1041065,
+		skill_sub_type = 0
+	},
+	[1020208] = {
+		id = 1020208,
+		skill_sub_type = 0
+	},
+	[1020053] = {
+		id = 1020053,
+		skill_sub_type = 0
+	},
+	[1156053] = {
+		id = 1156053,
+		skill_sub_type = 0
+	},
+	[1024281] = {
+		id = 1024281,
+		skill_sub_type = 0
+	},
+	[1024064] = {
+		id = 1024064,
+		skill_sub_type = 0
+	},
+	[1052072] = {
+		id = 1052072,
+		skill_sub_type = 0
+	},
+	[1095281] = {
+		id = 1095281,
+		skill_sub_type = 0
+	},
+	[1095067] = {
+		id = 1095067,
+		skill_sub_type = 0
+	},
+	[1111060] = {
+		id = 1111060,
+		skill_sub_type = 0
+	},
+	[1089208] = {
+		id = 1089208,
+		skill_sub_type = 0
+	},
+	[1020056] = {
+		id = 1020056,
+		skill_sub_type = 0
+	},
+	[1089056] = {
+		id = 1089056,
 		skill_sub_type = 0
 	},
 	all = {
@@ -42429,6 +48189,56 @@
 		1081329,
 		1081401,
 		1081403,
+		1089001,
+		1089002,
+		1089003,
+		1089004,
+		1089005,
+		1089006,
+		1089010,
+		1089101,
+		1089102,
+		1089103,
+		1089104,
+		1089105,
+		1089106,
+		1089201,
+		1089211,
+		1089212,
+		1089202,
+		1089221,
+		1089222,
+		1089203,
+		1089051,
+		1089231,
+		1089054,
+		1089232,
+		1089052,
+		1089233,
+		1089053,
+		1089234,
+		1089235,
+		1089236,
+		1089209,
+		1089055,
+		1089302,
+		1089303,
+		1089304,
+		1089305,
+		1089306,
+		1089311,
+		1089312,
+		1089313,
+		1089314,
+		1089315,
+		1089316,
+		1089317,
+		1089319,
+		1089320,
+		1089325,
+		1089329,
+		1089401,
+		1089403,
 		1093101,
 		1093102,
 		1093103,
@@ -43262,6 +49072,7 @@
 		6051201,
 		6051051,
 		6051202,
+		6051221,
 		6051203,
 		6051231,
 		6051232,
@@ -43664,6 +49475,7 @@
 		1049088,
 		1049089,
 		1049090,
+		1049091,
 		1055305,
 		1055306,
 		1055004,
@@ -44013,6 +49825,11 @@
 		1284111,
 		1284112,
 		1284113,
+		1284114,
+		1284115,
+		1284116,
+		1284117,
+		1284118,
 		1284201,
 		1284211,
 		1284212,
@@ -44034,7 +49851,11 @@
 		1284063,
 		1284064,
 		1284065,
+		1284056,
+		1284058,
+		1284067,
 		1284231,
+		1284232,
 		1284209,
 		1284999,
 		1284305,
@@ -44110,7 +49931,292 @@
 		1197401,
 		1197403,
 		1197999,
+		1022101,
+		1022053,
+		1022102,
+		1022051,
+		1022052,
+		1022103,
+		1022063,
+		1022104,
+		1022055,
+		1022056,
+		1022058,
+		1022105,
+		1022057,
+		1022106,
+		1022107,
+		1022108,
+		1022109,
+		1022110,
+		1022201,
+		1022211,
+		1022202,
+		1022070,
+		1022221,
+		1022203,
+		1022231,
+		1022073,
+		1022204,
+		1022241,
+		1022064,
+		1022209,
+		1022305,
+		1022306,
+		1022304,
+		1022311,
+		1022314,
+		1022316,
+		1022317,
+		1022315,
+		1022312,
+		1022313,
+		1022319,
+		1022325,
+		1022320,
+		1022403,
+		1022004,
+		1022001,
+		1022302,
+		1022303,
+		1022005,
+		1022006,
+		1022002,
+		1022329,
+		1022401,
+		1022054,
+		1022060,
+		1022212,
+		1022061,
+		1022222,
+		1022062,
+		1022242,
+		1022059,
+		1022213,
+		1022066,
+		1022223,
+		1022067,
+		1022243,
+		1022065,
+		1022068,
+		1022069,
+		1022071,
+		1022072,
+		1022074,
+		1022205,
+		1022251,
+		1021101,
+		1021102,
+		1021103,
+		1021104,
+		1021105,
+		1021106,
+		1021107,
+		1021108,
+		1021109,
+		1021110,
+		1021111,
+		1021112,
+		1021201,
+		1021211,
+		1021212,
+		1021213,
+		1021202,
+		1021203,
+		1021231,
+		1021232,
+		1021204,
+		1021205,
+		1021251,
+		1021051,
+		1021052,
+		1021053,
+		1021054,
+		1021055,
+		1021056,
+		1021057,
+		1021058,
+		1021059,
+		1021060,
+		1021061,
+		1021062,
+		1021063,
+		1021064,
+		1021065,
+		1021066,
+		1021067,
+		1021068,
+		1021069,
+		1021070,
+		1021071,
+		1021073,
+		1021074,
+		1021075,
+		1021076,
+		1021077,
+		1021078,
+		1021079,
+		1021080,
+		1021081,
+		1021209,
+		1021999,
+		1021305,
+		1021306,
+		1021304,
+		1021311,
+		1021312,
+		1021313,
+		1021314,
+		1021315,
+		1021316,
+		1021317,
+		1021319,
+		1021320,
+		1021325,
+		1021329,
+		1021401,
+		1021403,
+		1021001,
+		1021002,
+		1021303,
+		1021302,
+		1021004,
+		1021005,
+		1021006,
+		1021206,
+		1021261,
+		1021262,
+		1020001,
+		1020002,
+		1020003,
+		1020004,
+		1020005,
+		1020006,
+		1020101,
+		1020102,
+		1020103,
+		1020104,
+		1020105,
+		1020106,
+		1020107,
+		1020108,
+		1020109,
+		1020110,
+		1020201,
+		1020211,
+		1020212,
+		1020213,
+		1020202,
+		1020221,
+		1020203,
+		1020231,
+		1020232,
+		1020233,
+		1020204,
+		1020241,
+		1020205,
+		1020251,
+		1020252,
+		1020253,
+		1020254,
+		1020255,
+		1020206,
+		1020207,
+		1020209,
+		1020291,
+		1020292,
+		1020293,
+		1020294,
+		1020302,
+		1020303,
+		1020304,
+		1020305,
+		1020306,
+		1020311,
+		1020312,
+		1020313,
+		1020314,
+		1020315,
+		1020316,
+		1020317,
+		1020319,
+		1020320,
+		1020325,
+		1020329,
+		1020401,
+		1020403,
+		1020051,
+		1020052,
+		1020054,
+		1020055,
+		1020071,
+		1020072,
+		1156001,
+		1156002,
+		1156003,
+		1156004,
+		1156005,
+		1156006,
+		1156010,
+		1156101,
+		1156102,
+		1156103,
+		1156104,
+		1156105,
+		1156106,
+		1156107,
+		1156108,
+		1156109,
+		1156110,
+		1156111,
+		1156112,
+		1156113,
+		1156114,
+		1156115,
+		1156201,
+		1156211,
+		1156212,
+		1156202,
+		1156221,
+		1156222,
+		1156203,
+		1156231,
+		1156232,
+		1156233,
+		1156234,
+		1156235,
+		1156236,
+		1156237,
+		1156209,
+		1156051,
+		1156052,
+		1156059,
+		1156060,
+		1156061,
+		1156302,
+		1156303,
+		1156304,
+		1156305,
+		1156306,
+		1156311,
+		1156312,
+		1156313,
+		1156314,
+		1156315,
+		1156316,
+		1156317,
+		1156319,
+		1156320,
+		1156325,
+		1156329,
+		1156401,
+		1156403,
+		1156501,
+		1156511,
+		1156502,
+		1156999,
 		2017101,
+		2017102,
 		2017201,
 		2017202,
 		2017203,
@@ -45003,6 +51109,7 @@
 		2068406,
 		2069101,
 		2069102,
+		2069103,
 		2069001,
 		2069002,
 		2069311,
@@ -45117,11 +51224,17 @@
 		2075351,
 		2075401,
 		2076101,
+		2076102,
 		2076201,
 		2076211,
 		2076212,
 		2076213,
+		2076202,
+		2076221,
+		2076222,
+		2076223,
 		2076051,
+		2076052,
 		2076001,
 		2076002,
 		2076323,
@@ -45398,6 +51511,10 @@
 		2093102,
 		2093051,
 		2093053,
+		2093201,
+		2093211,
+		2093212,
+		2093213,
 		2093311,
 		2093312,
 		2093313,
@@ -45726,6 +51843,158 @@
 		2118304,
 		2118406,
 		2118323,
+		2119406,
+		2119001,
+		2119002,
+		2119350,
+		2119351,
+		2119101,
+		2119102,
+		2119103,
+		2119104,
+		2119051,
+		2119052,
+		2119201,
+		2119202,
+		2119314,
+		2119316,
+		2119317,
+		2119315,
+		2119312,
+		2119313,
+		2119311,
+		2119320,
+		2119323,
+		2120101,
+		2120102,
+		2120201,
+		2120202,
+		2120221,
+		2120222,
+		2120051,
+		2120052,
+		2120001,
+		2120002,
+		2120311,
+		2120320,
+		2120323,
+		2120325,
+		2120350,
+		2120351,
+		2120353,
+		2120354,
+		2120406,
+		2121406,
+		2121001,
+		2121002,
+		2121350,
+		2121351,
+		2121101,
+		2121102,
+		2121103,
+		2121051,
+		2121052,
+		2121201,
+		2121202,
+		2121221,
+		2121222,
+		2121314,
+		2121316,
+		2121317,
+		2121315,
+		2121312,
+		2121313,
+		2121311,
+		2121320,
+		2121323,
+		2122101,
+		2122201,
+		2122051,
+		2122001,
+		2122002,
+		2122311,
+		2122312,
+		2122313,
+		2122314,
+		2122315,
+		2122316,
+		2122317,
+		2122320,
+		2122350,
+		2122351,
+		2122323,
+		2122324,
+		2122406,
+		2122407,
+		2122408,
+		2123101,
+		2123201,
+		2123051,
+		2123001,
+		2123002,
+		2123311,
+		2123312,
+		2123313,
+		2123314,
+		2123315,
+		2123316,
+		2123317,
+		2123320,
+		2123350,
+		2123351,
+		2123323,
+		2123324,
+		2123406,
+		2123407,
+		2123408,
+		2124101,
+		2124051,
+		2124054,
+		2124102,
+		2124103,
+		2124201,
+		2124052,
+		2124053,
+		2124001,
+		2124002,
+		2124311,
+		2124312,
+		2124313,
+		2124314,
+		2124315,
+		2124316,
+		2124317,
+		2124320,
+		2124350,
+		2124351,
+		2124323,
+		2124324,
+		2124406,
+		2124407,
+		2124408,
+		2125001,
+		2125002,
+		2125323,
+		2125406,
+		2125311,
+		2125316,
+		2125317,
+		2125315,
+		2125312,
+		2125313,
+		2125319,
+		2125314,
+		2125320,
+		2125101,
+		2125051,
+		2125052,
+		2125201,
+		2125211,
+		2125212,
+		2125053,
+		2125054,
+		2125102,
+		2125055,
 		3004101,
 		3004102,
 		3004103,
@@ -46328,6 +52597,32 @@
 		3025351,
 		3025401,
 		3025406,
+		3026001,
+		3026002,
+		3026101,
+		3026102,
+		3026053,
+		3026201,
+		3026051,
+		3026202,
+		3026221,
+		3026052,
+		3026304,
+		3026309,
+		3026311,
+		3026312,
+		3026313,
+		3026314,
+		3026315,
+		3026316,
+		3026317,
+		3026320,
+		3026326,
+		3026327,
+		3026350,
+		3026351,
+		3026401,
+		3026406,
 		3027001,
 		3027002,
 		3027101,
@@ -46833,6 +53128,9 @@
 		3045081,
 		3045082,
 		3045083,
+		3045084,
+		3045085,
+		3045086,
 		3045201,
 		3045056,
 		3045057,
@@ -46840,6 +53138,8 @@
 		3045221,
 		3045222,
 		3045203,
+		3045205,
+		3045251,
 		3045058,
 		3045059,
 		3045060,
@@ -46906,6 +53206,109 @@
 		3046054,
 		3046055,
 		3046056,
+		3047001,
+		3047002,
+		3047101,
+		3047102,
+		3047103,
+		3047201,
+		3047211,
+		3047212,
+		3047213,
+		3047202,
+		3047051,
+		3047203,
+		3047232,
+		3047052,
+		3047304,
+		3047309,
+		3047326,
+		3047327,
+		3047311,
+		3047312,
+		3047313,
+		3047317,
+		3047316,
+		3047315,
+		3047320,
+		3047350,
+		3047351,
+		3047401,
+		3047406,
+		3048001,
+		3048002,
+		3048101,
+		3048102,
+		3048103,
+		3048201,
+		3048211,
+		3048212,
+		3048213,
+		3048202,
+		3048051,
+		3048203,
+		3048232,
+		3048052,
+		3048304,
+		3048309,
+		3048326,
+		3048327,
+		3048311,
+		3048312,
+		3048313,
+		3048317,
+		3048316,
+		3048315,
+		3048320,
+		3048350,
+		3048351,
+		3048401,
+		3048406,
+		3049101,
+		3049102,
+		3049211,
+		3049201,
+		3049202,
+		3049054,
+		3049221,
+		3049001,
+		3049203,
+		3049231,
+		3049232,
+		3049305,
+		3049306,
+		3049309,
+		3049326,
+		3049327,
+		3049311,
+		3049320,
+		3049002,
+		3049304,
+		3049204,
+		3049051,
+		3049052,
+		3049053,
+		3049205,
+		3049206,
+		3049055,
+		3049056,
+		3049057,
+		3049058,
+		3049059,
+		3049060,
+		3049061,
+		3049062,
+		3049063,
+		3049064,
+		3049065,
+		3049066,
+		3049207,
+		3049329,
+		3049350,
+		3049351,
+		3049406,
+		3049323,
+		3049401,
 		3501101,
 		3501201,
 		3501051,
@@ -46919,6 +53322,9 @@
 		3517304,
 		3517311,
 		3517406,
+		3528001,
+		3528101,
+		3528304,
 		4010101,
 		4010102,
 		4010103,
@@ -47002,12 +53408,40 @@
 		4012261,
 		4012262,
 		4012207,
+		4012208,
+		4012281,
+		4012282,
+		4012283,
+		4012284,
+		4012285,
+		4012286,
+		4012287,
+		4012288,
 		4012051,
 		4012052,
 		4012053,
 		4012054,
 		4012055,
 		4012056,
+		4012057,
+		4012058,
+		4012059,
+		4012060,
+		4012061,
+		4012062,
+		4012063,
+		4012064,
+		4012065,
+		4012066,
+		4012067,
+		4012068,
+		4012069,
+		4012070,
+		4012071,
+		4012072,
+		4012073,
+		4012074,
+		4012075,
 		4012304,
 		4012305,
 		4012306,
@@ -47037,6 +53471,7 @@
 		4013204,
 		4013241,
 		4013242,
+		4013063,
 		4013057,
 		4013058,
 		4013059,
@@ -47189,10 +53624,12 @@
 		4020202,
 		4020203,
 		4020231,
+		4020232,
 		4020204,
 		4020241,
 		4020051,
 		4020052,
+		4020053,
 		4020304,
 		4020309,
 		4020326,
@@ -47461,6 +53898,9 @@
 		4025069,
 		4025070,
 		4025072,
+		4025234,
+		4025235,
+		4025236,
 		4025204,
 		4025205,
 		4025241,
@@ -47782,6 +54222,8 @@
 		4032109,
 		4032108,
 		4032401,
+		4032501,
+		4032502,
 		4034101,
 		4034102,
 		4034103,
@@ -48130,6 +54572,7 @@
 		4040256,
 		4040053,
 		4040059,
+		4040257,
 		4040001,
 		4040002,
 		4040304,
@@ -48218,6 +54661,98 @@
 		4041305,
 		4041306,
 		4041304,
+		4042401,
+		4042406,
+		4042101,
+		4042054,
+		4042102,
+		4042103,
+		4042104,
+		4042105,
+		4042106,
+		4042107,
+		4042304,
+		4042320,
+		4042201,
+		4042211,
+		4042212,
+		4042202,
+		4042203,
+		4042204,
+		4042241,
+		4042242,
+		4042205,
+		4042206,
+		4042261,
+		4042262,
+		4042207,
+		4042208,
+		4042281,
+		4042282,
+		4042283,
+		4042001,
+		4042284,
+		4042051,
+		4042052,
+		4042053,
+		4042055,
+		4042056,
+		4042057,
+		4042058,
+		4042059,
+		4042060,
+		4042061,
+		4042062,
+		4042271,
+		4043101,
+		4043102,
+		4043103,
+		4043057,
+		4043104,
+		4043105,
+		4043106,
+		4043059,
+		4043060,
+		4043201,
+		4043051,
+		4043053,
+		4043211,
+		4043212,
+		4043213,
+		4043202,
+		4043061,
+		4043058,
+		4043054,
+		4043203,
+		4043056,
+		4043063,
+		4043231,
+		4043204,
+		4043241,
+		4043205,
+		4043064,
+		4043067,
+		4043251,
+		4043206,
+		4043052,
+		4043055,
+		4043062,
+		4043001,
+		4043002,
+		4043304,
+		4043305,
+		4043306,
+		4043309,
+		4043311,
+		4043320,
+		4043325,
+		4043326,
+		4043327,
+		4043350,
+		4043351,
+		4043406,
+		4043065,
+		4043066,
 		5011101,
 		5011102,
 		5011103,
@@ -48269,6 +54804,101 @@
 		50110041,
 		50110042,
 		50110043,
+		5013101,
+		5013102,
+		5013103,
+		5013104,
+		5013105,
+		5013201,
+		5013202,
+		5013203,
+		5013204,
+		5013209,
+		5013001,
+		5013002,
+		5013003,
+		5013004,
+		5013005,
+		5013006,
+		5013010,
+		5013302,
+		5013303,
+		5013304,
+		5013305,
+		5013306,
+		5013311,
+		5013312,
+		5013313,
+		5013314,
+		5013315,
+		5013316,
+		5013317,
+		5013319,
+		5013320,
+		5013325,
+		5013401,
+		5013403,
+		5013051,
+		5013052,
+		5013053,
+		5013054,
+		5013055,
+		5013056,
+		5013057,
+		5013058,
+		5013059,
+		5013060,
+		5013061,
+		5013062,
+		5013063,
+		5013064,
+		5013065,
+		5013066,
+		5013067,
+		5013068,
+		5015001,
+		5015002,
+		5015004,
+		5015005,
+		5015006,
+		5015051,
+		5015052,
+		5015101,
+		5015102,
+		5015103,
+		5015201,
+		5015211,
+		5015212,
+		5015213,
+		5015202,
+		5015221,
+		5015203,
+		5015231,
+		5015232,
+		5015204,
+		5015241,
+		5015242,
+		5015243,
+		5015271,
+		5015273,
+		5015209,
+		5015302,
+		5015303,
+		5015304,
+		5015305,
+		5015306,
+		5015311,
+		5015312,
+		5015313,
+		5015314,
+		5015315,
+		5015316,
+		5015317,
+		5015319,
+		5015320,
+		5015325,
+		5015401,
+		5015403,
 		5016001,
 		5016002,
 		5016004,
@@ -48784,6 +55414,68 @@
 		5055605,
 		5055601,
 		5055602,
+		5061001,
+		5061002,
+		5061004,
+		5061005,
+		5061006,
+		5061101,
+		5061102,
+		5061103,
+		5061104,
+		5061105,
+		5061201,
+		5061202,
+		5061203,
+		5061231,
+		5061232,
+		5061233,
+		5061204,
+		5061241,
+		5061242,
+		5061243,
+		5061244,
+		5061205,
+		5061251,
+		5061252,
+		5061253,
+		5061206,
+		5061261,
+		5061262,
+		5061209,
+		5061302,
+		5061303,
+		5061304,
+		5061305,
+		5061306,
+		5061311,
+		5061312,
+		5061313,
+		5061314,
+		5061315,
+		5061316,
+		5061317,
+		5061319,
+		5061320,
+		5061325,
+		5061401,
+		5061403,
+		5061051,
+		5061052,
+		5061053,
+		5061054,
+		5061055,
+		5061056,
+		5061057,
+		5061058,
+		5061059,
+		5061060,
+		5061061,
+		5061062,
+		5061063,
+		5061064,
+		5061065,
+		5061066,
 		5067001,
 		5067005,
 		5067006,
@@ -49261,7 +55953,6 @@
 		5081204,
 		5081241,
 		5081242,
-		5081243,
 		5081205,
 		5081251,
 		5081209,
@@ -49280,7 +55971,6 @@
 		5081319,
 		5081320,
 		5081325,
-		5081329,
 		5081401,
 		5081403,
 		5081206,
@@ -49447,6 +56137,96 @@
 		50940041,
 		50940042,
 		50940043,
+		5095001,
+		5095002,
+		5095004,
+		5095005,
+		5095006,
+		5095101,
+		5095051,
+		5095102,
+		5095052,
+		5095103,
+		5095053,
+		5095104,
+		5095054,
+		5095105,
+		5095056,
+		5095106,
+		5095107,
+		5095075,
+		5095076,
+		5095108,
+		5095109,
+		5095110,
+		5095055,
+		5095077,
+		5095078,
+		5095079,
+		5095201,
+		5095059,
+		5095211,
+		5095060,
+		5095080,
+		5095212,
+		5095071,
+		5095073,
+		5095074,
+		5095081,
+		5095202,
+		5095057,
+		5095221,
+		5095058,
+		5095072,
+		5095203,
+		5095231,
+		5095062,
+		5095068,
+		5095069,
+		5095070,
+		5095233,
+		5095063,
+		5095234,
+		5095064,
+		5095232,
+		5095065,
+		5095067,
+		5095204,
+		5095235,
+		5095066,
+		5095061,
+		5095209,
+		5095302,
+		5095303,
+		5095304,
+		5095305,
+		5095306,
+		5095311,
+		5095312,
+		5095313,
+		5095314,
+		5095315,
+		5095316,
+		5095317,
+		5095319,
+		5095320,
+		5095325,
+		5095329,
+		5095401,
+		5095403,
+		5095999,
+		50950011,
+		50950012,
+		50950013,
+		50950021,
+		50950022,
+		50950023,
+		50950031,
+		50950032,
+		50950033,
+		50950041,
+		50950042,
+		50950043,
 		5096101,
 		5096102,
 		5096103,
@@ -49706,6 +56486,8 @@
 		5139302,
 		5139005,
 		5139006,
+		5139205,
+		5139206,
 		5119101,
 		5119102,
 		5119103,
@@ -50640,6 +57422,303 @@
 		61070031,
 		61070032,
 		61070033,
+		6112001,
+		6112002,
+		6112323,
+		6112406,
+		6112311,
+		6112325,
+		6112101,
+		6112201,
+		6112202,
+		6112221,
+		6112222,
+		6112223,
+		6112224,
+		6112225,
+		6112203,
+		6112204,
+		6112051,
+		6112052,
+		6112053,
+		6112054,
+		6112055,
+		6112056,
+		6113001,
+		6113002,
+		6113311,
+		6113320,
+		6113323,
+		6113350,
+		6113351,
+		6113406,
+		6113101,
+		6113201,
+		6113202,
+		6113203,
+		6113231,
+		6113204,
+		6113312,
+		6113313,
+		6113314,
+		6113315,
+		6113316,
+		6113317,
+		6113205,
+		6113051,
+		6113052,
+		6113053,
+		6113054,
+		6113055,
+		6116001,
+		6116002,
+		6116323,
+		6116406,
+		6116325,
+		6116101,
+		6116201,
+		6116202,
+		6108001,
+		6108002,
+		6108101,
+		6108102,
+		6108103,
+		6108104,
+		6108051,
+		6108052,
+		6108105,
+		6108053,
+		6108054,
+		6108201,
+		6108211,
+		6108212,
+		6108202,
+		6108221,
+		6108222,
+		6108223,
+		6108224,
+		6108225,
+		6108226,
+		6108227,
+		6108055,
+		6108228,
+		6108203,
+		6108056,
+		6108057,
+		6108058,
+		6108059,
+		6108204,
+		6108060,
+		6108061,
+		6108241,
+		6108205,
+		6108251,
+		6108206,
+		6108261,
+		6108062,
+		6108063,
+		6108064,
+		6108065,
+		6108066,
+		6108067,
+		6108068,
+		6108069,
+		6108070,
+		6108071,
+		6108072,
+		6108073,
+		6108074,
+		6108075,
+		6108262,
+		6108208,
+		6108213,
+		6108214,
+		6108215,
+		6108216,
+		6108217,
+		6108229,
+		6108281,
+		6108282,
+		6108283,
+		6108284,
+		6108285,
+		6108286,
+		6108305,
+		6108306,
+		6108309,
+		6108326,
+		6108327,
+		6108323,
+		6108401,
+		6108406,
+		6109101,
+		6109102,
+		6109103,
+		6109104,
+		6109105,
+		6109106,
+		6109201,
+		6109202,
+		6109221,
+		6109203,
+		6109204,
+		6109241,
+		6109242,
+		6109243,
+		6109205,
+		6109206,
+		6109208,
+		6109261,
+		6109262,
+		6109207,
+		6109051,
+		6109052,
+		6109053,
+		6109054,
+		6109055,
+		6109056,
+		6109057,
+		6109058,
+		6109281,
+		6109282,
+		6109304,
+		6109305,
+		6109306,
+		6109307,
+		6109309,
+		6109310,
+		6109326,
+		6109327,
+		6109350,
+		6109351,
+		6109353,
+		6109354,
+		6109001,
+		6109002,
+		6109401,
+		6109406,
+		6109231,
+		6110101,
+		6110102,
+		6110103,
+		6110104,
+		6110105,
+		6110108,
+		6110305,
+		6110306,
+		6110304,
+		6110311,
+		6110314,
+		6110316,
+		6110317,
+		6110315,
+		6110312,
+		6110313,
+		6110319,
+		6110325,
+		6110320,
+		6110004,
+		6110201,
+		6110211,
+		6110202,
+		6110221,
+		6110203,
+		6110231,
+		6110232,
+		6110204,
+		6110241,
+		6110242,
+		6110001,
+		6110303,
+		6110302,
+		6110005,
+		6110002,
+		6110006,
+		6110401,
+		6110051,
+		6110052,
+		6110053,
+		6110054,
+		6110055,
+		6110056,
+		6110057,
+		6110058,
+		6110059,
+		6110060,
+		6110061,
+		6110403,
+		6110209,
+		6110329,
+		6111101,
+		6111051,
+		6111102,
+		6111052,
+		6111053,
+		6111103,
+		6111054,
+		6111104,
+		6111105,
+		6111106,
+		6111107,
+		6111108,
+		6111109,
+		6111110,
+		6111201,
+		6111211,
+		6111212,
+		6111213,
+		6111202,
+		6111221,
+		6111222,
+		6111203,
+		6111231,
+		6111204,
+		6111241,
+		6111242,
+		6111205,
+		6111209,
+		6111055,
+		6111305,
+		6111306,
+		6111304,
+		6111311,
+		6111314,
+		6111316,
+		6111317,
+		6111315,
+		6111312,
+		6111313,
+		6111319,
+		6111325,
+		6111320,
+		6111403,
+		6111004,
+		6111001,
+		6111302,
+		6111303,
+		6111304,
+		6111005,
+		6111006,
+		6111002,
+		6111329,
+		6111401,
+		6111329,
+		6119001,
+		6119304,
+		6118001,
+		6118304,
+		6117001,
+		6117002,
+		6117004,
+		6117051,
+		6117101,
+		6117202,
+		6117302,
+		6117304,
+		6117305,
+		6117311,
+		6121001,
+		6121304,
 		9049201,
 		9049202,
 		9049203,
@@ -50877,6 +57956,21 @@
 		10079522,
 		10079503,
 		10079531,
+		10105001,
+		10105511,
+		10105512,
+		10105513,
+		10105521,
+		10105522,
+		10105523,
+		10105531,
+		10105532,
+		10105533,
+		10105541,
+		10105542,
+		10105543,
+		10105406,
+		10105323,
 		10083101,
 		10083001,
 		10083002,
@@ -50972,10 +58066,12 @@
 		800062,
 		800063,
 		800064,
+		800090,
 		801051,
 		801052,
 		801053,
 		801054,
+		801055,
 		803051,
 		803052,
 		803053,
@@ -51004,6 +58100,21 @@
 		803076,
 		803077,
 		804051,
+		804052,
+		804053,
+		804054,
+		804055,
+		804056,
+		804057,
+		804060,
+		804061,
+		804062,
+		804063,
+		804064,
+		804065,
+		804066,
+		804067,
+		804068,
 		805051,
 		805052,
 		805053,
@@ -51026,6 +58137,55 @@
 		805070,
 		805071,
 		805072,
+		806051,
+		806052,
+		806053,
+		806054,
+		806055,
+		806056,
+		806057,
+		806058,
+		806059,
+		806060,
+		806061,
+		806062,
+		806063,
+		806064,
+		806065,
+		806066,
+		806067,
+		806068,
+		806069,
+		806070,
+		806071,
+		806072,
+		806073,
+		806074,
+		806075,
+		806076,
+		806077,
+		806078,
+		806079,
+		806080,
+		806081,
+		806082,
+		806083,
+		806084,
+		806085,
+		806086,
+		806087,
+		806088,
+		806089,
+		806090,
+		806091,
+		806092,
+		806093,
+		806094,
+		806095,
+		806096,
+		806097,
+		806098,
+		806099,
 		1050059,
 		800065,
 		800066,
@@ -51041,6 +58201,22 @@
 		1048063,
 		800072,
 		800073,
+		800074,
+		800075,
+		800076,
+		800077,
+		800078,
+		800079,
+		800080,
+		800081,
+		800082,
+		800083,
+		800084,
+		800085,
+		800086,
+		800087,
+		800088,
+		800089,
 		20001,
 		20002,
 		20003,
@@ -51209,6 +58385,30 @@
 		1081059,
 		1197208,
 		1042089,
-		1197066
+		1197066,
+		1033282,
+		1033059,
+		1094072,
+		1150282,
+		1150068,
+		1049092,
+		1022208,
+		1022075,
+		1042090,
+		1021208,
+		1021072,
+		1041065,
+		1020208,
+		1020053,
+		1156053,
+		1024281,
+		1024064,
+		1052072,
+		1095281,
+		1095067,
+		1111060,
+		1089208,
+		1020056,
+		1089056
 	}
 }

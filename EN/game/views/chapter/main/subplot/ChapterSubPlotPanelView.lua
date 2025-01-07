@@ -8,6 +8,7 @@ function var_0_0.Ctor(arg_1_0, arg_1_1)
 	arg_1_0:AddListeners()
 
 	arg_1_0.controller_ = ControllerUtil.GetController(arg_1_0.transform_, "lock")
+	arg_1_0.titleTagController_ = arg_1_0.controllerEx_:GetController("showTag")
 end
 
 function var_0_0.OnEnter(arg_2_0)
@@ -41,6 +42,7 @@ function var_0_0.RefreshUI(arg_7_0)
 			arg_7_0.chapterImage_.sprite = arg_8_0
 		end
 	end)
+	arg_7_0.titleTagController_:SetSelectedState(ChapterTools.GetChapterShowTypeData(var_7_0))
 
 	arg_7_0.chapterNameText_.text = var_7_1.name
 	arg_7_0.chapterDescText_.text = var_7_1.desc

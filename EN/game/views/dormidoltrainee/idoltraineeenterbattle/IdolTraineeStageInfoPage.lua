@@ -66,6 +66,11 @@ function var_0_0.RefreshUI(arg_11_0)
 		var_11_0 = IdolTraineePvpBattleCfg[arg_11_0.stageID_]
 
 		arg_11_0.stateController:SetSelectedState("pvp")
+	elseif arg_11_0.params_.idolCompetition then
+		arg_11_0.stageID_ = arg_11_0.params_.stageID
+		var_11_0 = IdolTraineePvpBattleCfg[arg_11_0.stageID_]
+
+		arg_11_0.stateController:SetSelectedState("pvp")
 	else
 		var_11_0 = IdolTraineePveBattleCfg[arg_11_0.stageID_]
 
@@ -76,7 +81,9 @@ function var_0_0.RefreshUI(arg_11_0)
 	end
 
 	if var_11_0 then
-		arg_11_0.scene_.sprite = getSpriteWithoutAtlas(SpritePathCfg.IdolStageIcon.path .. var_11_0.stage_picture)
+		local var_11_1 = IdolStageSceneCfg[var_11_0.scene_id].stage_picture
+
+		arg_11_0.scene_.sprite = getSpriteWithoutAtlas(SpritePathCfg.IdolStageIcon.path .. var_11_1)
 		arg_11_0.bgmName_.text = IdolStageMusicCfg[var_11_0.bgm].music_name
 		arg_11_0.descText_.text = var_11_0.stage_desc
 		arg_11_0.raceData_ = var_11_0.race_id_list

@@ -4,3 +4,6 @@ TemplateHeroDataTemplate = import("game.data.heroDataTemplate.TemplateHeroDataTe
 ForeignHeroDataTemplate = import("game.data.heroDataTemplate.ForeignHeroDataTemplate")
 PolyhedronHeroDataTemplate = import("game.data.heroDataTemplate.PolyhedronHeroDataTemplate")
 PreviewHeroDataTemplate = import("game.data.heroDataTemplate.PreviewHeroDataTemplate")
+CooperationHeroDataTemplate = import("game.data.heroDataTemplate.CooperationHeroDataTemplate")
+StrategyMatrixHeroDataTemplate = import("game.data.heroDataTemplate.StrategyMatrixHeroDataTemplate")
+ChallengeRogueTeamHeroDataTemplate = import("game.data.heroDataTemplate.ChallengeRogueTeamHeroDataTemplate")

@@ -9,6 +9,9 @@ function var_0_0.OnCtor(arg_1_0, arg_1_1, arg_1_2)
 	arg_1_0.isActive = false
 
 	arg_1_0:BindCfgUI()
+
+	arg_1_0.roleImg_.immediate = true
+
 	arg_1_0:InitUI()
 	arg_1_0:AddUIListener()
 end
@@ -94,7 +97,7 @@ end
 function var_0_0.RefreshUI(arg_15_0)
 	local var_15_0 = SkinCfg[arg_15_0.skinID_]
 
-	arg_15_0.roleImg_.sprite = getSpriteViaConfig("HeroIcon", var_15_0.picture_id)
+	arg_15_0.roleImg_.spriteSync = getSpritePathViaConfig("HeroIcon", var_15_0.picture_id)
 	arg_15_0.nameText_.text = GetI18NText(var_15_0.name)
 
 	if arg_15_0:isUnlock(arg_15_0.skinID_) then

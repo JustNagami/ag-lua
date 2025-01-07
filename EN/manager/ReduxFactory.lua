@@ -1,15 +1,21 @@
 ﻿local var_0_0 = singletonClass("ReduxFactory")
 local var_0_1 = 10
+local var_0_2 = 10
 
 function var_0_0.Ctor(arg_1_0)
 	if UnityEngine.SystemInfo.systemMemorySize < 4000 then
 		var_0_1 = 6
 	end
 
+	if UnityEngine.SystemInfo.systemMemorySize < 4000 then
+		var_0_2 = 6
+	end
+
 	arg_1_0.reduxViewDic_ = {}
 	arg_1_0.cachedReduxViewList_ = {}
 	arg_1_0.reduxViewList_ = {}
 	arg_1_0.isCheckMemoryLeak_ = true
+	arg_1_0.currentDisposeCounter_ = 0
 end
 
 function var_0_0.CacheReduxView(arg_2_0, arg_2_1)
@@ -44,6 +50,8 @@ function var_0_0.RemoveView(arg_3_0, arg_3_1)
 		end
 
 		arg_3_1:OnUnload()
+
+		arg_3_0.currentDisposeCounter_ = arg_3_0.currentDisposeCounter_ + 1
 	end
 end
 
@@ -63,6 +71,8 @@ function var_0_0.RemoveViewAt(arg_4_0, arg_4_1)
 
 	if var_4_2 then
 		table.remove(arg_4_0.reduxViewList_, var_4_2)
+
+		arg_4_0.currentDisposeCounter_ = arg_4_0.currentDisposeCounter_ + 1
 	end
 end
 
@@ -111,38 +121,36 @@ function var_0_0.CheckReduxViewQueueFull(arg_6_0)
 	end
 end
 
-function var_0_0.ClearCacheViews(arg_7_0)
-	for iter_7_0, iter_7_1 in pairs(arg_7_0.reduxViewDic_) do
-		iter_7_1:OnUnload()
-	end
+function var_0_0.TryClearUnusedResource(arg_7_0)
+	if arg_7_0.currentDisposeCounter_ > var_0_2 then
+		Resources.UnloadUnusedAssets()
 
-	arg_7_0.reduxViewDic_ = {}
-	arg_7_0.reduxViewList_ = {}
-	arg_7_0.cachedReduxViewList_ = {}
+		arg_7_0.currentDisposeCounter_ = 0
+	end
 end
 
-function var_0_0.OnMainHomeViewTop(arg_8_0)
+function var_0_0.ClearCacheViews(arg_8_0)
 	for iter_8_0, iter_8_1 in pairs(arg_8_0.reduxViewDic_) do
-		iter_8_1:OnMainHomeViewTop()
+		iter_8_1:OnUnload()
 	end
+
+	arg_8_0:TryClearUnusedResource()
+
+	arg_8_0.reduxViewDic_ = {}
+	arg_8_0.reduxViewList_ = {}
+	arg_8_0.cachedReduxViewList_ = {}
+	arg_8_0.currentDisposeCounter_ = 0
 end
 
-function var_0_0.OnManagedObjCtor(arg_9_0, arg_9_1)
-	if not arg_9_0.isCheckMemoryLeak_ then
-		return
+function var_0_0.OnMainHomeViewTop(arg_9_0)
+	for iter_9_0, iter_9_1 in pairs(arg_9_0.reduxViewDic_) do
+		iter_9_1:OnMainHomeViewTop()
 	end
 
-	if not arg_9_0.existReduxViewDic_ then
-		arg_9_0.existReduxViewDic_ = {}
-		arg_9_0.existReduxViewList_ = {}
-	end
-
-	table.insert(arg_9_0.existReduxViewList_, arg_9_1)
-
-	arg_9_0.existReduxViewDic_[tostring(arg_9_1)] = arg_9_1
+	arg_9_0:TryClearUnusedResource()
 end
 
-function var_0_0.OnManagedObjDisposed(arg_10_0, arg_10_1)
+function var_0_0.OnManagedObjCtor(arg_10_0, arg_10_1)
 	if not arg_10_0.isCheckMemoryLeak_ then
 		return
 	end
@@ -152,42 +160,57 @@ function var_0_0.OnManagedObjDisposed(arg_10_0, arg_10_1)
 		arg_10_0.existReduxViewList_ = {}
 	end
 
-	local var_10_0 = tostring(arg_10_1)
+	table.insert(arg_10_0.existReduxViewList_, arg_10_1)
 
-	if arg_10_0.existReduxViewDic_[var_10_0] then
-		arg_10_0.existReduxViewDic_[var_10_0] = nil
-	end
-
-	local var_10_1 = table.indexof(arg_10_0.existReduxViewList_, arg_10_1)
-
-	if var_10_1 then
-		table.remove(arg_10_0.existReduxViewList_, var_10_1)
-	end
+	arg_10_0.existReduxViewDic_[tostring(arg_10_1)] = arg_10_1
 end
 
-function var_0_0.PrintExistingObjectInfo(arg_11_0)
+function var_0_0.OnManagedObjDisposed(arg_11_0, arg_11_1)
 	if not arg_11_0.isCheckMemoryLeak_ then
 		return
 	end
 
-	local var_11_0 = "#ff0000"
+	if not arg_11_0.existReduxViewDic_ then
+		arg_11_0.existReduxViewDic_ = {}
+		arg_11_0.existReduxViewList_ = {}
+	end
 
-	if arg_11_0.existReduxViewList_ ~= nil and #arg_11_0.existReduxViewList_ > 0 then
-		local var_11_1 = "<color=" .. var_11_0 .. ">UI系统结束时，未被Dispose的ReduxView数量：" .. #arg_11_0.existReduxViewList_ .. " : "
+	local var_11_0 = tostring(arg_11_1)
 
-		for iter_11_0 = 1, #arg_11_0.existReduxViewList_ do
-			var_11_1 = var_11_1 .. arg_11_0.existReduxViewList_[iter_11_0].class.__cname .. (iter_11_0 == #arg_11_0.existReduxViewList_ and "" or ",")
+	if arg_11_0.existReduxViewDic_[var_11_0] then
+		arg_11_0.existReduxViewDic_[var_11_0] = nil
+	end
+
+	local var_11_1 = table.indexof(arg_11_0.existReduxViewList_, arg_11_1)
+
+	if var_11_1 then
+		table.remove(arg_11_0.existReduxViewList_, var_11_1)
+	end
+end
+
+function var_0_0.PrintExistingObjectInfo(arg_12_0)
+	if not arg_12_0.isCheckMemoryLeak_ then
+		return
+	end
+
+	local var_12_0 = "#ff0000"
+
+	if arg_12_0.existReduxViewList_ ~= nil and #arg_12_0.existReduxViewList_ > 0 then
+		local var_12_1 = "<color=" .. var_12_0 .. ">UI系统结束时，未被Dispose的ReduxView数量：" .. #arg_12_0.existReduxViewList_ .. " : "
+
+		for iter_12_0 = 1, #arg_12_0.existReduxViewList_ do
+			var_12_1 = var_12_1 .. arg_12_0.existReduxViewList_[iter_12_0].class.__cname .. (iter_12_0 == #arg_12_0.existReduxViewList_ and "" or ",")
 		end
 
-		local var_11_2 = var_11_1 .. "请优先按规范销毁对象</color>"
+		local var_12_2 = var_12_1 .. "请优先按规范销毁对象</color>"
 
-		CustomLog.LogError(var_11_2)
+		CustomLog.LogError(var_12_2)
 	else
 		print("<color=#00ff00>对象已清理完全</color>")
 	end
 end
 
-function var_0_0.PrintViewList(arg_12_0, arg_12_1)
+function var_0_0.PrintViewList(arg_13_0, arg_13_1)
 	return
 end
 

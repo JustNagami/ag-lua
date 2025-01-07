@@ -24,6 +24,12 @@ function var_0_0.InitUI(arg_4_0)
 end
 
 function var_0_0.OnEnter(arg_5_0)
+	if arg_5_0.params_.isBack then
+		arg_5_0:RegisterEvents()
+
+		return
+	end
+
 	arg_5_0.furID = arg_5_0.params_.furID
 	arg_5_0.furCfg = BackHomeFurniture[arg_5_0.furID]
 	arg_5_0.state = arg_5_0.params_.state

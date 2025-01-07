@@ -34,12 +34,11 @@ local function var_0_5(arg_3_0)
 		local var_6_1 = DormCharacterInteractBehaviour.MakeCtx(arg_3_0.player, arg_3_0.brickItem, {
 			waitOneTick = true
 		})
-		local var_6_2 = DormUtils.GetEntityData(arg_3_0.player).cfgID
-		local var_6_3 = var_6_0 and var_0_3 or var_0_4
-		local var_6_4 = DormCharacterInteractBehaviour.GetSequence(var_6_2, nil, var_6_3)
+		local var_6_2 = var_6_0 and var_0_3 or var_0_4
+		local var_6_3 = DormCharacterInteractBehaviour.GetSequence(arg_3_0.player, nil, var_6_2)
 
-		if var_6_4 then
-			arg_6_0.taskDataCtx.performanceTask = DormCharacterInteractBehaviour.MakeInteractTask(var_6_4, var_6_1)
+		if var_6_3 then
+			arg_6_0.taskDataCtx.performanceTask = DormCharacterInteractBehaviour.MakeInteractTask(var_6_3, var_6_1)
 
 			arg_6_0.taskDataCtx.performanceTask:Start(true)
 		end

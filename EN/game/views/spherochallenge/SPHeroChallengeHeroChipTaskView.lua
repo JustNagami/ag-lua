@@ -63,6 +63,7 @@ function var_0_0.AddUIListener(arg_9_0)
 	end)
 	arg_9_0:AddBtnListener(arg_9_0.drawBtn_, nil, function()
 		JumpTools.GoToSystem("/draw", {
+			isFirst = true,
 			poolId = DrawTools:GetRoleUpPoolID(arg_9_0.roleID)
 		}, ViewConst.SYSTEM_ID.DRAW)
 	end)

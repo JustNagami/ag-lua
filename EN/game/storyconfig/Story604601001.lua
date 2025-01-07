@@ -150,6 +150,9 @@
 
 				arg_7_1.callingController_:SetSelectedState("normal")
 
+				arg_7_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_7_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_10_3 = arg_7_1:GetWordFromCfg(604601002)
 				local var_10_4 = arg_7_1:FormatText(var_10_3.content)
 
@@ -241,6 +244,9 @@
 				arg_11_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1081")
 
 				arg_11_1.callingController_:SetSelectedState("normal")
+
+				arg_11_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_11_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_14_3 = arg_11_1:GetWordFromCfg(604601003)
 				local var_14_4 = arg_11_1:FormatText(var_14_3.content)
@@ -422,6 +428,9 @@
 
 				arg_19_1.callingController_:SetSelectedState("normal")
 
+				arg_19_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_19_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_22_3 = arg_19_1:GetWordFromCfg(604601005)
 				local var_22_4 = arg_19_1:FormatText(var_22_3.content)
 
@@ -514,6 +523,9 @@
 
 				arg_23_1.callingController_:SetSelectedState("normal")
 
+				arg_23_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_23_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_26_3 = arg_23_1:GetWordFromCfg(604601006)
 				local var_26_4 = arg_23_1:FormatText(var_26_3.content)
 
@@ -605,6 +617,9 @@
 				arg_27_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1081")
 
 				arg_27_1.callingController_:SetSelectedState("normal")
+
+				arg_27_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_27_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_30_3 = arg_27_1:GetWordFromCfg(604601007)
 				local var_30_4 = arg_27_1:FormatText(var_30_3.content)

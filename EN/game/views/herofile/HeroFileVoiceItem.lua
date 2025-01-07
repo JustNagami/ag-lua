@@ -22,6 +22,7 @@ end
 function var_0_0.SetData(arg_4_0, arg_4_1, arg_4_2, arg_4_3)
 	arg_4_0.unlock_ = arg_4_2.unlock
 	arg_4_0.onClick_ = arg_4_3
+	arg_4_0.id_ = arg_4_2.id
 
 	if arg_4_2.unlock then
 		arg_4_0.lockController_:SetSelectedState("unlock")
@@ -46,24 +47,28 @@ function var_0_0.SetData(arg_4_0, arg_4_1, arg_4_2, arg_4_3)
 	end
 end
 
-function var_0_0.AddUIListener(arg_5_0)
-	arg_5_0:AddBtnListener(arg_5_0.voiceBtn_, nil, function()
-		if arg_5_0.onClick_ and arg_5_0.unlock_ then
-			arg_5_0.onClick_()
+function var_0_0.SetIsShow(arg_5_0, arg_5_1)
+	SetActive(arg_5_0.gameObject_, arg_5_1)
+end
+
+function var_0_0.AddUIListener(arg_6_0)
+	arg_6_0:AddBtnListener(arg_6_0.voiceBtn_, nil, function()
+		if arg_6_0.onClick_ and arg_6_0.unlock_ then
+			arg_6_0.onClick_(arg_6_0.id_)
 		end
 	end)
 end
 
-function var_0_0.StopPlay(arg_7_0)
-	arg_7_0.playController_:SetSelectedState("stop")
+function var_0_0.StopPlay(arg_8_0)
+	arg_8_0.playController_:SetSelectedState("stop")
 end
 
-function var_0_0.StartPlay(arg_8_0)
-	arg_8_0.playController_:SetSelectedState("play")
+function var_0_0.StartPlay(arg_9_0)
+	arg_9_0.playController_:SetSelectedState("play")
 end
 
-function var_0_0.Dispose(arg_9_0)
-	var_0_0.super.Dispose(arg_9_0)
+function var_0_0.Dispose(arg_10_0)
+	var_0_0.super.Dispose(arg_10_0)
 end
 
 return var_0_0

@@ -163,6 +163,14 @@
 		path = "TextureConfig/BackHouseUI/IdolSkills/",
 		name = "IdolDanceBuffIcon"
 	},
+	DormFurnitureTheme = {
+		path = "TextureConfig/BackHouseUI/SpecialFurniture/",
+		name = "DormFurnitureTheme"
+	},
+	IdolDanceRoleIcon = {
+		path = "TextureConfig/BackHouseUI/DanceRoleIcon/",
+		name = "IdolDanceRoleIcon"
+	},
 	ClubHeadIcon = {
 		path = "TextureConfig/ClubUI/",
 		name = "ClubHeadIcon"
@@ -176,7 +184,7 @@
 		name = "SkinTrialTextrues"
 	},
 	ActivityBannerTextures = {
-		path = "TextureConfig/Activity/Banner/",
+		path = "I18NImg/ZH_CN/Activity/",
 		name = "ActivityBannerTextures"
 	},
 	ActivityClubBossHeadIcon = {
@@ -210,5 +218,29 @@
 	ActivityHeroChallengeTrain = {
 		path = "TextureConfig/SPHeroChallenge/",
 		name = "ActivityHeroChallengeTrain"
+	},
+	TangramGameStageIcon = {
+		path = "TextureConfig/Summer2024/Summer2024_Tangram/",
+		name = "TangramGameStageIcon"
+	},
+	SimBusinessStage = {
+		path = "TextureBg/Version/SummerUI_3_5/SummerUI_3_5_SimBusinessUI/",
+		name = "SimBusinessStage"
+	},
+	SimBusinessGoods = {
+		path = "TextureBg/Version/SummerUI_3_5/SummerUI_3_5_SimBusinessUI/goods/",
+		name = "SimBusinessGoods"
+	},
+	SimBusinessGuest = {
+		path = "TextureBg/Version/SummerUI_3_5/SummerUI_3_5_SimBusinessUI/guest/",
+		name = "SimBusinessGuest"
+	},
+	SimBusinessShelf = {
+		path = "TextureBg/Version/SummerUI_3_5/SummerUI_3_5_SimBusinessUI/shelf/",
+		name = "SimBusinessShelf"
+	},
+	TetrisGameSkill = {
+		path = "TextureConfig/BackHouseUI/TetrisGameSkill/",
+		name = "TetrisGameSkill"
 	}
 }

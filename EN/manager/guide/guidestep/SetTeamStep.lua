@@ -5,10 +5,10 @@ function var_0_0.Init(arg_1_0, arg_1_1)
 end
 
 function var_0_0.Play(arg_2_0)
-	local var_2_0 = ComboSkillTools.GetRecommendSkillID(arg_2_0.team, true)
+	local var_2_0 = ComboSkillTools.GetRecommendSkillID(arg_2_0.team[1], true)
 	local var_2_1 = ReserveParams.New(ReserveConst.RESERVE_TYPE.PLOT, nil, nil)
 
-	ReserveTools.SetHeroList(var_2_1, arg_2_0.team, {
+	ReserveTools.SetHeroList(var_2_1, arg_2_0.team[1], arg_2_0.team[2] or {
 		0,
 		0,
 		0

@@ -49,6 +49,12 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3, arg_6_4, arg_6_5, a
 end
 
 function var_0_0.UpdateView(arg_7_0)
+	if arg_7_0.data == nil then
+		SetActive(arg_7_0.gameObject_, false)
+
+		return
+	end
+
 	arg_7_0.list1:StartScrollWithoutAnimator(#arg_7_0.data)
 
 	arg_7_0.titleTxt_.text = ""

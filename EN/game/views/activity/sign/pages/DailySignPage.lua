@@ -63,7 +63,7 @@ function var_0_0.AutoGetReward(arg_7_0)
 	arg_7_0.signIndex_ = SignTools.GetDailySignIndex()
 
 	if arg_7_0.signIndex_ > 0 then
-		manager.ui:UIEventEnabledByUI(false, true)
+		manager.notify:CallUpdateFunc(SIGN_INPUT, false)
 
 		arg_7_0.timer_ = Timer.New(function()
 			SignAction.QueryDailySign()
@@ -99,11 +99,11 @@ function var_0_0.OnSign(arg_9_0, arg_9_1)
 			end
 		end, 0.033, -1)
 
-		manager.ui:UIEventEnabledByUI(true, false)
+		manager.notify:CallUpdateFunc(SIGN_INPUT, true)
 		manager.notify:CallUpdateFunc(READY_TO_SKIP_SIGN_ANIMATION, false)
 		arg_9_0.timer_:Start()
 	else
-		manager.ui:UIEventEnabledByUI(true, false)
+		manager.notify:CallUpdateFunc(SIGN_INPUT, true)
 		ShowTips(arg_9_1.result)
 	end
 end

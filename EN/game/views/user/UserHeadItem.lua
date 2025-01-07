@@ -19,9 +19,15 @@ function var_0_0.InitUI(arg_3_0)
 	arg_3_0.lockCon_ = ControllerUtil.GetController(arg_3_0.iconGo_.transform, "lock")
 	arg_3_0.useCon_ = ControllerUtil.GetController(arg_3_0.iconGo_.transform, "use")
 	arg_3_0.typeCon_ = ControllerUtil.GetController(arg_3_0.iconGo_.transform, "type")
+	arg_3_0.commonPortrait_ = CommonHeadPortrait.New(arg_3_0.portraitHead_)
 end
 
 function var_0_0.AddUIListeners(arg_4_0)
+	arg_4_0.commonPortrait_:RegisteClickCallback(function()
+		if arg_4_0.clickFunc_ then
+			arg_4_0.clickFunc_()
+		end
+	end)
 	arg_4_0:AddBtnListener(arg_4_0.iconBtn_, nil, function()
 		if arg_4_0.clickFunc_ then
 			arg_4_0.clickFunc_()
@@ -29,128 +35,127 @@ function var_0_0.AddUIListeners(arg_4_0)
 	end)
 end
 
-function var_0_0.RefreshItem(arg_6_0, arg_6_1, arg_6_2)
-	manager.redPoint:unbindUIandKey(arg_6_0.transform_)
+function var_0_0.RefreshItem(arg_7_0, arg_7_1, arg_7_2)
+	manager.redPoint:unbindUIandKey(arg_7_0.transform_)
 
-	arg_6_0.itemID_ = arg_6_1
+	arg_7_0.itemID_ = arg_7_1
 
-	if arg_6_2 == "portrait" then
-		arg_6_0.info_ = PlayerData:GetPortrait(arg_6_0.itemID_)
+	if arg_7_2 == "portrait" then
+		arg_7_0.info_ = PlayerData:GetPortrait(arg_7_0.itemID_)
 
-		arg_6_0.typeCon_:SetSelectedState("portrait")
+		arg_7_0.typeCon_:SetSelectedState("portrait")
+		arg_7_0.commonPortrait_:RenderHead(arg_7_0.itemID_)
+		arg_7_0.commonPortrait_:RenderFrame(nil)
+	elseif arg_7_2 == "frame" then
+		arg_7_0.info_ = PlayerData:GetFrame(arg_7_0.itemID_)
 
-		arg_6_0.icon_.sprite = ItemTools.getItemSprite(arg_6_0.itemID_)
+		arg_7_0.typeCon_:SetSelectedState("frame")
+		arg_7_0.commonPortrait_:RenderHead(nil)
+		arg_7_0.commonPortrait_:RenderFrame(arg_7_0.itemID_)
+	elseif arg_7_2 == "cardBg" then
+		arg_7_0.info_ = PlayerData:GetCardBg(arg_7_0.itemID_)
 
-		arg_6_0.icon_:SetNativeSize()
-	elseif arg_6_2 == "frame" then
-		arg_6_0.info_ = PlayerData:GetFrame(arg_6_0.itemID_)
+		arg_7_0.typeCon_:SetSelectedState("cardBg")
 
-		arg_6_0.typeCon_:SetSelectedState("frame")
+		arg_7_0.cardBgIcon_.sprite = ItemTools.getItemSprite(arg_7_0.itemID_)
 
-		arg_6_0.frame_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_6_0.itemID_)
-	elseif arg_6_2 == "cardBg" then
-		arg_6_0.info_ = PlayerData:GetCardBg(arg_6_0.itemID_)
-
-		arg_6_0.typeCon_:SetSelectedState("cardBg")
-
-		arg_6_0.cardBgIcon_.sprite = ItemTools.getItemSprite(arg_6_0.itemID_)
-
-		arg_6_0.cardBgIcon_:SetNativeSize()
-	elseif arg_6_2 == "chatBubble" then
-		arg_6_0.info_ = {
-			unlock = table.keyof(PlayerData:GetUnlockChatBubbleIDList(), arg_6_0.itemID_) and 1 or 0
+		arg_7_0.cardBgIcon_:SetNativeSize()
+	elseif arg_7_2 == "chatBubble" then
+		arg_7_0.info_ = {
+			unlock = table.keyof(PlayerData:GetUnlockChatBubbleIDList(), arg_7_0.itemID_) and 1 or 0
 		}
 
-		arg_6_0.typeCon_:SetSelectedState("chatBubble")
+		arg_7_0.typeCon_:SetSelectedState("chatBubble")
 
-		arg_6_0.chatBubbleImg_.sprite = ItemTools.getItemSprite(arg_6_0.itemID_)
+		arg_7_0.chatBubbleImg_.sprite = ItemTools.getItemSprite(arg_7_0.itemID_)
 
-		local var_6_0 = ChatBubbleCfg[arg_6_0.itemID_].color1
+		local var_7_0 = ChatBubbleCfg[arg_7_0.itemID_].color1
 
-		arg_6_0.chatBubbleTxt_.color = Color(var_6_0[1], var_6_0[2], var_6_0[3])
+		arg_7_0.chatBubbleTxt_.color = Color(var_7_0[1], var_7_0[2], var_7_0[3])
 
-		manager.redPoint:bindUIandKey(arg_6_0.transform_, string.format("%s_%s", RedPointConst.CHAT_BUBBLE, arg_6_0.itemID_))
+		manager.redPoint:bindUIandKey(arg_7_0.transform_, string.format("%s_%s", RedPointConst.CHAT_BUBBLE, arg_7_0.itemID_))
 	end
 
-	arg_6_0.lockCon_:SetSelectedState(arg_6_0.info_.unlock == 0 and "lock" or "default")
-	SetActive(arg_6_0.timeCntGo_, arg_6_0.info_.lasted_time and arg_6_0.info_.lasted_time > 0)
-	arg_6_0:RefreshTime()
+	arg_7_0.lockCon_:SetSelectedState(arg_7_0.info_.unlock == 0 and "lock" or "default")
+	SetActive(arg_7_0.timeCntGo_, arg_7_0.info_.lasted_time and arg_7_0.info_.lasted_time > 0)
+	arg_7_0:RefreshTime()
 end
 
-function var_0_0.RefreshTime(arg_7_0)
-	arg_7_0:StopTimer()
+function var_0_0.RefreshTime(arg_8_0)
+	arg_8_0:StopTimer()
 
-	if not arg_7_0.info_.lasted_time or arg_7_0.info_.lasted_time == 0 then
+	if not arg_8_0.info_.lasted_time or arg_8_0.info_.lasted_time == 0 then
 		return
 	end
 
-	if arg_7_0.info_.lasted_time - manager.time:GetServerTime() <= 0 then
-		arg_7_0.timeCntText_.text = GetTips("TIP_EXPIRED")
+	if arg_8_0.info_.lasted_time - manager.time:GetServerTime() <= 0 then
+		arg_8_0.timeCntText_.text = GetTips("TIP_EXPIRED")
 	else
-		arg_7_0.timeCntText_.text = manager.time:GetLostTimeStr2(arg_7_0.info_.lasted_time)
+		arg_8_0.timeCntText_.text = manager.time:GetLostTimeStr2(arg_8_0.info_.lasted_time)
 	end
 
-	arg_7_0.timer_ = Timer.New(function()
-		if arg_7_0.info_.lasted_time - manager.time:GetServerTime() > 0 then
-			arg_7_0.timeCntText_.text = manager.time:GetLostTimeStr2(arg_7_0.info_.lasted_time)
+	arg_8_0.timer_ = Timer.New(function()
+		if arg_8_0.info_.lasted_time - manager.time:GetServerTime() > 0 then
+			arg_8_0.timeCntText_.text = manager.time:GetLostTimeStr2(arg_8_0.info_.lasted_time)
 		else
-			arg_7_0.timeCntText_.text = GetTips("TIP_EXPIRED")
+			arg_8_0.timeCntText_.text = GetTips("TIP_EXPIRED")
 
-			if arg_7_0.info_.unlock == 1 then
+			if arg_8_0.info_.unlock == 1 then
 				if curPage == "frame" then
-					PlayerData:LockFrame(arg_7_0.itemID_)
+					PlayerData:LockFrame(arg_8_0.itemID_)
 
-					if PlayerData:GetCurFrame() == arg_7_0.itemID_ then
-						local var_8_0 = GameSetting.profile_avatar_frame_default.value[1]
+					if PlayerData:GetCurFrame() == arg_8_0.itemID_ then
+						local var_9_0 = GameSetting.profile_avatar_frame_default.value[1]
 
-						PlayerAction.ChangeFrameIcon(var_8_0)
+						PlayerAction.ChangeFrameIcon(var_9_0)
 					end
 				elseif curPage == "cardBg" then
-					PlayerData:LockCardBg(arg_7_0.itemID_)
+					PlayerData:LockCardBg(arg_8_0.itemID_)
 
-					if PlayerData:GetCurCardBg() == arg_7_0.itemID_ then
-						local var_8_1 = GameSetting.profile_business_card_default.value[1]
+					if PlayerData:GetCurCardBg() == arg_8_0.itemID_ then
+						local var_9_1 = GameSetting.profile_business_card_default.value[1]
 
-						PlayerAction.ChangeCardBg(var_8_1)
+						PlayerAction.ChangeCardBg(var_9_1)
 					end
 				end
 			end
 
-			arg_7_0:StopTimer()
+			arg_8_0:StopTimer()
 		end
 	end, -1, 1)
 
-	arg_7_0.timer_:Start()
+	arg_8_0.timer_:Start()
 end
 
-function var_0_0.SetUsed(arg_9_0, arg_9_1)
-	arg_9_0.useCon_:SetSelectedState(arg_9_1 and "used" or "default")
+function var_0_0.SetUsed(arg_10_0, arg_10_1)
+	arg_10_0.useCon_:SetSelectedState(arg_10_1 and "used" or "default")
 end
 
-function var_0_0.SetSelected(arg_10_0, arg_10_1)
-	arg_10_0.selectCon_:SetSelectedState(arg_10_1 and "select" or "default")
+function var_0_0.SetSelected(arg_11_0, arg_11_1)
+	arg_11_0.selectCon_:SetSelectedState(arg_11_1 and "select" or "default")
 end
 
-function var_0_0.RegisterClickListener(arg_11_0, arg_11_1)
-	arg_11_0.clickFunc_ = arg_11_1
+function var_0_0.RegisterClickListener(arg_12_0, arg_12_1)
+	arg_12_0.clickFunc_ = arg_12_1
 end
 
-function var_0_0.StopTimer(arg_12_0)
-	if arg_12_0.timer_ then
-		arg_12_0.timer_:Stop()
+function var_0_0.StopTimer(arg_13_0)
+	if arg_13_0.timer_ then
+		arg_13_0.timer_:Stop()
 
-		arg_12_0.timer_ = nil
+		arg_13_0.timer_ = nil
 	end
 end
 
-function var_0_0.OnExit(arg_13_0)
-	arg_13_0:StopTimer()
+function var_0_0.OnExit(arg_14_0)
+	arg_14_0:StopTimer()
 end
 
-function var_0_0.Dispose(arg_14_0)
-	manager.redPoint:unbindUIandKey(arg_14_0.transform_)
-	arg_14_0:RemoveAllListeners()
-	var_0_0.super.Dispose(arg_14_0)
+function var_0_0.Dispose(arg_15_0)
+	manager.redPoint:unbindUIandKey(arg_15_0.transform_)
+	arg_15_0.commonPortrait_:Dispose()
+	arg_15_0:RemoveAllListeners()
+	var_0_0.super.Dispose(arg_15_0)
 end
 
 return var_0_0

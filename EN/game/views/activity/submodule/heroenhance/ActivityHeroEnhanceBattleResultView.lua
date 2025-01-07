@@ -20,7 +20,7 @@ end
 
 function var_0_0.onRenderMissionResultContent(arg_4_0)
 	if not arg_4_0.missionView then
-		arg_4_0.missionView = ActivityHeroEnhanceBattleSettlementModule.New(arg_4_0.contentContainer_)
+		arg_4_0.missionView = ActivityHeroEnhanceBattleSettlementModule.New(arg_4_0.contentContainer_, arg_4_0.stageData:GetActivityID())
 	end
 
 	arg_4_0.missionView:RenderView({

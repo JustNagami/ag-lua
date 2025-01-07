@@ -16,8 +16,8 @@ function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
 	arg_3_0.rewardItems_ = {}
-	arg_3_0.typeCon_ = ControllerUtil.GetController(arg_3_0.transform_, "type")
-	arg_3_0.stateCon_ = ControllerUtil.GetController(arg_3_0.transform_, "state")
+	arg_3_0.typeCon_ = arg_3_0.itemCon_:GetController("type")
+	arg_3_0.stateCon_ = arg_3_0.itemCon_:GetController("state")
 end
 
 function var_0_0.AddUIListeners(arg_4_0)

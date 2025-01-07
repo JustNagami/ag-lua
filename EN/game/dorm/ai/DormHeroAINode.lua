@@ -184,8 +184,8 @@ function IdleNode.Ctor(arg_15_0, ...)
 		arg_15_0.duringIdleAnimePlaying = false
 		var_15_2 = var_15_1 or IdleNode.idleTimeLimit * math.random()
 	else
-		arg_15_0.waitIdleAnimePlayTimes = math.random() > 0.5 and 1 or 0
-		var_15_2 = math.random(IdleNode.idleTimeLimit)
+		arg_15_0.waitIdleAnimePlayTimes = DormHeroAI:GetParam(arg_15_0.entityID, "waitIdleAnimePlayCnt") or math.random() > 0.5 and 1 or 0
+		var_15_2 = DormHeroAI:GetParam(arg_15_0.entityID, "waitTime") or math.random(IdleNode.idleTimeLimit)
 		arg_15_0.duringIdleAnimePlaying = false
 	end
 
@@ -232,9 +232,11 @@ function IdleNode.ClaimControl(arg_19_0)
 end
 
 function IdleNode.ReleaseControl(arg_20_0)
-	DormHeroAI:SwitchControl(arg_20_0.entityID, DormEnum.ControlType.Player)
-	DormHeroAI.ConsumeInteractCtx(arg_20_0.entityID)
-	DormHeroAI:MoveNext(arg_20_0.entityID, IdleNode)
+	if not DormHeroTools:CheckIsVisitHero(arg_20_0.entityID) then
+		DormHeroAI:SwitchControl(arg_20_0.entityID, DormEnum.ControlType.Player)
+		DormHeroAI.ConsumeInteractCtx(arg_20_0.entityID)
+		DormHeroAI:MoveNext(arg_20_0.entityID, IdleNode)
+	end
 end
 
 function IdleNode.OnGrabStarted(arg_21_0)

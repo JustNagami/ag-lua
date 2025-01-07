@@ -8,15 +8,19 @@ function Dorm.NewTimer(...)
 	return var_1_0
 end
 
-local function var_0_0(arg_2_0)
+function Dorm.EntityCanFocus(arg_2_0)
+	return not DormHeroTools:CheckIsVisitHero(arg_2_0)
+end
+
+local function var_0_0(arg_3_0)
 	Dorm.heroSpecialVfxInfo = {}
 
 	Dorm.storage:MapToData(DormEnum.Namespace.HeroShowSpecialVfx, Dorm.heroSpecialVfxInfo)
 
-	Dorm.charaVfxActiveType = arg_2_0
+	Dorm.charaVfxActiveType = arg_3_0
 end
 
-function OnEnterDormScene(arg_3_0)
+function OnEnterDormScene(arg_4_0)
 	gameContext:SetSystemLayer("battle")
 	DormLuaBridge.CalcDormSpawnBounds()
 
@@ -31,7 +35,7 @@ function OnEnterDormScene(arg_3_0)
 	Dorm.storage:Reset()
 	LuaForUtil.UpdateCameraSetting()
 
-	if not arg_3_0 then
+	if not arg_4_0 then
 		manager.uiInit()
 	end
 
@@ -39,20 +43,25 @@ function OnEnterDormScene(arg_3_0)
 	Dorm.globalSubtitleView = SubtitleBubbleView.New()
 
 	Dorm.globalSubtitleView:OnEnter()
+
+	Dorm.globalNicknameView = NicknameBubbleView.New()
+
+	Dorm.globalNicknameView:OnEnter()
 	DormRegisterCMDEvent()
 	var_0_0({
-		DormEnum.SpecialVfx.Hungry
+		DormEnum.SpecialVfx.Hungry,
+		DormEnum.SpecialVfx.Gift
 	})
 	DormFurnitureManager.GetInstance():Init()
 	DormCharacterManager.GetInstance():Init()
 	DormCharacterActionManager:Init()
 	DormCharacterInteractBehaviour:Init()
 
-	local var_3_0 = DormData:GetCurrectSceneID()
-	local var_3_1 = BackHomeCfg[var_3_0].type
+	local var_4_0 = DormData:GetCurrectSceneID()
+	local var_4_1 = BackHomeCfg[var_4_0].type
 
-	if var_3_1 == DormConst.BACKHOME_TYPE.PublicDorm or var_3_1 == DormConst.BACKHOME_TYPE.PrivateDorm then
-		DormAction.AskDormRoomLikeNum(var_3_0)
+	if var_4_1 == DormConst.BACKHOME_TYPE.PublicDorm or var_4_1 == DormConst.BACKHOME_TYPE.PrivateDorm then
+		DormAction.AskDormRoomLikeNum(var_4_0)
 	end
 
 	if DormitoryData:GetFlag() then
@@ -64,20 +73,30 @@ function OnEnterDormScene(arg_3_0)
 
 	manager.windowBar:SetWhereTag("dorm")
 	DormFurnitureTools:GenerateFurnitureWhenEnterScene()
-	DormHeroTools:GenerateHeroWhenEnterScene()
+	DormHeroTools:GenerateHeroWhenEnterScene({
+		disAllowVisit = true
+	})
 	Dorm.Enter()
+	DormHeroTools:GenerateVisitHero()
 end
 
-function OnExitDormScene(arg_4_0)
+function OnExitDormScene(arg_5_0)
 	Dorm.Leave()
-	manager.audio:StopAll()
+	manager.audio:StopEffect()
 	manager.windowBar:ClearWhereTag()
 	Dorm.globalSubtitleView:OnExit()
 
 	Dorm.globalSubtitleView = Dorm.globalSubtitleView:Dispose()
 	Dorm.subtitleViewStack = nil
 
-	if arg_4_0 then
+	if Dorm.globalNicknameView then
+		Dorm.globalNicknameView:OnExit()
+		Dorm.globalNicknameView:Dispose()
+
+		Dorm.globalNicknameView = nil
+	end
+
+	if arg_5_0 then
 		gameContext:DestroyCurRoutes()
 	else
 		DestroyLua()
@@ -92,33 +111,33 @@ function OnExitDormScene(arg_4_0)
 	Dorm.heroSpecialVfxInfo = nil
 end
 
-function OnClickFurniture(arg_5_0, arg_5_1, arg_5_2)
-	local var_5_0
+function Dorm.OnClickFurniture(arg_6_0, arg_6_1, arg_6_2)
+	local var_6_0
 
-	if arg_5_2 and arg_5_2 >= 0 then
-		var_5_0 = arg_5_2
+	if arg_6_2 and arg_6_2 >= 0 then
+		var_6_0 = arg_6_2
 	end
 
 	JumpTools.OpenPageByJump("/furnitureEdit", {
 		type = "edit",
-		itemId = arg_5_0,
-		furEntityID = arg_5_1,
-		furSuitEid = var_5_0
+		itemId = arg_6_0,
+		furEntityID = arg_6_1,
+		furSuitEid = var_6_0
 	})
 end
 
-function OnClickIllegalSuitFurniture(arg_6_0, arg_6_1, arg_6_2)
-	if arg_6_2 == "otherSuit" then
+function OnClickIllegalSuitFurniture(arg_7_0, arg_7_1, arg_7_2)
+	if arg_7_2 == "otherSuit" then
 		ShowTips("DORM_FURNITURE_CANT_ADD_OTHER_SUIT")
-	elseif arg_6_2 == "cantPlace" then
+	elseif arg_7_2 == "cantPlace" then
 		ShowTips("DORM_SUIT_CANT_PlACE_ADD_FURNITURE")
-	elseif arg_6_2 == "wallFur" then
+	elseif arg_7_2 == "wallFur" then
 		ShowTips("DORM_FURNITURE_CANT_ADD_SUIT")
 	end
 end
 
-function EnterSuitAllEditMode(arg_7_0, arg_7_1, arg_7_2)
-	manager.notify:Invoke(DORM_ENTER_SUIT_EDIT_MODE, arg_7_0, arg_7_1, arg_7_2)
+function EnterSuitAllEditMode(arg_8_0, arg_8_1, arg_8_2)
+	manager.notify:Invoke(DORM_ENTER_SUIT_EDIT_MODE, arg_8_0, arg_8_1, arg_8_2)
 end
 
 function OnEnterCanteenScene()
@@ -157,11 +176,11 @@ end
 function OnExitCanteenScene()
 	Dorm.Leave()
 
-	for iter_9_0, iter_9_1 in pairs(Dorm.timer) do
-		iter_9_1:Stop()
+	for iter_10_0, iter_10_1 in pairs(Dorm.timer) do
+		iter_10_1:Stop()
 	end
 
-	manager.audio:StopAll()
+	manager.audio:StopEffect()
 	manager.windowBar:ClearWhereTag()
 	Dorm.restaurant:RemoveEvent()
 	Dorm.restaurant:Reset()
@@ -178,16 +197,16 @@ function ChangeDormScene()
 end
 
 function ChangeDormBackGround()
-	local var_11_0 = GameDisplayCfg.dorm_loading_tips
-	local var_11_1 = GameDisplayCfg.dorm_loading_picture
+	local var_12_0 = GameDisplayCfg.dorm_loading_tips
+	local var_12_1 = GameDisplayCfg.dorm_loading_picture
 
-	if var_11_0 and var_11_1 then
-		local var_11_2 = math.random(1, #var_11_0.value)
-		local var_11_3 = math.random(1, #var_11_1.value)
-		local var_11_4 = GetTips(var_11_0.value[var_11_2][1]) or ""
-		local var_11_5 = GetTips(var_11_0.value[var_11_2][2]) or ""
-		local var_11_6 = var_11_1.value[var_11_3] or "loading_11"
+	if var_12_0 and var_12_1 then
+		local var_12_2 = math.random(1, #var_12_0.value)
+		local var_12_3 = math.random(1, #var_12_1.value)
+		local var_12_4 = GetTips(var_12_0.value[var_12_2][1]) or ""
+		local var_12_5 = GetTips(var_12_0.value[var_12_2][2]) or ""
+		local var_12_6 = var_12_1.value[var_12_3] or "loading_11"
 
-		LoadingUIManager.inst:UpdateLoadingInfo(var_11_4, var_11_5, var_11_6)
+		LoadingUIManager.inst:UpdateLoadingInfo(var_12_4, var_12_5, var_12_6)
 	end
 end

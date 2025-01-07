@@ -34,7 +34,6 @@ function var_0_0.AddUIListener(arg_4_0)
 		JumpTools.OpenPageByJump("equipInheritPrefabSelect", {
 			equipID = arg_4_0.equipID_,
 			suitId = arg_4_0.selectSuitID_,
-			currentSuitId = arg_4_0.selectSuitID_,
 			selectSuitHandler = handler(arg_4_0, arg_4_0.OnSelectSuit)
 		})
 	end)
@@ -82,13 +81,7 @@ function var_0_0.IndexCostItem(arg_10_0, arg_10_1, arg_10_2)
 	local var_10_1 = clone(ItemTemplateData)
 
 	var_10_1.id = var_10_0.id
-
-	function var_10_1.clickFun(arg_11_0)
-		ShowPopItem(POP_SOURCE_ITEM, {
-			arg_11_0.id,
-			arg_11_0.number
-		})
-	end
+	var_10_1.hideBottomRightTextFlag = true
 
 	local var_10_2 = ItemTools.getItemNum(var_10_0.id)
 
@@ -96,6 +89,13 @@ function var_0_0.IndexCostItem(arg_10_0, arg_10_1, arg_10_2)
 		var_10_2,
 		var_10_0.number
 	}
+
+	function var_10_1.clickFun(arg_11_0)
+		ShowPopItem(POP_SOURCE_ITEM, {
+			arg_11_0.id,
+			arg_11_0.number
+		})
+	end
 
 	arg_10_2:SetData(var_10_1)
 

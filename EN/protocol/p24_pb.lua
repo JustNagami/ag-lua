@@ -32,7 +32,10 @@ local var_0_2 = {
 	SC_24033_FIELD_LIST = {},
 	CS_24034_FIELD_LIST = {},
 	CS_24036_FIELD_LIST = {},
-	CS_24038_FIELD_LIST = {}
+	CS_24038_FIELD_LIST = {},
+	CS_24040_FIELD_LIST = {},
+	SC_24041_FIELD_LIST = {},
+	SC_24043_FIELD_LIST = {}
 }
 
 SC_24009 = var_0_0.Descriptor()
@@ -119,6 +122,12 @@ CS_24036 = var_0_0.Descriptor()
 var_0_2.CS_24036_FIELD_LIST.CS_24036_DETECTOR_INFO_FIELD = var_0_0.FieldDescriptor()
 CS_24038 = var_0_0.Descriptor()
 var_0_2.CS_24038_FIELD_LIST.CS_24038_CLUE_ID_FIELD = var_0_0.FieldDescriptor()
+CS_24040 = var_0_0.Descriptor()
+var_0_2.CS_24040_FIELD_LIST.CS_24040_ARCHIVE_ID_FIELD = var_0_0.FieldDescriptor()
+SC_24041 = var_0_0.Descriptor()
+var_0_2.SC_24041_FIELD_LIST.SC_24041_RESULT_FIELD = var_0_0.FieldDescriptor()
+SC_24043 = var_0_0.Descriptor()
+var_0_2.SC_24043_FIELD_LIST.SC_24043_PLOT_LIST_FIELD = var_0_0.FieldDescriptor()
 var_0_2.SC_24009_FIELD_LIST.SC_24009_USER_CHAPTER_LIST_FIELD.name = "user_chapter_list"
 var_0_2.SC_24009_FIELD_LIST.SC_24009_USER_CHAPTER_LIST_FIELD.full_name = ".common.sc_24009.user_chapter_list"
 var_0_2.SC_24009_FIELD_LIST.SC_24009_USER_CHAPTER_LIST_FIELD.number = 1
@@ -910,6 +919,60 @@ CS_24038.fields = {
 }
 CS_24038.is_extendable = false
 CS_24038.extensions = {}
+var_0_2.CS_24040_FIELD_LIST.CS_24040_ARCHIVE_ID_FIELD.name = "archive_id"
+var_0_2.CS_24040_FIELD_LIST.CS_24040_ARCHIVE_ID_FIELD.full_name = ".common.cs_24040.archive_id"
+var_0_2.CS_24040_FIELD_LIST.CS_24040_ARCHIVE_ID_FIELD.number = 1
+var_0_2.CS_24040_FIELD_LIST.CS_24040_ARCHIVE_ID_FIELD.index = 0
+var_0_2.CS_24040_FIELD_LIST.CS_24040_ARCHIVE_ID_FIELD.label = 2
+var_0_2.CS_24040_FIELD_LIST.CS_24040_ARCHIVE_ID_FIELD.has_default_value = false
+var_0_2.CS_24040_FIELD_LIST.CS_24040_ARCHIVE_ID_FIELD.default_value = 0
+var_0_2.CS_24040_FIELD_LIST.CS_24040_ARCHIVE_ID_FIELD.type = 13
+var_0_2.CS_24040_FIELD_LIST.CS_24040_ARCHIVE_ID_FIELD.cpp_type = 3
+CS_24040.name = "cs_24040"
+CS_24040.full_name = ".common.cs_24040"
+CS_24040.nested_types = {}
+CS_24040.enum_types = {}
+CS_24040.fields = {
+	var_0_2.CS_24040_FIELD_LIST.CS_24040_ARCHIVE_ID_FIELD
+}
+CS_24040.is_extendable = false
+CS_24040.extensions = {}
+var_0_2.SC_24041_FIELD_LIST.SC_24041_RESULT_FIELD.name = "result"
+var_0_2.SC_24041_FIELD_LIST.SC_24041_RESULT_FIELD.full_name = ".common.sc_24041.result"
+var_0_2.SC_24041_FIELD_LIST.SC_24041_RESULT_FIELD.number = 1
+var_0_2.SC_24041_FIELD_LIST.SC_24041_RESULT_FIELD.index = 0
+var_0_2.SC_24041_FIELD_LIST.SC_24041_RESULT_FIELD.label = 2
+var_0_2.SC_24041_FIELD_LIST.SC_24041_RESULT_FIELD.has_default_value = false
+var_0_2.SC_24041_FIELD_LIST.SC_24041_RESULT_FIELD.default_value = 0
+var_0_2.SC_24041_FIELD_LIST.SC_24041_RESULT_FIELD.type = 13
+var_0_2.SC_24041_FIELD_LIST.SC_24041_RESULT_FIELD.cpp_type = 3
+SC_24041.name = "sc_24041"
+SC_24041.full_name = ".common.sc_24041"
+SC_24041.nested_types = {}
+SC_24041.enum_types = {}
+SC_24041.fields = {
+	var_0_2.SC_24041_FIELD_LIST.SC_24041_RESULT_FIELD
+}
+SC_24041.is_extendable = false
+SC_24041.extensions = {}
+var_0_2.SC_24043_FIELD_LIST.SC_24043_PLOT_LIST_FIELD.name = "plot_list"
+var_0_2.SC_24043_FIELD_LIST.SC_24043_PLOT_LIST_FIELD.full_name = ".common.sc_24043.plot_list"
+var_0_2.SC_24043_FIELD_LIST.SC_24043_PLOT_LIST_FIELD.number = 1
+var_0_2.SC_24043_FIELD_LIST.SC_24043_PLOT_LIST_FIELD.index = 0
+var_0_2.SC_24043_FIELD_LIST.SC_24043_PLOT_LIST_FIELD.label = 3
+var_0_2.SC_24043_FIELD_LIST.SC_24043_PLOT_LIST_FIELD.has_default_value = false
+var_0_2.SC_24043_FIELD_LIST.SC_24043_PLOT_LIST_FIELD.default_value = {}
+var_0_2.SC_24043_FIELD_LIST.SC_24043_PLOT_LIST_FIELD.type = 13
+var_0_2.SC_24043_FIELD_LIST.SC_24043_PLOT_LIST_FIELD.cpp_type = 3
+SC_24043.name = "sc_24043"
+SC_24043.full_name = ".common.sc_24043"
+SC_24043.nested_types = {}
+SC_24043.enum_types = {}
+SC_24043.fields = {
+	var_0_2.SC_24043_FIELD_LIST.SC_24043_PLOT_LIST_FIELD
+}
+SC_24043.is_extendable = false
+SC_24043.extensions = {}
 chapter_get_info = var_0_0.Message(CHAPTER_GET_INFO)
 chapter_map_info_net_rec = var_0_0.Message(CHAPTER_MAP_INFO_NET_REC)
 clue_location_info = var_0_0.Message(CLUE_LOCATION_INFO)
@@ -924,6 +987,7 @@ cs_24032 = var_0_0.Message(CS_24032)
 cs_24034 = var_0_0.Message(CS_24034)
 cs_24036 = var_0_0.Message(CS_24036)
 cs_24038 = var_0_0.Message(CS_24038)
+cs_24040 = var_0_0.Message(CS_24040)
 detector_info_net_rec = var_0_0.Message(DETECTOR_INFO_NET_REC)
 reward = var_0_0.Message(REWARD)
 sc_24009 = var_0_0.Message(SC_24009)
@@ -937,6 +1001,8 @@ sc_24027 = var_0_0.Message(SC_24027)
 sc_24029 = var_0_0.Message(SC_24029)
 sc_24031 = var_0_0.Message(SC_24031)
 sc_24033 = var_0_0.Message(SC_24033)
+sc_24041 = var_0_0.Message(SC_24041)
+sc_24043 = var_0_0.Message(SC_24043)
 star = var_0_0.Message(STAR)
 user_chapter_info = var_0_0.Message(USER_CHAPTER_INFO)
 

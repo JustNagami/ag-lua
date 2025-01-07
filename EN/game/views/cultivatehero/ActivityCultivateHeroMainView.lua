@@ -16,6 +16,9 @@ end
 
 function var_0_0.Init(arg_3_0)
 	arg_3_0:BindCfgUI()
+
+	arg_3_0.roleImage_.immediate = true
+
 	arg_3_0:AddListeners()
 
 	arg_3_0.switchItemList_ = LuaList.New(handler(arg_3_0, arg_3_0.IndexItem), arg_3_0.switchListGo_, arg_3_0:GetSwitchItemClass())
@@ -24,435 +27,462 @@ function var_0_0.Init(arg_3_0)
 	arg_3_0.itemDataList_ = {}
 	arg_3_0.clickSwitchItemHandler_ = handler(arg_3_0, arg_3_0.OnClickSwitchItem)
 	arg_3_0.receivedHeroTaskHandler_ = handler(arg_3_0, arg_3_0.OnReceiveHeroTask)
-	arg_3_0.accumulateRewardState_ = ControllerUtil.GetController(arg_3_0.transform_, "accumulateRewardState")
-	arg_3_0.dailyRewardState_ = ControllerUtil.GetController(arg_3_0.transform_, "dailyRewardState")
-	arg_3_0.allReceiveBtnState_ = ControllerUtil.GetController(arg_3_0.transform_, "allReceive")
-	arg_3_0.heroLockState_ = ControllerUtil.GetController(arg_3_0.transform_, "heroLock")
+
+	arg_3_0:InitController()
 end
 
-function var_0_0.UpdateBar(arg_4_0)
+function var_0_0.InitController(arg_4_0)
+	arg_4_0.accumulateRewardState_ = ControllerUtil.GetController(arg_4_0.transform_, "accumulateRewardState")
+	arg_4_0.dailyRewardState_ = ControllerUtil.GetController(arg_4_0.transform_, "dailyRewardState")
+	arg_4_0.allReceiveBtnState_ = ControllerUtil.GetController(arg_4_0.transform_, "allReceive")
+	arg_4_0.heroLockState_ = ControllerUtil.GetController(arg_4_0.transform_, "heroLock")
+end
+
+function var_0_0.UpdateBar(arg_5_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR,
 		HOME_BAR
 	})
 end
 
-function var_0_0.OnEnter(arg_5_0)
-	arg_5_0.stopTime_ = ActivityData:GetActivityData(arg_5_0.activityID_).stopTime
+function var_0_0.OnEnter(arg_6_0)
+	arg_6_0.stopTime_ = ActivityData:GetActivityData(arg_6_0.activityID_).stopTime
 
-	arg_5_0:AddTimer()
-	arg_5_0:BindRedPoint()
+	arg_6_0:AddTimer()
+	arg_6_0:BindRedPoint()
 end
 
-function var_0_0.AddListeners(arg_6_0)
-	arg_6_0:AddBtnListener(arg_6_0.unlockHeroBtn_, nil, function()
-		if not ActivityData:GetActivityIsOpen(arg_6_0.activityID_) then
+function var_0_0.AddListeners(arg_7_0)
+	arg_7_0:AddBtnListener(arg_7_0.unlockHeroBtn_, nil, function()
+		if not ActivityData:GetActivityIsOpen(arg_7_0.activityID_) then
 			ShowTips("TIME_OVER")
 
 			return
 		end
 
-		local var_7_0 = arg_6_0.selectHeroID_
-		local var_7_1 = arg_6_0.heroList_
-		local var_7_2 = table.indexof(var_7_1, var_7_0) or 1
-		local var_7_3 = ActivityCultivateHeroCfg[arg_6_0.activityID_].source[var_7_2]
+		local var_8_0 = arg_7_0.selectHeroID_
+		local var_8_1 = arg_7_0.heroList_
+		local var_8_2 = table.indexof(var_8_1, var_8_0) or 1
+		local var_8_3 = ActivityCultivateHeroCfg[arg_7_0.activityID_].source[var_8_2]
 
-		JumpTools.JumpToPage2(var_7_3)
+		JumpTools.JumpToPage2(var_8_3)
 	end)
-	arg_6_0:AddBtnListener(arg_6_0.rewardPreviewBtn_, nil, function()
-		if not ActivityData:GetActivityIsOpen(arg_6_0.activityID_) then
+	arg_7_0:AddBtnListener(arg_7_0.rewardPreviewBtn_, nil, function()
+		if not ActivityData:GetActivityIsOpen(arg_7_0.activityID_) then
 			ShowTips("TIME_OVER")
 
 			return
 		end
 
 		JumpTools.OpenPageByJump("cultivateAccumulateReward", {
-			activityID = arg_6_0.activityID_
+			rewardActivityID = arg_7_0.activityID_
 		})
 	end)
-	arg_6_0:AddBtnListener(arg_6_0.receiveAccumulateBtn_, nil, function()
-		if not ActivityData:GetActivityIsOpen(arg_6_0.activityID_) then
+	arg_7_0:AddBtnListener(arg_7_0.receiveAccumulateBtn_, nil, function()
+		if not ActivityData:GetActivityIsOpen(arg_7_0.activityID_) then
 			ShowTips("TIME_OVER")
 
 			return
 		end
 
-		CultivateHeroAction.RequireReceiveAccumulateTask(arg_6_0.activityID_, arg_6_0.firstAccumulateTaskID_, function()
-			arg_6_0:RefreshAccumulateTask()
+		CultivateHeroAction.RequireReceiveAccumulateTask(arg_7_0.activityID_, arg_7_0.firstAccumulateTaskID_, function()
+			arg_7_0:RefreshAccumulateTask()
 		end)
 	end)
-	arg_6_0:AddBtnListener(arg_6_0.receiveDailyBtn_, nil, function()
-		if not ActivityData:GetActivityIsOpen(arg_6_0.activityID_) then
+	arg_7_0:AddBtnListener(arg_7_0.receiveDailyBtn_, nil, function()
+		if not ActivityData:GetActivityIsOpen(arg_7_0.activityID_) then
 			ShowTips("TIME_OVER")
 
 			return
 		end
 
-		local var_11_0 = ActivityCultivateHeroCfg[arg_6_0.activityID_].daily_reward
+		local var_12_0 = ActivityCultivateHeroCfg[arg_7_0.activityID_].daily_reward
 
-		if arg_6_0.canReceiveDaily_ == true then
-			CultivateHeroAction.RequireReceiveDailyTask(arg_6_0.activityID_, function()
-				arg_6_0:RefreshDailyTask()
-				arg_6_0:RefreshAccumulateTask()
+		if arg_7_0.canReceiveDaily_ == true then
+			CultivateHeroAction.RequireReceiveDailyTask(arg_7_0.activityID_, function()
+				arg_7_0:RefreshDailyTask()
+				arg_7_0:RefreshAccumulateTask()
 			end)
 		else
-			local var_11_1 = {}
+			local var_12_1 = {}
 
-			for iter_11_0, iter_11_1 in pairs(var_11_0) do
-				if not var_11_1[iter_11_1[1]] then
-					var_11_1[iter_11_1[1]] = {}
+			for iter_12_0, iter_12_1 in pairs(var_12_0) do
+				if not var_12_1[iter_12_1[1]] then
+					var_12_1[iter_12_1[1]] = {}
 				end
 			end
 
 			JumpTools.OpenPageByJump("rewardPreview", {
-				rewardList = var_11_0,
-				extraItemTemplateDataList = var_11_1
+				rewardList = var_12_0,
+				extraItemTemplateDataList = var_12_1
 			}, ViewConst.SYSTEM_ID.REWARD_PREVIEW)
 		end
 	end)
-	arg_6_0:AddBtnListener(arg_6_0.receiveAllHeroTaskBtn_, nil, function()
-		if not ActivityData:GetActivityIsOpen(arg_6_0.activityID_) then
+	arg_7_0:AddBtnListener(arg_7_0.receiveAllHeroTaskBtn_, nil, function()
+		if not ActivityData:GetActivityIsOpen(arg_7_0.activityID_) then
 			ShowTips("TIME_OVER")
 
 			return
 		end
 
-		local var_13_0 = CultivateHeroData:GetHeroTaskInfoList(arg_6_0.activityID_)
-		local var_13_1 = CultivateHeroTaskCfg.get_id_list_by_group_id[arg_6_0.selectHeroID_]
-		local var_13_2 = {}
+		local var_14_0 = CultivateHeroData:GetHeroTaskInfoList(arg_7_0.activityID_)
+		local var_14_1 = CultivateHeroTaskCfg.get_id_list_by_group_id[arg_7_0.selectHeroID_]
+		local var_14_2 = {}
 
-		for iter_13_0, iter_13_1 in ipairs(var_13_1) do
-			if var_13_0[iter_13_1].isCompleted == true and not var_13_0[iter_13_1].isReceived then
-				var_13_2[#var_13_2 + 1] = iter_13_1
+		for iter_14_0, iter_14_1 in ipairs(var_14_1) do
+			if var_14_0[iter_14_1].isCompleted == true and not var_14_0[iter_14_1].isReceived then
+				var_14_2[#var_14_2 + 1] = iter_14_1
 			end
 		end
 
-		CultivateHeroAction.RequireReceiveHeroTaskList(arg_6_0.activityID_, var_13_2, function()
-			arg_6_0:OnReceiveHeroTask()
+		CultivateHeroAction.RequireReceiveHeroTaskList(arg_7_0.activityID_, var_14_2, function()
+			arg_7_0:OnReceiveHeroTask()
 		end)
 	end)
-	arg_6_0:AddBtnListener(arg_6_0.descBtn_, nil, function()
-		local var_15_0 = GetTips("CULTIVATE_HERO_DESC")
+	arg_7_0:AddBtnListener(arg_7_0.descBtn_, nil, function()
+		local var_16_0 = GetTips("CULTIVATE_HERO_DESC")
 
 		JumpTools.OpenPageByJump("gameHelp", {
 			icon = "icon_i",
 			key = "CULTIVATE_HERO_DESC",
 			iconColor = Color(1, 1, 1),
 			title = GetTips("STAGE_DESCRIPE"),
-			content = var_15_0
+			content = var_16_0
 		})
 	end)
 end
 
-function var_0_0.RefreshUI(arg_16_0)
-	arg_16_0.heroList_ = ActivityCultivateHeroCfg[arg_16_0.activityID_].group
+function var_0_0.RefreshUI(arg_17_0)
+	arg_17_0.heroList_ = ActivityCultivateHeroCfg[arg_17_0.activityID_].group
 
-	local var_16_0 = CultivateHeroData:GetSelectHeroID(arg_16_0.activityID_) or arg_16_0.heroList_[1]
+	local var_17_0 = CultivateHeroData:GetSelectHeroID(arg_17_0.activityID_) or arg_17_0.heroList_[1]
 
-	arg_16_0.selectHeroID_ = var_16_0
+	arg_17_0.selectHeroID_ = var_17_0
 
-	if var_16_0 == nil then
+	if var_17_0 == nil then
 		return
 	end
 
-	CultivateHeroData:SetSelectHeroID(arg_16_0.activityID_, var_16_0)
+	CultivateHeroData:SetSelectHeroID(arg_17_0.activityID_, var_17_0)
 
-	local var_16_1 = CultivateHeroTaskCfg.get_id_list_by_group_id[var_16_0][1]
-	local var_16_2 = CultivateHeroTaskCfg[var_16_1].hero
-	local var_16_3 = not HeroTools.GetHeroIsUnlock(var_16_2)
+	local var_17_1 = CultivateHeroTaskCfg.get_id_list_by_group_id[var_17_0][1]
+	local var_17_2 = CultivateHeroTaskCfg[var_17_1].hero
+	local var_17_3 = not HeroTools.GetHeroIsUnlock(var_17_2)
 
-	arg_16_0.heroLockState_:SetSelectedState(tostring(var_16_3))
-	arg_16_0:RefreshSwitchItem()
-	arg_16_0:RefreshRoleImage()
-	arg_16_0:RefreshDesc()
-	arg_16_0:RefreshHeroTask()
-	arg_16_0:RefreshAccumulateTask()
-	arg_16_0:RefreshDailyTask()
+	arg_17_0.heroLockState_:SetSelectedState(tostring(var_17_3))
+	arg_17_0:RefreshSwitchItem()
+	arg_17_0:RefreshRoleImage()
+	arg_17_0:RefreshDesc()
+	arg_17_0:RefreshHeroTask()
+	arg_17_0:RefreshAccumulateTask()
+	arg_17_0:RefreshDailyTask()
 end
 
-function var_0_0.RefreshSwitchItem(arg_17_0)
-	local var_17_0 = arg_17_0.selectHeroID_
-	local var_17_1 = arg_17_0.heroList_
-	local var_17_2 = table.indexof(var_17_1, var_17_0) or 1
+function var_0_0.RefreshSwitchItem(arg_18_0)
+	local var_18_0 = arg_18_0.selectHeroID_
+	local var_18_1 = arg_18_0.heroList_
+	local var_18_2 = table.indexof(var_18_1, var_18_0) or 1
 
-	arg_17_0.switchItemList_:StartScroll(#var_17_1, var_17_2)
+	arg_18_0.switchItemList_:StartScroll(#var_18_1, var_18_2)
 end
 
-function var_0_0.GetSwitchItemClass(arg_18_0)
-	return CultivateHeroTools.GetSwitchItemClass(arg_18_0.activityID_)
+function var_0_0.GetSwitchItemClass(arg_19_0)
+	return CultivateHeroTools.GetSwitchItemClass(arg_19_0.activityID_)
 end
 
-function var_0_0.IndexItem(arg_19_0, arg_19_1, arg_19_2)
-	local var_19_0 = arg_19_0.heroList_[arg_19_1]
+function var_0_0.IndexItem(arg_20_0, arg_20_1, arg_20_2)
+	local var_20_0 = arg_20_0.heroList_[arg_20_1]
 
-	arg_19_2:SetData(arg_19_0.activityID_, var_19_0)
-	arg_19_2:SetClickCallBack(arg_19_0.clickSwitchItemHandler_)
-	arg_19_2:RefreshSelect(arg_19_0.selectHeroID_)
+	arg_20_2:SetData(arg_20_0.activityID_, var_20_0)
+	arg_20_2:SetClickCallBack(arg_20_0.clickSwitchItemHandler_)
+	arg_20_2:RefreshSelect(arg_20_0.selectHeroID_)
 end
 
-function var_0_0.OnClickSwitchItem(arg_20_0, arg_20_1)
-	if arg_20_0.selectHeroID_ == arg_20_1 then
+function var_0_0.OnClickSwitchItem(arg_21_0, arg_21_1)
+	if arg_21_0.selectHeroID_ == arg_21_1 then
 		return
 	end
 
-	CultivateHeroData:SetSelectHeroID(arg_20_0.activityID_, arg_20_1)
+	CultivateHeroData:SetSelectHeroID(arg_21_0.activityID_, arg_21_1)
 
-	arg_20_0.selectHeroID_ = arg_20_1
+	arg_21_0.selectHeroID_ = arg_21_1
 
-	local var_20_0 = arg_20_0.switchItemList_:GetItemList()
+	local var_21_0 = arg_21_0.switchItemList_:GetItemList()
 
-	for iter_20_0, iter_20_1 in ipairs(var_20_0) do
-		iter_20_1:RefreshSelect(arg_20_1)
+	for iter_21_0, iter_21_1 in ipairs(var_21_0) do
+		iter_21_1:RefreshSelect(arg_21_1)
 	end
 
-	arg_20_0:RefreshRoleImage()
-	arg_20_0:RefreshHeroTask()
+	arg_21_0:RefreshRoleImage()
+	arg_21_0:RefreshHeroTask()
 
-	local var_20_1 = CultivateHeroTaskCfg.get_id_list_by_group_id[arg_20_1][1]
-	local var_20_2 = CultivateHeroTaskCfg[var_20_1].hero
-	local var_20_3 = HeroData:GetHeroData(var_20_2).unlock == 0
+	local var_21_1 = CultivateHeroTaskCfg.get_id_list_by_group_id[arg_21_1][1]
+	local var_21_2 = CultivateHeroTaskCfg[var_21_1].hero
+	local var_21_3 = HeroData:GetHeroData(var_21_2).unlock == 0
 
-	arg_20_0.heroLockState_:SetSelectedState(tostring(var_20_3))
+	arg_21_0.heroLockState_:SetSelectedState(tostring(var_21_3))
 end
 
-function var_0_0.RefreshHeroTask(arg_21_0)
-	local var_21_0
-	local var_21_1
+function var_0_0.RefreshHeroTask(arg_22_0)
+	local var_22_0
+	local var_22_1
 
-	arg_21_0.sortedTaskIDList_, var_21_1 = CultivateHeroData:GetSortHeroTaskList(arg_21_0.selectHeroID_, arg_21_0.activityID_)
+	arg_22_0.sortedTaskIDList_, var_22_1 = CultivateHeroData:GetSortHeroTaskList(arg_22_0.selectHeroID_, arg_22_0.activityID_)
 
-	arg_21_0.allReceiveBtnState_:SetSelectedState(tostring(var_21_1))
+	arg_22_0.allReceiveBtnState_:SetSelectedState(tostring(var_22_1))
 
-	local var_21_2 = CultivateHeroTaskCfg[arg_21_0.sortedTaskIDList_[1]].hero
+	local var_22_2 = CultivateHeroTaskCfg[arg_22_0.sortedTaskIDList_[1]].hero
 
-	arg_21_0.heroNameText_.text = string.format("%s·%s", GetI18NText(HeroCfg[var_21_2].name), GetI18NText(HeroCfg[var_21_2].suffix))
+	arg_22_0.heroNameText_.text = HeroTools.GetHeroFullName(var_22_2)
 
-	arg_21_0.heroTaskList_:StartScroll(#arg_21_0.sortedTaskIDList_)
+	arg_22_0.heroTaskList_:StartScroll(#arg_22_0.sortedTaskIDList_)
 end
 
-function var_0_0.GetHeroTaskClass(arg_22_0)
-	return CultivateHeroTaskItem
+function var_0_0.GetHeroTaskClass(arg_23_0)
+	return CultivateHeroTools.GetTaskItemClass(arg_23_0.activityID_)
 end
 
-function var_0_0.IndexHeroTask(arg_23_0, arg_23_1, arg_23_2)
-	local var_23_0 = arg_23_0.sortedTaskIDList_[arg_23_1]
+function var_0_0.IndexHeroTask(arg_24_0, arg_24_1, arg_24_2)
+	local var_24_0 = arg_24_0.sortedTaskIDList_[arg_24_1]
 
-	arg_23_2:SetData(arg_23_0.activityID_, var_23_0)
-	arg_23_2:SetReveivedHandler(arg_23_0.receivedHeroTaskHandler_)
+	arg_24_2:SetData(arg_24_0.activityID_, var_24_0)
+	arg_24_2:SetReveivedHandler(arg_24_0.receivedHeroTaskHandler_)
 end
 
-function var_0_0.OnReceiveHeroTask(arg_24_0)
-	arg_24_0:RefreshHeroTask()
-	arg_24_0:RefreshAccumulateTask()
+function var_0_0.OnReceiveHeroTask(arg_25_0)
+	arg_25_0:RefreshHeroTask()
+	arg_25_0:RefreshAccumulateTask()
 end
 
-function var_0_0.RefreshAccumulateTask(arg_25_0)
-	local var_25_0 = ActivityPointRewardCfg.get_id_list_by_activity_id[arg_25_0.activityID_]
-	local var_25_1 = ItemTools.getItemNum(ActivityCultivateHeroCfg[arg_25_0.activityID_].coin_id)
-	local var_25_2 = CultivateHeroData:GetAccumulateTaskInfoList(arg_25_0.activityID_)
-	local var_25_3 = 0
-	local var_25_4 = #var_25_0
-	local var_25_5 = 0
+function var_0_0.RefreshAccumulateTask(arg_26_0)
+	local var_26_0 = ActivityPointRewardCfg.get_id_list_by_activity_id[arg_26_0.activityID_]
+	local var_26_1 = ItemTools.getItemNum(ActivityCultivateHeroCfg[arg_26_0.activityID_].coin_id)
+	local var_26_2 = CultivateHeroData:GetAccumulateTaskInfoList(arg_26_0.activityID_)
 
-	arg_25_0.firstAccumulateTaskID_ = nil
+	arg_26_0.accumulateStatus_ = 0
 
-	for iter_25_0, iter_25_1 in ipairs(var_25_0) do
-		local var_25_6 = ActivityPointRewardCfg[iter_25_1]
-		local var_25_7 = var_25_2[iter_25_1] and var_25_2[iter_25_1].isReceived == true
+	local var_26_3 = #var_26_0
+	local var_26_4 = 0
 
-		if var_25_1 < var_25_6.need then
-			var_25_3 = 0
+	arg_26_0.firstAccumulateTaskID_ = nil
 
-			if arg_25_0.firstAccumulateTaskID_ == nil then
-				arg_25_0.firstAccumulateTaskID_ = iter_25_1
+	for iter_26_0, iter_26_1 in ipairs(var_26_0) do
+		local var_26_5 = ActivityPointRewardCfg[iter_26_1]
+		local var_26_6 = var_26_2[iter_26_1] and var_26_2[iter_26_1].isReceived == true
+
+		if var_26_1 < var_26_5.need then
+			arg_26_0.accumulateStatus_ = 0
+
+			if arg_26_0.firstAccumulateTaskID_ == nil then
+				arg_26_0.firstAccumulateTaskID_ = iter_26_1
 			end
-		elseif not var_25_7 then
-			var_25_3 = 1
-			arg_25_0.firstAccumulateTaskID_ = iter_25_1
+		elseif not var_26_6 then
+			arg_26_0.accumulateStatus_ = 1
+			arg_26_0.firstAccumulateTaskID_ = iter_26_1
 
 			break
 		else
-			var_25_5 = var_25_5 + 1
+			var_26_4 = var_26_4 + 1
 		end
 
-		if iter_25_0 == var_25_4 and var_25_7 then
-			arg_25_0.firstAccumulateTaskID_ = iter_25_1
-			var_25_3 = 2
+		if iter_26_0 == var_26_3 and var_26_6 then
+			arg_26_0.firstAccumulateTaskID_ = iter_26_1
+			arg_26_0.accumulateStatus_ = 2
 		end
 	end
 
-	arg_25_0.totalAccumulateProgressText_.text = string.format(GetTips("VERIFY_ASSETS_PROCESSING_RATE"), var_25_5, var_25_4)
+	local var_26_7 = ActivityPointRewardCfg[arg_26_0.firstAccumulateTaskID_]
+	local var_26_8 = var_26_7.need
 
-	local var_25_8 = ActivityPointRewardCfg[arg_25_0.firstAccumulateTaskID_]
-	local var_25_9 = var_25_8.need
+	arg_26_0.curAccumulateProgressText_.text = string.format(GetTips("VERIFY_ASSETS_PROCESSING_RATE"), var_26_1, var_26_8)
+	arg_26_0.coinImage_.sprite = ItemTools.getItemSprite(ActivityCultivateHeroCfg[arg_26_0.activityID_].coin_id)
 
-	arg_25_0.curAccumulateProgressText_.text = string.format(GetTips("VERIFY_ASSETS_PROCESSING_RATE"), var_25_1, var_25_9)
-	arg_25_0.coinImage_.sprite = ItemTools.getItemSprite(ActivityCultivateHeroCfg[arg_25_0.activityID_].coin_id)
+	arg_26_0:RefreshTotalAccumulateProgress(var_26_4, var_26_3)
+	arg_26_0:RefreshAccumulateRewardItem(var_26_7)
+	arg_26_0:RefreshAccumulateRewardState()
+end
 
-	local var_25_10 = var_25_8.reward_item_list
+function var_0_0.RefreshTotalAccumulateProgress(arg_27_0, arg_27_1, arg_27_2)
+	arg_27_0.totalAccumulateProgressText_.text = string.format(GetTips("VERIFY_ASSETS_PROCESSING_RATE"), arg_27_1, arg_27_2)
+end
 
-	for iter_25_2, iter_25_3 in ipairs(var_25_10) do
-		if not arg_25_0.accumulateRewardList_[iter_25_2] then
-			arg_25_0.accumulateRewardList_[iter_25_2] = CommonItemPool.New(arg_25_0.goRewardPanel_, nil, true)
-			arg_25_0.itemDataList_[iter_25_2] = clone(ItemTemplateData)
-			arg_25_0.itemDataList_[iter_25_2].clickFun = function(arg_26_0)
+function var_0_0.RefreshAccumulateRewardItem(arg_28_0, arg_28_1)
+	local var_28_0 = arg_28_1.reward_item_list
+
+	for iter_28_0, iter_28_1 in ipairs(var_28_0) do
+		if not arg_28_0.accumulateRewardList_[iter_28_0] then
+			arg_28_0.accumulateRewardList_[iter_28_0] = CommonItemPool.New(arg_28_0.goRewardPanel_, nil, true)
+			arg_28_0.itemDataList_[iter_28_0] = clone(ItemTemplateData)
+			arg_28_0.itemDataList_[iter_28_0].clickFun = function(arg_29_0)
 				ShowPopItem(POP_ITEM, {
-					arg_26_0.id,
-					arg_26_0.number
+					arg_29_0.id,
+					arg_29_0.number
 				})
 			end
 		end
 
-		arg_25_0.itemDataList_[iter_25_2].id = iter_25_3[1]
-		arg_25_0.itemDataList_[iter_25_2].number = iter_25_3[2]
+		arg_28_0.itemDataList_[iter_28_0].id = iter_28_1[1]
+		arg_28_0.itemDataList_[iter_28_0].number = iter_28_1[2]
 
-		arg_25_0.accumulateRewardList_[iter_25_2]:Show(true)
-		arg_25_0.accumulateRewardList_[iter_25_2]:SetData(arg_25_0.itemDataList_[iter_25_2])
+		arg_28_0.accumulateRewardList_[iter_28_0]:Show(true)
+		arg_28_0.accumulateRewardList_[iter_28_0]:SetData(arg_28_0.itemDataList_[iter_28_0])
 	end
 
-	for iter_25_4 = #var_25_10 + 1, #arg_25_0.accumulateRewardList_ do
-		arg_25_0.accumulateRewardList_[iter_25_4]:Show(false)
+	for iter_28_2 = #var_28_0 + 1, #arg_28_0.accumulateRewardList_ do
+		arg_28_0.accumulateRewardList_[iter_28_2]:Show(false)
 	end
+end
 
-	if var_25_3 == 0 then
-		arg_25_0.accumulateRewardState_:SetSelectedState("uncompleted")
-	elseif var_25_3 == 2 then
-		arg_25_0.accumulateRewardState_:SetSelectedState("received")
+function var_0_0.RefreshAccumulateRewardState(arg_30_0)
+	if arg_30_0.accumulateStatus_ == 0 then
+		arg_30_0.accumulateRewardState_:SetSelectedState("uncompleted")
+	elseif arg_30_0.accumulateStatus_ == 2 then
+		arg_30_0.accumulateRewardState_:SetSelectedState("received")
 	else
-		arg_25_0.accumulateRewardState_:SetSelectedState("unreceived")
+		arg_30_0.accumulateRewardState_:SetSelectedState("unreceived")
 	end
 end
 
-function var_0_0.RefreshDailyTask(arg_27_0)
-	local var_27_0 = 100
-	local var_27_1 = ActivityPtData:GetCurrentActivityPt(ActivityPtConst.TASK_DAILY_ACTIVITY_PT)
+function var_0_0.RefreshDailyTask(arg_31_0)
+	arg_31_0:RefreshDailyProgress()
+	arg_31_0:RefreshDailyRewardState()
+end
 
-	if CultivateHeroData:GetDailyTaskStatus()[arg_27_0.activityID_] then
-		arg_27_0.dailyRewardState_:SetSelectedState("received")
-	elseif var_27_0 <= var_27_1 then
-		arg_27_0.canReceiveDaily_ = true
+function var_0_0.RefreshDailyProgress(arg_32_0)
+	local var_32_0 = 100
+	local var_32_1 = ActivityPtData:GetCurrentActivityPt(ActivityPtConst.TASK_DAILY_ACTIVITY_PT)
 
-		arg_27_0.dailyRewardState_:SetSelectedState("unreceive")
+	arg_32_0.dailyPrograssText_.text = string.format(GetTips("VERIFY_ASSETS_PROCESSING_RATE"), var_32_1, var_32_0)
+end
+
+function var_0_0.RefreshDailyRewardState(arg_33_0)
+	local var_33_0 = 100
+	local var_33_1 = ActivityPtData:GetCurrentActivityPt(ActivityPtConst.TASK_DAILY_ACTIVITY_PT)
+
+	if CultivateHeroData:GetDailyTaskStatus()[arg_33_0.activityID_] then
+		arg_33_0.dailyRewardState_:SetSelectedState("received")
+	elseif var_33_0 <= var_33_1 then
+		arg_33_0.canReceiveDaily_ = true
+
+		arg_33_0.dailyRewardState_:SetSelectedState("unreceive")
 	else
-		arg_27_0.canReceiveDaily_ = false
+		arg_33_0.canReceiveDaily_ = false
 
-		arg_27_0.dailyRewardState_:SetSelectedState("uncomplete")
+		arg_33_0.dailyRewardState_:SetSelectedState("uncomplete")
 	end
-
-	arg_27_0.dailyPrograssText_.text = string.format(GetTips("VERIFY_ASSETS_PROCESSING_RATE"), var_27_1, var_27_0)
 end
 
-function var_0_0.OnActivityPtUpdate(arg_28_0)
-	arg_28_0:RefreshDailyTask()
+function var_0_0.OnActivityPtUpdate(arg_34_0)
+	arg_34_0:RefreshDailyTask()
 end
 
-function var_0_0.RefreshRoleImage(arg_29_0)
-	local var_29_0 = CultivateHeroTaskCfg.get_id_list_by_group_id[arg_29_0.selectHeroID_]
-	local var_29_1 = CultivateHeroTaskCfg[var_29_0[1]].hero
+function var_0_0.RefreshRoleImage(arg_35_0)
+	local var_35_0 = CultivateHeroTaskCfg.get_id_list_by_group_id[arg_35_0.selectHeroID_]
+	local var_35_1 = CultivateHeroTaskCfg[var_35_0[1]].hero
 
-	arg_29_0.roleImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_29_1)
+	arg_35_0.roleImage_.spriteSync = "TextureConfig/Character/Portrait/" .. var_35_1
 end
 
-function var_0_0.RefreshDesc(arg_30_0)
-	arg_30_0.descText_.text = GetTips("CULTIVATE_HERO_CONTENT")
+function var_0_0.RefreshDesc(arg_36_0)
+	arg_36_0.descText_.text = GetTips("CULTIVATE_HERO_CONTENT")
 end
 
-function var_0_0.AddTimer(arg_31_0)
-	if manager.time:GetServerTime() >= arg_31_0.stopTime_ then
-		arg_31_0.textTime_.text = GetTips("TIME_OVER")
+function var_0_0.AddTimer(arg_37_0)
+	if manager.time:GetServerTime() >= arg_37_0.stopTime_ then
+		arg_37_0.textTime_.text = GetTips("TIME_OVER")
 
 		return
 	end
 
-	arg_31_0:StopTimer()
+	arg_37_0:StopTimer()
 
-	arg_31_0.textTime_.text = manager.time:GetLostTimeStrWith2Unit(arg_31_0.stopTime_)
-	arg_31_0.timer_ = Timer.New(function()
-		if manager.time:GetServerTime() >= arg_31_0.stopTime_ then
-			arg_31_0:StopTimer()
+	arg_37_0.textTime_.text = string.format(GetTips("LEFT_TIME"), manager.time:GetLostTimeStrWith2Unit(arg_37_0.stopTime_))
+	arg_37_0.timer_ = Timer.New(function()
+		if manager.time:GetServerTime() >= arg_37_0.stopTime_ then
+			arg_37_0:StopTimer()
 
-			arg_31_0.textTime_.text = GetTips("TIME_OVER")
+			arg_37_0.textTime_.text = GetTips("TIME_OVER")
 
 			return
 		end
 
-		arg_31_0.textTime_.text = manager.time:GetLostTimeStrWith2Unit(arg_31_0.stopTime_)
+		arg_37_0.textTime_.text = string.format(GetTips("LEFT_TIME"), manager.time:GetLostTimeStrWith2Unit(arg_37_0.stopTime_))
 	end, 1, -1)
 
-	arg_31_0.timer_:Start()
+	arg_37_0.timer_:Start()
 end
 
-function var_0_0.StopTimer(arg_33_0)
-	if arg_33_0.timer_ then
-		arg_33_0.timer_:Stop()
+function var_0_0.StopTimer(arg_39_0)
+	if arg_39_0.timer_ then
+		arg_39_0.timer_:Stop()
 
-		arg_33_0.timer_ = nil
+		arg_39_0.timer_ = nil
 	end
 end
 
-function var_0_0.OnExit(arg_34_0)
-	arg_34_0:UnbindRedPoint()
-	arg_34_0:StopTimer()
+function var_0_0.OnExit(arg_40_0)
+	arg_40_0:UnbindRedPoint()
+	arg_40_0:StopTimer()
 end
 
-function var_0_0.Dispose(arg_35_0)
-	var_0_0.super.Dispose(arg_35_0)
-	arg_35_0:StopTimer()
+function var_0_0.Dispose(arg_41_0)
+	var_0_0.super.Dispose(arg_41_0)
+	arg_41_0:StopTimer()
 
-	if arg_35_0.switchItemList_ then
-		arg_35_0.switchItemList_:Dispose()
+	if arg_41_0.switchItemList_ then
+		arg_41_0.switchItemList_:Dispose()
 
-		arg_35_0.switchItemList_ = nil
+		arg_41_0.switchItemList_ = nil
 	end
 
-	if arg_35_0.heroTaskList_ then
-		arg_35_0.heroTaskList_:Dispose()
+	if arg_41_0.heroTaskList_ then
+		arg_41_0.heroTaskList_:Dispose()
 
-		arg_35_0.heroTaskList_ = nil
+		arg_41_0.heroTaskList_ = nil
 	end
 
-	if arg_35_0.accumulateRewardList_ then
-		for iter_35_0, iter_35_1 in ipairs(arg_35_0.accumulateRewardList_) do
-			iter_35_1:Dispose()
+	if arg_41_0.accumulateRewardList_ then
+		for iter_41_0, iter_41_1 in ipairs(arg_41_0.accumulateRewardList_) do
+			iter_41_1:Dispose()
 		end
 
-		arg_35_0.accumulateRewardList_ = nil
+		arg_41_0.accumulateRewardList_ = nil
 	end
 
-	arg_35_0.clickSwitchItemHandler_ = nil
-	arg_35_0.receivedHeroTaskHandler_ = nil
+	arg_41_0.clickSwitchItemHandler_ = nil
+	arg_41_0.receivedHeroTaskHandler_ = nil
 
-	Object.Destroy(arg_35_0.gameObject_)
+	Object.Destroy(arg_41_0.gameObject_)
 
-	arg_35_0.transform_ = nil
-	arg_35_0.gameObject_ = nil
+	arg_41_0.transform_ = nil
+	arg_41_0.gameObject_ = nil
 end
 
-function var_0_0.BindRedPoint(arg_36_0)
-	local var_36_0 = string.format("%s_%s_Daily_Reward", RedPointConst.CULTIVATE_HERO, arg_36_0.activityID_)
+function var_0_0.BindRedPoint(arg_42_0)
+	local var_42_0 = string.format("%s_%s_Daily_Reward", RedPointConst.CULTIVATE_HERO, arg_42_0.activityID_)
 
-	manager.redPoint:bindUIandKey(arg_36_0.receiveDailyBtn_.transform, var_36_0)
+	manager.redPoint:bindUIandKey(arg_42_0.receiveDailyBtn_.transform, var_42_0)
 end
 
-function var_0_0.UnbindRedPoint(arg_37_0)
-	local var_37_0 = string.format("%s_%s_Daily_Reward", RedPointConst.CULTIVATE_HERO, arg_37_0.activityID_)
+function var_0_0.UnbindRedPoint(arg_43_0)
+	local var_43_0 = string.format("%s_%s_Daily_Reward", RedPointConst.CULTIVATE_HERO, arg_43_0.activityID_)
 
-	manager.redPoint:unbindUIandKey(arg_37_0.receiveDailyBtn_.transform, var_37_0)
+	manager.redPoint:unbindUIandKey(arg_43_0.receiveDailyBtn_.transform, var_43_0)
 end
 
-function var_0_0.Show(arg_38_0, arg_38_1)
-	SetActive(arg_38_0.gameObject_, arg_38_1)
+function var_0_0.Show(arg_44_0, arg_44_1)
+	SetActive(arg_44_0.gameObject_, arg_44_1)
 
-	if arg_38_1 == true then
-		arg_38_0:RefreshUI()
-		arg_38_0:RegistEventListener(NEW_DAY, handler(arg_38_0, arg_38_0.OnNewDay))
+	if arg_44_1 == true then
+		arg_44_0:RefreshUI()
+		arg_44_0:RegistEventListener(NEW_DAY, handler(arg_44_0, arg_44_0.OnNewDay))
 	else
-		arg_38_0:RemoveAllEventListener()
+		arg_44_0:RemoveAllEventListener()
 	end
 end
 
-function var_0_0.OnNewDay(arg_39_0)
-	arg_39_0:RefreshUI()
+function var_0_0.OnNewDay(arg_45_0)
+	arg_45_0:RefreshUI()
 end
 
 return var_0_0

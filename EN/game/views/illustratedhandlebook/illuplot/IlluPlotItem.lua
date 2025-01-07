@@ -15,7 +15,9 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
+	arg_3_0.iconImg_.cacheLimit = 3
 	arg_3_0.controller_ = ControllerUtil.GetController(arg_3_0.gameObject_.transform, "conName")
+	arg_3_0.lockController_ = ControllerUtil.GetController(arg_3_0.gameObject_.transform, "lock")
 end
 
 function var_0_0.RefreshUI(arg_4_0, arg_4_1, arg_4_2)
@@ -51,63 +53,89 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1, arg_4_2)
 
 			local var_4_4 = SpritePathCfg.CollectPlotSmall.path .. ChapterClientCfg[arg_4_1.chapterID].chapter_paint
 
-			getSpriteWithoutAtlasAsync(var_4_4, function(arg_5_0)
-				arg_4_0.iconImg_.sprite = arg_5_0
-			end)
+			arg_4_0.iconImg_.spriteAsync = var_4_4
+
+			local var_4_5 = arg_4_0.info_.chapterID
+
+			if var_4_5 and ChapterClientCfg[var_4_5] then
+				local var_4_6 = ChapterClientCfg[var_4_5].asset_pend_key
+
+				if not manager.assetPend:CheckAssetPend(var_4_6) then
+					arg_4_0.lockController_:SetSelectedState("assetpend")
+				else
+					arg_4_0.lockController_:SetSelectedState("false")
+				end
+			else
+				arg_4_0.lockController_:SetSelectedState("false")
+			end
 		elseif arg_4_2 == 2 then
-			local var_4_5 = CollectStoryCfg.get_id_list_by_activity[arg_4_1.chapterID][1]
-			local var_4_6 = CollectStoryCfg[var_4_5].picture
-			local var_4_7 = ActivityCfg[arg_4_1.chapterID].remark
+			local var_4_7 = CollectStoryCfg.get_id_list_by_activity[arg_4_1.chapterID][1]
+			local var_4_8 = CollectStoryCfg[var_4_7].picture
+			local var_4_9 = ActivityCfg[arg_4_1.chapterID].remark
 
-			arg_4_0.nameText_.text = GetI18NText(var_4_7)
+			arg_4_0.nameText_.text = GetI18NText(var_4_9)
 
-			local var_4_8 = arg_4_1.all
+			local var_4_10 = arg_4_1.all
 
-			arg_4_0.reveiveText_.text = var_4_0 .. "/" .. var_4_8
+			arg_4_0.reveiveText_.text = var_4_0 .. "/" .. var_4_10
 
-			local var_4_9 = SpritePathCfg.CollectPlotSmall.path .. var_4_6
+			local var_4_11 = SpritePathCfg.CollectPlotSmall.path .. var_4_8
 
-			getSpriteWithoutAtlasAsync(var_4_9, function(arg_6_0)
-				arg_4_0.iconImg_.sprite = arg_6_0
-			end)
+			arg_4_0.iconImg_.spriteAsync = var_4_11
+
+			arg_4_0.lockController_:SetSelectedState("false")
 		elseif arg_4_2 == 3 then
-			local var_4_10 = arg_4_0.info_.storyList[1]
+			local var_4_12 = arg_4_0.info_.storyList[1]
 
-			arg_4_0.nameText_.text = GetI18NText(StoryCfg[var_4_10].name)
+			arg_4_0.nameText_.text = GetI18NText(StoryCfg[var_4_12].name)
 			arg_4_0.reveiveText_.text = var_4_0 .. "/" .. arg_4_1.all
 
-			local var_4_11 = SpritePathCfg.CollectPlotSmall.path .. CollectStoryCfg[var_4_10].picture
+			local var_4_13 = SpritePathCfg.CollectPlotSmall.path .. CollectStoryCfg[var_4_12].picture
 
-			getSpriteWithoutAtlasAsync(var_4_11, function(arg_7_0)
-				arg_4_0.iconImg_.sprite = arg_7_0
-			end)
+			arg_4_0.iconImg_.spriteAsync = var_4_13
+
+			arg_4_0.lockController_:SetSelectedState("false")
 		end
 	end
 end
 
-function var_0_0.AddUIListener(arg_8_0)
-	arg_8_0:AddBtnListener(arg_8_0.itemBtn_, nil, function()
-		if arg_8_0.unlockNum_ > 0 then
-			JumpTools.OpenPageByJump("/illuPlotDetail", {
-				storyList = arg_8_0.info_.storyList,
-				chapterID = arg_8_0.info_.chapterID,
-				selType = arg_8_0.selType_
-			})
-		elseif arg_8_0.selType_ == 1 then
-			local var_9_0 = arg_8_0.info_.storyList[1]
-			local var_9_1 = getStageViaStoryID(var_9_0)
-			local var_9_2 = getChapterDifficulty(var_9_1)
-			local var_9_3 = getChapterClientCfgByStageID(var_9_1).toggle
-			local var_9_4, var_9_5 = BattleStageTools.GetChapterSectionIndex(var_9_3, var_9_1)
-			local var_9_6 = string.format(GetTips("MISSION_PROGRESS_UNLOCK"), var_9_2, GetI18NText(var_9_4), GetI18NText(var_9_5))
+function var_0_0.AddUIListener(arg_5_0)
+	arg_5_0:AddBtnListener(arg_5_0.itemBtn_, nil, function()
+		if arg_5_0.selType_ == 1 then
+			local var_6_0 = arg_5_0.info_.chapterID
 
-			ShowTips(var_9_6)
+			if var_6_0 and ChapterClientCfg[var_6_0] then
+				local var_6_1 = ChapterClientCfg[var_6_0].asset_pend_key
+
+				if not manager.assetPend:CheckAssetPend(var_6_1) then
+					manager.assetPend:ShowAssetPendMessageBox(var_6_1)
+
+					return
+				end
+			end
+		end
+
+		if arg_5_0.unlockNum_ > 0 then
+			JumpTools.OpenPageByJump("/illuPlotDetail", {
+				storyList = arg_5_0.info_.storyList,
+				chapterID = arg_5_0.info_.chapterID,
+				selType = arg_5_0.selType_
+			})
+		elseif arg_5_0.selType_ == 1 then
+			local var_6_2 = arg_5_0.info_.storyList[1]
+			local var_6_3 = getStageViaStoryID(var_6_2)
+			local var_6_4 = getChapterDifficulty(var_6_3)
+			local var_6_5 = getChapterClientCfgByStageID(var_6_3).toggle
+			local var_6_6, var_6_7 = BattleStageTools.GetChapterSectionIndex(var_6_5, var_6_3)
+			local var_6_8 = string.format(GetTips("MISSION_PROGRESS_UNLOCK"), var_6_4, GetI18NText(var_6_6), GetI18NText(var_6_7))
+
+			ShowTips(var_6_8)
 		end
 	end)
 end
 
-function var_0_0.Dispose(arg_10_0)
-	var_0_0.super.Dispose(arg_10_0)
+function var_0_0.Dispose(arg_7_0)
+	var_0_0.super.Dispose(arg_7_0)
 end
 
 return var_0_0

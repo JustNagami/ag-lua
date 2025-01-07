@@ -13,9 +13,17 @@ end
 function var_0_1.AddUIListener(arg_2_0)
 	arg_2_0:AddBtnListener(arg_2_0.bgBtn_, nil, function()
 		if ShopTools.IsLimitRecharge() and ShopTools.IsRMB(arg_2_0.goodID) then
-			ShowTips("PC_SHOP_TIPS2")
+			if ShopTools.IsLimitRecharge() and ShopConst.PC_LOCK_SHOP[arg_2_0.shopID] ~= true then
+				ShowTips("PC_SHOP_TIPS2")
 
-			return
+				return
+			end
+
+			if not SDKTools.GetIsOverSea() then
+				ShopTools.OpenWebRecharge()
+
+				return
+			end
 		end
 
 		SendMessageManagerToSDK("purchase_click_gp_once")
@@ -46,9 +54,17 @@ function var_0_1.AddUIListener(arg_2_0)
 	if arg_2_0.buttonBtn_ then
 		arg_2_0:AddBtnListener(arg_2_0.buttonBtn_, nil, function()
 			if ShopTools.IsLimitRecharge() and ShopTools.IsRMB(arg_2_0.goodID) then
-				ShowTips("PC_SHOP_TIPS2")
+				if ShopConst.PC_LOCK_SHOP[arg_2_0.shopID] ~= true then
+					ShowTips("PC_SHOP_TIPS2")
 
-				return
+					return
+				end
+
+				if not SDKTools.GetIsOverSea() then
+					ShopTools.OpenWebRecharge()
+
+					return
+				end
 			end
 
 			SendMessageManagerToSDK("purchase_click_gp_once")
@@ -145,7 +161,7 @@ function var_0_1.UpdatePrice(arg_7_0)
 		SetActive(arg_7_0.discountGo_, false)
 	end
 
-	if ShopTools.IsRMB(arg_7_0.goodID) and ShopTools.IsLimitRecharge() then
+	if ShopTools.IsRMB(arg_7_0.goodID) and ShopTools.IsLimitRecharge() and ShopConst.PC_LOCK_SHOP[arg_7_0.shopID] ~= true then
 		arg_7_0.priceText_.text = GetTips("PC_SHOP_TIPS3")
 		arg_7_0.moneyTxt_.text = ""
 	end
@@ -153,7 +169,7 @@ end
 
 function var_0_1.UpdateView(arg_8_0)
 	arg_8_0.nameLabel_.text = string.format("%s", GetI18NText(arg_8_0.itemCfg.name))
-	arg_8_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/PrizeItem/" .. arg_8_0.itemCfg.icon)
+	arg_8_0.icon_.spriteSync = "TextureConfig/PrizeItem/" .. arg_8_0.itemCfg.icon
 
 	local var_8_0 = ShopTools.CheckSoldOut(arg_8_0.goodID)
 	local var_8_1 = ShopTools.CheckLevelEnough(arg_8_0.goodID)
@@ -199,6 +215,7 @@ function var_0_1.UpdateView(arg_8_0)
 	local var_8_9 = OperationData:IsFunctionStoped(var_8_8)
 
 	SetActive(arg_8_0.redPointGo_, var_8_2 and not var_8_9)
+	SetActive(arg_8_0.ownGo_, ShopTools.CheckGoodsOwen(arg_8_0.goodID))
 end
 
 return var_0_1

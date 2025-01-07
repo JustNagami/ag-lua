@@ -198,7 +198,7 @@ end
 
 function var_0_0.AgainPalyNowAni(arg_14_0)
 	if arg_14_0.selectStarStage then
-		arg_14_0:AddMoveTween(arg_14_0.selectStarStage)
+		arg_14_0:AddMoveTween(arg_14_0.selectStarStage, arg_14_0.planNodeView:GetSelectStar())
 	end
 end
 
@@ -329,7 +329,11 @@ function var_0_0.RefreshSurpassData(arg_26_0)
 	local var_26_1 = SurpassTools.GetNextSurpassStarID(var_26_0)
 	local var_26_2 = HeroStarCfg[var_26_1] or HeroStarCfg[var_26_0]
 
-	arg_26_0:SelectTargetStarStage(var_26_2.star, var_26_2.id)
+	if var_26_2.phase == 0 then
+		arg_26_0:SelectTargetStarStage(var_26_2.star)
+	else
+		arg_26_0:SelectTargetStarStage(var_26_2.star, var_26_2.id)
+	end
 end
 
 function var_0_0.SetDataProxy(arg_27_0, arg_27_1)

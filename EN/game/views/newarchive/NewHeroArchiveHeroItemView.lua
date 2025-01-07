@@ -14,6 +14,9 @@ end
 
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
+
+	arg_3_0.roleImg_.immediate = true
+
 	arg_3_0:AddUIListener()
 
 	arg_3_0.superController_ = ControllerUtil.GetController(arg_3_0.transform_, "super")
@@ -152,24 +155,24 @@ function var_0_0.SetRoleImg(arg_11_0)
 
 		for iter_11_0, iter_11_1 in ipairs(arg_11_0.heroIdList_) do
 			if HeroData:GetHeroData(iter_11_1).unlock == 1 and not var_11_1 then
-				arg_11_0.roleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. iter_11_1)
+				arg_11_0.roleImg_.spriteSync = "TextureConfig/Character/Icon/" .. iter_11_1
 				var_11_1 = true
 			end
 		end
 
 		if not var_11_1 then
-			arg_11_0.roleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_11_0.heroIdList_[1])
+			arg_11_0.roleImg_.spriteSync = "TextureConfig/Character/Icon/" .. arg_11_0.heroIdList_[1]
 		end
 
 		return
 	end
 
 	if var_11_0.type == 1 or var_11_0.type == 2 then
-		arg_11_0.roleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_11_0.id)
+		arg_11_0.roleImg_.spriteSync = "TextureConfig/Character/Icon/" .. var_11_0.id
 	elseif var_11_0.type == 3 then
 		local var_11_2 = CollectPictureCfg[var_11_0.id].picture
 
-		arg_11_0.roleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/IllustratedHandbook/Portrait/" .. var_11_2)
+		arg_11_0.roleImg_.spriteSync = "TextureConfig/IllustratedHandbook/Portrait/" .. var_11_2
 	end
 end
 

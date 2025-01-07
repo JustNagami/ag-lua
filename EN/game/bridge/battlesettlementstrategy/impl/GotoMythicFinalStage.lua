@@ -17,7 +17,7 @@ function var_0_0.GotoMythicFinalStage(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_
 		end
 	else
 		function BattleCallLuaCallBack()
-			JumpTools.OpenPageByJump("/battlefailedWithButton", {
+			JumpTools.OpenPageByJump("/battleMythicOmegaFailedView", {
 				stageData = arg_2_2,
 				battleResult = arg_2_4,
 				isHalfWay_ = arg_2_0.tempData.isHalfWay_

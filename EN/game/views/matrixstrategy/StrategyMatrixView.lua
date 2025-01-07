@@ -37,16 +37,19 @@ function var_0_0.AddUIListener(arg_6_0)
 		})
 	end)
 	arg_6_0:AddBtnListener(arg_6_0.m_infoBtn, nil, function()
-		local var_10_0 = StrategyMatrixData:GetMatrixHeroTeam(ActivityConst.OSHINAS_MATRIX)
+		local var_10_0 = StrategyMatrixData:GetMatrixHeroTeam(arg_6_0.matrix_activity_id)
 
-		JumpTools.OpenPageByJump("/strategyMatrixHero", {
-			matrix_activity_id = ActivityConst.OSHINAS_MATRIX,
-			heroId = var_10_0[1]
+		JumpTools.OpenPageByJump("/strategyMatrixHero_new", {
+			isEnter = true,
+			matrix_activity_id = arg_6_0.matrix_activity_id,
+			type = HeroConst.HERO_DATA_TYPE.STRATEGYMATRIX,
+			tempHeroList = var_10_0,
+			hid = var_10_0[1]
 		})
 	end)
 	arg_6_0:AddBtnListener(arg_6_0.m_rewardBtn, nil, function()
 		JumpTools.OpenPageByJump("strategyMatrixRward", {
-			matrix_activity_id = ActivityConst.OSHINAS_MATRIX
+			matrix_activity_id = arg_6_0.matrix_activity_id
 		})
 	end)
 end

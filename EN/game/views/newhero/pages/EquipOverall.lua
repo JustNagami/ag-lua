@@ -80,7 +80,7 @@ end
 function var_0_0.indexSkillItem(arg_12_0, arg_12_1, arg_12_2)
 	local var_12_0 = arg_12_0.skillList_[arg_12_1]
 
-	arg_12_2:RefreshData(arg_12_0, var_12_0)
+	arg_12_2:RefreshData(var_12_0, true)
 	arg_12_2:RegistCallBack(function(arg_13_0)
 		arg_12_0:SkillClick(arg_12_2, arg_13_0)
 	end)

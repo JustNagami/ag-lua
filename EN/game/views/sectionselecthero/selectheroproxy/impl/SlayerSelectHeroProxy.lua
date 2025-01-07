@@ -7,9 +7,7 @@ function var_0_1.InitCustomParams(arg_1_0, arg_1_1)
 end
 
 function var_0_1.CustomCheckBeforeBattle(arg_2_0)
-	local var_2_0 = arg_2_0.params_.region_activity_id
-
-	if not ActivityData:GetActivityIsOpen(var_2_0) then
+	if not ActivityData:GetActivityIsOpen(arg_2_0.region_activity_id) then
 		return false, "TIP_EXPIRED"
 	end
 
@@ -17,7 +15,7 @@ function var_0_1.CustomCheckBeforeBattle(arg_2_0)
 end
 
 function var_0_1.GetStageData(arg_3_0)
-	return BattleStageFactory.Produce(arg_3_0.stageType_, arg_3_0.region_activity_id, arg_3_0.slayer_activity_id)
+	return BattleStageFactory.Produce(arg_3_0.stageType, arg_3_0.region_activity_id, arg_3_0.slayer_activity_id)
 end
 
 return var_0_1

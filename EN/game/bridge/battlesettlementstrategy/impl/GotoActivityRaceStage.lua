@@ -12,6 +12,8 @@ function var_0_0.GotoActivityRaceStage(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2
 
 	if not (var_2_3 == var_2_4[#var_2_4]) then
 		if isSuccess(arg_2_1) or not arg_2_5 and arg_2_4.challengedNumber >= 1 then
+			CheckBattleResultNeedAddHeroExp()
+
 			function BattleCallLuaCallBack()
 				local var_3_0 = ActivityRaceData:GetDropAffixes()
 
@@ -28,6 +30,8 @@ function var_0_0.GotoActivityRaceStage(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2
 			arg_2_0:GotoBattleFaild(arg_2_1, arg_2_2, arg_2_3, arg_2_4)
 		end
 	elseif arg_2_1 + 1 ~= BattleConst.BATTLE_RESULT.QUIT then
+		CheckBattleResultNeedAddHeroExp()
+
 		function BattleCallLuaCallBack()
 			local var_4_0 = LuaExchangeHelper.GetBattleStatisticsData().dataForLua.battleTime
 			local var_4_1 = math.floor(var_4_0)

@@ -28,6 +28,10 @@ function var_0_0.InitUI(arg_5_0)
 end
 
 function var_0_0.OnEnter(arg_6_0)
+	if arg_6_0.params_.isBack == true then
+		arg_6_0.gotoPreview_ = true
+	end
+
 	DormFurnitureTools:SetEditFurFlag(true)
 
 	arg_6_0.roomID = DormData:GetCurrectSceneID()
@@ -37,28 +41,30 @@ function var_0_0.OnEnter(arg_6_0)
 	local var_6_0 = DormFurnitureManager.GetInstance()
 
 	if arg_6_0.params_.type == "drag" then
-		local var_6_1, var_6_2 = DormSuitData:CheckIsSuit(arg_6_0.itemID)
+		if not arg_6_0.params_.isBack then
+			local var_6_1, var_6_2 = DormSuitData:CheckIsSuit(arg_6_0.itemID)
 
-		if var_6_1 then
-			local var_6_3 = DormSuitTools:GenerateFurSuit(arg_6_0.itemID)
+			if var_6_1 then
+				local var_6_3 = DormSuitTools:GenerateFurSuit(arg_6_0.itemID)
 
-			DormLuaBridge.ChangeFurnitureSuitState(var_6_3, DormFurnitureManager.FurnitureState.Editing, false)
-			DormLuaBridge.AddFurnitureToWallDitherAlphaControl(var_6_3)
-			DormLuaBridge.BeginDragFurniture(var_6_3)
-			arg_6_0:EnterSuitEditMode(var_6_3, false)
-		elseif DormSpecialFurnitureTools:JudgeFurIsSpecialType(arg_6_0.itemID) then
-			DormSpecialFurnitureTools:ChangeDormSpeicalFur(arg_6_0.itemID)
-		else
-			local var_6_4 = var_6_0:Generate(arg_6_0.itemID)
+				DormLuaBridge.ChangeFurnitureSuitState(var_6_3, DormFurnitureManager.FurnitureState.Editing, false)
+				DormLuaBridge.AddFurnitureToWallDitherAlphaControl(var_6_3)
+				DormLuaBridge.BeginDragFurniture(var_6_3)
+				arg_6_0:EnterSuitEditMode(var_6_3, false)
+			elseif DormSpecialFurnitureTools:JudgeFurIsSpecialType(arg_6_0.itemID) then
+				DormSpecialFurnitureTools:ChangeDormSpeicalFur(arg_6_0.itemID)
+			else
+				local var_6_4 = var_6_0:Generate(arg_6_0.itemID)
 
-			DormLuaBridge.ChangeFurnitureState(var_6_4, DormFurnitureManager.FurnitureState.Editing)
-			DormLuaBridge.AddFurnitureToWallDitherAlphaControl(var_6_4)
-			DormLuaBridge.BeginDragFurniture(var_6_4)
+				DormLuaBridge.ChangeFurnitureState(var_6_4, DormFurnitureManager.FurnitureState.Editing)
+				DormLuaBridge.AddFurnitureToWallDitherAlphaControl(var_6_4)
+				DormLuaBridge.BeginDragFurniture(var_6_4)
 
-			arg_6_0.furEntityID = var_6_4
-			arg_6_0.originalSelFurnitureEID = var_6_4
+				arg_6_0.furEntityID = var_6_4
+				arg_6_0.originalSelFurnitureEID = var_6_4
 
-			arg_6_0:HightlightAllFurnitureInSuit(true)
+				arg_6_0:HightlightAllFurnitureInSuit(true)
+			end
 		end
 	elseif arg_6_0.params_.type == "edit" then
 		arg_6_0.originalSelFurnitureEID = arg_6_0.furEntityID
@@ -70,6 +76,14 @@ function var_0_0.OnEnter(arg_6_0)
 end
 
 function var_0_0.OnTop(arg_7_0)
+	arg_7_0.gotoPreview_ = false
+
+	if arg_7_0.cacheBlend then
+		manager.ui.mainCamera:GetComponent("CinemachineBrain").m_DefaultBlend = arg_7_0.cacheBlend
+	end
+
+	arg_7_0.cacheBlend = manager.ui.mainCamera:GetComponent("CinemachineBrain").m_DefaultBlend
+
 	arg_7_0:RegisterEvents()
 end
 
@@ -142,14 +156,19 @@ local function var_0_1(arg_13_0, arg_13_1, arg_13_2)
 end
 
 function var_0_0.OnExit(arg_14_0)
-	arg_14_0:HightlightAllFurnitureInSuit(false)
+	if not arg_14_0.gotoPreview_ then
+		arg_14_0:HightlightAllFurnitureInSuit(false)
 
-	arg_14_0.params_.type = nil
-	arg_14_0.suitOriID = nil
-	arg_14_0.cacheCustomFur = nil
-	arg_14_0.originalSelFurnitureEID = nil
+		arg_14_0.params_.type = nil
+		arg_14_0.suitOriID = nil
+		arg_14_0.cacheCustomFur = nil
+		arg_14_0.originalSelFurnitureEID = nil
 
-	DormLuaBridge.ClearEditingFurniture()
+		DormLuaBridge.ClearEditingFurniture()
+	end
+
+	arg_14_0.gotoPreview_ = false
+
 	arg_14_0:RemoveAllEventListener()
 end
 
@@ -314,6 +333,8 @@ function var_0_0.AddUIListener(arg_16_0)
 	end)
 	arg_16_0:AddBtnListener(arg_16_0.infoBtn_, nil, function()
 		if arg_16_0.itemID and arg_16_0.itemID > 0 and ItemCfg[arg_16_0.itemID] then
+			arg_16_0.gotoPreview_ = true
+
 			ShowPopItem(POP_ITEM, {
 				arg_16_0.itemID
 			})
@@ -329,8 +350,15 @@ function var_0_0.AddUIListener(arg_16_0)
 	arg_16_0:AddBtnListener(arg_16_0.relievesuitBtn_, nil, function()
 		if arg_16_0.furEntityID then
 			if DormLuaBridge.GetSuitOrFurnitureCanPlace(arg_16_0.furEntityID) then
-				JumpTools.OpenPageByJump("dormSuitRelievePopView", {
-					suitEid = arg_16_0.furEntityID
+				ShowMessageBox({
+					content = GetTips("DORM_FURNITURE_SUIT_EDIT_INFO"),
+					OkCallback = function()
+						DormSuitTools:RelieveSuit(arg_16_0.furEntityID)
+						JumpTools.Back()
+					end,
+					CancelCallback = function()
+						return
+					end
 				})
 			else
 				ShowTips("DORM_CANT_ENTER_SUIT_EDIT")
@@ -357,134 +385,134 @@ function var_0_0.AddUIListener(arg_16_0)
 	end)
 end
 
-function var_0_0.RemoveFurniture(arg_32_0, arg_32_1)
-	if arg_32_0.originalSelFurnitureEID == arg_32_1 then
-		arg_32_0:HightlightAllFurnitureInSuit(false)
+function var_0_0.RemoveFurniture(arg_34_0, arg_34_1)
+	if arg_34_0.originalSelFurnitureEID == arg_34_1 then
+		arg_34_0:HightlightAllFurnitureInSuit(false)
 
-		arg_32_0.originalSelFurnitureEID = nil
+		arg_34_0.originalSelFurnitureEID = nil
 	end
 
-	DormFurnitureManager.GetInstance().FindAndRemove(arg_32_1)
+	DormFurnitureManager.GetInstance().FindAndRemove(arg_34_1)
 end
 
-function var_0_0.RemoveFurnitureSuit(arg_33_0, arg_33_1, arg_33_2)
-	if arg_33_0.originalSelFurnitureEID then
-		local var_33_0, var_33_1 = DormLuaBridge.CheckFurnitureBelongSuit(arg_33_0.originalSelFurnitureEID, nil)
+function var_0_0.RemoveFurnitureSuit(arg_35_0, arg_35_1, arg_35_2)
+	if arg_35_0.originalSelFurnitureEID then
+		local var_35_0, var_35_1 = DormLuaBridge.CheckFurnitureBelongSuit(arg_35_0.originalSelFurnitureEID, nil)
 
-		if var_33_1 == arg_33_1 then
-			arg_33_0:HightlightAllFurnitureInSuit(false)
+		if var_35_1 == arg_35_1 then
+			arg_35_0:HightlightAllFurnitureInSuit(false)
 
-			arg_33_0.originalSelFurnitureEID = nil
+			arg_35_0.originalSelFurnitureEID = nil
 		end
 	end
 
-	DormSuitTools:DestoryFurSuitObject(arg_33_1, true, arg_33_2)
+	DormSuitTools:DestoryFurSuitObject(arg_35_1, true, arg_35_2)
 end
 
-function var_0_0.CheckFurOccurpy(arg_34_0)
-	local var_34_0 = DormRoomTools:GetDormFurOccupy(arg_34_0.roomID)
-	local var_34_1 = BackHomeCfg[arg_34_0.roomID].type
-	local var_34_2 = 0
+function var_0_0.CheckFurOccurpy(arg_36_0)
+	local var_36_0 = DormRoomTools:GetDormFurOccupy(arg_36_0.roomID)
+	local var_36_1 = BackHomeCfg[arg_36_0.roomID].type
+	local var_36_2 = 0
 
-	if var_34_1 == DormConst.BACKHOME_TYPE.PublicDorm then
-		var_34_2 = GameDisplayCfg.lobby_volume_max.value[1]
-	elseif var_34_1 == DormConst.BACKHOME_TYPE.PrivateDorm then
-		var_34_2 = GameDisplayCfg.dorm_volume_max.value[1]
+	if var_36_1 == DormConst.BACKHOME_TYPE.PublicDorm then
+		var_36_2 = GameDisplayCfg.lobby_volume_max.value[1]
+	elseif var_36_1 == DormConst.BACKHOME_TYPE.PrivateDorm then
+		var_36_2 = GameDisplayCfg.dorm_volume_max.value[1]
 	end
 
-	if var_34_2 < var_34_0 then
+	if var_36_2 < var_36_0 then
 		return false
 	end
 
 	return true
 end
 
-function var_0_0.ShowCanUseButton(arg_35_0)
-	local var_35_0, var_35_1 = DormSuitData:CheckIsSuit(arg_35_0.itemID)
+function var_0_0.ShowCanUseButton(arg_37_0)
+	local var_37_0, var_37_1 = DormSuitData:CheckIsSuit(arg_37_0.itemID)
 
-	arg_35_0.canResetController:SetSelectedState("false")
+	arg_37_0.canResetController:SetSelectedState("false")
 
-	if var_35_0 then
-		if var_35_1 == DormSuitTools.DORM_SUIT_TYPE.PART_SET then
-			if arg_35_0.params_.type == "drag" then
-				arg_35_0.suitController:SetSelectedState("false")
+	if var_37_0 then
+		if var_37_1 == DormSuitTools.DORM_SUIT_TYPE.PART_SET then
+			if arg_37_0.params_.type == "drag" then
+				arg_37_0.suitController:SetSelectedState("false")
 			else
-				arg_35_0.suitController:SetSelectedState("partSuit")
+				arg_37_0.suitController:SetSelectedState("partSuit")
 			end
 		else
-			arg_35_0.suitController:SetSelectedState("custom")
+			arg_37_0.suitController:SetSelectedState("custom")
 		end
 
-		if arg_35_0.suitOriID and arg_35_0.suitOriID ~= 0 then
-			arg_35_0.canResetController:SetSelectedState("true")
+		if arg_37_0.suitOriID and arg_37_0.suitOriID ~= 0 then
+			arg_37_0.canResetController:SetSelectedState("true")
 		else
-			arg_35_0.canResetController:SetSelectedState("false")
+			arg_37_0.canResetController:SetSelectedState("false")
 		end
 
-		arg_35_0.storageController_:SetSelectedState("true")
-		arg_35_0.rotateController_:SetSelectedState("true")
+		arg_37_0.storageController_:SetSelectedState("true")
+		arg_37_0.rotateController_:SetSelectedState("true")
 	else
-		local var_35_2 = BackHomeCfg[arg_35_0.roomID].type
-		local var_35_3 = BackHomeFurniture[arg_35_0.itemID].is_rotate
-		local var_35_4 = true
+		local var_37_2 = BackHomeCfg[arg_37_0.roomID].type
+		local var_37_3 = BackHomeFurniture[arg_37_0.itemID].is_rotate
+		local var_37_4 = true
 
-		for iter_35_0, iter_35_1 in ipairs(var_35_3) do
-			if var_35_2 == iter_35_1 then
-				arg_35_0.rotateController_:SetSelectedState("false")
+		for iter_37_0, iter_37_1 in ipairs(var_37_3) do
+			if var_37_2 == iter_37_1 then
+				arg_37_0.rotateController_:SetSelectedState("false")
 
-				var_35_4 = false
-
-				break
-			end
-		end
-
-		if var_35_4 then
-			arg_35_0.rotateController_:SetSelectedState("true")
-		end
-
-		local var_35_5 = BackHomeFurniture[arg_35_0.itemID].is_storage
-		local var_35_6 = true
-
-		for iter_35_2, iter_35_3 in ipairs(var_35_5) do
-			if var_35_2 == iter_35_3 then
-				arg_35_0.storageController_:SetSelectedState("false")
-
-				var_35_6 = false
+				var_37_4 = false
 
 				break
 			end
 		end
 
-		if var_35_6 then
-			arg_35_0.storageController_:SetSelectedState("true")
+		if var_37_4 then
+			arg_37_0.rotateController_:SetSelectedState("true")
 		end
 
-		if arg_35_0.params_.type == "edit" then
-			if arg_35_0.params_.furSuitEid then
-				arg_35_0.suitController:SetSelectedState("true")
-			elseif arg_35_0:CheckFurCanEnterCustomeSuitMode(arg_35_0.itemID) then
-				arg_35_0.suitController:SetSelectedState("establish")
+		local var_37_5 = BackHomeFurniture[arg_37_0.itemID].is_storage
+		local var_37_6 = true
+
+		for iter_37_2, iter_37_3 in ipairs(var_37_5) do
+			if var_37_2 == iter_37_3 then
+				arg_37_0.storageController_:SetSelectedState("false")
+
+				var_37_6 = false
+
+				break
+			end
+		end
+
+		if var_37_6 then
+			arg_37_0.storageController_:SetSelectedState("true")
+		end
+
+		if arg_37_0.params_.type == "edit" then
+			if arg_37_0.params_.furSuitEid then
+				arg_37_0.suitController:SetSelectedState("true")
+			elseif arg_37_0:CheckFurCanEnterCustomeSuitMode(arg_37_0.itemID) then
+				arg_37_0.suitController:SetSelectedState("establish")
 			else
-				arg_35_0.suitController:SetSelectedState("false")
+				arg_37_0.suitController:SetSelectedState("false")
 			end
 		else
-			arg_35_0.suitController:SetSelectedState("false")
+			arg_37_0.suitController:SetSelectedState("false")
 		end
 	end
 end
 
-function var_0_0.CheckFurCanEnterCustomeSuitMode(arg_36_0, arg_36_1)
-	local var_36_0 = BackHomeFurniture[arg_36_1]
+function var_0_0.CheckFurCanEnterCustomeSuitMode(arg_38_0, arg_38_1)
+	local var_38_0 = BackHomeFurniture[arg_38_1]
 
-	if var_36_0 and var_36_0.display_type == 0 then
+	if var_38_0 and var_38_0.display_type == 0 then
 		return true
 	end
 
 	return false
 end
 
-function var_0_0.Dispose(arg_37_0)
-	var_0_0.super.Dispose(arg_37_0)
+function var_0_0.Dispose(arg_39_0)
+	var_0_0.super.Dispose(arg_39_0)
 end
 
 return var_0_0

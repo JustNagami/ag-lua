@@ -1,135 +1,140 @@
 ﻿local var_0_0 = {
-	GetBossChallengeNextIndex = function(arg_1_0)
-		local var_1_0 = BattleBossChallengeNormalData:GetFinishIndex(arg_1_0)
-		local var_1_1 = BattleBossChallengeNormalData:GetBossChallengeCfg()
+	StageIsCleared = function(arg_1_0)
+		local var_1_0 = BattleStageData:GetStageData()
 
-		if var_1_0 > var_1_1.level_amount then
-			return var_1_1.level_amount
+		return var_1_0[arg_1_0] and var_1_0[arg_1_0].clear_times > 0
+	end,
+	GetBossChallengeNextIndex = function(arg_2_0)
+		local var_2_0 = BattleBossChallengeNormalData:GetFinishIndex(arg_2_0)
+		local var_2_1 = BattleBossChallengeNormalData:GetBossChallengeCfg()
+
+		if var_2_0 > var_2_1.level_amount then
+			return var_2_1.level_amount
 		end
 
-		return var_1_0
+		return var_2_0
 	end
 }
 
-function var_0_0.GetAutoChapter(arg_2_0, arg_2_1)
-	if BattleStageData:GetStageData()[arg_2_1].clear_times == 1 then
-		return var_0_0.GetNextChapter(arg_2_0, arg_2_1)
-	end
-
-	return arg_2_0
-end
-
-function var_0_0.GetNextChapter(arg_3_0, arg_3_1)
-	local var_3_0 = ChapterCfg[arg_3_0]
-	local var_3_1 = var_3_0.section_id_list
-
-	if var_3_1[#var_3_1] == arg_3_1 then
-		local var_3_2 = getChapterListByDifficulty(var_3_0.type, var_3_0.difficulty)
-		local var_3_3 = table.keyof(var_3_2, arg_3_0)
-
-		if var_3_3 < #var_3_2 then
-			local var_3_4 = var_3_2[var_3_3 + 1]
-
-			if ChapterTools.IsFinishPreChapter(var_3_4) and ChapterTools.IsUnlockChapter(var_3_4) then
-				return var_3_4
-			end
-		end
+function var_0_0.GetAutoChapter(arg_3_0, arg_3_1)
+	if BattleStageData:GetStageData()[arg_3_1].clear_times == 1 then
+		return var_0_0.GetNextChapter(arg_3_0, arg_3_1)
 	end
 
 	return arg_3_0
 end
 
-function var_0_0.GetChapterNextStageID(arg_4_0, arg_4_1)
-	local var_4_0 = ChapterCfg[arg_4_0].section_id_list
-	local var_4_1 = table.keyof(var_4_0, arg_4_1)
+function var_0_0.GetNextChapter(arg_4_0, arg_4_1)
+	local var_4_0 = ChapterCfg[arg_4_0]
+	local var_4_1 = var_4_0.section_id_list
 
-	if var_4_1 < #var_4_0 then
-		local var_4_2 = var_4_0[var_4_1 + 1]
+	if var_4_1[#var_4_1] == arg_4_1 then
+		local var_4_2 = getChapterListByDifficulty(var_4_0.type, var_4_0.difficulty)
+		local var_4_3 = table.keyof(var_4_2, arg_4_0)
 
-		if var_4_2 == GameSetting.travel_skuld_new_ending_stage_id.value[1] and BattleStageData:GetStageData()[var_4_2].clear_times < 1 then
+		if var_4_3 < #var_4_2 then
+			local var_4_4 = var_4_2[var_4_3 + 1]
+
+			if ChapterTools.IsFinishPreChapter(var_4_4) and ChapterTools.IsUnlockChapter(var_4_4) then
+				return var_4_4
+			end
+		end
+	end
+
+	return arg_4_0
+end
+
+function var_0_0.GetChapterNextStageID(arg_5_0, arg_5_1)
+	local var_5_0 = ChapterCfg[arg_5_0].section_id_list
+	local var_5_1 = table.keyof(var_5_0, arg_5_1)
+
+	if var_5_1 < #var_5_0 then
+		local var_5_2 = var_5_0[var_5_1 + 1]
+
+		if var_5_2 == GameSetting.travel_skuld_new_ending_stage_id.value[1] and BattleStageData:GetStageData()[var_5_2].clear_times < 1 then
 			return
 		end
 
-		return var_4_2
+		return var_5_2
 	end
 end
 
-function var_0_0.GetActivityStoryNextStageID(arg_5_0, arg_5_1)
-	local var_5_0 = ActivityStoryChapterCfg[arg_5_0].activity_id
-	local var_5_1 = ActivityData:GetActivityData(var_5_0)
-	local var_5_2 = manager.time:GetServerTime()
+function var_0_0.GetActivityStoryNextStageID(arg_6_0, arg_6_1)
+	local var_6_0 = ActivityStoryChapterCfg[arg_6_0].activity_id
+	local var_6_1 = ActivityData:GetActivityData(var_6_0)
+	local var_6_2 = manager.time:GetServerTime()
 
-	if var_5_2 < var_5_1.startTime or var_5_2 > var_5_1.stopTime then
+	if var_6_2 < var_6_1.startTime or var_6_2 > var_6_1.stopTime then
 		return
 	end
 
-	if var_5_0 == ActivityConst.OSIRIS_STROY then
-		return var_0_0.GetOsirisNextStage(arg_5_0, arg_5_1)
+	if var_6_0 == ActivityConst.OSIRIS_STROY then
+		return var_0_0.GetOsirisNextStage(arg_6_0, arg_6_1)
 	end
 end
 
-function var_0_0.GetOsirisNextStage(arg_6_0, arg_6_1, arg_6_2)
-	if StoryStageActivityData:GetStageData(arg_6_1)[arg_6_2] then
-		local var_6_0
+function var_0_0.GetOsirisNextStage(arg_7_0, arg_7_1, arg_7_2)
+	if StoryStageActivityData:GetStageData(arg_7_1)[arg_7_2] then
+		local var_7_0
 
-		for iter_6_0, iter_6_1 in pairs(GameSetting.activity_plot_unlock.value) do
-			if iter_6_1[1][1] == arg_6_1 and iter_6_1[1][2] == arg_6_2 then
-				var_6_0 = iter_6_1[2][1]
+		for iter_7_0, iter_7_1 in pairs(GameSetting.activity_plot_unlock.value) do
+			if iter_7_1[1][1] == arg_7_1 and iter_7_1[1][2] == arg_7_2 then
+				var_7_0 = iter_7_1[2][1]
 			end
 		end
 
-		local var_6_1 = 100
+		local var_7_1 = 100
 
-		if var_6_0 then
-			var_6_1 = ChessTools.GetChapterProgress(var_6_0)
+		if var_7_0 then
+			var_7_1 = ChessTools.GetChapterProgress(var_7_0)
 		end
 
-		if var_6_1 < 100 then
+		if var_7_1 < 100 then
 			return
 		end
 
-		local var_6_2 = ActivityStoryChapterCfg[arg_6_1].stage_list
-		local var_6_3 = table.keyof(var_6_2, arg_6_2)
+		local var_7_2 = ActivityStoryChapterCfg[arg_7_1].stage_list
+		local var_7_3 = table.keyof(var_7_2, arg_7_2)
 
-		if var_6_3 < #var_6_2 then
-			return var_6_2[var_6_3 + 1]
+		if var_7_3 < #var_7_2 then
+			return var_7_2[var_7_3 + 1]
 		end
 	end
 end
 
 function var_0_0.CalcBossChallengeStar()
-	local var_7_0 = 0
+	local var_8_0 = 0
 
-	for iter_7_0, iter_7_1 in pairs(BattleBossChallengeNormalData:GetThreeStarList()) do
-		for iter_7_2, iter_7_3 in ipairs(iter_7_1) do
-			if iter_7_3 == 1 then
-				var_7_0 = var_7_0 + 1
+	for iter_8_0, iter_8_1 in pairs(BattleBossChallengeNormalData:GetThreeStarList()) do
+		for iter_8_2, iter_8_3 in ipairs(iter_8_1) do
+			if iter_8_3 == 1 then
+				var_8_0 = var_8_0 + 1
 			end
 		end
 	end
 
-	return var_7_0
+	return var_8_0
 end
 
-function var_0_0.NeedShowContinueBattleWindow(arg_8_0, arg_8_1)
-	local var_8_0 = BattleStageTools.GetStageCfg(arg_8_0, arg_8_1)
+function var_0_0.NeedShowContinueBattleWindow(arg_9_0, arg_9_1)
+	local var_9_0 = BattleStageTools.GetStageCfg(arg_9_0, arg_9_1)
 
-	if var_8_0.auto_next_stage_group == 0 then
+	if var_9_0.auto_next_stage_group == 0 then
 		return false
 	end
 
-	local var_8_1, var_8_2 = var_0_0.GetContinueBattleCost(arg_8_0, arg_8_1)
+	local var_9_1, var_9_2 = var_0_0.GetContinueBattleCost(arg_9_0, arg_9_1)
 
-	if var_8_2 <= 1 then
+	if var_9_2 <= 1 then
 		return false
 	end
 
-	if var_8_0.auto_next_stage_group <= 10 then
+	if var_9_0.auto_next_stage_group <= 10 then
 		return true
 	else
-		local var_8_3 = var_8_1[1].id
+		local var_9_3 = var_9_1[1].id
 
-		if ItemTools.getItemNum(var_8_3) < var_8_1[1].num then
+		if ItemTools.getItemNum(var_9_3) < var_9_1[1].num then
 			return true
 		end
 	end
@@ -137,107 +142,107 @@ function var_0_0.NeedShowContinueBattleWindow(arg_8_0, arg_8_1)
 	return false
 end
 
-function var_0_0.GetContinueBattleCost(arg_9_0, arg_9_1)
-	local var_9_0 = var_0_0.GetContinueBattleStageList(arg_9_0, arg_9_1)
-	local var_9_1 = {}
-	local var_9_2 = BattleStageTools.GetStageCfg(arg_9_0, arg_9_1)
+function var_0_0.GetContinueBattleCost(arg_10_0, arg_10_1)
+	local var_10_0 = var_0_0.GetContinueBattleStageList(arg_10_0, arg_10_1)
+	local var_10_1 = {}
+	local var_10_2 = BattleStageTools.GetStageCfg(arg_10_0, arg_10_1)
 
-	if type(var_9_2.extra_cost) == "table" and var_9_2.extra_cost[1] then
-		table.insert(var_9_1, {
-			var_9_2.extra_cost[1],
+	if type(var_10_2.extra_cost) == "table" and var_10_2.extra_cost[1] then
+		table.insert(var_10_1, {
+			var_10_2.extra_cost[1],
 			0
 		})
 	else
-		table.insert(var_9_1, {
+		table.insert(var_10_1, {
 			CurrencyConst.CURRENCY_TYPE_VITALITY,
 			0
 		})
 	end
 
-	for iter_9_0, iter_9_1 in ipairs(var_9_0) do
-		local var_9_3 = BattleStageData:GetStageData()[iter_9_1]
-		local var_9_4 = BattleStageTools.GetStageCfg(arg_9_0, iter_9_1)
+	for iter_10_0, iter_10_1 in ipairs(var_10_0) do
+		local var_10_3 = BattleStageData:GetStageData()[iter_10_1]
+		local var_10_4 = BattleStageTools.GetStageCfg(arg_10_0, iter_10_1)
 
-		if not var_9_3 or not (var_9_3.clear_times > 0) then
-			if type(var_9_4.extra_cost) == "table" and var_9_4.extra_cost[1] then
-				table.insert(var_9_1, clone(var_9_4.extra_cost))
+		if not var_10_3 or not (var_10_3.clear_times > 0) then
+			if type(var_10_4.extra_cost) == "table" and var_10_4.extra_cost[1] then
+				table.insert(var_10_1, clone(var_10_4.extra_cost))
 			else
-				table.insert(var_9_1, {
+				table.insert(var_10_1, {
 					CurrencyConst.CURRENCY_TYPE_VITALITY,
-					var_9_4.cost
+					var_10_4.cost
 				})
 			end
 		end
 	end
 
-	local var_9_5 = formatRewardCfgList(var_9_1)
+	local var_10_5 = formatRewardCfgList(var_10_1)
 
-	return mergeReward(var_9_5), #var_9_0
+	return mergeReward(var_10_5), #var_10_0
 end
 
-function var_0_0.GetContinueBattleStageList(arg_10_0, arg_10_1)
-	local var_10_0 = BattleStageTools.GetStageCfg(arg_10_0, arg_10_1)
-	local var_10_1 = arg_10_1
-	local var_10_2 = {}
-	local var_10_3 = var_10_0.auto_next_stage_group
+function var_0_0.GetContinueBattleStageList(arg_11_0, arg_11_1)
+	local var_11_0 = BattleStageTools.GetStageCfg(arg_11_0, arg_11_1)
+	local var_11_1 = arg_11_1
+	local var_11_2 = {}
+	local var_11_3 = var_11_0.auto_next_stage_group
 
-	while var_10_3 ~= 0 and var_10_0.auto_next_stage_group == var_10_3 do
-		table.insert(var_10_2, var_10_1)
+	while var_11_3 ~= 0 and var_11_0.auto_next_stage_group == var_11_3 do
+		table.insert(var_11_2, var_11_1)
 
-		local var_10_4 = getChapterIDByStageID(var_10_1)
+		local var_11_4 = getChapterIDByStageID(var_11_1)
 
-		var_10_1 = var_0_0.GetChapterNextStageID(var_10_4, var_10_1)
+		var_11_1 = var_0_0.GetChapterNextStageID(var_11_4, var_11_1)
 
-		if var_10_1 then
-			var_10_0 = BattleStageTools.GetStageCfg(arg_10_0, var_10_1)
+		if var_11_1 then
+			var_11_0 = BattleStageTools.GetStageCfg(arg_11_0, var_11_1)
 		else
 			break
 		end
 	end
 
-	return var_10_2
+	return var_11_2
 end
 
-function var_0_0.HasStageCost(arg_11_0, arg_11_1)
-	local var_11_0 = BattleStageTools.GetStageCfg(arg_11_0, arg_11_1)
-	local var_11_1 = BattleStageData:GetStageData()[arg_11_1]
-	local var_11_2 = 0
-	local var_11_3 = ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_VITALITY)
+function var_0_0.HasStageCost(arg_12_0, arg_12_1)
+	local var_12_0 = BattleStageTools.GetStageCfg(arg_12_0, arg_12_1)
+	local var_12_1 = BattleStageData:GetStageData()[arg_12_1]
+	local var_12_2 = 0
+	local var_12_3 = ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_VITALITY)
 
-	if not var_11_1 or not (var_11_1.clear_times > 0) then
-		if type(var_11_0.extra_cost) == "table" and var_11_0.extra_cost[1] then
-			return ItemTools.getItemNum(var_11_0.extra_cost[1]) >= var_11_0.extra_cost[2]
+	if not var_12_1 or not (var_12_1.clear_times > 0) then
+		if type(var_12_0.extra_cost) == "table" and var_12_0.extra_cost[1] then
+			return ItemTools.getItemNum(var_12_0.extra_cost[1]) >= var_12_0.extra_cost[2]
 		else
-			return var_11_3 >= var_11_0.cost
+			return var_12_3 >= var_12_0.cost
 		end
 	end
 
 	return true
 end
 
-function var_0_0.IsLockStage(arg_12_0, arg_12_1)
-	if not ChapterTools.IsFinishPreChapter(arg_12_0) then
+function var_0_0.IsLockStage(arg_13_0, arg_13_1)
+	if not ChapterTools.IsFinishPreChapter(arg_13_0) then
 		return true
 	end
 
-	if arg_12_1 then
-		local var_12_0 = BattleStageTools.GetStageCfg(ChapterCfg[arg_12_0].type, arg_12_1)
+	if arg_13_1 then
+		local var_13_0 = BattleStageTools.GetStageCfg(ChapterCfg[arg_13_0].type, arg_13_1)
 
-		if not ActivityData:GetActivityIsOpen(ChapterCfg[arg_12_0].activity_id) then
-			return PlayerData:GetPlayerInfo().userLevel < var_12_0.level
+		if not ActivityData:GetActivityIsOpen(ChapterCfg[arg_13_0].activity_id) then
+			return PlayerData:GetPlayerInfo().userLevel < var_13_0.level
 		end
 	end
 
 	return false
 end
 
-function var_0_0.IsLockSubChapterStage(arg_13_0, arg_13_1)
-	local var_13_0 = false
+function var_0_0.IsLockSubChapterStage(arg_14_0, arg_14_1)
+	local var_14_0 = false
 
-	for iter_13_0, iter_13_1 in pairs(GameSetting.sub_plot_unlock.value) do
-		if iter_13_1[1][1] == arg_13_0 and iter_13_1[1][2] == arg_13_1 then
-			for iter_13_2, iter_13_3 in ipairs(iter_13_1[2]) do
-				if ChessTools.GetChapterProgress(iter_13_3) < 100 then
+	for iter_14_0, iter_14_1 in pairs(GameSetting.sub_plot_unlock.value) do
+		if iter_14_1[1][1] == arg_14_0 and iter_14_1[1][2] == arg_14_1 then
+			for iter_14_2, iter_14_3 in ipairs(iter_14_1[2]) do
+				if ChessTools.GetChapterProgress(iter_14_3) < 100 then
 					return true
 				end
 			end
@@ -249,14 +254,154 @@ function var_0_0.IsLockSubChapterStage(arg_13_0, arg_13_1)
 	return false
 end
 
-function var_0_0.GetStageArchiveID(arg_14_0)
-	local var_14_0 = StageArchiveCfg.get_id_list_by_unlock_by_stage_id[arg_14_0]
+function var_0_0.GetStageArchiveID(arg_15_0)
+	local var_15_0 = StageArchiveCfg.get_id_list_by_unlock_by_stage_id[arg_15_0]
 
-	if var_14_0 then
-		return var_14_0[1]
+	if var_15_0 then
+		return var_15_0[1]
 	else
 		return 0
 	end
+end
+
+var_0_0.stageArchiveChapterDic = {}
+
+function var_0_0.InitStageArchiveCfg()
+	for iter_16_0, iter_16_1 in ipairs(StageArchivesCollecteCfg.all) do
+		local var_16_0 = StageArchivesCollecteCfg[iter_16_1].chapter_id
+
+		for iter_16_2, iter_16_3 in ipairs(var_16_0) do
+			var_0_0.stageArchiveChapterDic[iter_16_3] = var_0_0.stageArchiveChapterDic[iter_16_3] or {}
+
+			table.insert(var_0_0.stageArchiveChapterDic[iter_16_3], iter_16_1)
+		end
+	end
+end
+
+function var_0_0.GetStageArchiveIDListByChapterID(arg_17_0)
+	return var_0_0.stageArchiveChapterDic[arg_17_0] or {}
+end
+
+function var_0_0.IsNeedStageArchiveEntrace(arg_18_0)
+	return #var_0_0.GetStageArchiveIDListByChapterID(arg_18_0) > 0
+end
+
+function var_0_0.GetUnlockStageArchiveList(arg_19_0)
+	local var_19_0 = {}
+	local var_19_1 = var_0_0.GetStageArchiveIDListByChapterID(arg_19_0)
+
+	for iter_19_0, iter_19_1 in ipairs(var_19_1) do
+		if var_0_0.IsStageArchiveUnLock(iter_19_1) then
+			var_19_0[#var_19_0 + 1] = iter_19_1
+		end
+	end
+
+	return var_19_0
+end
+
+function var_0_0.IsStageArchiveUnLock(arg_20_0)
+	local var_20_0 = StageArchivesCollecteCfg[arg_20_0]
+	local var_20_1 = false
+	local var_20_2 = var_20_0.unlock_by_stage_id
+
+	if var_20_2 == 0 or var_0_0.StageIsCleared(var_20_2) then
+		var_20_1 = true
+	end
+
+	local var_20_3 = false
+
+	if var_20_0.unlock_by_time == "" or manager.time:parseTimeFromConfig(var_20_0.unlock_by_time) <= manager.time:GetServerTime() then
+		var_20_3 = true
+	end
+
+	return var_20_1 and var_20_3
+end
+
+function var_0_0.ReorderStageArchiveListByGroup(arg_21_0)
+	local var_21_0 = {}
+	local var_21_1 = {}
+
+	for iter_21_0, iter_21_1 in ipairs(arg_21_0) do
+		local var_21_2 = StageArchivesCollecteCfg[iter_21_1].tag_id
+
+		var_21_0[var_21_2] = var_21_0[var_21_2] or {}
+
+		table.insert(var_21_0[var_21_2], iter_21_1)
+	end
+
+	for iter_21_2, iter_21_3 in pairs(var_21_0) do
+		var_21_1[#var_21_1 + 1] = iter_21_2
+	end
+
+	table.sort(var_21_1, function(arg_22_0, arg_22_1)
+		return arg_22_0 < arg_22_1
+	end)
+
+	local var_21_3 = {}
+
+	for iter_21_4, iter_21_5 in ipairs(var_21_1) do
+		table.sort(var_21_0[iter_21_5], function(arg_23_0, arg_23_1)
+			return arg_23_0 < arg_23_1
+		end)
+
+		var_21_3[iter_21_5] = var_21_0[iter_21_5]
+	end
+
+	return var_21_1, var_21_3
+end
+
+function var_0_0.OpenStageArchiveInfo(arg_24_0)
+	local var_24_0 = StageArchivesCollecteCfg[arg_24_0]
+
+	if var_24_0.archive_type == StageConst.STAGE_ARCHIVE_TAG_TYPE.PICTURE_TEXT then
+		JumpTools.OpenPageByJump("stageArchivePictureInfo", {
+			archiveID = arg_24_0
+		})
+	elseif var_24_0.archive_type == StageConst.STAGE_ARCHIVE_TAG_TYPE.TEXT then
+		JumpTools.OpenPageByJump("gameHelpLong", {
+			title = var_24_0.name,
+			content = formatText(var_24_0.desc)
+		})
+	elseif var_24_0.archive_type == StageConst.STAGE_ARCHIVE_TAG_TYPE.STORY then
+		local var_24_1 = var_24_0.archive_parameter
+
+		manager.story:StartStory(var_24_1)
+	elseif var_24_0.archive_type == StageConst.STAGE_ARCHIVE_TAG_TYPE.MOMO_TALK then
+		JumpTools.OpenPageByJump("stageArchiveMomoTalk", {
+			archiveID = arg_24_0
+		})
+	else
+		Debug.LogError("undefine stage archive: " .. arg_24_0)
+	end
+end
+
+function var_0_0.IsArchiveMomotalkPlayed(arg_25_0)
+	return getData(string.format("stage_archive_momotalk_%d", arg_25_0), "played") == true
+end
+
+function var_0_0.SetArchiveMomotalkPlayed(arg_26_0)
+	saveData(string.format("stage_archive_momotalk_%d", arg_26_0), "played", true)
+end
+
+function var_0_0.IsHavedStageArchiveRedInChapter(arg_27_0)
+	local var_27_0 = var_0_0.GetStageArchiveIDListByChapterID(arg_27_0)
+	local var_27_1 = false
+
+	for iter_27_0, iter_27_1 in ipairs(var_27_0) do
+		if var_0_0.IsStageArchiveUnLock(iter_27_1) then
+			var_27_1 = var_0_0.IsHaveRedStageArchive(iter_27_1)
+
+			if var_27_1 then
+				break
+			end
+		end
+	end
+
+	return var_27_1
+end
+
+function var_0_0.IsHaveRedStageArchive(arg_28_0)
+	return BattleStageData:GetStageArchiveRedState(arg_28_0)
 end
 
 return var_0_0

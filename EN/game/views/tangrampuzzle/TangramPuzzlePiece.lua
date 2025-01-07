@@ -62,6 +62,8 @@ function var_0_0.Dispose(arg_6_0)
 end
 
 function var_0_0.OnExit(arg_7_0)
+	arg_7_0.draging_ = false
+
 	arg_7_0:StopAnimTimer()
 	arg_7_0:StopLeanTween()
 	arg_7_0:RecoverTrans()
@@ -167,11 +169,18 @@ function var_0_0.RegistEndDragCallback(arg_25_0, arg_25_1)
 end
 
 function var_0_0.BeginDragFun(arg_26_0, arg_26_1, arg_26_2)
-	if arg_26_0.beginDragCallback_ and not arg_26_0.beginDragCallback_(arg_26_0.globalIndex_) then
+	if arg_26_0.draging_ then
 		return
 	end
 
 	arg_26_0.draging_ = true
+
+	if arg_26_0.beginDragCallback_ and not arg_26_0.beginDragCallback_(arg_26_0.globalIndex_) then
+		arg_26_0.draging_ = false
+
+		return
+	end
+
 	arg_26_0.originPos_ = arg_26_0.transform_.position
 	arg_26_0.canvasRate_ = manager.ui.canvasSize_.x / Screen.width
 end
@@ -187,6 +196,10 @@ function var_0_0.DragFun(arg_27_0, arg_27_1, arg_27_2)
 end
 
 function var_0_0.EndDragFun(arg_28_0, arg_28_1, arg_28_2)
+	if not arg_28_0.draging_ then
+		return
+	end
+
 	arg_28_0.draging_ = false
 
 	if arg_28_0.endDragCallback_ then

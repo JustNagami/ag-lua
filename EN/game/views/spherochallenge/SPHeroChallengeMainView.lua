@@ -80,7 +80,7 @@ function var_0_0.OnEnter(arg_8_0)
 	arg_8_0:StartEnterTimer()
 	arg_8_0:RefreshSelectState()
 
-	if not getData("SPHeroChallengeDes", "showHelp") then
+	if not getData("SPHeroChallengeDes", "showHelp") and GuideData:IsFinish(72) then
 		arg_8_0:GotoHelp()
 		saveData("SPHeroChallengeDes", "showHelp", 1)
 	end

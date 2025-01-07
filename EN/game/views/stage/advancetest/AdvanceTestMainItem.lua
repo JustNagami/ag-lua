@@ -3,7 +3,6 @@
 function var_0_0.Ctor(arg_1_0, arg_1_1, arg_1_2)
 	arg_1_0.gameObject_ = arg_1_1
 	arg_1_0.transform_ = arg_1_0.gameObject_.transform
-	arg_1_0.mainActivityID = AdvanceTestData:GetMainActivityID()
 	arg_1_0.index_ = arg_1_2
 
 	arg_1_0:BindCfgUI()
@@ -40,9 +39,11 @@ function var_0_0.AddListeners(arg_4_0)
 end
 
 function var_0_0.RefreshUI(arg_6_0, arg_6_1)
+	arg_6_0.cacheActivityID = AdvanceTestData:GetCacheActivityID()
+
 	arg_6_0:SetSelectMode(arg_6_0.index_ == arg_6_1)
 
-	local var_6_0 = AdvanceTestData:GetHistortyMaxScoreByIndex(arg_6_0.index_)
+	local var_6_0 = AdvanceTestData:GetHistortyMaxScoreByIndex(arg_6_0.index_, arg_6_0.cacheActivityID)
 
 	if var_6_0 == -1 then
 		arg_6_0.scoreText_.text = ""

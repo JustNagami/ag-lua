@@ -59,6 +59,10 @@ local function var_0_3(arg_7_0)
 end
 
 function var_0_0.SetData(arg_8_0, arg_8_1)
+	if isNil(arg_8_0.content) then
+		return
+	end
+
 	arg_8_0.text.text = arg_8_1
 
 	if not var_0_3(arg_8_1) then
@@ -88,7 +92,9 @@ function var_0_0.Dispose(arg_11_0)
 		arg_11_0.task = nil
 	end
 
-	arg_11_0.gameObject_:Destroy()
+	if not isNil(arg_11_0.gameObject_) then
+		arg_11_0.gameObject_:Destroy()
+	end
 end
 
 return var_0_0

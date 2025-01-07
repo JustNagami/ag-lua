@@ -186,15 +186,15 @@ function var_0_1.IsReplaceUrl(arg_16_0, arg_16_1)
 	return false
 end
 
-function var_0_1.SetActions(arg_17_0, arg_17_1, arg_17_2)
-	arg_17_0.preExitAction_ = arg_17_1 or defaultAction
-	arg_17_0.afterStartAction_ = arg_17_2 or defaultAction
+local function var_0_2(arg_17_0)
+	if arg_17_0 then
+		arg_17_0()
+	end
 end
 
-local function var_0_2(arg_18_0)
-	if arg_18_0 then
-		arg_18_0()
-	end
+function var_0_1.SetActions(arg_18_0, arg_18_1, arg_18_2)
+	arg_18_0.preExitAction_ = arg_18_1 or var_0_2
+	arg_18_0.afterStartAction_ = arg_18_2 or var_0_2
 end
 
 function var_0_1.PlayPreExitTransition(arg_19_0, arg_19_1, arg_19_2, arg_19_3)
@@ -276,88 +276,104 @@ function var_0_1.GetLastOpenPage(arg_28_0)
 	return arg_28_0.routes_[#arg_28_0.routes_] or ""
 end
 
-function var_0_1.IsOpenRoute(arg_29_0, arg_29_1)
-	if arg_29_0.routes_ == nil then
+function var_0_1.GetLastOpenPageHandler(arg_29_0)
+	if arg_29_0.routes_ == nil or next(arg_29_0.routes_) == nil then
 		return nil
 	end
 
-	for iter_29_0, iter_29_1 in ipairs(arg_29_0.routes_) do
-		if iter_29_1 == arg_29_1 then
-			return iter_29_0
+	return nullable(arg_29_0.recordMap_, arg_29_0.routes_[#arg_29_0.routes_]), arg_29_0.routes_[#arg_29_0.routes_]
+end
+
+function var_0_1.IsOpenRoute(arg_30_0, arg_30_1)
+	if arg_30_0.routes_ == nil then
+		return nil
+	end
+
+	for iter_30_0, iter_30_1 in ipairs(arg_30_0.routes_) do
+		if iter_30_1 == arg_30_1 then
+			return iter_30_0
 		end
 	end
 
 	return nil
 end
 
-function var_0_1.SetUrlAndParams(arg_30_0, arg_30_1, arg_30_2)
-	if arg_30_0.curLayer_ == nil then
-		table.insert(arg_30_0.waitLoadUrlList_, {
-			url = arg_30_1,
-			params = arg_30_2
+function var_0_1.GetFirstRoutePage(arg_31_0)
+	return arg_31_0.routes_[1]
+end
+
+function var_0_1.GetCmdEnqueueCount(arg_32_0)
+	return arg_32_0.cmdEnqueue_ and #arg_32_0.cmdEnqueue_ or 0
+end
+
+function var_0_1.SetUrlAndParams(arg_33_0, arg_33_1, arg_33_2)
+	if arg_33_0.curLayer_ == nil then
+		table.insert(arg_33_0.waitLoadUrlList_, {
+			url = arg_33_1,
+			params = arg_33_2
 		})
 	else
-		arg_30_0:UpdateUrlHistory(arg_30_1, {
-			params = arg_30_2
+		arg_33_0:UpdateUrlHistory(arg_33_1, {
+			params = arg_33_2
 		})
 	end
 end
 
-function var_0_1.GetOpenPageHandler(arg_31_0, arg_31_1)
-	local var_31_0 = arg_31_0:IsOpenRoute(arg_31_1)
+function var_0_1.GetOpenPageHandler(arg_34_0, arg_34_1)
+	local var_34_0 = arg_34_0:IsOpenRoute(arg_34_1)
 
-	if var_31_0 and var_31_0 > 0 then
-		return arg_31_0.recordMap_[arg_31_0.routes_[var_31_0]]
+	if var_34_0 and var_34_0 > 0 then
+		return arg_34_0.recordMap_[arg_34_0.routes_[var_34_0]]
 	end
 end
 
-function var_0_1.OverrideUrl(arg_32_0, arg_32_1, arg_32_2, arg_32_3, arg_32_4)
-	local var_32_0
+function var_0_1.OverrideUrl(arg_35_0, arg_35_1, arg_35_2, arg_35_3, arg_35_4)
+	local var_35_0
 
-	if whereami == arg_32_4 then
-		var_32_0 = arg_32_0.history_
+	if whereami == arg_35_4 then
+		var_35_0 = arg_35_0.history_
 	else
-		var_32_0 = arg_32_0.cacheHistory_[arg_32_4] or {}
+		var_35_0 = arg_35_0.cacheHistory_[arg_35_4] or {}
 	end
 
-	local var_32_1 = arg_32_0:GetIndexFromHistory(var_32_0, arg_32_2)
-	local var_32_2 = arg_32_0:GetIndexFromHistory(var_32_0, arg_32_1)
+	local var_35_1 = arg_35_0:GetIndexFromHistory(var_35_0, arg_35_2)
+	local var_35_2 = arg_35_0:GetIndexFromHistory(var_35_0, arg_35_1)
 
-	if var_32_2 > 0 then
-		var_32_0[var_32_2] = {
-			url = arg_32_2,
+	if var_35_2 > 0 then
+		var_35_0[var_35_2] = {
+			url = arg_35_2,
 			args = {
-				params = arg_32_3
+				params = arg_35_3
 			}
 		}
 	end
 
-	if var_32_1 <= 0 or var_32_2 <= 0 then
+	if var_35_1 <= 0 or var_35_2 <= 0 then
 		return
-	elseif var_32_2 < var_32_1 then
-		table.remove(var_32_0, var_32_1)
-	elseif var_32_1 < var_32_2 then
-		table.remove(var_32_0, var_32_2)
+	elseif var_35_2 < var_35_1 then
+		table.remove(var_35_0, var_35_1)
+	elseif var_35_1 < var_35_2 then
+		table.remove(var_35_0, var_35_2)
 	end
 end
 
-function var_0_1.IsBack(arg_33_0, arg_33_1)
-	return arg_33_0:GetIndexFromHistory(arg_33_0.history_, arg_33_1)
+function var_0_1.IsBack(arg_36_0, arg_36_1)
+	return arg_36_0:GetIndexFromHistory(arg_36_0.history_, arg_36_1)
 end
 
-function var_0_1.SetSystemLayer(arg_34_0, arg_34_1)
-	if whereami ~= arg_34_1 then
-		arg_34_0:SaveCacheHistory(arg_34_1)
+function var_0_1.SetSystemLayer(arg_37_0, arg_37_1)
+	if whereami ~= arg_37_1 then
+		arg_37_0:SaveCacheHistory(arg_37_1)
 	end
 
-	local var_34_0 = clone(arg_34_0.waitLoadUrlList_)
+	local var_37_0 = clone(arg_37_0.waitLoadUrlList_)
 
-	for iter_34_0, iter_34_1 in ipairs(var_34_0) do
-		arg_34_0:SetUrlAndParams(iter_34_1.url, iter_34_1.params)
+	for iter_37_0, iter_37_1 in ipairs(var_37_0) do
+		arg_37_0:SetUrlAndParams(iter_37_1.url, iter_37_1.params)
 	end
 
-	arg_34_0.waitLoadUrlList_ = {}
-	whereami = arg_34_1
+	arg_37_0.waitLoadUrlList_ = {}
+	whereami = arg_37_1
 end
 
 return var_0_1

@@ -13,6 +13,7 @@ function var_0_0.InitUI(arg_2_0)
 
 	arg_2_0.statusController_ = ControllerUtil.GetController(arg_2_0.transform_, "status")
 	arg_2_0.friendController_ = ControllerUtil.GetController(arg_2_0.transform_, "friend")
+	arg_2_0.commonPortrait_ = CommonHeadPortrait.New(arg_2_0.headItem_)
 end
 
 function var_0_0.AddUIListener(arg_3_0)
@@ -137,8 +138,9 @@ function var_0_0.RefreshGiver(arg_15_0)
 	local var_15_0 = arg_15_0.delegateData_.submiter_uid
 
 	arg_15_0.userName_.text = arg_15_0.delegateData_.nick
-	arg_15_0.userIcon.sprite = ItemTools.getItemSprite(arg_15_0.delegateData_.portrait)
-	arg_15_0.userFrame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_15_0.delegateData_.frame)
+
+	arg_15_0.commonPortrait_:RenderHead(arg_15_0.delegateData_.portrait)
+	arg_15_0.commonPortrait_:RenderFrame(arg_15_0.delegateData_.frame)
 end
 
 function var_0_0.RefreshFriend(arg_16_0)
@@ -208,6 +210,11 @@ function var_0_0.OnFriendsListChange(arg_23_0)
 	arg_23_0.delegateData_ = MoonCakeData:GetOwnRunningDelegate(arg_23_0.activityID_)
 
 	arg_23_0:RefreshFriend()
+end
+
+function var_0_0.Dispose(arg_24_0)
+	arg_24_0.commonPortrait_:Dispose()
+	var_0_0.super.Dispose(arg_24_0)
 end
 
 return var_0_0

@@ -1617,7 +1617,7 @@
 		weapon_module_level = 3,
 		equip_exclusive_lv_list = "",
 		astrolabe_suit_id = 1013001,
-		weapon_key = 2520002,
+		weapon_key = 2550002,
 		hero_break = 6,
 		hero_attrib = "",
 		hero_lv = 80,
@@ -2018,7 +2018,7 @@
 		weapon_stage = 1,
 		hero_id = 1016,
 		equip_exclusive_id_list = "",
-		weapon_module_level = 0,
+		weapon_module_level = 3,
 		equip_exclusive_lv_list = "",
 		astrolabe_suit_id = 1016001,
 		weapon_key = 2550007,
@@ -2972,6 +2972,374 @@
 			10190013
 		}
 	},
+	[102001] = {
+		star_lv = 600,
+		skill_lv = 25,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 1,
+		skin_id = 1020,
+		id = 102001,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1020,
+		equip_exclusive_id_list = "",
+		astrolabe_id = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 0,
+		weapon_key = 0,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 1,
+		using_hero_chip = "",
+		equip_list = {},
+		equip_pool_list = {},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[102002] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1020,
+		id = 102002,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1020,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1020003,
+		weapon_key = 2550010,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515047,
+			525060,
+			535047,
+			545060,
+			555047,
+			565060
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10200031,
+			10200032,
+			10200033
+		}
+	},
+	[102101] = {
+		star_lv = 600,
+		skill_lv = 25,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 1,
+		skin_id = 1021,
+		id = 102101,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1021,
+		equip_exclusive_id_list = "",
+		astrolabe_id = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 0,
+		weapon_key = 0,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 1,
+		using_hero_chip = "",
+		equip_list = {},
+		equip_pool_list = {},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[102102] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1021,
+		id = 102102,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1021,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1021003,
+		weapon_key = 2510014,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511059,
+			521035,
+			531059,
+			541035,
+			551059,
+			561035
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10210031,
+			10210032,
+			10210033
+		}
+	},
+	[102201] = {
+		star_lv = 600,
+		skill_lv = 25,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 1,
+		skin_id = 1022,
+		id = 102201,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1022,
+		equip_exclusive_id_list = "",
+		astrolabe_id = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 0,
+		weapon_key = 0,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 1,
+		using_hero_chip = "",
+		equip_list = {},
+		equip_pool_list = {},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[102202] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1022,
+		id = 102202,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1022,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1022003,
+		weapon_key = 2510013,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511058,
+			521034,
+			531058,
+			541034,
+			551058,
+			561034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10220031,
+			10220032,
+			10220033
+		}
+	},
+	[102203] = {
+		star_lv = 300,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 40,
+		skin_id = 1022,
+		id = 102203,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1022,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1022003,
+		weapon_key = 0,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511058,
+			521034,
+			531058,
+			541034,
+			551058,
+			561034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10220031,
+			10220032,
+			10220033
+		}
+	},
 	[102401] = {
 		star_lv = 600,
 		skill_lv = 25,
@@ -3152,7 +3520,7 @@
 		weapon_stage = 1,
 		hero_id = 1024,
 		equip_exclusive_id_list = "",
-		weapon_module_level = 0,
+		weapon_module_level = 3,
 		equip_exclusive_lv_list = "",
 		astrolabe_suit_id = 1024001,
 		weapon_key = 2520003,
@@ -4343,7 +4711,7 @@
 		weapon_stage = 1,
 		hero_id = 1028,
 		equip_exclusive_id_list = "",
-		weapon_module_level = 0,
+		weapon_module_level = 3,
 		equip_exclusive_lv_list = "",
 		astrolabe_suit_id = 1028001,
 		weapon_key = 2540006,
@@ -5398,7 +5766,7 @@
 		weapon_stage = 1,
 		hero_id = 1035,
 		equip_exclusive_id_list = "",
-		weapon_module_level = 0,
+		weapon_module_level = 3,
 		equip_exclusive_lv_list = "",
 		astrolabe_suit_id = 1035001,
 		weapon_key = 2520004,
@@ -7726,6 +8094,142 @@
 			11390013
 		}
 	},
+	[113906] = {
+		star_lv = 300,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 40,
+		skin_id = 1139,
+		id = 113906,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1139,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1139001,
+		weapon_key = 0,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511012,
+			521038,
+			531012,
+			541038,
+			551012,
+			561038
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11390011,
+			11390012,
+			11390013
+		}
+	},
+	[113907] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1139,
+		id = 113907,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1139,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 3,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1139001,
+		weapon_key = 2510010,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511012,
+			521038,
+			531012,
+			541038,
+			551012,
+			561038
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11390011,
+			11390012,
+			11390013
+		}
+	},
 	[104101] = {
 		star_lv = 600,
 		skill_lv = 25,
@@ -8370,6 +8874,74 @@
 			10420023
 		}
 	},
+	[104209] = {
+		star_lv = 300,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 40,
+		skin_id = 1042,
+		id = 104209,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1042,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1042002,
+		weapon_key = 0,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511013,
+			521034,
+			531013,
+			541034,
+			551013,
+			561034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10420021,
+			10420022,
+			10420023
+		}
+	},
 	[104801] = {
 		star_lv = 600,
 		skill_lv = 25,
@@ -8885,6 +9457,74 @@
 			10490013
 		}
 	},
+	[104903] = {
+		star_lv = 300,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 40,
+		skin_id = 1049,
+		id = 104903,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1049,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1049001,
+		weapon_key = 0,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			513049,
+			523022,
+			533049,
+			543022,
+			553049,
+			563022
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10490011,
+			10490012,
+			10490013
+		}
+	},
 	[114801] = {
 		star_lv = 600,
 		skill_lv = 25,
@@ -9104,6 +9744,74 @@
 		equip_lv = 60,
 		skin_id = 1148,
 		id = 114805,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1148,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 3,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1148001,
+		weapon_key = 2530005,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			513008,
+			523037,
+			533008,
+			543037,
+			553008,
+			563037
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11480011,
+			11480012,
+			11480013
+		}
+	},
+	[114806] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1148,
+		id = 114806,
 		weapon_level = 60,
 		weapon_stage = 1,
 		hero_id = 1148,
@@ -10043,7 +10751,7 @@
 		weapon_stage = 1,
 		hero_id = 1052,
 		equip_exclusive_id_list = "",
-		weapon_module_level = 0,
+		weapon_module_level = 3,
 		equip_exclusive_lv_list = "",
 		astrolabe_suit_id = 1052001,
 		weapon_key = 2550009,
@@ -10651,7 +11359,7 @@
 		weapon_stage = 1,
 		hero_id = 1056,
 		equip_exclusive_id_list = "",
-		weapon_module_level = 0,
+		weapon_module_level = 3,
 		equip_exclusive_lv_list = "",
 		astrolabe_suit_id = 1056001,
 		weapon_key = 2550005,
@@ -12199,7 +12907,7 @@
 		weapon_stage = 1,
 		hero_id = 1068,
 		equip_exclusive_id_list = "",
-		weapon_module_level = 0,
+		weapon_module_level = 3,
 		equip_exclusive_lv_list = "",
 		astrolabe_suit_id = 1068001,
 		weapon_key = 2550006,
@@ -15027,6 +15735,174 @@
 			10840013
 		}
 	},
+	[108901] = {
+		star_lv = 600,
+		skill_lv = 25,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 1,
+		skin_id = 1089,
+		id = 108901,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1089,
+		equip_exclusive_id_list = "",
+		astrolabe_id = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 0,
+		weapon_key = 0,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 1,
+		using_hero_chip = "",
+		equip_list = {},
+		equip_pool_list = {},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[108902] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1089,
+		id = 108902,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1089,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1089001,
+		weapon_key = 2550012,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515062,
+			525034,
+			535062,
+			545034,
+			555062,
+			565034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10890011,
+			10890012,
+			10890013
+		}
+	},
+	[108903] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1089,
+		id = 108903,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1089,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1089001,
+		weapon_key = 2550012,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515062,
+			525034,
+			535062,
+			545034,
+			555062,
+			565034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10890011,
+			10890012,
+			10890013
+		}
+	},
 	[118401] = {
 		star_lv = 600,
 		skill_lv = 25,
@@ -15999,7 +16875,7 @@
 		weapon_stage = 1,
 		hero_id = 1094,
 		equip_exclusive_id_list = "",
-		weapon_module_level = 0,
+		weapon_module_level = 3,
 		equip_exclusive_lv_list = "",
 		astrolabe_suit_id = 1094001,
 		weapon_key = 2540003,
@@ -18137,6 +19013,306 @@
 			11190013
 		}
 	},
+	[115601] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1156,
+		id = 115601,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1156,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1156001,
+		weapon_key = 2550011,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515061,
+			525061,
+			535061,
+			545020,
+			555020,
+			565020
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11560011,
+			11560012,
+			11560013
+		}
+	},
+	[115602] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1156,
+		id = 115602,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1156,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1156001,
+		weapon_key = 2550011,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515061,
+			525061,
+			535061,
+			545020,
+			555020,
+			565020
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11560011,
+			11560012,
+			11560013
+		}
+	},
+	[115603] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 1,
+		skin_id = 1156,
+		id = 115603,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1156,
+		equip_exclusive_id_list = "",
+		astrolabe_id = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 0,
+		weapon_key = 0,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 1,
+		using_hero_chip = "",
+		equip_list = {},
+		equip_pool_list = {},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[115604] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1156,
+		id = 115604,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1156,
+		equip_exclusive_id_list = "",
+		astrolabe_id = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 0,
+		weapon_key = 2550011,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515061,
+			525061,
+			535061,
+			545020,
+			555020,
+			565020
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[115605] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 115601,
+		id = 115605,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1156,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1156001,
+		weapon_key = 2550011,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515061,
+			525061,
+			535061,
+			545020,
+			555020,
+			565020
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11560011,
+			11560012,
+			11560013
+		}
+	},
 	[119701] = {
 		star_lv = 600,
 		skill_lv = 25,
@@ -18817,6 +19993,198 @@
 		hero_break = 0,
 		hero_attrib = "",
 		hero_lv = 1,
+		break_lv = 1,
+		using_hero_chip = "",
+		equip_list = {},
+		equip_pool_list = {},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[611001] = {
+		star_lv = 600,
+		skill_lv = 1,
+		weapon_break = 0,
+		hero_desc = "",
+		equip_lv = 1,
+		skin_id = 6110,
+		id = 611001,
+		weapon_level = 1,
+		weapon_stage = 1,
+		hero_id = 6110,
+		equip_exclusive_id_list = "",
+		astrolabe_id = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 0,
+		weapon_key = 0,
+		hero_break = 0,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 1,
+		using_hero_chip = "",
+		equip_list = {},
+		equip_pool_list = {},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[611101] = {
+		star_lv = 600,
+		skill_lv = 1,
+		weapon_break = 0,
+		hero_desc = "",
+		equip_lv = 1,
+		skin_id = 6111,
+		id = 611101,
+		weapon_level = 1,
+		weapon_stage = 1,
+		hero_id = 6111,
+		equip_exclusive_id_list = "",
+		astrolabe_id = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 0,
+		weapon_key = 0,
+		hero_break = 0,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 1,
+		using_hero_chip = "",
+		equip_list = {},
+		equip_pool_list = {},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[610801] = {
+		star_lv = 600,
+		skill_lv = 1,
+		weapon_break = 0,
+		hero_desc = "",
+		equip_lv = 1,
+		skin_id = 6108,
+		id = 610801,
+		weapon_level = 1,
+		weapon_stage = 1,
+		hero_id = 6108,
+		equip_exclusive_id_list = "",
+		astrolabe_id = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 0,
+		weapon_key = 0,
+		hero_break = 0,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 1,
+		using_hero_chip = "",
+		equip_list = {},
+		equip_pool_list = {},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[610901] = {
+		star_lv = 600,
+		skill_lv = 1,
+		weapon_break = 0,
+		hero_desc = "",
+		equip_lv = 1,
+		skin_id = 6109,
+		id = 610901,
+		weapon_level = 1,
+		weapon_stage = 1,
+		hero_id = 6109,
+		equip_exclusive_id_list = "",
+		astrolabe_id = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 0,
+		weapon_key = 0,
+		hero_break = 0,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 1,
+		using_hero_chip = "",
+		equip_list = {},
+		equip_pool_list = {},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[611201] = {
+		star_lv = 600,
+		skill_lv = 1,
+		weapon_break = 0,
+		hero_desc = "",
+		equip_lv = 1,
+		skin_id = 6112,
+		id = 611201,
+		weapon_level = 1,
+		weapon_stage = 1,
+		hero_id = 6112,
+		equip_exclusive_id_list = "",
+		astrolabe_id = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 0,
+		weapon_key = 0,
+		hero_break = 0,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 1,
+		using_hero_chip = "",
+		equip_list = {},
+		equip_pool_list = {},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[611701] = {
+		star_lv = 600,
+		skill_lv = 35,
+		weapon_break = 0,
+		hero_desc = "",
+		equip_lv = 1,
+		skin_id = 6117,
+		id = 611701,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 6117,
+		equip_exclusive_id_list = "",
+		astrolabe_id = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 0,
+		weapon_key = 0,
+		hero_break = 0,
+		hero_attrib = "",
+		hero_lv = 80,
 		break_lv = 1,
 		using_hero_chip = "",
 		equip_list = {},
@@ -24319,6 +25687,890 @@
 			10970013
 		}
 	},
+	[188] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1022,
+		id = 188,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1022,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1022003,
+		weapon_key = 2510013,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511058,
+			521034,
+			531058,
+			541034,
+			551058,
+			561034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10220031,
+			10220032,
+			10220033
+		}
+	},
+	[189] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1042,
+		id = 189,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1042,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 3,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1042002,
+		weapon_key = 2510005,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511013,
+			521034,
+			531013,
+			541034,
+			551013,
+			561034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10420021,
+			10420022,
+			10420023
+		}
+	},
+	[190] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1139,
+		id = 190,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1139,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 3,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1139001,
+		weapon_key = 2510010,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511012,
+			521038,
+			531012,
+			541038,
+			551012,
+			561038
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11390011,
+			11390012,
+			11390013
+		}
+	},
+	[191] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1021,
+		id = 191,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1021,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1021003,
+		weapon_key = 2510014,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511059,
+			521035,
+			531059,
+			541035,
+			551059,
+			561035
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10210031,
+			10210032,
+			10210033
+		}
+	},
+	[192] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1041,
+		id = 192,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1041,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 3,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1041001,
+		weapon_key = 2510004,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511008,
+			521008,
+			531008,
+			541036,
+			551036,
+			561036
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10410011,
+			10410012,
+			10410013
+		}
+	},
+	[193] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1020,
+		id = 193,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1020,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1020003,
+		weapon_key = 2550010,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515047,
+			525060,
+			535047,
+			545060,
+			555047,
+			565060
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10200031,
+			10200032,
+			10200033
+		}
+	},
+	[194] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1156,
+		id = 194,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1156,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1156001,
+		weapon_key = 2550011,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515061,
+			525022,
+			535061,
+			545022,
+			555061,
+			565022
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11560011,
+			11560012,
+			11560013
+		}
+	},
+	[195] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 40,
+		skin_id = 1011,
+		id = 195,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1011,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1011002,
+		weapon_key = 2520002,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 4,
+		using_hero_chip = "",
+		equip_list = {
+			512008,
+			522028,
+			532008,
+			542028,
+			552008,
+			562028
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10110021,
+			10110022,
+			10110023
+		}
+	},
+	[196] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1284,
+		id = 196,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1284,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1284002,
+		weapon_key = 2540012,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			514051,
+			524056,
+			534051,
+			544056,
+			554051,
+			564056
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			12840021,
+			12840022,
+			12840023
+		}
+	},
+	[197] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1056,
+		id = 197,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1056,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1056001,
+		weapon_key = 2550005,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515009,
+			525027,
+			535009,
+			545027,
+			555009,
+			565027
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10560011,
+			10560012,
+			10560013
+		}
+	},
+	[198] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 40,
+		skin_id = 1111,
+		id = 198,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1111,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1111001,
+		weapon_key = 2520005,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 4,
+		using_hero_chip = "",
+		equip_list = {
+			512011,
+			522028,
+			532011,
+			542028,
+			552011,
+			562028
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11110011,
+			11110012,
+			11110013
+		}
+	},
+	[199] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1052,
+		id = 199,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1052,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1052001,
+		weapon_key = 2550009,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515054,
+			525038,
+			535054,
+			545038,
+			555054,
+			565038
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10520011,
+			10520012,
+			10520013
+		}
+	},
+	[200] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1089,
+		id = 200,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1089,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1089001,
+		weapon_key = 2550012,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515062,
+			525034,
+			535062,
+			545034,
+			555062,
+			565034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10890011,
+			10890012,
+			10890013
+		}
+	},
 	[610301] = {
 		star_lv = 600,
 		skill_lv = 1,
@@ -27484,7 +29736,7 @@
 		weapon_stage = 1,
 		hero_id = 1042,
 		equip_exclusive_id_list = "",
-		weapon_module_level = 0,
+		weapon_module_level = 3,
 		equip_exclusive_lv_list = "",
 		astrolabe_suit_id = 1042002,
 		weapon_key = 2510005,
@@ -28968,6 +31220,142 @@
 			11970023
 		}
 	},
+	[10220101] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 102201,
+		id = 10220101,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1022,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1022003,
+		weapon_key = 2510013,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511058,
+			521034,
+			531058,
+			541034,
+			551058,
+			561034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10220031,
+			10220032,
+			10220033
+		}
+	},
+	[10490201] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 104902,
+		id = 10490201,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1049,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1049001,
+		weapon_key = 2530011,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			513049,
+			523022,
+			533049,
+			543022,
+			553049,
+			563022
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10490011,
+			10490012,
+			10490013
+		}
+	},
 	[11390701] = {
 		star_lv = 500,
 		skill_lv = 35,
@@ -29034,6 +31422,346 @@
 			11390011,
 			11390012,
 			11390013
+		}
+	},
+	[10210101] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 102101,
+		id = 10210101,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1021,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1021003,
+		weapon_key = 2510014,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511059,
+			521035,
+			531059,
+			541035,
+			551059,
+			561035
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10210031,
+			10210032,
+			10210033
+		}
+	},
+	[10200101] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 102001,
+		id = 10200101,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1020,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1020003,
+		weapon_key = 2550010,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515047,
+			525060,
+			535047,
+			545060,
+			555047,
+			565060
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10200031,
+			10200032,
+			10200033
+		}
+	},
+	[11560101] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 115601,
+		id = 11560101,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1156,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1156001,
+		weapon_key = 2550011,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515061,
+			525022,
+			535061,
+			545022,
+			555061,
+			565022
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11560011,
+			11560012,
+			11560013
+		}
+	},
+	[10950201] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 109502,
+		id = 10950201,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1095,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1095002,
+		weapon_key = 2520009,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			512055,
+			522027,
+			532055,
+			542027,
+			552055,
+			562027
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10950021,
+			10950022,
+			10950023
+		}
+	},
+	[10890101] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 108901,
+		id = 10890101,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1089,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1089001,
+		weapon_key = 2550012,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515062,
+			525034,
+			535062,
+			545034,
+			555062,
+			565034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10890011,
+			10890012,
+			10890013
 		}
 	},
 	[3031184] = {
@@ -30570,6 +33298,38 @@
 		weapon_level = 1,
 		weapon_stage = 1,
 		hero_id = 1049,
+		equip_exclusive_id_list = "",
+		astrolabe_id = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 0,
+		weapon_key = 0,
+		hero_break = 2,
+		hero_lv = 40,
+		break_lv = 1,
+		using_hero_chip = "",
+		hero_attrib = {},
+		equip_list = {},
+		equip_pool_list = {},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[3031021] = {
+		star_lv = 300,
+		skill_lv = 10,
+		weapon_break = 0,
+		hero_desc = "4368f1b47a1f3190de7fac33982b18a0",
+		equip_lv = 1,
+		skin_id = 1021,
+		id = 3031021,
+		weapon_level = 1,
+		weapon_stage = 1,
+		hero_id = 1021,
 		equip_exclusive_id_list = "",
 		astrolabe_id = "",
 		weapon_module_level = 0,
@@ -33904,6 +36664,918 @@
 			10750013
 		}
 	},
+	[3051049] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "f2cf6d90e5888474101121e878979bdd",
+		equip_lv = 40,
+		skin_id = 1049,
+		id = 3051049,
+		weapon_level = 60,
+		weapon_stage = 5,
+		hero_id = 1049,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1049001,
+		weapon_key = 2530011,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 4,
+		using_hero_chip = "",
+		equip_list = {
+			513049,
+			523022,
+			533049,
+			543022,
+			553049,
+			563022
+		},
+		equip_pool_list = {
+			{
+				10312,
+				10313
+			},
+			{
+				10314,
+				10315
+			},
+			{
+				10325,
+				10326
+			},
+			{
+				10327,
+				10501
+			},
+			{
+				10513,
+				10514
+			},
+			{
+				10516,
+				10519
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10490011,
+			10490012,
+			10490013
+		}
+	},
+	[3051284] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "68631a6a2d41c7ee551e23dbc2413d3d",
+		equip_lv = 40,
+		skin_id = 1284,
+		id = 3051284,
+		weapon_level = 60,
+		weapon_stage = 5,
+		hero_id = 1284,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1284002,
+		weapon_key = 2540012,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 4,
+		using_hero_chip = "",
+		equip_list = {
+			514051,
+			524056,
+			534051,
+			544056,
+			554051,
+			564056
+		},
+		equip_pool_list = {
+			{
+				10312,
+				10313
+			},
+			{
+				10314,
+				10315
+			},
+			{
+				10325,
+				10326
+			},
+			{
+				10327,
+				10501
+			},
+			{
+				10513,
+				10514
+			},
+			{
+				10516,
+				10519
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			12840021,
+			12840022,
+			12840023
+		}
+	},
+	[3051055] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "beafc1c30b7f57a256bde3b59798f62c",
+		equip_lv = 60,
+		skin_id = 1055,
+		id = 3051055,
+		weapon_level = 60,
+		weapon_stage = 5,
+		hero_id = 1055,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1055001,
+		weapon_key = 2530009,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			513048,
+			523026,
+			533048,
+			543026,
+			553048,
+			563026
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10550011,
+			10550012,
+			10550013
+		}
+	},
+	[3061049] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1049,
+		id = 3061049,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1049,
+		weapon_module_level = 0,
+		astrolabe_suit_id = 1049001,
+		weapon_key = 2530011,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			513049,
+			523022,
+			533049,
+			543022,
+			553049,
+			563022
+		},
+		equip_pool_list = {
+			{
+				10225,
+				10225
+			},
+			{
+				10007,
+				10041
+			},
+			{
+				10049,
+				10049
+			},
+			{
+				10009,
+				10017
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		equip_exclusive_id_list = {
+			{
+				101,
+				105
+			},
+			{
+				101,
+				105
+			},
+			{
+				103,
+				121
+			},
+			{
+				130,
+				121
+			},
+			{
+				128,
+				137
+			},
+			{
+				128,
+				130
+			}
+		},
+		equip_exclusive_lv_list = {
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			}
+		},
+		astrolabe_id = {
+			10490011,
+			10490012,
+			10490013
+		}
+	},
+	[3061055] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1055,
+		id = 3061055,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1055,
+		weapon_module_level = 0,
+		astrolabe_suit_id = 1055002,
+		weapon_key = 2530009,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			513048,
+			523026,
+			533048,
+			543026,
+			553048,
+			563026
+		},
+		equip_pool_list = {
+			{
+				10225,
+				10225
+			},
+			{
+				10007,
+				10564
+			},
+			{
+				10564,
+				10564
+			},
+			{
+				10009,
+				10017
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		equip_exclusive_id_list = {
+			{
+				101,
+				105
+			},
+			{
+				101,
+				105
+			},
+			{
+				103,
+				121
+			},
+			{
+				130,
+				121
+			},
+			{
+				128,
+				137
+			},
+			{
+				128,
+				130
+			}
+		},
+		equip_exclusive_lv_list = {
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			}
+		},
+		astrolabe_id = {
+			10550021,
+			10550022,
+			10550023
+		}
+	},
+	[3061138] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1138,
+		id = 3061138,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1138,
+		weapon_module_level = 0,
+		astrolabe_suit_id = 1138003,
+		weapon_key = 2510009,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			510031,
+			520038,
+			530031,
+			540038,
+			550031,
+			560038
+		},
+		equip_pool_list = {
+			{
+				10211,
+				10211
+			},
+			{
+				10496,
+				10010
+			},
+			{
+				10562,
+				10562
+			},
+			{
+				10009,
+				10017
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		equip_exclusive_id_list = {
+			{
+				106,
+				108
+			},
+			{
+				106,
+				108
+			},
+			{
+				109,
+				111
+			},
+			{
+				109,
+				111
+			},
+			{
+				118,
+				120
+			},
+			{
+				118,
+				120
+			}
+		},
+		equip_exclusive_lv_list = {
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			}
+		},
+		astrolabe_id = {
+			11380031,
+			11380032,
+			11380033
+		}
+	},
+	[3061076] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1076,
+		id = 3061076,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1076,
+		weapon_module_level = 0,
+		astrolabe_suit_id = 1076002,
+		weapon_key = 2590006,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			519014,
+			529014,
+			539014,
+			549045,
+			559045,
+			569045
+		},
+		equip_pool_list = {
+			{
+				10239,
+				10239
+			},
+			{
+				10007,
+				10041
+			},
+			{
+				10049,
+				10049
+			},
+			{
+				10009,
+				10017
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		equip_exclusive_id_list = {
+			{
+				102,
+				124
+			},
+			{
+				102,
+				125
+			},
+			{
+				103,
+				121
+			},
+			{
+				130,
+				121
+			},
+			{
+				112,
+				113
+			},
+			{
+				112,
+				113
+			}
+		},
+		equip_exclusive_lv_list = {
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			}
+		},
+		astrolabe_id = {
+			10760021,
+			10760022,
+			10760023
+		}
+	},
+	[3061061] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1061,
+		id = 3061061,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1061,
+		weapon_module_level = 0,
+		astrolabe_suit_id = 1061002,
+		weapon_key = 2590009,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			519052,
+			529034,
+			539052,
+			549034,
+			559052,
+			569034
+		},
+		equip_pool_list = {
+			{
+				10239,
+				10239
+			},
+			{
+				10007,
+				10041
+			},
+			{
+				10049,
+				10049
+			},
+			{
+				10009,
+				10017
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		equip_exclusive_id_list = {
+			{
+				102,
+				124
+			},
+			{
+				102,
+				125
+			},
+			{
+				103,
+				121
+			},
+			{
+				130,
+				121
+			},
+			{
+				112,
+				113
+			},
+			{
+				112,
+				113
+			}
+		},
+		equip_exclusive_lv_list = {
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			}
+		},
+		astrolabe_id = {
+			10610021,
+			10610022,
+			10610023
+		}
+	},
+	[3061075] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1075,
+		id = 3061075,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1075,
+		weapon_module_level = 0,
+		astrolabe_suit_id = 1075002,
+		weapon_key = 2590003,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			519042,
+			529042,
+			539042,
+			549036,
+			559036,
+			569036
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10365
+			},
+			{
+				10365,
+				10365
+			},
+			{
+				10365,
+				10365
+			},
+			{
+				10320,
+				10329
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		equip_exclusive_id_list = {
+			{
+				101,
+				106
+			},
+			{
+				101,
+				106
+			},
+			{
+				109,
+				141
+			},
+			{
+				109,
+				141
+			},
+			{
+				118,
+				120
+			},
+			{
+				118,
+				120
+			}
+		},
+		equip_exclusive_lv_list = {
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				3
+			}
+		},
+		astrolabe_id = {
+			10750021,
+			10750022,
+			10750023
+		}
+	},
 	[6021084] = {
 		star_lv = 500,
 		skill_lv = 35,
@@ -35276,10 +38948,10 @@
 		weapon_stage = 5,
 		hero_id = 1035,
 		equip_exclusive_id_list = "",
-		weapon_module_level = 0,
+		weapon_module_level = 3,
 		equip_exclusive_lv_list = "",
 		astrolabe_suit_id = 1035001,
-		weapon_key = 2540004,
+		weapon_key = 2520004,
 		hero_break = 6,
 		hero_attrib = "",
 		hero_lv = 80,
@@ -36554,6 +40226,414 @@
 			10550011,
 			10550012,
 			10550013
+		}
+	},
+	[308104901] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 104901,
+		id = 308104901,
+		weapon_level = 60,
+		weapon_stage = 5,
+		hero_id = 1049,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1049001,
+		weapon_key = 2530011,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			513049,
+			523022,
+			533049,
+			543022,
+			553049,
+			563022
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10490011,
+			10490012,
+			10490013
+		}
+	},
+	[3081139] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1139,
+		id = 3081139,
+		weapon_level = 60,
+		weapon_stage = 5,
+		hero_id = 1139,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 3,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1139001,
+		weapon_key = 2510010,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511012,
+			521023,
+			531012,
+			541023,
+			551012,
+			561023
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11390011,
+			11390012,
+			11390013
+		}
+	},
+	[3081081] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1081,
+		id = 3081081,
+		weapon_level = 60,
+		weapon_stage = 5,
+		hero_id = 1081,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 3,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1081003,
+		weapon_key = 2540010,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			510032,
+			520029,
+			530032,
+			540029,
+			550032,
+			560029
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10009,
+				10017
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10041,
+				10049
+			},
+			{
+				10049,
+				10225
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10810031,
+			10810032,
+			10810033
+		}
+	},
+	[3081058] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1058,
+		id = 3081058,
+		weapon_level = 60,
+		weapon_stage = 5,
+		hero_id = 1058,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 3,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1058001,
+		weapon_key = 2530008,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			513043,
+			523038,
+			533043,
+			543038,
+			553043,
+			563038
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10580011,
+			10580012,
+			10580013
+		}
+	},
+	[3081015] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1015,
+		id = 3081015,
+		weapon_level = 60,
+		weapon_stage = 5,
+		hero_id = 1015,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1015002,
+		weapon_key = 2520008,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			512054,
+			522034,
+			532054,
+			542034,
+			552054,
+			562034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10150021,
+			10150022,
+			10150023
+		}
+	},
+	[3081095] = {
+		star_lv = 500,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 109502,
+		id = 3081095,
+		weapon_level = 60,
+		weapon_stage = 5,
+		hero_id = 1095,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1095002,
+		weapon_key = 2520009,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			512055,
+			522027,
+			532055,
+			542027,
+			552055,
+			562027
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10950021,
+			10950022,
+			10950023
 		}
 	},
 	[3091084] = {
@@ -39206,6 +43286,1842 @@
 			10610021,
 			10610022,
 			10610023
+		}
+	},
+	[519061049] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 104902,
+		id = 519061049,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1049,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1049001,
+		weapon_key = 2530011,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			513049,
+			523022,
+			533049,
+			543022,
+			553049,
+			563022
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10490011,
+			10490012,
+			10490013
+		}
+	},
+	[519061139] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 113907,
+		id = 519061139,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1139,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 3,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1139001,
+		weapon_key = 2510010,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511012,
+			521023,
+			531012,
+			541023,
+			551012,
+			561023
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11390011,
+			11390012,
+			11390013
+		}
+	},
+	[519061076] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 107602,
+		id = 519061076,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1076,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1076002,
+		weapon_key = 2590006,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			519014,
+			529014,
+			539014,
+			549045,
+			559045,
+			569045
+		},
+		equip_pool_list = {
+			{
+				10312,
+				10313
+			},
+			{
+				10314,
+				10315
+			},
+			{
+				10325,
+				10326
+			},
+			{
+				10327,
+				10501
+			},
+			{
+				10513,
+				10514
+			},
+			{
+				10516,
+				10519
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10760021,
+			10760022,
+			10760023
+		}
+	},
+	[519061070] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 107001,
+		id = 519061070,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1070,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1070001,
+		weapon_key = 2590001,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			519043,
+			529029,
+			539043,
+			549029,
+			559043,
+			569029
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10700011,
+			10700012,
+			10700013
+		}
+	},
+	[519061042] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 104205,
+		id = 519061042,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1042,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 3,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1042002,
+		weapon_key = 2510005,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511013,
+			521034,
+			531013,
+			541034,
+			551013,
+			561034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10420021,
+			10420022,
+			10420023
+		}
+	},
+	[519061074] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 107401,
+		id = 519061074,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1074,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1074001,
+		weapon_key = 2590007,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			519047,
+			529034,
+			539047,
+			549034,
+			559047,
+			569034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10740011,
+			10740012,
+			10740013
+		}
+	},
+	[519061066] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 106603,
+		id = 519061066,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1066,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 3,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1066001,
+		weapon_key = 2530003,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			513008,
+			523026,
+			533008,
+			543026,
+			553008,
+			563026
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10660011,
+			10660012,
+			10660013
+		}
+	},
+	[519061093] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 109303,
+		id = 519061093,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1093,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 3,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1093001,
+		weapon_key = 2530004,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			513019,
+			523025,
+			533019,
+			543025,
+			553019,
+			563025
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10930011,
+			10930012,
+			10930013
+		}
+	},
+	[519061022] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 102201,
+		id = 519061022,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1022,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1022003,
+		weapon_key = 2510013,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511058,
+			521034,
+			531058,
+			541034,
+			551058,
+			561034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10220031,
+			10220032,
+			10220033
+		}
+	},
+	[520061072] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1072,
+		id = 520061072,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1072,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1072001,
+		weapon_key = 2590005,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			519046,
+			529046,
+			539046,
+			549020,
+			559020,
+			569020
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10720011,
+			10720012,
+			10720013
+		}
+	},
+	[520061041] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1041,
+		id = 520061041,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1041,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 3,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1041001,
+		weapon_key = 2510004,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511008,
+			521008,
+			531008,
+			541036,
+			551036,
+			561036
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10410011,
+			10410012,
+			10410013
+		}
+	},
+	[520061021] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1021,
+		id = 520061021,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1021,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1021003,
+		weapon_key = 2510014,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511059,
+			521035,
+			531059,
+			541035,
+			551059,
+			561035
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10210031,
+			10210032,
+			10210033
+		}
+	},
+	[520061138] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1138,
+		id = 520061138,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1138,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1138003,
+		weapon_key = 2510009,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511010,
+			521023,
+			531010,
+			541023,
+			551010,
+			561023
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11380031,
+			11380032,
+			11380033
+		}
+	},
+	[520061199] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1199,
+		id = 520061199,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1199,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 3,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1199001,
+		weapon_key = 2530007,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			513040,
+			523022,
+			533040,
+			543022,
+			553040,
+			563022
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11990011,
+			11990012,
+			11990013
+		}
+	},
+	[520061150] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1150,
+		id = 520061150,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1150,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1150003,
+		weapon_key = 2530012,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			513053,
+			523034,
+			533053,
+			543034,
+			553053,
+			563034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11500031,
+			11500032,
+			11500033
+		}
+	},
+	[520061042] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1042,
+		id = 520061042,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1042,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 3,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1042002,
+		weapon_key = 2510005,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511013,
+			521034,
+			531013,
+			541034,
+			551013,
+			561034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10420021,
+			10420022,
+			10420023
+		}
+	},
+	[520061022] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1022,
+		id = 520061022,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1022,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1022003,
+		weapon_key = 2510013,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511058,
+			521034,
+			531058,
+			541034,
+			551058,
+			561034
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10220031,
+			10220032,
+			10220033
+		}
+	},
+	[520061197] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1197,
+		id = 520061197,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1197,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1197002,
+		weapon_key = 2510012,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			511057,
+			521038,
+			531057,
+			541038,
+			551057,
+			561038
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11970021,
+			11970022,
+			11970023
+		}
+	},
+	[520061020] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1020,
+		id = 520061020,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1020,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1020003,
+		weapon_key = 2550010,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515047,
+			525060,
+			535047,
+			545060,
+			555047,
+			565060
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10200031,
+			10200032,
+			10200033
+		}
+	},
+	[520061156] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1156,
+		id = 520061156,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1156,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1156001,
+		weapon_key = 2550011,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515061,
+			525022,
+			535061,
+			545022,
+			555061,
+			565022
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11560011,
+			11560012,
+			11560013
+		}
+	},
+	[520061089] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1089,
+		id = 520061089,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1089,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1089001,
+		weapon_key = 2550012,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			515008,
+			525056,
+			535008,
+			545056,
+			555008,
+			565056
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10890011,
+			10890012,
+			10890013
+		}
+	},
+	[520061060] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1060,
+		id = 520061060,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1060,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1060002,
+		weapon_key = 2590008,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			510051,
+			520022,
+			530051,
+			540022,
+			550051,
+			560022
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10600021,
+			10600022,
+			10600023
+		}
+	},
+	[520061070] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1070,
+		id = 520061070,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1070,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1070001,
+		weapon_key = 2590001,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			519043,
+			529029,
+			539043,
+			549029,
+			559043,
+			569029
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10700011,
+			10700012,
+			10700013
+		}
+	},
+	[520061075] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1075,
+		id = 520061075,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1075,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1075002,
+		weapon_key = 2590003,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			519042,
+			529042,
+			539042,
+			549036,
+			559036,
+			569036
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10750021,
+			10750022,
+			10750023
+		}
+	},
+	[520061076] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1076,
+		id = 520061076,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1076,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1076002,
+		weapon_key = 2590006,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			519014,
+			529014,
+			539014,
+			549045,
+			559045,
+			569045
+		},
+		equip_pool_list = {
+			{
+				10312,
+				10313
+			},
+			{
+				10314,
+				10315
+			},
+			{
+				10325,
+				10326
+			},
+			{
+				10327,
+				10501
+			},
+			{
+				10513,
+				10514
+			},
+			{
+				10516,
+				10519
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10760021,
+			10760022,
+			10760023
+		}
+	},
+	[520061095] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1095,
+		id = 520061095,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1095,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 0,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1095002,
+		weapon_key = 2520009,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			512055,
+			522027,
+			532055,
+			542027,
+			552055,
+			562027
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			10950021,
+			10950022,
+			10950023
+		}
+	},
+	[520061111] = {
+		star_lv = 400,
+		skill_lv = 35,
+		weapon_break = 4,
+		hero_desc = "",
+		equip_lv = 60,
+		skin_id = 1111,
+		id = 520061111,
+		weapon_level = 60,
+		weapon_stage = 1,
+		hero_id = 1111,
+		equip_exclusive_id_list = "",
+		weapon_module_level = 3,
+		equip_exclusive_lv_list = "",
+		astrolabe_suit_id = 1111001,
+		weapon_key = 2520005,
+		hero_break = 6,
+		hero_attrib = "",
+		hero_lv = 80,
+		break_lv = 6,
+		using_hero_chip = "",
+		equip_list = {
+			512011,
+			522028,
+			532011,
+			542028,
+			552011,
+			562028
+		},
+		equip_pool_list = {
+			{
+				10001,
+				10001
+			},
+			{
+				10009,
+				10009
+			},
+			{
+				10017,
+				10017
+			},
+			{
+				10720,
+				10721
+			},
+			{
+				10722,
+				10723
+			},
+			{
+				10710,
+				10711
+			}
+		},
+		skill_element = {
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		astrolabe_id = {
+			11110011,
+			11110012,
+			11110013
 		}
 	},
 	[5170001] = {
@@ -76554,6 +82470,13 @@
 		101907,
 		101908,
 		101909,
+		102001,
+		102002,
+		102101,
+		102102,
+		102201,
+		102202,
+		102203,
 		102401,
 		102402,
 		102403,
@@ -76635,6 +82558,8 @@
 		113903,
 		113904,
 		113905,
+		113906,
+		113907,
 		104101,
 		104102,
 		104103,
@@ -76647,6 +82572,7 @@
 		104206,
 		104207,
 		104208,
+		104209,
 		104801,
 		104802,
 		104803,
@@ -76656,11 +82582,13 @@
 		104807,
 		104901,
 		104902,
+		104903,
 		114801,
 		114802,
 		114803,
 		114804,
 		114805,
+		114806,
 		105001,
 		105002,
 		105003,
@@ -76761,6 +82689,9 @@
 		108405,
 		108406,
 		108407,
+		108901,
+		108902,
+		108903,
 		118401,
 		118402,
 		118403,
@@ -76816,6 +82747,11 @@
 		111903,
 		111904,
 		111905,
+		115601,
+		115602,
+		115603,
+		115604,
+		115605,
 		119701,
 		119702,
 		119901,
@@ -76832,6 +82768,12 @@
 		609001,
 		609301,
 		610501,
+		611001,
+		611101,
+		610801,
+		610901,
+		611201,
+		611701,
 		904901,
 		905501,
 		906001,
@@ -76926,6 +82868,19 @@
 		185,
 		186,
 		187,
+		188,
+		189,
+		190,
+		191,
+		192,
+		193,
+		194,
+		195,
+		196,
+		197,
+		198,
+		199,
+		200,
 		610301,
 		610401,
 		301,
@@ -77005,7 +82960,14 @@
 		12840101,
 		10740201,
 		11970101,
+		10220101,
+		10490201,
 		11390701,
+		10210101,
+		10200101,
+		11560101,
+		10950201,
+		10890101,
 		3031184,
 		3031027,
 		3031093,
@@ -77051,6 +83013,7 @@
 		3031132,
 		3031076,
 		3031049,
+		3031021,
 		3051184,
 		3051027,
 		3051093,
@@ -77097,6 +83060,15 @@
 		3051071,
 		3051070,
 		3051075,
+		3051049,
+		3051284,
+		3051055,
+		3061049,
+		3061055,
+		3061138,
+		3061076,
+		3061061,
+		3061075,
 		6021084,
 		6021148,
 		6021094,
@@ -77136,6 +83108,12 @@
 		3081096,
 		3081093,
 		3081055,
+		308104901,
+		3081139,
+		3081081,
+		3081058,
+		3081015,
+		3081095,
 		3091084,
 		3091011,
 		3091148,
@@ -77175,6 +83153,33 @@
 		514021015,
 		514021095,
 		514021061,
+		519061049,
+		519061139,
+		519061076,
+		519061070,
+		519061042,
+		519061074,
+		519061066,
+		519061093,
+		519061022,
+		520061072,
+		520061041,
+		520061021,
+		520061138,
+		520061199,
+		520061150,
+		520061042,
+		520061022,
+		520061197,
+		520061020,
+		520061156,
+		520061089,
+		520061060,
+		520061070,
+		520061075,
+		520061076,
+		520061095,
+		520061111,
 		5170001,
 		5170002,
 		5170003,

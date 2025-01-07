@@ -377,6 +377,13 @@
 		id = 1095,
 		default_mouth = 41
 	},
+	[109502] = {
+		hero_id = 1095,
+		style = "female",
+		model = "909502_tpose",
+		id = 109502,
+		default_mouth = 41
+	},
 	[1138] = {
 		hero_id = 1138,
 		style = "lady",
@@ -418,6 +425,41 @@
 		model = "9132_tpose",
 		id = 1132,
 		default_mouth = 40
+	},
+	[1022] = {
+		hero_id = 1022,
+		style = "lady",
+		model = "9022_tpose",
+		id = 1022,
+		default_mouth = 41
+	},
+	[1021] = {
+		hero_id = 1021,
+		style = "lady",
+		model = "9021_tpose",
+		id = 1021,
+		default_mouth = 0
+	},
+	[1020] = {
+		hero_id = 1020,
+		style = "female",
+		model = "9020_tpose",
+		id = 1020,
+		default_mouth = 0
+	},
+	[1156] = {
+		hero_id = 1156,
+		style = "lady",
+		model = "9156_tpose",
+		id = 1156,
+		default_mouth = 0
+	},
+	[1089] = {
+		hero_id = 1089,
+		style = "lady",
+		model = "9089_tpose",
+		id = 1089,
+		default_mouth = 14
 	},
 	all = {
 		1084,
@@ -474,11 +516,17 @@
 		1150,
 		1099,
 		1095,
+		109502,
 		1138,
 		1139,
 		1068,
 		1284,
 		1197,
-		1132
+		1132,
+		1022,
+		1021,
+		1020,
+		1156,
+		1089
 	}
 }

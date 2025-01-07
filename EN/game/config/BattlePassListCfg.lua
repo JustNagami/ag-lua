@@ -995,6 +995,144 @@
 			2530007
 		}
 	},
+	[20018] = {
+		prefab_path = "Widget/System/Passport/bg/passportBg_00057",
+		poster_ui = "TextureConfig/Passport/hero_s/Passport_icon_00057",
+		battlepass_type = 18,
+		activity_id = 281001,
+		id = 20018,
+		slogan_ui = "I18NImg/%s/Passport/passpory_copy_00055",
+		extra_reward_01 = {},
+		extra_reward_02 = {
+			{
+				14,
+				10000
+			},
+			{
+				2030,
+				1
+			},
+			{
+				41201,
+				10
+			}
+		},
+		display_reward_01 = {
+			{
+				38,
+				7
+			},
+			{
+				40415,
+				40
+			},
+			{
+				41201,
+				11
+			},
+			{
+				53015,
+				170
+			}
+		},
+		display_reward_02 = {
+			{
+				2030,
+				1
+			},
+			{
+				41201,
+				10
+			}
+		},
+		poster_reward = {
+			{
+				2030,
+				1
+			},
+			{
+				1,
+				1000
+			}
+		},
+		servant_list = {
+			2510010,
+			2510005,
+			2540006,
+			2530008,
+			2540010,
+			2510004
+		}
+	},
+	[20019] = {
+		prefab_path = "Widget/System/Passport/bg/passportBg_00058",
+		poster_ui = "TextureConfig/Passport/hero_s/Passport_icon_00058",
+		battlepass_type = 19,
+		activity_id = 291001,
+		id = 20019,
+		slogan_ui = "I18NImg/%s/Passport/passpory_copy_00055",
+		extra_reward_01 = {},
+		extra_reward_02 = {
+			{
+				14,
+				10000
+			},
+			{
+				2031,
+				1
+			},
+			{
+				41201,
+				10
+			}
+		},
+		display_reward_01 = {
+			{
+				38,
+				7
+			},
+			{
+				40415,
+				40
+			},
+			{
+				41201,
+				11
+			},
+			{
+				40604,
+				4
+			}
+		},
+		display_reward_02 = {
+			{
+				2031,
+				1
+			},
+			{
+				41201,
+				10
+			}
+		},
+		poster_reward = {
+			{
+				2031,
+				1
+			},
+			{
+				1,
+				1000
+			}
+		},
+		servant_list = {
+			2550002,
+			2540011,
+			2590005,
+			2520005,
+			2520003,
+			2550009
+		}
+	},
 	[99998] = {
 		prefab_path = "",
 		poster_ui = "",
@@ -1066,6 +1204,8 @@
 		20015,
 		20016,
 		20017,
+		20018,
+		20019,
 		99998
 	}
 }

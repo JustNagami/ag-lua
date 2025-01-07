@@ -5,6 +5,8 @@ function var_0_0.Ctor(arg_1_0, arg_1_1)
 	arg_1_0.transform_ = arg_1_1.transform
 
 	arg_1_0:BindCfgUI()
+
+	arg_1_0.titleTagController_ = arg_1_0.titleControllerEx_:GetController("showTag")
 end
 
 function var_0_0.OnEnter(arg_2_0, arg_2_1)
@@ -50,6 +52,8 @@ function var_0_0.RefreshUI(arg_7_0)
 
 	arg_7_0.chapterIndexText_.text = var_7_1.desc
 	arg_7_0.chapterNameText_.text = var_7_1.name
+
+	arg_7_0.titleTagController_:SetSelectedState(ChapterTools.GetChapterShowTypeData(var_7_0))
 
 	local var_7_2 = ChapterTools.GetChapterClientFinishPercentage(var_7_0)
 

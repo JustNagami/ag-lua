@@ -19,17 +19,6 @@ function var_0_1.GetLockHero(arg_1_0, arg_1_1, arg_1_2)
 	end
 
 	arg_1_2.lockHeroList = var_1_1
-
-	local var_1_4 = clone(arg_1_2.resultHeroList)
-
-	for iter_1_4, iter_1_5 in ipairs(arg_1_2.resultHeroList) do
-		if table.keyof(arg_1_2.lockHeroList, iter_1_5) then
-			var_1_4[iter_1_4] = 0
-			arg_1_2.isInVaild = true
-		end
-	end
-
-	arg_1_2.resultHeroList = var_1_4
 end
 
 function var_0_1.GetTrialHeroList(arg_2_0, arg_2_1)

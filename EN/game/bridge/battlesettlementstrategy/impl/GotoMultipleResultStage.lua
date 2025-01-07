@@ -24,12 +24,12 @@ function var_0_0.GotoMultipleResult(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_4,
 		arg_2_1 = 3
 	end
 
-	local var_2_0, var_2_1 = GetResultReward()
+	local var_2_0, var_2_1, var_2_2 = GetResultReward()
 
 	if isSuccess(arg_2_1) or not arg_2_5 and arg_2_4.challengedNumber >= 1 then
-		local var_2_2 = arg_2_2:GetType()
+		local var_2_3 = arg_2_2:GetType()
 
-		if BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_EQUIP == var_2_2 then
+		if BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_EQUIP == var_2_3 then
 			BattleEquipAction.CaculateGuaranteeNum(arg_2_2:GetStageId(), var_2_1)
 		end
 
@@ -37,6 +37,7 @@ function var_0_0.GotoMultipleResult(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_4,
 			gameContext:Go("/battleMultipleResult", {
 				stageData = arg_2_2,
 				rewardList = var_2_1,
+				extraReward = var_2_2,
 				multiple = arg_2_4.challengedNumber or 0,
 				battleResult = arg_2_4
 			})

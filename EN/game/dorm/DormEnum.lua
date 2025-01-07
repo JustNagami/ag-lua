@@ -113,7 +113,8 @@
 	},
 	SpecialVfx = {
 		Tired = "Tired",
-		Hungry = "Hungry"
+		Hungry = "Hungry",
+		Gift = "Gift"
 	}
 }
 
@@ -147,9 +148,10 @@ var_0_0.DormHeroState = {
 	InCanteenJob = "InCanteenJob"
 }
 var_0_0.DormSystemType = {
+	Illu = "Illu",
+	Dormitory = "Dormitory",
 	Main = "Main",
 	CricketBattle = "CricketBattle",
-	Dormitory = "Dormitory",
 	Canteen = "Canteen"
 }
 var_0_0.DormDeployType = {
@@ -163,6 +165,7 @@ var_0_0.FurItemType = {
 	TemplateShow = "TemplateShow",
 	SuitFurShow = "SuitFurShow",
 	Edit = "Edit",
+	Illu = "Illu",
 	Gift = "Gift"
 }
 var_0_0.FoodSellType = {

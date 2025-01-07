@@ -19,7 +19,7 @@ function var_0_0.InitPlayer(arg_2_0, arg_2_1)
 		end, -1, true)
 	end
 
-	arg_2_0.stage_ = GameObject.New()
+	arg_2_0.stage_ = Object.Instantiate(Asset.Load("StoryTimeline/StoryStage"))
 	arg_2_0.player_ = StoryPlayer.New(arg_2_0.stage_)
 	arg_2_0.uiShow_ = true
 	arg_2_0.cameraChanged_ = false
@@ -638,6 +638,7 @@ function var_0_0.ResetCameraParam(arg_41_0)
 	if var_41_3 then
 		var_41_3.shadowRotationImmediately = var_41_1
 		var_41_3.radialBlurScale = var_41_2
+		var_41_3.dofType = UnityEngine.Pipelines.SimPipeline.DepthOfFieldType.Disabled
 	end
 
 	if arg_41_0.delay_timer_ then

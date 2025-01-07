@@ -200,7 +200,14 @@
 		type = 1,
 		id = 101011305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				14,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101013101] = {
 		description = "3ba8f38c859bd9accd4e4ab908297cfb",
@@ -427,7 +434,14 @@
 		type = 1,
 		id = 101013305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101015101] = {
 		description = "0803da95147546ef1ad3f4950266e923",
@@ -621,7 +635,14 @@
 		type = 1,
 		id = 101015305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101016101] = {
 		description = "161768cb904f8705f05008393141b9fa",
@@ -908,7 +929,14 @@
 		type = 1,
 		id = 101016305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101017101] = {
 		description = "d4e35a08cc6db9d56a6bd82f9e4eaa57",
@@ -991,26 +1019,26 @@
 		param = {
 			{
 				840,
-				0,
-				false,
+				42,
+				true,
 				"%"
 			},
 			{
 				21.538,
-				0,
-				false,
+				1.077,
+				true,
 				"%"
 			},
 			{
 				700,
-				0,
-				false,
+				35,
+				true,
 				"%"
 			},
 			{
 				17.949,
-				0,
-				false,
+				0.897,
+				true,
 				"%"
 			},
 			{
@@ -1054,6 +1082,12 @@
 				3.846,
 				true,
 				"%"
+			},
+			{
+				14,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -1294,7 +1328,689 @@
 		type = 1,
 		id = 101019305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				14,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101020101] = {
+		description = "d18c002c6dbd8a111d443c42e9612368",
+		maxLv = 60,
+		type = 1,
+		id = 101020101,
+		extra_param = "",
+		param = {
+			{
+				860,
+				16.53,
+				true,
+				"%"
+			},
+			{
+				1000,
+				19.223,
+				true,
+				"%"
+			},
+			{
+				50,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[101020201] = {
+		description = "c76aee22c661a0bc0d57cfe1b9f059cb",
+		maxLv = 60,
+		type = 1,
+		id = 101020201,
+		extra_param = "",
+		param = {
+			{
+				600,
+				15.38,
+				true,
+				"%"
+			},
+			{
+				1000,
+				25.641,
+				true,
+				"%"
+			},
+			{
+				1000,
+				25.64,
+				true,
+				"%"
+			},
+			{
+				1600,
+				41.022,
+				true,
+				"%"
+			}
+		}
+	},
+	[101020202] = {
+		description = "831ca069c09d78718aa2d76ffc7e0437",
+		maxLv = 60,
+		type = 1,
+		id = 101020202,
+		extra_param = "",
+		param = {
+			{
+				600,
+				15.38,
+				true,
+				"%"
+			}
+		}
+	},
+	[101020203] = {
+		description = "d891f151cbbc731644631a56cab65ba4",
+		maxLv = 60,
+		type = 1,
+		id = 101020203,
+		extra_param = "",
+		param = {
+			{
+				800,
+				20.51,
+				true,
+				"%"
+			},
+			{
+				1200,
+				30.768,
+				true,
+				"%"
+			},
+			{
+				1200,
+				30.769,
+				true,
+				"%"
+			},
+			{
+				1800,
+				46.152,
+				true,
+				"%"
+			}
+		}
+	},
+	[101020208] = {
+		description = "88022c47d008cdc47d92a5a9f4402477",
+		maxLv = 60,
+		type = 1,
+		id = 101020208,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				0,
+				false,
+				"%"
+			},
+			{
+				30.769,
+				0,
+				false,
+				"%"
+			},
+			{
+				1000,
+				0,
+				false,
+				"%"
+			},
+			{
+				25.641,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101020209] = {
+		description = "b237dd5a40affbf68a334fbcc3ea5805",
+		maxLv = 60,
+		type = 1,
+		id = 101020209,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				30.769,
+				true,
+				"%"
+			},
+			{
+				2000,
+				51.282,
+				true,
+				"%"
+			}
+		}
+	},
+	[101020305] = {
+		description = "f091b240c9c9649f4425f2d37ffe08ed",
+		maxLv = 60,
+		type = 1,
+		id = 101020305,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				33,
+				0,
+				false,
+				""
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101021101] = {
+		description = "a4ef46dd58601c491f942ff3d0ade515",
+		maxLv = 60,
+		type = 1,
+		id = 101021101,
+		extra_param = "",
+		param = {
+			{
+				522,
+				10.578,
+				true,
+				"%"
+			},
+			{
+				784,
+				15.188,
+				true,
+				"%"
+			},
+			{
+				3160,
+				60.813,
+				true,
+				"%"
+			},
+			{
+				2400,
+				61.532,
+				true,
+				"%"
+			},
+			{
+				3,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101021201] = {
+		description = "215fce1da39c5c32baeb78cb0aa41e3c",
+		maxLv = 60,
+		type = 1,
+		id = 101021201,
+		extra_param = "",
+		param = {
+			{
+				100,
+				2.564,
+				true,
+				"%"
+			},
+			{
+				200,
+				5.128,
+				true,
+				"%"
+			},
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			},
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			}
+		}
+	},
+	[101021202] = {
+		description = "4c746cd817cf0fbf8d6b87fc87275349",
+		maxLv = 60,
+		type = 1,
+		id = 101021202,
+		extra_param = "",
+		param = {
+			{
+				1000,
+				25.64,
+				true,
+				"%"
+			}
+		}
+	},
+	[101021203] = {
+		description = "e0eccd3d95d308f20fddf8674a393f39",
+		maxLv = 60,
+		type = 1,
+		id = 101021203,
+		extra_param = "",
+		param = {
+			{
+				800,
+				20.506,
+				true,
+				"%"
+			},
+			{
+				1500,
+				38.46,
+				true,
+				"%"
+			}
+		}
+	},
+	[101021208] = {
+		description = "13081404b23147ea7b63683c0c5581ba",
+		maxLv = 60,
+		type = 1,
+		id = 101021208,
+		extra_param = "",
+		param = {
+			{
+				960,
+				48,
+				true,
+				"%"
+			},
+			{
+				24.615,
+				1.231,
+				true,
+				"%"
+			},
+			{
+				960,
+				48,
+				true,
+				"%"
+			},
+			{
+				24.615,
+				1.231,
+				true,
+				"%"
+			},
+			{
+				14,
+				0,
+				false,
+				""
+			},
+			{
+				40,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101021209] = {
+		description = "59291b66a7a16412ec25ba1cdf24a6b9",
+		maxLv = 60,
+		type = 1,
+		id = 101021209,
+		extra_param = "",
+		param = {
+			{
+				8.4,
+				0.2,
+				true,
+				"%"
+			}
+		}
+	},
+	[101021305] = {
+		description = "ada7bd78bfeab4c4310d3c78f8222a63",
+		maxLv = 60,
+		type = 1,
+		id = 101021305,
+		extra_param = "",
+		param = {
+			{
+				262,
+				5.688,
+				true,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101022101] = {
+		description = "31b86004a5d918e24d7e00eec9c445ae",
+		maxLv = 60,
+		type = 1,
+		id = 101022101,
+		extra_param = "",
+		param = {
+			{
+				582,
+				11.292,
+				true,
+				"%"
+			},
+			{
+				846,
+				16.338,
+				true,
+				"%"
+			}
+		}
+	},
+	[101022201] = {
+		description = "8926087bacc634217ce11560228191ce",
+		maxLv = 60,
+		type = 1,
+		id = 101022201,
+		extra_param = "",
+		param = {
+			{
+				600,
+				15.381,
+				true,
+				"%"
+			},
+			{
+				1200,
+				30.765,
+				true,
+				"%"
+			},
+			{
+				1500,
+				38.461,
+				true,
+				"%"
+			},
+			{
+				1000,
+				25.64,
+				true,
+				"%"
+			},
+			{
+				1200,
+				30.764,
+				true,
+				"%"
+			},
+			{
+				300,
+				7.69,
+				true,
+				"%"
+			},
+			{
+				2000,
+				51.282,
+				true,
+				"%"
+			}
+		}
+	},
+	[101022202] = {
+		description = "7d9dad3c13111ea377aa455023add9db",
+		maxLv = 60,
+		type = 1,
+		id = 101022202,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				30.765,
+				true,
+				"%"
+			},
+			{
+				500,
+				12.82,
+				true,
+				"%"
+			},
+			{
+				500,
+				12.82,
+				true,
+				"%"
+			},
+			{
+				1000,
+				25.64,
+				true,
+				"%"
+			},
+			{
+				1500,
+				38.46,
+				true,
+				"%"
+			},
+			{
+				100,
+				2.564,
+				true,
+				"%"
+			},
+			{
+				200,
+				5.128,
+				true,
+				"%"
+			},
+			{
+				3000,
+				76.922,
+				true,
+				"%"
+			}
+		}
+	},
+	[101022203] = {
+		description = "2bfaef4c91f332ba22de9fbc7c1c7fa7",
+		maxLv = 60,
+		type = 1,
+		id = 101022203,
+		extra_param = "",
+		param = {
+			{
+				3600,
+				92.307,
+				true,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				90,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[101022208] = {
+		description = "c1ce2332eceba6d5e020eb69cad35007",
+		maxLv = 60,
+		type = 1,
+		id = 101022208,
+		extra_param = "",
+		param = {
+			{
+				2400,
+				0,
+				false,
+				"%"
+			},
+			{
+				61.538,
+				0,
+				false,
+				"%"
+			},
+			{
+				2400,
+				0,
+				false,
+				"%"
+			},
+			{
+				61.538,
+				0,
+				false,
+				"%"
+			},
+			{
+				24,
+				0,
+				false,
+				"%"
+			},
+			{
+				24,
+				0,
+				false,
+				""
+			},
+			{
+				12,
+				0,
+				false,
+				"%"
+			},
+			{
+				48,
+				0,
+				false,
+				""
+			},
+			{
+				12,
+				0,
+				false,
+				"%"
+			},
+			{
+				24,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101022209] = {
+		description = "368a72c828f35ccc3f11463f8df32fa1",
+		maxLv = 60,
+		type = 1,
+		id = 101022209,
+		extra_param = "",
+		param = {
+			{
+				2400,
+				61.538,
+				true,
+				"%"
+			}
+		}
+	},
+	[101022305] = {
+		description = "79077779558cc3a496ee47ec439f8dae",
+		maxLv = 60,
+		type = 1,
+		id = 101022305,
+		extra_param = "",
+		param = {
+			{
+				4,
+				0,
+				false,
+				""
+			},
+			{
+				19,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101024101] = {
 		description = "fe47f0846677971f0ab1ee72deb15457",
@@ -1331,12 +2047,6 @@
 				"%"
 			},
 			{
-				600,
-				15.384,
-				true,
-				"%"
-			},
-			{
 				15,
 				0,
 				false,
@@ -1351,6 +2061,12 @@
 			{
 				200,
 				5.128,
+				true,
+				"%"
+			},
+			{
+				600,
+				15.384,
 				true,
 				"%"
 			}
@@ -1370,12 +2086,6 @@
 				"%"
 			},
 			{
-				600,
-				15.383,
-				true,
-				"%"
-			},
-			{
 				20,
 				0,
 				false,
@@ -1390,6 +2100,12 @@
 			{
 				600,
 				15.384,
+				true,
+				"%"
+			},
+			{
+				600,
+				15.383,
 				true,
 				"%"
 			}
@@ -1415,32 +2131,32 @@
 				"%"
 			},
 			{
+				600,
+				15.384,
+				true,
+				"%"
+			},
+			{
+				600,
+				15.384,
+				true,
+				"%"
+			},
+			{
+				600,
+				15.384,
+				true,
+				"%"
+			},
+			{
+				600,
+				15.384,
+				true,
+				"%"
+			},
+			{
 				1200,
 				30.767,
-				true,
-				"%"
-			},
-			{
-				600,
-				15.384,
-				true,
-				"%"
-			},
-			{
-				600,
-				15.384,
-				true,
-				"%"
-			},
-			{
-				600,
-				15.384,
-				true,
-				"%"
-			},
-			{
-				600,
-				15.384,
 				true,
 				"%"
 			}
@@ -1529,6 +2245,12 @@
 				""
 			},
 			{
+				237,
+				6.09,
+				true,
+				"%"
+			},
+			{
 				180,
 				4.615,
 				true,
@@ -1551,12 +2273,93 @@
 				9.23,
 				true,
 				"%"
+			}
+		}
+	},
+	[101024281] = {
+		description = "c46e0853122ccf53f77337d854b86ca9",
+		maxLv = 60,
+		type = 1,
+		id = 101024281,
+		extra_param = "",
+		param = {
+			{
+				1160,
+				0,
+				false,
+				"%"
 			},
 			{
-				237,
-				6.09,
-				true,
+				29.744,
+				0,
+				false,
 				"%"
+			},
+			{
+				1160,
+				0,
+				false,
+				"%"
+			},
+			{
+				29.744,
+				0,
+				false,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				""
+			},
+			{
+				25,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				""
+			},
+			{
+				35,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				""
+			},
+			{
+				50,
+				0,
+				false,
+				"%"
+			},
+			{
+				90,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -1572,6 +2375,12 @@
 				7.69,
 				true,
 				"%"
+			},
+			{
+				14,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -1770,7 +2579,14 @@
 		type = 1,
 		id = 101026305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				14,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101027101] = {
 		description = "0e131840c0f8db7ae4edfa69efa4fe72",
@@ -1946,6 +2762,12 @@
 				21.794,
 				true,
 				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -1958,26 +2780,26 @@
 		param = {
 			{
 				1200,
-				0,
-				false,
+				60,
+				true,
 				"%"
 			},
 			{
 				30.769,
-				0,
-				false,
+				1.538,
+				true,
 				"%"
 			},
 			{
 				500,
-				0,
-				false,
+				25,
+				true,
 				"%"
 			},
 			{
 				12.821,
-				0,
-				false,
+				0.641,
+				true,
 				"%"
 			},
 			{
@@ -2012,6 +2834,12 @@
 				0,
 				false,
 				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -2303,7 +3131,14 @@
 		type = 1,
 		id = 101028305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101032101] = {
 		description = "55ed7025c168af2b776001848238b793",
@@ -2476,7 +3311,14 @@
 		type = 1,
 		id = 101032305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				12,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101033101] = {
 		description = "8acf8a0e67d041d4bb2effa7ef2a6a09",
@@ -2619,6 +3461,39 @@
 			}
 		}
 	},
+	[101033282] = {
+		description = "18524bed28491770db15aad7204bcd4a",
+		maxLv = 60,
+		type = 1,
+		id = 101033282,
+		extra_param = "",
+		param = {
+			{
+				2200,
+				0,
+				false,
+				"%"
+			},
+			{
+				56.41,
+				0,
+				false,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				""
+			}
+		}
+	},
 	[101033305] = {
 		description = "945d6b20650678b31f5385ac8d18c542",
 		maxLv = 60,
@@ -2640,6 +3515,12 @@
 			},
 			{
 				4,
+				0,
+				false,
+				""
+			},
+			{
+				12,
 				0,
 				false,
 				""
@@ -2814,6 +3695,12 @@
 				0,
 				false,
 				""
+			},
+			{
+				20,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -2913,7 +3800,14 @@
 		type = 1,
 		id = 101036305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101037101] = {
 		description = "712b95992f4dc5ed3b92d9218554576e",
@@ -3050,7 +3944,14 @@
 		type = 1,
 		id = 101037305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101038101] = {
 		description = "635e51524072112be30c8dc6aa726dc4",
@@ -3256,6 +4157,12 @@
 				0,
 				false,
 				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -3454,6 +4361,12 @@
 				0,
 				false,
 				""
+			},
+			{
+				20,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -3613,6 +4526,12 @@
 			},
 			{
 				3,
+				0,
+				false,
+				""
+			},
+			{
+				10,
 				0,
 				false,
 				""
@@ -3805,7 +4724,14 @@
 		type = 1,
 		id = 101042305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101048101] = {
 		description = "84d12b5fc647fbffbc2009c328418941",
@@ -3987,6 +4913,12 @@
 		param = {
 			{
 				6,
+				0,
+				false,
+				""
+			},
+			{
+				14,
 				0,
 				false,
 				""
@@ -4245,6 +5177,12 @@
 				0,
 				false,
 				""
+			},
+			{
+				20,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -4428,26 +5366,26 @@
 		param = {
 			{
 				1000,
-				0,
-				false,
+				50,
+				true,
 				"%"
 			},
 			{
 				25.641,
-				0,
-				false,
+				1.282,
+				true,
 				"%"
 			},
 			{
 				360,
-				0,
-				false,
+				18,
+				true,
 				"%"
 			},
 			{
 				9.231,
-				0,
-				false,
+				0.462,
+				true,
 				"%"
 			},
 			{
@@ -4470,7 +5408,14 @@
 		type = 1,
 		id = 101050305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101052101] = {
 		description = "7282b4d4d3c88f933336529f0cb62368",
@@ -4486,8 +5431,8 @@
 				"%"
 			},
 			{
-				4000,
-				102.55,
+				12,
+				0.24,
 				true,
 				"%"
 			},
@@ -4504,8 +5449,8 @@
 				"%"
 			},
 			{
-				12,
-				0.24,
+				800,
+				20.51,
 				true,
 				"%"
 			}
@@ -4682,6 +5627,12 @@
 			},
 			{
 				7,
+				0,
+				false,
+				""
+			},
+			{
+				14,
 				0,
 				false,
 				""
@@ -4871,26 +5822,26 @@
 		param = {
 			{
 				1000,
-				0,
-				false,
+				50,
+				true,
 				"%"
 			},
 			{
 				25.641,
-				0,
-				false,
+				1.282,
+				true,
 				"%"
 			},
 			{
 				1000,
-				0,
-				false,
+				50,
+				true,
 				"%"
 			},
 			{
 				25.641,
-				0,
-				false,
+				1.282,
+				true,
 				"%"
 			},
 			{
@@ -4943,6 +5894,12 @@
 				12.817,
 				true,
 				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -5000,6 +5957,12 @@
 				6.408,
 				true,
 				"%"
+			},
+			{
+				56,
+				1.442,
+				true,
+				"%"
 			}
 		}
 	},
@@ -5013,6 +5976,12 @@
 			{
 				320,
 				8.205,
+				true,
+				"%"
+			},
+			{
+				160,
+				4.102,
 				true,
 				"%"
 			},
@@ -5045,26 +6014,26 @@
 		param = {
 			{
 				500,
-				0,
-				false,
+				25,
+				true,
 				"%"
 			},
 			{
 				12.821,
-				0,
-				false,
+				0.641,
+				true,
 				"%"
 			},
 			{
 				1000,
-				0,
-				false,
+				50,
+				true,
 				"%"
 			},
 			{
 				25.641,
-				0,
-				false,
+				1.282,
+				true,
 				"%"
 			},
 			{
@@ -5108,7 +6077,14 @@
 		type = 1,
 		id = 101056305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101058101] = {
 		description = "bd04f1acfb546fa8fbf56f9850b3ba24",
@@ -5302,7 +6278,14 @@
 		type = 1,
 		id = 101058305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101059101] = {
 		description = "b2a555a47f58db7a5de4cc939a868c28",
@@ -5403,7 +6386,14 @@
 		type = 1,
 		id = 101059305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				12,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101060101] = {
 		description = "a2cdaf989efee7e451b1f62d2e3ebaba",
@@ -5654,7 +6644,14 @@
 		type = 1,
 		id = 101060305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101061101] = {
 		description = "56067dee58c95e9bf3ae5cb797e57067",
@@ -5842,6 +6839,12 @@
 				25.64,
 				true,
 				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -5965,7 +6968,14 @@
 		type = 1,
 		id = 101066305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101067101] = {
 		description = "a56f93412c85763367b926c459bf584c",
@@ -6156,6 +7166,12 @@
 			},
 			{
 				6,
+				0,
+				false,
+				""
+			},
+			{
+				20,
 				0,
 				false,
 				""
@@ -6384,7 +7400,14 @@
 		type = 1,
 		id = 101068305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101070101] = {
 		description = "38ceef39f23c775677b51300dda453d3",
@@ -6566,6 +7589,12 @@
 				9.383,
 				true,
 				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -6731,6 +7760,12 @@
 		param = {
 			{
 				2,
+				0,
+				false,
+				""
+			},
+			{
+				14,
 				0,
 				false,
 				""
@@ -6950,7 +7985,14 @@
 		type = 1,
 		id = 101072305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101074101] = {
 		description = "0ef85a8fa92ae0223898bdffb1c17594",
@@ -7096,6 +8138,12 @@
 			},
 			{
 				1.5,
+				0,
+				false,
+				""
+			},
+			{
+				10,
 				0,
 				false,
 				""
@@ -7306,7 +8354,14 @@
 		type = 1,
 		id = 101075305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101076101] = {
 		description = "e079f118818d41e9cc0ccba52b94aee2",
@@ -7449,7 +8504,14 @@
 		type = 1,
 		id = 101076305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101080101] = {
 		description = "a50d43715deb87b41595e333507aac73",
@@ -7646,6 +8708,12 @@
 				0,
 				false,
 				""
+			},
+			{
+				18,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -7778,6 +8846,12 @@
 				2.564,
 				true,
 				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -7907,7 +8981,167 @@
 		type = 1,
 		id = 101084305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101089101] = {
+		description = "825baa47bf985fe609a8dfafa1dc11a4",
+		maxLv = 60,
+		type = 1,
+		id = 101089101,
+		extra_param = "",
+		param = {
+			{
+				735,
+				14.174,
+				true,
+				"%"
+			},
+			{
+				80,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[101089201] = {
+		description = "41d73e1441a622ea78b666891bc93355",
+		maxLv = 60,
+		type = 1,
+		id = 101089201,
+		extra_param = "",
+		param = {
+			{
+				600,
+				15.384,
+				true,
+				"%"
+			}
+		}
+	},
+	[101089202] = {
+		description = "59cacececd92bf64f13157bd239f7e59",
+		maxLv = 60,
+		type = 1,
+		id = 101089202,
+		extra_param = "",
+		param = {
+			{
+				900,
+				23.075,
+				true,
+				"%"
+			}
+		}
+	},
+	[101089203] = {
+		description = "e2b86a0b35e30f6eccbc79130d1512d4",
+		maxLv = 60,
+		type = 1,
+		id = 101089203,
+		extra_param = "",
+		param = {
+			{
+				300,
+				7.685,
+				true,
+				"%"
+			},
+			{
+				1000,
+				25.64,
+				true,
+				"%"
+			},
+			{
+				6,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101089208] = {
+		description = "981976425d33482349e570ef03ca039b",
+		maxLv = 60,
+		type = 1,
+		id = 101089208,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				0,
+				false,
+				"%"
+			},
+			{
+				30.769,
+				0,
+				false,
+				"%"
+			},
+			{
+				1200,
+				0,
+				false,
+				"%"
+			},
+			{
+				30.769,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101089209] = {
+		description = "7c98f2eb1f13a6a7060703a09fed6639",
+		maxLv = 60,
+		type = 1,
+		id = 101089209,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				30.765,
+				true,
+				"%"
+			}
+		}
+	},
+	[101089305] = {
+		description = "5c3e98d613cad5563c72193ce635ee0f",
+		maxLv = 60,
+		type = 1,
+		id = 101089305,
+		extra_param = "",
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101093101] = {
 		description = "19aff707054100c2d28bc777ef2dd256",
@@ -8119,7 +9353,14 @@
 		type = 1,
 		id = 101093305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101094101] = {
 		description = "9414178041fe915c34e08561ec11e52d",
@@ -8229,6 +9470,12 @@
 		param = {
 			{
 				30,
+				0,
+				false,
+				""
+			},
+			{
+				20,
 				0,
 				false,
 				""
@@ -8457,6 +9704,57 @@
 			}
 		}
 	},
+	[101095281] = {
+		description = "e5b34d8f84af09bb0b63069d78fb8f9e",
+		maxLv = 60,
+		type = 1,
+		id = 101095281,
+		extra_param = "",
+		param = {
+			{
+				1440,
+				72,
+				true,
+				"%"
+			},
+			{
+				36.923,
+				1.846,
+				true,
+				"%"
+			},
+			{
+				1000,
+				50,
+				true,
+				"%"
+			},
+			{
+				25.641,
+				1.282,
+				true,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				""
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
 	[101095305] = {
 		description = "9448615d43fc6494e395172f9050fe5e",
 		maxLv = 60,
@@ -8472,6 +9770,12 @@
 			},
 			{
 				1.5,
+				0,
+				false,
+				""
+			},
+			{
+				10,
 				0,
 				false,
 				""
@@ -8628,7 +9932,14 @@
 		type = 1,
 		id = 101096305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				15,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101097101] = {
 		description = "970de726b4f8f1404ba8b5054d72f58a",
@@ -8750,6 +10061,12 @@
 				6.153,
 				true,
 				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -8915,7 +10232,14 @@
 		type = 1,
 		id = 101099305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101111101] = {
 		description = "9decd08f131a9a989a905e28aaaf6fed",
@@ -9040,6 +10364,12 @@
 				6.153,
 				true,
 				"%"
+			},
+			{
+				14,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -9199,7 +10529,14 @@
 		type = 1,
 		id = 101119305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				14,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101127101] = {
 		description = "07cb510821c2f29cd7a9b891d16a5dd1",
@@ -9300,7 +10637,14 @@
 		type = 1,
 		id = 101127305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101132101] = {
 		description = "e5ae09f88539b2f4e0bc34057fe42fb0",
@@ -9512,6 +10856,12 @@
 				0,
 				false,
 				""
+			},
+			{
+				12,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -9620,6 +10970,12 @@
 				6.152,
 				true,
 				"%"
+			},
+			{
+				24,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -9635,6 +10991,12 @@
 				6.152,
 				true,
 				"%"
+			},
+			{
+				24,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -9743,7 +11105,14 @@
 		type = 1,
 		id = 101139305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101148101] = {
 		description = "45fab0e267e692b8801b04ab5338b17c",
@@ -9850,7 +11219,14 @@
 		type = 1,
 		id = 101148305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				25,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101150101] = {
 		description = "2c8c73655f9d2b7dfedc4c99414355d1",
@@ -10215,13 +11591,263 @@
 			}
 		}
 	},
+	[101150282] = {
+		description = "3e7b07103851908ece5e6aaa0e7c3586",
+		maxLv = 60,
+		type = 1,
+		id = 101150282,
+		extra_param = "",
+		param = {
+			{
+				1440,
+				0,
+				false,
+				"%"
+			},
+			{
+				36.923,
+				0,
+				false,
+				"%"
+			},
+			{
+				1000,
+				0,
+				false,
+				"%"
+			},
+			{
+				25.641,
+				0,
+				false,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			},
+			{
+				45,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				""
+			},
+			{
+				12,
+				0,
+				false,
+				"%"
+			},
+			{
+				25,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				""
+			}
+		}
+	},
 	[101150305] = {
 		description = "7e42f9617d49775920be7a1bcbce2834",
 		maxLv = 60,
 		type = 1,
 		id = 101150305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101156101] = {
+		description = "9a7c5499c73eb260453373c870dbf41f",
+		maxLv = 60,
+		type = 1,
+		id = 101156101,
+		extra_param = "",
+		param = {
+			{
+				508,
+				9.848,
+				true,
+				"%"
+			},
+			{
+				308,
+				6.005,
+				true,
+				"%"
+			}
+		}
+	},
+	[101156201] = {
+		description = "c34460c81f81aff0727cb1aad982d95b",
+		maxLv = 60,
+		type = 1,
+		id = 101156201,
+		extra_param = "",
+		param = {
+			{
+				500,
+				12.82,
+				true,
+				"%"
+			},
+			{
+				500,
+				12.818,
+				true,
+				"%"
+			},
+			{
+				600,
+				15.382,
+				true,
+				"%"
+			},
+			{
+				18,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101156202] = {
+		description = "62e2a649d2c3170d14cf1ba7c55bfebe",
+		maxLv = 60,
+		type = 1,
+		id = 101156202,
+		extra_param = "",
+		param = {
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			},
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			},
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				18,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101156203] = {
+		description = "2949e904e71a0dbdd2931fb980cb35ca",
+		maxLv = 60,
+		type = 1,
+		id = 101156203,
+		extra_param = "",
+		param = {
+			{
+				600,
+				15.384,
+				true,
+				"%"
+			},
+			{
+				1000,
+				25.641,
+				true,
+				"%"
+			},
+			{
+				1400,
+				35.897,
+				true,
+				"%"
+			},
+			{
+				1800,
+				46.153,
+				true,
+				"%"
+			}
+		}
+	},
+	[101156209] = {
+		description = "fe7196c00ab6418ade9a90b485dcd188",
+		maxLv = 60,
+		type = 1,
+		id = 101156209,
+		extra_param = "",
+		param = {
+			{
+				1000,
+				25.636,
+				true,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				""
+			},
+			{
+				5,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101156305] = {
+		description = "d593df85761cc8e3ef90edaeacf0e385",
+		maxLv = 60,
+		type = 1,
+		id = 101156305,
+		extra_param = "",
+		param = {
+			{
+				14,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101158101] = {
 		description = "3c29d9669af85526245a88b1cd60fd54",
@@ -10340,7 +11966,14 @@
 		type = 1,
 		id = 101158305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				10,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101184101] = {
 		description = "13825b1e122822174660ac5b804003b7",
@@ -10510,7 +12143,14 @@
 		type = 1,
 		id = 101184305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101197101] = {
 		description = "62a8bf02b457c3331ebab7c487e757d0",
@@ -10680,7 +12320,14 @@
 		type = 1,
 		id = 101197305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101199101] = {
 		description = "11de12e4172b5e28c59f7a19639619dc",
@@ -10793,6 +12440,12 @@
 				3.46,
 				true,
 				"%"
+			},
+			{
+				14,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -11030,6 +12683,12 @@
 				15.383,
 				true,
 				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -11158,6 +12817,62 @@
 		maxLv = 60,
 		type = 1,
 		id = 106090209,
+		extra_param = "",
+		param = {}
+	},
+	[106110101] = {
+		description = "62e794bea8408ac646a94a0ca47c32c1",
+		maxLv = 60,
+		type = 1,
+		id = 106110101,
+		extra_param = "",
+		param = {}
+	},
+	[106110201] = {
+		description = "bb48f42b517b8bbd3e91cdd6505d12e6",
+		maxLv = 60,
+		type = 1,
+		id = 106110201,
+		extra_param = "",
+		param = {}
+	},
+	[106110202] = {
+		description = "0da5bee49f0cc39a256570641599ed62",
+		maxLv = 60,
+		type = 1,
+		id = 106110202,
+		extra_param = "",
+		param = {}
+	},
+	[106110203] = {
+		description = "afe6a675d2c8ff485c6830277c917000",
+		maxLv = 60,
+		type = 1,
+		id = 106110203,
+		extra_param = "",
+		param = {}
+	},
+	[106110209] = {
+		description = "7e5ba4f47a8317de807b822d5e1ba093",
+		maxLv = 60,
+		type = 1,
+		id = 106110209,
+		extra_param = "",
+		param = {}
+	},
+	[106117101] = {
+		description = "6e44c22f235fae812a33df47923b3cdc",
+		maxLv = 60,
+		type = 1,
+		id = 106117101,
+		extra_param = "",
+		param = {}
+	},
+	[106117202] = {
+		description = "779f16a53a18eb560bb8392883383073",
+		maxLv = 60,
+		type = 1,
+		id = 106117202,
 		extra_param = "",
 		param = {}
 	},
@@ -12172,6 +13887,621 @@
 			{
 				50,
 				50,
+				true,
+				"%"
+			}
+		}
+	},
+	[110200011] = {
+		description = "10055b26a368c2810a60acd652637bf4",
+		maxLv = 1,
+		type = 1,
+		id = 110200011,
+		extra_param = "",
+		param = {
+			{
+				33,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[110200012] = {
+		description = "31bd54d0fad584bd437a0b76c6289f0a",
+		maxLv = 1,
+		type = 1,
+		id = 110200012,
+		extra_param = "",
+		param = {
+			{
+				100,
+				0,
+				false,
+				"%"
+			},
+			{
+				3,
+				0,
+				false,
+				"%"
+			},
+			{
+				3,
+				3,
+				true,
+				"%"
+			},
+			{
+				3,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[110200013] = {
+		description = "04a93717fbc2d5bca09197dc5b665559",
+		maxLv = 1,
+		type = 1,
+		id = 110200013,
+		extra_param = "",
+		param = {
+			{
+				2,
+				2,
+				true,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[110200021] = {
+		description = "30ea749e453887f8910ba01c9bd0a58a",
+		maxLv = 1,
+		type = 1,
+		id = 110200021,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[110200022] = {
+		description = "490db8277dc813abfa2457b206e835db",
+		maxLv = 1,
+		type = 1,
+		id = 110200022,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			},
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[110200023] = {
+		description = "c29fa197ae883ef7aacbba889667f691",
+		maxLv = 1,
+		type = 1,
+		id = 110200023,
+		extra_param = "",
+		param = {
+			{
+				25,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[110200031] = {
+		description = "2a9a943333c1c9a81351f6ce3158fc6b",
+		maxLv = 1,
+		type = 1,
+		id = 110200031,
+		extra_param = "",
+		param = {
+			{
+				33,
+				0,
+				false,
+				"%"
+			},
+			{
+				5,
+				0,
+				false,
+				""
+			},
+			{
+				90,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[110200032] = {
+		description = "46092e2738b3da1181293f8054e51e23",
+		maxLv = 1,
+		type = 1,
+		id = 110200032,
+		extra_param = "",
+		param = {
+			{
+				66,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[110200033] = {
+		description = "f1bdbb1e4830fedf6add68732ff4c26f",
+		maxLv = 1,
+		type = 1,
+		id = 110200033,
+		extra_param = "",
+		param = {
+			{
+				80,
+				80,
+				true,
+				"%"
+			}
+		}
+	},
+	[110210011] = {
+		description = "7bc9e8454a7327d01a0f17f6530d77e5",
+		maxLv = 1,
+		type = 1,
+		id = 110210011,
+		extra_param = "",
+		param = {
+			{
+				3,
+				3,
+				true,
+				"%"
+			},
+			{
+				4,
+				4,
+				true,
+				"%"
+			},
+			{
+				7,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[110210012] = {
+		description = "c75b0b09b73c59c589e9b6b62c3944fc",
+		maxLv = 1,
+		type = 1,
+		id = 110210012,
+		extra_param = "",
+		param = {
+			{
+				100,
+				2.56,
+				true,
+				"%"
+			},
+			{
+				2.564,
+				0.066,
+				true,
+				"%"
+			},
+			{
+				200,
+				5.125,
+				true,
+				"%"
+			},
+			{
+				5.128,
+				0.131,
+				true,
+				"%"
+			}
+		}
+	},
+	[110210013] = {
+		description = "52fad07af7d527f924455feec3078eb2",
+		maxLv = 1,
+		type = 1,
+		id = 110210013,
+		extra_param = "",
+		param = {}
+	},
+	[110210021] = {
+		description = "576ab990606286b9ad7d8c5bf22951f0",
+		maxLv = 1,
+		type = 1,
+		id = 110210021,
+		extra_param = "",
+		param = {
+			{
+				50,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[110210022] = {
+		description = "b6d4d7bea4d09efb4e089f21186955f3",
+		maxLv = 1,
+		type = 1,
+		id = 110210022,
+		extra_param = "",
+		param = {}
+	},
+	[110210023] = {
+		description = "6497f7e8bfa36b5c336d9cb793134272",
+		maxLv = 1,
+		type = 1,
+		id = 110210023,
+		extra_param = "",
+		param = {
+			{
+				10,
+				1,
+				true,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[110210031] = {
+		description = "735c4cd49eae16e578489cd81cf72565",
+		maxLv = 1,
+		type = 1,
+		id = 110210031,
+		extra_param = "",
+		param = {
+			{
+				250,
+				6.41,
+				true,
+				"%"
+			},
+			{
+				6.41,
+				0.164,
+				true,
+				"%"
+			},
+			{
+				500,
+				12.82,
+				true,
+				"%"
+			},
+			{
+				12.821,
+				0.329,
+				true,
+				"%"
+			},
+			{
+				750,
+				19.228,
+				true,
+				"%"
+			},
+			{
+				19.231,
+				0.493,
+				true,
+				"%"
+			},
+			{
+				1000,
+				25.64,
+				true,
+				"%"
+			},
+			{
+				25.641,
+				0.657,
+				true,
+				"%"
+			},
+			{
+				250,
+				6.41,
+				true,
+				"%"
+			},
+			{
+				6.41,
+				0.164,
+				true,
+				"%"
+			},
+			{
+				500,
+				12.82,
+				true,
+				"%"
+			},
+			{
+				12.821,
+				0.329,
+				true,
+				"%"
+			},
+			{
+				750,
+				19.228,
+				true,
+				"%"
+			},
+			{
+				19.231,
+				0.493,
+				true,
+				"%"
+			},
+			{
+				1000,
+				25.64,
+				true,
+				"%"
+			},
+			{
+				25.641,
+				0.657,
+				true,
+				"%"
+			}
+		}
+	},
+	[110210032] = {
+		description = "53f1637e475ad24673b0642672f932c3",
+		maxLv = 1,
+		type = 1,
+		id = 110210032,
+		extra_param = "",
+		param = {
+			{
+				20,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[110210033] = {
+		description = "315f9b559c3f1b08406ae27d114dd514",
+		maxLv = 1,
+		type = 1,
+		id = 110210033,
+		extra_param = "",
+		param = {
+			{
+				24,
+				0,
+				false,
+				"%"
+			},
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			},
+			{
+				10.256,
+				0.263,
+				true,
+				"%"
+			},
+			{
+				800,
+				20.51,
+				true,
+				"%"
+			},
+			{
+				20.513,
+				0.526,
+				true,
+				"%"
+			},
+			{
+				1200,
+				30.765,
+				true,
+				"%"
+			},
+			{
+				30.769,
+				0.789,
+				true,
+				"%"
+			},
+			{
+				1600,
+				41.02,
+				true,
+				"%"
+			},
+			{
+				41.026,
+				1.052,
+				true,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[110220011] = {
+		description = "738dc0f8319345c3c6b36dba13dfa2f9",
+		maxLv = 1,
+		type = 1,
+		id = 110220011,
+		extra_param = "",
+		param = {
+			{
+				3,
+				3,
+				true,
+				"%"
+			}
+		}
+	},
+	[110220012] = {
+		description = "0774e54d1236bef3459e2c0e897b888e",
+		maxLv = 1,
+		type = 1,
+		id = 110220012,
+		extra_param = "",
+		param = {}
+	},
+	[110220013] = {
+		description = "258d1147d7781cedc272c8602b13441f",
+		maxLv = 1,
+		type = 1,
+		id = 110220013,
+		extra_param = "",
+		param = {}
+	},
+	[110220021] = {
+		description = "2c497f340f16ad3d0882ff8f326628f3",
+		maxLv = 1,
+		type = 1,
+		id = 110220021,
+		extra_param = "",
+		param = {}
+	},
+	[110220022] = {
+		description = "e848b35f2f577c03124b82ec11a1e9d4",
+		maxLv = 1,
+		type = 1,
+		id = 110220022,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[110220023] = {
+		description = "1aef298d6cbb3445b8640fa8b3227c8a",
+		maxLv = 1,
+		type = 1,
+		id = 110220023,
+		extra_param = "",
+		param = {}
+	},
+	[110220031] = {
+		description = "c82b12f0ce7d1976b8b11bcf972e805e",
+		maxLv = 1,
+		type = 1,
+		id = 110220031,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[110220032] = {
+		description = "fa144e09b94b1f195d7c67cf5fff4d59",
+		maxLv = 1,
+		type = 1,
+		id = 110220032,
+		extra_param = "",
+		param = {
+			{
+				20,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[110220033] = {
+		description = "6dcacd386ccfb51b179eeb6e7b47e73e",
+		maxLv = 1,
+		type = 1,
+		id = 110220033,
+		extra_param = "",
+		param = {
+			{
+				1500,
+				38.46,
+				true,
+				"%"
+			},
+			{
+				38.462,
+				0.986,
 				true,
 				"%"
 			}
@@ -16630,6 +18960,186 @@
 		extra_param = "",
 		param = {}
 	},
+	[110890011] = {
+		description = "2fcce2c339ad611cde6aef6f16bf3391",
+		maxLv = 1,
+		type = 1,
+		id = 110890011,
+		extra_param = "",
+		param = {}
+	},
+	[110890012] = {
+		description = "38e1e0a11294de0f4f2a4f737877c8dd",
+		maxLv = 1,
+		type = 1,
+		id = 110890012,
+		extra_param = "",
+		param = {
+			{
+				25,
+				25,
+				true,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[110890013] = {
+		description = "1be5d7300f24736b545e651063e8eb89",
+		maxLv = 1,
+		type = 1,
+		id = 110890013,
+		extra_param = "",
+		param = {
+			{
+				0.5,
+				0.5,
+				true,
+				"%"
+			},
+			{
+				0.5,
+				0.5,
+				true,
+				"%"
+			},
+			{
+				600,
+				15.381,
+				true,
+				"%"
+			},
+			{
+				15.385,
+				0.394,
+				true,
+				"%"
+			}
+		}
+	},
+	[110890021] = {
+		description = "5c82dda62ba52f0a87b1ea3657e1d8fb",
+		maxLv = 1,
+		type = 1,
+		id = 110890021,
+		extra_param = "",
+		param = {
+			{
+				2,
+				2,
+				true,
+				"%"
+			},
+			{
+				6,
+				0,
+				false,
+				""
+			},
+			{
+				12,
+				12,
+				true,
+				"%"
+			}
+		}
+	},
+	[110890022] = {
+		description = "d3245f284bd991a763ef48716b412ff0",
+		maxLv = 1,
+		type = 1,
+		id = 110890022,
+		extra_param = "",
+		param = {}
+	},
+	[110890023] = {
+		description = "2d178372763ca4c96abc121b47b567b5",
+		maxLv = 1,
+		type = 1,
+		id = 110890023,
+		extra_param = "",
+		param = {
+			{
+				6,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[110890031] = {
+		description = "0a0f2a17e8147911699dbeb7447c342c",
+		maxLv = 1,
+		type = 1,
+		id = 110890031,
+		extra_param = "",
+		param = {
+			{
+				6,
+				6,
+				true,
+				"%"
+			},
+			{
+				36,
+				36,
+				true,
+				"%"
+			}
+		}
+	},
+	[110890032] = {
+		description = "5790a30e70479ad7214dce3efae773f1",
+		maxLv = 1,
+		type = 1,
+		id = 110890032,
+		extra_param = "",
+		param = {}
+	},
+	[110890033] = {
+		description = "55800a8d07fcdcb13b3ca1b7d8918903",
+		maxLv = 1,
+		type = 1,
+		id = 110890033,
+		extra_param = "",
+		param = {
+			{
+				4,
+				0,
+				false,
+				"%"
+			},
+			{
+				4,
+				4,
+				true,
+				"%"
+			},
+			{
+				10,
+				10,
+				true,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				""
+			},
+			{
+				24,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
 	[110930011] = {
 		description = "7dddf303d18451eae662555abc81ef51",
 		maxLv = 1,
@@ -18449,6 +20959,308 @@
 			}
 		}
 	},
+	[111560011] = {
+		description = "9b0fc137f1bdedcfdc8f7e43c4a7a1fa",
+		maxLv = 1,
+		type = 1,
+		id = 111560011,
+		extra_param = "",
+		param = {
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			},
+			{
+				10.256,
+				0.263,
+				true,
+				"%"
+			}
+		}
+	},
+	[111560012] = {
+		description = "c0efd1e47070c235193a31bbaf0a2e33",
+		maxLv = 1,
+		type = 1,
+		id = 111560012,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				7,
+				0,
+				false,
+				""
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				7,
+				0,
+				false,
+				""
+			},
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				50,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[111560013] = {
+		description = "b1617a712d8377af8231de14f2630f7e",
+		maxLv = 1,
+		type = 1,
+		id = 111560013,
+		extra_param = "",
+		param = {
+			{
+				700,
+				13.459,
+				true,
+				"%"
+			},
+			{
+				175,
+				3.365,
+				true,
+				"%"
+			},
+			{
+				800,
+				15.383,
+				true,
+				"%"
+			},
+			{
+				200,
+				3.846,
+				true,
+				"%"
+			},
+			{
+				200,
+				3.842,
+				true,
+				"%"
+			},
+			{
+				50,
+				0.961,
+				true,
+				"%"
+			},
+			{
+				300,
+				5.767,
+				true,
+				"%"
+			},
+			{
+				75,
+				1.442,
+				true,
+				"%"
+			},
+			{
+				13.462,
+				0.259,
+				true,
+				"%"
+			},
+			{
+				3.365,
+				0.065,
+				true,
+				"%"
+			},
+			{
+				15.385,
+				0.296,
+				true,
+				"%"
+			},
+			{
+				3.846,
+				0.074,
+				true,
+				"%"
+			},
+			{
+				3.846,
+				0.074,
+				true,
+				"%"
+			},
+			{
+				0.962,
+				0.018,
+				true,
+				"%"
+			},
+			{
+				5.769,
+				0.111,
+				true,
+				"%"
+			},
+			{
+				1.442,
+				0.028,
+				true,
+				"%"
+			}
+		}
+	},
+	[111560021] = {
+		description = "8e12b0a67fe1ae11caae4ce1df9fe236",
+		maxLv = 1,
+		type = 1,
+		id = 111560021,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				7,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[111560022] = {
+		description = "ebd4192f1566a9cbdc853b81f82323ff",
+		maxLv = 1,
+		type = 1,
+		id = 111560022,
+		extra_param = "",
+		param = {
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				""
+			},
+			{
+				50,
+				0,
+				false,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[111560023] = {
+		description = "56ad9bfa2cd818f6e5cca64c4fa1685c",
+		maxLv = 1,
+		type = 1,
+		id = 111560023,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[111560031] = {
+		description = "514c9a265ff430949e1bb29e3e14761e",
+		maxLv = 1,
+		type = 1,
+		id = 111560031,
+		extra_param = "",
+		param = {}
+	},
+	[111560032] = {
+		description = "c81a36c0b32376060903988904351916",
+		maxLv = 1,
+		type = 1,
+		id = 111560032,
+		extra_param = "",
+		param = {
+			{
+				350,
+				6.73,
+				true,
+				"%"
+			},
+			{
+				6.731,
+				0.129,
+				true,
+				"%"
+			},
+			{
+				6,
+				6,
+				true,
+				"%"
+			}
+		}
+	},
+	[111560033] = {
+		description = "ef803f4870e6d3317b4ee1f24ea99d1e",
+		maxLv = 1,
+		type = 1,
+		id = 111560033,
+		extra_param = "",
+		param = {
+			{
+				30,
+				0.769,
+				true,
+				"%"
+			},
+			{
+				0.769,
+				0.02,
+				true,
+				"%"
+			}
+		}
+	},
 	[111580011] = {
 		description = "4543ceaf5d0cc3313ad0b7d9f240f3d3",
 		maxLv = 1,
@@ -19438,7 +22250,20 @@
 		type = 1,
 		id = 200000023,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				10,
+				10,
+				false,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[200000024] = {
 		description = "cf67ea187a1dc8f8d761729ae40243c7",
@@ -21124,926 +23949,79 @@
 		extra_param = "",
 		param = {}
 	},
-	[211011101] = {
-		description = "8508c419d3ff4e4ffcb16f34bdaea964",
-		maxLv = 60,
+	[200001092] = {
+		description = "45948565a4457276dd2a9ce0aed493bc",
+		maxLv = 1,
 		type = 1,
-		id = 211011101,
-		extra_param = "",
-		param = {
-			{
-				246,
-				4.803,
-				true,
-				"%"
-			}
-		}
-	},
-	[211011201] = {
-		description = "4f41615487afb7c918c3679408359606",
-		maxLv = 60,
-		type = 1,
-		id = 211011201,
-		extra_param = "",
-		param = {
-			{
-				250,
-				6.41,
-				true,
-				"%"
-			},
-			{
-				70,
-				0,
-				false,
-				"%"
-			},
-			{
-				15,
-				0,
-				false,
-				"%"
-			},
-			{
-				1,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211011202] = {
-		description = "4626ce9e4ce4a253f30e0ea467ca8931",
-		maxLv = 60,
-		type = 1,
-		id = 211011202,
-		extra_param = "",
-		param = {
-			{
-				360,
-				9.23,
-				true,
-				"%"
-			},
-			{
-				1,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211011203] = {
-		description = "93b601fab4d31ef877a40449201e2eeb",
-		maxLv = 60,
-		type = 1,
-		id = 211011203,
-		extra_param = "",
-		param = {
-			{
-				600,
-				15.384,
-				true,
-				"%"
-			},
-			{
-				20,
-				0,
-				false,
-				"%"
-			}
-		}
-	},
-	[211013101] = {
-		description = "1ab3854f5f2f337f0fa42ae0409c2a32",
-		maxLv = 60,
-		type = 1,
-		id = 211013101,
-		extra_param = "",
-		param = {
-			{
-				415,
-				8.025,
-				true,
-				"%"
-			},
-			{
-				15,
-				0,
-				false,
-				"%"
-			},
-			{
-				4,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211013111] = {
-		description = "4618d19e425a1af399dc0cbf9e861f3e",
-		maxLv = 60,
-		type = 1,
-		id = 211013111,
-		extra_param = "",
-		param = {
-			{
-				415,
-				8.025,
-				true,
-				"%"
-			},
-			{
-				15,
-				0,
-				false,
-				"%"
-			},
-			{
-				4,
-				0,
-				false,
-				""
-			},
-			{
-				8,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211013201] = {
-		description = "6d573e18a7c5b477217a155695f269fc",
-		maxLv = 60,
-		type = 1,
-		id = 211013201,
-		extra_param = "",
-		param = {
-			{
-				20,
-				0,
-				false,
-				"%"
-			},
-			{
-				4,
-				0,
-				false,
-				""
-			},
-			{
-				600,
-				15.381,
-				true,
-				"%"
-			}
-		}
-	},
-	[211013202] = {
-		description = "79c8d86ae196643d31b875ba6a62f63d",
-		maxLv = 60,
-		type = 1,
-		id = 211013202,
-		extra_param = "",
-		param = {
-			{
-				20,
-				0,
-				false,
-				"%"
-			},
-			{
-				4,
-				0,
-				false,
-				""
-			},
-			{
-				3.5,
-				0,
-				false,
-				""
-			},
-			{
-				500,
-				12.82,
-				true,
-				"%"
-			}
-		}
-	},
-	[211013203] = {
-		description = "9afd612fb92eac80ded5098ff866a615",
-		maxLv = 60,
-		type = 1,
-		id = 211013203,
-		extra_param = "",
-		param = {
-			{
-				20,
-				0,
-				false,
-				"%"
-			},
-			{
-				4,
-				0,
-				false,
-				""
-			},
-			{
-				700,
-				17.947,
-				true,
-				"%"
-			}
-		}
-	},
-	[211019101] = {
-		description = "72d05c30de5e7cd285569c2999873892",
-		maxLv = 60,
-		type = 1,
-		id = 211019101,
-		extra_param = "",
-		param = {
-			{
-				229,
-				4.442,
-				true,
-				"%"
-			}
-		}
-	},
-	[211019201] = {
-		description = "98141f0a3cd779823d12995013d90c79",
-		maxLv = 60,
-		type = 1,
-		id = 211019201,
-		extra_param = "",
-		param = {
-			{
-				220,
-				5.64,
-				true,
-				"%"
-			},
-			{
-				60,
-				1.538,
-				true,
-				"%"
-			},
-			{
-				1,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211019202] = {
-		description = "6408d50424da44489e561de840cbbf43",
-		maxLv = 60,
-		type = 1,
-		id = 211019202,
-		extra_param = "",
-		param = {
-			{
-				630,
-				16.153,
-				true,
-				"%"
-			},
-			{
-				1,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211019203] = {
-		description = "4ed9b11478261fd730731901a5a747c5",
-		maxLv = 60,
-		type = 1,
-		id = 211019203,
-		extra_param = "",
-		param = {
-			{
-				400,
-				10.256,
-				true,
-				"%"
-			},
-			{
-				480,
-				12.304,
-				true,
-				"%"
-			},
-			{
-				640,
-				16.41,
-				true,
-				"%"
-			}
-		}
-	},
-	[211019233] = {
-		description = "300b9f7e36673be488f9bb1bc0ecf609",
-		maxLv = 60,
-		type = 1,
-		id = 211019233,
-		extra_param = "",
-		param = {
-			{
-				750,
-				19.23,
-				true,
-				"%"
-			},
-			{
-				1050,
-				26.923,
-				true,
-				"%"
-			},
-			{
-				1500,
-				38.461,
-				true,
-				"%"
-			}
-		}
-	},
-	[211027101] = {
-		description = "7d37758e01e40dab7c28348aff9fc30f",
-		maxLv = 60,
-		type = 1,
-		id = 211027101,
-		extra_param = "",
-		param = {
-			{
-				379,
-				7.329,
-				true,
-				"%"
-			}
-		}
-	},
-	[211027201] = {
-		description = "c25ac89bef07477e4a5edef759f2d376",
-		maxLv = 60,
-		type = 1,
-		id = 211027201,
-		extra_param = "",
-		param = {
-			{
-				400,
-				10.256,
-				true,
-				"%"
-			},
-			{
-				1,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211027202] = {
-		description = "133ebe6083f097761b997d7fc72f8037",
-		maxLv = 60,
-		type = 1,
-		id = 211027202,
-		extra_param = "",
-		param = {
-			{
-				700,
-				17.948,
-				true,
-				"%"
-			},
-			{
-				1400,
-				35.896,
-				true,
-				"%"
-			},
-			{
-				1,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211027203] = {
-		description = "a9aea0971e00bce5510bdd34a8e944ba",
-		maxLv = 60,
-		type = 1,
-		id = 211027203,
-		extra_param = "",
-		param = {
-			{
-				900,
-				23.075,
-				true,
-				"%"
-			},
-			{
-				4.5,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211027221] = {
-		description = "0fcee7ab50c1ca62c29fbfc25e48612d",
-		maxLv = 60,
-		type = 1,
-		id = 211027221,
+		id = 200001092,
 		extra_param = "",
 		param = {
 			{
 				100,
-				0,
-				false,
-				"%"
-			},
-			{
-				850,
-				21.794,
-				true,
-				"%"
-			},
-			{
-				6,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211028101] = {
-		description = "76b56c8d3a56cc1701f8d69b6767ad99",
-		maxLv = 60,
-		type = 1,
-		id = 211028101,
-		extra_param = "",
-		param = {
-			{
-				701,
-				13.575,
-				true,
-				"%"
-			},
-			{
-				15,
-				0,
+				2.564,
 				false,
 				"%"
 			}
 		}
 	},
-	[211028201] = {
-		description = "0c42186adbef0751964a4843a90f826b",
-		maxLv = 60,
+	[200001093] = {
+		description = "1bf57c26c2e2f67f7ff36e8910f65a74",
+		maxLv = 1,
 		type = 1,
-		id = 211028201,
+		id = 200001093,
 		extra_param = "",
 		param = {
-			{
-				600,
-				15.384,
-				true,
-				"%"
-			},
-			{
-				1000,
-				25.64,
-				true,
-				"%"
-			}
-		}
-	},
-	[211028202] = {
-		description = "5ba90bfbbdd4f3de6d7cea52b3c3106f",
-		maxLv = 60,
-		type = 1,
-		id = 211028202,
-		extra_param = "",
-		param = {
-			{
-				800,
-				20.511,
-				true,
-				"%"
-			},
-			{
-				1500,
-				38.46,
-				true,
-				"%"
-			}
-		}
-	},
-	[211028203] = {
-		description = "478768c53180cef3d10313c7f40ac041",
-		maxLv = 60,
-		type = 1,
-		id = 211028203,
-		extra_param = "",
-		param = {
-			{
-				1000,
-				25.641,
-				true,
-				"%"
-			},
-			{
-				2000,
-				51.281,
-				true,
-				"%"
-			}
-		}
-	},
-	[211032101] = {
-		description = "2d2ce474c1a63636bf2647ea5ef4ff4d",
-		maxLv = 60,
-		type = 1,
-		id = 211032101,
-		extra_param = "",
-		param = {
-			{
-				333,
-				6.484,
-				true,
-				"%"
-			}
-		}
-	},
-	[211032106] = {
-		description = "3ad2972d6626d513a6c1ad835365dd1a",
-		maxLv = 60,
-		type = 1,
-		id = 211032106,
-		extra_param = "",
-		param = {
-			{
-				333,
-				6.484,
-				true,
-				"%"
-			},
-			{
-				471,
-				9.131,
-				true,
-				"%"
-			}
-		}
-	},
-	[211032201] = {
-		description = "89cc06a4c0032a5a0562cef8f180ebe5",
-		maxLv = 60,
-		type = 1,
-		id = 211032201,
-		extra_param = "",
-		param = {
-			{
-				400,
-				10.256,
-				true,
-				"%"
-			}
-		}
-	},
-	[211032202] = {
-		description = "fe666b6c1d7e782e906cb94e788d92e6",
-		maxLv = 60,
-		type = 1,
-		id = 211032202,
-		extra_param = "",
-		param = {
-			{
-				800,
-				20.512,
-				true,
-				"%"
-			},
-			{
-				960,
-				24.615,
-				true,
-				"%"
-			},
-			{
-				960,
-				24.615,
-				true,
-				"%"
-			},
-			{
-				960,
-				24.614,
-				true,
-				"%"
-			}
-		}
-	},
-	[211032203] = {
-		description = "92051d141c7d3fad724e373a0c04a03d",
-		maxLv = 60,
-		type = 1,
-		id = 211032203,
-		extra_param = "",
-		param = {
-			{
-				240,
-				6.153,
-				true,
-				"%"
-			},
-			{
-				1200,
-				30.769,
-				true,
-				"%"
-			},
-			{
-				1800,
-				46.152,
-				true,
-				"%"
-			},
-			{
-				2800,
-				71.793,
-				true,
-				"%"
-			}
-		}
-	},
-	[211033101] = {
-		description = "0657d069ed8a744537ddddf80ba5b4d7",
-		maxLv = 60,
-		type = 1,
-		id = 211033101,
-		extra_param = "",
-		param = {
-			{
-				229,
-				4.512,
-				true,
-				"%"
-			}
-		}
-	},
-	[211033201] = {
-		description = "852910124488972917321f49c56980b8",
-		maxLv = 60,
-		type = 1,
-		id = 211033201,
-		extra_param = "",
-		param = {
-			{
-				1200,
-				30.766,
-				true,
-				"%"
-			}
-		}
-	},
-	[211033202] = {
-		description = "bafd97c1491a38cd29db702aadc0eb74",
-		maxLv = 60,
-		type = 1,
-		id = 211033202,
-		extra_param = "",
-		param = {
-			{
-				600,
-				15.383,
-				true,
-				"%"
-			},
 			{
 				10,
 				0,
 				false,
-				""
-			}
-		}
-	},
-	[211033203] = {
-		description = "74cda5c6b61d60eafd94e3cac88e3c0f",
-		maxLv = 60,
-		type = 1,
-		id = 211033203,
-		extra_param = "",
-		param = {
-			{
-				1600,
-				41.022,
-				true,
 				"%"
 			}
 		}
 	},
-	[211033231] = {
-		description = "6b3c1287b76303658bfb7a65c9a560ab",
-		maxLv = 60,
+	[200001094] = {
+		description = "78739bc767f43a2cf2ee29318f0725b7",
+		maxLv = 1,
 		type = 1,
-		id = 211033231,
+		id = 200001094,
 		extra_param = "",
-		param = {
-			{
-				1600,
-				41.022,
-				true,
-				"%"
-			},
-			{
-				5,
-				0,
-				false,
-				""
-			}
-		}
+		param = {}
 	},
-	[211038101] = {
-		description = "a9d55358b946cc750d69c2ed56a52dcf",
-		maxLv = 60,
+	[200001095] = {
+		description = "aee06882fb6befe24aa7c6e211e6ba00",
+		maxLv = 1,
 		type = 1,
-		id = 211038101,
+		id = 200001095,
 		extra_param = "",
 		param = {
 			{
-				246,
-				4.803,
-				true,
-				"%"
-			}
-		}
-	},
-	[211038201] = {
-		description = "918ae5591775fe0e010fe75577be0195",
-		maxLv = 60,
-		type = 1,
-		id = 211038201,
-		extra_param = "",
-		param = {
-			{
-				240,
-				6.153,
-				true,
-				"%"
-			},
-			{
-				1,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211038202] = {
-		description = "282d9be1c10b192976f48fd515287786",
-		maxLv = 60,
-		type = 1,
-		id = 211038202,
-		extra_param = "",
-		param = {
-			{
-				480,
-				12.303,
-				true,
-				"%"
-			}
-		}
-	},
-	[211038203] = {
-		description = "06da3aff1491dcd38e3b1467698e35a4",
-		maxLv = 60,
-		type = 1,
-		id = 211038203,
-		extra_param = "",
-		param = {
-			{
-				600,
-				15.384,
-				true,
-				"%"
-			},
-			{
-				1000,
-				25.64,
-				true,
-				"%"
-			},
-			{
-				1400,
-				35.896,
-				true,
-				"%"
-			},
-			{
-				1800,
-				46.151,
-				true,
-				"%"
-			}
-		}
-	},
-	[211038221] = {
-		description = "b745b142cea1f519aa095c31b142affc",
-		maxLv = 60,
-		type = 1,
-		id = 211038221,
-		extra_param = "",
-		param = {
-			{
-				600,
-				15.384,
-				true,
-				"%"
-			}
-		}
-	},
-	[211039101] = {
-		description = "079bf1b0fdf8a8685eddad8e1afb0d33",
-		maxLv = 60,
-		type = 1,
-		id = 211039101,
-		extra_param = "",
-		param = {
-			{
-				247,
-				4.804,
-				true,
-				"%"
-			}
-		}
-	},
-	[211039203] = {
-		description = "c7a8e6d3a43fa1b363aa6cbca9704631",
-		maxLv = 60,
-		type = 1,
-		id = 211039203,
-		extra_param = "",
-		param = {
-			{
-				1500,
-				38.461,
-				true,
-				"%"
-			}
-		}
-	},
-	[211041101] = {
-		description = "6346f7a5bd1876817a52918d9402498e",
-		maxLv = 60,
-		type = 1,
-		id = 211041101,
-		extra_param = "",
-		param = {
-			{
-				784,
-				15.092,
-				true,
-				"%"
-			}
-		}
-	},
-	[211041201] = {
-		description = "89470fbda0a018479241e9061e4abf98",
-		maxLv = 60,
-		type = 1,
-		id = 211041201,
-		extra_param = "",
-		param = {
-			{
-				1200,
-				30.769,
-				true,
-				"%"
-			},
-			{
-				12,
+				50,
 				0,
 				false,
 				"%"
 			},
 			{
-				1400,
-				35.897,
-				true,
+				35,
+				0,
+				false,
+				"%"
+			},
+			{
+				50,
+				0,
+				false,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			},
+			{
+				50,
+				0,
+				false,
 				"%"
 			},
 			{
@@ -22054,670 +24032,58 @@
 			}
 		}
 	},
-	[211041202] = {
-		description = "569b4b105fff40ab7f099668bd0efab6",
-		maxLv = 60,
+	[200001096] = {
+		description = "95436bf39b5b66f2085a46e93942a46d",
+		maxLv = 1,
 		type = 1,
-		id = 211041202,
+		id = 200001096,
 		extra_param = "",
 		param = {
 			{
-				1600,
-				41.025,
-				true,
-				"%"
-			},
-			{
-				12,
+				50,
 				0,
 				false,
 				"%"
 			},
 			{
-				1900,
-				48.717,
-				true,
-				"%"
-			},
-			{
-				20,
+				35,
 				0,
 				false,
 				"%"
 			},
 			{
-				6,
+				50,
 				0,
 				false,
-				""
-			}
-		}
-	},
-	[211041203] = {
-		description = "1c0737dac5700a32bc9b297d69cd6310",
-		maxLv = 60,
-		type = 1,
-		id = 211041203,
-		extra_param = "",
-		param = {
-			{
-				700,
-				17.948,
-				true,
 				"%"
 			},
 			{
-				2000,
-				51.282,
-				true,
+				30,
+				0,
+				false,
 				"%"
 			},
 			{
-				2400,
-				61.537,
-				true,
+				50,
+				0,
+				false,
 				"%"
 			},
 			{
-				12,
+				50,
 				0,
 				false,
 				"%"
 			}
 		}
 	},
-	[211042101] = {
-		description = "e69cb031f9e7eef98750b68709f1d9a3",
-		maxLv = 60,
+	[200001097] = {
+		description = "b3556280438447ff7989949e459799bf",
+		maxLv = 1,
 		type = 1,
-		id = 211042101,
+		id = 200001097,
 		extra_param = "",
 		param = {
-			{
-				700,
-				13.571,
-				true,
-				"%"
-			},
-			{
-				420,
-				10.758,
-				true,
-				"%"
-			}
-		}
-	},
-	[211042201] = {
-		description = "dad99e41373bf9c516186cd28c6fd359",
-		maxLv = 60,
-		type = 1,
-		id = 211042201,
-		extra_param = "",
-		param = {
-			{
-				2400,
-				61.52,
-				true,
-				"%"
-			},
-			{
-				12,
-				0,
-				false,
-				"%"
-			},
-			{
-				36,
-				0,
-				false,
-				"%"
-			}
-		}
-	},
-	[211042202] = {
-		description = "4497f2a19399573244e1e297b22a6c79",
-		maxLv = 60,
-		type = 1,
-		id = 211042202,
-		extra_param = "",
-		param = {
-			{
-				1200,
-				30.763,
-				true,
-				"%"
-			},
-			{
-				120,
-				0,
-				false,
-				"%"
-			},
-			{
-				1200,
-				30.768,
-				true,
-				"%"
-			},
-			{
-				180,
-				0,
-				false,
-				"%"
-			},
-			{
-				1600,
-				41.013,
-				true,
-				"%"
-			}
-		}
-	},
-	[211042203] = {
-		description = "1e137b1279331e89aa171465fe1655f4",
-		maxLv = 60,
-		type = 1,
-		id = 211042203,
-		extra_param = "",
-		param = {
-			{
-				1200,
-				30.76,
-				true,
-				"%"
-			},
-			{
-				1200,
-				30.768,
-				true,
-				"%"
-			},
-			{
-				1600,
-				41.002,
-				true,
-				"%"
-			}
-		}
-	},
-	[211048101] = {
-		description = "3fc1554b082ee8de64ea95a3c0636e77",
-		maxLv = 60,
-		type = 1,
-		id = 211048101,
-		extra_param = "",
-		param = {
-			{
-				196,
-				3.84,
-				true,
-				"%"
-			},
-			{
-				5,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211048201] = {
-		description = "cc263126ffbf570aec2e3494a01f1abe",
-		maxLv = 60,
-		type = 1,
-		id = 211048201,
-		extra_param = "",
-		param = {
-			{
-				270,
-				6.923,
-				true,
-				"%"
-			},
-			{
-				4,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211048202] = {
-		description = "4485cb19667611fdeda8ecc47b57985c",
-		maxLv = 60,
-		type = 1,
-		id = 211048202,
-		extra_param = "",
-		param = {
-			{
-				800,
-				20.508,
-				true,
-				"%"
-			}
-		}
-	},
-	[211048203] = {
-		description = "b644eec65020d2a5861a581548a5fc6b",
-		maxLv = 60,
-		type = 1,
-		id = 211048203,
-		extra_param = "",
-		param = {
-			{
-				96,
-				2.461,
-				true,
-				"%"
-			}
-		}
-	},
-	[211048211] = {
-		description = "b548b4aee1f1edfeca271edc5c67348a",
-		maxLv = 60,
-		type = 1,
-		id = 211048211,
-		extra_param = "",
-		param = {
-			{
-				270,
-				6.923,
-				true,
-				"%"
-			},
-			{
-				4,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211050101] = {
-		description = "ce80438b2238adb48f8af5ddf9b4262c",
-		maxLv = 60,
-		type = 1,
-		id = 211050101,
-		extra_param = "",
-		param = {
-			{
-				178,
-				3.48,
-				true,
-				"%"
-			},
-			{
-				1,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211050201] = {
-		description = "83a5c72e3f2b0591edc0313953a14b69",
-		maxLv = 60,
-		type = 1,
-		id = 211050201,
-		extra_param = "",
-		param = {
-			{
-				163,
-				4.204,
-				true,
-				"%"
-			},
-			{
-				1,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211050202] = {
-		description = "2c27e59a0944869b34ecfb864e6333b2",
-		maxLv = 60,
-		type = 1,
-		id = 211050202,
-		extra_param = "",
-		param = {
-			{
-				270,
-				6.922,
-				true,
-				"%"
-			},
-			{
-				1,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211050203] = {
-		description = "5dfb7d327168cc099fc3074f2bf4289f",
-		maxLv = 60,
-		type = 1,
-		id = 211050203,
-		extra_param = "",
-		param = {
-			{
-				100,
-				2.564,
-				true,
-				"%"
-			},
-			{
-				200,
-				5.124,
-				true,
-				"%"
-			},
-			{
-				300,
-				7.692,
-				true,
-				"%"
-			}
-		}
-	},
-	[211050221] = {
-		description = "d4eae99a98cf5b0684b4fca381b1e73f",
-		maxLv = 60,
-		type = 1,
-		id = 211050221,
-		extra_param = "",
-		param = {
-			{
-				360,
-				9.229,
-				true,
-				"%"
-			},
-			{
-				6,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211058101] = {
-		description = "34da0bb7fac209de3424f83e529ec96d",
-		maxLv = 60,
-		type = 1,
-		id = 211058101,
-		extra_param = "",
-		param = {
-			{
-				391,
-				7.569,
-				true,
-				"%"
-			},
-			{
-				3,
-				0,
-				false,
-				"%"
-			},
-			{
-				5,
-				0,
-				false,
-				""
-			},
-			{
-				5,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211058201] = {
-		description = "88209bae8b139a0342e7685e397abcbb",
-		maxLv = 60,
-		type = 1,
-		id = 211058201,
-		extra_param = "",
-		param = {
-			{
-				200,
-				5.128,
-				true,
-				"%"
-			},
-			{
-				400,
-				10.256,
-				true,
-				"%"
-			},
-			{
-				600,
-				15.384,
-				true,
-				"%"
-			}
-		}
-	},
-	[211058202] = {
-		description = "7dbfb03405467615dfa11e96449e1c49",
-		maxLv = 60,
-		type = 1,
-		id = 211058202,
-		extra_param = "",
-		param = {
-			{
-				200,
-				5.128,
-				true,
-				"%"
-			},
-			{
-				400,
-				10.256,
-				true,
-				"%"
-			},
-			{
-				600,
-				15.384,
-				true,
-				"%"
-			}
-		}
-	},
-	[211058203] = {
-		description = "1ef10ca75ab8493398e2bc2543ddf6dc",
-		maxLv = 60,
-		type = 1,
-		id = 211058203,
-		extra_param = "",
-		param = {
-			{
-				420,
-				10.768,
-				true,
-				"%"
-			}
-		}
-	},
-	[211059101] = {
-		description = "a1d2646a4aefe2e9849a1f2b70bd3283",
-		maxLv = 60,
-		type = 1,
-		id = 211059101,
-		extra_param = "",
-		param = {
-			{
-				284,
-				5.524,
-				true,
-				"%"
-			}
-		}
-	},
-	[211059201] = {
-		description = "40ed80f05d9b5280fa927b04b47c74fe",
-		maxLv = 60,
-		type = 1,
-		id = 211059201,
-		extra_param = "",
-		param = {
-			{
-				400,
-				10.255,
-				true,
-				"%"
-			}
-		}
-	},
-	[211059202] = {
-		description = "f67a49e950111aa84a582461ccbb68a4",
-		maxLv = 60,
-		type = 1,
-		id = 211059202,
-		extra_param = "",
-		param = {
-			{
-				350,
-				8.973,
-				true,
-				"%"
-			},
-			{
-				500,
-				12.82,
-				true,
-				"%"
-			}
-		}
-	},
-	[211059203] = {
-		description = "c65a2325b3d4217a47f8af240e6c8c8a",
-		maxLv = 60,
-		type = 1,
-		id = 211059203,
-		extra_param = "",
-		param = {
-			{
-				160,
-				4.102,
-				true,
-				"%"
-			},
-			{
-				600,
-				15.384,
-				true,
-				"%"
-			},
-			{
-				20,
-				0,
-				false,
-				"%"
-			}
-		}
-	},
-	[211066101] = {
-		description = "19724bda0d530ba151279cd69e57366c",
-		maxLv = 60,
-		type = 1,
-		id = 211066101,
-		extra_param = "",
-		param = {
-			{
-				361,
-				6.964,
-				true,
-				"%"
-			}
-		}
-	},
-	[211066202] = {
-		description = "68d40f155991da3d584c014b1e0b77a9",
-		maxLv = 60,
-		type = 1,
-		id = 211066202,
-		extra_param = "",
-		param = {
-			{
-				700,
-				17.948,
-				true,
-				"%"
-			},
-			{
-				300,
-				7.692,
-				true,
-				"%"
-			}
-		}
-	},
-	[211066203] = {
-		description = "61255375f1d0263fc19d443f1351d51b",
-		maxLv = 60,
-		type = 1,
-		id = 211066203,
-		extra_param = "",
-		param = {
-			{
-				1800,
-				46.152,
-				true,
-				"%"
-			}
-		}
-	},
-	[211066231] = {
-		description = "b8537c7f2ebdab65a6f02f188aabfd0a",
-		maxLv = 60,
-		type = 1,
-		id = 211066231,
-		extra_param = "",
-		param = {
-			{
-				2700,
-				69.229,
-				true,
-				"%"
-			}
-		}
-	},
-	[211080101] = {
-		description = "866b10a21820cace527be154e5703845",
-		maxLv = 60,
-		type = 1,
-		id = 211080101,
-		extra_param = "",
-		param = {
-			{
-				355,
-				6.848,
-				true,
-				"%"
-			}
-		}
-	},
-	[211080111] = {
-		description = "5ca29f944731130b558fa9d0d0afcb85",
-		maxLv = 60,
-		type = 1,
-		id = 211080111,
-		extra_param = "",
-		param = {
-			{
-				355,
-				6.848,
-				true,
-				"%"
-			},
 			{
 				2,
 				0,
@@ -22726,283 +24092,125 @@
 			}
 		}
 	},
-	[211080201] = {
-		description = "2dd6963f7c5f676447dedcb2125a04a2",
-		maxLv = 60,
+	[200001098] = {
+		description = "5952b42bff7716827fe848f7dffd2954",
+		maxLv = 1,
 		type = 1,
-		id = 211080201,
+		id = 200001098,
 		extra_param = "",
 		param = {
 			{
-				400,
-				10.256,
-				true,
-				"%"
-			},
-			{
-				3,
+				1,
 				0,
 				false,
 				""
-			}
-		}
-	},
-	[211080202] = {
-		description = "e1c9e89577777b8fdd70839955e2d040",
-		maxLv = 60,
-		type = 1,
-		id = 211080202,
-		extra_param = "",
-		param = {
-			{
-				720,
-				18.457,
-				true,
-				"%"
-			}
-		}
-	},
-	[211080203] = {
-		description = "1654288f8770e6b69f1ed0cbf9792466",
-		maxLv = 60,
-		type = 1,
-		id = 211080203,
-		extra_param = "",
-		param = {
-			{
-				650,
-				16.666,
-				true,
-				"%"
-			}
-		}
-	},
-	[211081101] = {
-		description = "45d2fde3e9538ec869ead834ad61fe03",
-		maxLv = 60,
-		type = 1,
-		id = 211081101,
-		extra_param = "",
-		param = {
-			{
-				596,
-				11.534,
-				true,
-				"%"
 			},
 			{
-				500,
-				9.614,
-				true,
-				"%"
-			},
-			{
-				90,
-				2.307,
-				true,
-				"%"
-			}
-		}
-	},
-	[211081201] = {
-		description = "f612960249563fafdbb9058e98d2a100",
-		maxLv = 60,
-		type = 1,
-		id = 211081201,
-		extra_param = "",
-		param = {
-			{
-				2000,
-				51.281,
-				true,
-				"%"
-			},
-			{
-				700,
-				17.948,
-				true,
-				"%"
-			},
-			{
-				2,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211081202] = {
-		description = "81e08c9ca13949769affb57b6c888216",
-		maxLv = 60,
-		type = 1,
-		id = 211081202,
-		extra_param = "",
-		param = {
-			{
-				1600,
-				41.025,
-				true,
-				"%"
-			},
-			{
-				400,
-				10.256,
-				true,
-				"%"
-			}
-		}
-	},
-	[211081203] = {
-		description = "18e7ff5d305f35d538bd997c7732a7d8",
-		maxLv = 60,
-		type = 1,
-		id = 211081203,
-		extra_param = "",
-		param = {
-			{
-				1200,
-				30.769,
-				true,
-				"%"
-			}
-		}
-	},
-	[211084101] = {
-		description = "1794625509a4103fcf626a1595cc8e87",
-		maxLv = 60,
-		type = 1,
-		id = 211084101,
-		extra_param = "",
-		param = {
-			{
-				188,
-				3.675,
-				true,
-				"%"
-			}
-		}
-	},
-	[211084201] = {
-		description = "f3ef4a73c680d887e27c742a24729771",
-		maxLv = 60,
-		type = 1,
-		id = 211084201,
-		extra_param = "",
-		param = {
-			{
-				180,
-				4.612,
-				true,
-				"%"
-			},
-			{
-				240,
-				6.152,
-				true,
-				"%"
-			}
-		}
-	},
-	[211084202] = {
-		description = "998aca58437c5917b1f30866476238fa",
-		maxLv = 60,
-		type = 1,
-		id = 211084202,
-		extra_param = "",
-		param = {
-			{
-				300,
-				7.691,
-				true,
-				"%"
-			},
-			{
-				100,
-				0,
+				7000,
+				179.487,
 				false,
 				"%"
 			}
 		}
 	},
-	[211084203] = {
-		description = "b0448c3d4b4ded5346faba2682089242",
-		maxLv = 60,
+	[200001099] = {
+		description = "90d584e7cd814e0c6972c879dc31decf",
+		maxLv = 1,
 		type = 1,
-		id = 211084203,
+		id = 200001099,
 		extra_param = "",
 		param = {
 			{
-				500,
-				12.82,
-				true,
-				"%"
-			},
-			{
-				800,
-				20.51,
-				true,
+				7000,
+				179.487,
+				false,
 				"%"
 			}
 		}
 	},
-	[211084212] = {
-		description = "114bc70d03faa8ce4647d788bae676f1",
-		maxLv = 60,
+	[200001100] = {
+		description = "90f0f6c274f4fd10475d2a16cfbd8008",
+		maxLv = 1,
 		type = 1,
-		id = 211084212,
+		id = 200001100,
 		extra_param = "",
 		param = {
-			{
-				180,
-				4.612,
-				true,
-				"%"
-			},
-			{
-				240,
-				6.152,
-				true,
-				"%"
-			}
-		}
-	},
-	[211093101] = {
-		description = "e9a0906650f27812ddf1f18a64b6d8bc",
-		maxLv = 60,
-		type = 1,
-		id = 211093101,
-		extra_param = "",
-		param = {
-			{
-				317,
-				6.127,
-				true,
-				"%"
-			}
-		}
-	},
-	[211093231] = {
-		description = "73b58c945adda3cd10980e30b0a625a7",
-		maxLv = 60,
-		type = 1,
-		id = 211093231,
-		extra_param = "",
-		param = {
-			{
-				1200,
-				30.768,
-				true,
-				"%"
-			},
-			{
-				1100,
-				28.205,
-				true,
-				"%"
-			},
 			{
 				30,
 				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[200001101] = {
+		description = "9eccf6f88ed8d83701a76a30b6348690",
+		maxLv = 1,
+		type = 1,
+		id = 200001101,
+		extra_param = "",
+		param = {
+			{
+				50,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[200001102] = {
+		description = "e0f642871c128a0e190d21eb30178f58",
+		maxLv = 1,
+		type = 1,
+		id = 200001102,
+		extra_param = "",
+		param = {}
+	},
+	[200001103] = {
+		description = "08a76965278c9e0c591a2fa44f9c2729",
+		maxLv = 1,
+		type = 1,
+		id = 200001103,
+		extra_param = "",
+		param = {}
+	},
+	[200001104] = {
+		description = "7a977f74b428791be35243f4ec3f4a22",
+		maxLv = 1,
+		type = 1,
+		id = 200001104,
+		extra_param = "",
+		param = {
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				35,
+				0,
+				false,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[200001105] = {
+		description = "1c20251120b59bd5c179d4c2f1729a35",
+		maxLv = 1,
+		type = 1,
+		id = 200001105,
+		extra_param = "",
+		param = {
+			{
+				20,
+				20,
 				false,
 				"%"
 			},
@@ -23010,264 +24218,6 @@
 				10,
 				0,
 				false,
-				""
-			}
-		}
-	},
-	[211093232] = {
-		description = "5c910e7f8cd102b64690da88e5beb83a",
-		maxLv = 60,
-		type = 1,
-		id = 211093232,
-		extra_param = "",
-		param = {
-			{
-				900,
-				23.072,
-				true,
-				"%"
-			},
-			{
-				1100,
-				28.205,
-				true,
-				"%"
-			},
-			{
-				30,
-				0,
-				false,
-				"%"
-			},
-			{
-				10,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211093233] = {
-		description = "43b019e9879f11debaface47da446294",
-		maxLv = 60,
-		type = 1,
-		id = 211093233,
-		extra_param = "",
-		param = {
-			{
-				1200,
-				30.765,
-				true,
-				"%"
-			},
-			{
-				1100,
-				28.205,
-				true,
-				"%"
-			},
-			{
-				30,
-				0,
-				false,
-				"%"
-			},
-			{
-				10,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211093236] = {
-		description = "fdca8007834d67c84ebfdc7ec4354714",
-		maxLv = 60,
-		type = 1,
-		id = 211093236,
-		extra_param = "",
-		param = {
-			{
-				300,
-				7.69,
-				true,
-				"%"
-			},
-			{
-				150,
-				3.846,
-				true,
-				"%"
-			},
-			{
-				1100,
-				28.205,
-				true,
-				"%"
-			},
-			{
-				30,
-				0,
-				false,
-				"%"
-			},
-			{
-				10,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211096101] = {
-		description = "81f4b8ecd08e568de1aaa330cf367192",
-		maxLv = 60,
-		type = 1,
-		id = 211096101,
-		extra_param = "",
-		param = {
-			{
-				340,
-				6.607,
-				true,
-				"%"
-			}
-		}
-	},
-	[211096201] = {
-		description = "bf765355b56dca1bc56f70ee702e5655",
-		maxLv = 60,
-		type = 1,
-		id = 211096201,
-		extra_param = "",
-		param = {
-			{
-				800,
-				20.512,
-				true,
-				"%"
-			},
-			{
-				25,
-				0,
-				false,
-				"%"
-			}
-		}
-	},
-	[211096202] = {
-		description = "002cfe799392f23c8cafb815069868f1",
-		maxLv = 60,
-		type = 1,
-		id = 211096202,
-		extra_param = "",
-		param = {
-			{
-				300,
-				7.692,
-				true,
-				"%"
-			}
-		}
-	},
-	[211096203] = {
-		description = "6d8dd3afa76c3aab3d3438acbe38bc90",
-		maxLv = 60,
-		type = 1,
-		id = 211096203,
-		extra_param = "",
-		param = {
-			{
-				1000,
-				25.638,
-				true,
-				"%"
-			}
-		}
-	},
-	[211097101] = {
-		description = "b35e2475b9184b4600d10fc5084edc6c",
-		maxLv = 60,
-		type = 1,
-		id = 211097101,
-		extra_param = "",
-		param = {
-			{
-				273,
-				5.285,
-				true,
-				"%"
-			}
-		}
-	},
-	[211097201] = {
-		description = "8b806969e8c4b21f109c28a565f818d2",
-		maxLv = 60,
-		type = 1,
-		id = 211097201,
-		extra_param = "",
-		param = {
-			{
-				1100,
-				28.202,
-				true,
-				"%"
-			},
-			{
-				5,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211097203] = {
-		description = "8910aaec1ea01a6e5f4a2e519d971649",
-		maxLv = 60,
-		type = 1,
-		id = 211097203,
-		extra_param = "",
-		param = {
-			{
-				3.2,
-				0.2,
-				true,
-				"%"
-			},
-			{
-				1400,
-				35.897,
-				true,
-				"%"
-			}
-		}
-	},
-	[211099101] = {
-		description = "f5602fa213d3f8ce7e6937570a6eb6d4",
-		maxLv = 60,
-		type = 1,
-		id = 211099101,
-		extra_param = "",
-		param = {
-			{
-				200,
-				3.914,
-				true,
-				"%"
-			}
-		}
-	},
-	[211099201] = {
-		description = "562697100a43902aa1ac6aa18f99637a",
-		maxLv = 60,
-		type = 1,
-		id = 211099201,
-		extra_param = "",
-		param = {
-			{
-				360,
-				9.228,
-				true,
 				"%"
 			},
 			{
@@ -23278,398 +24228,29 @@
 			}
 		}
 	},
-	[211099202] = {
-		description = "c771099727e5129df1fe160040baf15d",
-		maxLv = 60,
+	[200001106] = {
+		description = "0b768b59415a3740b84e58fec7538a89",
+		maxLv = 1,
 		type = 1,
-		id = 211099202,
+		id = 200001106,
 		extra_param = "",
 		param = {
 			{
-				450,
-				11.537,
-				true,
-				"%"
-			},
-			{
-				600,
-				15.383,
-				true,
-				"%"
-			},
-			{
-				40,
-				1,
-				true,
-				"%"
-			},
-			{
-				16,
+				15,
 				0,
 				false,
-				""
-			}
-		}
-	},
-	[211099203] = {
-		description = "dc39360f5ff5eec8a7bd7e7703a9a740",
-		maxLv = 60,
-		type = 1,
-		id = 211099203,
-		extra_param = "",
-		param = {
-			{
-				105,
-				2.692,
-				true,
 				"%"
 			},
 			{
-				175,
-				4.487,
-				true,
-				"%"
-			},
-			{
-				640,
-				16.41,
-				true,
-				"%"
-			}
-		}
-	},
-	[211099231] = {
-		description = "9af26b1e3437995cea41aac3f125d4f9",
-		maxLv = 60,
-		type = 1,
-		id = 211099231,
-		extra_param = "",
-		param = {
-			{
-				105,
-				2.692,
-				true,
-				"%"
-			},
-			{
-				175,
-				4.487,
-				true,
-				"%"
-			},
-			{
-				640,
-				16.41,
-				true,
-				"%"
-			},
-			{
-				450,
-				11.538,
-				true,
-				"%"
-			}
-		}
-	},
-	[211111101] = {
-		description = "abbb79b6bb3f765bd3ffebc90c36865c",
-		maxLv = 60,
-		type = 1,
-		id = 211111101,
-		extra_param = "",
-		param = {
-			{
-				370,
-				7.205,
-				true,
-				"%"
-			},
-			{
-				415,
-				7.977,
-				true,
-				"%"
-			}
-		}
-	},
-	[211111201] = {
-		description = "bb7001fc07b7b7a661c329bfc9b1aa50",
-		maxLv = 60,
-		type = 1,
-		id = 211111201,
-		extra_param = "",
-		param = {
-			{
-				598,
-				15.381,
-				true,
-				"%"
-			},
-			{
-				600,
-				15.384,
-				true,
-				"%"
-			}
-		}
-	},
-	[211111202] = {
-		description = "c1532df68ff6f4557e5057fb4d4ab4ea",
-		maxLv = 60,
-		type = 1,
-		id = 211111202,
-		extra_param = "",
-		param = {
-			{
-				1000,
-				25.636,
-				true,
-				"%"
-			},
-			{
-				60,
-				1.538,
-				true,
-				"%"
-			}
-		}
-	},
-	[211111203] = {
-		description = "530227c95268932c7361ee14e5889af5",
-		maxLv = 60,
-		type = 1,
-		id = 211111203,
-		extra_param = "",
-		param = {
-			{
-				1200,
-				30.769,
-				true,
-				"%"
-			},
-			{
-				1500,
-				38.461,
-				true,
-				"%"
-			}
-		}
-	},
-	[211119101] = {
-		description = "abfe2993fd581007a3c493a1767c8ea8",
-		maxLv = 60,
-		type = 1,
-		id = 211119101,
-		extra_param = "",
-		param = {
-			{
-				285,
-				5.547,
-				true,
-				"%"
-			}
-		}
-	},
-	[211119201] = {
-		description = "80772decd2f66ae76939de953590fe9e",
-		maxLv = 60,
-		type = 1,
-		id = 211119201,
-		extra_param = "",
-		param = {
-			{
-				500,
-				12.82,
-				true,
-				"%"
-			},
-			{
-				2430,
-				62.307,
-				true,
-				"%"
-			},
-			{
-				2700,
-				69.23,
-				true,
-				"%"
-			}
-		}
-	},
-	[211119202] = {
-		description = "900ca6491f45769e1ce0ca0f885740d4",
-		maxLv = 60,
-		type = 1,
-		id = 211119202,
-		extra_param = "",
-		param = {
-			{
-				900,
-				23.074,
-				true,
-				"%"
-			},
-			{
-				1620,
-				41.532,
-				true,
-				"%"
-			}
-		}
-	},
-	[211119203] = {
-		description = "6f79a65beac88fc5f3f9c7c4c3c45ba1",
-		maxLv = 60,
-		type = 1,
-		id = 211119203,
-		extra_param = "",
-		param = {
-			{
-				900,
-				23.075,
-				true,
-				"%"
-			},
-			{
-				1620,
-				41.532,
-				true,
-				"%"
-			}
-		}
-	},
-	[211127101] = {
-		description = "1d5dcdfdcd10390b4b4bf4730e2687f2",
-		maxLv = 60,
-		type = 1,
-		id = 211127101,
-		extra_param = "",
-		param = {
-			{
-				492,
-				9.606,
-				true,
-				"%"
-			}
-		}
-	},
-	[211127201] = {
-		description = "f26be160d99a949069cc1575dc25827d",
-		maxLv = 60,
-		type = 1,
-		id = 211127201,
-		extra_param = "",
-		param = {
-			{
-				800,
-				20.509,
-				true,
-				"%"
-			}
-		}
-	},
-	[211127202] = {
-		description = "5c515dcfa2b4591fdcac579d770001ca",
-		maxLv = 60,
-		type = 1,
-		id = 211127202,
-		extra_param = "",
-		param = {
-			{
-				1200,
-				30.76,
-				true,
-				"%"
-			}
-		}
-	},
-	[211127203] = {
-		description = "c34e97d2775dd7d5f17bc3eaac929472",
-		maxLv = 60,
-		type = 1,
-		id = 211127203,
-		extra_param = "",
-		param = {
-			{
-				28.7,
-				0.7,
-				true,
-				"%"
-			},
-			{
-				1000,
-				25.64,
-				true,
-				"%"
-			},
-			{
-				8,
-				0,
-				false,
-				""
-			}
-		}
-	},
-	[211139101] = {
-		description = "5168e00965a41ac09908e3d0fc60490a",
-		maxLv = 60,
-		type = 1,
-		id = 211139101,
-		extra_param = "",
-		param = {
-			{
-				432,
-				8.407,
-				true,
-				"%"
-			}
-		}
-	},
-	[211139201] = {
-		description = "7dfac2a622b370894d5deaca9a957b6a",
-		maxLv = 60,
-		type = 1,
-		id = 211139201,
-		extra_param = "",
-		param = {
-			{
-				450,
-				11.538,
-				true,
-				"%"
-			},
-			{
-				320,
-				8.201,
-				true,
-				"%"
-			}
-		}
-	},
-	[211139202] = {
-		description = "c5e176499205b9a1fb80e27f7a178eb1",
-		maxLv = 60,
-		type = 1,
-		id = 211139202,
-		extra_param = "",
-		param = {
-			{
-				300,
-				7.692,
-				true,
-				"%"
-			},
-			{
-				4,
+				10,
 				0,
 				false,
 				""
 			},
 			{
-				320,
-				8.2,
-				true,
+				15,
+				0,
+				false,
 				"%"
 			},
 			{
@@ -23680,173 +24261,182 @@
 			}
 		}
 	},
-	[211139203] = {
-		description = "5f6a0b06ffe23be3ee33009c5016c1d1",
-		maxLv = 60,
+	[200001107] = {
+		description = "427d8f8d49f4043fd42d3310d953dbfa",
+		maxLv = 1,
 		type = 1,
-		id = 211139203,
+		id = 200001107,
 		extra_param = "",
 		param = {
 			{
-				800,
-				20.509,
-				true,
+				40,
+				0,
+				false,
 				"%"
 			}
 		}
 	},
-	[211148101] = {
-		description = "5fc34b612b87a20c14ce51f71caca34c",
-		maxLv = 60,
+	[200001108] = {
+		description = "7a10f9eb39fb52f1925d8626485ef29c",
+		maxLv = 1,
 		type = 1,
-		id = 211148101,
+		id = 200001108,
 		extra_param = "",
 		param = {
 			{
-				260,
-				5.16,
-				true,
-				"%"
-			}
-		}
-	},
-	[211148201] = {
-		description = "ad221134821268b9cab87bd2ebdc2196",
-		maxLv = 60,
-		type = 1,
-		id = 211148201,
-		extra_param = "",
-		param = {
-			{
-				400,
-				10.256,
-				true,
+				10,
+				0,
+				false,
 				"%"
 			},
 			{
-				1,
+				2500,
+				64.102,
+				false,
+				"%"
+			},
+			{
+				64.103,
+				1.644,
+				false,
+				"%"
+			}
+		}
+	},
+	[200001109] = {
+		description = "024d91dcdaece2a6a166169ff96ac1a5",
+		maxLv = 1,
+		type = 1,
+		id = 200001109,
+		extra_param = "",
+		param = {
+			{
+				40,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				10,
 				0,
 				false,
 				""
 			}
 		}
 	},
-	[211148202] = {
-		description = "b5e27404f46c53d8f3b4174e99d61c16",
-		maxLv = 60,
+	[200001110] = {
+		description = "c28cad54cb32dc9c3584b2c5b72a7400",
+		maxLv = 1,
 		type = 1,
-		id = 211148202,
+		id = 200001110,
 		extra_param = "",
 		param = {
 			{
-				100,
-				2.564,
-				true,
+				10,
+				0,
+				false,
 				"%"
 			},
 			{
-				200,
-				5.125,
-				true,
+				7,
+				0,
+				false,
+				""
+			},
+			{
+				30,
+				0,
+				false,
 				"%"
 			},
 			{
-				1,
+				15,
 				0,
 				false,
 				""
 			}
 		}
 	},
-	[211148203] = {
-		description = "bc914d60e5b247b4d2e0761b6a8b1d45",
-		maxLv = 60,
+	[200001111] = {
+		description = "e1fff0838a966082c1aed9c81774c41b",
+		maxLv = 1,
 		type = 1,
-		id = 211148203,
+		id = 200001111,
 		extra_param = "",
 		param = {
 			{
-				350,
-				8.974,
-				true,
-				"%"
-			}
-		}
-	},
-	[211184101] = {
-		description = "25eb0f531573d3fdd69d2735731c2054",
-		maxLv = 60,
-		type = 1,
-		id = 211184101,
-		extra_param = "",
-		param = {
-			{
-				210,
-				4.084,
-				true,
-				"%"
-			}
-		}
-	},
-	[211184201] = {
-		description = "31b11f3af65a7d3b38d67316890fa3aa",
-		maxLv = 60,
-		type = 1,
-		id = 211184201,
-		extra_param = "",
-		param = {
-			{
-				100,
-				2.564,
-				true,
+				30,
+				0,
+				false,
 				"%"
 			},
 			{
-				400,
-				10.256,
-				true,
-				"%"
-			}
-		}
-	},
-	[211184202] = {
-		description = "ce87a041d26c1087c3dcd7aa54152102",
-		maxLv = 60,
-		type = 1,
-		id = 211184202,
-		extra_param = "",
-		param = {
-			{
-				300,
-				7.692,
-				true,
+				12,
+				0,
+				false,
 				"%"
 			},
 			{
-				900,
-				23.076,
-				true,
+				50,
+				0,
+				false,
 				"%"
 			},
 			{
-				1800,
-				46.153,
-				true,
+				50,
+				0,
+				false,
 				"%"
+			},
+			{
+				18,
+				0,
+				false,
+				""
 			}
 		}
 	},
-	[211184203] = {
-		description = "deb054ad451ab55bfb2d9c802290dac2",
-		maxLv = 60,
+	[200001112] = {
+		description = "13b7a6dd8d2cbffd9ea81fb5bf079001",
+		maxLv = 1,
 		type = 1,
-		id = 211184203,
+		id = 200001112,
 		extra_param = "",
 		param = {
 			{
-				1800,
-				46.153,
-				true,
+				40,
+				0,
+				false,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				""
+			},
+			{
+				12,
+				0,
+				false,
+				""
+			},
+			{
+				30,
+				0,
+				false,
 				"%"
 			},
 			{
@@ -23857,89 +24447,17 @@
 			}
 		}
 	},
-	[211199101] = {
-		description = "dccadc0c2f7caeca5d637fe1ddca23fe",
-		maxLv = 60,
+	[200001113] = {
+		description = "13d1639d4af83dc996e49e97c5a63661",
+		maxLv = 1,
 		type = 1,
-		id = 211199101,
+		id = 200001113,
 		extra_param = "",
 		param = {
 			{
-				440,
-				8.528,
-				true,
-				"%"
-			}
-		}
-	},
-	[211199201] = {
-		description = "87ccf0b13b840b860c5cb45d2b233b7a",
-		maxLv = 60,
-		type = 1,
-		id = 211199201,
-		extra_param = "",
-		param = {
-			{
-				400,
-				10.256,
-				true,
-				"%"
-			}
-		}
-	},
-	[211199202] = {
-		description = "315928e2e07edaa065ce2fbe4ff399d6",
-		maxLv = 60,
-		type = 1,
-		id = 211199202,
-		extra_param = "",
-		param = {
-			{
-				1200,
-				30.766,
-				true,
-				"%"
-			}
-		}
-	},
-	[211199203] = {
-		description = "c8b2c2470b78655e0eee583cbad94839",
-		maxLv = 60,
-		type = 1,
-		id = 211199203,
-		extra_param = "",
-		param = {
-			{
-				300,
-				7.692,
-				true,
-				"%"
-			},
-			{
-				500,
-				12.82,
-				true,
-				"%"
-			},
-			{
-				800,
-				20.512,
-				true,
-				"%"
-			}
-		}
-	},
-	[211199305] = {
-		description = "64cb6dde1a629cd751f276f8a947a3da",
-		maxLv = 60,
-		type = 1,
-		id = 211199305,
-		extra_param = "",
-		param = {
-			{
-				300,
-				7.692,
-				true,
+				9,
+				9,
+				false,
 				"%"
 			}
 		}
@@ -24064,6 +24582,70 @@
 			"1.2/1.5/1.8/2.1/2.4/2.7/3"
 		}
 	},
+	[220101601] = {
+		description = "bebfc47642f404c31d99f31a8a5a98dd",
+		maxLv = 0,
+		type = 0,
+		id = 220101601,
+		param = {
+			{
+				"0",
+				"12",
+				"12",
+				"10",
+				"7"
+			},
+			{
+				"0",
+				"15",
+				"12",
+				"10",
+				"7"
+			},
+			{
+				"0",
+				"18",
+				"12",
+				"10",
+				"7"
+			},
+			{
+				"0",
+				"21",
+				"12",
+				"10",
+				"7"
+			},
+			{
+				"0",
+				"24",
+				"12",
+				"10",
+				"7"
+			},
+			{
+				"0",
+				"27",
+				"12",
+				"10",
+				"7"
+			},
+			{
+				"0",
+				"30",
+				"12",
+				"10",
+				"7"
+			}
+		},
+		extra_param = {
+			"0",
+			"12%/15%/18%/21%/24%/27%/30",
+			"12",
+			"10",
+			"7"
+		}
+	},
 	[220101901] = {
 		description = "7c61f421c8cea327663d59ea3b8c4935",
 		maxLv = 0,
@@ -24125,6 +24707,118 @@
 			"32%/40%/48%/56%/64%/72%/80",
 			"32%/40%/48%/56%/64%/72%/80",
 			"15",
+			"10"
+		}
+	},
+	[220102401] = {
+		description = "d6911383ca23b6a25dab4ede4cdb34e4",
+		maxLv = 0,
+		type = 0,
+		id = 220102401,
+		param = {
+			{
+				"0",
+				"1200",
+				"4",
+				"600",
+				"15.4",
+				"28",
+				"600",
+				"15.4",
+				"600",
+				"15.4",
+				"10"
+			},
+			{
+				"0",
+				"1200",
+				"4",
+				"600",
+				"15.4",
+				"35",
+				"600",
+				"15.4",
+				"600",
+				"15.4",
+				"10"
+			},
+			{
+				"0",
+				"1200",
+				"4",
+				"600",
+				"15.4",
+				"42",
+				"600",
+				"15.4",
+				"600",
+				"15.4",
+				"10"
+			},
+			{
+				"0",
+				"1200",
+				"4",
+				"600",
+				"15.4",
+				"49",
+				"600",
+				"15.4",
+				"600",
+				"15.4",
+				"10"
+			},
+			{
+				"0",
+				"1200",
+				"4",
+				"600",
+				"15.4",
+				"56",
+				"600",
+				"15.4",
+				"600",
+				"15.4",
+				"10"
+			},
+			{
+				"0",
+				"1200",
+				"4",
+				"600",
+				"15.4",
+				"63",
+				"600",
+				"15.4",
+				"600",
+				"15.4",
+				"10"
+			},
+			{
+				"0",
+				"1200",
+				"4",
+				"600",
+				"15.4",
+				"70",
+				"600",
+				"15.4",
+				"600",
+				"15.4",
+				"10"
+			}
+		},
+		extra_param = {
+			"0",
+			"1200",
+			"4",
+			"600",
+			"15.4",
+			"28%/35%/42%/49%/56%/63%/70",
+			"600",
+			"15.4",
+			"600",
+			"15.4",
 			"10"
 		}
 	},
@@ -24384,6 +25078,78 @@
 			"13"
 		}
 	},
+	[220103501] = {
+		description = "cea6b3b4e300b9c06a2772b10b77cd2f",
+		maxLv = 0,
+		type = 0,
+		id = 220103501,
+		param = {
+			{
+				"0",
+				"12",
+				"6",
+				"12",
+				"30",
+				"15"
+			},
+			{
+				"0",
+				"15",
+				"6",
+				"15",
+				"30",
+				"15"
+			},
+			{
+				"0",
+				"18",
+				"6",
+				"18",
+				"30",
+				"15"
+			},
+			{
+				"0",
+				"21",
+				"6",
+				"21",
+				"30",
+				"15"
+			},
+			{
+				"0",
+				"24",
+				"6",
+				"24",
+				"30",
+				"15"
+			},
+			{
+				"0",
+				"27",
+				"6",
+				"27",
+				"30",
+				"15"
+			},
+			{
+				"0",
+				"30",
+				"6",
+				"30",
+				"30",
+				"15"
+			}
+		},
+		extra_param = {
+			"0",
+			"12%/15%/18%/21%/24%/27%/30",
+			"6",
+			"12%/15%/18%/21%/24%/27%/30",
+			"30",
+			"15"
+		}
+	},
 	[220103801] = {
 		description = "670ee3e628412ee920ec4a5461412182",
 		maxLv = 0,
@@ -24617,50 +25383,42 @@
 			{
 				"0",
 				"49",
-				"8",
 				"8"
 			},
 			{
 				"0",
 				"41",
-				"10",
 				"10"
 			},
 			{
 				"0",
 				"33",
-				"12",
 				"12"
 			},
 			{
 				"0",
 				"25",
-				"14",
 				"14"
 			},
 			{
 				"0",
 				"17",
-				"16",
 				"16"
 			},
 			{
 				"0",
 				"9",
-				"18",
 				"18"
 			},
 			{
 				"0",
 				"1",
-				"20",
 				"20"
 			}
 		},
 		extra_param = {
 			"0",
 			"49%/41%/33%/25%/17%/9%/1",
-			"8%/10%/12%/14%/16%/18%/20",
 			"8%/10%/12%/14%/16%/18%/20"
 		}
 	},
@@ -24702,6 +25460,174 @@
 		extra_param = {
 			"0",
 			"20%/25%/30%/35%/40%/45%/50"
+		}
+	},
+	[220105201] = {
+		description = "4a73efca85a8f3b6080e0f58ff07389c",
+		maxLv = 0,
+		type = 0,
+		id = 220105201,
+		param = {
+			{
+				"0",
+				"180",
+				"1080",
+				"20",
+				"12",
+				"10",
+				"10",
+				"10",
+				"10",
+				"10",
+				"5"
+			},
+			{
+				"0",
+				"180",
+				"1260",
+				"19",
+				"12",
+				"10",
+				"10",
+				"10",
+				"10",
+				"10",
+				"5"
+			},
+			{
+				"0",
+				"180",
+				"1440",
+				"18",
+				"12",
+				"10",
+				"10",
+				"10",
+				"10",
+				"10",
+				"5"
+			},
+			{
+				"0",
+				"180",
+				"1620",
+				"17",
+				"12",
+				"10",
+				"10",
+				"10",
+				"10",
+				"10",
+				"5"
+			},
+			{
+				"0",
+				"180",
+				"1800",
+				"16",
+				"12",
+				"10",
+				"10",
+				"10",
+				"10",
+				"10",
+				"5"
+			},
+			{
+				"0",
+				"180",
+				"1980",
+				"15",
+				"12",
+				"10",
+				"10",
+				"10",
+				"10",
+				"10",
+				"5"
+			},
+			{
+				"0",
+				"180",
+				"2160",
+				"14",
+				"12",
+				"10",
+				"10",
+				"10",
+				"10",
+				"10",
+				"5"
+			}
+		},
+		extra_param = {
+			"0",
+			"180",
+			"1080/1260/1440/1620/1800/1980/2160",
+			"20/19/18/17/16/15/14",
+			"12",
+			"10",
+			"10",
+			"10",
+			"10",
+			"10",
+			"5"
+		}
+	},
+	[220105601] = {
+		description = "dc7aebd842b2f135037e8c43fcebb9eb",
+		maxLv = 0,
+		type = 0,
+		id = 220105601,
+		param = {
+			{
+				"0",
+				"4",
+				"10",
+				"12"
+			},
+			{
+				"0",
+				"5",
+				"10",
+				"12"
+			},
+			{
+				"0",
+				"6",
+				"10",
+				"12"
+			},
+			{
+				"0",
+				"7",
+				"10",
+				"12"
+			},
+			{
+				"0",
+				"8",
+				"10",
+				"12"
+			},
+			{
+				"0",
+				"9",
+				"10",
+				"12"
+			},
+			{
+				"0",
+				"10",
+				"10",
+				"12"
+			}
+		},
+		extra_param = {
+			"0",
+			"4%/5%/6%/7%/8%/9%/10",
+			"10",
+			"12"
 		}
 	},
 	[220105801] = {
@@ -24894,6 +25820,70 @@
 			"20%/40%/60%/80%/100%/120%/140",
 			"20%/25%/30%/35%/40%/45%/50",
 			"30"
+		}
+	},
+	[220106801] = {
+		description = "27237940dfc4155fbb93bd0fdca5f353",
+		maxLv = 0,
+		type = 0,
+		id = 220106801,
+		param = {
+			{
+				"0",
+				"6",
+				"5",
+				"10",
+				"10"
+			},
+			{
+				"0",
+				"7.5",
+				"5",
+				"10",
+				"10"
+			},
+			{
+				"0",
+				"9",
+				"5",
+				"10",
+				"10"
+			},
+			{
+				"0",
+				"10.5",
+				"5",
+				"10",
+				"10"
+			},
+			{
+				"0",
+				"12",
+				"5",
+				"10",
+				"10"
+			},
+			{
+				"0",
+				"13.5",
+				"5",
+				"10",
+				"10"
+			},
+			{
+				"0",
+				"15",
+				"5",
+				"10",
+				"10"
+			}
+		},
+		extra_param = {
+			"0",
+			"6%/7.5%/9%/10.5%/12%/13.5%/15",
+			"5",
+			"10",
+			"10"
 		}
 	},
 	[220108001] = {
@@ -25118,6 +26108,46 @@
 			"500",
 			"500",
 			"24%/30%/36%/42%/48%/54%/60"
+		}
+	},
+	[220109401] = {
+		description = "1e8659fe27a81d29889269060059facc",
+		maxLv = 0,
+		type = 0,
+		id = 220109401,
+		param = {
+			{
+				"0",
+				"32"
+			},
+			{
+				"0",
+				"40"
+			},
+			{
+				"0",
+				"48"
+			},
+			{
+				"0",
+				"56"
+			},
+			{
+				"0",
+				"64"
+			},
+			{
+				"0",
+				"72"
+			},
+			{
+				"0",
+				"80"
+			}
+		},
+		extra_param = {
+			"0",
+			"32%/40%/48%/56%/64%/72%/80"
 		}
 	},
 	[220109601] = {
@@ -27072,6 +28102,230 @@
 			"16%/20%/24%/28%/32%/36%/40"
 		}
 	},
+	[500102001] = {
+		description = "b1791ed6271155dd9f273b9ab322c93d",
+		maxLv = 0,
+		type = 0,
+		id = 500102001,
+		param = {
+			{
+				"0",
+				"5",
+				"6",
+				"15",
+				"15",
+				"15",
+				"8",
+				"20"
+			},
+			{
+				"0",
+				"7.5",
+				"7",
+				"18",
+				"15",
+				"15",
+				"10",
+				"20"
+			},
+			{
+				"0",
+				"10",
+				"8",
+				"21",
+				"15",
+				"15",
+				"12",
+				"20"
+			},
+			{
+				"0",
+				"12.5",
+				"9",
+				"24",
+				"15",
+				"15",
+				"14",
+				"20"
+			},
+			{
+				"0",
+				"15",
+				"10",
+				"27",
+				"15",
+				"15",
+				"16",
+				"20"
+			},
+			{
+				"0",
+				"17.5",
+				"11",
+				"30",
+				"15",
+				"15",
+				"18",
+				"20"
+			},
+			{
+				"0",
+				"20",
+				"12",
+				"33",
+				"15",
+				"15",
+				"20",
+				"20"
+			}
+		},
+		extra_param = {
+			"0",
+			"5%/7.5%/10%/12.5%/15%/17.5%/20",
+			"6%/7%/8%/9%/10%/11%/12",
+			"15%/18%/21%/24%/27%/30%/33",
+			"15",
+			"15",
+			"8%/10%/12%/14%/16%/18%/20",
+			"20"
+		}
+	},
+	[500102101] = {
+		description = "0d15eedeec0b8e3b74fa5b00c6b01d57",
+		maxLv = 0,
+		type = 0,
+		id = 500102101,
+		param = {
+			{
+				"0",
+				"12",
+				"50",
+				"15",
+				"8",
+				"10"
+			},
+			{
+				"0",
+				"15",
+				"50",
+				"15",
+				"10",
+				"10"
+			},
+			{
+				"0",
+				"18",
+				"50",
+				"15",
+				"12",
+				"10"
+			},
+			{
+				"0",
+				"21",
+				"50",
+				"15",
+				"14",
+				"10"
+			},
+			{
+				"0",
+				"24",
+				"50",
+				"15",
+				"16",
+				"10"
+			},
+			{
+				"0",
+				"27",
+				"50",
+				"15",
+				"18",
+				"10"
+			},
+			{
+				"0",
+				"30",
+				"50",
+				"15",
+				"20",
+				"10"
+			}
+		},
+		extra_param = {
+			"0",
+			"12%/15%/18%/21%/24%/27%/30",
+			"50",
+			"15",
+			"8%/10%/12%/14%/16%/18%/20",
+			"10"
+		}
+	},
+	[500102201] = {
+		description = "55d29f85e527d93687bb233e36d1a130",
+		maxLv = 0,
+		type = 0,
+		id = 500102201,
+		param = {
+			{
+				"0",
+				"2",
+				"8",
+				"4",
+				"15"
+			},
+			{
+				"0",
+				"2.5",
+				"8",
+				"5",
+				"15"
+			},
+			{
+				"0",
+				"3",
+				"8",
+				"6",
+				"15"
+			},
+			{
+				"0",
+				"3.5",
+				"8",
+				"7",
+				"15"
+			},
+			{
+				"0",
+				"4",
+				"8",
+				"8",
+				"15"
+			},
+			{
+				"0",
+				"4.5",
+				"8",
+				"9",
+				"15"
+			},
+			{
+				"0",
+				"5",
+				"8",
+				"10",
+				"15"
+			}
+		},
+		extra_param = {
+			"0",
+			"2%/2.5%/3%/3.5%/4%/4.5%/5",
+			"8",
+			"4%/5%/6%/7%/8%/9%/10",
+			"15"
+		}
+	},
 	[500102401] = {
 		description = "afea96894188eb15b894df28dfe1f6de",
 		maxLv = 0,
@@ -27080,68 +28334,100 @@
 		param = {
 			{
 				"0",
-				"2400",
+				"1200",
 				"4",
 				"600",
 				"15.4",
-				"28"
+				"28",
+				"600",
+				"15.4",
+				"600",
+				"15.4"
 			},
 			{
 				"0",
-				"2400",
+				"1200",
 				"4",
 				"600",
 				"15.4",
-				"35"
+				"35",
+				"600",
+				"15.4",
+				"600",
+				"15.4"
 			},
 			{
 				"0",
-				"2400",
+				"1200",
 				"4",
 				"600",
 				"15.4",
-				"42"
+				"42",
+				"600",
+				"15.4",
+				"600",
+				"15.4"
 			},
 			{
 				"0",
-				"2400",
+				"1200",
 				"4",
 				"600",
 				"15.4",
-				"49"
+				"49",
+				"600",
+				"15.4",
+				"600",
+				"15.4"
 			},
 			{
 				"0",
-				"2400",
+				"1200",
 				"4",
 				"600",
 				"15.4",
-				"56"
+				"56",
+				"600",
+				"15.4",
+				"600",
+				"15.4"
 			},
 			{
 				"0",
-				"2400",
+				"1200",
 				"4",
 				"600",
 				"15.4",
-				"63"
+				"63",
+				"600",
+				"15.4",
+				"600",
+				"15.4"
 			},
 			{
 				"0",
-				"2400",
+				"1200",
 				"4",
 				"600",
 				"15.4",
-				"70"
+				"70",
+				"600",
+				"15.4",
+				"600",
+				"15.4"
 			}
 		},
 		extra_param = {
 			"0",
-			"2400",
+			"1200",
 			"4",
 			"600",
 			"15.4",
-			"28%/35%/42%/49%/56%/63%/70"
+			"28%/35%/42%/49%/56%/63%/70",
+			"600",
+			"15.4",
+			"600",
+			"15.4"
 		}
 	},
 	[500102601] = {
@@ -29144,6 +30430,78 @@
 			"5"
 		}
 	},
+	[500108901] = {
+		description = "b0755be3c7b4c3421f98987d8e7030ec",
+		maxLv = 0,
+		type = 0,
+		id = 500108901,
+		param = {
+			{
+				"0",
+				"8",
+				"8",
+				"50",
+				"12",
+				"10"
+			},
+			{
+				"0",
+				"10",
+				"10",
+				"50",
+				"12",
+				"15"
+			},
+			{
+				"0",
+				"12",
+				"12",
+				"50",
+				"12",
+				"20"
+			},
+			{
+				"0",
+				"14",
+				"14",
+				"50",
+				"12",
+				"25"
+			},
+			{
+				"0",
+				"16",
+				"16",
+				"50",
+				"12",
+				"30"
+			},
+			{
+				"0",
+				"18",
+				"18",
+				"50",
+				"12",
+				"35"
+			},
+			{
+				"0",
+				"20",
+				"20",
+				"50",
+				"12",
+				"40"
+			}
+		},
+		extra_param = {
+			"0",
+			"8%/10%/12%/14%/16%/18%/20",
+			"8%/10%/12%/14%/16%/18%/20",
+			"50",
+			"12",
+			"10%/15%/20%/25%/30%/35%/40"
+		}
+	},
 	[500109301] = {
 		description = "d2dc68ba4909683e3d6097a35d349421",
 		maxLv = 0,
@@ -29814,6 +31172,54 @@
 			"0",
 			"18%/27%/36%/45%/54%/63%/72",
 			"700"
+		}
+	},
+	[500115601] = {
+		description = "4b3ef8e979f082f7402b60c219fe076b",
+		maxLv = 0,
+		type = 0,
+		id = 500115601,
+		param = {
+			{
+				"0",
+				"16",
+				"7"
+			},
+			{
+				"0",
+				"20",
+				"7"
+			},
+			{
+				"0",
+				"24",
+				"7"
+			},
+			{
+				"0",
+				"28",
+				"7"
+			},
+			{
+				"0",
+				"32",
+				"7"
+			},
+			{
+				"0",
+				"36",
+				"7"
+			},
+			{
+				"0",
+				"40",
+				"7"
+			}
+		},
+		extra_param = {
+			"0",
+			"16%/20%/24%/28%/32%/36%/40",
+			"7"
 		}
 	},
 	[500115801] = {
@@ -31614,9 +33020,156 @@
 			}
 		}
 	},
+	[600000058] = {
+		description = "78a97d12ece49a9cce3837f29456168a",
+		maxLv = 1,
+		type = 1,
+		id = 600000058,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[600000059] = {
+		description = "b49da2091e32bd2db6592ab2d1d13b5f",
+		maxLv = 1,
+		type = 1,
+		id = 600000059,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[600000060] = {
+		description = "4804bced67f707627a0f6dda61607e9c",
+		maxLv = 1,
+		type = 1,
+		id = 600000060,
+		extra_param = "",
+		param = {
+			{
+				12,
+				0,
+				false,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				""
+			},
+			{
+				18,
+				0,
+				false,
+				"%"
+			},
+			{
+				18,
+				0,
+				false,
+				""
+			},
+			{
+				24,
+				0,
+				false,
+				"%"
+			},
+			{
+				24,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[600000061] = {
+		description = "b32f91d503201c4bf683d3063615a367",
+		maxLv = 1,
+		type = 1,
+		id = 600000061,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				8,
+				0,
+				false,
+				""
+			},
+			{
+				8,
+				0,
+				false,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[600000062] = {
+		description = "ac10e5d7732e0fa957c614552953d76d",
+		maxLv = 1,
+		type = 1,
+		id = 600000062,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
 	[700000001] = {
 		description = "2fd37aae576b7d8329358dec5928ed0c",
-		maxLv = 1,
+		maxLv = 9999999,
 		type = 1,
 		id = 700000001,
 		extra_param = "",
@@ -40317,8 +41870,8 @@
 		extra_param = "",
 		param = {
 			{
-				500,
-				12.82,
+				300,
+				7.692,
 				false,
 				"%"
 			}
@@ -40393,8 +41946,8 @@
 		extra_param = "",
 		param = {
 			{
-				10,
-				10,
+				20,
+				20,
 				false,
 				"%"
 			}
@@ -40746,6 +42299,262 @@
 				"%"
 			}
 		}
+	},
+	[700009215] = {
+		description = "35e0b785b7f0e1090af443d468c21517",
+		maxLv = 10,
+		type = 1,
+		id = 700009215,
+		extra_param = "",
+		param = {}
+	},
+	[700009319] = {
+		description = "f29061790d30ffa47b016a191be76ca4",
+		maxLv = 1,
+		type = 1,
+		id = 700009319,
+		extra_param = "",
+		param = {}
+	},
+	[700009320] = {
+		description = "9156a3e940af5d112ee7802b5c8449b1",
+		maxLv = 1,
+		type = 1,
+		id = 700009320,
+		extra_param = "",
+		param = {}
+	},
+	[700009321] = {
+		description = "3a85775b1a77c0743be0ff03c6acbca1",
+		maxLv = 1,
+		type = 1,
+		id = 700009321,
+		extra_param = "",
+		param = {}
+	},
+	[700009322] = {
+		description = "004612de327701d93403682a5f815677",
+		maxLv = 1,
+		type = 1,
+		id = 700009322,
+		extra_param = "",
+		param = {}
+	},
+	[700009323] = {
+		description = "12a1a712d7195a6e7d574bbfa04c813c",
+		maxLv = 1,
+		type = 1,
+		id = 700009323,
+		extra_param = "",
+		param = {}
+	},
+	[700009324] = {
+		description = "3d6cb44519a019d1db6f8cb567f42ed3",
+		maxLv = 1,
+		type = 1,
+		id = 700009324,
+		extra_param = "",
+		param = {}
+	},
+	[700009325] = {
+		description = "9577dff5189beeeb86eb60e3309b287a",
+		maxLv = 1,
+		type = 1,
+		id = 700009325,
+		extra_param = "",
+		param = {}
+	},
+	[700009326] = {
+		description = "6bdf1dd7470ff4bccf1aa34804a88c35",
+		maxLv = 1,
+		type = 1,
+		id = 700009326,
+		extra_param = "",
+		param = {}
+	},
+	[700009327] = {
+		description = "ccc1fdaf533ca04b0314ed6ae605eed6",
+		maxLv = 1,
+		type = 1,
+		id = 700009327,
+		extra_param = "",
+		param = {}
+	},
+	[700009328] = {
+		description = "64af2bf8b8bd4bb6bb3781cc77e7a22d",
+		maxLv = 1,
+		type = 1,
+		id = 700009328,
+		extra_param = "",
+		param = {}
+	},
+	[700009329] = {
+		description = "2291d6e5bc07b193a07c065d81bee0f5",
+		maxLv = 1,
+		type = 1,
+		id = 700009329,
+		extra_param = "",
+		param = {}
+	},
+	[700009330] = {
+		description = "b3f6270f22c57a96f04370a2e99a8719",
+		maxLv = 1,
+		type = 1,
+		id = 700009330,
+		extra_param = "",
+		param = {}
+	},
+	[700009331] = {
+		description = "b7ad4ea0ecb170906c92fef0a9173995",
+		maxLv = 1,
+		type = 1,
+		id = 700009331,
+		extra_param = "",
+		param = {}
+	},
+	[700009332] = {
+		description = "05722e0e98325919c408dadcfe82d079",
+		maxLv = 1,
+		type = 1,
+		id = 700009332,
+		extra_param = "",
+		param = {}
+	},
+	[700009333] = {
+		description = "19cf1378e9baffa1299bb74c450f982c",
+		maxLv = 1,
+		type = 1,
+		id = 700009333,
+		extra_param = "",
+		param = {}
+	},
+	[700009334] = {
+		description = "0fd8327bfffdf68332f235d87940942d",
+		maxLv = 1,
+		type = 1,
+		id = 700009334,
+		extra_param = "",
+		param = {}
+	},
+	[700009335] = {
+		description = "5efd0c144eb4e110481e9055a3d2cd71",
+		maxLv = 1,
+		type = 1,
+		id = 700009335,
+		extra_param = "",
+		param = {}
+	},
+	[700009336] = {
+		description = "5af56a2475e2568a2b4def95be71bebf",
+		maxLv = 1,
+		type = 1,
+		id = 700009336,
+		extra_param = "",
+		param = {}
+	},
+	[700009337] = {
+		description = "effe67eb901e31242a705772b5fe2b4e",
+		maxLv = 1,
+		type = 1,
+		id = 700009337,
+		extra_param = "",
+		param = {}
+	},
+	[700009338] = {
+		description = "0cdc517c5fdf8238c94cc7725de9b6a7",
+		maxLv = 1,
+		type = 1,
+		id = 700009338,
+		extra_param = "",
+		param = {}
+	},
+	[700009339] = {
+		description = "ce0f6f825de9c839a935cf33366ee1d3",
+		maxLv = 10,
+		type = 1,
+		id = 700009339,
+		extra_param = "",
+		param = {}
+	},
+	[700009340] = {
+		description = "3afb7a3ca2085cf47f1030a810f21f18",
+		maxLv = 1,
+		type = 1,
+		id = 700009340,
+		extra_param = "",
+		param = {}
+	},
+	[700009341] = {
+		description = "a3b1053afb101739a9065171cd62b11c",
+		maxLv = 1,
+		type = 1,
+		id = 700009341,
+		extra_param = "",
+		param = {}
+	},
+	[700009342] = {
+		description = "3cd4e48536a79f24d96608380db7a8a6",
+		maxLv = 1,
+		type = 1,
+		id = 700009342,
+		extra_param = "",
+		param = {}
+	},
+	[700009343] = {
+		description = "d3fcfcb7bb4b3ef8bbf56f899fec1b56",
+		maxLv = 1,
+		type = 1,
+		id = 700009343,
+		extra_param = "",
+		param = {}
+	},
+	[700009344] = {
+		description = "d67697df40e5fb45837636570435de51",
+		maxLv = 1,
+		type = 1,
+		id = 700009344,
+		extra_param = "",
+		param = {}
+	},
+	[700009345] = {
+		description = "974eb390ffd7a801adae90878bb96d24",
+		maxLv = 1,
+		type = 1,
+		id = 700009345,
+		extra_param = "",
+		param = {}
+	},
+	[700009346] = {
+		description = "cc74a3e053c5cf908abfe6d07cb22304",
+		maxLv = 1,
+		type = 1,
+		id = 700009346,
+		extra_param = "",
+		param = {}
+	},
+	[700009347] = {
+		description = "cd0cff200c55fa933ba6ac37e3f9ac77",
+		maxLv = 1,
+		type = 1,
+		id = 700009347,
+		extra_param = "",
+		param = {}
+	},
+	[700009348] = {
+		description = "3a47ebd40a1e7b3a7b5c34cdf37e496f",
+		maxLv = 1,
+		type = 1,
+		id = 700009348,
+		extra_param = "",
+		param = {}
+	},
+	[700009349] = {
+		description = "070356905683c7aef028a0de30d76c97",
+		maxLv = 1,
+		type = 1,
+		id = 700009349,
+		extra_param = "",
+		param = {}
 	},
 	[700009481] = {
 		description = "7184f3162c00b5466da0e6af0524994b",
@@ -41854,6 +43663,54 @@
 		extra_param = "",
 		param = {}
 	},
+	[700009681] = {
+		description = "364c52a56a03a0d3717fcb009c8ecac9",
+		maxLv = 1,
+		type = 1,
+		id = 700009681,
+		extra_param = "",
+		param = {}
+	},
+	[700009682] = {
+		description = "e81692daf5ae3830bebd2d11245e6c52",
+		maxLv = 1,
+		type = 1,
+		id = 700009682,
+		extra_param = "",
+		param = {}
+	},
+	[700009683] = {
+		description = "5049d27295cba4bcf4d6096005526b91",
+		maxLv = 1,
+		type = 1,
+		id = 700009683,
+		extra_param = "",
+		param = {}
+	},
+	[700009684] = {
+		description = "1f235e953327482c29246ab6a8509768",
+		maxLv = 1,
+		type = 1,
+		id = 700009684,
+		extra_param = "",
+		param = {}
+	},
+	[700009685] = {
+		description = "a91d6dfa2b769702702de0c7cc2c9d82",
+		maxLv = 1,
+		type = 1,
+		id = 700009685,
+		extra_param = "",
+		param = {}
+	},
+	[700009686] = {
+		description = "b0ed5c839f0c7be79b04f05e9a808d96",
+		maxLv = 1,
+		type = 1,
+		id = 700009686,
+		extra_param = "",
+		param = {}
+	},
 	[700009701] = {
 		description = "d600adefc8ab70984db5499f43af53dc",
 		maxLv = 1,
@@ -42467,6 +44324,166 @@
 		maxLv = 1,
 		type = 1,
 		id = 700009826,
+		extra_param = "",
+		param = {}
+	},
+	[700009831] = {
+		description = "1d64fc3566941d9f13b9cd4301803bd8",
+		maxLv = 1,
+		type = 1,
+		id = 700009831,
+		extra_param = "",
+		param = {}
+	},
+	[700009832] = {
+		description = "e20dde31c02089788413b0ecf889e3a8",
+		maxLv = 1,
+		type = 1,
+		id = 700009832,
+		extra_param = "",
+		param = {}
+	},
+	[700009833] = {
+		description = "efa822a324c05f12e508b2885c9394e0",
+		maxLv = 1,
+		type = 1,
+		id = 700009833,
+		extra_param = "",
+		param = {}
+	},
+	[700009834] = {
+		description = "29123d0ab2474322df15154bf19ad6d1",
+		maxLv = 1,
+		type = 1,
+		id = 700009834,
+		extra_param = "",
+		param = {}
+	},
+	[700009835] = {
+		description = "c7160d6cac88338bdb71aa4414519a5f",
+		maxLv = 1,
+		type = 1,
+		id = 700009835,
+		extra_param = "",
+		param = {}
+	},
+	[700009836] = {
+		description = "e14b62256ff81c899749017e8dc1e911",
+		maxLv = 1,
+		type = 1,
+		id = 700009836,
+		extra_param = "",
+		param = {}
+	},
+	[700009837] = {
+		description = "b7a7cc332be751803baa30fe7acb9f76",
+		maxLv = 1,
+		type = 1,
+		id = 700009837,
+		extra_param = "",
+		param = {}
+	},
+	[700009838] = {
+		description = "ba85bf487cb3d8b6d0f1ba3c0b6fbda9",
+		maxLv = 1,
+		type = 1,
+		id = 700009838,
+		extra_param = "",
+		param = {}
+	},
+	[700009839] = {
+		description = "edfde926be4bc2d413500ebcd5701724",
+		maxLv = 1,
+		type = 1,
+		id = 700009839,
+		extra_param = "",
+		param = {}
+	},
+	[700009840] = {
+		description = "a026850b6731bcf311a7bac59ca8bc69",
+		maxLv = 1,
+		type = 1,
+		id = 700009840,
+		extra_param = "",
+		param = {}
+	},
+	[700009841] = {
+		description = "c78eca39b888c4d9d7e8f77032d70da0",
+		maxLv = 1,
+		type = 1,
+		id = 700009841,
+		extra_param = "",
+		param = {}
+	},
+	[700009842] = {
+		description = "0e0b0b20a90a3e38f2830042c4b75723",
+		maxLv = 1,
+		type = 1,
+		id = 700009842,
+		extra_param = "",
+		param = {}
+	},
+	[700009843] = {
+		description = "a33477053eb7171c977ab70f0b65cd92",
+		maxLv = 1,
+		type = 1,
+		id = 700009843,
+		extra_param = "",
+		param = {}
+	},
+	[700009844] = {
+		description = "9c9ca9a6f851cea58df56480da34d0f0",
+		maxLv = 1,
+		type = 1,
+		id = 700009844,
+		extra_param = "",
+		param = {}
+	},
+	[700009845] = {
+		description = "66fb27651e53fc928fac1b0e7bb617d3",
+		maxLv = 1,
+		type = 1,
+		id = 700009845,
+		extra_param = "",
+		param = {}
+	},
+	[700009846] = {
+		description = "01e06c7533e23cb2c4966d407ef67604",
+		maxLv = 1,
+		type = 1,
+		id = 700009846,
+		extra_param = "",
+		param = {}
+	},
+	[700009851] = {
+		description = "ecf7029247be3776fa016f47d78e992a",
+		maxLv = 3,
+		type = 1,
+		id = 700009851,
+		extra_param = "",
+		param = {}
+	},
+	[700009852] = {
+		description = "e94ed5e21f129672b475204196ad790a",
+		maxLv = 3,
+		type = 1,
+		id = 700009852,
+		extra_param = "",
+		param = {}
+	},
+	[700009853] = {
+		description = "4fd5a5b325a2e7277b1f6a26cd7aef01",
+		maxLv = 3,
+		type = 1,
+		id = 700009853,
+		extra_param = "",
+		param = {}
+	},
+	[700009854] = {
+		description = "98db7f688da7b3e9644e913666390c51",
+		maxLv = 3,
+		type = 1,
+		id = 700009854,
 		extra_param = "",
 		param = {}
 	},
@@ -43899,6 +45916,126 @@
 		maxLv = 1,
 		type = 1,
 		id = 700070205,
+		extra_param = "",
+		param = {}
+	},
+	[700070206] = {
+		description = "8a41b9878421dfebb3bae4550cfa0c2c",
+		maxLv = 1,
+		type = 1,
+		id = 700070206,
+		extra_param = "",
+		param = {}
+	},
+	[700070207] = {
+		description = "f0ac9850aff9f19d2587b4b46a5c75d7",
+		maxLv = 1,
+		type = 1,
+		id = 700070207,
+		extra_param = "",
+		param = {}
+	},
+	[700070208] = {
+		description = "e450ac2d936da855d580021c89751696",
+		maxLv = 1,
+		type = 1,
+		id = 700070208,
+		extra_param = "",
+		param = {}
+	},
+	[700070209] = {
+		description = "e48e7fe9765b6105ae054eeb07bdb920",
+		maxLv = 1,
+		type = 1,
+		id = 700070209,
+		extra_param = "",
+		param = {}
+	},
+	[700070210] = {
+		description = "b8f91cfd306ee6fc51de656fd90160cd",
+		maxLv = 1,
+		type = 1,
+		id = 700070210,
+		extra_param = "",
+		param = {}
+	},
+	[700070211] = {
+		description = "27599592c907564bb8c44d3f8df54aa1",
+		maxLv = 1,
+		type = 1,
+		id = 700070211,
+		extra_param = "",
+		param = {}
+	},
+	[700070212] = {
+		description = "a257427b69c7cb0588cf83d05ab78260",
+		maxLv = 1,
+		type = 1,
+		id = 700070212,
+		extra_param = "",
+		param = {}
+	},
+	[700070213] = {
+		description = "58f53f076daa8aee253486a575738a19",
+		maxLv = 1,
+		type = 1,
+		id = 700070213,
+		extra_param = "",
+		param = {}
+	},
+	[700070214] = {
+		description = "f29f005ab6bb9bf54c22fc99e635db1c",
+		maxLv = 1,
+		type = 1,
+		id = 700070214,
+		extra_param = "",
+		param = {}
+	},
+	[700070215] = {
+		description = "213e9648699acd1c65f7d5819e65577c",
+		maxLv = 1,
+		type = 1,
+		id = 700070215,
+		extra_param = "",
+		param = {}
+	},
+	[700070216] = {
+		description = "24d657c70329f466b8b3e2a2d1071626",
+		maxLv = 1,
+		type = 1,
+		id = 700070216,
+		extra_param = "",
+		param = {}
+	},
+	[700070217] = {
+		description = "7ad7a1059134bcdcf48da283e8664b66",
+		maxLv = 1,
+		type = 1,
+		id = 700070217,
+		extra_param = "",
+		param = {}
+	},
+	[700070218] = {
+		description = "bfa662c371d6866b562754aa46a4ec80",
+		maxLv = 1,
+		type = 1,
+		id = 700070218,
+		extra_param = "",
+		param = {}
+	},
+	[700070219] = {
+		description = "7a34ee07be5342aba0ef7878d76eed52",
+		maxLv = 1,
+		type = 1,
+		id = 700070219,
+		extra_param = "",
+		param = {}
+	},
+	[700070220] = {
+		description = "c9d5ac597a08f1d4f9364707c550db80",
+		maxLv = 1,
+		type = 1,
+		id = 700070220,
 		extra_param = "",
 		param = {}
 	},
@@ -45672,6 +47809,2868 @@
 			}
 		}
 	},
+	[700071001] = {
+		description = "f4fc0ef43ac80138480d127cc4934ed3",
+		maxLv = 3,
+		type = 1,
+		id = 700071001,
+		extra_param = "",
+		param = {
+			{
+				20,
+				20,
+				false,
+				"%"
+			},
+			{
+				10,
+				10,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071002] = {
+		description = "0b1ad8b01d521ab02c3dfc3325f6e1ff",
+		maxLv = 3,
+		type = 1,
+		id = 700071002,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071003] = {
+		description = "95e39d34b6b3b8366a38a5c0f1898a12",
+		maxLv = 3,
+		type = 1,
+		id = 700071003,
+		extra_param = "",
+		param = {
+			{
+				10,
+				10,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071004] = {
+		description = "a49a13d0bd26ebdbf724e14561317237",
+		maxLv = 3,
+		type = 1,
+		id = 700071004,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071005] = {
+		description = "39f4390289a05f095eaf36890f3ca959",
+		maxLv = 3,
+		type = 1,
+		id = 700071005,
+		extra_param = "",
+		param = {
+			{
+				15,
+				15,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071006] = {
+		description = "62da3bac63498596290a5c2c9f007b30",
+		maxLv = 3,
+		type = 1,
+		id = 700071006,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			},
+			{
+				25,
+				25,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071007] = {
+		description = "5b3eaea61d68c4ee11c243ae43ba9c06",
+		maxLv = 3,
+		type = 1,
+		id = 700071007,
+		extra_param = "",
+		param = {
+			{
+				10,
+				10,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071008] = {
+		description = "03f1b715e9bfbae4e48d836abc6074ba",
+		maxLv = 3,
+		type = 1,
+		id = 700071008,
+		extra_param = "",
+		param = {
+			{
+				1,
+				1,
+				false,
+				""
+			}
+		}
+	},
+	[700071011] = {
+		description = "1c9ca691f32a084127c7751ad9da5c2e",
+		maxLv = 999,
+		type = 1,
+		id = 700071011,
+		extra_param = "",
+		param = {}
+	},
+	[700071012] = {
+		description = "7d2989fd422d60993fe3c12e4e5cf9f6",
+		maxLv = 1,
+		type = 1,
+		id = 700071012,
+		extra_param = "",
+		param = {}
+	},
+	[700071013] = {
+		description = "7bf1de6246dacf5a558038faf1081597",
+		maxLv = 1,
+		type = 1,
+		id = 700071013,
+		extra_param = "",
+		param = {}
+	},
+	[700071014] = {
+		description = "03b50f7e33a598021e4bd565cd80c8d1",
+		maxLv = 1,
+		type = 1,
+		id = 700071014,
+		extra_param = "",
+		param = {}
+	},
+	[700071015] = {
+		description = "054471e6322bde280256c39aebf57a68",
+		maxLv = 1,
+		type = 1,
+		id = 700071015,
+		extra_param = "",
+		param = {}
+	},
+	[700071016] = {
+		description = "0a486499110b1c18f99a748eaa937a45",
+		maxLv = 4,
+		type = 1,
+		id = 700071016,
+		extra_param = "",
+		param = {}
+	},
+	[700071017] = {
+		description = "79458d7eccc086771870cf914091dc61",
+		maxLv = 1,
+		type = 1,
+		id = 700071017,
+		extra_param = "",
+		param = {}
+	},
+	[700071018] = {
+		description = "a1becbe02f29e6e4d42b570a0394742d",
+		maxLv = 1,
+		type = 1,
+		id = 700071018,
+		extra_param = "",
+		param = {}
+	},
+	[700071019] = {
+		description = "ec443d15452c9f00a8cd6526d75ed597",
+		maxLv = 1,
+		type = 1,
+		id = 700071019,
+		extra_param = "",
+		param = {}
+	},
+	[700071020] = {
+		description = "3c856195879ad31f1949425062cd82d2",
+		maxLv = 1,
+		type = 1,
+		id = 700071020,
+		extra_param = "",
+		param = {}
+	},
+	[700071021] = {
+		description = "acbe3dbdb0341f093fcef3615331bd5f",
+		maxLv = 1,
+		type = 1,
+		id = 700071021,
+		extra_param = "",
+		param = {}
+	},
+	[700071022] = {
+		description = "f4d45b54c81a37950e815abb55fa25e8",
+		maxLv = 1,
+		type = 1,
+		id = 700071022,
+		extra_param = "",
+		param = {}
+	},
+	[700071023] = {
+		description = "b3d492682facdbcee80beaebeef3fa64",
+		maxLv = 1,
+		type = 1,
+		id = 700071023,
+		extra_param = "",
+		param = {}
+	},
+	[700071024] = {
+		description = "1acca0fc0aa75d98663fbddc745b8f43",
+		maxLv = 4,
+		type = 1,
+		id = 700071024,
+		extra_param = "",
+		param = {
+			{
+				50,
+				40,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071025] = {
+		description = "5689f206fd0379466dd9079b57d43b3b",
+		maxLv = 2,
+		type = 1,
+		id = 700071025,
+		extra_param = "",
+		param = {
+			{
+				30,
+				30,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071026] = {
+		description = "50879674da333d51565b023f6b7e524c",
+		maxLv = 1,
+		type = 1,
+		id = 700071026,
+		extra_param = "",
+		param = {}
+	},
+	[700071027] = {
+		description = "1631a49c42c659e2647d0a9bd4c6298a",
+		maxLv = 1,
+		type = 1,
+		id = 700071027,
+		extra_param = "",
+		param = {}
+	},
+	[700071101] = {
+		description = "1f2557672914733e2c59cc8c6c212467",
+		maxLv = 3,
+		type = 1,
+		id = 700071101,
+		extra_param = "",
+		param = {
+			{
+				25,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071102] = {
+		description = "73201dca0004098777800644c699a359",
+		maxLv = 3,
+		type = 1,
+		id = 700071102,
+		extra_param = "",
+		param = {
+			{
+				6,
+				-0.5,
+				false,
+				""
+			},
+			{
+				600,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071103] = {
+		description = "188b2804039508e3f99a32b48e0ee2cd",
+		maxLv = 3,
+		type = 1,
+		id = 700071103,
+		extra_param = "",
+		param = {
+			{
+				0.4,
+				0.15,
+				false,
+				""
+			}
+		}
+	},
+	[700071104] = {
+		description = "915adad872769d9f389731db3fa4cb84",
+		maxLv = 3,
+		type = 1,
+		id = 700071104,
+		extra_param = "",
+		param = {
+			{
+				15,
+				10,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071105] = {
+		description = "575c6227fe2f0c320f1ad3dec0c1b2e1",
+		maxLv = 3,
+		type = 1,
+		id = 700071105,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				0,
+				false,
+				"%"
+			},
+			{
+				3,
+				-0.5,
+				false,
+				""
+			}
+		}
+	},
+	[700071106] = {
+		description = "51805b6b82f035a7a71687c899215b9a",
+		maxLv = 3,
+		type = 1,
+		id = 700071106,
+		extra_param = "",
+		param = {
+			{
+				6,
+				-0.5,
+				false,
+				""
+			},
+			{
+				600,
+				0,
+				false,
+				"%"
+			},
+			{
+				3,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071107] = {
+		description = "3a9e9163a7c886f1957d242325a7e9ce",
+		maxLv = 3,
+		type = 1,
+		id = 700071107,
+		extra_param = "",
+		param = {
+			{
+				10,
+				10,
+				false,
+				"%"
+			},
+			{
+				2,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071108] = {
+		description = "94cdc4fe81166b1a24b2aa448764be66",
+		maxLv = 3,
+		type = 1,
+		id = 700071108,
+		extra_param = "",
+		param = {
+			{
+				20,
+				8,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071109] = {
+		description = "29fecd0a466b4f4b24f0402e77eff87f",
+		maxLv = 3,
+		type = 1,
+		id = 700071109,
+		extra_param = "",
+		param = {
+			{
+				0.7,
+				0.3,
+				false,
+				""
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071110] = {
+		description = "e4cc54d0bd751d79a7e720baa2fff576",
+		maxLv = 3,
+		type = 1,
+		id = 700071110,
+		extra_param = "",
+		param = {
+			{
+				1,
+				1,
+				false,
+				""
+			},
+			{
+				150,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071111] = {
+		description = "bfb4f8ea7f4f235e16116b6a2e815d9e",
+		maxLv = 3,
+		type = 1,
+		id = 700071111,
+		extra_param = "",
+		param = {
+			{
+				1,
+				0.5,
+				false,
+				""
+			}
+		}
+	},
+	[700071112] = {
+		description = "d3dc18e07a14995869ac453654bcf8cd",
+		maxLv = 3,
+		type = 1,
+		id = 700071112,
+		extra_param = "",
+		param = {
+			{
+				5,
+				1,
+				false,
+				"%"
+			},
+			{
+				100,
+				8,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071121] = {
+		description = "cab89382c978b509da2f43af8a43ecab",
+		maxLv = 1,
+		type = 1,
+		id = 700071121,
+		extra_param = "",
+		param = {
+			{
+				2,
+				0,
+				false,
+				""
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071122] = {
+		description = "dafdde78685486d5d37e3e6aec869f3d",
+		maxLv = 1,
+		type = 1,
+		id = 700071122,
+		extra_param = "",
+		param = {
+			{
+				40,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071123] = {
+		description = "518582f3f0b534b12efd27e83dc16ba9",
+		maxLv = 1,
+		type = 1,
+		id = 700071123,
+		extra_param = "",
+		param = {
+			{
+				6,
+				0,
+				false,
+				""
+			},
+			{
+				180,
+				0,
+				false,
+				"%"
+			},
+			{
+				0.3,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071149] = {
+		description = "9a9e61a03c5b112fed1de87403b37b64",
+		maxLv = 1,
+		type = 1,
+		id = 700071149,
+		extra_param = "",
+		param = {}
+	},
+	[700071150] = {
+		description = "c811af951b009fe686fc657e7bc6f989",
+		maxLv = 1,
+		type = 1,
+		id = 700071150,
+		extra_param = "",
+		param = {
+			{
+				0.5,
+				0,
+				false,
+				""
+			},
+			{
+				200,
+				0,
+				false,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071151] = {
+		description = "178c254ae48f55e4001467baa46f1c20",
+		maxLv = 3,
+		type = 1,
+		id = 700071151,
+		extra_param = "",
+		param = {}
+	},
+	[700071152] = {
+		description = "462fe19110ce516db1ff5886c0f0372c",
+		maxLv = 3,
+		type = 1,
+		id = 700071152,
+		extra_param = "",
+		param = {}
+	},
+	[700071153] = {
+		description = "b2cd6223720e1339f17cae651663e63b",
+		maxLv = 3,
+		type = 1,
+		id = 700071153,
+		extra_param = "",
+		param = {}
+	},
+	[700071154] = {
+		description = "4ce607d265d0387257d99dd6c375bbb1",
+		maxLv = 3,
+		type = 1,
+		id = 700071154,
+		extra_param = "",
+		param = {}
+	},
+	[700071155] = {
+		description = "9a410aeb785590f05f78443e2dca9582",
+		maxLv = 3,
+		type = 1,
+		id = 700071155,
+		extra_param = "",
+		param = {}
+	},
+	[700071156] = {
+		description = "b91265906402bc62f31e2c5744f75bb8",
+		maxLv = 3,
+		type = 1,
+		id = 700071156,
+		extra_param = "",
+		param = {}
+	},
+	[700071157] = {
+		description = "e8c7c92d2381540c3b9b3e3d4ccd1794",
+		maxLv = 3,
+		type = 1,
+		id = 700071157,
+		extra_param = "",
+		param = {}
+	},
+	[700071158] = {
+		description = "abdb8d833d73e11ffea31185950dbb88",
+		maxLv = 3,
+		type = 1,
+		id = 700071158,
+		extra_param = "",
+		param = {}
+	},
+	[700071159] = {
+		description = "039094effa3fe698a9b7be0628a83e8f",
+		maxLv = 3,
+		type = 1,
+		id = 700071159,
+		extra_param = "",
+		param = {}
+	},
+	[700071160] = {
+		description = "214662dee0be3c5860597bf74d269ea6",
+		maxLv = 3,
+		type = 1,
+		id = 700071160,
+		extra_param = "",
+		param = {}
+	},
+	[700071161] = {
+		description = "e9043f1b4768a717a0455ea863793fee",
+		maxLv = 3,
+		type = 1,
+		id = 700071161,
+		extra_param = "",
+		param = {}
+	},
+	[700071162] = {
+		description = "66b644c09e619ad3c60f49dbd503595b",
+		maxLv = 3,
+		type = 1,
+		id = 700071162,
+		extra_param = "",
+		param = {}
+	},
+	[700071171] = {
+		description = "9e9e0d88c5e8371656a3660689a913ff",
+		maxLv = 1,
+		type = 1,
+		id = 700071171,
+		extra_param = "",
+		param = {}
+	},
+	[700071172] = {
+		description = "48fef0c1ca6f70b1e0abf8ca5e19f9e7",
+		maxLv = 1,
+		type = 1,
+		id = 700071172,
+		extra_param = "",
+		param = {}
+	},
+	[700071173] = {
+		description = "01e72f23181123e9cd366d3a3a79be16",
+		maxLv = 1,
+		type = 1,
+		id = 700071173,
+		extra_param = "",
+		param = {}
+	},
+	[700071199] = {
+		description = "9ac178a51333c48b43323d174bb308ec",
+		maxLv = 1,
+		type = 1,
+		id = 700071199,
+		extra_param = "",
+		param = {}
+	},
+	[700071200] = {
+		description = "1757a7c7d38cc4df833028ff8e28a262",
+		maxLv = 1,
+		type = 1,
+		id = 700071200,
+		extra_param = "",
+		param = {}
+	},
+	[700071201] = {
+		description = "a407899d4ba7214ad960aed8a965cb58",
+		maxLv = 3,
+		type = 1,
+		id = 700071201,
+		extra_param = "",
+		param = {
+			{
+				10,
+				5,
+				false,
+				"%"
+			},
+			{
+				6,
+				0,
+				false,
+				""
+			},
+			{
+				5,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071202] = {
+		description = "fdb24699f6c3e0e270c2a77c9a4ee7fb",
+		maxLv = 3,
+		type = 1,
+		id = 700071202,
+		extra_param = "",
+		param = {
+			{
+				5,
+				0,
+				false,
+				""
+			},
+			{
+				5,
+				2,
+				false,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071203] = {
+		description = "31312ebf72df00dc7f8c83d2d1b7ceaa",
+		maxLv = 3,
+		type = 1,
+		id = 700071203,
+		extra_param = "",
+		param = {
+			{
+				10,
+				5,
+				false,
+				"%"
+			},
+			{
+				6,
+				0,
+				false,
+				""
+			},
+			{
+				5,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071204] = {
+		description = "9c44441c3443ec493e2323baf4a14926",
+		maxLv = 3,
+		type = 1,
+		id = 700071204,
+		extra_param = "",
+		param = {
+			{
+				1,
+				0,
+				false,
+				""
+			},
+			{
+				30,
+				10,
+				false,
+				""
+			},
+			{
+				200,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071205] = {
+		description = "8dbff6226f5dd97e44bf1598a692d982",
+		maxLv = 3,
+		type = 1,
+		id = 700071205,
+		extra_param = "",
+		param = {
+			{
+				30,
+				10,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071206] = {
+		description = "0fd378518fc32c659a7ff997c758e504",
+		maxLv = 3,
+		type = 1,
+		id = 700071206,
+		extra_param = "",
+		param = {
+			{
+				10,
+				5,
+				false,
+				"%"
+			},
+			{
+				200,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071207] = {
+		description = "5907a342234f6cf920d5e4d3fc110613",
+		maxLv = 3,
+		type = 1,
+		id = 700071207,
+		extra_param = "",
+		param = {
+			{
+				10,
+				5,
+				false,
+				"%"
+			},
+			{
+				6,
+				0,
+				false,
+				""
+			},
+			{
+				5,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071208] = {
+		description = "ea1f1696d5f5d902f6b3b8d0e1557e3f",
+		maxLv = 3,
+		type = 1,
+		id = 700071208,
+		extra_param = "",
+		param = {
+			{
+				50,
+				20,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071209] = {
+		description = "75b30297d5ef35c9523370f7b8b28937",
+		maxLv = 3,
+		type = 1,
+		id = 700071209,
+		extra_param = "",
+		param = {
+			{
+				40,
+				10,
+				false,
+				"%"
+			},
+			{
+				50,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071210] = {
+		description = "911a6b1a5a798c7bff0e52de2c11b880",
+		maxLv = 3,
+		type = 1,
+		id = 700071210,
+		extra_param = "",
+		param = {
+			{
+				70,
+				30,
+				false,
+				""
+			}
+		}
+	},
+	[700071211] = {
+		description = "3b7f308edec06af4f2cca8a1ed0cbb2c",
+		maxLv = 3,
+		type = 1,
+		id = 700071211,
+		extra_param = "",
+		param = {
+			{
+				20,
+				10,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071212] = {
+		description = "aaa2a0dcd06f71aeb6f3f265650eed99",
+		maxLv = 3,
+		type = 1,
+		id = 700071212,
+		extra_param = "",
+		param = {
+			{
+				12,
+				6,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071221] = {
+		description = "0eebafddbdfc3db95e39428861afe343",
+		maxLv = 1,
+		type = 1,
+		id = 700071221,
+		extra_param = "",
+		param = {}
+	},
+	[700071222] = {
+		description = "c756a0bb0471b6c131360de349255d3b",
+		maxLv = 1,
+		type = 1,
+		id = 700071222,
+		extra_param = "",
+		param = {
+			{
+				2,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071223] = {
+		description = "ab8dd47ccdb42e3715ed075fae13170e",
+		maxLv = 1,
+		type = 1,
+		id = 700071223,
+		extra_param = "",
+		param = {
+			{
+				3,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071249] = {
+		description = "124f3144da3c0a18a53371d0d2b68c71",
+		maxLv = 1,
+		type = 1,
+		id = 700071249,
+		extra_param = "",
+		param = {}
+	},
+	[700071250] = {
+		description = "e1150cddc1bcae1bddd61c966f9e79ec",
+		maxLv = 1,
+		type = 1,
+		id = 700071250,
+		extra_param = "",
+		param = {
+			{
+				40,
+				0,
+				false,
+				""
+			},
+			{
+				120,
+				0,
+				false,
+				"%"
+			},
+			{
+				200,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071251] = {
+		description = "036b34924ddf229a1a43af22a16a5789",
+		maxLv = 3,
+		type = 1,
+		id = 700071251,
+		extra_param = "",
+		param = {
+			{
+				90,
+				30,
+				false,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071252] = {
+		description = "41e1e41be752a1c734279cac6d824538",
+		maxLv = 3,
+		type = 1,
+		id = 700071252,
+		extra_param = "",
+		param = {
+			{
+				90,
+				30,
+				false,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071253] = {
+		description = "c16845b41e70178cc4604dcfa20aad58",
+		maxLv = 3,
+		type = 1,
+		id = 700071253,
+		extra_param = "",
+		param = {
+			{
+				5,
+				2,
+				false,
+				""
+			},
+			{
+				3,
+				1,
+				false,
+				""
+			}
+		}
+	},
+	[700071254] = {
+		description = "1c91d5218ba1c39ea760ab50e57c6d3b",
+		maxLv = 3,
+		type = 1,
+		id = 700071254,
+		extra_param = "",
+		param = {
+			{
+				2,
+				0.5,
+				false,
+				""
+			}
+		}
+	},
+	[700071255] = {
+		description = "fc905e1cd1ad48cb3b629e022544502f",
+		maxLv = 3,
+		type = 1,
+		id = 700071255,
+		extra_param = "",
+		param = {
+			{
+				5,
+				2,
+				false,
+				""
+			},
+			{
+				3,
+				1,
+				false,
+				""
+			}
+		}
+	},
+	[700071256] = {
+		description = "ccee5f510426bb67eb1ac82da02b593e",
+		maxLv = 3,
+		type = 1,
+		id = 700071256,
+		extra_param = "",
+		param = {
+			{
+				1,
+				0.5,
+				false,
+				""
+			}
+		}
+	},
+	[700071257] = {
+		description = "4245a5c3f9ff3b53d48a6225e5458143",
+		maxLv = 3,
+		type = 1,
+		id = 700071257,
+		extra_param = "",
+		param = {
+			{
+				4,
+				2,
+				false,
+				""
+			}
+		}
+	},
+	[700071258] = {
+		description = "c2e13c034ee1b3c9601c88f9516ff2ec",
+		maxLv = 3,
+		type = 1,
+		id = 700071258,
+		extra_param = "",
+		param = {
+			{
+				10,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071259] = {
+		description = "4c0e4a42a0eb0d74b6353c3251cb3473",
+		maxLv = 3,
+		type = 1,
+		id = 700071259,
+		extra_param = "",
+		param = {
+			{
+				30,
+				-5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071260] = {
+		description = "ab375e6e06c8e4830e3e7d7ce45163a0",
+		maxLv = 3,
+		type = 1,
+		id = 700071260,
+		extra_param = "",
+		param = {
+			{
+				5,
+				2,
+				false,
+				""
+			}
+		}
+	},
+	[700071261] = {
+		description = "820c50120c2d1d98107ca6a17481631b",
+		maxLv = 3,
+		type = 1,
+		id = 700071261,
+		extra_param = "",
+		param = {
+			{
+				20,
+				10,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071262] = {
+		description = "05bbb2935229069a59b12c63c71708f5",
+		maxLv = 3,
+		type = 1,
+		id = 700071262,
+		extra_param = "",
+		param = {
+			{
+				90,
+				30,
+				false,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071271] = {
+		description = "6e6fa5946e79c3d329576114cc67486d",
+		maxLv = 1,
+		type = 1,
+		id = 700071271,
+		extra_param = "",
+		param = {}
+	},
+	[700071272] = {
+		description = "d4348db54fc8a6a6608cf09af04adf31",
+		maxLv = 1,
+		type = 1,
+		id = 700071272,
+		extra_param = "",
+		param = {}
+	},
+	[700071273] = {
+		description = "d704800af0b0696f1d3c671479fe2f0d",
+		maxLv = 1,
+		type = 1,
+		id = 700071273,
+		extra_param = "",
+		param = {}
+	},
+	[700071299] = {
+		description = "bb4354ec918a1da7a5b28e9e7f35e122",
+		maxLv = 1,
+		type = 1,
+		id = 700071299,
+		extra_param = "",
+		param = {}
+	},
+	[700071300] = {
+		description = "fb53fa59617b03013c8f24e3aef3d5a7",
+		maxLv = 1,
+		type = 1,
+		id = 700071300,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071301] = {
+		description = "7112dd16ef07e1de69922e937f5d8298",
+		maxLv = 3,
+		type = 1,
+		id = 700071301,
+		extra_param = "",
+		param = {
+			{
+				10,
+				5,
+				false,
+				""
+			},
+			{
+				5,
+				0,
+				false,
+				""
+			},
+			{
+				2200,
+				0,
+				false,
+				""
+			},
+			{
+				50,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071302] = {
+		description = "6f944bed646db1e679f5060fc206d7ed",
+		maxLv = 3,
+		type = 1,
+		id = 700071302,
+		extra_param = "",
+		param = {
+			{
+				5,
+				2,
+				false,
+				""
+			},
+			{
+				6,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071303] = {
+		description = "5b4c6f7fefeeff96eb99fd69799d7d72",
+		maxLv = 3,
+		type = 1,
+		id = 700071303,
+		extra_param = "",
+		param = {
+			{
+				100,
+				50,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071304] = {
+		description = "21d9b2ac53eb8f0923e22af7c23ff6c6",
+		maxLv = 3,
+		type = 1,
+		id = 700071304,
+		extra_param = "",
+		param = {
+			{
+				35,
+				-5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071305] = {
+		description = "e1745b0183534e9f0f6c064094717833",
+		maxLv = 3,
+		type = 1,
+		id = 700071305,
+		extra_param = "",
+		param = {
+			{
+				1.5,
+				0.6,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071306] = {
+		description = "5a94079079ecea00c2a4a1e7efea2981",
+		maxLv = 3,
+		type = 1,
+		id = 700071306,
+		extra_param = "",
+		param = {
+			{
+				120,
+				60,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071307] = {
+		description = "15e51fba7f9f80c95435d44e29a0045f",
+		maxLv = 3,
+		type = 1,
+		id = 700071307,
+		extra_param = "",
+		param = {
+			{
+				20,
+				15,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071308] = {
+		description = "6b846dc70a70973cabc9fcf0f254d5b1",
+		maxLv = 3,
+		type = 1,
+		id = 700071308,
+		extra_param = "",
+		param = {
+			{
+				3,
+				1,
+				false,
+				""
+			}
+		}
+	},
+	[700071309] = {
+		description = "75d556fdfbfeaf35e585d37cf807724b",
+		maxLv = 3,
+		type = 1,
+		id = 700071309,
+		extra_param = "",
+		param = {
+			{
+				300,
+				0,
+				false,
+				""
+			},
+			{
+				200,
+				50,
+				false,
+				""
+			}
+		}
+	},
+	[700071310] = {
+		description = "9206e96e39e2b59b9e988bce084fb01e",
+		maxLv = 3,
+		type = 1,
+		id = 700071310,
+		extra_param = "",
+		param = {
+			{
+				30,
+				20,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071311] = {
+		description = "df817ce6f4a5bbf4988357662cdb76e5",
+		maxLv = 3,
+		type = 1,
+		id = 700071311,
+		extra_param = "",
+		param = {
+			{
+				1,
+				0.5,
+				false,
+				""
+			}
+		}
+	},
+	[700071312] = {
+		description = "5b5b842006c2cc80d46c659eb58e1dbd",
+		maxLv = 3,
+		type = 1,
+		id = 700071312,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				""
+			},
+			{
+				5,
+				2.5,
+				false,
+				""
+			},
+			{
+				6,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071321] = {
+		description = "82bd9ac119625bcbf26bac5d632ed499",
+		maxLv = 1,
+		type = 1,
+		id = 700071321,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				150,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071322] = {
+		description = "f9b3f08cba7a33c620eae67eb3978f36",
+		maxLv = 1,
+		type = 1,
+		id = 700071322,
+		extra_param = "",
+		param = {
+			{
+				150,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071323] = {
+		description = "d2787f0982ffbb68b0a1f0c5d2a00449",
+		maxLv = 1,
+		type = 1,
+		id = 700071323,
+		extra_param = "",
+		param = {
+			{
+				0.6,
+				0,
+				false,
+				""
+			},
+			{
+				60,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071349] = {
+		description = "c10fb8ec5bc88de935981dc02ceaed4d",
+		maxLv = 1,
+		type = 1,
+		id = 700071349,
+		extra_param = "",
+		param = {}
+	},
+	[700071350] = {
+		description = "f30202b8d846e350d235f43ff040d265",
+		maxLv = 1,
+		type = 1,
+		id = 700071350,
+		extra_param = "",
+		param = {
+			{
+				1,
+				0,
+				false,
+				""
+			},
+			{
+				10,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071351] = {
+		description = "160c7305a6a2bedec8590bb17cc9a603",
+		maxLv = 3,
+		type = 1,
+		id = 700071351,
+		extra_param = "",
+		param = {
+			{
+				100,
+				30,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071352] = {
+		description = "8a7e0b31189756944675c0c4d812e4be",
+		maxLv = 3,
+		type = 1,
+		id = 700071352,
+		extra_param = "",
+		param = {
+			{
+				70,
+				20,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071353] = {
+		description = "a5c469d3bc4202a9d7b799bf02139ebb",
+		maxLv = 3,
+		type = 1,
+		id = 700071353,
+		extra_param = "",
+		param = {
+			{
+				3,
+				1,
+				false,
+				""
+			}
+		}
+	},
+	[700071354] = {
+		description = "abdb8f00fe8c912f8cf11f9639b506d0",
+		maxLv = 3,
+		type = 1,
+		id = 700071354,
+		extra_param = "",
+		param = {
+			{
+				1,
+				0.4,
+				false,
+				""
+			}
+		}
+	},
+	[700071355] = {
+		description = "f90a102ce9f19d59fa6dff3ce918dcbd",
+		maxLv = 3,
+		type = 1,
+		id = 700071355,
+		extra_param = "",
+		param = {
+			{
+				3,
+				0,
+				false,
+				""
+			},
+			{
+				300,
+				300,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071356] = {
+		description = "b4d601ea82bdaacad802416cff1b2f34",
+		maxLv = 3,
+		type = 1,
+		id = 700071356,
+		extra_param = "",
+		param = {
+			{
+				3,
+				0,
+				false,
+				""
+			},
+			{
+				200,
+				200,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071357] = {
+		description = "7c84ea16028c6b72f70a231dc5ccab7b",
+		maxLv = 3,
+		type = 1,
+		id = 700071357,
+		extra_param = "",
+		param = {
+			{
+				6,
+				2,
+				false,
+				""
+			},
+			{
+				3,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071358] = {
+		description = "37726a7e76454143192a73577a756ba0",
+		maxLv = 3,
+		type = 1,
+		id = 700071358,
+		extra_param = "",
+		param = {
+			{
+				10,
+				2,
+				false,
+				""
+			}
+		}
+	},
+	[700071359] = {
+		description = "c2f58abaaabe3622a636a96c4228b8aa",
+		maxLv = 3,
+		type = 1,
+		id = 700071359,
+		extra_param = "",
+		param = {
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				6,
+				2,
+				false,
+				""
+			}
+		}
+	},
+	[700071360] = {
+		description = "0fe13854d06450ee1902c27010e7ef2f",
+		maxLv = 3,
+		type = 1,
+		id = 700071360,
+		extra_param = "",
+		param = {
+			{
+				5,
+				-1,
+				false,
+				""
+			},
+			{
+				30,
+				0,
+				false,
+				""
+			},
+			{
+				1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071361] = {
+		description = "60179ba1d7476ffd33288db95c58a1c7",
+		maxLv = 3,
+		type = 1,
+		id = 700071361,
+		extra_param = "",
+		param = {
+			{
+				10,
+				2,
+				false,
+				""
+			}
+		}
+	},
+	[700071362] = {
+		description = "8b8d30712f048d66264ae0628d3ab08b",
+		maxLv = 3,
+		type = 1,
+		id = 700071362,
+		extra_param = "",
+		param = {
+			{
+				2,
+				1,
+				false,
+				""
+			}
+		}
+	},
+	[700071371] = {
+		description = "222ba8bc2bf5a4613269c102d5440cfb",
+		maxLv = 1,
+		type = 1,
+		id = 700071371,
+		extra_param = "",
+		param = {
+			{
+				0.5,
+				0,
+				false,
+				""
+			},
+			{
+				60,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071372] = {
+		description = "8640395743b3dd0c44f221f6c4e29947",
+		maxLv = 1,
+		type = 1,
+		id = 700071372,
+		extra_param = "",
+		param = {}
+	},
+	[700071373] = {
+		description = "4f1e3a98e75a59708905cc9d1004ebbc",
+		maxLv = 1,
+		type = 1,
+		id = 700071373,
+		extra_param = "",
+		param = {
+			{
+				25,
+				0,
+				false,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071399] = {
+		description = "ad5f3e58f8e349c1c0739c2ce7074b69",
+		maxLv = 1,
+		type = 1,
+		id = 700071399,
+		extra_param = "",
+		param = {}
+	},
+	[700071400] = {
+		description = "88b28e714b7710496901505f49adc812",
+		maxLv = 1,
+		type = 1,
+		id = 700071400,
+		extra_param = "",
+		param = {
+			{
+				0.2,
+				0,
+				false,
+				""
+			},
+			{
+				120,
+				0,
+				false,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071412] = {
+		description = "435241b450e12c6ac09fdcfa3b1fd640",
+		maxLv = 1,
+		type = 1,
+		id = 700071412,
+		extra_param = "",
+		param = {}
+	},
+	[700071413] = {
+		description = "cfbf9f42bc783191aa445d769ae9b82d",
+		maxLv = 1,
+		type = 1,
+		id = 700071413,
+		extra_param = "",
+		param = {
+			{
+				1,
+				0,
+				false,
+				"%"
+			},
+			{
+				1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071414] = {
+		description = "6f165bbe2e8c2d86b4491003849d83d2",
+		maxLv = 1,
+		type = 1,
+		id = 700071414,
+		extra_param = "",
+		param = {
+			{
+				0.1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071415] = {
+		description = "926e7eba79b3febeabe05267d15fc205",
+		maxLv = 1,
+		type = 1,
+		id = 700071415,
+		extra_param = "",
+		param = {
+			{
+				30,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071416] = {
+		description = "dca766dfe5769f68ea77b8dd8d0d6bdc",
+		maxLv = 1,
+		type = 1,
+		id = 700071416,
+		extra_param = "",
+		param = {
+			{
+				300,
+				0,
+				false,
+				"%"
+			},
+			{
+				1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071423] = {
+		description = "3fd29cfa1c3eb4daf03d97ac746fb949",
+		maxLv = 1,
+		type = 1,
+		id = 700071423,
+		extra_param = "",
+		param = {}
+	},
+	[700071424] = {
+		description = "4d386ccd612c3974340aca27d1d848a6",
+		maxLv = 1,
+		type = 1,
+		id = 700071424,
+		extra_param = "",
+		param = {}
+	},
+	[700071425] = {
+		description = "9180ec94d07afea94005d8e7015c100a",
+		maxLv = 1,
+		type = 1,
+		id = 700071425,
+		extra_param = "",
+		param = {}
+	},
+	[700071426] = {
+		description = "b63720c1c71aacc66d742dba4fd310f8",
+		maxLv = 1,
+		type = 1,
+		id = 700071426,
+		extra_param = "",
+		param = {}
+	},
+	[700071434] = {
+		description = "78d94d04aee62e9329f3dbb18c658210",
+		maxLv = 1,
+		type = 1,
+		id = 700071434,
+		extra_param = "",
+		param = {}
+	},
+	[700071435] = {
+		description = "2289c656a3be634b7a30cad6cd752ca4",
+		maxLv = 1,
+		type = 1,
+		id = 700071435,
+		extra_param = "",
+		param = {
+			{
+				100,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071436] = {
+		description = "d77c93341302227dabc7ff00909d63c8",
+		maxLv = 1,
+		type = 1,
+		id = 700071436,
+		extra_param = "",
+		param = {
+			{
+				1,
+				0,
+				false,
+				""
+			},
+			{
+				100,
+				30,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071445] = {
+		description = "eea195a1d726abecdacf93a4e6ad6f78",
+		maxLv = 1,
+		type = 1,
+		id = 700071445,
+		extra_param = "",
+		param = {
+			{
+				0.1,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[700071446] = {
+		description = "9b82958480544c9594aa3be001ef316c",
+		maxLv = 1,
+		type = 1,
+		id = 700071446,
+		extra_param = "",
+		param = {
+			{
+				1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700071456] = {
+		description = "ea34000efeeb45539e53dd2ca07c4476",
+		maxLv = 1,
+		type = 1,
+		id = 700071456,
+		extra_param = "",
+		param = {
+			{
+				3,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[700080000] = {
+		description = "287217a33015089351d9924ef0dc54c3",
+		maxLv = 20,
+		type = 1,
+		id = 700080000,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080010] = {
+		description = "3756fe893c0efa4bbafbebc1686d4cfa",
+		maxLv = 20,
+		type = 1,
+		id = 700080010,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080020] = {
+		description = "0f5f788de3e79d5575fa248bcce65527",
+		maxLv = 20,
+		type = 1,
+		id = 700080020,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080030] = {
+		description = "0de1a10bcf4e03e4fecbf61b853673b2",
+		maxLv = 20,
+		type = 1,
+		id = 700080030,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080040] = {
+		description = "2c5e505483930f93a53b755eb7752117",
+		maxLv = 20,
+		type = 1,
+		id = 700080040,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080050] = {
+		description = "5b9679fe7d00a8198ce3133d81ecafc2",
+		maxLv = 20,
+		type = 1,
+		id = 700080050,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080060] = {
+		description = "67e48bdbb175e3c5f2582b778c386f5a",
+		maxLv = 20,
+		type = 1,
+		id = 700080060,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080070] = {
+		description = "b0a57dcb74f1ed657e33d40c444cab26",
+		maxLv = 20,
+		type = 1,
+		id = 700080070,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080080] = {
+		description = "92d48474d749c5461746bd748d3028cf",
+		maxLv = 20,
+		type = 1,
+		id = 700080080,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080090] = {
+		description = "0beef2cfe6e04c48d52dc354426cf96c",
+		maxLv = 20,
+		type = 1,
+		id = 700080090,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080100] = {
+		description = "0041ee032c314a2e433a92c891bc6a36",
+		maxLv = 20,
+		type = 1,
+		id = 700080100,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080110] = {
+		description = "8173d288e597789a53c423266b672a00",
+		maxLv = 20,
+		type = 1,
+		id = 700080110,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080120] = {
+		description = "70d9ec21bbdb8527c68346401f8e7881",
+		maxLv = 20,
+		type = 1,
+		id = 700080120,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080130] = {
+		description = "c5eaa06e8c6cf29719c9b05e69ddb552",
+		maxLv = 20,
+		type = 1,
+		id = 700080130,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080140] = {
+		description = "1c455415bb32fb25cd62f329c37c9ce6",
+		maxLv = 20,
+		type = 1,
+		id = 700080140,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080150] = {
+		description = "b66ed8c59df02009ca2198d64bcee892",
+		maxLv = 20,
+		type = 1,
+		id = 700080150,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080160] = {
+		description = "fe6e5e47699fba9292dff2e4b29deded",
+		maxLv = 20,
+		type = 1,
+		id = 700080160,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080170] = {
+		description = "e0ea06a236261966d812fc6825c7a65f",
+		maxLv = 20,
+		type = 1,
+		id = 700080170,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080180] = {
+		description = "cf229d79268d517ba673c96d7a50feaa",
+		maxLv = 20,
+		type = 1,
+		id = 700080180,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080190] = {
+		description = "2ed2084bca4109da96b8f03d4009743c",
+		maxLv = 20,
+		type = 1,
+		id = 700080190,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080200] = {
+		description = "ece7edb7407e7689a8f07bcc939d5dcb",
+		maxLv = 20,
+		type = 1,
+		id = 700080200,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080210] = {
+		description = "d86c32763d3407148faa3c16bbbd1f63",
+		maxLv = 20,
+		type = 1,
+		id = 700080210,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080220] = {
+		description = "619d60b66478ed56662ddc2d061b6e32",
+		maxLv = 20,
+		type = 1,
+		id = 700080220,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080230] = {
+		description = "2822b9819376301e01f6806894cccee4",
+		maxLv = 20,
+		type = 1,
+		id = 700080230,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080240] = {
+		description = "b9a52ea47e4399109b63be3340e67976",
+		maxLv = 20,
+		type = 1,
+		id = 700080240,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080250] = {
+		description = "bd2a0d3fedaad41b098e7d8463313880",
+		maxLv = 20,
+		type = 1,
+		id = 700080250,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080260] = {
+		description = "378b07f8662151758d34611378880761",
+		maxLv = 20,
+		type = 1,
+		id = 700080260,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080270] = {
+		description = "fb156f9fe1ae541e870860f5463f5707",
+		maxLv = 20,
+		type = 1,
+		id = 700080270,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080280] = {
+		description = "15e7d6fc4fb565c17cebd8b45b3a7839",
+		maxLv = 20,
+		type = 1,
+		id = 700080280,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080290] = {
+		description = "de6106d5da0b9f344fec4778a09ecd1f",
+		maxLv = 20,
+		type = 1,
+		id = 700080290,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080300] = {
+		description = "35dcb8f680bcca0ae4dc1e6f7ed80908",
+		maxLv = 20,
+		type = 1,
+		id = 700080300,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080310] = {
+		description = "3cfe5dc468abce0ed65f3c01dae8965e",
+		maxLv = 20,
+		type = 1,
+		id = 700080310,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080320] = {
+		description = "3f2498c9611e48200b95b53e69b18c54",
+		maxLv = 20,
+		type = 1,
+		id = 700080320,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080330] = {
+		description = "cfcbf814f6dda4a6ba0af671dac45d0c",
+		maxLv = 20,
+		type = 1,
+		id = 700080330,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080340] = {
+		description = "2ef75ae65ea7078894a42dd54f579de6",
+		maxLv = 20,
+		type = 1,
+		id = 700080340,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080350] = {
+		description = "5351587319a104c541838e97b8dd1c80",
+		maxLv = 20,
+		type = 1,
+		id = 700080350,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080360] = {
+		description = "e7c8618d8255e56f888adfe4ae61e86d",
+		maxLv = 20,
+		type = 1,
+		id = 700080360,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080370] = {
+		description = "a57000c3eb054d8670157da91aaaffc7",
+		maxLv = 20,
+		type = 1,
+		id = 700080370,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080380] = {
+		description = "695ccbfd18b08b9b96e14e70acd5234f",
+		maxLv = 20,
+		type = 1,
+		id = 700080380,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080390] = {
+		description = "e789ede63a036a4c8727a08e9ceaf9cb",
+		maxLv = 20,
+		type = 1,
+		id = 700080390,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080400] = {
+		description = "d8ac5101d68de5e78c3e755691e52fb3",
+		maxLv = 20,
+		type = 1,
+		id = 700080400,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080410] = {
+		description = "b5028094e422082e7a515f9ebe40fa1a",
+		maxLv = 20,
+		type = 1,
+		id = 700080410,
+		extra_param = "",
+		param = {
+			{
+				5,
+				5,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080420] = {
+		description = "75a53c5cf35988b69274a4c877f260ee",
+		maxLv = 10,
+		type = 1,
+		id = 700080420,
+		extra_param = "",
+		param = {
+			{
+				10,
+				10,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080430] = {
+		description = "27a216dabea1cf1a6083d35718b91ce4",
+		maxLv = 10,
+		type = 1,
+		id = 700080430,
+		extra_param = "",
+		param = {
+			{
+				10,
+				10,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080440] = {
+		description = "ac52dc299311c629847425f17c967dc2",
+		maxLv = 10,
+		type = 1,
+		id = 700080440,
+		extra_param = "",
+		param = {
+			{
+				10,
+				10,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080450] = {
+		description = "2f64859899100f3fd0543f7b9f0e53d0",
+		maxLv = 10,
+		type = 1,
+		id = 700080450,
+		extra_param = "",
+		param = {
+			{
+				10,
+				10,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080460] = {
+		description = "11689400b5c789c3ff61dc991b0ae110",
+		maxLv = 10,
+		type = 1,
+		id = 700080460,
+		extra_param = "",
+		param = {
+			{
+				10,
+				10,
+				false,
+				"%"
+			}
+		}
+	},
+	[700080470] = {
+		description = "196c3bac0cd1817ce7901ac4da09c933",
+		maxLv = 10,
+		type = 1,
+		id = 700080470,
+		extra_param = "",
+		param = {
+			{
+				10,
+				10,
+				false,
+				"%"
+			}
+		}
+	},
 	[800000001] = {
 		description = "fb2b9e87d12ab78b71e974b968c55670",
 		maxLv = 1,
@@ -46328,6 +51327,3675 @@
 		extra_param = "",
 		param = {}
 	},
+	[21101110121] = {
+		description = "2e14fbfe9bd5e022dad611e7846e8d0f",
+		maxLv = 60,
+		type = 1,
+		id = 21101110121,
+		extra_param = "",
+		param = {
+			{
+				246,
+				4.803,
+				true,
+				"%"
+			}
+		}
+	},
+	[21101120122] = {
+		description = "9641cbfd9c55389e69d03ec72ac11e0b",
+		maxLv = 60,
+		type = 1,
+		id = 21101120122,
+		extra_param = "",
+		param = {
+			{
+				250,
+				6.41,
+				true,
+				"%"
+			},
+			{
+				70,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21101120223] = {
+		description = "9bca6f9c6c2360c3468be7988e33962d",
+		maxLv = 60,
+		type = 1,
+		id = 21101120223,
+		extra_param = "",
+		param = {
+			{
+				360,
+				9.23,
+				true,
+				"%"
+			},
+			{
+				1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21101120324] = {
+		description = "05c1ec88f2c7c4f6f52801c67ba677a9",
+		maxLv = 60,
+		type = 1,
+		id = 21101120324,
+		extra_param = "",
+		param = {
+			{
+				600,
+				15.384,
+				true,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[21101310121] = {
+		description = "27aa8afe31622b40c119459a2c1694dc",
+		maxLv = 60,
+		type = 1,
+		id = 21101310121,
+		extra_param = "",
+		param = {
+			{
+				415,
+				8.025,
+				true,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21101311141] = {
+		description = "d5625e81042379dee9f8b7c12f630b64",
+		maxLv = 60,
+		type = 1,
+		id = 21101311141,
+		extra_param = "",
+		param = {
+			{
+				415,
+				8.025,
+				true,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			},
+			{
+				8,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21101320122] = {
+		description = "542bd95d43e5e65766467173e7c8e9d2",
+		maxLv = 60,
+		type = 1,
+		id = 21101320122,
+		extra_param = "",
+		param = {
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			},
+			{
+				600,
+				15.381,
+				true,
+				"%"
+			}
+		}
+	},
+	[21101320223] = {
+		description = "6b61e94f10fd6c6f7b129a84d95acbc4",
+		maxLv = 60,
+		type = 1,
+		id = 21101320223,
+		extra_param = "",
+		param = {
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			},
+			{
+				3.5,
+				0,
+				false,
+				""
+			},
+			{
+				500,
+				12.82,
+				true,
+				"%"
+			}
+		}
+	},
+	[21101320324] = {
+		description = "81735ae077c561d04d770231c7ec2467",
+		maxLv = 60,
+		type = 1,
+		id = 21101320324,
+		extra_param = "",
+		param = {
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			},
+			{
+				700,
+				17.947,
+				true,
+				"%"
+			}
+		}
+	},
+	[21101610121] = {
+		description = "c020153336856cd0749477f22c95c301",
+		maxLv = 60,
+		type = 1,
+		id = 21101610121,
+		extra_param = "",
+		param = {
+			{
+				316,
+				6.124,
+				true,
+				"%"
+			},
+			{
+				300,
+				5.767,
+				true,
+				"%"
+			},
+			{
+				150,
+				3.846,
+				true,
+				"%"
+			},
+			{
+				300,
+				7.691,
+				true,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				""
+			},
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			}
+		}
+	},
+	[21101620122] = {
+		description = "1c7b9dcffc48cafd1763b1bad7a5eae4",
+		maxLv = 60,
+		type = 1,
+		id = 21101620122,
+		extra_param = "",
+		param = {
+			{
+				750,
+				19.23,
+				true,
+				"%"
+			},
+			{
+				550,
+				14.095,
+				true,
+				"%"
+			},
+			{
+				350,
+				8.97,
+				true,
+				"%"
+			}
+		}
+	},
+	[21101620223] = {
+		description = "5a639119e1fb704c9cb016c5d11bdeb2",
+		maxLv = 60,
+		type = 1,
+		id = 21101620223,
+		extra_param = "",
+		param = {
+			{
+				600,
+				15.382,
+				true,
+				"%"
+			},
+			{
+				400,
+				10.25,
+				true,
+				"%"
+			},
+			{
+				400,
+				10.25,
+				true,
+				"%"
+			}
+		}
+	},
+	[21101620324] = {
+		description = "4849f3550d66e1e7ac10a652aea3db79",
+		maxLv = 60,
+		type = 1,
+		id = 21101620324,
+		extra_param = "",
+		param = {
+			{
+				600,
+				15.384,
+				true,
+				"%"
+			},
+			{
+				550,
+				14.087,
+				true,
+				"%"
+			},
+			{
+				350,
+				8.963,
+				true,
+				"%"
+			}
+		}
+	},
+	[21101910121] = {
+		description = "e664703ffa1d8f29781e2d6d6821beac",
+		maxLv = 60,
+		type = 1,
+		id = 21101910121,
+		extra_param = "",
+		param = {
+			{
+				229,
+				4.442,
+				true,
+				"%"
+			}
+		}
+	},
+	[21101920122] = {
+		description = "6f6f46bc459b7a0bb4de7626cbeb6ddf",
+		maxLv = 60,
+		type = 1,
+		id = 21101920122,
+		extra_param = "",
+		param = {
+			{
+				220,
+				5.64,
+				true,
+				"%"
+			},
+			{
+				60,
+				1.538,
+				true,
+				"%"
+			},
+			{
+				1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21101920223] = {
+		description = "98bca9d3ea54304095886eb03d9202c4",
+		maxLv = 60,
+		type = 1,
+		id = 21101920223,
+		extra_param = "",
+		param = {
+			{
+				630,
+				16.153,
+				true,
+				"%"
+			},
+			{
+				1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21101920324] = {
+		description = "6ce7d329b68bc707c8e037503ba13fcb",
+		maxLv = 60,
+		type = 1,
+		id = 21101920324,
+		extra_param = "",
+		param = {
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			},
+			{
+				480,
+				12.304,
+				true,
+				"%"
+			},
+			{
+				640,
+				16.41,
+				true,
+				"%"
+			}
+		}
+	},
+	[21101923325] = {
+		description = "7777911d13834c34840da76c7a1466ea",
+		maxLv = 60,
+		type = 1,
+		id = 21101923325,
+		extra_param = "",
+		param = {
+			{
+				750,
+				19.23,
+				true,
+				"%"
+			},
+			{
+				1050,
+				26.923,
+				true,
+				"%"
+			},
+			{
+				1500,
+				38.461,
+				true,
+				"%"
+			}
+		}
+	},
+	[21102410121] = {
+		description = "1c77b38d83f65ff97a80b2f65e793ed0",
+		maxLv = 60,
+		type = 1,
+		id = 21102410121,
+		extra_param = "",
+		param = {
+			{
+				383,
+				7.755,
+				true,
+				"%"
+			},
+			{
+				400,
+				7.692,
+				true,
+				"%"
+			}
+		}
+	},
+	[21102420122] = {
+		description = "60a694e9901132c0adf9546cd5ea1aaa",
+		maxLv = 60,
+		type = 1,
+		id = 21102420122,
+		extra_param = "",
+		param = {
+			{
+				800,
+				20.51,
+				true,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			},
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			},
+			{
+				800,
+				20.512,
+				true,
+				"%"
+			}
+		}
+	},
+	[21102420223] = {
+		description = "ed062cb5bd7da034b010e5e26fa497bf",
+		maxLv = 60,
+		type = 1,
+		id = 21102420223,
+		extra_param = "",
+		param = {
+			{
+				800,
+				20.511,
+				true,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			},
+			{
+				900,
+				23.076,
+				true,
+				"%"
+			},
+			{
+				800,
+				20.511,
+				true,
+				"%"
+			}
+		}
+	},
+	[21102420324] = {
+		description = "ef428bf9a8bee298e64aad05e0666a4c",
+		maxLv = 60,
+		type = 1,
+		id = 21102420324,
+		extra_param = "",
+		param = {
+			{
+				120,
+				3.076,
+				true,
+				"%"
+			},
+			{
+				800,
+				20.512,
+				true,
+				"%"
+			},
+			{
+				700,
+				17.948,
+				true,
+				"%"
+			},
+			{
+				900,
+				23.076,
+				true,
+				"%"
+			},
+			{
+				700,
+				17.948,
+				true,
+				"%"
+			},
+			{
+				900,
+				23.076,
+				true,
+				"%"
+			},
+			{
+				1400,
+				35.895,
+				true,
+				"%"
+			}
+		}
+	},
+	[21102710121] = {
+		description = "1dab95f39e38ef3228c81a43e9e64314",
+		maxLv = 60,
+		type = 1,
+		id = 21102710121,
+		extra_param = "",
+		param = {
+			{
+				379,
+				7.329,
+				true,
+				"%"
+			}
+		}
+	},
+	[21102720122] = {
+		description = "f9ef85a0e457af3bb10e75b842da7838",
+		maxLv = 60,
+		type = 1,
+		id = 21102720122,
+		extra_param = "",
+		param = {
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			},
+			{
+				1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21102720223] = {
+		description = "6da5c9d80e5f7b796abddc8d023f2ae3",
+		maxLv = 60,
+		type = 1,
+		id = 21102720223,
+		extra_param = "",
+		param = {
+			{
+				700,
+				17.948,
+				true,
+				"%"
+			},
+			{
+				1400,
+				35.896,
+				true,
+				"%"
+			},
+			{
+				1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21102720324] = {
+		description = "758d4530c4e8c97ebc9a8e0ade82df1e",
+		maxLv = 60,
+		type = 1,
+		id = 21102720324,
+		extra_param = "",
+		param = {
+			{
+				900,
+				23.075,
+				true,
+				"%"
+			},
+			{
+				4.5,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21102722141] = {
+		description = "a9c866bb636bfdb2ff86dc8161d42b55",
+		maxLv = 60,
+		type = 1,
+		id = 21102722141,
+		extra_param = "",
+		param = {
+			{
+				100,
+				0,
+				false,
+				"%"
+			},
+			{
+				850,
+				21.794,
+				true,
+				"%"
+			},
+			{
+				6,
+				0,
+				false,
+				""
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21102810121] = {
+		description = "1a43bbceb42c255588f353e71daead7a",
+		maxLv = 60,
+		type = 1,
+		id = 21102810121,
+		extra_param = "",
+		param = {
+			{
+				701,
+				13.575,
+				true,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[21102820122] = {
+		description = "c64613d20ff3ccd197a4a1c3ede160ce",
+		maxLv = 60,
+		type = 1,
+		id = 21102820122,
+		extra_param = "",
+		param = {
+			{
+				600,
+				15.384,
+				true,
+				"%"
+			},
+			{
+				1000,
+				25.64,
+				true,
+				"%"
+			}
+		}
+	},
+	[21102820223] = {
+		description = "c343f545dc1fdaae48ca118f6382dac1",
+		maxLv = 60,
+		type = 1,
+		id = 21102820223,
+		extra_param = "",
+		param = {
+			{
+				800,
+				20.511,
+				true,
+				"%"
+			},
+			{
+				1500,
+				38.46,
+				true,
+				"%"
+			}
+		}
+	},
+	[21102820324] = {
+		description = "5d35c80bb5277a7e757b2ddeffcd2833",
+		maxLv = 60,
+		type = 1,
+		id = 21102820324,
+		extra_param = "",
+		param = {
+			{
+				1000,
+				25.641,
+				true,
+				"%"
+			},
+			{
+				2000,
+				51.281,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103210121] = {
+		description = "a6582179ccd403856760481f84c433e4",
+		maxLv = 60,
+		type = 1,
+		id = 21103210121,
+		extra_param = "",
+		param = {
+			{
+				333,
+				6.484,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103210625] = {
+		description = "3e32873057d7b6c6f0a6959964936ebc",
+		maxLv = 60,
+		type = 1,
+		id = 21103210625,
+		extra_param = "",
+		param = {
+			{
+				333,
+				6.484,
+				true,
+				"%"
+			},
+			{
+				471,
+				9.131,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103220122] = {
+		description = "c446c9c452ceea459e3d3056358535d3",
+		maxLv = 60,
+		type = 1,
+		id = 21103220122,
+		extra_param = "",
+		param = {
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103220223] = {
+		description = "c93925409a2de0d052fcd0d4476dc2d0",
+		maxLv = 60,
+		type = 1,
+		id = 21103220223,
+		extra_param = "",
+		param = {
+			{
+				800,
+				20.512,
+				true,
+				"%"
+			},
+			{
+				960,
+				24.615,
+				true,
+				"%"
+			},
+			{
+				960,
+				24.615,
+				true,
+				"%"
+			},
+			{
+				960,
+				24.614,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103220324] = {
+		description = "e7d6e5e6766dce91323405e767014250",
+		maxLv = 60,
+		type = 1,
+		id = 21103220324,
+		extra_param = "",
+		param = {
+			{
+				240,
+				6.153,
+				true,
+				"%"
+			},
+			{
+				1200,
+				30.769,
+				true,
+				"%"
+			},
+			{
+				1800,
+				46.152,
+				true,
+				"%"
+			},
+			{
+				2800,
+				71.793,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103310121] = {
+		description = "88fd61ac8cd25a289dd667ab2152d3f0",
+		maxLv = 60,
+		type = 1,
+		id = 21103310121,
+		extra_param = "",
+		param = {
+			{
+				229,
+				4.512,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103320122] = {
+		description = "8236797e43c76bd2198e8c83baf11cb4",
+		maxLv = 60,
+		type = 1,
+		id = 21103320122,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				30.766,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103320223] = {
+		description = "3141d69f231f132016377d4944b9abef",
+		maxLv = 60,
+		type = 1,
+		id = 21103320223,
+		extra_param = "",
+		param = {
+			{
+				600,
+				15.383,
+				true,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21103320324] = {
+		description = "0a55de20a010537756fc3a75e1517890",
+		maxLv = 60,
+		type = 1,
+		id = 21103320324,
+		extra_param = "",
+		param = {
+			{
+				1600,
+				41.022,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103323125] = {
+		description = "19889044706c58c4f668f8f5879fc84c",
+		maxLv = 60,
+		type = 1,
+		id = 21103323125,
+		extra_param = "",
+		param = {
+			{
+				1600,
+				41.022,
+				true,
+				"%"
+			},
+			{
+				5,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21103510121] = {
+		description = "145df006bce15b70246352b8a9d0e55b",
+		maxLv = 60,
+		type = 1,
+		id = 21103510121,
+		extra_param = "",
+		param = {
+			{
+				246,
+				4.802,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103520122] = {
+		description = "f3d8f651ccee6ad0d9a64a56013e1633",
+		maxLv = 60,
+		type = 1,
+		id = 21103520122,
+		extra_param = "",
+		param = {
+			{
+				420,
+				10.764,
+				true,
+				"%"
+			},
+			{
+				240,
+				6.152,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103520223] = {
+		description = "93f3cdac5a05e8745f6178fb816c1440",
+		maxLv = 60,
+		type = 1,
+		id = 21103520223,
+		extra_param = "",
+		param = {
+			{
+				300,
+				7.688,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103520324] = {
+		description = "7fcdf99a86d5c2ab919805cdef011fd5",
+		maxLv = 60,
+		type = 1,
+		id = 21103520324,
+		extra_param = "",
+		param = {
+			{
+				640,
+				16.409,
+				true,
+				"%"
+			},
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103810121] = {
+		description = "1e71bb19c02703da19104affe96cff0d",
+		maxLv = 60,
+		type = 1,
+		id = 21103810121,
+		extra_param = "",
+		param = {
+			{
+				246,
+				4.803,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103820122] = {
+		description = "58e20989393ea5389f1580033f885ead",
+		maxLv = 60,
+		type = 1,
+		id = 21103820122,
+		extra_param = "",
+		param = {
+			{
+				240,
+				6.153,
+				true,
+				"%"
+			},
+			{
+				1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21103820223] = {
+		description = "23fcf0ba5b1630530703c65b9f9cfb8f",
+		maxLv = 60,
+		type = 1,
+		id = 21103820223,
+		extra_param = "",
+		param = {
+			{
+				480,
+				12.303,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103820324] = {
+		description = "7a979158127e7b58809fcf1181f89dfe",
+		maxLv = 60,
+		type = 1,
+		id = 21103820324,
+		extra_param = "",
+		param = {
+			{
+				600,
+				15.384,
+				true,
+				"%"
+			},
+			{
+				1000,
+				25.64,
+				true,
+				"%"
+			},
+			{
+				1400,
+				35.896,
+				true,
+				"%"
+			},
+			{
+				1800,
+				46.151,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103822125] = {
+		description = "1ad6849311054de5536419c8c2183a83",
+		maxLv = 60,
+		type = 1,
+		id = 21103822125,
+		extra_param = "",
+		param = {
+			{
+				600,
+				15.384,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103910121] = {
+		description = "8c3849d2fbc280bcd260a6d072f1a46a",
+		maxLv = 60,
+		type = 1,
+		id = 21103910121,
+		extra_param = "",
+		param = {
+			{
+				247,
+				4.804,
+				true,
+				"%"
+			}
+		}
+	},
+	[21103920322] = {
+		description = "88b53d16f93618eda769b47b0e2951d1",
+		maxLv = 60,
+		type = 1,
+		id = 21103920322,
+		extra_param = "",
+		param = {
+			{
+				1500,
+				38.461,
+				true,
+				"%"
+			}
+		}
+	},
+	[21104110121] = {
+		description = "b90f932a9b3d53ac689a1ffda1382229",
+		maxLv = 60,
+		type = 1,
+		id = 21104110121,
+		extra_param = "",
+		param = {
+			{
+				784,
+				15.092,
+				true,
+				"%"
+			}
+		}
+	},
+	[21104120122] = {
+		description = "ff149e2c11368415d95397259d5a1529",
+		maxLv = 60,
+		type = 1,
+		id = 21104120122,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				30.769,
+				true,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				"%"
+			},
+			{
+				1400,
+				35.897,
+				true,
+				"%"
+			},
+			{
+				50,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[21104120223] = {
+		description = "b27174bc9ca1df6a91104bad597c67b6",
+		maxLv = 60,
+		type = 1,
+		id = 21104120223,
+		extra_param = "",
+		param = {
+			{
+				1600,
+				41.025,
+				true,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				"%"
+			},
+			{
+				1900,
+				48.717,
+				true,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				6,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21104120324] = {
+		description = "b5581f65ad50e7cac8341804043f443f",
+		maxLv = 60,
+		type = 1,
+		id = 21104120324,
+		extra_param = "",
+		param = {
+			{
+				700,
+				17.948,
+				true,
+				"%"
+			},
+			{
+				2000,
+				51.282,
+				true,
+				"%"
+			},
+			{
+				2400,
+				61.537,
+				true,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[21104210121] = {
+		description = "93b3ce959a9993c24bcc4692f7c6d3a0",
+		maxLv = 60,
+		type = 1,
+		id = 21104210121,
+		extra_param = "",
+		param = {
+			{
+				700,
+				13.571,
+				true,
+				"%"
+			},
+			{
+				420,
+				10.758,
+				true,
+				"%"
+			}
+		}
+	},
+	[21104220122] = {
+		description = "f91dc07245eb45b75900aa2a6a948caa",
+		maxLv = 60,
+		type = 1,
+		id = 21104220122,
+		extra_param = "",
+		param = {
+			{
+				2400,
+				61.52,
+				true,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				"%"
+			},
+			{
+				36,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[21104220223] = {
+		description = "79ff8cbf52dff8bb0294885363c00f13",
+		maxLv = 60,
+		type = 1,
+		id = 21104220223,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				30.763,
+				true,
+				"%"
+			},
+			{
+				120,
+				0,
+				false,
+				"%"
+			},
+			{
+				1200,
+				30.768,
+				true,
+				"%"
+			},
+			{
+				180,
+				0,
+				false,
+				"%"
+			},
+			{
+				1600,
+				41.013,
+				true,
+				"%"
+			}
+		}
+	},
+	[21104220324] = {
+		description = "17574ffd8377e5eb98138a92c5755fae",
+		maxLv = 60,
+		type = 1,
+		id = 21104220324,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				30.76,
+				true,
+				"%"
+			},
+			{
+				1200,
+				30.768,
+				true,
+				"%"
+			},
+			{
+				1600,
+				41.002,
+				true,
+				"%"
+			}
+		}
+	},
+	[21104810121] = {
+		description = "4e9ab20f78c815b9d79728f284ee992a",
+		maxLv = 60,
+		type = 1,
+		id = 21104810121,
+		extra_param = "",
+		param = {
+			{
+				196,
+				3.84,
+				true,
+				"%"
+			},
+			{
+				5,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21104820122] = {
+		description = "932ad6c7e094d7d44721f482e77143ff",
+		maxLv = 60,
+		type = 1,
+		id = 21104820122,
+		extra_param = "",
+		param = {
+			{
+				270,
+				6.923,
+				true,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21104820223] = {
+		description = "848888f68db1904ffddb200c0cc97fcc",
+		maxLv = 60,
+		type = 1,
+		id = 21104820223,
+		extra_param = "",
+		param = {
+			{
+				800,
+				20.508,
+				true,
+				"%"
+			}
+		}
+	},
+	[21104820324] = {
+		description = "52eb499fc5f2fd406041fd11561f6087",
+		maxLv = 60,
+		type = 1,
+		id = 21104820324,
+		extra_param = "",
+		param = {
+			{
+				96,
+				2.461,
+				true,
+				"%"
+			}
+		}
+	},
+	[21104821125] = {
+		description = "f669f53b86114945e15e1b6baeead4c9",
+		maxLv = 60,
+		type = 1,
+		id = 21104821125,
+		extra_param = "",
+		param = {
+			{
+				270,
+				6.923,
+				true,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21105010121] = {
+		description = "49d286b5853219c697209fe6b244830a",
+		maxLv = 60,
+		type = 1,
+		id = 21105010121,
+		extra_param = "",
+		param = {
+			{
+				178,
+				3.48,
+				true,
+				"%"
+			},
+			{
+				1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21105020122] = {
+		description = "92e93bb0d076df0ff1d26fcb9bedc941",
+		maxLv = 60,
+		type = 1,
+		id = 21105020122,
+		extra_param = "",
+		param = {
+			{
+				163,
+				4.204,
+				true,
+				"%"
+			},
+			{
+				1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21105020223] = {
+		description = "eb7dcdef3b791681ac6e8ac000239d57",
+		maxLv = 60,
+		type = 1,
+		id = 21105020223,
+		extra_param = "",
+		param = {
+			{
+				270,
+				6.922,
+				true,
+				"%"
+			},
+			{
+				1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21105020324] = {
+		description = "04eb0f28f02486abc2d347efc0e12342",
+		maxLv = 60,
+		type = 1,
+		id = 21105020324,
+		extra_param = "",
+		param = {
+			{
+				100,
+				2.564,
+				true,
+				"%"
+			},
+			{
+				200,
+				5.124,
+				true,
+				"%"
+			},
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			}
+		}
+	},
+	[21105022141] = {
+		description = "a7317f716a7a68242ce3ea13b5d13a49",
+		maxLv = 60,
+		type = 1,
+		id = 21105022141,
+		extra_param = "",
+		param = {
+			{
+				360,
+				9.229,
+				true,
+				"%"
+			},
+			{
+				6,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21105210121] = {
+		description = "3c9332ae3954da79b64ded087cb1a8e2",
+		maxLv = 60,
+		type = 1,
+		id = 21105210121,
+		extra_param = "",
+		param = {
+			{
+				255,
+				4.927,
+				true,
+				"%"
+			},
+			{
+				15,
+				0.288,
+				true,
+				"%"
+			},
+			{
+				1,
+				0,
+				false,
+				""
+			},
+			{
+				150,
+				3.846,
+				true,
+				"%"
+			},
+			{
+				850,
+				21.79,
+				true,
+				"%"
+			}
+		}
+	},
+	[21105220122] = {
+		description = "04bd65281a7cfd16cfbb53f11646f642",
+		maxLv = 60,
+		type = 1,
+		id = 21105220122,
+		extra_param = "",
+		param = {
+			{
+				160,
+				4.102,
+				true,
+				"%"
+			},
+			{
+				5,
+				0,
+				false,
+				""
+			},
+			{
+				120,
+				3.075,
+				true,
+				"%"
+			}
+		}
+	},
+	[21105220223] = {
+		description = "e87c4d088eeb8ab699c85149156bd116",
+		maxLv = 60,
+		type = 1,
+		id = 21105220223,
+		extra_param = "",
+		param = {
+			{
+				750,
+				19.23,
+				true,
+				"%"
+			},
+			{
+				400,
+				10.251,
+				true,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21105220324] = {
+		description = "8f933843279ca443aeae02e6b0d5efb1",
+		maxLv = 60,
+		type = 1,
+		id = 21105220324,
+		extra_param = "",
+		param = {
+			{
+				720,
+				18.461,
+				true,
+				"%"
+			},
+			{
+				352,
+				9.224,
+				true,
+				"%"
+			}
+		}
+	},
+	[21105222125] = {
+		description = "cba3c6c26118f6f90f14d5a52df92a07",
+		maxLv = 60,
+		type = 1,
+		id = 21105222125,
+		extra_param = "",
+		param = {
+			{
+				750,
+				19.23,
+				true,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			},
+			{
+				12,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21105223126] = {
+		description = "d42f208f05d74bc78d4ca2042607c51a",
+		maxLv = 60,
+		type = 1,
+		id = 21105223126,
+		extra_param = "",
+		param = {
+			{
+				720,
+				18.461,
+				true,
+				"%"
+			},
+			{
+				115,
+				3.069,
+				true,
+				"%"
+			},
+			{
+				2,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21105610121] = {
+		description = "b3bccce6078d47a4fe9c88ca03e44c32",
+		maxLv = 60,
+		type = 1,
+		id = 21105610121,
+		extra_param = "",
+		param = {
+			{
+				218,
+				4.204,
+				true,
+				"%"
+			},
+			{
+				150,
+				3.846,
+				true,
+				"%"
+			}
+		}
+	},
+	[21105620122] = {
+		description = "225873cb0402d21f0e1abe25fca6c5b8",
+		maxLv = 60,
+		type = 1,
+		id = 21105620122,
+		extra_param = "",
+		param = {
+			{
+				200,
+				5.128,
+				true,
+				"%"
+			},
+			{
+				3,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21105620223] = {
+		description = "7153ae8475ed0c2f055583bf08c532a1",
+		maxLv = 60,
+		type = 1,
+		id = 21105620223,
+		extra_param = "",
+		param = {
+			{
+				300,
+				7.688,
+				true,
+				"%"
+			},
+			{
+				75,
+				1.923,
+				true,
+				"%"
+			}
+		}
+	},
+	[21105620324] = {
+		description = "3ac2e83f197a3724ef63ec71fe644510",
+		maxLv = 60,
+		type = 1,
+		id = 21105620324,
+		extra_param = "",
+		param = {
+			{
+				360,
+				9.23,
+				true,
+				"%"
+			},
+			{
+				180,
+				4.615,
+				true,
+				"%"
+			},
+			{
+				180,
+				4.615,
+				true,
+				"%"
+			},
+			{
+				360,
+				9.23,
+				true,
+				"%"
+			},
+			{
+				720,
+				18.461,
+				true,
+				"%"
+			}
+		}
+	},
+	[21105810121] = {
+		description = "0a20e271d20eef111786850631e99fca",
+		maxLv = 60,
+		type = 1,
+		id = 21105810121,
+		extra_param = "",
+		param = {
+			{
+				391,
+				7.569,
+				true,
+				"%"
+			},
+			{
+				3,
+				0,
+				false,
+				"%"
+			},
+			{
+				5,
+				0,
+				false,
+				""
+			},
+			{
+				5,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21105820122] = {
+		description = "54ac969c70dfcdbedc1fcda06029d4d3",
+		maxLv = 60,
+		type = 1,
+		id = 21105820122,
+		extra_param = "",
+		param = {
+			{
+				200,
+				5.128,
+				true,
+				"%"
+			},
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			},
+			{
+				600,
+				15.384,
+				true,
+				"%"
+			}
+		}
+	},
+	[21105820223] = {
+		description = "db31d54f3d48502a23e93e23ad7e1291",
+		maxLv = 60,
+		type = 1,
+		id = 21105820223,
+		extra_param = "",
+		param = {
+			{
+				200,
+				5.128,
+				true,
+				"%"
+			},
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			},
+			{
+				600,
+				15.384,
+				true,
+				"%"
+			}
+		}
+	},
+	[21105820324] = {
+		description = "658f84f11f9941ee08649ff6776b92e8",
+		maxLv = 60,
+		type = 1,
+		id = 21105820324,
+		extra_param = "",
+		param = {
+			{
+				420,
+				10.768,
+				true,
+				"%"
+			}
+		}
+	},
+	[21105910121] = {
+		description = "a276af67bf8a343db806abbf12c55569",
+		maxLv = 60,
+		type = 1,
+		id = 21105910121,
+		extra_param = "",
+		param = {
+			{
+				284,
+				5.524,
+				true,
+				"%"
+			}
+		}
+	},
+	[21105920122] = {
+		description = "94df3f979294d9d9f21f97634f89dbec",
+		maxLv = 60,
+		type = 1,
+		id = 21105920122,
+		extra_param = "",
+		param = {
+			{
+				400,
+				10.255,
+				true,
+				"%"
+			}
+		}
+	},
+	[21105920223] = {
+		description = "2d338850b68a24da779ed1b2dcd59fa5",
+		maxLv = 60,
+		type = 1,
+		id = 21105920223,
+		extra_param = "",
+		param = {
+			{
+				350,
+				8.973,
+				true,
+				"%"
+			},
+			{
+				500,
+				12.82,
+				true,
+				"%"
+			}
+		}
+	},
+	[21105920324] = {
+		description = "e02234c3be212567e2b0b5c2ec96e9ea",
+		maxLv = 60,
+		type = 1,
+		id = 21105920324,
+		extra_param = "",
+		param = {
+			{
+				160,
+				4.102,
+				true,
+				"%"
+			},
+			{
+				600,
+				15.384,
+				true,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[21106610121] = {
+		description = "2617ba35025f035d0d92459268ad6433",
+		maxLv = 60,
+		type = 1,
+		id = 21106610121,
+		extra_param = "",
+		param = {
+			{
+				361,
+				6.964,
+				true,
+				"%"
+			}
+		}
+	},
+	[21106620222] = {
+		description = "5926b0569d77135e508f7ae322faa6fe",
+		maxLv = 60,
+		type = 1,
+		id = 21106620222,
+		extra_param = "",
+		param = {
+			{
+				700,
+				17.948,
+				true,
+				"%"
+			},
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			}
+		}
+	},
+	[21106620323] = {
+		description = "4bb4249b8e74b9523aee892abac6802e",
+		maxLv = 60,
+		type = 1,
+		id = 21106620323,
+		extra_param = "",
+		param = {
+			{
+				1800,
+				46.152,
+				true,
+				"%"
+			}
+		}
+	},
+	[21106623124] = {
+		description = "8268ab9342c8230d84051dfcc0f6eda0",
+		maxLv = 60,
+		type = 1,
+		id = 21106623124,
+		extra_param = "",
+		param = {
+			{
+				2700,
+				69.229,
+				true,
+				"%"
+			}
+		}
+	},
+	[21106810121] = {
+		description = "a6ef6239d4e8ff9cb04e814cd56e6a65",
+		maxLv = 60,
+		type = 1,
+		id = 21106810121,
+		extra_param = "",
+		param = {
+			{
+				229,
+				4.442,
+				true,
+				"%"
+			}
+		}
+	},
+	[21106820122] = {
+		description = "910b8b428e6a7011aa3216ffe3bb4227",
+		maxLv = 60,
+		type = 1,
+		id = 21106820122,
+		extra_param = "",
+		param = {
+			{
+				42,
+				1.076,
+				true,
+				"%"
+			},
+			{
+				378,
+				9.692,
+				true,
+				"%"
+			},
+			{
+				42,
+				1.076,
+				true,
+				"%"
+			},
+			{
+				420,
+				10.769,
+				true,
+				"%"
+			},
+			{
+				670,
+				17.23,
+				true,
+				"%"
+			}
+		}
+	},
+	[21106820223] = {
+		description = "76abcbb96d1626c462b14722b5bbb23c",
+		maxLv = 60,
+		type = 1,
+		id = 21106820223,
+		extra_param = "",
+		param = {
+			{
+				700,
+				17.946,
+				true,
+				"%"
+			},
+			{
+				418,
+				10.768,
+				true,
+				"%"
+			},
+			{
+				700,
+				17.94,
+				true,
+				"%"
+			},
+			{
+				280,
+				7.178,
+				true,
+				"%"
+			}
+		}
+	},
+	[21106820324] = {
+		description = "cc3809d086806f1e81c3e37e1ba514db",
+		maxLv = 60,
+		type = 1,
+		id = 21106820324,
+		extra_param = "",
+		param = {
+			{
+				30,
+				0,
+				false,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			},
+			{
+				6,
+				0,
+				false,
+				""
+			},
+			{
+				6,
+				0,
+				false,
+				""
+			},
+			{
+				2000,
+				51.273,
+				true,
+				"%"
+			}
+		}
+	},
+	[21108010121] = {
+		description = "91e00b3d3a6776d951a48ed8d1484605",
+		maxLv = 60,
+		type = 1,
+		id = 21108010121,
+		extra_param = "",
+		param = {
+			{
+				355,
+				6.848,
+				true,
+				"%"
+			}
+		}
+	},
+	[21108011125] = {
+		description = "cd76aa41ca16e439004667c877b41d3c",
+		maxLv = 60,
+		type = 1,
+		id = 21108011125,
+		extra_param = "",
+		param = {
+			{
+				355,
+				6.848,
+				true,
+				"%"
+			},
+			{
+				2,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21108011141] = {
+		description = "3d32b76f897d7c54526cce2b1dc94c13",
+		maxLv = 60,
+		type = 1,
+		id = 21108011141,
+		extra_param = "",
+		param = {
+			{
+				355,
+				6.848,
+				true,
+				"%"
+			},
+			{
+				2,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21108020122] = {
+		description = "46161e61149daf1d6326fc784bc1c493",
+		maxLv = 60,
+		type = 1,
+		id = 21108020122,
+		extra_param = "",
+		param = {
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			},
+			{
+				3,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21108020223] = {
+		description = "a63744068ef02fc0f21a96c4a4a594e5",
+		maxLv = 60,
+		type = 1,
+		id = 21108020223,
+		extra_param = "",
+		param = {
+			{
+				720,
+				18.457,
+				true,
+				"%"
+			}
+		}
+	},
+	[21108020324] = {
+		description = "eda5a0c16175a9b995ce8db1e5892866",
+		maxLv = 60,
+		type = 1,
+		id = 21108020324,
+		extra_param = "",
+		param = {
+			{
+				650,
+				16.666,
+				true,
+				"%"
+			}
+		}
+	},
+	[21108110121] = {
+		description = "558422108e933759deb255f3922f3cd3",
+		maxLv = 60,
+		type = 1,
+		id = 21108110121,
+		extra_param = "",
+		param = {
+			{
+				596,
+				11.534,
+				true,
+				"%"
+			},
+			{
+				500,
+				9.614,
+				true,
+				"%"
+			},
+			{
+				80,
+				2.051,
+				true,
+				"%"
+			}
+		}
+	},
+	[21108120122] = {
+		description = "bdb45280f5928176dd70c2e84531a3b0",
+		maxLv = 60,
+		type = 1,
+		id = 21108120122,
+		extra_param = "",
+		param = {
+			{
+				2000,
+				51.281,
+				true,
+				"%"
+			},
+			{
+				360,
+				9.23,
+				true,
+				"%"
+			},
+			{
+				2,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21108120223] = {
+		description = "615df129661907f883108017d40c78c1",
+		maxLv = 60,
+		type = 1,
+		id = 21108120223,
+		extra_param = "",
+		param = {
+			{
+				1600,
+				41.025,
+				true,
+				"%"
+			},
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			}
+		}
+	},
+	[21108120324] = {
+		description = "4c532125d8b85ebc2a332499db00420f",
+		maxLv = 60,
+		type = 1,
+		id = 21108120324,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				30.769,
+				true,
+				"%"
+			}
+		}
+	},
+	[21108410121] = {
+		description = "73877364300ba9446fdfb35f1b55c677",
+		maxLv = 60,
+		type = 1,
+		id = 21108410121,
+		extra_param = "",
+		param = {
+			{
+				188,
+				3.675,
+				true,
+				"%"
+			}
+		}
+	},
+	[21108420122] = {
+		description = "01e918bd5334db3fd6fe9a1c5365cc1f",
+		maxLv = 60,
+		type = 1,
+		id = 21108420122,
+		extra_param = "",
+		param = {
+			{
+				180,
+				4.612,
+				true,
+				"%"
+			},
+			{
+				240,
+				6.152,
+				true,
+				"%"
+			}
+		}
+	},
+	[21108420223] = {
+		description = "163c083e1347a2eac7202f0f267c06ce",
+		maxLv = 60,
+		type = 1,
+		id = 21108420223,
+		extra_param = "",
+		param = {
+			{
+				300,
+				7.691,
+				true,
+				"%"
+			},
+			{
+				100,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[21108420324] = {
+		description = "51eca990b31453d2c337858b39b270ec",
+		maxLv = 60,
+		type = 1,
+		id = 21108420324,
+		extra_param = "",
+		param = {
+			{
+				500,
+				12.82,
+				true,
+				"%"
+			},
+			{
+				800,
+				20.51,
+				true,
+				"%"
+			}
+		}
+	},
+	[21108421225] = {
+		description = "df2c7bce9f030934c48ef55108e30901",
+		maxLv = 60,
+		type = 1,
+		id = 21108421225,
+		extra_param = "",
+		param = {
+			{
+				180,
+				4.612,
+				true,
+				"%"
+			},
+			{
+				240,
+				6.152,
+				true,
+				"%"
+			}
+		}
+	},
+	[21109310121] = {
+		description = "552fe992d3f63a08f9343f1300ccdb65",
+		maxLv = 60,
+		type = 1,
+		id = 21109310121,
+		extra_param = "",
+		param = {
+			{
+				317,
+				6.127,
+				true,
+				"%"
+			}
+		}
+	},
+	[21109323122] = {
+		description = "8a63ef1c013b9fa02b606e782b9d2702",
+		maxLv = 60,
+		type = 1,
+		id = 21109323122,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				30.768,
+				true,
+				"%"
+			},
+			{
+				1100,
+				28.205,
+				true,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21109323223] = {
+		description = "81e23bc3256523915e409d5e0f33d01f",
+		maxLv = 60,
+		type = 1,
+		id = 21109323223,
+		extra_param = "",
+		param = {
+			{
+				900,
+				23.072,
+				true,
+				"%"
+			},
+			{
+				1100,
+				28.205,
+				true,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21109323324] = {
+		description = "29bd6c45e095bcd446dca6e4917577ac",
+		maxLv = 60,
+		type = 1,
+		id = 21109323324,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				30.765,
+				true,
+				"%"
+			},
+			{
+				1100,
+				28.205,
+				true,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21109323625] = {
+		description = "b5eb22dc46b98e9bb16b2cdf251ed1f8",
+		maxLv = 60,
+		type = 1,
+		id = 21109323625,
+		extra_param = "",
+		param = {
+			{
+				300,
+				7.69,
+				true,
+				"%"
+			},
+			{
+				150,
+				3.846,
+				true,
+				"%"
+			},
+			{
+				1100,
+				28.205,
+				true,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21109410121] = {
+		description = "cfbcfba6839159fc0d9efc01c5d841d5",
+		maxLv = 60,
+		type = 1,
+		id = 21109410121,
+		extra_param = "",
+		param = {
+			{
+				502,
+				9.727,
+				true,
+				"%"
+			}
+		}
+	},
+	[21109420122] = {
+		description = "be303c32dbf9b34afcf6ec6071a0a6e1",
+		maxLv = 60,
+		type = 1,
+		id = 21109420122,
+		extra_param = "",
+		param = {
+			{
+				4000,
+				102.559,
+				true,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21109420223] = {
+		description = "af3794530f5295dbe6de516a5532bb73",
+		maxLv = 60,
+		type = 1,
+		id = 21109420223,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				30.769,
+				true,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21109420324] = {
+		description = "59960f2bbbc7461e3232e4f743beb8d0",
+		maxLv = 60,
+		type = 1,
+		id = 21109420324,
+		extra_param = "",
+		param = {
+			{
+				800,
+				20.512,
+				true,
+				"%"
+			}
+		}
+	},
+	[21109610121] = {
+		description = "ff8e1c4e30828c922e33abd5dc20803d",
+		maxLv = 60,
+		type = 1,
+		id = 21109610121,
+		extra_param = "",
+		param = {
+			{
+				340,
+				6.607,
+				true,
+				"%"
+			}
+		}
+	},
+	[21109620122] = {
+		description = "bd281b590e0c8c4fbfd20eb02f4b0c11",
+		maxLv = 60,
+		type = 1,
+		id = 21109620122,
+		extra_param = "",
+		param = {
+			{
+				800,
+				20.512,
+				true,
+				"%"
+			},
+			{
+				25,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[21109620223] = {
+		description = "d1fa19d631fb82c230fbf29f5e588dec",
+		maxLv = 60,
+		type = 1,
+		id = 21109620223,
+		extra_param = "",
+		param = {
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			}
+		}
+	},
+	[21109620324] = {
+		description = "af713119e5bac00cc6d1b5c251e77a4a",
+		maxLv = 60,
+		type = 1,
+		id = 21109620324,
+		extra_param = "",
+		param = {
+			{
+				1000,
+				25.638,
+				true,
+				"%"
+			}
+		}
+	},
+	[21109710121] = {
+		description = "9450cf6980588be40f4a37140d2191f2",
+		maxLv = 60,
+		type = 1,
+		id = 21109710121,
+		extra_param = "",
+		param = {
+			{
+				273,
+				5.285,
+				true,
+				"%"
+			}
+		}
+	},
+	[21109720122] = {
+		description = "0a00d4d6084b5419dc88cceedf3d4d3c",
+		maxLv = 60,
+		type = 1,
+		id = 21109720122,
+		extra_param = "",
+		param = {
+			{
+				1100,
+				28.202,
+				true,
+				"%"
+			},
+			{
+				5,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21109720323] = {
+		description = "0a34403d5ddbce4ec3f1ebf1331a2c22",
+		maxLv = 60,
+		type = 1,
+		id = 21109720323,
+		extra_param = "",
+		param = {
+			{
+				3.2,
+				0.2,
+				true,
+				"%"
+			},
+			{
+				1400,
+				35.897,
+				true,
+				"%"
+			}
+		}
+	},
+	[21109910121] = {
+		description = "55d09cd7ffe20c7de3d301d60c69f064",
+		maxLv = 60,
+		type = 1,
+		id = 21109910121,
+		extra_param = "",
+		param = {
+			{
+				200,
+				3.914,
+				true,
+				"%"
+			}
+		}
+	},
+	[21109920122] = {
+		description = "9fea0fa4b358ca8eb50316a2ce1f73da",
+		maxLv = 60,
+		type = 1,
+		id = 21109920122,
+		extra_param = "",
+		param = {
+			{
+				360,
+				9.228,
+				true,
+				"%"
+			},
+			{
+				7,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21109920223] = {
+		description = "75c4778a141f526d2152c9390f30eec0",
+		maxLv = 60,
+		type = 1,
+		id = 21109920223,
+		extra_param = "",
+		param = {
+			{
+				450,
+				11.537,
+				true,
+				"%"
+			},
+			{
+				600,
+				15.383,
+				true,
+				"%"
+			},
+			{
+				40,
+				1,
+				true,
+				"%"
+			},
+			{
+				16,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21109920324] = {
+		description = "c440dfaee85c8f84f71730a766e6ba25",
+		maxLv = 60,
+		type = 1,
+		id = 21109920324,
+		extra_param = "",
+		param = {
+			{
+				105,
+				2.692,
+				true,
+				"%"
+			},
+			{
+				175,
+				4.487,
+				true,
+				"%"
+			},
+			{
+				640,
+				16.41,
+				true,
+				"%"
+			}
+		}
+	},
+	[21109923142] = {
+		description = "4185e7c3a68a129dc7e6eebbf2ab7e0d",
+		maxLv = 60,
+		type = 1,
+		id = 21109923142,
+		extra_param = "",
+		param = {
+			{
+				105,
+				2.692,
+				true,
+				"%"
+			},
+			{
+				175,
+				4.487,
+				true,
+				"%"
+			},
+			{
+				640,
+				16.41,
+				true,
+				"%"
+			},
+			{
+				450,
+				11.538,
+				true,
+				"%"
+			}
+		}
+	},
+	[21111110121] = {
+		description = "629cf8776375f744313409c99341a3be",
+		maxLv = 60,
+		type = 1,
+		id = 21111110121,
+		extra_param = "",
+		param = {
+			{
+				370,
+				7.205,
+				true,
+				"%"
+			},
+			{
+				415,
+				7.977,
+				true,
+				"%"
+			}
+		}
+	},
+	[21111120122] = {
+		description = "d6124d0a16d4c3e1eefc357b6803b1f2",
+		maxLv = 60,
+		type = 1,
+		id = 21111120122,
+		extra_param = "",
+		param = {
+			{
+				598,
+				15.381,
+				true,
+				"%"
+			},
+			{
+				600,
+				15.384,
+				true,
+				"%"
+			}
+		}
+	},
+	[21111120223] = {
+		description = "9dea107a149e192a0b071788a3f3b386",
+		maxLv = 60,
+		type = 1,
+		id = 21111120223,
+		extra_param = "",
+		param = {
+			{
+				1000,
+				25.636,
+				true,
+				"%"
+			},
+			{
+				60,
+				1.538,
+				true,
+				"%"
+			}
+		}
+	},
+	[21111120324] = {
+		description = "9589f33c8bdc61bc9425f23d41c38b54",
+		maxLv = 60,
+		type = 1,
+		id = 21111120324,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				30.769,
+				true,
+				"%"
+			},
+			{
+				1500,
+				38.461,
+				true,
+				"%"
+			}
+		}
+	},
+	[21111910121] = {
+		description = "01134b7f66c2fefdb16eac3275e3b131",
+		maxLv = 60,
+		type = 1,
+		id = 21111910121,
+		extra_param = "",
+		param = {
+			{
+				285,
+				5.547,
+				true,
+				"%"
+			}
+		}
+	},
+	[21111920122] = {
+		description = "bd0db1cc62b870ab100829e7f77d65a1",
+		maxLv = 60,
+		type = 1,
+		id = 21111920122,
+		extra_param = "",
+		param = {
+			{
+				500,
+				12.82,
+				true,
+				"%"
+			},
+			{
+				2430,
+				62.307,
+				true,
+				"%"
+			},
+			{
+				2700,
+				69.23,
+				true,
+				"%"
+			}
+		}
+	},
+	[21111920223] = {
+		description = "b3d31a7b22fccdc62b650bfa6d39a692",
+		maxLv = 60,
+		type = 1,
+		id = 21111920223,
+		extra_param = "",
+		param = {
+			{
+				900,
+				23.074,
+				true,
+				"%"
+			},
+			{
+				1620,
+				41.532,
+				true,
+				"%"
+			}
+		}
+	},
+	[21111920324] = {
+		description = "28306090643d0bb374d7abbf5912fcaa",
+		maxLv = 60,
+		type = 1,
+		id = 21111920324,
+		extra_param = "",
+		param = {
+			{
+				900,
+				23.075,
+				true,
+				"%"
+			},
+			{
+				1620,
+				41.532,
+				true,
+				"%"
+			}
+		}
+	},
+	[21112710121] = {
+		description = "664d0d5e137abca341b80ae9d2673b96",
+		maxLv = 60,
+		type = 1,
+		id = 21112710121,
+		extra_param = "",
+		param = {
+			{
+				492,
+				9.606,
+				true,
+				"%"
+			}
+		}
+	},
+	[21112720122] = {
+		description = "b410a57eacbfc91024d3fc062f48806a",
+		maxLv = 60,
+		type = 1,
+		id = 21112720122,
+		extra_param = "",
+		param = {
+			{
+				800,
+				20.509,
+				true,
+				"%"
+			}
+		}
+	},
+	[21112720223] = {
+		description = "dce05c8f01d6b54ae1e0351f9d4cf44c",
+		maxLv = 60,
+		type = 1,
+		id = 21112720223,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				30.76,
+				true,
+				"%"
+			}
+		}
+	},
+	[21112720324] = {
+		description = "cb1999584a11169b819a1f78b57be685",
+		maxLv = 60,
+		type = 1,
+		id = 21112720324,
+		extra_param = "",
+		param = {
+			{
+				28.7,
+				0.7,
+				true,
+				"%"
+			},
+			{
+				1000,
+				25.64,
+				true,
+				"%"
+			},
+			{
+				8,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21113910121] = {
+		description = "66df411097174125f570fb8d4129575b",
+		maxLv = 60,
+		type = 1,
+		id = 21113910121,
+		extra_param = "",
+		param = {
+			{
+				432,
+				8.407,
+				true,
+				"%"
+			}
+		}
+	},
+	[21113920122] = {
+		description = "946354edd8d49cf989dacde621db02d2",
+		maxLv = 60,
+		type = 1,
+		id = 21113920122,
+		extra_param = "",
+		param = {
+			{
+				450,
+				11.538,
+				true,
+				"%"
+			},
+			{
+				320,
+				8.201,
+				true,
+				"%"
+			}
+		}
+	},
+	[21113920223] = {
+		description = "9639bc1ea196f14a66a8b18e29fd67d8",
+		maxLv = 60,
+		type = 1,
+		id = 21113920223,
+		extra_param = "",
+		param = {
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			},
+			{
+				320,
+				8.2,
+				true,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21113920324] = {
+		description = "35af23e705a05453b03a195a6ace3f68",
+		maxLv = 60,
+		type = 1,
+		id = 21113920324,
+		extra_param = "",
+		param = {
+			{
+				800,
+				20.509,
+				true,
+				"%"
+			}
+		}
+	},
+	[21114810121] = {
+		description = "612d37c186195ef1deb42b2de4d6ff3a",
+		maxLv = 60,
+		type = 1,
+		id = 21114810121,
+		extra_param = "",
+		param = {
+			{
+				260,
+				5.16,
+				true,
+				"%"
+			}
+		}
+	},
+	[21114820122] = {
+		description = "ce6c13f7104e25311646805f9767bf77",
+		maxLv = 60,
+		type = 1,
+		id = 21114820122,
+		extra_param = "",
+		param = {
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			},
+			{
+				1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21114820223] = {
+		description = "2597227e70984ab092f67a04ca4d93ed",
+		maxLv = 60,
+		type = 1,
+		id = 21114820223,
+		extra_param = "",
+		param = {
+			{
+				100,
+				2.564,
+				true,
+				"%"
+			},
+			{
+				200,
+				5.125,
+				true,
+				"%"
+			},
+			{
+				1,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21114820324] = {
+		description = "e008bb52bd37f6e34d7e616431dd5554",
+		maxLv = 60,
+		type = 1,
+		id = 21114820324,
+		extra_param = "",
+		param = {
+			{
+				350,
+				8.974,
+				true,
+				"%"
+			}
+		}
+	},
+	[21118410121] = {
+		description = "4607f1c0c90bea7614e3bbd1f09d8245",
+		maxLv = 60,
+		type = 1,
+		id = 21118410121,
+		extra_param = "",
+		param = {
+			{
+				210,
+				4.084,
+				true,
+				"%"
+			}
+		}
+	},
+	[21118420122] = {
+		description = "f5e941ee9328a3e7e28afd9167abda65",
+		maxLv = 60,
+		type = 1,
+		id = 21118420122,
+		extra_param = "",
+		param = {
+			{
+				100,
+				2.564,
+				true,
+				"%"
+			},
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			}
+		}
+	},
+	[21118420223] = {
+		description = "2d92fcf13da4696aacb1b783395d3f60",
+		maxLv = 60,
+		type = 1,
+		id = 21118420223,
+		extra_param = "",
+		param = {
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			},
+			{
+				900,
+				23.076,
+				true,
+				"%"
+			},
+			{
+				1800,
+				46.153,
+				true,
+				"%"
+			}
+		}
+	},
+	[21118420324] = {
+		description = "9624f1bbf488d10a57bf3882f697bc27",
+		maxLv = 60,
+		type = 1,
+		id = 21118420324,
+		extra_param = "",
+		param = {
+			{
+				1800,
+				46.153,
+				true,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21119910121] = {
+		description = "36791a4988c1954a44528e872fd98322",
+		maxLv = 60,
+		type = 1,
+		id = 21119910121,
+		extra_param = "",
+		param = {
+			{
+				440,
+				8.528,
+				true,
+				"%"
+			}
+		}
+	},
+	[21119920122] = {
+		description = "31f711d156a8c16797762778ff60d885",
+		maxLv = 60,
+		type = 1,
+		id = 21119920122,
+		extra_param = "",
+		param = {
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			}
+		}
+	},
+	[21119920223] = {
+		description = "48707f2b95ce014b0fbb731e86d8dce6",
+		maxLv = 60,
+		type = 1,
+		id = 21119920223,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				30.766,
+				true,
+				"%"
+			}
+		}
+	},
+	[21119920324] = {
+		description = "a807d28dd954aa2165cd2f720f27a83e",
+		maxLv = 60,
+		type = 1,
+		id = 21119920324,
+		extra_param = "",
+		param = {
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			},
+			{
+				500,
+				12.82,
+				true,
+				"%"
+			},
+			{
+				800,
+				20.512,
+				true,
+				"%"
+			}
+		}
+	},
+	[21119930525] = {
+		description = "819a46b6099b40989dd7c8be221b56c1",
+		maxLv = 60,
+		type = 1,
+		id = 21119930525,
+		extra_param = "",
+		param = {
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			},
+			{
+				14,
+				0,
+				false,
+				""
+			}
+		}
+	},
 	all = {
 		101011101,
 		101011201,
@@ -46377,12 +55045,34 @@
 		101019281,
 		101019282,
 		101019305,
+		101020101,
+		101020201,
+		101020202,
+		101020203,
+		101020208,
+		101020209,
+		101020305,
+		101021101,
+		101021201,
+		101021202,
+		101021203,
+		101021208,
+		101021209,
+		101021305,
+		101022101,
+		101022201,
+		101022202,
+		101022203,
+		101022208,
+		101022209,
+		101022305,
 		101024101,
 		101024201,
 		101024202,
 		101024203,
 		101024208,
 		101024209,
+		101024281,
 		101024305,
 		101026101,
 		101026201,
@@ -46425,6 +55115,7 @@
 		101033208,
 		101033209,
 		101033231,
+		101033282,
 		101033305,
 		101035101,
 		101035201,
@@ -46635,6 +55326,13 @@
 		101084209,
 		101084212,
 		101084305,
+		101089101,
+		101089201,
+		101089202,
+		101089203,
+		101089208,
+		101089209,
+		101089305,
 		101093101,
 		101093208,
 		101093231,
@@ -46654,6 +55352,7 @@
 		101095203,
 		101095208,
 		101095209,
+		101095281,
 		101095305,
 		101096101,
 		101096201,
@@ -46728,7 +55427,14 @@
 		101150208,
 		101150209,
 		101150281,
+		101150282,
 		101150305,
+		101156101,
+		101156201,
+		101156202,
+		101156203,
+		101156209,
+		101156305,
 		101158101,
 		101158201,
 		101158202,
@@ -46778,6 +55484,13 @@
 		106090201,
 		106090202,
 		106090209,
+		106110101,
+		106110201,
+		106110202,
+		106110203,
+		106110209,
+		106117101,
+		106117202,
 		109049201,
 		109049202,
 		109049203,
@@ -46856,6 +55569,33 @@
 		110190031,
 		110190032,
 		110190033,
+		110200011,
+		110200012,
+		110200013,
+		110200021,
+		110200022,
+		110200023,
+		110200031,
+		110200032,
+		110200033,
+		110210011,
+		110210012,
+		110210013,
+		110210021,
+		110210022,
+		110210023,
+		110210031,
+		110210032,
+		110210033,
+		110220011,
+		110220012,
+		110220013,
+		110220021,
+		110220022,
+		110220023,
+		110220031,
+		110220032,
+		110220033,
 		110240011,
 		110240012,
 		110240013,
@@ -47162,6 +55902,15 @@
 		110840031,
 		110840032,
 		110840033,
+		110890011,
+		110890012,
+		110890013,
+		110890021,
+		110890022,
+		110890023,
+		110890031,
+		110890032,
+		110890033,
 		110930011,
 		110930012,
 		110930013,
@@ -47288,6 +56037,15 @@
 		111500031,
 		111500032,
 		111500033,
+		111560011,
+		111560012,
+		111560013,
+		111560021,
+		111560022,
+		111560023,
+		111560031,
+		111560032,
+		111560033,
 		111580011,
 		111580012,
 		111580013,
@@ -47451,156 +56209,55 @@
 		200001089,
 		200001090,
 		200001091,
-		211011101,
-		211011201,
-		211011202,
-		211011203,
-		211013101,
-		211013111,
-		211013201,
-		211013202,
-		211013203,
-		211019101,
-		211019201,
-		211019202,
-		211019203,
-		211019233,
-		211027101,
-		211027201,
-		211027202,
-		211027203,
-		211027221,
-		211028101,
-		211028201,
-		211028202,
-		211028203,
-		211032101,
-		211032106,
-		211032201,
-		211032202,
-		211032203,
-		211033101,
-		211033201,
-		211033202,
-		211033203,
-		211033231,
-		211038101,
-		211038201,
-		211038202,
-		211038203,
-		211038221,
-		211039101,
-		211039203,
-		211041101,
-		211041201,
-		211041202,
-		211041203,
-		211042101,
-		211042201,
-		211042202,
-		211042203,
-		211048101,
-		211048201,
-		211048202,
-		211048203,
-		211048211,
-		211050101,
-		211050201,
-		211050202,
-		211050203,
-		211050221,
-		211058101,
-		211058201,
-		211058202,
-		211058203,
-		211059101,
-		211059201,
-		211059202,
-		211059203,
-		211066101,
-		211066202,
-		211066203,
-		211066231,
-		211080101,
-		211080111,
-		211080201,
-		211080202,
-		211080203,
-		211081101,
-		211081201,
-		211081202,
-		211081203,
-		211084101,
-		211084201,
-		211084202,
-		211084203,
-		211084212,
-		211093101,
-		211093231,
-		211093232,
-		211093233,
-		211093236,
-		211096101,
-		211096201,
-		211096202,
-		211096203,
-		211097101,
-		211097201,
-		211097203,
-		211099101,
-		211099201,
-		211099202,
-		211099203,
-		211099231,
-		211111101,
-		211111201,
-		211111202,
-		211111203,
-		211119101,
-		211119201,
-		211119202,
-		211119203,
-		211127101,
-		211127201,
-		211127202,
-		211127203,
-		211139101,
-		211139201,
-		211139202,
-		211139203,
-		211148101,
-		211148201,
-		211148202,
-		211148203,
-		211184101,
-		211184201,
-		211184202,
-		211184203,
-		211199101,
-		211199201,
-		211199202,
-		211199203,
-		211199305,
+		200001092,
+		200001093,
+		200001094,
+		200001095,
+		200001096,
+		200001097,
+		200001098,
+		200001099,
+		200001100,
+		200001101,
+		200001102,
+		200001103,
+		200001104,
+		200001105,
+		200001106,
+		200001107,
+		200001108,
+		200001109,
+		200001110,
+		200001111,
+		200001112,
+		200001113,
 		220101101,
 		220101301,
+		220101601,
 		220101901,
+		220102401,
 		220102701,
 		220102801,
 		220103201,
 		220103301,
+		220103501,
 		220103801,
 		220103901,
 		220104101,
 		220104201,
 		220104802,
 		220105001,
+		220105201,
+		220105601,
 		220105801,
 		220105901,
 		220106601,
+		220106801,
 		220108001,
 		220108101,
 		220108401,
 		220109301,
+		220109401,
 		220109601,
 		220109701,
 		220109901,
@@ -47642,6 +56299,9 @@
 		500101601,
 		500101701,
 		500101901,
+		500102001,
+		500102101,
+		500102201,
 		500102401,
 		500102601,
 		500102701,
@@ -47677,6 +56337,7 @@
 		500108001,
 		500108101,
 		500108401,
+		500108901,
 		500109301,
 		500109401,
 		500109501,
@@ -47691,6 +56352,7 @@
 		500113901,
 		500114801,
 		500115001,
+		500115601,
 		500115801,
 		500118401,
 		500119701,
@@ -47753,6 +56415,11 @@
 		600000055,
 		600000056,
 		600000057,
+		600000058,
+		600000059,
+		600000060,
+		600000061,
+		600000062,
 		700000001,
 		700000101,
 		700000102,
@@ -48404,6 +57071,38 @@
 		700009211,
 		700009212,
 		700009213,
+		700009215,
+		700009319,
+		700009320,
+		700009321,
+		700009322,
+		700009323,
+		700009324,
+		700009325,
+		700009326,
+		700009327,
+		700009328,
+		700009329,
+		700009330,
+		700009331,
+		700009332,
+		700009333,
+		700009334,
+		700009335,
+		700009336,
+		700009337,
+		700009338,
+		700009339,
+		700009340,
+		700009341,
+		700009342,
+		700009343,
+		700009344,
+		700009345,
+		700009346,
+		700009347,
+		700009348,
+		700009349,
 		700009481,
 		700009482,
 		700009483,
@@ -48532,6 +57231,12 @@
 		700009640,
 		700009641,
 		700009642,
+		700009681,
+		700009682,
+		700009683,
+		700009684,
+		700009685,
+		700009686,
 		700009701,
 		700009702,
 		700009703,
@@ -48609,6 +57314,26 @@
 		700009824,
 		700009825,
 		700009826,
+		700009831,
+		700009832,
+		700009833,
+		700009834,
+		700009835,
+		700009836,
+		700009837,
+		700009838,
+		700009839,
+		700009840,
+		700009841,
+		700009842,
+		700009843,
+		700009844,
+		700009845,
+		700009846,
+		700009851,
+		700009852,
+		700009853,
+		700009854,
 		700009901,
 		700009902,
 		700009903,
@@ -48767,6 +57492,21 @@
 		700070203,
 		700070204,
 		700070205,
+		700070206,
+		700070207,
+		700070208,
+		700070209,
+		700070210,
+		700070211,
+		700070212,
+		700070213,
+		700070214,
+		700070215,
+		700070216,
+		700070217,
+		700070218,
+		700070219,
+		700070220,
 		700070501,
 		700070502,
 		700070503,
@@ -48890,6 +57630,196 @@
 		700070865,
 		700070866,
 		700070867,
+		700071001,
+		700071002,
+		700071003,
+		700071004,
+		700071005,
+		700071006,
+		700071007,
+		700071008,
+		700071011,
+		700071012,
+		700071013,
+		700071014,
+		700071015,
+		700071016,
+		700071017,
+		700071018,
+		700071019,
+		700071020,
+		700071021,
+		700071022,
+		700071023,
+		700071024,
+		700071025,
+		700071026,
+		700071027,
+		700071101,
+		700071102,
+		700071103,
+		700071104,
+		700071105,
+		700071106,
+		700071107,
+		700071108,
+		700071109,
+		700071110,
+		700071111,
+		700071112,
+		700071121,
+		700071122,
+		700071123,
+		700071149,
+		700071150,
+		700071151,
+		700071152,
+		700071153,
+		700071154,
+		700071155,
+		700071156,
+		700071157,
+		700071158,
+		700071159,
+		700071160,
+		700071161,
+		700071162,
+		700071171,
+		700071172,
+		700071173,
+		700071199,
+		700071200,
+		700071201,
+		700071202,
+		700071203,
+		700071204,
+		700071205,
+		700071206,
+		700071207,
+		700071208,
+		700071209,
+		700071210,
+		700071211,
+		700071212,
+		700071221,
+		700071222,
+		700071223,
+		700071249,
+		700071250,
+		700071251,
+		700071252,
+		700071253,
+		700071254,
+		700071255,
+		700071256,
+		700071257,
+		700071258,
+		700071259,
+		700071260,
+		700071261,
+		700071262,
+		700071271,
+		700071272,
+		700071273,
+		700071299,
+		700071300,
+		700071301,
+		700071302,
+		700071303,
+		700071304,
+		700071305,
+		700071306,
+		700071307,
+		700071308,
+		700071309,
+		700071310,
+		700071311,
+		700071312,
+		700071321,
+		700071322,
+		700071323,
+		700071349,
+		700071350,
+		700071351,
+		700071352,
+		700071353,
+		700071354,
+		700071355,
+		700071356,
+		700071357,
+		700071358,
+		700071359,
+		700071360,
+		700071361,
+		700071362,
+		700071371,
+		700071372,
+		700071373,
+		700071399,
+		700071400,
+		700071412,
+		700071413,
+		700071414,
+		700071415,
+		700071416,
+		700071423,
+		700071424,
+		700071425,
+		700071426,
+		700071434,
+		700071435,
+		700071436,
+		700071445,
+		700071446,
+		700071456,
+		700080000,
+		700080010,
+		700080020,
+		700080030,
+		700080040,
+		700080050,
+		700080060,
+		700080070,
+		700080080,
+		700080090,
+		700080100,
+		700080110,
+		700080120,
+		700080130,
+		700080140,
+		700080150,
+		700080160,
+		700080170,
+		700080180,
+		700080190,
+		700080200,
+		700080210,
+		700080220,
+		700080230,
+		700080240,
+		700080250,
+		700080260,
+		700080270,
+		700080280,
+		700080290,
+		700080300,
+		700080310,
+		700080320,
+		700080330,
+		700080340,
+		700080350,
+		700080360,
+		700080370,
+		700080380,
+		700080390,
+		700080400,
+		700080410,
+		700080420,
+		700080430,
+		700080440,
+		700080450,
+		700080460,
+		700080470,
 		800000001,
 		800000002,
 		800000003,
@@ -48971,6 +57901,167 @@
 		800000140,
 		800000141,
 		800000142,
-		800000143
+		800000143,
+		21101110121,
+		21101120122,
+		21101120223,
+		21101120324,
+		21101310121,
+		21101311141,
+		21101320122,
+		21101320223,
+		21101320324,
+		21101610121,
+		21101620122,
+		21101620223,
+		21101620324,
+		21101910121,
+		21101920122,
+		21101920223,
+		21101920324,
+		21101923325,
+		21102410121,
+		21102420122,
+		21102420223,
+		21102420324,
+		21102710121,
+		21102720122,
+		21102720223,
+		21102720324,
+		21102722141,
+		21102810121,
+		21102820122,
+		21102820223,
+		21102820324,
+		21103210121,
+		21103210625,
+		21103220122,
+		21103220223,
+		21103220324,
+		21103310121,
+		21103320122,
+		21103320223,
+		21103320324,
+		21103323125,
+		21103510121,
+		21103520122,
+		21103520223,
+		21103520324,
+		21103810121,
+		21103820122,
+		21103820223,
+		21103820324,
+		21103822125,
+		21103910121,
+		21103920322,
+		21104110121,
+		21104120122,
+		21104120223,
+		21104120324,
+		21104210121,
+		21104220122,
+		21104220223,
+		21104220324,
+		21104810121,
+		21104820122,
+		21104820223,
+		21104820324,
+		21104821125,
+		21105010121,
+		21105020122,
+		21105020223,
+		21105020324,
+		21105022141,
+		21105210121,
+		21105220122,
+		21105220223,
+		21105220324,
+		21105222125,
+		21105223126,
+		21105610121,
+		21105620122,
+		21105620223,
+		21105620324,
+		21105810121,
+		21105820122,
+		21105820223,
+		21105820324,
+		21105910121,
+		21105920122,
+		21105920223,
+		21105920324,
+		21106610121,
+		21106620222,
+		21106620323,
+		21106623124,
+		21106810121,
+		21106820122,
+		21106820223,
+		21106820324,
+		21108010121,
+		21108011125,
+		21108011141,
+		21108020122,
+		21108020223,
+		21108020324,
+		21108110121,
+		21108120122,
+		21108120223,
+		21108120324,
+		21108410121,
+		21108420122,
+		21108420223,
+		21108420324,
+		21108421225,
+		21109310121,
+		21109323122,
+		21109323223,
+		21109323324,
+		21109323625,
+		21109410121,
+		21109420122,
+		21109420223,
+		21109420324,
+		21109610121,
+		21109620122,
+		21109620223,
+		21109620324,
+		21109710121,
+		21109720122,
+		21109720323,
+		21109910121,
+		21109920122,
+		21109920223,
+		21109920324,
+		21109923142,
+		21111110121,
+		21111120122,
+		21111120223,
+		21111120324,
+		21111910121,
+		21111920122,
+		21111920223,
+		21111920324,
+		21112710121,
+		21112720122,
+		21112720223,
+		21112720324,
+		21113910121,
+		21113920122,
+		21113920223,
+		21113920324,
+		21114810121,
+		21114820122,
+		21114820223,
+		21114820324,
+		21118410121,
+		21118420122,
+		21118420223,
+		21118420324,
+		21119910121,
+		21119920122,
+		21119920223,
+		21119920324,
+		21119930525
 	}
 }

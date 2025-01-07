@@ -16,8 +16,10 @@ function var_0_0.InitUI(arg_3_0)
 	arg_3_0:RefreshDesc()
 	arg_3_0:RefreshShop()
 
-	arg_3_0.stateCon_ = ControllerUtil.GetController(arg_3_0.transform_, "state")
-	arg_3_0.clearCon_ = ControllerUtil.GetController(arg_3_0.taskRect_, "clear")
+	arg_3_0.clearCon_ = arg_3_0.stateCon_:GetController("clear")
+	arg_3_0.lockCon_ = arg_3_0.stateCon_:GetController("lock")
+	arg_3_0.unlockCon_ = arg_3_0.stateCon_:GetController("unlock")
+	arg_3_0.closeCon_ = arg_3_0.stateCon_:GetController("close")
 	arg_3_0.scrollHelper_ = LuaList.New(handler(arg_3_0, arg_3_0.IndexItem), arg_3_0.listGo_, ActivityPtScrollTaskItem)
 end
 
@@ -137,7 +139,7 @@ function var_0_0.RefreshTime(arg_13_0)
 	arg_13_0:StopTimer()
 
 	if var_13_1 < arg_13_0.startTime_ then
-		arg_13_0.stateCon_:SetSelectedState("close")
+		arg_13_0.closeCon_:SetSelectedState("true")
 
 		arg_13_0.timeLable_.text = GetTips("SOLO_NOT_OPEN")
 		arg_13_0.timer_ = Timer.New(function()
@@ -156,7 +158,7 @@ function var_0_0.RefreshTime(arg_13_0)
 		var_13_0 = arg_13_0.stopTime_ - var_13_1
 
 		if var_13_0 < GameSetting.time_remaining_show.value[1] * 86400 then
-			arg_13_0.shopTimeLable_.text = manager.time:GetLostTimeStrWith2Unit(arg_13_0.stopTime_)
+			arg_13_0.shopTimeLable_.text = manager.time:GetLostTimeStr2(arg_13_0.stopTime_, nil, false)
 
 			SetActive(arg_13_0.shopTimeGo_, true)
 		else
@@ -164,17 +166,15 @@ function var_0_0.RefreshTime(arg_13_0)
 		end
 
 		if var_13_1 < var_13_3 then
-			arg_13_0.timeLable_.text = manager.time:GetLostTimeStrWith2Unit(var_13_3)
+			arg_13_0.timeLable_.text = manager.time:GetLostTimeStrWith2UnitWithPrefix(var_13_3)
 
 			if arg_13_0.isLock_ then
-				arg_13_0.stateCon_:SetSelectedState("lock")
+				arg_13_0.lockCon_:SetSelectedState("true")
 			else
-				arg_13_0.stateCon_:SetSelectedState("unlock")
+				arg_13_0.unlockCon_:SetSelectedState("true")
 			end
 		else
 			arg_13_0.timeLable_.text = GetTips("TIME_OVER")
-
-			arg_13_0.stateCon_:SetSelectedState("onlyShop")
 		end
 
 		arg_13_0.timer_ = Timer.New(function()
@@ -189,7 +189,7 @@ function var_0_0.RefreshTime(arg_13_0)
 			end
 
 			if var_13_0 < GameSetting.time_remaining_show.value[1] * 86400 then
-				arg_13_0.shopTimeLable_.text = manager.time:GetLostTimeStrWith2Unit(arg_13_0.stopTime_)
+				arg_13_0.shopTimeLable_.text = manager.time:GetLostTimeStr2(arg_13_0.stopTime_, nil, false)
 
 				SetActive(arg_13_0.shopTimeGo_, true)
 			else
@@ -197,23 +197,21 @@ function var_0_0.RefreshTime(arg_13_0)
 			end
 
 			if var_13_1 < var_13_3 then
-				arg_13_0.timeLable_.text = manager.time:GetLostTimeStrWith2Unit(var_13_3)
+				arg_13_0.timeLable_.text = manager.time:GetLostTimeStrWith2UnitWithPrefix(var_13_3)
 
 				if arg_13_0.isLock_ then
-					arg_13_0.stateCon_:SetSelectedState("lock")
+					arg_13_0.lockCon_:SetSelectedState("true")
 				else
-					arg_13_0.stateCon_:SetSelectedState("unlock")
+					arg_13_0.unlockCon_:SetSelectedState("true")
 				end
 			else
 				arg_13_0.timeLable_.text = GetTips("TIME_OVER")
-
-				arg_13_0.stateCon_:SetSelectedState("onlyShop")
 			end
 		end, 1, -1)
 
 		arg_13_0.timer_:Start()
 	else
-		arg_13_0.stateCon_:SetSelectedState("close")
+		arg_13_0.closeCon_:SetSelectedState("true")
 
 		arg_13_0.timeLable_.text = GetTips("TIME_OVER")
 		arg_13_0.shopTimeLable_.text = GetTips("TIME_OVER")

@@ -15,7 +15,13 @@ end
 function var_0_0.RefreshUI(arg_3_0, arg_3_1, arg_3_2)
 	arg_3_0.buffID = arg_3_1.id
 	arg_3_0.buffIcon_.sprite = IdolTraineeTools:GetBuffIcon(arg_3_0.buffID)
-	arg_3_0.buffRoundText_.text = arg_3_1.duration
+
+	if arg_3_1.showDuration then
+		arg_3_0.buffRoundText_.text = arg_3_1.duration
+	else
+		arg_3_0.buffRoundText_.text = ""
+	end
+
 	arg_3_0.showInfoFunc = arg_3_2
 end
 

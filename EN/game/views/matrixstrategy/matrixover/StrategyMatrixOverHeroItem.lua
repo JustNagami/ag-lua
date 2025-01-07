@@ -33,7 +33,7 @@ function var_0_1.SetMatrixActivityId(arg_2_0, arg_2_1)
 end
 
 function var_0_1.GetHeroData(arg_3_0, arg_3_1)
-	return StrategyMatrixData:GetHeroData(arg_3_0.matrix_activity_id, arg_3_1)
+	return StrategyMatrixData:GetHeroDataNew(arg_3_1)
 end
 
 function var_0_1.GetHeroSkin(arg_4_0, arg_4_1)

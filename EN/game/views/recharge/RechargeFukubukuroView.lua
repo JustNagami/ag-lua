@@ -46,18 +46,19 @@ function var_0_0.AddUIListener(arg_5_0)
 
 		if ShopTools.IsRMB(arg_5_0.goodId_) then
 			local var_6_2
+			local var_6_3, var_6_4, var_6_5 = ShopTools.IsOnDiscountArea(arg_5_0.goodId_)
 
-			if arg_5_0:IsOnDiscountArea() then
+			if var_6_3 and var_6_5 then
 				var_6_2 = PaymentCfg[arg_5_0.shopCfg_.cheap_cost_id]
 			else
 				var_6_2 = PaymentCfg[arg_5_0.shopCfg_.cost_id]
 			end
 
-			local var_6_3 = arg_5_0.params_.buy_source or 0
+			local var_6_6 = arg_5_0.params_.buy_source or 0
 
-			PayAction.RequestGSPay(var_6_2.id, arg_5_0.selectNum_, arg_5_0.shopCfg_.shop_id, arg_5_0.shopCfg_.goods_id, nil, var_6_3)
+			PayAction.RequestGSPay(var_6_2.id, arg_5_0.selectNum_, arg_5_0.shopCfg_.shop_id, arg_5_0.shopCfg_.goods_id, nil, var_6_6)
 		else
-			local var_6_4 = arg_5_0.params_.buy_source or 0
+			local var_6_7 = arg_5_0.params_.buy_source or 0
 
 			if ShopTools.GetPrice(arg_5_0.goodId_) == 0 then
 				arg_5_0:Back()
@@ -66,7 +67,7 @@ function var_0_0.AddUIListener(arg_5_0)
 						goodID = arg_5_0.goodId_,
 						buyNum = arg_5_0.selectNum_
 					}
-				}, nil, var_6_4)
+				}, nil, var_6_7)
 
 				return
 			end
@@ -81,7 +82,7 @@ function var_0_0.AddUIListener(arg_5_0)
 					payment_giftbox_check = 1
 				})
 				arg_5_0:UpdatePreview()
-			end, var_6_4)
+			end, var_6_7)
 		end
 	end)
 	arg_5_0:AddBtnListener(nil, arg_5_0.m_chanceBtn, function()

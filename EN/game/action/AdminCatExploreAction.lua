@@ -41,50 +41,115 @@ function var_0_0.AdminCatExploreCallBack(arg_5_0, arg_5_1)
 	end
 end
 
-function var_0_0.AdminCatExploreFinish(arg_6_0)
+function var_0_0.AdminCatExploreAllExplore(arg_6_0, arg_6_1)
+	var_0_0.list = arg_6_0
+	var_0_0.index = arg_6_1
+
 	local var_6_0 = {
-		area_id = arg_6_0
+		area_id = arg_6_0[arg_6_1].area,
+		hour_time = arg_6_0[arg_6_1].hour,
+		mimir_id = arg_6_0[arg_6_1].id
 	}
 
-	manager.net:SendWithLoadingNew(67006, var_6_0, 67007, var_0_0.AdminCatExploreFinishCallBack)
+	manager.net:SendWithLoadingNew(67004, var_6_0, 67005, var_0_0.AdminCatAllExploreCallBack)
 end
 
-function var_0_0.AdminCatExploreFinishCallBack(arg_7_0, arg_7_1)
+function var_0_0.AdminCatAllExploreCallBack(arg_7_0, arg_7_1)
 	if isSuccess(arg_7_0.result) then
-		AdminCatExploreData:UpdateFinishExploreData(arg_7_1.area_id, arg_7_0.event_id, arg_7_0.reward_list)
 		manager.notify:CallUpdateFunc(EXPLORE_UPDATE)
+
+		var_0_0.index = var_0_0.index + 1
+
+		if #var_0_0.list < var_0_0.index then
+			var_0_0.index = nil
+			var_0_0.list = nil
+
+			ShowTips("EXPLORE_BEGIN")
+
+			return
+		end
+
+		var_0_0.AdminCatExploreAllExplore(var_0_0.list, var_0_0.index)
 	else
 		ShowTips(GetTips(arg_7_0.result))
 	end
 end
 
+function var_0_0.AdminCatExploreAllFinish(arg_8_0, arg_8_1)
+	var_0_0.list = arg_8_0
+	var_0_0.index = arg_8_1
+
+	local var_8_0 = {
+		area_id = arg_8_0[arg_8_1]
+	}
+
+	manager.net:SendWithLoadingNew(67006, var_8_0, 67007, var_0_0.AdminCatExploreAllFinishCallBack)
+end
+
+function var_0_0.AdminCatExploreAllFinishCallBack(arg_9_0, arg_9_1)
+	if isSuccess(arg_9_0.result) then
+		AdminCatExploreData:UpdateFinishExploreData(arg_9_1.area_id, arg_9_0.event_id, arg_9_0.reward_list, function()
+			var_0_0.index = var_0_0.index + 1
+
+			if #var_0_0.list < var_0_0.index then
+				var_0_0.index = nil
+				var_0_0.list = nil
+
+				return
+			end
+
+			var_0_0.AdminCatExploreAllFinish(var_0_0.list, var_0_0.index)
+		end)
+		manager.notify:CallUpdateFunc(EXPLORE_UPDATE)
+	else
+		ShowTips(GetTips(arg_9_0.result))
+	end
+end
+
+function var_0_0.AdminCatExploreFinish(arg_11_0)
+	local var_11_0 = {
+		area_id = arg_11_0
+	}
+
+	manager.net:SendWithLoadingNew(67006, var_11_0, 67007, var_0_0.AdminCatExploreFinishCallBack)
+end
+
+function var_0_0.AdminCatExploreFinishCallBack(arg_12_0, arg_12_1)
+	if isSuccess(arg_12_0.result) then
+		AdminCatExploreData:UpdateFinishExploreData(arg_12_1.area_id, arg_12_0.event_id, arg_12_0.reward_list)
+		manager.notify:CallUpdateFunc(EXPLORE_UPDATE)
+	else
+		ShowTips(GetTips(arg_12_0.result))
+	end
+end
+
 function var_0_0.GetWeekReward()
-	manager.net:SendWithLoadingNew(67008, {}, 67009, function(arg_9_0)
-		if isSuccess(arg_9_0.result) then
-			AdminCatExploreData:ResetExploreDay(arg_9_0.reward_list)
+	manager.net:SendWithLoadingNew(67008, {}, 67009, function(arg_14_0)
+		if isSuccess(arg_14_0.result) then
+			AdminCatExploreData:ResetExploreDay(arg_14_0.reward_list)
 			ShowTips("EXPLORE_REWARD_COLLECTION")
 			manager.notify:CallUpdateFunc(EXPLORE_REWARD_UPDATE)
 		else
-			ShowTips(GetTips(arg_9_0.result))
+			ShowTips(GetTips(arg_14_0.result))
 		end
 	end)
 end
 
-function var_0_0.UnlockAdminCat(arg_10_0)
-	local var_10_0 = {
-		mimir_id = arg_10_0
+function var_0_0.UnlockAdminCat(arg_15_0)
+	local var_15_0 = {
+		mimir_id = arg_15_0
 	}
 
-	manager.net:SendWithLoadingNew(67010, var_10_0, 67011, var_0_0.UnlockAdminCatCallBack)
+	manager.net:SendWithLoadingNew(67010, var_15_0, 67011, var_0_0.UnlockAdminCatCallBack)
 end
 
-function var_0_0.UnlockAdminCatCallBack(arg_11_0, arg_11_1)
-	if isSuccess(arg_11_0.result) then
-		AdminCatExploreData:UpdateUnlockAdminCatList(arg_11_1.mimir_id)
+function var_0_0.UnlockAdminCatCallBack(arg_16_0, arg_16_1)
+	if isSuccess(arg_16_0.result) then
+		AdminCatExploreData:UpdateUnlockAdminCatList(arg_16_1.mimir_id)
 		ShowTips("EXPLORE_MEOW_DEBLOCKING")
 		manager.notify:CallUpdateFunc(EXPLORE_UNLOCK_ADMIN_CAT_UPDATE)
 	else
-		ShowTips(GetTips(arg_11_0.result))
+		ShowTips(GetTips(arg_16_0.result))
 	end
 end
 
@@ -92,11 +157,11 @@ function var_0_0.WeeklyFirstOpen()
 	manager.net:SendWithLoadingNew(67012, {}, 67013, var_0_0.WeeklyFirstOpenCallBack)
 end
 
-function var_0_0.WeeklyFirstOpenCallBack(arg_13_0, arg_13_1)
-	if isSuccess(arg_13_0.result) then
+function var_0_0.WeeklyFirstOpenCallBack(arg_18_0, arg_18_1)
+	if isSuccess(arg_18_0.result) then
 		AdminCatExploreData:UpdateWeeklyFirst()
 	else
-		ShowTips(GetTips(arg_13_0.result))
+		ShowTips(GetTips(arg_18_0.result))
 	end
 end
 

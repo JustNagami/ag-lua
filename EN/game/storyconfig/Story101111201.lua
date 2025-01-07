@@ -275,7 +275,7 @@
 		arg_11_1.frameCnt_ = 0
 		arg_11_1.state_ = "playing"
 		arg_11_1.curTalkId_ = 111121003
-		arg_11_1.duration_ = 0.099999999999
+		arg_11_1.duration_ = 0.1
 
 		SetActive(arg_11_1.tipsGo_, false)
 
@@ -315,7 +315,7 @@
 		arg_15_1.frameCnt_ = 0
 		arg_15_1.state_ = "playing"
 		arg_15_1.curTalkId_ = 111121004
-		arg_15_1.duration_ = 10.966
+		arg_15_1.duration_ = 10.97
 
 		local var_15_0 = {
 			ja = 10.633,
@@ -370,6 +370,9 @@
 				arg_15_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_mmr")
 
 				arg_15_1.callingController_:SetSelectedState("normal")
+
+				arg_15_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_15_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_18_3 = arg_15_1:GetWordFromCfg(111121004)
 				local var_18_4 = arg_15_1:FormatText(var_18_3.content)
@@ -495,6 +498,9 @@
 
 				arg_19_1.callingController_:SetSelectedState("normal")
 
+				arg_19_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_19_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_22_3 = arg_19_1:GetWordFromCfg(111121005)
 				local var_22_4 = arg_19_1:FormatText(var_22_3.content)
 
@@ -563,7 +569,7 @@
 		arg_23_1.frameCnt_ = 0
 		arg_23_1.state_ = "playing"
 		arg_23_1.curTalkId_ = 111121006
-		arg_23_1.duration_ = 2.166
+		arg_23_1.duration_ = 2.17
 
 		local var_23_0 = {
 			ja = 1.999999999999,
@@ -792,7 +798,7 @@
 		arg_27_1.frameCnt_ = 0
 		arg_27_1.state_ = "playing"
 		arg_27_1.curTalkId_ = 111121007
-		arg_27_1.duration_ = 5.666
+		arg_27_1.duration_ = 5.67
 
 		local var_27_0 = {
 			ja = 5.666,
@@ -946,6 +952,9 @@
 				arg_27_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_mmr")
 
 				arg_27_1.callingController_:SetSelectedState("normal")
+
+				arg_27_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_27_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_30_24 = arg_27_1:GetWordFromCfg(111121007)
 				local var_30_25 = arg_27_1:FormatText(var_30_24.content)
@@ -2008,6 +2017,9 @@
 				arg_59_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_mmr")
 
 				arg_59_1.callingController_:SetSelectedState("normal")
+
+				arg_59_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_59_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_62_9 = arg_59_1:GetWordFromCfg(111121014)
 				local var_62_10 = arg_59_1:FormatText(var_62_9.content)

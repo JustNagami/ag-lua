@@ -14,6 +14,8 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
+	arg_3_0.commonPortrait_ = CommonHeadPortrait.New(arg_3_0.headItem_)
+
 	if arg_3_0.conExCollection_ then
 		arg_3_0.rankController_ = arg_3_0.conExCollection_:GetController("rank")
 	else
@@ -42,10 +44,8 @@ function var_0_0.UpdateView(arg_5_0)
 	arg_5_0.rankText_.text = arg_5_0.data.rank
 
 	arg_5_0.rankController_:SetSelectedState(tostring(arg_5_0.data.rank > 3 and 0 or arg_5_0.data.rank))
-
-	arg_5_0.headImg_.sprite = ItemTools.getItemSprite(arg_5_0.data.portrait)
-	arg_5_0.frameImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_5_0.data.frame)
-
+	arg_5_0.commonPortrait_:RenderHead(arg_5_0.data.portrait)
+	arg_5_0.commonPortrait_:RenderFrame(arg_5_0.data.frame)
 	arg_5_0[arg_5_0.type == 2 and "UpdateRankView" or "UpdateMainView"](arg_5_0)
 end
 
@@ -64,6 +64,7 @@ function var_0_0.OnEnter(arg_8_0)
 end
 
 function var_0_0.Dispose(arg_9_0)
+	arg_9_0.commonPortrait_:Dispose()
 	var_0_0.super.Dispose(arg_9_0)
 	Object.Destroy(arg_9_0.gameObject_)
 end

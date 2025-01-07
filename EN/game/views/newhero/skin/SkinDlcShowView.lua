@@ -112,7 +112,7 @@ function var_0_0.CirMovieStatusChange(arg_10_0, arg_10_1)
 end
 
 function var_0_0.Play(arg_11_0)
-	arg_11_0.criplayer_:SetFile(nil, arg_11_0.start_path, CriMana.Player.SetMode.New)
+	SetFile(arg_11_0.criplayer_, nil, arg_11_0.start_path, CriMana.Player.SetMode.New)
 
 	local var_11_0 = manager.audio:GetMusicVolume()
 

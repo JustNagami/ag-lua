@@ -13,6 +13,7 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
+	arg_3_0.weaponImg_.immediate = true
 	arg_3_0.starController_ = ControllerUtil.GetController(arg_3_0.starControllerTrs_, "star")
 	arg_3_0.AdaptImg_ = arg_3_0:FindCom("AdaptImage", nil, arg_3_0.weaponImg_.transform)
 end
@@ -50,7 +51,7 @@ function var_0_0.SetInfo(arg_5_0, arg_5_1)
 		return
 	end
 
-	arg_5_0.weaponImg_.sprite = AssetEx.LoadSprite("TextureConfig/WeaponServant/Portrait/" .. arg_5_1)
+	arg_5_0.weaponImg_.spriteSync = "TextureConfig/WeaponServant/Portrait/" .. arg_5_1
 
 	arg_5_0.AdaptImg_:AdaptImg()
 

@@ -70,104 +70,105 @@ function var_0_0.RefreshUI(arg_7_0, arg_7_1, arg_7_2)
 		arg_7_0:RefreshClose()
 	end
 
-	if manager.redPoint:getTipValue(string.format("%s_%s_%s", RedPointConst.ACTIVITY_RACE_TRIAL, arg_7_0.mainActivityID_, arg_7_0.activityID_)) > 0 then
-		SetActive(arg_7_0.redGo_, true)
-	else
-		SetActive(arg_7_0.redGo_, false)
-	end
-
+	arg_7_0:RefreshRedPoint()
 	arg_7_0:RefreshRace()
 end
 
-function var_0_0.RefreshRace(arg_8_0)
-	if arg_8_0.raceCon_ then
-		arg_8_0.raceCon_:SetSelectedState(tostring(arg_8_0.cfg_.race))
-	end
-
-	arg_8_0.raceIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/OsirisUI/RaceTrial/" .. arg_8_0.cfg_.race)
-end
-
-function var_0_0.RefreshOpen(arg_9_0)
-	if arg_9_0.data_.point > 0 then
-		arg_9_0.viewCon_:SetSelectedState("open")
-
-		arg_9_0.scoreText_.text = arg_9_0.data_.point
+function var_0_0.RefreshRedPoint(arg_8_0)
+	if manager.redPoint:getTipValue(string.format("%s_%s_%s", RedPointConst.ACTIVITY_RACE_TRIAL, arg_8_0.mainActivityID_, arg_8_0.activityID_)) > 0 then
+		SetActive(arg_8_0.redGo_, true)
 	else
-		arg_9_0.viewCon_:SetSelectedState("none")
+		SetActive(arg_8_0.redGo_, false)
 	end
 end
 
-function var_0_0.RefreshClose(arg_10_0)
-	arg_10_0.viewCon_:SetSelectedState("close")
+function var_0_0.RefreshRace(arg_9_0)
+	if arg_9_0.raceCon_ then
+		arg_9_0.raceCon_:SetSelectedState(tostring(arg_9_0.cfg_.race))
+	end
 
+	arg_9_0.raceIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/OsirisUI/RaceTrial/" .. arg_9_0.cfg_.race)
+end
+
+function var_0_0.StopTimer(arg_10_0)
 	if arg_10_0.timer_ then
 		arg_10_0.timer_:Stop()
 
 		arg_10_0.timer_ = nil
 	end
+end
 
-	if arg_10_0.endTime_ <= manager.time:GetServerTime() then
-		arg_10_0.timeCntText_.text = GetTips("TIME_OVER")
+function var_0_0.StartTimer(arg_11_0)
+	arg_11_0:StopTimer()
+
+	if arg_11_0.endTime_ <= manager.time:GetServerTime() then
+		arg_11_0.timeCntText_.text = GetTips("TIME_OVER")
 
 		return
 	end
 
-	local var_10_0 = arg_10_0.openTime_ - manager.time:GetServerTime()
+	local var_11_0 = arg_11_0.openTime_ - manager.time:GetServerTime()
 
-	arg_10_0.timeCntText_.text = string.format(GetTips("OPEN_TIME"), arg_10_0:GetTimeText(var_10_0))
+	arg_11_0.timeCntText_.text = string.format(GetTips("OPEN_TIME"), arg_11_0:GetTimeText(var_11_0))
 
-	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_10_0.lockRect_)
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_11_0.lockRect_)
 
-	arg_10_0.timer_ = Timer.New(function()
-		var_10_0 = arg_10_0.openTime_ - manager.time:GetServerTime()
+	arg_11_0.timer_ = Timer.New(function()
+		var_11_0 = arg_11_0.openTime_ - manager.time:GetServerTime()
 
-		if var_10_0 <= 0 then
-			arg_10_0.timer_:Stop()
+		if var_11_0 <= 0 then
+			arg_11_0.timer_:Stop()
 
-			arg_10_0.timer_ = nil
+			arg_11_0.timer_ = nil
 
-			arg_10_0:RefreshUI(arg_10_0.activityID_, arg_10_0.mainActivityID_)
+			arg_11_0:RefreshUI(arg_11_0.activityID_, arg_11_0.mainActivityID_)
 		end
 
-		arg_10_0.timeCntText_.text = string.format(GetTips("OPEN_TIME"), arg_10_0:GetTimeText(var_10_0))
+		arg_11_0.timeCntText_.text = string.format(GetTips("OPEN_TIME"), arg_11_0:GetTimeText(var_11_0))
 	end, 1, -1)
 
-	arg_10_0.timer_:Start()
+	arg_11_0.timer_:Start()
 end
 
-function var_0_0.GetTimeText(arg_12_0, arg_12_1)
-	local var_12_0 = ""
+function var_0_0.RefreshOpen(arg_13_0)
+	if arg_13_0.data_.point > 0 then
+		arg_13_0.viewCon_:SetSelectedState("open")
 
-	if arg_12_1 / 86400 >= 1 then
-		var_12_0 = math.ceil(arg_12_1 / 86400) .. GetTips("DAY")
-	elseif arg_12_1 / 3600 >= 1 then
-		var_12_0 = math.ceil(arg_12_1 / 3600) .. GetTips("HOUR")
-	elseif arg_12_1 / 60 >= 1 then
-		var_12_0 = math.ceil(arg_12_1 / 60) .. GetTips("MINUTE")
+		arg_13_0.scoreText_.text = arg_13_0.data_.point
 	else
-		var_12_0 = 1 .. GetTips("MINUTE")
-	end
-
-	return var_12_0
-end
-
-function var_0_0.OnExit(arg_13_0)
-	if arg_13_0.timer_ then
-		arg_13_0.timer_:Stop()
-
-		arg_13_0.timer_ = nil
+		arg_13_0.viewCon_:SetSelectedState("none")
 	end
 end
 
-function var_0_0.Dispose(arg_14_0)
-	if arg_14_0.timer_ then
-		arg_14_0.timer_:Stop()
+function var_0_0.RefreshClose(arg_14_0)
+	arg_14_0.viewCon_:SetSelectedState("close")
+	arg_14_0:StartTimer()
+end
 
-		arg_14_0.timer_ = nil
+function var_0_0.GetTimeText(arg_15_0, arg_15_1)
+	local var_15_0 = ""
+
+	if arg_15_1 / 86400 >= 1 then
+		var_15_0 = math.ceil(arg_15_1 / 86400) .. GetTips("DAY")
+	elseif arg_15_1 / 3600 >= 1 then
+		var_15_0 = math.ceil(arg_15_1 / 3600) .. GetTips("HOUR")
+	elseif arg_15_1 / 60 >= 1 then
+		var_15_0 = math.ceil(arg_15_1 / 60) .. GetTips("MINUTE")
+	else
+		var_15_0 = 1 .. GetTips("MINUTE")
 	end
 
-	arg_14_0:RemoveAllListeners()
-	var_0_0.super.Dispose(arg_14_0)
+	return var_15_0
+end
+
+function var_0_0.OnExit(arg_16_0)
+	arg_16_0:StopTimer()
+end
+
+function var_0_0.Dispose(arg_17_0)
+	arg_17_0:StopTimer()
+	arg_17_0:RemoveAllListeners()
+	var_0_0.super.Dispose(arg_17_0)
 end
 
 return var_0_0

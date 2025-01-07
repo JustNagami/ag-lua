@@ -43,61 +43,70 @@ function var_0_0.Refresh(arg_7_0)
 	arg_7_0.m_comboName.text = var_7_2.name
 	arg_7_0.m_icon.sprite = getSpriteViaConfig("ComboSkill", var_7_1.skill_id)
 
-	for iter_7_0, iter_7_1 in ipairs(var_7_1.cooperate_role_ids) do
+	local var_7_3 = deepClone(var_7_1.cooperate_role_ids)
+
+	CommonTools.UniversalSortEx(var_7_3, {
+		ascend = true,
+		map = function(arg_8_0)
+			return arg_8_0
+		end
+	})
+
+	for iter_7_0, iter_7_1 in ipairs(var_7_3) do
 		arg_7_0["m_comboHead" .. iter_7_0].sprite = getSpriteViaConfig("HeroLittleIcon", iter_7_1)
 	end
 
 	arg_7_0.combRoleNumController:SetSelectedIndex(#var_7_1.cooperate_role_ids)
 end
 
-function var_0_0.RefreshRedPoint(arg_8_0)
-	local var_8_0 = ComboSkillTools.GetMaxComboSkillLevel(arg_8_0.comboId)
-	local var_8_1 = ComboSkillData:GetCurComboSkillLevel(arg_8_0.comboId)
+function var_0_0.RefreshRedPoint(arg_9_0)
+	local var_9_0 = ComboSkillTools.GetMaxComboSkillLevel(arg_9_0.comboId)
+	local var_9_1 = ComboSkillData:GetCurComboSkillLevel(arg_9_0.comboId)
 
-	if var_8_1 < var_8_0 then
-		local var_8_2 = ComboSkillLevelCfg.get_id_list_by_level[var_8_1]
-		local var_8_3 = true
+	if var_9_1 < var_9_0 then
+		local var_9_2 = ComboSkillLevelCfg.get_id_list_by_level[var_9_1]
+		local var_9_3 = true
 
-		for iter_8_0, iter_8_1 in ipairs(var_8_2) do
-			if not ComboSkillTools.CheckComboSkillUpContion(iter_8_1, arg_8_0.comboId) then
-				var_8_3 = false
+		for iter_9_0, iter_9_1 in ipairs(var_9_2) do
+			if not ComboSkillTools.CheckComboSkillUpContion(iter_9_1, arg_9_0.comboId) then
+				var_9_3 = false
 
 				break
 			end
 		end
 
-		if var_8_3 then
-			manager.redPoint:SetRedPointIndependent(arg_8_0.transform_, true)
+		if var_9_3 then
+			manager.redPoint:SetRedPointIndependent(arg_9_0.transform_, true)
 		else
-			manager.redPoint:SetRedPointIndependent(arg_8_0.transform_, false)
+			manager.redPoint:SetRedPointIndependent(arg_9_0.transform_, false)
 		end
 	else
-		manager.redPoint:SetRedPointIndependent(arg_8_0.transform_, false)
+		manager.redPoint:SetRedPointIndependent(arg_9_0.transform_, false)
 	end
 end
 
-function var_0_0.RefreshState(arg_9_0, arg_9_1)
-	arg_9_0.stateController:SetSelectedIndex(arg_9_1 == arg_9_0.comboId and 1 or 0)
+function var_0_0.RefreshState(arg_10_0, arg_10_1)
+	arg_10_0.stateController:SetSelectedIndex(arg_10_1 == arg_10_0.comboId and 1 or 0)
 end
 
-function var_0_0.SetActive(arg_10_0, arg_10_1)
-	SetActive(arg_10_0.gameObject_, arg_10_1)
+function var_0_0.SetActive(arg_11_0, arg_11_1)
+	SetActive(arg_11_0.gameObject_, arg_11_1)
 
-	if not arg_10_1 then
-		arg_10_0.comboId = 0
+	if not arg_11_1 then
+		arg_11_0.comboId = 0
 	end
 end
 
-function var_0_0.RegistCallBack(arg_11_0, arg_11_1)
-	arg_11_0.callback_ = arg_11_1
+function var_0_0.RegistCallBack(arg_12_0, arg_12_1)
+	arg_12_0.callback_ = arg_12_1
 end
 
-function var_0_0.GetComboId(arg_12_0)
-	return arg_12_0.comboId
+function var_0_0.GetComboId(arg_13_0)
+	return arg_13_0.comboId
 end
 
-function var_0_0.Dispose(arg_13_0)
-	var_0_0.super.Dispose(arg_13_0)
+function var_0_0.Dispose(arg_14_0)
+	var_0_0.super.Dispose(arg_14_0)
 end
 
 return var_0_0

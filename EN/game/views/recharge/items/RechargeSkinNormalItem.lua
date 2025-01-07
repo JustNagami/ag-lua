@@ -32,11 +32,9 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 	local var_5_0
 
 	if arg_5_0.shopCfg.description then
-		arg_5_0.isDesc = true
 		arg_5_0.itemCfg = RechargeShopDescriptionCfg[arg_5_0.shopCfg.description]
 		var_5_0 = arg_5_0.itemCfg.param[1]
 	else
-		arg_5_0.isDesc = false
 		arg_5_0.itemCfg = ItemCfg[arg_5_0.shopCfg.give_id]
 	end
 

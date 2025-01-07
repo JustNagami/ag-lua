@@ -5,6 +5,9 @@ function var_0_0.Ctor(arg_1_0, arg_1_1)
 	arg_1_0.transform_ = arg_1_1.transform
 
 	arg_1_0:BindCfgUI()
+
+	arg_1_0.image_.immediate = true
+
 	arg_1_0:AddListeners()
 
 	arg_1_0.lockController_ = ControllerUtil.GetController(arg_1_0.transform_, "lock")
@@ -45,9 +48,9 @@ function var_0_0.SetData(arg_5_0, arg_5_1)
 	local var_5_0 = ChapterClientCfg[arg_5_1]
 
 	arg_5_0.isLock_ = JumpTools.GetLinkIsLocked(var_5_0.jump_system)
-
-	SetSpriteWithoutAtlasAsync(arg_5_0.image_, SpritePathCfg.ChapterPaint.path .. var_5_0.chapter_paint_2)
-
+	arg_5_0.asset_pend_key = var_5_0.asset_pend_key
+	arg_5_0.isAssetPendLock_ = not manager.assetPend:CheckAssetPend(arg_5_0.asset_pend_key)
+	arg_5_0.image_.spriteAsync = SpritePathCfg.ChapterPaint.path .. var_5_0.chapter_paint_2
 	arg_5_0.nameText_.text = var_5_0.name
 
 	arg_5_0:RefreshLockState()
@@ -63,6 +66,12 @@ function var_0_0.AddListeners(arg_6_0)
 
 		if not arg_6_0.isLock_ then
 			SystemRedPoint:CancelNewTagByChapterId(arg_6_0.chapterClientID_)
+		end
+
+		if arg_6_0.isAssetPendLock_ then
+			manager.assetPend:ShowAssetPendMessageBox(arg_6_0.asset_pend_key)
+
+			return
 		end
 
 		JumpTools.JumpToPage2(var_7_0.jump_system)
@@ -106,8 +115,17 @@ function var_0_0.RefreshTimeStamp(arg_11_0, arg_11_1)
 end
 
 function var_0_0.RefreshLockState(arg_12_0)
+	local var_12_0 = ChapterClientCfg[arg_12_0.chapterClientID_ or 0]
+
+	if var_12_0 then
+		arg_12_0.asset_pend_key = var_12_0.asset_pend_key
+		arg_12_0.isAssetPendLock_ = not manager.assetPend:CheckAssetPend(arg_12_0.asset_pend_key)
+	end
+
 	if arg_12_0.isLock_ then
 		arg_12_0.lockController_:SetSelectedState("true")
+	elseif arg_12_0.isAssetPendLock_ then
+		arg_12_0.lockController_:SetSelectedState("assetpend")
 	else
 		arg_12_0.lockController_:SetSelectedState("false")
 	end

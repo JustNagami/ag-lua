@@ -54,6 +54,9 @@ end
 
 function var_0_0.Init(arg_4_0)
 	arg_4_0:BindCfgUI()
+
+	arg_4_0.roleIconImg_.immediate = true
+
 	arg_4_0:BuildContext()
 	arg_4_0:AddUIListener()
 end
@@ -90,7 +93,7 @@ function var_0_0.OnRender(arg_11_0, arg_11_1)
 	local var_11_0 = arg_11_1.id
 	local var_11_1 = ItemCfg[var_11_0]
 
-	arg_11_0.roleIconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/Icon438x238/" .. var_11_0)
+	arg_11_0.roleIconImg_.spriteSync = "TextureConfig/WeaponServant/Icon438x238/" .. var_11_0
 	arg_11_0.levelTxt_.text = arg_11_1.number
 
 	local var_11_2 = var_11_1.rare

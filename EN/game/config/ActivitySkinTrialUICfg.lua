@@ -53,6 +53,18 @@
 		script_version = "3",
 		main_ui_path = "Widget/Version/NorseUI_3_2/NorseUI_3_2_SkinTrialUI/NorseUI_3_2_SkinTrialMainUI"
 	},
+	[28] = {
+		activity_theme = 28,
+		select_ui_path = "Widget/Version/SummerUI_3_3/SummerUI_3_3_SkinTrialUI/SummerUI_3_3_SkinTrialUI",
+		script_version = "3",
+		main_ui_path = "Widget/Version/SummerUI_3_3/SummerUI_3_3_SkinTrialUI/SummerUI_3_3_SkinTrialMainUI"
+	},
+	[29] = {
+		activity_theme = 29,
+		select_ui_path = "Widget/System/Activity_Resident/Acitvity_OutfitTrial/Acitvity_SkinTrialUI",
+		script_version = "3",
+		main_ui_path = "Widget/System/Activity_Resident/Acitvity_OutfitTrial/Acitvity_SkinTrialMainUI"
+	},
 	all = {
 		14,
 		17,
@@ -62,6 +74,8 @@
 		21,
 		23,
 		24,
-		27
+		27,
+		28,
+		29
 	}
 }

@@ -42,9 +42,11 @@
 		id = 103,
 		talk_content = "",
 		params = {
-			1084,
-			0,
-			0
+			{
+				1084,
+				0,
+				0
+			}
 		},
 		guide_component = {},
 		mask_component = {},
@@ -111,6 +113,9 @@
 			"common",
 			"sectionSelectHero",
 			{
+				"subViewDic_",
+				"additionalView",
+				"instance",
 				"startBtn_"
 			}
 		},
@@ -231,6 +236,9 @@
 			"common",
 			"sectionSelectHero",
 			{
+				"subViewDic_",
+				"additionalView",
+				"instance",
 				"startBtn_"
 			}
 		},
@@ -356,7 +364,7 @@
 			"common",
 			"newHeroUpgradeSuccess",
 			{
-				"bgBtn_"
+				"btnBack_"
 			}
 		},
 		mask_component = {},
@@ -429,9 +437,11 @@
 		id = 405,
 		talk_content = "",
 		params = {
-			1084,
-			0,
-			0
+			{
+				1084,
+				0,
+				0
+			}
 		},
 		guide_component = {},
 		mask_component = {},
@@ -470,8 +480,12 @@
 			"common",
 			"sectionSelectHero",
 			{
-				"selectHeroView_",
-				"drag_2"
+				"subViewDic_",
+				"selectHeroView",
+				"instance",
+				"heroInfoItemList_",
+				2,
+				"dragEventListener_"
 			},
 			"EventTriggerListener"
 		},
@@ -551,6 +565,9 @@
 			"common",
 			"sectionSelectHero",
 			{
+				"subViewDic_",
+				"additionalView",
+				"instance",
 				"startBtn_"
 			}
 		},
@@ -655,6 +672,9 @@
 			"common",
 			"sectionSelectHero",
 			{
+				"subViewDic_",
+				"additionalView",
+				"instance",
 				"startBtn_"
 			}
 		},
@@ -671,9 +691,11 @@
 		id = 501,
 		talk_content = "",
 		params = {
-			1084,
-			1148,
-			0
+			{
+				1084,
+				1148,
+				0
+			}
 		},
 		guide_component = {},
 		mask_component = {},
@@ -712,8 +734,12 @@
 			"common",
 			"sectionSelectHero",
 			{
-				"selectHeroView_",
-				"drag_3"
+				"subViewDic_",
+				"selectHeroView",
+				"instance",
+				"heroInfoItemList_",
+				3,
+				"dragEventListener_"
 			},
 			"EventTriggerListener"
 		},
@@ -796,6 +822,9 @@
 			"common",
 			"sectionSelectHero",
 			{
+				"subViewDic_",
+				"additionalView",
+				"instance",
 				"startBtn_"
 			}
 		},
@@ -902,6 +931,9 @@
 			"common",
 			"sectionSelectHero",
 			{
+				"subViewDic_",
+				"additionalView",
+				"instance",
 				"startBtn_"
 			}
 		},
@@ -1073,9 +1105,11 @@
 		id = 607,
 		talk_content = "",
 		params = {
-			1084,
-			1148,
-			1039
+			{
+				1084,
+				1148,
+				1039
+			}
 		},
 		guide_component = {},
 		mask_component = {},
@@ -1093,6 +1127,9 @@
 			"common",
 			"sectionSelectHero",
 			{
+				"subViewDic_",
+				"additionalView",
+				"instance",
 				"startBtn_"
 			}
 		},
@@ -1295,7 +1332,7 @@
 			"common",
 			"weaponStr",
 			{
-				"bgmask_"
+				"btnBack_"
 			}
 		},
 		mask_component = {},
@@ -2159,7 +2196,15 @@
 			},
 			5
 		},
-		mask_component = {},
+		mask_component = {
+			"treeGroupChild",
+			"draw",
+			{
+				"tree_"
+			},
+			5,
+			"title/Background"
+		},
 		mask_scale = {},
 		talk_position = {
 			790,
@@ -2720,8 +2765,12 @@
 			"common",
 			"sectionSelectHero",
 			{
-				"selectHeroView_",
-				"mimirInfoView_",
+				"subViewDic_",
+				"additionalView",
+				"instance",
+				"subViewDic_",
+				"mimirInfoView",
+				"instance",
 				"btn_"
 			}
 		},
@@ -2848,6 +2897,9 @@
 			"common",
 			"sectionSelectHero",
 			{
+				"subViewDic_",
+				"additionalView",
+				"instance",
 				"startBtn_"
 			}
 		},
@@ -6122,6 +6174,63 @@
 			-218
 		}
 	},
+	[4622] = {
+		talk_anchors = 1,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 4622,
+		talk_content = "36cc8551f864622532b168bedf74036f",
+		params = {},
+		guide_component = {
+			"windowBar",
+			"infoBtn_"
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			692,
+			-218
+		}
+	},
+	[4623] = {
+		talk_anchors = 1,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 4623,
+		talk_content = "cac454f58502d9deab2ae7890471019d",
+		params = {},
+		guide_component = {
+			"windowBar",
+			"infoBtn_"
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			692,
+			-218
+		}
+	},
+	[4624] = {
+		talk_anchors = 1,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 4624,
+		talk_content = "1a3985761b891abceb43627822ff3ed6",
+		params = {},
+		guide_component = {
+			"windowBar",
+			"infoBtn_"
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			692,
+			-218
+		}
+	},
 	[4701] = {
 		talk_anchors = 0,
 		type = "JumpTo",
@@ -6666,23 +6775,45 @@
 			"common",
 			"dormChooseRoomView",
 			{
+				"navigationBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			572.5,
+			369.7
+		}
+	},
+	[5202] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 5202,
+		talk_content = "2430ad222e124f09767f38132e30509c",
+		params = {},
+		guide_component = {
+			"common",
+			"dormNavigation",
+			{
 				"canteenBtn_"
 			}
 		},
 		mask_component = {},
 		mask_scale = {},
 		talk_position = {
-			594.33,
-			311
+			-515.6,
+			-451.7
 		}
 	},
-	[5202] = {
+	[5203] = {
 		talk_anchors = 0,
 		type = "ClickButton",
 		talk_adapt = 2,
 		is_finish = false,
-		id = 5202,
-		talk_content = "2430ad222e124f09767f38132e30509c",
+		id = 5203,
+		talk_content = "c9ee23c3df21b6243b15d189586a8060",
 		params = {},
 		guide_component = {
 			"common",
@@ -6698,13 +6829,13 @@
 			-270
 		}
 	},
-	[5203] = {
+	[5204] = {
 		talk_anchors = 0,
 		type = "HighLight",
 		talk_adapt = 0,
 		is_finish = false,
-		id = 5203,
-		talk_content = "c9ee23c3df21b6243b15d189586a8060",
+		id = 5204,
+		talk_content = "01360c3ea708675c64873975893c5f42",
 		params = {},
 		guide_component = {
 			"common",
@@ -6722,13 +6853,13 @@
 			180
 		}
 	},
-	[5204] = {
+	[5205] = {
 		talk_anchors = 0,
 		type = "ClickButton",
 		talk_adapt = 0,
 		is_finish = false,
-		id = 5204,
-		talk_content = "01360c3ea708675c64873975893c5f42",
+		id = 5205,
+		talk_content = "9ee786acc5c721f8a270a0039855f7fa",
 		params = {},
 		guide_component = {
 			"listIndex",
@@ -6748,13 +6879,13 @@
 			-16
 		}
 	},
-	[5205] = {
+	[5206] = {
 		talk_anchors = 0,
 		type = "HighLight",
 		talk_adapt = 0,
 		is_finish = false,
-		id = 5205,
-		talk_content = "9ee786acc5c721f8a270a0039855f7fa",
+		id = 5206,
+		talk_content = "d528916d10f7daa758989e69e8a0f670",
 		params = {},
 		guide_component = {
 			"common",
@@ -6771,13 +6902,13 @@
 			63.12
 		}
 	},
-	[5206] = {
+	[5207] = {
 		talk_anchors = 0,
 		type = "HighLight",
 		talk_adapt = 0,
 		is_finish = true,
-		id = 5206,
-		talk_content = "d528916d10f7daa758989e69e8a0f670",
+		id = 5207,
+		talk_content = "5d0fc3d3972b48fb817395d9c912384c",
 		params = {},
 		guide_component = {
 			"child_getcom",
@@ -6803,13 +6934,13 @@
 			-144.92
 		}
 	},
-	[5207] = {
+	[5208] = {
 		talk_anchors = 0,
 		type = "HighLight",
 		talk_adapt = 0,
 		is_finish = false,
-		id = 5207,
-		talk_content = "5d0fc3d3972b48fb817395d9c912384c",
+		id = 5208,
+		talk_content = "03827f35a51f8195113084223d701af2",
 		params = {},
 		guide_component = {
 			"common",
@@ -8880,7 +9011,7 @@
 		}
 	},
 	[6101] = {
-		talk_anchors = 0,
+		talk_anchors = 4,
 		type = "ClickButton",
 		talk_adapt = 0,
 		is_finish = false,
@@ -8891,14 +9022,36 @@
 			"common",
 			"dormChooseRoomView",
 			{
-				"cricketBtn"
+				"navigationBtn_"
 			}
 		},
 		mask_component = {},
 		mask_scale = {},
 		talk_position = {
-			250,
-			-210
+			572.5,
+			369.7
+		}
+	},
+	[6102] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 6102,
+		talk_content = "6a121b9f5858beaad108b288f5dbbb00",
+		params = {},
+		guide_component = {
+			"common",
+			"dormNavigation",
+			{
+				"trainingroomBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			552.22,
+			-451.7
 		}
 	},
 	[6201] = {
@@ -10503,7 +10656,7 @@
 		talk_anchors = 0,
 		type = "ClickButton",
 		talk_adapt = 0,
-		is_finish = true,
+		is_finish = false,
 		id = 7206,
 		talk_content = "1d54462ccf8328c8831370f87a2c09fc",
 		params = {},
@@ -10601,6 +10754,2050 @@
 		is_finish = false,
 		id = 7210,
 		talk_content = "89dc38da4083498613e0a037b9fe9784",
+		params = {},
+		guide_component = {
+			"windowBar",
+			"infoBtn_"
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			692,
+			-218
+		}
+	},
+	[7301] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7301,
+		talk_content = "7d5106838a55632a127b8bf44498ad69",
+		params = {},
+		guide_component = {
+			"common",
+			"chessBoardHomeView",
+			{
+				"guideComponents",
+				"guide_screen"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-300
+		}
+	},
+	[7302] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7302,
+		talk_content = "2e907d55430f9ff8d54dbb281b6d49df",
+		params = {},
+		guide_component = {
+			"common",
+			"chessBoardHomeView",
+			{
+				"guideComponents",
+				"guide_screen"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-300
+		}
+	},
+	[7303] = {
+		talk_anchors = 1,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7303,
+		talk_content = "b285fb0ffab347886c8c6378afab222a",
+		params = {},
+		guide_component = {
+			"listIndex",
+			"chessBoardHomeView",
+			{
+				"taskList_"
+			},
+			1,
+			{
+				"btn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			600,
+			-435
+		}
+	},
+	[7304] = {
+		talk_anchors = 1,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7304,
+		talk_content = "dc853b0ed64742821bd4a23c236862f8",
+		params = {},
+		guide_component = {
+			"common",
+			"chessBoardHomeView",
+			{
+				"guideComponents",
+				"guide_num"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			600,
+			-435
+		}
+	},
+	[7305] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7305,
+		talk_content = "0c05a26bedca4f799b32b3bd42ba24b4",
+		params = {},
+		guide_component = {
+			"common",
+			"chessBoardHomeView",
+			{
+				"guideComponents",
+				"guide_target"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-300
+		}
+	},
+	[7306] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7306,
+		talk_content = "25675130381835f1ec44be8af400bd02",
+		params = {},
+		guide_component = {
+			"common",
+			"chessBoardHomeView",
+			{
+				"guideComponents",
+				"guide_num1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-440,
+			-256
+		}
+	},
+	[7307] = {
+		talk_anchors = 3,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7307,
+		talk_content = "5ff237d4c6c01754dadb6ae2b59cb825",
+		params = {},
+		guide_component = {
+			"common",
+			"chessBoardHomeView",
+			{
+				"rollDiceBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-552,
+			391
+		}
+	},
+	[7308] = {
+		talk_anchors = 3,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7308,
+		talk_content = "fe1a48ad868a5c5d4ed3d0f026128e70",
+		params = {},
+		guide_component = {
+			"common",
+			"chessBoardHomeView",
+			{
+				"rollDiceBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-552,
+			391
+		}
+	},
+	[7401] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7401,
+		talk_content = "1fd0c1e26a1a61d2b8cc2eb751ef154d",
+		params = {},
+		guide_component = {
+			"common",
+			"chessBoardHomeView",
+			{
+				"propList",
+				"propList",
+				1,
+				"btn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			623,
+			320
+		}
+	},
+	[7402] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7402,
+		talk_content = "",
+		params = {},
+		guide_component = {
+			"common",
+			"ChessBoardPropView",
+			{
+				"sureBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {}
+	},
+	[7501] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7501,
+		talk_content = "4f12887909bc38ca440cc07c4e461600",
+		params = {},
+		guide_component = {
+			"common",
+			"chessBoardChanceView",
+			{
+				"summer2024_cornerbtnBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-450
+		}
+	},
+	[7601] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7601,
+		talk_content = "53cd9521164393ed2d83f38dc1060f97",
+		params = {
+			"chess",
+			10002,
+			2
+		},
+		guide_component = {
+			"common",
+			"chessBoardHomeView",
+			{
+				"propList",
+				"propList",
+				1,
+				"btn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			623,
+			320
+		}
+	},
+	[7602] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7602,
+		talk_content = "",
+		params = {},
+		guide_component = {
+			"common",
+			"ChessBoardPropView",
+			{
+				"sureBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {}
+	},
+	[7603] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7603,
+		talk_content = "b4e1d9237b65575300af9587ef0599fd",
+		params = {},
+		guide_component = {
+			"common",
+			"chessBoardPropDiceView",
+			{
+				"diceList",
+				2,
+				"btn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			623,
+			320
+		}
+	},
+	[7604] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7604,
+		talk_content = "",
+		params = {},
+		guide_component = {
+			"common",
+			"chessBoardPropDiceView",
+			{
+				"summer2024_cornerbtnBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {}
+	},
+	[7701] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7701,
+		talk_content = "07ccca0c0cddc983bdd6c4dafa497cde",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_introduce1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			14,
+			-222
+		}
+	},
+	[7702] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7702,
+		talk_content = "a213d1b8e09f0ce2464a97ef66531a98",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_introduce2"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-743,
+			-296
+		}
+	},
+	[7703] = {
+		talk_anchors = 2,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7703,
+		talk_content = "e8a74736cb9b35d7f44cbc03e0ccb6b5",
+		params = {},
+		guide_component = {
+			"listIndex",
+			"activitySummerSimBusinessMain",
+			{
+				"clientList"
+			},
+			1,
+			{
+				"btn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {
+			0.96,
+			0.96
+		},
+		talk_position = {
+			-743,
+			-296
+		}
+	},
+	[7704] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7704,
+		talk_content = "d0160d4912c4cb2afe7126f8f9833bf5",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_introduce3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-1263,
+			-584
+		}
+	},
+	[7705] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7705,
+		talk_content = "55a9cff3bec50f6f37fac88a8cbc5a2f",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_introduce3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-1263,
+			-584
+		}
+	},
+	[7706] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7706,
+		talk_content = "e21d4347c6d1ce7b18dbf7f600b3cff2",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_introduce4"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			623,
+			320
+		}
+	},
+	[7707] = {
+		talk_anchors = 1,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7707,
+		talk_content = "8a819d5e3484045a47c320adc1d6c510",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_introduce6"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			465,
+			-541
+		}
+	},
+	[7708] = {
+		talk_anchors = 1,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7708,
+		talk_content = "3e07249d80c5319a36da9c9aadc1bd48",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_introduce6"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			465,
+			-541
+		}
+	},
+	[7709] = {
+		talk_anchors = 3,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7709,
+		talk_content = "bf8534d9caaf4fe16dde5449d783c9be",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_introduce7"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-552,
+			270
+		}
+	},
+	[7710] = {
+		talk_anchors = 3,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7710,
+		talk_content = "6d6452c81d2f788bc4891acf8efa5be9",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_introduce7"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-552,
+			270
+		}
+	},
+	[7711] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7711,
+		talk_content = "94c7fa5935a5db6177bf212313fb9e10",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_introduce1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			14,
+			-222
+		}
+	},
+	[7712] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7712,
+		talk_content = "999b5b4f5a82a1b8dc4688e2fb0a5e98",
+		params = {},
+		guide_component = {
+			"common_getcom",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_button2"
+			},
+			"Button"
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			623,
+			320
+		}
+	},
+	[7713] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7713,
+		talk_content = "86f1928792923f24d7c9ba15dfbffd24",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessDeploy",
+			{
+				"guideComponents",
+				"guide_introduce1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			457,
+			406
+		}
+	},
+	[7714] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7714,
+		talk_content = "a8f7787408224e8760c335b3a9c5562d",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessDeploy",
+			{
+				"guideComponents",
+				"guide_introduce1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			457,
+			406
+		}
+	},
+	[7715] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7715,
+		talk_content = "16d0265b5956733eb1162dd1bcb6cb8d",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessDeploy",
+			{
+				"guideComponents",
+				"guide_introduce3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			457,
+			406
+		}
+	},
+	[7716] = {
+		talk_anchors = 1,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7716,
+		talk_content = "505b727e8b60bdeeeddea814dcd106c2",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessDeploy",
+			{
+				"guideComponents",
+				"guide_introduce2"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			465,
+			-333
+		}
+	},
+	[7717] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7717,
+		talk_content = "9fafa71e7d242eba606bb17b3395e0fc",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessDeploy",
+			{
+				"guideComponents",
+				"guide_introduce3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			457,
+			406
+		}
+	},
+	[7801] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7801,
+		talk_content = "b34105d5e93c92eab7f54bbbffb86d6d",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_button1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			623,
+			320
+		}
+	},
+	[7802] = {
+		talk_anchors = 1,
+		type = "ClickCToggle",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7802,
+		talk_content = "093fd4dcd84ac08aa712dbe14f3c2caf",
+		params = {},
+		guide_component = {
+			"common",
+			"simBusinessExplainView",
+			{
+				"guideComponents",
+				"guide_button4"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			854,
+			-595
+		}
+	},
+	[7803] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7803,
+		talk_content = "1a4754f274a15cdb4494c968cf996881",
+		params = {},
+		guide_component = {
+			"common",
+			"simBusinessExplainView",
+			{
+				"guideComponents",
+				"guide_introduce1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-206,
+			-44
+		}
+	},
+	[7804] = {
+		talk_anchors = 1,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7804,
+		talk_content = "e10c0a0879ee8ab2f5d59a15d22d349a",
+		params = {},
+		guide_component = {
+			"listIndex",
+			"simBusinessExplainView",
+			{
+				"pageList",
+				2,
+				"itemList"
+			},
+			4,
+			{
+				"clickBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			600,
+			-435
+		}
+	},
+	[7805] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7805,
+		talk_content = "435692ae278ee8c6cf0814eee5e985b0",
+		params = {},
+		guide_component = {
+			"common",
+			"simBusinessExplainView",
+			{
+				"guideComponents",
+				"guide_introduce2"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-206,
+			-44
+		}
+	},
+	[7806] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7806,
+		talk_content = "86f3ba89f605e12590ad54f0debedf33",
+		params = {},
+		guide_component = {
+			"common",
+			"simBusinessExplainView",
+			{
+				"guideComponents",
+				"guide_introduce2"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-206,
+			-44
+		}
+	},
+	[7807] = {
+		talk_anchors = 3,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7807,
+		talk_content = "295e7a3a3a24e755cfac97c1c93ea1ab",
+		params = {},
+		guide_component = {
+			"common",
+			"simBusinessExplainView",
+			{
+				"guideComponents",
+				"guide_button1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-1118,
+			358
+		}
+	},
+	[7808] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7808,
+		talk_content = "d589ae40d6111bd73b53c26b2249b001",
+		params = {},
+		guide_component = {
+			"common",
+			"simBusinessExplainView",
+			{
+				"guideComponents",
+				"guide_introduce3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-502,
+			-252
+		}
+	},
+	[7809] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7809,
+		talk_content = "65d0b951b55208bc7996e7f4d5f8bd04",
+		params = {},
+		guide_component = {
+			"common",
+			"simBusinessExplainView",
+			{
+				"guideComponents",
+				"guide_button2"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-743,
+			-296
+		}
+	},
+	[7810] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7810,
+		talk_content = "4e0c3f5ca6b248e9371f9e2a2c824463",
+		params = {},
+		guide_component = {
+			"common",
+			"simBusinessExplainView",
+			{
+				"guideComponents",
+				"guide_button2"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-743,
+			-296
+		}
+	},
+	[7901] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7901,
+		talk_content = "3ae5fa7935cf8d48b2613d266f7084ac",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_button1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			623,
+			320
+		}
+	},
+	[7902] = {
+		talk_anchors = 1,
+		type = "ClickCToggle",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7902,
+		talk_content = "3440b7741865522af0ce7ab81079b4e2",
+		params = {},
+		guide_component = {
+			"common",
+			"simBusinessExplainView",
+			{
+				"guideComponents",
+				"guide_button3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			854,
+			-595
+		}
+	},
+	[7903] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7903,
+		talk_content = "f8941c56cf753c74d24f8bc1b763d2ee",
+		params = {},
+		guide_component = {
+			"common",
+			"simBusinessExplainView",
+			{
+				"guideComponents",
+				"guide_introduce4"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-206,
+			-44
+		}
+	},
+	[7904] = {
+		talk_anchors = 3,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7904,
+		talk_content = "ade01957a5af550619a826aa93b49844",
+		params = {},
+		guide_component = {
+			"common",
+			"simBusinessExplainView",
+			{
+				"guideComponents",
+				"guide_button5"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-1118,
+			358
+		}
+	},
+	[7905] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7905,
+		talk_content = "900577060b73855ca88a1cb5aef2895d",
+		params = {},
+		guide_component = {
+			"common",
+			"simBusinessExplainView",
+			{
+				"guideComponents",
+				"guide_introduce3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-502,
+			-252
+		}
+	},
+	[7906] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7906,
+		talk_content = "985ebf89444b6ec1edb29fcea0ec44f2",
+		params = {},
+		guide_component = {
+			"common",
+			"simBusinessExplainView",
+			{
+				"guideComponents",
+				"guide_button6"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-743,
+			-296
+		}
+	},
+	[7907] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 7907,
+		talk_content = "e13baa5e28d43fa3335b7969ff50480a",
+		params = {},
+		guide_component = {
+			"common",
+			"simBusinessExplainView",
+			{
+				"guideComponents",
+				"guide_button6"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-743,
+			-296
+		}
+	},
+	[8001] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8001,
+		talk_content = "3cf4d2aa47eb00392056dc12dc2d59ad",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_introduce5"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			14,
+			-222
+		}
+	},
+	[8002] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8002,
+		talk_content = "bf43bdff6a306cecff0a7b832ac2dd91",
+		params = {},
+		guide_component = {
+			"common_getcom",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_button2"
+			},
+			"Button"
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			623,
+			320
+		}
+	},
+	[8003] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8003,
+		talk_content = "f064d5b841613a918372a1ee4fc9c4b4",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessDeploy",
+			{
+				"guideComponents",
+				"guide_introduce4"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			457,
+			262
+		}
+	},
+	[8004] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8004,
+		talk_content = "a22e170f0051c85cc03c12d61e8b7ecd",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessDeploy",
+			{
+				"guideComponents",
+				"guide_introduce4"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			457,
+			262
+		}
+	},
+	[8005] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8005,
+		talk_content = "e301a6de400b96e7e3f23527e9ebad25",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessDeploy",
+			{
+				"guideComponents",
+				"guide_introduce3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			457,
+			406
+		}
+	},
+	[8006] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8006,
+		talk_content = "2f3ed20fabb95bfdd868122cc9a175b4",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessDeploy",
+			{
+				"guideComponents",
+				"guide_introduce1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			457,
+			406
+		}
+	},
+	[8101] = {
+		talk_anchors = 2,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8101,
+		talk_content = "716867d3dd99e3b44dcdd202a5cee21d",
+		params = {},
+		guide_component = {
+			"listIndex",
+			"activitySummerSimBusinessMain",
+			{
+				"clientList"
+			},
+			1,
+			{
+				"btn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {
+			0.96,
+			0.96
+		},
+		talk_position = {
+			-743,
+			-296
+		}
+	},
+	[8102] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8102,
+		talk_content = "f3b045d904eb6ec0685ca29154bd679e",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_introduce3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-206,
+			-44
+		}
+	},
+	[8103] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8103,
+		talk_content = "6d08b6ab54ece74fb7ec8cb0497fa223",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_introduce3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-206,
+			-44
+		}
+	},
+	[8104] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8104,
+		talk_content = "147c342b6696da114346accf1f8573c1",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_introduce3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-206,
+			-44
+		}
+	},
+	[8105] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8105,
+		talk_content = "9819e370d983c7720496fd7a2c3005d8",
+		params = {},
+		guide_component = {
+			"common",
+			"activitySummerSimBusinessMain",
+			{
+				"guideComponents",
+				"guide_introduce3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-206,
+			-44
+		}
+	},
+	[8201] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8201,
+		talk_content = "b2d6c7f7ffb6723b7a835d59a1bee48c",
+		params = {},
+		guide_component = {
+			"common",
+			"tetrisGameMainView",
+			{
+				"chapter1Btn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			308.999725,
+			231
+		}
+	},
+	[8202] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8202,
+		talk_content = "59e8b0961b7c7f978e111e30a9f1d2e8",
+		params = {},
+		guide_component = {
+			"common_getcom",
+			"tetrisGameChooseStageView",
+			{
+				"stageItemList",
+				2,
+				"skillObj1"
+			},
+			"Button"
+		},
+		mask_component = {},
+		mask_scale = {
+			0.85,
+			0.85
+		},
+		talk_position = {
+			500,
+			-250
+		}
+	},
+	[8203] = {
+		talk_anchors = 0,
+		type = "ClickButtonNoMask",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8203,
+		talk_content = "",
+		params = {},
+		guide_component = {
+			"common_getcom",
+			"tetrisGameGetSkillView",
+			{
+				"maskBtn"
+			},
+			"Button"
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			623,
+			320
+		}
+	},
+	[8204] = {
+		talk_anchors = 1,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8204,
+		talk_content = "c555e4935b84c7d619e4db81a54b7f03",
+		params = {},
+		guide_component = {
+			"windowBar",
+			"infoBtn_"
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			692,
+			-218
+		}
+	},
+	[8301] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8301,
+		talk_content = "a288589847e993a4fac96553f3ce9f0c",
+		params = {},
+		guide_component = {
+			"common",
+			"customStickerMain",
+			{
+				"guideComponents",
+				"guide_mask1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			298,
+			301
+		}
+	},
+	[8302] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8302,
+		talk_content = "19d54fa4b1caf35dd42844e0168b562b",
+		params = {},
+		guide_component = {
+			"common",
+			"customStickerMain",
+			{
+				"guideComponents",
+				"guide_mask2"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			363,
+			273
+		}
+	},
+	[8303] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8303,
+		talk_content = "c084f68d50bca84436146ec9d9c4ac79",
+		params = {},
+		guide_component = {
+			"common",
+			"customStickerMain",
+			{
+				"guideComponents",
+				"guide_mask3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			511,
+			273
+		}
+	},
+	[8304] = {
+		talk_anchors = 1,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8304,
+		talk_content = "61ed0382bbe9759034badea5520c6f4f",
+		params = {},
+		guide_component = {
+			"windowBar",
+			"infoBtn_"
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			612,
+			-236
+		}
+	},
+	[8401] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8401,
+		talk_content = "d889cfc4a98cc41b8285d1fd4d366c9f",
+		params = {},
+		guide_component = {
+			"common",
+			"idolCompetitionMain",
+			{
+				"guideComponents",
+				"guide_step1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			0
+		}
+	},
+	[8402] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8402,
+		talk_content = "62653209b6a07f44dbefcaf9223eb25a",
+		params = {},
+		guide_component = {
+			"common",
+			"idolCompetitionMain",
+			{
+				"guideComponents",
+				"guide_step2"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			950,
+			150
+		}
+	},
+	[8403] = {
+		talk_anchors = 3,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8403,
+		talk_content = "2e6bd4fd4f5a8f119c139ac5f097910a",
+		params = {},
+		guide_component = {
+			"common",
+			"idolCompetitionMain",
+			{
+				"guideComponents",
+				"guide_step3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-960,
+			150
+		}
+	},
+	[8501] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8501,
+		talk_content = "2415abcff4ff21673d47276364462eed",
+		params = {},
+		guide_component = {
+			"common",
+			"idolCompetitionSign",
+			{
+				"guideComponents",
+				"guide_step1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			600,
+			100
+		}
+	},
+	[8502] = {
+		talk_anchors = 3,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 8502,
+		talk_content = "5ba4c2312887947299c24b124976ade0",
+		params = {},
+		guide_component = {
+			"common",
+			"idolCompetitionSign",
+			{
+				"guideComponents",
+				"guide_step2"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-1000,
+			150
+		}
+	},
+	[10001] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 10001,
+		talk_content = "cb325ab4c91480d134a0f4dc5bea2d4b",
+		params = {},
+		guide_component = {
+			"common",
+			"AreaBattleMapView",
+			{
+				"guideComponents",
+				"guide_introduce1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			938.5,
+			133.1
+		}
+	},
+	[10002] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 10002,
+		talk_content = "98b5e7e6a91d396df5d81ec2a4fb40ed",
+		params = {},
+		guide_component = {
+			"common",
+			"AreaBattleMapView",
+			{
+				"listGo_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-634,
+			-290.1
+		}
+	},
+	[10003] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 10003,
+		talk_content = "15a19382690b227dec09946784071e80",
+		params = {},
+		guide_component = {
+			"common",
+			"AreaBattleMapView",
+			{
+				"listGo_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-634,
+			-290.1
+		}
+	},
+	[10004] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 10004,
+		talk_content = "d80e0c30470d5ac73c4392db3a174be1",
+		params = {},
+		guide_component = {
+			"common",
+			"AreaBattleMapView",
+			{
+				"guideComponents",
+				"guide_introduce2"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			236,
+			63
+		}
+	},
+	[10005] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 10005,
+		talk_content = "06a3bc6aca56a249ba0d7e29843b3ae0",
+		params = {},
+		guide_component = {
+			"common",
+			"AreaBattleMapView",
+			{
+				"guideComponents",
+				"guide_introduce3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			236,
+			63
+		}
+	},
+	[10006] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 10006,
+		talk_content = "87deb7304cbbee750c0dfc75731bcb1a",
+		params = {},
+		guide_component = {
+			"common",
+			"AreaBattleMapView",
+			{
+				"guideComponents",
+				"guide_introduce3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			236,
+			63
+		}
+	},
+	[10007] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 10007,
+		talk_content = "063f1ebc64ab207c5af59fa0c07c515e",
+		params = {},
+		guide_component = {
+			"common",
+			"AreaBattleMapView",
+			{
+				"rewardBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			836,
+			238
+		}
+	},
+	[10008] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 10008,
+		talk_content = "632ba1d99de5b2d40889620699b4c5b2",
+		params = {},
+		guide_component = {
+			"common",
+			"AreaBattleMapView",
+			{
+				"guideComponents",
+				"guide_introduce5"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-36,
+			195
+		}
+	},
+	[10009] = {
+		talk_anchors = 3,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 10009,
+		talk_content = "0aeab71651dfc22782ee97b3b6eeb61e",
+		params = {},
+		guide_component = {
+			"common",
+			"AreaBattleMapView",
+			{
+				"resetBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-701,
+			176
+		}
+	},
+	[10010] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 10010,
+		talk_content = "5870836b18a2d5ed889dee292492fb18",
+		params = {},
+		guide_component = {
+			"common",
+			"AreaBattleMapView",
+			{
+				"guideComponents",
+				"guide_introduce6"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			836,
+			238
+		}
+	},
+	[10011] = {
+		talk_anchors = 1,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 10011,
+		talk_content = "1fb849584109cfcda8f8536397a5851d",
+		params = {},
+		guide_component = {
+			"common",
+			"AreaBattleMapView",
+			{
+				"guideComponents",
+				"guide_introduce4"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			727,
+			-507.002
+		}
+	},
+	[10201] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 10201,
+		talk_content = "cf8e5e3ff4c555cf04caa3246e3091bf",
+		params = {},
+		guide_component = {
+			"common",
+			"dormChooseRoomView",
+			{
+				"navigationBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			572.5,
+			369.7
+		}
+	},
+	[10202] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 10202,
+		talk_content = "c6de83c902c9069abe33ff7ea38ce901",
+		params = {},
+		guide_component = {
+			"common",
+			"dormChooseRoomView",
+			{
+				"navigationBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			572.5,
+			369.7
+		}
+	},
+	[10203] = {
+		talk_anchors = 3,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 10203,
+		talk_content = "01648d4453cc41653683a6a9bc78c33d",
+		params = {},
+		guide_component = {
+			"common",
+			"dormChooseRoomView",
+			{
+				"infomationBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-589,
+			220
+		}
+	},
+	[10301] = {
+		talk_anchors = 1,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 10301,
+		talk_content = "5f7d68cd6b4c4709ed462b17f1aba097",
+		params = {},
+		guide_component = {
+			"windowBar",
+			"infoBtn_"
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			692,
+			-218
+		}
+	},
+	[10401] = {
+		talk_anchors = 1,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 10401,
+		talk_content = "766c3d7127cc525a1b0588659cc76ac6",
 		params = {},
 		guide_component = {
 			"windowBar",
@@ -10875,6 +13072,9 @@
 		4619,
 		4620,
 		4621,
+		4622,
+		4623,
+		4624,
 		4701,
 		4702,
 		4801,
@@ -10904,6 +13104,7 @@
 		5205,
 		5206,
 		5207,
+		5208,
 		5301,
 		5302,
 		5303,
@@ -10993,6 +13194,7 @@
 		6011,
 		6012,
 		6101,
+		6102,
 		6201,
 		6202,
 		6203,
@@ -11064,6 +13266,95 @@
 		7207,
 		7208,
 		7209,
-		7210
+		7210,
+		7301,
+		7302,
+		7303,
+		7304,
+		7305,
+		7306,
+		7307,
+		7308,
+		7401,
+		7402,
+		7501,
+		7601,
+		7602,
+		7603,
+		7604,
+		7701,
+		7702,
+		7703,
+		7704,
+		7705,
+		7706,
+		7707,
+		7708,
+		7709,
+		7710,
+		7711,
+		7712,
+		7713,
+		7714,
+		7715,
+		7716,
+		7717,
+		7801,
+		7802,
+		7803,
+		7804,
+		7805,
+		7806,
+		7807,
+		7808,
+		7809,
+		7810,
+		7901,
+		7902,
+		7903,
+		7904,
+		7905,
+		7906,
+		7907,
+		8001,
+		8002,
+		8003,
+		8004,
+		8005,
+		8006,
+		8101,
+		8102,
+		8103,
+		8104,
+		8105,
+		8201,
+		8202,
+		8203,
+		8204,
+		8301,
+		8302,
+		8303,
+		8304,
+		8401,
+		8402,
+		8403,
+		8501,
+		8502,
+		10001,
+		10002,
+		10003,
+		10004,
+		10005,
+		10006,
+		10007,
+		10008,
+		10009,
+		10010,
+		10011,
+		10201,
+		10202,
+		10203,
+		10301,
+		10401
 	}
 }

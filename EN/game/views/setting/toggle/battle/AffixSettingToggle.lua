@@ -21,6 +21,8 @@ function var_0_0.UIClass(arg_3_0)
 end
 
 function var_0_0.GetPath(arg_4_0)
+	local var_4_0 = arg_4_0.params_.stageData
+
 	return "Widget/System/Setting/AffixDescriptionUI"
 end
 
@@ -33,6 +35,8 @@ function var_0_0.RedPointKey(arg_6_0)
 end
 
 function var_0_0.Image(arg_7_0)
+	local var_7_0 = arg_7_0.params_.stageData
+
 	return getSprite("Atlas/SettingAtlas", "icon_setting08")
 end
 

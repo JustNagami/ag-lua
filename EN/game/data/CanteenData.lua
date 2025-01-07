@@ -6,6 +6,7 @@ local var_0_4
 local var_0_5
 local var_0_6
 local var_0_7 = DormConst.CANTEEN_ID
+local var_0_8
 
 function var_0_1.InitSimpleCanteenInfo(arg_1_0, arg_1_1)
 	var_0_3 = {}
@@ -282,6 +283,8 @@ function var_0_1.RefreshAutoAwardInfo(arg_22_0, arg_22_1)
 
 	var_0_3[var_0_7].earnings = arg_22_1.earnings
 	var_0_3[var_0_7].last_earnings_update_time = arg_22_1.last_earnings_update_time
+
+	manager.notify:Invoke(BACKHOME_CATEEN_AWARD_UPDATE)
 end
 
 function var_0_1.GetAutoAwardNum(arg_23_0)
@@ -327,6 +330,37 @@ end
 
 function var_0_1.RefreshCanteenDailyZero(arg_26_0)
 	CanteenEntrustData:RefreshDailyZero()
+end
+
+function var_0_1.GetCanteenVisitor(arg_27_0)
+	if not var_0_8 or var_0_8.playerId ~= USER_ID then
+		var_0_8 = {
+			playerId = USER_ID,
+			visHero = {}
+		}
+	end
+
+	local var_27_0 = {}
+	local var_27_1 = DormData:GetVisitInfo()
+
+	for iter_27_0, iter_27_1 in ipairs(var_27_1.visitUser) do
+		if not var_0_8.visHero[iter_27_1.heroID] then
+			table.insert(var_27_0, iter_27_1.heroID)
+		end
+	end
+
+	return var_27_0
+end
+
+function var_0_1.SetVisitedHero(arg_28_0, arg_28_1)
+	if not var_0_8 or var_0_8.playerId ~= USER_ID then
+		var_0_8 = {
+			playerId = USER_ID,
+			visHero = {}
+		}
+	end
+
+	var_0_8.visHero[arg_28_1] = true
 end
 
 return var_0_1

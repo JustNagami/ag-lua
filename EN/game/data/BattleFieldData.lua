@@ -223,6 +223,7 @@ function var_0_0.FinishBattle(arg_23_0, arg_23_1)
 
 	for iter_23_2, iter_23_3 in ipairs(var_23_0.all_drop_list) do
 		local var_23_3 = {}
+		local var_23_4 = {}
 
 		for iter_23_4, iter_23_5 in ipairs(iter_23_3.gain_list) do
 			var_23_3[iter_23_4] = {
@@ -231,9 +232,19 @@ function var_0_0.FinishBattle(arg_23_0, arg_23_1)
 			}
 		end
 
+		if iter_23_3.extra_list then
+			for iter_23_6, iter_23_7 in ipairs(iter_23_3.extra_list) do
+				var_23_4[iter_23_6] = {
+					id = iter_23_7.id,
+					num = iter_23_7.num
+				}
+			end
+		end
+
 		var_23_2[iter_23_2] = {
 			battleTimes = iter_23_3.battle_times,
-			rewardItems = var_23_3
+			rewardItems = var_23_3,
+			extraReward = var_23_4
 		}
 	end
 

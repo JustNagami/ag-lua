@@ -170,6 +170,7 @@ function var_0_0.OnEnter(arg_16_0)
 	arg_16_0.chapterID_ = ChapterCfg.get_id_list_by_type[BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_EQUIP][1]
 
 	arg_16_0:RefreshBGM()
+	arg_16_0:RefreshMultiReward()
 	arg_16_0:RefreshRedPoint()
 end
 

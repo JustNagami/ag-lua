@@ -1,24 +1,12 @@
 ﻿local var_0_0 = {
 	GetTaskUIName = function(arg_1_0)
-		if ActivityTools.GetActivityTheme(arg_1_0) == ActivityConst.THEME.ACTIVITY_2_4 then
-			return "UI/VersionUI/JapanRegionUI_2_4/JapanRegionJigsawUI/JapanRegionJigsawUI"
-		else
-			return "UI/VersionUI/JapanRegionUI_2_4/JapanRegionJigsawUI/JapanRegionJigsawUI"
-		end
+		return TangramPuzzleCfg[arg_1_0].task_ui_path
 	end,
 	GetPlayViewUIName = function(arg_2_0)
-		if ActivityTools.GetActivityTheme(arg_2_0) == ActivityConst.THEME.ACTIVITY_2_4 then
-			return "UI/VersionUI/JapanRegionUI_2_4/JapanRegionJigsawUI/JapanRegionJigsawPuzzleUI"
-		else
-			return "UI/VersionUI/JapanRegionUI_2_4/JapanRegionJigsawUI/JapanRegionJigsawPuzzleUI"
-		end
+		return TangramPuzzleCfg[arg_2_0].play_ui_path
 	end,
 	GetRewardViewUIName = function(arg_3_0)
-		if ActivityTools.GetActivityTheme(arg_3_0) == ActivityConst.THEME.ACTIVITY_2_4 then
-			return "UI/VersionUI/JapanRegionUI_2_4/JapanRegionJigsawUI/JapanRegionJigsawPuzzlePopUI"
-		else
-			return "UI/VersionUI/JapanRegionUI_2_4/JapanRegionJigsawUI/JapanRegionJigsawPuzzlePopUI"
-		end
+		return TangramPuzzleCfg[arg_3_0].reward_ui_path
 	end
 }
 
@@ -96,7 +84,7 @@ function var_0_0.InitConfig(arg_4_0)
 	end
 
 	local var_4_12 = {}
-	local var_4_13 = PuzzleNewClueCfg.get_id_list_by_main_activity_id[arg_4_0]
+	local var_4_13 = PuzzleNewClueCfg.get_id_list_by_main_activity_id[arg_4_0] or {}
 
 	for iter_4_8, iter_4_9 in ipairs(var_4_13) do
 		local var_4_14 = PuzzleNewClueCfg[iter_4_9].area_type
@@ -218,13 +206,30 @@ function var_0_0.FindClosestTarget(arg_12_0, arg_12_1)
 	return var_12_4, var_12_5
 end
 
-function var_0_0.CheckWrongSideByRegionID(arg_13_0, arg_13_1)
-	local var_13_0 = TangramPuzzleData:GetCurPuzzleDic(arg_13_0)
-	local var_13_1 = var_0_0.GetRegionCorrectPuzzleList(arg_13_0, arg_13_1)
-	local var_13_2 = var_0_0.GetPuzzleGlobalIndexListByRegionID(arg_13_0)[arg_13_1]
+function var_0_0.CheckValidDistanceForExchangePuzzle(arg_13_0, arg_13_1)
+	local var_13_0 = TangramPuzzleCfg[arg_13_0].puzzle_distance
+	local var_13_1 = Screen.width / 1920
+	local var_13_2 = Screen.height / 1080
+	local var_13_3 = 1
 
-	for iter_13_0, iter_13_1 in ipairs(var_13_1) do
-		if iter_13_1 ~= var_13_0[var_13_2[iter_13_0]] then
+	if var_13_3 < var_13_1 then
+		var_13_3 = var_13_1
+	end
+
+	if var_13_3 < var_13_2 then
+		var_13_3 = var_13_2
+	end
+
+	return arg_13_1 <= var_13_0 * var_13_3
+end
+
+function var_0_0.CheckWrongSideByRegionID(arg_14_0, arg_14_1)
+	local var_14_0 = TangramPuzzleData:GetCurPuzzleDic(arg_14_0)
+	local var_14_1 = var_0_0.GetRegionCorrectPuzzleList(arg_14_0, arg_14_1)
+	local var_14_2 = var_0_0.GetPuzzleGlobalIndexListByRegionID(arg_14_0)[arg_14_1]
+
+	for iter_14_0, iter_14_1 in ipairs(var_14_1) do
+		if iter_14_1 ~= var_14_0[var_14_2[iter_14_0]] then
 			return true
 		end
 	end
@@ -232,9 +237,9 @@ function var_0_0.CheckWrongSideByRegionID(arg_13_0, arg_13_1)
 	return false
 end
 
-function var_0_0.CheckRegionAllRight(arg_14_0)
-	for iter_14_0, iter_14_1 in pairs(var_0_0.regionListByType[arg_14_0]) do
-		if not var_0_0.CheckRegionAllRightByType(arg_14_0, iter_14_0) then
+function var_0_0.CheckRegionAllRight(arg_15_0)
+	for iter_15_0, iter_15_1 in pairs(var_0_0.regionListByType[arg_15_0]) do
+		if not var_0_0.CheckRegionAllRightByType(arg_15_0, iter_15_0) then
 			return false
 		end
 	end
@@ -242,106 +247,106 @@ function var_0_0.CheckRegionAllRight(arg_14_0)
 	return true
 end
 
-function var_0_0.CheckRegionAllRightByType(arg_15_0, arg_15_1)
-	if var_0_0.cacheAllRightRegionType[arg_15_0][arg_15_1] == true then
+function var_0_0.CheckRegionAllRightByType(arg_16_0, arg_16_1)
+	if var_0_0.cacheAllRightRegionType[arg_16_0][arg_16_1] == true then
 		return true
 	end
 
-	local var_15_0 = var_0_0.regionListByType[arg_15_0][arg_15_1]
+	local var_16_0 = var_0_0.regionListByType[arg_16_0][arg_16_1]
 
-	for iter_15_0, iter_15_1 in ipairs(var_15_0) do
-		if var_0_0.CheckWrongSideByRegionID(arg_15_0, iter_15_1) == true then
+	for iter_16_0, iter_16_1 in ipairs(var_16_0) do
+		if var_0_0.CheckWrongSideByRegionID(arg_16_0, iter_16_1) == true then
 			return false
 		end
 	end
 
-	var_0_0.cacheAllRightRegionType[arg_15_0][arg_15_1] = true
+	var_0_0.cacheAllRightRegionType[arg_16_0][arg_16_1] = true
 
 	return true
 end
 
-function var_0_0.GetRegionCfg(arg_16_0)
-	return var_0_0.regionCfgDic[arg_16_0]
+function var_0_0.GetRegionCfg(arg_17_0)
+	return var_0_0.regionCfgDic[arg_17_0]
 end
 
-function var_0_0.GetRegionType(arg_17_0, arg_17_1)
-	return var_0_0.regionCfgDic[arg_17_0][arg_17_1].type
+function var_0_0.GetRegionType(arg_18_0, arg_18_1)
+	return var_0_0.regionCfgDic[arg_18_0][arg_18_1].type
 end
 
-function var_0_0.GetRegionRotateAngle(arg_18_0, arg_18_1)
-	return var_0_0.regionCfgDic[arg_18_0][arg_18_1].rotateAngle
+function var_0_0.GetRegionRotateAngle(arg_19_0, arg_19_1)
+	return var_0_0.regionCfgDic[arg_19_0][arg_19_1].rotateAngle
 end
 
-function var_0_0.GetRegionCorrectPuzzleList(arg_19_0, arg_19_1)
-	local var_19_0 = TangramPuzzleCfg[arg_19_0]
-	local var_19_1 = var_0_0.regionIndexDic[arg_19_0][arg_19_1]
-
-	return var_19_0.correct_array[var_19_1][2]
-end
-
-function var_0_0.GetRegionRewardList(arg_20_0, arg_20_1)
+function var_0_0.GetRegionCorrectPuzzleList(arg_20_0, arg_20_1)
 	local var_20_0 = TangramPuzzleCfg[arg_20_0]
 	local var_20_1 = var_0_0.regionIndexDic[arg_20_0][arg_20_1]
 
-	return var_20_0.reward_area_list[var_20_1][2]
+	return var_20_0.correct_array[var_20_1][2]
 end
 
-function var_0_0.GetRegionListByType(arg_21_0)
-	return var_0_0.regionListByType[arg_21_0]
+function var_0_0.GetRegionRewardList(arg_21_0, arg_21_1)
+	local var_21_0 = TangramPuzzleCfg[arg_21_0]
+	local var_21_1 = var_0_0.regionIndexDic[arg_21_0][arg_21_1]
+
+	return var_21_0.reward_area_list[var_21_1][2]
 end
 
-function var_0_0.GetRegionIdByPuzzleGlobalIndex(arg_22_0)
-	local var_22_0
+function var_0_0.GetRegionListByType(arg_22_0)
+	return var_0_0.regionListByType[arg_22_0]
+end
 
-	if var_0_0.regionIdDicByPuzzleGlobalIndex and var_0_0.regionIdDicByPuzzleGlobalIndex[arg_22_0] then
-		var_22_0 = var_0_0.regionIdDicByPuzzleGlobalIndex[arg_22_0]
+function var_0_0.GetRegionIdByPuzzleGlobalIndex(arg_23_0)
+	local var_23_0
+
+	if var_0_0.regionIdDicByPuzzleGlobalIndex and var_0_0.regionIdDicByPuzzleGlobalIndex[arg_23_0] then
+		var_23_0 = var_0_0.regionIdDicByPuzzleGlobalIndex[arg_23_0]
 	else
-		var_22_0 = {}
+		var_23_0 = {}
 	end
 
-	return var_22_0
+	return var_23_0
 end
 
-function var_0_0.CheckRegionReward(arg_23_0)
-	local var_23_0 = {}
-	local var_23_1 = {}
-	local var_23_2 = TangramPuzzleData:GetRegionReceivedDic(arg_23_0)
+function var_0_0.CheckRegionReward(arg_24_0)
+	local var_24_0 = {}
+	local var_24_1 = {}
+	local var_24_2 = TangramPuzzleData:GetRegionReceivedDic(arg_24_0)
 
-	for iter_23_0, iter_23_1 in pairs(var_0_0.regionCfgDic[arg_23_0]) do
-		if not var_0_0.CheckWrongSideByRegionID(arg_23_0, iter_23_0) and not var_23_2[iter_23_0] then
-			local var_23_3 = var_0_0.GetRegionRewardList(arg_23_0, iter_23_0)
+	for iter_24_0, iter_24_1 in pairs(var_0_0.regionCfgDic[arg_24_0]) do
+		if not var_0_0.CheckWrongSideByRegionID(arg_24_0, iter_24_0) and not var_24_2[iter_24_0] then
+			local var_24_3 = var_0_0.GetRegionRewardList(arg_24_0, iter_24_0)
 
-			table.insertto(var_23_1, var_23_3)
+			table.insertto(var_24_1, var_24_3)
 
-			var_23_0[#var_23_0 + 1] = iter_23_0
+			var_24_0[#var_24_0 + 1] = iter_24_0
 		end
 	end
 
-	return var_23_0, var_23_1
+	return var_24_0, var_24_1
 end
 
-function var_0_0.IsAllRegionReceived(arg_24_0, arg_24_1)
-	if var_0_0.cacheAllReceivedRegion[arg_24_0][arg_24_1] then
+function var_0_0.IsAllRegionReceived(arg_25_0, arg_25_1)
+	if var_0_0.cacheAllReceivedRegion[arg_25_0][arg_25_1] then
 		return true
 	end
 
-	local var_24_0 = var_0_0.regionListByType[arg_24_0][arg_24_1]
-	local var_24_1 = TangramPuzzleData:GetRegionReceivedDic(arg_24_0)
+	local var_25_0 = var_0_0.regionListByType[arg_25_0][arg_25_1]
+	local var_25_1 = TangramPuzzleData:GetRegionReceivedDic(arg_25_0)
 
-	for iter_24_0, iter_24_1 in ipairs(var_24_0) do
-		if not var_24_1[iter_24_1] then
+	for iter_25_0, iter_25_1 in ipairs(var_25_0) do
+		if not var_25_1[iter_25_1] then
 			return false
 		end
 	end
 
-	var_0_0.cacheAllReceivedRegion[arg_24_0][arg_24_1] = true
+	var_0_0.cacheAllReceivedRegion[arg_25_0][arg_25_1] = true
 
 	return true
 end
 
-function var_0_0.IsAllRegionTypeReceived(arg_25_0)
-	for iter_25_0, iter_25_1 in pairs(var_0_0.regionListByType[arg_25_0]) do
-		if not var_0_0.IsAllRegionReceived(arg_25_0, iter_25_0) then
+function var_0_0.IsAllRegionTypeReceived(arg_26_0)
+	for iter_26_0, iter_26_1 in pairs(var_0_0.regionListByType[arg_26_0]) do
+		if not var_0_0.IsAllRegionReceived(arg_26_0, iter_26_0) then
 			return false
 		end
 	end
@@ -349,24 +354,24 @@ function var_0_0.IsAllRegionTypeReceived(arg_25_0)
 	return true
 end
 
-function var_0_0.GetClueListByRegionType(arg_26_0)
-	local var_26_0
+function var_0_0.GetClueListByRegionType(arg_27_0)
+	local var_27_0
 
-	if var_0_0.clueListByRegionType[arg_26_0] and var_0_0.clueListByRegionType[arg_26_0] then
-		var_26_0 = var_0_0.clueListByRegionType[arg_26_0]
+	if var_0_0.clueListByRegionType[arg_27_0] and var_0_0.clueListByRegionType[arg_27_0] then
+		var_27_0 = var_0_0.clueListByRegionType[arg_27_0]
 	else
-		var_26_0 = {}
+		var_27_0 = {}
 	end
 
-	return var_26_0
+	return var_27_0
 end
 
-function var_0_0.IsAllClueCompleted(arg_27_0)
-	local var_27_0 = TangramPuzzleData:GetCurClueDic(arg_27_0)
-	local var_27_1 = PuzzleNewClueCfg.get_id_list_by_main_activity_id[arg_27_0]
+function var_0_0.IsAllClueCompleted(arg_28_0)
+	local var_28_0 = TangramPuzzleData:GetCurClueDic(arg_28_0)
+	local var_28_1 = PuzzleNewClueCfg.get_id_list_by_main_activity_id[arg_28_0]
 
-	for iter_27_0, iter_27_1 in ipairs(var_27_1) do
-		if not var_27_0[iter_27_1] then
+	for iter_28_0, iter_28_1 in ipairs(var_28_1) do
+		if not var_28_0[iter_28_1] then
 			return false
 		end
 	end

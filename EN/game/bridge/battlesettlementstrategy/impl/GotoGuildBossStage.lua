@@ -5,6 +5,8 @@ var_0_0.StageNum = {
 	[BattleConst.STAGE_TYPE_NEW.GUILD_BOSS_CHALLENGE] = 2
 }
 
+local var_0_1
+
 function var_0_0.OnGotoSettlement(arg_1_0, arg_1_1)
 	local var_1_0 = arg_1_1.stageData:GetType()
 
@@ -14,6 +16,8 @@ end
 function var_0_0.GotoGuildBossStage(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_4, arg_2_5)
 	local var_2_0, var_2_1 = GetResultReward()
 
+	var_0_1 = GetBattleResultNeedAddHeroExp()
+
 	if arg_2_2 + 1 ~= BattleConst.BATTLE_RESULT.QUIT then
 		function BattleCallLuaCallBack()
 			local var_3_0 = 0
@@ -21,6 +25,7 @@ function var_0_0.GotoGuildBossStage(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_4,
 			if not GuildData:GetBossData().initedFromServer then
 				local var_3_1 = 0
 
+				arg_2_0:CheckAddExp()
 				gameContext:Go("/battleScorResult", {
 					stageData = arg_2_3,
 					rewardList = var_2_1,
@@ -46,6 +51,7 @@ function var_0_0.GotoGuildBossStage(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_4,
 
 				if isSuccess(arg_2_2) then
 					GuildData:OnPreposeSuccess()
+					arg_2_0:CheckAddExp()
 					gameContext:Go("/battleScorResult", {
 						stageData = arg_2_3,
 						rewardList = var_2_1,
@@ -67,6 +73,8 @@ function var_0_0.GotoGuildBossStage(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_4,
 					})
 					EndBattleLogic(arg_2_2)
 				else
+					arg_2_0:ClearAddExp()
+
 					local var_3_12 = arg_2_3:GetStageId()
 
 					manager.story:CheckBattleStory(var_3_12, manager.story.LOSE, function()
@@ -81,6 +89,7 @@ function var_0_0.GotoGuildBossStage(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_4,
 					end)
 				end
 			else
+				arg_2_0:CheckAddExp()
 				CustomLog.Log(debug.traceback(string.format("公会BOSS总伤害：%s", tostring(var_3_7))))
 
 				local var_3_13 = GameSetting.club_boss_point_cal.value
@@ -104,8 +113,23 @@ function var_0_0.GotoGuildBossStage(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_4,
 			end
 		end
 	else
+		arg_2_0:ClearAddExp()
 		arg_2_0:GotoBattleFaild(arg_2_2, arg_2_3, arg_2_4, arg_2_5)
 	end
+end
+
+function var_0_0.CheckAddExp(arg_6_0)
+	if var_0_1 then
+		for iter_6_0, iter_6_1 in ipairs(var_0_1) do
+			HeroAction.AddHeroExpSuccess(iter_6_1.id, iter_6_1.newLv, iter_6_1.newExp)
+		end
+
+		var_0_1 = nil
+	end
+end
+
+function var_0_0.ClearAddExp(arg_7_0)
+	var_0_1 = nil
 end
 
 return var_0_0

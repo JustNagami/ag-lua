@@ -85,6 +85,7 @@ function var_0_0.OnEnter(arg_11_0)
 	local var_11_1 = arg_11_0:GetGamepadIndex(var_11_0)
 
 	arg_11_0:SelectGamepad(var_11_1)
+	LuaForCursor.SwitchCursor(true)
 end
 
 function var_0_0.SelectGamepad(arg_12_0, arg_12_1)

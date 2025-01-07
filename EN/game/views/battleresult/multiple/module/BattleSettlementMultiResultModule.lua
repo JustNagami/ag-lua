@@ -37,6 +37,7 @@ end
 function var_0_0.RenderView(arg_7_0, arg_7_1)
 	arg_7_0.stageData = arg_7_1.stageData
 	arg_7_0.rewardList = arg_7_1.rewardList
+	arg_7_0.extraReward = arg_7_1.extraReward
 	arg_7_0.multiple = arg_7_1.rewardTimes
 
 	local var_7_0 = arg_7_0.stageData:GetType()
@@ -58,9 +59,14 @@ end
 
 function var_0_0.RenderItem(arg_8_0, arg_8_1, arg_8_2)
 	local var_8_0 = arg_8_0.rewardList[arg_8_1]
+	local var_8_1
+
+	if arg_8_0.extraReward and type(arg_8_0.extraReward) == "table" then
+		var_8_1 = arg_8_0.extraReward[arg_8_1]
+	end
 
 	arg_8_2:TryInitScroll(arg_8_0.scrollRect)
-	arg_8_2:RenderView(arg_8_1, clone(var_8_0))
+	arg_8_2:RenderView(arg_8_1, clone(var_8_0), clone(var_8_1))
 end
 
 function var_0_0.Dispose(arg_9_0)

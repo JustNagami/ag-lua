@@ -11,6 +11,7 @@ end
 function var_0_0.InitUI(arg_2_0)
 	arg_2_0:BindCfgUI()
 
+	arg_2_0.commonPortrait_ = CommonHeadPortrait.New(arg_2_0.headItem_)
 	arg_2_0.friendController_ = ControllerUtil.GetController(arg_2_0.transform_, "friend")
 end
 
@@ -56,8 +57,9 @@ function var_0_0.RefreshGiver(arg_8_0)
 	local var_8_0 = arg_8_0.delegateData_.submiter_uid
 
 	arg_8_0.userName_.text = arg_8_0.delegateData_.nick
-	arg_8_0.userIcon.sprite = ItemTools.getItemSprite(arg_8_0.delegateData_.portrait)
-	arg_8_0.userFrame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_8_0.delegateData_.frame)
+
+	arg_8_0.commonPortrait_:RenderHead(arg_8_0.delegateData_.portrait)
+	arg_8_0.commonPortrait_:RenderFrame(arg_8_0.delegateData_.frame)
 end
 
 function var_0_0.RefreshFriend(arg_9_0)
@@ -78,6 +80,11 @@ function var_0_0.RefreshDelegate(arg_10_0)
 
 	arg_10_0.moonCakeName_.text = ItemTools.getItemName(var_10_1) .. "X1"
 	arg_10_0.moonCakeIcon_.sprite = ItemTools.getItemSprite(var_10_1)
+end
+
+function var_0_0.Dispose(arg_11_0)
+	arg_11_0.commonPortrait_:Dispose()
+	var_0_0.super.Dispose(arg_11_0)
 end
 
 return var_0_0

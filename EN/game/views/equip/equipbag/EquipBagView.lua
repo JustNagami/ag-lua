@@ -20,6 +20,10 @@ function var_0_0.RefreshData(arg_2_0, arg_2_1, arg_2_2)
 end
 
 function var_0_0.OnEquipFilterConfirm(arg_3_0, arg_3_1)
+	if arg_3_0.isExit_ then
+		return
+	end
+
 	for iter_3_0, iter_3_1 in pairs(arg_3_1) do
 		arg_3_0.info_[iter_3_0] = iter_3_1
 	end
@@ -130,6 +134,7 @@ function var_0_0.AddUIListener(arg_7_0)
 end
 
 function var_0_0.OnEnter(arg_15_0, arg_15_1)
+	arg_15_0.isExit_ = false
 	arg_15_0.suitShow_ = false
 	arg_15_0.info_ = arg_15_0.info_ or {}
 	arg_15_0.info_.heroId = arg_15_1.heroId
@@ -271,6 +276,7 @@ end
 
 function var_0_0.OnExit(arg_27_0)
 	arg_27_0.info_ = {}
+	arg_27_0.isExit_ = true
 
 	arg_27_0.filterController_:SetSelectedState("normal")
 end

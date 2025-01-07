@@ -20,6 +20,10 @@ function var_0_1.ClickItem(arg_2_0)
 		OperationRecorder.RecordButtonTouch("challenge_attribute_below")
 	end
 
+	if arg_2_0:CheckLock() then
+		return
+	end
+
 	JumpTools.GoToSystem("/coreVerificationMain", nil, ViewConst.SYSTEM_ID.CORE_VERIFICATION)
 end
 

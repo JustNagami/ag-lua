@@ -5,6 +5,9 @@ function var_0_0.Ctor(arg_1_0, arg_1_1)
 	arg_1_0.transform_ = arg_1_1.transform
 
 	arg_1_0:BindCfgUI()
+
+	arg_1_0.adminCatImg_.immediate = true
+
 	arg_1_0:AddListeners()
 
 	arg_1_0.handler_ = handler(arg_1_0, arg_1_0.RefreshEnabledUI)
@@ -29,7 +32,7 @@ end
 
 function var_0_0.RefreshUI(arg_5_0, arg_5_1)
 	arg_5_0.gameObject_.name = arg_5_0.chipManagerID_
-	arg_5_0.adminCatImg_.sprite = ChipTools.GetChipManagerIcon(arg_5_0.chipManagerID_)
+	arg_5_0.adminCatImg_.spriteSync = ChipTools.GetChipManagerIconPath(arg_5_0.chipManagerID_)
 
 	local var_5_0 = arg_5_0:GetUnlockChipManagerList()
 	local var_5_1 = table.keyof(var_5_0, arg_5_0.chipManagerID_) == nil

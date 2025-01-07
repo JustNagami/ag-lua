@@ -163,7 +163,7 @@ function var_0_0.UpdateUnlockAdminCatList(arg_13_0, arg_13_1)
 	arg_13_0:UpdateAdminCatRedPoint()
 end
 
-function var_0_0.UpdateFinishExploreData(arg_14_0, arg_14_1, arg_14_2, arg_14_3)
+function var_0_0.UpdateFinishExploreData(arg_14_0, arg_14_1, arg_14_2, arg_14_3, arg_14_4)
 	local var_14_0 = arg_14_0.regionData[arg_14_1]
 
 	arg_14_0:CalculateAdminCatRate(var_14_0.adminCatID, var_14_0.exploreHour)
@@ -173,7 +173,8 @@ function var_0_0.UpdateFinishExploreData(arg_14_0, arg_14_1, arg_14_2, arg_14_3)
 		regionId = arg_14_1,
 		eventId = arg_14_2,
 		reward = arg_14_3,
-		adminCatID = var_14_0.adminCatID
+		adminCatID = var_14_0.adminCatID,
+		callBack = arg_14_4
 	})
 
 	arg_14_0.regionData[arg_14_1] = nil

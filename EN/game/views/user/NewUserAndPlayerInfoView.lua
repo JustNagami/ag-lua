@@ -18,6 +18,8 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
+	arg_4_0.bgImg_.immediate = true
+
 	local var_4_0 = GameToSDK.CURRENT_SDK_ID == SDK_PLATFORM.DEV or not SDKTools.GetIsOverSea() and _G.CHANNEL_MASTER_ID ~= 1
 
 	SetActive(arg_4_0.userCenterBtn_.gameObject, not var_4_0)
@@ -39,6 +41,8 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.tagSelectPanel_ = TagView.New(arg_4_0.tagSelectPanelGo_)
 
 	arg_4_0.tagSelectPanel_:RegisterClickFunction(handler(arg_4_0, arg_4_0.TagSelectCallback))
+
+	arg_4_0.headPortrait = CommonHeadPortrait.New(arg_4_0.portraitObj_)
 end
 
 function var_0_0.AddUIListeners(arg_5_0)
@@ -161,7 +165,11 @@ function var_0_0.AddUIListeners(arg_5_0)
 
 		JumpTools.GoToSystem("/achievementManager", nil, ViewConst.SYSTEM_ID.ACHIEVEMENT)
 	end)
-	arg_5_0:AddBtnListener(arg_5_0.headBtn_, nil, function()
+	arg_5_0.headPortrait:RegisteClickCallback(function()
+		if arg_5_0.isForeign_ then
+			return
+		end
+
 		OperationRecorder.RecordButtonTouch("userinfo_headportrait")
 		JumpTools.OpenPageByJump("HeadIconChange", {
 			isEnter = true
@@ -200,12 +208,14 @@ function var_0_0.AddUIListeners(arg_5_0)
 	end)
 	arg_5_0:AddBtnListener(arg_5_0.illustratedStickerBtn_, nil, function()
 		OperationRecorder.RecordButtonTouch("userinfo_sticker")
-		JumpTools.OpenPageByJump("/MainSticker", {
-			index = 1,
-			stickerInfo = arg_5_0.stickerList_,
-			stickerBg = arg_5_0.stickerBg_,
-			type = arg_5_0.isForeign_ and 3 or 1
-		})
+
+		if arg_5_0.isForeign_ then
+			JumpTools.OpenPageByJump("/customStickerMain", {
+				foreign = arg_5_0.stickerList_
+			})
+		else
+			JumpTools.OpenPageByJump("/customStickerMain")
+		end
 	end)
 	arg_5_0:AddBtnListener(arg_5_0.illustratedHeroBtn_, nil, function()
 		OperationRecorder.RecordButtonTouch("userinfo_hero")
@@ -505,15 +515,8 @@ function var_0_0.RefreshUserData(arg_40_0)
 		end
 	end
 
-	arg_40_0.stickerAll_ = #ItemCfg.get_id_list_by_sub_type[ItemConst.ITEM_SUB_TYPE.NORMAL_STICKER]
-	arg_40_0.stickerNum_ = #var_40_0.all_sticker_list
-
-	for iter_40_6, iter_40_7 in ipairs(var_40_0.all_sticker_list) do
-		if ItemCfg[iter_40_7].sub_type == ItemConst.ITEM_SUB_TYPE.SPECIAL_STICKER then
-			arg_40_0.stickerAll_ = arg_40_0.stickerAll_ + 1
-		end
-	end
-
+	arg_40_0.stickerAll_ = #PlayerData:GetStickerList(true) + #PlayerData:GetStickerBgList(true) + #PlayerData:GetStickerFgList(true)
+	arg_40_0.stickerNum_ = #PlayerData:GetStickerList() + #PlayerData:GetStickerBgList() + #PlayerData:GetStickerFgList()
 	arg_40_0.achieveAll_ = AchievementData:GetAchievementTotalCnt()
 	arg_40_0.achieveNum_ = AchievementData:GetFinishAchievementCnt()
 end
@@ -595,35 +598,37 @@ function var_0_0.RefreshPlayerData(arg_41_0)
 	arg_41_0.weaponServantAll_ = arg_41_0.weaponServantAll_ + var_41_7.cfg_hide_num
 
 	local var_41_8 = var_41_0.sticker_static_info
+	local var_41_9 = var_41_0.sticker_background_static_info
+	local var_41_10 = var_41_0.sticker_foreground_static_info
 
-	arg_41_0.stickerNum_ = var_41_8.not_hide_num + var_41_8.cfg_hide_num
-	arg_41_0.stickerAll_ = #ItemCfg.get_id_list_by_sub_type[ItemConst.ITEM_SUB_TYPE.NORMAL_STICKER] + var_41_8.cfg_hide_num
+	arg_41_0.stickerNum_ = var_41_8.not_hide_num + var_41_8.cfg_hide_num + var_41_9.not_hide_num + var_41_10.not_hide_num
+	arg_41_0.stickerAll_ = #ItemCfg.get_id_list_by_sub_type[ItemConst.ITEM_SUB_TYPE.NORMAL_STICKER] + var_41_8.cfg_hide_num + #PlayerData:GetStickerBgList(true) + #PlayerData:GetStickerFgList(true)
 
-	local var_41_9 = var_41_0.achievement_static_info
+	local var_41_11 = var_41_0.achievement_static_info
 
-	arg_41_0.achieveNum_ = var_41_9.not_hide_num
+	arg_41_0.achieveNum_ = var_41_11.not_hide_num
 	arg_41_0.achieveAll_ = 0
 
 	for iter_41_6, iter_41_7 in ipairs(AchievementCfg.all) do
-		local var_41_10 = false
-		local var_41_11 = AchievementCfg[iter_41_7].system
+		local var_41_12 = false
+		local var_41_13 = AchievementCfg[iter_41_7].system
 
-		if type(var_41_11) == "table" then
-			for iter_41_8, iter_41_9 in ipairs(var_41_11) do
+		if type(var_41_13) == "table" then
+			for iter_41_8, iter_41_9 in ipairs(var_41_13) do
 				if SystemCfg[iter_41_9].system_hide == 1 then
-					var_41_10 = true
+					var_41_12 = true
 
 					break
 				end
 			end
 		end
 
-		if AchievementCfg[iter_41_7].is_hide ~= 1 and not var_41_10 then
+		if AchievementCfg[iter_41_7].is_hide ~= 1 and not var_41_12 then
 			arg_41_0.achieveAll_ = arg_41_0.achieveAll_ + 1
 		end
 	end
 
-	arg_41_0.achieveAll_ = arg_41_0.achieveAll_ + var_41_9.cfg_hide_num
+	arg_41_0.achieveAll_ = arg_41_0.achieveAll_ + var_41_11.cfg_hide_num
 	arg_41_0.todaySendLike_ = PlayerData:GetTodaySendLikeList() or {}
 end
 
@@ -633,7 +638,6 @@ end
 
 function var_0_0.RefreshBtn(arg_43_0)
 	arg_43_0.signBtn_.interactable = not arg_43_0.isForeign_
-	arg_43_0.headBtn_.interactable = not arg_43_0.isForeign_
 	arg_43_0.nameBtn_.interactable = not arg_43_0.isForeign_
 	arg_43_0.changeNameBtn_.interactable = not arg_43_0.isForeign_
 	arg_43_0.servantbtnBtn_.interactable = not arg_43_0.isForeign_
@@ -720,15 +724,11 @@ function var_0_0.RefreshSign(arg_50_0, arg_50_1)
 end
 
 function var_0_0.RefreshHead(arg_51_0, arg_51_1)
-	arg_51_0.headIcon_.sprite = ItemTools.getItemSprite(arg_51_1)
-
-	arg_51_0.headIcon_:SetNativeSize()
+	arg_51_0.headPortrait:RenderHead(arg_51_1)
 end
 
 function var_0_0.RefreshFrame(arg_52_0, arg_52_1)
-	arg_52_0.headFrameIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_52_1)
-
-	arg_52_0.headFrameIcon_:SetNativeSize()
+	arg_52_0.headPortrait:RenderFrame(arg_52_1)
 end
 
 function var_0_0.RefreshLvInfo(arg_53_0, arg_53_1)
@@ -823,7 +823,7 @@ function var_0_0.RefreshTag(arg_57_0, arg_57_1)
 end
 
 function var_0_0.RefreshCardBg(arg_59_0, arg_59_1)
-	local var_59_0 = ProfileBusinessCardCfg[arg_59_1]
+	local var_59_0 = ProfileDecorateItemCfg[arg_59_1]
 	local var_59_1 = var_59_0.resource
 
 	if var_59_0.type == 1 then
@@ -894,31 +894,46 @@ end
 function var_0_0.RefreshScene(arg_63_0)
 	if not arg_63_0.isForeign_ then
 		local var_63_0 = HomeSceneSettingData:GetCurScene()
-		local var_63_1 = "playerInfo_" .. var_63_0
 
-		if CameraCfg[var_63_1] then
-			manager.ui:SetMainCamera(var_63_1)
+		if CameraCfg["t0_playerInfo_" .. var_63_0] and PosterGirlConst.PosterGirlTag.t0 == manager.posterGirl:GetTag() then
+			manager.ui:SetMainCamera("t0_playerInfo_" .. var_63_0)
+		elseif CameraCfg["playerInfo_" .. var_63_0] then
+			manager.ui:SetMainCamera("playerInfo_" .. var_63_0)
 		else
 			manager.ui:SetMainCamera("playerInfo", false, false)
 		end
 	else
-		local var_63_2 = ForeignInfoData:GetCurForeignDetailInfo().post_background_id
-		local var_63_3 = manager.loadScene:GetHomeShouldLoadSceneName(var_63_2)
-		local var_63_4 = "UI/Common/BackgroundQuad"
+		local var_63_1 = ForeignInfoData:GetCurForeignDetailInfo()
+		local var_63_2 = var_63_1.post_background_id
+
+		if HomeSceneSettingCfg[var_63_2].limit_display == 0 then
+			local var_63_3 = SkinSceneActionCfg.get_id_list_by_special_scene_id[var_63_2]
+
+			if var_63_3 and var_63_3[1] ~= var_63_1.postGril then
+				print("好友dlc场景和角色不匹配! 替换为默认场景")
+
+				local var_63_4 = GameSetting.home_sence_default.value
+
+				var_63_2 = var_63_4[#var_63_4]
+			end
+		end
+
+		local var_63_5 = manager.loadScene:GetHomeShouldLoadSceneName(var_63_2)
+		local var_63_6 = "UI/Common/BackgroundQuad"
 
 		arg_63_0:DestoryBackGround()
 
-		arg_63_0.backGround_ = manager.resourcePool:Get(var_63_4, ASSET_TYPE.SCENE)
+		arg_63_0.backGround_ = manager.resourcePool:Get(var_63_6, ASSET_TYPE.SCENE)
 		arg_63_0.backGroundTrs_ = arg_63_0.backGround_.transform
 
-		local var_63_5 = GameSetting.profile_other_players_coordinate.value
+		local var_63_7 = GameSetting.profile_other_players_coordinate.value
 
 		arg_63_0.backGroundTrs_:SetParent(manager.ui.mainCamera.transform)
 
-		arg_63_0.backGroundTrs_.localPosition = Vector3(var_63_5[1], var_63_5[2], var_63_5[3])
+		arg_63_0.backGroundTrs_.localPosition = Vector3(var_63_7[1], var_63_7[2], var_63_7[3])
 		arg_63_0.backGroundTrs_.localEulerAngles = Vector3(0, 0, 0)
 		arg_63_0.backGroundTrs_.localScale = Vector3(11, 11, 1)
-		arg_63_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas("TextureConfig/BackgroundQuad/" .. var_63_3)
+		arg_63_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas("TextureConfig/BackgroundQuad/" .. var_63_5)
 
 		manager.ui:SetMainCamera("playerInfo", false, true)
 	end
@@ -987,15 +1002,15 @@ end
 
 function var_0_0.BindRedPoint(arg_72_0)
 	manager.redPoint:bindUIandKey(arg_72_0.brithdayBtn_.transform, RedPointConst.BRITHDAY)
-	manager.redPoint:bindUIandKey(arg_72_0.stickerRedPanel_, RedPointConst.STICKER_ROOT)
-	manager.redPoint:bindUIandKey(arg_72_0.headBtn_.transform, RedPointConst.USER_CUSTOM)
+	manager.redPoint:bindUIandKey(arg_72_0.stickerRedPanel_, RedPointConst.CUSTOM_STICKER_ROOT)
+	manager.redPoint:bindUIandKey(arg_72_0.portraitObj_.transform, RedPointConst.USER_CUSTOM)
 	manager.redPoint:bindUIandKey(arg_72_0.tagBtn_.transform, RedPointConst.TAG)
 end
 
 function var_0_0.UnbindRedPoint(arg_73_0)
 	manager.redPoint:unbindUIandKey(arg_73_0.brithdayBtn_.transform, RedPointConst.BRITHDAY)
-	manager.redPoint:unbindUIandKey(arg_73_0.stickerRedPanel_, RedPointConst.STICKER_ROOT)
-	manager.redPoint:unbindUIandKey(arg_73_0.headBtn_.transform, RedPointConst.USER_CUSTOM)
+	manager.redPoint:unbindUIandKey(arg_73_0.stickerRedPanel_, RedPointConst.CUSTOM_STICKER_ROOT)
+	manager.redPoint:unbindUIandKey(arg_73_0.portraitObj_.transform, RedPointConst.USER_CUSTOM)
 	manager.redPoint:unbindUIandKey(arg_73_0.tagBtn_.transform, RedPointConst.TAG)
 end
 
@@ -1103,10 +1118,17 @@ function var_0_0.RefreshBgImage(arg_88_0)
 	if var_88_0 == "canteen" or var_88_0 == "dorm" or var_88_0 == "danceGame" or var_88_0 == "minigame" then
 		SetActive(arg_88_0.bgImg_.gameObject, true)
 
-		local var_88_1 = ForeignInfoData:GetCurForeignDetailInfo().post_background_id
+		local var_88_1
+
+		if arg_88_0.isForeign_ then
+			var_88_1 = ForeignInfoData:GetCurForeignDetailInfo().post_background_id
+		else
+			var_88_1 = HomeSceneSettingData:GetCurScene()
+		end
+
 		local var_88_2 = manager.loadScene:GetHomeShouldLoadSceneName(var_88_1)
 
-		arg_88_0.bgImg_.sprite = getSpriteWithoutAtlas("TextureConfig/BackgroundQuad/" .. var_88_2)
+		arg_88_0.bgImg_.spriteSync = "TextureConfig/BackgroundQuad/" .. var_88_2
 	else
 		SetActive(arg_88_0.bgImg_.gameObject, false)
 	end
@@ -1139,6 +1161,10 @@ function var_0_0.Dispose(arg_90_0)
 	for iter_90_0, iter_90_1 in ipairs(arg_90_0.tagItem_) do
 		iter_90_1:Dispose()
 	end
+
+	arg_90_0.headPortrait:Dispose()
+
+	arg_90_0.headPortrait = nil
 
 	arg_90_0:RemoveAllListeners()
 	var_0_0.super.Dispose(arg_90_0)

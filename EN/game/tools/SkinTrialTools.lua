@@ -5,9 +5,7 @@
 		if ActivitySkinTrialUICfg[var_1_0] then
 			return ActivitySkinTrialUICfg[var_1_0].main_ui_path
 		else
-			Debug.Log(string.format("<color=ff0000>ActivitySkinTrialUICfg has no theme(%d)</color>", var_1_0))
-
-			return "UI/VersionUI/XuHengUI/XHSkinTrialUI/XHSkinTrialMainUI"
+			return "Widget/System/Activity_Resident/Acitvity_OutfitTrial/Acitvity_SkinTrialMainUI"
 		end
 	end,
 	GetSelectViewUIName = function(arg_2_0)
@@ -16,29 +14,33 @@
 		if ActivitySkinTrialUICfg[var_2_0] then
 			return ActivitySkinTrialUICfg[var_2_0].select_ui_path
 		else
-			Debug.Log(string.format("<color=ff0000>ActivitySkinTrialUICfg has no theme(%d)</color>", var_2_0))
-
-			return "UI/VersionUI/XuHengUI/XHSkinTrialUI/XHSkinTrialUI"
+			return "Widget/System/Activity_Resident/Acitvity_OutfitTrial/Acitvity_SkinTrialUI"
 		end
 	end,
 	GoToSelectView = function(arg_3_0, arg_3_1)
 		local var_3_0 = ActivityTools.GetActivityTheme(arg_3_0)
-		local var_3_1 = ActivitySkinTrialCfg[arg_3_1]
 
-		if ActivitySkinTrialUICfg[var_3_0] then
-			if ActivitySkinTrialUICfg[var_3_0].script_version == "3" then
-				JumpTools.OpenPageByJump("/skinTrialSelectView_3_0", {
-					activityID = arg_3_0,
-					skinTrialID = arg_3_1
-				})
+		if var_3_0 < ActivityConst.THEME.ACTIVITY_3_6 then
+			if ActivitySkinTrialUICfg[var_3_0] then
+				if ActivitySkinTrialUICfg[var_3_0].script_version == "3" then
+					JumpTools.OpenPageByJump("/skinTrialSelectView_3_0", {
+						activityID = arg_3_0,
+						skinTrialID = arg_3_1
+					})
+				else
+					JumpTools.OpenPageByJump("/skinTrialSelectView_2_0", {
+						activityID = arg_3_0,
+						skinTrialID = arg_3_1
+					})
+				end
 			else
-				JumpTools.OpenPageByJump("/skinTrialSelectView_2_0", {
-					activityID = arg_3_0,
-					skinTrialID = arg_3_1
-				})
+				Debug.Log(string.format("<color=ff0000>ActivitySkinTrialUICfg has no theme(%d)</color>", var_3_0 or ""))
 			end
 		else
-			Debug.Log(string.format("<color=ff0000>ActivitySkinTrialUICfg has no theme(%d)</color>", var_3_0 or ""))
+			JumpTools.OpenPageByJump("/skinTrialSelectView_Resident", {
+				activityID = arg_3_0,
+				skinTrialID = arg_3_1
+			})
 		end
 	end,
 	GetHeroStandardID = function(arg_4_0)

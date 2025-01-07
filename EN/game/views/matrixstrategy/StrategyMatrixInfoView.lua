@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("StrategyMatrixInfoView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/StrategyMatrix/StrategyMatrixInfoUI"
+	return "Widget/System/MatrixlUI/StrategyMatrixInfoUI"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -102,7 +102,8 @@ function var_0_0.OnEventAction(arg_11_0)
 			eventId = var_11_2,
 			matrix_activity_id = arg_11_0.matrix_activity_id,
 			activityID = arg_11_0.matrix_activity_id,
-			nodeId = arg_11_0.nodeId
+			nodeId = arg_11_0.nodeId,
+			heroDataType = HeroConst.HERO_DATA_TYPE.STRATEGYMATRIX
 		})
 	end
 end

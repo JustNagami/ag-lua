@@ -10,6 +10,9 @@ end
 
 function var_0_0.Init(arg_3_0)
 	arg_3_0:InitUI()
+
+	arg_3_0.commonPortrait_ = CommonHeadPortrait.New(arg_3_0.headItem_)
+
 	arg_3_0:AddListeners()
 
 	arg_3_0.rankTypeController_ = ControllerUtil.GetController(arg_3_0.m_rankTypeController, "toggle")
@@ -213,8 +216,8 @@ function var_0_0.Refresh(arg_20_0, arg_20_1, arg_20_2, arg_20_3)
 	if arg_20_2 == RankBaseConst.SUB_TYPE.SCORE then
 		local var_20_7 = PlayerData:GetPlayerInfo()
 
-		arg_20_0.m_icon.sprite = ItemTools.getItemSprite(var_20_7 and var_20_7.portrait)
-		arg_20_0.m_frame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. (var_20_7 and var_20_7.icon_frame))
+		arg_20_0.commonPortrait_:RenderHead(var_20_7 and var_20_7.portrait)
+		arg_20_0.commonPortrait_:RenderFrame(var_20_7 and var_20_7.icon_frame)
 
 		if arg_20_0.playerAnimator_ then
 			SetActive(arg_20_0.playerIconGo_, false)

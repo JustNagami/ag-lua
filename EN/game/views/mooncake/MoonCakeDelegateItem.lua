@@ -5,6 +5,9 @@ function var_0_0.OnCtor(arg_1_0, arg_1_1)
 	arg_1_0.transform_ = arg_1_0.gameObject_.transform
 
 	arg_1_0:InitUI()
+
+	arg_1_0.commonPortrait_ = CommonHeadPortrait.New(arg_1_0.headItem_)
+
 	arg_1_0:AddUIListener()
 end
 
@@ -82,8 +85,9 @@ function var_0_0.RefreshPrincipal(arg_9_0)
 	arg_9_0.userName_.text = arg_9_0.delegateData_.nick
 	arg_9_0.userLevel_.text = "LV." .. arg_9_0.delegateData_.level
 	arg_9_0.userUid_.text = arg_9_0.delegateData_.uid
-	arg_9_0.userIcon_.sprite = ItemTools.getItemSprite(arg_9_0.delegateData_.portrait)
-	arg_9_0.userFrame_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_9_0.delegateData_.frame)
+
+	arg_9_0.commonPortrait_:RenderHead(arg_9_0.delegateData_.portrait)
+	arg_9_0.commonPortrait_:RenderFrame(arg_9_0.delegateData_.frame)
 end
 
 function var_0_0.RefreshFriend(arg_10_0)
@@ -139,6 +143,11 @@ function var_0_0.OnSubmitDelegate(arg_15_0)
 	arg_15_0.delegateData_ = MoonCakeData:GetDelegateData(arg_15_0.activityID_, arg_15_0.delegateID_)
 
 	arg_15_0:RefreshStatus()
+end
+
+function var_0_0.Dispose(arg_16_0)
+	arg_16_0.commonPortrait_:Dispose()
+	var_0_0.super.Dispose(arg_16_0)
 end
 
 return var_0_0

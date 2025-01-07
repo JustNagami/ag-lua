@@ -33,12 +33,14 @@ function var_0_0.ReconnectError(arg_1_0)
 		end
 
 		GameToSDK.UpUserEvent("{\"eventType\" : \"End\"}")
+		DisposeData()
 		manager.video:Dispose()
 		manager.story:Dispose()
 		manager.net:Disconnect()
 		manager.net:ChatDisconnect()
 		manager.messageBox:HideAll()
 		manager.guide:OnLogout()
+		manager.uiTime:OnLogout()
 		ActivityAction.OnLogout()
 		GuildActivityAction.OnLogout()
 		GuildActivitySPAction.OnLogout()
@@ -55,6 +57,12 @@ function var_0_0.ReconnectError(arg_1_0)
 			manager.NewChessManager:Dispose()
 
 			manager.NewChessManager = nil
+		end
+
+		if manager.ChessBoardManager then
+			manager.ChessBoardManager:Dispose()
+
+			manager.ChessBoardManager = nil
 		end
 
 		SetForceShowQuanquan(false)

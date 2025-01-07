@@ -44,7 +44,7 @@
 		id = 3080742,
 		level = 1,
 		attribute_factor = {
-			1500,
+			1300,
 			1000,
 			1000
 		},
@@ -78,7 +78,7 @@
 		id = 3080743,
 		level = 1,
 		attribute_factor = {
-			2000,
+			1600,
 			1000,
 			2100
 		},
@@ -1025,7 +1025,7 @@
 		attribute_factor = {
 			1800,
 			1000,
-			3000
+			2400
 		},
 		hero_list = {
 			{
@@ -1585,9 +1585,9 @@
 		id = 3080351,
 		level = 1,
 		attribute_factor = {
+			500,
 			1000,
-			1000,
-			1000
+			500
 		},
 		hero_list = {
 			{},
@@ -1619,9 +1619,9 @@
 		id = 3080352,
 		level = 1,
 		attribute_factor = {
+			800,
 			1000,
-			1000,
-			1000
+			700
 		},
 		hero_list = {
 			{},
@@ -1653,9 +1653,9 @@
 		id = 3080353,
 		level = 1,
 		attribute_factor = {
+			1500,
 			1000,
-			1000,
-			1000
+			1200
 		},
 		hero_list = {
 			{
@@ -1690,9 +1690,9 @@
 		id = 3080521,
 		level = 1,
 		attribute_factor = {
+			300,
 			1000,
-			1000,
-			1000
+			350
 		},
 		hero_list = {
 			{},
@@ -1724,9 +1724,9 @@
 		id = 3080522,
 		level = 1,
 		attribute_factor = {
+			600,
 			1000,
-			1000,
-			1000
+			600
 		},
 		hero_list = {
 			{},
@@ -1758,7 +1758,7 @@
 		id = 3080523,
 		level = 1,
 		attribute_factor = {
-			1000,
+			900,
 			1000,
 			1000
 		},
@@ -2519,6 +2519,636 @@
 			0
 		}
 	},
+	[3081391] = {
+		tips = "",
+		name = "31207bc266559943ab5eb2341f59a8f1",
+		ai_level = 1,
+		map = "40611391",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3081391,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			700
+		},
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3081392] = {
+		tips = "",
+		name = "d8ae921af341ee89030a024ab209ee9b",
+		ai_level = 1,
+		map = "40611392",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3081392,
+		level = 1,
+		attribute_factor = {
+			1200,
+			1000,
+			900
+		},
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3081393] = {
+		tips = "",
+		name = "ded0d85eb107e0ee7823bf2c645ddd32",
+		ai_level = 1,
+		map = "40611393",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3081393,
+		level = 1,
+		attribute_factor = {
+			2400,
+			1000,
+			1400
+		},
+		hero_list = {
+			{
+				1139,
+				3081139
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080491] = {
+		tips = "",
+		name = "345ebb09b53a52c8f3098e16008c0ecc",
+		ai_level = 1,
+		map = "40610491",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080491,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			1500
+		},
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080492] = {
+		tips = "",
+		name = "600c38a322b8fb4050e0204231db37a2",
+		ai_level = 1,
+		map = "40610492",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080492,
+		level = 1,
+		attribute_factor = {
+			1500,
+			1000,
+			2000
+		},
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080493] = {
+		tips = "",
+		name = "cd5a23d007d5b0f2c9991449603d289b",
+		ai_level = 1,
+		map = "40610493",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080493,
+		level = 1,
+		attribute_factor = {
+			2500,
+			1000,
+			4000
+		},
+		hero_list = {
+			{
+				1049,
+				308104901
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080811] = {
+		tips = "",
+		name = "846dc427b77dededceadb49ef5316721",
+		ai_level = 1,
+		map = "40610811",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080811,
+		level = 1,
+		attribute_factor = {
+			500,
+			1000,
+			1000
+		},
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080812] = {
+		tips = "",
+		name = "59b0cf0918062a55b0e401adb2399bf5",
+		ai_level = 1,
+		map = "40610812",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080812,
+		level = 1,
+		attribute_factor = {
+			800,
+			1000,
+			1600
+		},
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080813] = {
+		tips = "",
+		name = "4b1622ad4a8f57f46ec99911bb5c60b2",
+		ai_level = 1,
+		map = "40610813",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080813,
+		level = 1,
+		attribute_factor = {
+			1200,
+			1000,
+			4000
+		},
+		hero_list = {
+			{
+				1081,
+				3081081
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080581] = {
+		tips = "",
+		name = "b6f269078551c14d0e26c1cc690c8c31",
+		ai_level = 1,
+		map = "40610581",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080581,
+		level = 1,
+		attribute_factor = {
+			500,
+			1000,
+			1000
+		},
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080582] = {
+		tips = "",
+		name = "f368224667c858c9fd98a6739137bac1",
+		ai_level = 1,
+		map = "40610582",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080582,
+		level = 1,
+		attribute_factor = {
+			500,
+			1000,
+			1500
+		},
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080583] = {
+		tips = "",
+		name = "87306700870d4aa289d67d29d2fbfdec",
+		ai_level = 1,
+		map = "40610583",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080583,
+		level = 1,
+		attribute_factor = {
+			500,
+			1000,
+			2800
+		},
+		hero_list = {
+			{
+				1058,
+				3081058
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080151] = {
+		tips = "",
+		name = "3d3e0955852b76cec8d9370868176ee0",
+		ai_level = 1,
+		map = "40610151",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080151,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080152] = {
+		tips = "",
+		name = "b123f92bf533c9b79a7ea0ddaa6d89b8",
+		ai_level = 1,
+		map = "40610152",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080152,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080153] = {
+		tips = "",
+		name = "ba11c8d26e10dad2b90bf40dd924e128",
+		ai_level = 1,
+		map = "40610153",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080153,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		hero_list = {
+			{
+				1015,
+				3081015
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080951] = {
+		tips = "",
+		name = "d4557d1f9493c761e355862e92f89e68",
+		ai_level = 1,
+		map = "40610951",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080951,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			1500
+		},
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080952] = {
+		tips = "",
+		name = "c296dc25c933a7d3ac3778a346476eb1",
+		ai_level = 1,
+		map = "40610952",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080952,
+		level = 1,
+		attribute_factor = {
+			1500,
+			1000,
+			2000
+		},
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080953] = {
+		tips = "",
+		name = "2920014472866b95f328d5657f704a09",
+		ai_level = 1,
+		map = "40610953",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080953,
+		level = 1,
+		attribute_factor = {
+			2000,
+			1000,
+			4000
+		},
+		hero_list = {
+			{
+				1095,
+				3081095
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
 	all = {
 		3080741,
 		3080742,
@@ -2591,6 +3221,24 @@
 		3080933,
 		3080551,
 		3080552,
-		3080553
+		3080553,
+		3081391,
+		3081392,
+		3081393,
+		3080491,
+		3080492,
+		3080493,
+		3080811,
+		3080812,
+		3080813,
+		3080581,
+		3080582,
+		3080583,
+		3080151,
+		3080152,
+		3080153,
+		3080951,
+		3080952,
+		3080953
 	}
 }

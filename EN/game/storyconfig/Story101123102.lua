@@ -4,7 +4,7 @@
 		arg_1_1.frameCnt_ = 0
 		arg_1_1.state_ = "playing"
 		arg_1_1.curTalkId_ = 112312001
-		arg_1_1.duration_ = 8.366
+		arg_1_1.duration_ = 8.37
 
 		local var_1_0 = {
 			ja = 7.366,
@@ -759,7 +759,7 @@
 		arg_15_1.frameCnt_ = 0
 		arg_15_1.state_ = "playing"
 		arg_15_1.curTalkId_ = 112312004
-		arg_15_1.duration_ = 6.066
+		arg_15_1.duration_ = 6.07
 
 		local var_15_0 = {
 			ja = 5.866,
@@ -1000,7 +1000,7 @@
 		arg_23_1.frameCnt_ = 0
 		arg_23_1.state_ = "playing"
 		arg_23_1.curTalkId_ = 112312006
-		arg_23_1.duration_ = 2.333
+		arg_23_1.duration_ = 2.33
 
 		local var_23_0 = {
 			ja = 2.333,
@@ -1162,7 +1162,7 @@
 		arg_27_1.frameCnt_ = 0
 		arg_27_1.state_ = "playing"
 		arg_27_1.curTalkId_ = 112312007
-		arg_27_1.duration_ = 4.033
+		arg_27_1.duration_ = 4.03
 
 		local var_27_0 = {
 			ja = 2.133,
@@ -1363,7 +1363,7 @@
 		arg_31_1.frameCnt_ = 0
 		arg_31_1.state_ = "playing"
 		arg_31_1.curTalkId_ = 112312008
-		arg_31_1.duration_ = 6.466
+		arg_31_1.duration_ = 6.47
 
 		local var_31_0 = {
 			ja = 3.9,
@@ -1564,7 +1564,7 @@
 		arg_35_1.frameCnt_ = 0
 		arg_35_1.state_ = "playing"
 		arg_35_1.curTalkId_ = 112312009
-		arg_35_1.duration_ = 4.733
+		arg_35_1.duration_ = 4.73
 
 		local var_35_0 = {
 			ja = 3.3,
@@ -1765,7 +1765,7 @@
 		arg_39_1.frameCnt_ = 0
 		arg_39_1.state_ = "playing"
 		arg_39_1.curTalkId_ = 112312010
-		arg_39_1.duration_ = 13.933
+		arg_39_1.duration_ = 13.93
 
 		local var_39_0 = {
 			ja = 10.066,
@@ -2369,7 +2369,7 @@
 		arg_55_1.frameCnt_ = 0
 		arg_55_1.state_ = "playing"
 		arg_55_1.curTalkId_ = 112312014
-		arg_55_1.duration_ = 11.633
+		arg_55_1.duration_ = 11.63
 
 		local var_55_0 = {
 			ja = 9.6,
@@ -2692,7 +2692,7 @@
 		arg_67_1.frameCnt_ = 0
 		arg_67_1.state_ = "playing"
 		arg_67_1.curTalkId_ = 112312017
-		arg_67_1.duration_ = 8.166
+		arg_67_1.duration_ = 8.17
 
 		local var_67_0 = {
 			ja = 6.866,
@@ -3257,7 +3257,7 @@
 		arg_83_1.frameCnt_ = 0
 		arg_83_1.state_ = "playing"
 		arg_83_1.curTalkId_ = 112312021
-		arg_83_1.duration_ = 8.833
+		arg_83_1.duration_ = 8.83
 
 		local var_83_0 = {
 			ja = 8.833,

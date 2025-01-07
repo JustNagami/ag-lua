@@ -54,6 +54,7 @@ function var_0_0.InitUI(arg_8_0)
 		arg_8_0.TogClub,
 		arg_8_0.TogAll
 	}
+	arg_8_0.commonPortrait_ = CommonHeadPortrait.New(arg_8_0.GoHeadItem)
 end
 
 function var_0_0.OnTop(arg_9_0)
@@ -65,6 +66,8 @@ function var_0_0.OnBehind(arg_10_0)
 end
 
 function var_0_0.Dispose(arg_11_0)
+	arg_11_0.commonPortrait_:Dispose()
+
 	if arg_11_0.scroll then
 		arg_11_0.scroll:Dispose()
 
@@ -90,8 +93,8 @@ function var_0_0.UpdateBar(arg_13_0)
 end
 
 function var_0_0.RefreshView(arg_14_0)
-	arg_14_0.ImgHead.sprite = ItemTools.getItemSprite(PlayerData:GetPlayerInfo().portrait)
-	arg_14_0.ImgFrame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. PlayerData:GetPlayerInfo().icon_frame)
+	arg_14_0.commonPortrait_:RenderHead(PlayerData:GetPlayerInfo().portrait)
+	arg_14_0.commonPortrait_:RenderFrame(PlayerData:GetPlayerInfo().icon_frame)
 
 	if arg_14_0.tab == var_0_1.Club then
 		local var_14_0 = RankData:GetGuildActivityRank(arg_14_0.rank_id)

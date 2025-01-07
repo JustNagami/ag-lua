@@ -85,134 +85,139 @@ function var_0_0.RefreshDeriveHero(arg_12_0)
 	end
 end
 
-function var_0_0.ClickHeroItem(arg_13_0, arg_13_1)
-	if not HeroTools.GetHeroIsUnlock(arg_13_1) then
+function var_0_0.RecordHeroPosInfo(arg_13_0)
+	local var_13_0 = arg_13_0.heroEID
+
+	if Dorm.DormEntityManager.IsValidEntityID(var_13_0) then
+		return {
+			pos = Dorm.DormEntityManager.QueryPosition(var_13_0),
+			forward = Dorm.DormEntityManager.QueryForwardDir(var_13_0)
+		}
+	end
+end
+
+function var_0_0.ClickHeroItem(arg_14_0, arg_14_1)
+	if not HeroTools.GetHeroIsUnlock(arg_14_1) then
 		ShowTips("DORM_HERO_LOCK")
 
 		return
 	end
 
-	if arg_13_0.heroID == arg_13_1 then
+	if arg_14_0.heroID == arg_14_1 then
 		return
 	end
 
-	arg_13_0.heroID = arg_13_1
+	arg_14_0.recordPosInfo = arg_14_0:RecordHeroPosInfo()
+	arg_14_0.heroID = arg_14_1
 
-	local var_13_0 = DormData:GetCurrectSceneID()
-	local var_13_1 = DormitoryData:GetDormHerosByArchitecture(var_13_0)
-	local var_13_2 = {}
-	local var_13_3 = DormData:GetHeroArchiveID(arg_13_1)
+	local var_14_0 = DormData:GetCurrectSceneID()
+	local var_14_1 = DormitoryData:GetDormHerosByArchitecture(var_14_0)
+	local var_14_2 = {}
+	local var_14_3 = DormData:GetHeroArchiveID(arg_14_1)
 
-	for iter_13_0, iter_13_1 in ipairs(var_13_1) do
-		if DormData:GetHeroArchiveID(iter_13_1) ~= var_13_3 then
-			table.insert(var_13_2, iter_13_1)
+	for iter_14_0, iter_14_1 in ipairs(var_14_1) do
+		if DormData:GetHeroArchiveID(iter_14_1) ~= var_14_3 then
+			table.insert(var_14_2, iter_14_1)
 		end
 	end
 
-	table.insert(var_13_2, arg_13_1)
-	DormAction:DeployHeroInRoom(var_13_0, var_13_2, DormEnum.DormDeployType.Place)
+	table.insert(var_14_2, arg_14_1)
+	DormAction:DeployHeroInRoom(var_14_0, var_14_2, DormEnum.DormDeployType.Place)
 end
 
-function var_0_0.UpdataHeroItemState(arg_14_0)
-	if arg_14_0.heroItemList then
-		for iter_14_0, iter_14_1 in ipairs(arg_14_0.heroItemList) do
-			iter_14_1:RefreshUI(iter_14_1.heroID, arg_14_0.heroID)
+function var_0_0.UpdataHeroItemState(arg_15_0)
+	if arg_15_0.heroItemList then
+		for iter_15_0, iter_15_1 in ipairs(arg_15_0.heroItemList) do
+			iter_15_1:RefreshUI(iter_15_1.heroID, arg_15_0.heroID)
 		end
 	end
 end
 
-function var_0_0.AddUIListener(arg_15_0)
-	arg_15_0:AddBtnListener(arg_15_0.closeBtn, nil, function()
+function var_0_0.AddUIListener(arg_16_0)
+	arg_16_0:AddBtnListener(arg_16_0.closeBtn, nil, function()
 		JumpTools.Back(1, {
-			heroEID = arg_15_0.heroEID
+			heroEID = arg_16_0.heroEID
 		})
-		Dorm.DormEntityManager.StopAllCmd(arg_15_0.heroEID)
+		Dorm.DormEntityManager.StopAllCmd(arg_16_0.heroEID)
 	end)
 end
 
-function var_0_0.indexSkinList(arg_17_0, arg_17_1, arg_17_2)
-	arg_17_2:RegisterClickCallBack(function(arg_18_0)
-		if arg_17_0.skinID == arg_18_0 then
+function var_0_0.indexSkinList(arg_18_0, arg_18_1, arg_18_2)
+	arg_18_2:RegisterClickCallBack(function(arg_19_0)
+		if arg_18_0.skinID == arg_19_0 then
 			return
 		end
 
-		DormAction:SetHeroSkin(arg_18_0, DormConst.DORM_CHANGESKIN_TYPE.view)
+		DormAction:SetHeroSkin(arg_19_0, DormConst.DORM_CHANGESKIN_TYPE.view)
 	end)
-	arg_17_2:RefreshUI(arg_17_0.skinList[arg_17_1], arg_17_0.heroID, arg_17_0.skinID)
+	arg_18_2:RefreshUI(arg_18_0.skinList[arg_18_1], arg_18_0.heroID, arg_18_0.skinID)
 end
 
-function var_0_0.ChangeHeroPrefab(arg_19_0, arg_19_1)
-	local var_19_0 = arg_19_0.heroEID
-	local var_19_1
+function var_0_0.ChangeHeroPrefab(arg_20_0, arg_20_1)
+	local var_20_0 = arg_20_0.heroEID
+	local var_20_1 = var_20_0 and Dorm.DormEntityManager.IsValidEntityID(var_20_0)
+	local var_20_2
 
-	if DormUtils.GetEntityData(var_19_0).cfgID ~= arg_19_1 then
-		local var_19_2
-		local var_19_3
-
-		var_19_1, var_19_3 = DormCharacterManager.GetInstance():Generate(arg_19_1, true)
-
-		Dorm.DormEntityManager.PutEntityAt(var_19_1, var_19_0, "root")
-		DormCharacterManager.FindAndRemove(var_19_0)
-
-		arg_19_0.heroEID = var_19_1
+	if var_20_1 and DormUtils.GetEntityData(var_20_0).cfgID == arg_20_1 then
+		var_20_2 = var_20_0
 	else
-		var_19_1 = var_19_0
-	end
+		var_20_2 = DormCharacterManager.GetInstance():GetEntityID(arg_20_1)
 
-	DormHeroAI:SwitchControl(var_19_1, DormEnum.ControlType.Player)
-	Dorm.DormEntityManager.SetPlayerEntityFaceToCam(var_19_1, true)
-	Dorm.DormEntityManager.SendInteractToEntityCMD(var_19_1, var_19_1, false)
+		if not (var_20_2 and Dorm.DormEntityManager.IsValidEntityID(var_20_2)) then
+			var_20_2 = DormCharacterManager.GetInstance():Generate(arg_20_1, true)
 
-	local var_19_4 = DormCharacterInteractBehaviour.MakeCtxForInternalAction(var_19_1, var_19_1, "change_skin_self", {
-		onComplete = function(arg_20_0)
-			return
+			Dorm.DormEntityManager.PutEntityAt(var_20_2, var_20_0, "root")
+
+			if var_20_1 then
+				DormCharacterManager.FindAndRemove(var_20_0)
+			end
 		end
-	})
 
-	DormUtils.SetEntityInteractContext(var_19_1, var_19_4)
-
-	local var_19_5 = DormUtils.GetEntityData(var_19_1)
-
-	if not nullable(var_19_5, "interactCtx", "dt") then
-		local var_19_6 = 0
+		arg_20_0.heroEID = var_20_2
 	end
 
-	if not nullable(var_19_5, "interactCtx", "duration") then
-		local var_19_7 = 0
+	if arg_20_0.recordPosInfo then
+		Dorm.DormEntityManager.PutEntityLookToDir(var_20_2, arg_20_0.recordPosInfo.pos, arg_20_0.recordPosInfo.forward)
+
+		arg_20_0.recordPosInfo = nil
 	end
 
-	Timer.New(function()
-		return
-	end, 1, false, false):Start()
+	DormHeroAI:SwitchControl(var_20_2, DormEnum.ControlType.Player)
+	Dorm.DormEntityManager.SetPlayerEntityFaceToCam(var_20_2, true)
+	Dorm.DormEntityManager.SendInteractToEntityCMD(var_20_2, var_20_2, false)
+
+	local var_20_3 = DormCharacterInteractBehaviour.MakeCtxForInternalAction(var_20_2, var_20_2, "change_skin_self")
+
+	DormUtils.SetEntityInteractContext(var_20_2, var_20_3)
 end
 
-function var_0_0.OnExit(arg_22_0)
-	arg_22_0:RemoveAllEventListener()
-	arg_22_0.subtitleBubbleView:OnExit()
+function var_0_0.OnExit(arg_21_0)
+	arg_21_0:RemoveAllEventListener()
+	arg_21_0.subtitleBubbleView:OnExit()
+
+	if arg_21_0.heroItemList then
+		for iter_21_0, iter_21_1 in pairs(arg_21_0.heroItemList) do
+			iter_21_1:Dispose()
+		end
+
+		arg_21_0.heroItemList = nil
+	end
+end
+
+function var_0_0.Dispose(arg_22_0)
+	if arg_22_0.skinScroll then
+		arg_22_0.skinScroll:Dispose()
+
+		arg_22_0.skinScroll = nil
+	end
 
 	if arg_22_0.heroItemList then
-		for iter_22_0, iter_22_1 in pairs(arg_22_0.heroItemList) do
+		for iter_22_0, iter_22_1 in ipairs(arg_22_0.heroItemList) do
 			iter_22_1:Dispose()
 		end
-
-		arg_22_0.heroItemList = nil
-	end
-end
-
-function var_0_0.Dispose(arg_23_0)
-	if arg_23_0.skinScroll then
-		arg_23_0.skinScroll:Dispose()
-
-		arg_23_0.skinScroll = nil
 	end
 
-	if arg_23_0.heroItemList then
-		for iter_23_0, iter_23_1 in ipairs(arg_23_0.heroItemList) do
-			iter_23_1:Dispose()
-		end
-	end
-
-	var_0_0.super.Dispose(arg_23_0)
+	var_0_0.super.Dispose(arg_22_0)
 end
 
 return var_0_0

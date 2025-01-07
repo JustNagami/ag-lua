@@ -14,14 +14,7 @@ function var_0_0.AddUIListener(arg_2_0)
 	arg_2_0:AddBtnListener(arg_2_0.m_refreshBtn, nil, function()
 		ShowMessageBox({
 			title = GetTips("PROMPT"),
-			content = {
-				GetTips("WHETHER_TO_CONSUME"),
-				{
-					arg_2_0:GetSwitchItemIcon(CurrencyConst.CURRENCY_TYPE_MATRIX_COIN),
-					arg_2_0.refreshCost
-				},
-				(GetTips("MATRIX_SHOP_REFRESH"))
-			},
+			content = string.format(GetTips("MATRIX_SHOP_REFRESH"), ItemTools.getItemName(CurrencyConst.CURRENCY_STRATEGYMATRIX_TICKET_3_5), arg_2_0.refreshCost),
 			OkCallback = function()
 				StrategyMatrixAction.QueryRefreshShopItem(arg_2_0.matrix_activity_id)
 			end,

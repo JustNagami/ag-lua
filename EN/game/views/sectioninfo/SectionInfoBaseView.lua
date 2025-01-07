@@ -42,9 +42,7 @@ function var_0_0.Init(arg_3_0)
 	arg_3_0.hideBattleAffixController_:SetSelectedState("true")
 	arg_3_0.guildStateController_:SetSelectedState("common")
 	arg_3_0.hideSmallAffixController_:SetSelectedState("true")
-
-	arg_3_0.btnController_ = arg_3_0.btnControllerEx_:GetController("lock")
-
+	arg_3_0.btnController_:SetSelectedState("false")
 	arg_3_0.hideFatigueController_:SetSelectedState("show")
 	arg_3_0.challengeTimeController_:SetSelectedState("close")
 	arg_3_0.refreshTimeController_:SetSelectedState("close")
@@ -122,6 +120,8 @@ end
 
 function var_0_0.InitUI(arg_9_0)
 	arg_9_0:BindCfgUI()
+
+	arg_9_0.sectionImage_.immediate = true
 end
 
 function var_0_0.AddListeners(arg_10_0)
@@ -150,172 +150,297 @@ function var_0_0.AddListeners(arg_10_0)
 			arg_10_0:OnClickBtn()
 		end
 	end)
+	arg_10_0:AddBtnListener(arg_10_0.battleBtn2_, nil, function()
+		local var_12_0 = arg_10_0.stageID_
+		local var_12_1 = ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_VITALITY)
+		local var_12_2 = BattleStageTools.GetStageCfg(arg_10_0.stageType_, arg_10_0.stageID_)
+
+		if arg_10_0.lock_ then
+			ShowTips(arg_10_0.lockTips_)
+		elseif type(var_12_2.extra_cost) == "table" and var_12_2.extra_cost[1] then
+			local var_12_3 = var_12_2.extra_cost[1]
+
+			if arg_10_0.cost_ > ItemTools.getItemNum(var_12_2.extra_cost[1]) then
+				arg_10_0:PopCurrencyWindow()
+			else
+				arg_10_0:OnClickBtn()
+			end
+		elseif var_12_1 < arg_10_0.cost_ * arg_10_0.multiple_ then
+			if CurrencyData:GetFatigueBuyTimes() < GameSetting.fatigue_max_buy_time.value[1] or hasVitalityProp() then
+				JumpTools.OpenPopUp("currencyBuyFatigue", arg_10_0.params_, ViewConst.SYSTEM_ID.BUY_FATIGUE)
+			else
+				ShowTips("ERROR_ITEM_NOT_ENOUGH_FATIGUE")
+			end
+		else
+			arg_10_0:OnClickBtn()
+		end
+	end)
+	arg_10_0:AddBtnListener(arg_10_0.rushBtn_, nil, function()
+		if arg_10_0.params_.chapterID and arg_10_0.params_.chapterID > 0 then
+			if ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_VITALITY) < arg_10_0.cost_ * arg_10_0.multiple_ then
+				if CurrencyData:GetFatigueBuyTimes() < GameSetting.fatigue_max_buy_time.value[1] or hasVitalityProp() then
+					JumpTools.OpenPopUp("currencyBuyFatigue", arg_10_0.params_, ViewConst.SYSTEM_ID.BUY_FATIGUE)
+				else
+					ShowTips("ERROR_ITEM_NOT_ENOUGH_FATIGUE")
+				end
+			else
+				local var_13_0 = GameSetting.quick_battle_chapter
+
+				if table.indexof(var_13_0.value, arg_10_0.params_.chapterID) and BattleStageData:GetStageClearTimes(arg_10_0.stageID_) > 0 then
+					if arg_10_0.params_.chapterID == 203 then
+						JumpTools.Back()
+					end
+
+					JumpTools.OpenPopUp("operationRushPopView", {
+						chapterID = arg_10_0.params_.chapterID,
+						stageID = arg_10_0.stageID_,
+						stageType = arg_10_0.stageType_,
+						multiple = arg_10_0.multiple_,
+						activityID = arg_10_0.activityID_
+					})
+				end
+			end
+		elseif arg_10_0.params_.activityId then
+			local var_13_1 = GameSetting.quick_battle_type.value
+			local var_13_2 = GameSetting.quick_battle_mode.value
+			local var_13_3 = ActivityPtRouletteStageCfg.get_id_list_by_activity_id[arg_10_0.params_.activityId]
+			local var_13_4 = 0
+			local var_13_5 = 0
+
+			if var_13_3 and type(var_13_3) == "table" then
+				for iter_13_0, iter_13_1 in ipairs(var_13_3) do
+					if ActivityPtRouletteStageCfg[iter_13_1].stage_id == arg_10_0.params_.section then
+						var_13_4 = ActivityPtRouletteStageCfg[iter_13_1].mode
+						var_13_5 = ActivityPtRouletteStageCfg[iter_13_1].cost[2]
+
+						break
+					end
+				end
+
+				if ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_VITALITY) < var_13_5 * arg_10_0.multiple_ then
+					if CurrencyData:GetFatigueBuyTimes() < GameSetting.fatigue_max_buy_time.value[1] or hasVitalityProp() then
+						JumpTools.OpenPopUp("currencyBuyFatigue", arg_10_0.params_, ViewConst.SYSTEM_ID.BUY_FATIGUE)
+					else
+						ShowTips("ERROR_ITEM_NOT_ENOUGH_FATIGUE")
+					end
+				elseif table.indexof(var_13_1, arg_10_0.stageType_) and var_13_4 > 0 and table.indexof(var_13_2, var_13_4) then
+					local var_13_6 = ActivityPtScrollData:GetClearList(arg_10_0.params_.activityId)
+
+					if table.indexof(var_13_6, arg_10_0.params_.section) then
+						JumpTools.OpenPopUp("operationRushPopView", {
+							chapterID = 0,
+							stageID = arg_10_0.stageID_,
+							stageType = arg_10_0.stageType_,
+							multiple = arg_10_0.multiple_,
+							activityID = arg_10_0.activityID_,
+							cost = var_13_5
+						})
+					else
+						ShowTips("QUICK_BATTLE_UNLOCK")
+					end
+				end
+			end
+		end
+	end)
+	arg_10_0:AddBtnListener(arg_10_0.noRushBtn_, nil, function()
+		ShowTips("QUICK_BATTLE_UNLOCK")
+	end)
 end
 
-function var_0_0.PopCurrencyWindow(arg_12_0)
-	local var_12_0 = arg_12_0.params_.chapterID
-	local var_12_1 = ChapterCfg[var_12_0].cost_exchange_id
+function var_0_0.PopCurrencyWindow(arg_15_0)
+	local var_15_0 = arg_15_0.params_.chapterID
+	local var_15_1 = ChapterCfg[var_15_0].cost_exchange_id
 
-	if var_12_1 == 0 then
+	if var_15_1 == 0 then
 		return
 	end
 
-	local var_12_2 = BattleStageTools.GetStageCfg(arg_12_0.stageType_, arg_12_0.stageID_)
-	local var_12_3 = ItemExchangeCfg[var_12_1]
+	local var_15_2 = BattleStageTools.GetStageCfg(arg_15_0.stageType_, arg_15_0.stageID_)
+	local var_15_3 = ItemExchangeCfg[var_15_1]
 
-	if ActivityTools.GetActivityStatus(var_12_3.activity_id) == 1 then
+	if ActivityTools.GetActivityStatus(var_15_3.activity_id) == 1 then
 		ShowMessageBox({
 			title = GetTips("PROMPT"),
-			content = string.format(GetTips("CURRENCY_NO_ENOUGH_ADN_GOT"), ItemTools.getItemName(var_12_2.extra_cost[1]), ActivityCfg[var_12_3.activity_id].remark),
+			content = string.format(GetTips("CURRENCY_NO_ENOUGH_ADN_GOT"), ItemTools.getItemName(var_15_2.extra_cost[1]), ActivityCfg[var_15_3.activity_id].remark),
 			OkCallback = function()
-				JumpTools.JumpToPage2(var_12_3.jump_system)
+				JumpTools.JumpToPage2(var_15_3.jump_system)
 			end
 		})
 	else
 		JumpTools.OpenPageByJump("itemExchange", {
-			exchangeID = var_12_1,
-			maxCnt = ChapterTools.GetUnclearStageCnt(var_12_0)
+			exchangeID = var_15_1,
+			maxCnt = ChapterTools.GetUnclearStageCnt(var_15_0)
 		})
 	end
 end
 
-function var_0_0.OnCurrencyChange(arg_14_0)
-	arg_14_0:RefreshData()
-	arg_14_0:RefreshCost()
+function var_0_0.OnCurrencyChange(arg_17_0)
+	arg_17_0:RefreshData()
+	arg_17_0:RefreshCost()
 end
 
-function var_0_0.RefreshData(arg_15_0)
-	arg_15_0.lock_ = false
-	arg_15_0.lockTips_ = ""
-	arg_15_0.cost_ = 0
-	arg_15_0.isFirstClear_ = false
-	arg_15_0.dropLibID_ = 0
+function var_0_0.RefreshData(arg_18_0)
+	arg_18_0.lock_ = false
+	arg_18_0.lockTips_ = ""
+	arg_18_0.cost_ = 0
+	arg_18_0.isFirstClear_ = false
+	arg_18_0.dropLibID_ = 0
 end
 
-function var_0_0.RefreshUI(arg_16_0)
-	arg_16_0:RefreshStageInfo()
-	arg_16_0:RefreshReward()
-	arg_16_0:RefreshCost()
-	arg_16_0:RefreshBtn()
+function var_0_0.RefreshUI(arg_19_0)
+	arg_19_0:RefreshStageInfo()
+	arg_19_0:RefreshReward()
+	arg_19_0:RefreshCost()
+	arg_19_0:RefreshBtn()
 
-	if arg_16_0.lock_ then
-		arg_16_0.btnLockText_.text = arg_16_0.lockTips_
+	if arg_19_0.lock_ then
+		arg_19_0.btnLockText_.text = arg_19_0.lockTips_
 
-		arg_16_0.btnController_:SetSelectedState("true")
-	else
-		arg_16_0.btnController_:SetSelectedState("false")
-	end
-end
+		arg_19_0.btnController_:SetSelectedState("true")
+	elseif arg_19_0.params_.chapterID then
+		local var_19_0 = GameSetting.quick_battle_chapter
 
-function var_0_0.RefreshTitleDesc(arg_17_0)
-	if arg_17_0.stageType_ == BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_BASE_TEACHING or arg_17_0.stageType_ == BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_HERO_TEACHING then
-		arg_17_0.titleDesController_:SetSelectedState("state1")
-	elseif arg_17_0.stageType_ == BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_PLOT then
-		arg_17_0.titleDesController_:SetSelectedState("state0")
-	else
-		arg_17_0.titleDesController_:SetSelectedState("state2")
-	end
-end
-
-function var_0_0.HaveCostCntFlag(arg_18_0)
-	local var_18_0 = arg_18_0.cost_ * arg_18_0.multiple_
-	local var_18_1 = BattleStageTools.GetStageCfg(arg_18_0.stageType_, arg_18_0.stageID_)
-	local var_18_2 = true
-
-	if type(var_18_1.extra_cost) == "table" and var_18_1.extra_cost[1] then
-		local var_18_3 = var_18_1.extra_cost[1]
-
-		arg_18_0.costImage_.sprite = ItemTools.getItemLittleSprite(var_18_3)
-
-		if var_18_0 > ItemTools.getItemNum(var_18_1.extra_cost[1]) then
-			var_18_2 = false
+		if table.indexof(var_19_0.value, arg_19_0.params_.chapterID) then
+			if BattleStageData:GetStageClearTimes(arg_19_0.stageID_) > 0 then
+				arg_19_0.btnController_:SetSelectedState("rush")
+			else
+				arg_19_0.btnController_:SetSelectedState("cantrush")
+			end
+		else
+			arg_19_0.btnController_:SetSelectedState("false")
 		end
 	else
-		arg_18_0.costImage_.sprite = ItemTools.getItemLittleSprite(CurrencyConst.CURRENCY_TYPE_VITALITY)
+		arg_19_0.btnController_:SetSelectedState("false")
+	end
+end
 
-		if var_18_0 > ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_VITALITY) then
-			var_18_2 = false
+function var_0_0.RefreshTitleDesc(arg_20_0)
+	if arg_20_0.stageType_ == BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_BASE_TEACHING or arg_20_0.stageType_ == BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_HERO_TEACHING then
+		arg_20_0.titleDesController_:SetSelectedState("state1")
+	elseif arg_20_0.stageType_ == BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_PLOT then
+		arg_20_0.titleDesController_:SetSelectedState("state0")
+	else
+		arg_20_0.titleDesController_:SetSelectedState("state2")
+	end
+end
+
+function var_0_0.HaveCostCntFlag(arg_21_0)
+	local var_21_0 = arg_21_0.cost_ * arg_21_0.multiple_
+	local var_21_1 = BattleStageTools.GetStageCfg(arg_21_0.stageType_, arg_21_0.stageID_)
+	local var_21_2 = true
+
+	if type(var_21_1.extra_cost) == "table" and var_21_1.extra_cost[1] then
+		local var_21_3 = var_21_1.extra_cost[1]
+
+		arg_21_0.costImage_.sprite = ItemTools.getItemLittleSprite(var_21_3)
+
+		if var_21_0 > ItemTools.getItemNum(var_21_1.extra_cost[1]) then
+			var_21_2 = false
 		end
-	end
-
-	return var_18_2
-end
-
-function var_0_0.RefreshCost(arg_19_0)
-	local var_19_0 = arg_19_0:HaveCostCntFlag()
-	local var_19_1 = arg_19_0.cost_ * arg_19_0.multiple_
-
-	if var_19_0 then
-		arg_19_0.costText_.text = string.format("<color=#%s>%s</color>", ColorConst.BLACK_HEX, var_19_1)
 	else
-		arg_19_0.costText_.text = string.format("<color=#%s>%s</color>", ColorConst.RED_HEX, var_19_1)
-	end
-end
+		arg_21_0.costImage_.sprite = ItemTools.getItemLittleSprite(CurrencyConst.CURRENCY_TYPE_VITALITY)
 
-function var_0_0.RefreshBtn(arg_20_0)
-	local var_20_0 = arg_20_0:HaveCostCntFlag()
-
-	arg_20_0.btnController_:SetSelectedState(tostring(arg_20_0.lock_))
-end
-
-function var_0_0.RefreshStageInfo(arg_21_0)
-	local var_21_0 = BattleStageTools.GetStageCfg(arg_21_0.stageType_, arg_21_0.stageID_)
-
-	if arg_21_0.oldCfgID_ ~= var_21_0.id then
-		local var_21_1, var_21_2 = BattleStageTools.GetChapterSectionIndex(arg_21_0.stageType_, arg_21_0.stageID_)
-
-		arg_21_0.sectionText_.text = string.format("%s-%s", GetI18NText(var_21_1), GetI18NText(var_21_2))
-		arg_21_0.sectionName_.text = GetI18NText(var_21_0.name)
-		arg_21_0.sectionImage_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_21_0.background_1))
-		arg_21_0.oldCfgID_ = var_21_0.id
-	end
-end
-
-function var_0_0.RefreshReward(arg_22_0)
-	local var_22_0 = arg_22_0.dropLibID_
-
-	arg_22_0.rewardList_ = getRewardFromDropCfg(var_22_0, arg_22_0.isFirstClear_)
-
-	local var_22_1 = arg_22_0.rewardList_
-
-	if arg_22_0.isFirstClear_ and DropCfg[var_22_0] and #DropCfg[var_22_0].base_drop >= 1 then
-		arg_22_0.rewardTitleText_.text = GetTips("FIRST_DROP")
-	else
-		arg_22_0.rewardTitleText_.text = GetTips("MAYBE_DROP")
-	end
-
-	if #var_22_1 > 0 then
-		arg_22_0.hideDropPanelController_:SetSelectedState("false")
-	else
-		arg_22_0.hideDropPanelController_:SetSelectedState("true")
-	end
-
-	arg_22_0.uiList_:StartScroll(#var_22_1)
-end
-
-function var_0_0.RefreshRewardItem(arg_23_0, arg_23_1, arg_23_2)
-	local var_23_0 = arg_23_0.rewardList_[arg_23_1]
-	local var_23_1
-
-	if var_23_0 then
-		var_23_1 = rewardToItemTemplate(var_23_0)
-		var_23_1.number = arg_23_0.isFirstClear_ and var_23_0.num or nil
-
-		function var_23_1.clickFun(arg_24_0)
-			ShowPopItem(POP_ITEM, arg_24_0)
+		if var_21_0 > ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_VITALITY) then
+			var_21_2 = false
 		end
 	end
 
-	arg_23_2:SetData(var_23_1)
+	return var_21_2
 end
 
-function var_0_0.Dispose(arg_25_0)
-	arg_25_0.uiList_:Dispose()
+function var_0_0.RefreshCost(arg_22_0)
+	local var_22_0 = arg_22_0:HaveCostCntFlag()
+	local var_22_1 = arg_22_0.cost_ * arg_22_0.multiple_
 
-	arg_25_0.uiList_ = nil
-	arg_25_0.currencyUpdateHandle_ = nil
+	if var_22_0 then
+		arg_22_0.costText_.text = string.format("<color=#%s>%s</color>", ColorConst.BLACK_HEX, var_22_1)
+	else
+		arg_22_0.costText_.text = string.format("<color=#%s>%s</color>", ColorConst.RED_HEX, var_22_1)
+	end
+end
 
-	var_0_0.super.Dispose(arg_25_0)
+function var_0_0.RefreshBtn(arg_23_0)
+	local var_23_0 = arg_23_0:HaveCostCntFlag()
+
+	if arg_23_0.lock_ then
+		arg_23_0.btnLockText_.text = arg_23_0.lockTips_
+
+		arg_23_0.btnController_:SetSelectedState("true")
+	elseif arg_23_0.params_.chapterID then
+		local var_23_1 = GameSetting.quick_battle_chapter
+
+		if table.indexof(var_23_1.value, arg_23_0.params_.chapterID) then
+			if BattleStageData:GetStageClearTimes(arg_23_0.stageID_) > 0 then
+				arg_23_0.btnController_:SetSelectedState("rush")
+			else
+				arg_23_0.btnController_:SetSelectedState("cantrush")
+			end
+		else
+			arg_23_0.btnController_:SetSelectedState("false")
+		end
+	else
+		arg_23_0.btnController_:SetSelectedState("false")
+	end
+end
+
+function var_0_0.RefreshStageInfo(arg_24_0)
+	local var_24_0 = BattleStageTools.GetStageCfg(arg_24_0.stageType_, arg_24_0.stageID_)
+
+	if arg_24_0.oldCfgID_ ~= var_24_0.id then
+		local var_24_1, var_24_2 = BattleStageTools.GetChapterSectionIndex(arg_24_0.stageType_, arg_24_0.stageID_)
+
+		arg_24_0.sectionText_.text = string.format("%s-%s", GetI18NText(var_24_1), GetI18NText(var_24_2))
+		arg_24_0.sectionName_.text = GetI18NText(var_24_0.name)
+		arg_24_0.sectionImage_.spriteSync = string.format("%s%s", SpritePathCfg.Stage.path, var_24_0.background_1)
+		arg_24_0.oldCfgID_ = var_24_0.id
+	end
+end
+
+function var_0_0.RefreshReward(arg_25_0)
+	local var_25_0 = arg_25_0.dropLibID_
+
+	arg_25_0.rewardList_ = getRewardFromDropCfg(var_25_0, arg_25_0.isFirstClear_)
+
+	local var_25_1 = arg_25_0.rewardList_
+
+	if arg_25_0.isFirstClear_ and DropCfg[var_25_0] and #DropCfg[var_25_0].base_drop >= 1 then
+		arg_25_0.rewardTitleText_.text = GetTips("FIRST_DROP")
+	else
+		arg_25_0.rewardTitleText_.text = GetTips("MAYBE_DROP")
+	end
+
+	if #var_25_1 > 0 then
+		arg_25_0.hideDropPanelController_:SetSelectedState("false")
+	else
+		arg_25_0.hideDropPanelController_:SetSelectedState("true")
+	end
+
+	arg_25_0.uiList_:StartScroll(#var_25_1)
+end
+
+function var_0_0.RefreshRewardItem(arg_26_0, arg_26_1, arg_26_2)
+	local var_26_0 = arg_26_0.rewardList_[arg_26_1]
+	local var_26_1
+
+	if var_26_0 then
+		var_26_1 = rewardToItemTemplate(var_26_0)
+		var_26_1.number = arg_26_0.isFirstClear_ and var_26_0.num or nil
+
+		function var_26_1.clickFun(arg_27_0)
+			ShowPopItem(POP_ITEM, arg_27_0)
+		end
+	end
+
+	arg_26_2:SetData(var_26_1)
+end
+
+function var_0_0.Dispose(arg_28_0)
+	arg_28_0.uiList_:Dispose()
+
+	arg_28_0.uiList_ = nil
+	arg_28_0.currencyUpdateHandle_ = nil
+
+	var_0_0.super.Dispose(arg_28_0)
 end
 
 return var_0_0

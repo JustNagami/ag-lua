@@ -117,13 +117,13 @@ end
 function var_0_0.StepPlayLoopMovie(arg_13_0, arg_13_1)
 	local var_13_0 = arg_13_1 * 2 - 1
 
-	arg_13_0.criplayer_:SetFile(nil, arg_13_0.moviePath_[var_13_0], CriMana.Player.SetMode.Append)
-	arg_13_0.criplayer_:SetFile(nil, arg_13_0.moviePath_[var_13_0 + 1], CriMana.Player.SetMode.AppendRepeatedly)
+	SetFile(arg_13_0.criplayer_, nil, arg_13_0.moviePath_[var_13_0], CriMana.Player.SetMode.Append)
+	SetFile(arg_13_0.criplayer_, nil, arg_13_0.moviePath_[var_13_0 + 1], CriMana.Player.SetMode.AppendRepeatedly)
 	arg_13_0.criManaMovieController_:Play()
 end
 
 function var_0_0.StepPlayExitMovie(arg_14_0)
-	arg_14_0.criplayer_:SetFile(nil, arg_14_0.moviePath_[5], CriMana.Player.SetMode.New)
+	SetFile(arg_14_0.criplayer_, nil, arg_14_0.moviePath_[5], CriMana.Player.SetMode.New)
 	arg_14_0.criManaMovieController_:Play()
 end
 

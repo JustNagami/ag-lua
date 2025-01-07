@@ -21,4 +21,8 @@ function var_0_0.GetStateKey(arg_5_0)
 	return arg_5_0.state_key
 end
 
+function var_0_0.CanPlayNextAni(arg_6_0)
+	return false
+end
+
 return var_0_0

@@ -4,7 +4,7 @@
 		arg_1_1.frameCnt_ = 0
 		arg_1_1.state_ = "playing"
 		arg_1_1.curTalkId_ = 710660201
-		arg_1_1.duration_ = 1.033399999999
+		arg_1_1.duration_ = 1.03
 
 		SetActive(arg_1_1.tipsGo_, false)
 
@@ -74,6 +74,7 @@
 				SetActive(arg_1_1.hideBtn_, false)
 				SetActive(arg_1_1.narrativeGo_, true)
 				SetActive(arg_1_1.lastBtn_.gameObject, false)
+				SetActive(arg_1_1.bgmBtn_.gameObject, false)
 
 				local var_4_17 = arg_1_0.narr_chapter_text
 				local var_4_18 = arg_1_0.narr_time_text
@@ -146,7 +147,7 @@
 		arg_5_1.frameCnt_ = 0
 		arg_5_1.state_ = "playing"
 		arg_5_1.curTalkId_ = 710660202
-		arg_5_1.duration_ = 0.999999999999
+		arg_5_1.duration_ = 1
 
 		SetActive(arg_5_1.tipsGo_, false)
 
@@ -204,7 +205,7 @@
 		arg_9_1.frameCnt_ = 0
 		arg_9_1.state_ = "playing"
 		arg_9_1.curTalkId_ = 710660203
-		arg_9_1.duration_ = 0.999999999999
+		arg_9_1.duration_ = 1
 
 		SetActive(arg_9_1.tipsGo_, false)
 
@@ -262,7 +263,7 @@
 		arg_13_1.frameCnt_ = 0
 		arg_13_1.state_ = "playing"
 		arg_13_1.curTalkId_ = 710660204
-		arg_13_1.duration_ = 0.999999999999
+		arg_13_1.duration_ = 1
 
 		SetActive(arg_13_1.tipsGo_, false)
 
@@ -320,7 +321,7 @@
 		arg_17_1.frameCnt_ = 0
 		arg_17_1.state_ = "playing"
 		arg_17_1.curTalkId_ = 710660205
-		arg_17_1.duration_ = 0.999999999999
+		arg_17_1.duration_ = 1
 
 		SetActive(arg_17_1.tipsGo_, false)
 
@@ -378,7 +379,7 @@
 		arg_21_1.frameCnt_ = 0
 		arg_21_1.state_ = "playing"
 		arg_21_1.curTalkId_ = 710660206
-		arg_21_1.duration_ = 0.999999999999
+		arg_21_1.duration_ = 1
 
 		SetActive(arg_21_1.tipsGo_, false)
 
@@ -436,7 +437,7 @@
 		arg_25_1.frameCnt_ = 0
 		arg_25_1.state_ = "playing"
 		arg_25_1.curTalkId_ = 710660207
-		arg_25_1.duration_ = 0.999999999999
+		arg_25_1.duration_ = 1
 
 		SetActive(arg_25_1.tipsGo_, false)
 
@@ -494,7 +495,7 @@
 		arg_29_1.frameCnt_ = 0
 		arg_29_1.state_ = "playing"
 		arg_29_1.curTalkId_ = 710660208
-		arg_29_1.duration_ = 0.999999999999
+		arg_29_1.duration_ = 1
 
 		SetActive(arg_29_1.tipsGo_, false)
 
@@ -552,7 +553,7 @@
 		arg_33_1.frameCnt_ = 0
 		arg_33_1.state_ = "playing"
 		arg_33_1.curTalkId_ = 710660209
-		arg_33_1.duration_ = 0.999999999999
+		arg_33_1.duration_ = 1
 
 		SetActive(arg_33_1.tipsGo_, false)
 
@@ -610,7 +611,7 @@
 		arg_37_1.frameCnt_ = 0
 		arg_37_1.state_ = "playing"
 		arg_37_1.curTalkId_ = 710660210
-		arg_37_1.duration_ = 0.999999999999
+		arg_37_1.duration_ = 1
 
 		SetActive(arg_37_1.tipsGo_, false)
 
@@ -668,7 +669,7 @@
 		arg_41_1.frameCnt_ = 0
 		arg_41_1.state_ = "playing"
 		arg_41_1.curTalkId_ = 710660211
-		arg_41_1.duration_ = 0.999999999999
+		arg_41_1.duration_ = 1
 
 		SetActive(arg_41_1.tipsGo_, false)
 
@@ -726,7 +727,7 @@
 		arg_45_1.frameCnt_ = 0
 		arg_45_1.state_ = "playing"
 		arg_45_1.curTalkId_ = 710660212
-		arg_45_1.duration_ = 0.999999999999
+		arg_45_1.duration_ = 1
 
 		SetActive(arg_45_1.tipsGo_, false)
 
@@ -784,7 +785,7 @@
 		arg_49_1.frameCnt_ = 0
 		arg_49_1.state_ = "playing"
 		arg_49_1.curTalkId_ = 710660213
-		arg_49_1.duration_ = 0.999999999999
+		arg_49_1.duration_ = 1
 
 		SetActive(arg_49_1.tipsGo_, false)
 
@@ -842,7 +843,7 @@
 		arg_53_1.frameCnt_ = 0
 		arg_53_1.state_ = "playing"
 		arg_53_1.curTalkId_ = 710660214
-		arg_53_1.duration_ = 0.999999999999
+		arg_53_1.duration_ = 1
 
 		SetActive(arg_53_1.tipsGo_, false)
 
@@ -900,7 +901,7 @@
 		arg_57_1.frameCnt_ = 0
 		arg_57_1.state_ = "playing"
 		arg_57_1.curTalkId_ = 710660215
-		arg_57_1.duration_ = 0.999999999999
+		arg_57_1.duration_ = 1
 
 		SetActive(arg_57_1.tipsGo_, false)
 
@@ -958,7 +959,7 @@
 		arg_61_1.frameCnt_ = 0
 		arg_61_1.state_ = "playing"
 		arg_61_1.curTalkId_ = 710660216
-		arg_61_1.duration_ = 0.999999999999
+		arg_61_1.duration_ = 1
 
 		SetActive(arg_61_1.tipsGo_, false)
 
@@ -1016,7 +1017,7 @@
 		arg_65_1.frameCnt_ = 0
 		arg_65_1.state_ = "playing"
 		arg_65_1.curTalkId_ = 710660217
-		arg_65_1.duration_ = 0.999999999999
+		arg_65_1.duration_ = 1
 
 		SetActive(arg_65_1.tipsGo_, false)
 
@@ -1074,7 +1075,7 @@
 		arg_69_1.frameCnt_ = 0
 		arg_69_1.state_ = "playing"
 		arg_69_1.curTalkId_ = 710660218
-		arg_69_1.duration_ = 1.033399999999
+		arg_69_1.duration_ = 1.03
 
 		SetActive(arg_69_1.tipsGo_, false)
 

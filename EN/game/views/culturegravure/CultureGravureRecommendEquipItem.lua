@@ -56,7 +56,8 @@ function var_0_0.SetData(arg_8_0, arg_8_1, arg_8_2, arg_8_3, arg_8_4)
 end
 
 function var_0_0.RefreshUI(arg_9_0)
-	SetSpriteWithoutAtlasAsync(arg_9_0.icon_, SpritePathCfg.EquipIcon_s.path .. ItemCfg[arg_9_0.id_].icon)
+	arg_9_0.icon_.spriteAsync = SpritePathCfg.EquipIcon_s.path .. ItemCfg[arg_9_0.id_].icon
+
 	arg_9_0.positionController_:SetSelectedState(arg_9_0.cfg_.pos)
 	arg_9_0.starController_:SetSelectedState(arg_9_0.cfg_.starlevel)
 	arg_9_0.btnController_:SetSelectedState(arg_9_0.state_)

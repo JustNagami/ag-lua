@@ -3,6 +3,7 @@ local var_0_1 = {
 	OnlySkin = 1,
 	OnlyDlc = 2,
 	SpecialShow = 3,
+	FakeData = 5,
 	BuyDlcAndSkin = 4
 }
 
@@ -66,12 +67,21 @@ function var_0_0.AddUIListener(arg_5_0)
 			local var_10_8, var_10_9, var_10_10 = ShopTools.GetPrice(arg_5_0.dlcID)
 
 			var_10_3 = var_10_8
+		elseif arg_5_0.showModel == var_0_1.FakeData then
+			var_10_4 = {
+				arg_5_0.dlcID
+			}
 		end
 
 		local function var_10_11(arg_11_0)
 			if ShopTools.IsRMB(arg_11_0[1]) then
 				PayAction.RequestGSPay(ShopTools.GetCostId(arg_5_0.goodID), 1, arg_5_0.shopID, arg_11_0[1])
 			elseif arg_5_0.showModel == var_0_1.BuyDlcAndSkin then
+				ShopTools.ConfirmBuySkin(arg_11_0, {
+					1,
+					1
+				})
+			elseif arg_5_0.showModel == var_0_1.FakeData then
 				ShopTools.ConfirmBuySkin(arg_11_0, {
 					1,
 					1
@@ -227,7 +237,9 @@ function var_0_0.UpdateData(arg_24_0)
 		end
 	end
 
-	if ShopTools.HaveSkin(arg_24_0.skinID) then
+	if arg_24_0.goodID <= 0 then
+		arg_24_0.showModel = var_0_1.FakeData
+	elseif ShopTools.HaveSkin(arg_24_0.skinID) then
 		arg_24_0.showModel = var_0_1.OnlyDlc
 		arg_24_0.goodID = arg_24_0.dlcID
 	end
@@ -295,7 +307,7 @@ function var_0_0.UpdatePrice(arg_25_0)
 
 		SetActive(arg_25_0.kuoGo_, true)
 	else
-		if arg_25_0.showModel == var_0_1.OnlyDlc then
+		if arg_25_0.showModel == var_0_1.OnlyDlc or arg_25_0.showModel == var_0_1.FakeData then
 			local var_25_13
 
 			var_25_0, var_25_1, var_25_13 = ShopTools.GetPrice(arg_25_0.dlcID)
@@ -324,6 +336,8 @@ function var_0_0.UpdatePrice(arg_25_0)
 		else
 			if arg_25_0.showModel == var_0_1.OnlyDlc then
 				arg_25_0.buyDesc_.text = string.format(GetTips("BUY_SKIN_TIPS_TICKET"), ItemTools.getItemName(arg_25_0.shopDlcCfg.cost_id), var_25_0, ItemTools.getItemName(var_25_3.id), ItemTools.getItemName(arg_25_0.itemDlcCfg.id))
+			elseif arg_25_0.showModel == var_0_1.FakeData then
+				arg_25_0.buyDesc_.text = string.format(GetTips("BUY_SKIN_DLC_SINGLE_TIPS"), ItemTools.getItemName(arg_25_0.shopDlcCfg.cost_id), var_25_0, ItemTools.getItemName(var_25_3.id), ItemTools.getItemName(arg_25_0.itemDlcCfg.id))
 			else
 				arg_25_0.buyDesc_.text = string.format(GetTips("BUY_SKIN_TIPS_TICKET"), ItemTools.getItemName(arg_25_0.shopCfg.cost_id), var_25_0, ItemTools.getItemName(var_25_3.id), ItemTools.getItemName(arg_25_0.shopCfg.description))
 			end
@@ -359,7 +373,7 @@ function var_0_0.UpdatePrice(arg_25_0)
 end
 
 function var_0_0.UpdateTitle(arg_26_0)
-	if arg_26_0.showModel == var_0_1.OnlyDlc or arg_26_0.showModel == var_0_1.BuyDlcAndSkin then
+	if arg_26_0.showModel == var_0_1.OnlyDlc or arg_26_0.showModel == var_0_1.BuyDlcAndSkin or arg_26_0.showModel == var_0_1.FakeData then
 		arg_26_0.textnameText_.text = ItemTools.getItemName(arg_26_0.itemDlcCfg.id)
 		arg_26_0.textinfoText_.text = string.format(GetTips("BUY_SKIN_CHANGE"), ItemTools.getItemName(arg_26_0.itemDlcCfg.id)) .. ItemTools.getItemDesc(arg_26_0.itemDlcCfg.id)
 	else
@@ -372,7 +386,7 @@ function var_0_0.UpdateView(arg_27_0)
 	arg_27_0:UpdatePrice()
 	arg_27_0:UpdateTitle()
 	SetActive(arg_27_0.dlcItemLimit_, false)
-	arg_27_0.dlcselController:SetSelectedState((arg_27_0.showModel == var_0_1.OnlyDlc or arg_27_0.showModel == var_0_1.BuyDlcAndSkin) and "true" or "false")
+	arg_27_0.dlcselController:SetSelectedState((arg_27_0.showModel == var_0_1.OnlyDlc or arg_27_0.showModel == var_0_1.BuyDlcAndSkin or arg_27_0.showModel == var_0_1.FakeData) and "true" or "false")
 	SetActive(arg_27_0.giveBackGo_, #arg_27_0.shopCfg.give_back_list ~= 0 and arg_27_0.showModel ~= var_0_1.OnlyDlc)
 	SetActive(arg_27_0.skinRemainGo_, false)
 
@@ -385,7 +399,13 @@ function var_0_0.UpdateView(arg_27_0)
 		arg_27_0.dlcIconController:SetSelectedState("false")
 	end
 
-	if arg_27_0.dlcID and ShopTools.CheckDlcCanBuy(arg_27_0.dlcID) and ShopTools.CheckDlcPurchased(arg_27_0.dlcID) == false and arg_27_0.shopDlcCfg.shop_id == arg_27_0.shopID then
+	if arg_27_0.showModel == var_0_1.FakeData then
+		arg_27_0.littleSkinIcon_.sprite = getSpriteViaConfig("HeroLittleIcon", arg_27_0.skinCfg.picture_id)
+		arg_27_0.dlcItemNameTxt_.text = string.format(ItemTools.getItemName(arg_27_0.desCfg.id))
+		arg_27_0.dlcIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. arg_27_0.skinCfg.id .. "_character")
+
+		arg_27_0.dlcbtnController:SetSelectedState("Events")
+	elseif arg_27_0.dlcID and ShopTools.CheckDlcCanBuy(arg_27_0.dlcID) and ShopTools.CheckDlcPurchased(arg_27_0.dlcID) == false and arg_27_0.shopDlcCfg.shop_id == arg_27_0.shopID then
 		if arg_27_0.showModel == var_0_1.BuyDlcAndSkin then
 			arg_27_0.dlcbtnController:SetSelectedState("buy")
 		else

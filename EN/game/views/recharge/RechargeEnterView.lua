@@ -104,14 +104,8 @@ end
 function var_0_0.UpdateBar(arg_13_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR,
-		HOME_BAR,
-		CurrencyConst.CURRENCY_TYPE_VITALITY,
-		CurrencyConst.CURRENCY_TYPE_GOLD,
-		CurrencyConst.CURRENCY_TYPE_DIAMOND
+		HOME_BAR
 	})
-	manager.windowBar:SetBarCanAdd(CurrencyConst.CURRENCY_TYPE_VITALITY, true)
-	manager.windowBar:SetBarCanAdd(CurrencyConst.CURRENCY_TYPE_GOLD, true)
-	manager.windowBar:SetBarCanAdd(CurrencyConst.CURRENCY_TYPE_DIAMOND, true)
 end
 
 function var_0_0.OnEnter(arg_14_0)

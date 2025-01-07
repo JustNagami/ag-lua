@@ -1,10 +1,11 @@
 ﻿local var_0_0 = class("GameKeyOperationView", ReduxView)
 local var_0_1 = require("cjson")
 local var_0_2 = {
-	PS = "PS4Layout",
+	KeyMouse = "KeyMouseLayout",
 	Keyboard = "KeyboardLayout",
-	Xbox = "XboxLayout",
-	Other = "OtherLayout"
+	Other = "OtherLayout",
+	PS = "PS4Layout",
+	Xbox = "XboxLayout"
 }
 local var_0_3 = {
 	MiniGame = 7,
@@ -41,6 +42,8 @@ function var_0_0.Init(arg_3_0)
 	arg_3_0.cursorSensitivity = {}
 	arg_3_0.remapNotice_ = {}
 	arg_3_0.oldRemapNotice_ = {}
+
+	arg_3_0:InitDropdownData()
 end
 
 function var_0_0.InitUI(arg_4_0)
@@ -66,12 +69,15 @@ function var_0_0.InitUI(arg_4_0)
 
 	arg_4_0.remapToggleCon_ = arg_4_0.remapToggleConEx_:GetController("default0")
 	arg_4_0.gamepadToggleCon_ = arg_4_0.gamepadToggleConEx_:GetController("default0")
+	arg_4_0.autoHideToggleCon_ = arg_4_0.autoHideToggleConEx_:GetController("default0")
 	arg_4_0.hidTypeCon_ = arg_4_0.controllerEx_:GetController("hidType")
 end
 
 function var_0_0.AddUIListener(arg_6_0)
 	arg_6_0:AddBtnListener(arg_6_0.keyboardBtn_, nil, function()
-		arg_6_0:SwitchToHID(HID_TYPES.Keyboard)
+		local var_7_0 = LuaHidTools.GetPlayerSelectKeyboard()
+
+		arg_6_0:SwitchToHID(var_7_0 == 0 and HID_TYPES.KeyMouse or var_7_0)
 	end)
 	arg_6_0:AddBtnListener(arg_6_0.gamepadBtn_, nil, function(arg_8_0)
 		local var_8_0 = LuaHidTools.GetPlayerSelectJoystick()
@@ -83,31 +89,41 @@ function var_0_0.AddUIListener(arg_6_0)
 
 		LuaHidTools.OpenGamepadSelectWin(var_9_0)
 	end)
-	arg_6_0:AddToggleListener(arg_6_0.gamepadToggle_, function(arg_10_0)
-		arg_6_0.gamepadEnable_ = arg_10_0
+	arg_6_0:AddToggleListener(arg_6_0.keyboardDropdown_, function(arg_10_0)
+		arg_6_0:SwitchToHID(arg_10_0 == 0 and HID_TYPES.Keyboard or HID_TYPES.KeyMouse)
+		LuaHidTools.SetPlayerSelectKeyboard(arg_6_0.gamepadType_)
+		arg_6_0:RefreshControlTypeName()
+	end)
+	arg_6_0:AddToggleListener(arg_6_0.gamepadToggle_, function(arg_11_0)
+		arg_6_0.gamepadEnable_ = arg_11_0
 
-		arg_6_0.gamepadToggleCon_:SetSelectedState(arg_10_0 and "on" or "off")
+		arg_6_0.gamepadToggleCon_:SetSelectedState(arg_11_0 and "on" or "off")
 		arg_6_0:RefreshSlider()
 		arg_6_0:UpdateBindingVisibility()
 
-		if arg_10_0 then
+		if arg_11_0 then
 			arg_6_0:RebuildUILayout()
 		else
 			arg_6_0.remapNoticeToggle_.isOn = false
 		end
 	end)
-	arg_6_0:AddToggleListener(arg_6_0.remapNoticeToggle_, function(arg_11_0)
-		arg_6_0:SetRemapNotice(arg_11_0)
+	arg_6_0:AddToggleListener(arg_6_0.remapNoticeToggle_, function(arg_12_0)
+		arg_6_0:SetRemapNotice(arg_12_0)
+	end)
+	arg_6_0:AddToggleListener(arg_6_0.autoHideToggle_, function(arg_13_0)
+		LuaForCursor.SetKeyboardAutoHide(arg_13_0)
+		arg_6_0.autoHideToggleCon_:SetSelectedState(arg_13_0 and "on" or "off")
+		arg_6_0:RefreshHIDToggles()
 	end)
 	arg_6_0:AddBtnListener(arg_6_0.battleUiAdjBtn_, nil, function()
 		arg_6_0:Go("battleUIAdjust", {})
 	end)
-	arg_6_0.cursorSenSlider_.onValueChanged:AddListener(function(arg_13_0)
-		arg_6_0.cursorSensitivity[arg_6_0.gamepadType_] = arg_13_0
+	arg_6_0.cursorSenSlider_.onValueChanged:AddListener(function(arg_15_0)
+		arg_6_0.cursorSensitivity[arg_6_0.gamepadType_] = arg_15_0
 
-		local var_13_0 = arg_6_0:GetLayoutName(arg_6_0.gamepadType_)
+		local var_15_0 = arg_6_0:GetLayoutName(arg_6_0.gamepadType_)
 
-		LuaForGamepad.SetCursorSensitivity(var_13_0, LuaForGamepad.GetDefaultLayoutFileName(var_13_0), arg_13_0)
+		LuaForGamepad.SetCursorSensitivity(var_15_0, LuaForGamepad.GetDefaultLayoutFileName(var_15_0), arg_15_0)
 	end)
 	arg_6_0:AddPressingByTimeListener(arg_6_0.cursorSenSubGo_, 3, 0.5, 0.5, function()
 		if arg_6_0.cursorSenSlider_.value > 0 then
@@ -129,239 +145,262 @@ function var_0_0.AddUIListener(arg_6_0)
 	end)
 end
 
-function var_0_0.OnEnter(arg_16_0)
-	arg_16_0.keysChangeInfo_ = {}
-	arg_16_0.gamepadType_ = LuaForGamepad.GetGamepadType()
-	arg_16_0.layoutName_ = arg_16_0:GetLayoutName(arg_16_0.gamepadType_)
-	arg_16_0.gamepadEnable_ = arg_16_0:IsJoystickEnable()
-	arg_16_0.oldGamepadEnable_ = arg_16_0.gamepadEnable_
-	arg_16_0.oldGamepadType_ = arg_16_0.gamepadType_
-	arg_16_0.oldLayoutJson_ = LuaForGamepad.GetLayoutJson(arg_16_0.layoutName_, LuaForGamepad.GetDefaultLayoutFileName(arg_16_0.layoutName_))
-	arg_16_0.oldCursorSensitivity = {}
+function var_0_0.OnEnter(arg_18_0)
+	arg_18_0.keysChangeInfo_ = {}
+	arg_18_0.gamepadType_ = LuaForGamepad.GetGamepadType()
 
-	arg_16_0:RefreshHIDToggles()
-	arg_16_0:RefreshUI()
-end
-
-function var_0_0.OnExit(arg_17_0)
-	for iter_17_0, iter_17_1 in pairs(arg_17_0.bindings_) do
-		iter_17_1:OnExit()
+	if arg_18_0.gamepadType_ == HID_TYPES.None then
+		arg_18_0.gamepadType_ = HID_TYPES.Keyboard
 	end
 
-	arg_17_0:StopRebuildTimer()
+	arg_18_0.layoutName_ = arg_18_0:GetLayoutName(arg_18_0.gamepadType_)
+	arg_18_0.gamepadEnable_ = arg_18_0:IsJoystickEnable()
+	arg_18_0.oldGamepadEnable_ = arg_18_0.gamepadEnable_
+	arg_18_0.oldGamepadType_ = arg_18_0.gamepadType_
+	arg_18_0.oldLayoutJson_ = LuaForGamepad.GetLayoutJson(arg_18_0.layoutName_, LuaForGamepad.GetDefaultLayoutFileName(arg_18_0.layoutName_))
+	arg_18_0.oldCursorSensitivity = {}
+
+	arg_18_0:RefreshHIDToggles()
+	arg_18_0:RefreshUI()
 end
 
-function var_0_0.Dispose(arg_18_0)
-	for iter_18_0, iter_18_1 in pairs(arg_18_0.bindings_) do
-		iter_18_1:Dispose()
+function var_0_0.InitDropdownData(arg_19_0)
+	arg_19_0.keyboardDropdown_.options:Clear()
+
+	local var_19_0 = {
+		"KEYBOARD_CONTROL_MODE_1",
+		"KEYBOARD_CONTROL_MODE_2"
+	}
+
+	for iter_19_0, iter_19_1 in ipairs(var_19_0) do
+		arg_19_0.keyboardDropdown_.options:Add(UnityEngine.UI.Dropdown.OptionData.New(GetTips(iter_19_1), nil))
 	end
 
-	var_0_0.super.Dispose(arg_18_0)
+	arg_19_0.keyboardDropdown_:RefreshShownValue()
+
+	local var_19_1 = LuaHidTools.GetPlayerSelectKeyboard()
+
+	arg_19_0.keyboardDropdown_.value = (var_19_1 == HID_TYPES.Keyboard and 1 or 2) - 1
 end
 
-function var_0_0.RefreshUI(arg_19_0)
-	arg_19_0:RefreshBattleUIName()
-	arg_19_0:RefreshGamepadName()
-	arg_19_0:RefreshRemapNoticeToggle()
-end
-
-function var_0_0.RefreshBindingUI(arg_20_0)
-	local var_20_0 = LuaForGamepad.GetLayoutControlGroups(arg_20_0.layoutName_)
-
-	arg_20_0.controlGroupsData_ = var_0_1.decode(var_20_0)
-
-	arg_20_0:ApplyTmpChanges()
-
-	for iter_20_0, iter_20_1 in ipairs(arg_20_0.controlGroupsData_.groups) do
-		local var_20_1 = ""
-		local var_20_2 = arg_20_0.bindings_[iter_20_1.controlType]
-
-		var_20_2:SetData(arg_20_0.layoutName_, var_20_1, iter_20_1, arg_20_0.gamepadType_)
-		var_20_2:RefreshUI()
+function var_0_0.OnExit(arg_20_0)
+	for iter_20_0, iter_20_1 in pairs(arg_20_0.bindings_) do
+		iter_20_1:OnExit()
 	end
 
-	arg_20_0:RebuildUILayout()
+	arg_20_0:StopRebuildTimer()
 end
 
-function var_0_0.StopRebuildTimer(arg_21_0)
-	if arg_21_0.timerRebuild_ then
-		arg_21_0.timerRebuild_:Stop()
+function var_0_0.Dispose(arg_21_0)
+	for iter_21_0, iter_21_1 in pairs(arg_21_0.bindings_) do
+		iter_21_1:Dispose()
+	end
 
-		arg_21_0.timerRebuild_ = nil
+	var_0_0.super.Dispose(arg_21_0)
+end
+
+function var_0_0.RefreshUI(arg_22_0)
+	arg_22_0:RefreshBattleUIName()
+	arg_22_0:RefreshControlTypeName()
+	arg_22_0:RefreshRemapNoticeToggle()
+end
+
+function var_0_0.RefreshBindingUI(arg_23_0)
+	local var_23_0 = LuaForGamepad.GetLayoutControlGroups(arg_23_0.layoutName_)
+
+	arg_23_0.controlGroupsData_ = var_0_1.decode(var_23_0)
+
+	arg_23_0:ApplyTmpChanges()
+
+	for iter_23_0, iter_23_1 in ipairs(arg_23_0.controlGroupsData_.groups) do
+		local var_23_1 = ""
+		local var_23_2 = arg_23_0.bindings_[iter_23_1.controlType]
+
+		var_23_2:SetData(arg_23_0.layoutName_, var_23_1, iter_23_1, arg_23_0.gamepadType_)
+		var_23_2:RefreshUI()
+	end
+
+	arg_23_0:RebuildUILayout()
+end
+
+function var_0_0.StopRebuildTimer(arg_24_0)
+	if arg_24_0.timerRebuild_ then
+		arg_24_0.timerRebuild_:Stop()
+
+		arg_24_0.timerRebuild_ = nil
 	end
 end
 
-function var_0_0.ApplyTmpChanges(arg_22_0)
-	if #arg_22_0.keysChangeInfo_ <= 0 then
+function var_0_0.ApplyTmpChanges(arg_25_0)
+	if #arg_25_0.keysChangeInfo_ <= 0 then
 		return
 	end
 
-	local var_22_0 = {}
+	local var_25_0 = {}
 
-	for iter_22_0, iter_22_1 in ipairs(arg_22_0.controlGroupsData_.groups) do
-		local var_22_1 = {}
+	for iter_25_0, iter_25_1 in ipairs(arg_25_0.controlGroupsData_.groups) do
+		local var_25_1 = {}
 
-		for iter_22_2, iter_22_3 in ipairs(iter_22_1.items) do
-			var_22_1[iter_22_3.buttonInt] = iter_22_3
+		for iter_25_2, iter_25_3 in ipairs(iter_25_1.items) do
+			var_25_1[iter_25_3.buttonInt] = iter_25_3
 		end
 
-		var_22_0[iter_22_1.controlType] = var_22_1
+		var_25_0[iter_25_1.controlType] = var_25_1
 	end
 
-	for iter_22_4, iter_22_5 in ipairs(arg_22_0.keysChangeInfo_) do
-		if iter_22_5.layoutName == arg_22_0.layoutName_ then
-			local var_22_2 = var_22_0[iter_22_5.controlType]
+	for iter_25_4, iter_25_5 in ipairs(arg_25_0.keysChangeInfo_) do
+		if iter_25_5.layoutName == arg_25_0.layoutName_ then
+			local var_25_2 = var_25_0[iter_25_5.controlType]
 
-			if var_22_2 then
-				local var_22_3 = var_22_2[iter_22_5.buttonInt]
+			if var_25_2 then
+				local var_25_3 = var_25_2[iter_25_5.buttonInt]
 
-				if var_22_3 then
-					var_22_3.keyName = iter_22_5.keyName
+				if var_25_3 then
+					var_25_3.keyName = iter_25_5.keyName
 				end
 			end
 		end
 	end
 end
 
-function var_0_0.RebuildUILayout(arg_23_0)
-	arg_23_0:StopRebuildTimer()
+function var_0_0.RebuildUILayout(arg_26_0)
+	arg_26_0:StopRebuildTimer()
 
-	arg_23_0.timerData_counter = 0
-	arg_23_0.timerRebuild_ = FrameTimer.New(function()
-		LayoutRebuilder.ForceRebuildLayoutImmediate(arg_23_0.contentTrans_)
+	arg_26_0.timerData_counter = 0
+	arg_26_0.timerRebuild_ = FrameTimer.New(function()
+		LayoutRebuilder.ForceRebuildLayoutImmediate(arg_26_0.contentTrans_)
 
-		arg_23_0.timerData_counter = arg_23_0.timerData_counter + 1
+		arg_26_0.timerData_counter = arg_26_0.timerData_counter + 1
 
-		if arg_23_0.timerData_counter == 3 then
-			arg_23_0:StopRebuildTimer()
+		if arg_26_0.timerData_counter == 3 then
+			arg_26_0:StopRebuildTimer()
 		end
 	end, 1, 3)
 
-	arg_23_0.timerRebuild_:Start()
+	arg_26_0.timerRebuild_:Start()
 end
 
-function var_0_0.RefreshHIDToggles(arg_25_0)
-	arg_25_0:SwitchToHID(arg_25_0.gamepadType_)
+function var_0_0.RefreshHIDToggles(arg_28_0)
+	arg_28_0:SwitchToHID(arg_28_0.gamepadType_)
 
-	arg_25_0.gamepadToggle_.isOn = arg_25_0.gamepadEnable_
+	arg_28_0.gamepadToggle_.isOn = arg_28_0.gamepadEnable_
+	arg_28_0.autoHideToggle_.isOn = LuaForCursor.GetKeyboardAutoHide()
 end
 
-function var_0_0.RefreshSlider(arg_26_0)
-	local var_26_0 = arg_26_0.gamepadType_ == HID_TYPES.Xbox or arg_26_0.gamepadType_ == HID_TYPES.PS4
+function var_0_0.RefreshSlider(arg_29_0)
+	local var_29_0 = arg_29_0.gamepadType_ == HID_TYPES.Xbox or arg_29_0.gamepadType_ == HID_TYPES.PS4
 
-	SetActive(arg_26_0.cursorSenGo_, var_26_0 and arg_26_0.gamepadEnable_)
+	SetActive(arg_29_0.cursorSenGo_, var_29_0 and arg_29_0.gamepadEnable_)
 
-	if not var_26_0 then
+	if not var_29_0 then
 		return
 	end
 
-	if arg_26_0.oldCursorSensitivity[arg_26_0.gamepadType_] == nil then
-		local var_26_1 = LuaForGamepad.GetCursorSensitivity(arg_26_0.layoutName_, LuaForGamepad.GetDefaultLayoutFileName(arg_26_0.layoutName_))
+	if arg_29_0.oldCursorSensitivity[arg_29_0.gamepadType_] == nil then
+		local var_29_1 = LuaForGamepad.GetCursorSensitivity(arg_29_0.layoutName_, LuaForGamepad.GetDefaultLayoutFileName(arg_29_0.layoutName_))
 
-		arg_26_0.oldCursorSensitivity[arg_26_0.gamepadType_] = var_26_1
+		arg_29_0.oldCursorSensitivity[arg_29_0.gamepadType_] = var_29_1
 	end
 
-	if arg_26_0.cursorSensitivity[arg_26_0.gamepadType_] == nil then
-		arg_26_0.cursorSensitivity[arg_26_0.gamepadType_] = arg_26_0.oldCursorSensitivity[arg_26_0.gamepadType_]
+	if arg_29_0.cursorSensitivity[arg_29_0.gamepadType_] == nil then
+		arg_29_0.cursorSensitivity[arg_29_0.gamepadType_] = arg_29_0.oldCursorSensitivity[arg_29_0.gamepadType_]
 	end
 
-	arg_26_0.cursorSenSlider_.value = arg_26_0.cursorSensitivity[arg_26_0.gamepadType_]
+	arg_29_0.cursorSenSlider_.value = arg_29_0.cursorSensitivity[arg_29_0.gamepadType_]
 end
 
-function var_0_0.SwitchToHID(arg_27_0, arg_27_1)
-	if arg_27_1 == HID_TYPES.Keyboard then
-		arg_27_0.hidTypeCon_:SetSelectedState("keyboard")
-	elseif arg_27_1 == HID_TYPES.Xbox then
-		arg_27_0.hidTypeCon_:SetSelectedState("gamepad")
-	elseif arg_27_1 == HID_TYPES.PS4 then
-		arg_27_0.hidTypeCon_:SetSelectedState("gamepad")
+function var_0_0.SwitchToHID(arg_30_0, arg_30_1)
+	if arg_30_1 == HID_TYPES.Keyboard or arg_30_1 == HID_TYPES.KeyMouse then
+		local var_30_0 = GameToSDK.IsEditorOrPcPlatform()
+
+		arg_30_0.hidTypeCon_:SetSelectedState(var_30_0 and "keyboard" or "keyboard_mobile")
+	elseif arg_30_1 == HID_TYPES.Xbox or arg_30_1 == HID_TYPES.PS4 then
+		arg_30_0.hidTypeCon_:SetSelectedState("gamepad")
 	else
-		arg_27_0.hidTypeCon_:SetSelectedState("none")
+		arg_30_0.hidTypeCon_:SetSelectedState("none")
 	end
 
-	arg_27_0:SetHidType(arg_27_1)
-	arg_27_0:RefreshSlider()
-	arg_27_0:RefreshRemapNoticeToggle()
-	arg_27_0:RefreshBindingUI()
-	arg_27_0:UpdateBindingVisibility()
+	arg_30_0:SetHidType(arg_30_1)
+	arg_30_0:RefreshSlider()
+	arg_30_0:RefreshRemapNoticeToggle()
+	arg_30_0:RefreshBindingUI()
+	arg_30_0:UpdateBindingVisibility()
 end
 
-function var_0_0.SwitchBindingVisibility(arg_28_0, arg_28_1)
-	for iter_28_0, iter_28_1 in pairs(arg_28_0.bindings_) do
-		if arg_28_1 then
-			local var_28_0 = arg_28_0.controlGroupsData_.groups[iter_28_0]
+function var_0_0.SwitchBindingVisibility(arg_31_0, arg_31_1)
+	for iter_31_0, iter_31_1 in pairs(arg_31_0.bindings_) do
+		if arg_31_1 then
+			local var_31_0 = arg_31_0.controlGroupsData_.groups[iter_31_0]
 
-			SetActive(iter_28_1.gameObject_, var_28_0 and #var_28_0.items > 0)
+			SetActive(iter_31_1.gameObject_, var_31_0 and #var_31_0.items > 0)
 		else
-			SetActive(iter_28_1.gameObject_, false)
+			SetActive(iter_31_1.gameObject_, false)
 		end
 	end
 end
 
-function var_0_0.UpdateBindingVisibility(arg_29_0)
-	local var_29_0 = arg_29_0.gamepadType_
+function var_0_0.UpdateBindingVisibility(arg_32_0)
+	local var_32_0 = arg_32_0.gamepadType_
 
-	if var_29_0 == HID_TYPES.Keyboard then
-		arg_29_0:SwitchBindingVisibility(true)
-		SetActive(arg_29_0.remapNoticeGo_, true)
-	elseif var_29_0 == HID_TYPES.Xbox then
-		arg_29_0:SwitchBindingVisibility(arg_29_0.gamepadEnable_)
-		SetActive(arg_29_0.gamepadGo_, arg_29_0.gamepadEnable_)
-		SetActive(arg_29_0.remapNoticeGo_, arg_29_0.gamepadEnable_)
-	elseif var_29_0 == HID_TYPES.PS4 then
-		arg_29_0:SwitchBindingVisibility(arg_29_0.gamepadEnable_)
-		SetActive(arg_29_0.gamepadGo_, arg_29_0.gamepadEnable_)
-		SetActive(arg_29_0.remapNoticeGo_, arg_29_0.gamepadEnable_)
+	SetActive(arg_32_0.autoHideGo_, var_32_0 == HID_TYPES.Keyboard)
+
+	if var_32_0 == HID_TYPES.Keyboard or var_32_0 == HID_TYPES.KeyMouse then
+		arg_32_0:SwitchBindingVisibility(true)
+		SetActive(arg_32_0.remapNoticeGo_, true)
+	elseif var_32_0 == HID_TYPES.Xbox or var_32_0 == HID_TYPES.PS4 then
+		arg_32_0:SwitchBindingVisibility(arg_32_0.gamepadEnable_)
+		SetActive(arg_32_0.gamepadGo_, arg_32_0.gamepadEnable_)
+		SetActive(arg_32_0.remapNoticeGo_, arg_32_0.gamepadEnable_)
 	else
-		arg_29_0:SwitchBindingVisibility(false)
+		arg_32_0:SwitchBindingVisibility(false)
 	end
 end
 
-function var_0_0.OnKeyChanged(arg_30_0, arg_30_1, arg_30_2, arg_30_3)
-	local var_30_0 = true
+function var_0_0.OnKeyChanged(arg_33_0, arg_33_1, arg_33_2, arg_33_3)
+	local var_33_0 = true
 
-	for iter_30_0, iter_30_1 in ipairs(arg_30_0.controlGroupsData_.groups) do
-		if iter_30_1.conflictGroup == arg_30_3.conflictGroup then
-			for iter_30_2, iter_30_3 in ipairs(iter_30_1.items) do
-				if iter_30_3.keyName == arg_30_3.keyName and iter_30_3.buttonInt ~= arg_30_3.buttonInt then
-					var_30_0 = false
+	for iter_33_0, iter_33_1 in ipairs(arg_33_0.controlGroupsData_.groups) do
+		if iter_33_1.conflictGroup == arg_33_3.conflictGroup then
+			for iter_33_2, iter_33_3 in ipairs(iter_33_1.items) do
+				if iter_33_3.keyName == arg_33_3.keyName and iter_33_3.buttonInt ~= arg_33_3.buttonInt then
+					var_33_0 = false
 
-					if LuaHidTools.IsOpNotAllow(arg_30_0.gamepadType_, iter_30_3.buttonName) then
-						local var_30_1 = GetTipsF("INPUT_KEY_NOT_ALLOW", GetKeyCodeMappedName(arg_30_3.keyName))
+					if LuaHidTools.IsOpNotAllow(arg_33_0.gamepadType_, iter_33_3.buttonName) then
+						local var_33_1 = GetTipsF("INPUT_KEY_NOT_ALLOW", GetKeyCodeMappedName(arg_33_3.keyName))
 
-						ShowTips(var_30_1)
-						arg_30_2:StartListeningNewKey()
+						ShowTips(var_33_1)
+						arg_33_2:StartListeningNewKey()
 
 						return
 					end
 
-					local function var_30_2(arg_31_0)
-						if not arg_31_0 then
-							arg_30_2:StartListeningNewKey()
+					local function var_33_2(arg_34_0)
+						if not arg_34_0 then
+							arg_33_2:StartListeningNewKey()
 
 							return
 						end
 
-						arg_30_0:AddKeyChangeInfo({
-							conflictGroup = iter_30_1.conflictGroup,
-							controlType = iter_30_1.controlType,
-							layoutName = arg_30_0.layoutName_,
-							buttonInt = iter_30_3.buttonInt,
-							key = arg_30_3.oldKey,
-							keyName = arg_30_3.oldKeyName
+						arg_33_0:AddKeyChangeInfo({
+							conflictGroup = iter_33_1.conflictGroup,
+							controlType = iter_33_1.controlType,
+							layoutName = arg_33_0.layoutName_,
+							buttonInt = iter_33_3.buttonInt,
+							key = arg_33_3.oldKey,
+							keyName = arg_33_3.oldKeyName
 						})
-						arg_30_0:AddKeyChangeInfo(arg_30_3)
-						arg_30_0:RefreshBindingUI()
+						arg_33_0:AddKeyChangeInfo(arg_33_3)
+						arg_33_0:RefreshBindingUI()
 					end
 
 					JumpTools.Back()
-					arg_30_0:Go("gameKeyConflict", {
-						listenCallback = var_30_2,
-						opName = arg_30_3.buttonName,
-						conflictOpName = iter_30_3.buttonName,
-						key = arg_30_3.key,
-						keyName = arg_30_3.keyName,
-						gamepadType = arg_30_0.gamepadType_
+					arg_33_0:Go("gameKeyConflict", {
+						listenCallback = var_33_2,
+						opName = arg_33_3.buttonName,
+						conflictOpName = iter_33_3.buttonName,
+						key = arg_33_3.key,
+						keyName = arg_33_3.keyName,
+						gamepadType = arg_33_0.gamepadType_
 					})
 
 					return
@@ -370,259 +409,291 @@ function var_0_0.OnKeyChanged(arg_30_0, arg_30_1, arg_30_2, arg_30_3)
 		end
 	end
 
-	if var_30_0 then
-		arg_30_0:AddKeyChangeInfo(arg_30_3)
-		arg_30_0:RefreshBindingUI()
+	if var_33_0 then
+		arg_33_0:AddKeyChangeInfo(arg_33_3)
+		arg_33_0:RefreshBindingUI()
 	end
 
 	JumpTools.Back()
 end
 
-function var_0_0.AddKeyChangeInfo(arg_32_0, arg_32_1)
-	arg_32_0:RemoveChangesIf(function(arg_33_0)
-		return arg_33_0.conflictGroup == arg_32_1.conflictGroup and arg_33_0.buttonInt == arg_32_1.buttonInt
+function var_0_0.AddKeyChangeInfo(arg_35_0, arg_35_1)
+	arg_35_0:RemoveChangesIf(function(arg_36_0)
+		return arg_36_0.conflictGroup == arg_35_1.conflictGroup and arg_36_0.buttonInt == arg_35_1.buttonInt
 	end)
-	table.insert(arg_32_0.keysChangeInfo_, arg_32_1)
+	table.insert(arg_35_0.keysChangeInfo_, arg_35_1)
 end
 
-function var_0_0.RemoveChangesIf(arg_34_0, arg_34_1)
-	local var_34_0 = {}
+function var_0_0.RemoveChangesIf(arg_37_0, arg_37_1)
+	local var_37_0 = {}
 
-	for iter_34_0, iter_34_1 in ipairs(arg_34_0.keysChangeInfo_) do
-		if arg_34_1(iter_34_1) then
-			table.insert(var_34_0, iter_34_1)
+	for iter_37_0, iter_37_1 in ipairs(arg_37_0.keysChangeInfo_) do
+		if arg_37_1(iter_37_1) then
+			table.insert(var_37_0, iter_37_1)
 		end
 	end
 
-	for iter_34_2, iter_34_3 in ipairs(var_34_0) do
-		table.removebyvalue(arg_34_0.keysChangeInfo_, iter_34_3)
+	for iter_37_2, iter_37_3 in ipairs(var_37_0) do
+		table.removebyvalue(arg_37_0.keysChangeInfo_, iter_37_3)
 	end
 end
 
-function var_0_0.SaveData(arg_35_0)
-	for iter_35_0, iter_35_1 in ipairs(arg_35_0.keysChangeInfo_) do
-		LuaForGamepad.SetLayoutItem(iter_35_1.layoutName, LuaForGamepad.GetDefaultLayoutFileName(iter_35_1.layoutName), iter_35_1.buttonInt, iter_35_1.key)
+function var_0_0.SaveData(arg_38_0)
+	for iter_38_0, iter_38_1 in ipairs(arg_38_0.keysChangeInfo_) do
+		LuaForGamepad.SetLayoutItem(iter_38_1.layoutName, LuaForGamepad.GetDefaultLayoutFileName(iter_38_1.layoutName), iter_38_1.buttonInt, iter_38_1.key)
 	end
 
-	for iter_35_2, iter_35_3 in pairs(arg_35_0.cursorSensitivity) do
-		local var_35_0 = arg_35_0:GetLayoutName(iter_35_2)
+	for iter_38_2, iter_38_3 in pairs(arg_38_0.cursorSensitivity) do
+		local var_38_0 = arg_38_0:GetLayoutName(iter_38_2)
 
-		LuaForGamepad.SetCursorSensitivity(var_35_0, LuaForGamepad.GetDefaultLayoutFileName(var_35_0), iter_35_3)
+		LuaForGamepad.SetCursorSensitivity(var_38_0, LuaForGamepad.GetDefaultLayoutFileName(var_38_0), iter_38_3)
 	end
 
-	arg_35_0:SendSDK()
+	arg_38_0:SendSDK()
 	LuaForGamepad.ReloadLayout()
 
-	arg_35_0.keysChangeInfo_ = {}
+	arg_38_0.keysChangeInfo_ = {}
 
-	local var_35_1 = arg_35_0:GetRemapNotice()
+	local var_38_1 = arg_38_0:GetRemapNotice()
 
-	arg_35_0.oldGamepadType_ = arg_35_0.gamepadType_
-	arg_35_0.oldLayoutJson_ = LuaForGamepad.GetLayoutJson(arg_35_0.layoutName_, LuaForGamepad.GetDefaultLayoutFileName(arg_35_0.layoutName_))
+	arg_38_0.oldGamepadType_ = arg_38_0.gamepadType_
+	arg_38_0.oldLayoutJson_ = LuaForGamepad.GetLayoutJson(arg_38_0.layoutName_, LuaForGamepad.GetDefaultLayoutFileName(arg_38_0.layoutName_))
 
-	LuaForGamepad.SetDeviceEnable(HID_TYPES.Xbox, arg_35_0.gamepadEnable_)
-	LuaForGamepad.SetDeviceEnable(HID_TYPES.PS4, arg_35_0.gamepadEnable_)
+	LuaForGamepad.SetDeviceEnable(HID_TYPES.Xbox, arg_38_0.gamepadEnable_)
+	LuaForGamepad.SetDeviceEnable(HID_TYPES.PS4, arg_38_0.gamepadEnable_)
 
-	arg_35_0.oldGamepadEnable_ = arg_35_0.gamepadEnable_
-	arg_35_0.cursorSensitivity = {}
-	arg_35_0.oldCursorSensitivity = {}
+	arg_38_0.oldGamepadEnable_ = arg_38_0.gamepadEnable_
+	arg_38_0.cursorSensitivity = {}
+	arg_38_0.oldCursorSensitivity = {}
 
-	arg_35_0:RefreshHIDToggles()
+	arg_38_0:RefreshHIDToggles()
 
-	for iter_35_4, iter_35_5 in pairs(arg_35_0.remapNotice_) do
-		LuaHidTools.SetRemapNotice(iter_35_4, iter_35_5)
+	for iter_38_4, iter_38_5 in pairs(arg_38_0.remapNotice_) do
+		LuaHidTools.SetRemapNotice(iter_38_4, iter_38_5)
 	end
 
-	arg_35_0.remapNotice_ = {}
-	arg_35_0.oldRemapNotice_ = {}
-	arg_35_0.remapNoticeToggle_.isOn = var_35_1
+	arg_38_0.remapNotice_ = {}
+	arg_38_0.oldRemapNotice_ = {}
+	arg_38_0.remapNoticeToggle_.isOn = var_38_1
 
-	arg_35_0:NotifyKeyChange()
+	arg_38_0:NotifyKeyChange()
 end
 
-function var_0_0.RecoverTmpData(arg_36_0)
-	for iter_36_0, iter_36_1 in pairs(arg_36_0.oldCursorSensitivity) do
-		local var_36_0 = arg_36_0:GetLayoutName(iter_36_0)
+function var_0_0.RecoverTmpData(arg_39_0)
+	for iter_39_0, iter_39_1 in pairs(arg_39_0.oldCursorSensitivity) do
+		local var_39_0 = arg_39_0:GetLayoutName(iter_39_0)
 
-		LuaForGamepad.SetCursorSensitivity(var_36_0, LuaForGamepad.GetDefaultLayoutFileName(var_36_0), iter_36_1)
+		LuaForGamepad.SetCursorSensitivity(var_39_0, LuaForGamepad.GetDefaultLayoutFileName(var_39_0), iter_39_1)
 	end
 
-	arg_36_0.keysChangeInfo_ = {}
-	arg_36_0.gamepadType_ = arg_36_0.oldGamepadType_
-	arg_36_0.layoutName_ = arg_36_0:GetLayoutName(arg_36_0.gamepadType_)
-	arg_36_0.gamepadEnable_ = arg_36_0.oldGamepadEnable_
-	arg_36_0.cursorSensitivity = {}
+	arg_39_0.keysChangeInfo_ = {}
+	arg_39_0.gamepadType_ = arg_39_0.oldGamepadType_
+	arg_39_0.layoutName_ = arg_39_0:GetLayoutName(arg_39_0.gamepadType_)
+	arg_39_0.gamepadEnable_ = arg_39_0.oldGamepadEnable_
+	arg_39_0.cursorSensitivity = {}
 
-	arg_36_0:RefreshHIDToggles()
+	arg_39_0:RefreshHIDToggles()
 
-	for iter_36_2, iter_36_3 in pairs(arg_36_0.oldRemapNotice_) do
-		LuaHidTools.SetRemapNotice(iter_36_2, iter_36_3)
+	for iter_39_2, iter_39_3 in pairs(arg_39_0.oldRemapNotice_) do
+		LuaHidTools.SetRemapNotice(iter_39_2, iter_39_3)
 	end
 
-	arg_36_0.remapNotice_ = {}
-	arg_36_0.oldRemapNotice_ = {}
+	arg_39_0.remapNotice_ = {}
+	arg_39_0.oldRemapNotice_ = {}
 
-	arg_36_0:RefreshRemapNoticeToggle()
+	arg_39_0:RefreshRemapNoticeToggle()
 end
 
-function var_0_0.ResetDefaultData(arg_37_0)
-	LuaForGamepad.DeleteLayoutJson(arg_37_0.layoutName_)
+function var_0_0.ResetDefaultData(arg_40_0)
+	LuaForGamepad.DeleteLayoutJson(arg_40_0.layoutName_)
 	LuaForGamepad.ReloadLayout()
 	LuaForGamepad.SetDeviceEnable(HID_TYPES.Xbox, true)
 	LuaForGamepad.SetDeviceEnable(HID_TYPES.PS4, true)
 
-	arg_37_0.gamepadToggle_.isOn = true
-	arg_37_0.keysChangeInfo_ = {}
-	arg_37_0.cursorSensitivity = {}
-	arg_37_0.oldCursorSensitivity = {}
+	arg_40_0.gamepadToggle_.isOn = true
+	arg_40_0.keysChangeInfo_ = {}
+	arg_40_0.cursorSensitivity = {}
+	arg_40_0.oldCursorSensitivity = {}
 
-	arg_37_0:RefreshSlider()
-	arg_37_0:RefreshBindingUI()
+	arg_40_0:RefreshSlider()
+	arg_40_0:RefreshBindingUI()
 
-	arg_37_0.remapNotice_ = {}
-	arg_37_0.oldRemapNotice_ = {}
+	arg_40_0.remapNotice_ = {}
+	arg_40_0.oldRemapNotice_ = {}
 
 	LuaHidTools.ResetRemapNotice()
-	arg_37_0:RefreshRemapNoticeToggle()
-	arg_37_0:NotifyKeyChange()
+	arg_40_0:RefreshRemapNoticeToggle()
+	arg_40_0:NotifyKeyChange()
 end
 
-function var_0_0.CheckDataChange(arg_38_0)
-	local var_38_0 = arg_38_0.cursorSensitivity[HID_TYPES.Xbox] ~= arg_38_0.oldCursorSensitivity[HID_TYPES.Xbox] or arg_38_0.cursorSensitivity[HID_TYPES.PS4] ~= arg_38_0.oldCursorSensitivity[HID_TYPES.PS4]
-	local var_38_1 = arg_38_0.remapNotice_[HID_TYPES.Keyboard] ~= arg_38_0.oldRemapNotice_[HID_TYPES.Keyboard] or arg_38_0.remapNotice_[HID_TYPES.Xbox] ~= arg_38_0.oldRemapNotice_[HID_TYPES.Xbox] or arg_38_0.remapNotice_[HID_TYPES.PS4] ~= arg_38_0.oldRemapNotice_[HID_TYPES.PS4]
+function var_0_0.CheckDataChange(arg_41_0)
+	local var_41_0 = arg_41_0.cursorSensitivity[HID_TYPES.Xbox] ~= arg_41_0.oldCursorSensitivity[HID_TYPES.Xbox] or arg_41_0.cursorSensitivity[HID_TYPES.PS4] ~= arg_41_0.oldCursorSensitivity[HID_TYPES.PS4]
+	local var_41_1 = arg_41_0.remapNotice_[HID_TYPES.Keyboard] ~= arg_41_0.oldRemapNotice_[HID_TYPES.Keyboard] or arg_41_0.remapNotice_[HID_TYPES.KeyMouse] ~= arg_41_0.oldRemapNotice_[HID_TYPES.KeyMouse] or arg_41_0.remapNotice_[HID_TYPES.Xbox] ~= arg_41_0.oldRemapNotice_[HID_TYPES.Xbox] or arg_41_0.remapNotice_[HID_TYPES.PS4] ~= arg_41_0.oldRemapNotice_[HID_TYPES.PS4]
 
-	return #arg_38_0.keysChangeInfo_ > 0 or arg_38_0.gamepadEnable_ ~= arg_38_0.oldGamepadEnable_ or var_38_1 or var_38_0
+	return #arg_41_0.keysChangeInfo_ > 0 or arg_41_0.gamepadEnable_ ~= arg_41_0.oldGamepadEnable_ or var_41_1 or var_41_0
 end
 
-function var_0_0.SetRemapNotice(arg_39_0, arg_39_1)
-	arg_39_0.remapToggleCon_:SetSelectedState(arg_39_1 and "on" or "off")
+function var_0_0.SetRemapNotice(arg_42_0, arg_42_1)
+	arg_42_0.remapToggleCon_:SetSelectedState(arg_42_1 and "on" or "off")
 
-	if arg_39_0.gamepadType_ == HID_TYPES.Xbox or arg_39_0.gamepadType_ == HID_TYPES.PS4 then
-		arg_39_0.remapNotice_[HID_TYPES.Xbox] = arg_39_1
-		arg_39_0.remapNotice_[HID_TYPES.PS4] = arg_39_1
+	if arg_42_0.gamepadType_ == HID_TYPES.Xbox or arg_42_0.gamepadType_ == HID_TYPES.PS4 then
+		arg_42_0.remapNotice_[HID_TYPES.Xbox] = arg_42_1
+		arg_42_0.remapNotice_[HID_TYPES.PS4] = arg_42_1
 
-		LuaHidTools.SetRemapNotice(HID_TYPES.Xbox, arg_39_1)
-		LuaHidTools.SetRemapNotice(HID_TYPES.PS4, arg_39_1)
-	else
-		LuaHidTools.SetRemapNotice(arg_39_0.gamepadType_, arg_39_1)
+		LuaHidTools.SetRemapNotice(HID_TYPES.Xbox, arg_42_1)
+		LuaHidTools.SetRemapNotice(HID_TYPES.PS4, arg_42_1)
+	elseif arg_42_0.gamepadType_ == HID_TYPES.Keyboard or arg_42_0.gamepadType_ == HID_TYPES.KeyMouse then
+		arg_42_0.remapNotice_[HID_TYPES.Keyboard] = arg_42_1
+		arg_42_0.remapNotice_[HID_TYPES.KeyMouse] = arg_42_1
 
-		arg_39_0.remapNotice_[arg_39_0.gamepadType_] = arg_39_1
+		LuaHidTools.SetRemapNotice(HID_TYPES.Keyboard, arg_42_1)
+		LuaHidTools.SetRemapNotice(HID_TYPES.KeyMouse, arg_42_1)
 	end
 end
 
-function var_0_0.GetRemapNotice(arg_40_0)
-	local var_40_0 = LuaHidTools.GetRemapNotice(arg_40_0.gamepadType_)
+function var_0_0.GetRemapNotice(arg_43_0)
+	local var_43_0 = LuaHidTools.GetRemapNotice(arg_43_0.gamepadType_)
 
-	if arg_40_0.oldRemapNotice_[arg_40_0.gamepadType_] == nil then
-		if arg_40_0.gamepadType_ == HID_TYPES.Xbox or arg_40_0.gamepadType_ == HID_TYPES.PS4 then
-			arg_40_0.oldRemapNotice_[HID_TYPES.Xbox] = var_40_0
-			arg_40_0.oldRemapNotice_[HID_TYPES.PS4] = var_40_0
-		else
-			arg_40_0.oldRemapNotice_[arg_40_0.gamepadType_] = var_40_0
+	if arg_43_0.oldRemapNotice_[arg_43_0.gamepadType_] == nil then
+		if arg_43_0.gamepadType_ == HID_TYPES.Xbox or arg_43_0.gamepadType_ == HID_TYPES.PS4 then
+			arg_43_0.oldRemapNotice_[HID_TYPES.Xbox] = var_43_0
+			arg_43_0.oldRemapNotice_[HID_TYPES.PS4] = var_43_0
+		elseif arg_43_0.gamepadType_ == HID_TYPES.Keyboard or arg_43_0.gamepadType_ == HID_TYPES.KeyMouse then
+			arg_43_0.oldRemapNotice_[HID_TYPES.Keyboard] = var_43_0
+			arg_43_0.oldRemapNotice_[HID_TYPES.KeyMouse] = var_43_0
 		end
 	end
 
-	return var_40_0
+	return var_43_0
 end
 
-function var_0_0.RefreshRemapNoticeToggle(arg_41_0)
-	arg_41_0.remapNoticeToggle_.isOn = arg_41_0:GetRemapNotice()
+function var_0_0.RefreshRemapNoticeToggle(arg_44_0)
+	arg_44_0.remapNoticeToggle_.isOn = arg_44_0:GetRemapNotice()
 end
 
-function var_0_0.IsJoystickEnable(arg_42_0)
-	local var_42_0 = LuaHidTools.GetPlayerSelectJoystick()
+function var_0_0.IsJoystickEnable(arg_45_0)
+	local var_45_0 = LuaHidTools.GetPlayerSelectJoystick()
 
-	return LuaForGamepad.IsDeviceEnable(var_42_0)
+	return LuaForGamepad.IsDeviceEnable(var_45_0)
 end
 
-function var_0_0.NotifyKeyChange(arg_43_0)
-	if not arg_43_0.remapNoticeToggle_.isOn then
+function var_0_0.NotifyKeyChange(arg_46_0)
+	if not arg_46_0.remapNoticeToggle_.isOn then
 		return
 	end
 
-	LuaHidTools.SetRemapNotice(arg_43_0.gamepadType_, false)
+	LuaHidTools.SetRemapNotice(arg_46_0.gamepadType_, false)
 	FrameTimer.New(function()
-		LuaHidTools.SetRemapNotice(arg_43_0.gamepadType_, true)
+		LuaHidTools.SetRemapNotice(arg_46_0.gamepadType_, true)
 	end, 1, 1):Start()
 end
 
-function var_0_0.RefreshBattleUIName(arg_45_0)
-	local var_45_0 = ""
-	local var_45_1 = SettingData:GetBattleUISettingData()
+function var_0_0.RefreshBattleUIName(arg_48_0)
+	local var_48_0 = ""
+	local var_48_1 = SettingData:GetBattleUISettingData()
 
-	if var_45_1.battle_ui_cur_type == var_45_1.battle_ui_type_0 then
-		var_45_0 = GetTips("BATTLE_UI_DEFAULT_PRESET")
-	elseif var_45_1.battle_ui_cur_type == var_45_1.battle_ui_type_1 then
-		var_45_0 = string.format(GetTips("BATTLE_UI_SCHEME_INDEX"), 1)
-	elseif var_45_1.battle_ui_cur_type == var_45_1.battle_ui_type_2 then
-		var_45_0 = string.format(GetTips("BATTLE_UI_SCHEME_INDEX"), 2)
-	elseif var_45_1.battle_ui_cur_type == var_45_1.battle_ui_type_3 then
-		var_45_0 = string.format(GetTips("BATTLE_UI_SCHEME_INDEX"), 3)
+	if var_48_1.battle_ui_cur_type == var_48_1.battle_ui_type_0 then
+		var_48_0 = GetTips("BATTLE_UI_DEFAULT_PRESET")
+	elseif var_48_1.battle_ui_cur_type == var_48_1.battle_ui_type_1 then
+		var_48_0 = string.format(GetTips("BATTLE_UI_SCHEME_INDEX"), 1)
+	elseif var_48_1.battle_ui_cur_type == var_48_1.battle_ui_type_2 then
+		var_48_0 = string.format(GetTips("BATTLE_UI_SCHEME_INDEX"), 2)
+	elseif var_48_1.battle_ui_cur_type == var_48_1.battle_ui_type_3 then
+		var_48_0 = string.format(GetTips("BATTLE_UI_SCHEME_INDEX"), 3)
 	else
-		var_45_0 = GetTips("BATTLE_UI_DEFAULT_PRESET")
+		var_48_0 = GetTips("BATTLE_UI_DEFAULT_PRESET")
 	end
 
-	arg_45_0.battleUiText_.text = var_45_0
+	arg_48_0.battleUiText_.text = var_48_0
 end
 
-function var_0_0.RefreshGamepadName(arg_46_0)
-	local var_46_0 = LuaHidTools.GetPlayerSelectJoystick() == HID_TYPES.Xbox and 2 or 1
+function var_0_0.RefreshGamepadName(arg_49_0)
+	local var_49_0 = LuaHidTools.GetPlayerSelectJoystick() == HID_TYPES.Xbox and 2 or 1
 
-	arg_46_0.gamepadSelText_.text = GetTips("GAMEPAD_ICON_PATTERN_" .. var_46_0)
+	arg_49_0.gamepadSelText_.text = GetTips("GAMEPAD_ICON_PATTERN_" .. var_49_0)
 end
 
-function var_0_0.OnJoystickTypeSelect(arg_47_0, arg_47_1)
-	arg_47_0:RefreshGamepadName()
-	arg_47_0:SwitchToHID(arg_47_1)
+function var_0_0.RefreshKeyboardName(arg_50_0)
+	local var_50_0
+
+	var_50_0 = LuaHidTools.GetPlayerSelectKeyboard() == HID_TYPES.KeyMouse and 2 or 1
 end
 
-function var_0_0.SetHidType(arg_48_0, arg_48_1)
-	arg_48_0.gamepadType_ = arg_48_1
-	arg_48_0.layoutName_ = arg_48_0:GetLayoutName(arg_48_0.gamepadType_)
+function var_0_0.RefreshControlTypeName(arg_51_0)
+	local var_51_0 = arg_51_0.gamepadType_
+
+	if var_51_0 == HID_TYPES.Keyboard or var_51_0 == HID_TYPES.KeyMouse then
+		arg_51_0:RefreshKeyboardName()
+	elseif var_51_0 == HID_TYPES.Xbox or var_51_0 == HID_TYPES.PS4 then
+		arg_51_0:RefreshGamepadName()
+	end
 end
 
-function var_0_0.GetLayoutName(arg_49_0, arg_49_1)
-	if arg_49_1 == HID_TYPES.Keyboard then
+function var_0_0.OnJoystickTypeSelect(arg_52_0, arg_52_1)
+	arg_52_0:RefreshControlTypeName()
+	arg_52_0:SwitchToHID(arg_52_1)
+end
+
+function var_0_0.SetHidType(arg_53_0, arg_53_1)
+	arg_53_0.gamepadType_ = arg_53_1
+	arg_53_0.layoutName_ = arg_53_0:GetLayoutName(arg_53_0.gamepadType_)
+end
+
+function var_0_0.GetLayoutName(arg_54_0, arg_54_1)
+	if arg_54_1 == HID_TYPES.Keyboard then
 		return var_0_2.Keyboard
-	elseif arg_49_1 == HID_TYPES.Xbox then
+	elseif arg_54_1 == HID_TYPES.KeyMouse then
+		return var_0_2.KeyMouse
+	elseif arg_54_1 == HID_TYPES.Xbox then
 		return var_0_2.Xbox
-	elseif arg_49_1 == HID_TYPES.PS4 then
+	elseif arg_54_1 == HID_TYPES.PS4 then
 		return var_0_2.PS
 	else
 		return var_0_2.Other
 	end
 end
 
-function var_0_0.SendSDK(arg_50_0)
-	local var_50_0 = {}
+function var_0_0.SendSDK(arg_55_0)
+	if not GameToSDK.IsEditorOrPcPlatform() then
+		return
+	end
 
-	for iter_50_0, iter_50_1 in ipairs(arg_50_0.keysChangeInfo_) do
-		local var_50_1 = var_50_0[iter_50_1.layoutName]
+	local var_55_0 = {}
 
-		if not var_50_1 then
-			var_50_1 = {}
-			var_50_0[iter_50_1.layoutName] = var_50_1
+	for iter_55_0, iter_55_1 in ipairs(arg_55_0.keysChangeInfo_) do
+		local var_55_1 = var_55_0[iter_55_1.layoutName]
+
+		if not var_55_1 then
+			var_55_1 = {}
+			var_55_0[iter_55_1.layoutName] = var_55_1
 		end
 
-		table.insert(var_50_1, {
-			buttonType = tostring(iter_50_1.buttonInt),
-			value = iter_50_1.key
+		table.insert(var_55_1, {
+			buttonType = tostring(iter_55_1.buttonInt),
+			value = iter_55_1.key
 		})
 	end
 
-	local var_50_2 = {
+	local var_55_2 = {
 		HID_TYPES.Keyboard,
 		HID_TYPES.Xbox,
-		HID_TYPES.PS4
+		HID_TYPES.PS4,
+		HID_TYPES.KeyMouse
 	}
 
-	for iter_50_2, iter_50_3 in ipairs(var_50_2) do
-		local var_50_3 = var_50_0[arg_50_0:GetLayoutName(iter_50_3)]
+	for iter_55_2, iter_55_3 in ipairs(var_55_2) do
+		local var_55_3 = var_55_0[arg_55_0:GetLayoutName(iter_55_3)]
 
-		if var_50_3 then
+		if var_55_3 then
+			local var_55_4 = iter_55_3
+
+			if var_55_4 > HID_TYPES.Other then
+				var_55_4 = var_55_4 - 1
+			end
+
 			SDKTools.SendMessageToSDK("keymap_setting", {
-				type = iter_50_3,
-				other_arrayobject = var_50_3
+				type = var_55_4,
+				other_arrayobject = var_55_3
 			})
 		end
 	end

@@ -269,7 +269,7 @@
 		arg_7_1.frameCnt_ = 0
 		arg_7_1.state_ = "playing"
 		arg_7_1.curTalkId_ = 115123002
-		arg_7_1.duration_ = 3.433
+		arg_7_1.duration_ = 3.43
 
 		local var_7_0 = {
 			ja = 2.933,
@@ -641,7 +641,7 @@
 		arg_15_1.frameCnt_ = 0
 		arg_15_1.state_ = "playing"
 		arg_15_1.curTalkId_ = 115123004
-		arg_15_1.duration_ = 3.533
+		arg_15_1.duration_ = 3.53
 
 		local var_15_0 = {
 			ja = 3.2,
@@ -1033,6 +1033,9 @@
 
 				arg_23_1.callingController_:SetSelectedState("normal")
 
+				arg_23_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_23_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_26_3 = arg_23_1:GetWordFromCfg(115123006)
 				local var_26_4 = arg_23_1:FormatText(var_26_3.content)
 
@@ -1157,6 +1160,9 @@
 
 				arg_27_1.callingController_:SetSelectedState("normal")
 
+				arg_27_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_27_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_30_3 = arg_27_1:GetWordFromCfg(115123007)
 				local var_30_4 = arg_27_1:FormatText(var_30_3.content)
 
@@ -1225,7 +1231,7 @@
 		arg_31_1.frameCnt_ = 0
 		arg_31_1.state_ = "playing"
 		arg_31_1.curTalkId_ = 115123008
-		arg_31_1.duration_ = 8.266
+		arg_31_1.duration_ = 8.27
 
 		local var_31_0 = {
 			ja = 8.266,
@@ -1280,6 +1286,9 @@
 				arg_31_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_2084")
 
 				arg_31_1.callingController_:SetSelectedState("normal")
+
+				arg_31_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_31_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_34_3 = arg_31_1:GetWordFromCfg(115123008)
 				local var_34_4 = arg_31_1:FormatText(var_34_3.content)
@@ -1405,6 +1414,9 @@
 
 				arg_35_1.callingController_:SetSelectedState("normal")
 
+				arg_35_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_35_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_38_3 = arg_35_1:GetWordFromCfg(115123009)
 				local var_38_4 = arg_35_1:FormatText(var_38_3.content)
 
@@ -1528,6 +1540,9 @@
 				arg_39_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_2084")
 
 				arg_39_1.callingController_:SetSelectedState("normal")
+
+				arg_39_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_39_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_42_3 = arg_39_1:GetWordFromCfg(115123010)
 				local var_42_4 = arg_39_1:FormatText(var_42_3.content)
@@ -1945,7 +1960,7 @@
 		arg_51_1.frameCnt_ = 0
 		arg_51_1.state_ = "playing"
 		arg_51_1.curTalkId_ = 115123013
-		arg_51_1.duration_ = 7.433
+		arg_51_1.duration_ = 7.43
 
 		local var_51_0 = {
 			ja = 4.133,
@@ -2125,7 +2140,7 @@
 		arg_55_1.frameCnt_ = 0
 		arg_55_1.state_ = "playing"
 		arg_55_1.curTalkId_ = 115123014
-		arg_55_1.duration_ = 2.033
+		arg_55_1.duration_ = 2.03
 
 		local var_55_0 = {
 			ja = 1.999999999999,

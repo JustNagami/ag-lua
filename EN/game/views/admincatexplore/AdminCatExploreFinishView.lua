@@ -52,6 +52,10 @@ function var_0_0.AddUIListener(arg_8_0)
 			return
 		end
 
+		if arg_8_0.callBack then
+			arg_8_0.callBack()
+		end
+
 		arg_8_0:Back()
 	end)
 end
@@ -110,12 +114,14 @@ function var_0_0.OnEnter(arg_12_0)
 	arg_12_0.reward = arg_12_0.params_.reward
 	arg_12_0.eventId = arg_12_0.params_.eventId
 	arg_12_0.adminCatID = arg_12_0.params_.adminCatID
+	arg_12_0.callBack = arg_12_0.params_.callBack
 
 	arg_12_0:UpdateView()
 end
 
 function var_0_0.OnExit(arg_13_0)
 	arg_13_0.isClick = nil
+	arg_13_0.callBack = nil
 
 	if arg_13_0.updateTimer_ then
 		arg_13_0.updateTimer_:Stop()

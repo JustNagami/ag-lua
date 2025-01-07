@@ -76,7 +76,7 @@ function var_0_0.RefreshHeroS(arg_2_0)
 
 				arg_2_0.heroImg_[iter_2_1].sprite = getSpriteViaConfig("HeroIcon", var_2_7.picture_id)
 
-				local var_2_8 = StrategyMatrixData:GetHeroData(var_2_1, var_2_0[iter_2_1])
+				local var_2_8 = StrategyMatrixData:GetHeroDataNew(var_2_0[iter_2_1])
 				local var_2_9 = var_2_8:GetHeroHP()
 				local var_2_10 = var_2_8:GetHeroMaxHP()
 

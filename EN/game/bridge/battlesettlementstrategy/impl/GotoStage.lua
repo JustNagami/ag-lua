@@ -74,4 +74,91 @@ function var_0_0.OnGotoPushBoxStage(arg_7_0, arg_7_1)
 	return
 end
 
+function var_0_0.GotoStage(arg_8_0, arg_8_1, arg_8_2, arg_8_3, arg_8_4)
+	local var_8_0, var_8_1 = GetResultReward()
+
+	local function var_8_2()
+		local var_9_0 = {}
+
+		for iter_9_0, iter_9_1 in pairs(var_8_0) do
+			local var_9_1 = ItemCfg[iter_9_1[1]]
+
+			if var_9_1 then
+				if ItemConst.ITEM_TYPE.HERO == var_9_1.type then
+					table.insert(var_9_0, {
+						id = iter_9_1[1]
+					})
+				elseif ItemConst.ITEM_TYPE.WEAPON_SERVANT == var_9_1.type and (not IllustratedData:GetExistServant(iter_9_1[1]) or var_9_1.display_rare > 3) then
+					table.insert(var_9_0, {
+						id = iter_9_1[1]
+					})
+				end
+			end
+		end
+
+		manager.story:RemovePlayer()
+
+		local function var_9_2()
+			JumpTools.OpenPageByJump("/newSettlement", {
+				result = arg_8_1,
+				rewardList = var_8_0,
+				stageData = arg_8_2,
+				starMissionData = arg_8_3,
+				battleResult = arg_8_4
+			})
+			EndBattleLogic(arg_8_1)
+		end
+
+		if #var_9_0 > 0 then
+			local var_9_3 = {
+				doNextHandler = var_9_2,
+				itemList = var_9_0
+			}
+
+			gameContext:Go("obtainView", var_9_3)
+		else
+			var_9_2()
+		end
+	end
+
+	local var_8_3 = arg_8_2:GetType()
+
+	if isSuccess(arg_8_1) then
+		function BattleCallLuaCallBack()
+			if var_8_3 == BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_CHESS then
+				manager.story:CheckChessBattleStory(manager.story.WIN, var_8_2)
+			elseif var_8_3 == BattleConst.STAGE_TYPE_NEW.CHESS_BOARD then
+				local var_11_0 = arg_8_2:GetStageId()
+
+				manager.story:CheckBattleStory(var_11_0, manager.story.WIN, var_8_2, false)
+			else
+				local var_11_1 = arg_8_2:GetStageId()
+
+				manager.story:CheckBattleStory(var_11_1, manager.story.WIN, var_8_2)
+			end
+		end
+	elseif var_8_3 == BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_MYTHIC or var_8_3 == BattleConst.STAGE_TYPE_NEW.MYTHIC_FINAL then
+		function BattleCallLuaCallBack()
+			local var_12_0 = arg_8_2:GetStageId()
+
+			manager.story:CheckBattleStory(var_12_0, manager.story.LOSE, function()
+				JumpTools.OpenPageByJump("/battleMythicFinalFailedView", {
+					stageData = arg_8_2,
+					starMissionData = arg_8_3,
+					battleResult = arg_8_4,
+					isHalfWay_ = arg_8_0.tempData.isHalfWay_
+				})
+				manager.story:RemovePlayer()
+				EndBattleLogic(arg_8_1)
+			end)
+		end
+	elseif var_8_3 == BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_TOWER then
+		local var_8_4 = false
+
+		arg_8_0:GotoBattleFaildRecommend(arg_8_1, arg_8_2, arg_8_3, arg_8_4, var_8_4)
+	else
+		arg_8_0:GotoBattleFaild(arg_8_1, arg_8_2, arg_8_3, arg_8_4)
+	end
+end
+
 return var_0_0

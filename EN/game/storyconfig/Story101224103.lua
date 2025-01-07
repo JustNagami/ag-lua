@@ -95,6 +95,9 @@
 
 				arg_1_1.callingController_:SetSelectedState("normal")
 
+				arg_1_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_1_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_4_10 = arg_1_1:GetWordFromCfg(122413001)
 				local var_4_11 = arg_1_1:FormatText(var_4_10.content)
 
@@ -383,7 +386,7 @@
 		arg_11_1.frameCnt_ = 0
 		arg_11_1.state_ = "playing"
 		arg_11_1.curTalkId_ = 122413003
-		arg_11_1.duration_ = 7.033
+		arg_11_1.duration_ = 7.03
 
 		local var_11_0 = {
 			ja = 6.433,
@@ -465,6 +468,9 @@
 
 				arg_11_1.callingController_:SetSelectedState("normal")
 
+				arg_11_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_11_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_14_9 = arg_11_1:GetWordFromCfg(122413003)
 				local var_14_10 = arg_11_1:FormatText(var_14_9.content)
 
@@ -533,7 +539,7 @@
 		arg_15_1.frameCnt_ = 0
 		arg_15_1.state_ = "playing"
 		arg_15_1.curTalkId_ = 122413004
-		arg_15_1.duration_ = 7.933
+		arg_15_1.duration_ = 7.93
 
 		local var_15_0 = {
 			ja = 7.933,
@@ -685,7 +691,7 @@
 		arg_19_1.frameCnt_ = 0
 		arg_19_1.state_ = "playing"
 		arg_19_1.curTalkId_ = 122413005
-		arg_19_1.duration_ = 3.066
+		arg_19_1.duration_ = 3.07
 
 		local var_19_0 = {
 			ja = 3.066,
@@ -767,6 +773,9 @@
 
 				arg_19_1.callingController_:SetSelectedState("normal")
 
+				arg_19_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_19_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_22_9 = arg_19_1:GetWordFromCfg(122413005)
 				local var_22_10 = arg_19_1:FormatText(var_22_9.content)
 
@@ -835,7 +844,7 @@
 		arg_23_1.frameCnt_ = 0
 		arg_23_1.state_ = "playing"
 		arg_23_1.curTalkId_ = 122413006
-		arg_23_1.duration_ = 12.866
+		arg_23_1.duration_ = 12.87
 
 		local var_23_0 = {
 			ja = 12.866,
@@ -889,6 +898,9 @@
 				arg_23_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1095_1")
 
 				arg_23_1.callingController_:SetSelectedState("normal")
+
+				arg_23_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_23_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_26_3 = arg_23_1:GetWordFromCfg(122413006)
 				local var_26_4 = arg_23_1:FormatText(var_26_3.content)

@@ -1644,7 +1644,7 @@
 		}
 	},
 	[30906] = {
-		letter_send_time_1 = "2025,1,7",
+		letter_send_time_1 = "2026,1,7",
 		mail_id = 630906,
 		letter_title = "0c7796e2fc1eccc467e50e81cb8dff17",
 		letter_belongs = 1076,
@@ -1687,7 +1687,260 @@
 			}
 		}
 	},
+	[31001] = {
+		letter_send_time_1 = "2025,1,26",
+		mail_id = 631001,
+		letter_title = "9e4d5754f6493bae879b5c76ab7a5e24",
+		letter_belongs = 1095,
+		letter_sender_face = 2110951,
+		letter_sender = "4301fb2facfede7f36a49a6a87c2bd8b",
+		letter_desc = "6d6d76567964db8003712c4016914633",
+		id = 31001,
+		reward_item_list = {
+			{
+				50048,
+				10
+			},
+			{
+				40603,
+				2
+			},
+			{
+				20001,
+				1
+			}
+		}
+	},
+	[31002] = {
+		letter_send_time_1 = "2025,1,31",
+		mail_id = 631002,
+		letter_title = "456c909574cccaacf5db5d2c1fea3bc7",
+		letter_belongs = 1042,
+		letter_sender_face = 2110421,
+		letter_sender = "5df2daf8a9a9bb60c519ea279c9a3756",
+		letter_desc = "7fa40f939c10b81d365308e9cf43a56a",
+		id = 31002,
+		reward_item_list = {
+			{
+				50031,
+				10
+			},
+			{
+				40603,
+				3
+			},
+			{
+				40301,
+				100
+			}
+		}
+	},
+	[31003] = {
+		letter_send_time_1 = "2025,2,8",
+		mail_id = 631003,
+		letter_title = "e0185afb6021eeb478b2a17837eeb04f",
+		letter_belongs = 1017,
+		letter_sender_face = 2110171,
+		letter_sender = "2067c2234de18886e7fb9a5b79827a0a",
+		letter_desc = "0065646b3df3c2fef6e1d4bd9d4f5a22",
+		id = 31003,
+		reward_item_list = {
+			{
+				50034,
+				10
+			},
+			{
+				20002,
+				1
+			}
+		}
+	},
+	[31101] = {
+		letter_send_time_1 = "2025,2,21",
+		mail_id = 631101,
+		letter_title = "5ffd9ad7fd5854aeec8dbfc40e53c84d",
+		letter_belongs = 1093,
+		letter_sender_face = 2110931,
+		letter_sender = "ebec68dcfa39cc172e525ed08a6a1c4c",
+		letter_desc = "dc2dd8d851f16d18fbbcbc5518f95235",
+		id = 31101,
+		reward_item_list = {
+			{
+				50015,
+				10
+			},
+			{
+				20002,
+				1
+			}
+		}
+	},
+	[31102] = {
+		letter_send_time_1 = "2025,2,23",
+		mail_id = 631102,
+		letter_title = "45b7358149bc89ca6f50d5d6a3a0cdac",
+		letter_belongs = 1084,
+		letter_sender_face = 2110841,
+		letter_sender = "2978cd101c2a1c86e93941ea5b256003",
+		letter_desc = "3456f9431e246465757336de47f4c8ea",
+		id = 31102,
+		reward_item_list = {
+			{
+				50002,
+				10
+			},
+			{
+				40603,
+				4
+			}
+		}
+	},
+	[31103] = {
+		letter_send_time_1 = "2026,2,27",
+		mail_id = 631103,
+		letter_title = "cd42cda0436cf76c7637fdf0fbedec30",
+		letter_belongs = 1020,
+		letter_sender_face = 2110201,
+		letter_sender = "83dddbe18188c39c45870525e30c39c1",
+		letter_desc = "1243f53250d82866bd7b09f92c210791",
+		id = 31103,
+		reward_item_list = {
+			{
+				50052,
+				10
+			},
+			{
+				40603,
+				2
+			},
+			{
+				20001,
+				1
+			}
+		}
+	},
+	[31104] = {
+		letter_send_time_1 = "2025,3,1",
+		mail_id = 631104,
+		letter_title = "0ce1a92a8396fc959b2ab56c542c84f7",
+		letter_belongs = 1022,
+		letter_sender_face = 2110221,
+		letter_sender = "0da8cffc9e51d5f7ec43927aa33d7c66",
+		letter_desc = "35284ca8fc13ebcfa6b637476537fb22",
+		id = 31104,
+		reward_item_list = {
+			{
+				50051,
+				10
+			},
+			{
+				40603,
+				3
+			},
+			{
+				40301,
+				100
+			}
+		}
+	},
+	[31105] = {
+		letter_send_time_1 = "2026,3,3",
+		mail_id = 631105,
+		letter_title = "6d0623cbc4c29a483d29e8937c5eb840",
+		letter_belongs = 1074,
+		letter_sender_face = 2110741,
+		letter_sender = "10339b3987e8b03a0233133ae71eed41",
+		letter_desc = "9b8e7f734f62d9460158830df5280a1e",
+		id = 31105,
+		reward_item_list = {
+			{
+				50044,
+				10
+			},
+			{
+				20002,
+				1
+			}
+		}
+	},
+	[31106] = {
+		letter_send_time_1 = "2025,3,17",
+		mail_id = 631106,
+		letter_title = "0ae04ebd5b12df1bf434872a2cc1ca16",
+		letter_belongs = 1081,
+		letter_sender_face = 2110811,
+		letter_sender = "56326f486c493d283f32852faa8eb78b",
+		letter_desc = "7aef05b667466d82c6d7d6f6c9e75b1a",
+		id = 31106,
+		reward_item_list = {
+			{
+				50030,
+				10
+			},
+			{
+				40603,
+				2
+			},
+			{
+				20001,
+				1
+			}
+		}
+	},
+	[31107] = {
+		letter_send_time_1 = "2025,3,21",
+		mail_id = 631107,
+		letter_title = "5492578903792c968896430ed01326f7",
+		letter_belongs = 1039,
+		letter_sender_face = 2110391,
+		letter_sender = "8d71bcbd4c82103aeb8d563e9e055ebc",
+		letter_desc = "836008eacbb69067764d57b8a6d4b47d",
+		id = 31107,
+		reward_item_list = {
+			{
+				50007,
+				10
+			},
+			{
+				20002,
+				1
+			}
+		}
+	},
+	[31108] = {
+		letter_send_time_1 = "2025,3,21",
+		mail_id = 631108,
+		letter_title = "47d423bab8e0c6f25cc5bb2cb993e08f",
+		letter_belongs = 1058,
+		letter_sender_face = 2110581,
+		letter_sender = "3e51fe5a8e97152df4282ca8d9ee63b9",
+		letter_desc = "be6f3d6210ed115ab75a8d259d8025f5",
+		id = 31108,
+		reward_item_list = {
+			{
+				50026,
+				10
+			},
+			{
+				40503,
+				10
+			},
+			{
+				20001,
+				1
+			}
+		}
+	},
 	get_id_list_by_letter_belongs = {
+		[1022] = {
+			31104
+		},
+		[1020] = {
+			31103
+		},
+		[1095] = {
+			31001
+		},
 		[1015] = {
 			1059
 		},
@@ -1704,28 +1957,36 @@
 			1047
 		},
 		[1058] = {
-			1040
+			1040,
+			31108
 		},
 		[1039] = {
-			1039
+			1039,
+			31107
 		},
 		[1081] = {
-			1038
+			1038,
+			31106
 		},
 		[1074] = {
-			1037
+			1037,
+			31105
 		},
 		[1084] = {
-			1036
+			1036,
+			31102
 		},
 		[1093] = {
-			1035
+			1035,
+			31101
 		},
 		[1017] = {
-			1034
+			1034,
+			31003
 		},
 		[1042] = {
-			1033
+			1033,
+			31002
 		},
 		[1080] = {
 			1032,
@@ -1931,6 +2192,17 @@
 		30904,
 		30905,
 		30906,
-		30907
+		30907,
+		31001,
+		31002,
+		31003,
+		31101,
+		31102,
+		31103,
+		31104,
+		31105,
+		31106,
+		31107,
+		31108
 	}
 }

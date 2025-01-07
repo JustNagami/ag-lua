@@ -15,6 +15,7 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
+	arg_3_0.iconImg_.immediate = true
 	arg_3_0.controller_ = ControllerUtil.GetController(arg_3_0.transform_, "conName")
 	arg_3_0.raceController_ = ControllerUtil.GetController(arg_3_0.transform_, "race")
 	arg_3_0.rareController_ = ControllerUtil.GetController(arg_3_0.transform_, "rare")
@@ -24,7 +25,7 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1)
 	arg_4_0.info_ = arg_4_1
 	arg_4_0.ID_ = arg_4_1.id
 	arg_4_0.nameText_.text = GetI18NText(arg_4_1.name)
-	arg_4_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/IlluServant/" .. arg_4_0.ID_)
+	arg_4_0.iconImg_.spriteSync = "TextureConfig/WeaponServant/IlluServant/" .. arg_4_0.ID_
 
 	if arg_4_1.isUnlock then
 		arg_4_0.controller_:SetSelectedState("unlock")

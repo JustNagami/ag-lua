@@ -32,12 +32,12 @@
 		},
 		{
 			start = 336.2,
-			content = "那是...",
+			content = "那是…",
 			endTime = 337.9
 		},
 		{
 			start = 362.72,
-			content = "赶.....赶上了吗",
+			content = "赶……赶上了吗",
 			endTime = 364.6
 		},
 		{

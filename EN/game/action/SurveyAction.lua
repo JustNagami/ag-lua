@@ -125,7 +125,9 @@ end
 
 function var_0_0.OnFollowPlatform(arg_13_0, arg_13_1)
 	if isSuccess(arg_13_0.result) then
-		if OperationConst.PLATFORM.BILIBILI == arg_13_1.type then
+		if GameToSDK.IsPCPlatform() then
+			ShowTips("WEIBO_REWARD_SENT")
+		elseif OperationConst.PLATFORM.BILIBILI == arg_13_1.type then
 			SurveyData:CacheFollowTip(GetTips("WEIBO_REWARD_SENT"))
 		elseif OperationConst.PLATFORM.YOUTUBE == arg_13_1.type then
 			SurveyData:CacheFollowTip(GetTips("WEIBO_REWARD_SENT"))
@@ -134,6 +136,8 @@ function var_0_0.OnFollowPlatform(arg_13_0, arg_13_1)
 		end
 	elseif arg_13_0.result == 6904 then
 		ShowTips("ERROR_DISCORD_SUBSCRIB_FAILED")
+	elseif GameToSDK.IsPCPlatform() then
+		ShowTips("ERROR_WEIBO_REWARD_COLLECTED")
 	elseif OperationConst.PLATFORM.BILIBILI == arg_13_1.type then
 		SurveyData:CacheFollowTip(GetTips("ERROR_WEIBO_REWARD_COLLECTED"))
 	elseif OperationConst.PLATFORM.YOUTUBE == arg_13_1.type then

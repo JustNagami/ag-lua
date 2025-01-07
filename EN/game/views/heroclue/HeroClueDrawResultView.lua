@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("HeroClueDrawResultView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return HeroClueTools.GetDrawResultViewUIName(arg_1_0.params_.activtiyID)
+	return HeroClueTools.GetDrawResultViewUIName(arg_1_0.params_.activityID)
 end
 
 function var_0_0.UIParent(arg_2_0)

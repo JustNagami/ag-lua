@@ -4732,7 +4732,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -4779,7 +4779,7 @@
 		custom_line = "",
 		tag = 0,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 60,
@@ -4830,7 +4830,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -4877,7 +4877,7 @@
 		custom_line = "",
 		tag = 0,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 60,
@@ -4928,7 +4928,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -4975,7 +4975,7 @@
 		custom_line = "",
 		tag = 0,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 60,
@@ -5026,7 +5026,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -5073,7 +5073,7 @@
 		custom_line = "",
 		tag = 1,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 60,
@@ -5124,7 +5124,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -5171,7 +5171,7 @@
 		custom_line = "",
 		tag = 1,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 60,
@@ -5222,7 +5222,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -5269,7 +5269,7 @@
 		custom_line = "",
 		tag = 1,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 60,
@@ -7836,7 +7836,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -7880,7 +7880,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -7924,7 +7924,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -7968,7 +7968,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8012,7 +8012,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8056,7 +8056,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8100,7 +8100,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8144,7 +8144,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8188,7 +8188,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8232,7 +8232,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8276,7 +8276,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8320,7 +8320,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8364,7 +8364,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8404,7 +8404,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8448,7 +8448,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8492,7 +8492,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8536,7 +8536,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8580,7 +8580,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8624,7 +8624,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8668,7 +8668,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8712,7 +8712,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8756,7 +8756,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8800,7 +8800,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8844,7 +8844,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8888,7 +8888,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8927,7 +8927,7 @@
 		custom_line = "",
 		tag = 0,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 0,
@@ -8987,7 +8987,7 @@
 		custom_line = "",
 		tag = 0,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 0,
@@ -9012,7 +9012,7 @@
 		},
 		position = {
 			607,
-			-20
+			35
 		},
 		hero_list = {
 			{
@@ -9047,7 +9047,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -9107,7 +9107,7 @@
 		custom_line = "",
 		tag = 0,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 0,
@@ -9167,7 +9167,7 @@
 		custom_line = "",
 		tag = 0,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 0,
@@ -9227,7 +9227,7 @@
 		custom_line = "",
 		tag = 0,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 0,
@@ -9287,7 +9287,7 @@
 		custom_line = "",
 		tag = 0,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 0,
@@ -9347,7 +9347,7 @@
 		custom_line = "",
 		tag = 0,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 0,
@@ -9407,7 +9407,7 @@
 		custom_line = "",
 		tag = 0,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 0,
@@ -9467,7 +9467,7 @@
 		custom_line = "",
 		tag = 0,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 0,
@@ -9527,7 +9527,7 @@
 		custom_line = "",
 		tag = 1,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 0,
@@ -9591,7 +9591,7 @@
 		custom_line = "",
 		tag = 1,
 		hero_exp = 20,
-		level = 30,
+		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 0,
@@ -9655,7 +9655,7 @@
 		custom_line = "",
 		tag = 2,
 		hero_exp = 0,
-		level = 30,
+		level = 1,
 		cost = 0,
 		extra_cost = "",
 		recommend_level = 0,
@@ -11328,6 +11328,1043 @@
 			-1
 		}
 	},
+	[5191001] = {
+		monster_level = 80,
+		name = "eecdfeff2247ecc8ee1d94d45ed164cd",
+		ai_level = 1,
+		hero_list = "",
+		map = "5191001",
+		background_1 = "F10",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "3273e65037fadfd8ca5647001e490e5e",
+		sub_type = 1,
+		custom_line = "",
+		tag = 0,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5191001,
+		need_default_team = 1,
+		next_show_id_list = {
+			5191002
+		},
+		next_unlock_id_list = {
+			5191002
+		},
+		attribute_factor = {
+			1000,
+			1000,
+			27000
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			250,
+			-134
+		},
+		is_revive = {
+			2,
+			100
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[5191002] = {
+		monster_level = 80,
+		name = "ab886848c8c2d1eef120721a39694bb4",
+		ai_level = 1,
+		map = "5191002",
+		background_1 = "F08b",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "638ab8849535fb043513aa4ad0ba7d1b",
+		sub_type = 1,
+		custom_line = "",
+		tag = 0,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5191002,
+		need_default_team = 1,
+		next_show_id_list = {
+			5191003
+		},
+		next_unlock_id_list = {
+			5191003
+		},
+		attribute_factor = {
+			1000,
+			1000,
+			8000
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			607,
+			35
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1022,
+				102202
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[5191003] = {
+		monster_level = 80,
+		name = "10a78f5ad52dc9eff87afbf112da4d6b",
+		ai_level = 1,
+		hero_list = "",
+		map = "5191003",
+		background_1 = "F08b",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "87053d63c8cf967e238784cce7857dcd",
+		sub_type = 1,
+		is_revive = "",
+		custom_line = "",
+		tag = 2,
+		hero_exp = 0,
+		level = 1,
+		cost = 0,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 0,
+		id = 5191003,
+		attribute_factor = "",
+		need_default_team = 1,
+		next_show_id_list = {
+			5191004
+		},
+		next_unlock_id_list = {
+			5191004
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			1000,
+			37
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[5191004] = {
+		monster_level = 80,
+		name = "c25cedb72b705e3b7cfa3de679596612",
+		ai_level = 1,
+		map = "5191004",
+		background_1 = "F10",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "5ba90ededca597a3054af81f02f4ca40",
+		sub_type = 1,
+		custom_line = "",
+		tag = 0,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5191004,
+		need_default_team = 1,
+		next_show_id_list = {
+			5191005
+		},
+		next_unlock_id_list = {
+			5191005
+		},
+		attribute_factor = {
+			1000,
+			1000,
+			8500
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			1400,
+			-46
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1022,
+				102202
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[5191005] = {
+		monster_level = 80,
+		name = "7ba2ad7f46642bd2b07d1b15ef10ba09",
+		ai_level = 1,
+		hero_list = "",
+		map = "5191005",
+		background_1 = "F08b",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "b60f8efa8630029d30a9d47a03b360e7",
+		sub_type = 1,
+		is_revive = "",
+		custom_line = "",
+		tag = 2,
+		hero_exp = 0,
+		level = 1,
+		cost = 0,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 0,
+		id = 5191005,
+		attribute_factor = "",
+		need_default_team = 1,
+		next_show_id_list = {
+			5191006
+		},
+		next_unlock_id_list = {
+			5191006
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			1779,
+			-46
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[5191006] = {
+		monster_level = 80,
+		name = "cf891e8d6bb8616cbe949096d89511a2",
+		ai_level = 1,
+		map = "5191006",
+		background_1 = "F10a",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "5427a35e0925968da21d5cf01856cdc6",
+		sub_type = 1,
+		custom_line = "",
+		tag = 0,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5191006,
+		need_default_team = 1,
+		next_show_id_list = {
+			5191007
+		},
+		next_unlock_id_list = {
+			5191007
+		},
+		attribute_factor = {
+			1000,
+			1000,
+			2700
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			2172,
+			-136
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1022,
+				102202
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[5191007] = {
+		monster_level = 80,
+		name = "40461ce4589ffb3bf51d227783d8893c",
+		ai_level = 1,
+		hero_list = "",
+		map = "5191007",
+		background_1 = "F08a",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "361a4cdabcb674942cf6f6cd16f45429",
+		sub_type = 1,
+		custom_line = "",
+		tag = 0,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5191007,
+		need_default_team = 1,
+		next_show_id_list = {
+			5191008
+		},
+		next_unlock_id_list = {
+			5191008
+		},
+		attribute_factor = {
+			1000,
+			1000,
+			7500
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			2514,
+			35
+		},
+		is_revive = {
+			2,
+			100
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[5191008] = {
+		monster_level = 80,
+		name = "f60ae20aef21b8734f555fb71dacf138",
+		ai_level = 1,
+		hero_list = "",
+		map = "5191008",
+		background_1 = "F08c",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "18464120761601692df3842c6c2a4a0d",
+		sub_type = 1,
+		custom_line = "",
+		tag = 1,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5191008,
+		need_default_team = 1,
+		next_show_id_list = {},
+		next_unlock_id_list = {},
+		attribute_factor = {
+			1000,
+			1000,
+			17500
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			2916,
+			35
+		},
+		is_revive = {
+			2,
+			100
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[5191009] = {
+		monster_level = 80,
+		name = "99119433ccdc7302f5f9000aa189f126",
+		ai_level = 1,
+		hero_list = "",
+		map = "5191009",
+		background_1 = "F08a",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "7a550c9988c7a6c0d45371cb1a662de5",
+		sub_type = 1,
+		is_revive = "",
+		custom_line = "",
+		tag = 2,
+		hero_exp = 0,
+		level = 1,
+		cost = 0,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 0,
+		id = 5191009,
+		attribute_factor = "",
+		need_default_team = 1,
+		next_show_id_list = {
+			5191010
+		},
+		next_unlock_id_list = {
+			5191010
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			250,
+			-134
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[5191010] = {
+		monster_level = 80,
+		name = "50de061cd36319d2e660c69c8fc7bfa9",
+		ai_level = 1,
+		map = "5191010",
+		background_1 = "F09",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "633bdb0d5faa08ac17c97f79ff33876b",
+		sub_type = 1,
+		custom_line = "",
+		tag = 0,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5191010,
+		need_default_team = 1,
+		next_show_id_list = {
+			5191011
+		},
+		next_unlock_id_list = {
+			5191011
+		},
+		attribute_factor = {
+			1000,
+			1000,
+			5000
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			607,
+			35
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1022,
+				102202
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[5191011] = {
+		monster_level = 80,
+		name = "3a38a0b10490ed3954417672c873396c",
+		ai_level = 1,
+		map = "5191011",
+		background_1 = "F10a",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "2adb67c76c8806ecfac00aac8aa5f506",
+		sub_type = 1,
+		custom_line = "",
+		tag = 0,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5191011,
+		need_default_team = 1,
+		next_show_id_list = {
+			5191012
+		},
+		next_unlock_id_list = {
+			5191012
+		},
+		attribute_factor = {
+			1000,
+			1000,
+			6000
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			1000,
+			37
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1021,
+				102102
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[5191012] = {
+		monster_level = 80,
+		name = "812a1b891d11971d06003e6e412884cc",
+		ai_level = 1,
+		map = "5191012",
+		background_1 = "F08c",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "e82649b1d8d33dd25e625a4696996157",
+		sub_type = 1,
+		custom_line = "",
+		tag = 0,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5191012,
+		need_default_team = 1,
+		next_show_id_list = {
+			5191013
+		},
+		next_unlock_id_list = {
+			5191013
+		},
+		attribute_factor = {
+			1000,
+			1000,
+			18000
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			1400,
+			-46
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1021,
+				102102
+			},
+			{
+				1022,
+				102202
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			1,
+			0
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[5191013] = {
+		monster_level = 80,
+		name = "4ceda9963986e4ec8c5a21b357debbbf",
+		ai_level = 1,
+		map = "5191013",
+		background_1 = "F10a",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "3fd0beed432c71ddcfaa50e4c3896fe9",
+		sub_type = 1,
+		custom_line = "",
+		tag = 1,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5191013,
+		need_default_team = 1,
+		next_show_id_list = {
+			5191014
+		},
+		next_unlock_id_list = {
+			5191014
+		},
+		attribute_factor = {
+			1000,
+			1000,
+			6000
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			1779,
+			-46
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1021,
+				102102
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[5191014] = {
+		monster_level = 80,
+		name = "c49aa25b59a1eef71c9bdd383db8816b",
+		ai_level = 1,
+		hero_list = "",
+		map = "5191014",
+		background_1 = "F08c",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "98c999756dd4090e7fc6fb4b6d7e1b18",
+		sub_type = 1,
+		is_revive = "",
+		custom_line = "",
+		tag = 2,
+		hero_exp = 0,
+		level = 1,
+		cost = 0,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 0,
+		id = 5191014,
+		attribute_factor = "",
+		need_default_team = 1,
+		next_show_id_list = {
+			5191015
+		},
+		next_unlock_id_list = {
+			5191015
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			2172,
+			-136
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[5191015] = {
+		monster_level = 80,
+		name = "c24657d8a8eb08f8a3ce58fe94ae1843",
+		ai_level = 1,
+		map = "5191015",
+		background_1 = "F10a",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "5022136dcd95b887b25cad9f954b503d",
+		sub_type = 1,
+		custom_line = "",
+		tag = 1,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5191015,
+		need_default_team = 1,
+		next_show_id_list = {
+			5191016
+		},
+		next_unlock_id_list = {
+			5191016
+		},
+		attribute_factor = {
+			1000,
+			1000,
+			18000
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			2514,
+			35
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1021,
+				102102
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[5191016] = {
+		monster_level = 80,
+		name = "a44831f3ae8173435f1a2c19be3c5cc5",
+		ai_level = 1,
+		hero_list = "",
+		map = "5191016",
+		background_1 = "F10",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "3fff6572aa514d065e43e7d94f17542a",
+		sub_type = 1,
+		is_revive = "",
+		custom_line = "",
+		tag = 2,
+		hero_exp = 0,
+		level = 1,
+		cost = 0,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 0,
+		id = 5191016,
+		attribute_factor = "",
+		need_default_team = 1,
+		next_show_id_list = {
+			5191017
+		},
+		next_unlock_id_list = {
+			5191017
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			2916,
+			35
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[5191017] = {
+		monster_level = 80,
+		name = "543da3248883f7918319666e7456b401",
+		ai_level = 1,
+		hero_list = "",
+		map = "5191017",
+		background_1 = "F08a",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "62f71d0eeb13477b671f2be6b4720e1d",
+		sub_type = 1,
+		is_revive = "",
+		custom_line = "",
+		tag = 2,
+		hero_exp = 0,
+		level = 1,
+		cost = 0,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 0,
+		id = 5191017,
+		attribute_factor = "",
+		team_type = "",
+		need_default_team = 0,
+		next_show_id_list = {
+			5191018
+		},
+		next_unlock_id_list = {
+			5191018
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			3309,
+			-134
+		}
+	},
+	[5191018] = {
+		monster_level = 80,
+		name = "88713973a43033dd2242a0b5d8981f3b",
+		ai_level = 1,
+		hero_list = "",
+		map = "5191018",
+		background_1 = "F08a",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "8687e4c29a9d0523af42ac8ef9b00a25",
+		sub_type = 1,
+		is_revive = "",
+		custom_line = "",
+		tag = 2,
+		hero_exp = 0,
+		level = 1,
+		cost = 0,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 0,
+		id = 5191018,
+		attribute_factor = "",
+		team_type = "",
+		need_default_team = 0,
+		next_show_id_list = {},
+		next_unlock_id_list = {},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			3651,
+			35
+		}
+	},
 	all = {
 		5010101,
 		5010102,
@@ -11532,6 +12569,24 @@
 		5140123,
 		5140124,
 		5140125,
-		5140126
+		5140126,
+		5191001,
+		5191002,
+		5191003,
+		5191004,
+		5191005,
+		5191006,
+		5191007,
+		5191008,
+		5191009,
+		5191010,
+		5191011,
+		5191012,
+		5191013,
+		5191014,
+		5191015,
+		5191016,
+		5191017,
+		5191018
 	}
 }

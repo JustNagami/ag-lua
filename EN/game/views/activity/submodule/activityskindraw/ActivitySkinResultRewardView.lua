@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("ActivitySkinResultRewardView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return ActivitySkinDrawTools.GetDrawResultUIName(arg_1_0.params_.activityID)
+	return ActivitySkinDrawTools.GetDrawResultUIName(arg_1_0.params_.mainActivityID)
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -16,109 +16,67 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
-	arg_4_0.btn_ = {}
-	arg_4_0.icon_ = {}
-	arg_4_0.role_ = {}
-	arg_4_0.text_ = {}
-	arg_4_0.name_ = {}
-	arg_4_0.itemGo_ = {}
-	arg_4_0.typeCon_ = {}
+	arg_4_0.itemList_ = {}
 
 	for iter_4_0 = 1, 10 do
-		arg_4_0.btn_[iter_4_0] = arg_4_0["btn_" .. iter_4_0]
-		arg_4_0.icon_[iter_4_0] = arg_4_0["icon_" .. iter_4_0]
-		arg_4_0.role_[iter_4_0] = arg_4_0["role_" .. iter_4_0]
-		arg_4_0.text_[iter_4_0] = arg_4_0["text_" .. iter_4_0]
-		arg_4_0.name_[iter_4_0] = arg_4_0["name_" .. iter_4_0]
-		arg_4_0.itemGo_[iter_4_0] = arg_4_0["itemGo_" .. iter_4_0]
-		arg_4_0.typeCon_[iter_4_0] = ControllerUtil.GetController(arg_4_0.itemGo_[iter_4_0].transform, "type")
+		arg_4_0.itemList_[iter_4_0] = ActivitySkinResultRewardItem.New(arg_4_0["item_" .. iter_4_0])
 	end
 end
 
 function var_0_0.AddUIListeners(arg_5_0)
 	arg_5_0:AddBtnListener(arg_5_0.bgBtn_, nil, function()
 		JumpTools.OpenPageByJump("/activityskinDraw", {
-			activityID = arg_5_0.mainActivityID_,
-			isSceneDrawed = arg_5_0.isScene_
+			activityID = arg_5_0.params_.mainActivityID,
+			isSceneDrawed = arg_5_0.isScene_,
+			sceneDrawedId = arg_5_0.sceneId_
 		})
 	end)
-
-	for iter_5_0, iter_5_1 in ipairs(arg_5_0.btn_) do
-		arg_5_0:AddBtnListener(iter_5_1, nil, function()
-			local var_7_0 = arg_5_0.list_[iter_5_0]
-			local var_7_1 = ActivityLimitedDrawPoolCfg[var_7_0].reward[1][1]
-
-			ShowPopItem(POP_ITEM, {
-				var_7_1
-			})
-		end)
-	end
 end
 
-function var_0_0.OnEnter(arg_8_0)
-	arg_8_0.mainActivityID_ = ActivityTools.GetMainActivityId(arg_8_0.params_.activityID)
+function var_0_0.OnEnter(arg_7_0)
+	arg_7_0.replaceList_ = arg_7_0.params_.replaceList
 
-	arg_8_0:RefreshUI()
+	arg_7_0:RefreshReplace()
+	arg_7_0:RefreshUI()
+end
+
+function var_0_0.RefreshReplace(arg_8_0)
+	arg_8_0.isReplaceScene_ = false
+
+	for iter_8_0, iter_8_1 in ipairs(arg_8_0.replaceList_) do
+		local var_8_0 = ActivityLimitedDrawPoolCfg[iter_8_1].reward[1][1]
+
+		if ItemCfg[var_8_0].type == ItemConst.ITEM_TYPE.SCENE then
+			arg_8_0.isReplaceScene_ = true
+		end
+	end
 end
 
 function var_0_0.RefreshUI(arg_9_0)
 	arg_9_0.list_ = arg_9_0.params_.list
-
-	table.sort(arg_9_0.list_, function(arg_10_0, arg_10_1)
-		local var_10_0 = ActivityLimitedDrawPoolCfg[arg_10_0]
-		local var_10_1 = var_10_0.reward[1][1]
-		local var_10_2 = var_10_0.minimum_guarantee
-		local var_10_3 = ActivityLimitedDrawPoolCfg[arg_10_1]
-		local var_10_4 = var_10_3.reward[1][1]
-		local var_10_5 = var_10_3.minimum_guarantee
-
-		if var_10_2 ~= var_10_5 then
-			return var_10_5 < var_10_2
-		end
-
-		return var_10_1 < var_10_4
-	end)
-
 	arg_9_0.isScene_ = false
 
 	for iter_9_0, iter_9_1 in ipairs(arg_9_0.list_) do
-		local var_9_0 = ActivityLimitedDrawPoolCfg[iter_9_1]
-		local var_9_1 = var_9_0.reward[1]
-		local var_9_2 = var_9_1[1]
-		local var_9_3 = var_9_1[2]
-		local var_9_4 = false
-		local var_9_5 = ItemCfg[var_9_2].type
-		local var_9_6 = 1
-		local var_9_7 = var_9_0.minimum_guarantee == 2 and 3 or 2
+		local var_9_0 = ActivityLimitedDrawPoolCfg[iter_9_1].reward[1][1]
 
-		if var_9_5 == ItemConst.ITEM_TYPE.HERO_SKIN then
-			var_9_4 = true
-
-			arg_9_0.typeCon_[iter_9_0]:SetSelectedState("special")
-		elseif var_9_5 == ItemConst.ITEM_TYPE.SCENE then
+		if ItemCfg[var_9_0].type == ItemConst.ITEM_TYPE.SCENE and var_9_0 ~= HomeSceneSettingData:GetCurScene() and not arg_9_0.isReplaceScene_ then
 			arg_9_0.isScene_ = true
+			arg_9_0.sceneId_ = var_9_0
 
-			arg_9_0.typeCon_[iter_9_0]:SetSelectedState("special")
-		else
-			arg_9_0.typeCon_[iter_9_0]:SetSelectedState(var_9_7)
+			break
 		end
+	end
 
-		if var_9_4 then
-			SetActive(arg_9_0.icon_[iter_9_0].gameObject, false)
-			SetActive(arg_9_0.role_[iter_9_0].gameObject, true)
+	arg_9_0:RefreshItemList()
+end
 
-			arg_9_0.role_[iter_9_0].sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_9_2)
-		else
-			SetActive(arg_9_0.icon_[iter_9_0].gameObject, true)
-			SetActive(arg_9_0.role_[iter_9_0].gameObject, false)
+function var_0_0.RefreshItemList(arg_10_0)
+	for iter_10_0 = 1, 10 do
+		local var_10_0 = arg_10_0.list_[iter_10_0]
+		local var_10_1 = arg_10_0.itemList_[iter_10_0]
+		local var_10_2 = arg_10_0.params_.replaceList or {}
 
-			arg_9_0.icon_[iter_9_0].sprite = ItemTools.getItemSprite(var_9_2)
-
-			arg_9_0.icon_[iter_9_0]:SetNativeSize()
-		end
-
-		arg_9_0.text_[iter_9_0].text = "X" .. var_9_3
-		arg_9_0.name_[iter_9_0].text = ItemTools.getItemName(var_9_2)
+		var_10_1:SetData(var_10_0, iter_10_0, table.indexof(var_10_2, var_10_0))
 	end
 end
 
@@ -127,11 +85,19 @@ function var_0_0.OnTop(arg_11_0)
 end
 
 function var_0_0.OnExit(arg_12_0)
-	return
+	arg_12_0.isScene_ = false
+	arg_12_0.sceneId_ = 0
 end
 
 function var_0_0.Dispose(arg_13_0)
 	arg_13_0:RemoveAllListeners()
+
+	for iter_13_0, iter_13_1 in pairs(arg_13_0.itemList_) do
+		iter_13_1:Dispose()
+	end
+
+	arg_13_0.itemList_ = nil
+
 	arg_13_0.super.Dispose(arg_13_0)
 end
 

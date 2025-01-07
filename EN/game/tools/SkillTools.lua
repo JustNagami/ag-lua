@@ -290,7 +290,7 @@ function var_0_0.GetAttr(arg_15_0)
 end
 
 function var_0_0.GetSkillModuleDes(arg_16_0)
-	local var_16_0 = getSkillIDOrServantID(arg_16_0)
+	local var_16_0 = getSkillAffectByModule(arg_16_0)
 	local var_16_1 = GetTips("WEAPON_MODULE_SKILL_TIP_TEMPLATE_2")
 	local var_16_2 = var_0_0.GetHeroIDBySkillID(var_16_0)
 	local var_16_3
@@ -305,81 +305,124 @@ function var_0_0.GetSkillModuleDes(arg_16_0)
 
 	local var_16_4 = GetI18NText(HeroSkillCfg[var_16_0].name)
 	local var_16_5 = HeroSkillCfg[var_16_0].desc[1]
-	local var_16_6 = HeroSkillCfg[var_16_0].strengthen_desc[2]
+	local var_16_6
+	local var_16_7 = HeroSkillCfg[var_16_0].strengthen_desc
+
+	if var_16_7 and var_16_7 ~= "" then
+		for iter_16_2, iter_16_3 in ipairs(var_16_7) do
+			if iter_16_3[1] == arg_16_0 then
+				var_16_6 = iter_16_3[2]
+			end
+		end
+	end
 
 	return string.format(var_16_1, var_16_3, var_16_4, var_0_0.GetSkillRate(var_16_5), var_0_0.GetSkillRate(var_16_6))
 end
 
-function var_0_0.GetServantSkillModuleDes(arg_17_0)
-	local var_17_0 = getSkillIDOrServantID(arg_17_0)
-	local var_17_1 = GetTips("WEAPON_MODULE_SKILL_TIP_TEMPLATE_2")
-	local var_17_2 = var_0_0.GetHeroIDBySkillID(var_17_0)
-	local var_17_3 = HeroCfg[var_17_2].equip_orange_skill[1][1]
-	local var_17_4
+local function var_0_2(arg_17_0, arg_17_1, arg_17_2, arg_17_3)
+	local var_17_0 = HeroSkillCfg[arg_17_3]
 
-	for iter_17_0, iter_17_1 in pairs(HeroCfg[var_17_2].skills) do
-		if iter_17_1 == var_17_3 then
-			var_17_4 = GetI18NText(HeroCfg[var_17_2].skill_subhead[iter_17_0])
+	if var_17_0 == nil then
+		return nil
+	end
+
+	local var_17_1 = GetTips("WEAPON_MODULE_SKILL_TIP_TEMPLATE_2")
+	local var_17_2
+
+	for iter_17_0, iter_17_1 in pairs(HeroCfg[arg_17_0].skills) do
+		if iter_17_1 == arg_17_2 then
+			var_17_2 = GetI18NText(HeroCfg[arg_17_0].skill_subhead[iter_17_0])
 
 			break
 		end
 	end
 
-	local var_17_5 = GetI18NText(HeroSkillCfg[var_17_0].name)
-	local var_17_6 = HeroSkillCfg[var_17_0].desc[1]
-	local var_17_7 = HeroSkillCfg[var_17_0].strengthen_desc[2]
+	local var_17_3 = GetI18NText(var_17_0.name)
+	local var_17_4 = var_17_0.desc[1]
+	local var_17_5 = var_17_0.strengthen_desc
+	local var_17_6
 
-	return string.format(var_17_1, var_17_4, var_17_5, var_0_0.GetSkillRate(var_17_6), var_0_0.GetSkillRate(var_17_7))
+	if var_17_5 and var_17_5 ~= "" then
+		for iter_17_2, iter_17_3 in ipairs(var_17_5) do
+			if iter_17_3[1] == arg_17_1 then
+				var_17_6 = iter_17_3[2]
+			end
+		end
+	end
+
+	return string.format(var_17_1, var_17_2, var_17_3, var_0_0.GetSkillRate(var_17_4), var_0_0.GetSkillRate(var_17_6))
 end
 
-function var_0_0.GetSkillRate(arg_18_0)
-	local var_18_0 = DescriptionCfg[arg_18_0]
+function var_0_0.GetServantSkillModuleDes(arg_18_0)
+	local var_18_0 = getSkillAffectByModule(arg_18_0)
+	local var_18_1 = var_0_0.GetHeroIDBySkillID(var_18_0)
+	local var_18_2 = HeroCfg[var_18_1].equip_orange_skill[1][1]
 
-	if not var_18_0 then
+	return var_0_2(var_18_1, arg_18_0, var_18_2, var_18_0)
+end
+
+function var_0_0.GetAstrolabeSkillModuleDes(arg_19_0)
+	local var_19_0 = getSkillAffectByModule(arg_19_0)
+	local var_19_1 = var_0_0.GetHeroIDBySkillID(var_19_0)
+	local var_19_2
+
+	for iter_19_0, iter_19_1 in ipairs(HeroCfg[var_19_1].astrolabe_skill) do
+		if var_19_0 == iter_19_1[3] then
+			var_19_2 = iter_19_1[1]
+		end
+	end
+
+	return var_0_2(var_19_1, arg_19_0, var_19_2, var_19_0)
+end
+
+function var_0_0.GetSkillRate(arg_20_0)
+	local var_20_0 = DescriptionCfg[arg_20_0]
+
+	if not var_20_0 then
 		return ""
 	end
 
-	local var_18_1
+	local var_20_1
 
-	if var_18_0.type == 1 then
-		local var_18_2 = var_18_0.param
+	if var_20_0.type == 1 then
+		local var_20_2 = var_20_0.param
 
-		if #var_18_2 >= 1 then
-			for iter_18_0, iter_18_1 in ipairs(var_18_2) do
-				local var_18_3 = iter_18_1[1]
-				local var_18_4 = iter_18_1[3]
-				local var_18_5 = iter_18_1[4]
-				local var_18_6 = var_18_3
+		if #var_20_2 >= 1 then
+			for iter_20_0, iter_20_1 in ipairs(var_20_2) do
+				local var_20_3 = iter_20_1[1]
+				local var_20_4 = iter_20_1[3]
+				local var_20_5 = iter_20_1[4]
+				local var_20_6 = var_20_3
 
-				if var_18_6 % 1 == 0 then
-					var_18_6 = string.format("%.0f", var_18_6) .. var_18_5
+				if var_20_6 % 1 == 0 then
+					var_20_6 = string.format("%.0f", var_20_6) .. var_20_5
 				else
-					var_18_6 = string.format("%.1f", var_18_6) .. var_18_5
+					var_20_6 = string.format("%.1f", var_20_6) .. var_20_5
 				end
 
-				if var_18_4 then
-					if var_18_1 == nil then
-						var_18_1 = var_18_6
+				if var_20_4 then
+					if var_20_1 == nil then
+						var_20_1 = var_20_6
 					else
-						var_18_1 = var_18_1 .. "/" .. var_18_6
+						var_20_1 = var_20_1 .. "/" .. var_20_6
 					end
 				end
 			end
 		end
 	end
 
-	return var_18_1 or ""
+	return var_20_1 or ""
 end
 
-function var_0_0.CanUseComboSkill(arg_19_0, arg_19_1)
-	if arg_19_0 == 0 then
+function var_0_0.CanUseComboSkill(arg_21_0, arg_21_1)
+	if arg_21_0 == 0 then
 		return true
 	end
 
-	local var_19_0 = ComboSkillCfg[arg_19_0]
+	local var_21_0 = ComboSkillCfg[arg_21_0]
 
-	for iter_19_0, iter_19_1 in ipairs(var_19_0.cooperate_role_ids) do
-		if not table.keyof(arg_19_1, iter_19_1) then
+	for iter_21_0, iter_21_1 in ipairs(var_21_0.cooperate_role_ids) do
+		if not table.keyof(arg_21_1, iter_21_1) then
 			return false
 		end
 	end
@@ -387,41 +430,41 @@ function var_0_0.CanUseComboSkill(arg_19_0, arg_19_1)
 	return true
 end
 
-function var_0_0.GetSkillAttrCfg(arg_20_0, arg_20_1, arg_20_2)
-	local var_20_0
+function var_0_0.GetSkillAttrCfg(arg_22_0, arg_22_1, arg_22_2)
+	local var_22_0
 
-	if arg_20_2 < 10 then
-		var_20_0 = string.format("%s0%s", arg_20_0, arg_20_2)
+	if arg_22_2 < 10 then
+		var_22_0 = string.format("%s0%s", arg_22_0, arg_22_2)
 	else
-		var_20_0 = string.format("%s%s", arg_20_0, arg_20_2)
+		var_22_0 = string.format("%s%s", arg_22_0, arg_22_2)
 	end
 
-	local var_20_1 = HeroSkillElementCfg[tonumber(var_20_0)]
+	local var_22_1 = HeroSkillElementCfg[tonumber(var_22_0)]
 
-	if var_20_1 then
+	if var_22_1 then
 		return {
-			cost = var_20_1["skill_element_cost" .. arg_20_1],
-			attr = var_20_1["skill_element_attr" .. arg_20_1]
+			cost = var_22_1["skill_element_cost" .. arg_22_1],
+			attr = var_22_1["skill_element_attr" .. arg_22_1]
 		}
 	end
 
 	return nil
 end
 
-function var_0_0.GetSkillAttrCost(arg_21_0, arg_21_1, arg_21_2, arg_21_3)
-	local var_21_0 = {}
+function var_0_0.GetSkillAttrCost(arg_23_0, arg_23_1, arg_23_2, arg_23_3)
+	local var_23_0 = {}
 
-	for iter_21_0 = 1, arg_21_3 do
-		local var_21_1 = var_0_0.GetSkillAttrCfg(arg_21_0, arg_21_1, arg_21_2 + iter_21_0 - 1)
+	for iter_23_0 = 1, arg_23_3 do
+		local var_23_1 = var_0_0.GetSkillAttrCfg(arg_23_0, arg_23_1, arg_23_2 + iter_23_0 - 1)
 
-		if var_21_1 then
-			local var_21_2 = var_21_1.cost
+		if var_23_1 then
+			local var_23_2 = var_23_1.cost
 
-			var_21_0[var_21_2[1]] = (var_21_0[var_21_2[1]] or 0) + var_21_2[2]
+			var_23_0[var_23_2[1]] = (var_23_0[var_23_2[1]] or 0) + var_23_2[2]
 		end
 	end
 
-	return var_21_0
+	return var_23_0
 end
 
 return var_0_0

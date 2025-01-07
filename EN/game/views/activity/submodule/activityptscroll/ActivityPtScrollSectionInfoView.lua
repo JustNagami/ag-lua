@@ -96,55 +96,117 @@ function var_0_0.RefreshCostInfo(arg_6_0)
 	arg_6_0.costImage_.sprite = ItemTools.getItemLittleSprite(arg_6_0.costID_)
 end
 
-function var_0_0.HaveCostCntFlag(arg_7_0)
-	local var_7_0 = arg_7_0.cost_ * arg_7_0.multiple_
+function var_0_0.OnEnter(arg_7_0)
+	var_0_0.super.OnEnter(arg_7_0)
 
-	arg_7_0.costImage_.sprite = ItemTools.getItemLittleSprite(arg_7_0.costID_)
-
-	return var_7_0 <= ItemTools.getItemNum(arg_7_0.costID_)
+	arg_7_0.activityID_ = arg_7_0.params_.activityId
 end
 
-function var_0_0.OnClickBtn(arg_8_0)
-	arg_8_0:Go("/sectionSelectHero", {
-		section = arg_8_0.params_.section,
-		sectionType = arg_8_0.params_.sectionType,
-		activityID = arg_8_0.params_.activityId,
-		multiple = arg_8_0.multiple_
+function var_0_0.RefreshUI(arg_8_0)
+	var_0_0.super.RefreshUI(arg_8_0)
+
+	local var_8_0 = GameSetting.quick_battle_type.value
+	local var_8_1 = GameSetting.quick_battle_mode.value
+	local var_8_2 = ActivityPtRouletteStageCfg.get_id_list_by_activity_id[arg_8_0.params_.activityId]
+	local var_8_3 = 0
+
+	for iter_8_0, iter_8_1 in ipairs(var_8_2) do
+		if ActivityPtRouletteStageCfg[iter_8_1].stage_id == arg_8_0.params_.section then
+			var_8_3 = ActivityPtRouletteStageCfg[iter_8_1].mode
+
+			break
+		end
+	end
+
+	if table.indexof(var_8_0, arg_8_0.stageType_) and var_8_3 > 0 and table.indexof(var_8_1, var_8_3) then
+		local var_8_4 = ActivityPtScrollData:GetClearList(arg_8_0.params_.activityId)
+
+		if table.indexof(var_8_4, arg_8_0.params_.section) then
+			arg_8_0.btnController_:SetSelectedState("rush")
+		else
+			arg_8_0.btnController_:SetSelectedState("cantrush")
+		end
+	else
+		arg_8_0.btnController_:SetSelectedState("false")
+	end
+end
+
+function var_0_0.RefreshBtn(arg_9_0)
+	local var_9_0 = GameSetting.quick_battle_type.value
+	local var_9_1 = GameSetting.quick_battle_mode.value
+	local var_9_2 = ActivityPtRouletteStageCfg.get_id_list_by_activity_id[arg_9_0.params_.activityId]
+	local var_9_3 = 0
+
+	for iter_9_0, iter_9_1 in ipairs(var_9_2) do
+		if ActivityPtRouletteStageCfg[iter_9_1].stage_id == arg_9_0.params_.section then
+			var_9_3 = ActivityPtRouletteStageCfg[iter_9_1].mode
+
+			break
+		end
+	end
+
+	if table.indexof(var_9_0, arg_9_0.stageType_) and var_9_3 > 0 and table.indexof(var_9_1, var_9_3) then
+		local var_9_4 = ActivityPtScrollData:GetClearList(arg_9_0.params_.activityId)
+
+		if table.indexof(var_9_4, arg_9_0.params_.section) then
+			arg_9_0.btnController_:SetSelectedState("rush")
+		else
+			arg_9_0.btnController_:SetSelectedState("cantrush")
+		end
+	else
+		arg_9_0.btnController_:SetSelectedState("false")
+	end
+end
+
+function var_0_0.HaveCostCntFlag(arg_10_0)
+	local var_10_0 = arg_10_0.cost_ * arg_10_0.multiple_
+
+	arg_10_0.costImage_.sprite = ItemTools.getItemLittleSprite(arg_10_0.costID_)
+
+	return var_10_0 <= ItemTools.getItemNum(arg_10_0.costID_)
+end
+
+function var_0_0.OnClickBtn(arg_11_0)
+	arg_11_0:Go("/sectionSelectHero", {
+		section = arg_11_0.params_.section,
+		sectionType = arg_11_0.params_.sectionType,
+		activityID = arg_11_0.params_.activityId,
+		multiple = arg_11_0.multiple_
 	})
 end
 
-function var_0_0.GetUnlockChallengeCnt(arg_9_0)
-	local var_9_0 = ActivityPtScrollData:GetClearList(arg_9_0.params_.activityId)
-	local var_9_1 = table.indexof(var_9_0, arg_9_0.params_.section) ~= false and 1 or 0
+function var_0_0.GetUnlockChallengeCnt(arg_12_0)
+	local var_12_0 = ActivityPtScrollData:GetClearList(arg_12_0.params_.activityId)
+	local var_12_1 = table.indexof(var_12_0, arg_12_0.params_.section) ~= false and 1 or 0
 
-	if var_9_1 > 0 then
-		return var_0_0.super.GetUnlockChallengeCnt(arg_9_0)
+	if var_12_1 > 0 then
+		return var_0_0.super.GetUnlockChallengeCnt(arg_12_0)
 	end
 
-	return var_9_1
+	return var_12_1
 end
 
-function var_0_0.GetChallengeCntMaxTip(arg_10_0)
-	local var_10_0 = ActivityPtScrollData:GetClearList(arg_10_0.params_.activityId)
+function var_0_0.GetChallengeCntMaxTip(arg_13_0)
+	local var_13_0 = ActivityPtScrollData:GetClearList(arg_13_0.params_.activityId)
 
-	if (table.indexof(var_10_0, arg_10_0.params_.section) ~= false and 1 or 0) > 0 then
-		return var_0_0.super.GetChallengeCntMaxTip(arg_10_0)
+	if (table.indexof(var_13_0, arg_13_0.params_.section) ~= false and 1 or 0) > 0 then
+		return var_0_0.super.GetChallengeCntMaxTip(arg_13_0)
 	end
 
 	return GetTips("ACTIVITY_PT_REPEAT_MULTIPLE_UNLOCK")
 end
 
-function var_0_0.RefreshStageInfo(arg_11_0)
-	local var_11_0 = BattleStageTools.GetStageCfg(arg_11_0.stageType_, arg_11_0.stageID_)
+function var_0_0.RefreshStageInfo(arg_14_0)
+	local var_14_0 = BattleStageTools.GetStageCfg(arg_14_0.stageType_, arg_14_0.stageID_)
 
-	if arg_11_0.oldCfgID_ ~= var_11_0.id then
-		local var_11_1, var_11_2 = BattleStageTools.GetChapterSectionIndex(arg_11_0.stageType_, arg_11_0.stageID_)
+	if arg_14_0.oldCfgID_ ~= var_14_0.id then
+		local var_14_1, var_14_2 = BattleStageTools.GetChapterSectionIndex(arg_14_0.stageType_, arg_14_0.stageID_)
 
-		arg_11_0.sectionText_.text = string.format("%s-%s", GetI18NText(var_11_1), GetI18NText(var_11_2))
-		arg_11_0.sectionName_.text = GetI18NText(var_11_0.name)
-		arg_11_0.sectionImage_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_11_0.background_1))
-		arg_11_0.oldCfgID_ = var_11_0.id
-		arg_11_0.multiple_ = 1
+		arg_14_0.sectionText_.text = string.format("%s-%s", GetI18NText(var_14_1), GetI18NText(var_14_2))
+		arg_14_0.sectionName_.text = GetI18NText(var_14_0.name)
+		arg_14_0.sectionImage_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_14_0.background_1))
+		arg_14_0.oldCfgID_ = var_14_0.id
+		arg_14_0.multiple_ = 1
 	end
 end
 

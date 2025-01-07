@@ -6,6 +6,7 @@
 		affix_id = "",
 		stage_target = 3004,
 		stage_type = 1,
+		hero = 1074,
 		activity_id = 182241,
 		character = 400,
 		id = 1,
@@ -30,6 +31,7 @@
 		affix_id = "",
 		stage_target = 3004,
 		stage_type = 2,
+		hero = 1074,
 		activity_id = 182241,
 		character = 500,
 		id = 2,
@@ -54,6 +56,7 @@
 		affix_id = "",
 		stage_target = 3004,
 		stage_type = 3,
+		hero = 1074,
 		activity_id = 182241,
 		character = 600,
 		id = 3,
@@ -78,6 +81,7 @@
 		affix_id = "",
 		stage_target = 4023,
 		stage_type = 1,
+		hero = 1055,
 		activity_id = 192241,
 		character = 400,
 		id = 4,
@@ -102,6 +106,7 @@
 		affix_id = "",
 		stage_target = 4023,
 		stage_type = 2,
+		hero = 1055,
 		activity_id = 192241,
 		character = 500,
 		id = 5,
@@ -126,6 +131,7 @@
 		affix_id = "",
 		stage_target = 4023,
 		stage_type = 3,
+		hero = 1055,
 		activity_id = 192241,
 		character = 600,
 		id = 6,
@@ -150,6 +156,7 @@
 		affix_id = "",
 		stage_target = 4023,
 		stage_type = 1,
+		hero = 1055,
 		activity_id = 192242,
 		character = 400,
 		id = 7,
@@ -174,6 +181,7 @@
 		affix_id = "",
 		stage_target = 4023,
 		stage_type = 2,
+		hero = 1055,
 		activity_id = 192242,
 		character = 500,
 		id = 8,
@@ -198,6 +206,7 @@
 		affix_id = "",
 		stage_target = 4023,
 		stage_type = 3,
+		hero = 1055,
 		activity_id = 192242,
 		character = 600,
 		id = 9,
@@ -222,6 +231,7 @@
 		affix_id = "",
 		stage_target = 4023,
 		stage_type = 1,
+		hero = 1055,
 		activity_id = 192243,
 		character = 400,
 		id = 10,
@@ -246,6 +256,7 @@
 		affix_id = "",
 		stage_target = 4023,
 		stage_type = 2,
+		hero = 1055,
 		activity_id = 192243,
 		character = 500,
 		id = 11,
@@ -270,6 +281,7 @@
 		affix_id = "",
 		stage_target = 4023,
 		stage_type = 3,
+		hero = 1055,
 		activity_id = 192243,
 		character = 600,
 		id = 12,
@@ -294,6 +306,7 @@
 		affix_id = "",
 		stage_target = 4023,
 		stage_type = 1,
+		hero = 1055,
 		activity_id = 192244,
 		character = 400,
 		id = 13,
@@ -311,6 +324,7 @@
 		affix_id = "",
 		stage_target = 4023,
 		stage_type = 2,
+		hero = 1055,
 		activity_id = 192244,
 		character = 500,
 		id = 14,
@@ -328,6 +342,7 @@
 		affix_id = "",
 		stage_target = 4023,
 		stage_type = 3,
+		hero = 1055,
 		activity_id = 192244,
 		character = 600,
 		id = 15,
@@ -345,6 +360,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 1,
+		hero = 1049,
 		activity_id = 202241,
 		character = 400,
 		id = 16,
@@ -369,6 +385,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 2,
+		hero = 1049,
 		activity_id = 202241,
 		character = 500,
 		id = 17,
@@ -393,6 +410,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 3,
+		hero = 1049,
 		activity_id = 202241,
 		character = 600,
 		id = 18,
@@ -417,6 +435,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 1,
+		hero = 1049,
 		activity_id = 202242,
 		character = 400,
 		id = 19,
@@ -457,6 +476,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 2,
+		hero = 1049,
 		activity_id = 202242,
 		character = 500,
 		id = 20,
@@ -497,6 +517,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 3,
+		hero = 1049,
 		activity_id = 202242,
 		character = 600,
 		id = 21,
@@ -537,6 +558,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 1,
+		hero = 1049,
 		activity_id = 202243,
 		character = 400,
 		id = 22,
@@ -571,6 +593,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 2,
+		hero = 1049,
 		activity_id = 202243,
 		character = 500,
 		id = 23,
@@ -605,6 +628,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 3,
+		hero = 1049,
 		activity_id = 202243,
 		character = 600,
 		id = 24,
@@ -639,6 +663,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 1,
+		hero = 1049,
 		activity_id = 202244,
 		character = 400,
 		id = 25,
@@ -656,6 +681,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 2,
+		hero = 1049,
 		activity_id = 202244,
 		character = 500,
 		id = 26,
@@ -673,6 +699,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 3,
+		hero = 1049,
 		activity_id = 202244,
 		character = 600,
 		id = 27,
@@ -690,6 +717,7 @@
 		affix_id = "",
 		stage_target = 4029,
 		stage_type = 1,
+		hero = 1158,
 		activity_id = 202245,
 		character = 400,
 		id = 28,
@@ -721,6 +749,7 @@
 		affix_id = "",
 		stage_target = 4029,
 		stage_type = 2,
+		hero = 1158,
 		activity_id = 202245,
 		character = 500,
 		id = 29,
@@ -752,6 +781,7 @@
 		affix_id = "",
 		stage_target = 4029,
 		stage_type = 3,
+		hero = 1158,
 		activity_id = 202245,
 		character = 600,
 		id = 30,
@@ -783,6 +813,7 @@
 		affix_id = "",
 		stage_target = 4029,
 		stage_type = 1,
+		hero = 1158,
 		activity_id = 202246,
 		character = 400,
 		id = 31,
@@ -814,6 +845,7 @@
 		affix_id = "",
 		stage_target = 4029,
 		stage_type = 2,
+		hero = 1158,
 		activity_id = 202246,
 		character = 500,
 		id = 32,
@@ -845,6 +877,7 @@
 		affix_id = "",
 		stage_target = 4029,
 		stage_type = 3,
+		hero = 1158,
 		activity_id = 202246,
 		character = 600,
 		id = 33,
@@ -876,6 +909,7 @@
 		affix_id = "",
 		stage_target = 4029,
 		stage_type = 1,
+		hero = 1158,
 		activity_id = 202247,
 		character = 400,
 		id = 34,
@@ -907,6 +941,7 @@
 		affix_id = "",
 		stage_target = 4029,
 		stage_type = 2,
+		hero = 1158,
 		activity_id = 202247,
 		character = 500,
 		id = 35,
@@ -938,6 +973,7 @@
 		affix_id = "",
 		stage_target = 4029,
 		stage_type = 3,
+		hero = 1158,
 		activity_id = 202247,
 		character = 600,
 		id = 36,
@@ -969,6 +1005,7 @@
 		affix_id = "",
 		stage_target = 4031,
 		stage_type = 1,
+		hero = 1060,
 		activity_id = 212241,
 		character = 400,
 		id = 37,
@@ -993,6 +1030,7 @@
 		affix_id = "",
 		stage_target = 4031,
 		stage_type = 2,
+		hero = 1060,
 		activity_id = 212241,
 		character = 500,
 		id = 38,
@@ -1017,6 +1055,7 @@
 		affix_id = "",
 		stage_target = 4031,
 		stage_type = 3,
+		hero = 1060,
 		activity_id = 212241,
 		character = 600,
 		id = 39,
@@ -1041,6 +1080,7 @@
 		affix_id = "",
 		stage_target = 4031,
 		stage_type = 1,
+		hero = 1060,
 		activity_id = 212242,
 		character = 400,
 		id = 40,
@@ -1065,6 +1105,7 @@
 		affix_id = "",
 		stage_target = 4031,
 		stage_type = 2,
+		hero = 1060,
 		activity_id = 212242,
 		character = 500,
 		id = 41,
@@ -1089,6 +1130,7 @@
 		affix_id = "",
 		stage_target = 4031,
 		stage_type = 3,
+		hero = 1060,
 		activity_id = 212242,
 		character = 600,
 		id = 42,
@@ -1113,6 +1155,7 @@
 		affix_id = "",
 		stage_target = 4031,
 		stage_type = 1,
+		hero = 1060,
 		activity_id = 212243,
 		character = 400,
 		id = 43,
@@ -1137,6 +1180,7 @@
 		affix_id = "",
 		stage_target = 4031,
 		stage_type = 2,
+		hero = 1060,
 		activity_id = 212243,
 		character = 500,
 		id = 44,
@@ -1161,6 +1205,7 @@
 		affix_id = "",
 		stage_target = 4031,
 		stage_type = 3,
+		hero = 1060,
 		activity_id = 212243,
 		character = 600,
 		id = 45,
@@ -1185,6 +1230,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 1,
+		hero = 1061,
 		activity_id = 212244,
 		character = 400,
 		id = 46,
@@ -1216,6 +1262,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 3,
+		hero = 1061,
 		activity_id = 212244,
 		character = 600,
 		id = 47,
@@ -1247,6 +1294,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 1,
+		hero = 1061,
 		activity_id = 212245,
 		character = 400,
 		id = 48,
@@ -1278,6 +1326,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 3,
+		hero = 1061,
 		activity_id = 212245,
 		character = 600,
 		id = 49,
@@ -1309,6 +1358,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 1,
+		hero = 1061,
 		activity_id = 212246,
 		character = 400,
 		id = 50,
@@ -1340,6 +1390,7 @@
 		affix_id = "",
 		stage_target = 3021,
 		stage_type = 3,
+		hero = 1061,
 		activity_id = 212246,
 		character = 600,
 		id = 51,
@@ -1371,6 +1422,7 @@
 		affix_id = "",
 		stage_target = 4036,
 		stage_type = 1,
+		hero = 1150,
 		activity_id = 232241,
 		character = 400,
 		id = 52,
@@ -1403,6 +1455,7 @@
 		affix_id = "",
 		stage_target = 4036,
 		stage_type = 3,
+		hero = 1150,
 		activity_id = 232241,
 		character = 600,
 		id = 53,
@@ -1435,6 +1488,7 @@
 		affix_id = "",
 		stage_target = 4028,
 		stage_type = 1,
+		hero = 1150,
 		activity_id = 232242,
 		character = 400,
 		id = 54,
@@ -1467,6 +1521,7 @@
 		affix_id = "",
 		stage_target = 4028,
 		stage_type = 3,
+		hero = 1150,
 		activity_id = 232242,
 		character = 600,
 		id = 55,
@@ -1499,6 +1554,7 @@
 		affix_id = "",
 		stage_target = 4028,
 		stage_type = 1,
+		hero = 1150,
 		activity_id = 232243,
 		character = 400,
 		id = 56,
@@ -1531,6 +1587,7 @@
 		affix_id = "",
 		stage_target = 4028,
 		stage_type = 3,
+		hero = 1150,
 		activity_id = 232243,
 		character = 600,
 		id = 57,
@@ -1563,6 +1620,7 @@
 		affix_id = "",
 		stage_target = 4029,
 		stage_type = 1,
+		hero = 1015,
 		activity_id = 232244,
 		character = 400,
 		id = 58,
@@ -1606,6 +1664,7 @@
 		affix_id = "",
 		stage_target = 4029,
 		stage_type = 3,
+		hero = 1015,
 		activity_id = 232244,
 		character = 600,
 		id = 59,
@@ -1649,6 +1708,7 @@
 		affix_id = "",
 		stage_target = 4029,
 		stage_type = 1,
+		hero = 1015,
 		activity_id = 232245,
 		character = 400,
 		id = 60,
@@ -1698,6 +1758,7 @@
 		affix_id = "",
 		stage_target = 4029,
 		stage_type = 3,
+		hero = 1015,
 		activity_id = 232245,
 		character = 600,
 		id = 61,
@@ -1747,6 +1808,7 @@
 		affix_id = "",
 		stage_target = 4029,
 		stage_type = 1,
+		hero = 1015,
 		activity_id = 232246,
 		character = 400,
 		id = 62,
@@ -1796,6 +1858,7 @@
 		affix_id = "",
 		stage_target = 4029,
 		stage_type = 3,
+		hero = 1015,
 		activity_id = 232246,
 		character = 600,
 		id = 63,
@@ -1845,6 +1908,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 1,
+		hero = 1095,
 		activity_id = 242241,
 		character = 400,
 		id = 64,
@@ -1875,6 +1939,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 2,
+		hero = 1095,
 		activity_id = 242241,
 		character = 500,
 		id = 65,
@@ -1905,6 +1970,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 3,
+		hero = 1095,
 		activity_id = 242241,
 		character = 600,
 		id = 66,
@@ -1935,6 +2001,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 1,
+		hero = 1095,
 		activity_id = 242242,
 		character = 400,
 		id = 67,
@@ -1980,6 +2047,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 2,
+		hero = 1095,
 		activity_id = 242242,
 		character = 500,
 		id = 68,
@@ -2025,6 +2093,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 3,
+		hero = 1095,
 		activity_id = 242242,
 		character = 600,
 		id = 69,
@@ -2070,6 +2139,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 1,
+		hero = 1284,
 		activity_id = 242243,
 		character = 400,
 		id = 70,
@@ -2101,6 +2171,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 2,
+		hero = 1284,
 		activity_id = 242243,
 		character = 500,
 		id = 71,
@@ -2132,6 +2203,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 3,
+		hero = 1284,
 		activity_id = 242243,
 		character = 600,
 		id = 72,
@@ -2163,6 +2235,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 1,
+		hero = 1284,
 		activity_id = 242244,
 		character = 400,
 		id = 73,
@@ -2194,6 +2267,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 2,
+		hero = 1284,
 		activity_id = 242244,
 		character = 500,
 		id = 74,
@@ -2225,6 +2299,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 3,
+		hero = 1284,
 		activity_id = 242244,
 		character = 600,
 		id = 75,
@@ -2256,6 +2331,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 1,
+		hero = 1284,
 		activity_id = 242245,
 		character = 400,
 		id = 76,
@@ -2273,6 +2349,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 2,
+		hero = 1284,
 		activity_id = 242245,
 		character = 500,
 		id = 77,
@@ -2290,6 +2367,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 3,
+		hero = 1284,
 		activity_id = 242245,
 		character = 600,
 		id = 78,
@@ -2307,6 +2385,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 1,
+		hero = 1197,
 		activity_id = 272241,
 		character = 400,
 		id = 79,
@@ -2331,6 +2410,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 2,
+		hero = 1197,
 		activity_id = 272241,
 		character = 500,
 		id = 80,
@@ -2355,6 +2435,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 3,
+		hero = 1197,
 		activity_id = 272241,
 		character = 600,
 		id = 81,
@@ -2379,6 +2460,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 1,
+		hero = 1197,
 		activity_id = 272242,
 		character = 400,
 		id = 82,
@@ -2403,6 +2485,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 2,
+		hero = 1197,
 		activity_id = 272242,
 		character = 500,
 		id = 83,
@@ -2427,6 +2510,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 3,
+		hero = 1197,
 		activity_id = 272242,
 		character = 600,
 		id = 84,
@@ -2451,6 +2535,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 1,
+		hero = 1197,
 		activity_id = 272243,
 		character = 400,
 		id = 85,
@@ -2475,6 +2560,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 2,
+		hero = 1197,
 		activity_id = 272243,
 		character = 500,
 		id = 86,
@@ -2499,6 +2585,7 @@
 		affix_id = "",
 		stage_target = 4020,
 		stage_type = 3,
+		hero = 1197,
 		activity_id = 272243,
 		character = 600,
 		id = 87,
@@ -2516,7 +2603,1633 @@
 			}
 		}
 	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1022,
+		activity_id = 282241,
+		character = 400,
+		id = 88,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2210
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1022
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1022,
+		activity_id = 282241,
+		character = 500,
+		id = 89,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2210
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1022
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1022,
+		activity_id = 282241,
+		character = 600,
+		id = 90,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2210
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1022
+				}
+			}
+		}
+	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1022,
+		activity_id = 282242,
+		character = 400,
+		id = 91,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2210
+		},
+		limit_hero = {
+			{
+				2,
+				{
+					1022
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1022,
+		activity_id = 282242,
+		character = 500,
+		id = 92,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2210
+		},
+		limit_hero = {
+			{
+				2,
+				{
+					1022
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1022,
+		activity_id = 282242,
+		character = 600,
+		id = 93,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2210
+		},
+		limit_hero = {
+			{
+				2,
+				{
+					1022
+				}
+			}
+		}
+	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1022,
+		activity_id = 282243,
+		character = 400,
+		id = 94,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2210
+		},
+		limit_hero = {
+			{
+				2,
+				{
+					1022
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1022,
+		activity_id = 282243,
+		character = 500,
+		id = 95,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2210
+		},
+		limit_hero = {
+			{
+				2,
+				{
+					1022
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1022,
+		activity_id = 282243,
+		character = 600,
+		id = 96,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2210
+		},
+		limit_hero = {
+			{
+				2,
+				{
+					1022
+				}
+			}
+		}
+	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1021,
+		activity_id = 282244,
+		character = 400,
+		id = 97,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2203
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1021,
+					1095,
+					1015,
+					1041,
+					1093,
+					1066,
+					1052,
+					1084,
+					1050,
+					1011,
+					1016,
+					1148
+				}
+			},
+			{
+				3,
+				{
+					1021
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1021,
+		activity_id = 282244,
+		character = 500,
+		id = 98,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2203
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1021,
+					1095,
+					1015,
+					1041,
+					1093,
+					1066,
+					1052,
+					1084,
+					1050,
+					1011,
+					1016,
+					1148
+				}
+			},
+			{
+				3,
+				{
+					1021
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1021,
+		activity_id = 282244,
+		character = 600,
+		id = 99,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2203
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1021,
+					1095,
+					1015,
+					1041,
+					1093,
+					1066,
+					1052,
+					1084,
+					1050,
+					1011,
+					1016,
+					1148
+				}
+			},
+			{
+				3,
+				{
+					1021
+				}
+			}
+		}
+	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1021,
+		activity_id = 282245,
+		character = 400,
+		id = 100,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2203
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1021,
+					1095,
+					1015,
+					1041,
+					1093,
+					1066,
+					1052,
+					1084,
+					1050,
+					1011,
+					1016,
+					1148
+				}
+			},
+			{
+				3,
+				{
+					1021
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1021,
+		activity_id = 282245,
+		character = 500,
+		id = 101,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2203
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1021,
+					1095,
+					1015,
+					1041,
+					1093,
+					1066,
+					1052,
+					1084,
+					1050,
+					1011,
+					1016,
+					1148
+				}
+			},
+			{
+				3,
+				{
+					1021
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1021,
+		activity_id = 282245,
+		character = 600,
+		id = 102,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2203
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1021,
+					1095,
+					1015,
+					1041,
+					1093,
+					1066,
+					1052,
+					1084,
+					1050,
+					1011,
+					1016,
+					1148
+				}
+			},
+			{
+				3,
+				{
+					1021
+				}
+			}
+		}
+	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1021,
+		activity_id = 282246,
+		character = 400,
+		id = 103,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2203
+		},
+		limit_hero = {
+			{
+				3,
+				{
+					1021
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1021,
+		activity_id = 282246,
+		character = 500,
+		id = 104,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2203
+		},
+		limit_hero = {
+			{
+				3,
+				{
+					1021
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1021,
+		activity_id = 282246,
+		character = 600,
+		id = 105,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2203
+		},
+		limit_hero = {
+			{
+				3,
+				{
+					1021
+				}
+			}
+		}
+	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1020,
+		activity_id = 292241,
+		character = 400,
+		id = 106,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1020
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1020,
+		activity_id = 292241,
+		character = 500,
+		id = 107,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1020
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1020,
+		activity_id = 292241,
+		character = 600,
+		id = 108,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1020
+				}
+			}
+		}
+	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1020,
+		activity_id = 292242,
+		character = 400,
+		id = 109,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1020
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1020,
+		activity_id = 292242,
+		character = 500,
+		id = 110,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1020
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1020,
+		activity_id = 292242,
+		character = 600,
+		id = 111,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1020
+				}
+			}
+		}
+	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1020,
+		activity_id = 292243,
+		character = 400,
+		id = 112,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				3,
+				{
+					1020
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1020,
+		activity_id = 292243,
+		character = 500,
+		id = 113,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				3,
+				{
+					1020
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1020,
+		activity_id = 292243,
+		character = 600,
+		id = 114,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				3,
+				{
+					1020
+				}
+			}
+		}
+	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1156,
+		activity_id = 292244,
+		character = 400,
+		id = 115,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2207
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1199,
+					1184,
+					1056,
+					1119,
+					1028,
+					1150,
+					1156
+				}
+			},
+			{
+				3,
+				{
+					1156
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1156,
+		activity_id = 292244,
+		character = 500,
+		id = 116,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2207
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1199,
+					1184,
+					1056,
+					1119,
+					1028,
+					1150,
+					1156
+				}
+			},
+			{
+				3,
+				{
+					1156
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1156,
+		activity_id = 292244,
+		character = 600,
+		id = 117,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2207
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1199,
+					1184,
+					1056,
+					1119,
+					1028,
+					1150,
+					1156
+				}
+			},
+			{
+				3,
+				{
+					1156
+				}
+			}
+		}
+	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1156,
+		activity_id = 292245,
+		character = 400,
+		id = 118,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2207
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1199,
+					1184,
+					1056,
+					1119,
+					1028,
+					1150,
+					1156
+				}
+			},
+			{
+				3,
+				{
+					1156
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1156,
+		activity_id = 292245,
+		character = 500,
+		id = 119,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2207
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1199,
+					1184,
+					1056,
+					1119,
+					1028,
+					1150,
+					1156
+				}
+			},
+			{
+				3,
+				{
+					1156
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1156,
+		activity_id = 292245,
+		character = 600,
+		id = 120,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2207
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1199,
+					1184,
+					1056,
+					1119,
+					1028,
+					1150,
+					1156
+				}
+			},
+			{
+				3,
+				{
+					1156
+				}
+			}
+		}
+	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1156,
+		activity_id = 292246,
+		character = 400,
+		id = 121,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2207
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1199,
+					1184,
+					1056,
+					1119,
+					1028,
+					1150,
+					1156
+				}
+			},
+			{
+				3,
+				{
+					1156
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1156,
+		activity_id = 292246,
+		character = 500,
+		id = 122,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2207
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1199,
+					1184,
+					1056,
+					1119,
+					1028,
+					1150,
+					1156
+				}
+			},
+			{
+				3,
+				{
+					1156
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1156,
+		activity_id = 292246,
+		character = 600,
+		id = 123,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2207
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1199,
+					1184,
+					1056,
+					1119,
+					1028,
+					1150,
+					1156
+				}
+			},
+			{
+				3,
+				{
+					1156
+				}
+			}
+		}
+	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1089,
+		activity_id = 292247,
+		character = 400,
+		id = 124,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1111,
+					1074,
+					1072,
+					1071,
+					1096,
+					1068,
+					1019,
+					1020,
+					1089
+				}
+			},
+			{
+				3,
+				{
+					1089
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1089,
+		activity_id = 292247,
+		character = 500,
+		id = 125,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1111,
+					1074,
+					1072,
+					1071,
+					1096,
+					1068,
+					1019,
+					1020,
+					1089
+				}
+			},
+			{
+				3,
+				{
+					1089
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1089,
+		activity_id = 292247,
+		character = 600,
+		id = 126,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1111,
+					1074,
+					1072,
+					1071,
+					1096,
+					1068,
+					1019,
+					1020,
+					1089
+				}
+			},
+			{
+				3,
+				{
+					1089
+				}
+			}
+		}
+	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1089,
+		activity_id = 292248,
+		character = 400,
+		id = 127,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1111,
+					1074,
+					1072,
+					1071,
+					1096,
+					1068,
+					1019,
+					1020,
+					1089
+				}
+			},
+			{
+				3,
+				{
+					1089
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1089,
+		activity_id = 292248,
+		character = 500,
+		id = 128,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1111,
+					1074,
+					1072,
+					1071,
+					1096,
+					1068,
+					1019,
+					1020,
+					1089
+				}
+			},
+			{
+				3,
+				{
+					1089
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1089,
+		activity_id = 292248,
+		character = 600,
+		id = 129,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1111,
+					1074,
+					1072,
+					1071,
+					1096,
+					1068,
+					1019,
+					1020,
+					1089
+				}
+			},
+			{
+				3,
+				{
+					1089
+				}
+			}
+		}
+	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1089,
+		activity_id = 292249,
+		character = 400,
+		id = 130,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1111,
+					1074,
+					1072,
+					1071,
+					1096,
+					1068,
+					1019,
+					1020,
+					1089
+				}
+			},
+			{
+				3,
+				{
+					1089
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1089,
+		activity_id = 292249,
+		character = 500,
+		id = 131,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1111,
+					1074,
+					1072,
+					1071,
+					1096,
+					1068,
+					1019,
+					1020,
+					1089
+				}
+			},
+			{
+				3,
+				{
+					1089
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1089,
+		activity_id = 292249,
+		character = 600,
+		id = 132,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2208
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1111,
+					1074,
+					1072,
+					1071,
+					1096,
+					1068,
+					1019,
+					1020,
+					1089
+				}
+			},
+			{
+				3,
+				{
+					1089
+				}
+			}
+		}
+	},
 	get_id_list_by_activity_id = {
+		[292249] = {
+			130,
+			131,
+			132
+		},
+		[292248] = {
+			127,
+			128,
+			129
+		},
+		[292247] = {
+			124,
+			125,
+			126
+		},
+		[292246] = {
+			121,
+			122,
+			123
+		},
+		[292245] = {
+			118,
+			119,
+			120
+		},
+		[292244] = {
+			115,
+			116,
+			117
+		},
+		[292243] = {
+			112,
+			113,
+			114
+		},
+		[292242] = {
+			109,
+			110,
+			111
+		},
+		[292241] = {
+			106,
+			107,
+			108
+		},
+		[282246] = {
+			103,
+			104,
+			105
+		},
+		[282245] = {
+			100,
+			101,
+			102
+		},
+		[282244] = {
+			97,
+			98,
+			99
+		},
+		[282243] = {
+			94,
+			95,
+			96
+		},
+		[282242] = {
+			91,
+			92,
+			93
+		},
+		[282241] = {
+			88,
+			89,
+			90
+		},
 		[272243] = {
 			85,
 			86,
@@ -2756,6 +4469,51 @@
 		84,
 		85,
 		86,
-		87
+		87,
+		88,
+		89,
+		90,
+		91,
+		92,
+		93,
+		94,
+		95,
+		96,
+		97,
+		98,
+		99,
+		100,
+		101,
+		102,
+		103,
+		104,
+		105,
+		106,
+		107,
+		108,
+		109,
+		110,
+		111,
+		112,
+		113,
+		114,
+		115,
+		116,
+		117,
+		118,
+		119,
+		120,
+		121,
+		122,
+		123,
+		124,
+		125,
+		126,
+		127,
+		128,
+		129,
+		130,
+		131,
+		132
 	}
 }

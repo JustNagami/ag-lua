@@ -15,6 +15,9 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3090002] = {
@@ -33,6 +36,9 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[3090003] = {
@@ -51,6 +57,9 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[3090004] = {
@@ -69,6 +78,9 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			4
 		}
 	},
 	[3090005] = {
@@ -87,6 +99,9 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			8
 		}
 	},
 	[3090006] = {
@@ -105,6 +120,9 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			2
 		}
 	},
 	[3090007] = {
@@ -123,6 +141,9 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			7
 		}
 	},
 	[3090008] = {
@@ -141,6 +162,9 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			6
 		}
 	},
 	[3090009] = {
@@ -159,6 +183,9 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3091001] = {
@@ -177,6 +204,10 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			3,
+			5
 		}
 	},
 	[3091002] = {
@@ -195,6 +226,10 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			4,
+			7
 		}
 	},
 	[3091003] = {
@@ -213,6 +248,10 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			1,
+			6
 		}
 	},
 	[3091004] = {
@@ -231,6 +270,10 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			2,
+			8
 		}
 	},
 	[3091005] = {
@@ -249,6 +292,10 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			3,
+			5
 		}
 	},
 	[3091006] = {
@@ -267,6 +314,10 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			4,
+			7
 		}
 	},
 	[3091007] = {
@@ -285,6 +336,10 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			1,
+			6
 		}
 	},
 	[3091008] = {
@@ -303,6 +358,10 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			2,
+			8
 		}
 	},
 	[3091009] = {
@@ -321,6 +380,10 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			3,
+			5
 		}
 	},
 	[3091010] = {
@@ -339,6 +402,10 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			3,
+			5
 		}
 	},
 	[3091011] = {
@@ -357,6 +424,10 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			1,
+			6
 		}
 	},
 	[3091012] = {
@@ -375,6 +446,10 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			2,
+			8
 		}
 	},
 	[3091013] = {
@@ -393,6 +468,10 @@
 		team_type = {
 			104,
 			0
+		},
+		recommend_team = {
+			4,
+			7
 		}
 	},
 	all = {

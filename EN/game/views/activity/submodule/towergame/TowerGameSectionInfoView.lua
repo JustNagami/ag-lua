@@ -15,6 +15,9 @@ end
 
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
+
+	arg_4_0.sectionImage_.immediate = true
+
 	SetActive(arg_4_0.rewardPanel_, false)
 	SetActive(arg_4_0.multiplePanel_, false)
 	SetActive(arg_4_0.resourcePanel_, false)
@@ -59,7 +62,7 @@ function var_0_0.RefreshUI(arg_10_0)
 	local var_10_0 = BattleTowerGameCfg[arg_10_0.stageid_]
 
 	arg_10_0.sectionName_.text = GetI18NText(var_10_0.name)
-	arg_10_0.sectionImage_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_10_0.background_1))
+	arg_10_0.sectionImage_.spriteSync = string.format("%s%s", SpritePathCfg.Stage.path, var_10_0.background_1)
 	arg_10_0.tipsText_.text = GetI18NText(var_10_0.tips)
 
 	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_10_0.tipsTextContentTrans_)

@@ -14,6 +14,8 @@ function var_0_0.InitData(arg_2_0, arg_2_1)
 	var_0_1[var_2_0] = arg_2_1.day
 	var_0_2[var_2_0] = arg_2_1.mission_list
 	var_0_3[var_2_0] = arg_2_1.talent_list
+
+	manager.notify:CallUpdateFunc("OnActivityHeroEnhanceDataInit")
 end
 
 local function var_0_4(arg_3_0, arg_3_1)

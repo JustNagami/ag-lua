@@ -940,6 +940,336 @@
 			}
 		}
 	},
+	[35] = {
+		camera_edit = 104,
+		load_max = 1000,
+		camera_preview = 101,
+		type = 3,
+		name = "b7f84b8282544a872470158fb9ff8516",
+		desc = "36031faf7339e3d2bf30f70a8a334275",
+		scene = "HZ05",
+		id = 35,
+		unlock_cost = {
+			{
+				41701,
+				800
+			}
+		},
+		default_item = {
+			{
+				951013,
+				1
+			},
+			{
+				951014,
+				1
+			},
+			{
+				951027,
+				1
+			}
+		}
+	},
+	[36] = {
+		camera_edit = 104,
+		load_max = 1000,
+		camera_preview = 101,
+		type = 3,
+		name = "d7530525b26ada635da076c73ba6f8cf",
+		desc = "c8a345a2391d8fafb862175db65dbd3b",
+		scene = "HZ05",
+		id = 36,
+		unlock_cost = {
+			{
+				41701,
+				800
+			}
+		},
+		default_item = {
+			{
+				951013,
+				1
+			},
+			{
+				951014,
+				1
+			},
+			{
+				951027,
+				1
+			}
+		}
+	},
+	[37] = {
+		camera_edit = 104,
+		load_max = 1000,
+		camera_preview = 101,
+		type = 3,
+		name = "3bb5abec9f0a98643a0853a4219b5612",
+		desc = "9bda5799c805a62b0f51bf0a62e997b5",
+		scene = "HZ05",
+		id = 37,
+		unlock_cost = {
+			{
+				41701,
+				800
+			}
+		},
+		default_item = {
+			{
+				951013,
+				1
+			},
+			{
+				951014,
+				1
+			},
+			{
+				951027,
+				1
+			}
+		}
+	},
+	[38] = {
+		camera_edit = 104,
+		load_max = 1000,
+		camera_preview = 101,
+		type = 3,
+		name = "d1e05726ce4b2119fb09051ef07154a1",
+		desc = "5055feb203cdfdf4d16f7a8706cf32c5",
+		scene = "HZ05",
+		id = 38,
+		unlock_cost = {
+			{
+				41701,
+				800
+			}
+		},
+		default_item = {
+			{
+				951013,
+				1
+			},
+			{
+				951014,
+				1
+			},
+			{
+				951027,
+				1
+			}
+		}
+	},
+	[39] = {
+		camera_edit = 104,
+		load_max = 1000,
+		camera_preview = 101,
+		type = 3,
+		name = "6b4dc90112f3ceb2c2d9d87b65bc47d9",
+		desc = "60dcf39d9f5b988a3802941e69917223",
+		scene = "HZ05",
+		id = 39,
+		unlock_cost = {
+			{
+				41701,
+				800
+			}
+		},
+		default_item = {
+			{
+				951013,
+				1
+			},
+			{
+				951014,
+				1
+			},
+			{
+				951027,
+				1
+			}
+		}
+	},
+	[40] = {
+		camera_edit = 104,
+		load_max = 1000,
+		camera_preview = 101,
+		type = 3,
+		name = "a0495fd5f67f1b5cfed1e8b28998c404",
+		desc = "e8368c78af26a7622afec3b6a5bf7c06",
+		scene = "HZ05",
+		id = 40,
+		unlock_cost = {
+			{
+				41701,
+				800
+			}
+		},
+		default_item = {
+			{
+				951013,
+				1
+			},
+			{
+				951014,
+				1
+			},
+			{
+				951027,
+				1
+			}
+		}
+	},
+	[41] = {
+		camera_edit = 104,
+		load_max = 1000,
+		camera_preview = 101,
+		type = 3,
+		name = "948309dfeaee9ee5fc5d8e49c80f7945",
+		desc = "e9022e2caee7d995617254e5c9759a1e",
+		scene = "HZ05",
+		id = 41,
+		unlock_cost = {
+			{
+				41701,
+				800
+			}
+		},
+		default_item = {
+			{
+				951013,
+				1
+			},
+			{
+				951014,
+				1
+			},
+			{
+				951027,
+				1
+			}
+		}
+	},
+	[42] = {
+		camera_edit = 104,
+		load_max = 1000,
+		camera_preview = 101,
+		type = 3,
+		name = "3c762ec54febcedb4fd09ff69138b942",
+		desc = "097181a1dbd789b72d329433c09d09c4",
+		scene = "HZ05",
+		id = 42,
+		unlock_cost = {
+			{
+				41701,
+				800
+			}
+		},
+		default_item = {
+			{
+				951013,
+				1
+			},
+			{
+				951014,
+				1
+			},
+			{
+				951027,
+				1
+			}
+		}
+	},
+	[43] = {
+		camera_edit = 104,
+		load_max = 1000,
+		camera_preview = 101,
+		type = 3,
+		name = "311115cef4e9022bbf1a5ed26bc26360",
+		desc = "7d8c215268c75d88af2d6f576dfcd9ff",
+		scene = "HZ05",
+		id = 43,
+		unlock_cost = {
+			{
+				41701,
+				800
+			}
+		},
+		default_item = {
+			{
+				951013,
+				1
+			},
+			{
+				951014,
+				1
+			},
+			{
+				951027,
+				1
+			}
+		}
+	},
+	[44] = {
+		camera_edit = 104,
+		load_max = 1000,
+		camera_preview = 101,
+		type = 3,
+		name = "2b9fd75540b79674192dd5926264d200",
+		desc = "7bc89d440745803c513b3a03541b95ac",
+		scene = "HZ05",
+		id = 44,
+		unlock_cost = {
+			{
+				41701,
+				800
+			}
+		},
+		default_item = {
+			{
+				951013,
+				1
+			},
+			{
+				951014,
+				1
+			},
+			{
+				951027,
+				1
+			}
+		}
+	},
+	[45] = {
+		camera_edit = 104,
+		load_max = 1000,
+		camera_preview = 101,
+		type = 3,
+		name = "ea8e3ff64bcf68a587753901617f70cb",
+		desc = "4f9cb1dcc9cd1cc8daaa5c185d92efa4",
+		scene = "HZ05",
+		id = 45,
+		unlock_cost = {
+			{
+				41701,
+				800
+			}
+		},
+		default_item = {
+			{
+				951013,
+				1
+			},
+			{
+				951014,
+				1
+			},
+			{
+				951027,
+				1
+			}
+		}
+	},
 	[1001] = {
 		camera_edit = 106,
 		load_max = 1000,
@@ -996,6 +1326,17 @@
 		32,
 		33,
 		34,
+		35,
+		36,
+		37,
+		38,
+		39,
+		40,
+		41,
+		42,
+		43,
+		44,
+		45,
 		1001,
 		1002
 	}

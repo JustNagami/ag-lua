@@ -70,6 +70,11 @@ function var_0_0.RefreshUI(arg_7_0, arg_7_1, arg_7_2, arg_7_3, arg_7_4, arg_7_5,
 		arg_7_0.id = arg_7_1.furID
 
 		arg_7_0:RefreshTemplateShow(arg_7_1, arg_7_2)
+	elseif arg_7_3 == DormEnum.FurItemType.Illu then
+		arg_7_0.id = arg_7_1.furID
+
+		arg_7_0:RefreshIlluShow(arg_7_1)
+		arg_7_0:BindIlluRedPoint()
 	end
 
 	arg_7_0.cfg = ItemCfg[arg_7_0.id]
@@ -394,43 +399,66 @@ function var_0_0.RefreshTemplateShow(arg_13_0, arg_13_1, arg_13_2)
 	end
 end
 
-function var_0_0.ShowSelect(arg_14_0, arg_14_1)
-	if arg_14_1 and not arg_14_0.showSel then
-		if arg_14_0.id == arg_14_1 then
-			arg_14_0.selectController:SetSelectedState("select")
-		else
-			arg_14_0.selectController:SetSelectedState("normal")
-		end
+function var_0_0.RefreshIlluShow(arg_14_0, arg_14_1)
+	if BackHomeFurniture[arg_14_0.id].interact_max and BackHomeFurniture[arg_14_0.id].interact_max > 0 then
+		arg_14_0.interactController:SetSelectedState("true")
 	else
-		arg_14_0.selectController:SetSelectedState("normal")
+		arg_14_0.interactController:SetSelectedState("false")
+	end
+
+	if arg_14_1.num > 0 then
+		arg_14_0.limitController:SetSelectedState("normal")
+	else
+		arg_14_0.limitController:SetSelectedState("gray")
 	end
 end
 
-function var_0_0.SetItemShow(arg_15_0, arg_15_1)
-	arg_15_0.canClick = arg_15_1.canClick
-	arg_15_0.showSel = arg_15_1.showSel
+function var_0_0.ShowSelect(arg_15_0, arg_15_1)
+	if arg_15_1 and not arg_15_0.showSel then
+		if arg_15_0.id == arg_15_1 then
+			arg_15_0.selectController:SetSelectedState("select")
+		else
+			arg_15_0.selectController:SetSelectedState("normal")
+		end
+	else
+		arg_15_0.selectController:SetSelectedState("normal")
+	end
 end
 
-function var_0_0.OnPointerDown(arg_16_0, arg_16_1)
-	arg_16_0.downFunc = arg_16_1
+function var_0_0.SetItemShow(arg_16_0, arg_16_1)
+	arg_16_0.canClick = arg_16_1.canClick
+	arg_16_0.showSel = arg_16_1.showSel
 end
 
-function var_0_0.OnClickBtn(arg_17_0, arg_17_1)
-	arg_17_0.click = arg_17_1
+function var_0_0.OnPointerDown(arg_17_0, arg_17_1)
+	arg_17_0.downFunc = arg_17_1
 end
 
-function var_0_0.GrayCallBack(arg_18_0, arg_18_1)
-	arg_18_0.grayBtnFunc = arg_18_1
+function var_0_0.OnClickBtn(arg_18_0, arg_18_1)
+	arg_18_0.click = arg_18_1
 end
 
-function var_0_0.ItemInfoCallBack(arg_19_0, arg_19_1)
-	arg_19_0.itemInfoFunc = arg_19_1
+function var_0_0.GrayCallBack(arg_19_0, arg_19_1)
+	arg_19_0.grayBtnFunc = arg_19_1
 end
 
-function var_0_0.Dispose(arg_20_0)
-	arg_20_0:RemoveAllListeners()
-	arg_20_0.onClickCom_.onValueChanged:RemoveAllListeners()
-	var_0_0.super.Dispose(arg_20_0)
+function var_0_0.ItemInfoCallBack(arg_20_0, arg_20_1)
+	arg_20_0.itemInfoFunc = arg_20_1
+end
+
+function var_0_0.Dispose(arg_21_0)
+	arg_21_0:UnBindIlluRedPoint()
+	arg_21_0:RemoveAllListeners()
+	arg_21_0.onClickCom_.onValueChanged:RemoveAllListeners()
+	var_0_0.super.Dispose(arg_21_0)
+end
+
+function var_0_0.BindIlluRedPoint(arg_22_0)
+	manager.redPoint:bindUIandKey(arg_22_0.transform_, RedPointConst.DORM_ILLU_FUR .. arg_22_0.id)
+end
+
+function var_0_0.UnBindIlluRedPoint(arg_23_0)
+	manager.redPoint:unbindUIandKey(arg_23_0.transform_)
 end
 
 return var_0_0

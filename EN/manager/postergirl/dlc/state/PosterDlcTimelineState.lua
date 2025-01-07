@@ -1,47 +1,111 @@
-﻿local var_0_0 = class("PosterDlcTimelineState", PosterGirlBaseState)
+﻿local var_0_0 = class("PosterDlcTimelineState", PosterCommonTimelineState)
 
-function var_0_0.Ctor(arg_1_0, arg_1_1)
-	var_0_0.super.Ctor(arg_1_0, arg_1_1)
+local function var_0_1(arg_1_0, arg_1_1)
+	local var_1_0 = string.format("%d_%s", arg_1_0, arg_1_1)
+	local var_1_1 = HeroInteractActionCfg and HeroInteractActionCfg[var_1_0]
 
-	arg_1_0.playableStopped = handler(arg_1_0, arg_1_0.TimelineStopCallback)
+	if var_1_1 then
+		return var_1_1
+	end
+
+	return {
+		action = "default",
+		type = 0,
+		embed_list = {}
+	}
 end
 
-function var_0_0.Enter(arg_2_0)
+function var_0_0.Ctor(arg_2_0, arg_2_1)
+	var_0_0.super.Ctor(arg_2_0, arg_2_1)
+end
+
+function var_0_0.Enter(arg_3_0)
+	var_0_0.super.Enter(arg_3_0)
 	manager.ui:SetMainCameraCom("CinemachineBrain", true)
 end
 
-function var_0_0.PlayAni(arg_3_0, arg_3_1)
-	arg_3_0.playable, arg_3_0.timeLintGo = arg_3_0.actor:GetPlayable(arg_3_1)
+function var_0_0.PlayAni(arg_4_0, arg_4_1)
+	local var_4_0 = var_0_1(arg_4_0.actor:GetSkinId(), arg_4_1)
 
-	SetActive(arg_3_0.timeLintGo, true)
+	if var_4_0.type == 1 then
+		arg_4_0.playingSeq_ = var_4_0.embed_list
 
-	if arg_3_0.playable == nil then
-		print("PosterDlcTimelineState error find clipName:" .. arg_3_1)
+		arg_4_0:PlaySequence(1)
+	else
+		local var_4_1 = var_4_0.embed_list[1] or arg_4_1
+
+		manager.heroUiTimeline:PlayAction(var_4_1, {
+			fadeSecond = 0,
+			talking = arg_4_0.talking_,
+			isLoop = arg_4_1 == "action1_1" and true or nil
+		})
+		manager.heroUiTimeline:SetCallbackStopped(function(arg_5_0)
+			if arg_4_0.forceExiting_ then
+				arg_4_0.forceExiting_ = nil
+				arg_5_0.time = arg_5_0.duration
+
+				arg_5_0:Evaluate()
+			end
+
+			arg_4_0:TimelineStopCallback()
+		end)
 	end
-
-	arg_3_0.playable.stopped = arg_3_0.playable.stopped + arg_3_0.playableStopped
-
-	arg_3_0.playable:RebuildGraph()
-	arg_3_0.playable:Play()
 end
 
-function var_0_0.TimelineStopCallback(arg_4_0)
-	arg_4_0.actor:ChangeState(PosterGirlConst.StateKay.init)
+function var_0_0.TimelineStopCallback(arg_6_0)
+	arg_6_0:PlayNextAni()
 end
 
-function var_0_0.Exit(arg_5_0, arg_5_1)
+function var_0_0.Exit(arg_7_0, arg_7_1)
+	arg_7_0.playingSeq_ = nil
+	arg_7_0.playingSeqIdx_ = nil
+
 	manager.ui:SetMainCameraCom("CinemachineBrain", false)
 
-	arg_5_0.playable.stopped = arg_5_0.playable.stopped - arg_5_0.playableStopped
+	arg_7_0.forceExiting_ = arg_7_1
 
-	if arg_5_1 then
-		arg_5_0.playable.time = arg_5_0.playable.duration
+	var_0_0.super.Exit(arg_7_0, arg_7_1)
+end
 
-		arg_5_0.playable:Evaluate()
+function var_0_0.PlayNextAni(arg_8_0)
+	if arg_8_0.playingSeq_ and #arg_8_0.playingSeq_ > arg_8_0.playingSeqIdx_ then
+		manager.heroUiTimeline:SetCallbackStopped(nil)
+		arg_8_0:PlaySequence(arg_8_0.playingSeqIdx_ + 1)
+
+		return
 	end
 
-	arg_5_0.playable:Stop()
-	SetActive(arg_5_0.timeLintGo, false)
+	arg_8_0.actor:ChangeState(PosterGirlConst.StateKay.init)
+end
+
+function var_0_0.CanPlayNextAni(arg_9_0)
+	if arg_9_0.playingSeq_ then
+		local var_9_0 = var_0_1(arg_9_0.actor:GetSkinId(), arg_9_0.playingSeq_[arg_9_0.playingSeqIdx_])
+
+		if var_9_0.click_to_skip == 1 or var_9_0.click_to_skip == true then
+			return true
+		end
+	end
+
+	return false
+end
+
+function var_0_0.PlaySequence(arg_10_0, arg_10_1)
+	arg_10_0.playingSeqIdx_ = arg_10_1
+
+	arg_10_0:PlayAni(arg_10_0.playingSeq_[arg_10_1])
+end
+
+function var_0_0.PlayAniWithParams(arg_11_0, arg_11_1)
+	local var_11_0 = arg_11_0.actor:GetSceneID()
+	local var_11_1 = HomeSceneSettingCfg[var_11_0]
+	local var_11_2 = var_11_1 and var_11_1.action_suffix
+
+	if string.isNullOrEmpty(var_11_2) then
+		arg_11_0:PlayAni(arg_11_1)
+	else
+		arg_11_0:PlayAni(string.format("%s__%s", arg_11_1, var_11_2))
+	end
 end
 
 return var_0_0

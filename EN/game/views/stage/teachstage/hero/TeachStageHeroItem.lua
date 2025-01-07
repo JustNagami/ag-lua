@@ -11,6 +11,7 @@ end
 function var_0_0.InitUI(arg_2_0)
 	arg_2_0:BindCfgUI()
 
+	arg_2_0.icon_.immediate = true
 	arg_2_0.indexcontroller_ = ControllerUtil.GetController(arg_2_0.transform_, "index")
 	arg_2_0.selectcontroller_ = ControllerUtil.GetController(arg_2_0.transform_, "select")
 end
@@ -49,7 +50,7 @@ end
 function var_0_0.SetHeroID(arg_8_0, arg_8_1)
 	if arg_8_0.heroID_ ~= arg_8_1 then
 		arg_8_0.heroID_ = arg_8_1
-		arg_8_0.icon_.sprite = getSpriteViaConfig("HeroIcon", SkinCfg[arg_8_1].picture_id)
+		arg_8_0.icon_.spriteSync = getSpritePathViaConfig("HeroIcon", SkinCfg[arg_8_1].picture_id)
 	end
 
 	local var_8_0 = HeroData:GetHeroData(arg_8_1)

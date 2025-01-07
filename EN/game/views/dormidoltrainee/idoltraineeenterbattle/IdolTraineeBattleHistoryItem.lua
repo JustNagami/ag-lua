@@ -9,6 +9,9 @@ end
 
 function var_0_0.Init(arg_2_0)
 	arg_2_0:InitUI()
+
+	arg_2_0.commonPortrait_ = CommonHeadPortrait.New(arg_2_0.headItem_)
+
 	arg_2_0:AddUIListener()
 end
 
@@ -24,8 +27,9 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1)
 	arg_4_0.userID = arg_4_1.userID
 	arg_4_0.friendType = FriendsData:IsFriend(arg_4_0.userID) and 1 or 2
 	arg_4_0.name_.text = arg_4_1.nick
-	arg_4_0.playerIcon_.sprite = ItemTools.getItemSprite(arg_4_1.icon)
-	arg_4_0.frameImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_4_1.icon_frame)
+
+	arg_4_0.commonPortrait_:RenderHead(arg_4_1.icon)
+	arg_4_0.commonPortrait_:RenderFrame(arg_4_1.icon_frame)
 
 	if arg_4_0.friendType == IdolTraineeConst.friendType.friend then
 		arg_4_0.firendController:SetSelectedState("friend")
@@ -51,7 +55,7 @@ function var_0_0.AddUIListener(arg_5_0)
 
 		BackHomeCricketAction:AskPvPBattleData(arg_5_0.userID, var_8_0)
 	end)
-	arg_5_0:AddBtnListener(arg_5_0.playerBtn_, nil, function()
+	arg_5_0.commonPortrait_:RegisteClickCallback(function()
 		if arg_5_0.userID then
 			ForeignInfoAction:TryToCheckForeignDetailInfo(arg_5_0.userID)
 		end
@@ -59,6 +63,9 @@ function var_0_0.AddUIListener(arg_5_0)
 end
 
 function var_0_0.Dispose(arg_10_0)
+	arg_10_0.commonPortrait_:Dispose()
+
+	arg_10_0.commonPortrait_ = nil
 	arg_10_0.gameObject_ = nil
 	arg_10_0.transform_ = nil
 

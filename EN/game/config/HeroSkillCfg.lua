@@ -10,8 +10,10 @@
 			101050101
 		},
 		strengthen_desc = {
-			105021,
-			211050101
+			{
+				105021,
+				21105010121
+			}
 		},
 		element_type = {
 			0
@@ -31,8 +33,10 @@
 			101050201
 		},
 		strengthen_desc = {
-			105022,
-			211050201
+			{
+				105022,
+				21105020122
+			}
 		},
 		element_type = {
 			0
@@ -52,8 +56,10 @@
 			101050202
 		},
 		strengthen_desc = {
-			105023,
-			211050202
+			{
+				105023,
+				21105020223
+			}
 		},
 		element_type = {
 			0
@@ -74,8 +80,10 @@
 			101050221
 		},
 		strengthen_desc = {
-			105041,
-			211050221
+			{
+				105041,
+				21105022141
+			}
 		},
 		element_type = {
 			0
@@ -92,8 +100,10 @@
 			101050203
 		},
 		strengthen_desc = {
-			105024,
-			211050203
+			{
+				105024,
+				21105020324
+			}
 		},
 		element_type = {
 			0
@@ -250,13 +260,18 @@
 	[1052101] = {
 		name = "3d7f60359b04dc954d06fc965e3f7ebe",
 		cd = 0,
-		strengthen_desc = "",
 		simpleDesc = "1fcacfc190298da28ab15ca2c4676981",
 		MaxUseCount = 0,
 		id = 1052101,
 		EnergyChange = 0,
 		desc = {
 			101052101
+		},
+		strengthen_desc = {
+			{
+				105221,
+				21105210121
+			}
 		},
 		element_type = {
 			0
@@ -268,13 +283,18 @@
 	[1052201] = {
 		name = "5624325c29ca045ce4d3348399357f82",
 		cd = 12000,
-		strengthen_desc = "",
 		simpleDesc = "f885e026676a8ed297eb6d2f263e612a",
 		MaxUseCount = 0,
 		id = 1052201,
 		EnergyChange = 0,
 		desc = {
 			101052201
+		},
+		strengthen_desc = {
+			{
+				105222,
+				21105220122
+			}
 		},
 		element_type = {
 			0
@@ -286,13 +306,18 @@
 	[1052202] = {
 		name = "5afc2f47951ac5ceaf3da7c1506778a9",
 		cd = 13000,
-		strengthen_desc = "",
 		simpleDesc = "e48bb4c73ceb6d2b05c9b7e9812ebda7",
 		MaxUseCount = 0,
 		id = 1052202,
 		EnergyChange = -30,
 		desc = {
 			101052202
+		},
+		strengthen_desc = {
+			{
+				105223,
+				21105220223
+			}
 		},
 		element_type = {
 			0
@@ -304,13 +329,18 @@
 	[1052221] = {
 		name = "e733a31620e850fd7e8f33eb55b6aa61",
 		cd = 13000,
-		strengthen_desc = "",
 		simpleDesc = "275a765f2bdf1551f3153304971ee911",
 		MaxUseCount = 0,
 		id = 1052221,
 		EnergyChange = -30,
 		desc = {
 			101052221
+		},
+		strengthen_desc = {
+			{
+				105225,
+				21105222125
+			}
 		},
 		element_type = {
 			0
@@ -322,13 +352,18 @@
 	[1052203] = {
 		name = "8af64c81df6b573e7dc6701a15fd3a0d",
 		cd = 13000,
-		strengthen_desc = "",
 		simpleDesc = "19e5e733e4b3804fd9e08571bc0bb648",
 		MaxUseCount = 0,
 		id = 1052203,
 		EnergyChange = -30,
 		desc = {
 			101052203
+		},
+		strengthen_desc = {
+			{
+				105224,
+				21105220324
+			}
 		},
 		element_type = {
 			0
@@ -341,13 +376,18 @@
 	[1052231] = {
 		name = "1b87714689069fae9d4f495aa4eac79d",
 		cd = 13000,
-		strengthen_desc = "",
 		simpleDesc = "b5d3047668288635bfa77f5f58d74db1",
 		MaxUseCount = 0,
 		id = 1052231,
 		EnergyChange = -30,
 		desc = {
 			101052231
+		},
+		strengthen_desc = {
+			{
+				105226,
+				21105223126
+			}
 		},
 		element_type = {
 			0
@@ -401,8 +441,10 @@
 			101066101
 		},
 		strengthen_desc = {
-			106621,
-			211066101
+			{
+				106621,
+				21106610121
+			}
 		},
 		element_type = {
 			0
@@ -438,8 +480,10 @@
 			101066202
 		},
 		strengthen_desc = {
-			106622,
-			211066202
+			{
+				106622,
+				21106620222
+			}
 		},
 		element_type = {
 			0
@@ -460,8 +504,10 @@
 			101066203
 		},
 		strengthen_desc = {
-			106623,
-			211066203
+			{
+				106623,
+				21106620323
+			}
 		},
 		element_type = {
 			0
@@ -481,8 +527,10 @@
 			101066231
 		},
 		strengthen_desc = {
-			106624,
-			211066231
+			{
+				106624,
+				21106623124
+			}
 		},
 		element_type = {
 			0
@@ -536,8 +584,10 @@
 			101048101
 		},
 		strengthen_desc = {
-			104821,
-			211048101
+			{
+				104821,
+				21104810121
+			}
 		},
 		element_type = {
 			12
@@ -557,8 +607,10 @@
 			101048201
 		},
 		strengthen_desc = {
-			104822,
-			211048201
+			{
+				104822,
+				21104820122
+			}
 		},
 		element_type = {
 			12
@@ -579,8 +631,10 @@
 			101048211
 		},
 		strengthen_desc = {
-			104825,
-			211048211
+			{
+				104825,
+				21104821125
+			}
 		},
 		element_type = {
 			12
@@ -597,8 +651,10 @@
 			101048202
 		},
 		strengthen_desc = {
-			104823,
-			211048202
+			{
+				104823,
+				21104820223
+			}
 		},
 		element_type = {
 			12
@@ -618,8 +674,10 @@
 			101048203
 		},
 		strengthen_desc = {
-			104824,
-			211048203
+			{
+				104824,
+				21104820324
+			}
 		},
 		element_type = {
 			12
@@ -681,8 +739,10 @@
 			101148101
 		},
 		strengthen_desc = {
-			114821,
-			211148101
+			{
+				114821,
+				21114810121
+			}
 		},
 		element_type = {
 			0
@@ -702,8 +762,10 @@
 			101148201
 		},
 		strengthen_desc = {
-			114822,
-			211148201
+			{
+				114822,
+				21114820122
+			}
 		},
 		element_type = {
 			0
@@ -723,8 +785,10 @@
 			101148202
 		},
 		strengthen_desc = {
-			114823,
-			211148202
+			{
+				114823,
+				21114820223
+			}
 		},
 		element_type = {
 			0
@@ -744,8 +808,10 @@
 			101148203
 		},
 		strengthen_desc = {
-			114824,
-			211148203
+			{
+				114824,
+				21114820324
+			}
 		},
 		element_type = {
 			0
@@ -799,8 +865,10 @@
 			101039101
 		},
 		strengthen_desc = {
-			103921,
-			211039101
+			{
+				103921,
+				21103910121
+			}
 		},
 		element_type = {
 			8
@@ -868,8 +936,10 @@
 			101039203
 		},
 		strengthen_desc = {
-			103922,
-			211039203
+			{
+				103922,
+				21103920322
+			}
 		},
 		element_type = {
 			8
@@ -921,8 +991,10 @@
 			101139101
 		},
 		strengthen_desc = {
-			113921,
-			211139101
+			{
+				113921,
+				21113910121
+			}
 		},
 		element_type = {
 			6
@@ -942,8 +1014,10 @@
 			101139201
 		},
 		strengthen_desc = {
-			113922,
-			211139201
+			{
+				113922,
+				21113920122
+			}
 		},
 		element_type = {
 			6
@@ -963,8 +1037,10 @@
 			101139202
 		},
 		strengthen_desc = {
-			113923,
-			211139202
+			{
+				113923,
+				21113920223
+			}
 		},
 		element_type = {
 			6
@@ -985,8 +1061,10 @@
 			101139203
 		},
 		strengthen_desc = {
-			113924,
-			211139203
+			{
+				113924,
+				21113920324
+			}
 		},
 		element_type = {
 			6
@@ -1029,13 +1107,18 @@
 	[1035101] = {
 		name = "bec32cc5d64c76ed64d6c4f9787b288a",
 		cd = 0,
-		strengthen_desc = "",
 		simpleDesc = "c7ecb43804f3a5692018e54a76108105",
 		MaxUseCount = 0,
 		id = 1035101,
 		EnergyChange = 2,
 		desc = {
 			101035101
+		},
+		strengthen_desc = {
+			{
+				103521,
+				21103510121
+			}
 		},
 		element_type = {
 			8
@@ -1047,7 +1130,6 @@
 	[1035201] = {
 		name = "22a5b1ff87db9885831338bd08ef5b26",
 		cd = 12000,
-		strengthen_desc = "",
 		simpleDesc = "86e2f840ff9fb06407584425074bf1d8",
 		MaxUseCount = 0,
 		abilities = "",
@@ -1056,6 +1138,12 @@
 		desc = {
 			101035201
 		},
+		strengthen_desc = {
+			{
+				103522,
+				21103520122
+			}
+		},
 		element_type = {
 			8
 		}
@@ -1063,13 +1151,18 @@
 	[1035202] = {
 		name = "0b55cbabfcd9da26816224a804e25050",
 		cd = 9000,
-		strengthen_desc = "",
 		simpleDesc = "53c9e3f508880f974faed0d083228e6e",
 		MaxUseCount = 0,
 		id = 1035202,
 		EnergyChange = -25,
 		desc = {
 			101035202
+		},
+		strengthen_desc = {
+			{
+				103523,
+				21103520223
+			}
 		},
 		element_type = {
 			8
@@ -1082,13 +1175,18 @@
 	[1035203] = {
 		name = "e9b3d7b5fe4e3cf2f393bdc6fa40ac26",
 		cd = 10000,
-		strengthen_desc = "",
 		simpleDesc = "53e713719082dbbf69ba4085902c58d9",
 		MaxUseCount = 0,
 		id = 1035203,
 		EnergyChange = -20,
 		desc = {
 			101035203
+		},
+		strengthen_desc = {
+			{
+				103524,
+				21103520324
+			}
 		},
 		element_type = {
 			8
@@ -1394,8 +1492,10 @@
 			101027101
 		},
 		strengthen_desc = {
-			102721,
-			211027101
+			{
+				102721,
+				21102710121
+			}
 		},
 		element_type = {
 			6
@@ -1415,8 +1515,10 @@
 			101027201
 		},
 		strengthen_desc = {
-			102722,
-			211027201
+			{
+				102722,
+				21102720122
+			}
 		},
 		element_type = {
 			6
@@ -1437,8 +1539,10 @@
 			101027202
 		},
 		strengthen_desc = {
-			102723,
-			211027202
+			{
+				102723,
+				21102720223
+			}
 		},
 		element_type = {
 			6
@@ -1456,8 +1560,10 @@
 			101027221
 		},
 		strengthen_desc = {
-			102741,
-			211027221
+			{
+				102741,
+				21102722141
+			}
 		},
 		element_type = {
 			6
@@ -1474,8 +1580,10 @@
 			101027203
 		},
 		strengthen_desc = {
-			102724,
-			211027203
+			{
+				102724,
+				21102720324
+			}
 		},
 		element_type = {
 			6
@@ -1528,8 +1636,10 @@
 			101127101
 		},
 		strengthen_desc = {
-			112721,
-			211127101
+			{
+				112721,
+				21112710121
+			}
 		},
 		element_type = {
 			8
@@ -1549,8 +1659,10 @@
 			101127201
 		},
 		strengthen_desc = {
-			112722,
-			211127201
+			{
+				112722,
+				21112720122
+			}
 		},
 		element_type = {
 			8
@@ -1571,8 +1683,10 @@
 			101127202
 		},
 		strengthen_desc = {
-			112723,
-			211127202
+			{
+				112723,
+				21112720223
+			}
 		},
 		element_type = {
 			8
@@ -1592,8 +1706,10 @@
 			101127203
 		},
 		strengthen_desc = {
-			112724,
-			211127203
+			{
+				112724,
+				21112720324
+			}
 		},
 		element_type = {
 			8
@@ -1645,8 +1761,10 @@
 			101028101
 		},
 		strengthen_desc = {
-			102821,
-			211028101
+			{
+				102821,
+				21102810121
+			}
 		},
 		element_type = {
 			14
@@ -1666,8 +1784,10 @@
 			101028201
 		},
 		strengthen_desc = {
-			102822,
-			211028201
+			{
+				102822,
+				21102820122
+			}
 		},
 		element_type = {
 			14
@@ -1687,8 +1807,10 @@
 			101028202
 		},
 		strengthen_desc = {
-			102823,
-			211028202
+			{
+				102823,
+				21102820223
+			}
 		},
 		element_type = {
 			14
@@ -1708,8 +1830,10 @@
 			101028203
 		},
 		strengthen_desc = {
-			102824,
-			211028203
+			{
+				102824,
+				21102820324
+			}
 		},
 		element_type = {
 			14
@@ -1763,8 +1887,10 @@
 			101019101
 		},
 		strengthen_desc = {
-			101921,
-			211019101
+			{
+				101921,
+				21101910121
+			}
 		},
 		element_type = {
 			2
@@ -1784,8 +1910,10 @@
 			101019201
 		},
 		strengthen_desc = {
-			101922,
-			211019201
+			{
+				101922,
+				21101920122
+			}
 		},
 		element_type = {
 			2
@@ -1808,8 +1936,10 @@
 			101019202
 		},
 		strengthen_desc = {
-			101923,
-			211019202
+			{
+				101923,
+				21101920223
+			}
 		},
 		element_type = {
 			2
@@ -1829,8 +1959,10 @@
 			101019203
 		},
 		strengthen_desc = {
-			101924,
-			211019203
+			{
+				101924,
+				21101920324
+			}
 		},
 		element_type = {
 			2
@@ -1850,8 +1982,10 @@
 			101019233
 		},
 		strengthen_desc = {
-			101925,
-			211019233
+			{
+				101925,
+				21101923325
+			}
 		},
 		element_type = {
 			2
@@ -1905,8 +2039,10 @@
 			101119101
 		},
 		strengthen_desc = {
-			111921,
-			211119101
+			{
+				111921,
+				21111910121
+			}
 		},
 		element_type = {
 			14
@@ -1926,8 +2062,10 @@
 			101119201
 		},
 		strengthen_desc = {
-			111922,
-			211119201
+			{
+				111922,
+				21111920122
+			}
 		},
 		element_type = {
 			14
@@ -1947,8 +2085,10 @@
 			101119202
 		},
 		strengthen_desc = {
-			111923,
-			211119202
+			{
+				111923,
+				21111920223
+			}
 		},
 		element_type = {
 			14
@@ -1968,8 +2108,10 @@
 			101119203
 		},
 		strengthen_desc = {
-			111924,
-			211119203
+			{
+				111924,
+				21111920324
+			}
 		},
 		element_type = {
 			14
@@ -2023,8 +2165,10 @@
 			101011101
 		},
 		strengthen_desc = {
-			101121,
-			211011101
+			{
+				101121,
+				21101110121
+			}
 		},
 		element_type = {
 			0
@@ -2044,8 +2188,10 @@
 			101011201
 		},
 		strengthen_desc = {
-			101122,
-			211011201
+			{
+				101122,
+				21101120122
+			}
 		},
 		element_type = {
 			0
@@ -2065,8 +2211,10 @@
 			101011202
 		},
 		strengthen_desc = {
-			101123,
-			211011202
+			{
+				101123,
+				21101120223
+			}
 		},
 		element_type = {
 			0
@@ -2086,8 +2234,10 @@
 			101011203
 		},
 		strengthen_desc = {
-			101124,
-			211011203
+			{
+				101124,
+				21101120324
+			}
 		},
 		element_type = {
 			0
@@ -2141,8 +2291,10 @@
 			101013101
 		},
 		strengthen_desc = {
-			101321,
-			211013101
+			{
+				101321,
+				21101310121
+			}
 		},
 		element_type = {
 			4
@@ -2163,8 +2315,10 @@
 			101013111
 		},
 		strengthen_desc = {
-			101341,
-			211013111
+			{
+				101341,
+				21101311141
+			}
 		},
 		element_type = {
 			4
@@ -2181,8 +2335,10 @@
 			101013201
 		},
 		strengthen_desc = {
-			101322,
-			211013201
+			{
+				101322,
+				21101320122
+			}
 		},
 		element_type = {
 			4
@@ -2202,8 +2358,10 @@
 			101013202
 		},
 		strengthen_desc = {
-			101323,
-			211013202
+			{
+				101323,
+				21101320223
+			}
 		},
 		element_type = {
 			4
@@ -2223,8 +2381,10 @@
 			101013203
 		},
 		strengthen_desc = {
-			101324,
-			211013203
+			{
+				101324,
+				21101320324
+			}
 		},
 		element_type = {
 			4
@@ -2270,13 +2430,18 @@
 	[1056101] = {
 		name = "4f59cddb0afb5eba4173f20d517fc441",
 		cd = 0,
-		strengthen_desc = "",
 		simpleDesc = "325a9443f4126b8481df03b3e77faf99",
 		MaxUseCount = 0,
 		id = 1056101,
 		EnergyChange = 0,
 		desc = {
 			101056101
+		},
+		strengthen_desc = {
+			{
+				105621,
+				21105610121
+			}
 		},
 		element_type = {
 			14
@@ -2288,13 +2453,18 @@
 	[1056201] = {
 		name = "7c0026a096678344d561942af733a04a",
 		cd = 9000,
-		strengthen_desc = "",
 		simpleDesc = "8c8960f50be058271fd9925fd284eb0e",
 		MaxUseCount = 0,
 		id = 1056201,
 		EnergyChange = -30,
 		desc = {
 			101056201
+		},
+		strengthen_desc = {
+			{
+				105622,
+				21105620122
+			}
 		},
 		element_type = {
 			14
@@ -2306,13 +2476,18 @@
 	[1056202] = {
 		name = "9c08ef4cef905dd425c99a39409801ff",
 		cd = 9000,
-		strengthen_desc = "",
 		simpleDesc = "a301d89aa42b2c0af865d48f3da1d482",
 		MaxUseCount = 0,
 		id = 1056202,
 		EnergyChange = -30,
 		desc = {
 			101056202
+		},
+		strengthen_desc = {
+			{
+				105623,
+				21105620223
+			}
 		},
 		element_type = {
 			14
@@ -2324,13 +2499,18 @@
 	[1056203] = {
 		name = "40ef1738ee24211f528ae575edb9a2f3",
 		cd = 9000,
-		strengthen_desc = "",
 		simpleDesc = "5b2bf378afea171afcdf3a3a0a20d547",
 		MaxUseCount = 0,
 		id = 1056203,
 		EnergyChange = -30,
 		desc = {
 			101056203
+		},
+		strengthen_desc = {
+			{
+				105624,
+				21105620324
+			}
 		},
 		element_type = {
 			14
@@ -2387,8 +2567,10 @@
 			101058101
 		},
 		strengthen_desc = {
-			105821,
-			211058101
+			{
+				105821,
+				21105810121
+			}
 		},
 		element_type = {
 			4
@@ -2408,8 +2590,10 @@
 			101058201
 		},
 		strengthen_desc = {
-			105822,
-			211058201
+			{
+				105822,
+				21105820122
+			}
 		},
 		element_type = {
 			4
@@ -2429,8 +2613,10 @@
 			101058202
 		},
 		strengthen_desc = {
-			105823,
-			211058202
+			{
+				105823,
+				21105820223
+			}
 		},
 		element_type = {
 			4
@@ -2450,8 +2636,10 @@
 			101058203
 		},
 		strengthen_desc = {
-			105824,
-			211058203
+			{
+				105824,
+				21105820324
+			}
 		},
 		element_type = {
 			4
@@ -2610,8 +2798,10 @@
 			101059101
 		},
 		strengthen_desc = {
-			105921,
-			211059101
+			{
+				105921,
+				21105910121
+			}
 		},
 		element_type = {
 			12
@@ -2631,8 +2821,10 @@
 			101059201
 		},
 		strengthen_desc = {
-			105922,
-			211059201
+			{
+				105922,
+				21105920122
+			}
 		},
 		element_type = {
 			12
@@ -2652,8 +2844,10 @@
 			101059202
 		},
 		strengthen_desc = {
-			105923,
-			211059202
+			{
+				105923,
+				21105920223
+			}
 		},
 		element_type = {
 			12
@@ -2673,8 +2867,10 @@
 			101059203
 		},
 		strengthen_desc = {
-			105924,
-			211059203
+			{
+				105924,
+				21105920324
+			}
 		},
 		element_type = {
 			12
@@ -2853,8 +3049,10 @@
 			101041101
 		},
 		strengthen_desc = {
-			104121,
-			211041101
+			{
+				104121,
+				21104110121
+			}
 		},
 		element_type = {
 			0
@@ -2874,8 +3072,10 @@
 			101041201
 		},
 		strengthen_desc = {
-			104122,
-			211041201
+			{
+				104122,
+				21104120122
+			}
 		},
 		element_type = {
 			0
@@ -2895,8 +3095,10 @@
 			101041202
 		},
 		strengthen_desc = {
-			104123,
-			211041202
+			{
+				104123,
+				21104120223
+			}
 		},
 		element_type = {
 			0
@@ -2916,8 +3118,10 @@
 			101041203
 		},
 		strengthen_desc = {
-			104124,
-			211041203
+			{
+				104124,
+				21104120324
+			}
 		},
 		element_type = {
 			0
@@ -2969,8 +3173,10 @@
 			101042101
 		},
 		strengthen_desc = {
-			104221,
-			211042101
+			{
+				104221,
+				21104210121
+			}
 		},
 		element_type = {
 			10
@@ -2991,8 +3197,10 @@
 			101042201
 		},
 		strengthen_desc = {
-			104222,
-			211042201
+			{
+				104222,
+				21104220122
+			}
 		},
 		element_type = {
 			10
@@ -3009,8 +3217,10 @@
 			101042202
 		},
 		strengthen_desc = {
-			104223,
-			211042202
+			{
+				104223,
+				21104220223
+			}
 		},
 		element_type = {
 			10
@@ -3031,8 +3241,10 @@
 			101042203
 		},
 		strengthen_desc = {
-			104224,
-			211042203
+			{
+				104224,
+				21104220324
+			}
 		},
 		element_type = {
 			10
@@ -3089,8 +3301,10 @@
 			101038101
 		},
 		strengthen_desc = {
-			103821,
-			211038101
+			{
+				103821,
+				21103810121
+			}
 		},
 		element_type = {
 			4
@@ -3110,8 +3324,10 @@
 			101038201
 		},
 		strengthen_desc = {
-			103822,
-			211038201
+			{
+				103822,
+				21103820122
+			}
 		},
 		element_type = {
 			4
@@ -3131,8 +3347,10 @@
 			101038202
 		},
 		strengthen_desc = {
-			103823,
-			211038202
+			{
+				103823,
+				21103820223
+			}
 		},
 		element_type = {
 			4
@@ -3152,8 +3370,10 @@
 			101038221
 		},
 		strengthen_desc = {
-			103825,
-			211038221
+			{
+				103825,
+				21103822125
+			}
 		},
 		element_type = {
 			4
@@ -3173,8 +3393,10 @@
 			101038203
 		},
 		strengthen_desc = {
-			103824,
-			211038203
+			{
+				103824,
+				21103820324
+			}
 		},
 		element_type = {
 			4
@@ -3229,8 +3451,10 @@
 			101084101
 		},
 		strengthen_desc = {
-			108421,
-			211084101
+			{
+				108421,
+				21108410121
+			}
 		},
 		element_type = {
 			0
@@ -3250,8 +3474,10 @@
 			101084201
 		},
 		strengthen_desc = {
-			108422,
-			211084201
+			{
+				108422,
+				21108420122
+			}
 		},
 		element_type = {
 			0
@@ -3272,8 +3498,10 @@
 			101084212
 		},
 		strengthen_desc = {
-			108425,
-			211084212
+			{
+				108425,
+				21108421225
+			}
 		},
 		element_type = {
 			0
@@ -3290,8 +3518,10 @@
 			101084202
 		},
 		strengthen_desc = {
-			108423,
-			211084202
+			{
+				108423,
+				21108420223
+			}
 		},
 		element_type = {
 			0
@@ -3311,8 +3541,10 @@
 			101084203
 		},
 		strengthen_desc = {
-			108424,
-			211084203
+			{
+				108424,
+				21108420324
+			}
 		},
 		element_type = {
 			0
@@ -3366,8 +3598,10 @@
 			101184101
 		},
 		strengthen_desc = {
-			118421,
-			211184101
+			{
+				118421,
+				21118410121
+			}
 		},
 		element_type = {
 			14
@@ -3387,8 +3621,10 @@
 			101184201
 		},
 		strengthen_desc = {
-			118422,
-			211184201
+			{
+				118422,
+				21118420122
+			}
 		},
 		element_type = {
 			14
@@ -3409,8 +3645,10 @@
 			101184202
 		},
 		strengthen_desc = {
-			118423,
-			211184202
+			{
+				118423,
+				21118420223
+			}
 		},
 		element_type = {
 			14
@@ -3431,8 +3669,10 @@
 			101184203
 		},
 		strengthen_desc = {
-			118424,
-			211184203
+			{
+				118424,
+				21118420324
+			}
 		},
 		element_type = {
 			14
@@ -3481,8 +3721,10 @@
 			101080101
 		},
 		strengthen_desc = {
-			108021,
-			211080101
+			{
+				108021,
+				21108010121
+			}
 		},
 		element_type = {
 			6
@@ -3503,8 +3745,14 @@
 			101080111
 		},
 		strengthen_desc = {
-			108041,
-			211080111
+			{
+				108025,
+				21108011125
+			},
+			{
+				108041,
+				21108011141
+			}
 		},
 		element_type = {
 			6
@@ -3521,8 +3769,10 @@
 			101080201
 		},
 		strengthen_desc = {
-			108022,
-			211080201
+			{
+				108022,
+				21108020122
+			}
 		},
 		element_type = {
 			6
@@ -3543,8 +3793,10 @@
 			101080202
 		},
 		strengthen_desc = {
-			108023,
-			211080202
+			{
+				108023,
+				21108020223
+			}
 		},
 		element_type = {
 			6
@@ -3561,8 +3813,10 @@
 			101080203
 		},
 		strengthen_desc = {
-			108024,
-			211080203
+			{
+				108024,
+				21108020324
+			}
 		},
 		element_type = {
 			6
@@ -3616,8 +3870,10 @@
 			101081101
 		},
 		strengthen_desc = {
-			108121,
-			211081101
+			{
+				108121,
+				21108110121
+			}
 		},
 		element_type = {
 			6
@@ -3637,8 +3893,10 @@
 			101081201
 		},
 		strengthen_desc = {
-			108122,
-			211081201
+			{
+				108122,
+				21108120122
+			}
 		},
 		element_type = {
 			6
@@ -3658,8 +3916,10 @@
 			101081202
 		},
 		strengthen_desc = {
-			108123,
-			211081202
+			{
+				108123,
+				21108120223
+			}
 		},
 		element_type = {
 			6
@@ -3680,8 +3940,10 @@
 			101081203
 		},
 		strengthen_desc = {
-			108124,
-			211081203
+			{
+				108124,
+				21108120324
+			}
 		},
 		element_type = {
 			6
@@ -3721,6 +3983,112 @@
 			6
 		}
 	},
+	[1089101] = {
+		name = "7817283bbf9780f174d0c2b54507c1b0",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "4c289ed184d29df1eed968fe1f80034b",
+		MaxUseCount = 0,
+		id = 1089101,
+		EnergyChange = 0,
+		desc = {
+			101089101
+		},
+		element_type = {
+			2
+		},
+		abilities = {
+			1089101
+		}
+	},
+	[1089201] = {
+		name = "079797674729860ee51aa283d534fdf3",
+		cd = 8000,
+		strengthen_desc = "",
+		simpleDesc = "d7f549ce5067c14836c311da76f38927",
+		MaxUseCount = 0,
+		id = 1089201,
+		EnergyChange = 0,
+		desc = {
+			101089201
+		},
+		element_type = {
+			2
+		},
+		abilities = {
+			1089201
+		}
+	},
+	[1089202] = {
+		name = "568c38c46883185f82cd3b9fb3dca621",
+		cd = 8000,
+		strengthen_desc = "",
+		simpleDesc = "1659bc954e3b8d487932674649cbde8f",
+		MaxUseCount = 0,
+		id = 1089202,
+		EnergyChange = 0,
+		desc = {
+			101089202
+		},
+		element_type = {
+			2
+		},
+		abilities = {
+			1089202
+		}
+	},
+	[1089203] = {
+		name = "cefbe57028850c9bfdf8f31a61d94a7e",
+		cd = 60000,
+		strengthen_desc = "",
+		simpleDesc = "20d43dd70e3d00ebc1a48481d0a36e2f",
+		MaxUseCount = 0,
+		id = 1089203,
+		EnergyChange = 0,
+		desc = {
+			101089203
+		},
+		element_type = {
+			2
+		},
+		abilities = {
+			1089051
+		}
+	},
+	[1089209] = {
+		name = "ddb00bbe770712f65e5822697449b8a1",
+		cd = 20000,
+		strengthen_desc = "",
+		simpleDesc = "11b4abaa3d226730fc1c31a2aead2649",
+		MaxUseCount = 0,
+		id = 1089209,
+		EnergyChange = 0,
+		desc = {
+			101089209
+		},
+		element_type = {
+			2
+		},
+		abilities = {
+			1089055
+		}
+	},
+	[1089305] = {
+		name = "0a6d059d06a7347d6ea0c210e1f07144",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "670a16b540d1df187bffcbb8f573e76b",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1089305,
+		EnergyChange = 0,
+		desc = {
+			101089305
+		},
+		element_type = {
+			2
+		}
+	},
 	[1093101] = {
 		name = "9197cd4bbd9cdc6326632de9266e2d06",
 		cd = 0,
@@ -3732,8 +4100,10 @@
 			101093101
 		},
 		strengthen_desc = {
-			109321,
-			211093101
+			{
+				109321,
+				21109310121
+			}
 		},
 		element_type = {
 			0
@@ -3753,8 +4123,10 @@
 			101093231
 		},
 		strengthen_desc = {
-			109322,
-			211093231
+			{
+				109322,
+				21109323122
+			}
 		},
 		element_type = {
 			0
@@ -3774,8 +4146,10 @@
 			101093232
 		},
 		strengthen_desc = {
-			109323,
-			211093232
+			{
+				109323,
+				21109323223
+			}
 		},
 		element_type = {
 			14
@@ -3796,8 +4170,10 @@
 			101093233
 		},
 		strengthen_desc = {
-			109324,
-			211093233
+			{
+				109324,
+				21109323324
+			}
 		},
 		element_type = {
 			2
@@ -3814,8 +4190,10 @@
 			101093236
 		},
 		strengthen_desc = {
-			109325,
-			211093236
+			{
+				109325,
+				21109323625
+			}
 		},
 		element_type = {
 			4
@@ -3851,13 +4229,18 @@
 	[1094101] = {
 		name = "ea316d39289b35357fa28a56a47e869d",
 		cd = 0,
-		strengthen_desc = "",
 		simpleDesc = "40048223a9dc7abdb8b57c8c0128f0c5",
 		MaxUseCount = 0,
 		id = 1094101,
 		EnergyChange = 0,
 		desc = {
 			101094101
+		},
+		strengthen_desc = {
+			{
+				109421,
+				21109410121
+			}
 		},
 		element_type = {
 			10
@@ -3869,13 +4252,18 @@
 	[1094201] = {
 		name = "cd70fb43166536202b2fe4898a06ca28",
 		cd = 15000,
-		strengthen_desc = "",
 		simpleDesc = "a60df4ea8119ca5ac47860cc87fa921f",
 		MaxUseCount = 0,
 		id = 1094201,
 		EnergyChange = 0,
 		desc = {
 			101094201
+		},
+		strengthen_desc = {
+			{
+				109422,
+				21109420122
+			}
 		},
 		element_type = {
 			10
@@ -3887,13 +4275,18 @@
 	[1094202] = {
 		name = "1f5978e69c46724b7c4bff90c3eb5a3d",
 		cd = 15000,
-		strengthen_desc = "",
 		simpleDesc = "a2f4e9a2e68f86e13e1316c8b1a86e76",
 		MaxUseCount = 0,
 		id = 1094202,
 		EnergyChange = 0,
 		desc = {
 			101094202
+		},
+		strengthen_desc = {
+			{
+				109423,
+				21109420223
+			}
 		},
 		element_type = {
 			10
@@ -3906,13 +4299,18 @@
 	[1094203] = {
 		name = "a4b46b37ec62674bef9bc2302cc12801",
 		cd = 5000,
-		strengthen_desc = "",
 		simpleDesc = "b30de971537a81648980698110cab9f6",
 		MaxUseCount = 0,
 		id = 1094203,
 		EnergyChange = 0,
 		desc = {
 			101094203
+		},
+		strengthen_desc = {
+			{
+				109424,
+				21109420324
+			}
 		},
 		element_type = {
 			10
@@ -3966,8 +4364,10 @@
 			101096101
 		},
 		strengthen_desc = {
-			109621,
-			211096101
+			{
+				109621,
+				21109610121
+			}
 		},
 		element_type = {
 			2
@@ -3987,8 +4387,10 @@
 			101096201
 		},
 		strengthen_desc = {
-			109622,
-			211096201
+			{
+				109622,
+				21109620122
+			}
 		},
 		element_type = {
 			2
@@ -4009,8 +4411,10 @@
 			101096202
 		},
 		strengthen_desc = {
-			109623,
-			211096202
+			{
+				109623,
+				21109620223
+			}
 		},
 		element_type = {
 			2
@@ -4027,8 +4431,10 @@
 			101096203
 		},
 		strengthen_desc = {
-			109624,
-			211096203
+			{
+				109624,
+				21109620324
+			}
 		},
 		element_type = {
 			2
@@ -4082,8 +4488,10 @@
 			101097101
 		},
 		strengthen_desc = {
-			109721,
-			211097101
+			{
+				109721,
+				21109710121
+			}
 		},
 		element_type = {
 			12
@@ -4103,8 +4511,10 @@
 			101097201
 		},
 		strengthen_desc = {
-			109722,
-			211097201
+			{
+				109722,
+				21109720122
+			}
 		},
 		element_type = {
 			12
@@ -4157,8 +4567,10 @@
 			101097203
 		},
 		strengthen_desc = {
-			109723,
-			211097203
+			{
+				109723,
+				21109720323
+			}
 		},
 		element_type = {
 			12
@@ -4313,8 +4725,10 @@
 			101099101
 		},
 		strengthen_desc = {
-			109921,
-			211099101
+			{
+				109921,
+				21109910121
+			}
 		},
 		element_type = {
 			10
@@ -4334,8 +4748,10 @@
 			101099201
 		},
 		strengthen_desc = {
-			109922,
-			211099201
+			{
+				109922,
+				21109920122
+			}
 		},
 		element_type = {
 			10
@@ -4356,8 +4772,10 @@
 			101099202
 		},
 		strengthen_desc = {
-			109923,
-			211099202
+			{
+				109923,
+				21109920223
+			}
 		},
 		element_type = {
 			10
@@ -4377,8 +4795,10 @@
 			101099203
 		},
 		strengthen_desc = {
-			109924,
-			211099203
+			{
+				109924,
+				21109920324
+			}
 		},
 		element_type = {
 			10
@@ -4398,8 +4818,10 @@
 			101099231
 		},
 		strengthen_desc = {
-			109942,
-			211099231
+			{
+				109942,
+				21109923142
+			}
 		},
 		element_type = {
 			10
@@ -4453,8 +4875,10 @@
 			101032101
 		},
 		strengthen_desc = {
-			103221,
-			211032101
+			{
+				103221,
+				21103210121
+			}
 		},
 		element_type = {
 			12
@@ -4474,8 +4898,10 @@
 			101032106
 		},
 		strengthen_desc = {
-			103225,
-			211032106
+			{
+				103225,
+				21103210625
+			}
 		},
 		element_type = {
 			12
@@ -4511,8 +4937,10 @@
 			101032201
 		},
 		strengthen_desc = {
-			103222,
-			211032201
+			{
+				103222,
+				21103220122
+			}
 		},
 		element_type = {
 			12
@@ -4533,8 +4961,10 @@
 			101032202
 		},
 		strengthen_desc = {
-			103223,
-			211032202
+			{
+				103223,
+				21103220223
+			}
 		},
 		element_type = {
 			12
@@ -4551,8 +4981,10 @@
 			101032203
 		},
 		strengthen_desc = {
-			103224,
-			211032203
+			{
+				103224,
+				21103220324
+			}
 		},
 		element_type = {
 			12
@@ -4590,8 +5022,10 @@
 			101033101
 		},
 		strengthen_desc = {
-			103321,
-			211033101
+			{
+				103321,
+				21103310121
+			}
 		},
 		element_type = {
 			12
@@ -4627,8 +5061,10 @@
 			101033201
 		},
 		strengthen_desc = {
-			103322,
-			211033201
+			{
+				103322,
+				21103320122
+			}
 		},
 		element_type = {
 			12
@@ -4648,8 +5084,10 @@
 			101033202
 		},
 		strengthen_desc = {
-			103323,
-			211033202
+			{
+				103323,
+				21103320223
+			}
 		},
 		element_type = {
 			12
@@ -4669,8 +5107,10 @@
 			101033203
 		},
 		strengthen_desc = {
-			103324,
-			211033203
+			{
+				103324,
+				21103320324
+			}
 		},
 		element_type = {
 			12
@@ -4691,8 +5131,10 @@
 			101033231
 		},
 		strengthen_desc = {
-			103325,
-			211033231
+			{
+				103325,
+				21103323125
+			}
 		},
 		element_type = {
 			12
@@ -4725,8 +5167,10 @@
 			101199101
 		},
 		strengthen_desc = {
-			119921,
-			211199101
+			{
+				119921,
+				21119910121
+			}
 		},
 		element_type = {
 			14
@@ -4746,8 +5190,10 @@
 			101199201
 		},
 		strengthen_desc = {
-			119922,
-			211199201
+			{
+				119922,
+				21119920122
+			}
 		},
 		element_type = {
 			14
@@ -4767,8 +5213,10 @@
 			101199202
 		},
 		strengthen_desc = {
-			119923,
-			211199202
+			{
+				119923,
+				21119920223
+			}
 		},
 		element_type = {
 			14
@@ -4788,8 +5236,10 @@
 			101199203
 		},
 		strengthen_desc = {
-			119924,
-			211199203
+			{
+				119924,
+				21119920324
+			}
 		},
 		element_type = {
 			14
@@ -4828,8 +5278,10 @@
 			101199305
 		},
 		strengthen_desc = {
-			119925,
-			211199305
+			{
+				119925,
+				21119930525
+			}
 		},
 		element_type = {
 			14
@@ -4972,8 +5424,10 @@
 			101111101
 		},
 		strengthen_desc = {
-			111121,
-			211111101
+			{
+				111121,
+				21111110121
+			}
 		},
 		element_type = {
 			2
@@ -5011,8 +5465,10 @@
 			101111201
 		},
 		strengthen_desc = {
-			111122,
-			211111201
+			{
+				111122,
+				21111120122
+			}
 		},
 		element_type = {
 			2
@@ -5033,8 +5489,10 @@
 			101111202
 		},
 		strengthen_desc = {
-			111123,
-			211111202
+			{
+				111123,
+				21111120223
+			}
 		},
 		element_type = {
 			2
@@ -5054,8 +5512,10 @@
 			101111203
 		},
 		strengthen_desc = {
-			111124,
-			211111203
+			{
+				111124,
+				21111120324
+			}
 		},
 		element_type = {
 			2
@@ -5189,13 +5649,18 @@
 	[1068101] = {
 		name = "ef706d309f68c167e2a650d8173211a3",
 		cd = 0,
-		strengthen_desc = "",
 		simpleDesc = "bff415e6d93963d1c71167f2f1b6aeed",
 		MaxUseCount = 0,
 		id = 1068101,
 		EnergyChange = 2,
 		desc = {
 			101068101
+		},
+		strengthen_desc = {
+			{
+				106821,
+				21106810121
+			}
 		},
 		element_type = {
 			2
@@ -5208,13 +5673,18 @@
 	[1068201] = {
 		name = "a6b7c82984625627ea02649f9ea8cd9e",
 		cd = 6000,
-		strengthen_desc = "",
 		simpleDesc = "f01b17af7a009993e43739ac6a946041",
 		MaxUseCount = 0,
 		id = 1068201,
 		EnergyChange = -15,
 		desc = {
 			101068201
+		},
+		strengthen_desc = {
+			{
+				106822,
+				21106820122
+			}
 		},
 		element_type = {
 			2
@@ -5232,13 +5702,18 @@
 	[1068202] = {
 		name = "7fb0149e0de7d4c3d2cb1b9953c653aa",
 		cd = 12000,
-		strengthen_desc = "",
 		simpleDesc = "3a0f5c703f3c23e9a36cdc44ccdb15ca",
 		MaxUseCount = 0,
 		id = 1068202,
 		EnergyChange = -25,
 		desc = {
 			101068202
+		},
+		strengthen_desc = {
+			{
+				106823,
+				21106820223
+			}
 		},
 		element_type = {
 			2
@@ -5255,13 +5730,18 @@
 	[1068203] = {
 		name = "ffb5edf2faee13ef983b798c4e61f47a",
 		cd = 25000,
-		strengthen_desc = "",
 		simpleDesc = "c142f2baa401ea2b957b823aceaaddee",
 		MaxUseCount = 0,
 		id = 1068203,
 		EnergyChange = -50,
 		desc = {
 			101068203
+		},
+		strengthen_desc = {
+			{
+				106824,
+				21106820324
+			}
 		},
 		element_type = {
 			2
@@ -5521,13 +6001,18 @@
 	[1016101] = {
 		name = "424d7641617fc5c5684ff9fe4f52eeb1",
 		cd = 0,
-		strengthen_desc = "",
 		simpleDesc = "75493108b3b838a86b1e2b001076c6ad",
 		MaxUseCount = 0,
 		id = 1016101,
 		EnergyChange = 0,
 		desc = {
 			101016101
+		},
+		strengthen_desc = {
+			{
+				101621,
+				21101610121
+			}
 		},
 		element_type = {
 			0
@@ -5539,13 +6024,18 @@
 	[1016201] = {
 		name = "1c53afa742d1d61cd4d33cdb6d68a338",
 		cd = 18000,
-		strengthen_desc = "",
 		simpleDesc = "0ec9e56e176e88b1d9a98677c6f8aad9",
 		MaxUseCount = 0,
 		id = 1016201,
 		EnergyChange = 0,
 		desc = {
 			101016201
+		},
+		strengthen_desc = {
+			{
+				101622,
+				21101620122
+			}
 		},
 		element_type = {
 			0
@@ -5557,13 +6047,18 @@
 	[1016202] = {
 		name = "cae9e12b19dcff6efbd57a1dd1cdd56a",
 		cd = 14000,
-		strengthen_desc = "",
 		simpleDesc = "ee2b506c9035e0d98d63666626237097",
 		MaxUseCount = 0,
 		id = 1016202,
 		EnergyChange = 0,
 		desc = {
 			101016202
+		},
+		strengthen_desc = {
+			{
+				101623,
+				21101620223
+			}
 		},
 		element_type = {
 			0
@@ -5575,13 +6070,18 @@
 	[1016203] = {
 		name = "23887f13c781ce7f12cbd2d817fbee59",
 		cd = 14000,
-		strengthen_desc = "",
 		simpleDesc = "c94f390758f077c389d0eb9aa63e6333",
 		MaxUseCount = 0,
 		id = 1016203,
 		EnergyChange = 0,
 		desc = {
 			101016203
+		},
+		strengthen_desc = {
+			{
+				101624,
+				21101620324
+			}
 		},
 		element_type = {
 			0
@@ -5627,13 +6127,18 @@
 	[1024101] = {
 		name = "184b7bbfb0b29a0979ced6ae884897f7",
 		cd = 0,
-		strengthen_desc = "",
 		simpleDesc = "0adf124b1ef6dcda39694247e8530d02",
 		MaxUseCount = 0,
 		id = 1024101,
 		EnergyChange = 2,
 		desc = {
 			101024101
+		},
+		strengthen_desc = {
+			{
+				102421,
+				21102410121
+			}
 		},
 		element_type = {
 			10
@@ -5661,13 +6166,18 @@
 	[1024201] = {
 		name = "5270ed52a3f5626768e4980de287b48a",
 		cd = 10000,
-		strengthen_desc = "",
 		simpleDesc = "b839b4b79e7bf88f614ed2d29696aa83",
 		MaxUseCount = 0,
 		id = 1024201,
 		EnergyChange = -20,
 		desc = {
 			101024201
+		},
+		strengthen_desc = {
+			{
+				102422,
+				21102420122
+			}
 		},
 		element_type = {
 			10
@@ -5679,13 +6189,18 @@
 	[1024202] = {
 		name = "cafa0fe2347695b6431697384416c82b",
 		cd = 10000,
-		strengthen_desc = "",
 		simpleDesc = "6b0c7f448de6deb35187a267d540955b",
 		MaxUseCount = 0,
 		id = 1024202,
 		EnergyChange = -20,
 		desc = {
 			101024202
+		},
+		strengthen_desc = {
+			{
+				102423,
+				21102420223
+			}
 		},
 		element_type = {
 			10
@@ -5697,13 +6212,18 @@
 	[1024203] = {
 		name = "84fa5edec02af7bbfa72b1c2d9c237af",
 		cd = 15000,
-		strengthen_desc = "",
 		simpleDesc = "3420241aa0867ba27af2902902cefaff",
 		MaxUseCount = 0,
 		id = 1024203,
 		EnergyChange = 0,
 		desc = {
 			101024203
+		},
+		strengthen_desc = {
+			{
+				102424,
+				21102420324
+			}
 		},
 		element_type = {
 			10
@@ -7094,6 +7614,420 @@
 			10
 		}
 	},
+	[1022101] = {
+		name = "44e41d7e15e31f18f2f4152df13e360d",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "20ac12c867b7e04f290cbf5a51b507c2",
+		MaxUseCount = 0,
+		id = 1022101,
+		EnergyChange = 0,
+		desc = {
+			101022101
+		},
+		element_type = {
+			10
+		},
+		abilities = {
+			1022101,
+			1022053
+		}
+	},
+	[1022201] = {
+		name = "7bfa1d75e695935d89eba14d8e0ed337",
+		cd = 8000,
+		strengthen_desc = "",
+		simpleDesc = "91187e6b388aac5325615afa1658828c",
+		MaxUseCount = 0,
+		id = 1022201,
+		EnergyChange = 0,
+		desc = {
+			101022201
+		},
+		element_type = {
+			10
+		},
+		abilities = {
+			1022201
+		}
+	},
+	[1022202] = {
+		name = "b390cbfcac9557c1374b924d4a7d3e61",
+		cd = 8000,
+		strengthen_desc = "",
+		simpleDesc = "837f1ee0f4386369012ae625d89f5356",
+		MaxUseCount = 0,
+		id = 1022202,
+		EnergyChange = 0,
+		desc = {
+			101022202
+		},
+		element_type = {
+			10
+		},
+		abilities = {
+			1022202,
+			1022070
+		}
+	},
+	[1022203] = {
+		name = "0eccf205266b00357320f8737bbe85f4",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "43ad4b6933f477fe2a672d1c8874073e",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1022203,
+		EnergyChange = 0,
+		desc = {
+			101022203
+		},
+		element_type = {
+			10
+		}
+	},
+	[1022209] = {
+		name = "37f2a39e3c9d490bf49eb0d03d29c802",
+		cd = 40000,
+		strengthen_desc = "",
+		simpleDesc = "60a8598f03956d5748a76430eeca630c",
+		MaxUseCount = 0,
+		id = 1022209,
+		EnergyChange = 0,
+		desc = {
+			101022209
+		},
+		element_type = {
+			10
+		},
+		abilities = {
+			1022072
+		}
+	},
+	[1022305] = {
+		name = "fc067d382e65d66d39297261283c6224",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "8d94fb0fc38f79a15ac12e245d7665d4",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1022305,
+		EnergyChange = 0,
+		desc = {
+			101022305
+		},
+		element_type = {
+			10
+		}
+	},
+	[1021101] = {
+		name = "22589ca87400ff370ce2b42a1e8b17b4",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "3db776cedcab86f669c99d7ce39c060a",
+		MaxUseCount = 0,
+		id = 1021101,
+		EnergyChange = 2,
+		desc = {
+			101021101
+		},
+		element_type = {
+			0
+		},
+		abilities = {
+			1021101
+		}
+	},
+	[1021201] = {
+		name = "f1beab679a0f69e1033a95f4916e3ac4",
+		cd = 6000,
+		strengthen_desc = "",
+		simpleDesc = "608ef917c29cb3288c4d837f814c5832",
+		MaxUseCount = 0,
+		id = 1021201,
+		EnergyChange = -10,
+		desc = {
+			101021201
+		},
+		element_type = {
+			0
+		},
+		abilities = {
+			1021201
+		}
+	},
+	[1021202] = {
+		name = "2890a20c2158b5b4d3aad7caa5ad40f6",
+		cd = 7000,
+		strengthen_desc = "",
+		simpleDesc = "ccfc91677347e97248508123f57d988b",
+		MaxUseCount = 0,
+		id = 1021202,
+		EnergyChange = -20,
+		desc = {
+			101021202
+		},
+		element_type = {
+			0
+		},
+		abilities = {
+			1021202
+		}
+	},
+	[1021203] = {
+		name = "d710dc57af0f0e074bbe8c68a473c45a",
+		cd = 20000,
+		strengthen_desc = "",
+		simpleDesc = "e94acb3dee09c92cb4a3b28abe883198",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1021203,
+		EnergyChange = 0,
+		desc = {
+			101021203
+		},
+		element_type = {
+			0
+		}
+	},
+	[1021209] = {
+		name = "81a1edad40a537f95155da5465b2e844",
+		cd = 20000,
+		strengthen_desc = "",
+		simpleDesc = "847406ec05d0565ae93af290451d5250",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1021209,
+		EnergyChange = 0,
+		desc = {
+			101021209
+		},
+		element_type = {
+			0
+		}
+	},
+	[1021305] = {
+		name = "0d43a7361a80032bc9547f286b638211",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "946a6a697f808018b11d7985a29bbf94",
+		MaxUseCount = 2,
+		abilities = "",
+		id = 1021305,
+		EnergyChange = 0,
+		desc = {
+			101021305
+		},
+		element_type = {
+			0
+		}
+	},
+	[1020101] = {
+		name = "400108d6604a240790b2d7d36a4a1863",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "697a82445a724892a5aae8a63359df2b",
+		MaxUseCount = 0,
+		id = 1020101,
+		EnergyChange = 0,
+		desc = {
+			101020101
+		},
+		element_type = {
+			2
+		},
+		abilities = {
+			1020051
+		}
+	},
+	[1020201] = {
+		name = "2b195c8719ae8ae4a51f636e5a7d65e7",
+		cd = 12000,
+		strengthen_desc = "",
+		simpleDesc = "a8305135d8419d94f3c8b53044326491",
+		MaxUseCount = 0,
+		id = 1020201,
+		EnergyChange = 0,
+		desc = {
+			101020201
+		},
+		element_type = {
+			2
+		},
+		abilities = {
+			1020054
+		}
+	},
+	[1020202] = {
+		name = "7f2e41a8aad3ae4d15fe9202b54545d6",
+		cd = 20000,
+		strengthen_desc = "",
+		simpleDesc = "3e38fd9c53aa7c0b9fc6a1dd8c61a577",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1020202,
+		EnergyChange = 0,
+		desc = {
+			101020202
+		},
+		element_type = {
+			2
+		}
+	},
+	[1020203] = {
+		name = "d4d15cd17996c98ebb222cb683c0b769",
+		cd = 12000,
+		strengthen_desc = "",
+		simpleDesc = "2390a91c9cac4f442f8995644d8e61ee",
+		MaxUseCount = 0,
+		id = 1020203,
+		EnergyChange = 0,
+		desc = {
+			101020203
+		},
+		element_type = {
+			2
+		},
+		abilities = {
+			1020055
+		}
+	},
+	[1020209] = {
+		name = "4ebef22870040749d2bcbf341aaa65c4",
+		cd = 20000,
+		strengthen_desc = "",
+		simpleDesc = "3981496d6548b6629259507ed8f9feff",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1020209,
+		EnergyChange = 0,
+		desc = {
+			101020209
+		},
+		element_type = {
+			2
+		}
+	},
+	[1020305] = {
+		name = "7f52da9033b308e832f3221babd117dc",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "aef6ab31e4a10691a61390b56a0f5922",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1020305,
+		EnergyChange = 0,
+		desc = {
+			101020305
+		},
+		element_type = {
+			2
+		}
+	},
+	[1156101] = {
+		name = "97276d10ff182894f23e6638d70ce3f2",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "f4c4802c560ccd1d14d4b878319c360b",
+		MaxUseCount = 0,
+		id = 1156101,
+		EnergyChange = 1,
+		desc = {
+			101156101
+		},
+		element_type = {
+			14
+		},
+		abilities = {
+			1156101
+		}
+	},
+	[1156201] = {
+		name = "86389decb7f1537fef798781eecad319",
+		cd = 10000,
+		strengthen_desc = "",
+		simpleDesc = "519502b1a789097c5941ce72a4977e61",
+		MaxUseCount = 0,
+		id = 1156201,
+		EnergyChange = 0,
+		desc = {
+			101156201
+		},
+		element_type = {
+			14
+		},
+		abilities = {
+			1156201
+		}
+	},
+	[1156202] = {
+		name = "f79ee327a2d83c71f98da550f0c8578d",
+		cd = 4000,
+		strengthen_desc = "",
+		simpleDesc = "6e0390c45f057580c2128256ecf7d764",
+		MaxUseCount = 0,
+		id = 1156202,
+		EnergyChange = 0,
+		desc = {
+			101156202
+		},
+		element_type = {
+			14
+		},
+		abilities = {
+			1156202
+		}
+	},
+	[1156203] = {
+		name = "d6ffbfb5efce5ab3551c8aa948a503c9",
+		cd = 15000,
+		strengthen_desc = "",
+		simpleDesc = "a8d6253375feb969d4773bb26f3973c0",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1156203,
+		EnergyChange = 0,
+		desc = {
+			101156203
+		},
+		element_type = {
+			14
+		}
+	},
+	[1156209] = {
+		name = "fe1f0d1baa10e6291e52531c296cb11c",
+		cd = 20000,
+		strengthen_desc = "",
+		simpleDesc = "3fa6632b74d0b0bd298f21269d3f09f4",
+		MaxUseCount = 0,
+		id = 1156209,
+		EnergyChange = 0,
+		desc = {
+			101156209
+		},
+		element_type = {
+			14
+		},
+		abilities = {
+			1156051
+		}
+	},
+	[1156305] = {
+		name = "d50dc83d0863c4eceb409caac32062c0",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "d58a6d0dc06e5711a8f64d97f69b6d0d",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1156305,
+		EnergyChange = 0,
+		desc = {
+			101156305
+		},
+		element_type = {
+			14
+		}
+	},
 	[6087101] = {
 		element_type = "",
 		name = "af37e0e45deba27014c605948061cb1f",
@@ -7348,6 +8282,118 @@
 		},
 		abilities = {
 			6090209
+		}
+	},
+	[6110101] = {
+		element_type = "6.0",
+		name = "a377b88ef985c26f2d277483546929fd",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		id = 6110101,
+		EnergyChange = 0,
+		desc = {
+			106110101
+		},
+		abilities = {
+			6110101
+		}
+	},
+	[6110201] = {
+		name = "e333070031628db92b47b457df703c4f",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		id = 6110201,
+		EnergyChange = 0,
+		desc = {
+			106110201
+		},
+		element_type = {
+			6
+		},
+		abilities = {
+			6110201
+		}
+	},
+	[6110202] = {
+		element_type = "6.0",
+		name = "a6d4f5e17bb9ca1d16683fec367d0da1",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		id = 6110202,
+		EnergyChange = 0,
+		desc = {
+			106110202
+		},
+		abilities = {
+			6110202
+		}
+	},
+	[6110203] = {
+		element_type = "6.0",
+		name = "35ae9989bb78e7d78b537a01eb23019e",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 6110203,
+		EnergyChange = 0,
+		desc = {
+			106110203
+		}
+	},
+	[6110209] = {
+		element_type = "6.0",
+		name = "aace506ec6918a4e4e67dc455ef76ce2",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		id = 6110209,
+		EnergyChange = 0,
+		desc = {
+			106110209
+		},
+		abilities = {
+			6110209
+		}
+	},
+	[6117101] = {
+		name = "bf93963b7d2d0a8673e761e9e7d6f0bb",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 6117101,
+		EnergyChange = 0,
+		desc = {
+			106117101
+		},
+		element_type = {
+			8
+		}
+	},
+	[6117202] = {
+		name = "1c74682f31235af4e7704f337a5a15ab",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 6117202,
+		EnergyChange = -100,
+		desc = {
+			106117202
+		},
+		element_type = {
+			8
 		}
 	},
 	[9049201] = {
@@ -8428,6 +9474,118 @@
 			101197208
 		}
 	},
+	[1033282] = {
+		element_type = "",
+		name = "1cec4358f32ff923660dd38730400b33",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1033282,
+		EnergyChange = 0,
+		desc = {
+			101033282
+		}
+	},
+	[1150282] = {
+		element_type = "",
+		name = "fdd06c43cf4caf386c891374a6e861db",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1150282,
+		EnergyChange = 0,
+		desc = {
+			101150282
+		}
+	},
+	[1022208] = {
+		element_type = "",
+		name = "b288495dcc1f16daf127e799b1fb5025",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1022208,
+		EnergyChange = 0,
+		desc = {
+			101022208
+		}
+	},
+	[1021208] = {
+		element_type = "",
+		name = "16d620897a583f0d144e1213852bdacb",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1021208,
+		EnergyChange = 0,
+		desc = {
+			101021208
+		}
+	},
+	[1020208] = {
+		element_type = "",
+		name = "7d68692d38e4650eb590024b65b1874c",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1020208,
+		EnergyChange = 0,
+		desc = {
+			101020208
+		}
+	},
+	[1024281] = {
+		element_type = "",
+		name = "d0dc19604a74987e88124b60fd873aa6",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1024281,
+		EnergyChange = 0,
+		desc = {
+			101024281
+		}
+	},
+	[1095281] = {
+		element_type = "",
+		name = "304e3f893cff99320b6d80e118ea099f",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1095281,
+		EnergyChange = 0,
+		desc = {
+			101095281
+		}
+	},
+	[1089208] = {
+		element_type = "",
+		name = "a2ce3ce14a3d236cf88b6be6932bf9af",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1089208,
+		EnergyChange = 0,
+		desc = {
+			101089208
+		}
+	},
 	all = {
 		1050101,
 		1050201,
@@ -8624,6 +9782,12 @@
 		1081203,
 		1081209,
 		1081305,
+		1089101,
+		1089201,
+		1089202,
+		1089203,
+		1089209,
+		1089305,
 		1093101,
 		1093231,
 		1093232,
@@ -8809,6 +9973,30 @@
 		1197203,
 		1197209,
 		1197305,
+		1022101,
+		1022201,
+		1022202,
+		1022203,
+		1022209,
+		1022305,
+		1021101,
+		1021201,
+		1021202,
+		1021203,
+		1021209,
+		1021305,
+		1020101,
+		1020201,
+		1020202,
+		1020203,
+		1020209,
+		1020305,
+		1156101,
+		1156201,
+		1156202,
+		1156203,
+		1156209,
+		1156305,
 		6087101,
 		6087201,
 		6087202,
@@ -8825,6 +10013,13 @@
 		6090201,
 		6090202,
 		6090209,
+		6110101,
+		6110201,
+		6110202,
+		6110203,
+		6110209,
+		6117101,
+		6117202,
 		9049201,
 		9049202,
 		9049203,
@@ -8901,6 +10096,14 @@
 		1028282,
 		1284208,
 		1055281,
-		1197208
+		1197208,
+		1033282,
+		1150282,
+		1022208,
+		1021208,
+		1020208,
+		1024281,
+		1095281,
+		1089208
 	}
 }

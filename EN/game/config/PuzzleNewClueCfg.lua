@@ -71,7 +71,44 @@
 		clue_desc = "18bb2ae70b371bd0b7b9e16fa51ae7ff",
 		area_type = 0
 	},
+	[2822601] = {
+		main_activity_id = 282261,
+		int = 2822601,
+		clue_desc = "2d2e215a39a682e7d749e7b354efeb0a",
+		area_type = 2
+	},
+	[2822602] = {
+		main_activity_id = 282261,
+		int = 2822602,
+		clue_desc = "33ae3fbf18afcd607025626ead8e7645",
+		area_type = 2
+	},
+	[2822603] = {
+		main_activity_id = 282261,
+		int = 2822603,
+		clue_desc = "4874afc3860ba42dd5b229cd6b0d4bd7",
+		area_type = 1
+	},
+	[2822604] = {
+		main_activity_id = 282261,
+		int = 2822604,
+		clue_desc = "a06b242bd6865b6d6a556840c9aa6a77",
+		area_type = 1
+	},
+	[2822605] = {
+		main_activity_id = 282261,
+		int = 2822605,
+		clue_desc = "9ef8f5fafe9130d4aed3a14edf6684c1",
+		area_type = 1
+	},
 	get_id_list_by_main_activity_id = {
+		[282261] = {
+			2822601,
+			2822602,
+			2822603,
+			2822604,
+			2822605
+		},
 		[222141] = {
 			2221401,
 			2221402,
@@ -103,6 +140,11 @@
 		2221401,
 		2221402,
 		2221403,
-		2221404
+		2221404,
+		2822601,
+		2822602,
+		2822603,
+		2822604,
+		2822605
 	}
 }

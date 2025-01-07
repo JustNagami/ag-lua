@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("BattleStatisticsView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/BattleResult/BattleStatisticsUI"
+	return "Widget/System/MatrixlUI/BattleStatisticsUI"
 end
 
 function var_0_0.UIParent(arg_2_0)

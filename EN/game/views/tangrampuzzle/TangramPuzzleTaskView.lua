@@ -57,6 +57,11 @@ function var_0_1.AddUIListener(arg_4_0)
 	end)
 	arg_4_0:AddBtnListener(arg_4_0.descBtn_, nil, function()
 		local var_7_0 = GetTips("ACTIVITY_PUZZLE_III_EXPLAIN")
+		local var_7_1 = TangramPuzzleCfg[arg_4_0.activityID_]
+
+		if var_7_1 and var_7_1.coin_id[1] and var_7_1.coin_id[1][1] then
+			var_7_0 = string.format(GetTips("ACTIVITY_PUZZLE_III_EXPLAIN"), ItemTools.getItemName(var_7_1.coin_id[1][1]))
+		end
 
 		JumpTools.OpenPageByJump("gameHelp", {
 			icon = "icon_i",

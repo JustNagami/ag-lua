@@ -6,7 +6,7 @@ function var_0_1.UIBackCount(arg_1_0)
 end
 
 function var_0_1.UIName(arg_2_0)
-	return "UI/StrategyMatrix/StrategyBattleMatrixOverUI"
+	return "Widget/System/MatrixlUI/StrategyBattleMatrixOverUI"
 end
 
 function var_0_1.InitUI(arg_3_0)

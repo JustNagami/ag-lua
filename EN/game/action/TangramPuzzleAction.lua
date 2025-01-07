@@ -8,11 +8,11 @@ manager.net:Bind(65301, function(arg_1_0)
 	end
 
 	if not TangramPuzzleData:IsInited(var_1_0) then
-		var_0_0.InitRedPoint(var_1_0)
 		TangramPuzzleTools.InitConfig(var_1_0)
 	end
 
 	TangramPuzzleData:InitData(arg_1_0)
+	var_0_0.InitRedPoint(var_1_0)
 	var_0_0.RefreshClueRedPoint(var_1_0)
 end)
 
@@ -133,6 +133,11 @@ function var_0_0.Operation(arg_10_0, arg_10_1, arg_10_2, arg_10_3)
 
 				TangramPuzzleData:SetCurClueDic(arg_10_0, var_11_0)
 				var_0_0.RefreshClueRedPoint(arg_10_0)
+
+				if TangramPuzzleTools.IsAllClueCompleted(arg_10_0) then
+					var_0_0.InitRedPoint(arg_10_0)
+				end
+
 				manager.notify:CallUpdateFunc(TANGRAM_PUZZLE_CLUE_UPDATE)
 			end
 
@@ -146,25 +151,31 @@ function var_0_0.Operation(arg_10_0, arg_10_1, arg_10_2, arg_10_3)
 end
 
 function var_0_0.InitRedPoint(arg_12_0)
-	local var_12_0 = string.format("%s_%d", RedPointConst.TANGRAM_PUZZLE, arg_12_0)
-	local var_12_1 = string.format("%s_%d", RedPointConst.TANGRAM_PUZZLE_CLUE, arg_12_0)
-	local var_12_2
-	local var_12_3 = ActivityCfg[arg_12_0].sub_activity_list
+	local var_12_0 = not TangramPuzzleTools.IsAllClueCompleted(arg_12_0)
+	local var_12_1 = string.format("%s_%d", RedPointConst.TANGRAM_PUZZLE, arg_12_0)
+	local var_12_2 = string.format("%s_%d", RedPointConst.TANGRAM_PUZZLE_CLUE, arg_12_0)
+	local var_12_3 = {
+		var_12_2
+	}
 
-	for iter_12_0, iter_12_1 in ipairs(var_12_3) do
-		if ActivityCfg[iter_12_1].activity_template == ActivityTemplateConst.TASK then
-			var_12_2 = iter_12_1
+	if var_12_0 then
+		local var_12_4
+		local var_12_5 = ActivityCfg[arg_12_0].sub_activity_list
 
-			break
+		for iter_12_0, iter_12_1 in ipairs(var_12_5) do
+			if ActivityCfg[iter_12_1].activity_template == ActivityTemplateConst.TASK then
+				var_12_4 = iter_12_1
+
+				break
+			end
 		end
+
+		local var_12_6 = string.format("%s_%d", RedPointConst.ACTIVITY_TASK, var_12_4)
+
+		var_12_3[#var_12_3 + 1] = var_12_6
 	end
 
-	local var_12_4 = string.format("%s_%d", RedPointConst.ACTIVITY_TASK, var_12_2)
-
-	manager.redPoint:addGroup(var_12_0, {
-		var_12_4,
-		var_12_1
-	})
+	manager.redPoint:addGroup(var_12_1, var_12_3, true)
 end
 
 function var_0_0.RefreshClueRedPoint(arg_13_0)

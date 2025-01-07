@@ -9,6 +9,7 @@ function var_0_1.Init(arg_1_0)
 	arg_1_0.hideThreeStarController_:SetSelectedState("false")
 	arg_1_0.hideStageDescController_:SetSelectedState("false")
 	arg_1_0.btnWebController_:SetSelectedState("notshow")
+	arg_1_0.hideFatigueController_:SetSelectedState("close")
 end
 
 function var_0_1.OnClickBtn(arg_2_0)

@@ -48,7 +48,7 @@ local var_0_2 = {
 }
 
 function var_0_0.Dispose(arg_7_0)
-	return
+	arg_7_0:DisposeImageWrap()
 end
 
 function var_0_0.OnGameFocusChange(arg_8_0, arg_8_1, arg_8_2)
@@ -510,6 +510,22 @@ end
 function var_0_0.CheckListenersLeak(arg_53_0)
 	if arg_53_0.listeners_ ~= nil and #arg_53_0.listeners_ > 0 then
 		Debug.LogError(string.format("%s有%d个事件没移除", arg_53_0.class.__cname, #arg_53_0.listeners_))
+	end
+end
+
+function var_0_0.CacheImageWrap(arg_54_0, arg_54_1)
+	arg_54_0.cacheImageWrap = arg_54_0.cacheImageWrap or {}
+
+	table.insert(arg_54_0.cacheImageWrap, arg_54_1)
+end
+
+function var_0_0.DisposeImageWrap(arg_55_0)
+	if arg_55_0.cacheImageWrap then
+		for iter_55_0, iter_55_1 in ipairs(arg_55_0.cacheImageWrap) do
+			iter_55_1:Dispose()
+		end
+
+		arg_55_0.cacheImageWrap = nil
 	end
 end
 

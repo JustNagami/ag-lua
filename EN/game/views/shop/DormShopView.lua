@@ -259,165 +259,208 @@ function var_0_0.OnEnter(arg_24_0)
 
 	arg_24_0:EnterShopPage()
 	arg_24_0:SetData(arg_24_0.params_.shopList)
+	arg_24_0:UpdateTimer()
 end
 
-function var_0_0.OnExit(arg_25_0)
-	arg_25_0:ClearAllRegisteredRedPoints()
-	arg_25_0:ExitShopPage()
-end
+function var_0_0.UpdateTimer(arg_25_0)
+	local function var_25_0()
+		for iter_26_0, iter_26_1 in pairs(arg_25_0.catagoryInfo or {}) do
+			local var_26_0 = arg_25_0.tree:GetGroupRedPointContainerById(iter_26_0).transform.parent.transform:Find("new")
+			local var_26_1 = false
 
-function var_0_0.ShopItemRenderer(arg_26_0, arg_26_1, arg_26_2)
-	local var_26_0 = arg_26_0.shopComList[arg_26_1]
+			for iter_26_2, iter_26_3 in pairs(iter_26_1) do
+				if ShopTools.IsShopDiscount(iter_26_3) then
+					var_26_1 = true
 
-	if var_26_0 == nil then
-		var_26_0 = {}
+					break
+				end
+			end
 
-		arg_26_0:BindCfgUI(arg_26_2, var_26_0)
+			SetActive(var_26_0, var_26_1)
+		end
 
-		arg_26_0.shopComList[arg_26_1] = var_26_0
-	end
+		SetActive(arg_25_0.timeGo_, ShopTools.IsShopDiscount(arg_25_0.curShop))
 
-	local var_26_1 = ShopListCfg[arg_26_1]
-
-	if var_26_0.icon_ then
-		var_26_0.icon_.sprite = getSpriteViaConfig("ShopPreviewSmall", arg_26_1)
-	end
-end
-
-function var_0_0.OnShopItemSelect(arg_27_0, arg_27_1, arg_27_2, arg_27_3, arg_27_4)
-	if not ShopTools.CheckShopIsUnLock(arg_27_2) then
-		local var_27_0 = ShopTools.GetShopIsUnLockDesc(arg_27_2)
-
-		if not string.isNullOrEmpty(var_27_0) then
-			ShowTips(var_27_0)
+		if ShopTools.IsShopDiscount(arg_25_0.curShop) then
+			arg_25_0.refreshTxt_.text = string.format(GetTips("TIME_DISPLAY_16"), manager.time:GetLostTimeStrWith2Unit(TimeMgr.GetInstance():parseTimeFromConfig(ShopListCfg[arg_25_0.curShop].cheap_close_time)))
 		end
 	end
 
-	if arg_27_2 ~= arg_27_0.curShop then
-		arg_27_0:ExitShopPage()
+	var_25_0()
 
-		local var_27_1 = arg_27_0:GetContentViewByShopId(arg_27_2)
+	arg_25_0.updateTimer_ = Timer.New(function()
+		var_25_0()
+	end, 1, -1, 1)
 
-		arg_27_0.curShop = arg_27_2
+	arg_25_0.updateTimer_:Start()
+end
 
-		arg_27_0:EnterShopPage(var_27_1)
-		arg_27_0:UpdateShopList(arg_27_2)
+function var_0_0.OnExit(arg_28_0)
+	arg_28_0:ClearAllRegisteredRedPoints()
+	arg_28_0:ExitShopPage()
+	arg_28_0:StopTimer()
+end
+
+function var_0_0.StopTimer(arg_29_0)
+	if arg_29_0.updateTimer_ then
+		arg_29_0.updateTimer_:Stop()
+
+		arg_29_0.updateTimer_ = nil
 	end
 end
 
-function var_0_0.ExitShopPage(arg_28_0)
-	local var_28_0 = arg_28_0:GetCurContentView()
+function var_0_0.ShopItemRenderer(arg_30_0, arg_30_1, arg_30_2)
+	local var_30_0 = arg_30_0.shopComList[arg_30_1]
 
-	if var_28_0 then
-		var_28_0:OnExit()
+	if var_30_0 == nil then
+		var_30_0 = {}
+
+		arg_30_0:BindCfgUI(arg_30_2, var_30_0)
+
+		arg_30_0.shopComList[arg_30_1] = var_30_0
+	end
+
+	local var_30_1 = ShopListCfg[arg_30_1]
+
+	if var_30_0.icon_ then
+		var_30_0.icon_.sprite = getSpriteViaConfig("ShopPreviewSmall", arg_30_1)
 	end
 end
 
-function var_0_0.EnterShopPage(arg_29_0, arg_29_1)
-	local var_29_0 = arg_29_1 or arg_29_0:GetCurContentView()
+function var_0_0.OnShopItemSelect(arg_31_0, arg_31_1, arg_31_2, arg_31_3, arg_31_4)
+	if not ShopTools.CheckShopIsUnLock(arg_31_2) then
+		local var_31_0 = ShopTools.GetShopIsUnLockDesc(arg_31_2)
 
-	if var_29_0 then
-		var_29_0:OnEnter()
+		if not string.isNullOrEmpty(var_31_0) then
+			ShowTips(var_31_0)
+		end
+	end
+
+	if arg_31_2 ~= arg_31_0.curShop then
+		arg_31_0:ExitShopPage()
+
+		local var_31_1 = arg_31_0:GetContentViewByShopId(arg_31_2)
+
+		arg_31_0.curShop = arg_31_2
+
+		arg_31_0:EnterShopPage(var_31_1)
+		arg_31_0:UpdateShopList(arg_31_2)
 	end
 end
 
-function var_0_0.OnShopGroupSelect(arg_30_0, arg_30_1, arg_30_2, arg_30_3, arg_30_4)
+function var_0_0.ExitShopPage(arg_32_0)
+	local var_32_0 = arg_32_0:GetCurContentView()
+
+	if var_32_0 then
+		var_32_0:OnExit()
+	end
+end
+
+function var_0_0.EnterShopPage(arg_33_0, arg_33_1)
+	local var_33_0 = arg_33_1 or arg_33_0:GetCurContentView()
+
+	if var_33_0 then
+		var_33_0:OnEnter()
+	end
+end
+
+function var_0_0.OnShopGroupSelect(arg_34_0, arg_34_1, arg_34_2, arg_34_3, arg_34_4)
 	return
 end
 
-function var_0_0.Dispose(arg_31_0)
-	arg_31_0.tree:Dispose()
+function var_0_0.Dispose(arg_35_0)
+	arg_35_0.tree:Dispose()
 
-	for iter_31_0, iter_31_1 in pairs(arg_31_0.contentViewDic) do
-		iter_31_1:Dispose()
+	for iter_35_0, iter_35_1 in pairs(arg_35_0.contentViewDic) do
+		iter_35_1:Dispose()
 	end
 
-	arg_31_0.contentViewDic = nil
-	arg_31_0.curShop = nil
+	arg_35_0.contentViewDic = nil
+	arg_35_0.curShop = nil
 
-	var_0_0.super.Dispose(arg_31_0)
+	var_0_0.super.Dispose(arg_35_0)
 end
 
 local var_0_10 = require("game.tools.ShopTools").GetShopRedPointKey
 
-local function var_0_11(arg_32_0)
-	return "SHOP_GROUP_" .. arg_32_0
+local function var_0_11(arg_36_0)
+	return "SHOP_GROUP_" .. arg_36_0
 end
 
-function var_0_0.RegisterRedPoints(arg_33_0)
-	for iter_33_0, iter_33_1 in pairs(arg_33_0.catagoryInfo) do
-		local var_33_0 = {}
-		local var_33_1 = arg_33_0.tree:GetGroupRedPointContainerById(iter_33_0)
+function var_0_0.RegisterRedPoints(arg_37_0)
+	for iter_37_0, iter_37_1 in pairs(arg_37_0.catagoryInfo) do
+		local var_37_0 = {}
+		local var_37_1 = arg_37_0.tree:GetGroupRedPointContainerById(iter_37_0)
 
-		for iter_33_2, iter_33_3 in ipairs(iter_33_1) do
-			local var_33_2 = arg_33_0.tree:GetItemRedPointContainerById(iter_33_0, iter_33_3)
+		for iter_37_2, iter_37_3 in ipairs(iter_37_1) do
+			local var_37_2 = arg_37_0.tree:GetItemRedPointContainerById(iter_37_0, iter_37_3)
 
-			if var_33_2 then
-				local var_33_3 = var_0_10(iter_33_3)
+			if var_37_2 then
+				local var_37_3 = var_0_10(iter_37_3)
 
-				manager.redPoint:bindUIandKey(var_33_2, var_33_3)
-				table.insert(var_33_0, var_33_3)
+				manager.redPoint:bindUIandKey(var_37_2, var_37_3)
+				table.insert(var_37_0, var_37_3)
 			end
 		end
 
-		if var_33_1 and next(var_33_0) then
-			local var_33_4 = var_0_11(iter_33_0)
+		if var_37_1 and next(var_37_0) then
+			local var_37_4 = var_0_11(iter_37_0)
 
-			manager.redPoint:addGroup(var_33_4, var_33_0, true)
-			manager.redPoint:bindUIandKey(var_33_1, var_33_4)
+			manager.redPoint:addGroup(var_37_4, var_37_0, true)
+			manager.redPoint:bindUIandKey(var_37_1, var_37_4)
 		end
 	end
 end
 
-function var_0_0.ClearAllRegisteredRedPoints(arg_34_0)
-	if arg_34_0.catagoryInfo == nil then
+function var_0_0.ClearAllRegisteredRedPoints(arg_38_0)
+	if arg_38_0.catagoryInfo == nil then
 		return
 	end
 
-	for iter_34_0, iter_34_1 in pairs(arg_34_0.catagoryInfo) do
-		local var_34_0 = {}
-		local var_34_1 = arg_34_0.tree:GetGroupRedPointContainerById(iter_34_0)
+	for iter_38_0, iter_38_1 in pairs(arg_38_0.catagoryInfo) do
+		local var_38_0 = {}
+		local var_38_1 = arg_38_0.tree:GetGroupRedPointContainerById(iter_38_0)
 
-		for iter_34_2, iter_34_3 in ipairs(iter_34_1) do
-			local var_34_2 = arg_34_0.tree:GetItemRedPointContainerById(iter_34_0, iter_34_3)
+		for iter_38_2, iter_38_3 in ipairs(iter_38_1) do
+			local var_38_2 = arg_38_0.tree:GetItemRedPointContainerById(iter_38_0, iter_38_3)
 
-			if var_34_2 then
-				local var_34_3 = var_0_10(iter_34_3)
+			if var_38_2 then
+				local var_38_3 = var_0_10(iter_38_3)
 
-				manager.redPoint:unbindUIandKey(var_34_2, var_34_3)
-				table.insert(var_34_0, var_34_3)
+				manager.redPoint:unbindUIandKey(var_38_2, var_38_3)
+				table.insert(var_38_0, var_38_3)
 			end
 		end
 
-		if var_34_1 then
-			local var_34_4 = var_0_11(iter_34_0)
+		if var_38_1 then
+			local var_38_4 = var_0_11(iter_38_0)
 
-			manager.redPoint:unbindUIandKey(var_34_1, var_34_4)
-			manager.redPoint:delGroup(var_34_4, var_34_0)
+			manager.redPoint:unbindUIandKey(var_38_1, var_38_4)
+			manager.redPoint:delGroup(var_38_4, var_38_0)
 		end
 	end
 end
 
-local function var_0_12(arg_35_0, arg_35_1)
-	for iter_35_0, iter_35_1 in var_0_6(arg_35_0) do
-		local var_35_0 = iter_35_1.value
-		local var_35_1 = table.indexof(var_35_0, arg_35_1)
+local function var_0_12(arg_39_0, arg_39_1)
+	for iter_39_0, iter_39_1 in var_0_6(arg_39_0) do
+		local var_39_0 = iter_39_1.value
+		local var_39_1 = table.indexof(var_39_0, arg_39_1)
 
-		if var_35_1 then
-			return iter_35_0, var_35_1
+		if var_39_1 then
+			return iter_39_0, var_39_1
 		end
 	end
 end
 
-function var_0_0.SelectTreeByShopId(arg_36_0, arg_36_1)
-	if next(arg_36_0.catagoryInfo) == nil then
+function var_0_0.SelectTreeByShopId(arg_40_0, arg_40_1)
+	if next(arg_40_0.catagoryInfo) == nil then
 		return
 	end
 
-	local var_36_0, var_36_1 = var_0_12(arg_36_0.catagoryInfo, arg_36_1)
+	local var_40_0, var_40_1 = var_0_12(arg_40_0.catagoryInfo, arg_40_1)
 
-	if var_36_0 and var_36_1 then
-		arg_36_0.tree:SelectItem(var_36_0, var_36_1)
+	if var_40_0 and var_40_1 then
+		arg_40_0.tree:SelectItem(var_40_0, var_40_1)
 	end
 end
 

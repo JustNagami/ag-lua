@@ -281,8 +281,10 @@ end
 
 function var_0_0.RefreshLetterUI(arg_37_0, arg_37_1, arg_37_2)
 	local var_37_0 = MailData.GetMail(arg_37_1)
+	local var_37_1 = MailData.GetMailTitle(arg_37_1)
+	local var_37_2 = GameSetting.admin_mail_title_max_len.value[1]
 
-	arg_37_0.titleText_.text = MailData.GetMailTitle(arg_37_1)
+	arg_37_0.titleText_.text = utf8.sub(var_37_1, 1, var_37_2 + 1)
 	arg_37_0.dateText_.text = manager.time:STimeDescS(var_37_0.date, "!%Y-%m-%d")
 
 	if not arg_37_2 then

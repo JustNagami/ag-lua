@@ -3,6 +3,10 @@ import(".fishing.Include")
 import(".snowball.Include")
 import(".pushsnowball.Include")
 import(".dance.Include")
+import(".simBusiness.Include")
+import(".TetrisGame.Include")
+import(".TugGame.Include")
+import(".SpShootGame.Include")
 
 return {
 	Pizhuan = import(".pizhuan.PizhuanGame"),

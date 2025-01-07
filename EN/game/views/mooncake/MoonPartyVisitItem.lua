@@ -11,6 +11,7 @@ end
 function var_0_0.InitUI(arg_2_0)
 	arg_2_0:BindCfgUI()
 
+	arg_2_0.commonPortrait_ = CommonHeadPortrait.New(arg_2_0.headItem_)
 	arg_2_0.statusController_ = ControllerUtil.GetController(arg_2_0.transform_, "status")
 end
 
@@ -63,14 +64,20 @@ end
 function var_0_0.RefreshPrincipal(arg_8_0)
 	arg_8_0.userName_.text = arg_8_0.visitorData_.nick
 	arg_8_0.userLevel_.text = "LV." .. arg_8_0.visitorData_.level
-	arg_8_0.userIcon.sprite = ItemTools.getItemSprite(arg_8_0.visitorData_.portrait)
-	arg_8_0.userFrame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_8_0.visitorData_.frame)
+
+	arg_8_0.commonPortrait_:RenderHead(arg_8_0.visitorData_.portrait)
+	arg_8_0.commonPortrait_:RenderFrame(arg_8_0.visitorData_.frame)
 end
 
 function var_0_0.RefreshStatus(arg_9_0)
 	local var_9_0 = arg_9_0.visitorData_.isVisited
 
 	arg_9_0.statusController_:SetSelectedState(var_9_0 == true and "off" or "on")
+end
+
+function var_0_0.Dispose(arg_10_0)
+	arg_10_0.commonPortrait_:Dispose()
+	var_0_0.super.Dispose(arg_10_0)
 end
 
 return var_0_0

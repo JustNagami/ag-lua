@@ -10,6 +10,9 @@ end
 
 function var_0_0.Init(arg_3_0)
 	arg_3_0:BindCfgUI()
+
+	arg_3_0.commonPortrait_ = CommonHeadPortrait.New(arg_3_0.headItem_)
+
 	arg_3_0:AddListeners()
 end
 
@@ -29,8 +32,9 @@ function var_0_0.RefreshPlayerInfo(arg_5_0)
 	local var_5_0 = GuildData:GetGuildMemberData(arg_5_0.memberID_)
 
 	arg_5_0.nameText_.text = var_5_0.name
-	arg_5_0.headImg_.sprite = ItemTools.getItemSprite(var_5_0.icon)
-	arg_5_0.frameImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_5_0.frame)
+
+	arg_5_0.commonPortrait_:RenderHead(var_5_0.icon)
+	arg_5_0.commonPortrait_:RenderFrame(var_5_0.frame)
 end
 
 function var_0_0.OnExit(arg_6_0)
@@ -38,6 +42,7 @@ function var_0_0.OnExit(arg_6_0)
 end
 
 function var_0_0.Dispose(arg_7_0)
+	arg_7_0.commonPortrait_:Dispose()
 	var_0_0.super.Dispose(arg_7_0)
 end
 

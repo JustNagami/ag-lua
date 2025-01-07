@@ -911,7 +911,102 @@
 			57
 		}
 	},
+	{
+		name = "0cc910ace09107313048282436e43857",
+		equip_skill_icon = "58",
+		stage_up_list = 0,
+		power_score = 10,
+		desc = "6a9d039460e790dccd92285882958874",
+		need = 3,
+		inherit_cost_type = 0,
+		equip_type = 1,
+		id = 58,
+		icon = "58",
+		suit = 58,
+		suit_effect = {
+			58
+		}
+	},
+	{
+		name = "057a75e5018faa5b0ac9b72870c34d4a",
+		equip_skill_icon = "59",
+		stage_up_list = 0,
+		power_score = 10,
+		desc = "51c7748f248618265559d6b4d3001bd9",
+		need = 3,
+		inherit_cost_type = 0,
+		equip_type = 1,
+		id = 59,
+		icon = "59",
+		suit = 59,
+		suit_effect = {
+			59
+		}
+	},
+	{
+		name = "270f3a2cf057a160818d934c63faf203",
+		equip_skill_icon = "60",
+		stage_up_list = 0,
+		power_score = 10,
+		desc = "4e896fb5c1b9041639d267f141505530",
+		need = 3,
+		inherit_cost_type = 0,
+		equip_type = 1,
+		id = 60,
+		icon = "60",
+		suit = 60,
+		suit_effect = {
+			60
+		}
+	},
+	{
+		name = "ec5909609ea23c5c90b821ee5b98a167",
+		equip_skill_icon = "61",
+		stage_up_list = 0,
+		power_score = 10,
+		desc = "0751296639ca23f7ef94f78f7fc75bb7",
+		need = 3,
+		inherit_cost_type = 0,
+		equip_type = 1,
+		id = 61,
+		icon = "61",
+		suit = 61,
+		suit_effect = {
+			61
+		}
+	},
+	{
+		name = "026eba2ddecbd2106bff08abf310302c",
+		equip_skill_icon = "62",
+		stage_up_list = 0,
+		power_score = 10,
+		desc = "3b78221bc7f8939c1d289493362ca731",
+		need = 3,
+		inherit_cost_type = 0,
+		equip_type = 1,
+		id = 62,
+		icon = "62",
+		suit = 62,
+		suit_effect = {
+			62
+		}
+	},
 	get_id_list_by_suit = {
+		[62] = {
+			62
+		},
+		[61] = {
+			61
+		},
+		[60] = {
+			60
+		},
+		[59] = {
+			59
+		},
+		[58] = {
+			58
+		},
 		[57] = {
 			57
 		},
@@ -1124,7 +1219,12 @@
 			54,
 			55,
 			56,
-			57
+			57,
+			58,
+			59,
+			60,
+			61,
+			62
 		},
 		[0] = {
 			1,
@@ -1206,6 +1306,11 @@
 		54,
 		55,
 		56,
-		57
+		57,
+		58,
+		59,
+		60,
+		61,
+		62
 	}
 }

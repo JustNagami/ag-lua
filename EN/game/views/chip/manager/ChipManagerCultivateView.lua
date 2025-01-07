@@ -13,6 +13,9 @@ function var_0_0.Init(arg_3_0)
 	arg_3_0.tabIndex = 1
 
 	arg_3_0:BindCfgUI()
+
+	arg_3_0.iconImg_.immediate = true
+
 	arg_3_0:AddListeners()
 
 	arg_3_0.chipManagerUIList_ = LuaList.New(handler(arg_3_0, arg_3_0.RefreshChipManagerItem), arg_3_0.uiList_, arg_3_0:GetChipManagerItem())
@@ -157,7 +160,7 @@ function var_0_0.RefreshUI(arg_13_0)
 
 	local var_13_0 = ChipCfg[arg_13_0.defaultSelectID_]
 
-	arg_13_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Managecat_l/" .. var_13_0.picture_id)
+	arg_13_0.iconImg_.spriteSync = "TextureConfig/Managecat_l/" .. var_13_0.picture_id
 
 	local var_13_1 = #(arg_13_0.chipManagerList_ or {})
 	local var_13_2 = #(arg_13_0.chipManagerDataTemplate_.unlockChipManagerIDList_ or {})

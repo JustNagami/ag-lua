@@ -80,6 +80,18 @@ function var_0_0.ShowTalk(arg_10_0, arg_10_1, arg_10_2, arg_10_3, arg_10_4, arg_
 	elseif arg_10_2 == 4 then
 		arg_10_0.textRect_.anchorMax = Vector2.New(0, 0)
 		arg_10_0.textRect_.anchorMin = Vector2.New(0, 0)
+	elseif arg_10_2 == 5 then
+		arg_10_0.textRect_.anchorMax = Vector2.New(0, 0.5)
+		arg_10_0.textRect_.anchorMin = Vector2.New(0, 0.5)
+	elseif arg_10_2 == 6 then
+		arg_10_0.textRect_.anchorMax = Vector2.New(0.5, 1)
+		arg_10_0.textRect_.anchorMin = Vector2.New(0.5, 1)
+	elseif arg_10_2 == 7 then
+		arg_10_0.textRect_.anchorMax = Vector2.New(1, 0.5)
+		arg_10_0.textRect_.anchorMin = Vector2.New(1, 0.5)
+	elseif arg_10_2 == 8 then
+		arg_10_0.textRect_.anchorMax = Vector2.New(0.5, 0)
+		arg_10_0.textRect_.anchorMin = Vector2.New(0.5, 0)
 	else
 		arg_10_0.textRect_.anchorMax = Vector2.New(0.5, 0.5)
 		arg_10_0.textRect_.anchorMin = Vector2.New(0.5, 0.5)
@@ -170,12 +182,12 @@ function var_0_0.Hide(arg_16_0, arg_16_1)
 	SetActive(arg_16_0.gameObject_, not arg_16_0.isHide_)
 end
 
-function var_0_0.Dispose(arg_17_0)
-	if arg_17_0.id_ then
+function var_0_0.Dispose(arg_17_0, arg_17_1)
+	if arg_17_0.id_ and arg_17_1 then
 		NewPlayerGuideAction.FinishWeakGuide(arg_17_0.id_)
-
-		arg_17_0.id_ = nil
 	end
+
+	arg_17_0.id_ = nil
 
 	if arg_17_0.timer_ then
 		arg_17_0.timer_:Stop()

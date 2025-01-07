@@ -5,6 +5,9 @@ function var_0_0.OnCtor(arg_1_0, arg_1_1)
 	arg_1_0.transform_ = arg_1_1.transform
 
 	arg_1_0:initUI()
+
+	arg_1_0.commonPortrait_ = CommonHeadPortrait.New(arg_1_0.headItem_)
+
 	arg_1_0:AddListeners()
 end
 
@@ -38,8 +41,10 @@ function var_0_0.Refresh(arg_5_0, arg_5_1)
 
 	arg_5_0.name_ = arg_5_1.nick
 	arg_5_0.nickText_.text = arg_5_1.nick
-	arg_5_0.headImg_.sprite = ItemTools.getItemSprite(arg_5_1.portrait)
-	arg_5_0.frameImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_5_1.frame)
+
+	arg_5_0.commonPortrait_:RenderHead(arg_5_1.portrait)
+	arg_5_0.commonPortrait_:RenderFrame(arg_5_1.frame)
+
 	arg_5_0.team_list_ = {}
 
 	for iter_5_0, iter_5_1 in ipairs(arg_5_1.stage_team_list[0]) do
@@ -97,6 +102,11 @@ function firstLargeSize(arg_6_0, arg_6_1)
 	end
 
 	return var_6_6
+end
+
+function var_0_0.Dispose(arg_7_0)
+	arg_7_0.commonPortrait_:Dispose()
+	var_0_0.super.Dispose(arg_7_0)
 end
 
 return var_0_0

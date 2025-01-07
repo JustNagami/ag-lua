@@ -16,6 +16,7 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
+	arg_4_0.moduleImage_.immediate = true
 	arg_4_0.statusController_ = ControllerUtil.GetController(arg_4_0.viewTrans_, "status")
 	arg_4_0.attributeItems_ = {}
 end
@@ -120,7 +121,7 @@ function var_0_0.RefreshUI(arg_18_0)
 
 	LayoutRebuilder.ForceRebuildLayoutImmediate(arg_18_0.titleTrans_)
 
-	arg_18_0.moduleImage_.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponModule/" .. arg_18_0.heroID_)
+	arg_18_0.moduleImage_.spriteSync = "TextureConfig/WeaponModule/" .. arg_18_0.heroID_
 
 	local var_18_0 = arg_18_0:GetModuleLevel()
 

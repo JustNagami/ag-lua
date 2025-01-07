@@ -1,7 +1,11 @@
 ﻿local var_0_0 = class("CanteenJobInfoItem", ReduxView)
 
 function var_0_0.OnCtor(arg_1_0, arg_1_1, arg_1_2)
-	arg_1_0.gameObject_ = Object.Instantiate(arg_1_1, arg_1_2)
+	if not isNil(arg_1_2) then
+		arg_1_0.gameObject_ = Object.Instantiate(arg_1_1, arg_1_2)
+	else
+		arg_1_0.gameObject_ = arg_1_1
+	end
 
 	SetActive(arg_1_0.gameObject_, true)
 

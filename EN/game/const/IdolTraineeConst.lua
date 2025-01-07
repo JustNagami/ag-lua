@@ -11,5 +11,15 @@
 		Color.New(1, 0.3921569, 0.3098039, 1),
 		Color.New(0.3568628, 0.7960784, 0.9058824, 1),
 		Color.New(0.2509804, 0.509804, 1, 1)
+	},
+	shareCategory = {
+		Friends = 1,
+		History = 3,
+		Random = 2
+	},
+	DataSource = {
+		MyData = 1,
+		OthersSharedData = 3,
+		MySharedData = 2
 	}
 }

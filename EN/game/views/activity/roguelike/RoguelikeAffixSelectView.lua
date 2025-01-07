@@ -5,7 +5,7 @@ function var_0_0.UIBackCount(arg_1_0)
 end
 
 function var_0_0.UIName(arg_2_0)
-	return "UI/StrategyMatrix/StrategyMatrixSelectAffixUI"
+	return "Widget/System/MatrixlUI/StrategyMatrixSelectAffixUI"
 end
 
 function var_0_0.UIParent(arg_3_0)
@@ -53,7 +53,7 @@ function var_0_0.InitUI(arg_9_0)
 end
 
 function var_0_0.AddUIListener(arg_10_0)
-	arg_10_0:AddBtnListener(arg_10_0.m_okBtn, nil, function()
+	arg_10_0:AddBtnListener(arg_10_0.Btnbtn_ok, nil, function()
 		StrategyMatrixAction.QueryStartMatrix(arg_10_0.cfg.hero_standard_system_id_list, arg_10_0.activity_id, arg_10_0.customData)
 	end)
 end

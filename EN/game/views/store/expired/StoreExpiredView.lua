@@ -60,13 +60,13 @@ function var_0_0.OnEnter(arg_10_0)
 	for iter_10_0, iter_10_1 in ipairs(arg_10_0.expiredList_) do
 		local var_10_1 = iter_10_1.id
 		local var_10_2 = iter_10_1.num
-		local var_10_3 = ItemTimeLimitExchangeCfg[var_10_1]
+		local var_10_3 = ItemCfg[var_10_1]
 
-		if var_10_3 then
-			if not var_10_0[var_10_3.exchange_item[1]] then
-				var_10_0[var_10_3.exchange_item[1]] = var_10_3.exchange_item[2] * var_10_2
+		if var_10_3.time_exchange_item then
+			if not var_10_0[var_10_3.time_exchange_item[1]] then
+				var_10_0[var_10_3.time_exchange_item[1]] = var_10_3.time_exchange_item[2] * var_10_2
 			else
-				var_10_0[var_10_3.exchange_item[1]] = var_10_0[var_10_3.exchange_item[1]] + var_10_3.exchange_item[2] * var_10_2
+				var_10_0[var_10_3.time_exchange_item[1]] = var_10_0[var_10_3.time_exchange_item[1]] + var_10_3.time_exchange_item[2] * var_10_2
 			end
 		end
 	end

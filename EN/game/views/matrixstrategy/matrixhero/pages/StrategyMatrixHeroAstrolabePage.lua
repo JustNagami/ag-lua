@@ -32,7 +32,7 @@ function var_0_0.SelectItem(arg_4_0, arg_4_1)
 end
 
 function var_0_0.GetHeroData(arg_5_0, arg_5_1)
-	return StrategyMatrixData:GetHeroData(arg_5_0.matrix_activity_id, arg_5_1)
+	return StrategyMatrixData:GetHeroData(arg_5_1)
 end
 
 function var_0_0.GetAstrolabeMaxCount(arg_6_0)

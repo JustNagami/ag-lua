@@ -210,6 +210,14 @@ end
 function var_0_0.GetSubPlotFinishPercentage(arg_14_0)
 	local var_14_0 = 0
 	local var_14_1 = 0
+
+	if arg_14_0 == ChapterConst.CHAPTER_CLIENT_SUMMER_CHESS_BOARD then
+		var_14_1 = SummerChessBoardTools.GetChessExploreFinishCnt()
+		var_14_0 = GameSetting.summer_chess_board_collect_cnt.value[1]
+
+		return var_14_1 / var_14_0
+	end
+
 	local var_14_2 = BattleStageData:GetStageData()
 
 	for iter_14_0, iter_14_1 in ipairs(ChapterClientCfg[arg_14_0].chapter_list) do
@@ -282,7 +290,7 @@ function var_0_0.IsClearChapter(arg_18_0)
 		local var_18_0 = ChapterMapCfg.get_id_list_by_chapter_id[arg_18_0]
 		local var_18_1 = ChapterMapCfg[#var_18_0].location_list
 
-		for iter_18_0, iter_18_1 in ipairs(locationlist) do
+		for iter_18_0, iter_18_1 in ipairs(var_18_1) do
 			for iter_18_2, iter_18_3 in ipairs(ChapterLocationCfg[iter_18_1].stage_list) do
 				if not var_0_0.IsClearStage(iter_18_3) then
 					return false
@@ -540,12 +548,19 @@ end
 function var_0_0.GotoChapterSection(arg_31_0)
 	local var_31_0 = ChapterCfg[arg_31_0].clientID
 	local var_31_1 = ChapterClientCfg[var_31_0]
+	local var_31_2 = var_31_1.asset_pend_key
+
+	if not manager.assetPend:CheckAssetPend(var_31_2) then
+		manager.assetPend:ShowAssetPendMessageBox(var_31_2)
+
+		return
+	end
 
 	if #var_31_1.chapter_list > 1 and var_31_1.id ~= ChapterConst.CHAPTER_CLIENT_XUHENG_PART_2_2 then
-		local var_31_2 = var_31_1.chapter_list[2]
-		local var_31_3 = ChapterCfg[var_31_2].section_id_list[1]
+		local var_31_3 = var_31_1.chapter_list[2]
+		local var_31_4 = ChapterCfg[var_31_3].section_id_list[1]
 
-		if BattleStageData:GetStageData()[var_31_3] or var_31_0 == ChapterConst.CHAPTER_CLIENT_16 or var_31_0 == ChapterConst.CHAPTER_CLIENT_17 or var_31_0 == ChapterConst.CHAPTER_CLIENT_18 then
+		if BattleStageData:GetStageData()[var_31_4] or var_31_0 == ChapterConst.CHAPTER_CLIENT_16 or var_31_0 == ChapterConst.CHAPTER_CLIENT_17 or var_31_0 == ChapterConst.CHAPTER_CLIENT_18 or var_31_0 == ChapterConst.CHAPTER_CLIENT_20 then
 			JumpTools.OpenPageByJump(var_0_0.GetChapterBranchURL(var_31_1.id), {
 				chapterClientID = var_31_1.id
 			})
@@ -555,21 +570,21 @@ function var_0_0.GotoChapterSection(arg_31_0)
 	end
 
 	if not ChapterTools.IsUnlockChapter(arg_31_0) then
-		local var_31_4 = ChapterCfg[arg_31_0].unlock_activity_id
-		local var_31_5 = ActivityData:GetActivityData(var_31_4)
+		local var_31_5 = ChapterCfg[arg_31_0].unlock_activity_id
+		local var_31_6 = ActivityData:GetActivityData(var_31_5)
 
-		ShowTips(string.format(GetTips("OPEN_TIME"), manager.time:GetLostTimeStr(var_31_5.startTime)))
+		ShowTips(string.format(GetTips("OPEN_TIME"), manager.time:GetLostTimeStr(var_31_6.startTime)))
 
 		return
 	end
 
-	local var_31_6 = table.keyof(var_31_1.chapter_list, arg_31_0)
+	local var_31_7 = table.keyof(var_31_1.chapter_list, arg_31_0)
 
-	if var_31_6 > 1 then
-		local var_31_7 = var_31_1.chapter_list[var_31_6 - 1]
+	if var_31_7 > 1 then
+		local var_31_8 = var_31_1.chapter_list[var_31_7 - 1]
 
-		if not ChapterTools.IsClearChapter(var_31_7) then
-			ShowTips(string.format(GetTips("UNLOCK_CONDITION_ACTIVITY_TIPS"), "", GetI18NText(ChapterCfg[var_31_7].subhead)))
+		if not ChapterTools.IsClearChapter(var_31_8) then
+			ShowTips(string.format(GetTips("UNLOCK_CONDITION_ACTIVITY_TIPS"), "", GetI18NText(ChapterCfg[var_31_8].subhead)))
 
 			return
 		end
@@ -601,6 +616,8 @@ function var_0_0.GetChapterBranchURL(arg_32_0)
 		return "/chapterVariant18"
 	elseif arg_32_0 == ChapterConst.CHAPTER_CLIENT_19 then
 		return "/chapterPlot19Main"
+	elseif arg_32_0 == ChapterConst.CHAPTER_CLIENT_20 then
+		return "/chapterVariant20"
 	else
 		print("未实现对应的篇章选择界面")
 
@@ -637,7 +654,7 @@ function var_0_0.GetSubPlotUrl(arg_33_0, arg_33_1)
 			end
 		end
 	else
-		var_33_0 = arg_33_0 == 6010109 and "/subPlotHera" or (arg_33_0 == 6010110 or arg_33_0 == 6010111 or arg_33_0 == 6010112) and "/activityFactoryStoryStage" or arg_33_0 == 6010113 and "/subPlotTyr" or (arg_33_0 == 6010116 or arg_33_0 == 6010117) and "/subPlotLuWuAndZhiMing" or (arg_33_0 == 6010118 or arg_33_0 == 6010119) and (arg_33_1 and "/chapterVariantThoth" or "/subPlotSection") or "/subPlotSection"
+		var_33_0 = arg_33_0 == 6010109 and "/subPlotHera" or (arg_33_0 == 6010110 or arg_33_0 == 6010111 or arg_33_0 == 6010112) and "/activityFactoryStoryStage" or arg_33_0 == 6010113 and "/subPlotTyr" or (arg_33_0 == 6010116 or arg_33_0 == 6010117) and "/subPlotLuWuAndZhiMing" or (arg_33_0 == 6010118 or arg_33_0 == 6010119) and (arg_33_1 and "/chapterVariantThoth" or "/subPlotSection") or arg_33_0 == 6010121 and "/summerChessBoardMainEntry" or (arg_33_0 == 6010122 or arg_33_0 == 6010123) and "/subPlotOuMoFeiSi" or "/subPlotSection"
 	end
 
 	return var_33_0, var_33_1
@@ -1026,6 +1043,8 @@ function var_0_0.GetRedPoint(arg_45_0)
 			"_",
 			var_45_0
 		})
+	elseif var_45_1.type == BattleConst.STAGE_TYPE_NEW.CHALLENGE_ROGUE_TEAM then
+		return RedPointConst.CHALLENGE_ROGUE_TEAM
 	end
 
 	return RedPointConst.COMBAT_UNLL
@@ -1569,6 +1588,13 @@ function var_0_0.IsChapterSystemLock(arg_81_0)
 	local var_81_1 = type(var_81_0.jump_system) == "table" and var_81_0.jump_system[1]
 
 	return var_81_1 and SystemCfg[var_81_1] and SystemCfg[var_81_1].system_hide == 1
+end
+
+function var_0_0.GetChapterShowTypeData(arg_82_0)
+	local var_82_0 = ChapterClientCfg[arg_82_0]
+	local var_82_1
+
+	return var_82_0.show_tag_type == 1 and "activity" or "normal"
 end
 
 return var_0_0

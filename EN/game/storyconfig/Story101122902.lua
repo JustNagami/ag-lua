@@ -307,7 +307,7 @@
 		arg_9_1.frameCnt_ = 0
 		arg_9_1.state_ = "playing"
 		arg_9_1.curTalkId_ = 112292003
-		arg_9_1.duration_ = 3.166
+		arg_9_1.duration_ = 3.17
 
 		local var_9_0 = {
 			ja = 3.166,
@@ -873,7 +873,7 @@
 		arg_21_1.frameCnt_ = 0
 		arg_21_1.state_ = "playing"
 		arg_21_1.curTalkId_ = 112292006
-		arg_21_1.duration_ = 8.533
+		arg_21_1.duration_ = 8.53
 
 		local var_21_0 = {
 			ja = 7.066,
@@ -1300,7 +1300,7 @@
 		arg_29_1.frameCnt_ = 0
 		arg_29_1.state_ = "playing"
 		arg_29_1.curTalkId_ = 112292008
-		arg_29_1.duration_ = 5.066
+		arg_29_1.duration_ = 5.07
 
 		local var_29_0 = {
 			ja = 5.066,
@@ -1632,7 +1632,7 @@
 		arg_37_1.frameCnt_ = 0
 		arg_37_1.state_ = "playing"
 		arg_37_1.curTalkId_ = 112292010
-		arg_37_1.duration_ = 6.333
+		arg_37_1.duration_ = 6.33
 
 		local var_37_0 = {
 			ja = 6.333,
@@ -1918,7 +1918,7 @@
 		arg_45_1.frameCnt_ = 0
 		arg_45_1.state_ = "playing"
 		arg_45_1.curTalkId_ = 112292012
-		arg_45_1.duration_ = 6.966
+		arg_45_1.duration_ = 6.97
 
 		local var_45_0 = {
 			ja = 3.6,
@@ -1973,6 +1973,9 @@
 				arg_45_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_soundonly")
 
 				arg_45_1.callingController_:SetSelectedState("normal")
+
+				arg_45_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_45_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_48_3 = arg_45_1:GetWordFromCfg(112292012)
 				local var_48_4 = arg_45_1:FormatText(var_48_3.content)
@@ -2130,7 +2133,7 @@
 		arg_53_1.frameCnt_ = 0
 		arg_53_1.state_ = "playing"
 		arg_53_1.curTalkId_ = 112292014
-		arg_53_1.duration_ = 8.933
+		arg_53_1.duration_ = 8.93
 
 		local var_53_0 = {
 			ja = 8.933,
@@ -2185,6 +2188,9 @@
 				arg_53_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_soundonly")
 
 				arg_53_1.callingController_:SetSelectedState("normal")
+
+				arg_53_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_53_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_56_3 = arg_53_1:GetWordFromCfg(112292014)
 				local var_56_4 = arg_53_1:FormatText(var_56_3.content)
@@ -2336,7 +2342,7 @@
 		arg_61_1.frameCnt_ = 0
 		arg_61_1.state_ = "playing"
 		arg_61_1.curTalkId_ = 112292016
-		arg_61_1.duration_ = 7.766
+		arg_61_1.duration_ = 7.77
 
 		local var_61_0 = {
 			ja = 7.766,
@@ -2640,7 +2646,7 @@
 		arg_69_1.frameCnt_ = 0
 		arg_69_1.state_ = "playing"
 		arg_69_1.curTalkId_ = 112292018
-		arg_69_1.duration_ = 7.266
+		arg_69_1.duration_ = 7.27
 
 		local var_69_0 = {
 			ja = 6.233,

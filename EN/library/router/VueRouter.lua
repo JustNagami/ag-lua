@@ -247,6 +247,13 @@ end
 
 function var_0_0.OnExitOldRoutes(arg_10_0)
 	local var_10_0 = arg_10_0:GetCoincideRoutesIndex(arg_10_0.oldRoutes_, arg_10_0.routes_)
+	local var_10_1 = arg_10_0.recordMap_[arg_10_0.oldRoutes_[#arg_10_0.oldRoutes_]]
+
+	if var_10_1 then
+		print(string.format("ReduxView OnBehind(%s) idx:%d", arg_10_0.oldRoutes_[#arg_10_0.oldRoutes_], #arg_10_0.oldRoutes_))
+		var_10_1:HideWeakGuide()
+		var_10_1:OnBehind()
+	end
 
 	for iter_10_0 = #arg_10_0.oldRoutes_, var_10_0 + 1, -1 do
 		arg_10_0:ExitRoute(arg_10_0.oldRoutes_[iter_10_0])
@@ -390,8 +397,10 @@ function var_0_0.OnEnterNewRoutes(arg_16_0)
 	local var_16_8 = arg_16_0.recordMap_[arg_16_0.routes_[#arg_16_0.routes_]]
 
 	if var_16_8 then
+		print(string.format("ReduxView OnTop(%s) idx: %d", arg_16_0.routes_[#arg_16_0.routes_], #arg_16_0.routes_))
 		var_16_8:OnTop()
 		var_16_8:CheckWeakGuide()
+		arg_16_0:SendToUITimeMgr(var_16_8, arg_16_0.routes_[#arg_16_0.routes_], true)
 	end
 
 	for iter_16_1 = 1, #var_16_1 do
@@ -419,8 +428,7 @@ function var_0_0.OnUpdateCoincideRoutes(arg_17_0)
 	local var_17_2 = arg_17_0.recordMap_[arg_17_0.oldRoutes_[var_17_0]]
 
 	if var_17_2 then
-		var_17_2:HideWeakGuide()
-		var_17_2:OnBehind()
+		var_17_2:OnOverlapped()
 	end
 
 	arg_17_0.curLinkMethod_:DoNext()
@@ -487,134 +495,146 @@ function var_0_0.ExitRoute(arg_21_0, arg_21_1)
 	var_21_0:OnExit()
 	LuaHidTools.ExitInputPage(var_21_0)
 	ReduxFactory.GetInstance():CacheReduxView(var_21_0)
+	arg_21_0:SendToUITimeMgr(var_21_0, arg_21_1, false)
 
 	arg_21_0.recordMap_[arg_21_1] = nil
 end
 
-function var_0_0.ParseUrl(arg_22_0, arg_22_1)
-	local var_22_0 = ""
-	local var_22_1 = {}
-	local var_22_2 = string.char(string.byte(arg_22_1)) == "/"
-
-	if var_22_2 then
-		arg_22_1 = string.sub(arg_22_1, 2, #arg_22_1)
-	end
-
-	local var_22_3 = string.split(arg_22_1, "/")
-	local var_22_4 = {}
-	local var_22_5 = ""
-
-	if not var_22_2 then
-		var_22_1, var_22_5 = arg_22_0:UmergeRoutes(arg_22_0.routes_, var_22_3)
-	else
-		var_22_1, var_22_5 = arg_22_0:AppendRoutes(arg_22_0.routes_, var_22_3)
-	end
-
-	return var_22_2, var_22_1, var_22_5
-end
-
-function var_0_0.UmergeRoutes(arg_23_0, arg_23_1, arg_23_2)
-	local var_23_0 = {}
-	local var_23_1 = ""
-	local var_23_2 = #arg_23_1
-
-	for iter_23_0, iter_23_1 in ipairs(arg_23_1) do
-		if iter_23_1 == arg_23_2[1] then
-			var_23_2 = iter_23_0 - 1
-
-			break
+function var_0_0.SendToUITimeMgr(arg_22_0, arg_22_1, arg_22_2, arg_22_3)
+	if arg_22_3 then
+		if not arg_22_1.EnterSendMgr then
+			manager.uiTime:OnEnterRoute(arg_22_2)
 		end
+	elseif not arg_22_1.ExitSendMgr then
+		manager.uiTime:OnExitRoute(arg_22_2)
 	end
-
-	for iter_23_2 = 1, var_23_2 do
-		table.insert(var_23_0, arg_23_1[iter_23_2])
-
-		var_23_1 = string.format("%s/%s", var_23_1, arg_23_1[iter_23_2])
-	end
-
-	for iter_23_3 = 1, #arg_23_2 do
-		local var_23_3 = arg_23_2[iter_23_3]
-
-		table.insert(var_23_0, var_23_3)
-
-		var_23_1 = string.format("%s/%s", var_23_1, var_23_3)
-	end
-
-	return var_23_0, var_23_1
 end
 
-function var_0_0.AppendRoutes(arg_24_0, arg_24_1, arg_24_2)
+function var_0_0.ParseUrl(arg_23_0, arg_23_1)
+	local var_23_0 = ""
+	local var_23_1 = {}
+	local var_23_2 = string.char(string.byte(arg_23_1)) == "/"
+
+	if var_23_2 then
+		arg_23_1 = string.sub(arg_23_1, 2, #arg_23_1)
+	end
+
+	local var_23_3 = string.split(arg_23_1, "/")
+	local var_23_4 = {}
+	local var_23_5 = ""
+
+	if not var_23_2 then
+		var_23_1, var_23_5 = arg_23_0:UmergeRoutes(arg_23_0.routes_, var_23_3)
+	else
+		var_23_1, var_23_5 = arg_23_0:AppendRoutes(arg_23_0.routes_, var_23_3)
+	end
+
+	return var_23_2, var_23_1, var_23_5
+end
+
+function var_0_0.UmergeRoutes(arg_24_0, arg_24_1, arg_24_2)
 	local var_24_0 = {}
 	local var_24_1 = ""
+	local var_24_2 = #arg_24_1
 
-	for iter_24_0, iter_24_1 in ipairs(arg_24_2) do
-		if iter_24_1 == arg_24_1[iter_24_0] then
-			table.insert(var_24_0, iter_24_1)
+	for iter_24_0, iter_24_1 in ipairs(arg_24_1) do
+		if iter_24_1 == arg_24_2[1] then
+			var_24_2 = iter_24_0 - 1
 
-			var_24_1 = string.format("%s/%s", var_24_1, iter_24_1)
-		else
 			break
 		end
 	end
 
-	for iter_24_2 = #var_24_0 + 1, #arg_24_2 do
-		table.insert(var_24_0, arg_24_2[iter_24_2])
+	for iter_24_2 = 1, var_24_2 do
+		table.insert(var_24_0, arg_24_1[iter_24_2])
 
-		var_24_1 = string.format("%s/%s", var_24_1, arg_24_2[iter_24_2])
+		var_24_1 = string.format("%s/%s", var_24_1, arg_24_1[iter_24_2])
+	end
+
+	for iter_24_3 = 1, #arg_24_2 do
+		local var_24_3 = arg_24_2[iter_24_3]
+
+		table.insert(var_24_0, var_24_3)
+
+		var_24_1 = string.format("%s/%s", var_24_1, var_24_3)
 	end
 
 	return var_24_0, var_24_1
 end
 
-function var_0_0.GetCoincideRoutesIndex(arg_25_0, arg_25_1, arg_25_2)
-	local var_25_0 = 0
+function var_0_0.AppendRoutes(arg_25_0, arg_25_1, arg_25_2)
+	local var_25_0 = {}
+	local var_25_1 = ""
 
 	for iter_25_0, iter_25_1 in ipairs(arg_25_2) do
-		if not arg_25_1[iter_25_0] or iter_25_1 ~= arg_25_1[iter_25_0] then
-			return iter_25_0 - 1
-		end
+		if iter_25_1 == arg_25_1[iter_25_0] then
+			table.insert(var_25_0, iter_25_1)
 
-		var_25_0 = iter_25_0
+			var_25_1 = string.format("%s/%s", var_25_1, iter_25_1)
+		else
+			break
+		end
 	end
 
-	return var_25_0
+	for iter_25_2 = #var_25_0 + 1, #arg_25_2 do
+		table.insert(var_25_0, arg_25_2[iter_25_2])
+
+		var_25_1 = string.format("%s/%s", var_25_1, arg_25_2[iter_25_2])
+	end
+
+	return var_25_0, var_25_1
 end
 
-function var_0_0.RevertRoutes(arg_26_0)
-	arg_26_0.oldRoutes_ = {}
+function var_0_0.GetCoincideRoutesIndex(arg_26_0, arg_26_1, arg_26_2)
+	local var_26_0 = 0
 
-	if #arg_26_0.history_ <= 0 then
+	for iter_26_0, iter_26_1 in ipairs(arg_26_2) do
+		if not arg_26_1[iter_26_0] or iter_26_1 ~= arg_26_1[iter_26_0] then
+			return iter_26_0 - 1
+		end
+
+		var_26_0 = iter_26_0
+	end
+
+	return var_26_0
+end
+
+function var_0_0.RevertRoutes(arg_27_0)
+	arg_27_0.oldRoutes_ = {}
+
+	if #arg_27_0.history_ <= 0 then
 		return
 	end
 
-	local var_26_0 = arg_26_0.history_[#arg_26_0.history_]
+	local var_27_0 = arg_27_0.history_[#arg_27_0.history_]
 
-	arg_26_0:Open(var_26_0.url, var_26_0.args)
+	arg_27_0:Open(var_27_0.url, var_27_0.args)
 end
 
-function var_0_0.DestroyCurRoutes(arg_27_0)
-	for iter_27_0 = #arg_27_0.routes_, 1, -1 do
-		arg_27_0:ExitRoute(arg_27_0.routes_[iter_27_0])
+function var_0_0.DestroyCurRoutes(arg_28_0)
+	for iter_28_0 = #arg_28_0.routes_, 1, -1 do
+		arg_28_0:ExitRoute(arg_28_0.routes_[iter_28_0])
 	end
 
-	arg_27_0.routes_ = {}
+	arg_28_0.routes_ = {}
+	arg_28_0.oldRoutes_ = {}
 end
 
-function var_0_0.GetCurHistory(arg_28_0)
-	return arg_28_0.history_
+function var_0_0.GetCurHistory(arg_29_0)
+	return arg_29_0.history_
 end
 
-function var_0_0.SaveCacheHistory(arg_29_0, arg_29_1)
-	if arg_29_0.curLayer_ and table.keyof(arg_29_0.saveHistoryLaylerList_, arg_29_0.curLayer_) then
-		arg_29_0.cacheHistory_[arg_29_0.curLayer_] = clone(arg_29_0.history_)
+function var_0_0.SaveCacheHistory(arg_30_0, arg_30_1)
+	if arg_30_0.curLayer_ and table.keyof(arg_30_0.saveHistoryLaylerList_, arg_30_0.curLayer_) then
+		arg_30_0.cacheHistory_[arg_30_0.curLayer_] = clone(arg_30_0.history_)
 	end
 
-	arg_29_0.curLayer_ = arg_29_1
+	arg_30_0.curLayer_ = arg_30_1
 
-	if arg_29_1 then
-		arg_29_0.history_ = clone(arg_29_0.cacheHistory_[arg_29_1]) or {}
+	if arg_30_1 then
+		arg_30_0.history_ = clone(arg_30_0.cacheHistory_[arg_30_1]) or {}
 	else
-		arg_29_0.history_ = {}
+		arg_30_0.history_ = {}
 	end
 end
 

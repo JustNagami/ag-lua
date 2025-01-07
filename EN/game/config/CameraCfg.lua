@@ -1272,6 +1272,44 @@
 			-17.343
 		}
 	},
+	chat_6012 = {
+		type = "chat",
+		name = "chat_6012",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6012聊天",
+		sceneName = "",
+		position = {
+			0.641,
+			0.4,
+			2.993
+		},
+		rotate = {
+			-4.582,
+			179.544,
+			-9.014
+		}
+	},
+	playerInfo_6012 = {
+		type = "playerInfo",
+		name = "playerInfo_6012",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6012玩家信息界面",
+		sceneName = "",
+		position = {
+			0.23,
+			0.53,
+			2.51
+		},
+		rotate = {
+			1.584,
+			172.874,
+			12.303
+		}
+	},
 	chat_6013 = {
 		type = "chat",
 		name = "chat_6013",
@@ -1310,13 +1348,471 @@
 			-0.694
 		}
 	},
+	chat_6014 = {
+		type = "chat",
+		name = "chat_6014",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6014聊天",
+		sceneName = "",
+		position = {
+			-0.087,
+			2.299,
+			3.53
+		},
+		rotate = {
+			4.117,
+			164.259,
+			5.443
+		}
+	},
+	playerInfo_6014 = {
+		type = "playerInfo",
+		name = "playerInfo_6014",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6014玩家信息界面",
+		sceneName = "",
+		position = {
+			0.25,
+			1.974,
+			4.017
+		},
+		rotate = {
+			-1.134,
+			169.001,
+			0.742
+		}
+	},
+	chat_6015 = {
+		type = "chat",
+		name = "chat_6015",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6015聊天",
+		sceneName = "",
+		position = {
+			-2.532,
+			1.044,
+			2.012
+		},
+		rotate = {
+			-0.64,
+			125.904,
+			11.996
+		}
+	},
+	playerInfo_6015 = {
+		type = "playerInfo",
+		name = "playerInfo_6015",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6015玩家信息界面",
+		sceneName = "",
+		position = {
+			-3.031,
+			0.759,
+			2.27
+		},
+		rotate = {
+			-4.535,
+			122.198,
+			-0.478
+		}
+	},
+	TugGame = {
+		type = "TugGame",
+		name = "TugGame",
+		pictureName = "",
+		multiscene = 0,
+		fieldOfView = 35,
+		desc = "拔河游戏视角",
+		sceneName = "",
+		position = {
+			0,
+			3.5,
+			4.8
+		},
+		rotate = {
+			21.666,
+			-180,
+			0
+		}
+	},
+	shoot_game = {
+		type = "shoot_game",
+		name = "shoot_game",
+		pictureName = "",
+		multiscene = 0,
+		fieldOfView = 35,
+		desc = "射击小游戏视角",
+		sceneName = "",
+		position = {
+			0,
+			3.5,
+			6.3
+		},
+		rotate = {
+			21.666,
+			-180,
+			0
+		}
+	},
+	chat_6016 = {
+		type = "chat",
+		name = "chat_6016",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6016聊天",
+		sceneName = "",
+		position = {
+			1.552,
+			1.082,
+			3.489
+		},
+		rotate = {
+			7.652,
+			-168.794,
+			15.454
+		}
+	},
+	playerInfo_6016 = {
+		type = "playerInfo",
+		name = "playerInfo_6016",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6016玩家信息界面",
+		sceneName = "",
+		position = {
+			0.688,
+			0.323,
+			3.485
+		},
+		rotate = {
+			-3.99,
+			-180.646,
+			16.788
+		}
+	},
+	chat_6021 = {
+		type = "chat",
+		name = "chat_6021",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6021聊天",
+		sceneName = "",
+		position = {
+			1.303,
+			2.522,
+			1.142
+		},
+		rotate = {
+			8.564,
+			-169.672,
+			9.4
+		}
+	},
+	playerInfo_6021 = {
+		type = "playerInfo",
+		name = "playerInfo_6021",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6021玩家信息界面",
+		sceneName = "",
+		position = {
+			1.303,
+			2.522,
+			1.142
+		},
+		rotate = {
+			8.564,
+			-169.672,
+			9.4
+		}
+	},
+	chat_6017_1 = {
+		type = "chat",
+		name = "chat_6017_1",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "聊天左侧",
+		sceneName = "X203",
+		position = {
+			-4.161,
+			2.329,
+			16.584
+		},
+		rotate = {
+			6.911,
+			67.722,
+			-0.004
+		}
+	},
+	playerInfo_6017_1 = {
+		type = "playerInfo",
+		name = "playerInfo_6017_1",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "玩家信息界面",
+		sceneName = "X203",
+		position = {
+			-4.161,
+			2.329,
+			16.584
+		},
+		rotate = {
+			6.911,
+			67.722,
+			-0.004
+		}
+	},
+	chat_6017_2 = {
+		type = "chat",
+		name = "chat_6017_2",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "聊天右侧",
+		sceneName = "X203",
+		position = {
+			-1.302,
+			1.293,
+			6.006
+		},
+		rotate = {
+			-4.671,
+			32.047,
+			-0.02
+		}
+	},
+	playerInfo_6017_2 = {
+		type = "playerInfo",
+		name = "playerInfo_6017_2",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "玩家信息界面",
+		sceneName = "X203",
+		position = {
+			-1.302,
+			1.293,
+			6.006
+		},
+		rotate = {
+			-4.671,
+			32.047,
+			-0.02
+		}
+	},
+	chat_6018_1 = {
+		type = "chat",
+		name = "chat_6018_1",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "聊天左侧",
+		sceneName = "X203a",
+		position = {
+			0.22,
+			1.42,
+			16.45
+		},
+		rotate = {
+			4.917,
+			97.125,
+			2.065
+		}
+	},
+	playerInfo_6018_1 = {
+		type = "playerInfo",
+		name = "playerInfo_6018_1",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "玩家信息界面",
+		sceneName = "X203a",
+		position = {
+			0.22,
+			1.42,
+			16.45
+		},
+		rotate = {
+			4.917,
+			97.125,
+			2.065
+		}
+	},
+	chat_6018_2 = {
+		type = "chat",
+		name = "chat_6018_2",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "聊天右侧",
+		sceneName = "X203a",
+		position = {
+			-0.67,
+			1.81,
+			3.29
+		},
+		rotate = {
+			-1.026,
+			226.265,
+			0.132
+		}
+	},
+	playerInfo_6018_2 = {
+		type = "playerInfo",
+		name = "playerInfo_6018_2",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "玩家信息界面",
+		sceneName = "X203a",
+		position = {
+			-0.67,
+			1.81,
+			3.29
+		},
+		rotate = {
+			-1.026,
+			226.265,
+			0.132
+		}
+	},
+	t0_chat_6017 = {
+		type = "chat",
+		name = "t0_chat_6017",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 23,
+		desc = "聊天界面中间",
+		sceneName = "X203",
+		position = {
+			-1.512,
+			1.147,
+			11.922
+		},
+		rotate = {
+			1.909,
+			53.168,
+			0.258
+		}
+	},
+	t0_playerInfo_6017 = {
+		type = "playerInfo",
+		name = "t0_playerInfo_6017",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 23,
+		desc = "玩家信息界面",
+		sceneName = "X203",
+		position = {
+			-0.854,
+			1.22,
+			12.413
+		},
+		rotate = {
+			1.892,
+			56.269,
+			0.361
+		}
+	},
+	t0_chat_6018 = {
+		type = "chat",
+		name = "t0_chat_6018",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 23,
+		desc = "聊天界面中间",
+		sceneName = "X203a",
+		position = {
+			3.144,
+			1.373,
+			6.327
+		},
+		rotate = {
+			4.365,
+			-136.072,
+			-1.931
+		}
+	},
+	t0_playerInfo_6018 = {
+		type = "playerInfo",
+		name = "t0_playerInfo_6018",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 23,
+		desc = "玩家信息界面",
+		sceneName = "X203a",
+		position = {
+			3.42,
+			1.45,
+			6.22
+		},
+		rotate = {
+			5.469,
+			219.846,
+			-1.577
+		}
+	},
+	furnituPreview = {
+		type = "",
+		name = "furnituPreview",
+		pictureName = "",
+		multiscene = 0,
+		fieldOfView = 28,
+		desc = "后宅家具预览",
+		sceneName = "X100_DormPreview",
+		position = {
+			500,
+			2.24,
+			6.7
+		},
+		rotate = {
+			6.67,
+			180,
+			0
+		}
+	},
+	furnituPreviewEntity = {
+		type = "",
+		name = "furnituPreviewEntity",
+		pictureName = "",
+		multiscene = 0,
+		fieldOfView = 28,
+		desc = "后宅家具预览(外部)",
+		sceneName = "X100_DormPreviewWithEntity",
+		position = {
+			500,
+			2.24,
+			6.7
+		},
+		rotate = {
+			6.67,
+			180,
+			0
+		}
+	},
 	get_id_list_by_fieldOfView = {
 		[26] = {
 			"barbecue"
 		},
 		[35] = {
 			"chat_6100",
-			"playerInfo_6100"
+			"playerInfo_6100",
+			"TugGame",
+			"shoot_game"
 		},
 		[45] = {
 			"home_6100",
@@ -1366,11 +1862,17 @@
 			"heroDisplay",
 			"heroSkin",
 			"clubBoss",
-			"activityMatrix"
+			"activityMatrix",
+			"furnituPreview",
+			"furnituPreviewEntity"
 		},
 		[23] = {
 			"playerInfo",
-			"chat"
+			"chat",
+			"t0_chat_6017",
+			"t0_playerInfo_6017",
+			"t0_chat_6018",
+			"t0_playerInfo_6018"
 		},
 		[27] = {
 			"home",
@@ -1403,8 +1905,26 @@
 			"playerInfo_6010",
 			"chat_6011",
 			"playerInfo_6011",
+			"chat_6012",
+			"playerInfo_6012",
 			"chat_6013",
-			"playerInfo_6013"
+			"playerInfo_6013",
+			"chat_6014",
+			"playerInfo_6014",
+			"chat_6015",
+			"playerInfo_6015",
+			"chat_6016",
+			"playerInfo_6016",
+			"chat_6021",
+			"playerInfo_6021",
+			"chat_6017_1",
+			"playerInfo_6017_1",
+			"chat_6017_2",
+			"playerInfo_6017_2",
+			"chat_6018_1",
+			"playerInfo_6018_1",
+			"chat_6018_2",
+			"playerInfo_6018_2"
 		}
 	}
 }

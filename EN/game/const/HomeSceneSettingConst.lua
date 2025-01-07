@@ -5,5 +5,11 @@
 		SCENE_BGM = 3,
 		SOUND_EFFECT = 1,
 		CAMERA_FOLLOW = 2
+	},
+	RANDOM_MODE = {
+		COUNT = 3,
+		EACH_ENTER = 0,
+		EACH_LOGIN = 1,
+		EACH_DAY = 2
 	}
 }

@@ -41,6 +41,8 @@ function var_0_0.GotoGuildActivity(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_4)
 		if not GuildActivityData:GetSelfNodeData(arg_2_2:GetNodeId()) then
 			arg_2_0:GotoBattleFaild(arg_2_1, arg_2_2, arg_2_3, arg_2_4)
 		else
+			CheckBattleResultNeedAddHeroExp()
+
 			function BattleCallLuaCallBack()
 				manager.story:RemovePlayer()
 				gameContext:Go("/guildActivityNodeResult", {
@@ -54,6 +56,8 @@ function var_0_0.GotoGuildActivity(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_4)
 			end
 		end
 	elseif var_2_0.type == 3 then
+		CheckBattleResultNeedAddHeroExp()
+
 		function BattleCallLuaCallBack()
 			manager.story:RemovePlayer()
 
@@ -149,6 +153,8 @@ function var_0_0.GotoGuildActivitySP(arg_8_0, arg_8_1, arg_8_2, arg_8_3, arg_8_4
 		if not GuildActivitySPData:GetSelfNodeData(arg_8_2:GetNodeId()) then
 			arg_8_0:GotoBattleFaild(arg_8_1, arg_8_2, arg_8_3, arg_8_4)
 		else
+			CheckBattleResultNeedAddHeroExp()
+
 			function BattleCallLuaCallBack()
 				manager.story:RemovePlayer()
 
@@ -176,6 +182,8 @@ function var_0_0.GotoGuildActivitySP(arg_8_0, arg_8_1, arg_8_2, arg_8_3, arg_8_4
 			end
 		end
 	elseif var_8_0.type == 3 or var_8_0.type == 4 then
+		CheckBattleResultNeedAddHeroExp()
+
 		function BattleCallLuaCallBack()
 			manager.story:RemovePlayer()
 

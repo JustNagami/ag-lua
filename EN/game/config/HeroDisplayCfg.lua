@@ -3860,6 +3860,63 @@
 			}
 		}
 	},
+	[104902] = {
+		id = 104902,
+		position = {
+			500,
+			0,
+			0
+		},
+		rotation = {
+			0,
+			0,
+			0
+		},
+		scale = {
+			1,
+			1,
+			1
+		},
+		effectList = {},
+		skinMeshIDList = {},
+		skinMeshPresetName = {},
+		skinMeshPresetValue = {},
+		skinMeshPresetEffect = {},
+		poseList = {
+			{
+				10490200,
+				0
+			},
+			{
+				10490299,
+				1
+			},
+			{
+				10490201,
+				2
+			},
+			{
+				10490202,
+				2
+			},
+			{
+				10490203,
+				2
+			},
+			{
+				10490204,
+				2
+			},
+			{
+				10490205,
+				2
+			},
+			{
+				10490206,
+				0
+			}
+		}
+	},
 	[1158] = {
 		id = 1158,
 		position = {
@@ -4202,6 +4259,63 @@
 			}
 		}
 	},
+	[109502] = {
+		id = 109502,
+		position = {
+			500,
+			0,
+			0
+		},
+		rotation = {
+			0,
+			0,
+			0
+		},
+		scale = {
+			1,
+			1,
+			1
+		},
+		effectList = {},
+		skinMeshIDList = {},
+		skinMeshPresetName = {},
+		skinMeshPresetValue = {},
+		skinMeshPresetEffect = {},
+		poseList = {
+			{
+				10950200,
+				1
+			},
+			{
+				10950299,
+				1
+			},
+			{
+				10950201,
+				1
+			},
+			{
+				10950202,
+				1
+			},
+			{
+				10950203,
+				1
+			},
+			{
+				10950204,
+				1
+			},
+			{
+				10950205,
+				1
+			},
+			{
+				10950206,
+				1
+			}
+		}
+	},
 	[1284] = {
 		id = 1284,
 		position = {
@@ -4316,6 +4430,291 @@
 			}
 		}
 	},
+	[1022] = {
+		id = 1022,
+		position = {
+			500,
+			0,
+			0
+		},
+		rotation = {
+			0,
+			0,
+			0
+		},
+		scale = {
+			1,
+			1,
+			1
+		},
+		effectList = {},
+		skinMeshIDList = {},
+		skinMeshPresetName = {},
+		skinMeshPresetValue = {},
+		skinMeshPresetEffect = {},
+		poseList = {
+			{
+				102200,
+				0
+			},
+			{
+				102299,
+				1
+			},
+			{
+				102201,
+				0
+			},
+			{
+				102202,
+				1
+			},
+			{
+				102203,
+				0
+			},
+			{
+				102204,
+				0
+			},
+			{
+				102205,
+				0
+			},
+			{
+				102206,
+				1
+			}
+		}
+	},
+	[1021] = {
+		id = 1021,
+		position = {
+			500,
+			0,
+			0
+		},
+		rotation = {
+			0,
+			0,
+			0
+		},
+		scale = {
+			1,
+			1,
+			1
+		},
+		effectList = {},
+		skinMeshIDList = {},
+		skinMeshPresetName = {},
+		skinMeshPresetValue = {},
+		skinMeshPresetEffect = {},
+		poseList = {
+			{
+				102100,
+				0
+			},
+			{
+				102199,
+				2
+			},
+			{
+				102101,
+				2
+			},
+			{
+				102102,
+				2
+			},
+			{
+				102103,
+				2
+			},
+			{
+				102104,
+				1
+			},
+			{
+				102105,
+				2
+			},
+			{
+				102106,
+				2
+			}
+		}
+	},
+	[1156] = {
+		id = 1156,
+		position = {
+			500,
+			0,
+			0
+		},
+		rotation = {
+			0,
+			0,
+			0
+		},
+		scale = {
+			1,
+			1,
+			1
+		},
+		effectList = {},
+		skinMeshIDList = {},
+		skinMeshPresetName = {},
+		skinMeshPresetValue = {},
+		skinMeshPresetEffect = {},
+		poseList = {
+			{
+				115600,
+				0
+			},
+			{
+				115699,
+				2
+			},
+			{
+				115601,
+				2
+			},
+			{
+				115602,
+				2
+			},
+			{
+				115603,
+				2
+			},
+			{
+				115604,
+				1
+			},
+			{
+				115605,
+				2
+			},
+			{
+				115606,
+				2
+			}
+		}
+	},
+	[1020] = {
+		id = 1020,
+		position = {
+			500,
+			0,
+			0
+		},
+		rotation = {
+			0,
+			0,
+			0
+		},
+		scale = {
+			1,
+			1,
+			1
+		},
+		effectList = {},
+		skinMeshIDList = {},
+		skinMeshPresetName = {},
+		skinMeshPresetValue = {},
+		skinMeshPresetEffect = {},
+		poseList = {
+			{
+				102000,
+				0
+			},
+			{
+				102099,
+				0
+			},
+			{
+				102001,
+				0
+			},
+			{
+				102002,
+				0
+			},
+			{
+				102003,
+				0
+			},
+			{
+				102004,
+				0
+			},
+			{
+				102005,
+				0
+			},
+			{
+				102006,
+				0
+			}
+		}
+	},
+	[1089] = {
+		id = 1089,
+		position = {
+			500,
+			0,
+			0
+		},
+		rotation = {
+			0,
+			0,
+			0
+		},
+		scale = {
+			1,
+			1,
+			1
+		},
+		effectList = {},
+		skinMeshIDList = {},
+		skinMeshPresetName = {},
+		skinMeshPresetValue = {},
+		skinMeshPresetEffect = {},
+		poseList = {
+			{
+				108900,
+				0
+			},
+			{
+				108999,
+				0
+			},
+			{
+				108901,
+				1
+			},
+			{
+				108902,
+				1
+			},
+			{
+				108903,
+				1
+			},
+			{
+				108904,
+				1
+			},
+			{
+				108905,
+				1
+			},
+			{
+				108906,
+				1
+			}
+		}
+	},
 	all = {
 		1039,
 		1048,
@@ -4375,13 +4774,20 @@
 		105501,
 		1049,
 		104901,
+		104902,
 		1158,
 		1061,
 		1150,
 		1015,
 		1095,
 		109501,
+		109502,
 		1284,
-		1197
+		1197,
+		1022,
+		1021,
+		1156,
+		1020,
+		1089
 	}
 }

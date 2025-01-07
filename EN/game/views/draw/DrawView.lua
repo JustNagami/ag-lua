@@ -77,6 +77,7 @@ function var_0_0.InitUI(arg_5_0)
 
 	arg_5_0.showRightController = ControllerUtil.GetController(arg_5_0.transform_, "showRight")
 	arg_5_0.rechargeShopGiftController = ControllerUtil.GetController(arg_5_0.transform_, "recharge_shop_gift")
+	arg_5_0.infoController = arg_5_0.infoController_:GetController("info")
 	arg_5_0.tree_ = LuaTree.New(arg_5_0.uitreeGo_)
 
 	arg_5_0.tree_:SetSelectedHandler(handler(arg_5_0, arg_5_0.OnGroupSelect), handler(arg_5_0, arg_5_0.OnItemSelect))
@@ -100,10 +101,10 @@ function var_0_0.AddUIListener(arg_6_0)
 
 		DrawAction.GetPoolData(arg_6_0.selectPoolId_)
 	end)
-	arg_6_0:AddBtnListener(arg_6_0.btnRecord_, nil, function()
-		JumpTools.OpenPageByJump("drawRecord", {
-			poolId = arg_6_0.selectPoolId_
-		})
+	arg_6_0:AddBtnListener(arg_6_0.btnShop_, nil, function()
+		JumpTools.GoToSystem("/shop", {
+			shopId = ShopConst.SHOP_ID.DRAW_EXCHANGE_ASSET_SHOP
+		}, ViewConst.SYSTEM_ID.SHOP)
 	end)
 	arg_6_0:AddBtnListener(arg_6_0.btnOnce_, nil, function()
 		arg_6_0:DrawCheck(DrawConst.DRAW_TYPE.ONE)
@@ -203,6 +204,12 @@ function var_0_0.OnTop(arg_15_0)
 end
 
 function var_0_0.OnEnter(arg_16_0)
+	if arg_16_0.params_.isFirst then
+		arg_16_0:DestroyPoolGo()
+
+		arg_16_0.params_.isFirst = nil
+	end
+
 	arg_16_0:SetupActivityPool()
 
 	if arg_16_0.params_.poolType then
@@ -234,6 +241,10 @@ function var_0_0.OnEnter(arg_16_0)
 
 	manager.notify:RegistListener(CURRENCY_UPDATE, arg_16_0.currencyModifyHandler_)
 	manager.ui:SetMainCameraCom("CinemachineBrain", false)
+
+	if ShopListCfg[ShopConst.SHOP_ID.DRAW_EXCHANGE_ASSET_SHOP] then
+		arg_16_0.shopText_.text = GetI18NText(ShopListCfg[ShopConst.SHOP_ID.DRAW_EXCHANGE_ASSET_SHOP].remark)
+	end
 end
 
 function var_0_0.OnExit(arg_17_0)
@@ -363,7 +374,11 @@ function var_0_0.InitTree(arg_18_0)
 		end
 	end
 
+	arg_18_0.isFirst = nil
+
 	arg_18_0.tree_:SetData(var_18_0)
+
+	arg_18_0.isFirst = true
 end
 
 function var_0_0.OnGroupSelect(arg_19_0, arg_19_1, arg_19_2, arg_19_3, arg_19_4)
@@ -371,35 +386,94 @@ function var_0_0.OnGroupSelect(arg_19_0, arg_19_1, arg_19_2, arg_19_3, arg_19_4)
 end
 
 function var_0_0.OnItemSelect(arg_20_0, arg_20_1, arg_20_2, arg_20_3, arg_20_4)
+	if arg_20_0.isFirst == nil then
+		return
+	end
+
 	arg_20_0:HidePoolNewTag(arg_20_2)
 	arg_20_0:SetSelectPool(arg_20_2)
 
 	local var_20_0 = DrawPoolCfg[arg_20_2]
-
-	SetActive(arg_20_0.upArrowGo_, false)
-	SetActive(arg_20_0.upTargetTipsGo_, false)
-	SetActive(arg_20_0.ALevelTips_.gameObject, false)
-
 	local var_20_1 = var_0_2[var_20_0.pool_show_type]
 
+	arg_20_0.infoController:SetSelectedState("info_1")
+
 	if var_20_1 == 1 then
-		arg_20_0.ALevelTips_.text = GetTips("DRAW_POOL_PROBABILITY_A_4")
 		arg_20_0.upTips_.text = GetTips("DRAW_POOL_PROBABILITY_S_5")
+		arg_20_0.upTips1_.text = GetTips("DRAW_POOL_PROBABILITY_S_5")
+		arg_20_0.upTips2_.text = GetTips("DRAW_POOL_PROBABILITY_S_5")
 	elseif var_20_1 == 2 then
-		arg_20_0.ALevelTips_.text = GetTips("DRAW_POOL_PROBABILITY_A_4")
 		arg_20_0.upTips_.text = GetTips("DRAW_POOL_PROBABILITY_S_4")
+		arg_20_0.upTips1_.text = GetTips("DRAW_POOL_PROBABILITY_S_4")
+		arg_20_0.upTips2_.text = GetTips("DRAW_POOL_PROBABILITY_S_4")
 	elseif var_20_1 == 3 then
-		arg_20_0.ALevelTips_.text = GetTips("DRAW_POOL_PROBABILITY_A_4")
 		arg_20_0.upTips_.text = GetTips("DRAW_POOL_PROBABILITY_S_4")
+		arg_20_0.upTips1_.text = GetTips("DRAW_POOL_PROBABILITY_S_4")
+		arg_20_0.upTips2_.text = GetTips("DRAW_POOL_PROBABILITY_S_4")
 	elseif var_20_1 == 4 then
-		arg_20_0.ALevelTips_.text = GetTips("DRAW_POOL_PROBABILITY_A_4")
 		arg_20_0.upTips_.text = GetTips("DRAW_POOL_PROBABILITY_S_8")
+		arg_20_0.upTips1_.text = GetTips("DRAW_POOL_PROBABILITY_S_8")
+		arg_20_0.upTips2_.text = GetTips("DRAW_POOL_PROBABILITY_S_8")
+
+		arg_20_0.infoController:SetSelectedState("info_3")
 	elseif var_20_1 == 5 then
-		arg_20_0.ALevelTips_.text = GetTips("DRAW_POOL_PROBABILITY_A_4")
 		arg_20_0.upTips_.text = GetTips("DRAW_POOL_PROBABILITY_S_4")
+		arg_20_0.upTips1_.text = GetTips("DRAW_POOL_PROBABILITY_S_4")
+		arg_20_0.upTips2_.text = GetTips("DRAW_POOL_PROBABILITY_S_4")
 	elseif var_20_1 == 6 then
-		arg_20_0.ALevelTips_.text = GetTips("DRAW_POOL_PROBABILITY_FOUR_WEAPON_4")
 		arg_20_0.upTips_.text = GetTips("DRAW_POOL_PROBABILITY_FIVE_WEAPON_4")
+		arg_20_0.upTips1_.text = GetTips("DRAW_POOL_PROBABILITY_FIVE_WEAPON_4")
+		arg_20_0.upTips2_.text = GetTips("DRAW_POOL_PROBABILITY_FIVE_WEAPON_4")
+	end
+
+	if DrawData:GetPollUpID(arg_20_0.selectPoolId_) == 0 and DrawData:GetPoolIsNew(arg_20_0.selectPoolId_) == 1 then
+		local var_20_2 = DrawPoolCfg[arg_20_0.selectPoolId_]
+
+		if var_20_2.pool_selected_type == 2 then
+			if var_20_2.pool_type == 1 then
+				local var_20_3 = table.indexof(var_20_2.optional_lists_poolId, arg_20_0.showId)
+				local var_20_4 = var_20_2.optional_detail[var_20_3]
+
+				arg_20_0:Go("/newbieDrawHeroSelect", {
+					poolId = arg_20_0.selectPoolId_,
+					heroIdList = var_20_2.optional_detail,
+					heroId = var_20_4
+				})
+			else
+				arg_20_0:Go("/drawAllHeroSelect", {
+					isFirst = true,
+					poolId = arg_20_0.selectPoolId_,
+					heroIdList = var_20_2.optional_detail
+				})
+			end
+		elseif var_20_2.pool_selected_type == 8 then
+			local var_20_5 = table.indexof(var_20_2.optional_lists_poolId, arg_20_0.showId)
+			local var_20_6 = var_20_2.optional_detail[var_20_5]
+
+			arg_20_0:Go("/newbieDrawHeroSelect", {
+				poolId = arg_20_0.selectPoolId_,
+				heroIdList = var_20_2.optional_detail,
+				heroId = var_20_6
+			})
+		elseif var_20_2.pool_selected_type == 9 then
+			arg_20_0:Go("/drawSelect", {
+				poolID = arg_20_0.selectPoolId_
+			})
+		elseif var_20_2.pool_selected_type == 1 then
+			local var_20_7 = table.indexof(var_20_2.optional_lists_poolId, arg_20_0.showId)
+
+			if var_20_7 == false then
+				return
+			end
+
+			local var_20_8 = var_20_2.optional_detail[var_20_7]
+
+			arg_20_0:Go("/newbieDrawHeroSelect", {
+				poolId = arg_20_0.selectPoolId_,
+				heroIdList = var_20_2.optional_detail,
+				heroId = var_20_8
+			})
+		end
 	end
 end
 
@@ -659,14 +733,6 @@ function var_0_0.RefreshUI(arg_31_0)
 		arg_31_0.tenIconText_.text = "x10"
 	end
 
-	SetActive(arg_31_0.tips3Text_.gameObject, var_31_1.pool_type == 8)
-
-	if var_31_1.pool_type ~= 1 then
-		SetActive(arg_31_0.timeGo_, true)
-	else
-		SetActive(arg_31_0.timeGo_, not DrawData:GetIsFirstSSR())
-	end
-
 	if arg_31_0.curPoolObject then
 		if arg_31_0.curPoolObject:GetShowId() == var_31_2 then
 			arg_31_0.curPoolObject:Refresh(var_31_2)
@@ -746,7 +812,12 @@ function var_0_0.OnRequestRecord(arg_34_0)
 		local var_34_2 = var_34_0.ssr_draw_times
 		local var_34_3 = var_0_2[var_34_1.pool_show_type]
 
-		arg_34_0.drawTxt_.text = var_34_2 .. "/" .. (var_0_3[var_34_3] or "70")
+		arg_34_0.drawOutLineTxt_.text = var_34_2
+		arg_34_0.drawTxt_.text = "/" .. (var_0_3[var_34_3] or "70")
+		arg_34_0.drawAllTxt_.text = var_34_2
+		arg_34_0.drawOutLineTxt1_.text = var_34_2
+		arg_34_0.drawTxt1_.text = "/" .. (var_0_3[var_34_3] or "70")
+		arg_34_0.drawAllTxt1_.text = var_34_2
 	else
 		DrawAction.RequestRecord(arg_34_0.selectPoolId_)
 	end
@@ -821,17 +892,12 @@ function var_0_0.RefreshRightPanel(arg_36_0)
 	else
 		arg_36_0.showRightController:SetSelectedIndex(0)
 	end
-
-	if #DrawTools.GetRechargeDrawGiftList(arg_36_0.selectPoolId_) == 0 then
-		arg_36_0.rechargeShopGiftController:SetSelectedIndex(0)
-	else
-		arg_36_0.rechargeShopGiftController:SetSelectedIndex(1)
-	end
 end
 
 function var_0_0.DestroyPoolGo(arg_37_0)
 	for iter_37_0, iter_37_1 in pairs(arg_37_0.poolObjects_) do
 		iter_37_1:Dispose()
+		Object.Destroy(iter_37_1.gameObject_)
 	end
 
 	arg_37_0.poolObjects_ = {}
@@ -1385,11 +1451,11 @@ function var_0_0.StarInteract(arg_64_0)
 	local var_64_0 = arg_64_0.maxRare or 0
 
 	if var_64_0 >= 5 then
-		arg_64_0.criplayer_:SetFile(nil, arg_64_0.moviePaths[3])
+		SetFile(arg_64_0.criplayer_, nil, arg_64_0.moviePaths[3])
 	elseif var_64_0 >= 4 then
-		arg_64_0.criplayer_:SetFile(nil, arg_64_0.moviePaths[2])
+		SetFile(arg_64_0.criplayer_, nil, arg_64_0.moviePaths[2])
 	else
-		arg_64_0.criplayer_:SetFile(nil, arg_64_0.moviePaths[1])
+		SetFile(arg_64_0.criplayer_, nil, arg_64_0.moviePaths[1])
 	end
 
 	local var_64_1

@@ -9,6 +9,9 @@ end
 
 function var_0_0.initUI(arg_2_0)
 	arg_2_0:BindCfgUI()
+
+	arg_2_0.commonPortrait_ = CommonHeadPortrait.New(arg_2_0.headItem_)
+
 	arg_2_0:AddListeners()
 
 	arg_2_0.rankController_ = ControllerUtil.GetController(arg_2_0.transform_, "rank")
@@ -36,8 +39,14 @@ function var_0_0.Refresh(arg_5_0, arg_5_1)
 	end
 
 	arg_5_0.m_name.text = arg_5_1.nick
-	arg_5_0.m_icon.sprite = ItemTools.getItemSprite(arg_5_1.portrait)
-	arg_5_0.m_frame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_5_1.frame)
+
+	arg_5_0.commonPortrait_:RenderHead(arg_5_1.portrait)
+	arg_5_0.commonPortrait_:RenderFrame(arg_5_1.frame)
+end
+
+function var_0_0.Dispose(arg_6_0)
+	arg_6_0.commonPortrait_:Dispose()
+	var_0_0.super.Dispose(arg_6_0)
 end
 
 return var_0_0

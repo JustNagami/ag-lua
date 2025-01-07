@@ -1,14 +1,14 @@
 ﻿local var_0_0 = class("ActivityHeroEnhanceBattleSettlementModule", ReduxView)
 
-function var_0_0.OnCtor(arg_1_0, arg_1_1)
-	arg_1_0.gameObject_ = arg_1_0:InstView(arg_1_1)
+function var_0_0.OnCtor(arg_1_0, arg_1_1, arg_1_2)
+	arg_1_0.gameObject_ = arg_1_0:InstView(arg_1_1, arg_1_2)
 	arg_1_0.transform_ = arg_1_0.gameObject_.transform
 
 	arg_1_0:Init()
 end
 
-function var_0_0.InstView(arg_2_0, arg_2_1)
-	local var_2_0 = "Widget/Version/NorseUI_3_0/NorseUI_3_0_HeroEnhanceUI/NorseUI_3_0_HeroEnhanceBattleResultContent"
+function var_0_0.InstView(arg_2_0, arg_2_1, arg_2_2)
+	local var_2_0 = ActivityHeroEnhanceTools.GetBattleResultContentUIName(arg_2_2)
 
 	return (Object.Instantiate(Asset.Load(var_2_0), arg_2_1))
 end

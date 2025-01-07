@@ -77,6 +77,18 @@
 		prefab_path = "Widget/Version/NorseUI_3_2/NorseUI_3_2_PlotUI/NorseUI_3_2_Plot01UI",
 		id = 271201
 	},
+	[281201] = {
+		chapter_type = 2,
+		chapter_client_id = 6010013,
+		prefab_path = "Widget/Version/SummerUI_3_4/SummerUI_3_4_PlotUI/SummerUI_3_4_PlotUI",
+		id = 281201
+	},
+	[291201] = {
+		chapter_type = 1,
+		chapter_client_id = 10120,
+		prefab_path = "Widget/Version/ShashwatUI_Com/ShashwatUI_3_6_PlotUI",
+		id = 291201
+	},
 	all = {
 		141200,
 		141204,
@@ -90,6 +102,8 @@
 		231201,
 		241201,
 		241202,
-		271201
+		271201,
+		281201,
+		291201
 	}
 }

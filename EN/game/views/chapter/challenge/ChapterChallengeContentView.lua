@@ -69,7 +69,7 @@ function var_0_0.CreateItem(arg_5_0, arg_5_1)
 	elseif var_5_2.type == BattleConst.STAGE_TYPE_NEW.SOLO_HEART_DEMON then
 		var_5_0 = ChapterChallengeSoloHeartDemonItemView.New(arg_5_0.mapItem_, arg_5_0.itemParent_, arg_5_1, arg_5_0.chapterToggle_)
 	elseif var_5_2.type == BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_ADVANCE_TEST then
-		if AdvanceTestData:GetisActivityOpen() then
+		if AdvanceTestData:GetIsActivityOpen() then
 			var_5_0 = ChapterChallengeAdvanceTestItemView.New(arg_5_0.mapItem_, arg_5_0.itemParent_, arg_5_1, arg_5_0.chapterToggle_)
 		end
 	elseif var_5_2.type == BattleConst.STAGE_TYPE_NEW.SP_HERO_CHALLENGE_BATTLE_3_1 then
@@ -78,6 +78,8 @@ function var_0_0.CreateItem(arg_5_0, arg_5_1)
 		end
 	elseif var_5_2.type == BattleConst.STAGE_TYPE_NEW.CORE_VERIFICATION then
 		var_5_0 = ChapterChallengeCoreVerificationItemView.New(arg_5_0.mapItem_, arg_5_0.itemParent_, arg_5_1, arg_5_0.chapterToggle_)
+	elseif var_5_2.type == BattleConst.STAGE_TYPE_NEW.CHALLENGE_ROGUE_TEAM then
+		var_5_0 = ChapterChallengeRogueTeamItemView.New(arg_5_0.mapItem_, arg_5_0.itemParent_, arg_5_1, arg_5_0.chapterToggle_)
 	else
 		var_5_0 = ChapterChallengeItemView.New(arg_5_0.mapItem_, arg_5_0.itemParent_, arg_5_1, arg_5_0.chapterToggle_)
 	end

@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("MatrixProcessShopView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/Matrix/Process/MatrixProcessShopUI"
+	return "Widget/System/MatrixlUI/MatrixProcessShopUI"
 end
 
 function var_0_0.UIParent(arg_2_0)

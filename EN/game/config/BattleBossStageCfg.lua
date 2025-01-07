@@ -6,6 +6,7 @@
 		ai_level = 1,
 		map = "3010101",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010101,
 		level = 1,
@@ -31,7 +32,10 @@
 		},
 		team_type = {
 			102,
-			5001
+			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3010102] = {
@@ -41,6 +45,7 @@
 		ai_level = 1,
 		map = "3010101",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010102,
 		level = 1,
@@ -71,7 +76,10 @@
 		},
 		team_type = {
 			102,
-			5001
+			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3010103] = {
@@ -81,6 +89,7 @@
 		ai_level = 1,
 		map = "3010101",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010103,
 		level = 1,
@@ -116,7 +125,10 @@
 		},
 		team_type = {
 			102,
-			5001
+			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3010104] = {
@@ -126,6 +138,7 @@
 		ai_level = 1,
 		map = "3010101",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010104,
 		level = 1,
@@ -161,7 +174,10 @@
 		},
 		team_type = {
 			102,
-			5001
+			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3010105] = {
@@ -171,6 +187,7 @@
 		ai_level = 1,
 		map = "3010101",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010105,
 		level = 1,
@@ -206,7 +223,10 @@
 		},
 		team_type = {
 			102,
-			5001
+			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3010201] = {
@@ -216,6 +236,7 @@
 		ai_level = 1,
 		map = "3010201",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010201,
 		level = 1,
@@ -241,7 +262,10 @@
 		},
 		team_type = {
 			102,
-			5002
+			0
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[3010202] = {
@@ -251,6 +275,7 @@
 		ai_level = 1,
 		map = "3010201",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010202,
 		level = 1,
@@ -281,7 +306,10 @@
 		},
 		team_type = {
 			102,
-			5002
+			0
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[3010203] = {
@@ -291,6 +319,7 @@
 		ai_level = 1,
 		map = "3010201",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010203,
 		level = 1,
@@ -326,7 +355,10 @@
 		},
 		team_type = {
 			102,
-			5002
+			0
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[3010204] = {
@@ -336,6 +368,7 @@
 		ai_level = 1,
 		map = "3010201",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010204,
 		level = 1,
@@ -371,7 +404,10 @@
 		},
 		team_type = {
 			102,
-			5002
+			0
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[3010205] = {
@@ -381,6 +417,7 @@
 		ai_level = 1,
 		map = "3010201",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010205,
 		level = 1,
@@ -416,7 +453,10 @@
 		},
 		team_type = {
 			102,
-			5002
+			0
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[3010301] = {
@@ -426,6 +466,7 @@
 		ai_level = 1,
 		map = "3010301",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010301,
 		level = 1,
@@ -451,7 +492,10 @@
 		},
 		team_type = {
 			102,
-			5003
+			0
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[3010302] = {
@@ -461,6 +505,7 @@
 		ai_level = 1,
 		map = "3010301",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010302,
 		level = 1,
@@ -491,7 +536,10 @@
 		},
 		team_type = {
 			102,
-			5003
+			0
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[3010303] = {
@@ -501,6 +549,7 @@
 		ai_level = 1,
 		map = "3010301",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010303,
 		level = 1,
@@ -536,7 +585,10 @@
 		},
 		team_type = {
 			102,
-			5003
+			0
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[3010304] = {
@@ -546,6 +598,7 @@
 		ai_level = 1,
 		map = "3010301",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010304,
 		level = 1,
@@ -581,7 +634,10 @@
 		},
 		team_type = {
 			102,
-			5003
+			0
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[3010305] = {
@@ -591,6 +647,7 @@
 		ai_level = 1,
 		map = "3010301",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010305,
 		level = 1,
@@ -626,7 +683,10 @@
 		},
 		team_type = {
 			102,
-			5003
+			0
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[3010401] = {
@@ -636,6 +696,7 @@
 		ai_level = 1,
 		map = "3010401",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010401,
 		level = 1,
@@ -661,7 +722,10 @@
 		},
 		team_type = {
 			102,
-			5004
+			0
+		},
+		recommend_team = {
+			8
 		}
 	},
 	[3010402] = {
@@ -671,6 +735,7 @@
 		ai_level = 1,
 		map = "3010401",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010402,
 		level = 1,
@@ -701,7 +766,10 @@
 		},
 		team_type = {
 			102,
-			5004
+			0
+		},
+		recommend_team = {
+			8
 		}
 	},
 	[3010403] = {
@@ -711,6 +779,7 @@
 		ai_level = 1,
 		map = "3010401",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010403,
 		level = 1,
@@ -746,7 +815,10 @@
 		},
 		team_type = {
 			102,
-			5004
+			0
+		},
+		recommend_team = {
+			8
 		}
 	},
 	[3010404] = {
@@ -756,6 +828,7 @@
 		ai_level = 1,
 		map = "3010401",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010404,
 		level = 1,
@@ -791,7 +864,10 @@
 		},
 		team_type = {
 			102,
-			5004
+			0
+		},
+		recommend_team = {
+			8
 		}
 	},
 	[3010405] = {
@@ -801,6 +877,7 @@
 		ai_level = 1,
 		map = "3010401",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010405,
 		level = 1,
@@ -836,7 +913,10 @@
 		},
 		team_type = {
 			102,
-			5004
+			0
+		},
+		recommend_team = {
+			8
 		}
 	},
 	[3010501] = {
@@ -846,6 +926,7 @@
 		ai_level = 1,
 		map = "3010501",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010501,
 		level = 1,
@@ -871,7 +952,10 @@
 		},
 		team_type = {
 			102,
-			5005
+			0
+		},
+		recommend_team = {
+			2
 		}
 	},
 	[3010502] = {
@@ -881,6 +965,7 @@
 		ai_level = 1,
 		map = "3010501",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010502,
 		level = 1,
@@ -911,7 +996,10 @@
 		},
 		team_type = {
 			102,
-			5005
+			0
+		},
+		recommend_team = {
+			2
 		}
 	},
 	[3010503] = {
@@ -921,6 +1009,7 @@
 		ai_level = 1,
 		map = "3010501",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010503,
 		level = 1,
@@ -956,7 +1045,10 @@
 		},
 		team_type = {
 			102,
-			5005
+			0
+		},
+		recommend_team = {
+			2
 		}
 	},
 	[3010504] = {
@@ -966,6 +1058,7 @@
 		ai_level = 1,
 		map = "3010501",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010504,
 		level = 1,
@@ -1001,7 +1094,10 @@
 		},
 		team_type = {
 			102,
-			5005
+			0
+		},
+		recommend_team = {
+			2
 		}
 	},
 	[3010505] = {
@@ -1011,6 +1107,7 @@
 		ai_level = 1,
 		map = "3010501",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010505,
 		level = 1,
@@ -1046,7 +1143,10 @@
 		},
 		team_type = {
 			102,
-			5005
+			0
+		},
+		recommend_team = {
+			2
 		}
 	},
 	[3010601] = {
@@ -1056,6 +1156,7 @@
 		ai_level = 1,
 		map = "3010601",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010601,
 		level = 1,
@@ -1081,7 +1182,10 @@
 		},
 		team_type = {
 			102,
-			5006
+			0
+		},
+		recommend_team = {
+			7
 		}
 	},
 	[3010602] = {
@@ -1091,6 +1195,7 @@
 		ai_level = 1,
 		map = "3010601",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010602,
 		level = 1,
@@ -1121,7 +1226,10 @@
 		},
 		team_type = {
 			102,
-			5006
+			0
+		},
+		recommend_team = {
+			7
 		}
 	},
 	[3010603] = {
@@ -1131,6 +1239,7 @@
 		ai_level = 1,
 		map = "3010601",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010603,
 		level = 1,
@@ -1166,7 +1275,10 @@
 		},
 		team_type = {
 			102,
-			5006
+			0
+		},
+		recommend_team = {
+			7
 		}
 	},
 	[3010604] = {
@@ -1176,6 +1288,7 @@
 		ai_level = 1,
 		map = "3010601",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010604,
 		level = 1,
@@ -1211,7 +1324,10 @@
 		},
 		team_type = {
 			102,
-			5006
+			0
+		},
+		recommend_team = {
+			7
 		}
 	},
 	[3010605] = {
@@ -1221,6 +1337,7 @@
 		ai_level = 1,
 		map = "3010601",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010605,
 		level = 1,
@@ -1256,7 +1373,10 @@
 		},
 		team_type = {
 			102,
-			5006
+			0
+		},
+		recommend_team = {
+			7
 		}
 	},
 	[3010701] = {
@@ -1266,9 +1386,11 @@
 		ai_level = 1,
 		map = "3010701",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3010701,
+		recommend_team = "",
 		level = 1,
 		three_star_need = {
 			{
@@ -1285,7 +1407,7 @@
 		},
 		team_type = {
 			102,
-			5007
+			0
 		}
 	},
 	[3010702] = {
@@ -1295,9 +1417,11 @@
 		ai_level = 1,
 		map = "3010701",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3010702,
+		recommend_team = "",
 		level = 1,
 		three_star_need = {
 			{
@@ -1314,7 +1438,7 @@
 		},
 		team_type = {
 			102,
-			5007
+			0
 		}
 	},
 	[3010703] = {
@@ -1324,8 +1448,10 @@
 		ai_level = 1,
 		map = "3010701",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010703,
+		recommend_team = "",
 		level = 1,
 		three_star_need = {
 			{
@@ -1349,7 +1475,7 @@
 		},
 		team_type = {
 			102,
-			5007
+			0
 		}
 	},
 	[3010704] = {
@@ -1359,8 +1485,10 @@
 		ai_level = 1,
 		map = "3010701",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010704,
+		recommend_team = "",
 		level = 1,
 		three_star_need = {
 			{
@@ -1389,7 +1517,7 @@
 		},
 		team_type = {
 			102,
-			5007
+			0
 		}
 	},
 	[3010705] = {
@@ -1399,8 +1527,10 @@
 		ai_level = 1,
 		map = "3010701",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010705,
+		recommend_team = "",
 		level = 1,
 		three_star_need = {
 			{
@@ -1429,7 +1559,7 @@
 		},
 		team_type = {
 			102,
-			5007
+			0
 		}
 	},
 	[3010801] = {
@@ -1439,9 +1569,11 @@
 		ai_level = 1,
 		map = "3010801",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3010801,
+		recommend_team = "",
 		level = 1,
 		three_star_need = {
 			{
@@ -1458,7 +1590,7 @@
 		},
 		team_type = {
 			102,
-			5008
+			0
 		}
 	},
 	[3010802] = {
@@ -1468,9 +1600,11 @@
 		ai_level = 1,
 		map = "3010801",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3010802,
+		recommend_team = "",
 		level = 1,
 		three_star_need = {
 			{
@@ -1487,7 +1621,7 @@
 		},
 		team_type = {
 			102,
-			5008
+			0
 		}
 	},
 	[3010803] = {
@@ -1497,8 +1631,10 @@
 		ai_level = 1,
 		map = "3010801",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010803,
+		recommend_team = "",
 		level = 1,
 		three_star_need = {
 			{
@@ -1522,7 +1658,7 @@
 		},
 		team_type = {
 			102,
-			5008
+			0
 		}
 	},
 	[3010804] = {
@@ -1532,8 +1668,10 @@
 		ai_level = 1,
 		map = "3010801",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010804,
+		recommend_team = "",
 		level = 1,
 		three_star_need = {
 			{
@@ -1562,7 +1700,7 @@
 		},
 		team_type = {
 			102,
-			5008
+			0
 		}
 	},
 	[3010805] = {
@@ -1572,8 +1710,10 @@
 		ai_level = 1,
 		map = "3010801",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010805,
+		recommend_team = "",
 		level = 1,
 		three_star_need = {
 			{
@@ -1602,7 +1742,7 @@
 		},
 		team_type = {
 			102,
-			5008
+			0
 		}
 	},
 	[3010901] = {
@@ -1612,6 +1752,7 @@
 		ai_level = 1,
 		map = "3010901",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010901,
 		level = 1,
@@ -1637,7 +1778,10 @@
 		},
 		team_type = {
 			102,
-			5009
+			0
+		},
+		recommend_team = {
+			6
 		}
 	},
 	[3010902] = {
@@ -1647,6 +1791,7 @@
 		ai_level = 1,
 		map = "3010901",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010902,
 		level = 1,
@@ -1677,7 +1822,10 @@
 		},
 		team_type = {
 			102,
-			5009
+			0
+		},
+		recommend_team = {
+			6
 		}
 	},
 	[3010903] = {
@@ -1687,6 +1835,7 @@
 		ai_level = 1,
 		map = "3010901",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010903,
 		level = 1,
@@ -1722,7 +1871,10 @@
 		},
 		team_type = {
 			102,
-			5009
+			0
+		},
+		recommend_team = {
+			6
 		}
 	},
 	[3010904] = {
@@ -1732,6 +1884,7 @@
 		ai_level = 1,
 		map = "3010901",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010904,
 		level = 1,
@@ -1767,7 +1920,10 @@
 		},
 		team_type = {
 			102,
-			5009
+			0
+		},
+		recommend_team = {
+			6
 		}
 	},
 	[3010905] = {
@@ -1777,6 +1933,7 @@
 		ai_level = 1,
 		map = "3010901",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3010905,
 		level = 1,
@@ -1812,7 +1969,10 @@
 		},
 		team_type = {
 			102,
-			5009
+			0
+		},
+		recommend_team = {
+			6
 		}
 	},
 	[3011001] = {
@@ -1822,6 +1982,7 @@
 		ai_level = 1,
 		map = "3011001",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011001,
 		level = 1,
@@ -1847,7 +2008,10 @@
 		},
 		team_type = {
 			102,
-			5010
+			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3011002] = {
@@ -1857,6 +2021,7 @@
 		ai_level = 1,
 		map = "3011001",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011002,
 		level = 1,
@@ -1887,7 +2052,10 @@
 		},
 		team_type = {
 			102,
-			5010
+			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3011003] = {
@@ -1897,6 +2065,7 @@
 		ai_level = 1,
 		map = "3011001",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011003,
 		level = 1,
@@ -1932,7 +2101,10 @@
 		},
 		team_type = {
 			102,
-			5010
+			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3011004] = {
@@ -1942,6 +2114,7 @@
 		ai_level = 1,
 		map = "3011001",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011004,
 		level = 1,
@@ -1977,7 +2150,10 @@
 		},
 		team_type = {
 			102,
-			5010
+			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3011005] = {
@@ -1987,6 +2163,7 @@
 		ai_level = 1,
 		map = "3011001",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011005,
 		level = 1,
@@ -2022,7 +2199,10 @@
 		},
 		team_type = {
 			102,
-			5010
+			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3011101] = {
@@ -2032,9 +2212,11 @@
 		ai_level = 1,
 		map = "3011101",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3011101,
+		recommend_team = "",
 		level = 1,
 		three_star_need = {
 			{
@@ -2051,7 +2233,7 @@
 		},
 		team_type = {
 			102,
-			5011
+			0
 		}
 	},
 	[3011102] = {
@@ -2061,9 +2243,11 @@
 		ai_level = 1,
 		map = "3011101",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3011102,
+		recommend_team = "",
 		level = 1,
 		three_star_need = {
 			{
@@ -2080,7 +2264,7 @@
 		},
 		team_type = {
 			102,
-			5011
+			0
 		}
 	},
 	[3011103] = {
@@ -2090,8 +2274,10 @@
 		ai_level = 1,
 		map = "3011101",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011103,
+		recommend_team = "",
 		level = 1,
 		three_star_need = {
 			{
@@ -2115,7 +2301,7 @@
 		},
 		team_type = {
 			102,
-			5011
+			0
 		}
 	},
 	[3011104] = {
@@ -2125,8 +2311,10 @@
 		ai_level = 1,
 		map = "3011101",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011104,
+		recommend_team = "",
 		level = 1,
 		three_star_need = {
 			{
@@ -2155,7 +2343,7 @@
 		},
 		team_type = {
 			102,
-			5011
+			0
 		}
 	},
 	[3011105] = {
@@ -2165,8 +2353,10 @@
 		ai_level = 1,
 		map = "3011101",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011105,
+		recommend_team = "",
 		level = 1,
 		three_star_need = {
 			{
@@ -2195,7 +2385,7 @@
 		},
 		team_type = {
 			102,
-			5011
+			0
 		}
 	},
 	[3011201] = {
@@ -2205,6 +2395,7 @@
 		ai_level = 1,
 		map = "3011201",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011201,
 		level = 1,
@@ -2230,7 +2421,10 @@
 		},
 		team_type = {
 			102,
-			5023
+			0
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[3011202] = {
@@ -2240,6 +2434,7 @@
 		ai_level = 1,
 		map = "3011201",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011202,
 		level = 1,
@@ -2270,7 +2465,10 @@
 		},
 		team_type = {
 			102,
-			5023
+			0
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[3011203] = {
@@ -2280,6 +2478,7 @@
 		ai_level = 1,
 		map = "3011201",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011203,
 		level = 1,
@@ -2315,7 +2514,10 @@
 		},
 		team_type = {
 			102,
-			5023
+			0
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[3011204] = {
@@ -2325,6 +2527,7 @@
 		ai_level = 1,
 		map = "3011201",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011204,
 		level = 1,
@@ -2360,7 +2563,10 @@
 		},
 		team_type = {
 			102,
-			5023
+			0
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[3011205] = {
@@ -2370,6 +2576,7 @@
 		ai_level = 1,
 		map = "3011201",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011205,
 		level = 1,
@@ -2405,7 +2612,10 @@
 		},
 		team_type = {
 			102,
-			5023
+			0
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[3011301] = {
@@ -2415,6 +2625,7 @@
 		ai_level = 1,
 		map = "3011301",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011301,
 		level = 1,
@@ -2440,7 +2651,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			4
 		}
 	},
 	[3011302] = {
@@ -2450,6 +2664,7 @@
 		ai_level = 1,
 		map = "3011301",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011302,
 		level = 1,
@@ -2480,7 +2695,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			4
 		}
 	},
 	[3011303] = {
@@ -2490,6 +2708,7 @@
 		ai_level = 1,
 		map = "3011301",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011303,
 		level = 1,
@@ -2525,7 +2744,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			4
 		}
 	},
 	[3011304] = {
@@ -2535,6 +2757,7 @@
 		ai_level = 1,
 		map = "3011301",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011304,
 		level = 1,
@@ -2570,7 +2793,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			4
 		}
 	},
 	[3011305] = {
@@ -2580,6 +2806,7 @@
 		ai_level = 1,
 		map = "3011301",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011305,
 		level = 1,
@@ -2615,7 +2842,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			4
 		}
 	},
 	[3011401] = {
@@ -2625,6 +2855,7 @@
 		ai_level = 1,
 		map = "3011401",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011401,
 		level = 1,
@@ -2650,7 +2881,10 @@
 		},
 		team_type = {
 			102,
-			5025
+			0
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[3011402] = {
@@ -2660,6 +2894,7 @@
 		ai_level = 1,
 		map = "3011401",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011402,
 		level = 1,
@@ -2690,7 +2925,10 @@
 		},
 		team_type = {
 			102,
-			5025
+			0
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[3011403] = {
@@ -2700,6 +2938,7 @@
 		ai_level = 1,
 		map = "3011401",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011403,
 		level = 1,
@@ -2735,7 +2974,10 @@
 		},
 		team_type = {
 			102,
-			5025
+			0
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[3011404] = {
@@ -2745,6 +2987,7 @@
 		ai_level = 1,
 		map = "3011401",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011404,
 		level = 1,
@@ -2780,7 +3023,10 @@
 		},
 		team_type = {
 			102,
-			5025
+			0
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[3011405] = {
@@ -2790,6 +3036,7 @@
 		ai_level = 1,
 		map = "3011401",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011405,
 		level = 1,
@@ -2825,7 +3072,10 @@
 		},
 		team_type = {
 			102,
-			5025
+			0
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[3011501] = {
@@ -2835,6 +3085,7 @@
 		ai_level = 1,
 		map = "3011501",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011501,
 		level = 1,
@@ -2860,7 +3111,10 @@
 		},
 		team_type = {
 			102,
-			5026
+			0
+		},
+		recommend_team = {
+			8
 		}
 	},
 	[3011502] = {
@@ -2870,6 +3124,7 @@
 		ai_level = 1,
 		map = "3011501",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011502,
 		level = 1,
@@ -2900,7 +3155,10 @@
 		},
 		team_type = {
 			102,
-			5026
+			0
+		},
+		recommend_team = {
+			8
 		}
 	},
 	[3011503] = {
@@ -2910,6 +3168,7 @@
 		ai_level = 1,
 		map = "3011501",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011503,
 		level = 1,
@@ -2945,7 +3204,10 @@
 		},
 		team_type = {
 			102,
-			5026
+			0
+		},
+		recommend_team = {
+			8
 		}
 	},
 	[3011504] = {
@@ -2955,6 +3217,7 @@
 		ai_level = 1,
 		map = "3011501",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011504,
 		level = 1,
@@ -2990,7 +3253,10 @@
 		},
 		team_type = {
 			102,
-			5026
+			0
+		},
+		recommend_team = {
+			8
 		}
 	},
 	[3011505] = {
@@ -3000,6 +3266,7 @@
 		ai_level = 1,
 		map = "3011501",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3011505,
 		level = 1,
@@ -3035,7 +3302,10 @@
 		},
 		team_type = {
 			102,
-			5026
+			0
+		},
+		recommend_team = {
+			8
 		}
 	},
 	[3012001] = {
@@ -3045,6 +3315,7 @@
 		ai_level = 1,
 		map = "3012001",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012001,
 		level = 1,
@@ -3070,7 +3341,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			2
 		}
 	},
 	[3012002] = {
@@ -3080,6 +3354,7 @@
 		ai_level = 1,
 		map = "3012001",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012002,
 		level = 1,
@@ -3110,7 +3385,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			2
 		}
 	},
 	[3012003] = {
@@ -3120,6 +3398,7 @@
 		ai_level = 1,
 		map = "3012001",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012003,
 		level = 1,
@@ -3155,7 +3434,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			2
 		}
 	},
 	[3012004] = {
@@ -3165,6 +3447,7 @@
 		ai_level = 1,
 		map = "3012001",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012004,
 		level = 1,
@@ -3205,7 +3488,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			2
 		}
 	},
 	[3012005] = {
@@ -3215,6 +3501,7 @@
 		ai_level = 1,
 		map = "3012001",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012005,
 		level = 1,
@@ -3260,7 +3547,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			2
 		}
 	},
 	[3012006] = {
@@ -3270,6 +3560,7 @@
 		ai_level = 1,
 		map = "3012002",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012006,
 		level = 1,
@@ -3295,7 +3586,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3012007] = {
@@ -3305,6 +3599,7 @@
 		ai_level = 1,
 		map = "3012002",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012007,
 		level = 1,
@@ -3335,7 +3630,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			1,
+			8
 		}
 	},
 	[3012008] = {
@@ -3345,6 +3644,7 @@
 		ai_level = 1,
 		map = "3012002",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012008,
 		level = 1,
@@ -3380,7 +3680,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			1,
+			8
 		}
 	},
 	[3012009] = {
@@ -3390,6 +3694,7 @@
 		ai_level = 1,
 		map = "3012002",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012009,
 		level = 1,
@@ -3430,7 +3735,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			1,
+			8
 		}
 	},
 	[3012010] = {
@@ -3440,6 +3749,7 @@
 		ai_level = 1,
 		map = "3012002",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012010,
 		level = 1,
@@ -3485,7 +3795,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			1,
+			8
 		}
 	},
 	[3012011] = {
@@ -3495,6 +3809,7 @@
 		ai_level = 1,
 		map = "3012003",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012011,
 		level = 1,
@@ -3520,7 +3835,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[3012012] = {
@@ -3530,6 +3848,7 @@
 		ai_level = 1,
 		map = "3012003",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012012,
 		level = 1,
@@ -3560,7 +3879,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			3,
+			4
 		}
 	},
 	[3012013] = {
@@ -3570,6 +3893,7 @@
 		ai_level = 1,
 		map = "3012003",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012013,
 		level = 1,
@@ -3605,7 +3929,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			3,
+			4
 		}
 	},
 	[3012014] = {
@@ -3615,6 +3943,7 @@
 		ai_level = 1,
 		map = "3012003",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012014,
 		level = 1,
@@ -3655,7 +3984,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			3,
+			4
 		}
 	},
 	[3012015] = {
@@ -3665,6 +3998,7 @@
 		ai_level = 1,
 		map = "3012003",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012015,
 		level = 1,
@@ -3710,7 +4044,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			3,
+			4
 		}
 	},
 	[3012016] = {
@@ -3720,6 +4058,7 @@
 		ai_level = 1,
 		map = "3012004",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012016,
 		level = 1,
@@ -3745,7 +4084,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[3012017] = {
@@ -3755,6 +4097,7 @@
 		ai_level = 1,
 		map = "3012004",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012017,
 		level = 1,
@@ -3785,7 +4128,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			5,
+			6
 		}
 	},
 	[3012018] = {
@@ -3795,6 +4142,7 @@
 		ai_level = 1,
 		map = "3012004",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012018,
 		level = 1,
@@ -3830,7 +4178,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			5,
+			6
 		}
 	},
 	[3012019] = {
@@ -3840,6 +4192,7 @@
 		ai_level = 1,
 		map = "3012004",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012019,
 		level = 1,
@@ -3880,7 +4233,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			5,
+			6
 		}
 	},
 	[3012020] = {
@@ -3890,6 +4247,7 @@
 		ai_level = 1,
 		map = "3012004",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012020,
 		level = 1,
@@ -3935,7 +4293,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			5,
+			6
 		}
 	},
 	[3012021] = {
@@ -3945,6 +4307,7 @@
 		ai_level = 1,
 		map = "3012005",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012021,
 		level = 1,
@@ -3970,7 +4333,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			7
 		}
 	},
 	[3012022] = {
@@ -3980,6 +4346,7 @@
 		ai_level = 1,
 		map = "3012005",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012022,
 		level = 1,
@@ -4010,7 +4377,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			7,
+			2
 		}
 	},
 	[3012023] = {
@@ -4020,6 +4391,7 @@
 		ai_level = 1,
 		map = "3012005",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012023,
 		level = 1,
@@ -4055,7 +4427,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			7,
+			2
 		}
 	},
 	[3012024] = {
@@ -4065,6 +4441,7 @@
 		ai_level = 1,
 		map = "3012005",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012024,
 		level = 1,
@@ -4105,7 +4482,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			7,
+			2
 		}
 	},
 	[3012025] = {
@@ -4115,6 +4496,7 @@
 		ai_level = 1,
 		map = "3012005",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012025,
 		level = 1,
@@ -4160,7 +4542,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			7,
+			2
 		}
 	},
 	[3012026] = {
@@ -4170,6 +4556,7 @@
 		ai_level = 1,
 		map = "3012006",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012026,
 		level = 1,
@@ -4195,7 +4582,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3012027] = {
@@ -4205,6 +4595,7 @@
 		ai_level = 1,
 		map = "3012006",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012027,
 		level = 1,
@@ -4235,7 +4626,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			1,
+			8
 		}
 	},
 	[3012028] = {
@@ -4245,6 +4640,7 @@
 		ai_level = 1,
 		map = "3012006",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012028,
 		level = 1,
@@ -4280,7 +4676,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			1,
+			8
 		}
 	},
 	[3012029] = {
@@ -4290,6 +4690,7 @@
 		ai_level = 1,
 		map = "3012006",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012029,
 		level = 1,
@@ -4330,7 +4731,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			1,
+			8
 		}
 	},
 	[3012030] = {
@@ -4340,6 +4745,7 @@
 		ai_level = 1,
 		map = "3012006",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012030,
 		level = 1,
@@ -4385,7 +4791,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			1,
+			8
 		}
 	},
 	[3012031] = {
@@ -4395,6 +4805,7 @@
 		ai_level = 1,
 		map = "3012007",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012031,
 		level = 1,
@@ -4420,7 +4831,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[3012032] = {
@@ -4430,6 +4844,7 @@
 		ai_level = 1,
 		map = "3012007",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012032,
 		level = 1,
@@ -4460,7 +4875,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			5,
+			6
 		}
 	},
 	[3012033] = {
@@ -4470,6 +4889,7 @@
 		ai_level = 1,
 		map = "3012007",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012033,
 		level = 1,
@@ -4505,7 +4925,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			5,
+			6
 		}
 	},
 	[3012034] = {
@@ -4515,6 +4939,7 @@
 		ai_level = 1,
 		map = "3012007",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012034,
 		level = 1,
@@ -4555,7 +4980,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			5,
+			6
 		}
 	},
 	[3012035] = {
@@ -4565,6 +4994,7 @@
 		ai_level = 1,
 		map = "3012007",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012035,
 		level = 1,
@@ -4610,7 +5040,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			5,
+			6
 		}
 	},
 	[3012036] = {
@@ -4620,6 +5054,7 @@
 		ai_level = 1,
 		map = "3012008",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012036,
 		level = 1,
@@ -4645,7 +5080,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3012037] = {
@@ -4655,6 +5093,7 @@
 		ai_level = 1,
 		map = "3012008",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012037,
 		level = 1,
@@ -4685,7 +5124,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			1,
+			8
 		}
 	},
 	[3012038] = {
@@ -4695,6 +5138,7 @@
 		ai_level = 1,
 		map = "3012008",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012038,
 		level = 1,
@@ -4730,7 +5174,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			1,
+			8
 		}
 	},
 	[3012039] = {
@@ -4740,6 +5188,7 @@
 		ai_level = 1,
 		map = "3012008",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012039,
 		level = 1,
@@ -4780,7 +5229,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			1,
+			8
 		}
 	},
 	[3012040] = {
@@ -4790,6 +5243,7 @@
 		ai_level = 1,
 		map = "3012008",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012040,
 		level = 1,
@@ -4835,7 +5289,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			1,
+			8
 		}
 	},
 	[3012041] = {
@@ -4845,6 +5303,7 @@
 		ai_level = 1,
 		map = "3012009",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012041,
 		level = 1,
@@ -4870,7 +5329,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			2
 		}
 	},
 	[3012042] = {
@@ -4880,6 +5342,7 @@
 		ai_level = 1,
 		map = "3012009",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012042,
 		level = 1,
@@ -4910,7 +5373,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			2,
+			4
 		}
 	},
 	[3012043] = {
@@ -4920,6 +5387,7 @@
 		ai_level = 1,
 		map = "3012009",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012043,
 		level = 1,
@@ -4955,7 +5423,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			2,
+			4
 		}
 	},
 	[3012044] = {
@@ -4965,6 +5437,7 @@
 		ai_level = 1,
 		map = "3012009",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012044,
 		level = 1,
@@ -5005,7 +5478,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			2,
+			4
 		}
 	},
 	[3012045] = {
@@ -5015,6 +5492,7 @@
 		ai_level = 1,
 		map = "3012009",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012045,
 		level = 1,
@@ -5060,7 +5538,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			2,
+			4
 		}
 	},
 	[3012046] = {
@@ -5070,6 +5552,7 @@
 		ai_level = 1,
 		map = "3012010",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012046,
 		level = 1,
@@ -5095,7 +5578,10 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[3012047] = {
@@ -5105,6 +5591,7 @@
 		ai_level = 1,
 		map = "3012010",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012047,
 		level = 1,
@@ -5135,7 +5622,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			3,
+			7
 		}
 	},
 	[3012048] = {
@@ -5145,6 +5636,7 @@
 		ai_level = 1,
 		map = "3012010",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012048,
 		level = 1,
@@ -5180,7 +5672,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			3,
+			7
 		}
 	},
 	[3012049] = {
@@ -5190,6 +5686,7 @@
 		ai_level = 1,
 		map = "3012010",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012049,
 		level = 1,
@@ -5230,7 +5727,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			3,
+			7
 		}
 	},
 	[3012050] = {
@@ -5240,6 +5741,7 @@
 		ai_level = 1,
 		map = "3012010",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		drop_lib_id = 0,
 		id = 3012050,
 		level = 1,
@@ -5285,7 +5787,11 @@
 		},
 		team_type = {
 			102,
-			5024
+			0
+		},
+		recommend_team = {
+			3,
+			7
 		}
 	},
 	[3012201] = {
@@ -5302,10 +5808,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3012202] = {
@@ -5322,10 +5831,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			6
+		},
+		recommend_team = {
+			4
 		}
 	},
 	[3012203] = {
@@ -5342,10 +5854,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			4
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[3012204] = {
@@ -5362,10 +5877,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			8
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[3012205] = {
@@ -5382,10 +5900,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			10
+		},
+		recommend_team = {
+			6
 		}
 	},
 	[3012206] = {
@@ -5402,10 +5923,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			12
+		},
+		recommend_team = {
+			7
 		}
 	},
 	[3012207] = {
@@ -5422,10 +5946,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			14
+		},
+		recommend_team = {
+			8
 		}
 	},
 	[3012208] = {
@@ -5442,10 +5969,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			2
+		},
+		recommend_team = {
+			2
 		}
 	},
 	[3012301] = {
@@ -5462,10 +5992,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			10
+		},
+		recommend_team = {
+			6
 		}
 	},
 	[3012302] = {
@@ -5482,10 +6015,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			12
+		},
+		recommend_team = {
+			7
 		}
 	},
 	[3012303] = {
@@ -5502,10 +6038,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			14
+		},
+		recommend_team = {
+			8
 		}
 	},
 	[3012304] = {
@@ -5522,10 +6061,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			2
+		},
+		recommend_team = {
+			2
 		}
 	},
 	[3012305] = {
@@ -5542,10 +6084,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3012306] = {
@@ -5562,10 +6107,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			6
+		},
+		recommend_team = {
+			4
 		}
 	},
 	[3012307] = {
@@ -5582,10 +6130,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			4
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[3012308] = {
@@ -5602,10 +6153,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			8
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[3012309] = {
@@ -5622,10 +6176,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			10
+		},
+		recommend_team = {
+			6
 		}
 	},
 	[3012310] = {
@@ -5642,10 +6199,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			12
+		},
+		recommend_team = {
+			7
 		}
 	},
 	[3012311] = {
@@ -5662,10 +6222,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[3012312] = {
@@ -5682,10 +6245,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			6
+		},
+		recommend_team = {
+			4
 		}
 	},
 	[3012313] = {
@@ -5702,10 +6268,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			4
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[3012314] = {
@@ -5722,10 +6291,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			8
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[3012315] = {
@@ -5742,10 +6314,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			14
+		},
+		recommend_team = {
+			8
 		}
 	},
 	[3012316] = {
@@ -5762,10 +6337,13 @@
 		level = 1,
 		team_type = {
 			102,
-			{
-				10001,
-				40002
-			}
+			0
+		},
+		recommend_attribute_list = {
+			2
+		},
+		recommend_team = {
+			2
 		}
 	},
 	[3013051] = {
@@ -5776,17 +6354,15 @@
 		map = "3013051",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3013051,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				13051,
-				60005,
-				70001
-			}
+			0
 		}
 	},
 	[3013052] = {
@@ -5797,17 +6373,15 @@
 		map = "3013052",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3013052,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				13052,
-				80001,
-				80013
-			}
+			0
 		}
 	},
 	[3013053] = {
@@ -5818,16 +6392,15 @@
 		map = "3013053",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3013053,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				13053,
-				80005
-			}
+			0
 		}
 	},
 	[3013054] = {
@@ -5838,16 +6411,15 @@
 		map = "3013054",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3013054,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				13054,
-				80009
-			}
+			0
 		}
 	},
 	[3013055] = {
@@ -5858,16 +6430,15 @@
 		map = "3013055",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3013055,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				13055,
-				90001
-			}
+			0
 		}
 	},
 	[3013056] = {
@@ -5878,16 +6449,15 @@
 		map = "3013056",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3013056,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				13054,
-				80009
-			}
+			0
 		}
 	},
 	[3013057] = {
@@ -5898,16 +6468,15 @@
 		map = "3013057",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3013057,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				13055,
-				90001
-			}
+			0
 		}
 	},
 	[3013058] = {
@@ -5918,16 +6487,15 @@
 		map = "3013058",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3013058,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				13055,
-				90001
-			}
+			0
 		}
 	},
 	[3017001] = {
@@ -5938,16 +6506,15 @@
 		map = "3017001",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3017001,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				10020,
-				20002
-			}
+			0
 		}
 	},
 	[3017101] = {
@@ -5958,13 +6525,15 @@
 		map = "3017101",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3017101,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			10021
+			0
 		}
 	},
 	[3017201] = {
@@ -5975,19 +6544,15 @@
 		map = "3017201",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3017201,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				10022,
-				40003,
-				50002,
-				70003,
-				80003
-			}
+			0
 		}
 	},
 	[3017301] = {
@@ -5998,17 +6563,15 @@
 		map = "3017301",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3017301,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				10023,
-				80006,
-				80010
-			}
+			0
 		}
 	},
 	[3017401] = {
@@ -6019,16 +6582,15 @@
 		map = "3017401",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3017401,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				10024,
-				20003
-			}
+			0
 		}
 	},
 	[3017501] = {
@@ -6039,19 +6601,15 @@
 		map = "3017501",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3017501,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				10025,
-				30001,
-				70002,
-				80004,
-				80015
-			}
+			0
 		}
 	},
 	[3017601] = {
@@ -6062,17 +6620,15 @@
 		map = "3017601",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3017601,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				10026,
-				30003,
-				80012
-			}
+			0
 		}
 	},
 	[3017701] = {
@@ -6083,17 +6639,15 @@
 		map = "3017701",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3017701,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				10027,
-				70004,
-				80011
-			}
+			0
 		}
 	},
 	[3017801] = {
@@ -6104,19 +6658,15 @@
 		map = "3017801",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3017801,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				10028,
-				20004,
-				60004,
-				80007,
-				90003
-			}
+			0
 		}
 	},
 	[3017901] = {
@@ -6127,17 +6677,15 @@
 		map = "3017901",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3017901,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				10029,
-				60008,
-				90002
-			}
+			0
 		}
 	},
 	[3018001] = {
@@ -6148,17 +6696,15 @@
 		map = "3018001",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3018001,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				10030,
-				60006,
-				90004
-			}
+			0
 		}
 	},
 	[3018101] = {
@@ -6169,16 +6715,15 @@
 		map = "3018101",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3018101,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				10031,
-				80014
-			}
+			0
 		}
 	},
 	[3018201] = {
@@ -6189,17 +6734,15 @@
 		map = "3018201",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3018201,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				10032,
-				80002,
-				80016
-			}
+			0
 		}
 	},
 	[3018301] = {
@@ -6210,17 +6753,15 @@
 		map = "3018301",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3018301,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
-			{
-				10033,
-				40001,
-				80008
-			}
+			0
 		}
 	},
 	[3013001] = {
@@ -6231,9 +6772,11 @@
 		map = "3013001",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3013001,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
@@ -6251,9 +6794,11 @@
 		map = "3013301",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3013301,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
@@ -6268,9 +6813,11 @@
 		map = "3013401",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3013401,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
@@ -6288,9 +6835,11 @@
 		map = "3013501",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3013501,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
@@ -6308,9 +6857,11 @@
 		map = "3013601",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3013601,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
@@ -6325,9 +6876,11 @@
 		map = "3013701",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3013701,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
@@ -6342,9 +6895,11 @@
 		map = "3013801",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3013801,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
@@ -6359,9 +6914,11 @@
 		map = "3013901",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3013901,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
@@ -6376,9 +6933,11 @@
 		map = "3015001",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3015001,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
@@ -6393,9 +6952,11 @@
 		map = "3015101",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3015101,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
@@ -6410,9 +6971,11 @@
 		map = "3015201",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3015201,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
@@ -6427,9 +6990,11 @@
 		map = "3015301",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3015301,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
@@ -6447,9 +7012,11 @@
 		map = "3016001",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3016001,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
@@ -6464,9 +7031,11 @@
 		map = "3016101",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3016101,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
@@ -6485,9 +7054,11 @@
 		map = "3016201",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3016201,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
@@ -6505,9 +7076,11 @@
 		map = "3016301",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3016301,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,
@@ -6526,9 +7099,11 @@
 		map = "3016401",
 		three_star_need = "",
 		need_default_team = 1,
+		recommend_attribute_list = "",
 		affix_type = "",
 		drop_lib_id = 0,
 		id = 3016401,
+		recommend_team = "",
 		level = 1,
 		team_type = {
 			102,

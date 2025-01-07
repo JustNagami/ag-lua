@@ -232,7 +232,7 @@
 			local var_9_5 = {}
 
 			for iter_9_0, iter_9_1 in pairs(var_9_4) do
-				if getSkillIDOrServantID(iter_9_1) == arg_9_2 then
+				if getSkillAffectByModule(iter_9_1) == arg_9_2 then
 					table.insert(var_9_5, iter_9_1)
 				end
 			end
@@ -335,8 +335,14 @@
 			local var_12_4 = arg_12_0:GetHeroData(var_12_2)
 			local var_12_5 = HeroTools:GetModulePowersByHeroIDAndLevel(var_12_2, var_12_4.moduleLevel)
 
-			if var_12_0.strengthen_desc and var_12_0.strengthen_desc[1] and table.indexof(var_12_5, var_12_0.strengthen_desc[1]) then
-				var_12_3 = var_12_0.strengthen_desc[2]
+			if var_12_0.strengthen_desc and var_12_0.strengthen_desc ~= "" then
+				for iter_12_0, iter_12_1 in ipairs(var_12_0.strengthen_desc) do
+					local var_12_6 = iter_12_1[1]
+
+					if var_12_6 and table.indexof(var_12_5, var_12_6) then
+						var_12_3 = iter_12_1[2]
+					end
+				end
 			end
 
 			var_12_1 = GetCfgDescription(var_12_3, arg_12_2)

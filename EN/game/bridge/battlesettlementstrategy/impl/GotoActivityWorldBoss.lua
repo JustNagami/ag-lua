@@ -16,6 +16,8 @@ function var_0_0.GotoActivityWorldBossStage(arg_2_0, arg_2_1, arg_2_2, arg_2_3, 
 	end
 
 	if not arg_2_5 then
+		CheckBattleResultNeedAddHeroExp()
+
 		function BattleCallLuaCallBack()
 			local var_3_0 = arg_2_2:GetActivityID()
 			local var_3_1 = var_2_3.end_story_id

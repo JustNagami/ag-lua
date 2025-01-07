@@ -1,11 +1,11 @@
 ﻿local var_0_0 = class("CooperationInvitationView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/Cooperation/CooperationInvitationUI"
+	return "Widget/System/Formation/Cooperation/CooperationSendInvitePopUI"
 end
 
 function var_0_0.UIParent(arg_2_0)
-	return manager.ui.uiMain.transform
+	return manager.ui.uiPop.transform
 end
 
 function var_0_0.Init(arg_3_0)
@@ -17,16 +17,16 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
 	arg_4_0.toggles_ = {
-		arg_4_0.m_friendBtn,
-		arg_4_0.m_guildBtn,
-		arg_4_0.m_nearBtn
+		arg_4_0.friendToggle_,
+		arg_4_0.guildToggle_,
+		arg_4_0.nearToggle_
 	}
 	arg_4_0.typeList_ = {
 		CooperationConst.INVITE_TYPE.FRIEND,
 		CooperationConst.INVITE_TYPE.GUILD,
 		CooperationConst.INVITE_TYPE.RECENT
 	}
-	arg_4_0.list = LuaList.New(handler(arg_4_0, arg_4_0.IndexItem), arg_4_0.m_list, CooperationInvitationItem)
+	arg_4_0.list = LuaList.New(handler(arg_4_0, arg_4_0.IndexItem), arg_4_0.listGo_, CooperationInvitationItem)
 end
 
 function var_0_0.AddUIListener(arg_5_0)
@@ -40,7 +40,7 @@ function var_0_0.AddUIListener(arg_5_0)
 		end)
 	end
 
-	arg_5_0:AddBtnListener(nil, arg_5_0.m_mask, function()
+	arg_5_0:AddBtnListener(nil, arg_5_0.maskBtn_, function()
 		arg_5_0:Back()
 	end)
 end
@@ -84,10 +84,10 @@ function var_0_0.OnEnter(arg_12_0)
 	local var_12_0 = GuildData:GetGuildInfo()
 
 	if var_12_0 ~= nil and var_12_0.id ~= nil then
-		SetActive(arg_12_0.m_guildBtn.gameObject, true)
+		SetActive(arg_12_0.guildToggle_.gameObject, true)
 		CooperationAction.RequestInviteList(arg_12_0.typeList_)
 	else
-		SetActive(arg_12_0.m_guildBtn.gameObject, false)
+		SetActive(arg_12_0.guildToggle_.gameObject, false)
 		CooperationAction.RequestInviteList({
 			CooperationConst.INVITE_TYPE.FRIEND,
 			CooperationConst.INVITE_TYPE.RECENT

@@ -14,7 +14,8 @@ function var_0_0.InitUI(arg_2_0)
 	arg_2_0.lockController_ = arg_2_0.transCon_:GetController("lock")
 	arg_2_0.nullController_ = arg_2_0.transCon_:GetController("null")
 	arg_2_0.popController_ = arg_2_0.transCon_:GetController("pop")
-	arg_2_0.lelevelController_ = arg_2_0.transCon_:GetController("level")
+	arg_2_0.downLvController_ = arg_2_0.transCon_:GetController("level1")
+	arg_2_0.leftLvController_ = arg_2_0.transCon_:GetController("level2")
 
 	arg_2_0:AddBtnListener(nil, nil, "OnClick")
 end
@@ -34,9 +35,17 @@ function var_0_0.RefreshUI(arg_4_0)
 		if arg_4_0.info_.preview then
 			arg_4_0.lockController_:SetSelectedState("unlock")
 			arg_4_0.popController_:SetSelectedState("pop")
-			arg_4_0.lelevelController_:SetSelectedState("off")
+			arg_4_0.downLvController_:SetSelectedState("off")
+			arg_4_0.leftLvController_:SetSelectedState("showMax")
 
 			arg_4_0.lvMax_.text = var_4_0.lvmax
+		elseif arg_4_0.info_.total then
+			arg_4_0.lockController_:SetSelectedState("unlock")
+			arg_4_0.popController_:SetSelectedState("pop")
+			arg_4_0.downLvController_:SetSelectedState("off")
+			arg_4_0.leftLvController_:SetSelectedState("showNum")
+
+			arg_4_0.lvMax_ = var_4_0.lvmax
 		elseif arg_4_0.info_.unlockLevel and arg_4_0.info_.equipLevel < arg_4_0.info_.unlockLevel then
 			arg_4_0.lockController_:SetSelectedState("lock")
 
@@ -50,7 +59,11 @@ function var_0_0.RefreshUI(arg_4_0)
 
 		local var_4_1 = arg_4_0.info_.num > var_4_0.lvmax and string.format("<color=#FF000B>%s</color>", arg_4_0.info_.num) or arg_4_0.info_.num
 
-		arg_4_0.lv_.text = string.format("%s/%s", var_4_1, var_4_0.lvmax)
+		arg_4_0.lv1_.text = string.format("%s/%s", var_4_1, var_4_0.lvmax)
+
+		if arg_4_0.lv2_ then
+			arg_4_0.lv2_.text = string.format("%s/%s", var_4_1, var_4_0.lvmax)
+		end
 
 		local var_4_2 = arg_4_0.info_.num > var_4_0.lvmax and var_4_0.lvmax or arg_4_0.info_.num
 		local var_4_3 = var_4_0.upgrade / var_4_0.percent * var_4_2

@@ -4,6 +4,7 @@ local var_0_1 = class("RechargeSkinNewItem", var_0_0)
 function var_0_1.InitUI(arg_1_0)
 	arg_1_0:BindCfgUI()
 
+	arg_1_0.icon_.immediate = true
 	arg_1_0.costTypeController_ = ControllerUtil.GetController(arg_1_0.gameObject_.transform, "costType")
 	arg_1_0.isLimitTimeController_ = ControllerUtil.GetController(arg_1_0.gameObject_.transform, "isLimitTime")
 	arg_1_0.statusController_ = ControllerUtil.GetController(arg_1_0.gameObject_.transform, "status")
@@ -95,7 +96,13 @@ function var_0_1.RefreshCommonUI(arg_9_0)
 
 	arg_9_0.nameLabel_.text = string.format("%s", arg_9_0.skinCfg.name)
 	arg_9_0.titleLabel_.text = ItemTools.getItemName(var_9_0.id)
-	arg_9_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_9_0.skinCfg.picture_id)
+	arg_9_0.icon_.spriteSync = "TextureConfig/Character/Icon/" .. arg_9_0.skinCfg.picture_id
+
+	if arg_9_0.goodID < 0 then
+		arg_9_0.soldTxt_.text = GetTips("ALREADY_GET")
+	else
+		arg_9_0.soldTxt_.text = GetTips("SELL_OUT")
+	end
 end
 
 function var_0_1.RefreshPriceUI(arg_10_0, arg_10_1)
@@ -134,6 +141,10 @@ function var_0_1.UpdatePrice(arg_11_0, arg_11_1)
 		end
 
 		arg_11_0.costTypeController_:SetSelectedState(ShopTools.IsRMB(arg_11_1) and "money" or "currency")
+	end
+
+	if arg_11_0.goodID < 0 then
+		arg_11_0.costTypeController_:SetSelectedState("Events")
 	end
 
 	SetActive(arg_11_0.superValueGo_, var_11_0.tag == ShopConst.TAGS.SUPER_VALUE)

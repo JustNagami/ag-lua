@@ -31,10 +31,6 @@ function var_0_0.OnEnter(arg_7_0)
 		BACK_BAR,
 		HOME_BAR
 	})
-
-	arg_7_0.mainActivityID_ = PolyhedronData:GetActivityID()
-	arg_7_0.activityID_ = ActivityCfg[arg_7_0.mainActivityID_].policy_activity_id
-
 	arg_7_0:RefreshUI()
 end
 
@@ -55,7 +51,7 @@ function var_0_0.Dispose(arg_9_0)
 end
 
 function var_0_0.RefreshUI(arg_10_0)
-	arg_10_0.rewardCfg_ = PolyhedronPolicyCfg.get_id_list_by_activity_id[arg_10_0.activityID_]
+	arg_10_0.rewardCfg_ = PolyhedronTools.GetPolicyIDList()
 	arg_10_0.curLevel_, arg_10_0.curExp_ = PolyhedronTools.PolyhedronPolicyExpToLevel()
 
 	arg_10_0:RefreshLevel()
@@ -85,30 +81,29 @@ end
 function var_0_0.RefreshLevel(arg_12_0)
 	arg_12_0.levelText_.text = arg_12_0.curLevel_
 
-	local var_12_0 = ActivityCfg[arg_12_0.mainActivityID_].policy_activity_id
-	local var_12_1 = PolyhedronPolicyCfg.get_id_list_by_activity_id[var_12_0]
+	local var_12_0 = PolyhedronTools.GetPolicyIDList()
 
-	arg_12_0.levelList_ = var_12_1
+	arg_12_0.levelList_ = var_12_0
 
-	local var_12_2 = #var_12_1
-	local var_12_3 = arg_12_0.curLevel_ + 1
+	local var_12_1 = #var_12_0
+	local var_12_2 = arg_12_0.curLevel_ + 1
 
-	var_12_3 = var_12_3 <= var_12_2 and var_12_3 or var_12_2
+	var_12_2 = var_12_2 <= var_12_1 and var_12_2 or var_12_1
 
-	local var_12_4 = 0
+	local var_12_3 = 0
 
 	if arg_12_0.curLevel_ == 0 then
-		var_12_4 = PolyhedronPolicyCfg[var_12_1[1]].exp
-	elseif arg_12_0.curLevel_ == var_12_2 then
-		var_12_4 = PolyhedronPolicyCfg[var_12_1[arg_12_0.curLevel_]].exp - PolyhedronPolicyCfg[var_12_1[arg_12_0.curLevel_ - 1]].exp
+		var_12_3 = PolyhedronPolicyCfg[var_12_0[1]].exp
+	elseif arg_12_0.curLevel_ == var_12_1 then
+		var_12_3 = PolyhedronPolicyCfg[var_12_0[arg_12_0.curLevel_]].exp - PolyhedronPolicyCfg[var_12_0[arg_12_0.curLevel_ - 1]].exp
 	else
-		var_12_4 = PolyhedronPolicyCfg[var_12_1[var_12_3]].exp - PolyhedronPolicyCfg[var_12_1[arg_12_0.curLevel_]].exp
+		var_12_3 = PolyhedronPolicyCfg[var_12_0[var_12_2]].exp - PolyhedronPolicyCfg[var_12_0[arg_12_0.curLevel_]].exp
 	end
 
-	arg_12_0.expText_.text = string.format("%d/%d", math.min(arg_12_0.curExp_, var_12_4), var_12_4)
-	arg_12_0.progressSlider_.value = arg_12_0.curExp_ / var_12_4
+	arg_12_0.expText_.text = string.format("%d/%d", math.min(arg_12_0.curExp_, var_12_3), var_12_3)
+	arg_12_0.progressSlider_.value = arg_12_0.curExp_ / var_12_3
 
-	arg_12_0:RefreshStageReward(var_12_3)
+	arg_12_0:RefreshStageReward(var_12_2)
 end
 
 function var_0_0.RefreshStageReward(arg_13_0, arg_13_1)
@@ -140,6 +135,10 @@ end
 
 function var_0_0.OnReceivedPolicyReward(arg_15_0)
 	arg_15_0:RefreshUI()
+end
+
+function var_0_0.OnPolyhedronGameUpdate(arg_16_0)
+	arg_16_0:RefreshUI()
 end
 
 return var_0_0

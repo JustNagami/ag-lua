@@ -35,7 +35,7 @@ function var_0_0.Refresh(arg_4_0, arg_4_1, arg_4_2, arg_4_3, arg_4_4)
 			if var_4_3 == ActivityTemplateConst.SUB_SINGLE_MATRIX then
 				var_4_2 = ActivityMatrixData:GetHeroData(arg_4_4, arg_4_3)
 			elseif var_4_3 == ActivityTemplateConst.STRATEGY_MATRIX then
-				var_4_2 = StrategyMatrixData:GetHeroData(arg_4_4, arg_4_3)
+				var_4_2 = StrategyMatrixData:GetHeroData(arg_4_3)
 			end
 		else
 			var_4_2 = MatrixData:GetHeroData(arg_4_3)

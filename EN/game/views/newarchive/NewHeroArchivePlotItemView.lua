@@ -13,6 +13,9 @@ end
 
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
+
+	arg_3_0.plotIcon_.immediate = true
+
 	arg_3_0:AddUIListener()
 
 	arg_3_0.picController_ = ControllerUtil.GetController(arg_3_0.transform_, "plot")
@@ -236,7 +239,7 @@ function var_0_0.RefreshPlotPicUI(arg_16_0)
 
 	local var_16_0 = arg_16_0.collectPicList_[1]
 
-	arg_16_0.plotIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/IllustratedHandbook/Collect_s/" .. CollectPictureCfg[var_16_0].picture)
+	arg_16_0.plotIcon_.spriteSync = "TextureConfig/IllustratedHandbook/Collect_s/" .. CollectPictureCfg[var_16_0].picture
 
 	local var_16_1 = 0
 

@@ -313,7 +313,7 @@ function var_0_0.GetAllSticker(arg_29_0)
 		local var_29_1 = ItemCfg[iter_29_1]
 		local var_29_2 = PlayerData:GetSticker(iter_29_1)
 
-		if var_29_1.sub_type ~= 1302 or var_29_2.unlock ~= 0 then
+		if var_29_1.sub_type ~= 1302 or not var_29_2.lock then
 			table.insert(var_29_0, var_29_2)
 		end
 	end

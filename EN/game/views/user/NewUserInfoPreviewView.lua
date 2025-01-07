@@ -18,6 +18,8 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
+	arg_4_0.commonPortrait_ = CommonHeadPortrait.New(arg_4_0.headItem_)
+
 	local var_4_0 = GameToSDK.CURRENT_SDK_ID == SDK_PLATFORM.DEV or not SDKTools.GetIsOverSea() and _G.CHANNEL_MASTER_ID ~= 1
 
 	SetActive(arg_4_0.userCenterBtn_.gameObject, not var_4_0)
@@ -135,15 +137,8 @@ function var_0_0.RefreshUserData(arg_9_0)
 		end
 	end
 
-	arg_9_0.stickerAll_ = #ItemCfg.get_id_list_by_sub_type[ItemConst.ITEM_SUB_TYPE.NORMAL_STICKER]
-	arg_9_0.stickerNum_ = #var_9_0.all_sticker_list
-
-	for iter_9_4, iter_9_5 in ipairs(var_9_0.all_sticker_list) do
-		if ItemCfg[iter_9_5].sub_type == ItemConst.ITEM_SUB_TYPE.SPECIAL_STICKER then
-			arg_9_0.stickerAll_ = arg_9_0.stickerAll_ + 1
-		end
-	end
-
+	arg_9_0.stickerAll_ = #PlayerData:GetStickerList(true) + #PlayerData:GetStickerBgList(true) + #PlayerData:GetStickerFgList(true)
+	arg_9_0.stickerNum_ = #PlayerData:GetStickerList() + #PlayerData:GetStickerBgList() + #PlayerData:GetStickerFgList()
 	arg_9_0.achieveAll_ = AchievementData:GetAchievementTotalCnt()
 	arg_9_0.achieveNum_ = AchievementData:GetFinishAchievementCnt()
 end
@@ -201,15 +196,11 @@ function var_0_0.RefreshSign(arg_14_0, arg_14_1)
 end
 
 function var_0_0.RefreshHead(arg_15_0, arg_15_1)
-	arg_15_0.headIcon_.sprite = ItemTools.getItemSprite(arg_15_1)
-
-	arg_15_0.headIcon_:SetNativeSize()
+	arg_15_0.commonPortrait_:RenderHead(arg_15_1)
 end
 
 function var_0_0.RefreshFrame(arg_16_0, arg_16_1)
-	arg_16_0.headFrameIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_16_1)
-
-	arg_16_0.headFrameIcon_:SetNativeSize()
+	arg_16_0.commonPortrait_:RenderFrame(arg_16_1)
 end
 
 function var_0_0.RefreshLvInfo(arg_17_0, arg_17_1)
@@ -285,7 +276,7 @@ function var_0_0.RefreshTag(arg_21_0, arg_21_1)
 end
 
 function var_0_0.RefreshCardBg(arg_23_0, arg_23_1)
-	local var_23_0 = ProfileBusinessCardCfg[arg_23_1]
+	local var_23_0 = ProfileDecorateItemCfg[arg_23_1]
 	local var_23_1 = var_23_0.resource
 
 	if var_23_0.type == 1 then
@@ -365,6 +356,7 @@ function var_0_0.OnExit(arg_28_0)
 end
 
 function var_0_0.Dispose(arg_29_0)
+	arg_29_0.commonPortrait_:Dispose()
 	arg_29_0:RemoveAllListeners()
 
 	for iter_29_0, iter_29_1 in ipairs(arg_29_0.tagItem_) do

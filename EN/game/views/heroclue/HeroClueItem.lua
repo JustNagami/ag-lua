@@ -18,42 +18,38 @@ end
 
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
-
-	arg_3_0.statusController_ = ControllerUtil.GetController(arg_3_0.transform_, "status")
+	arg_3_0:InitController()
 end
 
-function var_0_0.AddUIListener(arg_4_0)
-	arg_4_0:AddBtnListener(arg_4_0.btn_, nil, function()
-		if not ActivityTools.ActivityOpenCheck(arg_4_0.activityID_) then
+function var_0_0.InitController(arg_4_0)
+	arg_4_0.statusController_ = ControllerUtil.GetController(arg_4_0.transform_, "status")
+end
+
+function var_0_0.AddUIListener(arg_5_0)
+	arg_5_0:AddBtnListener(arg_5_0.btn_, nil, function()
+		if not ActivityTools.ActivityOpenCheck(arg_5_0.activityID_) then
 			return
 		end
 
-		if not arg_4_0.curData_ then
+		if not arg_5_0.curData_ then
 			ShowTips("ACTIVITY_HERO_CLUE_NULL")
 
 			return
 		end
 
-		if #HeroClueCfg[arg_4_0.clueID_].level > arg_4_0.curData_.level then
+		if #HeroClueCfg[arg_5_0.clueID_].level > arg_5_0.curData_.level then
 			ShowTips("ACTIVITY_HERO_CLUE_NOT_ENOUGH")
 
 			return
 		end
 
-		HeroClueData:SetSelectedClue(arg_4_0.activityID_, arg_4_0.clueID_)
-		JumpTools.OpenPageByJump("heroClueDetail", {
-			activityID = arg_4_0.activityID_,
-			clueID = arg_4_0.clueID_
-		})
+		HeroClueData:SetSelectedClue(arg_5_0.activityID_, arg_5_0.clueID_)
+		HeroClueTools.GoToClueDetailView(arg_5_0.activityID_, arg_5_0.clueID_)
 	end)
 end
 
-function var_0_0.SetActive(arg_6_0, arg_6_1)
-	SetActive(arg_6_0.gameObject_, arg_6_1)
-end
-
-function var_0_0.Dispose(arg_7_0)
-	var_0_0.super.Dispose(arg_7_0)
+function var_0_0.SetActive(arg_7_0, arg_7_1)
+	SetActive(arg_7_0.gameObject_, arg_7_1)
 end
 
 function var_0_0.RefreshUI(arg_8_0)
@@ -86,6 +82,14 @@ function var_0_0.RefreshUI(arg_8_0)
 	else
 		arg_8_0.indexText_.text = arg_8_0.index_
 	end
+end
+
+function var_0_0.GetClueID(arg_9_0)
+	return arg_9_0.clueID_
+end
+
+function var_0_0.GetPosition(arg_10_0)
+	return arg_10_0.transform_:GetPosition()
 end
 
 return var_0_0

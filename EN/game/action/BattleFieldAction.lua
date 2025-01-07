@@ -61,124 +61,127 @@ manager.net:Bind(54003, function(arg_4_0)
 
 	BattleController.GetInstance():UpdateHeroTeam(var_4_0)
 end)
+manager.net:Bind(54037, function(arg_5_0)
+	ActivityMultiRewardData:ParseBattleMultiReward(arg_5_0)
+end)
 
 local var_0_0 = {}
 
-function var_0_0.SetComboInfo(arg_5_0, arg_5_1, arg_5_2, arg_5_3, arg_5_4)
-	if BattleConst.STAGE_TYPE_NEW.POLYHEDRON == arg_5_0 then
+function var_0_0.SetComboInfo(arg_6_0, arg_6_1, arg_6_2, arg_6_3, arg_6_4)
+	if BattleConst.STAGE_TYPE_NEW.POLYHEDRON == arg_6_0 then
 		manager.net:Send(66038, {
-			cooperate_unique_skill_id = arg_5_2
-		}, 66039):next(function(arg_6_0)
+			cooperate_unique_skill_id = arg_6_2
+		}, 66039):next(function(arg_7_0)
 			return
 		end)
 
-		arg_5_1 = PolyhedronData:GetActivityID()
+		arg_6_1 = PolyhedronData:GetActivityID()
 	end
 
-	BattleTeamData:SetComboInfo(arg_5_0, arg_5_1, arg_5_2, arg_5_3, arg_5_4)
-	var_0_0.PushTeamsByParams(arg_5_0, arg_5_1, arg_5_3, arg_5_4)
+	BattleTeamData:SetComboInfo(arg_6_0, arg_6_1, arg_6_2, arg_6_3, arg_6_4)
+	var_0_0.PushTeamsByParams(arg_6_0, arg_6_1, arg_6_3, arg_6_4)
 end
 
-function var_0_0.PushTeamsByParams(arg_7_0, arg_7_1, arg_7_2, arg_7_3)
-	local var_7_0, var_7_1 = BattleTeamData:GetSingleTeam(arg_7_0, arg_7_1, arg_7_2, arg_7_3)
-	local var_7_2, var_7_3 = BattleTeamData:GetMimirInfo(arg_7_0, arg_7_1, arg_7_2, arg_7_3)
-	local var_7_4 = BattleTeamData:GetComboInfo(arg_7_0, arg_7_1, arg_7_2, arg_7_3)
+function var_0_0.PushTeamsByParams(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
+	local var_8_0, var_8_1 = BattleTeamData:GetSingleTeam(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
+	local var_8_2, var_8_3 = BattleTeamData:GetMimirInfo(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
+	local var_8_4 = BattleTeamData:GetComboInfo(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
 
-	var_0_0.PushTeams(arg_7_1, arg_7_0, var_7_0, var_7_1, var_7_4, {
-		id = var_7_2,
-		chip = var_7_3
-	}, arg_7_2, arg_7_3)
+	var_0_0.PushTeams(arg_8_1, arg_8_0, var_8_0, var_8_1, var_8_4, {
+		id = var_8_2,
+		chip = var_8_3
+	}, arg_8_2, arg_8_3)
 end
 
-function var_0_0.PushTeams(arg_8_0, arg_8_1, arg_8_2, arg_8_3, arg_8_4, arg_8_5, arg_8_6, arg_8_7)
-	local var_8_0 = {}
-	local var_8_1 = {}
-	local var_8_2 = arg_8_4 or 0
-	local var_8_3 = arg_8_5 or {
+function var_0_0.PushTeams(arg_9_0, arg_9_1, arg_9_2, arg_9_3, arg_9_4, arg_9_5, arg_9_6, arg_9_7)
+	local var_9_0 = {}
+	local var_9_1 = {}
+	local var_9_2 = arg_9_4 or 0
+	local var_9_3 = arg_9_5 or {
 		id = 0,
 		chip = {}
 	}
-	local var_8_4 = true
+	local var_9_4 = true
 
-	for iter_8_0 = 1, 3 do
-		if arg_8_3[iter_8_0] ~= 0 then
-			var_8_0[iter_8_0] = {
+	for iter_9_0 = 1, 3 do
+		if arg_9_3[iter_9_0] ~= 0 then
+			var_9_0[iter_9_0] = {
 				hero_type = 2,
 				owner_id = BattleTeamData.NO_OWNER,
-				hero_id = arg_8_3[iter_8_0] or 0
+				hero_id = arg_9_3[iter_9_0] or 0
 			}
 		else
-			var_8_0[iter_8_0] = {
+			var_9_0[iter_9_0] = {
 				hero_type = 1,
 				owner_id = BattleTeamData.NO_OWNER,
-				hero_id = arg_8_2[iter_8_0] or 0
+				hero_id = arg_9_2[iter_9_0] or 0
 			}
 		end
 
-		if var_8_0[iter_8_0].hero_id ~= 0 then
-			var_8_4 = false
+		if var_9_0[iter_9_0].hero_id ~= 0 then
+			var_9_4 = false
 		end
 	end
 
-	if var_8_4 then
+	if var_9_4 then
 		return
 	end
 
-	var_0_0.PushTeamsToServer(arg_8_1, var_8_0, arg_8_0, var_8_2, var_8_3, arg_8_6, arg_8_7)
+	var_0_0.PushTeamsToServer(arg_9_1, var_9_0, arg_9_0, var_9_2, var_9_3, arg_9_6, arg_9_7)
 end
 
-function var_0_0.PushTeamsToServer(arg_9_0, arg_9_1, arg_9_2, arg_9_3, arg_9_4, arg_9_5, arg_9_6)
-	local var_9_0 = arg_9_0 or 0
-	local var_9_1 = GetHeroTeamActivityID(var_9_0, arg_9_2)
-	local var_9_2 = arg_9_3 or 0
-	local var_9_3 = {}
+function var_0_0.PushTeamsToServer(arg_10_0, arg_10_1, arg_10_2, arg_10_3, arg_10_4, arg_10_5, arg_10_6)
+	local var_10_0 = arg_10_0 or 0
+	local var_10_1 = GetHeroTeamActivityID(var_10_0, arg_10_2)
+	local var_10_2 = arg_10_3 or 0
+	local var_10_3 = {}
 
-	if not arg_9_4 then
-		var_9_3.mimir_id = 0
-		var_9_3.chip_list = {}
+	if not arg_10_4 then
+		var_10_3.mimir_id = 0
+		var_10_3.chip_list = {}
 	else
-		var_9_3.mimir_id = arg_9_4.id or 0
-		var_9_3.chip_list = arg_9_4.chip or {}
+		var_10_3.mimir_id = arg_10_4.id or 0
+		var_10_3.chip_list = arg_10_4.chip or {}
 	end
 
-	local var_9_4 = {
-		cont_id = arg_9_5,
+	local var_10_4 = {
+		cont_id = arg_10_5,
 		teams = {
 			{
-				id = arg_9_6,
-				hero_list = arg_9_1,
-				cooperate_unique_skill_id = var_9_2 or 0,
-				mimir_info = var_9_3
+				id = arg_10_6,
+				hero_list = arg_10_1,
+				cooperate_unique_skill_id = var_10_2 or 0,
+				mimir_info = var_10_3
 			}
 		}
 	}
-	local var_9_5 = {
-		stage_type = var_9_0,
-		activity_id = var_9_1,
-		teams_info_list = var_9_4,
+	local var_10_5 = {
+		stage_type = var_10_0,
+		activity_id = var_10_1,
+		teams_info_list = var_10_4,
 		data = {
 			chess_data_info_1 = {},
 			chess_data_info_2 = {}
 		}
 	}
 
-	manager.net:Push(63006, var_9_5)
+	manager.net:Push(63006, var_10_5)
 end
 
-function var_0_0.ChangeSelectChapterID(arg_10_0)
-	local var_10_0 = getChapterClientCfgByChapterID(arg_10_0)
-	local var_10_1 = getChapterToggle(var_10_0.id)
+function var_0_0.ChangeSelectChapterID(arg_11_0)
+	local var_11_0 = getChapterClientCfgByChapterID(arg_11_0)
+	local var_11_1 = getChapterToggle(var_11_0.id)
 
-	BattleFieldData:SetCacheChapterClient(var_10_1, var_10_0.id)
-	BattleFieldData:SetCacheChapter(var_10_0.id, arg_10_0)
+	BattleFieldData:SetCacheChapterClient(var_11_1, var_11_0.id)
+	BattleFieldData:SetCacheChapter(var_11_0.id, arg_11_0)
 
-	if var_10_1 == BattleConst.TOGGLE.PLOT or var_10_1 == BattleConst.TOGGLE.SUB_PLOT then
+	if var_11_1 == BattleConst.TOGGLE.PLOT or var_11_1 == BattleConst.TOGGLE.SUB_PLOT then
 		manager.notify:Invoke(CHANGE_PLOT_SELECT_CHAPTER)
 	end
 end
 
-function var_0_0.ChangePlotHardLevel(arg_11_0)
-	BattleFieldData:ChangePlotHardLevel(arg_11_0)
+function var_0_0.ChangePlotHardLevel(arg_12_0)
+	BattleFieldData:ChangePlotHardLevel(arg_12_0)
 	manager.notify:Invoke(CHANGE_PLOT_HARD_LEVEL)
 end
 

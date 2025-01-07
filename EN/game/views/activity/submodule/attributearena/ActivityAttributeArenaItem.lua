@@ -17,6 +17,7 @@ function var_0_0.InitUI(arg_3_0)
 
 	arg_3_0.teamList = LuaList.New(handler(arg_3_0, arg_3_0.IndexTeamItem), arg_3_0.m_teamList, ActivityAttributeArenaHeroItem)
 	arg_3_0.rankTeamList = LuaList.New(handler(arg_3_0, arg_3_0.IndexRankTeamItem), arg_3_0.m_rankList, ActivityAttributeArenaHeroItem)
+	arg_3_0.commonPortrait_ = CommonHeadPortrait.New(arg_3_0.headItem_)
 	arg_3_0.scoreController = ControllerUtil.GetController(arg_3_0.transform_, "score")
 	arg_3_0.stateController = ControllerUtil.GetController(arg_3_0.transform_, "state")
 	arg_3_0.rankController = ControllerUtil.GetController(arg_3_0.transform_, "rank")
@@ -111,8 +112,9 @@ function var_0_0.RefreshUI(arg_10_0)
 
 		local var_10_2 = var_10_1.rankList[1]
 
-		arg_10_0.m_rankIcon.sprite = ItemTools.getItemSprite(var_10_2.portrait)
-		arg_10_0.m_rankFrame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_10_2.frame)
+		arg_10_0.commonPortrait_:RenderHead(var_10_2.portrait)
+		arg_10_0.commonPortrait_:RenderFrame(var_10_2.frame)
+
 		arg_10_0.m_rankScore.text = var_10_2.score
 		arg_10_0.m_rankLab.text = var_10_2.rank
 		arg_10_0.rankHeroList = var_10_2:GetSingleSelectHeroList()
@@ -124,6 +126,7 @@ function var_0_0.RefreshUI(arg_10_0)
 end
 
 function var_0_0.Dispose(arg_11_0)
+	arg_11_0.commonPortrait_:Dispose()
 	arg_11_0.teamList:Dispose()
 	arg_11_0.rankTeamList:Dispose()
 	var_0_0.super.Dispose(arg_11_0)

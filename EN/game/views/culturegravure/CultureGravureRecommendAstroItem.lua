@@ -32,7 +32,7 @@ function var_0_0.AddListeners(arg_4_0)
 		local var_5_2 = GetCfgDescription(var_5_1, 1)
 		local var_5_3 = HeroAstrolabeCfg[arg_4_0.id_]
 
-		arg_4_0.callback(var_5_3.name, var_5_2, Vector3(var_5_0.x, var_5_0.y, var_5_0.z))
+		arg_4_0.callback(var_5_3.name, var_5_2, Vector3(var_5_0.x, var_5_0.y, var_5_0.z), arg_4_0.rightTrans_, true)
 	end)
 end
 
@@ -40,8 +40,9 @@ function var_0_0.InitUI(arg_6_0)
 	arg_6_0:BindCfgUI()
 end
 
-function var_0_0.SetClickCallBack(arg_7_0, arg_7_1)
+function var_0_0.SetClickCallBack(arg_7_0, arg_7_1, arg_7_2)
 	arg_7_0.callback = arg_7_1
+	arg_7_0.rightTrans_ = arg_7_2
 end
 
 function var_0_0.RefreshUI(arg_8_0)

@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("ValentineGameV2HeroInfoView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/VersionUI/IndiaUI_2_8/IndiaValentineUI/IndiaValentineStageUI"
+	return "Widget/Version/SummerUI_Com/SummerUI_Com_IndiaValentineUI/IndiaValentineStageUI"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -79,7 +79,6 @@ function var_0_0.RefreshUI(arg_10_0)
 	if var_10_1 and var_10_1.isClear then
 		SetActive(arg_10_0.costGo_, true)
 
-		arg_10_0.costIcon_.sprite = getSprite("Atlas/Currency", arg_10_0.cfg_.cost_item[1][1])
 		arg_10_0.costText_.text = arg_10_0.cfg_.cost_item[1][2]
 	else
 		SetActive(arg_10_0.costGo_, false)

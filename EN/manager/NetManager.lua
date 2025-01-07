@@ -215,31 +215,35 @@ function var_0_0.GetTCPState(arg_43_0, arg_43_1)
 	return arg_43_0.tcpConnection_:GetMachineState()
 end
 
-function var_0_0.GetDelayTime(arg_44_0)
-	return arg_44_0.tcpConnection_:GetDelayTime()
+function var_0_0.ForceReconnect(arg_44_0, arg_44_1)
+	return arg_44_0.tcpConnection_:ForceReconnect(arg_44_1)
 end
 
-function var_0_0.GetMainSendingPacketNum(arg_45_0)
-	return arg_45_0.tcpConnection_:GetSendingPacketNum()
+function var_0_0.GetDelayTime(arg_45_0)
+	return arg_45_0.tcpConnection_:GetDelayTime()
 end
 
-function var_0_0.GateWayConnect(arg_46_0, arg_46_1, arg_46_2, arg_46_3)
-	if not arg_46_0.gateWayConnection_ then
-		arg_46_0.gateWayConnection_ = StreamConnection.New()
+function var_0_0.GetMainSendingPacketNum(arg_46_0)
+	return arg_46_0.tcpConnection_:GetSendingPacketNum()
+end
+
+function var_0_0.GateWayConnect(arg_47_0, arg_47_1, arg_47_2, arg_47_3)
+	if not arg_47_0.gateWayConnection_ then
+		arg_47_0.gateWayConnection_ = StreamConnection.New()
 	end
 
-	arg_46_0.gateWayConnection_:Connect(arg_46_1, arg_46_2, arg_46_3)
+	arg_47_0.gateWayConnection_:Connect(arg_47_1, arg_47_2, arg_47_3)
 end
 
-function var_0_0.GateWayReconnect(arg_47_0, arg_47_1)
-	arg_47_0.gateWayConnection_:Reconnect(arg_47_1)
+function var_0_0.GateWayReconnect(arg_48_0, arg_48_1)
+	arg_48_0.gateWayConnection_:Reconnect(arg_48_1)
 end
 
-function var_0_0.GateWaySend(arg_48_0, arg_48_1, arg_48_2, arg_48_3, arg_48_4, arg_48_5, arg_48_6)
-	arg_48_5 = defaultValue(arg_48_5, true)
-	arg_48_6 = defaultValue(arg_48_6, true)
+function var_0_0.GateWaySend(arg_49_0, arg_49_1, arg_49_2, arg_49_3, arg_49_4, arg_49_5, arg_49_6)
+	arg_49_5 = defaultValue(arg_49_5, true)
+	arg_49_6 = defaultValue(arg_49_6, true)
 
-	arg_48_0.gateWayConnection_:SendSyncNoEnqueue(arg_48_1, arg_48_2, arg_48_3, arg_48_4, arg_48_5, arg_48_6)
+	arg_49_0.gateWayConnection_:SendSyncNoEnqueue(arg_49_1, arg_49_2, arg_49_3, arg_49_4, arg_49_5, arg_49_6)
 end
 
 return var_0_0

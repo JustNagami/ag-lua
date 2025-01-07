@@ -15,7 +15,10 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
+	arg_3_0.m_icon.immediate = true
 	arg_3_0.songItems = {}
+	arg_3_0.posX = {}
+	arg_3_0.scrollRect = arg_3_0.transform_:Find("content/inform/Scroll View").gameObject:GetComponent(typeof(ScrollRectEx))
 end
 
 function var_0_0.AddUIListener(arg_4_0)
@@ -34,10 +37,11 @@ end
 function var_0_0.SetData(arg_7_0, arg_7_1, arg_7_2, arg_7_3)
 	arg_7_0.album = arg_7_1
 	arg_7_0.index = arg_7_3
+	arg_7_0.music_id = arg_7_2
 
 	local var_7_0 = MusicAlbumRecordCfg[arg_7_1]
 
-	arg_7_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/IllustratedHandbook/musicCD/" .. var_7_0.cover)
+	arg_7_0.m_icon.spriteSync = "TextureConfig/IllustratedHandbook/musicCD/" .. var_7_0.cover
 	arg_7_0.songs = MusicRecordCfg.get_id_list_by_album[arg_7_0.album] or {}
 
 	arg_7_0:RefreshSongs()
@@ -86,36 +90,54 @@ function var_0_0.RefreshSongsState(arg_11_0, arg_11_1)
 	end
 end
 
-function var_0_0.RegistCallBack(arg_12_0, arg_12_1)
-	arg_12_0.clickFunc = arg_12_1
+function var_0_0.GetSongsIndex(arg_12_0, arg_12_1)
+	for iter_12_0, iter_12_1 in ipairs(arg_12_0.songItems) do
+		if iter_12_1:GetMusicId() == arg_12_1 then
+			return iter_12_0
+		end
+	end
+
+	return 1
 end
 
-function var_0_0.PlayMusic(arg_13_0, arg_13_1)
-	if arg_13_0.clickFunc then
-		arg_13_0.clickFunc(arg_13_1)
+function var_0_0.RegistCallBack(arg_13_0, arg_13_1)
+	arg_13_0.clickFunc = arg_13_1
+end
+
+function var_0_0.PlayMusic(arg_14_0, arg_14_1)
+	if arg_14_0.clickFunc then
+		arg_14_0.clickFunc(arg_14_1)
 	end
 end
 
-function var_0_0.RegistMaskCallBack(arg_14_0, arg_14_1)
-	arg_14_0.maskClickFunc = arg_14_1
+function var_0_0.RegistMaskCallBack(arg_15_0, arg_15_1)
+	arg_15_0.maskClickFunc = arg_15_1
 end
 
-function var_0_0.RegistCdCallBack(arg_15_0, arg_15_1)
-	arg_15_0.cdClickFunc = arg_15_1
+function var_0_0.RegistCdCallBack(arg_16_0, arg_16_1)
+	arg_16_0.cdClickFunc = arg_16_1
 end
 
-function var_0_0.ForceRebuild(arg_16_0)
-	LayoutRebuilder.ForceRebuildLayoutImmediate(arg_16_0.m_songContent)
+function var_0_0.JumpToSong(arg_17_0, arg_17_1)
+	local var_17_0 = arg_17_0.songItems[arg_17_0:GetSongsIndex(arg_17_1)]
+	local var_17_1 = var_17_0:GetAnchoredPosition()
+
+	arg_17_0.scrollRect:SetVerticalAnchoredPositionInter(-var_17_1.y)
+	var_17_0:SetExpand(true)
 end
 
-function var_0_0.Dispose(arg_17_0)
-	for iter_17_0, iter_17_1 in ipairs(arg_17_0.songItems) do
-		iter_17_1:Dispose()
+function var_0_0.ForceRebuild(arg_18_0)
+	LayoutRebuilder.ForceRebuildLayoutImmediate(arg_18_0.m_songContent)
+end
+
+function var_0_0.Dispose(arg_19_0)
+	for iter_19_0, iter_19_1 in ipairs(arg_19_0.songItems) do
+		iter_19_1:Dispose()
 	end
 
-	arg_17_0.songItems = {}
+	arg_19_0.songItems = {}
 
-	var_0_0.super.Dispose(arg_17_0)
+	var_0_0.super.Dispose(arg_19_0)
 end
 
 return var_0_0

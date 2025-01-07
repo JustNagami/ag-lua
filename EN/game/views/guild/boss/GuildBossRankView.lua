@@ -17,6 +17,9 @@ function var_0_0.Init(arg_4_0)
 	arg_4_0.myRankData_ = nil
 
 	arg_4_0:InitUI()
+
+	arg_4_0.commonPortrait_ = CommonHeadPortrait.New(arg_4_0.headItem_)
+
 	arg_4_0:AddUIListener()
 end
 
@@ -113,11 +116,13 @@ function var_0_0.UpdateView(arg_19_0)
 		arg_19_0.m_score.text = GetTips("MATRIX_RANK_NO_INFO")
 	end
 
-	arg_19_0.m_icon.sprite = ItemTools.getItemSprite(PlayerData:GetPlayerInfo().portrait)
-	arg_19_0.m_frame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. PlayerData:GetPlayerInfo().icon_frame)
+	arg_19_0.commonPortrait_:RenderHead(PlayerData:GetPlayerInfo().portrait)
+	arg_19_0.commonPortrait_:RenderFrame(PlayerData:GetPlayerInfo().icon_frame)
 end
 
 function var_0_0.Dispose(arg_20_0)
+	arg_20_0.commonPortrait_:Dispose()
+
 	if arg_20_0.uiList_ then
 		arg_20_0.uiList_:Dispose()
 

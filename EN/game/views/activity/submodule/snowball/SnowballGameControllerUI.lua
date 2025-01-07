@@ -477,6 +477,8 @@ function var_0_0.InitBtnListeners(arg_38_0)
 	end))
 
 	arg_38_0.shootLongHoldBtn = var_38_0
+
+	arg_38_0:SetListener(var_38_0)
 end
 
 function var_0_0.InitEventListeners(arg_41_0)

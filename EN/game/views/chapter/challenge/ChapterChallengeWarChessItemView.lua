@@ -9,9 +9,7 @@ function var_0_0.ClickItem(arg_1_0, arg_1_1)
 		OperationRecorder.RecordButtonTouch("challenge_warchess_below")
 	end
 
-	if arg_1_0.isLock_ then
-		ShowTips(arg_1_0.lockTips_)
-
+	if arg_1_0:CheckLock() then
 		return
 	end
 

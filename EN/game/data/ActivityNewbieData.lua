@@ -155,7 +155,7 @@ function var_0_0.ReceiveMonthlyCard(arg_19_0, arg_19_1)
 end
 
 function var_0_0.SetMonthlyCardSign(arg_20_0)
-	arg_20_0.firstMonthlyCardStatus_.signTimes = arg_20_0.firstMonthlyCardStatus_.signTimes + 1
+	return
 end
 
 function var_0_0.GetBpRewardStatus(arg_21_0)

@@ -309,26 +309,40 @@ function var_0_0.CalHeroMatchNum(arg_22_0, arg_22_1, arg_22_2)
 	return var_22_0
 end
 
-function var_0_0.ConfirmEntrustList(arg_23_0)
-	local var_23_0 = DormData:GetCurrectSceneID()
-	local var_23_1 = {
-		sceneID = var_23_0,
-		pos = var_0_4.pos,
-		heroList = var_0_3,
-		timeLevel = var_0_4.timeLevel
-	}
+function var_0_0.ConfirmEntrustList(arg_23_0, arg_23_1)
+	local var_23_0 = arg_23_1
 
-	CanteenAction:SendTaskDispatchInfo(var_23_1)
+	if var_23_0 == nil then
+		var_23_0 = DormData:GetCurrectSceneID()
+	end
+
+	if var_23_0 then
+		local var_23_1 = {
+			sceneID = var_23_0,
+			pos = var_0_4.pos,
+			heroList = var_0_3,
+			timeLevel = var_0_4.timeLevel
+		}
+
+		CanteenAction:SendTaskDispatchInfo(var_23_1)
+	end
 end
 
-function var_0_0.CancelEntrust(arg_24_0, arg_24_1)
-	local var_24_0 = DormData:GetCurrectSceneID()
-	local var_24_1 = {
-		sceneID = var_24_0,
-		pos = arg_24_1
-	}
+function var_0_0.CancelEntrust(arg_24_0, arg_24_1, arg_24_2)
+	local var_24_0 = arg_24_2
 
-	CanteenAction:SendTaskDispatchInfo(var_24_1)
+	if var_24_0 == nil then
+		var_24_0 = DormData:GetCurrectSceneID()
+	end
+
+	if var_24_0 then
+		local var_24_1 = {
+			sceneID = var_24_0,
+			pos = arg_24_1
+		}
+
+		CanteenAction:SendTaskDispatchInfo(var_24_1)
+	end
 end
 
 function var_0_0.ConfirmEntrustListCallBack(arg_25_0, arg_25_1)
@@ -363,12 +377,16 @@ function var_0_0.ConfirmEntrustListCallBack(arg_25_0, arg_25_1)
 	var_0_4 = {}
 end
 
-function var_0_0.RefreshEntrustData(arg_26_0, arg_26_1)
+function var_0_0.RefreshEntrustData(arg_26_0, arg_26_1, arg_26_2)
 	if var_0_1[arg_26_1].refresh_times >= DormConst.DISPATCH_REFRESH_TIME then
 		return
 	end
 
-	local var_26_0 = DormData:GetCurrectSceneID()
+	local var_26_0 = arg_26_2
+
+	if var_26_0 == nil then
+		var_26_0 = DormData:GetCurrectSceneID()
+	end
 
 	CanteenAction:RefreshEntrust(var_26_0, arg_26_1)
 end

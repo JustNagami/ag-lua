@@ -11,6 +11,8 @@ function var_0_0.GotoMardukSpecialStage(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_
 		return
 	end
 
+	CheckBattleResultNeedAddHeroExp()
+
 	function BattleCallLuaCallBack()
 		manager.story:RemovePlayer()
 

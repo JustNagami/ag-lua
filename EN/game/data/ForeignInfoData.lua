@@ -35,8 +35,9 @@ function var_0_0.SetCurForeignDetailInfo(arg_5_0, arg_5_1)
 		icon = arg_5_1.base_info.icon,
 		icon_frame = arg_5_1.base_info.icon_frame,
 		sign = arg_5_1.sign,
-		sticker_show_info = PlayerData:InitStickerShowList(arg_5_1.sticker_show_info),
-		sticker_background = arg_5_1.sticker_background,
+		sticker_show_info = PlayerData:InitStickerShowList({
+			arg_5_1.sticker_show_info
+		}, true),
 		hero_list = arg_5_1.hero_list or {},
 		is_online = arg_5_1.is_online,
 		ip = (arg_5_1.ip_location == nil or arg_5_1.ip_location == "") and GetTips("IP_UNKNOWN") or arg_5_1.ip_location,
@@ -55,7 +56,9 @@ function var_0_0.SetCurForeignDetailInfo(arg_5_0, arg_5_1)
 		achievement_static_info = arg_5_1.achievement_static_info,
 		hero_static_info = arg_5_1.hero_static_info,
 		weapon_servant_static_info = arg_5_1.weapon_servant_static_info,
-		sticker_static_info = arg_5_1.sticker_static_info
+		sticker_static_info = arg_5_1.sticker_static_info,
+		sticker_background_static_info = arg_5_1.sticker_background_static_info,
+		sticker_foreground_static_info = arg_5_1.sticker_foreground_static_info
 	}
 end
 

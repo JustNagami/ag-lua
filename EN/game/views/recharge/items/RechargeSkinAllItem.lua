@@ -35,11 +35,9 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 	local var_5_0
 
 	if arg_5_0.shopCfg.description then
-		arg_5_0.isDesc = true
 		arg_5_0.itemCfg = RechargeShopDescriptionCfg[arg_5_0.shopCfg.description]
 		var_5_0 = arg_5_0.itemCfg.param[1]
 	else
-		arg_5_0.isDesc = false
 		arg_5_0.itemCfg = ItemCfg[arg_5_0.shopCfg.give_id]
 	end
 
@@ -60,8 +58,6 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 		arg_5_0.canBuyDlc = arg_5_0.shopDlcCfg and ShopConst.SHOP_ID.DLC_SHOP == arg_5_0.shopDlcCfg.shop_id
 	end
 
-	arg_5_0.buyTime = ShopData.GetShop(arg_5_0.shopID)[arg_5_0.goodID] ~= nil and ShopData.GetShop(arg_5_0.shopID)[arg_5_0.goodID].buy_times or 0
-	arg_5_0.restNum = arg_5_0.shopCfg.limit_num - arg_5_0.buyTime
 	arg_5_0.index = arg_5_2
 
 	arg_5_0:Show(true)

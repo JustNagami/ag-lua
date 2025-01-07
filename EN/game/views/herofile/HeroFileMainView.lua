@@ -53,6 +53,8 @@ function var_0_0.InitUI(arg_4_0)
 		"Gift",
 		"Voice"
 	}
+	arg_4_0.formList_ = arg_4_0:GetHaveFormList()
+	arg_4_0.formState_ = false
 	arg_4_0.tipsLuaUIlist_ = LuaList.New(handler(arg_4_0, arg_4_0.IndexTipsItem), arg_4_0.tipsUIlist_, HeroFileMainTipsItem)
 	arg_4_0.subPageTabController_ = arg_4_0.tablistControllerEx_:GetController("tabSelect")
 	arg_4_0.favorabilityController_ = arg_4_0.FavorabilityControllerEx_:GetController("favorability")
@@ -79,6 +81,7 @@ function var_0_0.OnEnter(arg_9_0)
 		HOME_BAR
 	})
 
+	arg_9_0.formState_ = false
 	arg_9_0.curHeroID_ = arg_9_0.params_.heroID
 	arg_9_0.curRecordID_ = HeroTools.GetHeroOntologyID(arg_9_0.curHeroID_)
 	arg_9_0.curPageIndex_ = 0
@@ -88,6 +91,7 @@ function var_0_0.OnEnter(arg_9_0)
 	arg_9_0:RefreshCV()
 	arg_9_0:SwitchPage(arg_9_0.params_.pageID or 1)
 	arg_9_0:RefreshFavorabilityIcon()
+	HeroAction.QueryHeroNewData(arg_9_0.curHeroID_)
 	ArchiveAction.CheckHeroTrustUpLvRedPoint(arg_9_0.curHeroID_)
 	arg_9_0:RegistEventListener(HERO_DATA_MODIFY, handler(arg_9_0, arg_9_0.OnHeroModify))
 	manager.redPoint:bindUIandKey(arg_9_0.informationTrs_, string.format("%s_%s", RedPointConst.HERO_REALTION, arg_9_0.curHeroID_))
@@ -151,10 +155,17 @@ function var_0_0.SwitchPage(arg_13_0, arg_13_1)
 		end)
 	end
 
-	arg_13_0.subPages_[arg_13_1]:Show(arg_13_0.curRecordID_, arg_13_0.curHeroID_)
+	if arg_13_0.formState_ then
+		arg_13_0.subPages_[arg_13_1]:Show(arg_13_0.curRecordID_, arg_13_0.curHeroID_, true, arg_13_0:GetFormID(arg_13_0.curHeroID_))
+	else
+		arg_13_0.subPages_[arg_13_1]:Show(arg_13_0.curRecordID_, arg_13_0.curHeroID_)
+	end
 
 	arg_13_0.curPageIndex_ = arg_13_1
 	arg_13_0.params_.pageID = arg_13_1
+
+	arg_13_0:UpdateRoleSwitchTab()
+	arg_13_0:UpdateAvatarView()
 end
 
 function var_0_0.RefreshFavorabilityIcon(arg_15_0, arg_15_1)
@@ -209,6 +220,8 @@ function var_0_0.RefreshRoleTab(arg_16_0)
 
 			arg_16_0.roleTabs_[iter_16_3] = HeroFileRoleTabItem.New(var_16_0, function()
 				arg_16_0:OnClickRoleTab(iter_16_3)
+			end, function()
+				arg_16_0:OnClickSwitchRoleTab(iter_16_3)
 			end)
 		end
 
@@ -222,92 +235,191 @@ function var_0_0.RefreshRoleTab(arg_16_0)
 	end
 end
 
-function var_0_0.RefreshCV(arg_18_0)
-	local var_18_0 = SettingData:GetSoundSettingData().voice_language
-	local var_18_1 = VoiceLanguageCfg[var_18_0].affix
+function var_0_0.RefreshCV(arg_19_0)
+	local var_19_0 = SettingData:GetSoundSettingData().voice_language
+	local var_19_1 = VoiceLanguageCfg[var_19_0].affix
 
-	arg_18_0.cvText_.text = "CV " .. (GetI18NText(HeroRecordCfg[arg_18_0.curRecordID_]["cv_" .. var_18_1]) or "")
+	arg_19_0.cvText_.text = "CV " .. (GetI18NText(HeroRecordCfg[arg_19_0.curRecordID_]["cv_" .. var_19_1]) or "")
 end
 
-function var_0_0.OnClickRoleTab(arg_19_0, arg_19_1)
-	if arg_19_0.curPageIndex_ == arg_19_0.subPageIndex_.Voice and not HeroTools.GetHeroIsUnlock(arg_19_0.roleList_[arg_19_1]) then
+function var_0_0.OnClickRoleTab(arg_20_0, arg_20_1)
+	if arg_20_0.curPageIndex_ == arg_20_0.subPageIndex_.Voice and not HeroTools.GetHeroIsUnlock(arg_20_0.roleList_[arg_20_1]) then
 		ShowTips("ERROR_HERO_NOT_UNLOCK")
 
 		return
 	end
 
-	if arg_19_1 == arg_19_0.roleIndex_ then
+	if arg_20_1 == arg_20_0.roleIndex_ then
 		return
 	end
 
-	if arg_19_0.roleTabs_[arg_19_0.roleIndex_] then
-		arg_19_0.roleTabs_[arg_19_0.roleIndex_]:SetSelectState(false)
+	arg_20_0.formState_ = false
+
+	manager.redPoint:unbindUIandKey(arg_20_0.informationTrs_, string.format("%s_%s", RedPointConst.HERO_REALTION, arg_20_0.curHeroID_))
+	manager.redPoint:unbindUIandKey(arg_20_0.giftTrs_, string.format("%s_%s", RedPointConst.HERO_TRUST_UP_LEVEL, arg_20_0.curHeroID_))
+
+	if arg_20_0.roleTabs_[arg_20_0.roleIndex_] then
+		arg_20_0.roleTabs_[arg_20_0.roleIndex_]:SetSelectState(false)
 	end
 
-	arg_19_0.roleTabs_[arg_19_1]:SetSelectState(true)
+	arg_20_0.roleTabs_[arg_20_1]:SetSelectState(true)
 
-	arg_19_0.roleIndex_ = arg_19_1
-	arg_19_0.curHeroID_ = arg_19_0.roleList_[arg_19_1]
+	arg_20_0.roleIndex_ = arg_20_1
+	arg_20_0.curHeroID_ = arg_20_0.roleList_[arg_20_1]
 
-	arg_19_0.subPages_[arg_19_0.curPageIndex_]:Show(arg_19_0.curRecordID_, arg_19_0.curHeroID_)
-	arg_19_0:RefreshFavorabilityIcon()
-	arg_19_0:UpdateAvatarView()
-	ArchiveAction.CheckHeroTrustUpLvRedPoint(arg_19_0.curHeroID_)
-	manager.redPoint:bindUIandKey(arg_19_0.informationTrs_, string.format("%s_%s", RedPointConst.HERO_REALTION, arg_19_0.curHeroID_))
-	manager.redPoint:bindUIandKey(arg_19_0.giftTrs_, string.format("%s_%s", RedPointConst.HERO_TRUST_UP_LEVEL, arg_19_0.curHeroID_))
+	if arg_20_0.formState_ then
+		arg_20_0.subPages_[arg_20_0.curPageIndex_]:Show(arg_20_0.curRecordID_, arg_20_0.curHeroID_, true, arg_20_0:GetFormID(arg_20_0.curHeroID_))
+	else
+		arg_20_0.subPages_[arg_20_0.curPageIndex_]:Show(arg_20_0.curRecordID_, arg_20_0.curHeroID_)
+	end
+
+	arg_20_0:RefreshFavorabilityIcon()
+	arg_20_0:UpdateRoleSwitchTab()
+	arg_20_0:UpdateAvatarView()
+	ArchiveAction.CheckHeroTrustUpLvRedPoint(arg_20_0.curHeroID_)
+	manager.redPoint:bindUIandKey(arg_20_0.informationTrs_, string.format("%s_%s", RedPointConst.HERO_REALTION, arg_20_0.curHeroID_))
+	manager.redPoint:bindUIandKey(arg_20_0.giftTrs_, string.format("%s_%s", RedPointConst.HERO_TRUST_UP_LEVEL, arg_20_0.curHeroID_))
 	OperationRecorder.Record("hero", "hero_record_switch")
 end
 
-function var_0_0.UpdateAvatarView(arg_20_0)
-	local var_20_0 = HeroTools.HeroUsingSkinInfo(arg_20_0.curHeroID_).id
+function var_0_0.OnClickSwitchRoleTab(arg_21_0, arg_21_1)
+	if arg_21_1 ~= arg_21_0.roleIndex_ then
+		return
+	end
 
-	manager.heroRaiseTrack:SetModelState(var_20_0)
+	local var_21_0 = not arg_21_0.formState_
+
+	arg_21_0:ChangeFormState(arg_21_1, var_21_0)
 end
 
-function var_0_0.ShowFavorabilityTips(arg_21_0)
-	if ArchiveData:GetTrustLevel(arg_21_0.curHeroID_) > 0 then
-		arg_21_0.tipsLuaUIlist_:StartScroll(HeroConst.HERO_TRUST_LV_MAX)
-		SetActive(arg_21_0.FavorabilityTipsGo_, true)
+function var_0_0.ChangeFormState(arg_22_0, arg_22_1, arg_22_2)
+	arg_22_0.formState_ = arg_22_2
+
+	local var_22_0 = HeroTools.HeroUsingSkinInfo(arg_22_0.curHeroID_).id
+	local var_22_1 = arg_22_0:GetFormID(var_22_0)
+
+	if arg_22_0.formState_ then
+		arg_22_0.roleTabs_[arg_22_1]:ShowWithSkinID(var_22_1)
+	else
+		arg_22_0.roleTabs_[arg_22_1]:Show(arg_22_0.roleList_[arg_22_1])
+	end
+
+	arg_22_0:UpdateAvatarView()
+
+	if arg_22_0.curPageIndex_ == arg_22_0.subPageIndex_.Voice then
+		if arg_22_0.formState_ then
+			arg_22_0.subPages_[arg_22_0.curPageIndex_]:Show(arg_22_0.curRecordID_, arg_22_0.curHeroID_, true, arg_22_0:GetFormID(arg_22_0.curHeroID_))
+		else
+			arg_22_0.subPages_[arg_22_0.curPageIndex_]:Show(arg_22_0.curRecordID_, arg_22_0.curHeroID_)
+		end
 	end
 end
 
-function var_0_0.HideFavorabilityTips(arg_22_0)
-	SetActive(arg_22_0.FavorabilityTipsGo_, false)
-end
-
-function var_0_0.OnHeroTrustUpdate(arg_23_0)
-	if arg_23_0.subPages_[arg_23_0.subPageIndex_.Gift] then
-		arg_23_0.subPages_[arg_23_0.subPageIndex_.Gift]:OnHeroTrustUpdate()
-	end
-
-	arg_23_0:RefreshFavorabilityIcon()
-end
-
-function var_0_0.OnSendGift(arg_24_0, arg_24_1, arg_24_2)
-	if arg_24_0.subPages_[arg_24_0.subPageIndex_.Gift] then
-		arg_24_0.subPages_[arg_24_0.subPageIndex_.Gift]:OnSendGift()
-	end
-
-	arg_24_0:RefreshFavorabilityIcon()
-end
-
-function var_0_0.OnHeroModify(arg_25_0)
-	if arg_25_0.subPages_[arg_25_0.subPageIndex_.Gift] then
-		arg_25_0.subPages_[arg_25_0.subPageIndex_.Gift]:OnHeroModify()
+function var_0_0.UpdateRoleSwitchTab(arg_23_0)
+	for iter_23_0 = 1, #arg_23_0.roleList_ do
+		if iter_23_0 == arg_23_0.roleIndex_ and arg_23_0:CheckHaveForm(arg_23_0.roleList_[iter_23_0]) and arg_23_0.curPageIndex_ == arg_23_0.subPageIndex_.Voice then
+			arg_23_0.roleTabs_[iter_23_0]:SetCanForm(true)
+		else
+			arg_23_0:ChangeFormState(iter_23_0, false)
+			arg_23_0.roleTabs_[iter_23_0]:SetCanForm(false)
+		end
 	end
 end
 
-function var_0_0.Dispose(arg_26_0)
-	for iter_26_0, iter_26_1 in pairs(arg_26_0.subPages_) do
-		iter_26_1:Dispose()
+function var_0_0.UpdateAvatarView(arg_24_0)
+	local var_24_0 = HeroTools.HeroUsingSkinInfo(arg_24_0.curHeroID_).id
+
+	if arg_24_0.formState_ and arg_24_0.curPageIndex_ == arg_24_0.subPageIndex_.Voice then
+		local var_24_1 = arg_24_0:GetFormID(var_24_0)
+
+		if var_24_1 and var_24_1 ~= 0 then
+			var_24_0 = var_24_1
+		end
 	end
 
-	for iter_26_2, iter_26_3 in pairs(arg_26_0.roleTabs_) do
-		iter_26_3:Dispose()
+	manager.heroRaiseTrack:SetModelState(var_24_0)
+end
+
+function var_0_0.ShowFavorabilityTips(arg_25_0)
+	if ArchiveData:GetTrustLevel(arg_25_0.curHeroID_) > 0 then
+		arg_25_0.tipsLuaUIlist_:StartScroll(HeroConst.HERO_TRUST_LV_MAX)
+		SetActive(arg_25_0.FavorabilityTipsGo_, true)
+	end
+end
+
+function var_0_0.HideFavorabilityTips(arg_26_0)
+	SetActive(arg_26_0.FavorabilityTipsGo_, false)
+end
+
+function var_0_0.OnHeroTrustUpdate(arg_27_0)
+	if arg_27_0.subPages_[arg_27_0.subPageIndex_.Gift] then
+		arg_27_0.subPages_[arg_27_0.subPageIndex_.Gift]:OnHeroTrustUpdate()
 	end
 
-	arg_26_0.tipsLuaUIlist_:Dispose()
-	var_0_0.super.Dispose(arg_26_0)
+	arg_27_0:RefreshFavorabilityIcon()
+end
+
+function var_0_0.OnSendGift(arg_28_0, arg_28_1, arg_28_2)
+	if arg_28_0.subPages_[arg_28_0.subPageIndex_.Gift] then
+		arg_28_0.subPages_[arg_28_0.subPageIndex_.Gift]:OnSendGift()
+	end
+
+	arg_28_0:RefreshFavorabilityIcon()
+end
+
+function var_0_0.OnHeroModify(arg_29_0)
+	if arg_29_0.subPages_[arg_29_0.subPageIndex_.Gift] then
+		arg_29_0.subPages_[arg_29_0.subPageIndex_.Gift]:OnHeroModify()
+	end
+end
+
+function var_0_0.Dispose(arg_30_0)
+	for iter_30_0, iter_30_1 in pairs(arg_30_0.subPages_) do
+		iter_30_1:Dispose()
+	end
+
+	for iter_30_2, iter_30_3 in pairs(arg_30_0.roleTabs_) do
+		iter_30_3:Dispose()
+	end
+
+	arg_30_0.tipsLuaUIlist_:Dispose()
+	var_0_0.super.Dispose(arg_30_0)
+end
+
+function var_0_0.GetHaveFormList(arg_31_0)
+	local var_31_0 = {}
+	local var_31_1 = HeroVoiceDescCfg.get_id_list_by_form_id
+
+	for iter_31_0, iter_31_1 in pairs(var_31_1) do
+		if iter_31_0 and iter_31_0 ~= 0 and iter_31_0 ~= "" then
+			local var_31_2 = HeroVoiceDescCfg[iter_31_1[1]].chara_id
+
+			table.insert(var_31_0, var_31_2, iter_31_0)
+		end
+	end
+
+	return var_31_0
+end
+
+function var_0_0.CheckHaveForm(arg_32_0, arg_32_1)
+	if arg_32_0.formList_[arg_32_1] then
+		return true
+	end
+
+	return false
+end
+
+function var_0_0.GetFormID(arg_33_0, arg_33_1)
+	local var_33_0 = arg_33_0.formList_[arg_33_0.curHeroID_]
+
+	if arg_33_0.curHeroID_ ~= arg_33_1 then
+		local var_33_1 = string.sub(tostring(arg_33_1), -2)
+		local var_33_2 = tostring(var_33_0) .. var_33_1
+
+		var_33_0 = tonumber(var_33_2)
+	end
+
+	return var_33_0
 end
 
 return var_0_0

@@ -109,6 +109,10 @@ function var_0_0.RefreshUI(arg_10_0)
 			arg_10_0.rewardItems_[iter_10_2]:SetData(nil)
 		end
 	end
+
+	if arg_10_0.rewardItems_[1] and arg_10_0.rewardItems_[1].transform_.parent then
+		LayoutRebuilder.ForceRebuildLayoutImmediate(arg_10_0.rewardItems_[1].transform_.parent)
+	end
 end
 
 function var_0_0.RefreshProgress(arg_11_0)

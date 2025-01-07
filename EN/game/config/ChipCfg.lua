@@ -4278,6 +4278,950 @@
 		id = 128403,
 		story = ""
 	},
+	[101199] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1011,
+		suit_name = "4cf84f44125e37453210a897c3142f4c",
+		new_condition = 5101101,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "05120bde92c97bb4aeea54ff8af18dec",
+		title = "",
+		profile = "",
+		id = 101199,
+		story = ""
+	},
+	[101399] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1013,
+		suit_name = "16e63300011604ed3f225bff67e77ad8",
+		new_condition = 5101301,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "beae63ff711edb61ca28b7001ef53539",
+		title = "",
+		profile = "",
+		id = 101399,
+		story = ""
+	},
+	[101599] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1015,
+		suit_name = "154a507afc7e89abe5f1c74db57efbeb",
+		new_condition = 5101501,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "d73e0ca42d239a5d61682744d798393b",
+		title = "",
+		profile = "",
+		id = 101599,
+		story = ""
+	},
+	[101699] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1016,
+		suit_name = "46a9a67ee3e7ae6386a7a505c11bf8a6",
+		new_condition = 5101601,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "5f9220e83128b7c86a80383623e16e64",
+		title = "",
+		profile = "",
+		id = 101699,
+		story = ""
+	},
+	[101799] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1017,
+		suit_name = "5f5f501852c9d39fc677c40a69396f65",
+		new_condition = 5101701,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "1742d901747d8571f381697d6a8ce956",
+		title = "",
+		profile = "",
+		id = 101799,
+		story = ""
+	},
+	[101999] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1019,
+		suit_name = "612494f0be6b71427913ee6d94525de9",
+		new_condition = 5101901,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "d189cee042efc4b8d5ace6e59e2982bb",
+		title = "",
+		profile = "",
+		id = 101999,
+		story = ""
+	},
+	[102499] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1024,
+		suit_name = "72b7c5153d83deca78735db33c22892a",
+		new_condition = 5102401,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "47dc29227ab81ffcd7118746520f1db5",
+		title = "",
+		profile = "",
+		id = 102499,
+		story = ""
+	},
+	[102699] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1026,
+		suit_name = "325c3f3a5cbdcead4185531945079029",
+		new_condition = 5102601,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "c6e1b7c70006603d77d6331881584481",
+		title = "",
+		profile = "",
+		id = 102699,
+		story = ""
+	},
+	[102799] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1027,
+		suit_name = "423d8a6f558f394d758e27ba5d88273b",
+		new_condition = 5102701,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "da2aa9d3932cc649c37d8cec6f86e008",
+		title = "",
+		profile = "",
+		id = 102799,
+		story = ""
+	},
+	[102899] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1028,
+		suit_name = "e39f8665b1bcf9545bba4a1823122fb8",
+		new_condition = 5102801,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "fba533945925d8bfd2d612a8340a8324",
+		title = "",
+		profile = "",
+		id = 102899,
+		story = ""
+	},
+	[103299] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1032,
+		suit_name = "bbb5ba1a53753b44d20a550d0d718ee1",
+		new_condition = 5103201,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "bdd899f859bf45d15f29dda4ec90b1db",
+		title = "",
+		profile = "",
+		id = 103299,
+		story = ""
+	},
+	[103399] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1033,
+		suit_name = "2b02c7359ab3599eeeb01edb7f793f5b",
+		new_condition = 5103301,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "56a369c61a993c03052f4893d5692757",
+		title = "",
+		profile = "",
+		id = 103399,
+		story = ""
+	},
+	[103599] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1035,
+		suit_name = "56cb47985ea4f095722d8bd482aed083",
+		new_condition = 5103501,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "6d248e1626e2886e99c72eae48353f34",
+		title = "",
+		profile = "",
+		id = 103599,
+		story = ""
+	},
+	[103799] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1037,
+		suit_name = "873b73ef7f1980496b4b20a7a8ef513d",
+		new_condition = 5103701,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "33976ad4638fb3d2573ed3b6143f97ad",
+		title = "",
+		profile = "",
+		id = 103799,
+		story = ""
+	},
+	[103899] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1038,
+		suit_name = "c07d77d78f3354434567beec9a7cb08d",
+		new_condition = 5103801,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "4851f030742cd6ad7371be2f8a1a6d6f",
+		title = "",
+		profile = "",
+		id = 103899,
+		story = ""
+	},
+	[103999] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1039,
+		suit_name = "0e2973c2f69627cd00cb7916a525e025",
+		new_condition = 5103902,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "f0b36d2f050746ace8a2a88f73cfef27",
+		title = "",
+		profile = "",
+		id = 103999,
+		story = ""
+	},
+	[104199] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1041,
+		suit_name = "e93413824f76e100e24c9d23bb3d5d04",
+		new_condition = 5104102,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "68c46c87ff08be27cacd0f44da80e938",
+		title = "",
+		profile = "",
+		id = 104199,
+		story = ""
+	},
+	[104299] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1042,
+		suit_name = "40d992bb83621e1c084fe0bc3600b0c1",
+		new_condition = 5104201,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "5b0f82bcfb0abc446ede14e46b180a9f",
+		title = "",
+		profile = "",
+		id = 104299,
+		story = ""
+	},
+	[104899] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1048,
+		suit_name = "18e015d812c64438c6db95cb6fcb9ed8",
+		new_condition = 5104801,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "4c42bed55c7aa753f63886d84c95a372",
+		title = "",
+		profile = "",
+		id = 104899,
+		story = ""
+	},
+	[104999] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1049,
+		suit_name = "cfac35ff582eaa27fff74f57f3ae2a83",
+		new_condition = 5104901,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "65034525703e1ae51381876d54c39d6f",
+		title = "",
+		profile = "",
+		id = 104999,
+		story = ""
+	},
+	[105099] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1050,
+		suit_name = "795d1d765707ee1ce197773f9eacacfb",
+		new_condition = 5105001,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "646c4fbf6510212af822e663cff55f2d",
+		title = "",
+		profile = "",
+		id = 105099,
+		story = ""
+	},
+	[105299] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1052,
+		suit_name = "304beb063ac047cf0933f04729ec5c21",
+		new_condition = 5105201,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "14395e829826e411d656c978139fb76c",
+		title = "",
+		profile = "",
+		id = 105299,
+		story = ""
+	},
+	[105599] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1055,
+		suit_name = "2696c8b60e3ce2515884d7c6a746c0fa",
+		new_condition = 5105503,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "26c7b52b9518d4dff293d4572e0499ca",
+		title = "",
+		profile = "",
+		id = 105599,
+		story = ""
+	},
+	[105699] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1056,
+		suit_name = "6666025f006cf608507ecb8990b36535",
+		new_condition = 5105601,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "36f0fa468db8906e9892f33992087dcc",
+		title = "",
+		profile = "",
+		id = 105699,
+		story = ""
+	},
+	[105899] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1058,
+		suit_name = "194fb8a25f068e127f073c5a603a2ff0",
+		new_condition = 5105802,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "735a8a55b74eca41d35e90aa08358b1b",
+		title = "",
+		profile = "",
+		id = 105899,
+		story = ""
+	},
+	[105999] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1059,
+		suit_name = "a49a6b79f47f6f46da5f5666b2fb73a3",
+		new_condition = 5105901,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "52d9a978651b3b06110f87d985c6589a",
+		title = "",
+		profile = "",
+		id = 105999,
+		story = ""
+	},
+	[106099] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1060,
+		suit_name = "0d20dc911fee83a80f9ac30a4055ef64",
+		new_condition = 5106001,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "b1ad4706461221a3056e36b1a9c140dd",
+		title = "",
+		profile = "",
+		id = 106099,
+		story = ""
+	},
+	[106199] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1061,
+		suit_name = "4ab8bc43f0d2ae058a031b5117d3e24d",
+		new_condition = 5106101,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "c0e40ac1718cfc84b12295a85d7e1bda",
+		title = "",
+		profile = "",
+		id = 106199,
+		story = ""
+	},
+	[106699] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1066,
+		suit_name = "705f91833a1ed09bc5c15022308a9ff5",
+		new_condition = 5106603,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "e494cff52edb8f2124cc5561d480df85",
+		title = "",
+		profile = "",
+		id = 106699,
+		story = ""
+	},
+	[106799] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1067,
+		suit_name = "ba8d37f9e56b5f47023f4057fe485c6a",
+		new_condition = 5106701,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "ff287bf1ecbd0fdfd951f6eabe3a64d9",
+		title = "",
+		profile = "",
+		id = 106799,
+		story = ""
+	},
+	[106899] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1068,
+		suit_name = "b0b60c2ab18fd0bac360bb1ce14d0552",
+		new_condition = 5106801,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "a1e3d456f7a8276bb4a1a64ddbff870f",
+		title = "",
+		profile = "",
+		id = 106899,
+		story = ""
+	},
+	[107099] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1070,
+		suit_name = "c5371796493432dbf16149443df6ae39",
+		new_condition = 5107001,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "20814862e564da5ebd3747aa990c2686",
+		title = "",
+		profile = "",
+		id = 107099,
+		story = ""
+	},
+	[107199] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1071,
+		suit_name = "e508f5c4dcada113ef992f103df17b54",
+		new_condition = 5107101,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "8c29367306a686c7bf2beed4e3306548",
+		title = "",
+		profile = "",
+		id = 107199,
+		story = ""
+	},
+	[107299] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1072,
+		suit_name = "05fcbdb658b4320c4405aa4d4c7866fe",
+		new_condition = 5107201,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "75bfda822c33a941a8f0144b579c4188",
+		title = "",
+		profile = "",
+		id = 107299,
+		story = ""
+	},
+	[107499] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1074,
+		suit_name = "a8c23e9bf54f8d3a9828210b3c3a14c2",
+		new_condition = 5107401,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "a65e239441de0a7a3923f4f5d4c54e1a",
+		title = "",
+		profile = "",
+		id = 107499,
+		story = ""
+	},
+	[107599] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1075,
+		suit_name = "60bfe997f6b0545a7f8fee7fd8eb6649",
+		new_condition = 5107501,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "364bd678abffed03d5e41f8fb69d07ed",
+		title = "",
+		profile = "",
+		id = 107599,
+		story = ""
+	},
+	[107699] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1076,
+		suit_name = "8ecf5ad13dc59cd4f1d7351caf3cb4c2",
+		new_condition = 5107601,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "9809676ea5c203c00ba6d8e350eea2ff",
+		title = "",
+		profile = "",
+		id = 107699,
+		story = ""
+	},
+	[108099] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1080,
+		suit_name = "ead362e6b17470003ac8134e9eb98b55",
+		new_condition = 5108001,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "1a18800295a2bc92cd2b1d015a53b2ff",
+		title = "",
+		profile = "",
+		id = 108099,
+		story = ""
+	},
+	[108199] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1081,
+		suit_name = "93a409e1c400fa4c71409d35f4919a6f",
+		new_condition = 5108101,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "4c578169755ccfcc9b97095974fc5c66",
+		title = "",
+		profile = "",
+		id = 108199,
+		story = ""
+	},
+	[108499] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1084,
+		suit_name = "f775852d251930534864ea3a20e9dc68",
+		new_condition = 5108401,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "9aefc9233517f533947ae4e1e521c8a6",
+		title = "",
+		profile = "",
+		id = 108499,
+		story = ""
+	},
+	[109399] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1093,
+		suit_name = "7717383b760709a28afc629593cba32e",
+		new_condition = 5109302,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "d1f49cfdb419245d14453bf7059cd02e",
+		title = "",
+		profile = "",
+		id = 109399,
+		story = ""
+	},
+	[109499] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1094,
+		suit_name = "4df86c01238ff1049b6492584f1317f7",
+		new_condition = 5109402,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "43c3004ca6d527fa09e5b67801ee4391",
+		title = "",
+		profile = "",
+		id = 109499,
+		story = ""
+	},
+	[109599] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1095,
+		suit_name = "c5971aacbb45d9d31ca2bb6a2f223068",
+		new_condition = 5109501,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "375deb71499bc62c3cf6702caad79cdb",
+		title = "",
+		profile = "",
+		id = 109599,
+		story = ""
+	},
+	[109699] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1096,
+		suit_name = "9bb8e1d948a9a7046fb9084ab53dfaaf",
+		new_condition = 5109601,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "65494e5507ef9fbef484aba49c93a8fa",
+		title = "",
+		profile = "",
+		id = 109699,
+		story = ""
+	},
+	[109799] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1097,
+		suit_name = "84153b6b1db38bb87b488d7737d4bc6c",
+		new_condition = 5109701,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "3f0869bcb9462bda2f3377121edcf440",
+		title = "",
+		profile = "",
+		id = 109799,
+		story = ""
+	},
+	[109999] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1099,
+		suit_name = "fadd6d3535b4a1cc8d82e9e8e3beb49d",
+		new_condition = 5109902,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "2abc1f141e9ab9b946891641a5bfac75",
+		title = "",
+		profile = "",
+		id = 109999,
+		story = ""
+	},
+	[111199] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1111,
+		suit_name = "026dd98845a678417858bd7a4f44ff39",
+		new_condition = 5111101,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "f0c3efbf4f7140fac8f533768af00c2a",
+		title = "",
+		profile = "",
+		id = 111199,
+		story = ""
+	},
+	[111999] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1119,
+		suit_name = "e5f919fd33b2ac35f675de59781c6789",
+		new_condition = 5111901,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "d55f68d63c858958f1312889d9304d39",
+		title = "",
+		profile = "",
+		id = 111999,
+		story = ""
+	},
+	[112799] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1127,
+		suit_name = "f5c62b3ee08ca2288d99bc5043b58f00",
+		new_condition = 5112701,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "7ad60515aca104e9fc3c7e97dbf33b0d",
+		title = "",
+		profile = "",
+		id = 112799,
+		story = ""
+	},
+	[113299] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1132,
+		suit_name = "c0206bf908e5780257b03a97c90e0efc",
+		new_condition = 5113201,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "c27f2c9848e7c85b69a35ad1be10a1ee",
+		title = "",
+		profile = "",
+		id = 113299,
+		story = ""
+	},
+	[113899] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1138,
+		suit_name = "c503755afb0bdda35726b5234d4fbdbc",
+		new_condition = 5113804,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "9ed56afc8c2ba184798fd375a39a8a0a",
+		title = "",
+		profile = "",
+		id = 113899,
+		story = ""
+	},
+	[113999] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1139,
+		suit_name = "7ce08704c6f1aca8df2a6e6c57ddc5dd",
+		new_condition = 5113901,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "c87ce50666b2414eaf3e29099a3e2357",
+		title = "",
+		profile = "",
+		id = 113999,
+		story = ""
+	},
+	[114899] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1148,
+		suit_name = "76ac999a2ebb1b6598264a8e5a3e63a5",
+		new_condition = 5114801,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "f3d729ade9c05aa628d20a1b36911a46",
+		title = "",
+		profile = "",
+		id = 114899,
+		story = ""
+	},
+	[115099] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1150,
+		suit_name = "f5420cfb07a4655de6299db5780c2e7e",
+		new_condition = 5115001,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "1f7d330c10c04f9ec75a85fd652bd5ad",
+		title = "",
+		profile = "",
+		id = 115099,
+		story = ""
+	},
+	[115899] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1158,
+		suit_name = "61389aee108ea5f30ff306128529ea34",
+		new_condition = 5115801,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "3f9e1ddd73604914c590353f0a34dfea",
+		title = "",
+		profile = "",
+		id = 115899,
+		story = ""
+	},
+	[118499] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1184,
+		suit_name = "23bf8cdd2dbd44d3aab78ead7049baf1",
+		new_condition = 5118402,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "ebae5ab306041b83efa47b616f21f3aa",
+		title = "",
+		profile = "",
+		id = 118499,
+		story = ""
+	},
+	[119799] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1197,
+		suit_name = "0bd8807b788b639a8c7a31d284a98e59",
+		new_condition = 5119701,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "74dd17a5962ca63b9ea24bc748ecf651",
+		title = "",
+		profile = "",
+		id = 119799,
+		story = ""
+	},
+	[119999] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1199,
+		suit_name = "0d9b014d112b9e777ccd1f4817975165",
+		new_condition = 5119901,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "38852614bb5c562389ce7c1269c9c27d",
+		title = "",
+		profile = "",
+		id = 119999,
+		story = ""
+	},
+	[128499] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1284,
+		suit_name = "b200f826488a1844e5c549e47a53d986",
+		new_condition = 5128401,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "0793091043c5d5d3ce7e6a404a49668d",
+		title = "",
+		profile = "",
+		id = 128499,
+		story = ""
+	},
 	get_id_list_by_type_id = {
 		[3] = {
 			101101,
@@ -4519,7 +5463,66 @@
 			119907,
 			128401,
 			128402,
-			128403
+			128403,
+			101199,
+			101399,
+			101599,
+			101699,
+			101799,
+			101999,
+			102499,
+			102699,
+			102799,
+			102899,
+			103299,
+			103399,
+			103599,
+			103799,
+			103899,
+			103999,
+			104199,
+			104299,
+			104899,
+			104999,
+			105099,
+			105299,
+			105599,
+			105699,
+			105899,
+			105999,
+			106099,
+			106199,
+			106699,
+			106799,
+			106899,
+			107099,
+			107199,
+			107299,
+			107499,
+			107599,
+			107699,
+			108099,
+			108199,
+			108499,
+			109399,
+			109499,
+			109599,
+			109699,
+			109799,
+			109999,
+			111199,
+			111999,
+			112799,
+			113299,
+			113899,
+			113999,
+			114899,
+			115099,
+			115899,
+			118499,
+			119799,
+			119999,
+			128499
 		},
 		[2] = {
 			101,
@@ -4549,7 +5552,8 @@
 		[1284] = {
 			128401,
 			128402,
-			128403
+			128403,
+			128499
 		},
 		[1199] = {
 			119901,
@@ -4558,41 +5562,48 @@
 			119904,
 			119905,
 			119906,
-			119907
+			119907,
+			119999
 		},
 		[1197] = {
 			119701,
 			119702,
-			119703
+			119703,
+			119799
 		},
 		[1184] = {
 			118401,
 			118402,
 			118403,
 			118404,
-			118405
+			118405,
+			118499
 		},
 		[1158] = {
 			115801,
 			115802,
-			115803
+			115803,
+			115899
 		},
 		[1150] = {
 			115001,
 			115002,
-			115003
+			115003,
+			115099
 		},
 		[1148] = {
 			114801,
 			114802,
-			114803
+			114803,
+			114899
 		},
 		[1139] = {
 			113901,
 			113902,
 			113903,
 			113904,
-			113905
+			113905,
+			113999
 		},
 		[1138] = {
 			113801,
@@ -4600,7 +5611,8 @@
 			113803,
 			113804,
 			113805,
-			113806
+			113806,
+			113899
 		},
 		[1132] = {
 			113201,
@@ -4608,51 +5620,60 @@
 			113203,
 			113204,
 			113205,
-			113206
+			113206,
+			113299
 		},
 		[1127] = {
 			112701,
 			112702,
-			112703
+			112703,
+			112799
 		},
 		[1119] = {
 			111901,
 			111902,
-			111903
+			111903,
+			111999
 		},
 		[1111] = {
 			111101,
 			111102,
-			111103
+			111103,
+			111199
 		},
 		[1099] = {
 			109901,
 			109902,
 			109903,
 			109904,
-			109905
+			109905,
+			109999
 		},
 		[1097] = {
 			109701,
 			109702,
-			109703
+			109703,
+			109799
 		},
 		[1096] = {
 			109601,
 			109602,
-			109603
+			109603,
+			109699
 		},
 		[1095] = {
 			109501,
 			109502,
-			109503
+			109503,
+			109599
 		},
 		[1094] = {
 			109401,
 			109402,
 			109403,
 			109404,
-			109405
+			109405,
+			109499
 		},
 		[1093] = {
 			109301,
@@ -4664,24 +5685,28 @@
 			109307,
 			109308,
 			109309,
-			109310
+			109310,
+			109399
 		},
 		[1084] = {
 			108401,
 			108402,
-			108403
+			108403,
+			108499
 		},
 		[1081] = {
 			108101,
 			108102,
 			108103,
-			108104
+			108104,
+			108199
 		},
 		[1080] = {
 			108001,
 			108002,
 			108003,
-			108004
+			108004,
+			108099
 		},
 		[1076] = {
 			107601,
@@ -4691,45 +5716,53 @@
 			107605,
 			107606,
 			107607,
-			107608
+			107608,
+			107699
 		},
 		[1075] = {
 			107501,
 			107502,
 			107503,
 			107504,
-			107505
+			107505,
+			107599
 		},
 		[1074] = {
 			107401,
 			107402,
-			107403
+			107403,
+			107499
 		},
 		[1072] = {
 			107201,
 			107202,
-			107203
+			107203,
+			107299
 		},
 		[1071] = {
 			107101,
 			107102,
-			107103
+			107103,
+			107199
 		},
 		[1070] = {
 			107001,
 			107002,
-			107003
+			107003,
+			107099
 		},
 		[1068] = {
 			106801,
 			106802,
 			106803,
-			106804
+			106804,
+			106899
 		},
 		[1067] = {
 			106701,
 			106702,
-			106703
+			106703,
+			106799
 		},
 		[1066] = {
 			106601,
@@ -4738,146 +5771,172 @@
 			106604,
 			106605,
 			106606,
-			106607
+			106607,
+			106699
 		},
 		[1061] = {
 			106101,
 			106102,
-			106103
+			106103,
+			106199
 		},
 		[1060] = {
 			106001,
 			106002,
-			106003
+			106003,
+			106099
 		},
 		[1059] = {
 			105901,
 			105902,
-			105903
+			105903,
+			105999
 		},
 		[1058] = {
 			105801,
 			105802,
 			105803,
-			105804
+			105804,
+			105899
 		},
 		[1056] = {
 			105601,
 			105602,
-			105603
+			105603,
+			105699
 		},
 		[1055] = {
 			105501,
 			105502,
 			105503,
 			105504,
-			105505
+			105505,
+			105599
 		},
 		[1052] = {
 			105201,
 			105202,
 			105203,
-			105204
+			105204,
+			105299
 		},
 		[1050] = {
 			105001,
 			105002,
-			105003
+			105003,
+			105099
 		},
 		[1049] = {
 			104901,
 			104902,
-			104903
+			104903,
+			104999
 		},
 		[1048] = {
 			104801,
 			104802,
-			104803
+			104803,
+			104899
 		},
 		[1042] = {
 			104201,
 			104202,
 			104203,
-			104204
+			104204,
+			104299
 		},
 		[1041] = {
 			104101,
 			104102,
 			104103,
 			104104,
-			104105
+			104105,
+			104199
 		},
 		[1039] = {
 			103901,
 			103902,
 			103903,
 			103904,
-			103905
+			103905,
+			103999
 		},
 		[1038] = {
 			103801,
 			103802,
-			103803
+			103803,
+			103899
 		},
 		[1037] = {
 			103701,
 			103702,
-			103703
+			103703,
+			103799
 		},
 		[1035] = {
 			103501,
 			103502,
-			103503
+			103503,
+			103599
 		},
 		[1033] = {
 			103301,
 			103302,
-			103303
+			103303,
+			103399
 		},
 		[1032] = {
 			103201,
 			103202,
 			103203,
-			103204
+			103204,
+			103299
 		},
 		[1028] = {
 			102801,
 			102802,
 			102803,
 			102804,
-			102805
+			102805,
+			102899
 		},
 		[1027] = {
 			102701,
 			102702,
 			102703,
-			102704
+			102704,
+			102799
 		},
 		[1026] = {
 			102601,
 			102602,
-			102603
+			102603,
+			102699
 		},
 		[1024] = {
 			102401,
 			102402,
-			102403
+			102403,
+			102499
 		},
 		[1019] = {
 			101901,
 			101902,
 			101903,
-			101904
+			101904,
+			101999
 		},
 		[1017] = {
 			101701,
 			101702,
-			101703
+			101703,
+			101799
 		},
 		[1016] = {
 			101601,
 			101602,
-			101603
+			101603,
+			101699
 		},
 		[1015] = {
 			101501,
@@ -4885,14 +5944,16 @@
 			101503,
 			101504,
 			101505,
-			101506
+			101506,
+			101599
 		},
 		[1013] = {
 			101301,
 			101302,
 			101303,
 			101304,
-			101305
+			101305,
+			101399
 		},
 		[1011] = {
 			101101,
@@ -4902,7 +5963,8 @@
 			101105,
 			101106,
 			101107,
-			101108
+			101108,
+			101199
 		},
 		[0] = {
 			1,
@@ -5185,6 +6247,65 @@
 		119907,
 		128401,
 		128402,
-		128403
+		128403,
+		101199,
+		101399,
+		101599,
+		101699,
+		101799,
+		101999,
+		102499,
+		102699,
+		102799,
+		102899,
+		103299,
+		103399,
+		103599,
+		103799,
+		103899,
+		103999,
+		104199,
+		104299,
+		104899,
+		104999,
+		105099,
+		105299,
+		105599,
+		105699,
+		105899,
+		105999,
+		106099,
+		106199,
+		106699,
+		106799,
+		106899,
+		107099,
+		107199,
+		107299,
+		107499,
+		107599,
+		107699,
+		108099,
+		108199,
+		108499,
+		109399,
+		109499,
+		109599,
+		109699,
+		109799,
+		109999,
+		111199,
+		111999,
+		112799,
+		113299,
+		113899,
+		113999,
+		114899,
+		115099,
+		115899,
+		118499,
+		119799,
+		119999,
+		128499
 	}
 }

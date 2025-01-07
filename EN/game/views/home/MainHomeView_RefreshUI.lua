@@ -120,65 +120,63 @@ function var_0_0.RefreshHide(arg_8_0)
 	else
 		arg_8_0:InitBar()
 	end
+
+	arg_8_0:RefreshTalkBubbleHide()
 end
 
-function var_0_0.RefreshReceiveMessage(arg_9_0)
-	arg_9_0:ClearMsgTimer()
-	arg_9_0:RefreshWorldChat()
+function var_0_0.RefreshTalkBubbleHide(arg_9_0)
+	if arg_9_0.isHide_ and SettingData:GetHideMainVoiceSubtitle() then
+		SetActive(arg_9_0.talkBubbleGo_, false)
+	elseif arg_9_0.talking_ then
+		SetActive(arg_9_0.talkBubbleGo_, true)
+	end
+end
 
-	arg_9_0.msgTimer_ = Timer.New(function()
-		arg_9_0:RefreshWorldChat()
+function var_0_0.RefreshReceiveMessage(arg_10_0)
+	arg_10_0:ClearMsgTimer()
+	arg_10_0:RefreshWorldChat()
+
+	arg_10_0.msgTimer_ = Timer.New(function()
+		arg_10_0:RefreshWorldChat()
 	end, 2, -1)
 
-	arg_9_0.msgTimer_:Start()
+	arg_10_0.msgTimer_:Start()
 end
 
-function var_0_0.RefreshWorldChat(arg_11_0)
-	local var_11_0 = ChatData:GetWorldChatData()
-	local var_11_1 = var_11_0[#var_11_0]
+function var_0_0.RefreshWorldChat(arg_12_0)
+	local var_12_0 = ChatData:GetWorldChatData()
+	local var_12_1 = var_12_0[#var_12_0]
 
-	if var_11_1 then
-		local var_11_2 = ""
-		local var_11_3 = ""
+	if var_12_1 then
+		local var_12_2 = ""
+		local var_12_3 = ""
 
-		if var_11_1.contentType == ChatConst.CHAT_CONTENT_TYPE.TEXT or var_11_1.contentType == ChatConst.CHAT_CONTENT_TYPE.STICKER then
-			if var_11_1.id == USER_ID then
-				var_11_2 = PlayerData:GetPlayerInfo().nick or ""
+		if var_12_1.contentType == ChatConst.CHAT_CONTENT_TYPE.TEXT or var_12_1.contentType == ChatConst.CHAT_CONTENT_TYPE.STICKER then
+			if var_12_1.id == USER_ID then
+				var_12_2 = PlayerData:GetPlayerInfo().nick or ""
 			else
-				var_11_2 = var_11_1.nick or ""
+				var_12_2 = var_12_1.nick or ""
 			end
 
-			if var_11_1.contentType == ChatConst.CHAT_CONTENT_TYPE.TEXT then
-				var_11_3 = var_11_1.content or ""
+			if var_12_1.contentType == ChatConst.CHAT_CONTENT_TYPE.TEXT then
+				var_12_3 = var_12_1.content or ""
 			else
-				var_11_3 = string.format("[%s]", GetI18NText(ChatStickerCfg[tonumber(var_11_1.content)].name))
+				var_12_3 = string.format("[%s]", GetI18NText(ChatStickerCfg[tonumber(var_12_1.content)].name))
 			end
 		end
 
-		local var_11_4 = ""
+		local var_12_4 = ""
 
-		if var_11_2 ~= "" then
-			var_11_4 = var_11_2 .. ":" .. var_11_3
+		if var_12_2 ~= "" then
+			var_12_4 = var_12_2 .. ":" .. var_12_3
 		end
 
-		arg_11_0.textLimit_:SetText(var_11_4)
+		arg_12_0.textLimit_:SetText(var_12_4)
 
 		return
 	end
 
-	arg_11_0.textLimit_:SetText("")
-end
-
-function var_0_0.RefreshSkinDrawBtn(arg_12_0)
-	local var_12_0, var_12_1 = ActivitySkinDrawData:GetNotReadStoryID()
-	local var_12_2 = ActivityData:GetActivityData(var_12_0)
-
-	if var_12_0 and var_12_2:IsActivitying() then
-		SetActive(arg_12_0.skinDrawBtn_.gameObject, true)
-		arg_12_0.skinDrawCon_:SetSelectedState(var_12_1 and var_12_1.isRead == 0 and "story" or "draw")
-	else
-		SetActive(arg_12_0.skinDrawBtn_.gameObject, false)
-	end
+	arg_12_0.textLimit_:SetText("")
 end
 
 function var_0_0.RefreshChat(arg_13_0)
@@ -232,8 +230,8 @@ function var_0_0.CheckActivite(arg_18_0)
 		arg_18_0:CheckHeroGiftActivite()
 		arg_18_0:CheckPreviewTaskActivity()
 		arg_18_0:CheckRecallActivity()
-		arg_18_0:RefreshSkinDrawBtn()
 		AdminCatExploreData:UpdateRegionRedPoint()
+		arg_18_0:CheckTransferCodeActive()
 	end
 
 	var_18_0()
@@ -267,8 +265,17 @@ function var_0_0.CheckPreviewTaskActivity(arg_21_0)
 
 	SetActive(arg_21_0.btnPreviewTaskGo_, var_21_1)
 
-	local var_21_2 = AdvanceTestData:GetMainActivityID()
-	local var_21_3 = ActivityData:GetActivityIsOpen(var_21_2)
+	local var_21_2 = AdvanceTestData:GetIsActivityOpen()
 
-	SetActive(arg_21_0.advanceTestBtn_, var_21_3)
+	SetActive(arg_21_0.advanceTestBtn_, var_21_2)
+
+	local var_21_3 = ActivityData:GetActivityIsOpen(ActivityConst.ACTIVITY_ADVANCE_MONSTER_TEST)
+
+	SetActive(arg_21_0.advanceMonsterTestBtn_, var_21_3)
+end
+
+function var_0_0.CheckTransferCodeActive(arg_22_0)
+	if SDKTools.GetIsOverSea() and arg_22_0.btn_transfer_code_ then
+		SetActive(arg_22_0.btn_transfer_code_.gameObject, not OperationData:IsOperationOpen(OperationConst.TRANSFER_CODE))
+	end
 end

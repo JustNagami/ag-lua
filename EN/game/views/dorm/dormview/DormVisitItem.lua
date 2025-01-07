@@ -9,7 +9,12 @@ end
 
 function var_0_0.Init(arg_2_0)
 	arg_2_0:InitUI()
+
+	arg_2_0.commonPortrait_ = CommonHeadPortrait.New(arg_2_0.headItem_)
+
 	arg_2_0:AddUIListener()
+
+	arg_2_0.praiseController = arg_2_0.controller_:GetController("praise")
 end
 
 function var_0_0.InitUI(arg_3_0)
@@ -22,7 +27,7 @@ function var_0_0.AddUIListener(arg_4_0)
 			arg_4_0.visitFunc(arg_4_0.userID)
 		end
 	end)
-	arg_4_0:AddBtnListener(arg_4_0.headBtn_, nil, function()
+	arg_4_0.commonPortrait_:RegisteClickCallback(function()
 		if BackHomeDataManager:GetCurSystem() == DormEnum.DormSystemType.Main then
 			ForeignInfoAction:TryToCheckForeignDetailInfo(arg_4_0.userID)
 		else
@@ -49,29 +54,38 @@ function var_0_0.RefreshUI(arg_8_0, arg_8_1, arg_8_2)
 		return
 	end
 
-	arg_8_0.headiconImg_.sprite = ItemTools.getItemSprite(var_8_0.icon)
+	arg_8_0.bg_.spriteSync = "TextureConfig/Friends/" .. var_8_0.info_background .. "_s"
 
-	arg_8_0.headiconImg_:SetNativeSize()
+	arg_8_0.commonPortrait_:RenderHead(var_8_0.icon)
+	arg_8_0.commonPortrait_:RenderFrame(var_8_0.iconFrame)
 
 	arg_8_0.nickName.text = var_8_0.nick
 	arg_8_0.likeNum.text = var_8_0.likeNum
-	arg_8_0.frame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_8_0.iconFrame)
 
 	local var_8_1 = var_8_0.architecture_id
 
 	if BackHomeCfg[var_8_1].type == DormConst.BACKHOME_TYPE.PublicDorm then
 		arg_8_0.dormName.text = GetTips("DORM_LOBBY_NAME")
 	else
-		local var_8_2 = HeroRecordCfg.get_id_list_by_hero_id[var_8_0.heroIDList[1]][1]
+		local var_8_2 = BackHomeHeroSkinCfg[var_8_0.heroIDList[1]].hero_id
+		local var_8_3 = HeroRecordCfg.get_id_list_by_hero_id[var_8_2][1]
 
-		arg_8_0.dormName.text = string.format(GetTips("DORM_HERO_ROOM_NAME"), GetI18NText(HeroRecordCfg[var_8_2].name))
+		arg_8_0.dormName.text = GetTipsF("DORM_HERO_ROOM_NAME", GetI18NText(HeroRecordCfg[var_8_3].name))
 	end
 
-	arg_8_0.levelNum.text = var_8_0.level
-	arg_8_0.furTotalNum.text = math.max(var_8_0.furniture_num, 0)
+	arg_8_0.chatText_.text = ""
+	arg_8_0.viewNum.text = math.max(var_8_0.furniture_num, 0)
+	arg_8_0.furnitureNum.text = var_8_0.sign
+
+	if var_8_0.todayLikeNum then
+		arg_8_0.praiseController:SetSelectedState("on")
+	else
+		arg_8_0.praiseController:SetSelectedState("off")
+	end
 end
 
 function var_0_0.Dispose(arg_9_0)
+	arg_9_0.commonPortrait_:Dispose()
 	var_0_0.super.Dispose(arg_9_0)
 end
 

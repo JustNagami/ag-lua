@@ -33,10 +33,10 @@
 		{
 			start = 26.96,
 			content = "别碰它！",
-			endTime = 28.48
+			endTime = 28.46
 		},
 		{
-			start = 28.4,
+			start = 28.7,
 			content = "你做了什么？！！",
 			endTime = 30
 		},

@@ -16,6 +16,7 @@ function var_0_0.Init(arg_2_0)
 	arg_2_0.addController_ = arg_2_0.controller_:GetController("add")
 	arg_2_0.useController_ = arg_2_0.controller_:GetController("use")
 	arg_2_0.effectController_ = arg_2_0.controller_:GetController("effect")
+	arg_2_0.textNameController_ = arg_2_0.controller_:GetController("textName")
 end
 
 function var_0_0.AddUIListener(arg_3_0)
@@ -77,6 +78,10 @@ function var_0_0.RefreshUI(arg_11_0)
 			arg_11_0.affixNameText_.text = GetI18NText(var_11_1.name)
 		end
 
+		if arg_11_0.textNameController_ then
+			arg_11_0.textNameController_:SetSelectedState("true")
+		end
+
 		local var_11_2 = ActivityHeroEnhanceTools.GetCfgByTalentId(arg_11_0.activityId_, var_11_0)
 		local var_11_3 = ActivityHeroEnhanceTools.GetCfgTalentListByStage(var_11_2, var_11_1.stage)
 		local var_11_4 = table.indexof(var_11_3, var_11_0)
@@ -88,6 +93,10 @@ function var_0_0.RefreshUI(arg_11_0)
 	else
 		if arg_11_0.affixNameText_ then
 			arg_11_0.affixNameText_.text = ""
+		end
+
+		if arg_11_0.textNameController_ then
+			arg_11_0.textNameController_:SetSelectedState("false")
 		end
 
 		SetActive(arg_11_0.affixLevelGo_, false)

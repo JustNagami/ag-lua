@@ -3,6 +3,7 @@
 function var_0_0.OnCtor(arg_1_0, arg_1_1)
 	arg_1_0.gameObject_ = arg_1_1
 	arg_1_0.transform_ = arg_1_1.transform
+	arg_1_0.rewardItems_ = {}
 
 	arg_1_0:Init()
 end
@@ -15,12 +16,15 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
-	arg_3_0.list = LuaList.New(handler(arg_3_0, arg_3_0.IndexItem), arg_3_0.m_list, CommonItem)
-	arg_3_0.buttonController = ControllerUtil.GetController(arg_3_0.m_btnController, "stateBtn")
+	for iter_3_0 = 1, 2 do
+		arg_3_0.rewardItems_[iter_3_0] = CommonItemView.New(arg_3_0["awardItem" .. iter_3_0 + 1 .. "Obj_"])
+	end
+
+	arg_3_0.stateController_ = arg_3_0.allBtnController_:GetController("all")
 end
 
 function var_0_0.AddUIListener(arg_4_0)
-	arg_4_0:AddBtnListener(arg_4_0.m_receiveBtn, nil, function()
+	arg_4_0:AddBtnListener(arg_4_0.receiveBtn_, nil, function()
 		TaskAction:SubmitTask(arg_4_0.taskID_)
 	end)
 end
@@ -35,9 +39,26 @@ function var_0_0.SetData(arg_6_0, arg_6_1)
 end
 
 function var_0_0.RefreshUI(arg_7_0)
-	arg_7_0.rewards = AssignmentCfg[arg_7_0.taskID_].reward or {}
+	local var_7_0 = AssignmentCfg[arg_7_0.taskID_]
 
-	arg_7_0.list:StartScroll(#arg_7_0.rewards)
+	arg_7_0.titleText_.text = GetI18NText(var_7_0.desc)
+
+	local var_7_1 = var_7_0.reward or {}
+
+	for iter_7_0 = 1, 2 do
+		local var_7_2 = var_7_1[iter_7_0]
+
+		if var_7_2 then
+			local var_7_3 = formatReward(var_7_2)
+			local var_7_4 = false
+			local var_7_5 = rewardToItemTemplate(var_7_3)
+
+			var_7_5.completedFlag = arg_7_0.taskComplete_
+			var_7_5.clickFun = handler(arg_7_0, arg_7_0.OnClickCommonItem)
+
+			arg_7_0.rewardItems_[iter_7_0]:SetData(var_7_5)
+		end
+	end
 end
 
 function var_0_0.RefreshProgress(arg_8_0)
@@ -48,38 +69,38 @@ function var_0_0.RefreshProgress(arg_8_0)
 		var_8_1 = var_8_0.need
 	end
 
-	local var_8_2 = AssignmentCfg[arg_8_0.taskID_]
+	arg_8_0.progressBar_.value = var_8_1 / var_8_0.need
+	arg_8_0.progressText_.text = string.format("%s/%s", var_8_1, var_8_0.need)
 
-	arg_8_0.m_pointLab.text = GetI18NText(var_8_2.desc) .. string.format("(%s/%s)", var_8_1, var_8_2.need)
-
-	local var_8_3 = arg_8_0.taskProgress >= var_8_2.need
+	local var_8_2 = arg_8_0.taskProgress >= var_8_0.need
 
 	if arg_8_0.taskComplete_ then
-		arg_8_0.buttonController:SetSelectedIndex("2")
-	elseif var_8_3 then
-		arg_8_0.buttonController:SetSelectedIndex("0")
+		arg_8_0.stateController_:SetSelectedState("complete")
+	elseif var_8_2 then
+		arg_8_0.stateController_:SetSelectedState("receive")
 	else
-		arg_8_0.buttonController:SetSelectedIndex("1")
+		arg_8_0.stateController_:SetSelectedState("lock")
 	end
 end
 
-function var_0_0.IndexItem(arg_9_0, arg_9_1, arg_9_2)
-	local var_9_0 = arg_9_0.rewards[arg_9_1]
-
-	arg_9_2:RefreshData(formatReward(var_9_0))
-	arg_9_2:RegistCallBack(function()
-		ShowPopItem(POP_ITEM, var_9_0)
-	end)
+function var_0_0.OnClickCommonItem(arg_9_0, arg_9_1)
+	ShowPopItem(POP_ITEM, {
+		arg_9_1.id,
+		arg_9_1.number
+	})
+	OperationRecorder.Record("task", "task_item")
 end
 
-function var_0_0.Dispose(arg_11_0)
-	if arg_11_0.list then
-		arg_11_0.list:Dispose()
-
-		arg_11_0.list = nil
+function var_0_0.Dispose(arg_10_0)
+	for iter_10_0, iter_10_1 in pairs(arg_10_0.rewardItems_) do
+		if iter_10_1 then
+			iter_10_1:Dispose()
+		end
 	end
 
-	var_0_0.super.Dispose(arg_11_0)
+	arg_10_0.rewardItems_ = nil
+
+	var_0_0.super.Dispose(arg_10_0)
 end
 
 return var_0_0

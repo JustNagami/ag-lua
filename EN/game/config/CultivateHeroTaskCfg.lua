@@ -14447,7 +14447,3587 @@
 			}
 		}
 	},
+	[28189101] = {
+		group_id = 2801,
+		type = 1,
+		id = 28189101,
+		hero = 1022,
+		condition = 40,
+		desc = "7359806f1c5b1d3536c5c8011d2a1439",
+		reward = {
+			{
+				54069,
+				5
+			}
+		}
+	},
+	[28189102] = {
+		group_id = 2801,
+		type = 1,
+		id = 28189102,
+		hero = 1022,
+		condition = 45,
+		desc = "1b7477f04377cc80a494b41be6247f30",
+		reward = {
+			{
+				54069,
+				5
+			}
+		}
+	},
+	[28189103] = {
+		group_id = 2801,
+		type = 1,
+		id = 28189103,
+		hero = 1022,
+		condition = 50,
+		desc = "01b16f3d4b230c0cbcc523a0833d4b55",
+		reward = {
+			{
+				54069,
+				5
+			}
+		}
+	},
+	[28189104] = {
+		group_id = 2801,
+		type = 1,
+		id = 28189104,
+		hero = 1022,
+		condition = 55,
+		desc = "a36939564e59dc025686c7dc7a6ca7ea",
+		reward = {
+			{
+				54069,
+				5
+			}
+		}
+	},
+	[28189105] = {
+		group_id = 2801,
+		type = 1,
+		id = 28189105,
+		hero = 1022,
+		condition = 60,
+		desc = "10891d5d3f4d304d9942e3662b43e570",
+		reward = {
+			{
+				54069,
+				5
+			}
+		}
+	},
+	[28189106] = {
+		group_id = 2801,
+		type = 1,
+		id = 28189106,
+		hero = 1022,
+		condition = 70,
+		desc = "545eb3cd850b0f2bee4e0a99edb5a66e",
+		reward = {
+			{
+				54069,
+				5
+			}
+		}
+	},
+	[28189107] = {
+		group_id = 2801,
+		type = 2,
+		id = 28189107,
+		hero = 1022,
+		condition = 10,
+		desc = "6f0dacac1da8bd4de0c0a8f608d30917",
+		reward = {
+			{
+				54069,
+				5
+			}
+		}
+	},
+	[28189108] = {
+		group_id = 2801,
+		type = 2,
+		id = 28189108,
+		hero = 1022,
+		condition = 20,
+		desc = "d46e8644b3bef4edb2290e5112308777",
+		reward = {
+			{
+				54069,
+				5
+			}
+		}
+	},
+	[28189109] = {
+		group_id = 2801,
+		type = 2,
+		id = 28189109,
+		hero = 1022,
+		condition = 30,
+		desc = "72df457a4feed7273463d40bf3d54e43",
+		reward = {
+			{
+				54069,
+				5
+			}
+		}
+	},
+	[28189110] = {
+		group_id = 2801,
+		type = 2,
+		id = 28189110,
+		hero = 1022,
+		condition = 40,
+		desc = "ed515bf189536ab4ef4f454cb3cec96c",
+		reward = {
+			{
+				54069,
+				5
+			}
+		}
+	},
+	[28189111] = {
+		group_id = 2801,
+		type = 2,
+		id = 28189111,
+		hero = 1022,
+		condition = 50,
+		desc = "8794aeb34da3e55f1c2c85688ddd8f6d",
+		reward = {
+			{
+				54069,
+				5
+			}
+		}
+	},
+	[28189112] = {
+		group_id = 2801,
+		type = 3,
+		id = 28189112,
+		hero = 1022,
+		condition = 50,
+		desc = "0461ae995d33c0da6984bc1d48b89de7",
+		reward = {
+			{
+				54069,
+				5
+			}
+		}
+	},
+	[28189113] = {
+		group_id = 2801,
+		type = 3,
+		id = 28189113,
+		hero = 1022,
+		condition = 80,
+		desc = "5040270395499ee1e6c424987bc93ce3",
+		reward = {
+			{
+				54069,
+				5
+			}
+		}
+	},
+	[28189114] = {
+		group_id = 2801,
+		type = 3,
+		id = 28189114,
+		hero = 1022,
+		condition = 100,
+		desc = "792b2cdb62a3bd16851f22ab1970dafa",
+		reward = {
+			{
+				54069,
+				5
+			}
+		}
+	},
+	[28189115] = {
+		group_id = 2801,
+		type = 3,
+		id = 28189115,
+		hero = 1022,
+		condition = 120,
+		desc = "95e40738e5c5f01f18362e03a01c0e70",
+		reward = {
+			{
+				54069,
+				5
+			}
+		}
+	},
+	[28189116] = {
+		group_id = 2801,
+		type = 3,
+		id = 28189116,
+		hero = 1022,
+		condition = 150,
+		desc = "090342a11777fcf9ae81a6069eccd05f",
+		reward = {
+			{
+				54069,
+				5
+			}
+		}
+	},
+	[28189117] = {
+		group_id = 2802,
+		type = 1,
+		id = 28189117,
+		hero = 1049,
+		condition = 40,
+		desc = "7e74369bbc4d03e7b03498f18f907ca2",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189118] = {
+		group_id = 2802,
+		type = 1,
+		id = 28189118,
+		hero = 1049,
+		condition = 50,
+		desc = "9748d069ce946d70fc09ddd809918e55",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189119] = {
+		group_id = 2802,
+		type = 1,
+		id = 28189119,
+		hero = 1049,
+		condition = 60,
+		desc = "9ad4e843712e2267c4b36a73bd31c0e9",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189120] = {
+		group_id = 2802,
+		type = 1,
+		id = 28189120,
+		hero = 1049,
+		condition = 70,
+		desc = "c9d022acf63101ca03beb8fa883d9948",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189121] = {
+		group_id = 2802,
+		type = 2,
+		id = 28189121,
+		hero = 1049,
+		condition = 20,
+		desc = "d7188537d550eabf90ad88487a20dfff",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189122] = {
+		group_id = 2802,
+		type = 2,
+		id = 28189122,
+		hero = 1049,
+		condition = 40,
+		desc = "8f13baab28ea7f03c54238c259e7fe81",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189123] = {
+		group_id = 2802,
+		type = 2,
+		id = 28189123,
+		hero = 1049,
+		condition = 50,
+		desc = "ad2145e5d4a9fdf5eb7f0ccebb7652f7",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189124] = {
+		group_id = 2802,
+		type = 3,
+		id = 28189124,
+		hero = 1049,
+		condition = 50,
+		desc = "1f449ee8ec1ed5bb30d61925384c7a0a",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189125] = {
+		group_id = 2802,
+		type = 3,
+		id = 28189125,
+		hero = 1049,
+		condition = 100,
+		desc = "5efe766cdd783dafa86a2706ef8aa601",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189126] = {
+		group_id = 2802,
+		type = 3,
+		id = 28189126,
+		hero = 1049,
+		condition = 150,
+		desc = "bae7018780050ebb9ab20a69c13eec80",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189127] = {
+		group_id = 2803,
+		type = 1,
+		id = 28189127,
+		hero = 1150,
+		condition = 40,
+		desc = "639a484b075b0cdbf7bc2c8b67cc9f7b",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189128] = {
+		group_id = 2803,
+		type = 1,
+		id = 28189128,
+		hero = 1150,
+		condition = 50,
+		desc = "cb016f83fd1b94246dc805750bc249b0",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189129] = {
+		group_id = 2803,
+		type = 1,
+		id = 28189129,
+		hero = 1150,
+		condition = 60,
+		desc = "8ac53cb03c88ece78f9c5186644d9165",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189130] = {
+		group_id = 2803,
+		type = 1,
+		id = 28189130,
+		hero = 1150,
+		condition = 70,
+		desc = "8f8f5c947d92817ff2a4f8cf4a8f6786",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189131] = {
+		group_id = 2803,
+		type = 2,
+		id = 28189131,
+		hero = 1150,
+		condition = 20,
+		desc = "cf4b6eb3058acfaf76fa29f9235c18a3",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189132] = {
+		group_id = 2803,
+		type = 2,
+		id = 28189132,
+		hero = 1150,
+		condition = 40,
+		desc = "0a00a0e63b34cba9bad4ce7fa51a73e6",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189133] = {
+		group_id = 2803,
+		type = 2,
+		id = 28189133,
+		hero = 1150,
+		condition = 50,
+		desc = "00505c58bebbba1f41eb984c3437753b",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189134] = {
+		group_id = 2803,
+		type = 3,
+		id = 28189134,
+		hero = 1150,
+		condition = 50,
+		desc = "c4c2b9393b07368a2529fc8b84c25807",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189135] = {
+		group_id = 2803,
+		type = 3,
+		id = 28189135,
+		hero = 1150,
+		condition = 100,
+		desc = "9bb02150271633c1065aa9f875cb57e2",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189136] = {
+		group_id = 2803,
+		type = 3,
+		id = 28189136,
+		hero = 1150,
+		condition = 150,
+		desc = "b167edc632d50f7778e148067d318d9c",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189137] = {
+		group_id = 2804,
+		type = 1,
+		id = 28189137,
+		hero = 1028,
+		condition = 40,
+		desc = "498a9e8f06c8a90640490c5605a83095",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189138] = {
+		group_id = 2804,
+		type = 1,
+		id = 28189138,
+		hero = 1028,
+		condition = 50,
+		desc = "065d529b2082a525bf82b517a6049ad8",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189139] = {
+		group_id = 2804,
+		type = 1,
+		id = 28189139,
+		hero = 1028,
+		condition = 60,
+		desc = "406081c5002e0dde76757572c7421f7c",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189140] = {
+		group_id = 2804,
+		type = 1,
+		id = 28189140,
+		hero = 1028,
+		condition = 70,
+		desc = "98b5caff7787eaa6ab727b51c5fcdbc1",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189141] = {
+		group_id = 2804,
+		type = 2,
+		id = 28189141,
+		hero = 1028,
+		condition = 20,
+		desc = "8dc2404a9d1bc947d56196734541e4b1",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189142] = {
+		group_id = 2804,
+		type = 2,
+		id = 28189142,
+		hero = 1028,
+		condition = 40,
+		desc = "58113f6cda19a9b26b65fb4e54f410a5",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189143] = {
+		group_id = 2804,
+		type = 2,
+		id = 28189143,
+		hero = 1028,
+		condition = 50,
+		desc = "9a1c8ed21a1000258d4a49edd278f4f2",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189144] = {
+		group_id = 2804,
+		type = 3,
+		id = 28189144,
+		hero = 1028,
+		condition = 50,
+		desc = "920948f75c6bbf46f42888e1204ad3ff",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189145] = {
+		group_id = 2804,
+		type = 3,
+		id = 28189145,
+		hero = 1028,
+		condition = 100,
+		desc = "95c67ac0cf169ff3e34fb90c07e78fcf",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189146] = {
+		group_id = 2804,
+		type = 3,
+		id = 28189146,
+		hero = 1028,
+		condition = 150,
+		desc = "5f1b96c6cc5bc42e12a00e94cfb0156e",
+		reward = {
+			{
+				54069,
+				3
+			}
+		}
+	},
+	[28189201] = {
+		group_id = 2805,
+		type = 1,
+		id = 28189201,
+		hero = 1021,
+		condition = 40,
+		desc = "dd4951e6a1f46459e1b3bc118b97c11c",
+		reward = {
+			{
+				54072,
+				5
+			}
+		}
+	},
+	[28189202] = {
+		group_id = 2805,
+		type = 1,
+		id = 28189202,
+		hero = 1021,
+		condition = 45,
+		desc = "df393965fb1c0237a04f441f5225ab06",
+		reward = {
+			{
+				54072,
+				5
+			}
+		}
+	},
+	[28189203] = {
+		group_id = 2805,
+		type = 1,
+		id = 28189203,
+		hero = 1021,
+		condition = 50,
+		desc = "0544708f37abe49654e18e35cc1c41a2",
+		reward = {
+			{
+				54072,
+				5
+			}
+		}
+	},
+	[28189204] = {
+		group_id = 2805,
+		type = 1,
+		id = 28189204,
+		hero = 1021,
+		condition = 55,
+		desc = "f297b609541c9fc8300826267d16670f",
+		reward = {
+			{
+				54072,
+				5
+			}
+		}
+	},
+	[28189205] = {
+		group_id = 2805,
+		type = 1,
+		id = 28189205,
+		hero = 1021,
+		condition = 60,
+		desc = "d74da043b678cb8a53476307da39c1cc",
+		reward = {
+			{
+				54072,
+				5
+			}
+		}
+	},
+	[28189206] = {
+		group_id = 2805,
+		type = 1,
+		id = 28189206,
+		hero = 1021,
+		condition = 70,
+		desc = "ab3b5ff7e1e8054f57158328911916a8",
+		reward = {
+			{
+				54072,
+				5
+			}
+		}
+	},
+	[28189207] = {
+		group_id = 2805,
+		type = 2,
+		id = 28189207,
+		hero = 1021,
+		condition = 10,
+		desc = "b8cbd75517055bc819d91837298a2451",
+		reward = {
+			{
+				54072,
+				5
+			}
+		}
+	},
+	[28189208] = {
+		group_id = 2805,
+		type = 2,
+		id = 28189208,
+		hero = 1021,
+		condition = 20,
+		desc = "9e232a3d2016f9921463bd37023e3e27",
+		reward = {
+			{
+				54072,
+				5
+			}
+		}
+	},
+	[28189209] = {
+		group_id = 2805,
+		type = 2,
+		id = 28189209,
+		hero = 1021,
+		condition = 30,
+		desc = "cc9c1928d29c6f2aba05aeb63107f7bd",
+		reward = {
+			{
+				54072,
+				5
+			}
+		}
+	},
+	[28189210] = {
+		group_id = 2805,
+		type = 2,
+		id = 28189210,
+		hero = 1021,
+		condition = 40,
+		desc = "5363f26577e839a2256216ead0046b3b",
+		reward = {
+			{
+				54072,
+				5
+			}
+		}
+	},
+	[28189211] = {
+		group_id = 2805,
+		type = 2,
+		id = 28189211,
+		hero = 1021,
+		condition = 50,
+		desc = "8e00e5ea8c30d41a5004ac8f8dd0310e",
+		reward = {
+			{
+				54072,
+				5
+			}
+		}
+	},
+	[28189212] = {
+		group_id = 2805,
+		type = 3,
+		id = 28189212,
+		hero = 1021,
+		condition = 50,
+		desc = "5befcccae51400aca04725bcda3091f6",
+		reward = {
+			{
+				54072,
+				5
+			}
+		}
+	},
+	[28189213] = {
+		group_id = 2805,
+		type = 3,
+		id = 28189213,
+		hero = 1021,
+		condition = 80,
+		desc = "749dc5684a2d7a1eb4b6b8d910532f85",
+		reward = {
+			{
+				54072,
+				5
+			}
+		}
+	},
+	[28189214] = {
+		group_id = 2805,
+		type = 3,
+		id = 28189214,
+		hero = 1021,
+		condition = 100,
+		desc = "df861c66864837accd456d62c5627fb4",
+		reward = {
+			{
+				54072,
+				5
+			}
+		}
+	},
+	[28189215] = {
+		group_id = 2805,
+		type = 3,
+		id = 28189215,
+		hero = 1021,
+		condition = 120,
+		desc = "6fec03f86ff0068ccd5c8866472b5d47",
+		reward = {
+			{
+				54072,
+				5
+			}
+		}
+	},
+	[28189216] = {
+		group_id = 2805,
+		type = 3,
+		id = 28189216,
+		hero = 1021,
+		condition = 150,
+		desc = "136b71419555132fefb40452f3deade5",
+		reward = {
+			{
+				54072,
+				5
+			}
+		}
+	},
+	[28189217] = {
+		group_id = 2806,
+		type = 1,
+		id = 28189217,
+		hero = 1041,
+		condition = 40,
+		desc = "afc3bbe978215ba198193cf059b73150",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189218] = {
+		group_id = 2806,
+		type = 1,
+		id = 28189218,
+		hero = 1041,
+		condition = 50,
+		desc = "33d338c88b83c2d8bf2f1f4fd5e365c2",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189219] = {
+		group_id = 2806,
+		type = 1,
+		id = 28189219,
+		hero = 1041,
+		condition = 60,
+		desc = "293bdc1c1a8755211582caa7658aa32b",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189220] = {
+		group_id = 2806,
+		type = 1,
+		id = 28189220,
+		hero = 1041,
+		condition = 70,
+		desc = "2527623509fda1c7dd198529e7644167",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189221] = {
+		group_id = 2806,
+		type = 2,
+		id = 28189221,
+		hero = 1041,
+		condition = 20,
+		desc = "8784897a98edb094e705e13a3d99ed30",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189222] = {
+		group_id = 2806,
+		type = 2,
+		id = 28189222,
+		hero = 1041,
+		condition = 40,
+		desc = "9f3adcef7e604542ffc22aadc60a672a",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189223] = {
+		group_id = 2806,
+		type = 2,
+		id = 28189223,
+		hero = 1041,
+		condition = 50,
+		desc = "b7f96171439b5889b6c484a9e99e7759",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189224] = {
+		group_id = 2806,
+		type = 3,
+		id = 28189224,
+		hero = 1041,
+		condition = 50,
+		desc = "a01df38460f06c73be6abd4bf227381a",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189225] = {
+		group_id = 2806,
+		type = 3,
+		id = 28189225,
+		hero = 1041,
+		condition = 100,
+		desc = "0937085cd2bcd47ff5364a76a9d5a3b7",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189226] = {
+		group_id = 2806,
+		type = 3,
+		id = 28189226,
+		hero = 1041,
+		condition = 150,
+		desc = "699a1c71f7a18117812654d27db10caf",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189227] = {
+		group_id = 2807,
+		type = 1,
+		id = 28189227,
+		hero = 1015,
+		condition = 40,
+		desc = "843d64acb184899a75109cf244b5742f",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189228] = {
+		group_id = 2807,
+		type = 1,
+		id = 28189228,
+		hero = 1015,
+		condition = 50,
+		desc = "01014e94763fcb0db99d2db62939d6de",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189229] = {
+		group_id = 2807,
+		type = 1,
+		id = 28189229,
+		hero = 1015,
+		condition = 60,
+		desc = "5b2107cc9bcdba8cb97a04c7da0b9398",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189230] = {
+		group_id = 2807,
+		type = 1,
+		id = 28189230,
+		hero = 1015,
+		condition = 70,
+		desc = "d43c11e7d0559352dcde89d3ad052306",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189231] = {
+		group_id = 2807,
+		type = 2,
+		id = 28189231,
+		hero = 1015,
+		condition = 20,
+		desc = "aa459842f29ba68331339b68654c44a5",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189232] = {
+		group_id = 2807,
+		type = 2,
+		id = 28189232,
+		hero = 1015,
+		condition = 40,
+		desc = "e349fdd29423b42fb9957bc07fe5c756",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189233] = {
+		group_id = 2807,
+		type = 2,
+		id = 28189233,
+		hero = 1015,
+		condition = 50,
+		desc = "4e21ab57bfffc9fcbe7e51e5d114a765",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189234] = {
+		group_id = 2807,
+		type = 3,
+		id = 28189234,
+		hero = 1015,
+		condition = 50,
+		desc = "dce1c6134a1fef69ee5fbec010cb4e39",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189235] = {
+		group_id = 2807,
+		type = 3,
+		id = 28189235,
+		hero = 1015,
+		condition = 100,
+		desc = "7ee3911ee4b1ca6a0862a3cd5f3ce4b4",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189236] = {
+		group_id = 2807,
+		type = 3,
+		id = 28189236,
+		hero = 1015,
+		condition = 150,
+		desc = "172ace849de08178f1a7398dab888102",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189237] = {
+		group_id = 2808,
+		type = 1,
+		id = 28189237,
+		hero = 1075,
+		condition = 40,
+		desc = "b8b10f2b326a48264ce5a7e0d494a02d",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189238] = {
+		group_id = 2808,
+		type = 1,
+		id = 28189238,
+		hero = 1075,
+		condition = 50,
+		desc = "f6b5d6ab7fd6274eb8fd63b7b6005427",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189239] = {
+		group_id = 2808,
+		type = 1,
+		id = 28189239,
+		hero = 1075,
+		condition = 60,
+		desc = "e814bc84279205ec2e509efeb863e5c2",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189240] = {
+		group_id = 2808,
+		type = 1,
+		id = 28189240,
+		hero = 1075,
+		condition = 70,
+		desc = "fdacbb34fe9e9306025ce998dccba2c2",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189241] = {
+		group_id = 2808,
+		type = 2,
+		id = 28189241,
+		hero = 1075,
+		condition = 20,
+		desc = "b3a2169066edcf580cbcbecae9244fa7",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189242] = {
+		group_id = 2808,
+		type = 2,
+		id = 28189242,
+		hero = 1075,
+		condition = 40,
+		desc = "ba1c3de455e35e4c2ae062c6a78317ac",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189243] = {
+		group_id = 2808,
+		type = 2,
+		id = 28189243,
+		hero = 1075,
+		condition = 50,
+		desc = "3dacd25af6fd41b2e2e3881ecb5887ea",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189244] = {
+		group_id = 2808,
+		type = 3,
+		id = 28189244,
+		hero = 1075,
+		condition = 50,
+		desc = "4b64bbe34cee47c19757e6f42a792acb",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189245] = {
+		group_id = 2808,
+		type = 3,
+		id = 28189245,
+		hero = 1075,
+		condition = 100,
+		desc = "46c11dd79f337562ad0e2bb4ea38821e",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[28189246] = {
+		group_id = 2808,
+		type = 3,
+		id = 28189246,
+		hero = 1075,
+		condition = 150,
+		desc = "51ea1ef16d08120bf6c3be85f4164408",
+		reward = {
+			{
+				54072,
+				3
+			}
+		}
+	},
+	[29189101] = {
+		group_id = 2901,
+		type = 1,
+		id = 29189101,
+		hero = 1020,
+		condition = 40,
+		desc = "41b2a301600bf0193347a1ce45305d97",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189102] = {
+		group_id = 2901,
+		type = 1,
+		id = 29189102,
+		hero = 1020,
+		condition = 45,
+		desc = "992a0f617cd3440c0b3df04fa8d2d426",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189103] = {
+		group_id = 2901,
+		type = 1,
+		id = 29189103,
+		hero = 1020,
+		condition = 50,
+		desc = "d646a5084e66f0b58891045abbefed7d",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189104] = {
+		group_id = 2901,
+		type = 1,
+		id = 29189104,
+		hero = 1020,
+		condition = 55,
+		desc = "646f3e07f45466dc1f8c4eb1d84668f0",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189105] = {
+		group_id = 2901,
+		type = 1,
+		id = 29189105,
+		hero = 1020,
+		condition = 60,
+		desc = "426c597965df251f23d76ed679db68ec",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189106] = {
+		group_id = 2901,
+		type = 1,
+		id = 29189106,
+		hero = 1020,
+		condition = 70,
+		desc = "f64f676deced646a83e443ed7ab2109f",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189107] = {
+		group_id = 2901,
+		type = 2,
+		id = 29189107,
+		hero = 1020,
+		condition = 10,
+		desc = "daee5c901adff54fc19862bde69fa904",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189108] = {
+		group_id = 2901,
+		type = 2,
+		id = 29189108,
+		hero = 1020,
+		condition = 20,
+		desc = "32b307a57fa01a00e304181cf41401dd",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189109] = {
+		group_id = 2901,
+		type = 2,
+		id = 29189109,
+		hero = 1020,
+		condition = 30,
+		desc = "e8e2de06b462cbbe4f71e6797927c03e",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189110] = {
+		group_id = 2901,
+		type = 2,
+		id = 29189110,
+		hero = 1020,
+		condition = 40,
+		desc = "272eb9d45d4cbc2c14eb8d9fe1935d66",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189111] = {
+		group_id = 2901,
+		type = 2,
+		id = 29189111,
+		hero = 1020,
+		condition = 50,
+		desc = "47544d983f2cd5a3e73fef91293e0aea",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189112] = {
+		group_id = 2901,
+		type = 3,
+		id = 29189112,
+		hero = 1020,
+		condition = 50,
+		desc = "f0a5aee05a1b9cdf1f75c7949796a440",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189113] = {
+		group_id = 2901,
+		type = 3,
+		id = 29189113,
+		hero = 1020,
+		condition = 80,
+		desc = "ceb7d0b790c499a02a8ed18bb2146274",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189114] = {
+		group_id = 2901,
+		type = 3,
+		id = 29189114,
+		hero = 1020,
+		condition = 100,
+		desc = "a3d48c931ccd3f5969a07274d073a722",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189115] = {
+		group_id = 2901,
+		type = 3,
+		id = 29189115,
+		hero = 1020,
+		condition = 120,
+		desc = "6629977abc9c405c38986866ff33f858",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189116] = {
+		group_id = 2901,
+		type = 3,
+		id = 29189116,
+		hero = 1020,
+		condition = 150,
+		desc = "84aa837d5fd39a90ae5e16333c51bf79",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189117] = {
+		group_id = 2902,
+		type = 1,
+		id = 29189117,
+		hero = 1156,
+		condition = 40,
+		desc = "9aa3edd862ac0f6f46ff13920d78cdae",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189118] = {
+		group_id = 2902,
+		type = 1,
+		id = 29189118,
+		hero = 1156,
+		condition = 45,
+		desc = "e6260a820a8f1eae5a67c853ac191c00",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189119] = {
+		group_id = 2902,
+		type = 1,
+		id = 29189119,
+		hero = 1156,
+		condition = 50,
+		desc = "390b0142520fc95ab695f54eb67e5096",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189120] = {
+		group_id = 2902,
+		type = 1,
+		id = 29189120,
+		hero = 1156,
+		condition = 55,
+		desc = "dd7c304f4f260c7c2f8c2dcd8e7cba83",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189121] = {
+		group_id = 2902,
+		type = 1,
+		id = 29189121,
+		hero = 1156,
+		condition = 60,
+		desc = "b2e61e3d9b7eba80808d0b4d9a297ef2",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189122] = {
+		group_id = 2902,
+		type = 1,
+		id = 29189122,
+		hero = 1156,
+		condition = 70,
+		desc = "72d4e81f129c0e40fec0ee300e3e6597",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189123] = {
+		group_id = 2902,
+		type = 2,
+		id = 29189123,
+		hero = 1156,
+		condition = 10,
+		desc = "facc29be942745162ddabe6a74078a90",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189124] = {
+		group_id = 2902,
+		type = 2,
+		id = 29189124,
+		hero = 1156,
+		condition = 20,
+		desc = "5a9fab3b4adc1503cdffc23d3690eb9c",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189125] = {
+		group_id = 2902,
+		type = 2,
+		id = 29189125,
+		hero = 1156,
+		condition = 30,
+		desc = "4a97237e7c2aff15fa937a5b6d5a493a",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189126] = {
+		group_id = 2902,
+		type = 2,
+		id = 29189126,
+		hero = 1156,
+		condition = 40,
+		desc = "9eb09a2c99172bc42a8893fe8cd4f18b",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189127] = {
+		group_id = 2902,
+		type = 2,
+		id = 29189127,
+		hero = 1156,
+		condition = 50,
+		desc = "46f89d6081c115894ecb6e024b41ff01",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189128] = {
+		group_id = 2902,
+		type = 3,
+		id = 29189128,
+		hero = 1156,
+		condition = 50,
+		desc = "b1b49acd5625416b628318341730f413",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189129] = {
+		group_id = 2902,
+		type = 3,
+		id = 29189129,
+		hero = 1156,
+		condition = 80,
+		desc = "66ae805c40d97fdf8eb0b97b9db3c722",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189130] = {
+		group_id = 2902,
+		type = 3,
+		id = 29189130,
+		hero = 1156,
+		condition = 100,
+		desc = "680c2b461d60f15a3091106e78e41748",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189131] = {
+		group_id = 2902,
+		type = 3,
+		id = 29189131,
+		hero = 1156,
+		condition = 120,
+		desc = "59373dbcd64492ebc1922c9fb71c33b4",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189132] = {
+		group_id = 2902,
+		type = 3,
+		id = 29189132,
+		hero = 1156,
+		condition = 150,
+		desc = "7e24c1d10711681a797b3f48bdb03bd5",
+		reward = {
+			{
+				54074,
+				5
+			}
+		}
+	},
+	[29189133] = {
+		group_id = 2903,
+		type = 1,
+		id = 29189133,
+		hero = 1074,
+		condition = 40,
+		desc = "7346d290a35b1264ad28471dd09b8b17",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189134] = {
+		group_id = 2903,
+		type = 1,
+		id = 29189134,
+		hero = 1074,
+		condition = 50,
+		desc = "9926f54b9812fa3a7f4544217f0b5957",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189135] = {
+		group_id = 2903,
+		type = 1,
+		id = 29189135,
+		hero = 1074,
+		condition = 60,
+		desc = "2203edbe6d4bac801d6ae3bacd426b17",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189136] = {
+		group_id = 2903,
+		type = 1,
+		id = 29189136,
+		hero = 1074,
+		condition = 70,
+		desc = "15af9eb8a25c4dd2911b610205d36310",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189137] = {
+		group_id = 2903,
+		type = 2,
+		id = 29189137,
+		hero = 1074,
+		condition = 20,
+		desc = "42df4dd0314184ff900392ed28548407",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189138] = {
+		group_id = 2903,
+		type = 2,
+		id = 29189138,
+		hero = 1074,
+		condition = 40,
+		desc = "a9529a646aecab528090d9dc21561bce",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189139] = {
+		group_id = 2903,
+		type = 2,
+		id = 29189139,
+		hero = 1074,
+		condition = 50,
+		desc = "1d7f676272e3a6040947c9d694ad062b",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189140] = {
+		group_id = 2903,
+		type = 3,
+		id = 29189140,
+		hero = 1074,
+		condition = 50,
+		desc = "241dc5c401c2701fb4c5dc75888959bb",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189141] = {
+		group_id = 2903,
+		type = 3,
+		id = 29189141,
+		hero = 1074,
+		condition = 100,
+		desc = "266f02506e476bce185407de6a9feaaf",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189142] = {
+		group_id = 2903,
+		type = 3,
+		id = 29189142,
+		hero = 1074,
+		condition = 150,
+		desc = "69be62262b8ed28af19c70058912d0e0",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189143] = {
+		group_id = 2904,
+		type = 1,
+		id = 29189143,
+		hero = 1055,
+		condition = 40,
+		desc = "7bee15def10f9a56ed29ccfe79741edc",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189144] = {
+		group_id = 2904,
+		type = 1,
+		id = 29189144,
+		hero = 1055,
+		condition = 50,
+		desc = "5821dd6810cb6b21047c6d3681b6fb54",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189145] = {
+		group_id = 2904,
+		type = 1,
+		id = 29189145,
+		hero = 1055,
+		condition = 60,
+		desc = "dfdaffa58654c2e434cbb854deec58b4",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189146] = {
+		group_id = 2904,
+		type = 1,
+		id = 29189146,
+		hero = 1055,
+		condition = 70,
+		desc = "45ca391bda42548022d5381859f0d6c8",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189147] = {
+		group_id = 2904,
+		type = 2,
+		id = 29189147,
+		hero = 1055,
+		condition = 20,
+		desc = "1101d932842935cffc023e72581194e2",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189148] = {
+		group_id = 2904,
+		type = 2,
+		id = 29189148,
+		hero = 1055,
+		condition = 40,
+		desc = "cb70b0076cafbbe11eb63eb260767655",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189149] = {
+		group_id = 2904,
+		type = 2,
+		id = 29189149,
+		hero = 1055,
+		condition = 50,
+		desc = "8107476f2de7d9bea6f63b05d3169125",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189150] = {
+		group_id = 2904,
+		type = 3,
+		id = 29189150,
+		hero = 1055,
+		condition = 50,
+		desc = "374e89dc51a22a5163247e9f073852a6",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189151] = {
+		group_id = 2904,
+		type = 3,
+		id = 29189151,
+		hero = 1055,
+		condition = 100,
+		desc = "b9848a4c0f60cb4f71f2eda5e327417f",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189152] = {
+		group_id = 2904,
+		type = 3,
+		id = 29189152,
+		hero = 1055,
+		condition = 150,
+		desc = "63cad393858aa074b6c03c43f6befc86",
+		reward = {
+			{
+				54074,
+				3
+			}
+		}
+	},
+	[29189201] = {
+		group_id = 2905,
+		type = 1,
+		id = 29189201,
+		hero = 1089,
+		condition = 40,
+		desc = "2f36d00c32670fb818ebe94e06d80e0c",
+		reward = {
+			{
+				54075,
+				5
+			}
+		}
+	},
+	[29189202] = {
+		group_id = 2905,
+		type = 1,
+		id = 29189202,
+		hero = 1089,
+		condition = 45,
+		desc = "70b023a9da6f5b13834a19a7d7b77c5f",
+		reward = {
+			{
+				54075,
+				5
+			}
+		}
+	},
+	[29189203] = {
+		group_id = 2905,
+		type = 1,
+		id = 29189203,
+		hero = 1089,
+		condition = 50,
+		desc = "58bdb72d98dad1f2bd26cdde927764c7",
+		reward = {
+			{
+				54075,
+				5
+			}
+		}
+	},
+	[29189204] = {
+		group_id = 2905,
+		type = 1,
+		id = 29189204,
+		hero = 1089,
+		condition = 55,
+		desc = "904355d7cda7d83c9783a5e0bc3d701a",
+		reward = {
+			{
+				54075,
+				5
+			}
+		}
+	},
+	[29189205] = {
+		group_id = 2905,
+		type = 1,
+		id = 29189205,
+		hero = 1089,
+		condition = 60,
+		desc = "15933a0001903589752d7b17bdc11aac",
+		reward = {
+			{
+				54075,
+				5
+			}
+		}
+	},
+	[29189206] = {
+		group_id = 2905,
+		type = 1,
+		id = 29189206,
+		hero = 1089,
+		condition = 70,
+		desc = "1103962763a60ae37d68a1bbcc29931b",
+		reward = {
+			{
+				54075,
+				5
+			}
+		}
+	},
+	[29189207] = {
+		group_id = 2905,
+		type = 2,
+		id = 29189207,
+		hero = 1089,
+		condition = 10,
+		desc = "05de06d81b3788aed5bbd6afbd696a89",
+		reward = {
+			{
+				54075,
+				5
+			}
+		}
+	},
+	[29189208] = {
+		group_id = 2905,
+		type = 2,
+		id = 29189208,
+		hero = 1089,
+		condition = 20,
+		desc = "7fdcc5532a6080510ee71b93e373b375",
+		reward = {
+			{
+				54075,
+				5
+			}
+		}
+	},
+	[29189209] = {
+		group_id = 2905,
+		type = 2,
+		id = 29189209,
+		hero = 1089,
+		condition = 30,
+		desc = "6d2c62dfd92a3dcc30b26b433a1ef76b",
+		reward = {
+			{
+				54075,
+				5
+			}
+		}
+	},
+	[29189210] = {
+		group_id = 2905,
+		type = 2,
+		id = 29189210,
+		hero = 1089,
+		condition = 40,
+		desc = "0263ad30146818b263dd235e3dc7ce4c",
+		reward = {
+			{
+				54075,
+				5
+			}
+		}
+	},
+	[29189211] = {
+		group_id = 2905,
+		type = 2,
+		id = 29189211,
+		hero = 1089,
+		condition = 50,
+		desc = "204713ef8e7d29adfa6215d49156bc56",
+		reward = {
+			{
+				54075,
+				5
+			}
+		}
+	},
+	[29189212] = {
+		group_id = 2905,
+		type = 3,
+		id = 29189212,
+		hero = 1089,
+		condition = 50,
+		desc = "adfaf4868393cb0e88a3a23e0679ab4f",
+		reward = {
+			{
+				54075,
+				5
+			}
+		}
+	},
+	[29189213] = {
+		group_id = 2905,
+		type = 3,
+		id = 29189213,
+		hero = 1089,
+		condition = 80,
+		desc = "91767716e35ed8ed0e23dbbab47085a9",
+		reward = {
+			{
+				54075,
+				5
+			}
+		}
+	},
+	[29189214] = {
+		group_id = 2905,
+		type = 3,
+		id = 29189214,
+		hero = 1089,
+		condition = 100,
+		desc = "a9c64650bfde18b5e4b3a6fdd966aba0",
+		reward = {
+			{
+				54075,
+				5
+			}
+		}
+	},
+	[29189215] = {
+		group_id = 2905,
+		type = 3,
+		id = 29189215,
+		hero = 1089,
+		condition = 120,
+		desc = "5045b2396c9a82711c156539a0f3a851",
+		reward = {
+			{
+				54075,
+				5
+			}
+		}
+	},
+	[29189216] = {
+		group_id = 2905,
+		type = 3,
+		id = 29189216,
+		hero = 1089,
+		condition = 150,
+		desc = "17e93944097ef18308e48f6e65dd7f22",
+		reward = {
+			{
+				54075,
+				5
+			}
+		}
+	},
+	[29189217] = {
+		group_id = 2906,
+		type = 1,
+		id = 29189217,
+		hero = 1095,
+		condition = 40,
+		desc = "00b0db5f47e5598373c38574f15d952f",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189218] = {
+		group_id = 2906,
+		type = 1,
+		id = 29189218,
+		hero = 1095,
+		condition = 50,
+		desc = "ec0e33d36abf3bfa7348c5d59f0854f7",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189219] = {
+		group_id = 2906,
+		type = 1,
+		id = 29189219,
+		hero = 1095,
+		condition = 60,
+		desc = "000b3b7761ef2b9b9beff8d129a7204a",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189220] = {
+		group_id = 2906,
+		type = 1,
+		id = 29189220,
+		hero = 1095,
+		condition = 70,
+		desc = "4962934579181a6dd42c1245cde7a3bd",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189221] = {
+		group_id = 2906,
+		type = 2,
+		id = 29189221,
+		hero = 1095,
+		condition = 20,
+		desc = "4ef2198b8527ebd5b8f894fdbd4eef1b",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189222] = {
+		group_id = 2906,
+		type = 2,
+		id = 29189222,
+		hero = 1095,
+		condition = 40,
+		desc = "85da6d821a16bb0db01e080c51a4657b",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189223] = {
+		group_id = 2906,
+		type = 2,
+		id = 29189223,
+		hero = 1095,
+		condition = 50,
+		desc = "560bd0a7549d930068d4865066ede825",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189224] = {
+		group_id = 2906,
+		type = 3,
+		id = 29189224,
+		hero = 1095,
+		condition = 50,
+		desc = "43ac692bffca75fa6fce07bd83030f60",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189225] = {
+		group_id = 2906,
+		type = 3,
+		id = 29189225,
+		hero = 1095,
+		condition = 100,
+		desc = "d851e6ea34cfa99f350b8f2016fbcce5",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189226] = {
+		group_id = 2906,
+		type = 3,
+		id = 29189226,
+		hero = 1095,
+		condition = 150,
+		desc = "2ed320a3a33c8d5a256c2230a19b0e21",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189227] = {
+		group_id = 2907,
+		type = 1,
+		id = 29189227,
+		hero = 1060,
+		condition = 40,
+		desc = "3008897dcb4c10ba6452f5026d8c5024",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189228] = {
+		group_id = 2907,
+		type = 1,
+		id = 29189228,
+		hero = 1060,
+		condition = 50,
+		desc = "b86ff80c994353b64f5c20f7a5a0e29e",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189229] = {
+		group_id = 2907,
+		type = 1,
+		id = 29189229,
+		hero = 1060,
+		condition = 60,
+		desc = "f2bbda55ae1488b1afd1c1a49b1d7f28",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189230] = {
+		group_id = 2907,
+		type = 1,
+		id = 29189230,
+		hero = 1060,
+		condition = 70,
+		desc = "ef1f82c056835b11aef30f91548e55f8",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189231] = {
+		group_id = 2907,
+		type = 2,
+		id = 29189231,
+		hero = 1060,
+		condition = 20,
+		desc = "81bf93b98b3076a25bd3e91b4fc062ec",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189232] = {
+		group_id = 2907,
+		type = 2,
+		id = 29189232,
+		hero = 1060,
+		condition = 40,
+		desc = "8cb788cd15c39da026cccc8d5a158a37",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189233] = {
+		group_id = 2907,
+		type = 2,
+		id = 29189233,
+		hero = 1060,
+		condition = 50,
+		desc = "fbc94a843fb8dad8683bc9bbd3d8014d",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189234] = {
+		group_id = 2907,
+		type = 3,
+		id = 29189234,
+		hero = 1060,
+		condition = 50,
+		desc = "38a8a8022cb43c246eda400287676dd9",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189235] = {
+		group_id = 2907,
+		type = 3,
+		id = 29189235,
+		hero = 1060,
+		condition = 100,
+		desc = "b0b7fcae19f8cfec55d72e9012e82b63",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189236] = {
+		group_id = 2907,
+		type = 3,
+		id = 29189236,
+		hero = 1060,
+		condition = 150,
+		desc = "7ca1a14b09e842368ba565de145cd520",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189237] = {
+		group_id = 2908,
+		type = 1,
+		id = 29189237,
+		hero = 1111,
+		condition = 40,
+		desc = "b70bfc9b78d3ef174c3aa4054c308f39",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189238] = {
+		group_id = 2908,
+		type = 1,
+		id = 29189238,
+		hero = 1111,
+		condition = 50,
+		desc = "0e909832c47e9ce70c33a5f7c183cf42",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189239] = {
+		group_id = 2908,
+		type = 1,
+		id = 29189239,
+		hero = 1111,
+		condition = 60,
+		desc = "daea553fe6fe94498b499ba78b9fdc37",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189240] = {
+		group_id = 2908,
+		type = 1,
+		id = 29189240,
+		hero = 1111,
+		condition = 70,
+		desc = "c938646cfa399848f117c23230321a26",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189241] = {
+		group_id = 2908,
+		type = 2,
+		id = 29189241,
+		hero = 1111,
+		condition = 20,
+		desc = "b41bc3be9b44a69683e385fa769d2d30",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189242] = {
+		group_id = 2908,
+		type = 2,
+		id = 29189242,
+		hero = 1111,
+		condition = 40,
+		desc = "2a4755c35613026206b80374369dac6f",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189243] = {
+		group_id = 2908,
+		type = 2,
+		id = 29189243,
+		hero = 1111,
+		condition = 50,
+		desc = "5dc559f1cc82b174b55e4c790b8c4979",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189244] = {
+		group_id = 2908,
+		type = 3,
+		id = 29189244,
+		hero = 1111,
+		condition = 50,
+		desc = "ef5ca4b9990949e778e5af348b91ddb4",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189245] = {
+		group_id = 2908,
+		type = 3,
+		id = 29189245,
+		hero = 1111,
+		condition = 100,
+		desc = "d4925ac2506a6274ef48dc4ed3c1858f",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[29189246] = {
+		group_id = 2908,
+		type = 3,
+		id = 29189246,
+		hero = 1111,
+		condition = 150,
+		desc = "7ca7b375eaf95c79166b42edce00dbc0",
+		reward = {
+			{
+				54075,
+				3
+			}
+		}
+	},
+	[28189301] = {
+		group_id = 2809,
+		type = 1,
+		id = 28189301,
+		hero = 1076,
+		condition = 40,
+		desc = "ac7719b1a153f83290073933080b54f5",
+		reward = {
+			{
+				5406901,
+				5
+			}
+		}
+	},
+	[28189302] = {
+		group_id = 2809,
+		type = 1,
+		id = 28189302,
+		hero = 1076,
+		condition = 45,
+		desc = "ae50a56a1c71088d0c3f3ec3ea0ebf36",
+		reward = {
+			{
+				5406901,
+				5
+			}
+		}
+	},
+	[28189303] = {
+		group_id = 2809,
+		type = 1,
+		id = 28189303,
+		hero = 1076,
+		condition = 50,
+		desc = "6eab154310a2f33d3ad48f3b73c3956b",
+		reward = {
+			{
+				5406901,
+				5
+			}
+		}
+	},
+	[28189304] = {
+		group_id = 2809,
+		type = 1,
+		id = 28189304,
+		hero = 1076,
+		condition = 55,
+		desc = "fbfcf20c2c70c4ae310a9fe7563ddab9",
+		reward = {
+			{
+				5406901,
+				5
+			}
+		}
+	},
+	[28189305] = {
+		group_id = 2809,
+		type = 1,
+		id = 28189305,
+		hero = 1076,
+		condition = 60,
+		desc = "e04c0a42ec0593ecc69e27f3e3eb2e5d",
+		reward = {
+			{
+				5406901,
+				5
+			}
+		}
+	},
+	[28189306] = {
+		group_id = 2809,
+		type = 1,
+		id = 28189306,
+		hero = 1076,
+		condition = 70,
+		desc = "8cf0b3630d9b3905832f12d01184b7c2",
+		reward = {
+			{
+				5406901,
+				5
+			}
+		}
+	},
+	[28189307] = {
+		group_id = 2809,
+		type = 2,
+		id = 28189307,
+		hero = 1076,
+		condition = 10,
+		desc = "7bd7b0c14a01ff9e9a8d3dd5133cb01b",
+		reward = {
+			{
+				5406901,
+				5
+			}
+		}
+	},
+	[28189308] = {
+		group_id = 2809,
+		type = 2,
+		id = 28189308,
+		hero = 1076,
+		condition = 20,
+		desc = "0654c51f25913f28f4cc3c53fa06900f",
+		reward = {
+			{
+				5406901,
+				5
+			}
+		}
+	},
+	[28189309] = {
+		group_id = 2809,
+		type = 2,
+		id = 28189309,
+		hero = 1076,
+		condition = 30,
+		desc = "f8a647b45bc54e35264d301f9a053b88",
+		reward = {
+			{
+				5406901,
+				5
+			}
+		}
+	},
+	[28189310] = {
+		group_id = 2809,
+		type = 2,
+		id = 28189310,
+		hero = 1076,
+		condition = 40,
+		desc = "2443d1fbe81f28d29131601527c596b6",
+		reward = {
+			{
+				5406901,
+				5
+			}
+		}
+	},
+	[28189311] = {
+		group_id = 2809,
+		type = 2,
+		id = 28189311,
+		hero = 1076,
+		condition = 50,
+		desc = "597bafd35ac14c8710074c7aa20d7e0d",
+		reward = {
+			{
+				5406901,
+				5
+			}
+		}
+	},
+	[28189312] = {
+		group_id = 2809,
+		type = 3,
+		id = 28189312,
+		hero = 1076,
+		condition = 50,
+		desc = "ea1b700d82f365de40f3f4afc2439c51",
+		reward = {
+			{
+				5406901,
+				5
+			}
+		}
+	},
+	[28189313] = {
+		group_id = 2809,
+		type = 3,
+		id = 28189313,
+		hero = 1076,
+		condition = 80,
+		desc = "e09fb129096d77001ec302349635bc18",
+		reward = {
+			{
+				5406901,
+				5
+			}
+		}
+	},
+	[28189314] = {
+		group_id = 2809,
+		type = 3,
+		id = 28189314,
+		hero = 1076,
+		condition = 100,
+		desc = "06084d425fe8634c649b326bf7f3c782",
+		reward = {
+			{
+				5406901,
+				5
+			}
+		}
+	},
+	[28189315] = {
+		group_id = 2809,
+		type = 3,
+		id = 28189315,
+		hero = 1076,
+		condition = 120,
+		desc = "f24dad8c5d5e4d7674ef45c0541a0f61",
+		reward = {
+			{
+				5406901,
+				5
+			}
+		}
+	},
+	[28189316] = {
+		group_id = 2809,
+		type = 3,
+		id = 28189316,
+		hero = 1076,
+		condition = 150,
+		desc = "9d842a842c60b40e4f3dcdf074245557",
+		reward = {
+			{
+				5406901,
+				5
+			}
+		}
+	},
+	[28189317] = {
+		group_id = 2810,
+		type = 1,
+		id = 28189317,
+		hero = 1024,
+		condition = 40,
+		desc = "aacc4bd693098d1b4aff298401b379c4",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189318] = {
+		group_id = 2810,
+		type = 1,
+		id = 28189318,
+		hero = 1024,
+		condition = 50,
+		desc = "e77f8e9beabf4795b183c7f8278f2053",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189319] = {
+		group_id = 2810,
+		type = 1,
+		id = 28189319,
+		hero = 1024,
+		condition = 60,
+		desc = "f095ebffbd8b69ef858e94ca4d7a3c38",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189320] = {
+		group_id = 2810,
+		type = 1,
+		id = 28189320,
+		hero = 1024,
+		condition = 70,
+		desc = "5b98e5d32c665e27265997435acb1d30",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189321] = {
+		group_id = 2810,
+		type = 2,
+		id = 28189321,
+		hero = 1024,
+		condition = 20,
+		desc = "f1b41d7edebbeaef4a08706da8a413fb",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189322] = {
+		group_id = 2810,
+		type = 2,
+		id = 28189322,
+		hero = 1024,
+		condition = 40,
+		desc = "f0e64cec8a1b6037d3bf9f597a47b181",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189323] = {
+		group_id = 2810,
+		type = 2,
+		id = 28189323,
+		hero = 1024,
+		condition = 50,
+		desc = "83a0c02c6b8d125a646d4e5c844e4a2d",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189324] = {
+		group_id = 2810,
+		type = 3,
+		id = 28189324,
+		hero = 1024,
+		condition = 50,
+		desc = "c51b53d2515c84c9fa57648769036a7d",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189325] = {
+		group_id = 2810,
+		type = 3,
+		id = 28189325,
+		hero = 1024,
+		condition = 100,
+		desc = "92eb49923cfecc2ae71eb02fab0dedb3",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189326] = {
+		group_id = 2810,
+		type = 3,
+		id = 28189326,
+		hero = 1024,
+		condition = 150,
+		desc = "ea78aa2bf6c5271b34117f130f008fab",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189327] = {
+		group_id = 2811,
+		type = 1,
+		id = 28189327,
+		hero = 1094,
+		condition = 40,
+		desc = "533ac09b7afea20a84a8f73f35ff3dc4",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189328] = {
+		group_id = 2811,
+		type = 1,
+		id = 28189328,
+		hero = 1094,
+		condition = 50,
+		desc = "464941bf618a17804a49549c56559d66",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189329] = {
+		group_id = 2811,
+		type = 1,
+		id = 28189329,
+		hero = 1094,
+		condition = 60,
+		desc = "20f5157363844a3eb9fc2dfc33d9d5e6",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189330] = {
+		group_id = 2811,
+		type = 1,
+		id = 28189330,
+		hero = 1094,
+		condition = 70,
+		desc = "6594164e91825b1188dcfeac44ddb447",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189331] = {
+		group_id = 2811,
+		type = 2,
+		id = 28189331,
+		hero = 1094,
+		condition = 20,
+		desc = "b4bd863230f93b5f09736e8bddc3c2eb",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189332] = {
+		group_id = 2811,
+		type = 2,
+		id = 28189332,
+		hero = 1094,
+		condition = 40,
+		desc = "01720af74c7de66aad9afe5f3af8f60b",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189333] = {
+		group_id = 2811,
+		type = 2,
+		id = 28189333,
+		hero = 1094,
+		condition = 50,
+		desc = "cb427e8b44ca4916b531e84643f183d6",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189334] = {
+		group_id = 2811,
+		type = 3,
+		id = 28189334,
+		hero = 1094,
+		condition = 50,
+		desc = "5c418692e571d83ad31fc664db4880a1",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189335] = {
+		group_id = 2811,
+		type = 3,
+		id = 28189335,
+		hero = 1094,
+		condition = 100,
+		desc = "38f2486a334022c3eaa382ee0ae01cd7",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189336] = {
+		group_id = 2811,
+		type = 3,
+		id = 28189336,
+		hero = 1094,
+		condition = 150,
+		desc = "a434a9d4e9bc4ab6fd545e8eccd718b4",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189337] = {
+		group_id = 2812,
+		type = 1,
+		id = 28189337,
+		hero = 1055,
+		condition = 40,
+		desc = "11152bfd8800b750cd6f9d17123f8a29",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189338] = {
+		group_id = 2812,
+		type = 1,
+		id = 28189338,
+		hero = 1055,
+		condition = 50,
+		desc = "be94cfde939a167fd772addbc1bcf3c4",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189339] = {
+		group_id = 2812,
+		type = 1,
+		id = 28189339,
+		hero = 1055,
+		condition = 60,
+		desc = "58d4e96fc2cc8165204665329d7eab6a",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189340] = {
+		group_id = 2812,
+		type = 1,
+		id = 28189340,
+		hero = 1055,
+		condition = 70,
+		desc = "28afe6e5fd9d93e47c37abc41e7f11c6",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189341] = {
+		group_id = 2812,
+		type = 2,
+		id = 28189341,
+		hero = 1055,
+		condition = 20,
+		desc = "cd85e74cc089eec30801148aa0d81a81",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189342] = {
+		group_id = 2812,
+		type = 2,
+		id = 28189342,
+		hero = 1055,
+		condition = 40,
+		desc = "120c02607f0d1c1489ac81adc51ae504",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189343] = {
+		group_id = 2812,
+		type = 2,
+		id = 28189343,
+		hero = 1055,
+		condition = 50,
+		desc = "aafbb4753549f2cb3ec6098a7a0617cd",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189344] = {
+		group_id = 2812,
+		type = 3,
+		id = 28189344,
+		hero = 1055,
+		condition = 50,
+		desc = "7da896cc850ad30a1242973849d8ddfc",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189345] = {
+		group_id = 2812,
+		type = 3,
+		id = 28189345,
+		hero = 1055,
+		condition = 100,
+		desc = "566ff2b9a8e46ef4e729fbbba501b479",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
+	[28189346] = {
+		group_id = 2812,
+		type = 3,
+		id = 28189346,
+		hero = 1055,
+		condition = 150,
+		desc = "f8a0b00612edb3a4a27b574781d3fe1d",
+		reward = {
+			{
+				5406901,
+				3
+			}
+		}
+	},
 	get_id_list_by_group_id = {
+		[2812] = {
+			28189337,
+			28189338,
+			28189339,
+			28189340,
+			28189341,
+			28189342,
+			28189343,
+			28189344,
+			28189345,
+			28189346
+		},
+		[2811] = {
+			28189327,
+			28189328,
+			28189329,
+			28189330,
+			28189331,
+			28189332,
+			28189333,
+			28189334,
+			28189335,
+			28189336
+		},
+		[2810] = {
+			28189317,
+			28189318,
+			28189319,
+			28189320,
+			28189321,
+			28189322,
+			28189323,
+			28189324,
+			28189325,
+			28189326
+		},
+		[2809] = {
+			28189301,
+			28189302,
+			28189303,
+			28189304,
+			28189305,
+			28189306,
+			28189307,
+			28189308,
+			28189309,
+			28189310,
+			28189311,
+			28189312,
+			28189313,
+			28189314,
+			28189315,
+			28189316
+		},
+		[2908] = {
+			29189237,
+			29189238,
+			29189239,
+			29189240,
+			29189241,
+			29189242,
+			29189243,
+			29189244,
+			29189245,
+			29189246
+		},
+		[2907] = {
+			29189227,
+			29189228,
+			29189229,
+			29189230,
+			29189231,
+			29189232,
+			29189233,
+			29189234,
+			29189235,
+			29189236
+		},
+		[2906] = {
+			29189217,
+			29189218,
+			29189219,
+			29189220,
+			29189221,
+			29189222,
+			29189223,
+			29189224,
+			29189225,
+			29189226
+		},
+		[2905] = {
+			29189201,
+			29189202,
+			29189203,
+			29189204,
+			29189205,
+			29189206,
+			29189207,
+			29189208,
+			29189209,
+			29189210,
+			29189211,
+			29189212,
+			29189213,
+			29189214,
+			29189215,
+			29189216
+		},
+		[2904] = {
+			29189143,
+			29189144,
+			29189145,
+			29189146,
+			29189147,
+			29189148,
+			29189149,
+			29189150,
+			29189151,
+			29189152
+		},
+		[2903] = {
+			29189133,
+			29189134,
+			29189135,
+			29189136,
+			29189137,
+			29189138,
+			29189139,
+			29189140,
+			29189141,
+			29189142
+		},
+		[2902] = {
+			29189117,
+			29189118,
+			29189119,
+			29189120,
+			29189121,
+			29189122,
+			29189123,
+			29189124,
+			29189125,
+			29189126,
+			29189127,
+			29189128,
+			29189129,
+			29189130,
+			29189131,
+			29189132
+		},
+		[2901] = {
+			29189101,
+			29189102,
+			29189103,
+			29189104,
+			29189105,
+			29189106,
+			29189107,
+			29189108,
+			29189109,
+			29189110,
+			29189111,
+			29189112,
+			29189113,
+			29189114,
+			29189115,
+			29189116
+		},
+		[2808] = {
+			28189237,
+			28189238,
+			28189239,
+			28189240,
+			28189241,
+			28189242,
+			28189243,
+			28189244,
+			28189245,
+			28189246
+		},
+		[2807] = {
+			28189227,
+			28189228,
+			28189229,
+			28189230,
+			28189231,
+			28189232,
+			28189233,
+			28189234,
+			28189235,
+			28189236
+		},
+		[2806] = {
+			28189217,
+			28189218,
+			28189219,
+			28189220,
+			28189221,
+			28189222,
+			28189223,
+			28189224,
+			28189225,
+			28189226
+		},
+		[2805] = {
+			28189201,
+			28189202,
+			28189203,
+			28189204,
+			28189205,
+			28189206,
+			28189207,
+			28189208,
+			28189209,
+			28189210,
+			28189211,
+			28189212,
+			28189213,
+			28189214,
+			28189215,
+			28189216
+		},
+		[2804] = {
+			28189137,
+			28189138,
+			28189139,
+			28189140,
+			28189141,
+			28189142,
+			28189143,
+			28189144,
+			28189145,
+			28189146
+		},
+		[2803] = {
+			28189127,
+			28189128,
+			28189129,
+			28189130,
+			28189131,
+			28189132,
+			28189133,
+			28189134,
+			28189135,
+			28189136
+		},
+		[2802] = {
+			28189117,
+			28189118,
+			28189119,
+			28189120,
+			28189121,
+			28189122,
+			28189123,
+			28189124,
+			28189125,
+			28189126
+		},
+		[2801] = {
+			28189101,
+			28189102,
+			28189103,
+			28189104,
+			28189105,
+			28189106,
+			28189107,
+			28189108,
+			28189109,
+			28189110,
+			28189111,
+			28189112,
+			28189113,
+			28189114,
+			28189115,
+			28189116
+		},
 		[2116] = {
 			21189437,
 			21189438,
@@ -16691,6 +20271,242 @@
 		21189443,
 		21189444,
 		21189445,
-		21189446
+		21189446,
+		28189101,
+		28189102,
+		28189103,
+		28189104,
+		28189105,
+		28189106,
+		28189107,
+		28189108,
+		28189109,
+		28189110,
+		28189111,
+		28189112,
+		28189113,
+		28189114,
+		28189115,
+		28189116,
+		28189117,
+		28189118,
+		28189119,
+		28189120,
+		28189121,
+		28189122,
+		28189123,
+		28189124,
+		28189125,
+		28189126,
+		28189127,
+		28189128,
+		28189129,
+		28189130,
+		28189131,
+		28189132,
+		28189133,
+		28189134,
+		28189135,
+		28189136,
+		28189137,
+		28189138,
+		28189139,
+		28189140,
+		28189141,
+		28189142,
+		28189143,
+		28189144,
+		28189145,
+		28189146,
+		28189201,
+		28189202,
+		28189203,
+		28189204,
+		28189205,
+		28189206,
+		28189207,
+		28189208,
+		28189209,
+		28189210,
+		28189211,
+		28189212,
+		28189213,
+		28189214,
+		28189215,
+		28189216,
+		28189217,
+		28189218,
+		28189219,
+		28189220,
+		28189221,
+		28189222,
+		28189223,
+		28189224,
+		28189225,
+		28189226,
+		28189227,
+		28189228,
+		28189229,
+		28189230,
+		28189231,
+		28189232,
+		28189233,
+		28189234,
+		28189235,
+		28189236,
+		28189237,
+		28189238,
+		28189239,
+		28189240,
+		28189241,
+		28189242,
+		28189243,
+		28189244,
+		28189245,
+		28189246,
+		29189101,
+		29189102,
+		29189103,
+		29189104,
+		29189105,
+		29189106,
+		29189107,
+		29189108,
+		29189109,
+		29189110,
+		29189111,
+		29189112,
+		29189113,
+		29189114,
+		29189115,
+		29189116,
+		29189117,
+		29189118,
+		29189119,
+		29189120,
+		29189121,
+		29189122,
+		29189123,
+		29189124,
+		29189125,
+		29189126,
+		29189127,
+		29189128,
+		29189129,
+		29189130,
+		29189131,
+		29189132,
+		29189133,
+		29189134,
+		29189135,
+		29189136,
+		29189137,
+		29189138,
+		29189139,
+		29189140,
+		29189141,
+		29189142,
+		29189143,
+		29189144,
+		29189145,
+		29189146,
+		29189147,
+		29189148,
+		29189149,
+		29189150,
+		29189151,
+		29189152,
+		29189201,
+		29189202,
+		29189203,
+		29189204,
+		29189205,
+		29189206,
+		29189207,
+		29189208,
+		29189209,
+		29189210,
+		29189211,
+		29189212,
+		29189213,
+		29189214,
+		29189215,
+		29189216,
+		29189217,
+		29189218,
+		29189219,
+		29189220,
+		29189221,
+		29189222,
+		29189223,
+		29189224,
+		29189225,
+		29189226,
+		29189227,
+		29189228,
+		29189229,
+		29189230,
+		29189231,
+		29189232,
+		29189233,
+		29189234,
+		29189235,
+		29189236,
+		29189237,
+		29189238,
+		29189239,
+		29189240,
+		29189241,
+		29189242,
+		29189243,
+		29189244,
+		29189245,
+		29189246,
+		28189301,
+		28189302,
+		28189303,
+		28189304,
+		28189305,
+		28189306,
+		28189307,
+		28189308,
+		28189309,
+		28189310,
+		28189311,
+		28189312,
+		28189313,
+		28189314,
+		28189315,
+		28189316,
+		28189317,
+		28189318,
+		28189319,
+		28189320,
+		28189321,
+		28189322,
+		28189323,
+		28189324,
+		28189325,
+		28189326,
+		28189327,
+		28189328,
+		28189329,
+		28189330,
+		28189331,
+		28189332,
+		28189333,
+		28189334,
+		28189335,
+		28189336,
+		28189337,
+		28189338,
+		28189339,
+		28189340,
+		28189341,
+		28189342,
+		28189343,
+		28189344,
+		28189345,
+		28189346
 	}
 }

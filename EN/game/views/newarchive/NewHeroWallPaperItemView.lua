@@ -14,6 +14,7 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
+	arg_3_0.roleImg_.immediate = true
 	arg_3_0.roleController_ = ControllerUtil.GetController(arg_3_0.transform_, "role")
 
 	arg_3_0:AddUIListener()
@@ -76,19 +77,19 @@ function var_0_0.RefreshUI(arg_10_0)
 	end
 
 	if arg_10_0.type_ == 1 then
-		arg_10_0.roleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_10_0.id_)
+		arg_10_0.roleImg_.spriteSync = "TextureConfig/Character/Icon/" .. arg_10_0.id_
 		arg_10_0.lockText_.text = GetTips("HERO_HEART_CHAIN_PLOT_COVER_UNLOCK_HERO")
 		arg_10_0.roleName_.text = HeroCfg[arg_10_0.data_.id].name
 		arg_10_0.lockTips_ = string.format(GetTips("HERO_HEART_CHAIN_PLOT_COVER_UNLOCK_HERO_NAME"), GetI18NText(HeroCfg[arg_10_0.data_.id].name))
 	elseif arg_10_0.type_ == 2 then
-		arg_10_0.roleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_10_0.id_)
+		arg_10_0.roleImg_.spriteSync = "TextureConfig/Character/Icon/" .. arg_10_0.id_
 		arg_10_0.lockText_.text = GetTips("HERO_HEART_CHAIN_PLOT_COVER_UNLOCK_SKIN")
 		arg_10_0.roleName_.text = SkinCfg[arg_10_0.data_.id].name
 		arg_10_0.lockTips_ = string.format(GetTips("HERO_HEART_CHAIN_PLOT_COVER_UNLOCK_SKIN_NAME"), GetI18NText(SkinCfg[arg_10_0.data_.id].name))
 	elseif arg_10_0.type_ == 3 then
 		local var_10_2 = CollectPictureCfg[arg_10_0.id_].picture
 
-		arg_10_0.roleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/IllustratedHandbook/Portrait/" .. var_10_2)
+		arg_10_0.roleImg_.spriteSync = "TextureConfig/IllustratedHandbook/Portrait/" .. var_10_2
 		arg_10_0.lockText_.text = GetTips("HERO_HEART_CHAIN_PLOT_COVER_UNLOCK_PICTURE")
 		arg_10_0.roleName_.text = CollectPictureCfg[arg_10_0.data_.id].name
 		arg_10_0.lockTips_ = string.format(GetTips("HERO_HEART_CHAIN_PLOT_COVER_UNLOCK_PICTURE_NAME"), GetI18NText(CollectPictureCfg[arg_10_0.data_.id].name))

@@ -131,6 +131,8 @@ function var_0_0.DealWithActivityData(arg_5_0)
 	elseif ActivityTemplateConst.HERO_LETTER == var_5_0 then
 		ActivityHeroLetterAction.Init()
 		ActivityHeroLetterAction.InitRedPointKey(arg_5_0.id)
+	elseif ActivityTemplateConst.ACTIVITY_USE_DUNDUN == var_5_0 then
+		ActivityPointAction.InitDunDunRedPointKey(arg_5_0.id)
 	end
 end
 
@@ -226,8 +228,7 @@ function var_0_0.UpdateRedPoint(arg_8_0)
 	elseif ActivityTemplateConst.ACTIVITY_PROMOTINAL == var_8_0 then
 		var_0_0.UpdatePromotinalRedPoint(arg_8_0)
 	elseif ActivityTemplateConst.ACTIVITY_2_2_WATER_SCHEDULE == var_8_0 or ActivityTemplateConst.ACTIVITY_2_2_WATER == var_8_0 then
-		ActivityWaterAction.UpdateOpenRedPoint()
-		ActivityWaterAction.UpdateNewScheduleRedPoint()
+		ActivityWaterAction.UpdateRedPoint()
 	elseif ActivityTemplateConst.LIMITED_CALCULATION == var_8_0 then
 		LimitedCalculationAction:RefreshRedPoint(arg_8_0)
 	elseif ActivityTemplateConst.SOLO_CHALLENGE == var_8_0 then
@@ -283,6 +284,12 @@ function var_0_0.UpdateRedPoint(arg_8_0)
 		ActivityPushBoxAction.RefreshRedPoint(arg_8_0)
 	elseif ActivityTemplateConst.HERO_LETTER == var_8_0 then
 		ActivityHeroLetterAction.RefreshRedPoint(arg_8_0)
+	elseif arg_8_0 == ActivityConst.SUMMER_CHESS_BOARD_ENTRY then
+		ActivitySummerChessBoardAction.InitPageRedPoint(arg_8_0)
+	elseif arg_8_0 == ActivityConst.SUMMER_CHESS_BOARD_MAIN then
+		ActivitySummerChessBoardAction.InitMainRedPoint(arg_8_0)
+	elseif ActivityTemplateConst.ACTIVITY_WHACK_MOLE == var_8_0 then
+		WhackMoleAction.UpdateRedPoint(arg_8_0)
 	end
 
 	if SpringPreheatAction then
@@ -481,6 +488,13 @@ function var_0_0.OnReceivePointReward(arg_21_0, arg_21_1)
 				LimitedCalculationAction:OnReceivePointReward(var_21_0.activity_id, var_21_0.id)
 			elseif ActivityTemplateConst.SUB_SINGLE_MATRIX == var_21_1 then
 				ActivityMatrixAction.OnReceivePointReward(var_21_0.activity_id, var_21_0.id)
+			elseif ActivityTemplateConst.CHALLENGE_ROGUE_TEAM_SCORE == var_21_1 then
+				local var_21_2 = var_21_0.activity_id
+				local var_21_3 = ChallengeRogueTeamTools.GetTeamplateIDByActivityID(var_21_2)
+
+				ChallengeRogueTeamData:SetRewardedScoreList(var_21_3, {
+					iter_21_1
+				})
 			end
 		end
 
@@ -494,22 +508,61 @@ function var_0_0.OnReceivePointReward(arg_21_0, arg_21_1)
 	end
 end
 
-function var_0_0.GetBonus(arg_22_0)
+function var_0_0.ReceivePointRewardWithCallBack(arg_22_0, arg_22_1)
 	local var_22_0 = {
 		point_reward_id_list = arg_22_0
 	}
 
-	manager.net:SendWithLoadingNew(60054, var_22_0, 60055, var_0_0.OnGetBonusCallback)
+	manager.net:SendWithLoadingNew(60054, var_22_0, 60055, function(arg_23_0, arg_23_1)
+		var_0_0.OnReceivePointRewardWithCallBack(arg_23_0, arg_23_1, arg_22_1)
+	end)
 end
 
-function var_0_0.OnGetBonusCallback(arg_23_0, arg_23_1)
-	if isSuccess(arg_23_0.result) then
-		getReward2(mergeReward2(arg_23_0.reward_list))
+function var_0_0.OnReceivePointRewardWithCallBack(arg_24_0, arg_24_1, arg_24_2)
+	if isSuccess(arg_24_0.result) then
+		for iter_24_0, iter_24_1 in ipairs(arg_24_1.point_reward_id_list) do
+			local var_24_0 = ActivityPointRewardCfg[iter_24_1]
+			local var_24_1 = ActivityTools.GetActivityType(var_24_0.activity_id)
+
+			if ActivityTemplateConst.LIMITED_CALCULATION == var_24_1 then
+				LimitedCalculationAction:OnReceivePointReward(var_24_0.activity_id, var_24_0.id)
+			elseif ActivityTemplateConst.SUB_SINGLE_MATRIX == var_24_1 then
+				ActivityMatrixAction.OnReceivePointReward(var_24_0.activity_id, var_24_0.id)
+			end
+		end
+
+		getReward2(mergeReward2(arg_24_0.reward_list), {
+			ItemConst.ITEM_TYPE.HERO
+		})
 		manager.notify:Invoke(ACTIVITY_REWARD_GET, {
-			point_reward_id_list = arg_23_1.point_reward_id_list
+			point_reward_id_list = arg_24_1.point_reward_id_list
+		})
+		manager.notify:CallUpdateFunc(RECEIVE_POINT_REWARD, arg_24_1.point_reward_id_list)
+
+		if arg_24_2 then
+			arg_24_2(arg_24_1.point_reward_id_list)
+		end
+	else
+		ShowTips(arg_24_0.result)
+	end
+end
+
+function var_0_0.GetBonus(arg_25_0)
+	local var_25_0 = {
+		point_reward_id_list = arg_25_0
+	}
+
+	manager.net:SendWithLoadingNew(60054, var_25_0, 60055, var_0_0.OnGetBonusCallback)
+end
+
+function var_0_0.OnGetBonusCallback(arg_26_0, arg_26_1)
+	if isSuccess(arg_26_0.result) then
+		getReward2(mergeReward2(arg_26_0.reward_list))
+		manager.notify:Invoke(ACTIVITY_REWARD_GET, {
+			point_reward_id_list = arg_26_1.point_reward_id_list
 		})
 	else
-		ShowTips(GetTips(arg_23_0.result))
+		ShowTips(GetTips(arg_26_0.result))
 	end
 end
 

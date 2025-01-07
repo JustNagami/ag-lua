@@ -27,7 +27,7 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1, arg_4_2)
 		local var_4_0 = StoryCfg[arg_4_1]
 		local var_4_1 = VideoTrackCfg[arg_4_1 .. ".usm"]
 
-		if (var_4_0.videoPath ~= nil and var_4_0.videoPath ~= "" or var_4_1 ~= nil) and arg_4_0.unlock_ ~= nil then
+		if var_4_0.videoPath ~= nil and var_4_0.videoPath ~= "" or var_4_0.videoType ~= nil and var_4_0.videoType == 1 or var_4_1 ~= nil and arg_4_0.unlock_ ~= nil then
 			arg_4_0.controller_:SetSelectedState("video")
 		else
 			arg_4_0.controller_:SetSelectedState("normal")

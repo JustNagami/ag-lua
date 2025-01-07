@@ -147,117 +147,125 @@ function var_0_0.ShowHoldMask(arg_16_0, arg_16_1, arg_16_2, arg_16_3)
 	end
 end
 
-function var_0_0.ShowUIMask(arg_18_0, arg_18_1, arg_18_2, arg_18_3)
-	local var_18_0 = Vector3(0, 0, 0)
-	local var_18_1 = Vector3(0, 0, 0)
-	local var_18_2 = Vector2(0, 0)
-	local var_18_3 = Vector2(0, 0)
+local function var_0_2(arg_18_0, arg_18_1)
+	return Vector3(arg_18_0.lossyScale.x / arg_18_1.lossyScale.x, arg_18_0.lossyScale.y / arg_18_1.lossyScale.y, arg_18_0.lossyScale.z / arg_18_1.lossyScale.z)
+end
 
-	LayoutRebuilder.ForceRebuildLayoutImmediate(arg_18_2)
+function var_0_0.UpdateMask(arg_19_0, arg_19_1, arg_19_2, arg_19_3, arg_19_4, arg_19_5)
+	arg_19_0.maskImgCom1_.sizeDelta = Vector2(arg_19_1.rect.width, arg_19_1.rect.height) + arg_19_2
+	arg_19_0.maskImgCom2_.sizeDelta = Vector2(arg_19_1.rect.width, arg_19_1.rect.height) + arg_19_2
+	arg_19_0.maskImgCom1_.position = arg_19_1.position
+	arg_19_0.maskImgCom2_.position = arg_19_1.position
+	arg_19_0.maskImgCom1_.eulerAngles = arg_19_1.eulerAngles
+	arg_19_0.maskImgCom2_.eulerAngles = arg_19_1.eulerAngles
+	arg_19_0.maskImgCom1_.localScale = arg_19_5
+	arg_19_0.maskImgCom2_.localScale = arg_19_5
+	arg_19_0.btnMaskCom_.sizeDelta = Vector2(arg_19_1.rect.width, arg_19_1.rect.height) + var_0_1 + arg_19_4
+	arg_19_0.btnMaskCom_.position = arg_19_1.position
+	arg_19_0.btnMaskCom_.anchoredPosition = arg_19_0.btnMaskCom_.anchoredPosition + Vector2.Scale(arg_19_5, arg_19_3)
+	arg_19_0.btnMaskCom_.eulerAngles = arg_19_1.eulerAngles
+	arg_19_0.btnMaskCom_.localScale = arg_19_5
+end
 
-	local var_18_4 = Vector3((0.5 - arg_18_2.pivot.x) * arg_18_2.rect.width, (0.5 - arg_18_2.pivot.y) * arg_18_2.rect.height, 0)
+function var_0_0.ShowUIMask(arg_20_0, arg_20_1, arg_20_2, arg_20_3)
+	local var_20_0 = Vector3(0, 0, 0)
+	local var_20_1 = Vector3(0, 0, 0)
+	local var_20_2 = Vector2(0, 0)
+	local var_20_3 = Vector2(0, 0)
 
-	arg_18_0.maskImgCom1_.pivot = arg_18_2.pivot
-	arg_18_0.maskImgCom2_.pivot = arg_18_2.pivot
+	LayoutRebuilder.ForceRebuildLayoutImmediate(arg_20_2)
 
-	local var_18_5 = arg_18_1:GetComponent(typeof(Image))
+	local var_20_4 = Vector3((0.5 - arg_20_2.pivot.x) * arg_20_2.rect.width, (0.5 - arg_20_2.pivot.y) * arg_20_2.rect.height, 0)
 
-	if var_18_5 and var_18_5.enabled then
-		arg_18_0.maskImage1_.sprite = var_18_5.sprite
-		arg_18_0.maskImage2_.sprite = var_18_5.sprite
+	arg_20_0.maskImgCom1_.pivot = arg_20_2.pivot
+	arg_20_0.maskImgCom2_.pivot = arg_20_2.pivot
+
+	local var_20_5 = arg_20_1:GetComponent(typeof(Image))
+
+	if var_20_5 and var_20_5.enabled then
+		arg_20_0.maskImage1_.sprite = var_20_5.sprite
+		arg_20_0.maskImage2_.sprite = var_20_5.sprite
 	else
-		arg_18_0.maskImage1_.sprite = nil
-		arg_18_0.maskImage2_.sprite = nil
+		arg_20_0.maskImage1_.sprite = nil
+		arg_20_0.maskImage2_.sprite = nil
 	end
 
-	if arg_18_0.timer_ then
-		arg_18_0.timer_:Stop()
+	if arg_20_0.timer_ then
+		arg_20_0.timer_:Stop()
 	end
 
-	arg_18_0.timer_ = Timer.New(function()
-		if isNil(arg_18_1) then
-			arg_18_0.timer_:Stop()
+	arg_20_0.timer_ = Timer.New(function()
+		if isNil(arg_20_1) then
+			arg_20_0.timer_:Stop()
 
-			arg_18_0.timer_ = nil
+			arg_20_0.timer_ = nil
 
 			return
 		end
 
-		arg_18_0.maskImgCom1_.sizeDelta = Vector2(arg_18_2.rect.width, arg_18_2.rect.height) + var_18_3
-		arg_18_0.maskImgCom2_.sizeDelta = Vector2(arg_18_2.rect.width, arg_18_2.rect.height) + var_18_3
-		arg_18_0.maskImgCom1_.position = arg_18_2.position
-		arg_18_0.maskImgCom2_.position = arg_18_2.position
-		arg_18_0.maskImgCom1_.eulerAngles = arg_18_2.eulerAngles
-		arg_18_0.maskImgCom2_.eulerAngles = arg_18_2.eulerAngles
-		arg_18_0.maskImgCom1_.localScale = arg_18_3
-		arg_18_0.maskImgCom2_.localScale = arg_18_3
-		arg_18_0.btnMaskCom_.sizeDelta = Vector2(arg_18_2.rect.width, arg_18_2.rect.height) + var_0_1 + var_18_2
-		arg_18_0.btnMaskCom_.position = arg_18_2.position
-		arg_18_0.btnMaskCom_.anchoredPosition = arg_18_0.btnMaskCom_.anchoredPosition + var_18_4
-		arg_18_0.btnMaskCom_.eulerAngles = arg_18_2.eulerAngles
-		arg_18_0.btnMaskCom_.localScale = arg_18_3
+		arg_20_0:UpdateMask(arg_20_2, var_20_3, var_20_4, var_20_2, arg_20_3)
 	end, 0.033, -1)
 
-	arg_18_0.timer_:Start()
+	arg_20_0.timer_:Start()
 end
 
-function var_0_0.ShowBreakStuck(arg_20_0, arg_20_1, arg_20_2)
-	arg_20_0:AdaptBreakGuide()
+function var_0_0.ShowBreakStuck(arg_22_0, arg_22_1, arg_22_2)
+	arg_22_0:AdaptBreakGuide()
 
-	arg_20_0.skipGuide_ = arg_20_1
+	arg_22_0.skipGuide_ = arg_22_1
 
-	SetActive(arg_20_0.btnBreakGuide_, arg_20_2)
+	SetActive(arg_22_0.btnBreakGuide_, arg_22_2)
 end
 
-function var_0_0.AdaptBreakGuide(arg_21_0)
-	if not isNil(arg_21_0.breakGuideTrs_) then
-		arg_21_0.breakGuideTrs_.anchoredPosition = Vector3(-ReduxView.VIEW_ADAPT_DISTANCE, -53.7, 0)
+function var_0_0.AdaptBreakGuide(arg_23_0)
+	if not isNil(arg_23_0.breakGuideTrs_) then
+		arg_23_0.breakGuideTrs_.anchoredPosition = Vector3(-ReduxView.VIEW_ADAPT_DISTANCE, -53.7, 0)
 	end
 end
 
-function var_0_0.Hide(arg_22_0)
-	if arg_22_0.timer_ then
-		arg_22_0.timer_:Stop()
-	end
-
-	if arg_22_0.timer2_ then
-		arg_22_0.timer2_:Stop()
-	end
-
-	SetActive(arg_22_0.gameObject_, false)
-end
-
-function var_0_0.HideButton(arg_23_0)
-	if arg_23_0.timer_ then
-		arg_23_0.timer_:Stop()
-	end
-
-	if arg_23_0.timer2_ then
-		arg_23_0.timer2_:Stop()
-	end
-
-	SetActive(arg_23_0.btnMaskGo_, false)
-end
-
-function var_0_0.Dispose(arg_24_0)
+function var_0_0.Hide(arg_24_0)
 	if arg_24_0.timer_ then
 		arg_24_0.timer_:Stop()
 	end
-
-	arg_24_0.timer_ = nil
 
 	if arg_24_0.timer2_ then
 		arg_24_0.timer2_:Stop()
 	end
 
-	arg_24_0.timer2_ = nil
+	SetActive(arg_24_0.gameObject_, false)
+end
 
-	if arg_24_0._isInit then
-		arg_24_0:RemoveUIListener()
-		Object.Destroy(arg_24_0.gameObject_)
+function var_0_0.HideButton(arg_25_0)
+	if arg_25_0.timer_ then
+		arg_25_0.timer_:Stop()
 	end
 
-	arg_24_0._isInit = false
+	if arg_25_0.timer2_ then
+		arg_25_0.timer2_:Stop()
+	end
+
+	SetActive(arg_25_0.btnMaskGo_, false)
+end
+
+function var_0_0.Dispose(arg_26_0)
+	if arg_26_0.timer_ then
+		arg_26_0.timer_:Stop()
+	end
+
+	arg_26_0.timer_ = nil
+
+	if arg_26_0.timer2_ then
+		arg_26_0.timer2_:Stop()
+	end
+
+	arg_26_0.timer2_ = nil
+
+	if arg_26_0._isInit then
+		arg_26_0:RemoveUIListener()
+		Object.Destroy(arg_26_0.gameObject_)
+	end
+
+	arg_26_0._isInit = false
 end
 
 return var_0_0

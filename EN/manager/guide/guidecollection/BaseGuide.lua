@@ -207,7 +207,11 @@ function var_0_0.BattleFinish(arg_20_0, arg_20_1)
 	end
 end
 
-function var_0_0.Dispose(arg_21_0)
+function var_0_0.ClearSteps(arg_21_0)
+	arg_21_0._steps = nil
+end
+
+function var_0_0.Dispose(arg_22_0)
 	return
 end
 

@@ -201,6 +201,8 @@ function var_0_0.RefreshUI(arg_16_0)
 			arg_16_0.subTitleText_.text = GetTips("MAIN_PLOT_TEXT")
 		elseif var_16_1 == 2 then
 			arg_16_0.subTitleText_.text = GetTips("SUB_PLOT_TEXT")
+		elseif var_16_1 == 3 then
+			arg_16_0.subTitleText_.text = GetTips("WELFARE_TEXT")
 		end
 	end
 

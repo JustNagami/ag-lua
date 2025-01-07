@@ -45,4 +45,8 @@ function var_0_1.GetCustomeTeamInfoParams(arg_6_0, arg_6_1)
 	}
 end
 
+function var_0_1.GetAdditionalViewClass(arg_7_0)
+	return MythicSectionAdditionalView
+end
+
 return var_0_1

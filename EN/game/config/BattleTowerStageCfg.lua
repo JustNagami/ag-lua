@@ -12,6 +12,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010001,
 		id = 4010001,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -36,6 +37,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010002,
 		id = 4010002,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -60,6 +62,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010003,
 		id = 4010003,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -84,6 +87,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010004,
 		id = 4010004,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -108,6 +112,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010005,
 		id = 4010005,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -132,6 +137,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010006,
 		id = 4010006,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -156,6 +162,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010007,
 		id = 4010007,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -180,6 +187,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010008,
 		id = 4010008,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -204,6 +212,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010009,
 		id = 4010009,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -228,6 +237,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010010,
 		id = 4010010,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -252,6 +262,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010011,
 		id = 4010011,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -276,6 +287,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010012,
 		id = 4010012,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -300,6 +312,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010013,
 		id = 4010013,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -324,6 +337,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010014,
 		id = 4010014,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -348,6 +362,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010015,
 		id = 4010015,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -372,6 +387,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010016,
 		id = 4010016,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -396,6 +412,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010017,
 		id = 4010017,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -420,6 +437,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010018,
 		id = 4010018,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -444,6 +462,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010019,
 		id = 4010019,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -468,6 +487,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010020,
 		id = 4010020,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -492,6 +512,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010021,
 		id = 4010021,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -516,6 +537,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010022,
 		id = 4010022,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -540,6 +562,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010023,
 		id = 4010023,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -564,6 +587,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010024,
 		id = 4010024,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -588,6 +612,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010025,
 		id = 4010025,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -612,6 +637,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010026,
 		id = 4010026,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -636,6 +662,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010027,
 		id = 4010027,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -660,6 +687,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010028,
 		id = 4010028,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -684,6 +712,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010029,
 		id = 4010029,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -708,6 +737,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010030,
 		id = 4010030,
+		recommend_team = "",
 		level = 20,
 		attribute_factor = {
 			1000,
@@ -732,6 +762,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010031,
 		id = 4010031,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -756,6 +787,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010032,
 		id = 4010032,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -780,6 +812,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010033,
 		id = 4010033,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -804,6 +837,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010034,
 		id = 4010034,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -828,6 +862,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010035,
 		id = 4010035,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -852,6 +887,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010036,
 		id = 4010036,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -876,6 +912,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010037,
 		id = 4010037,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -900,6 +937,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010038,
 		id = 4010038,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -924,6 +962,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010039,
 		id = 4010039,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -948,6 +987,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010040,
 		id = 4010040,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -972,6 +1012,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010041,
 		id = 4010041,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -996,6 +1037,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010042,
 		id = 4010042,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1020,6 +1062,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010043,
 		id = 4010043,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1044,6 +1087,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010044,
 		id = 4010044,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1068,6 +1112,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010045,
 		id = 4010045,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1092,6 +1137,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010046,
 		id = 4010046,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1116,6 +1162,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010047,
 		id = 4010047,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1140,6 +1187,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010048,
 		id = 4010048,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1164,6 +1212,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010049,
 		id = 4010049,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1188,6 +1237,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010050,
 		id = 4010050,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1212,6 +1262,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010051,
 		id = 4010051,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1236,6 +1287,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010052,
 		id = 4010052,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1260,6 +1312,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010053,
 		id = 4010053,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1284,6 +1337,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010054,
 		id = 4010054,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1308,6 +1362,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010055,
 		id = 4010055,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1332,6 +1387,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010056,
 		id = 4010056,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1356,6 +1412,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010057,
 		id = 4010057,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1380,6 +1437,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010058,
 		id = 4010058,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1404,6 +1462,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010059,
 		id = 4010059,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1428,6 +1487,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010060,
 		id = 4010060,
+		recommend_team = "",
 		level = 30,
 		attribute_factor = {
 			1000,
@@ -1452,6 +1512,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010061,
 		id = 4010061,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1476,6 +1537,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010062,
 		id = 4010062,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1500,6 +1562,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010063,
 		id = 4010063,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1524,6 +1587,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010064,
 		id = 4010064,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1548,6 +1612,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010065,
 		id = 4010065,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1572,6 +1637,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010066,
 		id = 4010066,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1596,6 +1662,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010067,
 		id = 4010067,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1620,6 +1687,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010068,
 		id = 4010068,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1644,6 +1712,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010069,
 		id = 4010069,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1668,6 +1737,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010070,
 		id = 4010070,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1692,6 +1762,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010071,
 		id = 4010071,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1716,6 +1787,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010072,
 		id = 4010072,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1740,6 +1812,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010073,
 		id = 4010073,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1764,6 +1837,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010074,
 		id = 4010074,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1788,6 +1862,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010075,
 		id = 4010075,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1812,6 +1887,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010076,
 		id = 4010076,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1836,6 +1912,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010077,
 		id = 4010077,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1860,6 +1937,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010078,
 		id = 4010078,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1884,6 +1962,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010079,
 		id = 4010079,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1908,6 +1987,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010080,
 		id = 4010080,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1932,6 +2012,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010081,
 		id = 4010081,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1956,6 +2037,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010082,
 		id = 4010082,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -1980,6 +2062,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010083,
 		id = 4010083,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -2004,6 +2087,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010084,
 		id = 4010084,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -2028,6 +2112,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010085,
 		id = 4010085,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -2052,6 +2137,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010086,
 		id = 4010086,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -2076,6 +2162,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010087,
 		id = 4010087,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -2100,6 +2187,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010088,
 		id = 4010088,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -2124,6 +2212,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010089,
 		id = 4010089,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -2148,6 +2237,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010090,
 		id = 4010090,
+		recommend_team = "",
 		level = 45,
 		attribute_factor = {
 			1000,
@@ -2172,6 +2262,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010091,
 		id = 4010091,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2196,6 +2287,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010092,
 		id = 4010092,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2220,6 +2312,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010093,
 		id = 4010093,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2244,6 +2337,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010094,
 		id = 4010094,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2268,6 +2362,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010095,
 		id = 4010095,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2292,6 +2387,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010096,
 		id = 4010096,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2316,6 +2412,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010097,
 		id = 4010097,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2340,6 +2437,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010098,
 		id = 4010098,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2364,6 +2462,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010099,
 		id = 4010099,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2388,6 +2487,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010100,
 		id = 4010100,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2412,6 +2512,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010101,
 		id = 4010101,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2436,6 +2537,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010102,
 		id = 4010102,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2460,6 +2562,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010103,
 		id = 4010103,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2484,6 +2587,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010104,
 		id = 4010104,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2508,6 +2612,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010105,
 		id = 4010105,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2532,6 +2637,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010106,
 		id = 4010106,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2556,6 +2662,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010107,
 		id = 4010107,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2580,6 +2687,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010108,
 		id = 4010108,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2604,6 +2712,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010109,
 		id = 4010109,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2628,6 +2737,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010110,
 		id = 4010110,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2652,6 +2762,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010111,
 		id = 4010111,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2676,6 +2787,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010112,
 		id = 4010112,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2700,6 +2812,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010113,
 		id = 4010113,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2724,6 +2837,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010114,
 		id = 4010114,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2748,6 +2862,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010115,
 		id = 4010115,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2772,6 +2887,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010116,
 		id = 4010116,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2796,6 +2912,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010117,
 		id = 4010117,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2820,6 +2937,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010118,
 		id = 4010118,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2844,6 +2962,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010119,
 		id = 4010119,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2868,6 +2987,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010120,
 		id = 4010120,
+		recommend_team = "",
 		level = 60,
 		attribute_factor = {
 			1000,
@@ -2891,6 +3011,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010121,
 		id = 4010121,
+		recommend_team = "",
 		level = 65,
 		attribute_factor = {
 			1000,
@@ -2921,6 +3042,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010122,
 		id = 4010122,
+		recommend_team = "",
 		level = 65,
 		attribute_factor = {
 			1000,
@@ -2951,6 +3073,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010123,
 		id = 4010123,
+		recommend_team = "",
 		level = 65,
 		attribute_factor = {
 			1000,
@@ -2981,6 +3104,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010124,
 		id = 4010124,
+		recommend_team = "",
 		level = 65,
 		attribute_factor = {
 			1000,
@@ -3011,6 +3135,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010125,
 		id = 4010125,
+		recommend_team = "",
 		level = 65,
 		attribute_factor = {
 			1000,
@@ -3041,6 +3166,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010126,
 		id = 4010126,
+		recommend_team = "",
 		level = 65,
 		attribute_factor = {
 			1000,
@@ -3071,6 +3197,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010127,
 		id = 4010127,
+		recommend_team = "",
 		level = 65,
 		attribute_factor = {
 			1000,
@@ -3101,6 +3228,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010128,
 		id = 4010128,
+		recommend_team = "",
 		level = 65,
 		attribute_factor = {
 			1000,
@@ -3131,6 +3259,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010129,
 		id = 4010129,
+		recommend_team = "",
 		level = 65,
 		attribute_factor = {
 			1000,
@@ -3177,6 +3306,9 @@
 		team_type = {
 			100,
 			0
+		},
+		recommend_team = {
+			3
 		}
 	},
 	[4010131] = {
@@ -3191,6 +3323,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010131,
 		id = 4010131,
+		recommend_team = "",
 		level = 70,
 		attribute_factor = {
 			1000,
@@ -3221,6 +3354,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010132,
 		id = 4010132,
+		recommend_team = "",
 		level = 70,
 		attribute_factor = {
 			1000,
@@ -3251,6 +3385,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010133,
 		id = 4010133,
+		recommend_team = "",
 		level = 70,
 		attribute_factor = {
 			1000,
@@ -3281,6 +3416,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010134,
 		id = 4010134,
+		recommend_team = "",
 		level = 70,
 		attribute_factor = {
 			1000,
@@ -3311,6 +3447,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010135,
 		id = 4010135,
+		recommend_team = "",
 		level = 70,
 		attribute_factor = {
 			1000,
@@ -3341,6 +3478,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010136,
 		id = 4010136,
+		recommend_team = "",
 		level = 70,
 		attribute_factor = {
 			1000,
@@ -3371,6 +3509,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010137,
 		id = 4010137,
+		recommend_team = "",
 		level = 70,
 		attribute_factor = {
 			1000,
@@ -3401,6 +3540,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010138,
 		id = 4010138,
+		recommend_team = "",
 		level = 70,
 		attribute_factor = {
 			1000,
@@ -3431,6 +3571,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010139,
 		id = 4010139,
+		recommend_team = "",
 		level = 70,
 		attribute_factor = {
 			1000,
@@ -3477,6 +3618,9 @@
 		team_type = {
 			100,
 			0
+		},
+		recommend_team = {
+			4
 		}
 	},
 	[4010141] = {
@@ -3491,6 +3635,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010141,
 		id = 4010141,
+		recommend_team = "",
 		level = 75,
 		attribute_factor = {
 			1000,
@@ -3521,6 +3666,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010142,
 		id = 4010142,
+		recommend_team = "",
 		level = 75,
 		attribute_factor = {
 			1000,
@@ -3551,6 +3697,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010143,
 		id = 4010143,
+		recommend_team = "",
 		level = 75,
 		attribute_factor = {
 			1000,
@@ -3581,6 +3728,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010144,
 		id = 4010144,
+		recommend_team = "",
 		level = 75,
 		attribute_factor = {
 			1000,
@@ -3611,6 +3759,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010145,
 		id = 4010145,
+		recommend_team = "",
 		level = 75,
 		attribute_factor = {
 			1000,
@@ -3641,6 +3790,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010146,
 		id = 4010146,
+		recommend_team = "",
 		level = 75,
 		attribute_factor = {
 			1000,
@@ -3671,6 +3821,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010147,
 		id = 4010147,
+		recommend_team = "",
 		level = 75,
 		attribute_factor = {
 			1000,
@@ -3701,6 +3852,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010148,
 		id = 4010148,
+		recommend_team = "",
 		level = 75,
 		attribute_factor = {
 			1000,
@@ -3731,6 +3883,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010149,
 		id = 4010149,
+		recommend_team = "",
 		level = 75,
 		attribute_factor = {
 			1000,
@@ -3777,6 +3930,9 @@
 		team_type = {
 			100,
 			0
+		},
+		recommend_team = {
+			5
 		}
 	},
 	[4010151] = {
@@ -3791,6 +3947,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010151,
 		id = 4010151,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -3821,6 +3978,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010152,
 		id = 4010152,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -3851,6 +4009,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010153,
 		id = 4010153,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -3881,6 +4040,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010154,
 		id = 4010154,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -3911,6 +4071,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010155,
 		id = 4010155,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -3941,6 +4102,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010156,
 		id = 4010156,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -3971,6 +4133,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010157,
 		id = 4010157,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4001,6 +4164,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010158,
 		id = 4010158,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4031,6 +4195,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010159,
 		id = 4010159,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4077,6 +4242,9 @@
 		team_type = {
 			100,
 			0
+		},
+		recommend_team = {
+			1
 		}
 	},
 	[4010161] = {
@@ -4091,6 +4259,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010161,
 		id = 4010161,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4121,6 +4290,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010162,
 		id = 4010162,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4151,6 +4321,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010163,
 		id = 4010163,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4181,6 +4352,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010164,
 		id = 4010164,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4211,6 +4383,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010165,
 		id = 4010165,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4241,6 +4414,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010166,
 		id = 4010166,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4271,6 +4445,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010167,
 		id = 4010167,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4301,6 +4476,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010168,
 		id = 4010168,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4331,6 +4507,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010169,
 		id = 4010169,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4377,6 +4554,9 @@
 		team_type = {
 			100,
 			0
+		},
+		recommend_team = {
+			2
 		}
 	},
 	[4010171] = {
@@ -4391,6 +4571,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010171,
 		id = 4010171,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4421,6 +4602,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010172,
 		id = 4010172,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4451,6 +4633,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010173,
 		id = 4010173,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4481,6 +4664,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010174,
 		id = 4010174,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4511,6 +4695,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010175,
 		id = 4010175,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4541,6 +4726,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010176,
 		id = 4010176,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4571,6 +4757,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010177,
 		id = 4010177,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4601,6 +4788,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010178,
 		id = 4010178,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4631,6 +4819,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010179,
 		id = 4010179,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4677,6 +4866,9 @@
 		team_type = {
 			100,
 			0
+		},
+		recommend_team = {
+			7
 		}
 	},
 	[4010181] = {
@@ -4691,6 +4883,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010181,
 		id = 4010181,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4721,6 +4914,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010182,
 		id = 4010182,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4751,6 +4945,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010183,
 		id = 4010183,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4781,6 +4976,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010184,
 		id = 4010184,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4811,6 +5007,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010185,
 		id = 4010185,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4841,6 +5038,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010186,
 		id = 4010186,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4871,6 +5069,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010187,
 		id = 4010187,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4901,6 +5100,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010188,
 		id = 4010188,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4931,6 +5131,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010189,
 		id = 4010189,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -4977,6 +5178,9 @@
 		team_type = {
 			100,
 			0
+		},
+		recommend_team = {
+			6
 		}
 	},
 	[4010191] = {
@@ -4991,6 +5195,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010191,
 		id = 4010191,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -5021,6 +5226,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010192,
 		id = 4010192,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -5051,6 +5257,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010193,
 		id = 4010193,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -5081,6 +5288,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010194,
 		id = 4010194,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -5111,6 +5319,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010195,
 		id = 4010195,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -5141,6 +5350,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010196,
 		id = 4010196,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -5171,6 +5381,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010197,
 		id = 4010197,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -5201,6 +5412,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010198,
 		id = 4010198,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -5231,6 +5443,7 @@
 		need_default_team = 1,
 		drop_lib_id = 4010199,
 		id = 4010199,
+		recommend_team = "",
 		level = 80,
 		attribute_factor = {
 			1000,
@@ -5277,6 +5490,9 @@
 		team_type = {
 			100,
 			0
+		},
+		recommend_team = {
+			8
 		}
 	},
 	all = {

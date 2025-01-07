@@ -228,7 +228,6 @@ function var_0_0.Show(arg_21_0, arg_21_1, arg_21_2)
 	arg_21_0:UpdateGiftData()
 	arg_21_0:RefreshExpProcess()
 	arg_21_0:UpdatePageState()
-	HeroAction.QueryHeroNewData(arg_21_0.curHeroID_)
 	SetActive(arg_21_0.gameObject_, true)
 end
 

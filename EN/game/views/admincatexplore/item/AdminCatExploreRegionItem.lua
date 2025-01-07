@@ -45,7 +45,7 @@ function var_0_0.AddUIListener(arg_4_0)
 end
 
 function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2)
-	arg_6_0.data = arg_6_1
+	arg_6_0.getGo = arg_6_1
 	arg_6_0.index = arg_6_2
 	arg_6_0.regionId = AdminCatExploreData:GetRegionIdByIndex(arg_6_0.index)
 end
@@ -84,6 +84,7 @@ function var_0_0.UpdateView(arg_8_0)
 				arg_8_0.fillImg_.fillAmount = 1 - var_8_1 / (arg_8_0.regionData.stopTime - arg_8_0.regionData.startTime)
 
 				if var_8_1 <= 0 then
+					SetActive(arg_8_0.getGo, true)
 					AdminCatExploreData:UpdateRegionRedPoint()
 					arg_8_0.stateController:SetSelectedState("finish")
 
@@ -101,6 +102,9 @@ function var_0_0.UpdateView(arg_8_0)
 			arg_8_0.stateText_.text = GetTips("EXPLORE_REGION_EXPLORING")
 		else
 			arg_8_0.getFill_.fillAmount = 1
+
+			SetActive(arg_8_0.getGo, true)
+
 			arg_8_0.remainTxt_.text = manager.time:DescCDTime(0)
 
 			arg_8_0.stateController:SetSelectedState("finish")

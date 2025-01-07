@@ -1,34 +1,20 @@
 ﻿return {
 	GetChildId = function(arg_1_0, arg_1_1, arg_1_2)
 		local var_1_0
+		local var_1_1 = DemonChallengeCfg.get_id_list_by_activity_id[arg_1_0]
 
-		if arg_1_2 == true then
-			var_1_0 = NewDemonChallengeCfg.get_id_list_by_activity_id[arg_1_0]
-		else
-			var_1_0 = DemonChallengeCfg.get_id_list_by_activity_id[arg_1_0]
-		end
-
-		if var_1_0 then
-			return var_1_0[arg_1_1]
+		if var_1_1 then
+			return var_1_1[arg_1_1]
 		end
 	end,
 	GetStageId = function(arg_2_0, arg_2_1, arg_2_2)
 		local var_2_0
+		local var_2_1 = DemonChallengeCfg.get_id_list_by_activity_id[arg_2_0]
 
-		if arg_2_2 == true then
-			var_2_0 = NewDemonChallengeCfg.get_id_list_by_activity_id[arg_2_0]
-		else
-			var_2_0 = DemonChallengeCfg.get_id_list_by_activity_id[arg_2_0]
-		end
+		if var_2_1 then
+			local var_2_2 = var_2_1[arg_2_1]
 
-		if var_2_0 then
-			local var_2_1 = var_2_0[arg_2_1]
-
-			if arg_2_2 == true then
-				return NewDemonChallengeCfg[var_2_1].stage_id
-			else
-				return DemonChallengeCfg[var_2_1].stage_id
-			end
+			return DemonChallengeCfg[var_2_2].stage_id
 		end
 	end,
 	GetMainUIName = function(arg_3_0)

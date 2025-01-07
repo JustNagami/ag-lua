@@ -16,7 +16,7 @@ function var_0_0.Init(arg_2_0)
 	arg_2_0:RegisterEvent()
 end
 
-function var_0_0.AddCharacterAI(arg_3_0, arg_3_1)
+function var_0_0.AddCharacterAI(arg_3_0, arg_3_1, arg_3_2)
 	if arg_3_0.characterList[arg_3_1] then
 		print(arg_3_1 .. "对象已激活ai")
 
@@ -25,12 +25,13 @@ function var_0_0.AddCharacterAI(arg_3_0, arg_3_1)
 
 	local var_3_0 = {
 		controlType = DormEnum.ControlType.AI,
-		curNode = DormHeroAINode.Get(IdleNode, arg_3_1)
+		params = arg_3_2 or {}
 	}
 
-	var_3_0.curNode:Start()
-
 	arg_3_0.characterList[arg_3_1] = var_3_0
+	var_3_0.curNode = DormHeroAINode.Get(IdleNode, arg_3_1)
+
+	var_3_0.curNode:Start()
 end
 
 function var_0_0.RemoveCharacterAI(arg_4_0, arg_4_1)
@@ -149,6 +150,22 @@ function var_0_0.ConsumeInteractCtx(arg_15_0)
 	DormUtils.SetEntityInteractContext(arg_15_0, nil)
 
 	return var_15_0
+end
+
+function var_0_0.SetParam(arg_16_0, arg_16_1, arg_16_2, arg_16_3)
+	local var_16_0 = arg_16_0.characterList[arg_16_1]
+
+	if var_16_0 then
+		var_16_0.params[arg_16_2] = arg_16_3
+	end
+end
+
+function var_0_0.GetParam(arg_17_0, arg_17_1, arg_17_2)
+	local var_17_0 = arg_17_0.characterList[arg_17_1]
+
+	if var_17_0 then
+		return var_17_0.params[arg_17_2]
+	end
 end
 
 return var_0_0.GetInstance()

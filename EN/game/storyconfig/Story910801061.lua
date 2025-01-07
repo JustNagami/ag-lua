@@ -97,124 +97,142 @@
 			local var_4_22 = "1061"
 
 			if arg_1_1.actors_[var_4_22] == nil then
-				local var_4_23 = Object.Instantiate(Asset.Load("UI/StoryExpression/" .. var_4_22), arg_1_1.canvasGo_.transform)
+				local var_4_23 = Object.Instantiate(Asset.Load("Widget/System/Story/StoryExpression/" .. var_4_22), arg_1_1.canvasGo_.transform)
 
 				var_4_23.transform:SetSiblingIndex(1)
 
 				var_4_23.name = var_4_22
 				var_4_23.transform.localPosition = Vector3.New(0, 100000, 0)
 				arg_1_1.actors_[var_4_22] = var_4_23
-			end
 
-			local var_4_24 = arg_1_1.actors_["1061"].transform
-			local var_4_25 = 2
+				local var_4_24 = var_4_23:GetComponentsInChildren(typeof(Image), true):ToTable()
 
-			if var_4_25 < arg_1_1.time_ and arg_1_1.time_ <= var_4_25 + arg_4_0 then
-				arg_1_1.var_.moveOldPos1061 = var_4_24.localPosition
-				var_4_24.localScale = Vector3.New(1, 1, 1)
-
-				arg_1_1:CheckSpriteTmpPos("1061", 3)
-
-				local var_4_26 = var_4_24.childCount
-
-				for iter_4_2 = 0, var_4_26 - 1 do
-					local var_4_27 = var_4_24:GetChild(iter_4_2)
-
-					if var_4_27.name == "" or not string.find(var_4_27.name, "split") then
-						var_4_27.gameObject:SetActive(true)
-					else
-						var_4_27.gameObject:SetActive(false)
+				if arg_1_1.isInRecall_ then
+					for iter_4_2, iter_4_3 in ipairs(var_4_24) do
+						iter_4_3.color = Color.New(0.82, 0.77, 0.62)
 					end
 				end
 			end
 
-			local var_4_28 = 0.001
+			local var_4_25 = arg_1_1.actors_["1061"].transform
+			local var_4_26 = 2
 
-			if var_4_25 <= arg_1_1.time_ and arg_1_1.time_ < var_4_25 + var_4_28 then
-				local var_4_29 = (arg_1_1.time_ - var_4_25) / var_4_28
-				local var_4_30 = Vector3.New(0, -490, 18)
+			if var_4_26 < arg_1_1.time_ and arg_1_1.time_ <= var_4_26 + arg_4_0 then
+				arg_1_1.var_.moveOldPos1061 = var_4_25.localPosition
+				var_4_25.localScale = Vector3.New(1, 1, 1)
 
-				var_4_24.localPosition = Vector3.Lerp(arg_1_1.var_.moveOldPos1061, var_4_30, var_4_29)
+				arg_1_1:CheckSpriteTmpPos("1061", 3)
+
+				local var_4_27 = var_4_25.childCount
+
+				for iter_4_4 = 0, var_4_27 - 1 do
+					local var_4_28 = var_4_25:GetChild(iter_4_4)
+
+					if var_4_28.name == "" or not string.find(var_4_28.name, "split") then
+						var_4_28.gameObject:SetActive(true)
+					else
+						var_4_28.gameObject:SetActive(false)
+					end
+				end
 			end
 
-			if arg_1_1.time_ >= var_4_25 + var_4_28 and arg_1_1.time_ < var_4_25 + var_4_28 + arg_4_0 then
-				var_4_24.localPosition = Vector3.New(0, -490, 18)
+			local var_4_29 = 0.001
+
+			if var_4_26 <= arg_1_1.time_ and arg_1_1.time_ < var_4_26 + var_4_29 then
+				local var_4_30 = (arg_1_1.time_ - var_4_26) / var_4_29
+				local var_4_31 = Vector3.New(0, -490, 18)
+
+				var_4_25.localPosition = Vector3.Lerp(arg_1_1.var_.moveOldPos1061, var_4_31, var_4_30)
 			end
 
-			local var_4_31 = arg_1_1.actors_["1061"]
-			local var_4_32 = 2
-
-			if var_4_32 < arg_1_1.time_ and arg_1_1.time_ <= var_4_32 + arg_4_0 and arg_1_1.var_.actorSpriteComps1061 == nil then
-				arg_1_1.var_.actorSpriteComps1061 = var_4_31:GetComponentsInChildren(typeof(Image), true)
+			if arg_1_1.time_ >= var_4_26 + var_4_29 and arg_1_1.time_ < var_4_26 + var_4_29 + arg_4_0 then
+				var_4_25.localPosition = Vector3.New(0, -490, 18)
 			end
 
+			local var_4_32 = arg_1_1.actors_["1061"]
 			local var_4_33 = 2
 
-			if var_4_32 <= arg_1_1.time_ and arg_1_1.time_ < var_4_32 + var_4_33 then
-				local var_4_34 = (arg_1_1.time_ - var_4_32) / var_4_33
+			if var_4_33 < arg_1_1.time_ and arg_1_1.time_ <= var_4_33 + arg_4_0 and arg_1_1.var_.actorSpriteComps1061 == nil then
+				arg_1_1.var_.actorSpriteComps1061 = var_4_32:GetComponentsInChildren(typeof(Image), true)
+			end
+
+			local var_4_34 = 2
+
+			if var_4_33 <= arg_1_1.time_ and arg_1_1.time_ < var_4_33 + var_4_34 then
+				local var_4_35 = (arg_1_1.time_ - var_4_33) / var_4_34
 
 				if arg_1_1.var_.actorSpriteComps1061 then
-					for iter_4_3, iter_4_4 in pairs(arg_1_1.var_.actorSpriteComps1061:ToTable()) do
-						if iter_4_4 then
-							local var_4_35 = Mathf.Lerp(iter_4_4.color.r, 0.5, var_4_34)
+					for iter_4_5, iter_4_6 in pairs(arg_1_1.var_.actorSpriteComps1061:ToTable()) do
+						if iter_4_6 then
+							if arg_1_1.isInRecall_ then
+								local var_4_36 = Mathf.Lerp(iter_4_6.color.r, 0.46, var_4_35)
+								local var_4_37 = Mathf.Lerp(iter_4_6.color.g, 0.43, var_4_35)
+								local var_4_38 = Mathf.Lerp(iter_4_6.color.b, 0.35, var_4_35)
 
-							iter_4_4.color = Color.New(var_4_35, var_4_35, var_4_35)
+								iter_4_6.color = Color.New(var_4_36, var_4_37, var_4_38)
+							else
+								local var_4_39 = Mathf.Lerp(iter_4_6.color.r, 0.5, var_4_35)
+
+								iter_4_6.color = Color.New(var_4_39, var_4_39, var_4_39)
+							end
 						end
 					end
 				end
 			end
 
-			if arg_1_1.time_ >= var_4_32 + var_4_33 and arg_1_1.time_ < var_4_32 + var_4_33 + arg_4_0 and arg_1_1.var_.actorSpriteComps1061 then
-				local var_4_36 = 0.5
-
-				for iter_4_5, iter_4_6 in pairs(arg_1_1.var_.actorSpriteComps1061:ToTable()) do
-					if iter_4_6 then
-						iter_4_6.color = Color.New(var_4_36, var_4_36, var_4_36)
+			if arg_1_1.time_ >= var_4_33 + var_4_34 and arg_1_1.time_ < var_4_33 + var_4_34 + arg_4_0 and arg_1_1.var_.actorSpriteComps1061 then
+				for iter_4_7, iter_4_8 in pairs(arg_1_1.var_.actorSpriteComps1061:ToTable()) do
+					if iter_4_8 then
+						if arg_1_1.isInRecall_ then
+							iter_4_8.color = Color.New(0.46, 0.43, 0.35)
+						else
+							iter_4_8.color = Color.New(0.5, 0.5, 0.5)
+						end
 					end
 				end
 
 				arg_1_1.var_.actorSpriteComps1061 = nil
 			end
 
-			local var_4_37 = 0
-			local var_4_38 = 1
+			local var_4_40 = 0
+			local var_4_41 = 1
 
-			if var_4_37 < arg_1_1.time_ and arg_1_1.time_ <= var_4_37 + arg_4_0 then
-				local var_4_39 = "play"
-				local var_4_40 = "effect"
+			if var_4_40 < arg_1_1.time_ and arg_1_1.time_ <= var_4_40 + arg_4_0 then
+				local var_4_42 = "play"
+				local var_4_43 = "effect"
 
-				arg_1_1:AudioAction(var_4_39, var_4_40, "ui_skip", "ui_bgm_lower", "")
+				arg_1_1:AudioAction(var_4_42, var_4_43, "ui_skip", "ui_bgm_lower", "")
 			end
 
 			if arg_1_1.frameCnt_ <= 1 then
 				arg_1_1.dialog_:SetActive(false)
 			end
 
-			local var_4_41 = 2
-			local var_4_42 = 0.275
+			local var_4_44 = 2
+			local var_4_45 = 0.275
 
-			if var_4_41 < arg_1_1.time_ and arg_1_1.time_ <= var_4_41 + arg_4_0 then
+			if var_4_44 < arg_1_1.time_ and arg_1_1.time_ <= var_4_44 + arg_4_0 then
 				arg_1_1.talkMaxDuration = 0
 
 				arg_1_1.dialog_:SetActive(true)
 
-				local var_4_43 = LeanTween.value(arg_1_1.dialog_, 0, 1, 0.3)
+				local var_4_46 = LeanTween.value(arg_1_1.dialog_, 0, 1, 0.3)
 
-				var_4_43:setOnUpdate(LuaHelper.FloatAction(function(arg_5_0)
+				var_4_46:setOnUpdate(LuaHelper.FloatAction(function(arg_5_0)
 					arg_1_1.dialogCg_.alpha = arg_5_0
 				end))
-				var_4_43:setOnComplete(System.Action(function()
+				var_4_46:setOnComplete(System.Action(function()
 					LeanTween.cancel(arg_1_1.dialog_)
-					var_4_43:setOnUpdate(nil):setOnComplete(nil)
+					var_4_46:setOnUpdate(nil):setOnComplete(nil)
 				end))
 
 				arg_1_1.duration_ = arg_1_1.duration_ + 0.3
 
 				SetActive(arg_1_1.leftNameGo_, true)
 
-				local var_4_44 = arg_1_1:FormatText(StoryNameCfg[623].name)
+				local var_4_47 = arg_1_1:FormatText(StoryNameCfg[623].name)
 
-				arg_1_1.leftNameTxt_.text = var_4_44
+				arg_1_1.leftNameTxt_.text = var_4_47
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_1_1.leftNameTxt_.transform)
 
@@ -225,27 +243,27 @@
 				SetActive(arg_1_1.iconTrs_.gameObject, false)
 				arg_1_1.callingController_:SetSelectedState("normal")
 
-				local var_4_45 = arg_1_1:GetWordFromCfg(910806001)
-				local var_4_46 = arg_1_1:FormatText(var_4_45.content)
+				local var_4_48 = arg_1_1:GetWordFromCfg(910806001)
+				local var_4_49 = arg_1_1:FormatText(var_4_48.content)
 
-				arg_1_1.text_.text = var_4_46
+				arg_1_1.text_.text = var_4_49
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_1_1.text_)
 
-				local var_4_47 = 11
-				local var_4_48 = utf8.len(var_4_46)
-				local var_4_49 = var_4_47 <= 0 and var_4_42 or var_4_42 * (var_4_48 / var_4_47)
+				local var_4_50 = 11
+				local var_4_51 = utf8.len(var_4_49)
+				local var_4_52 = var_4_50 <= 0 and var_4_45 or var_4_45 * (var_4_51 / var_4_50)
 
-				if var_4_49 > 0 and var_4_42 < var_4_49 then
-					arg_1_1.talkMaxDuration = var_4_49
-					var_4_41 = var_4_41 + 0.3
+				if var_4_52 > 0 and var_4_45 < var_4_52 then
+					arg_1_1.talkMaxDuration = var_4_52
+					var_4_44 = var_4_44 + 0.3
 
-					if var_4_49 + var_4_41 > arg_1_1.duration_ then
-						arg_1_1.duration_ = var_4_49 + var_4_41
+					if var_4_52 + var_4_44 > arg_1_1.duration_ then
+						arg_1_1.duration_ = var_4_52 + var_4_44
 					end
 				end
 
-				arg_1_1.text_.text = var_4_46
+				arg_1_1.text_.text = var_4_49
 				arg_1_1.typewritter.percent = 0
 
 				arg_1_1.typewritter:SetDirty()
@@ -253,16 +271,16 @@
 				arg_1_1:RecordContent(arg_1_1.text_.text)
 			end
 
-			local var_4_50 = var_4_41 + 0.3
-			local var_4_51 = math.max(var_4_42, arg_1_1.talkMaxDuration)
+			local var_4_53 = var_4_44 + 0.3
+			local var_4_54 = math.max(var_4_45, arg_1_1.talkMaxDuration)
 
-			if var_4_50 <= arg_1_1.time_ and arg_1_1.time_ < var_4_50 + var_4_51 then
-				arg_1_1.typewritter.percent = (arg_1_1.time_ - var_4_50) / var_4_51
+			if var_4_53 <= arg_1_1.time_ and arg_1_1.time_ < var_4_53 + var_4_54 then
+				arg_1_1.typewritter.percent = (arg_1_1.time_ - var_4_53) / var_4_54
 
 				arg_1_1.typewritter:SetDirty()
 			end
 
-			if arg_1_1.time_ >= var_4_50 + var_4_51 and arg_1_1.time_ < var_4_50 + var_4_51 + arg_4_0 then
+			if arg_1_1.time_ >= var_4_53 + var_4_54 and arg_1_1.time_ < var_4_53 + var_4_54 + arg_4_0 then
 				arg_1_1.typewritter.percent = 1
 
 				arg_1_1.typewritter:SetDirty()
@@ -342,39 +360,49 @@
 				if arg_7_1.var_.actorSpriteComps1061 then
 					for iter_10_1, iter_10_2 in pairs(arg_7_1.var_.actorSpriteComps1061:ToTable()) do
 						if iter_10_2 then
-							local var_10_11 = Mathf.Lerp(iter_10_2.color.r, 1, var_10_10)
+							if arg_7_1.isInRecall_ then
+								local var_10_11 = Mathf.Lerp(iter_10_2.color.r, 0.82, var_10_10)
+								local var_10_12 = Mathf.Lerp(iter_10_2.color.g, 0.77, var_10_10)
+								local var_10_13 = Mathf.Lerp(iter_10_2.color.b, 0.62, var_10_10)
 
-							iter_10_2.color = Color.New(var_10_11, var_10_11, var_10_11)
+								iter_10_2.color = Color.New(var_10_11, var_10_12, var_10_13)
+							else
+								local var_10_14 = Mathf.Lerp(iter_10_2.color.r, 1, var_10_10)
+
+								iter_10_2.color = Color.New(var_10_14, var_10_14, var_10_14)
+							end
 						end
 					end
 				end
 			end
 
 			if arg_7_1.time_ >= var_10_8 + var_10_9 and arg_7_1.time_ < var_10_8 + var_10_9 + arg_10_0 and arg_7_1.var_.actorSpriteComps1061 then
-				local var_10_12 = 1
-
 				for iter_10_3, iter_10_4 in pairs(arg_7_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_10_4 then
-						iter_10_4.color = Color.New(var_10_12, var_10_12, var_10_12)
+						if arg_7_1.isInRecall_ then
+							iter_10_4.color = Color.New(0.82, 0.77, 0.62)
+						else
+							iter_10_4.color = Color.New(1, 1, 1)
+						end
 					end
 				end
 
 				arg_7_1.var_.actorSpriteComps1061 = nil
 			end
 
-			local var_10_13 = 0
-			local var_10_14 = 0.55
+			local var_10_15 = 0
+			local var_10_16 = 0.55
 
-			if var_10_13 < arg_7_1.time_ and arg_7_1.time_ <= var_10_13 + arg_10_0 then
+			if var_10_15 < arg_7_1.time_ and arg_7_1.time_ <= var_10_15 + arg_10_0 then
 				arg_7_1.talkMaxDuration = 0
 				arg_7_1.dialogCg_.alpha = 1
 
 				arg_7_1.dialog_:SetActive(true)
 				SetActive(arg_7_1.leftNameGo_, true)
 
-				local var_10_15 = arg_7_1:FormatText(StoryNameCfg[612].name)
+				local var_10_17 = arg_7_1:FormatText(StoryNameCfg[612].name)
 
-				arg_7_1.leftNameTxt_.text = var_10_15
+				arg_7_1.leftNameTxt_.text = var_10_17
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_7_1.leftNameTxt_.transform)
 
@@ -385,26 +413,26 @@
 				SetActive(arg_7_1.iconTrs_.gameObject, false)
 				arg_7_1.callingController_:SetSelectedState("normal")
 
-				local var_10_16 = arg_7_1:GetWordFromCfg(910806002)
-				local var_10_17 = arg_7_1:FormatText(var_10_16.content)
+				local var_10_18 = arg_7_1:GetWordFromCfg(910806002)
+				local var_10_19 = arg_7_1:FormatText(var_10_18.content)
 
-				arg_7_1.text_.text = var_10_17
+				arg_7_1.text_.text = var_10_19
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_7_1.text_)
 
-				local var_10_18 = 22
-				local var_10_19 = utf8.len(var_10_17)
-				local var_10_20 = var_10_18 <= 0 and var_10_14 or var_10_14 * (var_10_19 / var_10_18)
+				local var_10_20 = 22
+				local var_10_21 = utf8.len(var_10_19)
+				local var_10_22 = var_10_20 <= 0 and var_10_16 or var_10_16 * (var_10_21 / var_10_20)
 
-				if var_10_20 > 0 and var_10_14 < var_10_20 then
-					arg_7_1.talkMaxDuration = var_10_20
+				if var_10_22 > 0 and var_10_16 < var_10_22 then
+					arg_7_1.talkMaxDuration = var_10_22
 
-					if var_10_20 + var_10_13 > arg_7_1.duration_ then
-						arg_7_1.duration_ = var_10_20 + var_10_13
+					if var_10_22 + var_10_15 > arg_7_1.duration_ then
+						arg_7_1.duration_ = var_10_22 + var_10_15
 					end
 				end
 
-				arg_7_1.text_.text = var_10_17
+				arg_7_1.text_.text = var_10_19
 				arg_7_1.typewritter.percent = 0
 
 				arg_7_1.typewritter:SetDirty()
@@ -412,15 +440,15 @@
 				arg_7_1:RecordContent(arg_7_1.text_.text)
 			end
 
-			local var_10_21 = math.max(var_10_14, arg_7_1.talkMaxDuration)
+			local var_10_23 = math.max(var_10_16, arg_7_1.talkMaxDuration)
 
-			if var_10_13 <= arg_7_1.time_ and arg_7_1.time_ < var_10_13 + var_10_21 then
-				arg_7_1.typewritter.percent = (arg_7_1.time_ - var_10_13) / var_10_21
+			if var_10_15 <= arg_7_1.time_ and arg_7_1.time_ < var_10_15 + var_10_23 then
+				arg_7_1.typewritter.percent = (arg_7_1.time_ - var_10_15) / var_10_23
 
 				arg_7_1.typewritter:SetDirty()
 			end
 
-			if arg_7_1.time_ >= var_10_13 + var_10_21 and arg_7_1.time_ < var_10_13 + var_10_21 + arg_10_0 then
+			if arg_7_1.time_ >= var_10_15 + var_10_23 and arg_7_1.time_ < var_10_15 + var_10_23 + arg_10_0 then
 				arg_7_1.typewritter.percent = 1
 
 				arg_7_1.typewritter:SetDirty()
@@ -465,39 +493,49 @@
 				if arg_11_1.var_.actorSpriteComps1061 then
 					for iter_14_0, iter_14_1 in pairs(arg_11_1.var_.actorSpriteComps1061:ToTable()) do
 						if iter_14_1 then
-							local var_14_4 = Mathf.Lerp(iter_14_1.color.r, 0.5, var_14_3)
+							if arg_11_1.isInRecall_ then
+								local var_14_4 = Mathf.Lerp(iter_14_1.color.r, 0.46, var_14_3)
+								local var_14_5 = Mathf.Lerp(iter_14_1.color.g, 0.43, var_14_3)
+								local var_14_6 = Mathf.Lerp(iter_14_1.color.b, 0.35, var_14_3)
 
-							iter_14_1.color = Color.New(var_14_4, var_14_4, var_14_4)
+								iter_14_1.color = Color.New(var_14_4, var_14_5, var_14_6)
+							else
+								local var_14_7 = Mathf.Lerp(iter_14_1.color.r, 0.5, var_14_3)
+
+								iter_14_1.color = Color.New(var_14_7, var_14_7, var_14_7)
+							end
 						end
 					end
 				end
 			end
 
 			if arg_11_1.time_ >= var_14_1 + var_14_2 and arg_11_1.time_ < var_14_1 + var_14_2 + arg_14_0 and arg_11_1.var_.actorSpriteComps1061 then
-				local var_14_5 = 0.5
-
 				for iter_14_2, iter_14_3 in pairs(arg_11_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_14_3 then
-						iter_14_3.color = Color.New(var_14_5, var_14_5, var_14_5)
+						if arg_11_1.isInRecall_ then
+							iter_14_3.color = Color.New(0.46, 0.43, 0.35)
+						else
+							iter_14_3.color = Color.New(0.5, 0.5, 0.5)
+						end
 					end
 				end
 
 				arg_11_1.var_.actorSpriteComps1061 = nil
 			end
 
-			local var_14_6 = 0
-			local var_14_7 = 0.35
+			local var_14_8 = 0
+			local var_14_9 = 0.35
 
-			if var_14_6 < arg_11_1.time_ and arg_11_1.time_ <= var_14_6 + arg_14_0 then
+			if var_14_8 < arg_11_1.time_ and arg_11_1.time_ <= var_14_8 + arg_14_0 then
 				arg_11_1.talkMaxDuration = 0
 				arg_11_1.dialogCg_.alpha = 1
 
 				arg_11_1.dialog_:SetActive(true)
 				SetActive(arg_11_1.leftNameGo_, true)
 
-				local var_14_8 = arg_11_1:FormatText(StoryNameCfg[7].name)
+				local var_14_10 = arg_11_1:FormatText(StoryNameCfg[7].name)
 
-				arg_11_1.leftNameTxt_.text = var_14_8
+				arg_11_1.leftNameTxt_.text = var_14_10
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_11_1.leftNameTxt_.transform)
 
@@ -508,26 +546,26 @@
 				SetActive(arg_11_1.iconTrs_.gameObject, false)
 				arg_11_1.callingController_:SetSelectedState("normal")
 
-				local var_14_9 = arg_11_1:GetWordFromCfg(910806003)
-				local var_14_10 = arg_11_1:FormatText(var_14_9.content)
+				local var_14_11 = arg_11_1:GetWordFromCfg(910806003)
+				local var_14_12 = arg_11_1:FormatText(var_14_11.content)
 
-				arg_11_1.text_.text = var_14_10
+				arg_11_1.text_.text = var_14_12
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_11_1.text_)
 
-				local var_14_11 = 14
-				local var_14_12 = utf8.len(var_14_10)
-				local var_14_13 = var_14_11 <= 0 and var_14_7 or var_14_7 * (var_14_12 / var_14_11)
+				local var_14_13 = 14
+				local var_14_14 = utf8.len(var_14_12)
+				local var_14_15 = var_14_13 <= 0 and var_14_9 or var_14_9 * (var_14_14 / var_14_13)
 
-				if var_14_13 > 0 and var_14_7 < var_14_13 then
-					arg_11_1.talkMaxDuration = var_14_13
+				if var_14_15 > 0 and var_14_9 < var_14_15 then
+					arg_11_1.talkMaxDuration = var_14_15
 
-					if var_14_13 + var_14_6 > arg_11_1.duration_ then
-						arg_11_1.duration_ = var_14_13 + var_14_6
+					if var_14_15 + var_14_8 > arg_11_1.duration_ then
+						arg_11_1.duration_ = var_14_15 + var_14_8
 					end
 				end
 
-				arg_11_1.text_.text = var_14_10
+				arg_11_1.text_.text = var_14_12
 				arg_11_1.typewritter.percent = 0
 
 				arg_11_1.typewritter:SetDirty()
@@ -535,15 +573,15 @@
 				arg_11_1:RecordContent(arg_11_1.text_.text)
 			end
 
-			local var_14_14 = math.max(var_14_7, arg_11_1.talkMaxDuration)
+			local var_14_16 = math.max(var_14_9, arg_11_1.talkMaxDuration)
 
-			if var_14_6 <= arg_11_1.time_ and arg_11_1.time_ < var_14_6 + var_14_14 then
-				arg_11_1.typewritter.percent = (arg_11_1.time_ - var_14_6) / var_14_14
+			if var_14_8 <= arg_11_1.time_ and arg_11_1.time_ < var_14_8 + var_14_16 then
+				arg_11_1.typewritter.percent = (arg_11_1.time_ - var_14_8) / var_14_16
 
 				arg_11_1.typewritter:SetDirty()
 			end
 
-			if arg_11_1.time_ >= var_14_6 + var_14_14 and arg_11_1.time_ < var_14_6 + var_14_14 + arg_14_0 then
+			if arg_11_1.time_ >= var_14_8 + var_14_16 and arg_11_1.time_ < var_14_8 + var_14_16 + arg_14_0 then
 				arg_11_1.typewritter.percent = 1
 
 				arg_11_1.typewritter:SetDirty()
@@ -623,39 +661,49 @@
 				if arg_15_1.var_.actorSpriteComps1061 then
 					for iter_18_1, iter_18_2 in pairs(arg_15_1.var_.actorSpriteComps1061:ToTable()) do
 						if iter_18_2 then
-							local var_18_11 = Mathf.Lerp(iter_18_2.color.r, 1, var_18_10)
+							if arg_15_1.isInRecall_ then
+								local var_18_11 = Mathf.Lerp(iter_18_2.color.r, 0.82, var_18_10)
+								local var_18_12 = Mathf.Lerp(iter_18_2.color.g, 0.77, var_18_10)
+								local var_18_13 = Mathf.Lerp(iter_18_2.color.b, 0.62, var_18_10)
 
-							iter_18_2.color = Color.New(var_18_11, var_18_11, var_18_11)
+								iter_18_2.color = Color.New(var_18_11, var_18_12, var_18_13)
+							else
+								local var_18_14 = Mathf.Lerp(iter_18_2.color.r, 1, var_18_10)
+
+								iter_18_2.color = Color.New(var_18_14, var_18_14, var_18_14)
+							end
 						end
 					end
 				end
 			end
 
 			if arg_15_1.time_ >= var_18_8 + var_18_9 and arg_15_1.time_ < var_18_8 + var_18_9 + arg_18_0 and arg_15_1.var_.actorSpriteComps1061 then
-				local var_18_12 = 1
-
 				for iter_18_3, iter_18_4 in pairs(arg_15_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_18_4 then
-						iter_18_4.color = Color.New(var_18_12, var_18_12, var_18_12)
+						if arg_15_1.isInRecall_ then
+							iter_18_4.color = Color.New(0.82, 0.77, 0.62)
+						else
+							iter_18_4.color = Color.New(1, 1, 1)
+						end
 					end
 				end
 
 				arg_15_1.var_.actorSpriteComps1061 = nil
 			end
 
-			local var_18_13 = 0
-			local var_18_14 = 0.5
+			local var_18_15 = 0
+			local var_18_16 = 0.5
 
-			if var_18_13 < arg_15_1.time_ and arg_15_1.time_ <= var_18_13 + arg_18_0 then
+			if var_18_15 < arg_15_1.time_ and arg_15_1.time_ <= var_18_15 + arg_18_0 then
 				arg_15_1.talkMaxDuration = 0
 				arg_15_1.dialogCg_.alpha = 1
 
 				arg_15_1.dialog_:SetActive(true)
 				SetActive(arg_15_1.leftNameGo_, true)
 
-				local var_18_15 = arg_15_1:FormatText(StoryNameCfg[612].name)
+				local var_18_17 = arg_15_1:FormatText(StoryNameCfg[612].name)
 
-				arg_15_1.leftNameTxt_.text = var_18_15
+				arg_15_1.leftNameTxt_.text = var_18_17
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_15_1.leftNameTxt_.transform)
 
@@ -666,26 +714,26 @@
 				SetActive(arg_15_1.iconTrs_.gameObject, false)
 				arg_15_1.callingController_:SetSelectedState("normal")
 
-				local var_18_16 = arg_15_1:GetWordFromCfg(910806004)
-				local var_18_17 = arg_15_1:FormatText(var_18_16.content)
+				local var_18_18 = arg_15_1:GetWordFromCfg(910806004)
+				local var_18_19 = arg_15_1:FormatText(var_18_18.content)
 
-				arg_15_1.text_.text = var_18_17
+				arg_15_1.text_.text = var_18_19
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_15_1.text_)
 
-				local var_18_18 = 20
-				local var_18_19 = utf8.len(var_18_17)
-				local var_18_20 = var_18_18 <= 0 and var_18_14 or var_18_14 * (var_18_19 / var_18_18)
+				local var_18_20 = 20
+				local var_18_21 = utf8.len(var_18_19)
+				local var_18_22 = var_18_20 <= 0 and var_18_16 or var_18_16 * (var_18_21 / var_18_20)
 
-				if var_18_20 > 0 and var_18_14 < var_18_20 then
-					arg_15_1.talkMaxDuration = var_18_20
+				if var_18_22 > 0 and var_18_16 < var_18_22 then
+					arg_15_1.talkMaxDuration = var_18_22
 
-					if var_18_20 + var_18_13 > arg_15_1.duration_ then
-						arg_15_1.duration_ = var_18_20 + var_18_13
+					if var_18_22 + var_18_15 > arg_15_1.duration_ then
+						arg_15_1.duration_ = var_18_22 + var_18_15
 					end
 				end
 
-				arg_15_1.text_.text = var_18_17
+				arg_15_1.text_.text = var_18_19
 				arg_15_1.typewritter.percent = 0
 
 				arg_15_1.typewritter:SetDirty()
@@ -693,15 +741,15 @@
 				arg_15_1:RecordContent(arg_15_1.text_.text)
 			end
 
-			local var_18_21 = math.max(var_18_14, arg_15_1.talkMaxDuration)
+			local var_18_23 = math.max(var_18_16, arg_15_1.talkMaxDuration)
 
-			if var_18_13 <= arg_15_1.time_ and arg_15_1.time_ < var_18_13 + var_18_21 then
-				arg_15_1.typewritter.percent = (arg_15_1.time_ - var_18_13) / var_18_21
+			if var_18_15 <= arg_15_1.time_ and arg_15_1.time_ < var_18_15 + var_18_23 then
+				arg_15_1.typewritter.percent = (arg_15_1.time_ - var_18_15) / var_18_23
 
 				arg_15_1.typewritter:SetDirty()
 			end
 
-			if arg_15_1.time_ >= var_18_13 + var_18_21 and arg_15_1.time_ < var_18_13 + var_18_21 + arg_18_0 then
+			if arg_15_1.time_ >= var_18_15 + var_18_23 and arg_15_1.time_ < var_18_15 + var_18_23 + arg_18_0 then
 				arg_15_1.typewritter.percent = 1
 
 				arg_15_1.typewritter:SetDirty()
@@ -746,39 +794,49 @@
 				if arg_19_1.var_.actorSpriteComps1061 then
 					for iter_22_0, iter_22_1 in pairs(arg_19_1.var_.actorSpriteComps1061:ToTable()) do
 						if iter_22_1 then
-							local var_22_4 = Mathf.Lerp(iter_22_1.color.r, 0.5, var_22_3)
+							if arg_19_1.isInRecall_ then
+								local var_22_4 = Mathf.Lerp(iter_22_1.color.r, 0.46, var_22_3)
+								local var_22_5 = Mathf.Lerp(iter_22_1.color.g, 0.43, var_22_3)
+								local var_22_6 = Mathf.Lerp(iter_22_1.color.b, 0.35, var_22_3)
 
-							iter_22_1.color = Color.New(var_22_4, var_22_4, var_22_4)
+								iter_22_1.color = Color.New(var_22_4, var_22_5, var_22_6)
+							else
+								local var_22_7 = Mathf.Lerp(iter_22_1.color.r, 0.5, var_22_3)
+
+								iter_22_1.color = Color.New(var_22_7, var_22_7, var_22_7)
+							end
 						end
 					end
 				end
 			end
 
 			if arg_19_1.time_ >= var_22_1 + var_22_2 and arg_19_1.time_ < var_22_1 + var_22_2 + arg_22_0 and arg_19_1.var_.actorSpriteComps1061 then
-				local var_22_5 = 0.5
-
 				for iter_22_2, iter_22_3 in pairs(arg_19_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_22_3 then
-						iter_22_3.color = Color.New(var_22_5, var_22_5, var_22_5)
+						if arg_19_1.isInRecall_ then
+							iter_22_3.color = Color.New(0.46, 0.43, 0.35)
+						else
+							iter_22_3.color = Color.New(0.5, 0.5, 0.5)
+						end
 					end
 				end
 
 				arg_19_1.var_.actorSpriteComps1061 = nil
 			end
 
-			local var_22_6 = 0
-			local var_22_7 = 0.325
+			local var_22_8 = 0
+			local var_22_9 = 0.325
 
-			if var_22_6 < arg_19_1.time_ and arg_19_1.time_ <= var_22_6 + arg_22_0 then
+			if var_22_8 < arg_19_1.time_ and arg_19_1.time_ <= var_22_8 + arg_22_0 then
 				arg_19_1.talkMaxDuration = 0
 				arg_19_1.dialogCg_.alpha = 1
 
 				arg_19_1.dialog_:SetActive(true)
 				SetActive(arg_19_1.leftNameGo_, true)
 
-				local var_22_8 = arg_19_1:FormatText(StoryNameCfg[7].name)
+				local var_22_10 = arg_19_1:FormatText(StoryNameCfg[7].name)
 
-				arg_19_1.leftNameTxt_.text = var_22_8
+				arg_19_1.leftNameTxt_.text = var_22_10
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_19_1.leftNameTxt_.transform)
 
@@ -789,26 +847,26 @@
 				SetActive(arg_19_1.iconTrs_.gameObject, false)
 				arg_19_1.callingController_:SetSelectedState("normal")
 
-				local var_22_9 = arg_19_1:GetWordFromCfg(910806005)
-				local var_22_10 = arg_19_1:FormatText(var_22_9.content)
+				local var_22_11 = arg_19_1:GetWordFromCfg(910806005)
+				local var_22_12 = arg_19_1:FormatText(var_22_11.content)
 
-				arg_19_1.text_.text = var_22_10
+				arg_19_1.text_.text = var_22_12
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_19_1.text_)
 
-				local var_22_11 = 13
-				local var_22_12 = utf8.len(var_22_10)
-				local var_22_13 = var_22_11 <= 0 and var_22_7 or var_22_7 * (var_22_12 / var_22_11)
+				local var_22_13 = 13
+				local var_22_14 = utf8.len(var_22_12)
+				local var_22_15 = var_22_13 <= 0 and var_22_9 or var_22_9 * (var_22_14 / var_22_13)
 
-				if var_22_13 > 0 and var_22_7 < var_22_13 then
-					arg_19_1.talkMaxDuration = var_22_13
+				if var_22_15 > 0 and var_22_9 < var_22_15 then
+					arg_19_1.talkMaxDuration = var_22_15
 
-					if var_22_13 + var_22_6 > arg_19_1.duration_ then
-						arg_19_1.duration_ = var_22_13 + var_22_6
+					if var_22_15 + var_22_8 > arg_19_1.duration_ then
+						arg_19_1.duration_ = var_22_15 + var_22_8
 					end
 				end
 
-				arg_19_1.text_.text = var_22_10
+				arg_19_1.text_.text = var_22_12
 				arg_19_1.typewritter.percent = 0
 
 				arg_19_1.typewritter:SetDirty()
@@ -816,15 +874,15 @@
 				arg_19_1:RecordContent(arg_19_1.text_.text)
 			end
 
-			local var_22_14 = math.max(var_22_7, arg_19_1.talkMaxDuration)
+			local var_22_16 = math.max(var_22_9, arg_19_1.talkMaxDuration)
 
-			if var_22_6 <= arg_19_1.time_ and arg_19_1.time_ < var_22_6 + var_22_14 then
-				arg_19_1.typewritter.percent = (arg_19_1.time_ - var_22_6) / var_22_14
+			if var_22_8 <= arg_19_1.time_ and arg_19_1.time_ < var_22_8 + var_22_16 then
+				arg_19_1.typewritter.percent = (arg_19_1.time_ - var_22_8) / var_22_16
 
 				arg_19_1.typewritter:SetDirty()
 			end
 
-			if arg_19_1.time_ >= var_22_6 + var_22_14 and arg_19_1.time_ < var_22_6 + var_22_14 + arg_22_0 then
+			if arg_19_1.time_ >= var_22_8 + var_22_16 and arg_19_1.time_ < var_22_8 + var_22_16 + arg_22_0 then
 				arg_19_1.typewritter.percent = 1
 
 				arg_19_1.typewritter:SetDirty()
@@ -904,39 +962,49 @@
 				if arg_23_1.var_.actorSpriteComps1061 then
 					for iter_26_1, iter_26_2 in pairs(arg_23_1.var_.actorSpriteComps1061:ToTable()) do
 						if iter_26_2 then
-							local var_26_11 = Mathf.Lerp(iter_26_2.color.r, 1, var_26_10)
+							if arg_23_1.isInRecall_ then
+								local var_26_11 = Mathf.Lerp(iter_26_2.color.r, 0.82, var_26_10)
+								local var_26_12 = Mathf.Lerp(iter_26_2.color.g, 0.77, var_26_10)
+								local var_26_13 = Mathf.Lerp(iter_26_2.color.b, 0.62, var_26_10)
 
-							iter_26_2.color = Color.New(var_26_11, var_26_11, var_26_11)
+								iter_26_2.color = Color.New(var_26_11, var_26_12, var_26_13)
+							else
+								local var_26_14 = Mathf.Lerp(iter_26_2.color.r, 1, var_26_10)
+
+								iter_26_2.color = Color.New(var_26_14, var_26_14, var_26_14)
+							end
 						end
 					end
 				end
 			end
 
 			if arg_23_1.time_ >= var_26_8 + var_26_9 and arg_23_1.time_ < var_26_8 + var_26_9 + arg_26_0 and arg_23_1.var_.actorSpriteComps1061 then
-				local var_26_12 = 1
-
 				for iter_26_3, iter_26_4 in pairs(arg_23_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_26_4 then
-						iter_26_4.color = Color.New(var_26_12, var_26_12, var_26_12)
+						if arg_23_1.isInRecall_ then
+							iter_26_4.color = Color.New(0.82, 0.77, 0.62)
+						else
+							iter_26_4.color = Color.New(1, 1, 1)
+						end
 					end
 				end
 
 				arg_23_1.var_.actorSpriteComps1061 = nil
 			end
 
-			local var_26_13 = 0
-			local var_26_14 = 0.2
+			local var_26_15 = 0
+			local var_26_16 = 0.2
 
-			if var_26_13 < arg_23_1.time_ and arg_23_1.time_ <= var_26_13 + arg_26_0 then
+			if var_26_15 < arg_23_1.time_ and arg_23_1.time_ <= var_26_15 + arg_26_0 then
 				arg_23_1.talkMaxDuration = 0
 				arg_23_1.dialogCg_.alpha = 1
 
 				arg_23_1.dialog_:SetActive(true)
 				SetActive(arg_23_1.leftNameGo_, true)
 
-				local var_26_15 = arg_23_1:FormatText(StoryNameCfg[612].name)
+				local var_26_17 = arg_23_1:FormatText(StoryNameCfg[612].name)
 
-				arg_23_1.leftNameTxt_.text = var_26_15
+				arg_23_1.leftNameTxt_.text = var_26_17
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_23_1.leftNameTxt_.transform)
 
@@ -947,26 +1015,26 @@
 				SetActive(arg_23_1.iconTrs_.gameObject, false)
 				arg_23_1.callingController_:SetSelectedState("normal")
 
-				local var_26_16 = arg_23_1:GetWordFromCfg(910806006)
-				local var_26_17 = arg_23_1:FormatText(var_26_16.content)
+				local var_26_18 = arg_23_1:GetWordFromCfg(910806006)
+				local var_26_19 = arg_23_1:FormatText(var_26_18.content)
 
-				arg_23_1.text_.text = var_26_17
+				arg_23_1.text_.text = var_26_19
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_23_1.text_)
 
-				local var_26_18 = 8
-				local var_26_19 = utf8.len(var_26_17)
-				local var_26_20 = var_26_18 <= 0 and var_26_14 or var_26_14 * (var_26_19 / var_26_18)
+				local var_26_20 = 8
+				local var_26_21 = utf8.len(var_26_19)
+				local var_26_22 = var_26_20 <= 0 and var_26_16 or var_26_16 * (var_26_21 / var_26_20)
 
-				if var_26_20 > 0 and var_26_14 < var_26_20 then
-					arg_23_1.talkMaxDuration = var_26_20
+				if var_26_22 > 0 and var_26_16 < var_26_22 then
+					arg_23_1.talkMaxDuration = var_26_22
 
-					if var_26_20 + var_26_13 > arg_23_1.duration_ then
-						arg_23_1.duration_ = var_26_20 + var_26_13
+					if var_26_22 + var_26_15 > arg_23_1.duration_ then
+						arg_23_1.duration_ = var_26_22 + var_26_15
 					end
 				end
 
-				arg_23_1.text_.text = var_26_17
+				arg_23_1.text_.text = var_26_19
 				arg_23_1.typewritter.percent = 0
 
 				arg_23_1.typewritter:SetDirty()
@@ -974,15 +1042,15 @@
 				arg_23_1:RecordContent(arg_23_1.text_.text)
 			end
 
-			local var_26_21 = math.max(var_26_14, arg_23_1.talkMaxDuration)
+			local var_26_23 = math.max(var_26_16, arg_23_1.talkMaxDuration)
 
-			if var_26_13 <= arg_23_1.time_ and arg_23_1.time_ < var_26_13 + var_26_21 then
-				arg_23_1.typewritter.percent = (arg_23_1.time_ - var_26_13) / var_26_21
+			if var_26_15 <= arg_23_1.time_ and arg_23_1.time_ < var_26_15 + var_26_23 then
+				arg_23_1.typewritter.percent = (arg_23_1.time_ - var_26_15) / var_26_23
 
 				arg_23_1.typewritter:SetDirty()
 			end
 
-			if arg_23_1.time_ >= var_26_13 + var_26_21 and arg_23_1.time_ < var_26_13 + var_26_21 + arg_26_0 then
+			if arg_23_1.time_ >= var_26_15 + var_26_23 and arg_23_1.time_ < var_26_15 + var_26_23 + arg_26_0 then
 				arg_23_1.typewritter.percent = 1
 
 				arg_23_1.typewritter:SetDirty()
@@ -1027,39 +1095,49 @@
 				if arg_27_1.var_.actorSpriteComps1061 then
 					for iter_30_0, iter_30_1 in pairs(arg_27_1.var_.actorSpriteComps1061:ToTable()) do
 						if iter_30_1 then
-							local var_30_4 = Mathf.Lerp(iter_30_1.color.r, 0.5, var_30_3)
+							if arg_27_1.isInRecall_ then
+								local var_30_4 = Mathf.Lerp(iter_30_1.color.r, 0.46, var_30_3)
+								local var_30_5 = Mathf.Lerp(iter_30_1.color.g, 0.43, var_30_3)
+								local var_30_6 = Mathf.Lerp(iter_30_1.color.b, 0.35, var_30_3)
 
-							iter_30_1.color = Color.New(var_30_4, var_30_4, var_30_4)
+								iter_30_1.color = Color.New(var_30_4, var_30_5, var_30_6)
+							else
+								local var_30_7 = Mathf.Lerp(iter_30_1.color.r, 0.5, var_30_3)
+
+								iter_30_1.color = Color.New(var_30_7, var_30_7, var_30_7)
+							end
 						end
 					end
 				end
 			end
 
 			if arg_27_1.time_ >= var_30_1 + var_30_2 and arg_27_1.time_ < var_30_1 + var_30_2 + arg_30_0 and arg_27_1.var_.actorSpriteComps1061 then
-				local var_30_5 = 0.5
-
 				for iter_30_2, iter_30_3 in pairs(arg_27_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_30_3 then
-						iter_30_3.color = Color.New(var_30_5, var_30_5, var_30_5)
+						if arg_27_1.isInRecall_ then
+							iter_30_3.color = Color.New(0.46, 0.43, 0.35)
+						else
+							iter_30_3.color = Color.New(0.5, 0.5, 0.5)
+						end
 					end
 				end
 
 				arg_27_1.var_.actorSpriteComps1061 = nil
 			end
 
-			local var_30_6 = 0
-			local var_30_7 = 0.4
+			local var_30_8 = 0
+			local var_30_9 = 0.4
 
-			if var_30_6 < arg_27_1.time_ and arg_27_1.time_ <= var_30_6 + arg_30_0 then
+			if var_30_8 < arg_27_1.time_ and arg_27_1.time_ <= var_30_8 + arg_30_0 then
 				arg_27_1.talkMaxDuration = 0
 				arg_27_1.dialogCg_.alpha = 1
 
 				arg_27_1.dialog_:SetActive(true)
 				SetActive(arg_27_1.leftNameGo_, true)
 
-				local var_30_8 = arg_27_1:FormatText(StoryNameCfg[7].name)
+				local var_30_10 = arg_27_1:FormatText(StoryNameCfg[7].name)
 
-				arg_27_1.leftNameTxt_.text = var_30_8
+				arg_27_1.leftNameTxt_.text = var_30_10
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_27_1.leftNameTxt_.transform)
 
@@ -1070,26 +1148,26 @@
 				SetActive(arg_27_1.iconTrs_.gameObject, false)
 				arg_27_1.callingController_:SetSelectedState("normal")
 
-				local var_30_9 = arg_27_1:GetWordFromCfg(910806007)
-				local var_30_10 = arg_27_1:FormatText(var_30_9.content)
+				local var_30_11 = arg_27_1:GetWordFromCfg(910806007)
+				local var_30_12 = arg_27_1:FormatText(var_30_11.content)
 
-				arg_27_1.text_.text = var_30_10
+				arg_27_1.text_.text = var_30_12
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_27_1.text_)
 
-				local var_30_11 = 16
-				local var_30_12 = utf8.len(var_30_10)
-				local var_30_13 = var_30_11 <= 0 and var_30_7 or var_30_7 * (var_30_12 / var_30_11)
+				local var_30_13 = 16
+				local var_30_14 = utf8.len(var_30_12)
+				local var_30_15 = var_30_13 <= 0 and var_30_9 or var_30_9 * (var_30_14 / var_30_13)
 
-				if var_30_13 > 0 and var_30_7 < var_30_13 then
-					arg_27_1.talkMaxDuration = var_30_13
+				if var_30_15 > 0 and var_30_9 < var_30_15 then
+					arg_27_1.talkMaxDuration = var_30_15
 
-					if var_30_13 + var_30_6 > arg_27_1.duration_ then
-						arg_27_1.duration_ = var_30_13 + var_30_6
+					if var_30_15 + var_30_8 > arg_27_1.duration_ then
+						arg_27_1.duration_ = var_30_15 + var_30_8
 					end
 				end
 
-				arg_27_1.text_.text = var_30_10
+				arg_27_1.text_.text = var_30_12
 				arg_27_1.typewritter.percent = 0
 
 				arg_27_1.typewritter:SetDirty()
@@ -1097,15 +1175,15 @@
 				arg_27_1:RecordContent(arg_27_1.text_.text)
 			end
 
-			local var_30_14 = math.max(var_30_7, arg_27_1.talkMaxDuration)
+			local var_30_16 = math.max(var_30_9, arg_27_1.talkMaxDuration)
 
-			if var_30_6 <= arg_27_1.time_ and arg_27_1.time_ < var_30_6 + var_30_14 then
-				arg_27_1.typewritter.percent = (arg_27_1.time_ - var_30_6) / var_30_14
+			if var_30_8 <= arg_27_1.time_ and arg_27_1.time_ < var_30_8 + var_30_16 then
+				arg_27_1.typewritter.percent = (arg_27_1.time_ - var_30_8) / var_30_16
 
 				arg_27_1.typewritter:SetDirty()
 			end
 
-			if arg_27_1.time_ >= var_30_6 + var_30_14 and arg_27_1.time_ < var_30_6 + var_30_14 + arg_30_0 then
+			if arg_27_1.time_ >= var_30_8 + var_30_16 and arg_27_1.time_ < var_30_8 + var_30_16 + arg_30_0 then
 				arg_27_1.typewritter.percent = 1
 
 				arg_27_1.typewritter:SetDirty()
@@ -1185,39 +1263,49 @@
 				if arg_31_1.var_.actorSpriteComps1061 then
 					for iter_34_1, iter_34_2 in pairs(arg_31_1.var_.actorSpriteComps1061:ToTable()) do
 						if iter_34_2 then
-							local var_34_11 = Mathf.Lerp(iter_34_2.color.r, 1, var_34_10)
+							if arg_31_1.isInRecall_ then
+								local var_34_11 = Mathf.Lerp(iter_34_2.color.r, 0.82, var_34_10)
+								local var_34_12 = Mathf.Lerp(iter_34_2.color.g, 0.77, var_34_10)
+								local var_34_13 = Mathf.Lerp(iter_34_2.color.b, 0.62, var_34_10)
 
-							iter_34_2.color = Color.New(var_34_11, var_34_11, var_34_11)
+								iter_34_2.color = Color.New(var_34_11, var_34_12, var_34_13)
+							else
+								local var_34_14 = Mathf.Lerp(iter_34_2.color.r, 1, var_34_10)
+
+								iter_34_2.color = Color.New(var_34_14, var_34_14, var_34_14)
+							end
 						end
 					end
 				end
 			end
 
 			if arg_31_1.time_ >= var_34_8 + var_34_9 and arg_31_1.time_ < var_34_8 + var_34_9 + arg_34_0 and arg_31_1.var_.actorSpriteComps1061 then
-				local var_34_12 = 1
-
 				for iter_34_3, iter_34_4 in pairs(arg_31_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_34_4 then
-						iter_34_4.color = Color.New(var_34_12, var_34_12, var_34_12)
+						if arg_31_1.isInRecall_ then
+							iter_34_4.color = Color.New(0.82, 0.77, 0.62)
+						else
+							iter_34_4.color = Color.New(1, 1, 1)
+						end
 					end
 				end
 
 				arg_31_1.var_.actorSpriteComps1061 = nil
 			end
 
-			local var_34_13 = 0
-			local var_34_14 = 0.35
+			local var_34_15 = 0
+			local var_34_16 = 0.35
 
-			if var_34_13 < arg_31_1.time_ and arg_31_1.time_ <= var_34_13 + arg_34_0 then
+			if var_34_15 < arg_31_1.time_ and arg_31_1.time_ <= var_34_15 + arg_34_0 then
 				arg_31_1.talkMaxDuration = 0
 				arg_31_1.dialogCg_.alpha = 1
 
 				arg_31_1.dialog_:SetActive(true)
 				SetActive(arg_31_1.leftNameGo_, true)
 
-				local var_34_15 = arg_31_1:FormatText(StoryNameCfg[612].name)
+				local var_34_17 = arg_31_1:FormatText(StoryNameCfg[612].name)
 
-				arg_31_1.leftNameTxt_.text = var_34_15
+				arg_31_1.leftNameTxt_.text = var_34_17
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_31_1.leftNameTxt_.transform)
 
@@ -1228,26 +1316,26 @@
 				SetActive(arg_31_1.iconTrs_.gameObject, false)
 				arg_31_1.callingController_:SetSelectedState("normal")
 
-				local var_34_16 = arg_31_1:GetWordFromCfg(910806008)
-				local var_34_17 = arg_31_1:FormatText(var_34_16.content)
+				local var_34_18 = arg_31_1:GetWordFromCfg(910806008)
+				local var_34_19 = arg_31_1:FormatText(var_34_18.content)
 
-				arg_31_1.text_.text = var_34_17
+				arg_31_1.text_.text = var_34_19
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_31_1.text_)
 
-				local var_34_18 = 14
-				local var_34_19 = utf8.len(var_34_17)
-				local var_34_20 = var_34_18 <= 0 and var_34_14 or var_34_14 * (var_34_19 / var_34_18)
+				local var_34_20 = 14
+				local var_34_21 = utf8.len(var_34_19)
+				local var_34_22 = var_34_20 <= 0 and var_34_16 or var_34_16 * (var_34_21 / var_34_20)
 
-				if var_34_20 > 0 and var_34_14 < var_34_20 then
-					arg_31_1.talkMaxDuration = var_34_20
+				if var_34_22 > 0 and var_34_16 < var_34_22 then
+					arg_31_1.talkMaxDuration = var_34_22
 
-					if var_34_20 + var_34_13 > arg_31_1.duration_ then
-						arg_31_1.duration_ = var_34_20 + var_34_13
+					if var_34_22 + var_34_15 > arg_31_1.duration_ then
+						arg_31_1.duration_ = var_34_22 + var_34_15
 					end
 				end
 
-				arg_31_1.text_.text = var_34_17
+				arg_31_1.text_.text = var_34_19
 				arg_31_1.typewritter.percent = 0
 
 				arg_31_1.typewritter:SetDirty()
@@ -1255,15 +1343,15 @@
 				arg_31_1:RecordContent(arg_31_1.text_.text)
 			end
 
-			local var_34_21 = math.max(var_34_14, arg_31_1.talkMaxDuration)
+			local var_34_23 = math.max(var_34_16, arg_31_1.talkMaxDuration)
 
-			if var_34_13 <= arg_31_1.time_ and arg_31_1.time_ < var_34_13 + var_34_21 then
-				arg_31_1.typewritter.percent = (arg_31_1.time_ - var_34_13) / var_34_21
+			if var_34_15 <= arg_31_1.time_ and arg_31_1.time_ < var_34_15 + var_34_23 then
+				arg_31_1.typewritter.percent = (arg_31_1.time_ - var_34_15) / var_34_23
 
 				arg_31_1.typewritter:SetDirty()
 			end
 
-			if arg_31_1.time_ >= var_34_13 + var_34_21 and arg_31_1.time_ < var_34_13 + var_34_21 + arg_34_0 then
+			if arg_31_1.time_ >= var_34_15 + var_34_23 and arg_31_1.time_ < var_34_15 + var_34_23 + arg_34_0 then
 				arg_31_1.typewritter.percent = 1
 
 				arg_31_1.typewritter:SetDirty()
@@ -1308,39 +1396,49 @@
 				if arg_35_1.var_.actorSpriteComps1061 then
 					for iter_38_0, iter_38_1 in pairs(arg_35_1.var_.actorSpriteComps1061:ToTable()) do
 						if iter_38_1 then
-							local var_38_4 = Mathf.Lerp(iter_38_1.color.r, 0.5, var_38_3)
+							if arg_35_1.isInRecall_ then
+								local var_38_4 = Mathf.Lerp(iter_38_1.color.r, 0.46, var_38_3)
+								local var_38_5 = Mathf.Lerp(iter_38_1.color.g, 0.43, var_38_3)
+								local var_38_6 = Mathf.Lerp(iter_38_1.color.b, 0.35, var_38_3)
 
-							iter_38_1.color = Color.New(var_38_4, var_38_4, var_38_4)
+								iter_38_1.color = Color.New(var_38_4, var_38_5, var_38_6)
+							else
+								local var_38_7 = Mathf.Lerp(iter_38_1.color.r, 0.5, var_38_3)
+
+								iter_38_1.color = Color.New(var_38_7, var_38_7, var_38_7)
+							end
 						end
 					end
 				end
 			end
 
 			if arg_35_1.time_ >= var_38_1 + var_38_2 and arg_35_1.time_ < var_38_1 + var_38_2 + arg_38_0 and arg_35_1.var_.actorSpriteComps1061 then
-				local var_38_5 = 0.5
-
 				for iter_38_2, iter_38_3 in pairs(arg_35_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_38_3 then
-						iter_38_3.color = Color.New(var_38_5, var_38_5, var_38_5)
+						if arg_35_1.isInRecall_ then
+							iter_38_3.color = Color.New(0.46, 0.43, 0.35)
+						else
+							iter_38_3.color = Color.New(0.5, 0.5, 0.5)
+						end
 					end
 				end
 
 				arg_35_1.var_.actorSpriteComps1061 = nil
 			end
 
-			local var_38_6 = 0
-			local var_38_7 = 0.4
+			local var_38_8 = 0
+			local var_38_9 = 0.4
 
-			if var_38_6 < arg_35_1.time_ and arg_35_1.time_ <= var_38_6 + arg_38_0 then
+			if var_38_8 < arg_35_1.time_ and arg_35_1.time_ <= var_38_8 + arg_38_0 then
 				arg_35_1.talkMaxDuration = 0
 				arg_35_1.dialogCg_.alpha = 1
 
 				arg_35_1.dialog_:SetActive(true)
 				SetActive(arg_35_1.leftNameGo_, true)
 
-				local var_38_8 = arg_35_1:FormatText(StoryNameCfg[7].name)
+				local var_38_10 = arg_35_1:FormatText(StoryNameCfg[7].name)
 
-				arg_35_1.leftNameTxt_.text = var_38_8
+				arg_35_1.leftNameTxt_.text = var_38_10
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_35_1.leftNameTxt_.transform)
 
@@ -1351,26 +1449,26 @@
 				SetActive(arg_35_1.iconTrs_.gameObject, false)
 				arg_35_1.callingController_:SetSelectedState("normal")
 
-				local var_38_9 = arg_35_1:GetWordFromCfg(910806009)
-				local var_38_10 = arg_35_1:FormatText(var_38_9.content)
+				local var_38_11 = arg_35_1:GetWordFromCfg(910806009)
+				local var_38_12 = arg_35_1:FormatText(var_38_11.content)
 
-				arg_35_1.text_.text = var_38_10
+				arg_35_1.text_.text = var_38_12
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_35_1.text_)
 
-				local var_38_11 = 16
-				local var_38_12 = utf8.len(var_38_10)
-				local var_38_13 = var_38_11 <= 0 and var_38_7 or var_38_7 * (var_38_12 / var_38_11)
+				local var_38_13 = 16
+				local var_38_14 = utf8.len(var_38_12)
+				local var_38_15 = var_38_13 <= 0 and var_38_9 or var_38_9 * (var_38_14 / var_38_13)
 
-				if var_38_13 > 0 and var_38_7 < var_38_13 then
-					arg_35_1.talkMaxDuration = var_38_13
+				if var_38_15 > 0 and var_38_9 < var_38_15 then
+					arg_35_1.talkMaxDuration = var_38_15
 
-					if var_38_13 + var_38_6 > arg_35_1.duration_ then
-						arg_35_1.duration_ = var_38_13 + var_38_6
+					if var_38_15 + var_38_8 > arg_35_1.duration_ then
+						arg_35_1.duration_ = var_38_15 + var_38_8
 					end
 				end
 
-				arg_35_1.text_.text = var_38_10
+				arg_35_1.text_.text = var_38_12
 				arg_35_1.typewritter.percent = 0
 
 				arg_35_1.typewritter:SetDirty()
@@ -1378,15 +1476,15 @@
 				arg_35_1:RecordContent(arg_35_1.text_.text)
 			end
 
-			local var_38_14 = math.max(var_38_7, arg_35_1.talkMaxDuration)
+			local var_38_16 = math.max(var_38_9, arg_35_1.talkMaxDuration)
 
-			if var_38_6 <= arg_35_1.time_ and arg_35_1.time_ < var_38_6 + var_38_14 then
-				arg_35_1.typewritter.percent = (arg_35_1.time_ - var_38_6) / var_38_14
+			if var_38_8 <= arg_35_1.time_ and arg_35_1.time_ < var_38_8 + var_38_16 then
+				arg_35_1.typewritter.percent = (arg_35_1.time_ - var_38_8) / var_38_16
 
 				arg_35_1.typewritter:SetDirty()
 			end
 
-			if arg_35_1.time_ >= var_38_6 + var_38_14 and arg_35_1.time_ < var_38_6 + var_38_14 + arg_38_0 then
+			if arg_35_1.time_ >= var_38_8 + var_38_16 and arg_35_1.time_ < var_38_8 + var_38_16 + arg_38_0 then
 				arg_35_1.typewritter.percent = 1
 
 				arg_35_1.typewritter:SetDirty()
@@ -1642,39 +1740,49 @@
 				if arg_47_1.var_.actorSpriteComps1061 then
 					for iter_50_1, iter_50_2 in pairs(arg_47_1.var_.actorSpriteComps1061:ToTable()) do
 						if iter_50_2 then
-							local var_50_11 = Mathf.Lerp(iter_50_2.color.r, 1, var_50_10)
+							if arg_47_1.isInRecall_ then
+								local var_50_11 = Mathf.Lerp(iter_50_2.color.r, 0.82, var_50_10)
+								local var_50_12 = Mathf.Lerp(iter_50_2.color.g, 0.77, var_50_10)
+								local var_50_13 = Mathf.Lerp(iter_50_2.color.b, 0.62, var_50_10)
 
-							iter_50_2.color = Color.New(var_50_11, var_50_11, var_50_11)
+								iter_50_2.color = Color.New(var_50_11, var_50_12, var_50_13)
+							else
+								local var_50_14 = Mathf.Lerp(iter_50_2.color.r, 1, var_50_10)
+
+								iter_50_2.color = Color.New(var_50_14, var_50_14, var_50_14)
+							end
 						end
 					end
 				end
 			end
 
 			if arg_47_1.time_ >= var_50_8 + var_50_9 and arg_47_1.time_ < var_50_8 + var_50_9 + arg_50_0 and arg_47_1.var_.actorSpriteComps1061 then
-				local var_50_12 = 1
-
 				for iter_50_3, iter_50_4 in pairs(arg_47_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_50_4 then
-						iter_50_4.color = Color.New(var_50_12, var_50_12, var_50_12)
+						if arg_47_1.isInRecall_ then
+							iter_50_4.color = Color.New(0.82, 0.77, 0.62)
+						else
+							iter_50_4.color = Color.New(1, 1, 1)
+						end
 					end
 				end
 
 				arg_47_1.var_.actorSpriteComps1061 = nil
 			end
 
-			local var_50_13 = 0
-			local var_50_14 = 0.575
+			local var_50_15 = 0
+			local var_50_16 = 0.575
 
-			if var_50_13 < arg_47_1.time_ and arg_47_1.time_ <= var_50_13 + arg_50_0 then
+			if var_50_15 < arg_47_1.time_ and arg_47_1.time_ <= var_50_15 + arg_50_0 then
 				arg_47_1.talkMaxDuration = 0
 				arg_47_1.dialogCg_.alpha = 1
 
 				arg_47_1.dialog_:SetActive(true)
 				SetActive(arg_47_1.leftNameGo_, true)
 
-				local var_50_15 = arg_47_1:FormatText(StoryNameCfg[612].name)
+				local var_50_17 = arg_47_1:FormatText(StoryNameCfg[612].name)
 
-				arg_47_1.leftNameTxt_.text = var_50_15
+				arg_47_1.leftNameTxt_.text = var_50_17
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_47_1.leftNameTxt_.transform)
 
@@ -1685,26 +1793,26 @@
 				SetActive(arg_47_1.iconTrs_.gameObject, false)
 				arg_47_1.callingController_:SetSelectedState("normal")
 
-				local var_50_16 = arg_47_1:GetWordFromCfg(910806012)
-				local var_50_17 = arg_47_1:FormatText(var_50_16.content)
+				local var_50_18 = arg_47_1:GetWordFromCfg(910806012)
+				local var_50_19 = arg_47_1:FormatText(var_50_18.content)
 
-				arg_47_1.text_.text = var_50_17
+				arg_47_1.text_.text = var_50_19
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_47_1.text_)
 
-				local var_50_18 = 23
-				local var_50_19 = utf8.len(var_50_17)
-				local var_50_20 = var_50_18 <= 0 and var_50_14 or var_50_14 * (var_50_19 / var_50_18)
+				local var_50_20 = 23
+				local var_50_21 = utf8.len(var_50_19)
+				local var_50_22 = var_50_20 <= 0 and var_50_16 or var_50_16 * (var_50_21 / var_50_20)
 
-				if var_50_20 > 0 and var_50_14 < var_50_20 then
-					arg_47_1.talkMaxDuration = var_50_20
+				if var_50_22 > 0 and var_50_16 < var_50_22 then
+					arg_47_1.talkMaxDuration = var_50_22
 
-					if var_50_20 + var_50_13 > arg_47_1.duration_ then
-						arg_47_1.duration_ = var_50_20 + var_50_13
+					if var_50_22 + var_50_15 > arg_47_1.duration_ then
+						arg_47_1.duration_ = var_50_22 + var_50_15
 					end
 				end
 
-				arg_47_1.text_.text = var_50_17
+				arg_47_1.text_.text = var_50_19
 				arg_47_1.typewritter.percent = 0
 
 				arg_47_1.typewritter:SetDirty()
@@ -1712,15 +1820,15 @@
 				arg_47_1:RecordContent(arg_47_1.text_.text)
 			end
 
-			local var_50_21 = math.max(var_50_14, arg_47_1.talkMaxDuration)
+			local var_50_23 = math.max(var_50_16, arg_47_1.talkMaxDuration)
 
-			if var_50_13 <= arg_47_1.time_ and arg_47_1.time_ < var_50_13 + var_50_21 then
-				arg_47_1.typewritter.percent = (arg_47_1.time_ - var_50_13) / var_50_21
+			if var_50_15 <= arg_47_1.time_ and arg_47_1.time_ < var_50_15 + var_50_23 then
+				arg_47_1.typewritter.percent = (arg_47_1.time_ - var_50_15) / var_50_23
 
 				arg_47_1.typewritter:SetDirty()
 			end
 
-			if arg_47_1.time_ >= var_50_13 + var_50_21 and arg_47_1.time_ < var_50_13 + var_50_21 + arg_50_0 then
+			if arg_47_1.time_ >= var_50_15 + var_50_23 and arg_47_1.time_ < var_50_15 + var_50_23 + arg_50_0 then
 				arg_47_1.typewritter.percent = 1
 
 				arg_47_1.typewritter:SetDirty()
@@ -1765,39 +1873,49 @@
 				if arg_51_1.var_.actorSpriteComps1061 then
 					for iter_54_0, iter_54_1 in pairs(arg_51_1.var_.actorSpriteComps1061:ToTable()) do
 						if iter_54_1 then
-							local var_54_4 = Mathf.Lerp(iter_54_1.color.r, 0.5, var_54_3)
+							if arg_51_1.isInRecall_ then
+								local var_54_4 = Mathf.Lerp(iter_54_1.color.r, 0.46, var_54_3)
+								local var_54_5 = Mathf.Lerp(iter_54_1.color.g, 0.43, var_54_3)
+								local var_54_6 = Mathf.Lerp(iter_54_1.color.b, 0.35, var_54_3)
 
-							iter_54_1.color = Color.New(var_54_4, var_54_4, var_54_4)
+								iter_54_1.color = Color.New(var_54_4, var_54_5, var_54_6)
+							else
+								local var_54_7 = Mathf.Lerp(iter_54_1.color.r, 0.5, var_54_3)
+
+								iter_54_1.color = Color.New(var_54_7, var_54_7, var_54_7)
+							end
 						end
 					end
 				end
 			end
 
 			if arg_51_1.time_ >= var_54_1 + var_54_2 and arg_51_1.time_ < var_54_1 + var_54_2 + arg_54_0 and arg_51_1.var_.actorSpriteComps1061 then
-				local var_54_5 = 0.5
-
 				for iter_54_2, iter_54_3 in pairs(arg_51_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_54_3 then
-						iter_54_3.color = Color.New(var_54_5, var_54_5, var_54_5)
+						if arg_51_1.isInRecall_ then
+							iter_54_3.color = Color.New(0.46, 0.43, 0.35)
+						else
+							iter_54_3.color = Color.New(0.5, 0.5, 0.5)
+						end
 					end
 				end
 
 				arg_51_1.var_.actorSpriteComps1061 = nil
 			end
 
-			local var_54_6 = 0
-			local var_54_7 = 0.3
+			local var_54_8 = 0
+			local var_54_9 = 0.3
 
-			if var_54_6 < arg_51_1.time_ and arg_51_1.time_ <= var_54_6 + arg_54_0 then
+			if var_54_8 < arg_51_1.time_ and arg_51_1.time_ <= var_54_8 + arg_54_0 then
 				arg_51_1.talkMaxDuration = 0
 				arg_51_1.dialogCg_.alpha = 1
 
 				arg_51_1.dialog_:SetActive(true)
 				SetActive(arg_51_1.leftNameGo_, true)
 
-				local var_54_8 = arg_51_1:FormatText(StoryNameCfg[7].name)
+				local var_54_10 = arg_51_1:FormatText(StoryNameCfg[7].name)
 
-				arg_51_1.leftNameTxt_.text = var_54_8
+				arg_51_1.leftNameTxt_.text = var_54_10
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_51_1.leftNameTxt_.transform)
 
@@ -1808,26 +1926,26 @@
 				SetActive(arg_51_1.iconTrs_.gameObject, false)
 				arg_51_1.callingController_:SetSelectedState("normal")
 
-				local var_54_9 = arg_51_1:GetWordFromCfg(910806013)
-				local var_54_10 = arg_51_1:FormatText(var_54_9.content)
+				local var_54_11 = arg_51_1:GetWordFromCfg(910806013)
+				local var_54_12 = arg_51_1:FormatText(var_54_11.content)
 
-				arg_51_1.text_.text = var_54_10
+				arg_51_1.text_.text = var_54_12
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_51_1.text_)
 
-				local var_54_11 = 12
-				local var_54_12 = utf8.len(var_54_10)
-				local var_54_13 = var_54_11 <= 0 and var_54_7 or var_54_7 * (var_54_12 / var_54_11)
+				local var_54_13 = 12
+				local var_54_14 = utf8.len(var_54_12)
+				local var_54_15 = var_54_13 <= 0 and var_54_9 or var_54_9 * (var_54_14 / var_54_13)
 
-				if var_54_13 > 0 and var_54_7 < var_54_13 then
-					arg_51_1.talkMaxDuration = var_54_13
+				if var_54_15 > 0 and var_54_9 < var_54_15 then
+					arg_51_1.talkMaxDuration = var_54_15
 
-					if var_54_13 + var_54_6 > arg_51_1.duration_ then
-						arg_51_1.duration_ = var_54_13 + var_54_6
+					if var_54_15 + var_54_8 > arg_51_1.duration_ then
+						arg_51_1.duration_ = var_54_15 + var_54_8
 					end
 				end
 
-				arg_51_1.text_.text = var_54_10
+				arg_51_1.text_.text = var_54_12
 				arg_51_1.typewritter.percent = 0
 
 				arg_51_1.typewritter:SetDirty()
@@ -1835,15 +1953,15 @@
 				arg_51_1:RecordContent(arg_51_1.text_.text)
 			end
 
-			local var_54_14 = math.max(var_54_7, arg_51_1.talkMaxDuration)
+			local var_54_16 = math.max(var_54_9, arg_51_1.talkMaxDuration)
 
-			if var_54_6 <= arg_51_1.time_ and arg_51_1.time_ < var_54_6 + var_54_14 then
-				arg_51_1.typewritter.percent = (arg_51_1.time_ - var_54_6) / var_54_14
+			if var_54_8 <= arg_51_1.time_ and arg_51_1.time_ < var_54_8 + var_54_16 then
+				arg_51_1.typewritter.percent = (arg_51_1.time_ - var_54_8) / var_54_16
 
 				arg_51_1.typewritter:SetDirty()
 			end
 
-			if arg_51_1.time_ >= var_54_6 + var_54_14 and arg_51_1.time_ < var_54_6 + var_54_14 + arg_54_0 then
+			if arg_51_1.time_ >= var_54_8 + var_54_16 and arg_51_1.time_ < var_54_8 + var_54_16 + arg_54_0 then
 				arg_51_1.typewritter.percent = 1
 
 				arg_51_1.typewritter:SetDirty()
@@ -1922,49 +2040,59 @@
 				if arg_55_1.var_.actorSpriteComps1061 then
 					for iter_58_1, iter_58_2 in pairs(arg_55_1.var_.actorSpriteComps1061:ToTable()) do
 						if iter_58_2 then
-							local var_58_11 = Mathf.Lerp(iter_58_2.color.r, 1, var_58_10)
+							if arg_55_1.isInRecall_ then
+								local var_58_11 = Mathf.Lerp(iter_58_2.color.r, 0.82, var_58_10)
+								local var_58_12 = Mathf.Lerp(iter_58_2.color.g, 0.77, var_58_10)
+								local var_58_13 = Mathf.Lerp(iter_58_2.color.b, 0.62, var_58_10)
 
-							iter_58_2.color = Color.New(var_58_11, var_58_11, var_58_11)
+								iter_58_2.color = Color.New(var_58_11, var_58_12, var_58_13)
+							else
+								local var_58_14 = Mathf.Lerp(iter_58_2.color.r, 1, var_58_10)
+
+								iter_58_2.color = Color.New(var_58_14, var_58_14, var_58_14)
+							end
 						end
 					end
 				end
 			end
 
 			if arg_55_1.time_ >= var_58_8 + var_58_9 and arg_55_1.time_ < var_58_8 + var_58_9 + arg_58_0 and arg_55_1.var_.actorSpriteComps1061 then
-				local var_58_12 = 1
-
 				for iter_58_3, iter_58_4 in pairs(arg_55_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_58_4 then
-						iter_58_4.color = Color.New(var_58_12, var_58_12, var_58_12)
+						if arg_55_1.isInRecall_ then
+							iter_58_4.color = Color.New(0.82, 0.77, 0.62)
+						else
+							iter_58_4.color = Color.New(1, 1, 1)
+						end
 					end
 				end
 
 				arg_55_1.var_.actorSpriteComps1061 = nil
 			end
 
-			local var_58_13 = 0
-			local var_58_14 = 1
+			local var_58_15 = 0
+			local var_58_16 = 1
 
-			if var_58_13 < arg_55_1.time_ and arg_55_1.time_ <= var_58_13 + arg_58_0 then
-				local var_58_15 = "play"
-				local var_58_16 = "effect"
+			if var_58_15 < arg_55_1.time_ and arg_55_1.time_ <= var_58_15 + arg_58_0 then
+				local var_58_17 = "play"
+				local var_58_18 = "effect"
 
-				arg_55_1:AudioAction(var_58_15, var_58_16, "ui_skip", "ui_bgm_lower_back", "")
+				arg_55_1:AudioAction(var_58_17, var_58_18, "ui_skip", "ui_bgm_lower_back", "")
 			end
 
-			local var_58_17 = 0
-			local var_58_18 = 0.6
+			local var_58_19 = 0
+			local var_58_20 = 0.6
 
-			if var_58_17 < arg_55_1.time_ and arg_55_1.time_ <= var_58_17 + arg_58_0 then
+			if var_58_19 < arg_55_1.time_ and arg_55_1.time_ <= var_58_19 + arg_58_0 then
 				arg_55_1.talkMaxDuration = 0
 				arg_55_1.dialogCg_.alpha = 1
 
 				arg_55_1.dialog_:SetActive(true)
 				SetActive(arg_55_1.leftNameGo_, true)
 
-				local var_58_19 = arg_55_1:FormatText(StoryNameCfg[612].name)
+				local var_58_21 = arg_55_1:FormatText(StoryNameCfg[612].name)
 
-				arg_55_1.leftNameTxt_.text = var_58_19
+				arg_55_1.leftNameTxt_.text = var_58_21
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_55_1.leftNameTxt_.transform)
 
@@ -1975,26 +2103,26 @@
 				SetActive(arg_55_1.iconTrs_.gameObject, false)
 				arg_55_1.callingController_:SetSelectedState("normal")
 
-				local var_58_20 = arg_55_1:GetWordFromCfg(910806014)
-				local var_58_21 = arg_55_1:FormatText(var_58_20.content)
+				local var_58_22 = arg_55_1:GetWordFromCfg(910806014)
+				local var_58_23 = arg_55_1:FormatText(var_58_22.content)
 
-				arg_55_1.text_.text = var_58_21
+				arg_55_1.text_.text = var_58_23
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_55_1.text_)
 
-				local var_58_22 = 24
-				local var_58_23 = utf8.len(var_58_21)
-				local var_58_24 = var_58_22 <= 0 and var_58_18 or var_58_18 * (var_58_23 / var_58_22)
+				local var_58_24 = 24
+				local var_58_25 = utf8.len(var_58_23)
+				local var_58_26 = var_58_24 <= 0 and var_58_20 or var_58_20 * (var_58_25 / var_58_24)
 
-				if var_58_24 > 0 and var_58_18 < var_58_24 then
-					arg_55_1.talkMaxDuration = var_58_24
+				if var_58_26 > 0 and var_58_20 < var_58_26 then
+					arg_55_1.talkMaxDuration = var_58_26
 
-					if var_58_24 + var_58_17 > arg_55_1.duration_ then
-						arg_55_1.duration_ = var_58_24 + var_58_17
+					if var_58_26 + var_58_19 > arg_55_1.duration_ then
+						arg_55_1.duration_ = var_58_26 + var_58_19
 					end
 				end
 
-				arg_55_1.text_.text = var_58_21
+				arg_55_1.text_.text = var_58_23
 				arg_55_1.typewritter.percent = 0
 
 				arg_55_1.typewritter:SetDirty()
@@ -2002,15 +2130,15 @@
 				arg_55_1:RecordContent(arg_55_1.text_.text)
 			end
 
-			local var_58_25 = math.max(var_58_18, arg_55_1.talkMaxDuration)
+			local var_58_27 = math.max(var_58_20, arg_55_1.talkMaxDuration)
 
-			if var_58_17 <= arg_55_1.time_ and arg_55_1.time_ < var_58_17 + var_58_25 then
-				arg_55_1.typewritter.percent = (arg_55_1.time_ - var_58_17) / var_58_25
+			if var_58_19 <= arg_55_1.time_ and arg_55_1.time_ < var_58_19 + var_58_27 then
+				arg_55_1.typewritter.percent = (arg_55_1.time_ - var_58_19) / var_58_27
 
 				arg_55_1.typewritter:SetDirty()
 			end
 
-			if arg_55_1.time_ >= var_58_17 + var_58_25 and arg_55_1.time_ < var_58_17 + var_58_25 + arg_58_0 then
+			if arg_55_1.time_ >= var_58_19 + var_58_27 and arg_55_1.time_ < var_58_19 + var_58_27 + arg_58_0 then
 				arg_55_1.typewritter.percent = 1
 
 				arg_55_1.typewritter:SetDirty()

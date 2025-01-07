@@ -5,6 +5,8 @@ function var_0_0.OnGotoSettlement(arg_1_0, arg_1_1)
 end
 
 function var_0_0.GotoSoloSurviveStage(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_4, arg_2_5)
+	CheckBattleResultNeedAddHeroExp()
+
 	function BattleCallLuaCallBack()
 		local var_3_0 = arg_2_2:GetStageId()
 		local var_3_1 = arg_2_2:GetActivityID()

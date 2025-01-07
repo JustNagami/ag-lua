@@ -107,7 +107,7 @@ function var_0_0.OnRewardAction(arg_7_0)
 end
 
 function var_0_0.GetHeroData(arg_10_0, arg_10_1)
-	return StrategyMatrixData:GetHeroData(arg_10_0.matrix_activity_id, arg_10_1)
+	return StrategyMatrixData:GetHeroDataNew(arg_10_1)
 end
 
 function var_0_0.GetAstrolabeMaxCount(arg_11_0)

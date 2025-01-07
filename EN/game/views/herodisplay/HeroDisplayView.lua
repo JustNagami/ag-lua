@@ -301,7 +301,6 @@ end
 function var_0_0.DestroyCurrentModel(arg_25_0)
 	if arg_25_0.heroModel_ and arg_25_0.modelPath_ then
 		Object.DestroyImmediate(arg_25_0.heroModel_)
-		Asset.Unload(arg_25_0.modelPath_)
 		manager.gc:Collect()
 		Resources.UnloadUnusedAssets()
 

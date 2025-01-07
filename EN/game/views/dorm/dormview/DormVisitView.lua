@@ -8,27 +8,53 @@ function var_0_0.UIParent(arg_2_0)
 	return manager.ui.uiMain.transform
 end
 
-function var_0_0.OnCtor(arg_3_0)
-	return
+function var_0_0.BuildContext(arg_3_0)
+	arg_3_0.page = {
+		{
+			obj = arg_3_0.friendObj_,
+			module = DormFriendVisitModule
+		},
+		{
+			obj = arg_3_0.recommendObj_,
+			module = DormRecommendModule
+		},
+		{
+			obj = arg_3_0.praiseObj_,
+			module = DormMypraiseModule
+		}
+	}
 end
 
-function var_0_0.Init(arg_4_0)
-	arg_4_0:InitUI()
-	arg_4_0:AddUIListener()
+function var_0_0.GetPageInst(arg_4_0, arg_4_1, arg_4_2)
+	local var_4_0 = arg_4_0.page[arg_4_1]
+	local var_4_1
 
-	arg_4_0.refreshFlag = true
+	if var_4_0.entity == nil then
+		local var_4_2 = Object.Instantiate(var_4_0.obj, arg_4_0.contentRoot_.transform)
 
-	local var_4_0 = GameSetting.dorm_recommend_refresh_cd.value[1]
+		var_4_0.entity = var_4_0.module.New(var_4_2)
+		var_4_1 = true
+	end
 
-	arg_4_0.refreshTimer = Timer.New(function()
-		arg_4_0.refreshFlag = true
-	end, var_4_0, 1)
+	if var_4_1 or arg_4_2 then
+		if arg_4_1 == arg_4_0.groupID then
+			var_4_0.entity:Show()
+		else
+			var_4_0.entity:Hide()
+		end
+	end
+
+	return var_4_0.entity
+end
+
+function var_0_0.Init(arg_5_0)
+	arg_5_0:InitUI()
+	arg_5_0:AddUIListener()
 end
 
 function var_0_0.InitUI(arg_6_0)
 	arg_6_0:BindCfgUI()
-
-	arg_6_0.scrollHelper_ = LuaList.New(handler(arg_6_0, arg_6_0.indexTemplate), arg_6_0.uilistGo_, DormVisitItem)
+	arg_6_0:BuildContext()
 end
 
 function var_0_0.OnEnter(arg_7_0)
@@ -42,6 +68,10 @@ function var_0_0.OnEnter(arg_7_0)
 	manager.windowBar:RegistBackCallBack(function()
 		if arg_7_0.back == "chooseRoom" then
 			JumpTools.OpenPageByJump("/dormChooseRoomView")
+
+			return
+		elseif arg_7_0.back == "back" then
+			JumpTools.Back()
 
 			return
 		end
@@ -63,9 +93,17 @@ function var_0_0.OnEnter(arg_7_0)
 		end
 	end)
 
-	local var_7_0 = arg_7_0.groupID or DormVisitTools:GetListIndex() or 1
+	local var_7_0 = 3
+	local var_7_1
 
-	arg_7_0:SelGroup(var_7_0)
+	if DormVisitTools:GetListIndex() then
+		var_7_0 = DormVisitTools:GetListIndex().index
+		var_7_1 = DormVisitTools:GetListIndex().subIndex
+	end
+
+	local var_7_2 = arg_7_0.groupID or var_7_0
+
+	arg_7_0:SelGroup(var_7_2, var_7_1)
 end
 
 function var_0_0.OnExit(arg_9_0)
@@ -76,92 +114,60 @@ function var_0_0.OnExit(arg_9_0)
 end
 
 function var_0_0.AddUIListener(arg_10_0)
-	for iter_10_0 = 1, 2 do
+	for iter_10_0 = 1, 3 do
 		arg_10_0:AddToggleListener(arg_10_0["tog_" .. iter_10_0], function(arg_11_0)
 			if arg_11_0 then
 				arg_10_0:SelGroup(iter_10_0)
 			end
 		end)
 	end
-
-	arg_10_0:AddDragListener(arg_10_0.uilistGo_, function()
-		return
-	end, function()
-		return
-	end, function()
-		local var_14_0 = arg_10_0.contentGo_.transform.anchoredPosition.y
-
-		if arg_10_0.loadingGo_.transform.sizeDelta.y < -1 * var_14_0 then
-			if not arg_10_0.refreshFlag then
-				ShowTips(GetTips("DORM_RECOMMEND_CD"))
-
-				return
-			else
-				arg_10_0.refreshFlag = false
-
-				arg_10_0.refreshTimer:Start()
-				DormAction:AskFurTemplateExhibitList(arg_10_0.groupID)
-			end
-		end
-	end)
 end
 
-function var_0_0.SelGroup(arg_15_0, arg_15_1)
-	if arg_15_0.groupID == arg_15_1 then
-		return
+function var_0_0.SelGroup(arg_12_0, arg_12_1, arg_12_2)
+	if arg_12_0.groupID ~= arg_12_1 then
+		arg_12_0.groupID = arg_12_1
+		arg_12_0["tog_" .. arg_12_0.groupID].isOn = true
+
+		for iter_12_0 = 1, 3 do
+			local var_12_0 = arg_12_0:GetPageInst(iter_12_0, true)
+		end
 	end
 
-	arg_15_0.groupID = arg_15_1
-	arg_15_0["tog_" .. arg_15_0.groupID].isOn = true
-
-	arg_15_0:RefreshList()
+	arg_12_0:RefreshView(arg_12_2)
 end
 
-function var_0_0.RegisterEvents(arg_16_0)
-	arg_16_0:RegistEventListener(DORM_REFRESH_TEMPLATE_EXHI, function()
-		arg_16_0:RefreshList()
-	end)
+function var_0_0.RefreshView(arg_13_0, arg_13_1)
+	arg_13_0:GetPageInst(arg_13_0.groupID):Refresh(arg_13_1)
 end
 
-function var_0_0.indexTemplate(arg_18_0, arg_18_1, arg_18_2)
-	arg_18_2:RefreshUI(arg_18_0.visitList[arg_18_1], arg_18_0.groupID)
-	arg_18_2:RegisterEnterCallBack(function(arg_19_0)
-		SDKTools.SendMessageToSDK("backhome_dorm_visit_jump", {
-			backhome_source = 2
-		})
-		DormVisitTools:SetListIndex(arg_18_0.groupID)
-		DormAction:AskSingleFurTemplateExhibit(arg_19_0)
-	end)
-end
+function var_0_0.RegisterEvents(arg_14_0)
+	arg_14_0:RegistEventListener(DORM_REFRESH_TEMPLATE_EXHI, function(arg_15_0, arg_15_1)
+		local var_15_0
 
-function var_0_0.RefreshList(arg_20_0)
-	arg_20_0.visitList = {}
-
-	local var_20_0 = DormVisitTools:GetTemplateExhibitList(arg_20_0.groupID)
-
-	if var_20_0 then
-		for iter_20_0, iter_20_1 in pairs(var_20_0) do
-			table.insert(arg_20_0.visitList, iter_20_0)
+		if arg_15_1 == 1 then
+			var_15_0 = arg_14_0.page[1].entity
+		elseif arg_15_1 == 2 then
+			var_15_0 = arg_14_0.page[2].entity
+		elseif arg_15_1 == 3 then
+			var_15_0 = arg_14_0.page[3].entity
 		end
 
-		arg_20_0.scrollHelper_:StartScroll(#arg_20_0.visitList)
-	end
+		var_15_0:Refresh()
+	end)
 end
 
-function var_0_0.Dispose(arg_21_0)
-	if arg_21_0.scrollHelper_ then
-		arg_21_0.scrollHelper_:Dispose()
+function var_0_0.Dispose(arg_16_0)
+	for iter_16_0 = 1, 3 do
+		local var_16_0 = arg_16_0.page[iter_16_0].entity
 
-		arg_21_0.scrollHelper_ = nil
+		if var_16_0 then
+			var_16_0:Dispose()
+
+			arg_16_0.page[iter_16_0].entity = nil
+		end
 	end
 
-	if arg_21_0.refreshTimer then
-		arg_21_0.refreshTimer:Stop()
-
-		arg_21_0.refreshTimer = nil
-	end
-
-	var_0_0.super.Dispose(arg_21_0)
+	var_0_0.super.Dispose(arg_16_0)
 end
 
 return var_0_0

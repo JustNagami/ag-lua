@@ -1,4 +1,17852 @@
 ﻿return {
+	[559054] = {
+		decompose_id = 0,
+		name = "c042e9271271aa2a768abbff3e5192ef",
+		compose_id = 0,
+		type = 7,
+		id = 559054,
+		rare = 5,
+		desc = "7bc72a1d37a6cfbb7bfeb6d25daab34b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[260054] = {
+		decompose_id = 0,
+		name = "7286937784659ce9440364e5bd560b51",
+		compose_id = 0,
+		type = 7,
+		id = 260054,
+		rare = 2,
+		desc = "ef5d76cf6f3c2bc7ddf512e98d249e33",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[360054] = {
+		decompose_id = 0,
+		name = "e95f008ab51c0c872980c9a538829406",
+		compose_id = 0,
+		type = 7,
+		id = 360054,
+		rare = 3,
+		desc = "894789264ee63b67cb9e92535b3ceba3",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[460054] = {
+		decompose_id = 0,
+		name = "68bec7031cec7b10558e28a524694269",
+		compose_id = 0,
+		type = 7,
+		id = 460054,
+		rare = 4,
+		desc = "ee52fa73469ba26ecc51dae7112377d7",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[560054] = {
+		decompose_id = 0,
+		name = "b383257991e76b56ca166936a84290d7",
+		compose_id = 0,
+		type = 7,
+		id = 560054,
+		rare = 5,
+		desc = "2c8372743cab2809c26b9728e31920ff",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[561054] = {
+		decompose_id = 0,
+		name = "8f3b73cde51f8a24d4dc0376a7a1dafb",
+		compose_id = 0,
+		type = 7,
+		id = 561054,
+		rare = 5,
+		desc = "3c5b4139bd6bcc9da4beb848ae7b7876",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[562054] = {
+		decompose_id = 0,
+		name = "498fa5075b9e2d05aa1d8313459fdaa3",
+		compose_id = 0,
+		type = 7,
+		id = 562054,
+		rare = 5,
+		desc = "e85d9813ceb360cf703697e5e6b05337",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[563054] = {
+		decompose_id = 0,
+		name = "2be9cc70f5eb42704baf98cd9868307e",
+		compose_id = 0,
+		type = 7,
+		id = 563054,
+		rare = 5,
+		desc = "4dea72044bdc4290f39eda3e615bfc9b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[564054] = {
+		decompose_id = 0,
+		name = "87fd0b06ffb1f7351b66860f47c4c9f2",
+		compose_id = 0,
+		type = 7,
+		id = 564054,
+		rare = 5,
+		desc = "a389f15321f1eb5994e5f9417d11ddc0",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[565054] = {
+		decompose_id = 0,
+		name = "db51293d585fb9a94937a3c3862d98a8",
+		compose_id = 0,
+		type = 7,
+		id = 565054,
+		rare = 5,
+		desc = "9e023a5bf205edaa1bd09be3374531c4",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[569054] = {
+		decompose_id = 0,
+		name = "98ae7a962397da7fa9ab97be2fede515",
+		compose_id = 0,
+		type = 7,
+		id = 569054,
+		rare = 5,
+		desc = "4997a36e3cf5f331c8d419dc6e80031b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[210055] = {
+		decompose_id = 0,
+		name = "d819ed94d860bd202d8f5bd7497490c1",
+		compose_id = 0,
+		type = 7,
+		id = 210055,
+		rare = 2,
+		desc = "4534aeb1fbc4bb499ad3d56ed67dfe1a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[310055] = {
+		decompose_id = 0,
+		name = "744d7bdf6d7ff5063b8e2ef14de547db",
+		compose_id = 0,
+		type = 7,
+		id = 310055,
+		rare = 3,
+		desc = "6cf88d24e8f26a89c922cd0baa1c7b29",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[410055] = {
+		decompose_id = 0,
+		name = "5f26c8ab9216d76d2fd145be8a96f2dd",
+		compose_id = 0,
+		type = 7,
+		id = 410055,
+		rare = 4,
+		desc = "81a77e51581a531dd954da04037c6e49",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[510055] = {
+		decompose_id = 0,
+		name = "89fe10fe649a54c3fbb3576aead09653",
+		compose_id = 0,
+		type = 7,
+		id = 510055,
+		rare = 5,
+		desc = "da5d93cd9c5bee786bf3885ee049a750",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[511055] = {
+		decompose_id = 0,
+		name = "985300d63c95c23fe7b89974f3af7a68",
+		compose_id = 0,
+		type = 7,
+		id = 511055,
+		rare = 5,
+		desc = "9760296e3ec5375f9f346594c604deb5",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[512055] = {
+		decompose_id = 0,
+		name = "3c9ac47a10e5d2ed7999058de0cd1f24",
+		compose_id = 0,
+		type = 7,
+		id = 512055,
+		rare = 5,
+		desc = "660d4d69a8bbc9ba94e06d115044437b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[513055] = {
+		decompose_id = 0,
+		name = "e7571535ba552889bb259d878099cfa7",
+		compose_id = 0,
+		type = 7,
+		id = 513055,
+		rare = 5,
+		desc = "b090ed7473d9db24ec03e2c63224e853",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[514055] = {
+		decompose_id = 0,
+		name = "d49df909fa65db76fbc33ed68ca6f18a",
+		compose_id = 0,
+		type = 7,
+		id = 514055,
+		rare = 5,
+		desc = "ed0b6f9811e0f155433d23ecfc8624f8",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[515055] = {
+		decompose_id = 0,
+		name = "ea2ed087061adf9f1cf73cd4bc321d31",
+		compose_id = 0,
+		type = 7,
+		id = 515055,
+		rare = 5,
+		desc = "1f3993528463f9af95bca56c33c93ebf",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[519055] = {
+		decompose_id = 0,
+		name = "903dae112cf016e692366e7047e56560",
+		compose_id = 0,
+		type = 7,
+		id = 519055,
+		rare = 5,
+		desc = "15abc5ee7f9b2a7369dd9a3434ccdc29",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[220055] = {
+		decompose_id = 0,
+		name = "84607236c49387ae6a036d5a86f50069",
+		compose_id = 0,
+		type = 7,
+		id = 220055,
+		rare = 2,
+		desc = "1391fdfd7cd9de873cf3ad6fdc2427b0",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[320055] = {
+		decompose_id = 0,
+		name = "f0656965f6fba88bd880bfc03f374eb3",
+		compose_id = 0,
+		type = 7,
+		id = 320055,
+		rare = 3,
+		desc = "16ee1c7480f8e845dd3f31f7a5c032bc",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[420055] = {
+		decompose_id = 0,
+		name = "ed6ab117f56a42bb40f1a6d8cbf51c16",
+		compose_id = 0,
+		type = 7,
+		id = 420055,
+		rare = 4,
+		desc = "65797bf57dfb004576cdbe1c77cc8b55",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[520055] = {
+		decompose_id = 0,
+		name = "b5b60fd841fa5add2423eb425bd00b79",
+		compose_id = 0,
+		type = 7,
+		id = 520055,
+		rare = 5,
+		desc = "2a3f7e484d21e5b0a467c190e11193a5",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[521055] = {
+		decompose_id = 0,
+		name = "d3ae63c620453cb06b0084fdaeef8e7c",
+		compose_id = 0,
+		type = 7,
+		id = 521055,
+		rare = 5,
+		desc = "a6dd2b933dda9fcebe2c4e40a4668206",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[522055] = {
+		decompose_id = 0,
+		name = "ff4b0e4f0017ae57beefa3b7f5f17e76",
+		compose_id = 0,
+		type = 7,
+		id = 522055,
+		rare = 5,
+		desc = "a771393f3fabed334a9e04c3978b0ec0",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[523055] = {
+		decompose_id = 0,
+		name = "8b8337750cf419732c830d784875c424",
+		compose_id = 0,
+		type = 7,
+		id = 523055,
+		rare = 5,
+		desc = "f1b189a2c572537652dd0dd1ad12712c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[524055] = {
+		decompose_id = 0,
+		name = "83dcca86ebbd21ea1d15402ce2fc4967",
+		compose_id = 0,
+		type = 7,
+		id = 524055,
+		rare = 5,
+		desc = "4da1af10a540f355bc9429f93487e75a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[525055] = {
+		decompose_id = 0,
+		name = "2e5ac59f2c88da414d95818099d3f842",
+		compose_id = 0,
+		type = 7,
+		id = 525055,
+		rare = 5,
+		desc = "377fe6c049e49a07c3b61e64c6ed92e1",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[529055] = {
+		decompose_id = 0,
+		name = "c14a3dbe6141c840740af42b26f1cf8b",
+		compose_id = 0,
+		type = 7,
+		id = 529055,
+		rare = 5,
+		desc = "c43eb75a848a734329d7afaf5fa8de06",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[230055] = {
+		decompose_id = 0,
+		name = "5c34be07254dad864a98a59215dadf6c",
+		compose_id = 0,
+		type = 7,
+		id = 230055,
+		rare = 2,
+		desc = "9212da8e2cec4262251d3a594e4bd903",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[330055] = {
+		decompose_id = 0,
+		name = "24b6089e38d72c3be9de4689e9e32207",
+		compose_id = 0,
+		type = 7,
+		id = 330055,
+		rare = 3,
+		desc = "98c7bf849545855fc9d618f6386c8f33",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[430055] = {
+		decompose_id = 0,
+		name = "d26451672c51bc819e32b8abf39a8db5",
+		compose_id = 0,
+		type = 7,
+		id = 430055,
+		rare = 4,
+		desc = "9f2d6ee0793d9e6a51abf56422157844",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[530055] = {
+		decompose_id = 0,
+		name = "84439a6d583ce828eb4ba51cce80c09e",
+		compose_id = 0,
+		type = 7,
+		id = 530055,
+		rare = 5,
+		desc = "28d148d495ffd35368254e1024fbdac5",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[531055] = {
+		decompose_id = 0,
+		name = "c3ba18dd908713ea417aa968e4a36868",
+		compose_id = 0,
+		type = 7,
+		id = 531055,
+		rare = 5,
+		desc = "86197866040b0902630dd510b8dfa3db",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[532055] = {
+		decompose_id = 0,
+		name = "2372f9cb59d16f8ef81001da755e170a",
+		compose_id = 0,
+		type = 7,
+		id = 532055,
+		rare = 5,
+		desc = "c9740607512ff6580024b0260dac0fa4",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[533055] = {
+		decompose_id = 0,
+		name = "87e94eade972931fa967dd479aaa9382",
+		compose_id = 0,
+		type = 7,
+		id = 533055,
+		rare = 5,
+		desc = "15153143e2fb8c46338fff71a84b3035",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[534055] = {
+		decompose_id = 0,
+		name = "acccc041ae795b1bac259be02e87d723",
+		compose_id = 0,
+		type = 7,
+		id = 534055,
+		rare = 5,
+		desc = "c932525b1a5c600dd9e3aa5a20ad3329",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[535055] = {
+		decompose_id = 0,
+		name = "d6da550bdba844f85a7d6df992e78650",
+		compose_id = 0,
+		type = 7,
+		id = 535055,
+		rare = 5,
+		desc = "98221280c0bf5a4334f7f866e75eb0b1",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[539055] = {
+		decompose_id = 0,
+		name = "ae5491ff0c9afca774c6c167228bcf95",
+		compose_id = 0,
+		type = 7,
+		id = 539055,
+		rare = 5,
+		desc = "5d75915d098ec813a41160695e6f25c1",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[240055] = {
+		decompose_id = 0,
+		name = "01c82c02c112520ca96166ee35abc000",
+		compose_id = 0,
+		type = 7,
+		id = 240055,
+		rare = 2,
+		desc = "c329514f861199f0ca272b4cfd75e246",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[340055] = {
+		decompose_id = 0,
+		name = "ccd9f6d1f015cbb3d33762bbcc5df138",
+		compose_id = 0,
+		type = 7,
+		id = 340055,
+		rare = 3,
+		desc = "6320820b9691fde123bcd8e9e07c156c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[440055] = {
+		decompose_id = 0,
+		name = "ecd7c8a1a190fa77f1c1e6f195f366c1",
+		compose_id = 0,
+		type = 7,
+		id = 440055,
+		rare = 4,
+		desc = "09b7b23f6458645b69cd0cde5ed8faf1",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[540055] = {
+		decompose_id = 0,
+		name = "411a0a5af1158816f0ebfaa742fc15e1",
+		compose_id = 0,
+		type = 7,
+		id = 540055,
+		rare = 5,
+		desc = "f6a418fa6acbd0331dfa347b389987b7",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[541055] = {
+		decompose_id = 0,
+		name = "29a4da3a92ed944f2767fab1e3a2e718",
+		compose_id = 0,
+		type = 7,
+		id = 541055,
+		rare = 5,
+		desc = "deb353928088e60f5dac2834d79fdfae",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[542055] = {
+		decompose_id = 0,
+		name = "45a52d876e922826e1727a3a2751ee48",
+		compose_id = 0,
+		type = 7,
+		id = 542055,
+		rare = 5,
+		desc = "cb2dad21582edf79675e7b0b4edb36a2",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[543055] = {
+		decompose_id = 0,
+		name = "17dd8af8ef749b2c48b564bf75b42209",
+		compose_id = 0,
+		type = 7,
+		id = 543055,
+		rare = 5,
+		desc = "c008fcf47f149c9cafca99eed945eb1c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[544055] = {
+		decompose_id = 0,
+		name = "06a636c5f99ee807d96463bf573e5735",
+		compose_id = 0,
+		type = 7,
+		id = 544055,
+		rare = 5,
+		desc = "fb9e1e637fbfc51793cfc529bbc0149f",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[545055] = {
+		decompose_id = 0,
+		name = "18c51a84c401ea526fa71d8f55e7caa3",
+		compose_id = 0,
+		type = 7,
+		id = 545055,
+		rare = 5,
+		desc = "96d1d67d4b769f7f81a79bca75d2c684",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[549055] = {
+		decompose_id = 0,
+		name = "5e81abc619261a9275077f695ff25995",
+		compose_id = 0,
+		type = 7,
+		id = 549055,
+		rare = 5,
+		desc = "f6dcc395a23d4d3637302f485a446d8c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[250055] = {
+		decompose_id = 0,
+		name = "75de58f101482b7cb18f8150a0a4f9c6",
+		compose_id = 0,
+		type = 7,
+		id = 250055,
+		rare = 2,
+		desc = "b531a50845fa9a2a48a3ac4b59b311ad",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[350055] = {
+		decompose_id = 0,
+		name = "004de87eb0ebe59cd4e3163fecdc9542",
+		compose_id = 0,
+		type = 7,
+		id = 350055,
+		rare = 3,
+		desc = "223c3fa8f70efae27eb5c416860d1a09",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[450055] = {
+		decompose_id = 0,
+		name = "9c92a3bfb7008bfd1f1040f93f7a4031",
+		compose_id = 0,
+		type = 7,
+		id = 450055,
+		rare = 4,
+		desc = "14183d2d0aa5494a1c5e078118f62f83",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[550055] = {
+		decompose_id = 0,
+		name = "8a82a25817c90d674605f9c11cc1ffe6",
+		compose_id = 0,
+		type = 7,
+		id = 550055,
+		rare = 5,
+		desc = "29b93f46167e9c83c4f378c6c19b1392",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[551055] = {
+		decompose_id = 0,
+		name = "a0c9af53a0cf1f0e37411147b91e0379",
+		compose_id = 0,
+		type = 7,
+		id = 551055,
+		rare = 5,
+		desc = "60a8f804e4044f21d0750ca391c5861a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[552055] = {
+		decompose_id = 0,
+		name = "4b0dd28930145ad3cc9d17c12241d3df",
+		compose_id = 0,
+		type = 7,
+		id = 552055,
+		rare = 5,
+		desc = "36ffe308d90752adc7d1b31f38a20769",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[553055] = {
+		decompose_id = 0,
+		name = "0c8c549b62140c6197b2508ecb0a7e79",
+		compose_id = 0,
+		type = 7,
+		id = 553055,
+		rare = 5,
+		desc = "e3beaa222dd0da60741d59a334980e86",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[554055] = {
+		decompose_id = 0,
+		name = "e952387a3a7d8f94829c57e000ab9dbc",
+		compose_id = 0,
+		type = 7,
+		id = 554055,
+		rare = 5,
+		desc = "4e2be48d5674fed7cc95360c207d6ef4",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[555055] = {
+		decompose_id = 0,
+		name = "4d4e15ca08b8f5cfe77a9883749ce441",
+		compose_id = 0,
+		type = 7,
+		id = 555055,
+		rare = 5,
+		desc = "97a17fe1b45db36af557a2108bfcf132",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[559055] = {
+		decompose_id = 0,
+		name = "c104871b297c9f71d42c520b5cee691c",
+		compose_id = 0,
+		type = 7,
+		id = 559055,
+		rare = 5,
+		desc = "91d45df151d4c709d7cdfd178de3e2e0",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[260055] = {
+		decompose_id = 0,
+		name = "fe315f2492fc537b3e5185fdb4e13498",
+		compose_id = 0,
+		type = 7,
+		id = 260055,
+		rare = 2,
+		desc = "5bf9d8e4b1ceff8a5045aeaa41aca27c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[360055] = {
+		decompose_id = 0,
+		name = "b4c6ff46ecbb0ee9427ba5038b3b2c98",
+		compose_id = 0,
+		type = 7,
+		id = 360055,
+		rare = 3,
+		desc = "3e37c0557a0f2e4ea38d970b7898be90",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[460055] = {
+		decompose_id = 0,
+		name = "6c46819b3b15aaad20804354b83a1c2d",
+		compose_id = 0,
+		type = 7,
+		id = 460055,
+		rare = 4,
+		desc = "c8c6bdcc938c2ea6cd461d885bf729ee",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[560055] = {
+		decompose_id = 0,
+		name = "f789254ba649624b336b43d6b88d8cbf",
+		compose_id = 0,
+		type = 7,
+		id = 560055,
+		rare = 5,
+		desc = "5368cac8fb646356a040961b6981ce71",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[561055] = {
+		decompose_id = 0,
+		name = "5c6d128ae492a558cb15cb2660b90fef",
+		compose_id = 0,
+		type = 7,
+		id = 561055,
+		rare = 5,
+		desc = "71db5f6539cd014a3c3d185379dc16c4",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[562055] = {
+		decompose_id = 0,
+		name = "f86edfe873b3017374a895a12b94fc79",
+		compose_id = 0,
+		type = 7,
+		id = 562055,
+		rare = 5,
+		desc = "b7516fc645b4e25d4d7a8f71d34a8e67",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[563055] = {
+		decompose_id = 0,
+		name = "accc202b2bed706e70e2cbc9d89c1390",
+		compose_id = 0,
+		type = 7,
+		id = 563055,
+		rare = 5,
+		desc = "2adf3506b4ed58ba3213bd3df5d97c25",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[564055] = {
+		decompose_id = 0,
+		name = "a1db82a97da715bedc9eb57c1aafa585",
+		compose_id = 0,
+		type = 7,
+		id = 564055,
+		rare = 5,
+		desc = "9dd667723fde2fb42e6e4b8f927aa0e5",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[565055] = {
+		decompose_id = 0,
+		name = "90501ddf5fa8738c512f30b91baca2ad",
+		compose_id = 0,
+		type = 7,
+		id = 565055,
+		rare = 5,
+		desc = "4bf4d0207ed9b81db6f7aa50c32e3a0c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[569055] = {
+		decompose_id = 0,
+		name = "fc79aed9147681de0440edec66f54025",
+		compose_id = 0,
+		type = 7,
+		id = 569055,
+		rare = 5,
+		desc = "1771f347f8c4e1485ce9961a381f364a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "55",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[210056] = {
+		decompose_id = 0,
+		name = "58e87299bda43352438fb53dc7f6c5c5",
+		compose_id = 0,
+		type = 7,
+		id = 210056,
+		rare = 2,
+		desc = "458c6ccd83ba0ea7f2b75050a4d3979b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[310056] = {
+		decompose_id = 0,
+		name = "466826816d5cc1b3a9b52b0a942643b4",
+		compose_id = 0,
+		type = 7,
+		id = 310056,
+		rare = 3,
+		desc = "edcc1c51bf9a764ebff62e772255a389",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[410056] = {
+		decompose_id = 0,
+		name = "6024065ae4c88d6719c19fa90574076b",
+		compose_id = 0,
+		type = 7,
+		id = 410056,
+		rare = 4,
+		desc = "020f930a884b06ccf11689891a6a30ef",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[510056] = {
+		decompose_id = 0,
+		name = "d9310bd74ae86607be04ec9041ffde02",
+		compose_id = 0,
+		type = 7,
+		id = 510056,
+		rare = 5,
+		desc = "889d997340ab50605d9aafc165834ecc",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[511056] = {
+		decompose_id = 0,
+		name = "ddf3ca9bbc45478ec7b559711555cdd5",
+		compose_id = 0,
+		type = 7,
+		id = 511056,
+		rare = 5,
+		desc = "938a390bafa145bc0658d5a676f3c748",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[512056] = {
+		decompose_id = 0,
+		name = "c399d6e1eb14875bb07193c6b595b978",
+		compose_id = 0,
+		type = 7,
+		id = 512056,
+		rare = 5,
+		desc = "fb7a7d58a7c2290f007e6a2fe4b78baf",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[513056] = {
+		decompose_id = 0,
+		name = "cc28e958ac0b8310f0539dfd42fec428",
+		compose_id = 0,
+		type = 7,
+		id = 513056,
+		rare = 5,
+		desc = "80ecb33a5c4ea7d5e3a7613770eb5ad1",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[514056] = {
+		decompose_id = 0,
+		name = "50fc0fca51f4577fcbfead0a0da9d21c",
+		compose_id = 0,
+		type = 7,
+		id = 514056,
+		rare = 5,
+		desc = "518b5a2ebaebdbfaa0cfaefb78f84a28",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[515056] = {
+		decompose_id = 0,
+		name = "2b53152dff8fcd305b78fcee7522f60f",
+		compose_id = 0,
+		type = 7,
+		id = 515056,
+		rare = 5,
+		desc = "d2b1ee4b9db605000afce2d052ced55a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[519056] = {
+		decompose_id = 0,
+		name = "34fd031ae8b6dd5e32013084d929cbb3",
+		compose_id = 0,
+		type = 7,
+		id = 519056,
+		rare = 5,
+		desc = "690bce9e800853bfca814e322c0e9936",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[220056] = {
+		decompose_id = 0,
+		name = "80f3ab8a1d8da2854f36e58fddfeaf2f",
+		compose_id = 0,
+		type = 7,
+		id = 220056,
+		rare = 2,
+		desc = "fb2ac580a4f0e593992a59fbb4acf9db",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[320056] = {
+		decompose_id = 0,
+		name = "0d0086baf8038f96c25e25e9ea03c5b3",
+		compose_id = 0,
+		type = 7,
+		id = 320056,
+		rare = 3,
+		desc = "aa774f5ccf0c47129dc4409f2dc61ae9",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[420056] = {
+		decompose_id = 0,
+		name = "efe27d33247465e777e7cbd3aaa7de4d",
+		compose_id = 0,
+		type = 7,
+		id = 420056,
+		rare = 4,
+		desc = "14c428859987f527434048a4db24ecc4",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[520056] = {
+		decompose_id = 0,
+		name = "3e9c5fde90230994bec52e4ce551e105",
+		compose_id = 0,
+		type = 7,
+		id = 520056,
+		rare = 5,
+		desc = "0df98bc617eb9ef0838173f28ce7fff4",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[521056] = {
+		decompose_id = 0,
+		name = "02c474877e7f0917c3ee075189b9fce1",
+		compose_id = 0,
+		type = 7,
+		id = 521056,
+		rare = 5,
+		desc = "89d07975020b9b0d8120048ac8a8bb0a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[522056] = {
+		decompose_id = 0,
+		name = "c3c0e6f54445ec06ab38713c6fb4273d",
+		compose_id = 0,
+		type = 7,
+		id = 522056,
+		rare = 5,
+		desc = "65a6628499988353e3bfccd847efa0d4",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[523056] = {
+		decompose_id = 0,
+		name = "c1cbd7c8a26755baae9707be7e94d2ad",
+		compose_id = 0,
+		type = 7,
+		id = 523056,
+		rare = 5,
+		desc = "9411728f8197402e76190c6023114b9d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[524056] = {
+		decompose_id = 0,
+		name = "9b6a43a3a707965c35d93bcf854df145",
+		compose_id = 0,
+		type = 7,
+		id = 524056,
+		rare = 5,
+		desc = "e9378ca8346834701d049e79c901dc6e",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[525056] = {
+		decompose_id = 0,
+		name = "be91e99d90d72d5e7dbdcb0a4df3567c",
+		compose_id = 0,
+		type = 7,
+		id = 525056,
+		rare = 5,
+		desc = "d7a5fcc4b4e3b07aa3c974c213146f10",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[529056] = {
+		decompose_id = 0,
+		name = "fda1a85d0361e9913904fe707d490331",
+		compose_id = 0,
+		type = 7,
+		id = 529056,
+		rare = 5,
+		desc = "88c5585a880272998e5bf398a768a5d7",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[230056] = {
+		decompose_id = 0,
+		name = "f20fd38831edfe1984a36536fc1f5c9b",
+		compose_id = 0,
+		type = 7,
+		id = 230056,
+		rare = 2,
+		desc = "7e8ca9a0fc65c079b1be2f6a9aab836c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[330056] = {
+		decompose_id = 0,
+		name = "c474ab20319ac6db26b4fc39ba1a7c6d",
+		compose_id = 0,
+		type = 7,
+		id = 330056,
+		rare = 3,
+		desc = "1a92d5e451de727e0c9f7ee09ed2c965",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[430056] = {
+		decompose_id = 0,
+		name = "d6973e5684b444725796bd7ac0d8954b",
+		compose_id = 0,
+		type = 7,
+		id = 430056,
+		rare = 4,
+		desc = "b325d6c15404bc3f66f92a9c82a10f37",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[530056] = {
+		decompose_id = 0,
+		name = "daa7ea0cf3cee2f8adb9f9851433641b",
+		compose_id = 0,
+		type = 7,
+		id = 530056,
+		rare = 5,
+		desc = "2bb21e06b5a4e41373c8a7b77ea24823",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[531056] = {
+		decompose_id = 0,
+		name = "4df4ae93909b3aa8db8340e5ed8493bd",
+		compose_id = 0,
+		type = 7,
+		id = 531056,
+		rare = 5,
+		desc = "64ece0ce07bddcd73695a4c9d1d27ea6",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[532056] = {
+		decompose_id = 0,
+		name = "41c62cf08c1f87fd3ae2c2605a500c6c",
+		compose_id = 0,
+		type = 7,
+		id = 532056,
+		rare = 5,
+		desc = "58245c0cedd017bae29b0836c370fcc0",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[533056] = {
+		decompose_id = 0,
+		name = "2799d8e44b9b2932b5ac8861d57eb607",
+		compose_id = 0,
+		type = 7,
+		id = 533056,
+		rare = 5,
+		desc = "e195603c98b1a1aab63043637225918b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[534056] = {
+		decompose_id = 0,
+		name = "f657bab5c4464fa9a759ba695fba3d80",
+		compose_id = 0,
+		type = 7,
+		id = 534056,
+		rare = 5,
+		desc = "debd26e58866b0d50f3b8bc2abdffc83",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[535056] = {
+		decompose_id = 0,
+		name = "97e3a9cc8b60fc44425686d6c66c4106",
+		compose_id = 0,
+		type = 7,
+		id = 535056,
+		rare = 5,
+		desc = "3dc423435deb18f9dc5605017a009a49",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[539056] = {
+		decompose_id = 0,
+		name = "0f118cd82d3537a698ea460518a2a117",
+		compose_id = 0,
+		type = 7,
+		id = 539056,
+		rare = 5,
+		desc = "9086a15e19da6b0304594f4833f71552",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[240056] = {
+		decompose_id = 0,
+		name = "f2a011d82cc046d55991ea384f49be8e",
+		compose_id = 0,
+		type = 7,
+		id = 240056,
+		rare = 2,
+		desc = "b6bfb39e5cea97074b5bbc528a65997d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[340056] = {
+		decompose_id = 0,
+		name = "9d9b4874b8ba4cd88111c0304510c759",
+		compose_id = 0,
+		type = 7,
+		id = 340056,
+		rare = 3,
+		desc = "3ff6e712a1606f924f1c77fd9a3d80fb",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[440056] = {
+		decompose_id = 0,
+		name = "06d9af2e76d85bc000f6eadc562d0e91",
+		compose_id = 0,
+		type = 7,
+		id = 440056,
+		rare = 4,
+		desc = "58a66048002e9f5b324da6836298957d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[540056] = {
+		decompose_id = 0,
+		name = "f6fa5819d351d329428518bb1524d228",
+		compose_id = 0,
+		type = 7,
+		id = 540056,
+		rare = 5,
+		desc = "95efc49f673df4135ef50dd8eec50496",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[541056] = {
+		decompose_id = 0,
+		name = "3b6c29628096bfc13342499dcb28ca78",
+		compose_id = 0,
+		type = 7,
+		id = 541056,
+		rare = 5,
+		desc = "f8ace87f452db2bf80c32c69c1ed51cc",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[542056] = {
+		decompose_id = 0,
+		name = "b8705cc5cdde6e7a819a1ac60eb9d11a",
+		compose_id = 0,
+		type = 7,
+		id = 542056,
+		rare = 5,
+		desc = "d15f93a9af8392a0e9831aa12b0015b3",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[543056] = {
+		decompose_id = 0,
+		name = "beb577849218a4d4bc5fae6120e777ff",
+		compose_id = 0,
+		type = 7,
+		id = 543056,
+		rare = 5,
+		desc = "6005b49fd20b44050659078071bc45b5",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[544056] = {
+		decompose_id = 0,
+		name = "e83e05c317fedfa409965009ec62f860",
+		compose_id = 0,
+		type = 7,
+		id = 544056,
+		rare = 5,
+		desc = "b989accf9a1e407c7dfd12143ef9462a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[545056] = {
+		decompose_id = 0,
+		name = "e169bcabf0bbe306109262487e06b3fb",
+		compose_id = 0,
+		type = 7,
+		id = 545056,
+		rare = 5,
+		desc = "4c3636c9b86467180c96f4315eadb4ae",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[549056] = {
+		decompose_id = 0,
+		name = "1ad1314e82bd13bc601c9ca9a78d320a",
+		compose_id = 0,
+		type = 7,
+		id = 549056,
+		rare = 5,
+		desc = "31fbd61da85e189045c5df968143cd21",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[250056] = {
+		decompose_id = 0,
+		name = "4235cfc6ee4778fb5ba0a94f0b68ab44",
+		compose_id = 0,
+		type = 7,
+		id = 250056,
+		rare = 2,
+		desc = "b66a80222a1c8351e023ac1b6fc95620",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[350056] = {
+		decompose_id = 0,
+		name = "0fb887a563881146c7088a7358a139ae",
+		compose_id = 0,
+		type = 7,
+		id = 350056,
+		rare = 3,
+		desc = "299e9a6e677f2a68b7017bec3ee22d0f",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[450056] = {
+		decompose_id = 0,
+		name = "79534d269a172e7cf01a3c79c2e44205",
+		compose_id = 0,
+		type = 7,
+		id = 450056,
+		rare = 4,
+		desc = "5912bf3e59559f8a2ab454ceaa252d15",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[550056] = {
+		decompose_id = 0,
+		name = "44c71151e6654599805267808f0df31f",
+		compose_id = 0,
+		type = 7,
+		id = 550056,
+		rare = 5,
+		desc = "91538d8dfe448269ce7737ad715c55c0",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[551056] = {
+		decompose_id = 0,
+		name = "5d275b7321ee3b192108eb2ab17f96eb",
+		compose_id = 0,
+		type = 7,
+		id = 551056,
+		rare = 5,
+		desc = "6c133f4f545a496ae1c4fa2f48212ed9",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[552056] = {
+		decompose_id = 0,
+		name = "cc4358b2f00925451d147b0671b2a0be",
+		compose_id = 0,
+		type = 7,
+		id = 552056,
+		rare = 5,
+		desc = "80c985f9c5051871b05f80266c809dad",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[553056] = {
+		decompose_id = 0,
+		name = "933f1098aa7f7a90227fd36129e29212",
+		compose_id = 0,
+		type = 7,
+		id = 553056,
+		rare = 5,
+		desc = "b88b2c86498e20fdd2322fe03481d16e",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[554056] = {
+		decompose_id = 0,
+		name = "59aae5017e8cb2e2ea115b42fbdad54f",
+		compose_id = 0,
+		type = 7,
+		id = 554056,
+		rare = 5,
+		desc = "0dd410e3ee5b0adffb277ca09fdabf42",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[555056] = {
+		decompose_id = 0,
+		name = "3827e6a6ad9a71839656b7deb1d89a68",
+		compose_id = 0,
+		type = 7,
+		id = 555056,
+		rare = 5,
+		desc = "48c7306656d202681d67312c40263ed0",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[559056] = {
+		decompose_id = 0,
+		name = "b01417dde995587fefee377faf4775fb",
+		compose_id = 0,
+		type = 7,
+		id = 559056,
+		rare = 5,
+		desc = "c2db7d809815539d15bf0b6302fdc28a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[260056] = {
+		decompose_id = 0,
+		name = "9afb4c21bad4bd03d38e829817e372ef",
+		compose_id = 0,
+		type = 7,
+		id = 260056,
+		rare = 2,
+		desc = "55c7597eeacbde597dfc93faa0276fa6",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[360056] = {
+		decompose_id = 0,
+		name = "2e1046eceed8a220fdfe7872fda219ee",
+		compose_id = 0,
+		type = 7,
+		id = 360056,
+		rare = 3,
+		desc = "d690779196db8dcb26fde45c31ab44d9",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[460056] = {
+		decompose_id = 0,
+		name = "50449cabd8b2c0bac943faf1713ca766",
+		compose_id = 0,
+		type = 7,
+		id = 460056,
+		rare = 4,
+		desc = "da865cac8547b02529c344b7047117de",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[560056] = {
+		decompose_id = 0,
+		name = "cd2aca4a00d81fb0f298dc7672d49ed2",
+		compose_id = 0,
+		type = 7,
+		id = 560056,
+		rare = 5,
+		desc = "6909bd30e6f18d08d4d364839d09cd70",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[561056] = {
+		decompose_id = 0,
+		name = "bc61407489b8c0ee2dbc287bbfd76e05",
+		compose_id = 0,
+		type = 7,
+		id = 561056,
+		rare = 5,
+		desc = "a6023e5bae4ff8ed7fb78057536b971a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[562056] = {
+		decompose_id = 0,
+		name = "d1dad16d48e5057223dbd4947cee2e5a",
+		compose_id = 0,
+		type = 7,
+		id = 562056,
+		rare = 5,
+		desc = "326671a1b4d891ac207bd3d61e721d1c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[563056] = {
+		decompose_id = 0,
+		name = "a3117fb7ae7d6608e6fd9dd26c701665",
+		compose_id = 0,
+		type = 7,
+		id = 563056,
+		rare = 5,
+		desc = "1ea02be7602048b91d7dfbc846e0c05a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[564056] = {
+		decompose_id = 0,
+		name = "f004b75a58ce5c3929583c6d1b07ebe4",
+		compose_id = 0,
+		type = 7,
+		id = 564056,
+		rare = 5,
+		desc = "e1be0f604da47fb827fc8d6924fbd215",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[565056] = {
+		decompose_id = 0,
+		name = "ea48857f465a1c41bb39e5178c9063ac",
+		compose_id = 0,
+		type = 7,
+		id = 565056,
+		rare = 5,
+		desc = "6e9087173358a31d5291e964b89998a4",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[569056] = {
+		decompose_id = 0,
+		name = "1703843587d0aedba3e729f9048550ff",
+		compose_id = 0,
+		type = 7,
+		id = 569056,
+		rare = 5,
+		desc = "083fd1f209f985f0e0fae1e497bc059d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "56",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[210057] = {
+		decompose_id = 0,
+		name = "38ab5924e1d00bf135c6949893f6b86f",
+		compose_id = 0,
+		type = 7,
+		id = 210057,
+		rare = 2,
+		desc = "ea73f17689e360a4b2181828395865d6",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[310057] = {
+		decompose_id = 0,
+		name = "6292de63e818bdbf3a884a463390bc01",
+		compose_id = 0,
+		type = 7,
+		id = 310057,
+		rare = 3,
+		desc = "786ddfaf3616d38742c11e7984476568",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[410057] = {
+		decompose_id = 0,
+		name = "3264daa559540f50641682568e2267ed",
+		compose_id = 0,
+		type = 7,
+		id = 410057,
+		rare = 4,
+		desc = "783e09d0f7c0fa6a5c6066bc029887f4",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[510057] = {
+		decompose_id = 0,
+		name = "c9474ba18fec070fa053ccfeadb3cd4b",
+		compose_id = 0,
+		type = 7,
+		id = 510057,
+		rare = 5,
+		desc = "c8a14e7554bfae71c484e4e44d663024",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[511057] = {
+		decompose_id = 0,
+		name = "e1297ded0d820b8bf68bed4c8aa13875",
+		compose_id = 0,
+		type = 7,
+		id = 511057,
+		rare = 5,
+		desc = "c01073be0d1abfe18304376e0113bf3d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[512057] = {
+		decompose_id = 0,
+		name = "e55e7e8b80f3aa7b3964e601a6756d4d",
+		compose_id = 0,
+		type = 7,
+		id = 512057,
+		rare = 5,
+		desc = "b03c3fa1d21ca84fb51852ae7a2d098d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[513057] = {
+		decompose_id = 0,
+		name = "c2fbfe0ec8dab2beb20834675dd1c72b",
+		compose_id = 0,
+		type = 7,
+		id = 513057,
+		rare = 5,
+		desc = "036598e9f6539d93970f62f8b45997e7",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[514057] = {
+		decompose_id = 0,
+		name = "eef119ed4ac675e4bf5f1e11d196a1be",
+		compose_id = 0,
+		type = 7,
+		id = 514057,
+		rare = 5,
+		desc = "750d9e6634419ebee535688e03a2d8a0",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[515057] = {
+		decompose_id = 0,
+		name = "7e58dfeeeefb70a7676d7ff4be91d70d",
+		compose_id = 0,
+		type = 7,
+		id = 515057,
+		rare = 5,
+		desc = "f2e70cdbee1f1f70f0eb9d04e42efffe",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[519057] = {
+		decompose_id = 0,
+		name = "e65060df50ce3dce45d6ea4ba985d566",
+		compose_id = 0,
+		type = 7,
+		id = 519057,
+		rare = 5,
+		desc = "4288a08196c223bc01d7c8ef057950ec",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[220057] = {
+		decompose_id = 0,
+		name = "cd33fc0061f09130b24c09586d64acf4",
+		compose_id = 0,
+		type = 7,
+		id = 220057,
+		rare = 2,
+		desc = "8e0d4f58354a0afac83d34faf33632d6",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[320057] = {
+		decompose_id = 0,
+		name = "11d10b78b88bf47d2ddc1e55cab364d8",
+		compose_id = 0,
+		type = 7,
+		id = 320057,
+		rare = 3,
+		desc = "497d73688b6542b289082d4092545442",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[420057] = {
+		decompose_id = 0,
+		name = "56fa5fd4630d541f8c54a42174d52e62",
+		compose_id = 0,
+		type = 7,
+		id = 420057,
+		rare = 4,
+		desc = "b754d35a207a39fb3236d33e3c20e4dc",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[520057] = {
+		decompose_id = 0,
+		name = "5abfc85ba4cdbf8eeeea022ed1b2528b",
+		compose_id = 0,
+		type = 7,
+		id = 520057,
+		rare = 5,
+		desc = "33b0efc254f3a78c6011608cb106858e",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[521057] = {
+		decompose_id = 0,
+		name = "17d1861dc47764eaec684e0d2ee17e2a",
+		compose_id = 0,
+		type = 7,
+		id = 521057,
+		rare = 5,
+		desc = "9b412a0987469bfaee09bc637e0eb102",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[522057] = {
+		decompose_id = 0,
+		name = "18695838fcc809d24560be512af128a3",
+		compose_id = 0,
+		type = 7,
+		id = 522057,
+		rare = 5,
+		desc = "1c6d8c8b413315b42f4f41df9602c12a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[523057] = {
+		decompose_id = 0,
+		name = "327f49300bb1ef38e6230231f293f114",
+		compose_id = 0,
+		type = 7,
+		id = 523057,
+		rare = 5,
+		desc = "b23d28ff4dd14fc5d023e7e37d8f379f",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[524057] = {
+		decompose_id = 0,
+		name = "8df2a8ee3158b091cdad64d4f507c45f",
+		compose_id = 0,
+		type = 7,
+		id = 524057,
+		rare = 5,
+		desc = "055a34a64f484800c09dc07b737b78cd",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[525057] = {
+		decompose_id = 0,
+		name = "8671f9f7bfaca7fd693235b960de0cf1",
+		compose_id = 0,
+		type = 7,
+		id = 525057,
+		rare = 5,
+		desc = "64227140f585122533b9d6bd01468edd",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[529057] = {
+		decompose_id = 0,
+		name = "9ddac6d6ce7363e5486cd8efaf4e421f",
+		compose_id = 0,
+		type = 7,
+		id = 529057,
+		rare = 5,
+		desc = "14c1a09dde10a0e930cba24d6cbfb720",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[230057] = {
+		decompose_id = 0,
+		name = "26aaa7ea4d58841afcffd7bca570e0d9",
+		compose_id = 0,
+		type = 7,
+		id = 230057,
+		rare = 2,
+		desc = "ad09b86715f2eb5bc1c25d5504472217",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[330057] = {
+		decompose_id = 0,
+		name = "ffadd36f9d0469d7c0a80f41d218ff07",
+		compose_id = 0,
+		type = 7,
+		id = 330057,
+		rare = 3,
+		desc = "a60f9d788a0758e4a3853bac2e3425b2",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[430057] = {
+		decompose_id = 0,
+		name = "16a930b9ebae5a20ef51a1053c33cd0f",
+		compose_id = 0,
+		type = 7,
+		id = 430057,
+		rare = 4,
+		desc = "5abc96506f4a072c531039dec3f54a2b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[530057] = {
+		decompose_id = 0,
+		name = "32031ebb19f9759a61a2ab5e6b69026c",
+		compose_id = 0,
+		type = 7,
+		id = 530057,
+		rare = 5,
+		desc = "1f4bc21c58b8f1dfdcde0d1ee246d2f5",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[531057] = {
+		decompose_id = 0,
+		name = "fd484563e3dcc3e48b012cb07f7c15af",
+		compose_id = 0,
+		type = 7,
+		id = 531057,
+		rare = 5,
+		desc = "7b196d3f91370242eee7e9f0b0ccaa07",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[532057] = {
+		decompose_id = 0,
+		name = "e273b8bb26a5e0ceb30030cd02667d5f",
+		compose_id = 0,
+		type = 7,
+		id = 532057,
+		rare = 5,
+		desc = "5814c77d4733cc9a260bae09647d6050",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[533057] = {
+		decompose_id = 0,
+		name = "35fe0c43cca9e441adeba3305690404c",
+		compose_id = 0,
+		type = 7,
+		id = 533057,
+		rare = 5,
+		desc = "98149df7a76497c662d369d7faeb6456",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[534057] = {
+		decompose_id = 0,
+		name = "d0b98356d3dfe142803a7b3d885ebcf1",
+		compose_id = 0,
+		type = 7,
+		id = 534057,
+		rare = 5,
+		desc = "84708175b166b1446791ad636d0bafa5",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[535057] = {
+		decompose_id = 0,
+		name = "f1f7c282ae2d4a22403433c3ce4443e2",
+		compose_id = 0,
+		type = 7,
+		id = 535057,
+		rare = 5,
+		desc = "5d75df5568229b2d089117b34736a6ad",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[539057] = {
+		decompose_id = 0,
+		name = "77a7586334fdd4477df8422208e08844",
+		compose_id = 0,
+		type = 7,
+		id = 539057,
+		rare = 5,
+		desc = "8f03b6d9e2b1977d136ed2da32b25d21",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[240057] = {
+		decompose_id = 0,
+		name = "5f8e24b8d0112004baa38e86bfee1a9a",
+		compose_id = 0,
+		type = 7,
+		id = 240057,
+		rare = 2,
+		desc = "b2083941926d3936cbfb4a02ecb8ef8b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[340057] = {
+		decompose_id = 0,
+		name = "660d4752dd9d87d9dee73471089e3252",
+		compose_id = 0,
+		type = 7,
+		id = 340057,
+		rare = 3,
+		desc = "12bd668fbabb3cc2b0d4256911380b62",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[440057] = {
+		decompose_id = 0,
+		name = "a6ceadf34f43b2bafd71974933fdac11",
+		compose_id = 0,
+		type = 7,
+		id = 440057,
+		rare = 4,
+		desc = "24b0f348d39ce8773f9b2761cea4299f",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[540057] = {
+		decompose_id = 0,
+		name = "16408206dc8b3b0ad111db8dd056bac2",
+		compose_id = 0,
+		type = 7,
+		id = 540057,
+		rare = 5,
+		desc = "57d456706dae86d306d167cc846aa53b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[541057] = {
+		decompose_id = 0,
+		name = "19554545053acfc2514d8e57e6548ded",
+		compose_id = 0,
+		type = 7,
+		id = 541057,
+		rare = 5,
+		desc = "ddd519c887985d7cdbdd26be80c70126",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[542057] = {
+		decompose_id = 0,
+		name = "7674518fb99795a30cfdac1d1681ff0b",
+		compose_id = 0,
+		type = 7,
+		id = 542057,
+		rare = 5,
+		desc = "21ecf35e0a5e68181032e32f6ac67dd3",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[543057] = {
+		decompose_id = 0,
+		name = "2026676eb29176bccdee7e64fb694aef",
+		compose_id = 0,
+		type = 7,
+		id = 543057,
+		rare = 5,
+		desc = "c6e10eb0282d4457e3badf47a293fff7",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[544057] = {
+		decompose_id = 0,
+		name = "78d1cf8e8f0be9f626f5a5341c482af7",
+		compose_id = 0,
+		type = 7,
+		id = 544057,
+		rare = 5,
+		desc = "253925c34b31f958c49593582178b01a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[545057] = {
+		decompose_id = 0,
+		name = "860e11d9572bf8a7694206cfbfd90c18",
+		compose_id = 0,
+		type = 7,
+		id = 545057,
+		rare = 5,
+		desc = "dc2b12e0ae4dddec53347e5d9af25cc1",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[549057] = {
+		decompose_id = 0,
+		name = "0594085019e80f590820d481a24b14dd",
+		compose_id = 0,
+		type = 7,
+		id = 549057,
+		rare = 5,
+		desc = "d6ca6e7153c4c82996a9fefb67852af8",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[250057] = {
+		decompose_id = 0,
+		name = "19b7e262e9d9c55ec55bb92aab891128",
+		compose_id = 0,
+		type = 7,
+		id = 250057,
+		rare = 2,
+		desc = "828c6303a3f540f337ebde4ab5f7617a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[350057] = {
+		decompose_id = 0,
+		name = "35507796e5f022d61a92c9f63000c16b",
+		compose_id = 0,
+		type = 7,
+		id = 350057,
+		rare = 3,
+		desc = "44b48d3dadea00877c2547f8e22c18a3",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[450057] = {
+		decompose_id = 0,
+		name = "82e3084cb7844e6bf1f6f0ebc2fd6f7a",
+		compose_id = 0,
+		type = 7,
+		id = 450057,
+		rare = 4,
+		desc = "0bd92a25158724a02fb2eeeb9b9c6d91",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[550057] = {
+		decompose_id = 0,
+		name = "e766dc8e54c9bf0f27985fb43ac69ca5",
+		compose_id = 0,
+		type = 7,
+		id = 550057,
+		rare = 5,
+		desc = "5c0633190dd8ef238882c93ffe3135db",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[551057] = {
+		decompose_id = 0,
+		name = "030c87e65ff55786c9d1566cbe6aad31",
+		compose_id = 0,
+		type = 7,
+		id = 551057,
+		rare = 5,
+		desc = "4fc49d1c72c3445f849f13f493a5c108",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[552057] = {
+		decompose_id = 0,
+		name = "762693b9ff5d34523f0248ca76c7a54d",
+		compose_id = 0,
+		type = 7,
+		id = 552057,
+		rare = 5,
+		desc = "6c3f91dbe4d07eebad40990075df62ea",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[553057] = {
+		decompose_id = 0,
+		name = "36ecc9b311f4ca59be0aa5aed9f90b17",
+		compose_id = 0,
+		type = 7,
+		id = 553057,
+		rare = 5,
+		desc = "22f5a99978bdfbc81b069d2a5bb1209f",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[554057] = {
+		decompose_id = 0,
+		name = "271c66d0c80e7d1a42e09bb998494390",
+		compose_id = 0,
+		type = 7,
+		id = 554057,
+		rare = 5,
+		desc = "dae066746414bd3a3226a99d386b14ce",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[555057] = {
+		decompose_id = 0,
+		name = "a253e9249226ccaef944275d31908e40",
+		compose_id = 0,
+		type = 7,
+		id = 555057,
+		rare = 5,
+		desc = "588b0c25234e67460659ae41437800b3",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[559057] = {
+		decompose_id = 0,
+		name = "fc7b950ad4d92c0f7bd844f1677ee404",
+		compose_id = 0,
+		type = 7,
+		id = 559057,
+		rare = 5,
+		desc = "bcb6d9416ff34fcc59390bc024451990",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[260057] = {
+		decompose_id = 0,
+		name = "5b571ee5f554bf08501a5f1553154b81",
+		compose_id = 0,
+		type = 7,
+		id = 260057,
+		rare = 2,
+		desc = "cb166717bd1cf0c3b9424c52145747c2",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[360057] = {
+		decompose_id = 0,
+		name = "dbf2ee4be315eefa9a194e9e5a367f48",
+		compose_id = 0,
+		type = 7,
+		id = 360057,
+		rare = 3,
+		desc = "80eb3584c177a2c62d9680443b7f96fd",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[460057] = {
+		decompose_id = 0,
+		name = "ccba426af78b4016483fa6c89274f1be",
+		compose_id = 0,
+		type = 7,
+		id = 460057,
+		rare = 4,
+		desc = "554d7a429356aeb31685455f5aba0cee",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[560057] = {
+		decompose_id = 0,
+		name = "d29ef77c52ae1d89906a2b0d24928d57",
+		compose_id = 0,
+		type = 7,
+		id = 560057,
+		rare = 5,
+		desc = "146965ccf5e6b5dbc7bceb2a6124fe56",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[561057] = {
+		decompose_id = 0,
+		name = "9349ac55b788795052aea12acf806c95",
+		compose_id = 0,
+		type = 7,
+		id = 561057,
+		rare = 5,
+		desc = "ae4ecb187d6edd15b43a8117f786e3bb",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[562057] = {
+		decompose_id = 0,
+		name = "bc0dcb9387b1cf631193deb1979d3f5d",
+		compose_id = 0,
+		type = 7,
+		id = 562057,
+		rare = 5,
+		desc = "8c9bcd523176f388fcf26f0c1eaab4ee",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[563057] = {
+		decompose_id = 0,
+		name = "dc7ad629952bccafcecad2215a1863e8",
+		compose_id = 0,
+		type = 7,
+		id = 563057,
+		rare = 5,
+		desc = "a6367daf5b4b024c4c36205ae41fefdc",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[564057] = {
+		decompose_id = 0,
+		name = "1f54c6cac21046c3c4ee1dba7d102f86",
+		compose_id = 0,
+		type = 7,
+		id = 564057,
+		rare = 5,
+		desc = "e006f2b461a734264b248f9e6dea7210",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[565057] = {
+		decompose_id = 0,
+		name = "f065294475a374f587b8623afafa7769",
+		compose_id = 0,
+		type = 7,
+		id = 565057,
+		rare = 5,
+		desc = "02cfd7b6573f5591027cb872e2718050",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[569057] = {
+		decompose_id = 0,
+		name = "e145c1a15c62d3c683b37815f04acfb7",
+		compose_id = 0,
+		type = 7,
+		id = 569057,
+		rare = 5,
+		desc = "5dacc5ea7cf7b3e088bf7f43001214db",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "57",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[210058] = {
+		decompose_id = 0,
+		name = "30a8b7d42906a607013158dc3224b5d1",
+		compose_id = 0,
+		type = 7,
+		id = 210058,
+		rare = 2,
+		desc = "9eeeacfa1f7ff878dd7db164050a0df1",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[310058] = {
+		decompose_id = 0,
+		name = "8ddf0c575de4d3afc00e1696de721085",
+		compose_id = 0,
+		type = 7,
+		id = 310058,
+		rare = 3,
+		desc = "76c4ea3f8aae765de4ddd9b11d618ba6",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[410058] = {
+		decompose_id = 0,
+		name = "3dc2a9dc406f3a7988d21fcb6e965e8b",
+		compose_id = 0,
+		type = 7,
+		id = 410058,
+		rare = 4,
+		desc = "8422d8c89cce9f144d7deb92ca8fc92f",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[510058] = {
+		decompose_id = 0,
+		name = "ee754f0930a364c68afa21eafb4b318d",
+		compose_id = 0,
+		type = 7,
+		id = 510058,
+		rare = 5,
+		desc = "9c8fdfb73559a73a804f3519f4073d95",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[511058] = {
+		decompose_id = 0,
+		name = "c793122be9f6bbf44848726698cb14f7",
+		compose_id = 0,
+		type = 7,
+		id = 511058,
+		rare = 5,
+		desc = "e1223daaf8f0f3458431788d2ea11c07",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[512058] = {
+		decompose_id = 0,
+		name = "dc8c35b4c7abaaf022ce628333e5db7c",
+		compose_id = 0,
+		type = 7,
+		id = 512058,
+		rare = 5,
+		desc = "1ddd632d93f89897bea860feaa4d3bab",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[513058] = {
+		decompose_id = 0,
+		name = "86488debce5f49e0cc80816937fa4eec",
+		compose_id = 0,
+		type = 7,
+		id = 513058,
+		rare = 5,
+		desc = "9c21da56164039d00d335589462f6440",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[514058] = {
+		decompose_id = 0,
+		name = "00e530b0e335c2af190cbf52606c670f",
+		compose_id = 0,
+		type = 7,
+		id = 514058,
+		rare = 5,
+		desc = "ac5da456c9bd951981b8e5cbbc497c98",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[515058] = {
+		decompose_id = 0,
+		name = "f2a0c1f93121e1ed82a356fc8b5868bd",
+		compose_id = 0,
+		type = 7,
+		id = 515058,
+		rare = 5,
+		desc = "7dbd7046b9c611b5dc129a848a9ede75",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[519058] = {
+		decompose_id = 0,
+		name = "e9a82e2765fde5054c8a9c072bf46fac",
+		compose_id = 0,
+		type = 7,
+		id = 519058,
+		rare = 5,
+		desc = "567dbe4e0da7721f63f9e4ddddfedc1d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[220058] = {
+		decompose_id = 0,
+		name = "1d3cdf33ceb797480e64fcf1f3e865e7",
+		compose_id = 0,
+		type = 7,
+		id = 220058,
+		rare = 2,
+		desc = "bcbb60ec0937e419c952ffe18b4754fc",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[320058] = {
+		decompose_id = 0,
+		name = "4b0ff6c07c520fa8495bc19e0094fe2e",
+		compose_id = 0,
+		type = 7,
+		id = 320058,
+		rare = 3,
+		desc = "0654b70837e348f08b993bc55d40c075",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[420058] = {
+		decompose_id = 0,
+		name = "78e0c981831dd1ce06c710e8a4591b57",
+		compose_id = 0,
+		type = 7,
+		id = 420058,
+		rare = 4,
+		desc = "138291dffe68174a20d1a2e78ec69452",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[520058] = {
+		decompose_id = 0,
+		name = "38ea5511a9344ad71f58f75ec87eefd6",
+		compose_id = 0,
+		type = 7,
+		id = 520058,
+		rare = 5,
+		desc = "5ad71333f966643331dc0fda49cabe48",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[521058] = {
+		decompose_id = 0,
+		name = "c71ec04dd9544519a6f66ee5a72d8036",
+		compose_id = 0,
+		type = 7,
+		id = 521058,
+		rare = 5,
+		desc = "283e61854bd0a06e4443b1e5316aec85",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[522058] = {
+		decompose_id = 0,
+		name = "c545ae8939bc521e54372052b51a787a",
+		compose_id = 0,
+		type = 7,
+		id = 522058,
+		rare = 5,
+		desc = "bfea5e98418ea4df8e51a0bcac04e4ae",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[523058] = {
+		decompose_id = 0,
+		name = "3c684393410559cbb9915adfbb22cbec",
+		compose_id = 0,
+		type = 7,
+		id = 523058,
+		rare = 5,
+		desc = "e181e385e08f40924b60af98a145e644",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[524058] = {
+		decompose_id = 0,
+		name = "d37a89dd0077a091c37cc0e77629ce18",
+		compose_id = 0,
+		type = 7,
+		id = 524058,
+		rare = 5,
+		desc = "8de193f432726a5b15c6b319bd9c4838",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[525058] = {
+		decompose_id = 0,
+		name = "c37b016e333a15e01144de07acb82d07",
+		compose_id = 0,
+		type = 7,
+		id = 525058,
+		rare = 5,
+		desc = "28743fad92ac793feb99e61ad2d06938",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[529058] = {
+		decompose_id = 0,
+		name = "fba618966b2d94f7e3546a70a0df9541",
+		compose_id = 0,
+		type = 7,
+		id = 529058,
+		rare = 5,
+		desc = "6f18c1ca41439fd32c5041b7dc46d8cc",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[230058] = {
+		decompose_id = 0,
+		name = "e51ea06c2a4d51fbd999f6b539388bab",
+		compose_id = 0,
+		type = 7,
+		id = 230058,
+		rare = 2,
+		desc = "489b3dc85a990aa9a4c81ab10ef46c4a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[330058] = {
+		decompose_id = 0,
+		name = "e9b1c7c515189da53a50e46a12864c44",
+		compose_id = 0,
+		type = 7,
+		id = 330058,
+		rare = 3,
+		desc = "8d2fa172151edb0d6aee5c1b315bb33a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[430058] = {
+		decompose_id = 0,
+		name = "49e4ae5f004998492a9bb2a313caf42e",
+		compose_id = 0,
+		type = 7,
+		id = 430058,
+		rare = 4,
+		desc = "eb600e2d495d26c6808bd74755d86008",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[530058] = {
+		decompose_id = 0,
+		name = "651f20aad16164519de730502dd8f6db",
+		compose_id = 0,
+		type = 7,
+		id = 530058,
+		rare = 5,
+		desc = "560d4b1a5438a754f528d5c5693740af",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[531058] = {
+		decompose_id = 0,
+		name = "66c3fcdccf93e8a46bd79587f5ab21ee",
+		compose_id = 0,
+		type = 7,
+		id = 531058,
+		rare = 5,
+		desc = "153f6f00a9a8f4b47f3e0826fef0f489",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[532058] = {
+		decompose_id = 0,
+		name = "7ff082a0c7d09eb96f8904c6b8c49fc7",
+		compose_id = 0,
+		type = 7,
+		id = 532058,
+		rare = 5,
+		desc = "9f1a782277cc6eda0f0548b3ecd149c3",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[533058] = {
+		decompose_id = 0,
+		name = "bd1c368e007cffc35067036dc6cb29ad",
+		compose_id = 0,
+		type = 7,
+		id = 533058,
+		rare = 5,
+		desc = "1f08fa2ba4e52e278f3cb4b683abbeef",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[534058] = {
+		decompose_id = 0,
+		name = "777feb7e500375ca94ad0cb935ddf335",
+		compose_id = 0,
+		type = 7,
+		id = 534058,
+		rare = 5,
+		desc = "51525da8633320db626e79192d7f7284",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[535058] = {
+		decompose_id = 0,
+		name = "fa64b44c3fa3cd680e2e0db29d1a7084",
+		compose_id = 0,
+		type = 7,
+		id = 535058,
+		rare = 5,
+		desc = "90600a6c37cd9c0597561475adec091f",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[539058] = {
+		decompose_id = 0,
+		name = "c43c543016220d2f9f522fb5ae7806f9",
+		compose_id = 0,
+		type = 7,
+		id = 539058,
+		rare = 5,
+		desc = "b58a0d8f1bff1db5b9f5239ff0c85be4",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[240058] = {
+		decompose_id = 0,
+		name = "1d4db0541945de7dde2a4eafd5dcc63b",
+		compose_id = 0,
+		type = 7,
+		id = 240058,
+		rare = 2,
+		desc = "3ab2b3912a42d949fc983f8dff5c996d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[340058] = {
+		decompose_id = 0,
+		name = "88b393af3ba28d078350f2d8792749ae",
+		compose_id = 0,
+		type = 7,
+		id = 340058,
+		rare = 3,
+		desc = "55d1a25aaba28adc931c418739dad9a3",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[440058] = {
+		decompose_id = 0,
+		name = "ce6e4a53a578aac22d87ef9436e31d3b",
+		compose_id = 0,
+		type = 7,
+		id = 440058,
+		rare = 4,
+		desc = "1295b37d9bf63c7c57ebd1d21e79052e",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[540058] = {
+		decompose_id = 0,
+		name = "841e543b14baa3fcba616a9c5e34b3dd",
+		compose_id = 0,
+		type = 7,
+		id = 540058,
+		rare = 5,
+		desc = "aab4973ff16b384d262bc7aaab27e5ce",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[541058] = {
+		decompose_id = 0,
+		name = "f33780ebf6ff7d2be63d600fbdfd90d8",
+		compose_id = 0,
+		type = 7,
+		id = 541058,
+		rare = 5,
+		desc = "a85d26bdf1637c9463fac817d2215744",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[542058] = {
+		decompose_id = 0,
+		name = "ad095310387fd67aefc51367e6efdd55",
+		compose_id = 0,
+		type = 7,
+		id = 542058,
+		rare = 5,
+		desc = "8aca36ef12094e1f00b35ac6c6add627",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[543058] = {
+		decompose_id = 0,
+		name = "349260aec899f179a639aaf6953187d5",
+		compose_id = 0,
+		type = 7,
+		id = 543058,
+		rare = 5,
+		desc = "94e5b40732058702f0fd5224d58cdce9",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[544058] = {
+		decompose_id = 0,
+		name = "721b31a249f8af7e5bb4db255434c30e",
+		compose_id = 0,
+		type = 7,
+		id = 544058,
+		rare = 5,
+		desc = "623efb825456cd79e9c2122e7d9e7ce3",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[545058] = {
+		decompose_id = 0,
+		name = "3e75ef0c8130e776f21dc4d6a775af2f",
+		compose_id = 0,
+		type = 7,
+		id = 545058,
+		rare = 5,
+		desc = "adc9cb5146f120b6de09c63a738c0569",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[549058] = {
+		decompose_id = 0,
+		name = "4b1f0f1a65edd9080bae1621237b8ce9",
+		compose_id = 0,
+		type = 7,
+		id = 549058,
+		rare = 5,
+		desc = "5861b6c8ea32f3f6564a4b9dcaf9640d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[250058] = {
+		decompose_id = 0,
+		name = "c541106927560eaa7e9623102f43907a",
+		compose_id = 0,
+		type = 7,
+		id = 250058,
+		rare = 2,
+		desc = "cbae77aac0df3db9b1e6bad063c73db8",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[350058] = {
+		decompose_id = 0,
+		name = "251fec6661030f6738e3479a3c05d654",
+		compose_id = 0,
+		type = 7,
+		id = 350058,
+		rare = 3,
+		desc = "16021dc221e1bccd26f8757d7be1ecaf",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[450058] = {
+		decompose_id = 0,
+		name = "2ab72f6eac9a3108fc7dcead628b249c",
+		compose_id = 0,
+		type = 7,
+		id = 450058,
+		rare = 4,
+		desc = "70795e20ac26a8d28ba44fa299f23ba8",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[550058] = {
+		decompose_id = 0,
+		name = "2687ee67cea8081e343d694df7e0a55f",
+		compose_id = 0,
+		type = 7,
+		id = 550058,
+		rare = 5,
+		desc = "552e7cd5af16a424b4295e0ddd925402",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[551058] = {
+		decompose_id = 0,
+		name = "62be4318c99d7eb7bbd71a9234148f65",
+		compose_id = 0,
+		type = 7,
+		id = 551058,
+		rare = 5,
+		desc = "79bc7ef6b2ac52eab3b39e9fbfa0fb0d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[552058] = {
+		decompose_id = 0,
+		name = "5c28512663345e787a477cdda1387a1d",
+		compose_id = 0,
+		type = 7,
+		id = 552058,
+		rare = 5,
+		desc = "2f3d5642b29564528592a447b64a608c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[553058] = {
+		decompose_id = 0,
+		name = "3e5242bd8109fd2326dfed76b2a81fd8",
+		compose_id = 0,
+		type = 7,
+		id = 553058,
+		rare = 5,
+		desc = "44a99a441d35b98dfb02d057a6e0d143",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[554058] = {
+		decompose_id = 0,
+		name = "2d46a644cbdbddaa69281e4280552657",
+		compose_id = 0,
+		type = 7,
+		id = 554058,
+		rare = 5,
+		desc = "47f0a73b5c04229d26229ae8bb5f04e4",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[555058] = {
+		decompose_id = 0,
+		name = "7b5fcf3c96ebce23da786ec7e969f339",
+		compose_id = 0,
+		type = 7,
+		id = 555058,
+		rare = 5,
+		desc = "b30d22526760a09e72500bda977ef289",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[559058] = {
+		decompose_id = 0,
+		name = "a404c9de94ae381d9494b5c841819369",
+		compose_id = 0,
+		type = 7,
+		id = 559058,
+		rare = 5,
+		desc = "93ad03ad06497ed7c48fc42387378566",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[260058] = {
+		decompose_id = 0,
+		name = "c9ee25f8b144d23eb48dad1a9a9409d0",
+		compose_id = 0,
+		type = 7,
+		id = 260058,
+		rare = 2,
+		desc = "cd2e5267be9f33ed152c28ed6c71aa0a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[360058] = {
+		decompose_id = 0,
+		name = "bf116e70f072da1597f1a50fcfeaa8b6",
+		compose_id = 0,
+		type = 7,
+		id = 360058,
+		rare = 3,
+		desc = "b82430c9d7932518a2d5efe020ee6281",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[460058] = {
+		decompose_id = 0,
+		name = "a5708b22f215e911227e4bb3f2cbf63d",
+		compose_id = 0,
+		type = 7,
+		id = 460058,
+		rare = 4,
+		desc = "9fa8b4cb1fe03b88d76d4e4714a7bb4f",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[560058] = {
+		decompose_id = 0,
+		name = "9ee6d2e53e2c756b1dee934f9ce34e5e",
+		compose_id = 0,
+		type = 7,
+		id = 560058,
+		rare = 5,
+		desc = "7e5827626999aa8e963f651721e7ff04",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[561058] = {
+		decompose_id = 0,
+		name = "bd9c7d3c6db6cb7f0c52e2682dd33fa4",
+		compose_id = 0,
+		type = 7,
+		id = 561058,
+		rare = 5,
+		desc = "50de0baa5b6a4ae5b0fb1643643b2915",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[562058] = {
+		decompose_id = 0,
+		name = "7bc3e61450314b9e12535ae55726d850",
+		compose_id = 0,
+		type = 7,
+		id = 562058,
+		rare = 5,
+		desc = "4997fa738c86ae10603d96584be9ed3c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[563058] = {
+		decompose_id = 0,
+		name = "c761fa246cbe3b832d212facaa905983",
+		compose_id = 0,
+		type = 7,
+		id = 563058,
+		rare = 5,
+		desc = "40f11c4e9a56c881d8c699f8145346b7",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[564058] = {
+		decompose_id = 0,
+		name = "8e3213ea9c1db3c467f801990cb7cf3d",
+		compose_id = 0,
+		type = 7,
+		id = 564058,
+		rare = 5,
+		desc = "8d2b4a87cc480cca9a9f2b310a66303e",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[565058] = {
+		decompose_id = 0,
+		name = "5c184d4ee5375a712d18495ebd3f631a",
+		compose_id = 0,
+		type = 7,
+		id = 565058,
+		rare = 5,
+		desc = "56fb6b6b0f4b04657d374fe14eafa9f6",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[569058] = {
+		decompose_id = 0,
+		name = "b8c25e17e57864135b65d789a79a9906",
+		compose_id = 0,
+		type = 7,
+		id = 569058,
+		rare = 5,
+		desc = "45e2776418deeda48a5c5236fb5b85f9",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "58",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[210059] = {
+		decompose_id = 0,
+		name = "8b2fcc39311797f1212f8a59d0d62063",
+		compose_id = 0,
+		type = 7,
+		id = 210059,
+		rare = 2,
+		desc = "d97a472b43b7cf4bade8fb48d0cb3ed9",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[310059] = {
+		decompose_id = 0,
+		name = "9ec0b0af839dc9a6b4eff2b551fe6fac",
+		compose_id = 0,
+		type = 7,
+		id = 310059,
+		rare = 3,
+		desc = "196503ff8a67172104b7e0da12cccccd",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[410059] = {
+		decompose_id = 0,
+		name = "f94391045caaa2cc9f5410515d1106eb",
+		compose_id = 0,
+		type = 7,
+		id = 410059,
+		rare = 4,
+		desc = "2acd65c3698b07d7c59d61171bc33e40",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[510059] = {
+		decompose_id = 0,
+		name = "4dd7c1dad0eb672a8b7ad471db9f1ece",
+		compose_id = 0,
+		type = 7,
+		id = 510059,
+		rare = 5,
+		desc = "068b4214718756fb9658e0c85c27a4be",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[511059] = {
+		decompose_id = 0,
+		name = "a497ae3c0fbcd341979a4a775b672b9f",
+		compose_id = 0,
+		type = 7,
+		id = 511059,
+		rare = 5,
+		desc = "dad15c1a31bc7d85cee2295ed05cb1af",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[512059] = {
+		decompose_id = 0,
+		name = "111d3187a05996e0a60227332a4e4a0a",
+		compose_id = 0,
+		type = 7,
+		id = 512059,
+		rare = 5,
+		desc = "238c28d1191bbaafecd44ae806396fb9",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[513059] = {
+		decompose_id = 0,
+		name = "a7f11f35bc824189e55028e89a906bc4",
+		compose_id = 0,
+		type = 7,
+		id = 513059,
+		rare = 5,
+		desc = "d1ee8d8151a101768b402926e89767cc",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[514059] = {
+		decompose_id = 0,
+		name = "df4920be371e426e57bded8091fa6a44",
+		compose_id = 0,
+		type = 7,
+		id = 514059,
+		rare = 5,
+		desc = "0b8f066bf8b8ee495d02721fe5c948fe",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[515059] = {
+		decompose_id = 0,
+		name = "41f0c3396d04a8f2e91ca76dcddffd8c",
+		compose_id = 0,
+		type = 7,
+		id = 515059,
+		rare = 5,
+		desc = "2e0aa781c96b1f725d75ed7833360708",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[519059] = {
+		decompose_id = 0,
+		name = "7a2595cef5638e87663909079bb09f07",
+		compose_id = 0,
+		type = 7,
+		id = 519059,
+		rare = 5,
+		desc = "8a702e0b3d07a035543bb086768f3c59",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[220059] = {
+		decompose_id = 0,
+		name = "789e6684e14c3e2080609863680662a3",
+		compose_id = 0,
+		type = 7,
+		id = 220059,
+		rare = 2,
+		desc = "5d2fd261a41d4934650d8ab8c833690b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[320059] = {
+		decompose_id = 0,
+		name = "ad643493f5e3caa4fa9f84607151feec",
+		compose_id = 0,
+		type = 7,
+		id = 320059,
+		rare = 3,
+		desc = "7c851688aff3b9ea096c127512fb0921",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[420059] = {
+		decompose_id = 0,
+		name = "ee398322db4cb8db93d788348a5527fd",
+		compose_id = 0,
+		type = 7,
+		id = 420059,
+		rare = 4,
+		desc = "f18eb05ccadbbfffe1c3a87175b324f1",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[520059] = {
+		decompose_id = 0,
+		name = "a6e9d8c76c08e85b459f5db82492fc75",
+		compose_id = 0,
+		type = 7,
+		id = 520059,
+		rare = 5,
+		desc = "f230c8dee448a35a59861872269b148c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[521059] = {
+		decompose_id = 0,
+		name = "1015271f07640bc7aa9886d558c41f57",
+		compose_id = 0,
+		type = 7,
+		id = 521059,
+		rare = 5,
+		desc = "f739eecc60e39eae03e67a68cfa3fb2b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[522059] = {
+		decompose_id = 0,
+		name = "47ace1c717dd093d6e81c57a04d7ac8b",
+		compose_id = 0,
+		type = 7,
+		id = 522059,
+		rare = 5,
+		desc = "dd350e611be916e5339c7301f16e00af",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[523059] = {
+		decompose_id = 0,
+		name = "71aebb3a15b64ffd6a531dcfe7eb54e2",
+		compose_id = 0,
+		type = 7,
+		id = 523059,
+		rare = 5,
+		desc = "ce4d2b682e33216f8fbfb1c5fedc6fd7",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[524059] = {
+		decompose_id = 0,
+		name = "03b10ea06b2f81f72369d69a309c6772",
+		compose_id = 0,
+		type = 7,
+		id = 524059,
+		rare = 5,
+		desc = "997ba91b9ce71e914348440fbdf77893",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[525059] = {
+		decompose_id = 0,
+		name = "24fa8d6ff073560d928699d42caa9dbd",
+		compose_id = 0,
+		type = 7,
+		id = 525059,
+		rare = 5,
+		desc = "95f312849a1a35ce511e1b202d5bc14e",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[529059] = {
+		decompose_id = 0,
+		name = "430a13e90ba5c42afa55d2152a388a5d",
+		compose_id = 0,
+		type = 7,
+		id = 529059,
+		rare = 5,
+		desc = "3c7acbffaba88c8af79018fc91aa671c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[230059] = {
+		decompose_id = 0,
+		name = "e0b2f6986b036598315037678b0d095e",
+		compose_id = 0,
+		type = 7,
+		id = 230059,
+		rare = 2,
+		desc = "9eee633008757a285a426df60a7aa019",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[330059] = {
+		decompose_id = 0,
+		name = "acd25bf0353f08c1e188afe83ddc009f",
+		compose_id = 0,
+		type = 7,
+		id = 330059,
+		rare = 3,
+		desc = "7970d981ee065e40c31f3938c115aa78",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[430059] = {
+		decompose_id = 0,
+		name = "1c877c49465a9b4de57c52540041026e",
+		compose_id = 0,
+		type = 7,
+		id = 430059,
+		rare = 4,
+		desc = "aaf95bcf668d8b4d0a7ad074cfbfab25",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[530059] = {
+		decompose_id = 0,
+		name = "3b4ecb59f43330455ce14c5dd62ce9f3",
+		compose_id = 0,
+		type = 7,
+		id = 530059,
+		rare = 5,
+		desc = "c7447c1ccc97ac573cfd4327a847a76e",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[531059] = {
+		decompose_id = 0,
+		name = "c291a92fe00fb5f7abc5b50de0c89452",
+		compose_id = 0,
+		type = 7,
+		id = 531059,
+		rare = 5,
+		desc = "cb912a8d90dafea4981cf092b87f1ef5",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[532059] = {
+		decompose_id = 0,
+		name = "23921e96ee6ae739736363596c0f35fd",
+		compose_id = 0,
+		type = 7,
+		id = 532059,
+		rare = 5,
+		desc = "2b348ba6526a0a317f81069c2268c192",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[533059] = {
+		decompose_id = 0,
+		name = "280f0388e862c5e663d42f0be9f3a6c5",
+		compose_id = 0,
+		type = 7,
+		id = 533059,
+		rare = 5,
+		desc = "505696b9aa209ca3b60c4a0aa43fff70",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[534059] = {
+		decompose_id = 0,
+		name = "aac02d5fd227869b9835943f32a2d941",
+		compose_id = 0,
+		type = 7,
+		id = 534059,
+		rare = 5,
+		desc = "f6a9b7b29af07b6c8bdd2d4ddc095e95",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[535059] = {
+		decompose_id = 0,
+		name = "05388484349fbb00a5efbe62b7e401c7",
+		compose_id = 0,
+		type = 7,
+		id = 535059,
+		rare = 5,
+		desc = "ef85318193180626cc359509fdd91c90",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[539059] = {
+		decompose_id = 0,
+		name = "b7a88b1dbb591c635ee3320d6924f103",
+		compose_id = 0,
+		type = 7,
+		id = 539059,
+		rare = 5,
+		desc = "baf30b55165391445b3b25a429306370",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[240059] = {
+		decompose_id = 0,
+		name = "cefea27ab69a8b2168dd3e273e2b8233",
+		compose_id = 0,
+		type = 7,
+		id = 240059,
+		rare = 2,
+		desc = "0f254951b8a57fd13ac2deb4472c9916",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[340059] = {
+		decompose_id = 0,
+		name = "ffbb24b7dbab6eb33ce9a87d37933217",
+		compose_id = 0,
+		type = 7,
+		id = 340059,
+		rare = 3,
+		desc = "8dc7a024e8511d633d017f7718c69d23",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[440059] = {
+		decompose_id = 0,
+		name = "c34e4be18fedd94e1b748789abaff48b",
+		compose_id = 0,
+		type = 7,
+		id = 440059,
+		rare = 4,
+		desc = "4a6b4631a26a4c817dc2644962887171",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[540059] = {
+		decompose_id = 0,
+		name = "a5963a740bd4c14053105eb585cf61dc",
+		compose_id = 0,
+		type = 7,
+		id = 540059,
+		rare = 5,
+		desc = "de1bfaf4425ee7a22e692029b5c11768",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[541059] = {
+		decompose_id = 0,
+		name = "90cdfd48709515eeaabd45ef646f8f60",
+		compose_id = 0,
+		type = 7,
+		id = 541059,
+		rare = 5,
+		desc = "9525b696b16ba87753acb7f68c91dd28",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[542059] = {
+		decompose_id = 0,
+		name = "78384ac2ab19a402f20ab5ea74a562bf",
+		compose_id = 0,
+		type = 7,
+		id = 542059,
+		rare = 5,
+		desc = "40bc8d7f9d706191a73a23950ec08669",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[543059] = {
+		decompose_id = 0,
+		name = "b77770aa2b8e205d445bfe9f5b518644",
+		compose_id = 0,
+		type = 7,
+		id = 543059,
+		rare = 5,
+		desc = "7efabf21d08a7edb09589c9eadbb3e29",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[544059] = {
+		decompose_id = 0,
+		name = "12dc37b8b742e1185e06025eb1fce38a",
+		compose_id = 0,
+		type = 7,
+		id = 544059,
+		rare = 5,
+		desc = "2992113fb527e16e0a748827a6d95f15",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[545059] = {
+		decompose_id = 0,
+		name = "673687e003e40f16b0ab6043007cd6ba",
+		compose_id = 0,
+		type = 7,
+		id = 545059,
+		rare = 5,
+		desc = "d4f5fcde60f7abfca26da612f8d3713b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[549059] = {
+		decompose_id = 0,
+		name = "43dfd97680c5bd2eb00bf21e09ebbf70",
+		compose_id = 0,
+		type = 7,
+		id = 549059,
+		rare = 5,
+		desc = "0d5dded1223d463af6dbeb5e32a101f3",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[250059] = {
+		decompose_id = 0,
+		name = "0f49cb1d17de3219a9be86666f1c8e72",
+		compose_id = 0,
+		type = 7,
+		id = 250059,
+		rare = 2,
+		desc = "ecd055776213cbcc5bd93f52d4b90e04",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[350059] = {
+		decompose_id = 0,
+		name = "39659d483dfc8020bfd331ed2e6a186f",
+		compose_id = 0,
+		type = 7,
+		id = 350059,
+		rare = 3,
+		desc = "f1991b7fd9d4424d2020e5e2dd645877",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[450059] = {
+		decompose_id = 0,
+		name = "cc915da488f7d602bc90da29f7a84a81",
+		compose_id = 0,
+		type = 7,
+		id = 450059,
+		rare = 4,
+		desc = "6dddf133b9be293c49e5189693e3e539",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[550059] = {
+		decompose_id = 0,
+		name = "434d6313cc8799d5bca1718fb7ad5fb3",
+		compose_id = 0,
+		type = 7,
+		id = 550059,
+		rare = 5,
+		desc = "b81a8455569f2a145eefbc906f23fc52",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[551059] = {
+		decompose_id = 0,
+		name = "bb94297d5b0821bf4970dfdfcca2f4aa",
+		compose_id = 0,
+		type = 7,
+		id = 551059,
+		rare = 5,
+		desc = "4e4083531cf964c6cce63ae5c13c6f4c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[552059] = {
+		decompose_id = 0,
+		name = "cc59a21dab7d8ffc9d2e6d0974f7bc6e",
+		compose_id = 0,
+		type = 7,
+		id = 552059,
+		rare = 5,
+		desc = "83c34a78158d6b9759bb1b7bda2791ce",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[553059] = {
+		decompose_id = 0,
+		name = "aa71db34d83a6e91cbfdfe65f38e7492",
+		compose_id = 0,
+		type = 7,
+		id = 553059,
+		rare = 5,
+		desc = "ce9084500c1eb5117084597783a38372",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[554059] = {
+		decompose_id = 0,
+		name = "eea53ba7fc34a594f730ee335421fed7",
+		compose_id = 0,
+		type = 7,
+		id = 554059,
+		rare = 5,
+		desc = "550bdec2f975520e80ef6ca5f22455d6",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[555059] = {
+		decompose_id = 0,
+		name = "39ccaef85315277e0d8feaf88460c9f8",
+		compose_id = 0,
+		type = 7,
+		id = 555059,
+		rare = 5,
+		desc = "fa8f405019d0c59cbcb7ed787dca85cf",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[559059] = {
+		decompose_id = 0,
+		name = "36df74e04ea5a0084cfba2e39f934297",
+		compose_id = 0,
+		type = 7,
+		id = 559059,
+		rare = 5,
+		desc = "48f24522129ea901e9daa8d33f93c99d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[260059] = {
+		decompose_id = 0,
+		name = "6b6677c489a2c7a304d535e7e0bebc90",
+		compose_id = 0,
+		type = 7,
+		id = 260059,
+		rare = 2,
+		desc = "99fc11336541b29e1314db4d8f7cd52d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[360059] = {
+		decompose_id = 0,
+		name = "6226f69d683bb01bc5b748d496cb0d5c",
+		compose_id = 0,
+		type = 7,
+		id = 360059,
+		rare = 3,
+		desc = "75365b0d2666ddc2736f1145e0fb7b49",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[460059] = {
+		decompose_id = 0,
+		name = "347c76be2b49bc8103ffa870d33a01bb",
+		compose_id = 0,
+		type = 7,
+		id = 460059,
+		rare = 4,
+		desc = "644e4e2798dfdc7b9005a84d84f1b722",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[560059] = {
+		decompose_id = 0,
+		name = "8f3961213c3b6e55a30a9e3506206eb7",
+		compose_id = 0,
+		type = 7,
+		id = 560059,
+		rare = 5,
+		desc = "63ba668b2b257bc17f23f87c3326745b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[561059] = {
+		decompose_id = 0,
+		name = "ad15e13af4e3eefcff36f5621ff28b7b",
+		compose_id = 0,
+		type = 7,
+		id = 561059,
+		rare = 5,
+		desc = "dc010d687b8b1baed31d43e8abadf1e8",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[562059] = {
+		decompose_id = 0,
+		name = "4667de2f62815320d7483034dd77db2f",
+		compose_id = 0,
+		type = 7,
+		id = 562059,
+		rare = 5,
+		desc = "48e942d7ecfa61084429354a50752372",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[563059] = {
+		decompose_id = 0,
+		name = "d6ebe623af91f6b7ae40e308a82e6934",
+		compose_id = 0,
+		type = 7,
+		id = 563059,
+		rare = 5,
+		desc = "99abb771a76f1358cf9cc0e77d8b326c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[564059] = {
+		decompose_id = 0,
+		name = "29c677aacc08eba7a82972d4e1066a4f",
+		compose_id = 0,
+		type = 7,
+		id = 564059,
+		rare = 5,
+		desc = "f1722ffe03c11dcf725c7bb36d1cce79",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[565059] = {
+		decompose_id = 0,
+		name = "c1c6799c6c314ceebc520661fb2c52b8",
+		compose_id = 0,
+		type = 7,
+		id = 565059,
+		rare = 5,
+		desc = "1ed90cfb03c821efe10f4e66a12e1ea1",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[569059] = {
+		decompose_id = 0,
+		name = "09bc6604dbc33493c0d1dcb1c07f03f8",
+		compose_id = 0,
+		type = 7,
+		id = 569059,
+		rare = 5,
+		desc = "2bf00ef91d38b5e8ab0028cde2e5aac2",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "59",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[210060] = {
+		decompose_id = 0,
+		name = "81e24846e94b2b942151c99cf56c59f4",
+		compose_id = 0,
+		type = 7,
+		id = 210060,
+		rare = 2,
+		desc = "59fb6d916efe4a148595186344b20465",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[310060] = {
+		decompose_id = 0,
+		name = "da45133ab745f01b150c84bf55367e59",
+		compose_id = 0,
+		type = 7,
+		id = 310060,
+		rare = 3,
+		desc = "bae9c3e24e4c8ee7de696a35019064d3",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[410060] = {
+		decompose_id = 0,
+		name = "2ddb864c6e04fe30274b83776eb4b436",
+		compose_id = 0,
+		type = 7,
+		id = 410060,
+		rare = 4,
+		desc = "33b08f7fb5d4ef2c29d3b67c923e7291",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[510060] = {
+		decompose_id = 0,
+		name = "97e1c14458cdcecce3fb78d554307306",
+		compose_id = 0,
+		type = 7,
+		id = 510060,
+		rare = 5,
+		desc = "25063df645482b729e9bd9aeef49499e",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[511060] = {
+		decompose_id = 0,
+		name = "fca0487b1fab83f7a43019244defcc20",
+		compose_id = 0,
+		type = 7,
+		id = 511060,
+		rare = 5,
+		desc = "5e172ae2db850e87c03f39c419b24684",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[512060] = {
+		decompose_id = 0,
+		name = "7baa659c753098c139621c09aa795151",
+		compose_id = 0,
+		type = 7,
+		id = 512060,
+		rare = 5,
+		desc = "12f4efcbf88587865a645a3e49112d9c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[513060] = {
+		decompose_id = 0,
+		name = "e9342955105a3de33e4823b4ca42e48c",
+		compose_id = 0,
+		type = 7,
+		id = 513060,
+		rare = 5,
+		desc = "b9ad92f6999db0622a14ee9bb9ee8074",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[514060] = {
+		decompose_id = 0,
+		name = "3518ce0ccff67e95a10e1a3470cfe26d",
+		compose_id = 0,
+		type = 7,
+		id = 514060,
+		rare = 5,
+		desc = "a340a83797ddf68fe59347f597e92b27",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[515060] = {
+		decompose_id = 0,
+		name = "70c9771b5b3b01dde0d31604abe1284b",
+		compose_id = 0,
+		type = 7,
+		id = 515060,
+		rare = 5,
+		desc = "4ed7724170b3b77c6e6baba311a19ea7",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[519060] = {
+		decompose_id = 0,
+		name = "4f877fcea694754863d3696014bb4665",
+		compose_id = 0,
+		type = 7,
+		id = 519060,
+		rare = 5,
+		desc = "22249035ff1044d4b9274119e1b5f089",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[220060] = {
+		decompose_id = 0,
+		name = "71053fbf02205a59e0725c2061721d31",
+		compose_id = 0,
+		type = 7,
+		id = 220060,
+		rare = 2,
+		desc = "f3191a9dd4afdc560578403f0549f564",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[320060] = {
+		decompose_id = 0,
+		name = "769118da41ee30ecd4d35f278b963245",
+		compose_id = 0,
+		type = 7,
+		id = 320060,
+		rare = 3,
+		desc = "6110c560c62c6d03b67a06ab94ab3965",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[420060] = {
+		decompose_id = 0,
+		name = "18242db04658498f877c4d7dc7dc3a8b",
+		compose_id = 0,
+		type = 7,
+		id = 420060,
+		rare = 4,
+		desc = "08e77dca202a1b328a19500658743359",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[520060] = {
+		decompose_id = 0,
+		name = "8c8e690a99d28d63c1b386498ee5c4d1",
+		compose_id = 0,
+		type = 7,
+		id = 520060,
+		rare = 5,
+		desc = "61634043cb8f5ae8ded781b03c94e608",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[521060] = {
+		decompose_id = 0,
+		name = "08848830de6b625d2e69a65d64c1e38e",
+		compose_id = 0,
+		type = 7,
+		id = 521060,
+		rare = 5,
+		desc = "2a49c44f58a46fb2b002a2301b90be8a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[522060] = {
+		decompose_id = 0,
+		name = "05f6f71e93836a0e3e3294bde8b26827",
+		compose_id = 0,
+		type = 7,
+		id = 522060,
+		rare = 5,
+		desc = "3efb04f283165dffc8a4aff192b09904",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[523060] = {
+		decompose_id = 0,
+		name = "f5031f0722a3493483e7ece67b847820",
+		compose_id = 0,
+		type = 7,
+		id = 523060,
+		rare = 5,
+		desc = "60814372236e4bc32959317ae5293148",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[524060] = {
+		decompose_id = 0,
+		name = "703e207c5ababbc9561012b89753313d",
+		compose_id = 0,
+		type = 7,
+		id = 524060,
+		rare = 5,
+		desc = "f67879538a7a015d3118f1de6a6a30c1",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[525060] = {
+		decompose_id = 0,
+		name = "a6f6bd248b3802469374512e01dc1ad9",
+		compose_id = 0,
+		type = 7,
+		id = 525060,
+		rare = 5,
+		desc = "1d949d1b32e34046f5f7f2faa93fc26c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[529060] = {
+		decompose_id = 0,
+		name = "6262427077dffee4ee675b800d0744cb",
+		compose_id = 0,
+		type = 7,
+		id = 529060,
+		rare = 5,
+		desc = "e6110ba6f57f6906bba9da55aefc1e0b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[230060] = {
+		decompose_id = 0,
+		name = "dcb161bd2ba96116f8087bd97bf6c2b5",
+		compose_id = 0,
+		type = 7,
+		id = 230060,
+		rare = 2,
+		desc = "d8e8ec386edb4e8b59078d908c806a9b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[330060] = {
+		decompose_id = 0,
+		name = "d3f07d1c889f677c7398876a6b0bf53b",
+		compose_id = 0,
+		type = 7,
+		id = 330060,
+		rare = 3,
+		desc = "651235882b3cf4b68f49631bcd9f47fa",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[430060] = {
+		decompose_id = 0,
+		name = "7e15ea48415a206ef0229fbd4d35c8fe",
+		compose_id = 0,
+		type = 7,
+		id = 430060,
+		rare = 4,
+		desc = "0d799570b3439ed2b47fa3bf64c497d8",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[530060] = {
+		decompose_id = 0,
+		name = "478c80f65730eb0f2807d6f30a686925",
+		compose_id = 0,
+		type = 7,
+		id = 530060,
+		rare = 5,
+		desc = "a4be55fda543994d9d3eae201da30e9f",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[531060] = {
+		decompose_id = 0,
+		name = "af9d335e34d0d73f4dec88108ee377d3",
+		compose_id = 0,
+		type = 7,
+		id = 531060,
+		rare = 5,
+		desc = "ce9332dfb85b6687dc6c0c9bd550d3cf",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[532060] = {
+		decompose_id = 0,
+		name = "ba0211444ca1c7a78d328da5a46a4526",
+		compose_id = 0,
+		type = 7,
+		id = 532060,
+		rare = 5,
+		desc = "13bcee47396952ee54baebb9d9663ee9",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[533060] = {
+		decompose_id = 0,
+		name = "d284a40bfb70597327d7ed49755895de",
+		compose_id = 0,
+		type = 7,
+		id = 533060,
+		rare = 5,
+		desc = "9ca0574bc5fd14fdd6af9fe3b5934cbe",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[534060] = {
+		decompose_id = 0,
+		name = "3d69e988d6e457399f979afbff6df2e9",
+		compose_id = 0,
+		type = 7,
+		id = 534060,
+		rare = 5,
+		desc = "562b3977530db913661a28afe3911b57",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[535060] = {
+		decompose_id = 0,
+		name = "ee5af70fb4a5efc7ad6feb3dd0adf5eb",
+		compose_id = 0,
+		type = 7,
+		id = 535060,
+		rare = 5,
+		desc = "57b1c0e8c7da334f6c0098fd7c2aa3ea",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[539060] = {
+		decompose_id = 0,
+		name = "e668fa1a67802eaed74ad59a6ac31c29",
+		compose_id = 0,
+		type = 7,
+		id = 539060,
+		rare = 5,
+		desc = "8f7100077bc327c771c380fb31cfe06a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[240060] = {
+		decompose_id = 0,
+		name = "2416c0910b8dd6f04d1a5a8e2a074b51",
+		compose_id = 0,
+		type = 7,
+		id = 240060,
+		rare = 2,
+		desc = "66efc7e0677963bcab8c4a4af2a60e7d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[340060] = {
+		decompose_id = 0,
+		name = "894ef0821aedb3fa4336729dcb9c706f",
+		compose_id = 0,
+		type = 7,
+		id = 340060,
+		rare = 3,
+		desc = "b60707851e260bfc48abe36e560f69a2",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[440060] = {
+		decompose_id = 0,
+		name = "cd6fec6fb69e2b33a4d087c044d04434",
+		compose_id = 0,
+		type = 7,
+		id = 440060,
+		rare = 4,
+		desc = "27b99c3f822e35fefec5b90994f936e0",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[540060] = {
+		decompose_id = 0,
+		name = "f7327f637b345ba649b9ce3612bd78d2",
+		compose_id = 0,
+		type = 7,
+		id = 540060,
+		rare = 5,
+		desc = "6ff39fec3a45b54041bb6f764a4ee46e",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[541060] = {
+		decompose_id = 0,
+		name = "ff55473b5541c60d97a8b57cbfb3da8a",
+		compose_id = 0,
+		type = 7,
+		id = 541060,
+		rare = 5,
+		desc = "ec46e9e50f3cbde22c2257c827480776",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[542060] = {
+		decompose_id = 0,
+		name = "601b774dcdc61fc3aa3bd1d0bd28e472",
+		compose_id = 0,
+		type = 7,
+		id = 542060,
+		rare = 5,
+		desc = "3e4805459cfa49e1afe1ff692b346dc1",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[543060] = {
+		decompose_id = 0,
+		name = "5c9bb66c3944080c2c1e414218b879aa",
+		compose_id = 0,
+		type = 7,
+		id = 543060,
+		rare = 5,
+		desc = "40408e0f8daa16cd546cca84aa3e9f4b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[544060] = {
+		decompose_id = 0,
+		name = "aa9651f6dac9379c36ef48260efff183",
+		compose_id = 0,
+		type = 7,
+		id = 544060,
+		rare = 5,
+		desc = "de613d2f97b10448c965eb4647c7256b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[545060] = {
+		decompose_id = 0,
+		name = "2decf45ec2efec22a15144f74225e314",
+		compose_id = 0,
+		type = 7,
+		id = 545060,
+		rare = 5,
+		desc = "f4cbc8cea74d7cf34a8707ad4fd5ea2a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[549060] = {
+		decompose_id = 0,
+		name = "4cf02aaba8eea7cdbfe8c9ec2e8f0c45",
+		compose_id = 0,
+		type = 7,
+		id = 549060,
+		rare = 5,
+		desc = "ca6d67e8b0a0b6fdd1e82bce60149fca",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[250060] = {
+		decompose_id = 0,
+		name = "b6aa52acb913615ac3f06f1366cca7d1",
+		compose_id = 0,
+		type = 7,
+		id = 250060,
+		rare = 2,
+		desc = "3683407b2263aca9c4273655e6680b1b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[350060] = {
+		decompose_id = 0,
+		name = "530bfc528a3fc566b73f9ba89b70c712",
+		compose_id = 0,
+		type = 7,
+		id = 350060,
+		rare = 3,
+		desc = "aedc5f02cac520cdcbf6e297bc8b44ff",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[450060] = {
+		decompose_id = 0,
+		name = "4be9bec759166cbea344e52bda36a62f",
+		compose_id = 0,
+		type = 7,
+		id = 450060,
+		rare = 4,
+		desc = "d600c3c56b95738126ad302d6f983717",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[550060] = {
+		decompose_id = 0,
+		name = "281bc3b057cff8523df60a3bc8e57a7d",
+		compose_id = 0,
+		type = 7,
+		id = 550060,
+		rare = 5,
+		desc = "36eac7db3d8712d05b630e1151f79af2",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[551060] = {
+		decompose_id = 0,
+		name = "679bbb6b340e704867b76e6c524e299f",
+		compose_id = 0,
+		type = 7,
+		id = 551060,
+		rare = 5,
+		desc = "c17ac75f2efef05252f2e899fadf2070",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[552060] = {
+		decompose_id = 0,
+		name = "e8dab3d594c8108bf367cc5af56d7e27",
+		compose_id = 0,
+		type = 7,
+		id = 552060,
+		rare = 5,
+		desc = "b151cad14d7c615c2dacc56056752bfa",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[553060] = {
+		decompose_id = 0,
+		name = "6b0b132ecec30638ad936738e2992420",
+		compose_id = 0,
+		type = 7,
+		id = 553060,
+		rare = 5,
+		desc = "b87fdd667cc01ae0aafb3006ef8d73ab",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[554060] = {
+		decompose_id = 0,
+		name = "74b9142b6e4801ed206df6b86bfe4bb8",
+		compose_id = 0,
+		type = 7,
+		id = 554060,
+		rare = 5,
+		desc = "b2666df8a61c3db385ef9ff94ca13da6",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[555060] = {
+		decompose_id = 0,
+		name = "30d57e68fa8866ec9231afb2be72446a",
+		compose_id = 0,
+		type = 7,
+		id = 555060,
+		rare = 5,
+		desc = "aa207e1b58eb468d45108921c5b5a6ea",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[559060] = {
+		decompose_id = 0,
+		name = "6ae8172496fde0cb90065a747bd2857d",
+		compose_id = 0,
+		type = 7,
+		id = 559060,
+		rare = 5,
+		desc = "e1cf52fa7a5bc7e2f7011b0ac747ac4f",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[260060] = {
+		decompose_id = 0,
+		name = "c3215c521f830806eafba9dd909b1d56",
+		compose_id = 0,
+		type = 7,
+		id = 260060,
+		rare = 2,
+		desc = "f4afeca05203afd8cd951f68d8fe7b48",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[360060] = {
+		decompose_id = 0,
+		name = "ef788cae2d45affff60d1eb0ffc00fb2",
+		compose_id = 0,
+		type = 7,
+		id = 360060,
+		rare = 3,
+		desc = "ed1ed87bc87c033c1714d0e663e4c31c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[460060] = {
+		decompose_id = 0,
+		name = "c94928bce2cab5b58feb41c153c5bcae",
+		compose_id = 0,
+		type = 7,
+		id = 460060,
+		rare = 4,
+		desc = "6e47d27f29766f6a46dfe686afeb6b69",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[560060] = {
+		decompose_id = 0,
+		name = "b6472972049da3b757473b6226b0dc72",
+		compose_id = 0,
+		type = 7,
+		id = 560060,
+		rare = 5,
+		desc = "183722524d733c4010dc12574888adf5",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[561060] = {
+		decompose_id = 0,
+		name = "13c678cf9b552e5f2b665ec5e09b43a3",
+		compose_id = 0,
+		type = 7,
+		id = 561060,
+		rare = 5,
+		desc = "2e1f7d99b5a3a96b1fe7da6ca023448d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[562060] = {
+		decompose_id = 0,
+		name = "f9067cebc27e106aed705b58b14012f4",
+		compose_id = 0,
+		type = 7,
+		id = 562060,
+		rare = 5,
+		desc = "522c04897a05f40b52ecb150fc5f703e",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[563060] = {
+		decompose_id = 0,
+		name = "6655310fe9b069e652bf8dca65479e9e",
+		compose_id = 0,
+		type = 7,
+		id = 563060,
+		rare = 5,
+		desc = "14a04fe86adda218483fc67af3ee16f1",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[564060] = {
+		decompose_id = 0,
+		name = "937d0bd2006a73b7f2be9329fdc0a4de",
+		compose_id = 0,
+		type = 7,
+		id = 564060,
+		rare = 5,
+		desc = "3eda7f57e85fd98d0d536c0b72caa27c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[565060] = {
+		decompose_id = 0,
+		name = "f1db58384fa4cd95e2f5865d78edc3ac",
+		compose_id = 0,
+		type = 7,
+		id = 565060,
+		rare = 5,
+		desc = "3a79b09ddd28edeb8ea5e0c52e78a035",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[569060] = {
+		decompose_id = 0,
+		name = "ebc8811aa49693d98da0c65ecd4d8773",
+		compose_id = 0,
+		type = 7,
+		id = 569060,
+		rare = 5,
+		desc = "236be5f19303f4bba831186432e24ad0",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "60",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[210061] = {
+		decompose_id = 0,
+		name = "161b47a1d975260d90ad3beb626fce90",
+		compose_id = 0,
+		type = 7,
+		id = 210061,
+		rare = 2,
+		desc = "05a192dd18d2ea75829a9196b58f75bb",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[310061] = {
+		decompose_id = 0,
+		name = "51c41a862fb5c0975ba8b7dd7613936b",
+		compose_id = 0,
+		type = 7,
+		id = 310061,
+		rare = 3,
+		desc = "9c5f67d5acd7b5893e7a5d34f7757864",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[410061] = {
+		decompose_id = 0,
+		name = "b9d39a3ee58fbe6bea9e4e41b78c5bcf",
+		compose_id = 0,
+		type = 7,
+		id = 410061,
+		rare = 4,
+		desc = "9f57c446a05a19a43a1bcb2f72f2dcec",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[510061] = {
+		decompose_id = 0,
+		name = "26c1b60c5d9659dbc9574be6e98d46ab",
+		compose_id = 0,
+		type = 7,
+		id = 510061,
+		rare = 5,
+		desc = "564aeeddd5c54540156312ddc6b4581c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[511061] = {
+		decompose_id = 0,
+		name = "587e2130691e3b4a246a6a73971bd28a",
+		compose_id = 0,
+		type = 7,
+		id = 511061,
+		rare = 5,
+		desc = "7138b1fdd61d5d6ad3d34b7b31047879",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[512061] = {
+		decompose_id = 0,
+		name = "ecb71fb7c180c0e5cc9a024ae9e5b59c",
+		compose_id = 0,
+		type = 7,
+		id = 512061,
+		rare = 5,
+		desc = "def7b103b8cad29635cf6096d59baf67",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[513061] = {
+		decompose_id = 0,
+		name = "2ee53250db095dc16ef4b3afd233b2c1",
+		compose_id = 0,
+		type = 7,
+		id = 513061,
+		rare = 5,
+		desc = "22d706d94b8f9df5c3028099e0fde0dc",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[514061] = {
+		decompose_id = 0,
+		name = "7380d3e8fd83ce50431569b868424b0c",
+		compose_id = 0,
+		type = 7,
+		id = 514061,
+		rare = 5,
+		desc = "a2099d6790f1954ca1a72ac1ca89986f",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[515061] = {
+		decompose_id = 0,
+		name = "2f9225c782e7ca9709dd393201e5d4c5",
+		compose_id = 0,
+		type = 7,
+		id = 515061,
+		rare = 5,
+		desc = "48c110a188bf2eac3305e18bd81dbea0",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[519061] = {
+		decompose_id = 0,
+		name = "0797585e2522b6f9480e9116bfa061ba",
+		compose_id = 0,
+		type = 7,
+		id = 519061,
+		rare = 5,
+		desc = "76902d76739ccddbecb00cb6e7fcc913",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[220061] = {
+		decompose_id = 0,
+		name = "bf5905683012b3540b9dd53ffd50cd51",
+		compose_id = 0,
+		type = 7,
+		id = 220061,
+		rare = 2,
+		desc = "34681a7527f942c70979c1db9bacdad7",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[320061] = {
+		decompose_id = 0,
+		name = "77c98adcbe60c59b8aec7c4db4d970f3",
+		compose_id = 0,
+		type = 7,
+		id = 320061,
+		rare = 3,
+		desc = "b2cb9ff553b2360b0a9e14506be28bea",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[420061] = {
+		decompose_id = 0,
+		name = "431b750347def9d8dd95a254eedfdea1",
+		compose_id = 0,
+		type = 7,
+		id = 420061,
+		rare = 4,
+		desc = "f6686b789e8f4eed6dde8b2de39d2fb7",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[520061] = {
+		decompose_id = 0,
+		name = "eebc206e37fdb21e1615e9fe58abbfbe",
+		compose_id = 0,
+		type = 7,
+		id = 520061,
+		rare = 5,
+		desc = "2079ef7d1fb84397850f357b8f6dfc28",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[521061] = {
+		decompose_id = 0,
+		name = "90fa98e77eb738f21a55cb8e95b0e9b6",
+		compose_id = 0,
+		type = 7,
+		id = 521061,
+		rare = 5,
+		desc = "6fd61d049aece168a773f3b9efdab5d7",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[522061] = {
+		decompose_id = 0,
+		name = "f99080f2d0ae719bdf4951b2f0ad5169",
+		compose_id = 0,
+		type = 7,
+		id = 522061,
+		rare = 5,
+		desc = "84af6dd1f4c60d67d4c676ec3b046557",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[523061] = {
+		decompose_id = 0,
+		name = "ae591c6b3466e29d7a3953b2ba470d90",
+		compose_id = 0,
+		type = 7,
+		id = 523061,
+		rare = 5,
+		desc = "036f8d0eaaa25f43f757a36afaf96b94",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[524061] = {
+		decompose_id = 0,
+		name = "c526131ffcb1cc374f9daaa2c22742be",
+		compose_id = 0,
+		type = 7,
+		id = 524061,
+		rare = 5,
+		desc = "d65aea7130c8664c6ecde4605cb21054",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[525061] = {
+		decompose_id = 0,
+		name = "c4b19d49911df1010298862e76b35f79",
+		compose_id = 0,
+		type = 7,
+		id = 525061,
+		rare = 5,
+		desc = "738e7cb2a5403e51b715a7615f63db31",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[529061] = {
+		decompose_id = 0,
+		name = "c03b5b2a5a65feff0b159524426d71f1",
+		compose_id = 0,
+		type = 7,
+		id = 529061,
+		rare = 5,
+		desc = "48fc0755001f06ff0b41ab31687b0fe0",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[230061] = {
+		decompose_id = 0,
+		name = "c12fee86c6aa03cbb3eabc7f3216b1e5",
+		compose_id = 0,
+		type = 7,
+		id = 230061,
+		rare = 2,
+		desc = "0527be1cd5defa1fe064bb5b348d1ca7",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[330061] = {
+		decompose_id = 0,
+		name = "3c80ea40be9aa9d702b7cfddc9dfbc8d",
+		compose_id = 0,
+		type = 7,
+		id = 330061,
+		rare = 3,
+		desc = "19b5a4cde95f6f3d8eebcc2a56079a7a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[430061] = {
+		decompose_id = 0,
+		name = "1bd0e8ef2765a73b996ee003ea5189bc",
+		compose_id = 0,
+		type = 7,
+		id = 430061,
+		rare = 4,
+		desc = "8bd354b6b7605bb56b3174c566295953",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[530061] = {
+		decompose_id = 0,
+		name = "2f53f56fe58adb6c85b39a233545f663",
+		compose_id = 0,
+		type = 7,
+		id = 530061,
+		rare = 5,
+		desc = "39231aaef7da4fed3befd3447a170708",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[531061] = {
+		decompose_id = 0,
+		name = "55e59bb8e5076d6eea659723c522949c",
+		compose_id = 0,
+		type = 7,
+		id = 531061,
+		rare = 5,
+		desc = "bd5e3bc2d58925d4fb6acb31047a2543",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[532061] = {
+		decompose_id = 0,
+		name = "bae8b330a984d0d20236e30b0ea01cd4",
+		compose_id = 0,
+		type = 7,
+		id = 532061,
+		rare = 5,
+		desc = "37297e38c1651fdc8961dbfe08c9abc2",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[533061] = {
+		decompose_id = 0,
+		name = "16c928c7e4771c3b2fee73482dadf105",
+		compose_id = 0,
+		type = 7,
+		id = 533061,
+		rare = 5,
+		desc = "e01068c4b312044d0482654a6eb97cf6",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[534061] = {
+		decompose_id = 0,
+		name = "81b95b7b9dff30aee36f349e6750f409",
+		compose_id = 0,
+		type = 7,
+		id = 534061,
+		rare = 5,
+		desc = "1eb06b7116ebb2a59b004d31f4374ca0",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[535061] = {
+		decompose_id = 0,
+		name = "a72c969a0239a301b3883f5629fade81",
+		compose_id = 0,
+		type = 7,
+		id = 535061,
+		rare = 5,
+		desc = "319790d4422c02533e709cac5f7d550a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[539061] = {
+		decompose_id = 0,
+		name = "f3932220b257fd22c65cf68085f2850b",
+		compose_id = 0,
+		type = 7,
+		id = 539061,
+		rare = 5,
+		desc = "e121e53d8a4e72a268cda6edbeb8a0af",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[240061] = {
+		decompose_id = 0,
+		name = "c50ce66bbe5ebd53e6bd4396d28c07b3",
+		compose_id = 0,
+		type = 7,
+		id = 240061,
+		rare = 2,
+		desc = "c9a5c89c93364ecae05708eb03fc587a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[340061] = {
+		decompose_id = 0,
+		name = "fbd465ebd3222f01cd6c85c42c1dcf8c",
+		compose_id = 0,
+		type = 7,
+		id = 340061,
+		rare = 3,
+		desc = "34e6d28395d70d57321dd8b5326ab3cf",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[440061] = {
+		decompose_id = 0,
+		name = "310a03ff54c4de25d1c85ca82cd7bb1f",
+		compose_id = 0,
+		type = 7,
+		id = 440061,
+		rare = 4,
+		desc = "e149dc6a9a6b220236fb2abfe134079a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[540061] = {
+		decompose_id = 0,
+		name = "05a95169d741df98117fb2bff8b7d236",
+		compose_id = 0,
+		type = 7,
+		id = 540061,
+		rare = 5,
+		desc = "b45352a3f2e70b8dd7021dd1f53b32f0",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[541061] = {
+		decompose_id = 0,
+		name = "896889ac7fd9b13ef5b91eff8cb8e2d4",
+		compose_id = 0,
+		type = 7,
+		id = 541061,
+		rare = 5,
+		desc = "6f88fd610276e1a63d5124c1865e8a14",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[542061] = {
+		decompose_id = 0,
+		name = "40194c8d55b7e995fd3ee2b203be0a6a",
+		compose_id = 0,
+		type = 7,
+		id = 542061,
+		rare = 5,
+		desc = "8293195071381e40dc8b74b2f89a5d33",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[543061] = {
+		decompose_id = 0,
+		name = "c4f25e5c7c8b58c280b32c17735a680a",
+		compose_id = 0,
+		type = 7,
+		id = 543061,
+		rare = 5,
+		desc = "9aecc4bda9ac7c88c8fc90e9f6f83e12",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[544061] = {
+		decompose_id = 0,
+		name = "a0cdc43209de78b8d3533bb9bf3bb61e",
+		compose_id = 0,
+		type = 7,
+		id = 544061,
+		rare = 5,
+		desc = "13016717482e3dad55c0c459fcbe4477",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[545061] = {
+		decompose_id = 0,
+		name = "5f266a70467d83cb7bbb09301599fcc3",
+		compose_id = 0,
+		type = 7,
+		id = 545061,
+		rare = 5,
+		desc = "c1204bf6bdfa6e75e7ba4f28bb25c047",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[549061] = {
+		decompose_id = 0,
+		name = "db804a17e7653dcf2952c5553eebba23",
+		compose_id = 0,
+		type = 7,
+		id = 549061,
+		rare = 5,
+		desc = "da992d7e15f3f940afa9cb1c49a0d794",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[250061] = {
+		decompose_id = 0,
+		name = "8155ea0b1f9150b03d21d081eabd9367",
+		compose_id = 0,
+		type = 7,
+		id = 250061,
+		rare = 2,
+		desc = "353b072b8a120623736e2f8ccfab7ee2",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[350061] = {
+		decompose_id = 0,
+		name = "19db84c514f9627b0d0967fc61d853a4",
+		compose_id = 0,
+		type = 7,
+		id = 350061,
+		rare = 3,
+		desc = "b7898558e72f08f0a7c31badc0982d69",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[450061] = {
+		decompose_id = 0,
+		name = "230b176e6840d716b90ee8db982b42f7",
+		compose_id = 0,
+		type = 7,
+		id = 450061,
+		rare = 4,
+		desc = "329b32167672e897fac48e6a06462f38",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[550061] = {
+		decompose_id = 0,
+		name = "dd9316de03bf9226deab0ca9192201fe",
+		compose_id = 0,
+		type = 7,
+		id = 550061,
+		rare = 5,
+		desc = "ef53820a97121836f94bdc46509286d1",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[551061] = {
+		decompose_id = 0,
+		name = "9375d9634e2c1a9c21d40cbeebe7bd02",
+		compose_id = 0,
+		type = 7,
+		id = 551061,
+		rare = 5,
+		desc = "4de5baf3fbfa4006d9962902fdee70bd",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[552061] = {
+		decompose_id = 0,
+		name = "d415cf5f17bee0f0779a532e195e2820",
+		compose_id = 0,
+		type = 7,
+		id = 552061,
+		rare = 5,
+		desc = "5c4aafa77310a7731e39e09ce360cbcf",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[553061] = {
+		decompose_id = 0,
+		name = "ab8172abc7a193b731fd6ff206fa8cbe",
+		compose_id = 0,
+		type = 7,
+		id = 553061,
+		rare = 5,
+		desc = "407fa89f82d1fa8d8a9f8a43d7734542",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[554061] = {
+		decompose_id = 0,
+		name = "1720ac66f80ccf44732f151887536914",
+		compose_id = 0,
+		type = 7,
+		id = 554061,
+		rare = 5,
+		desc = "bb56b9591f2b9ff33971a75724896055",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[555061] = {
+		decompose_id = 0,
+		name = "6aba0a408cfc4b2c127e8eaaed32f34a",
+		compose_id = 0,
+		type = 7,
+		id = 555061,
+		rare = 5,
+		desc = "d169dbc83850605d2fe9e61f321e94fd",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[559061] = {
+		decompose_id = 0,
+		name = "8b74db981cdda8d0ee75e7117af2b425",
+		compose_id = 0,
+		type = 7,
+		id = 559061,
+		rare = 5,
+		desc = "1096a0aaddf8d72a493ed98fc4ff4cac",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[260061] = {
+		decompose_id = 0,
+		name = "0b629939a423b38e0f0d553005029fc7",
+		compose_id = 0,
+		type = 7,
+		id = 260061,
+		rare = 2,
+		desc = "40bfabb5b623f259ec8c8a3bc8a19432",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[360061] = {
+		decompose_id = 0,
+		name = "9021db963ee6ca37b393646f4a673cbd",
+		compose_id = 0,
+		type = 7,
+		id = 360061,
+		rare = 3,
+		desc = "48169c6d0f2e87dced59422ce50b7aaa",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[460061] = {
+		decompose_id = 0,
+		name = "99d65c681ad0938e55c8bf827c57f0ee",
+		compose_id = 0,
+		type = 7,
+		id = 460061,
+		rare = 4,
+		desc = "55809ac0cfb2c9d7c91789cfd5036006",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[560061] = {
+		decompose_id = 0,
+		name = "cd8b1e7f5ff088916f6f8200f28501b6",
+		compose_id = 0,
+		type = 7,
+		id = 560061,
+		rare = 5,
+		desc = "5fa83b5fb0149692f5cc512a15469ef1",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[561061] = {
+		decompose_id = 0,
+		name = "554c03f7d6fa4f9f62ef3c0a87e4a5af",
+		compose_id = 0,
+		type = 7,
+		id = 561061,
+		rare = 5,
+		desc = "604e827ee6016df9cef09d4d2fd3f63e",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[562061] = {
+		decompose_id = 0,
+		name = "9e2adee1866aaeb3427f5d58669a9f58",
+		compose_id = 0,
+		type = 7,
+		id = 562061,
+		rare = 5,
+		desc = "4613156f71eeed150fa57bc1cd08c031",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[563061] = {
+		decompose_id = 0,
+		name = "de2121f48db4f099a1afdc22c25e73dc",
+		compose_id = 0,
+		type = 7,
+		id = 563061,
+		rare = 5,
+		desc = "bfb551c7046bcf139f7068d392013955",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[564061] = {
+		decompose_id = 0,
+		name = "bf6dd535b89ec4e91f78170a57a675fd",
+		compose_id = 0,
+		type = 7,
+		id = 564061,
+		rare = 5,
+		desc = "cd218ca54c3a16db651e8914ee45c626",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[565061] = {
+		decompose_id = 0,
+		name = "d1e5325db94e223ab065af51475ccc4e",
+		compose_id = 0,
+		type = 7,
+		id = 565061,
+		rare = 5,
+		desc = "5c333bfc73dc13ee06bc0805b8613434",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[569061] = {
+		decompose_id = 0,
+		name = "1e448253015bfa2ec3ed7961ecfc8f5d",
+		compose_id = 0,
+		type = 7,
+		id = 569061,
+		rare = 5,
+		desc = "ae6e103814b3bd0c11b39d2b385696c2",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "61",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[210062] = {
+		decompose_id = 0,
+		name = "01ad573a94a3123cd6675f1ecd115888",
+		compose_id = 0,
+		type = 7,
+		id = 210062,
+		rare = 2,
+		desc = "4463ceeb2aaadf4808533d073ad31a82",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[310062] = {
+		decompose_id = 0,
+		name = "3743beef827d43faea06080f717fc287",
+		compose_id = 0,
+		type = 7,
+		id = 310062,
+		rare = 3,
+		desc = "db4bbcfee6171d5eeb56578d447fcb44",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[410062] = {
+		decompose_id = 0,
+		name = "fd0cf0676acaede1eb9c2f7607bc08fb",
+		compose_id = 0,
+		type = 7,
+		id = 410062,
+		rare = 4,
+		desc = "ba73b18ec865ff06e6fd98abf6d41559",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[510062] = {
+		decompose_id = 0,
+		name = "6db1ce2833cb84e5eaf400c69d76e7c4",
+		compose_id = 0,
+		type = 7,
+		id = 510062,
+		rare = 5,
+		desc = "01bc5e60e72f996f5759c4d67aae6634",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[511062] = {
+		decompose_id = 0,
+		name = "202af76fc1494bc7d7fbec2ff05ab339",
+		compose_id = 0,
+		type = 7,
+		id = 511062,
+		rare = 5,
+		desc = "099550f95646afb69eb6b4a544b9a187",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[512062] = {
+		decompose_id = 0,
+		name = "10a1983a6a08a2be7399d61d7a820f81",
+		compose_id = 0,
+		type = 7,
+		id = 512062,
+		rare = 5,
+		desc = "ba4d1c7defa6d9bf543a1c420c1950fa",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[513062] = {
+		decompose_id = 0,
+		name = "a2ac87e1436674be6a0c5be0d31ddd0c",
+		compose_id = 0,
+		type = 7,
+		id = 513062,
+		rare = 5,
+		desc = "a899c3e48eaea58bd88f181ec5f26556",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[514062] = {
+		decompose_id = 0,
+		name = "de335e14dcfc6fd64f5453bf06522f7c",
+		compose_id = 0,
+		type = 7,
+		id = 514062,
+		rare = 5,
+		desc = "6dfd419855ac696692ba17cbe032d0bc",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[515062] = {
+		decompose_id = 0,
+		name = "3710d32971673560afa2962544c00607",
+		compose_id = 0,
+		type = 7,
+		id = 515062,
+		rare = 5,
+		desc = "fec001e519390f5b2dc0d309f9329077",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[519062] = {
+		decompose_id = 0,
+		name = "15b73164405f259d4eacd09664b34d56",
+		compose_id = 0,
+		type = 7,
+		id = 519062,
+		rare = 5,
+		desc = "2daa8ce5556d9cdbbe49fc0b4f36bdae",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[220062] = {
+		decompose_id = 0,
+		name = "acde689cbd834e1472b593fe6ba69e84",
+		compose_id = 0,
+		type = 7,
+		id = 220062,
+		rare = 2,
+		desc = "0f7b85a1cbea03c1de8eb9d1a9f4f1c7",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[320062] = {
+		decompose_id = 0,
+		name = "f40130b46594d1fd2d47419340eff246",
+		compose_id = 0,
+		type = 7,
+		id = 320062,
+		rare = 3,
+		desc = "3cb160014de7aa73d7c0942dbbcec723",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[420062] = {
+		decompose_id = 0,
+		name = "b90d87a16320d1c8991dfbcf13677790",
+		compose_id = 0,
+		type = 7,
+		id = 420062,
+		rare = 4,
+		desc = "0b895c02dacc17c2b1ecf2962c032a28",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[520062] = {
+		decompose_id = 0,
+		name = "74be580792744d7a3f84a5f937558560",
+		compose_id = 0,
+		type = 7,
+		id = 520062,
+		rare = 5,
+		desc = "3b6e3d2026a1b3c39dda942f53c2dd16",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[521062] = {
+		decompose_id = 0,
+		name = "a8db2d69424b7f69599f45fd5e04da44",
+		compose_id = 0,
+		type = 7,
+		id = 521062,
+		rare = 5,
+		desc = "d48b2aca371073ea5b54dba8f6927840",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[522062] = {
+		decompose_id = 0,
+		name = "8201bfbb8da9134f726dd2a71f0fcaa4",
+		compose_id = 0,
+		type = 7,
+		id = 522062,
+		rare = 5,
+		desc = "e822b743d66d8ff964f2a7c05fdc759d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[523062] = {
+		decompose_id = 0,
+		name = "2caf995c4ae47bb6054e819c52168146",
+		compose_id = 0,
+		type = 7,
+		id = 523062,
+		rare = 5,
+		desc = "43dfb4da0400eccc39d251d1bc64beab",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[524062] = {
+		decompose_id = 0,
+		name = "b76b5aa268d7a9c7230a7fc5203f7c80",
+		compose_id = 0,
+		type = 7,
+		id = 524062,
+		rare = 5,
+		desc = "d2f95679c117fd046e11e2dfe65bffc8",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[525062] = {
+		decompose_id = 0,
+		name = "58099fd4394cae66e53a7e5c688b2998",
+		compose_id = 0,
+		type = 7,
+		id = 525062,
+		rare = 5,
+		desc = "a3583b3ab619b5958234c34515dd4d8b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[529062] = {
+		decompose_id = 0,
+		name = "e1ede84e322cde2163cee6f883e212fc",
+		compose_id = 0,
+		type = 7,
+		id = 529062,
+		rare = 5,
+		desc = "9c5c996372ecb6887edeb9a236636a7a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[230062] = {
+		decompose_id = 0,
+		name = "ded1f0d07645626de441f2f714673112",
+		compose_id = 0,
+		type = 7,
+		id = 230062,
+		rare = 2,
+		desc = "cd23ccf01a38aa0da213c6df580b7c52",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[330062] = {
+		decompose_id = 0,
+		name = "66b5c2ab4e1f741ac4d72c2deea4a559",
+		compose_id = 0,
+		type = 7,
+		id = 330062,
+		rare = 3,
+		desc = "4451ee2b570864e8bafb80fb2e6cf54d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[430062] = {
+		decompose_id = 0,
+		name = "d3ba59ae59acc6ad19fb4eddfe7d1d05",
+		compose_id = 0,
+		type = 7,
+		id = 430062,
+		rare = 4,
+		desc = "704e14164b7ca36227dc3cde33085a6b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[530062] = {
+		decompose_id = 0,
+		name = "e29aaf2d5349487adca3630461080d8c",
+		compose_id = 0,
+		type = 7,
+		id = 530062,
+		rare = 5,
+		desc = "c13e4e58a3a8ea20efdd1c1a6c32911f",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[531062] = {
+		decompose_id = 0,
+		name = "febdc0424fe380b689286ea41622734c",
+		compose_id = 0,
+		type = 7,
+		id = 531062,
+		rare = 5,
+		desc = "2ec895269bb788eb1ba305a5e0dd7512",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[532062] = {
+		decompose_id = 0,
+		name = "52f843a1083d509acae281ea004780cf",
+		compose_id = 0,
+		type = 7,
+		id = 532062,
+		rare = 5,
+		desc = "b85ccee0c8530109e10ef86f8203c115",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[533062] = {
+		decompose_id = 0,
+		name = "ed4522503d2b2becb4a020030aba0cf0",
+		compose_id = 0,
+		type = 7,
+		id = 533062,
+		rare = 5,
+		desc = "85ddc4abab8efa277f5396d54d7b7828",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[534062] = {
+		decompose_id = 0,
+		name = "d34e45c5de5d4e27db72b35bee72e688",
+		compose_id = 0,
+		type = 7,
+		id = 534062,
+		rare = 5,
+		desc = "1191a1ee5982c7fa1c98a324114114ce",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[535062] = {
+		decompose_id = 0,
+		name = "359b234314a6561ab0b6d609d778f1ad",
+		compose_id = 0,
+		type = 7,
+		id = 535062,
+		rare = 5,
+		desc = "bcaf037b9041792b4d1f38cfd3fe06eb",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[539062] = {
+		decompose_id = 0,
+		name = "2ff7889adfef23a2f36af9a47a057d48",
+		compose_id = 0,
+		type = 7,
+		id = 539062,
+		rare = 5,
+		desc = "fa39cdad538f664a40d489f82f491d95",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[240062] = {
+		decompose_id = 0,
+		name = "bd2b356f97693ac4398d14f03842a47f",
+		compose_id = 0,
+		type = 7,
+		id = 240062,
+		rare = 2,
+		desc = "a9224c465ebe128d202f9d7f48b5b6f2",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[340062] = {
+		decompose_id = 0,
+		name = "f1f24649de424ab40322f0bab39059d4",
+		compose_id = 0,
+		type = 7,
+		id = 340062,
+		rare = 3,
+		desc = "ba07f3c80c9c6dc1a68bf22cdc3bd9cb",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[440062] = {
+		decompose_id = 0,
+		name = "e5c8f12e2edf8c440be7e6fc94e7e39f",
+		compose_id = 0,
+		type = 7,
+		id = 440062,
+		rare = 4,
+		desc = "d1f1e9fe78f10ba9c3389814cee10aff",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[540062] = {
+		decompose_id = 0,
+		name = "9a887935294f4cffecde82c3d3cd1165",
+		compose_id = 0,
+		type = 7,
+		id = 540062,
+		rare = 5,
+		desc = "6d699078776a90cf49f77dc09bc3712f",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[541062] = {
+		decompose_id = 0,
+		name = "eda16caf763748d71a8665ff4816efdc",
+		compose_id = 0,
+		type = 7,
+		id = 541062,
+		rare = 5,
+		desc = "7bb68b855098d8807f96ca0704a61c5f",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[542062] = {
+		decompose_id = 0,
+		name = "4fe6f062c29b37b3e1f140851aa9d6cc",
+		compose_id = 0,
+		type = 7,
+		id = 542062,
+		rare = 5,
+		desc = "1e537c594ca0601d0bc35a53f5fc29dd",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[543062] = {
+		decompose_id = 0,
+		name = "d6fe930357cbd9b00148d7e9d2c75f22",
+		compose_id = 0,
+		type = 7,
+		id = 543062,
+		rare = 5,
+		desc = "0c894b656ef30c759f765a724a76ae7b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[544062] = {
+		decompose_id = 0,
+		name = "c4c3b64e011e78d4210fd2609dc6762d",
+		compose_id = 0,
+		type = 7,
+		id = 544062,
+		rare = 5,
+		desc = "585f1cb9694d913fecf9b908fde57008",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[545062] = {
+		decompose_id = 0,
+		name = "24d5378aa5c7efe7bfa077fadce1a2f0",
+		compose_id = 0,
+		type = 7,
+		id = 545062,
+		rare = 5,
+		desc = "4cbb1c3e8efd555898ccd2ebfc65c7b4",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[549062] = {
+		decompose_id = 0,
+		name = "4504d80bb711fbd3a4816a9980e0f571",
+		compose_id = 0,
+		type = 7,
+		id = 549062,
+		rare = 5,
+		desc = "0e75923104b50e6149156a0b3fb233fe",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[250062] = {
+		decompose_id = 0,
+		name = "c1793490a8fc6c45014403bd01cc4111",
+		compose_id = 0,
+		type = 7,
+		id = 250062,
+		rare = 2,
+		desc = "cca4eed1cb65b0fb7573ba3bea73eb59",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[350062] = {
+		decompose_id = 0,
+		name = "23e0f1695b48381de7bdb64e2d489a39",
+		compose_id = 0,
+		type = 7,
+		id = 350062,
+		rare = 3,
+		desc = "911436e24a80750f0ea1efee68e5d156",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[450062] = {
+		decompose_id = 0,
+		name = "bfce1091c7de449616a7c432567c9f71",
+		compose_id = 0,
+		type = 7,
+		id = 450062,
+		rare = 4,
+		desc = "f459111c7fdba1a6d16ae4dc8a96c5cd",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[550062] = {
+		decompose_id = 0,
+		name = "1210b7f090db9256e29cb322464b3219",
+		compose_id = 0,
+		type = 7,
+		id = 550062,
+		rare = 5,
+		desc = "4dfb8794e647659e004e8f0a6f2917d8",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[551062] = {
+		decompose_id = 0,
+		name = "012aea832c63fa003ded6270015589d8",
+		compose_id = 0,
+		type = 7,
+		id = 551062,
+		rare = 5,
+		desc = "304555fcb1a1c5f69db4589b43c47084",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[552062] = {
+		decompose_id = 0,
+		name = "64d25094f69772c8e26944c7039f0148",
+		compose_id = 0,
+		type = 7,
+		id = 552062,
+		rare = 5,
+		desc = "e0d38d4cb0bb01db725d3eb4f2cf8407",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[553062] = {
+		decompose_id = 0,
+		name = "c0415503dc3f2457ec36e7d7d9e17bdf",
+		compose_id = 0,
+		type = 7,
+		id = 553062,
+		rare = 5,
+		desc = "4012e2c2c5a93cfc32661f1e575a198d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[554062] = {
+		decompose_id = 0,
+		name = "9c3dd27b1e63e4b813c6d0437db9d28b",
+		compose_id = 0,
+		type = 7,
+		id = 554062,
+		rare = 5,
+		desc = "73f9ace417984613cb47330b7e8376dd",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[555062] = {
+		decompose_id = 0,
+		name = "8fea6f1191b06fb97a0507c7dc1426c7",
+		compose_id = 0,
+		type = 7,
+		id = 555062,
+		rare = 5,
+		desc = "2aebea9df4658d66ed34c37249790388",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[559062] = {
+		decompose_id = 0,
+		name = "c51e6f6cd38caf669f8da2c35d0241ef",
+		compose_id = 0,
+		type = 7,
+		id = 559062,
+		rare = 5,
+		desc = "4c8f801ddeaf7618164c36588ad7da57",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[260062] = {
+		decompose_id = 0,
+		name = "440e58b05e2e85ccda19e820dd8b71f6",
+		compose_id = 0,
+		type = 7,
+		id = 260062,
+		rare = 2,
+		desc = "c5f2f140b51f63a2c713b0f4a4deeb2d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[360062] = {
+		decompose_id = 0,
+		name = "50cf4b13b58ee08baa3ed7a16b25a011",
+		compose_id = 0,
+		type = 7,
+		id = 360062,
+		rare = 3,
+		desc = "ab7b49a362f378f20ef49784067e27d3",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[460062] = {
+		decompose_id = 0,
+		name = "21bbe7ca95c06e664cb5d8287d0d4265",
+		compose_id = 0,
+		type = 7,
+		id = 460062,
+		rare = 4,
+		desc = "c323e61da1c6b8c297f5bf776b19059f",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[560062] = {
+		decompose_id = 0,
+		name = "0eb7047e7fcdfe6a7cf4fde752adb95d",
+		compose_id = 0,
+		type = 7,
+		id = 560062,
+		rare = 5,
+		desc = "d1773b8097c396cf8fab62183fa9d8a1",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[561062] = {
+		decompose_id = 0,
+		name = "86d263181b8d297a459de9d655bb82ce",
+		compose_id = 0,
+		type = 7,
+		id = 561062,
+		rare = 5,
+		desc = "38b0b26d0f638a5747ba52b823bfe132",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[562062] = {
+		decompose_id = 0,
+		name = "ece35ec297e84380c189b9994b2b86e3",
+		compose_id = 0,
+		type = 7,
+		id = 562062,
+		rare = 5,
+		desc = "18ad584b7b660ff205df6d152c77cd6a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[563062] = {
+		decompose_id = 0,
+		name = "0c0c99ab6c6db75f752e14ca97749a3a",
+		compose_id = 0,
+		type = 7,
+		id = 563062,
+		rare = 5,
+		desc = "0eeaeea00e0ea4814a46b0def0ad3dcb",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[564062] = {
+		decompose_id = 0,
+		name = "9a5dd0f0ecb720895e0247e7831bf2ac",
+		compose_id = 0,
+		type = 7,
+		id = 564062,
+		rare = 5,
+		desc = "e847c6de809333a33c2400df7c3097e4",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[565062] = {
+		decompose_id = 0,
+		name = "e0dd5ca5070998555b679ff8383612ca",
+		compose_id = 0,
+		type = 7,
+		id = 565062,
+		rare = 5,
+		desc = "792bb86f51076834928f22c10b5de796",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[569062] = {
+		decompose_id = 0,
+		name = "c9f4a0d396ab3de11662794bcb9759c0",
+		compose_id = 0,
+		type = 7,
+		id = 569062,
+		rare = 5,
+		desc = "11f85b9a45769cb5e3687d86a251f054",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "62",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[830001] = {
+		name = "3a575f618013367d50bfc5cfe9629ad3",
+		id = 830001,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "77397cd03a6fa33285725a895461e17d",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830001",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310001,
+				1
+			},
+			{
+				320001,
+				1
+			},
+			{
+				330001,
+				1
+			},
+			{
+				340001,
+				1
+			},
+			{
+				350001,
+				1
+			},
+			{
+				360001,
+				1
+			}
+		},
+		source = {}
+	},
+	[840001] = {
+		name = "ab51ee3b684f787eddc4e9a796d7e077",
+		id = 840001,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "f77eb30eae49ce21aefbbda6f05dacfe",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840001",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410001,
+				1
+			},
+			{
+				420001,
+				1
+			},
+			{
+				430001,
+				1
+			},
+			{
+				440001,
+				1
+			},
+			{
+				450001,
+				1
+			},
+			{
+				460001,
+				1
+			}
+		},
+		source = {}
+	},
+	[850001] = {
+		name = "bd3a1f67ad0dc046bb1e7865f3aeecd7",
+		id = 850001,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "616e61f2b9f3037a7552e1b220d2d8ef",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850001",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510001,
+				1
+			},
+			{
+				520001,
+				1
+			},
+			{
+				530001,
+				1
+			},
+			{
+				540001,
+				1
+			},
+			{
+				550001,
+				1
+			},
+			{
+				560001,
+				1
+			}
+		},
+		source = {}
+	},
+	[830002] = {
+		name = "6fbfa1006c779ceff141052a24a27375",
+		id = 830002,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "4dcd15569ee59ec25a40dfb54487b759",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830002",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310002,
+				1
+			},
+			{
+				320002,
+				1
+			},
+			{
+				330002,
+				1
+			},
+			{
+				340002,
+				1
+			},
+			{
+				350002,
+				1
+			},
+			{
+				360002,
+				1
+			}
+		},
+		source = {}
+	},
+	[840002] = {
+		name = "c8eddda0fe5240f753497ae5aaabf35d",
+		id = 840002,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "b5bda21bec1bdac1cce182ac792aae7e",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840002",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410002,
+				1
+			},
+			{
+				420002,
+				1
+			},
+			{
+				430002,
+				1
+			},
+			{
+				440002,
+				1
+			},
+			{
+				450002,
+				1
+			},
+			{
+				460002,
+				1
+			}
+		},
+		source = {}
+	},
+	[850002] = {
+		name = "2a0dce9adcf29841e21885a714ce84bd",
+		id = 850002,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "d5d51146dbafc5e38a173794e6c16e71",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850002",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510002,
+				1
+			},
+			{
+				520002,
+				1
+			},
+			{
+				530002,
+				1
+			},
+			{
+				540002,
+				1
+			},
+			{
+				550002,
+				1
+			},
+			{
+				560002,
+				1
+			}
+		},
+		source = {}
+	},
+	[830003] = {
+		name = "d3fa4653dcdaa8ecef12b2cddab4c1a3",
+		id = 830003,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "c390dd7abfe5b7f5e15aa0c7341112f5",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830003",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310003,
+				1
+			},
+			{
+				320003,
+				1
+			},
+			{
+				330003,
+				1
+			},
+			{
+				340003,
+				1
+			},
+			{
+				350003,
+				1
+			},
+			{
+				360003,
+				1
+			}
+		},
+		source = {}
+	},
+	[840003] = {
+		name = "9bae85577d4f008c435e89a81783c09a",
+		id = 840003,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "37bb8a76baf33c4688aaf91a2c7e899c",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840003",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410003,
+				1
+			},
+			{
+				420003,
+				1
+			},
+			{
+				430003,
+				1
+			},
+			{
+				440003,
+				1
+			},
+			{
+				450003,
+				1
+			},
+			{
+				460003,
+				1
+			}
+		},
+		source = {}
+	},
+	[850003] = {
+		name = "cbe7edbe586d4180a45f41a351efe0d3",
+		id = 850003,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "d14037a93b4269508bc4833f7a488ada",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850003",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510003,
+				1
+			},
+			{
+				520003,
+				1
+			},
+			{
+				530003,
+				1
+			},
+			{
+				540003,
+				1
+			},
+			{
+				550003,
+				1
+			},
+			{
+				560003,
+				1
+			}
+		},
+		source = {}
+	},
+	[830004] = {
+		name = "7a34700c8de54df971b23c39dcb1a9d0",
+		id = 830004,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "20bf192a28a3b3011d5196bcd2852ae6",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830004",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310004,
+				1
+			},
+			{
+				320004,
+				1
+			},
+			{
+				330004,
+				1
+			},
+			{
+				340004,
+				1
+			},
+			{
+				350004,
+				1
+			},
+			{
+				360004,
+				1
+			}
+		},
+		source = {}
+	},
+	[840004] = {
+		name = "9c62cfac13cdc22d1f0fb56c83ca4817",
+		id = 840004,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "3a20880ac75a15d6a56f26b1dc7d7128",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840004",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410004,
+				1
+			},
+			{
+				420004,
+				1
+			},
+			{
+				430004,
+				1
+			},
+			{
+				440004,
+				1
+			},
+			{
+				450004,
+				1
+			},
+			{
+				460004,
+				1
+			}
+		},
+		source = {}
+	},
+	[850004] = {
+		name = "3651903d0de4aa0c9a95727054638be7",
+		id = 850004,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "36c9f582573fb4115ea3f56ed6134595",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850004",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510004,
+				1
+			},
+			{
+				520004,
+				1
+			},
+			{
+				530004,
+				1
+			},
+			{
+				540004,
+				1
+			},
+			{
+				550004,
+				1
+			},
+			{
+				560004,
+				1
+			}
+		},
+		source = {}
+	},
+	[830005] = {
+		name = "c089e7b2ce61286da3208a0b8a94374e",
+		id = 830005,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "4fa6d3ee4e1dc14d30606be445d5af29",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830005",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310005,
+				1
+			},
+			{
+				320005,
+				1
+			},
+			{
+				330005,
+				1
+			},
+			{
+				340005,
+				1
+			},
+			{
+				350005,
+				1
+			},
+			{
+				360005,
+				1
+			}
+		},
+		source = {}
+	},
+	[840005] = {
+		name = "993080c661320ad5c792064c99b2dc61",
+		id = 840005,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "83324db48552b40784aba446d3b84b89",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840005",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410005,
+				1
+			},
+			{
+				420005,
+				1
+			},
+			{
+				430005,
+				1
+			},
+			{
+				440005,
+				1
+			},
+			{
+				450005,
+				1
+			},
+			{
+				460005,
+				1
+			}
+		},
+		source = {}
+	},
+	[850005] = {
+		name = "c103e0ca478ecfb4d781687b906010ec",
+		id = 850005,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "ef269338d8a0a5d1c05abea1b6bd6927",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850005",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510005,
+				1
+			},
+			{
+				520005,
+				1
+			},
+			{
+				530005,
+				1
+			},
+			{
+				540005,
+				1
+			},
+			{
+				550005,
+				1
+			},
+			{
+				560005,
+				1
+			}
+		},
+		source = {}
+	},
+	[830006] = {
+		name = "33f3f7372fdf91cb38ab5f26a762845c",
+		id = 830006,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "b821d3c20956d3e692dbb2791bc45748",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830006",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310006,
+				1
+			},
+			{
+				320006,
+				1
+			},
+			{
+				330006,
+				1
+			},
+			{
+				340006,
+				1
+			},
+			{
+				350006,
+				1
+			},
+			{
+				360006,
+				1
+			}
+		},
+		source = {}
+	},
+	[840006] = {
+		name = "792e4b2aa7399940476bd9ae7893ae9d",
+		id = 840006,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "9c5f607c00a09455337df1cfccb66130",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840006",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410006,
+				1
+			},
+			{
+				420006,
+				1
+			},
+			{
+				430006,
+				1
+			},
+			{
+				440006,
+				1
+			},
+			{
+				450006,
+				1
+			},
+			{
+				460006,
+				1
+			}
+		},
+		source = {}
+	},
+	[850006] = {
+		name = "97fe43e8d495707579e3bf40805c0a69",
+		id = 850006,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "120d84559f918f2fab32d58230606079",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850006",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510006,
+				1
+			},
+			{
+				520006,
+				1
+			},
+			{
+				530006,
+				1
+			},
+			{
+				540006,
+				1
+			},
+			{
+				550006,
+				1
+			},
+			{
+				560006,
+				1
+			}
+		},
+		source = {}
+	},
+	[830007] = {
+		name = "89f09b87dd8a45cc7e2d2382edda373a",
+		id = 830007,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "a0ab84bc99377e24df177c61bcb1be1f",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830007",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310007,
+				1
+			},
+			{
+				320007,
+				1
+			},
+			{
+				330007,
+				1
+			},
+			{
+				340007,
+				1
+			},
+			{
+				350007,
+				1
+			},
+			{
+				360007,
+				1
+			}
+		},
+		source = {}
+	},
+	[840007] = {
+		name = "bb4ca1554b282476c0362993c5b888e4",
+		id = 840007,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "71b46a002612aee9cf22f1ff626006b4",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840007",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410007,
+				1
+			},
+			{
+				420007,
+				1
+			},
+			{
+				430007,
+				1
+			},
+			{
+				440007,
+				1
+			},
+			{
+				450007,
+				1
+			},
+			{
+				460007,
+				1
+			}
+		},
+		source = {}
+	},
+	[850007] = {
+		name = "fe32ec058aa10caf6340bac3f171ae13",
+		id = 850007,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "369a2e56672df74c4738179967f4a2f2",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850007",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510007,
+				1
+			},
+			{
+				520007,
+				1
+			},
+			{
+				530007,
+				1
+			},
+			{
+				540007,
+				1
+			},
+			{
+				550007,
+				1
+			},
+			{
+				560007,
+				1
+			}
+		},
+		source = {}
+	},
+	[830008] = {
+		name = "e95ffc64d569e56d4e6e53fc8b083660",
+		id = 830008,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "e62a02bc6fce1ba72f9778c783a329cb",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830008",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310008,
+				1
+			},
+			{
+				320008,
+				1
+			},
+			{
+				330008,
+				1
+			},
+			{
+				340008,
+				1
+			},
+			{
+				350008,
+				1
+			},
+			{
+				360008,
+				1
+			}
+		},
+		source = {}
+	},
+	[840008] = {
+		name = "e7526c5297392cb0cff99b5c40de9153",
+		id = 840008,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "79f367b6a628f98b5808fe6f2ef251d7",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840008",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410008,
+				1
+			},
+			{
+				420008,
+				1
+			},
+			{
+				430008,
+				1
+			},
+			{
+				440008,
+				1
+			},
+			{
+				450008,
+				1
+			},
+			{
+				460008,
+				1
+			}
+		},
+		source = {}
+	},
+	[850008] = {
+		name = "e86bafd55b6e1ec3f5d9580a1f27df98",
+		id = 850008,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "fbc352a5494217ba4d560d95e68f1116",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850008",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510008,
+				1
+			},
+			{
+				520008,
+				1
+			},
+			{
+				530008,
+				1
+			},
+			{
+				540008,
+				1
+			},
+			{
+				550008,
+				1
+			},
+			{
+				560008,
+				1
+			}
+		},
+		source = {}
+	},
+	[830009] = {
+		name = "3898851bfa7c653eafafa3f361223e9d",
+		id = 830009,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "e1d58dc9b499512caa4632e2ee9b5eae",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830009",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310009,
+				1
+			},
+			{
+				320009,
+				1
+			},
+			{
+				330009,
+				1
+			},
+			{
+				340009,
+				1
+			},
+			{
+				350009,
+				1
+			},
+			{
+				360009,
+				1
+			}
+		},
+		source = {}
+	},
+	[840009] = {
+		name = "0ac6ed7f8f1c685fb86f531393c47adb",
+		id = 840009,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "693af3eef03a316fb7c045d581f49844",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840009",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410009,
+				1
+			},
+			{
+				420009,
+				1
+			},
+			{
+				430009,
+				1
+			},
+			{
+				440009,
+				1
+			},
+			{
+				450009,
+				1
+			},
+			{
+				460009,
+				1
+			}
+		},
+		source = {}
+	},
+	[850009] = {
+		name = "876db28583a80db9a8a1c3d3f0ddd5cd",
+		id = 850009,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "6899906b467fed8c46f5551d5e1c0935",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850009",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510009,
+				1
+			},
+			{
+				520009,
+				1
+			},
+			{
+				530009,
+				1
+			},
+			{
+				540009,
+				1
+			},
+			{
+				550009,
+				1
+			},
+			{
+				560009,
+				1
+			}
+		},
+		source = {}
+	},
+	[830010] = {
+		name = "f1ca1874963b4c4403d280b019079b62",
+		id = 830010,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "4004fad5a0ceac0fe5339ee75ad95f2d",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830010",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310010,
+				1
+			},
+			{
+				320010,
+				1
+			},
+			{
+				330010,
+				1
+			},
+			{
+				340010,
+				1
+			},
+			{
+				350010,
+				1
+			},
+			{
+				360010,
+				1
+			}
+		},
+		source = {}
+	},
+	[840010] = {
+		name = "52dd082dcb866d7f12f702686e8dc14e",
+		id = 840010,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "7a68a66d46755be2cb9b1de45efc49da",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840010",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410010,
+				1
+			},
+			{
+				420010,
+				1
+			},
+			{
+				430010,
+				1
+			},
+			{
+				440010,
+				1
+			},
+			{
+				450010,
+				1
+			},
+			{
+				460010,
+				1
+			}
+		},
+		source = {}
+	},
+	[850010] = {
+		name = "f91e1749c0e80db1f43dbfae3cf5940d",
+		id = 850010,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "a1b89921a8cd02350c60cae2b9666061",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850010",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510010,
+				1
+			},
+			{
+				520010,
+				1
+			},
+			{
+				530010,
+				1
+			},
+			{
+				540010,
+				1
+			},
+			{
+				550010,
+				1
+			},
+			{
+				560010,
+				1
+			}
+		},
+		source = {}
+	},
+	[830011] = {
+		name = "dd2813426a19e15bb6d5d71c85ac6ef4",
+		id = 830011,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "36e2c179853edd251b684e2a96d7f91f",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830011",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310011,
+				1
+			},
+			{
+				320011,
+				1
+			},
+			{
+				330011,
+				1
+			},
+			{
+				340011,
+				1
+			},
+			{
+				350011,
+				1
+			},
+			{
+				360011,
+				1
+			}
+		},
+		source = {}
+	},
+	[840011] = {
+		name = "864d139b7b3de5b6adc116e03ae536f9",
+		id = 840011,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "846f62a6df2588b072e2e4f6e88f780b",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840011",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410011,
+				1
+			},
+			{
+				420011,
+				1
+			},
+			{
+				430011,
+				1
+			},
+			{
+				440011,
+				1
+			},
+			{
+				450011,
+				1
+			},
+			{
+				460011,
+				1
+			}
+		},
+		source = {}
+	},
+	[850011] = {
+		name = "ebdbd174495aa9b35704bd16491aca35",
+		id = 850011,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "49343432137b57cb9e43c450cf8c1e76",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850011",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510011,
+				1
+			},
+			{
+				520011,
+				1
+			},
+			{
+				530011,
+				1
+			},
+			{
+				540011,
+				1
+			},
+			{
+				550011,
+				1
+			},
+			{
+				560011,
+				1
+			}
+		},
+		source = {}
+	},
+	[830012] = {
+		name = "88c9193f68160326ad232a1e894fe25c",
+		id = 830012,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "4a455503d7ce2490465323fc7559005f",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830012",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310012,
+				1
+			},
+			{
+				320012,
+				1
+			},
+			{
+				330012,
+				1
+			},
+			{
+				340012,
+				1
+			},
+			{
+				350012,
+				1
+			},
+			{
+				360012,
+				1
+			}
+		},
+		source = {}
+	},
+	[840012] = {
+		name = "fb49d208f7b7dcd2c24f0439dbd874db",
+		id = 840012,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "ed9e02e09a31e77d7182fd0f5d9f24be",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840012",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410012,
+				1
+			},
+			{
+				420012,
+				1
+			},
+			{
+				430012,
+				1
+			},
+			{
+				440012,
+				1
+			},
+			{
+				450012,
+				1
+			},
+			{
+				460012,
+				1
+			}
+		},
+		source = {}
+	},
+	[850012] = {
+		name = "c90afaa6a921a87cef90f08b34ddb355",
+		id = 850012,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "80c761bee4ad713e4fd3267cc9663ed4",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850012",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510012,
+				1
+			},
+			{
+				520012,
+				1
+			},
+			{
+				530012,
+				1
+			},
+			{
+				540012,
+				1
+			},
+			{
+				550012,
+				1
+			},
+			{
+				560012,
+				1
+			}
+		},
+		source = {}
+	},
+	[830013] = {
+		name = "efce45a9da8160de512a011973c77a77",
+		id = 830013,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "0283e7faf8cda5860c698d4820b1145d",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830013",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310013,
+				1
+			},
+			{
+				320013,
+				1
+			},
+			{
+				330013,
+				1
+			},
+			{
+				340013,
+				1
+			},
+			{
+				350013,
+				1
+			},
+			{
+				360013,
+				1
+			}
+		},
+		source = {}
+	},
+	[840013] = {
+		name = "08cc9bfa8fefcffbd2478e1dbb6f10e8",
+		id = 840013,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "ab0054df7309b1b19fbe9dbc62f5f1e0",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840013",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410013,
+				1
+			},
+			{
+				420013,
+				1
+			},
+			{
+				430013,
+				1
+			},
+			{
+				440013,
+				1
+			},
+			{
+				450013,
+				1
+			},
+			{
+				460013,
+				1
+			}
+		},
+		source = {}
+	},
+	[850013] = {
+		name = "e389827dd9a7734bfc42e6db7561a68e",
+		id = 850013,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "abd8ada1037f15f5c92f6cd3d8fa9322",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850013",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510013,
+				1
+			},
+			{
+				520013,
+				1
+			},
+			{
+				530013,
+				1
+			},
+			{
+				540013,
+				1
+			},
+			{
+				550013,
+				1
+			},
+			{
+				560013,
+				1
+			}
+		},
+		source = {}
+	},
+	[830014] = {
+		name = "d9f6c49dbe67bcacdd4c2c24b5c3eed8",
+		id = 830014,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "982cf8b75dc337e81a1e639d589f2c03",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830014",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310014,
+				1
+			},
+			{
+				320014,
+				1
+			},
+			{
+				330014,
+				1
+			},
+			{
+				340014,
+				1
+			},
+			{
+				350014,
+				1
+			},
+			{
+				360014,
+				1
+			}
+		},
+		source = {}
+	},
+	[840014] = {
+		name = "5c36e378bf8c5646ab3def07a8d477db",
+		id = 840014,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "c8d13aa20654caf22aab937b53bbb4c3",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840014",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410014,
+				1
+			},
+			{
+				420014,
+				1
+			},
+			{
+				430014,
+				1
+			},
+			{
+				440014,
+				1
+			},
+			{
+				450014,
+				1
+			},
+			{
+				460014,
+				1
+			}
+		},
+		source = {}
+	},
+	[850014] = {
+		name = "89a2070200ce8118e61ebc28ea411e19",
+		id = 850014,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "f40c366ea0438672b13a6ed155f3446b",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850014",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510014,
+				1
+			},
+			{
+				520014,
+				1
+			},
+			{
+				530014,
+				1
+			},
+			{
+				540014,
+				1
+			},
+			{
+				550014,
+				1
+			},
+			{
+				560014,
+				1
+			}
+		},
+		source = {}
+	},
+	[830015] = {
+		name = "52622ea2475b9b68a376965c3dfd3d50",
+		id = 830015,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "0c0c1f98f13d50f0bf7605d6618f93d1",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830015",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310015,
+				1
+			},
+			{
+				320015,
+				1
+			},
+			{
+				330015,
+				1
+			},
+			{
+				340015,
+				1
+			},
+			{
+				350015,
+				1
+			},
+			{
+				360015,
+				1
+			}
+		},
+		source = {}
+	},
+	[840015] = {
+		name = "7547da2dfd9247f627953274fdb4472e",
+		id = 840015,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "cd6c3005d3c210d482f17cdbbe80afe4",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840015",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410015,
+				1
+			},
+			{
+				420015,
+				1
+			},
+			{
+				430015,
+				1
+			},
+			{
+				440015,
+				1
+			},
+			{
+				450015,
+				1
+			},
+			{
+				460015,
+				1
+			}
+		},
+		source = {}
+	},
+	[850015] = {
+		name = "69b3551e5dbdad6d5db63e147ca31956",
+		id = 850015,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "4a071e5ff5155d16c044ceba072e8681",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850015",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510015,
+				1
+			},
+			{
+				520015,
+				1
+			},
+			{
+				530015,
+				1
+			},
+			{
+				540015,
+				1
+			},
+			{
+				550015,
+				1
+			},
+			{
+				560015,
+				1
+			}
+		},
+		source = {}
+	},
+	[830016] = {
+		name = "1678a4a1aab5e2310408957ed419c24f",
+		id = 830016,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "7509181d523b91e5dfd43582537d1a32",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830016",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310016,
+				1
+			},
+			{
+				320016,
+				1
+			},
+			{
+				330016,
+				1
+			},
+			{
+				340016,
+				1
+			},
+			{
+				350016,
+				1
+			},
+			{
+				360016,
+				1
+			}
+		},
+		source = {}
+	},
+	[840016] = {
+		name = "7b915274ce68215d89fb645f3840d331",
+		id = 840016,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "3593e4be72166718233e72a771a69452",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840016",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410016,
+				1
+			},
+			{
+				420016,
+				1
+			},
+			{
+				430016,
+				1
+			},
+			{
+				440016,
+				1
+			},
+			{
+				450016,
+				1
+			},
+			{
+				460016,
+				1
+			}
+		},
+		source = {}
+	},
+	[850016] = {
+		name = "3e80acb151f5fd46bf2a8ba65ef6c606",
+		id = 850016,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "1bd34955d69f52c40303bf3ae2c8a1aa",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850016",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510016,
+				1
+			},
+			{
+				520016,
+				1
+			},
+			{
+				530016,
+				1
+			},
+			{
+				540016,
+				1
+			},
+			{
+				550016,
+				1
+			},
+			{
+				560016,
+				1
+			}
+		},
+		source = {}
+	},
+	[830017] = {
+		name = "47d0339f02f023e3ec94a4148f5e5cb2",
+		id = 830017,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "6783fc7d707e642b48c9570d33ffa418",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830017",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310017,
+				1
+			},
+			{
+				320017,
+				1
+			},
+			{
+				330017,
+				1
+			},
+			{
+				340017,
+				1
+			},
+			{
+				350017,
+				1
+			},
+			{
+				360017,
+				1
+			}
+		},
+		source = {}
+	},
+	[840017] = {
+		name = "3166111f917cbf90dfd6f0f86e94de6d",
+		id = 840017,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "f093c4066b3e165444896a5ac6f75178",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840017",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410017,
+				1
+			},
+			{
+				420017,
+				1
+			},
+			{
+				430017,
+				1
+			},
+			{
+				440017,
+				1
+			},
+			{
+				450017,
+				1
+			},
+			{
+				460017,
+				1
+			}
+		},
+		source = {}
+	},
+	[850017] = {
+		name = "93e56e80c925bb6e5d721ca4fd6745e8",
+		id = 850017,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "1abe14907b2bd326163d084892993162",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850017",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510017,
+				1
+			},
+			{
+				520017,
+				1
+			},
+			{
+				530017,
+				1
+			},
+			{
+				540017,
+				1
+			},
+			{
+				550017,
+				1
+			},
+			{
+				560017,
+				1
+			}
+		},
+		source = {}
+	},
+	[830018] = {
+		name = "7294079b3f2db31c7493e940b653af38",
+		id = 830018,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "4bcdb9c56f716e7901a307a7934e5f13",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830018",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310018,
+				1
+			},
+			{
+				320018,
+				1
+			},
+			{
+				330018,
+				1
+			},
+			{
+				340018,
+				1
+			},
+			{
+				350018,
+				1
+			},
+			{
+				360018,
+				1
+			}
+		},
+		source = {}
+	},
+	[840018] = {
+		name = "abed8bf8bda7fc2a1bb9f7ed91b17d92",
+		id = 840018,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "3185f2d7abd48eda37e133002a65f62f",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840018",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410018,
+				1
+			},
+			{
+				420018,
+				1
+			},
+			{
+				430018,
+				1
+			},
+			{
+				440018,
+				1
+			},
+			{
+				450018,
+				1
+			},
+			{
+				460018,
+				1
+			}
+		},
+		source = {}
+	},
+	[850018] = {
+		name = "69c8b62fec89d63d30292fbed8d3a929",
+		id = 850018,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "10490121d26e844ec7096ae7ebbe5d11",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850018",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510018,
+				1
+			},
+			{
+				520018,
+				1
+			},
+			{
+				530018,
+				1
+			},
+			{
+				540018,
+				1
+			},
+			{
+				550018,
+				1
+			},
+			{
+				560018,
+				1
+			}
+		},
+		source = {}
+	},
+	[830019] = {
+		name = "bdef7a5158383601a9618d5a9f633de4",
+		id = 830019,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "d81667af18424b2bf4ad9d8175dbc84b",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830019",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310019,
+				1
+			},
+			{
+				320019,
+				1
+			},
+			{
+				330019,
+				1
+			},
+			{
+				340019,
+				1
+			},
+			{
+				350019,
+				1
+			},
+			{
+				360019,
+				1
+			}
+		},
+		source = {}
+	},
+	[840019] = {
+		name = "0bf10a65e40b37c90074cba72577449d",
+		id = 840019,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "601b92f8915ef7f26747cbc540f2750b",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840019",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410019,
+				1
+			},
+			{
+				420019,
+				1
+			},
+			{
+				430019,
+				1
+			},
+			{
+				440019,
+				1
+			},
+			{
+				450019,
+				1
+			},
+			{
+				460019,
+				1
+			}
+		},
+		source = {}
+	},
+	[850019] = {
+		name = "ba24b6b8bd9bfd8a0aa5586f08bc6244",
+		id = 850019,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "281fb289298028718723754b5e707f62",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850019",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510019,
+				1
+			},
+			{
+				520019,
+				1
+			},
+			{
+				530019,
+				1
+			},
+			{
+				540019,
+				1
+			},
+			{
+				550019,
+				1
+			},
+			{
+				560019,
+				1
+			}
+		},
+		source = {}
+	},
+	[830020] = {
+		name = "1cf7a594c114a4d064b7e74d9e2bf73a",
+		id = 830020,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "9d8d2c622e94c9767cd0702e946ea19a",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830020",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310020,
+				1
+			},
+			{
+				320020,
+				1
+			},
+			{
+				330020,
+				1
+			},
+			{
+				340020,
+				1
+			},
+			{
+				350020,
+				1
+			},
+			{
+				360020,
+				1
+			}
+		},
+		source = {}
+	},
+	[840020] = {
+		name = "9ab8dd1fd5708590394117c19a889680",
+		id = 840020,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "3512e70cae633799b38f4e743d2c4dbc",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840020",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410020,
+				1
+			},
+			{
+				420020,
+				1
+			},
+			{
+				430020,
+				1
+			},
+			{
+				440020,
+				1
+			},
+			{
+				450020,
+				1
+			},
+			{
+				460020,
+				1
+			}
+		},
+		source = {}
+	},
+	[850020] = {
+		name = "31cbf4ccc8b47204c04644344ceb918b",
+		id = 850020,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "6d9052233debd5c5eac2c5fb922d5e40",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850020",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510020,
+				1
+			},
+			{
+				520020,
+				1
+			},
+			{
+				530020,
+				1
+			},
+			{
+				540020,
+				1
+			},
+			{
+				550020,
+				1
+			},
+			{
+				560020,
+				1
+			}
+		},
+		source = {}
+	},
+	[830021] = {
+		name = "3f655e346f0100e9397768a82ea68635",
+		id = 830021,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "2983d163307868b1c5be69231f998aa5",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830021",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310021,
+				1
+			},
+			{
+				320021,
+				1
+			},
+			{
+				330021,
+				1
+			},
+			{
+				340021,
+				1
+			},
+			{
+				350021,
+				1
+			},
+			{
+				360021,
+				1
+			}
+		},
+		source = {}
+	},
+	[840021] = {
+		name = "663b3a26d3e06738b42b8da15d39b30a",
+		id = 840021,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "3cc7ac0544b88fa9ed994e1b09fd0695",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840021",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410021,
+				1
+			},
+			{
+				420021,
+				1
+			},
+			{
+				430021,
+				1
+			},
+			{
+				440021,
+				1
+			},
+			{
+				450021,
+				1
+			},
+			{
+				460021,
+				1
+			}
+		},
+		source = {}
+	},
+	[850021] = {
+		name = "ddbd97899d1b79d349c78bc4ea562910",
+		id = 850021,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "372bfd10bc5af305c2cda03c10efe312",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850021",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510021,
+				1
+			},
+			{
+				520021,
+				1
+			},
+			{
+				530021,
+				1
+			},
+			{
+				540021,
+				1
+			},
+			{
+				550021,
+				1
+			},
+			{
+				560021,
+				1
+			}
+		},
+		source = {}
+	},
+	[830022] = {
+		name = "e19ac083e66757d3827c2f2ed5cc4b51",
+		id = 830022,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "e5ed7570b8bdd5d831b2997be8dea28d",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830022",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310022,
+				1
+			},
+			{
+				320022,
+				1
+			},
+			{
+				330022,
+				1
+			},
+			{
+				340022,
+				1
+			},
+			{
+				350022,
+				1
+			},
+			{
+				360022,
+				1
+			}
+		},
+		source = {}
+	},
+	[840022] = {
+		name = "5f8b789bc3b449e5b5f5cfb9fdc4e943",
+		id = 840022,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "90e824a795a8b6e0f1dffe75fd1f625e",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840022",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410022,
+				1
+			},
+			{
+				420022,
+				1
+			},
+			{
+				430022,
+				1
+			},
+			{
+				440022,
+				1
+			},
+			{
+				450022,
+				1
+			},
+			{
+				460022,
+				1
+			}
+		},
+		source = {}
+	},
+	[850022] = {
+		name = "5804c7ea0c833fc32f9b61d96b8fc45a",
+		id = 850022,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "068a51f9d3d6463aa19b88147a0e6c43",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850022",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510022,
+				1
+			},
+			{
+				520022,
+				1
+			},
+			{
+				530022,
+				1
+			},
+			{
+				540022,
+				1
+			},
+			{
+				550022,
+				1
+			},
+			{
+				560022,
+				1
+			}
+		},
+		source = {}
+	},
+	[830023] = {
+		name = "e64830ae0ab00a55b7028bd0544c710a",
+		id = 830023,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "fbef221a34653f05ef9d64156fb2f897",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830023",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310023,
+				1
+			},
+			{
+				320023,
+				1
+			},
+			{
+				330023,
+				1
+			},
+			{
+				340023,
+				1
+			},
+			{
+				350023,
+				1
+			},
+			{
+				360023,
+				1
+			}
+		},
+		source = {}
+	},
+	[840023] = {
+		name = "946a3b492c98b33fcf25811f15e1b453",
+		id = 840023,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "593e4164eb27dbb6badcefb6baf86a96",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840023",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410023,
+				1
+			},
+			{
+				420023,
+				1
+			},
+			{
+				430023,
+				1
+			},
+			{
+				440023,
+				1
+			},
+			{
+				450023,
+				1
+			},
+			{
+				460023,
+				1
+			}
+		},
+		source = {}
+	},
+	[850023] = {
+		name = "857ea9019269de32f56cdc00e90aa89d",
+		id = 850023,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "d6f85ba33e0f4fea8efa084c4cdd282b",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850023",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510023,
+				1
+			},
+			{
+				520023,
+				1
+			},
+			{
+				530023,
+				1
+			},
+			{
+				540023,
+				1
+			},
+			{
+				550023,
+				1
+			},
+			{
+				560023,
+				1
+			}
+		},
+		source = {}
+	},
+	[830024] = {
+		name = "9fe255b2ccf59bda79d1cd502091002d",
+		id = 830024,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "061f896dd0e1a1d78ce433853d70109b",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830024",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310024,
+				1
+			},
+			{
+				320024,
+				1
+			},
+			{
+				330024,
+				1
+			},
+			{
+				340024,
+				1
+			},
+			{
+				350024,
+				1
+			},
+			{
+				360024,
+				1
+			}
+		},
+		source = {}
+	},
+	[840024] = {
+		name = "82bacae843fc3359714b2d800b6358e7",
+		id = 840024,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "e0f854594fded26e7bba51c8725e122e",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840024",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410024,
+				1
+			},
+			{
+				420024,
+				1
+			},
+			{
+				430024,
+				1
+			},
+			{
+				440024,
+				1
+			},
+			{
+				450024,
+				1
+			},
+			{
+				460024,
+				1
+			}
+		},
+		source = {}
+	},
+	[850024] = {
+		name = "75fb8162a70ce43771b7bedc3326ec18",
+		id = 850024,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "cab472c2a5cf28b73a0e47ec849fa4be",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850024",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510024,
+				1
+			},
+			{
+				520024,
+				1
+			},
+			{
+				530024,
+				1
+			},
+			{
+				540024,
+				1
+			},
+			{
+				550024,
+				1
+			},
+			{
+				560024,
+				1
+			}
+		},
+		source = {}
+	},
+	[830025] = {
+		name = "79b96eae8404dc1950693ef386f6dd4c",
+		id = 830025,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "96edaa9e23743a8fc40bec39dc8a7a0d",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830025",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310025,
+				1
+			},
+			{
+				320025,
+				1
+			},
+			{
+				330025,
+				1
+			},
+			{
+				340025,
+				1
+			},
+			{
+				350025,
+				1
+			},
+			{
+				360025,
+				1
+			}
+		},
+		source = {}
+	},
+	[840025] = {
+		name = "a3c1b42a3dc37ea41b40fc69849d9d12",
+		id = 840025,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "8480901e97d309e8af4fdc8d443e9a30",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840025",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410025,
+				1
+			},
+			{
+				420025,
+				1
+			},
+			{
+				430025,
+				1
+			},
+			{
+				440025,
+				1
+			},
+			{
+				450025,
+				1
+			},
+			{
+				460025,
+				1
+			}
+		},
+		source = {}
+	},
+	[850025] = {
+		name = "d3bda40c17bb4d3d76d7aaf3cc8f1668",
+		id = 850025,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "cce016f620264f68ae5a843a0d436a23",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850025",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510025,
+				1
+			},
+			{
+				520025,
+				1
+			},
+			{
+				530025,
+				1
+			},
+			{
+				540025,
+				1
+			},
+			{
+				550025,
+				1
+			},
+			{
+				560025,
+				1
+			}
+		},
+		source = {}
+	},
+	[830026] = {
+		name = "cde4fdb2a62d6d48dff382724510333a",
+		id = 830026,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "dd6a445095795014fdd208be52531ace",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830026",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310026,
+				1
+			},
+			{
+				320026,
+				1
+			},
+			{
+				330026,
+				1
+			},
+			{
+				340026,
+				1
+			},
+			{
+				350026,
+				1
+			},
+			{
+				360026,
+				1
+			}
+		},
+		source = {}
+	},
+	[840026] = {
+		name = "abae44f0681b640c23d132a6d5bb7d4e",
+		id = 840026,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "11740b5a4f0f175ec876cd24334f1ff7",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840026",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410026,
+				1
+			},
+			{
+				420026,
+				1
+			},
+			{
+				430026,
+				1
+			},
+			{
+				440026,
+				1
+			},
+			{
+				450026,
+				1
+			},
+			{
+				460026,
+				1
+			}
+		},
+		source = {}
+	},
+	[850026] = {
+		name = "e21c56619a349072b310437e0c43c550",
+		id = 850026,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "32fe69b5e0cdf8f26190eb60f3b4e1ab",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850026",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510026,
+				1
+			},
+			{
+				520026,
+				1
+			},
+			{
+				530026,
+				1
+			},
+			{
+				540026,
+				1
+			},
+			{
+				550026,
+				1
+			},
+			{
+				560026,
+				1
+			}
+		},
+		source = {}
+	},
+	[830027] = {
+		name = "995a9d2ee28078f120dbae2eb39d10a1",
+		id = 830027,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "dc8fbc4235e9658a725615f1ae150f78",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830027",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310027,
+				1
+			},
+			{
+				320027,
+				1
+			},
+			{
+				330027,
+				1
+			},
+			{
+				340027,
+				1
+			},
+			{
+				350027,
+				1
+			},
+			{
+				360027,
+				1
+			}
+		},
+		source = {}
+	},
+	[840027] = {
+		name = "626934e1ea693d468ffdb1ce6d0d796d",
+		id = 840027,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "475c61b89e1ef205e48222e0bb3d9c97",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840027",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410027,
+				1
+			},
+			{
+				420027,
+				1
+			},
+			{
+				430027,
+				1
+			},
+			{
+				440027,
+				1
+			},
+			{
+				450027,
+				1
+			},
+			{
+				460027,
+				1
+			}
+		},
+		source = {}
+	},
+	[850027] = {
+		name = "9887bea32ddfdb8cf139aa28e425d9f1",
+		id = 850027,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "ecce7b1155f91838fd71ebbf174cdede",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850027",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510027,
+				1
+			},
+			{
+				520027,
+				1
+			},
+			{
+				530027,
+				1
+			},
+			{
+				540027,
+				1
+			},
+			{
+				550027,
+				1
+			},
+			{
+				560027,
+				1
+			}
+		},
+		source = {}
+	},
+	[830028] = {
+		name = "fa5a92b1b7cc78ee4ccd60a4f0a60068",
+		id = 830028,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "c3e4bf1b77e17a6c6d13757a3ec55d9e",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830028",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310028,
+				1
+			},
+			{
+				320028,
+				1
+			},
+			{
+				330028,
+				1
+			},
+			{
+				340028,
+				1
+			},
+			{
+				350028,
+				1
+			},
+			{
+				360028,
+				1
+			}
+		},
+		source = {}
+	},
+	[840028] = {
+		name = "24944fa899484eaa660cd33a138b93b4",
+		id = 840028,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "0ec43929c2dc805f56be88643b1ab1d6",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840028",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410028,
+				1
+			},
+			{
+				420028,
+				1
+			},
+			{
+				430028,
+				1
+			},
+			{
+				440028,
+				1
+			},
+			{
+				450028,
+				1
+			},
+			{
+				460028,
+				1
+			}
+		},
+		source = {}
+	},
+	[850028] = {
+		name = "51333792b5d1dfd99932d06956e6aba3",
+		id = 850028,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "264e6010381e52b35cab96e42e77f84c",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850028",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510028,
+				1
+			},
+			{
+				520028,
+				1
+			},
+			{
+				530028,
+				1
+			},
+			{
+				540028,
+				1
+			},
+			{
+				550028,
+				1
+			},
+			{
+				560028,
+				1
+			}
+		},
+		source = {}
+	},
+	[830029] = {
+		name = "71e81ba5ce73f8d408a47873cc8e72a4",
+		id = 830029,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "c51a8067310288fb37cc86ce3ea7106b",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830029",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310029,
+				1
+			},
+			{
+				320029,
+				1
+			},
+			{
+				330029,
+				1
+			},
+			{
+				340029,
+				1
+			},
+			{
+				350029,
+				1
+			},
+			{
+				360029,
+				1
+			}
+		},
+		source = {}
+	},
+	[840029] = {
+		name = "6b46eed676702cc502402993297d51ef",
+		id = 840029,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "f7df2b79f0b78c2787a7781d88feb4bb",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840029",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410029,
+				1
+			},
+			{
+				420029,
+				1
+			},
+			{
+				430029,
+				1
+			},
+			{
+				440029,
+				1
+			},
+			{
+				450029,
+				1
+			},
+			{
+				460029,
+				1
+			}
+		},
+		source = {}
+	},
+	[850029] = {
+		name = "e764d4584767ad61cf63dc9848481b7f",
+		id = 850029,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "3fe836021b4f4a4ddd599ba484933e36",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850029",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510029,
+				1
+			},
+			{
+				520029,
+				1
+			},
+			{
+				530029,
+				1
+			},
+			{
+				540029,
+				1
+			},
+			{
+				550029,
+				1
+			},
+			{
+				560029,
+				1
+			}
+		},
+		source = {}
+	},
+	[830030] = {
+		name = "dc988d21f98661d6d9a8b20110767f8f",
+		id = 830030,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "d796f890072bb5d3739e71b70f20a3bf",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830030",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310030,
+				1
+			},
+			{
+				320030,
+				1
+			},
+			{
+				330030,
+				1
+			},
+			{
+				340030,
+				1
+			},
+			{
+				350030,
+				1
+			},
+			{
+				360030,
+				1
+			}
+		},
+		source = {}
+	},
+	[840030] = {
+		name = "0fc20f57b713714ad8bad56f93970805",
+		id = 840030,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "067cb43284ad621b73675a6747314c0c",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840030",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410030,
+				1
+			},
+			{
+				420030,
+				1
+			},
+			{
+				430030,
+				1
+			},
+			{
+				440030,
+				1
+			},
+			{
+				450030,
+				1
+			},
+			{
+				460030,
+				1
+			}
+		},
+		source = {}
+	},
+	[850030] = {
+		name = "f72b4fbcf9a7eb0cf2c8bd22452adb2f",
+		id = 850030,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "5c3c277cc834b3b60b4ffaef03e617fb",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850030",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510030,
+				1
+			},
+			{
+				520030,
+				1
+			},
+			{
+				530030,
+				1
+			},
+			{
+				540030,
+				1
+			},
+			{
+				550030,
+				1
+			},
+			{
+				560030,
+				1
+			}
+		},
+		source = {}
+	},
+	[830031] = {
+		name = "44b1e6b692dac4e40113aee179cf14a1",
+		id = 830031,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "d25f0f7af9c85bdc9bde692264c3013f",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830031",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310031,
+				1
+			},
+			{
+				320031,
+				1
+			},
+			{
+				330031,
+				1
+			},
+			{
+				340031,
+				1
+			},
+			{
+				350031,
+				1
+			},
+			{
+				360031,
+				1
+			}
+		},
+		source = {}
+	},
+	[840031] = {
+		name = "07a8f4df41bdb010fba9e576e660ef18",
+		id = 840031,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "7787dda88c655cff3c6f5e3350be68fe",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840031",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410031,
+				1
+			},
+			{
+				420031,
+				1
+			},
+			{
+				430031,
+				1
+			},
+			{
+				440031,
+				1
+			},
+			{
+				450031,
+				1
+			},
+			{
+				460031,
+				1
+			}
+		},
+		source = {}
+	},
+	[850031] = {
+		name = "0022dfa0186025d4232e5918c46a844d",
+		id = 850031,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "606260d95683ed710c3ad283f64ec87a",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850031",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510031,
+				1
+			},
+			{
+				520031,
+				1
+			},
+			{
+				530031,
+				1
+			},
+			{
+				540031,
+				1
+			},
+			{
+				550031,
+				1
+			},
+			{
+				560031,
+				1
+			}
+		},
+		source = {}
+	},
+	[830032] = {
+		name = "9ce06937a379fd01755a2877e166c2d1",
+		id = 830032,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "04ced43c1dd9008b342d19532a6e7899",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830032",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310032,
+				1
+			},
+			{
+				320032,
+				1
+			},
+			{
+				330032,
+				1
+			},
+			{
+				340032,
+				1
+			},
+			{
+				350032,
+				1
+			},
+			{
+				360032,
+				1
+			}
+		},
+		source = {}
+	},
+	[840032] = {
+		name = "2d220f0931e2ed96504f4da0880471f1",
+		id = 840032,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "c02a7d54dcc4c315b05fd6cab04eaedd",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840032",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410032,
+				1
+			},
+			{
+				420032,
+				1
+			},
+			{
+				430032,
+				1
+			},
+			{
+				440032,
+				1
+			},
+			{
+				450032,
+				1
+			},
+			{
+				460032,
+				1
+			}
+		},
+		source = {}
+	},
+	[850032] = {
+		name = "7f9075e3f00573a6b5cdbbd4907be124",
+		id = 850032,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "c16812beb6a82a5b946c9e960fe1ebc7",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850032",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510032,
+				1
+			},
+			{
+				520032,
+				1
+			},
+			{
+				530032,
+				1
+			},
+			{
+				540032,
+				1
+			},
+			{
+				550032,
+				1
+			},
+			{
+				560032,
+				1
+			}
+		},
+		source = {}
+	},
+	[830033] = {
+		name = "462e7bc92e0d346e33f75026eb69ccd8",
+		id = 830033,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "9e7d8093208aeedee47a712422da2458",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830033",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310033,
+				1
+			},
+			{
+				320033,
+				1
+			},
+			{
+				330033,
+				1
+			},
+			{
+				340033,
+				1
+			},
+			{
+				350033,
+				1
+			},
+			{
+				360033,
+				1
+			}
+		},
+		source = {}
+	},
+	[840033] = {
+		name = "d6a25f53c7d3a31f42876af729af704a",
+		id = 840033,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "becfbfa9c22509527ab035d6466624c1",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840033",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410033,
+				1
+			},
+			{
+				420033,
+				1
+			},
+			{
+				430033,
+				1
+			},
+			{
+				440033,
+				1
+			},
+			{
+				450033,
+				1
+			},
+			{
+				460033,
+				1
+			}
+		},
+		source = {}
+	},
+	[850033] = {
+		name = "535837024bb38b4942b493d73c358eac",
+		id = 850033,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "6682e277192eeacfec878ab6fe2715da",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850033",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510033,
+				1
+			},
+			{
+				520033,
+				1
+			},
+			{
+				530033,
+				1
+			},
+			{
+				540033,
+				1
+			},
+			{
+				550033,
+				1
+			},
+			{
+				560033,
+				1
+			}
+		},
+		source = {}
+	},
+	[830034] = {
+		name = "5bc74b097160e6fbbccad0bcf99c7104",
+		id = 830034,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "b0097a8b4fbae58c20245f5eef54a8aa",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830034",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310034,
+				1
+			},
+			{
+				320034,
+				1
+			},
+			{
+				330034,
+				1
+			},
+			{
+				340034,
+				1
+			},
+			{
+				350034,
+				1
+			},
+			{
+				360034,
+				1
+			}
+		},
+		source = {}
+	},
+	[840034] = {
+		name = "9883f616194043a5bf57473615701450",
+		id = 840034,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "377788cdbaacddb644c7a2430f7ccb9a",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840034",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410034,
+				1
+			},
+			{
+				420034,
+				1
+			},
+			{
+				430034,
+				1
+			},
+			{
+				440034,
+				1
+			},
+			{
+				450034,
+				1
+			},
+			{
+				460034,
+				1
+			}
+		},
+		source = {}
+	},
+	[850034] = {
+		name = "1a66f7ecab90fd11e97a12ee87bf79c8",
+		id = 850034,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "414ef5d3537a2868b7fba6baf3c986b1",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850034",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510034,
+				1
+			},
+			{
+				520034,
+				1
+			},
+			{
+				530034,
+				1
+			},
+			{
+				540034,
+				1
+			},
+			{
+				550034,
+				1
+			},
+			{
+				560034,
+				1
+			}
+		},
+		source = {}
+	},
+	[830035] = {
+		name = "acce54b0fc9ab9e93a04c975843ae142",
+		id = 830035,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "894197d97d16d587625ae3c71cf3e40a",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830035",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310035,
+				1
+			},
+			{
+				320035,
+				1
+			},
+			{
+				330035,
+				1
+			},
+			{
+				340035,
+				1
+			},
+			{
+				350035,
+				1
+			},
+			{
+				360035,
+				1
+			}
+		},
+		source = {}
+	},
+	[840035] = {
+		name = "7d7b92c351b6ef59dc8505f29bd3cec2",
+		id = 840035,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "b14b587e3d6952201d3e607551d1d5a5",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840035",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410035,
+				1
+			},
+			{
+				420035,
+				1
+			},
+			{
+				430035,
+				1
+			},
+			{
+				440035,
+				1
+			},
+			{
+				450035,
+				1
+			},
+			{
+				460035,
+				1
+			}
+		},
+		source = {}
+	},
+	[850035] = {
+		name = "90cc110c91e16d454577aa6849dbe68a",
+		id = 850035,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "0f01076c022030134ac982fb1460430a",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850035",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510035,
+				1
+			},
+			{
+				520035,
+				1
+			},
+			{
+				530035,
+				1
+			},
+			{
+				540035,
+				1
+			},
+			{
+				550035,
+				1
+			},
+			{
+				560035,
+				1
+			}
+		},
+		source = {}
+	},
+	[830036] = {
+		name = "5aef192bce099b0795a3ae48287b0c4c",
+		id = 830036,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "3e071a34ed6c125e5e13ff7def73739a",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830036",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310036,
+				1
+			},
+			{
+				320036,
+				1
+			},
+			{
+				330036,
+				1
+			},
+			{
+				340036,
+				1
+			},
+			{
+				350036,
+				1
+			},
+			{
+				360036,
+				1
+			}
+		},
+		source = {}
+	},
+	[840036] = {
+		name = "7ae93244de746623ce3bb5817d0dbbe3",
+		id = 840036,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "ce65c478f85615926f68bd361d7c14fb",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840036",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410036,
+				1
+			},
+			{
+				420036,
+				1
+			},
+			{
+				430036,
+				1
+			},
+			{
+				440036,
+				1
+			},
+			{
+				450036,
+				1
+			},
+			{
+				460036,
+				1
+			}
+		},
+		source = {}
+	},
+	[850036] = {
+		name = "18368db61a03cefa4f9cc4ff6ec0c219",
+		id = 850036,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "5743d32b88264e7d6ce234e64c53d7e2",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850036",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510036,
+				1
+			},
+			{
+				520036,
+				1
+			},
+			{
+				530036,
+				1
+			},
+			{
+				540036,
+				1
+			},
+			{
+				550036,
+				1
+			},
+			{
+				560036,
+				1
+			}
+		},
+		source = {}
+	},
+	[830037] = {
+		name = "ff91e1f162778b42751ae2493b8f279e",
+		id = 830037,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "2efdadd093571a73aadb11ba52e1bc3c",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830037",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310037,
+				1
+			},
+			{
+				320037,
+				1
+			},
+			{
+				330037,
+				1
+			},
+			{
+				340037,
+				1
+			},
+			{
+				350037,
+				1
+			},
+			{
+				360037,
+				1
+			}
+		},
+		source = {}
+	},
+	[840037] = {
+		name = "7c1be02a9315efea613240156382c490",
+		id = 840037,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "71d853b15ac0d65703d61860f453ff4d",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840037",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410037,
+				1
+			},
+			{
+				420037,
+				1
+			},
+			{
+				430037,
+				1
+			},
+			{
+				440037,
+				1
+			},
+			{
+				450037,
+				1
+			},
+			{
+				460037,
+				1
+			}
+		},
+		source = {}
+	},
+	[850037] = {
+		name = "83a6df42dcc6c797a64bffaa6e978440",
+		id = 850037,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "2043804b05763238a2eb9afd71dd71c7",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850037",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510037,
+				1
+			},
+			{
+				520037,
+				1
+			},
+			{
+				530037,
+				1
+			},
+			{
+				540037,
+				1
+			},
+			{
+				550037,
+				1
+			},
+			{
+				560037,
+				1
+			}
+		},
+		source = {}
+	},
+	[830038] = {
+		name = "0789ae9094df3a48ef0a7a95e77a2800",
+		id = 830038,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "010b10784943a336182e2bda9a950e69",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830038",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310038,
+				1
+			},
+			{
+				320038,
+				1
+			},
+			{
+				330038,
+				1
+			},
+			{
+				340038,
+				1
+			},
+			{
+				350038,
+				1
+			},
+			{
+				360038,
+				1
+			}
+		},
+		source = {}
+	},
+	[840038] = {
+		name = "c859fc1cb4db37e0d735a0a0a6543306",
+		id = 840038,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "6028321548258aca218b86133ed8c13e",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840038",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410038,
+				1
+			},
+			{
+				420038,
+				1
+			},
+			{
+				430038,
+				1
+			},
+			{
+				440038,
+				1
+			},
+			{
+				450038,
+				1
+			},
+			{
+				460038,
+				1
+			}
+		},
+		source = {}
+	},
+	[850038] = {
+		name = "f2eaf84ec8e52f307162b27a0d1fe2ec",
+		id = 850038,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "4485c1467534129e9fcedce7abf65707",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850038",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510038,
+				1
+			},
+			{
+				520038,
+				1
+			},
+			{
+				530038,
+				1
+			},
+			{
+				540038,
+				1
+			},
+			{
+				550038,
+				1
+			},
+			{
+				560038,
+				1
+			}
+		},
+		source = {}
+	},
+	[830039] = {
+		name = "d188921ea913c16b91c29c4c9b30fa63",
+		id = 830039,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "af0e942d9d6cec2d3e0eb212fd20510d",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830039",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310039,
+				1
+			},
+			{
+				320039,
+				1
+			},
+			{
+				330039,
+				1
+			},
+			{
+				340039,
+				1
+			},
+			{
+				350039,
+				1
+			},
+			{
+				360039,
+				1
+			}
+		},
+		source = {}
+	},
+	[840039] = {
+		name = "400f4890d29e67a9a84debde927e2256",
+		id = 840039,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "7fe1e25065c7d8c09465014591ef30f6",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840039",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410039,
+				1
+			},
+			{
+				420039,
+				1
+			},
+			{
+				430039,
+				1
+			},
+			{
+				440039,
+				1
+			},
+			{
+				450039,
+				1
+			},
+			{
+				460039,
+				1
+			}
+		},
+		source = {}
+	},
+	[850039] = {
+		name = "9ffeb2af255f43351499c5f90c3f9c9b",
+		id = 850039,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "88c9126d8145933c8e2689cb8b47fe32",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850039",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510039,
+				1
+			},
+			{
+				520039,
+				1
+			},
+			{
+				530039,
+				1
+			},
+			{
+				540039,
+				1
+			},
+			{
+				550039,
+				1
+			},
+			{
+				560039,
+				1
+			}
+		},
+		source = {}
+	},
+	[830040] = {
+		name = "0061998cefa839589ec7dc9336cf3586",
+		id = 830040,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "80ba174d5b944bbd8d5f56ee20e69ddb",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830040",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310040,
+				1
+			},
+			{
+				320040,
+				1
+			},
+			{
+				330040,
+				1
+			},
+			{
+				340040,
+				1
+			},
+			{
+				350040,
+				1
+			},
+			{
+				360040,
+				1
+			}
+		},
+		source = {}
+	},
+	[840040] = {
+		name = "ba4d3cf7f14662c8ce6ab32647c49f2b",
+		id = 840040,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "8fb688046369ed5e465b92ebc9f3ab9d",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840040",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410040,
+				1
+			},
+			{
+				420040,
+				1
+			},
+			{
+				430040,
+				1
+			},
+			{
+				440040,
+				1
+			},
+			{
+				450040,
+				1
+			},
+			{
+				460040,
+				1
+			}
+		},
+		source = {}
+	},
+	[850040] = {
+		name = "62c7fcc1cae621bb2edcd0012c3f962f",
+		id = 850040,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "e085c10062414e6d1c233c732349f03d",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850040",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510040,
+				1
+			},
+			{
+				520040,
+				1
+			},
+			{
+				530040,
+				1
+			},
+			{
+				540040,
+				1
+			},
+			{
+				550040,
+				1
+			},
+			{
+				560040,
+				1
+			}
+		},
+		source = {}
+	},
+	[830041] = {
+		name = "b34ace1f067da8ea0421e0aa7e75721d",
+		id = 830041,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "0d38b8a0f22751a57c13716b5c50b71f",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830041",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310041,
+				1
+			},
+			{
+				320041,
+				1
+			},
+			{
+				330041,
+				1
+			},
+			{
+				340041,
+				1
+			},
+			{
+				350041,
+				1
+			},
+			{
+				360041,
+				1
+			}
+		},
+		source = {}
+	},
+	[840041] = {
+		name = "b894366f5cfd77203c39773577d8fc02",
+		id = 840041,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "7e60bcd72b6a2bf774f55933957a193b",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840041",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410041,
+				1
+			},
+			{
+				420041,
+				1
+			},
+			{
+				430041,
+				1
+			},
+			{
+				440041,
+				1
+			},
+			{
+				450041,
+				1
+			},
+			{
+				460041,
+				1
+			}
+		},
+		source = {}
+	},
+	[850041] = {
+		name = "60272fe9bd8fe4da6f9fa906167f5ec8",
+		id = 850041,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "8c39c240d93de5470b9fcc3dafeb3a69",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850041",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510041,
+				1
+			},
+			{
+				520041,
+				1
+			},
+			{
+				530041,
+				1
+			},
+			{
+				540041,
+				1
+			},
+			{
+				550041,
+				1
+			},
+			{
+				560041,
+				1
+			}
+		},
+		source = {}
+	},
+	[830042] = {
+		name = "7df4feb889103cee39e12bfb8b65806f",
+		id = 830042,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "2de33a7080dff3be8d4723253c793fdf",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830042",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310042,
+				1
+			},
+			{
+				320042,
+				1
+			},
+			{
+				330042,
+				1
+			},
+			{
+				340042,
+				1
+			},
+			{
+				350042,
+				1
+			},
+			{
+				360042,
+				1
+			}
+		},
+		source = {}
+	},
+	[840042] = {
+		name = "d7a3b02f790cb012fefbd04730e39467",
+		id = 840042,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "502d40f9f639914019da20da2299d8f3",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840042",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410042,
+				1
+			},
+			{
+				420042,
+				1
+			},
+			{
+				430042,
+				1
+			},
+			{
+				440042,
+				1
+			},
+			{
+				450042,
+				1
+			},
+			{
+				460042,
+				1
+			}
+		},
+		source = {}
+	},
+	[850042] = {
+		name = "ed4ec01ecb8cf5bd931a8db74e2d0715",
+		id = 850042,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "bc9e0937f0a3f260993f8b13d4b52bde",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850042",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510042,
+				1
+			},
+			{
+				520042,
+				1
+			},
+			{
+				530042,
+				1
+			},
+			{
+				540042,
+				1
+			},
+			{
+				550042,
+				1
+			},
+			{
+				560042,
+				1
+			}
+		},
+		source = {}
+	},
+	[830043] = {
+		name = "44752877dd333b255f4d614d38ee72cb",
+		id = 830043,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "42cd02bba57a47b51020bc4ce2ce1f99",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830043",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310043,
+				1
+			},
+			{
+				320043,
+				1
+			},
+			{
+				330043,
+				1
+			},
+			{
+				340043,
+				1
+			},
+			{
+				350043,
+				1
+			},
+			{
+				360043,
+				1
+			}
+		},
+		source = {}
+	},
+	[840043] = {
+		name = "b9086d0b5d2015dbaf149f010e74b41d",
+		id = 840043,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "603cedcfe0464029e22054404faf1ea7",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840043",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410043,
+				1
+			},
+			{
+				420043,
+				1
+			},
+			{
+				430043,
+				1
+			},
+			{
+				440043,
+				1
+			},
+			{
+				450043,
+				1
+			},
+			{
+				460043,
+				1
+			}
+		},
+		source = {}
+	},
+	[850043] = {
+		name = "0c94883611f72fd5d99beb4a087379db",
+		id = 850043,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "3c235a10c0540bba87d63a9d6ab87ec3",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850043",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510043,
+				1
+			},
+			{
+				520043,
+				1
+			},
+			{
+				530043,
+				1
+			},
+			{
+				540043,
+				1
+			},
+			{
+				550043,
+				1
+			},
+			{
+				560043,
+				1
+			}
+		},
+		source = {}
+	},
+	[830044] = {
+		name = "2712410fd6a6233b749c0bfe4186bdf7",
+		id = 830044,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "d835e37a5922cfa7aa8cf18d54d4757f",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830044",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310044,
+				1
+			},
+			{
+				320044,
+				1
+			},
+			{
+				330044,
+				1
+			},
+			{
+				340044,
+				1
+			},
+			{
+				350044,
+				1
+			},
+			{
+				360044,
+				1
+			}
+		},
+		source = {}
+	},
+	[840044] = {
+		name = "3b87f988c55d818b89ca987af928896c",
+		id = 840044,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "6d6f3b18b3d2f775281463ce94a3e495",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840044",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410044,
+				1
+			},
+			{
+				420044,
+				1
+			},
+			{
+				430044,
+				1
+			},
+			{
+				440044,
+				1
+			},
+			{
+				450044,
+				1
+			},
+			{
+				460044,
+				1
+			}
+		},
+		source = {}
+	},
+	[850044] = {
+		name = "d77eca0a26dd82e6788b1979a1bfd36c",
+		id = 850044,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "09f6f96f0feee82d7383844e459afa1e",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850044",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510044,
+				1
+			},
+			{
+				520044,
+				1
+			},
+			{
+				530044,
+				1
+			},
+			{
+				540044,
+				1
+			},
+			{
+				550044,
+				1
+			},
+			{
+				560044,
+				1
+			}
+		},
+		source = {}
+	},
+	[830045] = {
+		name = "03e1e689b98523f82fafbb3942c0813e",
+		id = 830045,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "3252145e316204835ed791db5cbe3022",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830045",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310045,
+				1
+			},
+			{
+				320045,
+				1
+			},
+			{
+				330045,
+				1
+			},
+			{
+				340045,
+				1
+			},
+			{
+				350045,
+				1
+			},
+			{
+				360045,
+				1
+			}
+		},
+		source = {}
+	},
+	[840045] = {
+		name = "68f885182aa35d4c7f6b5400ca387e5e",
+		id = 840045,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "8dffc2de49cfe3a69d41a3a4dbaa9319",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840045",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410045,
+				1
+			},
+			{
+				420045,
+				1
+			},
+			{
+				430045,
+				1
+			},
+			{
+				440045,
+				1
+			},
+			{
+				450045,
+				1
+			},
+			{
+				460045,
+				1
+			}
+		},
+		source = {}
+	},
+	[850045] = {
+		name = "a416fd0fe54ca0e19c9cdc8b926ff8e6",
+		id = 850045,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "c32af4f28d8d42dc102dcdebb6fc27b7",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850045",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510045,
+				1
+			},
+			{
+				520045,
+				1
+			},
+			{
+				530045,
+				1
+			},
+			{
+				540045,
+				1
+			},
+			{
+				550045,
+				1
+			},
+			{
+				560045,
+				1
+			}
+		},
+		source = {}
+	},
+	[830046] = {
+		name = "1ee93239ba09776403736120e19f56ef",
+		id = 830046,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "5a054e3ad7b1274f388255b231b67180",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830046",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310046,
+				1
+			},
+			{
+				320046,
+				1
+			},
+			{
+				330046,
+				1
+			},
+			{
+				340046,
+				1
+			},
+			{
+				350046,
+				1
+			},
+			{
+				360046,
+				1
+			}
+		},
+		source = {}
+	},
+	[840046] = {
+		name = "388995e988644b5e43c4b6de47cf20d3",
+		id = 840046,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "9351cd3ea00006cad79df5c2a13a59b6",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840046",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410046,
+				1
+			},
+			{
+				420046,
+				1
+			},
+			{
+				430046,
+				1
+			},
+			{
+				440046,
+				1
+			},
+			{
+				450046,
+				1
+			},
+			{
+				460046,
+				1
+			}
+		},
+		source = {}
+	},
+	[850046] = {
+		name = "dcddbd83b99577ce05e8efacbb813f1a",
+		id = 850046,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "38eb70c360d5f41abaac0960c4722f7f",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850046",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510046,
+				1
+			},
+			{
+				520046,
+				1
+			},
+			{
+				530046,
+				1
+			},
+			{
+				540046,
+				1
+			},
+			{
+				550046,
+				1
+			},
+			{
+				560046,
+				1
+			}
+		},
+		source = {}
+	},
+	[830047] = {
+		name = "2d8ef0977c286d75c1b75f60b73eeb91",
+		id = 830047,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "372d9eb5f8c08154f536844b16443c76",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830047",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310047,
+				1
+			},
+			{
+				320047,
+				1
+			},
+			{
+				330047,
+				1
+			},
+			{
+				340047,
+				1
+			},
+			{
+				350047,
+				1
+			},
+			{
+				360047,
+				1
+			}
+		},
+		source = {}
+	},
+	[840047] = {
+		name = "61ecfaf3a6a0b0d6ca33bd24849bae1f",
+		id = 840047,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "8cf844190bf90361b31173373dcff4bd",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840047",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410047,
+				1
+			},
+			{
+				420047,
+				1
+			},
+			{
+				430047,
+				1
+			},
+			{
+				440047,
+				1
+			},
+			{
+				450047,
+				1
+			},
+			{
+				460047,
+				1
+			}
+		},
+		source = {}
+	},
+	[850047] = {
+		name = "97f3faac530f840047c34ce515dea2a2",
+		id = 850047,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "76705a0a97fc0e88cd0ac3c3d4e7c5c7",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850047",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510047,
+				1
+			},
+			{
+				520047,
+				1
+			},
+			{
+				530047,
+				1
+			},
+			{
+				540047,
+				1
+			},
+			{
+				550047,
+				1
+			},
+			{
+				560047,
+				1
+			}
+		},
+		source = {}
+	},
+	[830048] = {
+		name = "5c1a8951a9e1a39de9172beb65361c2e",
+		id = 830048,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "6d8a83d1552d92eb9746b4f315d46def",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830048",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310048,
+				1
+			},
+			{
+				320048,
+				1
+			},
+			{
+				330048,
+				1
+			},
+			{
+				340048,
+				1
+			},
+			{
+				350048,
+				1
+			},
+			{
+				360048,
+				1
+			}
+		},
+		source = {}
+	},
+	[840048] = {
+		name = "fae7a8c32fd70e72f25668eb00efb4dd",
+		id = 840048,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "4b69fc2af59f082a79cf12da637fdbd2",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840048",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410048,
+				1
+			},
+			{
+				420048,
+				1
+			},
+			{
+				430048,
+				1
+			},
+			{
+				440048,
+				1
+			},
+			{
+				450048,
+				1
+			},
+			{
+				460048,
+				1
+			}
+		},
+		source = {}
+	},
+	[850048] = {
+		name = "0f5f814149588b915173f75cb1689952",
+		id = 850048,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "dea0e128099d8b192ac9d95fecda482c",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850048",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510048,
+				1
+			},
+			{
+				520048,
+				1
+			},
+			{
+				530048,
+				1
+			},
+			{
+				540048,
+				1
+			},
+			{
+				550048,
+				1
+			},
+			{
+				560048,
+				1
+			}
+		},
+		source = {}
+	},
+	[830049] = {
+		name = "23f451e5db603929ec5207d7502b0abb",
+		id = 830049,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "ad767053ae118f0a9a3087e52c7d79e8",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830049",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310049,
+				1
+			},
+			{
+				320049,
+				1
+			},
+			{
+				330049,
+				1
+			},
+			{
+				340049,
+				1
+			},
+			{
+				350049,
+				1
+			},
+			{
+				360049,
+				1
+			}
+		},
+		source = {}
+	},
+	[840049] = {
+		name = "d236bbbde2f4e524a8fc9b09eeca43bc",
+		id = 840049,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "ef1590d0751dde81b7134724307de90d",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840049",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410049,
+				1
+			},
+			{
+				420049,
+				1
+			},
+			{
+				430049,
+				1
+			},
+			{
+				440049,
+				1
+			},
+			{
+				450049,
+				1
+			},
+			{
+				460049,
+				1
+			}
+		},
+		source = {}
+	},
+	[850049] = {
+		name = "f5c0d55db2a42a1d0d1c9974972f97b9",
+		id = 850049,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "50d5b8749454a13570515cbae31db679",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850049",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510049,
+				1
+			},
+			{
+				520049,
+				1
+			},
+			{
+				530049,
+				1
+			},
+			{
+				540049,
+				1
+			},
+			{
+				550049,
+				1
+			},
+			{
+				560049,
+				1
+			}
+		},
+		source = {}
+	},
+	[830050] = {
+		name = "d740968caa99402b0a59729d54223de7",
+		id = 830050,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "28ee3a7d1807f24bd21bf63ba396199e",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830050",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310050,
+				1
+			},
+			{
+				320050,
+				1
+			},
+			{
+				330050,
+				1
+			},
+			{
+				340050,
+				1
+			},
+			{
+				350050,
+				1
+			},
+			{
+				360050,
+				1
+			}
+		},
+		source = {}
+	},
+	[840050] = {
+		name = "9154a53daa896c93e22cc2abef8162f9",
+		id = 840050,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "39ef63fb08b1590107607cb1046ff4f6",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840050",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410050,
+				1
+			},
+			{
+				420050,
+				1
+			},
+			{
+				430050,
+				1
+			},
+			{
+				440050,
+				1
+			},
+			{
+				450050,
+				1
+			},
+			{
+				460050,
+				1
+			}
+		},
+		source = {}
+	},
+	[850050] = {
+		name = "8ae01c6954792861554cd45bb5bcb69c",
+		id = 850050,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "fbbf0f2b6dd9fe916ce715e86c4f5080",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850050",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510050,
+				1
+			},
+			{
+				520050,
+				1
+			},
+			{
+				530050,
+				1
+			},
+			{
+				540050,
+				1
+			},
+			{
+				550050,
+				1
+			},
+			{
+				560050,
+				1
+			}
+		},
+		source = {}
+	},
+	[830051] = {
+		name = "4b6165ffa5a1b4ebb7416cce9c0c577b",
+		id = 830051,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "7386387a62df952d815f3520c69d8e0e",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830051",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310051,
+				1
+			},
+			{
+				320051,
+				1
+			},
+			{
+				330051,
+				1
+			},
+			{
+				340051,
+				1
+			},
+			{
+				350051,
+				1
+			},
+			{
+				360051,
+				1
+			}
+		},
+		source = {}
+	},
+	[840051] = {
+		name = "4273037a52882cc6442b70a14340b384",
+		id = 840051,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "8dfecbfed1206b0d6c95c5aaf8778adc",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840051",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410051,
+				1
+			},
+			{
+				420051,
+				1
+			},
+			{
+				430051,
+				1
+			},
+			{
+				440051,
+				1
+			},
+			{
+				450051,
+				1
+			},
+			{
+				460051,
+				1
+			}
+		},
+		source = {}
+	},
+	[850051] = {
+		name = "470f4c7ff8375530215d129b67dcb715",
+		id = 850051,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "4498be084d14b70d6fc2d687814093af",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850051",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510051,
+				1
+			},
+			{
+				520051,
+				1
+			},
+			{
+				530051,
+				1
+			},
+			{
+				540051,
+				1
+			},
+			{
+				550051,
+				1
+			},
+			{
+				560051,
+				1
+			}
+		},
+		source = {}
+	},
+	[830052] = {
+		name = "649569ed68de7e24fc787a1748a438e1",
+		id = 830052,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "802bf93effaa3d6377988df444a51a41",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830052",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310052,
+				1
+			},
+			{
+				320052,
+				1
+			},
+			{
+				330052,
+				1
+			},
+			{
+				340052,
+				1
+			},
+			{
+				350052,
+				1
+			},
+			{
+				360052,
+				1
+			}
+		},
+		source = {}
+	},
+	[840052] = {
+		name = "96df28f00c5e9ae8210280b119073e66",
+		id = 840052,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "1d1dbf68371f4961287400453c843adc",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840052",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410052,
+				1
+			},
+			{
+				420052,
+				1
+			},
+			{
+				430052,
+				1
+			},
+			{
+				440052,
+				1
+			},
+			{
+				450052,
+				1
+			},
+			{
+				460052,
+				1
+			}
+		},
+		source = {}
+	},
+	[850052] = {
+		name = "e62cd78a98d7abd32cf5988cfe52861f",
+		id = 850052,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "6c4f9659c78948970b0e8be9a77304c8",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850052",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510052,
+				1
+			},
+			{
+				520052,
+				1
+			},
+			{
+				530052,
+				1
+			},
+			{
+				540052,
+				1
+			},
+			{
+				550052,
+				1
+			},
+			{
+				560052,
+				1
+			}
+		},
+		source = {}
+	},
+	[830053] = {
+		name = "99e011fd233eadcefa8f042810e0d33b",
+		id = 830053,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "051792247a0bfd8d05438878926f3f18",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830053",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310053,
+				1
+			},
+			{
+				320053,
+				1
+			},
+			{
+				330053,
+				1
+			},
+			{
+				340053,
+				1
+			},
+			{
+				350053,
+				1
+			},
+			{
+				360053,
+				1
+			}
+		},
+		source = {}
+	},
+	[840053] = {
+		name = "4d3ea2a5346f67c4bdadfb6ac6262f5c",
+		id = 840053,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "702f0ea513b5969da9abb8227ff13bc1",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840053",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410053,
+				1
+			},
+			{
+				420053,
+				1
+			},
+			{
+				430053,
+				1
+			},
+			{
+				440053,
+				1
+			},
+			{
+				450053,
+				1
+			},
+			{
+				460053,
+				1
+			}
+		},
+		source = {}
+	},
+	[850053] = {
+		name = "ead45af88e7a9ee350e845ab54a8c00e",
+		id = 850053,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "8091b20bc2b08224def253cc6424c777",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850053",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510053,
+				1
+			},
+			{
+				520053,
+				1
+			},
+			{
+				530053,
+				1
+			},
+			{
+				540053,
+				1
+			},
+			{
+				550053,
+				1
+			},
+			{
+				560053,
+				1
+			}
+		},
+		source = {}
+	},
+	[830054] = {
+		name = "3c2a5f73cd93f0d0baf085190bf4a5d9",
+		id = 830054,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "779ced0eb769faa0507a0189ea3ea374",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830054",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310054,
+				1
+			},
+			{
+				320054,
+				1
+			},
+			{
+				330054,
+				1
+			},
+			{
+				340054,
+				1
+			},
+			{
+				350054,
+				1
+			},
+			{
+				360054,
+				1
+			}
+		},
+		source = {}
+	},
+	[840054] = {
+		name = "3abf73895245c7c46678fa33fe368087",
+		id = 840054,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "95bef58d87fa8409e2e7eb2fcc640892",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840054",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410054,
+				1
+			},
+			{
+				420054,
+				1
+			},
+			{
+				430054,
+				1
+			},
+			{
+				440054,
+				1
+			},
+			{
+				450054,
+				1
+			},
+			{
+				460054,
+				1
+			}
+		},
+		source = {}
+	},
+	[850054] = {
+		name = "7df963a697f85e9c5675676766a56e25",
+		id = 850054,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "bf5262f048846a33cc801ddd19fa34c1",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850054",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510054,
+				1
+			},
+			{
+				520054,
+				1
+			},
+			{
+				530054,
+				1
+			},
+			{
+				540054,
+				1
+			},
+			{
+				550054,
+				1
+			},
+			{
+				560054,
+				1
+			}
+		},
+		source = {}
+	},
+	[830055] = {
+		name = "8dfc45c4b3cf3342a57d2e8231f443cc",
+		id = 830055,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "cd56f6724b7b8b5fbde9bd59d71dad7d",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830055",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310055,
+				1
+			},
+			{
+				320055,
+				1
+			},
+			{
+				330055,
+				1
+			},
+			{
+				340055,
+				1
+			},
+			{
+				350055,
+				1
+			},
+			{
+				360055,
+				1
+			}
+		},
+		source = {}
+	},
+	[840055] = {
+		name = "e9287dc8dc726afa1d9120eb65fe0b3f",
+		id = 840055,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "4e30f2bae35d62b9787c83a5432c9cb4",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840055",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410055,
+				1
+			},
+			{
+				420055,
+				1
+			},
+			{
+				430055,
+				1
+			},
+			{
+				440055,
+				1
+			},
+			{
+				450055,
+				1
+			},
+			{
+				460055,
+				1
+			}
+		},
+		source = {}
+	},
+	[850055] = {
+		name = "ddf97f6fe62aaf153080de727ac35ed0",
+		id = 850055,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "c0fef359523dc910f6c9dc242abe5261",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850055",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510055,
+				1
+			},
+			{
+				520055,
+				1
+			},
+			{
+				530055,
+				1
+			},
+			{
+				540055,
+				1
+			},
+			{
+				550055,
+				1
+			},
+			{
+				560055,
+				1
+			}
+		},
+		source = {}
+	},
+	[830056] = {
+		name = "d4583e79e885b6314bf853e037513c39",
+		id = 830056,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "d1e7c8f9cf6b070c7b9442c163da584e",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830056",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310056,
+				1
+			},
+			{
+				320056,
+				1
+			},
+			{
+				330056,
+				1
+			},
+			{
+				340056,
+				1
+			},
+			{
+				350056,
+				1
+			},
+			{
+				360056,
+				1
+			}
+		},
+		source = {}
+	},
+	[840056] = {
+		name = "7a266bedc5a00468acce13c4bf3cafa4",
+		id = 840056,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "d18c1b38f420c221e2d36b295f357c31",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840056",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410056,
+				1
+			},
+			{
+				420056,
+				1
+			},
+			{
+				430056,
+				1
+			},
+			{
+				440056,
+				1
+			},
+			{
+				450056,
+				1
+			},
+			{
+				460056,
+				1
+			}
+		},
+		source = {}
+	},
+	[850056] = {
+		name = "7262776a045934f4cf397c0826de356a",
+		id = 850056,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "673dc9ea663982da793a00aef96b4d5c",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850056",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510056,
+				1
+			},
+			{
+				520056,
+				1
+			},
+			{
+				530056,
+				1
+			},
+			{
+				540056,
+				1
+			},
+			{
+				550056,
+				1
+			},
+			{
+				560056,
+				1
+			}
+		},
+		source = {}
+	},
+	[830057] = {
+		name = "ef653d5f41156055c8c1ffb46032e101",
+		id = 830057,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "687775063eb4897d73b7cacbf1dbb23b",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830057",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310057,
+				1
+			},
+			{
+				320057,
+				1
+			},
+			{
+				330057,
+				1
+			},
+			{
+				340057,
+				1
+			},
+			{
+				350057,
+				1
+			},
+			{
+				360057,
+				1
+			}
+		},
+		source = {}
+	},
+	[840057] = {
+		name = "886bb5aaba73e2f988856108c00bda7c",
+		id = 840057,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "50c65b95ae3dead45736bf3a20fa8f0e",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840057",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410057,
+				1
+			},
+			{
+				420057,
+				1
+			},
+			{
+				430057,
+				1
+			},
+			{
+				440057,
+				1
+			},
+			{
+				450057,
+				1
+			},
+			{
+				460057,
+				1
+			}
+		},
+		source = {}
+	},
+	[850057] = {
+		name = "db24185c0b99910545242e8442b18ad6",
+		id = 850057,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "002f9e6e66f2dce14a56cd1590793b7e",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850057",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510057,
+				1
+			},
+			{
+				520057,
+				1
+			},
+			{
+				530057,
+				1
+			},
+			{
+				540057,
+				1
+			},
+			{
+				550057,
+				1
+			},
+			{
+				560057,
+				1
+			}
+		},
+		source = {}
+	},
+	[830058] = {
+		name = "016bd21978aafe8b9132af041f1a72f4",
+		id = 830058,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "bb5f8d8e03747fa48913ad24a49f9617",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830058",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310058,
+				1
+			},
+			{
+				320058,
+				1
+			},
+			{
+				330058,
+				1
+			},
+			{
+				340058,
+				1
+			},
+			{
+				350058,
+				1
+			},
+			{
+				360058,
+				1
+			}
+		},
+		source = {}
+	},
+	[840058] = {
+		name = "a5456751d83f799208a1531d7f675b76",
+		id = 840058,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "bf73a2ca0a65f486723d89d2fd2ac877",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840058",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410058,
+				1
+			},
+			{
+				420058,
+				1
+			},
+			{
+				430058,
+				1
+			},
+			{
+				440058,
+				1
+			},
+			{
+				450058,
+				1
+			},
+			{
+				460058,
+				1
+			}
+		},
+		source = {}
+	},
+	[850058] = {
+		name = "e96c3457cdad15cc0ba4337b50c1109d",
+		id = 850058,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "c390b731430585d84ab5ad544f75cdb1",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850058",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510058,
+				1
+			},
+			{
+				520058,
+				1
+			},
+			{
+				530058,
+				1
+			},
+			{
+				540058,
+				1
+			},
+			{
+				550058,
+				1
+			},
+			{
+				560058,
+				1
+			}
+		},
+		source = {}
+	},
+	[830059] = {
+		name = "9aa7643fc2de38a6818f606cabfa302d",
+		id = 830059,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "26bde44515de3ae0c980bf826340c89a",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830059",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310059,
+				1
+			},
+			{
+				320059,
+				1
+			},
+			{
+				330059,
+				1
+			},
+			{
+				340059,
+				1
+			},
+			{
+				350059,
+				1
+			},
+			{
+				360059,
+				1
+			}
+		},
+		source = {}
+	},
+	[840059] = {
+		name = "ae996a16cc0775a01f45cc2df730909f",
+		id = 840059,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "49ef96f1d493b9a3c59391eed7bdfc9a",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840059",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410059,
+				1
+			},
+			{
+				420059,
+				1
+			},
+			{
+				430059,
+				1
+			},
+			{
+				440059,
+				1
+			},
+			{
+				450059,
+				1
+			},
+			{
+				460059,
+				1
+			}
+		},
+		source = {}
+	},
+	[850059] = {
+		name = "77c63c8563b813db7dc0351142882af4",
+		id = 850059,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "c227371f052cb23b1e684f0af2a8a1df",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850059",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510059,
+				1
+			},
+			{
+				520059,
+				1
+			},
+			{
+				530059,
+				1
+			},
+			{
+				540059,
+				1
+			},
+			{
+				550059,
+				1
+			},
+			{
+				560059,
+				1
+			}
+		},
+		source = {}
+	},
+	[830060] = {
+		name = "383d0828162127d535305bdaf871b22c",
+		id = 830060,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "9b5ef25b54a067381debab634ef5ca4f",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830060",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310060,
+				1
+			},
+			{
+				320060,
+				1
+			},
+			{
+				330060,
+				1
+			},
+			{
+				340060,
+				1
+			},
+			{
+				350060,
+				1
+			},
+			{
+				360060,
+				1
+			}
+		},
+		source = {}
+	},
+	[840060] = {
+		name = "85d06bc07aa7020268a61ce8ef2b006b",
+		id = 840060,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "7fcc576465dd9c00da308763c2c9c884",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840060",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410060,
+				1
+			},
+			{
+				420060,
+				1
+			},
+			{
+				430060,
+				1
+			},
+			{
+				440060,
+				1
+			},
+			{
+				450060,
+				1
+			},
+			{
+				460060,
+				1
+			}
+		},
+		source = {}
+	},
+	[850060] = {
+		name = "9c719933e30424aec418c276ab22dcec",
+		id = 850060,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "6f01771bbab33056d551c087de9ebf75",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850060",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510060,
+				1
+			},
+			{
+				520060,
+				1
+			},
+			{
+				530060,
+				1
+			},
+			{
+				540060,
+				1
+			},
+			{
+				550060,
+				1
+			},
+			{
+				560060,
+				1
+			}
+		},
+		source = {}
+	},
+	[830061] = {
+		name = "ab786fe5bfc0a792bc0cb6e63c15f72f",
+		id = 830061,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "3592d1ac64e20d5b9ef5e67bec7bae34",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830061",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310061,
+				1
+			},
+			{
+				320061,
+				1
+			},
+			{
+				330061,
+				1
+			},
+			{
+				340061,
+				1
+			},
+			{
+				350061,
+				1
+			},
+			{
+				360061,
+				1
+			}
+		},
+		source = {}
+	},
+	[840061] = {
+		name = "109e833ce0e2d23feece7941e131bb56",
+		id = 840061,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "479c924ca16546e4e1378204ad1f857f",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840061",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410061,
+				1
+			},
+			{
+				420061,
+				1
+			},
+			{
+				430061,
+				1
+			},
+			{
+				440061,
+				1
+			},
+			{
+				450061,
+				1
+			},
+			{
+				460061,
+				1
+			}
+		},
+		source = {}
+	},
+	[850061] = {
+		name = "27645f9b027df3b6f52a5bd3edfc8284",
+		id = 850061,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "e8656802811186af2021652d4a7d7471",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850061",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510061,
+				1
+			},
+			{
+				520061,
+				1
+			},
+			{
+				530061,
+				1
+			},
+			{
+				540061,
+				1
+			},
+			{
+				550061,
+				1
+			},
+			{
+				560061,
+				1
+			}
+		},
+		source = {}
+	},
+	[830062] = {
+		name = "a98454c6265a7f4d241613fc7d648b20",
+		id = 830062,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "5e3b0693ff29aa1b9b496a988a688072",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830062",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310062,
+				1
+			},
+			{
+				320062,
+				1
+			},
+			{
+				330062,
+				1
+			},
+			{
+				340062,
+				1
+			},
+			{
+				350062,
+				1
+			},
+			{
+				360062,
+				1
+			}
+		},
+		source = {}
+	},
+	[840062] = {
+		name = "a740e166e507ec0ab363f9672b7a3fef",
+		id = 840062,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "027a0fddae6958cbc66cf730c737e14f",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840062",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410062,
+				1
+			},
+			{
+				420062,
+				1
+			},
+			{
+				430062,
+				1
+			},
+			{
+				440062,
+				1
+			},
+			{
+				450062,
+				1
+			},
+			{
+				460062,
+				1
+			}
+		},
+		source = {}
+	},
+	[850062] = {
+		name = "83b3b273ab239d85580c2cbe1ab3f6a8",
+		id = 850062,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "6652c0d6b01fb191bbfa8c01713f1adc",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850062",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510062,
+				1
+			},
+			{
+				520062,
+				1
+			},
+			{
+				530062,
+				1
+			},
+			{
+				540062,
+				1
+			},
+			{
+				550062,
+				1
+			},
+			{
+				560062,
+				1
+			}
+		},
+		source = {}
+	},
+	[941001] = {
+		decompose_id = 0,
+		name = "bfd7be60afe6d02f411ffba7128f97ef",
+		compose_id = 0,
+		type = 15,
+		id = 941001,
+		rare = 5,
+		desc = "db91850b57e7a5d658d586efa717aad1",
+		limit = 0,
+		sub_type = 4,
+		display_rare = 5,
+		icon = "941001",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[941002] = {
+		decompose_id = 0,
+		name = "07a82a714e5e68f8525fe8caefa4d479",
+		compose_id = 0,
+		type = 15,
+		id = 941002,
+		rare = 5,
+		desc = "e6d06bb7e31df1ae98bdf23deb48296e",
+		limit = 0,
+		sub_type = 4,
+		display_rare = 5,
+		icon = "941002",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[941003] = {
+		decompose_id = 0,
+		name = "f2aee7ef7c2c4eeb7ab1477afa6df3cb",
+		compose_id = 0,
+		type = 15,
+		id = 941003,
+		rare = 5,
+		desc = "cd58bb5c8949a6cc0cb2fd2baedbfb04",
+		limit = 0,
+		sub_type = 4,
+		display_rare = 5,
+		icon = "941003",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[941004] = {
+		decompose_id = 0,
+		name = "2310062787bee782685813006516d511",
+		compose_id = 0,
+		type = 15,
+		id = 941004,
+		rare = 5,
+		desc = "4cf128373f493047bfc553247c901330",
+		limit = 0,
+		sub_type = 4,
+		display_rare = 5,
+		icon = "941004",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[941010] = {
+		decompose_id = 0,
+		name = "ac17c6fe56bbda73e7d94f229cf5c678",
+		compose_id = 0,
+		type = 15,
+		id = 941010,
+		rare = 5,
+		desc = "0520186fa8c816f1b4dbf3907368cf45",
+		limit = 0,
+		sub_type = 4,
+		display_rare = 5,
+		icon = "941010",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[941011] = {
+		decompose_id = 0,
+		name = "1b6ad4c0d63c07ec910a1cb397a5d02d",
+		compose_id = 0,
+		type = 15,
+		id = 941011,
+		rare = 5,
+		desc = "b8390b88e58aea38cb1cac64a4f35e98",
+		limit = 0,
+		sub_type = 4,
+		display_rare = 5,
+		icon = "941010",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[941012] = {
+		decompose_id = 0,
+		name = "dc3281ee1820a29adc5ad689db15fdaa",
+		compose_id = 0,
+		type = 15,
+		id = 941012,
+		rare = 5,
+		desc = "fe1cbf4fc4ee3473aa79a267815df5f4",
+		limit = 0,
+		sub_type = 4,
+		display_rare = 5,
+		icon = "941010",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[941013] = {
+		decompose_id = 0,
+		name = "f01b513bf02c16e23f36e674aa4bbe7f",
+		compose_id = 0,
+		type = 15,
+		id = 941013,
+		rare = 5,
+		desc = "b79c5a6e59133d4b1e691f32cc30313d",
+		limit = 0,
+		sub_type = 4,
+		display_rare = 5,
+		icon = "941010",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[941014] = {
+		decompose_id = 0,
+		name = "7a4bf8838e14428883084299805172e2",
+		compose_id = 0,
+		type = 15,
+		id = 941014,
+		rare = 5,
+		desc = "606121ce47af35c59eb2692f015b919e",
+		limit = 0,
+		sub_type = 4,
+		display_rare = 5,
+		icon = "941010",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[941015] = {
+		decompose_id = 0,
+		name = "67140195d666f5071d91f9d22302e55b",
+		compose_id = 0,
+		type = 15,
+		id = 941015,
+		rare = 5,
+		desc = "3646d94b6b92a1da1f8f39fb4abcc548",
+		limit = 0,
+		sub_type = 4,
+		display_rare = 5,
+		icon = "941010",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[941016] = {
+		decompose_id = 0,
+		name = "96e9d6d7a0f2286e13a5b2155f52f245",
+		compose_id = 0,
+		type = 15,
+		id = 941016,
+		rare = 5,
+		desc = "b58ccae1f23ff2f9f3933f7279aa5847",
+		limit = 0,
+		sub_type = 4,
+		display_rare = 5,
+		icon = "941010",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[941017] = {
+		decompose_id = 0,
+		name = "2fa340a4f198b271ac411a8e41fc7566",
+		compose_id = 0,
+		type = 15,
+		id = 941017,
+		rare = 5,
+		desc = "616d9a8855b0e0bc3fd97ad937c9c93f",
+		limit = 0,
+		sub_type = 4,
+		display_rare = 5,
+		icon = "941010",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950001] = {
+		decompose_id = 0,
+		name = "7bf5a0197449e7dbfbfcac208ba68779",
+		compose_id = 0,
+		type = 15,
+		id = 950001,
+		rare = 5,
+		desc = "8872a4273ba34418276d556c21fc762d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950001",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950002] = {
+		decompose_id = 0,
+		name = "da3a55e19a245ae176e5e1e348cd6161",
+		compose_id = 0,
+		type = 15,
+		id = 950002,
+		rare = 5,
+		desc = "02e982fb9b9778eaf31775878e69b162",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950002",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950003] = {
+		decompose_id = 0,
+		name = "a275db28f04f75804b15dcbe480abee7",
+		compose_id = 0,
+		type = 15,
+		id = 950003,
+		rare = 5,
+		desc = "66565581affab1d202daf75cce4f9840",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950003",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950004] = {
+		decompose_id = 0,
+		name = "0f9ef0b504f1754d352e9fb20191859a",
+		compose_id = 0,
+		type = 15,
+		id = 950004,
+		rare = 5,
+		desc = "ede5cde70137b103e3ac3c7b6b40e809",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950004",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950005] = {
+		decompose_id = 0,
+		name = "b0af676d1c725a7a244f963644f315c9",
+		compose_id = 0,
+		type = 15,
+		id = 950005,
+		rare = 5,
+		desc = "910ed990c8edfae7b0663c839a72fee4",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950005",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950006] = {
+		decompose_id = 0,
+		name = "8e607c1b9fcdf17580cc7dd155121b59",
+		compose_id = 0,
+		type = 15,
+		id = 950006,
+		rare = 5,
+		desc = "85248dbe8076eb9036713bf1b86eb38a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950006",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950007] = {
+		decompose_id = 0,
+		name = "4d186c485ed43e5a9be96d2db881252c",
+		compose_id = 0,
+		type = 15,
+		id = 950007,
+		rare = 5,
+		desc = "7da0f2e2c4dd89c1064659ed7d550bc0",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950007",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950008] = {
+		decompose_id = 0,
+		name = "d36e69233fc42ab5d9693f9869972044",
+		compose_id = 0,
+		type = 15,
+		id = 950008,
+		rare = 5,
+		desc = "d88ae8598029af521cfa44fd4690e93c",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950008",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950009] = {
+		decompose_id = 0,
+		name = "9e94bc9a550c8a0ee41e4c950fa1446d",
+		compose_id = 0,
+		type = 15,
+		id = 950009,
+		rare = 5,
+		desc = "9df3757976004674f640abe3d253b1ce",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950009",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950010] = {
+		decompose_id = 0,
+		name = "0dfa7aeec2dc5eab1176fd9ff057834c",
+		compose_id = 0,
+		type = 15,
+		id = 950010,
+		rare = 5,
+		desc = "cd9f894b4aa349629a04a8edcac1e65b",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950010",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950011] = {
+		decompose_id = 0,
+		name = "9ace01cce3859312fa8a8fd801d00633",
+		compose_id = 0,
+		type = 15,
+		id = 950011,
+		rare = 5,
+		desc = "c91c1d3444eaf07114fbb2627bda3391",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950011",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950012] = {
+		decompose_id = 0,
+		name = "88b68fa061dd0b1300b6429ca9b19c48",
+		compose_id = 0,
+		type = 15,
+		id = 950012,
+		rare = 5,
+		desc = "67899a6fbe332a667e4bee44e1699a47",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950012",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950013] = {
+		decompose_id = 0,
+		name = "913f02b538d3bd0b2e3e902b3b6b702e",
+		compose_id = 0,
+		type = 15,
+		id = 950013,
+		rare = 5,
+		desc = "6e180d274e1e829caf08082af2f8f93d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950013",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950014] = {
+		decompose_id = 0,
+		name = "2309f8102ca1ebd749d5745bb7694abe",
+		compose_id = 0,
+		type = 15,
+		id = 950014,
+		rare = 5,
+		desc = "e632faa77efab1f2539c671b85807b12",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950014",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950015] = {
+		decompose_id = 0,
+		name = "8a9bedb1f282c4758362d747a085edcb",
+		compose_id = 0,
+		type = 15,
+		id = 950015,
+		rare = 5,
+		desc = "19f456f9d639372ecf03d5a8048d769f",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950015",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950016] = {
+		decompose_id = 0,
+		name = "e8d6f2a465a186e9cdd04c7a5b625760",
+		compose_id = 0,
+		type = 15,
+		id = 950016,
+		rare = 5,
+		desc = "b8e9243468919ed382216fa837f618d9",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950016",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950017] = {
+		decompose_id = 0,
+		name = "7cd739079ac0be0af1d8d19ed9ed90d8",
+		compose_id = 0,
+		type = 15,
+		id = 950017,
+		rare = 5,
+		desc = "cb148f5d0fe04531591b71eb8f00fb36",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950017",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950018] = {
+		decompose_id = 0,
+		name = "03489a5163e10db0768a6dbe12027f88",
+		compose_id = 0,
+		type = 15,
+		id = 950018,
+		rare = 5,
+		desc = "8fcf078c3ea8772bf9927f0f89ce6c1a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950018",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950019] = {
+		decompose_id = 0,
+		name = "d2a2ff6307cde8c6c16d422df42f8d3e",
+		compose_id = 0,
+		type = 15,
+		id = 950019,
+		rare = 5,
+		desc = "36475ba380f927eae2186207f14f5c86",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950019",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950020] = {
+		decompose_id = 0,
+		name = "b395fd7484340ad42500fbe6f58b8a3a",
+		compose_id = 0,
+		type = 15,
+		id = 950020,
+		rare = 5,
+		desc = "fc4f950145dd8432006e9e8de57ec5a5",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950020",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950021] = {
+		decompose_id = 0,
+		name = "71d5a6e3ad01d2a8f6dc7ca33a9bb19a",
+		compose_id = 0,
+		type = 15,
+		id = 950021,
+		rare = 5,
+		desc = "521ff852b2945829b953f68c26062473",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950021",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950022] = {
+		decompose_id = 0,
+		name = "3a8d07a7b58f2096e68752d9448f5934",
+		compose_id = 0,
+		type = 15,
+		id = 950022,
+		rare = 5,
+		desc = "d2408900f78597ac21fffdd9ae793625",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950022",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950023] = {
+		decompose_id = 0,
+		name = "6a7243ad66ff089c8b224aa1c8b24258",
+		compose_id = 0,
+		type = 15,
+		id = 950023,
+		rare = 5,
+		desc = "2a5d21c7126c9e2dd01829cc8e9d0053",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950023",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950901] = {
+		decompose_id = 0,
+		name = "6b96657d7a9e4d5caa85a0686dcfec64",
+		compose_id = 0,
+		type = 15,
+		id = 950901,
+		rare = 4,
+		desc = "7f6f35157e1a914f4295b3af531f4969",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "950901",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950902] = {
+		decompose_id = 0,
+		name = "1bc65358df187a306ef6c883ab963cab",
+		compose_id = 0,
+		type = 15,
+		id = 950902,
+		rare = 4,
+		desc = "818038a86729ad8e72d1e5107fcb13ad",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "950902",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950903] = {
+		decompose_id = 0,
+		name = "72f5cd890a11fb8201af047193c1e15e",
+		compose_id = 0,
+		type = 15,
+		id = 950903,
+		rare = 4,
+		desc = "bc57782c8f204524a44ab15ce6bd74a4",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "950903",
+		use = 0,
+		max = 0,
+		source = {}
+	},
 	[950904] = {
 		decompose_id = 0,
 		name = "6a47c6766667efe8c41824e3fe8bef22",
@@ -7,6 +17855,7 @@
 		id = 950904,
 		rare = 4,
 		desc = "e8f30d146c0966543bafc1b3e04d18d5",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950904",
@@ -22,6 +17871,7 @@
 		id = 950905,
 		rare = 4,
 		desc = "f70ab498cbad8a47fbf4a5a9240184eb",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950905",
@@ -37,6 +17887,7 @@
 		id = 950906,
 		rare = 4,
 		desc = "44a150319178f10295db7d2318890a0f",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950906",
@@ -52,6 +17903,7 @@
 		id = 950907,
 		rare = 4,
 		desc = "8b83d75bb5dc839146b2b1196d34b400",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950907",
@@ -67,6 +17919,7 @@
 		id = 950908,
 		rare = 5,
 		desc = "32a77a59ac25f994ef2a0f8eba65efe9",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "950908",
@@ -82,6 +17935,7 @@
 		id = 950909,
 		rare = 4,
 		desc = "8a3abfd3722644f39c3acd00a6122fa8",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950909",
@@ -97,6 +17951,7 @@
 		id = 950910,
 		rare = 4,
 		desc = "087043413ad783efd7d5e2e2c3644483",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950910",
@@ -112,6 +17967,7 @@
 		id = 950911,
 		rare = 4,
 		desc = "63427867dd5cbe55298c6dd05614ad5a",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950911",
@@ -127,6 +17983,7 @@
 		id = 950912,
 		rare = 4,
 		desc = "047bfb005c7c593eda84fa3e781aa107",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950912",
@@ -142,6 +17999,7 @@
 		id = 950913,
 		rare = 4,
 		desc = "eeda2af37fb3ce2d25f5a0f2b40b1300",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950913",
@@ -157,6 +18015,7 @@
 		id = 950914,
 		rare = 4,
 		desc = "25d732274792f798efe2d831e86453f0",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950914",
@@ -172,6 +18031,7 @@
 		id = 950915,
 		rare = 4,
 		desc = "a61a8e094800d16f563ba1cf26e0aa28",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950915",
@@ -187,6 +18047,7 @@
 		id = 950916,
 		rare = 4,
 		desc = "b3b88736774d83fcf098c57f11f3274f",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950916",
@@ -202,6 +18063,7 @@
 		id = 950917,
 		rare = 4,
 		desc = "02c7575a784a367cad5b5556b274dd77",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950917",
@@ -217,6 +18079,7 @@
 		id = 950918,
 		rare = 4,
 		desc = "97898356dcd141572fc0f89e5ba963b6",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950918",
@@ -232,6 +18095,7 @@
 		id = 950919,
 		rare = 4,
 		desc = "d2691a12ac56c6abd60dfa4fd21faea9",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950919",
@@ -247,6 +18111,7 @@
 		id = 950920,
 		rare = 4,
 		desc = "351c3b2b96da01c58739611652d68449",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950920",
@@ -262,6 +18127,7 @@
 		id = 950921,
 		rare = 4,
 		desc = "b44f8180f48b5eb4d3946c8992321c48",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950921",
@@ -277,6 +18143,7 @@
 		id = 950922,
 		rare = 4,
 		desc = "0f9d3b3414b39797edcf1efd5f7c61d9",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "950922",
@@ -292,6 +18159,7 @@
 		id = 951001,
 		rare = 4,
 		desc = "1b1b83bd128e06c063de40ea1e4d8a11",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951001",
@@ -307,6 +18175,7 @@
 		id = 951002,
 		rare = 3,
 		desc = "ba62700fd79d022a087340e755de763e",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951002",
@@ -322,6 +18191,7 @@
 		id = 951003,
 		rare = 3,
 		desc = "1a63c9fa478997b57c09e6c5d82c0f1c",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951003",
@@ -337,6 +18207,7 @@
 		id = 951004,
 		rare = 4,
 		desc = "3687b887fb9a136054456125ea4a7cf9",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951004",
@@ -352,6 +18223,7 @@
 		id = 951005,
 		rare = 4,
 		desc = "f73b58c0cba46eda1d7c89c3c7521c18",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951005",
@@ -367,6 +18239,7 @@
 		id = 951006,
 		rare = 4,
 		desc = "6ee8c1d1f74383169a6e48401f949669",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951006",
@@ -382,6 +18255,7 @@
 		id = 951007,
 		rare = 4,
 		desc = "aba28e8a5d45234c5507359527b96dae",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951007",
@@ -397,6 +18271,7 @@
 		id = 951008,
 		rare = 3,
 		desc = "b6542bfcbbedf0bc858df8929870cf41",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951008",
@@ -412,6 +18287,7 @@
 		id = 951009,
 		rare = 4,
 		desc = "12ef15ea4a432d1d6675fea8f9471ed4",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951009",
@@ -427,6 +18303,7 @@
 		id = 951010,
 		rare = 4,
 		desc = "d96987a35998fe77afdcb82f623c9d68",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951010",
@@ -442,6 +18319,7 @@
 		id = 951011,
 		rare = 4,
 		desc = "d19978e6706a2510fcfaba0349dad52d",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951011",
@@ -457,6 +18335,7 @@
 		id = 951012,
 		rare = 4,
 		desc = "fce4cc6568b07948f79f6ffa096e2c37",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951012",
@@ -472,6 +18351,7 @@
 		id = 951013,
 		rare = 3,
 		desc = "099162d2d52d788b59ff17644cec4f6e",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951013",
@@ -487,6 +18367,7 @@
 		id = 951014,
 		rare = 3,
 		desc = "6d0b59772fa8333ddeec756a733d81cd",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951014",
@@ -502,6 +18383,7 @@
 		id = 951017,
 		rare = 3,
 		desc = "b6aa3acfe3e14efee6602d1350cd50cc",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951017",
@@ -517,6 +18399,7 @@
 		id = 951018,
 		rare = 3,
 		desc = "44d3195d91b6d004eda25ad30855e6af",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951018",
@@ -532,6 +18415,7 @@
 		id = 951019,
 		rare = 4,
 		desc = "8203a6a51ee511a7091e7081af77316d",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951019",
@@ -547,6 +18431,7 @@
 		id = 951020,
 		rare = 4,
 		desc = "ee6c40f1b7b2ec2a010111479d9eccb2",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951020",
@@ -562,6 +18447,7 @@
 		id = 951021,
 		rare = 3,
 		desc = "ccb16034e4701a9e0e1550e4170e544b",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951021",
@@ -577,6 +18463,7 @@
 		id = 951022,
 		rare = 3,
 		desc = "d75883dbc740543b42faa1cedf56005a",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951022",
@@ -592,6 +18479,7 @@
 		id = 951023,
 		rare = 3,
 		desc = "b47245ee003039ca56e9061dc05a9f90",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951023",
@@ -607,6 +18495,7 @@
 		id = 951024,
 		rare = 4,
 		desc = "74ba5b88e212e1c5d18f283a767d652c",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951024",
@@ -622,6 +18511,7 @@
 		id = 951025,
 		rare = 4,
 		desc = "eb3563e87236127bd31be9f8662ce2a3",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951025",
@@ -637,6 +18527,7 @@
 		id = 951026,
 		rare = 4,
 		desc = "1cc51d683f89eb1ee213913f1203dfa6",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951026",
@@ -652,6 +18543,7 @@
 		id = 951027,
 		rare = 4,
 		desc = "4bdcaac5d5b7e94efcd244e0d6d2c3aa",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951027",
@@ -667,6 +18559,7 @@
 		id = 951028,
 		rare = 4,
 		desc = "5b089b8bfecf4fe66ce99f0c0173df28",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951028",
@@ -682,6 +18575,7 @@
 		id = 951101,
 		rare = 3,
 		desc = "31ded124bcecfed47d8a1f3cda02fb84",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951101",
@@ -697,6 +18591,7 @@
 		id = 951102,
 		rare = 4,
 		desc = "60caf73de64dee30c9121378d6c8bd45",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951102",
@@ -712,6 +18607,7 @@
 		id = 951103,
 		rare = 3,
 		desc = "d0cfaf739a9f3a463efb83b6dc78fa0c",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951103",
@@ -727,6 +18623,7 @@
 		id = 951104,
 		rare = 3,
 		desc = "b8c1c8c077422c0eb2a3c727b90ce26c",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951104",
@@ -742,6 +18639,7 @@
 		id = 951105,
 		rare = 3,
 		desc = "231b484066510eb74562c7c9d369867a",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951105",
@@ -757,6 +18655,7 @@
 		id = 951106,
 		rare = 3,
 		desc = "973cc3318a88354e935aa45716207e86",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951106",
@@ -772,6 +18671,7 @@
 		id = 951107,
 		rare = 3,
 		desc = "52a840461008f4d5bcb2b15c0e1a4933",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951107",
@@ -787,6 +18687,7 @@
 		id = 951108,
 		rare = 3,
 		desc = "c9534ae6b2da23483a9e47f21cafaf44",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951108",
@@ -802,6 +18703,7 @@
 		id = 951109,
 		rare = 4,
 		desc = "dc4d6b0ec42f4899e7be747fc2d0cf79",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951109",
@@ -817,6 +18719,7 @@
 		id = 951110,
 		rare = 4,
 		desc = "a1e0ec6b8aac5fadd979c43b6a3bc918",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951110",
@@ -832,6 +18735,7 @@
 		id = 951111,
 		rare = 4,
 		desc = "b18534b0b9fc60216b1e9adb5fd76111",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951111",
@@ -847,6 +18751,7 @@
 		id = 951112,
 		rare = 4,
 		desc = "bc49ca6feac627dc1f25183088a74065",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951112",
@@ -862,6 +18767,7 @@
 		id = 951113,
 		rare = 4,
 		desc = "8777e337b49ed99670be2a57ee05df79",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951113",
@@ -877,6 +18783,7 @@
 		id = 951114,
 		rare = 3,
 		desc = "fd92d4c3b370c6edba52cc30a0bd2fc9",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951114",
@@ -892,6 +18799,7 @@
 		id = 951115,
 		rare = 3,
 		desc = "57248379d1e07ff067cbe9bb92bf4cb4",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951115",
@@ -907,6 +18815,7 @@
 		id = 951116,
 		rare = 4,
 		desc = "867f452173f9f4ab8ae9231c65fc8322",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951116",
@@ -922,6 +18831,7 @@
 		id = 951117,
 		rare = 3,
 		desc = "4078a90ab5bd91da8d5d7a225c9a6e53",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951117",
@@ -937,6 +18847,7 @@
 		id = 951118,
 		rare = 3,
 		desc = "ccf53246b4cf3267e470caae5c5fca52",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951118",
@@ -952,6 +18863,7 @@
 		id = 951119,
 		rare = 5,
 		desc = "af4495d400806e7f84b803656299bcdd",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "951119",
@@ -967,6 +18879,7 @@
 		id = 951120,
 		rare = 3,
 		desc = "bb8fed8bc0cd90c0f330f150811e344d",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951120",
@@ -982,6 +18895,7 @@
 		id = 951121,
 		rare = 3,
 		desc = "5686718587161b3141b6dadf00fbafa2",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951121",
@@ -997,6 +18911,7 @@
 		id = 951122,
 		rare = 3,
 		desc = "c1cd3eafa1afd764147c8de49aed18c4",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951122",
@@ -1012,6 +18927,7 @@
 		id = 951123,
 		rare = 3,
 		desc = "79621a0000cffab9245f0e017a2d1d2d",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951123",
@@ -1027,6 +18943,7 @@
 		id = 951124,
 		rare = 4,
 		desc = "deb3047516d184616decd89e8b3e0d37",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951124",
@@ -1042,6 +18959,7 @@
 		id = 951125,
 		rare = 4,
 		desc = "3c5ebe8d1e35aed8bda21eb76fbe9778",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951125",
@@ -1057,6 +18975,7 @@
 		id = 951126,
 		rare = 3,
 		desc = "44fdbdfd37a5a19b13d1516e4e3aa22e",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951126",
@@ -1072,6 +18991,7 @@
 		id = 951127,
 		rare = 4,
 		desc = "2e0097a9ffbb5e414772691acc684456",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951127",
@@ -1087,6 +19007,7 @@
 		id = 951128,
 		rare = 4,
 		desc = "02b61764b9e28ded29a69987750bceca",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951128",
@@ -1102,6 +19023,7 @@
 		id = 951131,
 		rare = 4,
 		desc = "c2fa6cb3232c1d9298a52ec1d14ad8f9",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951131",
@@ -1117,6 +19039,7 @@
 		id = 951201,
 		rare = 4,
 		desc = "65e5ebb9ddb2e34dc8b5e820e64fca7f",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951201",
@@ -1132,6 +19055,7 @@
 		id = 951202,
 		rare = 3,
 		desc = "602947710d29b35bbc0041efc1c099e2",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951202",
@@ -1147,6 +19071,7 @@
 		id = 951203,
 		rare = 4,
 		desc = "6164ebee7a891f66a5de066237e6c65e",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951203",
@@ -1162,6 +19087,7 @@
 		id = 951204,
 		rare = 4,
 		desc = "e2fb6bc141465e9ffa5732f53abad895",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951204",
@@ -1177,6 +19103,7 @@
 		id = 951205,
 		rare = 4,
 		desc = "037aec77c98738f2e6cdb133c77f68b1",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951205",
@@ -1192,6 +19119,7 @@
 		id = 951206,
 		rare = 3,
 		desc = "2fc5f17b088aaae4a67ed3243e5e60c6",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951206",
@@ -1207,6 +19135,7 @@
 		id = 951207,
 		rare = 4,
 		desc = "9c1b4d86f5d6727f2123f58c685a0588",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951207",
@@ -1222,6 +19151,7 @@
 		id = 951208,
 		rare = 3,
 		desc = "d7b158066cd12260be378f8dc49d4d20",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951208",
@@ -1237,6 +19167,7 @@
 		id = 951209,
 		rare = 4,
 		desc = "7fdaad3353c0ab66f8834490c716edf1",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951209",
@@ -1252,6 +19183,7 @@
 		id = 951210,
 		rare = 3,
 		desc = "aa1a28c811d15f81b5b5a1db21f74019",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951210",
@@ -1267,6 +19199,7 @@
 		id = 951211,
 		rare = 3,
 		desc = "4eb20c6f2bd748701d733bb09036959f",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951211",
@@ -1282,6 +19215,7 @@
 		id = 951212,
 		rare = 3,
 		desc = "60ee8713d29423f3b1edf0670312d927",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951212",
@@ -1297,6 +19231,7 @@
 		id = 951213,
 		rare = 3,
 		desc = "2e8f93f2adcea629a601df615172b52e",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951213",
@@ -1312,6 +19247,7 @@
 		id = 951214,
 		rare = 4,
 		desc = "d099a226c93b4042b806d1b46c2b65db",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951214",
@@ -1327,6 +19263,7 @@
 		id = 951215,
 		rare = 3,
 		desc = "1394ffabae6dcbe45ccca4a8616d4f0b",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951215",
@@ -1342,6 +19279,7 @@
 		id = 951216,
 		rare = 3,
 		desc = "c545c89eca42120d307c2e1f88bbdcb1",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951216",
@@ -1357,6 +19295,7 @@
 		id = 951217,
 		rare = 3,
 		desc = "e1b2f365ea2cba3162e82caa2c7e7f54",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951217",
@@ -1372,6 +19311,7 @@
 		id = 951218,
 		rare = 3,
 		desc = "1b5d1ed6041c3d5dfd7c5049234582f2",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951218",
@@ -1387,6 +19327,7 @@
 		id = 951219,
 		rare = 3,
 		desc = "41edf71305860e66304d4858364f75be",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951219",
@@ -1402,6 +19343,7 @@
 		id = 951220,
 		rare = 4,
 		desc = "9afc946796d2daf5a2964b8da6d98844",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951220",
@@ -1417,6 +19359,7 @@
 		id = 951221,
 		rare = 4,
 		desc = "13363998c8698ce4ce379b9fdf44882f",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951221",
@@ -1432,6 +19375,7 @@
 		id = 951222,
 		rare = 4,
 		desc = "03ff100ed15b6bc5d76c99c5a3a8f396",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951222",
@@ -1447,6 +19391,7 @@
 		id = 951223,
 		rare = 4,
 		desc = "6ac2ce4c6a7636bc3462bee7fe4c4e40",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951223",
@@ -1462,6 +19407,7 @@
 		id = 951301,
 		rare = 5,
 		desc = "d939be76a9298b769de549967e1d9981",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "951301",
@@ -1477,6 +19423,7 @@
 		id = 951302,
 		rare = 5,
 		desc = "179d01e9c2687017a06e5c9bf6c0df56",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "951302",
@@ -1492,6 +19439,7 @@
 		id = 951401,
 		rare = 3,
 		desc = "173e2eb3420fdaa8929d36251a73ff88",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951401",
@@ -1507,6 +19455,7 @@
 		id = 951402,
 		rare = 3,
 		desc = "10746665c8630a79cc0b5b3af709ca24",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951402",
@@ -1522,6 +19471,7 @@
 		id = 951403,
 		rare = 3,
 		desc = "4baed057668da9982f7d32345125e053",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951403",
@@ -1537,6 +19487,7 @@
 		id = 951404,
 		rare = 3,
 		desc = "7ce7792df422f7ce7f9dba6f45d1eedc",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951404",
@@ -1552,6 +19503,7 @@
 		id = 951405,
 		rare = 3,
 		desc = "5d112f31ec0cee7583d41a96ea9ed0c2",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951405",
@@ -1567,6 +19519,7 @@
 		id = 951406,
 		rare = 3,
 		desc = "889818bf42350498b1d53f3378f74553",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951406",
@@ -1582,6 +19535,7 @@
 		id = 951407,
 		rare = 4,
 		desc = "90bd38563251b90fe4eb6e424fbde9ad",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951407",
@@ -1597,6 +19551,7 @@
 		id = 951408,
 		rare = 3,
 		desc = "45b5a161b2a7990cfe1656b04ae8e37e",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951408",
@@ -1612,6 +19567,7 @@
 		id = 951409,
 		rare = 3,
 		desc = "b821b579efa4b19a55339e2bb538cf12",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951409",
@@ -1627,6 +19583,7 @@
 		id = 951410,
 		rare = 3,
 		desc = "60d4df7af2368381cc890a7f486fa698",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951410",
@@ -1642,6 +19599,7 @@
 		id = 951411,
 		rare = 3,
 		desc = "1cf0ac05e5ae8f571dc1372c257716d7",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951411",
@@ -1657,6 +19615,7 @@
 		id = 951412,
 		rare = 4,
 		desc = "53a28c6e18bdce9ba0234c36b410c596",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951412",
@@ -1672,6 +19631,7 @@
 		id = 951413,
 		rare = 3,
 		desc = "be53e56523f72b38218a50ff10538e2a",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951413",
@@ -1687,6 +19647,7 @@
 		id = 951414,
 		rare = 3,
 		desc = "0f98bca0887eccf0b846562704ee1978",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951414",
@@ -1702,6 +19663,7 @@
 		id = 951415,
 		rare = 3,
 		desc = "b013c1011cdd8e678f19e161b8369ada",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951415",
@@ -1717,6 +19679,7 @@
 		id = 951416,
 		rare = 4,
 		desc = "46c0d1f78aa809dd7d68348df4fc1515",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951416",
@@ -1732,6 +19695,7 @@
 		id = 951417,
 		rare = 3,
 		desc = "ab87acc44a2deb180970be08bbfc1c32",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951417",
@@ -1747,6 +19711,7 @@
 		id = 951418,
 		rare = 3,
 		desc = "35f58717576d26ac59467890c7063b31",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951418",
@@ -1762,6 +19727,7 @@
 		id = 951419,
 		rare = 5,
 		desc = "d7f5b46727106069e66b7963bbe1276b",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "951419",
@@ -1777,6 +19743,7 @@
 		id = 951420,
 		rare = 4,
 		desc = "f9247e1b9d51a90109b1e87801d037fc",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951420",
@@ -1792,6 +19759,7 @@
 		id = 951421,
 		rare = 5,
 		desc = "10909e0e15cf889312512780cb6a3d70",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "951421",
@@ -1807,6 +19775,7 @@
 		id = 951422,
 		rare = 4,
 		desc = "9201ad2ad90c5a1b9c916a5bc735183c",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951422",
@@ -1822,6 +19791,7 @@
 		id = 951423,
 		rare = 4,
 		desc = "1712b72d6811de6b341c963068c70065",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951423",
@@ -1837,6 +19807,7 @@
 		id = 951424,
 		rare = 3,
 		desc = "00bdf02a6f770883c4bc7407c8ede070",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951424",
@@ -1852,6 +19823,7 @@
 		id = 951425,
 		rare = 4,
 		desc = "6c5c4e5340a035e4a817a4a3677cb31a",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951425",
@@ -1867,6 +19839,7 @@
 		id = 951426,
 		rare = 4,
 		desc = "64396f8f45319368d666d04dde748a44",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951426",
@@ -1882,6 +19855,7 @@
 		id = 951427,
 		rare = 4,
 		desc = "6cd4384bb7b887696a724c8445344a8b",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951427",
@@ -1897,6 +19871,7 @@
 		id = 951428,
 		rare = 5,
 		desc = "ba8a7f50c1c9b6acc37b59909258ad56",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "951428",
@@ -1912,6 +19887,7 @@
 		id = 951501,
 		rare = 5,
 		desc = "4abb6b559c6e1d994d5ccb4a464194bb",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "951501",
@@ -1927,6 +19903,7 @@
 		id = 951502,
 		rare = 4,
 		desc = "d91ba3b7c88a00ae6300222ffff372a5",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951502",
@@ -1942,6 +19919,7 @@
 		id = 951503,
 		rare = 4,
 		desc = "f90c463094304a8a6f15975d29934940",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951503",
@@ -1957,6 +19935,7 @@
 		id = 951504,
 		rare = 4,
 		desc = "6917220fa5afed568ba1649186233678",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951504",
@@ -1972,6 +19951,7 @@
 		id = 951505,
 		rare = 4,
 		desc = "77a9d75e99c833c0d80f93875e5a7979",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951505",
@@ -1987,6 +19967,7 @@
 		id = 951506,
 		rare = 4,
 		desc = "3e761199a6695ba2b3ceefd900726be9",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951506",
@@ -2002,6 +19983,7 @@
 		id = 951507,
 		rare = 4,
 		desc = "f9a50997e5b5c85de674233f63777512",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951507",
@@ -2017,6 +19999,7 @@
 		id = 951601,
 		rare = 4,
 		desc = "6d800d514cf53704fc50bdb9f0ed3cb5",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951601",
@@ -2032,6 +20015,7 @@
 		id = 951602,
 		rare = 3,
 		desc = "d223feaa38a9e582f8e95e013b553225",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951602",
@@ -2047,6 +20031,7 @@
 		id = 951603,
 		rare = 4,
 		desc = "bddd991544d9c2a5af1bf549575518c8",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951603",
@@ -2062,6 +20047,7 @@
 		id = 951604,
 		rare = 3,
 		desc = "1f6ab6a7cde3a3d2f0e1f9cc721d7e40",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951604",
@@ -2077,6 +20063,7 @@
 		id = 951605,
 		rare = 3,
 		desc = "310e6b5e804d24075131b42c407b7e1c",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951605",
@@ -2092,6 +20079,7 @@
 		id = 951606,
 		rare = 4,
 		desc = "a001bec1999af6a24e6ba75ad50532b4",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951606",
@@ -2107,6 +20095,7 @@
 		id = 951607,
 		rare = 4,
 		desc = "a6fbdf1831a59268622ee1897880a0bf",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951607",
@@ -2122,6 +20111,7 @@
 		id = 951608,
 		rare = 4,
 		desc = "2e95f8d58ff34c93040743a9d5e1e034",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951608",
@@ -2137,6 +20127,7 @@
 		id = 951609,
 		rare = 4,
 		desc = "62b3e9ea9a3ea88a334a1ea606e4d9d2",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951609",
@@ -2152,6 +20143,7 @@
 		id = 951610,
 		rare = 4,
 		desc = "84973d6ad13ccac79600aa07af8ea74f",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951610",
@@ -2167,6 +20159,7 @@
 		id = 951611,
 		rare = 3,
 		desc = "b75162872e9d67dec9319064889bb783",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951611",
@@ -2182,6 +20175,7 @@
 		id = 951612,
 		rare = 3,
 		desc = "9e2bd39a942c56b2a22d08eadb0d2365",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951612",
@@ -2197,6 +20191,7 @@
 		id = 951613,
 		rare = 3,
 		desc = "33a45a16239ac9388c5b9643c07e5ed6",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951613",
@@ -2212,6 +20207,7 @@
 		id = 951614,
 		rare = 3,
 		desc = "74ae95f2c6ba567775dcb8194bac8b38",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951614",
@@ -2227,6 +20223,7 @@
 		id = 951615,
 		rare = 4,
 		desc = "0a4fb2c95fa9c08a55fe42128b85ffb2",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951615",
@@ -2242,6 +20239,7 @@
 		id = 951616,
 		rare = 4,
 		desc = "de62c72c80c9f2cf955e9c1bc80c03f0",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951616",
@@ -2257,6 +20255,7 @@
 		id = 951617,
 		rare = 3,
 		desc = "802f74393edcf64340e61923525c678f",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951617",
@@ -2272,6 +20271,7 @@
 		id = 951618,
 		rare = 3,
 		desc = "82473ba228838f7854ce130ac7d671bd",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951618",
@@ -2287,6 +20287,7 @@
 		id = 951701,
 		rare = 3,
 		desc = "d03b7636bcc9de7273bd743d673a9e0f",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951701",
@@ -2302,6 +20303,7 @@
 		id = 951702,
 		rare = 4,
 		desc = "0c1316a341cfe1541b18fde92404af7e",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951702",
@@ -2317,6 +20319,7 @@
 		id = 951703,
 		rare = 3,
 		desc = "39a804e4eb492ea200f2912ca7f5648f",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951703",
@@ -2332,6 +20335,7 @@
 		id = 951704,
 		rare = 3,
 		desc = "89cd28b67b2d3a8b9ab6d88fa286031b",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951704",
@@ -2347,6 +20351,7 @@
 		id = 951705,
 		rare = 5,
 		desc = "480f41a11c20e0b3d8a610ffd77eab1d",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "951705",
@@ -2362,6 +20367,7 @@
 		id = 951706,
 		rare = 3,
 		desc = "7bff24fe074bd4b32f8ba60804090742",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951706",
@@ -2377,6 +20383,7 @@
 		id = 951707,
 		rare = 3,
 		desc = "88d5db6b060e22bed7810ab53d3ab85b",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951707",
@@ -2392,6 +20399,7 @@
 		id = 951708,
 		rare = 3,
 		desc = "9fcab0767429715de76546d134781665",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951708",
@@ -2407,6 +20415,7 @@
 		id = 951801,
 		rare = 3,
 		desc = "264931a2c3116cad351525ec34ac1561",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951801",
@@ -2422,6 +20431,7 @@
 		id = 951802,
 		rare = 3,
 		desc = "7529da99f6c7b96ee541e43739cbe75f",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951802",
@@ -2437,6 +20447,7 @@
 		id = 951803,
 		rare = 3,
 		desc = "87e3f64ecc2a02d3aa3382ae6f4a269d",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951803",
@@ -2452,6 +20463,7 @@
 		id = 951804,
 		rare = 3,
 		desc = "68f37698cde367664be24f474c1a5459",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951804",
@@ -2467,6 +20479,7 @@
 		id = 951805,
 		rare = 3,
 		desc = "35dd9370f058ac677869b7d698437ad8",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951805",
@@ -2482,6 +20495,7 @@
 		id = 951806,
 		rare = 3,
 		desc = "64d10bcfaeeb0beaaa61ed31902bf29b",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951806",
@@ -2497,6 +20511,7 @@
 		id = 951807,
 		rare = 3,
 		desc = "fb5fcc01f9af8f5ef503c0de639cdf56",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951807",
@@ -2512,6 +20527,7 @@
 		id = 951901,
 		rare = 3,
 		desc = "c40eafec0d6d908abd2538d4000810a6",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951901",
@@ -2527,6 +20543,7 @@
 		id = 951902,
 		rare = 3,
 		desc = "afbfd10edfebf98319a76c9ab2f9cbe0",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951902",
@@ -2542,6 +20559,7 @@
 		id = 951903,
 		rare = 3,
 		desc = "cab5c8260c40d34ff8273e07128da485",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951903",
@@ -2557,6 +20575,7 @@
 		id = 951904,
 		rare = 4,
 		desc = "0a2e69f3562a993b86217745f3f9a970",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951904",
@@ -2572,6 +20591,7 @@
 		id = 951905,
 		rare = 5,
 		desc = "d9f2538adffff1f3d97012098d502ab9",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "951905",
@@ -2587,6 +20607,7 @@
 		id = 951906,
 		rare = 4,
 		desc = "5b890a328dda5bc480cd86849e1a8d3a",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951906",
@@ -2602,6 +20623,7 @@
 		id = 951907,
 		rare = 3,
 		desc = "d533f6b4527c4b06f8a0fe60dd54233b",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951907",
@@ -2617,6 +20639,7 @@
 		id = 951908,
 		rare = 4,
 		desc = "9ca2b512b8027e91d26d50b9efd90ed9",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951908",
@@ -2632,6 +20655,7 @@
 		id = 951909,
 		rare = 3,
 		desc = "4641d9ee427ffea0867748aac62a2c1c",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951909",
@@ -2647,6 +20671,7 @@
 		id = 951910,
 		rare = 4,
 		desc = "cea9d03c276de994d7028d29f78f31c6",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951910",
@@ -2662,6 +20687,7 @@
 		id = 951911,
 		rare = 3,
 		desc = "6cb202073982551b5024ec94c84dd0d1",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951911",
@@ -2677,6 +20703,7 @@
 		id = 951912,
 		rare = 4,
 		desc = "a47e153901e9f49ab1cc0e19e6d7c586",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951912",
@@ -2692,6 +20719,7 @@
 		id = 951913,
 		rare = 3,
 		desc = "d3232b23b55539ef0583b0be1c568d28",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951913",
@@ -2707,6 +20735,7 @@
 		id = 951914,
 		rare = 4,
 		desc = "8a1dfa39a0aeaacf51d1c5fbca5bf264",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951914",
@@ -2722,6 +20751,7 @@
 		id = 951915,
 		rare = 4,
 		desc = "08bb1f3180d9fed48764ad9a4b4606bc",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951915",
@@ -2737,6 +20767,7 @@
 		id = 951916,
 		rare = 3,
 		desc = "8b609c4488b0e28e618b80c3b5207b7a",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951916",
@@ -2752,6 +20783,7 @@
 		id = 951917,
 		rare = 4,
 		desc = "a5a6be5fc85f1352716392725e4ae7ec",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951917",
@@ -2767,6 +20799,7 @@
 		id = 951918,
 		rare = 3,
 		desc = "c9789326afa7948b029e8a7a07d75eb6",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "951918",
@@ -2782,6 +20815,7 @@
 		id = 951919,
 		rare = 4,
 		desc = "13f0e57b02a21b68c2d222118eec2608",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951919",
@@ -2797,6 +20831,7 @@
 		id = 951920,
 		rare = 4,
 		desc = "185db3eb6cced904f8c77b253753311d",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951920",
@@ -2812,6 +20847,7 @@
 		id = 951921,
 		rare = 4,
 		desc = "d440871a9233966f147bd35faa2cd25e",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "951921",
@@ -2827,6 +20863,7 @@
 		id = 952001,
 		rare = 5,
 		desc = "64750cf4053eb769a65bcdc0ff41511c",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "952001",
@@ -2842,6 +20879,7 @@
 		id = 952002,
 		rare = 4,
 		desc = "b9929cd36662ce8aff7c042aa6eb2af0",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "952002",
@@ -2857,6 +20895,7 @@
 		id = 952003,
 		rare = 4,
 		desc = "d7a323beb034e212486ab193b1861ed9",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "952003",
@@ -2872,6 +20911,7 @@
 		id = 952004,
 		rare = 3,
 		desc = "9f068d12f4e93882aa300b0dbf93b96a",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "952004",
@@ -2887,6 +20927,7 @@
 		id = 952005,
 		rare = 3,
 		desc = "470a757d619460434b0035db94b2887b",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "952005",
@@ -2902,6 +20943,7 @@
 		id = 952006,
 		rare = 3,
 		desc = "03b2afbca1fcb0b040deb7719151ad5e",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "952006",
@@ -2917,6 +20959,7 @@
 		id = 952007,
 		rare = 3,
 		desc = "199550adf20258f5a423e520fa45cd33",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "952007",
@@ -2932,6 +20975,7 @@
 		id = 952008,
 		rare = 3,
 		desc = "2897316557c957cfc8003c98fb353e4e",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "952008",
@@ -2947,6 +20991,7 @@
 		id = 952009,
 		rare = 3,
 		desc = "31fdab43a6672a345a8765a4f908ea30",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "952009",
@@ -2962,6 +21007,7 @@
 		id = 952010,
 		rare = 3,
 		desc = "d5ececcbf0b083d9658daf626f5d5ddc",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "952010",
@@ -2977,6 +21023,7 @@
 		id = 952011,
 		rare = 4,
 		desc = "77cf8df1cb252e4aa241e719bbc85b9c",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "952011",
@@ -2992,6 +21039,7 @@
 		id = 952012,
 		rare = 4,
 		desc = "42ad1ff9212d911e4ad72bb20d2f4437",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "952012",
@@ -3007,6 +21055,7 @@
 		id = 952013,
 		rare = 3,
 		desc = "0219130b59c79f5b5c6a411dc0aeba8b",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "952013",
@@ -3022,6 +21071,7 @@
 		id = 952014,
 		rare = 4,
 		desc = "7dbd615c4455d9e0193299c00188c8a0",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "952014",
@@ -3037,6 +21087,7 @@
 		id = 952015,
 		rare = 4,
 		desc = "1c1302367773185c0bc08761394f4ecf",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "952015",
@@ -3052,6 +21103,7 @@
 		id = 952016,
 		rare = 3,
 		desc = "7eaa91aeac16129c4361f13210cb69cf",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "952016",
@@ -3067,6 +21119,7 @@
 		id = 952017,
 		rare = 4,
 		desc = "6da30863c71971f37031b51336b4a4ad",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "952017",
@@ -3082,6 +21135,7 @@
 		id = 952018,
 		rare = 4,
 		desc = "f9937c9c43ed0dc14d4171b453273ad5",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "952018",
@@ -3097,6 +21151,7 @@
 		id = 952019,
 		rare = 4,
 		desc = "64d24b54badeb364d4bd2233b08944ce",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "952019",
@@ -3112,6 +21167,7 @@
 		id = 952020,
 		rare = 3,
 		desc = "d8bdc3604c9165d44bbdf643fac8a130",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "952020",
@@ -3127,6 +21183,7 @@
 		id = 952021,
 		rare = 4,
 		desc = "6a00bbab60187f3c70f646276ab1f5ff",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "952021",
@@ -3142,6 +21199,7 @@
 		id = 952022,
 		rare = 4,
 		desc = "d2c8ff5f98446b1eee488da95cf6d5c6",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "952022",
@@ -3157,6 +21215,7 @@
 		id = 952023,
 		rare = 4,
 		desc = "4663b373533f7cf804f0a8e57b89f06d",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "952023",
@@ -3172,6 +21231,7 @@
 		id = 952024,
 		rare = 4,
 		desc = "7b68bed02f05385d4406f6a55bbb20f7",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "952024",
@@ -3187,6 +21247,7 @@
 		id = 961001,
 		rare = 3,
 		desc = "3b84463e074e526741e254de1c87f00d",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "961001",
@@ -3202,6 +21263,7 @@
 		id = 961002,
 		rare = 3,
 		desc = "008e5a2d7642ad434c6ec3fcf5c8d5ae",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "961002",
@@ -3217,6 +21279,7 @@
 		id = 961003,
 		rare = 4,
 		desc = "37a5d270571927ca090b86a398eeb207",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "961003",
@@ -3232,6 +21295,7 @@
 		id = 961004,
 		rare = 4,
 		desc = "865c21a82174aa240120d421c340e14b",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "961004",
@@ -3247,6 +21311,7 @@
 		id = 961103,
 		rare = 4,
 		desc = "21dff2fd3b3edf58bfa64fb0bf065e0d",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "961103",
@@ -3262,6 +21327,7 @@
 		id = 961104,
 		rare = 4,
 		desc = "24a34db3fad1916fbdad8c306aee72f7",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "961104",
@@ -3277,6 +21343,7 @@
 		id = 961105,
 		rare = 4,
 		desc = "2518ae2b40df6d4fdfa5cefd2af71a57",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "961105",
@@ -3292,6 +21359,7 @@
 		id = 961106,
 		rare = 4,
 		desc = "c29dd0906f3f185b02a682737aee61fb",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "961106",
@@ -3307,6 +21375,7 @@
 		id = 961107,
 		rare = 4,
 		desc = "4d69bf8065dad819f3c9fea07df7bcdd",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "961107",
@@ -3322,6 +21391,7 @@
 		id = 3001001,
 		rare = 4,
 		desc = "340f6c166850f39fa070979a1bf09339",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "3001001",
@@ -3337,6 +21407,7 @@
 		id = 3001002,
 		rare = 4,
 		desc = "5b2abc15b46116e048c36e417fdd2348",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "3001002",
@@ -3352,6 +21423,7 @@
 		id = 3002001,
 		rare = 4,
 		desc = "97c5ed5724af43ae2e57223bb7fcdedf",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "3002001",
@@ -3367,6 +21439,7 @@
 		id = 3002002,
 		rare = 4,
 		desc = "1fc1c7c4b09117a16860364926a19555",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "3002002",
@@ -3382,6 +21455,7 @@
 		id = 3003001,
 		rare = 4,
 		desc = "8be47130f44f89dda0e01d0d83827cdf",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "3003001",
@@ -3397,6 +21471,7 @@
 		id = 3003002,
 		rare = 4,
 		desc = "58db81e62a720a02f2750c588a1a5d2c",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "3003002",
@@ -3412,6 +21487,7 @@
 		id = 3004001,
 		rare = 4,
 		desc = "3d8d28beadf17c4f1d27975cf1c55008",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "3004001",
@@ -3427,6 +21503,7 @@
 		id = 3004002,
 		rare = 4,
 		desc = "fa4954ebaffc9a60169eb1a16b98f684",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "3004002",
@@ -3442,6 +21519,7 @@
 		id = 3005001,
 		rare = 4,
 		desc = "e5b80f85998f66c9003c00f59b052bb8",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "3005001",
@@ -3457,6 +21535,7 @@
 		id = 3005002,
 		rare = 4,
 		desc = "d46836bce6996f3ea169d60f624d202b",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "3005002",
@@ -3472,6 +21551,7 @@
 		id = 3006001,
 		rare = 4,
 		desc = "cd0db42080e6b86c2d69d616531bb809",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "3006001",
@@ -3487,6 +21567,7 @@
 		id = 3006002,
 		rare = 4,
 		desc = "07af51d3a84972307a90867eaf60f497",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "3006002",
@@ -3502,6 +21583,7 @@
 		id = 3007001,
 		rare = 4,
 		desc = "6d3d977d0984350bf911491c3e448f87",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "3007001",
@@ -3517,6 +21599,7 @@
 		id = 3007002,
 		rare = 4,
 		desc = "e155e68aa02775978b125071c2722db3",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "3007002",
@@ -3532,6 +21615,7 @@
 		id = 3101001,
 		rare = 3,
 		desc = "29cd4b9a25950d014ef81cf291760198",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3101001",
@@ -3547,6 +21631,7 @@
 		id = 3101002,
 		rare = 3,
 		desc = "2ca24ad52f990ab0d87a0c921b7b588e",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3101002",
@@ -3562,6 +21647,7 @@
 		id = 3101003,
 		rare = 3,
 		desc = "6c0f2720f225f7e9defb0beff0f7b949",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3101003",
@@ -3577,6 +21663,7 @@
 		id = 3101004,
 		rare = 3,
 		desc = "3a756bb69100511c185ac56756b74076",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3101004",
@@ -3592,6 +21679,7 @@
 		id = 3102001,
 		rare = 3,
 		desc = "088faef355fd4e69de16e124f5597ed7",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3102001",
@@ -3607,6 +21695,7 @@
 		id = 3102002,
 		rare = 3,
 		desc = "c24a02bcdd7dc305d3ad8f5a6773edbf",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3102002",
@@ -3622,6 +21711,7 @@
 		id = 3102003,
 		rare = 3,
 		desc = "f0980bca402733bb58f091237b9eb6cb",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3102003",
@@ -3637,6 +21727,7 @@
 		id = 3102004,
 		rare = 3,
 		desc = "08ab5d6b18a9c1207dad51efa35b2aa7",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3102004",
@@ -3652,6 +21743,7 @@
 		id = 3103001,
 		rare = 3,
 		desc = "1283571541a612e204a8ffce336a0107",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3103001",
@@ -3667,6 +21759,7 @@
 		id = 3103002,
 		rare = 3,
 		desc = "632353ea76d2330bb23d00029262ce9d",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3103002",
@@ -3682,6 +21775,7 @@
 		id = 3103003,
 		rare = 3,
 		desc = "c2a3e08909b0aa79be89dca700ad3689",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3103003",
@@ -3697,6 +21791,7 @@
 		id = 3103004,
 		rare = 3,
 		desc = "fe68ffd1b56235080ddcce61744f5550",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3103004",
@@ -3712,6 +21807,7 @@
 		id = 3104001,
 		rare = 3,
 		desc = "4a7f211306e252bff85e4f5256d8324f",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3104001",
@@ -3727,6 +21823,7 @@
 		id = 3104002,
 		rare = 3,
 		desc = "b2596ae9f9cdd4f4535ee234357eee11",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3104002",
@@ -3742,6 +21839,7 @@
 		id = 3104003,
 		rare = 3,
 		desc = "be3284cb8fefd48ca830d7c04f443a56",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3104003",
@@ -3757,6 +21855,7 @@
 		id = 3104004,
 		rare = 3,
 		desc = "6cefe94a063710b57c584ffeda02d3e9",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3104004",
@@ -3772,6 +21871,7 @@
 		id = 3105001,
 		rare = 3,
 		desc = "3f3aa0d2e2c576c5c9eebdc981a25121",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3105001",
@@ -3787,6 +21887,7 @@
 		id = 3105002,
 		rare = 3,
 		desc = "75092cd6635713f03a9272cade525e89",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3105002",
@@ -3802,6 +21903,7 @@
 		id = 3105003,
 		rare = 3,
 		desc = "4e27b3b65ced9c6c2b336d3c332339a1",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3105003",
@@ -3817,6 +21919,7 @@
 		id = 3105004,
 		rare = 3,
 		desc = "b48467c0f189b76b54fd0827bcb08b1f",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3105004",
@@ -3832,6 +21935,7 @@
 		id = 3106001,
 		rare = 3,
 		desc = "f58aad49dd378671a77ec75a05bf0cef",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3106001",
@@ -3847,6 +21951,7 @@
 		id = 3106002,
 		rare = 3,
 		desc = "2d5510c14b5a15c983b87ff5ec415747",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3106002",
@@ -3862,6 +21967,7 @@
 		id = 3106003,
 		rare = 3,
 		desc = "1fdc6b02892f7fb988aeffb2275d340e",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3106003",
@@ -3877,6 +21983,7 @@
 		id = 3106004,
 		rare = 3,
 		desc = "d1b3b58c9bf9137288d4549a1cee767a",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3106004",
@@ -3892,6 +21999,7 @@
 		id = 3107001,
 		rare = 3,
 		desc = "2514ccbec088426be2bd52c480b05a53",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3107001",
@@ -3907,6 +22015,7 @@
 		id = 3107002,
 		rare = 3,
 		desc = "07ddbe565f6274ad00e422f4e3c5bd80",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3107002",
@@ -3922,6 +22031,7 @@
 		id = 3107003,
 		rare = 3,
 		desc = "802577d38f971543ef84dbe65870ed89",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3107003",
@@ -3937,6 +22047,7 @@
 		id = 3107004,
 		rare = 3,
 		desc = "939db90a8f98fc548bd000b09a3629f1",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "3107004",
@@ -3951,6 +22062,7 @@
 		type = 9,
 		id = 2310001,
 		rare = 3,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "2310001",
@@ -3969,6 +22081,7 @@
 		type = 9,
 		id = 2320001,
 		rare = 3,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "2320001",
@@ -3987,6 +22100,7 @@
 		type = 9,
 		id = 2330001,
 		rare = 3,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "2330001",
@@ -4005,6 +22119,7 @@
 		type = 9,
 		id = 2340001,
 		rare = 3,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "2340001",
@@ -4023,6 +22138,7 @@
 		type = 9,
 		id = 2350001,
 		rare = 3,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "2350001",
@@ -4041,6 +22157,7 @@
 		type = 9,
 		id = 2390001,
 		rare = 3,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "2390001",
@@ -4059,6 +22176,7 @@
 		type = 9,
 		id = 2410001,
 		rare = 4,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "2410001",
@@ -4077,6 +22195,7 @@
 		type = 9,
 		id = 2410002,
 		rare = 4,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "2410002",
@@ -4095,6 +22214,7 @@
 		type = 9,
 		id = 2420001,
 		rare = 4,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "2420001",
@@ -4113,6 +22233,7 @@
 		type = 9,
 		id = 2420002,
 		rare = 4,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "2420002",
@@ -4131,6 +22252,7 @@
 		type = 9,
 		id = 2430001,
 		rare = 4,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "2430001",
@@ -4149,6 +22271,7 @@
 		type = 9,
 		id = 2430002,
 		rare = 4,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "2430002",
@@ -4167,6 +22290,7 @@
 		type = 9,
 		id = 2440001,
 		rare = 4,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "2440001",
@@ -4185,6 +22309,7 @@
 		type = 9,
 		id = 2440002,
 		rare = 4,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "2440002",
@@ -4203,6 +22328,7 @@
 		type = 9,
 		id = 2450001,
 		rare = 4,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "2450001",
@@ -4221,6 +22347,7 @@
 		type = 9,
 		id = 2450002,
 		rare = 4,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "2450002",
@@ -4239,6 +22366,7 @@
 		type = 9,
 		id = 2490001,
 		rare = 4,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "2490001",
@@ -4257,6 +22385,7 @@
 		type = 9,
 		id = 2490002,
 		rare = 4,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "2490002",
@@ -4275,6 +22404,7 @@
 		type = 9,
 		id = 2510000,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2510000",
@@ -4293,6 +22423,7 @@
 		type = 9,
 		id = 2510001,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2510001",
@@ -4317,6 +22448,7 @@
 		type = 9,
 		id = 2510002,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2510002",
@@ -4341,6 +22473,7 @@
 		type = 9,
 		id = 2510003,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2510003",
@@ -4365,6 +22498,7 @@
 		type = 9,
 		id = 2510004,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2510004",
@@ -4386,6 +22520,7 @@
 		type = 9,
 		id = 2510005,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2510005",
@@ -4407,6 +22542,7 @@
 		type = 9,
 		id = 2510006,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2510006",
@@ -4428,6 +22564,7 @@
 		type = 9,
 		id = 2510007,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2510007",
@@ -4452,6 +22589,7 @@
 		type = 9,
 		id = 2510008,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2510008",
@@ -4476,6 +22614,7 @@
 		type = 9,
 		id = 2510009,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2510009",
@@ -4497,6 +22636,7 @@
 		type = 9,
 		id = 2510010,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2510010",
@@ -4518,9 +22658,54 @@
 		type = 9,
 		id = 2510012,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2510012",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				1703
+			},
+			{
+				409
+			}
+		}
+	},
+	[2510013] = {
+		decompose_id = 0,
+		name = "318cd1208a97d122a3013a1230c430f4",
+		compose_id = 0,
+		type = 9,
+		id = 2510013,
+		rare = 5,
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "2510013",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				1703
+			},
+			{
+				409
+			}
+		}
+	},
+	[2510014] = {
+		decompose_id = 0,
+		name = "1d1e2e38f5f3c2af03d0ab0677b06ab6",
+		compose_id = 0,
+		type = 9,
+		id = 2510014,
+		rare = 5,
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "2510014",
 		use = 0,
 		max = 0,
 		source = {
@@ -4539,6 +22724,7 @@
 		type = 9,
 		id = 2510999,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2510999",
@@ -4560,6 +22746,7 @@
 		type = 9,
 		id = 2520000,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2520000",
@@ -4578,6 +22765,7 @@
 		type = 9,
 		id = 2520001,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2520001",
@@ -4602,6 +22790,7 @@
 		type = 9,
 		id = 2520002,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2520002",
@@ -4626,6 +22815,7 @@
 		type = 9,
 		id = 2520003,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2520003",
@@ -4647,6 +22837,7 @@
 		type = 9,
 		id = 2520004,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2520004",
@@ -4671,6 +22862,7 @@
 		type = 9,
 		id = 2520005,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2520005",
@@ -4692,6 +22884,7 @@
 		type = 9,
 		id = 2520006,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2520006",
@@ -4713,6 +22906,7 @@
 		type = 9,
 		id = 2520007,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2520007",
@@ -4737,6 +22931,7 @@
 		type = 9,
 		id = 2520008,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2520008",
@@ -4758,6 +22953,7 @@
 		type = 9,
 		id = 2520009,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2520009",
@@ -4779,6 +22975,7 @@
 		type = 9,
 		id = 2520999,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2520999",
@@ -4800,6 +22997,7 @@
 		type = 9,
 		id = 2530000,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2530000",
@@ -4818,6 +23016,7 @@
 		type = 9,
 		id = 2530001,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2530001",
@@ -4842,6 +23041,7 @@
 		type = 9,
 		id = 2530002,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2530002",
@@ -4866,6 +23066,7 @@
 		type = 9,
 		id = 2530003,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2530003",
@@ -4887,6 +23088,7 @@
 		type = 9,
 		id = 2530004,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2530004",
@@ -4908,6 +23110,7 @@
 		type = 9,
 		id = 2530005,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2530005",
@@ -4932,6 +23135,7 @@
 		type = 9,
 		id = 2530006,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2530006",
@@ -4956,6 +23160,7 @@
 		type = 9,
 		id = 2530007,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2530007",
@@ -4977,6 +23182,7 @@
 		type = 9,
 		id = 2530008,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2530008",
@@ -4998,6 +23204,7 @@
 		type = 9,
 		id = 2530009,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2530009",
@@ -5019,6 +23226,7 @@
 		type = 9,
 		id = 2530010,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2530010",
@@ -5040,6 +23248,7 @@
 		type = 9,
 		id = 2530011,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2530011",
@@ -5061,6 +23270,7 @@
 		type = 9,
 		id = 2530012,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2530012",
@@ -5082,6 +23292,7 @@
 		type = 9,
 		id = 2530999,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2530999",
@@ -5103,6 +23314,7 @@
 		type = 9,
 		id = 2540000,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2540000",
@@ -5121,6 +23333,7 @@
 		type = 9,
 		id = 2540001,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2540001",
@@ -5145,6 +23358,7 @@
 		type = 9,
 		id = 2540002,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2540002",
@@ -5169,6 +23383,7 @@
 		type = 9,
 		id = 2540003,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2540003",
@@ -5190,6 +23405,7 @@
 		type = 9,
 		id = 2540004,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2540004",
@@ -5214,6 +23430,7 @@
 		type = 9,
 		id = 2540005,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2540005",
@@ -5238,6 +23455,7 @@
 		type = 9,
 		id = 2540006,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2540006",
@@ -5259,6 +23477,7 @@
 		type = 9,
 		id = 2540008,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2540008",
@@ -5280,6 +23499,7 @@
 		type = 9,
 		id = 2540009,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2540009",
@@ -5304,6 +23524,7 @@
 		type = 9,
 		id = 2540010,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2540010",
@@ -5325,6 +23546,7 @@
 		type = 9,
 		id = 2540011,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2540011",
@@ -5346,6 +23568,7 @@
 		type = 9,
 		id = 2540012,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2540012",
@@ -5367,6 +23590,7 @@
 		type = 9,
 		id = 2540999,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2540999",
@@ -5388,6 +23612,7 @@
 		type = 9,
 		id = 2550000,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2550000",
@@ -5406,6 +23631,7 @@
 		type = 9,
 		id = 2550001,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2550001",
@@ -5430,6 +23656,7 @@
 		type = 9,
 		id = 2550002,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2550002",
@@ -5451,6 +23678,7 @@
 		type = 9,
 		id = 2550004,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2550004",
@@ -5475,6 +23703,7 @@
 		type = 9,
 		id = 2550005,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2550005",
@@ -5499,6 +23728,7 @@
 		type = 9,
 		id = 2550006,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2550006",
@@ -5523,6 +23753,7 @@
 		type = 9,
 		id = 2550007,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2550007",
@@ -5547,6 +23778,7 @@
 		type = 9,
 		id = 2550008,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2550008",
@@ -5568,6 +23800,7 @@
 		type = 9,
 		id = 2550009,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2550009",
@@ -5582,6 +23815,66 @@
 			}
 		}
 	},
+	[2550010] = {
+		decompose_id = 0,
+		name = "def5c157ee5a379f789e6e92c1c93c64",
+		compose_id = 0,
+		type = 9,
+		id = 2550010,
+		rare = 5,
+		desc = "d6bbeb13254bb2cee69290969da4cc63",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "2550010",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				1703
+			}
+		}
+	},
+	[2550011] = {
+		decompose_id = 0,
+		name = "474b65340693dfdd17bae6698a6a3bcd",
+		compose_id = 0,
+		type = 9,
+		id = 2550011,
+		rare = 5,
+		desc = "a794fe5c4c9245c085d0cc8c37bbc0e4",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "2550011",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				1703
+			}
+		}
+	},
+	[2550012] = {
+		decompose_id = 0,
+		name = "7f1bc0f5dcee748e70886ba622fab93e",
+		compose_id = 0,
+		type = 9,
+		id = 2550012,
+		rare = 5,
+		desc = "d27eaa626b4d0e9ab193ccd92c713e98",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "2550012",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				1703
+			}
+		}
+	},
 	[2550998] = {
 		decompose_id = 0,
 		name = "357e0ac9431de1f035fef95bf888ef64",
@@ -5589,6 +23882,7 @@
 		type = 9,
 		id = 2550998,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2550998",
@@ -5607,6 +23901,7 @@
 		type = 9,
 		id = 2550999,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2550999",
@@ -5628,6 +23923,7 @@
 		type = 9,
 		id = 2590000,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2590000",
@@ -5646,6 +23942,7 @@
 		type = 9,
 		id = 2590001,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2590001",
@@ -5667,6 +23964,7 @@
 		type = 9,
 		id = 2590003,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2590003",
@@ -5688,6 +23986,7 @@
 		type = 9,
 		id = 2590004,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2590004",
@@ -5709,6 +24008,7 @@
 		type = 9,
 		id = 2590005,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2590005",
@@ -5730,6 +24030,7 @@
 		type = 9,
 		id = 2590006,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2590006",
@@ -5751,6 +24052,7 @@
 		type = 9,
 		id = 2590007,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2590007",
@@ -5773,6 +24075,7 @@
 		id = 2590008,
 		rare = 5,
 		desc = "9f1571c513904b890ea655623d3e6621",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2590008",
@@ -5795,6 +24098,7 @@
 		id = 2590009,
 		rare = 5,
 		desc = "d05b8525329b9d811863b47570390bd1",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2590009",
@@ -5816,6 +24120,7 @@
 		type = 9,
 		id = 2590999,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "2590999",
@@ -5837,6 +24142,7 @@
 		type = 11,
 		id = 2110841,
 		rare = 5,
+		limit = 0,
 		desc_source = "b9a05d29afd446817e93ffe4ab58f842",
 		sub_type = 1,
 		display_rare = 5,
@@ -5852,6 +24158,7 @@
 		type = 11,
 		id = 2110842,
 		rare = 5,
+		limit = 0,
 		desc_source = "c18e826101fc5d0d86fc002d4bef2baa",
 		sub_type = 1,
 		display_rare = 5,
@@ -5867,6 +24174,7 @@
 		type = 11,
 		id = 2110843,
 		rare = 5,
+		limit = 0,
 		desc_source = "de15e81f802322fce494cfa44ef9fac1",
 		sub_type = 1,
 		display_rare = 5,
@@ -5882,6 +24190,7 @@
 		type = 11,
 		id = 2110391,
 		rare = 5,
+		limit = 0,
 		desc_source = "d94d9e041b03eecf435cedb72d0393f1",
 		sub_type = 1,
 		display_rare = 5,
@@ -5897,6 +24206,7 @@
 		type = 11,
 		id = 2110392,
 		rare = 5,
+		limit = 0,
 		desc_source = "49636abeb76a21448c66681cd943a012",
 		sub_type = 1,
 		display_rare = 5,
@@ -5912,6 +24222,7 @@
 		type = 11,
 		id = 2110393,
 		rare = 5,
+		limit = 0,
 		desc_source = "1badec9f7f7c783ee6750c7fd16a4f26",
 		sub_type = 1,
 		display_rare = 5,
@@ -5927,6 +24238,7 @@
 		type = 11,
 		id = 2110481,
 		rare = 5,
+		limit = 0,
 		desc_source = "fc4335a260aa20225e60478f2ca276e2",
 		sub_type = 1,
 		display_rare = 5,
@@ -5942,6 +24254,7 @@
 		type = 11,
 		id = 2110482,
 		rare = 5,
+		limit = 0,
 		desc_source = "4128fe97cee95f5fde20b25225ba4d07",
 		sub_type = 1,
 		display_rare = 5,
@@ -5957,6 +24270,7 @@
 		type = 11,
 		id = 2110491,
 		rare = 5,
+		limit = 0,
 		desc_source = "bec7cf82a36ef703f588873fb1306b8b",
 		sub_type = 1,
 		display_rare = 5,
@@ -5972,10 +24286,27 @@
 		type = 11,
 		id = 2110492,
 		rare = 5,
+		limit = 0,
 		desc_source = "e5fd2863cad20ec77b5f975c2f89e0c2",
 		sub_type = 1,
 		display_rare = 5,
 		icon = "104901",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2110493] = {
+		decompose_id = 0,
+		name = "0e9af9885976756e06e4a8b2f61afee3",
+		compose_id = 0,
+		type = 11,
+		id = 2110493,
+		rare = 5,
+		limit = 0,
+		desc_source = "3d29f0940af0df02624b8eab48f6539c",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "104902",
 		use = 0,
 		max = 0,
 		source = {}
@@ -5987,6 +24318,7 @@
 		type = 11,
 		id = 2110661,
 		rare = 5,
+		limit = 0,
 		desc_source = "187ca02384e0c3d5359d76b9e5f5d442",
 		sub_type = 1,
 		display_rare = 5,
@@ -6002,6 +24334,7 @@
 		type = 11,
 		id = 2110662,
 		rare = 5,
+		limit = 0,
 		desc_source = "6b89f1a69bc071df8ffd9233aff84ca0",
 		sub_type = 1,
 		display_rare = 5,
@@ -6017,6 +24350,7 @@
 		type = 11,
 		id = 2110663,
 		rare = 5,
+		limit = 0,
 		desc_source = "d2fb34dbed56e0ef91032adf128c3a13",
 		sub_type = 1,
 		display_rare = 5,
@@ -6032,6 +24366,7 @@
 		type = 11,
 		id = 2110381,
 		rare = 5,
+		limit = 0,
 		desc_source = "a825a41a549d419261b8fa16a538f854",
 		sub_type = 1,
 		display_rare = 5,
@@ -6047,6 +24382,7 @@
 		type = 11,
 		id = 2110991,
 		rare = 5,
+		limit = 0,
 		desc_source = "25c2ec31966126276590369898708160",
 		sub_type = 1,
 		display_rare = 5,
@@ -6062,6 +24398,7 @@
 		type = 11,
 		id = 2110931,
 		rare = 5,
+		limit = 0,
 		desc_source = "cf8fe86957474769b1f928081e7d741a",
 		sub_type = 1,
 		display_rare = 5,
@@ -6077,6 +24414,7 @@
 		type = 11,
 		id = 2110932,
 		rare = 5,
+		limit = 0,
 		desc_source = "3ad6ea98e821c5382522d2525d082b6c",
 		sub_type = 1,
 		display_rare = 5,
@@ -6092,6 +24430,7 @@
 		type = 11,
 		id = 2110933,
 		rare = 5,
+		limit = 0,
 		desc_source = "581449077243eb28fc1737476ab59c51",
 		sub_type = 1,
 		display_rare = 5,
@@ -6107,6 +24446,7 @@
 		type = 11,
 		id = 2110191,
 		rare = 5,
+		limit = 0,
 		desc_source = "20fec7bf11a7e3abf7841d1a39552e66",
 		sub_type = 1,
 		display_rare = 5,
@@ -6122,6 +24462,7 @@
 		type = 11,
 		id = 2110801,
 		rare = 5,
+		limit = 0,
 		desc_source = "19b5a98d62d82853a2465096f7651357",
 		sub_type = 1,
 		display_rare = 5,
@@ -6137,6 +24478,7 @@
 		type = 11,
 		id = 2110271,
 		rare = 5,
+		limit = 0,
 		desc_source = "eee857baa469483a80c25f133c8d2c16",
 		sub_type = 1,
 		display_rare = 5,
@@ -6152,6 +24494,7 @@
 		type = 11,
 		id = 2110272,
 		rare = 5,
+		limit = 0,
 		desc_source = "6eefa4ffe3466e74aabb37f276d00cc1",
 		sub_type = 1,
 		display_rare = 5,
@@ -6167,6 +24510,7 @@
 		type = 11,
 		id = 2110501,
 		rare = 5,
+		limit = 0,
 		desc_source = "099936ada3ed2f53f038f759fab3875b",
 		sub_type = 1,
 		display_rare = 5,
@@ -6182,6 +24526,7 @@
 		type = 11,
 		id = 2110551,
 		rare = 5,
+		limit = 0,
 		desc_source = "6f8acf973bfb91a486d43c4ea29505db",
 		sub_type = 1,
 		display_rare = 5,
@@ -6197,6 +24542,7 @@
 		type = 11,
 		id = 2110552,
 		rare = 5,
+		limit = 0,
 		desc_source = "dcfd6d088ce4f3931d0f8a68cf8b8c6a",
 		sub_type = 1,
 		display_rare = 5,
@@ -6212,6 +24558,7 @@
 		type = 11,
 		id = 2111481,
 		rare = 5,
+		limit = 0,
 		desc_source = "effe101029c176de63e719650d32bd20",
 		sub_type = 1,
 		display_rare = 5,
@@ -6227,6 +24574,7 @@
 		type = 11,
 		id = 2111482,
 		rare = 5,
+		limit = 0,
 		desc_source = "310d5e8bab8377985a7849f1d44571f9",
 		sub_type = 1,
 		display_rare = 5,
@@ -6242,6 +24590,7 @@
 		type = 11,
 		id = 2110941,
 		rare = 5,
+		limit = 0,
 		desc_source = "31ab5cea278bc48b467e873f1b129dcd",
 		sub_type = 1,
 		display_rare = 5,
@@ -6257,6 +24606,7 @@
 		type = 11,
 		id = 2110942,
 		rare = 5,
+		limit = 0,
 		desc_source = "53c7826df491bfd8bae4ba725206fd4c",
 		sub_type = 1,
 		display_rare = 5,
@@ -6272,6 +24622,7 @@
 		type = 11,
 		id = 2110371,
 		rare = 5,
+		limit = 0,
 		desc_source = "01b50f1d380a28af61779cfab4f1b1cc",
 		sub_type = 1,
 		display_rare = 5,
@@ -6287,6 +24638,7 @@
 		type = 11,
 		id = 2110372,
 		rare = 5,
+		limit = 0,
 		desc_source = "a30e99705aa770cd38b380fe75dccb0a",
 		sub_type = 1,
 		display_rare = 5,
@@ -6302,6 +24654,7 @@
 		type = 11,
 		id = 2110111,
 		rare = 5,
+		limit = 0,
 		desc_source = "ca920a30535d53cc6309d62923f24edb",
 		sub_type = 1,
 		display_rare = 5,
@@ -6317,6 +24670,7 @@
 		type = 11,
 		id = 2111991,
 		rare = 5,
+		limit = 0,
 		desc_source = "2dd837cfb47b6790c80f3c3dab508626",
 		sub_type = 1,
 		display_rare = 5,
@@ -6332,6 +24686,7 @@
 		type = 11,
 		id = 2111992,
 		rare = 5,
+		limit = 0,
 		desc_source = "2ff37cefeef7ce605e227c15b227f0e3",
 		sub_type = 1,
 		display_rare = 5,
@@ -6347,6 +24702,7 @@
 		type = 11,
 		id = 2111993,
 		rare = 5,
+		limit = 0,
 		desc_source = "1418719465f2f36bd9488e838c3f4fa0",
 		sub_type = 1,
 		display_rare = 5,
@@ -6362,6 +24718,7 @@
 		type = 11,
 		id = 2111841,
 		rare = 5,
+		limit = 0,
 		desc_source = "59417b197efb6cbd7e8f96476f1dd493",
 		sub_type = 1,
 		display_rare = 5,
@@ -6377,6 +24734,7 @@
 		type = 11,
 		id = 2110581,
 		rare = 5,
+		limit = 0,
 		desc_source = "e530a65a30cab9fa0994e20ccd2fa19b",
 		sub_type = 1,
 		display_rare = 5,
@@ -6392,6 +24750,7 @@
 		type = 11,
 		id = 2110582,
 		rare = 5,
+		limit = 0,
 		desc_source = "2542597c69051ae371b11cfd6b162081",
 		sub_type = 1,
 		display_rare = 5,
@@ -6407,6 +24766,7 @@
 		type = 11,
 		id = 2111581,
 		rare = 5,
+		limit = 0,
 		desc_source = "6f7803c4162a94fb981b8126decdc17a",
 		sub_type = 1,
 		display_rare = 5,
@@ -6422,6 +24782,7 @@
 		type = 11,
 		id = 2110591,
 		rare = 5,
+		limit = 0,
 		desc_source = "fcbe557fafc5754417020e9c0fb26979",
 		sub_type = 1,
 		display_rare = 5,
@@ -6437,6 +24798,7 @@
 		type = 11,
 		id = 2110961,
 		rare = 5,
+		limit = 0,
 		desc_source = "517f303b904ec185c1a46d9fdeaf3605",
 		sub_type = 1,
 		display_rare = 5,
@@ -6452,6 +24814,7 @@
 		type = 11,
 		id = 2110261,
 		rare = 5,
+		limit = 0,
 		desc_source = "0e8fd105e3bc64962eda3569ce10cf8c",
 		sub_type = 1,
 		display_rare = 5,
@@ -6467,6 +24830,7 @@
 		type = 11,
 		id = 2110971,
 		rare = 5,
+		limit = 0,
 		desc_source = "f9ed19fac03781ff26339f22a50932d0",
 		sub_type = 1,
 		display_rare = 5,
@@ -6482,6 +24846,7 @@
 		type = 11,
 		id = 2110972,
 		rare = 5,
+		limit = 0,
 		desc_source = "a4494779eb3527c20b414f09bacb008d",
 		sub_type = 1,
 		display_rare = 5,
@@ -6497,6 +24862,7 @@
 		type = 11,
 		id = 2111391,
 		rare = 5,
+		limit = 0,
 		desc_source = "5e651a690e7c674481ed43f003237ed9",
 		sub_type = 1,
 		display_rare = 5,
@@ -6512,6 +24878,7 @@
 		type = 11,
 		id = 2111392,
 		rare = 5,
+		limit = 0,
 		desc_source = "305aa270ccb5312d414dc832a99614e9",
 		sub_type = 1,
 		display_rare = 5,
@@ -6527,6 +24894,7 @@
 		type = 11,
 		id = 2111393,
 		rare = 5,
+		limit = 0,
 		desc_source = "6b00655a155da3dc54014f6f91b6e8e5",
 		sub_type = 1,
 		display_rare = 5,
@@ -6542,6 +24910,7 @@
 		type = 11,
 		id = 2111381,
 		rare = 5,
+		limit = 0,
 		desc_source = "a284d2c08437b9c65bdf052176944ce0",
 		sub_type = 1,
 		display_rare = 5,
@@ -6557,6 +24926,7 @@
 		type = 11,
 		id = 2111382,
 		rare = 5,
+		limit = 0,
 		desc_source = "0e78063f6b19be3cd912d9b1c478efdd",
 		sub_type = 1,
 		display_rare = 5,
@@ -6572,6 +24942,7 @@
 		type = 11,
 		id = 2111383,
 		rare = 5,
+		limit = 0,
 		desc_source = "9fa8d17fbc4b1b214d3aeba86b8c74c4",
 		sub_type = 1,
 		display_rare = 5,
@@ -6587,6 +24958,7 @@
 		type = 11,
 		id = 2110131,
 		rare = 5,
+		limit = 0,
 		desc_source = "7c05623a6ae6e11ad9ab68c0011a260f",
 		sub_type = 1,
 		display_rare = 5,
@@ -6602,6 +24974,7 @@
 		type = 11,
 		id = 2110132,
 		rare = 5,
+		limit = 0,
 		desc_source = "49f16ba6495b14deda3f2d43c23d8b58",
 		sub_type = 1,
 		display_rare = 5,
@@ -6617,6 +24990,7 @@
 		type = 11,
 		id = 2110561,
 		rare = 5,
+		limit = 0,
 		desc_source = "6cf8838de34f9a49b6f356a5f3f64399",
 		sub_type = 1,
 		display_rare = 5,
@@ -6632,6 +25006,7 @@
 		type = 11,
 		id = 2111111,
 		rare = 5,
+		limit = 0,
 		desc_source = "1b2a7250f2a8d25c9486e45b704d18f1",
 		sub_type = 1,
 		display_rare = 5,
@@ -6647,6 +25022,7 @@
 		type = 11,
 		id = 2111112,
 		rare = 5,
+		limit = 0,
 		desc_source = "3c718ae4fe2b267b912db96ffe4c137c",
 		sub_type = 1,
 		display_rare = 5,
@@ -6662,6 +25038,7 @@
 		type = 11,
 		id = 2111113,
 		rare = 5,
+		limit = 0,
 		desc_source = "c69d4fef36e3d2f106f87f7271baad87",
 		sub_type = 1,
 		display_rare = 5,
@@ -6677,6 +25054,7 @@
 		type = 11,
 		id = 2110321,
 		rare = 5,
+		limit = 0,
 		desc_source = "a3d41eb87723329276d1f00cae3bf9f0",
 		sub_type = 1,
 		display_rare = 5,
@@ -6692,6 +25070,7 @@
 		type = 11,
 		id = 2110322,
 		rare = 5,
+		limit = 0,
 		desc_source = "2970e8bb70337551e6b17855021409cf",
 		sub_type = 1,
 		display_rare = 5,
@@ -6707,6 +25086,7 @@
 		type = 11,
 		id = 2110351,
 		rare = 5,
+		limit = 0,
 		desc_source = "67ad1218dc17f645246ba455ce7c4865",
 		sub_type = 1,
 		display_rare = 5,
@@ -6722,6 +25102,7 @@
 		type = 11,
 		id = 2111271,
 		rare = 5,
+		limit = 0,
 		desc_source = "164f693af276dac4cc38e37b7e16abc9",
 		sub_type = 1,
 		display_rare = 5,
@@ -6737,6 +25118,7 @@
 		type = 11,
 		id = 2110811,
 		rare = 5,
+		limit = 0,
 		desc_source = "75b66b40be33726745d6bf4ace1e0ffb",
 		sub_type = 1,
 		display_rare = 5,
@@ -6752,6 +25134,7 @@
 		type = 11,
 		id = 2111191,
 		rare = 5,
+		limit = 0,
 		desc_source = "c407a3408d89d28dca29686517952dbf",
 		sub_type = 1,
 		display_rare = 5,
@@ -6767,6 +25150,7 @@
 		type = 11,
 		id = 2110421,
 		rare = 5,
+		limit = 0,
 		desc_source = "e9d645babc829d0af648fbdb9656e51a",
 		sub_type = 1,
 		display_rare = 5,
@@ -6782,6 +25166,7 @@
 		type = 11,
 		id = 2110422,
 		rare = 5,
+		limit = 0,
 		desc_source = "1521b4dfd05ef804f37f3437dadadec0",
 		sub_type = 1,
 		display_rare = 5,
@@ -6797,6 +25182,7 @@
 		type = 11,
 		id = 2110423,
 		rare = 5,
+		limit = 0,
 		desc_source = "bd5a319e87cd491f5e44e5fe1273bdf3",
 		sub_type = 1,
 		display_rare = 5,
@@ -6812,6 +25198,7 @@
 		type = 11,
 		id = 2110424,
 		rare = 5,
+		limit = 0,
 		desc_source = "039379ab2bc82c419301524ac3fa0b52",
 		sub_type = 1,
 		display_rare = 5,
@@ -6827,6 +25214,7 @@
 		type = 11,
 		id = 2110411,
 		rare = 5,
+		limit = 0,
 		desc_source = "901ad4d50ac15a4085c45c67091e23b9",
 		sub_type = 1,
 		display_rare = 5,
@@ -6842,6 +25230,7 @@
 		type = 11,
 		id = 2110412,
 		rare = 5,
+		limit = 0,
 		desc_source = "b9a0f88318d0f7a1dc6b92820a81ba41",
 		sub_type = 1,
 		display_rare = 5,
@@ -6857,6 +25246,7 @@
 		type = 11,
 		id = 2110413,
 		rare = 5,
+		limit = 0,
 		desc_source = "6df1dd3433ef7319514f7b948eed9ad7",
 		sub_type = 1,
 		display_rare = 5,
@@ -6872,6 +25262,7 @@
 		type = 11,
 		id = 2110331,
 		rare = 5,
+		limit = 0,
 		desc_source = "3d94682332be4e12aa9ad1eff441aeab",
 		sub_type = 1,
 		display_rare = 5,
@@ -6887,6 +25278,7 @@
 		type = 11,
 		id = 2110681,
 		rare = 5,
+		limit = 0,
 		desc_source = "6d180161a42216c7ac188489bccf662e",
 		sub_type = 1,
 		display_rare = 5,
@@ -6902,6 +25294,7 @@
 		type = 11,
 		id = 2110671,
 		rare = 5,
+		limit = 0,
 		desc_source = "ca0c19152c7e59fd0fd8ee3221c0c42a",
 		sub_type = 1,
 		display_rare = 5,
@@ -6917,6 +25310,7 @@
 		type = 11,
 		id = 2110161,
 		rare = 5,
+		limit = 0,
 		desc_source = "e9cf4c4e7cb847fa1d89b95ea94d84a4",
 		sub_type = 1,
 		display_rare = 5,
@@ -6932,6 +25326,7 @@
 		type = 11,
 		id = 2110171,
 		rare = 5,
+		limit = 0,
 		desc_source = "1091811d661e575211084240dc971e02",
 		sub_type = 1,
 		display_rare = 5,
@@ -6947,6 +25342,7 @@
 		type = 11,
 		id = 2110172,
 		rare = 5,
+		limit = 0,
 		desc_source = "629b716191b9794b7f987dc45c72dcea",
 		sub_type = 1,
 		display_rare = 5,
@@ -6962,6 +25358,7 @@
 		type = 11,
 		id = 2110241,
 		rare = 5,
+		limit = 0,
 		desc_source = "8b28415445118407ea40015e4c5bcd8a",
 		sub_type = 1,
 		display_rare = 5,
@@ -6977,6 +25374,7 @@
 		type = 11,
 		id = 2110521,
 		rare = 5,
+		limit = 0,
 		desc_source = "98d739dd72cf203e66462882bba7aedd",
 		sub_type = 1,
 		display_rare = 5,
@@ -6992,6 +25390,7 @@
 		type = 11,
 		id = 2110522,
 		rare = 5,
+		limit = 0,
 		desc_source = "1e41b35bfdcc8a4722609daa7209860c",
 		sub_type = 1,
 		display_rare = 5,
@@ -7007,6 +25406,7 @@
 		type = 11,
 		id = 2110281,
 		rare = 5,
+		limit = 0,
 		desc_source = "68d306fac8c743dbbc0315b219787696",
 		sub_type = 1,
 		display_rare = 5,
@@ -7022,6 +25422,7 @@
 		type = 11,
 		id = 2110282,
 		rare = 5,
+		limit = 0,
 		desc_source = "8b775831776b30522354288eb52a2c35",
 		sub_type = 1,
 		display_rare = 5,
@@ -7037,6 +25438,7 @@
 		type = 11,
 		id = 2111321,
 		rare = 5,
+		limit = 0,
 		desc_source = "67e31fa815f415f4a8d7f2b50042c550",
 		sub_type = 1,
 		display_rare = 5,
@@ -7052,6 +25454,7 @@
 		type = 11,
 		id = 2110701,
 		rare = 5,
+		limit = 0,
 		desc_source = "6cabcd326d88c5c9fb5e30fa6b7d700e",
 		sub_type = 1,
 		display_rare = 5,
@@ -7067,6 +25470,7 @@
 		type = 11,
 		id = 2110702,
 		rare = 5,
+		limit = 0,
 		desc_source = "769b7ed89a4163ca94c402a750438f4c",
 		sub_type = 1,
 		display_rare = 5,
@@ -7082,6 +25486,7 @@
 		type = 11,
 		id = 2110711,
 		rare = 5,
+		limit = 0,
 		desc_source = "540a17bf963cec02c544003a7295fcb2",
 		sub_type = 1,
 		display_rare = 5,
@@ -7097,6 +25502,7 @@
 		type = 11,
 		id = 2110712,
 		rare = 5,
+		limit = 0,
 		desc_source = "a2831c42589914ee427f96f3bd7599c6",
 		sub_type = 1,
 		display_rare = 5,
@@ -7112,6 +25518,7 @@
 		type = 11,
 		id = 2110741,
 		rare = 5,
+		limit = 0,
 		desc_source = "1fff45538684e7944d8fdf956717c330",
 		sub_type = 1,
 		display_rare = 5,
@@ -7127,6 +25534,7 @@
 		type = 11,
 		id = 2110742,
 		rare = 5,
+		limit = 0,
 		desc_source = "c16b01e0a82d560c2fc5b3b5e0b924c9",
 		sub_type = 1,
 		display_rare = 5,
@@ -7142,6 +25550,7 @@
 		type = 11,
 		id = 2110743,
 		rare = 5,
+		limit = 0,
 		desc_source = "22e61dd489f23c74b704007b9061d1bf",
 		sub_type = 1,
 		display_rare = 5,
@@ -7157,6 +25566,7 @@
 		type = 11,
 		id = 2110751,
 		rare = 5,
+		limit = 0,
 		desc_source = "513a6f752ca913be66fef12580ea5bd4",
 		sub_type = 1,
 		display_rare = 5,
@@ -7172,6 +25582,7 @@
 		type = 11,
 		id = 2110752,
 		rare = 5,
+		limit = 0,
 		desc_source = "e8a04c5ff6a4ab0707c50bef66bf74ec",
 		sub_type = 1,
 		display_rare = 5,
@@ -7187,6 +25598,7 @@
 		type = 11,
 		id = 2110753,
 		rare = 5,
+		limit = 0,
 		desc_source = "883d11106271292d5303e97532b35efd",
 		sub_type = 1,
 		display_rare = 5,
@@ -7202,6 +25614,7 @@
 		type = 11,
 		id = 2110721,
 		rare = 5,
+		limit = 0,
 		desc_source = "4476dade3b1f17d65ed73e27ad18fba9",
 		sub_type = 1,
 		display_rare = 5,
@@ -7217,6 +25630,7 @@
 		type = 11,
 		id = 2110761,
 		rare = 5,
+		limit = 0,
 		desc_source = "2a8cd95669b3b48b2ab7b2219d590ee5",
 		sub_type = 1,
 		display_rare = 5,
@@ -7232,6 +25646,7 @@
 		type = 11,
 		id = 2110762,
 		rare = 5,
+		limit = 0,
 		desc_source = "705808662d7eb01c1660b7c2092e5aa4",
 		sub_type = 1,
 		display_rare = 5,
@@ -7247,6 +25662,7 @@
 		type = 11,
 		id = 2110763,
 		rare = 5,
+		limit = 0,
 		desc_source = "d0e99cafde1d18ccc2b0440dbec875c3",
 		sub_type = 1,
 		display_rare = 5,
@@ -7262,6 +25678,7 @@
 		type = 11,
 		id = 2110944,
 		rare = 5,
+		limit = 0,
 		desc_source = "25f709ff30978d81d0c0943ba1504796",
 		sub_type = 1,
 		display_rare = 5,
@@ -7277,6 +25694,7 @@
 		type = 11,
 		id = 2110722,
 		rare = 5,
+		limit = 0,
 		desc_source = "3aa074b620d5793fde5bd91725a0acef",
 		sub_type = 1,
 		display_rare = 5,
@@ -7292,6 +25710,7 @@
 		type = 11,
 		id = 2110601,
 		rare = 5,
+		limit = 0,
 		desc_source = "348ddd267badf19f49037850a5493abe",
 		sub_type = 1,
 		display_rare = 5,
@@ -7307,6 +25726,7 @@
 		type = 11,
 		id = 2110602,
 		rare = 5,
+		limit = 0,
 		desc_source = "721f07399f7a10fe0b8dfeea7926bf8b",
 		sub_type = 1,
 		display_rare = 5,
@@ -7322,6 +25742,7 @@
 		type = 11,
 		id = 2110611,
 		rare = 5,
+		limit = 0,
 		desc_source = "2eed4a991427c34202e65f93e9f80521",
 		sub_type = 1,
 		display_rare = 5,
@@ -7337,6 +25758,7 @@
 		type = 11,
 		id = 2110612,
 		rare = 5,
+		limit = 0,
 		desc_source = "c79d39546c637f3697b366ac5d2eac74",
 		sub_type = 1,
 		display_rare = 5,
@@ -7352,6 +25774,7 @@
 		type = 11,
 		id = 2111501,
 		rare = 5,
+		limit = 0,
 		desc_source = "75dc361d394d9dac76bf4f1bb3790628",
 		sub_type = 1,
 		display_rare = 5,
@@ -7367,6 +25790,7 @@
 		type = 11,
 		id = 2111502,
 		rare = 5,
+		limit = 0,
 		desc_source = "062a78bd05358e30aca70f33f3e29007",
 		sub_type = 1,
 		display_rare = 5,
@@ -7382,6 +25806,7 @@
 		type = 11,
 		id = 2110151,
 		rare = 5,
+		limit = 0,
 		desc_source = "140921348cfcf57c346c1637401d1997",
 		sub_type = 1,
 		display_rare = 5,
@@ -7397,6 +25822,7 @@
 		type = 11,
 		id = 2110152,
 		rare = 5,
+		limit = 0,
 		desc_source = "723255337a1a0e2e454c63ef3238f994",
 		sub_type = 1,
 		display_rare = 5,
@@ -7412,6 +25838,7 @@
 		type = 11,
 		id = 2110951,
 		rare = 5,
+		limit = 0,
 		desc_source = "fbf8dc89e50bc90183c759d3837c5660",
 		sub_type = 1,
 		display_rare = 5,
@@ -7427,10 +25854,27 @@
 		type = 11,
 		id = 2110952,
 		rare = 5,
+		limit = 0,
 		desc_source = "363c64496cb208cc01c72a49004328cf",
 		sub_type = 1,
 		display_rare = 5,
 		icon = "109501",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2110953] = {
+		decompose_id = 0,
+		name = "acf8a1685f492744ec9d50fff4d0d176",
+		compose_id = 0,
+		type = 11,
+		id = 2110953,
+		rare = 5,
+		limit = 0,
+		desc_source = "5776a6553705add32eba213df663f918",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "109502",
 		use = 0,
 		max = 0,
 		source = {}
@@ -7442,6 +25886,7 @@
 		type = 11,
 		id = 2112841,
 		rare = 5,
+		limit = 0,
 		desc_source = "2dcfb606238add6af55616a3d8f3e45a",
 		sub_type = 1,
 		display_rare = 5,
@@ -7456,6 +25901,7 @@
 		compose_id = 0,
 		type = 11,
 		id = 2112842,
+		limit = 0,
 		rare = 5,
 		desc_source = "6cdc736e2d2d2e308992a6003849778e",
 		sub_type = 1,
@@ -7471,6 +25917,7 @@
 		type = 11,
 		id = 2111971,
 		rare = 5,
+		limit = 0,
 		desc_source = "98782e29a19275e748dbdbd1dc874ad3",
 		sub_type = 1,
 		display_rare = 5,
@@ -7486,10 +25933,171 @@
 		type = 11,
 		id = 2111972,
 		rare = 5,
+		limit = 0,
 		desc_source = "38603822f5ea35f093adc48249de72ac",
 		sub_type = 1,
 		display_rare = 5,
 		icon = "119701",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2110221] = {
+		decompose_id = 0,
+		name = "99e640480c52f685febae288807cdb55",
+		compose_id = 0,
+		type = 11,
+		id = 2110221,
+		rare = 5,
+		limit = 0,
+		desc_source = "92cfc3ac8988e74d3ff0fe8f6225a621",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "1022",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2110222] = {
+		decompose_id = 0,
+		name = "98d2b52a34e25168ec07c05617f434a1",
+		compose_id = 0,
+		type = 11,
+		id = 2110222,
+		rare = 5,
+		limit = 0,
+		desc_source = "4f1fd840ac91cd83b4f2de02c9a6f05a",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "102201",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2110211] = {
+		decompose_id = 0,
+		name = "34f6f023580154a03219cfa8ef62afc1",
+		compose_id = 0,
+		type = 11,
+		id = 2110211,
+		rare = 5,
+		limit = 0,
+		desc_source = "a2cf7a5f2d6393b89cc91f3b0b1e0544",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "1021",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2110212] = {
+		decompose_id = 0,
+		name = "3741ab30cdde8bcaa692af82e29ae08c",
+		compose_id = 0,
+		type = 11,
+		id = 2110212,
+		rare = 5,
+		limit = 0,
+		desc_source = "74e384b2629654be0a81defa9ba11150",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "102101",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2110201] = {
+		decompose_id = 0,
+		name = "bc526fb4b11c9641b961db0d1ae8f3d9",
+		compose_id = 0,
+		type = 11,
+		id = 2110201,
+		rare = 5,
+		limit = 0,
+		desc_source = "a133db192c88bf9af5e836c79cb5cefc",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "1020",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2110202] = {
+		decompose_id = 0,
+		name = "e1636b6a64c1be13d036895e6b08a1b3",
+		compose_id = 0,
+		type = 11,
+		id = 2110202,
+		rare = 5,
+		limit = 0,
+		desc_source = "632a37749ecde12be20159e5afe0a7f4",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "102001",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2111561] = {
+		decompose_id = 0,
+		name = "6eaf624e41e966b1558c47ff41613b59",
+		compose_id = 0,
+		type = 11,
+		id = 2111561,
+		rare = 5,
+		limit = 0,
+		desc_source = "c0aa36c055e38fa132368103aa3eb354",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "1156",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2111562] = {
+		decompose_id = 0,
+		name = "64666c4d845740533ff566bcb3e15af6",
+		compose_id = 0,
+		type = 11,
+		id = 2111562,
+		rare = 5,
+		limit = 0,
+		desc_source = "120d342875d13b7892b603ebfc159ce6",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "115601",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2110891] = {
+		decompose_id = 0,
+		name = "8c87ab2398999b648a7829314b70bac7",
+		compose_id = 0,
+		type = 11,
+		id = 2110891,
+		rare = 5,
+		limit = 0,
+		desc_source = "ded524d828d0e7aaceeaecb6b6184cd6",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "1089",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2110892] = {
+		decompose_id = 0,
+		name = "bede293cabf7e955127cf91ef05b6cb9",
+		compose_id = 0,
+		type = 11,
+		id = 2110892,
+		rare = 5,
+		limit = 0,
+		desc_source = "8305854f3230dca52a2066b22bd9f7c1",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "108901",
 		use = 0,
 		max = 0,
 		source = {}
@@ -7504,6 +26112,7 @@
 		desc = "a11f0c46c1ca626e66335884e062b20a",
 		desc_source = "e2e208c7506de2eb072c7c4f32b6582d",
 		sub_type = 1,
+		limit = 0,
 		display_rare = 5,
 		icon = "2200002",
 		use = 0,
@@ -7520,6 +26129,7 @@
 		desc = "6ecbaa36eb301a8eb2dceaa72e32ac2e",
 		desc_source = "54ebbc33f5ec4f397e255686625991e8",
 		sub_type = 1,
+		limit = 0,
 		display_rare = 5,
 		icon = "2200003",
 		use = 0,
@@ -7536,6 +26146,7 @@
 		desc = "c382389787847b27c8ea4cf945a5a667",
 		desc_source = "16aa2ecde58aae23542c48aa57844f53",
 		sub_type = 1,
+		limit = 0,
 		display_rare = 5,
 		icon = "2200004",
 		use = 0,
@@ -7552,6 +26163,7 @@
 		desc = "f562c0e433c418a7a9d02502b2b4e931",
 		desc_source = "9a57a91ae22a5eb4a9adccf397591b7c",
 		sub_type = 1,
+		limit = 0,
 		display_rare = 5,
 		icon = "2200005",
 		use = 0,
@@ -7568,6 +26180,7 @@
 		desc = "e3429186d91b67092d297a11e053379b",
 		desc_source = "3fc26c389e7f34beb2b2b020cab34801",
 		sub_type = 1,
+		limit = 0,
 		display_rare = 5,
 		icon = "2200006",
 		use = 0,
@@ -7583,6 +26196,7 @@
 		desc = "c065bbd9a6b50a24d6ea71a3b148bff1",
 		desc_source = "e0993742635bb95d6e3e021b6f33d3fb",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "103901",
 		use = 0,
@@ -7601,6 +26215,7 @@
 		desc = "fdeb8bd968f5260b74d7662e6c797ac7",
 		desc_source = "3f135e243ef53117495c7ba3a206acf5",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "103906",
 		use = 0,
@@ -7619,6 +26234,7 @@
 		desc = "b24daa5e81c2444c3c9b3faa4c121f90",
 		desc_source = "eb5495ff693c232c4ca28be869f9edee",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "114801",
 		use = 0,
@@ -7637,6 +26253,7 @@
 		desc = "86129307a6cc87398bcebf97f9a20717",
 		desc_source = "1e273db4bf8b0bcc008dde83eb010885",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "102701",
 		use = 0,
@@ -7655,6 +26272,7 @@
 		desc = "c06eba33565a1315bdee9549eb9495d6",
 		desc_source = "e8b6e6bbfab9e235e1f3e6e8e3d248c1",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "103701",
 		use = 0,
@@ -7673,6 +26291,7 @@
 		desc = "dfac2d64936dec1829390a356eaabd48",
 		desc_source = "92ab5bf0423ff6990be9f578c32deb97",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "101301",
 		use = 0,
@@ -7691,6 +26310,7 @@
 		desc = "0b302163e27511165ae1615752f447af",
 		desc_source = "a1f1132ff89c041d8087dd536f637c7d",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "109402",
 		use = 0,
@@ -7709,6 +26329,7 @@
 		desc = "799cbe0c3995ddae143dd3816d263185",
 		desc_source = "651e6d2fd7b0803f79a9ffb9d3cb6a0c",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "104801",
 		use = 0,
@@ -7727,6 +26348,7 @@
 		desc = "08cedcd17b705d37c3c191807ab54070",
 		desc_source = "a6b6eb9dac57576554b8b45ac13b4640",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "106603",
 		use = 0,
@@ -7745,6 +26367,7 @@
 		desc = "4852b1a7205d5a25727962b87edf11d3",
 		desc_source = "96aab2e1b60f8b1067e2f80b67891d66",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "109303",
 		use = 0,
@@ -7763,6 +26386,7 @@
 		desc = "28a002ecc65391a9aeda244cfe436df5",
 		desc_source = "a753c5afa4df71e64c9f6bbe28a220e2",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "109304",
 		use = 0,
@@ -7781,6 +26405,7 @@
 		desc = "abd4472322d3c660fe32f26395ef679b",
 		desc_source = "8b5706779f678543f3fb01938be0a4e1",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "105804",
 		use = 0,
@@ -7799,6 +26424,7 @@
 		desc = "fd56b6fe356a3a03e8b9d9077fa05758",
 		desc_source = "545450875dcf3b53b346bde13081faca",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "104201",
 		use = 0,
@@ -7817,6 +26443,7 @@
 		desc = "2f0fc6667cd98161309d93cf5c16f48e",
 		desc_source = "da5791d0a7782fdcb732a14d64749eef",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "104204",
 		use = 0,
@@ -7835,6 +26462,7 @@
 		desc = "79d20178fa0a33b69cd62bbf760bb6bf",
 		desc_source = "222eefd14bf7ebd868021a6dc1e62cee",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "119901",
 		use = 0,
@@ -7853,6 +26481,7 @@
 		desc = "6356b2316eb2457facb356b4b2d92d82",
 		desc_source = "9ba7e000b96408f52f9905356f69d2ec",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "119904",
 		use = 0,
@@ -7871,6 +26500,7 @@
 		desc = "66d12826dbd4267a995c17a5393989e6",
 		desc_source = "4a4e596c5b454263784598512af0c9e8",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "103203",
 		use = 0,
@@ -7889,6 +26519,7 @@
 		desc = "19234214489b9b540c5857c58c8121a2",
 		desc_source = "1f9da4ce1ee82ac473044285d37586c1",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "104101",
 		use = 0,
@@ -7907,6 +26538,7 @@
 		desc = "6e24d296effee3acd7a035fe7f891a23",
 		desc_source = "d9c172d6e22ace289cb4dd76d162cd0a",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "104103",
 		use = 0,
@@ -7925,6 +26557,7 @@
 		desc = "a21772a5f9f695d19b65b2f0d95aedf8",
 		desc_source = "7be4272970a4ea04e5fff86d3d32297a",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "105201",
 		use = 0,
@@ -7943,6 +26576,7 @@
 		desc = "54085695b755aa8bc2e1273464f5a364",
 		desc_source = "d1a31a563776ca727a3dd00ff4ddf451",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "101701",
 		use = 0,
@@ -7961,6 +26595,7 @@
 		desc = "f0c13b627c4824d6dc8773f434625f62",
 		desc_source = "60604fde9448a149287d8b000cc0dcaa",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "113801",
 		use = 0,
@@ -7979,6 +26614,7 @@
 		desc = "db23477a1b48851c43837314e4fe50de",
 		desc_source = "5034cd24d2a7a57298a0d3e6cf7740c5",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "102801",
 		use = 0,
@@ -7997,6 +26633,7 @@
 		desc = "347d8c341c7eb3384f0740adcb30686c",
 		desc_source = "9e550955b8277f8be4c525da39f3304a",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "113903",
 		use = 0,
@@ -8015,6 +26652,7 @@
 		desc = "0ada436f0f0cce75520dce2106d87189",
 		desc_source = "6a071cc8bcdaaa6e92abbab1d8db19e1",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "106604",
 		use = 0,
@@ -8033,6 +26671,7 @@
 		desc = "a94b60dc87d7158076ebf12f2b1ff99d",
 		desc_source = "aae45e344d9daf010276cdd95b560aef",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "111101",
 		use = 0,
@@ -8051,6 +26690,7 @@
 		desc = "82c45a1f0f044c8f898c42fabb75ddea",
 		desc_source = "36efd54f665c4bd33b40f7bd7cac9cde",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "108403",
 		use = 0,
@@ -8069,6 +26709,7 @@
 		desc = "bec568289926297a7140c1299d1b2d8a",
 		desc_source = "ebe1fa56eea9af8a98c3cac18d2ba17e",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "108404",
 		use = 0,
@@ -8087,6 +26728,7 @@
 		desc = "5f6b3848ebbad67a36e4402eaad3ad80",
 		desc_source = "586b22181f844860ffdebf1118933774",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "109701",
 		use = 0,
@@ -8105,6 +26747,7 @@
 		desc = "10b38736b45063503d6f4f29ff396c24",
 		desc_source = "283c2c4dc1a10672d3f3a1b0eadb5d46",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "107601",
 		use = 0,
@@ -8123,6 +26766,7 @@
 		desc = "c237d51c9df5bbaeab09e3debe6fd6ae",
 		desc_source = "4bace7a27307e64bde28c546ca74b40a",
 		sub_type = 0,
+		limit = 1,
 		display_rare = 5,
 		icon = "107602",
 		use = 0,
@@ -8130,7 +26774,13 @@
 		param = {
 			107602
 		},
-		source = {}
+		source = {},
+		num_exchange_item = {
+			{
+				1,
+				1000
+			}
+		}
 	},
 	[109404] = {
 		id = 109404,
@@ -8141,6 +26791,7 @@
 		desc = "365c6600a7e87d64b177395740106ad2",
 		desc_source = "71cf298d9ecdeff7c5240b721dbc11a2",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "109404",
 		use = 0,
@@ -8159,6 +26810,7 @@
 		desc = "3ae6c671f03c802bd2418774956d0244",
 		desc_source = "455d026abbde87beb53f933750259cec",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "107001",
 		use = 0,
@@ -8177,6 +26829,7 @@
 		desc = "8432b28ea9df83e9c3aa68aaab37f74f",
 		desc_source = "ce627b3a61ac321ede4c7f877821dda3",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "107201",
 		use = 0,
@@ -8195,6 +26848,7 @@
 		desc = "bf07cf589be9499e4b5546a65eabb420",
 		desc_source = "28fa10e6fbff3ad96c88e8af98179c78",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "107401",
 		use = 0,
@@ -8213,6 +26867,7 @@
 		desc = "76e0a40c358462eed834679aeba66358",
 		desc_source = "fd269f094c6679ad32bb6550774017f0",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "107402",
 		use = 0,
@@ -8231,6 +26886,7 @@
 		desc = "566ef29577d28aece523af0854742ca6",
 		desc_source = "5e2b71b96b761a271e76aa64fe8e4ebe",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "104205",
 		use = 0,
@@ -8249,6 +26905,7 @@
 		desc = "1fc4a1d18329a75288937bc08cec0fd8",
 		desc_source = "4ddc2727db0ad1dd48f1bbe143ecd2b8",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "105501",
 		use = 0,
@@ -8267,6 +26924,7 @@
 		desc = "ba9bc904ec8b5411b982a63cc466a060",
 		desc_source = "1a1b0d60dbdd4bdd3664de4ac0dc325f",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "107501",
 		use = 0,
@@ -8285,6 +26943,7 @@
 		desc = "ce42d8d15f9a2fb600a47e29adc1030b",
 		desc_source = "02b5b1d4b28eb227cd1b9efc4077fa94",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "107502",
 		use = 0,
@@ -8303,6 +26962,7 @@
 		desc = "7a645e6cf1a3d429180f8dbf8ba21571",
 		desc_source = "c1db92332a06c9369a922569bcd5b675",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "104901",
 		use = 0,
@@ -8322,6 +26982,7 @@
 		desc_source = "4544e5aea1eee7c608c6dfbda2515e80",
 		sub_type = 0,
 		decompose_id = 0,
+		limit = 0,
 		id = 113803,
 		icon = "113803",
 		use = 0,
@@ -8340,6 +27001,7 @@
 		desc = "1ab0d4130edcca1d8fa6a7d768263321",
 		desc_source = "6882d113b9eaeeca16f7fdc726738bde",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "106001",
 		use = 0,
@@ -8359,6 +27021,7 @@
 		desc_source = "e8c069b06d81de635889b9f9d5098503",
 		sub_type = 0,
 		decompose_id = 0,
+		limit = 0,
 		id = 107101,
 		icon = "107101",
 		use = 0,
@@ -8377,6 +27040,7 @@
 		desc = "a623c4dd7320ad1ed911c97140c75247",
 		desc_source = "c2f3a2028fa4ebfc072b70a94c8711c7",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "106101",
 		use = 0,
@@ -8395,6 +27059,7 @@
 		desc = "6f1848124c508f0fd41c29f5a2ba60b8",
 		desc_source = "4cbd571e5d6e485d1a463048e0656cdf",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "111102",
 		use = 0,
@@ -8413,6 +27078,7 @@
 		desc = "eff86477dd26214b1f2c93f6c484e672",
 		desc_source = "d6a7de408e3b77fbeb2b7f60b0e9fcf6",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "115001",
 		use = 0,
@@ -8431,6 +27097,7 @@
 		desc = "cf31739c5f659da75dd78552e3722723",
 		desc_source = "995d4bd188d856327bc9ec23be29cc62",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "101501",
 		use = 0,
@@ -8449,6 +27116,7 @@
 		desc = "d2c360ba38618c7c5e4a22beffbe7060",
 		desc_source = "9a2192a22cd193d0387dba75ad201853",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "109501",
 		use = 0,
@@ -8467,6 +27135,7 @@
 		desc = "580501bac25a70c0b7177d4a291496e4",
 		desc_source = "1a1d11ba775abd7ffdc3ec1c1891a504",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "128401",
 		use = 0,
@@ -8485,12 +27154,32 @@
 		desc = "72b1da0b62d28eb64960b9152af64e87",
 		desc_source = "3fdf4b92714ce3b5c0fa39016fd14240",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "119701",
 		use = 0,
 		max = 0,
 		param = {
 			119701
+		},
+		source = {}
+	},
+	[104902] = {
+		id = 104902,
+		compose_id = 0,
+		type = 8,
+		decompose_id = 0,
+		rare = 5,
+		desc = "33e49261d66c6442c757ec3b92517559",
+		desc_source = "2d78b8ad541abb0045d431f4f260f83b",
+		sub_type = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "104902",
+		use = 0,
+		max = 0,
+		param = {
+			104902
 		},
 		source = {}
 	},
@@ -8503,12 +27192,127 @@
 		desc = "22e89fd1bda8911bd10e1bcd11fc3486",
 		desc_source = "ae750ae49c00075281a989990229efa0",
 		sub_type = 0,
+		limit = 0,
 		display_rare = 5,
 		icon = "113907",
 		use = 0,
 		max = 0,
 		param = {
 			113907
+		},
+		source = {}
+	},
+	[102201] = {
+		id = 102201,
+		compose_id = 0,
+		type = 8,
+		decompose_id = 0,
+		rare = 5,
+		desc = "4652bde5df50e0da57c50ce48de479c3",
+		desc_source = "ceb9f7682672356c562709e8fe0e858c",
+		sub_type = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "102201",
+		use = 0,
+		max = 0,
+		param = {
+			102201
+		},
+		source = {}
+	},
+	[102101] = {
+		id = 102101,
+		compose_id = 0,
+		type = 8,
+		decompose_id = 0,
+		rare = 5,
+		desc = "9624f2b09a77c65edb7a642d58f451bf",
+		desc_source = "6e22a9cc1b853b699efd47b4a424c70b",
+		sub_type = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "102101",
+		use = 0,
+		max = 0,
+		param = {
+			102101
+		},
+		source = {}
+	},
+	[102001] = {
+		id = 102001,
+		compose_id = 0,
+		type = 8,
+		decompose_id = 0,
+		rare = 5,
+		desc = "270417f8142a734bfa35594f4d341229",
+		desc_source = "2c575f587842a945bec243b1ebe43e3d",
+		sub_type = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "102001",
+		use = 0,
+		max = 0,
+		param = {
+			102001
+		},
+		source = {}
+	},
+	[115601] = {
+		id = 115601,
+		compose_id = 0,
+		type = 8,
+		decompose_id = 0,
+		rare = 5,
+		desc = "9da005927e183a0205a90f3c2000dec5",
+		desc_source = "8f605c4e2d68cb6ea395ecc98cf45989",
+		sub_type = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "115601",
+		use = 0,
+		max = 0,
+		param = {
+			115601
+		},
+		source = {}
+	},
+	[109502] = {
+		id = 109502,
+		compose_id = 0,
+		type = 8,
+		decompose_id = 0,
+		rare = 5,
+		desc = "d537d7333e3d96f018bff259b1cf0c00",
+		desc_source = "3f0d94da67f5fb21730d0ca27e67c941",
+		sub_type = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "109502",
+		use = 0,
+		max = 0,
+		param = {
+			109502
+		},
+		source = {}
+	},
+	[108901] = {
+		id = 108901,
+		compose_id = 0,
+		type = 8,
+		decompose_id = 0,
+		rare = 5,
+		desc = "cf11ec35db41ebf186edea6837a9f627",
+		desc_source = "409821a194cdd3407639f8b1c476926f",
+		sub_type = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "108901",
+		use = 0,
+		max = 0,
+		param = {
+			108901
 		},
 		source = {}
 	},
@@ -8521,6 +27325,7 @@
 		decompose_id = 0,
 		desc_source = "f00beb1f02e328fc67a80b36f290feac",
 		sub_type = 0,
+		limit = 0,
 		id = 1037011,
 		icon = "1037011",
 		use = 1,
@@ -8539,6 +27344,7 @@
 		decompose_id = 0,
 		desc_source = "71263cd4ff795c4d5864db90270c185d",
 		sub_type = 0,
+		limit = 0,
 		id = 1013011,
 		icon = "1013011",
 		use = 1,
@@ -8557,6 +27363,7 @@
 		decompose_id = 0,
 		desc_source = "70339b5e5f012047f1252521aaa74461",
 		sub_type = 0,
+		limit = 0,
 		id = 1094021,
 		icon = "1094021",
 		use = 1,
@@ -8575,6 +27382,7 @@
 		decompose_id = 0,
 		desc_source = "14e2e6a3ae6be6806047e128d4b5cde3",
 		sub_type = 0,
+		limit = 0,
 		id = 1048011,
 		icon = "1048011",
 		use = 1,
@@ -8593,6 +27401,7 @@
 		decompose_id = 0,
 		desc_source = "461d578cfb787e2308eec1bbf531f4bf",
 		sub_type = 0,
+		limit = 0,
 		id = 1093031,
 		icon = "1093031",
 		use = 1,
@@ -8611,6 +27420,7 @@
 		decompose_id = 0,
 		desc_source = "9298eefd19634dfdf3020679f63ba1c5",
 		sub_type = 0,
+		limit = 0,
 		id = 1042011,
 		icon = "1042011",
 		use = 1,
@@ -8629,6 +27439,7 @@
 		decompose_id = 0,
 		desc_source = "0d50d77dff0a30ed9141ef8e3df41f8c",
 		sub_type = 0,
+		limit = 0,
 		id = 1199011,
 		icon = "1199011",
 		use = 1,
@@ -8647,6 +27458,7 @@
 		decompose_id = 0,
 		desc_source = "b13650e05ac668c58f56a7c0d980239f",
 		sub_type = 0,
+		limit = 0,
 		id = 1032031,
 		icon = "1032031",
 		use = 1,
@@ -8665,6 +27477,7 @@
 		decompose_id = 0,
 		desc_source = "b4179841b04180083bfba5793b3db46c",
 		sub_type = 0,
+		limit = 0,
 		id = 1017011,
 		icon = "1017011",
 		use = 1,
@@ -8683,6 +27496,7 @@
 		decompose_id = 0,
 		desc_source = "cb9146d1d401b9c12d0806a396b69a7d",
 		sub_type = 0,
+		limit = 0,
 		id = 1138011,
 		icon = "1138011",
 		use = 1,
@@ -8701,6 +27515,7 @@
 		decompose_id = 0,
 		desc_source = "ed0457040bca7d41c182d347ea053fd2",
 		sub_type = 0,
+		limit = 0,
 		id = 1139031,
 		icon = "1139031",
 		use = 1,
@@ -8719,6 +27534,7 @@
 		decompose_id = 0,
 		desc_source = "c7c8059788c655868cd7a5aa3f98e21f",
 		sub_type = 0,
+		limit = 0,
 		id = 1111011,
 		icon = "1111011",
 		use = 1,
@@ -8737,6 +27553,7 @@
 		decompose_id = 0,
 		desc_source = "a78f5e08151510b802e6665c2155c9c2",
 		sub_type = 0,
+		limit = 0,
 		id = 1028011,
 		icon = "1028011",
 		use = 1,
@@ -8755,6 +27572,7 @@
 		decompose_id = 0,
 		desc_source = "18d3fae2096fdf6f45c593d37b7a4adf",
 		sub_type = 0,
+		limit = 0,
 		id = 1042041,
 		icon = "1042041",
 		use = 1,
@@ -8773,6 +27591,7 @@
 		decompose_id = 0,
 		desc_source = "fa5de2b7968f499491ce367483b8b67c",
 		sub_type = 0,
+		limit = 0,
 		id = 1039061,
 		icon = "1039061",
 		use = 1,
@@ -8791,6 +27610,7 @@
 		decompose_id = 0,
 		desc_source = "fee2ce001b2ecbce451e0d93bf2b49de",
 		sub_type = 0,
+		limit = 0,
 		id = 1076011,
 		icon = "1076011",
 		use = 1,
@@ -8809,6 +27629,7 @@
 		decompose_id = 0,
 		desc_source = "98473fe055503c809c497e2b177ae329",
 		sub_type = 0,
+		limit = 0,
 		id = 1076021,
 		icon = "1076021",
 		use = 1,
@@ -8827,6 +27648,7 @@
 		decompose_id = 0,
 		desc_source = "f6e08d14b860cc0031026b0256ce6d77",
 		sub_type = 0,
+		limit = 0,
 		id = 1094041,
 		icon = "1094041",
 		use = 1,
@@ -8845,6 +27667,7 @@
 		decompose_id = 0,
 		desc_source = "a6e26f91aba0a37b50e4c677bcfc5cfe",
 		sub_type = 0,
+		limit = 0,
 		id = 1072011,
 		icon = "1072011",
 		use = 1,
@@ -8863,6 +27686,7 @@
 		decompose_id = 0,
 		desc_source = "9ec159ea32253e5269fc6f6115465691",
 		sub_type = 0,
+		limit = 0,
 		id = 1042051,
 		icon = "1042051",
 		use = 1,
@@ -8882,6 +27706,7 @@
 		desc_source = "5cf6e391d5ac2a5204b735f4c56ae0fa",
 		sub_type = 0,
 		decompose_id = 0,
+		limit = 0,
 		id = 1041031,
 		icon = "1041031",
 		use = 1,
@@ -8896,6 +27721,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1039,
@@ -8909,6 +27735,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1048,
@@ -8922,6 +27749,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1066,
@@ -8935,6 +27763,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1038,
@@ -8948,6 +27777,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1099,
@@ -8961,6 +27791,7 @@
 		compose_id = 0,
 		display_rare = 3,
 		type = 2,
+		limit = 0,
 		rare = 3,
 		sub_type = 0,
 		id = 1084,
@@ -8974,6 +27805,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1093,
@@ -8987,6 +27819,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1019,
@@ -9000,6 +27833,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1080,
@@ -9013,6 +27847,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1027,
@@ -9026,6 +27861,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1050,
@@ -9039,6 +27875,7 @@
 		compose_id = 0,
 		display_rare = 3,
 		type = 2,
+		limit = 0,
 		rare = 3,
 		sub_type = 0,
 		id = 1148,
@@ -9052,6 +27889,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1094,
@@ -9065,6 +27903,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1037,
@@ -9078,6 +27917,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1011,
@@ -9091,6 +27931,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1199,
@@ -9104,6 +27945,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1184,
@@ -9117,6 +27959,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1058,
@@ -9130,6 +27973,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1059,
@@ -9143,6 +27987,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1096,
@@ -9156,6 +28001,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1026,
@@ -9169,6 +28015,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1097,
@@ -9182,6 +28029,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1139,
@@ -9195,6 +28043,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1138,
@@ -9208,6 +28057,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1013,
@@ -9221,6 +28071,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1056,
@@ -9234,6 +28085,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1111,
@@ -9247,6 +28099,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1032,
@@ -9260,6 +28113,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1035,
@@ -9273,6 +28127,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1041,
@@ -9286,6 +28141,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1042,
@@ -9299,6 +28155,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1119,
@@ -9312,6 +28169,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1033,
@@ -9325,6 +28183,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1068,
@@ -9338,6 +28197,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1067,
@@ -9351,6 +28211,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1024,
@@ -9364,6 +28225,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1028,
@@ -9377,6 +28239,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1052,
@@ -9390,6 +28253,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1017,
@@ -9403,6 +28267,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1127,
@@ -9416,6 +28281,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1132,
@@ -9429,6 +28295,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1071,
@@ -9442,6 +28309,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1072,
@@ -9455,6 +28323,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1070,
@@ -9468,6 +28337,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1081,
@@ -9481,6 +28351,7 @@
 		compose_id = 0,
 		display_rare = 4,
 		type = 2,
+		limit = 0,
 		rare = 4,
 		sub_type = 0,
 		id = 1016,
@@ -9494,6 +28365,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1074,
@@ -9507,6 +28379,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1075,
@@ -9520,6 +28393,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1076,
@@ -9533,6 +28407,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1158,
@@ -9546,6 +28421,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1049,
@@ -9559,6 +28435,7 @@
 		compose_id = 0,
 		display_rare = 5,
 		type = 2,
+		limit = 0,
 		rare = 5,
 		sub_type = 0,
 		id = 1055,
@@ -9575,6 +28452,7 @@
 		id = 1060,
 		rare = 5,
 		desc = "bf63cb85bff3813648aedf5ad5439d36",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1060",
@@ -9590,6 +28468,7 @@
 		id = 1061,
 		rare = 5,
 		desc = "8e5aaabde74243fd1822b291a87e0799",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1061",
@@ -9604,6 +28483,7 @@
 		type = 2,
 		id = 1150,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1150",
@@ -9618,6 +28498,7 @@
 		type = 2,
 		id = 1015,
 		rare = 5,
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1015",
@@ -9633,6 +28514,7 @@
 		id = 1095,
 		rare = 5,
 		desc = "70df9c4a8be4739a08c27e5f5bfcb4b1",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1095",
@@ -9648,6 +28530,7 @@
 		id = 1284,
 		rare = 5,
 		desc = "c2c6ad782a8d96a8dacbec82b3d15e02",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1284",
@@ -9663,9 +28546,90 @@
 		id = 1197,
 		rare = 5,
 		desc = "1274c050e61f2a5610f33d2b49afbe2e",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1197",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[1022] = {
+		decompose_id = 0,
+		name = "ac7cfc81353cf26ddda916631325062f",
+		compose_id = 0,
+		type = 2,
+		id = 1022,
+		rare = 5,
+		desc = "2d98082002cde973d8b1170e2edfd491",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "1022",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[1021] = {
+		decompose_id = 0,
+		name = "a65419fba943a1d5718fc77fa03f30d4",
+		compose_id = 0,
+		type = 2,
+		id = 1021,
+		rare = 5,
+		desc = "f3b4b1e0ba26b7368022fb2090f136b3",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "1021",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[1020] = {
+		decompose_id = 0,
+		name = "b20b890e4fc835e177db7ea2a2735ea8",
+		compose_id = 0,
+		type = 2,
+		id = 1020,
+		rare = 5,
+		desc = "84bd6ed91005c27d8d68ee9a4b09ec07",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "1020",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[1156] = {
+		decompose_id = 0,
+		name = "bcaf896904f1d6b8da84030345c7af50",
+		compose_id = 0,
+		type = 2,
+		id = 1156,
+		rare = 5,
+		desc = "c648adb3eb38f7ac3b40c3100399f29a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "1156",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[1089] = {
+		decompose_id = 0,
+		name = "a822aefb3f9cc1c975000093807557e7",
+		compose_id = 0,
+		type = 2,
+		id = 1089,
+		rare = 5,
+		desc = "2e556f2b00df471f16db9f75843f3127",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "1089",
 		use = 0,
 		max = 0,
 		source = {}
@@ -9678,6 +28642,7 @@
 		id = 11039,
 		rare = 4,
 		desc = "b0ae9c3b388d08e55cd84a7008ab283a",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1039",
@@ -9706,6 +28671,7 @@
 		id = 11048,
 		rare = 4,
 		desc = "026becfaac03d2a721fa183f9acfdc2a",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1048",
@@ -9734,6 +28700,7 @@
 		id = 11066,
 		rare = 5,
 		desc = "4a898afcfbb0ea5d072fa032763ff47d",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1066",
@@ -9759,6 +28726,7 @@
 		id = 11038,
 		rare = 4,
 		desc = "39f10e5df51898822652d3145e717808",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1038",
@@ -9787,6 +28755,7 @@
 		id = 11099,
 		rare = 4,
 		desc = "fabba9baae418bf5d6dd9f75af964db9",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1099",
@@ -9815,6 +28784,7 @@
 		id = 11084,
 		rare = 3,
 		desc = "04d075e398062c1e19a52b6c6787ffd1",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "1084",
@@ -9843,6 +28813,7 @@
 		id = 11093,
 		rare = 5,
 		desc = "badd13401cbed291b2e72d8499d471ba",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1093",
@@ -9868,6 +28839,7 @@
 		id = 11019,
 		rare = 4,
 		desc = "d7daf4d062d78a07e64db287b1ff83b2",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1019",
@@ -9896,6 +28868,7 @@
 		id = 11080,
 		rare = 4,
 		desc = "b835989f94972e3a80aa2c92be9c0e71",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1080",
@@ -9924,6 +28897,7 @@
 		id = 11027,
 		rare = 4,
 		desc = "74a1b21b969b80bd5a76c7a7052ed90d",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1027",
@@ -9952,6 +28926,7 @@
 		id = 11050,
 		rare = 4,
 		desc = "26cd80e98d777c824f55607b0af69fee",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1050",
@@ -9980,6 +28955,7 @@
 		id = 11148,
 		rare = 3,
 		desc = "e0a523d280ec06fdf77fa1907df492cf",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 3,
 		icon = "1148",
@@ -10008,6 +28984,7 @@
 		id = 11094,
 		rare = 5,
 		desc = "73dc5ace1711ffe1215293d173100ae5",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1094",
@@ -10033,6 +29010,7 @@
 		id = 11037,
 		rare = 4,
 		desc = "2b4fb8c41f3001f34ba2b1c7e33c636f",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1037",
@@ -10061,6 +29039,7 @@
 		id = 11011,
 		rare = 4,
 		desc = "a51c500da4c2f4f06644773b30f456f2",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1011",
@@ -10089,6 +29068,7 @@
 		id = 11199,
 		rare = 5,
 		desc = "289b2d1d3e24750f740d99f7a94c7cd6",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1199",
@@ -10114,6 +29094,7 @@
 		id = 11184,
 		rare = 4,
 		desc = "164ad66acae25ed7ccf33c67103b7b0c",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1184",
@@ -10142,6 +29123,7 @@
 		id = 11058,
 		rare = 5,
 		desc = "00f4eb90a5166b510f9e2c19030efcb1",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1058",
@@ -10167,6 +29149,7 @@
 		id = 11059,
 		rare = 4,
 		desc = "da23786c425a24238dcfa4d3e49f946f",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1059",
@@ -10195,6 +29178,7 @@
 		id = 11096,
 		rare = 4,
 		desc = "653b4a04d85cec7a1038dc677683c4cd",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1096",
@@ -10223,6 +29207,7 @@
 		id = 11026,
 		rare = 4,
 		desc = "79554cc25f1ae23e5968fae7dbe8cd7c",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1026",
@@ -10251,6 +29236,7 @@
 		id = 11097,
 		rare = 4,
 		desc = "c61fa27d2936a7429c3ce125ee0bb3ff",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1097",
@@ -10279,6 +29265,7 @@
 		id = 11139,
 		rare = 5,
 		desc = "a7a6f90cb5fa43f4c936d554d1fe1e12",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1139",
@@ -10304,6 +29291,7 @@
 		id = 11138,
 		rare = 5,
 		desc = "a146d4bca321f3ae321aa79ee51aa04d",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1138",
@@ -10329,6 +29317,7 @@
 		id = 11013,
 		rare = 5,
 		desc = "09ef6a1aed894db3521281801c250bcf",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1013",
@@ -10354,6 +29343,7 @@
 		id = 11056,
 		rare = 4,
 		desc = "9af144412e1b763d55093f1ba8bf73bc",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1056",
@@ -10382,6 +29372,7 @@
 		id = 11111,
 		rare = 5,
 		desc = "1fb8588102ef047549e1b1d09e032adb",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1111",
@@ -10407,6 +29398,7 @@
 		id = 11032,
 		rare = 5,
 		desc = "8c41057960210bbee1e419583e59cf08",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1032",
@@ -10432,6 +29424,7 @@
 		id = 11035,
 		rare = 4,
 		desc = "0561b7b57ced3ffe2ce87872586786c8",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1035",
@@ -10460,6 +29453,7 @@
 		id = 11041,
 		rare = 5,
 		desc = "36aa653294b0ad0798e682322d0210ca",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1041",
@@ -10485,6 +29479,7 @@
 		id = 11042,
 		rare = 5,
 		desc = "f4f1114c705a8cc54528b716db0b586e",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1042",
@@ -10510,6 +29505,7 @@
 		id = 11119,
 		rare = 5,
 		desc = "d0b36d8ae71124d4f6d205f5e006d39e",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1119",
@@ -10535,6 +29531,7 @@
 		id = 11033,
 		rare = 4,
 		desc = "a49a23e702dde4f5332641cf47c0ffb4",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1033",
@@ -10563,6 +29560,7 @@
 		id = 11068,
 		rare = 4,
 		desc = "54fd7abdf826e438479cd4985155b698",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1068",
@@ -10591,6 +29589,7 @@
 		id = 11067,
 		rare = 5,
 		desc = "8007ce9d736aa9463e32750bb7a833ea",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1067",
@@ -10616,6 +29615,7 @@
 		id = 11024,
 		rare = 5,
 		desc = "543791fe460b882695d992cd64dd8d91",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1024",
@@ -10641,6 +29641,7 @@
 		id = 11028,
 		rare = 5,
 		desc = "bf4a41824ef44b72527bb1e2deea8b41",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1028",
@@ -10666,6 +29667,7 @@
 		id = 11052,
 		rare = 5,
 		desc = "8e378fc1ff35dd548a2bacd8569a9b3a",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1052",
@@ -10691,6 +29693,7 @@
 		id = 11017,
 		rare = 4,
 		desc = "f68489dcd288a5e97e8b096753b413c5",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1017",
@@ -10719,6 +29722,7 @@
 		id = 11127,
 		rare = 5,
 		desc = "09d559acb8b88a04c7028baea50a1462",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1127",
@@ -10744,6 +29748,7 @@
 		id = 11132,
 		rare = 5,
 		desc = "a14d2d5385ba14fb6eac34d27de54cfe",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1132",
@@ -10769,6 +29774,7 @@
 		id = 11071,
 		rare = 5,
 		desc = "142b57baba797392472e09589d3a53d0",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1071",
@@ -10794,6 +29800,7 @@
 		id = 11072,
 		rare = 5,
 		desc = "3df8e00a04a42b1b6f14bc56fbe9646f",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1072",
@@ -10819,6 +29826,7 @@
 		id = 11070,
 		rare = 5,
 		desc = "44b40c57ae46a0774d0b529f29ef2d73",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1070",
@@ -10844,6 +29852,7 @@
 		id = 11081,
 		rare = 5,
 		desc = "a4a28b7358811e4a1d5727dd12109f11",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1081",
@@ -10869,6 +29878,7 @@
 		id = 11016,
 		rare = 4,
 		desc = "485bc9d8e291bc1388088754e62847ef",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 4,
 		icon = "1016",
@@ -10897,6 +29907,7 @@
 		id = 11074,
 		rare = 5,
 		desc = "2280eecd756c4452ea6b4d6744af9ddf",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1074",
@@ -10919,6 +29930,7 @@
 		id = 11075,
 		rare = 5,
 		desc = "f9583e797824c2ee9656fa823596bff8",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1075",
@@ -10941,6 +29953,7 @@
 		id = 11076,
 		rare = 5,
 		desc = "71a5cde8a1608a1bec7e3203ce188bf9",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1076",
@@ -10963,6 +29976,7 @@
 		id = 11158,
 		rare = 5,
 		desc = "dcff285a22b53d9110281e09db8cd240",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1158",
@@ -10985,6 +29999,7 @@
 		id = 11049,
 		rare = 5,
 		desc = "056dd4cfdf11721bfd64e9ec2b741e94",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1049",
@@ -11007,6 +30022,7 @@
 		id = 11055,
 		rare = 5,
 		desc = "b629667ae3a30f46da24288524e25845",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1055",
@@ -11029,6 +30045,7 @@
 		id = 11060,
 		rare = 5,
 		desc = "446c2c22796dbc9218f5346dd7f2a337",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1060",
@@ -11051,6 +30068,7 @@
 		id = 11061,
 		rare = 5,
 		desc = "084dcda1b425c328750d5d29229e932e",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1061",
@@ -11073,6 +30091,7 @@
 		id = 11150,
 		rare = 5,
 		desc = "845d1ef73a99cc7dcecfb35f5485e5b9",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1150",
@@ -11095,6 +30114,7 @@
 		id = 11015,
 		rare = 5,
 		desc = "0d387bcf2f76778f3093de7a98c471e0",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1015",
@@ -11117,6 +30137,7 @@
 		id = 11095,
 		rare = 5,
 		desc = "35bf3aa7360b1237aa0596babff95d39",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1095",
@@ -11139,6 +30160,7 @@
 		id = 11284,
 		rare = 5,
 		desc = "46ffea4884f792d84d4d2298b3474401",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1284",
@@ -11161,6 +30183,7 @@
 		id = 11197,
 		rare = 5,
 		desc = "22962abe429fc2ca409f2f1daae71cc5",
+		limit = 0,
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1197",
@@ -11175,20 +30198,136 @@
 			}
 		}
 	},
-	[1010950103] = {
-		name = "c08eeb587c7b15dfe514f06ab9e623a4",
-		type = 4,
-		display_rare = 5,
-		rare = 5,
-		desc = "bf4ae8ada053eea898bf888ea0db3b61",
-		desc_source = "156a0ded9122ba6259a0a66d4bee7402",
-		sub_type = 407,
-		compose_id = 0,
+	[11022] = {
 		decompose_id = 0,
-		id = 1010950103,
+		name = "b77be813cb5068dca784fd98bf9fe51c",
+		compose_id = 0,
+		type = 3,
+		id = 11022,
+		rare = 5,
+		desc = "95fbefdad96e7f3a82508c0cebc843aa",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "1022",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				408
+			},
+			{
+				502
+			}
+		}
+	},
+	[11021] = {
+		decompose_id = 0,
+		name = "9065d7d0fe8964461d89a162882b05d0",
+		compose_id = 0,
+		type = 3,
+		id = 11021,
+		rare = 5,
+		desc = "126f9c1c371f28c3efd6b3a238fd8245",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "1021",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				408
+			},
+			{
+				502
+			}
+		}
+	},
+	[11020] = {
+		decompose_id = 0,
+		name = "d762a805edf0b8645f668fa187072ef7",
+		compose_id = 0,
+		type = 3,
+		id = 11020,
+		rare = 5,
+		desc = "c844acc1c01630bc1acb6f80c183e260",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "1020",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				408
+			},
+			{
+				502
+			}
+		}
+	},
+	[11156] = {
+		decompose_id = 0,
+		name = "507d998b15268c2ff7fe7e709ca6b919",
+		compose_id = 0,
+		type = 3,
+		id = 11156,
+		rare = 5,
+		desc = "e82afe6577764b41e17f1aee4eddf1a9",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "1156",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				408
+			},
+			{
+				502
+			}
+		}
+	},
+	[11089] = {
+		decompose_id = 0,
+		name = "1af0b1b3026f16d5828e205e20aa6620",
+		compose_id = 0,
+		type = 3,
+		id = 11089,
+		rare = 5,
+		desc = "0996d5fb1bb95ab63bf673a5a95c5fe5",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "1089",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				408
+			},
+			{
+				502
+			}
+		}
+	},
+	[1010950103] = {
+		decompose_id = 0,
+		name = "c08eeb587c7b15dfe514f06ab9e623a4",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "bf4ae8ada053eea898bf888ea0db3b61",
+		compose_id = 0,
 		icon = "10109501",
 		use = 1,
 		max = 0,
+		rare = 5,
+		desc_source = "156a0ded9122ba6259a0a66d4bee7402",
+		id = 1010950103,
 		param = {
 			1110950103,
 			4600703
@@ -11204,22 +30343,27 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1010720103] = {
-		name = "d94be7a03a578506ea414d18677fc95c",
-		type = 4,
-		display_rare = 5,
-		rare = 5,
-		desc = "5b5939fd07bef306278fd997be7182d9",
-		desc_source = "d98f4fe916661114124839968e57dbe8",
-		sub_type = 407,
-		compose_id = 0,
 		decompose_id = 0,
-		id = 1010720103,
+		name = "d94be7a03a578506ea414d18677fc95c",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "5b5939fd07bef306278fd997be7182d9",
+		compose_id = 0,
 		icon = "10107201",
 		use = 1,
 		max = 0,
+		rare = 5,
+		desc_source = "d98f4fe916661114124839968e57dbe8",
+		id = 1010720103,
 		param = {
 			1110720103
 		},
@@ -11234,22 +30378,27 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1010750203] = {
-		name = "b3a425b33d2057ff003775e4fe5728d8",
-		type = 4,
-		display_rare = 5,
-		rare = 5,
-		desc = "a3115e1313e51b1491090586b76e92d4",
-		desc_source = "aa908dc4043b25bea83a2d4f8fd8fd18",
-		sub_type = 407,
-		compose_id = 0,
 		decompose_id = 0,
-		id = 1010750203,
+		name = "b3a425b33d2057ff003775e4fe5728d8",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "a3115e1313e51b1491090586b76e92d4",
+		compose_id = 0,
 		icon = "10107502",
 		use = 1,
 		max = 0,
+		rare = 5,
+		desc_source = "aa908dc4043b25bea83a2d4f8fd8fd18",
+		id = 1010750203,
 		param = {
 			1110750203,
 			4600803
@@ -11265,22 +30414,27 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1010940403] = {
-		name = "43e27dbee1118187a6fb0b7429a4bab2",
-		type = 4,
-		display_rare = 5,
-		rare = 5,
-		desc = "d5f2d48a5c84e7be12972cca461c8b5c",
-		desc_source = "2bce34a4e68216d8ee874137a14f8fc5",
-		sub_type = 407,
-		compose_id = 0,
 		decompose_id = 0,
-		id = 1010940403,
+		name = "43e27dbee1118187a6fb0b7429a4bab2",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "d5f2d48a5c84e7be12972cca461c8b5c",
+		compose_id = 0,
 		icon = "10109404",
 		use = 1,
 		max = 0,
+		rare = 5,
+		desc_source = "2bce34a4e68216d8ee874137a14f8fc5",
+		id = 1010940403,
 		param = {
 			1110940403
 		},
@@ -11295,22 +30449,27 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1010760103] = {
-		name = "d066731fbf19d2dd7eda823eb9add6d5",
-		type = 4,
-		display_rare = 5,
-		rare = 5,
-		desc = "d197fbf92dd513a2d2e50577f818c668",
-		desc_source = "3c7a02143eedbcbf9daed02adb3bb94c",
-		sub_type = 407,
-		compose_id = 0,
 		decompose_id = 0,
-		id = 1010760103,
+		name = "d066731fbf19d2dd7eda823eb9add6d5",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "d197fbf92dd513a2d2e50577f818c668",
+		compose_id = 0,
 		icon = "10107601",
 		use = 1,
 		max = 0,
+		rare = 5,
+		desc_source = "3c7a02143eedbcbf9daed02adb3bb94c",
+		id = 1010760103,
 		param = {
 			1110760103,
 			4600903
@@ -11326,22 +30485,27 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1010940203] = {
-		name = "9f2b256339e56b0e00718233cd16bae7",
-		type = 4,
-		display_rare = 5,
-		rare = 5,
-		desc = "d385f1890441fd8443a62e8ca2fc3dde",
-		desc_source = "efc3408c24807f05bcebb968f4b84e27",
-		sub_type = 407,
-		compose_id = 0,
 		decompose_id = 0,
-		id = 1010940203,
+		name = "9f2b256339e56b0e00718233cd16bae7",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "d385f1890441fd8443a62e8ca2fc3dde",
+		compose_id = 0,
 		icon = "10109402",
 		use = 1,
 		max = 0,
+		rare = 5,
+		desc_source = "efc3408c24807f05bcebb968f4b84e27",
+		id = 1010940203,
 		param = {
 			1110940203
 		},
@@ -11356,22 +30520,27 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1011990103] = {
-		name = "a28d753927fd74ccd92625474e4e371e",
-		type = 4,
-		display_rare = 5,
-		rare = 5,
-		desc = "cf37b742f4a03c36e4e0dba911ea915b",
-		desc_source = "b9bfde0bfb82a7ac1e64ce35baa5c60d",
-		sub_type = 407,
-		compose_id = 0,
 		decompose_id = 0,
-		id = 1011990103,
+		name = "a28d753927fd74ccd92625474e4e371e",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "cf37b742f4a03c36e4e0dba911ea915b",
+		compose_id = 0,
 		icon = "10119901",
 		use = 1,
 		max = 0,
+		rare = 5,
+		desc_source = "b9bfde0bfb82a7ac1e64ce35baa5c60d",
+		id = 1011990103,
 		param = {
 			1111990103
 		},
@@ -11386,22 +30555,27 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1011380103] = {
-		name = "7c897c4b9f2e8b7b2ee8d6810aa7657c",
-		type = 4,
-		display_rare = 5,
-		rare = 5,
-		desc = "9648dc7f5437b77e2fa43e41482af220",
-		desc_source = "32de20df54728319f58b6a189354825c",
-		sub_type = 407,
-		compose_id = 0,
 		decompose_id = 0,
-		id = 1011380103,
+		name = "7c897c4b9f2e8b7b2ee8d6810aa7657c",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "9648dc7f5437b77e2fa43e41482af220",
+		compose_id = 0,
 		icon = "10113801",
 		use = 1,
 		max = 0,
+		rare = 5,
+		desc_source = "32de20df54728319f58b6a189354825c",
+		id = 1011380103,
 		param = {
 			1111380103
 		},
@@ -11416,22 +30590,27 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1010170103] = {
-		name = "a76e2b87f8a55e67f4200dd01ab2afe9",
-		type = 4,
-		display_rare = 5,
-		rare = 5,
-		desc = "861ea32d2e2856c09c59251e594fc877",
-		desc_source = "70be69f61a2fa7c91236914a2685cc0f",
-		sub_type = 407,
-		compose_id = 0,
 		decompose_id = 0,
-		id = 1010170103,
+		name = "a76e2b87f8a55e67f4200dd01ab2afe9",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "861ea32d2e2856c09c59251e594fc877",
+		compose_id = 0,
 		icon = "10101701",
 		use = 1,
 		max = 0,
+		rare = 5,
+		desc_source = "70be69f61a2fa7c91236914a2685cc0f",
+		id = 1010170103,
 		param = {
 			1110170103
 		},
@@ -11446,22 +30625,27 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1010280103] = {
-		name = "202e4d1aaa0f3a9b09de423591193291",
-		type = 4,
-		display_rare = 5,
-		rare = 5,
-		desc = "d4ff5665a12f05850270938bee21b320",
-		desc_source = "3330639d3cf2b9fcb12586915f8ed673",
-		sub_type = 407,
-		compose_id = 0,
 		decompose_id = 0,
-		id = 1010280103,
+		name = "202e4d1aaa0f3a9b09de423591193291",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "d4ff5665a12f05850270938bee21b320",
+		compose_id = 0,
 		icon = "10102801",
 		use = 1,
 		max = 0,
+		rare = 5,
+		desc_source = "3330639d3cf2b9fcb12586915f8ed673",
+		id = 1010280103,
 		param = {
 			1110280103
 		},
@@ -11476,22 +30660,27 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1011390303] = {
-		name = "489a846123b809c9453e0665b7d95499",
-		type = 4,
-		display_rare = 5,
-		rare = 5,
-		desc = "1078bce84c61d64a51fe63cc9e7ce3a0",
-		desc_source = "a1174b4a8e28e1877c020000981323b1",
-		sub_type = 407,
-		compose_id = 0,
 		decompose_id = 0,
-		id = 1011390303,
+		name = "489a846123b809c9453e0665b7d95499",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "1078bce84c61d64a51fe63cc9e7ce3a0",
+		compose_id = 0,
 		icon = "10113903",
 		use = 1,
 		max = 0,
+		rare = 5,
+		desc_source = "a1174b4a8e28e1877c020000981323b1",
+		id = 1011390303,
 		param = {
 			1111390303
 		},
@@ -11506,22 +30695,27 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1011110103] = {
-		name = "f18c516bc4d0ca2d4a9b92a71e90a2fe",
-		type = 4,
-		display_rare = 5,
-		rare = 5,
-		desc = "fc9a0af412f259299189a01d9a9cf852",
-		desc_source = "428800db8c19db80420892bc33b0c4d9",
-		sub_type = 407,
-		compose_id = 0,
 		decompose_id = 0,
-		id = 1011110103,
+		name = "f18c516bc4d0ca2d4a9b92a71e90a2fe",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "fc9a0af412f259299189a01d9a9cf852",
+		compose_id = 0,
 		icon = "10111101",
 		use = 1,
 		max = 0,
+		rare = 5,
+		desc_source = "428800db8c19db80420892bc33b0c4d9",
+		id = 1011110103,
 		param = {
 			1111110103
 		},
@@ -11536,22 +30730,27 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1010740203] = {
-		name = "be12c4522eba37ae931ac9c39eb6a686",
-		type = 4,
-		display_rare = 5,
-		rare = 5,
-		desc = "cfe5ace77e44a87cf00420a61b200771",
-		desc_source = "51a4e6cd9d4e1e930d8113bea0b91ebc",
-		sub_type = 407,
-		compose_id = 0,
 		decompose_id = 0,
-		id = 1010740203,
+		name = "be12c4522eba37ae931ac9c39eb6a686",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "cfe5ace77e44a87cf00420a61b200771",
+		compose_id = 0,
 		icon = "10107402",
 		use = 1,
 		max = 0,
+		rare = 5,
+		desc_source = "51a4e6cd9d4e1e930d8113bea0b91ebc",
+		id = 1010740203,
 		param = {
 			1110740203,
 			4601003
@@ -11567,22 +30766,27 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1012840103] = {
-		name = "bcbd3575d1e486de6b48641b6b166b86",
-		type = 4,
-		display_rare = 5,
-		rare = 5,
-		desc = "a5abf8ec59555736ee27437634ba3b8b",
-		desc_source = "aab097a4a5124df05d2673f4b1dca2e2",
-		sub_type = 407,
-		compose_id = 0,
 		decompose_id = 0,
-		id = 1012840103,
+		name = "bcbd3575d1e486de6b48641b6b166b86",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "a5abf8ec59555736ee27437634ba3b8b",
+		compose_id = 0,
 		icon = "10128401",
 		use = 1,
 		max = 0,
+		rare = 5,
+		desc_source = "aab097a4a5124df05d2673f4b1dca2e2",
+		id = 1012840103,
 		param = {
 			1112840103
 		},
@@ -11597,22 +30801,27 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1011970103] = {
-		name = "5834f1d9bf0e6d9d6ff7348ecf83fd0e",
-		type = 4,
-		display_rare = 5,
-		rare = 5,
-		desc = "218b3685f81986e07980541e72dd64d7",
-		desc_source = "c4c85bba3205397defcce6e64a7d1be9",
-		sub_type = 407,
-		compose_id = 0,
 		decompose_id = 0,
-		id = 1011970103,
+		name = "5834f1d9bf0e6d9d6ff7348ecf83fd0e",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "218b3685f81986e07980541e72dd64d7",
+		compose_id = 0,
 		icon = "10119701",
 		use = 1,
 		max = 0,
+		rare = 5,
+		desc_source = "c4c85bba3205397defcce6e64a7d1be9",
+		id = 1011970103,
 		param = {
 			1111970103,
 			4601103
@@ -11628,21 +30837,598 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1010490203] = {
+		decompose_id = 0,
+		name = "6fa63e2d3246de2944bbde2511d59b20",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "289e01cb97c41299c2e357e84554c8f9",
+		compose_id = 0,
+		icon = "10104902",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "816b09dc87a2d57992823c8363083da9",
+		id = 1010490203,
+		param = {
+			1110490203,
+			4601203
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1010490205] = {
+		decompose_id = 0,
+		name = "0b4065d0b85bf0438686ca95d29b9e44",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "480f8a6cfb8abd983b116a7127269977",
+		compose_id = 0,
+		icon = "10104902",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "3813eb628ae7b769972e7c409252b94e",
+		id = 1010490205,
+		param = {
+			1110490205,
+			4601205
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1011390703] = {
+		decompose_id = 0,
+		name = "4244dc2664dc7052b8ab3cb64599d4a0",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "122c254dd9871c1454e8f9e9655da8ae",
+		compose_id = 0,
+		icon = "10113907",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "a6f1ee13d51f8798ecee673afaf8cf09",
+		id = 1011390703,
+		param = {
+			1111390703,
+			4601303
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1011970105] = {
+		decompose_id = 0,
+		name = "cc04837844947776fadb85192368cc70",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "0915d170cd05b8bb6b53670c6ff6ae83",
+		compose_id = 0,
+		icon = "10113907",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "0ddb79e66b6460091bace4d6cfc2dddf",
+		id = 1011970105,
+		param = {
+			1111390705,
+			4601305
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1010220103] = {
+		decompose_id = 0,
+		name = "86e7706335728375308f7a8e9b861a09",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "6051e467a74c5245551e409698e281b2",
+		compose_id = 0,
+		icon = "10102201",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "4cd7426aa19f9f508893c608d54e7ac8",
+		id = 1010220103,
+		param = {
+			1110220103,
+			4601403
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1010220105] = {
+		decompose_id = 0,
+		name = "e83a549fc502de0569dd2b1dc7fa8cf6",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "2e75acf83524adb18ee2d688a37e6822",
+		compose_id = 0,
+		icon = "10102201",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "b0756ea0d6c57f885dfbc2d113700600",
+		id = 1010220105,
+		param = {
+			1110220105,
+			4601405
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1010760205] = {
+		decompose_id = 0,
+		name = "05c95bc6008f0c7a9eecb39105f32247",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "f6004a00923feaaffa4041d95873026d",
+		compose_id = 0,
+		icon = "10107602",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "04bb115de35dfe960d28c0b1563ecc7c",
+		id = 1010760205,
+		param = {
+			1110760205,
+			4600105
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1010700105] = {
+		decompose_id = 0,
+		name = "37dcd0dc9e1f01a6e19f6aca0e72fcdd",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "5e78dd98e1c4b57c80e5fd60dd5d95c6",
+		compose_id = 0,
+		icon = "10107001",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "4f0b7b9171f3c1325b9f54a285f36af1",
+		id = 1010700105,
+		param = {
+			1110700105
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1010740105] = {
+		decompose_id = 0,
+		name = "4ea20d4ac2b880b1ab4d1796d66dd557",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "0fca9216ab008e44883dc19d829e6095",
+		compose_id = 0,
+		icon = "10107401",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "37cc2aa9d87b9a120beae45495da4032",
+		id = 1010740105,
+		param = {
+			1110740105
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1010420505] = {
+		decompose_id = 0,
+		name = "a65b9bf7f359ff6d7b361ac7aa6ef395",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "64aab34d031973a282e9d71a6903dd15",
+		compose_id = 0,
+		icon = "10104205",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "e31b897d65759f03af23e4f4b44f638b",
+		id = 1010420505,
+		param = {
+			1110420505
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1010210103] = {
+		decompose_id = 0,
+		name = "15471b5a1967bbeaa2768231038ae4df",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "7138ec1b542c6656b0cf30d03ea96609",
+		compose_id = 0,
+		icon = "10102101",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "f48a189e5b227c192c11de8bad744850",
+		id = 1010210103,
+		param = {
+			1110210103,
+			4601503
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1010200103] = {
+		decompose_id = 0,
+		name = "cf47d8f13298ebf72e8f590762072167",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "f52ad7028fd88f7b26e2bc20a6c4f755",
+		compose_id = 0,
+		icon = "10102001",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "e6642799eb789a6295db7465581526cb",
+		id = 1010200103,
+		param = {
+			1110200103,
+			4601603
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1011560103] = {
+		decompose_id = 0,
+		name = "bbf136f3367a9bc46abc9817fc1a08bf",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "ebc0b5b56c427fa355f9ae5dc0b8a572",
+		compose_id = 0,
+		icon = "10115601",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "4ae582893a352e1ee0bef7f93cf6cae7",
+		id = 1011560103,
+		param = {
+			1111560103
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1010890103] = {
+		decompose_id = 0,
+		name = "fbe66393f4acc01660ec599d2c56b8c8",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "732b3ce5d1e6574da43676ad60920131",
+		compose_id = 0,
+		icon = "10108901",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "5bc6d3989ff89f61880a7c2e7f1d5712",
+		id = 1010890103,
+		param = {
+			1110890103,
+			4602103
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1010950203] = {
+		decompose_id = 0,
+		name = "41b117385674cd20aa805f731d7882da",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "3ddd5ba897ebb92aa3e65ab620767860",
+		compose_id = 0,
+		icon = "10109502",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "cb0a3dff38dd43872f24c6f4865e2f74",
+		id = 1010950203,
+		param = {
+			1110950203,
+			4601703
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1010950299] = {
+		decompose_id = 0,
+		name = "fb9168a77493e0948abc56fd47f66ee6",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "ae0710b39975a3987dd8bf58faaddf3b",
+		compose_id = 0,
+		icon = "10109502",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "cef862750da523f0a544cc1855ab45d6",
+		id = 1010950299,
+		param = {
+			1110950203,
+			4601803
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1110950103] = {
+		decompose_id = 0,
 		name = "63282e083b30659cadc56994438f8323",
+		rare = 5,
 		type = 8,
 		id = 1110950103,
-		rare = 5,
-		desc = "671a6893049e3c4d1df063131f9e70dc",
 		compose_id = 0,
+		desc = "671a6893049e3c4d1df063131f9e70dc",
 		sub_type = 801,
-		decompose_id = 0,
-		display_rare = 5,
 		icon = "109501",
 		use = 0,
 		max = 0,
+		limit = 0,
+		display_rare = 5,
 		param = {
 			109501
 		},
@@ -11657,21 +31443,26 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1110720103] = {
+		decompose_id = 0,
 		name = "b6d7f1f9f23f3d83095c797d8b09186c",
+		rare = 5,
 		type = 8,
 		id = 1110720103,
-		rare = 5,
-		desc = "7c3e005942e532495e35db31a05add46",
 		compose_id = 0,
+		desc = "7c3e005942e532495e35db31a05add46",
 		sub_type = 801,
-		decompose_id = 0,
-		display_rare = 5,
 		icon = "107201",
 		use = 0,
 		max = 0,
+		limit = 0,
+		display_rare = 5,
 		param = {
 			107201
 		},
@@ -11686,21 +31477,26 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1110750203] = {
+		decompose_id = 0,
 		name = "d985c9428f9b5f5a3b13a215cc20dd49",
+		rare = 5,
 		type = 8,
 		id = 1110750203,
-		rare = 5,
-		desc = "caa0fd29d69f11a0cf09c82537e7b678",
 		compose_id = 0,
+		desc = "caa0fd29d69f11a0cf09c82537e7b678",
 		sub_type = 801,
-		decompose_id = 0,
-		display_rare = 5,
 		icon = "107502",
 		use = 0,
 		max = 0,
+		limit = 0,
+		display_rare = 5,
 		param = {
 			107502
 		},
@@ -11715,21 +31511,26 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1110940403] = {
+		decompose_id = 0,
 		name = "8c881de59af3ea42b71796947a23c920",
+		rare = 5,
 		type = 8,
 		id = 1110940403,
-		rare = 5,
-		desc = "61c6607a2296a8bd08decaddf8d2e1de",
 		compose_id = 0,
+		desc = "61c6607a2296a8bd08decaddf8d2e1de",
 		sub_type = 801,
-		decompose_id = 0,
-		display_rare = 5,
 		icon = "109404",
 		use = 0,
 		max = 0,
+		limit = 0,
+		display_rare = 5,
 		param = {
 			109404
 		},
@@ -11744,21 +31545,26 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1110760103] = {
+		decompose_id = 0,
 		name = "27deb71791ff76303ce3bc83d618f463",
+		rare = 5,
 		type = 8,
 		id = 1110760103,
-		rare = 5,
-		desc = "fb19518cf2e8a5f825d3ab142bb1d263",
 		compose_id = 0,
+		desc = "fb19518cf2e8a5f825d3ab142bb1d263",
 		sub_type = 801,
-		decompose_id = 0,
-		display_rare = 5,
 		icon = "107601",
 		use = 0,
 		max = 0,
+		limit = 0,
+		display_rare = 5,
 		param = {
 			107601
 		},
@@ -11773,21 +31579,26 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1110940203] = {
+		decompose_id = 0,
 		name = "a9b69ed2ed2530483c9128075d09466e",
+		rare = 5,
 		type = 8,
 		id = 1110940203,
-		rare = 5,
-		desc = "01cf973f6426d94d2734c576e04874b0",
 		compose_id = 0,
+		desc = "01cf973f6426d94d2734c576e04874b0",
 		sub_type = 801,
-		decompose_id = 0,
-		display_rare = 5,
 		icon = "109402",
 		use = 0,
 		max = 0,
+		limit = 0,
+		display_rare = 5,
 		param = {
 			109402
 		},
@@ -11802,21 +31613,26 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1111990103] = {
+		decompose_id = 0,
 		name = "9b23a1bd1cefdde6eeb94b06267fdd9e",
+		rare = 5,
 		type = 8,
 		id = 1111990103,
-		rare = 5,
-		desc = "7ae8c6324510536c62cdb2a1a43b59af",
 		compose_id = 0,
+		desc = "7ae8c6324510536c62cdb2a1a43b59af",
 		sub_type = 801,
-		decompose_id = 0,
-		display_rare = 5,
 		icon = "119901",
 		use = 0,
 		max = 0,
+		limit = 0,
+		display_rare = 5,
 		param = {
 			119901
 		},
@@ -11831,21 +31647,26 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1111380103] = {
+		decompose_id = 0,
 		name = "6f3f99c5cbb1b22f146119d081fe8285",
+		rare = 5,
 		type = 8,
 		id = 1111380103,
-		rare = 5,
-		desc = "09e83e8f9a85b85686f219c725176796",
 		compose_id = 0,
+		desc = "09e83e8f9a85b85686f219c725176796",
 		sub_type = 801,
-		decompose_id = 0,
-		display_rare = 5,
 		icon = "113801",
 		use = 0,
 		max = 0,
+		limit = 0,
+		display_rare = 5,
 		param = {
 			113801
 		},
@@ -11860,21 +31681,26 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1110170103] = {
+		decompose_id = 0,
 		name = "72b993722b3501949ef574afcd8ce766",
+		rare = 5,
 		type = 8,
 		id = 1110170103,
-		rare = 5,
-		desc = "fa58fcd2343ff5c1436a84a1c52b0871",
 		compose_id = 0,
+		desc = "fa58fcd2343ff5c1436a84a1c52b0871",
 		sub_type = 801,
-		decompose_id = 0,
-		display_rare = 5,
 		icon = "101701",
 		use = 0,
 		max = 0,
+		limit = 0,
+		display_rare = 5,
 		param = {
 			101701
 		},
@@ -11889,21 +31715,26 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1110280103] = {
+		decompose_id = 0,
 		name = "56933c97336c419c5df399d755ec6d9c",
+		rare = 5,
 		type = 8,
 		id = 1110280103,
-		rare = 5,
-		desc = "843de35a4b57978367c32e76e7540913",
 		compose_id = 0,
+		desc = "843de35a4b57978367c32e76e7540913",
 		sub_type = 801,
-		decompose_id = 0,
-		display_rare = 5,
 		icon = "102801",
 		use = 0,
 		max = 0,
+		limit = 0,
+		display_rare = 5,
 		param = {
 			102801
 		},
@@ -11918,21 +31749,26 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1111390303] = {
+		decompose_id = 0,
 		name = "dca551f0d190bee447c61f27cbb562b5",
+		rare = 5,
 		type = 8,
 		id = 1111390303,
-		rare = 5,
-		desc = "bbb2d3154356925cf9ce84f268321c94",
 		compose_id = 0,
+		desc = "bbb2d3154356925cf9ce84f268321c94",
 		sub_type = 801,
-		decompose_id = 0,
-		display_rare = 5,
 		icon = "113903",
 		use = 0,
 		max = 0,
+		limit = 0,
+		display_rare = 5,
 		param = {
 			113903
 		},
@@ -11947,21 +31783,26 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1111110103] = {
+		decompose_id = 0,
 		name = "307e8246ac724c719e61531dca456f97",
+		rare = 5,
 		type = 8,
 		id = 1111110103,
-		rare = 5,
-		desc = "a1ab48b353af80bf3e097d1150fd4cf1",
 		compose_id = 0,
+		desc = "a1ab48b353af80bf3e097d1150fd4cf1",
 		sub_type = 801,
-		decompose_id = 0,
-		display_rare = 5,
 		icon = "111101",
 		use = 0,
 		max = 0,
+		limit = 0,
+		display_rare = 5,
 		param = {
 			111101
 		},
@@ -11976,21 +31817,26 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1110740203] = {
+		decompose_id = 0,
 		name = "079e7bd7a07c141d356cd51312e73b1d",
+		rare = 5,
 		type = 8,
 		id = 1110740203,
-		rare = 5,
-		desc = "520c5073ef875f6dc1ea647d216f253a",
 		compose_id = 0,
+		desc = "520c5073ef875f6dc1ea647d216f253a",
 		sub_type = 801,
-		decompose_id = 0,
-		display_rare = 5,
 		icon = "107402",
 		use = 0,
 		max = 0,
+		limit = 0,
+		display_rare = 5,
 		param = {
 			107402
 		},
@@ -12005,21 +31851,26 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1112840103] = {
+		decompose_id = 0,
 		name = "00a9088e1453636a644a650adb1ef1a4",
+		rare = 5,
 		type = 8,
 		id = 1112840103,
-		rare = 5,
-		desc = "2d85645073d00be397729e6a51bfdbdf",
 		compose_id = 0,
+		desc = "2d85645073d00be397729e6a51bfdbdf",
 		sub_type = 801,
-		decompose_id = 0,
-		display_rare = 5,
 		icon = "128401",
 		use = 0,
 		max = 0,
+		limit = 0,
+		display_rare = 5,
 		param = {
 			128401
 		},
@@ -12034,23 +31885,530 @@
 					0
 				}
 			}
+		},
+		time_exchange_item = {
+			2,
+			10000
 		}
 	},
 	[1111970103] = {
+		decompose_id = 0,
 		name = "ed9b0cceda44a36e47c6bcd93c4255f9",
+		rare = 5,
 		type = 8,
 		id = 1111970103,
-		rare = 5,
-		desc = "c1e90bb5eebf7fce468b6545bb6f0b06",
 		compose_id = 0,
+		desc = "c1e90bb5eebf7fce468b6545bb6f0b06",
 		sub_type = 801,
-		decompose_id = 0,
-		display_rare = 5,
 		icon = "119701",
 		use = 0,
 		max = 0,
+		limit = 0,
+		display_rare = 5,
 		param = {
 			119701
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1110490203] = {
+		decompose_id = 0,
+		name = "4acf87547c65f79a96e713c300994f09",
+		rare = 5,
+		type = 8,
+		id = 1110490203,
+		compose_id = 0,
+		desc = "9a594c64c398e9f0fdc1ec456f5c77d5",
+		sub_type = 801,
+		icon = "104902",
+		use = 0,
+		max = 0,
+		limit = 0,
+		display_rare = 5,
+		param = {
+			104902
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1110490205] = {
+		decompose_id = 0,
+		name = "065b4474dfdfb5d7eea05b63a8a57c1d",
+		rare = 5,
+		type = 8,
+		id = 1110490205,
+		compose_id = 0,
+		desc = "7c137eddc52fca044b4243ab398fc84f",
+		sub_type = 801,
+		icon = "104902",
+		use = 0,
+		max = 0,
+		limit = 0,
+		display_rare = 5,
+		param = {
+			104902
+		},
+		source = {},
+		time = {
+			4,
+			{
+				5,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1111390703] = {
+		decompose_id = 0,
+		name = "760ee13d129d662722a5c50d0e367a31",
+		rare = 5,
+		type = 8,
+		id = 1111390703,
+		compose_id = 0,
+		desc = "439409acc42abff88c68f8c95e6ab378",
+		sub_type = 801,
+		icon = "113907",
+		use = 0,
+		max = 0,
+		limit = 0,
+		display_rare = 5,
+		param = {
+			113907
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1111390705] = {
+		decompose_id = 0,
+		name = "d3ba575b4a53c0edd65bcae491b3e180",
+		rare = 5,
+		type = 8,
+		id = 1111390705,
+		compose_id = 0,
+		desc = "05afb7a9ffd5db76395be6d2125c85de",
+		sub_type = 801,
+		icon = "113907",
+		use = 0,
+		max = 0,
+		limit = 0,
+		display_rare = 5,
+		param = {
+			113907
+		},
+		source = {},
+		time = {
+			4,
+			{
+				5,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1110220103] = {
+		decompose_id = 0,
+		name = "d3ea035236cbde6e1a7c1298d65286d9",
+		rare = 5,
+		type = 8,
+		id = 1110220103,
+		compose_id = 0,
+		desc = "d3790870c0bb12aabf5e9c827253bb17",
+		sub_type = 801,
+		icon = "102201",
+		use = 0,
+		max = 0,
+		limit = 0,
+		display_rare = 5,
+		param = {
+			102201
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1110220105] = {
+		decompose_id = 0,
+		name = "9e61748647e36f07c4e9c625caf10c0e",
+		rare = 5,
+		type = 8,
+		id = 1110220105,
+		compose_id = 0,
+		desc = "937c6b307a055f85f44bd637c1a4e03d",
+		sub_type = 801,
+		icon = "102201",
+		use = 0,
+		max = 0,
+		limit = 0,
+		display_rare = 5,
+		param = {
+			102201
+		},
+		source = {},
+		time = {
+			4,
+			{
+				5,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1110760205] = {
+		decompose_id = 0,
+		name = "5183bff175b5122aa7ff2ca3f6ed4a8f",
+		rare = 5,
+		type = 8,
+		id = 1110760205,
+		compose_id = 0,
+		desc = "b7bdbbb767225bb16496ea98c2433cf6",
+		sub_type = 801,
+		icon = "107602",
+		use = 0,
+		max = 0,
+		limit = 0,
+		display_rare = 5,
+		param = {
+			107602
+		},
+		source = {},
+		time = {
+			4,
+			{
+				5,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1110700105] = {
+		decompose_id = 0,
+		name = "5b62982689f9f301e7106fde80990e89",
+		rare = 5,
+		type = 8,
+		id = 1110700105,
+		compose_id = 0,
+		desc = "a022cbf115716af192e5fe8e3d268e53",
+		sub_type = 801,
+		icon = "107001",
+		use = 0,
+		max = 0,
+		limit = 0,
+		display_rare = 5,
+		param = {
+			107001
+		},
+		source = {},
+		time = {
+			4,
+			{
+				5,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1110740105] = {
+		decompose_id = 0,
+		name = "68c9a89c7e4a3ac1b0282aee145995ea",
+		rare = 5,
+		type = 8,
+		id = 1110740105,
+		compose_id = 0,
+		desc = "8050ae5da954a5e163951c27655977ae",
+		sub_type = 801,
+		icon = "107401",
+		use = 0,
+		max = 0,
+		limit = 0,
+		display_rare = 5,
+		param = {
+			107401
+		},
+		source = {},
+		time = {
+			4,
+			{
+				5,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1110420505] = {
+		decompose_id = 0,
+		name = "3a1d5147fec82b64aa8b7f6f51a436aa",
+		rare = 5,
+		type = 8,
+		id = 1110420505,
+		compose_id = 0,
+		desc = "4df57b0bbead5b5d169ab32f8894e9ad",
+		sub_type = 801,
+		icon = "104205",
+		use = 0,
+		max = 0,
+		limit = 0,
+		display_rare = 5,
+		param = {
+			104205
+		},
+		source = {},
+		time = {
+			4,
+			{
+				5,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1110210103] = {
+		name = "a029508171a917373bc59dc83f51b9d5",
+		type = 8,
+		id = 1110210103,
+		rare = 5,
+		desc = "edc45a05b6d8065bf3a97127052452a8",
+		compose_id = 0,
+		sub_type = 801,
+		decompose_id = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "102101",
+		use = 0,
+		max = 0,
+		param = {
+			102101
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[1110200103] = {
+		decompose_id = 0,
+		name = "b7a0a00c36ce8d934375f5dcd0ddccbb",
+		rare = 5,
+		type = 8,
+		id = 1110200103,
+		compose_id = 0,
+		desc = "f86e84512610ad178e8f569cd06f670e",
+		sub_type = 801,
+		icon = "102001",
+		use = 0,
+		max = 0,
+		limit = 0,
+		display_rare = 5,
+		param = {
+			102001
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1111560103] = {
+		decompose_id = 0,
+		name = "130f8530977e6cc0190ca06b7ddb7a76",
+		rare = 5,
+		type = 8,
+		id = 1111560103,
+		compose_id = 0,
+		desc = "4a27a461e8a4c102d68dba47f1c30861",
+		sub_type = 801,
+		icon = "115601",
+		use = 0,
+		max = 0,
+		limit = 0,
+		display_rare = 5,
+		param = {
+			115601
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1110890103] = {
+		name = "ce3413032160a40c767f4f3871ee0302",
+		type = 8,
+		id = 1110890103,
+		rare = 5,
+		desc = "da6483f2b48fbdb1b220d3ae16600baa",
+		compose_id = 0,
+		sub_type = 801,
+		decompose_id = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "108901",
+		use = 0,
+		max = 0,
+		param = {
+			108901
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[1110950203] = {
+		name = "bd2f00cf0dc5f223f805b69be9dd7375",
+		type = 8,
+		id = 1110950203,
+		rare = 5,
+		desc = "891c9cf3a2e3d4794ad5d6a9aa2b7604",
+		compose_id = 0,
+		sub_type = 801,
+		decompose_id = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "109502",
+		use = 0,
+		max = 0,
+		param = {
+			109502
 		},
 		source = {},
 		time = {
@@ -12066,19 +32424,20 @@
 		}
 	},
 	[4600703] = {
-		name = "179bbc19a30d6b6d85a540ed5b8d49eb",
-		type = 21,
-		display_rare = 5,
-		rare = 5,
-		desc = "82854b60d94987ffb6a6a2bb8f51f3db",
-		compose_id = 0,
-		sub_type = 2101,
-		littleicon = "6007",
 		decompose_id = 0,
-		id = 4600703,
+		name = "179bbc19a30d6b6d85a540ed5b8d49eb",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "82854b60d94987ffb6a6a2bb8f51f3db",
+		sub_type = 2101,
 		icon = "6007",
 		use = 0,
 		max = 0,
+		rare = 5,
+		littleicon = "6007",
+		id = 4600703,
 		param = {
 			6007
 		},
@@ -12096,19 +32455,20 @@
 		}
 	},
 	[4600803] = {
-		name = "88c5a59d5f915b4ed67c1c47f122eec6",
-		type = 21,
-		display_rare = 5,
-		rare = 5,
-		desc = "c1446e70f1d1b83a746fb94db552a393",
-		compose_id = 0,
-		sub_type = 2101,
-		littleicon = "6008",
 		decompose_id = 0,
-		id = 4600803,
+		name = "88c5a59d5f915b4ed67c1c47f122eec6",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "c1446e70f1d1b83a746fb94db552a393",
+		sub_type = 2101,
 		icon = "6008",
 		use = 0,
 		max = 0,
+		rare = 5,
+		littleicon = "6008",
+		id = 4600803,
 		param = {
 			6008
 		},
@@ -12126,19 +32486,20 @@
 		}
 	},
 	[4600903] = {
-		name = "adca9db2e008a16bea856a69b046f388",
-		type = 21,
-		display_rare = 5,
-		rare = 5,
-		desc = "386bcf07bfc05a4f1f26d0f049360504",
-		compose_id = 0,
-		sub_type = 2101,
-		littleicon = "6009",
 		decompose_id = 0,
-		id = 4600903,
+		name = "adca9db2e008a16bea856a69b046f388",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "386bcf07bfc05a4f1f26d0f049360504",
+		sub_type = 2101,
 		icon = "6009",
 		use = 0,
 		max = 0,
+		rare = 5,
+		littleicon = "6009",
+		id = 4600903,
 		param = {
 			6009
 		},
@@ -12156,19 +32517,20 @@
 		}
 	},
 	[4601003] = {
-		name = "b71570fc6319774e137f85cd59060f9a",
-		type = 21,
-		display_rare = 5,
-		rare = 5,
-		desc = "49f7dda6dac2e7810963508cbc63d7c8",
-		compose_id = 0,
-		sub_type = 2101,
-		littleicon = "6010",
 		decompose_id = 0,
-		id = 4601003,
+		name = "b71570fc6319774e137f85cd59060f9a",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "49f7dda6dac2e7810963508cbc63d7c8",
+		sub_type = 2101,
 		icon = "6010",
 		use = 0,
 		max = 0,
+		rare = 5,
+		littleicon = "6010",
+		id = 4601003,
 		param = {
 			6010
 		},
@@ -12186,21 +32548,394 @@
 		}
 	},
 	[4601103] = {
-		name = "585dd42c40df6955e836c1b889880d48",
-		type = 21,
-		display_rare = 5,
-		rare = 5,
-		desc = "5acdc1028d3112ac23b8810e8dd50d92",
-		compose_id = 0,
-		sub_type = 2101,
-		littleicon = "6011",
 		decompose_id = 0,
-		id = 4601103,
+		name = "585dd42c40df6955e836c1b889880d48",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "5acdc1028d3112ac23b8810e8dd50d92",
+		sub_type = 2101,
 		icon = "6011",
 		use = 0,
 		max = 0,
+		rare = 5,
+		littleicon = "6011",
+		id = 4601103,
 		param = {
 			6011
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[4601203] = {
+		decompose_id = 0,
+		name = "780c8c0c92621c009c97f68ac22122a7",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "b3c12ad93c9f182ee407f79875d4e469",
+		sub_type = 2101,
+		icon = "6012",
+		use = 0,
+		max = 0,
+		rare = 5,
+		littleicon = "6012",
+		id = 4601203,
+		param = {
+			6012
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[4601205] = {
+		decompose_id = 0,
+		name = "2aaf40247f013beedea2db6e93238aa3",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "b985bfcefff3b502fadbd3e9ad29fbf8",
+		sub_type = 2101,
+		icon = "6012",
+		use = 0,
+		max = 0,
+		rare = 5,
+		littleicon = "6012",
+		id = 4601205,
+		param = {
+			6012
+		},
+		source = {},
+		time = {
+			4,
+			{
+				5,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[4601303] = {
+		decompose_id = 0,
+		name = "f0179e1e6c8c9a4d5f29c98d9d62dd24",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "c0b7ff906c97088a23fa4cf65fa1bb82",
+		sub_type = 2101,
+		icon = "6013",
+		use = 0,
+		max = 0,
+		rare = 5,
+		littleicon = "6013",
+		id = 4601303,
+		param = {
+			6013
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[4601305] = {
+		decompose_id = 0,
+		name = "d905450ad9980d28c514725944c00b9e",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "c3d9a9af559a4f488118361eb65c859a",
+		sub_type = 2101,
+		icon = "6013",
+		use = 0,
+		max = 0,
+		rare = 5,
+		littleicon = "6013",
+		id = 4601305,
+		param = {
+			6013
+		},
+		source = {},
+		time = {
+			4,
+			{
+				5,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[4601403] = {
+		decompose_id = 0,
+		name = "611f85466adba5d36c2dc9c08494c70b",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "920c850f164c1280f7a83c73f383ab99",
+		sub_type = 2101,
+		icon = "6014",
+		use = 0,
+		max = 0,
+		rare = 5,
+		littleicon = "6014",
+		id = 4601403,
+		param = {
+			6014
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[4601405] = {
+		decompose_id = 0,
+		name = "beb28c7aae37d5b3fec69a58b6d25b27",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "aa89acfd9f310f329aaf78bd471e64f9",
+		sub_type = 2101,
+		icon = "6014",
+		use = 0,
+		max = 0,
+		rare = 5,
+		littleicon = "6014",
+		id = 4601405,
+		param = {
+			6014
+		},
+		source = {},
+		time = {
+			4,
+			{
+				5,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[4600105] = {
+		decompose_id = 0,
+		name = "27b14fbcb42fbe07114ecd20b6b8f6e1",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "12fdb641fb346ce393b6b543d7b38c0e",
+		sub_type = 2101,
+		icon = "6001",
+		use = 0,
+		max = 0,
+		rare = 5,
+		littleicon = "6001",
+		id = 4600105,
+		param = {
+			6001
+		},
+		source = {},
+		time = {
+			4,
+			{
+				5,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[4601503] = {
+		decompose_id = 0,
+		name = "12eec6ebd4dca7118efca7520e0d40b3",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "bcb5c1c526f2d74cf6d327bc8dc84ea7",
+		sub_type = 2101,
+		icon = "6015",
+		use = 0,
+		max = 0,
+		rare = 5,
+		littleicon = "6015",
+		id = 4601503,
+		param = {
+			6015
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[4601603] = {
+		decompose_id = 0,
+		name = "e8d44a95599c3fa65200db41f5ab2063",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "72987e6466fc2278b3130525678fb0d3",
+		sub_type = 2101,
+		icon = "6016",
+		use = 0,
+		max = 0,
+		rare = 5,
+		littleicon = "6016",
+		id = 4601603,
+		param = {
+			6016
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[4602103] = {
+		decompose_id = 0,
+		name = "4ad5e6e3b293f04773b10dfe98225a0f",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "7015e6fbf9d458403ec2243f57585283",
+		sub_type = 2101,
+		icon = "6021",
+		use = 0,
+		max = 0,
+		rare = 5,
+		littleicon = "6021",
+		id = 4602103,
+		param = {
+			6021
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[4601703] = {
+		decompose_id = 0,
+		name = "eb7841f2f1ef8690c0d4a612617fcb4d",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "f75b2800cf08383a717b8a8e1a73a9fc",
+		sub_type = 2101,
+		icon = "6017",
+		use = 0,
+		max = 0,
+		rare = 5,
+		littleicon = "6017",
+		id = 4601703,
+		param = {
+			6017
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[4601803] = {
+		decompose_id = 0,
+		name = "8b896264fe58394b71f1f047cfbc7e34",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "7c4098de2f7ad12246b68156508633ff",
+		sub_type = 2101,
+		icon = "6018",
+		use = 0,
+		max = 0,
+		rare = 5,
+		littleicon = "6018",
+		id = 4601803,
+		param = {
+			6018
 		},
 		source = {},
 		time = {
@@ -12275,7 +33010,12 @@
 			11015,
 			11095,
 			11284,
-			11197
+			11197,
+			11022,
+			11021,
+			11020,
+			11156,
+			11089
 		},
 		[2] = {
 			1039,
@@ -12336,7 +33076,12 @@
 			1015,
 			1095,
 			1284,
-			1197
+			1197,
+			1022,
+			1021,
+			1020,
+			1156,
+			1089
 		},
 		[14] = {
 			1037011,
@@ -12413,7 +33158,14 @@
 			109501,
 			128401,
 			119701,
+			104902,
 			113907,
+			102201,
+			102101,
+			102001,
+			115601,
+			109502,
+			108901,
 			1110950103,
 			1110720103,
 			1110750203,
@@ -12428,7 +33180,22 @@
 			1111110103,
 			1110740203,
 			1112840103,
-			1111970103
+			1111970103,
+			1110490203,
+			1110490205,
+			1111390703,
+			1111390705,
+			1110220103,
+			1110220105,
+			1110760205,
+			1110700105,
+			1110740105,
+			1110420505,
+			1110210103,
+			1110200103,
+			1111560103,
+			1110890103,
+			1110950203
 		},
 		[11] = {
 			2110841,
@@ -12441,6 +33208,7 @@
 			2110482,
 			2110491,
 			2110492,
+			2110493,
 			2110661,
 			2110662,
 			2110663,
@@ -12538,10 +33306,21 @@
 			2110152,
 			2110951,
 			2110952,
+			2110953,
 			2112841,
 			2112842,
 			2111971,
 			2111972,
+			2110221,
+			2110222,
+			2110211,
+			2110212,
+			2110201,
+			2110202,
+			2111561,
+			2111562,
+			2110891,
+			2110892,
 			2200002,
 			2200003,
 			2200004,
@@ -12579,6 +33358,8 @@
 			2510009,
 			2510010,
 			2510012,
+			2510013,
+			2510014,
 			2510999,
 			2520000,
 			2520001,
@@ -12627,6 +33408,9 @@
 			2550007,
 			2550008,
 			2550009,
+			2550010,
+			2550011,
+			2550012,
 			2550998,
 			2550999,
 			2590000,
@@ -16365,7 +37149,307 @@
 			563057,
 			564057,
 			565057,
-			569057
+			569057,
+			210058,
+			310058,
+			410058,
+			510058,
+			511058,
+			512058,
+			513058,
+			514058,
+			515058,
+			519058,
+			220058,
+			320058,
+			420058,
+			520058,
+			521058,
+			522058,
+			523058,
+			524058,
+			525058,
+			529058,
+			230058,
+			330058,
+			430058,
+			530058,
+			531058,
+			532058,
+			533058,
+			534058,
+			535058,
+			539058,
+			240058,
+			340058,
+			440058,
+			540058,
+			541058,
+			542058,
+			543058,
+			544058,
+			545058,
+			549058,
+			250058,
+			350058,
+			450058,
+			550058,
+			551058,
+			552058,
+			553058,
+			554058,
+			555058,
+			559058,
+			260058,
+			360058,
+			460058,
+			560058,
+			561058,
+			562058,
+			563058,
+			564058,
+			565058,
+			569058,
+			210059,
+			310059,
+			410059,
+			510059,
+			511059,
+			512059,
+			513059,
+			514059,
+			515059,
+			519059,
+			220059,
+			320059,
+			420059,
+			520059,
+			521059,
+			522059,
+			523059,
+			524059,
+			525059,
+			529059,
+			230059,
+			330059,
+			430059,
+			530059,
+			531059,
+			532059,
+			533059,
+			534059,
+			535059,
+			539059,
+			240059,
+			340059,
+			440059,
+			540059,
+			541059,
+			542059,
+			543059,
+			544059,
+			545059,
+			549059,
+			250059,
+			350059,
+			450059,
+			550059,
+			551059,
+			552059,
+			553059,
+			554059,
+			555059,
+			559059,
+			260059,
+			360059,
+			460059,
+			560059,
+			561059,
+			562059,
+			563059,
+			564059,
+			565059,
+			569059,
+			210060,
+			310060,
+			410060,
+			510060,
+			511060,
+			512060,
+			513060,
+			514060,
+			515060,
+			519060,
+			220060,
+			320060,
+			420060,
+			520060,
+			521060,
+			522060,
+			523060,
+			524060,
+			525060,
+			529060,
+			230060,
+			330060,
+			430060,
+			530060,
+			531060,
+			532060,
+			533060,
+			534060,
+			535060,
+			539060,
+			240060,
+			340060,
+			440060,
+			540060,
+			541060,
+			542060,
+			543060,
+			544060,
+			545060,
+			549060,
+			250060,
+			350060,
+			450060,
+			550060,
+			551060,
+			552060,
+			553060,
+			554060,
+			555060,
+			559060,
+			260060,
+			360060,
+			460060,
+			560060,
+			561060,
+			562060,
+			563060,
+			564060,
+			565060,
+			569060,
+			210061,
+			310061,
+			410061,
+			510061,
+			511061,
+			512061,
+			513061,
+			514061,
+			515061,
+			519061,
+			220061,
+			320061,
+			420061,
+			520061,
+			521061,
+			522061,
+			523061,
+			524061,
+			525061,
+			529061,
+			230061,
+			330061,
+			430061,
+			530061,
+			531061,
+			532061,
+			533061,
+			534061,
+			535061,
+			539061,
+			240061,
+			340061,
+			440061,
+			540061,
+			541061,
+			542061,
+			543061,
+			544061,
+			545061,
+			549061,
+			250061,
+			350061,
+			450061,
+			550061,
+			551061,
+			552061,
+			553061,
+			554061,
+			555061,
+			559061,
+			260061,
+			360061,
+			460061,
+			560061,
+			561061,
+			562061,
+			563061,
+			564061,
+			565061,
+			569061,
+			210062,
+			310062,
+			410062,
+			510062,
+			511062,
+			512062,
+			513062,
+			514062,
+			515062,
+			519062,
+			220062,
+			320062,
+			420062,
+			520062,
+			521062,
+			522062,
+			523062,
+			524062,
+			525062,
+			529062,
+			230062,
+			330062,
+			430062,
+			530062,
+			531062,
+			532062,
+			533062,
+			534062,
+			535062,
+			539062,
+			240062,
+			340062,
+			440062,
+			540062,
+			541062,
+			542062,
+			543062,
+			544062,
+			545062,
+			549062,
+			250062,
+			350062,
+			450062,
+			550062,
+			551062,
+			552062,
+			553062,
+			554062,
+			555062,
+			559062,
+			260062,
+			360062,
+			460062,
+			560062,
+			561062,
+			562062,
+			563062,
+			564062,
+			565062,
+			569062
 		},
 		[20] = {
 			90001,
@@ -16424,7 +37508,29 @@
 			90054,
 			90055,
 			90056,
-			90057
+			90057,
+			90058,
+			90059,
+			90060,
+			90061,
+			90062,
+			90063,
+			90064,
+			90065,
+			90066,
+			90067,
+			90068,
+			90069,
+			90070,
+			90071,
+			90072,
+			90073,
+			90074,
+			90075,
+			90076,
+			91001,
+			91002,
+			91003
 		},
 		[17] = {
 			52001,
@@ -16525,23 +37631,32 @@
 			30028,
 			30029,
 			30030,
-			30044,
-			30046,
 			30031,
 			30032,
+			30033,
+			30034,
+			30035,
+			30036,
 			30040,
 			30041,
+			30043,
+			30044,
+			30046,
 			30050,
 			30051,
 			30052,
 			30053,
+			30054,
 			30055,
 			30061,
 			30062,
 			30063,
+			30064,
 			30091,
 			30092,
 			30093,
+			30094,
+			30095,
 			30100,
 			30101,
 			30102,
@@ -16962,7 +38077,22 @@
 			850056,
 			830057,
 			840057,
-			850057
+			850057,
+			830058,
+			840058,
+			850058,
+			830059,
+			840059,
+			850059,
+			830060,
+			840060,
+			850060,
+			830061,
+			840061,
+			850061,
+			830062,
+			840062,
+			850062
 		},
 		[4] = {
 			20001,
@@ -16986,6 +38116,7 @@
 			20019,
 			20020,
 			20021,
+			20022,
 			22001,
 			22002,
 			22003,
@@ -17007,7 +38138,23 @@
 			1011110103,
 			1010740203,
 			1012840103,
-			1011970103
+			1011970103,
+			1010490203,
+			1010490205,
+			1011390703,
+			1011970105,
+			1010220103,
+			1010220105,
+			1010760205,
+			1010700105,
+			1010740105,
+			1010420505,
+			1010210103,
+			1010200103,
+			1011560103,
+			1010890103,
+			1010950203,
+			1010950299
 		},
 		[6] = {
 			10001,
@@ -17166,7 +38313,22 @@
 			53106,
 			53107,
 			53108,
+			53109,
+			53110,
+			53111,
+			53113,
+			53116,
+			53117,
+			53118,
+			53119,
+			53120,
+			53121,
+			53122,
+			53123,
+			53124,
+			53125,
 			53999,
+			53154,
 			5302901,
 			5303001,
 			5303101,
@@ -17201,7 +38363,14 @@
 			81139,
 			81184,
 			81033,
-			81042
+			81042,
+			81024,
+			81035,
+			81094,
+			81016,
+			81068,
+			81052,
+			81056
 		},
 		[26] = {
 			9001,
@@ -17229,6 +38398,10 @@
 			7009,
 			7010,
 			7012,
+			7013,
+			7014,
+			7015,
+			7016,
 			7100,
 			7101,
 			7102,
@@ -17258,7 +38431,19 @@
 			4600803,
 			4600903,
 			4601003,
-			4601103
+			4601103,
+			4601203,
+			4601205,
+			4601303,
+			4601305,
+			4601403,
+			4601405,
+			4600105,
+			4601503,
+			4601603,
+			4602103,
+			4601703,
+			4601803
 		},
 		[19] = {
 			5000
@@ -17413,6 +38598,12 @@
 			63,
 			64,
 			66,
+			67,
+			70,
+			71,
+			72,
+			73,
+			53115,
 			54001,
 			54002,
 			54003,
@@ -17472,9 +38663,23 @@
 			54062,
 			54063,
 			54064,
+			54065,
 			54066,
 			54067,
 			54068,
+			54069,
+			54070,
+			54071,
+			54072,
+			54073,
+			54074,
+			54075,
+			54076,
+			54112,
+			54113,
+			54114,
+			54119,
+			5406901,
 			60001,
 			60002,
 			60003,
@@ -17503,7 +38708,22 @@
 			1111110103,
 			1110740203,
 			1112840103,
-			1111970103
+			1111970103,
+			1110490203,
+			1110490205,
+			1111390703,
+			1111390705,
+			1110220103,
+			1110220105,
+			1110760205,
+			1110700105,
+			1110740105,
+			1110420505,
+			1110210103,
+			1110200103,
+			1111560103,
+			1110890103,
+			1110950203
 		},
 		[407] = {
 			1010950103,
@@ -17520,7 +38740,23 @@
 			1011110103,
 			1010740203,
 			1012840103,
-			1011970103
+			1011970103,
+			1010490203,
+			1010490205,
+			1011390703,
+			1011970105,
+			1010220103,
+			1010220105,
+			1010760205,
+			1010700105,
+			1010740105,
+			1010420505,
+			1010210103,
+			1010200103,
+			1011560103,
+			1010890103,
+			1010950203,
+			1010950299
 		},
 		[4] = {
 			941001,
@@ -17566,7 +38802,14 @@
 			81139,
 			81184,
 			81033,
-			81042
+			81042,
+			81024,
+			81035,
+			81094,
+			81016,
+			81068,
+			81052,
+			81056
 		},
 		[406] = {
 			70001,
@@ -17687,6 +38930,7 @@
 			2110482,
 			2110491,
 			2110492,
+			2110493,
 			2110661,
 			2110662,
 			2110663,
@@ -17784,10 +39028,21 @@
 			2110152,
 			2110951,
 			2110952,
+			2110953,
 			2112841,
 			2112842,
 			2111971,
 			2111972,
+			2110221,
+			2110222,
+			2110211,
+			2110212,
+			2110201,
+			2110202,
+			2111561,
+			2111562,
+			2110891,
+			2110892,
 			2200002,
 			2200003,
 			2200004,
@@ -17938,7 +39193,8 @@
 			30052
 		},
 		[513] = {
-			30041
+			30041,
+			30043
 		},
 		[501] = {
 			30032,
@@ -17946,6 +39202,7 @@
 			30061,
 			30062,
 			30063,
+			30064,
 			30100,
 			30101,
 			30102,
@@ -18313,7 +39570,22 @@
 			850056,
 			830057,
 			840057,
-			850057
+			850057,
+			830058,
+			840058,
+			850058,
+			830059,
+			840059,
+			850059,
+			830060,
+			840060,
+			850060,
+			830061,
+			840061,
+			850061,
+			830062,
+			840062,
+			850062
 		},
 		[507] = {
 			30031,
@@ -18333,9 +39605,14 @@
 			30027,
 			30028,
 			30030,
+			30033,
+			30034,
+			30035,
+			30036,
 			30044,
 			30046,
-			30053
+			30053,
+			30054
 		},
 		{
 			30012,
@@ -18348,7 +39625,9 @@
 			30026,
 			30091,
 			30092,
-			30093
+			30093,
+			30094,
+			30095
 		},
 		[506] = {
 			30005,
@@ -18392,7 +39671,8 @@
 			20009,
 			20010,
 			20011,
-			20012
+			20012,
+			20022
 		},
 		[2102] = {
 			6002
@@ -18415,7 +39695,19 @@
 			4600803,
 			4600903,
 			4601003,
-			4601103
+			4601103,
+			4601203,
+			4601205,
+			4601303,
+			4601305,
+			4601403,
+			4601405,
+			4600105,
+			4601503,
+			4601603,
+			4602103,
+			4601703,
+			4601803
 		},
 		[1801] = {
 			4001,
@@ -18523,7 +39815,8 @@
 			59,
 			63,
 			64,
-			66
+			66,
+			67
 		},
 		[1701] = {
 			48,
@@ -18583,6 +39876,10 @@
 			57,
 			60,
 			61,
+			70,
+			71,
+			72,
+			73,
 			5000,
 			7001,
 			7002,
@@ -18595,6 +39892,10 @@
 			7009,
 			7010,
 			7012,
+			7013,
+			7014,
+			7015,
+			7016,
 			7100,
 			7101,
 			7102,
@@ -18700,7 +40001,23 @@
 			53106,
 			53107,
 			53108,
+			53109,
+			53110,
+			53111,
+			53113,
+			53115,
+			53116,
+			53117,
+			53118,
+			53119,
+			53120,
+			53121,
+			53122,
+			53123,
+			53124,
+			53125,
 			53999,
+			53154,
 			5302901,
 			5303001,
 			5303101,
@@ -18765,9 +40082,23 @@
 			54062,
 			54063,
 			54064,
+			54065,
 			54066,
 			54067,
 			54068,
+			54069,
+			54070,
+			54071,
+			54072,
+			54073,
+			54074,
+			54075,
+			54076,
+			54112,
+			54113,
+			54114,
+			54119,
+			5406901,
 			60001,
 			60002,
 			60003,
@@ -18835,6 +40166,28 @@
 			90055,
 			90056,
 			90057,
+			90058,
+			90059,
+			90060,
+			90061,
+			90062,
+			90063,
+			90064,
+			90065,
+			90066,
+			90067,
+			90068,
+			90069,
+			90070,
+			90071,
+			90072,
+			90073,
+			90074,
+			90075,
+			90076,
+			91001,
+			91002,
+			91003,
 			210001,
 			310001,
 			410001,
@@ -22255,6 +43608,306 @@
 			564057,
 			565057,
 			569057,
+			210058,
+			310058,
+			410058,
+			510058,
+			511058,
+			512058,
+			513058,
+			514058,
+			515058,
+			519058,
+			220058,
+			320058,
+			420058,
+			520058,
+			521058,
+			522058,
+			523058,
+			524058,
+			525058,
+			529058,
+			230058,
+			330058,
+			430058,
+			530058,
+			531058,
+			532058,
+			533058,
+			534058,
+			535058,
+			539058,
+			240058,
+			340058,
+			440058,
+			540058,
+			541058,
+			542058,
+			543058,
+			544058,
+			545058,
+			549058,
+			250058,
+			350058,
+			450058,
+			550058,
+			551058,
+			552058,
+			553058,
+			554058,
+			555058,
+			559058,
+			260058,
+			360058,
+			460058,
+			560058,
+			561058,
+			562058,
+			563058,
+			564058,
+			565058,
+			569058,
+			210059,
+			310059,
+			410059,
+			510059,
+			511059,
+			512059,
+			513059,
+			514059,
+			515059,
+			519059,
+			220059,
+			320059,
+			420059,
+			520059,
+			521059,
+			522059,
+			523059,
+			524059,
+			525059,
+			529059,
+			230059,
+			330059,
+			430059,
+			530059,
+			531059,
+			532059,
+			533059,
+			534059,
+			535059,
+			539059,
+			240059,
+			340059,
+			440059,
+			540059,
+			541059,
+			542059,
+			543059,
+			544059,
+			545059,
+			549059,
+			250059,
+			350059,
+			450059,
+			550059,
+			551059,
+			552059,
+			553059,
+			554059,
+			555059,
+			559059,
+			260059,
+			360059,
+			460059,
+			560059,
+			561059,
+			562059,
+			563059,
+			564059,
+			565059,
+			569059,
+			210060,
+			310060,
+			410060,
+			510060,
+			511060,
+			512060,
+			513060,
+			514060,
+			515060,
+			519060,
+			220060,
+			320060,
+			420060,
+			520060,
+			521060,
+			522060,
+			523060,
+			524060,
+			525060,
+			529060,
+			230060,
+			330060,
+			430060,
+			530060,
+			531060,
+			532060,
+			533060,
+			534060,
+			535060,
+			539060,
+			240060,
+			340060,
+			440060,
+			540060,
+			541060,
+			542060,
+			543060,
+			544060,
+			545060,
+			549060,
+			250060,
+			350060,
+			450060,
+			550060,
+			551060,
+			552060,
+			553060,
+			554060,
+			555060,
+			559060,
+			260060,
+			360060,
+			460060,
+			560060,
+			561060,
+			562060,
+			563060,
+			564060,
+			565060,
+			569060,
+			210061,
+			310061,
+			410061,
+			510061,
+			511061,
+			512061,
+			513061,
+			514061,
+			515061,
+			519061,
+			220061,
+			320061,
+			420061,
+			520061,
+			521061,
+			522061,
+			523061,
+			524061,
+			525061,
+			529061,
+			230061,
+			330061,
+			430061,
+			530061,
+			531061,
+			532061,
+			533061,
+			534061,
+			535061,
+			539061,
+			240061,
+			340061,
+			440061,
+			540061,
+			541061,
+			542061,
+			543061,
+			544061,
+			545061,
+			549061,
+			250061,
+			350061,
+			450061,
+			550061,
+			551061,
+			552061,
+			553061,
+			554061,
+			555061,
+			559061,
+			260061,
+			360061,
+			460061,
+			560061,
+			561061,
+			562061,
+			563061,
+			564061,
+			565061,
+			569061,
+			210062,
+			310062,
+			410062,
+			510062,
+			511062,
+			512062,
+			513062,
+			514062,
+			515062,
+			519062,
+			220062,
+			320062,
+			420062,
+			520062,
+			521062,
+			522062,
+			523062,
+			524062,
+			525062,
+			529062,
+			230062,
+			330062,
+			430062,
+			530062,
+			531062,
+			532062,
+			533062,
+			534062,
+			535062,
+			539062,
+			240062,
+			340062,
+			440062,
+			540062,
+			541062,
+			542062,
+			543062,
+			544062,
+			545062,
+			549062,
+			250062,
+			350062,
+			450062,
+			550062,
+			551062,
+			552062,
+			553062,
+			554062,
+			555062,
+			559062,
+			260062,
+			360062,
+			460062,
+			560062,
+			561062,
+			562062,
+			563062,
+			564062,
+			565062,
+			569062,
 			950001,
 			950002,
 			950003,
@@ -22574,6 +44227,8 @@
 			2510009,
 			2510010,
 			2510012,
+			2510013,
+			2510014,
 			2510999,
 			2520000,
 			2520001,
@@ -22622,6 +44277,9 @@
 			2550007,
 			2550008,
 			2550009,
+			2550010,
+			2550011,
+			2550012,
 			2550998,
 			2550999,
 			2590000,
@@ -22685,7 +44343,14 @@
 			109501,
 			128401,
 			119701,
+			104902,
 			113907,
+			102201,
+			102101,
+			102001,
+			115601,
+			109502,
+			108901,
 			1037011,
 			1013011,
 			1094021,
@@ -22766,6 +44431,11 @@
 			1095,
 			1284,
 			1197,
+			1022,
+			1021,
+			1020,
+			1156,
+			1089,
 			11039,
 			11048,
 			11066,
@@ -22824,7 +44494,12 @@
 			11015,
 			11095,
 			11284,
-			11197
+			11197,
+			11022,
+			11021,
+			11020,
+			11156,
+			11089
 		}
 	},
 	all = {
@@ -22887,6 +44562,11 @@
 		63,
 		64,
 		66,
+		67,
+		70,
+		71,
+		72,
+		73,
 		2001,
 		2002,
 		2004,
@@ -22997,6 +44677,10 @@
 		7009,
 		7010,
 		7012,
+		7013,
+		7014,
+		7015,
+		7016,
 		7100,
 		7101,
 		7102,
@@ -23041,6 +44725,7 @@
 		20019,
 		20020,
 		20021,
+		20022,
 		22001,
 		22002,
 		22003,
@@ -23068,23 +44753,32 @@
 		30028,
 		30029,
 		30030,
-		30044,
-		30046,
 		30031,
 		30032,
+		30033,
+		30034,
+		30035,
+		30036,
 		30040,
 		30041,
+		30043,
+		30044,
+		30046,
 		30050,
 		30051,
 		30052,
 		30053,
+		30054,
 		30055,
 		30061,
 		30062,
 		30063,
+		30064,
 		30091,
 		30092,
 		30093,
+		30094,
+		30095,
 		30100,
 		30101,
 		30102,
@@ -23555,7 +45249,23 @@
 		53106,
 		53107,
 		53108,
+		53109,
+		53110,
+		53111,
+		53113,
+		53115,
+		53116,
+		53117,
+		53118,
+		53119,
+		53120,
+		53121,
+		53122,
+		53123,
+		53124,
+		53125,
 		53999,
+		53154,
 		5302901,
 		5303001,
 		5303101,
@@ -23620,9 +45330,23 @@
 		54062,
 		54063,
 		54064,
+		54065,
 		54066,
 		54067,
 		54068,
+		54069,
+		54070,
+		54071,
+		54072,
+		54073,
+		54074,
+		54075,
+		54076,
+		54112,
+		54113,
+		54114,
+		54119,
+		5406901,
 		60001,
 		60002,
 		60003,
@@ -23667,6 +45391,13 @@
 		81184,
 		81033,
 		81042,
+		81024,
+		81035,
+		81094,
+		81016,
+		81068,
+		81052,
+		81056,
 		90001,
 		90002,
 		90003,
@@ -23724,6 +45455,28 @@
 		90055,
 		90056,
 		90057,
+		90058,
+		90059,
+		90060,
+		90061,
+		90062,
+		90063,
+		90064,
+		90065,
+		90066,
+		90067,
+		90068,
+		90069,
+		90070,
+		90071,
+		90072,
+		90073,
+		90074,
+		90075,
+		90076,
+		91001,
+		91002,
+		91003,
 		210001,
 		310001,
 		410001,
@@ -27144,6 +48897,306 @@
 		564057,
 		565057,
 		569057,
+		210058,
+		310058,
+		410058,
+		510058,
+		511058,
+		512058,
+		513058,
+		514058,
+		515058,
+		519058,
+		220058,
+		320058,
+		420058,
+		520058,
+		521058,
+		522058,
+		523058,
+		524058,
+		525058,
+		529058,
+		230058,
+		330058,
+		430058,
+		530058,
+		531058,
+		532058,
+		533058,
+		534058,
+		535058,
+		539058,
+		240058,
+		340058,
+		440058,
+		540058,
+		541058,
+		542058,
+		543058,
+		544058,
+		545058,
+		549058,
+		250058,
+		350058,
+		450058,
+		550058,
+		551058,
+		552058,
+		553058,
+		554058,
+		555058,
+		559058,
+		260058,
+		360058,
+		460058,
+		560058,
+		561058,
+		562058,
+		563058,
+		564058,
+		565058,
+		569058,
+		210059,
+		310059,
+		410059,
+		510059,
+		511059,
+		512059,
+		513059,
+		514059,
+		515059,
+		519059,
+		220059,
+		320059,
+		420059,
+		520059,
+		521059,
+		522059,
+		523059,
+		524059,
+		525059,
+		529059,
+		230059,
+		330059,
+		430059,
+		530059,
+		531059,
+		532059,
+		533059,
+		534059,
+		535059,
+		539059,
+		240059,
+		340059,
+		440059,
+		540059,
+		541059,
+		542059,
+		543059,
+		544059,
+		545059,
+		549059,
+		250059,
+		350059,
+		450059,
+		550059,
+		551059,
+		552059,
+		553059,
+		554059,
+		555059,
+		559059,
+		260059,
+		360059,
+		460059,
+		560059,
+		561059,
+		562059,
+		563059,
+		564059,
+		565059,
+		569059,
+		210060,
+		310060,
+		410060,
+		510060,
+		511060,
+		512060,
+		513060,
+		514060,
+		515060,
+		519060,
+		220060,
+		320060,
+		420060,
+		520060,
+		521060,
+		522060,
+		523060,
+		524060,
+		525060,
+		529060,
+		230060,
+		330060,
+		430060,
+		530060,
+		531060,
+		532060,
+		533060,
+		534060,
+		535060,
+		539060,
+		240060,
+		340060,
+		440060,
+		540060,
+		541060,
+		542060,
+		543060,
+		544060,
+		545060,
+		549060,
+		250060,
+		350060,
+		450060,
+		550060,
+		551060,
+		552060,
+		553060,
+		554060,
+		555060,
+		559060,
+		260060,
+		360060,
+		460060,
+		560060,
+		561060,
+		562060,
+		563060,
+		564060,
+		565060,
+		569060,
+		210061,
+		310061,
+		410061,
+		510061,
+		511061,
+		512061,
+		513061,
+		514061,
+		515061,
+		519061,
+		220061,
+		320061,
+		420061,
+		520061,
+		521061,
+		522061,
+		523061,
+		524061,
+		525061,
+		529061,
+		230061,
+		330061,
+		430061,
+		530061,
+		531061,
+		532061,
+		533061,
+		534061,
+		535061,
+		539061,
+		240061,
+		340061,
+		440061,
+		540061,
+		541061,
+		542061,
+		543061,
+		544061,
+		545061,
+		549061,
+		250061,
+		350061,
+		450061,
+		550061,
+		551061,
+		552061,
+		553061,
+		554061,
+		555061,
+		559061,
+		260061,
+		360061,
+		460061,
+		560061,
+		561061,
+		562061,
+		563061,
+		564061,
+		565061,
+		569061,
+		210062,
+		310062,
+		410062,
+		510062,
+		511062,
+		512062,
+		513062,
+		514062,
+		515062,
+		519062,
+		220062,
+		320062,
+		420062,
+		520062,
+		521062,
+		522062,
+		523062,
+		524062,
+		525062,
+		529062,
+		230062,
+		330062,
+		430062,
+		530062,
+		531062,
+		532062,
+		533062,
+		534062,
+		535062,
+		539062,
+		240062,
+		340062,
+		440062,
+		540062,
+		541062,
+		542062,
+		543062,
+		544062,
+		545062,
+		549062,
+		250062,
+		350062,
+		450062,
+		550062,
+		551062,
+		552062,
+		553062,
+		554062,
+		555062,
+		559062,
+		260062,
+		360062,
+		460062,
+		560062,
+		561062,
+		562062,
+		563062,
+		564062,
+		565062,
+		569062,
 		830001,
 		840001,
 		850001,
@@ -27315,6 +49368,21 @@
 		830057,
 		840057,
 		850057,
+		830058,
+		840058,
+		850058,
+		830059,
+		840059,
+		850059,
+		830060,
+		840060,
+		850060,
+		830061,
+		840061,
+		850061,
+		830062,
+		840062,
+		850062,
 		941001,
 		941002,
 		941003,
@@ -27646,6 +49714,8 @@
 		2510009,
 		2510010,
 		2510012,
+		2510013,
+		2510014,
 		2510999,
 		2520000,
 		2520001,
@@ -27694,6 +49764,9 @@
 		2550007,
 		2550008,
 		2550009,
+		2550010,
+		2550011,
+		2550012,
 		2550998,
 		2550999,
 		2590000,
@@ -27716,6 +49789,7 @@
 		2110482,
 		2110491,
 		2110492,
+		2110493,
 		2110661,
 		2110662,
 		2110663,
@@ -27813,10 +49887,21 @@
 		2110152,
 		2110951,
 		2110952,
+		2110953,
 		2112841,
 		2112842,
 		2111971,
 		2111972,
+		2110221,
+		2110222,
+		2110211,
+		2110212,
+		2110201,
+		2110202,
+		2111561,
+		2111562,
+		2110891,
+		2110892,
 		2200002,
 		2200003,
 		2200004,
@@ -27873,7 +49958,14 @@
 		109501,
 		128401,
 		119701,
+		104902,
 		113907,
+		102201,
+		102101,
+		102001,
+		115601,
+		109502,
+		108901,
 		1037011,
 		1013011,
 		1094021,
@@ -27954,6 +50046,11 @@
 		1095,
 		1284,
 		1197,
+		1022,
+		1021,
+		1020,
+		1156,
+		1089,
 		11039,
 		11048,
 		11066,
@@ -28013,6 +50110,11 @@
 		11095,
 		11284,
 		11197,
+		11022,
+		11021,
+		11020,
+		11156,
+		11089,
 		1010950103,
 		1010720103,
 		1010750203,
@@ -28028,6 +50130,22 @@
 		1010740203,
 		1012840103,
 		1011970103,
+		1010490203,
+		1010490205,
+		1011390703,
+		1011970105,
+		1010220103,
+		1010220105,
+		1010760205,
+		1010700105,
+		1010740105,
+		1010420505,
+		1010210103,
+		1010200103,
+		1011560103,
+		1010890103,
+		1010950203,
+		1010950299,
 		1110950103,
 		1110720103,
 		1110750203,
@@ -28043,10 +50161,37 @@
 		1110740203,
 		1112840103,
 		1111970103,
+		1110490203,
+		1110490205,
+		1111390703,
+		1111390705,
+		1110220103,
+		1110220105,
+		1110760205,
+		1110700105,
+		1110740105,
+		1110420505,
+		1110210103,
+		1110200103,
+		1111560103,
+		1110890103,
+		1110950203,
 		4600703,
 		4600803,
 		4600903,
 		4601003,
-		4601103
+		4601103,
+		4601203,
+		4601205,
+		4601303,
+		4601305,
+		4601403,
+		4601405,
+		4600105,
+		4601503,
+		4601603,
+		4602103,
+		4601703,
+		4601803
 	}
 }

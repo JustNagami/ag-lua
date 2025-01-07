@@ -629,6 +629,48 @@
 			119701
 		}
 	},
+	[2510013] = {
+		show_offset_y = "0",
+		race = 1,
+		type = 2,
+		story = "a94a75dff32d81bfc4dfc798f43f735e",
+		effect_desc = "",
+		show_offset_x = "0.02",
+		desc = "adea00c929d859ed37ed95706d60aa56",
+		attrib_addition = 20,
+		display_type = 0,
+		starlevel = 5,
+		show_tiling_scale = "1",
+		id = 2510013,
+		attribute = {
+			1,
+			100
+		},
+		effect = {
+			102201
+		}
+	},
+	[2510014] = {
+		show_offset_y = "0",
+		race = 1,
+		type = 2,
+		story = "caa98e5b0d59e9dd62ea02d196ab2b8f",
+		effect_desc = "",
+		show_offset_x = "-0.07",
+		desc = "7853fe2f7f420dc2c9b2bd03b41c9c19",
+		attrib_addition = 20,
+		display_type = 0,
+		starlevel = 5,
+		show_tiling_scale = "1.2",
+		id = 2510014,
+		attribute = {
+			1,
+			100
+		},
+		effect = {
+			102101
+		}
+	},
 	[2510999] = {
 		show_offset_y = "-0.2",
 		race = 1,
@@ -1637,6 +1679,69 @@
 			105201
 		}
 	},
+	[2550010] = {
+		show_offset_y = "-0.23",
+		race = 5,
+		type = 2,
+		story = "89f1e928572d98f3fcd19a1d22666d47",
+		effect_desc = "",
+		show_offset_x = "-0.1",
+		desc = "ab8f02798c78f48098e80569e666e39f",
+		attrib_addition = 20,
+		display_type = 0,
+		starlevel = 5,
+		show_tiling_scale = "1.4",
+		id = 2550010,
+		attribute = {
+			1,
+			100
+		},
+		effect = {
+			102001
+		}
+	},
+	[2550011] = {
+		show_offset_y = "-0.23",
+		race = 5,
+		type = 2,
+		story = "f03f1aafc2916ebdd377d7ff7ed63efc",
+		effect_desc = "",
+		show_offset_x = "-0.1",
+		desc = "cdf306bd58947c13524452e6b255cca9",
+		attrib_addition = 20,
+		display_type = 0,
+		starlevel = 5,
+		show_tiling_scale = "1.4",
+		id = 2550011,
+		attribute = {
+			1,
+			100
+		},
+		effect = {
+			115601
+		}
+	},
+	[2550012] = {
+		show_offset_y = "-0.23",
+		race = 5,
+		type = 2,
+		story = "3e25b22347f23a2f40b241e526dc2cbd",
+		effect_desc = "",
+		show_offset_x = "-0.1",
+		desc = "a9a76dc0efcc1f64950098c41f408322",
+		attrib_addition = 20,
+		display_type = 0,
+		starlevel = 5,
+		show_tiling_scale = "1.4",
+		id = 2550012,
+		attribute = {
+			1,
+			100
+		},
+		effect = {
+			108901
+		}
+	},
 	[2550998] = {
 		show_offset_y = "-0.13",
 		race = 5,
@@ -1918,6 +2023,9 @@
 			2550007,
 			2550008,
 			2550009,
+			2550010,
+			2550011,
+			2550012,
 			2550998,
 			2550999
 		},
@@ -1990,6 +2098,8 @@
 			2510009,
 			2510010,
 			2510012,
+			2510013,
+			2510014,
 			2510999
 		}
 	},
@@ -2026,6 +2136,15 @@
 		},
 		[421] = {
 			2550998
+		},
+		[108901] = {
+			2550012
+		},
+		[115601] = {
+			2550011
+		},
+		[102001] = {
+			2550010
 		},
 		[105201] = {
 			2550009
@@ -2159,6 +2278,12 @@
 		[416] = {
 			2510999
 		},
+		[102101] = {
+			2510014
+		},
+		[102201] = {
+			2510013
+		},
 		[119701] = {
 			2510012
 		},
@@ -2286,6 +2411,8 @@
 		2510009,
 		2510010,
 		2510012,
+		2510013,
+		2510014,
 		2510999,
 		2520000,
 		2520001,
@@ -2334,6 +2461,9 @@
 		2550007,
 		2550008,
 		2550009,
+		2550010,
+		2550011,
+		2550012,
 		2550998,
 		2550999,
 		2590000,

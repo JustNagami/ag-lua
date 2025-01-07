@@ -13,15 +13,20 @@ function var_0_0.Init(arg_3_0)
 
 	arg_3_0.canteenHeroStateScroll = LuaList.New(handler(arg_3_0, arg_3_0.indexHeroItem), arg_3_0.heroUilistGo_, BackHomeNewHeroItem)
 	arg_3_0.danceHeroStateScroll = LuaList.New(handler(arg_3_0, arg_3_0.indexDanceHeroItem), arg_3_0.danceHeroUilistGo_, BackHomeNewHeroItem)
-	arg_3_0.toggleGropu = {}
+	arg_3_0.toggleGroup = {}
 
 	local var_3_0 = GameDisplayCfg.dorm_area_layer_num.value[1]
 
 	for iter_3_0 = 1, var_3_0 do
-		arg_3_0.toggleGropu[iter_3_0] = arg_3_0["floor" .. iter_3_0 .. "Tgl_"]
+		arg_3_0.toggleGroup[iter_3_0] = arg_3_0["floor" .. iter_3_0 .. "Tgl_"]
 	end
 
 	arg_3_0.roomItemView = DromPrivateRoomItem.New(arg_3_0.dormRoomItem)
+	arg_3_0.marqueComp = MarqueComponent.New(arg_3_0.marqueeObj_)
+
+	arg_3_0.marqueComp:Hide()
+
+	arg_3_0.subtitleBubbleView = SubtitleBubbleView.MuteBubbleSubView.GetInstance()
 
 	arg_3_0:AddUIListener()
 end
@@ -39,6 +44,15 @@ function var_0_0.InitController(arg_5_0)
 end
 
 function var_0_0.OnEnter(arg_6_0)
+	if arg_6_0.params_.openInfoPanel then
+		arg_6_0.params_.openInfoPanel = false
+
+		JumpTools.OpenPageByJump("/dormInformationView")
+
+		return
+	end
+
+	BackHomeAction:GetVisitData()
 	arg_6_0:RefreshFloorInfo()
 
 	arg_6_0.moveFlag = false
@@ -49,6 +63,8 @@ function var_0_0.OnEnter(arg_6_0)
 	arg_6_0.roomItemView:OnEnter()
 	arg_6_0:RefreshCanteenState()
 	arg_6_0:RefreshDanceState()
+	arg_6_0:RenderMarque()
+	arg_6_0.subtitleBubbleView:OnEnter()
 end
 
 function var_0_0.OnBehind(arg_7_0)
@@ -57,10 +73,12 @@ end
 
 function var_0_0.BindRedPoint(arg_8_0)
 	manager.redPoint:bindUIandKey(arg_8_0.redpoint, RedPointConst.CANTEEN)
+	manager.redPoint:bindUIandKey(arg_8_0.navigationBtn_.transform, RedPointConst.DORM_ILLU)
 end
 
 function var_0_0.UnBindRedPoint(arg_9_0)
 	manager.redPoint:unbindUIandKey(arg_9_0.redpoint, RedPointConst.CANTEEN)
+	manager.redPoint:unbindUIandKey(arg_9_0.navigationBtn_.transform, RedPointConst.DORM_ILLU)
 end
 
 function var_0_0.RefreshFloorInfo(arg_10_0)
@@ -68,7 +86,7 @@ function var_0_0.RefreshFloorInfo(arg_10_0)
 		arg_10_0.floor = DormitoryData:GetFloor() or 1
 	end
 
-	arg_10_0.toggleGropu[arg_10_0.floor].isOn = true
+	arg_10_0.toggleGroup[arg_10_0.floor].isOn = true
 
 	for iter_10_0 = 1, GameDisplayCfg.dorm_area_layer_num.value[1] do
 		arg_10_0["text" .. iter_10_0 .. "Text_"].text = iter_10_0 .. "F"
@@ -129,6 +147,7 @@ function var_0_0.RegisterEvent(arg_15_0)
 end
 
 function var_0_0.OnExit(arg_22_0)
+	arg_22_0.subtitleBubbleView:OnExit()
 	arg_22_0.roomItemView:OnExit()
 	manager.windowBar:HideBar()
 	arg_22_0:RemoveAllEventListener()
@@ -200,117 +219,130 @@ function var_0_0.AddUIListener(arg_23_0)
 			arg_23_0.listShowController:SetSelectedState("off")
 		end
 	end)
+	arg_23_0:AddBtnListener(arg_23_0.navigationBtn_, nil, function()
+		JumpTools.OpenPageByJump("dormNavigation", {
+			isMain = true
+		})
+	end)
+	arg_23_0:AddBtnListenerScale(arg_23_0.infomationBtn_, nil, function()
+		JumpTools.OpenPageByJump("/dormInformationView")
+	end)
 end
 
-function var_0_0.ClickChangeFloor(arg_32_0, arg_32_1)
-	if arg_32_0.roomItemView.edit then
+function var_0_0.ClickChangeFloor(arg_34_0, arg_34_1)
+	if arg_34_0.roomItemView.edit then
 		return
 	end
 
-	if arg_32_0.floor == arg_32_1 then
+	if arg_34_0.floor == arg_34_1 then
 		return
 	end
 
-	arg_32_0.floor = arg_32_1
-	arg_32_0.toggleGropu[arg_32_0.floor].isOn = true
+	arg_34_0.floor = arg_34_1
+	arg_34_0.toggleGroup[arg_34_0.floor].isOn = true
 
-	arg_32_0:RefreshRoomItem()
+	arg_34_0:RefreshRoomItem()
 	DormTools:PlayDormAudioEffect(DormConst.DORM_AUDIO_EFFECT.ChangeFloor)
-	arg_32_0.roomItemView:PlayFloorAnimation()
+	arg_34_0.roomItemView:PlayFloorAnimation()
 end
 
-function var_0_0.RefreshCanteenState(arg_33_0)
+function var_0_0.RefreshCanteenState(arg_35_0)
 	if CanteenEntrustData.AnyEntrustFinished() then
-		arg_33_0.canteenTaskStateController:SetSelectedState("true")
+		arg_35_0.canteenTaskStateController:SetSelectedState("true")
 	else
-		arg_33_0.canteenTaskStateController:SetSelectedState("false")
+		arg_35_0.canteenTaskStateController:SetSelectedState("false")
 	end
 
 	if CanteenTools:CheckSignFoodNumCanOpen() then
-		arg_33_0.canteenFoodEnoughController:SetSelectedState("false")
+		arg_35_0.canteenFoodEnoughController:SetSelectedState("false")
 	else
-		arg_33_0.canteenFoodEnoughController:SetSelectedState("true")
+		arg_35_0.canteenFoodEnoughController:SetSelectedState("true")
 	end
 
-	arg_33_0:RefreshCanteenJobItem()
+	arg_35_0:RefreshCanteenJobItem()
 end
 
-function var_0_0.RefreshRoomItem(arg_34_0)
-	if arg_34_0.floor then
-		arg_34_0.roomItemView:RefreshUI(arg_34_0.floor)
+function var_0_0.RefreshRoomItem(arg_36_0)
+	if arg_36_0.floor then
+		arg_36_0.roomItemView:RefreshUI(arg_36_0.floor)
 	end
 end
 
-function var_0_0.RefreshCanteenJobItem(arg_35_0)
-	arg_35_0.workHeroList = {}
+function var_0_0.RefreshCanteenJobItem(arg_37_0)
+	arg_37_0.workHeroList = {}
 
-	local var_35_0 = CanteenHeroTools:GetCanteenJobList()
+	local var_37_0 = CanteenHeroTools:GetCanteenJobList()
 
-	if var_35_0 then
-		for iter_35_0, iter_35_1 in ipairs(var_35_0) do
-			table.insert(arg_35_0.workHeroList, iter_35_1.heroID or -1)
+	if var_37_0 then
+		for iter_37_0, iter_37_1 in ipairs(var_37_0) do
+			table.insert(arg_37_0.workHeroList, iter_37_1.heroID or -1)
 		end
 	end
 
-	arg_35_0.canteenHeroStateScroll:StartScroll(#arg_35_0.workHeroList)
+	arg_37_0.canteenHeroStateScroll:StartScroll(#arg_37_0.workHeroList)
 end
 
-function var_0_0.indexHeroItem(arg_36_0, arg_36_1, arg_36_2)
-	arg_36_2:SetItemFunction({
+function var_0_0.indexHeroItem(arg_38_0, arg_38_1, arg_38_2)
+	arg_38_2:SetItemFunction({
 		showFatigue = true,
 		showJobState = true
 	})
-	arg_36_2:RefreshUI(arg_36_0.workHeroList[arg_36_1])
+	arg_38_2:RefreshUI(arg_38_0.workHeroList[arg_38_1])
 end
 
-function var_0_0.indexDanceHeroItem(arg_37_0, arg_37_1, arg_37_2)
-	arg_37_2:SetItemFunction({
+function var_0_0.indexDanceHeroItem(arg_39_0, arg_39_1, arg_39_2)
+	arg_39_2:SetItemFunction({
 		showFatigue = true,
 		showJobState = true
 	})
-	arg_37_2:RefreshUI(arg_37_0.danceHeroList[arg_37_1])
+	arg_39_2:RefreshUI(arg_39_0.danceHeroList[arg_39_1])
 end
 
-function var_0_0.RefreshDanceState(arg_38_0)
-	arg_38_0.danceHeroList = {}
+function var_0_0.RefreshDanceState(arg_40_0)
+	arg_40_0.danceHeroList = {}
 
-	local var_38_0 = DormHeroTools:GetHeroListInDance()
-	local var_38_1 = GameSetting.dorm_idol_room_max_place.value[1]
+	local var_40_0 = DormHeroTools:GetHeroListInDance()
+	local var_40_1 = GameSetting.dorm_idol_room_max_place.value[1]
 
-	for iter_38_0 = 1, var_38_1 do
-		arg_38_0.danceHeroList[iter_38_0] = 0
+	for iter_40_0 = 1, var_40_1 do
+		arg_40_0.danceHeroList[iter_40_0] = 0
 	end
 
-	for iter_38_1, iter_38_2 in ipairs(var_38_0) do
-		if iter_38_2.dancePos then
-			arg_38_0.danceHeroList[iter_38_2.dancePos] = iter_38_2.hero_id
+	for iter_40_1, iter_40_2 in ipairs(var_40_0) do
+		if iter_40_2.dancePos then
+			arg_40_0.danceHeroList[iter_40_2.dancePos] = iter_40_2.hero_id
 		end
 	end
 
-	arg_38_0.danceHeroStateScroll:StartScroll(#arg_38_0.danceHeroList)
+	arg_40_0.danceHeroStateScroll:StartScroll(#arg_40_0.danceHeroList)
 
 	if IdolTraineeTools:CheckDanceTaskComplete() then
-		arg_38_0.danceTaskController:SetSelectedState("true")
+		arg_40_0.danceTaskController:SetSelectedState("true")
 	else
-		arg_38_0.danceTaskController:SetSelectedState("false")
+		arg_40_0.danceTaskController:SetSelectedState("false")
 	end
 end
 
-function var_0_0.Dispose(arg_39_0)
-	if arg_39_0.canteenHeroStateScroll then
-		arg_39_0.canteenHeroStateScroll:Dispose()
+function var_0_0.RenderMarque(arg_41_0)
+	return
+end
+
+function var_0_0.Dispose(arg_42_0)
+	if arg_42_0.canteenHeroStateScroll then
+		arg_42_0.canteenHeroStateScroll:Dispose()
 	end
 
-	if arg_39_0.danceHeroStateScroll then
-		arg_39_0.danceHeroStateScroll:Dispose()
+	if arg_42_0.danceHeroStateScroll then
+		arg_42_0.danceHeroStateScroll:Dispose()
 	end
 
-	if arg_39_0.roomItemView then
-		arg_39_0.roomItemView:Dispose()
+	if arg_42_0.roomItemView then
+		arg_42_0.roomItemView:Dispose()
 	end
 
-	DormitoryData:SetFloor(arg_39_0.floor)
-	var_0_0.super.Dispose(arg_39_0)
+	arg_42_0.marqueComp:Dispose()
+	DormitoryData:SetFloor(arg_42_0.floor)
+	var_0_0.super.Dispose(arg_42_0)
 end
 
 return var_0_0

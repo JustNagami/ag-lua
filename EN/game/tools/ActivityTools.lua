@@ -10,7 +10,7 @@ function var_0_0.GetCurrentAdvInfo()
 		if ActivityTools.IsValidAdv(var_1_1.id) then
 			table.insert(var_1_0, {
 				id = var_1_1.id,
-				image = getSpriteWithoutAtlas("TextureConfig/Announcements/" .. (var_1_1.picture or "activity1") .. SettingData:GetCurrentLanguageKey())
+				image = getSpriteWithoutAtlas("I18NImg/ZH_CN/Banner/" .. (var_1_1.picture or "activity1"))
 			})
 		end
 	end
@@ -550,6 +550,8 @@ function var_0_0.GetRedPointKey(arg_8_0)
 		return RedPointConst.SEVEN_DAY_SIGN_SKIN .. "_"
 	elseif var_8_0 == ActivityTemplateConst.SEVEN_DAY_SIGN_SKIN_WORLD_LINE then
 		return RedPointConst.SEVEN_DAY_SIGN_SKIN .. "_"
+	elseif var_8_0 == ActivityTemplateConst.SEVEN_DAY_SIGN_SKIN_NEW then
+		return RedPointConst.SEVEN_DAY_SIGN_SKIN .. "_"
 	elseif var_8_0 == ActivityTemplateConst.STRONGHOLD then
 		return RedPointConst.STRONGHOLD .. "_"
 	elseif var_8_0 == ActivityTemplateConst.ACTIVITY_SKIN_DRAW then
@@ -594,6 +596,22 @@ function var_0_0.GetRedPointKey(arg_8_0)
 		return RedPointConst.ACTIVITY_ACCUMULATIVE .. "_"
 	elseif var_8_0 == ActivityTemplateConst.ACTIVITY_REFORGE then
 		return RedPointConst.ACTIVITY_REFORGE
+	elseif var_8_0 == ActivityTemplateConst.ACTIVITY_WHACK_MOLE then
+		return RedPointConst.WHACK_MOLE .. "_"
+	elseif var_8_0 == ActivityTemplateConst.ACTIVITY_MONSTER_COSPLAY then
+		return RedPointConst.MONSTER_COSPLAY_MAIN .. "_"
+	elseif var_8_0 == ActivityTemplateConst.ACTIVITY_TANGRAM_GAME then
+		return RedPointConst.ACTIVITY_3_5_TANGRAM_GAME .. "_"
+	elseif var_8_0 == ActivityTemplateConst.ACTIVITY_KALI then
+		return RedPointConst.ACTIVITY_KALI .. "_"
+	elseif var_8_0 == ActivityTemplateConst.ACTIVITY_AREA_BATTLE then
+		return RedPointConst.ACTIVITY_AREA_BATTLE .. "_"
+	elseif var_8_0 == ActivityTemplateConst.ACTIVITY_USE_DUNDUN then
+		return RedPointConst.ACTIVITY_USE_DUNDUN
+	elseif var_8_0 == ActivityTemplateConst.ACTIVITY_TETRIS_GAME then
+		return RedPointConst.ACTIVITY_TETIRS_GAME .. "_"
+	elseif var_8_0 == ActivityTemplateConst.ACTIVITY_DODGE_BARRAGE then
+		return RedPointConst.ACTIVITY_DODGE_BARRAGE .. "_"
 	else
 		return RedPointConst.ACTIVITY_COMMON .. "_"
 	end
@@ -788,147 +806,162 @@ end
 
 function var_0_0.GetActivityStatus(arg_20_0)
 	if ActivityData:GetActivityIsOpen(arg_20_0) then
-		return 1
+		return ActivityConst.ACTIVITY_STATE.ACTIVING
 	else
 		local var_20_0 = ActivityData:GetActivityData(arg_20_0)
 		local var_20_1 = manager.time:GetServerTime()
 
 		if var_20_0 and var_20_1 < var_20_0.startTime then
-			return 0
+			return ActivityConst.ACTIVITY_STATE.WAIT
 		else
-			return 2
+			return ActivityConst.ACTIVITY_STATE.OVER
 		end
 	end
 end
 
-function var_0_0.GetTogglePanelView(arg_21_0)
-	local var_21_0 = var_0_0.GetActivityTheme(arg_21_0)
+function var_0_0.GetActivityStatusWithTips(arg_21_0)
+	if ActivityData:GetActivityIsOpen(arg_21_0) then
+		return 1
+	else
+		local var_21_0 = ActivityData:GetActivityData(arg_21_0)
+		local var_21_1 = manager.time:GetServerTime()
 
-	for iter_21_0, iter_21_1 in ipairs(ActivityToggleCfg.get_id_list_by_activity_theme[var_21_0]) do
-		if ActivityToggleCfg[iter_21_1].activity_id == arg_21_0 and (ActivityToggleCfg[iter_21_1].class_name ~= nil or true) then
-			return ActivityToggleCfg[iter_21_1].class_name
+		if var_21_0 and var_21_1 < var_21_0.startTime then
+			return 0, GetTipsF("OPEN_TIME", manager.time:GetLostTimeStr(var_21_0.startTime))
+		else
+			return 2, GetTips("TIME_OVER")
 		end
 	end
 end
 
-function var_0_0.JumpBackToActivityMainViewByActivityID(arg_22_0)
-	local var_22_0 = ActivityCfg[arg_22_0].activity_theme
-	local var_22_1, var_22_2 = var_0_0.GetActivityMainRouteByTheme(var_22_0, arg_22_0)
+function var_0_0.GetTogglePanelView(arg_22_0)
+	local var_22_0 = var_0_0.GetActivityTheme(arg_22_0)
 
-	JumpTools.OpenPageUntilLoaded(var_22_1, var_22_2)
+	for iter_22_0, iter_22_1 in ipairs(ActivityToggleCfg.get_id_list_by_activity_theme[var_22_0]) do
+		if ActivityToggleCfg[iter_22_1].activity_id == arg_22_0 and (ActivityToggleCfg[iter_22_1].class_name ~= nil or true) then
+			return ActivityToggleCfg[iter_22_1].class_name
+		end
+	end
 end
 
-function var_0_0.JumpBackToActivityMainViewByTheme(arg_23_0)
-	local var_23_0, var_23_1 = var_0_0.GetActivityMainRouteByTheme(arg_23_0)
+function var_0_0.JumpBackToActivityMainViewByActivityID(arg_23_0)
+	local var_23_0 = ActivityCfg[arg_23_0].activity_theme
+	local var_23_1, var_23_2 = var_0_0.GetActivityMainRouteByTheme(var_23_0, arg_23_0)
 
-	JumpTools.OpenPageUntilLoaded(var_23_0, var_23_1)
+	JumpTools.OpenPageUntilLoaded(var_23_1, var_23_2)
 end
 
-function var_0_0.GetActivityMainRouteByTheme(arg_24_0, arg_24_1)
-	local var_24_0 = ActivityEntraceCfg.get_id_list_by_theme[arg_24_0][1]
-	local var_24_1 = ActivityEntraceCfg[var_24_0].jump_system
-	local var_24_2 = var_24_1[2]
+function var_0_0.JumpBackToActivityMainViewByTheme(arg_24_0)
+	local var_24_0, var_24_1 = var_0_0.GetActivityMainRouteByTheme(arg_24_0)
 
-	arg_24_1 = arg_24_1 or ActivityVersionData:GetSelectActivityID(var_24_2)
+	JumpTools.OpenPageUntilLoaded(var_24_0, var_24_1)
+end
 
-	local var_24_3 = SystemLinkCfg[var_24_1[1]].link
-	local var_24_4 = {
-		activityID = var_24_2,
-		subActivityID = arg_24_1
+function var_0_0.GetActivityMainRouteByTheme(arg_25_0, arg_25_1)
+	local var_25_0 = ActivityEntraceCfg.get_id_list_by_theme[arg_25_0][1]
+	local var_25_1 = ActivityEntraceCfg[var_25_0].jump_system
+	local var_25_2 = var_25_1[2]
+
+	arg_25_1 = arg_25_1 or ActivityVersionData:GetSelectActivityID(var_25_2)
+
+	local var_25_3 = SystemLinkCfg[var_25_1[1]].link
+	local var_25_4 = {
+		activityID = var_25_2,
+		subActivityID = arg_25_1
 	}
 
-	return var_24_3, var_24_4
+	return var_25_3, var_25_4
 end
 
-function var_0_0.GetReprintActivityTheme(arg_25_0)
-	return var_0_0.GetReprintActivityID(arg_25_0)
+function var_0_0.GetReprintActivityTheme(arg_26_0)
+	return var_0_0.GetReprintActivityID(arg_26_0)
 end
 
-function var_0_0.GetReprintActivityID(arg_26_0)
-	local var_26_0 = ActivityVersionData:GetReprintField()
+function var_0_0.GetReprintActivityID(arg_27_0)
+	local var_27_0 = ActivityVersionData:GetReprintField()
 
-	if var_26_0 == "" then
-		return arg_26_0
+	if var_27_0 == "" then
+		return arg_27_0
 	end
 
-	local var_26_1 = ActivityReprintCfg[arg_26_0]
+	local var_27_1 = ActivityReprintCfg[arg_27_0]
 
-	if var_26_1 and var_26_1[var_26_0] then
-		return var_26_1[var_26_0]
+	if var_27_1 and var_27_1[var_27_0] then
+		return var_27_1[var_27_0]
 	else
-		return arg_26_0
+		return arg_27_0
 	end
 end
 
-function var_0_0.GetOriginActivityTheme(arg_27_0)
-	return ActivityReprintExCfg[arg_27_0] and ActivityReprintExCfg[arg_27_0].originActivityID or arg_27_0
-end
-
-function var_0_0.GetOriginActivityID(arg_28_0)
+function var_0_0.GetOriginActivityTheme(arg_28_0)
 	return ActivityReprintExCfg[arg_28_0] and ActivityReprintExCfg[arg_28_0].originActivityID or arg_28_0
 end
 
-function var_0_0.GetParentActivityID(arg_29_0)
-	local var_29_0 = ActivityCfg[arg_29_0].activity_theme
+function var_0_0.GetOriginActivityID(arg_29_0)
+	return ActivityReprintExCfg[arg_29_0] and ActivityReprintExCfg[arg_29_0].originActivityID or arg_29_0
+end
 
-	for iter_29_0, iter_29_1 in ipairs(ActivityCfg.get_id_list_by_activity_theme[var_29_0]) do
-		if table.keyof(ActivityCfg[iter_29_1].sub_activity_list, arg_29_0) then
-			return iter_29_1
+function var_0_0.GetParentActivityID(arg_30_0)
+	local var_30_0 = ActivityCfg[arg_30_0].activity_theme
+
+	for iter_30_0, iter_30_1 in ipairs(ActivityCfg.get_id_list_by_activity_theme[var_30_0]) do
+		if table.keyof(ActivityCfg[iter_30_1].sub_activity_list, arg_30_0) then
+			return iter_30_1
 		end
 	end
 end
 
-function var_0_0.GetAllSubActivityByTemplate(arg_30_0, arg_30_1)
-	local var_30_0 = ActivityCfg[arg_30_0]
-	local var_30_1 = {}
+function var_0_0.GetAllSubActivityByTemplate(arg_31_0, arg_31_1)
+	local var_31_0 = ActivityCfg[arg_31_0]
+	local var_31_1 = {}
 
-	for iter_30_0, iter_30_1 in ipairs(var_30_0.sub_activity_list) do
-		if ActivityCfg[iter_30_1].activity_template == arg_30_1 then
-			table.insert(var_30_1, iter_30_1)
+	for iter_31_0, iter_31_1 in ipairs(var_31_0.sub_activity_list) do
+		if ActivityCfg[iter_31_1].activity_template == arg_31_1 then
+			table.insert(var_31_1, iter_31_1)
 		end
 	end
 
-	return var_30_1
+	return var_31_1
 end
 
-function var_0_0.GetAllTaskSubActivityID(arg_31_0)
-	return var_0_0.GetAllSubActivityByTemplate(arg_31_0, ActivityTemplateConst.TASK)
+function var_0_0.GetAllTaskSubActivityID(arg_32_0)
+	return var_0_0.GetAllSubActivityByTemplate(arg_32_0, ActivityTemplateConst.TASK)
 end
 
-function var_0_0.CreateActivityTimer(arg_32_0, arg_32_1, arg_32_2, arg_32_3)
-	if var_0_1[arg_32_0] then
-		var_0_1[arg_32_0]:Stop()
+function var_0_0.CreateActivityTimer(arg_33_0, arg_33_1, arg_33_2, arg_33_3)
+	if var_0_1[arg_33_0] then
+		var_0_1[arg_33_0]:Stop()
 
-		var_0_1[arg_32_0] = nil
+		var_0_1[arg_33_0] = nil
 	end
 
-	arg_32_2 = arg_32_2 or 1
-	arg_32_3 = arg_32_3 or -1
-	var_0_1[arg_32_0] = Timer.New(function()
-		arg_32_1()
-	end, arg_32_2, arg_32_3)
+	arg_33_2 = arg_33_2 or 1
+	arg_33_3 = arg_33_3 or -1
+	var_0_1[arg_33_0] = Timer.New(function()
+		arg_33_1()
+	end, arg_33_2, arg_33_3)
 
-	var_0_1[arg_32_0]:Start()
+	var_0_1[arg_33_0]:Start()
 end
 
-function var_0_0.ClearActivityTimer(arg_34_0)
-	if var_0_1[arg_34_0] then
-		var_0_1[arg_34_0]:Stop()
+function var_0_0.ClearActivityTimer(arg_35_0)
+	if var_0_1[arg_35_0] then
+		var_0_1[arg_35_0]:Stop()
 
-		var_0_1[arg_34_0] = nil
+		var_0_1[arg_35_0] = nil
 	end
 end
 
 function var_0_0.ClearAllActivityTimer()
-	for iter_35_0, iter_35_1 in pairs(var_0_1) do
-		iter_35_1:Stop()
+	for iter_36_0, iter_36_1 in pairs(var_0_1) do
+		iter_36_1:Stop()
 	end
 
 	var_0_1 = {}
 end
 
-function var_0_0.GetActivityIsRootOrSub(arg_36_0)
-	if not arg_36_0 then
+function var_0_0.GetActivityIsRootOrSub(arg_37_0)
+	if not arg_37_0 then
 		return false
 	end
 
@@ -938,28 +971,28 @@ function var_0_0.GetActivityIsRootOrSub(arg_36_0)
 			subRoot = {}
 		}
 
-		for iter_36_0, iter_36_1 in ipairs(ActivityEntraceCfg.all) do
-			local var_36_0 = ActivityCfg[iter_36_1]
+		for iter_37_0, iter_37_1 in ipairs(ActivityEntraceCfg.all) do
+			local var_37_0 = ActivityCfg[iter_37_1]
 
-			if var_36_0 then
-				local var_36_1 = var_36_0.activity_template
-				local var_36_2 = var_36_0.activity_theme
+			if var_37_0 then
+				local var_37_1 = var_37_0.activity_template
+				local var_37_2 = var_37_0.activity_theme
 
-				if var_36_1 == ActivityTemplateConst.MAIN_ACTIVITY then
-					local var_36_3 = ActivityToggleCfg.get_id_list_by_activity_theme[var_36_2] or {}
-					local var_36_4 = {}
+				if var_37_1 == ActivityTemplateConst.MAIN_ACTIVITY then
+					local var_37_3 = ActivityToggleCfg.get_id_list_by_activity_theme[var_37_2] or {}
+					local var_37_4 = {}
 
-					for iter_36_2, iter_36_3 in ipairs(var_36_3) do
-						var_36_4[ActivityToggleCfg[iter_36_3].activity_id] = true
+					for iter_37_2, iter_37_3 in ipairs(var_37_3) do
+						var_37_4[ActivityToggleCfg[iter_37_3].activity_id] = true
 					end
 
-					ActivityTools.activityRootMap.root[iter_36_1] = true
+					ActivityTools.activityRootMap.root[iter_37_1] = true
 
-					local var_36_5 = var_36_0.sub_activity_list or {}
+					local var_37_5 = var_37_0.sub_activity_list or {}
 
-					for iter_36_4, iter_36_5 in ipairs(var_36_5) do
-						if var_36_4[iter_36_5] then
-							ActivityTools.activityRootMap.subRoot[iter_36_5] = iter_36_1
+					for iter_37_4, iter_37_5 in ipairs(var_37_5) do
+						if var_37_4[iter_37_5] then
+							ActivityTools.activityRootMap.subRoot[iter_37_5] = iter_37_1
 						end
 					end
 				end
@@ -967,63 +1000,73 @@ function var_0_0.GetActivityIsRootOrSub(arg_36_0)
 		end
 	end
 
-	if ActivityTools.activityRootMap.root[arg_36_0] then
+	if ActivityTools.activityRootMap.root[arg_37_0] then
 		return true
 	end
 
-	return ActivityTools.activityRootMap.subRoot[arg_36_0] or false
+	return ActivityTools.activityRootMap.subRoot[arg_37_0] or false
 end
 
-function var_0_0.CheckMainActivityIsCommon(arg_37_0)
+function var_0_0.CheckMainActivityIsCommon(arg_38_0)
 	if not ActivityTools.activityCommonMain then
 		ActivityTools.activityCommonMain = {}
 	end
 
-	if ActivityTools.activityCommonMain[arg_37_0] ~= nil then
-		return ActivityTools.activityCommonMain[arg_37_0]
+	if ActivityTools.activityCommonMain[arg_38_0] ~= nil then
+		return ActivityTools.activityCommonMain[arg_38_0]
 	end
 
-	if ActivityTools.GetActivityIsRootOrSub(arg_37_0) == true then
-		local var_37_0 = ActivityEntraceCfg[arg_37_0]
+	if ActivityTools.GetActivityIsRootOrSub(arg_38_0) == true then
+		local var_38_0 = ActivityEntraceCfg[arg_38_0]
 
-		if not var_37_0 or not var_37_0.jump_system or not var_37_0.jump_system[1] then
-			ActivityTools.activityCommonMain[arg_37_0] = false
-
-			return false
-		end
-
-		local var_37_1 = var_37_0.jump_system[1]
-		local var_37_2 = SystemLinkCfg[var_37_1]
-
-		if not var_37_2 or not var_37_2.link then
-			ActivityTools.activityCommonMain[arg_37_0] = false
+		if not var_38_0 or not var_38_0.jump_system or not var_38_0.jump_system[1] then
+			ActivityTools.activityCommonMain[arg_38_0] = false
 
 			return false
 		end
 
-		local var_37_3 = var_37_2.link
-		local var_37_4, var_37_5, var_37_6 = gameContext:ParseUrl(var_37_3)
+		local var_38_1 = var_38_0.jump_system[1]
+		local var_38_2 = SystemLinkCfg[var_38_1]
 
-		if not var_37_5 or not var_37_5[1] then
+		if not var_38_2 or not var_38_2.link then
+			ActivityTools.activityCommonMain[arg_38_0] = false
+
 			return false
 		end
 
-		local var_37_7 = gameContext:GetRouteCfgFromRouteName(var_37_5[1])
+		local var_38_3 = var_38_2.link
+		local var_38_4, var_38_5, var_38_6 = gameContext:ParseUrl(var_38_3)
 
-		if not var_37_7 or not var_37_7.component then
+		if not var_38_5 or not var_38_5[1] then
 			return false
 		end
 
-		if var_37_7.component.IsCommonMainActivityPage then
-			ActivityTools.activityCommonMain[arg_37_0] = true
+		local var_38_7 = gameContext:GetRouteCfgFromRouteName(var_38_5[1])
+
+		if not var_38_7 or not var_38_7.component then
+			return false
+		end
+
+		if var_38_7.component.IsCommonMainActivityPage then
+			ActivityTools.activityCommonMain[arg_38_0] = true
 
 			return true
 		end
 	end
 
-	ActivityTools.activityCommonMain[arg_37_0] = false
+	ActivityTools.activityCommonMain[arg_38_0] = false
 
 	return false
+end
+
+function var_0_0.IsFirstEnterActivity(arg_39_0)
+	local var_39_0 = getData("activity_first_enter", "activity_" .. arg_39_0)
+
+	return var_39_0 == nil or var_39_0 == 0
+end
+
+function var_0_0.MarkHasEnterActivity(arg_40_0)
+	saveData("activity_first_enter", "activity_" .. arg_40_0, 1)
 end
 
 return var_0_0

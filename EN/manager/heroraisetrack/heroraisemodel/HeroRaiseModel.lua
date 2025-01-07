@@ -95,10 +95,7 @@ function var_0_0.RefreshModel(arg_10_0)
 end
 
 function var_0_0.ResetHeroModel(arg_11_0)
-	if arg_11_0.animator_ then
-		arg_11_0.animator_:Play("action1_1", -1, 0)
-		arg_11_0.animator_:Update(0)
-	end
+	arg_11_0:PlayAni("action1_1", true, nil)
 
 	if arg_11_0.tpose then
 		local var_11_0 = arg_11_0.tpose:GetComponent("UIPoseMoveController")
@@ -125,15 +122,18 @@ function var_0_0.LoadHeroModel(arg_13_0)
 
 	arg_13_0:UnloadHeroModel()
 
-	arg_13_0.tpose = manager.resourcePool:Get("Char/" .. arg_13_0.modelID, ASSET_TYPE.TPOSE)
+	arg_13_0.tpose = manager.resourcePool:Get(manager.heroUiTimeline:GetModelPath(arg_13_0.skinID, arg_13_0.modelID), ASSET_TYPE.TPOSE)
 	arg_13_0.ui_tpose = arg_13_0.tpose.transform:Find(string.format("%dui/%dui_tpose", arg_13_0.skinID, arg_13_0.skinID)).gameObject
 	arg_13_0.rotateGo_ = arg_13_0.tpose.transform:Find(string.format("%dui", arg_13_0.skinID)).gameObject
 	arg_13_0.animator_ = arg_13_0.ui_tpose:GetComponent(typeof(Animator))
 
+	LuaForUtil.ShowWeapon(arg_13_0.animator_.transform, false)
+	manager.heroUiTimeline:BindHero(arg_13_0.skinID, arg_13_0.modelID, arg_13_0.tpose)
 	arg_13_0:ResetHeroModel()
 end
 
 function var_0_0.UnloadHeroModel(arg_14_0)
+	manager.heroUiTimeline:Unbind()
 	arg_14_0:Stop()
 	arg_14_0:StopTimer()
 
@@ -193,8 +193,6 @@ function var_0_0.PlayEffect(arg_18_0)
 	end
 end
 
-local var_0_1 = 0.5
-
 function var_0_0.RemainAni(arg_19_0, arg_19_1)
 	arg_19_0.lastAni_ = arg_19_1
 end
@@ -225,6 +223,8 @@ function var_0_0.SwitchAni(arg_20_0, arg_20_1, arg_20_2)
 
 		return
 	end
+
+	arg_20_0:_PrepareTimeline(arg_20_2)
 
 	if arg_20_1 == "" then
 		if arg_20_2 == HeroRaiseTrackConst.HeroRaiseIdleAniName then
@@ -268,34 +268,20 @@ function var_0_0.ResetBlendShapes(arg_26_0)
 	end
 end
 
+local var_0_1 = 0.5
+
 function var_0_0.PlayAni(arg_27_0, arg_27_1, arg_27_2, arg_27_3)
-	if arg_27_0.animator_ then
-		local var_27_0 = arg_27_0.animator_:GetCurrentAnimatorStateInfo(0).length
-		local var_27_1 = arg_27_2 and var_0_1 / var_27_0 or 0
-
-		if arg_27_2 then
-			arg_27_0.animator_:CrossFade(arg_27_1, var_27_1, 0)
-		else
-			arg_27_0.animator_:Play(arg_27_1)
+	manager.heroUiTimeline:PlayAction(arg_27_1, {
+		isUniqueBlending = true,
+		fadeSecond = var_0_1,
+		isLoop = arg_27_0:_IsLoopClip(arg_27_1),
+		group = arg_27_0:_GetGroup(arg_27_1)
+	})
+	manager.heroUiTimeline:SetCallbackBlendSignal(function(arg_28_0)
+		if arg_27_3 ~= nil then
+			arg_27_3()
 		end
-
-		arg_27_0.animator_:Update(0)
-		arg_27_0:Stop()
-
-		arg_27_0.timer_ = Timer.New(function()
-			local var_28_0 = arg_27_0.animator_:GetCurrentAnimatorStateInfo(0)
-
-			if var_28_0:IsName(arg_27_1) and var_28_0.normalizedTime >= 1 - var_27_1 then
-				arg_27_0:Stop()
-
-				if arg_27_3 ~= nil then
-					arg_27_3()
-				end
-			end
-		end, 0.033, -1)
-
-		arg_27_0.timer_:Start()
-	end
+	end)
 end
 
 function var_0_0.Stop(arg_29_0)
@@ -304,6 +290,8 @@ function var_0_0.Stop(arg_29_0)
 
 		arg_29_0.timer_ = nil
 	end
+
+	manager.heroUiTimeline:SetCallbackBlendSignal(nil)
 end
 
 function var_0_0.GetAnimator(arg_30_0)
@@ -322,9 +310,40 @@ function var_0_0.StopTimer(arg_31_0)
 	end
 end
 
-function var_0_0.Dispose(arg_32_0)
-	arg_32_0:StopTimer()
-	arg_32_0:Finish()
+function var_0_0._PrepareTimeline(arg_32_0, arg_32_1)
+	if arg_32_1 == HeroRaiseTrackConst.HeroRaiseIdleAniName then
+		return
+	end
+
+	manager.heroUiTimeline:PrepareAction(arg_32_1 .. "_1")
+	manager.heroUiTimeline:PrepareAction(arg_32_1 .. "_2")
+end
+
+function var_0_0._IsLoopClip(arg_33_0, arg_33_1)
+	if arg_33_1 == "action1_1" then
+		return true
+	end
+
+	if string.find(arg_33_1, "_2") then
+		return true
+	end
+
+	return false
+end
+
+function var_0_0._GetGroup(arg_34_0, arg_34_1)
+	for iter_34_0, iter_34_1 in pairs(HeroRaiseTrackConst.HeroAniName) do
+		if string.find(arg_34_1, iter_34_1) then
+			return iter_34_1
+		end
+	end
+
+	return arg_34_1
+end
+
+function var_0_0.Dispose(arg_35_0)
+	arg_35_0:StopTimer()
+	arg_35_0:Finish()
 end
 
 return var_0_0

@@ -258,6 +258,191 @@
 			10660203
 		}
 	},
+	[107601] = {
+		name = "69f7de2c3d0c16ed061da4a62342c82e",
+		action = "",
+		type = 1,
+		id = 107601,
+		icon = "IdolTrainee_icon_skill_007",
+		counter_action = "",
+		skill_effect = {
+			10760101,
+			10760102,
+			10760103,
+			10760104
+		}
+	},
+	[107602] = {
+		name = "ca55dd6d55f161e45c1dde0ddcbede5c",
+		action = "",
+		type = 0,
+		id = 107602,
+		icon = "IdolTrainee_icon_skill_008",
+		counter_action = "",
+		skill_effect = {
+			10760201,
+			10760202,
+			10760203,
+			10760204
+		}
+	},
+	[102201] = {
+		name = "fa0d917d3c894104134f9defc3ec15ae",
+		action = "",
+		type = 1,
+		id = 102201,
+		icon = "IdolTrainee_icon_skill2_101104",
+		counter_action = "",
+		skill_effect = {
+			10220101,
+			10220102,
+			10220103,
+			10220104,
+			10220105
+		}
+	},
+	[102202] = {
+		name = "a54781da6b4576eb5d8cbc57dccd1543",
+		action = "",
+		type = 0,
+		id = 102202,
+		icon = "IdolTrainee_icon_skill2_001004",
+		counter_action = "",
+		skill_effect = {
+			10220201,
+			10220202,
+			10220203,
+			10220204
+		}
+	},
+	[104901] = {
+		name = "54267dd65c68e6173ce070910b8fd9c2",
+		action = "",
+		type = 1,
+		id = 104901,
+		icon = "IdolTrainee_icon_skill_015",
+		counter_action = "",
+		skill_effect = {
+			10490101,
+			10490102,
+			10490103
+		}
+	},
+	[104902] = {
+		name = "9a91a3b5a94e48567c69791a95948d2b",
+		action = "",
+		type = 0,
+		id = 104902,
+		icon = "IdolTrainee_icon_skill2_003004",
+		counter_action = "",
+		skill_effect = {
+			10490201,
+			10490202
+		}
+	},
+	[102101] = {
+		name = "9aa87a0c990618593d94cdad174c9e71",
+		action = "",
+		type = 1,
+		id = 102101,
+		icon = "IdolTrainee_icon_skill_015",
+		counter_action = "",
+		skill_effect = {
+			10210101,
+			10210102
+		}
+	},
+	[102102] = {
+		name = "f2cd539772bcd7f5d83df35c572c9597",
+		action = "",
+		type = 0,
+		id = 102102,
+		icon = "IdolTrainee_icon_skill_006",
+		counter_action = "",
+		skill_effect = {
+			10210201,
+			10210202,
+			10210203
+		}
+	},
+	[102001] = {
+		name = "51a148df9510e96bd241c992aac66dc0",
+		action = "",
+		type = 1,
+		id = 102001,
+		icon = "IdolTrainee_icon_skill_015",
+		counter_action = "",
+		skill_effect = {
+			10200101,
+			10200102,
+			10200103
+		}
+	},
+	[102002] = {
+		name = "a3b6f9d42f8e0e17f3d0b8f27fe50f5a",
+		action = "",
+		type = 0,
+		id = 102002,
+		icon = "IdolTrainee_icon_skill_014",
+		counter_action = "",
+		skill_effect = {
+			10200201,
+			10200202,
+			10200203
+		}
+	},
+	[115601] = {
+		name = "6a1b28c55f062d2d6ae4dcdbc64eff2a",
+		action = "",
+		type = 1,
+		id = 115601,
+		icon = "IdolTrainee_icon_skill_006",
+		counter_action = "",
+		skill_effect = {
+			11560101,
+			11560102,
+			11560103
+		}
+	},
+	[115602] = {
+		name = "14e9377e3ef3c08905fa0732eed74979",
+		action = "",
+		type = 0,
+		id = 115602,
+		icon = "IdolTrainee_icon_skill_008",
+		counter_action = "",
+		skill_effect = {
+			11560201,
+			11560202,
+			11560203
+		}
+	},
+	[108901] = {
+		name = "50dd988395dc67c29eeadede8829a96d",
+		action = "",
+		type = 1,
+		id = 108901,
+		icon = "IdolTrainee_icon_skill_008",
+		counter_action = "",
+		skill_effect = {
+			10890101,
+			10890102,
+			10890103,
+			10890104
+		}
+	},
+	[108902] = {
+		name = "7a58647b553bd68828fb363542536a81",
+		action = "",
+		type = 0,
+		id = 108902,
+		icon = "IdolTrainee_icon_skill_008",
+		counter_action = "",
+		skill_effect = {
+			10890201,
+			10890202
+		}
+	},
 	all = {
 		101,
 		108401,
@@ -279,6 +464,20 @@
 		119701,
 		119702,
 		106601,
-		106602
+		106602,
+		107601,
+		107602,
+		102201,
+		102202,
+		104901,
+		104902,
+		102101,
+		102102,
+		102001,
+		102002,
+		115601,
+		115602,
+		108901,
+		108902
 	}
 }

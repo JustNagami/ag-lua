@@ -38,9 +38,7 @@ function var_0_1.ClickItem(arg_6_0)
 		OperationRecorder.RecordButtonTouch("challenge_polyhedron_below")
 	end
 
-	if arg_6_0.isLock_ then
-		ShowTips(arg_6_0.lockTips_)
-
+	if arg_6_0:CheckLock() then
 		return
 	end
 

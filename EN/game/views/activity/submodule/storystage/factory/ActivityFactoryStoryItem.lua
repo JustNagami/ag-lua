@@ -114,25 +114,7 @@ function var_0_0.IsOpenSectionInfo(arg_12_0)
 end
 
 function var_0_0.RefreshArchive(arg_13_0)
-	local var_13_0 = StageTools.GetStageArchiveID(arg_13_0.stageID_)
-
-	if var_13_0 == 0 then
-		arg_13_0.lineController_:SetSelectedState("hide")
-
-		return
-	end
-
-	if StageArchiveCfg[var_13_0].position[2] > 0 then
-		arg_13_0.lineController_:SetSelectedState("top")
-	else
-		arg_13_0.lineController_:SetSelectedState("bottom")
-	end
-
-	local var_13_1 = BattleStageData:GetStageData()[arg_13_0.stageID_]
-
-	arg_13_0.archiveView_ = arg_13_0.archiveView_ or ActivityFactoryArchiveView.New(arg_13_0.archiveGo_)
-
-	arg_13_0.archiveView_:SetData(arg_13_0.stageID_, var_13_0, var_13_1.clear_times <= 0)
+	arg_13_0.lineController_:SetSelectedState("hide")
 end
 
 function var_0_0.GetLocalPosition(arg_14_0)

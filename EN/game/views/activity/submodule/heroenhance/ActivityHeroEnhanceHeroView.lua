@@ -356,4 +356,12 @@ function var_0_0.Dispose(arg_34_0)
 	var_0_0.super.Dispose(arg_34_0)
 end
 
+function var_0_0.OnNewDay(arg_35_0)
+	arg_35_0:RefreshUI()
+end
+
+function var_0_0.OnActivityHeroEnhanceDataInit(arg_36_0)
+	arg_36_0:OnNewDay()
+end
+
 return var_0_0

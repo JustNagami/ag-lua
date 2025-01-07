@@ -35,6 +35,8 @@ function var_0_0.Init(arg_3_0)
 		arg_3_0.achievementButtonList_[iter_3_1] = AchievementInfoButton.New(arg_3_0.goButtonList_[iter_3_1], iter_3_1)
 	end
 
+	arg_3_0.oneKeyCon_ = ControllerUtil.GetController(arg_3_0.achievePlotTrans_, "onekey")
+
 	arg_3_0:InitUI()
 end
 
@@ -145,9 +147,9 @@ end
 
 function var_0_0.RefreshRecivedAll(arg_14_0)
 	if #AchievementData:GetReadyAchievementList(arg_14_0.selectType_) >= 1 then
-		SetActive(arg_14_0.onekeyGo_, true)
+		arg_14_0.oneKeyCon_:SetSelectedState("true")
 	else
-		SetActive(arg_14_0.onekeyGo_, false)
+		arg_14_0.oneKeyCon_:SetSelectedState("false")
 	end
 end
 

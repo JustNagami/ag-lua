@@ -2,7 +2,11 @@
 local var_0_1 = class("ChapterChallengeAdvanceTestItemView", var_0_0)
 
 function var_0_1.ClickItem(arg_1_0, arg_1_1)
-	arg_1_0:Go("/advanceTestMain")
+	if arg_1_0:CheckLock() then
+		return
+	end
+
+	JumpTools.OpenPageByJump("advanceTestEntrace")
 end
 
 function var_0_1.IsLock(arg_2_0)

@@ -7,7 +7,7 @@ end
 function var_0_0.Enter(arg_2_0)
 	var_0_0.super.Enter(arg_2_0)
 	arg_2_0.actor:SetSelfCamera(-1)
-	arg_2_0:PlayAni("debut")
+	arg_2_0:PlayAniWithParams("debut")
 end
 
 function var_0_0.Exit(arg_3_0, arg_3_1)

@@ -35,6 +35,12 @@
 		EnergyType = 3,
 		RangeType = 0
 	},
+	[1020] = {
+		ID = 1020,
+		Name = "75c932ad5bb60a8342a6c738e2821a80",
+		EnergyType = 4,
+		RangeType = 0
+	},
 	[1111] = {
 		ID = 1111,
 		Name = "131d07eef053cf1e27cf561248f17218",
@@ -45,6 +51,18 @@
 		ID = 1119,
 		Name = "ec42327a53f03e8ed03955b8aa669fa0",
 		EnergyType = 1,
+		RangeType = 0
+	},
+	[1021] = {
+		ID = 1021,
+		Name = "1216ad3953af7798b7b1d68340785169",
+		EnergyType = 1,
+		RangeType = 0
+	},
+	[1022] = {
+		ID = 1022,
+		Name = "b46c187d8114e901ca6a4816bcf0eaad",
+		EnergyType = 4,
 		RangeType = 0
 	},
 	[1024] = {
@@ -203,6 +221,12 @@
 		EnergyType = 2,
 		RangeType = 0
 	},
+	[1156] = {
+		ID = 1156,
+		Name = "105e77ab765874e497f187360d56becd",
+		EnergyType = 1,
+		RangeType = 0
+	},
 	[1058] = {
 		ID = 1058,
 		Name = "8b7f143e4ffa24fb523f3f85bd0338f5",
@@ -304,6 +328,12 @@
 		Name = "9ab662f0e640ef1353e25add95ffcb8c",
 		EnergyType = 4,
 		RangeType = 0
+	},
+	[1089] = {
+		ID = 1089,
+		Name = "28ccc0f9408fd67547db2e4a458fc60a",
+		EnergyType = 4,
+		RangeType = 1
 	},
 	[1184] = {
 		ID = 1184,
@@ -911,6 +941,48 @@
 		EnergyType = 0,
 		RangeType = 0
 	},
+	[2119] = {
+		ID = 2119,
+		Name = "1b22659a3beaabf0e16f16d5a0a3182d",
+		EnergyType = 0,
+		RangeType = 0
+	},
+	[2120] = {
+		ID = 2120,
+		Name = "17e554612500741ede916f14eef5069c",
+		EnergyType = 0,
+		RangeType = 0
+	},
+	[2121] = {
+		ID = 2121,
+		Name = "e7251b311ef04a81f18963f35f056c15",
+		EnergyType = 0,
+		RangeType = 0
+	},
+	[2122] = {
+		ID = 2122,
+		Name = "8a306a885dab26a1ab1b8381f0900072",
+		EnergyType = 0,
+		RangeType = 0
+	},
+	[2123] = {
+		ID = 2123,
+		Name = "7c01bf4c3dc281fbad0715cae35a2381",
+		EnergyType = 0,
+		RangeType = 0
+	},
+	[2124] = {
+		ID = 2124,
+		Name = "0e0847872a9f58533b48f9af19003927",
+		EnergyType = 0,
+		RangeType = 0
+	},
+	[2125] = {
+		ID = 2125,
+		Name = "203ba25f86397bd2c20f43776f1411b0",
+		EnergyType = 0,
+		RangeType = 0
+	},
 	[3002] = {
 		ID = 3002,
 		Name = "368cedc92ce4d387eddd2a0d9b99c657",
@@ -1031,6 +1103,12 @@
 		EnergyType = 0,
 		RangeType = 0
 	},
+	[3026] = {
+		ID = 3026,
+		Name = "05d29e9ac38c21cd4f99fe87411cfadd",
+		EnergyType = 0,
+		RangeType = 0
+	},
 	[3027] = {
 		ID = 3027,
 		Name = "b3b97669530243f98ed9d98a40c92b2e",
@@ -1133,6 +1211,24 @@
 		EnergyType = 0,
 		RangeType = 0
 	},
+	[3047] = {
+		ID = 3047,
+		Name = "9ad47d7eb0aa35dd8ef405e79e07d58e",
+		EnergyType = 0,
+		RangeType = 0
+	},
+	[3048] = {
+		ID = 3048,
+		Name = "174d1c5940090d43ad22ca0babdc6aa4",
+		EnergyType = 0,
+		RangeType = 0
+	},
+	[3049] = {
+		ID = 3049,
+		Name = "2ea1be3ede4befb2c11c319996e18212",
+		EnergyType = 0,
+		RangeType = 0
+	},
 	[3501] = {
 		ID = 3501,
 		Name = "4c1316a02f047babee921556e358bd31",
@@ -1142,6 +1238,12 @@
 	[3517] = {
 		ID = 3517,
 		Name = "5c997737b10a4049c0465791f1a74d53",
+		EnergyType = 0,
+		RangeType = 0
+	},
+	[3528] = {
+		ID = 3528,
+		Name = "db7f1596a5f44f061cdafd07521668db",
 		EnergyType = 0,
 		RangeType = 0
 	},
@@ -1307,10 +1409,34 @@
 		EnergyType = 0,
 		RangeType = 0
 	},
+	[4042] = {
+		ID = 4042,
+		Name = "0040dcda4463c786e9a9ce57cdd5cc13",
+		EnergyType = 0,
+		RangeType = 0
+	},
+	[4043] = {
+		ID = 4043,
+		Name = "eb23b0c7efa231334355b0330533dc08",
+		EnergyType = 0,
+		RangeType = 0
+	},
 	[5011] = {
 		ID = 5011,
 		Name = "d5a71d92b8d963dadca58c0a1e9ff88c",
 		EnergyType = 3,
+		RangeType = 0
+	},
+	[5013] = {
+		ID = 5013,
+		Name = "337a6dc4c002d18179f715aa49844f41",
+		EnergyType = 2,
+		RangeType = 0
+	},
+	[5015] = {
+		ID = 5015,
+		Name = "c18d9a9dbbfdbdd083b6932b201c2cec",
+		EnergyType = 4,
 		RangeType = 0
 	},
 	[5016] = {
@@ -1366,6 +1492,12 @@
 		Name = "447365a07dd4ab53c496d20517ca96b0",
 		EnergyType = 2,
 		RangeType = 0
+	},
+	[5061] = {
+		ID = 5061,
+		Name = "b378f4d21941267d9b53c39ce19cf8cb",
+		EnergyType = 4,
+		RangeType = 1
 	},
 	[5067] = {
 		ID = 5067,
@@ -1431,6 +1563,12 @@
 		ID = 5094,
 		Name = "e2ff917a24791adb7f039c8be675f310",
 		EnergyType = 4,
+		RangeType = 1
+	},
+	[5095] = {
+		ID = 5095,
+		Name = "d6d4fe89f3a119c1b1aeabcc33e0afbd",
+		EnergyType = 2,
 		RangeType = 1
 	},
 	[5074] = {
@@ -1527,6 +1665,12 @@
 		ID = 6053,
 		Name = "411260d9fef9275612e750375361b4e3",
 		EnergyType = 3,
+		RangeType = 0
+	},
+	[6056] = {
+		ID = 6056,
+		Name = "31f7a631f1a482feb6bbabc300dbfc74",
+		EnergyType = 4,
 		RangeType = 0
 	},
 	[6073] = {
@@ -1661,6 +1805,18 @@
 		EnergyType = 0,
 		RangeType = 0
 	},
+	[6118] = {
+		ID = 6118,
+		Name = "bba4b8b6cc20093d54459163c55faee3",
+		EnergyType = 0,
+		RangeType = 1
+	},
+	[6119] = {
+		ID = 6119,
+		Name = "66dd914b886a716c228fb61eab0a829f",
+		EnergyType = 0,
+		RangeType = 1
+	},
 	[6105] = {
 		ID = 6105,
 		Name = "451e6f9a93664ad3c11d8b83a6bf17c7",
@@ -1677,6 +1833,60 @@
 		ID = 6107,
 		Name = "c4fcc12c5e5354a9ddb8d598e76dfddf",
 		EnergyType = 4,
+		RangeType = 0
+	},
+	[6112] = {
+		ID = 6112,
+		Name = "639bb0a6142028903496353e220d5d1e",
+		EnergyType = 1,
+		RangeType = 0
+	},
+	[6113] = {
+		ID = 6113,
+		Name = "995b1d294c3540e0798b1a1181dd90e0",
+		EnergyType = 0,
+		RangeType = 0
+	},
+	[6116] = {
+		ID = 6116,
+		Name = "c5412f832a1dd35e78a084ad7bab3933",
+		EnergyType = 0,
+		RangeType = 0
+	},
+	[6117] = {
+		ID = 6117,
+		Name = "40ca35568667b5fae35a2face8074191",
+		EnergyType = 1,
+		RangeType = 0
+	},
+	[6108] = {
+		ID = 6108,
+		Name = "d39f3b410a1ec2f23f2c9fb2ae9465e4",
+		EnergyType = 1,
+		RangeType = 0
+	},
+	[6109] = {
+		ID = 6109,
+		Name = "7018f9a390a41d49991ccc42b52bf4ca",
+		EnergyType = 1,
+		RangeType = 0
+	},
+	[6110] = {
+		ID = 6110,
+		Name = "82faf89e46aa476431b42d7c728d941c",
+		EnergyType = 1,
+		RangeType = 0
+	},
+	[6111] = {
+		ID = 6111,
+		Name = "18ca93e9fdff9882b914cc6ddf9c4aa3",
+		EnergyType = 4,
+		RangeType = 0
+	},
+	[6121] = {
+		ID = 6121,
+		Name = "60ec326900c8159cb290128bb9f798cc",
+		EnergyType = 1,
 		RangeType = 0
 	},
 	[10025] = {
@@ -1757,6 +1967,12 @@
 		EnergyType = 2,
 		RangeType = 1
 	},
+	[10105] = {
+		ID = 10105,
+		Name = "5c5517764f74ca458f1ff0f3f02e3340",
+		EnergyType = 0,
+		RangeType = 0
+	},
 	all = {
 		1011,
 		1013,
@@ -1764,8 +1980,11 @@
 		1016,
 		1017,
 		1019,
+		1020,
 		1111,
 		1119,
+		1021,
+		1022,
 		1024,
 		1026,
 		1027,
@@ -1792,6 +2011,7 @@
 		1052,
 		1055,
 		1056,
+		1156,
 		1058,
 		1158,
 		1059,
@@ -1809,6 +2029,7 @@
 		1080,
 		1081,
 		1084,
+		1089,
 		1184,
 		1284,
 		1093,
@@ -1910,6 +2131,13 @@
 		2114,
 		2117,
 		2118,
+		2119,
+		2120,
+		2121,
+		2122,
+		2123,
+		2124,
+		2125,
 		3002,
 		3004,
 		3005,
@@ -1930,6 +2158,7 @@
 		3023,
 		3024,
 		3025,
+		3026,
 		3027,
 		3028,
 		3029,
@@ -1947,8 +2176,12 @@
 		3044,
 		3045,
 		3046,
+		3047,
+		3048,
+		3049,
 		3501,
 		3517,
+		3528,
 		4010,
 		4011,
 		4012,
@@ -1976,7 +2209,11 @@
 		4039,
 		4040,
 		4041,
+		4042,
+		4043,
 		5011,
+		5013,
+		5015,
 		5016,
 		5019,
 		5028,
@@ -1986,6 +2223,7 @@
 		5055,
 		5052,
 		5058,
+		5061,
 		5067,
 		5070,
 		5071,
@@ -1997,6 +2235,7 @@
 		5084,
 		5093,
 		5094,
+		5095,
 		5074,
 		5096,
 		5111,
@@ -2013,6 +2252,7 @@
 		6051,
 		6052,
 		6053,
+		6056,
 		6073,
 		6079,
 		6080,
@@ -2035,9 +2275,20 @@
 		6103,
 		6104,
 		6115,
+		6118,
+		6119,
 		6105,
 		6106,
 		6107,
+		6112,
+		6113,
+		6116,
+		6117,
+		6108,
+		6109,
+		6110,
+		6111,
+		6121,
 		10025,
 		65535,
 		10006,
@@ -2050,6 +2301,7 @@
 		10078,
 		10079,
 		10083,
-		10097
+		10097,
+		10105
 	}
 }

@@ -39,9 +39,10 @@ end
 
 function var_0_0.SendKeyResult(arg_9_0, arg_9_1)
 	local var_9_0 = arg_9_0.params_.listenCallback
+	local var_9_1 = arg_9_0:MapKey(arg_9_1)
 
 	if var_9_0 then
-		var_9_0(arg_9_1)
+		var_9_0(var_9_1)
 	end
 end
 
@@ -120,7 +121,7 @@ function var_0_0.GetInputData(arg_14_0)
 		for iter_14_0, iter_14_1 in ipairs(var_14_5) do
 			local var_14_6 = iter_14_1.m_axisName
 
-			if var_14_2 == LuaForGamepad.IsGamepadKey(var_14_6) then
+			if var_14_2 == LuaForGamepad.IsGamepadKey(var_14_6) and not string.find(var_14_6, "Mouse_") then
 				var_14_3 = iter_14_1
 
 				break
@@ -163,8 +164,26 @@ function var_0_0.GetInputKey(arg_15_0)
 	return ""
 end
 
-function var_0_0.Dispose(arg_16_0)
-	var_0_0.super.Dispose(arg_16_0)
+function var_0_0.MapKey(arg_16_0, arg_16_1)
+	local var_16_0 = tonumber(arg_16_1)
+
+	if var_16_0 then
+		print("converting keypad input to alpha")
+
+		if var_16_0 == 271 then
+			return "13"
+		end
+
+		if var_16_0 >= 256 and var_16_0 <= 265 then
+			return tostring(48 + var_16_0 - 256)
+		end
+	end
+
+	return arg_16_1
+end
+
+function var_0_0.Dispose(arg_17_0)
+	var_0_0.super.Dispose(arg_17_0)
 end
 
 return var_0_0

@@ -39,6 +39,7 @@ function var_0_0.InitUI(arg_3_0)
 
 	arg_3_0.costIcon_.sprite = ItemTools.getItemLittleSprite(CurrencyConst.CURRENCY_TYPE_GOLD)
 	arg_3_0.maxLvController_ = arg_3_0.transCon_:GetController("levelMax")
+	arg_3_0.equipStrengthHandler_ = handler(arg_3_0, arg_3_0.OnEquipStrengthSuccess)
 end
 
 function var_0_0.AddUIListener(arg_4_0)
@@ -161,7 +162,7 @@ function var_0_0.OnEnter(arg_11_0)
 	arg_11_0:OnEquipChange(arg_11_0.params_.equipId)
 	arg_11_0:RegistEventListener(COMMON_FILTER_OK, handler(arg_11_0, arg_11_0.OnFilterChange))
 	arg_11_0:RegistEventListener(CURRENCY_UPDATE, handler(arg_11_0, arg_11_0.OnGoldChange))
-	arg_11_0:RegistEventListener(EQUIP_STRENGTH_SUCCESS, handler(arg_11_0, arg_11_0.OnEquipStrengthSuccess))
+	manager.notify:RegistListener(EQUIP_STRENGTH_SUCCESS, arg_11_0.equipStrengthHandler_)
 end
 
 function var_0_0.OnEquipChange(arg_12_0, arg_12_1)
@@ -483,39 +484,9 @@ function var_0_0.GetEquip(arg_30_0)
 end
 
 function var_0_0.GetItemList(arg_31_0)
-	local var_31_0 = EquipData:GetEquipListComplex(arg_31_0.order_, arg_31_0.priority_)
-	local var_31_1 = {}
-
-	for iter_31_0, iter_31_1 in ipairs(ItemCfg.get_id_list_by_type[ItemConst.ITEM_TYPE.MATERIAL]) do
-		local var_31_2 = ItemTools.getItemNum(iter_31_1)
-
-		if ItemCfg[iter_31_1].sub_type == MaterialConst.MATERIAL_TYPE.EQUIP_LEVEL_UP and var_31_2 > 0 then
-			table.insert(var_31_1, {
-				type = ItemCfg[iter_31_1].type,
-				id = iter_31_1,
-				number = var_31_2
-			})
-		end
-	end
-
-	local var_31_3 = HeroData:GetEquipMap()
-	local var_31_4 = ProposalData:GetEquipMap()
-
-	for iter_31_2 = #var_31_0, 1, -1 do
-		if var_31_3[var_31_0[iter_31_2].equip_id] or var_31_0[iter_31_2].equip_id == arg_31_0.equipId_ then
-			table.remove(var_31_0, iter_31_2)
-		end
-	end
-
-	for iter_31_3, iter_31_4 in ipairs(var_31_0) do
-		if not iter_31_4.is_lock and not var_31_4[iter_31_4.equip_id] then
-			iter_31_4.type = ItemCfg[iter_31_4.prefab_id].type
-
-			table.insert(var_31_1, iter_31_4)
-		end
-	end
-
-	return var_31_1 or {}
+	return EquipTools.GetEquipLevelUpMaterial(arg_31_0.order_, arg_31_0.priority_, {
+		arg_31_0.equipId_
+	})
 end
 
 function var_0_0.ShowEquipInfo(arg_32_0, arg_32_1, arg_32_2)
@@ -562,33 +533,39 @@ function var_0_0.OnGoldChange(arg_35_0, arg_35_1)
 end
 
 function var_0_0.OnExit(arg_36_0)
-	arg_36_0.isOnIndex = nil
-
 	CommonFilterData:ClearFilter(Filter_Root_Define.Equip_Filter_List.filter_id)
 	arg_36_0:RemoveAllEventListener()
+	manager.windowBar:HideBar()
 end
 
-function var_0_0.OnFilterChange(arg_37_0)
-	local var_37_0 = CommonFilterData:HasIndexFlag(2, 4, 13)
-	local var_37_1 = CommonFilterData:HasIndexFlag(2, 4, 14)
-	local var_37_2 = CommonFilterData:HasIndexFlag(2, 5, 15)
-	local var_37_3 = CommonFilterData:HasIndexFlag(2, 5, 16)
-	local var_37_4 = var_37_1 and EquipConst.EQUIP_SORT.RARE or EquipConst.EQUIP_SORT.LEVEL
-	local var_37_5 = var_37_3 and 0 or 1
-
-	arg_37_0:ChangeEquipSelectView(var_37_4, var_37_5)
+function var_0_0.Hide(arg_37_0)
+	CommonFilterData:ClearFilter(Filter_Root_Define.Equip_Filter_List.filter_id)
+	SetActive(arg_37_0.gameObject_, false)
+	arg_37_0:RemoveAllEventListener()
+	manager.notify:RemoveListener(EQUIP_STRENGTH_SUCCESS, arg_37_0.equipStrengthHandler_)
 end
 
-function var_0_0.Dispose(arg_38_0)
-	arg_38_0:RemoveAllListeners()
+function var_0_0.OnFilterChange(arg_38_0)
+	local var_38_0 = CommonFilterData:HasIndexFlag(2, 4, 13)
+	local var_38_1 = CommonFilterData:HasIndexFlag(2, 4, 14)
+	local var_38_2 = CommonFilterData:HasIndexFlag(2, 5, 15)
+	local var_38_3 = CommonFilterData:HasIndexFlag(2, 5, 16)
+	local var_38_4 = var_38_1 and EquipConst.EQUIP_SORT.RARE or EquipConst.EQUIP_SORT.LEVEL
+	local var_38_5 = var_38_3 and 0 or 1
 
-	if arg_38_0.scrollHelper then
-		arg_38_0.scrollHelper:Dispose()
+	arg_38_0:ChangeEquipSelectView(var_38_4, var_38_5)
+end
 
-		arg_38_0.scrollHelper = nil
+function var_0_0.Dispose(arg_39_0)
+	arg_39_0:RemoveAllListeners()
+
+	if arg_39_0.scrollHelper then
+		arg_39_0.scrollHelper:Dispose()
+
+		arg_39_0.scrollHelper = nil
 	end
 
-	var_0_0.super.Dispose(arg_38_0)
+	var_0_0.super.Dispose(arg_39_0)
 end
 
 return var_0_0

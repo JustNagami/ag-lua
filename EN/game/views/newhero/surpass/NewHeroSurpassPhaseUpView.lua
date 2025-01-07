@@ -1,19 +1,20 @@
-﻿local var_0_0 = class("NewHeroSurpassPhaseUpView", ReduxView)
+﻿local var_0_0 = import("game.views.pop.PopFramingBaseView")
+local var_0_1 = class("NewHeroSurpassPhaseUpView", var_0_0)
 
-function var_0_0.UIName(arg_1_0)
+function var_0_1.UIName(arg_1_0)
 	return "Widget/System/Hero_transition/HeroPrintRewardUI"
 end
 
-function var_0_0.UIParent(arg_2_0)
+function var_0_1.UIParent(arg_2_0)
 	return manager.ui.uiPop.transform
 end
 
-function var_0_0.Init(arg_3_0)
+function var_0_1.Init(arg_3_0)
 	arg_3_0:InitUI()
 	arg_3_0:AddUIListener()
 end
 
-function var_0_0.InitUI(arg_4_0)
+function var_0_1.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
 	arg_4_0.attrItemList = {}
@@ -23,13 +24,13 @@ function var_0_0.InitUI(arg_4_0)
 	end
 end
 
-function var_0_0.AddUIListener(arg_5_0)
+function var_0_1.AddUIListener(arg_5_0)
 	arg_5_0:AddBtnListener(arg_5_0.fullscreenBtn_, nil, function()
-		JumpTools.Back()
+		arg_5_0:Back(false)
 	end)
 end
 
-function var_0_0.OnEnter(arg_7_0)
+function var_0_1.OnEnter(arg_7_0)
 	arg_7_0.starID = arg_7_0.params_.starID
 	arg_7_0.heroID = arg_7_0.params_.heroID
 
@@ -44,7 +45,7 @@ function var_0_0.OnEnter(arg_7_0)
 	end
 end
 
-function var_0_0.Refresh(arg_8_0)
+function var_0_1.Refresh(arg_8_0)
 	local var_8_0 = HeroStarCfg[arg_8_0.starID]
 	local var_8_1 = HeroCfg[arg_8_0.heroID]
 
@@ -69,14 +70,14 @@ function var_0_0.Refresh(arg_8_0)
 	end
 end
 
-function var_0_0.Dispose(arg_9_0)
+function var_0_1.Dispose(arg_9_0)
 	for iter_9_0, iter_9_1 in pairs(arg_9_0.attrItemList) do
 		if iter_9_1 then
 			iter_9_1:Dispose()
 		end
 	end
 
-	var_0_0.super.Dispose(arg_9_0)
+	var_0_1.super.Dispose(arg_9_0)
 end
 
-return var_0_0
+return var_0_1

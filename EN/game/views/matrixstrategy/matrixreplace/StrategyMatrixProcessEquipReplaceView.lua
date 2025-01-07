@@ -20,7 +20,7 @@ function var_0_0.indexItem(arg_3_0, arg_3_1, arg_3_2)
 end
 
 function var_0_0.GetHeroData(arg_4_0, arg_4_1)
-	return StrategyMatrixData:GetHeroData(arg_4_0.matrix_activity_id, arg_4_1)
+	return StrategyMatrixData:GetHeroDataNew(arg_4_1)
 end
 
 return var_0_0

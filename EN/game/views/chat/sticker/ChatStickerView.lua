@@ -87,7 +87,7 @@ function var_0_0.RefreshChateSticker(arg_8_0)
 	if arg_8_0.selectCategoryID_ == 0 then
 		var_8_0 = #ChatStickerData:GetCustomStickerList() + 1
 	else
-		var_8_0 = #ChatStickerCfg.get_id_list_by_category[arg_8_0.selectCategoryID_]
+		var_8_0 = #(ChatStickerCfg.get_id_list_by_category[arg_8_0.selectCategoryID_] or {})
 	end
 
 	arg_8_0.stickerUIList_:StartScroll(var_8_0)

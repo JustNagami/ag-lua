@@ -787,6 +787,36 @@
 			70
 		}
 	},
+	[5102001] = {
+		progress_show = 0,
+		type = 1015,
+		id = 5102001,
+		desc = "8a9615db2734f17b8b990341931c48da",
+		params = {
+			1020,
+			70
+		}
+	},
+	[5102101] = {
+		progress_show = 0,
+		type = 1015,
+		id = 5102101,
+		desc = "19176cc5d05f67441eed5d9a19144734",
+		params = {
+			1021,
+			70
+		}
+	},
+	[5102201] = {
+		progress_show = 0,
+		type = 1015,
+		id = 5102201,
+		desc = "54cc92cd74e1b91840ebd118f74eabc0",
+		params = {
+			1022,
+			70
+		}
+	},
 	[5102401] = {
 		progress_show = 0,
 		type = 1015,
@@ -1437,6 +1467,16 @@
 			70
 		}
 	},
+	[5115601] = {
+		progress_show = 0,
+		type = 1015,
+		id = 5115601,
+		desc = "1ff2b270cb9948ec4c36fedbc8254060",
+		params = {
+			1156,
+			70
+		}
+	},
 	[5115801] = {
 		progress_show = 0,
 		type = 1015,
@@ -1474,6 +1514,16 @@
 		desc = "250984f0192509b19092a5e43f313692",
 		params = {
 			1197,
+			70
+		}
+	},
+	[5108901] = {
+		progress_show = 0,
+		type = 1015,
+		id = 5108901,
+		desc = "da3e405ce20b14ec2fc83586a46d795b",
+		params = {
+			1089,
 			70
 		}
 	},
@@ -1652,6 +1702,16 @@
 			6011
 		}
 	},
+	[101711] = {
+		progress_show = 0,
+		type = 1017,
+		id = 101711,
+		desc = "175d5a06750ce2fa000589bc2c7450d9",
+		params = {
+			104902,
+			6012
+		}
+	},
 	[101712] = {
 		progress_show = 0,
 		type = 1017,
@@ -1660,6 +1720,66 @@
 		params = {
 			113907,
 			6013
+		}
+	},
+	[101713] = {
+		progress_show = 0,
+		type = 1017,
+		id = 101713,
+		desc = "731e69294b4778f0389a7e4a4eee25a4",
+		params = {
+			102201,
+			6014
+		}
+	},
+	[101714] = {
+		progress_show = 0,
+		type = 1017,
+		id = 101714,
+		desc = "ba3a3ac375db26042d2b821f8bb15a27",
+		params = {
+			102101,
+			6015
+		}
+	},
+	[101715] = {
+		progress_show = 0,
+		type = 1017,
+		id = 101715,
+		desc = "31c542d0eabad6a1bc8144d248ad9d59",
+		params = {
+			102001,
+			6016
+		}
+	},
+	[101716] = {
+		progress_show = 0,
+		type = 1017,
+		id = 101716,
+		desc = "8a55424f63523260009c100c31051fe5",
+		params = {
+			108901,
+			6021
+		}
+	},
+	[101717] = {
+		progress_show = 0,
+		type = 1017,
+		id = 101717,
+		desc = "446e03cbd046dfa0c1ad8697981d89b6",
+		params = {
+			109502,
+			6017
+		}
+	},
+	[101718] = {
+		progress_show = 0,
+		type = 1017,
+		id = 101718,
+		desc = "901a70acf7d960e4f99983f43f6c846c",
+		params = {
+			109502,
+			6018
 		}
 	},
 	[101801] = {
@@ -2180,6 +2300,81 @@
 		desc = "bdf794fdb6b564563913f11266de3660",
 		params = {
 			5
+		}
+	},
+	[81101] = {
+		progress_show = 0,
+		type = 8110,
+		id = 81101,
+		desc = "69849cc3d098bee20c45cf57c0afe07e",
+		params = {}
+	},
+	[81111] = {
+		progress_show = 0,
+		type = 8111,
+		id = 81111,
+		desc = "8df0b44666af79f5f41c00ac0c16fed4",
+		params = {}
+	},
+	[81121] = {
+		progress_show = 0,
+		type = 8112,
+		id = 81121,
+		desc = "6a58d10d22727979ef4933d8becb572c",
+		params = {}
+	},
+	[81131] = {
+		progress_show = 0,
+		type = 8113,
+		id = 81131,
+		desc = "3a2eab2a3e396c39513ace127c081af4",
+		params = {
+			1084
+		}
+	},
+	[81132] = {
+		progress_show = 0,
+		type = 8114,
+		id = 81132,
+		desc = "ae3e7b99f6143ae6fe28492a31e1a6b4",
+		params = {
+			1084
+		}
+	},
+	[81133] = {
+		progress_show = 0,
+		type = 8113,
+		id = 81133,
+		desc = "ca8cf58ecbc2b6d65cb1a2938b8e4b73",
+		params = {
+			1039
+		}
+	},
+	[81134] = {
+		progress_show = 0,
+		type = 8114,
+		id = 81134,
+		desc = "143bbd7d1a2f5cceda132f7e859e42cd",
+		params = {
+			1039
+		}
+	},
+	[81135] = {
+		progress_show = 0,
+		type = 8113,
+		id = 81135,
+		desc = "77941f911c37c50b0845d2be5154f009",
+		params = {
+			1148
+		}
+	},
+	[81136] = {
+		progress_show = 0,
+		type = 8114,
+		id = 81136,
+		desc = "104d1720184560dc2c0cee433de09c5f",
+		params = {
+			1148
 		}
 	},
 	[81302] = {
@@ -3649,6 +3844,24 @@
 			1042
 		}
 	},
+	[51024] = {
+		progress_show = 0,
+		type = 5001,
+		id = 51024,
+		desc = "8d84ee2af2eeb79192935c19deea7e39",
+		params = {
+			1024
+		}
+	},
+	[51094] = {
+		progress_show = 0,
+		type = 5001,
+		id = 51094,
+		desc = "b9f2641f71fca6b05a40a5846e015203",
+		params = {
+			1094
+		}
+	},
 	[60001] = {
 		progress_show = 0,
 		type = 2501,
@@ -4903,6 +5116,36 @@
 			8
 		}
 	},
+	[113041] = {
+		progress_show = 1,
+		type = 11304,
+		id = 113041,
+		desc = "09ee14f5f598b191e094a1a5f891d2d4",
+		params = {
+			1,
+			1
+		}
+	},
+	[113042] = {
+		progress_show = 1,
+		type = 11304,
+		id = 113042,
+		desc = "1d7d7e18cf0971287e4702b5c65cc397",
+		params = {
+			2,
+			10
+		}
+	},
+	[113043] = {
+		progress_show = 1,
+		type = 11304,
+		id = 113043,
+		desc = "fef91101505ae350c4cac0f1a8585ade",
+		params = {
+			11,
+			100
+		}
+	},
 	[114001] = {
 		progress_show = 0,
 		type = 11401,
@@ -5047,6 +5290,422 @@
 			5170334
 		}
 	},
+	[1150101] = {
+		progress_show = 0,
+		type = 11501,
+		id = 1150101,
+		desc = "c865f28804ca5873438aaf4c3c6f55bb",
+		params = {
+			4080101
+		}
+	},
+	[1150102] = {
+		progress_show = 0,
+		type = 11501,
+		id = 1150102,
+		desc = "52a0825ec69dc1279c2d2e54196d4844",
+		params = {
+			4080102
+		}
+	},
+	[1150103] = {
+		progress_show = 0,
+		type = 11501,
+		id = 1150103,
+		desc = "f7a8169eeacb4ffb590a45cc681a2998",
+		params = {
+			4080201
+		}
+	},
+	[1150104] = {
+		progress_show = 0,
+		type = 11501,
+		id = 1150104,
+		desc = "4e0417ad6c20ecf83f89365978fe86cb",
+		params = {
+			4080202
+		}
+	},
+	[1150105] = {
+		progress_show = 0,
+		type = 11501,
+		id = 1150105,
+		desc = "0e7dcfb8c6dc415606c234a9b54f41ee",
+		params = {
+			4080203
+		}
+	},
+	[1150106] = {
+		progress_show = 0,
+		type = 11501,
+		id = 1150106,
+		desc = "236cd32feca3564d6d01bb4e8e656804",
+		params = {
+			4080301
+		}
+	},
+	[1150107] = {
+		progress_show = 0,
+		type = 11501,
+		id = 1150107,
+		desc = "1f05d3c68754ec4369620d09e23b16d5",
+		params = {
+			4080302
+		}
+	},
+	[1150108] = {
+		progress_show = 0,
+		type = 11501,
+		id = 1150108,
+		desc = "5ba8d2937fa9289b7a1bbd802161e5b1",
+		params = {
+			4080303
+		}
+	},
+	[1150109] = {
+		progress_show = 0,
+		type = 11503,
+		id = 1150109,
+		desc = "62c38573dd592eec3ce5423db7e7983c",
+		params = {
+			5190302
+		}
+	},
+	[1150110] = {
+		progress_show = 0,
+		type = 11503,
+		id = 1150110,
+		desc = "8697f23e3b30efca7e1dbd585830fe3a",
+		params = {
+			5190312
+		}
+	},
+	[1150111] = {
+		progress_show = 0,
+		type = 11501,
+		id = 1150111,
+		desc = "60edff8c8ffa8873c6bd17d4fcdafbf3",
+		params = {
+			4080401
+		}
+	},
+	[1150112] = {
+		progress_show = 0,
+		type = 11501,
+		id = 1150112,
+		desc = "333d2f48b48c334fb94c2099ea5edaeb",
+		params = {
+			4080402
+		}
+	},
+	[1150113] = {
+		progress_show = 0,
+		type = 11501,
+		id = 1150113,
+		desc = "47a1c0bfa498ef819383e03142cec4b5",
+		params = {
+			4080403
+		}
+	},
+	[1150114] = {
+		progress_show = 0,
+		type = 11501,
+		id = 1150114,
+		desc = "1695545b37e86e5c5c0c735e4218ba04",
+		params = {
+			4080501
+		}
+	},
+	[1150115] = {
+		progress_show = 0,
+		type = 11501,
+		id = 1150115,
+		desc = "717ae2cd1eda007b2cc534f64e81d0cd",
+		params = {
+			4080502
+		}
+	},
+	[1150117] = {
+		progress_show = 0,
+		type = 11502,
+		id = 1150117,
+		desc = "842bc7abe5bc65c8416d7d2e0bbfbcce",
+		params = {
+			5190705
+		}
+	},
+	[1150118] = {
+		progress_show = 0,
+		type = 11502,
+		id = 1150118,
+		desc = "40d1f90bcb7215561bf1cac9b2a0b551",
+		params = {
+			5190710
+		}
+	},
+	[1150119] = {
+		progress_show = 0,
+		type = 11502,
+		id = 1150119,
+		desc = "046162627fa671816ef432c91f04fa45",
+		params = {
+			5190725
+		}
+	},
+	[114017] = {
+		progress_show = 0,
+		type = 11401,
+		id = 114017,
+		desc = "37c78e5db6ca3a714cd9cdb315e502e9",
+		params = {
+			5191401
+		}
+	},
+	[114018] = {
+		progress_show = 0,
+		type = 11401,
+		id = 114018,
+		desc = "b6789a68ede72fe2c9d3720cc032989f",
+		params = {
+			5191402
+		}
+	},
+	[114019] = {
+		progress_show = 0,
+		type = 11401,
+		id = 114019,
+		desc = "ba3c2f01fd93a8fe514285a4e390cd0c",
+		params = {
+			5191403
+		}
+	},
+	[114020] = {
+		progress_show = 0,
+		type = 11401,
+		id = 114020,
+		desc = "b2b883e8b4ff6923aa719df1b08f8ff4",
+		params = {
+			5191404
+		}
+	},
+	[114021] = {
+		progress_show = 0,
+		type = 11401,
+		id = 114021,
+		desc = "0bd7b3d28cdbde947955ee28a429bab5",
+		params = {
+			5191411
+		}
+	},
+	[114022] = {
+		progress_show = 0,
+		type = 11401,
+		id = 114022,
+		desc = "f429c961e831d72a11af01e7eed904ad",
+		params = {
+			5191412
+		}
+	},
+	[114023] = {
+		progress_show = 0,
+		type = 11401,
+		id = 114023,
+		desc = "d758969332db85fd8c9f716ca549f9e4",
+		params = {
+			5191413
+		}
+	},
+	[114024] = {
+		progress_show = 0,
+		type = 11401,
+		id = 114024,
+		desc = "d72db52cef1dac6bf5206a03040fb0c3",
+		params = {
+			5191414
+		}
+	},
+	[114025] = {
+		progress_show = 0,
+		type = 11401,
+		id = 114025,
+		desc = "fd770c871e731898fe26f3830cd3c908",
+		params = {
+			5191421
+		}
+	},
+	[114026] = {
+		progress_show = 0,
+		type = 11401,
+		id = 114026,
+		desc = "5c25c1cd228afc2ad2cfb8ebdce64087",
+		params = {
+			5191422
+		}
+	},
+	[114027] = {
+		progress_show = 0,
+		type = 11401,
+		id = 114027,
+		desc = "ece32397e53845ee53477eaa23c5d1d4",
+		params = {
+			5191423
+		}
+	},
+	[114028] = {
+		progress_show = 0,
+		type = 11401,
+		id = 114028,
+		desc = "855ba08792f666078d3046f9f346ab5e",
+		params = {
+			5191424
+		}
+	},
+	[114029] = {
+		progress_show = 0,
+		type = 11401,
+		id = 114029,
+		desc = "d7bfca911d3d889844bbac9c5119d5bd",
+		params = {
+			5191431
+		}
+	},
+	[114030] = {
+		progress_show = 0,
+		type = 11401,
+		id = 114030,
+		desc = "68b823526d693e32cf29e3a15c3df9cd",
+		params = {
+			5191432
+		}
+	},
+	[114031] = {
+		progress_show = 0,
+		type = 11401,
+		id = 114031,
+		desc = "03ca956993af5990cc20e45f2e091f51",
+		params = {
+			5191433
+		}
+	},
+	[114032] = {
+		progress_show = 0,
+		type = 11401,
+		id = 114032,
+		desc = "4a149c2aa9d736d0d8526169436cee15",
+		params = {
+			5191434
+		}
+	},
+	[1200101] = {
+		progress_show = 0,
+		type = 12001,
+		id = 1200101,
+		desc = "bd6d471d3cca4dd798fc27b8a232e1a4",
+		params = {
+			100001,
+			1,
+			1
+		}
+	},
+	[1200102] = {
+		progress_show = 0,
+		type = 12001,
+		id = 1200102,
+		desc = "6f81b89a59eb2566df6a36230ad4b0a9",
+		params = {
+			100001,
+			2,
+			1
+		}
+	},
+	[1200103] = {
+		progress_show = 0,
+		type = 12001,
+		id = 1200103,
+		desc = "ff1c74ff48053cade3e24f755be5d780",
+		params = {
+			100001,
+			3,
+			1
+		}
+	},
+	[1200104] = {
+		progress_show = 0,
+		type = 12001,
+		id = 1200104,
+		desc = "4f66f4b75ec50e0b1492db1e5ff82cae",
+		params = {
+			100001,
+			4,
+			1
+		}
+	},
+	[1200201] = {
+		progress_show = 0,
+		type = 12002,
+		id = 1200201,
+		desc = "70b6b1686a0a1556e55837c305734dc4",
+		params = {
+			100001,
+			1,
+			1
+		}
+	},
+	[1200202] = {
+		progress_show = 0,
+		type = 12002,
+		id = 1200202,
+		desc = "4ced4e5136cb2c6ece0435a0e5a75052",
+		params = {
+			100001,
+			2,
+			1
+		}
+	},
+	[1200203] = {
+		progress_show = 0,
+		type = 12002,
+		id = 1200203,
+		desc = "298f8525eff9c06e30af164dbf388978",
+		params = {
+			100001,
+			3,
+			1
+		}
+	},
+	[1200205] = {
+		progress_show = 0,
+		type = 12002,
+		id = 1200205,
+		desc = "a121e1dbea764bd62bee0d16d4a87a19",
+		params = {
+			100001,
+			1,
+			2
+		}
+	},
+	[1200206] = {
+		progress_show = 0,
+		type = 12002,
+		id = 1200206,
+		desc = "5d54c0003adfdfc164ddb41265b412fd",
+		params = {
+			100001,
+			2,
+			2
+		}
+	},
+	[1200207] = {
+		progress_show = 0,
+		type = 12002,
+		id = 1200207,
+		desc = "ca3d5417c4efdbfeec71b2e58d7e27ae",
+		params = {
+			100001,
+			3,
+			2
+		}
+	},
 	all = {
 		1101,
 		1102,
@@ -5135,6 +5794,9 @@
 		5101601,
 		5101701,
 		5101901,
+		5102001,
+		5102101,
+		5102201,
 		5102401,
 		5102601,
 		5102701,
@@ -5200,10 +5862,12 @@
 		5113902,
 		5114801,
 		5115001,
+		5115601,
 		5115801,
 		5118401,
 		5118402,
 		5119701,
+		5108901,
 		5119901,
 		5119902,
 		5128401,
@@ -5222,7 +5886,14 @@
 		101708,
 		101709,
 		101710,
+		101711,
 		101712,
+		101713,
+		101714,
+		101715,
+		101716,
+		101717,
+		101718,
 		101801,
 		101901,
 		101902,
@@ -5279,6 +5950,15 @@
 		81003,
 		81004,
 		81005,
+		81101,
+		81111,
+		81121,
+		81131,
+		81132,
+		81133,
+		81134,
+		81135,
+		81136,
 		81302,
 		81303,
 		81502,
@@ -5429,6 +6109,8 @@
 		51028,
 		51033,
 		51042,
+		51024,
+		51094,
 		60001,
 		60002,
 		60003,
@@ -5560,6 +6242,9 @@
 		130316,
 		130317,
 		130318,
+		113041,
+		113042,
+		113043,
 		114001,
 		114002,
 		114003,
@@ -5575,6 +6260,50 @@
 		114013,
 		114014,
 		114015,
-		114016
+		114016,
+		1150101,
+		1150102,
+		1150103,
+		1150104,
+		1150105,
+		1150106,
+		1150107,
+		1150108,
+		1150109,
+		1150110,
+		1150111,
+		1150112,
+		1150113,
+		1150114,
+		1150115,
+		1150117,
+		1150118,
+		1150119,
+		114017,
+		114018,
+		114019,
+		114020,
+		114021,
+		114022,
+		114023,
+		114024,
+		114025,
+		114026,
+		114027,
+		114028,
+		114029,
+		114030,
+		114031,
+		114032,
+		1200101,
+		1200102,
+		1200103,
+		1200104,
+		1200201,
+		1200202,
+		1200203,
+		1200205,
+		1200206,
+		1200207
 	}
 }

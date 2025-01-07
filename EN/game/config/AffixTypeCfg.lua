@@ -12174,6 +12174,48 @@
 			0
 		}
 	},
+	[9215] = {
+		name = "651447e65b03f584c662e8b26c8b3583",
+		affix_buff_id = 9171,
+		max_level = 10,
+		extra_description = "AFFIX_9215",
+		id = 9215,
+		description = {
+			700009215
+		},
+		buffid = {
+			92151,
+			92152
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9339] = {
+		name = "bdb492a60d278920694680fd20cc90b4",
+		affix_buff_id = 9201,
+		max_level = 10,
+		extra_description = "AFFIX_9339",
+		id = 9339,
+		description = {
+			700009339
+		},
+		buffid = {
+			93391,
+			93392,
+			93393,
+			9334
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
 	[9209] = {
 		name = "a1ed27a81e469e475ea708befbaa5803",
 		affix_buff_id = 9209,
@@ -12264,6 +12306,516 @@
 		},
 		base = {
 			5
+		},
+		factor = {
+			0
+		}
+	},
+	[9319] = {
+		name = "9e65d790f900332b95e84b0af0acdf81",
+		affix_buff_id = 9319,
+		max_level = 1,
+		extra_description = "AFFIX_9319",
+		id = 9319,
+		description = {
+			700009319
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9320] = {
+		name = "3afd7988ef62d69e367aa2e261de357f",
+		affix_buff_id = 9320,
+		max_level = 1,
+		extra_description = "AFFIX_9320",
+		id = 9320,
+		description = {
+			700009320
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9321] = {
+		name = "f4817e244144e25a3b7b457df01aa290",
+		affix_buff_id = 9321,
+		max_level = 1,
+		extra_description = "AFFIX_9321",
+		id = 9321,
+		description = {
+			700009321
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9322] = {
+		name = "05697fd0d1ca1908b2f0a627306f19dc",
+		affix_buff_id = 9322,
+		max_level = 1,
+		extra_description = "AFFIX_9322",
+		id = 9322,
+		description = {
+			700009322
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9323] = {
+		name = "aabbd5412a999d0f8a28194e18c0b8c0",
+		affix_buff_id = 9323,
+		max_level = 1,
+		extra_description = "AFFIX_9323",
+		id = 9323,
+		description = {
+			700009323
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9324] = {
+		name = "80e0f5130b01c7010a5358db6bb2e9e2",
+		affix_buff_id = 9324,
+		max_level = 1,
+		extra_description = "AFFIX_9324",
+		id = 9324,
+		description = {
+			700009324
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9325] = {
+		name = "ae96e3bbb4460b1dc381dade266149f3",
+		affix_buff_id = 9325,
+		max_level = 1,
+		extra_description = "AFFIX_9325",
+		id = 9325,
+		description = {
+			700009325
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9326] = {
+		name = "4e6bfc219b6ad4841c53730a56ea7b53",
+		affix_buff_id = 9326,
+		max_level = 1,
+		extra_description = "AFFIX_9326",
+		id = 9326,
+		description = {
+			700009326
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9327] = {
+		name = "319f88346cbc5edbb99379ac219a2eaf",
+		affix_buff_id = 9327,
+		max_level = 1,
+		extra_description = "AFFIX_9327",
+		id = 9327,
+		description = {
+			700009327
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9328] = {
+		name = "4f99c3758c4078bf8c3565cb2fee84e8",
+		affix_buff_id = 9328,
+		max_level = 1,
+		extra_description = "AFFIX_9328",
+		id = 9328,
+		description = {
+			700009328
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9329] = {
+		name = "8af51a6e4ffe58568004ccb3f5a19b41",
+		affix_buff_id = 9329,
+		max_level = 1,
+		extra_description = "AFFIX_9329",
+		id = 9329,
+		buffid = "",
+		description = {
+			700009329
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9330] = {
+		name = "c3781b81cfbf0651eb21c2a06ffdf09a",
+		affix_buff_id = 9330,
+		max_level = 1,
+		extra_description = "AFFIX_9330",
+		id = 9330,
+		buffid = "",
+		description = {
+			700009330
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9331] = {
+		name = "04b77988f2e5b9055eb8c0ab10a082b6",
+		affix_buff_id = 9331,
+		max_level = 1,
+		extra_description = "AFFIX_9331",
+		id = 9331,
+		buffid = "",
+		description = {
+			700009331
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9332] = {
+		name = "cd48e89e397e8f2d1620a3b863849f94",
+		affix_buff_id = 9332,
+		max_level = 1,
+		extra_description = "AFFIX_9332",
+		id = 9332,
+		buffid = "",
+		description = {
+			700009332
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9333] = {
+		name = "08ec4cb3193d1ced4b8195278467925e",
+		affix_buff_id = 9333,
+		max_level = 1,
+		extra_description = "AFFIX_9333",
+		id = 9333,
+		buffid = "",
+		description = {
+			700009333
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9334] = {
+		name = "97f360bb66f2b16609d34a68991b70cf",
+		affix_buff_id = 9334,
+		max_level = 1,
+		extra_description = "AFFIX_9334",
+		id = 9334,
+		buffid = "",
+		description = {
+			700009334
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9335] = {
+		name = "df9eb92726027f02678407ae28f68e46",
+		affix_buff_id = 9335,
+		max_level = 1,
+		extra_description = "AFFIX_9335",
+		id = 9335,
+		buffid = "",
+		description = {
+			700009335
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9336] = {
+		name = "2700b428f3fdac3866f9d53207170bb6",
+		affix_buff_id = 9336,
+		max_level = 1,
+		extra_description = "AFFIX_9336",
+		id = 9336,
+		buffid = "",
+		description = {
+			700009336
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9337] = {
+		name = "9b08e0ff697598639a88085cc43159d0",
+		affix_buff_id = 9337,
+		max_level = 1,
+		extra_description = "AFFIX_9337",
+		id = 9337,
+		buffid = "",
+		description = {
+			700009337
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9338] = {
+		name = "5fee276b3c204b386405caf49103a4ae",
+		affix_buff_id = 9338,
+		max_level = 1,
+		extra_description = "AFFIX_9338",
+		id = 9338,
+		buffid = "",
+		description = {
+			700009338
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9340] = {
+		name = "4f330f65381c62be1f6689f136033d1d",
+		affix_buff_id = 9340,
+		max_level = 1,
+		extra_description = "AFFIX_9340",
+		id = 9340,
+		description = {
+			700009340
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9341] = {
+		name = "c7a6f097c75c703d6dbdd0ca08aab0ef",
+		affix_buff_id = 9341,
+		max_level = 1,
+		extra_description = "AFFIX_9341",
+		id = 9341,
+		description = {
+			700009341
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9342] = {
+		name = "13a0057fabc18019b2d17658111d2770",
+		affix_buff_id = 9342,
+		max_level = 1,
+		extra_description = "AFFIX_9342",
+		id = 9342,
+		description = {
+			700009342
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9343] = {
+		name = "f8f958c7a4b450bf9026ce4b3d704d37",
+		affix_buff_id = 9343,
+		max_level = 1,
+		extra_description = "AFFIX_9343",
+		id = 9343,
+		description = {
+			700009343
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9344] = {
+		name = "c98dc528b4a4b8d721f8bf566d4ef4f6",
+		affix_buff_id = 9344,
+		max_level = 1,
+		extra_description = "AFFIX_9344",
+		id = 9344,
+		description = {
+			700009344
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9345] = {
+		name = "791a86f3503c297430fd1746b2d7dc24",
+		affix_buff_id = 9345,
+		max_level = 1,
+		extra_description = "AFFIX_9345",
+		id = 9345,
+		description = {
+			700009345
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9346] = {
+		name = "6500bf56eee3cf2b4011963bc94c87a8",
+		affix_buff_id = 9346,
+		max_level = 1,
+		extra_description = "AFFIX_9346",
+		id = 9346,
+		description = {
+			700009346
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9347] = {
+		name = "9bc4a22c3f8a78943896216fd3dd73c8",
+		affix_buff_id = 9347,
+		max_level = 1,
+		extra_description = "AFFIX_9347",
+		id = 9347,
+		description = {
+			700009347
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9348] = {
+		name = "96fc1f68bb18379f90e8b267b6d9f6b4",
+		affix_buff_id = 9348,
+		max_level = 1,
+		extra_description = "AFFIX_9348",
+		id = 9348,
+		description = {
+			700009348
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9349] = {
+		name = "49a2cae2ce3816cdf0f2cf51861bd9ce",
+		affix_buff_id = 9349,
+		max_level = 1,
+		extra_description = "AFFIX_9349",
+		id = 9349,
+		description = {
+			700009349
+		},
+		buffid = {},
+		base = {
+			0
 		},
 		factor = {
 			0
@@ -14466,6 +15018,116 @@
 			0
 		}
 	},
+	[9681] = {
+		name = "56c5cc4e02463be6c5e1b9212a01be5f",
+		affix_buff_id = 9681,
+		max_level = 1,
+		extra_description = "AFFIX_9681",
+		id = 9681,
+		description = {
+			700009681
+		},
+		buffid = {
+			96811
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9682] = {
+		name = "39de95e3f0448865a17c592a0e193e91",
+		affix_buff_id = 9682,
+		max_level = 1,
+		extra_description = "AFFIX_9682",
+		id = 9682,
+		description = {
+			700009682
+		},
+		buffid = {
+			96821
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9683] = {
+		name = "2c75b7ef60317546af84f4642aa0e1ea",
+		affix_buff_id = 9683,
+		max_level = 1,
+		extra_description = "AFFIX_9683",
+		id = 9683,
+		description = {
+			700009683
+		},
+		buffid = {
+			96831
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9684] = {
+		name = "17a6a0ac1cb9db370374a227d4a5d40c",
+		affix_buff_id = 9684,
+		max_level = 1,
+		extra_description = "AFFIX_9684",
+		id = 9684,
+		description = {
+			700009684
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9685] = {
+		name = "b0a262d3df2ce9cff78fab81677b2738",
+		affix_buff_id = 9685,
+		max_level = 1,
+		extra_description = "AFFIX_9685",
+		id = 9685,
+		description = {
+			700009685
+		},
+		buffid = {
+			96851
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9686] = {
+		name = "579e17a4eb9e768bb5ac03506046aa6b",
+		affix_buff_id = 9686,
+		max_level = 1,
+		extra_description = "AFFIX_9686",
+		id = 9686,
+		description = {
+			700009686
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
 	[9701] = {
 		name = "0db611cef8ea722818ffdb256a4efcf9",
 		affix_buff_id = 9701,
@@ -15779,6 +16441,356 @@
 			0
 		}
 	},
+	[9831] = {
+		name = "b966d5f2ab260150be0efa7708abeecd",
+		affix_buff_id = 9831,
+		max_level = 1,
+		extra_description = "AFFIX_9831",
+		id = 9831,
+		description = {
+			700009831
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9832] = {
+		name = "e03a7987d68dc8dbde8aa229dc2b238d",
+		affix_buff_id = 9832,
+		max_level = 1,
+		extra_description = "AFFIX_9832",
+		id = 9832,
+		description = {
+			700009832
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9833] = {
+		name = "fbcadbb716dfd04bd04ee469bf6e62d1",
+		affix_buff_id = 9833,
+		max_level = 1,
+		extra_description = "AFFIX_9833",
+		id = 9833,
+		description = {
+			700009833
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9834] = {
+		name = "d2c9e78c604864e00432ef749debdc41",
+		affix_buff_id = 9834,
+		max_level = 1,
+		extra_description = "AFFIX_9834",
+		id = 9834,
+		description = {
+			700009834
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9835] = {
+		name = "36a2df893ebb0e127f684e3531aed96c",
+		affix_buff_id = 9835,
+		max_level = 1,
+		extra_description = "AFFIX_9835",
+		id = 9835,
+		description = {
+			700009835
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9836] = {
+		name = "e340e94af8e4aa582d799814ecd30602",
+		affix_buff_id = 9836,
+		max_level = 1,
+		extra_description = "AFFIX_9836",
+		id = 9836,
+		description = {
+			700009836
+		},
+		buffid = {
+			1751
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9837] = {
+		name = "3ef172c1c6ae918e8a3496d960f6c972",
+		affix_buff_id = 9837,
+		max_level = 1,
+		extra_description = "AFFIX_9837",
+		id = 9837,
+		description = {
+			700009837
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9838] = {
+		name = "bbe0fb343d110c862acdaa9aac26c4b5",
+		affix_buff_id = 9838,
+		max_level = 1,
+		extra_description = "AFFIX_9838",
+		id = 9838,
+		description = {
+			700009838
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9839] = {
+		name = "8356357ef4cda50e7b912403b130002f",
+		affix_buff_id = 9839,
+		max_level = 1,
+		extra_description = "AFFIX_9839",
+		id = 9839,
+		description = {
+			700009839
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9840] = {
+		name = "0af902ae179142689027c74302db5a1b",
+		affix_buff_id = 9840,
+		max_level = 1,
+		extra_description = "AFFIX_9840",
+		id = 9840,
+		description = {
+			700009840
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9841] = {
+		name = "13a7323eb663f9d3bb4ffe463819ff3b",
+		affix_buff_id = 9841,
+		max_level = 1,
+		extra_description = "AFFIX_9841",
+		id = 9841,
+		description = {
+			700009841
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9842] = {
+		name = "3f884c68fe18ab9e6d658d7173ced021",
+		affix_buff_id = 9842,
+		max_level = 1,
+		extra_description = "AFFIX_9842",
+		id = 9842,
+		description = {
+			700009842
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9843] = {
+		name = "f1676d5862768f9402c587608192ab11",
+		affix_buff_id = 9843,
+		max_level = 1,
+		extra_description = "AFFIX_9843",
+		id = 9843,
+		description = {
+			700009843
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9844] = {
+		name = "f69cc0e60e0a3037806fb23742b10484",
+		affix_buff_id = 9844,
+		max_level = 1,
+		extra_description = "AFFIX_9844",
+		id = 9844,
+		description = {
+			700009844
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9845] = {
+		name = "4c462ca0bee220bce61d231db52db232",
+		affix_buff_id = 9845,
+		max_level = 1,
+		extra_description = "AFFIX_9845",
+		id = 9845,
+		description = {
+			700009845
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9846] = {
+		name = "d35ea5b7077649e851ac4fd1046a13c9",
+		affix_buff_id = 9846,
+		max_level = 1,
+		extra_description = "AFFIX_9846",
+		id = 9846,
+		description = {
+			700009846
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9851] = {
+		name = "4f34907ed67182fb744ad79c803ae4a6",
+		affix_buff_id = 9851,
+		max_level = 3,
+		extra_description = "AFFIX_9851",
+		id = 9851,
+		description = {
+			700009851
+		},
+		buffid = {
+			98511
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9852] = {
+		name = "392d71334dd8c570ec12fcf86bb562fa",
+		affix_buff_id = 9852,
+		max_level = 3,
+		extra_description = "AFFIX_9852",
+		id = 9852,
+		description = {
+			700009852
+		},
+		buffid = {
+			98521
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9853] = {
+		name = "32b38462c879db1d7780c41917542f4c",
+		affix_buff_id = 9853,
+		max_level = 3,
+		extra_description = "AFFIX_9853",
+		id = 9853,
+		description = {
+			700009853
+		},
+		buffid = {
+			98531
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9854] = {
+		name = "c9a5fc97e25617977adac4ef914dd556",
+		affix_buff_id = 9854,
+		max_level = 3,
+		extra_description = "AFFIX_9854",
+		id = 9854,
+		description = {
+			700009854
+		},
+		buffid = {
+			98541
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
 	[9901] = {
 		name = "16cf29a5e0e8fab2f2dcd253eb8620e5",
 		affix_buff_id = 9901,
@@ -16609,6 +17621,918 @@
 		},
 		buffid = {
 			99481
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[80000] = {
+		name = "d466dd27450778956e4f76ddb1e5729b",
+		affix_buff_id = 80000,
+		max_level = 20,
+		extra_description = "AFFIX_80000",
+		id = 80000,
+		description = {
+			700080000
+		},
+		buffid = {
+			80001
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80010] = {
+		name = "a23392cc56f71b32738ccb6fc82b5a3e",
+		affix_buff_id = 80010,
+		max_level = 20,
+		extra_description = "AFFIX_80010",
+		id = 80010,
+		description = {
+			700080010
+		},
+		buffid = {
+			80011
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80020] = {
+		name = "3d57dffe31dd99d4c0e3f7b8b6b83b51",
+		affix_buff_id = 80020,
+		max_level = 20,
+		extra_description = "AFFIX_80020",
+		id = 80020,
+		description = {
+			700080020
+		},
+		buffid = {
+			80021
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80030] = {
+		name = "f61da968fc947fa2894ac950542b2d26",
+		affix_buff_id = 80030,
+		max_level = 20,
+		extra_description = "AFFIX_80030",
+		id = 80030,
+		description = {
+			700080030
+		},
+		buffid = {
+			80031
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80040] = {
+		name = "24189241f58f7d6ad036c605cce0e46f",
+		affix_buff_id = 80040,
+		max_level = 20,
+		extra_description = "AFFIX_80040",
+		id = 80040,
+		description = {
+			700080040
+		},
+		buffid = {
+			80041
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80050] = {
+		name = "6355e9105fd697316904c09d9fbcc7db",
+		affix_buff_id = 80050,
+		max_level = 20,
+		extra_description = "AFFIX_80050",
+		id = 80050,
+		description = {
+			700080050
+		},
+		buffid = {
+			80051
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80060] = {
+		name = "f2f9e388b0d47836eb7a045ddbf62b9a",
+		affix_buff_id = 80060,
+		max_level = 20,
+		extra_description = "AFFIX_80060",
+		id = 80060,
+		description = {
+			700080060
+		},
+		buffid = {
+			80061
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80070] = {
+		name = "ae47179c72bdbe31b248587640591585",
+		affix_buff_id = 80070,
+		max_level = 20,
+		extra_description = "AFFIX_80070",
+		id = 80070,
+		description = {
+			700080070
+		},
+		buffid = {
+			80071
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80080] = {
+		name = "1f4d3e13c6a486c478047fc0c67f5561",
+		affix_buff_id = 80080,
+		max_level = 20,
+		extra_description = "AFFIX_80080",
+		id = 80080,
+		description = {
+			700080080
+		},
+		buffid = {
+			80081
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80090] = {
+		name = "bdc2a388ad9359158d2aefaf7357923d",
+		affix_buff_id = 80090,
+		max_level = 20,
+		extra_description = "AFFIX_80090",
+		id = 80090,
+		description = {
+			700080090
+		},
+		buffid = {
+			80091
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80100] = {
+		name = "0a36b3a297af592430be3fcfedeeab17",
+		affix_buff_id = 80100,
+		max_level = 20,
+		extra_description = "AFFIX_80100",
+		id = 80100,
+		description = {
+			700080100
+		},
+		buffid = {
+			80104
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80110] = {
+		name = "9e33b6f0f21edf28a0603d4439eb6d03",
+		affix_buff_id = 80110,
+		max_level = 20,
+		extra_description = "AFFIX_80110",
+		id = 80110,
+		description = {
+			700080110
+		},
+		buffid = {
+			80111
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80120] = {
+		name = "40840f0e39b3e058f9863077cce29ca9",
+		affix_buff_id = 80120,
+		max_level = 20,
+		extra_description = "AFFIX_80120",
+		id = 80120,
+		description = {
+			700080120
+		},
+		buffid = {
+			80121
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80130] = {
+		name = "1846d8abd72a7f0e807665984358a91e",
+		affix_buff_id = 80130,
+		max_level = 20,
+		extra_description = "AFFIX_80130",
+		id = 80130,
+		description = {
+			700080130
+		},
+		buffid = {
+			80131
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80140] = {
+		name = "376eeb99ca5e79b0cb7e382c15a906a9",
+		affix_buff_id = 80140,
+		max_level = 20,
+		extra_description = "AFFIX_80140",
+		id = 80140,
+		description = {
+			700080140
+		},
+		buffid = {
+			80141
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80150] = {
+		name = "90fe0a3981c3a6a256e6234293d8cad7",
+		affix_buff_id = 80150,
+		max_level = 20,
+		extra_description = "AFFIX_80150",
+		id = 80150,
+		description = {
+			700080150
+		},
+		buffid = {
+			80151
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80160] = {
+		name = "8fea493157698e54ebcce640cf6950ba",
+		affix_buff_id = 80160,
+		max_level = 20,
+		extra_description = "AFFIX_80160",
+		id = 80160,
+		description = {
+			700080160
+		},
+		buffid = {
+			80161
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80170] = {
+		name = "9c1cac2ffdb633bcb3e14cb8ed30d02e",
+		affix_buff_id = 80170,
+		max_level = 20,
+		extra_description = "AFFIX_80170",
+		id = 80170,
+		description = {
+			700080170
+		},
+		buffid = {
+			80171
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80180] = {
+		name = "50b66e66a058e89ef00597fe18c703ee",
+		affix_buff_id = 80180,
+		max_level = 20,
+		extra_description = "AFFIX_80180",
+		id = 80180,
+		description = {
+			700080180
+		},
+		buffid = {
+			80181
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80190] = {
+		name = "b48158f75242176e5dd647462f954e8d",
+		affix_buff_id = 80190,
+		max_level = 20,
+		extra_description = "AFFIX_80190",
+		id = 80190,
+		description = {
+			700080190
+		},
+		buffid = {
+			80191
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80200] = {
+		name = "05e682174bb651f8e29fe81e0712f7ed",
+		affix_buff_id = 80200,
+		max_level = 20,
+		extra_description = "AFFIX_80200",
+		id = 80200,
+		description = {
+			700080200
+		},
+		buffid = {
+			80201
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80210] = {
+		name = "f87a786853faa3775d67f8d8ae92dc29",
+		affix_buff_id = 80210,
+		max_level = 20,
+		extra_description = "AFFIX_80210",
+		id = 80210,
+		description = {
+			700080210
+		},
+		buffid = {
+			80211
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80220] = {
+		name = "193c9af27862e427e9d2744d1024ae0f",
+		affix_buff_id = 80220,
+		max_level = 20,
+		extra_description = "AFFIX_80220",
+		id = 80220,
+		description = {
+			700080220
+		},
+		buffid = {
+			80221
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80230] = {
+		name = "c7f892fbc389a2aa321d554550f40a6a",
+		affix_buff_id = 80230,
+		max_level = 20,
+		extra_description = "AFFIX_80230",
+		id = 80230,
+		description = {
+			700080230
+		},
+		buffid = {
+			80231
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80240] = {
+		name = "cb8f5ffd4909a2d37f0bdceae4ae4e44",
+		affix_buff_id = 80240,
+		max_level = 20,
+		extra_description = "AFFIX_80240",
+		id = 80240,
+		description = {
+			700080240
+		},
+		buffid = {
+			80241
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80250] = {
+		name = "857192727331aee4ebbf60e517648818",
+		affix_buff_id = 80250,
+		max_level = 20,
+		extra_description = "AFFIX_80250",
+		id = 80250,
+		description = {
+			700080250
+		},
+		buffid = {
+			80251
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80260] = {
+		name = "65617f1238d21bc6cffa1b0f55250e80",
+		affix_buff_id = 80260,
+		max_level = 20,
+		extra_description = "AFFIX_80260",
+		id = 80260,
+		description = {
+			700080260
+		},
+		buffid = {
+			80261
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80270] = {
+		name = "9cb489e7ed1729658a2814b2d349d07c",
+		affix_buff_id = 80270,
+		max_level = 20,
+		extra_description = "AFFIX_80270",
+		id = 80270,
+		description = {
+			700080270
+		},
+		buffid = {
+			80271
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80280] = {
+		name = "2cd1d60e2778f707777f8f23d648b3d3",
+		affix_buff_id = 80280,
+		max_level = 20,
+		extra_description = "AFFIX_80280",
+		id = 80280,
+		description = {
+			700080280
+		},
+		buffid = {
+			80281
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80290] = {
+		name = "8bf60a427590fe1ff65aafe6a6fed0c1",
+		affix_buff_id = 80290,
+		max_level = 20,
+		extra_description = "AFFIX_80290",
+		id = 80290,
+		description = {
+			700080290
+		},
+		buffid = {
+			80291
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80300] = {
+		name = "a14348006d78a1371b760a356064ca9e",
+		affix_buff_id = 80300,
+		max_level = 20,
+		extra_description = "AFFIX_80300",
+		id = 80300,
+		description = {
+			700080300
+		},
+		buffid = {
+			80301
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80310] = {
+		name = "040b22009ec10a34bde599c5c42b532d",
+		affix_buff_id = 80310,
+		max_level = 20,
+		extra_description = "AFFIX_80310",
+		id = 80310,
+		description = {
+			700080310
+		},
+		buffid = {
+			80311
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80320] = {
+		name = "ea20464cc296fecd7887d6fa43a8c6e9",
+		affix_buff_id = 80320,
+		max_level = 20,
+		extra_description = "AFFIX_80320",
+		id = 80320,
+		description = {
+			700080320
+		},
+		buffid = {
+			80321
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80330] = {
+		name = "38188a12643698cdd8d91ab793540af9",
+		affix_buff_id = 80330,
+		max_level = 20,
+		extra_description = "AFFIX_80330",
+		id = 80330,
+		description = {
+			700080330
+		},
+		buffid = {
+			80331
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80340] = {
+		name = "827961e46ba76366be53808260869fc2",
+		affix_buff_id = 80340,
+		max_level = 20,
+		extra_description = "AFFIX_80340",
+		id = 80340,
+		description = {
+			700080340
+		},
+		buffid = {
+			80341
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80350] = {
+		name = "5c8a44a31640d27f3f104a973eabb4f2",
+		affix_buff_id = 80350,
+		max_level = 20,
+		extra_description = "AFFIX_80350",
+		id = 80350,
+		description = {
+			700080350
+		},
+		buffid = {
+			80351
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80360] = {
+		name = "6419ff09aea84acfdd3611cf063da9ef",
+		affix_buff_id = 80360,
+		max_level = 20,
+		extra_description = "AFFIX_80360",
+		id = 80360,
+		description = {
+			700080360
+		},
+		buffid = {
+			80361
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80370] = {
+		name = "4704a134a0503d2111e2d43490b4e01f",
+		affix_buff_id = 80370,
+		max_level = 20,
+		extra_description = "AFFIX_80370",
+		id = 80370,
+		description = {
+			700080370
+		},
+		buffid = {
+			80371
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80380] = {
+		name = "6878b56df4213c729d15099fbecf208f",
+		affix_buff_id = 80380,
+		max_level = 20,
+		extra_description = "AFFIX_80380",
+		id = 80380,
+		description = {
+			700080380
+		},
+		buffid = {
+			80381
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80390] = {
+		name = "cf18e55afb3a9217045511e664a372c7",
+		affix_buff_id = 80390,
+		max_level = 20,
+		extra_description = "AFFIX_80390",
+		id = 80390,
+		description = {
+			700080390
+		},
+		buffid = {
+			80391
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80400] = {
+		name = "bcf666fadc4826249c90a45c7899a01c",
+		affix_buff_id = 80400,
+		max_level = 20,
+		extra_description = "AFFIX_80400",
+		id = 80400,
+		description = {
+			700080400
+		},
+		buffid = {
+			80401
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80410] = {
+		name = "cb5af0f1de99213b640753a349f1ec27",
+		affix_buff_id = 80410,
+		max_level = 20,
+		extra_description = "AFFIX_80410",
+		id = 80410,
+		description = {
+			700080410
+		},
+		buffid = {
+			80411
+		},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[80420] = {
+		name = "fc3311f14b21bc597ceac579c16c5689",
+		affix_buff_id = 80420,
+		max_level = 10,
+		extra_description = "AFFIX_80420",
+		id = 80420,
+		description = {
+			700080420
+		},
+		buffid = {
+			80421
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[80430] = {
+		name = "1af386dcf12b7fcb70a086e078fb192f",
+		affix_buff_id = 80430,
+		max_level = 10,
+		extra_description = "AFFIX_80430",
+		id = 80430,
+		description = {
+			700080430
+		},
+		buffid = {
+			80431
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[80440] = {
+		name = "db6a0fe3ec17f92eed9120790f154187",
+		affix_buff_id = 80440,
+		max_level = 10,
+		extra_description = "AFFIX_80440",
+		id = 80440,
+		description = {
+			700080440
+		},
+		buffid = {
+			80441
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[80450] = {
+		name = "a1b2a6bcb120b9ba7074f5900ab58a68",
+		affix_buff_id = 80450,
+		max_level = 10,
+		extra_description = "AFFIX_80450",
+		id = 80450,
+		description = {
+			700080450
+		},
+		buffid = {
+			80451
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[80460] = {
+		name = "96faa036730a992936d0efe6ef561192",
+		affix_buff_id = 80460,
+		max_level = 10,
+		extra_description = "AFFIX_80460",
+		id = 80460,
+		description = {
+			700080460
+		},
+		buffid = {
+			80461
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[80470] = {
+		name = "bdd085cba35dd121fea8472cfa33a863",
+		affix_buff_id = 80470,
+		max_level = 10,
+		extra_description = "AFFIX_80470",
+		id = 80470,
+		description = {
+			700080470
+		},
+		buffid = {
+			80471
 		},
 		base = {
 			0
@@ -18662,6 +20586,261 @@
 		id = 70205,
 		description = {
 			700070205
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70206] = {
+		name = "f6de87f7e0bb76efd147084761300924",
+		affix_buff_id = 70206,
+		max_level = 1,
+		extra_description = "AFFIX_70206",
+		id = 70206,
+		description = {
+			700070206
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70207] = {
+		name = "bd64e6d42e561fba626975c2c34baacb",
+		affix_buff_id = 70207,
+		max_level = 1,
+		extra_description = "AFFIX_70207",
+		id = 70207,
+		description = {
+			700070207
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70208] = {
+		name = "4d23cc81a1c50c006936360f2420a4f8",
+		affix_buff_id = 70208,
+		max_level = 1,
+		extra_description = "AFFIX_70208",
+		id = 70208,
+		description = {
+			700070208
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70209] = {
+		name = "1a390009e5a0315d0f78e6adf9f11836",
+		affix_buff_id = 70209,
+		max_level = 1,
+		extra_description = "AFFIX_70209",
+		id = 70209,
+		description = {
+			700070209
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70210] = {
+		name = "60251aaf6c2894846e43d9178c9f41fd",
+		affix_buff_id = 70210,
+		max_level = 1,
+		extra_description = "AFFIX_70210",
+		id = 70210,
+		description = {
+			700070210
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70211] = {
+		name = "970e2d4bca0bddd7068c8bca2ae1b9c1",
+		affix_buff_id = 70211,
+		max_level = 1,
+		extra_description = "AFFIX_70211",
+		id = 70211,
+		description = {
+			700070211
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70212] = {
+		name = "ab370a7a57522d17de763766fc244099",
+		affix_buff_id = 70212,
+		max_level = 1,
+		extra_description = "AFFIX_70212",
+		id = 70212,
+		description = {
+			700070212
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70213] = {
+		name = "902db191cb3a76d57544f8799280b910",
+		affix_buff_id = 70213,
+		max_level = 1,
+		extra_description = "AFFIX_70213",
+		id = 70213,
+		description = {
+			700070213
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70214] = {
+		name = "ef8f644b6d3547fe3d19c23d0927f1c9",
+		affix_buff_id = 70214,
+		max_level = 1,
+		extra_description = "AFFIX_70214",
+		id = 70214,
+		description = {
+			700070214
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70215] = {
+		name = "62d99dbe4c99499dcda64b6d80d7c90d",
+		affix_buff_id = 70215,
+		max_level = 1,
+		extra_description = "AFFIX_70215",
+		id = 70215,
+		description = {
+			700070215
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70216] = {
+		name = "f7d94b5b3a2cb1455349e369aac56a1b",
+		affix_buff_id = 70216,
+		max_level = 1,
+		extra_description = "AFFIX_70216",
+		id = 70216,
+		description = {
+			700070216
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70217] = {
+		name = "6aa8baedb4c925a6f619ae023613cae2",
+		affix_buff_id = 70217,
+		max_level = 1,
+		extra_description = "AFFIX_70217",
+		id = 70217,
+		description = {
+			700070217
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70218] = {
+		name = "a4823da9bed81889109ec34db475f023",
+		affix_buff_id = 70218,
+		max_level = 1,
+		extra_description = "AFFIX_70218",
+		id = 70218,
+		description = {
+			700070218
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70219] = {
+		name = "2079407b156be039be6b4b2398d489b3",
+		affix_buff_id = 70219,
+		max_level = 1,
+		extra_description = "AFFIX_70219",
+		id = 70219,
+		description = {
+			700070219
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70220] = {
+		name = "968e34a046bb7af1aa78e61095611619",
+		affix_buff_id = 70220,
+		max_level = 1,
+		extra_description = "AFFIX_70220",
+		id = 70220,
+		description = {
+			700070220
 		},
 		buffid = {},
 		base = {
@@ -21130,6 +23309,3639 @@
 			1
 		}
 	},
+	[71001] = {
+		name = "d8bdd3b0aa65bbb51005908c8bb00aed",
+		affix_buff_id = 71001,
+		max_level = 3,
+		extra_description = "AFFIX_71001",
+		id = 71001,
+		description = {
+			700071001
+		},
+		buffid = {
+			710011,
+			710012
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71002] = {
+		name = "3d6c928b67796ca65a6c46a9fd90b5ac",
+		affix_buff_id = 71002,
+		max_level = 3,
+		extra_description = "AFFIX_71002",
+		id = 71002,
+		description = {
+			700071002
+		},
+		buffid = {
+			710021
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71003] = {
+		name = "8bb23744c9eef43e2b43b0da8aff58c1",
+		affix_buff_id = 71003,
+		max_level = 3,
+		extra_description = "AFFIX_71003",
+		id = 71003,
+		description = {
+			700071003
+		},
+		buffid = {
+			710031,
+			710032,
+			710033,
+			710034
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71004] = {
+		name = "4b51d84a0808d71bc6ff4161f1190eba",
+		affix_buff_id = 71004,
+		max_level = 3,
+		extra_description = "AFFIX_71004",
+		id = 71004,
+		description = {
+			700071004
+		},
+		buffid = {
+			710041
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71005] = {
+		name = "95480e23243167c663addeb8ff23c90a",
+		affix_buff_id = 71005,
+		max_level = 3,
+		extra_description = "AFFIX_71005",
+		id = 71005,
+		description = {
+			700071005
+		},
+		buffid = {
+			710051
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71006] = {
+		name = "c66956d14f8a1c597a78c21e601b74f0",
+		affix_buff_id = 71006,
+		max_level = 3,
+		extra_description = "AFFIX_71006",
+		id = 71006,
+		description = {
+			700071006
+		},
+		buffid = {
+			710061
+		},
+		base = {
+			0,
+			0,
+			0,
+			50,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			50,
+			0,
+			0
+		}
+	},
+	[71007] = {
+		name = "5f26a5bb9eda56c31dae6714fbd81e17",
+		affix_buff_id = 71007,
+		max_level = 3,
+		extra_description = "AFFIX_71007",
+		id = 71007,
+		description = {
+			700071007
+		},
+		buffid = {
+			710071
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71008] = {
+		name = "270bb214e1d266104e4e4fd5d1278223",
+		affix_buff_id = 71008,
+		max_level = 3,
+		extra_description = "AFFIX_71008",
+		id = 71008,
+		description = {
+			700071008
+		},
+		buffid = {
+			710081
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71011] = {
+		name = "844af29bf701430b927add507f4b7b7f",
+		affix_buff_id = 71011,
+		max_level = 999,
+		extra_description = "AFFIX_71011",
+		id = 71011,
+		description = {
+			700071011
+		},
+		buffid = {
+			710111
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71012] = {
+		name = "e3808a990694da1898df0110723d18b3",
+		affix_buff_id = 71012,
+		max_level = 1,
+		extra_description = "AFFIX_71012",
+		id = 71012,
+		description = {
+			700071012
+		},
+		buffid = {
+			710121
+		},
+		base = {
+			3
+		},
+		factor = {
+			0
+		}
+	},
+	[71013] = {
+		name = "29c2581b116bfe457bd29bb1eedf9548",
+		affix_buff_id = 71013,
+		max_level = 1,
+		extra_description = "AFFIX_71013",
+		id = 71013,
+		description = {
+			700071013
+		},
+		buffid = {
+			710131
+		},
+		base = {
+			20000
+		},
+		factor = {
+			0
+		}
+	},
+	[71014] = {
+		name = "2100f1faf62676cc0e5ec65bbd5859b5",
+		affix_buff_id = 71014,
+		max_level = 1,
+		extra_description = "AFFIX_71014",
+		id = 71014,
+		description = {
+			700071014
+		},
+		buffid = {},
+		base = {
+			200
+		},
+		factor = {
+			0
+		}
+	},
+	[71015] = {
+		name = "b860854bc3ba8e0ff256ffc4b76cbc81",
+		affix_buff_id = 71015,
+		max_level = 1,
+		extra_description = "AFFIX_71015",
+		id = 71015,
+		description = {
+			700071015
+		},
+		buffid = {
+			710151,
+			710152
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71016] = {
+		name = "2e5c9875845a5e06b14f9829b9fd62a0",
+		affix_buff_id = 71016,
+		max_level = 4,
+		extra_description = "AFFIX_71016",
+		id = 71016,
+		description = {
+			700071016
+		},
+		buffid = {
+			710161
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71017] = {
+		name = "fec445187f380afad8f590bd63f1db8c",
+		affix_buff_id = 71017,
+		max_level = 1,
+		extra_description = "AFFIX_71017",
+		id = 71017,
+		description = {
+			700071017
+		},
+		buffid = {},
+		base = {
+			100000,
+			100000000
+		},
+		factor = {
+			0,
+			0
+		}
+	},
+	[71018] = {
+		name = "5785fb08a72b7b9bd5d8a7bb3908c31e",
+		affix_buff_id = 71018,
+		max_level = 1,
+		extra_description = "AFFIX_71018",
+		id = 71018,
+		description = {
+			700071018
+		},
+		buffid = {},
+		base = {
+			70
+		},
+		factor = {
+			0
+		}
+	},
+	[71019] = {
+		name = "2c003822860f172e8e89dcdd7698742f",
+		affix_buff_id = 71019,
+		max_level = 1,
+		extra_description = "AFFIX_71119",
+		id = 71019,
+		description = {
+			700071019
+		},
+		buffid = {},
+		base = {
+			806071,
+			0,
+			0,
+			10,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			10,
+			0,
+			0
+		}
+	},
+	[71020] = {
+		name = "147fb7549ccc50aec7b613c9202d870c",
+		affix_buff_id = 71020,
+		max_level = 1,
+		extra_description = "AFFIX_71020",
+		id = 71020,
+		description = {
+			700071020
+		},
+		buffid = {
+			710201
+		},
+		base = {
+			50
+		},
+		factor = {
+			0
+		}
+	},
+	[71021] = {
+		name = "9f588f041157eebfd33b9828dd58419d",
+		affix_buff_id = 71021,
+		max_level = 1,
+		extra_description = "AFFIX_71021",
+		id = 71021,
+		description = {
+			700071021
+		},
+		buffid = {
+			710211
+		},
+		base = {
+			1
+		},
+		factor = {
+			0
+		}
+	},
+	[71022] = {
+		name = "b3d82c451c5458211b077978f06d95b6",
+		affix_buff_id = 71022,
+		max_level = 1,
+		extra_description = "AFFIX_71022",
+		id = 71022,
+		description = {
+			700071022
+		},
+		buffid = {
+			710221
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71023] = {
+		name = "4df26625b073f74164ed4db1e79f8c32",
+		affix_buff_id = 71023,
+		max_level = 1,
+		extra_description = "AFFIX_71023",
+		id = 71023,
+		description = {
+			700071023
+		},
+		buffid = {
+			710231
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71024] = {
+		name = "d52ca8c29ebe61a991d75a1f6e38d7d4",
+		affix_buff_id = 71024,
+		max_level = 4,
+		extra_description = "AFFIX_BUFF_HEALED_DOWN",
+		id = 71024,
+		description = {
+			700071024
+		},
+		buffid = {
+			710241
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71025] = {
+		name = "8ea7054c0aba651cd421cd33555413e3",
+		affix_buff_id = 71025,
+		max_level = 2,
+		extra_description = "AFFIX_BUFF_HP_ANGRY",
+		id = 71025,
+		description = {
+			700071025
+		},
+		buffid = {
+			710251,
+			710252
+		},
+		base = {
+			30
+		},
+		factor = {
+			30
+		}
+	},
+	[71026] = {
+		name = "9776513dc637e93dd4a213229696cf69",
+		affix_buff_id = 71026,
+		max_level = 1,
+		extra_description = "AFFIX_BUFF_DAMAGE_UP",
+		id = 71026,
+		description = {
+			700071026
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71027] = {
+		name = "4ffcd4c2f02ba64f83fe7a86f1dfc9c7",
+		affix_buff_id = 71026,
+		max_level = 1,
+		extra_description = "AFFIX_BUFF_DAMAGE_UP",
+		id = 71027,
+		description = {
+			700071027
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71030] = {
+		name = "2390d89de1bdb1ff0c40d690b71cbe6b",
+		affix_buff_id = 71030,
+		max_level = 9999999,
+		extra_description = "AFFIX_71030",
+		id = 71030,
+		description = {
+			700000001
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			500,
+			3000,
+			4500,
+			6000
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71101] = {
+		name = "9b38e9f11c8d72db9d64075dcfb0821e",
+		affix_buff_id = 71101,
+		max_level = 3,
+		extra_description = "AFFIX_71101",
+		id = 71101,
+		description = {
+			700071101
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			250,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			50,
+			0,
+			0
+		}
+	},
+	[71102] = {
+		name = "532774875f375b4ea6c1f0a2ee910a66",
+		affix_buff_id = 71102,
+		max_level = 3,
+		extra_description = "AFFIX_71102",
+		id = 71102,
+		description = {
+			700071102
+		},
+		buffid = {},
+		base = {
+			806057,
+			6000000,
+			2000,
+			6000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			-500,
+			0,
+			0
+		}
+	},
+	[71103] = {
+		name = "04c15f518a8a6e862b5ddcc01e26a4c4",
+		affix_buff_id = 71103,
+		max_level = 3,
+		extra_description = "AFFIX_71103",
+		id = 71103,
+		description = {
+			700071103
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			200,
+			-400,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			-150,
+			0,
+			0
+		}
+	},
+	[71104] = {
+		name = "727b4e5d337ee627da4fb53adc8b894d",
+		affix_buff_id = 71104,
+		max_level = 3,
+		extra_description = "AFFIX_71104",
+		id = 71104,
+		description = {
+			700071104
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			-150,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			-100,
+			0,
+			0
+		}
+	},
+	[71105] = {
+		name = "e2327e98b13e4d33f87cf05e8a889b01",
+		affix_buff_id = 71105,
+		max_level = 3,
+		extra_description = "AFFIX_71105",
+		id = 71105,
+		description = {
+			700071105
+		},
+		buffid = {},
+		base = {
+			806058,
+			12000000,
+			0,
+			3000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			-500,
+			0,
+			0
+		}
+	},
+	[71106] = {
+		name = "cd5ccafa29c0f8dc52502ccdc75520af",
+		affix_buff_id = 71106,
+		max_level = 3,
+		extra_description = "AFFIX_71106",
+		id = 71106,
+		description = {
+			700071106
+		},
+		buffid = {},
+		base = {
+			806085,
+			6000000,
+			3000,
+			6000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			-500,
+			0,
+			0
+		}
+	},
+	[71107] = {
+		name = "53d773c8d3e92a17ef286de4fc7eb7b7",
+		affix_buff_id = 71107,
+		max_level = 3,
+		extra_description = "AFFIX_71107",
+		id = 71107,
+		description = {
+			700071107
+		},
+		buffid = {
+			711071,
+			711072,
+			711073,
+			711074
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71108] = {
+		name = "38b508f6aedded9cb37ef1eeebf510d2",
+		affix_buff_id = 71108,
+		max_level = 3,
+		extra_description = "AFFIX_71108",
+		id = 71108,
+		description = {
+			700071108
+		},
+		buffid = {
+			711081
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71109] = {
+		name = "4c67db87178db895d40b4f4a38e9e298",
+		affix_buff_id = 71109,
+		max_level = 3,
+		extra_description = "AFFIX_71109",
+		id = 71109,
+		description = {
+			700071109
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			-700,
+			-4000,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			-300,
+			0,
+			0
+		}
+	},
+	[71110] = {
+		name = "529da7c80e185e382d856123a10a91fe",
+		affix_buff_id = 71110,
+		max_level = 3,
+		extra_description = "AFFIX_71110",
+		id = 71110,
+		description = {
+			700071110
+		},
+		buffid = {},
+		base = {
+			806086,
+			1500000,
+			0,
+			1,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			1,
+			0,
+			0
+		}
+	},
+	[71111] = {
+		name = "eba162b6996d60c0490d32b44b452c99",
+		affix_buff_id = 71111,
+		max_level = 3,
+		extra_description = "AFFIX_71111",
+		id = 71111,
+		description = {
+			700071111
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			1000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			500,
+			0,
+			0
+		}
+	},
+	[71112] = {
+		name = "ec8161c3b2df09141d1203ea568a04af",
+		affix_buff_id = 71112,
+		max_level = 3,
+		extra_description = "AFFIX_71112",
+		id = 71112,
+		description = {
+			700071112
+		},
+		buffid = {
+			711121
+		},
+		base = {
+			0,
+			0,
+			500,
+			50,
+			1000,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			10,
+			80,
+			0
+		}
+	},
+	[71121] = {
+		name = "f376248ee522cfc4869746b2e58e6999",
+		affix_buff_id = 71121,
+		max_level = 1,
+		extra_description = "AFFIX_71121",
+		id = 71121,
+		description = {
+			700071121
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			2000,
+			150,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71122] = {
+		name = "0b3873fb7dd648c8364d069802e92264",
+		affix_buff_id = 71122,
+		max_level = 1,
+		extra_description = "AFFIX_71122",
+		id = 71122,
+		description = {
+			700071122
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			400,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71123] = {
+		name = "7225b56b1bb14b0e253fe471b15e9fd3",
+		affix_buff_id = 71123,
+		max_level = 1,
+		extra_description = "AFFIX_71123",
+		id = 71123,
+		description = {
+			700071123
+		},
+		buffid = {},
+		base = {
+			806091,
+			1800000,
+			300,
+			6000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71149] = {
+		name = "48cf46869644a67f013c474e6521fce8",
+		affix_buff_id = 71149,
+		max_level = 1,
+		extra_description = "AFFIX_71149",
+		id = 71149,
+		description = {
+			700071149
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			6000,
+			-1500,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71150] = {
+		name = "94e8032f97a96a9429feb7127819fddf",
+		affix_buff_id = 71150,
+		max_level = 1,
+		extra_description = "AFFIX_71150",
+		id = 71150,
+		description = {
+			700071150
+		},
+		buffid = {},
+		base = {
+			806051,
+			2000000,
+			500,
+			3000,
+			10000,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71151] = {
+		name = "a5bd5dec84b2e8226ef30d97e9c5a50d",
+		affix_buff_id = 71151,
+		max_level = 3,
+		extra_description = "AFFIX_71151",
+		id = 71151,
+		description = {
+			700071151
+		},
+		buffid = {
+			711511
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71152] = {
+		name = "90a3a800fccf3c923d4d378ae57c1c79",
+		affix_buff_id = 71152,
+		max_level = 3,
+		extra_description = "AFFIX_71152",
+		id = 71152,
+		description = {
+			700071152
+		},
+		buffid = {
+			711521
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71153] = {
+		name = "62bd632874c1e6dcf087138a7d3691a7",
+		affix_buff_id = 71153,
+		max_level = 3,
+		extra_description = "AFFIX_71153",
+		id = 71153,
+		description = {
+			700071153
+		},
+		buffid = {
+			711531
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71154] = {
+		name = "73f01aadf12310f7b4e955b3a17e26e3",
+		affix_buff_id = 71154,
+		max_level = 3,
+		extra_description = "AFFIX_71154",
+		id = 71154,
+		description = {
+			700071154
+		},
+		buffid = {
+			711541
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71155] = {
+		name = "7dcebfdf8a748e1c3e4974f1b4b285c1",
+		affix_buff_id = 71155,
+		max_level = 3,
+		extra_description = "AFFIX_71155",
+		id = 71155,
+		description = {
+			700071155
+		},
+		buffid = {
+			711551
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71156] = {
+		name = "6475de8cc5180050360a180c22720eb9",
+		affix_buff_id = 71156,
+		max_level = 3,
+		extra_description = "AFFIX_71156",
+		id = 71156,
+		description = {
+			700071156
+		},
+		buffid = {
+			711561
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71157] = {
+		name = "f9425b31ad08c46cf69267edd2f66cc4",
+		affix_buff_id = 71157,
+		max_level = 3,
+		extra_description = "AFFIX_71157",
+		id = 71157,
+		description = {
+			700071157
+		},
+		buffid = {
+			711571
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71158] = {
+		name = "1f66c0e7e2874326602b64a824cb2c41",
+		affix_buff_id = 71158,
+		max_level = 3,
+		extra_description = "AFFIX_71158",
+		id = 71158,
+		description = {
+			700071158
+		},
+		buffid = {
+			711581
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71159] = {
+		name = "5f4db3559bc74e645dadb47046566db0",
+		affix_buff_id = 71159,
+		max_level = 3,
+		extra_description = "AFFIX_71159",
+		id = 71159,
+		description = {
+			700071159
+		},
+		buffid = {
+			711591
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71160] = {
+		name = "80089e4df956576ec9fae7d9fd35721a",
+		affix_buff_id = 71160,
+		max_level = 3,
+		extra_description = "AFFIX_71160",
+		id = 71160,
+		description = {
+			700071160
+		},
+		buffid = {
+			711601
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71161] = {
+		name = "806d925ea33a0949c3055534d13fae16",
+		affix_buff_id = 71161,
+		max_level = 3,
+		extra_description = "AFFIX_71161",
+		id = 71161,
+		description = {
+			700071161
+		},
+		buffid = {
+			711611
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71162] = {
+		name = "2f0e3448f93c92358de68ede56904ac2",
+		affix_buff_id = 71162,
+		max_level = 3,
+		extra_description = "AFFIX_71162",
+		id = 71162,
+		description = {
+			700071162
+		},
+		buffid = {
+			711621
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71171] = {
+		name = "65a346a39d4e780866144e9b093b6ef9",
+		affix_buff_id = 71171,
+		max_level = 1,
+		extra_description = "AFFIX_71171",
+		id = 71171,
+		description = {
+			700071171
+		},
+		buffid = {
+			711711
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71172] = {
+		name = "e7ca32ddeea619abf9fb4c7ab99d9662",
+		affix_buff_id = 71172,
+		max_level = 1,
+		extra_description = "AFFIX_71172",
+		id = 71172,
+		description = {
+			700071172
+		},
+		buffid = {
+			711721
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71173] = {
+		name = "b34e152b3bab076382b97d95f96685f9",
+		affix_buff_id = 71173,
+		max_level = 1,
+		extra_description = "AFFIX_71173",
+		id = 71173,
+		description = {
+			700071173
+		},
+		buffid = {
+			711731
+		},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71199] = {
+		name = "7194ef13384c8c741c6a90c9a45acd10",
+		affix_buff_id = 71199,
+		max_level = 1,
+		extra_description = "AFFIX_71199",
+		id = 71199,
+		description = {
+			700071199
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71200] = {
+		name = "2582e3f5dd483e034e722f594ae09362",
+		affix_buff_id = 71200,
+		max_level = 1,
+		extra_description = "AFFIX_71200",
+		id = 71200,
+		description = {
+			700071200
+		},
+		buffid = {},
+		base = {
+			806052,
+			1000,
+			0,
+			3000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71201] = {
+		name = "d1ee0eebccf7daa0063968764a22fa8d",
+		affix_buff_id = 71201,
+		max_level = 3,
+		extra_description = "AFFIX_71201",
+		id = 71201,
+		description = {
+			700071201
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			5000,
+			100,
+			6000,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			50,
+			0,
+			0
+		}
+	},
+	[71202] = {
+		name = "7d9e700f28b4cfdf26ba5de1850b4280",
+		affix_buff_id = 71202,
+		max_level = 3,
+		extra_description = "AFFIX_71202",
+		id = 71202,
+		description = {
+			700071202
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			50,
+			4000,
+			5
+		},
+		factor = {
+			0,
+			0,
+			0,
+			20,
+			0,
+			0
+		}
+	},
+	[71203] = {
+		name = "d1b2e280ff171ff6cd3f84bafd0115ba",
+		affix_buff_id = 71203,
+		max_level = 3,
+		extra_description = "AFFIX_71203",
+		id = 71203,
+		description = {
+			700071203
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			5000,
+			100,
+			6000,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			50,
+			0,
+			0
+		}
+	},
+	[71204] = {
+		name = "aef9ad264797fb2eda23d396dc96cbc0",
+		affix_buff_id = 71204,
+		max_level = 3,
+		extra_description = "AFFIX_71204",
+		id = 71204,
+		description = {
+			700071204
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			1000,
+			30,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			10,
+			0,
+			0
+		}
+	},
+	[71205] = {
+		name = "583fc7ca573bf8c53697d48bb4a2a787",
+		affix_buff_id = 71205,
+		max_level = 3,
+		extra_description = "AFFIX_71205",
+		id = 71205,
+		description = {
+			700071205
+		},
+		buffid = {
+			712051
+		},
+		base = {
+			0,
+			0,
+			0,
+			5000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71206] = {
+		name = "717731ead47f7384d9cd79abc31a0139",
+		affix_buff_id = 71206,
+		max_level = 3,
+		extra_description = "AFFIX_71206",
+		id = 71206,
+		description = {
+			700071206
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			100,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			50,
+			0,
+			0
+		}
+	},
+	[71207] = {
+		name = "2aef7eec15d7588e58c32350907e9217",
+		affix_buff_id = 71207,
+		max_level = 3,
+		extra_description = "AFFIX_71207",
+		id = 71207,
+		description = {
+			700071207
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			5000,
+			100,
+			6000,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			50,
+			0,
+			0
+		}
+	},
+	[71208] = {
+		name = "6bd6395f0cb80db58761d94b849b5d36",
+		affix_buff_id = 71208,
+		max_level = 3,
+		extra_description = "AFFIX_71208",
+		id = 71208,
+		description = {
+			700071208
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			500,
+			20000,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			200,
+			0,
+			0
+		}
+	},
+	[71209] = {
+		name = "f8de91688d66dc8d348183bf3521675c",
+		affix_buff_id = 71209,
+		max_level = 3,
+		extra_description = "AFFIX_71209",
+		id = 71209,
+		description = {
+			700071209
+		},
+		buffid = {
+			712091
+		},
+		base = {
+			0,
+			0,
+			0,
+			-500,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71210] = {
+		name = "d924817ee20641af33f6c93f73193454",
+		affix_buff_id = 71210,
+		max_level = 3,
+		extra_description = "AFFIX_71210",
+		id = 71210,
+		description = {
+			700071210
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			70,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			30,
+			0,
+			0
+		}
+	},
+	[71211] = {
+		name = "12a91b895c4ae22970aaa71cb07aadf6",
+		affix_buff_id = 71211,
+		max_level = 3,
+		extra_description = "AFFIX_71211",
+		id = 71211,
+		description = {
+			700071211
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			200,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			100,
+			0,
+			0
+		}
+	},
+	[71212] = {
+		name = "97bc030c19690e3eec112bbc4fb8344b",
+		affix_buff_id = 71212,
+		max_level = 3,
+		extra_description = "AFFIX_71212",
+		id = 71212,
+		description = {
+			700071212
+		},
+		buffid = {
+			712121
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71221] = {
+		name = "05c21499d1098edcc846807a3ed8b7e8",
+		affix_buff_id = 71221,
+		max_level = 1,
+		extra_description = "AFFIX_71221",
+		id = 71221,
+		description = {
+			700071221
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71222] = {
+		name = "dbbece6e6f2d378161d010199d093159",
+		affix_buff_id = 71222,
+		max_level = 1,
+		extra_description = "AFFIX_71222",
+		id = 71222,
+		description = {
+			700071222
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			2000,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71223] = {
+		name = "03ca0fc2ee6ee62d8ecae8feada1a5d8",
+		affix_buff_id = 71223,
+		max_level = 1,
+		extra_description = "AFFIX_71223",
+		id = 71223,
+		description = {
+			700071223
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			3,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71249] = {
+		name = "f4d2b5a378b96fc2bc4314945ad06025",
+		affix_buff_id = 71249,
+		max_level = 1,
+		extra_description = "AFFIX_71249",
+		id = 71249,
+		description = {
+			700071249
+		},
+		buffid = {
+			712491
+		},
+		base = {
+			0,
+			2000000,
+			0,
+			15,
+			0,
+			1000
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71250] = {
+		name = "ad6674773c776e2731cbe6021a127c52",
+		affix_buff_id = 71250,
+		max_level = 1,
+		extra_description = "AFFIX_71250",
+		id = 71250,
+		description = {
+			700071250
+		},
+		buffid = {},
+		base = {
+			806053,
+			1200000,
+			0,
+			3000,
+			40,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71251] = {
+		name = "00fbcf0e4459f0700189baf828a09ca3",
+		affix_buff_id = 71251,
+		max_level = 3,
+		extra_description = "AFFIX_71251",
+		id = 71251,
+		description = {
+			700071251
+		},
+		buffid = {},
+		base = {
+			806080,
+			900000,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			300000,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71252] = {
+		name = "fe1effe730126bee121873cab8af992d",
+		affix_buff_id = 71252,
+		max_level = 3,
+		extra_description = "AFFIX_71252",
+		id = 71252,
+		description = {
+			700071252
+		},
+		buffid = {},
+		base = {
+			806081,
+			900000,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			300000,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71253] = {
+		name = "bcd4ce78a4b5b82614e5ec8d142758dd",
+		affix_buff_id = 71253,
+		max_level = 3,
+		extra_description = "AFFIX_71253",
+		id = 71253,
+		description = {
+			700071253
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			5000,
+			3000,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			2000,
+			1000,
+			0
+		}
+	},
+	[71254] = {
+		name = "5bc8642acc2ad2b4021d1c6ca7fda15a",
+		affix_buff_id = 71254,
+		max_level = 3,
+		extra_description = "AFFIX_71254",
+		id = 71254,
+		description = {
+			700071254
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			2000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			500,
+			0,
+			0
+		}
+	},
+	[71255] = {
+		name = "b3c67baa0dd5861098fe42926e3263a4",
+		affix_buff_id = 71255,
+		max_level = 3,
+		extra_description = "AFFIX_71255",
+		id = 71255,
+		description = {
+			700071255
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			5000,
+			3000,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			2000,
+			1000,
+			0
+		}
+	},
+	[71256] = {
+		name = "4b1973b5241677fbb867abf0ece64fb8",
+		affix_buff_id = 71256,
+		max_level = 3,
+		extra_description = "AFFIX_71256",
+		id = 71256,
+		description = {
+			700071256
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			1000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			500,
+			0,
+			0
+		}
+	},
+	[71257] = {
+		name = "a0ed322d57b521b87385bbad40ed64eb",
+		affix_buff_id = 71257,
+		max_level = 3,
+		extra_description = "AFFIX_71257",
+		id = 71257,
+		description = {
+			700071257
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			4000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			2000,
+			0,
+			0
+		}
+	},
+	[71258] = {
+		name = "3570abba8358046bd337913dac0a316d",
+		affix_buff_id = 71258,
+		max_level = 3,
+		extra_description = "AFFIX_71258",
+		id = 71258,
+		description = {
+			700071258
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			100,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			50,
+			0,
+			0
+		}
+	},
+	[71259] = {
+		name = "dc46c35d40bfadf8128d99d7724e673b",
+		affix_buff_id = 71259,
+		max_level = 3,
+		extra_description = "AFFIX_71259",
+		id = 71259,
+		description = {
+			700071259
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			-300,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			50,
+			0,
+			0
+		}
+	},
+	[71260] = {
+		name = "682f942882fcb44e5ef00d94634ba111",
+		affix_buff_id = 71260,
+		max_level = 3,
+		extra_description = "AFFIX_71260",
+		id = 71260,
+		description = {
+			700071260
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			5000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			2000,
+			0,
+			0
+		}
+	},
+	[71261] = {
+		name = "f26a64f43227254dc4360b739f732a79",
+		affix_buff_id = 71261,
+		max_level = 3,
+		extra_description = "AFFIX_71261",
+		id = 71261,
+		description = {
+			700071261
+		},
+		buffid = {
+			712611
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71262] = {
+		name = "27c576998190316c959b6a66e9de8a6f",
+		affix_buff_id = 71262,
+		max_level = 3,
+		extra_description = "AFFIX_71262",
+		id = 71262,
+		description = {
+			700071262
+		},
+		buffid = {},
+		base = {
+			806082,
+			900000,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			300000,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71271] = {
+		name = "28fa6a1ea7d34acca530696e5097ef05",
+		affix_buff_id = 71271,
+		max_level = 1,
+		extra_description = "AFFIX_71271",
+		id = 71271,
+		description = {
+			700071271
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			4
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71272] = {
+		name = "98aa19e82577f9bdc1d23c019cf16133",
+		affix_buff_id = 71272,
+		max_level = 1,
+		extra_description = "AFFIX_71272",
+		id = 71272,
+		description = {
+			700071272
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71273] = {
+		name = "27fa73fb368c331a4f32751562a28914",
+		affix_buff_id = 71273,
+		max_level = 1,
+		extra_description = "AFFIX_71273",
+		id = 71273,
+		description = {
+			700071273
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71299] = {
+		name = "e029abe626d20161fa1d5eef3b595260",
+		affix_buff_id = 71299,
+		max_level = 1,
+		extra_description = "AFFIX_71299",
+		id = 71299,
+		description = {
+			700071299
+		},
+		buffid = {},
+		base = {
+			0,
+			1100000,
+			4000,
+			80,
+			1200000,
+			4
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71300] = {
+		name = "2a379bd00cd0504bb6d353153b8d3331",
+		affix_buff_id = 71300,
+		max_level = 1,
+		extra_description = "AFFIX_71300",
+		id = 71300,
+		description = {
+			700071300
+		},
+		buffid = {},
+		base = {
+			806054,
+			0,
+			1000,
+			3000,
+			10000,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71301] = {
+		name = "2df2af0b428fd7d71bc7fbbcdd8ae9c1",
+		affix_buff_id = 71301,
+		max_level = 3,
+		extra_description = "AFFIX_71301",
+		id = 71301,
+		description = {
+			700071301
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			10,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			5,
+			0,
+			0
+		}
+	},
+	[71302] = {
+		name = "24672539ec0000ad86b727edefad6465",
+		affix_buff_id = 71302,
+		max_level = 3,
+		extra_description = "AFFIX_71302",
+		id = 71302,
+		description = {
+			700071302
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			6000,
+			5000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			2000,
+			0,
+			0
+		}
+	},
+	[71303] = {
+		name = "d0c7e76552211c9d5103ea56a1599af0",
+		affix_buff_id = 71303,
+		max_level = 3,
+		extra_description = "AFFIX_71303",
+		id = 71303,
+		description = {
+			700071303
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			1000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			500,
+			0,
+			0
+		}
+	},
+	[71304] = {
+		name = "fc9bfb8289c2c467c1891e9ed3249c48",
+		affix_buff_id = 71304,
+		max_level = 3,
+		extra_description = "AFFIX_71304",
+		id = 71304,
+		description = {
+			700071304
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			350,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			-50,
+			0,
+			0
+		}
+	},
+	[71305] = {
+		name = "72c286d60f0a376e07baf9c9dca8ae74",
+		affix_buff_id = 71305,
+		max_level = 3,
+		extra_description = "AFFIX_71305",
+		id = 71305,
+		description = {
+			700071305
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			15,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			6,
+			0,
+			0
+		}
+	},
+	[71306] = {
+		name = "8756cfa0261da8f367441f7478fddad2",
+		affix_buff_id = 71306,
+		max_level = 3,
+		extra_description = "AFFIX_71306",
+		id = 71306,
+		description = {
+			700071306
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			1200,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			600,
+			0,
+			0
+		}
+	},
+	[71307] = {
+		name = "bf4896dc581aae28128a60deb33e237e",
+		affix_buff_id = 71307,
+		max_level = 3,
+		extra_description = "AFFIX_71307",
+		id = 71307,
+		description = {
+			700071307
+		},
+		buffid = {
+			713071
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71308] = {
+		name = "9fbd071546dea96c77961e7beda2373d",
+		affix_buff_id = 71308,
+		max_level = 3,
+		extra_description = "AFFIX_71308",
+		id = 71308,
+		description = {
+			700071308
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			3000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			1000,
+			0,
+			0
+		}
+	},
+	[71309] = {
+		name = "88db1cc19afc9b6730296635ec5e483b",
+		affix_buff_id = 71309,
+		max_level = 3,
+		extra_description = "AFFIX_71309",
+		id = 71309,
+		description = {
+			700071309
+		},
+		buffid = {},
+		base = {
+			806059,
+			0,
+			0,
+			200,
+			0,
+			300
+		},
+		factor = {
+			0,
+			0,
+			0,
+			50,
+			0,
+			0
+		}
+	},
+	[71310] = {
+		name = "a5d35dc5bfebfeaceb7bbf75eb660a2d",
+		affix_buff_id = 71310,
+		max_level = 3,
+		extra_description = "AFFIX_71310",
+		id = 71310,
+		description = {
+			700071310
+		},
+		buffid = {
+			713101
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71311] = {
+		name = "cdf594c3258bf0e35042f36ad5057786",
+		affix_buff_id = 71311,
+		max_level = 3,
+		extra_description = "AFFIX_71311",
+		id = 71311,
+		description = {
+			700071311
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			1000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			500,
+			0,
+			0
+		}
+	},
+	[71312] = {
+		name = "d2f0fea982232ee3e9be56c1fd95d8be",
+		affix_buff_id = 71312,
+		max_level = 3,
+		extra_description = "AFFIX_71312",
+		id = 71312,
+		description = {
+			700071312
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			6000,
+			5000,
+			0,
+			10
+		},
+		factor = {
+			0,
+			0,
+			0,
+			2500,
+			0,
+			0
+		}
+	},
+	[71321] = {
+		name = "30c5eda1d476905365274cd7c7c1cd38",
+		affix_buff_id = 71321,
+		max_level = 1,
+		extra_description = "AFFIX_71321",
+		id = 71321,
+		description = {
+			700071321
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			1500,
+			100,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71322] = {
+		name = "20d150a0dbaf8b2b47ba81f68a600bd7",
+		affix_buff_id = 71322,
+		max_level = 1,
+		extra_description = "AFFIX_71322",
+		id = 71322,
+		description = {
+			700071322
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			1500,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71323] = {
+		name = "fabd6aefbe219952e0d1480f093c721a",
+		affix_buff_id = 71323,
+		max_level = 1,
+		extra_description = "AFFIX_71323",
+		id = 71323,
+		description = {
+			700071323
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71349] = {
+		name = "de766b0900fec1f013dbd87028a1f42b",
+		affix_buff_id = 71349,
+		max_level = 1,
+		extra_description = "AFFIX_71349",
+		id = 71349,
+		description = {
+			700071349
+		},
+		buffid = {},
+		base = {
+			0,
+			2200,
+			5000,
+			500,
+			600,
+			60
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71350] = {
+		name = "3153e8d9876b502f4e0ab5f95481e635",
+		affix_buff_id = 71350,
+		max_level = 1,
+		extra_description = "AFFIX_71350",
+		id = 71350,
+		description = {
+			700071350
+		},
+		buffid = {},
+		base = {
+			806055,
+			0,
+			1000,
+			3000,
+			10000,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71351] = {
+		name = "e329daf59238153df7280659bee87293",
+		affix_buff_id = 71351,
+		max_level = 3,
+		extra_description = "AFFIX_71351",
+		id = 71351,
+		description = {
+			700071351
+		},
+		buffid = {},
+		base = {
+			806062,
+			1000000,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			300000,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71352] = {
+		name = "187034f497a6eaf9d3ac04ffb2f8b997",
+		affix_buff_id = 71352,
+		max_level = 3,
+		extra_description = "AFFIX_71352",
+		id = 71352,
+		description = {
+			700071352
+		},
+		buffid = {},
+		base = {
+			806063,
+			700000,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			200000,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71353] = {
+		name = "6c3bd8d9736a3190b27dc276146bfc8a",
+		affix_buff_id = 71353,
+		max_level = 3,
+		extra_description = "AFFIX_71353",
+		id = 71353,
+		description = {
+			700071353
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			3,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			1,
+			0,
+			0
+		}
+	},
+	[71354] = {
+		name = "4c2e0d67fdefe9bb893894375118541c",
+		affix_buff_id = 71354,
+		max_level = 3,
+		extra_description = "AFFIX_71354",
+		id = 71354,
+		description = {
+			700071354
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			1000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			400,
+			0,
+			0
+		}
+	},
+	[71355] = {
+		name = "174d11692777ded3762b1433e3277c60",
+		affix_buff_id = 71355,
+		max_level = 3,
+		extra_description = "AFFIX_71355",
+		id = 71355,
+		description = {
+			700071355
+		},
+		buffid = {
+			713551
+		},
+		base = {
+			806067,
+			3000000,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			3000000,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71356] = {
+		name = "581e791a21a05c5ae2532025d7fe6b39",
+		affix_buff_id = 71356,
+		max_level = 3,
+		extra_description = "AFFIX_71356",
+		id = 71356,
+		description = {
+			700071356
+		},
+		buffid = {
+			713561
+		},
+		base = {
+			806068,
+			2000000,
+			0,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			2000000,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71357] = {
+		name = "ab4396c847b63664ae387d37fede852f",
+		affix_buff_id = 71357,
+		max_level = 3,
+		extra_description = "AFFIX_71357",
+		id = 71357,
+		description = {
+			700071357
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			3000,
+			6000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			2000,
+			0,
+			0
+		}
+	},
+	[71358] = {
+		name = "bae053ed5aab7881e1e70582cdbd61b6",
+		affix_buff_id = 71358,
+		max_level = 3,
+		extra_description = "AFFIX_71358",
+		id = 71358,
+		description = {
+			700071358
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			10,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			2,
+			0,
+			0
+		}
+	},
+	[71359] = {
+		name = "010b47a5601d3c2797ad4d1a96ee0356",
+		affix_buff_id = 71359,
+		max_level = 3,
+		extra_description = "AFFIX_71359",
+		id = 71359,
+		description = {
+			700071359
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			6000,
+			200,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			2000,
+			0,
+			0
+		}
+	},
+	[71360] = {
+		name = "c934da4d5b0c4e6c98cfafd0142831de",
+		affix_buff_id = 71360,
+		max_level = 3,
+		extra_description = "AFFIX_71360",
+		id = 71360,
+		description = {
+			700071360
+		},
+		buffid = {
+			713601,
+			713602
+		},
+		base = {
+			0,
+			0,
+			0,
+			5000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			-1000,
+			0,
+			0
+		}
+	},
+	[71361] = {
+		name = "2d78af51988f2f59132f0bc6638d7fbc",
+		affix_buff_id = 71361,
+		max_level = 3,
+		extra_description = "AFFIX_71361",
+		id = 71361,
+		description = {
+			700071361
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			10,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			2,
+			0,
+			0
+		}
+	},
+	[71362] = {
+		name = "9e98c3177629441908c2f26ad1d7492a",
+		affix_buff_id = 71362,
+		max_level = 3,
+		extra_description = "AFFIX_71362",
+		id = 71362,
+		description = {
+			700071362
+		},
+		buffid = {
+			713621
+		},
+		base = {
+			0,
+			0,
+			0,
+			2000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			1000,
+			0,
+			0
+		}
+	},
+	[71371] = {
+		name = "f918016df60028e601b0c58b09bc70aa",
+		affix_buff_id = 71371,
+		max_level = 1,
+		extra_description = "AFFIX_71371",
+		id = 71371,
+		description = {
+			700071371
+		},
+		buffid = {
+			713711
+		},
+		base = {
+			806065,
+			600000,
+			500,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71372] = {
+		name = "12f18c4adbbc3f92e80d55acc41abc6f",
+		affix_buff_id = 71372,
+		max_level = 1,
+		extra_description = "AFFIX_71372",
+		id = 71372,
+		description = {
+			700071372
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71373] = {
+		name = "30f4c7b3f1ef83caad2a233aff723bcd",
+		affix_buff_id = 71373,
+		max_level = 1,
+		extra_description = "AFFIX_71373",
+		id = 71373,
+		description = {
+			700071373
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			250,
+			100,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71399] = {
+		name = "fe5bb5a0356156a6b6854d983b9e2b0a",
+		affix_buff_id = 71399,
+		max_level = 1,
+		extra_description = "AFFIX_71399",
+		id = 71399,
+		description = {
+			700071399
+		},
+		buffid = {},
+		base = {
+			0,
+			12000000,
+			0,
+			500000,
+			250,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71400] = {
+		name = "5e6284dacf009bbe0b4cd4c9e2fb51c6",
+		affix_buff_id = 71400,
+		max_level = 1,
+		extra_description = "AFFIX_71400",
+		id = 71400,
+		description = {
+			700071400
+		},
+		buffid = {},
+		base = {
+			806056,
+			1200000,
+			200,
+			3000,
+			10000,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71412] = {
+		name = "fbb3a9f41628f2ce0dce3619012a4b9c",
+		affix_buff_id = 71412,
+		max_level = 1,
+		extra_description = "AFFIX_71412",
+		id = 71412,
+		description = {
+			700071412
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71413] = {
+		name = "a34d8c472236d2ae9fb94f3eb73f30bd",
+		affix_buff_id = 71413,
+		max_level = 1,
+		extra_description = "AFFIX_71413",
+		id = 71413,
+		description = {
+			700071413
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			10,
+			1000,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71414] = {
+		name = "d876f136b1f0157351d0f778098003c1",
+		affix_buff_id = 71414,
+		max_level = 1,
+		extra_description = "AFFIX_71414",
+		id = 71414,
+		description = {
+			700071414
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			-100,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71415] = {
+		name = "5a33da73906fbef83f0add1b584524eb",
+		affix_buff_id = 71415,
+		max_level = 1,
+		extra_description = "AFFIX_71415",
+		id = 71415,
+		description = {
+			700071415
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			30,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71416] = {
+		name = "29fabdca01d37f37c6684e9f39d0c449",
+		affix_buff_id = 71416,
+		max_level = 1,
+		extra_description = "AFFIX_71416",
+		id = 71416,
+		description = {
+			700071416
+		},
+		buffid = {},
+		base = {
+			806057,
+			3000000,
+			1000,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71423] = {
+		name = "f87f83ba9ef233904ef6a2fe70bf242d",
+		affix_buff_id = 71423,
+		max_level = 1,
+		extra_description = "AFFIX_71423",
+		id = 71423,
+		description = {
+			700071423
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71424] = {
+		name = "4e29e70b5ea02b607cf5539dd2dc7107",
+		affix_buff_id = 71424,
+		max_level = 1,
+		extra_description = "AFFIX_71424",
+		id = 71424,
+		description = {
+			700071424
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71425] = {
+		name = "be324297be48b97aff92d64387cdb7a1",
+		affix_buff_id = 71425,
+		max_level = 1,
+		extra_description = "AFFIX_71425",
+		id = 71425,
+		description = {
+			700071425
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71426] = {
+		name = "e022fa4db07c8d206faeee9414394fcc",
+		affix_buff_id = 71426,
+		max_level = 1,
+		extra_description = "AFFIX_71426",
+		id = 71426,
+		description = {
+			700071426
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71434] = {
+		name = "4a675024e559f4a8027cea172fe5b263",
+		affix_buff_id = 71434,
+		max_level = 1,
+		extra_description = "AFFIX_71434",
+		id = 71434,
+		description = {
+			700071434
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[71435] = {
+		name = "fc29d15c311739f3dc35ba21affab9ca",
+		affix_buff_id = 71435,
+		max_level = 1,
+		extra_description = "AFFIX_71435",
+		id = 71435,
+		description = {
+			700071435
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			1000,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71436] = {
+		name = "4d83a9e213b2d048fc73464ffe89e4a3",
+		affix_buff_id = 71436,
+		max_level = 1,
+		extra_description = "AFFIX_71436",
+		id = 71436,
+		description = {
+			700071436
+		},
+		buffid = {},
+		base = {
+			806064,
+			1000000,
+			1000,
+			0,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71445] = {
+		name = "60f997358887f3ea9c481cf1ec6b511e",
+		affix_buff_id = 71445,
+		max_level = 1,
+		extra_description = "AFFIX_71445",
+		id = 71445,
+		description = {
+			700071445
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			1,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71446] = {
+		name = "396c5390b63c74eefc56c19bbe29af53",
+		affix_buff_id = 71446,
+		max_level = 1,
+		extra_description = "AFFIX_71446",
+		id = 71446,
+		description = {
+			700071446
+		},
+		buffid = {},
+		base = {
+			0,
+			0,
+			0,
+			1,
+			0,
+			0
+		},
+		factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[71456] = {
+		name = "0bd87c987ebf417e5d2a05507bae5f6b",
+		affix_buff_id = 71456,
+		max_level = 1,
+		extra_description = "AFFIX_71456",
+		id = 71456,
+		description = {
+			700071456
+		},
+		buffid = {
+			714561
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
 	all = {
 		101,
 		102,
@@ -21777,11 +27589,43 @@
 		9206,
 		9207,
 		9208,
+		9215,
+		9339,
 		9209,
 		9210,
 		9211,
 		9212,
 		9213,
+		9319,
+		9320,
+		9321,
+		9322,
+		9323,
+		9324,
+		9325,
+		9326,
+		9327,
+		9328,
+		9329,
+		9330,
+		9331,
+		9332,
+		9333,
+		9334,
+		9335,
+		9336,
+		9337,
+		9338,
+		9340,
+		9341,
+		9342,
+		9343,
+		9344,
+		9345,
+		9346,
+		9347,
+		9348,
+		9349,
 		9481,
 		9482,
 		9483,
@@ -21910,6 +27754,12 @@
 		9640,
 		9641,
 		9642,
+		9681,
+		9682,
+		9683,
+		9684,
+		9685,
+		9686,
 		9701,
 		9702,
 		9703,
@@ -21987,6 +27837,26 @@
 		9824,
 		9825,
 		9826,
+		9831,
+		9832,
+		9833,
+		9834,
+		9835,
+		9836,
+		9837,
+		9838,
+		9839,
+		9840,
+		9841,
+		9842,
+		9843,
+		9844,
+		9845,
+		9846,
+		9851,
+		9852,
+		9853,
+		9854,
 		9901,
 		9902,
 		9903,
@@ -22035,6 +27905,54 @@
 		9946,
 		9947,
 		9948,
+		80000,
+		80010,
+		80020,
+		80030,
+		80040,
+		80050,
+		80060,
+		80070,
+		80080,
+		80090,
+		80100,
+		80110,
+		80120,
+		80130,
+		80140,
+		80150,
+		80160,
+		80170,
+		80180,
+		80190,
+		80200,
+		80210,
+		80220,
+		80230,
+		80240,
+		80250,
+		80260,
+		80270,
+		80280,
+		80290,
+		80300,
+		80310,
+		80320,
+		80330,
+		80340,
+		80350,
+		80360,
+		80370,
+		80380,
+		80390,
+		80400,
+		80410,
+		80420,
+		80430,
+		80440,
+		80450,
+		80460,
+		80470,
 		70001,
 		70002,
 		70003,
@@ -22154,6 +28072,21 @@
 		70203,
 		70204,
 		70205,
+		70206,
+		70207,
+		70208,
+		70209,
+		70210,
+		70211,
+		70212,
+		70213,
+		70214,
+		70215,
+		70216,
+		70217,
+		70218,
+		70219,
+		70220,
 		70501,
 		70502,
 		70503,
@@ -22276,6 +28209,149 @@
 		70864,
 		70865,
 		70866,
-		70867
+		70867,
+		71001,
+		71002,
+		71003,
+		71004,
+		71005,
+		71006,
+		71007,
+		71008,
+		71011,
+		71012,
+		71013,
+		71014,
+		71015,
+		71016,
+		71017,
+		71018,
+		71019,
+		71020,
+		71021,
+		71022,
+		71023,
+		71024,
+		71025,
+		71026,
+		71027,
+		71030,
+		71101,
+		71102,
+		71103,
+		71104,
+		71105,
+		71106,
+		71107,
+		71108,
+		71109,
+		71110,
+		71111,
+		71112,
+		71121,
+		71122,
+		71123,
+		71149,
+		71150,
+		71151,
+		71152,
+		71153,
+		71154,
+		71155,
+		71156,
+		71157,
+		71158,
+		71159,
+		71160,
+		71161,
+		71162,
+		71171,
+		71172,
+		71173,
+		71199,
+		71200,
+		71201,
+		71202,
+		71203,
+		71204,
+		71205,
+		71206,
+		71207,
+		71208,
+		71209,
+		71210,
+		71211,
+		71212,
+		71221,
+		71222,
+		71223,
+		71249,
+		71250,
+		71251,
+		71252,
+		71253,
+		71254,
+		71255,
+		71256,
+		71257,
+		71258,
+		71259,
+		71260,
+		71261,
+		71262,
+		71271,
+		71272,
+		71273,
+		71299,
+		71300,
+		71301,
+		71302,
+		71303,
+		71304,
+		71305,
+		71306,
+		71307,
+		71308,
+		71309,
+		71310,
+		71311,
+		71312,
+		71321,
+		71322,
+		71323,
+		71349,
+		71350,
+		71351,
+		71352,
+		71353,
+		71354,
+		71355,
+		71356,
+		71357,
+		71358,
+		71359,
+		71360,
+		71361,
+		71362,
+		71371,
+		71372,
+		71373,
+		71399,
+		71400,
+		71412,
+		71413,
+		71414,
+		71415,
+		71416,
+		71423,
+		71424,
+		71425,
+		71426,
+		71434,
+		71435,
+		71436,
+		71445,
+		71446,
+		71456
 	}
 }

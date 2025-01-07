@@ -64,7 +64,7 @@ function var_0_0.InitUI(arg_4_0)
 
 	arg_4_0.controller:SetSelectedState("PassportBuyUI")
 
-	arg_4_0.grey = arg_4_0.image68_.material
+	arg_4_0.grey = Object.Instantiate(Asset.Load("UI/Materials")).transform:Find("grey"):GetComponent("SpriteRenderer").material
 end
 
 function var_0_0.AddUIListener(arg_7_0)
@@ -92,6 +92,12 @@ function var_0_0.AddUIListener(arg_7_0)
 			return
 		end
 
+		if ShopTools.IsPC() and not SDKTools.GetIsOverSea() then
+			ShopTools.OpenWebRecharge()
+
+			return
+		end
+
 		PayAction.RequestGSPay(201, 1)
 	end)
 	arg_7_0:AddBtnListener(arg_7_0.expensiveBtn_, nil, function()
@@ -111,6 +117,12 @@ function var_0_0.AddUIListener(arg_7_0)
 
 		if PassportData:GetPayLevel() == 202 then
 			ShowTips("BATTLEPASS_HAS_BUYED")
+
+			return
+		end
+
+		if ShopTools.IsPC() and not SDKTools.GetIsOverSea() then
+			ShopTools.OpenWebRecharge()
 
 			return
 		end

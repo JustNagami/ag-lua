@@ -5,10 +5,16 @@ function var_0_0.UIName(arg_1_0)
 end
 
 function var_0_0.UIParent(arg_2_0)
-	return manager.ui.uiMessage.transform
+	return manager.ui.uiPop.transform
 end
 
 function var_0_0.Dispose(arg_3_0)
+	for iter_3_0, iter_3_1 in ipairs(arg_3_0.infoItems_) do
+		iter_3_1:Dispose()
+	end
+
+	arg_3_0.infoItems_ = nil
+
 	var_0_0.super.Dispose(arg_3_0)
 end
 

@@ -15,7 +15,6 @@ function var_0_0.Ctor(arg_1_0, arg_1_1)
 	arg_1_0:AddListeners()
 
 	arg_1_0.controller_ = arg_1_0.allBtnController_:GetController("all")
-	arg_1_0.greyController = arg_1_0.greyController_:GetController("grey")
 	arg_1_0.typeController_ = ControllerUtil.GetController(arg_1_0.transform_, "category")
 end
 
@@ -53,7 +52,6 @@ function var_0_0.SetData(arg_5_0, arg_5_1)
 
 	if var_5_1.rewardState == 0 then
 		arg_5_0.controller_:SetSelectedState("go")
-		arg_5_0.greyController:SetSelectedState("false")
 
 		arg_5_0.progressText_.text = string.format("%s/%s", var_5_1.process, var_5_0.need)
 		arg_5_0.progressBar_.value = var_5_1.process / var_5_0.need
@@ -81,7 +79,6 @@ function var_0_0.SetData(arg_5_0, arg_5_1)
 		end
 	elseif var_5_1.rewardState == 1 then
 		arg_5_0.controller_:SetSelectedState("receive")
-		arg_5_0.greyController:SetSelectedState("false")
 
 		arg_5_0.progressText_.text = string.format("%s/%s", var_5_0.need, var_5_0.need)
 		arg_5_0.progressBar_.value = 1
@@ -109,7 +106,6 @@ function var_0_0.SetData(arg_5_0, arg_5_1)
 		end
 	else
 		arg_5_0.controller_:SetSelectedState("complete")
-		arg_5_0.greyController:SetSelectedState("true")
 
 		arg_5_0.progressText_.text = string.format("%s/%s", var_5_0.need, var_5_0.need)
 		arg_5_0.progressBar_.value = 1

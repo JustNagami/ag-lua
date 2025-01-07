@@ -145,73 +145,65 @@ function var_0_0.RefreshTimeCnt(arg_17_0)
 	end
 end
 
-function var_0_0.StopTimer(arg_20_0)
-	if arg_20_0.timer_ then
-		arg_20_0.timer_:Stop()
-
-		arg_20_0.timer_ = nil
-	end
+function var_0_0.GetActivityStartTime(arg_20_0)
+	return RaceTrialData:GetRaceTrialStartTime(arg_20_0.activityID_)
 end
 
-function var_0_0.GetActivityStartTime(arg_21_0)
-	return RaceTrialData:GetRaceTrialStartTime(arg_21_0.activityID_)
+function var_0_0.GetActivityEndTime(arg_21_0)
+	return RaceTrialData:GetRaceTrialEndTime(arg_21_0.activityID_)
 end
 
-function var_0_0.GetActivityEndTime(arg_22_0)
-	return RaceTrialData:GetRaceTrialEndTime(arg_22_0.activityID_)
-end
+function var_0_0.GetTimeText(arg_22_0, arg_22_1)
+	local var_22_0 = ""
 
-function var_0_0.GetTimeText(arg_23_0, arg_23_1)
-	local var_23_0 = ""
-
-	if arg_23_1 / 86400 >= 1 then
-		var_23_0 = math.ceil(arg_23_1 / 86400) .. GetTips("DAY")
-	elseif arg_23_1 / 3600 >= 1 then
-		var_23_0 = math.ceil(arg_23_1 / 3600) .. GetTips("HOUR")
-	elseif arg_23_1 / 60 >= 1 then
-		var_23_0 = math.ceil(arg_23_1 / 60) .. GetTips("MINUTE")
+	if arg_22_1 / 86400 >= 1 then
+		var_22_0 = math.ceil(arg_22_1 / 86400) .. GetTips("DAY")
+	elseif arg_22_1 / 3600 >= 1 then
+		var_22_0 = math.ceil(arg_22_1 / 3600) .. GetTips("HOUR")
+	elseif arg_22_1 / 60 >= 1 then
+		var_22_0 = math.ceil(arg_22_1 / 60) .. GetTips("MINUTE")
 	else
-		var_23_0 = 1 .. GetTips("MINUTE")
+		var_22_0 = 1 .. GetTips("MINUTE")
 	end
 
-	return var_23_0
+	return var_22_0
 end
 
-function var_0_0.RefreshList(arg_24_0)
-	arg_24_0.battleList_ = ActivityData:GetActivityData(arg_24_0.activityID_).subActivityIdList
+function var_0_0.RefreshList(arg_23_0)
+	arg_23_0.battleList_ = ActivityData:GetActivityData(arg_23_0.activityID_).subActivityIdList
 
-	local var_24_0 = getData(string.format("RaceTrial_%d", arg_24_0.activityID_), "scrollPosX")
-	local var_24_1 = Vector2(var_24_0, 1)
+	local var_23_0 = getData(string.format("RaceTrial_%d", arg_23_0.activityID_), "scrollPosX")
+	local var_23_1 = Vector2(var_23_0, 1)
 
-	arg_24_0.scrollHelper_:StartScrollByPosition(#arg_24_0.battleList_, var_24_1)
+	arg_23_0.scrollHelper_:StartScrollByPosition(#arg_23_0.battleList_, var_23_1)
 end
 
-function var_0_0.RefreshScoreItem(arg_25_0)
-	arg_25_0.rewardCfg_ = ActivityPointRewardCfg[arg_25_0.curLv_]
+function var_0_0.RefreshScoreItem(arg_24_0)
+	arg_24_0.rewardCfg_ = ActivityPointRewardCfg[arg_24_0.curLv_]
 
-	local var_25_0 = RaceTrialData:GetTotalScore(arg_25_0.activityID_)
+	local var_24_0 = RaceTrialData:GetTotalScore(arg_24_0.activityID_)
 
-	arg_25_0.scoreNeedText_.text = GetTips("ACCUMULATED_POINTS_REACHED") .. arg_25_0.rewardCfg_.need
-	arg_25_0.scoreText_.text = var_25_0 .. "/" .. arg_25_0.rewardCfg_.need
-	arg_25_0.progressBar_.fillAmount = var_25_0 / arg_25_0.rewardCfg_.need
-	arg_25_0.reward_ = arg_25_0.rewardCfg_.reward_item_list[1]
+	arg_24_0.scoreNeedText_.text = GetTips("ACCUMULATED_POINTS_REACHED") .. arg_24_0.rewardCfg_.need
+	arg_24_0.scoreText_.text = var_24_0 .. "/" .. arg_24_0.rewardCfg_.need
+	arg_24_0.progressBar_.fillAmount = var_24_0 / arg_24_0.rewardCfg_.need
+	arg_24_0.reward_ = arg_24_0.rewardCfg_.reward_item_list[1]
 
-	arg_25_0.scoreRewardItem_:RefreshData(formatReward(arg_25_0.rewardCfg_.reward_item_list[1]))
+	arg_24_0.scoreRewardItem_:RefreshData(formatReward(arg_24_0.rewardCfg_.reward_item_list[1]))
 
-	if arg_25_0.data_.receive_flag then
-		arg_25_0.receiveCon_:SetSelectedState("received")
-	elseif var_25_0 >= arg_25_0.rewardCfg_.need then
-		arg_25_0.receiveCon_:SetSelectedState("complete")
+	if arg_24_0.data_.receive_flag then
+		arg_24_0.receiveCon_:SetSelectedState("received")
+	elseif var_24_0 >= arg_24_0.rewardCfg_.need then
+		arg_24_0.receiveCon_:SetSelectedState("complete")
 	else
-		arg_25_0.receiveCon_:SetSelectedState("incomplete")
+		arg_24_0.receiveCon_:SetSelectedState("incomplete")
 	end
 end
 
-function var_0_0.UnBindRedPointUI(arg_26_0)
-	manager.redPoint:unbindUIandKey(arg_26_0.firstRewardBtn_.transform, string.format("%s_%s_firstReward", RedPointConst.ACTIVITY_RACE_TRIAL, arg_26_0.params_.activityID))
+function var_0_0.UnBindRedPointUI(arg_25_0)
+	manager.redPoint:unbindUIandKey(arg_25_0.firstRewardBtn_.transform, string.format("%s_%s_firstReward", RedPointConst.ACTIVITY_RACE_TRIAL, arg_25_0.params_.activityID))
 end
 
-function var_0_0.OnTop(arg_27_0)
+function var_0_0.OnTop(arg_26_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR,
 		HOME_BAR,
@@ -220,37 +212,37 @@ function var_0_0.OnTop(arg_27_0)
 	manager.windowBar:SetGameHelpKey("ACTIVITY_OSIRIS_TACE_TRIAL_DESCRIPE")
 end
 
-function var_0_0.OnPointReceive(arg_28_0)
-	arg_28_0:GetCurLv()
-	arg_28_0:RefreshScoreItem()
+function var_0_0.OnPointReceive(arg_27_0)
+	arg_27_0:GetCurLv()
+	arg_27_0:RefreshScoreItem()
 end
 
-function var_0_0.OnExit(arg_29_0)
+function var_0_0.OnExit(arg_28_0)
 	manager.windowBar:HideBar()
-	arg_29_0:UnBindRedPointUI()
+	arg_28_0:UnBindRedPointUI()
 
-	for iter_29_0, iter_29_1 in pairs(arg_29_0.scrollHelper_:GetItemList()) do
-		iter_29_1:OnExit()
+	for iter_28_0, iter_28_1 in pairs(arg_28_0.scrollHelper_:GetItemList()) do
+		iter_28_1:OnExit()
 	end
 
-	arg_29_0.scoreRewardItem_:OnExit()
+	arg_28_0.scoreRewardItem_:OnExit()
 
-	if arg_29_0.timer_ then
-		arg_29_0.timer_:Stop()
+	if arg_28_0.timer_ then
+		arg_28_0.timer_:Stop()
 
-		arg_29_0.timer_ = nil
+		arg_28_0.timer_ = nil
 	end
 
-	local var_29_0 = arg_29_0.scrollHelper_:GetScrolledPosition()
+	local var_28_0 = arg_28_0.scrollHelper_:GetScrolledPosition()
 
-	saveData(string.format("RaceTrial_%d", arg_29_0.activityID_), "scrollPosX", var_29_0.x)
+	saveData(string.format("RaceTrial_%d", arg_28_0.activityID_), "scrollPosX", var_28_0.x)
 end
 
-function var_0_0.Dispose(arg_30_0)
-	arg_30_0:RemoveAllListeners()
-	arg_30_0.scrollHelper_:Dispose()
-	arg_30_0.scoreRewardItem_:Dispose()
-	var_0_0.super.Dispose(arg_30_0)
+function var_0_0.Dispose(arg_29_0)
+	arg_29_0:RemoveAllListeners()
+	arg_29_0.scrollHelper_:Dispose()
+	arg_29_0.scoreRewardItem_:Dispose()
+	var_0_0.super.Dispose(arg_29_0)
 end
 
 return var_0_0

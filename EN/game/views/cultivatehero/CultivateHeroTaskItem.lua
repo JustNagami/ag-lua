@@ -86,7 +86,7 @@ function var_0_0.RefreshItem(arg_11_0)
 	arg_11_0.rewardCfg_ = CultivateHeroTaskCfg[arg_11_0.taskID_].reward[1]
 
 	if arg_11_0.commonItem_ == nil then
-		arg_11_0.commonItem_ = CommonItemView.New(arg_11_0.rewardItemGo_)
+		arg_11_0.commonItem_ = CommonItemView.New(arg_11_0.rewardItemGo_, true)
 		arg_11_0.itemData_ = clone(ItemTemplateData)
 
 		function arg_11_0.itemData_.clickFun(arg_12_0)
@@ -97,6 +97,12 @@ function var_0_0.RefreshItem(arg_11_0)
 	arg_11_0.itemData_.id = arg_11_0.rewardCfg_[1]
 	arg_11_0.itemData_.number = arg_11_0.rewardCfg_[2]
 
+	if arg_11_0.itemGray_ then
+		arg_11_0.itemData_.grayFlag = true
+	else
+		arg_11_0.itemData_.grayFlag = false
+	end
+
 	arg_11_0.commonItem_:SetData(arg_11_0.itemData_)
 end
 
@@ -106,10 +112,16 @@ function var_0_0.RefreshState(arg_13_0)
 	local var_13_2 = var_13_0[arg_13_0.taskID_].isReceived
 
 	if not var_13_1 then
+		arg_13_0.itemGray_ = false
+
 		arg_13_0.rewardState_:SetSelectedState("uncomplete")
 	elseif not var_13_2 then
+		arg_13_0.itemGray_ = false
+
 		arg_13_0.rewardState_:SetSelectedState("unreceive")
 	else
+		arg_13_0.itemGray_ = true
+
 		arg_13_0.rewardState_:SetSelectedState("received")
 	end
 end

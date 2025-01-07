@@ -4,7 +4,7 @@
 		arg_1_1.frameCnt_ = 0
 		arg_1_1.state_ = "playing"
 		arg_1_1.curTalkId_ = 61101001
-		arg_1_1.duration_ = 5.333333333332
+		arg_1_1.duration_ = 5.33
 
 		SetActive(arg_1_1.tipsGo_, false)
 

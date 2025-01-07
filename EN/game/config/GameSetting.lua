@@ -404,6 +404,8 @@
 		value = {
 			"Widget/System/Hero/HeroDescription_01",
 			"Widget/System/Hero/HeroDescription_02",
+			"Widget/System/Hero_skill/HeroSkillDescription_01",
+			"Widget/System/Hero_skill/HeroSkillDescription_02",
 			"Widget/System/Hero/HeroDescription_03",
 			"Widget/System/Hero/HeroDescription_04",
 			"Widget/System/Hero/HeroDescription_05",
@@ -457,6 +459,13 @@
 		value2 = "",
 		value = {
 			2004
+		}
+	},
+	equip_enchant_directional_cost = {
+		id = "equip_enchant_directional_cost",
+		value2 = "",
+		value = {
+			2005
 		}
 	},
 	equip_reset_cost = {
@@ -1432,6 +1441,22 @@
 			5
 		}
 	},
+	newbie_first_monthly_card_reward_2_0 = {
+		id = "newbie_first_monthly_card_reward_2_0",
+		value2 = "",
+		value = {
+			30022,
+			1
+		}
+	},
+	newbie_first_monthly_card_cumulative_2_0 = {
+		id = "newbie_first_monthly_card_cumulative_2_0",
+		value2 = "",
+		value = {
+			30023,
+			1
+		}
+	},
 	advanced_task_open = {
 		id = "advanced_task_open",
 		value2 = "",
@@ -1509,6 +1534,19 @@
 		value = {
 			600
 		}
+	},
+	new_player_skip_guide_weak = {
+		id = "new_player_skip_guide_weak",
+		value2 = "",
+		value = {
+			1401,
+			1402
+		}
+	},
+	new_player_skip_guide_base = {
+		id = "new_player_skip_guide_base",
+		value2 = "",
+		value = {}
 	},
 	levelup_reward = {
 		id = "levelup_reward",
@@ -2281,6 +2319,246 @@
 			100
 		}
 	},
+	dorm_liked_room_recommend_limit = {
+		id = "dorm_liked_room_recommend_limit",
+		value2 = "",
+		value = {
+			20
+		}
+	},
+	dorm_recommend_furniture_num_classify_public = {
+		id = "dorm_recommend_furniture_num_classify_public",
+		value2 = "",
+		value = {
+			10,
+			35,
+			55
+		}
+	},
+	dorm_recommend_furniture_num_classify_private = {
+		id = "dorm_recommend_furniture_num_classify_private",
+		value2 = "",
+		value = {
+			5,
+			15,
+			30
+		}
+	},
+	dorm_recommend_num = {
+		id = "dorm_recommend_num",
+		value2 = "",
+		value = {
+			5,
+			5
+		}
+	},
+	dorm_recommend_gear_need = {
+		id = "dorm_recommend_gear_need",
+		value2 = "",
+		value = {
+			{
+				3,
+				2
+			},
+			{
+				2,
+				2
+			}
+		}
+	},
+	dorm_recommend_gear = {
+		id = "dorm_recommend_gear",
+		value2 = "",
+		value = {
+			10,
+			50,
+			80
+		}
+	},
+	dorm_recommend_furniture_theme_classify_num_need_public = {
+		id = "dorm_recommend_furniture_theme_classify_num_need_public",
+		value2 = "",
+		value = {
+			6
+		}
+	},
+	dorm_recommend_furniture_theme_classify_num_need_private = {
+		id = "dorm_recommend_furniture_theme_classify_num_need_private",
+		value2 = "",
+		value = {
+			3
+		}
+	},
+	dorm_recommend_furniture_theme_rand_num = {
+		id = "dorm_recommend_furniture_theme_rand_num",
+		value2 = "",
+		value = {
+			5,
+			3
+		}
+	},
+	dorm_recent_furniture_theme_weight = {
+		id = "dorm_recent_furniture_theme_weight",
+		value2 = "",
+		value = {
+			2,
+			10
+		}
+	},
+	dorm_temp_recommend_daily_decrease = {
+		id = "dorm_temp_recommend_daily_decrease",
+		value2 = "",
+		value = {
+			5
+		}
+	},
+	dorm_temp_recommend_range_public = {
+		id = "dorm_temp_recommend_range_public",
+		value2 = "",
+		value = {
+			{
+				10,
+				15
+			},
+			{
+				20,
+				20
+			},
+			{
+				30,
+				35
+			},
+			{
+				50,
+				50
+			},
+			{
+				60,
+				80
+			}
+		}
+	},
+	dorm_temp_recommend_range_private = {
+		id = "dorm_temp_recommend_range_private",
+		value2 = "",
+		value = {
+			{
+				5,
+				15
+			},
+			{
+				10,
+				20
+			},
+			{
+				15,
+				35
+			},
+			{
+				25,
+				50
+			},
+			{
+				35,
+				80
+			}
+		}
+	},
+	dorm_recommend_value_range = {
+		id = "dorm_recommend_value_range",
+		value2 = "",
+		value = {
+			{
+				10,
+				30
+			},
+			{
+				20,
+				30
+			},
+			{
+				50,
+				50
+			},
+			{
+				100,
+				50
+			},
+			{
+				200,
+				40
+			},
+			{
+				300,
+				40
+			},
+			{
+				500,
+				30
+			},
+			{
+				800,
+				30
+			},
+			{
+				1000,
+				30
+			}
+		}
+	},
+	dorm_be_visited_show_limit = {
+		id = "dorm_be_visited_show_limit",
+		value2 = "",
+		value = {
+			1
+		}
+	},
+	dorm_visit_gift_week_num = {
+		id = "dorm_visit_gift_week_num",
+		value2 = "",
+		value = {
+			5
+		}
+	},
+	dorm_visit_gift_rand = {
+		id = "dorm_visit_gift_rand",
+		value2 = "",
+		value = {
+			{
+				{
+					39,
+					400
+				}
+			},
+			{
+				{
+					39,
+					500
+				}
+			},
+			{
+				{
+					39,
+					600
+				}
+			}
+		}
+	},
+	dorm_entry_default_key = {
+		id = "dorm_entry_default_key",
+		value2 = "",
+		value = {
+			"DORM_INFO_RANDOM_TIPS_1",
+			"DORM_INFO_RANDOM_TIPS_2"
+		}
+	},
+	activity_idol_competition_assignment_rand_num = {
+		id = "activity_idol_competition_assignment_rand_num",
+		value2 = "",
+		value = {
+			2
+		}
+	},
 	club_special_welfare_cost = {
 		id = "club_special_welfare_cost",
 		value2 = "",
@@ -2441,7 +2719,23 @@
 		id = "sticker_display_num_max",
 		value2 = "",
 		value = {
-			5
+			15
+		}
+	},
+	sticker_scaling = {
+		id = "sticker_scaling",
+		value2 = "",
+		value = {
+			0.5,
+			2
+		}
+	},
+	custom_sticker_info_describe = {
+		id = "custom_sticker_info_describe",
+		value2 = "",
+		value = {
+			"Widget/System/UserInfor/sticker_new/StickerDescription_01",
+			"Widget/System/UserInfor/sticker_new/StickerDescription_02"
 		}
 	},
 	sticker_template_num_max = {
@@ -2879,15 +3173,15 @@
 		value2 = "",
 		value = {
 			{
-				2,
-				271201,
-				6010011,
-				"but_Internal_crow_3_2"
+				1,
+				291201,
+				10120,
+				"but_Internal_PastLives_2"
 			},
 			{
 				3,
-				270030,
-				104
+				290037,
+				132
 			},
 			{
 				4,
@@ -3034,7 +3328,56 @@
 			5170219,
 			5170221,
 			5170222,
-			5180111
+			5180111,
+			5190201,
+			5190202,
+			5190203,
+			5190204,
+			5190205,
+			5190206,
+			5190207,
+			5190208,
+			5190209,
+			5190211,
+			5190212,
+			5190213,
+			5190214,
+			5190215,
+			5190216,
+			5190217,
+			5190218,
+			5190219,
+			5190221,
+			5190901,
+			5190801,
+			5190802,
+			5190803,
+			5190804,
+			5190805,
+			5190806,
+			5190807,
+			5190808,
+			5190809,
+			5190811,
+			5190812,
+			5190813,
+			5190814,
+			5190815,
+			5190816,
+			5190817,
+			5190818,
+			5190819,
+			5190821,
+			5190902,
+			1032012,
+			5200701,
+			5200702,
+			5200703,
+			5200704,
+			5200705,
+			5200706,
+			5200707,
+			5200708
 		}
 	},
 	personal_signature_max = {
@@ -4370,35 +4713,12 @@
 			"ACTIVITY_SKADI_SEA_BE_OUT_END_TIP"
 		}
 	},
-	activity_water_upper_limit = {
-		id = "activity_water_upper_limit",
-		value2 = "",
-		value = {
-			4500
-		}
-	},
 	activity_water_online_open = {
 		id = "activity_water_online_open",
 		value2 = "",
 		value = {
-			17,
+			18,
 			22
-		}
-	},
-	activity_water_drop = {
-		id = "activity_water_drop",
-		value2 = "",
-		value = {
-			11000002,
-			11000001
-		}
-	},
-	activity_water_vote_time = {
-		id = "activity_water_vote_time",
-		value2 = "",
-		value = {
-			10,
-			23
 		}
 	},
 	activity_supplementary_sign = {
@@ -4825,7 +5145,7 @@
 		id = "admin_mail_title_max_len",
 		value2 = "",
 		value = {
-			24
+			80
 		}
 	},
 	puzzle_III_describe = {
@@ -5173,7 +5493,7 @@
 		id = "activity_pt_roulette_task_times",
 		value2 = "",
 		value = {
-			3
+			2
 		}
 	},
 	activity_pt_roulette_task_reward_2_7 = {
@@ -5661,6 +5981,22 @@
 			{
 				0,
 				6
+			},
+			{
+				3,
+				7
+			},
+			{
+				4,
+				8
+			},
+			{
+				5,
+				9
+			},
+			{
+				6,
+				10
 			}
 		}
 	},
@@ -5762,6 +6098,112 @@
 		value2 = "",
 		value = {
 			5
+		}
+	},
+	idol_dance_edit_max_num = {
+		id = "idol_dance_edit_max_num",
+		value2 = "",
+		value = {
+			3
+		}
+	},
+	idol_dance_edit_share_max_num = {
+		id = "idol_dance_edit_share_max_num",
+		value2 = "",
+		value = {
+			3
+		}
+	},
+	idol_dance_edit_like_recommend_limit = {
+		id = "idol_dance_edit_like_recommend_limit",
+		value2 = "",
+		value = {
+			10
+		}
+	},
+	idol_dance_edit_recommend_refresh_cd = {
+		id = "idol_dance_edit_recommend_refresh_cd",
+		value2 = "",
+		value = {
+			10
+		}
+	},
+	idol_dance_edit_recommend_action_num_need = {
+		id = "idol_dance_edit_recommend_action_num_need",
+		value2 = "",
+		value = {
+			8
+		}
+	},
+	idol_dance_edit_recommend_gear = {
+		id = "idol_dance_edit_recommend_gear",
+		value2 = "",
+		value = {
+			10,
+			20
+		}
+	},
+	idol_dance_edit_recommend_gear_need = {
+		id = "idol_dance_edit_recommend_gear_need",
+		value2 = "",
+		value = {
+			{
+				1,
+				5
+			},
+			{
+				2,
+				5
+			}
+		}
+	},
+	idol_dance_edit_temp_recommend_daily_decrease = {
+		id = "idol_dance_edit_temp_recommend_daily_decrease",
+		value2 = "",
+		value = {
+			10
+		}
+	},
+	idol_dance_edit_temp_recommend_range = {
+		id = "idol_dance_edit_temp_recommend_range",
+		value2 = "",
+		value = {
+			{
+				5,
+				10
+			},
+			{
+				10,
+				20
+			}
+		}
+	},
+	idol_dance_edit_like_recommend_value_range = {
+		id = "idol_dance_edit_like_recommend_value_range",
+		value2 = "",
+		value = {
+			{
+				5,
+				10
+			},
+			{
+				10,
+				20
+			}
+		}
+	},
+	idol_dance_edit_view_recommend_value_range = {
+		id = "idol_dance_edit_view_recommend_value_range",
+		value2 = "",
+		value = {
+			{
+				5,
+				10
+			},
+			{
+				10,
+				20
+			}
 		}
 	},
 	activity_supplementary_sign_change_time = {
@@ -6183,6 +6625,28 @@
 			}
 		}
 	},
+	core_verification_boss_basescore = {
+		id = "core_verification_boss_basescore",
+		value2 = "",
+		value = {
+			2500000,
+			1500000
+		}
+	},
+	core_verification_boss_timescore = {
+		id = "core_verification_boss_timescore",
+		value2 = "",
+		value = {
+			{
+				15000,
+				2000000
+			},
+			{
+				15000,
+				2000000
+			}
+		}
+	},
 	skin_return = {
 		id = "skin_return",
 		value2 = "",
@@ -6438,6 +6902,20 @@
 					40302,
 					600
 				}
+			},
+			{
+				9,
+				{
+					40304,
+					600
+				}
+			},
+			{
+				10,
+				{
+					40306,
+					600
+				}
 			}
 		}
 	},
@@ -6498,6 +6976,20 @@
 				8,
 				{
 					40302,
+					200
+				}
+			},
+			{
+				9,
+				{
+					40304,
+					200
+				}
+			},
+			{
+				10,
+				{
+					40306,
 					200
 				}
 			}
@@ -6641,6 +7133,547 @@
 					3,
 					5
 				}
+			}
+		}
+	},
+	activity_summer_swimsuit_preheat_info_describe = {
+		id = "activity_summer_swimsuit_preheat_info_describe",
+		value2 = "",
+		value = {
+			"Widget/Version/SummerUI_3_3/SummerUI_3_3_PreheatUI/SummerUI_3_3_PreheatDescription_01"
+		}
+	},
+	activity_emergency_limit = {
+		id = "activity_emergency_limit",
+		value2 = "",
+		value = {
+			1
+		}
+	},
+	summer_chess_board_collect_cnt = {
+		id = "summer_chess_board_collect_cnt",
+		value2 = "",
+		value = {
+			43
+		}
+	},
+	summer_note_video = {
+		id = "summer_note_video",
+		value2 = "",
+		value = {
+			222005,
+			1041412,
+			"SofdecAsset/story/story_1041412.usm"
+		}
+	},
+	activity_bubble_splash_point = {
+		id = "activity_bubble_splash_point",
+		value2 = "",
+		value = {
+			200
+		}
+	},
+	activity_bubble_combo_point = {
+		id = "activity_bubble_combo_point",
+		value2 = "",
+		value = {
+			50
+		}
+	},
+	activity_bubble_left_point = {
+		id = "activity_bubble_left_point",
+		value2 = "",
+		value = {
+			1000
+		}
+	},
+	blister_socre_level = {
+		id = "blister_socre_level",
+		value2 = "",
+		value = {
+			500,
+			800
+		}
+	},
+	blister_game_describe1 = {
+		id = "blister_game_describe1",
+		value2 = "",
+		value = {
+			"Widget/System/Summer2024/Summer2024_BlisterGame/BlisterGameUI_Description_01",
+			"Widget/System/Summer2024/Summer2024_BlisterGame/BlisterGameUI_Description_02"
+		}
+	},
+	blister_game_describe2 = {
+		id = "blister_game_describe2",
+		value2 = "",
+		value = {
+			"Widget/System/Summer2024/Summer2024_BlisterGame/BlisterGameUI_Description_03"
+		}
+	},
+	skin_tryout_exchange = {
+		id = "skin_tryout_exchange",
+		value2 = "",
+		value = {
+			{
+				1,
+				{
+					{
+						2,
+						5000
+					}
+				}
+			},
+			{
+				2,
+				{
+					{
+						2,
+						10000
+					}
+				}
+			}
+		}
+	},
+	activity_rhythm_game_story = {
+		id = "activity_rhythm_game_story",
+		value2 = "",
+		value = {
+			{
+				1150103,
+				911001011
+			}
+		}
+	},
+	reward_pop_view_time = {
+		id = "reward_pop_view_time",
+		value2 = "",
+		value = {
+			0.3
+		}
+	},
+	normal_pop_view_time = {
+		id = "normal_pop_view_time",
+		value2 = "",
+		value = {
+			0.3
+		}
+	},
+	swim_skin_capture_describe1 = {
+		id = "swim_skin_capture_describe1",
+		value2 = "",
+		value = {
+			"Widget/Version/SummerUI_3_4/SummerUI_3_4_CaptureUI/CaptureDescription_01",
+			"Widget/Version/SummerUI_3_4/SummerUI_3_4_CaptureUI/CaptureDescription_02",
+			"Widget/Version/SummerUI_3_4/SummerUI_3_4_CaptureUI/CaptureDescription_03"
+		}
+	},
+	swim_skin_capture_describe2 = {
+		id = "swim_skin_capture_describe2",
+		value2 = "",
+		value = {
+			"Widget/Version/SummerUI_3_4/SummerUI_3_4_CaptureUI/CaptureDescription_04",
+			"Widget/Version/SummerUI_3_4/SummerUI_3_4_CaptureUI/CaptureDescription_05",
+			"Widget/Version/SummerUI_3_4/SummerUI_3_4_CaptureUI/CaptureDescription_06",
+			"Widget/Version/SummerUI_3_4/SummerUI_3_4_CaptureUI/CaptureDescription_07"
+		}
+	},
+	activity_sign_bosaidong_video = {
+		id = "activity_sign_bosaidong_video",
+		value2 = "",
+		value = {
+			"SofdecAsset/activity/3_4_activity_dolphin.usm"
+		}
+	},
+	activity_sign_bosaidong_button_open_time = {
+		id = "activity_sign_bosaidong_button_open_time",
+		value2 = "",
+		value = {
+			48
+		}
+	},
+	summer_tangram_describe1 = {
+		id = "summer_tangram_describe1",
+		value2 = "",
+		value = {
+			"Widget/System/Summer2024/Summer2024_Tangram/TangramDescription_01"
+		}
+	},
+	summer_tangram_describe2 = {
+		id = "summer_tangram_describe2",
+		value2 = "",
+		value = {
+			"Widget/System/Summer2024/Summer2024_Tangram/TangramDescription_02"
+		}
+	},
+	summer_tangram_describe3 = {
+		id = "summer_tangram_describe3",
+		value2 = "",
+		value = {
+			"Widget/System/Summer2024/Summer2024_Tangram/TangramDescription_03"
+		}
+	},
+	tetris_game_skill_max = {
+		id = "tetris_game_skill_max",
+		value2 = "",
+		value = {
+			3
+		}
+	},
+	tetris_game_describe1 = {
+		id = "tetris_game_describe1",
+		value2 = "",
+		value = {
+			"Widget/BackHouseUI/TetrisGame/TetrisDescription_1",
+			"Widget/BackHouseUI/TetrisGame/TetrisDescription_2",
+			"Widget/BackHouseUI/TetrisGame/TetrisDescription_3",
+			"Widget/BackHouseUI/TetrisGame/TetrisDescription_4"
+		}
+	},
+	tetris_game_describe2 = {
+		id = "tetris_game_describe2",
+		value2 = "",
+		value = {
+			"Widget/BackHouseUI/TetrisGame/TetrisDescription_1",
+			"Widget/BackHouseUI/TetrisGame/TetrisDescription_2",
+			"Widget/BackHouseUI/TetrisGame/TetrisDescription_3",
+			"Widget/BackHouseUI/TetrisGame/TetrisDescription_4"
+		}
+	},
+	tetris_game_describe3 = {
+		id = "tetris_game_describe3",
+		value2 = "",
+		value = {
+			"Widget/BackHouseUI/TetrisGame/TetrisDescription_1",
+			"Widget/BackHouseUI/TetrisGame/TetrisDescription_2",
+			"Widget/BackHouseUI/TetrisGame/TetrisDescription_3",
+			"Widget/BackHouseUI/TetrisGame/TetrisDescription_4"
+		}
+	},
+	activity_kali_cost_item = {
+		id = "activity_kali_cost_item",
+		value2 = "",
+		value = {
+			54114,
+			1
+		}
+	},
+	activity_kali_lucky_num = {
+		id = "activity_kali_lucky_num",
+		value2 = "",
+		value = {
+			20,
+			30
+		}
+	},
+	activity_kali_coin_num = {
+		id = "activity_kali_coin_num",
+		value2 = "",
+		value = {
+			53118,
+			2000
+		}
+	},
+	activity_kali_shot_game_coin_num = {
+		id = "activity_kali_shot_game_coin_num",
+		value2 = "",
+		value = {
+			{
+				53118,
+				500
+			},
+			{
+				54114,
+				100
+			}
+		}
+	},
+	activity_kali_shot_game_reward = {
+		id = "activity_kali_shot_game_reward",
+		value2 = "",
+		value = {
+			{
+				200,
+				{
+					53118,
+					180
+				},
+				{
+					54114,
+					3
+				}
+			},
+			{
+				300,
+				{
+					53118,
+					250
+				},
+				{
+					54114,
+					5
+				}
+			},
+			{
+				400,
+				{
+					53118,
+					300
+				},
+				{
+					54114,
+					5
+				}
+			}
+		}
+	},
+	activity_kali_base_affix = {
+		id = "activity_kali_base_affix",
+		value2 = "",
+		value = {
+			9851,
+			9852,
+			9853,
+			9854
+		}
+	},
+	activity_kali_lucky_Max = {
+		id = "activity_kali_lucky_Max",
+		value2 = "",
+		value = {
+			100
+		}
+	},
+	activity_kali_first_affix = {
+		id = "activity_kali_first_affix",
+		value2 = "",
+		value = {
+			10011
+		}
+	},
+	plot_archives_play_speed = {
+		id = "plot_archives_play_speed",
+		value2 = "",
+		value = {
+			1200
+		}
+	},
+	rogue_team_guide_list = {
+		id = "rogue_team_guide_list",
+		value2 = "",
+		value = {
+			{
+				1049,
+				1055,
+				1138
+			},
+			{
+				3061049,
+				3061055,
+				3061138
+			}
+		}
+	},
+	rogue_Team_event_decide_effect = {
+		id = "rogue_Team_event_decide_effect",
+		value2 = "",
+		value = {
+			1200
+		}
+	},
+	rogue_Team_max_pass_time = {
+		id = "rogue_Team_max_pass_time",
+		value2 = "",
+		value = {
+			7200
+		}
+	},
+	rogue_team_map_horizontal_move_time = {
+		id = "rogue_team_map_horizontal_move_time",
+		value2 = "",
+		value = {
+			0.3
+		}
+	},
+	rogue_team_map_vertical_rotate_time = {
+		id = "rogue_team_map_vertical_rotate_time",
+		value2 = "",
+		value = {
+			0.3
+		}
+	},
+	rogue_team_gold_icon_path = {
+		id = "rogue_team_gold_icon_path",
+		value2 = "",
+		value = {
+			"TextureConfig/Activity_Roulike/Roulike_Relic/Roulike_money"
+		}
+	},
+	rogue_team_revive_icon_pah = {
+		id = "rogue_team_revive_icon_pah",
+		value2 = "",
+		value = {
+			"TextureConfig/Activity_Roulike/Roulike_Relic/Roulike_revive"
+		}
+	},
+	rogue_team_mechanism_offset_value = {
+		id = "rogue_team_mechanism_offset_value",
+		value2 = "",
+		value = {
+			40
+		}
+	},
+	rogue_team_map_help = {
+		id = "rogue_team_map_help",
+		value2 = "",
+		value = {
+			"Widget/System/Activity_Roulike/RoulikeDescription_02",
+			"Widget/System/Activity_Roulike/RoulikeDescription_03",
+			"Widget/System/Activity_Roulike/RoulikeDescription_01"
+		}
+	},
+	rogue_team_statistics_scroll_y_value = {
+		id = "rogue_team_statistics_scroll_y_value",
+		value2 = "",
+		value = {
+			20
+		}
+	},
+	rogue_team_statistics_mode_pause_time = {
+		id = "rogue_team_statistics_mode_pause_time",
+		value2 = "",
+		value = {
+			0.8
+		}
+	},
+	quick_battle_chapter = {
+		id = "quick_battle_chapter",
+		value2 = "",
+		value = {}
+	},
+	quick_battle_unique_chapter = {
+		id = "quick_battle_unique_chapter",
+		value2 = "",
+		value = {}
+	},
+	quick_battle_type = {
+		id = "quick_battle_type",
+		value2 = "",
+		value = {}
+	},
+	quick_battle_mode = {
+		id = "quick_battle_mode",
+		value2 = "",
+		value = {}
+	},
+	activity_sign_3_6_participate_level_limit = {
+		id = "activity_sign_3_6_participate_level_limit",
+		value2 = "",
+		value = {
+			30
+		}
+	},
+	activity_area_battle_point_arg = {
+		id = "activity_area_battle_point_arg",
+		value2 = "",
+		value = {
+			{
+				80,
+				6
+			},
+			{
+				120,
+				5
+			},
+			{
+				180,
+				4
+			}
+		}
+	},
+	activity_area_battle_challenge_arg1 = {
+		value = "6300",
+		id = "activity_area_battle_challenge_arg1",
+		value2 = ""
+	},
+	activity_area_battle_challenge_arg2 = {
+		value = "19",
+		id = "activity_area_battle_challenge_arg2",
+		value2 = ""
+	},
+	activity_area_battle_challenge_arg3 = {
+		value = "2000",
+		id = "activity_area_battle_challenge_arg3",
+		value2 = ""
+	},
+	activity_area_battle_challenge_arg4 = {
+		value = "10300",
+		id = "activity_area_battle_challenge_arg4",
+		value2 = ""
+	},
+	activity_area_battle_challenge_arg5 = {
+		value = "25",
+		id = "activity_area_battle_challenge_arg5",
+		value2 = ""
+	},
+	activity_area_battle_attack_type_tag = {
+		id = "activity_area_battle_attack_type_tag",
+		value2 = "",
+		value = {
+			{
+				1,
+				"icon_physical"
+			},
+			{
+				2,
+				"icon_wind"
+			},
+			{
+				3,
+				"icon_fire"
+			},
+			{
+				5,
+				"icon_ice"
+			},
+			{
+				4,
+				"icon_water"
+			},
+			{
+				6,
+				"icon_dark"
+			},
+			{
+				7,
+				"icon_light"
+			},
+			{
+				8,
+				"icon_ray"
+			},
+			{
+				11,
+				"com_white_icon_group_1_c"
+			},
+			{
+				12,
+				"com_white_icon_group_2_c"
+			},
+			{
+				10,
+				"com_white_icon_group_3_c"
+			},
+			{
+				9,
+				"com_white_icon_group_4_c"
+			},
+			{
+				13,
+				"com_white_icon_group_5_c"
+			},
+			{
+				14,
+				"com_white_icon_group_9_c"
 			}
 		}
 	}

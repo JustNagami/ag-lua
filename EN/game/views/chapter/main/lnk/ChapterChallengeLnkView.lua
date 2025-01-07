@@ -29,16 +29,22 @@ function var_0_0.OnExit(arg_3_0)
 	end
 end
 
-function var_0_0.Dispose(arg_4_0)
-	var_0_0.super.Dispose(arg_4_0)
-
+function var_0_0.RefresLock(arg_4_0)
 	for iter_4_0, iter_4_1 in ipairs(arg_4_0.lnkItemList_) do
-		iter_4_1:Dispose()
+		iter_4_1:RefreshLockState()
+	end
+end
+
+function var_0_0.Dispose(arg_5_0)
+	var_0_0.super.Dispose(arg_5_0)
+
+	for iter_5_0, iter_5_1 in ipairs(arg_5_0.lnkItemList_) do
+		iter_5_1:Dispose()
 	end
 
-	arg_4_0.lnkItemList_ = nil
-	arg_4_0.gameObject_ = nil
-	arg_4_0.transform_ = nil
+	arg_5_0.lnkItemList_ = nil
+	arg_5_0.gameObject_ = nil
+	arg_5_0.transform_ = nil
 end
 
 return var_0_0

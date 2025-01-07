@@ -1,7 +1,7 @@
 ﻿return {
 	[1084] = {
 		satiety_descend_rate = 1,
-		name = "薇儿丹蒂",
+		name = "5bb8e6024e457fe3438e240e9398b1db",
 		seat_priority = 13,
 		customer_id = 1084,
 		compose_list = {
@@ -38,7 +38,7 @@
 	},
 	[1039] = {
 		satiety_descend_rate = 1,
-		name = "波塞冬",
+		name = "10195249f424786cd0d755282993f980",
 		seat_priority = 2,
 		customer_id = 1039,
 		compose_list = {
@@ -75,7 +75,7 @@
 	},
 	[1148] = {
 		satiety_descend_rate = 1,
-		name = "前鬼坊天狗",
+		name = "8734814a02cc40970f9ebd71020629b8",
 		seat_priority = 3,
 		customer_id = 1148,
 		compose_list = {
@@ -112,7 +112,7 @@
 	},
 	[1080] = {
 		satiety_descend_rate = 1,
-		name = "维达尔",
+		name = "5449ca2869dbf527b8714e15adc094f4",
 		seat_priority = 4,
 		customer_id = 1080,
 		compose_list = {
@@ -148,7 +148,7 @@
 	},
 	[1027] = {
 		satiety_descend_rate = 1,
-		name = "利维坦",
+		name = "e4ce8c10d450109bb7362d211c2cb613",
 		seat_priority = 5,
 		customer_id = 1027,
 		compose_list = {
@@ -184,7 +184,7 @@
 	},
 	[1013] = {
 		satiety_descend_rate = 1,
-		name = "阿修罗",
+		name = "714f6d5de9d78ec623e8af928f839679",
 		seat_priority = 6,
 		customer_id = 1013,
 		compose_list = {
@@ -220,7 +220,7 @@
 	},
 	[1038] = {
 		satiety_descend_rate = 1,
-		name = "赫拉",
+		name = "48e131dc9c0fee95e696a68aab09c052",
 		seat_priority = 7,
 		customer_id = 1038,
 		compose_list = {
@@ -256,7 +256,7 @@
 	},
 	[1032] = {
 		satiety_descend_rate = 1,
-		name = "提尔",
+		name = "e933c5fe6ae30bddb9b9768ba4c1fd3c",
 		seat_priority = 8,
 		customer_id = 1032,
 		compose_list = {
@@ -292,7 +292,7 @@
 	},
 	[1093] = {
 		satiety_descend_rate = 1,
-		name = "国常立",
+		name = "72ddda98b20d73712b2886931a676fc4",
 		seat_priority = 9,
 		customer_id = 1093,
 		compose_list = {
@@ -329,7 +329,7 @@
 	},
 	[1096] = {
 		satiety_descend_rate = 1,
-		name = "赫尔墨斯",
+		name = "2e22916b0b7e1266970f2a60c97437b7",
 		seat_priority = 10,
 		customer_id = 1096,
 		compose_list = {
@@ -366,7 +366,7 @@
 	},
 	[1070] = {
 		satiety_descend_rate = 1,
-		name = "金乌",
+		name = "fc12c29cf7c9d8584aafedff340bd7f9",
 		seat_priority = 11,
 		customer_id = 1070,
 		compose_list = {
@@ -403,7 +403,7 @@
 	},
 	[1075] = {
 		satiety_descend_rate = 1,
-		name = "陵光",
+		name = "c87e97bd66fe4bf8f2f7b87169280d03",
 		seat_priority = 12,
 		customer_id = 1075,
 		compose_list = {
@@ -440,7 +440,7 @@
 	},
 	[1072] = {
 		satiety_descend_rate = 1,
-		name = "禄良",
+		name = "90b90b2a66c472efea00031329faa31c",
 		seat_priority = 1,
 		customer_id = 1072,
 		compose_list = {

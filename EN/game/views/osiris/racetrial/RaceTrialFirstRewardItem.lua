@@ -1,4 +1,4 @@
-﻿local var_0_0 = class("RaceTrialScoreRewardItem", ReduxView)
+﻿local var_0_0 = class("RaceTrialFirstRewardItem", ReduxView)
 
 function var_0_0.OnCtor(arg_1_0, arg_1_1)
 	arg_1_0.gameObject_ = arg_1_1
@@ -21,13 +21,13 @@ end
 
 function var_0_0.AddUIListeners(arg_4_0)
 	arg_4_0:AddBtnListener(arg_4_0.receiveBtn_, nil, function()
-		if not ActivityData:GetActivityIsOpen(arg_4_0.activityID_) then
+		if not ActivityData:GetActivityIsOpen(arg_4_0.id) then
 			ShowTips("TIME_OVER")
 
 			return
 		end
 
-		RaceTrialAction:ReceiveFirstReward(arg_4_0.id_)
+		RaceTrialAction:ReceiveFirstReward(arg_4_0.mainActivityID_, arg_4_0.id_)
 	end)
 end
 
@@ -37,7 +37,7 @@ end
 
 function var_0_0.RefreshUI(arg_7_0, arg_7_1, arg_7_2)
 	arg_7_0.id_ = arg_7_1
-	arg_7_0.activityID_ = arg_7_2
+	arg_7_0.mainActivityID_ = arg_7_2
 	arg_7_0.cfg_ = ActivityRaceTrialCfg[arg_7_1]
 	arg_7_0.data_ = RaceTrialData:GetBattleData(arg_7_0.id_)
 
@@ -72,16 +72,18 @@ end
 
 function var_0_0.Dispose(arg_9_0)
 	arg_9_0:RemoveAllListeners()
+	arg_9_0:DisposeRewardItems()
+	var_0_0.super.Dispose(arg_9_0)
+end
 
-	for iter_9_0 = 1, #arg_9_0.rewardList_ do
-		arg_9_0.rewardList_[iter_9_0]:Dispose()
+function var_0_0.DisposeRewardItems(arg_10_0)
+	for iter_10_0 = 1, #arg_10_0.rewardList_ do
+		arg_10_0.rewardList_[iter_10_0]:Dispose()
 
-		arg_9_0.rewardList_[iter_9_0] = nil
+		arg_10_0.rewardList_[iter_10_0] = nil
 	end
 
-	arg_9_0.rewardList_ = nil
-
-	var_0_0.super.Dispose(arg_9_0)
+	arg_10_0.rewardList_ = nil
 end
 
 return var_0_0

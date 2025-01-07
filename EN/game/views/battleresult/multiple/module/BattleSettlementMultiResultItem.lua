@@ -60,13 +60,12 @@ function var_0_0.OnExit(arg_10_0)
 	return
 end
 
-function var_0_0.RenderView(arg_11_0, arg_11_1, arg_11_2)
-	if arg_11_0.index_ ~= arg_11_1 then
-		arg_11_0.index_ = arg_11_1
-		arg_11_0.rewardList_ = arg_11_2 or {}
+function var_0_0.RenderView(arg_11_0, arg_11_1, arg_11_2, arg_11_3)
+	arg_11_0.index_ = arg_11_1
+	arg_11_0.rewardList_ = arg_11_2 or {}
+	arg_11_0.extraReward = arg_11_3 or {}
 
-		arg_11_0:Render()
-	end
+	arg_11_0:Render()
 end
 
 function var_0_0.Render(arg_12_0)
@@ -80,15 +79,42 @@ function var_0_0.Render(arg_12_0)
 
 	local var_12_1 = formatRewardCfgList(var_12_0)
 	local var_12_2 = mergeReward(var_12_1)
-	local var_12_3 = sortReward(var_12_2)
 
-	arg_12_0.rewardList_ = var_12_3
+	arg_12_0.rewardList_ = sortReward(var_12_2)
 
-	arg_12_0.scrollHelper:StartScroll(#var_12_3, 1)
+	if #arg_12_0.extraReward > 0 then
+		local var_12_3 = {}
+
+		for iter_12_2, iter_12_3 in pairs(arg_12_0.extraReward) do
+			table.insert(var_12_3, iter_12_3)
+		end
+
+		local var_12_4 = formatRewardCfgList(var_12_3)
+		local var_12_5 = mergeReward(var_12_4)
+
+		arg_12_0.extraReward = sortReward(var_12_5)
+
+		local var_12_6, var_12_7, var_12_8 = ActivityMultiRewardData:GetLastBattleMultiData()
+
+		arg_12_0.multiRatioText_.text = var_12_8 / 100
+
+		SetActive(arg_12_0.multiGo_, true)
+	else
+		SetActive(arg_12_0.multiGo_, false)
+	end
+
+	arg_12_0.scrollHelper:StartScroll(#arg_12_0.rewardList_ + #arg_12_0.extraReward, 1)
 end
 
 function var_0_0.RenderItem(arg_13_0, arg_13_1, arg_13_2)
-	local var_13_0 = arg_13_0.rewardList_[arg_13_1]
+	local var_13_0
+
+	if arg_13_1 > #arg_13_0.rewardList_ then
+		var_13_0 = arg_13_0.extraReward[arg_13_1 - #arg_13_0.rewardList_]
+	else
+		var_13_0 = arg_13_0.rewardList_[arg_13_1]
+	end
+
 	local var_13_1 = clone(ItemTemplateData)
 
 	var_13_1.id = var_13_0.id

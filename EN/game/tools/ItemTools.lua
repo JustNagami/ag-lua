@@ -42,6 +42,11 @@ function var_0_0.getItemNum(arg_3_0, arg_3_1)
 	end
 
 	local var_3_0 = ItemCfg[arg_3_0]
+
+	if var_3_0 == nil then
+		return 0
+	end
+
 	local var_3_1 = var_3_0.type
 	local var_3_2 = var_3_0.sub_type
 
@@ -78,7 +83,7 @@ function var_0_0.getItemNum(arg_3_0, arg_3_1)
 	elseif var_3_1 == ItemConst.ITEM_TYPE.FRAME then
 		return PlayerData:GetFrame(arg_3_0).unlock == 1 and 1 or 0
 	elseif var_3_1 == ItemConst.ITEM_TYPE.STICKER then
-		return PlayerData:GetSticker(arg_3_0).unlock == 1 and 1 or 0
+		return not PlayerData:GetSticker(arg_3_0).lock and 1 or 0
 	elseif var_3_1 == ItemConst.ITEM_TYPE.CANTEEN_INGREDIENTS then
 		return CanteenFoodData:GetHadIngredientNum(arg_3_0) or 0
 	elseif var_3_1 == ItemConst.ITEM_TYPE.CLUB_COMMON then
@@ -90,11 +95,13 @@ function var_0_0.getItemNum(arg_3_0, arg_3_1)
 	elseif var_3_1 == ItemConst.ITEM_TYPE.FURNITURE_SUIT then
 		return DormSuitData:CheckUnlockSuit(arg_3_0) and 1 or 0
 	elseif var_3_1 == ItemConst.ITEM_TYPE.STICKER_BG then
-		return PlayerData:GetStickerBg(arg_3_0).unlock == 1 and 1 or 0
+		return not PlayerData:GetStickerBg(arg_3_0).lock and 1 or 0
 	elseif var_3_1 == ItemConst.ITEM_TYPE.CARD_BG then
 		return PlayerData:GetCardBg(arg_3_0).unlock == 1 and 1 or 0
 	elseif var_3_1 == ItemConst.ITEM_TYPE.CHAT_BUBBLE then
 		return table.keyof(PlayerData:GetUnlockChatBubbleIDList(), arg_3_0) and 1 or 0
+	elseif var_3_1 == ItemConst.ITEM_TYPE.STICKER_FG then
+		return not PlayerData:GetStickerFg(arg_3_0).lock and 1 or 0
 	else
 		print("未知的Item类型", var_3_1)
 	end
@@ -126,7 +133,7 @@ function var_0_0.getItemTexturePath(arg_4_0, arg_4_1)
 			print("暂未定义的头像来源")
 		end
 	elseif var_4_0.type == ItemConst.ITEM_TYPE.STICKER then
-		return "TextureConfig/Sticker/"
+		return "TextureConfig/Sticker/Sticker/"
 	elseif arg_4_1 then
 		return SpritePathCfg.ItemLittleIcon.path
 	else
@@ -294,7 +301,7 @@ function var_0_0.GetItemIsOwned(arg_16_0)
 
 		return var_0_0.getItemNum(arg_16_0) > 0 or var_16_2
 	elseif var_16_1 == ItemConst.ITEM_TYPE.STICKER_BG then
-		local var_16_3 = PlayerData:GetStickerBg(arg_16_0).unlock == 1
+		local var_16_3 = not PlayerData:GetStickerBg(arg_16_0).lock
 
 		return var_0_0.getItemNum(arg_16_0) > 0 or var_16_3
 	elseif var_16_1 == ItemConst.ITEM_TYPE.TAG then
@@ -411,6 +418,51 @@ function var_0_0.GetItemSourceList(arg_18_0)
 	end
 
 	return var_18_0
+end
+
+function var_0_0.HasOwnAllLimitCardItems(arg_19_0)
+	local var_19_0 = ItemCfg[arg_19_0].param
+	local var_19_1
+	local var_19_2
+	local var_19_3
+	local var_19_4
+
+	for iter_19_0, iter_19_1 in ipairs(var_19_0) do
+		local var_19_5 = ItemCfg[iter_19_1]
+
+		if var_19_5.type == ItemConst.ITEM_TYPE.HERO_SKIN then
+			var_19_4 = iter_19_1
+		elseif var_19_5.type == ItemConst.ITEM_TYPE.SCENE then
+			var_19_3 = iter_19_1
+		end
+	end
+
+	if var_19_4 and ItemCfg[var_19_4] then
+		var_19_2 = ItemCfg[var_19_4].param[1]
+	end
+
+	if var_19_3 and ItemCfg[var_19_3] then
+		var_19_1 = ItemCfg[var_19_3].param[1]
+	end
+
+	local var_19_6 = false
+	local var_19_7 = false
+
+	if var_19_2 and var_19_1 then
+		local var_19_8 = HeroTools.GetHasOwnedSkin(var_19_2)
+
+		if HomeSceneSettingData:IsHaveScene(var_19_1) and var_19_8 then
+			return true
+		end
+	elseif not var_19_2 and var_19_1 then
+		if HomeSceneSettingData:IsHaveScene(var_19_1) then
+			return true
+		end
+	elseif var_19_2 and not var_19_1 and HeroTools.GetHasOwnedSkin(var_19_2) then
+		return true
+	end
+
+	return false
 end
 
 return var_0_0

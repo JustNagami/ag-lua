@@ -1,4 +1,598 @@
 ﻿return {
+	[317252074] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9ee70155ae622d41385745a77f9c79cc",
+		id = 317252074
+	},
+	[317252075] = {
+		speaker = "",
+		prefab_name = "",
+		content = "af73a104a0717d3d38cf0ac415b8ed45",
+		id = 317252075
+	},
+	[317252076] = {
+		speaker = "",
+		prefab_name = "",
+		content = "81b59559bbecaae396e785e78a6fbe37",
+		id = 317252076
+	},
+	[317252077] = {
+		speaker = "",
+		prefab_name = "",
+		content = "cb1bf9ef61d2c2484f3f686a60f9d80d",
+		id = 317252077
+	},
+	[317252078] = {
+		speaker = "",
+		prefab_name = "",
+		content = "44028e27e12bbb5d123fdc647d7b4cd2",
+		id = 317252078
+	},
+	[317252079] = {
+		speaker = "",
+		prefab_name = "",
+		content = "3d054779d3fe991de698bd7e6a05c732",
+		id = 317252079
+	},
+	[317252080] = {
+		speaker = "",
+		prefab_name = "",
+		content = "cfa4fd8f08e964ce5324e902d795e9c8",
+		id = 317252080
+	},
+	[317252081] = {
+		speaker = "",
+		prefab_name = "",
+		content = "91c3fb7ff1a9ffe4f3a3f8246ca4f8bc",
+		id = 317252081
+	},
+	[317252082] = {
+		speaker = "",
+		prefab_name = "",
+		content = "056ae9100a876761409ab18ee27f7a42",
+		id = 317252082
+	},
+	[317252083] = {
+		speaker = "",
+		prefab_name = "",
+		content = "a0af724523d8c648282ed98d470d8e76",
+		id = 317252083
+	},
+	[317252084] = {
+		speaker = "",
+		prefab_name = "",
+		content = "d792a8a95f5a85aa9924e6c02fb9cdb6",
+		id = 317252084
+	},
+	[317252085] = {
+		speaker = "",
+		prefab_name = "",
+		content = "6ff511be257f59ebdefc5714f7d70b28",
+		id = 317252085
+	},
+	[317252086] = {
+		speaker = "",
+		prefab_name = "1158ui_story",
+		content = "8fb1d3266466d3cd1bcdc96e1c685e56",
+		id = 317252086
+	},
+	[317252087] = {
+		speaker = "",
+		prefab_name = "",
+		content = "50c68774652db2ec3888ed7c14483e02",
+		id = 317252087
+	},
+	[317252088] = {
+		speaker = "",
+		prefab_name = "1158ui_story",
+		content = "41f7f3deb1045829f94e19dfad906958",
+		id = 317252088
+	},
+	[317252089] = {
+		speaker = "",
+		prefab_name = "",
+		content = "64b8b6fdf81bc64192d30d51ac007d5a",
+		id = 317252089
+	},
+	[317252090] = {
+		speaker = "",
+		prefab_name = "",
+		content = "d0c8a3375a38e4219aed65421b226a53",
+		id = 317252090
+	},
+	[317252091] = {
+		speaker = "",
+		prefab_name = "1158ui_story",
+		content = "d9b1ef8935557e34ab13d20c1426f313",
+		id = 317252091
+	},
+	[317252092] = {
+		speaker = "",
+		prefab_name = "",
+		content = "7d84758664d816466e1df5357e0c9f6c",
+		id = 317252092
+	},
+	[317252093] = {
+		speaker = "",
+		prefab_name = "1158ui_story",
+		content = "07f88b927d30728904863c696568d7fc",
+		id = 317252093
+	},
+	[317252094] = {
+		speaker = "",
+		prefab_name = "",
+		content = "025a65d758d18fab8dc8cf93325b6763",
+		id = 317252094
+	},
+	[317252095] = {
+		speaker = "",
+		prefab_name = "1158ui_story",
+		content = "656aabfebd15a4007849aa9b605c30bb",
+		id = 317252095
+	},
+	[317252096] = {
+		speaker = "",
+		prefab_name = "1158ui_story",
+		content = "a6bdf1de8276b4807b66e6f1643912cf",
+		id = 317252096
+	},
+	[317252097] = {
+		speaker = "",
+		prefab_name = "1158ui_story",
+		content = "c8a1cc138ac6941521865dab969fe581",
+		id = 317252097
+	},
+	[317252098] = {
+		speaker = "",
+		prefab_name = "",
+		content = "4ecb60393aebb1ce3eb39946eedfcec7",
+		id = 317252098
+	},
+	[317252099] = {
+		speaker = "",
+		prefab_name = "",
+		content = "86e5461dcab07040d6584b05a77aa73b",
+		id = 317252099
+	},
+	[317252100] = {
+		speaker = "",
+		prefab_name = "",
+		content = "750d9ecbad6ffd9e793242ddc9ed895c",
+		id = 317252100
+	},
+	[317252101] = {
+		speaker = "",
+		prefab_name = "",
+		content = "01e222cc9a7afb4156db225b18a56a74",
+		id = 317252101
+	},
+	[317252102] = {
+		speaker = "",
+		prefab_name = "",
+		content = "236f1b3fe70027af0e26846457b97f7b",
+		id = 317252102
+	},
+	[317252103] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9a86b7375ece0ce6497e538c21a4fa97",
+		id = 317252103
+	},
+	[317252104] = {
+		speaker = "",
+		prefab_name = "",
+		content = "7f45cb7cc0bdcda5e5c46abc4d33b0da",
+		id = 317252104
+	},
+	[317252105] = {
+		speaker = "",
+		prefab_name = "",
+		content = "4f9d55444b9b010ff5c7f49555084792",
+		id = 317252105
+	},
+	[317261001] = {
+		speaker = "",
+		prefab_name = "",
+		content = "ab2daac3536aa6a3a6cba7eca51b665c",
+		id = 317261001
+	},
+	[317261002] = {
+		speaker = "",
+		prefab_name = "",
+		content = "8f60761abb4b9728da776a02f1cd41bb",
+		id = 317261002
+	},
+	[317261003] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "147393105e90fbdf9e7f6f5ddc3073bc",
+		id = 317261003
+	},
+	[317261004] = {
+		speaker = "",
+		prefab_name = "",
+		content = "81c79badd8a418cc464a0e2b684c5b66",
+		id = 317261004
+	},
+	[317261005] = {
+		speaker = "",
+		prefab_name = "",
+		content = "ac0387ad5486dd4abe33e67082a34c06",
+		id = 317261005
+	},
+	[317261006] = {
+		speaker = "",
+		prefab_name = "",
+		content = "14ef20322b57eb492d2c036b0ba5fb2f",
+		id = 317261006
+	},
+	[317261007] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "4840be99caa1283dd4069c9709e6333b",
+		id = 317261007
+	},
+	[317261008] = {
+		speaker = "",
+		prefab_name = "",
+		content = "d2c7dd7d6d4ed8d7b826ba3281d13dd4",
+		id = 317261008
+	},
+	[317261009] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "6eaff3a69636a8a6b19804d8706c9e14",
+		id = 317261009
+	},
+	[317261010] = {
+		speaker = "",
+		prefab_name = "",
+		content = "7b3b1e785108fd419eb93671e6bd65f1",
+		id = 317261010
+	},
+	[317261011] = {
+		speaker = "",
+		prefab_name = "",
+		content = "d375f448701cfad4ac90c00b248e488b",
+		id = 317261011
+	},
+	[317261012] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "72f55987cb7282970c25ee17e48c7711",
+		id = 317261012
+	},
+	[317261013] = {
+		speaker = "",
+		prefab_name = "",
+		content = "67ae769098d9741429b4fb49c681d259",
+		id = 317261013
+	},
+	[317261014] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "4e05ef0f60bc179634fe57af76bb4cbd",
+		id = 317261014
+	},
+	[317261015] = {
+		speaker = "",
+		prefab_name = "",
+		content = "a5ecc0c1e92aa2344c1e024285496128",
+		id = 317261015
+	},
+	[317261016] = {
+		speaker = "",
+		prefab_name = "1093ui_story",
+		content = "765891a61334e7b0173b93eaa86cf860",
+		id = 317261016
+	},
+	[317261017] = {
+		speaker = "",
+		prefab_name = "",
+		content = "510c65e9090cd395da20ac66a2bfc6b2",
+		id = 317261017
+	},
+	[317261018] = {
+		speaker = "",
+		prefab_name = "1093ui_story",
+		content = "e2c9a801aff6d677111bbeb77d63d215",
+		id = 317261018
+	},
+	[317261019] = {
+		speaker = "",
+		prefab_name = "",
+		content = "5d474fc33e8d9dc6e9aaa4ebc016f3d6",
+		id = 317261019
+	},
+	[317261020] = {
+		speaker = "",
+		prefab_name = "",
+		content = "96d30baa2b610382faa5183b36357360",
+		id = 317261020
+	},
+	[317261021] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "70a645025dd6f83a57ec46a5c21d3ec1",
+		id = 317261021
+	},
+	[317261022] = {
+		speaker = "",
+		prefab_name = "1093ui_story",
+		content = "96307fcd6ac08a533b750ade75a7918f",
+		id = 317261022
+	},
+	[317261023] = {
+		speaker = "",
+		prefab_name = "",
+		content = "04a83680430acd3d0931dd3dcca1a17f",
+		id = 317261023
+	},
+	[317261024] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "8486d478ec4375379225d9abeb8791cb",
+		id = 317261024
+	},
+	[317261025] = {
+		speaker = "",
+		prefab_name = "",
+		content = "742bbea1c9c67083e19ddfc659bb0ead",
+		id = 317261025
+	},
+	[317261026] = {
+		speaker = "",
+		prefab_name = "",
+		content = "c620bd7442b15c68266c24e8f120e9e3",
+		id = 317261026
+	},
+	[317261027] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "d6b0c6da79deb3fba2cdc0dcf642786b",
+		id = 317261027
+	},
+	[317261028] = {
+		speaker = "",
+		prefab_name = "",
+		content = "5c678f0e29e9df63be24f83026108561",
+		id = 317261028
+	},
+	[317261029] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "08c03550d302a8c4dd619f4c870415b7",
+		id = 317261029
+	},
+	[317261030] = {
+		speaker = "",
+		prefab_name = "",
+		content = "994e9e39719a4ccd67c82b0f19a9e1ef",
+		id = 317261030
+	},
+	[317261031] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "11946981659c54337776ba1e3f0c4487",
+		id = 317261031
+	},
+	[317261032] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "8ef62daad69c9de5eed4cf43414547c5",
+		id = 317261032
+	},
+	[317261033] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "5d47a339bd512525e8486526fffd068a",
+		id = 317261033
+	},
+	[317261034] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "4b1d74f20f7471f6c70787bb428ef5c8",
+		id = 317261034
+	},
+	[317261035] = {
+		speaker = "",
+		prefab_name = "",
+		content = "0e7fe08590d50f095b0413a681052f66",
+		id = 317261035
+	},
+	[317261036] = {
+		speaker = "",
+		prefab_name = "1093ui_story",
+		content = "6c46cadeae7b2ed87beadec75822cc52",
+		id = 317261036
+	},
+	[317261037] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "525616e90435bbc68cfe5298ecc6b13f",
+		id = 317261037
+	},
+	[317261038] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "162e0926bc1d1856357fef8f12c39962",
+		id = 317261038
+	},
+	[317261039] = {
+		speaker = "",
+		prefab_name = "1093ui_story",
+		content = "59039a4da9923acfbeb653bb59e9e54f",
+		id = 317261039
+	},
+	[317261040] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "89e63693a20388c92af87b525c553f7e",
+		id = 317261040
+	},
+	[317261041] = {
+		speaker = "",
+		prefab_name = "",
+		content = "7e3dcce5c1f87ec7d7b9af036c97e0a3",
+		id = 317261041
+	},
+	[317261042] = {
+		speaker = "",
+		prefab_name = "",
+		content = "365f08ffd7bf891b4c209c3b51553a7a",
+		id = 317261042
+	},
+	[317261043] = {
+		speaker = "",
+		prefab_name = "",
+		content = "8b1eb402e772323dfc15f0f6205fb593",
+		id = 317261043
+	},
+	[317261044] = {
+		speaker = "",
+		prefab_name = "1199ui_story",
+		content = "d34f4952501e356ec02909adf33bece8",
+		id = 317261044
+	},
+	[317261045] = {
+		speaker = "",
+		prefab_name = "",
+		content = "34412f71e0aa3fab1ff327f7556b5473",
+		id = 317261045
+	},
+	[317261046] = {
+		speaker = "",
+		prefab_name = "1199ui_story",
+		content = "b2670cbc7ff9afcf49c937254f66d2a9",
+		id = 317261046
+	},
+	[317261047] = {
+		speaker = "",
+		prefab_name = "1199ui_story",
+		content = "d226c080ba2443d585c71297073e2963",
+		id = 317261047
+	},
+	[317261048] = {
+		speaker = "",
+		prefab_name = "",
+		content = "4cb766cb04804b1409c64f10d93cb48a",
+		id = 317261048
+	},
+	[317262001] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "83c36953c2bab00c428fc1e6bb5716e6",
+		id = 317262001
+	},
+	[317262002] = {
+		speaker = "",
+		prefab_name = "1093ui_story",
+		content = "bce4c71cb604cf3068474bead673a042",
+		id = 317262002
+	},
+	[317262003] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "c71861addd16705e235fa4b192be0273",
+		id = 317262003
+	},
+	[317262004] = {
+		speaker = "",
+		prefab_name = "1199ui_story",
+		content = "0edcc011ff1fd3111149dc8e7ce00008",
+		id = 317262004
+	},
+	[317262005] = {
+		speaker = "",
+		prefab_name = "",
+		content = "477e0386c6df833ae121825556aa415f",
+		id = 317262005
+	},
+	[317262006] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "6b7a7f44911480454c0279629a4e7921",
+		id = 317262006
+	},
+	[317262007] = {
+		speaker = "",
+		prefab_name = "",
+		content = "c0da4bcdc2875ad35a562c141ada9086",
+		id = 317262007
+	},
+	[317262008] = {
+		speaker = "",
+		prefab_name = "",
+		content = "4f660b18f00edac3e423755ac59d5f45",
+		id = 317262008
+	},
+	[317262009] = {
+		speaker = "",
+		prefab_name = "1158ui_story",
+		content = "aae9c3dd7bc7175afa3f5e68f8f83b27",
+		id = 317262009
+	},
+	[317262010] = {
+		speaker = "",
+		prefab_name = "1093ui_story",
+		content = "6aa1484b4107df564fcd5997eff5d109",
+		id = 317262010
+	},
+	[317262011] = {
+		speaker = "",
+		prefab_name = "",
+		content = "c1f82d705443d867ced6e034b06040a4",
+		id = 317262011
+	},
+	[317262012] = {
+		speaker = "",
+		prefab_name = "1158ui_story",
+		content = "a9dd369743a1263af41bfefa868a1152",
+		id = 317262012
+	},
+	[317262013] = {
+		speaker = "",
+		prefab_name = "",
+		content = "2275a1034a6f2521923d602b8fb9d2d9",
+		id = 317262013
+	},
+	[317262014] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "abaaa715627ceb970cbab91bd5274a56",
+		id = 317262014
+	},
+	[317262015] = {
+		speaker = "",
+		prefab_name = "1199ui_story",
+		content = "9c2019507edbf0c91b798fb75617c4cd",
+		id = 317262015
+	},
+	[317262016] = {
+		speaker = "",
+		prefab_name = "",
+		content = "91ec15fc651e93e729a6f34b29fe960a",
+		id = 317262016
+	},
+	[317262017] = {
+		speaker = "",
+		prefab_name = "",
+		content = "96b62cdb2119e2161026d1f868c0a16d",
+		id = 317262017
+	},
+	[317262018] = {
+		speaker = "",
+		prefab_name = "1015ui_story",
+		content = "5a533c7b7106cc9846941fae74a4c4d2",
+		id = 317262018
+	},
+	[317262019] = {
+		speaker = "",
+		prefab_name = "",
+		content = "31ae8d58a518b595ce172b67297ab180",
+		id = 317262019
+	},
 	[317262020] = {
 		speaker = "",
 		prefab_name = "",
@@ -4651,7 +5245,7 @@
 	},
 	[317321004] = {
 		speaker = "",
-		prefab_name = "1158ui_story",
+		prefab_name = "1058ui_story",
 		content = "a00cf6418021b733cbdf6f5d3e0027b3",
 		id = 317321004
 	},
@@ -4663,7 +5257,7 @@
 	},
 	[317321006] = {
 		speaker = "",
-		prefab_name = "1158ui_story",
+		prefab_name = "1058ui_story",
 		content = "9bd6fbcc6f182440466e0c5d2688a4cc",
 		id = 317321006
 	},
@@ -46693,13 +47287,13 @@
 	},
 	[1105002065] = {
 		speaker = "国常立",
-		prefab_name = "1066ui_story",
+		prefab_name = "1093ui_story",
 		content = "e32bf2438ce6fee5410b52c0de598d2a",
 		id = 1105002065
 	},
 	[1105002066] = {
 		speaker = "国常立",
-		prefab_name = "1066ui_story",
+		prefab_name = "1093ui_story",
 		content = "339c21ddb52b7b1bcd3a86f4243f2c3e",
 		id = 1105002066
 	},
@@ -46711,13 +47305,13 @@
 	},
 	[1105002068] = {
 		speaker = "国常立",
-		prefab_name = "1066ui_story",
+		prefab_name = "1093ui_story",
 		content = "187fe6d927773df32d419c59b55b72df",
 		id = 1105002068
 	},
 	[1105002069] = {
 		speaker = "国常立",
-		prefab_name = "1066ui_story",
+		prefab_name = "1093ui_story",
 		content = "f6ccadd4bb6733a9c50d818c0817756a",
 		id = 1105002069
 	},
@@ -52225,7 +52819,7 @@
 	},
 	[318011174] = {
 		speaker = "薇儿丹蒂",
-		prefab_name = "",
+		prefab_name = "1084ui_story",
 		content = "11cf46f517398569494088f2fc804268",
 		id = 318011174
 	},
@@ -58746,14 +59340,14 @@
 		id = 318131008
 	},
 	[318131009] = {
-		speaker = "月读",
-		prefab_name = "1199ui_story",
+		speaker = "",
+		prefab_name = "1150ui_story",
 		content = "dce9607033df48faaaf20041e9c0ee13",
 		id = 318131009
 	},
 	[318131010] = {
-		speaker = "月读",
-		prefab_name = "1199ui_story",
+		speaker = "",
+		prefab_name = "1150ui_story",
 		content = "90ecf46fb33e704d70624f3548f96c10",
 		id = 318131010
 	},
@@ -60763,7 +61357,7 @@
 	},
 	[1102705100] = {
 		speaker = "哈迪斯",
-		prefab_name = "",
+		prefab_name = "1042ui_story",
 		content = "e57289c14e853d108c972246467d39f0",
 		id = 1102705100
 	},
@@ -60775,7 +61369,7 @@
 	},
 	[1102705102] = {
 		speaker = "哈迪斯",
-		prefab_name = "",
+		prefab_name = "1042ui_story",
 		content = "185eb485b90c37b7b75bd32e7ec89930",
 		id = 1102705102
 	},
@@ -60787,7 +61381,7 @@
 	},
 	[1102705104] = {
 		speaker = "哈迪斯",
-		prefab_name = "",
+		prefab_name = "1042ui_story",
 		content = "3be1e9ec93bfa5e303ca8519d8cb29bc",
 		id = 1102705104
 	},
@@ -60799,19 +61393,19 @@
 	},
 	[1102705106] = {
 		speaker = "哈迪斯",
-		prefab_name = "",
+		prefab_name = "1042ui_story",
 		content = "8f25ce8fa9f353ceda3474aa7064cc26",
 		id = 1102705106
 	},
 	[1102705107] = {
 		speaker = "哈迪斯",
-		prefab_name = "",
+		prefab_name = "1042ui_story",
 		content = "dee21e8fc3065d1433794ca758ea7012",
 		id = 1102705107
 	},
 	[1102705108] = {
 		speaker = "哈迪斯",
-		prefab_name = "",
+		prefab_name = "1042ui_story",
 		content = "ae0752aed05b93716224e099f04259b8",
 		id = 1102705108
 	},
@@ -60823,13 +61417,13 @@
 	},
 	[1102705110] = {
 		speaker = "哈迪斯",
-		prefab_name = "",
+		prefab_name = "1042ui_story",
 		content = "0c3de9db81e12c3e3ab139c64f1e249b",
 		id = 1102705110
 	},
 	[1102705111] = {
 		speaker = "哈迪斯",
-		prefab_name = "",
+		prefab_name = "1042ui_story",
 		content = "8d0f80c43b80f71c5d6fb7fe7307d1e0",
 		id = 1102705111
 	},
@@ -69505,7 +70099,7 @@
 	},
 	[318281017] = {
 		speaker = "",
-		prefab_name = "",
+		prefab_name = "10065ui_story",
 		content = "afc34c90fc783a1f7840eff49ba9a440",
 		id = 318281017
 	},
@@ -74965,7 +75559,7 @@
 	},
 	[1103906144] = {
 		speaker = "我&波塞冬",
-		prefab_name = "",
+		prefab_name = "103901ui_story",
 		content = "eb266fbcf6bb24f6d60856cc925e06b7",
 		id = 1103906144
 	},
@@ -78415,7 +79009,7 @@
 	},
 	[1109503135] = {
 		speaker = "托特&我",
-		prefab_name = "",
+		prefab_name = "10058ui_story",
 		content = "7786116c3d6682edc2183ec71be6d594",
 		id = 1109503135
 	},
@@ -78427,7 +79021,7 @@
 	},
 	[1109503137] = {
 		speaker = "托特&我",
-		prefab_name = "",
+		prefab_name = "10058ui_story",
 		content = "9f47e79275b224c58c86a7bc9eb5db19",
 		id = 1109503137
 	},
@@ -89404,599 +89998,5 @@
 		prefab_name = "",
 		content = "93bd3ae5c49a7cbd6631a8a81b4849a7",
 		id = 319281007
-	},
-	[319281008] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "1184ui_story",
-		content = "976a8825c74dd5dae6aea8c39c1e6741",
-		id = 319281008
-	},
-	[319281009] = {
-		speaker = "",
-		prefab_name = "",
-		content = "5568328b5b7e810e41661206ba188f8b",
-		id = 319281009
-	},
-	[319281010] = {
-		speaker = "",
-		prefab_name = "",
-		content = "25e0bb53eb9fa36bd2767cc5b25110c4",
-		id = 319281010
-	},
-	[319281011] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "1184ui_story",
-		content = "ae7c8d96d77984e3a005e16b604bf426",
-		id = 319281011
-	},
-	[319281012] = {
-		speaker = "",
-		prefab_name = "",
-		content = "4304c58469c740247af481868614fb5d",
-		id = 319281012
-	},
-	[319281013] = {
-		speaker = "",
-		prefab_name = "",
-		content = "9a8bb8d9e2c042d56bea798794164125",
-		id = 319281013
-	},
-	[319281014] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "1184ui_story",
-		content = "2aebfe2d98ecb769c1b81d109b7c7923",
-		id = 319281014
-	},
-	[319281015] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "ff31f8147d6a5ec56f41edee1c5be03e",
-		id = 319281015
-	},
-	[319281016] = {
-		speaker = "",
-		prefab_name = "",
-		content = "f6614720f19ef55426927da802d25f26",
-		id = 319281016
-	},
-	[319281017] = {
-		speaker = "",
-		prefab_name = "",
-		content = "dc789025713e750c581bef6e6d48b3ec",
-		id = 319281017
-	},
-	[319281018] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "a7ed5e7bc4eaf0ae43124937de5ab040",
-		id = 319281018
-	},
-	[319281019] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "01de2266667df2b0963bfcf3f5933900",
-		id = 319281019
-	},
-	[319281020] = {
-		speaker = "",
-		prefab_name = "",
-		content = "d6c3eb8748be7b19a5ed8ca08d2a61ba",
-		id = 319281020
-	},
-	[319281021] = {
-		speaker = "",
-		prefab_name = "",
-		content = "44be19774432d1b9cf0a662999e1dd50",
-		id = 319281021
-	},
-	[319281022] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "0c442562fa7964735fb7dfaadd30cbb6",
-		id = 319281022
-	},
-	[319281023] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "8a50bfa2de82b3c7abea109eb402f202",
-		id = 319281023
-	},
-	[319281024] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "fc844eb79398ee3989bbcc262c0f705c",
-		id = 319281024
-	},
-	[319281025] = {
-		speaker = "",
-		prefab_name = "",
-		content = "861c843b4b8a7b2081806b78cdf2e3c5",
-		id = 319281025
-	},
-	[319281026] = {
-		speaker = "",
-		prefab_name = "",
-		content = "58be4e8fed00a0d5eea1f690bf99f50d",
-		id = 319281026
-	},
-	[319281027] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "7886787434f3d7b0c73aa629914dd057",
-		id = 319281027
-	},
-	[319281028] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "0f216a86fd9b8879fbb9f12a207baff6",
-		id = 319281028
-	},
-	[319281029] = {
-		speaker = "",
-		prefab_name = "",
-		content = "284bd4ec5627e22b72c19c6d42c48b51",
-		id = 319281029
-	},
-	[319281030] = {
-		speaker = "",
-		prefab_name = "",
-		content = "123b8220b6fca15659837dcc8e117b9b",
-		id = 319281030
-	},
-	[319281031] = {
-		speaker = "",
-		prefab_name = "",
-		content = "30ee9ed8a1c311b075623070aa578d75",
-		id = 319281031
-	},
-	[319281032] = {
-		speaker = "",
-		prefab_name = "",
-		content = "01912781cf26ad27e13f59748f84207d",
-		id = 319281032
-	},
-	[319281033] = {
-		speaker = "",
-		prefab_name = "",
-		content = "c5e177231940485efe228fc12482a845",
-		id = 319281033
-	},
-	[319281034] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "31a606a1809205a2d002571f25c47f47",
-		id = 319281034
-	},
-	[319281035] = {
-		speaker = "",
-		prefab_name = "",
-		content = "0c9d54ef9cd6d88e8a4b70c7f6c7a7c1",
-		id = 319281035
-	},
-	[319281036] = {
-		speaker = "",
-		prefab_name = "",
-		content = "b2aac6b3e811fb6015296738854f9509",
-		id = 319281036
-	},
-	[319281037] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "4294bcf7138dfc42e749ec276b69a6cc",
-		id = 319281037
-	},
-	[319281038] = {
-		speaker = "",
-		prefab_name = "",
-		content = "048eb44099d3ab3e83a2c3382a487966",
-		id = 319281038
-	},
-	[319281039] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "326e96f0bb7620c56b40784f474aba2a",
-		id = 319281039
-	},
-	[319281040] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "9b99dca885ddb2268168341b70e4da87",
-		id = 319281040
-	},
-	[319281041] = {
-		speaker = "",
-		prefab_name = "",
-		content = "f1dafb15ecc67761426c7f9c22bdec60",
-		id = 319281041
-	},
-	[319281042] = {
-		speaker = "",
-		prefab_name = "",
-		content = "342181be9bb5b52821ace7f41390f5ce",
-		id = 319281042
-	},
-	[319281043] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "21c61060226b6f5de6aa307f01d79d8f",
-		id = 319281043
-	},
-	[319281044] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "52ce07257e5243a025a83b1eedac4ccf",
-		id = 319281044
-	},
-	[319281045] = {
-		speaker = "视骸",
-		prefab_name = "",
-		content = "19eb766611a854242882d958234cfafd",
-		id = 319281045
-	},
-	[319281046] = {
-		speaker = "",
-		prefab_name = "",
-		content = "eb59d7e7d13b27b604792417a7303c9a",
-		id = 319281046
-	},
-	[319281047] = {
-		speaker = "",
-		prefab_name = "",
-		content = "53f691ed09523355375b33b56e3a57c2",
-		id = 319281047
-	},
-	[319291001] = {
-		speaker = "",
-		prefab_name = "",
-		content = "798afb2d569447e32b7aa68f632c5880",
-		id = 319291001
-	},
-	[319291002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "26a1bdc7ac0e9bf65ea6ab72f4ffa6eb",
-		id = 319291002
-	},
-	[319291003] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "bcf55b4219d1d02e1458bd64e073d54c",
-		id = 319291003
-	},
-	[319291004] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "d850210fbb2b6cc7f05b160a4aa5a75d",
-		id = 319291004
-	},
-	[319291005] = {
-		speaker = "",
-		prefab_name = "",
-		content = "afd92147c4fc3d5c8415d89be9f1e72d",
-		id = 319291005
-	},
-	[319291006] = {
-		speaker = "",
-		prefab_name = "",
-		content = "db9bbb5ed47281d44a50f530e87722c9",
-		id = 319291006
-	},
-	[319291007] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "c6718543c808f527b5c0298d3a3c8df3",
-		id = 319291007
-	},
-	[319291008] = {
-		speaker = "",
-		prefab_name = "",
-		content = "0a7ff2cf01b83abba2a07a648ce0e061",
-		id = 319291008
-	},
-	[319291009] = {
-		speaker = "",
-		prefab_name = "",
-		content = "1311c0fe1b947ce88a579730f37035f5",
-		id = 319291009
-	},
-	[319291010] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "67f9b05b4d7f7a7f683c2f305b7d9508",
-		id = 319291010
-	},
-	[319291011] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "e04f20e1bc0ec5c3b570477377afb92b",
-		id = 319291011
-	},
-	[319291012] = {
-		speaker = "",
-		prefab_name = "",
-		content = "971d35c727d90bef9c56b04b84159d46",
-		id = 319291012
-	},
-	[319291013] = {
-		speaker = "",
-		prefab_name = "",
-		content = "2c9cebc626b6938704ac2790e6018241",
-		id = 319291013
-	},
-	[319291014] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "08b77f4bdbbb9e49313c7acb5e88aaa0",
-		id = 319291014
-	},
-	[319291015] = {
-		speaker = "",
-		prefab_name = "",
-		content = "9cf3b85476ae313e804a6e63b1a0929b",
-		id = 319291015
-	},
-	[319291016] = {
-		speaker = "视骸",
-		prefab_name = "",
-		content = "133439d7a12ecc34af8a8a311075dc58",
-		id = 319291016
-	},
-	[319291017] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "9724bd600de19553138cf952bba495b3",
-		id = 319291017
-	},
-	[319291018] = {
-		speaker = "",
-		prefab_name = "",
-		content = "c1ba969bc6d3bb5838aa24cb54448961",
-		id = 319291018
-	},
-	[319291019] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "0f14b8de75bf2024f3f19b7f25c8c90e",
-		id = 319291019
-	},
-	[319291020] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "b5d6e4d0cbf2442f5f318642c61eca3b",
-		id = 319291020
-	},
-	[319291021] = {
-		speaker = "",
-		prefab_name = "",
-		content = "91cfc7cc10407a76e6e140c0d74a98b6",
-		id = 319291021
-	},
-	[319291022] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "e2e50e8e2d5913aaa8e5d240eddea702",
-		id = 319291022
-	},
-	[319291023] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "06d76b58efcb02cb66ff7f09642a091c",
-		id = 319291023
-	},
-	[319291024] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "f3b8c56c3f0de789e7c328a7167e7845",
-		id = 319291024
-	},
-	[319291025] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "fb5d6964c8efe9c4f5ba65ed4870698b",
-		id = 319291025
-	},
-	[319291026] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "646fcd0a1414ed71b3824dc2ef523ff6",
-		id = 319291026
-	},
-	[319291027] = {
-		speaker = "",
-		prefab_name = "",
-		content = "fbbe6326af58c6884a2c44e762f394d3",
-		id = 319291027
-	},
-	[319291028] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "cb71ae2f96e3c2be06587491fbfa2ba2",
-		id = 319291028
-	},
-	[319291029] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "ffa8f33228f07e612f2d0e9f0d2dddc3",
-		id = 319291029
-	},
-	[319291030] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "bc2965fe81d5080fc6f5980b215e552a",
-		id = 319291030
-	},
-	[319291031] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "99a62548447be63b4892d57b20a3216e",
-		id = 319291031
-	},
-	[319291032] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "7077d344067599f6280a7124cc1586f7",
-		id = 319291032
-	},
-	[319291033] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "c348987aa6d9de0779d9771c7a2969fa",
-		id = 319291033
-	},
-	[319291034] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "f7a9fc4b8636be2e8e085c1216b873a5",
-		id = 319291034
-	},
-	[319291035] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "bf63eea85d18f90085e5f3a936fd789e",
-		id = 319291035
-	},
-	[319291036] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "3783648df218bf00479f8947d3a4ebda",
-		id = 319291036
-	},
-	[319291037] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "09a02a1af5e043e01682cc41f8cc534c",
-		id = 319291037
-	},
-	[319291038] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "c2c0ae4c3ef452796854f98f8b00ec22",
-		id = 319291038
-	},
-	[319291039] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "2d148d0e1b710289a27aaa2ae2831348",
-		id = 319291039
-	},
-	[319291040] = {
-		speaker = "",
-		prefab_name = "",
-		content = "0e6581c39d5efebc2269db5ddcff2e8d",
-		id = 319291040
-	},
-	[319291041] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "9ec863b33100ecf16b9078781bfb26ff",
-		id = 319291041
-	},
-	[319291042] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "58cba12530fe67cda51222bfe77d674d",
-		id = 319291042
-	},
-	[319291043] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "122d5f423dcfd8bc51f8b19c86cd628c",
-		id = 319291043
-	},
-	[319291044] = {
-		speaker = "",
-		prefab_name = "",
-		content = "3525174477108f951bbf24da83472799",
-		id = 319291044
-	},
-	[319291045] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "4e11e84555d205d374e4b1c6bed9e599",
-		id = 319291045
-	},
-	[319291046] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "a334297a742078de207d0b70443dcc45",
-		id = 319291046
-	},
-	[319291047] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "1e306f43c00c1dc529a7c9ae21ba4aec",
-		id = 319291047
-	},
-	[319291048] = {
-		speaker = "",
-		prefab_name = "",
-		content = "9a1df575838f44e82da6ef4d7a8ed327",
-		id = 319291048
-	},
-	[319291049] = {
-		speaker = "",
-		prefab_name = "",
-		content = "f6195048c6b537137da4af9ae6bc079c",
-		id = 319291049
-	},
-	[319291050] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10079ui_story",
-		content = "f00c45252c46c780bfa82a5d37e5b6c6",
-		id = 319291050
-	},
-	[319301001] = {
-		speaker = "",
-		prefab_name = "",
-		content = "488bb6948f1d59271d86f8fb01e6db60",
-		id = 319301001
-	},
-	[319301002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "3306080e0d67726de43edd9d053d8c83",
-		id = 319301002
-	},
-	[319301003] = {
-		speaker = "科尔盖特工",
-		prefab_name = "",
-		content = "fb727476be66868b35c93037a157bcff",
-		id = 319301003
-	},
-	[319301004] = {
-		speaker = "科尔盖特工",
-		prefab_name = "",
-		content = "6752ad0dcce48359d62ae0e2a835aca9",
-		id = 319301004
-	},
-	[319301005] = {
-		speaker = "托特",
-		prefab_name = "1095ui_story",
-		content = "ba7569539eeaac5d97c9a20fe03154e4",
-		id = 319301005
-	},
-	[319301006] = {
-		speaker = "科尔盖特工",
-		prefab_name = "",
-		content = "4e7fe9942a23900e3f4dcac0b752ac5b",
-		id = 319301006
-	},
-	[319301007] = {
-		speaker = "",
-		prefab_name = "",
-		content = "d3abfdfe88bf8311cae6786ff3d5b8fc",
-		id = 319301007
-	},
-	[319301008] = {
-		speaker = "科尔盖特工",
-		prefab_name = "",
-		content = "c698e71f0fa0b883051fe23f0046dad0",
-		id = 319301008
-	},
-	[319301009] = {
-		speaker = "托特",
-		prefab_name = "1095ui_story",
-		content = "8027343e1ac5a3106ed53a09da2f7fa9",
-		id = 319301009
 	}
 }

@@ -5,7 +5,7 @@ function var_0_0.UIBackCount(arg_1_0)
 end
 
 function var_0_0.UIName(arg_2_0)
-	return "UI/StrategyMatrix/StrategyMatrixProcessUI"
+	return "Widget/System/MatrixlUI/StrategyMatrixProcessUI"
 end
 
 function var_0_0.InitUI(arg_3_0)
@@ -50,9 +50,12 @@ function var_0_0.AddUIListener(arg_4_0)
 	arg_4_0:AddBtnListener(arg_4_0.m_infoBtn, nil, function()
 		local var_11_0 = StrategyMatrixData:GetMatrixHeroTeam(arg_4_0.matrix_activity_id)
 
-		JumpTools.OpenPageByJump("/strategyMatrixHero", {
+		JumpTools.OpenPageByJump("/strategyMatrixHero_new", {
+			isEnter = true,
 			matrix_activity_id = arg_4_0.matrix_activity_id,
-			heroId = var_11_0[1]
+			type = HeroConst.HERO_DATA_TYPE.STRATEGYMATRIX,
+			tempHeroList = var_11_0,
+			hid = var_11_0[1]
 		})
 	end)
 end
@@ -284,7 +287,7 @@ function var_0_0.GetGameState(arg_21_0)
 end
 
 function var_0_0.GetHeroData(arg_22_0, arg_22_1)
-	return StrategyMatrixData:GetHeroData(arg_22_0.matrix_activity_id, arg_22_1)
+	return StrategyMatrixData:GetHeroDataNew(arg_22_1)
 end
 
 function var_0_0.GetAstrolabeMaxCount(arg_23_0)

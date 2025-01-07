@@ -61,7 +61,7 @@ end
 function var_0_0.GetLevelAwardCallBack(arg_6_0, arg_6_1)
 	if isSuccess(arg_6_0.result) then
 		DormLinkGameData:SetRewardInfo(arg_6_1.reward_id, true)
-		getReward(arg_6_0.reward_list)
+		getReward(mergeReward(arg_6_0.reward_list))
 		manager.notify:Invoke(DORM_LINK_REFRESH_LEVEL_AWARD)
 	else
 		ShowTips(arg_6_0.result)
@@ -74,7 +74,7 @@ function var_0_0.GetMultiplyLevelAwardCallBack(arg_7_0, arg_7_1)
 			DormLinkGameData:SetRewardInfo(iter_7_1, true)
 		end
 
-		getReward(arg_7_0.reward_list)
+		getReward(mergeReward(arg_7_0.reward_list))
 		manager.notify:Invoke(DORM_LINK_REFRESH_LEVEL_AWARD)
 	else
 		ShowTips(arg_7_0.result)

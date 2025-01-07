@@ -17,7 +17,7 @@ end
 
 function var_0_0.AddUIListener(arg_4_0)
 	arg_4_0:AddBtnListener(arg_4_0.bgBtn_, nil, function()
-		arg_4_0:Back()
+		var_0_0.super.Back(arg_4_0)
 	end)
 end
 
@@ -25,10 +25,18 @@ function var_0_0.indexItem(arg_6_0, arg_6_1, arg_6_2)
 	local var_6_0 = arg_6_0.itemList_[arg_6_1]
 	local var_6_1 = arg_6_0:ConvertToItemData(var_6_0)
 
+	if (ItemCfg[var_6_0.id].sub_type == ItemConst.ITEM_SUB_TYPE.LIMIT_SKIN or ItemCfg[var_6_0.id].sub_type == ItemConst.ITEM_SUB_TYPE.SCENE_NORMAL) and ItemCfg[var_6_0.id].time then
+		var_6_1.need_count_down = true
+		var_6_1.count_down_use_floor = true
+		var_6_1.count_down_time_text = ItemCfg[var_6_0.id].time[2][1] .. GetTips("DAY")
+	end
+
 	arg_6_2:SetData(var_6_1)
 end
 
 function var_0_0.RefreshUI(arg_7_0, arg_7_1)
+	arg_7_0:CheckBack()
+
 	if arg_7_1 then
 		arg_7_1 = formatRewardCfgList(arg_7_1)
 		arg_7_1 = arg_7_0:SortItemList(arg_7_1)
@@ -97,6 +105,12 @@ function var_0_0.Dispose(arg_15_0)
 		arg_15_0.itemPool1_ = nil
 	end
 
+	if arg_15_0.backTimer_ then
+		arg_15_0.backTimer_:Stop()
+
+		arg_15_0.backTimer_ = nil
+	end
+
 	var_0_0.super.Dispose(arg_15_0)
 end
 
@@ -118,126 +132,145 @@ function var_0_0.ConvertToItemData(arg_17_0, arg_17_1)
 	return var_17_0
 end
 
-function var_0_0.Back(arg_19_0, arg_19_1)
+function var_0_0.CheckBack(arg_19_0)
+	if not manager.guide:IsPlaying() then
+		if arg_19_0.backTimer_ then
+			arg_19_0.backTimer_:Stop()
+
+			arg_19_0.backTimer_ = nil
+		end
+
+		local var_19_0 = GameSetting.reward_pop_view_time.value[1]
+
+		arg_19_0.bgBtn_.enabled = false
+		arg_19_0.backTimer_ = Timer.New(function()
+			arg_19_0.bgBtn_.enabled = true
+		end, var_19_0, 1)
+
+		arg_19_0.backTimer_:Start()
+	end
+end
+
+function var_0_0.Back(arg_21_0, arg_21_1)
 	if manager.guide:IsPlaying() then
-		var_0_0.super.Back(arg_19_0)
+		var_0_0.super.Back(arg_21_0)
 
 		return
 	end
 
-	if arg_19_0:IsAnimEnd() then
-		var_0_0.super.Back(arg_19_0)
+	if arg_21_0:IsAnimEnd() then
+		var_0_0.super.Back(arg_21_0)
 
-		if arg_19_1 then
-			arg_19_1()
+		if arg_21_1 then
+			arg_21_1()
 		end
 	else
-		arg_19_0:StopAllAnim()
+		arg_21_0:StopAllAnim()
 	end
 end
 
-local function var_0_1(arg_20_0)
-	if arg_20_0 == nil then
+local function var_0_1(arg_22_0)
+	if arg_22_0 == nil then
 		return true
 	end
 
-	if arg_20_0:GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.999 then
+	if arg_22_0:GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.999 then
 		return true
 	end
 
 	return false
 end
 
-local function var_0_2(arg_21_0)
-	if arg_21_0 == nil then
+local function var_0_2(arg_23_0)
+	if arg_23_0 == nil then
 		return
 	end
 
-	arg_21_0:Update(99999)
+	arg_23_0:Update(99999)
 end
 
-function var_0_0.IsAnimEnd(arg_22_0)
-	if #arg_22_0.params_.list == 0 then
+function var_0_0.IsAnimEnd(arg_24_0)
+	if #arg_24_0.params_.list == 0 then
 		return true
 	end
 
-	if not var_0_1(arg_22_0.animator_) then
+	if not var_0_1(arg_24_0.animator_) then
 		return false
 	end
 
-	local var_22_0, var_22_1 = arg_22_0.uiList:GetHeadAndTail()
+	local var_24_0, var_24_1 = arg_24_0.uiList:GetHeadAndTail()
 
-	if var_22_0 == 0 then
+	if var_24_0 == 0 then
 		return false
 	end
 
-	local var_22_2 = arg_22_0.uiList:GetItemByIndex(var_22_0)
+	local var_24_2 = arg_24_0.uiList:GetItemByIndex(var_24_0)
 
-	return var_0_1(var_22_2.animator_)
+	return var_0_1(var_24_2.animator_)
 end
 
-function var_0_0.StopAllAnim(arg_23_0)
-	var_0_2(arg_23_0.animator_)
+function var_0_0.StopAllAnim(arg_25_0)
+	var_0_2(arg_25_0.animator_)
 
-	local var_23_0 = arg_23_0.uiList:GetItemList()
+	local var_25_0 = arg_25_0.uiList:GetItemList()
 
-	for iter_23_0, iter_23_1 in pairs(var_23_0) do
-		var_0_2(iter_23_1.animator_)
+	for iter_25_0, iter_25_1 in pairs(var_25_0) do
+		var_0_2(iter_25_1.animator_)
 	end
 end
 
-local function var_0_3(arg_24_0, arg_24_1)
-	local var_24_0 = arg_24_0.id
-	local var_24_1 = arg_24_1.id
-	local var_24_2 = ItemCfg[var_24_0]
-	local var_24_3 = ItemCfg[var_24_1]
-	local var_24_4 = var_24_2.rare
-	local var_24_5 = var_24_3.rare
+local function var_0_3(arg_26_0, arg_26_1)
+	local var_26_0 = arg_26_0.id
+	local var_26_1 = arg_26_1.id
+	local var_26_2 = ItemCfg[var_26_0]
+	local var_26_3 = ItemCfg[var_26_1]
+	local var_26_4 = var_26_2.rare
+	local var_26_5 = var_26_3.rare
 
-	if var_24_4 ~= var_24_5 then
-		return var_24_5 < var_24_4
+	if var_26_4 ~= var_26_5 then
+		return var_26_5 < var_26_4
 	end
 
-	local var_24_6 = var_24_2.type
-	local var_24_7 = var_24_3.type
+	local var_26_6 = var_26_2.type
+	local var_26_7 = var_26_3.type
 
-	if var_24_6 ~= var_24_7 then
-		return var_24_7 < var_24_6
-	elseif var_24_6 == ItemConst.ITEM_TYPE.EQUIP then
-		local var_24_8 = 0
-		local var_24_9 = 0
-		local var_24_10 = EquipCfg[var_24_0].starlevel
-		local var_24_11 = EquipCfg[var_24_1].starlevel
+	if var_26_6 ~= var_26_7 then
+		return var_26_7 < var_26_6
+	elseif var_26_6 == ItemConst.ITEM_TYPE.EQUIP then
+		local var_26_8 = 0
+		local var_26_9 = 0
+		local var_26_10 = EquipCfg[var_26_0].starlevel
+		local var_26_11 = EquipCfg[var_26_1].starlevel
 
-		if var_24_10 == var_24_11 then
-			return var_24_1 < var_24_0
+		if var_26_10 == var_26_11 then
+			return var_26_1 < var_26_0
 		else
-			return var_24_11 < var_24_10
+			return var_26_11 < var_26_10
 		end
 	else
-		return var_24_1 < var_24_0
+		return var_26_1 < var_26_0
 	end
 end
 
-local function var_0_4(arg_25_0, arg_25_1, arg_25_2)
-	local var_25_0 = arg_25_2.type
-	local var_25_1 = table.indexof(arg_25_0, var_25_0)
+local function var_0_4(arg_27_0, arg_27_1, arg_27_2)
+	local var_27_0 = arg_27_2.type
+	local var_27_1 = table.indexof(arg_27_0, var_27_0)
 
-	if var_25_1 and arg_25_1[var_25_0] then
-		local var_25_2 = table.indexof(arg_25_1[var_25_0], arg_25_2.id)
+	if var_27_1 and arg_27_1[var_27_0] then
+		local var_27_2 = table.indexof(arg_27_1[var_27_0], arg_27_2.id)
 
-		if var_25_2 then
-			return var_25_1, var_25_2
+		if var_27_2 then
+			return var_27_1, var_27_2
 		else
 			return false
 		end
 	end
 
-	return var_25_1
+	return var_27_1
 end
 
-function var_0_0.SortItemList(arg_26_0, arg_26_1)
-	local var_26_0 = {
+function var_0_0.SortItemList(arg_28_0, arg_28_1)
+	local var_28_0 = {
 		ItemConst.ITEM_TYPE.HERO,
 		ItemConst.ITEM_TYPE.HERO_SKIN,
 		ItemConst.ITEM_TYPE.SCENE,
@@ -245,9 +278,10 @@ function var_0_0.SortItemList(arg_26_0, arg_26_1)
 		ItemConst.ITEM_TYPE.CURRENCY,
 		ItemConst.ITEM_TYPE.PORTRAIT,
 		ItemConst.ITEM_TYPE.FRAME,
-		ItemConst.ITEM_TYPE.STICKER
+		ItemConst.ITEM_TYPE.STICKER,
+		ItemConst.ITEM_TYPE.DORM_FURNITURE
 	}
-	local var_26_1 = {
+	local var_28_1 = {
 		[ItemConst.ITEM_TYPE.CURRENCY] = {
 			1,
 			30,
@@ -256,30 +290,30 @@ function var_0_0.SortItemList(arg_26_0, arg_26_1)
 		}
 	}
 
-	table.sort(arg_26_1, function(arg_27_0, arg_27_1)
-		local var_27_0 = arg_27_0.id
-		local var_27_1 = arg_27_1.id
-		local var_27_2 = ItemCfg[var_27_0]
-		local var_27_3 = ItemCfg[var_27_1]
-		local var_27_4, var_27_5 = var_0_4(var_26_0, var_26_1, var_27_2)
-		local var_27_6, var_27_7 = var_0_4(var_26_0, var_26_1, var_27_3)
+	table.sort(arg_28_1, function(arg_29_0, arg_29_1)
+		local var_29_0 = arg_29_0.id
+		local var_29_1 = arg_29_1.id
+		local var_29_2 = ItemCfg[var_29_0]
+		local var_29_3 = ItemCfg[var_29_1]
+		local var_29_4, var_29_5 = var_0_4(var_28_0, var_28_1, var_29_2)
+		local var_29_6, var_29_7 = var_0_4(var_28_0, var_28_1, var_29_3)
 
-		if var_27_4 and var_27_6 then
-			local var_27_8 = var_27_4 == var_27_6
+		if var_29_4 and var_29_6 then
+			local var_29_8 = var_29_4 == var_29_6
 
-			if var_27_8 and var_27_5 and var_27_7 then
-				return var_27_5 < var_27_7
-			elseif not var_27_8 then
-				return var_27_4 < var_27_6
+			if var_29_8 and var_29_5 and var_29_7 then
+				return var_29_5 < var_29_7
+			elseif not var_29_8 then
+				return var_29_4 < var_29_6
 			end
-		elseif var_27_4 ~= var_27_6 then
-			return var_27_6 == false
+		elseif var_29_4 ~= var_29_6 then
+			return var_29_6 == false
 		end
 
-		return var_0_3(arg_27_0, arg_27_1)
+		return var_0_3(arg_29_0, arg_29_1)
 	end)
 
-	return arg_26_1
+	return arg_28_1
 end
 
 return var_0_0

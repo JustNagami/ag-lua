@@ -36,7 +36,7 @@ function var_0_0.InitDropDown(arg_6_0)
 	arg_6_0.dropDown_.options:Add(UnityEngine.UI.Dropdown.OptionData.New(GetTips("ALL"), nil))
 	arg_6_0.dropDown_.options:Add(UnityEngine.UI.Dropdown.OptionData.New(GetTips("EQUIP_TYPE_1"), nil))
 	arg_6_0.dropDown_.options:Add(UnityEngine.UI.Dropdown.OptionData.New(GetTips("EQUIP_TYPE_2"), nil))
-	arg_6_0.dropDown_.options:Add(UnityEngine.UI.Dropdown.OptionData.New(GetTips("RACE_TYPE_9"), nil))
+	arg_6_0.dropDown_.options:Add(UnityEngine.UI.Dropdown.OptionData.New(GetTips("RACE_TYPE_10"), nil))
 	arg_6_0.dropDown_:RefreshShownValue()
 end
 
@@ -129,7 +129,7 @@ function var_0_0.indexItem(arg_15_0, arg_15_1, arg_15_2)
 	local var_15_0 = arg_15_0.suitList_[arg_15_1]
 
 	arg_15_2:ShowSelect(var_15_0 == arg_15_0.selectSuitId_)
-	arg_15_2:ShowCurrentUp(var_15_0 == arg_15_0.params_.currentSuitId)
+	arg_15_2:ShowCurrentUp(var_15_0 == arg_15_0.params_.suitId)
 	arg_15_2:RefreshData(arg_15_0, {
 		id = var_15_0
 	})
@@ -164,6 +164,7 @@ end
 
 function var_0_0.OnExit(arg_19_0)
 	arg_19_0.selectSuitId_ = nil
+	arg_19_0.params_.suitId = nil
 end
 
 function var_0_0.Dispose(arg_20_0)

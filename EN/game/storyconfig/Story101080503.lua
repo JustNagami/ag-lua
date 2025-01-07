@@ -223,7 +223,7 @@
 		arg_5_1.frameCnt_ = 0
 		arg_5_1.state_ = "playing"
 		arg_5_1.curTalkId_ = 108053002
-		arg_5_1.duration_ = 7.066
+		arg_5_1.duration_ = 7.07
 
 		local var_5_0 = {
 			ja = 7.066,
@@ -349,7 +349,7 @@
 		arg_9_1.frameCnt_ = 0
 		arg_9_1.state_ = "playing"
 		arg_9_1.curTalkId_ = 108053003
-		arg_9_1.duration_ = 8.566
+		arg_9_1.duration_ = 8.57
 
 		local var_9_0 = {
 			ja = 8.566,
@@ -721,7 +721,7 @@
 		arg_17_1.frameCnt_ = 0
 		arg_17_1.state_ = "playing"
 		arg_17_1.curTalkId_ = 108053005
-		arg_17_1.duration_ = 6.366
+		arg_17_1.duration_ = 6.37
 
 		local var_17_0 = {
 			ja = 6.366,
@@ -804,6 +804,9 @@
 
 				arg_17_1.callingController_:SetSelectedState("normal")
 
+				arg_17_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_17_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_20_9 = arg_17_1:GetWordFromCfg(108053005)
 				local var_20_10 = arg_17_1:FormatText(var_20_9.content)
 
@@ -872,7 +875,7 @@
 		arg_21_1.frameCnt_ = 0
 		arg_21_1.state_ = "playing"
 		arg_21_1.curTalkId_ = 108053006
-		arg_21_1.duration_ = 7.666
+		arg_21_1.duration_ = 7.67
 
 		local var_21_0 = {
 			ja = 7.666,
@@ -1025,7 +1028,7 @@
 		arg_25_1.frameCnt_ = 0
 		arg_25_1.state_ = "playing"
 		arg_25_1.curTalkId_ = 108053007
-		arg_25_1.duration_ = 5.766
+		arg_25_1.duration_ = 5.77
 
 		local var_25_0 = {
 			ja = 5.766,

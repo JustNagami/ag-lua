@@ -16,6 +16,7 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
+	arg_4_0.img_.immediate = true
 	arg_4_0.typeCon_ = ControllerUtil.GetController(arg_4_0.gameObject_.transform, "type")
 end
 
@@ -51,7 +52,7 @@ function var_0_0.OnEnter(arg_10_0)
 end
 
 function var_0_0.RefreshUI(arg_11_0)
-	arg_11_0.img_.sprite = getSpriteWithoutAtlas("TextureConfig/Background/" .. arg_11_0.cfg_.picture)
+	arg_11_0.img_.spriteSync = "TextureConfig/Background/" .. arg_11_0.cfg_.picture
 	arg_11_0.name_.text = GetI18NText(arg_11_0.cfg_.name)
 	arg_11_0.desc_.text = GetI18NText(arg_11_0.cfg_.desc)
 

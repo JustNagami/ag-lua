@@ -12,6 +12,9 @@ function var_0_0.Init(arg_3_0)
 	arg_3_0.rankTypeConst_ = MythicData:GetRankTypeConst()
 
 	arg_3_0:InitUI()
+
+	arg_3_0.commonPortrait_ = CommonHeadPortrait.New(arg_3_0.headItem_)
+
 	arg_3_0:AddListeners()
 end
 
@@ -109,8 +112,8 @@ function var_0_0.Refresh(arg_11_0)
 
 	local var_11_6 = PlayerData:GetPlayerInfo()
 
-	arg_11_0.myHeadIcon_.sprite = ItemTools.getItemSprite(var_11_6 and var_11_6.portrait)
-	arg_11_0.myHeadFrame_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_11_6.icon_frame)
+	arg_11_0.commonPortrait_:RenderHead(var_11_6 and var_11_6.portrait)
+	arg_11_0.commonPortrait_:RenderFrame(var_11_6.icon_frame)
 end
 
 function var_0_0.SwitchPageIfDiff(arg_12_0, arg_12_1)
@@ -127,6 +130,7 @@ function var_0_0.IndexItem(arg_13_0, arg_13_1, arg_13_2)
 end
 
 function var_0_0.Dispose(arg_14_0)
+	arg_14_0.commonPortrait_:Dispose()
 	arg_14_0.list_:Dispose()
 	var_0_0.super.Dispose(arg_14_0)
 

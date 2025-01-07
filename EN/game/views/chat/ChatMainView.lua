@@ -415,20 +415,18 @@ function var_0_0.SetCamera(arg_41_0)
 			local var_41_2 = string.format("chat_%d_%d", var_41_0, var_41_1)
 
 			manager.ui:SetMainCamera(var_41_2)
+		elseif CameraCfg["t0_chat_" .. var_41_0] then
+			manager.ui:SetMainCamera("t0_chat_" .. var_41_0)
+		elseif CameraCfg["chat_" .. var_41_0] then
+			manager.ui:SetMainCamera("chat_" .. var_41_0)
 		else
-			local var_41_3 = "chat_" .. var_41_0
-
-			if CameraCfg[var_41_3] then
-				manager.ui:SetMainCamera(var_41_3)
-			else
-				manager.ui:SetMainCamera("chat")
-			end
+			manager.ui:SetMainCamera("chat")
 		end
 	else
-		local var_41_4 = "chat_" .. var_41_0
+		local var_41_3 = "chat_" .. var_41_0
 
-		if CameraCfg[var_41_4] then
-			manager.ui:SetMainCamera(var_41_4)
+		if CameraCfg[var_41_3] then
+			manager.ui:SetMainCamera(var_41_3)
 		else
 			manager.ui:SetMainCamera("chat")
 		end

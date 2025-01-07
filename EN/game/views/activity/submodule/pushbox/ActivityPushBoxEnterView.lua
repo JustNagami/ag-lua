@@ -31,9 +31,7 @@ function var_0_0.AddUIListeners(arg_4_0)
 	end)
 	arg_4_0:AddBtnListener(arg_4_0.goBtn_, nil, function()
 		if arg_4_0.activityData_:IsActivitying() then
-			JumpTools.OpenPageByJump("/activityPushBoxMain", {
-				activityID = arg_4_0.activityID_
-			})
+			JumpTools.OpenPageByJump("/summerWaterMain")
 		end
 	end)
 end

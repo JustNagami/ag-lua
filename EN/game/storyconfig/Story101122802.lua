@@ -564,7 +564,7 @@
 		arg_15_1.frameCnt_ = 0
 		arg_15_1.state_ = "playing"
 		arg_15_1.curTalkId_ = 112282004
-		arg_15_1.duration_ = 5.133
+		arg_15_1.duration_ = 5.13
 
 		local var_15_0 = {
 			ja = 5.133,
@@ -892,7 +892,7 @@
 		arg_23_1.frameCnt_ = 0
 		arg_23_1.state_ = "playing"
 		arg_23_1.curTalkId_ = 112282006
-		arg_23_1.duration_ = 6.033
+		arg_23_1.duration_ = 6.03
 
 		local var_23_0 = {
 			ja = 5.2,
@@ -1096,7 +1096,7 @@
 		arg_27_1.frameCnt_ = 0
 		arg_27_1.state_ = "playing"
 		arg_27_1.curTalkId_ = 112282007
-		arg_27_1.duration_ = 11.766
+		arg_27_1.duration_ = 11.77
 
 		local var_27_0 = {
 			ja = 11.766,
@@ -1338,7 +1338,7 @@
 		arg_31_1.frameCnt_ = 0
 		arg_31_1.state_ = "playing"
 		arg_31_1.curTalkId_ = 112282008
-		arg_31_1.duration_ = 8.633
+		arg_31_1.duration_ = 8.63
 
 		local var_31_0 = {
 			ja = 8.633,
@@ -1585,7 +1585,7 @@
 		arg_39_1.frameCnt_ = 0
 		arg_39_1.state_ = "playing"
 		arg_39_1.curTalkId_ = 112282010
-		arg_39_1.duration_ = 4.833
+		arg_39_1.duration_ = 4.83
 
 		local var_39_0 = {
 			ja = 4.166,
@@ -1747,7 +1747,7 @@
 		arg_43_1.frameCnt_ = 0
 		arg_43_1.state_ = "playing"
 		arg_43_1.curTalkId_ = 112282011
-		arg_43_1.duration_ = 8.766
+		arg_43_1.duration_ = 8.77
 
 		local var_43_0 = {
 			ja = 8.766,
@@ -1867,7 +1867,7 @@
 		arg_47_1.frameCnt_ = 0
 		arg_47_1.state_ = "playing"
 		arg_47_1.curTalkId_ = 112282012
-		arg_47_1.duration_ = 6.366
+		arg_47_1.duration_ = 6.37
 
 		local var_47_0 = {
 			ja = 4.766,
@@ -2114,7 +2114,7 @@
 		arg_55_1.frameCnt_ = 0
 		arg_55_1.state_ = "playing"
 		arg_55_1.curTalkId_ = 112282014
-		arg_55_1.duration_ = 10.533
+		arg_55_1.duration_ = 10.53
 
 		local var_55_0 = {
 			ja = 6.566,
@@ -2318,7 +2318,7 @@
 		arg_59_1.frameCnt_ = 0
 		arg_59_1.state_ = "playing"
 		arg_59_1.curTalkId_ = 112282015
-		arg_59_1.duration_ = 11.166
+		arg_59_1.duration_ = 11.17
 
 		local var_59_0 = {
 			ja = 11.166,
@@ -2726,7 +2726,7 @@
 		arg_67_1.frameCnt_ = 0
 		arg_67_1.state_ = "playing"
 		arg_67_1.curTalkId_ = 112282017
-		arg_67_1.duration_ = 8.033
+		arg_67_1.duration_ = 8.03
 
 		local var_67_0 = {
 			ja = 3.966,
@@ -2949,7 +2949,7 @@
 		arg_71_1.frameCnt_ = 0
 		arg_71_1.state_ = "playing"
 		arg_71_1.curTalkId_ = 112282018
-		arg_71_1.duration_ = 8.133
+		arg_71_1.duration_ = 8.13
 
 		local var_71_0 = {
 			ja = 7.3,
@@ -3069,7 +3069,7 @@
 		arg_75_1.frameCnt_ = 0
 		arg_75_1.state_ = "playing"
 		arg_75_1.curTalkId_ = 112282019
-		arg_75_1.duration_ = 6.133
+		arg_75_1.duration_ = 6.13
 
 		local var_75_0 = {
 			ja = 6.133,
@@ -3904,7 +3904,7 @@
 		arg_91_1.frameCnt_ = 0
 		arg_91_1.state_ = "playing"
 		arg_91_1.curTalkId_ = 112282023
-		arg_91_1.duration_ = 5.733
+		arg_91_1.duration_ = 5.73
 
 		local var_91_0 = {
 			ja = 5.733,
@@ -4228,7 +4228,7 @@
 		arg_99_1.frameCnt_ = 0
 		arg_99_1.state_ = "playing"
 		arg_99_1.curTalkId_ = 112282025
-		arg_99_1.duration_ = 11.233
+		arg_99_1.duration_ = 11.23
 
 		local var_99_0 = {
 			ja = 11.233,
@@ -4348,7 +4348,7 @@
 		arg_103_1.frameCnt_ = 0
 		arg_103_1.state_ = "playing"
 		arg_103_1.curTalkId_ = 112282026
-		arg_103_1.duration_ = 14.233
+		arg_103_1.duration_ = 14.23
 
 		local var_103_0 = {
 			ja = 14.233,
@@ -4589,7 +4589,7 @@
 		arg_111_1.frameCnt_ = 0
 		arg_111_1.state_ = "playing"
 		arg_111_1.curTalkId_ = 112282028
-		arg_111_1.duration_ = 7.533
+		arg_111_1.duration_ = 7.53
 
 		local var_111_0 = {
 			ja = 7.133,
@@ -4985,7 +4985,7 @@
 		arg_123_1.frameCnt_ = 0
 		arg_123_1.state_ = "playing"
 		arg_123_1.curTalkId_ = 112282031
-		arg_123_1.duration_ = 7.966
+		arg_123_1.duration_ = 7.97
 
 		local var_123_0 = {
 			ja = 7.966,
@@ -5147,7 +5147,7 @@
 		arg_127_1.frameCnt_ = 0
 		arg_127_1.state_ = "playing"
 		arg_127_1.curTalkId_ = 112282032
-		arg_127_1.duration_ = 6.566
+		arg_127_1.duration_ = 6.57
 
 		local var_127_0 = {
 			ja = 6.566,

@@ -829,6 +829,9 @@
 
 				arg_15_1.callingController_:SetSelectedState("normal")
 
+				arg_15_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_15_1.icon_.color = Color.New(1, 1, 1)
+
 				local var_18_27 = arg_15_1:GetWordFromCfg(910501010)
 				local var_18_28 = arg_15_1:FormatText(var_18_27.content)
 

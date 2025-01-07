@@ -20,9 +20,7 @@ function var_0_1.ClickItem(arg_2_0)
 		OperationRecorder.RecordButtonTouch("challenge_boss_below")
 	end
 
-	if arg_2_0.isLock_ then
-		ShowTips(arg_2_0.lockTips_)
-
+	if arg_2_0:CheckLock() then
 		return
 	end
 

@@ -16,14 +16,33 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
-	arg_4_0.discountCon_ = ControllerUtil.GetController(arg_4_0.transform_, "discount")
+	arg_4_0.giveId = {}
+	arg_4_0.costNumText_ = {}
+	arg_4_0.costImg_ = {}
+	arg_4_0.costNameText_ = {}
+	arg_4_0.giveNumText_ = {}
+	arg_4_0.giveImg_ = {}
+	arg_4_0.giveNameText_ = {}
+	arg_4_0.disconutController_ = {}
+	arg_4_0.discountText_ = {}
+
+	for iter_4_0 = 1, 2 do
+		arg_4_0.costNumText_[iter_4_0] = arg_4_0["costNumText_" .. iter_4_0]
+		arg_4_0.costImg_[iter_4_0] = arg_4_0["costImg_" .. iter_4_0]
+		arg_4_0.costNameText_[iter_4_0] = arg_4_0["costNameText_" .. iter_4_0]
+		arg_4_0.giveNumText_[iter_4_0] = arg_4_0["giveNumText_" .. iter_4_0]
+		arg_4_0.giveImg_[iter_4_0] = arg_4_0["giveImg_" .. iter_4_0]
+		arg_4_0.giveNameText_[iter_4_0] = arg_4_0["giveNameText_" .. iter_4_0]
+		arg_4_0.disconutController_[iter_4_0] = arg_4_0["discountCon_" .. iter_4_0]:GetController("discount")
+		arg_4_0.discountText_[iter_4_0] = arg_4_0["discountText_" .. iter_4_0]
+	end
 end
 
 function var_0_0.AddUIListeners(arg_5_0)
-	arg_5_0:AddToggleListener(arg_5_0.tgl1_, function(arg_6_0)
+	arg_5_0:AddToggleListener(arg_5_0.connect1Tgl_, function(arg_6_0)
 		arg_5_0.choose_ = 1
 	end)
-	arg_5_0:AddToggleListener(arg_5_0.tgl2_, function(arg_7_0)
+	arg_5_0:AddToggleListener(arg_5_0.connect2Tgl_, function(arg_7_0)
 		arg_5_0.choose_ = 2
 	end)
 	arg_5_0:AddBtnListener(arg_5_0.bgBtn_, nil, function()
@@ -45,9 +64,6 @@ function var_0_0.AddUIListeners(arg_5_0)
 end
 
 function var_0_0.OnEnter(arg_11_0)
-	arg_11_0.choose_ = 2
-	arg_11_0.tgl2_.isOn = true
-
 	arg_11_0:RefreshUI()
 end
 
@@ -57,40 +73,51 @@ function var_0_0.RefreshUI(arg_12_0)
 	arg_12_0.goods_ = arg_12_0.params_.goods
 	arg_12_0.cnt_ = arg_12_0.params_.cnt
 
+	arg_12_0:RefreshState()
 	arg_12_0:RefreshGoods()
-	arg_12_0:RefreshDiscount()
 end
 
-function var_0_0.RefreshGoods(arg_13_0)
-	arg_13_0.text1_.text = arg_13_0:GetGoodsDesc(1)
-	arg_13_0.text2_.text = arg_13_0:GetGoodsDesc(2)
+function var_0_0.RefreshState(arg_13_0)
+	arg_13_0.disconut_ = arg_13_0.params_.discount
+
+	if arg_13_0.disconut_[2] < arg_13_0.disconut_[1] or arg_13_0.disconut_[1] == 0 then
+		arg_13_0.choose_ = 2
+		arg_13_0.connect2Tgl_.isOn = true
+	else
+		arg_13_0.choose_ = 1
+		arg_13_0.connect1Tgl_.isOn = true
+	end
 end
 
-function var_0_0.GetGoodsDesc(arg_14_0, arg_14_1)
-	local var_14_0 = arg_14_0.goods_[arg_14_1]
-	local var_14_1 = getShopCfg(var_14_0)
-	local var_14_2 = var_14_1.cost_id
-	local var_14_3 = var_14_1.give_id
-	local var_14_4 = var_14_1.cost
-
-	if var_14_1.discount ~= 0 then
-		var_14_4 = var_14_1.cheap_cost
+function var_0_0.RefreshGoods(arg_14_0)
+	for iter_14_0, iter_14_1 in ipairs(arg_14_0.goods_) do
+		arg_14_0:RefrehGoodsInfo(iter_14_0)
 	end
 
-	return string.format(GetTips("GENGCHEN_SWIMWEAR_TICKET_TIPS"), var_14_4 * arg_14_0.cnt_, ItemTools.getItemName(var_14_2), ItemTools.getItemName(var_14_3), arg_14_0.cnt_)
+	arg_14_0.descText_.text = string.format(GetTips("SELECT_MATERIAL_LIST_EXCHANGE"), arg_14_0.cnt_, ItemTools.getItemName(arg_14_0.giveId[arg_14_0.choose_]))
 end
 
-function var_0_0.RefreshDiscount(arg_15_0)
-	local var_15_0 = arg_15_0.goods_[2]
+function var_0_0.RefrehGoodsInfo(arg_15_0, arg_15_1)
+	local var_15_0 = arg_15_0.goods_[arg_15_1]
 	local var_15_1 = getShopCfg(var_15_0)
+	local var_15_2 = var_15_1.cost_id
+	local var_15_3 = var_15_1.give_id
+	local var_15_4 = var_15_1.cost
 
 	if var_15_1.discount ~= 0 then
-		arg_15_0.discount_.text = string.format("%.1f%s", var_15_1.discount / 10, GetTips("LABEL_DISCOUNT"))
-
-		arg_15_0.discountCon_:SetSelectedState("true")
-	else
-		arg_15_0.discountCon_:SetSelectedState("false")
+		var_15_4 = var_15_1.cheap_cost
 	end
+
+	arg_15_0.giveId[arg_15_1] = var_15_3
+	arg_15_0.costNumText_[arg_15_1].text = var_15_4 * arg_15_0.cnt_
+	arg_15_0.costImg_[arg_15_1].sprite = ItemTools.getItemSprite(var_15_2)
+	arg_15_0.costNameText_[arg_15_1].text = ItemTools.getItemName(var_15_2)
+	arg_15_0.giveNumText_[arg_15_1].text = arg_15_0.cnt_
+	arg_15_0.giveImg_[arg_15_1].sprite = ItemTools.getItemSprite(var_15_3, nil, true)
+	arg_15_0.giveNameText_[arg_15_1].text = ItemTools.getItemName(var_15_3, nil, true)
+	arg_15_0.discountText_[arg_15_1].text = string.format("%.1f%s", arg_15_0.disconut_[arg_15_1] / 10, GetTips("LABEL_DISCOUNT"))
+
+	arg_15_0.disconutController_[arg_15_1]:SetSelectedState(arg_15_0.disconut_[arg_15_1] ~= 0 and "show" or "hide")
 end
 
 function var_0_0.OnShopBuyResult(arg_16_0, arg_16_1, arg_16_2, arg_16_3)

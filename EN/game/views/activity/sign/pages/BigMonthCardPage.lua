@@ -69,7 +69,7 @@ function var_0_0.AddUIListeners(arg_4_0)
 		end
 	end)
 	arg_4_0:AddBtnListener(arg_4_0.receiveBtn_, nil, function()
-		manager.ui:UIEventEnabledByUI(false, true)
+		manager.notify:CallUpdateFunc(SIGN_INPUT, false)
 		BigMonthCardAction.SignToday()
 	end)
 	arg_4_0:AddBtnListener(arg_4_0.infoBtn_, nil, function()
@@ -123,7 +123,7 @@ function var_0_0.AutoGetReward(arg_13_0)
 	if BigMonthCardData:IsExpireTip() == 1 then
 		BigMonthCardAction.FirstLoginSinceMonthCardFinish()
 	else
-		manager.ui:UIEventEnabledByUI(false, true)
+		manager.notify:CallUpdateFunc(SIGN_INPUT, false)
 
 		if BigMonthCardData:HaveMonthCard() and not BigMonthCardData:IsSignToday() then
 			BigMonthCardAction.SignToday()
@@ -141,14 +141,14 @@ function var_0_0.AutoGetAccumlateSign(arg_14_0)
 
 	for iter_14_0, iter_14_1 in ipairs(var_14_3) do
 		if var_14_1 >= BigMonthCardAccumulationCfg[iter_14_1].accumulation and not table.indexof(var_14_0, iter_14_1) then
-			manager.ui:UIEventEnabledByUI(false, true)
+			manager.notify:CallUpdateFunc(SIGN_INPUT, false)
 			BigMonthCardAction.AccumulateSign(iter_14_1)
 
 			return
 		end
 	end
 
-	manager.ui:UIEventEnabledByUI(true, false)
+	manager.notify:CallUpdateFunc(SIGN_INPUT, true)
 	arg_14_0.hander_:CheckSign()
 end
 
@@ -165,7 +165,7 @@ function var_0_0.OnShow(arg_15_0)
 			payment_big_monthcard = 1
 		})
 		arg_15_0:RefreshUI()
-		manager.ui:UIEventEnabledByUI(false, true)
+		manager.notify:CallUpdateFunc(SIGN_INPUT, false)
 		BigMonthCardAction.SignToday()
 	end)
 	SDKTools.SendPaymentMessageToSDK("payment_big_monthcard_click", {

@@ -8,6 +8,7 @@
 		info_desc = "",
 		title = "6011d12f74b4f75dad06fbbd01f1f97b",
 		sub_title = "b23b2800bb21058ea64105353b470a3e",
+		params = "",
 		show_time = "",
 		icon = "100001",
 		order = 999,
@@ -24,6 +25,7 @@
 		info_desc = "",
 		title = "f81a683340e3474c33221e7e036a75d9",
 		sub_title = "3f28a498e71d8120ffd073efa2d53874",
+		params = "",
 		show_time = "2023.6.20-2023.7.20",
 		icon = "100002",
 		order = 1,
@@ -72,6 +74,7 @@
 		info_desc = "",
 		title = "561f9756c2470bd2a20e9b1be5bee81a",
 		sub_title = "f2123c8dfee43933ab004231a1e0f0f7",
+		params = "",
 		show_time = "2023.5.25-2023.6.20",
 		icon = "100003",
 		order = 2,
@@ -120,6 +123,7 @@
 		info_desc = "",
 		title = "3662fea8cb017f47618b60bab81b1d6c",
 		sub_title = "262891e3665cd882e4eac3dea32d8655",
+		params = "",
 		show_time = "2023.6.20-2023.7.20",
 		icon = "100004",
 		order = 3,
@@ -168,6 +172,7 @@
 		info_desc = "",
 		title = "0ed0bc55ec53617bf63355484edc2a7e",
 		sub_title = "830b4fd6511f855cb3478bd25a12ed2a",
+		params = "",
 		show_time = "2023.7.20-2023.8.17",
 		icon = "100005",
 		order = 2,
@@ -216,6 +221,7 @@
 		info_desc = "",
 		title = "2264356019c8e1e4c0c42a33fda8be40",
 		sub_title = "92241426451d086764d787a2fc0079cb",
+		params = "",
 		show_time = "2023.7.20-2023.8.17",
 		icon = "100006",
 		order = 1,
@@ -265,6 +271,7 @@
 		info_desc = "",
 		title = "df37b7db3a1e649cbdff0773d5b5375a",
 		sub_title = "3e5c185af59dbf2efad8c18d8f023877",
+		params = "",
 		show_time = "",
 		icon = "100007",
 		order = 998,
@@ -282,31 +289,32 @@
 		info_desc = "",
 		title = "15db526ddad1ef278ce507172fdbb6df",
 		sub_title = "af8f15de28f8cc3be329a2ba715b6ecb",
-		show_time = "2023.8.17-2023.8.31",
+		params = "",
+		show_time = "2024.7.4-2024.7.11",
 		icon = "100008",
-		order = 1,
+		order = 4,
 		jump = {
 			2901,
-			182211
+			272211
 		},
 		time = {
 			{
 				{
-					2023,
-					8,
-					17
+					2024,
+					7,
+					4
 				},
 				{
-					7,
+					5,
 					0,
 					0
 				}
 			},
 			{
 				{
-					2023,
-					8,
-					31
+					2024,
+					7,
+					11
 				},
 				{
 					5,
@@ -324,6 +332,7 @@
 		info_desc = "",
 		title = "26a3c1faa8eed9421b6b02860c9319eb",
 		sub_title = "4bac0165a6d02d4ce5e74ca30741a34a",
+		params = "",
 		show_time = "",
 		icon = "100010",
 		order = 1,
@@ -372,6 +381,7 @@
 		info_desc = "",
 		title = "09aa30f4e89cf77d2fa74c691157a375",
 		sub_title = "918f05bb91d78c977c63d6a170b7c437",
+		params = "",
 		show_time = "",
 		icon = "100011",
 		order = 2,
@@ -420,6 +430,7 @@
 		info_desc = "",
 		title = "0f179ebee85afe0c865e3e965661c485",
 		sub_title = "4851af726a6362f352d2f04e42979440",
+		params = "",
 		show_time = "",
 		icon = "100009",
 		order = 4,
@@ -468,6 +479,7 @@
 		info_desc = "",
 		title = "720bfed57de386615de5dbe893aa7618",
 		sub_title = "897cb236046336f406ce96334111f22a",
+		params = "",
 		show_time = "2023.11.9-2023.12.7",
 		icon = "100012",
 		order = 2,
@@ -516,6 +528,7 @@
 		info_desc = "",
 		title = "c2bc50a44133f232dc3787ffc0638c98",
 		sub_title = "e1575c07ed7d56d066f26ed0926fba80",
+		params = "",
 		show_time = "",
 		icon = "100013",
 		order = 3,
@@ -564,6 +577,7 @@
 		info_desc = "",
 		title = "7c35225101615f66c354219a5836d273",
 		sub_title = "084413dbaf11fadec0f844bfa0c100ae",
+		params = "",
 		show_time = "2023.12.7-2024.1.4",
 		icon = "100014",
 		order = 1,
@@ -648,6 +662,9 @@
 					0
 				}
 			}
+		},
+		params = {
+			30041
 		}
 	},
 	[100016] = {
@@ -659,6 +676,7 @@
 		info_desc = "",
 		title = "52dff2a829256ee3d88f5f158b0ff88f",
 		sub_title = "ece93166ba9745aedd40959c524e490f",
+		params = "",
 		show_time = "2023.12.7-2024.1.4",
 		icon = "100016",
 		order = 1,
@@ -700,6 +718,7 @@
 		info_desc = "",
 		title = "f379aefb301c5450152c553d8f7ca8ae",
 		sub_title = "01ef5853f430384189d23454ac90da57",
+		params = "",
 		show_time = "2024.2.1-2024.2.29",
 		icon = "100019",
 		order = 1,
@@ -748,6 +767,7 @@
 		info_desc = "",
 		title = "eb6babef9ef61deecbc8106147cbaedf",
 		sub_title = "a044da7aed0cb6d53d9fd406f8f51281",
+		params = "",
 		show_time = "2024.2.1-2024.2.29",
 		icon = "100018",
 		order = 2,
@@ -796,6 +816,7 @@
 		info_desc = "",
 		title = "02b329044a505cc9165e1f5d75ce361a",
 		sub_title = "890bd14736c448ba40ca2b8dbc97bed2",
+		params = "",
 		show_time = "2024.2.1-2024.2.29",
 		icon = "100017",
 		order = 3,
@@ -843,6 +864,7 @@
 		info_desc = "",
 		title = "1e2a05c52a89a551ce91f4af3a7806c7",
 		sub_title = "9617d24eb6fe81d233bc12316ce71ede",
+		params = "",
 		show_time = "2024.2.1-2024.2.29",
 		icon = "100016",
 		order = 4,
@@ -884,6 +906,7 @@
 		info_desc = "",
 		title = "6b4a538407c9481e78925f4c8103edfc",
 		sub_title = "0dbb7522c1cc0520637e0789b9684ca1",
+		params = "",
 		show_time = "",
 		icon = "100020",
 		order = 1,
@@ -932,6 +955,7 @@
 		info_desc = "",
 		title = "62869165565c67afed17a821d3eb97ba",
 		sub_title = "8fdfa28d579d72ff3d9f44d0677d7e93",
+		params = "",
 		show_time = "",
 		icon = "100021",
 		order = 2,
@@ -979,6 +1003,7 @@
 		goods_id = 100023,
 		title = "ced15a3a3e012cdb2acba5d2c22fc338",
 		sub_title = "a1a1754e598b9595cc64ec74b959fe22",
+		params = "",
 		show_time = "2024.4.11-2024.5.16",
 		icon = "100027",
 		order = 1,
@@ -1029,6 +1054,7 @@
 		info_desc = "",
 		title = "d58c209d111625f4f4f85d73bff07470",
 		sub_title = "9156328faaeb9b6807d774f0d25f4e19",
+		params = "",
 		show_time = "",
 		icon = "100022",
 		order = 2,
@@ -1077,6 +1103,7 @@
 		info_desc = "",
 		title = "cce9f75fa12276ab3c1f657d9aa8c155",
 		sub_title = "f47ae31f6d8f873a7fc69a3c4a3dc0ef",
+		params = "",
 		show_time = "2024.4.11-2024.4.30",
 		icon = "100024",
 		order = 3,
@@ -1125,6 +1152,7 @@
 		info_desc = "",
 		title = "a7e19d4d21ca73b37ce54687c826d1a7",
 		sub_title = "ed6193dec9e6e4df4c3ac97ee3226572",
+		params = "",
 		show_time = "",
 		icon = "100023",
 		order = 4,
@@ -1173,6 +1201,7 @@
 		info_desc = "",
 		title = "a063d940f0a78cf86cf60e15d344d955",
 		sub_title = "eaeae285308f58dd435512324a0597a2",
+		params = "",
 		show_time = "2024.5.16-2024.6.20",
 		icon = "100025",
 		order = 1,
@@ -1221,6 +1250,7 @@
 		info_desc = "",
 		title = "56509af537ef5d218095ce70a2a363c2",
 		sub_title = "f66a1fb63cd8c96f0d21e68018b3ec1e",
+		params = "",
 		show_time = "",
 		icon = "100026",
 		order = 2,
@@ -1269,6 +1299,7 @@
 		info_desc = "",
 		title = "0c94acb8cca82b637e78c10176d7183a",
 		sub_title = "a5c1d7bec4908352b011c3798271431a",
+		params = "",
 		show_time = "",
 		icon = "100028",
 		order = 1,
@@ -1309,6 +1340,55 @@
 			}
 		}
 	},
+	[100030] = {
+		new_recommend = 1,
+		prefab = "recommend_109303",
+		show_type = 0,
+		goods_id = 100030,
+		info_desc = "",
+		title = "e8872f30b773fdde77293dcd3a681ff6",
+		sub_title = "36e71459b82c4729a9f7eb7c07cd79e2",
+		params = "",
+		show_time = "2024.7.4-2024.7.18",
+		icon = "100028",
+		order = 3,
+		jump = {
+			525
+		},
+		jump2 = {
+			534,
+			16000004,
+			1093,
+			109303,
+			15
+		},
+		time = {
+			{
+				{
+					2024,
+					7,
+					4
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2024,
+					7,
+					18
+				},
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
 	[100031] = {
 		new_recommend = 1,
 		prefab = "recommend_104204",
@@ -1317,6 +1397,7 @@
 		info_desc = "",
 		title = "dd44af535c38e7d8188527790506ebd5",
 		sub_title = "570ff10f389adf65726ba7279b51db20",
+		params = "",
 		show_time = "2024.6.20-2024.7.18",
 		icon = "100030",
 		order = 2,
@@ -1355,6 +1436,436 @@
 			}
 		}
 	},
+	[100032] = {
+		new_recommend = 1,
+		prefab = "recommend_104902",
+		show_type = 0,
+		goods_id = 100032,
+		info_desc = "",
+		title = "0d049aad90ba75f5b0beb009ecc5bc59",
+		sub_title = "6bf689194161b51b394bf6915a647c35",
+		params = "",
+		show_time = "2024.7.18-2024.8.22",
+		icon = "icon_104902",
+		order = 1,
+		jump = {
+			525
+		},
+		jump2 = {
+			531,
+			15000019,
+			1049,
+			104902,
+			15
+		},
+		time = {
+			{
+				{
+					2024,
+					7,
+					18
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2024,
+					8,
+					22
+				},
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[100033] = {
+		new_recommend = 1,
+		prefab = "recommend_102201",
+		show_type = 0,
+		goods_id = 100033,
+		info_desc = "",
+		title = "b972def4fff5d7cfe9a1368971e41617",
+		sub_title = "070024cc71aa244c5a0f6433091e294e",
+		params = "",
+		show_time = "2024.7.18-2024.8.22",
+		icon = "icon_102201",
+		order = 2,
+		jump = {
+			525
+		},
+		jump2 = {
+			531,
+			15000020,
+			1022,
+			102201,
+			15
+		},
+		time = {
+			{
+				{
+					2024,
+					7,
+					18
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2024,
+					8,
+					22
+				},
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[100034] = {
+		new_recommend = 1,
+		prefab = "recommend_102101",
+		show_type = 0,
+		goods_id = 100034,
+		info_desc = "",
+		title = "2b76e017626866dee84e10f2f41b008b",
+		sub_title = "b5eac5e1466e35fd40f15317a4dc883f",
+		params = "",
+		show_time = "2024.8.22-2024.9.26",
+		icon = "icon_102101",
+		order = 3,
+		jump = {
+			525
+		},
+		jump2 = {
+			531,
+			15000021,
+			1021,
+			102101,
+			15
+		},
+		time = {
+			{
+				{
+					2024,
+					8,
+					22
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2024,
+					9,
+					26
+				},
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[100035] = {
+		jump2 = "",
+		new_recommend = 1,
+		prefab = "recommend_107001_107401",
+		show_type = 0,
+		goods_id = 100035,
+		info_desc = "",
+		title = "f5fdfc7b5af623bdabf3bb54df699472",
+		sub_title = "dc8e4655b754288959f0b5ac1efc3f4a",
+		params = "",
+		show_time = "2024.8.22-2024.9.26",
+		icon = "100016",
+		order = 4,
+		jump = {
+			525
+		},
+		time = {
+			{
+				{
+					2024,
+					8,
+					22
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2024,
+					9,
+					26
+				},
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[100036] = {
+		new_recommend = 1,
+		prefab = "recommend_102001",
+		show_type = 0,
+		goods_id = 100036,
+		info_desc = "",
+		title = "1aebea5b1842cfd1f6dfc3ce97209f84",
+		sub_title = "978ba5c7d7d4ddda9eb264e79deee7a0",
+		params = "",
+		show_time = "2024.9.26-2024.10.24",
+		icon = "icon_102001",
+		order = 1,
+		jump = {
+			525
+		},
+		jump2 = {
+			531,
+			15000022,
+			1020,
+			102001,
+			15
+		},
+		time = {
+			{
+				{
+					2024,
+					9,
+					26
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2024,
+					10,
+					24
+				},
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[100037] = {
+		new_recommend = 1,
+		prefab = "recommend_108901",
+		show_type = 0,
+		goods_id = 100037,
+		info_desc = "",
+		title = "4797b43069ea7cd44e1c66fe976f9432",
+		sub_title = "82acd8291019e6807c929d32ca029d82",
+		params = "",
+		show_time = "",
+		icon = "icon_108901",
+		order = 2,
+		jump = {
+			525
+		},
+		jump2 = {
+			531,
+			15000023,
+			1089,
+			108901,
+			15
+		},
+		time = {
+			{
+				{
+					2024,
+					10,
+					24
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2024,
+					11,
+					21
+				},
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[100038] = {
+		jump2 = "",
+		new_recommend = 1,
+		prefab = "recommend_109502",
+		show_type = 0,
+		goods_id = 100038,
+		info_desc = "",
+		title = "a8d7f41fddf8abf060ddec1001364427",
+		sub_title = "871ac0cf96c338a13a5903aaedd3cfd9",
+		params = "",
+		show_time = "2024.10.24-2024.11.21",
+		icon = "icon_109502",
+		order = 1,
+		jump = {
+			2901,
+			292211
+		},
+		time = {
+			{
+				{
+					2024,
+					10,
+					24
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2024,
+					11,
+					21
+				},
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[100039] = {
+		new_recommend = 1,
+		prefab = "recommend_107402",
+		show_type = 0,
+		goods_id = 100039,
+		info_desc = "",
+		title = "637618335b3e0fd24c90622426fb500a",
+		sub_title = "061d3903dc15f5c170284990901d0220",
+		params = "",
+		show_time = "2024.9.26-2024.10.24",
+		icon = "100025",
+		order = 2,
+		jump = {
+			525
+		},
+		jump2 = {
+			531,
+			15000015,
+			1074,
+			107402,
+			15
+		},
+		time = {
+			{
+				{
+					2024,
+					9,
+					26
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2024,
+					10,
+					24
+				},
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[100040] = {
+		new_recommend = 1,
+		prefab = "recommend_100011",
+		show_type = 1,
+		goods_id = 100040,
+		info_desc = "",
+		title = "f03af5929db28df99acc09bc25bec224",
+		sub_title = "8aa41bac2d35995af59b56863b748266",
+		show_time = "2024.9.26-2024.10.24",
+		icon = "100015",
+		order = 3,
+		jump = {
+			527
+		},
+		jump2 = {
+			532,
+			3009003,
+			3
+		},
+		time = {
+			{
+				{
+					2024,
+					9,
+					26
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2024,
+					10,
+					24
+				},
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		params = {
+			30043
+		}
+	},
 	[300001] = {
 		new_recommend = 0,
 		prefab = "recommend_102801",
@@ -1363,6 +1874,7 @@
 		info_desc = "",
 		title = "6cd94e2cf3184ac5aeba64dbdabe85e8",
 		sub_title = "f7727c165aeab9f4e8c2914d2f373039",
+		params = "",
 		show_time = "",
 		icon = "300001",
 		order = 1,
@@ -1412,6 +1924,7 @@
 		info_desc = "",
 		title = "522ad8dc26cd819583c8b2da58b4cf31",
 		sub_title = "1e72d4e4960d12fbdfdcc5c797661b23",
+		params = "",
 		show_time = "",
 		icon = "300002",
 		order = 2,
@@ -1454,6 +1967,7 @@
 		info_desc = "",
 		title = "c63a86ff17ecf955258486e50e3fb847",
 		sub_title = "a65bf6eaf27c1ee1dd3f9ce6a1933b1c",
+		params = "",
 		show_time = "",
 		icon = "300003",
 		order = 1,
@@ -1496,6 +2010,7 @@
 		info_desc = "",
 		title = "0bf0eb4b88906a80d4b91c2de600524b",
 		sub_title = "9134b6cd1dbd4a268362bab0d3223637",
+		params = "",
 		show_time = "",
 		icon = "300004",
 		order = 2,
@@ -1538,6 +2053,7 @@
 		info_desc = "",
 		title = "768566ef48f9eb3fb3db35c6e6c774fc",
 		sub_title = "b3ec1bede50bc06707d97fb02e76a8ff",
+		params = "",
 		show_time = "",
 		icon = "300005",
 		order = 3,
@@ -1582,6 +2098,7 @@
 		info_desc = "",
 		title = "1dc06321e05605cde4ad847ca37d1dc7",
 		sub_title = "07e7e09c8066e948dc171bf0f98d91af",
+		params = "",
 		show_time = "",
 		icon = "300006",
 		order = 1,
@@ -1624,6 +2141,7 @@
 		info_desc = "",
 		title = "7ef09c0e3dac73b46ab6543994ffdc92",
 		sub_title = "a10ac20949ad25a26d063ee73447c9cc",
+		params = "",
 		show_time = "2024.5.3-2024.5.17",
 		icon = "100016",
 		order = 1,
@@ -1687,7 +2205,17 @@
 		100027,
 		100028,
 		100029,
+		100030,
 		100031,
+		100032,
+		100033,
+		100034,
+		100035,
+		100036,
+		100037,
+		100038,
+		100039,
+		100040,
 		300001,
 		300002,
 		300003,

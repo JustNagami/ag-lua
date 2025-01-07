@@ -106,15 +106,24 @@ function var_0_0.RefreshInfo(arg_13_0)
 	arg_13_0.titleText_.text = GetI18NText(var_13_1.name)
 	arg_13_0.skillIcon.sprite = getSpriteViaConfig("ComboSkill", var_13_0.skill_id)
 
-	for iter_13_0, iter_13_1 in ipairs(var_13_0.cooperate_role_ids) do
-		if not arg_13_0.heroItemList_[iter_13_0] then
-			local var_13_3 = Object.Instantiate(arg_13_0.heroItemGo_, arg_13_0.heroContentTrans_)
+	local var_13_3 = deepClone(var_13_0.cooperate_role_ids)
 
-			arg_13_0.heroItemList_[iter_13_0] = SectionSmallHeroItem.New(var_13_3)
+	CommonTools.UniversalSortEx(var_13_3, {
+		ascend = true,
+		map = function(arg_14_0)
+			return arg_14_0
+		end
+	})
+
+	for iter_13_0, iter_13_1 in ipairs(var_13_3) do
+		if not arg_13_0.heroItemList_[iter_13_0] then
+			local var_13_4 = Object.Instantiate(arg_13_0.heroItemGo_, arg_13_0.heroContentTrans_)
+
+			arg_13_0.heroItemList_[iter_13_0] = SectionSmallHeroItem.New(var_13_4)
 		end
 
 		arg_13_0.heroItemList_[iter_13_0]:SetData(iter_13_1)
-		arg_13_0.heroItemList_[iter_13_0]:RefreshState(table.keyof(arg_13_0.heroList_, iter_13_1) ~= nil)
+		arg_13_0.heroItemList_[iter_13_0]:RefreshValid(table.keyof(arg_13_0.heroList_, iter_13_1) ~= nil)
 	end
 
 	for iter_13_2 = #var_13_0.cooperate_role_ids + 1, 3 do
@@ -126,28 +135,28 @@ function var_0_0.RefreshInfo(arg_13_0)
 	SetActive(arg_13_0.descGo_, false)
 end
 
-function var_0_0.RefreshSelect(arg_14_0)
-	if arg_14_0.canUse_ then
-		if arg_14_0.isSelect_ then
-			arg_14_0.selectController_:SetSelectedState("true")
+function var_0_0.RefreshSelect(arg_15_0)
+	if arg_15_0.canUse_ then
+		if arg_15_0.isSelect_ then
+			arg_15_0.selectController_:SetSelectedState("true")
 		else
-			arg_14_0.selectController_:SetSelectedState("false")
+			arg_15_0.selectController_:SetSelectedState("false")
 		end
 	else
-		arg_14_0.selectController_:SetSelectedState("none")
+		arg_15_0.selectController_:SetSelectedState("none")
 	end
 end
 
-function var_0_0.ShowDesc(arg_15_0)
-	SetActive(arg_15_0.descGo_, not arg_15_0.isOpeningDesc_)
+function var_0_0.ShowDesc(arg_16_0)
+	SetActive(arg_16_0.descGo_, not arg_16_0.isOpeningDesc_)
 
-	arg_15_0.isOpeningDesc_ = not arg_15_0.isOpeningDesc_
+	arg_16_0.isOpeningDesc_ = not arg_16_0.isOpeningDesc_
 
-	local var_15_0 = ComboSkillCfg[arg_15_0.comboSkillID_]
-	local var_15_1 = HeroSkillCfg[var_15_0.skill_id]
-	local var_15_2 = ComboSkillData:GetCurComboSkillLevel(arg_15_0.comboSkillID_)
+	local var_16_0 = ComboSkillCfg[arg_16_0.comboSkillID_]
+	local var_16_1 = HeroSkillCfg[var_16_0.skill_id]
+	local var_16_2 = ComboSkillData:GetCurComboSkillLevel(arg_16_0.comboSkillID_)
 
-	arg_15_0.descText_.text = GetI18NText(GetCfgDescription(var_15_1.desc[1], var_15_2, 2, var_15_0.maxLevel))
+	arg_16_0.descText_.text = GetI18NText(GetCfgDescription(var_16_1.desc[1], var_16_2, 2, var_16_0.maxLevel))
 
 	manager.notify:CallUpdateFunc(SECTION_COMBO_SELECT_SHOW_DESC)
 end

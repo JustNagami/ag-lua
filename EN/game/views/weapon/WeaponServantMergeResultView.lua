@@ -34,6 +34,9 @@ end
 
 function var_0_0.InitUI(arg_6_0)
 	arg_6_0:BindCfgUI()
+
+	arg_6_0.sleepyiconImg_.immediate = true
+	arg_6_0.portrait_.immediate = true
 end
 
 function var_0_0.OnEnter(arg_7_0)
@@ -49,8 +52,8 @@ function var_0_0.OnEnter(arg_7_0)
 	local var_7_1 = string.format("icon_group_%d_c", var_7_0)
 
 	arg_7_0.campImg_.sprite = getSprite("Atlas/CampItemAtlas", var_7_1)
-	arg_7_0.sleepyiconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/Portrait/" .. arg_7_0.sleepyID_)
-	arg_7_0.portrait_.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/Portrait/" .. arg_7_0.servantID_)
+	arg_7_0.sleepyiconImg_.spriteSync = "TextureConfig/WeaponServant/Portrait/" .. arg_7_0.sleepyID_
+	arg_7_0.portrait_.spriteSync = "TextureConfig/WeaponServant/Portrait/" .. arg_7_0.servantID_
 
 	manager.audio:PlayEffect("ui_system", "key_awakening")
 end

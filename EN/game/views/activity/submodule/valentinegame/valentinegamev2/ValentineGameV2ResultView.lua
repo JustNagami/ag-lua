@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("ValentineGameV2ResultView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/VersionUI/IndiaUI_2_8/IndiaValentineUI/IndiaValentineResultUI"
+	return "Widget/Version/SummerUI_Com/SummerUI_Com_IndiaValentineUI/IndiaValentineResultUI"
 end
 
 function var_0_0.UIParent(arg_2_0)

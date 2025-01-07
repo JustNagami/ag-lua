@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("HeroClueDetailView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return HeroClueTools.GetClueDetailViewUIName(arg_1_0.params_.activtiyID)
+	return HeroClueTools.GetClueDetailViewUIName(arg_1_0.params_.activityID)
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -15,8 +15,6 @@ end
 
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
-
-	arg_4_0.clueInfoController_ = ControllerUtil.GetController(arg_4_0.transform_, "level")
 end
 
 function var_0_0.AddUIListener(arg_5_0)
@@ -47,8 +45,6 @@ function var_0_0.RefreshUI(arg_8_0)
 			arg_8_0.clueNameText_.text = var_8_0.name
 			arg_8_0.clueDescText_.text = var_8_0.desc
 		end
-
-		arg_8_0.clueInfoController_:SetSelectedState(var_8_1.level)
 	end
 end
 

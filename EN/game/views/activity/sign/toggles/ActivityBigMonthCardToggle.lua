@@ -28,15 +28,11 @@ function var_0_0.RedPointKey(arg_7_0)
 	return RedPointConst.BIG_MONTH_CARD
 end
 
-function var_0_0.IsManual(arg_8_0)
-	return true
-end
-
-function var_0_0.Order(arg_9_0)
+function var_0_0.Order(arg_8_0)
 	return 5
 end
 
-function var_0_0.GetSystemID(arg_10_0)
+function var_0_0.GetSystemID(arg_9_0)
 	return ViewConst.SYSTEM_ID.BIG_MONTH_CARD
 end
 

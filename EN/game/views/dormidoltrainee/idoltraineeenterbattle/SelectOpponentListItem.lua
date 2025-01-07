@@ -9,6 +9,9 @@ end
 
 function var_0_0.InitUI(arg_2_0)
 	arg_2_0:BindCfgUI()
+
+	arg_2_0.commonPortrait_ = CommonHeadPortrait.New(arg_2_0.headItem_)
+
 	arg_2_0:AddUIListener()
 	arg_2_0:InitAbilityItem()
 
@@ -29,7 +32,7 @@ function var_0_0.AddUIListener(arg_3_0)
 			friendType = arg_3_0.friendType
 		})
 	end)
-	arg_3_0:AddBtnListener(arg_3_0.headBtn_, nil, function()
+	arg_3_0.commonPortrait_:RegisteClickCallback(function()
 		if arg_3_0.curUserID_ then
 			ForeignInfoAction:TryToCheckForeignDetailInfo(arg_3_0.curUserID_, true)
 		end
@@ -51,10 +54,12 @@ function var_0_0.SetData(arg_8_0, arg_8_1, arg_8_2)
 	local var_8_0 = IdolTraineeTools:GetOpponentData(arg_8_1, arg_8_2)
 
 	arg_8_0.playerName_.text = GetI18NText(var_8_0.nick)
-	arg_8_0.playerIcon_.sprite = ItemTools.getItemSprite(var_8_0.icon)
-	arg_8_0.heroIcon_.sprite = DormHeroTools.GetBackHomeHeadSprite(var_8_0.hero_id)
+
+	arg_8_0.commonPortrait_:RenderHead(var_8_0.icon)
+	arg_8_0.commonPortrait_:RenderFrame(var_8_0.icon_frame)
+
+	arg_8_0.heroIcon_.sprite = IdolTraineeTools.GetBackHomeHeadSprite(var_8_0.skin_id)
 	arg_8_0.raceIcon_.sprite = HeroTools.GetHeroRaceIcon(var_8_0.hero_id)
-	arg_8_0.frameImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_8_0.icon_frame)
 
 	local var_8_1 = 0
 
@@ -83,6 +88,8 @@ function var_0_0.SetData(arg_8_0, arg_8_1, arg_8_2)
 end
 
 function var_0_0.Dispose(arg_9_0)
+	arg_9_0.commonPortrait_:Dispose()
+
 	if arg_9_0.abilityList then
 		for iter_9_0, iter_9_1 in pairs(arg_9_0.abilityList) do
 			iter_9_1:Dispose(arg_9_0)

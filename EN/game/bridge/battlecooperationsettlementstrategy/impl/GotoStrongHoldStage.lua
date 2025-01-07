@@ -25,6 +25,8 @@ end
 function var_0_0.GotoStrongholdResult(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_4)
 	local var_2_0 = arg_2_0:GetResultReward()
 
+	CheckBattleResultNeedAddHeroExp()
+
 	function BattleCallLuaCallBack()
 		JumpTools.OpenPageByJump("/strongholdBattleResult", {
 			result = arg_2_1,

@@ -49,6 +49,12 @@ function var_0_0.OnEnter(arg_6_0)
 		SetActive(arg_6_0.mainRe2Img_.gameObject, false)
 	end
 
+	if table.isEmpty(var_6_1.recommend) then
+		SetActive(arg_6_0.mainRe1Img_.gameObject, true)
+
+		arg_6_0.mainRe1Img_.sprite = HeroTools.GetSkillAttributeIcon()
+	end
+
 	if var_6_2.recommend[1] then
 		SetActive(arg_6_0.subRe1Img_.gameObject, true)
 
@@ -63,6 +69,12 @@ function var_0_0.OnEnter(arg_6_0)
 		arg_6_0.subRe2Img_.sprite = HeroTools.GetSkillAttributeIcon(var_6_2.recommend[2])
 	else
 		SetActive(arg_6_0.subRe2Img_.gameObject, false)
+	end
+
+	if table.isEmpty(var_6_2.recommend) then
+		SetActive(arg_6_0.subRe1Img_.gameObject, true)
+
+		arg_6_0.subRe1Img_.sprite = HeroTools.GetSkillAttributeIcon()
 	end
 end
 

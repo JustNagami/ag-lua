@@ -48,33 +48,7 @@
 		ignore_group_condition = {},
 		leaps = {}
 	},
-	{
-		narrator_name = "eed88435a61807353416bb326b9002c8",
-		group = 0,
-		not_skip_guide = 1,
-		id = 3,
-		narrator_icon = "1036",
-		is_no_home = false,
-		steps = {},
-		open_condition = {
-			{
-				"stage",
-				1010004
-			},
-			{
-				"canJump"
-			}
-		},
-		skip_condition = {
-			{
-				"stage",
-				1010005
-			}
-		},
-		ignore_group_condition = {},
-		leaps = {}
-	},
-	{
+	[4] = {
 		narrator_name = "346acf599575bb3eb5854f6e8f943142",
 		group = 0,
 		not_skip_guide = 1,
@@ -109,7 +83,7 @@
 		ignore_group_condition = {},
 		leaps = {}
 	},
-	{
+	[5] = {
 		narrator_name = "abec053a4b0b0b02082891cce144eff5",
 		group = 0,
 		not_skip_guide = 1,
@@ -145,6 +119,32 @@
 		leaps = {}
 	},
 	{
+		narrator_name = "eed88435a61807353416bb326b9002c8",
+		group = 0,
+		not_skip_guide = 1,
+		id = 3,
+		narrator_icon = "1036",
+		is_no_home = false,
+		steps = {},
+		open_condition = {
+			{
+				"stage",
+				1010004
+			},
+			{
+				"canJump"
+			}
+		},
+		skip_condition = {
+			{
+				"stage",
+				1010005
+			}
+		},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[6] = {
 		narrator_name = "8478ef70b3d38836e77a2c51b6dd9a93",
 		group = 0,
 		not_skip_guide = 1,
@@ -216,9 +216,7 @@
 		steps = {
 			1001,
 			1002,
-			1003,
-			1004,
-			1005
+			1003
 		},
 		open_condition = {
 			{
@@ -240,6 +238,33 @@
 		},
 		leaps = {}
 	},
+	[1001] = {
+		narrator_name = "fc276fb5d9545b83416041a1c2fa4271",
+		group = 0,
+		not_skip_guide = 0,
+		id = 1001,
+		narrator_icon = "mmr",
+		is_no_home = true,
+		steps = {
+			1004,
+			1005
+		},
+		open_condition = {
+			{
+				"guide",
+				10
+			},
+			{
+				"uiNameList",
+				{
+					"towerStage"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
 	[11] = {
 		narrator_name = "7a95286d1a9f382b180e764765983ff9",
 		group = 0,
@@ -250,9 +275,7 @@
 		steps = {
 			1101,
 			1102,
-			1103,
-			1104,
-			1105
+			1103
 		},
 		open_condition = {
 			{
@@ -261,6 +284,30 @@
 			},
 			{
 				"canJump"
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[1101] = {
+		narrator_name = "124f334a4ea2c8888cac8efd2a55ed35",
+		group = 0,
+		not_skip_guide = 0,
+		id = 1101,
+		narrator_icon = "mmr",
+		is_no_home = true,
+		steps = {},
+		open_condition = {
+			{
+				"guide",
+				11
+			},
+			{
+				"uiNameList",
+				{
+					"mythicDifficulty"
+				}
 			}
 		},
 		skip_condition = {},
@@ -277,8 +324,7 @@
 		steps = {
 			1201,
 			1202,
-			1203,
-			1204
+			1203
 		},
 		open_condition = {
 			{
@@ -287,6 +333,32 @@
 			},
 			{
 				"canJump"
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[1201] = {
+		narrator_name = "ce45d35b14d9132ac7e865bacb4c8986",
+		group = 0,
+		not_skip_guide = 0,
+		id = 1201,
+		narrator_icon = "mmr",
+		is_no_home = true,
+		steps = {
+			1204
+		},
+		open_condition = {
+			{
+				"guide",
+				12
+			},
+			{
+				"uiNameList",
+				{
+					"warChessStage"
+				}
 			}
 		},
 		skip_condition = {},
@@ -303,9 +375,7 @@
 		steps = {
 			1301,
 			1302,
-			1303,
-			1304,
-			1305
+			1303
 		},
 		open_condition = {
 			{
@@ -314,6 +384,33 @@
 			},
 			{
 				"canJump"
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[1301] = {
+		narrator_name = "fff0296c70fbb4d1180a667788d395ff",
+		group = 0,
+		not_skip_guide = 0,
+		id = 1301,
+		narrator_icon = "mmr",
+		is_no_home = true,
+		steps = {
+			1304,
+			1305
+		},
+		open_condition = {
+			{
+				"guide",
+				13
+			},
+			{
+				"uiNameList",
+				{
+					"bossSwitch"
+				}
 			}
 		},
 		skip_condition = {},
@@ -414,9 +511,7 @@
 		steps = {
 			2001,
 			2002,
-			2003,
-			2004,
-			2005
+			2003
 		},
 		open_condition = {
 			{
@@ -429,6 +524,33 @@
 			},
 			{
 				"canJump"
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[2001] = {
+		narrator_name = "ea51010004310cc1e81fcf7603470e7a",
+		group = 0,
+		not_skip_guide = 0,
+		id = 2001,
+		narrator_icon = "mmr",
+		is_no_home = true,
+		steps = {
+			2004,
+			2005
+		},
+		open_condition = {
+			{
+				"guide",
+				20
+			},
+			{
+				"uiNameList",
+				{
+					"equipSection"
+				}
 			}
 		},
 		skip_condition = {},
@@ -475,8 +597,7 @@
 		is_no_home = false,
 		steps = {
 			2201,
-			2202,
-			2203
+			2202
 		},
 		open_condition = {
 			{
@@ -491,6 +612,32 @@
 				"uiNameList",
 				{
 					"chapterMap"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[2201] = {
+		narrator_name = "058841bcbe6c020dd607d56d56b9de54",
+		group = 0,
+		not_skip_guide = 0,
+		id = 2201,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			2203
+		},
+		open_condition = {
+			{
+				"guide",
+				22
+			},
+			{
+				"uiNameList",
+				{
+					"enchantment"
 				}
 			}
 		},
@@ -577,8 +724,7 @@
 		steps = {
 			3501,
 			3502,
-			3503,
-			3504
+			3503
 		},
 		open_condition = {
 			{
@@ -602,6 +748,32 @@
 		ignore_group_condition = {},
 		leaps = {}
 	},
+	[3501] = {
+		narrator_name = "bcc8eeda2a34e01a708a3d3362cb425a",
+		group = 0,
+		not_skip_guide = 0,
+		id = 3501,
+		narrator_icon = "mmr",
+		is_no_home = true,
+		steps = {
+			3504
+		},
+		open_condition = {
+			{
+				"guide",
+				35
+			},
+			{
+				"uiNameList",
+				{
+					"equipSeizure"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
 	[36] = {
 		narrator_name = "46690e71abbb6781206669ae8e3d93e3",
 		group = 0,
@@ -612,9 +784,7 @@
 		steps = {
 			3601,
 			3602,
-			3603,
-			3604,
-			3605
+			3603
 		},
 		open_condition = {
 			{
@@ -636,43 +806,30 @@
 		ignore_group_condition = {},
 		leaps = {}
 	},
-	[37] = {
-		narrator_name = "b58db3b3d8e03c4e94a6d15af0dc074c",
+	[3601] = {
+		narrator_name = "b5257314c61310a251c2d4b2c5201a9e",
 		group = 0,
 		not_skip_guide = 0,
-		id = 37,
+		id = 3601,
 		narrator_icon = "mmr",
 		is_no_home = false,
 		steps = {
-			3701,
-			3702,
-			3703,
-			3704
+			3604,
+			3605
 		},
 		open_condition = {
 			{
+				"guide",
+				36
+			},
+			{
 				"uiNameList",
 				{
-					"equipCultureView"
+					"teachStage"
 				}
-			},
-			{
-				"equip",
-				"equipLevel",
-				30
-			},
-			{
-				"equip",
-				"page",
-				4
 			}
 		},
-		skip_condition = {
-			{
-				"playerLevel",
-				50
-			}
-		},
+		skip_condition = {},
 		ignore_group_condition = {},
 		leaps = {}
 	},
@@ -832,7 +989,12 @@
 		id = 46,
 		narrator_icon = "mmr",
 		is_no_home = false,
-		steps = {},
+		steps = {
+			4601,
+			4602,
+			4603,
+			4604
+		},
 		open_condition = {
 			{
 				"playerLevel",
@@ -852,6 +1014,30 @@
 				}
 			}
 		},
+		leaps = {}
+	},
+	[4601] = {
+		narrator_name = "986bc23ae938dc20e6f75f3f4ad4739f",
+		group = 0,
+		not_skip_guide = 0,
+		id = 4601,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {},
+		open_condition = {
+			{
+				"guide",
+				46
+			},
+			{
+				"uiNameList",
+				{
+					"polyhedronLobby"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
 		leaps = {}
 	},
 	[47] = {
@@ -1030,9 +1216,10 @@
 		steps = {
 			5201,
 			5202,
-			5204,
-			5206,
-			5207
+			5203,
+			5205,
+			5207,
+			5208
 		},
 		open_condition = {
 			{
@@ -1314,12 +1501,17 @@
 		narrator_icon = "mmr",
 		is_no_home = false,
 		steps = {
-			6101
+			6101,
+			6102
 		},
 		open_condition = {
 			{
 				"playerLevel",
 				35
+			},
+			{
+				"notGuide",
+				62
 			},
 			{
 				"uiNameList",
@@ -1472,11 +1664,7 @@
 		is_no_home = false,
 		steps = {
 			6602,
-			6603,
-			6604,
-			6605,
-			6606,
-			6607
+			6603
 		},
 		open_condition = {
 			{
@@ -1486,19 +1674,42 @@
 			{
 				"uiNameList",
 				{
-					"chapterMap",
+					"chapterMap"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[6601] = {
+		narrator_name = "3ef3849b600f541fef8068c543f150e1",
+		group = 0,
+		not_skip_guide = 0,
+		id = 6601,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			6604,
+			6605,
+			6606,
+			6607
+		},
+		open_condition = {
+			{
+				"guide",
+				66
+			},
+			{
+				"uiNameList",
+				{
 					"coreVerificationMain"
 				}
 			}
 		},
 		skip_condition = {},
 		ignore_group_condition = {},
-		leaps = {
-			{
-				"coreVerificationMain",
-				3
-			}
-		}
+		leaps = {}
 	},
 	[67] = {
 		narrator_name = "a0d302c798be8591e9b9e0cd87f90c82",
@@ -1653,29 +1864,545 @@
 		ignore_group_condition = {},
 		leaps = {}
 	},
+	[73] = {
+		narrator_name = "ca339bc326a25c0741072bf41a8f838d",
+		group = 0,
+		not_skip_guide = 0,
+		id = 73,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			7301,
+			7302,
+			7303,
+			7304,
+			7305,
+			7306,
+			7307,
+			7308
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"chessBoardHomeView"
+				}
+			},
+			{
+				"chess",
+				"canUseProp",
+				true
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[74] = {
+		narrator_name = "bd8b1635f95b85fb71d96e3d3f8fe8f6",
+		group = 0,
+		not_skip_guide = 0,
+		id = 74,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			7401,
+			7402
+		},
+		open_condition = {
+			{
+				"guide",
+				73
+			},
+			{
+				"chess",
+				"canUseProp",
+				true
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[75] = {
+		narrator_name = "9b074c0af8a77624763e2ba96c5cd06b",
+		group = 0,
+		not_skip_guide = 0,
+		id = 75,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			7501
+		},
+		open_condition = {
+			{
+				"chess",
+				"chanceId",
+				101111
+			},
+			{
+				"uiNameList",
+				{
+					"chessBoardChanceView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[76] = {
+		narrator_name = "b70e8c99ce6841bd99b17504a3a77429",
+		group = 0,
+		not_skip_guide = 0,
+		id = 76,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			7601,
+			7602,
+			7603,
+			7604
+		},
+		open_condition = {
+			{
+				"guide",
+				75
+			},
+			{
+				"chess",
+				"canUseProp",
+				true
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[77] = {
+		narrator_name = "a17a41ed950637843ef0d5ac325ce77a",
+		group = 0,
+		not_skip_guide = 0,
+		id = 77,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			7701,
+			7702,
+			7703,
+			7704,
+			7705,
+			7706,
+			7707,
+			7708,
+			7709,
+			7710,
+			7711,
+			7712,
+			7713,
+			7714,
+			7715,
+			7716,
+			7717
+		},
+		open_condition = {
+			{
+				"activityId",
+				283181
+			},
+			{
+				"uiNameList",
+				{
+					"activitySummerSimBusinessMain"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[78] = {
+		narrator_name = "6388f2f04194c5330233ea383a45fd3c",
+		group = 0,
+		not_skip_guide = 0,
+		id = 78,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			7801,
+			7802,
+			7803,
+			7804,
+			7805,
+			7806,
+			7807,
+			7808,
+			7809,
+			7810
+		},
+		open_condition = {
+			{
+				"activityId",
+				283181
+			},
+			{
+				"uiName",
+				"activitySummerSimBusinessMain"
+			},
+			{
+				"uiParam",
+				"stageID",
+				107
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[79] = {
+		narrator_name = "cfe57ef46dee7f5cb05f8a86e8566dab",
+		group = 0,
+		not_skip_guide = 0,
+		id = 79,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			7901,
+			7902,
+			7903,
+			7904,
+			7905,
+			7906,
+			7907
+		},
+		open_condition = {
+			{
+				"activityId",
+				283181
+			},
+			{
+				"uiName",
+				"activitySummerSimBusinessMain"
+			},
+			{
+				"uiParam",
+				"stageID",
+				103
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[80] = {
+		narrator_name = "0a3f29c6299d0684c8f707afd34b4002",
+		group = 0,
+		not_skip_guide = 0,
+		id = 80,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			8001,
+			8002,
+			8003,
+			8004,
+			8005,
+			8006
+		},
+		open_condition = {
+			{
+				"activityId",
+				283181
+			},
+			{
+				"uiName",
+				"activitySummerSimBusinessMain"
+			},
+			{
+				"uiParam",
+				"stageID",
+				106
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[81] = {
+		narrator_name = "22d5fb6c7b3de80b50b8ae6fb440f5bf",
+		group = 0,
+		not_skip_guide = 0,
+		id = 81,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			8101,
+			8102,
+			8103,
+			8104,
+			8105
+		},
+		open_condition = {
+			{
+				"activityId",
+				283181
+			},
+			{
+				"uiName",
+				"activitySummerSimBusinessMain"
+			},
+			{
+				"uiParam",
+				"stageID",
+				108
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[82] = {
+		narrator_name = "1dede2d9afb037f18b1675f7fd634237",
+		group = 0,
+		not_skip_guide = 0,
+		id = 82,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			8201,
+			8202,
+			8203,
+			8204
+		},
+		open_condition = {
+			{
+				"activityId",
+				293231
+			},
+			{
+				"uiNameList",
+				{
+					"tetrisGameMainView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[83] = {
+		narrator_name = "6b2fac1f6d97eec287babab72fe656ab",
+		group = 0,
+		not_skip_guide = 0,
+		id = 83,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			8301,
+			8302,
+			8303,
+			8304
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"customStickerMain"
+				}
+			},
+			{
+				"selfSticker"
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[84] = {
+		narrator_name = "b2ff9a1893ebada68f69652ead0f2638",
+		group = 0,
+		not_skip_guide = 0,
+		id = 84,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			8401,
+			8402,
+			8403
+		},
+		open_condition = {
+			{
+				"idolCompetition"
+			},
+			{
+				"uiNameList",
+				{
+					"idolCompetitionMain"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[85] = {
+		narrator_name = "3afd35919c05f2e16f2c309926fe9749",
+		group = 0,
+		not_skip_guide = 0,
+		id = 85,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			8501,
+			8502
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"idolCompetitionSign"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[100] = {
+		narrator_name = "5e697389a048cfa69a7ecfa909736bfe",
+		group = 0,
+		not_skip_guide = 0,
+		id = 100,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			10001,
+			10002,
+			10003,
+			10004,
+			10005,
+			10006,
+			10007,
+			10008,
+			10009,
+			10010,
+			10011
+		},
+		open_condition = {
+			{
+				"activityId",
+				293425
+			},
+			{
+				"uiNameList",
+				{
+					"AreaBattleMapView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[102] = {
+		narrator_name = "ba2b75fd4574bc9a8dae78acae38194d",
+		group = 2,
+		not_skip_guide = 0,
+		id = 102,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			10201,
+			10202,
+			10203
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"dormChooseRoomView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[103] = {
+		narrator_name = "8c4d1d11e9658b6db337e81744114df4",
+		group = 0,
+		not_skip_guide = 0,
+		id = 103,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			10301
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"dormIlluMainView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[104] = {
+		narrator_name = "ecbafb1612d69e7882bd62644bbae1c4",
+		group = 0,
+		not_skip_guide = 0,
+		id = 104,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			10401
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"dormInformationView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
 	get_id_list_by_not_skip_guide = {
 		[0] = {
 			10,
+			1001,
 			11,
+			1101,
 			12,
+			1201,
 			13,
+			1301,
 			17,
 			18,
 			19,
 			20,
+			2001,
 			21,
 			22,
+			2201,
 			27,
 			28,
 			29,
 			35,
+			3501,
 			36,
-			37,
+			3601,
 			38,
 			40,
 			41,
 			43,
 			46,
+			4601,
 			47,
 			48,
 			49,
@@ -1694,18 +2421,36 @@
 			64,
 			65,
 			66,
+			6601,
 			67,
 			68,
 			70,
 			71,
-			72
+			72,
+			73,
+			74,
+			75,
+			76,
+			77,
+			78,
+			79,
+			80,
+			81,
+			82,
+			83,
+			84,
+			85,
+			100,
+			102,
+			103,
+			104
 		},
 		{
 			1,
 			2,
-			3,
 			4,
 			5,
+			3,
 			6,
 			8,
 			60
@@ -1714,32 +2459,40 @@
 	all = {
 		1,
 		2,
-		3,
 		4,
 		5,
+		3,
 		6,
 		8,
 		10,
+		1001,
 		11,
+		1101,
 		12,
+		1201,
 		13,
+		1301,
 		17,
 		18,
 		19,
 		20,
+		2001,
 		21,
 		22,
+		2201,
 		27,
 		28,
 		29,
 		35,
+		3501,
 		36,
-		37,
+		3601,
 		38,
 		40,
 		41,
 		43,
 		46,
+		4601,
 		47,
 		48,
 		49,
@@ -1759,10 +2512,28 @@
 		64,
 		65,
 		66,
+		6601,
 		67,
 		68,
 		70,
 		71,
-		72
+		72,
+		73,
+		74,
+		75,
+		76,
+		77,
+		78,
+		79,
+		80,
+		81,
+		82,
+		83,
+		84,
+		85,
+		100,
+		102,
+		103,
+		104
 	}
 }

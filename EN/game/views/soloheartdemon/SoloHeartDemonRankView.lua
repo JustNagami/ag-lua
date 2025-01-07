@@ -19,6 +19,7 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.tabController_ = arg_4_0.toggleConEx:GetController("tab")
 	arg_4_0.tabNumController_ = arg_4_0.toggleConEx:GetController("num")
 	arg_4_0.list = LuaList.New(handler(arg_4_0, arg_4_0.SetListItem), arg_4_0.list_, SoloHeartDemonListItem)
+	arg_4_0.commonPortrait_ = CommonHeadPortrait.New(arg_4_0.headItem_)
 	arg_4_0.nothingController_ = arg_4_0.conExCollection_:GetController("stage")
 end
 
@@ -95,9 +96,9 @@ function var_0_0.OnEnter(arg_14_0)
 	arg_14_0.isInit_ = false
 	arg_14_0.activityId = arg_14_0.params_.activityId
 	arg_14_0.nameTxt_.text = PlayerData:GetPlayerInfo().nick
-	arg_14_0.headIconImg_.sprite = ItemTools.getItemSprite(PlayerData:GetPlayerInfo().portrait)
-	arg_14_0.headFrameImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. PlayerData:GetPlayerInfo().icon_frame)
 
+	arg_14_0.commonPortrait_:RenderHead(PlayerData:GetPlayerInfo().portrait)
+	arg_14_0.commonPortrait_:RenderFrame(PlayerData:GetPlayerInfo().icon_frame)
 	RankAction.QueryCommonRank(RankConst.RANK_ID.SOLOHEARTDEMON)
 
 	local var_14_0 = true
@@ -153,6 +154,8 @@ function var_0_0.OnSoloDemonHeartUpdate(arg_19_0)
 end
 
 function var_0_0.Dispose(arg_20_0)
+	arg_20_0.commonPortrait_:Dispose()
+
 	if arg_20_0.list then
 		arg_20_0.list:Dispose()
 

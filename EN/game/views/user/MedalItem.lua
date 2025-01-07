@@ -21,7 +21,6 @@ end
 
 function var_0_0.AddUIListener(arg_4_0)
 	arg_4_0:AddBtnListener(arg_4_0.Btn_, nil, function()
-		PlayerRedPoint:CancelStickerUnlock(arg_4_0.info_.id)
 		ShowPopItem(POP_SOURCE_DES_ITEM, {
 			arg_4_0.info_.id
 		})
@@ -40,7 +39,6 @@ function var_0_0.RefreshItem(arg_7_0, arg_7_1)
 
 	arg_7_0:RefreshState()
 	manager.redPoint:unbindUIandKey(arg_7_0.redPoint_)
-	manager.redPoint:bindUIandKey(arg_7_0.redPoint_, RedPointConst.STICKER_UNLOCK .. "_" .. arg_7_0.info_.id)
 end
 
 function var_0_0.RegisterClickListener(arg_8_0, arg_8_1)

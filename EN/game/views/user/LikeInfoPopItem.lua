@@ -14,6 +14,8 @@ end
 
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
+
+	arg_3_0.commonPortrait_ = CommonHeadPortrait.New(arg_3_0.headItem_)
 end
 
 function var_0_0.AddUIListeners(arg_4_0)
@@ -38,8 +40,9 @@ function var_0_0.RefreshData(arg_7_0, arg_7_1, arg_7_2)
 end
 
 function var_0_0.RefreshUI(arg_8_0)
-	arg_8_0.iconImg_.sprite = ItemTools.getItemSprite(arg_8_0.icon_)
-	arg_8_0.frameImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_8_0.frame_)
+	arg_8_0.commonPortrait_:RenderHead(arg_8_0.icon_)
+	arg_8_0.commonPortrait_:RenderFrame(arg_8_0.frame_)
+
 	arg_8_0.nickTxt_.text = arg_8_0.nick_
 	arg_8_0.levelTxt_.text = arg_8_0.level_
 	arg_8_0.timeTxt_.text = manager.time:STimeDescS(arg_8_0.time_, "!%Y/%m/%d %H:%M")
@@ -50,6 +53,12 @@ function var_0_0.OnExit(arg_9_0)
 end
 
 function var_0_0.Dispose(arg_10_0)
+	if arg_10_0.commonPortrait_ ~= nil then
+		arg_10_0.commonPortrait_:Dispose()
+
+		arg_10_0.commonPortrait_ = nil
+	end
+
 	arg_10_0:RemoveAllEventListener()
 	var_0_0.super.Dispose(arg_10_0)
 end

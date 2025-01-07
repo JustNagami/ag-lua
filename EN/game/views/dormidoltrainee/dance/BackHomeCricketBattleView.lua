@@ -37,6 +37,8 @@ function var_0_0.InitUI(arg_5_0)
 	arg_5_0.modeController_ = arg_5_0.mainControllerEx_:GetController("mode")
 	arg_5_0.gameStateController_ = arg_5_0.mainControllerEx_:GetController("gameState")
 	arg_5_0.showBuffDetailController_ = arg_5_0.mainControllerEx_:GetController("showBuffDetail")
+	arg_5_0.stateValueBlueController_ = arg_5_0.mainControllerEx_:GetController("stateValueBlue")
+	arg_5_0.stateValueRedController_ = arg_5_0.mainControllerEx_:GetController("stateValueRed")
 	arg_5_0.style1Item_ = EnterBattleStyleListItem.New(arg_5_0.style1Go_)
 	arg_5_0.style2Item_ = EnterBattleStyleListItem.New(arg_5_0.style2Go_)
 	arg_5_0.bubbleTimerList_ = {}
@@ -372,8 +374,9 @@ function var_0_0.RefreshHeroBuffList(arg_37_0)
 		local var_37_4, var_37_5 = IdolTraineeTools:GetSkillEffect(iter_37_8)
 
 		if var_37_4 then
-			arg_37_0.buff1Text_.text = (var_37_5 > 0 and "+" or "-") .. var_37_5 .. "%"
+			arg_37_0.buff1Text_.text = string.format("%+d%%", var_37_5)
 
+			arg_37_0.stateValueBlueController_:SetSelectedState(var_37_5 > 0 and "add" or "reduce")
 			arg_37_0:SetBubblesTimer(1)
 
 			break
@@ -384,8 +387,9 @@ function var_0_0.RefreshHeroBuffList(arg_37_0)
 		local var_37_6, var_37_7 = IdolTraineeTools:GetSkillEffect(iter_37_10)
 
 		if var_37_6 then
-			arg_37_0.buff2Text_.text = (var_37_7 > 0 and "+" or "-") .. var_37_7 .. "%"
+			arg_37_0.buff2Text_.text = string.format("%+d%%", var_37_7)
 
+			arg_37_0.stateValueRedController_:SetSelectedState(var_37_7 > 0 and "add" or "reduce")
 			arg_37_0:SetBubblesTimer(2)
 
 			break
@@ -678,13 +682,13 @@ function var_0_0.OnBuffIconClick(arg_60_0, arg_60_1, arg_60_2)
 end
 
 function var_0_0.SetBuffContentOnLeft(arg_61_0, arg_61_1)
-	arg_61_0.leftBuffDetail_.text = IdolTraineeTools:GetBuffDescString(arg_61_1, true, true, true)
+	arg_61_0.leftBuffDetail_.text = IdolTraineeTools:GetBuffDescString(arg_61_1, true, true, true, true)
 
 	arg_61_0.showBuffDetailController_:SetSelectedState("left")
 end
 
 function var_0_0.SetBuffContentOnRight(arg_62_0, arg_62_1)
-	arg_62_0.rightBuffDetail_.text = IdolTraineeTools:GetBuffDescString(arg_62_1, true, true, true)
+	arg_62_0.rightBuffDetail_.text = IdolTraineeTools:GetBuffDescString(arg_62_1, true, true, true, true)
 
 	arg_62_0.showBuffDetailController_:SetSelectedState("right")
 end

@@ -10,6 +10,9 @@ end
 
 function var_0_0.Init(arg_3_0)
 	arg_3_0:InitUI()
+
+	arg_3_0.commonPortrait_ = CommonHeadPortrait.New(arg_3_0.headItem_)
+
 	arg_3_0:AddListeners()
 
 	arg_3_0.subTypeController = ControllerUtil.GetController(arg_3_0.m_subTypeController, "subType")
@@ -213,8 +216,8 @@ function var_0_0.Refresh(arg_18_0, arg_18_1, arg_18_2, arg_18_3)
 	if arg_18_2 == PolyhedronConst.RANK_SUB_TYPE.SCORE then
 		local var_18_7 = PlayerData:GetPlayerInfo()
 
-		arg_18_0.m_icon.sprite = ItemTools.getItemSprite(var_18_7 and var_18_7.portrait)
-		arg_18_0.m_frame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_18_7.icon_frame)
+		arg_18_0.commonPortrait_:RenderHead(var_18_7 and var_18_7.portrait)
+		arg_18_0.commonPortrait_:RenderFrame(var_18_7.icon_frame)
 
 		if arg_18_0.playerAnimator_ then
 			SetActive(arg_18_0.playerIconGo_, false)
@@ -251,6 +254,7 @@ function var_0_0.IndexItem(arg_19_0, arg_19_1, arg_19_2)
 end
 
 function var_0_0.Dispose(arg_20_0)
+	arg_20_0.commonPortrait_:Dispose()
 	arg_20_0.list_:Dispose()
 
 	arg_20_0.list_ = nil

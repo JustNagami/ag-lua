@@ -22,7 +22,7 @@ end
 
 function var_0_0.Enter(arg_3_0)
 	var_0_0.super.Enter(arg_3_0)
-	arg_3_0:PlayAni(arg_3_0.clipName)
+	arg_3_0:PlayAniWithParams(arg_3_0.clipName)
 	arg_3_0.actor:MuteCamera(true)
 
 	local var_3_0 = arg_3_0.oldDirect

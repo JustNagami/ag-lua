@@ -70,9 +70,13 @@ function var_0_0.WaitTask(arg_8_0, ...)
 		...
 	}
 
-	return arg_8_0:WaitUntil(function()
-		for iter_9_0, iter_9_1 in ipairs(var_8_0) do
-			if not iter_9_1:IsFinished() then
+	return arg_8_0:WaitAllTask(var_8_0)
+end
+
+function var_0_0.WaitAllTask(arg_9_0, arg_9_1)
+	return arg_9_0:WaitUntil(function()
+		for iter_10_0, iter_10_1 in ipairs(arg_9_1) do
+			if not iter_10_1:IsFinished() then
 				return false
 			end
 		end
@@ -81,91 +85,103 @@ function var_0_0.WaitTask(arg_8_0, ...)
 	end)
 end
 
-function var_0_0.HandleAnimeLoop(arg_10_0, arg_10_1)
-	local var_10_0 = {
+function var_0_0.WaitAnyTask(arg_11_0, arg_11_1)
+	return arg_11_0:WaitUntil(function()
+		for iter_12_0, iter_12_1 in ipairs(arg_11_1) do
+			if iter_12_1:IsFinished() then
+				return true
+			end
+		end
+
+		return false
+	end)
+end
+
+function var_0_0.HandleAnimeLoop(arg_13_0, arg_13_1)
+	local var_13_0 = {
 		continue = false,
 		started = false
 	}
 
-	DormCharacterActionManager:RegisterAnimeEvent(function(arg_11_0, arg_11_1, ...)
-		if var_10_0.started and arg_10_1(arg_11_0, arg_11_1, ...) then
-			var_10_0.continue = true
+	DormCharacterActionManager:RegisterAnimeEvent(function(arg_14_0, arg_14_1, ...)
+		if var_13_0.started and arg_13_1(arg_14_0, arg_14_1, ...) then
+			var_13_0.continue = true
 
 			return true
 		end
 	end)
 
-	if #arg_10_0.taskList >= 1 then
-		arg_10_0.taskList[#arg_10_0.taskList][2] = false
+	if #arg_13_0.taskList >= 1 then
+		arg_13_0.taskList[#arg_13_0.taskList][2] = false
 	end
 
-	return arg_10_0:WaitUntil(function(arg_12_0)
-		if not arg_12_0.started then
-			arg_12_0.started = true
+	return arg_13_0:WaitUntil(function(arg_15_0)
+		if not arg_15_0.started then
+			arg_15_0.started = true
 		end
 
-		return arg_12_0.continue
-	end, false, var_10_0)
+		return arg_15_0.continue
+	end, false, var_13_0)
 end
 
-function var_0_0.Start(arg_13_0, arg_13_1)
-	arg_13_0.progress = 1
+function var_0_0.Start(arg_16_0, arg_16_1)
+	arg_16_0.progress = 1
 
-	if not arg_13_1 then
-		arg_13_0.taskRunner:DoTask(arg_13_0)
+	if not arg_16_1 then
+		arg_16_0.taskRunner:DoTask(arg_16_0)
 	end
 
-	arg_13_0.taskRunner:RegisterTask(arg_13_0)
+	arg_16_0.taskRunner:RegisterTask(arg_16_0)
 end
 
-function var_0_0.SetRunner(arg_14_0, arg_14_1)
-	arg_14_0.taskRunner = arg_14_1
+function var_0_0.SetRunner(arg_17_0, arg_17_1)
+	arg_17_0.taskRunner = arg_17_1
 end
 
-function var_0_0.Abort(arg_15_0)
-	if arg_15_0.progress ~= -1 and not arg_15_0:IsFinished() then
-		arg_15_0.progress = -1
+function var_0_0.Abort(arg_18_0)
+	if arg_18_0.progress ~= -1 and not arg_18_0:IsFinished() then
+		arg_18_0.progress = -1
 
-		if arg_15_0.onAbort then
-			arg_15_0:onAbort()
+		if arg_18_0.onAbort then
+			arg_18_0:onAbort()
 		end
 	end
 end
 
-function var_0_0.IsCancelled(arg_16_0)
-	if arg_16_0.cancellationSrc then
-		return arg_16_0.cancellationSrc()
+function var_0_0.IsCancelled(arg_19_0)
+	if arg_19_0.cancellationSrc then
+		return arg_19_0.cancellationSrc()
 	end
 end
 
-function var_0_0.IsStarted(arg_17_0)
-	return arg_17_0.progress ~= 0
+function var_0_0.IsStarted(arg_20_0)
+	return arg_20_0.progress ~= 0
 end
 
-function var_0_0.IsFinished(arg_18_0)
-	return arg_18_0.progress > #arg_18_0.taskList
+function var_0_0.IsFinished(arg_21_0)
+	return arg_21_0.progress > #arg_21_0.taskList
 end
 
-function var_0_0.IsAborted(arg_19_0)
-	return arg_19_0.progress == -1
+function var_0_0.IsAborted(arg_22_0)
+	return arg_22_0.progress == -1
 end
 
-function var_0_0.SetCancellationSrc(arg_20_0, arg_20_1)
-	arg_20_0.cancellationSrc = arg_20_1
+function var_0_0.SetCancellationSrc(arg_23_0, arg_23_1)
+	arg_23_0.cancellationSrc = arg_23_1
 
-	return arg_20_0
+	return arg_23_0
 end
 
-function var_0_0.SetOnAbort(arg_21_0, arg_21_1)
-	arg_21_0.onAbort = arg_21_1
+function var_0_0.SetOnAbort(arg_24_0, arg_24_1)
+	arg_24_0.onAbort = arg_24_1
 
-	return arg_21_0
+	return arg_24_0
 end
 
-function var_0_0.SetOnComplete(arg_22_0, arg_22_1)
-	arg_22_0.onComplete = arg_22_1
+function var_0_0.SetOnComplete(arg_25_0, arg_25_1)
+	arg_25_0.onComplete = arg_25_1
 
-	return arg_22_0
+	return arg_25_0
 end
 
 return var_0_0

@@ -580,11 +580,181 @@
 			7507
 		}
 	},
+	[270012] = {
+		cost_item_list = "",
+		type = 0,
+		id = 270012,
+		title = "421e1c731110c7b71cff9fdb7101e602",
+		ui_path = "Widget/Version/SummerUI_3_3/SummerUI_3_3_SevenDaySignUI/SummerUI_3_3_SevenDaySignUI",
+		limit_level = 0,
+		config_list = {
+			7501,
+			7502,
+			7503,
+			7504,
+			7505,
+			7506,
+			7507
+		}
+	},
 	[270013] = {
 		cost_item_list = "",
 		type = 0,
 		id = 270013,
 		title = "d6656ceaa74a162b5cab556c72cf615e",
+		ui_path = "Widget/Version/NorseUI_3_2/NorseUI_3_2_SevenDaySignUI/NorseUI_3_2_FourteenDaySignUI",
+		limit_level = 0,
+		config_list = {
+			21001,
+			21002,
+			21003,
+			21004,
+			21005,
+			21006,
+			21007,
+			21008,
+			21009,
+			21010,
+			21011,
+			21012,
+			21013,
+			21014
+		}
+	},
+	[280011] = {
+		cost_item_list = "",
+		type = 0,
+		id = 280011,
+		title = "50831a222e9d410b9a9af5ae5c782e23",
+		ui_path = "Widget/Version/SummerUI_3_4/SummerUI_3_4_SevenDaySignUI/SummerUI_3_4_SevenDaySignUI",
+		limit_level = 0,
+		config_list = {
+			7501,
+			7502,
+			7503,
+			7504,
+			7505,
+			7506,
+			7507
+		}
+	},
+	[282491] = {
+		type = 1,
+		id = 282491,
+		title = "38324fb2b36df4ca80af5e569269079d",
+		ui_path = "Widget/Version/SummerUI_3_4/SummerUI_3_4_SevenSkinUI/SummerUI_3_4_SevenSkinUI",
+		limit_level = 0,
+		config_list = {
+			306101,
+			306102,
+			306103,
+			306104,
+			306105,
+			306106,
+			306107
+		},
+		cost_item_list = {
+			{
+				1,
+				100
+			}
+		}
+	},
+	[280012] = {
+		cost_item_list = "",
+		type = 0,
+		id = 280012,
+		title = "4e90cee656e397a46e6dd01261cf7188",
+		ui_path = "Widget/Version/SummerUI_3_5/SummerUI_3_5_SevenDaySignUI/SummerUI_3_5_SevenDaySignUI",
+		limit_level = 0,
+		config_list = {
+			7501,
+			7502,
+			7503,
+			7504,
+			7505,
+			7506,
+			7507
+		}
+	},
+	[293401] = {
+		type = 1,
+		id = 293401,
+		title = "a56b94a91b3c6fb97d1508d17f8cb5e6",
+		ui_path = "Widget/Version/ShashwatUI_3_6/ShashwatUI_3_6_SevenSkinUI/ShashwatUI_3_6_SevenSkinUI",
+		limit_level = 0,
+		config_list = {
+			306101,
+			306102,
+			306103,
+			306104,
+			306105,
+			306106,
+			306107
+		},
+		cost_item_list = {
+			{
+				1,
+				100
+			}
+		}
+	},
+	[290011] = {
+		cost_item_list = "",
+		type = 0,
+		id = 290011,
+		title = "d6ffc66ed812d8f9c9a7db869976f824",
+		ui_path = "Widget/Version/ShashwatUI_3_6/ShashwatUI_3_6_SevenDaySignUI/ShashwatUI_3_6_SevenDaySignUI",
+		limit_level = 0,
+		config_list = {
+			7501,
+			7502,
+			7503,
+			7504,
+			7505,
+			7506,
+			7507
+		}
+	},
+	[290012] = {
+		cost_item_list = "",
+		type = 0,
+		id = 290012,
+		title = "5ab007e60b4be37a7021de890adfb4c8",
+		ui_path = "Widget/Version/ShashwatUI_3_7/ShashwatUI_3_7_SevenDaySignUI/ShashwatUI_3_7_SevenDaySignUI",
+		limit_level = 0,
+		config_list = {
+			7501,
+			7502,
+			7503,
+			7504,
+			7505,
+			7506,
+			7507
+		}
+	},
+	[280013] = {
+		cost_item_list = "",
+		type = 0,
+		id = 280013,
+		title = "f9ed2e60d9c9b9ea991a8a4f8d73a046",
+		ui_path = "Widget/Version/SummerUI_3_3/SummerUI_3_3_SevenDaySignUI/SummerUI_3_3_SevenDaySignUI",
+		limit_level = 0,
+		config_list = {
+			7501,
+			7502,
+			7503,
+			7504,
+			7505,
+			7506,
+			7507
+		}
+	},
+	[280014] = {
+		cost_item_list = "",
+		type = 0,
+		id = 280014,
+		title = "431804970c209661d076ba41f1228a8a",
 		ui_path = "Widget/Version/NorseUI_3_2/NorseUI_3_2_SevenDaySignUI/NorseUI_3_2_FourteenDaySignUI",
 		limit_level = 0,
 		config_list = {
@@ -637,6 +807,15 @@
 		240012,
 		240013,
 		270011,
-		270013
+		270012,
+		270013,
+		280011,
+		282491,
+		280012,
+		293401,
+		290011,
+		290012,
+		280013,
+		280014
 	}
 }

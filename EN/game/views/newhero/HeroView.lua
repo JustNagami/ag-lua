@@ -39,6 +39,15 @@ function var_0_0.OnCtor(arg_3_0)
 		"astrolabe",
 		"chip"
 	}
+	arg_3_0.uiTime_ = {
+		"heroAttr",
+		"heroSkill",
+		"heroWeapon",
+		"heroEquip",
+		"heroEquipSkill",
+		"heroAstro",
+		"heroChip"
+	}
 end
 
 function var_0_0.Init(arg_4_0)
@@ -99,7 +108,7 @@ function var_0_0.OnListChange(arg_9_0, arg_9_1, arg_9_2, arg_9_3)
 	arg_9_0.guidePlaying, arg_9_0.gudieId_ = manager.guide:IsPlaying()
 	arg_9_0.filterType_ = arg_9_3
 
-	if arg_9_0.guidePlaying and arg_9_0.gudieId_ ~= 46 then
+	if arg_9_0.guidePlaying and arg_9_0.gudieId_ ~= 46 and arg_9_0.gudieId_ ~= 4601 then
 		table.sort(arg_9_0.heroIdList_, function(arg_10_0, arg_10_1)
 			return arg_10_0 == 1084
 		end)
@@ -304,22 +313,6 @@ function var_0_0.AddUIListener(arg_18_0)
 		iter_18_1.onValueChanged:AddListener(function(arg_20_0)
 			if arg_20_0 then
 				arg_18_0:SwitchPage(iter_18_0)
-
-				if iter_18_0 == 1 then
-					OperationRecorder.Record("hero", "propertyPage")
-				elseif iter_18_0 == 2 then
-					OperationRecorder.Record("hero", "skillPage")
-				elseif iter_18_0 == 3 then
-					OperationRecorder.Record("hero", "weaponPage")
-				elseif iter_18_0 == 4 then
-					OperationRecorder.Record("hero", "equipPage")
-				elseif iter_18_0 == 5 then
-					OperationRecorder.Record("hero", "transition")
-				elseif iter_18_0 == 6 then
-					OperationRecorder.Record("hero", "astroPage")
-				elseif iter_18_0 == 7 then
-					OperationRecorder.Record("hero", "chipPage")
-				end
 			end
 		end)
 	end
@@ -362,22 +355,36 @@ function var_0_0.SwitchPage(arg_22_0, arg_22_1)
 
 	if var_22_4 then
 		var_22_4:Hide()
+		arg_22_0:ExitSendMgr(arg_22_0.curPageIndex_)
 	end
 
 	local var_22_5 = arg_22_0.curPageIndex_
 
 	arg_22_0.curPageIndex_ = arg_22_1
+
+	arg_22_0:EnterSendMgr(arg_22_1)
+
 	_G.heroViewPageIndex_ = arg_22_1
 
+	if arg_22_0.pages_[arg_22_1] then
+		local var_22_6 = arg_22_0.pages_[arg_22_1].heroViewProxy_:GetViewDataType()
+
+		if var_22_6 and var_22_6 ~= arg_22_0.type_ then
+			arg_22_0.pages_[arg_22_1]:Dispose()
+
+			arg_22_0.pages_[arg_22_1] = nil
+		end
+	end
+
 	if not arg_22_0.pages_[arg_22_1] then
-		local var_22_6 = arg_22_0.heroViewProxy_:GetUIClassByType(arg_22_0.curPageIndex_)
-		local var_22_7 = arg_22_0.heroViewProxy_:GetUIPrefabByType(arg_22_0.curPageIndex_)
+		local var_22_7 = arg_22_0.heroViewProxy_:GetUIClassByType(arg_22_0.curPageIndex_)
+		local var_22_8 = arg_22_0.heroViewProxy_:GetUIPrefabByType(arg_22_0.curPageIndex_)
 
-		if var_22_7 and var_22_6 then
-			local var_22_8 = Asset.Load(var_22_7)
-			local var_22_9 = Object.Instantiate(var_22_8, arg_22_0.pageContainer_)
+		if var_22_8 and var_22_7 then
+			local var_22_9 = Asset.Load(var_22_8)
+			local var_22_10 = Object.Instantiate(var_22_9, arg_22_0.pageContainer_)
 
-			arg_22_0.pages_[arg_22_1] = var_22_6.New(arg_22_0, var_22_9)
+			arg_22_0.pages_[arg_22_1] = var_22_7.New(arg_22_0, var_22_10)
 		end
 	end
 
@@ -407,6 +414,7 @@ function var_0_0.SwitchPage(arg_22_0, arg_22_1)
 	end
 
 	arg_22_0:RecordStay(var_22_5)
+	arg_22_0:CheckWeakGuide()
 end
 
 function var_0_0.UpdateAvatarView(arg_23_0)
@@ -517,7 +525,13 @@ end
 function var_0_0.OnEnter(arg_30_0)
 	arg_30_0.type_ = arg_30_0.params_.type or HeroConst.HERO_DATA_TYPE.DEFAULT
 	arg_30_0.tempHeroList_ = arg_30_0.params_.tempHeroList
-	arg_30_0.heroViewProxy_ = HeroViewDataProxy.New(arg_30_0.type_)
+
+	if arg_30_0.params_.heroViewProxy then
+		arg_30_0.heroViewProxy_ = arg_30_0.params_.heroViewProxy
+	else
+		arg_30_0.heroViewProxy_ = HeroViewDataProxy.New(arg_30_0.type_)
+	end
+
 	arg_30_0.isEnter = arg_30_0.params_.isEnter
 
 	if arg_30_0.params_.isSkillReturn then
@@ -735,6 +749,7 @@ function var_0_0.OnExit(arg_42_0)
 	end
 
 	HeroTools.StopTalk()
+	arg_42_0:ExitSendMgr(arg_42_0.curPageIndex_)
 end
 
 function var_0_0.Dispose(arg_43_0)
@@ -825,6 +840,32 @@ function var_0_0.HandleNextJump(arg_46_0, arg_46_1)
 		JumpTools.JumpToPage2(arg_46_1)
 
 		return
+	end
+end
+
+function var_0_0.EnterSendMgr(arg_47_0, arg_47_1)
+	arg_47_1 = arg_47_1 or 1
+
+	if arg_47_0.uiTime_ then
+		local var_47_0 = arg_47_0.uiTime_[arg_47_1]
+
+		manager.uiTime:OnEnterRoute(var_47_0)
+	end
+end
+
+function var_0_0.ExitSendMgr(arg_48_0, arg_48_1)
+	if arg_48_1 and arg_48_0.uiTime_ then
+		local var_48_0 = arg_48_0.uiTime_[arg_48_1]
+
+		manager.uiTime:OnExitRoute(var_48_0)
+	end
+end
+
+function var_0_0.CheckWeakGuide(arg_49_0)
+	local var_49_0, var_49_1 = GuideTool.CheckWeakGuide(arg_49_0.routeName_)
+
+	if var_49_0 and var_49_1.guide_component[2] == arg_49_0.curPageIndex_ then
+		arg_49_0:RealCheckWeakGuide()
 	end
 end
 

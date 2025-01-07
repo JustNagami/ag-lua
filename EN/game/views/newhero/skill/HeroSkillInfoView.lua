@@ -255,20 +255,14 @@ function var_0_0.AddUIListener(arg_18_0)
 end
 
 function var_0_0.OnOneKeyUpBtn(arg_23_0)
-	local var_23_0 = SkillTools.GetSkillMaxUpLv(arg_23_0.skillId, arg_23_0.skillLevel)
-
-	if var_23_0 == arg_23_0.skillLevel then
+	if SkillTools.GetSkillMaxUpLv(arg_23_0.skillId, arg_23_0.skillLevel) == arg_23_0.skillLevel then
 		ShowTips("ERROR_HERO_NO_SKILL_UP_MAT")
 	else
-		local var_23_1 = SkillTools.GetSkillUpCostNum(arg_23_0.skillId, arg_23_0.skillLevel, var_23_0 - arg_23_0.skillLevel)
-
 		JumpTools.OpenPageByJump("skillUpTip", {
 			isAttr = false,
-			nowLv = arg_23_0.skillLevel,
-			maxUpLv = var_23_0,
+			proxy = arg_23_0.heroViewDataProxy,
 			heroId = arg_23_0.heroId,
-			skillId = arg_23_0.skillId,
-			costDataList = var_23_1
+			skillId = arg_23_0.skillId
 		})
 	end
 end

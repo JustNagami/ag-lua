@@ -451,6 +451,8 @@ function var_0_0.SetSDKId(arg_41_0)
 end
 
 function var_0_0.CheckDefaultSetting(arg_42_0)
+	PlayerTools.UpdateRandomDataAfterLogin(HomeSceneSettingConst.RANDOM_MODE.EACH_LOGIN)
+
 	if SettingData:NewDevice() then
 		arg_42_0:Go("/graphicRecommend", {
 			callback = handler(arg_42_0, arg_42_0.OnGraphicQualitySelect)
@@ -471,6 +473,7 @@ function var_0_0.AwakeName(arg_44_0)
 		arg_44_0:Go("/awakeName")
 	else
 		CheckNewGuide()
+		manager.uiTime:StartUITimer()
 	end
 end
 

@@ -65,19 +65,23 @@ function var_0_0.indexItem(arg_12_0, arg_12_1, arg_12_2)
 	arg_12_2:RefreshUI(arg_12_0.dispatchItemList_[arg_12_1])
 	arg_12_2:RegisterConfirmCallBack(function(arg_13_0, arg_13_1, arg_13_2)
 		CanteenEntrustData:SetCurDispatchTask(arg_13_0, arg_13_1, arg_13_2)
-		JumpTools.OpenPageByJump("/chooseCharacterView")
+		JumpTools.OpenPageByJump("/chooseCharacterView", {
+			roomID = arg_12_0.roomID
+		})
 	end)
 	arg_12_2:RegisterRefreshCallBack(function(arg_14_0)
 		arg_12_0.refreshFlag = true
 
-		CanteenEntrustData:RefreshEntrustData(arg_14_0)
+		CanteenEntrustData:RefreshEntrustData(arg_14_0, arg_12_0.roomID)
 	end)
 	arg_12_2:RegisterCancelCallBack(function(arg_15_0, arg_15_1)
-		CanteenEntrustData:CancelEntrust(arg_15_1)
+		CanteenEntrustData:CancelEntrust(arg_15_1, arg_12_0.roomID)
 	end)
 end
 
 function var_0_0.OnEnter(arg_16_0)
+	arg_16_0.roomID = DormConst.CANTEEN_ID
+
 	arg_16_0:RegisterEvent()
 
 	if arg_16_0:GetHadFinishEntrustAward() then
@@ -126,9 +130,7 @@ function var_0_0.GetHadFinishEntrustAward(arg_20_0)
 	local var_20_0 = CanteenEntrustData:CheckHasTimeOverEntrust()
 
 	if #var_20_0 > 0 then
-		local var_20_1 = DormData:GetCurrectSceneID()
-
-		CanteenAction:ReceiveEntrustAward(var_20_1, var_20_0)
+		CanteenAction:ReceiveEntrustAward(arg_20_0.roomID, var_20_0)
 
 		return true
 	end

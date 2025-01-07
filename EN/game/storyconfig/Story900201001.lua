@@ -4,7 +4,7 @@
 		arg_1_1.frameCnt_ = 0
 		arg_1_1.state_ = "playing"
 		arg_1_1.curTalkId_ = 900201003
-		arg_1_1.duration_ = 1.033399999999
+		arg_1_1.duration_ = 1.03
 
 		SetActive(arg_1_1.tipsGo_, false)
 
@@ -74,6 +74,7 @@
 				SetActive(arg_1_1.hideBtn_, false)
 				SetActive(arg_1_1.narrativeGo_, true)
 				SetActive(arg_1_1.lastBtn_.gameObject, false)
+				SetActive(arg_1_1.bgmBtn_.gameObject, false)
 
 				local var_4_17 = arg_1_0.narr_chapter_text
 				local var_4_18 = arg_1_0.narr_time_text
@@ -148,679 +149,757 @@
 				local var_4_32 = "music"
 
 				arg_1_1:AudioAction(var_4_31, var_4_32, "ui_battle", "ui_battle_stopbgm", "")
+
+				local var_4_33 = ""
+				local var_4_34 = manager.audio:GetAudioName("ui_battle", "ui_battle_stopbgm")
+
+				if var_4_34 ~= "" then
+					if arg_1_1.bgmTxt_.text ~= var_4_34 and arg_1_1.bgmTxt_.text ~= "" then
+						if arg_1_1.bgmTxt2_.text ~= "" then
+							arg_1_1.bgmTxt_.text = arg_1_1.bgmTxt2_.text
+						end
+
+						arg_1_1.bgmTxt2_.text = var_4_34
+
+						arg_1_1.musicChangeAnimator_:Play("music_change", 0, 0)
+					else
+						arg_1_1.bgmTxt_.text = var_4_34
+					end
+
+					if arg_1_1.bgmTimer then
+						arg_1_1.bgmTimer:Stop()
+
+						arg_1_1.bgmTimer = nil
+					end
+
+					if arg_1_1.settingData.show_music_name == 1 then
+						arg_1_1.musicController:SetSelectedState("show")
+						arg_1_1.musicAnimator_:Play("open", 0, 0)
+
+						if arg_1_1.settingData.music_time ~= 0 then
+							arg_1_1.bgmTimer = TimeTools.StartAfterSeconds(tonumber(arg_1_1.settingData.music_time), function()
+								if arg_1_1 == nil or isNil(arg_1_1.bgmTxt_) then
+									return
+								end
+
+								arg_1_1.musicController:SetSelectedState("hide")
+								arg_1_1.musicAnimator_:Play("back", 0, 0)
+							end, {})
+						end
+					end
+				end
 			end
 
-			local var_4_33 = 0.733333333333333
-			local var_4_34 = 0.300066666666667
+			local var_4_35 = 0.733333333333333
+			local var_4_36 = 0.300066666666667
 
-			if var_4_33 < arg_1_1.time_ and arg_1_1.time_ <= var_4_33 + arg_4_0 then
-				local var_4_35 = "play"
-				local var_4_36 = "music"
+			if var_4_35 < arg_1_1.time_ and arg_1_1.time_ <= var_4_35 + arg_4_0 then
+				local var_4_37 = "play"
+				local var_4_38 = "music"
 
-				arg_1_1:AudioAction(var_4_35, var_4_36, "bgm_activity_1_3_story_battle", "bgm_activity_1_3_story_battle", "bgm_activity_1_3_story_battle.awb")
-			end
-		end
-	end,
-	Play900201004 = function(arg_5_0, arg_5_1)
-		arg_5_1.time_ = 0
-		arg_5_1.frameCnt_ = 0
-		arg_5_1.state_ = "playing"
-		arg_5_1.curTalkId_ = 900201004
-		arg_5_1.duration_ = 0.999999999999
+				arg_1_1:AudioAction(var_4_37, var_4_38, "bgm_activity_1_3_story_battle", "bgm_activity_1_3_story_battle", "bgm_activity_1_3_story_battle.awb")
 
-		SetActive(arg_5_1.tipsGo_, false)
+				local var_4_39 = ""
+				local var_4_40 = manager.audio:GetAudioName("bgm_activity_1_3_story_battle", "bgm_activity_1_3_story_battle")
 
-		function arg_5_1.onSingleLineFinish_()
-			arg_5_1.onSingleLineUpdate_ = nil
-			arg_5_1.onSingleLineFinish_ = nil
-			arg_5_1.state_ = "waiting"
-		end
+				if var_4_40 ~= "" then
+					if arg_1_1.bgmTxt_.text ~= var_4_40 and arg_1_1.bgmTxt_.text ~= "" then
+						if arg_1_1.bgmTxt2_.text ~= "" then
+							arg_1_1.bgmTxt_.text = arg_1_1.bgmTxt2_.text
+						end
 
-		function arg_5_1.playNext_(arg_7_0)
-			if arg_7_0 == 1 then
-				arg_5_0:Play900201005(arg_5_1)
-			end
-		end
+						arg_1_1.bgmTxt2_.text = var_4_40
 
-		function arg_5_1.onSingleLineUpdate_(arg_8_0)
-			ComponentBinder.GetInstance():BindCfgUI(arg_5_0, arg_5_1.narrativeGo_)
+						arg_1_1.musicChangeAnimator_:Play("music_change", 0, 0)
+					else
+						arg_1_1.bgmTxt_.text = var_4_40
+					end
 
-			local var_8_0 = 0
+					if arg_1_1.bgmTimer then
+						arg_1_1.bgmTimer:Stop()
 
-			if var_8_0 < arg_5_1.time_ and arg_5_1.time_ <= var_8_0 + arg_8_0 then
-				local var_8_1 = Object.Instantiate(arg_5_1.narrativeItemGo_)
-				local var_8_2 = var_8_1:GetComponent("ComponentCfger")
+						arg_1_1.bgmTimer = nil
+					end
 
-				ComponentBinder.GetInstance():BindCfgUI(arg_5_0, var_8_1)
+					if arg_1_1.settingData.show_music_name == 1 then
+						arg_1_1.musicController:SetSelectedState("show")
+						arg_1_1.musicAnimator_:Play("open", 0, 0)
 
-				arg_5_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1038_split_7")
+						if arg_1_1.settingData.music_time ~= 0 then
+							arg_1_1.bgmTimer = TimeTools.StartAfterSeconds(tonumber(arg_1_1.settingData.music_time), function()
+								if arg_1_1 == nil or isNil(arg_1_1.bgmTxt_) then
+									return
+								end
 
-				local var_8_3 = arg_5_1:GetWordFromCfg(900201004)
-				local var_8_4 = arg_5_1:FormatText(var_8_3.content)
-
-				arg_5_0.narr_item_content.text = var_8_4
-
-				var_8_1.transform:SetParent(arg_5_1.narrativeItemGo_.transform.parent)
-
-				var_8_1.transform.localPosition = Vector3(0, 0, 0)
-				var_8_1.transform.localScale = Vector3(1, 1, 1)
-
-				SetActive(var_8_1, true)
-			end
-
-			local var_8_5 = 1
-
-			if var_8_0 <= arg_5_1.time_ and arg_5_1.time_ < var_8_0 + var_8_5 and arg_5_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
-				arg_5_1.narrativeListGo_.verticalNormalizedPosition = 0
-			end
-
-			if arg_5_1.time_ >= var_8_0 + var_8_5 and arg_5_1.time_ < var_8_0 + var_8_5 + arg_8_0 then
-				-- block empty
-			end
-		end
-	end,
-	Play900201005 = function(arg_9_0, arg_9_1)
-		arg_9_1.time_ = 0
-		arg_9_1.frameCnt_ = 0
-		arg_9_1.state_ = "playing"
-		arg_9_1.curTalkId_ = 900201005
-		arg_9_1.duration_ = 0.999999999999
-
-		SetActive(arg_9_1.tipsGo_, false)
-
-		function arg_9_1.onSingleLineFinish_()
-			arg_9_1.onSingleLineUpdate_ = nil
-			arg_9_1.onSingleLineFinish_ = nil
-			arg_9_1.state_ = "waiting"
-		end
-
-		function arg_9_1.playNext_(arg_11_0)
-			if arg_11_0 == 1 then
-				arg_9_0:Play900201006(arg_9_1)
-			end
-		end
-
-		function arg_9_1.onSingleLineUpdate_(arg_12_0)
-			ComponentBinder.GetInstance():BindCfgUI(arg_9_0, arg_9_1.narrativeGo_)
-
-			local var_12_0 = 0
-
-			if var_12_0 < arg_9_1.time_ and arg_9_1.time_ <= var_12_0 + arg_12_0 then
-				local var_12_1 = Object.Instantiate(arg_9_1.narrativeItemGo_)
-				local var_12_2 = var_12_1:GetComponent("ComponentCfger")
-
-				ComponentBinder.GetInstance():BindCfgUI(arg_9_0, var_12_1)
-
-				arg_9_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1033_split_6")
-
-				local var_12_3 = arg_9_1:GetWordFromCfg(900201005)
-				local var_12_4 = arg_9_1:FormatText(var_12_3.content)
-
-				arg_9_0.narr_item_content.text = var_12_4
-
-				var_12_1.transform:SetParent(arg_9_1.narrativeItemGo_.transform.parent)
-
-				var_12_1.transform.localPosition = Vector3(0, 0, 0)
-				var_12_1.transform.localScale = Vector3(1, 1, 1)
-
-				SetActive(var_12_1, true)
-			end
-
-			local var_12_5 = 1
-
-			if var_12_0 <= arg_9_1.time_ and arg_9_1.time_ < var_12_0 + var_12_5 and arg_9_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
-				arg_9_1.narrativeListGo_.verticalNormalizedPosition = 0
-			end
-
-			if arg_9_1.time_ >= var_12_0 + var_12_5 and arg_9_1.time_ < var_12_0 + var_12_5 + arg_12_0 then
-				-- block empty
+								arg_1_1.musicController:SetSelectedState("hide")
+								arg_1_1.musicAnimator_:Play("back", 0, 0)
+							end, {})
+						end
+					end
+				end
 			end
 		end
 	end,
-	Play900201006 = function(arg_13_0, arg_13_1)
-		arg_13_1.time_ = 0
-		arg_13_1.frameCnt_ = 0
-		arg_13_1.state_ = "playing"
-		arg_13_1.curTalkId_ = 900201006
-		arg_13_1.duration_ = 0.999999999999
+	Play900201004 = function(arg_7_0, arg_7_1)
+		arg_7_1.time_ = 0
+		arg_7_1.frameCnt_ = 0
+		arg_7_1.state_ = "playing"
+		arg_7_1.curTalkId_ = 900201004
+		arg_7_1.duration_ = 1
 
-		SetActive(arg_13_1.tipsGo_, false)
+		SetActive(arg_7_1.tipsGo_, false)
 
-		function arg_13_1.onSingleLineFinish_()
-			arg_13_1.onSingleLineUpdate_ = nil
-			arg_13_1.onSingleLineFinish_ = nil
-			arg_13_1.state_ = "waiting"
+		function arg_7_1.onSingleLineFinish_()
+			arg_7_1.onSingleLineUpdate_ = nil
+			arg_7_1.onSingleLineFinish_ = nil
+			arg_7_1.state_ = "waiting"
 		end
 
-		function arg_13_1.playNext_(arg_15_0)
-			if arg_15_0 == 1 then
-				arg_13_0:Play900201007(arg_13_1)
+		function arg_7_1.playNext_(arg_9_0)
+			if arg_9_0 == 1 then
+				arg_7_0:Play900201005(arg_7_1)
 			end
 		end
 
-		function arg_13_1.onSingleLineUpdate_(arg_16_0)
-			ComponentBinder.GetInstance():BindCfgUI(arg_13_0, arg_13_1.narrativeGo_)
+		function arg_7_1.onSingleLineUpdate_(arg_10_0)
+			ComponentBinder.GetInstance():BindCfgUI(arg_7_0, arg_7_1.narrativeGo_)
 
-			local var_16_0 = 0
+			local var_10_0 = 0
 
-			if var_16_0 < arg_13_1.time_ and arg_13_1.time_ <= var_16_0 + arg_16_0 then
-				local var_16_1 = Object.Instantiate(arg_13_1.narrativeItemGo_)
-				local var_16_2 = var_16_1:GetComponent("ComponentCfger")
+			if var_10_0 < arg_7_1.time_ and arg_7_1.time_ <= var_10_0 + arg_10_0 then
+				local var_10_1 = Object.Instantiate(arg_7_1.narrativeItemGo_)
+				local var_10_2 = var_10_1:GetComponent("ComponentCfger")
 
-				ComponentBinder.GetInstance():BindCfgUI(arg_13_0, var_16_1)
+				ComponentBinder.GetInstance():BindCfgUI(arg_7_0, var_10_1)
 
-				arg_13_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1033_split_1")
+				arg_7_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1038_split_7")
 
-				local var_16_3 = arg_13_1:GetWordFromCfg(900201006)
-				local var_16_4 = arg_13_1:FormatText(var_16_3.content)
+				local var_10_3 = arg_7_1:GetWordFromCfg(900201004)
+				local var_10_4 = arg_7_1:FormatText(var_10_3.content)
 
-				arg_13_0.narr_item_content.text = var_16_4
+				arg_7_0.narr_item_content.text = var_10_4
 
-				var_16_1.transform:SetParent(arg_13_1.narrativeItemGo_.transform.parent)
+				var_10_1.transform:SetParent(arg_7_1.narrativeItemGo_.transform.parent)
 
-				var_16_1.transform.localPosition = Vector3(0, 0, 0)
-				var_16_1.transform.localScale = Vector3(1, 1, 1)
+				var_10_1.transform.localPosition = Vector3(0, 0, 0)
+				var_10_1.transform.localScale = Vector3(1, 1, 1)
 
-				SetActive(var_16_1, true)
+				SetActive(var_10_1, true)
 			end
 
-			local var_16_5 = 1
+			local var_10_5 = 1
 
-			if var_16_0 <= arg_13_1.time_ and arg_13_1.time_ < var_16_0 + var_16_5 and arg_13_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
-				arg_13_1.narrativeListGo_.verticalNormalizedPosition = 0
+			if var_10_0 <= arg_7_1.time_ and arg_7_1.time_ < var_10_0 + var_10_5 and arg_7_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
+				arg_7_1.narrativeListGo_.verticalNormalizedPosition = 0
 			end
 
-			if arg_13_1.time_ >= var_16_0 + var_16_5 and arg_13_1.time_ < var_16_0 + var_16_5 + arg_16_0 then
+			if arg_7_1.time_ >= var_10_0 + var_10_5 and arg_7_1.time_ < var_10_0 + var_10_5 + arg_10_0 then
 				-- block empty
 			end
 		end
 	end,
-	Play900201007 = function(arg_17_0, arg_17_1)
-		arg_17_1.time_ = 0
-		arg_17_1.frameCnt_ = 0
-		arg_17_1.state_ = "playing"
-		arg_17_1.curTalkId_ = 900201007
-		arg_17_1.duration_ = 0.999999999999
+	Play900201005 = function(arg_11_0, arg_11_1)
+		arg_11_1.time_ = 0
+		arg_11_1.frameCnt_ = 0
+		arg_11_1.state_ = "playing"
+		arg_11_1.curTalkId_ = 900201005
+		arg_11_1.duration_ = 1
 
-		SetActive(arg_17_1.tipsGo_, false)
+		SetActive(arg_11_1.tipsGo_, false)
 
-		function arg_17_1.onSingleLineFinish_()
-			arg_17_1.onSingleLineUpdate_ = nil
-			arg_17_1.onSingleLineFinish_ = nil
-			arg_17_1.state_ = "waiting"
+		function arg_11_1.onSingleLineFinish_()
+			arg_11_1.onSingleLineUpdate_ = nil
+			arg_11_1.onSingleLineFinish_ = nil
+			arg_11_1.state_ = "waiting"
 		end
 
-		function arg_17_1.playNext_(arg_19_0)
-			if arg_19_0 == 1 then
-				arg_17_0:Play900201008(arg_17_1)
+		function arg_11_1.playNext_(arg_13_0)
+			if arg_13_0 == 1 then
+				arg_11_0:Play900201006(arg_11_1)
 			end
 		end
 
-		function arg_17_1.onSingleLineUpdate_(arg_20_0)
-			ComponentBinder.GetInstance():BindCfgUI(arg_17_0, arg_17_1.narrativeGo_)
+		function arg_11_1.onSingleLineUpdate_(arg_14_0)
+			ComponentBinder.GetInstance():BindCfgUI(arg_11_0, arg_11_1.narrativeGo_)
 
-			local var_20_0 = 0
+			local var_14_0 = 0
 
-			if var_20_0 < arg_17_1.time_ and arg_17_1.time_ <= var_20_0 + arg_20_0 then
-				local var_20_1 = Object.Instantiate(arg_17_1.narrativeItemGo_)
-				local var_20_2 = var_20_1:GetComponent("ComponentCfger")
+			if var_14_0 < arg_11_1.time_ and arg_11_1.time_ <= var_14_0 + arg_14_0 then
+				local var_14_1 = Object.Instantiate(arg_11_1.narrativeItemGo_)
+				local var_14_2 = var_14_1:GetComponent("ComponentCfger")
 
-				ComponentBinder.GetInstance():BindCfgUI(arg_17_0, var_20_1)
+				ComponentBinder.GetInstance():BindCfgUI(arg_11_0, var_14_1)
 
-				arg_17_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1033_split_1")
+				arg_11_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1033_split_6")
 
-				local var_20_3 = arg_17_1:GetWordFromCfg(900201007)
-				local var_20_4 = arg_17_1:FormatText(var_20_3.content)
+				local var_14_3 = arg_11_1:GetWordFromCfg(900201005)
+				local var_14_4 = arg_11_1:FormatText(var_14_3.content)
 
-				arg_17_0.narr_item_content.text = var_20_4
+				arg_11_0.narr_item_content.text = var_14_4
 
-				var_20_1.transform:SetParent(arg_17_1.narrativeItemGo_.transform.parent)
+				var_14_1.transform:SetParent(arg_11_1.narrativeItemGo_.transform.parent)
 
-				var_20_1.transform.localPosition = Vector3(0, 0, 0)
-				var_20_1.transform.localScale = Vector3(1, 1, 1)
+				var_14_1.transform.localPosition = Vector3(0, 0, 0)
+				var_14_1.transform.localScale = Vector3(1, 1, 1)
 
-				SetActive(var_20_1, true)
+				SetActive(var_14_1, true)
 			end
 
-			local var_20_5 = 1
+			local var_14_5 = 1
 
-			if var_20_0 <= arg_17_1.time_ and arg_17_1.time_ < var_20_0 + var_20_5 and arg_17_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
-				arg_17_1.narrativeListGo_.verticalNormalizedPosition = 0
+			if var_14_0 <= arg_11_1.time_ and arg_11_1.time_ < var_14_0 + var_14_5 and arg_11_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
+				arg_11_1.narrativeListGo_.verticalNormalizedPosition = 0
 			end
 
-			if arg_17_1.time_ >= var_20_0 + var_20_5 and arg_17_1.time_ < var_20_0 + var_20_5 + arg_20_0 then
+			if arg_11_1.time_ >= var_14_0 + var_14_5 and arg_11_1.time_ < var_14_0 + var_14_5 + arg_14_0 then
 				-- block empty
 			end
 		end
 	end,
-	Play900201008 = function(arg_21_0, arg_21_1)
-		arg_21_1.time_ = 0
-		arg_21_1.frameCnt_ = 0
-		arg_21_1.state_ = "playing"
-		arg_21_1.curTalkId_ = 900201008
-		arg_21_1.duration_ = 0.999999999999
+	Play900201006 = function(arg_15_0, arg_15_1)
+		arg_15_1.time_ = 0
+		arg_15_1.frameCnt_ = 0
+		arg_15_1.state_ = "playing"
+		arg_15_1.curTalkId_ = 900201006
+		arg_15_1.duration_ = 1
 
-		SetActive(arg_21_1.tipsGo_, false)
+		SetActive(arg_15_1.tipsGo_, false)
 
-		function arg_21_1.onSingleLineFinish_()
-			arg_21_1.onSingleLineUpdate_ = nil
-			arg_21_1.onSingleLineFinish_ = nil
-			arg_21_1.state_ = "waiting"
+		function arg_15_1.onSingleLineFinish_()
+			arg_15_1.onSingleLineUpdate_ = nil
+			arg_15_1.onSingleLineFinish_ = nil
+			arg_15_1.state_ = "waiting"
 		end
 
-		function arg_21_1.playNext_(arg_23_0)
-			if arg_23_0 == 1 then
-				arg_21_0:Play900201009(arg_21_1)
+		function arg_15_1.playNext_(arg_17_0)
+			if arg_17_0 == 1 then
+				arg_15_0:Play900201007(arg_15_1)
 			end
 		end
 
-		function arg_21_1.onSingleLineUpdate_(arg_24_0)
-			ComponentBinder.GetInstance():BindCfgUI(arg_21_0, arg_21_1.narrativeGo_)
+		function arg_15_1.onSingleLineUpdate_(arg_18_0)
+			ComponentBinder.GetInstance():BindCfgUI(arg_15_0, arg_15_1.narrativeGo_)
 
-			local var_24_0 = 0
+			local var_18_0 = 0
 
-			if var_24_0 < arg_21_1.time_ and arg_21_1.time_ <= var_24_0 + arg_24_0 then
-				local var_24_1 = Object.Instantiate(arg_21_1.narrativeItemGo_)
-				local var_24_2 = var_24_1:GetComponent("ComponentCfger")
+			if var_18_0 < arg_15_1.time_ and arg_15_1.time_ <= var_18_0 + arg_18_0 then
+				local var_18_1 = Object.Instantiate(arg_15_1.narrativeItemGo_)
+				local var_18_2 = var_18_1:GetComponent("ComponentCfger")
 
-				ComponentBinder.GetInstance():BindCfgUI(arg_21_0, var_24_1)
+				ComponentBinder.GetInstance():BindCfgUI(arg_15_0, var_18_1)
 
-				arg_21_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1019_split_1")
+				arg_15_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1033_split_1")
 
-				local var_24_3 = arg_21_1:GetWordFromCfg(900201008)
-				local var_24_4 = arg_21_1:FormatText(var_24_3.content)
+				local var_18_3 = arg_15_1:GetWordFromCfg(900201006)
+				local var_18_4 = arg_15_1:FormatText(var_18_3.content)
 
-				arg_21_0.narr_item_content.text = var_24_4
+				arg_15_0.narr_item_content.text = var_18_4
 
-				var_24_1.transform:SetParent(arg_21_1.narrativeItemGo_.transform.parent)
+				var_18_1.transform:SetParent(arg_15_1.narrativeItemGo_.transform.parent)
 
-				var_24_1.transform.localPosition = Vector3(0, 0, 0)
-				var_24_1.transform.localScale = Vector3(1, 1, 1)
+				var_18_1.transform.localPosition = Vector3(0, 0, 0)
+				var_18_1.transform.localScale = Vector3(1, 1, 1)
 
-				SetActive(var_24_1, true)
+				SetActive(var_18_1, true)
 			end
 
-			local var_24_5 = 1
+			local var_18_5 = 1
 
-			if var_24_0 <= arg_21_1.time_ and arg_21_1.time_ < var_24_0 + var_24_5 and arg_21_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
-				arg_21_1.narrativeListGo_.verticalNormalizedPosition = 0
+			if var_18_0 <= arg_15_1.time_ and arg_15_1.time_ < var_18_0 + var_18_5 and arg_15_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
+				arg_15_1.narrativeListGo_.verticalNormalizedPosition = 0
 			end
 
-			if arg_21_1.time_ >= var_24_0 + var_24_5 and arg_21_1.time_ < var_24_0 + var_24_5 + arg_24_0 then
+			if arg_15_1.time_ >= var_18_0 + var_18_5 and arg_15_1.time_ < var_18_0 + var_18_5 + arg_18_0 then
 				-- block empty
 			end
 		end
 	end,
-	Play900201009 = function(arg_25_0, arg_25_1)
-		arg_25_1.time_ = 0
-		arg_25_1.frameCnt_ = 0
-		arg_25_1.state_ = "playing"
-		arg_25_1.curTalkId_ = 900201009
-		arg_25_1.duration_ = 0.999999999999
+	Play900201007 = function(arg_19_0, arg_19_1)
+		arg_19_1.time_ = 0
+		arg_19_1.frameCnt_ = 0
+		arg_19_1.state_ = "playing"
+		arg_19_1.curTalkId_ = 900201007
+		arg_19_1.duration_ = 1
 
-		SetActive(arg_25_1.tipsGo_, false)
+		SetActive(arg_19_1.tipsGo_, false)
 
-		function arg_25_1.onSingleLineFinish_()
-			arg_25_1.onSingleLineUpdate_ = nil
-			arg_25_1.onSingleLineFinish_ = nil
-			arg_25_1.state_ = "waiting"
+		function arg_19_1.onSingleLineFinish_()
+			arg_19_1.onSingleLineUpdate_ = nil
+			arg_19_1.onSingleLineFinish_ = nil
+			arg_19_1.state_ = "waiting"
 		end
 
-		function arg_25_1.playNext_(arg_27_0)
-			if arg_27_0 == 1 then
-				arg_25_0:Play900201010(arg_25_1)
+		function arg_19_1.playNext_(arg_21_0)
+			if arg_21_0 == 1 then
+				arg_19_0:Play900201008(arg_19_1)
 			end
 		end
 
-		function arg_25_1.onSingleLineUpdate_(arg_28_0)
-			ComponentBinder.GetInstance():BindCfgUI(arg_25_0, arg_25_1.narrativeGo_)
+		function arg_19_1.onSingleLineUpdate_(arg_22_0)
+			ComponentBinder.GetInstance():BindCfgUI(arg_19_0, arg_19_1.narrativeGo_)
 
-			local var_28_0 = 0
+			local var_22_0 = 0
 
-			if var_28_0 < arg_25_1.time_ and arg_25_1.time_ <= var_28_0 + arg_28_0 then
-				local var_28_1 = Object.Instantiate(arg_25_1.narrativeItemGo_)
-				local var_28_2 = var_28_1:GetComponent("ComponentCfger")
+			if var_22_0 < arg_19_1.time_ and arg_19_1.time_ <= var_22_0 + arg_22_0 then
+				local var_22_1 = Object.Instantiate(arg_19_1.narrativeItemGo_)
+				local var_22_2 = var_22_1:GetComponent("ComponentCfger")
 
-				ComponentBinder.GetInstance():BindCfgUI(arg_25_0, var_28_1)
+				ComponentBinder.GetInstance():BindCfgUI(arg_19_0, var_22_1)
 
-				arg_25_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1019_split_6")
+				arg_19_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1033_split_1")
 
-				local var_28_3 = arg_25_1:GetWordFromCfg(900201009)
-				local var_28_4 = arg_25_1:FormatText(var_28_3.content)
+				local var_22_3 = arg_19_1:GetWordFromCfg(900201007)
+				local var_22_4 = arg_19_1:FormatText(var_22_3.content)
 
-				arg_25_0.narr_item_content.text = var_28_4
+				arg_19_0.narr_item_content.text = var_22_4
 
-				var_28_1.transform:SetParent(arg_25_1.narrativeItemGo_.transform.parent)
+				var_22_1.transform:SetParent(arg_19_1.narrativeItemGo_.transform.parent)
 
-				var_28_1.transform.localPosition = Vector3(0, 0, 0)
-				var_28_1.transform.localScale = Vector3(1, 1, 1)
+				var_22_1.transform.localPosition = Vector3(0, 0, 0)
+				var_22_1.transform.localScale = Vector3(1, 1, 1)
 
-				SetActive(var_28_1, true)
+				SetActive(var_22_1, true)
 			end
 
-			local var_28_5 = 1
+			local var_22_5 = 1
 
-			if var_28_0 <= arg_25_1.time_ and arg_25_1.time_ < var_28_0 + var_28_5 and arg_25_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
-				arg_25_1.narrativeListGo_.verticalNormalizedPosition = 0
+			if var_22_0 <= arg_19_1.time_ and arg_19_1.time_ < var_22_0 + var_22_5 and arg_19_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
+				arg_19_1.narrativeListGo_.verticalNormalizedPosition = 0
 			end
 
-			if arg_25_1.time_ >= var_28_0 + var_28_5 and arg_25_1.time_ < var_28_0 + var_28_5 + arg_28_0 then
+			if arg_19_1.time_ >= var_22_0 + var_22_5 and arg_19_1.time_ < var_22_0 + var_22_5 + arg_22_0 then
 				-- block empty
 			end
 		end
 	end,
-	Play900201010 = function(arg_29_0, arg_29_1)
-		arg_29_1.time_ = 0
-		arg_29_1.frameCnt_ = 0
-		arg_29_1.state_ = "playing"
-		arg_29_1.curTalkId_ = 900201010
-		arg_29_1.duration_ = 0.999999999999
+	Play900201008 = function(arg_23_0, arg_23_1)
+		arg_23_1.time_ = 0
+		arg_23_1.frameCnt_ = 0
+		arg_23_1.state_ = "playing"
+		arg_23_1.curTalkId_ = 900201008
+		arg_23_1.duration_ = 1
 
-		SetActive(arg_29_1.tipsGo_, false)
+		SetActive(arg_23_1.tipsGo_, false)
 
-		function arg_29_1.onSingleLineFinish_()
-			arg_29_1.onSingleLineUpdate_ = nil
-			arg_29_1.onSingleLineFinish_ = nil
-			arg_29_1.state_ = "waiting"
+		function arg_23_1.onSingleLineFinish_()
+			arg_23_1.onSingleLineUpdate_ = nil
+			arg_23_1.onSingleLineFinish_ = nil
+			arg_23_1.state_ = "waiting"
 		end
 
-		function arg_29_1.playNext_(arg_31_0)
-			if arg_31_0 == 1 then
-				arg_29_0:Play900201011(arg_29_1)
+		function arg_23_1.playNext_(arg_25_0)
+			if arg_25_0 == 1 then
+				arg_23_0:Play900201009(arg_23_1)
 			end
 		end
 
-		function arg_29_1.onSingleLineUpdate_(arg_32_0)
-			ComponentBinder.GetInstance():BindCfgUI(arg_29_0, arg_29_1.narrativeGo_)
+		function arg_23_1.onSingleLineUpdate_(arg_26_0)
+			ComponentBinder.GetInstance():BindCfgUI(arg_23_0, arg_23_1.narrativeGo_)
 
-			local var_32_0 = 0
+			local var_26_0 = 0
 
-			if var_32_0 < arg_29_1.time_ and arg_29_1.time_ <= var_32_0 + arg_32_0 then
-				local var_32_1 = Object.Instantiate(arg_29_1.narrativeItemGo_)
-				local var_32_2 = var_32_1:GetComponent("ComponentCfger")
+			if var_26_0 < arg_23_1.time_ and arg_23_1.time_ <= var_26_0 + arg_26_0 then
+				local var_26_1 = Object.Instantiate(arg_23_1.narrativeItemGo_)
+				local var_26_2 = var_26_1:GetComponent("ComponentCfger")
 
-				ComponentBinder.GetInstance():BindCfgUI(arg_29_0, var_32_1)
+				ComponentBinder.GetInstance():BindCfgUI(arg_23_0, var_26_1)
 
-				arg_29_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1038_split_1")
+				arg_23_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1019_split_1")
 
-				local var_32_3 = arg_29_1:GetWordFromCfg(900201010)
-				local var_32_4 = arg_29_1:FormatText(var_32_3.content)
+				local var_26_3 = arg_23_1:GetWordFromCfg(900201008)
+				local var_26_4 = arg_23_1:FormatText(var_26_3.content)
 
-				arg_29_0.narr_item_content.text = var_32_4
+				arg_23_0.narr_item_content.text = var_26_4
 
-				var_32_1.transform:SetParent(arg_29_1.narrativeItemGo_.transform.parent)
+				var_26_1.transform:SetParent(arg_23_1.narrativeItemGo_.transform.parent)
 
-				var_32_1.transform.localPosition = Vector3(0, 0, 0)
-				var_32_1.transform.localScale = Vector3(1, 1, 1)
+				var_26_1.transform.localPosition = Vector3(0, 0, 0)
+				var_26_1.transform.localScale = Vector3(1, 1, 1)
 
-				SetActive(var_32_1, true)
+				SetActive(var_26_1, true)
 			end
 
-			local var_32_5 = 1
+			local var_26_5 = 1
 
-			if var_32_0 <= arg_29_1.time_ and arg_29_1.time_ < var_32_0 + var_32_5 and arg_29_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
-				arg_29_1.narrativeListGo_.verticalNormalizedPosition = 0
+			if var_26_0 <= arg_23_1.time_ and arg_23_1.time_ < var_26_0 + var_26_5 and arg_23_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
+				arg_23_1.narrativeListGo_.verticalNormalizedPosition = 0
 			end
 
-			if arg_29_1.time_ >= var_32_0 + var_32_5 and arg_29_1.time_ < var_32_0 + var_32_5 + arg_32_0 then
+			if arg_23_1.time_ >= var_26_0 + var_26_5 and arg_23_1.time_ < var_26_0 + var_26_5 + arg_26_0 then
 				-- block empty
 			end
 		end
 	end,
-	Play900201011 = function(arg_33_0, arg_33_1)
-		arg_33_1.time_ = 0
-		arg_33_1.frameCnt_ = 0
-		arg_33_1.state_ = "playing"
-		arg_33_1.curTalkId_ = 900201011
-		arg_33_1.duration_ = 0.999999999999
+	Play900201009 = function(arg_27_0, arg_27_1)
+		arg_27_1.time_ = 0
+		arg_27_1.frameCnt_ = 0
+		arg_27_1.state_ = "playing"
+		arg_27_1.curTalkId_ = 900201009
+		arg_27_1.duration_ = 1
 
-		SetActive(arg_33_1.tipsGo_, false)
+		SetActive(arg_27_1.tipsGo_, false)
 
-		function arg_33_1.onSingleLineFinish_()
-			arg_33_1.onSingleLineUpdate_ = nil
-			arg_33_1.onSingleLineFinish_ = nil
-			arg_33_1.state_ = "waiting"
+		function arg_27_1.onSingleLineFinish_()
+			arg_27_1.onSingleLineUpdate_ = nil
+			arg_27_1.onSingleLineFinish_ = nil
+			arg_27_1.state_ = "waiting"
 		end
 
-		function arg_33_1.playNext_(arg_35_0)
-			if arg_35_0 == 1 then
-				arg_33_0:Play900201012(arg_33_1)
+		function arg_27_1.playNext_(arg_29_0)
+			if arg_29_0 == 1 then
+				arg_27_0:Play900201010(arg_27_1)
 			end
 		end
 
-		function arg_33_1.onSingleLineUpdate_(arg_36_0)
-			ComponentBinder.GetInstance():BindCfgUI(arg_33_0, arg_33_1.narrativeGo_)
+		function arg_27_1.onSingleLineUpdate_(arg_30_0)
+			ComponentBinder.GetInstance():BindCfgUI(arg_27_0, arg_27_1.narrativeGo_)
 
-			local var_36_0 = 0
+			local var_30_0 = 0
 
-			if var_36_0 < arg_33_1.time_ and arg_33_1.time_ <= var_36_0 + arg_36_0 then
-				local var_36_1 = Object.Instantiate(arg_33_1.narrativeItemGo_)
-				local var_36_2 = var_36_1:GetComponent("ComponentCfger")
+			if var_30_0 < arg_27_1.time_ and arg_27_1.time_ <= var_30_0 + arg_30_0 then
+				local var_30_1 = Object.Instantiate(arg_27_1.narrativeItemGo_)
+				local var_30_2 = var_30_1:GetComponent("ComponentCfger")
 
-				ComponentBinder.GetInstance():BindCfgUI(arg_33_0, var_36_1)
+				ComponentBinder.GetInstance():BindCfgUI(arg_27_0, var_30_1)
 
-				arg_33_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1019_split_1")
+				arg_27_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1019_split_6")
 
-				local var_36_3 = arg_33_1:GetWordFromCfg(900201011)
-				local var_36_4 = arg_33_1:FormatText(var_36_3.content)
+				local var_30_3 = arg_27_1:GetWordFromCfg(900201009)
+				local var_30_4 = arg_27_1:FormatText(var_30_3.content)
 
-				arg_33_0.narr_item_content.text = var_36_4
+				arg_27_0.narr_item_content.text = var_30_4
 
-				var_36_1.transform:SetParent(arg_33_1.narrativeItemGo_.transform.parent)
+				var_30_1.transform:SetParent(arg_27_1.narrativeItemGo_.transform.parent)
 
-				var_36_1.transform.localPosition = Vector3(0, 0, 0)
-				var_36_1.transform.localScale = Vector3(1, 1, 1)
+				var_30_1.transform.localPosition = Vector3(0, 0, 0)
+				var_30_1.transform.localScale = Vector3(1, 1, 1)
 
-				SetActive(var_36_1, true)
+				SetActive(var_30_1, true)
 			end
 
-			local var_36_5 = 1
+			local var_30_5 = 1
 
-			if var_36_0 <= arg_33_1.time_ and arg_33_1.time_ < var_36_0 + var_36_5 and arg_33_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
-				arg_33_1.narrativeListGo_.verticalNormalizedPosition = 0
+			if var_30_0 <= arg_27_1.time_ and arg_27_1.time_ < var_30_0 + var_30_5 and arg_27_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
+				arg_27_1.narrativeListGo_.verticalNormalizedPosition = 0
 			end
 
-			if arg_33_1.time_ >= var_36_0 + var_36_5 and arg_33_1.time_ < var_36_0 + var_36_5 + arg_36_0 then
+			if arg_27_1.time_ >= var_30_0 + var_30_5 and arg_27_1.time_ < var_30_0 + var_30_5 + arg_30_0 then
 				-- block empty
 			end
 		end
 	end,
-	Play900201012 = function(arg_37_0, arg_37_1)
-		arg_37_1.time_ = 0
-		arg_37_1.frameCnt_ = 0
-		arg_37_1.state_ = "playing"
-		arg_37_1.curTalkId_ = 900201012
-		arg_37_1.duration_ = 0.999999999999
+	Play900201010 = function(arg_31_0, arg_31_1)
+		arg_31_1.time_ = 0
+		arg_31_1.frameCnt_ = 0
+		arg_31_1.state_ = "playing"
+		arg_31_1.curTalkId_ = 900201010
+		arg_31_1.duration_ = 1
 
-		SetActive(arg_37_1.tipsGo_, false)
+		SetActive(arg_31_1.tipsGo_, false)
 
-		function arg_37_1.onSingleLineFinish_()
-			arg_37_1.onSingleLineUpdate_ = nil
-			arg_37_1.onSingleLineFinish_ = nil
-			arg_37_1.state_ = "waiting"
+		function arg_31_1.onSingleLineFinish_()
+			arg_31_1.onSingleLineUpdate_ = nil
+			arg_31_1.onSingleLineFinish_ = nil
+			arg_31_1.state_ = "waiting"
 		end
 
-		function arg_37_1.playNext_(arg_39_0)
-			if arg_39_0 == 1 then
-				arg_37_0:Play900201013(arg_37_1)
+		function arg_31_1.playNext_(arg_33_0)
+			if arg_33_0 == 1 then
+				arg_31_0:Play900201011(arg_31_1)
 			end
 		end
 
-		function arg_37_1.onSingleLineUpdate_(arg_40_0)
-			ComponentBinder.GetInstance():BindCfgUI(arg_37_0, arg_37_1.narrativeGo_)
+		function arg_31_1.onSingleLineUpdate_(arg_34_0)
+			ComponentBinder.GetInstance():BindCfgUI(arg_31_0, arg_31_1.narrativeGo_)
 
-			local var_40_0 = 0
+			local var_34_0 = 0
 
-			if var_40_0 < arg_37_1.time_ and arg_37_1.time_ <= var_40_0 + arg_40_0 then
-				local var_40_1 = Object.Instantiate(arg_37_1.narrativeItemGo_)
-				local var_40_2 = var_40_1:GetComponent("ComponentCfger")
+			if var_34_0 < arg_31_1.time_ and arg_31_1.time_ <= var_34_0 + arg_34_0 then
+				local var_34_1 = Object.Instantiate(arg_31_1.narrativeItemGo_)
+				local var_34_2 = var_34_1:GetComponent("ComponentCfger")
 
-				ComponentBinder.GetInstance():BindCfgUI(arg_37_0, var_40_1)
+				ComponentBinder.GetInstance():BindCfgUI(arg_31_0, var_34_1)
 
-				arg_37_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1033_split_6")
+				arg_31_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1038_split_1")
 
-				local var_40_3 = arg_37_1:GetWordFromCfg(900201012)
-				local var_40_4 = arg_37_1:FormatText(var_40_3.content)
+				local var_34_3 = arg_31_1:GetWordFromCfg(900201010)
+				local var_34_4 = arg_31_1:FormatText(var_34_3.content)
 
-				arg_37_0.narr_item_content.text = var_40_4
+				arg_31_0.narr_item_content.text = var_34_4
 
-				var_40_1.transform:SetParent(arg_37_1.narrativeItemGo_.transform.parent)
+				var_34_1.transform:SetParent(arg_31_1.narrativeItemGo_.transform.parent)
 
-				var_40_1.transform.localPosition = Vector3(0, 0, 0)
-				var_40_1.transform.localScale = Vector3(1, 1, 1)
+				var_34_1.transform.localPosition = Vector3(0, 0, 0)
+				var_34_1.transform.localScale = Vector3(1, 1, 1)
 
-				SetActive(var_40_1, true)
+				SetActive(var_34_1, true)
 			end
 
-			local var_40_5 = 1
+			local var_34_5 = 1
 
-			if var_40_0 <= arg_37_1.time_ and arg_37_1.time_ < var_40_0 + var_40_5 and arg_37_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
-				arg_37_1.narrativeListGo_.verticalNormalizedPosition = 0
+			if var_34_0 <= arg_31_1.time_ and arg_31_1.time_ < var_34_0 + var_34_5 and arg_31_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
+				arg_31_1.narrativeListGo_.verticalNormalizedPosition = 0
 			end
 
-			if arg_37_1.time_ >= var_40_0 + var_40_5 and arg_37_1.time_ < var_40_0 + var_40_5 + arg_40_0 then
+			if arg_31_1.time_ >= var_34_0 + var_34_5 and arg_31_1.time_ < var_34_0 + var_34_5 + arg_34_0 then
 				-- block empty
 			end
 		end
 	end,
-	Play900201013 = function(arg_41_0, arg_41_1)
-		arg_41_1.time_ = 0
-		arg_41_1.frameCnt_ = 0
-		arg_41_1.state_ = "playing"
-		arg_41_1.curTalkId_ = 900201013
-		arg_41_1.duration_ = 0.999999999999
+	Play900201011 = function(arg_35_0, arg_35_1)
+		arg_35_1.time_ = 0
+		arg_35_1.frameCnt_ = 0
+		arg_35_1.state_ = "playing"
+		arg_35_1.curTalkId_ = 900201011
+		arg_35_1.duration_ = 1
 
-		SetActive(arg_41_1.tipsGo_, false)
+		SetActive(arg_35_1.tipsGo_, false)
 
-		function arg_41_1.onSingleLineFinish_()
-			arg_41_1.onSingleLineUpdate_ = nil
-			arg_41_1.onSingleLineFinish_ = nil
-			arg_41_1.state_ = "waiting"
+		function arg_35_1.onSingleLineFinish_()
+			arg_35_1.onSingleLineUpdate_ = nil
+			arg_35_1.onSingleLineFinish_ = nil
+			arg_35_1.state_ = "waiting"
 		end
 
-		function arg_41_1.playNext_(arg_43_0)
-			if arg_43_0 == 1 then
-				arg_41_0:Play900201014(arg_41_1)
+		function arg_35_1.playNext_(arg_37_0)
+			if arg_37_0 == 1 then
+				arg_35_0:Play900201012(arg_35_1)
 			end
 		end
 
-		function arg_41_1.onSingleLineUpdate_(arg_44_0)
-			ComponentBinder.GetInstance():BindCfgUI(arg_41_0, arg_41_1.narrativeGo_)
+		function arg_35_1.onSingleLineUpdate_(arg_38_0)
+			ComponentBinder.GetInstance():BindCfgUI(arg_35_0, arg_35_1.narrativeGo_)
 
-			local var_44_0 = 0
+			local var_38_0 = 0
 
-			if var_44_0 < arg_41_1.time_ and arg_41_1.time_ <= var_44_0 + arg_44_0 then
-				local var_44_1 = Object.Instantiate(arg_41_1.narrativeItemGo_)
-				local var_44_2 = var_44_1:GetComponent("ComponentCfger")
+			if var_38_0 < arg_35_1.time_ and arg_35_1.time_ <= var_38_0 + arg_38_0 then
+				local var_38_1 = Object.Instantiate(arg_35_1.narrativeItemGo_)
+				local var_38_2 = var_38_1:GetComponent("ComponentCfger")
 
-				ComponentBinder.GetInstance():BindCfgUI(arg_41_0, var_44_1)
+				ComponentBinder.GetInstance():BindCfgUI(arg_35_0, var_38_1)
 
-				arg_41_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1019_split_6")
+				arg_35_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1019_split_1")
 
-				local var_44_3 = arg_41_1:GetWordFromCfg(900201013)
-				local var_44_4 = arg_41_1:FormatText(var_44_3.content)
+				local var_38_3 = arg_35_1:GetWordFromCfg(900201011)
+				local var_38_4 = arg_35_1:FormatText(var_38_3.content)
 
-				arg_41_0.narr_item_content.text = var_44_4
+				arg_35_0.narr_item_content.text = var_38_4
 
-				var_44_1.transform:SetParent(arg_41_1.narrativeItemGo_.transform.parent)
+				var_38_1.transform:SetParent(arg_35_1.narrativeItemGo_.transform.parent)
 
-				var_44_1.transform.localPosition = Vector3(0, 0, 0)
-				var_44_1.transform.localScale = Vector3(1, 1, 1)
+				var_38_1.transform.localPosition = Vector3(0, 0, 0)
+				var_38_1.transform.localScale = Vector3(1, 1, 1)
 
-				SetActive(var_44_1, true)
+				SetActive(var_38_1, true)
 			end
 
-			local var_44_5 = 1
+			local var_38_5 = 1
 
-			if var_44_0 <= arg_41_1.time_ and arg_41_1.time_ < var_44_0 + var_44_5 and arg_41_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
-				arg_41_1.narrativeListGo_.verticalNormalizedPosition = 0
+			if var_38_0 <= arg_35_1.time_ and arg_35_1.time_ < var_38_0 + var_38_5 and arg_35_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
+				arg_35_1.narrativeListGo_.verticalNormalizedPosition = 0
 			end
 
-			if arg_41_1.time_ >= var_44_0 + var_44_5 and arg_41_1.time_ < var_44_0 + var_44_5 + arg_44_0 then
+			if arg_35_1.time_ >= var_38_0 + var_38_5 and arg_35_1.time_ < var_38_0 + var_38_5 + arg_38_0 then
 				-- block empty
 			end
 		end
 	end,
-	Play900201014 = function(arg_45_0, arg_45_1)
-		arg_45_1.time_ = 0
-		arg_45_1.frameCnt_ = 0
-		arg_45_1.state_ = "playing"
-		arg_45_1.curTalkId_ = 900201014
-		arg_45_1.duration_ = 1.033399999999
+	Play900201012 = function(arg_39_0, arg_39_1)
+		arg_39_1.time_ = 0
+		arg_39_1.frameCnt_ = 0
+		arg_39_1.state_ = "playing"
+		arg_39_1.curTalkId_ = 900201012
+		arg_39_1.duration_ = 1
 
-		SetActive(arg_45_1.tipsGo_, false)
+		SetActive(arg_39_1.tipsGo_, false)
 
-		function arg_45_1.onSingleLineFinish_()
-			arg_45_1.onSingleLineUpdate_ = nil
-			arg_45_1.onSingleLineFinish_ = nil
-			arg_45_1.state_ = "waiting"
-			arg_45_1.auto_ = false
+		function arg_39_1.onSingleLineFinish_()
+			arg_39_1.onSingleLineUpdate_ = nil
+			arg_39_1.onSingleLineFinish_ = nil
+			arg_39_1.state_ = "waiting"
 		end
 
-		function arg_45_1.playNext_(arg_47_0)
-			arg_45_1.onStoryFinished_()
+		function arg_39_1.playNext_(arg_41_0)
+			if arg_41_0 == 1 then
+				arg_39_0:Play900201013(arg_39_1)
+			end
 		end
 
-		function arg_45_1.onSingleLineUpdate_(arg_48_0)
-			ComponentBinder.GetInstance():BindCfgUI(arg_45_0, arg_45_1.narrativeGo_)
+		function arg_39_1.onSingleLineUpdate_(arg_42_0)
+			ComponentBinder.GetInstance():BindCfgUI(arg_39_0, arg_39_1.narrativeGo_)
 
-			local var_48_0 = 0
+			local var_42_0 = 0
 
-			if var_48_0 < arg_45_1.time_ and arg_45_1.time_ <= var_48_0 + arg_48_0 then
-				local var_48_1 = Object.Instantiate(arg_45_1.narrativeItemGo_)
-				local var_48_2 = var_48_1:GetComponent("ComponentCfger")
+			if var_42_0 < arg_39_1.time_ and arg_39_1.time_ <= var_42_0 + arg_42_0 then
+				local var_42_1 = Object.Instantiate(arg_39_1.narrativeItemGo_)
+				local var_42_2 = var_42_1:GetComponent("ComponentCfger")
 
-				ComponentBinder.GetInstance():BindCfgUI(arg_45_0, var_48_1)
+				ComponentBinder.GetInstance():BindCfgUI(arg_39_0, var_42_1)
 
-				arg_45_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1119_1_split_1")
+				arg_39_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1033_split_6")
 
-				local var_48_3 = arg_45_1:GetWordFromCfg(900201014)
-				local var_48_4 = arg_45_1:FormatText(var_48_3.content)
+				local var_42_3 = arg_39_1:GetWordFromCfg(900201012)
+				local var_42_4 = arg_39_1:FormatText(var_42_3.content)
 
-				arg_45_0.narr_item_content.text = var_48_4
+				arg_39_0.narr_item_content.text = var_42_4
 
-				var_48_1.transform:SetParent(arg_45_1.narrativeItemGo_.transform.parent)
+				var_42_1.transform:SetParent(arg_39_1.narrativeItemGo_.transform.parent)
 
-				var_48_1.transform.localPosition = Vector3(0, 0, 0)
-				var_48_1.transform.localScale = Vector3(1, 1, 1)
+				var_42_1.transform.localPosition = Vector3(0, 0, 0)
+				var_42_1.transform.localScale = Vector3(1, 1, 1)
 
-				SetActive(var_48_1, true)
+				SetActive(var_42_1, true)
 			end
 
-			local var_48_5 = 1
+			local var_42_5 = 1
 
-			if var_48_0 <= arg_45_1.time_ and arg_45_1.time_ < var_48_0 + var_48_5 and arg_45_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
-				arg_45_1.narrativeListGo_.verticalNormalizedPosition = 0
+			if var_42_0 <= arg_39_1.time_ and arg_39_1.time_ < var_42_0 + var_42_5 and arg_39_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
+				arg_39_1.narrativeListGo_.verticalNormalizedPosition = 0
 			end
 
-			if arg_45_1.time_ >= var_48_0 + var_48_5 and arg_45_1.time_ < var_48_0 + var_48_5 + arg_48_0 then
+			if arg_39_1.time_ >= var_42_0 + var_42_5 and arg_39_1.time_ < var_42_0 + var_42_5 + arg_42_0 then
+				-- block empty
+			end
+		end
+	end,
+	Play900201013 = function(arg_43_0, arg_43_1)
+		arg_43_1.time_ = 0
+		arg_43_1.frameCnt_ = 0
+		arg_43_1.state_ = "playing"
+		arg_43_1.curTalkId_ = 900201013
+		arg_43_1.duration_ = 1
+
+		SetActive(arg_43_1.tipsGo_, false)
+
+		function arg_43_1.onSingleLineFinish_()
+			arg_43_1.onSingleLineUpdate_ = nil
+			arg_43_1.onSingleLineFinish_ = nil
+			arg_43_1.state_ = "waiting"
+		end
+
+		function arg_43_1.playNext_(arg_45_0)
+			if arg_45_0 == 1 then
+				arg_43_0:Play900201014(arg_43_1)
+			end
+		end
+
+		function arg_43_1.onSingleLineUpdate_(arg_46_0)
+			ComponentBinder.GetInstance():BindCfgUI(arg_43_0, arg_43_1.narrativeGo_)
+
+			local var_46_0 = 0
+
+			if var_46_0 < arg_43_1.time_ and arg_43_1.time_ <= var_46_0 + arg_46_0 then
+				local var_46_1 = Object.Instantiate(arg_43_1.narrativeItemGo_)
+				local var_46_2 = var_46_1:GetComponent("ComponentCfger")
+
+				ComponentBinder.GetInstance():BindCfgUI(arg_43_0, var_46_1)
+
+				arg_43_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1019_split_6")
+
+				local var_46_3 = arg_43_1:GetWordFromCfg(900201013)
+				local var_46_4 = arg_43_1:FormatText(var_46_3.content)
+
+				arg_43_0.narr_item_content.text = var_46_4
+
+				var_46_1.transform:SetParent(arg_43_1.narrativeItemGo_.transform.parent)
+
+				var_46_1.transform.localPosition = Vector3(0, 0, 0)
+				var_46_1.transform.localScale = Vector3(1, 1, 1)
+
+				SetActive(var_46_1, true)
+			end
+
+			local var_46_5 = 1
+
+			if var_46_0 <= arg_43_1.time_ and arg_43_1.time_ < var_46_0 + var_46_5 and arg_43_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
+				arg_43_1.narrativeListGo_.verticalNormalizedPosition = 0
+			end
+
+			if arg_43_1.time_ >= var_46_0 + var_46_5 and arg_43_1.time_ < var_46_0 + var_46_5 + arg_46_0 then
+				-- block empty
+			end
+		end
+	end,
+	Play900201014 = function(arg_47_0, arg_47_1)
+		arg_47_1.time_ = 0
+		arg_47_1.frameCnt_ = 0
+		arg_47_1.state_ = "playing"
+		arg_47_1.curTalkId_ = 900201014
+		arg_47_1.duration_ = 1.03
+
+		SetActive(arg_47_1.tipsGo_, false)
+
+		function arg_47_1.onSingleLineFinish_()
+			arg_47_1.onSingleLineUpdate_ = nil
+			arg_47_1.onSingleLineFinish_ = nil
+			arg_47_1.state_ = "waiting"
+			arg_47_1.auto_ = false
+		end
+
+		function arg_47_1.playNext_(arg_49_0)
+			arg_47_1.onStoryFinished_()
+		end
+
+		function arg_47_1.onSingleLineUpdate_(arg_50_0)
+			ComponentBinder.GetInstance():BindCfgUI(arg_47_0, arg_47_1.narrativeGo_)
+
+			local var_50_0 = 0
+
+			if var_50_0 < arg_47_1.time_ and arg_47_1.time_ <= var_50_0 + arg_50_0 then
+				local var_50_1 = Object.Instantiate(arg_47_1.narrativeItemGo_)
+				local var_50_2 = var_50_1:GetComponent("ComponentCfger")
+
+				ComponentBinder.GetInstance():BindCfgUI(arg_47_0, var_50_1)
+
+				arg_47_0.narr_item_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1119_1_split_1")
+
+				local var_50_3 = arg_47_1:GetWordFromCfg(900201014)
+				local var_50_4 = arg_47_1:FormatText(var_50_3.content)
+
+				arg_47_0.narr_item_content.text = var_50_4
+
+				var_50_1.transform:SetParent(arg_47_1.narrativeItemGo_.transform.parent)
+
+				var_50_1.transform.localPosition = Vector3(0, 0, 0)
+				var_50_1.transform.localScale = Vector3(1, 1, 1)
+
+				SetActive(var_50_1, true)
+			end
+
+			local var_50_5 = 1
+
+			if var_50_0 <= arg_47_1.time_ and arg_47_1.time_ < var_50_0 + var_50_5 and arg_47_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
+				arg_47_1.narrativeListGo_.verticalNormalizedPosition = 0
+			end
+
+			if arg_47_1.time_ >= var_50_0 + var_50_5 and arg_47_1.time_ < var_50_0 + var_50_5 + arg_50_0 then
 				-- block empty
 			end
 
-			ComponentBinder.GetInstance():BindCfgUI(arg_45_0, arg_45_1.narrativeGo_)
+			ComponentBinder.GetInstance():BindCfgUI(arg_47_0, arg_47_1.narrativeGo_)
 
-			local var_48_6 = 1
+			local var_50_6 = 1
 
-			if var_48_6 < arg_45_1.time_ and arg_45_1.time_ <= var_48_6 + arg_48_0 then
+			if var_50_6 < arg_47_1.time_ and arg_47_1.time_ <= var_50_6 + arg_50_0 then
 				-- block empty
 			end
 
-			local var_48_7 = 0.0334
+			local var_50_7 = 0.0334
 
-			if var_48_6 <= arg_45_1.time_ and arg_45_1.time_ < var_48_6 + var_48_7 and arg_45_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
-				arg_45_1.narrativeListGo_.verticalNormalizedPosition = 0
+			if var_50_6 <= arg_47_1.time_ and arg_47_1.time_ < var_50_6 + var_50_7 and arg_47_1.narrativeListGo_.verticalNormalizedPosition >= 0.001 then
+				arg_47_1.narrativeListGo_.verticalNormalizedPosition = 0
 			end
 
-			if arg_45_1.time_ >= var_48_6 + var_48_7 and arg_45_1.time_ < var_48_6 + var_48_7 + arg_48_0 then
-				arg_45_1.narrativeListGo_.movementType = ScrollRect.MovementType.Elastic
+			if arg_47_1.time_ >= var_50_6 + var_50_7 and arg_47_1.time_ < var_50_6 + var_50_7 + arg_50_0 then
+				arg_47_1.narrativeListGo_.movementType = ScrollRect.MovementType.Elastic
 
-				local var_48_8 = arg_45_1.narrativeListGo_:GetComponent(typeof(Image))
+				local var_50_8 = arg_47_1.narrativeListGo_:GetComponent(typeof(Image))
 
-				if var_48_8 then
-					var_48_8.raycastTarget = true
+				if var_50_8 then
+					var_50_8.raycastTarget = true
 				end
 
-				SetActive(arg_45_1.narrativeContinueBtn_.gameObject, true)
+				SetActive(arg_47_1.narrativeContinueBtn_.gameObject, true)
 			end
 		end
 	end,

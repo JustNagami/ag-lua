@@ -16,8 +16,8 @@ function var_0_0.AddListeners(arg_3_0)
 	arg_3_0:AddBtnListener(arg_3_0.button_, nil, function()
 		local var_4_0 = getChapterClientCfgByChapterID(arg_3_0.chapterID_)
 
-		BattleFieldData:SetCacheChapterClient(getChapterToggle(var_4_0.id), var_4_0.id)
-		BattleFieldData:SetCacheChapter(getChapterToggle(var_4_0.id), arg_3_0.chapterID_)
+		BattleFieldData:SetCacheChapterClient(var_4_0.id, var_4_0.id)
+		BattleFieldData:SetCacheChapter(var_4_0.id, arg_3_0.chapterID_)
 		BattleStageAction.ClickSubPlot(arg_3_0.chapterID_)
 		arg_3_0:Go("/summerStoryRemastered", {
 			chapterID = arg_3_0.chapterID_

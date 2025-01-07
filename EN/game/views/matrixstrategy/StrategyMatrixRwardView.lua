@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("StrategyMatrixRwardView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/StrategyMatrix/StrategyMatriRewardUI"
+	return "Widget/System/MatrixlUI/StrategyMatriReward01UI"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -18,11 +18,11 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
-	arg_4_0.list = LuaList.New(handler(arg_4_0, arg_4_0.indexItem), arg_4_0.m_list, StrategyMatrixRwardItem)
+	arg_4_0.list = LuaList.New(handler(arg_4_0, arg_4_0.indexItem), arg_4_0.uiList_, StrategyMatrixRwardItem)
 end
 
 function var_0_0.AddUIListener(arg_5_0)
-	arg_5_0:AddBtnListener(arg_5_0.m_mask, nil, function()
+	arg_5_0:AddBtnListener(arg_5_0.maskBtn_, nil, function()
 		arg_5_0:Back()
 	end)
 end

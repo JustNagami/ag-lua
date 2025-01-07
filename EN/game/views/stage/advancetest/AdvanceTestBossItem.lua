@@ -34,29 +34,30 @@ function var_0_0.indexItem(arg_5_0, arg_5_1, arg_5_2)
 end
 
 function var_0_0.RefreshUI(arg_6_0, arg_6_1)
-	local var_6_0 = AdvanceTestData:GetCurCfgByIndex(arg_6_1)
-	local var_6_1 = var_6_0.stage_target
-	local var_6_2 = MonsterCfg[var_6_1]
+	local var_6_0 = AdvanceTestData:GetCacheActivityID()
+	local var_6_1 = AdvanceTestData:GetCurCfgByIndex(arg_6_1, var_6_0)
+	local var_6_2 = var_6_1.stage_target
+	local var_6_3 = MonsterCfg[var_6_2]
 
-	arg_6_0.affixListTable = var_6_0.affix_id
+	arg_6_0.affixListTable = var_6_1.affix_id
 
 	arg_6_0.affixList_:StartScroll(#arg_6_0.affixListTable)
 	AdvanceTestData:SetAffixList(arg_6_0.affixListTable)
 
 	arg_6_0.nameText_.text = string.format(GetTips("TEST_CHALLENGE_TIPS_2"), GetMonsterName({
-		var_6_1
+		var_6_2
 	}))
-	arg_6_0.descText_.text = var_6_2.desc
-	arg_6_0.riskText_.text = arg_6_0:GetTipsByCfg(var_6_0)
-	arg_6_0.bossImg_.sprite = getSpriteWithoutAtlas(SpritePathCfg.CollectBoss.path .. var_6_1)
+	arg_6_0.descText_.text = var_6_3.desc
+	arg_6_0.riskText_.text = arg_6_0:GetTipsByCfg(var_6_1)
+	arg_6_0.bossImg_.sprite = getSpriteWithoutAtlas(SpritePathCfg.CollectBoss.path .. var_6_2)
 
-	local var_6_3 = arg_6_0:SetLimitTextTop(var_6_0)
-	local var_6_4 = string.format(GetTips("TEST_CHALLENGE_TIPS_1"), arg_6_0:GetStrByCharacterStar(var_6_0.character), var_6_0.weapon)
+	local var_6_4 = arg_6_0:SetLimitTextTop(var_6_1)
+	local var_6_5 = string.format(GetTips("TEST_CHALLENGE_TIPS_1"), arg_6_0:GetStrByCharacterStar(var_6_1.character), var_6_1.weapon)
 
-	if var_6_3 ~= "" then
-		arg_6_0.limitText_.text = var_6_3 .. "\n" .. var_6_4
+	if var_6_4 ~= "" then
+		arg_6_0.limitText_.text = var_6_4 .. "\n" .. var_6_5
 	else
-		arg_6_0.limitText_.text = var_6_4
+		arg_6_0.limitText_.text = var_6_5
 	end
 
 	arg_6_0.difficultyController_:SetSelectedState(arg_6_1)

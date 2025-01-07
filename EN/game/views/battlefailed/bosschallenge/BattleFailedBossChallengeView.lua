@@ -4,12 +4,10 @@ local var_0_0 = class("BattleFailedBossChallengeView", NewBattleFailedWithButton
 
 function var_0_0.OnEnter(arg_1_0)
 	var_0_0.super.OnEnter(arg_1_0)
-	arg_1_0:AddTimer()
 end
 
 function var_0_0.OnExit(arg_2_0)
 	var_0_0.super.OnExit(arg_2_0)
-	arg_2_0:StopTimer()
 end
 
 function var_0_0.AddTimer(arg_3_0)

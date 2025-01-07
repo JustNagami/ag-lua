@@ -30,6 +30,7 @@ LoadSceneMgr = require("manager/LoadSceneMgr")
 RollTipsMgr = require("manager/RollTipsMgr")
 MatrixPopMgr = require("manager/MatrixPopMgr")
 IngameGraphicMgr = require("manager/setting/IngameGraphicMgr")
+AssetPendMgr = require("manager/AssetPendMgr")
 AchievementTipsMgr = require("manager/tips/achievementTips/AchievementTipsMgr")
 ShareMgr = require("manager/share/ShareMgr")
 
@@ -38,3 +39,4 @@ require("manager/posterGirl/includePosterGirl")
 require("manager/heroRaiseTrack/includeHeroRaiseTrack")
 
 VideoPlayMgr = require("manager/video/VideoPlayMgr")
+UITimeMgr = require("manager/UITimeMgr")

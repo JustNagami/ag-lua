@@ -15,7 +15,6 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
-	arg_3_0.starCon_ = ControllerUtil.GetController(arg_3_0.transform_, "star")
 	arg_3_0.typeCon_ = ControllerUtil.GetController(arg_3_0.transform_, "type")
 end
 
@@ -27,31 +26,35 @@ function var_0_0.OnEnter(arg_5_0)
 	return
 end
 
-function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
+function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2)
 	SetActive(arg_6_0.gameObject_, true)
 	arg_6_0:DestroySticker()
 
-	if arg_6_2.type == ItemConst.ITEM_TYPE.DYNAMIC_STICKER then
-		local var_6_0 = arg_6_2.param[1]
-		local var_6_1 = ChatStickerCfg[var_6_0].icon .. SettingData:GetCurrentLanguageKey()
+	local var_6_0 = ActivityLimitedDrawPoolCfg[arg_6_1]
+	local var_6_1 = var_6_0.reward[1][1]
+	local var_6_2 = ItemCfg[var_6_1]
+	local var_6_3 = var_6_0.reward[1][2]
 
-		arg_6_0.dynamicStickerGo_ = Object.Instantiate(Asset.Load(var_6_1), arg_6_0.dynamicTf_)
+	if var_6_2.type == ItemConst.ITEM_TYPE.DYNAMIC_STICKER then
+		local var_6_4 = var_6_2.param[1]
+		local var_6_5 = ChatStickerCfg[var_6_4].icon .. SettingData:GetCurrentLanguageKey()
+
+		arg_6_0.dynamicStickerGo_ = Object.Instantiate(Asset.Load(var_6_5), arg_6_0.dynamicTf_)
 
 		arg_6_0.typeCon_:SetSelectedState("dynamic")
-	elseif arg_6_2.type == ItemConst.ITEM_TYPE.HERO_SKIN then
-		arg_6_0.role_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. arg_6_2.id)
+	elseif var_6_2.type == ItemConst.ITEM_TYPE.HERO_SKIN then
+		arg_6_0.role_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_6_1)
 
 		arg_6_0.typeCon_:SetSelectedState("skin")
 	else
-		arg_6_0.icon_.sprite = ItemTools.getItemSprite(arg_6_2.id)
+		arg_6_0.icon_.sprite = ItemTools.getItemSprite(var_6_1)
 
 		arg_6_0.typeCon_:SetSelectedState("icon")
 		arg_6_0.icon_:SetNativeSize()
 	end
 
-	arg_6_0.name_.text = ItemTools.getItemName(arg_6_2.id) .. "×" .. arg_6_3
+	arg_6_0.name_.text = ItemTools.getItemName(var_6_1) .. "×" .. var_6_3
 
-	arg_6_0.starCon_:SetSelectedState(arg_6_2.rare)
 	arg_6_0.playable_:Evaluate()
 
 	arg_6_0.playable_.time = 0

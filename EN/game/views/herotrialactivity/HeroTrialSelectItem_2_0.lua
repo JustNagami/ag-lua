@@ -5,6 +5,10 @@ function var_0_0.Ctor(arg_1_0, arg_1_1, arg_1_2, arg_1_3, arg_1_4)
 	arg_1_0.transform_ = arg_1_0.gameObject_.transform
 
 	arg_1_0:BindCfgUI()
+
+	arg_1_0.imageSelect_.immediate = true
+	arg_1_0.imageIcon_.immediate = true
+
 	arg_1_0:AddListeners()
 
 	arg_1_0.selectController_ = ControllerUtil.GetController(arg_1_0.transform_, "name")
@@ -65,14 +69,15 @@ end
 function var_0_0.RefreshUI(arg_6_0)
 	local var_6_0 = HeroTrialTools.GetHeroStandardID(arg_6_0.acitvityTrialID_)
 	local var_6_1 = SkinCfg[HeroStandardSystemCfg[var_6_0].skin_id].picture_id
+	local var_6_2 = getSpritePathViaConfig("HeroIcon", var_6_1)
 
-	arg_6_0.imageSelect_.sprite = getSpriteViaConfig("HeroIcon", var_6_1)
-	arg_6_0.imageIcon_.sprite = getSpriteViaConfig("HeroIcon", var_6_1)
+	arg_6_0.imageSelect_.spriteSync = var_6_2
+	arg_6_0.imageIcon_.spriteSync = var_6_2
 
-	local var_6_2 = HeroCfg[HeroStandardSystemCfg[var_6_0].hero_id].race
+	local var_6_3 = HeroCfg[HeroStandardSystemCfg[var_6_0].hero_id].race
 
-	arg_6_0.imageRace_.sprite = getSprite("Atlas/CampItemAtlas", RaceEffectCfg[var_6_2].icon)
-	arg_6_0.imageRaceSelect_.sprite = getSprite("Atlas/CampItemAtlas", RaceEffectCfg[var_6_2].icon)
+	arg_6_0.imageRace_.sprite = getSprite("Atlas/CampItemAtlas", RaceEffectCfg[var_6_3].icon)
+	arg_6_0.imageRaceSelect_.sprite = getSprite("Atlas/CampItemAtlas", RaceEffectCfg[var_6_3].icon)
 
 	arg_6_0:RefreshComplete()
 end

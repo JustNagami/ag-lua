@@ -2,7 +2,7 @@
 local var_0_1
 local var_0_2
 
-function var_0_0.SetFurListInMap(arg_1_0, arg_1_1, arg_1_2, arg_1_3)
+function var_0_0.SetFurListInMap(arg_1_0, arg_1_1, arg_1_2, arg_1_3, arg_1_4)
 	if arg_1_2 == nil then
 		local var_1_0 = {}
 		local var_1_1 = arg_1_3.furInfoList
@@ -18,7 +18,8 @@ function var_0_0.SetFurListInMap(arg_1_0, arg_1_1, arg_1_2, arg_1_3)
 			architecture_id = arg_1_1,
 			furniture_layout = {
 				temp_id = 0
-			}
+			},
+			picture_link = arg_1_4 or ""
 		}
 
 		for iter_1_0 = 0, var_1_1.Length - 1 do
@@ -169,7 +170,8 @@ function var_0_0.SetFurListInMap(arg_1_0, arg_1_1, arg_1_2, arg_1_3)
 			furniture_layout = {
 				temp_id = arg_1_2,
 				furniture_pos_list = {}
-			}
+			},
+			picture_link = arg_1_4 or ""
 		}, 58011, var_0_0.SetFurListInMapCallBack)
 	end
 end
@@ -227,15 +229,9 @@ local var_0_3
 function var_0_0.DeployHeroInRoom(arg_5_0, arg_5_1, arg_5_2, arg_5_3)
 	var_0_3 = arg_5_3
 
-	local var_5_0 = {}
-
-	for iter_5_0, iter_5_1 in ipairs(arg_5_2) do
-		table.insert(var_5_0, iter_5_1)
-	end
-
 	manager.net:SendWithLoadingNew(58132, {
 		architecture_id = arg_5_1,
-		hero_id = var_5_0
+		hero_id = arg_5_2
 	}, 58133, var_0_0.DeployHeroInRoomCallBack)
 end
 
@@ -244,10 +240,11 @@ function var_0_0.DeployHeroInRoomCallBack(arg_6_0, arg_6_1)
 		if var_0_3 == DormEnum.DormDeployType.Place then
 			DormData:RefreshInDormHeroInfo(arg_6_1.architecture_id, arg_6_1.hero_id)
 			manager.notify:Invoke(DORM_DRAG_HERO_SUCCESS)
+			manager.notify:Invoke(DORM_REGENERATE_HERO)
 			manager.notify:Invoke(DORM_REFRESH_HERO_DEPLOY_LIST)
 		elseif var_0_3 == DormEnum.DormDeployType.ReCall then
 			DormData:RefreshInDormHeroInfo(arg_6_1.architecture_id, arg_6_1.hero_id)
-			DormHeroTools:ReGenerateDormHeroEntity()
+			manager.notify:Invoke(DORM_REGENERATE_HERO)
 			manager.notify:Invoke(DORM_REFRESH_HERO_DEPLOY_LIST)
 		elseif var_0_3 == DormEnum.DormDeployType.Occupy then
 			DormData:RefreshInDormHeroInfo(arg_6_1.architecture_id, arg_6_1.hero_id, true)
@@ -380,14 +377,14 @@ function var_0_0.GiftFurToHeroCallBack(arg_10_0, arg_10_1)
 	end
 end
 
-function var_0_0.GiftFoodToHero(arg_11_0, arg_11_1, arg_11_2, arg_11_3, arg_11_4)
+function var_0_0.GiftFoodToHero(arg_11_0, arg_11_1, arg_11_2, arg_11_3, arg_11_4, arg_11_5)
 	manager.net:SendWithLoadingNew(58138, {
 		type = arg_11_3,
 		hero_id = arg_11_3 == 1 and 0 or arg_11_1
-	}, 58139, var_0_0.GiftFoodToHeroCallBack(arg_11_4, arg_11_1, arg_11_2))
+	}, 58139, var_0_0.GiftFoodToHeroCallBack(arg_11_4, arg_11_1, arg_11_2, arg_11_5))
 end
 
-function var_0_0.GiftFoodToHeroCallBack(arg_12_0, arg_12_1, arg_12_2)
+function var_0_0.GiftFoodToHeroCallBack(arg_12_0, arg_12_1, arg_12_2, arg_12_3)
 	return function(arg_13_0, arg_13_1)
 		if isSuccess(arg_13_0.result) then
 			if arg_12_0 then
@@ -405,6 +402,8 @@ function var_0_0.GiftFoodToHeroCallBack(arg_12_0, arg_12_1, arg_12_2)
 			end
 
 			manager.notify:Invoke(BACKHOME_HERO_FATIGUR_REFRESH)
+		elseif arg_12_3 then
+			arg_12_3()
 		else
 			ShowTips(arg_13_0.result)
 		end
@@ -603,7 +602,7 @@ end
 function var_0_0.AskFurTemplateExhibitListCallBack(arg_24_0, arg_24_1)
 	if isSuccess(arg_24_0.result) then
 		DormVisitTools:RefreshTemplateExhibit(arg_24_0.exhibition_brief, arg_24_1.type)
-		manager.notify:Invoke(DORM_REFRESH_TEMPLATE_EXHI, #arg_24_0.exhibition_brief)
+		manager.notify:Invoke(DORM_REFRESH_TEMPLATE_EXHI, #arg_24_0.exhibition_brief, arg_24_1.type)
 	else
 		ShowTips(arg_24_0.result)
 	end
@@ -669,9 +668,10 @@ function var_0_0.OtherSystemAskSingleFurTemplateExhibit(arg_28_0, arg_28_1)
 	BackHomeAction:GetAllDetailInfo(var_28_0)
 end
 
-function var_0_0.SetFurTemplateExhibit(arg_31_0, arg_31_1)
+function var_0_0.SetFurTemplateExhibit(arg_31_0, arg_31_1, arg_31_2)
 	manager.net:SendWithLoadingNew(58152, {
-		architecture_id = arg_31_1
+		architecture_id = arg_31_1,
+		picture_link = arg_31_2 or ""
 	}, 58153, var_0_0.SetFurTemplateExhibitCallBack)
 end
 
@@ -834,5 +834,9 @@ function var_0_0.AskDormRoomLikeNum(arg_45_0, arg_45_1)
 		end
 	end)
 end
+
+manager.net:Bind(58063, function(arg_47_0)
+	DormInfomationData:RefreshData(arg_47_0)
+end)
 
 return var_0_0

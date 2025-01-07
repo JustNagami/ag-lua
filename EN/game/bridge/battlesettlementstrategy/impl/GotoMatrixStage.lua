@@ -15,7 +15,7 @@ function var_0_0.GotoMatrix(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_4)
 
 	if isSuccess(arg_2_1) then
 		function BattleCallLuaCallBack()
-			gameContext:Go("/battleMatrixResult", {
+			gameContext:Go("/battleMatrixResultNew", {
 				multiple = 1,
 				stageData = arg_2_2,
 				rewardList = var_2_0,

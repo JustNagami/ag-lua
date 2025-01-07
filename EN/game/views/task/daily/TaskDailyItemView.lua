@@ -50,7 +50,6 @@ function var_0_0.InitUI(arg_5_0)
 		clone(ItemTemplateData)
 	}
 	arg_5_0.controller_ = arg_5_0.allBtnController_:GetController("all")
-	arg_5_0.greyController = arg_5_0.greyController_:GetController("grey")
 end
 
 function var_0_0.AddListeners(arg_6_0)
@@ -126,12 +125,6 @@ function var_0_0.RefreshProgress(arg_12_0)
 		arg_12_0.controller_:SetSelectedState("receive")
 	else
 		arg_12_0.controller_:SetSelectedState("go")
-	end
-
-	if arg_12_0.taskComplete_ then
-		arg_12_0.greyController:SetSelectedState("true")
-	else
-		arg_12_0.greyController:SetSelectedState("false")
 	end
 end
 

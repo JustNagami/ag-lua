@@ -72,7 +72,7 @@ end
 function var_0_0.RefreshAstroItem(arg_10_0)
 	for iter_10_0, iter_10_1 in ipairs(arg_10_0.astroItems) do
 		iter_10_1:SetData(iter_10_0, arg_10_0.astroDataList_[iter_10_0], arg_10_0.heroID_)
-		iter_10_1:SetClickCallBack(arg_10_0.callback)
+		iter_10_1:SetClickCallBack(arg_10_0.callback, arg_10_0.rightTrans_)
 	end
 end
 

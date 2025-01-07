@@ -13,6 +13,8 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
+	arg_3_0.dlcImg_.immediate = true
+	arg_3_0.portrait_.immediate = true
 	arg_3_0.AdaptImg_ = arg_3_0:FindCom("AdaptImage", nil, arg_3_0.portrait_.transform)
 end
 
@@ -45,7 +47,7 @@ function var_0_0.SetInfo(arg_4_0, arg_4_1, arg_4_2)
 		end
 
 		arg_4_0.dlcNameText_.text = GetI18NText(arg_4_0.obtainsParams_.dlcCfg.name)
-		arg_4_0.dlcImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Item_l/" .. var_4_3.id)
+		arg_4_0.dlcImg_.spriteSync = "TextureConfig/Item_l/" .. var_4_3.id
 
 		SetActive(arg_4_0.leftTimeText_.gameObject, var_4_2 ~= nil)
 		SetActive(arg_4_0.get1content_, var_4_2 ~= nil)
@@ -58,7 +60,7 @@ function var_0_0.SetInfo(arg_4_0, arg_4_1, arg_4_2)
 
 	local var_4_5 = HeroCfg[var_4_0.hero]
 
-	arg_4_0.portrait_.sprite = AssetEx.LoadSprite("TextureConfig/Character/Portrait/" .. var_4_0.id)
+	arg_4_0.portrait_.spriteSync = "TextureConfig/Character/Portrait/" .. var_4_0.id
 	arg_4_0.heroNameTxt_.text = HeroTools.GetHeroFullName(var_4_0.hero)
 
 	arg_4_0.AdaptImg_:AdaptImg()

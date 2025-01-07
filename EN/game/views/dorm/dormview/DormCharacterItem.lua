@@ -186,46 +186,58 @@ function var_0_0.SetCanClickAndState(arg_13_0, arg_13_1, arg_13_2, arg_13_3)
 	arg_13_0.showFatigue = arg_13_3
 end
 
-function var_0_0.RecallHero(arg_14_0, arg_14_1)
-	arg_14_0.recallHero = arg_14_1
+function var_0_0.RefreshState(arg_14_0)
+	arg_14_0.state = DormData:GetHeroTemplateInfo(arg_14_0.heroID):GetHeroState()
+
+	local var_14_0 = nullable(var_0_2, arg_14_0.state) or "dorm"
+
+	arg_14_0.curPisitionController:SetSelectedState(var_14_0)
+
+	local var_14_1 = nullable(var_0_3, arg_14_0.state) and "busy" or "normal"
+
+	arg_14_0.positionController:SetSelectedState(var_14_1)
 end
 
-function var_0_0.SetOnPointerDown(arg_15_0, arg_15_1)
-	arg_15_0.downFunc = arg_15_1
+function var_0_0.RecallHero(arg_15_0, arg_15_1)
+	arg_15_0.recallHero = arg_15_1
 end
 
-function var_0_0.ShowMaskCallBack(arg_16_0, arg_16_1)
-	if arg_16_1 then
-		arg_16_0.maskFunc = arg_16_1
-	end
+function var_0_0.SetOnPointerDown(arg_16_0, arg_16_1)
+	arg_16_0.downFunc = arg_16_1
 end
 
-function var_0_0.SelCallBack(arg_17_0, arg_17_1)
+function var_0_0.ShowMaskCallBack(arg_17_0, arg_17_1)
 	if arg_17_1 then
-		arg_17_0.selFunc = arg_17_1
+		arg_17_0.maskFunc = arg_17_1
 	end
 end
 
-function var_0_0.Dispose(arg_18_0)
-	arg_18_0:RemoveAllListeners()
+function var_0_0.SelCallBack(arg_18_0, arg_18_1)
+	if arg_18_1 then
+		arg_18_0.selFunc = arg_18_1
+	end
+end
 
-	if not arg_18_0.canClick and arg_18_0.onClickCom_ then
-		arg_18_0.onClickCom_.onValueChanged:RemoveAllListeners()
+function var_0_0.Dispose(arg_19_0)
+	arg_19_0:RemoveAllListeners()
+
+	if not arg_19_0.canClick and arg_19_0.onClickCom_ then
+		arg_19_0.onClickCom_.onValueChanged:RemoveAllListeners()
 	end
 
-	var_0_0.super.Dispose(arg_18_0)
+	var_0_0.super.Dispose(arg_19_0)
 end
 
-function var_0_0.BeginDrag(arg_19_0, arg_19_1)
-	manager.notify:CallUpdateFunc("OnBeginDragHeroItem", arg_19_1)
+function var_0_0.BeginDrag(arg_20_0, arg_20_1)
+	manager.notify:CallUpdateFunc("OnBeginDragHeroItem", arg_20_1)
 end
 
-function var_0_0.Drag(arg_20_0, arg_20_1)
-	manager.notify:CallUpdateFunc("OnDragHeroItem", arg_20_1)
+function var_0_0.Drag(arg_21_0, arg_21_1)
+	manager.notify:CallUpdateFunc("OnDragHeroItem", arg_21_1)
 end
 
-function var_0_0.EndDrag(arg_21_0, arg_21_1)
-	manager.notify:CallUpdateFunc("OnEndDragHeroItem", arg_21_1)
+function var_0_0.EndDrag(arg_22_0, arg_22_1)
+	manager.notify:CallUpdateFunc("OnEndDragHeroItem", arg_22_1)
 end
 
 return var_0_0

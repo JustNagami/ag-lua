@@ -16,6 +16,7 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
+	arg_4_0.portriatImg_.immediate = true
 	arg_4_0.scaleImage_ = arg_4_0:FindCom("UIScaleImage", nil, arg_4_0.portriatTrans_)
 	arg_4_0.scaleMax_ = arg_4_0.scaleImage_.maxScale
 	arg_4_0.scaleMin_ = arg_4_0.scaleImage_.minScale
@@ -59,7 +60,7 @@ function var_0_0.OnEnter(arg_13_0)
 		var_13_0 = HeroTools.HeroUsingSkinInfo(arg_13_0.heroID_).picture_id
 	end
 
-	arg_13_0.portriatImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_13_0)
+	arg_13_0.portriatImg_.spriteSync = "TextureConfig/Character/Portrait/" .. var_13_0
 
 	arg_13_0:OnImageScaled(1)
 end
@@ -121,6 +122,8 @@ function var_0_0.OnExit(arg_22_0)
 	if arg_22_0.timer_ then
 		arg_22_0.timer_:Stop()
 	end
+
+	arg_22_0.portriatImg_.spriteSync = nil
 
 	arg_22_0.scaleImage_:ResetContent()
 

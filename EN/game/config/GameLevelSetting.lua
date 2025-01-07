@@ -184,12 +184,9 @@
 		id = 10,
 		hero_lv_exp_sum = 1110,
 		battlepass_level_exp = 1000,
-		challenge_lnk_id_list = {
-			2012,
-			2014
-		},
+		challenge_lnk_id_list = {},
 		challenge_next_id_list = {
-			2016
+			2012
 		}
 	},
 	{
@@ -206,12 +203,9 @@
 		id = 11,
 		hero_lv_exp_sum = 1510,
 		battlepass_level_exp = 1000,
-		challenge_lnk_id_list = {
-			2012,
-			2014
-		},
+		challenge_lnk_id_list = {},
 		challenge_next_id_list = {
-			2016
+			2012
 		}
 	},
 	{
@@ -229,11 +223,10 @@
 		hero_lv_exp_sum = 2010,
 		battlepass_level_exp = 1000,
 		challenge_lnk_id_list = {
-			2012,
-			2014
+			2012
 		},
 		challenge_next_id_list = {
-			2016
+			2014
 		}
 	},
 	{
@@ -251,11 +244,10 @@
 		hero_lv_exp_sum = 2610,
 		battlepass_level_exp = 1000,
 		challenge_lnk_id_list = {
-			2012,
-			2014
+			2012
 		},
 		challenge_next_id_list = {
-			2016
+			2014
 		}
 	},
 	{

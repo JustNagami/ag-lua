@@ -50,10 +50,7 @@ function var_0_0.OnTop(arg_12_0)
 end
 
 function var_0_0.UpdateBar(arg_13_0)
-	manager.windowBar:SwitchBar({
-		BACK_BAR,
-		HOME_BAR
-	})
+	manager.windowBar:HideBar()
 end
 
 function var_0_0.InitData(arg_14_0)

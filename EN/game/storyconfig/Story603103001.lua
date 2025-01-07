@@ -4,7 +4,7 @@
 		arg_1_1.frameCnt_ = 0
 		arg_1_1.state_ = "playing"
 		arg_1_1.curTalkId_ = 603103001
-		arg_1_1.duration_ = 5.33333333333333
+		arg_1_1.duration_ = 5.33
 
 		SetActive(arg_1_1.tipsGo_, false)
 
@@ -361,6 +361,9 @@
 				arg_11_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_ganglati")
 
 				arg_11_1.callingController_:SetSelectedState("normal")
+
+				arg_11_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_11_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_14_14 = arg_11_1:GetWordFromCfg(603103003)
 				local var_14_15 = arg_11_1:FormatText(var_14_14.content)

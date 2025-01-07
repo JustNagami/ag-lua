@@ -19,6 +19,7 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.statusController_ = ControllerUtil.GetController(arg_4_0.transform_, "status")
 	arg_4_0.partyTypeController_ = ControllerUtil.GetController(arg_4_0.transform_, "type")
 	arg_4_0.rewardController_ = ControllerUtil.GetController(arg_4_0.transform_, "reward")
+	arg_4_0.commonPortrait_ = CommonHeadPortrait.New(arg_4_0.headItem_)
 end
 
 function var_0_0.AddUIListener(arg_5_0)
@@ -163,6 +164,7 @@ function var_0_0.OnExit(arg_17_0)
 end
 
 function var_0_0.Dispose(arg_18_0)
+	arg_18_0.commonPortrait_:Dispose()
 	var_0_0.super.Dispose(arg_18_0)
 end
 
@@ -198,8 +200,9 @@ function var_0_0.RefreshPartyUI(arg_21_0)
 
 	if arg_21_0.isMyParty_ == false then
 		arg_21_0.userName_.text = arg_21_0.ownerData_.nick
-		arg_21_0.userIcon.sprite = ItemTools.getItemSprite(arg_21_0.ownerData_.portrait)
-		arg_21_0.userFrame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_21_0.ownerData_.frame)
+
+		arg_21_0.commonPortrait_:RenderHead(arg_21_0.ownerData_.portrait)
+		arg_21_0.commonPortrait_:RenderFrame(arg_21_0.ownerData_.frame)
 
 		local var_21_2 = false
 

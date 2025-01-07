@@ -149,7 +149,61 @@
 		activity_id = 271461,
 		shop_id = 221
 	},
+	[272211] = {
+		activity_theme = 2702,
+		activity_id = 272211,
+		shop_id = 301
+	},
+	[281461] = {
+		activity_theme = 2801,
+		activity_id = 281461,
+		shop_id = 222
+	},
+	[281462] = {
+		activity_theme = 2802,
+		activity_id = 281462,
+		shop_id = 223
+	},
+	[291461] = {
+		activity_theme = 2901,
+		activity_id = 291461,
+		shop_id = 224
+	},
+	[291462] = {
+		activity_theme = 2902,
+		activity_id = 291462,
+		shop_id = 225
+	},
+	[292211] = {
+		activity_theme = 2903,
+		activity_id = 292211,
+		shop_id = 303
+	},
+	[2814611] = {
+		activity_theme = 2801,
+		activity_id = 2814611,
+		shop_id = 230
+	},
 	get_id_list_by_activity_theme = {
+		[2903] = {
+			292211
+		},
+		[2902] = {
+			291462
+		},
+		[2901] = {
+			291461
+		},
+		[2802] = {
+			281462
+		},
+		[2801] = {
+			281461,
+			2814611
+		},
+		[2702] = {
+			272211
+		},
 		[2701] = {
 			271461
 		},
@@ -269,6 +323,13 @@
 		232211,
 		241461,
 		241462,
-		271461
+		271461,
+		272211,
+		281461,
+		281462,
+		291461,
+		291462,
+		292211,
+		2814611
 	}
 }

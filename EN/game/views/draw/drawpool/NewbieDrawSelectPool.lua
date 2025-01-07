@@ -22,6 +22,11 @@ function var_0_0.InitUI(arg_2_0)
 
 	for iter_2_0 = 1, 7 do
 		local var_2_0 = arg_2_0["poolGo_" .. iter_2_0]
+
+		if var_2_0 == nil then
+			return
+		end
+
 		local var_2_1 = NewBieHeroPoolItem.New(var_2_0)
 		local var_2_2 = DrawPoolCfg[arg_2_0.poolId].optional_detail[iter_2_0]
 

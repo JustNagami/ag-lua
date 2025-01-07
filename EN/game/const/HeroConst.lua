@@ -134,21 +134,21 @@
 		"Ω"
 	},
 	HERO_ATTACK_TYPE_STR = {
-		[0] = "physical",
+		[0] = "PYISICS",
 		nil,
-		"wind",
+		"WIND",
 		nil,
-		"fire",
+		"FLAME",
 		nil,
-		"ice",
+		"FREEZE",
 		nil,
-		"water",
+		"WATER",
 		nil,
-		"dark",
+		"DARK",
 		nil,
-		"light",
+		"LIGHT",
 		nil,
-		"ray"
+		"THUNDER"
 	},
 	HERO_ATTACK_TYPE = {
 		WIND = 2,
@@ -173,8 +173,11 @@
 		DRAW = 7,
 		COOPERATION = 9,
 		FOREIGN = 2,
+		SWIMSUITBATTLE = 11,
 		UNDEFINED = 0,
 		DEFAULT = 1,
+		CHALLENGEROUGETEAM = 12,
+		STRATEGYMATRIX = 10,
 		ADVANCETEST = 8,
 		TRIAL = 3,
 		POLYHEDRON = 6

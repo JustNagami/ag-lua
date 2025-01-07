@@ -556,6 +556,53 @@
 		},
 		spec_char = {}
 	},
+	{
+		param = "",
+		id = 58,
+		flow_name = "FlowScript/Equips/Equip58.asset",
+		desc = {
+			600000058
+		},
+		spec_char = {}
+	},
+	{
+		param = "",
+		id = 59,
+		flow_name = "FlowScript/Equips/Equip59.asset",
+		desc = {
+			600000059
+		},
+		spec_char = {}
+	},
+	{
+		param = "",
+		id = 60,
+		flow_name = "FlowScript/Equips/Equip60.asset",
+		desc = {
+			600000060
+		},
+		spec_char = {}
+	},
+	{
+		id = 61,
+		flow_name = "FlowScript/Equips/Equip61.asset",
+		param = {
+			12000
+		},
+		desc = {
+			600000061
+		},
+		spec_char = {}
+	},
+	{
+		param = "",
+		id = 62,
+		flow_name = "FlowScript/Equips/Equip62.asset",
+		desc = {
+			600000062
+		},
+		spec_char = {}
+	},
 	[101] = {
 		param = "",
 		id = 101,
@@ -810,6 +857,11 @@
 		55,
 		56,
 		57,
+		58,
+		59,
+		60,
+		61,
+		62,
 		101,
 		103,
 		104,

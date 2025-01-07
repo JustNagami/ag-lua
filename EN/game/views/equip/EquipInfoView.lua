@@ -256,7 +256,7 @@ function var_0_0.indexSkillItem(arg_19_0, arg_19_1, arg_19_2)
 			arg_19_0.skillClickFunc(arg_19_2, arg_20_0, arg_19_0.isLeftPop_)
 		end
 	end)
-	arg_19_2:RefreshData(arg_19_0, var_19_0)
+	arg_19_2:RefreshData(var_19_0)
 end
 
 function var_0_0.RegisterSkillClick(arg_21_0, arg_21_1, arg_21_2)

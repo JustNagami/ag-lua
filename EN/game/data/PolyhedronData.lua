@@ -74,6 +74,7 @@ function var_0_0.InitPolyhedronGameData(arg_2_0, arg_2_1)
 	end
 
 	var_0_20 = var_0_2:GetTipsList()
+	var_0_5 = {}
 
 	local var_2_2 = arg_2_1.decision
 

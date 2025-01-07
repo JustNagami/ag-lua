@@ -418,13 +418,13 @@ function var_0_0.FightPowerSorter(arg_25_0, arg_25_1, arg_25_2, arg_25_3, arg_25
 	local var_25_0
 	local var_25_1
 
-	if arg_25_1.tempID then
+	if arg_25_1.tempID and arg_25_1.tempID ~= 0 then
 		var_25_0 = TempHeroData:GetBattlePower(arg_25_1.tempID)
 	else
 		var_25_0 = arg_25_0.heroSorter_:GetHeroPower(arg_25_1, handler(arg_25_3, arg_25_3.GetBattlePower))
 	end
 
-	if arg_25_2.tempID then
+	if arg_25_2.tempID and arg_25_2.tempID ~= 0 then
 		var_25_1 = TempHeroData:GetBattlePower(arg_25_2.tempID)
 	else
 		var_25_1 = arg_25_0.heroSorter_:GetHeroPower(arg_25_2, handler(arg_25_4, arg_25_4.GetBattlePower))

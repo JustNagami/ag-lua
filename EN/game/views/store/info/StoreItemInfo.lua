@@ -132,6 +132,12 @@ function var_0_0.SetData(arg_10_0, arg_10_1, arg_10_2)
 		var_10_2 = true
 	end
 
+	if var_10_1.sub_type == ItemConst.ITEM_SUB_TYPE.LIMIT_TIME_SKIN_ITEM and ItemTools.HasOwnAllLimitCardItems(var_10_0) then
+		arg_10_0.useBtnText_.text = GetTips("TIP_EXCHANGE")
+	else
+		arg_10_0.useBtnText_.text = GetTips("TIP_USE")
+	end
+
 	if var_10_2 then
 		arg_10_0.hideBtnController_:SetSelectedState("hide")
 	else

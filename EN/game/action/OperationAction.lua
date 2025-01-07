@@ -29,57 +29,56 @@ function var_0_0.GetOperationUrl(arg_4_0)
 end
 
 function var_0_0.OpenOperationUrl(arg_5_0, arg_5_1, arg_5_2)
-	local var_5_0 = GameToSDK.clientInfo.configS
+	local var_5_0 = var_0_0.GetOperationUrl(arg_5_0)
 
 	if not var_5_0 then
-		print("error GameToSDK.clientInfo empty configS")
-
 		return
 	end
 
-	if not var_5_0:ContainsKey(arg_5_0) then
-		print("error GameToSDK.clientInfo empty configS by key : " .. arg_5_0)
-
-		return
-	end
-
-	local var_5_1 = var_5_0:get_Item(arg_5_0)
-	local var_5_2 = ""
+	local var_5_1 = ""
 
 	if arg_5_0 == "INQUERY_URL" then
-		var_5_2 = string.format(var_5_1, arg_5_1.userId, arg_5_1.signUserId)
-	elseif arg_5_0 == "FORUM_URL" or arg_5_0 == "OFFICIAL_SUGGEST_URL" then
-		var_5_2 = string.format(var_5_1, arg_5_1.userId, arg_5_1.signUserId, arg_5_1.gameAppId, arg_5_1.token)
+		var_5_1 = string.format(var_5_0, arg_5_1.userId, arg_5_1.signUserId)
+	elseif arg_5_0 == "FORUM_URL" or arg_5_0 == "OFFICIAL_SUGGEST_URL" or arg_5_0 == "PC_SHOP" then
+		var_5_1 = string.format(var_5_0, arg_5_1.userId, arg_5_1.signUserId, arg_5_1.gameAppId, arg_5_1.token)
 	elseif arg_5_0 == "FORUM_URL_HERO" then
-		var_5_2 = string.format(var_5_1, arg_5_1.userId, arg_5_1.signUserId, arg_5_1.gameAppId, arg_5_1.token, arg_5_1.heroName)
+		var_5_1 = string.format(var_5_0, arg_5_1.userId, arg_5_1.signUserId, arg_5_1.gameAppId, arg_5_1.token, arg_5_1.heroName)
 	elseif arg_5_0 == "OFFICIAL_DISCUSS_URL" then
-		var_5_2 = string.format(var_5_1, arg_5_1.gameAppId, arg_5_1.token)
+		var_5_1 = string.format(var_5_0, arg_5_1.gameAppId, arg_5_1.token)
 	elseif arg_5_0 == "ACTIVITY_URL" then
-		var_5_2 = string.format(var_5_1, arg_5_1.userId, arg_5_1.signUserId)
+		var_5_1 = string.format(var_5_0, arg_5_1.userId, arg_5_1.signUserId)
 	elseif arg_5_0 == "GUIDE_URL" or arg_5_0 == "INFORMATION_URL" then
-		var_5_2 = string.format(var_5_1, arg_5_1.userId, arg_5_1.signUserId)
+		var_5_1 = string.format(var_5_0, arg_5_1.userId, arg_5_1.signUserId)
 	else
-		var_5_2 = var_5_1
+		var_5_1 = var_5_0
 	end
 
-	local var_5_3 = EncodeURL(var_5_2)
+	local var_5_2 = EncodeURL(var_5_1)
 
-	print("url : ", var_5_3)
+	print("url : ", var_5_2)
 
-	local var_5_4
+	local var_5_3
 
-	if GameToSDK.PLATFORM_ID == 1 and (arg_5_0 == "FORUM_URL" or arg_5_0 == "FORUM_URL_HOME" or arg_5_0 == "FORUM_URL_HERO" or arg_5_0 == "OFFICIAL_SUGGEST_URL") then
-		var_5_4 = OperationConst.URL_OPEN_WAY.NORMAL
+	if GameToSDK.IsEditorOrPcPlatform() then
+		var_5_3 = OperationConst.URL_OPEN_WAY.NORMAL
+	elseif GameToSDK.PLATFORM_ID == 1 and (arg_5_0 == "FORUM_URL" or arg_5_0 == "PC_SHOP" or arg_5_0 == "FORUM_URL_HOME" or arg_5_0 == "FORUM_URL_HERO" or arg_5_0 == "OFFICIAL_SUGGEST_URL") then
+		var_5_3 = OperationConst.URL_OPEN_WAY.NORMAL
 	else
-		var_5_4 = OperationConst.URL_OPEN_WAY.INTERNAL
+		var_5_3 = OperationConst.URL_OPEN_WAY.INTERNAL
 	end
 
-	var_0_0.OpenUrl(var_5_3, var_5_4, arg_5_2)
+	var_0_0.OpenUrl(var_5_2, var_5_3, arg_5_2)
 end
 
 function var_0_0.OpenUrl(arg_6_0, arg_6_1, arg_6_2)
+	print(string.format("OpenUrl, url: %s, openWay : %s", arg_6_0, arg_6_1))
+
 	if arg_6_1 == OperationConst.URL_OPEN_WAY.NORMAL then
-		Application.OpenURL(arg_6_0)
+		if GameToSDK.IsIOSPlatform() then
+			LuaForUtil.LinkThirdApp(arg_6_0)
+		else
+			Application.OpenURL(arg_6_0)
+		end
 	elseif arg_6_1 == OperationConst.URL_OPEN_WAY.INTERNAL then
 		FrameTimer.New(function()
 			arg_6_2 = arg_6_2 or OperationConst.SCREEN_ORIENTATION.FREE
@@ -205,6 +204,25 @@ function var_0_0.RecoverScreenSetting()
 	FrameTimer.New(function()
 		SetActive(manager.ui.mainCamera, true)
 	end, 4, 1):Start()
+end
+
+function var_0_0.GetDiscordAuthUrl()
+	local var_25_0
+	local var_25_1 = GameToSDK.IsPCPlatform() and "Discord_AuthUrl_PC" or "Discord_AuthUrl"
+
+	return OperationAction.GetOperationUrl(var_25_1)
+end
+
+function var_0_0.OpenTransferCode()
+	print("OpenTransferCode")
+
+	local var_26_0 = var_0_0.GetOperationUrl("ACCOUNT_TRANSFER_URL")
+	local var_26_1 = PlayerData:GetPlayerInfo().userID
+	local var_26_2 = _G.TMP_CHANNELID
+	local var_26_3 = GetSDKLoginToken()
+	local var_26_4 = string.format(var_26_0, var_26_1, var_26_2, var_26_3)
+
+	var_0_0.OpenUrl(var_26_4, OperationConst.URL_OPEN_WAY.NORMAL)
 end
 
 return var_0_0

@@ -17,7 +17,11 @@
 				[TaskConst.TASK_TYPE.CHAPTER_PLOT_19] = handler(arg_1_0, arg_1_0.UpdateChapterPlot19RedTip),
 				[TaskConst.TASK_TYPE.IDOL_TRAINEE_DAILY] = handler(arg_1_0, arg_1_0.UpdateIdolTraineeDayAndWeekRedTip),
 				[TaskConst.TASK_TYPE.IDOL_TRAINEE_WEEKLY] = handler(arg_1_0, arg_1_0.UpdateIdolTraineeDayAndWeekRedTip),
-				[TaskConst.TASK_TYPE.IDOL_TRAINEE_CHAPTER] = handler(arg_1_0, arg_1_0.UpdateIdolTraineeChapterRedTip)
+				[TaskConst.TASK_TYPE.IDOL_TRAINEE_CHAPTER] = handler(arg_1_0, arg_1_0.UpdateIdolTraineeChapterRedTip),
+				[TaskConst.TASK_TYPE.SUMMER_CHESS_BOARD_EXPLORE_NOTE] = handler(arg_1_0, arg_1_0.UpdateSummerExploreNoteRedTip),
+				[TaskConst.TASK_TYPE.POLYHEDRON_RESIDENT_TASK] = handler(arg_1_0, arg_1_0.UpdatePolyhedronResidentTaskRedTip),
+				[TaskConst.TASK_TYPE.CHALLENGE_ROGUE_TEAM_ILLUSTRATED_TASK] = handler(arg_1_0, arg_1_0.UpdateChallengeRogueTeamIllustratedRedTip),
+				[TaskConst.TASK_TYPE.CHALLENGE_ROGUE_TEAM_STAGE_TASK] = handler(arg_1_0, arg_1_0.UpdateChallengeRogueTeamIllustratedRedTip)
 			}
 		end
 	end,
@@ -32,7 +36,7 @@
 
 			if var_2_2 == nil then
 				Debug.LogError("TaskCfg没有对应ID:" .. iter_2_1.id)
-			elseif var_2_2.activity_id and var_2_2.activity_id ~= 0 then
+			elseif var_2_2.activity_id and var_2_2.activity_id ~= 0 and var_2_2.type ~= TaskConst.TASK_TYPE.SUMMER_CHESS_BOARD_EXPLORE_NOTE and var_2_2.type ~= TaskConst.TASK_TYPE.CHALLENGE_ROGUE_TEAM_ILLUSTRATED_TASK and var_2_2.type ~= TaskConst.TASK_TYPE.CHALLENGE_ROGUE_TEAM_STAGE_TASK then
 				var_2_1[var_2_2.activity_id] = var_2_1[var_2_2.activity_id] or {}
 
 				table.insert(var_2_1[var_2_2.activity_id], iter_2_1.id)
@@ -421,6 +425,89 @@
 
 			if not var_18_1 then
 				manager.redPoint:setTip(string.format("%s_%s", RedPointConst.IDOL_TRAINEE_CHAPTER_TASK, iter_18_1), 0)
+			end
+		end
+	end,
+	UpdateSummerExploreNoteRedTip = function(arg_19_0)
+		local var_19_0 = TaskData2:GetTaskIDListByType(TaskConst.TASK_TYPE.SUMMER_CHESS_BOARD_EXPLORE_NOTE)
+		local var_19_1 = {}
+
+		for iter_19_0, iter_19_1 in pairs(var_19_0) do
+			local var_19_2 = AssignmentCfg[iter_19_0]
+			local var_19_3 = string.format("%s_%s", RedPointConst.SUMMER_CHESS_BOARD_EXPLORE_NOTE_REWARD, iter_19_0)
+			local var_19_4 = string.format("%s_%s", RedPointConst.SUMMER_CHESS_BOARD_EXPLORE_NOTE_NEW, iter_19_0)
+
+			if not TaskData2:GetTaskComplete(iter_19_0) and TaskData2:GetTaskProgress(iter_19_0) >= var_19_2.need and #var_19_2.reward > 0 then
+				manager.redPoint:setTip(var_19_3, 1)
+			else
+				manager.redPoint:setTip(var_19_3, 0)
+			end
+
+			if iter_19_0 == GameSetting.summer_note_video.value[1] then
+				if TaskData2:GetTaskProgress(iter_19_0) >= var_19_2.need and getData("SUMMER_3.5_NOTE", "IS_CLICK") == nil then
+					manager.redPoint:setTip(RedPointConst.SUMMER_CHESS_BOARD_EXPLORE_NOTE_VIDEO, 1)
+				else
+					manager.redPoint:setTip(RedPointConst.SUMMER_CHESS_BOARD_EXPLORE_NOTE_VIDEO, 0)
+				end
+			end
+
+			if not TaskData2:GetTaskComplete(iter_19_0) and TaskData2:GetTaskProgress(iter_19_0) >= var_19_2.need then
+				local var_19_5 = ActivitySummerChessConditionCfg.get_id_list_by_activity_id[ActivityConst.SUMMER_CHESS_BOARD_EXPLORE_NOTE][1]
+				local var_19_6 = ActivityUnlockStateData:GetUnlockState(var_19_5)
+
+				manager.redPoint:setTip(var_19_4, var_19_6[iter_19_0] ~= 1 and 1 or 0)
+			else
+				manager.redPoint:setTip(var_19_4, 0)
+			end
+		end
+	end,
+	UpdatePolyhedronResidentTaskRedTip = function()
+		local var_20_0 = TaskData2:GetTaskIDListByType(TaskConst.TASK_TYPE.POLYHEDRON_RESIDENT_TASK)
+
+		for iter_20_0, iter_20_1 in pairs(var_20_0) do
+			local var_20_1 = AssignmentCfg[iter_20_0]
+
+			if not TaskData2:GetTaskComplete(iter_20_0) and TaskData2:GetTaskProgress(iter_20_0) >= var_20_1.need and #var_20_1.reward > 0 then
+				manager.redPoint:setTip(RedPointConst.POLYHEDRON_RESIDENT_TASK, 1)
+
+				return
+			end
+
+			manager.redPoint:setTip(RedPointConst.POLYHEDRON_RESIDENT_TASK, 0)
+		end
+	end,
+	UpdateChallengeRogueTeamIllustratedRedTip = function(arg_21_0, arg_21_1)
+		local var_21_0
+
+		for iter_21_0, iter_21_1 in pairs(arg_21_1) do
+			local var_21_1 = 0
+			local var_21_2 = string.format("%s_%s", RedPointConst.ACTIVITY_TASK, iter_21_1)
+			local var_21_3 = TaskData2:GetTask(iter_21_1)
+
+			if ActivityCfg[AssignmentCfg[iter_21_1].activity_id].activity_template == ActivityTemplateConst.CHALLENGE_ROGUE_TEAM_TASK then
+				var_21_0 = AssignmentCfg[iter_21_1].activity_id
+			end
+
+			if var_21_3.progress >= AssignmentCfg[var_21_3.id].need and var_21_3.complete_flag < 1 and ActivityCfg[AssignmentCfg[iter_21_1].activity_id].activity_template ~= ActivityTemplateConst.CHALLENGE_ROGUE_TEAM_TASK then
+				var_21_1 = 1
+			end
+
+			manager.redPoint:setTip(var_21_2, var_21_1)
+		end
+
+		if var_21_0 then
+			local var_21_4 = AssignmentCfg.get_id_list_by_activity_id[var_21_0]
+
+			for iter_21_2, iter_21_3 in pairs(var_21_4) do
+				local var_21_5 = 0
+				local var_21_6 = string.format("%s_%s", RedPointConst.ACTIVITY_TASK, iter_21_3)
+				local var_21_7 = TaskData2:GetTask(iter_21_3)
+
+				if var_21_7 and var_21_7.progress >= AssignmentCfg[var_21_7.id].need and var_21_7.complete_flag < 1 and ActivityCfg[AssignmentCfg[iter_21_3].activity_id].activity_template == ActivityTemplateConst.CHALLENGE_ROGUE_TEAM_TASK and ChallengeRogueTeamData:GetUnCompletedTaskStage(AssignmentCfg[iter_21_3].activity_id) >= AssignmentCfg[iter_21_3].phase then
+					var_21_5 = 1
+				end
+
+				manager.redPoint:setTip(var_21_6, var_21_5)
 			end
 		end
 	end

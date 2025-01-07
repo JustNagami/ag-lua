@@ -202,6 +202,41 @@
 		loop_path = "SofdecAsset/function/draw/1197_loop.usm",
 		start_voice_frames = 24
 	},
+	[1021] = {
+		start_movie_frames = 232,
+		hero_id = 1021,
+		start_path = "SofdecAsset/function/draw/1021_start.usm",
+		loop_path = "SofdecAsset/function/draw/1021_loop.usm",
+		start_voice_frames = 2
+	},
+	[1022] = {
+		start_movie_frames = 260,
+		hero_id = 1022,
+		start_path = "SofdecAsset/function/draw/1022_start.usm",
+		loop_path = "SofdecAsset/function/draw/1022_loop.usm",
+		start_voice_frames = 39
+	},
+	[1020] = {
+		start_movie_frames = 191,
+		hero_id = 1020,
+		start_path = "SofdecAsset/function/draw/1020_start.usm",
+		loop_path = "SofdecAsset/function/draw/1020_loop.usm",
+		start_voice_frames = 0
+	},
+	[1156] = {
+		start_movie_frames = 185,
+		hero_id = 1156,
+		start_path = "SofdecAsset/function/draw/1156_start.usm",
+		loop_path = "SofdecAsset/function/draw/1156_loop.usm",
+		start_voice_frames = 0
+	},
+	[1089] = {
+		start_movie_frames = 242,
+		hero_id = 1089,
+		start_path = "SofdecAsset/function/draw/1089_start.usm",
+		loop_path = "SofdecAsset/function/draw/1089_loop.usm",
+		start_voice_frames = 0
+	},
 	all = {
 		1024,
 		1028,
@@ -231,6 +266,11 @@
 		1015,
 		1095,
 		1284,
-		1197
+		1197,
+		1021,
+		1022,
+		1020,
+		1156,
+		1089
 	}
 }

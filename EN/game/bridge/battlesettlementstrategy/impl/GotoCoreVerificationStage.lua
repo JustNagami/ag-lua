@@ -11,7 +11,7 @@ function var_0_0.OnGotoSettlement(arg_1_0, arg_1_1)
 				battleResult = arg_1_1.battleResult
 			})
 		else
-			JumpTools.OpenPageByJump("/battlefailedWithButton", {
+			JumpTools.OpenPageByJump("/battleCoreVerificationFailed", {
 				stageData = arg_1_1.stageData,
 				starMissionData = arg_1_1.starMissionData,
 				battleResult = arg_1_1.battleResult,

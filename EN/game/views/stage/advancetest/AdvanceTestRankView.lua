@@ -22,6 +22,7 @@ function var_0_0.Init(arg_3_0)
 		arg_3_0.m_hardBtn.gameObject
 	}
 	arg_3_0.clickIndex_ = {}
+	arg_3_0.commonPortrait_ = CommonHeadPortrait.New(arg_3_0.headItem_)
 
 	arg_3_0:AddListeners()
 end
@@ -99,7 +100,7 @@ function var_0_0.OnEnter(arg_14_0)
 	arg_14_0.startTime_ = var_14_0.startTime
 	arg_14_0.stopTime_ = var_14_0.stopTime
 
-	local var_14_1 = AdvanceTestCfg.get_id_list_by_activity_id[AdvanceTestData:GetMainActivityID()]
+	local var_14_1 = AdvanceTestCfg.get_id_list_by_activity_id[AdvanceTestData:GetCacheActivityID()]
 
 	for iter_14_0 = 1, 3 do
 		SetActive(arg_14_0.itemGo_[iter_14_0], false)
@@ -178,9 +179,8 @@ function var_0_0.Refresh(arg_16_0)
 
 	local var_16_6 = PlayerData:GetPlayerInfo()
 
-	arg_16_0.m_icon.sprite = ItemTools.getItemSprite(var_16_6 and var_16_6.portrait)
-	arg_16_0.m_frame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_16_6.icon_frame)
-
+	arg_16_0.commonPortrait_:RenderHead(var_16_6 and var_16_6.portrait)
+	arg_16_0.commonPortrait_:RenderFrame(var_16_6.icon_frame)
 	arg_16_0.subTypeToggleController_:SetSelectedState(arg_16_0.stageType)
 end
 
@@ -191,6 +191,8 @@ function var_0_0.IndexItem(arg_17_0, arg_17_1, arg_17_2)
 end
 
 function var_0_0.Dispose(arg_18_0)
+	arg_18_0.commonPortrait_:Dispose()
+
 	if arg_18_0.list_ then
 		arg_18_0.list_:Dispose()
 

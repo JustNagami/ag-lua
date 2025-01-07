@@ -24,6 +24,7 @@ function var_0_0.InitUI(arg_5_0)
 	arg_5_0.tabController_ = arg_5_0.toggleConEx:GetController("tab")
 	arg_5_0.tabNumController_ = arg_5_0.toggleConEx:GetController("num")
 	arg_5_0.rankList_ = LuaList.New(handler(arg_5_0, arg_5_0.indexItem), arg_5_0.uiListGo_, AbyssRankItemView)
+	arg_5_0.commonPortrait_ = CommonHeadPortrait.New(arg_5_0.headItem_)
 end
 
 function var_0_0.indexItem(arg_6_0, arg_6_1, arg_6_2)
@@ -124,9 +125,8 @@ end
 
 function var_0_0.UpdateView(arg_20_0)
 	arg_20_0.rankList_:StartScroll(#arg_20_0.dataList_)
-
-	arg_20_0.myHeadIcon_.sprite = ItemTools.getItemSprite(PlayerData:GetPlayerInfo().portrait)
-	arg_20_0.myHeadFrame_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. PlayerData:GetPlayerInfo().icon_frame)
+	arg_20_0.commonPortrait_:RenderHead(PlayerData:GetPlayerInfo().portrait)
+	arg_20_0.commonPortrait_:RenderFrame(PlayerData:GetPlayerInfo().icon_frame)
 
 	if arg_20_0.curPage_ == 1 then
 		local var_20_0 = RankData:GetGuildCommonRank(RankConst.RANK_ID.ABYSS)
@@ -160,6 +160,8 @@ function var_0_0.OnMainHomeViewTop(arg_21_0)
 end
 
 function var_0_0.Dispose(arg_22_0)
+	arg_22_0.commonPortrait_:Dispose()
+
 	if arg_22_0.rankList_ then
 		arg_22_0.rankList_:Dispose()
 

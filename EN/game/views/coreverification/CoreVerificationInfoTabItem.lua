@@ -29,20 +29,37 @@ end
 
 function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3, arg_6_4)
 	arg_6_0.click_ = arg_6_4
-	arg_6_0.nameText_.text = arg_6_2
 
-	local var_6_0 = CoreVerificationData:GetStageInfoByTypeAndDiff(arg_6_1, arg_6_2 - 1)
+	local var_6_0 = CoreVerificationData:GetInfoCfgByTypeAndDiff(arg_6_1, arg_6_2)
+	local var_6_1 = CoreVerificationData:GetStageIdByTypeAndDiff(arg_6_1, arg_6_2 - 1)
+	local var_6_2 = CoreVerificationData:GetStageInfoByTypeAndDiff(arg_6_1, arg_6_2 - 1)
+	local var_6_3 = CoreVerificationData:IsOpenChallgeByType(1)
+	local var_6_4 = CoreVerificationData:IsOpenChallgeByType(2)
 
-	if arg_6_2 == 1 or var_6_0 then
-		arg_6_0.lockController_:SetSelectedState("false")
+	arg_6_0.nameText_.text = ""
+
+	local var_6_5 = PlayerData:GetPlayerInfo().userLevel < var_6_0.unlock_level
+
+	if CoreVerificationData:IsChallengeType(var_6_0.id) then
+		if var_6_3 and var_6_4 and not var_6_5 then
+			arg_6_0.lockController_:SetSelectedState("false")
+		else
+			arg_6_0.lockController_:SetSelectedState("true")
+		end
+
+		arg_6_0.diffText_.text = GetTips("CORE_VERIFICATION_TAB_DES_2")
 	else
-		arg_6_0.lockController_:SetSelectedState("true")
-	end
+		if arg_6_2 == 1 or var_6_2 then
+			arg_6_0.lockController_:SetSelectedState("false")
+		else
+			arg_6_0.lockController_:SetSelectedState("true")
+		end
 
-	local var_6_1 = CoreVerificationData:GetInfoCfgByTypeAndDiff(arg_6_1, arg_6_2)
+		arg_6_0.diffText_.text = string.format(GetTips("CORE_VERIFICATION_TAB_DES_1"), arg_6_2)
 
-	if PlayerData:GetPlayerInfo().userLevel < var_6_1.unlock_level then
-		arg_6_0.lockController_:SetSelectedState("true")
+		if var_6_5 then
+			arg_6_0.lockController_:SetSelectedState("true")
+		end
 	end
 
 	arg_6_0.selectController_:SetSelectedState(arg_6_2 == arg_6_3 and "true" or "false")

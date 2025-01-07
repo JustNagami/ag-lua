@@ -31,3 +31,11 @@ function getSpriteViaConfig(arg_7_0, arg_7_1)
 		return getSpriteWithoutAtlas(var_7_0 .. arg_7_1)
 	end
 end
+
+function getSpritePathViaConfig(arg_8_0, arg_8_1)
+	local var_8_0 = nullable(SpritePathCfg, arg_8_0, "path")
+
+	if var_8_0 then
+		return var_8_0 .. arg_8_1
+	end
+end

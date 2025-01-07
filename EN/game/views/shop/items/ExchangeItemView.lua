@@ -16,7 +16,7 @@ function var_0_0.AddUIListener(arg_2_0)
 			return
 		end
 
-		arg_2_0:ClickFunction()
+		arg_2_0:OnClick()
 	end)
 end
 
@@ -26,19 +26,60 @@ function var_0_0.UpdateView(arg_4_0)
 
 	arg_4_0.commonItem_:SetData(arg_4_0.commonData)
 
+	local var_4_0, var_4_1, var_4_2 = ShopTools.IsOnDiscountArea(arg_4_0.goodID)
+
 	arg_4_0.nameText_.text = ItemTools.getItemName(arg_4_0.itemCfg.id)
 
 	SetActive(arg_4_0.limitGo_, false)
 	SetActive(arg_4_0.newGo_, arg_4_0.shopCfg.tag == ShopConst.TAGS.NEW)
-	SetActive(arg_4_0.discountGo_, ShopTools.GetDiscount(arg_4_0.goodID) ~= 100)
-	SetActive(arg_4_0.oldPriceGo_, ShopTools.GetDiscount(arg_4_0.goodID) ~= 100)
+
+	local var_4_3 = ShopTools.GetDiscount(arg_4_0.goodID)
+
+	if var_4_0 and var_4_2 then
+		SetActive(arg_4_0.discountGo_, true)
+		SetActive(arg_4_0.oldPriceGo_, true)
+	else
+		SetActive(arg_4_0.discountGo_, false)
+		SetActive(arg_4_0.oldPriceGo_, false)
+	end
+
 	arg_4_0:SetCostIcon()
 	arg_4_0:SetPriceText()
 
-	if ShopTools.GetDiscount(arg_4_0.goodID) ~= 100 then
+	if var_4_3 ~= 100 then
 		arg_4_0.discountText_.text = ShopTools.GetDiscountLabel(arg_4_0.goodID)
 		arg_4_0.oldPriceText_.text = tostring(ShopTools.GetOriPrice(arg_4_0.goodID))
 	end
+
+	if arg_4_0.restNum <= 0 then
+		if arg_4_0.isExchange then
+			arg_4_0.soldOutText_.text = GetTips("ACTIVITY_SOLD_OUT")
+		else
+			local var_4_4 = arg_4_0.shopCfg.refresh_cycle
+
+			if arg_4_0.shopCfg.shop_refresh == 4 then
+				if arg_4_0.itemCfg.type == ItemConst.ITEM_TYPE.HERO_PIECE then
+					arg_4_0.soldOutText_.text = GetTips("NEXT_UPDATE")
+				else
+					arg_4_0.soldOutText_.text = GetTips("ACTIVITY_SOLD_OUT")
+				end
+			elseif var_4_4 == 1 then
+				arg_4_0.soldOutText_.text = GetTips("SOLD_OUT")
+			elseif var_4_4 == 2 then
+				arg_4_0.soldOutText_.text = GetTips("MONTHLY_SOLD_OUT")
+			elseif var_4_4 == 3 then
+				arg_4_0.soldOutText_.text = GetTips("WEEKLY_SOLD_OUT")
+			elseif var_4_4 == 4 then
+				arg_4_0.soldOutText_.text = GetTips("DAILY_SOLD_OUT")
+			elseif var_4_4 == 5 then
+				arg_4_0.soldOutText_.text = GetTips("ACTIVITY_SOLD_OUT")
+			elseif var_4_4 == 6 then
+				arg_4_0.soldOutText_.text = GetTips("ACTIVITY_SOLD_OUT")
+			end
+		end
+	end
+
+	SetActive(arg_4_0.ownGo_, ShopTools.CheckGoodsOwen(arg_4_0.goodID))
 
 	if arg_4_0.shopCfg.limit_num == -1 or arg_4_0.shopCfg.limit_num == nil then
 		SetActive(arg_4_0.limitGo_, false)
@@ -61,28 +102,6 @@ function var_0_0.UpdateView(arg_4_0)
 			end
 		else
 			arg_4_0.lockController:SetSelectedState("null")
-		end
-	end
-
-	if arg_4_0.restNum <= 0 then
-		if arg_4_0.isExchange then
-			arg_4_0.soldOutText_.text = GetTips("ACTIVITY_SOLD_OUT")
-		else
-			local var_4_0 = arg_4_0.shopCfg.refresh_cycle
-
-			if arg_4_0.shopCfg.shop_refresh == 4 then
-				arg_4_0.soldOutText_.text = GetTips("NEXT_UPDATE")
-			elseif var_4_0 == 1 then
-				arg_4_0.soldOutText_.text = GetTips("SOLD_OUT")
-			elseif var_4_0 == 2 then
-				arg_4_0.soldOutText_.text = GetTips("MONTHLY_SOLD_OUT")
-			elseif var_4_0 == 3 then
-				arg_4_0.soldOutText_.text = GetTips("WEEKLY_SOLD_OUT")
-			elseif var_4_0 == 4 then
-				arg_4_0.soldOutText_.text = GetTips("DAILY_SOLD_OUT")
-			elseif var_4_0 == 5 then
-				arg_4_0.soldOutText_.text = GetTips("ACTIVITY_SOLD_OUT")
-			end
 		end
 	end
 
@@ -127,7 +146,7 @@ function var_0_0.UpdateTimerView(arg_6_0)
 	local var_6_0 = arg_6_0:GetLeftTime()
 
 	if not arg_6_0.isExchange then
-		arg_6_0.countdownText_.text = string.format(GetTips("TIME_DISPLAY_5"), manager.time:GetLostTimeStrWith2Unit(var_6_0))
+		arg_6_0.countdownText_.text = string.format(GetTips("TIME_DISPLAY_5"), manager.time:GetLostTimeStrWith2Unit(var_6_0, true))
 	end
 end
 
@@ -141,6 +160,8 @@ function var_0_0.GetLeftTime(arg_7_0)
 	elseif arg_7_0.shopCfg.refresh_cycle == 4 then
 		var_7_0 = _G.gameTimer:GetNextDayFreshTime()
 	elseif arg_7_0.shopCfg.refresh_cycle == 5 then
+		var_7_0 = arg_7_0.data.next_refresh_timestamp
+	elseif arg_7_0.shopCfg.refresh_cycle == 6 then
 		var_7_0 = arg_7_0.data.next_refresh_timestamp
 	elseif arg_7_0.shopCfg.shop_refresh == 4 then
 		var_7_0 = arg_7_0.data.next_refresh_timestamp

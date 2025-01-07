@@ -52,7 +52,7 @@ function var_0_0.AddUIListener(arg_4_0)
 
 		if not arg_4_0.costEnough then
 			arg_4_0:SendSkillAttrUpgrade()
-			ShowTips("ERROR_HERO_NO_SKILL_UP_MAT")
+			ShowTips("ERROR_HERO_NO_SKILL_ENHANCE_UP_MAT")
 
 			return false
 		end
@@ -73,20 +73,14 @@ function var_0_0.AddUIListener(arg_4_0)
 end
 
 function var_0_0.OnOneKeyUpBtn(arg_8_0)
-	local var_8_0 = SkillTools.GetSkillAttrMaxUpLv(arg_8_0.skillId, arg_8_0.level)
-
-	if var_8_0 == arg_8_0.level then
-		ShowTips("ERROR_HERO_NO_SKILL_UP_MAT")
+	if SkillTools.GetSkillAttrMaxUpLv(arg_8_0.skillId, arg_8_0.level) == arg_8_0.level then
+		ShowTips("ERROR_HERO_NO_SKILL_ENHANCE_UP_MAT")
 	else
-		local var_8_1 = SkillTools.GetSkillAttrUpCostNum(arg_8_0.skillId, arg_8_0.heroId, arg_8_0.level, var_8_0 - arg_8_0.level)
-
 		JumpTools.OpenPageByJump("skillUpTip", {
 			isAttr = true,
-			nowLv = arg_8_0.level,
-			maxUpLv = var_8_0,
+			proxy = arg_8_0.heroViewDataProxy,
 			heroId = arg_8_0.heroId,
-			skillId = arg_8_0.skillId,
-			costDataList = var_8_1
+			skillId = arg_8_0.skillId
 		})
 	end
 end

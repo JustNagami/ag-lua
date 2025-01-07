@@ -15,6 +15,7 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
+	arg_3_0.headIcon_.immediate = true
 	arg_3_0.heroCampCon_ = ControllerUtil.GetController(arg_3_0.transform_, "camp")
 	arg_3_0.heroStarCon_ = ControllerUtil.GetController(arg_3_0.transform_, "grade")
 	arg_3_0.heroStateCon_ = ControllerUtil.GetController(arg_3_0.transform_, "state")
@@ -49,7 +50,7 @@ function var_0_0.RefreshData(arg_7_0, arg_7_1, arg_7_2)
 end
 
 function var_0_0.RefreshUI(arg_8_0)
-	arg_8_0.headIcon_.sprite = getSpriteViaConfig("HeroIcon", arg_8_0.data_.using_skin == 0 and arg_8_0.data_.hero_id or arg_8_0.data_.using_skin)
+	arg_8_0.headIcon_.spriteSync = getSpritePathViaConfig("HeroIcon", arg_8_0.data_.using_skin == 0 and arg_8_0.data_.hero_id or arg_8_0.data_.using_skin)
 
 	local var_8_0 = HeroStarCfg[arg_8_0.data_.star]
 	local var_8_1 = var_8_0 ~= nil and var_8_0.star or 1

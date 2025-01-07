@@ -130,6 +130,8 @@ function var_0_0.UpdateBar(arg_14_0)
 end
 
 function var_0_0.RestoreBar(arg_15_0)
+	manager.windowBar:HideBar()
+
 	if arg_15_0.lastBarList_ then
 		manager.windowBar:SwitchBar(arg_15_0.lastBarList_)
 	end

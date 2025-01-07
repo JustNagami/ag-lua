@@ -136,6 +136,8 @@ function var_0_0.RenderMaskBg(arg_12_0)
 		SetActive(arg_12_0.commonBgMask_.gameObject, true)
 		SetActive(arg_12_0.bgMask_.gameObject, false)
 	else
+		arg_12_0.bgMask_.texture = arg_12_0.hasSnapshot_
+
 		SetActive(arg_12_0.commonBgMask_.gameObject, false)
 		SetActive(arg_12_0.bgMask_.gameObject, true)
 	end

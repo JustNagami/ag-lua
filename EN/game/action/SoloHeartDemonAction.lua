@@ -35,7 +35,8 @@ function var_0_0.InitRedPointKey(arg_5_0)
 	var_0_1 = arg_5_0
 
 	manager.redPoint:addGroup(string.format("%s%s", ActivityTools.GetRedPointKey(var_0_1), var_0_1), {
-		RedPointConst.SOLO_HEART_DEMON_REWARD
+		RedPointConst.SOLO_HEART_DEMON_REWARD,
+		RedPointConst.SOLO_HEART_DEMON_FIRST_VIEW
 	})
 
 	if JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.SOLO_HEART_DEMON) then

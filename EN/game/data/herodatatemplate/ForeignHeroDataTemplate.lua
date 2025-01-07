@@ -63,7 +63,7 @@ function var_0_0.Init(arg_2_0, arg_2_1)
 		mood = arg_2_1.trust.mood
 	}
 
-	local var_2_1 = HeroTrustRelationNet.New(arg_2_1.id)
+	local var_2_1 = HeroTrustRelationNet.New(var_2_0.id)
 
 	var_2_1:InitData(arg_2_1.trust.relation)
 
@@ -123,27 +123,27 @@ function var_0_0.InitHeroEquip(arg_12_0, arg_12_1, arg_12_2)
 	local var_12_0 = {
 		{
 			pos = 1,
-			equip_id = 0
+			prefab_id = 0
 		},
 		{
 			pos = 2,
-			equip_id = 0
+			prefab_id = 0
 		},
 		{
 			pos = 3,
-			equip_id = 0
+			prefab_id = 0
 		},
 		{
 			pos = 4,
-			equip_id = 0
+			prefab_id = 0
 		},
 		{
 			pos = 5,
-			equip_id = 0
+			prefab_id = 0
 		},
 		{
 			pos = 6,
-			equip_id = 0
+			prefab_id = 0
 		}
 	}
 

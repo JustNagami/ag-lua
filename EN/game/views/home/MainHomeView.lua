@@ -22,6 +22,7 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.shakingAniHandler_ = handler(arg_4_0, arg_4_0.ShakingAni)
 	arg_4_0.bannerView_ = BannerView.New(arg_4_0, arg_4_0.btnActivityGo_)
 	arg_4_0.activityEntraceView_ = ActivityEntraceView.New(arg_4_0.activityListGo_)
+	arg_4_0.skinDrawEntraceView_ = ActivitySkinDrawEntraceView.New(arg_4_0.skinDrawGo_)
 	arg_4_0.socializeCon_ = arg_4_0.conExCollection_:GetController("socialize")
 	arg_4_0.hideCon_ = arg_4_0.conExCollection_:GetController("hide")
 	arg_4_0.sceneCon_ = arg_4_0.conExCollection_:GetController("scene")
@@ -46,7 +47,11 @@ end
 
 function var_0_0.InitBar(arg_6_0)
 	manager.windowBar:SwitchBar({
-		INVITE_BAR,
+		BACK_BAR,
+		HOME_BAR,
+		INFO_BAR
+	})
+	manager.windowBar:SwitchBar({
 		CurrencyConst.CURRENCY_TYPE_VITALITY,
 		CurrencyConst.CURRENCY_TYPE_GOLD,
 		CurrencyConst.CURRENCY_TYPE_DIAMOND,
@@ -60,6 +65,7 @@ end
 
 function var_0_0.OnEnter(arg_7_0)
 	arg_7_0:RegistEventListener(HOME_POSTER_TALK, handler(arg_7_0, arg_7_0.OnHomePosterTalk))
+	manager.ui:ShowBackground(false)
 	arg_7_0:CheckHomeSceneInteration(true)
 	arg_7_0:ClearHeroFilter()
 end
@@ -79,6 +85,7 @@ function var_0_0.OnTopFunc(arg_9_0)
 end
 
 function var_0_0.OnExit(arg_10_0)
+	arg_10_0.updateBgm_ = nil
 	arg_10_0.wait_posetr_debut = false
 
 	manager.posterGirl:SetViewTag(PosterGirlConst.ViewTag.null)
@@ -95,6 +102,7 @@ function var_0_0.OnExit(arg_10_0)
 	end
 
 	arg_10_0.activityEntraceView_:OnExit()
+	arg_10_0.skinDrawEntraceView_:OnExit()
 
 	if not JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.CHAT) then
 		ChatAction.EnterChatUI(2)
@@ -112,6 +120,8 @@ function var_0_0.OnExit(arg_10_0)
 
 	AnimatorTools.Stop()
 	arg_10_0:UnBindRedPointUI()
+
+	arg_10_0.talking_ = false
 end
 
 function var_0_0.Dispose(arg_11_0)
@@ -120,6 +130,10 @@ function var_0_0.Dispose(arg_11_0)
 	arg_11_0.activityEntraceView_:Dispose()
 
 	arg_11_0.activityEntraceView_ = nil
+
+	arg_11_0.skinDrawEntraceView_:Dispose()
+
+	arg_11_0.skinDrawEntraceView_ = nil
 
 	for iter_11_0, iter_11_1 in pairs(arg_11_0.page_) do
 		iter_11_1:Dispose()
@@ -195,6 +209,7 @@ function var_0_0.OnEnterFunc(arg_12_0)
 	arg_12_0:CheckLocked()
 	arg_12_0:CheckActivite()
 	arg_12_0.activityEntraceView_:OnEnter()
+	arg_12_0.skinDrawEntraceView_:OnEnter()
 	BulletinData.SetIslogin(true)
 	manager.rollTips:TryToCreatTips()
 	manager.notify:RegistListener(MUTE_MAIN_AUDIO, arg_12_0.muteAudioHandler_)
@@ -392,27 +407,37 @@ function var_0_0.SwitchPosterGirlPanel(arg_28_0, arg_28_1)
 	SetActive(arg_28_0.changeSkinBtn, arg_28_1)
 	SetActive(arg_28_0.btn_giftGo_, arg_28_1)
 
-	if arg_28_1 then
-		local var_28_0 = HeroTools.HeroUsingSkinInfo(arg_28_0.userData_.poster_girl).id
-		local var_28_1 = SkinSceneActionCfg[var_28_0]
+	local var_28_0 = false
+	local var_28_1 = false
 
-		if var_28_1 and HomeSceneSettingData:GetUsedState(var_28_1.special_scene_id) ~= SceneConst.HOME_SCENE_TYPE.LOCK and HomeSceneSettingCfg[var_28_1.special_scene_id].limit_display ~= 1 then
+	if arg_28_1 then
+		local var_28_2 = HeroTools.HeroUsingSkinInfo(arg_28_0.posterGirl_).id
+		local var_28_3 = SkinSceneActionCfg[var_28_2]
+
+		if var_28_3 and HomeSceneSettingData:GetUsedState(var_28_3.special_scene_id) ~= SceneConst.HOME_SCENE_TYPE.LOCK and HomeSceneSettingCfg[var_28_3.special_scene_id].limit_display ~= 1 then
 			SetActive(arg_28_0.btn_DlcGo_, true)
 		else
 			SetActive(arg_28_0.btn_DlcGo_, false)
 		end
 
-		local var_28_2 = manager.posterGirl:GetViewDirect()
+		local var_28_4 = manager.posterGirl:GetViewDirect()
+		local var_28_5 = HomeSceneSettingData:GetCurScene()
 
-		if var_28_1 and HomeSceneSettingData:GetCurScene() == 6001 and var_28_1.special_scene_id == HomeSceneSettingData:GetCurScene() and var_28_2 == PosterGirlConst.ViewDirect.center then
+		if PosterGirlTools.IsSkinSceneTzeroMode(var_28_2, var_28_5) and var_28_4 == PosterGirlConst.ViewDirect.center then
 			SetActive(arg_28_0.btn_infoGo_, true)
 		else
 			SetActive(arg_28_0.btn_infoGo_, false)
 		end
+
+		var_28_0 = PosterGirlTools.HasTimeEffect(var_28_2, var_28_5)
+		var_28_1 = PosterGirlTools.HasWeatherEffect(var_28_2, var_28_5)
 	else
 		SetActive(arg_28_0.btn_infoGo_, false)
 		SetActive(arg_28_0.btn_DlcGo_, false)
 	end
+
+	SetActive(arg_28_0.timeSwitchBtn_.gameObject, var_28_0)
+	SetActive(arg_28_0.weatherSwitchBtn_.gameObject, var_28_1)
 end
 
 function var_0_0.MuteAudio(arg_29_0)
@@ -425,6 +450,8 @@ function var_0_0.MuteAudio(arg_29_0)
 	end
 
 	SetActive(arg_29_0.talkBubbleGo_, false)
+
+	arg_29_0.talking_ = false
 end
 
 function var_0_0.ShakingAni(arg_30_0)
@@ -434,9 +461,14 @@ end
 function var_0_0.OnHomeSceneChange(arg_31_0, arg_31_1, arg_31_2)
 	manager.transition:OnlyShowEffect(true, function()
 		manager.loadScene:ForceSetShouldLoadSceneName("home", function()
+			if arg_31_0.OnlyShowEffectExiting_ then
+				return
+			end
+
 			arg_31_0:MuteAudio()
 			arg_31_0:SetCamera()
 			manager.posterGirl:RefreshModel()
+			manager.posterGirl:InitTouchHelp(arg_31_0.mutiTouchHelper_)
 
 			if manager.posterGirl:CheckDebut() then
 				manager.windowBar:SwitchBar({})
@@ -444,7 +476,18 @@ function var_0_0.OnHomeSceneChange(arg_31_0, arg_31_1, arg_31_2)
 			end
 
 			arg_31_0:HidePosterGirlBtn()
+
+			arg_31_0.OnlyShowEffectExiting_ = true
+
 			manager.transition:OnlyShowEffect(false)
+
+			arg_31_0.OnlyShowEffectExiting_ = false
+
+			if arg_31_0.updateBgm_ then
+				PlayGameSetBGM()
+
+				arg_31_0.updateBgm_ = nil
+			end
 		end)
 	end)
 end
@@ -482,7 +525,8 @@ function var_0_0.CheckHomeSceneInteration(arg_36_0)
 
 	arg_36_0.isHide_ = false
 	arg_36_0.userData_ = PlayerData:GetPlayerInfo()
-	arg_36_0.skinId_ = HeroTools.HeroUsingSkinInfo(arg_36_0.userData_.poster_girl).id
+	arg_36_0.posterGirl_ = PlayerData:GetPosterGirlHeroId()
+	arg_36_0.skinId_ = HeroTools.HeroUsingSkinInfo(arg_36_0.posterGirl_).id
 
 	manager.posterGirl:SetViewTag(PosterGirlConst.ViewTag.home)
 	manager.posterGirl:InitTouchHelp(arg_36_0.mutiTouchHelper_)
@@ -560,8 +604,10 @@ function var_0_0.OnHomePosterTalk(arg_41_0, arg_41_1, arg_41_2, arg_41_3)
 	local var_41_1 = HeroVoiceDescCfg.Get(var_41_0, arg_41_2[1])
 
 	if var_41_1 then
+		arg_41_0.talking_ = true
+
 		if not isNil(arg_41_0.talkBubbleGo_) then
-			SetActive(arg_41_0.talkBubbleGo_, true)
+			arg_41_0:RefreshTalkBubbleHide()
 		end
 
 		if not isNil(arg_41_0.talkLabel_) then
@@ -575,6 +621,8 @@ function var_0_0.OnHomePosterTalk(arg_41_0, arg_41_1, arg_41_2, arg_41_3)
 		end
 
 		arg_41_0.talkBubbleTimer_ = TimeTools.StartAfterSeconds(arg_41_3 / 1000, function()
+			arg_41_0.talking_ = false
+
 			if not isNil(arg_41_0.talkBubbleGo_) then
 				SetActive(arg_41_0.talkBubbleGo_, false)
 			end

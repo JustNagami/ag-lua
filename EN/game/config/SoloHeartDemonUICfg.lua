@@ -436,6 +436,167 @@
 		},
 		model_rot_limit = {}
 	},
+	[5052] = {
+		main_name = "",
+		hero_id = 1052,
+		ID = 5052,
+		descripe = "",
+		model = "5052ui_tpose",
+		model_pos = {
+			0,
+			-0.37,
+			1.51
+		},
+		model_rot = {
+			0,
+			0,
+			0
+		},
+		model_scale = {
+			1,
+			1,
+			1
+		},
+		model_rot_limit = {}
+	},
+	[5035] = {
+		main_name = "",
+		hero_id = 1035,
+		ID = 5035,
+		descripe = "",
+		model = "5035ui_tpose",
+		model_pos = {
+			0,
+			-0.37,
+			1.51
+		},
+		model_rot = {
+			0,
+			0,
+			0
+		},
+		model_scale = {
+			1,
+			1,
+			1
+		},
+		model_rot_limit = {}
+	},
+	[5139] = {
+		main_name = "",
+		hero_id = 1139,
+		ID = 5139,
+		descripe = "",
+		model = "5139ui_tpose",
+		model_pos = {
+			0,
+			-0.08,
+			1.51
+		},
+		model_rot = {
+			0,
+			0,
+			0
+		},
+		model_scale = {
+			1,
+			1,
+			1
+		},
+		model_rot_limit = {}
+	},
+	[5049] = {
+		main_name = "",
+		hero_id = 1049,
+		ID = 5049,
+		descripe = "",
+		model = "5049ui_tpose",
+		model_pos = {
+			0,
+			-0.08,
+			1.51
+		},
+		model_rot = {
+			0,
+			0,
+			0
+		},
+		model_scale = {
+			1,
+			1,
+			1
+		},
+		model_rot_limit = {}
+	},
+	[5081] = {
+		main_name = "",
+		hero_id = 1081,
+		ID = 5081,
+		descripe = "",
+		model = "5081ui_tpose",
+		model_pos = {
+			0,
+			-0.28,
+			1.55
+		},
+		model_rot = {
+			0,
+			0,
+			0
+		},
+		model_scale = {
+			1,
+			1,
+			1
+		},
+		model_rot_limit = {}
+	},
+	[5058] = {
+		main_name = "",
+		hero_id = 1058,
+		ID = 5058,
+		descripe = "",
+		model = "5058ui_tpose",
+		model_pos = {
+			0,
+			-0.26,
+			1.47
+		},
+		model_rot = {
+			0,
+			0,
+			0
+		},
+		model_scale = {
+			1,
+			1,
+			1
+		},
+		model_rot_limit = {}
+	},
+	[5095] = {
+		main_name = "",
+		hero_id = 1095,
+		ID = 5095,
+		descripe = "",
+		model = "5095ui_tpose",
+		model_pos = {
+			0,
+			-0.26,
+			1.47
+		},
+		model_rot = {
+			0,
+			0,
+			0
+		},
+		model_scale = {
+			1,
+			1,
+			1
+		},
+		model_rot_limit = {}
+	},
 	all = {
 		5074,
 		5011,
@@ -455,6 +616,13 @@
 		5080,
 		5119,
 		5184,
-		5055
+		5055,
+		5052,
+		5035,
+		5139,
+		5049,
+		5081,
+		5058,
+		5095
 	}
 }

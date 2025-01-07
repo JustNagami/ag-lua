@@ -358,7 +358,7 @@ function var_0_0.GetUnlockHeartListInfoLengthByHeroId(arg_25_0, arg_25_1)
 end
 
 function var_0_0.GetArchive(arg_26_0, arg_26_1)
-	if arg_26_1 == 0 then
+	if arg_26_1 == 0 or arg_26_1 == nil then
 		return {
 			archive_id = 0,
 			exp = 0,

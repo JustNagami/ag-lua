@@ -24,6 +24,7 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.scrollHelper_ = LuaList.New(handler(arg_4_0, arg_4_0.IndexItem), arg_4_0.listGo_, ActivityAttributeArenaRankItem)
 	arg_4_0.tabController_ = arg_4_0.toggleConEx:GetController("tab")
 	arg_4_0.tabNumController_ = arg_4_0.toggleConEx:GetController("num")
+	arg_4_0.commonPortrait_ = CommonHeadPortrait.New(arg_4_0.headItem_)
 end
 
 function var_0_0.IndexItem(arg_5_0, arg_5_1, arg_5_2)
@@ -49,8 +50,9 @@ end
 function var_0_0.RefreshSelfRank(arg_9_0)
 	local var_9_0 = PlayerData:GetPlayerInfo()
 
-	arg_9_0.icon_.sprite = ItemTools.getItemSprite(var_9_0 and var_9_0.portrait)
-	arg_9_0.frame_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_9_0.icon_frame)
+	arg_9_0.commonPortrait_:RenderHead(var_9_0 and var_9_0.portrait)
+	arg_9_0.commonPortrait_:RenderFrame(var_9_0.icon_frame)
+
 	arg_9_0.name_.text = var_9_0.nick
 
 	if arg_9_0.curRankType_ == var_0_1.ALL then
@@ -117,6 +119,10 @@ end
 
 function var_0_0.Dispose(arg_14_0)
 	arg_14_0:RemoveAllListeners()
+	arg_14_0.commonPortrait_:Dispose()
+
+	arg_14_0.commonPortrait_ = nil
+
 	arg_14_0.scrollHelper_:Dispose()
 
 	arg_14_0.scrollHelper_ = nil

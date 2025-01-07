@@ -27,9 +27,8 @@ end
 function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2)
 	SetActive(arg_6_0.gameObject_, true)
 
-	arg_6_0.itemCfg_ = arg_6_1
+	arg_6_0.itemID_ = ActivityLimitedDrawPoolCfg[arg_6_1].reward[1][1]
 	arg_6_0.backcall_ = arg_6_2
-	arg_6_0.itemID_ = arg_6_0.itemCfg_.id
 	arg_6_0.movieCfg_ = ObtainSkinMovieCfg[arg_6_0.itemID_]
 	arg_6_0.moviePath_ = arg_6_0.movieCfg_.start_path
 	arg_6_0.criMovie_ = arg_6_0.movie_:GetComponent("CriManaMovieControllerForUI")
@@ -41,7 +40,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2)
 
 	arg_6_0.movieTrs_.localPosition = Vector2(9999, 9999)
 
-	arg_6_0.criplayer_:SetFile(nil, arg_6_0.moviePath_, CriMana.Player.SetMode.New)
+	SetFile(arg_6_0.criplayer_, nil, arg_6_0.moviePath_, CriMana.Player.SetMode.New)
 
 	local var_6_0 = manager.audio:GetMusicVolume()
 
@@ -131,6 +130,8 @@ function var_0_0.StopTimer(arg_11_0)
 end
 
 function var_0_0.OnExit(arg_12_0)
+	arg_12_0.backcall_ = nil
+
 	arg_12_0:StopTimer()
 end
 

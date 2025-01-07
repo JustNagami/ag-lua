@@ -4,7 +4,7 @@
 		arg_1_1.frameCnt_ = 0
 		arg_1_1.state_ = "playing"
 		arg_1_1.curTalkId_ = 222041001
-		arg_1_1.duration_ = 6.999999999999
+		arg_1_1.duration_ = 7
 
 		SetActive(arg_1_1.tipsGo_, false)
 
@@ -102,38 +102,116 @@
 				local var_4_25 = "music"
 
 				arg_1_1:AudioAction(var_4_24, var_4_25, "ui_battle", "ui_battle_stopbgm", "")
+
+				local var_4_26 = ""
+				local var_4_27 = manager.audio:GetAudioName("ui_battle", "ui_battle_stopbgm")
+
+				if var_4_27 ~= "" then
+					if arg_1_1.bgmTxt_.text ~= var_4_27 and arg_1_1.bgmTxt_.text ~= "" then
+						if arg_1_1.bgmTxt2_.text ~= "" then
+							arg_1_1.bgmTxt_.text = arg_1_1.bgmTxt2_.text
+						end
+
+						arg_1_1.bgmTxt2_.text = var_4_27
+
+						arg_1_1.musicChangeAnimator_:Play("music_change", 0, 0)
+					else
+						arg_1_1.bgmTxt_.text = var_4_27
+					end
+
+					if arg_1_1.bgmTimer then
+						arg_1_1.bgmTimer:Stop()
+
+						arg_1_1.bgmTimer = nil
+					end
+
+					if arg_1_1.settingData.show_music_name == 1 then
+						arg_1_1.musicController:SetSelectedState("show")
+						arg_1_1.musicAnimator_:Play("open", 0, 0)
+
+						if arg_1_1.settingData.music_time ~= 0 then
+							arg_1_1.bgmTimer = TimeTools.StartAfterSeconds(tonumber(arg_1_1.settingData.music_time), function()
+								if arg_1_1 == nil or isNil(arg_1_1.bgmTxt_) then
+									return
+								end
+
+								arg_1_1.musicController:SetSelectedState("hide")
+								arg_1_1.musicAnimator_:Play("back", 0, 0)
+							end, {})
+						end
+					end
+				end
 			end
 
-			local var_4_26 = 0.566666666666667
-			local var_4_27 = 1
+			local var_4_28 = 0.566666666666667
+			local var_4_29 = 1
 
-			if var_4_26 < arg_1_1.time_ and arg_1_1.time_ <= var_4_26 + arg_4_0 then
-				local var_4_28 = "play"
-				local var_4_29 = "music"
+			if var_4_28 < arg_1_1.time_ and arg_1_1.time_ <= var_4_28 + arg_4_0 then
+				local var_4_30 = "play"
+				local var_4_31 = "music"
 
-				arg_1_1:AudioAction(var_4_28, var_4_29, "bgm_activity_2_0_warchess", "bgm_activity_2_0_warchess", "bgm_activity_2_0_warchess.awb")
+				arg_1_1:AudioAction(var_4_30, var_4_31, "bgm_activity_2_0_warchess", "bgm_activity_2_0_warchess", "bgm_activity_2_0_warchess.awb")
+
+				local var_4_32 = ""
+				local var_4_33 = manager.audio:GetAudioName("bgm_activity_2_0_warchess", "bgm_activity_2_0_warchess")
+
+				if var_4_33 ~= "" then
+					if arg_1_1.bgmTxt_.text ~= var_4_33 and arg_1_1.bgmTxt_.text ~= "" then
+						if arg_1_1.bgmTxt2_.text ~= "" then
+							arg_1_1.bgmTxt_.text = arg_1_1.bgmTxt2_.text
+						end
+
+						arg_1_1.bgmTxt2_.text = var_4_33
+
+						arg_1_1.musicChangeAnimator_:Play("music_change", 0, 0)
+					else
+						arg_1_1.bgmTxt_.text = var_4_33
+					end
+
+					if arg_1_1.bgmTimer then
+						arg_1_1.bgmTimer:Stop()
+
+						arg_1_1.bgmTimer = nil
+					end
+
+					if arg_1_1.settingData.show_music_name == 1 then
+						arg_1_1.musicController:SetSelectedState("show")
+						arg_1_1.musicAnimator_:Play("open", 0, 0)
+
+						if arg_1_1.settingData.music_time ~= 0 then
+							arg_1_1.bgmTimer = TimeTools.StartAfterSeconds(tonumber(arg_1_1.settingData.music_time), function()
+								if arg_1_1 == nil or isNil(arg_1_1.bgmTxt_) then
+									return
+								end
+
+								arg_1_1.musicController:SetSelectedState("hide")
+								arg_1_1.musicAnimator_:Play("back", 0, 0)
+							end, {})
+						end
+					end
+				end
 			end
 
 			if arg_1_1.frameCnt_ <= 1 then
 				arg_1_1.dialog_:SetActive(false)
 			end
 
-			local var_4_30 = 1.999999999999
-			local var_4_31 = 0.85
+			local var_4_34 = 1.999999999999
+			local var_4_35 = 0.85
 
-			if var_4_30 < arg_1_1.time_ and arg_1_1.time_ <= var_4_30 + arg_4_0 then
+			if var_4_34 < arg_1_1.time_ and arg_1_1.time_ <= var_4_34 + arg_4_0 then
 				arg_1_1.talkMaxDuration = 0
 
 				arg_1_1.dialog_:SetActive(true)
 
-				local var_4_32 = LeanTween.value(arg_1_1.dialog_, 0, 1, 0.3)
+				local var_4_36 = LeanTween.value(arg_1_1.dialog_, 0, 1, 0.3)
 
-				var_4_32:setOnUpdate(LuaHelper.FloatAction(function(arg_5_0)
-					arg_1_1.dialogCg_.alpha = arg_5_0
+				var_4_36:setOnUpdate(LuaHelper.FloatAction(function(arg_7_0)
+					arg_1_1.dialogCg_.alpha = arg_7_0
 				end))
-				var_4_32:setOnComplete(System.Action(function()
+				var_4_36:setOnComplete(System.Action(function()
 					LeanTween.cancel(arg_1_1.dialog_)
-					var_4_32:setOnUpdate(nil):setOnComplete(nil)
+					var_4_36:setOnUpdate(nil):setOnComplete(nil)
 				end))
 
 				arg_1_1.duration_ = arg_1_1.duration_ + 0.3
@@ -147,27 +225,27 @@
 				SetActive(arg_1_1.iconTrs_.gameObject, false)
 				arg_1_1.callingController_:SetSelectedState("normal")
 
-				local var_4_33 = arg_1_1:GetWordFromCfg(222041001)
-				local var_4_34 = arg_1_1:FormatText(var_4_33.content)
+				local var_4_37 = arg_1_1:GetWordFromCfg(222041001)
+				local var_4_38 = arg_1_1:FormatText(var_4_37.content)
 
-				arg_1_1.text_.text = var_4_34
+				arg_1_1.text_.text = var_4_38
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_1_1.text_)
 
-				local var_4_35 = 34
-				local var_4_36 = utf8.len(var_4_34)
-				local var_4_37 = var_4_35 <= 0 and var_4_31 or var_4_31 * (var_4_36 / var_4_35)
+				local var_4_39 = 34
+				local var_4_40 = utf8.len(var_4_38)
+				local var_4_41 = var_4_39 <= 0 and var_4_35 or var_4_35 * (var_4_40 / var_4_39)
 
-				if var_4_37 > 0 and var_4_31 < var_4_37 then
-					arg_1_1.talkMaxDuration = var_4_37
-					var_4_30 = var_4_30 + 0.3
+				if var_4_41 > 0 and var_4_35 < var_4_41 then
+					arg_1_1.talkMaxDuration = var_4_41
+					var_4_34 = var_4_34 + 0.3
 
-					if var_4_37 + var_4_30 > arg_1_1.duration_ then
-						arg_1_1.duration_ = var_4_37 + var_4_30
+					if var_4_41 + var_4_34 > arg_1_1.duration_ then
+						arg_1_1.duration_ = var_4_41 + var_4_34
 					end
 				end
 
-				arg_1_1.text_.text = var_4_34
+				arg_1_1.text_.text = var_4_38
 				arg_1_1.typewritter.percent = 0
 
 				arg_1_1.typewritter:SetDirty()
@@ -175,16 +253,16 @@
 				arg_1_1:RecordContent(arg_1_1.text_.text)
 			end
 
-			local var_4_38 = var_4_30 + 0.3
-			local var_4_39 = math.max(var_4_31, arg_1_1.talkMaxDuration)
+			local var_4_42 = var_4_34 + 0.3
+			local var_4_43 = math.max(var_4_35, arg_1_1.talkMaxDuration)
 
-			if var_4_38 <= arg_1_1.time_ and arg_1_1.time_ < var_4_38 + var_4_39 then
-				arg_1_1.typewritter.percent = (arg_1_1.time_ - var_4_38) / var_4_39
+			if var_4_42 <= arg_1_1.time_ and arg_1_1.time_ < var_4_42 + var_4_43 then
+				arg_1_1.typewritter.percent = (arg_1_1.time_ - var_4_42) / var_4_43
 
 				arg_1_1.typewritter:SetDirty()
 			end
 
-			if arg_1_1.time_ >= var_4_38 + var_4_39 and arg_1_1.time_ < var_4_38 + var_4_39 + arg_4_0 then
+			if arg_1_1.time_ >= var_4_42 + var_4_43 and arg_1_1.time_ < var_4_42 + var_4_43 + arg_4_0 then
 				arg_1_1.typewritter.percent = 1
 
 				arg_1_1.typewritter:SetDirty()
@@ -192,3236 +270,3359 @@
 			end
 		end
 	end,
-	Play222041002 = function(arg_7_0, arg_7_1)
-		arg_7_1.time_ = 0
-		arg_7_1.frameCnt_ = 0
-		arg_7_1.state_ = "playing"
-		arg_7_1.curTalkId_ = 222041002
-		arg_7_1.duration_ = 12.3
+	Play222041002 = function(arg_9_0, arg_9_1)
+		arg_9_1.time_ = 0
+		arg_9_1.frameCnt_ = 0
+		arg_9_1.state_ = "playing"
+		arg_9_1.curTalkId_ = 222041002
+		arg_9_1.duration_ = 12.3
 
-		local var_7_0 = {
+		local var_9_0 = {
 			ja = 12.3,
 			ko = 8.7,
 			zh = 8.7
 		}
-		local var_7_1 = manager.audio:GetLocalizationFlag()
+		local var_9_1 = manager.audio:GetLocalizationFlag()
 
-		if var_7_0[var_7_1] ~= nil then
-			arg_7_1.duration_ = var_7_0[var_7_1]
+		if var_9_0[var_9_1] ~= nil then
+			arg_9_1.duration_ = var_9_0[var_9_1]
 		end
 
-		SetActive(arg_7_1.tipsGo_, false)
+		SetActive(arg_9_1.tipsGo_, false)
 
-		function arg_7_1.onSingleLineFinish_()
-			arg_7_1.onSingleLineUpdate_ = nil
-			arg_7_1.onSingleLineFinish_ = nil
-			arg_7_1.state_ = "waiting"
+		function arg_9_1.onSingleLineFinish_()
+			arg_9_1.onSingleLineUpdate_ = nil
+			arg_9_1.onSingleLineFinish_ = nil
+			arg_9_1.state_ = "waiting"
 		end
 
-		function arg_7_1.playNext_(arg_9_0)
-			if arg_9_0 == 1 then
-				arg_7_0:Play222041003(arg_7_1)
+		function arg_9_1.playNext_(arg_11_0)
+			if arg_11_0 == 1 then
+				arg_9_0:Play222041003(arg_9_1)
 			end
 		end
 
-		function arg_7_1.onSingleLineUpdate_(arg_10_0)
-			local var_10_0 = "1070ui_story"
+		function arg_9_1.onSingleLineUpdate_(arg_12_0)
+			local var_12_0 = "1070ui_story"
 
-			if arg_7_1.actors_[var_10_0] == nil then
-				local var_10_1 = Object.Instantiate(Asset.Load("Char/" .. var_10_0), arg_7_1.stage_.transform)
+			if arg_9_1.actors_[var_12_0] == nil then
+				local var_12_1 = Object.Instantiate(Asset.Load("Char/" .. var_12_0), arg_9_1.stage_.transform)
 
-				var_10_1.name = var_10_0
-				var_10_1.transform.localPosition = Vector3.New(0, 100, 0)
-				arg_7_1.actors_[var_10_0] = var_10_1
+				var_12_1.name = var_12_0
+				var_12_1.transform.localPosition = Vector3.New(0, 100, 0)
+				arg_9_1.actors_[var_12_0] = var_12_1
 
-				local var_10_2 = var_10_1:GetComponentInChildren(typeof(CharacterEffect))
+				local var_12_2 = var_12_1:GetComponentInChildren(typeof(CharacterEffect))
 
-				var_10_2.enabled = true
+				var_12_2.enabled = true
 
-				local var_10_3 = GameObjectTools.GetOrAddComponent(var_10_1, typeof(DynamicBoneHelper))
+				local var_12_3 = GameObjectTools.GetOrAddComponent(var_12_1, typeof(DynamicBoneHelper))
 
-				if var_10_3 then
-					var_10_3:EnableDynamicBone(false)
+				if var_12_3 then
+					var_12_3:EnableDynamicBone(false)
 				end
 
-				arg_7_1:ShowWeapon(var_10_2.transform, false)
+				arg_9_1:ShowWeapon(var_12_2.transform, false)
 
-				arg_7_1.var_[var_10_0 .. "Animator"] = var_10_2.gameObject:GetComponent(typeof(UnityEngine.Animator))
-				arg_7_1.var_[var_10_0 .. "Animator"].applyRootMotion = true
-				arg_7_1.var_[var_10_0 .. "LipSync"] = var_10_2.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
+				arg_9_1.var_[var_12_0 .. "Animator"] = var_12_2.gameObject:GetComponent(typeof(UnityEngine.Animator))
+				arg_9_1.var_[var_12_0 .. "Animator"].applyRootMotion = true
+				arg_9_1.var_[var_12_0 .. "LipSync"] = var_12_2.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
 			end
 
-			local var_10_4 = arg_7_1.actors_["1070ui_story"].transform
-			local var_10_5 = 0
+			local var_12_4 = arg_9_1.actors_["1070ui_story"].transform
+			local var_12_5 = 0
 
-			if var_10_5 < arg_7_1.time_ and arg_7_1.time_ <= var_10_5 + arg_10_0 then
-				arg_7_1.var_.moveOldPos1070ui_story = var_10_4.localPosition
+			if var_12_5 < arg_9_1.time_ and arg_9_1.time_ <= var_12_5 + arg_12_0 then
+				arg_9_1.var_.moveOldPos1070ui_story = var_12_4.localPosition
 			end
 
-			local var_10_6 = 0.001
+			local var_12_6 = 0.001
 
-			if var_10_5 <= arg_7_1.time_ and arg_7_1.time_ < var_10_5 + var_10_6 then
-				local var_10_7 = (arg_7_1.time_ - var_10_5) / var_10_6
-				local var_10_8 = Vector3.New(-0.7, -0.95, -6.05)
+			if var_12_5 <= arg_9_1.time_ and arg_9_1.time_ < var_12_5 + var_12_6 then
+				local var_12_7 = (arg_9_1.time_ - var_12_5) / var_12_6
+				local var_12_8 = Vector3.New(-0.7, -0.95, -6.05)
 
-				var_10_4.localPosition = Vector3.Lerp(arg_7_1.var_.moveOldPos1070ui_story, var_10_8, var_10_7)
+				var_12_4.localPosition = Vector3.Lerp(arg_9_1.var_.moveOldPos1070ui_story, var_12_8, var_12_7)
 
-				local var_10_9 = manager.ui.mainCamera.transform.position - var_10_4.position
+				local var_12_9 = manager.ui.mainCamera.transform.position - var_12_4.position
 
-				var_10_4.forward = Vector3.New(var_10_9.x, var_10_9.y, var_10_9.z)
+				var_12_4.forward = Vector3.New(var_12_9.x, var_12_9.y, var_12_9.z)
 
-				local var_10_10 = var_10_4.localEulerAngles
+				local var_12_10 = var_12_4.localEulerAngles
 
-				var_10_10.z = 0
-				var_10_10.x = 0
-				var_10_4.localEulerAngles = var_10_10
+				var_12_10.z = 0
+				var_12_10.x = 0
+				var_12_4.localEulerAngles = var_12_10
 			end
 
-			if arg_7_1.time_ >= var_10_5 + var_10_6 and arg_7_1.time_ < var_10_5 + var_10_6 + arg_10_0 then
-				var_10_4.localPosition = Vector3.New(-0.7, -0.95, -6.05)
+			if arg_9_1.time_ >= var_12_5 + var_12_6 and arg_9_1.time_ < var_12_5 + var_12_6 + arg_12_0 then
+				var_12_4.localPosition = Vector3.New(-0.7, -0.95, -6.05)
 
-				local var_10_11 = manager.ui.mainCamera.transform.position - var_10_4.position
+				local var_12_11 = manager.ui.mainCamera.transform.position - var_12_4.position
 
-				var_10_4.forward = Vector3.New(var_10_11.x, var_10_11.y, var_10_11.z)
+				var_12_4.forward = Vector3.New(var_12_11.x, var_12_11.y, var_12_11.z)
 
-				local var_10_12 = var_10_4.localEulerAngles
+				local var_12_12 = var_12_4.localEulerAngles
 
-				var_10_12.z = 0
-				var_10_12.x = 0
-				var_10_4.localEulerAngles = var_10_12
+				var_12_12.z = 0
+				var_12_12.x = 0
+				var_12_4.localEulerAngles = var_12_12
 			end
 
-			local var_10_13 = arg_7_1.actors_["1070ui_story"]
-			local var_10_14 = 0
+			local var_12_13 = arg_9_1.actors_["1070ui_story"]
+			local var_12_14 = 0
 
-			if var_10_14 < arg_7_1.time_ and arg_7_1.time_ <= var_10_14 + arg_10_0 and arg_7_1.var_.characterEffect1070ui_story == nil then
-				arg_7_1.var_.characterEffect1070ui_story = var_10_13:GetComponentInChildren(typeof(CharacterEffect))
+			if var_12_14 < arg_9_1.time_ and arg_9_1.time_ <= var_12_14 + arg_12_0 and arg_9_1.var_.characterEffect1070ui_story == nil then
+				arg_9_1.var_.characterEffect1070ui_story = var_12_13:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_10_15 = 0.200000002980232
+			local var_12_15 = 0.200000002980232
 
-			if var_10_14 <= arg_7_1.time_ and arg_7_1.time_ < var_10_14 + var_10_15 then
-				local var_10_16 = (arg_7_1.time_ - var_10_14) / var_10_15
+			if var_12_14 <= arg_9_1.time_ and arg_9_1.time_ < var_12_14 + var_12_15 then
+				local var_12_16 = (arg_9_1.time_ - var_12_14) / var_12_15
 
-				if arg_7_1.var_.characterEffect1070ui_story then
-					arg_7_1.var_.characterEffect1070ui_story.fillFlat = false
+				if arg_9_1.var_.characterEffect1070ui_story then
+					arg_9_1.var_.characterEffect1070ui_story.fillFlat = false
 				end
 			end
 
-			if arg_7_1.time_ >= var_10_14 + var_10_15 and arg_7_1.time_ < var_10_14 + var_10_15 + arg_10_0 and arg_7_1.var_.characterEffect1070ui_story then
-				arg_7_1.var_.characterEffect1070ui_story.fillFlat = false
+			if arg_9_1.time_ >= var_12_14 + var_12_15 and arg_9_1.time_ < var_12_14 + var_12_15 + arg_12_0 and arg_9_1.var_.characterEffect1070ui_story then
+				arg_9_1.var_.characterEffect1070ui_story.fillFlat = false
 			end
 
-			local var_10_17 = 0
+			local var_12_17 = 0
 
-			if var_10_17 < arg_7_1.time_ and arg_7_1.time_ <= var_10_17 + arg_10_0 then
-				arg_7_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/story1070/story1070action/1070action1_1")
+			if var_12_17 < arg_9_1.time_ and arg_9_1.time_ <= var_12_17 + arg_12_0 then
+				arg_9_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/story1070/story1070action/1070action1_1")
 			end
 
-			local var_10_18 = 0
+			local var_12_18 = 0
 
-			if var_10_18 < arg_7_1.time_ and arg_7_1.time_ <= var_10_18 + arg_10_0 then
-				arg_7_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0102cva")
+			if var_12_18 < arg_9_1.time_ and arg_9_1.time_ <= var_12_18 + arg_12_0 then
+				arg_9_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0102cva")
 			end
 
-			local var_10_19 = 0
-			local var_10_20 = 0.9
+			local var_12_19 = 0
+			local var_12_20 = 0.9
 
-			if var_10_19 < arg_7_1.time_ and arg_7_1.time_ <= var_10_19 + arg_10_0 then
-				arg_7_1.talkMaxDuration = 0
-				arg_7_1.dialogCg_.alpha = 1
+			if var_12_19 < arg_9_1.time_ and arg_9_1.time_ <= var_12_19 + arg_12_0 then
+				arg_9_1.talkMaxDuration = 0
+				arg_9_1.dialogCg_.alpha = 1
 
-				arg_7_1.dialog_:SetActive(true)
-				SetActive(arg_7_1.leftNameGo_, true)
+				arg_9_1.dialog_:SetActive(true)
+				SetActive(arg_9_1.leftNameGo_, true)
 
-				local var_10_21 = arg_7_1:FormatText(StoryNameCfg[318].name)
+				local var_12_21 = arg_9_1:FormatText(StoryNameCfg[318].name)
 
-				arg_7_1.leftNameTxt_.text = var_10_21
+				arg_9_1.leftNameTxt_.text = var_12_21
 
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_7_1.leftNameTxt_.transform)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_9_1.leftNameTxt_.transform)
 
-				arg_7_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_7_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_9_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_9_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_7_1:RecordName(arg_7_1.leftNameTxt_.text)
-				SetActive(arg_7_1.iconTrs_.gameObject, false)
-				arg_7_1.callingController_:SetSelectedState("normal")
+				arg_9_1:RecordName(arg_9_1.leftNameTxt_.text)
+				SetActive(arg_9_1.iconTrs_.gameObject, false)
+				arg_9_1.callingController_:SetSelectedState("normal")
 
-				local var_10_22 = arg_7_1:GetWordFromCfg(222041002)
-				local var_10_23 = arg_7_1:FormatText(var_10_22.content)
+				local var_12_22 = arg_9_1:GetWordFromCfg(222041002)
+				local var_12_23 = arg_9_1:FormatText(var_12_22.content)
 
-				arg_7_1.text_.text = var_10_23
+				arg_9_1.text_.text = var_12_23
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_7_1.text_)
+				LuaForUtil.ClearLinePrefixSymbol(arg_9_1.text_)
 
-				local var_10_24 = 36
-				local var_10_25 = utf8.len(var_10_23)
-				local var_10_26 = var_10_24 <= 0 and var_10_20 or var_10_20 * (var_10_25 / var_10_24)
+				local var_12_24 = 36
+				local var_12_25 = utf8.len(var_12_23)
+				local var_12_26 = var_12_24 <= 0 and var_12_20 or var_12_20 * (var_12_25 / var_12_24)
 
-				if var_10_26 > 0 and var_10_20 < var_10_26 then
-					arg_7_1.talkMaxDuration = var_10_26
+				if var_12_26 > 0 and var_12_20 < var_12_26 then
+					arg_9_1.talkMaxDuration = var_12_26
 
-					if var_10_26 + var_10_19 > arg_7_1.duration_ then
-						arg_7_1.duration_ = var_10_26 + var_10_19
+					if var_12_26 + var_12_19 > arg_9_1.duration_ then
+						arg_9_1.duration_ = var_12_26 + var_12_19
 					end
 				end
 
-				arg_7_1.text_.text = var_10_23
-				arg_7_1.typewritter.percent = 0
+				arg_9_1.text_.text = var_12_23
+				arg_9_1.typewritter.percent = 0
 
-				arg_7_1.typewritter:SetDirty()
-				arg_7_1:ShowNextGo(false)
+				arg_9_1.typewritter:SetDirty()
+				arg_9_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_222041", "222041002", "story_v_out_222041.awb") ~= 0 then
-					local var_10_27 = manager.audio:GetVoiceLength("story_v_out_222041", "222041002", "story_v_out_222041.awb") / 1000
+					local var_12_27 = manager.audio:GetVoiceLength("story_v_out_222041", "222041002", "story_v_out_222041.awb") / 1000
 
-					if var_10_27 + var_10_19 > arg_7_1.duration_ then
-						arg_7_1.duration_ = var_10_27 + var_10_19
+					if var_12_27 + var_12_19 > arg_9_1.duration_ then
+						arg_9_1.duration_ = var_12_27 + var_12_19
 					end
 
-					if var_10_22.prefab_name ~= "" and arg_7_1.actors_[var_10_22.prefab_name] ~= nil then
-						local var_10_28 = LuaForUtil.PlayVoiceWithCriLipsync(arg_7_1.actors_[var_10_22.prefab_name].transform, "story_v_out_222041", "222041002", "story_v_out_222041.awb")
+					if var_12_22.prefab_name ~= "" and arg_9_1.actors_[var_12_22.prefab_name] ~= nil then
+						local var_12_28 = LuaForUtil.PlayVoiceWithCriLipsync(arg_9_1.actors_[var_12_22.prefab_name].transform, "story_v_out_222041", "222041002", "story_v_out_222041.awb")
 
-						arg_7_1:RecordAudio("222041002", var_10_28)
-						arg_7_1:RecordAudio("222041002", var_10_28)
+						arg_9_1:RecordAudio("222041002", var_12_28)
+						arg_9_1:RecordAudio("222041002", var_12_28)
 					else
-						arg_7_1:AudioAction("play", "voice", "story_v_out_222041", "222041002", "story_v_out_222041.awb")
+						arg_9_1:AudioAction("play", "voice", "story_v_out_222041", "222041002", "story_v_out_222041.awb")
 					end
 
-					arg_7_1:RecordHistoryTalkVoice("story_v_out_222041", "222041002", "story_v_out_222041.awb")
+					arg_9_1:RecordHistoryTalkVoice("story_v_out_222041", "222041002", "story_v_out_222041.awb")
 				end
 
-				arg_7_1:RecordContent(arg_7_1.text_.text)
+				arg_9_1:RecordContent(arg_9_1.text_.text)
 			end
 
-			local var_10_29 = math.max(var_10_20, arg_7_1.talkMaxDuration)
+			local var_12_29 = math.max(var_12_20, arg_9_1.talkMaxDuration)
 
-			if var_10_19 <= arg_7_1.time_ and arg_7_1.time_ < var_10_19 + var_10_29 then
-				arg_7_1.typewritter.percent = (arg_7_1.time_ - var_10_19) / var_10_29
+			if var_12_19 <= arg_9_1.time_ and arg_9_1.time_ < var_12_19 + var_12_29 then
+				arg_9_1.typewritter.percent = (arg_9_1.time_ - var_12_19) / var_12_29
 
-				arg_7_1.typewritter:SetDirty()
+				arg_9_1.typewritter:SetDirty()
 			end
 
-			if arg_7_1.time_ >= var_10_19 + var_10_29 and arg_7_1.time_ < var_10_19 + var_10_29 + arg_10_0 then
-				arg_7_1.typewritter.percent = 1
+			if arg_9_1.time_ >= var_12_19 + var_12_29 and arg_9_1.time_ < var_12_19 + var_12_29 + arg_12_0 then
+				arg_9_1.typewritter.percent = 1
 
-				arg_7_1.typewritter:SetDirty()
-				arg_7_1:ShowNextGo(true)
+				arg_9_1.typewritter:SetDirty()
+				arg_9_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041003 = function(arg_11_0, arg_11_1)
-		arg_11_1.time_ = 0
-		arg_11_1.frameCnt_ = 0
-		arg_11_1.state_ = "playing"
-		arg_11_1.curTalkId_ = 222041003
-		arg_11_1.duration_ = 12.533
+	Play222041003 = function(arg_13_0, arg_13_1)
+		arg_13_1.time_ = 0
+		arg_13_1.frameCnt_ = 0
+		arg_13_1.state_ = "playing"
+		arg_13_1.curTalkId_ = 222041003
+		arg_13_1.duration_ = 12.53
 
-		local var_11_0 = {
+		local var_13_0 = {
 			ja = 12.533,
 			ko = 5.933,
 			zh = 5.933
 		}
-		local var_11_1 = manager.audio:GetLocalizationFlag()
+		local var_13_1 = manager.audio:GetLocalizationFlag()
 
-		if var_11_0[var_11_1] ~= nil then
-			arg_11_1.duration_ = var_11_0[var_11_1]
+		if var_13_0[var_13_1] ~= nil then
+			arg_13_1.duration_ = var_13_0[var_13_1]
 		end
 
-		SetActive(arg_11_1.tipsGo_, false)
+		SetActive(arg_13_1.tipsGo_, false)
 
-		function arg_11_1.onSingleLineFinish_()
-			arg_11_1.onSingleLineUpdate_ = nil
-			arg_11_1.onSingleLineFinish_ = nil
-			arg_11_1.state_ = "waiting"
+		function arg_13_1.onSingleLineFinish_()
+			arg_13_1.onSingleLineUpdate_ = nil
+			arg_13_1.onSingleLineFinish_ = nil
+			arg_13_1.state_ = "waiting"
 		end
 
-		function arg_11_1.playNext_(arg_13_0)
-			if arg_13_0 == 1 then
-				arg_11_0:Play222041004(arg_11_1)
+		function arg_13_1.playNext_(arg_15_0)
+			if arg_15_0 == 1 then
+				arg_13_0:Play222041004(arg_13_1)
 			end
 		end
 
-		function arg_11_1.onSingleLineUpdate_(arg_14_0)
-			local var_14_0 = "1074ui_story"
+		function arg_13_1.onSingleLineUpdate_(arg_16_0)
+			local var_16_0 = "1074ui_story"
 
-			if arg_11_1.actors_[var_14_0] == nil then
-				local var_14_1 = Object.Instantiate(Asset.Load("Char/" .. var_14_0), arg_11_1.stage_.transform)
+			if arg_13_1.actors_[var_16_0] == nil then
+				local var_16_1 = Object.Instantiate(Asset.Load("Char/" .. var_16_0), arg_13_1.stage_.transform)
 
-				var_14_1.name = var_14_0
-				var_14_1.transform.localPosition = Vector3.New(0, 100, 0)
-				arg_11_1.actors_[var_14_0] = var_14_1
+				var_16_1.name = var_16_0
+				var_16_1.transform.localPosition = Vector3.New(0, 100, 0)
+				arg_13_1.actors_[var_16_0] = var_16_1
 
-				local var_14_2 = var_14_1:GetComponentInChildren(typeof(CharacterEffect))
+				local var_16_2 = var_16_1:GetComponentInChildren(typeof(CharacterEffect))
 
-				var_14_2.enabled = true
+				var_16_2.enabled = true
 
-				local var_14_3 = GameObjectTools.GetOrAddComponent(var_14_1, typeof(DynamicBoneHelper))
+				local var_16_3 = GameObjectTools.GetOrAddComponent(var_16_1, typeof(DynamicBoneHelper))
 
-				if var_14_3 then
-					var_14_3:EnableDynamicBone(false)
+				if var_16_3 then
+					var_16_3:EnableDynamicBone(false)
 				end
 
-				arg_11_1:ShowWeapon(var_14_2.transform, false)
+				arg_13_1:ShowWeapon(var_16_2.transform, false)
 
-				arg_11_1.var_[var_14_0 .. "Animator"] = var_14_2.gameObject:GetComponent(typeof(UnityEngine.Animator))
-				arg_11_1.var_[var_14_0 .. "Animator"].applyRootMotion = true
-				arg_11_1.var_[var_14_0 .. "LipSync"] = var_14_2.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
+				arg_13_1.var_[var_16_0 .. "Animator"] = var_16_2.gameObject:GetComponent(typeof(UnityEngine.Animator))
+				arg_13_1.var_[var_16_0 .. "Animator"].applyRootMotion = true
+				arg_13_1.var_[var_16_0 .. "LipSync"] = var_16_2.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
 			end
 
-			local var_14_4 = arg_11_1.actors_["1074ui_story"].transform
-			local var_14_5 = 0
+			local var_16_4 = arg_13_1.actors_["1074ui_story"].transform
+			local var_16_5 = 0
 
-			if var_14_5 < arg_11_1.time_ and arg_11_1.time_ <= var_14_5 + arg_14_0 then
-				arg_11_1.var_.moveOldPos1074ui_story = var_14_4.localPosition
+			if var_16_5 < arg_13_1.time_ and arg_13_1.time_ <= var_16_5 + arg_16_0 then
+				arg_13_1.var_.moveOldPos1074ui_story = var_16_4.localPosition
 			end
 
-			local var_14_6 = 0.001
+			local var_16_6 = 0.001
 
-			if var_14_5 <= arg_11_1.time_ and arg_11_1.time_ < var_14_5 + var_14_6 then
-				local var_14_7 = (arg_11_1.time_ - var_14_5) / var_14_6
-				local var_14_8 = Vector3.New(0.7, -1.055, -6.12)
+			if var_16_5 <= arg_13_1.time_ and arg_13_1.time_ < var_16_5 + var_16_6 then
+				local var_16_7 = (arg_13_1.time_ - var_16_5) / var_16_6
+				local var_16_8 = Vector3.New(0.7, -1.055, -6.12)
 
-				var_14_4.localPosition = Vector3.Lerp(arg_11_1.var_.moveOldPos1074ui_story, var_14_8, var_14_7)
+				var_16_4.localPosition = Vector3.Lerp(arg_13_1.var_.moveOldPos1074ui_story, var_16_8, var_16_7)
 
-				local var_14_9 = manager.ui.mainCamera.transform.position - var_14_4.position
+				local var_16_9 = manager.ui.mainCamera.transform.position - var_16_4.position
 
-				var_14_4.forward = Vector3.New(var_14_9.x, var_14_9.y, var_14_9.z)
+				var_16_4.forward = Vector3.New(var_16_9.x, var_16_9.y, var_16_9.z)
 
-				local var_14_10 = var_14_4.localEulerAngles
+				local var_16_10 = var_16_4.localEulerAngles
 
-				var_14_10.z = 0
-				var_14_10.x = 0
-				var_14_4.localEulerAngles = var_14_10
+				var_16_10.z = 0
+				var_16_10.x = 0
+				var_16_4.localEulerAngles = var_16_10
 			end
 
-			if arg_11_1.time_ >= var_14_5 + var_14_6 and arg_11_1.time_ < var_14_5 + var_14_6 + arg_14_0 then
-				var_14_4.localPosition = Vector3.New(0.7, -1.055, -6.12)
+			if arg_13_1.time_ >= var_16_5 + var_16_6 and arg_13_1.time_ < var_16_5 + var_16_6 + arg_16_0 then
+				var_16_4.localPosition = Vector3.New(0.7, -1.055, -6.12)
 
-				local var_14_11 = manager.ui.mainCamera.transform.position - var_14_4.position
+				local var_16_11 = manager.ui.mainCamera.transform.position - var_16_4.position
 
-				var_14_4.forward = Vector3.New(var_14_11.x, var_14_11.y, var_14_11.z)
+				var_16_4.forward = Vector3.New(var_16_11.x, var_16_11.y, var_16_11.z)
 
-				local var_14_12 = var_14_4.localEulerAngles
+				local var_16_12 = var_16_4.localEulerAngles
 
-				var_14_12.z = 0
-				var_14_12.x = 0
-				var_14_4.localEulerAngles = var_14_12
+				var_16_12.z = 0
+				var_16_12.x = 0
+				var_16_4.localEulerAngles = var_16_12
 			end
 
-			local var_14_13 = arg_11_1.actors_["1074ui_story"]
-			local var_14_14 = 0
+			local var_16_13 = arg_13_1.actors_["1074ui_story"]
+			local var_16_14 = 0
 
-			if var_14_14 < arg_11_1.time_ and arg_11_1.time_ <= var_14_14 + arg_14_0 and arg_11_1.var_.characterEffect1074ui_story == nil then
-				arg_11_1.var_.characterEffect1074ui_story = var_14_13:GetComponentInChildren(typeof(CharacterEffect))
+			if var_16_14 < arg_13_1.time_ and arg_13_1.time_ <= var_16_14 + arg_16_0 and arg_13_1.var_.characterEffect1074ui_story == nil then
+				arg_13_1.var_.characterEffect1074ui_story = var_16_13:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_14_15 = 0.200000002980232
+			local var_16_15 = 0.200000002980232
 
-			if var_14_14 <= arg_11_1.time_ and arg_11_1.time_ < var_14_14 + var_14_15 then
-				local var_14_16 = (arg_11_1.time_ - var_14_14) / var_14_15
+			if var_16_14 <= arg_13_1.time_ and arg_13_1.time_ < var_16_14 + var_16_15 then
+				local var_16_16 = (arg_13_1.time_ - var_16_14) / var_16_15
 
-				if arg_11_1.var_.characterEffect1074ui_story then
-					arg_11_1.var_.characterEffect1074ui_story.fillFlat = false
-				end
-			end
-
-			if arg_11_1.time_ >= var_14_14 + var_14_15 and arg_11_1.time_ < var_14_14 + var_14_15 + arg_14_0 and arg_11_1.var_.characterEffect1074ui_story then
-				arg_11_1.var_.characterEffect1074ui_story.fillFlat = false
-			end
-
-			local var_14_17 = 0
-
-			if var_14_17 < arg_11_1.time_ and arg_11_1.time_ <= var_14_17 + arg_14_0 then
-				arg_11_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/story1074/story1074action/1074action1_1")
-			end
-
-			local var_14_18 = 0
-
-			if var_14_18 < arg_11_1.time_ and arg_11_1.time_ <= var_14_18 + arg_14_0 then
-				arg_11_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface3103cva")
-			end
-
-			local var_14_19 = arg_11_1.actors_["1070ui_story"]
-			local var_14_20 = 0
-
-			if var_14_20 < arg_11_1.time_ and arg_11_1.time_ <= var_14_20 + arg_14_0 and arg_11_1.var_.characterEffect1070ui_story == nil then
-				arg_11_1.var_.characterEffect1070ui_story = var_14_19:GetComponentInChildren(typeof(CharacterEffect))
-			end
-
-			local var_14_21 = 0.200000002980232
-
-			if var_14_20 <= arg_11_1.time_ and arg_11_1.time_ < var_14_20 + var_14_21 then
-				local var_14_22 = (arg_11_1.time_ - var_14_20) / var_14_21
-
-				if arg_11_1.var_.characterEffect1070ui_story then
-					local var_14_23 = Mathf.Lerp(0, 0.5, var_14_22)
-
-					arg_11_1.var_.characterEffect1070ui_story.fillFlat = true
-					arg_11_1.var_.characterEffect1070ui_story.fillRatio = var_14_23
+				if arg_13_1.var_.characterEffect1074ui_story then
+					arg_13_1.var_.characterEffect1074ui_story.fillFlat = false
 				end
 			end
 
-			if arg_11_1.time_ >= var_14_20 + var_14_21 and arg_11_1.time_ < var_14_20 + var_14_21 + arg_14_0 and arg_11_1.var_.characterEffect1070ui_story then
-				local var_14_24 = 0.5
-
-				arg_11_1.var_.characterEffect1070ui_story.fillFlat = true
-				arg_11_1.var_.characterEffect1070ui_story.fillRatio = var_14_24
+			if arg_13_1.time_ >= var_16_14 + var_16_15 and arg_13_1.time_ < var_16_14 + var_16_15 + arg_16_0 and arg_13_1.var_.characterEffect1074ui_story then
+				arg_13_1.var_.characterEffect1074ui_story.fillFlat = false
 			end
 
-			local var_14_25 = 0
-			local var_14_26 = 0.775
+			local var_16_17 = 0
 
-			if var_14_25 < arg_11_1.time_ and arg_11_1.time_ <= var_14_25 + arg_14_0 then
-				arg_11_1.talkMaxDuration = 0
-				arg_11_1.dialogCg_.alpha = 1
+			if var_16_17 < arg_13_1.time_ and arg_13_1.time_ <= var_16_17 + arg_16_0 then
+				arg_13_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/story1074/story1074action/1074action1_1")
+			end
 
-				arg_11_1.dialog_:SetActive(true)
-				SetActive(arg_11_1.leftNameGo_, true)
+			local var_16_18 = 0
 
-				local var_14_27 = arg_11_1:FormatText(StoryNameCfg[410].name)
+			if var_16_18 < arg_13_1.time_ and arg_13_1.time_ <= var_16_18 + arg_16_0 then
+				arg_13_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface3103cva")
+			end
 
-				arg_11_1.leftNameTxt_.text = var_14_27
+			local var_16_19 = arg_13_1.actors_["1070ui_story"]
+			local var_16_20 = 0
 
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_11_1.leftNameTxt_.transform)
+			if var_16_20 < arg_13_1.time_ and arg_13_1.time_ <= var_16_20 + arg_16_0 and arg_13_1.var_.characterEffect1070ui_story == nil then
+				arg_13_1.var_.characterEffect1070ui_story = var_16_19:GetComponentInChildren(typeof(CharacterEffect))
+			end
 
-				arg_11_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_11_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+			local var_16_21 = 0.200000002980232
 
-				arg_11_1:RecordName(arg_11_1.leftNameTxt_.text)
-				SetActive(arg_11_1.iconTrs_.gameObject, false)
-				arg_11_1.callingController_:SetSelectedState("normal")
+			if var_16_20 <= arg_13_1.time_ and arg_13_1.time_ < var_16_20 + var_16_21 then
+				local var_16_22 = (arg_13_1.time_ - var_16_20) / var_16_21
 
-				local var_14_28 = arg_11_1:GetWordFromCfg(222041003)
-				local var_14_29 = arg_11_1:FormatText(var_14_28.content)
+				if arg_13_1.var_.characterEffect1070ui_story then
+					local var_16_23 = Mathf.Lerp(0, 0.5, var_16_22)
 
-				arg_11_1.text_.text = var_14_29
+					arg_13_1.var_.characterEffect1070ui_story.fillFlat = true
+					arg_13_1.var_.characterEffect1070ui_story.fillRatio = var_16_23
+				end
+			end
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_11_1.text_)
+			if arg_13_1.time_ >= var_16_20 + var_16_21 and arg_13_1.time_ < var_16_20 + var_16_21 + arg_16_0 and arg_13_1.var_.characterEffect1070ui_story then
+				local var_16_24 = 0.5
 
-				local var_14_30 = 31
-				local var_14_31 = utf8.len(var_14_29)
-				local var_14_32 = var_14_30 <= 0 and var_14_26 or var_14_26 * (var_14_31 / var_14_30)
+				arg_13_1.var_.characterEffect1070ui_story.fillFlat = true
+				arg_13_1.var_.characterEffect1070ui_story.fillRatio = var_16_24
+			end
 
-				if var_14_32 > 0 and var_14_26 < var_14_32 then
-					arg_11_1.talkMaxDuration = var_14_32
+			local var_16_25 = 0
+			local var_16_26 = 0.775
 
-					if var_14_32 + var_14_25 > arg_11_1.duration_ then
-						arg_11_1.duration_ = var_14_32 + var_14_25
+			if var_16_25 < arg_13_1.time_ and arg_13_1.time_ <= var_16_25 + arg_16_0 then
+				arg_13_1.talkMaxDuration = 0
+				arg_13_1.dialogCg_.alpha = 1
+
+				arg_13_1.dialog_:SetActive(true)
+				SetActive(arg_13_1.leftNameGo_, true)
+
+				local var_16_27 = arg_13_1:FormatText(StoryNameCfg[410].name)
+
+				arg_13_1.leftNameTxt_.text = var_16_27
+
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_13_1.leftNameTxt_.transform)
+
+				arg_13_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_13_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+
+				arg_13_1:RecordName(arg_13_1.leftNameTxt_.text)
+				SetActive(arg_13_1.iconTrs_.gameObject, false)
+				arg_13_1.callingController_:SetSelectedState("normal")
+
+				local var_16_28 = arg_13_1:GetWordFromCfg(222041003)
+				local var_16_29 = arg_13_1:FormatText(var_16_28.content)
+
+				arg_13_1.text_.text = var_16_29
+
+				LuaForUtil.ClearLinePrefixSymbol(arg_13_1.text_)
+
+				local var_16_30 = 31
+				local var_16_31 = utf8.len(var_16_29)
+				local var_16_32 = var_16_30 <= 0 and var_16_26 or var_16_26 * (var_16_31 / var_16_30)
+
+				if var_16_32 > 0 and var_16_26 < var_16_32 then
+					arg_13_1.talkMaxDuration = var_16_32
+
+					if var_16_32 + var_16_25 > arg_13_1.duration_ then
+						arg_13_1.duration_ = var_16_32 + var_16_25
 					end
 				end
 
-				arg_11_1.text_.text = var_14_29
-				arg_11_1.typewritter.percent = 0
+				arg_13_1.text_.text = var_16_29
+				arg_13_1.typewritter.percent = 0
 
-				arg_11_1.typewritter:SetDirty()
-				arg_11_1:ShowNextGo(false)
+				arg_13_1.typewritter:SetDirty()
+				arg_13_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_222041", "222041003", "story_v_out_222041.awb") ~= 0 then
-					local var_14_33 = manager.audio:GetVoiceLength("story_v_out_222041", "222041003", "story_v_out_222041.awb") / 1000
+					local var_16_33 = manager.audio:GetVoiceLength("story_v_out_222041", "222041003", "story_v_out_222041.awb") / 1000
 
-					if var_14_33 + var_14_25 > arg_11_1.duration_ then
-						arg_11_1.duration_ = var_14_33 + var_14_25
+					if var_16_33 + var_16_25 > arg_13_1.duration_ then
+						arg_13_1.duration_ = var_16_33 + var_16_25
 					end
 
-					if var_14_28.prefab_name ~= "" and arg_11_1.actors_[var_14_28.prefab_name] ~= nil then
-						local var_14_34 = LuaForUtil.PlayVoiceWithCriLipsync(arg_11_1.actors_[var_14_28.prefab_name].transform, "story_v_out_222041", "222041003", "story_v_out_222041.awb")
+					if var_16_28.prefab_name ~= "" and arg_13_1.actors_[var_16_28.prefab_name] ~= nil then
+						local var_16_34 = LuaForUtil.PlayVoiceWithCriLipsync(arg_13_1.actors_[var_16_28.prefab_name].transform, "story_v_out_222041", "222041003", "story_v_out_222041.awb")
 
-						arg_11_1:RecordAudio("222041003", var_14_34)
-						arg_11_1:RecordAudio("222041003", var_14_34)
+						arg_13_1:RecordAudio("222041003", var_16_34)
+						arg_13_1:RecordAudio("222041003", var_16_34)
 					else
-						arg_11_1:AudioAction("play", "voice", "story_v_out_222041", "222041003", "story_v_out_222041.awb")
+						arg_13_1:AudioAction("play", "voice", "story_v_out_222041", "222041003", "story_v_out_222041.awb")
 					end
 
-					arg_11_1:RecordHistoryTalkVoice("story_v_out_222041", "222041003", "story_v_out_222041.awb")
+					arg_13_1:RecordHistoryTalkVoice("story_v_out_222041", "222041003", "story_v_out_222041.awb")
 				end
 
-				arg_11_1:RecordContent(arg_11_1.text_.text)
+				arg_13_1:RecordContent(arg_13_1.text_.text)
 			end
 
-			local var_14_35 = math.max(var_14_26, arg_11_1.talkMaxDuration)
+			local var_16_35 = math.max(var_16_26, arg_13_1.talkMaxDuration)
 
-			if var_14_25 <= arg_11_1.time_ and arg_11_1.time_ < var_14_25 + var_14_35 then
-				arg_11_1.typewritter.percent = (arg_11_1.time_ - var_14_25) / var_14_35
+			if var_16_25 <= arg_13_1.time_ and arg_13_1.time_ < var_16_25 + var_16_35 then
+				arg_13_1.typewritter.percent = (arg_13_1.time_ - var_16_25) / var_16_35
 
-				arg_11_1.typewritter:SetDirty()
+				arg_13_1.typewritter:SetDirty()
 			end
 
-			if arg_11_1.time_ >= var_14_25 + var_14_35 and arg_11_1.time_ < var_14_25 + var_14_35 + arg_14_0 then
-				arg_11_1.typewritter.percent = 1
+			if arg_13_1.time_ >= var_16_25 + var_16_35 and arg_13_1.time_ < var_16_25 + var_16_35 + arg_16_0 then
+				arg_13_1.typewritter.percent = 1
 
-				arg_11_1.typewritter:SetDirty()
-				arg_11_1:ShowNextGo(true)
+				arg_13_1.typewritter:SetDirty()
+				arg_13_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041004 = function(arg_15_0, arg_15_1)
-		arg_15_1.time_ = 0
-		arg_15_1.frameCnt_ = 0
-		arg_15_1.state_ = "playing"
-		arg_15_1.curTalkId_ = 222041004
-		arg_15_1.duration_ = 8.633
+	Play222041004 = function(arg_17_0, arg_17_1)
+		arg_17_1.time_ = 0
+		arg_17_1.frameCnt_ = 0
+		arg_17_1.state_ = "playing"
+		arg_17_1.curTalkId_ = 222041004
+		arg_17_1.duration_ = 8.63
 
-		local var_15_0 = {
+		local var_17_0 = {
 			ja = 8.633,
 			ko = 5.033,
 			zh = 5.066
 		}
-		local var_15_1 = manager.audio:GetLocalizationFlag()
+		local var_17_1 = manager.audio:GetLocalizationFlag()
 
-		if var_15_0[var_15_1] ~= nil then
-			arg_15_1.duration_ = var_15_0[var_15_1]
+		if var_17_0[var_17_1] ~= nil then
+			arg_17_1.duration_ = var_17_0[var_17_1]
 		end
 
-		SetActive(arg_15_1.tipsGo_, false)
+		SetActive(arg_17_1.tipsGo_, false)
 
-		function arg_15_1.onSingleLineFinish_()
-			arg_15_1.onSingleLineUpdate_ = nil
-			arg_15_1.onSingleLineFinish_ = nil
-			arg_15_1.state_ = "waiting"
+		function arg_17_1.onSingleLineFinish_()
+			arg_17_1.onSingleLineUpdate_ = nil
+			arg_17_1.onSingleLineFinish_ = nil
+			arg_17_1.state_ = "waiting"
 		end
 
-		function arg_15_1.playNext_(arg_17_0)
-			if arg_17_0 == 1 then
-				arg_15_0:Play222041005(arg_15_1)
+		function arg_17_1.playNext_(arg_19_0)
+			if arg_19_0 == 1 then
+				arg_17_0:Play222041005(arg_17_1)
 			end
 		end
 
-		function arg_15_1.onSingleLineUpdate_(arg_18_0)
-			local var_18_0 = 0
+		function arg_17_1.onSingleLineUpdate_(arg_20_0)
+			local var_20_0 = 0
 
-			if var_18_0 < arg_15_1.time_ and arg_15_1.time_ <= var_18_0 + arg_18_0 then
-				arg_15_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/story1074/story1074action/1074action1_1")
+			if var_20_0 < arg_17_1.time_ and arg_17_1.time_ <= var_20_0 + arg_20_0 then
+				arg_17_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/story1074/story1074action/1074action1_1")
 			end
 
-			local var_18_1 = 0
+			local var_20_1 = 0
 
-			if var_18_1 < arg_15_1.time_ and arg_15_1.time_ <= var_18_1 + arg_18_0 then
-				arg_15_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0102cva")
+			if var_20_1 < arg_17_1.time_ and arg_17_1.time_ <= var_20_1 + arg_20_0 then
+				arg_17_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0102cva")
 			end
 
-			local var_18_2 = 0
-			local var_18_3 = 0.6
+			local var_20_2 = 0
+			local var_20_3 = 0.6
 
-			if var_18_2 < arg_15_1.time_ and arg_15_1.time_ <= var_18_2 + arg_18_0 then
-				arg_15_1.talkMaxDuration = 0
-				arg_15_1.dialogCg_.alpha = 1
+			if var_20_2 < arg_17_1.time_ and arg_17_1.time_ <= var_20_2 + arg_20_0 then
+				arg_17_1.talkMaxDuration = 0
+				arg_17_1.dialogCg_.alpha = 1
 
-				arg_15_1.dialog_:SetActive(true)
-				SetActive(arg_15_1.leftNameGo_, true)
+				arg_17_1.dialog_:SetActive(true)
+				SetActive(arg_17_1.leftNameGo_, true)
 
-				local var_18_4 = arg_15_1:FormatText(StoryNameCfg[410].name)
+				local var_20_4 = arg_17_1:FormatText(StoryNameCfg[410].name)
 
-				arg_15_1.leftNameTxt_.text = var_18_4
+				arg_17_1.leftNameTxt_.text = var_20_4
 
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_15_1.leftNameTxt_.transform)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_17_1.leftNameTxt_.transform)
 
-				arg_15_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_15_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_17_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_17_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_15_1:RecordName(arg_15_1.leftNameTxt_.text)
-				SetActive(arg_15_1.iconTrs_.gameObject, false)
-				arg_15_1.callingController_:SetSelectedState("normal")
+				arg_17_1:RecordName(arg_17_1.leftNameTxt_.text)
+				SetActive(arg_17_1.iconTrs_.gameObject, false)
+				arg_17_1.callingController_:SetSelectedState("normal")
 
-				local var_18_5 = arg_15_1:GetWordFromCfg(222041004)
-				local var_18_6 = arg_15_1:FormatText(var_18_5.content)
+				local var_20_5 = arg_17_1:GetWordFromCfg(222041004)
+				local var_20_6 = arg_17_1:FormatText(var_20_5.content)
 
-				arg_15_1.text_.text = var_18_6
+				arg_17_1.text_.text = var_20_6
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_15_1.text_)
+				LuaForUtil.ClearLinePrefixSymbol(arg_17_1.text_)
 
-				local var_18_7 = 24
-				local var_18_8 = utf8.len(var_18_6)
-				local var_18_9 = var_18_7 <= 0 and var_18_3 or var_18_3 * (var_18_8 / var_18_7)
+				local var_20_7 = 24
+				local var_20_8 = utf8.len(var_20_6)
+				local var_20_9 = var_20_7 <= 0 and var_20_3 or var_20_3 * (var_20_8 / var_20_7)
 
-				if var_18_9 > 0 and var_18_3 < var_18_9 then
-					arg_15_1.talkMaxDuration = var_18_9
+				if var_20_9 > 0 and var_20_3 < var_20_9 then
+					arg_17_1.talkMaxDuration = var_20_9
 
-					if var_18_9 + var_18_2 > arg_15_1.duration_ then
-						arg_15_1.duration_ = var_18_9 + var_18_2
+					if var_20_9 + var_20_2 > arg_17_1.duration_ then
+						arg_17_1.duration_ = var_20_9 + var_20_2
 					end
 				end
 
-				arg_15_1.text_.text = var_18_6
-				arg_15_1.typewritter.percent = 0
+				arg_17_1.text_.text = var_20_6
+				arg_17_1.typewritter.percent = 0
 
-				arg_15_1.typewritter:SetDirty()
-				arg_15_1:ShowNextGo(false)
+				arg_17_1.typewritter:SetDirty()
+				arg_17_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_222041", "222041004", "story_v_out_222041.awb") ~= 0 then
-					local var_18_10 = manager.audio:GetVoiceLength("story_v_out_222041", "222041004", "story_v_out_222041.awb") / 1000
+					local var_20_10 = manager.audio:GetVoiceLength("story_v_out_222041", "222041004", "story_v_out_222041.awb") / 1000
 
-					if var_18_10 + var_18_2 > arg_15_1.duration_ then
-						arg_15_1.duration_ = var_18_10 + var_18_2
+					if var_20_10 + var_20_2 > arg_17_1.duration_ then
+						arg_17_1.duration_ = var_20_10 + var_20_2
 					end
 
-					if var_18_5.prefab_name ~= "" and arg_15_1.actors_[var_18_5.prefab_name] ~= nil then
-						local var_18_11 = LuaForUtil.PlayVoiceWithCriLipsync(arg_15_1.actors_[var_18_5.prefab_name].transform, "story_v_out_222041", "222041004", "story_v_out_222041.awb")
+					if var_20_5.prefab_name ~= "" and arg_17_1.actors_[var_20_5.prefab_name] ~= nil then
+						local var_20_11 = LuaForUtil.PlayVoiceWithCriLipsync(arg_17_1.actors_[var_20_5.prefab_name].transform, "story_v_out_222041", "222041004", "story_v_out_222041.awb")
 
-						arg_15_1:RecordAudio("222041004", var_18_11)
-						arg_15_1:RecordAudio("222041004", var_18_11)
+						arg_17_1:RecordAudio("222041004", var_20_11)
+						arg_17_1:RecordAudio("222041004", var_20_11)
 					else
-						arg_15_1:AudioAction("play", "voice", "story_v_out_222041", "222041004", "story_v_out_222041.awb")
+						arg_17_1:AudioAction("play", "voice", "story_v_out_222041", "222041004", "story_v_out_222041.awb")
 					end
 
-					arg_15_1:RecordHistoryTalkVoice("story_v_out_222041", "222041004", "story_v_out_222041.awb")
+					arg_17_1:RecordHistoryTalkVoice("story_v_out_222041", "222041004", "story_v_out_222041.awb")
 				end
 
-				arg_15_1:RecordContent(arg_15_1.text_.text)
+				arg_17_1:RecordContent(arg_17_1.text_.text)
 			end
 
-			local var_18_12 = math.max(var_18_3, arg_15_1.talkMaxDuration)
+			local var_20_12 = math.max(var_20_3, arg_17_1.talkMaxDuration)
 
-			if var_18_2 <= arg_15_1.time_ and arg_15_1.time_ < var_18_2 + var_18_12 then
-				arg_15_1.typewritter.percent = (arg_15_1.time_ - var_18_2) / var_18_12
+			if var_20_2 <= arg_17_1.time_ and arg_17_1.time_ < var_20_2 + var_20_12 then
+				arg_17_1.typewritter.percent = (arg_17_1.time_ - var_20_2) / var_20_12
 
-				arg_15_1.typewritter:SetDirty()
+				arg_17_1.typewritter:SetDirty()
 			end
 
-			if arg_15_1.time_ >= var_18_2 + var_18_12 and arg_15_1.time_ < var_18_2 + var_18_12 + arg_18_0 then
-				arg_15_1.typewritter.percent = 1
+			if arg_17_1.time_ >= var_20_2 + var_20_12 and arg_17_1.time_ < var_20_2 + var_20_12 + arg_20_0 then
+				arg_17_1.typewritter.percent = 1
 
-				arg_15_1.typewritter:SetDirty()
-				arg_15_1:ShowNextGo(true)
+				arg_17_1.typewritter:SetDirty()
+				arg_17_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041005 = function(arg_19_0, arg_19_1)
-		arg_19_1.time_ = 0
-		arg_19_1.frameCnt_ = 0
-		arg_19_1.state_ = "playing"
-		arg_19_1.curTalkId_ = 222041005
-		arg_19_1.duration_ = 16.833
+	Play222041005 = function(arg_21_0, arg_21_1)
+		arg_21_1.time_ = 0
+		arg_21_1.frameCnt_ = 0
+		arg_21_1.state_ = "playing"
+		arg_21_1.curTalkId_ = 222041005
+		arg_21_1.duration_ = 16.83
 
-		local var_19_0 = {
+		local var_21_0 = {
 			ja = 16.833,
 			ko = 11.766,
 			zh = 11.766
 		}
-		local var_19_1 = manager.audio:GetLocalizationFlag()
+		local var_21_1 = manager.audio:GetLocalizationFlag()
 
-		if var_19_0[var_19_1] ~= nil then
-			arg_19_1.duration_ = var_19_0[var_19_1]
+		if var_21_0[var_21_1] ~= nil then
+			arg_21_1.duration_ = var_21_0[var_21_1]
 		end
 
-		SetActive(arg_19_1.tipsGo_, false)
+		SetActive(arg_21_1.tipsGo_, false)
 
-		function arg_19_1.onSingleLineFinish_()
-			arg_19_1.onSingleLineUpdate_ = nil
-			arg_19_1.onSingleLineFinish_ = nil
-			arg_19_1.state_ = "waiting"
+		function arg_21_1.onSingleLineFinish_()
+			arg_21_1.onSingleLineUpdate_ = nil
+			arg_21_1.onSingleLineFinish_ = nil
+			arg_21_1.state_ = "waiting"
 		end
 
-		function arg_19_1.playNext_(arg_21_0)
-			if arg_21_0 == 1 then
-				arg_19_0:Play222041006(arg_19_1)
+		function arg_21_1.playNext_(arg_23_0)
+			if arg_23_0 == 1 then
+				arg_21_0:Play222041006(arg_21_1)
 			end
 		end
 
-		function arg_19_1.onSingleLineUpdate_(arg_22_0)
-			local var_22_0 = arg_19_1.actors_["1070ui_story"]
-			local var_22_1 = 0
+		function arg_21_1.onSingleLineUpdate_(arg_24_0)
+			local var_24_0 = arg_21_1.actors_["1070ui_story"]
+			local var_24_1 = 0
 
-			if var_22_1 < arg_19_1.time_ and arg_19_1.time_ <= var_22_1 + arg_22_0 and arg_19_1.var_.characterEffect1070ui_story == nil then
-				arg_19_1.var_.characterEffect1070ui_story = var_22_0:GetComponentInChildren(typeof(CharacterEffect))
+			if var_24_1 < arg_21_1.time_ and arg_21_1.time_ <= var_24_1 + arg_24_0 and arg_21_1.var_.characterEffect1070ui_story == nil then
+				arg_21_1.var_.characterEffect1070ui_story = var_24_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_22_2 = 0.200000002980232
+			local var_24_2 = 0.200000002980232
 
-			if var_22_1 <= arg_19_1.time_ and arg_19_1.time_ < var_22_1 + var_22_2 then
-				local var_22_3 = (arg_19_1.time_ - var_22_1) / var_22_2
+			if var_24_1 <= arg_21_1.time_ and arg_21_1.time_ < var_24_1 + var_24_2 then
+				local var_24_3 = (arg_21_1.time_ - var_24_1) / var_24_2
 
-				if arg_19_1.var_.characterEffect1070ui_story then
-					arg_19_1.var_.characterEffect1070ui_story.fillFlat = false
+				if arg_21_1.var_.characterEffect1070ui_story then
+					arg_21_1.var_.characterEffect1070ui_story.fillFlat = false
 				end
 			end
 
-			if arg_19_1.time_ >= var_22_1 + var_22_2 and arg_19_1.time_ < var_22_1 + var_22_2 + arg_22_0 and arg_19_1.var_.characterEffect1070ui_story then
-				arg_19_1.var_.characterEffect1070ui_story.fillFlat = false
+			if arg_21_1.time_ >= var_24_1 + var_24_2 and arg_21_1.time_ < var_24_1 + var_24_2 + arg_24_0 and arg_21_1.var_.characterEffect1070ui_story then
+				arg_21_1.var_.characterEffect1070ui_story.fillFlat = false
 			end
 
-			local var_22_4 = 0
+			local var_24_4 = 0
 
-			if var_22_4 < arg_19_1.time_ and arg_19_1.time_ <= var_22_4 + arg_22_0 then
-				arg_19_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/story1070/story1070action/1070action7_1")
+			if var_24_4 < arg_21_1.time_ and arg_21_1.time_ <= var_24_4 + arg_24_0 then
+				arg_21_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/story1070/story1070action/1070action7_1")
 			end
 
-			local var_22_5 = 0
+			local var_24_5 = 0
 
-			if var_22_5 < arg_19_1.time_ and arg_19_1.time_ <= var_22_5 + arg_22_0 then
-				arg_19_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0102cva")
+			if var_24_5 < arg_21_1.time_ and arg_21_1.time_ <= var_24_5 + arg_24_0 then
+				arg_21_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0102cva")
 			end
 
-			local var_22_6 = arg_19_1.actors_["1074ui_story"]
-			local var_22_7 = 0
+			local var_24_6 = arg_21_1.actors_["1074ui_story"]
+			local var_24_7 = 0
 
-			if var_22_7 < arg_19_1.time_ and arg_19_1.time_ <= var_22_7 + arg_22_0 and arg_19_1.var_.characterEffect1074ui_story == nil then
-				arg_19_1.var_.characterEffect1074ui_story = var_22_6:GetComponentInChildren(typeof(CharacterEffect))
+			if var_24_7 < arg_21_1.time_ and arg_21_1.time_ <= var_24_7 + arg_24_0 and arg_21_1.var_.characterEffect1074ui_story == nil then
+				arg_21_1.var_.characterEffect1074ui_story = var_24_6:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_22_8 = 0.200000002980232
+			local var_24_8 = 0.200000002980232
 
-			if var_22_7 <= arg_19_1.time_ and arg_19_1.time_ < var_22_7 + var_22_8 then
-				local var_22_9 = (arg_19_1.time_ - var_22_7) / var_22_8
+			if var_24_7 <= arg_21_1.time_ and arg_21_1.time_ < var_24_7 + var_24_8 then
+				local var_24_9 = (arg_21_1.time_ - var_24_7) / var_24_8
 
-				if arg_19_1.var_.characterEffect1074ui_story then
-					local var_22_10 = Mathf.Lerp(0, 0.5, var_22_9)
+				if arg_21_1.var_.characterEffect1074ui_story then
+					local var_24_10 = Mathf.Lerp(0, 0.5, var_24_9)
 
-					arg_19_1.var_.characterEffect1074ui_story.fillFlat = true
-					arg_19_1.var_.characterEffect1074ui_story.fillRatio = var_22_10
+					arg_21_1.var_.characterEffect1074ui_story.fillFlat = true
+					arg_21_1.var_.characterEffect1074ui_story.fillRatio = var_24_10
 				end
 			end
 
-			if arg_19_1.time_ >= var_22_7 + var_22_8 and arg_19_1.time_ < var_22_7 + var_22_8 + arg_22_0 and arg_19_1.var_.characterEffect1074ui_story then
-				local var_22_11 = 0.5
+			if arg_21_1.time_ >= var_24_7 + var_24_8 and arg_21_1.time_ < var_24_7 + var_24_8 + arg_24_0 and arg_21_1.var_.characterEffect1074ui_story then
+				local var_24_11 = 0.5
 
-				arg_19_1.var_.characterEffect1074ui_story.fillFlat = true
-				arg_19_1.var_.characterEffect1074ui_story.fillRatio = var_22_11
+				arg_21_1.var_.characterEffect1074ui_story.fillFlat = true
+				arg_21_1.var_.characterEffect1074ui_story.fillRatio = var_24_11
 			end
 
-			local var_22_12 = 0
-			local var_22_13 = 1.4
+			local var_24_12 = 0
+			local var_24_13 = 1.4
 
-			if var_22_12 < arg_19_1.time_ and arg_19_1.time_ <= var_22_12 + arg_22_0 then
-				arg_19_1.talkMaxDuration = 0
-				arg_19_1.dialogCg_.alpha = 1
+			if var_24_12 < arg_21_1.time_ and arg_21_1.time_ <= var_24_12 + arg_24_0 then
+				arg_21_1.talkMaxDuration = 0
+				arg_21_1.dialogCg_.alpha = 1
 
-				arg_19_1.dialog_:SetActive(true)
-				SetActive(arg_19_1.leftNameGo_, true)
+				arg_21_1.dialog_:SetActive(true)
+				SetActive(arg_21_1.leftNameGo_, true)
 
-				local var_22_14 = arg_19_1:FormatText(StoryNameCfg[318].name)
+				local var_24_14 = arg_21_1:FormatText(StoryNameCfg[318].name)
 
-				arg_19_1.leftNameTxt_.text = var_22_14
+				arg_21_1.leftNameTxt_.text = var_24_14
 
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_19_1.leftNameTxt_.transform)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_21_1.leftNameTxt_.transform)
 
-				arg_19_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_19_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_21_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_21_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_19_1:RecordName(arg_19_1.leftNameTxt_.text)
-				SetActive(arg_19_1.iconTrs_.gameObject, false)
-				arg_19_1.callingController_:SetSelectedState("normal")
+				arg_21_1:RecordName(arg_21_1.leftNameTxt_.text)
+				SetActive(arg_21_1.iconTrs_.gameObject, false)
+				arg_21_1.callingController_:SetSelectedState("normal")
 
-				local var_22_15 = arg_19_1:GetWordFromCfg(222041005)
-				local var_22_16 = arg_19_1:FormatText(var_22_15.content)
+				local var_24_15 = arg_21_1:GetWordFromCfg(222041005)
+				local var_24_16 = arg_21_1:FormatText(var_24_15.content)
 
-				arg_19_1.text_.text = var_22_16
+				arg_21_1.text_.text = var_24_16
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_19_1.text_)
+				LuaForUtil.ClearLinePrefixSymbol(arg_21_1.text_)
 
-				local var_22_17 = 56
-				local var_22_18 = utf8.len(var_22_16)
-				local var_22_19 = var_22_17 <= 0 and var_22_13 or var_22_13 * (var_22_18 / var_22_17)
+				local var_24_17 = 56
+				local var_24_18 = utf8.len(var_24_16)
+				local var_24_19 = var_24_17 <= 0 and var_24_13 or var_24_13 * (var_24_18 / var_24_17)
 
-				if var_22_19 > 0 and var_22_13 < var_22_19 then
-					arg_19_1.talkMaxDuration = var_22_19
+				if var_24_19 > 0 and var_24_13 < var_24_19 then
+					arg_21_1.talkMaxDuration = var_24_19
 
-					if var_22_19 + var_22_12 > arg_19_1.duration_ then
-						arg_19_1.duration_ = var_22_19 + var_22_12
+					if var_24_19 + var_24_12 > arg_21_1.duration_ then
+						arg_21_1.duration_ = var_24_19 + var_24_12
 					end
 				end
 
-				arg_19_1.text_.text = var_22_16
-				arg_19_1.typewritter.percent = 0
+				arg_21_1.text_.text = var_24_16
+				arg_21_1.typewritter.percent = 0
 
-				arg_19_1.typewritter:SetDirty()
-				arg_19_1:ShowNextGo(false)
+				arg_21_1.typewritter:SetDirty()
+				arg_21_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_222041", "222041005", "story_v_out_222041.awb") ~= 0 then
-					local var_22_20 = manager.audio:GetVoiceLength("story_v_out_222041", "222041005", "story_v_out_222041.awb") / 1000
+					local var_24_20 = manager.audio:GetVoiceLength("story_v_out_222041", "222041005", "story_v_out_222041.awb") / 1000
 
-					if var_22_20 + var_22_12 > arg_19_1.duration_ then
-						arg_19_1.duration_ = var_22_20 + var_22_12
+					if var_24_20 + var_24_12 > arg_21_1.duration_ then
+						arg_21_1.duration_ = var_24_20 + var_24_12
 					end
 
-					if var_22_15.prefab_name ~= "" and arg_19_1.actors_[var_22_15.prefab_name] ~= nil then
-						local var_22_21 = LuaForUtil.PlayVoiceWithCriLipsync(arg_19_1.actors_[var_22_15.prefab_name].transform, "story_v_out_222041", "222041005", "story_v_out_222041.awb")
+					if var_24_15.prefab_name ~= "" and arg_21_1.actors_[var_24_15.prefab_name] ~= nil then
+						local var_24_21 = LuaForUtil.PlayVoiceWithCriLipsync(arg_21_1.actors_[var_24_15.prefab_name].transform, "story_v_out_222041", "222041005", "story_v_out_222041.awb")
 
-						arg_19_1:RecordAudio("222041005", var_22_21)
-						arg_19_1:RecordAudio("222041005", var_22_21)
+						arg_21_1:RecordAudio("222041005", var_24_21)
+						arg_21_1:RecordAudio("222041005", var_24_21)
 					else
-						arg_19_1:AudioAction("play", "voice", "story_v_out_222041", "222041005", "story_v_out_222041.awb")
+						arg_21_1:AudioAction("play", "voice", "story_v_out_222041", "222041005", "story_v_out_222041.awb")
 					end
 
-					arg_19_1:RecordHistoryTalkVoice("story_v_out_222041", "222041005", "story_v_out_222041.awb")
+					arg_21_1:RecordHistoryTalkVoice("story_v_out_222041", "222041005", "story_v_out_222041.awb")
 				end
 
-				arg_19_1:RecordContent(arg_19_1.text_.text)
+				arg_21_1:RecordContent(arg_21_1.text_.text)
 			end
 
-			local var_22_22 = math.max(var_22_13, arg_19_1.talkMaxDuration)
+			local var_24_22 = math.max(var_24_13, arg_21_1.talkMaxDuration)
 
-			if var_22_12 <= arg_19_1.time_ and arg_19_1.time_ < var_22_12 + var_22_22 then
-				arg_19_1.typewritter.percent = (arg_19_1.time_ - var_22_12) / var_22_22
+			if var_24_12 <= arg_21_1.time_ and arg_21_1.time_ < var_24_12 + var_24_22 then
+				arg_21_1.typewritter.percent = (arg_21_1.time_ - var_24_12) / var_24_22
 
-				arg_19_1.typewritter:SetDirty()
+				arg_21_1.typewritter:SetDirty()
 			end
 
-			if arg_19_1.time_ >= var_22_12 + var_22_22 and arg_19_1.time_ < var_22_12 + var_22_22 + arg_22_0 then
-				arg_19_1.typewritter.percent = 1
+			if arg_21_1.time_ >= var_24_12 + var_24_22 and arg_21_1.time_ < var_24_12 + var_24_22 + arg_24_0 then
+				arg_21_1.typewritter.percent = 1
 
-				arg_19_1.typewritter:SetDirty()
-				arg_19_1:ShowNextGo(true)
+				arg_21_1.typewritter:SetDirty()
+				arg_21_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041006 = function(arg_23_0, arg_23_1)
-		arg_23_1.time_ = 0
-		arg_23_1.frameCnt_ = 0
-		arg_23_1.state_ = "playing"
-		arg_23_1.curTalkId_ = 222041006
-		arg_23_1.duration_ = 4.7
+	Play222041006 = function(arg_25_0, arg_25_1)
+		arg_25_1.time_ = 0
+		arg_25_1.frameCnt_ = 0
+		arg_25_1.state_ = "playing"
+		arg_25_1.curTalkId_ = 222041006
+		arg_25_1.duration_ = 4.7
 
-		local var_23_0 = {
+		local var_25_0 = {
 			ja = 4.7,
 			ko = 3.533,
 			zh = 3.533
 		}
-		local var_23_1 = manager.audio:GetLocalizationFlag()
+		local var_25_1 = manager.audio:GetLocalizationFlag()
 
-		if var_23_0[var_23_1] ~= nil then
-			arg_23_1.duration_ = var_23_0[var_23_1]
+		if var_25_0[var_25_1] ~= nil then
+			arg_25_1.duration_ = var_25_0[var_25_1]
 		end
 
-		SetActive(arg_23_1.tipsGo_, false)
+		SetActive(arg_25_1.tipsGo_, false)
 
-		function arg_23_1.onSingleLineFinish_()
-			arg_23_1.onSingleLineUpdate_ = nil
-			arg_23_1.onSingleLineFinish_ = nil
-			arg_23_1.state_ = "waiting"
+		function arg_25_1.onSingleLineFinish_()
+			arg_25_1.onSingleLineUpdate_ = nil
+			arg_25_1.onSingleLineFinish_ = nil
+			arg_25_1.state_ = "waiting"
 		end
 
-		function arg_23_1.playNext_(arg_25_0)
-			if arg_25_0 == 1 then
-				arg_23_0:Play222041007(arg_23_1)
+		function arg_25_1.playNext_(arg_27_0)
+			if arg_27_0 == 1 then
+				arg_25_0:Play222041007(arg_25_1)
 			end
 		end
 
-		function arg_23_1.onSingleLineUpdate_(arg_26_0)
-			local var_26_0 = arg_23_1.actors_["1074ui_story"]
-			local var_26_1 = 0
+		function arg_25_1.onSingleLineUpdate_(arg_28_0)
+			local var_28_0 = arg_25_1.actors_["1074ui_story"]
+			local var_28_1 = 0
 
-			if var_26_1 < arg_23_1.time_ and arg_23_1.time_ <= var_26_1 + arg_26_0 and arg_23_1.var_.characterEffect1074ui_story == nil then
-				arg_23_1.var_.characterEffect1074ui_story = var_26_0:GetComponentInChildren(typeof(CharacterEffect))
+			if var_28_1 < arg_25_1.time_ and arg_25_1.time_ <= var_28_1 + arg_28_0 and arg_25_1.var_.characterEffect1074ui_story == nil then
+				arg_25_1.var_.characterEffect1074ui_story = var_28_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_26_2 = 0.200000002980232
+			local var_28_2 = 0.200000002980232
 
-			if var_26_1 <= arg_23_1.time_ and arg_23_1.time_ < var_26_1 + var_26_2 then
-				local var_26_3 = (arg_23_1.time_ - var_26_1) / var_26_2
+			if var_28_1 <= arg_25_1.time_ and arg_25_1.time_ < var_28_1 + var_28_2 then
+				local var_28_3 = (arg_25_1.time_ - var_28_1) / var_28_2
 
-				if arg_23_1.var_.characterEffect1074ui_story then
-					arg_23_1.var_.characterEffect1074ui_story.fillFlat = false
+				if arg_25_1.var_.characterEffect1074ui_story then
+					arg_25_1.var_.characterEffect1074ui_story.fillFlat = false
 				end
 			end
 
-			if arg_23_1.time_ >= var_26_1 + var_26_2 and arg_23_1.time_ < var_26_1 + var_26_2 + arg_26_0 and arg_23_1.var_.characterEffect1074ui_story then
-				arg_23_1.var_.characterEffect1074ui_story.fillFlat = false
+			if arg_25_1.time_ >= var_28_1 + var_28_2 and arg_25_1.time_ < var_28_1 + var_28_2 + arg_28_0 and arg_25_1.var_.characterEffect1074ui_story then
+				arg_25_1.var_.characterEffect1074ui_story.fillFlat = false
 			end
 
-			local var_26_4 = 0
+			local var_28_4 = 0
 
-			if var_26_4 < arg_23_1.time_ and arg_23_1.time_ <= var_26_4 + arg_26_0 then
-				arg_23_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/story1074/story1074action/1074action1_1")
+			if var_28_4 < arg_25_1.time_ and arg_25_1.time_ <= var_28_4 + arg_28_0 then
+				arg_25_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/story1074/story1074action/1074action1_1")
 			end
 
-			local var_26_5 = 0
+			local var_28_5 = 0
 
-			if var_26_5 < arg_23_1.time_ and arg_23_1.time_ <= var_26_5 + arg_26_0 then
-				arg_23_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0102cva")
+			if var_28_5 < arg_25_1.time_ and arg_25_1.time_ <= var_28_5 + arg_28_0 then
+				arg_25_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0102cva")
 			end
 
-			local var_26_6 = arg_23_1.actors_["1070ui_story"]
-			local var_26_7 = 0
+			local var_28_6 = arg_25_1.actors_["1070ui_story"]
+			local var_28_7 = 0
 
-			if var_26_7 < arg_23_1.time_ and arg_23_1.time_ <= var_26_7 + arg_26_0 and arg_23_1.var_.characterEffect1070ui_story == nil then
-				arg_23_1.var_.characterEffect1070ui_story = var_26_6:GetComponentInChildren(typeof(CharacterEffect))
+			if var_28_7 < arg_25_1.time_ and arg_25_1.time_ <= var_28_7 + arg_28_0 and arg_25_1.var_.characterEffect1070ui_story == nil then
+				arg_25_1.var_.characterEffect1070ui_story = var_28_6:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_26_8 = 0.200000002980232
+			local var_28_8 = 0.200000002980232
 
-			if var_26_7 <= arg_23_1.time_ and arg_23_1.time_ < var_26_7 + var_26_8 then
-				local var_26_9 = (arg_23_1.time_ - var_26_7) / var_26_8
+			if var_28_7 <= arg_25_1.time_ and arg_25_1.time_ < var_28_7 + var_28_8 then
+				local var_28_9 = (arg_25_1.time_ - var_28_7) / var_28_8
 
-				if arg_23_1.var_.characterEffect1070ui_story then
-					local var_26_10 = Mathf.Lerp(0, 0.5, var_26_9)
+				if arg_25_1.var_.characterEffect1070ui_story then
+					local var_28_10 = Mathf.Lerp(0, 0.5, var_28_9)
 
-					arg_23_1.var_.characterEffect1070ui_story.fillFlat = true
-					arg_23_1.var_.characterEffect1070ui_story.fillRatio = var_26_10
+					arg_25_1.var_.characterEffect1070ui_story.fillFlat = true
+					arg_25_1.var_.characterEffect1070ui_story.fillRatio = var_28_10
 				end
 			end
 
-			if arg_23_1.time_ >= var_26_7 + var_26_8 and arg_23_1.time_ < var_26_7 + var_26_8 + arg_26_0 and arg_23_1.var_.characterEffect1070ui_story then
-				local var_26_11 = 0.5
+			if arg_25_1.time_ >= var_28_7 + var_28_8 and arg_25_1.time_ < var_28_7 + var_28_8 + arg_28_0 and arg_25_1.var_.characterEffect1070ui_story then
+				local var_28_11 = 0.5
 
-				arg_23_1.var_.characterEffect1070ui_story.fillFlat = true
-				arg_23_1.var_.characterEffect1070ui_story.fillRatio = var_26_11
+				arg_25_1.var_.characterEffect1070ui_story.fillFlat = true
+				arg_25_1.var_.characterEffect1070ui_story.fillRatio = var_28_11
 			end
 
-			local var_26_12 = 0
-			local var_26_13 = 0.2
+			local var_28_12 = 0
+			local var_28_13 = 0.2
 
-			if var_26_12 < arg_23_1.time_ and arg_23_1.time_ <= var_26_12 + arg_26_0 then
-				arg_23_1.talkMaxDuration = 0
-				arg_23_1.dialogCg_.alpha = 1
+			if var_28_12 < arg_25_1.time_ and arg_25_1.time_ <= var_28_12 + arg_28_0 then
+				arg_25_1.talkMaxDuration = 0
+				arg_25_1.dialogCg_.alpha = 1
 
-				arg_23_1.dialog_:SetActive(true)
-				SetActive(arg_23_1.leftNameGo_, true)
+				arg_25_1.dialog_:SetActive(true)
+				SetActive(arg_25_1.leftNameGo_, true)
 
-				local var_26_14 = arg_23_1:FormatText(StoryNameCfg[410].name)
+				local var_28_14 = arg_25_1:FormatText(StoryNameCfg[410].name)
 
-				arg_23_1.leftNameTxt_.text = var_26_14
+				arg_25_1.leftNameTxt_.text = var_28_14
 
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_23_1.leftNameTxt_.transform)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_25_1.leftNameTxt_.transform)
 
-				arg_23_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_23_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_25_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_25_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_23_1:RecordName(arg_23_1.leftNameTxt_.text)
-				SetActive(arg_23_1.iconTrs_.gameObject, false)
-				arg_23_1.callingController_:SetSelectedState("normal")
+				arg_25_1:RecordName(arg_25_1.leftNameTxt_.text)
+				SetActive(arg_25_1.iconTrs_.gameObject, false)
+				arg_25_1.callingController_:SetSelectedState("normal")
 
-				local var_26_15 = arg_23_1:GetWordFromCfg(222041006)
-				local var_26_16 = arg_23_1:FormatText(var_26_15.content)
+				local var_28_15 = arg_25_1:GetWordFromCfg(222041006)
+				local var_28_16 = arg_25_1:FormatText(var_28_15.content)
 
-				arg_23_1.text_.text = var_26_16
+				arg_25_1.text_.text = var_28_16
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_23_1.text_)
+				LuaForUtil.ClearLinePrefixSymbol(arg_25_1.text_)
 
-				local var_26_17 = 8
-				local var_26_18 = utf8.len(var_26_16)
-				local var_26_19 = var_26_17 <= 0 and var_26_13 or var_26_13 * (var_26_18 / var_26_17)
+				local var_28_17 = 8
+				local var_28_18 = utf8.len(var_28_16)
+				local var_28_19 = var_28_17 <= 0 and var_28_13 or var_28_13 * (var_28_18 / var_28_17)
 
-				if var_26_19 > 0 and var_26_13 < var_26_19 then
-					arg_23_1.talkMaxDuration = var_26_19
+				if var_28_19 > 0 and var_28_13 < var_28_19 then
+					arg_25_1.talkMaxDuration = var_28_19
 
-					if var_26_19 + var_26_12 > arg_23_1.duration_ then
-						arg_23_1.duration_ = var_26_19 + var_26_12
+					if var_28_19 + var_28_12 > arg_25_1.duration_ then
+						arg_25_1.duration_ = var_28_19 + var_28_12
 					end
 				end
 
-				arg_23_1.text_.text = var_26_16
-				arg_23_1.typewritter.percent = 0
+				arg_25_1.text_.text = var_28_16
+				arg_25_1.typewritter.percent = 0
 
-				arg_23_1.typewritter:SetDirty()
-				arg_23_1:ShowNextGo(false)
+				arg_25_1.typewritter:SetDirty()
+				arg_25_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_222041", "222041006", "story_v_out_222041.awb") ~= 0 then
-					local var_26_20 = manager.audio:GetVoiceLength("story_v_out_222041", "222041006", "story_v_out_222041.awb") / 1000
+					local var_28_20 = manager.audio:GetVoiceLength("story_v_out_222041", "222041006", "story_v_out_222041.awb") / 1000
 
-					if var_26_20 + var_26_12 > arg_23_1.duration_ then
-						arg_23_1.duration_ = var_26_20 + var_26_12
+					if var_28_20 + var_28_12 > arg_25_1.duration_ then
+						arg_25_1.duration_ = var_28_20 + var_28_12
 					end
 
-					if var_26_15.prefab_name ~= "" and arg_23_1.actors_[var_26_15.prefab_name] ~= nil then
-						local var_26_21 = LuaForUtil.PlayVoiceWithCriLipsync(arg_23_1.actors_[var_26_15.prefab_name].transform, "story_v_out_222041", "222041006", "story_v_out_222041.awb")
+					if var_28_15.prefab_name ~= "" and arg_25_1.actors_[var_28_15.prefab_name] ~= nil then
+						local var_28_21 = LuaForUtil.PlayVoiceWithCriLipsync(arg_25_1.actors_[var_28_15.prefab_name].transform, "story_v_out_222041", "222041006", "story_v_out_222041.awb")
 
-						arg_23_1:RecordAudio("222041006", var_26_21)
-						arg_23_1:RecordAudio("222041006", var_26_21)
+						arg_25_1:RecordAudio("222041006", var_28_21)
+						arg_25_1:RecordAudio("222041006", var_28_21)
 					else
-						arg_23_1:AudioAction("play", "voice", "story_v_out_222041", "222041006", "story_v_out_222041.awb")
+						arg_25_1:AudioAction("play", "voice", "story_v_out_222041", "222041006", "story_v_out_222041.awb")
 					end
 
-					arg_23_1:RecordHistoryTalkVoice("story_v_out_222041", "222041006", "story_v_out_222041.awb")
+					arg_25_1:RecordHistoryTalkVoice("story_v_out_222041", "222041006", "story_v_out_222041.awb")
 				end
 
-				arg_23_1:RecordContent(arg_23_1.text_.text)
+				arg_25_1:RecordContent(arg_25_1.text_.text)
 			end
 
-			local var_26_22 = math.max(var_26_13, arg_23_1.talkMaxDuration)
+			local var_28_22 = math.max(var_28_13, arg_25_1.talkMaxDuration)
 
-			if var_26_12 <= arg_23_1.time_ and arg_23_1.time_ < var_26_12 + var_26_22 then
-				arg_23_1.typewritter.percent = (arg_23_1.time_ - var_26_12) / var_26_22
+			if var_28_12 <= arg_25_1.time_ and arg_25_1.time_ < var_28_12 + var_28_22 then
+				arg_25_1.typewritter.percent = (arg_25_1.time_ - var_28_12) / var_28_22
 
-				arg_23_1.typewritter:SetDirty()
+				arg_25_1.typewritter:SetDirty()
 			end
 
-			if arg_23_1.time_ >= var_26_12 + var_26_22 and arg_23_1.time_ < var_26_12 + var_26_22 + arg_26_0 then
-				arg_23_1.typewritter.percent = 1
+			if arg_25_1.time_ >= var_28_12 + var_28_22 and arg_25_1.time_ < var_28_12 + var_28_22 + arg_28_0 then
+				arg_25_1.typewritter.percent = 1
 
-				arg_23_1.typewritter:SetDirty()
-				arg_23_1:ShowNextGo(true)
+				arg_25_1.typewritter:SetDirty()
+				arg_25_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041007 = function(arg_27_0, arg_27_1)
-		arg_27_1.time_ = 0
-		arg_27_1.frameCnt_ = 0
-		arg_27_1.state_ = "playing"
-		arg_27_1.curTalkId_ = 222041007
-		arg_27_1.duration_ = 5
+	Play222041007 = function(arg_29_0, arg_29_1)
+		arg_29_1.time_ = 0
+		arg_29_1.frameCnt_ = 0
+		arg_29_1.state_ = "playing"
+		arg_29_1.curTalkId_ = 222041007
+		arg_29_1.duration_ = 5
 
-		SetActive(arg_27_1.tipsGo_, false)
+		SetActive(arg_29_1.tipsGo_, false)
 
-		function arg_27_1.onSingleLineFinish_()
-			arg_27_1.onSingleLineUpdate_ = nil
-			arg_27_1.onSingleLineFinish_ = nil
-			arg_27_1.state_ = "waiting"
+		function arg_29_1.onSingleLineFinish_()
+			arg_29_1.onSingleLineUpdate_ = nil
+			arg_29_1.onSingleLineFinish_ = nil
+			arg_29_1.state_ = "waiting"
 		end
 
-		function arg_27_1.playNext_(arg_29_0)
-			if arg_29_0 == 1 then
-				arg_27_0:Play222041008(arg_27_1)
+		function arg_29_1.playNext_(arg_31_0)
+			if arg_31_0 == 1 then
+				arg_29_0:Play222041008(arg_29_1)
 			end
 		end
 
-		function arg_27_1.onSingleLineUpdate_(arg_30_0)
-			local var_30_0 = arg_27_1.actors_["1074ui_story"]
-			local var_30_1 = 0
+		function arg_29_1.onSingleLineUpdate_(arg_32_0)
+			local var_32_0 = arg_29_1.actors_["1074ui_story"]
+			local var_32_1 = 0
 
-			if var_30_1 < arg_27_1.time_ and arg_27_1.time_ <= var_30_1 + arg_30_0 and arg_27_1.var_.characterEffect1074ui_story == nil then
-				arg_27_1.var_.characterEffect1074ui_story = var_30_0:GetComponentInChildren(typeof(CharacterEffect))
+			if var_32_1 < arg_29_1.time_ and arg_29_1.time_ <= var_32_1 + arg_32_0 and arg_29_1.var_.characterEffect1074ui_story == nil then
+				arg_29_1.var_.characterEffect1074ui_story = var_32_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_30_2 = 0.200000002980232
+			local var_32_2 = 0.200000002980232
 
-			if var_30_1 <= arg_27_1.time_ and arg_27_1.time_ < var_30_1 + var_30_2 then
-				local var_30_3 = (arg_27_1.time_ - var_30_1) / var_30_2
+			if var_32_1 <= arg_29_1.time_ and arg_29_1.time_ < var_32_1 + var_32_2 then
+				local var_32_3 = (arg_29_1.time_ - var_32_1) / var_32_2
 
-				if arg_27_1.var_.characterEffect1074ui_story then
-					local var_30_4 = Mathf.Lerp(0, 0.5, var_30_3)
+				if arg_29_1.var_.characterEffect1074ui_story then
+					local var_32_4 = Mathf.Lerp(0, 0.5, var_32_3)
 
-					arg_27_1.var_.characterEffect1074ui_story.fillFlat = true
-					arg_27_1.var_.characterEffect1074ui_story.fillRatio = var_30_4
+					arg_29_1.var_.characterEffect1074ui_story.fillFlat = true
+					arg_29_1.var_.characterEffect1074ui_story.fillRatio = var_32_4
 				end
 			end
 
-			if arg_27_1.time_ >= var_30_1 + var_30_2 and arg_27_1.time_ < var_30_1 + var_30_2 + arg_30_0 and arg_27_1.var_.characterEffect1074ui_story then
-				local var_30_5 = 0.5
+			if arg_29_1.time_ >= var_32_1 + var_32_2 and arg_29_1.time_ < var_32_1 + var_32_2 + arg_32_0 and arg_29_1.var_.characterEffect1074ui_story then
+				local var_32_5 = 0.5
 
-				arg_27_1.var_.characterEffect1074ui_story.fillFlat = true
-				arg_27_1.var_.characterEffect1074ui_story.fillRatio = var_30_5
+				arg_29_1.var_.characterEffect1074ui_story.fillFlat = true
+				arg_29_1.var_.characterEffect1074ui_story.fillRatio = var_32_5
 			end
 
-			local var_30_6 = 0
-			local var_30_7 = 1.075
+			local var_32_6 = 0
+			local var_32_7 = 1.075
 
-			if var_30_6 < arg_27_1.time_ and arg_27_1.time_ <= var_30_6 + arg_30_0 then
-				arg_27_1.talkMaxDuration = 0
-				arg_27_1.dialogCg_.alpha = 1
+			if var_32_6 < arg_29_1.time_ and arg_29_1.time_ <= var_32_6 + arg_32_0 then
+				arg_29_1.talkMaxDuration = 0
+				arg_29_1.dialogCg_.alpha = 1
 
-				arg_27_1.dialog_:SetActive(true)
-				SetActive(arg_27_1.leftNameGo_, false)
+				arg_29_1.dialog_:SetActive(true)
+				SetActive(arg_29_1.leftNameGo_, false)
 
-				arg_27_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_27_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_29_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_29_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_27_1:RecordName(arg_27_1:FormatText(GetTips("TIP_NARRATOR")))
-				SetActive(arg_27_1.iconTrs_.gameObject, false)
-				arg_27_1.callingController_:SetSelectedState("normal")
+				arg_29_1:RecordName(arg_29_1:FormatText(GetTips("TIP_NARRATOR")))
+				SetActive(arg_29_1.iconTrs_.gameObject, false)
+				arg_29_1.callingController_:SetSelectedState("normal")
 
-				local var_30_8 = arg_27_1:GetWordFromCfg(222041007)
-				local var_30_9 = arg_27_1:FormatText(var_30_8.content)
+				local var_32_8 = arg_29_1:GetWordFromCfg(222041007)
+				local var_32_9 = arg_29_1:FormatText(var_32_8.content)
 
-				arg_27_1.text_.text = var_30_9
+				arg_29_1.text_.text = var_32_9
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_27_1.text_)
+				LuaForUtil.ClearLinePrefixSymbol(arg_29_1.text_)
 
-				local var_30_10 = 43
-				local var_30_11 = utf8.len(var_30_9)
-				local var_30_12 = var_30_10 <= 0 and var_30_7 or var_30_7 * (var_30_11 / var_30_10)
+				local var_32_10 = 43
+				local var_32_11 = utf8.len(var_32_9)
+				local var_32_12 = var_32_10 <= 0 and var_32_7 or var_32_7 * (var_32_11 / var_32_10)
 
-				if var_30_12 > 0 and var_30_7 < var_30_12 then
-					arg_27_1.talkMaxDuration = var_30_12
+				if var_32_12 > 0 and var_32_7 < var_32_12 then
+					arg_29_1.talkMaxDuration = var_32_12
 
-					if var_30_12 + var_30_6 > arg_27_1.duration_ then
-						arg_27_1.duration_ = var_30_12 + var_30_6
+					if var_32_12 + var_32_6 > arg_29_1.duration_ then
+						arg_29_1.duration_ = var_32_12 + var_32_6
 					end
 				end
 
-				arg_27_1.text_.text = var_30_9
-				arg_27_1.typewritter.percent = 0
+				arg_29_1.text_.text = var_32_9
+				arg_29_1.typewritter.percent = 0
 
-				arg_27_1.typewritter:SetDirty()
-				arg_27_1:ShowNextGo(false)
-				arg_27_1:RecordContent(arg_27_1.text_.text)
+				arg_29_1.typewritter:SetDirty()
+				arg_29_1:ShowNextGo(false)
+				arg_29_1:RecordContent(arg_29_1.text_.text)
 			end
 
-			local var_30_13 = math.max(var_30_7, arg_27_1.talkMaxDuration)
+			local var_32_13 = math.max(var_32_7, arg_29_1.talkMaxDuration)
 
-			if var_30_6 <= arg_27_1.time_ and arg_27_1.time_ < var_30_6 + var_30_13 then
-				arg_27_1.typewritter.percent = (arg_27_1.time_ - var_30_6) / var_30_13
+			if var_32_6 <= arg_29_1.time_ and arg_29_1.time_ < var_32_6 + var_32_13 then
+				arg_29_1.typewritter.percent = (arg_29_1.time_ - var_32_6) / var_32_13
 
-				arg_27_1.typewritter:SetDirty()
+				arg_29_1.typewritter:SetDirty()
 			end
 
-			if arg_27_1.time_ >= var_30_6 + var_30_13 and arg_27_1.time_ < var_30_6 + var_30_13 + arg_30_0 then
-				arg_27_1.typewritter.percent = 1
+			if arg_29_1.time_ >= var_32_6 + var_32_13 and arg_29_1.time_ < var_32_6 + var_32_13 + arg_32_0 then
+				arg_29_1.typewritter.percent = 1
 
-				arg_27_1.typewritter:SetDirty()
-				arg_27_1:ShowNextGo(true)
+				arg_29_1.typewritter:SetDirty()
+				arg_29_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041008 = function(arg_31_0, arg_31_1)
-		arg_31_1.time_ = 0
-		arg_31_1.frameCnt_ = 0
-		arg_31_1.state_ = "playing"
-		arg_31_1.curTalkId_ = 222041008
-		arg_31_1.duration_ = 20.166
+	Play222041008 = function(arg_33_0, arg_33_1)
+		arg_33_1.time_ = 0
+		arg_33_1.frameCnt_ = 0
+		arg_33_1.state_ = "playing"
+		arg_33_1.curTalkId_ = 222041008
+		arg_33_1.duration_ = 20.17
 
-		local var_31_0 = {
+		local var_33_0 = {
 			ja = 20.166,
 			ko = 12.466,
 			zh = 12.466
 		}
-		local var_31_1 = manager.audio:GetLocalizationFlag()
+		local var_33_1 = manager.audio:GetLocalizationFlag()
 
-		if var_31_0[var_31_1] ~= nil then
-			arg_31_1.duration_ = var_31_0[var_31_1]
+		if var_33_0[var_33_1] ~= nil then
+			arg_33_1.duration_ = var_33_0[var_33_1]
 		end
 
-		SetActive(arg_31_1.tipsGo_, false)
+		SetActive(arg_33_1.tipsGo_, false)
 
-		function arg_31_1.onSingleLineFinish_()
-			arg_31_1.onSingleLineUpdate_ = nil
-			arg_31_1.onSingleLineFinish_ = nil
-			arg_31_1.state_ = "waiting"
+		function arg_33_1.onSingleLineFinish_()
+			arg_33_1.onSingleLineUpdate_ = nil
+			arg_33_1.onSingleLineFinish_ = nil
+			arg_33_1.state_ = "waiting"
 		end
 
-		function arg_31_1.playNext_(arg_33_0)
-			if arg_33_0 == 1 then
-				arg_31_0:Play222041009(arg_31_1)
+		function arg_33_1.playNext_(arg_35_0)
+			if arg_35_0 == 1 then
+				arg_33_0:Play222041009(arg_33_1)
 			end
 		end
 
-		function arg_31_1.onSingleLineUpdate_(arg_34_0)
-			local var_34_0 = arg_31_1.actors_["1070ui_story"]
-			local var_34_1 = 0
+		function arg_33_1.onSingleLineUpdate_(arg_36_0)
+			local var_36_0 = arg_33_1.actors_["1070ui_story"]
+			local var_36_1 = 0
 
-			if var_34_1 < arg_31_1.time_ and arg_31_1.time_ <= var_34_1 + arg_34_0 and arg_31_1.var_.characterEffect1070ui_story == nil then
-				arg_31_1.var_.characterEffect1070ui_story = var_34_0:GetComponentInChildren(typeof(CharacterEffect))
+			if var_36_1 < arg_33_1.time_ and arg_33_1.time_ <= var_36_1 + arg_36_0 and arg_33_1.var_.characterEffect1070ui_story == nil then
+				arg_33_1.var_.characterEffect1070ui_story = var_36_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_34_2 = 0.200000002980232
+			local var_36_2 = 0.200000002980232
 
-			if var_34_1 <= arg_31_1.time_ and arg_31_1.time_ < var_34_1 + var_34_2 then
-				local var_34_3 = (arg_31_1.time_ - var_34_1) / var_34_2
+			if var_36_1 <= arg_33_1.time_ and arg_33_1.time_ < var_36_1 + var_36_2 then
+				local var_36_3 = (arg_33_1.time_ - var_36_1) / var_36_2
 
-				if arg_31_1.var_.characterEffect1070ui_story then
-					arg_31_1.var_.characterEffect1070ui_story.fillFlat = false
+				if arg_33_1.var_.characterEffect1070ui_story then
+					arg_33_1.var_.characterEffect1070ui_story.fillFlat = false
 				end
 			end
 
-			if arg_31_1.time_ >= var_34_1 + var_34_2 and arg_31_1.time_ < var_34_1 + var_34_2 + arg_34_0 and arg_31_1.var_.characterEffect1070ui_story then
-				arg_31_1.var_.characterEffect1070ui_story.fillFlat = false
+			if arg_33_1.time_ >= var_36_1 + var_36_2 and arg_33_1.time_ < var_36_1 + var_36_2 + arg_36_0 and arg_33_1.var_.characterEffect1070ui_story then
+				arg_33_1.var_.characterEffect1070ui_story.fillFlat = false
 			end
 
-			local var_34_4 = 0
+			local var_36_4 = 0
 
-			if var_34_4 < arg_31_1.time_ and arg_31_1.time_ <= var_34_4 + arg_34_0 then
-				arg_31_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/story1070/story1070action/1070action7_2")
+			if var_36_4 < arg_33_1.time_ and arg_33_1.time_ <= var_36_4 + arg_36_0 then
+				arg_33_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/story1070/story1070action/1070action7_2")
 			end
 
-			local var_34_5 = 0
+			local var_36_5 = 0
 
-			if var_34_5 < arg_31_1.time_ and arg_31_1.time_ <= var_34_5 + arg_34_0 then
-				arg_31_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0102cva")
+			if var_36_5 < arg_33_1.time_ and arg_33_1.time_ <= var_36_5 + arg_36_0 then
+				arg_33_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0102cva")
 			end
 
-			local var_34_6 = 0
-			local var_34_7 = 1.275
+			local var_36_6 = 0
+			local var_36_7 = 1.275
 
-			if var_34_6 < arg_31_1.time_ and arg_31_1.time_ <= var_34_6 + arg_34_0 then
-				arg_31_1.talkMaxDuration = 0
-				arg_31_1.dialogCg_.alpha = 1
+			if var_36_6 < arg_33_1.time_ and arg_33_1.time_ <= var_36_6 + arg_36_0 then
+				arg_33_1.talkMaxDuration = 0
+				arg_33_1.dialogCg_.alpha = 1
 
-				arg_31_1.dialog_:SetActive(true)
-				SetActive(arg_31_1.leftNameGo_, true)
+				arg_33_1.dialog_:SetActive(true)
+				SetActive(arg_33_1.leftNameGo_, true)
 
-				local var_34_8 = arg_31_1:FormatText(StoryNameCfg[318].name)
+				local var_36_8 = arg_33_1:FormatText(StoryNameCfg[318].name)
 
-				arg_31_1.leftNameTxt_.text = var_34_8
+				arg_33_1.leftNameTxt_.text = var_36_8
 
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_31_1.leftNameTxt_.transform)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_33_1.leftNameTxt_.transform)
 
-				arg_31_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_31_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_33_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_33_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_31_1:RecordName(arg_31_1.leftNameTxt_.text)
-				SetActive(arg_31_1.iconTrs_.gameObject, false)
-				arg_31_1.callingController_:SetSelectedState("normal")
+				arg_33_1:RecordName(arg_33_1.leftNameTxt_.text)
+				SetActive(arg_33_1.iconTrs_.gameObject, false)
+				arg_33_1.callingController_:SetSelectedState("normal")
 
-				local var_34_9 = arg_31_1:GetWordFromCfg(222041008)
-				local var_34_10 = arg_31_1:FormatText(var_34_9.content)
+				local var_36_9 = arg_33_1:GetWordFromCfg(222041008)
+				local var_36_10 = arg_33_1:FormatText(var_36_9.content)
 
-				arg_31_1.text_.text = var_34_10
+				arg_33_1.text_.text = var_36_10
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_31_1.text_)
+				LuaForUtil.ClearLinePrefixSymbol(arg_33_1.text_)
 
-				local var_34_11 = 51
-				local var_34_12 = utf8.len(var_34_10)
-				local var_34_13 = var_34_11 <= 0 and var_34_7 or var_34_7 * (var_34_12 / var_34_11)
+				local var_36_11 = 51
+				local var_36_12 = utf8.len(var_36_10)
+				local var_36_13 = var_36_11 <= 0 and var_36_7 or var_36_7 * (var_36_12 / var_36_11)
 
-				if var_34_13 > 0 and var_34_7 < var_34_13 then
-					arg_31_1.talkMaxDuration = var_34_13
+				if var_36_13 > 0 and var_36_7 < var_36_13 then
+					arg_33_1.talkMaxDuration = var_36_13
 
-					if var_34_13 + var_34_6 > arg_31_1.duration_ then
-						arg_31_1.duration_ = var_34_13 + var_34_6
+					if var_36_13 + var_36_6 > arg_33_1.duration_ then
+						arg_33_1.duration_ = var_36_13 + var_36_6
 					end
 				end
 
-				arg_31_1.text_.text = var_34_10
-				arg_31_1.typewritter.percent = 0
+				arg_33_1.text_.text = var_36_10
+				arg_33_1.typewritter.percent = 0
 
-				arg_31_1.typewritter:SetDirty()
-				arg_31_1:ShowNextGo(false)
+				arg_33_1.typewritter:SetDirty()
+				arg_33_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_222041", "222041008", "story_v_out_222041.awb") ~= 0 then
-					local var_34_14 = manager.audio:GetVoiceLength("story_v_out_222041", "222041008", "story_v_out_222041.awb") / 1000
+					local var_36_14 = manager.audio:GetVoiceLength("story_v_out_222041", "222041008", "story_v_out_222041.awb") / 1000
 
-					if var_34_14 + var_34_6 > arg_31_1.duration_ then
-						arg_31_1.duration_ = var_34_14 + var_34_6
+					if var_36_14 + var_36_6 > arg_33_1.duration_ then
+						arg_33_1.duration_ = var_36_14 + var_36_6
 					end
 
-					if var_34_9.prefab_name ~= "" and arg_31_1.actors_[var_34_9.prefab_name] ~= nil then
-						local var_34_15 = LuaForUtil.PlayVoiceWithCriLipsync(arg_31_1.actors_[var_34_9.prefab_name].transform, "story_v_out_222041", "222041008", "story_v_out_222041.awb")
+					if var_36_9.prefab_name ~= "" and arg_33_1.actors_[var_36_9.prefab_name] ~= nil then
+						local var_36_15 = LuaForUtil.PlayVoiceWithCriLipsync(arg_33_1.actors_[var_36_9.prefab_name].transform, "story_v_out_222041", "222041008", "story_v_out_222041.awb")
 
-						arg_31_1:RecordAudio("222041008", var_34_15)
-						arg_31_1:RecordAudio("222041008", var_34_15)
+						arg_33_1:RecordAudio("222041008", var_36_15)
+						arg_33_1:RecordAudio("222041008", var_36_15)
 					else
-						arg_31_1:AudioAction("play", "voice", "story_v_out_222041", "222041008", "story_v_out_222041.awb")
+						arg_33_1:AudioAction("play", "voice", "story_v_out_222041", "222041008", "story_v_out_222041.awb")
 					end
 
-					arg_31_1:RecordHistoryTalkVoice("story_v_out_222041", "222041008", "story_v_out_222041.awb")
+					arg_33_1:RecordHistoryTalkVoice("story_v_out_222041", "222041008", "story_v_out_222041.awb")
 				end
 
-				arg_31_1:RecordContent(arg_31_1.text_.text)
+				arg_33_1:RecordContent(arg_33_1.text_.text)
 			end
 
-			local var_34_16 = math.max(var_34_7, arg_31_1.talkMaxDuration)
+			local var_36_16 = math.max(var_36_7, arg_33_1.talkMaxDuration)
 
-			if var_34_6 <= arg_31_1.time_ and arg_31_1.time_ < var_34_6 + var_34_16 then
-				arg_31_1.typewritter.percent = (arg_31_1.time_ - var_34_6) / var_34_16
+			if var_36_6 <= arg_33_1.time_ and arg_33_1.time_ < var_36_6 + var_36_16 then
+				arg_33_1.typewritter.percent = (arg_33_1.time_ - var_36_6) / var_36_16
 
-				arg_31_1.typewritter:SetDirty()
+				arg_33_1.typewritter:SetDirty()
 			end
 
-			if arg_31_1.time_ >= var_34_6 + var_34_16 and arg_31_1.time_ < var_34_6 + var_34_16 + arg_34_0 then
-				arg_31_1.typewritter.percent = 1
+			if arg_33_1.time_ >= var_36_6 + var_36_16 and arg_33_1.time_ < var_36_6 + var_36_16 + arg_36_0 then
+				arg_33_1.typewritter.percent = 1
 
-				arg_31_1.typewritter:SetDirty()
-				arg_31_1:ShowNextGo(true)
+				arg_33_1.typewritter:SetDirty()
+				arg_33_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041009 = function(arg_35_0, arg_35_1)
-		arg_35_1.time_ = 0
-		arg_35_1.frameCnt_ = 0
-		arg_35_1.state_ = "playing"
-		arg_35_1.curTalkId_ = 222041009
-		arg_35_1.duration_ = 7.566
+	Play222041009 = function(arg_37_0, arg_37_1)
+		arg_37_1.time_ = 0
+		arg_37_1.frameCnt_ = 0
+		arg_37_1.state_ = "playing"
+		arg_37_1.curTalkId_ = 222041009
+		arg_37_1.duration_ = 7.57
 
-		local var_35_0 = {
+		local var_37_0 = {
 			ja = 7.566,
 			ko = 4.733,
 			zh = 4.733
 		}
-		local var_35_1 = manager.audio:GetLocalizationFlag()
+		local var_37_1 = manager.audio:GetLocalizationFlag()
 
-		if var_35_0[var_35_1] ~= nil then
-			arg_35_1.duration_ = var_35_0[var_35_1]
+		if var_37_0[var_37_1] ~= nil then
+			arg_37_1.duration_ = var_37_0[var_37_1]
 		end
 
-		SetActive(arg_35_1.tipsGo_, false)
+		SetActive(arg_37_1.tipsGo_, false)
 
-		function arg_35_1.onSingleLineFinish_()
-			arg_35_1.onSingleLineUpdate_ = nil
-			arg_35_1.onSingleLineFinish_ = nil
-			arg_35_1.state_ = "waiting"
+		function arg_37_1.onSingleLineFinish_()
+			arg_37_1.onSingleLineUpdate_ = nil
+			arg_37_1.onSingleLineFinish_ = nil
+			arg_37_1.state_ = "waiting"
 		end
 
-		function arg_35_1.playNext_(arg_37_0)
-			if arg_37_0 == 1 then
-				arg_35_0:Play222041010(arg_35_1)
+		function arg_37_1.playNext_(arg_39_0)
+			if arg_39_0 == 1 then
+				arg_37_0:Play222041010(arg_37_1)
 			end
 		end
 
-		function arg_35_1.onSingleLineUpdate_(arg_38_0)
-			local var_38_0 = arg_35_1.actors_["1074ui_story"]
-			local var_38_1 = 0
+		function arg_37_1.onSingleLineUpdate_(arg_40_0)
+			local var_40_0 = arg_37_1.actors_["1074ui_story"]
+			local var_40_1 = 0
 
-			if var_38_1 < arg_35_1.time_ and arg_35_1.time_ <= var_38_1 + arg_38_0 and arg_35_1.var_.characterEffect1074ui_story == nil then
-				arg_35_1.var_.characterEffect1074ui_story = var_38_0:GetComponentInChildren(typeof(CharacterEffect))
+			if var_40_1 < arg_37_1.time_ and arg_37_1.time_ <= var_40_1 + arg_40_0 and arg_37_1.var_.characterEffect1074ui_story == nil then
+				arg_37_1.var_.characterEffect1074ui_story = var_40_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_38_2 = 0.200000002980232
+			local var_40_2 = 0.200000002980232
 
-			if var_38_1 <= arg_35_1.time_ and arg_35_1.time_ < var_38_1 + var_38_2 then
-				local var_38_3 = (arg_35_1.time_ - var_38_1) / var_38_2
+			if var_40_1 <= arg_37_1.time_ and arg_37_1.time_ < var_40_1 + var_40_2 then
+				local var_40_3 = (arg_37_1.time_ - var_40_1) / var_40_2
 
-				if arg_35_1.var_.characterEffect1074ui_story then
-					arg_35_1.var_.characterEffect1074ui_story.fillFlat = false
+				if arg_37_1.var_.characterEffect1074ui_story then
+					arg_37_1.var_.characterEffect1074ui_story.fillFlat = false
 				end
 			end
 
-			if arg_35_1.time_ >= var_38_1 + var_38_2 and arg_35_1.time_ < var_38_1 + var_38_2 + arg_38_0 and arg_35_1.var_.characterEffect1074ui_story then
-				arg_35_1.var_.characterEffect1074ui_story.fillFlat = false
+			if arg_37_1.time_ >= var_40_1 + var_40_2 and arg_37_1.time_ < var_40_1 + var_40_2 + arg_40_0 and arg_37_1.var_.characterEffect1074ui_story then
+				arg_37_1.var_.characterEffect1074ui_story.fillFlat = false
 			end
 
-			local var_38_4 = 0
+			local var_40_4 = 0
 
-			if var_38_4 < arg_35_1.time_ and arg_35_1.time_ <= var_38_4 + arg_38_0 then
-				arg_35_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/story1074/story1074action/1074action1_1")
+			if var_40_4 < arg_37_1.time_ and arg_37_1.time_ <= var_40_4 + arg_40_0 then
+				arg_37_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/story1074/story1074action/1074action1_1")
 			end
 
-			local var_38_5 = 0
+			local var_40_5 = 0
 
-			if var_38_5 < arg_35_1.time_ and arg_35_1.time_ <= var_38_5 + arg_38_0 then
-				arg_35_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0102cva")
+			if var_40_5 < arg_37_1.time_ and arg_37_1.time_ <= var_40_5 + arg_40_0 then
+				arg_37_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0102cva")
 			end
 
-			local var_38_6 = arg_35_1.actors_["1070ui_story"]
-			local var_38_7 = 0
+			local var_40_6 = arg_37_1.actors_["1070ui_story"]
+			local var_40_7 = 0
 
-			if var_38_7 < arg_35_1.time_ and arg_35_1.time_ <= var_38_7 + arg_38_0 and arg_35_1.var_.characterEffect1070ui_story == nil then
-				arg_35_1.var_.characterEffect1070ui_story = var_38_6:GetComponentInChildren(typeof(CharacterEffect))
+			if var_40_7 < arg_37_1.time_ and arg_37_1.time_ <= var_40_7 + arg_40_0 and arg_37_1.var_.characterEffect1070ui_story == nil then
+				arg_37_1.var_.characterEffect1070ui_story = var_40_6:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_38_8 = 0.200000002980232
+			local var_40_8 = 0.200000002980232
 
-			if var_38_7 <= arg_35_1.time_ and arg_35_1.time_ < var_38_7 + var_38_8 then
-				local var_38_9 = (arg_35_1.time_ - var_38_7) / var_38_8
+			if var_40_7 <= arg_37_1.time_ and arg_37_1.time_ < var_40_7 + var_40_8 then
+				local var_40_9 = (arg_37_1.time_ - var_40_7) / var_40_8
 
-				if arg_35_1.var_.characterEffect1070ui_story then
-					local var_38_10 = Mathf.Lerp(0, 0.5, var_38_9)
+				if arg_37_1.var_.characterEffect1070ui_story then
+					local var_40_10 = Mathf.Lerp(0, 0.5, var_40_9)
 
-					arg_35_1.var_.characterEffect1070ui_story.fillFlat = true
-					arg_35_1.var_.characterEffect1070ui_story.fillRatio = var_38_10
+					arg_37_1.var_.characterEffect1070ui_story.fillFlat = true
+					arg_37_1.var_.characterEffect1070ui_story.fillRatio = var_40_10
 				end
 			end
 
-			if arg_35_1.time_ >= var_38_7 + var_38_8 and arg_35_1.time_ < var_38_7 + var_38_8 + arg_38_0 and arg_35_1.var_.characterEffect1070ui_story then
-				local var_38_11 = 0.5
+			if arg_37_1.time_ >= var_40_7 + var_40_8 and arg_37_1.time_ < var_40_7 + var_40_8 + arg_40_0 and arg_37_1.var_.characterEffect1070ui_story then
+				local var_40_11 = 0.5
 
-				arg_35_1.var_.characterEffect1070ui_story.fillFlat = true
-				arg_35_1.var_.characterEffect1070ui_story.fillRatio = var_38_11
+				arg_37_1.var_.characterEffect1070ui_story.fillFlat = true
+				arg_37_1.var_.characterEffect1070ui_story.fillRatio = var_40_11
 			end
 
-			local var_38_12 = 0
-			local var_38_13 = 0.3
+			local var_40_12 = 0
+			local var_40_13 = 0.3
 
-			if var_38_12 < arg_35_1.time_ and arg_35_1.time_ <= var_38_12 + arg_38_0 then
-				arg_35_1.talkMaxDuration = 0
-				arg_35_1.dialogCg_.alpha = 1
+			if var_40_12 < arg_37_1.time_ and arg_37_1.time_ <= var_40_12 + arg_40_0 then
+				arg_37_1.talkMaxDuration = 0
+				arg_37_1.dialogCg_.alpha = 1
 
-				arg_35_1.dialog_:SetActive(true)
-				SetActive(arg_35_1.leftNameGo_, true)
+				arg_37_1.dialog_:SetActive(true)
+				SetActive(arg_37_1.leftNameGo_, true)
 
-				local var_38_14 = arg_35_1:FormatText(StoryNameCfg[410].name)
+				local var_40_14 = arg_37_1:FormatText(StoryNameCfg[410].name)
 
-				arg_35_1.leftNameTxt_.text = var_38_14
+				arg_37_1.leftNameTxt_.text = var_40_14
 
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_35_1.leftNameTxt_.transform)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_37_1.leftNameTxt_.transform)
 
-				arg_35_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_35_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_37_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_37_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_35_1:RecordName(arg_35_1.leftNameTxt_.text)
-				SetActive(arg_35_1.iconTrs_.gameObject, false)
-				arg_35_1.callingController_:SetSelectedState("normal")
+				arg_37_1:RecordName(arg_37_1.leftNameTxt_.text)
+				SetActive(arg_37_1.iconTrs_.gameObject, false)
+				arg_37_1.callingController_:SetSelectedState("normal")
 
-				local var_38_15 = arg_35_1:GetWordFromCfg(222041009)
-				local var_38_16 = arg_35_1:FormatText(var_38_15.content)
+				local var_40_15 = arg_37_1:GetWordFromCfg(222041009)
+				local var_40_16 = arg_37_1:FormatText(var_40_15.content)
 
-				arg_35_1.text_.text = var_38_16
+				arg_37_1.text_.text = var_40_16
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_35_1.text_)
+				LuaForUtil.ClearLinePrefixSymbol(arg_37_1.text_)
 
-				local var_38_17 = 12
-				local var_38_18 = utf8.len(var_38_16)
-				local var_38_19 = var_38_17 <= 0 and var_38_13 or var_38_13 * (var_38_18 / var_38_17)
+				local var_40_17 = 12
+				local var_40_18 = utf8.len(var_40_16)
+				local var_40_19 = var_40_17 <= 0 and var_40_13 or var_40_13 * (var_40_18 / var_40_17)
 
-				if var_38_19 > 0 and var_38_13 < var_38_19 then
-					arg_35_1.talkMaxDuration = var_38_19
+				if var_40_19 > 0 and var_40_13 < var_40_19 then
+					arg_37_1.talkMaxDuration = var_40_19
 
-					if var_38_19 + var_38_12 > arg_35_1.duration_ then
-						arg_35_1.duration_ = var_38_19 + var_38_12
+					if var_40_19 + var_40_12 > arg_37_1.duration_ then
+						arg_37_1.duration_ = var_40_19 + var_40_12
 					end
 				end
 
-				arg_35_1.text_.text = var_38_16
-				arg_35_1.typewritter.percent = 0
+				arg_37_1.text_.text = var_40_16
+				arg_37_1.typewritter.percent = 0
 
-				arg_35_1.typewritter:SetDirty()
-				arg_35_1:ShowNextGo(false)
+				arg_37_1.typewritter:SetDirty()
+				arg_37_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_222041", "222041009", "story_v_out_222041.awb") ~= 0 then
-					local var_38_20 = manager.audio:GetVoiceLength("story_v_out_222041", "222041009", "story_v_out_222041.awb") / 1000
+					local var_40_20 = manager.audio:GetVoiceLength("story_v_out_222041", "222041009", "story_v_out_222041.awb") / 1000
 
-					if var_38_20 + var_38_12 > arg_35_1.duration_ then
-						arg_35_1.duration_ = var_38_20 + var_38_12
+					if var_40_20 + var_40_12 > arg_37_1.duration_ then
+						arg_37_1.duration_ = var_40_20 + var_40_12
 					end
 
-					if var_38_15.prefab_name ~= "" and arg_35_1.actors_[var_38_15.prefab_name] ~= nil then
-						local var_38_21 = LuaForUtil.PlayVoiceWithCriLipsync(arg_35_1.actors_[var_38_15.prefab_name].transform, "story_v_out_222041", "222041009", "story_v_out_222041.awb")
+					if var_40_15.prefab_name ~= "" and arg_37_1.actors_[var_40_15.prefab_name] ~= nil then
+						local var_40_21 = LuaForUtil.PlayVoiceWithCriLipsync(arg_37_1.actors_[var_40_15.prefab_name].transform, "story_v_out_222041", "222041009", "story_v_out_222041.awb")
 
-						arg_35_1:RecordAudio("222041009", var_38_21)
-						arg_35_1:RecordAudio("222041009", var_38_21)
+						arg_37_1:RecordAudio("222041009", var_40_21)
+						arg_37_1:RecordAudio("222041009", var_40_21)
 					else
-						arg_35_1:AudioAction("play", "voice", "story_v_out_222041", "222041009", "story_v_out_222041.awb")
+						arg_37_1:AudioAction("play", "voice", "story_v_out_222041", "222041009", "story_v_out_222041.awb")
 					end
 
-					arg_35_1:RecordHistoryTalkVoice("story_v_out_222041", "222041009", "story_v_out_222041.awb")
+					arg_37_1:RecordHistoryTalkVoice("story_v_out_222041", "222041009", "story_v_out_222041.awb")
 				end
 
-				arg_35_1:RecordContent(arg_35_1.text_.text)
+				arg_37_1:RecordContent(arg_37_1.text_.text)
 			end
 
-			local var_38_22 = math.max(var_38_13, arg_35_1.talkMaxDuration)
+			local var_40_22 = math.max(var_40_13, arg_37_1.talkMaxDuration)
 
-			if var_38_12 <= arg_35_1.time_ and arg_35_1.time_ < var_38_12 + var_38_22 then
-				arg_35_1.typewritter.percent = (arg_35_1.time_ - var_38_12) / var_38_22
+			if var_40_12 <= arg_37_1.time_ and arg_37_1.time_ < var_40_12 + var_40_22 then
+				arg_37_1.typewritter.percent = (arg_37_1.time_ - var_40_12) / var_40_22
 
-				arg_35_1.typewritter:SetDirty()
+				arg_37_1.typewritter:SetDirty()
 			end
 
-			if arg_35_1.time_ >= var_38_12 + var_38_22 and arg_35_1.time_ < var_38_12 + var_38_22 + arg_38_0 then
-				arg_35_1.typewritter.percent = 1
+			if arg_37_1.time_ >= var_40_12 + var_40_22 and arg_37_1.time_ < var_40_12 + var_40_22 + arg_40_0 then
+				arg_37_1.typewritter.percent = 1
 
-				arg_35_1.typewritter:SetDirty()
-				arg_35_1:ShowNextGo(true)
+				arg_37_1.typewritter:SetDirty()
+				arg_37_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041010 = function(arg_39_0, arg_39_1)
-		arg_39_1.time_ = 0
-		arg_39_1.frameCnt_ = 0
-		arg_39_1.state_ = "playing"
-		arg_39_1.curTalkId_ = 222041010
-		arg_39_1.duration_ = 14.3
+	Play222041010 = function(arg_41_0, arg_41_1)
+		arg_41_1.time_ = 0
+		arg_41_1.frameCnt_ = 0
+		arg_41_1.state_ = "playing"
+		arg_41_1.curTalkId_ = 222041010
+		arg_41_1.duration_ = 14.3
 
-		local var_39_0 = {
+		local var_41_0 = {
 			ja = 14.3,
 			ko = 9.066,
 			zh = 9.066
 		}
-		local var_39_1 = manager.audio:GetLocalizationFlag()
+		local var_41_1 = manager.audio:GetLocalizationFlag()
 
-		if var_39_0[var_39_1] ~= nil then
-			arg_39_1.duration_ = var_39_0[var_39_1]
+		if var_41_0[var_41_1] ~= nil then
+			arg_41_1.duration_ = var_41_0[var_41_1]
 		end
 
-		SetActive(arg_39_1.tipsGo_, false)
+		SetActive(arg_41_1.tipsGo_, false)
 
-		function arg_39_1.onSingleLineFinish_()
-			arg_39_1.onSingleLineUpdate_ = nil
-			arg_39_1.onSingleLineFinish_ = nil
-			arg_39_1.state_ = "waiting"
+		function arg_41_1.onSingleLineFinish_()
+			arg_41_1.onSingleLineUpdate_ = nil
+			arg_41_1.onSingleLineFinish_ = nil
+			arg_41_1.state_ = "waiting"
 		end
 
-		function arg_39_1.playNext_(arg_41_0)
-			if arg_41_0 == 1 then
-				arg_39_0:Play222041011(arg_39_1)
+		function arg_41_1.playNext_(arg_43_0)
+			if arg_43_0 == 1 then
+				arg_41_0:Play222041011(arg_41_1)
 			end
 		end
 
-		function arg_39_1.onSingleLineUpdate_(arg_42_0)
-			local var_42_0 = arg_39_1.actors_["1070ui_story"]
-			local var_42_1 = 0
+		function arg_41_1.onSingleLineUpdate_(arg_44_0)
+			local var_44_0 = arg_41_1.actors_["1070ui_story"]
+			local var_44_1 = 0
 
-			if var_42_1 < arg_39_1.time_ and arg_39_1.time_ <= var_42_1 + arg_42_0 and arg_39_1.var_.characterEffect1070ui_story == nil then
-				arg_39_1.var_.characterEffect1070ui_story = var_42_0:GetComponentInChildren(typeof(CharacterEffect))
+			if var_44_1 < arg_41_1.time_ and arg_41_1.time_ <= var_44_1 + arg_44_0 and arg_41_1.var_.characterEffect1070ui_story == nil then
+				arg_41_1.var_.characterEffect1070ui_story = var_44_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_42_2 = 0.200000002980232
+			local var_44_2 = 0.200000002980232
 
-			if var_42_1 <= arg_39_1.time_ and arg_39_1.time_ < var_42_1 + var_42_2 then
-				local var_42_3 = (arg_39_1.time_ - var_42_1) / var_42_2
+			if var_44_1 <= arg_41_1.time_ and arg_41_1.time_ < var_44_1 + var_44_2 then
+				local var_44_3 = (arg_41_1.time_ - var_44_1) / var_44_2
 
-				if arg_39_1.var_.characterEffect1070ui_story then
-					arg_39_1.var_.characterEffect1070ui_story.fillFlat = false
+				if arg_41_1.var_.characterEffect1070ui_story then
+					arg_41_1.var_.characterEffect1070ui_story.fillFlat = false
 				end
 			end
 
-			if arg_39_1.time_ >= var_42_1 + var_42_2 and arg_39_1.time_ < var_42_1 + var_42_2 + arg_42_0 and arg_39_1.var_.characterEffect1070ui_story then
-				arg_39_1.var_.characterEffect1070ui_story.fillFlat = false
+			if arg_41_1.time_ >= var_44_1 + var_44_2 and arg_41_1.time_ < var_44_1 + var_44_2 + arg_44_0 and arg_41_1.var_.characterEffect1070ui_story then
+				arg_41_1.var_.characterEffect1070ui_story.fillFlat = false
 			end
 
-			local var_42_4 = 0
+			local var_44_4 = 0
 
-			if var_42_4 < arg_39_1.time_ and arg_39_1.time_ <= var_42_4 + arg_42_0 then
-				arg_39_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/story1070/story1070action/1070action1_1")
+			if var_44_4 < arg_41_1.time_ and arg_41_1.time_ <= var_44_4 + arg_44_0 then
+				arg_41_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/story1070/story1070action/1070action1_1")
 			end
 
-			local var_42_5 = 0
+			local var_44_5 = 0
 
-			if var_42_5 < arg_39_1.time_ and arg_39_1.time_ <= var_42_5 + arg_42_0 then
-				arg_39_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface1103cva")
+			if var_44_5 < arg_41_1.time_ and arg_41_1.time_ <= var_44_5 + arg_44_0 then
+				arg_41_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface1103cva")
 			end
 
-			local var_42_6 = arg_39_1.actors_["1074ui_story"]
-			local var_42_7 = 0
+			local var_44_6 = arg_41_1.actors_["1074ui_story"]
+			local var_44_7 = 0
 
-			if var_42_7 < arg_39_1.time_ and arg_39_1.time_ <= var_42_7 + arg_42_0 and arg_39_1.var_.characterEffect1074ui_story == nil then
-				arg_39_1.var_.characterEffect1074ui_story = var_42_6:GetComponentInChildren(typeof(CharacterEffect))
+			if var_44_7 < arg_41_1.time_ and arg_41_1.time_ <= var_44_7 + arg_44_0 and arg_41_1.var_.characterEffect1074ui_story == nil then
+				arg_41_1.var_.characterEffect1074ui_story = var_44_6:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_42_8 = 0.200000002980232
+			local var_44_8 = 0.200000002980232
 
-			if var_42_7 <= arg_39_1.time_ and arg_39_1.time_ < var_42_7 + var_42_8 then
-				local var_42_9 = (arg_39_1.time_ - var_42_7) / var_42_8
+			if var_44_7 <= arg_41_1.time_ and arg_41_1.time_ < var_44_7 + var_44_8 then
+				local var_44_9 = (arg_41_1.time_ - var_44_7) / var_44_8
 
-				if arg_39_1.var_.characterEffect1074ui_story then
-					local var_42_10 = Mathf.Lerp(0, 0.5, var_42_9)
+				if arg_41_1.var_.characterEffect1074ui_story then
+					local var_44_10 = Mathf.Lerp(0, 0.5, var_44_9)
 
-					arg_39_1.var_.characterEffect1074ui_story.fillFlat = true
-					arg_39_1.var_.characterEffect1074ui_story.fillRatio = var_42_10
+					arg_41_1.var_.characterEffect1074ui_story.fillFlat = true
+					arg_41_1.var_.characterEffect1074ui_story.fillRatio = var_44_10
 				end
 			end
 
-			if arg_39_1.time_ >= var_42_7 + var_42_8 and arg_39_1.time_ < var_42_7 + var_42_8 + arg_42_0 and arg_39_1.var_.characterEffect1074ui_story then
-				local var_42_11 = 0.5
+			if arg_41_1.time_ >= var_44_7 + var_44_8 and arg_41_1.time_ < var_44_7 + var_44_8 + arg_44_0 and arg_41_1.var_.characterEffect1074ui_story then
+				local var_44_11 = 0.5
 
-				arg_39_1.var_.characterEffect1074ui_story.fillFlat = true
-				arg_39_1.var_.characterEffect1074ui_story.fillRatio = var_42_11
+				arg_41_1.var_.characterEffect1074ui_story.fillFlat = true
+				arg_41_1.var_.characterEffect1074ui_story.fillRatio = var_44_11
 			end
 
-			local var_42_12 = 0
-			local var_42_13 = 1.025
+			local var_44_12 = 0
+			local var_44_13 = 1.025
 
-			if var_42_12 < arg_39_1.time_ and arg_39_1.time_ <= var_42_12 + arg_42_0 then
-				arg_39_1.talkMaxDuration = 0
-				arg_39_1.dialogCg_.alpha = 1
+			if var_44_12 < arg_41_1.time_ and arg_41_1.time_ <= var_44_12 + arg_44_0 then
+				arg_41_1.talkMaxDuration = 0
+				arg_41_1.dialogCg_.alpha = 1
 
-				arg_39_1.dialog_:SetActive(true)
-				SetActive(arg_39_1.leftNameGo_, true)
+				arg_41_1.dialog_:SetActive(true)
+				SetActive(arg_41_1.leftNameGo_, true)
 
-				local var_42_14 = arg_39_1:FormatText(StoryNameCfg[318].name)
+				local var_44_14 = arg_41_1:FormatText(StoryNameCfg[318].name)
 
-				arg_39_1.leftNameTxt_.text = var_42_14
+				arg_41_1.leftNameTxt_.text = var_44_14
 
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_39_1.leftNameTxt_.transform)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_41_1.leftNameTxt_.transform)
 
-				arg_39_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_39_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_41_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_41_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_39_1:RecordName(arg_39_1.leftNameTxt_.text)
-				SetActive(arg_39_1.iconTrs_.gameObject, false)
-				arg_39_1.callingController_:SetSelectedState("normal")
+				arg_41_1:RecordName(arg_41_1.leftNameTxt_.text)
+				SetActive(arg_41_1.iconTrs_.gameObject, false)
+				arg_41_1.callingController_:SetSelectedState("normal")
 
-				local var_42_15 = arg_39_1:GetWordFromCfg(222041010)
-				local var_42_16 = arg_39_1:FormatText(var_42_15.content)
+				local var_44_15 = arg_41_1:GetWordFromCfg(222041010)
+				local var_44_16 = arg_41_1:FormatText(var_44_15.content)
 
-				arg_39_1.text_.text = var_42_16
+				arg_41_1.text_.text = var_44_16
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_39_1.text_)
+				LuaForUtil.ClearLinePrefixSymbol(arg_41_1.text_)
 
-				local var_42_17 = 41
-				local var_42_18 = utf8.len(var_42_16)
-				local var_42_19 = var_42_17 <= 0 and var_42_13 or var_42_13 * (var_42_18 / var_42_17)
+				local var_44_17 = 41
+				local var_44_18 = utf8.len(var_44_16)
+				local var_44_19 = var_44_17 <= 0 and var_44_13 or var_44_13 * (var_44_18 / var_44_17)
 
-				if var_42_19 > 0 and var_42_13 < var_42_19 then
-					arg_39_1.talkMaxDuration = var_42_19
+				if var_44_19 > 0 and var_44_13 < var_44_19 then
+					arg_41_1.talkMaxDuration = var_44_19
 
-					if var_42_19 + var_42_12 > arg_39_1.duration_ then
-						arg_39_1.duration_ = var_42_19 + var_42_12
+					if var_44_19 + var_44_12 > arg_41_1.duration_ then
+						arg_41_1.duration_ = var_44_19 + var_44_12
 					end
 				end
 
-				arg_39_1.text_.text = var_42_16
-				arg_39_1.typewritter.percent = 0
+				arg_41_1.text_.text = var_44_16
+				arg_41_1.typewritter.percent = 0
 
-				arg_39_1.typewritter:SetDirty()
-				arg_39_1:ShowNextGo(false)
+				arg_41_1.typewritter:SetDirty()
+				arg_41_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_222041", "222041010", "story_v_out_222041.awb") ~= 0 then
-					local var_42_20 = manager.audio:GetVoiceLength("story_v_out_222041", "222041010", "story_v_out_222041.awb") / 1000
+					local var_44_20 = manager.audio:GetVoiceLength("story_v_out_222041", "222041010", "story_v_out_222041.awb") / 1000
 
-					if var_42_20 + var_42_12 > arg_39_1.duration_ then
-						arg_39_1.duration_ = var_42_20 + var_42_12
+					if var_44_20 + var_44_12 > arg_41_1.duration_ then
+						arg_41_1.duration_ = var_44_20 + var_44_12
 					end
 
-					if var_42_15.prefab_name ~= "" and arg_39_1.actors_[var_42_15.prefab_name] ~= nil then
-						local var_42_21 = LuaForUtil.PlayVoiceWithCriLipsync(arg_39_1.actors_[var_42_15.prefab_name].transform, "story_v_out_222041", "222041010", "story_v_out_222041.awb")
+					if var_44_15.prefab_name ~= "" and arg_41_1.actors_[var_44_15.prefab_name] ~= nil then
+						local var_44_21 = LuaForUtil.PlayVoiceWithCriLipsync(arg_41_1.actors_[var_44_15.prefab_name].transform, "story_v_out_222041", "222041010", "story_v_out_222041.awb")
 
-						arg_39_1:RecordAudio("222041010", var_42_21)
-						arg_39_1:RecordAudio("222041010", var_42_21)
+						arg_41_1:RecordAudio("222041010", var_44_21)
+						arg_41_1:RecordAudio("222041010", var_44_21)
 					else
-						arg_39_1:AudioAction("play", "voice", "story_v_out_222041", "222041010", "story_v_out_222041.awb")
+						arg_41_1:AudioAction("play", "voice", "story_v_out_222041", "222041010", "story_v_out_222041.awb")
 					end
 
-					arg_39_1:RecordHistoryTalkVoice("story_v_out_222041", "222041010", "story_v_out_222041.awb")
+					arg_41_1:RecordHistoryTalkVoice("story_v_out_222041", "222041010", "story_v_out_222041.awb")
 				end
 
-				arg_39_1:RecordContent(arg_39_1.text_.text)
+				arg_41_1:RecordContent(arg_41_1.text_.text)
 			end
 
-			local var_42_22 = math.max(var_42_13, arg_39_1.talkMaxDuration)
+			local var_44_22 = math.max(var_44_13, arg_41_1.talkMaxDuration)
 
-			if var_42_12 <= arg_39_1.time_ and arg_39_1.time_ < var_42_12 + var_42_22 then
-				arg_39_1.typewritter.percent = (arg_39_1.time_ - var_42_12) / var_42_22
+			if var_44_12 <= arg_41_1.time_ and arg_41_1.time_ < var_44_12 + var_44_22 then
+				arg_41_1.typewritter.percent = (arg_41_1.time_ - var_44_12) / var_44_22
 
-				arg_39_1.typewritter:SetDirty()
+				arg_41_1.typewritter:SetDirty()
 			end
 
-			if arg_39_1.time_ >= var_42_12 + var_42_22 and arg_39_1.time_ < var_42_12 + var_42_22 + arg_42_0 then
-				arg_39_1.typewritter.percent = 1
+			if arg_41_1.time_ >= var_44_12 + var_44_22 and arg_41_1.time_ < var_44_12 + var_44_22 + arg_44_0 then
+				arg_41_1.typewritter.percent = 1
 
-				arg_39_1.typewritter:SetDirty()
-				arg_39_1:ShowNextGo(true)
+				arg_41_1.typewritter:SetDirty()
+				arg_41_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041011 = function(arg_43_0, arg_43_1)
-		arg_43_1.time_ = 0
-		arg_43_1.frameCnt_ = 0
-		arg_43_1.state_ = "playing"
-		arg_43_1.curTalkId_ = 222041011
-		arg_43_1.duration_ = 11.466
+	Play222041011 = function(arg_45_0, arg_45_1)
+		arg_45_1.time_ = 0
+		arg_45_1.frameCnt_ = 0
+		arg_45_1.state_ = "playing"
+		arg_45_1.curTalkId_ = 222041011
+		arg_45_1.duration_ = 11.47
 
-		local var_43_0 = {
+		local var_45_0 = {
 			ja = 11.466,
 			ko = 4.833,
 			zh = 4.833
 		}
-		local var_43_1 = manager.audio:GetLocalizationFlag()
+		local var_45_1 = manager.audio:GetLocalizationFlag()
 
-		if var_43_0[var_43_1] ~= nil then
-			arg_43_1.duration_ = var_43_0[var_43_1]
+		if var_45_0[var_45_1] ~= nil then
+			arg_45_1.duration_ = var_45_0[var_45_1]
 		end
 
-		SetActive(arg_43_1.tipsGo_, false)
+		SetActive(arg_45_1.tipsGo_, false)
 
-		function arg_43_1.onSingleLineFinish_()
-			arg_43_1.onSingleLineUpdate_ = nil
-			arg_43_1.onSingleLineFinish_ = nil
-			arg_43_1.state_ = "waiting"
+		function arg_45_1.onSingleLineFinish_()
+			arg_45_1.onSingleLineUpdate_ = nil
+			arg_45_1.onSingleLineFinish_ = nil
+			arg_45_1.state_ = "waiting"
 		end
 
-		function arg_43_1.playNext_(arg_45_0)
-			if arg_45_0 == 1 then
-				arg_43_0:Play222041012(arg_43_1)
+		function arg_45_1.playNext_(arg_47_0)
+			if arg_47_0 == 1 then
+				arg_45_0:Play222041012(arg_45_1)
 			end
 		end
 
-		function arg_43_1.onSingleLineUpdate_(arg_46_0)
-			local var_46_0 = 0
+		function arg_45_1.onSingleLineUpdate_(arg_48_0)
+			local var_48_0 = 0
 
-			if var_46_0 < arg_43_1.time_ and arg_43_1.time_ <= var_46_0 + arg_46_0 then
-				arg_43_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/story1070/story1070action/1070action6_1")
+			if var_48_0 < arg_45_1.time_ and arg_45_1.time_ <= var_48_0 + arg_48_0 then
+				arg_45_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/story1070/story1070action/1070action6_1")
 			end
 
-			local var_46_1 = 0
+			local var_48_1 = 0
 
-			if var_46_1 < arg_43_1.time_ and arg_43_1.time_ <= var_46_1 + arg_46_0 then
-				arg_43_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0201cva")
+			if var_48_1 < arg_45_1.time_ and arg_45_1.time_ <= var_48_1 + arg_48_0 then
+				arg_45_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0201cva")
 			end
 
-			local var_46_2 = 0
-			local var_46_3 = 0.525
+			local var_48_2 = 0
+			local var_48_3 = 0.525
 
-			if var_46_2 < arg_43_1.time_ and arg_43_1.time_ <= var_46_2 + arg_46_0 then
-				arg_43_1.talkMaxDuration = 0
-				arg_43_1.dialogCg_.alpha = 1
+			if var_48_2 < arg_45_1.time_ and arg_45_1.time_ <= var_48_2 + arg_48_0 then
+				arg_45_1.talkMaxDuration = 0
+				arg_45_1.dialogCg_.alpha = 1
 
-				arg_43_1.dialog_:SetActive(true)
-				SetActive(arg_43_1.leftNameGo_, true)
+				arg_45_1.dialog_:SetActive(true)
+				SetActive(arg_45_1.leftNameGo_, true)
 
-				local var_46_4 = arg_43_1:FormatText(StoryNameCfg[318].name)
+				local var_48_4 = arg_45_1:FormatText(StoryNameCfg[318].name)
 
-				arg_43_1.leftNameTxt_.text = var_46_4
+				arg_45_1.leftNameTxt_.text = var_48_4
 
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_43_1.leftNameTxt_.transform)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_45_1.leftNameTxt_.transform)
 
-				arg_43_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_43_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_45_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_45_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_43_1:RecordName(arg_43_1.leftNameTxt_.text)
-				SetActive(arg_43_1.iconTrs_.gameObject, false)
-				arg_43_1.callingController_:SetSelectedState("normal")
+				arg_45_1:RecordName(arg_45_1.leftNameTxt_.text)
+				SetActive(arg_45_1.iconTrs_.gameObject, false)
+				arg_45_1.callingController_:SetSelectedState("normal")
 
-				local var_46_5 = arg_43_1:GetWordFromCfg(222041011)
-				local var_46_6 = arg_43_1:FormatText(var_46_5.content)
+				local var_48_5 = arg_45_1:GetWordFromCfg(222041011)
+				local var_48_6 = arg_45_1:FormatText(var_48_5.content)
 
-				arg_43_1.text_.text = var_46_6
+				arg_45_1.text_.text = var_48_6
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_43_1.text_)
+				LuaForUtil.ClearLinePrefixSymbol(arg_45_1.text_)
 
-				local var_46_7 = 21
-				local var_46_8 = utf8.len(var_46_6)
-				local var_46_9 = var_46_7 <= 0 and var_46_3 or var_46_3 * (var_46_8 / var_46_7)
+				local var_48_7 = 21
+				local var_48_8 = utf8.len(var_48_6)
+				local var_48_9 = var_48_7 <= 0 and var_48_3 or var_48_3 * (var_48_8 / var_48_7)
 
-				if var_46_9 > 0 and var_46_3 < var_46_9 then
-					arg_43_1.talkMaxDuration = var_46_9
+				if var_48_9 > 0 and var_48_3 < var_48_9 then
+					arg_45_1.talkMaxDuration = var_48_9
 
-					if var_46_9 + var_46_2 > arg_43_1.duration_ then
-						arg_43_1.duration_ = var_46_9 + var_46_2
+					if var_48_9 + var_48_2 > arg_45_1.duration_ then
+						arg_45_1.duration_ = var_48_9 + var_48_2
 					end
 				end
 
-				arg_43_1.text_.text = var_46_6
-				arg_43_1.typewritter.percent = 0
+				arg_45_1.text_.text = var_48_6
+				arg_45_1.typewritter.percent = 0
 
-				arg_43_1.typewritter:SetDirty()
-				arg_43_1:ShowNextGo(false)
+				arg_45_1.typewritter:SetDirty()
+				arg_45_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_222041", "222041011", "story_v_out_222041.awb") ~= 0 then
-					local var_46_10 = manager.audio:GetVoiceLength("story_v_out_222041", "222041011", "story_v_out_222041.awb") / 1000
+					local var_48_10 = manager.audio:GetVoiceLength("story_v_out_222041", "222041011", "story_v_out_222041.awb") / 1000
 
-					if var_46_10 + var_46_2 > arg_43_1.duration_ then
-						arg_43_1.duration_ = var_46_10 + var_46_2
+					if var_48_10 + var_48_2 > arg_45_1.duration_ then
+						arg_45_1.duration_ = var_48_10 + var_48_2
 					end
 
-					if var_46_5.prefab_name ~= "" and arg_43_1.actors_[var_46_5.prefab_name] ~= nil then
-						local var_46_11 = LuaForUtil.PlayVoiceWithCriLipsync(arg_43_1.actors_[var_46_5.prefab_name].transform, "story_v_out_222041", "222041011", "story_v_out_222041.awb")
+					if var_48_5.prefab_name ~= "" and arg_45_1.actors_[var_48_5.prefab_name] ~= nil then
+						local var_48_11 = LuaForUtil.PlayVoiceWithCriLipsync(arg_45_1.actors_[var_48_5.prefab_name].transform, "story_v_out_222041", "222041011", "story_v_out_222041.awb")
 
-						arg_43_1:RecordAudio("222041011", var_46_11)
-						arg_43_1:RecordAudio("222041011", var_46_11)
+						arg_45_1:RecordAudio("222041011", var_48_11)
+						arg_45_1:RecordAudio("222041011", var_48_11)
 					else
-						arg_43_1:AudioAction("play", "voice", "story_v_out_222041", "222041011", "story_v_out_222041.awb")
+						arg_45_1:AudioAction("play", "voice", "story_v_out_222041", "222041011", "story_v_out_222041.awb")
 					end
 
-					arg_43_1:RecordHistoryTalkVoice("story_v_out_222041", "222041011", "story_v_out_222041.awb")
+					arg_45_1:RecordHistoryTalkVoice("story_v_out_222041", "222041011", "story_v_out_222041.awb")
 				end
 
-				arg_43_1:RecordContent(arg_43_1.text_.text)
+				arg_45_1:RecordContent(arg_45_1.text_.text)
 			end
 
-			local var_46_12 = math.max(var_46_3, arg_43_1.talkMaxDuration)
+			local var_48_12 = math.max(var_48_3, arg_45_1.talkMaxDuration)
 
-			if var_46_2 <= arg_43_1.time_ and arg_43_1.time_ < var_46_2 + var_46_12 then
-				arg_43_1.typewritter.percent = (arg_43_1.time_ - var_46_2) / var_46_12
+			if var_48_2 <= arg_45_1.time_ and arg_45_1.time_ < var_48_2 + var_48_12 then
+				arg_45_1.typewritter.percent = (arg_45_1.time_ - var_48_2) / var_48_12
 
-				arg_43_1.typewritter:SetDirty()
+				arg_45_1.typewritter:SetDirty()
 			end
 
-			if arg_43_1.time_ >= var_46_2 + var_46_12 and arg_43_1.time_ < var_46_2 + var_46_12 + arg_46_0 then
-				arg_43_1.typewritter.percent = 1
+			if arg_45_1.time_ >= var_48_2 + var_48_12 and arg_45_1.time_ < var_48_2 + var_48_12 + arg_48_0 then
+				arg_45_1.typewritter.percent = 1
 
-				arg_43_1.typewritter:SetDirty()
-				arg_43_1:ShowNextGo(true)
+				arg_45_1.typewritter:SetDirty()
+				arg_45_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041012 = function(arg_47_0, arg_47_1)
-		arg_47_1.time_ = 0
-		arg_47_1.frameCnt_ = 0
-		arg_47_1.state_ = "playing"
-		arg_47_1.curTalkId_ = 222041012
-		arg_47_1.duration_ = 6.433
+	Play222041012 = function(arg_49_0, arg_49_1)
+		arg_49_1.time_ = 0
+		arg_49_1.frameCnt_ = 0
+		arg_49_1.state_ = "playing"
+		arg_49_1.curTalkId_ = 222041012
+		arg_49_1.duration_ = 6.43
 
-		local var_47_0 = {
+		local var_49_0 = {
 			ja = 6.433,
 			ko = 3.733,
 			zh = 3.733
 		}
-		local var_47_1 = manager.audio:GetLocalizationFlag()
+		local var_49_1 = manager.audio:GetLocalizationFlag()
 
-		if var_47_0[var_47_1] ~= nil then
-			arg_47_1.duration_ = var_47_0[var_47_1]
+		if var_49_0[var_49_1] ~= nil then
+			arg_49_1.duration_ = var_49_0[var_49_1]
 		end
 
-		SetActive(arg_47_1.tipsGo_, false)
+		SetActive(arg_49_1.tipsGo_, false)
 
-		function arg_47_1.onSingleLineFinish_()
-			arg_47_1.onSingleLineUpdate_ = nil
-			arg_47_1.onSingleLineFinish_ = nil
-			arg_47_1.state_ = "waiting"
+		function arg_49_1.onSingleLineFinish_()
+			arg_49_1.onSingleLineUpdate_ = nil
+			arg_49_1.onSingleLineFinish_ = nil
+			arg_49_1.state_ = "waiting"
 		end
 
-		function arg_47_1.playNext_(arg_49_0)
-			if arg_49_0 == 1 then
-				arg_47_0:Play222041013(arg_47_1)
+		function arg_49_1.playNext_(arg_51_0)
+			if arg_51_0 == 1 then
+				arg_49_0:Play222041013(arg_49_1)
 			end
 		end
 
-		function arg_47_1.onSingleLineUpdate_(arg_50_0)
-			local var_50_0 = arg_47_1.actors_["1074ui_story"]
-			local var_50_1 = 0
+		function arg_49_1.onSingleLineUpdate_(arg_52_0)
+			local var_52_0 = arg_49_1.actors_["1074ui_story"]
+			local var_52_1 = 0
 
-			if var_50_1 < arg_47_1.time_ and arg_47_1.time_ <= var_50_1 + arg_50_0 and arg_47_1.var_.characterEffect1074ui_story == nil then
-				arg_47_1.var_.characterEffect1074ui_story = var_50_0:GetComponentInChildren(typeof(CharacterEffect))
+			if var_52_1 < arg_49_1.time_ and arg_49_1.time_ <= var_52_1 + arg_52_0 and arg_49_1.var_.characterEffect1074ui_story == nil then
+				arg_49_1.var_.characterEffect1074ui_story = var_52_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_50_2 = 0.200000002980232
+			local var_52_2 = 0.200000002980232
 
-			if var_50_1 <= arg_47_1.time_ and arg_47_1.time_ < var_50_1 + var_50_2 then
-				local var_50_3 = (arg_47_1.time_ - var_50_1) / var_50_2
+			if var_52_1 <= arg_49_1.time_ and arg_49_1.time_ < var_52_1 + var_52_2 then
+				local var_52_3 = (arg_49_1.time_ - var_52_1) / var_52_2
 
-				if arg_47_1.var_.characterEffect1074ui_story then
-					arg_47_1.var_.characterEffect1074ui_story.fillFlat = false
+				if arg_49_1.var_.characterEffect1074ui_story then
+					arg_49_1.var_.characterEffect1074ui_story.fillFlat = false
 				end
 			end
 
-			if arg_47_1.time_ >= var_50_1 + var_50_2 and arg_47_1.time_ < var_50_1 + var_50_2 + arg_50_0 and arg_47_1.var_.characterEffect1074ui_story then
-				arg_47_1.var_.characterEffect1074ui_story.fillFlat = false
+			if arg_49_1.time_ >= var_52_1 + var_52_2 and arg_49_1.time_ < var_52_1 + var_52_2 + arg_52_0 and arg_49_1.var_.characterEffect1074ui_story then
+				arg_49_1.var_.characterEffect1074ui_story.fillFlat = false
 			end
 
-			local var_50_4 = 0
+			local var_52_4 = 0
 
-			if var_50_4 < arg_47_1.time_ and arg_47_1.time_ <= var_50_4 + arg_50_0 then
-				arg_47_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/story1074/story1074action/1074action1_1")
+			if var_52_4 < arg_49_1.time_ and arg_49_1.time_ <= var_52_4 + arg_52_0 then
+				arg_49_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/story1074/story1074action/1074action1_1")
 			end
 
-			local var_50_5 = 0
+			local var_52_5 = 0
 
-			if var_50_5 < arg_47_1.time_ and arg_47_1.time_ <= var_50_5 + arg_50_0 then
-				arg_47_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface3203cva")
+			if var_52_5 < arg_49_1.time_ and arg_49_1.time_ <= var_52_5 + arg_52_0 then
+				arg_49_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface3203cva")
 			end
 
-			local var_50_6 = arg_47_1.actors_["1070ui_story"]
-			local var_50_7 = 0
+			local var_52_6 = arg_49_1.actors_["1070ui_story"]
+			local var_52_7 = 0
 
-			if var_50_7 < arg_47_1.time_ and arg_47_1.time_ <= var_50_7 + arg_50_0 and arg_47_1.var_.characterEffect1070ui_story == nil then
-				arg_47_1.var_.characterEffect1070ui_story = var_50_6:GetComponentInChildren(typeof(CharacterEffect))
+			if var_52_7 < arg_49_1.time_ and arg_49_1.time_ <= var_52_7 + arg_52_0 and arg_49_1.var_.characterEffect1070ui_story == nil then
+				arg_49_1.var_.characterEffect1070ui_story = var_52_6:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_50_8 = 0.200000002980232
+			local var_52_8 = 0.200000002980232
 
-			if var_50_7 <= arg_47_1.time_ and arg_47_1.time_ < var_50_7 + var_50_8 then
-				local var_50_9 = (arg_47_1.time_ - var_50_7) / var_50_8
+			if var_52_7 <= arg_49_1.time_ and arg_49_1.time_ < var_52_7 + var_52_8 then
+				local var_52_9 = (arg_49_1.time_ - var_52_7) / var_52_8
 
-				if arg_47_1.var_.characterEffect1070ui_story then
-					local var_50_10 = Mathf.Lerp(0, 0.5, var_50_9)
+				if arg_49_1.var_.characterEffect1070ui_story then
+					local var_52_10 = Mathf.Lerp(0, 0.5, var_52_9)
 
-					arg_47_1.var_.characterEffect1070ui_story.fillFlat = true
-					arg_47_1.var_.characterEffect1070ui_story.fillRatio = var_50_10
+					arg_49_1.var_.characterEffect1070ui_story.fillFlat = true
+					arg_49_1.var_.characterEffect1070ui_story.fillRatio = var_52_10
 				end
 			end
 
-			if arg_47_1.time_ >= var_50_7 + var_50_8 and arg_47_1.time_ < var_50_7 + var_50_8 + arg_50_0 and arg_47_1.var_.characterEffect1070ui_story then
-				local var_50_11 = 0.5
+			if arg_49_1.time_ >= var_52_7 + var_52_8 and arg_49_1.time_ < var_52_7 + var_52_8 + arg_52_0 and arg_49_1.var_.characterEffect1070ui_story then
+				local var_52_11 = 0.5
 
-				arg_47_1.var_.characterEffect1070ui_story.fillFlat = true
-				arg_47_1.var_.characterEffect1070ui_story.fillRatio = var_50_11
+				arg_49_1.var_.characterEffect1070ui_story.fillFlat = true
+				arg_49_1.var_.characterEffect1070ui_story.fillRatio = var_52_11
 			end
 
-			local var_50_12 = 0
-			local var_50_13 = 0.275
+			local var_52_12 = 0
+			local var_52_13 = 0.275
 
-			if var_50_12 < arg_47_1.time_ and arg_47_1.time_ <= var_50_12 + arg_50_0 then
-				arg_47_1.talkMaxDuration = 0
-				arg_47_1.dialogCg_.alpha = 1
+			if var_52_12 < arg_49_1.time_ and arg_49_1.time_ <= var_52_12 + arg_52_0 then
+				arg_49_1.talkMaxDuration = 0
+				arg_49_1.dialogCg_.alpha = 1
 
-				arg_47_1.dialog_:SetActive(true)
-				SetActive(arg_47_1.leftNameGo_, true)
+				arg_49_1.dialog_:SetActive(true)
+				SetActive(arg_49_1.leftNameGo_, true)
 
-				local var_50_14 = arg_47_1:FormatText(StoryNameCfg[410].name)
+				local var_52_14 = arg_49_1:FormatText(StoryNameCfg[410].name)
 
-				arg_47_1.leftNameTxt_.text = var_50_14
+				arg_49_1.leftNameTxt_.text = var_52_14
 
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_47_1.leftNameTxt_.transform)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_49_1.leftNameTxt_.transform)
 
-				arg_47_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_47_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_49_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_49_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_47_1:RecordName(arg_47_1.leftNameTxt_.text)
-				SetActive(arg_47_1.iconTrs_.gameObject, false)
-				arg_47_1.callingController_:SetSelectedState("normal")
+				arg_49_1:RecordName(arg_49_1.leftNameTxt_.text)
+				SetActive(arg_49_1.iconTrs_.gameObject, false)
+				arg_49_1.callingController_:SetSelectedState("normal")
 
-				local var_50_15 = arg_47_1:GetWordFromCfg(222041012)
-				local var_50_16 = arg_47_1:FormatText(var_50_15.content)
+				local var_52_15 = arg_49_1:GetWordFromCfg(222041012)
+				local var_52_16 = arg_49_1:FormatText(var_52_15.content)
 
-				arg_47_1.text_.text = var_50_16
+				arg_49_1.text_.text = var_52_16
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_47_1.text_)
+				LuaForUtil.ClearLinePrefixSymbol(arg_49_1.text_)
 
-				local var_50_17 = 11
-				local var_50_18 = utf8.len(var_50_16)
-				local var_50_19 = var_50_17 <= 0 and var_50_13 or var_50_13 * (var_50_18 / var_50_17)
+				local var_52_17 = 11
+				local var_52_18 = utf8.len(var_52_16)
+				local var_52_19 = var_52_17 <= 0 and var_52_13 or var_52_13 * (var_52_18 / var_52_17)
 
-				if var_50_19 > 0 and var_50_13 < var_50_19 then
-					arg_47_1.talkMaxDuration = var_50_19
+				if var_52_19 > 0 and var_52_13 < var_52_19 then
+					arg_49_1.talkMaxDuration = var_52_19
 
-					if var_50_19 + var_50_12 > arg_47_1.duration_ then
-						arg_47_1.duration_ = var_50_19 + var_50_12
+					if var_52_19 + var_52_12 > arg_49_1.duration_ then
+						arg_49_1.duration_ = var_52_19 + var_52_12
 					end
 				end
 
-				arg_47_1.text_.text = var_50_16
-				arg_47_1.typewritter.percent = 0
+				arg_49_1.text_.text = var_52_16
+				arg_49_1.typewritter.percent = 0
 
-				arg_47_1.typewritter:SetDirty()
-				arg_47_1:ShowNextGo(false)
+				arg_49_1.typewritter:SetDirty()
+				arg_49_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_222041", "222041012", "story_v_out_222041.awb") ~= 0 then
-					local var_50_20 = manager.audio:GetVoiceLength("story_v_out_222041", "222041012", "story_v_out_222041.awb") / 1000
+					local var_52_20 = manager.audio:GetVoiceLength("story_v_out_222041", "222041012", "story_v_out_222041.awb") / 1000
 
-					if var_50_20 + var_50_12 > arg_47_1.duration_ then
-						arg_47_1.duration_ = var_50_20 + var_50_12
+					if var_52_20 + var_52_12 > arg_49_1.duration_ then
+						arg_49_1.duration_ = var_52_20 + var_52_12
 					end
 
-					if var_50_15.prefab_name ~= "" and arg_47_1.actors_[var_50_15.prefab_name] ~= nil then
-						local var_50_21 = LuaForUtil.PlayVoiceWithCriLipsync(arg_47_1.actors_[var_50_15.prefab_name].transform, "story_v_out_222041", "222041012", "story_v_out_222041.awb")
+					if var_52_15.prefab_name ~= "" and arg_49_1.actors_[var_52_15.prefab_name] ~= nil then
+						local var_52_21 = LuaForUtil.PlayVoiceWithCriLipsync(arg_49_1.actors_[var_52_15.prefab_name].transform, "story_v_out_222041", "222041012", "story_v_out_222041.awb")
 
-						arg_47_1:RecordAudio("222041012", var_50_21)
-						arg_47_1:RecordAudio("222041012", var_50_21)
+						arg_49_1:RecordAudio("222041012", var_52_21)
+						arg_49_1:RecordAudio("222041012", var_52_21)
 					else
-						arg_47_1:AudioAction("play", "voice", "story_v_out_222041", "222041012", "story_v_out_222041.awb")
+						arg_49_1:AudioAction("play", "voice", "story_v_out_222041", "222041012", "story_v_out_222041.awb")
 					end
 
-					arg_47_1:RecordHistoryTalkVoice("story_v_out_222041", "222041012", "story_v_out_222041.awb")
+					arg_49_1:RecordHistoryTalkVoice("story_v_out_222041", "222041012", "story_v_out_222041.awb")
 				end
 
-				arg_47_1:RecordContent(arg_47_1.text_.text)
+				arg_49_1:RecordContent(arg_49_1.text_.text)
 			end
 
-			local var_50_22 = math.max(var_50_13, arg_47_1.talkMaxDuration)
+			local var_52_22 = math.max(var_52_13, arg_49_1.talkMaxDuration)
 
-			if var_50_12 <= arg_47_1.time_ and arg_47_1.time_ < var_50_12 + var_50_22 then
-				arg_47_1.typewritter.percent = (arg_47_1.time_ - var_50_12) / var_50_22
+			if var_52_12 <= arg_49_1.time_ and arg_49_1.time_ < var_52_12 + var_52_22 then
+				arg_49_1.typewritter.percent = (arg_49_1.time_ - var_52_12) / var_52_22
 
-				arg_47_1.typewritter:SetDirty()
+				arg_49_1.typewritter:SetDirty()
 			end
 
-			if arg_47_1.time_ >= var_50_12 + var_50_22 and arg_47_1.time_ < var_50_12 + var_50_22 + arg_50_0 then
-				arg_47_1.typewritter.percent = 1
+			if arg_49_1.time_ >= var_52_12 + var_52_22 and arg_49_1.time_ < var_52_12 + var_52_22 + arg_52_0 then
+				arg_49_1.typewritter.percent = 1
 
-				arg_47_1.typewritter:SetDirty()
-				arg_47_1:ShowNextGo(true)
+				arg_49_1.typewritter:SetDirty()
+				arg_49_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041013 = function(arg_51_0, arg_51_1)
-		arg_51_1.time_ = 0
-		arg_51_1.frameCnt_ = 0
-		arg_51_1.state_ = "playing"
-		arg_51_1.curTalkId_ = 222041013
-		arg_51_1.duration_ = 5
+	Play222041013 = function(arg_53_0, arg_53_1)
+		arg_53_1.time_ = 0
+		arg_53_1.frameCnt_ = 0
+		arg_53_1.state_ = "playing"
+		arg_53_1.curTalkId_ = 222041013
+		arg_53_1.duration_ = 5
 
-		SetActive(arg_51_1.tipsGo_, false)
+		SetActive(arg_53_1.tipsGo_, false)
 
-		function arg_51_1.onSingleLineFinish_()
-			arg_51_1.onSingleLineUpdate_ = nil
-			arg_51_1.onSingleLineFinish_ = nil
-			arg_51_1.state_ = "waiting"
+		function arg_53_1.onSingleLineFinish_()
+			arg_53_1.onSingleLineUpdate_ = nil
+			arg_53_1.onSingleLineFinish_ = nil
+			arg_53_1.state_ = "waiting"
 		end
 
-		function arg_51_1.playNext_(arg_53_0)
-			if arg_53_0 == 1 then
-				arg_51_0:Play222041014(arg_51_1)
+		function arg_53_1.playNext_(arg_55_0)
+			if arg_55_0 == 1 then
+				arg_53_0:Play222041014(arg_53_1)
 			end
 		end
 
-		function arg_51_1.onSingleLineUpdate_(arg_54_0)
-			local var_54_0 = arg_51_1.actors_["1074ui_story"].transform
-			local var_54_1 = 0
+		function arg_53_1.onSingleLineUpdate_(arg_56_0)
+			local var_56_0 = arg_53_1.actors_["1074ui_story"].transform
+			local var_56_1 = 0
 
-			if var_54_1 < arg_51_1.time_ and arg_51_1.time_ <= var_54_1 + arg_54_0 then
-				arg_51_1.var_.moveOldPos1074ui_story = var_54_0.localPosition
+			if var_56_1 < arg_53_1.time_ and arg_53_1.time_ <= var_56_1 + arg_56_0 then
+				arg_53_1.var_.moveOldPos1074ui_story = var_56_0.localPosition
 			end
 
-			local var_54_2 = 0.001
+			local var_56_2 = 0.001
 
-			if var_54_1 <= arg_51_1.time_ and arg_51_1.time_ < var_54_1 + var_54_2 then
-				local var_54_3 = (arg_51_1.time_ - var_54_1) / var_54_2
-				local var_54_4 = Vector3.New(0, 100, 0)
+			if var_56_1 <= arg_53_1.time_ and arg_53_1.time_ < var_56_1 + var_56_2 then
+				local var_56_3 = (arg_53_1.time_ - var_56_1) / var_56_2
+				local var_56_4 = Vector3.New(0, 100, 0)
 
-				var_54_0.localPosition = Vector3.Lerp(arg_51_1.var_.moveOldPos1074ui_story, var_54_4, var_54_3)
+				var_56_0.localPosition = Vector3.Lerp(arg_53_1.var_.moveOldPos1074ui_story, var_56_4, var_56_3)
 
-				local var_54_5 = manager.ui.mainCamera.transform.position - var_54_0.position
+				local var_56_5 = manager.ui.mainCamera.transform.position - var_56_0.position
 
-				var_54_0.forward = Vector3.New(var_54_5.x, var_54_5.y, var_54_5.z)
+				var_56_0.forward = Vector3.New(var_56_5.x, var_56_5.y, var_56_5.z)
 
-				local var_54_6 = var_54_0.localEulerAngles
+				local var_56_6 = var_56_0.localEulerAngles
 
-				var_54_6.z = 0
-				var_54_6.x = 0
-				var_54_0.localEulerAngles = var_54_6
+				var_56_6.z = 0
+				var_56_6.x = 0
+				var_56_0.localEulerAngles = var_56_6
 			end
 
-			if arg_51_1.time_ >= var_54_1 + var_54_2 and arg_51_1.time_ < var_54_1 + var_54_2 + arg_54_0 then
-				var_54_0.localPosition = Vector3.New(0, 100, 0)
+			if arg_53_1.time_ >= var_56_1 + var_56_2 and arg_53_1.time_ < var_56_1 + var_56_2 + arg_56_0 then
+				var_56_0.localPosition = Vector3.New(0, 100, 0)
 
-				local var_54_7 = manager.ui.mainCamera.transform.position - var_54_0.position
+				local var_56_7 = manager.ui.mainCamera.transform.position - var_56_0.position
 
-				var_54_0.forward = Vector3.New(var_54_7.x, var_54_7.y, var_54_7.z)
+				var_56_0.forward = Vector3.New(var_56_7.x, var_56_7.y, var_56_7.z)
 
-				local var_54_8 = var_54_0.localEulerAngles
+				local var_56_8 = var_56_0.localEulerAngles
 
-				var_54_8.z = 0
-				var_54_8.x = 0
-				var_54_0.localEulerAngles = var_54_8
+				var_56_8.z = 0
+				var_56_8.x = 0
+				var_56_0.localEulerAngles = var_56_8
 			end
 
-			local var_54_9 = arg_51_1.actors_["1074ui_story"]
-			local var_54_10 = 0
+			local var_56_9 = arg_53_1.actors_["1074ui_story"]
+			local var_56_10 = 0
 
-			if var_54_10 < arg_51_1.time_ and arg_51_1.time_ <= var_54_10 + arg_54_0 and arg_51_1.var_.characterEffect1074ui_story == nil then
-				arg_51_1.var_.characterEffect1074ui_story = var_54_9:GetComponentInChildren(typeof(CharacterEffect))
+			if var_56_10 < arg_53_1.time_ and arg_53_1.time_ <= var_56_10 + arg_56_0 and arg_53_1.var_.characterEffect1074ui_story == nil then
+				arg_53_1.var_.characterEffect1074ui_story = var_56_9:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_54_11 = 0.200000002980232
+			local var_56_11 = 0.200000002980232
 
-			if var_54_10 <= arg_51_1.time_ and arg_51_1.time_ < var_54_10 + var_54_11 then
-				local var_54_12 = (arg_51_1.time_ - var_54_10) / var_54_11
+			if var_56_10 <= arg_53_1.time_ and arg_53_1.time_ < var_56_10 + var_56_11 then
+				local var_56_12 = (arg_53_1.time_ - var_56_10) / var_56_11
 
-				if arg_51_1.var_.characterEffect1074ui_story then
-					local var_54_13 = Mathf.Lerp(0, 0.5, var_54_12)
+				if arg_53_1.var_.characterEffect1074ui_story then
+					local var_56_13 = Mathf.Lerp(0, 0.5, var_56_12)
 
-					arg_51_1.var_.characterEffect1074ui_story.fillFlat = true
-					arg_51_1.var_.characterEffect1074ui_story.fillRatio = var_54_13
+					arg_53_1.var_.characterEffect1074ui_story.fillFlat = true
+					arg_53_1.var_.characterEffect1074ui_story.fillRatio = var_56_13
 				end
 			end
 
-			if arg_51_1.time_ >= var_54_10 + var_54_11 and arg_51_1.time_ < var_54_10 + var_54_11 + arg_54_0 and arg_51_1.var_.characterEffect1074ui_story then
-				local var_54_14 = 0.5
+			if arg_53_1.time_ >= var_56_10 + var_56_11 and arg_53_1.time_ < var_56_10 + var_56_11 + arg_56_0 and arg_53_1.var_.characterEffect1074ui_story then
+				local var_56_14 = 0.5
 
-				arg_51_1.var_.characterEffect1074ui_story.fillFlat = true
-				arg_51_1.var_.characterEffect1074ui_story.fillRatio = var_54_14
+				arg_53_1.var_.characterEffect1074ui_story.fillFlat = true
+				arg_53_1.var_.characterEffect1074ui_story.fillRatio = var_56_14
 			end
 
-			local var_54_15 = arg_51_1.actors_["1070ui_story"].transform
-			local var_54_16 = 0
+			local var_56_15 = arg_53_1.actors_["1070ui_story"].transform
+			local var_56_16 = 0
 
-			if var_54_16 < arg_51_1.time_ and arg_51_1.time_ <= var_54_16 + arg_54_0 then
-				arg_51_1.var_.moveOldPos1070ui_story = var_54_15.localPosition
+			if var_56_16 < arg_53_1.time_ and arg_53_1.time_ <= var_56_16 + arg_56_0 then
+				arg_53_1.var_.moveOldPos1070ui_story = var_56_15.localPosition
 			end
 
-			local var_54_17 = 0.001
+			local var_56_17 = 0.001
 
-			if var_54_16 <= arg_51_1.time_ and arg_51_1.time_ < var_54_16 + var_54_17 then
-				local var_54_18 = (arg_51_1.time_ - var_54_16) / var_54_17
-				local var_54_19 = Vector3.New(0, 100, 0)
+			if var_56_16 <= arg_53_1.time_ and arg_53_1.time_ < var_56_16 + var_56_17 then
+				local var_56_18 = (arg_53_1.time_ - var_56_16) / var_56_17
+				local var_56_19 = Vector3.New(0, 100, 0)
 
-				var_54_15.localPosition = Vector3.Lerp(arg_51_1.var_.moveOldPos1070ui_story, var_54_19, var_54_18)
+				var_56_15.localPosition = Vector3.Lerp(arg_53_1.var_.moveOldPos1070ui_story, var_56_19, var_56_18)
 
-				local var_54_20 = manager.ui.mainCamera.transform.position - var_54_15.position
+				local var_56_20 = manager.ui.mainCamera.transform.position - var_56_15.position
 
-				var_54_15.forward = Vector3.New(var_54_20.x, var_54_20.y, var_54_20.z)
+				var_56_15.forward = Vector3.New(var_56_20.x, var_56_20.y, var_56_20.z)
 
-				local var_54_21 = var_54_15.localEulerAngles
+				local var_56_21 = var_56_15.localEulerAngles
 
-				var_54_21.z = 0
-				var_54_21.x = 0
-				var_54_15.localEulerAngles = var_54_21
+				var_56_21.z = 0
+				var_56_21.x = 0
+				var_56_15.localEulerAngles = var_56_21
 			end
 
-			if arg_51_1.time_ >= var_54_16 + var_54_17 and arg_51_1.time_ < var_54_16 + var_54_17 + arg_54_0 then
-				var_54_15.localPosition = Vector3.New(0, 100, 0)
+			if arg_53_1.time_ >= var_56_16 + var_56_17 and arg_53_1.time_ < var_56_16 + var_56_17 + arg_56_0 then
+				var_56_15.localPosition = Vector3.New(0, 100, 0)
 
-				local var_54_22 = manager.ui.mainCamera.transform.position - var_54_15.position
+				local var_56_22 = manager.ui.mainCamera.transform.position - var_56_15.position
 
-				var_54_15.forward = Vector3.New(var_54_22.x, var_54_22.y, var_54_22.z)
+				var_56_15.forward = Vector3.New(var_56_22.x, var_56_22.y, var_56_22.z)
 
-				local var_54_23 = var_54_15.localEulerAngles
+				local var_56_23 = var_56_15.localEulerAngles
 
-				var_54_23.z = 0
-				var_54_23.x = 0
-				var_54_15.localEulerAngles = var_54_23
+				var_56_23.z = 0
+				var_56_23.x = 0
+				var_56_15.localEulerAngles = var_56_23
 			end
 
-			local var_54_24 = arg_51_1.actors_["1070ui_story"]
-			local var_54_25 = 0
+			local var_56_24 = arg_53_1.actors_["1070ui_story"]
+			local var_56_25 = 0
 
-			if var_54_25 < arg_51_1.time_ and arg_51_1.time_ <= var_54_25 + arg_54_0 and arg_51_1.var_.characterEffect1070ui_story == nil then
-				arg_51_1.var_.characterEffect1070ui_story = var_54_24:GetComponentInChildren(typeof(CharacterEffect))
+			if var_56_25 < arg_53_1.time_ and arg_53_1.time_ <= var_56_25 + arg_56_0 and arg_53_1.var_.characterEffect1070ui_story == nil then
+				arg_53_1.var_.characterEffect1070ui_story = var_56_24:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_54_26 = 0.200000002980232
+			local var_56_26 = 0.200000002980232
 
-			if var_54_25 <= arg_51_1.time_ and arg_51_1.time_ < var_54_25 + var_54_26 then
-				local var_54_27 = (arg_51_1.time_ - var_54_25) / var_54_26
+			if var_56_25 <= arg_53_1.time_ and arg_53_1.time_ < var_56_25 + var_56_26 then
+				local var_56_27 = (arg_53_1.time_ - var_56_25) / var_56_26
 
-				if arg_51_1.var_.characterEffect1070ui_story then
-					local var_54_28 = Mathf.Lerp(0, 0.5, var_54_27)
+				if arg_53_1.var_.characterEffect1070ui_story then
+					local var_56_28 = Mathf.Lerp(0, 0.5, var_56_27)
 
-					arg_51_1.var_.characterEffect1070ui_story.fillFlat = true
-					arg_51_1.var_.characterEffect1070ui_story.fillRatio = var_54_28
+					arg_53_1.var_.characterEffect1070ui_story.fillFlat = true
+					arg_53_1.var_.characterEffect1070ui_story.fillRatio = var_56_28
 				end
 			end
 
-			if arg_51_1.time_ >= var_54_25 + var_54_26 and arg_51_1.time_ < var_54_25 + var_54_26 + arg_54_0 and arg_51_1.var_.characterEffect1070ui_story then
-				local var_54_29 = 0.5
+			if arg_53_1.time_ >= var_56_25 + var_56_26 and arg_53_1.time_ < var_56_25 + var_56_26 + arg_56_0 and arg_53_1.var_.characterEffect1070ui_story then
+				local var_56_29 = 0.5
 
-				arg_51_1.var_.characterEffect1070ui_story.fillFlat = true
-				arg_51_1.var_.characterEffect1070ui_story.fillRatio = var_54_29
+				arg_53_1.var_.characterEffect1070ui_story.fillFlat = true
+				arg_53_1.var_.characterEffect1070ui_story.fillRatio = var_56_29
 			end
 
-			local var_54_30 = 0
-			local var_54_31 = 0.4
+			local var_56_30 = 0
+			local var_56_31 = 0.4
 
-			if var_54_30 < arg_51_1.time_ and arg_51_1.time_ <= var_54_30 + arg_54_0 then
-				local var_54_32 = "play"
-				local var_54_33 = "music"
+			if var_56_30 < arg_53_1.time_ and arg_53_1.time_ <= var_56_30 + arg_56_0 then
+				local var_56_32 = "play"
+				local var_56_33 = "music"
 
-				arg_51_1:AudioAction(var_54_32, var_54_33, "ui_battle", "ui_battle_stopbgm", "")
+				arg_53_1:AudioAction(var_56_32, var_56_33, "ui_battle", "ui_battle_stopbgm", "")
+
+				local var_56_34 = ""
+				local var_56_35 = manager.audio:GetAudioName("ui_battle", "ui_battle_stopbgm")
+
+				if var_56_35 ~= "" then
+					if arg_53_1.bgmTxt_.text ~= var_56_35 and arg_53_1.bgmTxt_.text ~= "" then
+						if arg_53_1.bgmTxt2_.text ~= "" then
+							arg_53_1.bgmTxt_.text = arg_53_1.bgmTxt2_.text
+						end
+
+						arg_53_1.bgmTxt2_.text = var_56_35
+
+						arg_53_1.musicChangeAnimator_:Play("music_change", 0, 0)
+					else
+						arg_53_1.bgmTxt_.text = var_56_35
+					end
+
+					if arg_53_1.bgmTimer then
+						arg_53_1.bgmTimer:Stop()
+
+						arg_53_1.bgmTimer = nil
+					end
+
+					if arg_53_1.settingData.show_music_name == 1 then
+						arg_53_1.musicController:SetSelectedState("show")
+						arg_53_1.musicAnimator_:Play("open", 0, 0)
+
+						if arg_53_1.settingData.music_time ~= 0 then
+							arg_53_1.bgmTimer = TimeTools.StartAfterSeconds(tonumber(arg_53_1.settingData.music_time), function()
+								if arg_53_1 == nil or isNil(arg_53_1.bgmTxt_) then
+									return
+								end
+
+								arg_53_1.musicController:SetSelectedState("hide")
+								arg_53_1.musicAnimator_:Play("back", 0, 0)
+							end, {})
+						end
+					end
+				end
 			end
 
-			local var_54_34 = 0
-			local var_54_35 = 0.6
+			local var_56_36 = 0
+			local var_56_37 = 0.6
 
-			if var_54_34 < arg_51_1.time_ and arg_51_1.time_ <= var_54_34 + arg_54_0 then
-				arg_51_1.talkMaxDuration = 0
-				arg_51_1.dialogCg_.alpha = 1
+			if var_56_36 < arg_53_1.time_ and arg_53_1.time_ <= var_56_36 + arg_56_0 then
+				arg_53_1.talkMaxDuration = 0
+				arg_53_1.dialogCg_.alpha = 1
 
-				arg_51_1.dialog_:SetActive(true)
-				SetActive(arg_51_1.leftNameGo_, false)
+				arg_53_1.dialog_:SetActive(true)
+				SetActive(arg_53_1.leftNameGo_, false)
 
-				arg_51_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_51_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_53_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_53_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_51_1:RecordName(arg_51_1:FormatText(GetTips("TIP_NARRATOR")))
-				SetActive(arg_51_1.iconTrs_.gameObject, false)
-				arg_51_1.callingController_:SetSelectedState("normal")
+				arg_53_1:RecordName(arg_53_1:FormatText(GetTips("TIP_NARRATOR")))
+				SetActive(arg_53_1.iconTrs_.gameObject, false)
+				arg_53_1.callingController_:SetSelectedState("normal")
 
-				local var_54_36 = arg_51_1:GetWordFromCfg(222041013)
-				local var_54_37 = arg_51_1:FormatText(var_54_36.content)
+				local var_56_38 = arg_53_1:GetWordFromCfg(222041013)
+				local var_56_39 = arg_53_1:FormatText(var_56_38.content)
 
-				arg_51_1.text_.text = var_54_37
+				arg_53_1.text_.text = var_56_39
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_51_1.text_)
+				LuaForUtil.ClearLinePrefixSymbol(arg_53_1.text_)
 
-				local var_54_38 = 24
-				local var_54_39 = utf8.len(var_54_37)
-				local var_54_40 = var_54_38 <= 0 and var_54_35 or var_54_35 * (var_54_39 / var_54_38)
+				local var_56_40 = 24
+				local var_56_41 = utf8.len(var_56_39)
+				local var_56_42 = var_56_40 <= 0 and var_56_37 or var_56_37 * (var_56_41 / var_56_40)
 
-				if var_54_40 > 0 and var_54_35 < var_54_40 then
-					arg_51_1.talkMaxDuration = var_54_40
+				if var_56_42 > 0 and var_56_37 < var_56_42 then
+					arg_53_1.talkMaxDuration = var_56_42
 
-					if var_54_40 + var_54_34 > arg_51_1.duration_ then
-						arg_51_1.duration_ = var_54_40 + var_54_34
+					if var_56_42 + var_56_36 > arg_53_1.duration_ then
+						arg_53_1.duration_ = var_56_42 + var_56_36
 					end
 				end
 
-				arg_51_1.text_.text = var_54_37
-				arg_51_1.typewritter.percent = 0
+				arg_53_1.text_.text = var_56_39
+				arg_53_1.typewritter.percent = 0
 
-				arg_51_1.typewritter:SetDirty()
-				arg_51_1:ShowNextGo(false)
-				arg_51_1:RecordContent(arg_51_1.text_.text)
+				arg_53_1.typewritter:SetDirty()
+				arg_53_1:ShowNextGo(false)
+				arg_53_1:RecordContent(arg_53_1.text_.text)
 			end
 
-			local var_54_41 = math.max(var_54_35, arg_51_1.talkMaxDuration)
+			local var_56_43 = math.max(var_56_37, arg_53_1.talkMaxDuration)
 
-			if var_54_34 <= arg_51_1.time_ and arg_51_1.time_ < var_54_34 + var_54_41 then
-				arg_51_1.typewritter.percent = (arg_51_1.time_ - var_54_34) / var_54_41
+			if var_56_36 <= arg_53_1.time_ and arg_53_1.time_ < var_56_36 + var_56_43 then
+				arg_53_1.typewritter.percent = (arg_53_1.time_ - var_56_36) / var_56_43
 
-				arg_51_1.typewritter:SetDirty()
+				arg_53_1.typewritter:SetDirty()
 			end
 
-			if arg_51_1.time_ >= var_54_34 + var_54_41 and arg_51_1.time_ < var_54_34 + var_54_41 + arg_54_0 then
-				arg_51_1.typewritter.percent = 1
+			if arg_53_1.time_ >= var_56_36 + var_56_43 and arg_53_1.time_ < var_56_36 + var_56_43 + arg_56_0 then
+				arg_53_1.typewritter.percent = 1
 
-				arg_51_1.typewritter:SetDirty()
-				arg_51_1:ShowNextGo(true)
+				arg_53_1.typewritter:SetDirty()
+				arg_53_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041014 = function(arg_55_0, arg_55_1)
-		arg_55_1.time_ = 0
-		arg_55_1.frameCnt_ = 0
-		arg_55_1.state_ = "playing"
-		arg_55_1.curTalkId_ = 222041014
-		arg_55_1.duration_ = 5
+	Play222041014 = function(arg_58_0, arg_58_1)
+		arg_58_1.time_ = 0
+		arg_58_1.frameCnt_ = 0
+		arg_58_1.state_ = "playing"
+		arg_58_1.curTalkId_ = 222041014
+		arg_58_1.duration_ = 5
 
-		SetActive(arg_55_1.tipsGo_, false)
+		SetActive(arg_58_1.tipsGo_, false)
 
-		function arg_55_1.onSingleLineFinish_()
-			arg_55_1.onSingleLineUpdate_ = nil
-			arg_55_1.onSingleLineFinish_ = nil
-			arg_55_1.state_ = "waiting"
+		function arg_58_1.onSingleLineFinish_()
+			arg_58_1.onSingleLineUpdate_ = nil
+			arg_58_1.onSingleLineFinish_ = nil
+			arg_58_1.state_ = "waiting"
 		end
 
-		function arg_55_1.playNext_(arg_57_0)
-			if arg_57_0 == 1 then
-				arg_55_0:Play222041015(arg_55_1)
+		function arg_58_1.playNext_(arg_60_0)
+			if arg_60_0 == 1 then
+				arg_58_0:Play222041015(arg_58_1)
 			end
 		end
 
-		function arg_55_1.onSingleLineUpdate_(arg_58_0)
-			local var_58_0 = 0
-			local var_58_1 = 1
+		function arg_58_1.onSingleLineUpdate_(arg_61_0)
+			local var_61_0 = 0
+			local var_61_1 = 1
 
-			if var_58_0 < arg_55_1.time_ and arg_55_1.time_ <= var_58_0 + arg_58_0 then
-				local var_58_2 = "play"
-				local var_58_3 = "effect"
+			if var_61_0 < arg_58_1.time_ and arg_58_1.time_ <= var_61_0 + arg_61_0 then
+				local var_61_2 = "play"
+				local var_61_3 = "effect"
 
-				arg_55_1:AudioAction(var_58_2, var_58_3, "se_story_222_00", "se_story_222_00_machinestart", "")
+				arg_58_1:AudioAction(var_61_2, var_61_3, "se_story_222_00", "se_story_222_00_machinestart", "")
 			end
 
-			local var_58_4 = 0
-			local var_58_5 = 1.3
+			local var_61_4 = 0
+			local var_61_5 = 1.3
 
-			if var_58_4 < arg_55_1.time_ and arg_55_1.time_ <= var_58_4 + arg_58_0 then
-				arg_55_1.talkMaxDuration = 0
-				arg_55_1.dialogCg_.alpha = 1
+			if var_61_4 < arg_58_1.time_ and arg_58_1.time_ <= var_61_4 + arg_61_0 then
+				arg_58_1.talkMaxDuration = 0
+				arg_58_1.dialogCg_.alpha = 1
 
-				arg_55_1.dialog_:SetActive(true)
-				SetActive(arg_55_1.leftNameGo_, false)
+				arg_58_1.dialog_:SetActive(true)
+				SetActive(arg_58_1.leftNameGo_, false)
 
-				arg_55_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_55_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_58_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_58_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_55_1:RecordName(arg_55_1:FormatText(GetTips("TIP_NARRATOR")))
-				SetActive(arg_55_1.iconTrs_.gameObject, false)
-				arg_55_1.callingController_:SetSelectedState("normal")
+				arg_58_1:RecordName(arg_58_1:FormatText(GetTips("TIP_NARRATOR")))
+				SetActive(arg_58_1.iconTrs_.gameObject, false)
+				arg_58_1.callingController_:SetSelectedState("normal")
 
-				local var_58_6 = arg_55_1:GetWordFromCfg(222041014)
-				local var_58_7 = arg_55_1:FormatText(var_58_6.content)
+				local var_61_6 = arg_58_1:GetWordFromCfg(222041014)
+				local var_61_7 = arg_58_1:FormatText(var_61_6.content)
 
-				arg_55_1.text_.text = var_58_7
+				arg_58_1.text_.text = var_61_7
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_55_1.text_)
+				LuaForUtil.ClearLinePrefixSymbol(arg_58_1.text_)
 
-				local var_58_8 = 52
-				local var_58_9 = utf8.len(var_58_7)
-				local var_58_10 = var_58_8 <= 0 and var_58_5 or var_58_5 * (var_58_9 / var_58_8)
+				local var_61_8 = 52
+				local var_61_9 = utf8.len(var_61_7)
+				local var_61_10 = var_61_8 <= 0 and var_61_5 or var_61_5 * (var_61_9 / var_61_8)
 
-				if var_58_10 > 0 and var_58_5 < var_58_10 then
-					arg_55_1.talkMaxDuration = var_58_10
+				if var_61_10 > 0 and var_61_5 < var_61_10 then
+					arg_58_1.talkMaxDuration = var_61_10
 
-					if var_58_10 + var_58_4 > arg_55_1.duration_ then
-						arg_55_1.duration_ = var_58_10 + var_58_4
+					if var_61_10 + var_61_4 > arg_58_1.duration_ then
+						arg_58_1.duration_ = var_61_10 + var_61_4
 					end
 				end
 
-				arg_55_1.text_.text = var_58_7
-				arg_55_1.typewritter.percent = 0
+				arg_58_1.text_.text = var_61_7
+				arg_58_1.typewritter.percent = 0
 
-				arg_55_1.typewritter:SetDirty()
-				arg_55_1:ShowNextGo(false)
-				arg_55_1:RecordContent(arg_55_1.text_.text)
+				arg_58_1.typewritter:SetDirty()
+				arg_58_1:ShowNextGo(false)
+				arg_58_1:RecordContent(arg_58_1.text_.text)
 			end
 
-			local var_58_11 = math.max(var_58_5, arg_55_1.talkMaxDuration)
+			local var_61_11 = math.max(var_61_5, arg_58_1.talkMaxDuration)
 
-			if var_58_4 <= arg_55_1.time_ and arg_55_1.time_ < var_58_4 + var_58_11 then
-				arg_55_1.typewritter.percent = (arg_55_1.time_ - var_58_4) / var_58_11
+			if var_61_4 <= arg_58_1.time_ and arg_58_1.time_ < var_61_4 + var_61_11 then
+				arg_58_1.typewritter.percent = (arg_58_1.time_ - var_61_4) / var_61_11
 
-				arg_55_1.typewritter:SetDirty()
+				arg_58_1.typewritter:SetDirty()
 			end
 
-			if arg_55_1.time_ >= var_58_4 + var_58_11 and arg_55_1.time_ < var_58_4 + var_58_11 + arg_58_0 then
-				arg_55_1.typewritter.percent = 1
+			if arg_58_1.time_ >= var_61_4 + var_61_11 and arg_58_1.time_ < var_61_4 + var_61_11 + arg_61_0 then
+				arg_58_1.typewritter.percent = 1
 
-				arg_55_1.typewritter:SetDirty()
-				arg_55_1:ShowNextGo(true)
+				arg_58_1.typewritter:SetDirty()
+				arg_58_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041015 = function(arg_59_0, arg_59_1)
-		arg_59_1.time_ = 0
-		arg_59_1.frameCnt_ = 0
-		arg_59_1.state_ = "playing"
-		arg_59_1.curTalkId_ = 222041015
-		arg_59_1.duration_ = 3.7
+	Play222041015 = function(arg_62_0, arg_62_1)
+		arg_62_1.time_ = 0
+		arg_62_1.frameCnt_ = 0
+		arg_62_1.state_ = "playing"
+		arg_62_1.curTalkId_ = 222041015
+		arg_62_1.duration_ = 3.7
 
-		local var_59_0 = {
+		local var_62_0 = {
 			ja = 3.6,
 			ko = 3.666,
 			zh = 3.7
 		}
-		local var_59_1 = manager.audio:GetLocalizationFlag()
+		local var_62_1 = manager.audio:GetLocalizationFlag()
 
-		if var_59_0[var_59_1] ~= nil then
-			arg_59_1.duration_ = var_59_0[var_59_1]
+		if var_62_0[var_62_1] ~= nil then
+			arg_62_1.duration_ = var_62_0[var_62_1]
 		end
 
-		SetActive(arg_59_1.tipsGo_, false)
+		SetActive(arg_62_1.tipsGo_, false)
 
-		function arg_59_1.onSingleLineFinish_()
-			arg_59_1.onSingleLineUpdate_ = nil
-			arg_59_1.onSingleLineFinish_ = nil
-			arg_59_1.state_ = "waiting"
+		function arg_62_1.onSingleLineFinish_()
+			arg_62_1.onSingleLineUpdate_ = nil
+			arg_62_1.onSingleLineFinish_ = nil
+			arg_62_1.state_ = "waiting"
 		end
 
-		function arg_59_1.playNext_(arg_61_0)
-			if arg_61_0 == 1 then
-				arg_59_0:Play222041016(arg_59_1)
+		function arg_62_1.playNext_(arg_64_0)
+			if arg_64_0 == 1 then
+				arg_62_0:Play222041016(arg_62_1)
 			end
 		end
 
-		function arg_59_1.onSingleLineUpdate_(arg_62_0)
-			local var_62_0 = 0
-			local var_62_1 = 0.4
+		function arg_62_1.onSingleLineUpdate_(arg_65_0)
+			local var_65_0 = 0
+			local var_65_1 = 0.4
 
-			if var_62_0 < arg_59_1.time_ and arg_59_1.time_ <= var_62_0 + arg_62_0 then
-				local var_62_2 = "play"
-				local var_62_3 = "music"
+			if var_65_0 < arg_62_1.time_ and arg_62_1.time_ <= var_65_0 + arg_65_0 then
+				local var_65_2 = "play"
+				local var_65_3 = "music"
 
-				arg_59_1:AudioAction(var_62_2, var_62_3, "ui_battle", "ui_battle_stopbgm", "")
+				arg_62_1:AudioAction(var_65_2, var_65_3, "ui_battle", "ui_battle_stopbgm", "")
+
+				local var_65_4 = ""
+				local var_65_5 = manager.audio:GetAudioName("ui_battle", "ui_battle_stopbgm")
+
+				if var_65_5 ~= "" then
+					if arg_62_1.bgmTxt_.text ~= var_65_5 and arg_62_1.bgmTxt_.text ~= "" then
+						if arg_62_1.bgmTxt2_.text ~= "" then
+							arg_62_1.bgmTxt_.text = arg_62_1.bgmTxt2_.text
+						end
+
+						arg_62_1.bgmTxt2_.text = var_65_5
+
+						arg_62_1.musicChangeAnimator_:Play("music_change", 0, 0)
+					else
+						arg_62_1.bgmTxt_.text = var_65_5
+					end
+
+					if arg_62_1.bgmTimer then
+						arg_62_1.bgmTimer:Stop()
+
+						arg_62_1.bgmTimer = nil
+					end
+
+					if arg_62_1.settingData.show_music_name == 1 then
+						arg_62_1.musicController:SetSelectedState("show")
+						arg_62_1.musicAnimator_:Play("open", 0, 0)
+
+						if arg_62_1.settingData.music_time ~= 0 then
+							arg_62_1.bgmTimer = TimeTools.StartAfterSeconds(tonumber(arg_62_1.settingData.music_time), function()
+								if arg_62_1 == nil or isNil(arg_62_1.bgmTxt_) then
+									return
+								end
+
+								arg_62_1.musicController:SetSelectedState("hide")
+								arg_62_1.musicAnimator_:Play("back", 0, 0)
+							end, {})
+						end
+					end
+				end
 			end
 
-			local var_62_4 = 0.566666666666667
-			local var_62_5 = 1
+			local var_65_6 = 0.566666666666667
+			local var_65_7 = 1
 
-			if var_62_4 < arg_59_1.time_ and arg_59_1.time_ <= var_62_4 + arg_62_0 then
-				local var_62_6 = "play"
-				local var_62_7 = "music"
+			if var_65_6 < arg_62_1.time_ and arg_62_1.time_ <= var_65_6 + arg_65_0 then
+				local var_65_8 = "play"
+				local var_65_9 = "music"
 
-				arg_59_1:AudioAction(var_62_6, var_62_7, "bgm_activity_2_0_battle_jingdu", "bgm_activity_2_0_battle_jingdu", "bgm_activity_2_0_battle_jingdu.awb")
+				arg_62_1:AudioAction(var_65_8, var_65_9, "bgm_activity_2_0_battle_jingdu", "bgm_activity_2_0_battle_jingdu", "bgm_activity_2_0_battle_jingdu.awb")
+
+				local var_65_10 = ""
+				local var_65_11 = manager.audio:GetAudioName("bgm_activity_2_0_battle_jingdu", "bgm_activity_2_0_battle_jingdu")
+
+				if var_65_11 ~= "" then
+					if arg_62_1.bgmTxt_.text ~= var_65_11 and arg_62_1.bgmTxt_.text ~= "" then
+						if arg_62_1.bgmTxt2_.text ~= "" then
+							arg_62_1.bgmTxt_.text = arg_62_1.bgmTxt2_.text
+						end
+
+						arg_62_1.bgmTxt2_.text = var_65_11
+
+						arg_62_1.musicChangeAnimator_:Play("music_change", 0, 0)
+					else
+						arg_62_1.bgmTxt_.text = var_65_11
+					end
+
+					if arg_62_1.bgmTimer then
+						arg_62_1.bgmTimer:Stop()
+
+						arg_62_1.bgmTimer = nil
+					end
+
+					if arg_62_1.settingData.show_music_name == 1 then
+						arg_62_1.musicController:SetSelectedState("show")
+						arg_62_1.musicAnimator_:Play("open", 0, 0)
+
+						if arg_62_1.settingData.music_time ~= 0 then
+							arg_62_1.bgmTimer = TimeTools.StartAfterSeconds(tonumber(arg_62_1.settingData.music_time), function()
+								if arg_62_1 == nil or isNil(arg_62_1.bgmTxt_) then
+									return
+								end
+
+								arg_62_1.musicController:SetSelectedState("hide")
+								arg_62_1.musicAnimator_:Play("back", 0, 0)
+							end, {})
+						end
+					end
+				end
 			end
 
-			local var_62_8 = 0
-			local var_62_9 = 0.35
+			local var_65_12 = 0
+			local var_65_13 = 0.35
 
-			if var_62_8 < arg_59_1.time_ and arg_59_1.time_ <= var_62_8 + arg_62_0 then
-				arg_59_1.talkMaxDuration = 0
-				arg_59_1.dialogCg_.alpha = 1
+			if var_65_12 < arg_62_1.time_ and arg_62_1.time_ <= var_65_12 + arg_65_0 then
+				arg_62_1.talkMaxDuration = 0
+				arg_62_1.dialogCg_.alpha = 1
 
-				arg_59_1.dialog_:SetActive(true)
-				SetActive(arg_59_1.leftNameGo_, true)
+				arg_62_1.dialog_:SetActive(true)
+				SetActive(arg_62_1.leftNameGo_, true)
 
-				local var_62_10 = arg_59_1:FormatText(StoryNameCfg[29].name)
+				local var_65_14 = arg_62_1:FormatText(StoryNameCfg[29].name)
 
-				arg_59_1.leftNameTxt_.text = var_62_10
+				arg_62_1.leftNameTxt_.text = var_65_14
 
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_59_1.leftNameTxt_.transform)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_62_1.leftNameTxt_.transform)
 
-				arg_59_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_59_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_62_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_62_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_59_1:RecordName(arg_59_1.leftNameTxt_.text)
-				SetActive(arg_59_1.iconTrs_.gameObject, true)
-				arg_59_1.iconController_:SetSelectedState("hero")
+				arg_62_1:RecordName(arg_62_1.leftNameTxt_.text)
+				SetActive(arg_62_1.iconTrs_.gameObject, true)
+				arg_62_1.iconController_:SetSelectedState("hero")
 
-				arg_59_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_2088")
+				arg_62_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_2088")
 
-				arg_59_1.callingController_:SetSelectedState("normal")
+				arg_62_1.callingController_:SetSelectedState("normal")
 
-				local var_62_11 = arg_59_1:GetWordFromCfg(222041015)
-				local var_62_12 = arg_59_1:FormatText(var_62_11.content)
+				arg_62_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_62_1.icon_.color = Color.New(1, 1, 1)
 
-				arg_59_1.text_.text = var_62_12
+				local var_65_15 = arg_62_1:GetWordFromCfg(222041015)
+				local var_65_16 = arg_62_1:FormatText(var_65_15.content)
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_59_1.text_)
+				arg_62_1.text_.text = var_65_16
 
-				local var_62_13 = 14
-				local var_62_14 = utf8.len(var_62_12)
-				local var_62_15 = var_62_13 <= 0 and var_62_9 or var_62_9 * (var_62_14 / var_62_13)
+				LuaForUtil.ClearLinePrefixSymbol(arg_62_1.text_)
 
-				if var_62_15 > 0 and var_62_9 < var_62_15 then
-					arg_59_1.talkMaxDuration = var_62_15
+				local var_65_17 = 14
+				local var_65_18 = utf8.len(var_65_16)
+				local var_65_19 = var_65_17 <= 0 and var_65_13 or var_65_13 * (var_65_18 / var_65_17)
 
-					if var_62_15 + var_62_8 > arg_59_1.duration_ then
-						arg_59_1.duration_ = var_62_15 + var_62_8
+				if var_65_19 > 0 and var_65_13 < var_65_19 then
+					arg_62_1.talkMaxDuration = var_65_19
+
+					if var_65_19 + var_65_12 > arg_62_1.duration_ then
+						arg_62_1.duration_ = var_65_19 + var_65_12
 					end
 				end
 
-				arg_59_1.text_.text = var_62_12
-				arg_59_1.typewritter.percent = 0
+				arg_62_1.text_.text = var_65_16
+				arg_62_1.typewritter.percent = 0
 
-				arg_59_1.typewritter:SetDirty()
-				arg_59_1:ShowNextGo(false)
+				arg_62_1.typewritter:SetDirty()
+				arg_62_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_222041", "222041015", "story_v_out_222041.awb") ~= 0 then
-					local var_62_16 = manager.audio:GetVoiceLength("story_v_out_222041", "222041015", "story_v_out_222041.awb") / 1000
+					local var_65_20 = manager.audio:GetVoiceLength("story_v_out_222041", "222041015", "story_v_out_222041.awb") / 1000
 
-					if var_62_16 + var_62_8 > arg_59_1.duration_ then
-						arg_59_1.duration_ = var_62_16 + var_62_8
+					if var_65_20 + var_65_12 > arg_62_1.duration_ then
+						arg_62_1.duration_ = var_65_20 + var_65_12
 					end
 
-					if var_62_11.prefab_name ~= "" and arg_59_1.actors_[var_62_11.prefab_name] ~= nil then
-						local var_62_17 = LuaForUtil.PlayVoiceWithCriLipsync(arg_59_1.actors_[var_62_11.prefab_name].transform, "story_v_out_222041", "222041015", "story_v_out_222041.awb")
+					if var_65_15.prefab_name ~= "" and arg_62_1.actors_[var_65_15.prefab_name] ~= nil then
+						local var_65_21 = LuaForUtil.PlayVoiceWithCriLipsync(arg_62_1.actors_[var_65_15.prefab_name].transform, "story_v_out_222041", "222041015", "story_v_out_222041.awb")
 
-						arg_59_1:RecordAudio("222041015", var_62_17)
-						arg_59_1:RecordAudio("222041015", var_62_17)
+						arg_62_1:RecordAudio("222041015", var_65_21)
+						arg_62_1:RecordAudio("222041015", var_65_21)
 					else
-						arg_59_1:AudioAction("play", "voice", "story_v_out_222041", "222041015", "story_v_out_222041.awb")
+						arg_62_1:AudioAction("play", "voice", "story_v_out_222041", "222041015", "story_v_out_222041.awb")
 					end
 
-					arg_59_1:RecordHistoryTalkVoice("story_v_out_222041", "222041015", "story_v_out_222041.awb")
+					arg_62_1:RecordHistoryTalkVoice("story_v_out_222041", "222041015", "story_v_out_222041.awb")
 				end
 
-				arg_59_1:RecordContent(arg_59_1.text_.text)
+				arg_62_1:RecordContent(arg_62_1.text_.text)
 			end
 
-			local var_62_18 = math.max(var_62_9, arg_59_1.talkMaxDuration)
+			local var_65_22 = math.max(var_65_13, arg_62_1.talkMaxDuration)
 
-			if var_62_8 <= arg_59_1.time_ and arg_59_1.time_ < var_62_8 + var_62_18 then
-				arg_59_1.typewritter.percent = (arg_59_1.time_ - var_62_8) / var_62_18
+			if var_65_12 <= arg_62_1.time_ and arg_62_1.time_ < var_65_12 + var_65_22 then
+				arg_62_1.typewritter.percent = (arg_62_1.time_ - var_65_12) / var_65_22
 
-				arg_59_1.typewritter:SetDirty()
+				arg_62_1.typewritter:SetDirty()
 			end
 
-			if arg_59_1.time_ >= var_62_8 + var_62_18 and arg_59_1.time_ < var_62_8 + var_62_18 + arg_62_0 then
-				arg_59_1.typewritter.percent = 1
+			if arg_62_1.time_ >= var_65_12 + var_65_22 and arg_62_1.time_ < var_65_12 + var_65_22 + arg_65_0 then
+				arg_62_1.typewritter.percent = 1
 
-				arg_59_1.typewritter:SetDirty()
-				arg_59_1:ShowNextGo(true)
+				arg_62_1.typewritter:SetDirty()
+				arg_62_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041016 = function(arg_63_0, arg_63_1)
-		arg_63_1.time_ = 0
-		arg_63_1.frameCnt_ = 0
-		arg_63_1.state_ = "playing"
-		arg_63_1.curTalkId_ = 222041016
-		arg_63_1.duration_ = 6.066
+	Play222041016 = function(arg_68_0, arg_68_1)
+		arg_68_1.time_ = 0
+		arg_68_1.frameCnt_ = 0
+		arg_68_1.state_ = "playing"
+		arg_68_1.curTalkId_ = 222041016
+		arg_68_1.duration_ = 6.07
 
-		local var_63_0 = {
+		local var_68_0 = {
 			ja = 6.066,
 			ko = 4.3,
 			zh = 4.333
 		}
-		local var_63_1 = manager.audio:GetLocalizationFlag()
+		local var_68_1 = manager.audio:GetLocalizationFlag()
 
-		if var_63_0[var_63_1] ~= nil then
-			arg_63_1.duration_ = var_63_0[var_63_1]
+		if var_68_0[var_68_1] ~= nil then
+			arg_68_1.duration_ = var_68_0[var_68_1]
 		end
 
-		SetActive(arg_63_1.tipsGo_, false)
+		SetActive(arg_68_1.tipsGo_, false)
 
-		function arg_63_1.onSingleLineFinish_()
-			arg_63_1.onSingleLineUpdate_ = nil
-			arg_63_1.onSingleLineFinish_ = nil
-			arg_63_1.state_ = "waiting"
+		function arg_68_1.onSingleLineFinish_()
+			arg_68_1.onSingleLineUpdate_ = nil
+			arg_68_1.onSingleLineFinish_ = nil
+			arg_68_1.state_ = "waiting"
 		end
 
-		function arg_63_1.playNext_(arg_65_0)
-			if arg_65_0 == 1 then
-				arg_63_0:Play222041017(arg_63_1)
+		function arg_68_1.playNext_(arg_70_0)
+			if arg_70_0 == 1 then
+				arg_68_0:Play222041017(arg_68_1)
 			end
 		end
 
-		function arg_63_1.onSingleLineUpdate_(arg_66_0)
-			local var_66_0 = 0
-			local var_66_1 = 0.5
+		function arg_68_1.onSingleLineUpdate_(arg_71_0)
+			local var_71_0 = 0
+			local var_71_1 = 0.5
 
-			if var_66_0 < arg_63_1.time_ and arg_63_1.time_ <= var_66_0 + arg_66_0 then
-				arg_63_1.talkMaxDuration = 0
-				arg_63_1.dialogCg_.alpha = 1
+			if var_71_0 < arg_68_1.time_ and arg_68_1.time_ <= var_71_0 + arg_71_0 then
+				arg_68_1.talkMaxDuration = 0
+				arg_68_1.dialogCg_.alpha = 1
 
-				arg_63_1.dialog_:SetActive(true)
-				SetActive(arg_63_1.leftNameGo_, true)
+				arg_68_1.dialog_:SetActive(true)
+				SetActive(arg_68_1.leftNameGo_, true)
 
-				local var_66_2 = arg_63_1:FormatText(StoryNameCfg[29].name)
+				local var_71_2 = arg_68_1:FormatText(StoryNameCfg[29].name)
 
-				arg_63_1.leftNameTxt_.text = var_66_2
+				arg_68_1.leftNameTxt_.text = var_71_2
 
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_63_1.leftNameTxt_.transform)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_68_1.leftNameTxt_.transform)
 
-				arg_63_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_63_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_68_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_68_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_63_1:RecordName(arg_63_1.leftNameTxt_.text)
-				SetActive(arg_63_1.iconTrs_.gameObject, true)
-				arg_63_1.iconController_:SetSelectedState("hero")
+				arg_68_1:RecordName(arg_68_1.leftNameTxt_.text)
+				SetActive(arg_68_1.iconTrs_.gameObject, true)
+				arg_68_1.iconController_:SetSelectedState("hero")
 
-				arg_63_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_2088")
+				arg_68_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_2088")
 
-				arg_63_1.callingController_:SetSelectedState("normal")
+				arg_68_1.callingController_:SetSelectedState("normal")
 
-				local var_66_3 = arg_63_1:GetWordFromCfg(222041016)
-				local var_66_4 = arg_63_1:FormatText(var_66_3.content)
+				arg_68_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_68_1.icon_.color = Color.New(1, 1, 1)
 
-				arg_63_1.text_.text = var_66_4
+				local var_71_3 = arg_68_1:GetWordFromCfg(222041016)
+				local var_71_4 = arg_68_1:FormatText(var_71_3.content)
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_63_1.text_)
+				arg_68_1.text_.text = var_71_4
 
-				local var_66_5 = 20
-				local var_66_6 = utf8.len(var_66_4)
-				local var_66_7 = var_66_5 <= 0 and var_66_1 or var_66_1 * (var_66_6 / var_66_5)
+				LuaForUtil.ClearLinePrefixSymbol(arg_68_1.text_)
 
-				if var_66_7 > 0 and var_66_1 < var_66_7 then
-					arg_63_1.talkMaxDuration = var_66_7
+				local var_71_5 = 20
+				local var_71_6 = utf8.len(var_71_4)
+				local var_71_7 = var_71_5 <= 0 and var_71_1 or var_71_1 * (var_71_6 / var_71_5)
 
-					if var_66_7 + var_66_0 > arg_63_1.duration_ then
-						arg_63_1.duration_ = var_66_7 + var_66_0
+				if var_71_7 > 0 and var_71_1 < var_71_7 then
+					arg_68_1.talkMaxDuration = var_71_7
+
+					if var_71_7 + var_71_0 > arg_68_1.duration_ then
+						arg_68_1.duration_ = var_71_7 + var_71_0
 					end
 				end
 
-				arg_63_1.text_.text = var_66_4
-				arg_63_1.typewritter.percent = 0
+				arg_68_1.text_.text = var_71_4
+				arg_68_1.typewritter.percent = 0
 
-				arg_63_1.typewritter:SetDirty()
-				arg_63_1:ShowNextGo(false)
+				arg_68_1.typewritter:SetDirty()
+				arg_68_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_222041", "222041016", "story_v_out_222041.awb") ~= 0 then
-					local var_66_8 = manager.audio:GetVoiceLength("story_v_out_222041", "222041016", "story_v_out_222041.awb") / 1000
+					local var_71_8 = manager.audio:GetVoiceLength("story_v_out_222041", "222041016", "story_v_out_222041.awb") / 1000
 
-					if var_66_8 + var_66_0 > arg_63_1.duration_ then
-						arg_63_1.duration_ = var_66_8 + var_66_0
+					if var_71_8 + var_71_0 > arg_68_1.duration_ then
+						arg_68_1.duration_ = var_71_8 + var_71_0
 					end
 
-					if var_66_3.prefab_name ~= "" and arg_63_1.actors_[var_66_3.prefab_name] ~= nil then
-						local var_66_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_63_1.actors_[var_66_3.prefab_name].transform, "story_v_out_222041", "222041016", "story_v_out_222041.awb")
+					if var_71_3.prefab_name ~= "" and arg_68_1.actors_[var_71_3.prefab_name] ~= nil then
+						local var_71_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_68_1.actors_[var_71_3.prefab_name].transform, "story_v_out_222041", "222041016", "story_v_out_222041.awb")
 
-						arg_63_1:RecordAudio("222041016", var_66_9)
-						arg_63_1:RecordAudio("222041016", var_66_9)
+						arg_68_1:RecordAudio("222041016", var_71_9)
+						arg_68_1:RecordAudio("222041016", var_71_9)
 					else
-						arg_63_1:AudioAction("play", "voice", "story_v_out_222041", "222041016", "story_v_out_222041.awb")
+						arg_68_1:AudioAction("play", "voice", "story_v_out_222041", "222041016", "story_v_out_222041.awb")
 					end
 
-					arg_63_1:RecordHistoryTalkVoice("story_v_out_222041", "222041016", "story_v_out_222041.awb")
+					arg_68_1:RecordHistoryTalkVoice("story_v_out_222041", "222041016", "story_v_out_222041.awb")
 				end
 
-				arg_63_1:RecordContent(arg_63_1.text_.text)
+				arg_68_1:RecordContent(arg_68_1.text_.text)
 			end
 
-			local var_66_10 = math.max(var_66_1, arg_63_1.talkMaxDuration)
+			local var_71_10 = math.max(var_71_1, arg_68_1.talkMaxDuration)
 
-			if var_66_0 <= arg_63_1.time_ and arg_63_1.time_ < var_66_0 + var_66_10 then
-				arg_63_1.typewritter.percent = (arg_63_1.time_ - var_66_0) / var_66_10
+			if var_71_0 <= arg_68_1.time_ and arg_68_1.time_ < var_71_0 + var_71_10 then
+				arg_68_1.typewritter.percent = (arg_68_1.time_ - var_71_0) / var_71_10
 
-				arg_63_1.typewritter:SetDirty()
+				arg_68_1.typewritter:SetDirty()
 			end
 
-			if arg_63_1.time_ >= var_66_0 + var_66_10 and arg_63_1.time_ < var_66_0 + var_66_10 + arg_66_0 then
-				arg_63_1.typewritter.percent = 1
+			if arg_68_1.time_ >= var_71_0 + var_71_10 and arg_68_1.time_ < var_71_0 + var_71_10 + arg_71_0 then
+				arg_68_1.typewritter.percent = 1
 
-				arg_63_1.typewritter:SetDirty()
-				arg_63_1:ShowNextGo(true)
+				arg_68_1.typewritter:SetDirty()
+				arg_68_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041017 = function(arg_67_0, arg_67_1)
-		arg_67_1.time_ = 0
-		arg_67_1.frameCnt_ = 0
-		arg_67_1.state_ = "playing"
-		arg_67_1.curTalkId_ = 222041017
-		arg_67_1.duration_ = 3.466
+	Play222041017 = function(arg_72_0, arg_72_1)
+		arg_72_1.time_ = 0
+		arg_72_1.frameCnt_ = 0
+		arg_72_1.state_ = "playing"
+		arg_72_1.curTalkId_ = 222041017
+		arg_72_1.duration_ = 3.47
 
-		local var_67_0 = {
+		local var_72_0 = {
 			ja = 3.466,
 			ko = 2.433,
 			zh = 2.433
 		}
-		local var_67_1 = manager.audio:GetLocalizationFlag()
+		local var_72_1 = manager.audio:GetLocalizationFlag()
 
-		if var_67_0[var_67_1] ~= nil then
-			arg_67_1.duration_ = var_67_0[var_67_1]
+		if var_72_0[var_72_1] ~= nil then
+			arg_72_1.duration_ = var_72_0[var_72_1]
 		end
 
-		SetActive(arg_67_1.tipsGo_, false)
+		SetActive(arg_72_1.tipsGo_, false)
 
-		function arg_67_1.onSingleLineFinish_()
-			arg_67_1.onSingleLineUpdate_ = nil
-			arg_67_1.onSingleLineFinish_ = nil
-			arg_67_1.state_ = "waiting"
+		function arg_72_1.onSingleLineFinish_()
+			arg_72_1.onSingleLineUpdate_ = nil
+			arg_72_1.onSingleLineFinish_ = nil
+			arg_72_1.state_ = "waiting"
 		end
 
-		function arg_67_1.playNext_(arg_69_0)
-			if arg_69_0 == 1 then
-				arg_67_0:Play222041018(arg_67_1)
+		function arg_72_1.playNext_(arg_74_0)
+			if arg_74_0 == 1 then
+				arg_72_0:Play222041018(arg_72_1)
 			end
 		end
 
-		function arg_67_1.onSingleLineUpdate_(arg_70_0)
-			local var_70_0 = arg_67_1.actors_["1070ui_story"].transform
-			local var_70_1 = 0
+		function arg_72_1.onSingleLineUpdate_(arg_75_0)
+			local var_75_0 = arg_72_1.actors_["1070ui_story"].transform
+			local var_75_1 = 0
 
-			if var_70_1 < arg_67_1.time_ and arg_67_1.time_ <= var_70_1 + arg_70_0 then
-				arg_67_1.var_.moveOldPos1070ui_story = var_70_0.localPosition
+			if var_75_1 < arg_72_1.time_ and arg_72_1.time_ <= var_75_1 + arg_75_0 then
+				arg_72_1.var_.moveOldPos1070ui_story = var_75_0.localPosition
 			end
 
-			local var_70_2 = 0.001
+			local var_75_2 = 0.001
 
-			if var_70_1 <= arg_67_1.time_ and arg_67_1.time_ < var_70_1 + var_70_2 then
-				local var_70_3 = (arg_67_1.time_ - var_70_1) / var_70_2
-				local var_70_4 = Vector3.New(-0.7, -0.95, -6.05)
+			if var_75_1 <= arg_72_1.time_ and arg_72_1.time_ < var_75_1 + var_75_2 then
+				local var_75_3 = (arg_72_1.time_ - var_75_1) / var_75_2
+				local var_75_4 = Vector3.New(-0.7, -0.95, -6.05)
 
-				var_70_0.localPosition = Vector3.Lerp(arg_67_1.var_.moveOldPos1070ui_story, var_70_4, var_70_3)
+				var_75_0.localPosition = Vector3.Lerp(arg_72_1.var_.moveOldPos1070ui_story, var_75_4, var_75_3)
 
-				local var_70_5 = manager.ui.mainCamera.transform.position - var_70_0.position
+				local var_75_5 = manager.ui.mainCamera.transform.position - var_75_0.position
 
-				var_70_0.forward = Vector3.New(var_70_5.x, var_70_5.y, var_70_5.z)
+				var_75_0.forward = Vector3.New(var_75_5.x, var_75_5.y, var_75_5.z)
 
-				local var_70_6 = var_70_0.localEulerAngles
+				local var_75_6 = var_75_0.localEulerAngles
 
-				var_70_6.z = 0
-				var_70_6.x = 0
-				var_70_0.localEulerAngles = var_70_6
+				var_75_6.z = 0
+				var_75_6.x = 0
+				var_75_0.localEulerAngles = var_75_6
 			end
 
-			if arg_67_1.time_ >= var_70_1 + var_70_2 and arg_67_1.time_ < var_70_1 + var_70_2 + arg_70_0 then
-				var_70_0.localPosition = Vector3.New(-0.7, -0.95, -6.05)
+			if arg_72_1.time_ >= var_75_1 + var_75_2 and arg_72_1.time_ < var_75_1 + var_75_2 + arg_75_0 then
+				var_75_0.localPosition = Vector3.New(-0.7, -0.95, -6.05)
 
-				local var_70_7 = manager.ui.mainCamera.transform.position - var_70_0.position
+				local var_75_7 = manager.ui.mainCamera.transform.position - var_75_0.position
 
-				var_70_0.forward = Vector3.New(var_70_7.x, var_70_7.y, var_70_7.z)
+				var_75_0.forward = Vector3.New(var_75_7.x, var_75_7.y, var_75_7.z)
 
-				local var_70_8 = var_70_0.localEulerAngles
+				local var_75_8 = var_75_0.localEulerAngles
 
-				var_70_8.z = 0
-				var_70_8.x = 0
-				var_70_0.localEulerAngles = var_70_8
+				var_75_8.z = 0
+				var_75_8.x = 0
+				var_75_0.localEulerAngles = var_75_8
 			end
 
-			local var_70_9 = arg_67_1.actors_["1070ui_story"]
-			local var_70_10 = 0
+			local var_75_9 = arg_72_1.actors_["1070ui_story"]
+			local var_75_10 = 0
 
-			if var_70_10 < arg_67_1.time_ and arg_67_1.time_ <= var_70_10 + arg_70_0 and arg_67_1.var_.characterEffect1070ui_story == nil then
-				arg_67_1.var_.characterEffect1070ui_story = var_70_9:GetComponentInChildren(typeof(CharacterEffect))
+			if var_75_10 < arg_72_1.time_ and arg_72_1.time_ <= var_75_10 + arg_75_0 and arg_72_1.var_.characterEffect1070ui_story == nil then
+				arg_72_1.var_.characterEffect1070ui_story = var_75_9:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_70_11 = 0.200000002980232
+			local var_75_11 = 0.200000002980232
 
-			if var_70_10 <= arg_67_1.time_ and arg_67_1.time_ < var_70_10 + var_70_11 then
-				local var_70_12 = (arg_67_1.time_ - var_70_10) / var_70_11
+			if var_75_10 <= arg_72_1.time_ and arg_72_1.time_ < var_75_10 + var_75_11 then
+				local var_75_12 = (arg_72_1.time_ - var_75_10) / var_75_11
 
-				if arg_67_1.var_.characterEffect1070ui_story then
-					arg_67_1.var_.characterEffect1070ui_story.fillFlat = false
+				if arg_72_1.var_.characterEffect1070ui_story then
+					arg_72_1.var_.characterEffect1070ui_story.fillFlat = false
 				end
 			end
 
-			if arg_67_1.time_ >= var_70_10 + var_70_11 and arg_67_1.time_ < var_70_10 + var_70_11 + arg_70_0 and arg_67_1.var_.characterEffect1070ui_story then
-				arg_67_1.var_.characterEffect1070ui_story.fillFlat = false
+			if arg_72_1.time_ >= var_75_10 + var_75_11 and arg_72_1.time_ < var_75_10 + var_75_11 + arg_75_0 and arg_72_1.var_.characterEffect1070ui_story then
+				arg_72_1.var_.characterEffect1070ui_story.fillFlat = false
 			end
 
-			local var_70_13 = 0
+			local var_75_13 = 0
 
-			if var_70_13 < arg_67_1.time_ and arg_67_1.time_ <= var_70_13 + arg_70_0 then
-				arg_67_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/story1070/story1070action/1070action1_1")
+			if var_75_13 < arg_72_1.time_ and arg_72_1.time_ <= var_75_13 + arg_75_0 then
+				arg_72_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/story1070/story1070action/1070action1_1")
 			end
 
-			local var_70_14 = 0
+			local var_75_14 = 0
 
-			if var_70_14 < arg_67_1.time_ and arg_67_1.time_ <= var_70_14 + arg_70_0 then
-				arg_67_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface3201cva")
+			if var_75_14 < arg_72_1.time_ and arg_72_1.time_ <= var_75_14 + arg_75_0 then
+				arg_72_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface3201cva")
 			end
 
-			local var_70_15 = 0
-			local var_70_16 = 0.275
+			local var_75_15 = 0
+			local var_75_16 = 0.275
 
-			if var_70_15 < arg_67_1.time_ and arg_67_1.time_ <= var_70_15 + arg_70_0 then
-				arg_67_1.talkMaxDuration = 0
-				arg_67_1.dialogCg_.alpha = 1
+			if var_75_15 < arg_72_1.time_ and arg_72_1.time_ <= var_75_15 + arg_75_0 then
+				arg_72_1.talkMaxDuration = 0
+				arg_72_1.dialogCg_.alpha = 1
 
-				arg_67_1.dialog_:SetActive(true)
-				SetActive(arg_67_1.leftNameGo_, true)
+				arg_72_1.dialog_:SetActive(true)
+				SetActive(arg_72_1.leftNameGo_, true)
 
-				local var_70_17 = arg_67_1:FormatText(StoryNameCfg[318].name)
+				local var_75_17 = arg_72_1:FormatText(StoryNameCfg[318].name)
 
-				arg_67_1.leftNameTxt_.text = var_70_17
+				arg_72_1.leftNameTxt_.text = var_75_17
 
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_67_1.leftNameTxt_.transform)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_72_1.leftNameTxt_.transform)
 
-				arg_67_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_67_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_72_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_72_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_67_1:RecordName(arg_67_1.leftNameTxt_.text)
-				SetActive(arg_67_1.iconTrs_.gameObject, false)
-				arg_67_1.callingController_:SetSelectedState("normal")
+				arg_72_1:RecordName(arg_72_1.leftNameTxt_.text)
+				SetActive(arg_72_1.iconTrs_.gameObject, false)
+				arg_72_1.callingController_:SetSelectedState("normal")
 
-				local var_70_18 = arg_67_1:GetWordFromCfg(222041017)
-				local var_70_19 = arg_67_1:FormatText(var_70_18.content)
+				local var_75_18 = arg_72_1:GetWordFromCfg(222041017)
+				local var_75_19 = arg_72_1:FormatText(var_75_18.content)
 
-				arg_67_1.text_.text = var_70_19
+				arg_72_1.text_.text = var_75_19
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_67_1.text_)
+				LuaForUtil.ClearLinePrefixSymbol(arg_72_1.text_)
 
-				local var_70_20 = 11
-				local var_70_21 = utf8.len(var_70_19)
-				local var_70_22 = var_70_20 <= 0 and var_70_16 or var_70_16 * (var_70_21 / var_70_20)
+				local var_75_20 = 11
+				local var_75_21 = utf8.len(var_75_19)
+				local var_75_22 = var_75_20 <= 0 and var_75_16 or var_75_16 * (var_75_21 / var_75_20)
 
-				if var_70_22 > 0 and var_70_16 < var_70_22 then
-					arg_67_1.talkMaxDuration = var_70_22
+				if var_75_22 > 0 and var_75_16 < var_75_22 then
+					arg_72_1.talkMaxDuration = var_75_22
 
-					if var_70_22 + var_70_15 > arg_67_1.duration_ then
-						arg_67_1.duration_ = var_70_22 + var_70_15
+					if var_75_22 + var_75_15 > arg_72_1.duration_ then
+						arg_72_1.duration_ = var_75_22 + var_75_15
 					end
 				end
 
-				arg_67_1.text_.text = var_70_19
-				arg_67_1.typewritter.percent = 0
+				arg_72_1.text_.text = var_75_19
+				arg_72_1.typewritter.percent = 0
 
-				arg_67_1.typewritter:SetDirty()
-				arg_67_1:ShowNextGo(false)
+				arg_72_1.typewritter:SetDirty()
+				arg_72_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_222041", "222041017", "story_v_out_222041.awb") ~= 0 then
-					local var_70_23 = manager.audio:GetVoiceLength("story_v_out_222041", "222041017", "story_v_out_222041.awb") / 1000
+					local var_75_23 = manager.audio:GetVoiceLength("story_v_out_222041", "222041017", "story_v_out_222041.awb") / 1000
 
-					if var_70_23 + var_70_15 > arg_67_1.duration_ then
-						arg_67_1.duration_ = var_70_23 + var_70_15
+					if var_75_23 + var_75_15 > arg_72_1.duration_ then
+						arg_72_1.duration_ = var_75_23 + var_75_15
 					end
 
-					if var_70_18.prefab_name ~= "" and arg_67_1.actors_[var_70_18.prefab_name] ~= nil then
-						local var_70_24 = LuaForUtil.PlayVoiceWithCriLipsync(arg_67_1.actors_[var_70_18.prefab_name].transform, "story_v_out_222041", "222041017", "story_v_out_222041.awb")
+					if var_75_18.prefab_name ~= "" and arg_72_1.actors_[var_75_18.prefab_name] ~= nil then
+						local var_75_24 = LuaForUtil.PlayVoiceWithCriLipsync(arg_72_1.actors_[var_75_18.prefab_name].transform, "story_v_out_222041", "222041017", "story_v_out_222041.awb")
 
-						arg_67_1:RecordAudio("222041017", var_70_24)
-						arg_67_1:RecordAudio("222041017", var_70_24)
+						arg_72_1:RecordAudio("222041017", var_75_24)
+						arg_72_1:RecordAudio("222041017", var_75_24)
 					else
-						arg_67_1:AudioAction("play", "voice", "story_v_out_222041", "222041017", "story_v_out_222041.awb")
+						arg_72_1:AudioAction("play", "voice", "story_v_out_222041", "222041017", "story_v_out_222041.awb")
 					end
 
-					arg_67_1:RecordHistoryTalkVoice("story_v_out_222041", "222041017", "story_v_out_222041.awb")
+					arg_72_1:RecordHistoryTalkVoice("story_v_out_222041", "222041017", "story_v_out_222041.awb")
 				end
 
-				arg_67_1:RecordContent(arg_67_1.text_.text)
+				arg_72_1:RecordContent(arg_72_1.text_.text)
 			end
 
-			local var_70_25 = math.max(var_70_16, arg_67_1.talkMaxDuration)
+			local var_75_25 = math.max(var_75_16, arg_72_1.talkMaxDuration)
 
-			if var_70_15 <= arg_67_1.time_ and arg_67_1.time_ < var_70_15 + var_70_25 then
-				arg_67_1.typewritter.percent = (arg_67_1.time_ - var_70_15) / var_70_25
+			if var_75_15 <= arg_72_1.time_ and arg_72_1.time_ < var_75_15 + var_75_25 then
+				arg_72_1.typewritter.percent = (arg_72_1.time_ - var_75_15) / var_75_25
 
-				arg_67_1.typewritter:SetDirty()
+				arg_72_1.typewritter:SetDirty()
 			end
 
-			if arg_67_1.time_ >= var_70_15 + var_70_25 and arg_67_1.time_ < var_70_15 + var_70_25 + arg_70_0 then
-				arg_67_1.typewritter.percent = 1
+			if arg_72_1.time_ >= var_75_15 + var_75_25 and arg_72_1.time_ < var_75_15 + var_75_25 + arg_75_0 then
+				arg_72_1.typewritter.percent = 1
 
-				arg_67_1.typewritter:SetDirty()
-				arg_67_1:ShowNextGo(true)
+				arg_72_1.typewritter:SetDirty()
+				arg_72_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041018 = function(arg_71_0, arg_71_1)
-		arg_71_1.time_ = 0
-		arg_71_1.frameCnt_ = 0
-		arg_71_1.state_ = "playing"
-		arg_71_1.curTalkId_ = 222041018
-		arg_71_1.duration_ = 3.633
+	Play222041018 = function(arg_76_0, arg_76_1)
+		arg_76_1.time_ = 0
+		arg_76_1.frameCnt_ = 0
+		arg_76_1.state_ = "playing"
+		arg_76_1.curTalkId_ = 222041018
+		arg_76_1.duration_ = 3.63
 
-		local var_71_0 = {
+		local var_76_0 = {
 			ja = 3.633,
 			ko = 1.999999999999,
 			zh = 1.999999999999
 		}
-		local var_71_1 = manager.audio:GetLocalizationFlag()
+		local var_76_1 = manager.audio:GetLocalizationFlag()
 
-		if var_71_0[var_71_1] ~= nil then
-			arg_71_1.duration_ = var_71_0[var_71_1]
+		if var_76_0[var_76_1] ~= nil then
+			arg_76_1.duration_ = var_76_0[var_76_1]
 		end
 
-		SetActive(arg_71_1.tipsGo_, false)
+		SetActive(arg_76_1.tipsGo_, false)
 
-		function arg_71_1.onSingleLineFinish_()
-			arg_71_1.onSingleLineUpdate_ = nil
-			arg_71_1.onSingleLineFinish_ = nil
-			arg_71_1.state_ = "waiting"
+		function arg_76_1.onSingleLineFinish_()
+			arg_76_1.onSingleLineUpdate_ = nil
+			arg_76_1.onSingleLineFinish_ = nil
+			arg_76_1.state_ = "waiting"
 		end
 
-		function arg_71_1.playNext_(arg_73_0)
-			if arg_73_0 == 1 then
-				arg_71_0:Play222041019(arg_71_1)
+		function arg_76_1.playNext_(arg_78_0)
+			if arg_78_0 == 1 then
+				arg_76_0:Play222041019(arg_76_1)
 			end
 		end
 
-		function arg_71_1.onSingleLineUpdate_(arg_74_0)
-			local var_74_0 = arg_71_1.actors_["1074ui_story"]
-			local var_74_1 = 0
+		function arg_76_1.onSingleLineUpdate_(arg_79_0)
+			local var_79_0 = arg_76_1.actors_["1074ui_story"]
+			local var_79_1 = 0
 
-			if var_74_1 < arg_71_1.time_ and arg_71_1.time_ <= var_74_1 + arg_74_0 and arg_71_1.var_.characterEffect1074ui_story == nil then
-				arg_71_1.var_.characterEffect1074ui_story = var_74_0:GetComponentInChildren(typeof(CharacterEffect))
+			if var_79_1 < arg_76_1.time_ and arg_76_1.time_ <= var_79_1 + arg_79_0 and arg_76_1.var_.characterEffect1074ui_story == nil then
+				arg_76_1.var_.characterEffect1074ui_story = var_79_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_74_2 = 0.200000002980232
+			local var_79_2 = 0.200000002980232
 
-			if var_74_1 <= arg_71_1.time_ and arg_71_1.time_ < var_74_1 + var_74_2 then
-				local var_74_3 = (arg_71_1.time_ - var_74_1) / var_74_2
+			if var_79_1 <= arg_76_1.time_ and arg_76_1.time_ < var_79_1 + var_79_2 then
+				local var_79_3 = (arg_76_1.time_ - var_79_1) / var_79_2
 
-				if arg_71_1.var_.characterEffect1074ui_story then
-					arg_71_1.var_.characterEffect1074ui_story.fillFlat = false
+				if arg_76_1.var_.characterEffect1074ui_story then
+					arg_76_1.var_.characterEffect1074ui_story.fillFlat = false
 				end
 			end
 
-			if arg_71_1.time_ >= var_74_1 + var_74_2 and arg_71_1.time_ < var_74_1 + var_74_2 + arg_74_0 and arg_71_1.var_.characterEffect1074ui_story then
-				arg_71_1.var_.characterEffect1074ui_story.fillFlat = false
+			if arg_76_1.time_ >= var_79_1 + var_79_2 and arg_76_1.time_ < var_79_1 + var_79_2 + arg_79_0 and arg_76_1.var_.characterEffect1074ui_story then
+				arg_76_1.var_.characterEffect1074ui_story.fillFlat = false
 			end
 
-			local var_74_4 = 0
+			local var_79_4 = 0
 
-			if var_74_4 < arg_71_1.time_ and arg_71_1.time_ <= var_74_4 + arg_74_0 then
-				arg_71_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/story1074/story1074action/1074action1_1")
+			if var_79_4 < arg_76_1.time_ and arg_76_1.time_ <= var_79_4 + arg_79_0 then
+				arg_76_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/story1074/story1074action/1074action1_1")
 			end
 
-			local var_74_5 = 0
+			local var_79_5 = 0
 
-			if var_74_5 < arg_71_1.time_ and arg_71_1.time_ <= var_74_5 + arg_74_0 then
-				arg_71_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0102cva")
+			if var_79_5 < arg_76_1.time_ and arg_76_1.time_ <= var_79_5 + arg_79_0 then
+				arg_76_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0102cva")
 			end
 
-			local var_74_6 = arg_71_1.actors_["1070ui_story"]
-			local var_74_7 = 0
+			local var_79_6 = arg_76_1.actors_["1070ui_story"]
+			local var_79_7 = 0
 
-			if var_74_7 < arg_71_1.time_ and arg_71_1.time_ <= var_74_7 + arg_74_0 and arg_71_1.var_.characterEffect1070ui_story == nil then
-				arg_71_1.var_.characterEffect1070ui_story = var_74_6:GetComponentInChildren(typeof(CharacterEffect))
+			if var_79_7 < arg_76_1.time_ and arg_76_1.time_ <= var_79_7 + arg_79_0 and arg_76_1.var_.characterEffect1070ui_story == nil then
+				arg_76_1.var_.characterEffect1070ui_story = var_79_6:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_74_8 = 0.200000002980232
+			local var_79_8 = 0.200000002980232
 
-			if var_74_7 <= arg_71_1.time_ and arg_71_1.time_ < var_74_7 + var_74_8 then
-				local var_74_9 = (arg_71_1.time_ - var_74_7) / var_74_8
+			if var_79_7 <= arg_76_1.time_ and arg_76_1.time_ < var_79_7 + var_79_8 then
+				local var_79_9 = (arg_76_1.time_ - var_79_7) / var_79_8
 
-				if arg_71_1.var_.characterEffect1070ui_story then
-					local var_74_10 = Mathf.Lerp(0, 0.5, var_74_9)
+				if arg_76_1.var_.characterEffect1070ui_story then
+					local var_79_10 = Mathf.Lerp(0, 0.5, var_79_9)
 
-					arg_71_1.var_.characterEffect1070ui_story.fillFlat = true
-					arg_71_1.var_.characterEffect1070ui_story.fillRatio = var_74_10
+					arg_76_1.var_.characterEffect1070ui_story.fillFlat = true
+					arg_76_1.var_.characterEffect1070ui_story.fillRatio = var_79_10
 				end
 			end
 
-			if arg_71_1.time_ >= var_74_7 + var_74_8 and arg_71_1.time_ < var_74_7 + var_74_8 + arg_74_0 and arg_71_1.var_.characterEffect1070ui_story then
-				local var_74_11 = 0.5
+			if arg_76_1.time_ >= var_79_7 + var_79_8 and arg_76_1.time_ < var_79_7 + var_79_8 + arg_79_0 and arg_76_1.var_.characterEffect1070ui_story then
+				local var_79_11 = 0.5
 
-				arg_71_1.var_.characterEffect1070ui_story.fillFlat = true
-				arg_71_1.var_.characterEffect1070ui_story.fillRatio = var_74_11
+				arg_76_1.var_.characterEffect1070ui_story.fillFlat = true
+				arg_76_1.var_.characterEffect1070ui_story.fillRatio = var_79_11
 			end
 
-			local var_74_12 = arg_71_1.actors_["1074ui_story"].transform
-			local var_74_13 = 0
+			local var_79_12 = arg_76_1.actors_["1074ui_story"].transform
+			local var_79_13 = 0
 
-			if var_74_13 < arg_71_1.time_ and arg_71_1.time_ <= var_74_13 + arg_74_0 then
-				arg_71_1.var_.moveOldPos1074ui_story = var_74_12.localPosition
+			if var_79_13 < arg_76_1.time_ and arg_76_1.time_ <= var_79_13 + arg_79_0 then
+				arg_76_1.var_.moveOldPos1074ui_story = var_79_12.localPosition
 			end
 
-			local var_74_14 = 0.001
+			local var_79_14 = 0.001
 
-			if var_74_13 <= arg_71_1.time_ and arg_71_1.time_ < var_74_13 + var_74_14 then
-				local var_74_15 = (arg_71_1.time_ - var_74_13) / var_74_14
-				local var_74_16 = Vector3.New(0.7, -1.055, -6.12)
+			if var_79_13 <= arg_76_1.time_ and arg_76_1.time_ < var_79_13 + var_79_14 then
+				local var_79_15 = (arg_76_1.time_ - var_79_13) / var_79_14
+				local var_79_16 = Vector3.New(0.7, -1.055, -6.12)
 
-				var_74_12.localPosition = Vector3.Lerp(arg_71_1.var_.moveOldPos1074ui_story, var_74_16, var_74_15)
+				var_79_12.localPosition = Vector3.Lerp(arg_76_1.var_.moveOldPos1074ui_story, var_79_16, var_79_15)
 
-				local var_74_17 = manager.ui.mainCamera.transform.position - var_74_12.position
+				local var_79_17 = manager.ui.mainCamera.transform.position - var_79_12.position
 
-				var_74_12.forward = Vector3.New(var_74_17.x, var_74_17.y, var_74_17.z)
+				var_79_12.forward = Vector3.New(var_79_17.x, var_79_17.y, var_79_17.z)
 
-				local var_74_18 = var_74_12.localEulerAngles
+				local var_79_18 = var_79_12.localEulerAngles
 
-				var_74_18.z = 0
-				var_74_18.x = 0
-				var_74_12.localEulerAngles = var_74_18
+				var_79_18.z = 0
+				var_79_18.x = 0
+				var_79_12.localEulerAngles = var_79_18
 			end
 
-			if arg_71_1.time_ >= var_74_13 + var_74_14 and arg_71_1.time_ < var_74_13 + var_74_14 + arg_74_0 then
-				var_74_12.localPosition = Vector3.New(0.7, -1.055, -6.12)
+			if arg_76_1.time_ >= var_79_13 + var_79_14 and arg_76_1.time_ < var_79_13 + var_79_14 + arg_79_0 then
+				var_79_12.localPosition = Vector3.New(0.7, -1.055, -6.12)
 
-				local var_74_19 = manager.ui.mainCamera.transform.position - var_74_12.position
+				local var_79_19 = manager.ui.mainCamera.transform.position - var_79_12.position
 
-				var_74_12.forward = Vector3.New(var_74_19.x, var_74_19.y, var_74_19.z)
+				var_79_12.forward = Vector3.New(var_79_19.x, var_79_19.y, var_79_19.z)
 
-				local var_74_20 = var_74_12.localEulerAngles
+				local var_79_20 = var_79_12.localEulerAngles
 
-				var_74_20.z = 0
-				var_74_20.x = 0
-				var_74_12.localEulerAngles = var_74_20
+				var_79_20.z = 0
+				var_79_20.x = 0
+				var_79_12.localEulerAngles = var_79_20
 			end
 
-			local var_74_21 = 0
-			local var_74_22 = 0.125
+			local var_79_21 = 0
+			local var_79_22 = 0.125
 
-			if var_74_21 < arg_71_1.time_ and arg_71_1.time_ <= var_74_21 + arg_74_0 then
-				arg_71_1.talkMaxDuration = 0
-				arg_71_1.dialogCg_.alpha = 1
+			if var_79_21 < arg_76_1.time_ and arg_76_1.time_ <= var_79_21 + arg_79_0 then
+				arg_76_1.talkMaxDuration = 0
+				arg_76_1.dialogCg_.alpha = 1
 
-				arg_71_1.dialog_:SetActive(true)
-				SetActive(arg_71_1.leftNameGo_, true)
+				arg_76_1.dialog_:SetActive(true)
+				SetActive(arg_76_1.leftNameGo_, true)
 
-				local var_74_23 = arg_71_1:FormatText(StoryNameCfg[410].name)
+				local var_79_23 = arg_76_1:FormatText(StoryNameCfg[410].name)
 
-				arg_71_1.leftNameTxt_.text = var_74_23
+				arg_76_1.leftNameTxt_.text = var_79_23
 
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_71_1.leftNameTxt_.transform)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_76_1.leftNameTxt_.transform)
 
-				arg_71_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_71_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_76_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_76_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_71_1:RecordName(arg_71_1.leftNameTxt_.text)
-				SetActive(arg_71_1.iconTrs_.gameObject, false)
-				arg_71_1.callingController_:SetSelectedState("normal")
+				arg_76_1:RecordName(arg_76_1.leftNameTxt_.text)
+				SetActive(arg_76_1.iconTrs_.gameObject, false)
+				arg_76_1.callingController_:SetSelectedState("normal")
 
-				local var_74_24 = arg_71_1:GetWordFromCfg(222041018)
-				local var_74_25 = arg_71_1:FormatText(var_74_24.content)
+				local var_79_24 = arg_76_1:GetWordFromCfg(222041018)
+				local var_79_25 = arg_76_1:FormatText(var_79_24.content)
 
-				arg_71_1.text_.text = var_74_25
+				arg_76_1.text_.text = var_79_25
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_71_1.text_)
+				LuaForUtil.ClearLinePrefixSymbol(arg_76_1.text_)
 
-				local var_74_26 = 5
-				local var_74_27 = utf8.len(var_74_25)
-				local var_74_28 = var_74_26 <= 0 and var_74_22 or var_74_22 * (var_74_27 / var_74_26)
+				local var_79_26 = 5
+				local var_79_27 = utf8.len(var_79_25)
+				local var_79_28 = var_79_26 <= 0 and var_79_22 or var_79_22 * (var_79_27 / var_79_26)
 
-				if var_74_28 > 0 and var_74_22 < var_74_28 then
-					arg_71_1.talkMaxDuration = var_74_28
+				if var_79_28 > 0 and var_79_22 < var_79_28 then
+					arg_76_1.talkMaxDuration = var_79_28
 
-					if var_74_28 + var_74_21 > arg_71_1.duration_ then
-						arg_71_1.duration_ = var_74_28 + var_74_21
+					if var_79_28 + var_79_21 > arg_76_1.duration_ then
+						arg_76_1.duration_ = var_79_28 + var_79_21
 					end
 				end
 
-				arg_71_1.text_.text = var_74_25
-				arg_71_1.typewritter.percent = 0
+				arg_76_1.text_.text = var_79_25
+				arg_76_1.typewritter.percent = 0
 
-				arg_71_1.typewritter:SetDirty()
-				arg_71_1:ShowNextGo(false)
+				arg_76_1.typewritter:SetDirty()
+				arg_76_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_222041", "222041018", "story_v_out_222041.awb") ~= 0 then
-					local var_74_29 = manager.audio:GetVoiceLength("story_v_out_222041", "222041018", "story_v_out_222041.awb") / 1000
+					local var_79_29 = manager.audio:GetVoiceLength("story_v_out_222041", "222041018", "story_v_out_222041.awb") / 1000
 
-					if var_74_29 + var_74_21 > arg_71_1.duration_ then
-						arg_71_1.duration_ = var_74_29 + var_74_21
+					if var_79_29 + var_79_21 > arg_76_1.duration_ then
+						arg_76_1.duration_ = var_79_29 + var_79_21
 					end
 
-					if var_74_24.prefab_name ~= "" and arg_71_1.actors_[var_74_24.prefab_name] ~= nil then
-						local var_74_30 = LuaForUtil.PlayVoiceWithCriLipsync(arg_71_1.actors_[var_74_24.prefab_name].transform, "story_v_out_222041", "222041018", "story_v_out_222041.awb")
+					if var_79_24.prefab_name ~= "" and arg_76_1.actors_[var_79_24.prefab_name] ~= nil then
+						local var_79_30 = LuaForUtil.PlayVoiceWithCriLipsync(arg_76_1.actors_[var_79_24.prefab_name].transform, "story_v_out_222041", "222041018", "story_v_out_222041.awb")
 
-						arg_71_1:RecordAudio("222041018", var_74_30)
-						arg_71_1:RecordAudio("222041018", var_74_30)
+						arg_76_1:RecordAudio("222041018", var_79_30)
+						arg_76_1:RecordAudio("222041018", var_79_30)
 					else
-						arg_71_1:AudioAction("play", "voice", "story_v_out_222041", "222041018", "story_v_out_222041.awb")
+						arg_76_1:AudioAction("play", "voice", "story_v_out_222041", "222041018", "story_v_out_222041.awb")
 					end
 
-					arg_71_1:RecordHistoryTalkVoice("story_v_out_222041", "222041018", "story_v_out_222041.awb")
+					arg_76_1:RecordHistoryTalkVoice("story_v_out_222041", "222041018", "story_v_out_222041.awb")
 				end
 
-				arg_71_1:RecordContent(arg_71_1.text_.text)
+				arg_76_1:RecordContent(arg_76_1.text_.text)
 			end
 
-			local var_74_31 = math.max(var_74_22, arg_71_1.talkMaxDuration)
+			local var_79_31 = math.max(var_79_22, arg_76_1.talkMaxDuration)
 
-			if var_74_21 <= arg_71_1.time_ and arg_71_1.time_ < var_74_21 + var_74_31 then
-				arg_71_1.typewritter.percent = (arg_71_1.time_ - var_74_21) / var_74_31
+			if var_79_21 <= arg_76_1.time_ and arg_76_1.time_ < var_79_21 + var_79_31 then
+				arg_76_1.typewritter.percent = (arg_76_1.time_ - var_79_21) / var_79_31
 
-				arg_71_1.typewritter:SetDirty()
+				arg_76_1.typewritter:SetDirty()
 			end
 
-			if arg_71_1.time_ >= var_74_21 + var_74_31 and arg_71_1.time_ < var_74_21 + var_74_31 + arg_74_0 then
-				arg_71_1.typewritter.percent = 1
+			if arg_76_1.time_ >= var_79_21 + var_79_31 and arg_76_1.time_ < var_79_21 + var_79_31 + arg_79_0 then
+				arg_76_1.typewritter.percent = 1
 
-				arg_71_1.typewritter:SetDirty()
-				arg_71_1:ShowNextGo(true)
+				arg_76_1.typewritter:SetDirty()
+				arg_76_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041019 = function(arg_75_0, arg_75_1)
-		arg_75_1.time_ = 0
-		arg_75_1.frameCnt_ = 0
-		arg_75_1.state_ = "playing"
-		arg_75_1.curTalkId_ = 222041019
-		arg_75_1.duration_ = 7.966
+	Play222041019 = function(arg_80_0, arg_80_1)
+		arg_80_1.time_ = 0
+		arg_80_1.frameCnt_ = 0
+		arg_80_1.state_ = "playing"
+		arg_80_1.curTalkId_ = 222041019
+		arg_80_1.duration_ = 7.97
 
-		local var_75_0 = {
+		local var_80_0 = {
 			ja = 7.966,
 			ko = 7.333,
 			zh = 7.333
 		}
-		local var_75_1 = manager.audio:GetLocalizationFlag()
+		local var_80_1 = manager.audio:GetLocalizationFlag()
 
-		if var_75_0[var_75_1] ~= nil then
-			arg_75_1.duration_ = var_75_0[var_75_1]
+		if var_80_0[var_80_1] ~= nil then
+			arg_80_1.duration_ = var_80_0[var_80_1]
 		end
 
-		SetActive(arg_75_1.tipsGo_, false)
+		SetActive(arg_80_1.tipsGo_, false)
 
-		function arg_75_1.onSingleLineFinish_()
-			arg_75_1.onSingleLineUpdate_ = nil
-			arg_75_1.onSingleLineFinish_ = nil
-			arg_75_1.state_ = "waiting"
+		function arg_80_1.onSingleLineFinish_()
+			arg_80_1.onSingleLineUpdate_ = nil
+			arg_80_1.onSingleLineFinish_ = nil
+			arg_80_1.state_ = "waiting"
 		end
 
-		function arg_75_1.playNext_(arg_77_0)
-			if arg_77_0 == 1 then
-				arg_75_0:Play222041020(arg_75_1)
+		function arg_80_1.playNext_(arg_82_0)
+			if arg_82_0 == 1 then
+				arg_80_0:Play222041020(arg_80_1)
 			end
 		end
 
-		function arg_75_1.onSingleLineUpdate_(arg_78_0)
-			local var_78_0 = arg_75_1.actors_["1070ui_story"]
-			local var_78_1 = 0
+		function arg_80_1.onSingleLineUpdate_(arg_83_0)
+			local var_83_0 = arg_80_1.actors_["1070ui_story"]
+			local var_83_1 = 0
 
-			if var_78_1 < arg_75_1.time_ and arg_75_1.time_ <= var_78_1 + arg_78_0 and arg_75_1.var_.characterEffect1070ui_story == nil then
-				arg_75_1.var_.characterEffect1070ui_story = var_78_0:GetComponentInChildren(typeof(CharacterEffect))
+			if var_83_1 < arg_80_1.time_ and arg_80_1.time_ <= var_83_1 + arg_83_0 and arg_80_1.var_.characterEffect1070ui_story == nil then
+				arg_80_1.var_.characterEffect1070ui_story = var_83_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_78_2 = 0.200000002980232
+			local var_83_2 = 0.200000002980232
 
-			if var_78_1 <= arg_75_1.time_ and arg_75_1.time_ < var_78_1 + var_78_2 then
-				local var_78_3 = (arg_75_1.time_ - var_78_1) / var_78_2
+			if var_83_1 <= arg_80_1.time_ and arg_80_1.time_ < var_83_1 + var_83_2 then
+				local var_83_3 = (arg_80_1.time_ - var_83_1) / var_83_2
 
-				if arg_75_1.var_.characterEffect1070ui_story then
-					arg_75_1.var_.characterEffect1070ui_story.fillFlat = false
+				if arg_80_1.var_.characterEffect1070ui_story then
+					arg_80_1.var_.characterEffect1070ui_story.fillFlat = false
 				end
 			end
 
-			if arg_75_1.time_ >= var_78_1 + var_78_2 and arg_75_1.time_ < var_78_1 + var_78_2 + arg_78_0 and arg_75_1.var_.characterEffect1070ui_story then
-				arg_75_1.var_.characterEffect1070ui_story.fillFlat = false
+			if arg_80_1.time_ >= var_83_1 + var_83_2 and arg_80_1.time_ < var_83_1 + var_83_2 + arg_83_0 and arg_80_1.var_.characterEffect1070ui_story then
+				arg_80_1.var_.characterEffect1070ui_story.fillFlat = false
 			end
 
-			local var_78_4 = 0
+			local var_83_4 = 0
 
-			if var_78_4 < arg_75_1.time_ and arg_75_1.time_ <= var_78_4 + arg_78_0 then
-				arg_75_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/story1070/story1070action/1070action2_1")
+			if var_83_4 < arg_80_1.time_ and arg_80_1.time_ <= var_83_4 + arg_83_0 then
+				arg_80_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/story1070/story1070action/1070action2_1")
 			end
 
-			local var_78_5 = 0
+			local var_83_5 = 0
 
-			if var_78_5 < arg_75_1.time_ and arg_75_1.time_ <= var_78_5 + arg_78_0 then
-				arg_75_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface3101cva")
+			if var_83_5 < arg_80_1.time_ and arg_80_1.time_ <= var_83_5 + arg_83_0 then
+				arg_80_1:PlayTimeline("1070ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface3101cva")
 			end
 
-			local var_78_6 = arg_75_1.actors_["1074ui_story"]
-			local var_78_7 = 0
+			local var_83_6 = arg_80_1.actors_["1074ui_story"]
+			local var_83_7 = 0
 
-			if var_78_7 < arg_75_1.time_ and arg_75_1.time_ <= var_78_7 + arg_78_0 and arg_75_1.var_.characterEffect1074ui_story == nil then
-				arg_75_1.var_.characterEffect1074ui_story = var_78_6:GetComponentInChildren(typeof(CharacterEffect))
+			if var_83_7 < arg_80_1.time_ and arg_80_1.time_ <= var_83_7 + arg_83_0 and arg_80_1.var_.characterEffect1074ui_story == nil then
+				arg_80_1.var_.characterEffect1074ui_story = var_83_6:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_78_8 = 0.200000002980232
+			local var_83_8 = 0.200000002980232
 
-			if var_78_7 <= arg_75_1.time_ and arg_75_1.time_ < var_78_7 + var_78_8 then
-				local var_78_9 = (arg_75_1.time_ - var_78_7) / var_78_8
+			if var_83_7 <= arg_80_1.time_ and arg_80_1.time_ < var_83_7 + var_83_8 then
+				local var_83_9 = (arg_80_1.time_ - var_83_7) / var_83_8
 
-				if arg_75_1.var_.characterEffect1074ui_story then
-					local var_78_10 = Mathf.Lerp(0, 0.5, var_78_9)
+				if arg_80_1.var_.characterEffect1074ui_story then
+					local var_83_10 = Mathf.Lerp(0, 0.5, var_83_9)
 
-					arg_75_1.var_.characterEffect1074ui_story.fillFlat = true
-					arg_75_1.var_.characterEffect1074ui_story.fillRatio = var_78_10
+					arg_80_1.var_.characterEffect1074ui_story.fillFlat = true
+					arg_80_1.var_.characterEffect1074ui_story.fillRatio = var_83_10
 				end
 			end
 
-			if arg_75_1.time_ >= var_78_7 + var_78_8 and arg_75_1.time_ < var_78_7 + var_78_8 + arg_78_0 and arg_75_1.var_.characterEffect1074ui_story then
-				local var_78_11 = 0.5
+			if arg_80_1.time_ >= var_83_7 + var_83_8 and arg_80_1.time_ < var_83_7 + var_83_8 + arg_83_0 and arg_80_1.var_.characterEffect1074ui_story then
+				local var_83_11 = 0.5
 
-				arg_75_1.var_.characterEffect1074ui_story.fillFlat = true
-				arg_75_1.var_.characterEffect1074ui_story.fillRatio = var_78_11
+				arg_80_1.var_.characterEffect1074ui_story.fillFlat = true
+				arg_80_1.var_.characterEffect1074ui_story.fillRatio = var_83_11
 			end
 
-			local var_78_12 = 0
-			local var_78_13 = 1
+			local var_83_12 = 0
+			local var_83_13 = 1
 
-			if var_78_12 < arg_75_1.time_ and arg_75_1.time_ <= var_78_12 + arg_78_0 then
-				arg_75_1.talkMaxDuration = 0
-				arg_75_1.dialogCg_.alpha = 1
+			if var_83_12 < arg_80_1.time_ and arg_80_1.time_ <= var_83_12 + arg_83_0 then
+				arg_80_1.talkMaxDuration = 0
+				arg_80_1.dialogCg_.alpha = 1
 
-				arg_75_1.dialog_:SetActive(true)
-				SetActive(arg_75_1.leftNameGo_, true)
+				arg_80_1.dialog_:SetActive(true)
+				SetActive(arg_80_1.leftNameGo_, true)
 
-				local var_78_14 = arg_75_1:FormatText(StoryNameCfg[318].name)
+				local var_83_14 = arg_80_1:FormatText(StoryNameCfg[318].name)
 
-				arg_75_1.leftNameTxt_.text = var_78_14
+				arg_80_1.leftNameTxt_.text = var_83_14
 
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_75_1.leftNameTxt_.transform)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_80_1.leftNameTxt_.transform)
 
-				arg_75_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_75_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_80_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_80_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_75_1:RecordName(arg_75_1.leftNameTxt_.text)
-				SetActive(arg_75_1.iconTrs_.gameObject, false)
-				arg_75_1.callingController_:SetSelectedState("normal")
+				arg_80_1:RecordName(arg_80_1.leftNameTxt_.text)
+				SetActive(arg_80_1.iconTrs_.gameObject, false)
+				arg_80_1.callingController_:SetSelectedState("normal")
 
-				local var_78_15 = arg_75_1:GetWordFromCfg(222041019)
-				local var_78_16 = arg_75_1:FormatText(var_78_15.content)
+				local var_83_15 = arg_80_1:GetWordFromCfg(222041019)
+				local var_83_16 = arg_80_1:FormatText(var_83_15.content)
 
-				arg_75_1.text_.text = var_78_16
+				arg_80_1.text_.text = var_83_16
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_75_1.text_)
+				LuaForUtil.ClearLinePrefixSymbol(arg_80_1.text_)
 
-				local var_78_17 = 40
-				local var_78_18 = utf8.len(var_78_16)
-				local var_78_19 = var_78_17 <= 0 and var_78_13 or var_78_13 * (var_78_18 / var_78_17)
+				local var_83_17 = 40
+				local var_83_18 = utf8.len(var_83_16)
+				local var_83_19 = var_83_17 <= 0 and var_83_13 or var_83_13 * (var_83_18 / var_83_17)
 
-				if var_78_19 > 0 and var_78_13 < var_78_19 then
-					arg_75_1.talkMaxDuration = var_78_19
+				if var_83_19 > 0 and var_83_13 < var_83_19 then
+					arg_80_1.talkMaxDuration = var_83_19
 
-					if var_78_19 + var_78_12 > arg_75_1.duration_ then
-						arg_75_1.duration_ = var_78_19 + var_78_12
+					if var_83_19 + var_83_12 > arg_80_1.duration_ then
+						arg_80_1.duration_ = var_83_19 + var_83_12
 					end
 				end
 
-				arg_75_1.text_.text = var_78_16
-				arg_75_1.typewritter.percent = 0
+				arg_80_1.text_.text = var_83_16
+				arg_80_1.typewritter.percent = 0
 
-				arg_75_1.typewritter:SetDirty()
-				arg_75_1:ShowNextGo(false)
+				arg_80_1.typewritter:SetDirty()
+				arg_80_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_222041", "222041019", "story_v_out_222041.awb") ~= 0 then
-					local var_78_20 = manager.audio:GetVoiceLength("story_v_out_222041", "222041019", "story_v_out_222041.awb") / 1000
+					local var_83_20 = manager.audio:GetVoiceLength("story_v_out_222041", "222041019", "story_v_out_222041.awb") / 1000
 
-					if var_78_20 + var_78_12 > arg_75_1.duration_ then
-						arg_75_1.duration_ = var_78_20 + var_78_12
+					if var_83_20 + var_83_12 > arg_80_1.duration_ then
+						arg_80_1.duration_ = var_83_20 + var_83_12
 					end
 
-					if var_78_15.prefab_name ~= "" and arg_75_1.actors_[var_78_15.prefab_name] ~= nil then
-						local var_78_21 = LuaForUtil.PlayVoiceWithCriLipsync(arg_75_1.actors_[var_78_15.prefab_name].transform, "story_v_out_222041", "222041019", "story_v_out_222041.awb")
+					if var_83_15.prefab_name ~= "" and arg_80_1.actors_[var_83_15.prefab_name] ~= nil then
+						local var_83_21 = LuaForUtil.PlayVoiceWithCriLipsync(arg_80_1.actors_[var_83_15.prefab_name].transform, "story_v_out_222041", "222041019", "story_v_out_222041.awb")
 
-						arg_75_1:RecordAudio("222041019", var_78_21)
-						arg_75_1:RecordAudio("222041019", var_78_21)
+						arg_80_1:RecordAudio("222041019", var_83_21)
+						arg_80_1:RecordAudio("222041019", var_83_21)
 					else
-						arg_75_1:AudioAction("play", "voice", "story_v_out_222041", "222041019", "story_v_out_222041.awb")
+						arg_80_1:AudioAction("play", "voice", "story_v_out_222041", "222041019", "story_v_out_222041.awb")
 					end
 
-					arg_75_1:RecordHistoryTalkVoice("story_v_out_222041", "222041019", "story_v_out_222041.awb")
+					arg_80_1:RecordHistoryTalkVoice("story_v_out_222041", "222041019", "story_v_out_222041.awb")
 				end
 
-				arg_75_1:RecordContent(arg_75_1.text_.text)
+				arg_80_1:RecordContent(arg_80_1.text_.text)
 			end
 
-			local var_78_22 = math.max(var_78_13, arg_75_1.talkMaxDuration)
+			local var_83_22 = math.max(var_83_13, arg_80_1.talkMaxDuration)
 
-			if var_78_12 <= arg_75_1.time_ and arg_75_1.time_ < var_78_12 + var_78_22 then
-				arg_75_1.typewritter.percent = (arg_75_1.time_ - var_78_12) / var_78_22
+			if var_83_12 <= arg_80_1.time_ and arg_80_1.time_ < var_83_12 + var_83_22 then
+				arg_80_1.typewritter.percent = (arg_80_1.time_ - var_83_12) / var_83_22
 
-				arg_75_1.typewritter:SetDirty()
+				arg_80_1.typewritter:SetDirty()
 			end
 
-			if arg_75_1.time_ >= var_78_12 + var_78_22 and arg_75_1.time_ < var_78_12 + var_78_22 + arg_78_0 then
-				arg_75_1.typewritter.percent = 1
+			if arg_80_1.time_ >= var_83_12 + var_83_22 and arg_80_1.time_ < var_83_12 + var_83_22 + arg_83_0 then
+				arg_80_1.typewritter.percent = 1
 
-				arg_75_1.typewritter:SetDirty()
-				arg_75_1:ShowNextGo(true)
+				arg_80_1.typewritter:SetDirty()
+				arg_80_1:ShowNextGo(true)
 			end
 		end
 	end,
-	Play222041020 = function(arg_79_0, arg_79_1)
-		arg_79_1.time_ = 0
-		arg_79_1.frameCnt_ = 0
-		arg_79_1.state_ = "playing"
-		arg_79_1.curTalkId_ = 222041020
-		arg_79_1.duration_ = 4.733
+	Play222041020 = function(arg_84_0, arg_84_1)
+		arg_84_1.time_ = 0
+		arg_84_1.frameCnt_ = 0
+		arg_84_1.state_ = "playing"
+		arg_84_1.curTalkId_ = 222041020
+		arg_84_1.duration_ = 4.73
 
-		local var_79_0 = {
+		local var_84_0 = {
 			ja = 4.733,
 			ko = 3.8,
 			zh = 3.8
 		}
-		local var_79_1 = manager.audio:GetLocalizationFlag()
+		local var_84_1 = manager.audio:GetLocalizationFlag()
 
-		if var_79_0[var_79_1] ~= nil then
-			arg_79_1.duration_ = var_79_0[var_79_1]
+		if var_84_0[var_84_1] ~= nil then
+			arg_84_1.duration_ = var_84_0[var_84_1]
 		end
 
-		SetActive(arg_79_1.tipsGo_, false)
+		SetActive(arg_84_1.tipsGo_, false)
 
-		function arg_79_1.onSingleLineFinish_()
-			arg_79_1.onSingleLineUpdate_ = nil
-			arg_79_1.onSingleLineFinish_ = nil
-			arg_79_1.state_ = "waiting"
-			arg_79_1.auto_ = false
+		function arg_84_1.onSingleLineFinish_()
+			arg_84_1.onSingleLineUpdate_ = nil
+			arg_84_1.onSingleLineFinish_ = nil
+			arg_84_1.state_ = "waiting"
+			arg_84_1.auto_ = false
 		end
 
-		function arg_79_1.playNext_(arg_81_0)
-			arg_79_1.onStoryFinished_()
+		function arg_84_1.playNext_(arg_86_0)
+			arg_84_1.onStoryFinished_()
 		end
 
-		function arg_79_1.onSingleLineUpdate_(arg_82_0)
-			local var_82_0 = arg_79_1.actors_["1074ui_story"]
-			local var_82_1 = 0
+		function arg_84_1.onSingleLineUpdate_(arg_87_0)
+			local var_87_0 = arg_84_1.actors_["1074ui_story"]
+			local var_87_1 = 0
 
-			if var_82_1 < arg_79_1.time_ and arg_79_1.time_ <= var_82_1 + arg_82_0 and arg_79_1.var_.characterEffect1074ui_story == nil then
-				arg_79_1.var_.characterEffect1074ui_story = var_82_0:GetComponentInChildren(typeof(CharacterEffect))
+			if var_87_1 < arg_84_1.time_ and arg_84_1.time_ <= var_87_1 + arg_87_0 and arg_84_1.var_.characterEffect1074ui_story == nil then
+				arg_84_1.var_.characterEffect1074ui_story = var_87_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_82_2 = 0.200000002980232
+			local var_87_2 = 0.200000002980232
 
-			if var_82_1 <= arg_79_1.time_ and arg_79_1.time_ < var_82_1 + var_82_2 then
-				local var_82_3 = (arg_79_1.time_ - var_82_1) / var_82_2
+			if var_87_1 <= arg_84_1.time_ and arg_84_1.time_ < var_87_1 + var_87_2 then
+				local var_87_3 = (arg_84_1.time_ - var_87_1) / var_87_2
 
-				if arg_79_1.var_.characterEffect1074ui_story then
-					arg_79_1.var_.characterEffect1074ui_story.fillFlat = false
+				if arg_84_1.var_.characterEffect1074ui_story then
+					arg_84_1.var_.characterEffect1074ui_story.fillFlat = false
 				end
 			end
 
-			if arg_79_1.time_ >= var_82_1 + var_82_2 and arg_79_1.time_ < var_82_1 + var_82_2 + arg_82_0 and arg_79_1.var_.characterEffect1074ui_story then
-				arg_79_1.var_.characterEffect1074ui_story.fillFlat = false
+			if arg_84_1.time_ >= var_87_1 + var_87_2 and arg_84_1.time_ < var_87_1 + var_87_2 + arg_87_0 and arg_84_1.var_.characterEffect1074ui_story then
+				arg_84_1.var_.characterEffect1074ui_story.fillFlat = false
 			end
 
-			local var_82_4 = 0
+			local var_87_4 = 0
 
-			if var_82_4 < arg_79_1.time_ and arg_79_1.time_ <= var_82_4 + arg_82_0 then
-				arg_79_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/story1074/story1074action/1074action1_1")
+			if var_87_4 < arg_84_1.time_ and arg_84_1.time_ <= var_87_4 + arg_87_0 then
+				arg_84_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/story1074/story1074action/1074action1_1")
 			end
 
-			local var_82_5 = 0
+			local var_87_5 = 0
 
-			if var_82_5 < arg_79_1.time_ and arg_79_1.time_ <= var_82_5 + arg_82_0 then
-				arg_79_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0102cva")
+			if var_87_5 < arg_84_1.time_ and arg_84_1.time_ <= var_87_5 + arg_87_0 then
+				arg_84_1:PlayTimeline("1074ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface0102cva")
 			end
 
-			local var_82_6 = arg_79_1.actors_["1070ui_story"]
-			local var_82_7 = 0
+			local var_87_6 = arg_84_1.actors_["1070ui_story"]
+			local var_87_7 = 0
 
-			if var_82_7 < arg_79_1.time_ and arg_79_1.time_ <= var_82_7 + arg_82_0 and arg_79_1.var_.characterEffect1070ui_story == nil then
-				arg_79_1.var_.characterEffect1070ui_story = var_82_6:GetComponentInChildren(typeof(CharacterEffect))
+			if var_87_7 < arg_84_1.time_ and arg_84_1.time_ <= var_87_7 + arg_87_0 and arg_84_1.var_.characterEffect1070ui_story == nil then
+				arg_84_1.var_.characterEffect1070ui_story = var_87_6:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_82_8 = 0.200000002980232
+			local var_87_8 = 0.200000002980232
 
-			if var_82_7 <= arg_79_1.time_ and arg_79_1.time_ < var_82_7 + var_82_8 then
-				local var_82_9 = (arg_79_1.time_ - var_82_7) / var_82_8
+			if var_87_7 <= arg_84_1.time_ and arg_84_1.time_ < var_87_7 + var_87_8 then
+				local var_87_9 = (arg_84_1.time_ - var_87_7) / var_87_8
 
-				if arg_79_1.var_.characterEffect1070ui_story then
-					local var_82_10 = Mathf.Lerp(0, 0.5, var_82_9)
+				if arg_84_1.var_.characterEffect1070ui_story then
+					local var_87_10 = Mathf.Lerp(0, 0.5, var_87_9)
 
-					arg_79_1.var_.characterEffect1070ui_story.fillFlat = true
-					arg_79_1.var_.characterEffect1070ui_story.fillRatio = var_82_10
+					arg_84_1.var_.characterEffect1070ui_story.fillFlat = true
+					arg_84_1.var_.characterEffect1070ui_story.fillRatio = var_87_10
 				end
 			end
 
-			if arg_79_1.time_ >= var_82_7 + var_82_8 and arg_79_1.time_ < var_82_7 + var_82_8 + arg_82_0 and arg_79_1.var_.characterEffect1070ui_story then
-				local var_82_11 = 0.5
+			if arg_84_1.time_ >= var_87_7 + var_87_8 and arg_84_1.time_ < var_87_7 + var_87_8 + arg_87_0 and arg_84_1.var_.characterEffect1070ui_story then
+				local var_87_11 = 0.5
 
-				arg_79_1.var_.characterEffect1070ui_story.fillFlat = true
-				arg_79_1.var_.characterEffect1070ui_story.fillRatio = var_82_11
+				arg_84_1.var_.characterEffect1070ui_story.fillFlat = true
+				arg_84_1.var_.characterEffect1070ui_story.fillRatio = var_87_11
 			end
 
-			local var_82_12 = 0
-			local var_82_13 = 0.425
+			local var_87_12 = 0
+			local var_87_13 = 0.425
 
-			if var_82_12 < arg_79_1.time_ and arg_79_1.time_ <= var_82_12 + arg_82_0 then
-				arg_79_1.talkMaxDuration = 0
-				arg_79_1.dialogCg_.alpha = 1
+			if var_87_12 < arg_84_1.time_ and arg_84_1.time_ <= var_87_12 + arg_87_0 then
+				arg_84_1.talkMaxDuration = 0
+				arg_84_1.dialogCg_.alpha = 1
 
-				arg_79_1.dialog_:SetActive(true)
-				SetActive(arg_79_1.leftNameGo_, true)
+				arg_84_1.dialog_:SetActive(true)
+				SetActive(arg_84_1.leftNameGo_, true)
 
-				local var_82_14 = arg_79_1:FormatText(StoryNameCfg[410].name)
+				local var_87_14 = arg_84_1:FormatText(StoryNameCfg[410].name)
 
-				arg_79_1.leftNameTxt_.text = var_82_14
+				arg_84_1.leftNameTxt_.text = var_87_14
 
-				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_79_1.leftNameTxt_.transform)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_84_1.leftNameTxt_.transform)
 
-				arg_79_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
-				arg_79_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
+				arg_84_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
+				arg_84_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
-				arg_79_1:RecordName(arg_79_1.leftNameTxt_.text)
-				SetActive(arg_79_1.iconTrs_.gameObject, false)
-				arg_79_1.callingController_:SetSelectedState("normal")
+				arg_84_1:RecordName(arg_84_1.leftNameTxt_.text)
+				SetActive(arg_84_1.iconTrs_.gameObject, false)
+				arg_84_1.callingController_:SetSelectedState("normal")
 
-				local var_82_15 = arg_79_1:GetWordFromCfg(222041020)
-				local var_82_16 = arg_79_1:FormatText(var_82_15.content)
+				local var_87_15 = arg_84_1:GetWordFromCfg(222041020)
+				local var_87_16 = arg_84_1:FormatText(var_87_15.content)
 
-				arg_79_1.text_.text = var_82_16
+				arg_84_1.text_.text = var_87_16
 
-				LuaForUtil.ClearLinePrefixSymbol(arg_79_1.text_)
+				LuaForUtil.ClearLinePrefixSymbol(arg_84_1.text_)
 
-				local var_82_17 = 17
-				local var_82_18 = utf8.len(var_82_16)
-				local var_82_19 = var_82_17 <= 0 and var_82_13 or var_82_13 * (var_82_18 / var_82_17)
+				local var_87_17 = 17
+				local var_87_18 = utf8.len(var_87_16)
+				local var_87_19 = var_87_17 <= 0 and var_87_13 or var_87_13 * (var_87_18 / var_87_17)
 
-				if var_82_19 > 0 and var_82_13 < var_82_19 then
-					arg_79_1.talkMaxDuration = var_82_19
+				if var_87_19 > 0 and var_87_13 < var_87_19 then
+					arg_84_1.talkMaxDuration = var_87_19
 
-					if var_82_19 + var_82_12 > arg_79_1.duration_ then
-						arg_79_1.duration_ = var_82_19 + var_82_12
+					if var_87_19 + var_87_12 > arg_84_1.duration_ then
+						arg_84_1.duration_ = var_87_19 + var_87_12
 					end
 				end
 
-				arg_79_1.text_.text = var_82_16
-				arg_79_1.typewritter.percent = 0
+				arg_84_1.text_.text = var_87_16
+				arg_84_1.typewritter.percent = 0
 
-				arg_79_1.typewritter:SetDirty()
-				arg_79_1:ShowNextGo(false)
+				arg_84_1.typewritter:SetDirty()
+				arg_84_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_222041", "222041020", "story_v_out_222041.awb") ~= 0 then
-					local var_82_20 = manager.audio:GetVoiceLength("story_v_out_222041", "222041020", "story_v_out_222041.awb") / 1000
+					local var_87_20 = manager.audio:GetVoiceLength("story_v_out_222041", "222041020", "story_v_out_222041.awb") / 1000
 
-					if var_82_20 + var_82_12 > arg_79_1.duration_ then
-						arg_79_1.duration_ = var_82_20 + var_82_12
+					if var_87_20 + var_87_12 > arg_84_1.duration_ then
+						arg_84_1.duration_ = var_87_20 + var_87_12
 					end
 
-					if var_82_15.prefab_name ~= "" and arg_79_1.actors_[var_82_15.prefab_name] ~= nil then
-						local var_82_21 = LuaForUtil.PlayVoiceWithCriLipsync(arg_79_1.actors_[var_82_15.prefab_name].transform, "story_v_out_222041", "222041020", "story_v_out_222041.awb")
+					if var_87_15.prefab_name ~= "" and arg_84_1.actors_[var_87_15.prefab_name] ~= nil then
+						local var_87_21 = LuaForUtil.PlayVoiceWithCriLipsync(arg_84_1.actors_[var_87_15.prefab_name].transform, "story_v_out_222041", "222041020", "story_v_out_222041.awb")
 
-						arg_79_1:RecordAudio("222041020", var_82_21)
-						arg_79_1:RecordAudio("222041020", var_82_21)
+						arg_84_1:RecordAudio("222041020", var_87_21)
+						arg_84_1:RecordAudio("222041020", var_87_21)
 					else
-						arg_79_1:AudioAction("play", "voice", "story_v_out_222041", "222041020", "story_v_out_222041.awb")
+						arg_84_1:AudioAction("play", "voice", "story_v_out_222041", "222041020", "story_v_out_222041.awb")
 					end
 
-					arg_79_1:RecordHistoryTalkVoice("story_v_out_222041", "222041020", "story_v_out_222041.awb")
+					arg_84_1:RecordHistoryTalkVoice("story_v_out_222041", "222041020", "story_v_out_222041.awb")
 				end
 
-				arg_79_1:RecordContent(arg_79_1.text_.text)
+				arg_84_1:RecordContent(arg_84_1.text_.text)
 			end
 
-			local var_82_22 = math.max(var_82_13, arg_79_1.talkMaxDuration)
+			local var_87_22 = math.max(var_87_13, arg_84_1.talkMaxDuration)
 
-			if var_82_12 <= arg_79_1.time_ and arg_79_1.time_ < var_82_12 + var_82_22 then
-				arg_79_1.typewritter.percent = (arg_79_1.time_ - var_82_12) / var_82_22
+			if var_87_12 <= arg_84_1.time_ and arg_84_1.time_ < var_87_12 + var_87_22 then
+				arg_84_1.typewritter.percent = (arg_84_1.time_ - var_87_12) / var_87_22
 
-				arg_79_1.typewritter:SetDirty()
+				arg_84_1.typewritter:SetDirty()
 			end
 
-			if arg_79_1.time_ >= var_82_12 + var_82_22 and arg_79_1.time_ < var_82_12 + var_82_22 + arg_82_0 then
-				arg_79_1.typewritter.percent = 1
+			if arg_84_1.time_ >= var_87_12 + var_87_22 and arg_84_1.time_ < var_87_12 + var_87_22 + arg_87_0 then
+				arg_84_1.typewritter.percent = 1
 
-				arg_79_1.typewritter:SetDirty()
-				arg_79_1:ShowNextGo(true)
+				arg_84_1.typewritter:SetDirty()
+				arg_84_1:ShowNextGo(true)
 			end
 		end
 	end,

@@ -62,7 +62,7 @@ function var_0_0.HidePop(arg_10_0)
 end
 
 function var_0_0.OnExit(arg_11_0)
-	arg_11_0:HideMaskMessage()
+	return
 end
 
 function var_0_0.Dispose(arg_12_0)

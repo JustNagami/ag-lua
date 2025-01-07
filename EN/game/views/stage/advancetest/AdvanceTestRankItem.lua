@@ -11,6 +11,7 @@ end
 function var_0_0.initUI(arg_2_0)
 	arg_2_0:BindCfgUI()
 
+	arg_2_0.commonPortrait_ = CommonHeadPortrait.New(arg_2_0.headItem_)
 	arg_2_0.rankController_ = arg_2_0.conExCollection_:GetController("rank")
 	arg_2_0.heroCountController_ = arg_2_0.conExCollection_:GetController("heroCount")
 end
@@ -32,8 +33,9 @@ function var_0_0.Refresh(arg_4_0, arg_4_1)
 
 	arg_4_0.name_ = arg_4_1.nick
 	arg_4_0.nickText_.text = arg_4_1.nick
-	arg_4_0.headImg_.sprite = ItemTools.getItemSprite(arg_4_1.portrait)
-	arg_4_0.frameImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_4_1.frame)
+
+	arg_4_0.commonPortrait_:RenderHead(arg_4_1.portrait)
+	arg_4_0.commonPortrait_:RenderFrame(arg_4_1.frame)
 
 	local var_4_0 = arg_4_1:GetSingleSelectHeroList()
 	local var_4_1 = math.min(#var_4_0, 3)
@@ -94,6 +96,11 @@ function firstLargeSize(arg_5_0, arg_5_1)
 	end
 
 	return var_5_6
+end
+
+function var_0_0.Dispose(arg_6_0)
+	arg_6_0.commonPortrait_:Dispose()
+	var_0_0.super.Dispose(arg_6_0)
 end
 
 return var_0_0

@@ -335,6 +335,18 @@
 		sub_name = "5a8607028083e3c38725c91f1ca13866",
 		faction = ""
 	},
+	[4042] = {
+		ID = 4042,
+		main_name = "09aa38d6f6e8854c736681c457e3e0c8",
+		sub_name = "3b91f3bbe75398589a63ae1de901e2e1",
+		faction = ""
+	},
+	[4043] = {
+		ID = 4043,
+		main_name = "013af0592e5b7522a077fd163d4c76dc",
+		sub_name = "ec54859dbdc0e0b5dde5481aaf42c34d",
+		faction = ""
+	},
 	all = {
 		3004,
 		3005,
@@ -391,6 +403,8 @@
 		4037,
 		4038,
 		4040,
-		4041
+		4041,
+		4042,
+		4043
 	}
 }

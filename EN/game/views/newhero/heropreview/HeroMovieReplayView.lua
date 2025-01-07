@@ -91,7 +91,7 @@ end
 function var_0_0.PlayGetHeroVoice(arg_11_0)
 	local var_11_0 = arg_11_0:GetHeroID()
 
-	manager.audio:PlayVoice(string.format("vo_sys_%d", var_11_0), string.format("v_s_%d_%s", var_11_0, "get"), string.format("vo_sys_%d.awb", var_11_0))
+	manager.audio:PlayVoice(string.format("vo_sys_%d", var_11_0), string.format("v_s_%d_%s", var_11_0, "get_cg"), string.format("vo_sys_%d.awb", var_11_0))
 end
 
 function var_0_0.GetPlayable(arg_12_0)

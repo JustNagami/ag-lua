@@ -17,10 +17,11 @@ manager.net:Bind(34009, function(arg_2_0)
 	local var_2_0 = arg_2_0.order
 
 	print(string.format("=======> pay result, channel = %s, platform = %s, create_timestamp = %s, order_source = %s", tostring(var_2_0.channel), tostring(var_2_0.platform), tostring(var_2_0.create_timestamp), tostring(var_2_0.order_source)))
+	print(string.format("=======> pay is_web_recharge, is_web_recharge = %s", tostring(var_2_0.is_web_recharge)))
+	RechargeData:RecordTotalRecharge(var_2_0.goods_id)
+	var_0_1.UpdateTotalRechargeRedPoint()
 
-	if not SDKTools.IsSDK() or var_2_0.order_source == 3 then
-		-- block empty
-	elseif var_2_0.channel ~= var_0_2 or var_2_0.platform ~= var_0_3 or var_2_0.create_timestamp ~= var_0_4 then
+	if SDKTools.IsSDK() and var_2_0.is_web_recharge ~= true and (var_2_0.channel ~= var_0_2 or var_2_0.platform ~= var_0_3 or var_2_0.create_timestamp ~= var_0_4) then
 		return
 	end
 
@@ -48,9 +49,6 @@ manager.net:Bind(34009, function(arg_2_0)
 	else
 		ShowTips(string.format(GetTips("PAY_SUCCESS"), GetI18NText(var_2_7.name)))
 	end
-
-	RechargeData:RecordTotalRecharge(var_2_2)
-	var_0_1.UpdateTotalRechargeRedPoint()
 
 	if var_2_7.type == 1 then
 		RechargeData:RecordRecharge(var_2_2)
@@ -242,174 +240,179 @@ end
 function var_0_1.OnGetMonthCardBonus(arg_17_0, arg_17_1)
 	if isSuccess(arg_17_0.result) then
 		RechargeData:SignToday(arg_17_0.is_sign)
-		getReward(arg_17_0.reward_list)
-		manager.notify:CallUpdateFunc(MONTH_CARD_DAILY_REWARD)
+		getReward(arg_17_0.reward_list, nil, function()
+			manager.notify:CallUpdateFunc(MONTH_CARD_DAILY_REWARD)
+		end)
 		ActivityNewbieTools.SetMonthlyCardSign()
+	else
+		manager.notify:CallUpdateFunc(SIGN_INPUT, true)
 	end
 end
 
-function var_0_1.RequestGSPay(arg_18_0, arg_18_1, arg_18_2, arg_18_3, arg_18_4, arg_18_5)
+function var_0_1.RequestGSPay(arg_19_0, arg_19_1, arg_19_2, arg_19_3, arg_19_4, arg_19_5)
 	if ShopTools.IsLimitRecharge() then
 		ShowTips("PC_SHOP_TIPS2")
 
 		return
 	end
 
-	arg_18_1 = arg_18_1 or 1
-	var_0_1.gsPayCallback_ = arg_18_4
+	arg_19_1 = arg_19_1 or 1
+	var_0_1.gsPayCallback_ = arg_19_4
 
-	local var_18_0 = {
-		id = arg_18_0,
-		number = arg_18_1
+	local var_19_0 = {
+		id = arg_19_0,
+		number = arg_19_1
 	}
 
-	if arg_18_2 ~= nil then
-		var_18_0.shop_id = arg_18_2
+	if arg_19_2 ~= nil then
+		var_19_0.shop_id = arg_19_2
 	end
 
-	if arg_18_3 ~= nil then
-		var_18_0.buy_id = arg_18_3
+	if arg_19_3 ~= nil then
+		var_19_0.buy_id = arg_19_3
 	end
 
-	if arg_18_5 ~= nil then
-		var_18_0.buy_source = arg_18_5
+	if arg_19_5 ~= nil then
+		var_19_0.buy_source = arg_19_5
 	end
 
-	manager.net:SendWithLoadingNew(34010, var_18_0, 34011, var_0_1.OnRequestGSPayCallback)
+	manager.net:SendWithLoadingNew(34010, var_19_0, 34011, var_0_1.OnRequestGSPayCallback)
 	var_0_1.ShowWaiting(true)
 	SendMessageManagerToSDK("purchase_click")
 end
 
-function var_0_1.OnRequestGSPayCallback(arg_19_0, arg_19_1)
+function var_0_1.OnRequestGSPayCallback(arg_20_0, arg_20_1)
 	if ShopTools.IsLimitRecharge() then
 		ShowTips("PC_SHOP_TIPS2")
 
 		return
 	end
 
-	if isSuccess(arg_19_0.result) then
-		local var_19_0 = arg_19_0.order
+	if isSuccess(arg_20_0.result) then
+		local var_20_0 = arg_20_0.order
 
-		print("extra_data = " .. var_19_0.extra_data)
+		print("extra_data = " .. var_20_0.extra_data)
 
-		local var_19_1 = var_19_0.order_id
-		local var_19_2 = var_19_0.goods_id
-		local var_19_3 = var_19_0.num
-		local var_19_4 = var_19_0.value
-		local var_19_5 = var_19_0.sign
-		local var_19_6 = var_19_0.state
+		local var_20_1 = var_20_0.order_id
+		local var_20_2 = var_20_0.goods_id
+		local var_20_3 = var_20_0.num
+		local var_20_4 = var_20_0.value
+		local var_20_5 = var_20_0.sign
+		local var_20_6 = var_20_0.state
 
-		var_0_2 = var_19_0.channel
-		var_0_3 = var_19_0.platform
-		var_0_4 = var_19_0.create_timestamp
+		var_0_2 = var_20_0.channel
+		var_0_3 = var_20_0.platform
+		var_0_4 = var_20_0.create_timestamp
 
 		print(string.format("=======> pay request, channel = %s, platform = %s, create_timestamp = %s", tostring(var_0_2), tostring(var_0_3), tostring(var_0_4)))
 
-		local var_19_7 = PaymentCfg[arg_19_1.id]
-		local var_19_8 = {}
-		local var_19_9 = PlayerData:GetPlayerInfo()
+		local var_20_7 = PaymentCfg[arg_20_1.id]
+		local var_20_8 = {}
+		local var_20_9 = PlayerData:GetPlayerInfo()
 
 		if GameToSDK.PLATFORM_ID == 1 then
-			var_19_8 = {
-				productId = var_19_7.product_id,
-				price = var_19_4,
-				count = var_19_3,
-				outOrderNo = var_19_1,
-				currency = var_19_7.currency_type,
-				extraData = var_19_0.extra_data,
-				orderSign = var_19_5,
+			var_20_8 = {
+				productId = var_20_7.product_id,
+				price = var_20_4,
+				count = var_20_3,
+				outOrderNo = var_20_1,
+				currency = var_20_7.currency_type,
+				extraData = var_20_0.extra_data,
+				orderSign = var_20_5,
+				totalFee = var_20_4,
+				coinNum = CurrencyData:GetRechargeDiamond(),
 				params = {
-					gameRoleId = var_19_9.userID,
-					gameRoleName = var_19_9.nick,
-					gameRoleLevel = var_19_9.userLevel,
+					gameRoleId = var_20_9.userID,
+					gameRoleName = var_20_9.nick,
+					gameRoleLevel = var_20_9.userLevel,
 					gameServerId = _G.TMP_SERVER_ID,
 					gameServerName = tostring(_G.TMP_SERVER_ID),
 					gameServerCode = _G.TMP_SERVER_ID
 				}
 			}
 		elseif GameToSDK.PLATFORM_ID == 0 then
-			var_19_8 = {
-				orderId = var_19_1,
-				productId = var_19_7.product_id,
-				productName = var_19_7.name,
-				productDes = var_19_7.describe,
-				price = var_19_4,
-				count = var_19_3,
+			var_20_8 = {
+				orderId = var_20_1,
+				productId = var_20_7.product_id,
+				productName = var_20_7.name,
+				productDes = var_20_7.describe,
+				price = var_20_4,
+				count = var_20_3,
 				currentNum = ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_RMB),
 				gameServerId = _G.TMP_SERVER_ID,
 				gameServerName = tostring(_G.TMP_SERVER_ID),
 				gameServerCode = _G.TMP_SERVER_ID,
-				gameRoleId = var_19_9.userID,
-				gameRoleName = var_19_9.nick,
-				gameRoleLevel = var_19_9.userLevel,
-				currency = var_19_7.currency_type,
-				orderSign = var_19_5,
-				extraData = var_19_0.extra_data
+				gameRoleId = var_20_9.userID,
+				gameRoleName = var_20_9.nick,
+				gameRoleLevel = var_20_9.userLevel,
+				currency = var_20_7.currency_type,
+				orderSign = var_20_5,
+				extraData = var_20_0.extra_data
 			}
 		elseif GameToSDK.IsEditorOrPcPlatform() then
-			var_19_8 = {
-				orderId = var_19_1,
-				productId = var_19_7.product_id,
-				productName = var_19_7.name,
-				productDes = var_19_7.describe,
-				price = var_19_4,
-				count = var_19_3,
+			var_20_8 = {
+				orderId = var_20_1,
+				productId = var_20_7.product_id,
+				productName = var_20_7.name,
+				productDes = var_20_7.describe,
+				price = var_20_4,
+				count = var_20_3,
 				currentNum = ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_RMB),
 				gameServerId = _G.TMP_SERVER_ID,
 				gameServerName = tostring(_G.TMP_SERVER_ID),
 				gameServerCode = _G.TMP_SERVER_ID,
-				gameRoleId = var_19_9.userID,
-				gameRoleName = var_19_9.nick,
-				gameRoleLevel = var_19_9.userLevel,
-				currency = var_19_7.currency_type,
-				orderSign = var_19_5,
-				extraData = var_19_0.extra_data
+				gameRoleId = var_20_9.userID,
+				gameRoleName = var_20_9.nick,
+				gameRoleLevel = var_20_9.userLevel,
+				currency = var_20_7.currency_type,
+				orderSign = var_20_5,
+				extraData = var_20_0.extra_data
 			}
 		end
 
-		local var_19_10 = var_0_0.encode(var_19_8)
+		local var_20_10 = var_0_0.encode(var_20_8)
 
-		GameToSDK.Pay(var_19_10)
+		GameToSDK.Pay(var_20_10)
 		var_0_1.ShowWaiting(true)
 	else
-		if TipsCfg[arg_19_0.result] ~= nil then
-			ShowTips(TipsCfg[arg_19_0.result].desc)
+		if TipsCfg[arg_20_0.result] ~= nil then
+			ShowTips(TipsCfg[arg_20_0.result].desc)
 		else
-			ShowTips(GetTips(tostring(arg_19_0.result)))
+			ShowTips(GetTips(tostring(arg_20_0.result)))
 		end
 
 		var_0_1.ShowWaiting(false)
 	end
 
 	if var_0_1.gsPayCallback_ ~= nil then
-		var_0_1.gsPayCallback_(arg_19_0)
+		var_0_1.gsPayCallback_(arg_20_0)
 
 		var_0_1.gsPayCallback_ = nil
 	end
 end
 
-function var_0_1.GetTotalRechargeBonus(arg_20_0)
+function var_0_1.GetTotalRechargeBonus(arg_21_0)
 	manager.net:SendWithLoadingNew(34012, {
-		id = arg_20_0
+		id = arg_21_0
 	}, 34013, var_0_1.OnGetTotalRechargeBonus)
 end
 
-function var_0_1.OnGetTotalRechargeBonus(arg_21_0, arg_21_1)
-	if isSuccess(arg_21_0.result) then
-		RechargeData:MarkBonusGet(arg_21_0)
-		getReward(arg_21_0.reward_list)
-		manager.notify:Invoke(GET_TOTAL_RECHARGE_BONUS, arg_21_1.id)
+function var_0_1.OnGetTotalRechargeBonus(arg_22_0, arg_22_1)
+	if isSuccess(arg_22_0.result) then
+		RechargeData:MarkBonusGet(arg_22_0)
+		getReward(arg_22_0.reward_list)
+		manager.notify:Invoke(GET_TOTAL_RECHARGE_BONUS, arg_22_1.id)
 		var_0_1.UpdateTotalRechargeRedPoint()
 	end
 end
 
-function var_0_1.ShowWaiting(arg_22_0, arg_22_1)
-	arg_22_1 = arg_22_1 or 180
+function var_0_1.ShowWaiting(arg_23_0, arg_23_1)
+	arg_23_1 = arg_23_1 or 180
 
-	SetForceShowQuanquan(arg_22_0)
+	SetForceShowQuanquan(arg_23_0)
 
-	if arg_22_0 then
-		var_0_1.payTimer_ = TimeTools.StartAfterSeconds(arg_22_1, function()
+	if arg_23_0 then
+		var_0_1.payTimer_ = TimeTools.StartAfterSeconds(arg_23_1, function()
 			if var_0_1.payTimer_ ~= nil then
 				var_0_1.payTimer_:Stop()
 

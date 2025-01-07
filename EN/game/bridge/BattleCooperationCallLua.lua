@@ -14,11 +14,16 @@ function var_0_0.GotoTeam(arg_1_0, arg_1_1, arg_1_2, arg_1_3)
 
 		local var_1_1 = CollectHeroExpChange(var_1_0)
 
+		if isSuccess(arg_1_1.result - 1) then
+			CheckBattleResultNeedAddHeroExp()
+		end
+
 		var_0_0.goToResult(arg_1_1.result - 1, arg_1_1.star_list, {
 			oldPlayerEXPInfo = arg_1_3,
 			heroDataCollect = var_1_1,
 			errorCode = arg_1_2
 		})
+		GetBattleResultNeedAddHeroExp()
 	end
 end
 

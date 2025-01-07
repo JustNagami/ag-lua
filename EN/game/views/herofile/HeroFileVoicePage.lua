@@ -9,16 +9,15 @@ end
 
 function var_0_0.Init(arg_2_0)
 	arg_2_0:InitUI()
-	arg_2_0:AddUIListener()
 end
 
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
 	arg_3_0.curHeroID_ = 0
-	arg_3_0.voiceList_ = {}
-	arg_3_0.playingVoiceIndex_ = 0
-	arg_3_0.voiceLuaUiList_ = LuaList.New(handler(arg_3_0, arg_3_0.IndexVoiceItem), arg_3_0.voiceUilist_, HeroFileVoiceItem)
+	arg_3_0.playingVoiceID_ = 0
+	arg_3_0.openItem = 0
+	arg_3_0.itemList_ = {}
 end
 
 function var_0_0.CameraEnter(arg_4_0)
@@ -28,168 +27,220 @@ function var_0_0.CameraEnter(arg_4_0)
 	})
 end
 
-function var_0_0.AddUIListener(arg_5_0)
-	return
+function var_0_0.Show(arg_5_0, arg_5_1, arg_5_2, arg_5_3, arg_5_4)
+	arg_5_0:UpdateView(arg_5_1, arg_5_2, arg_5_4)
+	SetActive(arg_5_0.dialogBoxGo_, false)
+	SetActive(arg_5_0.gameObject_, true)
 end
 
-function var_0_0.IndexVoiceItem(arg_6_0, arg_6_1, arg_6_2)
-	arg_6_2:SetData(arg_6_0.curHeroID_, arg_6_0.voiceList_[arg_6_1], function()
-		PlayerAction.CheckHeroVoice(arg_6_0.curHeroID_, function()
-			if arg_6_0.playingVoiceIndex_ == arg_6_1 then
-				arg_6_0:StopVoice()
-			else
-				arg_6_0:PlayVoice(arg_6_1, arg_6_0.voiceList_[arg_6_1].id)
-			end
-		end)
-	end)
-
-	if arg_6_1 == arg_6_0.playingVoiceIndex_ then
-		arg_6_2:StartPlay()
-	else
-		arg_6_2:StopPlay()
-	end
+function var_0_0.Hide(arg_6_0)
+	arg_6_0:StopVoice()
+	SetActive(arg_6_0.gameObject_, false)
 end
 
-function var_0_0.Show(arg_9_0, arg_9_1, arg_9_2)
-	arg_9_0:UpdateView(arg_9_1, arg_9_2)
-	arg_9_0.voiceLuaUiList_:StartScroll(#arg_9_0.voiceList_)
-	SetActive(arg_9_0.dialogBoxGo_, false)
-	SetActive(arg_9_0.gameObject_, true)
-end
-
-function var_0_0.Hide(arg_10_0)
-	arg_10_0:StopVoice()
-	SetActive(arg_10_0.gameObject_, false)
-end
-
-local function var_0_1(arg_11_0, arg_11_1)
+local function var_0_1(arg_7_0, arg_7_1)
 	if not SDKTools.GetIsOverSea() then
 		return false
 	end
 
-	if DormHeroTools:IsVoiceNeedUnlock(arg_11_1, arg_11_0) then
-		return BackHomeHeroCfg[arg_11_0] == nil
+	if DormHeroTools:IsVoiceNeedUnlock(arg_7_1, arg_7_0) then
+		return BackHomeHeroCfg[arg_7_0] == nil
 	end
 
 	return false
 end
 
-function var_0_0.UpdateVoiceData(arg_12_0)
-	arg_12_0.voiceList_ = {}
+function var_0_0.UpdateVoiceData(arg_8_0)
+	arg_8_0.voiceList_ = {}
 
-	local var_12_0 = 1
+	local var_8_0 = 1
 
-	for iter_12_0, iter_12_1 in ipairs(HeroVoiceCfg.all) do
-		local var_12_1 = HeroTools.IsUnlockVoice(arg_12_0.curHeroID_, iter_12_1)
-		local var_12_2
+	for iter_8_0, iter_8_1 in ipairs(HeroVoiceCfg.all) do
+		local var_8_1 = HeroTools:IsUnlockVoice(arg_8_0.curHeroID_, iter_8_1)
+		local var_8_2
 
-		if not var_0_1(arg_12_0.curHeroID_, iter_12_1) then
-			var_12_2 = HeroVoiceDescCfg.Get(arg_12_0.curHeroID_, iter_12_1)
+		if not var_0_1(arg_8_0.curHeroID_, iter_8_1) then
+			var_8_2 = HeroVoiceDescCfg.Get(arg_8_0.curHeroID_, iter_8_1)
 		end
 
-		if var_12_2 ~= nil and var_12_2 ~= "" then
-			arg_12_0.voiceList_[var_12_0] = {
-				id = iter_12_1,
-				unlock = var_12_1
+		if var_8_2 ~= nil and var_8_2 ~= "" then
+			arg_8_0.voiceList_[var_8_0] = {
+				id = iter_8_1,
+				unlock = var_8_1
 			}
-			var_12_0 = var_12_0 + 1
+			var_8_0 = var_8_0 + 1
 		end
 	end
 
-	table.sort(arg_12_0.voiceList_, function(arg_13_0, arg_13_1)
-		if (arg_13_0.unlock or arg_13_1.unlock) and arg_13_0.unlock ~= arg_13_1.unlock then
-			return arg_13_0.unlock
+	table.sort(arg_8_0.voiceList_, function(arg_9_0, arg_9_1)
+		if (arg_9_0.unlock or arg_9_1.unlock) and arg_9_0.unlock ~= arg_9_1.unlock then
+			return arg_9_0.unlock
 		end
 
-		return arg_13_0.id < arg_13_1.id
+		return arg_9_0.id < arg_9_1.id
 	end)
 end
 
-function var_0_0.PlayVoice(arg_14_0, arg_14_1, arg_14_2)
+function var_0_0.PlayVoice(arg_10_0, arg_10_1)
 	SDKTools.SendMessageToSDK("hero_sound", {
-		hero_id = arg_14_0.curHeroID_,
-		sound_id = arg_14_2
+		hero_id = arg_10_0.curHeroID_,
+		sound_id = arg_10_1
 	})
-	arg_14_0:StopVoice()
+	arg_10_0:StopVoice()
 
-	arg_14_0.dialogText_.text = HeroVoiceDescCfg.Get(arg_14_0.curHeroID_, arg_14_2)
+	if arg_10_0.formID_ then
+		arg_10_0.dialogText_.text = HeroVoiceDescCfg.GetByFormID(arg_10_0.formID_, arg_10_1)
+	else
+		arg_10_0.dialogText_.text = HeroVoiceDescCfg.Get(arg_10_0.curHeroID_, arg_10_1)
+	end
 
-	arg_14_0.dialogBoxTrs_:SetSizeDeltaY(math.max(arg_14_0.dialogText_.preferredHeight + 48, 128))
-	SetActive(arg_14_0.dialogBoxGo_, true)
-	arg_14_0.dialogAni_:Play("HeroFileVoicePageUI", 0)
-	arg_14_0.dialogAni_:Update(0)
+	arg_10_0.dialogBoxTrs_:SetSizeDeltaY(math.max(arg_10_0.dialogText_.preferredHeight + 48, 128))
+	SetActive(arg_10_0.dialogBoxGo_, true)
+	arg_10_0.dialogAni_:Play("HeroFileVoicePageUI", 0)
+	arg_10_0.dialogAni_:Update(0)
 
-	arg_14_0.delayPlayTimer_ = Timer.New(function()
+	arg_10_0.delayPlayTimer_ = Timer.New(function()
 		if manager.audio:IsStoppedOfVoice() then
-			arg_14_0.delayPlayTimer_:Stop()
+			arg_10_0.delayPlayTimer_:Stop()
 
-			arg_14_0.delayPlayTimer_ = nil
+			arg_10_0.delayPlayTimer_ = nil
 
-			local var_15_0 = arg_14_0.curHeroID_
+			local var_11_0 = arg_10_0.curHeroID_
+			local var_11_1 = false
 
-			if HeroVoiceCfg[arg_14_2].use_skin_id and HeroVoiceCfg[arg_14_2].use_skin_id ~= 0 then
-				var_15_0 = HeroVoiceCfg[arg_14_2].use_skin_id
+			print("voiceID:", arg_10_1)
+
+			if HeroVoiceCfg[arg_10_1].use_skin_id and HeroVoiceCfg[arg_10_1].use_skin_id ~= 0 then
+				var_11_0 = HeroVoiceCfg[arg_10_1].use_skin_id
+				var_11_1 = true
 			end
 
-			HeroTools.PlayVoice(var_15_0, HeroVoiceCfg[arg_14_2].file, HeroVoiceCfg[arg_14_2].type)
+			if arg_10_0.formID_ then
+				if var_11_1 then
+					local var_11_2 = string.sub(tostring(var_11_0), -2)
+					local var_11_3 = tostring(arg_10_0.formID_) .. var_11_2
 
-			local var_15_1 = HeroTools.GetTalkLength(var_15_0, HeroVoiceCfg[arg_14_2].file, HeroVoiceCfg[arg_14_2].type)
-			local var_15_2 = math.max(var_15_1, 0.017)
+					var_11_0 = tonumber(var_11_3)
+				else
+					var_11_0 = arg_10_0.formID_
+				end
+			end
 
-			arg_14_0.timer_ = TimeTools.StartAfterSeconds(var_15_2 / 1000, function()
-				arg_14_0:StopVoice()
+			HeroTools.PlayVoice(var_11_0, HeroVoiceCfg[arg_10_1].file, HeroVoiceCfg[arg_10_1].type)
+
+			local var_11_4 = HeroTools.GetTalkLength(var_11_0, HeroVoiceCfg[arg_10_1].file, HeroVoiceCfg[arg_10_1].type)
+			local var_11_5 = math.max(var_11_4, 0.017)
+
+			arg_10_0.timer_ = TimeTools.StartAfterSeconds(var_11_5 / 1000, function()
+				arg_10_0:StopVoice()
 			end, {})
 		end
 	end, 0.033, -1)
 
-	arg_14_0.delayPlayTimer_:Start()
+	arg_10_0.delayPlayTimer_:Start()
 
-	arg_14_0.playingVoiceIndex_ = arg_14_1
+	arg_10_0.playingVoiceID_ = arg_10_1
 
-	local var_14_0 = arg_14_0.voiceLuaUiList_:GetItemByIndex(arg_14_1)
-
-	if var_14_0 then
-		var_14_0:StartPlay()
+	for iter_10_0, iter_10_1 in ipairs(arg_10_0.itemList_) do
+		if iter_10_1 then
+			iter_10_1:StartPlay(arg_10_0.playingVoiceID_)
+		end
 	end
 end
 
-function var_0_0.StopVoice(arg_17_0)
-	SetActive(arg_17_0.dialogBoxGo_, false)
+function var_0_0.StopVoice(arg_13_0)
+	SetActive(arg_13_0.dialogBoxGo_, false)
 
-	if arg_17_0.delayPlayTimer_ then
-		arg_17_0.delayPlayTimer_:Stop()
+	if arg_13_0.delayPlayTimer_ then
+		arg_13_0.delayPlayTimer_:Stop()
 
-		arg_17_0.delayPlayTimer_ = nil
+		arg_13_0.delayPlayTimer_ = nil
 	end
 
 	manager.audio:StopVoiceImmediate()
 
-	if arg_17_0.timer_ then
-		arg_17_0.timer_:Stop()
+	if arg_13_0.timer_ then
+		arg_13_0.timer_:Stop()
 
-		arg_17_0.timer_ = nil
+		arg_13_0.timer_ = nil
 	end
 
-	if arg_17_0.playingVoiceIndex_ ~= 0 then
-		local var_17_0 = arg_17_0.voiceLuaUiList_:GetItemByIndex(arg_17_0.playingVoiceIndex_)
-
-		if var_17_0 then
-			var_17_0:StopPlay()
+	if arg_13_0.playingVoiceID_ ~= 0 then
+		for iter_13_0, iter_13_1 in ipairs(arg_13_0.itemList_) do
+			if iter_13_1 then
+				iter_13_1:StopPlay()
+			end
 		end
 
-		arg_17_0.playingVoiceIndex_ = 0
+		arg_13_0.playingVoiceID_ = 0
 	end
 end
 
-function var_0_0.UpdateView(arg_18_0, arg_18_1, arg_18_2)
-	arg_18_0.curHeroID_ = arg_18_2
-
-	arg_18_0:UpdateVoiceData()
+function var_0_0.ForceUpdate(arg_14_0)
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_14_0.content_)
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_14_0.content_)
 end
 
-function var_0_0.Dispose(arg_19_0)
-	arg_19_0.voiceLuaUiList_:Dispose()
-	var_0_0.super.Dispose(arg_19_0)
+function var_0_0.UpdateView(arg_15_0, arg_15_1, arg_15_2, arg_15_3)
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_15_0.content_)
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_15_0.content_)
+
+	arg_15_0.curHeroID_ = arg_15_2
+
+	if arg_15_3 then
+		arg_15_0.formID_ = arg_15_3
+	else
+		arg_15_0.formID_ = nil
+	end
+
+	arg_15_0:InitItemList()
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_15_0.content_)
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_15_0.content_)
+end
+
+function var_0_0.InitItemList(arg_16_0)
+	local var_16_0 = 1
+
+	for iter_16_0, iter_16_1 in pairs(HeroVoiceTagCfg.all) do
+		if not arg_16_0.itemList_[var_16_0] then
+			local var_16_1 = Object.Instantiate(arg_16_0.contentItem_, arg_16_0.content_)
+
+			arg_16_0.itemList_[var_16_0] = HeroFileVoiceContentItem.New(var_16_1)
+		end
+
+		arg_16_0.itemList_[var_16_0]:SetIsShow(true)
+		arg_16_0.itemList_[var_16_0]:SetData(arg_16_0.curHeroID_, HeroVoiceTagCfg.all[var_16_0], arg_16_0.formID_, function(arg_17_0)
+			PlayerAction.CheckHeroVoice(arg_16_0.curHeroID_, function()
+				if arg_16_0.playingVoiceID_ == arg_17_0 then
+					arg_16_0:StopVoice()
+				else
+					arg_16_0:PlayVoice(arg_17_0)
+				end
+			end)
+		end, function()
+			arg_16_0:ForceUpdate()
+		end)
+		arg_16_0.itemList_[var_16_0]:ChangeShow(false)
+		arg_16_0.itemList_[var_16_0]:StartPlay(arg_16_0.playingVoiceID_)
+
+		var_16_0 = var_16_0 + 1
+	end
+
+	for iter_16_2, iter_16_3 in pairs(arg_16_0.itemList_) do
+		if var_16_0 <= iter_16_2 or iter_16_3:IsEmpty() then
+			iter_16_3:SetIsShow(false)
+		end
+	end
+end
+
+function var_0_0.Dispose(arg_20_0)
+	for iter_20_0, iter_20_1 in pairs(arg_20_0.itemList_) do
+		iter_20_1:Dispose()
+	end
+
+	arg_20_0.itemList_ = {}
+
+	var_0_0.super.Dispose(arg_20_0)
 end
 
 return var_0_0

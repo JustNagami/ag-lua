@@ -34,7 +34,7 @@ function var_0_0.GotoActivityMatrix(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_4)
 				if var_3_3 and not manager.story:IsStoryPlayed(var_3_3) then
 					PlayerAction.ChangeStoryList(var_3_3)
 					manager.story:StartStoryById(var_3_3, function(arg_4_0)
-						gameContext:Go("/battleActivityMatrixResult", {
+						gameContext:Go("/battleMatrixResultNew", {
 							multiple = 1,
 							stageData = arg_2_2,
 							rewardList = var_2_0,
@@ -42,7 +42,7 @@ function var_0_0.GotoActivityMatrix(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_4)
 						})
 					end)
 				else
-					gameContext:Go("/battleActivityMatrixResult", {
+					gameContext:Go("/battleMatrixResultNew", {
 						multiple = 1,
 						stageData = arg_2_2,
 						rewardList = var_2_0,
@@ -50,7 +50,7 @@ function var_0_0.GotoActivityMatrix(arg_2_0, arg_2_1, arg_2_2, arg_2_3, arg_2_4)
 					})
 				end
 			else
-				gameContext:Go("/battleActivityMatrixResult", {
+				gameContext:Go("/battleMatrixResultNew", {
 					multiple = 1,
 					stageData = arg_2_2,
 					rewardList = var_2_0,

@@ -214,7 +214,8 @@ local function var_0_4(arg_11_0, arg_11_1, arg_11_2, arg_11_3)
 		graph_device_vendor = tostring(UnityEngine.SystemInfo.graphicsDeviceVendor),
 		graph_device_vendor_id = tostring(UnityEngine.SystemInfo.graphicsDeviceVendorID),
 		graph_device_version = tostring(UnityEngine.SystemInfo.graphicsDeviceVersion),
-		is_localization = var_11_0 == nil or var_11_0 == ""
+		is_localization = var_11_0 == nil or var_11_0 == "",
+		resolution = string.format("%dx%d", _G.SCREEN_WIDTH, _G.SCREEN_HEIGHT)
 	}, 10043, arg_11_2, false, false)
 end
 

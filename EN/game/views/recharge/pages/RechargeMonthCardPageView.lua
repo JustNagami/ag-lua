@@ -43,6 +43,12 @@ function var_0_1.AddUIListener(arg_3_0)
 			return
 		end
 
+		if ShopTools.IsPC() and not SDKTools.GetIsOverSea() then
+			ShopTools.OpenWebRecharge()
+
+			return
+		end
+
 		SendMessageManagerToSDK("purchase_click_montlycard")
 		arg_3_0:BuyMonthCard()
 		SDKTools.SendPaymentMessageToSDK("payment_touch", {

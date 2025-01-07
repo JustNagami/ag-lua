@@ -20,7 +20,7 @@ function var_0_1.TrySelect(arg_2_0)
 		return true
 	end
 
-	if PlayerData:GetSticker(arg_2_0.itemID_).unlock == 0 then
+	if PlayerData:GetSticker(arg_2_0.itemID_).lock then
 		arg_2_0:SetSelected(false)
 
 		return false

@@ -65,4 +65,10 @@ function var_0_0.indexAwardItem(arg_11_0, arg_11_1, arg_11_2)
 	arg_11_2:SetData(var_11_0)
 end
 
+function var_0_0.OnExitInput(arg_13_0)
+	JumpTools.Back()
+
+	return true
+end
+
 return var_0_0

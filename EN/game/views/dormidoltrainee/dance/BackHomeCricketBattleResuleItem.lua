@@ -11,13 +11,13 @@ function var_0_0.InitUI(arg_2_0)
 	arg_2_0:BindCfgUI()
 end
 
-function var_0_0.RefreshUI(arg_3_0, arg_3_1)
+function var_0_0.RefreshUI(arg_3_0, arg_3_1, arg_3_2)
 	local var_3_0 = BackHomeCricketBattleData:GetSingleBattleData()
 
 	arg_3_0.type = arg_3_1.type
 	arg_3_0.name_.text = GetTips(BackHomeCricketConst.SCORE_DESC[arg_3_0.type])
 
-	if var_3_0 then
+	if var_3_0 or arg_3_2 then
 		local var_3_1 = arg_3_1.attackData
 		local var_3_2 = arg_3_1.defendData
 		local var_3_3

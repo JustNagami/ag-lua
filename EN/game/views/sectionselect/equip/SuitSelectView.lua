@@ -30,7 +30,7 @@ function var_0_0.InitDropDown(arg_5_0)
 	arg_5_0.dropDown_.options:Add(UnityEngine.UI.Dropdown.OptionData.New(GetTips("ALL"), nil))
 	arg_5_0.dropDown_.options:Add(UnityEngine.UI.Dropdown.OptionData.New(GetTips("EQUIP_TYPE_1"), nil))
 	arg_5_0.dropDown_.options:Add(UnityEngine.UI.Dropdown.OptionData.New(GetTips("EQUIP_TYPE_2"), nil))
-	arg_5_0.dropDown_.options:Add(UnityEngine.UI.Dropdown.OptionData.New(GetTips("RACE_TYPE_9"), nil))
+	arg_5_0.dropDown_.options:Add(UnityEngine.UI.Dropdown.OptionData.New(GetTips("RACE_TYPE_10"), nil))
 	arg_5_0.dropDown_:RefreshShownValue()
 end
 

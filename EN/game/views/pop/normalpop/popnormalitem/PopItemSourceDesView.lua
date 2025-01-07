@@ -32,7 +32,7 @@ function var_0_0.RefreshContent(arg_2_0)
 		if arg_2_0.extraInfo_.isForeign then
 			SetActive(arg_2_0.isLockGo_, false)
 		else
-			local var_2_3 = PlayerData:GetSticker(var_2_1.id).unlock == 0
+			local var_2_3 = PlayerData:GetSticker(var_2_1.id).lock
 
 			SetActive(arg_2_0.isLockGo_, var_2_3)
 		end

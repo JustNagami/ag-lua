@@ -1098,6 +1098,10 @@ function var_0_0.GetHeroSkillAttributeIcon(arg_63_0, arg_63_1)
 end
 
 function var_0_0.GetSkillAttributeIcon(arg_64_0, arg_64_1)
+	if not arg_64_0 then
+		return getSprite("Atlas/Hero_arrtAtlas", "icon_none")
+	end
+
 	local var_64_0
 
 	if arg_64_1 then
@@ -1150,112 +1154,118 @@ function var_0_0.GetHeroCurrentMaxLevel(arg_68_0)
 	return HeroTools.GetHeroBreakConfig(var_68_1.race, var_68_0).max_level
 end
 
-function var_0_0.GetHeroBreakConfig(arg_69_0, arg_69_1)
-	for iter_69_0, iter_69_1 in ipairs(HeroBreakCfg.all) do
-		if HeroBreakCfg[iter_69_1].race == arg_69_0 and HeroBreakCfg[iter_69_1].break_times == arg_69_1 then
-			return HeroBreakCfg[iter_69_1]
+function var_0_0.GetHeroMaxLevel(arg_69_0)
+	local var_69_0 = HeroCfg[arg_69_0.id]
+
+	return HeroBreakCfg[HeroBreakCfg.get_id_list_by_race[var_69_0.race][#HeroBreakCfg.get_id_list_by_race[var_69_0.race]]].max_level
+end
+
+function var_0_0.GetHeroBreakConfig(arg_70_0, arg_70_1)
+	for iter_70_0, iter_70_1 in ipairs(HeroBreakCfg.all) do
+		if HeroBreakCfg[iter_70_1].race == arg_70_0 and HeroBreakCfg[iter_70_1].break_times == arg_70_1 then
+			return HeroBreakCfg[iter_70_1]
 		end
 	end
 
-	error(string.format("在hero_break.csv中找不到race=%d,breakLevel=%d的项", arg_69_0, arg_69_1))
+	error(string.format("在hero_break.csv中找不到race=%d,breakLevel=%d的项", arg_70_0, arg_70_1))
 
 	return nil
 end
 
-function var_0_0.GetHeroServantInfo(arg_70_0)
-	local var_70_0 = WeaponServantData.GetWeaponServantList()
-	local var_70_1 = HeroData:GetHeroList()[arg_70_0].servant_uid
+function var_0_0.GetHeroServantInfo(arg_71_0)
+	local var_71_0 = WeaponServantData.GetWeaponServantList()
+	local var_71_1 = HeroData:GetHeroList()[arg_71_0].servant_uid
 
-	if var_70_1 == 0 then
+	if var_71_1 == 0 then
 		return nil
 	end
 
-	return var_70_0[var_70_1]
+	return var_71_0[var_71_1]
 end
 
-function var_0_0.GetHeroSpecServant(arg_71_0)
-	return HeroCfg[arg_71_0].spec_servant
+function var_0_0.GetHeroSpecServant(arg_72_0)
+	return HeroCfg[arg_72_0].spec_servant
 end
 
-function var_0_0.GetHeroProficiency(arg_72_0)
-	local var_72_0 = HeroData:GetHeroData(arg_72_0).clear_times
+function var_0_0.GetHeroProficiency(arg_73_0)
+	local var_73_0 = HeroData:GetHeroData(arg_73_0).clear_times
 
-	return (math.min(var_72_0, GameSetting.mastery_level_max.value[1]))
+	return (math.min(var_73_0, GameSetting.mastery_level_max.value[1]))
 end
 
-function var_0_0.CanBreakHero(arg_73_0)
-	local var_73_0 = HeroCfg[arg_73_0]
-	local var_73_1 = HeroData:GetHeroData(arg_73_0)
+function var_0_0.CanBreakHero(arg_74_0)
+	local var_74_0 = HeroCfg[arg_74_0]
+	local var_74_1 = HeroData:GetHeroData(arg_74_0)
 
-	if var_73_1.unlock and var_73_1.level < HeroConst.HERO_LV_MAX and var_73_1.level >= HeroTools.GetHeroCurrentMaxLevel(var_73_1) then
+	if var_74_1.unlock and var_74_1.level < HeroConst.HERO_LV_MAX and var_74_1.level >= HeroTools.GetHeroCurrentMaxLevel(var_74_1) then
 		-- block empty
 	else
 		return false
 	end
 
-	local var_73_2 = HeroTools.GetHeroBreakConfig(var_73_0.race, var_73_1.break_level or 0)
+	local var_74_2 = HeroTools.GetHeroBreakConfig(var_74_0.race, var_74_1.break_level or 0)
 
-	if PlayerData:GetPlayerInfo().userLevel < var_73_2.user_level then
+	if PlayerData:GetPlayerInfo().userLevel < var_74_2.user_level then
 		return false
 	end
 
-	local var_73_3 = #var_73_2.cost
+	local var_74_3 = #var_74_2.cost
 
-	for iter_73_0 = 1, var_73_3 do
-		local var_73_4 = var_73_2.cost[iter_73_0]
+	for iter_74_0 = 1, var_74_3 do
+		local var_74_4 = var_74_2.cost[iter_74_0]
 
-		if not (ItemTools.getItemNum(var_73_4[1]) >= var_73_4[2]) then
+		if not (ItemTools.getItemNum(var_74_4[1]) >= var_74_4[2]) then
 			return false
 		end
 	end
 
-	if ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_GOLD) < var_73_2.cost_gold then
+	if ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_GOLD) < var_74_2.cost_gold then
 		return false
 	end
 
 	return true
 end
 
-function var_0_0.GetHeroOntologyID(arg_74_0)
-	for iter_74_0, iter_74_1 in ipairs(HeroRecordCfg.all) do
-		local var_74_0 = HeroRecordCfg[iter_74_1]
+function var_0_0.GetHeroOntologyID(arg_75_0)
+	for iter_75_0, iter_75_1 in ipairs(HeroRecordCfg.all) do
+		local var_75_0 = HeroRecordCfg[iter_75_1]
 
-		if arg_74_0 == iter_74_1 then
-			return iter_74_1, true
+		if arg_75_0 == iter_75_1 then
+			return iter_75_1, true
 		end
 
-		for iter_74_2, iter_74_3 in ipairs(var_74_0.hero_id) do
-			if arg_74_0 == iter_74_3 then
-				return iter_74_1, false
+		for iter_75_2, iter_75_3 in ipairs(var_75_0.hero_id) do
+			if arg_75_0 == iter_75_3 then
+				return iter_75_1, false
 			end
 		end
 	end
 end
 
-function var_0_0.GetHeroTeachVideo(arg_75_0)
-	local var_75_0 = HeroCfg[arg_75_0]
+function var_0_0.GetHeroTeachVideo(arg_76_0)
+	local var_76_0 = HeroCfg[arg_76_0]
 
-	if HeroData:GetHeroData(arg_75_0).unlock == 0 then
+	if HeroData:GetHeroData(arg_76_0).unlock == 0 then
 		return nil
 	end
 
-	local var_75_1 = var_75_0.study_stage[1]
+	local var_76_1 = var_76_0.study_stage[1]
 
-	if var_75_1 then
-		local var_75_2 = TeachStageExInfoCfg[var_75_1]
+	if var_76_1 then
+		local var_76_2 = TeachStageExInfoCfg[var_76_1]
 
-		if var_75_2 and var_75_2.video_url then
-			return var_75_2.video_url
+		if var_76_2 and var_76_2.video_url then
+			return var_76_2.video_url
 		end
 	end
 end
 
-function var_0_0.IsSkinUnlock(arg_76_0)
-	local var_76_0 = SkinCfg[arg_76_0].hero
-	local var_76_1 = HeroTools.HeroUnlockSkinS(var_76_0)
+function var_0_0.IsSkinUnlock(arg_77_0)
+	local var_77_0 = SkinCfg[arg_77_0].hero
+	local var_77_1 = HeroTools.HeroUnlockSkinS(var_77_0)
 
-	for iter_76_0, iter_76_1 in ipairs(var_76_1) do
-		if iter_76_1 == arg_76_0 then
+	for iter_77_0, iter_77_1 in ipairs(var_77_1) do
+		if iter_77_1 == arg_77_0 then
 			return true
 		end
 	end
@@ -1263,50 +1273,50 @@ function var_0_0.IsSkinUnlock(arg_76_0)
 	return false
 end
 
-function var_0_0.GetShopIdBySkinId(arg_77_0)
-	local var_77_0 = SkinIDToGoodIDCfg[arg_77_0]
+function var_0_0.GetShopIdBySkinId(arg_78_0)
+	local var_78_0 = SkinIDToGoodIDCfg[arg_78_0]
 
-	if var_77_0 == nil then
+	if var_78_0 == nil then
 		return 0
 	end
 
-	for iter_77_0, iter_77_1 in ipairs(var_77_0.goods_id) do
-		local var_77_1 = getShopCfg(iter_77_1)
+	for iter_78_0, iter_78_1 in ipairs(var_78_0.goods_id) do
+		local var_78_1 = getShopCfg(iter_78_1)
 
-		if var_77_1 and var_77_1.shop_refresh == 3 then
-			return iter_77_1
+		if var_78_1 and var_78_1.shop_refresh == 3 then
+			return iter_78_1
 		end
 	end
 
 	return 0
 end
 
-function var_0_0.IsSkinOnlySellDLC(arg_78_0)
-	return var_0_0.GetShopIdBySkinId(arg_78_0) < 0 and true or false
+function var_0_0.IsSkinOnlySellDLC(arg_79_0)
+	return var_0_0.GetShopIdBySkinId(arg_79_0) < 0 and true or false
 end
 
-function var_0_0.IsSkinOutOfDate(arg_79_0)
-	local var_79_0 = var_0_0.GetShopIdBySkinId(arg_79_0)
+function var_0_0.IsSkinOutOfDate(arg_80_0)
+	local var_80_0 = var_0_0.GetShopIdBySkinId(arg_80_0)
 
-	if var_79_0 and var_79_0 > 0 then
-		local var_79_1 = getShopCfg(var_79_0).shop_id
+	if var_80_0 and var_80_0 > 0 then
+		local var_80_1 = getShopCfg(var_80_0).shop_id
 
-		return ShopData.IsGoodOutOfDate(var_79_0, var_79_1)
+		return ShopData.IsGoodOutOfDate(var_80_0, var_80_1)
 	else
 		return true
 	end
 end
 
-function var_0_0.CanBeDraw(arg_80_0, arg_80_1)
-	local var_80_0 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.DRAW] or {}
+function var_0_0.CanBeDraw(arg_81_0, arg_81_1)
+	local var_81_0 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.DRAW] or {}
 
-	for iter_80_0, iter_80_1 in ipairs(var_80_0) do
-		if ActivityData:GetActivityIsOpen(iter_80_1) then
-			local var_80_1 = ActivityDrawPoolCfg[iter_80_1]
+	for iter_81_0, iter_81_1 in ipairs(var_81_0) do
+		if ActivityData:GetActivityIsOpen(iter_81_1) then
+			local var_81_1 = ActivityDrawPoolCfg[iter_81_1]
 
-			if var_80_1 then
-				for iter_80_2, iter_80_3 in ipairs(var_80_1.config_list) do
-					if arg_80_1 == iter_80_3 then
+			if var_81_1 then
+				for iter_81_2, iter_81_3 in ipairs(var_81_1.config_list) do
+					if arg_81_1 == iter_81_3 then
 						return true
 					end
 				end
@@ -1317,22 +1327,22 @@ function var_0_0.CanBeDraw(arg_80_0, arg_80_1)
 	return false
 end
 
-function var_0_0.GetIsHide(arg_81_0)
-	return HideInfoData:GetHeroHideList()[arg_81_0] or false
+function var_0_0.GetIsHide(arg_82_0)
+	return HideInfoData:GetHeroHideList()[arg_82_0] or false
 end
 
-function var_0_0.GetIsSkinHide(arg_82_0)
-	return HideInfoData:GetSkinHideList()[arg_82_0] or false
+function var_0_0.GetIsSkinHide(arg_83_0)
+	return HideInfoData:GetSkinHideList()[arg_83_0] or false
 end
 
-function var_0_0.GetSkinIsCanUnlockAndGet(arg_83_0)
-	if SkinCfg[arg_83_0].unlock_id_list[1] then
-		for iter_83_0, iter_83_1 in pairs(SkinCfg[arg_83_0].unlock_id_list) do
-			local var_83_0, var_83_1, var_83_2 = IsConditionAchieved(iter_83_1, {
-				heroId = SkinCfg[arg_83_0].hero
+function var_0_0.GetSkinIsCanUnlockAndGet(arg_84_0)
+	if SkinCfg[arg_84_0].unlock_id_list[1] then
+		for iter_84_0, iter_84_1 in pairs(SkinCfg[arg_84_0].unlock_id_list) do
+			local var_84_0, var_84_1, var_84_2 = IsConditionAchieved(iter_84_1, {
+				heroId = SkinCfg[arg_84_0].hero
 			})
 
-			if not var_83_0 then
+			if not var_84_0 then
 				return false
 			end
 		end
@@ -1350,78 +1360,116 @@ local function var_0_4()
 	return var_0_3 < #HeroRecordCfg.all
 end
 
-local function var_0_5(arg_85_0)
-	local var_85_0 = false
+local function var_0_5(arg_86_0)
+	local var_86_0 = false
 
-	for iter_85_0 = var_0_3 + 1, #HeroRecordCfg.all do
-		local var_85_1 = HeroRecordCfg.all[iter_85_0]
-		local var_85_2 = HeroRecordCfg[var_85_1].hero_id
+	for iter_86_0 = var_0_3 + 1, #HeroRecordCfg.all do
+		local var_86_1 = HeroRecordCfg.all[iter_86_0]
+		local var_86_2 = HeroRecordCfg[var_86_1].hero_id
 
-		for iter_85_1, iter_85_2 in pairs(var_85_2) do
-			var_0_2[iter_85_2] = var_85_1
+		for iter_86_1, iter_86_2 in pairs(var_86_2) do
+			var_0_2[iter_86_2] = var_86_1
 
-			if arg_85_0 == iter_85_2 then
-				var_85_0 = true
+			if arg_86_0 == iter_86_2 then
+				var_86_0 = true
 			end
 		end
 
-		var_0_3 = iter_85_0
+		var_0_3 = iter_86_0
 
-		if var_85_0 then
-			return var_85_1
+		if var_86_0 then
+			return var_86_1
 		end
 	end
 
 	return nil
 end
 
-local function var_0_6(arg_86_0)
-	local var_86_0 = var_0_2[arg_86_0]
+local function var_0_6(arg_87_0)
+	local var_87_0 = var_0_2[arg_87_0]
 
-	if var_86_0 == nil then
-		var_86_0 = var_0_5(arg_86_0)
+	if var_87_0 == nil then
+		var_87_0 = var_0_5(arg_87_0)
 	end
 
-	return var_86_0
+	return var_87_0
 end
 
-function var_0_0.IsSamePerson(arg_87_0, arg_87_1)
-	local var_87_0 = var_0_6(arg_87_0)
-	local var_87_1 = var_0_6(arg_87_1)
+function var_0_0.IsSamePerson(arg_88_0, arg_88_1)
+	local var_88_0 = var_0_6(arg_88_0)
+	local var_88_1 = var_0_6(arg_88_1)
 
-	return var_87_0 ~= nil and var_87_1 ~= nil and var_87_0 == var_87_1
+	return var_88_0 ~= nil and var_88_1 ~= nil and var_88_0 == var_88_1
 end
 
-function var_0_0.GetUnlockInteractionCfg(arg_88_0, arg_88_1)
-	local var_88_0 = HeroInteractionCfg[arg_88_1]
-	local var_88_1 = {}
+function var_0_0.GetInteractionVoiceFileName(arg_89_0)
+	local var_89_0 = string.find(arg_89_0, "_")
 
-	for iter_88_0, iter_88_1 in pairs(var_88_0) do
-		if string.find(iter_88_0, "_talk") then
-			local var_88_2 = var_88_0[iter_88_0]
-			local var_88_3 = string.split(iter_88_0, "_")[1]
+	return var_89_0 and string.sub(arg_89_0, var_89_0 + 1) or nil
+end
 
-			var_88_1[var_88_3] = {}
-			var_88_1[var_88_3 .. "_talk"] = {}
-			var_88_1[var_88_3 .. "_delay"] = {}
-			var_88_1[var_88_3 .. "_weight"] = {}
+function var_0_0.GetUnlockInteractionCfg(arg_90_0, arg_90_1, arg_90_2)
+	local var_90_0 = HeroInteractionCfg[arg_90_1]
+	local var_90_1 = {}
 
-			for iter_88_2, iter_88_3 in ipairs(var_88_2) do
-				local var_88_4 = string.split(iter_88_3, "_")
+	for iter_90_0, iter_90_1 in pairs(var_90_0) do
+		if string.find(iter_90_0, "_talk") then
+			local var_90_2 = var_90_0[iter_90_0]
+			local var_90_3 = string.split(iter_90_0, "_")[1]
+			local var_90_4 = var_90_0[var_90_3]
+			local var_90_5 = var_90_0[var_90_3 .. "_talk"]
+			local var_90_6 = var_90_0[var_90_3 .. "_delay"]
+			local var_90_7 = var_90_0[var_90_3 .. "_weight"]
+			local var_90_8 = {}
+			local var_90_9 = {}
+			local var_90_10 = {}
+			local var_90_11 = {}
 
-				if HeroVoiceCfg.get_id_list_by_file[var_88_4[2]] then
-					local var_88_5 = HeroVoiceCfg.get_id_list_by_file[var_88_4[2]][1]
+			var_90_1[var_90_3] = var_90_8
+			var_90_1[var_90_3 .. "_talk"] = var_90_9
+			var_90_1[var_90_3 .. "_delay"] = var_90_10
+			var_90_1[var_90_3 .. "_weight"] = var_90_11
 
-					if var_0_0.IsUnlockVoice(arg_88_1, var_88_5) then
-						table.insert(var_88_1[var_88_3], var_88_0[var_88_3][iter_88_2])
-						table.insert(var_88_1[var_88_3 .. "_talk"], var_88_0[var_88_3 .. "_talk"][iter_88_2])
+			for iter_90_2, iter_90_3 in ipairs(var_90_2) do
+				local var_90_12 = HeroTools.GetInteractionVoiceFileName(iter_90_3)
 
-						if var_88_0[var_88_3 .. "_delay"] then
-							table.insert(var_88_1[var_88_3 .. "_delay"], var_88_0[var_88_3 .. "_delay"][iter_88_2])
+				if HeroVoiceCfg.get_id_list_by_file[var_90_12] then
+					local var_90_13 = HeroVoiceCfg.get_id_list_by_file[var_90_12][1]
+
+					if HeroVoiceCfg[var_90_13].use_skin_id == 0 and not arg_90_0:IsUnlockVoice(arg_90_1, var_90_13) then
+						-- block empty
+					else
+						local var_90_14 = var_90_4[iter_90_2]
+						local var_90_15 = string.split(var_90_14, "__")
+						local var_90_16 = true
+
+						if var_90_15[2] then
+							if #arg_90_2 > 0 then
+								local var_90_17 = string.split(var_90_15[2], "_")
+
+								for iter_90_4, iter_90_5 in ipairs(arg_90_2) do
+									if not table.indexof(var_90_17, iter_90_5) then
+										var_90_16 = false
+
+										break
+									end
+								end
+							else
+								var_90_16 = false
+							end
 						end
 
-						if var_88_0[var_88_3 .. "_weight"] then
-							table.insert(var_88_1[var_88_3 .. "_weight"], var_88_0[var_88_3 .. "_weight"][iter_88_2])
+						if var_90_16 then
+							table.insert(var_90_8, var_90_14)
+							table.insert(var_90_9, var_90_5[iter_90_2])
+
+							if var_90_6 then
+								table.insert(var_90_10, var_90_6[iter_90_2])
+							end
+
+							if var_90_7 then
+								table.insert(var_90_11, var_90_7[iter_90_2])
+							end
 						end
 					end
 				end
@@ -1429,158 +1477,150 @@ function var_0_0.GetUnlockInteractionCfg(arg_88_0, arg_88_1)
 		end
 	end
 
-	return var_88_1
+	return var_90_1
 end
 
-function var_0_0.IsUnlockVoice(arg_89_0, arg_89_1)
-	if DormHeroTools:IsVoiceNeedUnlock(arg_89_1, arg_89_0) then
-		if BackHomeHeroCfg[arg_89_0] == nil then
+function var_0_0.IsUnlockVoice(arg_91_0, arg_91_1, arg_91_2)
+	if DormHeroTools:IsVoiceNeedUnlock(arg_91_2, arg_91_1) then
+		if BackHomeHeroCfg[arg_91_1] == nil then
 			return false
 		end
 
-		if DormHeroTools:GetDormLevelByHeroID(arg_89_0) < DormHeroTools:GetVoiceUnlockLevel(arg_89_0, arg_89_1) then
+		if DormHeroTools:GetDormLevelByHeroID(arg_91_1) < DormHeroTools:GetVoiceUnlockLevel(arg_91_1, arg_91_2) then
 			return false
 		end
 	end
 
-	if not var_0_0.IsVoiceDescValid(arg_89_0, arg_89_1) then
+	if not var_0_0.IsVoiceDescValid(arg_91_1, arg_91_2) then
 		return false
 	end
 
-	local var_89_0 = HeroVoiceCfg[arg_89_1].unlock_condition
+	local var_91_0 = HeroVoiceCfg[arg_91_2].unlock_condition
 
-	if var_89_0 == 0 then
+	if var_91_0 == 0 then
 		return true
 	else
-		return IsConditionAchieved(var_89_0, {
-			heroId = arg_89_0
+		return IsConditionAchieved(var_91_0, {
+			heroId = arg_91_1
 		})
 	end
 end
 
-function var_0_0.GetModuleAttribute(arg_90_0)
-	local var_90_0 = arg_90_0.id
-	local var_90_1 = {
+function var_0_0.GetModuleAttribute(arg_92_0)
+	local var_92_0 = arg_92_0.id
+	local var_92_1 = {
 		0,
 		0,
 		0,
 		0
 	}
-	local var_90_2 = HeroTools.GetModuleEffectByHeroAndLevel(var_90_0, arg_90_0.weapon_module_level)
+	local var_92_2 = HeroTools.GetModuleEffectByHeroAndLevel(var_92_0, arg_92_0.weapon_module_level)
 
-	for iter_90_0, iter_90_1 in pairs(var_90_2) do
-		local var_90_3 = WeaponModuleEffectCfg[iter_90_1]
+	for iter_92_0, iter_92_1 in pairs(var_92_2) do
+		local var_92_3 = WeaponModuleEffectCfg[iter_92_1]
 
-		if var_90_3.type == 1 then
-			for iter_90_2, iter_90_3 in pairs(var_90_3.attributes) do
-				var_90_1[iter_90_3[1]] = var_90_1[iter_90_3[1]] + iter_90_3[2]
+		if var_92_3.type == 1 then
+			for iter_92_2, iter_92_3 in pairs(var_92_3.attributes) do
+				var_92_1[iter_92_3[1]] = var_92_1[iter_92_3[1]] + iter_92_3[2]
 			end
 		end
 	end
 
-	return var_90_1
+	return var_92_1
 end
 
-function var_0_0.GetSkillAttribute(arg_91_0)
-	local var_91_0 = arg_91_0.id
-	local var_91_1 = {}
+function var_0_0.GetSkillAttribute(arg_93_0)
+	local var_93_0 = arg_93_0.id
+	local var_93_1 = {}
 
-	for iter_91_0, iter_91_1 in ipairs(arg_91_0.skillAttrList) do
-		local var_91_2 = SkillTools.GetSkillAttrCfg(var_91_0, iter_91_1.index, iter_91_1.level)
+	for iter_93_0, iter_93_1 in ipairs(arg_93_0.skillAttrList) do
+		local var_93_2 = SkillTools.GetSkillAttrCfg(var_93_0, iter_93_1.index, iter_93_1.level)
 
-		if var_91_2 then
-			for iter_91_2, iter_91_3 in pairs(var_91_2.attr) do
-				var_91_1[iter_91_3[1]] = iter_91_3[2]
+		if var_93_2 then
+			for iter_93_2, iter_93_3 in pairs(var_93_2.attr) do
+				var_93_1[iter_93_3[1]] = iter_93_3[2]
 			end
 		end
 	end
 
-	return var_91_1
+	return var_93_1
 end
 
-function var_0_0.GetModuleAllDes(arg_92_0, arg_92_1, arg_92_2)
-	local var_92_0
-	local var_92_1
-	local var_92_2
-	local var_92_3
-	local var_92_4 = HeroData:GetHeroList()[arg_92_1].servant_uid
-
-	if var_92_4 ~= HeroTools.GetHeroSpecServant(arg_92_1) then
-		var_92_4 = 0
+local function var_0_7(arg_94_0, arg_94_1, arg_94_2)
+	if arg_94_1 == nil then
+		return arg_94_0
 	end
 
-	for iter_92_0, iter_92_1 in pairs(arg_92_0) do
-		local var_92_5 = WeaponModuleEffectCfg[iter_92_1].type
+	arg_94_2 = arg_94_2 or "\n"
 
-		if var_92_5 == 1 then
-			if var_92_0 == nil then
-				var_92_0 = {
-					iter_92_1
+	if arg_94_0 == nil then
+		return arg_94_1
+	else
+		return arg_94_0 .. arg_94_2 .. arg_94_1
+	end
+end
+
+function var_0_0.GetModuleAllDes(arg_95_0, arg_95_1, arg_95_2)
+	local var_95_0
+	local var_95_1
+	local var_95_2
+	local var_95_3
+	local var_95_4 = HeroData:GetHeroList()[arg_95_1].servant_uid
+
+	if var_95_4 ~= HeroTools.GetHeroSpecServant(arg_95_1) then
+		var_95_4 = 0
+	end
+
+	for iter_95_0, iter_95_1 in pairs(arg_95_0) do
+		local var_95_5 = WeaponModuleEffectCfg[iter_95_1].type
+
+		if var_95_5 == 1 then
+			if var_95_0 == nil then
+				var_95_0 = {
+					iter_95_1
 				}
 			else
-				table.insert(var_92_0, iter_92_1)
+				table.insert(var_95_0, iter_95_1)
 			end
-		end
-
-		if var_92_5 == 2 then
-			if var_92_1 == nil then
-				var_92_1 = SkillTools.GetSkillModuleDes(iter_92_1)
-			else
-				var_92_1 = var_92_1 .. "\n" .. SkillTools.GetSkillModuleDes(iter_92_1)
-			end
-		end
-
-		if var_92_5 == 3 then
-			if var_92_2 == nil then
-				var_92_2 = AstrolabeTools.GetAstrolabeModuleDes(iter_92_1, var_92_4)
-			else
-				var_92_2 = var_92_2 .. "\n\n" .. AstrolabeTools.GetAstrolabeModuleDes(iter_92_1, var_92_4)
-			end
-		end
-
-		if var_92_5 == 4 then
-			if var_92_3 == nil then
-				var_92_3 = WeaponTools.GetWeaponModuleDes(iter_92_1, arg_92_2)
-			else
-				var_92_3 = var_92_3 .. "\n\n" .. WeaponTools.GetWeaponModuleDes(iter_92_1, arg_92_2)
-			end
-		end
-
-		if var_92_5 == 5 then
-			if var_92_1 == nil then
-				var_92_1 = SkillTools.GetServantSkillModuleDes(iter_92_1)
-			else
-				var_92_1 = var_92_1 .. "\n" .. SkillTools.GetServantSkillModuleDes(iter_92_1)
-			end
+		elseif var_95_5 == 2 then
+			var_95_1 = var_0_7(var_95_1, SkillTools.GetSkillModuleDes(iter_95_1))
+		elseif var_95_5 == 3 then
+			var_95_2 = var_0_7(var_95_2, AstrolabeTools.GetAstrolabeModuleDes(iter_95_1, var_95_4), "\n\n")
+		elseif var_95_5 == 4 then
+			var_95_3 = var_0_7(var_95_3, WeaponTools.GetWeaponModuleDes(iter_95_1, arg_95_2), "\n\n")
+		elseif var_95_5 == 5 then
+			var_95_1 = var_0_7(var_95_1, SkillTools.GetServantSkillModuleDes(iter_95_1))
+		elseif var_95_5 == 6 then
+			var_95_1 = var_0_7(var_95_1, SkillTools.GetAstrolabeSkillModuleDes(iter_95_1))
 		end
 	end
 
-	return var_92_0, var_92_1, var_92_2, var_92_3
+	return var_95_0, var_95_1, var_95_2, var_95_3
 end
 
-function var_0_0.MergeModuleAttribute(arg_93_0)
-	local var_93_0 = {}
+function var_0_0.MergeModuleAttribute(arg_96_0)
+	local var_96_0 = {}
 
-	for iter_93_0, iter_93_1 in pairs(arg_93_0) do
-		local var_93_1 = WeaponModuleEffectCfg[iter_93_1].attributes
+	for iter_96_0, iter_96_1 in pairs(arg_96_0) do
+		local var_96_1 = WeaponModuleEffectCfg[iter_96_1].attributes
 
-		for iter_93_2, iter_93_3 in pairs(var_93_1) do
-			if var_93_0[iter_93_3[1]] then
-				var_93_0[iter_93_3[1]] = var_93_0[iter_93_3[1]] + iter_93_3[2]
+		for iter_96_2, iter_96_3 in pairs(var_96_1) do
+			if var_96_0[iter_96_3[1]] then
+				var_96_0[iter_96_3[1]] = var_96_0[iter_96_3[1]] + iter_96_3[2]
 			else
-				var_93_0[iter_93_3[1]] = iter_93_3[2]
+				var_96_0[iter_96_3[1]] = iter_96_3[2]
 			end
 		end
 	end
 
-	return var_93_0
+	return var_96_0
 end
 
 function var_0_0.CheckModulePieceCanEnter()
-	local var_94_0 = ItemCfg.get_id_list_by_sub_type[ItemConst.ITEM_SUB_TYPE.MODULE_PIECE]
+	local var_97_0 = ItemCfg.get_id_list_by_sub_type[ItemConst.ITEM_SUB_TYPE.MODULE_PIECE]
 
-	for iter_94_0, iter_94_1 in pairs(var_94_0) do
-		if ItemTools.getItemNum(iter_94_1) > 0 then
+	for iter_97_0, iter_97_1 in pairs(var_97_0) do
+		if ItemTools.getItemNum(iter_97_1) > 0 then
 			return true
 		end
 	end
@@ -1588,193 +1628,232 @@ function var_0_0.CheckModulePieceCanEnter()
 	return false
 end
 
-function var_0_0.GetModuleEffectByHeroAndLevel(arg_95_0, arg_95_1)
-	local var_95_0 = {}
+function var_0_0.GetModuleEffectByHeroAndLevel(arg_98_0, arg_98_1)
+	local var_98_0 = {}
 
-	if arg_95_0 and arg_95_1 then
-		local var_95_1 = WeaponModuleCfg[arg_95_0]
+	if arg_98_0 and arg_98_1 then
+		local var_98_1 = WeaponModuleCfg[arg_98_0]
 
-		if var_95_1 then
-			for iter_95_0 = 1, arg_95_1 do
-				for iter_95_1, iter_95_2 in pairs(var_95_1.skill[iter_95_0]) do
-					table.insert(var_95_0, iter_95_2)
+		if var_98_1 then
+			for iter_98_0 = 1, arg_98_1 do
+				for iter_98_1, iter_98_2 in pairs(var_98_1.skill[iter_98_0]) do
+					table.insert(var_98_0, iter_98_2)
 				end
 			end
 		end
 	end
 
-	return var_95_0
+	return var_98_0
 end
 
-function var_0_0.GetStageDicWithStarTemplateAndStarSkillType(arg_96_0, arg_96_1)
-	if HeroStarUpTemplateCfg.template_dic[arg_96_0] and HeroStarUpTemplateCfg.template_dic[arg_96_0][arg_96_1] then
-		return HeroStarUpTemplateCfg.template_dic[arg_96_0][arg_96_1].stage_dic
+function var_0_0.GetStageDicWithStarTemplateAndStarSkillType(arg_99_0, arg_99_1)
+	if HeroStarUpTemplateCfg.template_dic[arg_99_0] and HeroStarUpTemplateCfg.template_dic[arg_99_0][arg_99_1] then
+		return HeroStarUpTemplateCfg.template_dic[arg_99_0][arg_99_1].stage_dic
 	end
 
 	return {}
 end
 
-function var_0_0.GetStageListWithStarTemplateAndStarSkillType(arg_97_0, arg_97_1)
-	if HeroStarUpTemplateCfg.template_dic[arg_97_0] and HeroStarUpTemplateCfg.template_dic[arg_97_0][arg_97_1] then
-		return HeroStarUpTemplateCfg.template_dic[arg_97_0][arg_97_1].stage_list
+function var_0_0.GetStageListWithStarTemplateAndStarSkillType(arg_100_0, arg_100_1)
+	if HeroStarUpTemplateCfg.template_dic[arg_100_0] and HeroStarUpTemplateCfg.template_dic[arg_100_0][arg_100_1] then
+		return HeroStarUpTemplateCfg.template_dic[arg_100_0][arg_100_1].stage_list
 	end
 
 	return {}
 end
 
 function var_0_0.GetHeroNameLinkChar()
-	local var_98_0
-	local var_98_1 = SettingData:GetCurrentLanguage()
+	local var_101_0
+	local var_101_1 = SettingData:GetCurrentLanguage()
 
-	return (var_98_1 == "en" or var_98_1 == "fr" or var_98_1 == "de") and " - " or var_98_1 == "jp" and "·" or "·"
+	return (var_101_1 == "en" or var_101_1 == "fr" or var_101_1 == "de") and " - " or var_101_1 == "jp" and "·" or "·"
 end
 
-function var_0_0.GetHeroFullName(arg_99_0)
-	local var_99_0 = HeroCfg[arg_99_0]
+function var_0_0.GetHeroFullName(arg_102_0)
+	local var_102_0 = HeroCfg[arg_102_0]
 
-	return GetI18NText(var_99_0.name) .. HeroTools.GetHeroNameLinkChar() .. GetI18NText(var_99_0.suffix)
+	return GetI18NText(var_102_0.name) .. HeroTools.GetHeroNameLinkChar() .. GetI18NText(var_102_0.suffix)
 end
 
-function var_0_0.GetModulePowersByHeroIDAndLevel(arg_100_0, arg_100_1, arg_100_2)
-	local var_100_0 = {}
-	local var_100_1 = WeaponModuleCfg[arg_100_1]
-
-	if var_100_1 then
-		for iter_100_0 = 1, arg_100_2 do
-			local var_100_2 = var_100_1.skill[iter_100_0]
-
-			for iter_100_1, iter_100_2 in pairs(var_100_2) do
-				table.insert(var_100_0, iter_100_2)
-			end
-		end
-	end
-
-	return var_100_0
-end
-
-function var_0_0.SetHeroNewTagRed(arg_101_0, arg_101_1, arg_101_2, arg_101_3)
-	local var_101_0 = getData("heroNew", arg_101_1) or {}
-
-	if var_101_0 then
-		local var_101_1 = 0
-
-		for iter_101_0, iter_101_1 in ipairs(var_101_0) do
-			if iter_101_1 == arg_101_0 then
-				var_101_1 = iter_101_0
-
-				break
-			end
-		end
-
-		local var_101_2 = false
-
-		if var_101_1 > 0 then
-			if not arg_101_3 then
-				var_101_2 = true
-
-				table.remove(var_101_0, var_101_1)
-				manager.redPoint:setTip(arg_101_2, 0, RedPointStyle.SHOW_NEW_TAG)
-			end
-		elseif arg_101_3 then
-			var_101_2 = true
-
-			table.insert(var_101_0, arg_101_0)
-			manager.redPoint:setTip(arg_101_2, 1, RedPointStyle.SHOW_NEW_TAG)
-		end
-
-		if var_101_2 then
-			saveData("heroNew", arg_101_1, var_101_0)
-		end
-	end
-end
-
-function var_0_0.DispatchAllHeroNewRed(arg_102_0, arg_102_1)
-	local var_102_0 = getData("heroNew", arg_102_0) or {}
-
-	for iter_102_0, iter_102_1 in ipairs(var_102_0) do
-		local var_102_1 = arg_102_1 .. iter_102_1
-
-		manager.redPoint:setTip(var_102_1, 1, RedPointStyle.SHOW_NEW_TAG)
-	end
-end
-
-function var_0_0.GetHeroShowData(arg_103_0, arg_103_1)
+function var_0_0.GetModulePowersByHeroIDAndLevel(arg_103_0, arg_103_1, arg_103_2)
 	local var_103_0 = {}
+	local var_103_1 = WeaponModuleCfg[arg_103_1]
 
-	if arg_103_1 then
-		CommonFilterData:ClearFilter(Filter_Root_Define.Hero_Filter_List.filter_id)
-	end
+	if var_103_1 then
+		for iter_103_0 = 1, arg_103_2 do
+			local var_103_2 = var_103_1.skill[iter_103_0]
 
-	local var_103_1 = CommonFilterData:IsAll(Filter_Root_Define.Hero_Filter_List.filter_id) or arg_103_1
-
-	for iter_103_0, iter_103_1 in pairs(arg_103_0) do
-		local var_103_2 = not var_0_0.GetIsHide(iter_103_1.id)
-
-		if var_103_2 and not var_103_1 then
-			local var_103_3 = HeroCfg[iter_103_1.id]
-			local var_103_4 = CommonFilterData:SpecificHasFlag(Filter_Root_Define.Hero_Filter_List.filter_id, Filter_Group_Define.RACE.groupID, {
-				Filter_Tags_Define["Race" .. var_103_3.race]
-			})
-			local var_103_5 = CommonFilterData:SpecificHasFlag(Filter_Root_Define.Hero_Filter_List.filter_id, Filter_Group_Define.ARRT.groupID, {
-				Filter_Tags_Define["ARRT" .. var_103_3.ATK_attribute[1]]
-			})
-			local var_103_6 = CommonFilterData:SpecificHasFlag(Filter_Root_Define.Hero_Filter_List.filter_id, Filter_Group_Define.MECHAINISMTYPE.groupID, {
-				Filter_Tags_Define["MECHAINISM" .. var_103_3.mechanism_type[1]]
-			})
-
-			var_103_2 = var_103_4 and var_103_5 and var_103_6
-		end
-
-		if var_103_2 then
-			table.insert(var_103_0, iter_103_1)
+			for iter_103_1, iter_103_2 in pairs(var_103_2) do
+				table.insert(var_103_0, iter_103_2)
+			end
 		end
 	end
 
 	return var_103_0
 end
 
-function var_0_0.IsSpHero(arg_104_0)
-	local var_104_0 = HeroCfg[arg_104_0]
+function var_0_0.SetHeroNewTagRed(arg_104_0, arg_104_1, arg_104_2, arg_104_3)
+	local var_104_0 = getData("heroNew", arg_104_1) or {}
 
 	if var_104_0 then
-		return var_104_0.role_type == 1
+		local var_104_1 = 0
+
+		for iter_104_0, iter_104_1 in ipairs(var_104_0) do
+			if iter_104_1 == arg_104_0 then
+				var_104_1 = iter_104_0
+
+				break
+			end
+		end
+
+		local var_104_2 = false
+
+		if var_104_1 > 0 then
+			if not arg_104_3 then
+				var_104_2 = true
+
+				table.remove(var_104_0, var_104_1)
+				manager.redPoint:setTip(arg_104_2, 0, RedPointStyle.SHOW_NEW_TAG)
+			end
+		elseif arg_104_3 then
+			var_104_2 = true
+
+			table.insert(var_104_0, arg_104_0)
+			manager.redPoint:setTip(arg_104_2, 1, RedPointStyle.SHOW_NEW_TAG)
+		end
+
+		if var_104_2 then
+			saveData("heroNew", arg_104_1, var_104_0)
+		end
+	end
+end
+
+function var_0_0.DispatchAllHeroNewRed(arg_105_0, arg_105_1)
+	local var_105_0 = getData("heroNew", arg_105_0) or {}
+
+	for iter_105_0, iter_105_1 in ipairs(var_105_0) do
+		local var_105_1 = arg_105_1 .. iter_105_1
+
+		manager.redPoint:setTip(var_105_1, 1, RedPointStyle.SHOW_NEW_TAG)
+	end
+end
+
+function var_0_0.GetHeroShowData(arg_106_0, arg_106_1)
+	local var_106_0 = {}
+
+	if arg_106_1 then
+		CommonFilterData:ClearFilter(Filter_Root_Define.Hero_Filter_List.filter_id)
+	end
+
+	local var_106_1 = CommonFilterData:IsAll(Filter_Root_Define.Hero_Filter_List.filter_id) or arg_106_1
+
+	for iter_106_0, iter_106_1 in pairs(arg_106_0) do
+		local var_106_2 = not var_0_0.GetIsHide(iter_106_1.id)
+
+		if var_106_2 and not var_106_1 then
+			local var_106_3 = HeroCfg[iter_106_1.id]
+			local var_106_4 = CommonFilterData:SpecificHasFlag(Filter_Root_Define.Hero_Filter_List.filter_id, Filter_Group_Define.RACE.groupID, {
+				Filter_Tags_Define["Race" .. var_106_3.race]
+			})
+			local var_106_5 = CommonFilterData:SpecificHasFlag(Filter_Root_Define.Hero_Filter_List.filter_id, Filter_Group_Define.ARRT.groupID, {
+				Filter_Tags_Define["ARRT" .. var_106_3.ATK_attribute[1]]
+			})
+			local var_106_6 = CommonFilterData:SpecificHasFlag(Filter_Root_Define.Hero_Filter_List.filter_id, Filter_Group_Define.MECHAINISMTYPE.groupID, {
+				Filter_Tags_Define["MECHAINISM" .. var_106_3.mechanism_type[1]]
+			})
+
+			var_106_2 = var_106_4 and var_106_5 and var_106_6
+		end
+
+		if var_106_2 then
+			table.insert(var_106_0, iter_106_1)
+		end
+	end
+
+	return var_106_0
+end
+
+function var_0_0.GetHeroShowIDList(arg_107_0, arg_107_1)
+	local var_107_0 = {}
+
+	if arg_107_1 then
+		CommonFilterData:ClearFilter(Filter_Root_Define.Hero_Filter_List.filter_id)
+	end
+
+	local var_107_1 = CommonFilterData:IsAll(Filter_Root_Define.Hero_Filter_List.filter_id) or arg_107_1
+
+	if var_107_1 then
+		return arg_107_0
+	end
+
+	for iter_107_0, iter_107_1 in pairs(arg_107_0) do
+		local var_107_2 = not var_0_0.GetIsHide(iter_107_1)
+
+		if var_107_2 and not var_107_1 then
+			local var_107_3 = HeroCfg[iter_107_1]
+			local var_107_4 = CommonFilterData:SpecificHasFlag(Filter_Root_Define.Hero_Filter_List.filter_id, Filter_Group_Define.RACE.groupID, {
+				Filter_Tags_Define["Race" .. var_107_3.race]
+			})
+			local var_107_5 = CommonFilterData:SpecificHasFlag(Filter_Root_Define.Hero_Filter_List.filter_id, Filter_Group_Define.ARRT.groupID, {
+				Filter_Tags_Define["ARRT" .. var_107_3.ATK_attribute[1]]
+			})
+			local var_107_6 = CommonFilterData:SpecificHasFlag(Filter_Root_Define.Hero_Filter_List.filter_id, Filter_Group_Define.MECHAINISMTYPE.groupID, {
+				Filter_Tags_Define["MECHAINISM" .. var_107_3.mechanism_type[1]]
+			})
+
+			var_107_2 = var_107_4 and var_107_5 and var_107_6
+		end
+
+		if var_107_2 then
+			table.insert(var_107_0, iter_107_1)
+		end
+	end
+
+	return var_107_0
+end
+
+function var_0_0.IsSpHero(arg_108_0)
+	local var_108_0 = HeroCfg[arg_108_0]
+
+	if var_108_0 then
+		return var_108_0.role_type == 1
 	end
 
 	return false
 end
 
-function var_0_0.FormatFilterHeroDataList(arg_105_0, arg_105_1, arg_105_2, arg_105_3)
-	local var_105_0 = HeroViewDataProxy.New(arg_105_0)
+function var_0_0.FormatFilterHeroDataList(arg_109_0, arg_109_1, arg_109_2, arg_109_3)
+	local var_109_0 = HeroViewDataProxy.New(arg_109_0)
 
-	var_105_0:SetTempHeroList(arg_105_3)
+	var_109_0:SetTempHeroList(arg_109_3)
 
-	local var_105_1 = {}
+	local var_109_1 = {}
 
-	for iter_105_0, iter_105_1 in ipairs(arg_105_1) do
-		local var_105_2 = var_105_0:GetHeroData(iter_105_1).tempID
+	for iter_109_0, iter_109_1 in ipairs(arg_109_1) do
+		local var_109_2 = var_109_0:GetHeroData(iter_109_1).tempID
 
-		var_105_1[iter_105_0] = {
-			id = iter_105_1,
-			trialID = var_105_2,
-			type = arg_105_2,
-			heroViewProxy = var_105_0
+		var_109_1[iter_109_0] = {
+			id = iter_109_1,
+			trialID = var_109_2,
+			type = arg_109_2,
+			heroViewProxy = var_109_0
 		}
 	end
 
-	return var_105_1
+	return var_109_1
 end
 
-function var_0_0.IsNPC(arg_106_0)
-	if arg_106_0 and HeroCfg[arg_106_0] then
-		return HeroCfg[arg_106_0].private ~= 0
+function var_0_0.IsNPC(arg_110_0)
+	if arg_110_0 and HeroCfg[arg_110_0] then
+		return HeroCfg[arg_110_0].private ~= 0
 	end
 
 	return false
 end
 
-function var_0_0.NeedHideInfo(arg_107_0)
-	if arg_107_0 and HeroCfg[arg_107_0] then
-		return HeroCfg[arg_107_0].hide_info == 1
+function var_0_0.NeedHideInfo(arg_111_0)
+	if arg_111_0 and HeroCfg[arg_111_0] then
+		return HeroCfg[arg_111_0].hide_info == 1
 	end
 
 	return false

@@ -16,6 +16,7 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
+	arg_4_0.imageImg_.immediate = true
 	arg_4_0.controllers_ = {}
 
 	for iter_4_0 = 1, 6 do
@@ -47,7 +48,7 @@ function var_0_0.OnEnter(arg_8_0)
 
 	arg_8_0.nameText_.text = GetI18NText(var_8_0.name)
 	arg_8_0.descText_.text = GetI18NText(EquipTools.GetEffectDesc(var_8_0.suit_effect[1]))
-	arg_8_0.imageImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Equip/icon_l/" .. EquipSuitCfg[arg_8_0.id_].icon)
+	arg_8_0.imageImg_.spriteSync = "TextureConfig/Equip/icon_l/" .. EquipSuitCfg[arg_8_0.id_].icon
 	arg_8_0.backgroundText_.text = GetI18NText(var_8_0.desc)
 
 	if var_8_1 then

@@ -74,9 +74,9 @@ function var_0_0.SetupCriPlayer(arg_4_0, arg_4_1)
 
 	arg_4_0.movieLoopTrs_.localPosition = Vector2(9999, 9999)
 
-	arg_4_0.criplayer_:SetFile(nil, arg_4_0.start_path, CriMana.Player.SetMode.New)
-	arg_4_0.criplayer_:SetFile(nil, arg_4_0.loop_path, CriMana.Player.SetMode.AppendRepeatedly)
-	arg_4_0.criplayerLoop_:SetFile(nil, arg_4_0.loop_path)
+	SetFile(arg_4_0.criplayer_, nil, arg_4_0.start_path, CriMana.Player.SetMode.New)
+	SetFile(arg_4_0.criplayer_, nil, arg_4_0.loop_path, CriMana.Player.SetMode.AppendRepeatedly)
+	SetFile(arg_4_0.criplayerLoop_, nil, arg_4_0.loop_path)
 
 	local var_4_0 = manager.audio:GetMusicVolume()
 

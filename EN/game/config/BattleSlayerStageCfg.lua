@@ -10,6 +10,11 @@
 		need_default_team = 1,
 		background_1 = "D12",
 		level = 1,
+		can_switch_restrict_hero_list = {
+			1,
+			1,
+			1
+		},
 		team_type = {
 			202,
 			0
@@ -26,6 +31,11 @@
 		need_default_team = 1,
 		background_1 = "D12a",
 		level = 1,
+		can_switch_restrict_hero_list = {
+			1,
+			1,
+			1
+		},
 		team_type = {
 			202,
 			0
@@ -42,6 +52,11 @@
 		need_default_team = 1,
 		background_1 = "D12",
 		level = 1,
+		can_switch_restrict_hero_list = {
+			1,
+			1,
+			1
+		},
 		team_type = {
 			202,
 			0
@@ -58,6 +73,11 @@
 		need_default_team = 1,
 		background_1 = "D12b",
 		level = 1,
+		can_switch_restrict_hero_list = {
+			1,
+			1,
+			1
+		},
 		team_type = {
 			202,
 			0
@@ -74,6 +94,11 @@
 		need_default_team = 1,
 		background_1 = "D12a",
 		level = 1,
+		can_switch_restrict_hero_list = {
+			1,
+			1,
+			1
+		},
 		team_type = {
 			202,
 			0
@@ -90,6 +115,11 @@
 		need_default_team = 1,
 		background_1 = "D12b",
 		level = 1,
+		can_switch_restrict_hero_list = {
+			1,
+			1,
+			1
+		},
 		team_type = {
 			202,
 			0
@@ -106,6 +136,11 @@
 		need_default_team = 1,
 		background_1 = "D12b",
 		level = 1,
+		can_switch_restrict_hero_list = {
+			1,
+			1,
+			1
+		},
 		team_type = {
 			202,
 			0
@@ -119,6 +154,7 @@
 		id = 5040301,
 		map = "5040301",
 		ai_level = 2,
+		can_switch_restrict_hero_list = "",
 		need_default_team = 1,
 		background_1 = "",
 		level = 1,
@@ -135,6 +171,7 @@
 		id = 5040302,
 		map = "5040302",
 		ai_level = 2,
+		can_switch_restrict_hero_list = "",
 		need_default_team = 1,
 		background_1 = "",
 		level = 1,
@@ -151,6 +188,7 @@
 		id = 5040303,
 		map = "5040303",
 		ai_level = 2,
+		can_switch_restrict_hero_list = "",
 		need_default_team = 1,
 		background_1 = "",
 		level = 1,
@@ -167,6 +205,7 @@
 		id = 5040304,
 		map = "5040304",
 		ai_level = 3,
+		can_switch_restrict_hero_list = "",
 		need_default_team = 1,
 		background_1 = "",
 		level = 1,
@@ -183,6 +222,7 @@
 		id = 5040305,
 		map = "5040305",
 		ai_level = 3,
+		can_switch_restrict_hero_list = "",
 		need_default_team = 1,
 		background_1 = "",
 		level = 1,
@@ -199,6 +239,7 @@
 		id = 5040306,
 		map = "5040306",
 		ai_level = 3,
+		can_switch_restrict_hero_list = "",
 		need_default_team = 1,
 		background_1 = "",
 		level = 1,
@@ -215,6 +256,7 @@
 		id = 5040307,
 		map = "5040307",
 		ai_level = 3,
+		can_switch_restrict_hero_list = "",
 		need_default_team = 1,
 		background_1 = "",
 		level = 1,
@@ -231,6 +273,7 @@
 		id = 5040308,
 		map = "5040308",
 		ai_level = 3,
+		can_switch_restrict_hero_list = "",
 		need_default_team = 1,
 		background_1 = "",
 		level = 1,
@@ -260,6 +303,11 @@
 				1
 			}
 		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
 		team_type = {
 			202,
 			0
@@ -285,6 +333,11 @@
 				0,
 				1
 			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
 		},
 		team_type = {
 			202,
@@ -312,6 +365,11 @@
 				1
 			}
 		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
 		team_type = {
 			202,
 			0
@@ -337,6 +395,11 @@
 				0,
 				1
 			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
 		},
 		team_type = {
 			202,
@@ -364,6 +427,11 @@
 				1
 			}
 		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
 		team_type = {
 			202,
 			0
@@ -389,6 +457,11 @@
 				0,
 				1
 			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
 		},
 		team_type = {
 			202,
@@ -416,6 +489,11 @@
 				1
 			}
 		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
 		team_type = {
 			202,
 			0
@@ -441,6 +519,11 @@
 				0,
 				1
 			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
 		},
 		team_type = {
 			202,
@@ -468,6 +551,11 @@
 				1
 			}
 		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
 		team_type = {
 			202,
 			0
@@ -493,6 +581,11 @@
 				0,
 				1
 			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
 		},
 		team_type = {
 			202,
@@ -520,6 +613,11 @@
 				1
 			}
 		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
 		team_type = {
 			202,
 			0
@@ -545,6 +643,11 @@
 				0,
 				1
 			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
 		},
 		team_type = {
 			202,
@@ -572,6 +675,11 @@
 				1
 			}
 		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
 		team_type = {
 			202,
 			0
@@ -597,6 +705,11 @@
 				0,
 				1
 			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
 		},
 		team_type = {
 			202,
@@ -624,6 +737,11 @@
 				1
 			}
 		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
 		team_type = {
 			202,
 			0
@@ -649,6 +767,265 @@
 				0,
 				1
 			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
+		team_type = {
+			202,
+			0
+		}
+	},
+	[5200301] = {
+		tips = "8b437d432fb837c5df87eac5ff9d5f08",
+		name = "45d362090c0f8d1c4ab17d0047757ced",
+		monster_level = 80,
+		id = 5200301,
+		map = "5200301",
+		ai_level = 3,
+		need_default_team = 1,
+		background_1 = "",
+		level = 1,
+		hero_list = {
+			{
+				1020,
+				102002
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
+		team_type = {
+			202,
+			0
+		}
+	},
+	[5200302] = {
+		tips = "8e91ce227be378814f03f9677fd8f851",
+		name = "088396a90ba77c22501b3475bd955902",
+		monster_level = 80,
+		id = 5200302,
+		map = "5200302",
+		ai_level = 3,
+		need_default_team = 1,
+		background_1 = "",
+		level = 1,
+		hero_list = {
+			{
+				1020,
+				102002
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
+		team_type = {
+			202,
+			0
+		}
+	},
+	[5200303] = {
+		tips = "5fb6e24654be4bf0a8a2c41c2639ac45",
+		name = "99ac1bd3c3983576f698f4b9e33501be",
+		monster_level = 80,
+		id = 5200303,
+		map = "5200303",
+		ai_level = 3,
+		need_default_team = 1,
+		background_1 = "",
+		level = 1,
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
+		team_type = {
+			202,
+			0
+		}
+	},
+	[5200304] = {
+		tips = "4125d1ededaa388c4678a0ee08c2a2c7",
+		name = "b773dd2277fa6d8c9314ba147016e30b",
+		monster_level = 80,
+		id = 5200304,
+		map = "5200304",
+		ai_level = 3,
+		need_default_team = 1,
+		background_1 = "",
+		level = 1,
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
+		team_type = {
+			202,
+			0
+		}
+	},
+	[5200305] = {
+		tips = "a5972fa783bb2ead8d8c98ef40513212",
+		name = "d9629b843b7c7b1fd830aa68f79262ac",
+		monster_level = 80,
+		id = 5200305,
+		map = "5200305",
+		ai_level = 3,
+		need_default_team = 1,
+		background_1 = "",
+		level = 1,
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
+		team_type = {
+			202,
+			0
+		}
+	},
+	[5200306] = {
+		tips = "e245be3db25cf6ef7f505b520f83f845",
+		name = "2ca4a3a60f761820ffb46603ce968a47",
+		monster_level = 80,
+		id = 5200306,
+		map = "5200306",
+		ai_level = 3,
+		need_default_team = 1,
+		background_1 = "",
+		level = 1,
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
+		team_type = {
+			202,
+			0
+		}
+	},
+	[5200307] = {
+		tips = "b117d45ccc47e055cfcc08c19ea2786b",
+		name = "7332fc14100219db0d5f73c6adb9446e",
+		monster_level = 80,
+		id = 5200307,
+		map = "5200307",
+		ai_level = 3,
+		need_default_team = 1,
+		background_1 = "",
+		level = 1,
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
+		team_type = {
+			202,
+			0
+		}
+	},
+	[5200308] = {
+		tips = "604dcb6a672b47e7ab2f3e4a53b0b223",
+		name = "338d6bf0589c59c667af348ba4c1b6b2",
+		monster_level = 80,
+		id = 5200308,
+		map = "5200308",
+		ai_level = 3,
+		need_default_team = 1,
+		background_1 = "",
+		level = 1,
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
 		},
 		team_type = {
 			202,
@@ -686,6 +1063,14 @@
 		5120205,
 		5120206,
 		5120207,
-		5120208
+		5120208,
+		5200301,
+		5200302,
+		5200303,
+		5200304,
+		5200305,
+		5200306,
+		5200307,
+		5200308
 	}
 }

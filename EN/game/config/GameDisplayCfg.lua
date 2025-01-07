@@ -536,7 +536,7 @@
 		id = "dorm_area_layer_num",
 		scale = "",
 		value = {
-			3
+			4
 		}
 	},
 	dorm_interaction_feed = {
@@ -874,20 +874,42 @@
 		id = "login_concept_guild_movie_path",
 		scale = "",
 		value = {
-			"SofdecAsset/function/login/1.usm",
-			"SofdecAsset/function/login/2.usm",
-			"SofdecAsset/function/login/3.usm",
-			"SofdecAsset/function/login/4.usm"
+			"SofdecAsset/function/login/login_1.usm",
+			"SofdecAsset/function/login/login_2.usm",
+			"SofdecAsset/function/login/login_3.usm",
+			"SofdecAsset/function/login/login_4.usm"
 		}
 	},
 	login_concept_guild_movie_frames = {
 		id = "login_concept_guild_movie_frames",
 		scale = "",
 		value = {
-			1054,
-			85,
-			179,
-			62
+			1084,
+			63,
+			105,
+			96
+		}
+	},
+	login_bonus_movie_path = {
+		id = "login_bonus_movie_path",
+		scale = "",
+		value = {
+			"SofdecAsset/function/login/login_activity_3_6_1020caidan_01.usm",
+			"SofdecAsset/function/login/login_activity_3_6_1020caidan_02.usm",
+			"SofdecAsset/function/login/login_activity_3_6_1020caidan_03.usm",
+			"SofdecAsset/function/login/login_activity_3_6_1020caidan_04.usm",
+			"SofdecAsset/function/login/login_activity_3_6_1020caidan_05.usm"
+		}
+	},
+	login_bonus_movie_frames = {
+		id = "login_bonus_movie_frames",
+		scale = "",
+		value = {
+			490,
+			45,
+			84,
+			45,
+			316
 		}
 	},
 	activity_hero_challenge_boss_id = {
@@ -1096,6 +1118,61 @@
 		scale = "",
 		value = {
 			3
+		}
+	},
+	activity_monster_cosplay_bg_anjinshu = {
+		id = "activity_monster_cosplay_bg_anjinshu",
+		value = {
+			0,
+			0,
+			40
+		},
+		scale = {
+			2,
+			2,
+			2
+		}
+	},
+	activity_monster_cosplay_bg_renma = {
+		id = "activity_monster_cosplay_bg_renma",
+		value = {
+			0,
+			0,
+			40
+		},
+		scale = {
+			2,
+			2,
+			2
+		}
+	},
+	activity_tangram_game_tips_time = {
+		id = "activity_tangram_game_tips_time",
+		scale = "",
+		value = {
+			3
+		}
+	},
+	sim_business_customer_buy_vfx_threashold = {
+		id = "sim_business_customer_buy_vfx_threashold",
+		scale = "",
+		value = {
+			100
+		}
+	},
+	dorm_player_greetings = {
+		id = "dorm_player_greetings",
+		scale = "",
+		value = {
+			210269,
+			210270
+		}
+	},
+	dorm_player_max_show = {
+		id = "dorm_player_max_show",
+		scale = "",
+		value = {
+			1
 		}
 	}
 }

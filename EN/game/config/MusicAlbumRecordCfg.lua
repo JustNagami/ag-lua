@@ -95,7 +95,13 @@
 		albumName = "Separatio Iunctionis",
 		verName = "3883cf3464a25937880c19de19307ce7"
 	},
-	[18] = {
+	{
+		id = 17,
+		cover = "icon_CD_17",
+		albumName = "Ethereal Garden",
+		verName = "5f21161fcf7ea3abbc288483ec6367ab"
+	},
+	{
 		id = 18,
 		cover = "icon_CD_18",
 		albumName = "Kid's Initial Courage",
@@ -118,6 +124,7 @@
 		14,
 		15,
 		16,
+		17,
 		18
 	}
 }

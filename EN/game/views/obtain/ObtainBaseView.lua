@@ -10,6 +10,8 @@ function var_0_0.OnClick(arg_1_0)
 	else
 		arg_1_0.playableDirector_.time = arg_1_0:GetTimeLineEndTime()
 
+		arg_1_0.playableDirector_:Evaluate()
+
 		return false
 	end
 end

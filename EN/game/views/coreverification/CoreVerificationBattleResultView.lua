@@ -26,9 +26,20 @@ function var_0_0.RefreshUI(arg_6_0)
 
 	arg_6_0.battleTime2Text_.text = arg_6_0:GetBattleTime()
 
-	local var_6_1 = CoreVerificationInfoCfg[var_6_0].difficult
+	local var_6_1 = CoreVerificationInfoCfg[var_6_0]
+	local var_6_2 = var_6_1.difficult
 
-	arg_6_0.titleText_.text = GetTips("HARD_LEVEL") .. GetTips("NUM_" .. var_6_1)
+	if CoreVerificationData:IsChallengeType(var_6_0) then
+		arg_6_0.titleText_.text = GetTips("CORE_VERIFICATION_TAB_DES_2")
+	else
+		arg_6_0.titleText_.text = string.format(GetTips("CORE_VERIFICATION_TAB_DES_1"), GetTips("NUM_" .. var_6_2))
+	end
+
+	SetActive(arg_6_0.battlescoreGo_, var_6_1.stage_type == 1)
+
+	if var_6_1.stage_type == 1 then
+		arg_6_0.battlescoreText_.text = CoreVerificationData:GetSuperScore(var_6_0)
+	end
 end
 
 function var_0_0.GoToBattleStatistics(arg_7_0)

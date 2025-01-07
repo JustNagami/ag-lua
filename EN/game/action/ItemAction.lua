@@ -46,6 +46,8 @@ function var_0_0.AddItemData(arg_3_0)
 		PlayerAction.UnlockSticker(var_3_0)
 	elseif var_3_4 == ItemConst.ITEM_TYPE.STICKER_BG then
 		PlayerAction.UnlockStickerBg(var_3_0)
+	elseif var_3_4 == ItemConst.ITEM_TYPE.STICKER_FG then
+		PlayerAction.UnlockStickerFg(var_3_0)
 	elseif var_3_4 == ItemConst.ITEM_TYPE.TAG then
 		PlayerData:UnlockTag(var_3_0)
 	elseif var_3_4 == ItemConst.ITEM_TYPE.CARD_BG then

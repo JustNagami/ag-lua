@@ -129,88 +129,75 @@ function var_0_0.AddUIListener(arg_6_0)
 			SettingAction.ChangePicSetting("anti_aliasing", var_14_0)
 		end
 	end)
-	arg_6_0:AddBtnListener(arg_6_0.hdrTgl_, nil, function()
-		local var_15_0 = arg_6_0.settingData_.hdr == 1 and 0 or 1
-
-		if arg_6_0.settingData_.hdr ~= var_15_0 then
-			SettingAction.ChangePicSetting("hdr", var_15_0)
-		end
-	end)
 	arg_6_0:AddBtnListener(arg_6_0.reflectTgl_, nil, function()
-		local var_16_0 = arg_6_0.settingData_.reflection_effect == 1 and 0 or 1
+		local var_15_0 = arg_6_0.settingData_.reflection_effect == 1 and 0 or 1
 
-		if arg_6_0.settingData_.reflection_effect ~= var_16_0 then
-			SettingAction.ChangePicSetting("reflection_effect", var_16_0)
+		if arg_6_0.settingData_.reflection_effect ~= var_15_0 then
+			SettingAction.ChangePicSetting("reflection_effect", var_15_0)
 		end
 	end)
 end
 
-function var_0_0.RefreshPicOption(arg_17_0)
-	local var_17_0 = arg_17_0.settingData_.picOptionId
+function var_0_0.RefreshPicOption(arg_16_0)
+	local var_16_0 = arg_16_0.settingData_.picOptionId
 
-	for iter_17_0, iter_17_1 in pairs(arg_17_0.picToggleController_) do
-		if iter_17_0 == var_17_0 then
-			iter_17_1:SetSelectedIndex(0)
+	for iter_16_0, iter_16_1 in pairs(arg_16_0.picToggleController_) do
+		if iter_16_0 == var_16_0 then
+			iter_16_1:SetSelectedIndex(0)
 		else
-			iter_17_1:SetSelectedIndex(1)
+			iter_16_1:SetSelectedIndex(1)
 		end
 	end
 end
 
-function var_0_0.RefreshFPS(arg_18_0)
-	local var_18_0 = arg_18_0.settingData_.frame
+function var_0_0.RefreshFPS(arg_17_0)
+	local var_17_0 = arg_17_0.settingData_.frame
+
+	for iter_17_0 = 1, 3 do
+		SetActive(arg_17_0[string.format("fps%dCheck_", iter_17_0)], var_17_0 == var_0_3[iter_17_0])
+	end
+end
+
+function var_0_0.RefreshResolution(arg_18_0)
+	local var_18_0 = arg_18_0.settingData_.resolution
 
 	for iter_18_0 = 1, 3 do
-		SetActive(arg_18_0[string.format("fps%dCheck_", iter_18_0)], var_18_0 == var_0_3[iter_18_0])
+		SetActive(arg_18_0[string.format("resolution%dCheck_", iter_18_0)], var_18_0 == iter_18_0)
 	end
 end
 
-function var_0_0.RefreshResolution(arg_19_0)
-	local var_19_0 = arg_19_0.settingData_.resolution
+function var_0_0.RefreshTeamMateEffect(arg_19_0)
+	local var_19_0 = arg_19_0.settingData_.teammate_effect
 
 	for iter_19_0 = 1, 3 do
-		SetActive(arg_19_0[string.format("resolution%dCheck_", iter_19_0)], var_19_0 == iter_19_0)
+		SetActive(arg_19_0[string.format("teammate%dCheck_", iter_19_0)], var_19_0 == iter_19_0)
 	end
 end
 
-function var_0_0.RefreshTeamMateEffect(arg_20_0)
-	local var_20_0 = arg_20_0.settingData_.teammate_effect
+function var_0_0.RefreshUserEffect(arg_20_0)
+	local var_20_0 = arg_20_0.settingData_.user_effect
 
 	for iter_20_0 = 1, 3 do
-		SetActive(arg_20_0[string.format("teammate%dCheck_", iter_20_0)], var_20_0 == iter_20_0)
+		SetActive(arg_20_0[string.format("user%dCheck_", iter_20_0)], var_20_0 == iter_20_0)
 	end
 end
 
-function var_0_0.RefreshUserEffect(arg_21_0)
-	local var_21_0 = arg_21_0.settingData_.user_effect
+function var_0_0.RefreshAntiAlias(arg_21_0)
+	local var_21_0 = arg_21_0.settingData_.anti_aliasing
 
-	for iter_21_0 = 1, 3 do
-		SetActive(arg_21_0[string.format("user%dCheck_", iter_21_0)], var_21_0 == iter_21_0)
-	end
+	arg_21_0.antialiasTgl_.transform:GetComponent("ControllerExCollection"):GetController("default0"):SetSelectedIndex(var_21_0)
 end
 
-function var_0_0.RefreshAntiAlias(arg_22_0)
-	local var_22_0 = arg_22_0.settingData_.anti_aliasing
+function var_0_0.RefreshReflect(arg_22_0)
+	local var_22_0 = arg_22_0.settingData_.reflection_effect
 
-	arg_22_0.antialiasTgl_.transform:GetComponent("ControllerExCollection"):GetController("default0"):SetSelectedIndex(var_22_0)
+	arg_22_0.reflectTgl_.transform:GetComponent("ControllerExCollection"):GetController("default0"):SetSelectedIndex(var_22_0)
 end
 
-function var_0_0.RefreshHDR(arg_23_0)
-	local var_23_0 = arg_23_0.settingData_.hdr
+function var_0_0.CheckDataChange(arg_23_0, arg_23_1)
+	local var_23_0 = ""
 
-	arg_23_0.hdrTgl_.transform:GetComponent("ControllerExCollection"):GetController("default0"):SetSelectedIndex(var_23_0)
-end
-
-function var_0_0.RefreshReflect(arg_24_0)
-	local var_24_0 = arg_24_0.settingData_.reflection_effect
-
-	arg_24_0.reflectTgl_.transform:GetComponent("ControllerExCollection"):GetController("default0"):SetSelectedIndex(var_24_0)
-end
-
-function var_0_0.CheckDataChange(arg_25_0, arg_25_1)
-	local var_25_0 = ""
-
-	if arg_25_0.tmpSettingData_ and not table.equal(arg_25_0.tmpSettingData_, arg_25_0.settingData_, "all") then
+	if arg_23_0.tmpSettingData_ and not table.equal(arg_23_0.tmpSettingData_, arg_23_0.settingData_, "all") then
 		print("CheckDataChange, 新旧数据不同！！！")
 
 		return true
@@ -219,22 +206,22 @@ function var_0_0.CheckDataChange(arg_25_0, arg_25_1)
 	return false
 end
 
-function var_0_0.SaveData(arg_26_0)
-	if arg_26_0:CheckDataChange() then
-		arg_26_0.json_ = require("cjson")
+function var_0_0.SaveData(arg_24_0)
+	if arg_24_0:CheckDataChange() then
+		arg_24_0.json_ = require("cjson")
 
-		local var_26_0 = deepClone(arg_26_0.settingData_)
+		local var_24_0 = deepClone(arg_24_0.settingData_)
 
-		if var_26_0.picOptionId ~= 7 then
-			var_26_0.pic = {
-				quality = "quality_" .. var_26_0.picOptionId
+		if var_24_0.picOptionId ~= 7 then
+			var_24_0.pic = {
+				quality = "quality_" .. var_24_0.picOptionId
 			}
 		end
 
-		var_26_0.type = 1
+		var_24_0.type = 1
 
-		local var_26_1 = arg_26_0.json_.encode(var_26_0)
-		local var_26_2 = {
+		local var_24_1 = arg_24_0.json_.encode(var_24_0)
+		local var_24_2 = {
 			6,
 			2,
 			3,
@@ -242,95 +229,90 @@ function var_0_0.SaveData(arg_26_0)
 			5,
 			7
 		}
-		local var_26_3 = table.indexof(var_26_2, var_26_0.picOptionId)
-		local var_26_4 = 0
+		local var_24_3 = table.indexof(var_24_2, var_24_0.picOptionId)
+		local var_24_4 = 0
 
-		if var_26_3 > 0 then
-			var_26_4 = var_26_3 - 1
+		if var_24_3 > 0 then
+			var_24_4 = var_24_3 - 1
 		end
 
 		SDKTools.SendMessageToSDK("graphics_setting", {
-			graphics = var_26_4,
-			fps_setting = arg_26_0.settingData_.frame == 0 and 30 or arg_26_0.settingData_.frame == 1 and 60 or 120,
-			dpi_setting = arg_26_0.settingData_.resolution,
-			teammate_effect_setting = arg_26_0.settingData_.teammate_effect,
-			anti_aliasing_setting = arg_26_0.settingData_.anti_aliasing == 0 and "false" or "true",
-			reflect_setting = arg_26_0.settingData_.reflection_effect == 0 and "false" or "true",
-			HDR_setting = arg_26_0.settingData_.hdr == 0 and "false" or "true",
-			user_effect_setting = arg_26_0.settingData_.user_effect
+			graphics = var_24_4,
+			fps_setting = arg_24_0.settingData_.frame == 0 and 30 or arg_24_0.settingData_.frame == 1 and 60 or 120,
+			dpi_setting = arg_24_0.settingData_.resolution,
+			teammate_effect_setting = arg_24_0.settingData_.teammate_effect,
+			anti_aliasing_setting = arg_24_0.settingData_.anti_aliasing == 0 and "false" or "true",
+			reflect_setting = arg_24_0.settingData_.reflection_effect == 0 and "false" or "true",
+			user_effect_setting = arg_24_0.settingData_.user_effect
 		})
 
-		local var_26_5 = arg_26_0.json_.encode(var_26_0)
+		local var_24_5 = arg_24_0.json_.encode(var_24_0)
 	end
 
-	arg_26_0.tmpSettingData_ = deepClone(arg_26_0.settingData_)
+	arg_24_0.tmpSettingData_ = deepClone(arg_24_0.settingData_)
 end
 
-function var_0_0.RecoverTmpData(arg_27_0)
-	if arg_27_0:CheckDataChange() then
-		SettingAction.ChangePicSetting("allData", arg_27_0.tmpSettingData_)
+function var_0_0.RecoverTmpData(arg_25_0)
+	if arg_25_0:CheckDataChange() then
+		SettingAction.ChangePicSetting("allData", arg_25_0.tmpSettingData_)
 	end
 end
 
-function var_0_0.OnPicSettingChange(arg_28_0, arg_28_1, arg_28_2)
+function var_0_0.OnPicSettingChange(arg_26_0, arg_26_1, arg_26_2)
+	arg_26_0:RefreshPicOption()
+
+	if arg_26_2.key == "picOptionId" or arg_26_2.key == "allData" then
+		arg_26_0:RefreshResolution()
+		arg_26_0:RefreshTeamMateEffect()
+		arg_26_0:RefreshUserEffect()
+		arg_26_0:RefreshFPS()
+		arg_26_0:RefreshAntiAlias()
+		arg_26_0:RefreshReflect()
+	elseif arg_26_2.key == "resolution" then
+		arg_26_0:RefreshResolution()
+	elseif arg_26_2.key == "teammate_effect" then
+		arg_26_0:RefreshTeamMateEffect()
+	elseif arg_26_2.key == "frame" then
+		arg_26_0:RefreshFPS()
+	elseif arg_26_2.key == "anti_aliasing" then
+		arg_26_0:RefreshAntiAlias()
+	elseif arg_26_2.key == "reflection_effect" then
+		arg_26_0:RefreshReflect()
+	elseif arg_26_2.key == "user_effect" then
+		arg_26_0:RefreshUserEffect()
+	end
+end
+
+function var_0_0.Init(arg_27_0)
+	arg_27_0:InitUI()
+	arg_27_0:AddUIListener()
+	arg_27_0:OnEnter()
+end
+
+function var_0_0.OnEnter(arg_28_0)
+	arg_28_0.settingData_ = SettingData:GetPicSettingData()
+
 	arg_28_0:RefreshPicOption()
+	arg_28_0:RefreshFPS()
+	arg_28_0:RefreshResolution()
+	arg_28_0:RefreshTeamMateEffect()
+	arg_28_0:RefreshUserEffect()
+	arg_28_0:RefreshAntiAlias()
+	arg_28_0:RefreshReflect()
 
-	if arg_28_2.key == "picOptionId" or arg_28_2.key == "allData" then
-		arg_28_0:RefreshResolution()
-		arg_28_0:RefreshTeamMateEffect()
-		arg_28_0:RefreshUserEffect()
-		arg_28_0:RefreshFPS()
-		arg_28_0:RefreshHDR()
-		arg_28_0:RefreshAntiAlias()
-		arg_28_0:RefreshReflect()
-	elseif arg_28_2.key == "resolution" then
-		arg_28_0:RefreshResolution()
-	elseif arg_28_2.key == "teammate_effect" then
-		arg_28_0:RefreshTeamMateEffect()
-	elseif arg_28_2.key == "frame" then
-		arg_28_0:RefreshFPS()
-	elseif arg_28_2.key == "hdr" then
-		arg_28_0:RefreshHDR()
-	elseif arg_28_2.key == "anti_aliasing" then
-		arg_28_0:RefreshAntiAlias()
-	elseif arg_28_2.key == "reflection_effect" then
-		arg_28_0:RefreshReflect()
-	elseif arg_28_2.key == "user_effect" then
-		arg_28_0:RefreshUserEffect()
-	end
+	arg_28_0.tmpSettingData_ = deepClone(arg_28_0.settingData_)
+
+	arg_28_0:BindRedPointUI()
 end
 
-function var_0_0.Init(arg_29_0)
-	arg_29_0:InitUI()
-	arg_29_0:AddUIListener()
-	arg_29_0:OnEnter()
+function var_0_0.OnExit(arg_29_0)
+	arg_29_0:UnBindRedPointUI()
 end
 
-function var_0_0.OnEnter(arg_30_0)
-	arg_30_0.settingData_ = SettingData:GetPicSettingData()
+function var_0_0.Dispose(arg_30_0)
+	arg_30_0.hander_ = nil
 
-	arg_30_0:RefreshPicOption()
-	arg_30_0:RefreshFPS()
-	arg_30_0:RefreshResolution()
-	arg_30_0:RefreshTeamMateEffect()
-	arg_30_0:RefreshUserEffect()
-	arg_30_0:RefreshAntiAlias()
-	arg_30_0:RefreshHDR()
-	arg_30_0:RefreshReflect()
-
-	arg_30_0.tmpSettingData_ = deepClone(arg_30_0.settingData_)
-
-	arg_30_0:BindRedPointUI()
-end
-
-function var_0_0.OnExit(arg_31_0)
-	arg_31_0:UnBindRedPointUI()
-end
-
-function var_0_0.Dispose(arg_32_0)
-	arg_32_0.hander_ = nil
-
-	var_0_0.super.Dispose(arg_32_0)
+	var_0_0.super.Dispose(arg_30_0)
 end
 
 return var_0_0

@@ -27,17 +27,27 @@ function var_0_0.Show(arg_3_0, arg_3_1, arg_3_2, arg_3_3)
 
 	if arg_3_3 then
 		local var_3_3 = gameContext:GetAllOpenRoute()
-		local var_3_4
 
-		var_3_1, var_3_4 = manager.loadScene:GetNeedLoadSceneName(var_3_3)
+		if var_3_3[1] == "home" then
+			local var_3_4 = gameContext.oldRoutes_[1]
 
-		if not var_3_4 then
+			if var_3_4 ~= "chat" and var_3_4 ~= "userinfo" and var_3_4 ~= "clubBoss" then
+				PlayerTools.UpdateRandomData(HomeSceneSettingConst.RANDOM_MODE.EACH_ENTER)
+			end
+		end
+
+		local var_3_5
+
+		var_3_1, var_3_5 = manager.loadScene:GetNeedLoadSceneName(var_3_3)
+
+		if not var_3_5 then
 			manager.loadScene:StopSceneSoundEffect()
 		else
-			manager.loadScene:TryStopSceneSoundEffect(var_3_4)
+			manager.loadScene:TryStopSceneSoundEffect(var_3_5)
 		end
 	end
 
+	manager.loadScene:HideLastSceneList()
 	arg_3_0:DoCallBack()
 	arg_3_0:ClearTimer()
 
@@ -207,6 +217,7 @@ end
 
 function var_0_0.ClearTimer(arg_10_0)
 	if arg_10_0.timer_ then
+		manager.loadScene:AddCachePage()
 		arg_10_0.timer_:Stop()
 
 		arg_10_0.timer_ = nil

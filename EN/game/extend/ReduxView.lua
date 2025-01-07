@@ -257,168 +257,180 @@ function var_0_0.OnTop(arg_22_0)
 	return
 end
 
-function var_0_0.OnBehind(arg_23_0)
+function var_0_0.OnOverlapped(arg_23_0)
 	return
 end
 
-function var_0_0.SetParams(arg_24_0, arg_24_1)
-	arg_24_0.params_ = arg_24_1
+function var_0_0.OnBehind(arg_24_0)
+	return
 end
 
-function var_0_0.Go(arg_25_0, arg_25_1, arg_25_2, arg_25_3)
-	gameContext:Go(arg_25_1, arg_25_2, arg_25_3)
+function var_0_0.SetParams(arg_25_0, arg_25_1)
+	arg_25_0.params_ = arg_25_1
 end
 
-function var_0_0.Back(arg_26_0, arg_26_1, arg_26_2)
-	var_0_1.Back(arg_26_1, arg_26_2)
+function var_0_0.Go(arg_26_0, arg_26_1, arg_26_2, arg_26_3)
+	gameContext:Go(arg_26_1, arg_26_2, arg_26_3)
 end
 
-function var_0_0.IsBack(arg_27_0, arg_27_1)
-	return gameContext:IsBack(arg_27_1)
+function var_0_0.Back(arg_27_0, arg_27_1, arg_27_2)
+	var_0_1.Back(arg_27_1, arg_27_2)
 end
 
-function var_0_0.IsOpenRoute(arg_28_0, arg_28_1)
-	return gameContext:IsOpenRoute(arg_28_1)
+function var_0_0.IsBack(arg_28_0, arg_28_1)
+	return gameContext:IsBack(arg_28_1)
 end
 
-function var_0_0.Unequal(arg_29_0, arg_29_1, arg_29_2)
-	if type(arg_29_1) == "table" and type(arg_29_2) == "table" then
-		if table.length(arg_29_1) ~= table.length(arg_29_2) then
+function var_0_0.IsOpenRoute(arg_29_0, arg_29_1)
+	return gameContext:IsOpenRoute(arg_29_1)
+end
+
+function var_0_0.Unequal(arg_30_0, arg_30_1, arg_30_2)
+	if type(arg_30_1) == "table" and type(arg_30_2) == "table" then
+		if table.length(arg_30_1) ~= table.length(arg_30_2) then
 			return true
 		end
 
-		for iter_29_0, iter_29_1 in pairs(arg_29_1) do
-			if arg_29_0:Unequal(iter_29_1, arg_29_2[iter_29_0]) == true then
+		for iter_30_0, iter_30_1 in pairs(arg_30_1) do
+			if arg_30_0:Unequal(iter_30_1, arg_30_2[iter_30_0]) == true then
 				return true
 			end
 		end
-	elseif arg_29_1 ~= arg_29_2 then
+	elseif arg_30_1 ~= arg_30_2 then
 		return true
 	end
 
 	return false
 end
 
-function var_0_0.SetViewProp(arg_30_0, arg_30_1, arg_30_2)
-	arg_30_0.props_ = arg_30_0.props_ or {}
-	arg_30_0.oldProps_ = arg_30_0.oldProps_ or {}
-
-	local var_30_0 = false
-
-	if arg_30_0.props_[arg_30_1] == nil then
-		var_30_0 = true
-	end
-
-	if arg_30_0:Unequal(arg_30_0.oldProps_[arg_30_1], arg_30_2) then
-		if type(arg_30_2) == "table" then
-			arg_30_0.props_[arg_30_1] = deepClone(arg_30_2)
-			arg_30_0.oldProps_[arg_30_1] = deepClone(arg_30_2)
-		else
-			arg_30_0.props_[arg_30_1] = arg_30_2
-			arg_30_0.oldProps_[arg_30_1] = arg_30_2
-		end
-
-		if not var_30_0 then
-			arg_30_0:OnViewPropChanged(arg_30_1, arg_30_2)
-		end
-	end
-end
-
-function var_0_0.GetViewProp(arg_31_0, arg_31_1)
+function var_0_0.SetViewProp(arg_31_0, arg_31_1, arg_31_2)
 	arg_31_0.props_ = arg_31_0.props_ or {}
+	arg_31_0.oldProps_ = arg_31_0.oldProps_ or {}
 
-	return arg_31_0.props_[arg_31_1]
+	local var_31_0 = false
+
+	if arg_31_0.props_[arg_31_1] == nil then
+		var_31_0 = true
+	end
+
+	if arg_31_0:Unequal(arg_31_0.oldProps_[arg_31_1], arg_31_2) then
+		if type(arg_31_2) == "table" then
+			arg_31_0.props_[arg_31_1] = deepClone(arg_31_2)
+			arg_31_0.oldProps_[arg_31_1] = deepClone(arg_31_2)
+		else
+			arg_31_0.props_[arg_31_1] = arg_31_2
+			arg_31_0.oldProps_[arg_31_1] = arg_31_2
+		end
+
+		if not var_31_0 then
+			arg_31_0:OnViewPropChanged(arg_31_1, arg_31_2)
+		end
+	end
 end
 
-function var_0_0.OnViewPropChanged(arg_32_0, arg_32_1, arg_32_2)
+function var_0_0.GetViewProp(arg_32_0, arg_32_1)
+	arg_32_0.props_ = arg_32_0.props_ or {}
+
+	return arg_32_0.props_[arg_32_1]
+end
+
+function var_0_0.OnViewPropChanged(arg_33_0, arg_33_1, arg_33_2)
 	return
 end
 
-function var_0_0.OnUnload(arg_33_0)
-	if arg_33_0.currentUIState_ ~= var_0_3 then
-		arg_33_0:Dispose()
-		arg_33_0:Unload()
+function var_0_0.OnUnload(arg_34_0)
+	if arg_34_0.currentUIState_ ~= var_0_3 then
+		arg_34_0:Dispose()
+		arg_34_0:Unload()
 	end
 
-	arg_33_0.currentUIState_ = var_0_5
+	arg_34_0.currentUIState_ = var_0_5
 end
 
-function var_0_0.Unload(arg_34_0)
+function var_0_0.Unload(arg_35_0)
 	manager.gc:Collect()
 
-	if not isNil(arg_34_0.gameObject_) then
-		Object.Destroy(arg_34_0.gameObject_)
+	if not isNil(arg_35_0.gameObject_) then
+		Object.Destroy(arg_35_0.gameObject_)
 
-		arg_34_0.gameObject_ = nil
-		arg_34_0.transform_ = nil
+		arg_35_0.gameObject_ = nil
+		arg_35_0.transform_ = nil
 	end
 
-	arg_34_0.props_ = nil
-	arg_34_0.oldProps_ = nil
+	arg_35_0.props_ = nil
+	arg_35_0.oldProps_ = nil
 end
 
-function var_0_0.IsTop(arg_35_0)
-	return gameContext.routes_[#gameContext.routes_] == arg_35_0.routeName_
+function var_0_0.IsTop(arg_36_0)
+	return gameContext.routes_[#gameContext.routes_] == arg_36_0.routeName_
 end
 
-function var_0_0.Cacheable(arg_36_0)
+function var_0_0.Cacheable(arg_37_0)
 	return true
 end
 
-function var_0_0.SetRouteName(arg_37_0, arg_37_1)
-	arg_37_0.routeName_ = arg_37_1
+function var_0_0.SetRouteName(arg_38_0, arg_38_1)
+	arg_38_0.routeName_ = arg_38_1
 end
 
-function var_0_0.CheckWeakGuide(arg_38_0)
-	arg_38_0:RealCheckWeakGuide()
+function var_0_0.CheckWeakGuide(arg_39_0)
+	arg_39_0:RealCheckWeakGuide()
 end
 
-function var_0_0.RealCheckWeakGuide(arg_39_0)
+function var_0_0.RealCheckWeakGuide(arg_40_0)
 	if manager.guide:IsPlaying() then
 		return
 	end
 
-	local var_39_0, var_39_1 = GuideTool.CheckWeakGuide(arg_39_0.routeName_)
+	local var_40_0, var_40_1 = GuideTool.CheckWeakGuide(arg_40_0.routeName_)
 
-	if var_39_0 then
-		local var_39_2 = string.sub(var_39_1.guide_component[1], 1, 2)
-		local var_39_3
-		local var_39_4 = GuideTool.GetGuideComponentByRoute(arg_39_0, var_39_1.mask_component)
+	if var_40_0 then
+		local var_40_2 = string.sub(var_40_1.guide_component[1], 1, 2)
+		local var_40_3
+		local var_40_4 = GuideTool.GetGuideComponentByRoute(arg_40_0, var_40_1.mask_component)
 
-		local function var_39_5()
-			if var_39_3 then
-				manager.guide:ShowWeakView(var_39_1, var_39_3, var_39_4)
+		local function var_40_5()
+			if var_40_3 then
+				manager.guide:ShowWeakView(var_40_1, var_40_3, var_40_4)
 			else
-				NewPlayerGuideAction.FinishWeakGuide(var_39_1.id)
-				GuideTool.Log("未找到弱引导组件，弱引导id:" .. var_39_1.id)
+				NewPlayerGuideAction.FinishWeakGuide(var_40_1.id)
+				GuideTool.Log("未找到弱引导组件，弱引导id:" .. var_40_1.id)
 			end
 		end
 
-		if var_39_2 == "@@" then
-			local var_39_6
+		if var_40_2 == "@@" then
+			local var_40_6
 
-			var_39_6 = FrameTimer.New(function()
-				var_39_3 = arg_39_0:GetSpecialCom(var_39_1.guide_component)
+			var_40_6 = FrameTimer.New(function()
+				var_40_3 = arg_40_0:GetSpecialCom(var_40_1.guide_component)
 
-				var_39_5()
-				var_39_6:Stop()
+				var_40_5()
+				var_40_6:Stop()
 			end, 10, 1)
 
-			var_39_6:Start()
+			var_40_6:Start()
 		else
-			var_39_3 = GuideTool.GetGuideComponentByRoute(arg_39_0, var_39_1.guide_component)
+			var_40_3 = GuideTool.GetGuideComponentByRoute(arg_40_0, var_40_1.guide_component)
 
-			var_39_5()
+			var_40_5()
 		end
 	end
 end
 
-function var_0_0.GetSpecialCom(arg_42_0, arg_42_1)
+function var_0_0.GetSpecialCom(arg_43_0, arg_43_1)
 	return
 end
 
-function var_0_0.HideWeakGuide(arg_43_0)
+function var_0_0.OnAsyncSceneLoaded(arg_44_0, arg_44_1)
+	return
+end
+
+function var_0_0.HideWeakGuide(arg_45_0)
 	manager.guide.weakView:Hide()
+end
+
+function var_0_0.GetUICam()
+	return manager.ui.canvas:GetComponent("Canvas").worldCamera
 end
 
 return var_0_0

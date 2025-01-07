@@ -2,7 +2,7 @@
 local var_0_1 = class("XH3rdWaterBattleStatisticsView", var_0_0)
 
 function var_0_1.UIName(arg_1_0)
-	return "UI/VersionUI/XuHeng3rdUI/XH3rdWaterparkUI/XH3rdWPStatisticsUI"
+	return "Widget/System/Formation/Cooperation/CooperationStatisticsUI"
 end
 
 function var_0_1.OnEnter(arg_2_0)

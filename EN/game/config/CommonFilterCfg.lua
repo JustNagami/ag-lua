@@ -227,6 +227,54 @@
 		atlasName = "",
 		spriteName = ""
 	},
+	{
+		id = 39,
+		name = "99253c1515578cc430acbb43497df28e",
+		atlasName = "",
+		spriteName = ""
+	},
+	{
+		id = 40,
+		name = "3b09195925a1d4ca6ed62680767beb57",
+		atlasName = "",
+		spriteName = ""
+	},
+	{
+		id = 41,
+		name = "7f49f03d0e927621aa42d5f550f5850c",
+		atlasName = "",
+		spriteName = ""
+	},
+	{
+		id = 42,
+		name = "4de6550f7c672f652bdc626fb768afb8",
+		atlasName = "",
+		spriteName = ""
+	},
+	{
+		id = 43,
+		name = "5ba08bfa130e60b6b2e32ae1c9e5be0c",
+		atlasName = "",
+		spriteName = ""
+	},
+	{
+		id = 44,
+		name = "8fda95ed73fec8c810c2c9b28a6857d5",
+		atlasName = "",
+		spriteName = ""
+	},
+	{
+		id = 45,
+		name = "546ff3fa715c4b7397061179d54d213b",
+		atlasName = "",
+		spriteName = ""
+	},
+	{
+		id = 46,
+		name = "ef808ec3ed6df4f0478837e4ea817ed9",
+		atlasName = "",
+		spriteName = ""
+	},
 	all = {
 		1,
 		2,
@@ -265,6 +313,14 @@
 		35,
 		36,
 		37,
-		38
+		38,
+		39,
+		40,
+		41,
+		42,
+		43,
+		44,
+		45,
+		46
 	}
 }

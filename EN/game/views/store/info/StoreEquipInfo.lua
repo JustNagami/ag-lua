@@ -209,7 +209,7 @@ function var_0_0.IndexSkillItem(arg_18_0, arg_18_1, arg_18_2)
 			}
 		})
 	end)
-	arg_18_2:RefreshData(arg_18_0, var_18_0)
+	arg_18_2:RefreshData(var_18_0)
 end
 
 return var_0_0

@@ -1,6 +1,6 @@
 ﻿require("game.data.CooperationDataTemplate")
 
-local var_0_0 = singletonClass("ComboSkillData")
+local var_0_0 = singletonClass("CooperationData", BaseHeroViewData)
 local var_0_1
 local var_0_2 = {}
 local var_0_3 = {}
@@ -286,6 +286,101 @@ function var_0_0.SetCooperationHero(arg_31_0, arg_31_1)
 
 		saveData("cooperation", "cooperation_hero_" .. var_31_1, arg_31_1)
 	end
+end
+
+local var_0_10
+local var_0_11 = {}
+
+function var_0_0.GetCooperationHeroPower(arg_32_0, arg_32_1)
+	local var_32_0 = CooperationData:GetRoomData()
+	local var_32_1 = var_32_0 and var_32_0:GetRoomPlayerData(arg_32_1)
+
+	if var_32_1 == nil then
+		return 0
+	end
+
+	local var_32_2 = var_32_1.heroList
+	local var_32_3 = var_32_2[1].id
+
+	var_0_10 = var_32_1
+
+	if var_32_2[1].trialID and var_32_2[1].trialID ~= 0 then
+		return TempHeroData:GetBattlePower(var_32_2[1].trialID)
+	else
+		local var_32_4 = var_0_0:GetHeroData(var_32_3)
+		local var_32_5 = var_32_4:GetEquipInfoList()
+		local var_32_6 = var_32_4:GetServantInfo()
+		local var_32_7 = GetHeroFinalAttr(var_32_4, var_32_6, var_32_5, nil, true)
+
+		return calcBattlePower(var_32_4, var_32_6, var_32_5, nil, var_32_7)
+	end
+end
+
+function var_0_0.GetHeroData(arg_33_0, arg_33_1, arg_33_2)
+	local var_33_0 = {}
+
+	if arg_33_2 then
+		var_33_0 = TempHeroData:GetHeroData(arg_33_1, arg_33_2)
+	end
+
+	if var_0_10 then
+		local var_33_1 = var_0_10.heroList
+
+		for iter_33_0, iter_33_1 in ipairs(var_33_1) do
+			if arg_33_1 == iter_33_1.id then
+				return iter_33_1
+			end
+		end
+	end
+
+	return var_33_0
+end
+
+function var_0_0.GetEquipInfoList(arg_34_0, arg_34_1, arg_34_2)
+	return arg_34_0:GetHeroData(arg_34_1, arg_34_2):GetEquipInfoList()
+end
+
+function var_0_0.GetEquipDataList(arg_35_0, arg_35_1, arg_35_2)
+	return arg_35_0:GetHeroData(arg_35_1, arg_35_2).equip_list
+end
+
+function var_0_0.GetHeroWeaponInfo(arg_36_0, arg_36_1, arg_36_2)
+	return arg_36_0:GetHeroData(arg_36_1, arg_36_2):GetWeaponInfo()
+end
+
+function var_0_0.GetHeroServantInfo(arg_37_0, arg_37_1, arg_37_2)
+	return arg_37_0:GetHeroData(arg_37_1, arg_37_2):GetServantInfo()
+end
+
+function var_0_0.GetHeroSkillInfoList(arg_38_0, arg_38_1, arg_38_2)
+	return arg_38_0:GetHeroData(arg_38_1, arg_38_2):GetSkillInfoList()
+end
+
+function var_0_0.GetHeroTransitionInfoList(arg_39_0, arg_39_1, arg_39_2)
+	return arg_39_0:GetHeroData(arg_39_1, arg_39_2):GetTransitionInfoList()
+end
+
+function var_0_0.GetHeroUsingSkinInfo(arg_40_0, arg_40_1, arg_40_2)
+	local var_40_0 = arg_40_0:GetHeroData(arg_40_1, arg_40_2)
+	local var_40_1 = var_40_0 and var_40_0.using_skin or 0
+
+	if var_40_1 == 0 then
+		var_40_1 = arg_40_1
+	end
+
+	return SkinCfg[var_40_1]
+end
+
+function var_0_0.GetHeroList(arg_41_0)
+	if var_0_10 then
+		for iter_41_0, iter_41_1 in ipairs(var_0_10.heroList) do
+			var_0_11[iter_41_1.id] = iter_41_1
+		end
+	else
+		var_0_11 = {}
+	end
+
+	return var_0_11
 end
 
 return var_0_0

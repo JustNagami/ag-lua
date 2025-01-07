@@ -5,7 +5,7 @@
 			crossFade = 0.05,
 			action = "play",
 			entity = 0,
-			animeActionName = "wudao_cb"
+			animeActionName = "wudao_cc"
 		}
 	}
 }
@@ -16,7 +16,7 @@ local var_0_1 = {
 	}
 }
 
-var_0_1.duration = 6.166667
+var_0_1.duration = 6.433333
 var_0_1.fps = 30
 
 return var_0_1

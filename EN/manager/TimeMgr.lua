@@ -335,18 +335,25 @@ function var_0_0.DescCdTime3(arg_34_0, arg_34_1)
 	return var_34_0
 end
 
-function var_0_0.parseTimeForm(arg_35_0, arg_35_1)
-	local var_35_0 = math.floor(arg_35_1 / 86400)
-	local var_35_1 = math.fmod(math.floor(arg_35_1 / 3600), 24)
-	local var_35_2 = math.fmod(math.floor(arg_35_1 / 60), 60)
-	local var_35_3 = math.fmod(arg_35_1, 60)
+function var_0_0.DescCDTime4(arg_35_0, arg_35_1)
+	local var_35_0 = math.floor(arg_35_1 / 60)
+	local var_35_1 = arg_35_1 % 60
 
-	return var_35_0, var_35_1, var_35_2, var_35_3
+	return string.format("%02d:%02d", var_35_0, var_35_1)
 end
 
-function var_0_0.CalcMonthDays(arg_36_0, arg_36_1, arg_36_2)
-	local var_36_0 = 30
-	local var_36_1 = {
+function var_0_0.parseTimeForm(arg_36_0, arg_36_1)
+	local var_36_0 = math.floor(arg_36_1 / 86400)
+	local var_36_1 = math.fmod(math.floor(arg_36_1 / 3600), 24)
+	local var_36_2 = math.fmod(math.floor(arg_36_1 / 60), 60)
+	local var_36_3 = math.fmod(arg_36_1, 60)
+
+	return var_36_0, var_36_1, var_36_2, var_36_3
+end
+
+function var_0_0.CalcMonthDays(arg_37_0, arg_37_1, arg_37_2)
+	local var_37_0 = 30
+	local var_37_1 = {
 		1,
 		3,
 		5,
@@ -356,178 +363,226 @@ function var_0_0.CalcMonthDays(arg_36_0, arg_36_1, arg_36_2)
 		12
 	}
 
-	if arg_36_2 == 2 then
-		if arg_36_1 % 100 == 0 then
-			var_36_0 = arg_36_1 % 400 == 0 and 29 or 28
+	if arg_37_2 == 2 then
+		if arg_37_1 % 100 == 0 then
+			var_37_0 = arg_37_1 % 400 == 0 and 29 or 28
 		else
-			var_36_0 = arg_36_1 % 4 == 0 and 29 or 28
+			var_37_0 = arg_37_1 % 4 == 0 and 29 or 28
 		end
-	elseif table.indexof(var_36_1, arg_36_2) then
-		var_36_0 = 31
+	elseif table.indexof(var_37_1, arg_37_2) then
+		var_37_0 = 31
 	end
 
-	return var_36_0
+	return var_37_0
 end
 
-function var_0_0.GetLostTimeStr(arg_37_0, arg_37_1, arg_37_2, arg_37_3)
-	local var_37_0 = 1
+function var_0_0.WrapTimeStrWithTips(arg_38_0, arg_38_1)
+	arg_38_1 = arg_38_1 or "LEFT_TIME"
 
-	if arg_37_2 then
-		var_37_0 = 0
+	if arg_38_0 then
+		return GetTipsF(arg_38_1, arg_38_0)
+	end
+end
+
+local function var_0_6(arg_39_0, arg_39_1)
+	return function(...)
+		local var_40_0 = arg_39_0(...)
+
+		return var_0_0.WrapTimeStrWithTips(var_40_0, arg_39_1)
+	end
+end
+
+var_0_0.WrapTimeStrFunc = var_0_6
+
+function var_0_0.GetLostTimeStr(arg_41_0, arg_41_1, arg_41_2, arg_41_3)
+	local var_41_0 = 1
+
+	if arg_41_2 then
+		var_41_0 = 0
 	end
 
-	local var_37_1 = arg_37_1 - arg_37_0:GetServerTime()
-	local var_37_2 = math.floor(var_37_1 / 86400)
-	local var_37_3 = math.fmod(math.floor(var_37_1 / 3600), 24)
-	local var_37_4 = math.fmod(math.floor(var_37_1 / 60), 60)
-	local var_37_5 = math.fmod(var_37_1, 60)
+	local var_41_1 = arg_41_1 - arg_41_0:GetServerTime()
+	local var_41_2 = math.floor(var_41_1 / 86400)
+	local var_41_3 = math.fmod(math.floor(var_41_1 / 3600), 24)
+	local var_41_4 = math.fmod(math.floor(var_41_1 / 60), 60)
+	local var_41_5 = math.fmod(var_41_1, 60)
 
-	if var_37_2 > 0 then
-		return var_37_2 + var_37_0 .. GetTips("DAY")
-	elseif var_37_3 > 0 then
-		return var_37_3 + var_37_0 .. GetTips("HOUR")
-	elseif var_37_4 > 0 then
-		return var_37_4 + var_37_0 .. GetTips("MINUTE")
-	elseif var_37_5 > 0 then
-		return var_37_5 .. GetTips("SECOND")
-	elseif arg_37_3 then
+	if var_41_2 > 0 then
+		return var_41_2 + var_41_0 .. GetTips("DAY")
+	elseif var_41_3 > 0 then
+		return var_41_3 + var_41_0 .. GetTips("HOUR")
+	elseif var_41_4 > 0 then
+		return var_41_4 + var_41_0 .. GetTips("MINUTE")
+	elseif var_41_5 > 0 then
+		return var_41_5 .. GetTips("SECOND")
+	elseif arg_41_3 then
 		return 1 .. GetTips("SECOND")
 	else
 		return GetTips("TIME_OUT")
 	end
 end
 
-function var_0_0.GetLostTimeStr2(arg_38_0, arg_38_1, arg_38_2, arg_38_3)
-	local var_38_0 = 1
+var_0_0.GetLostTimeStrWithPrefix = var_0_6(var_0_0.GetLostTimeStr)
 
-	if arg_38_2 then
-		var_38_0 = 0
+function var_0_0.GetLostTimeStr2(arg_42_0, arg_42_1, arg_42_2, arg_42_3)
+	local var_42_0 = 1
+
+	if arg_42_2 then
+		var_42_0 = 0
 	end
 
-	local var_38_1 = arg_38_1 - arg_38_0:GetServerTime()
-	local var_38_2 = math.floor(var_38_1 / 86400)
-	local var_38_3 = math.fmod(math.floor(var_38_1 / 3600), 24)
-	local var_38_4 = math.fmod(math.floor(var_38_1 / 60), 60)
-	local var_38_5 = math.fmod(var_38_1, 60)
+	local var_42_1 = arg_42_1 - arg_42_0:GetServerTime()
+	local var_42_2 = math.floor(var_42_1 / 86400)
+	local var_42_3 = math.fmod(math.floor(var_42_1 / 3600), 24)
+	local var_42_4 = math.fmod(math.floor(var_42_1 / 60), 60)
+	local var_42_5 = math.fmod(var_42_1, 60)
 
-	if var_38_2 > 0 then
-		return var_38_2 + var_38_0 .. GetTips("DAY")
-	elseif var_38_3 > 0 then
-		return var_38_3 + var_38_0 .. GetTips("HOUR")
-	elseif var_38_4 > 0 then
-		return var_38_4 + var_38_0 .. GetTips("MINUTE")
-	elseif var_38_5 > 0 then
+	if var_42_2 > 0 then
+		return var_42_2 + var_42_0 .. GetTips("DAY")
+	elseif var_42_3 > 0 then
+		return var_42_3 + var_42_0 .. GetTips("HOUR")
+	elseif var_42_4 > 0 then
+		return var_42_4 + var_42_0 .. GetTips("MINUTE")
+	elseif var_42_5 > 0 then
 		return 1 .. GetTips("MINUTE")
-	elseif arg_38_3 then
+	elseif arg_42_3 then
 		return 1 .. GetTips("MINUTE")
 	else
 		return GetTips("TIME_OUT")
 	end
 end
 
-function var_0_0.GetLostTimeStrWith2Unit(arg_39_0, arg_39_1, arg_39_2)
-	if not arg_39_1 then
+var_0_0.GetLostTimeSt2WithPrefix = var_0_6(var_0_0.GetLostTimeStr2)
+
+function var_0_0.GetLostTimeStrWith2Unit(arg_43_0, arg_43_1, arg_43_2)
+	if not arg_43_1 then
 		return
 	end
 
-	local var_39_0 = arg_39_1 - arg_39_0:GetServerTime()
-	local var_39_1 = math.floor(var_39_0 / 86400)
-	local var_39_2 = math.fmod(math.floor(var_39_0 / 3600), 24)
-	local var_39_3 = math.fmod(math.floor(var_39_0 / 60), 60)
-	local var_39_4 = math.fmod(var_39_0, 60)
-	local var_39_5 = ""
-	local var_39_6 = GetTips("DAY")
-	local var_39_7 = GetTips("HOUR")
-	local var_39_8 = GetTips("MINUTE")
-	local var_39_9 = GetTips("SECOND")
+	local var_43_0 = arg_43_1 - arg_43_0:GetServerTime()
+	local var_43_1 = math.floor(var_43_0 / 86400)
+	local var_43_2 = math.fmod(math.floor(var_43_0 / 3600), 24)
+	local var_43_3 = math.fmod(math.floor(var_43_0 / 60), 60)
+	local var_43_4 = math.fmod(var_43_0, 60)
+	local var_43_5 = ""
+	local var_43_6 = GetTips("DAY")
+	local var_43_7 = GetTips("HOUR")
+	local var_43_8 = GetTips("MINUTE")
+	local var_43_9 = GetTips("SECOND")
 
-	if var_39_1 > 0 then
-		var_39_5 = var_39_1 .. var_39_6 .. var_39_2 .. var_39_7
-	elseif var_39_2 > 0 then
-		var_39_5 = var_39_2 .. var_39_7 .. var_39_3 .. var_39_8
-	elseif var_39_3 > 0 then
-		var_39_5 = 0 .. var_39_7 .. var_39_3 .. var_39_8
-	elseif var_39_4 > 0 then
-		var_39_5 = 0 .. var_39_7 .. 1 .. var_39_8
-	elseif arg_39_2 then
-		var_39_5 = 0 .. var_39_7 .. 1 .. var_39_8
+	if var_43_1 > 0 then
+		if var_43_3 > 0 or var_43_3 == 0 and var_43_4 > 0 then
+			var_43_2 = var_43_2 + 1
+		end
+
+		if var_43_2 >= 24 then
+			var_43_2 = var_43_2 - 24
+			var_43_1 = var_43_1 + 1
+		end
+
+		var_43_5 = var_43_1 .. var_43_6 .. var_43_2 .. var_43_7
+	elseif var_43_2 > 0 then
+		if var_43_4 > 0 then
+			var_43_3 = var_43_3 + 1
+		end
+
+		if var_43_3 >= 60 then
+			var_43_3 = var_43_3 - 60
+			var_43_2 = var_43_2 + 1
+		end
+
+		if var_43_2 == 24 then
+			var_43_5 = 1 .. var_43_6 .. 0 .. var_43_7
+		else
+			var_43_5 = var_43_2 .. var_43_7 .. var_43_3 .. var_43_8
+		end
+	elseif var_43_3 > 0 then
+		var_43_5 = var_43_3 .. var_43_8 .. var_43_4 .. var_43_9
+	elseif var_43_4 > 0 then
+		var_43_5 = var_43_4 .. var_43_9
+	elseif arg_43_2 then
+		var_43_5 = 0 .. var_43_7 .. 1 .. var_43_8
 	else
 		return GetTips("TIME_OUT")
 	end
 
-	return var_39_5
+	return var_43_5
 end
 
-function var_0_0.GetLostTimeLongStr(arg_40_0, arg_40_1)
-	local var_40_0 = arg_40_1 - arg_40_0:GetServerTime()
-	local var_40_1 = math.floor(var_40_0 / 86400)
-	local var_40_2 = math.fmod(math.floor(var_40_0 / 3600), 24)
-	local var_40_3 = math.fmod(math.floor(var_40_0 / 60), 60)
-	local var_40_4 = math.fmod(var_40_0, 60)
-	local var_40_5 = ""
-	local var_40_6 = GetTips("DAY")
-	local var_40_7 = GetTips("HOUR")
-	local var_40_8 = GetTips("MINUTE")
-	local var_40_9 = GetTips("SECOND")
+var_0_0.GetLostTimeStrWith2UnitWithPrefix = var_0_6(var_0_0.GetLostTimeStrWith2Unit)
 
-	if var_40_1 > 0 then
-		var_40_5 = SpliceI18NText({
-			var_40_1,
-			var_40_6,
-			string.format("%02d", var_40_2),
-			var_40_7,
-			string.format("%02d", var_40_3),
-			var_40_8
+function var_0_0.GetLostTimeLongStr(arg_44_0, arg_44_1)
+	local var_44_0 = arg_44_1 - arg_44_0:GetServerTime()
+	local var_44_1 = math.floor(var_44_0 / 86400)
+	local var_44_2 = math.fmod(math.floor(var_44_0 / 3600), 24)
+	local var_44_3 = math.fmod(math.floor(var_44_0 / 60), 60)
+	local var_44_4 = math.fmod(var_44_0, 60)
+	local var_44_5 = ""
+	local var_44_6 = GetTips("DAY")
+	local var_44_7 = GetTips("HOUR")
+	local var_44_8 = GetTips("MINUTE")
+	local var_44_9 = GetTips("SECOND")
+
+	if var_44_1 > 0 then
+		var_44_5 = SpliceI18NText({
+			var_44_1,
+			var_44_6,
+			string.format("%02d", var_44_2),
+			var_44_7,
+			string.format("%02d", var_44_3),
+			var_44_8
 		})
-	elseif var_40_2 > 0 then
-		var_40_5 = SpliceI18NText({
-			string.format("%02d", var_40_2),
-			var_40_7,
-			string.format("%02d", var_40_3),
-			var_40_8
+	elseif var_44_2 > 0 then
+		var_44_5 = SpliceI18NText({
+			string.format("%02d", var_44_2),
+			var_44_7,
+			string.format("%02d", var_44_3),
+			var_44_8
 		})
-	elseif var_40_3 > 0 then
-		var_40_5 = SpliceI18NText({
-			string.format("%02d", var_40_3),
-			var_40_8
+	elseif var_44_3 > 0 then
+		var_44_5 = SpliceI18NText({
+			string.format("%02d", var_44_3),
+			var_44_8
 		})
-	elseif var_40_4 > 0 then
-		var_40_5 = string.format("1%s", var_40_8)
+	elseif var_44_4 > 0 then
+		var_44_5 = string.format("1%s", var_44_8)
 	else
-		var_40_5 = GetTips("TIME_OUT")
+		var_44_5 = GetTips("TIME_OUT")
 	end
 
-	return var_40_5
+	return var_44_5
 end
 
-function var_0_0.GetBeforeTimeStr(arg_41_0, arg_41_1)
-	local var_41_0 = arg_41_0:GetServerTime() - arg_41_1
-	local var_41_1 = math.floor(var_41_0 / 86400)
-	local var_41_2 = math.fmod(math.floor(var_41_0 / 3600), 24)
-	local var_41_3 = math.fmod(math.floor(var_41_0 / 60), 60)
-	local var_41_4 = math.fmod(var_41_0, 60)
+var_0_0.GetLostTimeLongStrWithPrefix = var_0_6(var_0_0.GetLostTimeLongStr)
 
-	if var_41_1 > 0 then
+function var_0_0.GetBeforeTimeStr(arg_45_0, arg_45_1)
+	local var_45_0 = arg_45_0:GetServerTime() - arg_45_1
+	local var_45_1 = math.floor(var_45_0 / 86400)
+	local var_45_2 = math.fmod(math.floor(var_45_0 / 3600), 24)
+	local var_45_3 = math.fmod(math.floor(var_45_0 / 60), 60)
+	local var_45_4 = math.fmod(var_45_0, 60)
+
+	if var_45_1 > 0 then
 		return SpliceI18NText({
-			var_41_1 + 1,
+			var_45_1 + 1,
 			GetTips("DAY"),
 			GetTips("BEFORE")
 		})
-	elseif var_41_2 > 0 then
+	elseif var_45_2 > 0 then
 		return SpliceI18NText({
-			var_41_2 + 1,
+			var_45_2 + 1,
 			GetTips("HOUR"),
 			GetTips("BEFORE")
 		})
-	elseif var_41_3 > 0 then
+	elseif var_45_3 > 0 then
 		return SpliceI18NText({
-			var_41_3 + 1,
+			var_45_3 + 1,
 			GetTips("MINUTE"),
 			GetTips("BEFORE")
 		})
-	elseif var_41_4 > 0 then
+	elseif var_45_4 > 0 then
 		return SpliceI18NText({
-			var_41_4,
+			var_45_4,
 			GetTips("SECOND"),
 			GetTips("BEFORE")
 		})
@@ -536,186 +591,186 @@ function var_0_0.GetBeforeTimeStr(arg_41_0, arg_41_1)
 	end
 end
 
-function var_0_0.GetDeltaToday(arg_42_0)
-	return arg_42_0:GetToday(manager.time:GetServerTime() - GameSetting.refresh_time1.value[1][1] * 3600)
+function var_0_0.CheckIsToday(arg_46_0, arg_46_1, arg_46_2)
+	local var_46_0 = arg_46_1 + var_0_4 - GameSetting.refresh_time1.value[1][1] * 3600
+	local var_46_1 = arg_46_2 + var_0_4 - GameSetting.refresh_time1.value[1][1] * 3600
+
+	return math.floor(var_46_0 / 86400) == math.floor(var_46_1 / 86400)
 end
 
-function var_0_0.CheckIsToday(arg_43_0, arg_43_1, arg_43_2)
-	local var_43_0 = arg_43_1 + var_0_4 - GameSetting.refresh_time1.value[1][1] * 3600
-	local var_43_1 = arg_43_2 + var_0_4 - GameSetting.refresh_time1.value[1][1] * 3600
-
-	return math.floor(var_43_0 / 86400) == math.floor(var_43_1 / 86400)
+function var_0_0.GetDeltaToday(arg_47_0)
+	return arg_47_0:GetToday(manager.time:GetServerTime() - GameSetting.refresh_time1.value[1][1] * 3600)
 end
 
-function var_0_0.GetNextFreshTime(arg_44_0)
-	return arg_44_0:GetTodayFreshTime() + var_0_2
+function var_0_0.GetNextFreshTime(arg_48_0)
+	return arg_48_0:GetTodayFreshTime() + var_0_2
 end
 
-function var_0_0.GetTodayFreshTime(arg_45_0)
-	local var_45_0 = arg_45_0:GetServerTime()
+function var_0_0.GetTodayFreshTime(arg_49_0)
+	local var_49_0 = arg_49_0:GetServerTime()
 
-	if tonumber(arg_45_0:STimeDescS(var_45_0, "!%H")) < GameSetting.refresh_time1.value[1][1] then
+	if tonumber(arg_49_0:STimeDescS(var_49_0, "!%H")) < GameSetting.refresh_time1.value[1][1] then
 		return manager.time:GetTimeByHMS(GameSetting.refresh_time1.value[1][1], 0, 0) - var_0_2
 	else
 		return manager.time:GetTimeByHMS(GameSetting.refresh_time1.value[1][1], 0, 0)
 	end
 end
 
-function var_0_0.GetToday(arg_46_0, arg_46_1, arg_46_2)
-	local var_46_0 = arg_46_1 or arg_46_0:GetServerTime()
+function var_0_0.GetToday(arg_50_0, arg_50_1, arg_50_2)
+	local var_50_0 = arg_50_1 or arg_50_0:GetServerTime()
 
-	arg_46_2 = arg_46_2 or "!%d"
+	arg_50_2 = arg_50_2 or "!%d"
 
-	return tonumber(arg_46_0:STimeDescS(var_46_0, arg_46_2))
+	return tonumber(arg_50_0:STimeDescS(var_50_0, arg_50_2))
 end
 
-function var_0_0.IsToday(arg_47_0, arg_47_1)
-	local var_47_0 = arg_47_1 + var_0_4
-	local var_47_1 = arg_47_0:GetServerTime() + var_0_4
+function var_0_0.IsToday(arg_51_0, arg_51_1)
+	local var_51_0 = arg_51_1 + var_0_4
+	local var_51_1 = arg_51_0:GetServerTime() + var_0_4
 
-	return math.floor(var_47_0 / 86400) == math.floor(var_47_1 / 86400)
+	return math.floor(var_51_0 / 86400) == math.floor(var_51_1 / 86400)
 end
 
-function var_0_0.DiffDay(arg_48_0, arg_48_1, arg_48_2)
-	return math.floor((arg_48_2 - arg_48_0._sAnchorTime) / var_0_2) - math.floor((arg_48_1 - arg_48_0._sAnchorTime) / var_0_2)
+function var_0_0.DiffDay(arg_52_0, arg_52_1, arg_52_2)
+	return math.floor((arg_52_2 - arg_52_0._sAnchorTime) / var_0_2) - math.floor((arg_52_1 - arg_52_0._sAnchorTime) / var_0_2)
 end
 
-function var_0_0.DiffDay2(arg_49_0, arg_49_1, arg_49_2)
-	local var_49_0
-	local var_49_1 = math.floor(arg_49_1 / 86400)
-	local var_49_2 = math.fmod(math.floor(arg_49_1 / 3600), 24)
-	local var_49_3 = math.fmod(math.floor(arg_49_1 / 60), 60)
-	local var_49_4 = math.fmod(arg_49_1, 60)
-	local var_49_5 = math.floor(arg_49_2 / 86400)
-	local var_49_6 = math.fmod(math.floor(arg_49_2 / 3600), 24)
-	local var_49_7 = math.fmod(math.floor(arg_49_2 / 60), 60)
-	local var_49_8 = math.fmod(arg_49_2, 60)
+function var_0_0.DiffDay2(arg_53_0, arg_53_1, arg_53_2)
+	local var_53_0
+	local var_53_1 = math.floor(arg_53_1 / 86400)
+	local var_53_2 = math.fmod(math.floor(arg_53_1 / 3600), 24)
+	local var_53_3 = math.fmod(math.floor(arg_53_1 / 60), 60)
+	local var_53_4 = math.fmod(arg_53_1, 60)
+	local var_53_5 = math.floor(arg_53_2 / 86400)
+	local var_53_6 = math.fmod(math.floor(arg_53_2 / 3600), 24)
+	local var_53_7 = math.fmod(math.floor(arg_53_2 / 60), 60)
+	local var_53_8 = math.fmod(arg_53_2, 60)
 
-	return var_49_5 - var_49_1
+	return var_53_5 - var_53_1
 end
 
-function var_0_0.IsSameDay(arg_50_0, arg_50_1, arg_50_2)
-	return math.floor((arg_50_1 - arg_50_0._sAnchorTime) / var_0_2) == math.floor((arg_50_2 - arg_50_0._sAnchorTime) / var_0_2)
+function var_0_0.IsSameDay(arg_54_0, arg_54_1, arg_54_2)
+	return math.floor((arg_54_1 - arg_54_0._sAnchorTime) / var_0_2) == math.floor((arg_54_2 - arg_54_0._sAnchorTime) / var_0_2)
 end
 
-function var_0_0.GetMonth(arg_51_0, arg_51_1, arg_51_2)
-	local var_51_0 = arg_51_1 or arg_51_0:GetServerTime()
+function var_0_0.GetMonth(arg_55_0, arg_55_1, arg_55_2)
+	local var_55_0 = arg_55_1 or arg_55_0:GetServerTime()
 
-	arg_51_2 = arg_51_2 or "!%m"
+	arg_55_2 = arg_55_2 or "!%m"
 
-	return tonumber(arg_51_0:STimeDescS(var_51_0, arg_51_2))
+	return tonumber(arg_55_0:STimeDescS(var_55_0, arg_55_2))
 end
 
-function var_0_0.GetMonthEn(arg_52_0, arg_52_1)
-	local var_52_0 = tonumber(os.date("!%m", arg_52_1))
+function var_0_0.GetMonthEn(arg_56_0, arg_56_1)
+	local var_56_0 = tonumber(os.date("!%m", arg_56_1))
 
-	if var_52_0 == 1 then
+	if var_56_0 == 1 then
 		return "Jan."
 	end
 
-	if var_52_0 == 2 then
+	if var_56_0 == 2 then
 		return "Feb."
 	end
 
-	if var_52_0 == 3 then
+	if var_56_0 == 3 then
 		return "Mar."
 	end
 
-	if var_52_0 == 4 then
+	if var_56_0 == 4 then
 		return "Apr."
 	end
 
-	if var_52_0 == 5 then
+	if var_56_0 == 5 then
 		return "May."
 	end
 
-	if var_52_0 == 6 then
+	if var_56_0 == 6 then
 		return "Jun."
 	end
 
-	if var_52_0 == 7 then
+	if var_56_0 == 7 then
 		return "Jul."
 	end
 
-	if var_52_0 == 8 then
+	if var_56_0 == 8 then
 		return "Aug."
 	end
 
-	if var_52_0 == 9 then
+	if var_56_0 == 9 then
 		return "Sep."
 	end
 
-	if var_52_0 == 10 then
+	if var_56_0 == 10 then
 		return "Oct."
 	end
 
-	if var_52_0 == 11 then
+	if var_56_0 == 11 then
 		return "Nov."
 	end
 
-	if var_52_0 == 12 then
+	if var_56_0 == 12 then
 		return "Dec."
 	end
 end
 
-function var_0_0.FormatTime(arg_53_0, arg_53_1)
-	local var_53_0 = tonumber(os.date("!%Y", arg_53_1))
-	local var_53_1 = arg_53_0:GetServerTime()
+function var_0_0.FormatTime(arg_57_0, arg_57_1)
+	local var_57_0 = tonumber(os.date("!%Y", arg_57_1))
+	local var_57_1 = arg_57_0:GetServerTime()
 
-	if var_53_0 ~= tonumber(os.date("!%Y", var_53_1)) then
-		return os.date("%Y/%m/%d %H:%M", arg_53_1)
-	elseif not arg_53_0:IsSameDay(arg_53_1, var_53_1) then
-		return os.date("%m/%d %H:%M", arg_53_1)
+	if var_57_0 ~= tonumber(os.date("!%Y", var_57_1)) then
+		return os.date("%Y/%m/%d %H:%M", arg_57_1)
+	elseif not arg_57_0:IsSameDay(arg_57_1, var_57_1) then
+		return os.date("%m/%d %H:%M", arg_57_1)
 	else
-		return os.date("%H:%M", arg_53_1)
+		return os.date("%H:%M", arg_57_1)
 	end
 end
 
-function var_0_0.FormatChatTime(arg_54_0, arg_54_1)
-	local var_54_0 = tonumber(os.date("!%Y", arg_54_1))
-	local var_54_1 = arg_54_0:GetServerTime()
+function var_0_0.FormatChatTime(arg_58_0, arg_58_1)
+	local var_58_0 = tonumber(os.date("!%Y", arg_58_1))
+	local var_58_1 = arg_58_0:GetServerTime()
 
-	if var_54_0 ~= tonumber(os.date("!%Y", var_54_1)) then
-		return os.date("%Y/%m/%d", arg_54_1)
-	elseif not arg_54_0:IsSameDay(arg_54_1, var_54_1) then
-		return os.date("%m/%d", arg_54_1)
+	if var_58_0 ~= tonumber(os.date("!%Y", var_58_1)) then
+		return os.date("%Y/%m/%d", arg_58_1)
+	elseif not arg_58_0:IsSameDay(arg_58_1, var_58_1) then
+		return os.date("%m/%d", arg_58_1)
 	else
-		return os.date("%H:%M", arg_54_1)
+		return os.date("%H:%M", arg_58_1)
 	end
 end
 
-function var_0_0.GetOnLineText(arg_55_0, arg_55_1)
-	if arg_55_1 == 0 then
+function var_0_0.GetOnLineText(arg_59_0, arg_59_1)
+	if arg_59_1 == 0 then
 		return GetTips("ONLINE")
 	end
 
-	local var_55_0 = arg_55_0:GetServerTime() - arg_55_1
+	local var_59_0 = arg_59_0:GetServerTime() - arg_59_1
 
-	if var_55_0 < 3600 then
+	if var_59_0 < 3600 then
 		return GetTips("FRIEND_ONLINE_TIME_WITHIN_AN_HOUR")
-	elseif var_55_0 < 86400 then
+	elseif var_59_0 < 86400 then
 		return GetTips("FRIEND_ONLINE_TIME_IN_ONE_DAY")
-	elseif var_55_0 < 2592000 then
-		local var_55_1 = var_55_0 / 86400
+	elseif var_59_0 < 2592000 then
+		local var_59_1 = var_59_0 / 86400
 
-		return string.format(GetTips("FRIEND_ONLINE_TIME_ONE_DAY_AGO"), math.floor(var_55_1))
+		return string.format(GetTips("FRIEND_ONLINE_TIME_ONE_DAY_AGO"), math.floor(var_59_1))
 	else
 		return string.format(GetTips("FRIEND_ONLINE_TIME_ONE_DAY_AGO"), 30)
 	end
 end
 
-function var_0_0.CalcTimeZone(arg_56_0)
-	local var_56_0 = os.time()
+function var_0_0.CalcTimeZone(arg_60_0)
+	local var_60_0 = os.time()
 
-	return os.difftime(var_56_0, os.time(os.date("!*t", var_56_0)))
+	return os.difftime(var_60_0, os.time(os.date("!*t", var_60_0)))
 end
 
-function var_0_0.GetTimeZone(arg_57_0)
-	return arg_57_0.timeZero_
+function var_0_0.GetTimeZone(arg_61_0)
+	return arg_61_0.timeZero_
 end
 
-function var_0_0.GetDeltaTimeZone(arg_58_0)
-	return arg_58_0.deltaTimeZero_
+function var_0_0.GetDeltaTimeZone(arg_62_0)
+	return arg_62_0.deltaTimeZero_
 end
 
 return var_0_0

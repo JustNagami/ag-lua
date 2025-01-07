@@ -149,4 +149,16 @@ function var_0_0.RefreshAccumulateRedPoint()
 	manager.redPoint:setTip(RedPointConst.NOOB_TASK_ACCUMULATE, 0)
 end
 
+function var_0_0.UpdateFirstRecharge()
+	manager.net:SendWithLoadingNew(59016, {}, 59017, function(arg_16_0)
+		ActivityNoobData:SetNewTagRoleFlag(false)
+	end)
+end
+
+function var_0_0.UpdateFirstSign()
+	manager.net:SendWithLoadingNew(59018, {}, 59019, function(arg_18_0)
+		ActivityNoobData:SetNewTagSignFlag(false)
+	end)
+end
+
 return var_0_0
