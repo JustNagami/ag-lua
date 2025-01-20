@@ -18,7 +18,7 @@ function var_0_0.AddListeners(arg_2_0)
 		else
 			ChessBoardTools.ChessBoardMessageBox({
 				title = GetTips("PROMPT"),
-				content = string.format(GetTips("CHESSBOARD_ENTER_NEW_MAP"), ChessBoardLevelCfg[var_3_0].name_level),
+				content = string.format(GetTips("CHESSBOARD_ENTER_NEW_MAP"), GetI18NText(ChessBoardLevelCfg[var_3_0].name_level)),
 				OkCallback = function()
 					ChessBoardTools.EnterChessMap(arg_2_0.chapterID_)
 				end

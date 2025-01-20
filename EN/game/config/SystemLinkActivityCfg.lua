@@ -94,8 +94,8 @@
 		activity_template_id = 243,
 		type = 1,
 		system_link_data = {
-			15801,
-			291001,
+			15601,
+			281001,
 			2824311
 		}
 	},

@@ -135,7 +135,11 @@ function var_0_0.OnFollowPlatform(arg_13_0, arg_13_1)
 			ShowTips("WEIBO_REWARD_SENT")
 		end
 	elseif arg_13_0.result == 6904 then
-		ShowTips("ERROR_DISCORD_SUBSCRIB_FAILED")
+		if OperationConst.PLATFORM.DISCORD == arg_13_1.type and SDKTools.GetIsEnglish() then
+			ShowTips("WEIBO_REWARD_SENT")
+		else
+			ShowTips("ERROR_DISCORD_SUBSCRIB_FAILED")
+		end
 	elseif GameToSDK.IsPCPlatform() then
 		ShowTips("ERROR_WEIBO_REWARD_COLLECTED")
 	elseif OperationConst.PLATFORM.BILIBILI == arg_13_1.type then

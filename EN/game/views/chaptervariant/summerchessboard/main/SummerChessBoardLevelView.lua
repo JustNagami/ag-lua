@@ -56,7 +56,7 @@ function var_0_0.AddUIListener(arg_6_0)
 		else
 			ChessBoardTools.ChessBoardMessageBox({
 				title = GetTips("PROMPT"),
-				content = string.format(GetTips("CHESSBOARD_ENTER_NEW_MAP"), ChessBoardLevelCfg[var_9_0].name_level),
+				content = string.format(GetTips("CHESSBOARD_ENTER_NEW_MAP"), GetI18NText(ChessBoardLevelCfg[var_9_0].name_level)),
 				OkCallback = function()
 					arg_6_0.params_.selectLevelID = arg_6_0.levelCfgList_[arg_6_0.curIndex_]
 
