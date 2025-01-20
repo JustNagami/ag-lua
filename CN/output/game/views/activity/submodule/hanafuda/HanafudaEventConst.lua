@@ -1,5 +1,0 @@
-﻿PLAY_CARD_BY_INDEX = "PlayCardByIndex"
-CLICK_PLACE_CARD = "ClickPlaceCard"
-CLICK_PLAYER_CARD = "ClickPlayerCard"
-UPDATE_SELECT_CARD_INDEX = "UpdateSelectCardIndex"
-CHECK_POOL_CARDS = "CheckPoolCards"

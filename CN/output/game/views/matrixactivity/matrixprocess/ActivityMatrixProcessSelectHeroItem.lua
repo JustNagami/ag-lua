@@ -1,1 +1,0 @@
-﻿return (class("ActivityMatrixProcessSelectHeroItem", MatrixProcessSelectHeroItem))

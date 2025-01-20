@@ -1,5 +1,0 @@
-﻿ChessGlobalAreaModel = require("game/chess/ChessGlobalEventModel/ChessGlobalAreaModel")
-ChessGlobalCountDownModel = require("game/chess/ChessGlobalEventModel/ChessGlobalCountDownModel")
-ChessGlobalOrderEventModel = require("game/chess/ChessGlobalEventModel/ChessGlobalOrderEventModel")
-ChessGlobalSealModel = require("game/chess/ChessGlobalEventModel/ChessGlobalSealModel")
-ChessGlobalCheckModel = require("game/chess/ChessGlobalEventModel/ChessGlobalCheckModel")

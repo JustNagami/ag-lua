@@ -1,1 +1,0 @@
-﻿SpShootGameBridge = import(".SpShootGameBridge")
