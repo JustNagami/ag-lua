@@ -167,11 +167,11 @@ function var_0_0.SaveFurTemplateInfo(arg_10_0, arg_10_1)
 	end
 end
 
-function var_0_0.ConfirmUseTemplateInRoom(arg_11_0, arg_11_1, arg_11_2, arg_11_3, arg_11_4)
+function var_0_0.ConfirmUseTemplateInRoom(arg_11_0, arg_11_1, arg_11_2, arg_11_3, arg_11_4, arg_11_5)
 	if arg_11_3 then
-		DormAction:SetFurListInMap(arg_11_2, arg_11_1, nil)
+		DormAction:SetFurListInMap(arg_11_2, arg_11_1, nil, arg_11_5)
 	else
-		DormAction:SetFurListInMap(arg_11_2, nil, arg_11_4)
+		DormAction:SetFurListInMap(arg_11_2, nil, arg_11_4, arg_11_5)
 	end
 end
 

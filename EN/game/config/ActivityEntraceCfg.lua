@@ -316,8 +316,8 @@
 		prefab_path = "Widget/Version/SummerUI_3_3/SummerUI_3_3_EntranceUI/SummerUI_3_3_EntranceUI",
 		theme = 28,
 		day_list = {
-			36,
-			36
+			35,
+			72
 		},
 		icon_list = {
 			"but_Internal_summer_3",

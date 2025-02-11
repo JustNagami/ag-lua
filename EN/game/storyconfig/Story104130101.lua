@@ -27137,11 +27137,11 @@
 		arg_592_1.frameCnt_ = 0
 		arg_592_1.state_ = "playing"
 		arg_592_1.curTalkId_ = 413011144
-		arg_592_1.duration_ = 7.17
+		arg_592_1.duration_ = 7.63
 
 		local var_592_0 = {
 			zh = 3.433,
-			ja = 7.166
+			ja = 7.633
 		}
 		local var_592_1 = manager.audio:GetLocalizationFlag()
 
@@ -27793,6 +27793,8 @@
 				arg_607_1.leftNameTxt_.text = var_610_10
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_607_1.leftNameTxt_.transform)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_607_1.callImgTrs_)
+				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_607_1.callTextTrs_)
 
 				arg_607_1.contentImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/board_dialogue_narrator")
 				arg_607_1.contentRectCom_.sizeDelta = Vector2(1644, 265)

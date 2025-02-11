@@ -526,6 +526,16 @@
 		arg_20_1.curTalkId_ = 1104901005
 		arg_20_1.duration_ = 8.5
 
+		local var_20_0 = {
+			zh = 8.5,
+			ja = 6.733
+		}
+		local var_20_1 = manager.audio:GetLocalizationFlag()
+
+		if var_20_0[var_20_1] ~= nil then
+			arg_20_1.duration_ = var_20_0[var_20_1]
+		end
+
 		SetActive(arg_20_1.tipsGo_, false)
 
 		function arg_20_1.onSingleLineFinish_()
@@ -928,7 +938,17 @@
 		arg_32_1.frameCnt_ = 0
 		arg_32_1.state_ = "playing"
 		arg_32_1.curTalkId_ = 1104901008
-		arg_32_1.duration_ = 5.97
+		arg_32_1.duration_ = 6.5
+
+		local var_32_0 = {
+			zh = 5.966,
+			ja = 6.5
+		}
+		local var_32_1 = manager.audio:GetLocalizationFlag()
+
+		if var_32_0[var_32_1] ~= nil then
+			arg_32_1.duration_ = var_32_0[var_32_1]
+		end
 
 		SetActive(arg_32_1.tipsGo_, false)
 
@@ -1428,7 +1448,17 @@
 		arg_48_1.frameCnt_ = 0
 		arg_48_1.state_ = "playing"
 		arg_48_1.curTalkId_ = 1104901012
-		arg_48_1.duration_ = 2.97
+		arg_48_1.duration_ = 4.27
+
+		local var_48_0 = {
+			zh = 2.966,
+			ja = 4.266
+		}
+		local var_48_1 = manager.audio:GetLocalizationFlag()
+
+		if var_48_0[var_48_1] ~= nil then
+			arg_48_1.duration_ = var_48_0[var_48_1]
+		end
 
 		SetActive(arg_48_1.tipsGo_, false)
 
@@ -1795,7 +1825,17 @@
 		arg_64_1.frameCnt_ = 0
 		arg_64_1.state_ = "playing"
 		arg_64_1.curTalkId_ = 1104901016
-		arg_64_1.duration_ = 1.67
+		arg_64_1.duration_ = 2.83
+
+		local var_64_0 = {
+			zh = 1.666,
+			ja = 2.833
+		}
+		local var_64_1 = manager.audio:GetLocalizationFlag()
+
+		if var_64_0[var_64_1] ~= nil then
+			arg_64_1.duration_ = var_64_0[var_64_1]
+		end
 
 		SetActive(arg_64_1.tipsGo_, false)
 
@@ -1998,7 +2038,17 @@
 		arg_72_1.frameCnt_ = 0
 		arg_72_1.state_ = "playing"
 		arg_72_1.curTalkId_ = 1104901018
-		arg_72_1.duration_ = 6.5
+		arg_72_1.duration_ = 11.53
+
+		local var_72_0 = {
+			zh = 6.5,
+			ja = 11.533
+		}
+		local var_72_1 = manager.audio:GetLocalizationFlag()
+
+		if var_72_0[var_72_1] ~= nil then
+			arg_72_1.duration_ = var_72_0[var_72_1]
+		end
 
 		SetActive(arg_72_1.tipsGo_, false)
 
@@ -2235,6 +2285,16 @@
 		arg_80_1.curTalkId_ = 1104901020
 		arg_80_1.duration_ = 6.8
 
+		local var_80_0 = {
+			zh = 6.8,
+			ja = 1.7
+		}
+		local var_80_1 = manager.audio:GetLocalizationFlag()
+
+		if var_80_0[var_80_1] ~= nil then
+			arg_80_1.duration_ = var_80_0[var_80_1]
+		end
+
 		SetActive(arg_80_1.tipsGo_, false)
 
 		function arg_80_1.onSingleLineFinish_()
@@ -2350,6 +2410,16 @@
 		arg_84_1.curTalkId_ = 1104901021
 		arg_84_1.duration_ = 7.87
 
+		local var_84_0 = {
+			zh = 7.866,
+			ja = 4.8
+		}
+		local var_84_1 = manager.audio:GetLocalizationFlag()
+
+		if var_84_0[var_84_1] ~= nil then
+			arg_84_1.duration_ = var_84_0[var_84_1]
+		end
+
 		SetActive(arg_84_1.tipsGo_, false)
 
 		function arg_84_1.onSingleLineFinish_()
@@ -2463,7 +2533,17 @@
 		arg_88_1.frameCnt_ = 0
 		arg_88_1.state_ = "playing"
 		arg_88_1.curTalkId_ = 1104901022
-		arg_88_1.duration_ = 2.27
+		arg_88_1.duration_ = 5.83
+
+		local var_88_0 = {
+			zh = 2.266,
+			ja = 5.833
+		}
+		local var_88_1 = manager.audio:GetLocalizationFlag()
+
+		if var_88_0[var_88_1] ~= nil then
+			arg_88_1.duration_ = var_88_0[var_88_1]
+		end
 
 		SetActive(arg_88_1.tipsGo_, false)
 
@@ -2644,7 +2724,17 @@
 		arg_92_1.frameCnt_ = 0
 		arg_92_1.state_ = "playing"
 		arg_92_1.curTalkId_ = 1104901023
-		arg_92_1.duration_ = 2.03
+		arg_92_1.duration_ = 2.93
+
+		local var_92_0 = {
+			zh = 2.033,
+			ja = 2.933
+		}
+		local var_92_1 = manager.audio:GetLocalizationFlag()
+
+		if var_92_0[var_92_1] ~= nil then
+			arg_92_1.duration_ = var_92_0[var_92_1]
+		end
 
 		SetActive(arg_92_1.tipsGo_, false)
 
@@ -2787,6 +2877,16 @@
 		arg_96_1.state_ = "playing"
 		arg_96_1.curTalkId_ = 1104901024
 		arg_96_1.duration_ = 8.3
+
+		local var_96_0 = {
+			zh = 8.3,
+			ja = 5.366
+		}
+		local var_96_1 = manager.audio:GetLocalizationFlag()
+
+		if var_96_0[var_96_1] ~= nil then
+			arg_96_1.duration_ = var_96_0[var_96_1]
+		end
 
 		SetActive(arg_96_1.tipsGo_, false)
 
@@ -3182,7 +3282,17 @@
 		arg_108_1.frameCnt_ = 0
 		arg_108_1.state_ = "playing"
 		arg_108_1.curTalkId_ = 1104901027
-		arg_108_1.duration_ = 6.47
+		arg_108_1.duration_ = 7.9
+
+		local var_108_0 = {
+			zh = 6.466,
+			ja = 7.9
+		}
+		local var_108_1 = manager.audio:GetLocalizationFlag()
+
+		if var_108_0[var_108_1] ~= nil then
+			arg_108_1.duration_ = var_108_0[var_108_1]
+		end
 
 		SetActive(arg_108_1.tipsGo_, false)
 
@@ -3472,7 +3582,17 @@
 		arg_116_1.frameCnt_ = 0
 		arg_116_1.state_ = "playing"
 		arg_116_1.curTalkId_ = 1104901029
-		arg_116_1.duration_ = 4.4
+		arg_116_1.duration_ = 8.8
+
+		local var_116_0 = {
+			zh = 4.4,
+			ja = 8.8
+		}
+		local var_116_1 = manager.audio:GetLocalizationFlag()
+
+		if var_116_0[var_116_1] ~= nil then
+			arg_116_1.duration_ = var_116_0[var_116_1]
+		end
 
 		SetActive(arg_116_1.tipsGo_, false)
 
@@ -3613,7 +3733,17 @@
 		arg_120_1.frameCnt_ = 0
 		arg_120_1.state_ = "playing"
 		arg_120_1.curTalkId_ = 1104901030
-		arg_120_1.duration_ = 1.57
+		arg_120_1.duration_ = 1.6
+
+		local var_120_0 = {
+			zh = 1.566,
+			ja = 1.6
+		}
+		local var_120_1 = manager.audio:GetLocalizationFlag()
+
+		if var_120_0[var_120_1] ~= nil then
+			arg_120_1.duration_ = var_120_0[var_120_1]
+		end
 
 		SetActive(arg_120_1.tipsGo_, false)
 
@@ -4374,7 +4504,17 @@
 		arg_146_1.frameCnt_ = 0
 		arg_146_1.state_ = "playing"
 		arg_146_1.curTalkId_ = 1104901036
-		arg_146_1.duration_ = 1.07
+		arg_146_1.duration_ = 1.2
+
+		local var_146_0 = {
+			zh = 1.066,
+			ja = 1.2
+		}
+		local var_146_1 = manager.audio:GetLocalizationFlag()
+
+		if var_146_0[var_146_1] ~= nil then
+			arg_146_1.duration_ = var_146_0[var_146_1]
+		end
 
 		SetActive(arg_146_1.tipsGo_, false)
 
@@ -4535,7 +4675,17 @@
 		arg_152_1.frameCnt_ = 0
 		arg_152_1.state_ = "playing"
 		arg_152_1.curTalkId_ = 1104901037
-		arg_152_1.duration_ = 3
+		arg_152_1.duration_ = 3.53
+
+		local var_152_0 = {
+			zh = 3,
+			ja = 3.533
+		}
+		local var_152_1 = manager.audio:GetLocalizationFlag()
+
+		if var_152_0[var_152_1] ~= nil then
+			arg_152_1.duration_ = var_152_0[var_152_1]
+		end
 
 		SetActive(arg_152_1.tipsGo_, false)
 
@@ -4907,6 +5057,16 @@
 		arg_166_1.state_ = "playing"
 		arg_166_1.curTalkId_ = 1104901040
 		arg_166_1.duration_ = 2.53
+
+		local var_166_0 = {
+			zh = 2.533,
+			ja = 2.366
+		}
+		local var_166_1 = manager.audio:GetLocalizationFlag()
+
+		if var_166_0[var_166_1] ~= nil then
+			arg_166_1.duration_ = var_166_0[var_166_1]
+		end
 
 		SetActive(arg_166_1.tipsGo_, false)
 
@@ -5360,6 +5520,16 @@
 		arg_184_1.curTalkId_ = 1104901044
 		arg_184_1.duration_ = 2.6
 
+		local var_184_0 = {
+			zh = 2.6,
+			ja = 2.466
+		}
+		local var_184_1 = manager.audio:GetLocalizationFlag()
+
+		if var_184_0[var_184_1] ~= nil then
+			arg_184_1.duration_ = var_184_0[var_184_1]
+		end
+
 		SetActive(arg_184_1.tipsGo_, false)
 
 		function arg_184_1.onSingleLineFinish_()
@@ -5674,7 +5844,17 @@
 		arg_192_1.frameCnt_ = 0
 		arg_192_1.state_ = "playing"
 		arg_192_1.curTalkId_ = 1104901046
-		arg_192_1.duration_ = 4.1
+		arg_192_1.duration_ = 5.17
+
+		local var_192_0 = {
+			zh = 4.1,
+			ja = 5.166
+		}
+		local var_192_1 = manager.audio:GetLocalizationFlag()
+
+		if var_192_0[var_192_1] ~= nil then
+			arg_192_1.duration_ = var_192_0[var_192_1]
+		end
 
 		SetActive(arg_192_1.tipsGo_, false)
 
@@ -6006,6 +6186,16 @@
 		arg_200_1.curTalkId_ = 1104901048
 		arg_200_1.duration_ = 2.77
 
+		local var_200_0 = {
+			zh = 2.766,
+			ja = 1.533
+		}
+		local var_200_1 = manager.audio:GetLocalizationFlag()
+
+		if var_200_0[var_200_1] ~= nil then
+			arg_200_1.duration_ = var_200_0[var_200_1]
+		end
+
 		SetActive(arg_200_1.tipsGo_, false)
 
 		function arg_200_1.onSingleLineFinish_()
@@ -6289,7 +6479,17 @@
 		arg_212_1.frameCnt_ = 0
 		arg_212_1.state_ = "playing"
 		arg_212_1.curTalkId_ = 1104901051
-		arg_212_1.duration_ = 7.13
+		arg_212_1.duration_ = 10.67
+
+		local var_212_0 = {
+			zh = 7.133,
+			ja = 10.666
+		}
+		local var_212_1 = manager.audio:GetLocalizationFlag()
+
+		if var_212_0[var_212_1] ~= nil then
+			arg_212_1.duration_ = var_212_0[var_212_1]
+		end
 
 		SetActive(arg_212_1.tipsGo_, false)
 
@@ -6757,6 +6957,16 @@
 		arg_228_1.curTalkId_ = 1104901055
 		arg_228_1.duration_ = 13.7
 
+		local var_228_0 = {
+			zh = 13.7,
+			ja = 13
+		}
+		local var_228_1 = manager.audio:GetLocalizationFlag()
+
+		if var_228_0[var_228_1] ~= nil then
+			arg_228_1.duration_ = var_228_0[var_228_1]
+		end
+
 		SetActive(arg_228_1.tipsGo_, false)
 
 		function arg_228_1.onSingleLineFinish_()
@@ -7127,6 +7337,16 @@
 		arg_235_1.curTalkId_ = 1104901056
 		arg_235_1.duration_ = 3.4
 
+		local var_235_0 = {
+			zh = 3.4,
+			ja = 3
+		}
+		local var_235_1 = manager.audio:GetLocalizationFlag()
+
+		if var_235_0[var_235_1] ~= nil then
+			arg_235_1.duration_ = var_235_0[var_235_1]
+		end
+
 		SetActive(arg_235_1.tipsGo_, false)
 
 		function arg_235_1.onSingleLineFinish_()
@@ -7306,7 +7526,17 @@
 		arg_239_1.frameCnt_ = 0
 		arg_239_1.state_ = "playing"
 		arg_239_1.curTalkId_ = 1104901057
-		arg_239_1.duration_ = 9.87
+		arg_239_1.duration_ = 15.2
+
+		local var_239_0 = {
+			zh = 9.866,
+			ja = 15.2
+		}
+		local var_239_1 = manager.audio:GetLocalizationFlag()
+
+		if var_239_0[var_239_1] ~= nil then
+			arg_239_1.duration_ = var_239_0[var_239_1]
+		end
 
 		SetActive(arg_239_1.tipsGo_, false)
 
@@ -7773,7 +8003,17 @@
 		arg_255_1.frameCnt_ = 0
 		arg_255_1.state_ = "playing"
 		arg_255_1.curTalkId_ = 1104901061
-		arg_255_1.duration_ = 2.7
+		arg_255_1.duration_ = 3.1
+
+		local var_255_0 = {
+			zh = 2.7,
+			ja = 3.1
+		}
+		local var_255_1 = manager.audio:GetLocalizationFlag()
+
+		if var_255_0[var_255_1] ~= nil then
+			arg_255_1.duration_ = var_255_0[var_255_1]
+		end
 
 		SetActive(arg_255_1.tipsGo_, false)
 
@@ -7976,7 +8216,17 @@
 		arg_263_1.frameCnt_ = 0
 		arg_263_1.state_ = "playing"
 		arg_263_1.curTalkId_ = 1104901063
-		arg_263_1.duration_ = 3.07
+		arg_263_1.duration_ = 4.23
+
+		local var_263_0 = {
+			zh = 3.066,
+			ja = 4.233
+		}
+		local var_263_1 = manager.audio:GetLocalizationFlag()
+
+		if var_263_0[var_263_1] ~= nil then
+			arg_263_1.duration_ = var_263_0[var_263_1]
+		end
 
 		SetActive(arg_263_1.tipsGo_, false)
 
@@ -8306,7 +8556,17 @@
 		arg_271_1.frameCnt_ = 0
 		arg_271_1.state_ = "playing"
 		arg_271_1.curTalkId_ = 1104901065
-		arg_271_1.duration_ = 3.17
+		arg_271_1.duration_ = 7.03
+
+		local var_271_0 = {
+			zh = 3.166,
+			ja = 7.033
+		}
+		local var_271_1 = manager.audio:GetLocalizationFlag()
+
+		if var_271_0[var_271_1] ~= nil then
+			arg_271_1.duration_ = var_271_0[var_271_1]
+		end
 
 		SetActive(arg_271_1.tipsGo_, false)
 
@@ -8597,7 +8857,17 @@
 		arg_283_1.frameCnt_ = 0
 		arg_283_1.state_ = "playing"
 		arg_283_1.curTalkId_ = 1104901068
-		arg_283_1.duration_ = 5.07
+		arg_283_1.duration_ = 6.67
+
+		local var_283_0 = {
+			zh = 5.066,
+			ja = 6.666
+		}
+		local var_283_1 = manager.audio:GetLocalizationFlag()
+
+		if var_283_0[var_283_1] ~= nil then
+			arg_283_1.duration_ = var_283_0[var_283_1]
+		end
 
 		SetActive(arg_283_1.tipsGo_, false)
 
@@ -8925,6 +9195,16 @@
 		arg_293_1.curTalkId_ = 1104901070
 		arg_293_1.duration_ = 1.33
 
+		local var_293_0 = {
+			zh = 1.333,
+			ja = 1.1
+		}
+		local var_293_1 = manager.audio:GetLocalizationFlag()
+
+		if var_293_0[var_293_1] ~= nil then
+			arg_293_1.duration_ = var_293_0[var_293_1]
+		end
+
 		SetActive(arg_293_1.tipsGo_, false)
 
 		function arg_293_1.onSingleLineFinish_()
@@ -9219,7 +9499,17 @@
 		arg_301_1.frameCnt_ = 0
 		arg_301_1.state_ = "playing"
 		arg_301_1.curTalkId_ = 1104901072
-		arg_301_1.duration_ = 2
+		arg_301_1.duration_ = 4.6
+
+		local var_301_0 = {
+			zh = 1.999999999999,
+			ja = 4.6
+		}
+		local var_301_1 = manager.audio:GetLocalizationFlag()
+
+		if var_301_0[var_301_1] ~= nil then
+			arg_301_1.duration_ = var_301_0[var_301_1]
+		end
 
 		SetActive(arg_301_1.tipsGo_, false)
 
@@ -9599,6 +9889,16 @@
 		arg_313_1.curTalkId_ = 1104901075
 		arg_313_1.duration_ = 6.87
 
+		local var_313_0 = {
+			zh = 6.866,
+			ja = 3.6
+		}
+		local var_313_1 = manager.audio:GetLocalizationFlag()
+
+		if var_313_0[var_313_1] ~= nil then
+			arg_313_1.duration_ = var_313_0[var_313_1]
+		end
+
 		SetActive(arg_313_1.tipsGo_, false)
 
 		function arg_313_1.onSingleLineFinish_()
@@ -9853,7 +10153,17 @@
 		arg_321_1.frameCnt_ = 0
 		arg_321_1.state_ = "playing"
 		arg_321_1.curTalkId_ = 1104901077
-		arg_321_1.duration_ = 5.1
+		arg_321_1.duration_ = 8.2
+
+		local var_321_0 = {
+			zh = 5.1,
+			ja = 8.2
+		}
+		local var_321_1 = manager.audio:GetLocalizationFlag()
+
+		if var_321_0[var_321_1] ~= nil then
+			arg_321_1.duration_ = var_321_0[var_321_1]
+		end
 
 		SetActive(arg_321_1.tipsGo_, false)
 
@@ -10149,7 +10459,17 @@
 		arg_329_1.frameCnt_ = 0
 		arg_329_1.state_ = "playing"
 		arg_329_1.curTalkId_ = 1104901079
-		arg_329_1.duration_ = 1
+		arg_329_1.duration_ = 1.3
+
+		local var_329_0 = {
+			zh = 0.999999999999,
+			ja = 1.3
+		}
+		local var_329_1 = manager.audio:GetLocalizationFlag()
+
+		if var_329_0[var_329_1] ~= nil then
+			arg_329_1.duration_ = var_329_0[var_329_1]
+		end
 
 		SetActive(arg_329_1.tipsGo_, false)
 
@@ -10264,7 +10584,17 @@
 		arg_333_1.frameCnt_ = 0
 		arg_333_1.state_ = "playing"
 		arg_333_1.curTalkId_ = 1104901080
-		arg_333_1.duration_ = 1.7
+		arg_333_1.duration_ = 3.77
+
+		local var_333_0 = {
+			zh = 1.7,
+			ja = 3.766
+		}
+		local var_333_1 = manager.audio:GetLocalizationFlag()
+
+		if var_333_0[var_333_1] ~= nil then
+			arg_333_1.duration_ = var_333_0[var_333_1]
+		end
 
 		SetActive(arg_333_1.tipsGo_, false)
 
@@ -10445,7 +10775,17 @@
 		arg_337_1.frameCnt_ = 0
 		arg_337_1.state_ = "playing"
 		arg_337_1.curTalkId_ = 1104901081
-		arg_337_1.duration_ = 1.07
+		arg_337_1.duration_ = 1.53
+
+		local var_337_0 = {
+			zh = 1.066,
+			ja = 1.533
+		}
+		local var_337_1 = manager.audio:GetLocalizationFlag()
+
+		if var_337_0[var_337_1] ~= nil then
+			arg_337_1.duration_ = var_337_0[var_337_1]
+		end
 
 		SetActive(arg_337_1.tipsGo_, false)
 
@@ -10675,7 +11015,17 @@
 		arg_345_1.frameCnt_ = 0
 		arg_345_1.state_ = "playing"
 		arg_345_1.curTalkId_ = 1104901083
-		arg_345_1.duration_ = 2.8
+		arg_345_1.duration_ = 3.93
+
+		local var_345_0 = {
+			zh = 2.8,
+			ja = 3.933
+		}
+		local var_345_1 = manager.audio:GetLocalizationFlag()
+
+		if var_345_0[var_345_1] ~= nil then
+			arg_345_1.duration_ = var_345_0[var_345_1]
+		end
 
 		SetActive(arg_345_1.tipsGo_, false)
 
@@ -11559,7 +11909,17 @@
 		arg_381_1.frameCnt_ = 0
 		arg_381_1.state_ = "playing"
 		arg_381_1.curTalkId_ = 1104901092
-		arg_381_1.duration_ = 3.8
+		arg_381_1.duration_ = 5.8
+
+		local var_381_0 = {
+			zh = 3.8,
+			ja = 5.8
+		}
+		local var_381_1 = manager.audio:GetLocalizationFlag()
+
+		if var_381_0[var_381_1] ~= nil then
+			arg_381_1.duration_ = var_381_0[var_381_1]
+		end
 
 		SetActive(arg_381_1.tipsGo_, false)
 
@@ -11856,6 +12216,16 @@
 		arg_389_1.state_ = "playing"
 		arg_389_1.curTalkId_ = 1104901094
 		arg_389_1.duration_ = 4.1
+
+		local var_389_0 = {
+			zh = 4.1,
+			ja = 3.8
+		}
+		local var_389_1 = manager.audio:GetLocalizationFlag()
+
+		if var_389_0[var_389_1] ~= nil then
+			arg_389_1.duration_ = var_389_0[var_389_1]
+		end
 
 		SetActive(arg_389_1.tipsGo_, false)
 
@@ -12565,6 +12935,16 @@
 		arg_409_1.curTalkId_ = 1104901099
 		arg_409_1.duration_ = 5.6
 
+		local var_409_0 = {
+			zh = 5.6,
+			ja = 3.033
+		}
+		local var_409_1 = manager.audio:GetLocalizationFlag()
+
+		if var_409_0[var_409_1] ~= nil then
+			arg_409_1.duration_ = var_409_0[var_409_1]
+		end
+
 		SetActive(arg_409_1.tipsGo_, false)
 
 		function arg_409_1.onSingleLineFinish_()
@@ -12853,7 +13233,17 @@
 		arg_417_1.frameCnt_ = 0
 		arg_417_1.state_ = "playing"
 		arg_417_1.curTalkId_ = 1104901101
-		arg_417_1.duration_ = 7.63
+		arg_417_1.duration_ = 14.5
+
+		local var_417_0 = {
+			zh = 7.633,
+			ja = 14.5
+		}
+		local var_417_1 = manager.audio:GetLocalizationFlag()
+
+		if var_417_0[var_417_1] ~= nil then
+			arg_417_1.duration_ = var_417_0[var_417_1]
+		end
 
 		SetActive(arg_417_1.tipsGo_, false)
 
@@ -13239,6 +13629,16 @@
 		arg_429_1.curTalkId_ = 1104901104
 		arg_429_1.duration_ = 13.2
 
+		local var_429_0 = {
+			zh = 13.2,
+			ja = 9.3
+		}
+		local var_429_1 = manager.audio:GetLocalizationFlag()
+
+		if var_429_0[var_429_1] ~= nil then
+			arg_429_1.duration_ = var_429_0[var_429_1]
+		end
+
 		SetActive(arg_429_1.tipsGo_, false)
 
 		function arg_429_1.onSingleLineFinish_()
@@ -13533,7 +13933,17 @@
 		arg_437_1.frameCnt_ = 0
 		arg_437_1.state_ = "playing"
 		arg_437_1.curTalkId_ = 1104901106
-		arg_437_1.duration_ = 2
+		arg_437_1.duration_ = 2.33
+
+		local var_437_0 = {
+			zh = 1.999999999999,
+			ja = 2.333
+		}
+		local var_437_1 = manager.audio:GetLocalizationFlag()
+
+		if var_437_0[var_437_1] ~= nil then
+			arg_437_1.duration_ = var_437_0[var_437_1]
+		end
 
 		SetActive(arg_437_1.tipsGo_, false)
 
@@ -13829,7 +14239,17 @@
 		arg_445_1.frameCnt_ = 0
 		arg_445_1.state_ = "playing"
 		arg_445_1.curTalkId_ = 1104901108
-		arg_445_1.duration_ = 2.37
+		arg_445_1.duration_ = 3.57
+
+		local var_445_0 = {
+			zh = 2.366,
+			ja = 3.566
+		}
+		local var_445_1 = manager.audio:GetLocalizationFlag()
+
+		if var_445_0[var_445_1] ~= nil then
+			arg_445_1.duration_ = var_445_0[var_445_1]
+		end
 
 		SetActive(arg_445_1.tipsGo_, false)
 
@@ -14446,6 +14866,16 @@
 		arg_465_1.curTalkId_ = 1104901113
 		arg_465_1.duration_ = 5.33
 
+		local var_465_0 = {
+			zh = 5.333,
+			ja = 2.433
+		}
+		local var_465_1 = manager.audio:GetLocalizationFlag()
+
+		if var_465_0[var_465_1] ~= nil then
+			arg_465_1.duration_ = var_465_0[var_465_1]
+		end
+
 		SetActive(arg_465_1.tipsGo_, false)
 
 		function arg_465_1.onSingleLineFinish_()
@@ -14625,7 +15055,17 @@
 		arg_469_1.frameCnt_ = 0
 		arg_469_1.state_ = "playing"
 		arg_469_1.curTalkId_ = 1104901114
-		arg_469_1.duration_ = 2
+		arg_469_1.duration_ = 4.2
+
+		local var_469_0 = {
+			zh = 1.999999999999,
+			ja = 4.2
+		}
+		local var_469_1 = manager.audio:GetLocalizationFlag()
+
+		if var_469_0[var_469_1] ~= nil then
+			arg_469_1.duration_ = var_469_0[var_469_1]
+		end
 
 		SetActive(arg_469_1.tipsGo_, false)
 
@@ -14921,7 +15361,17 @@
 		arg_477_1.frameCnt_ = 0
 		arg_477_1.state_ = "playing"
 		arg_477_1.curTalkId_ = 1104901116
-		arg_477_1.duration_ = 5.77
+		arg_477_1.duration_ = 8.97
+
+		local var_477_0 = {
+			zh = 5.766,
+			ja = 8.966
+		}
+		local var_477_1 = manager.audio:GetLocalizationFlag()
+
+		if var_477_0[var_477_1] ~= nil then
+			arg_477_1.duration_ = var_477_0[var_477_1]
+		end
 
 		SetActive(arg_477_1.tipsGo_, false)
 
@@ -15177,7 +15627,17 @@
 		arg_485_1.frameCnt_ = 0
 		arg_485_1.state_ = "playing"
 		arg_485_1.curTalkId_ = 1104901118
-		arg_485_1.duration_ = 7.7
+		arg_485_1.duration_ = 7.8
+
+		local var_485_0 = {
+			zh = 7.7,
+			ja = 7.8
+		}
+		local var_485_1 = manager.audio:GetLocalizationFlag()
+
+		if var_485_0[var_485_1] ~= nil then
+			arg_485_1.duration_ = var_485_0[var_485_1]
+		end
 
 		SetActive(arg_485_1.tipsGo_, false)
 
@@ -15835,6 +16295,16 @@
 		arg_503_1.curTalkId_ = 1104901122
 		arg_503_1.duration_ = 4.03
 
+		local var_503_0 = {
+			zh = 4.033,
+			ja = 3.8
+		}
+		local var_503_1 = manager.audio:GetLocalizationFlag()
+
+		if var_503_0[var_503_1] ~= nil then
+			arg_503_1.duration_ = var_503_0[var_503_1]
+		end
+
 		SetActive(arg_503_1.tipsGo_, false)
 
 		function arg_503_1.onSingleLineFinish_()
@@ -16129,7 +16599,17 @@
 		arg_511_1.frameCnt_ = 0
 		arg_511_1.state_ = "playing"
 		arg_511_1.curTalkId_ = 1104901124
-		arg_511_1.duration_ = 4.73
+		arg_511_1.duration_ = 4.77
+
+		local var_511_0 = {
+			zh = 4.733,
+			ja = 4.766
+		}
+		local var_511_1 = manager.audio:GetLocalizationFlag()
+
+		if var_511_0[var_511_1] ~= nil then
+			arg_511_1.duration_ = var_511_0[var_511_1]
+		end
 
 		SetActive(arg_511_1.tipsGo_, false)
 
@@ -16648,7 +17128,17 @@
 		arg_527_1.frameCnt_ = 0
 		arg_527_1.state_ = "playing"
 		arg_527_1.curTalkId_ = 1104901128
-		arg_527_1.duration_ = 3.17
+		arg_527_1.duration_ = 5.03
+
+		local var_527_0 = {
+			zh = 3.166,
+			ja = 5.033
+		}
+		local var_527_1 = manager.audio:GetLocalizationFlag()
+
+		if var_527_0[var_527_1] ~= nil then
+			arg_527_1.duration_ = var_527_0[var_527_1]
+		end
 
 		SetActive(arg_527_1.tipsGo_, false)
 
@@ -16790,7 +17280,17 @@
 		arg_531_1.frameCnt_ = 0
 		arg_531_1.state_ = "playing"
 		arg_531_1.curTalkId_ = 1104901129
-		arg_531_1.duration_ = 3.97
+		arg_531_1.duration_ = 5.27
+
+		local var_531_0 = {
+			zh = 3.966,
+			ja = 5.266
+		}
+		local var_531_1 = manager.audio:GetLocalizationFlag()
+
+		if var_531_0[var_531_1] ~= nil then
+			arg_531_1.duration_ = var_531_0[var_531_1]
+		end
 
 		SetActive(arg_531_1.tipsGo_, false)
 
@@ -17122,6 +17622,16 @@
 		arg_539_1.curTalkId_ = 1104901131
 		arg_539_1.duration_ = 3.77
 
+		local var_539_0 = {
+			zh = 3.766,
+			ja = 3.1
+		}
+		local var_539_1 = manager.audio:GetLocalizationFlag()
+
+		if var_539_0[var_539_1] ~= nil then
+			arg_539_1.duration_ = var_539_0[var_539_1]
+		end
+
 		SetActive(arg_539_1.tipsGo_, false)
 
 		function arg_539_1.onSingleLineFinish_()
@@ -17236,6 +17746,16 @@
 		arg_543_1.state_ = "playing"
 		arg_543_1.curTalkId_ = 1104901132
 		arg_543_1.duration_ = 2.87
+
+		local var_543_0 = {
+			zh = 2.866,
+			ja = 1.366
+		}
+		local var_543_1 = manager.audio:GetLocalizationFlag()
+
+		if var_543_0[var_543_1] ~= nil then
+			arg_543_1.duration_ = var_543_0[var_543_1]
+		end
 
 		SetActive(arg_543_1.tipsGo_, false)
 
@@ -17416,7 +17936,17 @@
 		arg_547_1.frameCnt_ = 0
 		arg_547_1.state_ = "playing"
 		arg_547_1.curTalkId_ = 1104901133
-		arg_547_1.duration_ = 5.33
+		arg_547_1.duration_ = 6.4
+
+		local var_547_0 = {
+			zh = 5.333,
+			ja = 6.4
+		}
+		local var_547_1 = manager.audio:GetLocalizationFlag()
+
+		if var_547_0[var_547_1] ~= nil then
+			arg_547_1.duration_ = var_547_0[var_547_1]
+		end
 
 		SetActive(arg_547_1.tipsGo_, false)
 
@@ -17915,6 +18445,16 @@
 		arg_559_1.state_ = "playing"
 		arg_559_1.curTalkId_ = 1104901136
 		arg_559_1.duration_ = 7.2
+
+		local var_559_0 = {
+			zh = 7.19966667262713,
+			ja = 5.83266667262713
+		}
+		local var_559_1 = manager.audio:GetLocalizationFlag()
+
+		if var_559_0[var_559_1] ~= nil then
+			arg_559_1.duration_ = var_559_0[var_559_1]
+		end
 
 		SetActive(arg_559_1.tipsGo_, false)
 
@@ -18429,7 +18969,17 @@
 		arg_569_1.frameCnt_ = 0
 		arg_569_1.state_ = "playing"
 		arg_569_1.curTalkId_ = 1104901138
-		arg_569_1.duration_ = 5.2
+		arg_569_1.duration_ = 7.1
+
+		local var_569_0 = {
+			zh = 5.2,
+			ja = 7.1
+		}
+		local var_569_1 = manager.audio:GetLocalizationFlag()
+
+		if var_569_0[var_569_1] ~= nil then
+			arg_569_1.duration_ = var_569_0[var_569_1]
+		end
 
 		SetActive(arg_569_1.tipsGo_, false)
 
@@ -18632,7 +19182,17 @@
 		arg_577_1.frameCnt_ = 0
 		arg_577_1.state_ = "playing"
 		arg_577_1.curTalkId_ = 1104901140
-		arg_577_1.duration_ = 2.07
+		arg_577_1.duration_ = 4.1
+
+		local var_577_0 = {
+			zh = 2.066,
+			ja = 4.1
+		}
+		local var_577_1 = manager.audio:GetLocalizationFlag()
+
+		if var_577_0[var_577_1] ~= nil then
+			arg_577_1.duration_ = var_577_0[var_577_1]
+		end
 
 		SetActive(arg_577_1.tipsGo_, false)
 
@@ -18928,7 +19488,17 @@
 		arg_585_1.frameCnt_ = 0
 		arg_585_1.state_ = "playing"
 		arg_585_1.curTalkId_ = 1104901142
-		arg_585_1.duration_ = 2
+		arg_585_1.duration_ = 3.7
+
+		local var_585_0 = {
+			zh = 1.999999999999,
+			ja = 3.7
+		}
+		local var_585_1 = manager.audio:GetLocalizationFlag()
+
+		if var_585_0[var_585_1] ~= nil then
+			arg_585_1.duration_ = var_585_0[var_585_1]
+		end
 
 		SetActive(arg_585_1.tipsGo_, false)
 
@@ -19252,7 +19822,17 @@
 		arg_593_1.frameCnt_ = 0
 		arg_593_1.state_ = "playing"
 		arg_593_1.curTalkId_ = 1104901144
-		arg_593_1.duration_ = 3.93
+		arg_593_1.duration_ = 6.17
+
+		local var_593_0 = {
+			zh = 3.933,
+			ja = 6.166
+		}
+		local var_593_1 = manager.audio:GetLocalizationFlag()
+
+		if var_593_0[var_593_1] ~= nil then
+			arg_593_1.duration_ = var_593_0[var_593_1]
+		end
 
 		SetActive(arg_593_1.tipsGo_, false)
 
@@ -19367,7 +19947,17 @@
 		arg_597_1.frameCnt_ = 0
 		arg_597_1.state_ = "playing"
 		arg_597_1.curTalkId_ = 1104901145
-		arg_597_1.duration_ = 1.6
+		arg_597_1.duration_ = 1.73
+
+		local var_597_0 = {
+			zh = 1.6,
+			ja = 1.733
+		}
+		local var_597_1 = manager.audio:GetLocalizationFlag()
+
+		if var_597_0[var_597_1] ~= nil then
+			arg_597_1.duration_ = var_597_0[var_597_1]
+		end
 
 		SetActive(arg_597_1.tipsGo_, false)
 
@@ -19548,7 +20138,17 @@
 		arg_601_1.frameCnt_ = 0
 		arg_601_1.state_ = "playing"
 		arg_601_1.curTalkId_ = 1104901146
-		arg_601_1.duration_ = 8.3
+		arg_601_1.duration_ = 8.57
+
+		local var_601_0 = {
+			zh = 8.3,
+			ja = 8.566
+		}
+		local var_601_1 = manager.audio:GetLocalizationFlag()
+
+		if var_601_0[var_601_1] ~= nil then
+			arg_601_1.duration_ = var_601_0[var_601_1]
+		end
 
 		SetActive(arg_601_1.tipsGo_, false)
 
@@ -19778,7 +20378,17 @@
 		arg_609_1.frameCnt_ = 0
 		arg_609_1.state_ = "playing"
 		arg_609_1.curTalkId_ = 1104901148
-		arg_609_1.duration_ = 7.7
+		arg_609_1.duration_ = 10.07
+
+		local var_609_0 = {
+			zh = 7.7,
+			ja = 10.066
+		}
+		local var_609_1 = manager.audio:GetLocalizationFlag()
+
+		if var_609_0[var_609_1] ~= nil then
+			arg_609_1.duration_ = var_609_0[var_609_1]
+		end
 
 		SetActive(arg_609_1.tipsGo_, false)
 
@@ -19893,7 +20503,17 @@
 		arg_613_1.frameCnt_ = 0
 		arg_613_1.state_ = "playing"
 		arg_613_1.curTalkId_ = 1104901149
-		arg_613_1.duration_ = 1.67
+		arg_613_1.duration_ = 2.93
+
+		local var_613_0 = {
+			zh = 1.666,
+			ja = 2.933
+		}
+		local var_613_1 = manager.audio:GetLocalizationFlag()
+
+		if var_613_0[var_613_1] ~= nil then
+			arg_613_1.duration_ = var_613_0[var_613_1]
+		end
 
 		SetActive(arg_613_1.tipsGo_, false)
 
@@ -20074,7 +20694,17 @@
 		arg_617_1.frameCnt_ = 0
 		arg_617_1.state_ = "playing"
 		arg_617_1.curTalkId_ = 1104901150
-		arg_617_1.duration_ = 7.03
+		arg_617_1.duration_ = 11.57
+
+		local var_617_0 = {
+			zh = 7.033,
+			ja = 11.566
+		}
+		local var_617_1 = manager.audio:GetLocalizationFlag()
+
+		if var_617_0[var_617_1] ~= nil then
+			arg_617_1.duration_ = var_617_0[var_617_1]
+		end
 
 		SetActive(arg_617_1.tipsGo_, false)
 
@@ -20217,6 +20847,16 @@
 		arg_621_1.state_ = "playing"
 		arg_621_1.curTalkId_ = 1104901151
 		arg_621_1.duration_ = 5.27
+
+		local var_621_0 = {
+			zh = 5.266,
+			ja = 2.766
+		}
+		local var_621_1 = manager.audio:GetLocalizationFlag()
+
+		if var_621_0[var_621_1] ~= nil then
+			arg_621_1.duration_ = var_621_0[var_621_1]
+		end
 
 		SetActive(arg_621_1.tipsGo_, false)
 
@@ -20574,6 +21214,16 @@
 		arg_633_1.curTalkId_ = 1104901154
 		arg_633_1.duration_ = 2.3
 
+		local var_633_0 = {
+			zh = 2.3,
+			ja = 1.999999999999
+		}
+		local var_633_1 = manager.audio:GetLocalizationFlag()
+
+		if var_633_0[var_633_1] ~= nil then
+			arg_633_1.duration_ = var_633_0[var_633_1]
+		end
+
 		SetActive(arg_633_1.tipsGo_, false)
 
 		function arg_633_1.onSingleLineFinish_()
@@ -20754,6 +21404,16 @@
 		arg_637_1.state_ = "playing"
 		arg_637_1.curTalkId_ = 1104901155
 		arg_637_1.duration_ = 3.9
+
+		local var_637_0 = {
+			zh = 3.9,
+			ja = 2.266
+		}
+		local var_637_1 = manager.audio:GetLocalizationFlag()
+
+		if var_637_0[var_637_1] ~= nil then
+			arg_637_1.duration_ = var_637_0[var_637_1]
+		end
 
 		SetActive(arg_637_1.tipsGo_, false)
 

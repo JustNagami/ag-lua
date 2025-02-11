@@ -149,199 +149,219 @@ function var_0_0.OnEnter(arg_17_0)
 	arg_17_0:AddTimer()
 	arg_17_0:RefreshUI()
 	arg_17_0:BindRedPoint()
+
+	arg_17_0.rebuildTimer_ = FrameTimer.New(function()
+		UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_17_0.trs1_)
+		UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_17_0.trs2_)
+		UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_17_0.trs3_)
+		arg_17_0:StopForceRebuildGroup()
+	end, 1, 1)
+
+	arg_17_0.rebuildTimer_:Start()
 end
 
-function var_0_0.SetActiveData(arg_18_0)
-	local var_18_0 = ActivityData:GetActivityData(arg_18_0.activityID_)
+function var_0_0.SetActiveData(arg_19_0)
+	local var_19_0 = ActivityData:GetActivityData(arg_19_0.activityID_)
 
-	arg_18_0.startTime_ = var_18_0.startTime
-	arg_18_0.stopTime_ = var_18_0.stopTime
-	arg_18_0.scheduleCfg_ = ActivitySummerWaterData:GetCurrentScheduleCfg()
-	arg_18_0.singleHeroList_ = arg_18_0.scheduleCfg_.hero_id_list
-	arg_18_0.multiHeroList_ = arg_18_0.scheduleCfg_.online_hero_id_list
-	arg_18_0.selectHero_ = SummerWaterTools.GetSingleSelectHero()
-	arg_18_0.selectModel_ = getData("SummerWater", "selectModel") or 1
+	arg_19_0.startTime_ = var_19_0.startTime
+	arg_19_0.stopTime_ = var_19_0.stopTime
+	arg_19_0.scheduleCfg_ = ActivitySummerWaterData:GetCurrentScheduleCfg()
+	arg_19_0.singleHeroList_ = arg_19_0.scheduleCfg_.hero_id_list
+	arg_19_0.multiHeroList_ = arg_19_0.scheduleCfg_.online_hero_id_list
+	arg_19_0.selectHero_ = SummerWaterTools.GetSingleSelectHero()
+	arg_19_0.selectModel_ = getData("SummerWater", "selectModel") or 1
 end
 
-function var_0_0.BindRedPoint(arg_19_0)
-	manager.redPoint:bindUIandKey(arg_19_0.rewardBtn_.transform, RedPointConst.ACTIVITY_WATER_ASSIGNMENT)
-	manager.redPoint:bindUIandKey(arg_19_0.multiTab_.transform, RedPointConst.ACTIVITY_WATER_MULTIPLE_OPEN)
+function var_0_0.BindRedPoint(arg_20_0)
+	manager.redPoint:bindUIandKey(arg_20_0.rewardBtn_.transform, RedPointConst.ACTIVITY_WATER_ASSIGNMENT)
+	manager.redPoint:bindUIandKey(arg_20_0.multiTab_.transform, RedPointConst.ACTIVITY_WATER_MULTIPLE_OPEN)
 end
 
-function var_0_0.UnBindRedPoint(arg_20_0)
-	manager.redPoint:unbindUIandKey(arg_20_0.rewardBtn_.transform, RedPointConst.ACTIVITY_WATER_ASSIGNMENT)
-	manager.redPoint:unbindUIandKey(arg_20_0.multiTab_.transform, RedPointConst.ACTIVITY_WATER_MULTIPLE_OPEN)
+function var_0_0.UnBindRedPoint(arg_21_0)
+	manager.redPoint:unbindUIandKey(arg_21_0.rewardBtn_.transform, RedPointConst.ACTIVITY_WATER_ASSIGNMENT)
+	manager.redPoint:unbindUIandKey(arg_21_0.multiTab_.transform, RedPointConst.ACTIVITY_WATER_MULTIPLE_OPEN)
 end
 
-function var_0_0.OnWaterResult(arg_21_0)
-	arg_21_0:OnTop()
+function var_0_0.OnWaterResult(arg_22_0)
+	arg_22_0:OnTop()
 end
 
-function var_0_0.OnTop(arg_22_0)
-	arg_22_0.activityID_ = ActivitySummerWaterData:GetActivityID()
+function var_0_0.OnTop(arg_23_0)
+	arg_23_0.activityID_ = ActivitySummerWaterData:GetActivityID()
 
-	if not arg_22_0.activityID_ then
+	if not arg_23_0.activityID_ then
 		ShowTips("TIME_OVER")
 		ActivityTools.JumpBackToActivityMainViewByTheme(ActivityCfg[ActivitySummerWaterData:GetMainActivityID()].activity_theme)
 
 		return
 	end
 
-	arg_22_0:RefreshBar()
+	arg_23_0:RefreshBar()
 
-	local var_22_0 = ActivityData:GetActivityData(arg_22_0.activityID_)
+	local var_23_0 = ActivityData:GetActivityData(arg_23_0.activityID_)
 
-	arg_22_0.startTime_ = var_22_0.startTime
-	arg_22_0.stopTime_ = var_22_0.stopTime
-	arg_22_0.scheduleCfg_ = ActivitySummerWaterData:GetCurrentScheduleCfg()
-	arg_22_0.singleHeroList_ = arg_22_0.scheduleCfg_.hero_id_list
-	arg_22_0.multiHeroList_ = arg_22_0.scheduleCfg_.online_hero_id_list
-	arg_22_0.selectHero_ = SummerWaterTools.GetSingleSelectHero()
+	arg_23_0.startTime_ = var_23_0.startTime
+	arg_23_0.stopTime_ = var_23_0.stopTime
+	arg_23_0.scheduleCfg_ = ActivitySummerWaterData:GetCurrentScheduleCfg()
+	arg_23_0.singleHeroList_ = arg_23_0.scheduleCfg_.hero_id_list
+	arg_23_0.multiHeroList_ = arg_23_0.scheduleCfg_.online_hero_id_list
+	arg_23_0.selectHero_ = SummerWaterTools.GetSingleSelectHero()
 
-	arg_22_0:SelectTab(arg_22_0.selectModel_)
-	arg_22_0:AddTimer()
-	arg_22_0:RefreshUI()
+	arg_23_0:SelectTab(arg_23_0.selectModel_)
+	arg_23_0:AddTimer()
+	arg_23_0:RefreshUI()
 end
 
-function var_0_0.RefreshBar(arg_23_0)
+function var_0_0.RefreshBar(arg_24_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR,
 		HOME_BAR,
 		INFO_BAR,
 		INVITE_BAR,
-		arg_23_0.scheduleCfg_.assistance_coin_id
+		arg_24_0.scheduleCfg_.assistance_coin_id
 	})
-	manager.windowBar:SetBarCanAdd(arg_23_0.scheduleCfg_.assistance_coin_id, true)
+	manager.windowBar:SetBarCanAdd(arg_24_0.scheduleCfg_.assistance_coin_id, true)
 	manager.windowBar:SetGameHelpKey("ACTIVITY_SWIMSUIT_EXPLAIN_WATER")
 	manager.windowBar:RegistBackCallBack(function()
 		ActivityTools.JumpBackToActivityMainViewByTheme(ActivityCfg[ActivitySummerWaterData:GetMainActivityID()].activity_theme)
 	end)
 end
 
-function var_0_0.SelectTab(arg_25_0, arg_25_1)
-	arg_25_0.selectModel_ = arg_25_1
+function var_0_0.SelectTab(arg_26_0, arg_26_1)
+	arg_26_0.selectModel_ = arg_26_1
 
-	if arg_25_1 == 2 then
+	if arg_26_1 == 2 then
 		saveData("Activity_Water", "time", manager.time:GetServerTime())
 		ActivityWaterAction.UpdateCooperationRedPoint()
 	end
 
-	for iter_25_0, iter_25_1 in ipairs(arg_25_0.tabSelectController_) do
-		iter_25_1:SetSelectedState(tostring(iter_25_0 == arg_25_1))
+	for iter_26_0, iter_26_1 in ipairs(arg_26_0.tabSelectController_) do
+		iter_26_1:SetSelectedState(tostring(iter_26_0 == arg_26_1))
 	end
 
-	arg_25_0.modelShowController_:SetSelectedIndex(arg_25_1 - 1)
+	arg_26_0.modelShowController_:SetSelectedIndex(arg_26_1 - 1)
 
-	if arg_25_0.selectModel_ == 1 then
-		arg_25_0:RefreshRoleController()
-	elseif arg_25_0.selectModel_ == 2 then
-		arg_25_0:RefreshMultiController()
+	if arg_26_0.selectModel_ == 1 then
+		arg_26_0:RefreshRoleController()
+	elseif arg_26_0.selectModel_ == 2 then
+		arg_26_0:RefreshMultiController()
 	end
 
-	arg_25_0.btnShowController_:SetSelectedIndex(arg_25_1 - 1)
+	arg_26_0.btnShowController_:SetSelectedIndex(arg_26_1 - 1)
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_26_0.trs1_)
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_26_0.trs2_)
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_26_0.trs3_)
 end
 
-function var_0_0.RefreshMultiController(arg_26_0)
-	local var_26_0 = true
-	local var_26_1 = manager.time:GetServerHour()
+function var_0_0.RefreshMultiController(arg_27_0)
+	local var_27_0 = true
+	local var_27_1 = manager.time:GetServerHour()
 
-	if var_26_1 < GameSetting.activity_water_online_open.value[1] or var_26_1 >= GameSetting.activity_water_online_open.value[2] then
-		var_26_0 = false
+	if var_27_1 < GameSetting.activity_water_online_open.value[1] or var_27_1 >= GameSetting.activity_water_online_open.value[2] then
+		var_27_0 = false
 	end
 
-	arg_26_0.multiLockController_:SetSelectedState(tostring(not var_26_0))
+	arg_27_0.multiLockController_:SetSelectedState(tostring(not var_27_0))
 end
 
-function var_0_0.SelectHero(arg_27_0, arg_27_1)
-	if arg_27_0.selectHero_ == arg_27_1 then
+function var_0_0.SelectHero(arg_28_0, arg_28_1)
+	if arg_28_0.selectHero_ == arg_28_1 then
 		return
 	end
 
-	arg_27_0.selectHero_ = arg_27_1
+	arg_28_0.selectHero_ = arg_28_1
 
-	SummerWaterTools.SetSingleSelectHero(arg_27_1)
-	arg_27_0:RefreshRoleController()
+	SummerWaterTools.SetSingleSelectHero(arg_28_1)
+	arg_28_0:RefreshRoleController()
 end
 
-function var_0_0.RefreshRoleController(arg_28_0)
-	arg_28_0.singleSelectShowController_:SetSelectedIndex(0)
-	arg_28_0.singleLockController_:SetSelectedState("true")
+function var_0_0.RefreshRoleController(arg_29_0)
+	arg_29_0.singleSelectShowController_:SetSelectedIndex(0)
+	arg_29_0.singleLockController_:SetSelectedState("true")
 
-	for iter_28_0, iter_28_1 in ipairs(arg_28_0.singleHeroList_) do
-		if arg_28_0.selectHero_ == iter_28_1 then
-			arg_28_0.singleSelectShowController_:SetSelectedIndex(iter_28_0)
-			arg_28_0.singleLockController_:SetSelectedState("false")
+	for iter_29_0, iter_29_1 in ipairs(arg_29_0.singleHeroList_) do
+		if arg_29_0.selectHero_ == iter_29_1 then
+			arg_29_0.singleSelectShowController_:SetSelectedIndex(iter_29_0)
+			arg_29_0.singleLockController_:SetSelectedState("false")
 		end
 	end
 end
 
-function var_0_0.RefreshUI(arg_29_0)
-	if manager.time:GetServerTime() >= arg_29_0.stopTime_ then
+function var_0_0.RefreshUI(arg_30_0)
+	if manager.time:GetServerTime() >= arg_30_0.stopTime_ then
 		ShowTips("TIME_OVER")
 		ActivityTools.JumpBackToActivityMainViewByTheme(ActivityCfg[ActivitySummerWaterData:GetMainActivityID()].activity_theme)
 	end
 
-	arg_29_0.roleImg1_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. HeroStandardSystemCfg[arg_29_0.singleHeroList_[1]].hero_id)
-	arg_29_0.roleImg2_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. HeroStandardSystemCfg[arg_29_0.singleHeroList_[2]].hero_id)
+	arg_30_0.roleImg1_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. HeroStandardSystemCfg[arg_30_0.singleHeroList_[1]].hero_id)
+	arg_30_0.roleImg2_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. HeroStandardSystemCfg[arg_30_0.singleHeroList_[2]].hero_id)
 
-	local var_29_0 = ActivitySummerWaterData:GetTotalGainCurrenyNum() .. "/" .. arg_29_0.scheduleCfg_.voting_ticket_limit
+	local var_30_0 = ActivitySummerWaterData:GetTotalGainCurrenyNum() .. "/" .. arg_30_0.scheduleCfg_.voting_ticket_limit
 
-	arg_29_0.singleGetNumText_.text = var_29_0
-	arg_29_0.multiGetNumText_.text = var_29_0
+	arg_30_0.singleGetNumText_.text = var_30_0
+	arg_30_0.multiGetNumText_.text = var_30_0
 end
 
-function var_0_0.AddTimer(arg_30_0)
-	arg_30_0:StopTimer()
-	arg_30_0:RefreshTimeText()
+function var_0_0.StopForceRebuildGroup(arg_31_0)
+	if arg_31_0.rebuildTimer_ then
+		arg_31_0.rebuildTimer_:Stop()
 
-	local var_30_0 = ActivityData:GetActivityData(ActivitySummerWaterData:GetMainActivityID()).stopTime
+		arg_31_0.rebuildTimer_ = nil
+	end
+end
 
-	arg_30_0.timer_ = Timer.New(function()
-		if manager.time:GetServerTime() > var_30_0 then
+function var_0_0.AddTimer(arg_32_0)
+	arg_32_0:StopTimer()
+	arg_32_0:RefreshTimeText()
+
+	local var_32_0 = ActivityData:GetActivityData(ActivitySummerWaterData:GetMainActivityID()).stopTime
+
+	arg_32_0.timer_ = Timer.New(function()
+		if manager.time:GetServerTime() > var_32_0 then
 			return
 		end
 
-		arg_30_0:RefreshMultiController()
-		arg_30_0:RefreshTimeText()
+		arg_32_0:RefreshMultiController()
+		arg_32_0:RefreshTimeText()
 	end, 1, -1)
 
-	arg_30_0.timer_:Start()
+	arg_32_0.timer_:Start()
 end
 
-function var_0_0.RefreshTimeText(arg_32_0)
-	local var_32_0 = ActivityData:GetActivityData(ActivitySummerWaterData:GetMainActivityID()).stopTime
+function var_0_0.RefreshTimeText(arg_34_0)
+	local var_34_0 = ActivityData:GetActivityData(ActivitySummerWaterData:GetMainActivityID()).stopTime
 
-	if arg_32_0.timeText_ then
-		arg_32_0.timeText_.text = GetTips("REMAINING_TIME") .. manager.time:GetLostTimeStrWith2Unit(var_32_0, true)
+	if arg_34_0.timeText_ then
+		arg_34_0.timeText_.text = GetTips("REMAINING_TIME") .. manager.time:GetLostTimeStrWith2Unit(var_34_0, true)
 	end
 end
 
-function var_0_0.OnExit(arg_33_0)
-	arg_33_0:StopTimer()
+function var_0_0.OnExit(arg_35_0)
+	arg_35_0:StopTimer()
 	manager.windowBar:HideBar()
-	arg_33_0:HideMatching()
-	arg_33_0:UnBindRedPoint()
-	saveData("SummerWater", "selectModel", arg_33_0.selectModel_)
+	arg_35_0:HideMatching()
+	arg_35_0:UnBindRedPoint()
+	saveData("SummerWater", "selectModel", arg_35_0.selectModel_)
 end
 
-function var_0_0.StopTimer(arg_34_0)
-	if arg_34_0.timer_ then
-		arg_34_0.timer_:Stop()
+function var_0_0.StopTimer(arg_36_0)
+	if arg_36_0.timer_ then
+		arg_36_0.timer_:Stop()
 
-		arg_34_0.timer_ = nil
+		arg_36_0.timer_ = nil
 	end
 end
 
-function var_0_0.IsActivityTime(arg_35_0)
-	if manager.time:GetServerTime() < arg_35_0.startTime_ then
-		local var_35_0 = GetTips("OPEN_TIME")
+function var_0_0.IsActivityTime(arg_37_0)
+	if manager.time:GetServerTime() < arg_37_0.startTime_ then
+		local var_37_0 = GetTips("OPEN_TIME")
 
-		ShowTips(string.format(var_35_0, manager.time:GetLostTimeStrWith2Unit(arg_35_0.startTime_, true)))
+		ShowTips(string.format(var_37_0, manager.time:GetLostTimeStrWith2Unit(arg_37_0.startTime_, true)))
 
 		return false
 	end
 
-	if manager.time:GetServerTime() >= arg_35_0.stopTime_ then
+	if manager.time:GetServerTime() >= arg_37_0.stopTime_ then
 		ShowTips("TIME_OVER")
 
 		return false
@@ -350,37 +370,37 @@ function var_0_0.IsActivityTime(arg_35_0)
 	return true
 end
 
-function var_0_0.ShowMatching(arg_36_0)
-	SetActive(arg_36_0.popGo_, true)
+function var_0_0.ShowMatching(arg_38_0)
+	SetActive(arg_38_0.popGo_, true)
 
-	arg_36_0.curMatchingSeconds_ = 0
-	arg_36_0.secondLabel_.text = string.format(GetTips("ACTIVITY_WATER_MATCHING"), arg_36_0.curMatchingSeconds_ .. "s")
+	arg_38_0.curMatchingSeconds_ = 0
+	arg_38_0.secondLabel_.text = string.format(GetTips("ACTIVITY_WATER_MATCHING"), arg_38_0.curMatchingSeconds_ .. "s")
 
-	if arg_36_0.matchingTimer_ == nil then
-		arg_36_0.matchingTimer_ = Timer.New(function()
-			arg_36_0:OnMatchingTimer()
+	if arg_38_0.matchingTimer_ == nil then
+		arg_38_0.matchingTimer_ = Timer.New(function()
+			arg_38_0:OnMatchingTimer()
 		end, 1, -1)
 	end
 
-	arg_36_0.matchingTimer_:Start()
+	arg_38_0.matchingTimer_:Start()
 end
 
-function var_0_0.HideMatching(arg_38_0)
-	if arg_38_0.matchingTimer_ then
-		arg_38_0.matchingTimer_:Stop()
+function var_0_0.HideMatching(arg_40_0)
+	if arg_40_0.matchingTimer_ then
+		arg_40_0.matchingTimer_:Stop()
 
-		arg_38_0.matchingTimer_ = nil
+		arg_40_0.matchingTimer_ = nil
 	end
 
-	arg_38_0.curMatchingSeconds_ = 0
+	arg_40_0.curMatchingSeconds_ = 0
 
 	CooperationAction.CancelMatching()
-	SetActive(arg_38_0.popGo_, false)
+	SetActive(arg_40_0.popGo_, false)
 end
 
-function var_0_0.OnMatchingTimer(arg_39_0)
-	arg_39_0.curMatchingSeconds_ = arg_39_0.curMatchingSeconds_ + 1
-	arg_39_0.secondLabel_.text = string.format(GetTips("ACTIVITY_WATER_MATCHING"), arg_39_0.curMatchingSeconds_ .. "s")
+function var_0_0.OnMatchingTimer(arg_41_0)
+	arg_41_0.curMatchingSeconds_ = arg_41_0.curMatchingSeconds_ + 1
+	arg_41_0.secondLabel_.text = string.format(GetTips("ACTIVITY_WATER_MATCHING"), arg_41_0.curMatchingSeconds_ .. "s")
 end
 
 return var_0_0

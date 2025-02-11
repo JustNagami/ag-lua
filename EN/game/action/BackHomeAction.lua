@@ -166,11 +166,11 @@ function var_0_0.GetRewardRensponse(arg_16_0)
 					num = iter_16_3.num
 				})
 			end
-
-			local var_16_2 = DormData:GetWeekReceivedGiftNum() + #var_16_0
-
-			DormData:UpdateReceivedWeekGiftNum(var_16_2)
 		end
+
+		local var_16_2 = DormData:GetWeekReceivedGiftNum() + #var_16_0
+
+		DormData:UpdateReceivedWeekGiftNum(var_16_2)
 
 		if var_0_7 then
 			var_0_7(var_16_0)

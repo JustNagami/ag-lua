@@ -26,7 +26,7 @@ function var_0_0.Enter(arg_4_0, arg_4_1, arg_4_2)
 
 	arg_4_0.listener:Register(ON_FINISH_STORY, var_0_0.OnFinishStory)
 	arg_4_0.listener:Register(IDOL_TRAINEE_TRAIN_HERO_PROPERTY_CALLBACK, var_0_0.OnTrainingStart)
-	arg_4_0.listener:Register(DORM_REFRESH_HERO_DEPLOY_LIST, var_0_0.RefreshCharacterAtPos)
+	arg_4_0.listener:Register(DORM_REGENERATE_HERO, var_0_0.RefreshCharacterAtPos)
 
 	var_0_0.cinemachineBrain = manager.ui.mainCamera:GetComponent("CinemachineBrain")
 	var_0_0.cinemachineBrain.enabled = true

@@ -2452,6 +2452,26 @@
 			6010121
 		}
 	},
+	[6010013] = {
+		not_chapter_id = false,
+		name = "e84ec646dc4673b81eb3edbbf19acb3f",
+		id = 6010013,
+		chapter_paint = "bg_activity_oumofeis",
+		show_tag_type = 0,
+		extra_strory_system = "",
+		jump_system = "",
+		desc = "ed350a5b35adb84529b333e52b4277f1",
+		extra_story_unlock_condition = "",
+		chapter_paint_2 = "bg_sideStory_oumofeis",
+		asset_pend_key = "assetpend_common_branch_n",
+		drop_icon = "",
+		toggle = 5,
+		level = 1,
+		chapter_list = {
+			6010122,
+			6010123
+		}
+	},
 	get_id_list_by_toggle = {
 		[5] = {
 			6010001,
@@ -2464,7 +2484,8 @@
 			6010009,
 			6010010,
 			6010011,
-			6010012
+			6010012,
+			6010013
 		},
 		[504] = {
 			5040000
@@ -2720,6 +2741,7 @@
 		6010009,
 		6010010,
 		6010011,
-		6010012
+		6010012,
+		6010013
 	}
 }

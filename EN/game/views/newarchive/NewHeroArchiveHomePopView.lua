@@ -75,13 +75,13 @@ function var_0_0.RefreshUI(arg_10_0)
 	local var_10_1 = HeroCfg[arg_10_0.heroID_]
 
 	if arg_10_0.heartType_ == 1 then
-		arg_10_0.descText_.text = var_10_0.plot_tip
+		arg_10_0.descText_.text = GetI18NText(var_10_0.plot_tip)
 	elseif arg_10_0.heartType_ == 2 then
-		arg_10_0.descText_.text = var_10_0.super_plot_tip
+		arg_10_0.descText_.text = GetI18NText(var_10_0.super_plot_tip)
 	end
 
 	arg_10_0.roleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_10_0.plot_tip_picture)
-	arg_10_0.roleNameText_.text = var_10_1.suffix
+	arg_10_0.roleNameText_.text = GetI18NText(var_10_1.suffix)
 end
 
 function var_0_0.OnExit(arg_11_0)

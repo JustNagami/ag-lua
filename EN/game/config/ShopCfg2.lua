@@ -8061,7 +8061,7 @@
 		cheap_close_time = {}
 	},
 	[2006481] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -8094,7 +8094,7 @@
 		cheap_close_time = {}
 	},
 	[2006482] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -8132,7 +8132,7 @@
 		cheap_close_time = {}
 	},
 	[2006483] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -8165,7 +8165,7 @@
 		cheap_close_time = {}
 	},
 	[2006484] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -8203,7 +8203,7 @@
 		cheap_close_time = {}
 	},
 	[2006485] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -8236,7 +8236,7 @@
 		cheap_close_time = {}
 	},
 	[2006486] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -8274,7 +8274,7 @@
 		cheap_close_time = {}
 	},
 	[2006487] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -8307,7 +8307,7 @@
 		cheap_close_time = {}
 	},
 	[2006488] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -8345,7 +8345,7 @@
 		cheap_close_time = {}
 	},
 	[2006489] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -8378,7 +8378,7 @@
 		cheap_close_time = {}
 	},
 	[2006490] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -8416,7 +8416,7 @@
 		cheap_close_time = {}
 	},
 	[2006491] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -8449,7 +8449,7 @@
 		cheap_close_time = {}
 	},
 	[2006492] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -21633,7 +21633,7 @@
 		cheap_close_time = {}
 	},
 	[14000032] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 2,
 		give_back = "",
 		give = 1,
@@ -38808,7 +38808,7 @@
 		cheap_close_time = {}
 	},
 	[32000250] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 2,
 		give_back = "",
 		give = 1,
@@ -38841,7 +38841,7 @@
 		cheap_close_time = {}
 	},
 	[32000251] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 2,
 		give_back = "",
 		give = 1,
@@ -38874,7 +38874,7 @@
 		cheap_close_time = {}
 	},
 	[32000252] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 2,
 		give_back = "",
 		give = 1,
@@ -38907,7 +38907,7 @@
 		cheap_close_time = {}
 	},
 	[32000253] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 2,
 		give_back = "",
 		give = 1,
@@ -38940,7 +38940,7 @@
 		cheap_close_time = {}
 	},
 	[32000254] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 2,
 		give_back = "",
 		give = 1,
@@ -38973,7 +38973,7 @@
 		cheap_close_time = {}
 	},
 	[32000255] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 2,
 		give_back = "",
 		give = 1,
@@ -41316,7 +41316,7 @@
 		cheap_close_time = {}
 	},
 	[59000001] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41349,7 +41349,7 @@
 		cheap_close_time = {}
 	},
 	[59000002] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41382,7 +41382,7 @@
 		cheap_close_time = {}
 	},
 	[59000003] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41415,7 +41415,7 @@
 		cheap_close_time = {}
 	},
 	[59000004] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41448,7 +41448,7 @@
 		cheap_close_time = {}
 	},
 	[59000005] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41481,7 +41481,7 @@
 		cheap_close_time = {}
 	},
 	[59000006] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41514,7 +41514,7 @@
 		cheap_close_time = {}
 	},
 	[59000007] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41547,7 +41547,7 @@
 		cheap_close_time = {}
 	},
 	[59000008] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41580,7 +41580,7 @@
 		cheap_close_time = {}
 	},
 	[59000009] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41613,7 +41613,7 @@
 		cheap_close_time = {}
 	},
 	[59000010] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41646,7 +41646,7 @@
 		cheap_close_time = {}
 	},
 	[59000011] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41679,7 +41679,7 @@
 		cheap_close_time = {}
 	},
 	[59000012] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41712,7 +41712,7 @@
 		cheap_close_time = {}
 	},
 	[59000013] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41745,7 +41745,7 @@
 		cheap_close_time = {}
 	},
 	[59000014] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41778,7 +41778,7 @@
 		cheap_close_time = {}
 	},
 	[59000015] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41811,7 +41811,7 @@
 		cheap_close_time = {}
 	},
 	[59000016] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41844,7 +41844,7 @@
 		cheap_close_time = {}
 	},
 	[59000017] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41877,7 +41877,7 @@
 		cheap_close_time = {}
 	},
 	[59000018] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41910,7 +41910,7 @@
 		cheap_close_time = {}
 	},
 	[59000019] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41943,7 +41943,7 @@
 		cheap_close_time = {}
 	},
 	[59000020] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -41976,7 +41976,7 @@
 		cheap_close_time = {}
 	},
 	[59000021] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42009,7 +42009,7 @@
 		cheap_close_time = {}
 	},
 	[59000022] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42042,7 +42042,7 @@
 		cheap_close_time = {}
 	},
 	[59000023] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42075,7 +42075,7 @@
 		cheap_close_time = {}
 	},
 	[59000024] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42108,7 +42108,7 @@
 		cheap_close_time = {}
 	},
 	[59000025] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42141,7 +42141,7 @@
 		cheap_close_time = {}
 	},
 	[59000026] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42174,7 +42174,7 @@
 		cheap_close_time = {}
 	},
 	[59000027] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42207,7 +42207,7 @@
 		cheap_close_time = {}
 	},
 	[59000028] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42240,7 +42240,7 @@
 		cheap_close_time = {}
 	},
 	[59000029] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42273,7 +42273,7 @@
 		cheap_close_time = {}
 	},
 	[59000030] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42306,7 +42306,7 @@
 		cheap_close_time = {}
 	},
 	[59000031] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42339,7 +42339,7 @@
 		cheap_close_time = {}
 	},
 	[59000032] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42372,7 +42372,7 @@
 		cheap_close_time = {}
 	},
 	[59000033] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42405,7 +42405,7 @@
 		cheap_close_time = {}
 	},
 	[59000034] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42438,7 +42438,7 @@
 		cheap_close_time = {}
 	},
 	[59000035] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42471,7 +42471,7 @@
 		cheap_close_time = {}
 	},
 	[59000036] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42504,7 +42504,7 @@
 		cheap_close_time = {}
 	},
 	[59000037] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42537,7 +42537,7 @@
 		cheap_close_time = {}
 	},
 	[59000038] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42570,7 +42570,7 @@
 		cheap_close_time = {}
 	},
 	[59000039] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42603,7 +42603,7 @@
 		cheap_close_time = {}
 	},
 	[59000040] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42636,7 +42636,7 @@
 		cheap_close_time = {}
 	},
 	[59000041] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42669,7 +42669,7 @@
 		cheap_close_time = {}
 	},
 	[59000042] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42702,7 +42702,7 @@
 		cheap_close_time = {}
 	},
 	[59000043] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42735,7 +42735,7 @@
 		cheap_close_time = {}
 	},
 	[59000044] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42768,7 +42768,7 @@
 		cheap_close_time = {}
 	},
 	[59000045] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42801,7 +42801,7 @@
 		cheap_close_time = {}
 	},
 	[59000046] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42834,7 +42834,7 @@
 		cheap_close_time = {}
 	},
 	[59000047] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42867,7 +42867,7 @@
 		cheap_close_time = {}
 	},
 	[59000048] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42900,7 +42900,7 @@
 		cheap_close_time = {}
 	},
 	[59000049] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42933,7 +42933,7 @@
 		cheap_close_time = {}
 	},
 	[59000050] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42966,7 +42966,7 @@
 		cheap_close_time = {}
 	},
 	[59000051] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -42999,7 +42999,7 @@
 		cheap_close_time = {}
 	},
 	[59000052] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -43032,7 +43032,7 @@
 		cheap_close_time = {}
 	},
 	[59000053] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -43065,7 +43065,7 @@
 		cheap_close_time = {}
 	},
 	[59000054] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -43098,7 +43098,7 @@
 		cheap_close_time = {}
 	},
 	[59000055] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -43131,7 +43131,7 @@
 		cheap_close_time = {}
 	},
 	[59000056] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -43164,7 +43164,7 @@
 		cheap_close_time = {}
 	},
 	[59000057] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -43197,7 +43197,7 @@
 		cheap_close_time = {}
 	},
 	[59000058] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -43230,7 +43230,7 @@
 		cheap_close_time = {}
 	},
 	[59000059] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -43263,7 +43263,7 @@
 		cheap_close_time = {}
 	},
 	[59000060] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -43296,7 +43296,7 @@
 		cheap_close_time = {}
 	},
 	[59000061] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,
@@ -43329,7 +43329,7 @@
 		cheap_close_time = {}
 	},
 	[59000062] = {
-		taken_down = 1,
+		taken_down = 0,
 		shop_refresh = 1,
 		give_back = "",
 		give = 1,

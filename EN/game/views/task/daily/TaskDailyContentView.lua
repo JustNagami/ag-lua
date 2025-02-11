@@ -42,9 +42,7 @@ function var_0_0.ProcessTaskIDList(arg_5_0)
 		local var_5_0 = {}
 
 		for iter_5_0, iter_5_1 in ipairs(arg_5_0._taskIDList) do
-			if iter_5_1.id ~= 6014 then
-				var_5_0[#var_5_0 + 1] = iter_5_1
-			end
+			var_5_0[#var_5_0 + 1] = iter_5_1
 		end
 
 		arg_5_0._taskIDList = var_5_0

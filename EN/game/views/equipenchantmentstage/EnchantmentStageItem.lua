@@ -36,7 +36,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 	arg_5_0.bg2_.sprite = getSprite("Atlas/EnchantmentStageAtlas", var_0_2[arg_5_2])
 	arg_5_0.bg3_.sprite = getSprite("Atlas/EnchantmentStageAtlas", var_0_2[arg_5_2])
 	arg_5_0.bossImg_.sprite = getSpriteWithoutAtlas("TextureConfig/EnchantmentStage/" .. BattleEnchantmentStageCfg[arg_5_1].hd_image)
-	arg_5_0.rareTagImg_.sprite = getSprite("Atlas/BattleStage", var_0_1[arg_5_2] .. SettingData:GetCurrentLanguageKey())
+	arg_5_0.rareTagImg_.sprite = getSpriteWithoutAtlas("I18NImage/BattleStage/" .. var_0_1[arg_5_2])
 	arg_5_0.buff_ = getHeroAffixs(BattleEnchantmentStageCfg[arg_5_1].affix_type)
 
 	if arg_5_0.buff_ and arg_5_0.buff_ ~= "" and arg_5_0.buff_[1] then

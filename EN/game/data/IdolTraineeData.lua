@@ -363,122 +363,138 @@ function var_0_1.GetQuestRankInfo(arg_31_0)
 	return var_0_12
 end
 
-function var_0_1.GetHeroPosList(arg_32_0)
-	local var_32_0 = {}
-	local var_32_1 = DormData:GetHeroInfoList()
+local function var_0_16(arg_32_0, arg_32_1)
+	if BackHomeHeroCfg[arg_32_0].idol_usable == 1 then
+		return arg_32_0
+	end
 
-	for iter_32_0, iter_32_1 in pairs(var_32_1) do
-		if iter_32_1.dancePos then
-			var_32_0[iter_32_1.dancePos] = iter_32_1:GetHeroId()
+	local var_32_0 = DormHeroTools:GetAllCanUseHeroIDInDorm(arg_32_1)
+
+	if var_32_0 then
+		for iter_32_0, iter_32_1 in ipairs(var_32_0) do
+			if nullable(BackHomeHeroCfg, iter_32_1, "idol_usable") == 1 then
+				return iter_32_1
+			end
+		end
+	end
+end
+
+function var_0_1.GetHeroPosList(arg_33_0)
+	local var_33_0 = {}
+	local var_33_1 = DormData:GetHeroInfoList()
+
+	for iter_33_0, iter_33_1 in pairs(var_33_1) do
+		if iter_33_1.dancePos then
+			var_33_0[iter_33_1.dancePos] = var_0_16(iter_33_1:GetHeroId(), iter_33_0)
 		end
 	end
 
-	return var_32_0
+	return var_33_0
 end
 
-function var_0_1.InitHistoryBattleData(arg_33_0, arg_33_1)
-	var_0_13 = arg_33_1
+function var_0_1.InitHistoryBattleData(arg_34_0, arg_34_1)
+	var_0_13 = arg_34_1
 end
 
-function var_0_1.GetHistoryBattleData(arg_34_0)
+function var_0_1.GetHistoryBattleData(arg_35_0)
 	return var_0_13
 end
 
-function var_0_1.InitDanceDIY(arg_35_0, arg_35_1)
-	local var_35_0 = arg_35_1.sequence_list
+function var_0_1.InitDanceDIY(arg_36_0, arg_36_1)
+	local var_36_0 = arg_36_1.sequence_list
 
-	arg_35_0.danceDIY = {}
+	arg_36_0.danceDIY = {}
 
-	for iter_35_0, iter_35_1 in ipairs(var_35_0) do
-		arg_35_0.danceDIY[iter_35_1.pos] = var_0_1.ParseDanceDIYSequence(iter_35_1.base_sequence)
+	for iter_36_0, iter_36_1 in ipairs(var_36_0) do
+		arg_36_0.danceDIY[iter_36_1.pos] = var_0_1.ParseDanceDIYSequence(iter_36_1.base_sequence)
 	end
 
-	local var_35_1 = arg_35_1.shared_sequence_list
+	local var_36_1 = arg_36_1.shared_sequence_list
 
-	if var_35_1 then
-		arg_35_0.mySharedDIY = {}
+	if var_36_1 then
+		arg_36_0.mySharedDIY = {}
 
-		for iter_35_2, iter_35_3 in ipairs(var_35_1) do
-			arg_35_0.mySharedDIY[iter_35_3.uid] = arg_35_0:ParseSharedDIYInfo(iter_35_3)
+		for iter_36_2, iter_36_3 in ipairs(var_36_1) do
+			arg_36_0.mySharedDIY[iter_36_3.uid] = arg_36_0:ParseSharedDIYInfo(iter_36_3)
 		end
 	end
 end
 
-function var_0_1.ParseDanceDIYSequence(arg_36_0, arg_36_1)
-	local var_36_0 = {}
+function var_0_1.ParseDanceDIYSequence(arg_37_0, arg_37_1)
+	local var_37_0 = {}
 
-	if arg_36_0.action_id_list then
-		for iter_36_0, iter_36_1 in ipairs(arg_36_0.action_id_list) do
-			table.insert(var_36_0, iter_36_1)
+	if arg_37_0.action_id_list then
+		for iter_37_0, iter_37_1 in ipairs(arg_37_0.action_id_list) do
+			table.insert(var_37_0, iter_37_1)
 		end
 	end
 
-	arg_36_1 = arg_36_1 or {}
-	arg_36_1.actionList = var_36_0
-	arg_36_1.scene = arg_36_0.scene_id
-	arg_36_1.music = arg_36_0.music_id
+	arg_37_1 = arg_37_1 or {}
+	arg_37_1.actionList = var_37_0
+	arg_37_1.scene = arg_37_0.scene_id
+	arg_37_1.music = arg_37_0.music_id
 
-	return arg_36_1
+	return arg_37_1
 end
 
-function var_0_1.UpdateDIYStatistics(arg_37_0, arg_37_1)
-	arg_37_0.liked = arg_37_1.be_liked_num
-	arg_37_0.collcted = arg_37_1.be_collected_num
-	arg_37_0.viewCount = arg_37_1.be_viewed_num
+function var_0_1.UpdateDIYStatistics(arg_38_0, arg_38_1)
+	arg_38_0.liked = arg_38_1.be_liked_num
+	arg_38_0.collcted = arg_38_1.be_collected_num
+	arg_38_0.viewCount = arg_38_1.be_viewed_num
 end
 
-function var_0_1.ParseSharedDIYInfo(arg_38_0, arg_38_1)
-	local var_38_0 = var_0_1.ParseDanceDIYSequence(arg_38_1.base_sequence)
-	local var_38_1 = arg_38_1.statistics
+function var_0_1.ParseSharedDIYInfo(arg_39_0, arg_39_1)
+	local var_39_0 = var_0_1.ParseDanceDIYSequence(arg_39_1.base_sequence)
+	local var_39_1 = arg_39_1.statistics
 
-	var_0_1.UpdateDIYStatistics(var_38_0, var_38_1)
+	var_0_1.UpdateDIYStatistics(var_39_0, var_39_1)
 
-	var_38_0.uid = arg_38_1.uid
+	var_39_0.uid = arg_39_1.uid
 
 	manager.notify:CallUpdateFunc("OnUpdateMySharedDanceDIYStatistics")
 
-	return var_38_0
+	return var_39_0
 end
 
-function var_0_1.UpdateMySharedDanceDIYStatistics(arg_39_0, arg_39_1, arg_39_2)
-	local var_39_0 = nullable(arg_39_0.mySharedDIY, arg_39_1)
+function var_0_1.UpdateMySharedDanceDIYStatistics(arg_40_0, arg_40_1, arg_40_2)
+	local var_40_0 = nullable(arg_40_0.mySharedDIY, arg_40_1)
 
-	if var_39_0 then
-		var_0_1.UpdateDIYStatistics(var_39_0, arg_39_2)
+	if var_40_0 then
+		var_0_1.UpdateDIYStatistics(var_40_0, arg_40_2)
 		manager.notify:CallUpdateFunc("OnUpdateMySharedDanceDIYStatistics")
 	end
 end
 
-function var_0_1.NewDanceDIYSequence(arg_40_0)
+function var_0_1.NewDanceDIYSequence(arg_41_0)
 	return {
 		actionList = {}
 	}
 end
 
-function var_0_1.GetDanceDIYSequence(arg_41_0, arg_41_1)
-	return nullable(arg_41_0.danceDIY, arg_41_1)
+function var_0_1.GetDanceDIYSequence(arg_42_0, arg_42_1)
+	return nullable(arg_42_0.danceDIY, arg_42_1)
 end
 
-function var_0_1.GetSharedDanceDIYSequence(arg_42_0, arg_42_1)
-	return nullable(arg_42_0.mySharedDIY, arg_42_1)
+function var_0_1.GetSharedDanceDIYSequence(arg_43_0, arg_43_1)
+	return nullable(arg_43_0.mySharedDIY, arg_43_1)
 end
 
-function var_0_1.SetDanceDIYSequence(arg_43_0, arg_43_1, arg_43_2)
-	arg_43_0.danceDIY[arg_43_1] = arg_43_2
+function var_0_1.SetDanceDIYSequence(arg_44_0, arg_44_1, arg_44_2)
+	arg_44_0.danceDIY[arg_44_1] = arg_44_2
 
-	manager.notify:CallUpdateFunc("OnDanceDIYUpdate", arg_43_1, arg_43_2)
+	manager.notify:CallUpdateFunc("OnDanceDIYUpdate", arg_44_1, arg_44_2)
 end
 
-function var_0_1.SetSharedDanceDIYSequence(arg_44_0, arg_44_1, arg_44_2)
-	arg_44_0.mySharedDIY[arg_44_1] = arg_44_2
+function var_0_1.SetSharedDanceDIYSequence(arg_45_0, arg_45_1, arg_45_2)
+	arg_45_0.mySharedDIY[arg_45_1] = arg_45_2
 
-	manager.notify:CallUpdateFunc("OnSharedDanceDIYUpdate", arg_44_1, arg_44_2)
+	manager.notify:CallUpdateFunc("OnSharedDanceDIYUpdate", arg_45_1, arg_45_2)
 end
 
-function var_0_1.GetDanceDIYAvailableSlotIdx(arg_45_0)
-	for iter_45_0 = 1, var_0_1.DanceDIYSlotLimit() do
-		if arg_45_0.danceDIY[iter_45_0] == nil then
-			return iter_45_0
+function var_0_1.GetDanceDIYAvailableSlotIdx(arg_46_0)
+	for iter_46_0 = 1, var_0_1.DanceDIYSlotLimit() do
+		if arg_46_0.danceDIY[iter_46_0] == nil then
+			return iter_46_0
 		end
 	end
 end
@@ -491,34 +507,34 @@ function var_0_1.ShareDanceDIYLimit()
 	return nullable(GameSetting, "idol_dance_edit_share_max_num", "value", 1) or 5
 end
 
-function var_0_1.DanceDIYActionAvailable(arg_48_0, arg_48_1)
-	local var_48_0 = IdolDanceDIYActionCfg[arg_48_1]
+function var_0_1.DanceDIYActionAvailable(arg_49_0, arg_49_1)
+	local var_49_0 = IdolDanceDIYActionCfg[arg_49_1]
 
-	if var_48_0 then
-		if var_48_0.unlock_condition == 0 then
+	if var_49_0 then
+		if var_49_0.unlock_condition == 0 then
 			return true
 		end
 
-		local var_48_1 = HistoryData:GetHistoryData(var_48_0.unlock_condition)
+		local var_49_1 = HistoryData:GetHistoryData(var_49_0.unlock_condition)
 
-		if var_48_1 then
-			return var_48_1 >= var_48_0.need
+		if var_49_1 then
+			return var_49_1 >= var_49_0.need
 		else
 			return false
 		end
 	end
 end
 
-function var_0_1.SetLastJumpContext(arg_49_0, arg_49_1)
-	var_0_14 = arg_49_1
+function var_0_1.SetLastJumpContext(arg_50_0, arg_50_1)
+	var_0_14 = arg_50_1
 end
 
-function var_0_1.AcquireLastJumpContext(arg_50_0)
-	local var_50_0 = var_0_14
+function var_0_1.AcquireLastJumpContext(arg_51_0)
+	local var_51_0 = var_0_14
 
 	var_0_14 = nil
 
-	return var_50_0
+	return var_51_0
 end
 
 return var_0_1

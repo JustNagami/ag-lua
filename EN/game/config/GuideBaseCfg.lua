@@ -833,6 +833,46 @@
 		ignore_group_condition = {},
 		leaps = {}
 	},
+	[37] = {
+		narrator_name = "b58db3b3d8e03c4e94a6d15af0dc074c",
+		group = 0,
+		not_skip_guide = 0,
+		id = 37,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			3701,
+			3702,
+			3703,
+			3704
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"equipCultureView"
+				}
+			},
+			{
+				"equip",
+				"equipLevel",
+				30
+			},
+			{
+				"equip",
+				"page",
+				4
+			}
+		},
+		skip_condition = {
+			{
+				"playerLevel",
+				50
+			}
+		},
+		ignore_group_condition = {},
+		leaps = {}
+	},
 	[38] = {
 		narrator_name = "07117ee1052de85e1fc91487b4d048d1",
 		group = 0,
@@ -2268,6 +2308,45 @@
 		ignore_group_condition = {},
 		leaps = {}
 	},
+	[99] = {
+		narrator_name = "4c3085da2b1706bcd0f21132c5d45d24",
+		group = 0,
+		not_skip_guide = 0,
+		id = 99,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			9901,
+			9902,
+			9903
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"equipCultureView"
+				}
+			},
+			{
+				"equip",
+				"cultureEquipStar",
+				4
+			},
+			{
+				"equip",
+				"equipLevel",
+				30
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {
+			{
+				"enchantChangeView",
+				3
+			}
+		}
+	},
 	[100] = {
 		narrator_name = "5e697389a048cfa69a7ecfa909736bfe",
 		group = 0,
@@ -2397,6 +2476,7 @@
 			3501,
 			36,
 			3601,
+			37,
 			38,
 			40,
 			41,
@@ -2440,6 +2520,7 @@
 			83,
 			84,
 			85,
+			99,
 			100,
 			102,
 			103,
@@ -2487,6 +2568,7 @@
 		3501,
 		36,
 		3601,
+		37,
 		38,
 		40,
 		41,
@@ -2531,6 +2613,7 @@
 		83,
 		84,
 		85,
+		99,
 		100,
 		102,
 		103,

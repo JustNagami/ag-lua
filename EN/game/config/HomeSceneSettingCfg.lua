@@ -242,6 +242,25 @@
 		scene_setting = {},
 		obtain_way = {}
 	},
+	[6012] = {
+		action_suffix = "",
+		title = "dc2673f46a0436cef901fd4b3b1780a3",
+		desc = "15b9b1e1c5d5bc802f6419c808085cb2",
+		obtain_word = "",
+		scene_trial = 0,
+		limit_display = 0,
+		prefix_dlc = "",
+		light_effect = "",
+		unlock_description = "",
+		prefix = "X310",
+		light_effect_delay = "",
+		id = 6012,
+		default_music = 0,
+		impact = {},
+		scene_tag = {},
+		scene_setting = {},
+		obtain_way = {}
+	},
 	[6013] = {
 		action_suffix = "",
 		title = "c174d82847bb6a8f6918bb225d8f1577",
@@ -255,6 +274,25 @@
 		prefix = "X311",
 		light_effect_delay = "",
 		id = 6013,
+		default_music = 0,
+		impact = {},
+		scene_tag = {},
+		scene_setting = {},
+		obtain_way = {}
+	},
+	[6014] = {
+		action_suffix = "",
+		title = "f7733649828f93f5bf6c85552ac391ee",
+		desc = "21a8af2a809e04f40e91a31ff40328c6",
+		obtain_word = "",
+		scene_trial = 0,
+		limit_display = 0,
+		prefix_dlc = "",
+		light_effect = "",
+		unlock_description = "",
+		prefix = "X309",
+		light_effect_delay = "",
+		id = 6014,
 		default_music = 0,
 		impact = {},
 		scene_tag = {},
@@ -294,7 +332,9 @@
 		6009,
 		6010,
 		6011,
+		6012,
 		6013,
+		6014,
 		6100
 	}
 }

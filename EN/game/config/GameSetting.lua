@@ -157,8 +157,13 @@
 		value = {
 			1,
 			10,
+			15,
 			20,
+			25,
 			30,
+			35,
+			40,
+			50,
 			60
 		}
 	},
@@ -3524,8 +3529,8 @@
 		id = "enternal_music_describe",
 		value2 = "",
 		value = {
-			"TextureConfig/VersionUI/XuHeng1stUI/music_01",
-			"TextureConfig/VersionUI/XuHeng1stUI/music_02"
+			"I18NImage/TextureConfig/VersionUI/XuHeng1stUI/music_01",
+			"I18NImage/TextureConfig/VersionUI/XuHeng1stUI/music_02"
 		}
 	},
 	attach_music_longnote = {
@@ -3834,8 +3839,8 @@
 		id = "activity_firework_describe",
 		value2 = "",
 		value = {
-			"TextureConfig/EmptyDream/firework_courses_01",
-			"TextureConfig/EmptyDream/firework_courses_02"
+			"I18NImage/TextureConfig/EmptyDream/firework_courses_01",
+			"I18NImage/TextureConfig/EmptyDream/firework_courses_02"
 		}
 	},
 	time_remaining_show = {
@@ -4935,15 +4940,15 @@
 		id = "activity_club_sp_describe",
 		value2 = "",
 		value = {
-			"TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_01",
-			"TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_02",
-			"TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_03",
-			"TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_04",
-			"TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_05",
-			"TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_06",
-			"TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_07",
-			"TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_08",
-			"TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_09"
+			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_01",
+			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_02",
+			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_03",
+			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_04",
+			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_05",
+			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_06",
+			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_07",
+			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_08",
+			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_09"
 		}
 	},
 	solo_heart_demon_basescore = {
@@ -7548,22 +7553,38 @@
 	quick_battle_chapter = {
 		id = "quick_battle_chapter",
 		value2 = "",
-		value = {}
+		value = {
+			2011,
+			2012,
+			2013,
+			2014,
+			2015,
+			2016,
+			202,
+			203,
+			204
+		}
 	},
 	quick_battle_unique_chapter = {
 		id = "quick_battle_unique_chapter",
 		value2 = "",
-		value = {}
+		value = {
+			203
+		}
 	},
 	quick_battle_type = {
 		id = "quick_battle_type",
 		value2 = "",
-		value = {}
+		value = {
+			61
+		}
 	},
 	quick_battle_mode = {
 		id = "quick_battle_mode",
 		value2 = "",
-		value = {}
+		value = {
+			1
+		}
 	},
 	activity_sign_3_6_participate_level_limit = {
 		id = "activity_sign_3_6_participate_level_limit",

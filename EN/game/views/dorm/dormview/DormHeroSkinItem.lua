@@ -24,7 +24,7 @@ function var_0_0.AddUIListener(arg_3_0)
 				arg_3_0.clickFunc(arg_3_0.skinID)
 			end
 		else
-			ShowTips(string.format(GetTips("DORM_HERO_SKIN_NULL"), SkinCfg[arg_3_0.skinID].name))
+			ShowTips(string.format(GetTips("DORM_HERO_SKIN_NULL"), GetI18NText(SkinCfg[arg_3_0.skinID].name)))
 		end
 	end)
 end

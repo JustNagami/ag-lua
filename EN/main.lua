@@ -50,9 +50,15 @@ function DeploySetting(arg_5_0)
 		Screen.SetResolution(var_5_5, var_5_6, true)
 	end
 
-	manager.ui.cameraExtension.hdr = true
+	local var_5_7 = manager.ui.cameraExtension
 
-	PlayerPrefs.SetInt("allowHDR", 1)
+	if SDKTools.GetIsEnglish() then
+		var_5_7.hdr = arg_5_0.pic.hdr == 1
+	else
+		var_5_7.hdr = true
+
+		PlayerPrefs.SetInt("allowHDR", 1)
+	end
 
 	if PlayerPrefs.GetInt("allowMSAA") == 0 then
 		UnityEngine.Pipelines.SimPipeline.SimPipelineSettings.AliasingEnable = false
@@ -60,9 +66,9 @@ function DeploySetting(arg_5_0)
 		UnityEngine.Pipelines.SimPipeline.SimPipelineSettings.AliasingEnable = true
 	end
 
-	local var_5_7 = nullable(SettingConst.TARGET_FRAME_RATE, arg_5_0.pic.frame) or 60
+	local var_5_8 = nullable(SettingConst.TARGET_FRAME_RATE, arg_5_0.pic.frame) or 60
 
-	Application.targetFrameRate = var_5_7
+	Application.targetFrameRate = var_5_8
 
 	if GameToSDK.PLATFORM_ID == 3 then
 		manager.IngameGraphic:ChangeVerticalSync(arg_5_0.pic.vertical_sync)

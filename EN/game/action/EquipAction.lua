@@ -457,25 +457,22 @@ function var_0_0.SetAutoDecomposeState(arg_37_0, arg_37_1, arg_37_2)
 	end)
 end
 
-function var_0_0.DirectionalEnchant(arg_39_0, arg_39_1, arg_39_2)
+function var_0_0.DirectionalEnchant(arg_39_0, arg_39_1, arg_39_2, arg_39_3)
 	manager.net:SendWithLoadingNew(13060, {
 		equip_id = arg_39_0,
 		enchant_slot_id = arg_39_1,
-		effect_list = arg_39_2
+		seq = arg_39_2,
+		id = arg_39_3
 	}, 13061, function(arg_40_0)
 		if isSuccess(arg_40_0.result) then
 			local var_40_0 = EquipData:GetEquipData(arg_39_0):GetLevel()
-			local var_40_1 = {}
+			local var_40_1 = {
+				num = 1,
+				id = arg_39_3,
+				equipLevel = var_40_0
+			}
 
-			for iter_40_0, iter_40_1 in ipairs(arg_39_2) do
-				var_40_1[iter_40_0] = {
-					id = iter_40_1.id,
-					num = iter_40_1.level,
-					equipLevel = var_40_0
-				}
-			end
-
-			EquipData:DirectionalEnchant(arg_39_0, arg_39_1, var_40_1)
+			EquipData:DirectionalEnchant(arg_39_0, arg_39_1, arg_39_2, var_40_1)
 			manager.notify:Invoke(DIRECTIONAL_ENCHANT_SUCCESS)
 		else
 			ShowTips(arg_40_0.result)

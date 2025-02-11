@@ -63,7 +63,6 @@ function var_0_0.AddUIListener(arg_6_0)
 	arg_6_0:AddBtnListener(arg_6_0.randomHeroBtn_, nil, function()
 		JumpTools.GoToSystem("/randomHero", {})
 	end)
-	SetActive(arg_6_0.randomHeroBtn_.gameObject, false)
 end
 
 function var_0_0.OnChangePosterGirl(arg_12_0, arg_12_1, arg_12_2)

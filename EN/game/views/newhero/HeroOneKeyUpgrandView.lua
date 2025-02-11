@@ -806,7 +806,7 @@ function var_0_0.CheckUpgrandCondition(arg_30_0)
 				var_30_6 = 1
 			end
 
-			arg_30_0.lockText_.text = string.format(GetTips("NEED_MORE_EXP_ITEM"), var_30_4, ItemCfg[var_30_5].name, var_30_6)
+			arg_30_0.lockText_.text = string.format(GetTips("NEED_MORE_EXP_ITEM"), var_30_4, GetI18NText(ItemCfg[var_30_5].name), var_30_6)
 
 			return true
 		end

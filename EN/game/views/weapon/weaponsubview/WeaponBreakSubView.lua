@@ -142,54 +142,60 @@ function var_0_0.AddUIListener(arg_12_0)
 	arg_12_0:AddBtnListener(arg_12_0.breakUpBtn_, nil, function()
 		arg_12_0:OnBreakBtnClick()
 	end)
+	arg_12_0:AddBtnListener(arg_12_0.quickLvUpBtn_, nil, function()
+		JumpTools.OpenPageByJump("weaponQuickLevelUp", {
+			heroID = arg_12_0.context.heroId,
+			weaponInfo = arg_12_0.context.weaponInfo
+		})
+	end)
 end
 
-function var_0_0.RenderCost(arg_14_0)
-	local var_14_0 = arg_14_0.context.weaponInfo.breakthrough
-	local var_14_1, var_14_2 = WeaponTools.BreakMaterial(var_14_0)
-	local var_14_3 = ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_GOLD)
+function var_0_0.RenderCost(arg_15_0)
+	local var_15_0 = arg_15_0.context.weaponInfo.breakthrough
+	local var_15_1, var_15_2 = WeaponTools.BreakMaterial(var_15_0)
+	local var_15_3 = ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_GOLD)
 
-	arg_14_0.tokenTxt_.text = setTextColor(arg_14_0.constVar.yellow, arg_14_0.constVar.red, var_14_1, var_14_3)
+	arg_15_0.tokenTxt_.text = setTextColor(arg_15_0.constVar.yellow, arg_15_0.constVar.red, var_15_1, var_15_3)
 end
 
-function var_0_0.OnGoldChange(arg_15_0)
-	arg_15_0:RefreshMaterialList()
-	arg_15_0.scrollHelper_:StartScroll(arg_15_0.context.itemCount)
-	arg_15_0:RenderView()
+function var_0_0.OnGoldChange(arg_16_0)
+	arg_16_0:RefreshMaterialList()
+	arg_16_0.scrollHelper_:StartScroll(arg_16_0.context.itemCount)
+	arg_16_0:RenderView()
 end
 
-function var_0_0.OnBreakBtnClick(arg_16_0)
-	if WeaponAction.CheckBreak(arg_16_0.context.heroId, true) then
-		WeaponAction.WeaponBreak(arg_16_0.context.heroId)
+function var_0_0.OnBreakBtnClick(arg_17_0)
+	if WeaponAction.CheckBreak(arg_17_0.context.heroId, true) then
+		WeaponAction.WeaponBreak(arg_17_0.context.heroId)
 	end
 end
 
-function var_0_0.UpdateWeaponInfo(arg_17_0)
-	local var_17_0 = arg_17_0.context.heroId
+function var_0_0.UpdateWeaponInfo(arg_18_0)
+	local var_18_0 = arg_18_0.context.heroId
 
-	if var_17_0 and var_17_0 ~= 0 then
-		local var_17_1 = deepClone(arg_17_0.context.dataPorxy:GetHeroWeaponInfo(var_17_0))
+	if var_18_0 and var_18_0 ~= 0 then
+		local var_18_1 = deepClone(arg_18_0.context.dataPorxy:GetHeroWeaponInfo(var_18_0))
 
-		arg_17_0.context.weaponInfo = var_17_1
+		arg_18_0.context.weaponInfo = var_18_1
 	end
 end
 
-function var_0_0.SetPageStatus(arg_18_0, arg_18_1)
-	arg_18_0.pageIsInOpen = arg_18_1
+function var_0_0.SetPageStatus(arg_19_0, arg_19_1)
+	arg_19_0.pageIsInOpen = arg_19_1
 end
 
-function var_0_0.GetPageOpenStatus(arg_19_0)
-	return arg_19_0.pageIsInOpen
+function var_0_0.GetPageOpenStatus(arg_20_0)
+	return arg_20_0.pageIsInOpen
 end
 
-function var_0_0.OnExit(arg_20_0)
-	arg_20_0:SetPageStatus(false)
+function var_0_0.OnExit(arg_21_0)
+	arg_21_0:SetPageStatus(false)
 end
 
-function var_0_0.Dispose(arg_21_0)
-	arg_21_0.scrollHelper_:Dispose()
-	arg_21_0:RemoveAllListeners()
-	var_0_0.super.Dispose(arg_21_0)
+function var_0_0.Dispose(arg_22_0)
+	arg_22_0.scrollHelper_:Dispose()
+	arg_22_0:RemoveAllListeners()
+	var_0_0.super.Dispose(arg_22_0)
 end
 
 return var_0_0

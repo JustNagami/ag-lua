@@ -44,8 +44,6 @@ function var_0_0.AddBtnListeners(arg_2_0)
 end
 
 function var_0_0.Show(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
-	SetActive(arg_8_0.cooperationBtn_.gameObject, false)
-
 	if arg_8_2 ~= arg_8_0.curHeroID_ then
 		local var_8_0 = HeroCfg[arg_8_2]
 
@@ -100,7 +98,7 @@ function var_0_0.RefreshRecommend(arg_9_0, arg_9_1)
 	local var_9_0 = HeroCfg[arg_9_0.curHeroID_].recommend_team
 
 	if var_9_0 and #var_9_0 > 0 and arg_9_1 then
-		SetActive(arg_9_0.recommendBtn_.gameObject, false)
+		SetActive(arg_9_0.recommendBtn_.gameObject, true)
 
 		for iter_9_0 = 1, #var_9_0 do
 			if not arg_9_0.items[iter_9_0] then
@@ -124,7 +122,6 @@ function var_0_0.UpdateView(arg_10_0, arg_10_1, arg_10_2, arg_10_3)
 	var_0_0.super.UpdateView(arg_10_0, arg_10_1, arg_10_2)
 	arg_10_0.relationNetController_:SetSelectedState("lock")
 	arg_10_0:RefreshRecommend(arg_10_3)
-	SetActive(arg_10_0.cooperationBtn_.gameObject, false)
 end
 
 function var_0_0.RefreshChargeType(arg_11_0)

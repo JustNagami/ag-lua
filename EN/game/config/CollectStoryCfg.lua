@@ -6138,6 +6138,104 @@
 		picture = "bg_activity_xiaokun",
 		order = 21
 	},
+	[104130101] = {
+		activity = 281201,
+		type = 2,
+		id = 104130101,
+		picture = "bg_activity_sailenie",
+		order = 1
+	},
+	[104130102] = {
+		activity = 281201,
+		type = 2,
+		id = 104130102,
+		picture = "bg_activity_sailenie",
+		order = 2
+	},
+	[104130201] = {
+		activity = 281201,
+		type = 2,
+		id = 104130201,
+		picture = "bg_activity_sailenie",
+		order = 3
+	},
+	[104130202] = {
+		activity = 281201,
+		type = 2,
+		id = 104130202,
+		picture = "bg_activity_sailenie",
+		order = 4
+	},
+	[104130301] = {
+		activity = 281201,
+		type = 2,
+		id = 104130301,
+		picture = "bg_activity_sailenie",
+		order = 5
+	},
+	[104130401] = {
+		activity = 281201,
+		type = 2,
+		id = 104130401,
+		picture = "bg_activity_sailenie",
+		order = 6
+	},
+	[104130402] = {
+		activity = 281201,
+		type = 2,
+		id = 104130402,
+		picture = "bg_activity_sailenie",
+		order = 7
+	},
+	[104130501] = {
+		activity = 281201,
+		type = 2,
+		id = 104130501,
+		picture = "bg_activity_sailenie",
+		order = 8
+	},
+	[104130601] = {
+		activity = 281201,
+		type = 2,
+		id = 104130601,
+		picture = "bg_activity_sailenie",
+		order = 9
+	},
+	[104130602] = {
+		activity = 281201,
+		type = 2,
+		id = 104130602,
+		picture = "bg_activity_sailenie",
+		order = 10
+	},
+	[104130701] = {
+		activity = 281201,
+		type = 2,
+		id = 104130701,
+		picture = "bg_activity_sailenie",
+		order = 11
+	},
+	[104130702] = {
+		activity = 281201,
+		type = 2,
+		id = 104130702,
+		picture = "bg_activity_sailenie",
+		order = 12
+	},
+	[104130801] = {
+		activity = 281201,
+		type = 2,
+		id = 104130801,
+		picture = "bg_activity_sailenie",
+		order = 13
+	},
+	[104130802] = {
+		activity = 281201,
+		type = 2,
+		id = 104130802,
+		picture = "bg_activity_sailenie",
+		order = 14
+	},
 	[104140901] = {
 		activity = 283011,
 		type = 2,
@@ -6515,6 +6613,111 @@
 		id = 104145201,
 		picture = "bg_activity_summer",
 		order = 63
+	},
+	[104130901] = {
+		activity = 281201,
+		type = 2,
+		id = 104130901,
+		picture = "bg_activity_sailenie",
+		order = 15
+	},
+	[104131001] = {
+		activity = 281201,
+		type = 2,
+		id = 104131001,
+		picture = "bg_activity_sailenie",
+		order = 16
+	},
+	[104131002] = {
+		activity = 281201,
+		type = 2,
+		id = 104131002,
+		picture = "bg_activity_sailenie",
+		order = 17
+	},
+	[104131101] = {
+		activity = 281201,
+		type = 2,
+		id = 104131101,
+		picture = "bg_activity_sailenie",
+		order = 18
+	},
+	[104131102] = {
+		activity = 281201,
+		type = 2,
+		id = 104131102,
+		picture = "bg_activity_sailenie",
+		order = 19
+	},
+	[104131201] = {
+		activity = 281201,
+		type = 2,
+		id = 104131201,
+		picture = "bg_activity_sailenie",
+		order = 20
+	},
+	[104131202] = {
+		activity = 281201,
+		type = 2,
+		id = 104131202,
+		picture = "bg_activity_sailenie",
+		order = 21
+	},
+	[104131301] = {
+		activity = 281201,
+		type = 2,
+		id = 104131301,
+		picture = "bg_activity_sailenie",
+		order = 22
+	},
+	[104131302] = {
+		activity = 281201,
+		type = 2,
+		id = 104131302,
+		picture = "bg_activity_sailenie",
+		order = 23
+	},
+	[104131401] = {
+		activity = 281201,
+		type = 2,
+		id = 104131401,
+		picture = "bg_activity_sailenie",
+		order = 24
+	},
+	[104131501] = {
+		activity = 281201,
+		type = 2,
+		id = 104131501,
+		picture = "bg_activity_sailenie",
+		order = 25
+	},
+	[104131502] = {
+		activity = 281201,
+		type = 2,
+		id = 104131502,
+		picture = "bg_activity_sailenie",
+		order = 26
+	},
+	[104131601] = {
+		activity = 281201,
+		type = 2,
+		id = 104131601,
+		picture = "bg_activity_sailenie",
+		order = 27
+	},
+	[104131701] = {
+		activity = 281201,
+		type = 2,
+		id = 104131701,
+		picture = "bg_activity_sailenie",
+		order = 28
+	},
+	[104131801] = {
+		activity = 281201,
+		type = 2,
+		id = 104131801,
+		picture = "bg_activity_sailenie",
+		order = 29
 	},
 	[103200101] = {
 		activity = 0,
@@ -7155,6 +7358,20 @@
 			104121201,
 			104121202,
 			104121301,
+			104130101,
+			104130102,
+			104130201,
+			104130202,
+			104130301,
+			104130401,
+			104130402,
+			104130501,
+			104130601,
+			104130602,
+			104130701,
+			104130702,
+			104130801,
+			104130802,
 			104140901,
 			104141001,
 			104141101,
@@ -7208,7 +7425,22 @@
 			104144901,
 			104145001,
 			104145101,
-			104145201
+			104145201,
+			104130901,
+			104131001,
+			104131002,
+			104131101,
+			104131102,
+			104131201,
+			104131202,
+			104131301,
+			104131302,
+			104131401,
+			104131501,
+			104131502,
+			104131601,
+			104131701,
+			104131801
 		},
 		{
 			101000101,
@@ -7848,6 +8080,37 @@
 		}
 	},
 	get_id_list_by_activity = {
+		[281201] = {
+			104130101,
+			104130102,
+			104130201,
+			104130202,
+			104130301,
+			104130401,
+			104130402,
+			104130501,
+			104130601,
+			104130602,
+			104130701,
+			104130702,
+			104130801,
+			104130802,
+			104130901,
+			104131001,
+			104131002,
+			104131101,
+			104131102,
+			104131201,
+			104131202,
+			104131301,
+			104131302,
+			104131401,
+			104131501,
+			104131502,
+			104131601,
+			104131701,
+			104131801
+		},
 		[271201] = {
 			104120101,
 			104120102,
@@ -9741,6 +10004,20 @@
 		104121201,
 		104121202,
 		104121301,
+		104130101,
+		104130102,
+		104130201,
+		104130202,
+		104130301,
+		104130401,
+		104130402,
+		104130501,
+		104130601,
+		104130602,
+		104130701,
+		104130702,
+		104130801,
+		104130802,
 		104140901,
 		104141001,
 		104141101,
@@ -9795,6 +10072,21 @@
 		104145001,
 		104145101,
 		104145201,
+		104130901,
+		104131001,
+		104131002,
+		104131101,
+		104131102,
+		104131201,
+		104131202,
+		104131301,
+		104131302,
+		104131401,
+		104131501,
+		104131502,
+		104131601,
+		104131701,
+		104131801,
 		103200101,
 		103200201,
 		103200202,

@@ -137,7 +137,7 @@ function var_0_0.RefreshMultiReward(arg_16_0)
 
 		local var_16_4 = ActivityData:GetActivityData(var_16_1)
 
-		arg_16_0.multiEndText_.text = manager.time:STimeDescS(var_16_4.stopTime, "!%Y/%m/%d %H:%M")
+		arg_16_0.multiEndText_.text = string.format(GetTips("ENDING_TIME"), manager.time:STimeDescS(var_16_4.stopTime, "!%Y/%m/%d %H:%M"))
 		arg_16_0.multiTimeRefresh_ = ActivityMultiRewardData:GetTimeByActivityID(var_16_1)
 		arg_16_0.multiRefreshText_.text = string.format(GetTips("REFRESH_LOST_TIME"), manager.time:GetLostTimeStr(arg_16_0.multiTimeRefresh_))
 

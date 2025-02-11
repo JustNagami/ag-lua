@@ -292,6 +292,134 @@
 			285
 		}
 	},
+	[1201] = {
+		closetime = 5,
+		priority = 0,
+		talk_adapt = 0,
+		talk_anchors = 0,
+		name = "newHero",
+		narrator_icon = "mmr",
+		id = 1201,
+		talk_content = "ec53cf946d67507a073298ac1700766e",
+		narrator_name = "7f87e8bdbd75e08c0dffe8a2287e8b5a",
+		guide_component = {
+			"pages_",
+			2,
+			"buttonComboSkill_"
+		},
+		mask_component = {},
+		opencondition = {
+			{
+				"uiName",
+				"newHero"
+			}
+		},
+		skipcondition = {
+			{
+				"uiName",
+				"comboSkillInfo"
+			}
+		},
+		talk_position = {
+			80,
+			125
+		}
+	},
+	[1202] = {
+		closetime = 5,
+		priority = 0,
+		talk_adapt = 0,
+		talk_anchors = 8,
+		name = "comboSkillInfo",
+		narrator_icon = "mmr",
+		id = 1202,
+		talk_content = "b4c7374b9b8b90a4ebfd0f5fb2fb120d",
+		narrator_name = "9acceedaadad9dd58a93d8163fc8c211",
+		guide_component = {
+			"viewBtn_"
+		},
+		mask_component = {},
+		opencondition = {
+			{
+				"uiName",
+				"comboSkillInfo"
+			}
+		},
+		skipcondition = {
+			{
+				"uiName",
+				"HeroCooperationView"
+			}
+		},
+		talk_position = {
+			-50,
+			100
+		}
+	},
+	[1301] = {
+		closetime = 5,
+		priority = 0,
+		talk_adapt = 0,
+		talk_anchors = 3,
+		name = "heroPreviewChange",
+		narrator_icon = "mmr",
+		id = 1301,
+		talk_content = "2ca6722b9241e27e300326c424c1f559",
+		narrator_name = "18ff4bd47d5ffb7e3b9a9bd42f518b5d",
+		guide_component = {
+			"infoBtn_"
+		},
+		mask_component = {},
+		opencondition = {
+			{
+				"uiName",
+				"heroPreviewChange"
+			}
+		},
+		skipcondition = {
+			{
+				"uiName",
+				"heroPreviewMain"
+			}
+		},
+		talk_position = {
+			-380,
+			220
+		}
+	},
+	[1302] = {
+		closetime = 5,
+		priority = 0,
+		talk_adapt = 0,
+		talk_anchors = 2,
+		name = "heroPreviewMain",
+		narrator_icon = "mmr",
+		id = 1302,
+		talk_content = "3acde97ec39f59b7111ceb01100074e5",
+		narrator_name = "d56dd07159394217463e2651dafe11c6",
+		guide_component = {
+			"subPages_",
+			1,
+			"cooperationBtn_"
+		},
+		mask_component = {},
+		opencondition = {
+			{
+				"uiName",
+				"heroPreviewMain"
+			}
+		},
+		skipcondition = {
+			{
+				"uiName",
+				"HeroCooperationView"
+			}
+		},
+		talk_position = {
+			-650,
+			-685
+		}
+	},
 	[1401] = {
 		closetime = 5,
 		priority = 0,
@@ -459,6 +587,18 @@
 		userinfo = {
 			1402
 		},
+		heroPreviewMain = {
+			1302
+		},
+		heroPreviewChange = {
+			1301
+		},
+		comboSkillInfo = {
+			1202
+		},
+		newHero = {
+			1201
+		},
 		chapterMap = {
 			1101,
 			1102,
@@ -484,6 +624,10 @@
 		1103,
 		1104,
 		1105,
+		1201,
+		1202,
+		1301,
+		1302,
 		1401,
 		1402,
 		1501,

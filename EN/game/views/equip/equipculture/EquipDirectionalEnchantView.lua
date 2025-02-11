@@ -199,33 +199,15 @@ function var_0_0.AddUIListeners(arg_14_0)
 		end
 
 		local var_17_1 = arg_14_0.fixedSkillInfo_[arg_14_0.selectFixedIndex_] and arg_14_0.fixedSkillInfo_[arg_14_0.selectFixedIndex_].skillId
-		local var_17_2 = var_17_1 and EquipSkillCfg[var_17_1].name
-		local var_17_3 = EquipSkillCfg[arg_14_0.selectSkillId_].name
+		local var_17_2 = var_17_1 and GetI18NText(EquipSkillCfg[var_17_1].name)
+		local var_17_3 = GetI18NText(EquipSkillCfg[arg_14_0.selectSkillId_].name)
 		local var_17_4 = var_17_2 and string.format(GetTips("EQUIP_DIRECTIONAL_PROMPT_TWO"), var_17_2, var_17_3) or string.format(GetTips("EQUIP_DIRECTIONAL_PROMPT"), var_17_3)
 
 		ShowMessageBox({
 			title = GetTips("PROMPT"),
 			content = var_17_4,
 			OkCallback = function()
-				local var_18_0 = {}
-
-				for iter_18_0 = 1, 2 do
-					local var_18_1 = arg_14_0.fixedSkillInfo_[iter_18_0] and arg_14_0.fixedSkillInfo_[iter_18_0].skillId
-
-					if arg_14_0.selectFixedIndex_ == iter_18_0 then
-						var_18_0[iter_18_0] = {
-							level = 1,
-							id = arg_14_0.selectSkillId_
-						}
-					elseif var_18_1 then
-						var_18_0[iter_18_0] = {
-							level = 1,
-							id = var_18_1
-						}
-					end
-				end
-
-				EquipAction.DirectionalEnchant(arg_14_0.equipId_, arg_14_0.enchantPos_, var_18_0)
+				EquipAction.DirectionalEnchant(arg_14_0.equipId_, arg_14_0.enchantPos_, arg_14_0.selectFixedIndex_, arg_14_0.selectSkillId_)
 			end
 		})
 	end)

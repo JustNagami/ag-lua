@@ -479,3 +479,15 @@ function SDKDownloadImage(arg_30_0, arg_30_1)
 
 	GameToSDK.DownloadImage(var_30_0)
 end
+
+function SDKDonwloadUrlToLocalPath(arg_31_0)
+	local var_31_0 = (arg_31_0 or ""):match("[^/]+$")
+
+	if not var_31_0 or var_31_0 == "" then
+		return ""
+	end
+
+	local var_31_1, var_31_2 = var_31_0:gsub("%.[^.]*$", "")
+
+	return var_31_1 or ""
+end

@@ -34,7 +34,7 @@ end
 function var_0_0.RefreshUI(arg_8_0)
 	local var_8_0 = ActivitySpringFestivalCoupletsCfg[arg_8_0.params_.id]
 
-	arg_8_0.couplet1_.sprite = getSpriteWithoutAtlas("TextureConfig/EmptyDream/couplets/" .. var_8_0.start_picture)
+	arg_8_0.couplet1_.sprite = getSpriteWithoutAtlas("I18NImage/TextureConfig/EmptyDream/couplets/" .. var_8_0.start_picture)
 
 	local var_8_1
 
@@ -50,7 +50,7 @@ function var_0_0.RefreshUI(arg_8_0)
 
 	local var_8_3 = var_8_0.result_picture[var_8_1]
 
-	arg_8_0.couplet2_.sprite = getSpriteWithoutAtlas("TextureConfig/EmptyDream/couplets/" .. var_8_3)
+	arg_8_0.couplet2_.sprite = getSpriteWithoutAtlas("I18NImage/TextureConfig/EmptyDream/couplets/" .. var_8_3)
 
 	if SDKTools.GetIsEnglish() then
 		arg_8_0.couplet1_text.text = GetI18NText(var_8_0.start_text)

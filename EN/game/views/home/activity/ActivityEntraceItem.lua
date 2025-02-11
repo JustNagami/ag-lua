@@ -70,9 +70,16 @@ end
 function var_0_0.GetIndex(arg_9_0)
 	local var_9_0 = ActivityData:GetActivityData(arg_9_0.activityID_).startTime
 	local var_9_1 = ActivityEntraceCfg[arg_9_0.activityID_]
+
+	print("startTime", var_9_0)
+
 	local var_9_2 = manager.time:GetServerTime()
 
+	print("tiem", var_9_2)
+
 	for iter_9_0 = #var_9_1.day_list, 1, -1 do
+		print("cfg.day_list[i] * 24 * 3600", var_9_1.day_list[iter_9_0] * 24 * 3600)
+
 		if var_9_2 >= var_9_0 + var_9_1.day_list[iter_9_0] * 24 * 3600 then
 			return iter_9_0 + 1
 		end

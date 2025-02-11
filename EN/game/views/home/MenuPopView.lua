@@ -412,12 +412,6 @@ function var_0_0.RefreshLock(arg_41_0)
 	else
 		SetActive(arg_41_0.cooperationBtn_.gameObject, false)
 	end
-
-	if SDKTools.GetIsJapan() or SDKTools.GetIsEnglish() then
-		SetActive(arg_41_0.exploreBtn_.gameObject, false)
-	else
-		SetActive(arg_41_0.exploreBtn_.gameObject, true)
-	end
 end
 
 function var_0_0.RefreshMusic(arg_42_0)

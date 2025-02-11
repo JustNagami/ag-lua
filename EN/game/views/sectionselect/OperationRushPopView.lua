@@ -39,7 +39,7 @@ function var_0_0.OnEnter(arg_5_0)
 	local var_5_2 = var_5_1 * arg_5_0.multiple_
 
 	arg_5_0.nextDunDunText_.text = var_5_0 - var_5_2
-	arg_5_0.multipleText_.text = string.format("是否确认消耗<color=#E78300>%s</color>吨吨值进行掉落倍数<color=#E78300>x%s</color>的挑战", var_5_2, arg_5_0.multiple_)
+	arg_5_0.multipleText_.text = string.format(GetTips("QUICK_BATTLE_TIPS1"), var_5_2, arg_5_0.multiple_)
 end
 
 function var_0_0.AddUIListener(arg_6_0)

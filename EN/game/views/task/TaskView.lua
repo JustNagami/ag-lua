@@ -57,11 +57,7 @@ function var_0_0.OnEnter(arg_7_0)
 end
 
 function var_0_0.RefreshActive(arg_8_0)
-	if SDKTools.GetIsJapan() or SDKTools.GetIsEnglish() then
-		SetActive(arg_8_0.exploreBtn_.gameObject, false)
-	else
-		SetActive(arg_8_0.exploreBtn_.gameObject, true)
-	end
+	SetActive(arg_8_0.exploreBtn_.gameObject, true)
 end
 
 function var_0_0.BindRedPoint(arg_9_0)

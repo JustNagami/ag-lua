@@ -45,8 +45,6 @@ function var_0_0.Init(arg_7_0)
 	for iter_7_0 = 1, 3 do
 		arg_7_0.sectionTargets_[iter_7_0] = ActivityRhythmGameStageInfoStarItem.New(arg_7_0[string.format("ndnum0%sGo_", iter_7_0)], iter_7_0)
 	end
-
-	arg_7_0.DefaultConditionText_ = arg_7_0.conditionText_.text
 end
 
 function var_0_0.Dispose(arg_8_0)
@@ -144,7 +142,7 @@ function var_0_0.RefreshBtnUI(arg_18_0)
 		end
 
 		if not ActivityRhythmGameData:IsUnlockPreStage(arg_18_0.cfgID_) then
-			arg_18_0.conditionText_.text = arg_18_0.DefaultConditionText_
+			arg_18_0.conditionText_.text = GetTips("UNLOCK_BY_COMPLETE_PRE_STAGE")
 		end
 	end
 end

@@ -138,7 +138,7 @@ function var_0_0.RequestSetHeroPos(arg_15_0, arg_15_1)
 				arg_15_1()
 			end
 
-			manager.notify:Invoke(DORM_REFRESH_HERO_DEPLOY_LIST)
+			manager.notify:Invoke(DORM_REGENERATE_HERO)
 		else
 			ShowTips(arg_16_0.result)
 		end

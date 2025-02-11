@@ -16,10 +16,16 @@ function var_0_0.InitSetting(arg_3_0)
 	local var_3_2 = {}
 	local var_3_3 = var_3_0.picOptionId == nil
 
+	if not PictureQualitySettingPcCfg[var_3_0.picOptionId] then
+		var_3_3 = true
+	end
+
 	if var_3_3 then
 		var_0_2 = true
 		var_3_1 = 5
 		var_3_2 = PictureQualitySettingPcCfg[var_3_1]
+	else
+		var_3_2 = PictureQualitySettingPcCfg[var_3_0.picOptionId]
 	end
 
 	local var_3_4 = AreaDifferenceCfg[GameToSDK.CURRENT_SERVER]
@@ -48,6 +54,7 @@ function var_0_0.InitSetting(arg_3_0)
 			teammate_effect = var_3_0.teammate_effect or var_3_2.teammate_effect,
 			user_effect = var_3_0.user_effect or var_3_2.user_effect or 3,
 			anti_aliasing = var_3_0.anti_aliasing or var_3_2.anti_aliasing,
+			hdr = var_3_0.hdr or var_3_2.hdr,
 			reflection_effect = var_3_0.reflection_effect or var_3_2.reflection_effect,
 			resolution = var_3_0.resolution or var_3_2.resolution
 		},
@@ -307,8 +314,14 @@ end
 
 function var_0_0.ApplyToBattle(arg_12_0, arg_12_1, arg_12_2)
 	if arg_12_1 == "pic" then
+		if SDKTools.GetIsEnglish() then
+			PlayerPrefs.SetInt("allowHDR", arg_12_2.hdr)
+		end
+
 		PlayerPrefs.SetInt("frame", arg_12_2.frame)
 		PlayerPrefs.SetInt("allowMSAA", arg_12_2.anti_aliasing)
+	elseif arg_12_1 == "hdr" then
+		PlayerPrefs.SetInt("allowHDR", arg_12_2)
 	elseif arg_12_1 == "anti_aliasing" then
 		PlayerPrefs.SetInt("allowMSAA", arg_12_2)
 	elseif arg_12_1 == "frame" then

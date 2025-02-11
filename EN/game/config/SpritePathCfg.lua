@@ -184,7 +184,7 @@
 		name = "SkinTrialTextrues"
 	},
 	ActivityBannerTextures = {
-		path = "I18NImg/ZH_CN/Activity/",
+		path = "I18NImage/Activity/",
 		name = "ActivityBannerTextures"
 	},
 	ActivityClubBossHeadIcon = {

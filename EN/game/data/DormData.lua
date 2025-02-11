@@ -41,8 +41,6 @@ function var_0_1.InitVisitDormData(arg_4_0, arg_4_1)
 			heroID = iter_4_1.hero_id
 		})
 	end
-
-	arg_4_0:UpdateReceivedWeekGiftNum(arg_4_1.received_be_visited_gift_num)
 end
 
 function var_0_1.GetVisitInfo(arg_5_0)

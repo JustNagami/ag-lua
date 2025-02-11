@@ -12457,6 +12457,76 @@
 			150
 		}
 	},
+	[9901] = {
+		talk_anchors = 1,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9901,
+		talk_content = "ad75a4dc5c9becb492f784f9f8fdc14d",
+		params = {},
+		guide_component = {
+			"common",
+			"equipCultureView",
+			{
+				"btn_enchant"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			831,
+			-359
+		}
+	},
+	[9902] = {
+		talk_anchors = 2,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9902,
+		talk_content = "538fe66f5b4549fdcf88f013776e6fe1",
+		params = {},
+		guide_component = {
+			"common",
+			"equipCultureView",
+			{
+				"pages_",
+				4,
+				"enchants",
+				1,
+				"button_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-1080,
+			-659
+		}
+	},
+	[9903] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9903,
+		talk_content = "4add0e387f60b92b122190a28634e16f",
+		params = {},
+		guide_component = {
+			"common",
+			"enchantChangeView",
+			{
+				"btnDirectionalSkill_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			1012,
+			390
+		}
+	},
 	[10001] = {
 		talk_anchors = 4,
 		type = "HighLight",
@@ -13340,6 +13410,9 @@
 		8403,
 		8501,
 		8502,
+		9901,
+		9902,
+		9903,
 		10001,
 		10002,
 		10003,

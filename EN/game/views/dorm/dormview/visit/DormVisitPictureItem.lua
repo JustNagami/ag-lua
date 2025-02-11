@@ -41,7 +41,9 @@ function var_0_0.RefreshUI(arg_6_0, arg_6_1, arg_6_2)
 		return
 	end
 
-	arg_6_0.localSavePath = manager.share:GetSavePathByModule("room_edit") .. arg_6_0.userID .. ".jpg"
+	local var_6_1 = SDKDonwloadUrlToLocalPath(var_6_0.picture_link)
+
+	arg_6_0.localSavePath = manager.share:GetSavePathByModule("room_edit") .. var_6_1 .. ".jpg"
 
 	SDKDownloadImage(var_6_0.picture_link, arg_6_0.localSavePath)
 

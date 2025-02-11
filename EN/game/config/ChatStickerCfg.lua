@@ -1745,12 +1745,42 @@
 		icon = "10195",
 		type = 1
 	},
+	[202] = {
+		desc_source = "67ffe7c1e51e1ed9a87bf8eec265da54",
+		name = "7ddde6a255a6aac28bff8cd6887cf735",
+		free = 0,
+		category = 15,
+		id = 202,
+		icon = "10202",
+		type = 1
+	},
+	[204] = {
+		desc_source = "7a6b59ba1b059f67d8712729950a6647",
+		name = "023229c0a98f581c4f97adcacabb7106",
+		free = 0,
+		category = 15,
+		id = 204,
+		icon = "10204",
+		type = 1
+	},
+	[208] = {
+		desc_source = "",
+		name = "b43244136e10d38e257a272ffa2f1cf3",
+		free = 1,
+		category = 15,
+		id = 208,
+		icon = "10208",
+		type = 1
+	},
 	get_id_list_by_category = {
 		[15] = {
 			192,
 			193,
 			194,
-			195
+			195,
+			202,
+			204,
+			208
 		},
 		[14] = {
 			176,
@@ -2167,6 +2197,9 @@
 		192,
 		193,
 		194,
-		195
+		195,
+		202,
+		204,
+		208
 	}
 }

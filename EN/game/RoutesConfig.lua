@@ -3699,7 +3699,7 @@
 	},
 	{
 		name = "heroTeamInfoCooperation",
-		component = HeroTeamInfoCooperationView
+		component = NewHeroTeamInfoCooperationView
 	},
 	{
 		name = "battleCooperationFailed",

@@ -22,7 +22,7 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.tabController_ = {}
 	arg_4_0.titelBtnList_ = {}
 
-	for iter_4_0 = 1, 3 do
+	for iter_4_0 = 1, 6 do
 		arg_4_0.tabController_[iter_4_0] = ControllerUtil.GetController(arg_4_0["tab_" .. iter_4_0], "name")
 		arg_4_0.titelBtnList_[iter_4_0] = arg_4_0["titleBtn_" .. iter_4_0]
 	end
@@ -41,6 +41,10 @@ function var_0_0.InitUI(arg_4_0)
 			SetActive(arg_4_0.forumBtn_.gameObject, false)
 		end
 	end
+
+	arg_4_0.teamRecommendList_ = {}
+	arg_4_0.transitionList_ = LuaList.New(handler(arg_4_0, arg_4_0.IndexTransitionItem), arg_4_0.transitionListGo_, CultureGravureTransitionItem)
+	arg_4_0.equipSkillList_ = LuaList.New(handler(arg_4_0, arg_4_0.IndexEquipSkillItem), arg_4_0.equipSkillListGo_, CultureGravureEquipSkillItem)
 end
 
 function var_0_0.AddUIListener(arg_5_0)
@@ -161,6 +165,7 @@ function var_0_0.OnEnter(arg_13_0)
 
 	arg_13_0:RefreshUI()
 	manager.heroRaiseTrack:RefreshAstrolableState(AstrolabeConst.AnimationState.Commended)
+	arg_13_0:RegistEventListener(HERO_TRANSITION_CHANGE, handler(arg_13_0, arg_13_0.OnTransitionEquip))
 end
 
 function var_0_0.RefreshUI(arg_15_0)
@@ -211,7 +216,7 @@ function var_0_0.RefreshList(arg_17_0, arg_17_1)
 
 	arg_17_0.stateController_:SetSelectedState(arg_17_1)
 
-	for iter_17_0 = 1, 3 do
+	for iter_17_0 = 1, 6 do
 		arg_17_0.tabController_[iter_17_0]:SetSelectedState(tostring(iter_17_0 == arg_17_1))
 	end
 

@@ -394,7 +394,7 @@ function var_0_0.RefreshRight(arg_33_0)
 	if arg_33_0.curPage_ == 1 then
 		arg_33_0.bg_.spriteSync = "TextureConfig/SceneChangeUI/bg/" .. arg_33_0.curSceneID_
 
-		SetActive(arg_33_0.randomSceneBtn_.gameObject, false)
+		SetActive(arg_33_0.randomSceneBtn_.transform, true)
 	else
 		local var_33_0 = SkinSceneActionCfg.get_id_list_by_special_scene_id[arg_33_0.curSceneID_][1]
 

@@ -53,6 +53,7 @@ function var_0_0.DeployPicSetting(arg_6_0, arg_6_1)
 		var_6_0.user_effect = var_6_1.user_effect
 		var_6_0.teammate_effect = var_6_1.teammate_effect
 		var_6_0.frame = var_6_1.frame
+		var_6_0.hdr = var_6_1.hdr
 		var_6_0.shadow = var_6_1.shadow
 		var_6_0.post_process = var_6_1.post_process
 		var_6_0.anti_aliasing = var_6_1.anti_aliasing
@@ -63,17 +64,25 @@ function var_0_0.DeployPicSetting(arg_6_0, arg_6_1)
 		var_6_0[arg_6_0] = arg_6_1
 	end
 
-	manager.ui.cameraExtension.hdr = true
+	local var_6_2 = manager.ui.cameraExtension
 
-	PlayerPrefs.SetInt("allowHDR", 1)
+	if SDKTools.GetIsEnglish() then
+		-- block empty
+	else
+		var_6_2.hdr = true
+
+		PlayerPrefs.SetInt("allowHDR", 1)
+	end
 
 	if var_6_0.resolution then
-		local var_6_2 = tonumber(var_6_0.resolution)
-		local var_6_3, var_6_4 = SettingTools.GetSettingScreenSize(var_6_2)
+		local var_6_3 = tonumber(var_6_0.resolution)
+		local var_6_4, var_6_5 = SettingTools.GetSettingScreenSize(var_6_3)
 
-		Screen.SetResolution(var_6_3, var_6_4, true)
+		Screen.SetResolution(var_6_4, var_6_5, true)
 	elseif var_6_0.pc_resolution then
 		Screen.SetResolution(var_6_0.pc_resolution[1], var_6_0.pc_resolution[2], Screen.fullScreenMode)
+	elseif var_6_0.hdr and SDKTools.GetIsEnglish() then
+		var_6_2.hdr = var_6_0.hdr == 1
 	elseif var_6_0.anti_aliasing then
 		if PlayerPrefs.GetInt("allowMSAA") == 0 then
 			UnityEngine.Pipelines.SimPipeline.SimPipelineSettings.AliasingEnable = false
@@ -81,9 +90,9 @@ function var_0_0.DeployPicSetting(arg_6_0, arg_6_1)
 			UnityEngine.Pipelines.SimPipeline.SimPipelineSettings.AliasingEnable = true
 		end
 	elseif var_6_0.frame then
-		local var_6_5 = SettingConst.TARGET_FRAME_RATE[var_6_0.frame] or 60
+		local var_6_6 = SettingConst.TARGET_FRAME_RATE[var_6_0.frame] or 60
 
-		Application.targetFrameRate = var_6_5
+		Application.targetFrameRate = var_6_6
 	elseif var_6_0.window then
 		Screen.fullScreenMode = SettingTools.NumToFullScreenType(var_6_0.window)
 	elseif var_6_0.vertical_sync then

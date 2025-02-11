@@ -72,7 +72,7 @@ function var_0_0.UpdateView(arg_9_0)
 	local var_9_3
 
 	if arg_9_0.cfg_.condition == 51311 then
-		var_9_3 = string.format(arg_9_0.cfg_.desc, HeroCfg[arg_9_0.cfg_.additional_parameter[1]].suffix)
+		var_9_3 = string.format(GetI18NText(arg_9_0.cfg_.desc), GetI18NText(HeroCfg[arg_9_0.cfg_.additional_parameter[1]].suffix))
 	else
 		var_9_3 = arg_9_0.cfg_.desc
 	end

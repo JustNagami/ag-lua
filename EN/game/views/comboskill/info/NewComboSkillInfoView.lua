@@ -45,8 +45,6 @@ function var_0_0.CreatComboSkill(arg_7_0, arg_7_1)
 end
 
 function var_0_0.OnEnter(arg_8_0)
-	SetActive(arg_8_0.viewBtn_, gameObject, false)
-
 	arg_8_0.heroId = arg_8_0.params_.heroID
 
 	arg_8_0:UpdateSkillList()

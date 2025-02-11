@@ -1988,7 +1988,7 @@
 		unlock_star = 300,
 		role_type = 0,
 		private = 0,
-		impression = "",
+		impression = "ee63973f49a1735009ab1cabb9525e0d",
 		trial_stage = 4091093,
 		weapon_desc = "2005fbdd7863e823100c1f52659667f4",
 		suffix = "a2c4ef6c78e3332de90607d814f1e24b",
@@ -3615,7 +3615,6 @@
 			}
 		},
 		recommend_team = {
-			582,
 			184
 		}
 	},
@@ -5238,7 +5237,6 @@
 			}
 		},
 		recommend_team = {
-			502,
 			503
 		}
 	},
@@ -10742,7 +10740,6 @@
 			}
 		},
 		recommend_team = {
-			501,
 			584
 		}
 	},
@@ -12362,7 +12359,6 @@
 			}
 		},
 		recommend_team = {
-			501,
 			584
 		}
 	},
@@ -18172,7 +18168,6 @@
 			}
 		},
 		recommend_team = {
-			502,
 			503
 		}
 	},

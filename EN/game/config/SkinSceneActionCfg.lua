@@ -79,6 +79,14 @@
 		start_path = "SofdecAsset/function/dlc/119701_login.usm",
 		skin_id = 119701
 	},
+	[104902] = {
+		special_scene_id_2 = 0,
+		special_action_2 = "",
+		special_scene_id = 6012,
+		special_action = "104902ui_custom",
+		start_path = "SofdecAsset/function/dlc/104902_login.usm",
+		skin_id = 104902
+	},
 	[113907] = {
 		special_scene_id_2 = 0,
 		special_action_2 = "",
@@ -87,9 +95,23 @@
 		start_path = "SofdecAsset/function/dlc/113907_login.usm",
 		skin_id = 113907
 	},
+	[102201] = {
+		special_scene_id_2 = 0,
+		special_action_2 = "",
+		special_scene_id = 6014,
+		special_action = "102201ui_custom",
+		start_path = "SofdecAsset/function/dlc/102201_login.usm",
+		skin_id = 102201
+	},
 	get_id_list_by_special_scene_id = {
+		[6014] = {
+			102201
+		},
 		[6013] = {
 			113907
+		},
+		[6012] = {
+			104902
 		},
 		[6011] = {
 			119701
@@ -133,6 +155,8 @@
 		107601,
 		107402,
 		119701,
-		113907
+		104902,
+		113907,
+		102201
 	}
 }

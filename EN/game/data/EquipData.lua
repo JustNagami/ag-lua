@@ -407,15 +407,11 @@ function var_0_0.ConfirmEnchant(arg_24_0, arg_24_1, arg_24_2, arg_24_3, arg_24_4
 	end
 end
 
-function var_0_0.DirectionalEnchant(arg_25_0, arg_25_1, arg_25_2, arg_25_3)
+function var_0_0.DirectionalEnchant(arg_25_0, arg_25_1, arg_25_2, arg_25_3, arg_25_4)
 	local var_25_0 = var_0_1[arg_25_1]
 
 	if var_25_0 then
-		local var_25_1 = var_25_0.enchant[arg_25_2]
-
-		for iter_25_0 = 1, 2 do
-			var_25_1[iter_25_0] = arg_25_3[iter_25_0]
-		end
+		var_25_0.enchant[arg_25_2][arg_25_3] = arg_25_4
 	end
 end
 

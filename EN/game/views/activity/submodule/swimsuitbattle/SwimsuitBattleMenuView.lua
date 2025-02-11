@@ -122,6 +122,8 @@ function var_0_0.OnVoteRoundInfoUpdate(arg_12_0)
 		arg_12_0.swimItemNum_.text = var_12_2 .. "/" .. var_12_3
 	end
 
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_12_0.trs1_)
+
 	local var_12_5 = ActivityData:GetActivityData(arg_12_0.subActivityList_[3])
 	local var_12_6 = ActivitySummerWaterData:GetActivityID()
 	local var_12_7
@@ -151,6 +153,8 @@ function var_0_0.OnVoteRoundInfoUpdate(arg_12_0)
 		arg_12_0.waterItemNum_.text = var_12_9
 		arg_12_0.waterItemImg_.sprite = ItemTools.getItemSprite(var_12_1)
 	end
+
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_12_0.trs2_)
 end
 
 function var_0_0.OnExit(arg_13_0)

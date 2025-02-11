@@ -307,8 +307,6 @@ function var_0_0.RefreshDailyFatigueReminder(arg_36_0)
 end
 
 function var_0_0.RefreshCatExploreReminder(arg_37_0)
-	SetActive(arg_37_0.catExploreReminderGo_, not SDKTools.GetIsJapan() and not SDKTools.GetIsEnglish())
-
 	local var_37_0 = arg_37_0.settingData_.cat_explore_reminder == 1
 
 	arg_37_0.catExploreReminderTgl_.isOn = var_37_0

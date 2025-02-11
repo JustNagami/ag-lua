@@ -26,7 +26,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1)
 	arg_5_0.m_name.text = GetI18NText(var_5_0.name)
 	arg_5_0.m_node.text = GetI18NText(var_5_0.note)
 	arg_5_0.m_des.text = GetI18NText(var_5_0.desc)
-	arg_5_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/VolumeIIIUI/icon/" .. var_5_0.icon)
+	arg_5_0.m_icon.sprite = getSpriteWithoutAtlas("I18NImage/TextureConfig/VolumeIIIUI/icon/" .. var_5_0.icon)
 end
 
 function var_0_0.Dispose(arg_6_0)

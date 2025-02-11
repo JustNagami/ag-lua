@@ -740,7 +740,7 @@
 		battlepass_type = 14,
 		activity_id = 211001,
 		id = 20014,
-		slogan_ui = "I18NImg/%s/Passport/passpory_copy_00053",
+		slogan_ui = "I18NImage/Passport/passpory_copy_00053",
 		extra_reward_01 = {},
 		extra_reward_02 = {
 			{
@@ -802,7 +802,7 @@
 		battlepass_type = 15,
 		activity_id = 231001,
 		id = 20015,
-		slogan_ui = "I18NImg/%s/Passport/passpory_copy_00054",
+		slogan_ui = "I18NImage/Passport/passpory_copy_00054",
 		extra_reward_01 = {},
 		extra_reward_02 = {
 			{
@@ -863,7 +863,7 @@
 		battlepass_type = 16,
 		activity_id = 241001,
 		id = 20016,
-		slogan_ui = "I18NImg/%s/Passport/passpory_copy_00061",
+		slogan_ui = "I18NImage/Passport/passpory_copy_00061",
 		extra_reward_01 = {},
 		extra_reward_02 = {
 			{
@@ -932,7 +932,7 @@
 		battlepass_type = 17,
 		activity_id = 251001,
 		id = 20017,
-		slogan_ui = "I18NImg/%s/Passport/passpory_copy_00055",
+		slogan_ui = "I18NImage/Passport/passpory_copy_00055",
 		extra_reward_01 = {},
 		extra_reward_02 = {
 			{
@@ -1001,7 +1001,7 @@
 		battlepass_type = 18,
 		activity_id = 281001,
 		id = 20018,
-		slogan_ui = "I18NImg/%s/Passport/passpory_copy_00055",
+		slogan_ui = "I18NImage/Passport/passpory_copy_00055",
 		extra_reward_01 = {},
 		extra_reward_02 = {
 			{
@@ -1070,7 +1070,7 @@
 		battlepass_type = 19,
 		activity_id = 291001,
 		id = 20019,
-		slogan_ui = "I18NImg/%s/Passport/passpory_copy_00055",
+		slogan_ui = "I18NImage/Passport/passpory_copy_00055",
 		extra_reward_01 = {},
 		extra_reward_02 = {
 			{

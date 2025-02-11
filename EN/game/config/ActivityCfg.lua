@@ -15762,7 +15762,6 @@
 		sub_activity_list = {
 			281111,
 			281112,
-			281113,
 			281114,
 			281115,
 			281116,
@@ -15787,15 +15786,6 @@
 		activity_template = 111,
 		sub_activity_list = {}
 	},
-	[281113] = {
-		id = 281113,
-		name = "083df92ae111b2f9473342ac609b4479",
-		remark = "ab1371d453f5f62d720321d022b7f7b4",
-		unlock_condition = "",
-		activity_theme = 28,
-		activity_template = 111,
-		sub_activity_list = {}
-	},
 	[281114] = {
 		id = 281114,
 		name = "27ea5b091f299e5564825e0210c4d2dc",
@@ -15804,6 +15794,19 @@
 		activity_theme = 28,
 		activity_template = 111,
 		sub_activity_list = {}
+	},
+	[281312] = {
+		id = 281312,
+		name = "a27148098990a4459c945f67381f63b7",
+		remark = "832b3ee635a7a8b08908415e6e019684",
+		unlock_condition = "",
+		activity_theme = 28,
+		activity_template = 131,
+		sub_activity_list = {
+			281115,
+			281116,
+			281117
+		}
 	},
 	[281115] = {
 		id = 281115,
@@ -15830,6 +15833,42 @@
 		unlock_condition = "",
 		activity_theme = 28,
 		activity_template = 111,
+		sub_activity_list = {}
+	},
+	[280011] = {
+		id = 280011,
+		name = "bbb25221d285401a5cdf1903bc24ab36",
+		remark = "e6a5f69c6deedbdef8b3f3031cbf787f",
+		unlock_condition = "",
+		activity_theme = 28,
+		activity_template = 1,
+		sub_activity_list = {}
+	},
+	[280012] = {
+		id = 280012,
+		name = "0f54b9eb12145adbab04702e054181bd",
+		remark = "b41ed8c34ec073c6236f1aa2c477869c",
+		unlock_condition = "",
+		activity_theme = 28,
+		activity_template = 1,
+		sub_activity_list = {}
+	},
+	[281891] = {
+		id = 281891,
+		name = "eba6478fa1e0085339bf7182e7612698",
+		remark = "0927241e17527bc17ff4f575396a1b9e",
+		unlock_condition = "",
+		activity_theme = 28,
+		activity_template = 189,
+		sub_activity_list = {}
+	},
+	[281892] = {
+		id = 281892,
+		name = "c102bdff3d832244fb0c8aa39316653a",
+		remark = "e08ca6cac8897b2e185284d8eae23ab8",
+		unlock_condition = "",
+		activity_theme = 28,
+		activity_template = 189,
 		sub_activity_list = {}
 	},
 	[282431] = {
@@ -16806,6 +16845,56 @@
 		activity_template = 270,
 		sub_activity_list = {}
 	},
+	[280741] = {
+		id = 280741,
+		name = "90088d5dd0d7826da12312eb26d58148",
+		remark = "89906dfba252d049cae984c73d0a54e9",
+		unlock_condition = "",
+		activity_theme = 28,
+		activity_template = 73,
+		sub_activity_list = {
+			280742,
+			280743,
+			280744,
+			280745
+		}
+	},
+	[280742] = {
+		id = 280742,
+		name = "c485a338d590e040e2355b20e0825865",
+		remark = "649e57b3d23e064b055e0d56c4932f06",
+		unlock_condition = "",
+		activity_theme = 28,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[280743] = {
+		id = 280743,
+		name = "f51da782bb6edab2e34953a9cdd06a6d",
+		remark = "14de5571f9ed6e7a929410bdc93060a0",
+		unlock_condition = "",
+		activity_theme = 28,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[280744] = {
+		id = 280744,
+		name = "a887885686a6f6dc9dadb69f59947278",
+		remark = "24e350747d07d551654ca73188663f2a",
+		unlock_condition = "",
+		activity_theme = 28,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[280745] = {
+		id = 280745,
+		name = "2b3bf3ba4f2cb9510bc7cea40cb0960f",
+		remark = "88b4e7b31cb11443faa73119e6212822",
+		unlock_condition = "",
+		activity_theme = 28,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
 	[281051] = {
 		id = 281051,
 		name = "961c8c24318406e8e148249f44e72040",
@@ -17092,6 +17181,15 @@
 		unlock_condition = "",
 		activity_theme = 28,
 		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[281163] = {
+		id = 281163,
+		name = "b86a69ab708c16ad9c950969e4996b52",
+		remark = "bcb0731ae148e4218372e13e33cbc3c5",
+		unlock_condition = "",
+		activity_theme = 28,
+		activity_template = 116,
 		sub_activity_list = {}
 	},
 	[280001] = {
@@ -19789,11 +19887,15 @@
 			281311,
 			281111,
 			281112,
-			281113,
 			281114,
+			281312,
 			281115,
 			281116,
 			281117,
+			280011,
+			280012,
+			281891,
+			281892,
 			282431,
 			281461,
 			282441,
@@ -19878,6 +19980,11 @@
 			280740,
 			282706,
 			282707,
+			280741,
+			280742,
+			280743,
+			280744,
+			280745,
 			281051,
 			2812701,
 			2812702,
@@ -19907,6 +20014,7 @@
 			281893,
 			282511,
 			2800451,
+			281163,
 			280001,
 			280002,
 			280021,
@@ -22436,6 +22544,7 @@
 			240736,
 			280731,
 			280736,
+			280741,
 			290731
 		},
 		[203] = {
@@ -22556,6 +22665,8 @@
 			241891,
 			241892,
 			271891,
+			281891,
+			281892,
 			281893,
 			291891,
 			291892
@@ -23235,6 +23346,7 @@
 			271162,
 			281161,
 			281162,
+			281163,
 			291161,
 			291162
 		},
@@ -23361,7 +23473,6 @@
 			271112,
 			281111,
 			281112,
-			281113,
 			281114,
 			281115,
 			281116,
@@ -23408,6 +23519,7 @@
 			241312,
 			271311,
 			281311,
+			281312,
 			281313,
 			291311,
 			291312
@@ -23803,6 +23915,10 @@
 			280738,
 			280739,
 			280740,
+			280742,
+			280743,
+			280744,
+			280745,
 			2800451,
 			280401,
 			280402,
@@ -24086,6 +24202,8 @@
 			270011,
 			270012,
 			270013,
+			280011,
+			280012,
 			280013,
 			280014,
 			290011,
@@ -24759,6 +24877,18 @@
 		[2812701] = {
 			281051
 		},
+		[280745] = {
+			280741
+		},
+		[280744] = {
+			280741
+		},
+		[280743] = {
+			280741
+		},
+		[280742] = {
+			280741
+		},
 		[280740] = {
 			280736
 		},
@@ -24937,18 +25067,18 @@
 			282431
 		},
 		[281117] = {
-			281311
+			281311,
+			281312
 		},
 		[281116] = {
-			281311
+			281311,
+			281312
 		},
 		[281115] = {
-			281311
+			281311,
+			281312
 		},
 		[281114] = {
-			281311
-		},
-		[281113] = {
 			281311
 		},
 		[281112] = {
@@ -30293,11 +30423,15 @@
 		281311,
 		281111,
 		281112,
-		281113,
 		281114,
+		281312,
 		281115,
 		281116,
 		281117,
+		280011,
+		280012,
+		281891,
+		281892,
 		282431,
 		281461,
 		282441,
@@ -30397,6 +30531,11 @@
 		280740,
 		282706,
 		282707,
+		280741,
+		280742,
+		280743,
+		280744,
+		280745,
 		281051,
 		2812701,
 		2812702,
@@ -30426,6 +30565,7 @@
 		281893,
 		282511,
 		2800451,
+		281163,
 		280001,
 		280002,
 		280021,

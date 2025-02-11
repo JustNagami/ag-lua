@@ -1734,7 +1734,7 @@
 		id = 1049,
 		heart_chain5 = "e536ba95f98063e4bbaac21b489dbd80",
 		heart_chain1 = "3ae25c3dfb872adbcd4e5362173c92f1",
-		plot_tip = "",
+		plot_tip = "c85cd1b3bf79ce9afef16aedb8b1bb82",
 		cv_ko = "강시현",
 		like = "e9b9f46b6a280e8b775903b47691cfac",
 		super_plot_tip = "",
@@ -1759,7 +1759,12 @@
 			"47630569bde1942cf25167c85647122d",
 			"5e63f4a0f79ca17aad3d39916200b49d"
 		},
-		plot_id = {},
+		plot_id = {
+			210490101,
+			210490102,
+			210490103,
+			210490104
+		},
 		super_plot_id = {}
 	},
 	[1095] = {
@@ -1810,7 +1815,7 @@
 		heart_chain5 = "2c31c34dc1f229645b8a09bc85de75af",
 		heart_chain1 = "c93de4e13b25a60bea10cc7c5c593dd9",
 		plot_tip = "",
-		cv_ko = "",
+		cv_ko = "정혜원",
 		like = "a3933bf5d13bc0e3ce986ef0f44a5588",
 		super_plot_tip = "",
 		plot_tip_picture = "1022",
@@ -1845,7 +1850,7 @@
 		heart_chain5 = "8225a76c9b378d6e1407cd81a1122924",
 		heart_chain1 = "d475c4eb9e06ae5832474401981ed287",
 		plot_tip = "",
-		cv_ko = "",
+		cv_ko = "이은조",
 		like = "3dfe23660083f7c23359a05de1de4565",
 		super_plot_tip = "",
 		plot_tip_picture = "1021",

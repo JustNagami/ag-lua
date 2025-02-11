@@ -178,14 +178,14 @@ function var_0_0.UpdateBar(arg_28_0)
 		type = "jump",
 		params = {
 			pages = {
-				"TextureConfig/GuildActivitiesUI/note/activity_club_courses_01",
-				"TextureConfig/GuildActivitiesUI/note/activity_club_courses_02",
-				"TextureConfig/GuildActivitiesUI/note/activity_club_courses_03",
-				"TextureConfig/GuildActivitiesUI/note/activity_club_courses_04",
-				"TextureConfig/GuildActivitiesUI/note/activity_club_courses_05",
-				"TextureConfig/GuildActivitiesUI/note/activity_club_courses_06",
-				"TextureConfig/GuildActivitiesUI/note/activity_club_courses_07",
-				"TextureConfig/GuildActivitiesUI/note/activity_club_courses_08"
+				"I18NImage/TextureConfig/GuildActivitiesUI/note/activity_club_courses_01",
+				"I18NImage/TextureConfig/GuildActivitiesUI/note/activity_club_courses_02",
+				"I18NImage/TextureConfig/GuildActivitiesUI/note/activity_club_courses_03",
+				"I18NImage/TextureConfig/GuildActivitiesUI/note/activity_club_courses_04",
+				"I18NImage/TextureConfig/GuildActivitiesUI/note/activity_club_courses_05",
+				"I18NImage/TextureConfig/GuildActivitiesUI/note/activity_club_courses_06",
+				"I18NImage/TextureConfig/GuildActivitiesUI/note/activity_club_courses_07",
+				"I18NImage/TextureConfig/GuildActivitiesUI/note/activity_club_courses_08"
 			}
 		}
 	})
@@ -221,14 +221,14 @@ function var_0_0.OnEnter(arg_31_0)
 		saveData("GuildActivity", "note", true)
 		JumpTools.OpenPageByJump("gameHelpPro", {
 			pages = {
-				"TextureConfig/GuildActivitiesUI/note/activity_club_courses_01",
-				"TextureConfig/GuildActivitiesUI/note/activity_club_courses_02",
-				"TextureConfig/GuildActivitiesUI/note/activity_club_courses_03",
-				"TextureConfig/GuildActivitiesUI/note/activity_club_courses_04",
-				"TextureConfig/GuildActivitiesUI/note/activity_club_courses_05",
-				"TextureConfig/GuildActivitiesUI/note/activity_club_courses_06",
-				"TextureConfig/GuildActivitiesUI/note/activity_club_courses_07",
-				"TextureConfig/GuildActivitiesUI/note/activity_club_courses_08"
+				"I18NImage/TextureConfig/GuildActivitiesUI/note/activity_club_courses_01",
+				"I18NImage/TextureConfig/GuildActivitiesUI/note/activity_club_courses_02",
+				"I18NImage/TextureConfig/GuildActivitiesUI/note/activity_club_courses_03",
+				"I18NImage/TextureConfig/GuildActivitiesUI/note/activity_club_courses_04",
+				"I18NImage/TextureConfig/GuildActivitiesUI/note/activity_club_courses_05",
+				"I18NImage/TextureConfig/GuildActivitiesUI/note/activity_club_courses_06",
+				"I18NImage/TextureConfig/GuildActivitiesUI/note/activity_club_courses_07",
+				"I18NImage/TextureConfig/GuildActivitiesUI/note/activity_club_courses_08"
 			}
 		})
 	end
@@ -461,19 +461,19 @@ function var_0_0.RefreshBossSprite(arg_52_0)
 	local var_52_3 = SettingData:GetCurrentLanguage()
 
 	if var_52_2.hpSprite_ then
-		var_52_2.hpSprite_.sprite = getSprite("Atlas/GuildActivitiesUI", string.format("%s@%s", var_52_1.hpSprite, var_52_3))
+		var_52_2.hpSprite_.sprite = getSpriteWithoutAtlas("I18NImage/GuildActivitiesUI/" .. var_52_1.hpSprite)
 	end
 
 	if var_52_2.fightingSprite_ then
-		var_52_2.fightingSprite_.sprite = getSprite("Atlas/GuildActivitiesUI", string.format("%s@%s", var_52_1.fightingSprite, var_52_3))
+		var_52_2.fightingSprite_.sprite = getSpriteWithoutAtlas("I18NImage/GuildActivitiesUI/" .. var_52_1.fightingSprite)
 	end
 
 	if var_52_2.defeatSprite_ then
-		var_52_2.defeatSprite_.sprite = getSprite("Atlas/GuildActivitiesUI", string.format("%s@%s", var_52_1.defeatSprite, var_52_3))
+		var_52_2.defeatSprite_.sprite = getSpriteWithoutAtlas("I18NImage/GuildActivitiesUI/" .. var_52_1.defeatSprite)
 	end
 
 	if var_52_2.nextLevelSprite_ then
-		var_52_2.nextLevelSprite_.sprite = getSprite("Atlas/GuildActivitiesUI", string.format("%s@%s", var_52_1.nextLevel, var_52_3))
+		var_52_2.nextLevelSprite_.sprite = getSpriteWithoutAtlas("I18NImage/GuildActivitiesUI/" .. var_52_1.nextLevel)
 	end
 end
 

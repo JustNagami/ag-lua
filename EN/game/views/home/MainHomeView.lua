@@ -49,7 +49,8 @@ function var_0_0.InitBar(arg_6_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR,
 		HOME_BAR,
-		INFO_BAR
+		INFO_BAR,
+		INVITE_BAR
 	})
 	manager.windowBar:SwitchBar({
 		CurrencyConst.CURRENCY_TYPE_VITALITY,

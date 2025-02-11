@@ -151,7 +151,7 @@ function var_0_0.SwitchToggle(arg_11_0, arg_11_1)
 
 		local var_11_4 = ActivityData:GetActivityData(var_11_1)
 
-		arg_11_0.multiEndText_.text = manager.time:STimeDescS(var_11_4.stopTime, "!%Y/%m/%d %H:%M")
+		arg_11_0.multiEndText_.text = string.format(GetTips("ENDING_TIME"), manager.time:STimeDescS(var_11_4.stopTime, "!%Y/%m/%d %H:%M"))
 		arg_11_0.multiTimeRefresh_ = ActivityMultiRewardData:GetTimeByActivityID(var_11_1)
 		arg_11_0.multiRefreshText_.text = string.format(GetTips("REFRESH_LOST_TIME"), manager.time:GetLostTimeStr(arg_11_0.multiTimeRefresh_))
 
