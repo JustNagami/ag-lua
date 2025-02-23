@@ -8,7 +8,8 @@ function var_0_0.SetUpZuma()
 	manager.uiInit()
 	gameContext:SetSystemLayer("battle")
 	manager.ui:SetMainCamera("zuma")
-	JumpTools.OpenPageByJump("ZumaGameView")
+	JumpTools.OpenPageByJump("springFestivalZumaGameView")
+	ZumaData:InitGamePointData()
 	ZumaToLuaBridge.CameraAdaptive()
 end
 
@@ -54,6 +55,8 @@ function var_0_0.OnZumaSceneLoaded()
 	if var_0_1 ~= 1 then
 		SettingAction.ChangePicSetting("frame", 1)
 	end
+
+	manager.notify:CallUpdateFunc(ZUMA_SCENE_LOADED)
 end
 
 function var_0_0.OnZumaSceneExit()
@@ -65,7 +68,7 @@ function var_0_0.OnZumaSceneExit()
 end
 
 function var_0_0.OnZumaOver(arg_5_0)
-	JumpTools.OpenPageByJump("ZumaGameSettle", {
+	JumpTools.OpenPageByJump("springFestivalZumaGameSettleView", {
 		isWin = arg_5_0
 	})
 end
@@ -88,10 +91,41 @@ function var_0_0.ZumaStop(arg_9_0)
 	manager.notify:CallUpdateFunc(ZUMA_STOP_SHOW, arg_9_0)
 end
 
-function var_0_0.GetZumaGamePlayTime()
-	local var_10_0 = ZumaLuaBridge.GetCurTime()
+function var_0_0.ZumaSkillUpdate(arg_10_0, arg_10_1, arg_10_2, arg_10_3)
+	manager.notify:CallUpdateFunc(ZUMA_SKILL_GAME_UPDATE, arg_10_0, arg_10_1, arg_10_2)
+	ZumaData:RecordPointSkillUseTimes(arg_10_3)
+end
 
-	return math.floor(var_10_0)
+function var_0_0.ZumaSkillUseStateUpdate(arg_11_0, arg_11_1)
+	manager.notify:CallUpdateFunc(ZUMA_SKILL_GAME_USE_STAGE_UPDATE, arg_11_0, arg_11_1)
+end
+
+function var_0_0.ZumaGameReChallenge()
+	ZumaData:InitGamePointData()
+	ZumaData:SetZumaScore(0)
+	manager.notify:CallUpdateFunc(ZUMA_BALL_HIT)
+	manager.notify:CallUpdateFunc(ZUMA_SKILL_GAME_UPDATE, 0, 0, 0)
+	manager.notify:CallUpdateFunc(ZUMA_BALL_COUNT_UPDATE)
+	manager.notify:CallUpdateFunc(ZUMA_STOP_SHOW, false)
+	manager.notify:CallUpdateFunc(ZUMA_SKILL_GAME_USE_STAGE_UPDATE, false, ZumaData:GetZumaSkillTypeID())
+end
+
+function var_0_0.ZumaEndlessChangeMap(arg_13_0)
+	if not arg_13_0 then
+		ZumaData:RecordEndlessPointScoreToList()
+	end
+
+	manager.notify:CallUpdateFunc(ZUMA_ENDLESS_CHANGE_MAP, arg_13_0)
+end
+
+function var_0_0.ZumaEndlessSetMapName(arg_14_0)
+	ZumaData:RecordEndlessPointMapNameToList(arg_14_0)
+end
+
+function var_0_0.GetZumaGamePlayTime()
+	local var_15_0 = ZumaLuaBridge.GetCurTime()
+
+	return math.floor(var_15_0)
 end
 
 return var_0_0

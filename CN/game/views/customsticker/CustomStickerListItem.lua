@@ -62,7 +62,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3, arg_6_4, arg_6_5, a
 	elseif arg_6_1.item_type == 5 then
 		arg_6_0.staticImg_.spriteAsync = "TextureConfig/Sticker/Sticker_s/" .. arg_6_1.resource
 	elseif arg_6_1.item_type == 6 then
-		arg_6_0.staticImg_.spriteAsync = "TextureConfig/Sticker/Foreground/Stickerfg_m_" .. arg_6_1.resource
+		arg_6_0.staticImg_.spriteAsync = "TextureConfig/Sticker/Foreground_m/Stickerfg_m_" .. arg_6_1.resource
 	end
 
 	if arg_6_4 then

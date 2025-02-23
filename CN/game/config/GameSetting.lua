@@ -157,8 +157,13 @@
 		value = {
 			1,
 			10,
+			15,
 			20,
+			25,
 			30,
+			35,
+			40,
+			50,
 			60
 		}
 	},
@@ -3208,12 +3213,12 @@
 				2,
 				311201,
 				6010015,
-				"but_Internal_soundofrain_1"
+				"but_Internal_soundofrain_2"
 			},
 			{
 				3,
-				310031,
-				139
+				310036,
+				142
 			},
 			{
 				4,
@@ -6257,8 +6262,8 @@
 		id = "v210_music_describe",
 		value2 = "",
 		value = {
-			"UI/VersionUI/JapanRegionUI_2_10/JapanRegionMusicUI/MusicExplain_01",
-			"UI/VersionUI/JapanRegionUI_2_10/JapanRegionMusicUI/MusicExplain_02"
+			"Widget/System/Activity_Resident/Acitvity_MusicUI/Acitvity_MusicExplain_01",
+			"Widget/System/Activity_Resident/Acitvity_MusicUI/Acitvity_MusicExplain_02"
 		}
 	},
 	chapter19_scan_unlock = {
@@ -6864,17 +6869,18 @@
 		id = "activity_zuma_talent_cost",
 		value2 = "",
 		value = {
-			53105
+			53151
 		}
 	},
 	activity_zuma_describe = {
 		id = "activity_zuma_describe",
 		value2 = "",
 		value = {
-			"Widget/Version/NorseUI_3_0/NorseUI_3_0_ZumaUI/NorseUI_3_0_ZumaDescription_01",
-			"Widget/Version/NorseUI_3_0/NorseUI_3_0_ZumaUI/NorseUI_3_0_ZumaDescription_02",
-			"Widget/Version/NorseUI_3_0/NorseUI_3_0_ZumaUI/NorseUI_3_0_ZumaDescription_03",
-			"Widget/Version/NorseUI_3_0/NorseUI_3_0_ZumaUI/NorseUI_3_0_ZumaDescription_04"
+			"Widget/Version/CORGUI_3_11/SandPlay_3_11/SandPlay_3_11_Zuma/SandPlay_3_11_ZumaDescription_01",
+			"Widget/Version/CORGUI_3_11/SandPlay_3_11/SandPlay_3_11_Zuma/SandPlay_3_11_ZumaDescription_02",
+			"Widget/Version/CORGUI_3_11/SandPlay_3_11/SandPlay_3_11_Zuma/SandPlay_3_11_ZumaDescription_03",
+			"Widget/Version/CORGUI_3_11/SandPlay_3_11/SandPlay_3_11_Zuma/SandPlay_3_11_ZumaDescription_04",
+			"Widget/Version/CORGUI_3_11/SandPlay_3_11/SandPlay_3_11_Zuma/SandPlay_3_11_ZumaDescription_05"
 		}
 	},
 	core_verification_additional_reward_1 = {

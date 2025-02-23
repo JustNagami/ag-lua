@@ -52,8 +52,10 @@ function var_0_0.PlayVoice(arg_7_0, arg_7_1)
 	end
 
 	arg_7_0.dialogBoxTrs_:SetSizeDeltaY(math.max(arg_7_0.dialogText_.preferredHeight + 48, 128))
+
+	arg_7_0.scrollRect_.normalizedPosition = Vector2(0, 1)
+
 	SetActive(arg_7_0.dialogBoxGo_, true)
-	arg_7_0.dialogAni_:Play("HeroFileVoicePageUI", 0)
 	arg_7_0.dialogAni_:Update(0)
 
 	arg_7_0.delayPlayTimer_ = Timer.New(function()

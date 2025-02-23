@@ -48,6 +48,7 @@ function var_0_0.InitUI(arg_4_0)
 		(RechargeTitleItem.New(arg_4_0.tag04_))
 	}
 	arg_4_0.redBindingGroupIndex_ = 0
+	arg_4_0.enterTimerDic = {}
 end
 
 function var_0_0.AddUIListener(arg_5_0)
@@ -261,15 +262,15 @@ end
 
 function var_0_0.CheckPageEnter(arg_13_0, arg_13_1)
 	if not arg_13_0.enteredPage_[arg_13_1] then
-		arg_13_0.enterTimer = TimeTools.StartAfterSeconds(0.05, function()
-			if arg_13_0.enterTimer == nil then
+		arg_13_0.enterTimerDic[arg_13_1] = TimeTools.StartAfterSeconds(0.05, function()
+			if arg_13_0.enterTimerDic[arg_13_1] == nil then
 				return
 			end
 
 			arg_13_0.pages_[arg_13_1]:OnEnter()
 
 			arg_13_0.enteredPage_[arg_13_1] = true
-			arg_13_0.enterTimer = nil
+			arg_13_0.enterTimerDic[arg_13_1] = nil
 		end, {})
 	end
 end
@@ -322,6 +323,12 @@ function var_0_0.OnExit(arg_18_0)
 	end
 
 	arg_18_0.enterTimer = nil
+
+	for iter_18_2, iter_18_3 in pairs(arg_18_0.enterTimerDic) do
+		iter_18_3:Stop()
+	end
+
+	arg_18_0.enterTimerDic = {}
 
 	arg_18_0:UnbindRedPoint()
 	manager.windowBar:HideBar()

@@ -893,7 +893,7 @@ function var_0_0.Init(arg_2_0)
 		local var_2_114 = var_2_113[iter_2_108]
 		local var_2_115 = {}
 
-		for iter_2_109, iter_2_110 in ipairs(var_2_114) do
+		for iter_2_109, iter_2_110 in ipairs(var_2_114 or {}) do
 			table.insert(var_2_115, string.format("%s_%s", RedPointConst.ZUMA_OPEN, iter_2_110.activity_id))
 		end
 
@@ -904,6 +904,7 @@ function var_0_0.Init(arg_2_0)
 	end
 
 	arg_2_0:addGroup(RedPointConst.ZUMA .. ActivityConst.ACTIVITY_ZUMA, var_2_112)
+	arg_2_0:addGroup(RedPointConst.ZUMA .. ActivityConst.ACTIVITY_3_11_ZUMA, var_2_112)
 
 	local var_2_117 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.STRATEGY_MATRIX] or {}
 
@@ -1463,39 +1464,19 @@ function var_0_0.Init(arg_2_0)
 	arg_2_0:addGroup(ActivityTools.GetRedPointKey(ActivityConst.ACTIVITY_WATER_PIPE_HOME) .. ActivityConst.ACTIVITY_WATER_PIPE_HOME, var_2_185)
 
 	local var_2_187 = {}
+	local var_2_188 = {}
+	local var_2_189 = ActivityCfg[ActivityConst.ACTIVITY_RED_ENVELOPE].sub_activity_list
 
-	for iter_2_181, iter_2_182 in ipairs(SandplayIlluGroupCfg.all) do
-		local var_2_188 = string.format("%s_%s", RedPointConst.ACTIVITY_SANDPLAY_ILLU_GROUP, iter_2_182)
-
-		table.insert(var_2_187, var_2_188)
-
-		local var_2_189 = {}
-
-		for iter_2_183, iter_2_184 in ipairs(SandplayIlluCfg.get_id_list_by_type[iter_2_182]) do
-			local var_2_190 = string.format("%s_%s", RedPointConst.ACTIVITY_SANDPLAY_ILLU_ITEM, iter_2_184)
-
-			table.insert(var_2_189, var_2_190)
-		end
-
-		arg_2_0:addGroup(var_2_188, var_2_189)
+	for iter_2_181, iter_2_182 in ipairs(var_2_189) do
+		table.insert(var_2_187, RedPointConst.ACTIVITY_RED_ENVELOPE_NEW_DAY .. "_" .. iter_2_182)
+		table.insert(var_2_188, RedPointConst.ACTIVITY_RED_ENVELOPE_CAN_CLAIMED .. "_" .. iter_2_182)
 	end
 
-	arg_2_0:addGroup(RedPointConst.ACTIVITY_SANDPLAY_ILLU, var_2_187)
+	local var_2_190 = ActivityTools.GetRedPointKey(ActivityConst.ACTIVITY_RED_ENVELOPE) .. ActivityConst.ACTIVITY_RED_ENVELOPE
 
-	local var_2_191 = {}
-	local var_2_192 = {}
-	local var_2_193 = ActivityCfg[ActivityConst.ACTIVITY_RED_ENVELOPE].sub_activity_list
-
-	for iter_2_185, iter_2_186 in ipairs(var_2_193) do
-		table.insert(var_2_191, RedPointConst.ACTIVITY_RED_ENVELOPE_NEW_DAY .. "_" .. iter_2_186)
-		table.insert(var_2_192, RedPointConst.ACTIVITY_RED_ENVELOPE_CAN_CLAIMED .. "_" .. iter_2_186)
-	end
-
-	local var_2_194 = ActivityTools.GetRedPointKey(ActivityConst.ACTIVITY_RED_ENVELOPE) .. ActivityConst.ACTIVITY_RED_ENVELOPE
-
-	arg_2_0:addGroup(RedPointConst.ACTIVITY_RED_ENVELOPE_NEW_DAY .. "_" .. ActivityConst.ACTIVITY_RED_ENVELOPE, var_2_191)
-	arg_2_0:addGroup(RedPointConst.ACTIVITY_RED_ENVELOPE_CAN_CLAIMED .. "_" .. ActivityConst.ACTIVITY_RED_ENVELOPE, var_2_192)
-	arg_2_0:addGroup(var_2_194, {
+	arg_2_0:addGroup(RedPointConst.ACTIVITY_RED_ENVELOPE_NEW_DAY .. "_" .. ActivityConst.ACTIVITY_RED_ENVELOPE, var_2_187)
+	arg_2_0:addGroup(RedPointConst.ACTIVITY_RED_ENVELOPE_CAN_CLAIMED .. "_" .. ActivityConst.ACTIVITY_RED_ENVELOPE, var_2_188)
+	arg_2_0:addGroup(var_2_190, {
 		RedPointConst.ACTIVITY_RED_ENVELOPE_NEW_DAY .. "_" .. ActivityConst.ACTIVITY_RED_ENVELOPE,
 		RedPointConst.ACTIVITY_RED_ENVELOPE_CAN_CLAIMED .. "_" .. ActivityConst.ACTIVITY_RED_ENVELOPE
 	})

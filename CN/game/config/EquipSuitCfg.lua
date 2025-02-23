@@ -882,12 +882,12 @@
 	{
 		name = "时序的轮回",
 		equip_skill_icon = "56",
-		stage_up_list = 0,
+		stage_up_list = 1,
 		power_score = 10,
 		desc = "「时序一如指间流沙，不断轮回，无限重复。」",
 		need = 3,
 		inherit_cost_type = 1,
-		equip_type = 1,
+		equip_type = 0,
 		id = 56,
 		icon = "56",
 		suit = 56,
@@ -1039,7 +1039,26 @@
 			65
 		}
 	},
+	{
+		name = "万卷明宗",
+		equip_skill_icon = "66",
+		stage_up_list = 0,
+		power_score = 10,
+		desc = "「知情通理，明德幽远，一言以蔽万物。」",
+		need = 3,
+		inherit_cost_type = 1,
+		equip_type = 0,
+		id = 66,
+		icon = "66",
+		suit = 66,
+		suit_effect = {
+			66
+		}
+	},
 	get_id_list_by_suit = {
+		[66] = {
+			66
+		},
 		[65] = {
 			65
 		},
@@ -1277,7 +1296,6 @@
 			53,
 			54,
 			55,
-			56,
 			57,
 			58,
 			59,
@@ -1306,7 +1324,9 @@
 			41,
 			42,
 			45,
-			60
+			56,
+			60,
+			66
 		}
 	},
 	all = {
@@ -1374,6 +1394,7 @@
 		62,
 		63,
 		64,
-		65
+		65,
+		66
 	}
 }

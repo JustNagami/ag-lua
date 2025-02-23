@@ -26,8 +26,6 @@ function var_0_0.InitUI(arg_5_0)
 
 	arg_5_0.controller = arg_5_0.allBtnController_:GetController("all")
 	arg_5_0.rewardItems_ = {}
-
-	SetActive(arg_5_0[string.format("awardItem%dObj_", 3)], false)
 end
 
 function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
@@ -39,10 +37,6 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
 end
 
 function var_0_0.UpdateView(arg_7_0)
-	for iter_7_0 = 1, 3 do
-		SetActive(arg_7_0[string.format("awardItem%dObj_", iter_7_0)], false)
-	end
-
 	arg_7_0:UpdateNormalView()
 end
 
@@ -84,7 +78,7 @@ function var_0_0.UpdateNormalView(arg_8_0)
 
 		var_8_1.id = iter_8_1[1]
 		var_8_1.number = iter_8_1[2]
-		var_8_1.completedFlag = TaskData2:GetTaskComplete(arg_8_0.data.id)
+		var_8_1.grayFlag = TaskData2:GetTaskComplete(arg_8_0.data.id)
 
 		function var_8_1.clickFun(arg_9_0)
 			ShowPopItem(POP_ITEM, {
@@ -101,29 +95,25 @@ function var_0_0.UpdateNormalView(arg_8_0)
 	end
 end
 
-function var_0_0.UpdateTime(arg_10_0)
-	arg_10_0.remainTxt_.text = manager.time:GetLostTimeStrWith2Unit(ActivityData:GetActivityData(arg_10_0.activityId).stopTime, true)
+function var_0_0.OnEnter(arg_10_0)
+	arg_10_0:UpdateView()
 end
 
-function var_0_0.OnEnter(arg_11_0)
-	arg_11_0:UpdateView()
-end
+function var_0_0.Dispose(arg_11_0)
+	if arg_11_0.list then
+		arg_11_0.list:Dispose()
 
-function var_0_0.Dispose(arg_12_0)
-	if arg_12_0.list then
-		arg_12_0.list:Dispose()
-
-		arg_12_0.list = nil
+		arg_11_0.list = nil
 	end
 
-	for iter_12_0, iter_12_1 in pairs(arg_12_0.rewardItems_) do
-		iter_12_1:Dispose()
+	for iter_11_0, iter_11_1 in pairs(arg_11_0.rewardItems_) do
+		iter_11_1:Dispose()
 	end
 
-	arg_12_0.rewardItems_ = {}
+	arg_11_0.rewardItems_ = {}
 
-	var_0_0.super.Dispose(arg_12_0)
-	Object.Destroy(arg_12_0.gameObject_)
+	var_0_0.super.Dispose(arg_11_0)
+	Object.Destroy(arg_11_0.gameObject_)
 end
 
 return var_0_0

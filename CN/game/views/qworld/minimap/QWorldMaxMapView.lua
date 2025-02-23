@@ -85,7 +85,7 @@ function var_0_0.AddUIListener(arg_5_0)
 		local var_9_0 = arg_5_0.curBoardInfo:GetTeleportId()
 
 		if var_9_0 ~= 0 then
-			arg_5_0:Back()
+			QWorldUIShow()
 			QWorldTeleport(var_9_0)
 		end
 	end)
@@ -98,6 +98,7 @@ function var_0_0.AddUIListener(arg_5_0)
 			OkCallback = function()
 				QWorldMgr:StartBlackFade(0.5, 0.5, 1, function()
 					arg_5_0:Back()
+					manager.notify:Invoke(QWORLD_TELEPORT, -1)
 					QWorldLuaBridge.TeleportToStageOrigin()
 				end)
 			end

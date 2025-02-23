@@ -79,6 +79,8 @@ end
 function var_0_0.IndexNpcHeadItem(arg_9_0, arg_9_1, arg_9_2)
 	arg_9_2:SetData(arg_9_0.npcList_[arg_9_1])
 	arg_9_2:SetClickCallBack(function(arg_10_0)
+		arg_9_2:CancelRedPoint()
+
 		if arg_10_0 == arg_9_0.selectNpc_ then
 			return
 		end

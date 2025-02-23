@@ -26,6 +26,10 @@ function var_0_0.InitUI(arg_3_0)
 	ComponentBinder.GetInstance():BindCfgUI(arg_3_0, arg_3_0.gameObject_)
 
 	arg_3_0.breakGuideTrs_ = arg_3_0.btnBreakGuide_.gameObject:GetComponent(typeof(RectTransform))
+
+	if arg_3_0.btnSkipGo_ then
+		SetActive(arg_3_0.btnSkipGo_, false)
+	end
 end
 
 function var_0_0.AddUIListener(arg_4_0)

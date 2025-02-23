@@ -66,7 +66,7 @@ end
 function var_0_0.RefreshViewBtn(arg_10_0)
 	local var_10_0 = ItemCfg[arg_10_0.itemInfo_.id]
 
-	if var_10_0.type == ItemConst.ITEM_TYPE.WEAPON_SERVANT or var_10_0.type == ItemConst.ITEM_TYPE.STICKER_BG or var_10_0.type == ItemConst.ITEM_TYPE.STICKER_FG then
+	if var_10_0.type == ItemConst.ITEM_TYPE.WEAPON_SERVANT and not arg_10_0.extraInfo_.isSettlement or var_10_0.type == ItemConst.ITEM_TYPE.STICKER_BG or var_10_0.type == ItemConst.ITEM_TYPE.STICKER_FG then
 		arg_10_0.viewController:SetSelectedState("state1")
 	else
 		arg_10_0.viewController:SetSelectedState(var_0_1[arg_10_0.itemInfo_.id] and "state1" or "state0")

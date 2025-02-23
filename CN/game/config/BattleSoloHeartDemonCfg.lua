@@ -3569,6 +3569,111 @@
 			0
 		}
 	},
+	[3080601] = {
+		tips = "",
+		name = "九司",
+		ai_level = 1,
+		map = "40610601",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080601,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080602] = {
+		tips = "",
+		name = "九司",
+		ai_level = 1,
+		map = "40610602",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080602,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3080603] = {
+		tips = "",
+		name = "九司",
+		ai_level = 1,
+		map = "40610603",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3080603,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		hero_list = {
+			{
+				1060,
+				3081060
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
 	all = {
 		3080741,
 		3080742,
@@ -3671,6 +3776,9 @@
 		3080673,
 		3080611,
 		3080612,
-		3080613
+		3080613,
+		3080601,
+		3080602,
+		3080603
 	}
 }

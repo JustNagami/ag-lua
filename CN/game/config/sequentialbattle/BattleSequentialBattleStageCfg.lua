@@ -587,6 +587,594 @@
 			0
 		}
 	},
+	[5230411] = {
+		monster_level = 80,
+		name = "任务Ⅰ",
+		ai_level = 4,
+		id = 5230411,
+		map = "5230411",
+		tips = "",
+		next_stage_id = 5230412,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			14000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230412] = {
+		monster_level = 80,
+		name = "任务Ⅰ",
+		ai_level = 4,
+		id = 5230412,
+		map = "5230412",
+		tips = "",
+		next_stage_id = 5230413,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			2000,
+			1000,
+			33000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230413] = {
+		monster_level = 80,
+		name = "任务Ⅰ",
+		ai_level = 4,
+		id = 5230413,
+		map = "5230413",
+		tips = "",
+		next_stage_id = 5230414,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			50000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230414] = {
+		monster_level = 80,
+		name = "任务Ⅰ",
+		ai_level = 4,
+		id = 5230414,
+		map = "5230414",
+		tips = "",
+		next_stage_id = 0,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			46000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230421] = {
+		monster_level = 80,
+		name = "任务Ⅱ",
+		ai_level = 4,
+		id = 5230421,
+		map = "5230421",
+		tips = "",
+		next_stage_id = 5230422,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			14000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230422] = {
+		monster_level = 80,
+		name = "任务Ⅱ",
+		ai_level = 4,
+		id = 5230422,
+		map = "5230422",
+		tips = "",
+		next_stage_id = 5230423,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			2000,
+			1000,
+			33000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230423] = {
+		monster_level = 80,
+		name = "任务Ⅱ",
+		ai_level = 4,
+		id = 5230423,
+		map = "5230423",
+		tips = "",
+		next_stage_id = 5230424,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			50000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230424] = {
+		monster_level = 80,
+		name = "任务Ⅱ",
+		ai_level = 4,
+		id = 5230424,
+		map = "5230424",
+		tips = "",
+		next_stage_id = 0,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			50000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230431] = {
+		monster_level = 80,
+		name = "任务Ⅲ",
+		ai_level = 4,
+		id = 5230431,
+		map = "5230431",
+		tips = "",
+		next_stage_id = 5230432,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			14000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230432] = {
+		monster_level = 80,
+		name = "任务Ⅲ",
+		ai_level = 4,
+		id = 5230432,
+		map = "5230432",
+		tips = "",
+		next_stage_id = 5230433,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			2000,
+			1000,
+			33000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230433] = {
+		monster_level = 80,
+		name = "任务Ⅲ",
+		ai_level = 4,
+		id = 5230433,
+		map = "5230433",
+		tips = "",
+		next_stage_id = 5230434,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			50000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230434] = {
+		monster_level = 80,
+		name = "任务Ⅲ",
+		ai_level = 4,
+		id = 5230434,
+		map = "5230434",
+		tips = "",
+		next_stage_id = 0,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			46000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230441] = {
+		monster_level = 80,
+		name = "任务Ⅳ",
+		ai_level = 4,
+		id = 5230441,
+		map = "5230441",
+		tips = "",
+		next_stage_id = 5230442,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			14000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230442] = {
+		monster_level = 80,
+		name = "任务Ⅳ",
+		ai_level = 4,
+		id = 5230442,
+		map = "5230442",
+		tips = "",
+		next_stage_id = 5230443,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			2000,
+			1000,
+			33000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230443] = {
+		monster_level = 80,
+		name = "任务Ⅳ",
+		ai_level = 4,
+		id = 5230443,
+		map = "5230443",
+		tips = "",
+		next_stage_id = 5230444,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			50000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230444] = {
+		monster_level = 80,
+		name = "任务Ⅳ",
+		ai_level = 4,
+		id = 5230444,
+		map = "5230444",
+		tips = "",
+		next_stage_id = 0,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			55000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230451] = {
+		monster_level = 80,
+		name = "任务Ⅴ",
+		ai_level = 4,
+		id = 5230451,
+		map = "5230451",
+		tips = "",
+		next_stage_id = 5230452,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			14000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230452] = {
+		monster_level = 80,
+		name = "任务Ⅴ",
+		ai_level = 4,
+		id = 5230452,
+		map = "5230452",
+		tips = "",
+		next_stage_id = 5230453,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			2000,
+			1000,
+			33000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230453] = {
+		monster_level = 80,
+		name = "任务Ⅴ",
+		ai_level = 4,
+		id = 5230453,
+		map = "5230453",
+		tips = "",
+		next_stage_id = 5230454,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			50000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230454] = {
+		monster_level = 80,
+		name = "任务Ⅴ",
+		ai_level = 4,
+		id = 5230454,
+		map = "5230454",
+		tips = "",
+		next_stage_id = 0,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			50000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230461] = {
+		monster_level = 80,
+		name = "任务Ⅵ",
+		ai_level = 4,
+		id = 5230461,
+		map = "5230461",
+		tips = "",
+		next_stage_id = 5230462,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			14000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230462] = {
+		monster_level = 80,
+		name = "任务Ⅵ",
+		ai_level = 4,
+		id = 5230462,
+		map = "5230462",
+		tips = "",
+		next_stage_id = 5230463,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			2000,
+			1000,
+			33000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230463] = {
+		monster_level = 80,
+		name = "任务Ⅵ",
+		ai_level = 4,
+		id = 5230463,
+		map = "5230463",
+		tips = "",
+		next_stage_id = 5230464,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			50000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230464] = {
+		monster_level = 80,
+		name = "任务Ⅵ",
+		ai_level = 4,
+		id = 5230464,
+		map = "5230464",
+		tips = "",
+		next_stage_id = 0,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			50000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230471] = {
+		monster_level = 80,
+		name = "任务Ⅶ",
+		ai_level = 4,
+		id = 5230471,
+		map = "5230471",
+		tips = "",
+		next_stage_id = 5230472,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			14000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230472] = {
+		monster_level = 80,
+		name = "任务Ⅶ",
+		ai_level = 4,
+		id = 5230472,
+		map = "5230472",
+		tips = "",
+		next_stage_id = 5230473,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			2000,
+			1000,
+			33000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230473] = {
+		monster_level = 80,
+		name = "任务Ⅶ",
+		ai_level = 4,
+		id = 5230473,
+		map = "5230473",
+		tips = "",
+		next_stage_id = 5230474,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			50000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
+	[5230474] = {
+		monster_level = 80,
+		name = "任务Ⅶ",
+		ai_level = 4,
+		id = 5230474,
+		map = "5230474",
+		tips = "",
+		next_stage_id = 0,
+		need_default_team = 0,
+		background_1 = "difficult_1",
+		affix_type_in_map = "",
+		attribute_factor = {
+			1000,
+			1000,
+			50000
+		},
+		team_type = {
+			302,
+			0
+		}
+	},
 	all = {
 		5060611,
 		5060612,
@@ -615,6 +1203,34 @@
 		5060671,
 		5060672,
 		5060673,
-		5060674
+		5060674,
+		5230411,
+		5230412,
+		5230413,
+		5230414,
+		5230421,
+		5230422,
+		5230423,
+		5230424,
+		5230431,
+		5230432,
+		5230433,
+		5230434,
+		5230441,
+		5230442,
+		5230443,
+		5230444,
+		5230451,
+		5230452,
+		5230453,
+		5230454,
+		5230461,
+		5230462,
+		5230463,
+		5230464,
+		5230471,
+		5230472,
+		5230473,
+		5230474
 	}
 }

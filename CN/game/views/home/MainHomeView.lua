@@ -68,6 +68,7 @@ function var_0_0.OnEnter(arg_7_0)
 	manager.ui:ShowBackground(false)
 	arg_7_0:CheckHomeSceneInteration(true)
 	arg_7_0:ClearHeroFilter()
+	DormRedPointTools:RefreshIlluDanceNew()
 end
 
 function var_0_0.OnTop(arg_8_0)
@@ -82,6 +83,7 @@ function var_0_0.OnTopFunc(arg_9_0)
 	arg_9_0:InitBar()
 	RedPointAction.UpdateSDKRedPoint()
 	arg_9_0:CheckNeedPopWindow()
+	arg_9_0:UpdateActivityLoginRedPoint()
 end
 
 function var_0_0.OnExit(arg_10_0)
@@ -311,6 +313,9 @@ function var_0_0.CheckNeedPopWindow(arg_19_0)
 			arg_19_0:PlayHeroGreeting()
 		end
 
+		manager.gc:Collect()
+		Resources.UnloadUnusedAssets()
+
 		arg_19_0.params_.isFirstCheck = false
 	end
 
@@ -341,159 +346,163 @@ function var_0_0.CheckNeedPopWindow(arg_19_0)
 	arg_19_0:StartShowTimer(var_19_16)
 end
 
-function var_0_0.RemovePosterTween(arg_20_0)
-	if arg_20_0.posterTween_ then
-		arg_20_0.posterTween_:setOnComplete(nil):setOnUpdate(nil):setEase(nil)
-		LeanTween.cancel(arg_20_0.posterTween_.id)
+function var_0_0.UpdateActivityLoginRedPoint(arg_20_0)
+	ActivityAutoCookAction.UpdateLoginRedPoint()
+end
 
-		arg_20_0.posterTween_ = nil
+function var_0_0.RemovePosterTween(arg_21_0)
+	if arg_21_0.posterTween_ then
+		arg_21_0.posterTween_:setOnComplete(nil):setOnUpdate(nil):setEase(nil)
+		LeanTween.cancel(arg_21_0.posterTween_.id)
+
+		arg_21_0.posterTween_ = nil
 	end
 end
 
-function var_0_0.HideTimeline(arg_21_0)
-	if arg_21_0.timelines_ then
-		local var_21_0 = arg_21_0.timelines_:GetComponentsInChildren(typeof(UnityEngine.Transform), true)
+function var_0_0.HideTimeline(arg_22_0)
+	if arg_22_0.timelines_ then
+		local var_22_0 = arg_22_0.timelines_:GetComponentsInChildren(typeof(UnityEngine.Transform), true)
 
-		for iter_21_0, iter_21_1 in pairs(var_21_0:ToTable()) do
-			if iter_21_1.name ~= arg_21_0.timelines_.name then
-				SetActive(iter_21_1.gameObject, false)
+		for iter_22_0, iter_22_1 in pairs(var_22_0:ToTable()) do
+			if iter_22_1.name ~= arg_22_0.timelines_.name then
+				SetActive(iter_22_1.gameObject, false)
 			end
 		end
 	end
 end
 
-function var_0_0.OnClickBg(arg_22_0)
-	if arg_22_0.isHide_ then
-		arg_22_0:StartViewHideTimer()
+function var_0_0.OnClickBg(arg_23_0)
+	if arg_23_0.isHide_ then
+		arg_23_0:StartViewHideTimer()
 	end
 end
 
-function var_0_0.OnHomeSignUpdate(arg_23_0)
-	arg_23_0:CheckNeedPopWindow()
+function var_0_0.OnHomeSignUpdate(arg_24_0)
+	arg_24_0:CheckNeedPopWindow()
 end
 
-function var_0_0.OnChangeNickname(arg_24_0, arg_24_1)
-	arg_24_0.name_.text = GetI18NText(arg_24_1.nick)
+function var_0_0.OnChangeNickname(arg_25_0, arg_25_1)
+	arg_25_0.name_.text = GetI18NText(arg_25_1.nick)
 end
 
-function var_0_0.OnHeroGiftReward(arg_25_0)
-	arg_25_0:CheckHeroGiftActivite()
+function var_0_0.OnHeroGiftReward(arg_26_0)
+	arg_26_0:CheckHeroGiftActivite()
 end
 
-function var_0_0.ShowPosterGirlBtn(arg_26_0)
-	arg_26_0:SwitchPosterGirlPanel(true)
-
-	if arg_26_0.hideChangeBtnDelayTimer_ ~= nil then
-		arg_26_0.hideChangeBtnDelayTimer_:Reset()
-	else
-		arg_26_0.hideChangeBtnDelayTimer_ = Timer.New(handler(arg_26_0, arg_26_0.HidePosterGirlBtn), 3, 1)
-
-		arg_26_0.hideChangeBtnDelayTimer_:Start()
-	end
-end
-
-function var_0_0.HidePosterGirlBtn(arg_27_0)
-	arg_27_0:SwitchPosterGirlPanel(false)
+function var_0_0.ShowPosterGirlBtn(arg_27_0)
+	arg_27_0:SwitchPosterGirlPanel(true)
 
 	if arg_27_0.hideChangeBtnDelayTimer_ ~= nil then
-		arg_27_0.hideChangeBtnDelayTimer_:Stop()
-
-		arg_27_0.hideChangeBtnDelayTimer_ = nil
-	end
-end
-
-function var_0_0.SwitchPosterGirlPanel(arg_28_0, arg_28_1)
-	SetActive(arg_28_0.changeGirlBtn, arg_28_1)
-	SetActive(arg_28_0.changeSkinBtn, arg_28_1)
-	SetActive(arg_28_0.btn_giftGo_, arg_28_1)
-
-	local var_28_0 = false
-	local var_28_1 = false
-
-	if arg_28_1 then
-		local var_28_2 = HeroTools.HeroUsingSkinInfo(arg_28_0.posterGirl_).id
-		local var_28_3 = SkinSceneActionCfg[var_28_2]
-
-		if var_28_3 and HomeSceneSettingData:GetUsedState(var_28_3.special_scene_id) ~= SceneConst.HOME_SCENE_TYPE.LOCK and HomeSceneSettingCfg[var_28_3.special_scene_id].limit_display ~= 1 then
-			SetActive(arg_28_0.btn_DlcGo_, true)
-		else
-			SetActive(arg_28_0.btn_DlcGo_, false)
-		end
-
-		local var_28_4 = manager.posterGirl:GetViewDirect()
-		local var_28_5 = HomeSceneSettingData:GetCurScene()
-
-		if PosterGirlTools.IsSkinSceneTzeroMode(var_28_2, var_28_5) and var_28_4 == PosterGirlConst.ViewDirect.center then
-			SetActive(arg_28_0.btn_infoGo_, true)
-		else
-			SetActive(arg_28_0.btn_infoGo_, false)
-		end
-
-		var_28_0 = PosterGirlTools.HasTimeEffect(var_28_2, var_28_5)
-		var_28_1 = PosterGirlTools.HasWeatherEffect(var_28_2, var_28_5)
+		arg_27_0.hideChangeBtnDelayTimer_:Reset()
 	else
-		SetActive(arg_28_0.btn_infoGo_, false)
-		SetActive(arg_28_0.btn_DlcGo_, false)
-	end
+		arg_27_0.hideChangeBtnDelayTimer_ = Timer.New(handler(arg_27_0, arg_27_0.HidePosterGirlBtn), 3, 1)
 
-	SetActive(arg_28_0.timeSwitchBtn_.gameObject, var_28_0)
-	SetActive(arg_28_0.weatherSwitchBtn_.gameObject, var_28_1)
+		arg_27_0.hideChangeBtnDelayTimer_:Start()
+	end
 end
 
-function var_0_0.MuteAudio(arg_29_0)
+function var_0_0.HidePosterGirlBtn(arg_28_0)
+	arg_28_0:SwitchPosterGirlPanel(false)
+
+	if arg_28_0.hideChangeBtnDelayTimer_ ~= nil then
+		arg_28_0.hideChangeBtnDelayTimer_:Stop()
+
+		arg_28_0.hideChangeBtnDelayTimer_ = nil
+	end
+end
+
+function var_0_0.SwitchPosterGirlPanel(arg_29_0, arg_29_1)
+	SetActive(arg_29_0.changeGirlBtn, arg_29_1)
+	SetActive(arg_29_0.changeSkinBtn, arg_29_1)
+	SetActive(arg_29_0.btn_giftGo_, arg_29_1)
+
+	local var_29_0 = false
+	local var_29_1 = false
+
+	if arg_29_1 then
+		local var_29_2 = HeroTools.HeroUsingSkinInfo(arg_29_0.posterGirl_).id
+		local var_29_3 = SkinSceneActionCfg[var_29_2]
+
+		if var_29_3 and HomeSceneSettingData:GetUsedState(var_29_3.special_scene_id) ~= SceneConst.HOME_SCENE_TYPE.LOCK and HomeSceneSettingCfg[var_29_3.special_scene_id].limit_display ~= 1 then
+			SetActive(arg_29_0.btn_DlcGo_, true)
+		else
+			SetActive(arg_29_0.btn_DlcGo_, false)
+		end
+
+		local var_29_4 = manager.posterGirl:GetViewDirect()
+		local var_29_5 = HomeSceneSettingData:GetCurScene()
+
+		if PosterGirlTools.IsSkinSceneTzeroMode(var_29_2, var_29_5) and var_29_4 == PosterGirlConst.ViewDirect.center then
+			SetActive(arg_29_0.btn_infoGo_, true)
+		else
+			SetActive(arg_29_0.btn_infoGo_, false)
+		end
+
+		var_29_0 = PosterGirlTools.HasTimeEffect(var_29_2, var_29_5)
+		var_29_1 = PosterGirlTools.HasWeatherEffect(var_29_2, var_29_5)
+	else
+		SetActive(arg_29_0.btn_infoGo_, false)
+		SetActive(arg_29_0.btn_DlcGo_, false)
+	end
+
+	SetActive(arg_29_0.timeSwitchBtn_.gameObject, var_29_0)
+	SetActive(arg_29_0.weatherSwitchBtn_.gameObject, var_29_1)
+end
+
+function var_0_0.MuteAudio(arg_30_0)
 	HeroTools.StopTalk()
 
-	if arg_29_0.multiTouchTimer_ ~= nil then
-		arg_29_0.multiTouchTimer_:Stop()
+	if arg_30_0.multiTouchTimer_ ~= nil then
+		arg_30_0.multiTouchTimer_:Stop()
 
-		arg_29_0.multiTouchTimer_ = nil
+		arg_30_0.multiTouchTimer_ = nil
 	end
 
-	SetActive(arg_29_0.talkBubbleGo_, false)
+	SetActive(arg_30_0.talkBubbleGo_, false)
 
-	arg_29_0.talking_ = false
+	arg_30_0.talking_ = false
 end
 
-function var_0_0.ShakingAni(arg_30_0)
+function var_0_0.ShakingAni(arg_31_0)
 	manager.posterGirl:DoShacking()
 end
 
-function var_0_0.OnHomeSceneChange(arg_31_0, arg_31_1, arg_31_2)
+function var_0_0.OnHomeSceneChange(arg_32_0, arg_32_1, arg_32_2)
 	manager.transition:OnlyShowEffect(true, function()
 		manager.loadScene:ForceSetShouldLoadSceneName("home", function()
-			if arg_31_0.OnlyShowEffectExiting_ then
+			if arg_32_0.OnlyShowEffectExiting_ then
 				return
 			end
 
-			arg_31_0:MuteAudio()
-			arg_31_0:SetCamera()
+			arg_32_0:MuteAudio()
+			arg_32_0:SetCamera()
 			manager.posterGirl:RefreshModel()
-			manager.posterGirl:InitTouchHelp(arg_31_0.mutiTouchHelper_)
+			manager.posterGirl:InitTouchHelp(arg_32_0.mutiTouchHelper_)
 
 			if manager.posterGirl:CheckDebut() then
 				manager.windowBar:SwitchBar({})
-				arg_31_0.sceneCon_:SetSelectedState("off")
+				arg_32_0.sceneCon_:SetSelectedState("off")
 			end
 
-			arg_31_0:HidePosterGirlBtn()
+			arg_32_0:HidePosterGirlBtn()
 
-			arg_31_0.OnlyShowEffectExiting_ = true
+			arg_32_0.OnlyShowEffectExiting_ = true
 
 			manager.transition:OnlyShowEffect(false)
 
-			arg_31_0.OnlyShowEffectExiting_ = false
+			arg_32_0.OnlyShowEffectExiting_ = false
 
-			local var_33_0 = SettingData:GetHomeSceneSettingData()
-			local var_33_1 = HomeSceneSettingData:GetCurScene()
-			local var_33_2 = HomeSceneSettingCfg[var_33_1]
-			local var_33_3 = var_33_2.scene_setting
-			local var_33_4 = var_33_2.default_music
+			local var_34_0 = SettingData:GetHomeSceneSettingData()
+			local var_34_1 = HomeSceneSettingData:GetCurScene()
+			local var_34_2 = HomeSceneSettingCfg[var_34_1]
+			local var_34_3 = var_34_2.scene_setting
+			local var_34_4 = var_34_2.default_music
 
-			if var_33_0.home_scene_scene_bgm == 0 or var_33_4 == 0 then
+			if var_34_0.home_scene_scene_bgm == 0 or var_34_4 == 0 then
 				-- block empty
 			else
-				if var_33_0.home_scene_scene_bgm == 1 and var_33_4 ~= 0 and var_33_0.home_scene_scene_bgm == 1 and table.indexof(var_33_3, HomeSceneSettingConst.SETTING.SCENE_BGM) then
-					IllustratedAction.QuerySetBgm(var_33_4)
+				if var_34_0.home_scene_scene_bgm == 1 and var_34_4 ~= 0 and var_34_0.home_scene_scene_bgm == 1 and table.indexof(var_34_3, HomeSceneSettingConst.SETTING.SCENE_BGM) then
+					IllustratedAction.QuerySetBgm(var_34_4)
 				end
 
 				PlayGameSetBGM()
@@ -505,153 +514,151 @@ function var_0_0.OnHomeSceneChange(arg_31_0, arg_31_1, arg_31_2)
 	end)
 end
 
-function var_0_0.SetCamera(arg_34_0)
-	local var_34_0 = HomeSceneSettingData:GetCurScene()
-	local var_34_1 = "home_" .. var_34_0
+function var_0_0.SetCamera(arg_35_0)
+	local var_35_0 = HomeSceneSettingData:GetCurScene()
+	local var_35_1 = "home_" .. var_35_0
 
-	if CameraCfg[var_34_1] then
-		manager.ui:SetMainCamera(var_34_1)
+	if CameraCfg[var_35_1] then
+		manager.ui:SetMainCamera(var_35_1)
 	else
 		manager.ui:SetMainCamera("home")
 	end
 end
 
-function var_0_0.CheckIsNeedPlayShowingAni(arg_35_0)
-	local var_35_0 = false
+function var_0_0.CheckIsNeedPlayShowingAni(arg_36_0)
+	local var_36_0 = false
 
-	if arg_35_0.params_.changePoster then
-		arg_35_0.params_.changePoster = nil
+	if arg_36_0.params_.changePoster then
+		arg_36_0.params_.changePoster = nil
 
-		if not arg_35_0.assistantVoiceTime_ or Time.realtimeSinceStartup - arg_35_0.assistantVoiceTime_ >= HeroConst.SET_ASSISTANT_VOICE_CD then
-			arg_35_0.assistantVoiceTime_ = Time.realtimeSinceStartup
+		if not arg_36_0.assistantVoiceTime_ or Time.realtimeSinceStartup - arg_36_0.assistantVoiceTime_ >= HeroConst.SET_ASSISTANT_VOICE_CD then
+			arg_36_0.assistantVoiceTime_ = Time.realtimeSinceStartup
 
 			manager.posterGirl:DoShowing()
 
-			local var_35_1 = true
+			local var_36_1 = true
 		end
 	end
 end
 
-function var_0_0.CheckHomeSceneInteration(arg_36_0)
+function var_0_0.CheckHomeSceneInteration(arg_37_0)
 	manager.windowBar:ClearWhereTag()
-	arg_36_0:SetCamera()
+	arg_37_0:SetCamera()
 
-	arg_36_0.isHide_ = false
-	arg_36_0.userData_ = PlayerData:GetPlayerInfo()
-	arg_36_0.posterGirl_ = PlayerData:GetPosterGirlHeroId()
-	arg_36_0.skinId_ = HeroTools.HeroUsingSkinInfo(arg_36_0.posterGirl_).id
+	arg_37_0.isHide_ = false
+	arg_37_0.userData_ = PlayerData:GetPlayerInfo()
+	arg_37_0.posterGirl_ = PlayerData:GetPosterGirlHeroId()
+	arg_37_0.skinId_ = HeroTools.HeroUsingSkinInfo(arg_37_0.posterGirl_).id
 
 	manager.posterGirl:SetViewTag(PosterGirlConst.ViewTag.home)
-	manager.posterGirl:InitTouchHelp(arg_36_0.mutiTouchHelper_)
+	manager.posterGirl:InitTouchHelp(arg_37_0.mutiTouchHelper_)
 
 	if not manager.guide:IsPlaying() and manager.posterGirl:CheckDebut() then
-		arg_36_0.wait_posetr_debut = true
+		arg_37_0.wait_posetr_debut = true
 
 		manager.windowBar:SwitchBar({})
-		arg_36_0.sceneCon_:SetSelectedState("off")
+		arg_37_0.sceneCon_:SetSelectedState("off")
 	else
-		arg_36_0.sceneCon_:SetSelectedState("on")
-		arg_36_0:OnEnterFunc()
-		arg_36_0:CheckIsNeedPlayShowingAni()
+		arg_37_0.sceneCon_:SetSelectedState("on")
+		arg_37_0:OnEnterFunc()
+		arg_37_0:CheckIsNeedPlayShowingAni()
 	end
 
 	manager.loadScene:SetHomeSceneSoundEffect()
-	manager.gc:Collect()
-	Resources.UnloadUnusedAssets()
 end
 
-function var_0_0.OnHomeDebutOver(arg_37_0)
-	if arg_37_0.wait_posetr_debut then
-		arg_37_0:OnEnterFunc()
-		arg_37_0:OnTopFunc()
+function var_0_0.OnHomeDebutOver(arg_38_0)
+	if arg_38_0.wait_posetr_debut then
+		arg_38_0:OnEnterFunc()
+		arg_38_0:OnTopFunc()
 	end
 
-	arg_37_0:InitBar()
-	arg_37_0.sceneCon_:SetSelectedState("on")
+	arg_38_0:InitBar()
+	arg_38_0.sceneCon_:SetSelectedState("on")
 
-	arg_37_0.wait_posetr_debut = false
+	arg_38_0.wait_posetr_debut = false
 end
 
-function var_0_0.PlayHeroGreeting(arg_38_0)
+function var_0_0.PlayHeroGreeting(arg_39_0)
 	manager.posterGirl:DoGreeting()
 end
 
-function var_0_0.DelayToPlayMultiTouchInteraction(arg_39_0)
-	arg_39_0.clickCount_ = arg_39_0.clickCount_ + 1
+function var_0_0.DelayToPlayMultiTouchInteraction(arg_40_0)
+	arg_40_0.clickCount_ = arg_40_0.clickCount_ + 1
 
-	if arg_39_0.multiTouchTimer_ == nil then
-		arg_39_0.multiTouchTimer_ = Timer.New(function()
-			if arg_39_0.multiTouchTimer_ then
-				arg_39_0.multiTouchTimer_:Stop()
+	if arg_40_0.multiTouchTimer_ == nil then
+		arg_40_0.multiTouchTimer_ = Timer.New(function()
+			if arg_40_0.multiTouchTimer_ then
+				arg_40_0.multiTouchTimer_:Stop()
 
-				arg_39_0.multiTouchTimer_ = nil
+				arg_40_0.multiTouchTimer_ = nil
 			end
 
-			local var_40_0 = HomeSceneSettingData:GetCurScene()
+			local var_41_0 = HomeSceneSettingData:GetCurScene()
 
-			if arg_39_0.clickCount_ >= 3 then
+			if arg_40_0.clickCount_ >= 3 then
 				SDKTools.SendMessageToSDK("poster_touch", {
 					touch_times = 3,
 					position = 0,
-					hero_id = arg_39_0.skinId_,
-					scene_id = var_40_0
+					hero_id = arg_40_0.skinId_,
+					scene_id = var_41_0
 				})
 				manager.posterGirl:DoQuickTouch()
 			else
 				SDKTools.SendMessageToSDK("poster_touch", {
 					touch_times = 1,
 					position = 0,
-					hero_id = arg_39_0.skinId_,
-					scene_id = var_40_0
+					hero_id = arg_40_0.skinId_,
+					scene_id = var_41_0
 				})
 				manager.posterGirl:DoTouch()
 			end
 
-			arg_39_0.clickCount_ = 0
+			arg_40_0.clickCount_ = 0
 		end, 0.5, 1)
 
-		arg_39_0.multiTouchTimer_:Start()
+		arg_40_0.multiTouchTimer_:Start()
 	end
 end
 
-function var_0_0.OnHomePosterTalk(arg_41_0, arg_41_1, arg_41_2, arg_41_3)
-	local var_41_0 = tonumber(arg_41_1)
-	local var_41_1 = HeroVoiceDescCfg.Get(var_41_0, arg_41_2[1])
+function var_0_0.OnHomePosterTalk(arg_42_0, arg_42_1, arg_42_2, arg_42_3)
+	local var_42_0 = tonumber(arg_42_1)
+	local var_42_1 = HeroVoiceDescCfg.Get(var_42_0, arg_42_2[1])
 
-	if var_41_1 then
-		arg_41_0.talking_ = true
+	if var_42_1 then
+		arg_42_0.talking_ = true
 
-		if not isNil(arg_41_0.talkBubbleGo_) then
-			arg_41_0:RefreshTalkBubbleHide()
+		if not isNil(arg_42_0.talkBubbleGo_) then
+			arg_42_0:RefreshTalkBubbleHide()
 		end
 
-		if not isNil(arg_41_0.talkLabel_) then
-			arg_41_0.talkLabel_.text = var_41_1
+		if not isNil(arg_42_0.talkLabel_) then
+			arg_42_0.talkLabel_.text = var_42_1
 		end
 
-		if arg_41_0.talkBubbleTimer_ ~= nil then
-			arg_41_0.talkBubbleTimer_:Stop()
+		if arg_42_0.talkBubbleTimer_ ~= nil then
+			arg_42_0.talkBubbleTimer_:Stop()
 
-			arg_41_0.talkBubbleTimer_ = nil
+			arg_42_0.talkBubbleTimer_ = nil
 		end
 
-		arg_41_0.talkBubbleTimer_ = TimeTools.StartAfterSeconds(arg_41_3 / 1000, function()
-			arg_41_0.talking_ = false
+		arg_42_0.talkBubbleTimer_ = TimeTools.StartAfterSeconds(arg_42_3 / 1000, function()
+			arg_42_0.talking_ = false
 
-			if not isNil(arg_41_0.talkBubbleGo_) then
-				SetActive(arg_41_0.talkBubbleGo_, false)
+			if not isNil(arg_42_0.talkBubbleGo_) then
+				SetActive(arg_42_0.talkBubbleGo_, false)
 			end
 
-			if arg_41_0.talkBubbleTimer_ ~= nil then
-				arg_41_0.talkBubbleTimer_:Stop()
+			if arg_42_0.talkBubbleTimer_ ~= nil then
+				arg_42_0.talkBubbleTimer_:Stop()
 
-				arg_41_0.talkBubbleTimer_ = nil
+				arg_42_0.talkBubbleTimer_ = nil
 			end
 		end, {})
 	end
 end
 
-function var_0_0.ClearHeroFilter(arg_43_0)
+function var_0_0.ClearHeroFilter(arg_44_0)
 	HeroData:SetupHeroMainOpenStatus(false)
 	CommonFilterData:ClearFilter(Filter_Root_Define.Hero_Filter_List.filter_id)
 end

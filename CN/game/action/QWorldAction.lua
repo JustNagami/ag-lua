@@ -9,9 +9,8 @@ local function var_0_1()
 
 		for iter_1_2, iter_1_3 in ipairs(var_1_1) do
 			table.insert(var_1_2, ActivityTools.GetRedPointKey(iter_1_3) .. iter_1_3)
+			manager.redPoint:appendGroup(ActivityTools.GetRedPointKey(iter_1_1) .. iter_1_1, ActivityTools.GetRedPointKey(iter_1_3) .. iter_1_3, true)
 		end
-
-		manager.redPoint:appendGroup(ActivityTools.GetRedPointKey(iter_1_1) .. iter_1_1, var_1_2, true)
 	end
 end
 
@@ -31,10 +30,9 @@ function var_0_0.InitRedPoint(arg_4_0)
 	for iter_4_0, iter_4_1 in ipairs(var_4_0.sub_activity_list) do
 		local var_4_3 = string.format("%s%s", ActivityTools.GetRedPointKey(iter_4_1), iter_4_1)
 
+		manager.redPoint:appendGroup(var_4_1, var_4_3, true)
 		table.insert(var_4_2, var_4_3)
 	end
-
-	manager.redPoint:appendGroup(var_4_1, var_4_2, true)
 end
 
 function var_0_0.SavePlayerData(arg_5_0)

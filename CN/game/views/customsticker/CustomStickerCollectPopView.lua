@@ -73,7 +73,11 @@ function var_0_0.OnEnter(arg_8_0)
 	if arg_8_0.groundState_ then
 		arg_8_0.groundController_:SetSelectedState("ground")
 
-		arg_8_0.groundImg_.spriteAsync = "TextureConfig/Sticker/Background_m/Stickerbg_m_" .. arg_8_0.curStickerCfg_.resource
+		if arg_8_0.curStickerCfg_.item_type == 4 then
+			arg_8_0.groundImg_.spriteAsync = "TextureConfig/Sticker/Background_m/Stickerbg_m_" .. arg_8_0.curStickerCfg_.resource
+		elseif arg_8_0.curStickerCfg_.item_type == 6 then
+			arg_8_0.groundImg_.spriteAsync = "TextureConfig/Sticker/Foreground_m/Stickerfg_m_" .. arg_8_0.curStickerCfg_.resource
+		end
 	else
 		arg_8_0.groundController_:SetSelectedState("sticker")
 

@@ -325,197 +325,197 @@
 		time_pool = {}
 	},
 	[70002] = {
-		boss_id = 22314,
-		stage_id = 3012314,
+		boss_id = 22307,
+		stage_id = 3012307,
 		id = 70002,
+		recommend_team = 3,
+		affix_pool = {
+			9941,
+			9933,
+			9934,
+			9938
+		},
+		time_pool = {}
+	},
+	[70003] = {
+		boss_id = 22311,
+		stage_id = 3012311,
+		id = 70003,
+		recommend_team = 1,
+		affix_pool = {
+			9939,
+			9933,
+			9934,
+			9936
+		},
+		time_pool = {}
+	},
+	[70004] = {
+		boss_id = 22312,
+		stage_id = 3012312,
+		id = 70004,
+		recommend_team = 4,
+		affix_pool = {
+			9940,
+			9933,
+			9935,
+			9937
+		},
+		time_pool = {}
+	},
+	[80001] = {
+		boss_id = 22203,
+		stage_id = 3012203,
+		id = 80001,
+		recommend_team = 3,
+		affix_pool = {
+			99410,
+			99330,
+			99340,
+			99380
+		},
+		time_pool = {}
+	},
+	[80002] = {
+		boss_id = 22302,
+		stage_id = 3012302,
+		id = 80002,
+		recommend_team = 7,
+		affix_pool = {
+			9944,
+			9933,
+			9935,
+			9936
+		},
+		time_pool = {}
+	},
+	[80003] = {
+		boss_id = 22315,
+		stage_id = 3012315,
+		id = 80003,
+		recommend_team = 8,
+		affix_pool = {
+			9945,
+			9933,
+			9934,
+			9937
+		},
+		time_pool = {}
+	},
+	[80004] = {
+		boss_id = 22316,
+		stage_id = 3012316,
+		id = 80004,
+		recommend_team = 2,
+		affix_pool = {
+			9946,
+			9933,
+			9935,
+			9938
+		},
+		time_pool = {}
+	},
+	[80005] = {
+		boss_id = 22206,
+		stage_id = 3012206,
+		id = 80005,
+		recommend_team = 7,
+		affix_pool = {
+			99440,
+			99330,
+			99350,
+			99380
+		},
+		time_pool = {}
+	},
+	[80006] = {
+		boss_id = 22313,
+		stage_id = 3012313,
+		id = 80006,
+		recommend_team = 3,
+		affix_pool = {
+			9941,
+			9933,
+			9934,
+			9938
+		},
+		time_pool = {}
+	},
+	[80007] = {
+		boss_id = 22311,
+		stage_id = 3012311,
+		id = 80007,
+		recommend_team = 1,
+		affix_pool = {
+			9939,
+			9933,
+			9934,
+			9936
+		},
+		time_pool = {}
+	},
+	[80008] = {
+		boss_id = 22312,
+		stage_id = 3012312,
+		id = 80008,
+		recommend_team = 4,
+		affix_pool = {
+			9940,
+			9933,
+			9935,
+			9937
+		},
+		time_pool = {}
+	},
+	[80009] = {
+		boss_id = 22203,
+		stage_id = 3012203,
+		id = 80009,
+		recommend_team = 3,
+		affix_pool = {
+			99410,
+			99330,
+			99340,
+			99380
+		},
+		time_pool = {}
+	},
+	[80010] = {
+		boss_id = 22310,
+		stage_id = 3012310,
+		id = 80010,
+		recommend_team = 7,
+		affix_pool = {
+			9944,
+			9933,
+			9935,
+			9938
+		},
+		time_pool = {}
+	},
+	[80011] = {
+		boss_id = 22309,
+		stage_id = 3012309,
+		id = 80011,
+		recommend_team = 6,
+		affix_pool = {
+			9943,
+			9933,
+			9934,
+			9937
+		},
+		time_pool = {}
+	},
+	[80012] = {
+		boss_id = 22308,
+		stage_id = 3012308,
+		id = 80012,
 		recommend_team = 5,
 		affix_pool = {
 			9942,
 			9933,
 			9935,
 			9936
-		},
-		time_pool = {}
-	},
-	[70003] = {
-		boss_id = 22315,
-		stage_id = 3012315,
-		id = 70003,
-		recommend_team = 8,
-		affix_pool = {
-			9945,
-			9933,
-			9934,
-			9937
-		},
-		time_pool = {}
-	},
-	[70004] = {
-		boss_id = 22316,
-		stage_id = 3012316,
-		id = 70004,
-		recommend_team = 2,
-		affix_pool = {
-			9946,
-			9933,
-			9935,
-			9938
-		},
-		time_pool = {}
-	},
-	[80001] = {
-		boss_id = 22207,
-		stage_id = 3012207,
-		id = 80001,
-		recommend_team = 8,
-		affix_pool = {
-			99450,
-			99330,
-			99340,
-			99360
-		},
-		time_pool = {}
-	},
-	[80002] = {
-		boss_id = 22304,
-		stage_id = 3012304,
-		id = 80002,
-		recommend_team = 2,
-		affix_pool = {
-			9946,
-			9933,
-			9935,
-			9938
-		},
-		time_pool = {}
-	},
-	[80003] = {
-		boss_id = 22310,
-		stage_id = 3012310,
-		id = 80003,
-		recommend_team = 7,
-		affix_pool = {
-			9944,
-			9933,
-			9935,
-			9938
-		},
-		time_pool = {}
-	},
-	[80004] = {
-		boss_id = 22303,
-		stage_id = 3012303,
-		id = 80004,
-		recommend_team = 8,
-		affix_pool = {
-			9945,
-			9933,
-			9934,
-			9937
-		},
-		time_pool = {}
-	},
-	[80005] = {
-		boss_id = 22207,
-		stage_id = 3012207,
-		id = 80005,
-		recommend_team = 8,
-		affix_pool = {
-			99450,
-			99330,
-			99340,
-			99360
-		},
-		time_pool = {}
-	},
-	[80006] = {
-		boss_id = 22304,
-		stage_id = 3012304,
-		id = 80006,
-		recommend_team = 2,
-		affix_pool = {
-			9946,
-			9933,
-			9935,
-			9938
-		},
-		time_pool = {}
-	},
-	[80007] = {
-		boss_id = 22310,
-		stage_id = 3012310,
-		id = 80007,
-		recommend_team = 7,
-		affix_pool = {
-			9944,
-			9933,
-			9935,
-			9938
-		},
-		time_pool = {}
-	},
-	[80008] = {
-		boss_id = 22303,
-		stage_id = 3012303,
-		id = 80008,
-		recommend_team = 8,
-		affix_pool = {
-			9945,
-			9933,
-			9934,
-			9937
-		},
-		time_pool = {}
-	},
-	[80009] = {
-		boss_id = 22204,
-		stage_id = 3012204,
-		id = 80009,
-		recommend_team = 5,
-		affix_pool = {
-			99420,
-			99330,
-			99350,
-			99360
-		},
-		time_pool = {}
-	},
-	[80010] = {
-		boss_id = 22301,
-		stage_id = 3012301,
-		id = 80010,
-		recommend_team = 6,
-		affix_pool = {
-			9943,
-			9933,
-			9934,
-			9938
-		},
-		time_pool = {}
-	},
-	[80011] = {
-		boss_id = 22302,
-		stage_id = 3012302,
-		id = 80011,
-		recommend_team = 7,
-		affix_pool = {
-			9944,
-			9933,
-			9935,
-			9936
-		},
-		time_pool = {}
-	},
-	[80012] = {
-		boss_id = 22303,
-		stage_id = 3012303,
-		id = 80012,
-		recommend_team = 8,
-		affix_pool = {
-			9945,
-			9933,
-			9934,
-			9937
 		},
 		time_pool = {}
 	},
@@ -559,14 +559,14 @@
 		time_pool = {}
 	},
 	[80016] = {
-		boss_id = 22310,
-		stage_id = 3012310,
+		boss_id = 22307,
+		stage_id = 3012307,
 		id = 80016,
-		recommend_team = 7,
+		recommend_team = 3,
 		affix_pool = {
-			9944,
+			9941,
 			9933,
-			9935,
+			9934,
 			9938
 		},
 		time_pool = {}
@@ -624,56 +624,57 @@
 		time_pool = {}
 	},
 	get_id_list_by_boss_id = {
-		[22301] = {
-			80010
-		},
-		[22303] = {
-			80004,
-			80008,
-			80012
-		},
-		[22207] = {
-			80001,
-			80005
-		},
 		[22316] = {
-			70004,
+			80004,
 			90004
+		},
+		[22203] = {
+			80001,
+			80009
 		},
 		[22206] = {
 			70001,
+			80005,
 			80013
 		},
 		[22315] = {
 			60008,
-			70003,
+			80003,
 			90003
 		},
 		[22311] = {
-			60007
+			60007,
+			70003,
+			80007
 		},
 		[22313] = {
-			60006
+			60006,
+			80006
 		},
 		[22312] = {
-			60004
+			60004,
+			70004,
+			80008
 		},
 		[22314] = {
 			60003,
-			70002,
 			90002
 		},
 		[22309] = {
 			50004,
+			80011,
 			80015
 		},
 		[22308] = {
 			50003,
+			80012,
 			80014
 		},
 		[22307] = {
 			40003,
-			50002
+			50002,
+			70002,
+			80016
 		},
 		[22202] = {
 			40001,
@@ -682,13 +683,11 @@
 		[22310] = {
 			30004,
 			60002,
-			80003,
-			80007,
-			80016
+			80010
 		},
 		[22302] = {
 			30003,
-			80011
+			80002
 		},
 		[22201] = {
 			30001,
@@ -706,13 +705,10 @@
 		[22304] = {
 			20002,
 			30002,
-			40002,
-			80002,
-			80006
+			40002
 		},
 		[22204] = {
-			20001,
-			80009
+			20001
 		}
 	},
 	all = {

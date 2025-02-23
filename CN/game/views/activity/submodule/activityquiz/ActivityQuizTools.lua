@@ -162,22 +162,40 @@ function var_0_0.AlreadyEnterHintToday(arg_17_0)
 	return false
 end
 
-function var_0_0.RecordEnter(arg_18_0)
-	ActivityTools.SetActivityLocalData(arg_18_0, "lastEnter", manager.time:GetServerTime())
+function var_0_0.AlreadyEnterThisLogin(arg_18_0)
+	return var_0_0.alreadyEnterQuizActivityThisLogin
 end
 
-function var_0_0.HintActivityOpen(arg_19_0)
-	if not ActivityQuizTools.AlreadyEnterHintToday(arg_19_0) then
+function var_0_0.RecordAlreadyEnterThisLogin(arg_19_0)
+	var_0_0.alreadyEnterQuizActivityThisLogin = true
+end
+
+function var_0_0.AlreadyEnterTodayLocal(arg_20_0)
+	local var_20_0 = getData("activity_quiz_enter", tostring(arg_20_0)) or 0
+
+	return manager.time:IsToday(var_20_0)
+end
+
+function var_0_0.RecordAlreadyEnterTodayLocal(arg_21_0)
+	saveData("activity_quiz_enter", tostring(arg_21_0), manager.time:GetServerTime())
+end
+
+function var_0_0.RecordAlreadyHint(arg_22_0)
+	ActivityTools.SetActivityLocalData(arg_22_0, "lastEnter", manager.time:GetServerTime())
+end
+
+function var_0_0.HintActivityOpen(arg_23_0)
+	if not var_0_0.AlreadyEnterHintToday(arg_23_0) then
 		QWorldData:AddHint(312571001)
-		ActivityQuizTools.RecordEnter(arg_19_0)
+		var_0_0.RecordAlreadyHint(arg_23_0)
 	end
 end
 
 function var_0_0.CheckQuizActivityHint()
-	local var_20_0 = ActivityConst.ACTIVITY_SPRING_QUIZ
+	local var_24_0 = ActivityConst.ACTIVITY_SPRING_QUIZ
 
-	if ActivityTools.GetActivityIsOpenWithTip(var_20_0, false) and ActivityQuizTools.IsInOpenTimeSpan(var_20_0) then
-		var_0_0.HintActivityOpen(var_20_0)
+	if ActivityTools.GetActivityIsOpenWithTip(var_24_0, false) and var_0_0.IsInOpenTimeSpan(var_24_0) then
+		var_0_0.HintActivityOpen(var_24_0)
 	end
 end
 

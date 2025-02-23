@@ -10659,7 +10659,7 @@
 		talk_anchors = 0,
 		type = "ClickButton",
 		talk_adapt = 0,
-		is_finish = true,
+		is_finish = false,
 		id = 7206,
 		talk_content = "点击确认当日日程。",
 		params = {},
@@ -14106,6 +14106,55 @@
 			-290
 		}
 	},
+	[11601] = {
+		talk_anchors = 2,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 11601,
+		talk_content = "在「醒狮传说」玩法中，可以使用不同的天赋完成关卡",
+		params = {},
+		guide_component = {
+			"common",
+			"springFestivalZumaMainView",
+			{
+				"stageInfoViewList",
+				1,
+				"stageList",
+				1,
+				"stageitemBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-993,
+			-818
+		}
+	},
+	[11602] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 11602,
+		talk_content = "可以在这里查看天赋效果，达成关卡目标<color=#E78300>获得「嗷呜！」</color>，可以<color=#E78300>解锁新的天赋并在这里切换</color>",
+		params = {},
+		guide_component = {
+			"common",
+			"springFestivalZumaMainView",
+			{
+				"guideComponents",
+				"guide_1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-993,
+			-818
+		}
+	},
 	all = {
 		101,
 		102,
@@ -14708,6 +14757,8 @@
 		11203,
 		11301,
 		11501,
-		11502
+		11502,
+		11601,
+		11602
 	}
 }

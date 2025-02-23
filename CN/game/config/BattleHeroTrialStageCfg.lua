@@ -3899,6 +3899,45 @@
 			0
 		}
 	},
+	[4051012] = {
+		monster_level = 80,
+		name = "天诫·白泽",
+		drop_lib_id = 0,
+		map = "4051012",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "天诫·白泽",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 4051012,
+		attribute_factor = {
+			1000,
+			1000,
+			6000
+		},
+		hero_list = {
+			{
+				1012,
+				101202
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
 	[4051013] = {
 		monster_level = 80,
 		name = "障月·阿修罗",
@@ -6574,6 +6613,7 @@
 		5050098,
 		5050099,
 		4051011,
+		4051012,
 		4051013,
 		4051015,
 		4051016,

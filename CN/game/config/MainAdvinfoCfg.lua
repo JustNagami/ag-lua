@@ -1786,8 +1786,8 @@
 			{
 				{
 					2025,
-					2,
-					20
+					3,
+					27
 				},
 				{
 					5,
@@ -1803,6 +1803,31 @@
 		type = 1,
 		picture = "activity_103401_102202_101502",
 		activityId = 311111,
+		order = 85,
+		parameter = {
+			525
+		},
+		time = {}
+	},
+	[142] = {
+		id = 142,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1012",
+		activityId = 310036,
+		order = 80,
+		parameter = {
+			404,
+			3110601
+		},
+		time = {}
+	},
+	[143] = {
+		id = 143,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_101201_107503_102802",
+		activityId = 311115,
 		order = 85,
 		parameter = {
 			525
@@ -1964,6 +1989,8 @@
 		139,
 		140,
 		141,
+		142,
+		143,
 		31000,
 		31001
 	}

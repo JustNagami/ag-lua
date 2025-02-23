@@ -114,7 +114,7 @@ function var_0_0.ProcessOuterTeam(arg_16_0)
 	arg_16_0.outerChipList_ = clone(arg_16_0.params_.chipList)
 	arg_16_0.outerLockHeroList_ = clone(arg_16_0.params_.lockHeroList)
 
-	arg_16_0:CheckHeroList()
+	arg_16_0:CheckOuterHeroList()
 end
 
 function var_0_0.InitContIDList(arg_17_0)
@@ -166,395 +166,393 @@ end
 function var_0_0.InitEditContData(arg_19_0)
 	if arg_19_0.params_.lastEditContID then
 		arg_19_0.editContID_ = arg_19_0.params_.lastEditContID
-
-		arg_19_0:UpdateEditContData()
 	else
 		arg_19_0.editContID_ = arg_19_0.contIDList_[1]
-		arg_19_0.editHeroList_ = clone(arg_19_0.outerHeroList_)
-		arg_19_0.editComboSkillID_ = arg_19_0.outerComboSkillID_
-		arg_19_0.editMimirID_ = arg_19_0.outerMimirID_
-		arg_19_0.editChipList_ = clone(arg_19_0.outerChipList_)
-		arg_19_0.editLockHeroList_ = clone(arg_19_0.outerLockHeroList_)
 	end
 
-	arg_19_0:UpdateReserveParams()
+	arg_19_0:UpdateEditContData()
 end
 
 function var_0_0.UpdateEditContData(arg_20_0)
-	local var_20_0 = ReserveParams.New(ReserveConst.RESERVE_TYPE.PROPOSAL, arg_20_0.editContID_)
-
-	arg_20_0.editHeroList_ = ReserveTools.GetHeroList(var_20_0)
+	arg_20_0.reserveParams_.contID = arg_20_0.editContID_
+	arg_20_0.editHeroList_ = arg_20_0.sectionProxy_:GetHeroTeam()
 	arg_20_0.editTrialList_ = {
 		0,
 		0,
 		0
 	}
-	arg_20_0.editComboSkillID_ = ReserveTools.GetComboSkillID(var_20_0)
-	arg_20_0.editMimirID_, arg_20_0.editChipList_ = ReserveTools.GetMimirData(var_20_0)
+	arg_20_0.editComboSkillID_ = arg_20_0.sectionProxy_:GetComboSkillID()
+	arg_20_0.editMimirID_, arg_20_0.editChipList_ = arg_20_0.sectionProxy_:GetMimirData()
 end
 
-function var_0_0.UpdateReserveParams(arg_21_0)
-	arg_21_0.reserveParams_.contID = arg_21_0.editContID_
+function var_0_0.ProcessSubView(arg_21_0)
+	arg_21_0:InitSubView()
+	arg_21_0:TryReloadSubView()
+	arg_21_0:ProcessSubViewParams()
 end
 
-function var_0_0.ProcessSubView(arg_22_0)
-	arg_22_0:InitSubView()
-	arg_22_0:TryReloadSubView()
-	arg_22_0:ProcessSubViewParams()
+function var_0_0.ProcessSubViewParams(arg_22_0)
+	arg_22_0:SubViewCallFunc("SetProxy", arg_22_0.sectionProxy_)
 end
 
-function var_0_0.ProcessSubViewParams(arg_23_0)
-	arg_23_0:SubViewCallFunc("SetProxy", arg_23_0.sectionProxy_)
+function var_0_0.SubViewOnEnter(arg_23_0)
+	arg_23_0:SubViewCallFunc("OnEnter")
 end
 
-function var_0_0.SubViewOnEnter(arg_24_0)
-	arg_24_0:SubViewCallFunc("OnEnter")
-end
+function var_0_0.OnExit(arg_24_0)
+	arg_24_0.params_.lastContIDList = arg_24_0.contIDList_
+	arg_24_0.params_.lastEditContID = arg_24_0.editContID_
 
-function var_0_0.OnExit(arg_25_0)
-	arg_25_0.params_.lastContIDList = arg_25_0.contIDList_
-	arg_25_0.params_.lastEditContID = arg_25_0.editContID_
-
-	arg_25_0:RemoveAllEventListener()
-	arg_25_0:SubViewOnExit()
+	arg_24_0:RemoveAllEventListener()
+	arg_24_0:SubViewOnExit()
 	manager.windowBar:HideBar()
 	manager.ui:ResetMainCamera()
 end
 
-function var_0_0.SubViewOnExit(arg_26_0)
-	arg_26_0:SubViewCallFunc("OnExit")
+function var_0_0.SubViewOnExit(arg_25_0)
+	arg_25_0:SubViewCallFunc("OnExit")
 end
 
-function var_0_0.Dispose(arg_27_0)
-	arg_27_0:SubViewCallFunc("Dispose")
+function var_0_0.Dispose(arg_26_0)
+	arg_26_0:SubViewCallFunc("Dispose")
 
-	for iter_27_0, iter_27_1 in pairs(arg_27_0.subViewDic_) do
-		iter_27_1.go = nil
-		iter_27_1.instance = nil
+	for iter_26_0, iter_26_1 in pairs(arg_26_0.subViewDic_) do
+		iter_26_1.go = nil
+		iter_26_1.instance = nil
 	end
 
-	var_0_0.super.Dispose(arg_27_0)
+	var_0_0.super.Dispose(arg_26_0)
 end
 
-function var_0_0.UpdateCamera(arg_28_0)
+function var_0_0.UpdateCamera(arg_27_0)
 	manager.ui:SetMainCamera("battleHeroSelect")
 	manager.ui:AdaptUIByFOV()
 end
 
-function var_0_0.UpdateBar(arg_29_0)
-	arg_29_0.sectionProxy_:UpdateBar()
+function var_0_0.UpdateBar(arg_28_0)
+	arg_28_0.sectionProxy_:UpdateBar()
 end
 
-function var_0_0.ResetTempData(arg_30_0)
-	arg_30_0.subViewDic_.selectHeroView.instance:ResetTempData()
+function var_0_0.ResetTempData(arg_29_0)
+	arg_29_0.subViewDic_.selectHeroView.instance:ResetTempData()
 end
 
-function var_0_0.Refresh(arg_31_0)
-	arg_31_0:RefreshSubView()
-	arg_31_0:RefreshReserveUI()
-	arg_31_0:RefreshSwitchList()
-	arg_31_0:RefreshBtnPanel()
+function var_0_0.Refresh(arg_30_0)
+	arg_30_0:RefreshSubView()
+	arg_30_0:RefreshReserveUI()
+	arg_30_0:RefreshSwitchList()
+	arg_30_0:RefreshBtnPanel()
 end
 
-function var_0_0.RefreshSubView(arg_32_0)
-	arg_32_0:SubViewCallFunc("Refresh")
+function var_0_0.RefreshSubView(arg_31_0)
+	arg_31_0:SubViewCallFunc("Refresh")
 end
 
-function var_0_0.RefreshReserveUI(arg_33_0)
-	arg_33_0.subViewDic_.selectHeroView.instance:SetContID(arg_33_0.editContID_)
+function var_0_0.RefreshReserveUI(arg_32_0)
+	arg_32_0.subViewDic_.selectHeroView.instance:SetContID(arg_32_0.editContID_)
 end
 
-function var_0_0.RefreshBtnPanel(arg_34_0)
-	arg_34_0.subViewDic_.additionalView.instance:RefreshBtnPanel(arg_34_0.editContID_, arg_34_0.outerHeroList_, arg_34_0.outerComboSkillID_, arg_34_0.outerMimirID_, arg_34_0.outerChipList_)
+function var_0_0.RefreshBtnPanel(arg_33_0)
+	arg_33_0.subViewDic_.additionalView.instance:RefreshBtnPanel(arg_33_0.editContID_, arg_33_0.outerHeroList_, arg_33_0.outerComboSkillID_, arg_33_0.outerMimirID_, arg_33_0.outerChipList_)
 end
 
-function var_0_0.RefreshSwitchList(arg_35_0)
-	arg_35_0.subViewDic_.additionalView.instance:RefreshSwitchList(arg_35_0.contIDList_, arg_35_0.editContID_, arg_35_0.curSavedProposalNum_)
+function var_0_0.RefreshSwitchList(arg_34_0)
+	arg_34_0.subViewDic_.additionalView.instance:RefreshSwitchList(arg_34_0.contIDList_, arg_34_0.editContID_, arg_34_0.curSavedProposalNum_)
 end
 
-function var_0_0.SaveProposal(arg_36_0)
-	ReserveAction.SaveReserveProposal(arg_36_0.saveContID_, handler(arg_36_0, arg_36_0.OnSaveProposal))
+function var_0_0.SaveProposal(arg_35_0)
+	ReserveAction.SaveReserveProposal(arg_35_0.saveContID_, handler(arg_35_0, arg_35_0.OnSaveProposal))
 end
 
-function var_0_0.SaveName(arg_37_0, arg_37_1)
-	ReserveAction.RenameReserveProposal(arg_37_0.saveContID_, arg_37_1, handler(arg_37_0, arg_37_0.OnSaveProposal))
+function var_0_0.SaveName(arg_36_0, arg_36_1)
+	ReserveAction.RenameReserveProposal(arg_36_0.saveContID_, arg_36_1, handler(arg_36_0, arg_36_0.OnSaveProposal))
 end
 
-function var_0_0.OnSaveProposal(arg_38_0)
-	if arg_38_0.saveContID_ == arg_38_0.editContID_ then
-		arg_38_0:TryAutoApplyProposal()
+function var_0_0.OnSaveProposal(arg_37_0)
+	if arg_37_0.saveContID_ == arg_37_0.editContID_ then
+		arg_37_0:TryAutoApplyProposal()
 	end
 
 	ShowTips("FORMATION_PLAN_SAVED")
 	manager.notify:Invoke(INPUT_POP_BACK)
-	arg_38_0:RefreshSwitchList()
-	arg_38_0:RefreshBtnPanel()
+	arg_37_0:RefreshSwitchList()
+	arg_37_0:RefreshBtnPanel()
 end
 
-function var_0_0.TryAutoApplyProposal(arg_39_0)
-	local var_39_0 = false
+function var_0_0.TryAutoApplyProposal(arg_38_0)
+	local var_38_0 = false
 
-	if #arg_39_0:GetFilterLockHeroList(arg_39_0.editHeroList_) == 0 and arg_39_0.contIDList_[1] == arg_39_0.editContID_ then
-		var_39_0 = true
+	if #arg_38_0:GetFilterLockHeroList(arg_38_0.editHeroList_) == 0 and arg_38_0.contIDList_[1] == arg_38_0.editContID_ then
+		var_38_0 = true
 	end
 
-	if var_39_0 then
-		arg_39_0:ApplyProposal()
+	if var_38_0 then
+		arg_38_0:ApplyProposal()
 	end
 end
 
-function var_0_0.ApplyProposal(arg_40_0)
-	arg_40_0.outerHeroList_ = clone(arg_40_0.editHeroList_)
-	arg_40_0.outerTrialList_ = {
+function var_0_0.ApplyProposal(arg_39_0)
+	arg_39_0.outerHeroList_ = clone(arg_39_0.editHeroList_)
+	arg_39_0.outerTrialList_ = {
 		0,
 		0,
 		0
 	}
-	arg_40_0.outerComboSkillID_ = arg_40_0.editComboSkillID_
-	arg_40_0.outerMimirID_ = arg_40_0.editMimirID_
-	arg_40_0.outerChipList_ = clone(arg_40_0.editChipList_)
-	arg_40_0.params_.heroList = clone(arg_40_0.outerHeroList_)
-	arg_40_0.params_.trialList = clone(arg_40_0.outerTrialList_)
-	arg_40_0.params_.comboSkillID = arg_40_0.outerComboSkillID_
-	arg_40_0.params_.mimirID = arg_40_0.outerMimirID_
-	arg_40_0.params_.chipList = clone(arg_40_0.outerChipList_)
+	arg_39_0.outerComboSkillID_ = arg_39_0.editComboSkillID_
+	arg_39_0.outerMimirID_ = arg_39_0.editMimirID_
+	arg_39_0.outerChipList_ = clone(arg_39_0.editChipList_)
+	arg_39_0.params_.heroList = clone(arg_39_0.outerHeroList_)
+	arg_39_0.params_.trialList = clone(arg_39_0.outerTrialList_)
+	arg_39_0.params_.comboSkillID = arg_39_0.outerComboSkillID_
+	arg_39_0.params_.mimirID = arg_39_0.outerMimirID_
+	arg_39_0.params_.chipList = clone(arg_39_0.outerChipList_)
 
-	arg_40_0.outerSectionProxy_:ApplyReserveProposal(arg_40_0.outerHeroList_, arg_40_0.outerTrialList_, arg_40_0.outerComboSkillID_, arg_40_0.outerMimirID_, arg_40_0.outerChipList_)
+	arg_39_0.outerSectionProxy_:ApplyReserveProposal(arg_39_0.outerHeroList_, arg_39_0.outerTrialList_, arg_39_0.outerComboSkillID_, arg_39_0.outerMimirID_, arg_39_0.outerChipList_)
 end
 
-function var_0_0.OnReserveProposalClickSave(arg_41_0)
-	local var_41_0 = arg_41_0.reserveTemplate_:GetContDataTemplateById(arg_41_0.editContID_)
+function var_0_0.OnReserveProposalClickSave(arg_40_0)
+	local var_40_0 = arg_40_0.reserveTemplate_:GetContDataTemplateById(arg_40_0.editContID_)
 
-	if var_41_0:GetIsTemp() and GameSetting.default_formation_num_max.value[1] == #arg_41_0.curProposalContIDList_ then
+	if var_40_0:GetIsTemp() and GameSetting.default_formation_num_max.value[1] == #arg_40_0.curProposalContIDList_ then
 		ShowTips("RESERVE_PROPOSAL_SAVE_LIMIT")
 
 		return
 	end
 
-	if arg_41_0.editHeroList_[1] == 0 then
+	if arg_40_0.editHeroList_[1] == 0 then
 		ShowTips("TEAM_SET_NEEDED")
 
 		return
 	end
 
-	for iter_41_0, iter_41_1 in ipairs(arg_41_0.curProposalContIDList_) do
-		if iter_41_1 ~= arg_41_0.editContID_ and SectionSelectHeroTools.IsReserveProposalEqual(iter_41_1, arg_41_0.editHeroList_, arg_41_0.editComboSkillID_, arg_41_0.editMimirID_, arg_41_0.editChipList_, true) then
+	for iter_40_0, iter_40_1 in ipairs(arg_40_0.curProposalContIDList_) do
+		if iter_40_1 ~= arg_40_0.editContID_ and SectionSelectHeroTools.IsReserveProposalEqual(iter_40_1, arg_40_0.editHeroList_, arg_40_0.editComboSkillID_, arg_40_0.editMimirID_, arg_40_0.editChipList_, true) then
 			ShowTips("RESERVE_PROPOSAL_SAME")
 
 			return
 		end
 	end
 
-	arg_41_0.saveContID_ = arg_41_0.editContID_
+	arg_40_0.saveContID_ = arg_40_0.editContID_
 
-	if var_41_0:GetName() == "" then
+	if var_40_0:GetName() == "" then
 		JumpTools.OpenPageByJump("ProposalPopup")
 	else
-		arg_41_0:SaveProposal()
+		arg_40_0:SaveProposal()
 	end
 end
 
-function var_0_0.OnReserveProposalClickApply(arg_42_0)
-	local var_42_0 = arg_42_0:GetFilterLockHeroList(arg_42_0.editHeroList_)
+function var_0_0.OnReserveProposalClickApply(arg_41_0)
+	local var_41_0 = arg_41_0:GetFilterLockHeroList(arg_41_0.editHeroList_)
 
-	if #var_42_0 > 0 then
+	if #var_41_0 > 0 then
 		JumpTools.OpenPageByJump("filterLockHero", {
-			heroIDList = var_42_0,
+			heroIDList = var_41_0,
 			type = SectionSelectHeroConst.DISPLAY_FILTER_LOCK_HERO_TYPE.PROPOSAL
 		})
 
 		return
 	end
 
-	arg_42_0:ApplyProposal()
-	arg_42_0:OnApplyProposalSuccess()
+	arg_41_0:ApplyProposal()
+	arg_41_0:OnApplyProposalSuccess()
 end
 
-function var_0_0.GetFilterLockHeroList(arg_43_0, arg_43_1)
-	local var_43_0 = {}
+function var_0_0.GetFilterLockHeroList(arg_42_0, arg_42_1)
+	local var_42_0 = {}
 
-	for iter_43_0, iter_43_1 in ipairs(arg_43_1) do
-		if iter_43_1 ~= 0 and table.indexof(arg_43_0.outerLockHeroList_, iter_43_1) then
-			var_43_0[#var_43_0 + 1] = iter_43_1
+	for iter_42_0, iter_42_1 in ipairs(arg_42_1) do
+		if iter_42_1 ~= 0 and table.indexof(arg_42_0.outerLockHeroList_, iter_42_1) then
+			var_42_0[#var_42_0 + 1] = iter_42_1
 		end
 	end
 
-	return var_43_0
+	return var_42_0
 end
 
-function var_0_0.OnApplyProposalSuccess(arg_44_0)
+function var_0_0.OnApplyProposalSuccess(arg_43_0)
 	ShowTips("RESERVE_PROPOSAL_SELECT_SUCCESS")
-	arg_44_0:Back()
+	arg_43_0:Back()
 end
 
-function var_0_0.OnReserveProposalClickDelete(arg_45_0)
-	local var_45_0 = arg_45_0.reserveTemplate_:GetContDataTemplateById(arg_45_0.editContID_):GetName()
+function var_0_0.OnReserveProposalClickDelete(arg_44_0)
+	local var_44_0 = arg_44_0.reserveTemplate_:GetContDataTemplateById(arg_44_0.editContID_):GetName()
 
 	ShowMessageBox({
 		title = GetTips("PROMPT"),
-		content = string.format(GetTips("FORMATION_PLAN_DELETE_CONFIRM"), var_45_0),
+		content = string.format(GetTips("FORMATION_PLAN_DELETE_CONFIRM"), var_44_0),
 		OkCallback = function()
-			arg_45_0.sectionProxy_:ResetTeam()
+			arg_44_0.sectionProxy_:ResetTeam()
 		end
 	})
 end
 
-function var_0_0.OnReserveProposalClickProposal(arg_47_0, arg_47_1)
-	if arg_47_1 == arg_47_0.editContID_ then
+function var_0_0.OnReserveProposalClickProposal(arg_46_0, arg_46_1)
+	if arg_46_1 == arg_46_0.editContID_ then
 		return
 	end
 
-	arg_47_0.editContID_ = arg_47_1
+	arg_46_0.editContID_ = arg_46_1
 
-	arg_47_0:UpdateEditContData()
-	arg_47_0:UpdateReserveParams()
-	arg_47_0:RefreshSubView()
-	arg_47_0:RefreshReserveUI()
-	arg_47_0:RefreshBtnPanel()
-	arg_47_0.subViewDic_.additionalView.instance:RefreshSelect(arg_47_0.editContID_)
+	arg_46_0:UpdateEditContData()
+	arg_46_0:RefreshSubView()
+	arg_46_0:RefreshReserveUI()
+	arg_46_0:RefreshBtnPanel()
+	arg_46_0.subViewDic_.additionalView.instance:RefreshSelect(arg_46_0.editContID_)
 end
 
-function var_0_0.OnReserveProposalClickRename(arg_48_0, arg_48_1)
-	arg_48_0.saveContID_ = arg_48_1
+function var_0_0.OnReserveProposalClickRename(arg_47_0, arg_47_1)
+	arg_47_0.saveContID_ = arg_47_1
 
 	JumpTools.OpenPageByJump("ProposalPopup")
 end
 
-function var_0_0.OnSectionClickHero(arg_49_0, arg_49_1)
-	arg_49_0.sectionProxy_:GotoHeroInfoUI(arg_49_1)
+function var_0_0.OnSectionClickHero(arg_48_0, arg_48_1)
+	arg_48_0.sectionProxy_:GotoHeroInfoUI(arg_48_1)
 end
 
-function var_0_0.OnChangeHeroTeam(arg_50_0, arg_50_1, arg_50_2)
-	arg_50_0.editHeroList_ = clone(arg_50_1)
+function var_0_0.OnChangeHeroTeam(arg_49_0, arg_49_1, arg_49_2)
+	arg_49_0.editHeroList_ = clone(arg_49_1)
 
-	arg_50_0:RefreshSwitchList()
+	arg_49_0:RefreshSwitchList()
+	arg_49_0:RefreshBtnPanel()
+end
+
+function var_0_0.OnChangeComboSkill(arg_50_0, arg_50_1)
+	arg_50_0.editComboSkillID_ = arg_50_1
+
 	arg_50_0:RefreshBtnPanel()
 end
 
-function var_0_0.OnChangeComboSkill(arg_51_0, arg_51_1)
-	arg_51_0.editComboSkillID_ = arg_51_1
-
-	arg_51_0:RefreshBtnPanel()
-end
-
-function var_0_0.OnInput(arg_52_0, arg_52_1, arg_52_2)
-	if arg_52_1 == "" then
+function var_0_0.OnInput(arg_51_0, arg_51_1, arg_51_2)
+	if arg_51_1 == "" then
 		ShowTips("INPUT_EQUIP_PROPOSAL_NAME")
 
 		return
 	end
 
-	if IsAllSpace(arg_52_1) then
+	if IsAllSpace(arg_51_1) then
 		ShowTips("INPUT_CHAT_CONTENT")
 
-		arg_52_2.text = ""
+		arg_51_2.text = ""
 
 		return
 	end
 
-	local var_52_0, var_52_1 = textLimit(arg_52_1, GameSetting.user_name_max.value[1])
+	local var_51_0, var_51_1 = textLimit(arg_51_1, GameSetting.user_name_max.value[1])
 
-	arg_52_2.text = var_52_0
-	arg_52_1 = var_52_0
+	arg_51_2.text = var_51_0
+	arg_51_1 = var_51_0
 
-	if not nameRule(arg_52_1) then
+	if not nameRule(arg_51_1) then
 		ShowTips("ERROR_USER_NAME_SYMBOL_WORD")
 
-		arg_52_2.text = ""
+		arg_51_2.text = ""
 
 		return
 	end
 
-	WordVerifyBySDK(arg_52_1, function(arg_53_0)
-		if not arg_53_0 then
+	WordVerifyBySDK(arg_51_1, function(arg_52_0)
+		if not arg_52_0 then
 			ShowTips("SENSITIVE_WORD")
 
-			arg_52_2.text = ""
+			arg_51_2.text = ""
 
 			return
 		else
-			if not var_52_1 then
+			if not var_51_1 then
 				return
 			end
 
-			arg_52_0:SaveName(arg_52_1)
+			arg_51_0:SaveName(arg_51_1)
 		end
 	end, JUDGE_MESSAGE_TYPE.OTHER)
 end
 
-function var_0_0.OnDeleteProposal(arg_54_0, arg_54_1, arg_54_2)
+function var_0_0.OnDeleteProposal(arg_53_0, arg_53_1, arg_53_2)
 	ShowTips("FORMATION_PLAN_DELETED")
-	arg_54_0.reserveTemplate_:DeleteProposal(arg_54_2)
+	arg_53_0.reserveTemplate_:DeleteProposal(arg_53_2)
 
-	local var_54_0 = arg_54_0.reserveTemplate_:GetProposalContIDList()
+	local var_53_0 = arg_53_0.reserveTemplate_:GetProposalContIDList()
 
-	arg_54_0.curProposalContIDList_ = var_54_0
-	arg_54_0.curSavedProposalNum_ = #var_54_0
+	arg_53_0.curProposalContIDList_ = var_53_0
+	arg_53_0.curSavedProposalNum_ = #var_53_0
 
-	local var_54_1 = table.indexof(arg_54_0.contIDList_, arg_54_2)
+	local var_53_1 = table.indexof(arg_53_0.contIDList_, arg_53_2)
 
-	table.remove(arg_54_0.contIDList_, var_54_1)
+	table.remove(arg_53_0.contIDList_, var_53_1)
 
-	if #arg_54_0.contIDList_ == 0 then
-		arg_54_0.contIDList_[1] = arg_54_0:CreateTempProposal()
+	if #arg_53_0.contIDList_ == 0 then
+		arg_53_0.contIDList_[1] = arg_53_0:CreateTempProposal()
 	end
 
-	arg_54_0.editContID_ = arg_54_0.contIDList_[1]
+	arg_53_0.editContID_ = arg_53_0.contIDList_[1]
 
-	arg_54_0:UpdateEditContData()
-	arg_54_0:UpdateReserveParams()
-	arg_54_0:Refresh()
+	arg_53_0:UpdateEditContData()
+	arg_53_0:Refresh()
 end
 
-function var_0_0.CheckHeroList(arg_55_0)
-	local var_55_0 = false
+function var_0_0.CheckOuterHeroList(arg_54_0)
+	local var_54_0 = false
 
-	for iter_55_0, iter_55_1 in ipairs(arg_55_0.outerTrialList_) do
-		if iter_55_1 ~= 0 then
-			var_55_0 = true
-			arg_55_0.outerHeroList_[iter_55_0] = 0
-			arg_55_0.outerTrialList_[iter_55_0] = 0
+	for iter_54_0, iter_54_1 in ipairs(arg_54_0.outerTrialList_) do
+		if iter_54_1 ~= 0 then
+			var_54_0 = true
+			arg_54_0.outerHeroList_[iter_54_0] = 0
+			arg_54_0.outerTrialList_[iter_54_0] = 0
 		end
 	end
 
-	if var_55_0 then
-		for iter_55_2 = 1, 2 do
-			for iter_55_3 = iter_55_2 + 1, 3 do
-				if arg_55_0.outerHeroList_[iter_55_2] == 0 then
-					arg_55_0.outerHeroList_[iter_55_2] = arg_55_0.outerHeroList_[iter_55_3]
-					arg_55_0.outerHeroList_[iter_55_3] = 0
-					arg_55_0.outerTrialList_[iter_55_2] = arg_55_0.outerTrialList_[iter_55_3]
-					arg_55_0.outerTrialList_[iter_55_3] = 0
+	if var_54_0 then
+		for iter_54_2 = 1, 2 do
+			for iter_54_3 = iter_54_2 + 1, 3 do
+				if arg_54_0.outerHeroList_[iter_54_2] == 0 then
+					arg_54_0.outerHeroList_[iter_54_2] = arg_54_0.outerHeroList_[iter_54_3]
+					arg_54_0.outerHeroList_[iter_54_3] = 0
+					arg_54_0.outerTrialList_[iter_54_2] = arg_54_0.outerTrialList_[iter_54_3]
+					arg_54_0.outerTrialList_[iter_54_3] = 0
 
 					break
 				end
 			end
 		end
 
-		local var_55_1 = arg_55_0.outerComboSkillID_
+		local var_54_1 = arg_54_0.outerComboSkillID_
 
-		if var_55_1 == 0 or not ComboSkillTools.IsAllMatch(var_55_1, arg_55_0.outerHeroList_) then
-			arg_55_0.outerComboSkillID_ = ComboSkillTools.GetRecommendSkillID(arg_55_0.outerHeroList_, true)
+		if var_54_1 == 0 or not ComboSkillTools.IsAllMatch(var_54_1, arg_54_0.outerHeroList_) then
+			arg_54_0.outerComboSkillID_ = ComboSkillTools.GetRecommendSkillID(arg_54_0.outerHeroList_, true)
 		end
 	end
 end
 
-function var_0_0.GetSelectHeroViewClass(arg_56_0)
-	return arg_56_0.sectionProxy_:GetSelectHeroViewClass()
+function var_0_0.GetSelectHeroViewClass(arg_55_0)
+	return arg_55_0.sectionProxy_:GetSelectHeroViewClass()
 end
 
-function var_0_0.GetAdditionalViewClass(arg_57_0)
-	return arg_57_0.sectionProxy_:GetAdditionalViewClass()
+function var_0_0.GetAdditionalViewClass(arg_56_0)
+	return arg_56_0.sectionProxy_:GetAdditionalViewClass()
 end
 
-function var_0_0.InitSubView(arg_58_0)
-	if not arg_58_0.createdSubview_ then
-		arg_58_0.createdSubview_ = true
+function var_0_0.InitSubView(arg_57_0)
+	if not arg_57_0.createdSubview_ then
+		arg_57_0.createdSubview_ = true
 
-		for iter_58_0, iter_58_1 in pairs(arg_58_0.subViewDic_) do
-			local var_58_0 = iter_58_1.go
+		for iter_57_0, iter_57_1 in pairs(arg_57_0.subViewDic_) do
+			local var_57_0 = iter_57_1.go
 
-			iter_58_1.instance = iter_58_1.getClassFunc().New(var_58_0)
+			iter_57_1.instance = iter_57_1.getClassFunc().New(var_57_0)
+
+			if iter_57_1.initFunc then
+				iter_57_1.initFunc()
+			end
+		end
+	end
+end
+
+function var_0_0.TryReloadSubView(arg_58_0)
+	for iter_58_0, iter_58_1 in pairs(arg_58_0.subViewDic_) do
+		if SectionSelectHeroTools.IsDiffViewClass(iter_58_1.instance, iter_58_1.getClassFunc()) then
+			iter_58_1.instance = SectionSelectHeroTools.ReloadView(iter_58_1.instance, iter_58_1.getClassFunc())
 
 			if iter_58_1.initFunc then
 				iter_58_1.initFunc()
@@ -563,24 +561,12 @@ function var_0_0.InitSubView(arg_58_0)
 	end
 end
 
-function var_0_0.TryReloadSubView(arg_59_0)
+function var_0_0.SubViewCallFunc(arg_59_0, arg_59_1, ...)
 	for iter_59_0, iter_59_1 in pairs(arg_59_0.subViewDic_) do
-		if SectionSelectHeroTools.IsDiffViewClass(iter_59_1.instance, iter_59_1.getClassFunc()) then
-			iter_59_1.instance = SectionSelectHeroTools.ReloadView(iter_59_1.instance, iter_59_1.getClassFunc())
+		local var_59_0 = iter_59_1.instance
 
-			if iter_59_1.initFunc then
-				iter_59_1.initFunc()
-			end
-		end
-	end
-end
-
-function var_0_0.SubViewCallFunc(arg_60_0, arg_60_1, ...)
-	for iter_60_0, iter_60_1 in pairs(arg_60_0.subViewDic_) do
-		local var_60_0 = iter_60_1.instance
-
-		if var_60_0 and var_60_0[arg_60_1] then
-			var_60_0[arg_60_1](var_60_0, ...)
+		if var_59_0 and var_59_0[arg_59_1] then
+			var_59_0[arg_59_1](var_59_0, ...)
 		end
 	end
 end

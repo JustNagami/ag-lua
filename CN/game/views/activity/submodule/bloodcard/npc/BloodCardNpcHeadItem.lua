@@ -22,47 +22,67 @@ function var_0_0.AddListeners(arg_3_0)
 	end)
 end
 
-function var_0_0.SetData(arg_5_0, arg_5_1)
-	arg_5_0.npcID_ = arg_5_1
-	arg_5_0.cfg_ = BloodCardGameNPCCfg[arg_5_0.npcID_]
-	arg_5_0.activityID_ = BloodCardGameStageCfg[arg_5_0.cfg_.stage_list[1]].activity_id
+function var_0_0.CancelRedPoint(arg_5_0)
+	if BloodCardData:GetUnPassNpc() == arg_5_0.npcID_ then
+		saveData("bloodCard", "hasClickStage", 1)
+		manager.redPoint:SetRedPointIndependent(arg_5_0.btn_.transform, false)
 
-	arg_5_0:RefreshUI()
+		local var_5_0 = string.format("%s_%s", RedPointConst.ACTIVITY_BLOOD_CARD_STAGE_UNLOCK, BloodCardData:GetMainActivityID())
+
+		manager.redPoint:setTip(var_5_0, 0)
+	end
 end
 
-function var_0_0.RefreshUI(arg_6_0, arg_6_1)
-	arg_6_0.nameText_.text = arg_6_0.cfg_.name
-	arg_6_0.numText_.text = #arg_6_0.cfg_.stage_list
-	arg_6_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/BackHouseUI/RoleHead/" .. arg_6_0.cfg_.icon)
+function var_0_0.SetData(arg_6_0, arg_6_1)
+	arg_6_0.npcID_ = arg_6_1
+	arg_6_0.cfg_ = BloodCardGameNPCCfg[arg_6_0.npcID_]
+	arg_6_0.activityID_ = BloodCardGameStageCfg[arg_6_0.cfg_.stage_list[1]].activity_id
+
+	arg_6_0:RefreshUI()
 end
 
-function var_0_0.SetClickCallBack(arg_7_0, arg_7_1)
-	arg_7_0.clickCallBack_ = arg_7_1
-end
+function var_0_0.RefreshUI(arg_7_0, arg_7_1)
+	arg_7_0.nameText_.text = arg_7_0.cfg_.name
+	arg_7_0.numText_.text = #arg_7_0.cfg_.stage_list
+	arg_7_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/BackHouseUI/RoleHead/" .. arg_7_0.cfg_.icon)
 
-function var_0_0.RefreshState(arg_8_0, arg_8_1)
-	local var_8_0 = BloodCardData:GetNpcUnlock(arg_8_0.npcID_, arg_8_0.activityID_)
-	local var_8_1 = arg_8_0.npcID_ == arg_8_1
+	local var_7_0 = BloodCardData:GetUnPassNpc()
+	local var_7_1 = getData("bloodCard", "hasClickStage") or 0
 
-	if not var_8_0 then
-		arg_8_0.stateController_:SetSelectedState("lock")
-	elseif var_8_1 then
-		arg_8_0.stateController_:SetSelectedState("select")
+	if var_7_0 == arg_7_0.npcID_ and var_7_1 ~= 1 then
+		manager.redPoint:SetRedPointIndependent(arg_7_0.btn_.transform, true)
 	else
-		arg_8_0.stateController_:SetSelectedState("normal")
-	end
-
-	if not var_8_0 and arg_8_0.npcID_ == 105 then
-		arg_8_0.stateController_:SetSelectedState("gengchen")
-
-		arg_8_0.nameText_.text = GetTips("ACTIVITY_BLOOD_CARD_SCRETE_NPC")
+		manager.redPoint:SetRedPointIndependent(arg_7_0.btn_.transform, false)
 	end
 end
 
-function var_0_0.Dispose(arg_9_0)
-	arg_9_0.clickCallBack_ = nil
+function var_0_0.SetClickCallBack(arg_8_0, arg_8_1)
+	arg_8_0.clickCallBack_ = arg_8_1
+end
 
-	var_0_0.super.Dispose(arg_9_0)
+function var_0_0.RefreshState(arg_9_0, arg_9_1)
+	local var_9_0 = BloodCardData:GetNpcUnlock(arg_9_0.npcID_, arg_9_0.activityID_)
+	local var_9_1 = arg_9_0.npcID_ == arg_9_1
+
+	if not var_9_0 then
+		arg_9_0.stateController_:SetSelectedState("lock")
+	elseif var_9_1 then
+		arg_9_0.stateController_:SetSelectedState("select")
+	else
+		arg_9_0.stateController_:SetSelectedState("normal")
+	end
+
+	if not var_9_0 and arg_9_0.npcID_ == 105 then
+		arg_9_0.stateController_:SetSelectedState("gengchen")
+
+		arg_9_0.nameText_.text = GetTips("ACTIVITY_BLOOD_CARD_SCRETE_NPC")
+	end
+end
+
+function var_0_0.Dispose(arg_10_0)
+	arg_10_0.clickCallBack_ = nil
+
+	var_0_0.super.Dispose(arg_10_0)
 end
 
 return var_0_0

@@ -31,9 +31,15 @@ function var_0_0.CheckZumaOpenRedPoint(arg_4_0)
 
 	if ActivityData:GetActivityIsOpen(arg_4_0) then
 		local var_4_0 = ZumaData:GetZumaIdByActId(arg_4_0)
-		local var_4_1 = ZumaData:GetZumaStageScore(var_4_0)
+		local var_4_1 = ActivityZumaLevelCfg[var_4_0]
 
-		if ZumaData:GetZumaBeforeIsFinish(var_4_0) and not var_4_1 then
+		if var_4_1 and var_4_1.difficult == 4 then
+			return
+		end
+
+		local var_4_2 = ZumaData:GetZumaStageScore(var_4_0)
+
+		if ZumaData:GetZumaBeforeIsFinish(var_4_0) and not var_4_2 then
 			manager.redPoint:setTip(string.format("%s_%s", RedPointConst.ZUMA_OPEN, arg_4_0), 1)
 		else
 			manager.redPoint:setTip(string.format("%s_%s", RedPointConst.ZUMA_OPEN, arg_4_0), 0)
@@ -44,7 +50,7 @@ function var_0_0.CheckZumaOpenRedPoint(arg_4_0)
 end
 
 function var_0_0.CheckZumaRewardRedPoint()
-	if #TaskTools:GetCanGetActivityTaskList(ActivityConst.ACTIVITY_ZUMA) <= 0 then
+	if #TaskTools:GetCanGetActivityTaskList(ZumaData:GetZumaActivityID()) <= 0 then
 		manager.redPoint:setTip(RedPointConst.ZUMA_REWARD, 0)
 	else
 		manager.redPoint:setTip(RedPointConst.ZUMA_REWARD, 1)
@@ -52,17 +58,17 @@ function var_0_0.CheckZumaRewardRedPoint()
 end
 
 function var_0_0.CheckZumaTalentRedPoint()
-	if not ActivityData:GetActivityIsOpen(ActivityConst.ACTIVITY_ZUMA) or ZumaData:GetZumaRead(ZumaConst.TalentViewID) then
+	if not ActivityData:GetActivityIsOpen(ZumaData:GetZumaActivityID()) or ZumaData:GetZumaRead(ZumaConst.TalentViewID) or not ZumaData:IsFinishOneZumaLevel() then
 		manager.redPoint:setTip(RedPointConst.ZUMA_TALENT, 0)
 
 		return
 	end
 
 	local var_6_0 = ZumaData:GetZumaCoin()
-	local var_6_1 = ActivityZumaTalentCfg.all
+	local var_6_1 = ZumaData:GetZumaTalentIDList()
 	local var_6_2 = 0
 
-	for iter_6_0, iter_6_1 in ipairs(var_6_1) do
+	for iter_6_0, iter_6_1 in ipairs(var_6_1 or {}) do
 		local var_6_3 = ActivityZumaTalentCfg[iter_6_1]
 		local var_6_4 = false
 
@@ -139,58 +145,110 @@ function var_0_0.OnResetZumaTalentCallBack(arg_13_0, arg_13_1)
 	end
 end
 
-function var_0_0.PlayZumaGame(arg_14_0)
-	arg_14_0 = arg_14_0 or 1
+function var_0_0.ReChallengeZumaGame()
+	local var_14_0 = ZumaData:GetZumaGameId()
+	local var_14_1 = ActivityZumaLevelCfg[var_14_0]
+	local var_14_2 = ZumaAction.GetZumaEnterData(var_14_1)
 
-	local var_14_0 = ActivityZumaLevelCfg[arg_14_0]
+	ZumaLuaBridge.ReChallengeZumaGame(var_14_2)
+end
 
-	if not var_14_0 then
+function var_0_0.PlayZumaGame(arg_15_0)
+	arg_15_0 = arg_15_0 or 1
+
+	local var_15_0 = ActivityZumaLevelCfg[arg_15_0]
+
+	if not var_15_0 then
 		error("can not find mapCfg")
 
 		return
 	end
 
-	if not ActivityData:GetActivityIsOpen(var_14_0.activity_id) then
+	if not ActivityData:GetActivityIsOpen(var_15_0.activity_id) then
 		ShowTips("TIME_OVER")
 
 		return
 	end
 
+	ZumaData:SetEndlessMapRandIndex(-1)
 	ZumaData:ResetZumaGameData()
 	ZumaData:SetZumaBallCount(0)
-	ZumaData:SetZumaGameId(arg_14_0)
+	ZumaData:SetZumaGameId(arg_15_0)
 
-	local var_14_1 = var_0_0.GetZumaEnterData(var_14_0)
+	local var_15_1 = var_0_0.GetZumaEnterData(var_15_0)
 
 	DestroyLua()
-	ZumaLuaBridge.Launcher(var_14_1)
+	ZumaLuaBridge.Launcher(var_15_1)
 end
 
-function var_0_0.GetZumaEnterData(arg_15_0)
-	local var_15_0 = GetZumaDataForExchange()
+function var_0_0.GetZumaEnterData(arg_16_0)
+	local var_16_0 = GetZumaDataForExchange()
 
-	var_15_0.mapName = arg_15_0.map
-	var_15_0.difficult = arg_15_0.difficult
+	var_16_0.mapName = arg_16_0.map
+	var_16_0.difficult = arg_16_0.difficult
+	var_16_0.effectList = var_0_0.GetZumaEffectList()
+	var_16_0.useSkillType = ZumaData:GetZumaSkillTypeID()
+	var_16_0.isEndless = ZumaData:GetZumaIsUseEndless()
 
-	local var_15_1 = {}
-	local var_15_2 = ZumaData:GetTalentList()
+	return var_16_0
+end
 
-	for iter_15_0, iter_15_1 in pairs(var_15_2 or {}) do
-		local var_15_3 = ActivityZumaTalentCfg[iter_15_0]
+function var_0_0.GetZumaEffectList()
+	local var_17_0 = {}
+	local var_17_1 = ZumaData:GetTalentListBySort()
 
-		if var_15_3 then
-			local var_15_4 = ZumaTalentData.New()
+	for iter_17_0, iter_17_1 in ipairs(var_17_1 or {}) do
+		local var_17_2 = ActivityZumaTalentCfg[iter_17_1]
 
-			var_15_4.talentType = var_15_3.talent_type
-			var_15_4.talentValue = var_15_3.talent_value
-
-			table.insert(var_15_1, var_15_4)
+		if var_17_2 and var_17_2.effect_list then
+			for iter_17_2, iter_17_3 in pairs(var_17_2.effect_list) do
+				table.insert(var_17_0, var_0_0.GetZumaEffectData(iter_17_3))
+			end
 		end
 	end
 
-	var_15_0.talentList = var_15_1
+	if ZumaData:GetZumaIsUseEndless() then
+		local var_17_3 = ZumaData:GetEndlessEffectList()
 
-	return var_15_0
+		for iter_17_4, iter_17_5 in pairs(var_17_3 or {}) do
+			table.insert(var_17_0, var_0_0.GetZumaEffectData(iter_17_5))
+		end
+	end
+
+	return var_17_0
+end
+
+function var_0_0.GetZumaEffectData(arg_18_0)
+	local var_18_0 = ActivityZumaEffectCfg[arg_18_0]
+	local var_18_1 = var_18_0.effect_value == "" and {} or var_18_0.effect_value
+
+	if arg_18_0 == 2503 then
+		local var_18_2 = math.floor(math.random() * (#var_18_1 - 1)) + 1
+
+		ZumaData:SetEndlessMapRandIndex(var_18_2)
+
+		return var_0_0.GetZumaEffectData(var_18_1[var_18_2])
+	end
+
+	local var_18_3 = ZumaEffectData.New()
+
+	var_18_3.effectType = var_18_0.effect_type
+
+	local var_18_4 = {}
+	local var_18_5 = {}
+
+	for iter_18_0, iter_18_1 in ipairs(var_18_1) do
+		if type(iter_18_1) == "string" then
+			table.insert(var_18_5, iter_18_1)
+		else
+			table.insert(var_18_4, iter_18_1)
+		end
+	end
+
+	var_18_3.effectValueList = var_18_4
+	var_18_3.effectValueStrList = var_18_5
+
+	return var_18_3
 end
 
 return var_0_0

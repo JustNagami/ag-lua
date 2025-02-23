@@ -215,6 +215,8 @@ function var_0_0.ActivePlayerControl(arg_23_0, arg_23_1)
 				QWorldLuaBridge.HideBubble(false)
 				QWorldLuaBridge.StopControl(false)
 				QWorldLuaBridge.EnableCamera(QWorldCameraFlag.Player, "", QWorldCameraLayer.PlayerOrStory)
+			elseif QWorldMgr:GetQWorldPerformMgr():IsInPerform() then
+				QWorldLuaBridge.EnableCamera(QWorldCameraFlag.Player, "", QWorldCameraLayer.PlayerOrStory)
 			end
 
 			if QWorldMgr:GetQWorldPerformMgr():TryClearPerformDirty() then

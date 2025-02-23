@@ -62,36 +62,39 @@ function var_0_0.UpdateBar(arg_9_0)
 	})
 end
 
-function var_0_0.RefreshUI(arg_10_0)
-	arg_10_0.entrustBtnTxt_.text = GetTips("BATTLE_READY_2")
-
-	local var_10_0 = false
-
+local function var_0_3()
 	for iter_10_0, iter_10_1 in pairs(var_0_1) do
 		if QWorldQuestTool.GetMainQuestStatus(iter_10_0) == QWorldQuestConst.MAIN_QUEST_STATUS.IN_PROGRESS and not getData("qworld", "main_view_quest_" .. iter_10_0) and ActivityData:GetActivityIsOpen(iter_10_1.activityId) then
-			var_10_0 = true
-			arg_10_0.activityTxt_.text = SandPlayHintCfg[iter_10_1.hint].desc
-			arg_10_0.activityIcon.sprite = getSpriteWithoutAtlas("TextureConfig/SandPlay/MiniIcon/" .. SandPlayHintCfg[iter_10_1.hint].icon)
+			return true, SandPlayHintCfg[iter_10_1.hint].desc, "TextureConfig/SandPlay/MiniIcon/" .. SandPlayHintCfg[iter_10_1.hint].icon
 		end
 	end
 
-	if not var_10_0 and RedEnvelopeData:IsCanGetReward() and QWorldTools.CheckTagCanOpen(313581) then
-		arg_10_0.activityTxt_.text = SandPlayHintCfg[var_0_2].desc
-		arg_10_0.activityIcon.sprite = getSpriteWithoutAtlas("TextureConfig/SandPlay/MiniIcon/" .. SandPlayHintCfg[var_0_2].icon)
-		var_10_0 = true
+	if RedEnvelopeData:IsCanGetReward() and QWorldTools.CheckTagCanOpen(313581) then
+		return true, SandPlayHintCfg[var_0_2].desc, "TextureConfig/SandPlay/MiniIcon/" .. SandPlayHintCfg[var_0_2].icon
 	end
 
-	SetActive(arg_10_0.hintRoot_, var_10_0)
+	return false
 end
 
-function var_0_0.EnterQWorld(arg_11_0)
-	local var_11_0 = ActivitySandplayCfg[arg_11_0.activityID_]
-	local var_11_1 = var_11_0 and var_11_0.story_id
+function var_0_0.RefreshUI(arg_11_0)
+	arg_11_0.entrustBtnTxt_.text = GetTips("BATTLE_READY_2")
 
-	if not var_11_1 or var_11_1 == 0 or manager.story:IsStoryPlayed(var_11_1) then
+	local var_11_0
+	local var_11_1
+
+	var_11_1, arg_11_0.activityTxt_.text, arg_11_0.activityIcon.spriteSync = var_0_3()
+
+	SetActive(arg_11_0.hintRoot_, var_11_1)
+end
+
+function var_0_0.EnterQWorld(arg_12_0)
+	local var_12_0 = ActivitySandplayCfg[arg_12_0.activityID_]
+	local var_12_1 = var_12_0 and var_12_0.story_id
+
+	if not var_12_1 or var_12_1 == 0 or manager.story:IsStoryPlayed(var_12_1) then
 		LaunchQWorld()
 	else
-		manager.story:StartStoryById(var_11_1, function()
+		manager.story:StartStoryById(var_12_1, function()
 			LaunchQWorld()
 		end)
 	end

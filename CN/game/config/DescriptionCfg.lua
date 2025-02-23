@@ -209,6 +209,231 @@
 			}
 		}
 	},
+	[101012101] = {
+		description = "造成共计<color=#E78300>{1}</color>攻击力的光属性伤害。\n\n被动：\n施放「刀啸决」时会打断其他技能。施放「刀啸决」后短暂时间会出现衔接提示，在合适的时机内成功衔接施放「鬼神式」或「无我意」时，重置「刀啸决」的冷却时间。\n\n<color=#297DE0>怒气：</color>普通攻击命中后会获得怒气。在衔接提示的合适的时机内，成功衔接施放其他技能后，恢复<color=#E78300>5</color>点怒气。",
+		maxLv = 60,
+		type = 1,
+		id = 101012101,
+		extra_param = "",
+		param = {
+			{
+				538,
+				10.448,
+				true,
+				"%"
+			}
+		}
+	},
+	[101012201] = {
+		description = "切换形态，在<material=underline c=#FFFFFF h=2 event=terminology args=(101201)>「寒峭势」</material>、<material=underline c=#FFFFFF h=2 event=terminology args=(101202)>「孤锋势」</material>之间切换；切换到<material=underline c=#FFFFFF h=2 event=terminology args=(101202)>「孤锋势」</material>且不衔接施放「鬼神式」、「无我意」时，会切换回<material=underline c=#FFFFFF h=2 event=terminology args=(101201)>「寒峭势」</material>；处于<material=underline c=#FFFFFF h=2 event=terminology args=(101201)>「寒峭势」</material>，该技能替换为「刀啸寒峭」；处于<material=underline c=#FFFFFF h=2 event=terminology args=(101202)>「孤锋势」</material>，该技能替换为「刀啸孤锋」。\n「刀啸寒峭」：造成共计<color=#E78300>{1}</color>攻击力的光属性伤害，从<material=underline c=#FFFFFF h=2 event=terminology args=(101201)>「寒峭势」</material>切换为<material=underline c=#FFFFFF h=2 event=terminology args=(101202)>「孤锋势」</material>。\n「刀啸孤锋」：造成共计<color=#E78300>{2}</color>攻击力的光属性伤害，从<material=underline c=#FFFFFF h=2 event=terminology args=(101202)>「孤锋势」</material>切换为<material=underline c=#FFFFFF h=2 event=terminology args=(101201)>「寒峭势」</material>。\n施放该技能时获得格挡效果，持续<color=#E78300>0.4</color>秒，成功格挡攻击时：获得无敌效果，持续<color=#E78300>{4}</color>秒；触发额外攻击，造成<color=#E78300>{3}</color>攻击力的光属性伤害；切换形态后，该形态的「鬼神式」和「无我意」的剩余冷却时间缩短<color=#E78300>3</color>秒。",
+		maxLv = 60,
+		type = 1,
+		id = 101012201,
+		extra_param = "",
+		param = {
+			{
+				300,
+				7.691,
+				true,
+				"%"
+			},
+			{
+				300,
+				7.691,
+				true,
+				"%"
+			},
+			{
+				600,
+				15.384,
+				true,
+				"%"
+			},
+			{
+				3,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101012202] = {
+		description = "处于<material=underline c=#FFFFFF h=2 event=terminology args=(101201)>「寒峭势」</material>：\n「鬼神一式」：造成共计<color=#E78300>{1}</color>攻击力的光属性伤害，并自动衔接收尾攻击造成<color=#E78300>{2}</color>攻击力的光属性伤害。\n\n处于<material=underline c=#FFFFFF h=2 event=terminology args=(101202)>「孤锋势」</material>：\n「鬼神二式」：造成共计<color=#E78300>{3}</color>攻击力的光属性伤害，施放后可以继续点击施放该技能的收尾攻击，造成共计<color=#E78300>{4}</color>攻击力的光属性伤害，施放该技能时获得格挡效果。",
+		maxLv = 60,
+		type = 1,
+		id = 101012202,
+		extra_param = "",
+		param = {
+			{
+				1160,
+				29.729,
+				true,
+				"%"
+			},
+			{
+				840,
+				21.535,
+				true,
+				"%"
+			},
+			{
+				600,
+				15.382,
+				true,
+				"%"
+			},
+			{
+				1500,
+				38.455,
+				true,
+				"%"
+			}
+		}
+	},
+	[101012203] = {
+		description = "处于<material=underline c=#FFFFFF h=2 event=terminology args=(101201)>「寒峭势」</material>：\n「意寒峭」：造成共计<color=#E78300>{1}</color>攻击力的光属性伤害，并自动衔接收尾攻击造成<color=#E78300>{2}</color>攻击力的光属性伤害。\n\n处于<material=underline c=#FFFFFF h=2 event=terminology args=(101202)>「孤锋势」</material>：\n「意孤锋」：造成共计<color=#E78300>{3}</color>攻击力的光属性伤害，并自动衔接收尾攻击造成<color=#E78300>{4}</color>攻击力的光属性伤害。",
+		maxLv = 60,
+		type = 1,
+		id = 101012203,
+		extra_param = "",
+		param = {
+			{
+				1500,
+				38.456,
+				true,
+				"%"
+			},
+			{
+				1000,
+				25.64,
+				true,
+				"%"
+			},
+			{
+				800,
+				20.51,
+				true,
+				"%"
+			},
+			{
+				1200,
+				30.767,
+				true,
+				"%"
+			}
+		}
+	},
+	[101012208] = {
+		description = "天诫·白泽与九司·陆吾的连携奥义。\n天诫·白泽造成<color=#E78300>{1}+{2}</color>×<color=#297DE0>自身奥义等级</color>攻击力的光属性伤害，命中时全队伍会心率提高<color=#E78300>{5}</color>、会心伤害提高<color=#E78300>{6}</color>，持续<color=#E78300>{7}</color>秒。\n九司·陆吾造成<color=#E78300>{3}+{4}</color>×<color=#297DE0>自身奥义等级</color>攻击力的光属性伤害，命中时全队伍近战伤害提高<color=#E78300>{8}</color>，持续<color=#E78300>{9}</color>秒。",
+		maxLv = 60,
+		type = 1,
+		id = 101012208,
+		extra_param = "",
+		param = {
+			{
+				1250,
+				0,
+				false,
+				"%"
+			},
+			{
+				32.051,
+				0,
+				false,
+				"%"
+			},
+			{
+				1250,
+				0,
+				false,
+				"%"
+			},
+			{
+				32.051,
+				0,
+				false,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				70,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101012209] = {
+		description = "造成共计<color=#E78300>{1}</color>攻击力的光属性伤害；命中时，全队伍会心率提高<color=#E78300>{2}</color>、会心伤害提高<color=#E78300>{3}</color>，持续<color=#E78300>{4}</color>秒。\n\n自身或者队友攻击造成会心后，获得<color=#E78300>3%</color>的奥义值，该效果每<color=#E78300>2</color>秒最多触发一次。",
+		maxLv = 60,
+		type = 1,
+		id = 101012209,
+		extra_param = "",
+		param = {
+			{
+				1250,
+				32.05,
+				true,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				50,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101012305] = {
+		description = "快速闪避敌人攻击，极限闪避会触发闪避效果。\n闪避效果：进入零时空间使全场敌人动作大幅减速，持续<color=#E78300>3</color>秒；闪避效果每<color=#E78300>{1}</color>秒最多触发一次。",
+		maxLv = 60,
+		type = 1,
+		id = 101012305,
+		extra_param = "",
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
 	[101013101] = {
 		description = "连续攻击锁定的敌人，造成共计<color=#E78300>{1}</color>攻击力的火属性伤害。\n「虚炎行空」：可通过长按普通攻击施放该技能。贯穿空间施放直线攻击，造成<color=#E78300>220%</color>攻击力的火属性伤害。处于<material=underline c=#FFFFFF h=2 event=terminology args=(101301)>「缚炎」</material>状态时，命中时对敌人附加火属性抗性降低<color=#E78300>{2}</color>，持续<color=#E78300>{3}</color>秒。\n强化的「虚炎行空」：每次<material=underline c=#FFFFFF h=2 event=terminology args=(101301)>「缚炎」</material>状态结束后、处于<material=underline c=#FFFFFF h=2 event=terminology args=(101301)>「缚炎」</material>状态并再次进入<material=underline c=#FFFFFF h=2 event=terminology args=(101301)>「缚炎」</material>状态后、<material=underline c=#FFFFFF h=2 event=terminology args=(101301)>「缚炎」</material>状态延长后，会强化下一次的「虚炎行空」，可通过长按普通攻击施放该强化技能。贯穿空间释放重拳，造成<color=#E78300>440%</color>攻击力的火属性伤害。\n「虚炎行空」不会打断普通攻击的连段。\n\n<color=#297DE0>能量：</color>每秒自动获得<color=#E78300>3</color>点能量。",
 		maxLv = 60,
@@ -459,7 +684,7 @@
 		}
 	},
 	[101015201] = {
-		description = "向敌人发射钩锁，造成<color=#E78300>{1}</color>攻击力的物理属性伤害，命中后向敌人突进，突进时获得霸体效果并可以格挡受到的伤害，突进期间成功格挡伤害时，重置「刃爪噬敌」的冷却时间；未能突进时，该技能剩余冷却时间缩短<color=#E78300>50%</color>。\n「狂狮逐猎」命中后<color=#E78300>3</color>秒内，「狂狮逐猎」会替换为「狂狮锯齿」、「锯刃撼地」会替换为「锯刃轮舞」，施放其中任意一个技能后技能一、二会替换回原技能。\n「狂狮锯齿」：跃起并将审判日轮向下猛砸，造成共计<color=#E78300>{2}</color>攻击力的物理属性伤害，该技能有<color=#E78300>12</color>秒的冷却时间。\n\n<color=#297DE0>神能：</color>「狂狮逐猎」命中后会获得<color=#E78300>25</color>点神能；突进期间成功格挡伤害时，神能恢复至满值。",
+		description = "向敌人发射钩锁，造成<color=#E78300>{1}</color>攻击力的物理属性伤害，命中后向敌人突进，突进时获得霸体效果并可以格挡攻击，突进期间成功格挡攻击时，重置「刃爪噬敌」的冷却时间；未能突进时，该技能剩余冷却时间缩短<color=#E78300>50%</color>。\n「狂狮逐猎」命中后<color=#E78300>3</color>秒内，「狂狮逐猎」会替换为「狂狮锯齿」、「锯刃撼地」会替换为「锯刃轮舞」，施放其中任意一个技能后技能一、二会替换回原技能。\n「狂狮锯齿」：跃起并将审判日轮向下猛砸，造成共计<color=#E78300>{2}</color>攻击力的物理属性伤害，该技能有<color=#E78300>12</color>秒的冷却时间。\n\n<color=#297DE0>神能：</color>「狂狮逐猎」命中后会获得<color=#E78300>25</color>点神能；突进期间成功格挡攻击时，神能恢复至满值。",
 		maxLv = 60,
 		type = 1,
 		id = 101015201,
@@ -690,7 +915,7 @@
 		}
 	},
 	[101016201] = {
-		description = "大剑模式：侧身用荒獠撞击，撞击时自身获得短暂的霸体效果，造成共计<color=#E78300>{1}</color>攻击力的物理属性伤害，命中后该技能切换到电锯模式。\n电锯模式：使用荒獠进行突刺攻击，造成共计<color=#E78300>{2}</color>攻击力的物理属性伤害；命中时可通过长按该技能消耗神能持续施放，每消耗<color=#E78300>25</color>点神能获得<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(101601)>「压力槽」</material>标记、伤害提高<color=#E78300>10%</color>并额外造成共计<color=#E78300>{3}</color>攻击力的物理属性伤害；处于修正模式时命中瞬间技能伤害提高<color=#E78300>10%</color>。施放后切换回大剑模式。\n\n<color=#297DE0>神能：</color>撞击的霸体效果期间受击时会格挡伤害并获得<color=#E78300>100</color>点神能。",
+		description = "大剑模式：侧身用荒獠撞击，撞击时自身获得短暂的霸体效果，造成共计<color=#E78300>{1}</color>攻击力的物理属性伤害，命中后该技能切换到电锯模式。\n电锯模式：使用荒獠进行突刺攻击，造成共计<color=#E78300>{2}</color>攻击力的物理属性伤害；命中时可通过长按该技能消耗神能持续施放，每消耗<color=#E78300>25</color>点神能获得<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(101601)>「压力槽」</material>标记、伤害提高<color=#E78300>10%</color>并额外造成共计<color=#E78300>{3}</color>攻击力的物理属性伤害；处于修正模式时命中瞬间技能伤害提高<color=#E78300>10%</color>。施放后切换回大剑模式。\n\n<color=#297DE0>神能：</color>撞击的霸体效果期间受击时会格挡攻击并获得<color=#E78300>100</color>点神能。",
 		maxLv = 60,
 		type = 1,
 		id = 101016201,
@@ -954,7 +1179,7 @@
 		}
 	},
 	[101017201] = {
-		description = "短距离突进，并造成共计<color=#E78300>{1}</color>攻击力的暗属性伤害；处于<material=underline c=#FFFFFF h=2 event=terminology args=(101701)>「神瞳凝视」</material>状态时，该技能获得以下额外效果：命中时对锁定的敌人附加暗属性抗性降低<color=#E78300>9%</color>，持续<color=#E78300>{2}</color>秒，技能施放后，<material=underline c=#FFFFFF h=2 event=terminology args=(101701)>「神瞳凝视」</material>状态立即结束。\n\n<color=#297DE0>印记：</color>每次施放命中后，获得<color=#E78300>1</color>个印记。",
+		description = "短距离突进，并造成共计<color=#E78300>{1}</color>攻击力的暗属性伤害；处于<material=underline c=#FFFFFF h=2 event=terminology args=(101701)>「神瞳凝视」</material>状态时，该技能获得以下额外效果：命中时对锁定的敌人附加暗属性抗性降低<color=#E78300>12%</color>，持续<color=#E78300>{2}</color>秒，技能施放后，<material=underline c=#FFFFFF h=2 event=terminology args=(101701)>「神瞳凝视」</material>状态立即结束。\n\n<color=#297DE0>印记：</color>每次施放命中后，获得<color=#E78300>1</color>个印记。",
 		maxLv = 60,
 		type = 1,
 		id = 101017201,
@@ -5238,7 +5463,7 @@
 		}
 	},
 	[101049203] = {
-		description = "唤出<material=underline c=#FFFFFF h=2 event=terminology args=(104903)>「日狭女」</material>，并在身前凝聚寒冰神力，可以长按该技能进入格挡架势，松开长按或达到时间上限时会施放一次攻击，造成共计<color=#E78300>{1}</color>攻击力的冰属性伤害，之后该技能剩余冷却时间缩短<color=#E78300>40%</color>。\n当处于格挡架势被命中后：格挡伤害；对攻击者附加冰冻状态，持续<color=#E78300>{6}</color>秒；自身攻击力提高<color=#E78300>{4}</color>，持续<color=#E78300>{5}</color>秒；获得<color=#E78300>20</color>点怒气；和<material=underline c=#FFFFFF h=2 event=terminology args=(104903)>「日狭女」</material>一同施放斩击，自身造成共计<color=#E78300>{2}</color>攻击力的冰属性伤害、<material=underline c=#FFFFFF h=2 event=terminology args=(104903)>「日狭女」</material>造成共计<color=#E78300>{3}</color>攻击力的冰属性伤害。",
+		description = "唤出<material=underline c=#FFFFFF h=2 event=terminology args=(104903)>「日狭女」</material>，并在身前凝聚寒冰神力，可以长按该技能进入格挡架势，松开长按或达到时间上限时会施放一次攻击，造成共计<color=#E78300>{1}</color>攻击力的冰属性伤害，之后该技能剩余冷却时间缩短<color=#E78300>40%</color>。\n当处于格挡架势被命中后：格挡攻击；对攻击者附加冰冻状态，持续<color=#E78300>{6}</color>秒；自身攻击力提高<color=#E78300>{4}</color>，持续<color=#E78300>{5}</color>秒；获得<color=#E78300>20</color>点怒气；和<material=underline c=#FFFFFF h=2 event=terminology args=(104903)>「日狭女」</material>一同施放斩击，自身造成共计<color=#E78300>{2}</color>攻击力的冰属性伤害、<material=underline c=#FFFFFF h=2 event=terminology args=(104903)>「日狭女」</material>造成共计<color=#E78300>{3}</color>攻击力的冰属性伤害。",
 		maxLv = 60,
 		type = 1,
 		id = 101049203,
@@ -6666,7 +6891,7 @@
 		}
 	},
 	[101060101] = {
-		description = "自过往除暴安良的经历中领悟的武技，使用开明连续攻击敌人，造成共计<color=#E78300>{1}</color>攻击力的光属性伤害。\n\n被动：\n每段普通攻击的起手阶段有短暂的判定，受击时会施放反击技能攻击「崩枪式」。\n「崩枪式」：造成共计<color=#E78300>{2}</color>攻击力的光属性伤害，施放期间获得无敌效果。\n「破军枪舞」：造成共计<color=#E78300>{3}</color>攻击力的光属性伤害，施放期间获得霸体效果，受到的伤害降低<color=#E78300>{4}</color>。\n\n<color=#297DE0>怒气：</color>普通攻击命中后会获得怒气；触发「崩枪式」时获得<color=#E78300>20</color>点怒气。",
+		description = "自过往除暴安良的经历中领悟的武技，使用开明连续攻击敌人，造成共计<color=#E78300>{1}</color>攻击力的光属性伤害。\n\n被动：\n每段普通攻击的起手阶段、第四段普通攻击期间获得短暂的格挡效果，受击时会格挡攻击并施放反击技能攻击「崩枪式」。\n「崩枪式」：造成共计<color=#E78300>{2}</color>攻击力的光属性伤害，施放期间获得无敌效果。\n「破军枪舞」：造成共计<color=#E78300>{3}</color>攻击力的光属性伤害，施放期间获得霸体效果，受到的伤害降低<color=#E78300>{4}</color>。\n\n<color=#297DE0>怒气：</color>普通攻击命中后会获得怒气；触发「崩枪式」时获得<color=#E78300>20</color>点怒气。",
 		maxLv = 60,
 		type = 1,
 		id = 101060101,
@@ -6699,7 +6924,7 @@
 		}
 	},
 	[101060111] = {
-		description = "自过往除暴安良的经历中领悟的武技，使用开明连续攻击敌人，造成共计<color=#E78300>{1}</color>攻击力的光属性伤害。\n\n被动：\n每段普通攻击的起手阶段有短暂的判定，受击时，当自身不处于<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>范围内时会施放反击技能攻击「崩枪式」、处于<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>范围内时会施放反击技能攻击「崩山式」。\n「崩枪式」：造成共计<color=#E78300>{2}</color>攻击力的光属性伤害，施放期间获得无敌效果。\n「崩山式」：回收<color=#E78300>3</color>把<material=underline c=#FFFFFF h=2 event=terminology args=(106002)>「枪」</material>，造成共计<color=#E78300>{3}</color>攻击力的光属性伤害，施放期间获得无敌效果。\n「破军枪舞」：造成共计<color=#E78300>{4}</color>攻击力的光属性伤害，施放期间获得霸体效果，受到的伤害降低<color=#E78300>{5}</color>。\n\n<color=#297DE0>怒气：</color>普通攻击命中后会获得怒气；触发「崩枪式」时获得<color=#E78300>20</color>点怒气，触发「崩山式」时获得<color=#E78300>30</color>点怒气。",
+		description = "自过往除暴安良的经历中领悟的武技，使用开明连续攻击敌人，造成共计<color=#E78300>{1}</color>攻击力的光属性伤害。\n\n被动：\n每段普通攻击的起手阶段、第四段普通攻击期间获得短暂的格挡效果，受击时会格挡攻击并施放反击技能攻击，当自身不处于<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>范围内时会施放反击技能攻击「崩枪式」、处于<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>范围内时会施放反击技能攻击「崩山式」。\n「崩枪式」：造成共计<color=#E78300>{2}</color>攻击力的光属性伤害，施放期间获得无敌效果。\n「崩山式」：回收<color=#E78300>3</color>把<material=underline c=#FFFFFF h=2 event=terminology args=(106002)>「枪」</material>，造成共计<color=#E78300>{3}</color>攻击力的光属性伤害，施放期间获得无敌效果。\n「破军枪舞」：造成共计<color=#E78300>{4}</color>攻击力的光属性伤害，施放期间获得霸体效果，受到的伤害降低<color=#E78300>{5}</color>。\n\n<color=#297DE0>怒气：</color>普通攻击命中后会获得怒气；触发「崩枪式」时获得<color=#E78300>20</color>点怒气，触发「崩山式」时获得<color=#E78300>30</color>点怒气。",
 		maxLv = 60,
 		type = 1,
 		id = 101060111,
@@ -7098,7 +7323,7 @@
 		}
 	},
 	[101061305] = {
-		description = "脱胎于颛顼秘法的身法。\n长按闪避可以展开盾牌防御，每<color=#E78300>0.1</color>秒获得<color=#E78300>6</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(106102)>「南溟」</material>。\n快速闪避敌人攻击，极限闪避会触发闪避效果。展开盾牌防御期间受击时，会格挡伤害并触发闪避效果。\n<material=underline c=#FFFFFF h=2 event=terminology args=(106102)>「南溟」</material>为满时松开长按或展开盾牌防御期间受击时，会清空<material=underline c=#FFFFFF h=2 event=terminology args=(106102)>「南溟」</material>并施放技能攻击，造成共计<color=#E78300>{1}</color>攻击力的水属性伤害，获得<color=#E78300>20</color>点神能、<color=#E78300>30</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(106101)>「北斗」</material>。\n闪避效果：进入零时空间使全场敌人动作大幅减速，持续<color=#E78300>3</color>秒；通过防御格挡攻击途径触发闪避效果时，额外获得<color=#E78300>20</color>点神能、<color=#E78300>30</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(106101)>「北斗」</material>；闪避效果每<color=#E78300>{2}</color>秒最多触发一次。",
+		description = "脱胎于颛顼秘法的身法。\n长按闪避可以展开盾牌防御，每<color=#E78300>0.1</color>秒获得<color=#E78300>6</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(106102)>「南溟」</material>。\n快速闪避敌人攻击，极限闪避会触发闪避效果。展开盾牌防御期间受击时，会格挡攻击并触发闪避效果。\n<material=underline c=#FFFFFF h=2 event=terminology args=(106102)>「南溟」</material>为满时松开长按或展开盾牌防御期间受击时，会清空<material=underline c=#FFFFFF h=2 event=terminology args=(106102)>「南溟」</material>并施放技能攻击，造成共计<color=#E78300>{1}</color>攻击力的水属性伤害，获得<color=#E78300>20</color>点神能、<color=#E78300>30</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(106101)>「北斗」</material>。\n闪避效果：进入零时空间使全场敌人动作大幅减速，持续<color=#E78300>3</color>秒；通过防御格挡攻击途径触发闪避效果时，额外获得<color=#E78300>20</color>点神能、<color=#E78300>30</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(106101)>「北斗」</material>；闪避效果每<color=#E78300>{2}</color>秒最多触发一次。",
 		maxLv = 60,
 		type = 1,
 		id = 101061305,
@@ -7796,26 +8021,26 @@
 		param = {
 			{
 				1000,
-				0,
-				false,
+				50,
+				true,
 				"%"
 			},
 			{
 				25.641,
-				0,
-				false,
+				1.282,
+				true,
 				"%"
 			},
 			{
 				1000,
-				0,
-				false,
+				50,
+				true,
 				"%"
 			},
 			{
 				25.641,
-				0,
-				false,
+				1.282,
+				true,
 				"%"
 			},
 			{
@@ -7911,7 +8136,7 @@
 		}
 	},
 	[101071202] = {
-		description = "脱胎于太昊剑法的第一种剑术法门，攻守损益，其势相合。\n处于<material=underline c=#FFFFFF h=2 event=terminology args=(107101)>「青巽姿态」</material>：该技能替换为「益动势合·巽」。施放时格挡受到的伤害，召唤<color=#E78300>8</color>把<material=underline c=#FFFFFF h=2 event=terminology args=(107104)>「玉剑」</material>攻击锁定的敌人。该技能处于冷却状态时，普通攻击每次命中后会召唤不同数量的<material=underline c=#FFFFFF h=2 event=terminology args=(107104)>「玉剑」</material>攻击锁定的敌人，该效果每<color=#E78300>0.3</color>秒最多触发一次。\n<material=underline c=#FFFFFF h=2 event=terminology args=(107104)>「玉剑」</material>：造成<color=#E78300>{1}</color>攻击力的风属性伤害，命中后自身风属性伤害提高<color=#E78300>0.4%</color>，持续<color=#E78300>{4}</color>秒，最多可叠加<color=#E78300>28</color>层。\n处于<material=underline c=#FFFFFF h=2 event=terminology args=(107102)>「苍震姿态」</material>：该技能替换为「益动势合·震」。消耗最多<color=#E78300>5</color>点神能，施放二段攻击造成伤害，根据穿插「风雷破」的时机，又演化出二式剑术，造成不同的伤害。\n第一式：直接施放，造成共计<color=#E78300>{2}</color>攻击力的雷属性伤害；\n第二式：在第二段前穿插施放「风雷破」，最多造成共计<color=#E78300>{3}</color>攻击力的雷属性伤害。",
+		description = "脱胎于太昊剑法的第一种剑术法门，攻守损益，其势相合。\n处于<material=underline c=#FFFFFF h=2 event=terminology args=(107101)>「青巽姿态」</material>：该技能替换为「益动势合·巽」。施放时获得格挡效果，可以格挡攻击，召唤<color=#E78300>8</color>把<material=underline c=#FFFFFF h=2 event=terminology args=(107104)>「玉剑」</material>攻击锁定的敌人。该技能处于冷却状态时，普通攻击每次命中后会召唤不同数量的<material=underline c=#FFFFFF h=2 event=terminology args=(107104)>「玉剑」</material>攻击锁定的敌人，该效果每<color=#E78300>0.3</color>秒最多触发一次。\n<material=underline c=#FFFFFF h=2 event=terminology args=(107104)>「玉剑」</material>：造成<color=#E78300>{1}</color>攻击力的风属性伤害，命中后自身风属性伤害提高<color=#E78300>0.4%</color>，持续<color=#E78300>{4}</color>秒，最多可叠加<color=#E78300>28</color>层。\n处于<material=underline c=#FFFFFF h=2 event=terminology args=(107102)>「苍震姿态」</material>：该技能替换为「益动势合·震」。消耗最多<color=#E78300>5</color>点神能，施放二段攻击造成伤害，根据穿插「风雷破」的时机，又演化出二式剑术，造成不同的伤害。\n第一式：直接施放，造成共计<color=#E78300>{2}</color>攻击力的雷属性伤害；\n第二式：在第二段前穿插施放「风雷破」，最多造成共计<color=#E78300>{3}</color>攻击力的雷属性伤害。",
 		maxLv = 60,
 		type = 1,
 		id = 101071202,
@@ -8549,26 +8774,26 @@
 		param = {
 			{
 				1000,
-				0,
-				false,
+				50,
+				true,
 				"%"
 			},
 			{
 				25.641,
-				0,
-				false,
+				1.282,
+				true,
 				"%"
 			},
 			{
 				1500,
-				0,
-				false,
+				75,
+				true,
 				"%"
 			},
 			{
 				38.462,
-				0,
-				false,
+				1.923,
+				true,
 				"%"
 			},
 			{
@@ -9105,7 +9330,7 @@
 		}
 	},
 	[101081305] = {
-		description = "非<material=underline c=#FFFFFF h=2 event=terminology args=(108102)>「巡航模式」</material>：\n非移动时长按闪避时：消耗闪避值在原地展开屏障，自身受到的伤害降低<color=#E78300>60%</color>。屏障持续期间可再次消耗闪避值格挡第一次伤害。当自身拥有<material=underline c=#FFFFFF h=2 event=terminology args=(108101)>「破冰」</material>标记时，成功格挡后的短暂时间内取消点击，会消耗<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(108101)>「破冰」</material>标记施放一次「霜断」，该次施放「霜断」期间自身获得无敌效果。\n移动时点击闪避：快速闪避敌人攻击，对沿途敌人造成共计<color=#E78300>{1}</color>攻击力的冰属性伤害，极限闪避会触发闪避效果。\n<material=underline c=#FFFFFF h=2 event=terminology args=(108102)>「巡航模式」</material>：\n驾驶斩浪号短暂潜入冰中闪避敌人攻击，极限闪避会触发闪避效果。\n闪避效果：获得<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(108101)>「破冰」</material>标记；闪避效果每<color=#E78300>{2}</color>秒最多触发一次。",
+		description = "非<material=underline c=#FFFFFF h=2 event=terminology args=(108102)>「巡航模式」</material>：\n非移动时长按闪避时：消耗闪避值在原地展开屏障，自身受到的伤害降低<color=#E78300>60%</color>。屏障持续期间可再次消耗闪避值格挡第一次伤害。当自身拥有<material=underline c=#FFFFFF h=2 event=terminology args=(108101)>「破冰」</material>标记时，成功格挡攻击后的短暂时间内取消点击，会消耗<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(108101)>「破冰」</material>标记施放一次「霜断」，该次施放「霜断」期间自身获得无敌效果。\n移动时点击闪避：快速闪避敌人攻击，对沿途敌人造成共计<color=#E78300>{1}</color>攻击力的冰属性伤害，极限闪避会触发闪避效果。\n<material=underline c=#FFFFFF h=2 event=terminology args=(108102)>「巡航模式」</material>：\n驾驶斩浪号短暂潜入冰中闪避敌人攻击，极限闪避会触发闪避效果。\n闪避效果：获得<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(108101)>「破冰」</material>标记；闪避效果每<color=#E78300>{2}</color>秒最多触发一次。",
 		maxLv = 60,
 		type = 1,
 		id = 101081305,
@@ -10659,7 +10884,7 @@
 		}
 	},
 	[101119201] = {
-		description = "挥舞长枪，造成共计<color=#E78300>{1}</color>攻击力的雷属性伤害，在<material=underline c=#FFFFFF h=2 event=terminology args=(111901)>「进攻姿态」</material>和<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>之间进行切换；处于<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>期间获得硬直效果。\n无论「风雷易势」是否处于冷却、是否替换为「风雷流转」，在施放「雷鸣风啸」、「奔雷疾风」、「风雷流转」或者追击、反击过程中可以点击该技能进行姿态切换，消耗最多<color=#E78300>7</color>点怒气，不会打断当前动作也不会造成伤害。\n施放「雷鸣风啸」、「奔雷疾风」过程中受击时，若处于<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>，会格挡当前的伤害并触发反击，消耗最多<color=#E78300>15</color>点怒气，反击造成共计<color=#E78300>{2}</color>攻击力的雷属性伤害，施放反击时获得无敌效果，每次施放命中后获得<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(111904)>「惊岚」</material>标记。\n当标记为满时，「风雷易势」会替换为「风雷流转」，<material=underline c=#FFFFFF h=2 event=terminology args=(111901)>「进攻姿态」</material>和<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>的「风雷流转」分别有<color=#E78300>15</color>秒的冷却时间。\n「风雷流转」：造成共计<color=#E78300>{3}</color>攻击力的雷属性伤害，施放后消耗全部标记。",
+		description = "挥舞长枪，造成共计<color=#E78300>{1}</color>攻击力的雷属性伤害，在<material=underline c=#FFFFFF h=2 event=terminology args=(111901)>「进攻姿态」</material>和<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>之间进行切换；处于<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>期间获得硬直效果。\n无论「风雷易势」是否处于冷却、是否替换为「风雷流转」，在施放「雷鸣风啸」、「奔雷疾风」、「风雷流转」或者追击、反击过程中可以点击该技能进行姿态切换，消耗最多<color=#E78300>7</color>点怒气，不会打断当前动作也不会造成伤害。\n施放「雷鸣风啸」、「奔雷疾风」过程中受击时，若处于<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>，会格挡攻击并触发反击，消耗最多<color=#E78300>15</color>点怒气，反击造成共计<color=#E78300>{2}</color>攻击力的雷属性伤害，施放反击时获得无敌效果，每次施放命中后获得<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(111904)>「惊岚」</material>标记。\n当标记为满时，「风雷易势」会替换为「风雷流转」，<material=underline c=#FFFFFF h=2 event=terminology args=(111901)>「进攻姿态」</material>和<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>的「风雷流转」分别有<color=#E78300>15</color>秒的冷却时间。\n「风雷流转」：造成共计<color=#E78300>{3}</color>攻击力的雷属性伤害，施放后消耗全部标记。",
 		maxLv = 60,
 		type = 1,
 		id = 101119201,
@@ -12426,7 +12651,7 @@
 		}
 	},
 	[101158305] = {
-		description = "快速闪避敌人攻击，极限闪避会触发闪避效果。极限闪避时，对自身和攻击者附加<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态，持续<color=#E78300>5</color>秒，场上被附加<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态的敌人最多存在一个。施放普通攻击或「鸦惑一闪」期间点击闪避时，会改变为施放「焚心熔火」，通过该途径施放的「焚心熔火」不会打断普通攻击的连段。施放「焚心熔火」时会有短暂的闪避判定。\n<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>：自身可以格挡处于<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态的敌人的攻击伤害，处于<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态的敌人被击败时，移除自身的<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态。\n闪避效果：积蓄条获得率提高<color=#E78300>15%</color>，持续<color=#E78300>5</color>秒；闪避效果每<color=#E78300>{1}</color>秒最多触发一次。",
+		description = "快速闪避敌人攻击，极限闪避会触发闪避效果。极限闪避时，对自身和攻击者附加<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态，持续<color=#E78300>5</color>秒，场上被附加<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态的敌人最多存在一个。施放普通攻击或「鸦惑一闪」期间点击闪避时，会改变为施放「焚心熔火」，通过该途径施放的「焚心熔火」不会打断普通攻击的连段。施放「焚心熔火」时会有短暂的闪避判定。\n<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>：自身可以格挡处于<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态的敌人的攻击，处于<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态的敌人被击败时，移除自身的<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态。\n闪避效果：积蓄条获得率提高<color=#E78300>15%</color>，持续<color=#E78300>5</color>秒；闪避效果每<color=#E78300>{1}</color>秒最多触发一次。",
 		maxLv = 60,
 		type = 1,
 		id = 101158305,
@@ -12477,7 +12702,7 @@
 		}
 	},
 	[101184202] = {
-		description = "长按时进行举盾防御并对前方敌人造成共计<color=#E78300>{1}</color>攻击力的雷属性伤害，持续<color=#E78300>3</color>秒，松开长按或达到时间上限时会施放一次攻击，造成共计<color=#E78300>{2}</color>攻击力的雷属性伤害。当举盾防御被命中时，会格挡受到的伤害，并施放强力反击，造成共计<color=#E78300>{3}</color>攻击力的雷属性伤害，并进入零时空间<color=#E78300>2</color>秒。\n\n<color=#297DE0>神能：</color>成功格挡后，获得<color=#E78300>15</color>点神能。",
+		description = "长按时进行举盾防御并对前方敌人造成共计<color=#E78300>{1}</color>攻击力的雷属性伤害，持续<color=#E78300>3</color>秒，松开长按或达到时间上限时会施放一次攻击，造成共计<color=#E78300>{2}</color>攻击力的雷属性伤害。当举盾防御被命中时，会格挡攻击并施放强力反击，造成共计<color=#E78300>{3}</color>攻击力的雷属性伤害，并进入零时空间<color=#E78300>2</color>秒。\n\n<color=#297DE0>神能：</color>成功格挡后，获得<color=#E78300>15</color>点神能。",
 		maxLv = 60,
 		type = 1,
 		id = 101184202,
@@ -13398,7 +13623,7 @@
 		}
 	},
 	[101284305] = {
-		description = "移动闪避敌人攻击，极限闪避会触发闪避效果。非移动闪避时，会举剑格挡，成功格挡后可以点击普通攻击施放反击，造成共计<color=#E78300>{1}</color>攻击力的光属性伤害；每次施放反击命中时「刹那的辉光」、「命运的涟漪」的剩余冷却时间缩短<color=#E78300>1</color>秒；反击每次命中后获得<color=#E78300>5</color>点神能；闪避效果不处于冷却状态时，反击命中时也会触发闪避效果，之后闪避效果进入冷却。\n闪避效果：进入零时空间使全场敌人动作大幅减速，持续<color=#E78300>2</color>秒；闪避效果每<color=#E78300>{2}</color>秒最多触发一次。",
+		description = "移动闪避敌人攻击，极限闪避会触发闪避效果。非移动闪避时，会举剑格挡，成功格挡攻击后可以点击普通攻击施放反击，造成共计<color=#E78300>{1}</color>攻击力的光属性伤害；每次施放反击命中时「刹那的辉光」、「命运的涟漪」的剩余冷却时间缩短<color=#E78300>1</color>秒；反击每次命中后获得<color=#E78300>5</color>点神能；闪避效果不处于冷却状态时，反击命中时也会触发闪避效果，之后闪避效果进入冷却。\n闪避效果：进入零时空间使全场敌人动作大幅减速，持续<color=#E78300>2</color>秒；闪避效果每<color=#E78300>{2}</color>秒最多触发一次。",
 		maxLv = 60,
 		type = 1,
 		id = 101284305,
@@ -13937,6 +14162,219 @@
 			}
 		}
 	},
+	[110120011] = {
+		description = "「鬼神式」、「无我意」的冷却时间缩短<color=#E78300>5</color>秒，但技能的基础伤害降低<color=#E78300>{1}</color>。施放「鬼神二式」时不再获得格挡效果。",
+		maxLv = 1,
+		type = 1,
+		id = 110120011,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[110120012] = {
+		description = "施放「鬼神式」或「无我意」时，会根据当前形态获得对应的<material=underline c=#FFFFFF h=2 event=terminology args=(101203)>「寒峭」</material>或<material=underline c=#FFFFFF h=2 event=terminology args=(101204)>「孤锋」</material>标记；获得标记时，若和当前形态的标记不同，则不会获得标记；施放「刀啸决」时会把<material=underline c=#FFFFFF h=2 event=terminology args=(101203)>「寒峭」</material>或<material=underline c=#FFFFFF h=2 event=terminology args=(101204)>「孤锋」</material>标记替换为当前形态的标记；受击并损失生命值时，失去<color=#E78300>2</color>个标记；<material=underline c=#FFFFFF h=2 event=terminology args=(101203)>「寒峭」</material>或<material=underline c=#FFFFFF h=2 event=terminology args=(101204)>「孤锋」</material>标记最多拥有<color=#E78300>6</color>个。\n每有<color=#E78300>1</color>个标记，技能攻击命中瞬间技能伤害提高<color=#E78300>{1}</color>。\n施放「刀啸决」后，若和当前形态的标记相同，则根据拥有的标记数量，每拥有<color=#E78300>1</color>个标记，恢复<color=#E78300>15</color>点怒气。",
+		maxLv = 1,
+		type = 1,
+		id = 110120012,
+		extra_param = "",
+		param = {
+			{
+				3,
+				3,
+				true,
+				"%"
+			}
+		}
+	},
+	[110120013] = {
+		description = "当<material=underline c=#FFFFFF h=2 event=terminology args=(101203)>「寒峭」</material>或<material=underline c=#FFFFFF h=2 event=terminology args=(101204)>「孤锋」</material>标记为满时，施放「刀啸决」时会消耗全部标记，进入<material=underline c=#FFFFFF h=2 event=terminology args=(101205)>「惩戒」</material>状态，持续<color=#E78300>12</color>秒。\n<material=underline c=#FFFFFF h=2 event=terminology args=(101205)>「惩戒」</material>：进入状态时重置技能的剩余冷却时间；状态期间内，攻击力提高<color=#E78300>{1}</color>，获得霸体效果，受到的伤害降低<color=#E78300>{2}</color>，技能的剩余冷却时间缩短<color=#E78300>100%</color>、技能的怒气消耗降低<color=#E78300>{3}</color>、不会获得<material=underline c=#FFFFFF h=2 event=terminology args=(101203)>「寒峭」</material>或<material=underline c=#FFFFFF h=2 event=terminology args=(101204)>「孤锋」</material>标记。",
+		maxLv = 1,
+		type = 1,
+		id = 110120013,
+		extra_param = "",
+		param = {
+			{
+				25,
+				0,
+				false,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			},
+			{
+				100,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[110120021] = {
+		description = "受到的伤害降低<color=#E78300>{1}</color>。\n施放「刀啸决」后衔接施放「鬼神式」或「无我意」时，全队伍技能伤害提高<color=#E78300>{2}</color>，持续<color=#E78300>{3}</color>秒，全队伍获得<color=#E78300>7%</color>的奥义值。",
+		maxLv = 1,
+		type = 1,
+		id = 110120021,
+		extra_param = "",
+		param = {
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				7,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[110120022] = {
+		description = "「刀啸决」会对命中的敌人附加光属性抗性降低<color=#E78300>{1}</color>，持续<color=#E78300>{2}</color>秒。",
+		maxLv = 1,
+		type = 1,
+		id = 110120022,
+		extra_param = "",
+		param = {
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				7,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[110120023] = {
+		description = "普通攻击第五段会对命中的敌人附加破甲状态，防御力降低<color=#E78300>{1}</color>，持续<color=#E78300>{2}</color>秒。\n队友格挡敌人攻击时，光属性伤害提高<color=#E78300>{3}</color>，持续<color=#E78300>{4}</color>秒，当其作为队长时，光属性伤害额外提高<color=#E78300>{5}</color>。",
+		maxLv = 1,
+		type = 1,
+		id = 110120023,
+		extra_param = "",
+		param = {
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				""
+			},
+			{
+				25,
+				25,
+				true,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				""
+			},
+			{
+				25,
+				25,
+				true,
+				"%"
+			}
+		}
+	},
+	[110120031] = {
+		description = "「刀啸决」的基础伤害提高<color=#E78300>{1}</color>，施放时恢复<color=#E78300>5</color>点怒气，成功格挡敌人攻击时，额外恢复<color=#E78300>25</color>点怒气并重置「刀啸决」的剩余冷却时间。",
+		maxLv = 1,
+		type = 1,
+		id = 110120031,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[110120032] = {
+		description = "在衔接提示的合适的时机内，成功衔接施放其他技能时，获得<color=#E78300>1</color>个围绕自身的<material=underline c=#FFFFFF h=2 event=terminology args=(101206)>「通识」</material>标记，标记最多拥有<color=#E78300>4</color>个。\n<material=underline c=#FFFFFF h=2 event=terminology args=(101206)>「通识」</material>：每拥有<color=#E78300>1</color>个该标记，伤害提高<color=#E78300>{1}</color>。",
+		maxLv = 1,
+		type = 1,
+		id = 110120032,
+		extra_param = "",
+		param = {
+			{
+				3,
+				3,
+				true,
+				"%"
+			}
+		}
+	},
+	[110120033] = {
+		description = "可长按普通攻击，消耗<color=#E78300>4</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(101206)>「通识」</material>标记，在锁定的敌人周围开启<material=underline c=#FFFFFF h=2 event=terminology args=(101207)>「刀阵」</material>，开启刀阵时会召唤<color=#E78300>4</color>把<material=underline c=#FFFFFF h=2 event=terminology args=(101208)>「刀」</material>，<material=underline c=#FFFFFF h=2 event=terminology args=(101207)>「刀阵」</material>最多持续<color=#E78300>15</color>秒，场上存在<material=underline c=#FFFFFF h=2 event=terminology args=(101207)>「刀阵」</material>时，不会获得<material=underline c=#FFFFFF h=2 event=terminology args=(101206)>「通识」</material>层数。\n开启<material=underline c=#FFFFFF h=2 event=terminology args=(101207)>「刀阵」</material>时，自身光属性伤害提高<color=#E78300>{1}</color>，持续<color=#E78300>{2}</color>秒；敌人处于<material=underline c=#FFFFFF h=2 event=terminology args=(101207)>「刀阵」</material>范围内时，附加破甲状态，防御力降低<color=#E78300>{3}</color>。\n施放「刀啸决」时，会消耗<color=#E78300>1</color>把<material=underline c=#FFFFFF h=2 event=terminology args=(101208)>「刀」</material>，重置「刀啸决」的冷却时间并触发额外攻击，造成共计<color=#E78300>{4}</color>（技能一每提升一级<color=#E78300>+{5}</color>）攻击力的光属性伤害。\n当<material=underline c=#FFFFFF h=2 event=terminology args=(101207)>「刀阵」</material>关闭并且<material=underline c=#FFFFFF h=2 event=terminology args=(101208)>「刀」</material>有剩余时，会回收<material=underline c=#FFFFFF h=2 event=terminology args=(101208)>「刀」</material>获得相同数量的<material=underline c=#FFFFFF h=2 event=terminology args=(101206)>「通识」</material>标记。",
+		maxLv = 1,
+		type = 1,
+		id = 110120033,
+		extra_param = "",
+		param = {
+			{
+				25,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				900,
+				23.076,
+				true,
+				"%"
+			},
+			{
+				23.077,
+				0.592,
+				true,
+				"%"
+			}
+		}
+	},
 	[110130011] = {
 		description = "每次进入<material=underline c=#FFFFFF h=2 event=terminology args=(101301)>「缚炎」</material>状态时，获得<color=#E78300>{1}</color>点能量。",
 		maxLv = 1,
@@ -14161,7 +14599,7 @@
 		}
 	},
 	[110150023] = {
-		description = "「锯刃撼地」的冷却时间缩短<color=#E78300>3</color>秒。\n「狂狮逐猎」命中后「狂狮逐猎」、「锯刃撼地」不再替换为「狂狮锯齿」、「锯刃轮舞」。\n当自身前方小范围存在敌人时，施放「狂狮逐猎」时会改变攻击模式，造成共计<color=#E78300>{1}</color>（技能一每提升一级<color=#E78300>+{2}</color>）攻击力的物理属性伤害，施放时获得短暂的霸体效果并可以格挡受到的伤害，成功格挡伤害时，神能恢复至满值；「狂狮逐猎」成功格挡伤害时，该技能的剩余冷却时间缩短<color=#E78300>50%</color>，重置「刃爪噬敌」的冷却时间。\n施放「锯刃撼地」、「刃爪噬敌」时可以再次点击施放「锯刃撼地」最后一段提前打断攻击动作，造成共计<color=#E78300>{3}</color>（技能二每提升一级<color=#E78300>+{4}</color>）攻击力的物理属性伤害，施放「锯刃撼地」最后一段时获得短暂的霸体效果并可以格挡受到的伤害，成功格挡伤害时，重置「狂狮逐猎」的冷却时间。\n「刃爪噬敌」可以打断「锯刃撼地」的持续攻击动作。\n「噬敌利爪」命中瞬间会心伤害提高<color=#E78300>{5}</color>；施放「噬敌利爪」时不再挥出三道锯齿而是改变为挥出旋转的锯齿，造成共计<color=#E78300>{6}</color>（技能三每提升一级<color=#E78300>+{7}</color>）攻击力的物理属性伤害。",
+		description = "「锯刃撼地」的冷却时间缩短<color=#E78300>3</color>秒。\n「狂狮逐猎」命中后「狂狮逐猎」、「锯刃撼地」不再替换为「狂狮锯齿」、「锯刃轮舞」。\n当自身前方小范围存在敌人时，施放「狂狮逐猎」时会改变攻击模式，造成共计<color=#E78300>{1}</color>（技能一每提升一级<color=#E78300>+{2}</color>）攻击力的物理属性伤害，施放时获得短暂的霸体效果并可以格挡攻击，成功格挡攻击时，神能恢复至满值；「狂狮逐猎」成功格挡攻击时，该技能的剩余冷却时间缩短<color=#E78300>50%</color>，重置「刃爪噬敌」的冷却时间。\n施放「锯刃撼地」、「刃爪噬敌」时可以再次点击施放「锯刃撼地」最后一段提前打断攻击动作，造成共计<color=#E78300>{3}</color>（技能二每提升一级<color=#E78300>+{4}</color>）攻击力的物理属性伤害，施放「锯刃撼地」最后一段时获得短暂的霸体效果并可以格挡攻击，成功格挡攻击时，重置「狂狮逐猎」的冷却时间。\n「刃爪噬敌」可以打断「锯刃撼地」的持续攻击动作。\n「噬敌利爪」命中瞬间会心伤害提高<color=#E78300>{5}</color>；施放「噬敌利爪」时不再挥出三道锯齿而是改变为挥出旋转的锯齿，造成共计<color=#E78300>{6}</color>（技能三每提升一级<color=#E78300>+{7}</color>）攻击力的物理属性伤害。",
 		maxLv = 1,
 		type = 1,
 		id = 110150023,
@@ -14272,7 +14710,7 @@
 		param = {}
 	},
 	[110160013] = {
-		description = "「爆压碎裂斩」前段会获得短暂的霸体状态，可格挡敌人伤害；成功格挡敌人伤害时，会心率提高<color=#E78300>{1}</color>、会心伤害提高<color=#E78300>{2}</color>，持续<color=#E78300>{3}</color>秒。",
+		description = "「爆压碎裂斩」前段会获得短暂的霸体效果，可格挡攻击；成功格挡攻击时，会心率提高<color=#E78300>{1}</color>、会心伤害提高<color=#E78300>{2}</color>，持续<color=#E78300>{3}</color>秒。",
 		maxLv = 1,
 		type = 1,
 		id = 110160013,
@@ -17101,7 +17539,7 @@
 		}
 	},
 	[110490033] = {
-		description = "不再可通过极限闪避触发闪避效果；「彼岸·千引」成功格挡后会触发闪避效果；当「彼岸·千引」格挡<material=underline c=#FFFFFF h=2 event=terminology args=(104901)>「冰镜」</material>的命中时，会消耗<material=underline c=#FFFFFF h=2 event=terminology args=(104902)>「镜游」</material>效果额外获得<color=#E78300>15</color>点怒气。\n「碎镜·幽」会对命中的敌人附加冰冻状态，持续<color=#E78300>{1}</color>秒，该冰冻状态获得以下效果：持续时间不会被霸体的持续时间减半的效果减半；对处于自身以外附加的冰冻效果的敌人附加时，不会增加控制抗性点数。\n极限闪避后点击普通攻击施放的追加攻击命中处于冰冻状态的敌人时，移除敌人的冰冻状态，同时命中瞬间攻击力提高<color=#E78300>{2}</color>、会心率提高<color=#E78300>{3}</color>。",
+		description = "不再可通过极限闪避触发闪避效果；「彼岸·千引」成功格挡攻击后会触发闪避效果；当「彼岸·千引」格挡<material=underline c=#FFFFFF h=2 event=terminology args=(104901)>「冰镜」</material>的命中时，会消耗<material=underline c=#FFFFFF h=2 event=terminology args=(104902)>「镜游」</material>效果额外获得<color=#E78300>15</color>点怒气。\n「碎镜·幽」会对命中的敌人附加冰冻状态，持续<color=#E78300>{1}</color>秒，该冰冻状态获得以下效果：持续时间不会被霸体的持续时间减半的效果减半；对处于自身以外附加的冰冻效果的敌人附加时，不会增加控制抗性点数。\n极限闪避后点击普通攻击施放的追加攻击命中处于冰冻状态的敌人时，移除敌人的冰冻状态，同时命中瞬间攻击力提高<color=#E78300>{2}</color>、会心率提高<color=#E78300>{3}</color>。",
 		maxLv = 1,
 		type = 1,
 		id = 110490033,
@@ -20624,7 +21062,7 @@
 		}
 	},
 	[110970022] = {
-		description = "当闪避效果不处于冷却状态时，「梦幻泡影」蓄力期间受击时会格挡伤害并触发闪避效果，触发时自身不会进入受击状态也不会打断蓄力，并对周围的敌人附加禁锢状态，持续<color=#E78300>5</color>秒。",
+		description = "当闪避效果不处于冷却状态时，「梦幻泡影」蓄力期间受击时会格挡攻击并触发闪避效果，触发时自身不会进入受击状态也不会打断蓄力，并对周围的敌人附加禁锢状态，持续<color=#E78300>5</color>秒。",
 		maxLv = 1,
 		type = 1,
 		id = 110970022,
@@ -20943,7 +21381,7 @@
 		}
 	},
 	[111190012] = {
-		description = "施放特殊攻击时，获得短暂的格挡状态，成功格挡伤害时，获得以下效果：\n格挡状态延长<color=#E78300>1</color>秒，雷属性伤害提高<color=#E78300>{1}</color>，持续<color=#E78300>{2}</color>秒，每次施放最多触发一次。",
+		description = "施放特殊攻击时，获得短暂的格挡效果，成功格挡攻击时，获得以下效果：\n格挡效果延长<color=#E78300>1</color>秒，雷属性伤害提高<color=#E78300>{1}</color>，持续<color=#E78300>{2}</color>秒，每次施放最多触发一次。",
 		maxLv = 1,
 		type = 1,
 		id = 111190012,
@@ -20964,7 +21402,7 @@
 		}
 	},
 	[111190013] = {
-		description = "「风雷易势」处于冷却状态时，普通攻击期间也可通过点击「风雷易势」切换姿态。\n特殊攻击成功格挡伤害后，可通过在「风雷易势」处于冷却期间普通攻击时切换到<material=underline c=#FFFFFF h=2 event=terminology args=(111901)>「进攻姿态」</material>触发一次特殊攻击。\n神格「鸣雷沙暴·强风」雷属性伤害提高最多可叠加<color=#E78300>3</color>层。",
+		description = "「风雷易势」处于冷却状态时，普通攻击期间也可通过点击「风雷易势」切换姿态。\n特殊攻击成功格挡攻击后，可通过在「风雷易势」处于冷却期间普通攻击时切换到<material=underline c=#FFFFFF h=2 event=terminology args=(111901)>「进攻姿态」</material>触发一次特殊攻击。\n神格「鸣雷沙暴·强风」雷属性伤害提高最多可叠加<color=#E78300>3</color>层。",
 		maxLv = 1,
 		type = 1,
 		id = 111190013,
@@ -21008,7 +21446,7 @@
 		}
 	},
 	[111190023] = {
-		description = "施放「风雷流转」过程中受击时，若处于<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>，也会格挡当前的伤害并触发反击。\n反击命中时会对敌人附加雷属性抗性降低<color=#E78300>{1}</color>、风属性抗性降低<color=#E78300>{2}</color>，持续<color=#E78300>{3}</color>秒。",
+		description = "施放「风雷流转」过程中受击时，若处于<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>，也会格挡攻击并触发反击。\n反击命中时会对敌人附加雷属性抗性降低<color=#E78300>{1}</color>、风属性抗性降低<color=#E78300>{2}</color>，持续<color=#E78300>{3}</color>秒。",
 		maxLv = 1,
 		type = 1,
 		id = 111190023,
@@ -22213,7 +22651,7 @@
 		}
 	},
 	[111560023] = {
-		description = "<material=underline c=#FFFFFF h=2 event=terminology args=(115602)>「霹雳」</material>不再减少「九劫·雷崩」的蓄力时间，改变为根据消耗的标记的数量提高聚集敌人的速度和范围；施放「九劫·雷崩」蓄力时，嘲讽所有敌人，并且可以格挡敌人的攻击伤害。\n满蓄力的「九劫·雷崩」会对命中的敌人附加雷属性抗性降低<color=#E78300>{1}</color>，持续<color=#E78300>{2}</color>秒。\n施放奥义或连携奥义后，全队伍获得<color=#E78300>20%</color>的奥义值。",
+		description = "<material=underline c=#FFFFFF h=2 event=terminology args=(115602)>「霹雳」</material>不再减少「九劫·雷崩」的蓄力时间，改变为根据消耗的标记的数量提高聚集敌人的速度和范围；施放「九劫·雷崩」蓄力时，嘲讽所有敌人，并且可以格挡攻击。\n满蓄力的「九劫·雷崩」会对命中的敌人附加雷属性抗性降低<color=#E78300>{1}</color>，持续<color=#E78300>{2}</color>秒。\n施放奥义或连携奥义后，全队伍获得<color=#E78300>20%</color>的奥义值。",
 		maxLv = 1,
 		type = 1,
 		id = 111560023,
@@ -22413,7 +22851,7 @@
 		}
 	},
 	[111580033] = {
-		description = "生命值为<color=#E78300>1</color>时，自动积蓄惑火，每<color=#E78300>0.1</color>秒恢复<color=#E78300>4%</color>积蓄条。\n「瞬灭焰斩」改变为恢复自身<color=#E78300>80%、100%、120%</color>攻击力的生命值。\n进入<material=underline c=#FFFFFF h=2 event=terminology args=(115801)>「熔火」</material>状态时会对自身和锁定的敌人附加<material=underline c=#FFFFFF h=2 event=terminology args=(115805)>「微·燃火」</material>状态，最多持续<color=#E78300>4</color>秒，场上被附加<material=underline c=#FFFFFF h=2 event=terminology args=(115805)>「微·燃火」</material>状态的敌人最多存在一个。\n<material=underline c=#FFFFFF h=2 event=terminology args=(115805)>「微·燃火」</material>：自身可以格挡处于<material=underline c=#FFFFFF h=2 event=terminology args=(115805)>「微·燃火」</material>状态的敌人的攻击伤害<color=#E78300>2</color>次，处于<material=underline c=#FFFFFF h=2 event=terminology args=(115805)>「微·燃火」</material>状态的敌人被击败时，移除自身的<material=underline c=#FFFFFF h=2 event=terminology args=(115805)>「微·燃火」</material>状态。",
+		description = "生命值为<color=#E78300>1</color>时，自动积蓄惑火，每<color=#E78300>0.1</color>秒恢复<color=#E78300>4%</color>积蓄条。\n「瞬灭焰斩」改变为恢复自身<color=#E78300>80%、100%、120%</color>攻击力的生命值。\n进入<material=underline c=#FFFFFF h=2 event=terminology args=(115801)>「熔火」</material>状态时会对自身和锁定的敌人附加<material=underline c=#FFFFFF h=2 event=terminology args=(115805)>「微·燃火」</material>状态，最多持续<color=#E78300>4</color>秒，场上被附加<material=underline c=#FFFFFF h=2 event=terminology args=(115805)>「微·燃火」</material>状态的敌人最多存在一个。\n<material=underline c=#FFFFFF h=2 event=terminology args=(115805)>「微·燃火」</material>：自身可以格挡处于<material=underline c=#FFFFFF h=2 event=terminology args=(115805)>「微·燃火」</material>状态的敌人的攻击<color=#E78300>2</color>次，处于<material=underline c=#FFFFFF h=2 event=terminology args=(115805)>「微·燃火」</material>状态的敌人被击败时，移除自身的<material=underline c=#FFFFFF h=2 event=terminology args=(115805)>「微·燃火」</material>状态。",
 		maxLv = 1,
 		type = 1,
 		id = 111580033,
@@ -22466,7 +22904,7 @@
 		}
 	},
 	[111840021] = {
-		description = "「反制打击」的举盾防御持续时间缩短<color=#E78300>50%</color>；成功格挡的反击命中时额外获得<color=#E78300>15</color>点神能，反击命中瞬间伤害提高<color=#E78300>{1}</color>。",
+		description = "「反制打击」的举盾防御持续时间缩短<color=#E78300>50%</color>；成功格挡攻击的反击命中时额外获得<color=#E78300>15</color>点神能，反击命中瞬间伤害提高<color=#E78300>{1}</color>。",
 		maxLv = 1,
 		type = 1,
 		id = 111840021,
@@ -22489,7 +22927,7 @@
 		param = {}
 	},
 	[111840023] = {
-		description = "「反制打击」成功格挡后，重置「信念守护」的冷却时间，普通攻击每命中敌人<color=#E78300>1</color>次都会获得<color=#E78300>{1}</color>点神能，持续<color=#E78300>9</color>秒。",
+		description = "「反制打击」成功格挡攻击后，重置「信念守护」的冷却时间，普通攻击每命中敌人<color=#E78300>1</color>次都会获得<color=#E78300>{1}</color>点神能，持续<color=#E78300>9</color>秒。",
 		maxLv = 1,
 		type = 1,
 		id = 111840023,
@@ -23099,7 +23537,7 @@
 		}
 	},
 	[112840013] = {
-		description = "施放每段普通攻击、「刹那的辉光」、「刹那」、「辉光」、「命运的涟漪」、「运升」、「命咎」时会有短暂的格挡，成功格挡伤害时会触发额外攻击，造成共计<color=#E78300>{1}</color>攻击力的光属性伤害，该额外攻击每<color=#E78300>1</color>秒最多触发一次。",
+		description = "施放每段普通攻击、「刹那的辉光」、「刹那」、「辉光」、「命运的涟漪」、「运升」、「命咎」时会有短暂的格挡，成功格挡攻击时会触发额外攻击，造成共计<color=#E78300>{1}</color>攻击力的光属性伤害，该额外攻击每<color=#E78300>1</color>秒最多触发一次。",
 		maxLv = 1,
 		type = 1,
 		id = 112840013,
@@ -24712,7 +25150,7 @@
 		}
 	},
 	[200001068] = {
-		description = "施放特殊攻击时，获得短暂的格挡状态，成功格挡伤害时，获得以下效果：\n格挡状态延长<color=#E78300>1</color>秒，雷属性伤害提高<color=#E78300>{1}</color>，持续<color=#E78300>{2}</color>秒，每次施放最多触发一次。\n施放特殊攻击时也会获得雷属性伤害提高效果。",
+		description = "施放特殊攻击时，获得短暂的格挡效果，成功格挡攻击时，获得以下效果：\n格挡效果延长<color=#E78300>1</color>秒，雷属性伤害提高<color=#E78300>{1}</color>，持续<color=#E78300>{2}</color>秒，每次施放最多触发一次。\n施放特殊攻击时也会获得雷属性伤害提高效果。",
 		maxLv = 1,
 		type = 1,
 		id = 200001068,
@@ -24748,7 +25186,7 @@
 		}
 	},
 	[200001070] = {
-		description = "施放「风雷流转」过程中受击时，若处于<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>，也会格挡当前的伤害并触发反击。\n反击命中时会对敌人附加雷属性抗性降低<color=#E78300>{1}</color>、风属性抗性降低<color=#E78300>{2}</color>，持续<color=#E78300>{3}</color>秒。\n施放<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>的「风雷流转」后，嘲讽所有敌人，持续<color=#E78300>{4}</color>秒。",
+		description = "施放「风雷流转」过程中受击时，若处于<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>，也会格挡攻击并触发反击。\n反击命中时会对敌人附加雷属性抗性降低<color=#E78300>{1}</color>、风属性抗性降低<color=#E78300>{2}</color>，持续<color=#E78300>{3}</color>秒。\n施放<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>的「风雷流转」后，嘲讽所有敌人，持续<color=#E78300>{4}</color>秒。",
 		maxLv = 1,
 		type = 1,
 		id = 200001070,
@@ -25024,7 +25462,7 @@
 		}
 	},
 	[200001084] = {
-		description = "「反制打击」的举盾防御持续时间缩短<color=#E78300>50%</color>；成功格挡的反击命中时额外获得<color=#E78300>15</color>点神能，反击命中瞬间基础伤害提高<color=#E78300>{1}</color>。",
+		description = "「反制打击」的举盾防御持续时间缩短<color=#E78300>50%</color>；成功格挡攻击的反击命中时额外获得<color=#E78300>15</color>点神能，反击命中瞬间基础伤害提高<color=#E78300>{1}</color>。",
 		maxLv = 1,
 		type = 1,
 		id = 200001084,
@@ -25434,7 +25872,7 @@
 		param = {}
 	},
 	[200001104] = {
-		description = "「爆压碎裂斩」前段会获得短暂的霸体状态，可格挡敌人伤害；成功格挡敌人伤害时，会心率提高<color=#E78300>{1}</color>、会心伤害提高<color=#E78300>{2}</color>，持续<color=#E78300>{3}</color>秒。\n「攻坚战术」的大剑模式每次攻击命中后会获得<color=#E78300>12</color>点神能。",
+		description = "「爆压碎裂斩」前段会获得短暂的霸体效果，可格挡攻击；成功格挡攻击时，会心率提高<color=#E78300>{1}</color>、会心伤害提高<color=#E78300>{2}</color>，持续<color=#E78300>{3}</color>秒。\n「攻坚战术」的大剑模式每次攻击命中后会获得<color=#E78300>12</color>点神能。",
 		maxLv = 1,
 		type = 1,
 		id = 200001104,
@@ -25943,6 +26381,132 @@
 			}
 		}
 	},
+	[200001127] = {
+		description = "「战神的处决」对普通敌人伤害提高<color=#E78300>{1}</color>；「战神的处决」击败敌人时，恢复满印记，重置技能的冷却时间。",
+		maxLv = 1,
+		type = 1,
+		id = 200001127,
+		extra_param = "",
+		param = {
+			{
+				30,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[200001128] = {
+		description = "普通攻击和技能每命中敌人<color=#E78300>1</color>次，获得<color=#E78300>1</color>层会心伤害提高效果，每层自身会心伤害提高<color=#E78300>{1}</color>，最多可叠加<color=#E78300>9</color>层；受击时，失去<color=#E78300>3</color>层。",
+		maxLv = 1,
+		type = 1,
+		id = 200001128,
+		extra_param = "",
+		param = {
+			{
+				9,
+				9,
+				false,
+				"%"
+			}
+		}
+	},
+	[200001129] = {
+		description = "「猫神的愚弄」不再消耗<color=#E78300>1</color>个印记而是恢复<color=#E78300>1</color>个印记，冷却时间缩短<color=#E78300>1.2</color>秒。极限闪避后施放的技能攻击命中时，当拥有印记则会消耗<color=#E78300>1</color>个印记重置闪避效果的冷却时间。\n出场时，恢复满奥义值；自身每有<color=#E78300>1%</color>会心率提高，暗属性伤害提高<color=#E78300>{1}</color>，该效果提供的暗属性伤害提高最高为<color=#E78300>{2}</color>。\n施放奥义或连携奥义时，对锁定的敌人附加标记，持续<color=#E78300>16</color>秒，处于该标记的敌人受到<color=#E78300>5</color>种属性伤害时，移除标记并自身独立伤害提高<color=#E78300>{3}</color>，持续<color=#E78300>{4}</color>秒，当自身作为队长时，该独立伤害提高效果最多可叠加<color=#E78300>2</color>层。",
+		maxLv = 1,
+		type = 1,
+		id = 200001129,
+		extra_param = "",
+		param = {
+			{
+				0.4,
+				0.4,
+				false,
+				"%"
+			},
+			{
+				20,
+				20,
+				false,
+				"%"
+			},
+			{
+				80,
+				80,
+				false,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[200001130] = {
+		description = "「猫神的愚弄」会消耗全部印记，重置自身其他技能的冷却时间并进入<material=underline c=#FFFFFF h=2 event=terminology args=(101701)>「神瞳凝视」</material>状态，根据消耗的印记数量强化技能伤害和效果，每消耗<color=#E78300>1</color>个印记，「残月的奔袭」、「夜灵的游猎」、「战神的处决」命中瞬间技能伤害提高<color=#E78300>5%</color>。\n「残月的奔袭」：命中时对锁定的敌人附加暗属性抗性降低<color=#E78300>{1}</color>，持续<color=#E78300>{2}</color>秒。\n「夜灵的游猎」：附加眩晕状态，持续<color=#E78300>{3}</color>秒。",
+		maxLv = 1,
+		type = 1,
+		id = 200001130,
+		extra_param = "",
+		param = {
+			{
+				36,
+				0,
+				false,
+				"%"
+			},
+			{
+				7,
+				0,
+				false,
+				""
+			},
+			{
+				4,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[200001131] = {
+		description = "自身攻击力提高<color=#E78300>{1}</color>，处于<material=underline c=#FFFFFF h=2 event=terminology args=(113201)>「燃剑姿态」</material>时，全队伍防御力提高<color=#E78300>{2}</color>。",
+		maxLv = 1,
+		type = 1,
+		id = 200001131,
+		extra_param = "",
+		param = {
+			{
+				48,
+				0,
+				false,
+				"%"
+			},
+			{
+				48,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[200001132] = {
+		description = "处于<material=underline c=#FFFFFF h=2 event=terminology args=(113202)>「炽甲姿态」</material>时，获得以下效果：\n施放「焚灭掳夺」击中返回的旋转长剑时，可以将旋转长剑再次抛掷出去并刷新旋转长剑的持续时间，之后重置「焚灭掳夺」的冷却时间；\n旋转长剑命中瞬间伤害提高<color=#E78300>{1}</color>；\n成功把旋转长剑再次抛掷出去后，下一次点击普通攻击会瞬移到锁定的敌人身边，并直接施放普通攻击最后一段；\n施放「炙炼侵袭」时重置「焚灭掳夺」的冷却时间。\n神格「燃剑的制裁·瞬燃」被激活时，该神格效果失效。",
+		maxLv = 1,
+		type = 1,
+		id = 200001132,
+		extra_param = "",
+		param = {
+			{
+				30,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
 	[220101101] = {
 		description = "当雏心·奥西里斯装备时，获得以下效果。\n获得所有神格的第三层效果。\n技能一基础伤害提高<color=#E78300>{1}%</color>。\n技能三基础伤害提高<color=#E78300>{2}%</color>。",
 		maxLv = 0,
@@ -26125,6 +26689,70 @@
 			"12",
 			"10",
 			"7"
+		}
+	},
+	[220101701] = {
+		description = "当灵猫·芭丝特装备时，获得以下效果。\n护甲穿透提高<color=#E78300>{1}%</color>、会心伤害提高<color=#E78300>{3}%</color>、奥义获得率提高<color=#E78300>{4}%</color>，攻击命中瞬间会心率提高<color=#E78300>100%</color>。\n施放<color=#297DE0>「猫神的愚弄」</color>时进入<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(101703)>「夜影」</material></color>状态，隐匿身形持续<color=#E78300>9</color>秒。\n<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(101703)>「夜影」</material></color>：移动速度提高<color=#E78300>20%</color>，命中时仅<color=#E78300>1</color>次命中瞬间独立伤害提高<color=#E78300>{2}%</color>，命中后或者受到伤害时退出<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(101703)>「夜影」</material></color>状态。\n自身攻击造成会心后，恢复<color=#E78300>3%</color>的奥义值，该效果每<color=#E78300>1.5</color>秒最多触发一次。\n施放奥义或连携奥义后，全队伍获得<color=#E78300>30%</color>的奥义值。",
+		maxLv = 0,
+		type = 0,
+		id = 220101701,
+		param = {
+			{
+				"0",
+				"20",
+				"20",
+				"20",
+				"30"
+			},
+			{
+				"0",
+				"25",
+				"25",
+				"20",
+				"30"
+			},
+			{
+				"0",
+				"30",
+				"30",
+				"20",
+				"30"
+			},
+			{
+				"0",
+				"35",
+				"35",
+				"20",
+				"30"
+			},
+			{
+				"0",
+				"40",
+				"40",
+				"20",
+				"30"
+			},
+			{
+				"0",
+				"45",
+				"45",
+				"20",
+				"30"
+			},
+			{
+				"0",
+				"50",
+				"50",
+				"20",
+				"30"
+			}
+		},
+		extra_param = {
+			"0",
+			"20%/25%/30%/35%/40%/45%/50",
+			"20%/25%/30%/35%/40%/45%/50",
+			"20",
+			"30"
 		}
 	},
 	[220101901] = {
@@ -28127,6 +28755,102 @@
 			"8%/10%/12%/14%/16%/18%/20"
 		}
 	},
+	[220113201] = {
+		description = "当烙焰·提尔装备时，获得以下效果。\n独立伤害提高<color=#E78300>{6}%</color>。\n神格<color=#297DE0>「燃剑的制裁·瞬燃」</color>获得额外的效果：接住长剑后的强力攻击施放时，会获得<color=#E78300>100</color>点<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(113204)>「烙印」</material></color>。\n神格<color=#297DE0>「炽甲的惩戒·凝火」</color>获得额外的效果：每消耗<color=#E78300>1</color>点<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(113204)>「烙印」</material></color>，<color=#297DE0>「爆烈强攻」</color>的基础伤害提高<color=#E78300>{5}%</color>。\n神格<color=#297DE0>「燃剑的制裁·附着」</color>和<color=#297DE0>「炽甲的惩戒·锻铸」</color>被激活时，获得额外的效果：自身旋转长剑、奥义和连携奥义攻击以外其他普通攻击、技能未攻击命中<color=#E78300>8</color>秒后，旋转长剑攻击命中瞬间会心率提高<color=#E78300>{7}%</color>、会心伤害提高<color=#E78300>{8}%</color>，自身其他普通攻击、技能命中时，移除该效果。\n处于<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(113202)>「炽甲姿态」</material></color>时，每次普通攻击命中时会获得<color=#E78300>4</color>点<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(113204)>「烙印」</material></color>，<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(113204)>「烙印」</material></color>上限<color=#E78300>100</color>点。\n处于<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(113201)>「燃剑姿态」</material></color>时，每次施放普通攻击或技能时，会触发额外技能攻击造成伤害。\n施放每段普通攻击时，额外造成共计<color=#E78300>{1}%</color>攻击力的火属性伤害，之后每段最多消耗<color=#E78300>8</color>点<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(113204)>「烙印」</material></color>。\n施放<color=#297DE0>「爆烈强攻」</color>时，每次攻击额外造成<color=#E78300>{2}%</color>攻击力的火属性伤害，之后消耗<color=#E78300>8</color>点<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(113204)>「烙印」</material></color>。\n施放<color=#297DE0>「焚灭掳夺」</color>时，每次攻击额外造成<color=#E78300>{3}%</color>攻击力的火属性伤害，之后消耗<color=#E78300>12</color>点<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(113204)>「烙印」</material></color>。\n触发的额外技能攻击命中瞬间伤害提高<color=#E78300>{4}%</color>。\n<color=#297DE0>「炙炼侵袭」</color>不再会在接回长剑后再进入冷却，改变为施放后进入冷却。",
+		maxLv = 0,
+		type = 0,
+		id = 220113201,
+		param = {
+			{
+				"0",
+				"600",
+				"600",
+				"900",
+				"16",
+				"1.6",
+				"8",
+				"30",
+				"48"
+			},
+			{
+				"0",
+				"600",
+				"600",
+				"900",
+				"20",
+				"2",
+				"10",
+				"30",
+				"60"
+			},
+			{
+				"0",
+				"600",
+				"600",
+				"900",
+				"24",
+				"2.4",
+				"12",
+				"30",
+				"72"
+			},
+			{
+				"0",
+				"600",
+				"600",
+				"900",
+				"28",
+				"2.8",
+				"14",
+				"30",
+				"84"
+			},
+			{
+				"0",
+				"600",
+				"600",
+				"900",
+				"32",
+				"3.2",
+				"16",
+				"30",
+				"96"
+			},
+			{
+				"0",
+				"600",
+				"600",
+				"900",
+				"36",
+				"3.6",
+				"18",
+				"30",
+				"108"
+			},
+			{
+				"0",
+				"600",
+				"600",
+				"900",
+				"40",
+				"4",
+				"20",
+				"30",
+				"120"
+			}
+		},
+		extra_param = {
+			"0",
+			"600",
+			"600",
+			"900",
+			"16%/20%/24%/28%/32%/36%/40",
+			"1.6%/2%/2.4%/2.8%/3.2%/3.6%/4",
+			"8%/10%/12%/14%/16%/18%/20",
+			"30",
+			"48%/60%/72%/84%/96%/108%/120"
+		}
+	},
 	[220113901] = {
 		description = "当冰渊·波塞冬装备时，获得以下效果。\n每命中敌人<color=#E78300>{1}</color>次，获得<color=#E78300>1</color>点能量。\n处于<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(113903)>「临渊」</material></color>状态时，<color=#297DE0>「零度寒芒」</color>的冰属性伤害加成效果提高<color=#E78300>20%</color>，<color=#297DE0>「事象冰封」</color>对命中的敌人附加的冰属性抗性降低效果提高<color=#E78300>20%</color>。\n处于<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(113903)>「临渊」</material></color>状态时，每次施放<color=#297DE0>「零度寒芒」</color>或<color=#297DE0>「事象冰封」</color>时，对应技能的基础伤害提高<color=#E78300>{2}%</color>，持续<color=#E78300>5</color>秒，最多可叠加<color=#E78300>5</color>层。\n处于<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(113903)>「临渊」</material></color>状态时，每秒自动额外获得<color=#E78300>1</color>点能量。\n第<color=#E78300>3</color>次及之后退出<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(113903)>「临渊」</material></color>状态时，<color=#297DE0>「银雪回响」</color>的剩余冷却时间缩短<color=#E78300>{3}</color>秒。",
 		maxLv = 0,
@@ -29519,6 +30243,150 @@
 			"36%/45%/54%/63%/72%/81%/90"
 		}
 	},
+	[500101201] = {
+		description = "当天诫·白泽装备时，获得以下效果。\n技能一、二、三基础伤害提高<color=#E78300>{1}%</color>。\n未受击、受击但未损失生命值<color=#E78300>3</color>秒后，独立伤害提高<color=#E78300>{2}%</color>。\n出场时，恢复<color=#E78300>70</color>点怒气。\n施放<color=#297DE0>「刀啸决」</color>时获得霸体效果，格挡攻击时获得的无敌效果持续时间延长<color=#E78300>0.5</color>秒。\n<color=#297DE0>「刀啸寒峭」</color>改变为<color=#297DE0>「刀啸劲峭」</color>，<color=#297DE0>「刀啸孤锋」</color>改变为<color=#297DE0>「刀啸藏锋」</color>：\n<color=#297DE0>「刀啸劲峭」</color>：造成共计<color=#E78300>{3}%</color>（技能一每提升一级<color=#E78300>+{4}%</color>）攻击力的光属性伤害；\n<color=#297DE0>「刀啸藏锋」</color>：造成共计<color=#E78300>{5}%</color>（技能一每提升一级<color=#E78300>+{6}%</color>）攻击力的光属性伤害。\n施放<color=#297DE0>「鬼神式」</color>或<color=#297DE0>「无我意」</color>的收尾攻击前也会出现衔接提示，在合适的时机内衔接施放其他技能时，收尾攻击改变攻击方式，造成不同的伤害：\n<color=#297DE0>「鬼神一式」</color>的收尾攻击改变为造成<color=#E78300>{7}%</color>（技能二每提升一级<color=#E78300>+{8}%</color>）攻击力的光属性伤害；\n<color=#297DE0>「鬼神二式」</color>的收尾攻击改变为造成<color=#E78300>{9}%</color>（技能二每提升一级<color=#E78300>+{10}%</color>）攻击力的光属性伤害；\n<color=#297DE0>「意寒峭」</color>的收尾攻击改变为造成<color=#E78300>{11}%</color>（技能三每提升一级<color=#E78300>+{12}%</color>）攻击力的光属性伤害；\n<color=#297DE0>「意孤锋」</color>的收尾攻击改变为造成<color=#E78300>{13}%</color>（技能三每提升一级<color=#E78300>+{14}%</color>）攻击力的光属性伤害。",
+		maxLv = 0,
+		type = 0,
+		id = 500101201,
+		param = {
+			{
+				"0",
+				"16",
+				"15",
+				"400",
+				"10.3",
+				"400",
+				"10.3",
+				"600",
+				"15.4",
+				"600",
+				"15.4",
+				"800",
+				"20.5",
+				"900",
+				"23.1"
+			},
+			{
+				"0",
+				"20",
+				"15",
+				"400",
+				"10.3",
+				"400",
+				"10.3",
+				"600",
+				"15.4",
+				"600",
+				"15.4",
+				"800",
+				"20.5",
+				"900",
+				"23.1"
+			},
+			{
+				"0",
+				"24",
+				"15",
+				"400",
+				"10.3",
+				"400",
+				"10.3",
+				"600",
+				"15.4",
+				"600",
+				"15.4",
+				"800",
+				"20.5",
+				"900",
+				"23.1"
+			},
+			{
+				"0",
+				"28",
+				"15",
+				"400",
+				"10.3",
+				"400",
+				"10.3",
+				"600",
+				"15.4",
+				"600",
+				"15.4",
+				"800",
+				"20.5",
+				"900",
+				"23.1"
+			},
+			{
+				"0",
+				"32",
+				"15",
+				"400",
+				"10.3",
+				"400",
+				"10.3",
+				"600",
+				"15.4",
+				"600",
+				"15.4",
+				"800",
+				"20.5",
+				"900",
+				"23.1"
+			},
+			{
+				"0",
+				"36",
+				"15",
+				"400",
+				"10.3",
+				"400",
+				"10.3",
+				"600",
+				"15.4",
+				"600",
+				"15.4",
+				"800",
+				"20.5",
+				"900",
+				"23.1"
+			},
+			{
+				"0",
+				"40",
+				"15",
+				"400",
+				"10.3",
+				"400",
+				"10.3",
+				"600",
+				"15.4",
+				"600",
+				"15.4",
+				"800",
+				"20.5",
+				"900",
+				"23.1"
+			}
+		},
+		extra_param = {
+			"0",
+			"16%/20%/24%/28%/32%/36%/40",
+			"15",
+			"400",
+			"10.3",
+			"400",
+			"10.3",
+			"600",
+			"15.4",
+			"600",
+			"15.4",
+			"800",
+			"20.5",
+			"900",
+			"23.1"
+		}
+	},
 	[500101301] = {
 		description = "当障月·阿修罗装备时，获得以下效果。\n<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(101301)>「缚炎」</material></color>状态消失后不再强化<color=#297DE0>「虚炎行空」</color>，改变为进入或延长<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(101301)>「缚炎」</material></color>状态时强化下一次的<color=#297DE0>「虚炎行空」</color>，并且仅处于<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(101301)>「缚炎」</material></color>状态时才可通过长按普通攻击施放该强化技能。把释放的火焰地涌转为对目标的小范围攻击，造成共计<color=#E78300>{2}%</color>攻击力的火属性伤害，获得<color=#E78300>12</color>点能量，对命中的敌人附加火属性抗性降低<color=#E78300>{3}%</color>，持续<color=#E78300>{4}</color>秒，最多可叠加<color=#E78300>5</color>层。\n<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(101301)>「缚炎」</material></color>状态期间普通攻击每命中<color=#E78300>1</color>次，<color=#297DE0>「虚炎行空」</color>命中瞬间伤害提高<color=#E78300>{1}%</color>；每次<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(101301)>「缚炎」</material></color>状态结束时移除该伤害提高效果。",
 		maxLv = 0,
@@ -29688,7 +30556,7 @@
 		}
 	},
 	[500101701] = {
-		description = "当灵猫·芭丝特装备时，获得以下效果。\n自身护甲穿透提高<color=#E78300>{1}%</color>、会心伤害提高<color=#E78300>{3}%</color>，从敌人背后攻击时命中瞬间会心率提高<color=#E78300>100%</color>。\n施放<color=#297DE0>「猫神的愚弄」</color>时进入<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(101703)>「夜影」</material></color>状态，隐匿身形持续<color=#E78300>9</color>秒。\n<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(101703)>「夜影」</material></color>：移动速度提高<color=#E78300>20%</color>，命中时仅<color=#E78300>1</color>次命中瞬间独立伤害提高<color=#E78300>{2}%</color>，命中后或者受到伤害时退出<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(101703)>「夜影」</material></color>状态。",
+		description = "当灵猫·芭丝特装备时，获得以下效果。\n护甲穿透提高<color=#E78300>{1}%</color>、会心伤害提高<color=#E78300>{3}%</color>，从敌人背后攻击时命中瞬间会心率提高<color=#E78300>100%</color>。\n施放<color=#297DE0>「猫神的愚弄」</color>时进入<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(101703)>「夜影」</material></color>状态，隐匿身形持续<color=#E78300>9</color>秒。\n<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(101703)>「夜影」</material></color>：移动速度提高<color=#E78300>20%</color>，命中时仅<color=#E78300>1</color>次命中瞬间独立伤害提高<color=#E78300>{2}%</color>，命中后或者受到伤害时退出<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(101703)>「夜影」</material></color>状态。",
 		maxLv = 0,
 		type = 0,
 		id = 500101701,
@@ -35209,6 +36077,45 @@
 			},
 			{
 				16,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[600000066] = {
+		description = "会心率提高{1}，奥义获得率提高{2}。\n格挡敌人攻击后，攻击力提高{3}、会心伤害提高{4}，持续{5}秒。",
+		maxLv = 1,
+		type = 1,
+		id = 600000066,
+		extra_param = "",
+		param = {
+			{
+				5,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				35,
+				0,
+				false,
+				"%"
+			},
+			{
+				12.5,
 				0,
 				false,
 				""
@@ -44604,6 +45511,27 @@
 		extra_param = "",
 		param = {}
 	},
+	[700009354] = {
+		description = "修正者施放奥义后，伤害提高{1}，持续{2}秒",
+		maxLv = 1,
+		type = 1,
+		id = 700009354,
+		extra_param = "",
+		param = {
+			{
+				40.1,
+				0,
+				false,
+				"%"
+			},
+			{
+				5,
+				0,
+				false,
+				""
+			}
+		}
+	},
 	[700009481] = {
 		description = "生命值提高{1}",
 		maxLv = 3,
@@ -53738,7 +54666,7 @@
 		}
 	},
 	[21101620122] = {
-		description = "大剑模式：侧身用荒獠撞击，撞击时自身获得短暂的霸体效果，造成共计<color=#E78300>{1}</color>攻击力的物理属性伤害，命中后该技能切换到电锯模式。\n电锯模式：使用荒獠进行突刺攻击，造成共计<color=#E78300>{2}</color>攻击力的物理属性伤害；命中时可通过长按该技能消耗神能持续施放，每消耗<color=#E78300>25</color>点神能获得<color=#E78300>1</color>个「压力槽」标记、伤害提高<color=#E78300>10%</color>并额外造成共计<color=#E78300>{3}</color>攻击力的物理属性伤害；处于修正模式时命中瞬间技能伤害提高<color=#E78300>10%</color>。施放后切换回大剑模式。\n\n<color=#297DE0>神能：</color>撞击的霸体效果期间受击时会格挡伤害并获得<color=#E78300>100</color>点神能。",
+		description = "大剑模式：侧身用荒獠撞击，撞击时自身获得短暂的霸体效果，造成共计<color=#E78300>{1}</color>攻击力的物理属性伤害，命中后该技能切换到电锯模式。\n电锯模式：使用荒獠进行突刺攻击，造成共计<color=#E78300>{2}</color>攻击力的物理属性伤害；命中时可通过长按该技能消耗神能持续施放，每消耗<color=#E78300>25</color>点神能获得<color=#E78300>1</color>个「压力槽」标记、伤害提高<color=#E78300>10%</color>并额外造成共计<color=#E78300>{3}</color>攻击力的物理属性伤害；处于修正模式时命中瞬间技能伤害提高<color=#E78300>10%</color>。施放后切换回大剑模式。\n\n<color=#297DE0>神能：</color>撞击的霸体效果期间受击时会格挡攻击并获得<color=#E78300>100</color>点神能。",
 		maxLv = 60,
 		type = 1,
 		id = 21101620122,
@@ -53813,6 +54741,78 @@
 			{
 				350,
 				8.963,
+				true,
+				"%"
+			}
+		}
+	},
+	[21101710121] = {
+		description = "挥舞利爪攻击敌人，造成共计<color=#E78300>{1}</color>攻击力的暗属性伤害。普通攻击最后一段命中时，进入「神瞳凝视」状态，持续<color=#E78300>9</color>秒。",
+		maxLv = 60,
+		type = 1,
+		id = 21101710121,
+		extra_param = "",
+		param = {
+			{
+				290,
+				5.642,
+				true,
+				"%"
+			}
+		}
+	},
+	[21101720122] = {
+		description = "短距离突进，并造成共计<color=#E78300>{1}</color>攻击力的暗属性伤害；处于「神瞳凝视」状态时，该技能获得以下额外效果：命中时对锁定的敌人附加暗属性抗性降低<color=#E78300>12%</color>，持续<color=#E78300>{2}</color>秒，技能施放后，「神瞳凝视」状态立即结束。\n\n<color=#297DE0>印记：</color>每次施放命中后，获得<color=#E78300>1</color>个印记。",
+		maxLv = 60,
+		type = 1,
+		id = 21101720122,
+		extra_param = "",
+		param = {
+			{
+				750,
+				19.23,
+				true,
+				"%"
+			},
+			{
+				7,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21101720223] = {
+		description = "从地面跃起，暂时隐藏身形，随后现身并用利爪攻击敌人，造成共计<color=#E78300>{1}</color>攻击力的暗属性伤害；处于「神瞳凝视」状态时，该技能获得以下额外效果：对第一个命中的敌人附加眩晕状态，持续<color=#E78300>{2}</color>秒，技能施放后，「神瞳凝视」状态立即结束。\n\n<color=#297DE0>印记：</color>每次施放命中后，获得<color=#E78300>1</color>个印记。",
+		maxLv = 60,
+		type = 1,
+		id = 21101720223,
+		extra_param = "",
+		param = {
+			{
+				550,
+				14.102,
+				true,
+				"%"
+			},
+			{
+				2,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21101720324] = {
+		description = "消耗<color=#E78300>1</color>个印记，进入「神瞳凝视」状态，持续<color=#E78300>9</color>秒；每次进入「神瞳凝视」状态，「猫神的愚弄」会替换为「战神的处决」；「猫神的愚弄」不会打断普通攻击的连段。\n「战神的处决」：释放暗属性神力，造成共计<color=#E78300>{1}</color>攻击力的暗属性范围伤害，技能施放后，「神瞳凝视」状态立即结束。",
+		maxLv = 60,
+		type = 1,
+		id = 21101720324,
+		extra_param = "",
+		param = {
+			{
+				400,
+				10.252,
 				true,
 				"%"
 			}
@@ -56900,7 +57900,7 @@
 		}
 	},
 	[21111920122] = {
-		description = "挥舞长枪，造成共计<color=#E78300>{1}</color>攻击力的雷属性伤害，在「进攻姿态」和「防御姿态」之间进行切换；处于「防御姿态」期间获得硬直效果。\n无论「风雷易势」是否处于冷却、是否替换为「风雷流转」，在施放「雷鸣风啸」、「奔雷疾风」、「风雷流转」或者追击、反击过程中可以点击该技能进行姿态切换，消耗最多<color=#E78300>7</color>点怒气，不会打断当前动作也不会造成伤害。\n施放「雷鸣风啸」、「奔雷疾风」过程中受击时，若处于「防御姿态」，会格挡当前的伤害并触发反击，消耗最多<color=#E78300>15</color>点怒气，反击造成共计<color=#E78300>{2}</color>攻击力的雷属性伤害，施放反击时获得无敌效果，每次施放命中后获得<color=#E78300>1</color>个「惊岚」标记。\n当标记为满时，「风雷易势」会替换为「风雷流转」，「进攻姿态」和「防御姿态」的「风雷流转」分别有<color=#E78300>15</color>秒的冷却时间。\n「风雷流转」：造成共计<color=#E78300>{3}</color>攻击力的雷属性伤害，施放后消耗全部标记。",
+		description = "挥舞长枪，造成共计<color=#E78300>{1}</color>攻击力的雷属性伤害，在「进攻姿态」和「防御姿态」之间进行切换；处于「防御姿态」期间获得硬直效果。\n无论「风雷易势」是否处于冷却、是否替换为「风雷流转」，在施放「雷鸣风啸」、「奔雷疾风」、「风雷流转」或者追击、反击过程中可以点击该技能进行姿态切换，消耗最多<color=#E78300>7</color>点怒气，不会打断当前动作也不会造成伤害。\n施放「雷鸣风啸」、「奔雷疾风」过程中受击时，若处于「防御姿态」，会格挡攻击并触发反击，消耗最多<color=#E78300>15</color>点怒气，反击造成共计<color=#E78300>{2}</color>攻击力的雷属性伤害，施放反击时获得无敌效果，每次施放命中后获得<color=#E78300>1</color>个「惊岚」标记。\n当标记为满时，「风雷易势」会替换为「风雷流转」，「进攻姿态」和「防御姿态」的「风雷流转」分别有<color=#E78300>15</color>秒的冷却时间。\n「风雷流转」：造成共计<color=#E78300>{3}</color>攻击力的雷属性伤害，施放后消耗全部标记。",
 		maxLv = 60,
 		type = 1,
 		id = 21111920122,
@@ -57037,6 +58037,108 @@
 				0,
 				false,
 				""
+			}
+		}
+	},
+	[21113210121] = {
+		description = "处于「燃剑姿态」：连续挥舞长剑进行强力的斩击，造成共计<color=#E78300>{1}</color>攻击力的火属性伤害。\n处于「炽甲姿态」：使用拳甲进行快速而连续的攻击，造成共计<color=#E78300>{2}</color>攻击力的火属性伤害。\n\n<color=#297DE0>怒气：</color>普通攻击命中后会获得怒气。",
+		maxLv = 60,
+		type = 1,
+		id = 21113210121,
+		extra_param = "",
+		param = {
+			{
+				373,
+				7.208,
+				true,
+				"%"
+			},
+			{
+				408,
+				7.929,
+				true,
+				"%"
+			}
+		}
+	},
+	[21113220122] = {
+		description = "处于「燃剑姿态」：挥舞长剑向前方斩击，造成共计<color=#E78300>{1}</color>攻击力的火属性伤害，对命中的敌人附加眩晕状态，持续<color=#E78300>{2}</color>秒。\n处于「炽甲姿态」：向前突进，使用拳甲重击前方的敌人，消耗<color=#E78300>20</color>点怒气，造成共计<color=#E78300>{3}</color>攻击力的火属性伤害，命中时对敌人附加火属性抗性降低<color=#E78300>{4}</color>，持续<color=#E78300>{5}</color>秒；该技能有<color=#E78300>6</color>秒的冷却时间。",
+		maxLv = 60,
+		type = 1,
+		id = 21113220122,
+		extra_param = "",
+		param = {
+			{
+				900,
+				23.076,
+				true,
+				"%"
+			},
+			{
+				2,
+				0,
+				false,
+				""
+			},
+			{
+				1000,
+				25.641,
+				true,
+				"%"
+			},
+			{
+				16,
+				0,
+				false,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[21113220223] = {
+		description = "处于「燃剑姿态」：挥舞长剑进行大范围的横扫，造成共计<color=#E78300>{1}</color>攻击力的火属性伤害。\n处于「炽甲姿态」：消耗<color=#E78300>20</color>点怒气，将旋转长剑移动到锁定的敌人位置并刷新旋转长剑的持续时间，并且旋转长剑命中瞬间伤害提高<color=#E78300>{2}</color>，持续<color=#E78300>5</color>秒；该技能有<color=#E78300>6</color>秒的冷却时间。",
+		maxLv = 60,
+		type = 1,
+		id = 21113220223,
+		extra_param = "",
+		param = {
+			{
+				1800,
+				46.152,
+				true,
+				"%"
+			},
+			{
+				40,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[21113220324] = {
+		description = "将长剑向目标位置掷出并持续旋转，自身切换为「炽甲姿态」。命中第一个敌人时旋转长剑会在停留在该位置并持续造成范围伤害，每<color=#E78300>0.5</color>秒造成<color=#E78300>{1}</color>攻击力的火属性伤害，最多可持续<color=#E78300>10</color>秒，持续时间结束后，旋转长剑消失，自身切换为「燃剑姿态」，之后该技能进入冷却。\n旋转长剑在目标位置持续旋转时，可再次点击该技能，旋转长剑会返回。接住旋转长剑后自身切换为「燃剑姿态」，长剑与拳甲合并施放强力攻击，造成<color=#E78300>{2}</color>攻击力的火属性伤害，施放强力攻击时自身免疫控制与伤害，之后该技能进入冷却。",
+		maxLv = 60,
+		type = 1,
+		id = 21113220324,
+		extra_param = "",
+		param = {
+			{
+				180,
+				4.615,
+				true,
+				"%"
+			},
+			{
+				3000,
+				76.92,
+				true,
+				"%"
 			}
 		}
 	},
@@ -57239,7 +58341,7 @@
 		}
 	},
 	[21118420223] = {
-		description = "长按时进行举盾防御并对前方敌人造成共计<color=#E78300>{1}</color>攻击力的雷属性伤害，持续<color=#E78300>3</color>秒，松开长按或达到时间上限时会施放一次攻击，造成共计<color=#E78300>{2}</color>攻击力的雷属性伤害。当举盾防御被命中时，会格挡受到的伤害，并施放强力反击，造成共计<color=#E78300>{3}</color>攻击力的雷属性伤害，并进入零时空间<color=#E78300>2</color>秒。\n\n<color=#297DE0>神能：</color>成功格挡后，获得<color=#E78300>15</color>点神能。",
+		description = "长按时进行举盾防御并对前方敌人造成共计<color=#E78300>{1}</color>攻击力的雷属性伤害，持续<color=#E78300>3</color>秒，松开长按或达到时间上限时会施放一次攻击，造成共计<color=#E78300>{2}</color>攻击力的雷属性伤害。当举盾防御被命中时，会格挡攻击并施放强力反击，造成共计<color=#E78300>{3}</color>攻击力的雷属性伤害，并进入零时空间<color=#E78300>2</color>秒。\n\n<color=#297DE0>神能：</color>成功格挡后，获得<color=#E78300>15</color>点神能。",
 		maxLv = 60,
 		type = 1,
 		id = 21118420223,
@@ -57388,6 +58490,13 @@
 		101011209,
 		101011281,
 		101011305,
+		101012101,
+		101012201,
+		101012202,
+		101012203,
+		101012208,
+		101012209,
+		101012305,
 		101013101,
 		101013111,
 		101013201,
@@ -57929,6 +59038,15 @@
 		110110031,
 		110110032,
 		110110033,
+		110120011,
+		110120012,
+		110120013,
+		110120021,
+		110120022,
+		110120023,
+		110120031,
+		110120032,
+		110120033,
 		110130011,
 		110130012,
 		110130013,
@@ -58676,9 +59794,16 @@
 		200001124,
 		200001125,
 		200001126,
+		200001127,
+		200001128,
+		200001129,
+		200001130,
+		200001131,
+		200001132,
 		220101101,
 		220101301,
 		220101601,
+		220101701,
 		220101901,
 		220102401,
 		220102601,
@@ -58712,6 +59837,7 @@
 		220111101,
 		220111901,
 		220112701,
+		220113201,
 		220113901,
 		220114801,
 		220118401,
@@ -58742,6 +59868,7 @@
 		500000424,
 		500000425,
 		500101101,
+		500101201,
 		500101301,
 		500101501,
 		500101601,
@@ -58874,6 +60001,7 @@
 		600000063,
 		600000064,
 		600000065,
+		600000066,
 		700000001,
 		700000101,
 		700000102,
@@ -59557,6 +60685,7 @@
 		700009347,
 		700009348,
 		700009349,
+		700009354,
 		700009481,
 		700009482,
 		700009483,
@@ -60379,6 +61508,10 @@
 		21101620122,
 		21101620223,
 		21101620324,
+		21101710121,
+		21101720122,
+		21101720223,
+		21101720324,
 		21101910121,
 		21101920122,
 		21101920223,
@@ -60523,6 +61656,10 @@
 		21112720122,
 		21112720223,
 		21112720324,
+		21113210121,
+		21113220122,
+		21113220223,
+		21113220324,
 		21113910121,
 		21113920122,
 		21113920223,

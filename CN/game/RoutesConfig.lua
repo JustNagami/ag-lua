@@ -3309,6 +3309,38 @@
 		component = ZumaRankView
 	},
 	{
+		name = "springFestivalZumaMainView",
+		component = SpringFestivalZumaMainView
+	},
+	{
+		name = "springFestivalZumaTaskView",
+		component = SpringFestivalZumaTaskView
+	},
+	{
+		name = "springFestivalZumaTalentView",
+		component = SpringFestivalZumaTalentView
+	},
+	{
+		name = "springFestivalZumaEndlessEffectPopView",
+		component = SpringFestivalZumaEndlessEffectPopView
+	},
+	{
+		name = "springFestivalZumaGameView",
+		component = SpringFestivalZumaGameView
+	},
+	{
+		name = "springFestivalZumaRankView",
+		component = SpringFestivalZumaRankView
+	},
+	{
+		name = "springFestivalZumaGameSettleView",
+		component = SpringFestivalZumaGameSettleView
+	},
+	{
+		name = "springFestivalZumaTipsView",
+		component = SpringFestivalZumaTipsView
+	},
+	{
 		name = "xH3rdFlipCardGame",
 		component = XH3rdFlipCardGameView
 	},
@@ -3319,6 +3351,14 @@
 	{
 		name = "xH3rdFlipCardReward",
 		component = XH3rdFlipCardRewardView
+	},
+	{
+		name = "cORGflipCardUnlockCardPop",
+		component = CORGflipCardUnlockCardPopView
+	},
+	{
+		name = "cORGflipCardResultPop",
+		component = CORGflipCardResultPopView
 	},
 	{
 		name = "hanafudaGameView",
@@ -3694,8 +3734,8 @@
 		component = SequentialBattleFactoryTeamView
 	},
 	{
-		name = "sectionSelectHeroSequentialBattle",
-		component = SectionSelectHeroSequentialBattleView
+		name = "sequentialBattleSectionSelectHero",
+		component = SequentialBattleSectionSelectHeroView
 	},
 	{
 		name = "heroTeamInfoSequentialBattle",

@@ -5,7 +5,17 @@
 		arg_1_1.frameCnt_ = 0
 		arg_1_1.state_ = "playing"
 		arg_1_1.curTalkId_ = 116141001
-		arg_1_1.duration_ = 9.78
+		arg_1_1.duration_ = 9.7
+
+		local var_1_0 = {
+			zh = 9.69999999999999,
+			ja = 9.19999999999999
+		}
+		local var_1_1 = manager.audio:GetLocalizationFlag()
+
+		if var_1_0[var_1_1] ~= nil then
+			arg_1_1.duration_ = var_1_0[var_1_1]
+		end
 
 		SetActive(arg_1_1.tipsGo_, false)
 
@@ -36,7 +46,7 @@
 				arg_1_1.bgs_[var_4_0] = var_4_1
 			end
 
-			local var_4_2 = 3.8
+			local var_4_2 = 3.666667
 
 			if var_4_2 < arg_1_1.time_ and arg_1_1.time_ <= var_4_2 + arg_4_0 then
 				if arg_1_0.sceneSettingEffect_ then
@@ -309,7 +319,7 @@
 			if var_4_54 < arg_1_1.time_ and arg_1_1.time_ <= var_4_54 + arg_4_0 then
 				SetActive(arg_1_1.dialog_, false)
 				SetActive(arg_1_1.allBtn_.gameObject, true)
-				arg_1_1.hideBtnsController_:SetSelectedIndex(0)
+				arg_1_1.hideBtnsController_:SetSelectedIndex(1)
 
 				arg_1_1.marker = "PlayCantSkipVideo"
 

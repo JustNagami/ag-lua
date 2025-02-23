@@ -36,6 +36,12 @@
 			local var_4_2 = 0
 
 			if var_4_2 < arg_1_1.time_ and arg_1_1.time_ <= var_4_2 + arg_4_0 then
+				if arg_1_0.sceneSettingEffect_ then
+					arg_1_1.sceneSettingEffect_.enabled = false
+				end
+
+				arg_1_1.sceneSettingGo_:SetActive(true)
+
 				local var_4_3 = manager.ui.mainCamera.transform.localPosition
 				local var_4_4 = Vector3.New(0, 0, 10) + Vector3.New(var_4_3.x, var_4_3.y, 0)
 				local var_4_5 = arg_1_1.bgs_.STblack
@@ -794,6 +800,12 @@
 			local var_25_2 = 1
 
 			if var_25_2 < arg_22_1.time_ and arg_22_1.time_ <= var_25_2 + arg_25_0 then
+				if arg_22_0.sceneSettingEffect_ then
+					arg_22_1.sceneSettingEffect_.enabled = false
+				end
+
+				arg_22_1.sceneSettingGo_:SetActive(true)
+
 				local var_25_3 = manager.ui.mainCamera.transform.localPosition
 				local var_25_4 = Vector3.New(0, 0, 10) + Vector3.New(var_25_3.x, var_25_3.y, 0)
 				local var_25_5 = arg_22_1.bgs_.ST60

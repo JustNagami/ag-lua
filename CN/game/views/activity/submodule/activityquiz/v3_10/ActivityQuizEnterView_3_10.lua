@@ -127,13 +127,15 @@ end
 
 function var_0_0.BindRedPoints(arg_18_0)
 	local var_18_0 = arg_18_0.activityID_
-	local var_18_1 = ActivityQuizTools.GetTaskActivityID(arg_18_0.activityID_)
+	local var_18_1 = ActivityQuizTools.GetTaskActivityID(var_18_0)
 
 	manager.redPoint:bindUIandKey(arg_18_0.taskBtn_.transform, RedPointConst.ACTIVITY_TASK .. "_" .. var_18_1)
+	manager.redPoint:bindUIandKey(arg_18_0.startBtn_.transform, RedPointConst.ACTIVITY_QUIZ_CHALLENGE_AVAILABLE .. "_" .. var_18_1)
 end
 
 function var_0_0.UnbindRedPoints(arg_19_0)
 	manager.redPoint:unbindUIandKey(arg_19_0.taskBtn_.transform)
+	manager.redPoint:unbindUIandKey(arg_19_0.startBtn_.transform)
 end
 
 return var_0_0

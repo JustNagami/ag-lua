@@ -272,6 +272,45 @@
 			0
 		}
 	},
+	[405102802] = {
+		monster_level = 80,
+		name = "轰雷·运动时间",
+		drop_lib_id = 0,
+		map = "405102802",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "轰雷·运动时间",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 405102802,
+		attribute_factor = {
+			300,
+			1000,
+			2400
+		},
+		hero_list = {
+			{
+				1028,
+				10280201
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
 	[405103203] = {
 		monster_level = 80,
 		name = "熯天·盛音礼赞",
@@ -2027,6 +2066,45 @@
 			0
 		}
 	},
+	[405107503] = {
+		monster_level = 80,
+		name = "澄心·试春衣",
+		drop_lib_id = 0,
+		map = "405107503",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "澄心·试春衣",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 405107503,
+		attribute_factor = {
+			1000,
+			1000,
+			2400
+		},
+		hero_list = {
+			{
+				1075,
+				10750301
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
 	[405113803] = {
 		monster_level = 80,
 		name = "黎幻·荆棘花之梦",
@@ -2612,6 +2690,45 @@
 			0
 		}
 	},
+	[405101201] = {
+		monster_level = 80,
+		name = "天诫·倚新妆",
+		drop_lib_id = 0,
+		map = "405101201",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "天诫·倚新妆",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 405101201,
+		attribute_factor = {
+			1000,
+			1000,
+			6000
+		},
+		hero_list = {
+			{
+				1012,
+				10120101
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
 	all = {
 		405101301,
 		405101701,
@@ -2620,6 +2737,7 @@
 		405102202,
 		405102701,
 		405102801,
+		405102802,
 		405103203,
 		405103401,
 		405103701,
@@ -2665,6 +2783,7 @@
 		405104902,
 		405107501,
 		405107502,
+		405107503,
 		405113803,
 		405106001,
 		405104103,
@@ -2679,6 +2798,7 @@
 		405128402,
 		405115002,
 		405113301,
-		405106102
+		405106102,
+		405101201
 	}
 }

@@ -14653,7 +14653,7 @@
 		attribute_factor = {
 			1000,
 			1000,
-			1000
+			30000
 		},
 		drop_lib_id_list = {
 			2000004,
@@ -14683,7 +14683,7 @@
 		},
 		can_switch_restrict_hero_list = {
 			1,
-			0,
+			1,
 			0
 		},
 		team_type = {
@@ -14897,7 +14897,7 @@
 		attribute_factor = {
 			1000,
 			1000,
-			1000
+			5000
 		},
 		drop_lib_id_list = {
 			2000004,
@@ -14990,7 +14990,6 @@
 		monster_level = 80,
 		name = "纸伞",
 		ai_level = 4,
-		hero_list = "",
 		map = "5230120",
 		background_1 = "I05c",
 		custom_lock_line = "",
@@ -15004,8 +15003,7 @@
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 0,
-		can_switch_restrict_hero_list = "",
-		combo_skill_id = 0,
+		combo_skill_id = 66,
 		chip_list = "",
 		auto_next_stage_group = 0,
 		line_text_position = "",
@@ -15021,7 +15019,7 @@
 		attribute_factor = {
 			1000,
 			1000,
-			1000
+			10000
 		},
 		drop_lib_id_list = {
 			2000004,
@@ -15035,6 +15033,22 @@
 			2,
 			100
 		},
+		hero_list = {
+			{
+				1012,
+				208
+			},
+			{
+				1060,
+				213
+			},
+			{}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			1,
+			0
+		},
 		team_type = {
 			1,
 			-1
@@ -15044,7 +15058,6 @@
 		monster_level = 80,
 		name = "飘摇",
 		ai_level = 4,
-		hero_list = "",
 		map = "5230121",
 		background_1 = "I16",
 		custom_lock_line = "",
@@ -15052,13 +15065,12 @@
 		tips = "与小院间的一步犹如天堑。无人为她发声，但沉默并不代表敌视。",
 		sub_type = 1,
 		custom_line = "",
-		tag = 0,
+		tag = 1,
 		hero_exp = 20,
 		level = 1,
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 0,
-		can_switch_restrict_hero_list = "",
 		combo_skill_id = 0,
 		chip_list = "",
 		auto_next_stage_group = 0,
@@ -15073,9 +15085,9 @@
 			5230122
 		},
 		attribute_factor = {
+			650,
 			1000,
-			1000,
-			1000
+			5000
 		},
 		drop_lib_id_list = {
 			2000004,
@@ -15088,6 +15100,25 @@
 		is_revive = {
 			2,
 			100
+		},
+		hero_list = {
+			{
+				1012,
+				208
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
 		},
 		team_type = {
 			1,
@@ -15180,7 +15211,7 @@
 		attribute_factor = {
 			1000,
 			1000,
-			1000
+			20000
 		},
 		drop_lib_id_list = {
 			2000004,
@@ -15216,6 +15247,7 @@
 		cost = 10,
 		extra_cost = "",
 		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
 		combo_skill_id = 0,
 		chip_list = "",
 		auto_next_stage_group = 0,
@@ -15230,9 +15262,9 @@
 			5230125
 		},
 		attribute_factor = {
+			700,
 			1000,
-			1000,
-			1000
+			30000
 		},
 		drop_lib_id_list = {
 			2000004,
@@ -15259,11 +15291,6 @@
 				0,
 				1
 			}
-		},
-		can_switch_restrict_hero_list = {
-			1,
-			0,
-			0
 		},
 		team_type = {
 			1,

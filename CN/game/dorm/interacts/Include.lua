@@ -304,6 +304,9 @@
 	["game.dorm.interacts.1074.1074_qiuqian"] = {
 		require("game.dorm.interacts.1074.1074_qiuqian")
 	},
+	["game.dorm.interacts.1075.1075_shuihua"] = {
+		require("game.dorm.interacts.1075.1075_shuihua")
+	},
 	["game.dorm.interacts.1076.1076_brush"] = {
 		require("game.dorm.interacts.1076.1076_brush")
 	},

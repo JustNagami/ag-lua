@@ -15,6 +15,9 @@ end
 
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
+
+	arg_4_0.onLoginHandler = handler(arg_4_0, arg_4_0.OnLogin)
+	arg_4_0.onClickCardHandler = handler(arg_4_0, arg_4_0.OnClickCard)
 end
 
 function var_0_0.AddUIListener(arg_5_0)
@@ -63,15 +66,19 @@ function var_0_0.OnEnter(arg_6_0)
 	end, 1, -1)
 
 	arg_6_0.timer_:Start()
-	manager.notify:RegistListener(BLOOD_CARD_IN_GAME_CLICK_CARD, function(arg_9_0, arg_9_1)
-		JumpTools.OpenPageByJump("bloodCardDetailView", {
-			cardID = arg_9_0,
-			isEnemy = arg_9_1
-		})
-	end)
-	manager.notify:RegistListener(ON_LOGIN, function()
-		LaunchQWorld(true)
-	end)
+	manager.notify:RegistListener(BLOOD_CARD_IN_GAME_CLICK_CARD, arg_6_0.onClickCardHandler)
+	manager.notify:RegistListener(ON_LOGIN, arg_6_0.onLoginHandler)
+end
+
+function var_0_0.OnLogin(arg_9_0)
+	LaunchQWorld(true)
+end
+
+function var_0_0.OnClickCard(arg_10_0, arg_10_1, arg_10_2)
+	JumpTools.OpenPageByJump("bloodCardDetailView", {
+		cardID = arg_10_1,
+		isEnemy = arg_10_2
+	})
 end
 
 function var_0_0.OnTop(arg_11_0)
@@ -96,7 +103,7 @@ function var_0_0.UpdateBar(arg_12_0)
 			return
 		end
 
-		JumpTools.OpenPageByJump("gameHelpPro", {
+		JumpTools.OpenPageByJump("/gameHelpPro", {
 			isPrefab = true,
 			pages = var_12_0
 		})
@@ -115,9 +122,13 @@ function var_0_0.UpdateBar(arg_12_0)
 					return
 				end,
 				failAction = function()
-					SendResetGameRequest()
+					if BloodCardManager.Instance:GetCurrentStatus() == 8 then
+						LaunchQWorld(true)
+					else
+						SendResetGameRequest()
 
-					BloodCardManager.Instance.isAbandon = true
+						BloodCardManager.Instance.isAbandon = true
+					end
 				end
 			})
 		end
@@ -134,20 +145,13 @@ function var_0_0.OnExit(arg_17_0)
 		arg_17_0.timer_ = nil
 	end
 
-	manager.notify:RemoveListener(BLOOD_CARD_IN_GAME_CLICK_CARD, function(arg_18_0, arg_18_1)
-		JumpTools.OpenPageByJump("bloodCardDetailView", {
-			cardID = arg_18_0,
-			arg_18_1
-		})
-	end)
-	manager.notify:RemoveListener(ON_LOGIN, function()
-		LaunchQWorld(true)
-	end)
+	manager.notify:RemoveListener(BLOOD_CARD_IN_GAME_CLICK_CARD, arg_17_0.onClickCardHandler)
+	manager.notify:RemoveListener(ON_LOGIN, arg_17_0.onLoginHandler)
 	manager.windowBar:HideBar()
 end
 
-function var_0_0.Dispose(arg_20_0)
-	var_0_0.super.Dispose(arg_20_0)
+function var_0_0.Dispose(arg_18_0)
+	var_0_0.super.Dispose(arg_18_0)
 end
 
 return var_0_0

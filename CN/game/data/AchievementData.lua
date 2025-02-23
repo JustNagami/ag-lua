@@ -232,7 +232,9 @@ function var_0_0.GetAchievementTotalCnt(arg_8_0)
 end
 
 function var_0_0.GetAchievementCnt(arg_9_0, arg_9_1)
-	return #arg_9_0.achievementSortData_[arg_9_1]
+	local var_9_0 = arg_9_0.finishShieldList_[arg_9_1] and #arg_9_0.finishShieldList_[arg_9_1] or 0
+
+	return #arg_9_0.achievementSortData_[arg_9_1] - var_9_0
 end
 
 function var_0_0.GetAchievementData(arg_10_0, arg_10_1)

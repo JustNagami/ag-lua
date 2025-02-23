@@ -2976,6 +2976,29 @@
 		ignore_group_condition = {},
 		leaps = {}
 	},
+	[116] = {
+		narrator_name = "弥弥尔",
+		group = 0,
+		not_skip_guide = 0,
+		id = 116,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			11601,
+			11602
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"springFestivalZumaMainView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
 	get_id_list_by_not_skip_guide = {
 		[0] = {
 			10,
@@ -3068,7 +3091,8 @@
 			111,
 			112,
 			113,
-			115
+			115,
+			116
 		},
 		{
 			1,
@@ -3182,6 +3206,7 @@
 		111,
 		112,
 		113,
-		115
+		115,
+		116
 	}
 }

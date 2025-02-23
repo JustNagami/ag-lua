@@ -60,6 +60,10 @@ function var_0_0.OnEnter(arg_8_0)
 
 		manager.redPoint:bindUIandKey(arg_8_0.taskBtn_.transform, var_8_1)
 	end
+
+	local var_8_2 = string.format("%s_%s", RedPointConst.ACTIVITY_BLOOD_CARD_STAGE_UNLOCK, BloodCardData:GetMainActivityID())
+
+	manager.redPoint:bindUIandKey(arg_8_0.startBtn_.transform, var_8_2)
 end
 
 function var_0_0.OnEnterOver(arg_9_0)
@@ -84,6 +88,10 @@ function var_0_0.OnExit(arg_11_0)
 
 		manager.redPoint:unbindUIandKey(arg_11_0.taskBtn_.transform, var_11_0)
 	end
+
+	local var_11_1 = string.format("%s_%s", RedPointConst.ACTIVITY_BLOOD_CARD_STAGE_UNLOCK, BloodCardData:GetMainActivityID())
+
+	manager.redPoint:unbindUIandKey(arg_11_0.startBtn_.transform, var_11_1)
 end
 
 function var_0_0.AddTimer(arg_12_0)

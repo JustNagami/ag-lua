@@ -35,12 +35,17 @@ function var_0_0.Refresh(arg_5_0)
 	end
 
 	local var_5_1 = arg_5_0.rewards[1]
+	local var_5_2 = ActivityData:GetActivityData(arg_5_0.music_id)
 
-	arg_5_0.m_name.text = ActivityMusicCfg[var_5_1] and GetI18NText(ActivityMusicCfg[var_5_1].name) or ""
+	if var_5_2 and var_5_2:IsActivitying() then
+		arg_5_0.m_name.text = ActivityMusicCfg[var_5_1] and GetI18NText(ActivityMusicCfg[var_5_1].name) or ""
+	else
+		arg_5_0.m_name.text = "???"
+	end
 
-	local var_5_2 = math.min(#arg_5_0.rewards, 2)
+	local var_5_3 = math.min(#arg_5_0.rewards, 2)
 
-	arg_5_0.list_:StartScroll(var_5_2)
+	arg_5_0.list_:StartScroll(var_5_3)
 end
 
 function var_0_0.IndexItem(arg_6_0, arg_6_1, arg_6_2)

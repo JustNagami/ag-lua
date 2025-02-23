@@ -95,6 +95,8 @@ function var_0_0.StartStory(arg_5_0, arg_5_1)
 
 			return
 		end
+
+		manager.notify:Invoke(PLAY_STORY_FINISH)
 	end
 
 	arg_5_0.player_:Play(arg_5_1)
@@ -688,33 +690,41 @@ function var_0_0.ResetStoryChoice(arg_46_0)
 	var_0_2 = {}
 end
 
-function var_0_0.SetStoryChoice(arg_47_0, arg_47_1)
-	table.insert(var_0_2, arg_47_1)
+function var_0_0.IsPlay(arg_47_0)
+	if arg_47_0.player_ then
+		return arg_47_0.player_.isPlay_
+	end
+
+	return false
 end
 
-function var_0_0.GetStoryChoice(arg_48_0)
+function var_0_0.SetStoryChoice(arg_48_0, arg_48_1)
+	table.insert(var_0_2, arg_48_1)
+end
+
+function var_0_0.GetStoryChoice(arg_49_0)
 	return var_0_2
 end
 
-function var_0_0.Dispose(arg_49_0)
-	if not arg_49_0.uiShow_ then
-		arg_49_0:ShowMainUI()
+function var_0_0.Dispose(arg_50_0)
+	if not arg_50_0.uiShow_ then
+		arg_50_0:ShowMainUI()
 	end
 
-	if arg_49_0.cameraChanged_ then
-		arg_49_0:ResetCameraParam()
+	if arg_50_0.cameraChanged_ then
+		arg_50_0:ResetCameraParam()
 	end
 
-	if arg_49_0.player_ then
-		arg_49_0.player_:Dispose()
+	if arg_50_0.player_ then
+		arg_50_0.player_:Dispose()
 
-		arg_49_0.player_ = nil
+		arg_50_0.player_ = nil
 	end
 
-	if arg_49_0.timer_ then
-		FuncTimerManager.inst:RemoveFuncTimer(arg_49_0.timer_)
+	if arg_50_0.timer_ then
+		FuncTimerManager.inst:RemoveFuncTimer(arg_50_0.timer_)
 
-		arg_49_0.timer_ = nil
+		arg_50_0.timer_ = nil
 	end
 
 	manager.audio:PauseAll(false)

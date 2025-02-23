@@ -13922,7 +13922,7 @@
 				arg_325_1.screenFilterGo_:SetActive(true)
 
 				arg_325_1.screenFilterEffect_.profile = Asset.Load("Effect/Scene/fx_grey.asset")
-				arg_325_1.hightColor1 = Color.New(0.5568628, 0.5568628, 0.5568628)
+				arg_325_1.hightColor1 = Color.New(0.8980392, 0.8980392, 0.8980392)
 				arg_325_1.hightColor2 = Color.New(0.3411765, 0.3411765, 0.3411765)
 
 				for iter_328_2, iter_328_3 in pairs(arg_325_1.actors_) do
@@ -13930,7 +13930,7 @@
 
 					for iter_328_4, iter_328_5 in ipairs(var_328_63) do
 						if iter_328_5.color.r > 0.51 then
-							iter_328_5.color = Color.New(0.5568628, 0.5568628, 0.5568628)
+							iter_328_5.color = Color.New(0.8980392, 0.8980392, 0.8980392)
 						else
 							iter_328_5.color = Color.New(0.3411765, 0.3411765, 0.3411765)
 						end

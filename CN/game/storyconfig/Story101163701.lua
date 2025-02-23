@@ -4489,11 +4489,11 @@
 				arg_143_1:ShowNextGo(false)
 			end
 
-			local var_146_12 = 33
+			local var_146_12 = 62
 			local var_146_13 = 1.93333333333333
 			local var_146_14 = arg_143_1:GetWordFromCfg(116371032)
 			local var_146_15 = arg_143_1:FormatText(var_146_14.content)
-			local var_146_16, var_146_17 = arg_143_1:GetPercentByPara(var_146_15, 5)
+			local var_146_16, var_146_17 = arg_143_1:GetPercentByPara(var_146_15, 6)
 
 			if var_146_11 < arg_143_1.time_ and arg_143_1.time_ <= var_146_11 + arg_146_0 then
 				arg_143_1.talkMaxDuration = 0
@@ -4590,7 +4590,7 @@
 				arg_147_1:ShowNextGo(false)
 			end
 
-			local var_150_1 = 29
+			local var_150_1 = 0
 			local var_150_2 = 1.93333333333333
 			local var_150_3 = arg_147_1:GetWordFromCfg(116371032)
 			local var_150_4 = arg_147_1:FormatText(var_150_3.content)

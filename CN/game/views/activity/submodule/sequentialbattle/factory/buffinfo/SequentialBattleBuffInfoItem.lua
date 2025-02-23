@@ -8,7 +8,7 @@ function var_0_0.Ctor(arg_1_0, arg_1_1)
 	arg_1_0:AddListeners()
 
 	arg_1_0.selectController_ = ControllerUtil.GetController(arg_1_0.transform_, "select")
-	arg_1_0.enabledController_ = ControllerUtil.GetController(arg_1_0.transform_, "equiped")
+	arg_1_0.enabledController_ = arg_1_0.controllerEx_:GetController("enabled")
 end
 
 function var_0_0.Dispose(arg_2_0)
@@ -25,16 +25,16 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 	arg_5_0.buffID_ = arg_5_1
 
 	if arg_5_2 then
-		arg_5_0.enabledController_:SetSelectedState("on")
+		arg_5_0.enabledController_:SetSelectedState("true")
 	else
-		arg_5_0.enabledController_:SetSelectedState("off")
+		arg_5_0.enabledController_:SetSelectedState("false")
 	end
 
 	local var_5_0 = SequentialBattleBuffCfg[arg_5_1].affix_id
 	local var_5_1 = AffixTypeCfg[var_5_0]
 	local var_5_2 = PublicBuffCfg[var_5_1.affix_buff_id].icon
 
-	arg_5_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/BuffIcon/" .. var_5_2)
+	arg_5_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/MaedukAffix/" .. var_5_2)
 end
 
 function var_0_0.RefreshSelect(arg_6_0, arg_6_1)

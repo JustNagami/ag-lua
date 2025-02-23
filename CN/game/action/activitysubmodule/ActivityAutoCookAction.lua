@@ -42,7 +42,9 @@ end
 
 function var_0_0.InitRedPoint(arg_6_0)
 	manager.redPoint:addGroup(string.format("%s%s", ActivityTools.GetRedPointKey(arg_6_0), arg_6_0), {
-		string.format("%s_%s", RedPointConst.ACTIVITY_TASK, arg_6_0)
+		string.format("%s_%s", RedPointConst.ACTIVITY_TASK, arg_6_0),
+		RedPointConst.ACTIVITY_AUTO_COOK_GOLDMAX .. arg_6_0,
+		RedPointConst.ACTIVITY_AUTO_COOK_NEW_LEVLE .. arg_6_0
 	})
 end
 
@@ -54,6 +56,31 @@ function var_0_0.UpdateRedPoint(arg_7_0)
 		manager.redPoint:setTip(string.format("%s_%s", RedPointConst.ACTIVITY_TASK, arg_7_0), 0)
 	elseif var_7_1 >= var_7_0.startTime then
 		-- block empty
+	end
+end
+
+function var_0_0.UpdateLoginRedPoint()
+	if not ActivityAutoCookData.login_ then
+		ActivityAutoCookData.login_ = true
+
+		if ActivityData:GetActivityIsOpen(ActivityConst.AUTO_COOK) then
+			for iter_8_0, iter_8_1 in pairs(ActivityAutoCookStageCfg.all) do
+				local var_8_0 = false
+				local var_8_1 = false
+				local var_8_2 = ActivityAutoCookStageCfg[iter_8_1]
+				local var_8_3 = not (var_8_2.condition > 0) or not not IsConditionAchieved(var_8_2.condition) and true
+
+				if ActivityAutoCookData:GetStageIsFinish(iter_8_1) then
+					var_8_1 = true
+				end
+
+				if var_8_3 == true and var_8_1 == false then
+					manager.redPoint:setTip(RedPointConst.ACTIVITY_AUTO_COOK_NEW_LEVLE .. ActivityConst.AUTO_COOK, 1)
+
+					return
+				end
+			end
+		end
 	end
 end
 

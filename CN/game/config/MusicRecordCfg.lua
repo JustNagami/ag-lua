@@ -3725,6 +3725,30 @@
 		initAISAC = "",
 		detail = "作曲：LousikAEy"
 	},
+	{
+		cueName = "bgm_activity_3_11_battle_boss_4046_1",
+		authorName = "HJLL",
+		ableBGM = 1,
+		album = 23,
+		cuesheet = "bgm_activity_3_11_battle_boss_4046_1",
+		musicName = "Tempestuous",
+		id = 304,
+		awbName = "bgm_activity_3_11_battle_boss_4046_1",
+		initAISAC = "",
+		detail = "作曲：HJLL"
+	},
+	{
+		cueName = "bgm_activity_3_11_battle_boss_4046_2",
+		authorName = "HJLL/Polymath9",
+		ableBGM = 1,
+		album = 23,
+		cuesheet = "bgm_activity_3_11_battle_boss_4046_2",
+		musicName = "Inertia",
+		id = 305,
+		awbName = "bgm_activity_3_11_battle_boss_4046_2",
+		initAISAC = "",
+		detail = "当我们选择踏入暴风骤雨，就不再有折返的权力，唯一能做的便是向前走，无论穿过它，还是被淹没。\n\n作曲：Polymath9\n编曲：HJLL"
+	},
 	get_id_list_by_album = {
 		[23] = {
 			288,
@@ -3742,7 +3766,9 @@
 			300,
 			301,
 			302,
-			303
+			303,
+			304,
+			305
 		},
 		[22] = {
 			276,
@@ -4379,6 +4405,8 @@
 		300,
 		301,
 		302,
-		303
+		303,
+		304,
+		305
 	}
 }

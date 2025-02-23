@@ -57,8 +57,8 @@
 		id = 7,
 		recommend_attribute = 12,
 		team_id = {
-			702,
 			701,
+			702,
 			781
 		}
 	},

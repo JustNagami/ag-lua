@@ -1,7 +1,9 @@
 ﻿local var_0_0 = class("SequentialBattleFactoryView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/MardukUI/continuousBattle/MardukContinuousBattleMainUI"
+	local var_1_0 = SequentialBattleUICfg.get_id_list_by_main_activity_id[arg_1_0:GetActivityID()][1]
+
+	return SequentialBattleUICfg[var_1_0].main_prefab
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -37,12 +39,13 @@ function var_0_0.OnEnter(arg_4_0)
 	end
 
 	arg_4_0:AddTimer()
+	manager.redPoint:bindUIandKey(arg_4_0.rewardBtn_.transform, string.format("%s_%s", RedPointConst.SEQUENTIAL_BATTLE_REWARD, arg_4_0:GetActivityID()))
 end
 
 function var_0_0.OnExit(arg_5_0)
 	manager.windowBar:HideBar()
 	manager.notify:RemoveListener(SEQUENTIAL_BATTLE_SELECT_CHAPTER, arg_5_0.selectChapterHandler_)
-	manager.redPoint:unbindUIandKey(arg_5_0.rewardBtn_.transform, string.format("%s_%s", RedPointConst.SEQUENTIAL_BATTLE_REWARD, arg_5_0.selectID_))
+	manager.redPoint:unbindUIandKey(arg_5_0.rewardBtn_.transform, string.format("%s_%s", RedPointConst.SEQUENTIAL_BATTLE_REWARD, arg_5_0:GetActivityID()))
 
 	for iter_5_0, iter_5_1 in ipairs(arg_5_0.difficultItemList_) do
 		iter_5_1:OnExit()
@@ -66,12 +69,13 @@ end
 function var_0_0.AddListeners(arg_7_0)
 	arg_7_0:AddBtnListener(arg_7_0.buffBtn_, nil, function()
 		JumpTools.OpenPageByJump("sequentialBattleBuffInfo", {
-			activityID = arg_7_0.selectID_
+			buffInfoActivityID = arg_7_0.selectID_
 		})
 	end)
 	arg_7_0:AddBtnListener(arg_7_0.rewardBtn_, nil, function()
 		JumpTools.OpenPageByJump("sequentialBattleReward", {
-			activityID = arg_7_0.selectID_
+			rewardActivityID = arg_7_0:GetActivityID(),
+			selectID = arg_7_0.selectID_
 		})
 	end)
 	arg_7_0:AddBtnListener(arg_7_0.battleBtn_, nil, function()
@@ -95,17 +99,8 @@ end
 
 function var_0_0.RefreshData(arg_12_0)
 	local var_12_0 = arg_12_0:GetActivityID()
-	local var_12_1 = SequentialBattleData:GetSelectChapterID(var_12_0)
 
-	if arg_12_0.selectID_ ~= var_12_1 then
-		if arg_12_0.selectID_ then
-			manager.redPoint:unbindUIandKey(arg_12_0.rewardBtn_.transform, string.format("%s_%s", RedPointConst.SEQUENTIAL_BATTLE_REWARD, arg_12_0.selectID_))
-		end
-
-		manager.redPoint:bindUIandKey(arg_12_0.rewardBtn_.transform, string.format("%s_%s", RedPointConst.SEQUENTIAL_BATTLE_REWARD, var_12_1))
-	end
-
-	arg_12_0.selectID_ = var_12_1
+	arg_12_0.selectID_ = SequentialBattleData:GetSelectChapterID(var_12_0)
 end
 
 function var_0_0.RefreshUI(arg_13_0)
@@ -136,7 +131,7 @@ function var_0_0.RefreshReward(arg_16_0)
 end
 
 function var_0_0.GetActivityID(arg_17_0)
-	return ActivityConst.FACTORY_SEQUENTIAL_BATTLE
+	return arg_17_0.params_.activityID or ActivityConst.FACTORY_SEQUENTIAL_BATTLE
 end
 
 function var_0_0.AddTimer(arg_18_0)
@@ -151,7 +146,7 @@ function var_0_0.AddTimer(arg_18_0)
 		return
 	end
 
-	arg_18_0.timeText_.text = manager.time:GetLostTimeStr(var_18_1)
+	arg_18_0.timeText_.text = manager.time:GetLostTimeStrWith2UnitWithPrefix(var_18_1, true)
 	arg_18_0.timer_ = Timer.New(function()
 		if manager.time:GetServerTime() >= var_18_1 then
 			arg_18_0:StopTimer()
@@ -161,7 +156,7 @@ function var_0_0.AddTimer(arg_18_0)
 			return
 		end
 
-		arg_18_0.timeText_.text = manager.time:GetLostTimeStr(var_18_1)
+		arg_18_0.timeText_.text = manager.time:GetLostTimeStrWith2UnitWithPrefix(var_18_1, true)
 	end, 1, -1)
 
 	arg_18_0.timer_:Start()

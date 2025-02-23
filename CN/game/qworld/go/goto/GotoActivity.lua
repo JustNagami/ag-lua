@@ -8,7 +8,9 @@ function var_0_0.Ctor(arg_1_0)
 		[ActivityConst.ACTIVITY_SPRING_SHOP] = "GotoSpringShopActivity",
 		[ActivityConst.AUTO_COOK] = "GotoAutoCookActivity",
 		[ActivityConst.ACTIVITY_SPRING_QUIZ] = "GotoQuizActivity",
-		[ActivityConst.EAT_SNAKE] = "GotoEatSnakeActivity"
+		[ActivityConst.EAT_SNAKE] = "GotoEatSnakeActivity",
+		[ActivityConst.ACTIVITY_3_11_MUSIC] = "GotoMusicActivity",
+		[ActivityConst.ACTIVITY_3_11_ZUMA] = "GotoZumaActivity"
 	}
 end
 

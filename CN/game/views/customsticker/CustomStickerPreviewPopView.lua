@@ -68,7 +68,7 @@ function var_0_0.UpdateView(arg_8_0)
 			arg_8_0.bgStaticImg_.enabled = true
 
 			if arg_8_0.curPreviewCfg_.type == 1 then
-				arg_8_0.fgStaticImg_.spriteAsync = "TextureConfig/Sticker/Foreground/Stickerfg_m_" .. arg_8_0.curPreviewCfg_.resource
+				arg_8_0.fgStaticImg_.spriteAsync = "TextureConfig/Sticker/Foreground_l/Stickerfg_l_" .. arg_8_0.curPreviewCfg_.resource
 				arg_8_0.fgStaticImg_.enabled = true
 			elseif arg_8_0.curPreviewCfg_.type == 2 then
 				arg_8_0.curDynamicFg_ = Object.Instantiate(Asset.Load("Widget/System/UserInfor/sticker_new/dynamicitem/Foreground/Foregrounditem_" .. arg_8_0.curPreviewCfg_.resource), arg_8_0.fgDynamicTrs_)

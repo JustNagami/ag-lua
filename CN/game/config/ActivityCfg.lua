@@ -21754,16 +21754,25 @@
 		activity_template = 100,
 		sub_activity_list = {
 			311201,
+			313601,
+			313651,
 			313641,
 			313425,
-			313601,
 			313501,
 			311891,
 			311311,
 			311071,
 			312131,
+			312161,
 			312431,
-			313651
+			311631,
+			312132,
+			311892,
+			311312,
+			312432,
+			311481,
+			312791,
+			313502
 		}
 	},
 	[311201] = {
@@ -21816,7 +21825,9 @@
 			311462,
 			312571,
 			313771,
-			313611
+			313611,
+			311481,
+			312791
 		},
 		reward_show = {
 			1,
@@ -22271,6 +22282,110 @@
 		activity_template = 4,
 		sub_activity_list = {}
 	},
+	[311481] = {
+		id = 311481,
+		name = "3.11春节音游主活动",
+		remark = "浮光绎曲",
+		unlock_condition = "",
+		activity_theme = 31,
+		activity_template = 148,
+		sub_activity_list = {
+			311491,
+			311492,
+			311493,
+			311494,
+			311495,
+			311496,
+			311497,
+			311498
+		},
+		reward_show = {
+			1,
+			3048,
+			54116,
+			22003
+		}
+	},
+	[311491] = {
+		id = 311491,
+		name = "3.11春节音游子活动1",
+		remark = "浮光绎曲01",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 149,
+		sub_activity_list = {}
+	},
+	[311492] = {
+		id = 311492,
+		name = "3.11春节音游子活动2",
+		remark = "浮光绎曲02",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 149,
+		sub_activity_list = {}
+	},
+	[311493] = {
+		id = 311493,
+		name = "3.11春节音游子活动3",
+		remark = "浮光绎曲03",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 149,
+		sub_activity_list = {}
+	},
+	[311494] = {
+		id = 311494,
+		name = "3.11春节音游子活动4",
+		remark = "浮光绎曲04",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 149,
+		sub_activity_list = {}
+	},
+	[311495] = {
+		id = 311495,
+		name = "3.11春节音游子活动5",
+		remark = "浮光绎曲05",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 149,
+		sub_activity_list = {}
+	},
+	[311496] = {
+		id = 311496,
+		name = "3.11春节音游子活动6",
+		remark = "浮光绎曲06",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 149,
+		sub_activity_list = {}
+	},
+	[311497] = {
+		id = 311497,
+		name = "3.11春节音游子活动7",
+		remark = "浮光绎曲07",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 149,
+		sub_activity_list = {}
+	},
+	[311498] = {
+		id = 311498,
+		name = "3.11春节音游子活动8",
+		remark = "浮光绎曲08",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 149,
+		sub_activity_list = {}
+	},
 	[313425] = {
 		id = 313425,
 		name = "义体缉查",
@@ -22409,6 +22524,16 @@
 		id = 312102,
 		name = "3.10皮肤拍脸图",
 		remark = "3.10皮肤拍脸图",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 210,
+		sub_activity_list = {}
+	},
+	[312103] = {
+		id = 312103,
+		name = "3.11皮肤拍脸图",
+		remark = "3.11皮肤拍脸图",
 		unlock_condition = "",
 		activity_theme = 31,
 		reward_show = "",
@@ -22662,7 +22787,13 @@
 			313223,
 			313224,
 			313225,
-			313226
+			313226,
+			313227,
+			313228,
+			313229,
+			3132210,
+			3132211,
+			3132212
 		}
 	},
 	[313221] = {
@@ -23003,6 +23134,680 @@
 		activity_template = 146,
 		sub_activity_list = {}
 	},
+	[311631] = {
+		id = 311631,
+		name = "外勤特派",
+		remark = "外勤特派",
+		unlock_condition = "",
+		activity_theme = 31,
+		activity_template = 163,
+		sub_activity_list = {
+			311641,
+			311642,
+			311643,
+			311644,
+			311645,
+			311646,
+			311647
+		},
+		reward_show = {
+			1,
+			40603,
+			40701,
+			40602,
+			40503,
+			40301,
+			40502,
+			40103,
+			22003
+		}
+	},
+	[311641] = {
+		id = 311641,
+		name = "任务I",
+		remark = "任务I",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 164,
+		sub_activity_list = {}
+	},
+	[311642] = {
+		id = 311642,
+		name = "任务II",
+		remark = "任务II",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 164,
+		sub_activity_list = {}
+	},
+	[311643] = {
+		id = 311643,
+		name = "任务III",
+		remark = "任务III",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 164,
+		sub_activity_list = {}
+	},
+	[311644] = {
+		id = 311644,
+		name = "任务IV",
+		remark = "任务IV",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 164,
+		sub_activity_list = {}
+	},
+	[311645] = {
+		id = 311645,
+		name = "任务V",
+		remark = "任务V",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 164,
+		sub_activity_list = {}
+	},
+	[311646] = {
+		id = 311646,
+		name = "任务VI",
+		remark = "任务VI",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 164,
+		sub_activity_list = {}
+	},
+	[311647] = {
+		id = 311647,
+		name = "任务VII",
+		remark = "任务VII",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 164,
+		sub_activity_list = {}
+	},
+	[312791] = {
+		id = 312791,
+		name = "3.11祖玛小游戏",
+		remark = "醒狮传说",
+		unlock_condition = "",
+		activity_theme = 31,
+		activity_template = 279,
+		sub_activity_list = {
+			3128001,
+			3128002,
+			3128003,
+			3128004,
+			3128005,
+			3128006,
+			3128007,
+			3128008,
+			3128009,
+			3128010,
+			3128011,
+			312881
+		},
+		reward_show = {
+			1,
+			54116,
+			2926
+		}
+	},
+	[3128001] = {
+		id = 3128001,
+		name = "3.11祖玛小游戏-普通1",
+		remark = "醒狮传说-普通1",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 280,
+		sub_activity_list = {}
+	},
+	[3128002] = {
+		id = 3128002,
+		name = "3.11祖玛小游戏-普通2",
+		remark = "醒狮传说-普通2",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 280,
+		sub_activity_list = {}
+	},
+	[3128003] = {
+		id = 3128003,
+		name = "3.11祖玛小游戏-普通3",
+		remark = "醒狮传说-普通3",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 280,
+		sub_activity_list = {}
+	},
+	[3128004] = {
+		id = 3128004,
+		name = "3.11祖玛小游戏-普通4",
+		remark = "醒狮传说-普通4",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 280,
+		sub_activity_list = {}
+	},
+	[3128005] = {
+		id = 3128005,
+		name = "3.11祖玛小游戏-普通5",
+		remark = "醒狮传说-普通5",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 280,
+		sub_activity_list = {}
+	},
+	[3128006] = {
+		id = 3128006,
+		name = "3.11祖玛小游戏-困难1",
+		remark = "醒狮传说-困难1",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 280,
+		sub_activity_list = {}
+	},
+	[3128007] = {
+		id = 3128007,
+		name = "3.11祖玛小游戏-困难2",
+		remark = "醒狮传说-困难2",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 280,
+		sub_activity_list = {}
+	},
+	[3128008] = {
+		id = 3128008,
+		name = "3.11祖玛小游戏-困难3",
+		remark = "醒狮传说-困难3",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 280,
+		sub_activity_list = {}
+	},
+	[3128009] = {
+		id = 3128009,
+		name = "3.11祖玛小游戏-困难4",
+		remark = "醒狮传说-困难4",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 280,
+		sub_activity_list = {}
+	},
+	[3128010] = {
+		id = 3128010,
+		name = "3.11祖玛小游戏-困难5",
+		remark = "醒狮传说-困难5",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 280,
+		sub_activity_list = {}
+	},
+	[3128011] = {
+		id = 3128011,
+		name = "3.11祖玛小游戏-无尽",
+		remark = "醒狮传说-限时挑战",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 280,
+		sub_activity_list = {}
+	},
+	[312881] = {
+		id = 312881,
+		name = "3.11祖玛小游戏-排行榜",
+		remark = "醒狮传说-排行榜",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 288,
+		sub_activity_list = {}
+	},
+	[310044] = {
+		id = 310044,
+		name = "3.11祖玛小游戏-任务",
+		remark = "醒狮传说-任务",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[312161] = {
+		id = 312161,
+		name = "4.0预热翻翻乐",
+		remark = "韶光溯梦",
+		unlock_condition = "",
+		activity_theme = 31,
+		activity_template = 216,
+		sub_activity_list = {
+			313781,
+			313782,
+			313783,
+			310042
+		},
+		reward_show = {
+			1,
+			22003,
+			40701,
+			40203,
+			40603,
+			40503,
+			40504
+		}
+	},
+	[313781] = {
+		id = 313781,
+		name = "4.0预热翻翻乐",
+		remark = "韶光溯梦-4对牌",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 378,
+		sub_activity_list = {}
+	},
+	[313782] = {
+		id = 313782,
+		name = "4.0预热翻翻乐",
+		remark = "韶光溯梦-6对牌",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 378,
+		sub_activity_list = {}
+	},
+	[313783] = {
+		id = 313783,
+		name = "4.0预热翻翻乐",
+		remark = "韶光溯梦-9对牌",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 378,
+		sub_activity_list = {}
+	},
+	[310042] = {
+		id = 310042,
+		name = "4.0预热翻翻乐任务",
+		remark = "韶光溯梦任务",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[310036] = {
+		id = 310036,
+		name = "3.11版本-白泽必中池",
+		remark = "3.11版本-白泽必中池",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[310037] = {
+		id = 310037,
+		name = "3.11版本-白泽精准池",
+		remark = "3.11版本-白泽精准池",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[310038] = {
+		id = 310038,
+		name = "3.11版本-陆吾精准池",
+		remark = "3.11版本-陆吾精准池",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[310039] = {
+		id = 310039,
+		name = "3.11版本-陵光精准池",
+		remark = "3.11版本-陵光精准池",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[3100310] = {
+		id = 3100310,
+		name = "3.11版本-金乌/孟章/托尔常驻池",
+		remark = "3.11版本-金乌/孟章/托尔常驻池",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[310046] = {
+		id = 310046,
+		name = "3.11-通行证任务",
+		remark = "3.11-通行证任务",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[312132] = {
+		id = 312132,
+		name = "角色宣传页（天诫）",
+		remark = "角色宣传页（天诫）",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 213,
+		sub_activity_list = {}
+	},
+	[311892] = {
+		id = 311892,
+		name = "3.11期限委培",
+		remark = "3.11期限委培",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 189,
+		sub_activity_list = {}
+	},
+	[311312] = {
+		id = 311312,
+		name = "皮肤试用下半",
+		remark = "皮肤试用下半",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 131,
+		sub_activity_list = {
+			311115,
+			311116,
+			311117
+		}
+	},
+	[311115] = {
+		id = 311115,
+		name = "换装试用关1",
+		remark = "换装试用关1",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 111,
+		sub_activity_list = {}
+	},
+	[311116] = {
+		id = 311116,
+		name = "换装试用关2",
+		remark = "换装试用关2",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 111,
+		sub_activity_list = {}
+	},
+	[311117] = {
+		id = 311117,
+		name = "换装试用关3",
+		remark = "换装试用关3",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 111,
+		sub_activity_list = {}
+	},
+	[313227] = {
+		id = 313227,
+		name = "角色试用关天诫·白泽",
+		remark = "角色试用关",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[313228] = {
+		id = 313228,
+		name = "角色试用关九司·陆吾",
+		remark = "角色试用关",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[313229] = {
+		id = 313229,
+		name = "角色试用关澄心·陵光",
+		remark = "角色试用关",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[3132210] = {
+		id = 3132210,
+		name = "角色试用关十曜·金乌",
+		remark = "角色试用关",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[3132211] = {
+		id = 3132211,
+		name = "角色试用关轰雷·托尔",
+		remark = "角色试用关",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[3132212] = {
+		id = 3132212,
+		name = "角色试用关青君·孟章",
+		remark = "角色试用关",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[310012] = {
+		id = 310012,
+		name = "限时签到",
+		remark = "限时签到",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 1,
+		sub_activity_list = {}
+	},
+	[312432] = {
+		id = 312432,
+		name = "联防协议·α",
+		remark = "联防协议·α",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 243,
+		sub_activity_list = {
+			311464,
+			312442,
+			310048
+		}
+	},
+	[311464] = {
+		id = 311464,
+		name = "后勤补给点",
+		remark = "后勤补给点",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 146,
+		sub_activity_list = {}
+	},
+	[312442] = {
+		id = 312442,
+		name = "联防协议·α-关卡",
+		remark = "联防协议·α-关卡",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 244,
+		sub_activity_list = {}
+	},
+	[310048] = {
+		id = 310048,
+		name = "联防协议·α-任务",
+		remark = "联防协议·α-任务",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[311162] = {
+		id = 311162,
+		name = "3.11版本试用角色2",
+		remark = "3.11版本试用角色2",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 116,
+		sub_activity_list = {}
+	},
+	[311163] = {
+		id = 311163,
+		name = "3.11版本连续战斗试用角色",
+		remark = "3.11版本连续战斗试用角色",
+		unlock_condition = "",
+		activity_theme = 31,
+		reward_show = "",
+		activity_template = 116,
+		sub_activity_list = {}
+	},
+	[313502] = {
+		id = 313502,
+		name = "古远虚影",
+		remark = "古远虚影",
+		unlock_condition = "",
+		activity_theme = 31,
+		activity_template = 350,
+		sub_activity_list = {},
+		reward_show = {
+			1,
+			40104,
+			40603,
+			22003,
+			2
+		}
+	},
+	[312002] = {
+		id = 312002,
+		name = "3.11版本-先遣服任务",
+		remark = "3.11版本-先遣服任务",
+		unlock_condition = "",
+		activity_theme = 0,
+		reward_show = "",
+		activity_template = 200,
+		sub_activity_list = {}
+	},
+	[312244] = {
+		id = 312244,
+		name = "3.11-先遣服挑战（天诫·白泽）-第一期",
+		remark = "3.11-先遣服挑战（天诫·白泽）-第一期",
+		unlock_condition = "",
+		activity_theme = 0,
+		reward_show = "",
+		activity_template = 224,
+		sub_activity_list = {
+			312254,
+			312255,
+			312256
+		}
+	},
+	[312245] = {
+		id = 312245,
+		name = "3.11-先遣服挑战（天诫·白泽）-第二期",
+		remark = "3.11-先遣服挑战（天诫·白泽）-第二期",
+		unlock_condition = "",
+		activity_theme = 0,
+		reward_show = "",
+		activity_template = 224,
+		sub_activity_list = {
+			312254,
+			312255,
+			312256
+		}
+	},
+	[312246] = {
+		id = 312246,
+		name = "3.11-先遣服挑战（天诫·白泽）-第三期",
+		remark = "3.11-先遣服挑战（天诫·白泽）-第三期",
+		unlock_condition = "",
+		activity_theme = 0,
+		reward_show = "",
+		activity_template = 224,
+		sub_activity_list = {
+			312254,
+			312255,
+			312256
+		}
+	},
+	[312254] = {
+		id = 312254,
+		name = "3.11-先遣服挑战（天诫·白泽）-排行榜1",
+		remark = "3.11-先遣服挑战（天诫·白泽）-排行榜1",
+		unlock_condition = "",
+		activity_theme = 0,
+		reward_show = "",
+		activity_template = 225,
+		sub_activity_list = {}
+	},
+	[312255] = {
+		id = 312255,
+		name = "3.11-先遣服挑战（天诫·白泽）-排行榜2",
+		remark = "3.11-先遣服挑战（天诫·白泽）-排行榜2",
+		unlock_condition = "",
+		activity_theme = 0,
+		reward_show = "",
+		activity_template = 225,
+		sub_activity_list = {}
+	},
+	[312256] = {
+		id = 312256,
+		name = "3.11-先遣服挑战（天诫·白泽）-排行榜3",
+		remark = "3.11-先遣服挑战（天诫·白泽）-排行榜3",
+		unlock_condition = "",
+		activity_theme = 0,
+		reward_show = "",
+		activity_template = 225,
+		sub_activity_list = {}
+	},
 	get_id_list_by_activity_theme = {
 		[31] = {
 			311001,
@@ -23047,6 +23852,15 @@
 			313631,
 			312571,
 			310041,
+			311481,
+			311491,
+			311492,
+			311493,
+			311494,
+			311495,
+			311496,
+			311497,
+			311498,
 			313425,
 			313421,
 			313422,
@@ -23059,6 +23873,7 @@
 			313771,
 			312101,
 			312102,
+			312103,
 			313601,
 			313651,
 			313661,
@@ -23104,7 +23919,60 @@
 			312231,
 			312233,
 			310049,
-			311465
+			311465,
+			311631,
+			311641,
+			311642,
+			311643,
+			311644,
+			311645,
+			311646,
+			311647,
+			312791,
+			3128001,
+			3128002,
+			3128003,
+			3128004,
+			3128005,
+			3128006,
+			3128007,
+			3128008,
+			3128009,
+			3128010,
+			3128011,
+			312881,
+			310044,
+			312161,
+			313781,
+			313782,
+			313783,
+			310042,
+			310036,
+			310037,
+			310038,
+			310039,
+			3100310,
+			310046,
+			312132,
+			311892,
+			311312,
+			311115,
+			311116,
+			311117,
+			313227,
+			313228,
+			313229,
+			3132210,
+			3132211,
+			3132212,
+			310012,
+			312432,
+			311464,
+			312442,
+			310048,
+			311162,
+			311163,
+			313502
 		},
 		[30] = {
 			301001,
@@ -25127,10 +25995,22 @@
 			312243,
 			312251,
 			312252,
-			312253
+			312253,
+			312002,
+			312244,
+			312245,
+			312246,
+			312254,
+			312255,
+			312256
 		}
 	},
 	get_id_list_by_activity_template = {
+		[378] = {
+			313781,
+			313782,
+			313783
+		},
 		[366] = {
 			313661,
 			313662,
@@ -25226,7 +26106,8 @@
 		},
 		[350] = {
 			303501,
-			313501
+			313501,
+			313502
 		},
 		[347] = {
 			293471,
@@ -25477,7 +26358,13 @@
 			313223,
 			313224,
 			313225,
-			313226
+			313226,
+			313227,
+			313228,
+			313229,
+			3132210,
+			3132211,
+			3132212
 		},
 		[294] = {
 			262941
@@ -25526,7 +26413,8 @@
 			242811
 		},
 		[288] = {
-			242881
+			242881,
+			312881
 		},
 		[280] = {
 			2428001,
@@ -25543,10 +26431,22 @@
 			2428012,
 			2428013,
 			2428014,
-			2428015
+			2428015,
+			3128001,
+			3128002,
+			3128003,
+			3128004,
+			3128005,
+			3128006,
+			3128007,
+			3128008,
+			3128009,
+			3128010,
+			3128011
 		},
 		[279] = {
-			242791
+			242791,
+			312791
 		},
 		[278] = {
 			242781,
@@ -25722,7 +26622,8 @@
 			292442,
 			302441,
 			302442,
-			312441
+			312441,
+			312442
 		},
 		[243] = {
 			202432,
@@ -25740,7 +26641,8 @@
 			292432,
 			302431,
 			302432,
-			312431
+			312431,
+			312432
 		},
 		[230] = {
 			192301,
@@ -25865,7 +26767,10 @@
 			302256,
 			312251,
 			312252,
-			312253
+			312253,
+			312254,
+			312255,
+			312256
 		},
 		[224] = {
 			182241,
@@ -25923,7 +26828,10 @@
 			302246,
 			312241,
 			312242,
-			312243
+			312243,
+			312244,
+			312245,
+			312246
 		},
 		[231] = {
 			182311
@@ -25982,7 +26890,8 @@
 		},
 		[216] = {
 			182161,
-			242161
+			242161,
+			312161
 		},
 		[215] = {
 			182151
@@ -26013,7 +26922,8 @@
 			292133,
 			302131,
 			302132,
-			312131
+			312131,
+			312132
 		},
 		[212] = {
 			172121,
@@ -26177,7 +27087,8 @@
 			291892,
 			301891,
 			301892,
-			311891
+			311891,
+			311892
 		},
 		[187] = {
 			131871,
@@ -26243,7 +27154,8 @@
 			292002,
 			302001,
 			302002,
-			312001
+			312001,
+			312002
 		},
 		[180] = {
 			121801
@@ -26331,10 +27243,18 @@
 			101644,
 			101645,
 			101646,
-			101647
+			101647,
+			311641,
+			311642,
+			311643,
+			311644,
+			311645,
+			311646,
+			311647
 		},
 		[163] = {
-			101631
+			101631,
+			311631
 		},
 		[168] = {
 			101659,
@@ -26485,7 +27405,15 @@
 			231495,
 			231496,
 			231497,
-			231498
+			231498,
+			311491,
+			311492,
+			311493,
+			311494,
+			311495,
+			311496,
+			311497,
+			311498
 		},
 		[152] = {
 			91521,
@@ -26504,7 +27432,8 @@
 		[148] = {
 			91481,
 			141911,
-			231481
+			231481,
+			311481
 		},
 		[210] = {
 			82101,
@@ -26535,7 +27464,8 @@
 			302104,
 			302105,
 			312101,
-			312102
+			312102,
+			312103
 		},
 		[144] = {
 			81441
@@ -26632,7 +27562,8 @@
 			311461,
 			311462,
 			311463,
-			311465
+			311465,
+			311464
 		},
 		[145] = {
 			71451,
@@ -26862,7 +27793,9 @@
 			291162,
 			301161,
 			301162,
-			311161
+			311161,
+			311162,
+			311163
 		},
 		[110] = {
 			61101,
@@ -27019,7 +27952,10 @@
 			311111,
 			311112,
 			311113,
-			311114
+			311114,
+			311115,
+			311116,
+			311117
 		},
 		[131] = {
 			526,
@@ -27057,7 +27993,8 @@
 			291312,
 			301311,
 			301312,
-			311311
+			311311,
+			311312
 		},
 		[127] = {
 			521,
@@ -27488,7 +28425,11 @@
 			310733,
 			310734,
 			310735,
-			310049
+			310049,
+			310044,
+			310042,
+			310046,
+			310048
 		},
 		[72] = {
 			201
@@ -27715,7 +28656,12 @@
 			310032,
 			310033,
 			310034,
-			310035
+			310035,
+			310036,
+			310037,
+			310038,
+			310039,
+			3100310
 		},
 		{
 			1,
@@ -27754,10 +28700,113 @@
 			290012,
 			300011,
 			300012,
-			310011
+			310011,
+			310012
 		}
 	},
 	get_id_list_by_sub_activity_list = {
+		[312256] = {
+			312244,
+			312245,
+			312246
+		},
+		[312255] = {
+			312244,
+			312245,
+			312246
+		},
+		[312254] = {
+			312244,
+			312245,
+			312246
+		},
+		[310048] = {
+			312432
+		},
+		[312442] = {
+			312432
+		},
+		[311464] = {
+			312432
+		},
+		[311117] = {
+			311312
+		},
+		[311116] = {
+			311312
+		},
+		[311115] = {
+			311312
+		},
+		[310042] = {
+			312161
+		},
+		[313783] = {
+			312161
+		},
+		[313782] = {
+			312161
+		},
+		[313781] = {
+			312161
+		},
+		[312881] = {
+			312791
+		},
+		[3128011] = {
+			312791
+		},
+		[3128010] = {
+			312791
+		},
+		[3128009] = {
+			312791
+		},
+		[3128008] = {
+			312791
+		},
+		[3128007] = {
+			312791
+		},
+		[3128006] = {
+			312791
+		},
+		[3128005] = {
+			312791
+		},
+		[3128004] = {
+			312791
+		},
+		[3128003] = {
+			312791
+		},
+		[3128002] = {
+			312791
+		},
+		[3128001] = {
+			312791
+		},
+		[311647] = {
+			311631
+		},
+		[311646] = {
+			311631
+		},
+		[311645] = {
+			311631
+		},
+		[311644] = {
+			311631
+		},
+		[311643] = {
+			311631
+		},
+		[311642] = {
+			311631
+		},
+		[311641] = {
+			311631
+		},
 		[312233] = {
 			312211
 		},
@@ -27811,6 +28860,24 @@
 		},
 		[311463] = {
 			312431
+		},
+		[3132212] = {
+			311071
+		},
+		[3132211] = {
+			311071
+		},
+		[3132210] = {
+			311071
+		},
+		[313229] = {
+			311071
+		},
+		[313228] = {
+			311071
+		},
+		[313227] = {
+			311071
 		},
 		[313226] = {
 			311071
@@ -27880,6 +28947,30 @@
 		},
 		[313421] = {
 			313425
+		},
+		[311498] = {
+			311481
+		},
+		[311497] = {
+			311481
+		},
+		[311496] = {
+			311481
+		},
+		[311495] = {
+			311481
+		},
+		[311494] = {
+			311481
+		},
+		[311493] = {
+			311481
+		},
+		[311492] = {
+			311481
+		},
+		[311491] = {
+			311481
 		},
 		[310041] = {
 			312571
@@ -28001,11 +29092,36 @@
 		[311701] = {
 			311201
 		},
-		[313651] = {
+		[313502] = {
+			311001
+		},
+		[312791] = {
 			311001,
-			313601
+			313641
+		},
+		[311481] = {
+			311001,
+			313641
+		},
+		[312432] = {
+			311001
+		},
+		[311312] = {
+			311001
+		},
+		[311892] = {
+			311001
+		},
+		[312132] = {
+			311001
+		},
+		[311631] = {
+			311001
 		},
 		[312431] = {
+			311001
+		},
+		[312161] = {
 			311001
 		},
 		[312131] = {
@@ -28023,13 +29139,17 @@
 		[313501] = {
 			311001
 		},
-		[313601] = {
-			311001
-		},
 		[313425] = {
 			311001
 		},
 		[313641] = {
+			311001
+		},
+		[313651] = {
+			311001,
+			313601
+		},
+		[313601] = {
 			311001
 		},
 		[311201] = {
@@ -34717,6 +35837,15 @@
 		313631,
 		312571,
 		310041,
+		311481,
+		311491,
+		311492,
+		311493,
+		311494,
+		311495,
+		311496,
+		311497,
+		311498,
 		313425,
 		313421,
 		313422,
@@ -34729,6 +35858,7 @@
 		313771,
 		312101,
 		312102,
+		312103,
 		313601,
 		313651,
 		313661,
@@ -34781,6 +35911,66 @@
 		312231,
 		312233,
 		310049,
-		311465
+		311465,
+		311631,
+		311641,
+		311642,
+		311643,
+		311644,
+		311645,
+		311646,
+		311647,
+		312791,
+		3128001,
+		3128002,
+		3128003,
+		3128004,
+		3128005,
+		3128006,
+		3128007,
+		3128008,
+		3128009,
+		3128010,
+		3128011,
+		312881,
+		310044,
+		312161,
+		313781,
+		313782,
+		313783,
+		310042,
+		310036,
+		310037,
+		310038,
+		310039,
+		3100310,
+		310046,
+		312132,
+		311892,
+		311312,
+		311115,
+		311116,
+		311117,
+		313227,
+		313228,
+		313229,
+		3132210,
+		3132211,
+		3132212,
+		310012,
+		312432,
+		311464,
+		312442,
+		310048,
+		311162,
+		311163,
+		313502,
+		312002,
+		312244,
+		312245,
+		312246,
+		312254,
+		312255,
+		312256
 	}
 }

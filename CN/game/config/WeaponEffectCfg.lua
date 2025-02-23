@@ -2332,7 +2332,7 @@
 		}
 	},
 	[101701] = {
-		simple_description = "当灵猫·芭丝特装备时，获得以下效果。\n自身护甲穿透提高、会心伤害提高，从敌人背后攻击时会心率大幅提高。\n施放<color=#297DE0>「猫神的愚弄」</color>时进入<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(101703)>「夜影」</material></color>状态。\n<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(101703)>「夜影」</material></color>：隐匿身形，移动速度提高，提高进入该状态后造成的第一次伤害，命中后或者受到伤害时退出该状态。",
+		simple_description = "当灵猫·芭丝特装备时，获得以下效果。\n护甲穿透提高、会心伤害提高，从敌人背后攻击时会心率大幅提高。\n施放<color=#297DE0>「猫神的愚弄」</color>时进入<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(101703)>「夜影」</material></color>状态。\n<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(101703)>「夜影」</material></color>：隐匿身形，移动速度提高，提高进入该状态后造成的第一次伤害，命中后或者受到伤害时退出该状态。",
 		id = 101701,
 		description = {
 			500101701
@@ -2369,8 +2369,14 @@
 		spec_char = {
 			1017
 		},
-		strengthen_description = {},
-		simple_strength_description = {}
+		strengthen_description = {
+			101741,
+			220101701
+		},
+		simple_strength_description = {
+			101741,
+			"当灵猫·芭丝特装备时，获得以下效果。\n护甲穿透提高、会心伤害提高、奥义获得率提高，攻击时会心率大幅提高。\n施放<color=#297DE0>「猫神的愚弄」</color>时进入<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(101703)>「夜影」</material></color>状态。\n<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(101703)>「夜影」</material></color>：隐匿身形，移动速度提高，提高进入该状态后造成的第一次伤害，命中后或者受到伤害时退出该状态。\n自身攻击造成会心后，恢复奥义值。\n施放奥义或连携奥义后，全队伍获得奥义值。"
+		}
 	},
 	[102801] = {
 		simple_description = "当轰雷·托尔装备时，获得以下效果。\n处于<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(102802)>「狂雷」</material></color>状态时，每次施放技能命中时都会产生一次落雷，造成雷属性伤害。使用<color=#297DE0>「妙尔尼尔」</color>每次施放非衍生技能命中时、使用<color=#297DE0>「雅恩格利佩尔」</color>每次施放最后一拳以外的技能攻击命中时，自身伤害提高，该效果可多层累加。\n<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(102803)>「怒雷」</material></color>状态施放最后一拳时，根据拥有的效果层数，该技能攻击力提高。\n施放<color=#297DE0>「落雷击」</color>命中时，根据拥有的效果层数，<color=#297DE0>「落雷击」</color>基础伤害提高；<color=#297DE0>「落雷击」</color>结束后移除所有累加的层数。",
@@ -2493,8 +2499,14 @@
 		spec_char = {
 			1132
 		},
-		strengthen_description = {},
-		simple_strength_description = {}
+		strengthen_description = {
+			113241,
+			220113201
+		},
+		simple_strength_description = {
+			113241,
+			"当烙焰·提尔装备时，获得以下效果。\n独立伤害提高。\n神格<color=#297DE0>「燃剑的制裁-瞬燃」</color>获得额外的效果：施放收回长剑后的强力攻击时，会获得<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(113204)>「烙印」</material></color>。\n神格<color=#297DE0>「炽甲的惩戒-凝火」</color>获得额外的效果：根据消耗<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(113204)>「烙印」</material></color>的点数，<color=#297DE0>「爆烈强攻」</color>的基础伤害提高。\n神格<color=#297DE0>「燃剑的制裁·附着」</color>和<color=#297DE0>「炽甲的惩戒·锻铸」</color>被激活时，获得额外的效果：自身旋转长剑、奥义和连携奥义攻击以外其他普通攻击、技能未攻击命中一段时间后，旋转长剑攻击命中瞬间会心率、会心伤害提高，自身其他普通攻击、技能命中时，移除该效果。\n处于<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(113202)>「炽甲姿态」</material></color>时，每次普通攻击命中时会获得<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(113204)>「烙印」</material></color>。\n处于<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(113201)>「燃剑姿态」</material></color>时，每次施放普通攻击或技能时，会触发额外技能攻击。\n施放每段普通攻击时，额外造成火属性伤害。\n施放<color=#297DE0>「爆烈强攻」</color>时，每次攻击额外造成火属性伤害，之后消耗<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(113204)>「烙印」</material></color>。\n施放<color=#297DE0>「焚灭掳夺」</color>时，每次攻击额外造成火属性伤害。\n触发的额外技能攻击命中时，造成的伤害提高。\n<color=#297DE0>「炙炼侵袭」</color>不再会在接回长剑后再进入冷却，改变为施放后进入冷却。"
+		}
 	},
 	[107501] = {
 		simple_description = "当澄心·陵光装备时，获得以下效果。\n施放<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107503)>「烈式」</material></color>时，提高全队伍会心率和全属性伤害。\n<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107507)>「阳炽」</material></color>的概率增加。\n<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107508)>「烈阳炽」</material></color>的持续时间延长。\n<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107509)>「烈离」</material></color>的持续时间缩短。\n<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107510)>「燃离」</material></color>的持续时间延长。",
@@ -3791,7 +3803,7 @@
 		simple_strength_description = {}
 	},
 	[103401] = {
-		simple_description = "当潜蛇·瓦吉特装备时，获得以下效果。\n独立伤害提高。\n施放<color=#297DE0>「百裂游踪」</color>时，获得<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(103403)>「潜影」</material></color>标记。\n神格<color=#297DE0>「烈毒主宰·摄目」</color>获得额外的效果：<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(103404)>「洞悉之目」</material></color>额外施加伤害上升。\n神格<color=#297DE0>「万戮灾异·蜕生」</color>获得额外的效果：自身技能一、二、三基础伤害提高。出场时根据会心伤害的全队伍独立伤害额外提高。\n神格<color=#297DE0>「守护圣蛇·赐佑」</color>获得额外的效果：<color=#297DE0>「蛇舞」</color>命中时会对敌人附加物理抗性降低。",
+		simple_description = "当潜蛇·瓦吉特装备时，获得以下效果。\n独立伤害提高。\n施放<color=#297DE0>「百裂游踪」</color>时，获得<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(103403)>「潜影」</material></color>标记。\n神格<color=#297DE0>「烈毒主宰·摄目」</color>获得额外的效果：<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(103404)>「洞悉之目」</material></color>额外施加伤害上升。\n神格<color=#297DE0>「万戮灾异·狂潮」</color>获得额外的效果：自身技能一、二、三基础伤害提高。出场时根据会心伤害的全队伍独立伤害额外提高。\n神格<color=#297DE0>「守护圣蛇·赐佑」</color>获得额外的效果：<color=#297DE0>「蛇舞」</color>命中时会对敌人附加物理抗性降低。",
 		id = 103401,
 		description = {
 			500103401
@@ -3854,6 +3866,146 @@
 		},
 		spec_char = {
 			1034
+		},
+		strengthen_description = {},
+		simple_strength_description = {}
+	},
+	[101201] = {
+		simple_description = "当天诫·白泽装备时，获得以下效果。\n技能一、二、三基础伤害提高。\n未受击、受击但未损失生命值一定时间后，独立伤害提高。\n出场时，恢复怒气。\n施放<color=#297DE0>「刀啸决」</color>时获得霸体效果，格挡攻击时获得的无敌效果持续时间延长。\n<color=#297DE0>「刀啸寒峭」</color>改变为<color=#297DE0>「刀啸劲峭」</color>，<color=#297DE0>「刀啸孤锋」</color>改变为<color=#297DE0>「刀啸藏锋」</color>。\n施放<color=#297DE0>「鬼神式」</color>或<color=#297DE0>「无我意」</color>的收尾攻击前也会出现衔接提示，在合适的时机内衔接施放其他技能时，收尾攻击改变攻击方式，造成不同的伤害。",
+		id = 101201,
+		description = {
+			500101201
+		},
+		level_param = {
+			{
+				160,
+				200,
+				240,
+				280,
+				320,
+				360,
+				400
+			},
+			{
+				150,
+				150,
+				150,
+				150,
+				150,
+				150,
+				150
+			},
+			{
+				4000,
+				4000,
+				4000,
+				4000,
+				4000,
+				4000,
+				4000
+			},
+			{
+				103,
+				103,
+				103,
+				103,
+				103,
+				103,
+				103
+			},
+			{
+				4000,
+				4000,
+				4000,
+				4000,
+				4000,
+				4000,
+				4000
+			},
+			{
+				103,
+				103,
+				103,
+				103,
+				103,
+				103,
+				103
+			},
+			{
+				6000,
+				6000,
+				6000,
+				6000,
+				6000,
+				6000,
+				6000
+			},
+			{
+				154,
+				154,
+				154,
+				154,
+				154,
+				154,
+				154
+			},
+			{
+				6000,
+				6000,
+				6000,
+				6000,
+				6000,
+				6000,
+				6000
+			},
+			{
+				154,
+				154,
+				154,
+				154,
+				154,
+				154,
+				154
+			},
+			{
+				8000,
+				8000,
+				8000,
+				8000,
+				8000,
+				8000,
+				8000
+			},
+			{
+				205,
+				205,
+				205,
+				205,
+				205,
+				205,
+				205
+			},
+			{
+				9000,
+				9000,
+				9000,
+				9000,
+				9000,
+				9000,
+				9000
+			},
+			{
+				231,
+				231,
+				231,
+				231,
+				231,
+				231,
+				231
+			}
+		},
+		spec_char = {
+			1012
 		},
 		strengthen_description = {},
 		simple_strength_description = {}
@@ -3951,6 +4103,7 @@
 		108901,
 		124801,
 		113301,
-		103401
+		103401,
+		101201
 	}
 }

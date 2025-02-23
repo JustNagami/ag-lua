@@ -16,12 +16,14 @@ function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
 	arg_3_0.stateController_ = ControllerUtil.GetController(arg_3_0.transform_, "state")
-	arg_3_0.list_ = LuaList.New(handler(arg_3_0, arg_3_0.IndexItem), arg_3_0.m_list, CommonItem)
+	arg_3_0.list_ = LuaList.New(handler(arg_3_0, arg_3_0.IndexItem), arg_3_0.m_list, CommonItemView)
 end
 
 function var_0_0.AddUIListener(arg_4_0)
 	arg_4_0:AddBtnListener(arg_4_0.m_rewardBtn, nil, function()
-		MusicAction.QueryReward(arg_4_0.id)
+		MusicAction.QueryReward({
+			arg_4_0.id
+		})
 	end)
 end
 
@@ -48,11 +50,19 @@ end
 
 function var_0_0.IndexItem(arg_8_0, arg_8_1, arg_8_2)
 	local var_8_0 = arg_8_0.items[arg_8_1]
+	local var_8_1 = clone(ItemTemplateData)
 
-	arg_8_2:RefreshData(formatReward(var_8_0))
-	arg_8_2:RegistCallBack(function()
-		ShowPopItem(POP_ITEM, var_8_0)
-	end)
+	var_8_1.id = var_8_0[1]
+	var_8_1.number = var_8_0[2]
+
+	function var_8_1.clickFun(arg_9_0)
+		ShowPopItem(POP_ITEM, {
+			arg_9_0.id,
+			arg_9_0.number
+		})
+	end
+
+	arg_8_2:SetData(var_8_1)
 end
 
 function var_0_0.Dispose(arg_10_0)

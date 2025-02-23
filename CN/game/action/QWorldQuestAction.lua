@@ -58,6 +58,10 @@ function var_0_0.SubmitMainQuest(arg_8_0, arg_8_1)
 			end
 		else
 			ShowTips(arg_9_0.result)
+
+			if arg_8_1 then
+				arg_8_1(arg_9_0, arg_9_1)
+			end
 		end
 	end)
 end
@@ -80,6 +84,10 @@ function var_0_0.SubmitQuest(arg_10_0, arg_10_1)
 			end
 		else
 			ShowTips(arg_11_0.result)
+
+			if arg_10_1 then
+				arg_10_1(arg_11_0, arg_11_1)
+			end
 		end
 	end)
 end
@@ -115,6 +123,10 @@ function var_0_0.QuestSetParam(arg_14_0, arg_14_1, arg_14_2)
 			end
 		else
 			ShowTips(arg_15_0.result)
+
+			if arg_14_2 then
+				arg_14_2(arg_15_0, arg_15_1)
+			end
 		end
 	end)
 end

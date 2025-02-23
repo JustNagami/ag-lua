@@ -80,10 +80,10 @@ end
 function var_0_0.QuestSetParam(arg_5_0, arg_5_1, arg_5_2, arg_5_3, arg_5_4)
 	arg_5_0.isSendingQuestParamUpdate_ = true
 
-	local function var_5_0()
+	local function var_5_0(arg_6_0)
 		arg_5_0.isSendingQuestParamUpdate_ = false
 
-		if arg_5_4 then
+		if arg_5_4 and isSuccess(arg_6_0.result) then
 			arg_5_4()
 		end
 	end
@@ -482,6 +482,10 @@ function var_0_0._FinishMainQuest(arg_34_0, arg_34_1)
 	QWorldQuestAction.SubmitMainQuest(arg_34_1, function(arg_35_0)
 		arg_34_0.__isSendingFinishMainQuest = false
 
+		if not isSuccess(arg_35_0.result) then
+			return
+		end
+
 		for iter_35_0, iter_35_1 in ipairs(arg_34_1) do
 			local var_35_0 = SandplayTaskMainCfg[iter_35_1]
 
@@ -549,6 +553,10 @@ function var_0_0._FinishQuest(arg_38_0, arg_38_1)
 
 	QWorldQuestAction.SubmitQuest(arg_38_1, function(arg_39_0)
 		arg_38_0.__isSendingFinishQuest = false
+
+		if not isSuccess(arg_39_0.result) then
+			return
+		end
 
 		QWorldNotifyQueue:GetRewards(arg_39_0.reward_list)
 

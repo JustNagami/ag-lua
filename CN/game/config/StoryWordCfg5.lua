@@ -13793,6 +13793,138 @@
 		content = "时间戳“88290”",
 		id = 419106
 	},
+	[419107] = {
+		speaker = "",
+		prefab_name = "",
+		content = "苍术",
+		id = 419107
+	},
+	[419108] = {
+		speaker = "",
+		prefab_name = "",
+		content = "Record-H03",
+		id = 419108
+	},
+	[419109] = {
+		speaker = "",
+		prefab_name = "",
+		content = "科尔盖监察委员会",
+		id = 419109
+	},
+	[419110] = {
+		speaker = "",
+		prefab_name = "",
+		content = "暗号",
+		id = 419110
+	},
+	[419111] = {
+		speaker = "",
+		prefab_name = "",
+		content = "树林",
+		id = 419111
+	},
+	[419112] = {
+		speaker = "",
+		prefab_name = "",
+		content = "小院",
+		id = 419112
+	},
+	[419113] = {
+		speaker = "",
+		prefab_name = "",
+		content = "名单",
+		id = 419113
+	},
+	[419114] = {
+		speaker = "",
+		prefab_name = "",
+		content = "秘密",
+		id = 419114
+	},
+	[419115] = {
+		speaker = "",
+		prefab_name = "",
+		content = "控制秘密",
+		id = 419115
+	},
+	[419116] = {
+		speaker = "",
+		prefab_name = "",
+		content = "质疑",
+		id = 419116
+	},
+	[419117] = {
+		speaker = "",
+		prefab_name = "",
+		content = "决策",
+		id = 419117
+	},
+	[419118] = {
+		speaker = "",
+		prefab_name = "",
+		content = "红狐",
+		id = 419118
+	},
+	[419119] = {
+		speaker = "",
+		prefab_name = "",
+		content = "堡垒计划",
+		id = 419119
+	},
+	[419120] = {
+		speaker = "",
+		prefab_name = "",
+		content = "收网开始",
+		id = 419120
+	},
+	[419121] = {
+		speaker = "",
+		prefab_name = "",
+		content = "T≈400",
+		id = 419121
+	},
+	[419122] = {
+		speaker = "",
+		prefab_name = "",
+		content = "“菲尔极限”",
+		id = 419122
+	},
+	[419123] = {
+		speaker = "",
+		prefab_name = "",
+		content = "“童谣”餐厅",
+		id = 419123
+	},
+	[419124] = {
+		speaker = "",
+		prefab_name = "",
+		content = "邀请",
+		id = 419124
+	},
+	[419125] = {
+		speaker = "",
+		prefab_name = "",
+		content = "加密通讯",
+		id = 419125
+	},
+	[419126] = {
+		speaker = "",
+		prefab_name = "",
+		content = "雨未止歇",
+		id = 419126
+	},
+	[419127] = {
+		speaker = "",
+		prefab_name = "",
+		content = "End",
+		id = 419127
+	},
+	[419128] = {
+		speaker = "",
+		prefab_name = "",
+		content = "真相",
+		id = 419128
+	},
 	[501001] = {
 		speaker = "",
 		prefab_name = "",
@@ -13820,13 +13952,13 @@
 	[501005] = {
 		speaker = "",
 		prefab_name = "",
-		content = "9.1",
+		content = "9.13",
 		id = 501005
 	},
 	[501006] = {
 		speaker = "",
 		prefab_name = "",
-		content = "标准时间戳“88401”",
+		content = "标准时间戳“88473”",
 		id = 501006
 	},
 	[501007] = {
@@ -13838,7 +13970,7 @@
 	[501008] = {
 		speaker = "",
 		prefab_name = "",
-		content = "标准时间戳“88473”",
+		content = "标准时间戳“88476”",
 		id = 501008
 	},
 	[501009] = {
@@ -13874,7 +14006,7 @@
 	[501014] = {
 		speaker = "",
 		prefab_name = "",
-		content = "标准时间戳“88047”",
+		content = "标准时间戳“88209”",
 		id = 501014
 	},
 	[501015] = {
@@ -13970,7 +14102,7 @@
 	[501030] = {
 		speaker = "",
 		prefab_name = "",
-		content = "标准时间戳“88185”",
+		content = "标准时间戳“88187”",
 		id = 501030
 	},
 	[501031] = {
@@ -14068,6 +14200,210 @@
 		prefab_name = "",
 		content = "标准时间戳“88288”",
 		id = 501084
+	},
+	[501045] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9.15",
+		id = 501045
+	},
+	[501046] = {
+		speaker = "",
+		prefab_name = "",
+		content = "标准时间戳“88526”",
+		id = 501046
+	},
+	[501047] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9.14",
+		id = 501047
+	},
+	[501048] = {
+		speaker = "",
+		prefab_name = "",
+		content = "标准时间戳“88498”",
+		id = 501048
+	},
+	[501049] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9.6",
+		id = 501049
+	},
+	[501050] = {
+		speaker = "",
+		prefab_name = "",
+		content = "标准时间戳“88302”",
+		id = 501050
+	},
+	[501051] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9.7",
+		id = 501051
+	},
+	[501052] = {
+		speaker = "",
+		prefab_name = "",
+		content = "标准时间戳“88327”",
+		id = 501052
+	},
+	[501053] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9.8",
+		id = 501053
+	},
+	[501054] = {
+		speaker = "",
+		prefab_name = "",
+		content = "标准时间戳“88357”",
+		id = 501054
+	},
+	[501055] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9.8",
+		id = 501055
+	},
+	[501056] = {
+		speaker = "",
+		prefab_name = "",
+		content = "标准时间戳“88361”",
+		id = 501056
+	},
+	[501057] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9.9",
+		id = 501057
+	},
+	[501058] = {
+		speaker = "",
+		prefab_name = "",
+		content = "标准时间戳“88366”",
+		id = 501058
+	},
+	[501059] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9.11",
+		id = 501059
+	},
+	[501060] = {
+		speaker = "",
+		prefab_name = "",
+		content = "标准时间戳“88427”",
+		id = 501060
+	},
+	[501061] = {
+		speaker = "",
+		prefab_name = "",
+		content = "<color=#ffffffff>9.10</color>",
+		id = 501061
+	},
+	[501062] = {
+		speaker = "",
+		prefab_name = "",
+		content = "标准时间戳“88401”",
+		id = 501062
+	},
+	[501063] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9.14",
+		id = 501063
+	},
+	[501064] = {
+		speaker = "",
+		prefab_name = "",
+		content = "标准时间戳“88500”",
+		id = 501064
+	},
+	[501065] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9.15",
+		id = 501065
+	},
+	[501066] = {
+		speaker = "",
+		prefab_name = "",
+		content = "标准时间戳“88515”",
+		id = 501066
+	},
+	[501067] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9.16",
+		id = 501067
+	},
+	[501068] = {
+		speaker = "",
+		prefab_name = "",
+		content = "标准时间戳“88540”",
+		id = 501068
+	},
+	[501069] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9.16",
+		id = 501069
+	},
+	[501070] = {
+		speaker = "",
+		prefab_name = "",
+		content = "标准时间戳“88542”",
+		id = 501070
+	},
+	[501071] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9.16",
+		id = 501071
+	},
+	[501072] = {
+		speaker = "",
+		prefab_name = "",
+		content = "标准时间戳“88545”",
+		id = 501072
+	},
+	[501073] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9.16",
+		id = 501073
+	},
+	[501074] = {
+		speaker = "",
+		prefab_name = "",
+		content = "标准时间戳“88545”",
+		id = 501074
+	},
+	[501075] = {
+		speaker = "",
+		prefab_name = "",
+		content = "9.17",
+		id = 501075
+	},
+	[501076] = {
+		speaker = "",
+		prefab_name = "",
+		content = "科尔盖总部",
+		id = 501076
+	},
+	[501077] = {
+		speaker = "",
+		prefab_name = "",
+		content = "2315.9.17",
+		id = 501077
+	},
+	[501078] = {
+		speaker = "",
+		prefab_name = "",
+		content = "周日",
+		id = 501078
 	},
 	[1101905001] = {
 		speaker = "",
@@ -31928,7 +32264,7 @@
 	[319821038] = {
 		speaker = "小薇儿",
 		prefab_name = "10068ui_story",
-		content = "我们是朋友，要好好保护朋友才行……我会保护好你的，",
+		content = "我们是朋友，要好好保护朋友才行……我会保护好你的。",
 		id = 319821038
 	},
 	[319821039] = {
@@ -89662,341 +89998,5 @@
 		prefab_name = "",
 		content = "顺着她的视线望去，一颗蠕动的眼球，正泡在瓶子里在轱辘辘地冲着我们打着转。",
 		id = 320061120
-	},
-	[320061121] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "别害怕，那些是义体器官，艾因索菲也有卖的，只是做工没有这么精致。",
-		id = 320061121
-	},
-	[320061122] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "这样啊……也太像真正的眼睛了……",
-		id = 320061122
-	},
-	[320061123] = {
-		speaker = "俱毗罗",
-		prefab_name = "10100ui_story",
-		content = "是啊，这些东西很昂贵，在加尔的需求量也很大。",
-		id = 320061123
-	},
-	[320061124] = {
-		speaker = "俱毗罗",
-		prefab_name = "10100ui_story",
-		content = "不过呢，真正的好东西，要往这边看。",
-		id = 320061124
-	},
-	[320061125] = {
-		speaker = "俱毗罗",
-		prefab_name = "10100ui_story",
-		content = "「梵天智勇双全，梵天主宰一切。」",
-		id = 320061125
-	},
-	[320061126] = {
-		speaker = "",
-		prefab_name = "",
-		content = "俱毗罗退后两步，摆出一个夸张的姿势，深吸一口气，一记蓄力轰拳打在面前的空气墙体上。",
-		id = 320061126
-	},
-	[320061127] = {
-		speaker = "",
-		prefab_name = "",
-		content = "悠远而低沉的爆鸣声有些刺耳，俱毗罗对着前方举起双手，一条新的通路出现在我们面前。",
-		id = 320061127
-	},
-	[320061128] = {
-		speaker = "俱毗罗",
-		prefab_name = "10100ui_story",
-		content = "欢迎来到「魔王的宝库」！噢……是梵天这么称呼它的。",
-		id = 320061128
-	},
-	[320061129] = {
-		speaker = "",
-		prefab_name = "",
-		content = "黯淡的核心闪烁着光泽。陈列在眼前大大小小的物件看似不如外面的现代化军备震撼，但我终端上出现的密集信号让我明白这一仓库东西究竟有多恐怖。",
-		id = 320061129
-	},
-	[320061130] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这些……都是完整的权钥？",
-		id = 320061130
-	},
-	[320061131] = {
-		speaker = "俱毗罗",
-		prefab_name = "10100ui_story",
-		content = "梵天老大捡到碎片修着玩的，怎么修的你也见过。可惜大多没有物归原主的机会了。",
-		id = 320061131
-	},
-	[320061132] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "好熟悉的感觉……",
-		id = 320061132
-	},
-	[320061133] = {
-		speaker = "俱毗罗",
-		prefab_name = "10100ui_story",
-		content = "对，约好给你们看的就是这个。难道是你适格的权钥？",
-		id = 320061133
-	},
-	[320061134] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奥西里斯怔怔地走向架在角落里的一把与冥渡有些相似的巨镰，我和俱毗罗站在她身后，都好奇地托着下巴。",
-		id = 320061134
-	},
-	[320061135] = {
-		speaker = "俱毗罗",
-		prefab_name = "10100ui_story",
-		content = "#{nickname}#，虽然这事大概跟我没关系，但能不能透露一下，这位奥西里斯妹妹有什么特殊的？为什么专门带她过来看这把权钥？",
-		id = 320061135
-	},
-	[320061136] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "要说特殊，她不是一个人，还有个很强大的……我也不太好定义到底是什么，寄宿在她的身体里。",
-		id = 320061136
-	},
-	[320061137] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "至于看权钥，我也只是接到这样的任务。上面没有解释太多。",
-		id = 320061137
-	},
-	[320061138] = {
-		speaker = "俱毗罗",
-		prefab_name = "10100ui_story",
-		content = "行吧，如果这东西跟她有缘分，你们就带走好了，放在这里也是明珠蒙尘……",
-		id = 320061138
-	},
-	[320061139] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "嗯，和我的……好像……",
-		id = 320061139
-	},
-	[320061140] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我看到奥西里斯闭上眼睛，手指触碰巨镰，聚精会神地顺着镰柄轻轻抚摸。",
-		id = 320061140
-	},
-	[320061141] = {
-		speaker = "",
-		prefab_name = "",
-		content = "堆满权钥的仓库，我的身边还站着两位、或者说三位修正者。从常识上讲，这样的环境不可能会有什么危险。",
-		id = 320061141
-	},
-	[320061142] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "（把这些权钥找到适格的修正者武装起来的话，和智骸的战斗也会更顺利吧。）",
-		id = 320061142
-	},
-	[320061143] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我将目光稍稍从奥西里斯身上挪开，靠着墙打算稍息一会儿。",
-		id = 320061143
-	},
-	[320061144] = {
-		speaker = "",
-		prefab_name = "",
-		content = "直到一股尖锐的电流突然将我刺痛，便携型弥弥尔提醒我危险就在附近。",
-		id = 320061144
-	},
-	[320061145] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "奥西里斯！离开那东西！",
-		id = 320061145
-	},
-	[320061146] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我用最快的速度找到了异常的源头，下一秒我就握住奥西里斯的手腕，尝试拖拽她离开那柄巨镰。",
-		id = 320061146
-	},
-	[320061147] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "别……碰我……",
-		id = 320061147
-	},
-	[320061148] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你是冥王？",
-		id = 320061148
-	},
-	[320061149] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我被推到一边，一眼望见那对狰狞的脸庞下猩红的瞳眸，大脑一边飞速运转的同时，已经做好了最坏的打算。",
-		id = 320061149
-	},
-	[320061150] = {
-		speaker = "俱毗罗",
-		prefab_name = "10100ui_story",
-		content = "怎么感觉她一副要杀人的表情？这是预期内的情况吗？",
-		id = 320061150
-	},
-	[320061151] = {
-		speaker = "冥王",
-		prefab_name = "1111ui_story",
-		content = "我是……冥王……别……吵！",
-		id = 320061151
-	},
-	[320061152] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……这次你得听我的！",
-		id = 320061152
-	},
-	[320061153] = {
-		speaker = "冥王",
-		prefab_name = "1111ui_story",
-		content = "你……以为……我……不想……吗……",
-		id = 320061153
-	},
-	[320061154] = {
-		speaker = "",
-		prefab_name = "",
-		content = "没有多想，我冲上前从她手中夺下那柄权钥，异样的情绪宛如蔓延的瘟疫，汹涌地进入脑海。",
-		id = 320061154
-	},
-	[320061155] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "啊啊啊啊啊啊——！",
-		id = 320061155
-	},
-	[320061156] = {
-		speaker = "",
-		prefab_name = "",
-		content = "思考已然变得万分艰难，脑海中的念头只剩下了最后一个，我咆哮着再次抓住冥王的胳膊，终于把她推倒在地上，用身体将涌向她的能量阻断。",
-		id = 320061156
-	},
-	[320061157] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "快出去！",
-		id = 320061157
-	},
-	[320061158] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "让……开……",
-		id = 320061158
-	},
-	[320061159] = {
-		speaker = "",
-		prefab_name = "",
-		content = "将冥王拉起，又把她向门外推搡了几步，我察觉到有什么东西从我面前飞了过去。",
-		id = 320061159
-	},
-	[320061160] = {
-		speaker = "俱毗罗",
-		prefab_name = "10100ui_story",
-		content = "喂……开玩笑的吧？",
-		id = 320061160
-	},
-	[320061161] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……",
-		id = 320061161
-	},
-	[320061162] = {
-		speaker = "",
-		prefab_name = "",
-		content = "旋转的利刃在我眼前拉出一线细微的闪光，速度快到我分辨不清这轨迹的首尾。",
-		id = 320061162
-	},
-	[320061163] = {
-		speaker = "",
-		prefab_name = "",
-		content = "然后夹杂着温热和冰冷的痛感开始从胸口扩散，我能感觉到一片金属抵在我的脊骨上。",
-		id = 320061163
-	},
-	[320061164] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奥西里斯冷冷看着我，双目一片猩红，但我已经没有力气去推测她的状态，只有求生的本能驱使着我用力抓住了她想要往外抽的刀刃。",
-		id = 320061164
-	},
-	[320061165] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "俱毗罗……她被……控制了……",
-		id = 320061165
-	},
-	[320061166] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "叛徒……死……",
-		id = 320061166
-	},
-	[320061167] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "冥王……停下……",
-		id = 320061167
-	},
-	[320061168] = {
-		speaker = "",
-		prefab_name = "",
-		content = "剧痛和失血导致的重压让我开始晕眩，正当我抗拒不了那股要抽出镰刀的力量时。奥西里斯忽然松开了手，镰刀的重量将我压倒在地，我的身体似乎比地面还要冰凉。",
-		id = 320061168
-	},
-	[320061169] = {
-		speaker = "",
-		prefab_name = "",
-		content = "恍惚间我看到一颗巨大的骰子将奥西里斯拍飞到外面的仓库，又看到青色的风暴将货架掀得七零八落。",
-		id = 320061169
-	},
-	[320061170] = {
-		speaker = "",
-		prefab_name = "",
-		content = "最后我听到了一声枪响，好像所有动静被一团青灰色的气团笼罩，周围的温度降至冰点，整座仓库连同我的意识一同随着风暴的平息陷入沉寂。",
-		id = 320061170
-	},
-	[320071001] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "嘶——",
-		id = 320071001
-	},
-	[320071002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "来源模糊但剧烈的痛感让我倒吸了一口冷气。我像是做噩梦被惊醒似的猛然坐起身，低头摸了摸自己的身体，完好无损，先前的痛感也像是幻觉一般。",
-		id = 320071002
-	},
-	[320071003] = {
-		speaker = "帕尔瓦蒂",
-		prefab_name = "1089ui_story",
-		content = "啊，醒了……",
-		id = 320071003
-	},
-	[320071004] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我循着声音茫然地抬头，看到坐在我旁边、全身裹着一条厚重毛毯的帕尔瓦蒂，还没来得及说话，怀里忽然一沉。",
-		id = 320071004
-	},
-	[320071005] = {
-		speaker = "",
-		prefab_name = "",
-		content = "少女侧脸贴在我的胸口，一言不发。",
-		id = 320071005
-	},
-	[320071006] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "薇儿……",
-		id = 320071006
 	}
 }

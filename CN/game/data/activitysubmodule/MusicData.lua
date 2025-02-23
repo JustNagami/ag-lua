@@ -19,6 +19,7 @@ local var_0_17 = {}
 local var_0_18 = {}
 local var_0_19 = false
 local var_0_20 = 0
+local var_0_21 = false
 
 function var_0_0.Init(arg_1_0)
 	var_0_1 = {}
@@ -37,6 +38,7 @@ function var_0_0.Init(arg_1_0)
 	var_0_17 = {}
 	var_0_18 = {}
 	var_0_20 = 0
+	var_0_21 = false
 end
 
 function var_0_0.InitMusicData(arg_2_0, arg_2_1)
@@ -79,10 +81,6 @@ function var_0_0.SetRewardState(arg_4_0, arg_4_1, arg_4_2)
 end
 
 function var_0_0.GetScore(arg_5_0, arg_5_1, arg_5_2)
-	if arg_5_2 == 3 then
-		arg_5_2 = 9
-	end
-
 	if var_0_1[arg_5_1] and var_0_1[arg_5_1][arg_5_2] then
 		return var_0_1[arg_5_1][arg_5_2].score
 	end
@@ -91,10 +89,6 @@ function var_0_0.GetScore(arg_5_0, arg_5_1, arg_5_2)
 end
 
 function var_0_0.GetIsComplete(arg_6_0, arg_6_1, arg_6_2)
-	if arg_6_2 == 3 then
-		arg_6_2 = 9
-	end
-
 	if var_0_1[arg_6_1] and var_0_1[arg_6_1][arg_6_2] then
 		return var_0_1[arg_6_1][arg_6_2].sign
 	end
@@ -475,6 +469,10 @@ function var_0_0.SetPlayKeyEffectSound(arg_43_0, arg_43_1)
 end
 
 function var_0_0.GetDifficultyIndex(arg_44_0, arg_44_1)
+	if var_0_16 == nil then
+		var_0_16 = {}
+	end
+
 	if not var_0_16[arg_44_1] then
 		var_0_16[arg_44_1] = getData("MusicSelectDiffcult", tostring(arg_44_1))
 	end
@@ -533,26 +531,60 @@ function var_0_0.GetAisacSet(arg_50_0, arg_50_1)
 	return var_50_0
 end
 
-function var_0_0.GetMusicViewPathList(arg_51_0, arg_51_1)
-	local var_51_0 = arg_51_0:GetMusicViewType(arg_51_1)
-
-	return MusicConst.MusicViewRoutesName[var_51_0]
+function var_0_0.GetNowMusicUINameList(arg_51_0)
+	return arg_51_0:GetMusicUINameList(var_0_20)
 end
 
-function var_0_0.GetMusicViewType(arg_52_0, arg_52_1)
-	local var_52_0
+function var_0_0.GetMusicUINameList(arg_52_0, arg_52_1)
+	local var_52_0 = arg_52_0:GetMusicViewType(arg_52_1)
 
-	if arg_52_0:GetLookBackState() then
-		var_52_0 = ActivityTools.GetActivityTheme(var_0_20)
+	return MusicConst.MusicViewUIName[var_52_0]
+end
+
+function var_0_0.GetMusicViewPathList(arg_53_0, arg_53_1, arg_53_2)
+	local var_53_0 = arg_53_0:GetMusicViewType(arg_53_1, arg_53_2)
+
+	return MusicConst.MusicViewRoutesName[var_53_0]
+end
+
+function var_0_0.GetMusicViewType(arg_54_0, arg_54_1, arg_54_2)
+	local var_54_0
+
+	if arg_54_0:GetLookBackState() and not arg_54_2 then
+		var_54_0 = ActivityTools.GetActivityTheme(var_0_20)
 	else
-		var_52_0 = ActivityTools.GetActivityTheme(arg_52_1)
+		var_54_0 = ActivityTools.GetActivityTheme(arg_54_1)
 	end
 
-	if var_52_0 == ActivityConst.THEME.ACTIVITY_2_0 then
+	if var_54_0 == ActivityConst.THEME.ACTIVITY_2_0 then
 		return MusicConst.MusicViewType.Enternal
-	else
+	elseif var_54_0 == ActivityConst.THEME.VOLUME_DOWN then
+		return MusicConst.MusicViewType.Volume
+	elseif var_54_0 == ActivityConst.THEME.ACTIVITY_2_10 then
 		return MusicConst.MusicViewType.V210
+	else
+		return MusicConst.MusicViewType.Resident
 	end
+end
+
+function var_0_0.GetMusicdifficultLab(arg_55_0, arg_55_1)
+	if arg_55_1 == 1 then
+		return GetTips("ACTIVITY_MUSIC_LEVEL_1")
+	elseif arg_55_1 == 2 then
+		return GetTips("ACTIVITY_MUSIC_LEVEL_2")
+	elseif arg_55_1 == 9 then
+		return GetTips("ACTIVITY_MUSIC_LEVEL_3")
+	else
+		return GetTips("ACTIVITY_MUSIC_LEVEL_4")
+	end
+end
+
+function var_0_0.SetSpecialEffectState(arg_56_0, arg_56_1)
+	var_0_21 = arg_56_1
+end
+
+function var_0_0.GetSpecialEffectState(arg_57_0)
+	return var_0_21
 end
 
 return var_0_0

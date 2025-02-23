@@ -167,7 +167,8 @@
 			3001330,
 			3001337,
 			3001338,
-			3001344
+			3001344,
+			3001353
 		},
 		cost_once = {
 			19,
@@ -6178,7 +6179,11 @@
 			3001340,
 			3001341,
 			3001342,
-			3001343
+			3001343,
+			3001349,
+			3001350,
+			3001351,
+			3001352
 		},
 		cost_once = {
 			38,
@@ -6235,7 +6240,256 @@
 		},
 		recharge_shop_list = {
 			3001345,
-			3001346
+			3001346,
+			3001354,
+			3001355
+		},
+		cost_once = {
+			5,
+			1
+		},
+		cost_ten_times = {
+			5,
+			10
+		},
+		cost_once_activity_material = {},
+		cost_ten_times_activity_material = {}
+	},
+	[3110601] = {
+		optional_lists = "",
+		pool_type = 6,
+		optional_detail = "",
+		pool_change = 0,
+		optional_lists_a = "",
+		name = "九州巡诫",
+		detail_note = "",
+		draw_pool_desc = "DRAW_POOL_DESC_TEMP_9",
+		pool_show_type = 6,
+		order = 1,
+		pool_selected_type = 3,
+		exchange_id = 6000003,
+		optional_lists_poolId = "",
+		discount = 100,
+		id = 3110601,
+		unoption_up_items = {
+			{
+				1012
+			},
+			{}
+		},
+		excluded_group = {
+			{},
+			{}
+		},
+		recharge_shop_list = {
+			3001349,
+			3001350,
+			3001351,
+			3001352
+		},
+		cost_once = {
+			38,
+			1
+		},
+		cost_ten_times = {
+			38,
+			10
+		},
+		cost_once_activity_material = {
+			62,
+			1
+		},
+		cost_ten_times_activity_material = {
+			62,
+			10
+		}
+	},
+	[3110301] = {
+		optional_lists = "",
+		pool_type = 3,
+		optional_detail = "",
+		pool_change = 0,
+		optional_lists_a = "",
+		name = "九州巡诫",
+		detail_note = "",
+		draw_pool_desc = "DRAW_POOL_DESC_TEMP_8",
+		pool_show_type = 3,
+		order = 1,
+		pool_selected_type = 1,
+		exchange_id = 6000003,
+		optional_lists_poolId = "",
+		discount = 100,
+		id = 3110301,
+		unoption_up_items = {
+			{
+				1012
+			},
+			{}
+		},
+		excluded_group = {
+			{},
+			{}
+		},
+		recharge_shop_list = {
+			3001349,
+			3001350,
+			3001351,
+			3001352
+		},
+		cost_once = {
+			38,
+			1
+		},
+		cost_ten_times = {
+			38,
+			10
+		},
+		cost_once_activity_material = {
+			62,
+			1
+		},
+		cost_ten_times_activity_material = {
+			62,
+			10
+		}
+	},
+	[3110302] = {
+		optional_lists = "",
+		pool_type = 3,
+		optional_detail = "",
+		pool_change = 0,
+		optional_lists_a = "",
+		name = "破阵乐",
+		detail_note = "",
+		draw_pool_desc = "DRAW_POOL_DESC_TEMP_8",
+		pool_show_type = 3,
+		order = 2,
+		pool_selected_type = 1,
+		exchange_id = 6000003,
+		optional_lists_poolId = "",
+		discount = 100,
+		id = 3110302,
+		unoption_up_items = {
+			{
+				1060
+			},
+			{}
+		},
+		excluded_group = {
+			{},
+			{}
+		},
+		recharge_shop_list = {
+			3001349,
+			3001350,
+			3001351,
+			3001352
+		},
+		cost_once = {
+			38,
+			1
+		},
+		cost_ten_times = {
+			38,
+			10
+		},
+		cost_once_activity_material = {
+			62,
+			1
+		},
+		cost_ten_times_activity_material = {
+			62,
+			10
+		}
+	},
+	[3110303] = {
+		optional_lists = "",
+		pool_type = 3,
+		optional_detail = "",
+		pool_change = 0,
+		optional_lists_a = "",
+		name = "丹焰还真",
+		detail_note = "",
+		draw_pool_desc = "DRAW_POOL_DESC_TEMP_8",
+		pool_show_type = 3,
+		order = 3,
+		pool_selected_type = 1,
+		exchange_id = 6000003,
+		optional_lists_poolId = "",
+		discount = 100,
+		id = 3110303,
+		unoption_up_items = {
+			{
+				1075
+			},
+			{}
+		},
+		excluded_group = {
+			{},
+			{}
+		},
+		recharge_shop_list = {
+			3001349,
+			3001350,
+			3001351,
+			3001352
+		},
+		cost_once = {
+			38,
+			1
+		},
+		cost_ten_times = {
+			38,
+			10
+		},
+		cost_once_activity_material = {
+			62,
+			1
+		},
+		cost_ten_times_activity_material = {
+			62,
+			10
+		}
+	},
+	[3110101] = {
+		pool_type = 1,
+		pool_change = 0,
+		optional_lists_a = "",
+		name = "选择修正者",
+		detail_note = "",
+		draw_pool_desc = "DRAW_POOL_DESC_TEMP_11",
+		pool_show_type = 1,
+		order = 1,
+		pool_selected_type = 2,
+		exchange_id = 6000001,
+		discount = 100,
+		id = 3110101,
+		unoption_up_items = {
+			{},
+			{}
+		},
+		optional_detail = {
+			1070,
+			1071,
+			1028
+		},
+		optional_lists_poolId = {
+			1070,
+			1071,
+			1028
+		},
+		optional_lists = {
+			1070,
+			1071,
+			1028
+		},
+		excluded_group = {
+			{},
+			{}
+		},
+		recharge_shop_list = {
+			3001354,
+			3001355
 		},
 		cost_once = {
 			5,
@@ -6286,6 +6540,9 @@
 		3100601,
 		3100301,
 		3100101,
+		3110601,
+		3110301,
+		3110101,
 		10003,
 		10013,
 		10023,
@@ -6324,6 +6581,7 @@
 		3080302,
 		3090302,
 		3100302,
+		3110302,
 		10001,
 		10011,
 		10021,
@@ -6360,6 +6618,7 @@
 		3080303,
 		3090303,
 		3100303,
+		3110303,
 		10121,
 		10131,
 		10181,

@@ -105,6 +105,14 @@
 
 			if var_21_0 == "qworldMainHome" then
 				gameContext:GetOpenPageHandler(var_21_0):EnableInteraction(arg_21_0)
+			else
+				local var_21_1 = ReduxFactory.GetInstance().reduxViewDic_.qworldMainHome
+
+				if var_21_1 then
+					var_21_1:EnableInteraction(arg_21_0)
+				else
+					print("未找到箱庭主界面")
+				end
 			end
 		end
 

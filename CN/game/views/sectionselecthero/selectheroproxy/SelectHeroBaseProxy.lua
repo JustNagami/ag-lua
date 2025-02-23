@@ -655,19 +655,26 @@ function var_0_0.GetMimirChipList(arg_79_0)
 	return arg_79_0.chipList
 end
 
-function var_0_0.InsertMimirChip(arg_80_0, arg_80_1)
-	arg_80_0:CustomInsertMimirChip(arg_80_1)
-	arg_80_0:GetMimirChipList()
+function var_0_0.GetMimirData(arg_80_0)
+	local var_80_0 = arg_80_0:GetMimirID()
+	local var_80_1 = arg_80_0:GetMimirChipList()
+
+	return var_80_0, var_80_1
 end
 
-function var_0_0.RemoveMimirChip(arg_81_0, arg_81_1)
-	arg_81_0:CustomRemoveMimirChip(arg_81_1)
+function var_0_0.InsertMimirChip(arg_81_0, arg_81_1)
+	arg_81_0:CustomInsertMimirChip(arg_81_1)
 	arg_81_0:GetMimirChipList()
 end
 
-function var_0_0.SetMimirChipList(arg_82_0, arg_82_1)
-	arg_82_0:CustomSetMimirChipList(arg_82_1)
+function var_0_0.RemoveMimirChip(arg_82_0, arg_82_1)
+	arg_82_0:CustomRemoveMimirChip(arg_82_1)
 	arg_82_0:GetMimirChipList()
+end
+
+function var_0_0.SetMimirChipList(arg_83_0, arg_83_1)
+	arg_83_0:CustomSetMimirChipList(arg_83_1)
+	arg_83_0:GetMimirChipList()
 end
 
 return var_0_0

@@ -632,6 +632,15 @@
 		},
 		spec_char = {}
 	},
+	{
+		param = "",
+		id = 66,
+		flow_name = "FlowScript/Equips/Equip66.asset",
+		desc = {
+			600000066
+		},
+		spec_char = {}
+	},
 	[101] = {
 		param = "",
 		id = 101,
@@ -894,6 +903,7 @@
 		63,
 		64,
 		65,
+		66,
 		101,
 		103,
 		104,

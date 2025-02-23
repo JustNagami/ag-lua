@@ -1380,7 +1380,7 @@
 		default_dialogue = 0
 	},
 	[9060001] = {
-		hud = 0,
+		hud = 312791,
 		name = "陆吾",
 		hud_display = 1,
 		generate_effect = "",
@@ -1540,7 +1540,7 @@
 		default_dialogue = 907401
 	},
 	[9075001] = {
-		hud = 0,
+		hud = 311481,
 		name = "陵光",
 		hud_display = 1,
 		generate_effect = "",

@@ -2,6 +2,8 @@
 local var_0_1 = false
 
 function var_0_0.Init()
+	ActivityQuizTools.alreadyEnterQuizActivityThisLogin = false
+
 	if var_0_1 then
 		return
 	end
@@ -66,7 +68,8 @@ function var_0_0.InitRedPointKey(arg_6_0)
 
 	manager.redPoint:addGroup(RedPointConst.ACTIVITY_TASK .. "_" .. var_6_1, var_6_0)
 	manager.redPoint:addGroup(var_6_3, {
-		RedPointConst.ACTIVITY_TASK .. "_" .. var_6_1
+		RedPointConst.ACTIVITY_TASK .. "_" .. var_6_1,
+		RedPointConst.ACTIVITY_QUIZ_CHALLENGE_AVAILABLE .. "_" .. var_6_1
 	})
 	ActivityQuizAction.RefreshRedPoint(arg_6_0)
 end
@@ -144,37 +147,49 @@ function var_0_0.OnPushPosition(arg_16_0, arg_16_1)
 	end
 end
 
-function var_0_0.RefreshRedPoint(arg_17_0)
-	local var_17_0 = ActivityData:GetActivityData(arg_17_0)
+function var_0_0.RefreshTaskAvailableRedPoint(arg_17_0, arg_17_1)
+	local var_17_0 = RedPointConst.ACTIVITY_QUIZ_CHALLENGE_AVAILABLE .. "_" .. arg_17_0
+	local var_17_1 = TaskTools:GetActivityTaskList(arg_17_0)
+	local var_17_2 = 0
 
-	if not var_17_0 or not var_17_0:IsActivitying() then
+	if arg_17_1 then
+		for iter_17_0, iter_17_1 in pairs(var_17_1) do
+			if iter_17_1.progress < AssignmentCfg[iter_17_0].need then
+				var_17_2 = var_17_2 + 1
+			end
+		end
+	end
+
+	manager.redPoint:setTip(var_17_0, var_17_2)
+end
+
+function var_0_0.RefreshRedPoint(arg_18_0)
+	local var_18_0 = ActivityData:GetActivityData(arg_18_0)
+
+	if not var_18_0 or not var_18_0:IsActivitying() then
 		return
 	end
 
-	local var_17_1 = getData("activity_quiz_enter", tostring(arg_17_0)) or 0
+	ActivityTools.ClearActivityTimer(arg_18_0)
+	ActivityTools.CreateActivityTimer(arg_18_0, function()
+		local var_19_0 = ActivityQuizTools.AlreadyEnterTodayLocal(arg_18_0)
+		local var_19_1 = ActivityTools.GetActivityStatus(arg_18_0)
+		local var_19_2 = ActivityQuizTools.GetTaskActivityID(arg_18_0)
 
-	if manager.time:IsToday(var_17_1) then
-		return
-	end
-
-	ActivityTools.ClearActivityTimer(arg_17_0)
-	ActivityTools.CreateActivityTimer(arg_17_0, function()
-		local var_18_0 = getData("activity_quiz_enter", tostring(arg_17_0)) or 0
-		local var_18_1 = manager.time:IsToday(var_18_0)
-
-		if ActivityTools.GetActivityStatus(arg_17_0) == ActivityConst.ACTIVITY_STATE.OVER then
-			return
-		end
-
-		if var_18_1 then
-			ActivityTools.ClearActivityTimer(arg_17_0)
+		if var_19_1 == ActivityConst.ACTIVITY_STATE.OVER then
+			ActivityTools.ClearActivityTimer(arg_18_0)
+			var_0_0.RefreshTaskAvailableRedPoint(var_19_2, false)
 
 			return
 		end
 
-		if ActivityQuizTools.IsInOpenTimeSpan(arg_17_0) and gameContext:GetLastOpenPage() == "qworldMainHome" then
-			ActivityQuizTools.HintActivityOpen(arg_17_0)
+		local var_19_3 = ActivityQuizTools.IsInOpenTimeSpan(arg_18_0)
+
+		if var_19_3 and not var_19_0 and gameContext:GetLastOpenPage() == "qworldMainHome" then
+			ActivityQuizTools.HintActivityOpen(arg_18_0)
 		end
+
+		var_0_0.RefreshTaskAvailableRedPoint(var_19_2, var_19_3 and not ActivityQuizTools.AlreadyEnterThisLogin())
 	end)
 end
 

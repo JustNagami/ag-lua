@@ -241,6 +241,28 @@
 		plot_title = {},
 		plot_id = {}
 	},
+	[102802] = {
+		display_model_id = "102802ui_display",
+		name = "运动时间",
+		portrait = 2110283,
+		video_url = "",
+		hero = 1028,
+		gift = "",
+		desc = "托尔在训练室时会穿着的运动服，使用了快干材质的面料，确保了她在高强度运动中也可以保持干爽。宽松的剪裁确保了穿着的舒适，大大增强了运动时的便利。",
+		skin_level = 0,
+		ui_has_timeline = 1,
+		home_weapon_show = 0,
+		ui_modelId = "102802ui_tpose",
+		picture_id = "102802",
+		weapon_modelId = "1028ui_weapon",
+		display_type = 1,
+		id = 102802,
+		modelId = "102802ui_light",
+		main_model_id = "102802ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
 	[102701] = {
 		display_model_id = "102701ui_display",
 		name = "返校日",
@@ -1157,7 +1179,7 @@
 		ui_modelId = "128402ui_tpose",
 		picture_id = "128402",
 		weapon_modelId = "128402ui_weapon",
-		display_type = 2,
+		display_type = 1,
 		id = 128402,
 		modelId = "128402ui_light",
 		main_model_id = "128402ui_main",
@@ -2617,6 +2639,28 @@
 		plot_title = {},
 		plot_id = {}
 	},
+	[107503] = {
+		display_model_id = "107503ui_display",
+		name = "试春衣",
+		portrait = 2110754,
+		video_url = "",
+		hero = 1075,
+		gift = "",
+		desc = "深心未忍轻分付，回头一笑，花间归去，只恐被花知。",
+		skin_level = 1,
+		ui_has_timeline = 1,
+		home_weapon_show = 0,
+		ui_modelId = "107503ui_tpose",
+		picture_id = "107503",
+		weapon_modelId = "107503ui_weapon",
+		display_type = 1,
+		id = 107503,
+		modelId = "107503ui_light",
+		main_model_id = "107503ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
 	[1072] = {
 		display_model_id = "1072ui_display",
 		name = "百解·源",
@@ -3093,7 +3137,7 @@
 		ui_modelId = "113301ui_tpose",
 		picture_id = "113301",
 		weapon_modelId = "1133ui_weapon",
-		display_type = 2,
+		display_type = 1,
 		id = 113301,
 		modelId = "113301ui_light",
 		main_model_id = "113301ui_main",
@@ -3141,6 +3185,50 @@
 		id = 103401,
 		modelId = "103401ui_light",
 		main_model_id = "103401ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
+	[1012] = {
+		display_model_id = "1012ui_display",
+		name = "天诫·源",
+		portrait = 2110121,
+		video_url = "",
+		hero = 1012,
+		gift = "",
+		desc = "综合考量修正者的能力和个人需求设计定制的作战服，在不影响体感的基础上，能保证作战能力的全部发挥。",
+		skin_level = 0,
+		ui_has_timeline = 0,
+		home_weapon_show = 0,
+		ui_modelId = "1012ui_tpose",
+		picture_id = "1012",
+		weapon_modelId = "1012ui_weapon",
+		display_type = 1,
+		id = 1012,
+		modelId = "1012ui_light",
+		main_model_id = "1012ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
+	[101201] = {
+		display_model_id = "101201ui_display",
+		name = "倚新妆",
+		portrait = 2110122,
+		video_url = "",
+		hero = 1012,
+		gift = "",
+		desc = "在导购小姐赞不绝口的力荐中换上，又在满店的赞不绝口中结了账，等到离开店门白泽才开始思索：要在什么场合穿这件衣服呢？",
+		skin_level = 0,
+		ui_has_timeline = 1,
+		home_weapon_show = 0,
+		ui_modelId = "101201ui_tpose",
+		picture_id = "101201",
+		weapon_modelId = "1012ui_weapon",
+		display_type = 1,
+		id = 101201,
+		modelId = "101201ui_light",
+		main_model_id = "101201ui_main",
 		unlock_id_list = {},
 		plot_title = {},
 		plot_id = {}
@@ -5969,6 +6057,10 @@
 			6056,
 			605601
 		},
+		[1012] = {
+			1012,
+			101201
+		},
 		[1034] = {
 			1034,
 			103401
@@ -6013,7 +6105,8 @@
 		[1075] = {
 			1075,
 			107501,
-			107502
+			107502,
+			107503
 		},
 		[1074] = {
 			1074,
@@ -6230,6 +6323,7 @@
 		},
 		[1028] = {
 			1028,
+			102802,
 			102801
 		},
 		[1027] = {
@@ -6270,6 +6364,7 @@
 		1026,
 		1027,
 		1028,
+		102802,
 		102701,
 		1032,
 		103203,
@@ -6378,6 +6473,7 @@
 		1075,
 		107501,
 		107502,
+		107503,
 		1072,
 		1076,
 		107601,
@@ -6401,6 +6497,8 @@
 		113301,
 		1034,
 		103401,
+		1012,
+		101201,
 		6056,
 		605601,
 		6087,

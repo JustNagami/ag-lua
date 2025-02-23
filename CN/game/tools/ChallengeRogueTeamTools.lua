@@ -1042,8 +1042,12 @@ function var_0_0.HideBarList(arg_80_0)
 	manager.rogueTeamInGameInfoBox:HideBox()
 end
 
-function var_0_0.RegistWindowBarClick()
+function var_0_0.RegistWindowBarClick(arg_81_0)
 	manager.windowBar:RegistBackCallBack(function()
+		if arg_81_0 and not arg_81_0() then
+			return
+		end
+
 		ShowMessageBox({
 			title = GetTips("PROMPT"),
 			content = GetTips("CHALLENGE_ROGUE_EXIT_GAME"),

@@ -120,6 +120,7 @@ function var_0_0.OnEnter(arg_21_0)
 	manager.redPoint:bindUIandKey(arg_21_0.taskBtn_.transform, RedPointConst.IDOL_TRAINEE_DAY_AND_WEEK_TASK)
 	manager.redPoint:bindUIandKey(arg_21_0.navigationBtn_.transform, RedPointConst.DORM_NAVI)
 	BackHomeCricketBattleData:InvokeDanceBackCB()
+	DormRedPointTools:RefreshIlluDanceNew()
 end
 
 function var_0_0.OnTop(arg_22_0)

@@ -127,7 +127,9 @@
 		default_music = 0,
 		impact = {},
 		scene_tag = {},
-		scene_setting = {},
+		scene_setting = {
+			1
+		},
 		obtain_way = {}
 	},
 	[6006] = {
@@ -165,7 +167,9 @@
 		default_music = 0,
 		impact = {},
 		scene_tag = {},
-		scene_setting = {},
+		scene_setting = {
+			1
+		},
 		obtain_way = {}
 	},
 	[6008] = {
@@ -241,7 +245,9 @@
 		default_music = 0,
 		impact = {},
 		scene_tag = {},
-		scene_setting = {},
+		scene_setting = {
+			1
+		},
 		obtain_way = {}
 	},
 	[6012] = {
@@ -260,7 +266,9 @@
 		default_music = 0,
 		impact = {},
 		scene_tag = {},
-		scene_setting = {},
+		scene_setting = {
+			1
+		},
 		obtain_way = {}
 	},
 	[6013] = {
@@ -279,7 +287,9 @@
 		default_music = 0,
 		impact = {},
 		scene_tag = {},
-		scene_setting = {},
+		scene_setting = {
+			1
+		},
 		obtain_way = {}
 	},
 	[6014] = {
@@ -298,7 +308,9 @@
 		default_music = 0,
 		impact = {},
 		scene_tag = {},
-		scene_setting = {},
+		scene_setting = {
+			1
+		},
 		obtain_way = {}
 	},
 	[6015] = {
@@ -317,7 +329,9 @@
 		default_music = 0,
 		impact = {},
 		scene_tag = {},
-		scene_setting = {},
+		scene_setting = {
+			1
+		},
 		obtain_way = {}
 	},
 	[6016] = {
@@ -413,7 +427,9 @@
 		default_music = 0,
 		impact = {},
 		scene_tag = {},
-		scene_setting = {},
+		scene_setting = {
+			1
+		},
 		obtain_way = {}
 	},
 	[6022] = {
@@ -433,6 +449,7 @@
 		impact = {},
 		scene_tag = {},
 		scene_setting = {
+			1,
 			3
 		},
 		obtain_way = {}
@@ -453,7 +470,9 @@
 		default_music = 0,
 		impact = {},
 		scene_tag = {},
-		scene_setting = {},
+		scene_setting = {
+			1
+		},
 		obtain_way = {}
 	},
 	[6024] = {
@@ -472,7 +491,9 @@
 		default_music = 0,
 		impact = {},
 		scene_tag = {},
-		scene_setting = {},
+		scene_setting = {
+			1
+		},
 		obtain_way = {}
 	},
 	[6025] = {
@@ -491,7 +512,9 @@
 		default_music = 0,
 		impact = {},
 		scene_tag = {},
-		scene_setting = {},
+		scene_setting = {
+			1
+		},
 		obtain_way = {}
 	},
 	[6026] = {
@@ -510,7 +533,9 @@
 		default_music = 0,
 		impact = {},
 		scene_tag = {},
-		scene_setting = {},
+		scene_setting = {
+			1
+		},
 		obtain_way = {}
 	},
 	[6027] = {
@@ -529,7 +554,9 @@
 		default_music = 0,
 		impact = {},
 		scene_tag = {},
-		scene_setting = {},
+		scene_setting = {
+			1
+		},
 		obtain_way = {}
 	},
 	[6028] = {
@@ -548,7 +575,9 @@
 		default_music = 0,
 		impact = {},
 		scene_tag = {},
-		scene_setting = {},
+		scene_setting = {
+			1
+		},
 		obtain_way = {}
 	},
 	[6029] = {
@@ -567,7 +596,30 @@
 		default_music = 0,
 		impact = {},
 		scene_tag = {},
-		scene_setting = {},
+		scene_setting = {
+			1
+		},
+		obtain_way = {}
+	},
+	[6031] = {
+		action_suffix = "",
+		title = "不思量",
+		desc = "阶前细雨，廊边红袖，透过半掩的扇子，从她流转的眸光中，你似乎看见了自己的倒影。",
+		obtain_word = "",
+		scene_trial = 0,
+		limit_display = 0,
+		prefix_dlc = "",
+		light_effect = "",
+		unlock_description = "",
+		prefix = "X325",
+		light_effect_delay = "",
+		id = 6031,
+		default_music = 0,
+		impact = {},
+		scene_tag = {},
+		scene_setting = {
+			1
+		},
 		obtain_way = {}
 	},
 	[6100] = {
@@ -619,6 +671,7 @@
 		6027,
 		6028,
 		6029,
+		6031,
 		6100
 	}
 }

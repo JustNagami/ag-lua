@@ -139,7 +139,7 @@ function var_0_0.GetShouldLoadSceneName(arg_9_0, arg_9_1)
 	elseif arg_9_1 == "homePreview" then
 		var_9_1 = arg_9_0:GetPreviewHomeShouldLoadSceneName()
 		var_9_0 = "Levels/" .. var_9_1
-	elseif arg_9_1 == "sectionSelectHero" or arg_9_1 == "mythicSectionSelectHero" or arg_9_1 == "challengeRogueTeamSectionSelectHero" or arg_9_1 == "cooperationSectionSelectHero" or arg_9_1 == "summerWaterSectionSelectHero" then
+	elseif arg_9_1 == "sectionSelectHero" or arg_9_1 == "mythicSectionSelectHero" or arg_9_1 == "challengeRogueTeamSectionSelectHero" or arg_9_1 == "cooperationSectionSelectHero" or arg_9_1 == "summerWaterSectionSelectHero" or arg_9_1 == "sequentialBattleSectionSelectHero" then
 		var_9_1 = "X104"
 		var_9_0 = "Levels/X104"
 	elseif arg_9_1 == "furniturePreview" then
@@ -162,7 +162,7 @@ function var_0_0.GetShouldLoadSceneNameID(arg_10_0, arg_10_1)
 		return (HomeSceneSettingData:GetCurScene())
 	elseif arg_10_1 == "homePreview" then
 		return (HomeSceneSettingData:GetPreviewScene())
-	elseif arg_10_1 == "sectionSelectHero" or arg_10_1 == "mythicSectionSelectHero" or arg_10_1 == "challengeRogueTeamSectionSelectHero" or arg_10_1 == "cooperationSectionSelectHero" or arg_10_1 == "summerWaterSectionSelectHero" then
+	elseif arg_10_1 == "sectionSelectHero" or arg_10_1 == "mythicSectionSelectHero" or arg_10_1 == "challengeRogueTeamSectionSelectHero" or arg_10_1 == "cooperationSectionSelectHero" or arg_10_1 == "summerWaterSectionSelectHero" or arg_10_1 == "sequentialBattleSectionSelectHero" then
 		return -1
 	elseif arg_10_1 == "furniturePreview" or arg_10_1 == "furniturePreviewWithEntity" then
 		return -1
@@ -180,7 +180,8 @@ function var_0_0.DealCommonScene(arg_11_0, arg_11_1)
 		"clubBoss",
 		"sectionSelectHero",
 		"mythicSectionSelectHero",
-		"challengeRogueTeamSectionSelectHero"
+		"challengeRogueTeamSectionSelectHero",
+		"sequentialBattleSectionSelectHero"
 	}
 
 	if not table.indexof(var_11_0, arg_11_1) then
@@ -204,7 +205,8 @@ function var_0_0.IsNeedLoadScene(arg_12_0, arg_12_1, arg_12_2)
 		"clubBoss",
 		"sectionSelectHero",
 		"mythicSectionSelectHero",
-		"challengeRogueTeamSectionSelectHero"
+		"challengeRogueTeamSectionSelectHero",
+		"sequentialBattleSectionSelectHero"
 	}
 
 	if not table.indexof(var_12_0, arg_12_1) then

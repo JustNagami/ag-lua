@@ -99,13 +99,50 @@ end
 
 function var_0_0.InitGuide(arg_5_0)
 	if PlayerPrefs.GetInt("OpenGuide", 0) == 1 then
+		local var_5_0 = PlayerPrefs.GetString("Editor_Test_Guide_List", "")
+
+		if var_5_0 ~= "" then
+			local var_5_1, var_5_2 = pcall(load, "return " .. var_5_0)
+
+			if not var_5_1 then
+				return
+			end
+
+			local var_5_3 = var_5_2
+
+			if var_5_3 == nil then
+				return
+			end
+
+			local var_5_4, var_5_5 = pcall(var_5_3)
+
+			if not var_5_4 then
+				return
+			end
+
+			if type(var_5_5) ~= "table" then
+				return
+			end
+
+			arg_5_0._guides = {}
+
+			for iter_5_0, iter_5_1 in ipairs(var_5_5) do
+				arg_5_0:AddGuide(iter_5_1)
+			end
+
+			if table.length(arg_5_0._guides) > 0 then
+				arg_5_0:Process()
+				arg_5_0._timer:Start()
+			end
+		end
+
 		return true
 	end
 
 	arg_5_0._guides = {}
 
-	for iter_5_0, iter_5_1 in ipairs(GuideBaseCfg.all) do
-		arg_5_0:AddGuide(iter_5_1)
+	for iter_5_2, iter_5_3 in ipairs(GuideBaseCfg.all) do
+		arg_5_0:AddGuide(iter_5_3)
 	end
 
 	if table.length(arg_5_0._guides) > 0 then

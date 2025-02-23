@@ -371,9 +371,12 @@
 		reprint_field = "",
 		prefab_path = "Widget/System/Activity_Resident/Activity_MainUI",
 		theme = 31,
-		day_list = {},
+		day_list = {
+			35
+		},
 		icon_list = {
-			"but_Internal_soundofrain_1"
+			"but_Internal_soundofrain_1",
+			"but_Internal_soundofrain_2"
 		},
 		jump_system = {
 			16001,

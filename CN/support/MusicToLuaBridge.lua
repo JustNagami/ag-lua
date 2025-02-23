@@ -393,16 +393,20 @@ function var_0_0.OnMusicOver()
 	MusicAction.QueryCompelet(var_9_1, var_9_0)
 end
 
+function var_0_0.OnSpecialEffectTriggerEvent(arg_10_0)
+	manager.notify:CallUpdateFunc(MUSIC_SPECIAL_EFFECT_TRIGGER, arg_10_0)
+end
+
 function var_0_0.OnMusicActiveExit()
 	MusicAction.GoToMusicMain()
 end
 
 function var_0_0.OnMusicPause()
-	local var_11_0 = MusicData:GetGameId()
-	local var_11_1 = ActivityMusicCfg[var_11_0].activity_id
-	local var_11_2 = MusicData:GetMusicViewPathList(var_11_1)
+	local var_12_0 = MusicData:GetGameId()
+	local var_12_1 = ActivityMusicCfg[var_12_0].activity_id
+	local var_12_2 = MusicData:GetMusicViewPathList(var_12_1)
 
-	JumpTools.OpenPageByJump(var_11_2.musicStop)
+	JumpTools.OpenPageByJump(var_12_2.musicStop)
 end
 
 return var_0_0

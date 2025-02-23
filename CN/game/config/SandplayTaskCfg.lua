@@ -481,9 +481,9 @@
 	},
 	[10109001] = {
 		task_blueprint_sign = 0,
-		task_target = "参与「醒狮传说」玩法，并成功通关「普通关卡5」",
+		task_target = "在「醒狮传说」中成功通关「研习Ⅴ」",
 		task_item = "",
-		task_tag = "参与「醒狮传说」玩法，并成功通关「普通关卡5」",
+		task_tag = "在「醒狮传说」中成功通关「研习Ⅴ」",
 		condition = 51202,
 		main_task_id = 10109,
 		need = 1,
@@ -564,9 +564,9 @@
 	},
 	[10114001] = {
 		task_blueprint_sign = 0,
-		task_target = "参与「浮光绎曲」玩法，完成「Wordless Song for a Starry Night」普通难度1次",
+		task_target = "在「浮光绎曲」中完成 Wordless Song for a Starry Night 普通难度1次",
 		task_item = "",
-		task_tag = "参与「浮光绎曲」玩法，完成「Wordless Song for a Starry Night」普通难度1次",
+		task_tag = "在「浮光绎曲」中完成 Wordless Song for a Starry Night 普通难度1次",
 		condition = 50103,
 		main_task_id = 10114,
 		need = 1,

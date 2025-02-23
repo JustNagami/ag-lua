@@ -394,6 +394,7 @@ function var_0_0.JumpToPage2(arg_5_0)
 			return nil
 		else
 			JumpTools.OpenPageByJump("/dormChooseRoomView")
+			BackHomeDataManager:EnterBackHomeSystem()
 
 			return
 		end

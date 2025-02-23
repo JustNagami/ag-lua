@@ -284,6 +284,11 @@
 		name = "story_1041701.usm",
 		has_non_native = 0
 	},
+	["story_1041714.usm"] = {
+		has_tracks = 1,
+		name = "story_1041714.usm",
+		has_non_native = 0
+	},
 	["Farskyyard.usm"] = {
 		has_tracks = 0,
 		name = "Farskyyard.usm",
@@ -369,14 +374,19 @@
 		name = "pool_1248.usm",
 		has_non_native = 0
 	},
-	["Pool_1133.usm"] = {
+	["pool_1133.usm"] = {
 		has_tracks = 0,
-		name = "Pool_1133.usm",
+		name = "pool_1133.usm",
 		has_non_native = 0
 	},
-	["Pool_1034.usm"] = {
+	["pool_1034.usm"] = {
 		has_tracks = 0,
-		name = "Pool_1034.usm",
+		name = "pool_1034.usm",
+		has_non_native = 0
+	},
+	["pool_1012.usm"] = {
+		has_tracks = 0,
+		name = "pool_1012.usm",
 		has_non_native = 0
 	},
 	["1070_start.usm"] = {
@@ -754,6 +764,16 @@
 		name = "1034_loop.usm",
 		has_non_native = 0
 	},
+	["1012_start.usm"] = {
+		has_tracks = 0,
+		name = "1012_start.usm",
+		has_non_native = 0
+	},
+	["1012_loop.usm"] = {
+		has_tracks = 0,
+		name = "1012_loop.usm",
+		has_non_native = 0
+	},
 	["1076_skin02_start.usm"] = {
 		has_tracks = 0,
 		name = "1076_skin02_start.usm",
@@ -882,6 +902,11 @@
 	["101502_login.usm"] = {
 		has_tracks = 1,
 		name = "101502_login.usm",
+		has_non_native = 0
+	},
+	["107503_login.usm"] = {
+		has_tracks = 1,
+		name = "107503_login.usm",
 		has_non_native = 0
 	}
 }

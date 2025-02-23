@@ -98,6 +98,8 @@ function var_0_0.AddUIListeners(arg_5_0)
 end
 
 function var_0_0.OnEnter(arg_12_0)
+	manager.redPoint:setTip(RedPointConst.ACTIVITY_AUTO_COOK_NEW_LEVLE .. ActivityConst.AUTO_COOK, 0)
+	manager.redPoint:setTip(RedPointConst.ACTIVITY_AUTO_COOK_GOLDMAX .. ActivityConst.AUTO_COOK, 0)
 	arg_12_0.exitAnimator_:Play("New State", 0, 0)
 
 	arg_12_0.activityID_ = ActivityConst.AUTO_COOK

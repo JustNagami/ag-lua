@@ -1760,6 +1760,83 @@
 			20
 		}
 	},
+	[10120101] = {
+		condition = 0,
+		effect_type = 3,
+		con_param = "",
+		round = 3,
+		probability = 100,
+		trigger_time = 1,
+		id = 10120101,
+		effect_icon = "IdolTrainee_icon_skill_007",
+		valid_probability = 100,
+		object = 1,
+		unique = {
+			5
+		}
+	},
+	[10120102] = {
+		condition = 0,
+		effect_type = 7,
+		con_param = "",
+		round = 3,
+		probability = 100,
+		trigger_time = 1,
+		id = 10120102,
+		effect_icon = "IdolTrainee_icon_skill_006",
+		valid_probability = 100,
+		object = 1,
+		unique = {
+			20
+		}
+	},
+	[10120201] = {
+		condition = 0,
+		effect_type = 3,
+		con_param = "",
+		round = -1,
+		probability = 100,
+		trigger_time = 1,
+		id = 10120201,
+		effect_icon = "IdolTrainee_icon_skill_007",
+		valid_probability = 60,
+		object = 1,
+		unique = {
+			10
+		}
+	},
+	[10120202] = {
+		condition = 0,
+		effect_type = 2,
+		con_param = "",
+		round = -1,
+		probability = 100,
+		trigger_time = 1,
+		id = 10120202,
+		effect_icon = "IdolTrainee_icon_skill_018",
+		valid_probability = 60,
+		object = 1,
+		unique = {
+			2,
+			60
+		}
+	},
+	[10120203] = {
+		condition = 0,
+		effect_type = 2,
+		con_param = "",
+		round = -1,
+		probability = 100,
+		trigger_time = 1,
+		id = 10120203,
+		effect_icon = "IdolTrainee_icon_skill_021",
+		valid_probability = 60,
+		object = 1,
+		unique = {
+			5,
+			60
+		}
+	},
 	all = {
 		10840101,
 		10840102,
@@ -1872,6 +1949,11 @@
 		10340201,
 		10340202,
 		10340203,
-		10340204
+		10340204,
+		10120101,
+		10120102,
+		10120201,
+		10120202,
+		10120203
 	}
 }

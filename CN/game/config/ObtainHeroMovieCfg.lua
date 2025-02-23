@@ -258,6 +258,13 @@
 		loop_path = "SofdecAsset/function/draw/1034_loop.usm",
 		start_voice_frames = 0
 	},
+	[1012] = {
+		start_movie_frames = 217,
+		hero_id = 1012,
+		start_path = "SofdecAsset/function/draw/1012_start.usm",
+		loop_path = "SofdecAsset/function/draw/1012_loop.usm",
+		start_voice_frames = 0
+	},
 	all = {
 		1024,
 		1028,
@@ -295,6 +302,7 @@
 		1089,
 		1248,
 		1133,
-		1034
+		1034,
+		1012
 	}
 }

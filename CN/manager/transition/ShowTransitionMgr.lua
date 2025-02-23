@@ -122,7 +122,7 @@ function var_0_0.Hide(arg_5_0, arg_5_1, arg_5_2)
 	if gameContext ~= nil then
 		local var_5_0 = gameContext:GetLastOpenPage()
 
-		if (not ViewConst.PLAY_TRANSITION_URL_LIST[var_5_0] or not arg_5_2) and (not gameContext:IsOpenRoute("home") or var_5_0 == "menuPop") then
+		if (not ViewConst.PLAY_TRANSITION_URL_LIST[var_5_0] or not arg_5_2) and (not gameContext:IsOpenRoute("home") or var_5_0 == "menuPop" and not gameContext:IsRouteBack()) then
 			arg_5_0:DoCallBack()
 			arg_5_0:ClearTimer()
 			SetActive(arg_5_0.gameObject_, false)

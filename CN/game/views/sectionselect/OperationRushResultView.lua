@@ -266,7 +266,7 @@ function var_0_0.StartExpTween(arg_21_0, arg_21_1, arg_21_2, arg_21_3, arg_21_4)
 
 	local var_21_0 = -1
 
-	arg_21_0.tween_ = LeanTween.value(arg_21_0.expSlider_.gameObject, arg_21_1 + arg_21_3, arg_21_2 + arg_21_4, 2):setEase(LeanTweenType.easeOutCubic):setOnUpdate(LuaHelper.FloatAction(function(arg_22_0)
+	arg_21_0.tween_ = LeanTween.value(arg_21_0.expSlider_.gameObject, arg_21_1 + arg_21_3, arg_21_2 + arg_21_4, 1):setEase(LeanTweenType.easeOutCubic):setOnUpdate(LuaHelper.FloatAction(function(arg_22_0)
 		local var_22_0 = math.modf(arg_22_0)
 
 		if var_21_0 == -1 then

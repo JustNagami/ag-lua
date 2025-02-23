@@ -130,23 +130,27 @@ function var_0_0.LsGetItemData(arg_16_0)
 	return arg_16_0.uiDataList_
 end
 
-function var_0_0.GetFreeTitleItem(arg_17_0, arg_17_1, arg_17_2)
-	for iter_17_0, iter_17_1 in pairs(arg_17_1) do
-		if iter_17_1.isFree == true then
-			iter_17_1.isFree = false
+function var_0_0.LsUpdateItem(arg_17_0, arg_17_1, arg_17_2, arg_17_3)
+	arg_17_1.itemView:SetData(arg_17_2, arg_17_3)
+end
 
-			return iter_17_1
+function var_0_0.GetFreeTitleItem(arg_18_0, arg_18_1, arg_18_2)
+	for iter_18_0, iter_18_1 in pairs(arg_18_1) do
+		if iter_18_1.isFree == true then
+			iter_18_1.isFree = false
+
+			return iter_18_1
 		end
 	end
 
-	local var_17_0 = {
+	local var_18_0 = {
 		isFree = false,
-		itemView = arg_17_2()
+		itemView = arg_18_2()
 	}
 
-	table.insert(arg_17_1, var_17_0)
+	table.insert(arg_18_1, var_18_0)
 
-	return var_17_0
+	return var_18_0
 end
 
 return var_0_0

@@ -166,8 +166,12 @@ function var_0_0.CheckAutoCookHaveGoldIsMax(arg_20_0)
 	end
 
 	if ActivityData:GetActivityIsOpen(ActivityConst.AUTO_COOK) then
-		if ActivityAutoCookData:GetCurHaveGold() >= ActivityAutoCookData:GetCurHaveGoldMax() or ActivityAutoCookData:GetCurHaveGold() >= ActivityAutoCookData:GetCurWeekCanGet() then
+		if ActivityAutoCookData:CheckWillRewardMaxToLimit() then
 			arg_20_0.autoCookMaxGoldFlag_ = true
+
+			if ActivityAutoCookData:GetCurWeekCanGet() <= 0 then
+				return
+			end
 
 			QWorldData:AddHint(313551003)
 		else
@@ -443,11 +447,16 @@ function var_0_0.AddAutoCookTimer(arg_53_0)
 	arg_53_0:StopAutoCookTimer()
 
 	arg_53_0.autoCookTimer_ = Timer.New(function()
-		if ActivityAutoCookData:GetCurHaveGold() >= ActivityAutoCookData:GetCurHaveGoldMax() or ActivityAutoCookData:GetCurHaveGold() >= ActivityAutoCookData:GetCurWeekCanGet() then
+		if ActivityAutoCookData:CheckWillRewardMaxToLimit() then
 			arg_53_0.autoCookMaxGoldFlag_ = true
 
-			QWorldData:AddHint(313551003)
 			arg_53_0:StopAutoCookTimer()
+
+			if ActivityAutoCookData:GetCurWeekCanGet() <= 0 then
+				return
+			end
+
+			QWorldData:AddHint(313551003)
 		end
 	end, 5, -1)
 

@@ -1,7 +1,10 @@
 ﻿local var_0_0 = class("SequentialBattleBuffInfoView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/MardukUI/continuousBattle/MardukBuffDetailsPopUI"
+	local var_1_0 = SequentialBattleChapterCfg[arg_1_0.params_.buffInfoActivityID].main_id
+	local var_1_1 = SequentialBattleUICfg.get_id_list_by_main_activity_id[var_1_0][1]
+
+	return SequentialBattleUICfg[var_1_1].buff_info_prefab
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -15,10 +18,11 @@ function var_0_0.Init(arg_3_0)
 	arg_3_0.selectBuffHandler_ = handler(arg_3_0, arg_3_0.RefreshSelectBuff)
 	arg_3_0.buffUIList_ = LuaList.New(handler(arg_3_0, arg_3_0.RefreshItem), arg_3_0.uiList_, SequentialBattleBuffInfoItem)
 	arg_3_0.conditionList_ = {}
+	arg_3_0.buffController_ = arg_3_0.buffControllerEx_:GetController("enabled")
 end
 
 function var_0_0.OnEnter(arg_4_0)
-	arg_4_0.activityID_ = arg_4_0.params_.activityID
+	arg_4_0.activityID_ = arg_4_0.params_.buffInfoActivityID
 	arg_4_0.stageID_ = arg_4_0.params_.stageID
 
 	local var_4_0 = SequentialBattleChapterCfg[arg_4_0.activityID_].main_id
@@ -94,13 +98,7 @@ function var_0_0.RefreshItem(arg_9_0, arg_9_1, arg_9_2)
 end
 
 function var_0_0.RefreshTitle(arg_10_0)
-	if arg_10_0.stageID_ then
-		local var_10_0 = table.keyof(SequentialBattleChapterCfg[arg_10_0.activityID_].stage_id, arg_10_0.stageID_)
-
-		arg_10_0.teamText_.text = GetTips(string.format("TEAM_%s", var_10_0))
-	else
-		arg_10_0.teamText_.text = GetTips("BUFF_PREVIEW")
-	end
+	return
 end
 
 function var_0_0.RefreshSelectBuff(arg_11_0, arg_11_1)
@@ -120,7 +118,25 @@ function var_0_0.RefreshRightPanel(arg_12_0)
 	local var_12_2 = AffixTypeCfg[var_12_1]
 	local var_12_3 = PublicBuffCfg[var_12_2.affix_buff_id].icon
 
-	arg_12_0.selectIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/BuffIcon/" .. var_12_3)
+	arg_12_0.selectIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/MaedukAffix/" .. var_12_3)
+
+	local var_12_4 = false
+
+	if arg_12_0.stageID_ ~= nil then
+		local var_12_5 = table.keyof(SequentialBattleChapterCfg[arg_12_0.activityID_].stage_id, arg_12_0.stageID_)
+		local var_12_6 = SequentialBattleTools.GetEnabledBuff(arg_12_0.activityID_, var_12_5)
+
+		if table.keyof(var_12_6, arg_12_0.selectID_) then
+			var_12_4 = true
+		end
+	end
+
+	if var_12_4 == true then
+		arg_12_0.buffController_:SetSelectedState("true")
+	else
+		arg_12_0.buffController_:SetSelectedState("false")
+	end
+
 	arg_12_0.nameText_.text = GetI18NText(getAffixName({
 		var_12_1
 	}))

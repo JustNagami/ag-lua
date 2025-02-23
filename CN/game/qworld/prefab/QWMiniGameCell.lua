@@ -25,6 +25,7 @@
 	arg_1_0.entity:SetBuild("QWWorld/Game/Props_lattice_white")
 	arg_1_0.entity:AddBubbleTag(QWorldBubbleConst.BUBBLE_PRE_DEFINED_TAG.MINI_GAME_CELL, arg_1_0.entity:GetName(), arg_1_0:GetBubbleIcon())
 	manager.notify:RemoveListener(QWORLD_TELEPORT, arg_1_0.teleportCallBack)
+	manager.notify:RemoveListener(QWORLD_RESTART, arg_1_0.teleportCallBack)
 
 	local var_1_0 = manager.time:GetServerTime() - (arg_1_0.localData.startTime or 0)
 
@@ -117,6 +118,7 @@ local function var_0_2(arg_3_0)
 	arg_3_0.localData.startTime = manager.time:GetServerTime()
 
 	manager.notify:RegistListener(QWORLD_TELEPORT, arg_3_0.teleportCallBack)
+	manager.notify:RegistListener(QWORLD_RESTART, arg_3_0.teleportCallBack)
 end
 
 local function var_0_3(arg_6_0, arg_6_1)
@@ -131,6 +133,7 @@ end
 
 local function var_0_5(arg_8_0)
 	manager.notify:RemoveListener(QWORLD_TELEPORT, arg_8_0.teleportCallBack)
+	manager.notify:RemoveListener(QWORLD_RESTART, arg_8_0.teleportCallBack)
 end
 
 local function var_0_6(arg_9_0, arg_9_1)

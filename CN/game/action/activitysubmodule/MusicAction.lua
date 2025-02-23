@@ -59,33 +59,45 @@ function var_0_0.OnCampeletCallBack(arg_4_0, arg_4_1)
 	end
 end
 
-function var_0_0.OpenSettlement(arg_5_0, arg_5_1, arg_5_2, arg_5_3)
+function var_0_0.OpenSettlement(arg_5_0, arg_5_1, arg_5_2, arg_5_3, arg_5_4)
+	if MusicData:GetSpecialEffectState() then
+		return
+	end
+
 	local var_5_0 = MusicData:GetMusicViewPathList(arg_5_0)
 
 	gameContext:Go(var_5_0.settlement, {
 		cur = arg_5_1,
 		max = arg_5_2,
-		new = arg_5_3
+		new = arg_5_3,
+		isSpecialPerformance = arg_5_4
 	})
 end
 
 function var_0_0.QueryReward(arg_6_0)
 	manager.net:SendWithLoadingNew(61050, {
-		id = arg_6_0
+		id_list = arg_6_0
 	}, 61051, var_0_0.OnRewardCallBack)
 end
 
 function var_0_0.OnRewardCallBack(arg_7_0, arg_7_1)
 	if isSuccess(arg_7_0.result) then
-		local var_7_0 = arg_7_1.id
-		local var_7_1 = arg_7_0.reward_list
+		local var_7_0 = arg_7_1.id_list
 
-		getReward2(var_7_1)
+		for iter_7_0, iter_7_1 in pairs(var_7_0) do
+			local var_7_1 = ActivityMusicCfg[iter_7_1]
+			local var_7_2 = var_7_1.activity_id
+			local var_7_3 = var_7_1.difficult
 
-		local var_7_2 = var_7_1.activity_id
-		local var_7_3 = var_7_1.difficult
+			MusicData:SetRewardState(var_7_2, var_7_3)
+		end
 
-		MusicData:SetRewardState(var_7_2, var_7_3)
+		local var_7_4 = mergeReward2(arg_7_0.reward_list or {})
+
+		if #var_7_4 > 0 then
+			getReward2(var_7_4)
+		end
+
 		MusicAction.CheckRedPoint()
 		manager.notify:CallUpdateFunc(MUSIC_REWARD_UPDATE)
 	else
@@ -116,12 +128,19 @@ function var_0_0.CheckOpenRedPoint(arg_9_0)
 		if ActivityData:GetActivityIsOpen(iter_9_1) then
 			local var_9_2 = ActivityMusicCfg.get_id_list_by_activity_id[iter_9_1]
 			local var_9_3 = true
+			local var_9_4
 
 			for iter_9_2, iter_9_3 in ipairs(var_9_2) do
-				local var_9_4 = ActivityMusicCfg[iter_9_3]
-				local var_9_5 = MusicData:GetScore(iter_9_1, var_9_4.difficult)
+				local var_9_5 = ActivityMusicCfg[iter_9_3]
+				local var_9_6 = MusicData:GetScore(iter_9_1, var_9_5.difficult)
 
-				if var_9_5 and var_9_5 ~= 0 then
+				if var_9_6 and var_9_6 ~= 0 then
+					var_9_3 = false
+
+					break
+				end
+
+				if MusicData:GetIsComplete(iter_9_1, var_9_5.difficult) then
 					var_9_3 = false
 
 					break
@@ -214,15 +233,19 @@ end
 
 function var_0_0.GoToMusicMain()
 	DestroyLua()
-	LuaExchangeHelper.GoToMain()
 
 	local var_13_0 = MusicData:GetGameId()
 	local var_13_1 = ActivityMusicCfg[var_13_0].activity_id
 	local var_13_2 = MusicData:GetMusicViewPathList(var_13_1)
 
-	OpenPageUntilLoaded(var_13_2.musicMain, {
-		activity_id = var_13_2.activityID
-	})
+	if ActivityTools.GetActivityTheme(var_13_1) == ActivityConst.THEME.ACTIVITY_3_11 then
+		LaunchQWorld(true)
+	else
+		LuaExchangeHelper.GoToMain()
+		OpenPageUntilLoaded(var_13_2.musicMain, {
+			activity_id = var_13_2.activityID
+		})
+	end
 end
 
 return var_0_0

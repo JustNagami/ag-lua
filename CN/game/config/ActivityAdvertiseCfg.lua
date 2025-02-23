@@ -439,6 +439,17 @@
 			525
 		}
 	},
+	[41] = {
+		activity_id = 312103,
+		free_dlc_icon = "",
+		id = 41,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_101201_107503_102802",
+		order = 1000,
+		reward_list = {},
+		jump_system = {
+			525
+		}
+	},
 	[82101] = {
 		activity_id = 82101,
 		free_dlc_icon = "",
@@ -514,6 +525,7 @@
 		38,
 		39,
 		40,
+		41,
 		82101,
 		92101,
 		102101

@@ -652,7 +652,6 @@
 		skill_id = 1070208,
 		end_prefab_path = "",
 		id = 37,
-		hit_damage_percent_grp = "",
 		prefab_path = "comboskill_1075_1070",
 		cooperate_role_ids = {
 			1070,
@@ -661,6 +660,10 @@
 		cooperate_thrown_ids = {
 			1070068,
 			1075056
+		},
+		hit_damage_percent_grp = {
+			50,
+			50
 		}
 	},
 	{
@@ -668,7 +671,6 @@
 		skill_id = 1075208,
 		end_prefab_path = "",
 		id = 38,
-		hit_damage_percent_grp = "",
 		prefab_path = "comboskill_1076_1075",
 		cooperate_role_ids = {
 			1075,
@@ -677,6 +679,10 @@
 		cooperate_thrown_ids = {
 			1075057,
 			1076065
+		},
+		hit_damage_percent_grp = {
+			50,
+			75
 		}
 	},
 	{
@@ -1147,6 +1153,22 @@
 			1015051
 		}
 	},
+	{
+		maxLevel = 3,
+		skill_id = 1012208,
+		end_prefab_path = "",
+		id = 66,
+		hit_damage_percent_grp = "",
+		prefab_path = "comboskill_1012_1060",
+		cooperate_role_ids = {
+			1012,
+			1060
+		},
+		cooperate_thrown_ids = {
+			1012066,
+			1060070
+		}
+	},
 	all = {
 		1,
 		2,
@@ -1212,6 +1234,7 @@
 		62,
 		63,
 		64,
-		65
+		65,
+		66
 	}
 }

@@ -61,33 +61,19 @@ function var_0_0.UpdateData(arg_10_0)
 end
 
 function var_0_0.UpdateView(arg_12_0)
-	if arg_12_0.updateTimer_ then
-		arg_12_0.updateTimer_:Stop()
-
-		arg_12_0.updateTimer_ = nil
-	end
-
 	arg_12_0.normalTaskList = TaskData2:GetActivityTaskSortList(arg_12_0.activityId)
 
 	arg_12_0.controller:SetSelectedState(arg_12_0:GetControllerState())
 	arg_12_0.list:StartScroll(#arg_12_0.normalTaskList)
-
-	arg_12_0.updateTimer_ = Timer.New(function()
-		for iter_13_0, iter_13_1 in ipairs(arg_12_0.list:GetItemList()) do
-			iter_13_1:UpdateTime()
-		end
-	end, 1, -1, 1)
-
-	arg_12_0.updateTimer_:Start()
 end
 
-function var_0_0.GetControllerState(arg_14_0)
-	local var_14_0 = TaskTools:GetActivityTaskList(arg_14_0.activityId)
+function var_0_0.GetControllerState(arg_13_0)
+	local var_13_0 = TaskTools:GetActivityTaskList(arg_13_0.activityId)
 
-	for iter_14_0, iter_14_1 in pairs(var_14_0) do
-		local var_14_1 = TaskData2:GetTaskComplete(iter_14_0)
+	for iter_13_0, iter_13_1 in pairs(var_13_0) do
+		local var_13_1 = TaskData2:GetTaskComplete(iter_13_0)
 
-		if TaskData2:GetTaskProgress(iter_14_0) >= AssignmentCfg[iter_14_0].need and not var_14_1 then
+		if TaskData2:GetTaskProgress(iter_13_0) >= AssignmentCfg[iter_13_0].need and not var_13_1 then
 			return "show"
 		end
 	end
@@ -95,29 +81,23 @@ function var_0_0.GetControllerState(arg_14_0)
 	return "hide"
 end
 
-function var_0_0.OnExit(arg_15_0)
-	arg_15_0:RemoveAllEventListener()
-
-	if arg_15_0.updateTimer_ then
-		arg_15_0.updateTimer_:Stop()
-
-		arg_15_0.updateTimer_ = nil
-	end
+function var_0_0.OnExit(arg_14_0)
+	arg_14_0:RemoveAllEventListener()
 end
 
-function var_0_0.OnTop(arg_16_0)
+function var_0_0.OnTop(arg_15_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR
 	})
 end
 
-function var_0_0.Dispose(arg_17_0)
-	var_0_0.super.Dispose(arg_17_0)
+function var_0_0.Dispose(arg_16_0)
+	var_0_0.super.Dispose(arg_16_0)
 
-	if arg_17_0.list then
-		arg_17_0.list:Dispose()
+	if arg_16_0.list then
+		arg_16_0.list:Dispose()
 
-		arg_17_0.list = nil
+		arg_16_0.list = nil
 	end
 end
 

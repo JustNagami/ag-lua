@@ -2491,6 +2491,51 @@
 			}
 		}
 	},
+	[950030] = {
+		material = "",
+		start_up_action = 0,
+		extend_info = 1,
+		type = 25,
+		dorm_exp = 12000,
+		sub_type = 0,
+		model = "Dorm/Dormitory/HZ05_zhuanshu_lingguang",
+		is_give = 3,
+		hero_id = 1075,
+		style_type = "",
+		extend = "",
+		theme = 99,
+		give_max = 0,
+		replace = "",
+		interact_max = 1,
+		illu_position = "",
+		can_rot = 0,
+		display_type = 0,
+		mesh = "",
+		is_hide = 0,
+		id = 950030,
+		ignore_zoom = 0,
+		is_occupy = 0,
+		scene_id = {
+			2,
+			3
+		},
+		title = {
+			7,
+			3,
+			4
+		},
+		cost = {},
+		attractive = {},
+		is_storage = {},
+		is_move = {},
+		is_rotate = {},
+		interact = {
+			{
+				1075,
+				10750101
+			}
+		}
+	},
 	[951001] = {
 		material = "",
 		start_up_action = 0,
@@ -15168,6 +15213,7 @@
 			950027,
 			950028,
 			950029,
+			950030,
 			951001,
 			951002,
 			951003,
@@ -15509,6 +15555,7 @@
 			950027,
 			950028,
 			950029,
+			950030,
 			951001,
 			951002,
 			951003,
@@ -16174,7 +16221,8 @@
 			950026,
 			950027,
 			950028,
-			950029
+			950029,
+			950030
 		},
 		[213] = {
 			950922
@@ -16272,6 +16320,7 @@
 		950027,
 		950028,
 		950029,
+		950030,
 		951001,
 		951002,
 		951003,

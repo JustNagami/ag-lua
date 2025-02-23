@@ -2353,7 +2353,7 @@
 				arg_70_1:ShowNextGo(false)
 			end
 
-			local var_73_1 = 40
+			local var_73_1 = 93
 			local var_73_2 = 2.66666666666667
 			local var_73_3 = arg_70_1:GetWordFromCfg(116381015)
 			local var_73_4 = arg_70_1:FormatText(var_73_3.content)

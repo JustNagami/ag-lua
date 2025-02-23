@@ -39,16 +39,13 @@ function var_0_0.SetData(arg_3_0, arg_3_1, arg_3_2, arg_3_3, arg_3_4)
 end
 
 function var_0_0.GetHeroList(arg_4_0, arg_4_1, arg_4_2)
-	local var_4_0 = SequentialBattleData:GetChapterData(arg_4_1).team[arg_4_2]
-	local var_4_1 = {}
+	local var_4_0 = ReserveParams.New(ReserveConst.RESERVE_TYPE.SEQUENTIAL_BATTLE_CACHE, arg_4_1, arg_4_2, {
+		stageType = BattleConst.STAGE_TYPE_NEW.SEQUENTIAL_BATTLE,
+		stageID = SequentialBattleChapterCfg[arg_4_1].stage_id[arg_4_2],
+		activityID = arg_4_1
+	})
 
-	for iter_4_0, iter_4_1 in pairs(var_4_0.heroList) do
-		if iter_4_1.heroID and iter_4_1.heroID ~= 0 then
-			table.insert(var_4_1, iter_4_1.heroID)
-		end
-	end
-
-	return var_4_1
+	return (ReserveTools.GetHeroList(var_4_0))
 end
 
 function var_0_0.Show(arg_5_0, arg_5_1)

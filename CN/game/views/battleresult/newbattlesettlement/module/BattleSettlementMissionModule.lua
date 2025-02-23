@@ -115,6 +115,8 @@ function var_0_0.RenderAwardItem(arg_9_0, arg_9_1, arg_9_2)
 		ShowPopItemOnly(POP_OTHER_ITEM, {
 			arg_10_0.id,
 			arg_10_0.number
+		}, {
+			isSettlement = true
 		})
 	end
 

@@ -58,6 +58,8 @@ function var_0_0.OpenOperationUrl(arg_5_0, arg_5_1)
 		var_5_2 = string.format(var_5_1, arg_5_1.userId, arg_5_1.signUserId)
 	elseif arg_5_0 == "GUIDE_URL" or arg_5_0 == "INFORMATION_URL" then
 		var_5_2 = string.format(var_5_1, arg_5_1.userId, arg_5_1.signUserId)
+	elseif arg_5_0 == "PC_FEEDBACK" then
+		var_5_2 = string.format(var_5_1, arg_5_1.userId, arg_5_1.signUserId)
 	else
 		var_5_2 = var_5_1
 	end
@@ -66,7 +68,7 @@ function var_0_0.OpenOperationUrl(arg_5_0, arg_5_1)
 
 	print("url : ", var_5_3)
 
-	if (GameToSDK.PLATFORM_ID == 1 or GameToSDK.IsEditorOrPcPlatform()) and (arg_5_0 == "FORUM_URL" or arg_5_0 == "PC_SHOP" or arg_5_0 == "FORUM_URL_HOME" or arg_5_0 == "FORUM_URL_HERO" or arg_5_0 == "OFFICIAL_SUGGEST_URL") then
+	if GameToSDK.PLATFORM_ID == 1 and (arg_5_0 == "FORUM_URL" or arg_5_0 == "FORUM_URL_HOME" or arg_5_0 == "FORUM_URL_HERO" or arg_5_0 == "OFFICIAL_SUGGEST_URL") or GameToSDK.IsEditorOrPcPlatform() then
 		Application.OpenURL(var_5_3)
 	else
 		local var_5_4 = true

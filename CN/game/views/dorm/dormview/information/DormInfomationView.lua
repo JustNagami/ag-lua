@@ -60,7 +60,7 @@ function var_0_0.RefreshBar(arg_12_0)
 end
 
 function var_0_0.OnEnter(arg_14_0)
-	manager.ui:ShowBackground(true)
+	manager.ui:ShowBackground(gameContext:IsOpenRoute("home"))
 	arg_14_0.page:Show()
 end
 

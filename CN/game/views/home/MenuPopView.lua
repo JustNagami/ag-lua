@@ -222,14 +222,24 @@ function var_0_0.AddUIListeners(arg_5_0)
 		})
 	end
 	arg_5_0.menuFunctionList_[MenuPopConst.Suggest] = function()
-		OperationRecorder.RecordButtonTouch("homepage_expand_16")
-		NeedGameUserInfo()
-		SendMessageToSDK("{\"messageType\" : \"StartCustomerService\"}")
-		manager.redPoint:setTip(RedPointConst.CUSTOMER_SERVICE_UNREAD, 0)
-		SDKTools.SendMessageToSDK("direction", {
-			direction_type = 3,
-			direction_channel = 4
-		})
+		if GameToSDK.IsPCPlatform() then
+			local var_32_0 = {
+				userId = PlayerData:GetPlayerInfo().userID,
+				signUserId = PlayerData:GetPlayerInfo().signUserId
+			}
+
+			OperationAction.OpenOperationUrl("PC_FEEDBACK", var_32_0)
+			manager.redPoint:setTip(RedPointConst.CUSTOMER_SERVICE_UNREAD, 0)
+		else
+			OperationRecorder.RecordButtonTouch("homepage_expand_16")
+			NeedGameUserInfo()
+			SendMessageToSDK("{\"messageType\" : \"StartCustomerService\"}")
+			manager.redPoint:setTip(RedPointConst.CUSTOMER_SERVICE_UNREAD, 0)
+			SDKTools.SendMessageToSDK("direction", {
+				direction_type = 3,
+				direction_channel = 4
+			})
+		end
 	end
 	arg_5_0.menuFunctionList_[MenuPopConst.Cooperation] = function()
 		OperationRecorder.RecordButtonTouch("homepage_expand_19")
@@ -356,6 +366,14 @@ function var_0_0.OnTop(arg_43_0)
 end
 
 function var_0_0.OnExit(arg_44_0)
+	if arg_44_0.menuList_ then
+		local var_44_0 = arg_44_0.menuList_:GetItemList()
+
+		for iter_44_0, iter_44_1 in ipairs(var_44_0) do
+			iter_44_1:OnExit()
+		end
+	end
+
 	arg_44_0:UnBindRedPointUI()
 end
 

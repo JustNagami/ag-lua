@@ -23,37 +23,60 @@ function var_0_0.SetData(arg_2_0, arg_2_1, arg_2_2)
 	arg_2_0.stageIndex_ = arg_2_2
 	arg_2_0.stageID_ = SequentialBattleChapterCfg[arg_2_0.activityID_].stage_id[arg_2_0.stageIndex_]
 
-	SequentialBattleTools.CheckHeroTeam(arg_2_1, arg_2_2)
-
 	local var_2_0 = ReserveParams.New(ReserveConst.RESERVE_TYPE.SEQUENTIAL_BATTLE, arg_2_0.activityID_, arg_2_0.stageIndex_, {
 		stageType = BattleConst.STAGE_TYPE_NEW.SEQUENTIAL_BATTLE,
 		stageID = arg_2_0.stageID_,
 		activityID = arg_2_0.activityID_
 	})
-	local var_2_1 = ReserveTools.GetHeroList(var_2_0)
+	local var_2_1 = ReserveParams.New(ReserveConst.RESERVE_TYPE.SEQUENTIAL_BATTLE_CACHE, arg_2_0.activityID_, arg_2_0.stageIndex_, {
+		stageType = BattleConst.STAGE_TYPE_NEW.SEQUENTIAL_BATTLE,
+		stageID = arg_2_0.stageID_,
+		activityID = arg_2_0.activityID_
+	})
+
+	if not arg_2_0.sectionProxy_ then
+		arg_2_0.sectionProxy_ = SectionSelectHeroTools.GetProxy({
+			stageType = ReserveConst.RESERVE_TYPE.SEQUENTIAL_BATTLE,
+			stageID = arg_2_0.stageID_
+		}, var_2_0, HeroConst.HERO_DATA_TYPE.DEFAULT)
+	else
+		arg_2_0.sectionProxy_:Init({
+			stageType = ReserveConst.RESERVE_TYPE.SEQUENTIAL_BATTLE,
+			stageID = arg_2_0.stageID_
+		}, var_2_0, HeroConst.HERO_DATA_TYPE.DEFAULT)
+	end
+
+	local var_2_2, var_2_3, var_2_4, var_2_5 = ReserveTools.GetHeroList(var_2_0)
+	local var_2_6, var_2_7 = ReserveTools.GetMimirData(var_2_0)
+	local var_2_8 = ReserveTools.GetComboSkillID(var_2_0)
+
+	ReserveTools.SetTeam(var_2_1, var_2_2, var_2_5 or {}, var_2_8, var_2_6, var_2_7)
+	SequentialBattleTools.ResetAllEnabledBuff(arg_2_0.activityID_)
+
+	local var_2_9 = ReserveTools.GetHeroList(var_2_0)
 
 	for iter_2_0, iter_2_1 in ipairs(arg_2_0.heroItemList_) do
-		iter_2_1:SetData(arg_2_1, arg_2_2, var_2_1[iter_2_0])
+		iter_2_1:SetData(var_2_0, var_2_1, arg_2_1, arg_2_2, var_2_9[iter_2_0])
 	end
 
 	arg_2_0.titleText_.text = GetTips(string.format("TEAM_%s", arg_2_2))
 
-	local var_2_2 = SequentialBattleChapterCfg[arg_2_1]
+	local var_2_10 = SequentialBattleChapterCfg[arg_2_1]
 
-	if var_2_2.boss_list[arg_2_2] ~= 0 then
+	if var_2_10.boss_list[arg_2_2] ~= 0 then
 		arg_2_0.bossController_:SetSelectedState("true")
 
-		local var_2_3
+		local var_2_11
 
-		for iter_2_2, iter_2_3 in pairs(var_2_2.boss_list[arg_2_2]) do
-			if var_2_3 == nil then
-				var_2_3 = tostring(iter_2_3)
+		for iter_2_2, iter_2_3 in pairs(var_2_10.boss_list[arg_2_2]) do
+			if var_2_11 == nil then
+				var_2_11 = tostring(iter_2_3)
 			else
-				var_2_3 = var_2_3 .. tostring(iter_2_3)
+				var_2_11 = var_2_11 .. tostring(iter_2_3)
 			end
 		end
 
-		arg_2_0.portraitImage_.sprite = getSpriteWithoutAtlas(string.format("TextureConfig/MardukUI/boss/icon/%s", var_2_3))
+		arg_2_0.portraitImage_.sprite = getSpriteWithoutAtlas(string.format("TextureConfig/MardukUI/boss/icon/%s", var_2_11))
 	else
 		arg_2_0.bossController_:SetSelectedState("false")
 	end
@@ -105,7 +128,7 @@ function var_0_0.AddListeners(arg_4_0)
 		local var_6_0 = SequentialBattleChapterCfg[arg_4_0.activityID_].stage_id[arg_4_0.stageIndex_]
 
 		JumpTools.OpenPageByJump("sequentialBattleBuffInfo", {
-			activityID = arg_4_0.activityID_,
+			buffInfoActivityID = arg_4_0.activityID_,
 			stageID = var_6_0
 		})
 	end)

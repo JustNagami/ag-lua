@@ -154,6 +154,21 @@
 		pool = {},
 		multiple_affix = {}
 	},
+	[40460] = {
+		stage_id = 60540460,
+		type = 1,
+		base_point = 1000,
+		activity_id = 40460,
+		order = 2,
+		boss_list = {
+			4046
+		},
+		pool = {},
+		multiple_affix = {},
+		level_describe = {
+			"Widget/System/BossTestUI/popUI/60540460"
+		}
+	},
 	[30490] = {
 		stage_id = 60530490,
 		type = 0,
@@ -171,7 +186,7 @@
 	},
 	[30510] = {
 		stage_id = 60530510,
-		type = 1,
+		type = 0,
 		base_point = 1000,
 		activity_id = 30510,
 		order = 30510,
@@ -201,7 +216,7 @@
 	},
 	[5230111] = {
 		stage_id = 60500002,
-		type = 1,
+		type = 0,
 		base_point = 1000,
 		activity_id = 5230111,
 		order = 5230111,
@@ -214,10 +229,25 @@
 			"Widget/System/BossTestUI/popUI/60500002"
 		}
 	},
+	[5230124] = {
+		stage_id = 60500003,
+		type = 1,
+		base_point = 1000,
+		activity_id = 5230124,
+		order = 1,
+		boss_list = {
+			4046
+		},
+		pool = {},
+		multiple_affix = {},
+		level_describe = {
+			"Widget/System/BossTestUI/popUI/60500003"
+		}
+	},
 	get_id_list_by_type = {
 		{
-			30510,
-			5230111
+			40460,
+			5230124
 		},
 		[0] = {
 			50950,
@@ -232,7 +262,9 @@
 			40441,
 			40442,
 			30490,
-			1032012
+			30510,
+			1032012,
+			5230111
 		}
 	},
 	all = {
@@ -247,9 +279,11 @@
 		40440,
 		40441,
 		40442,
+		40460,
 		30490,
 		30510,
 		1032012,
-		5230111
+		5230111,
+		5230124
 	}
 }

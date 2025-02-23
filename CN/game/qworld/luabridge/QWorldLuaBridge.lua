@@ -99,6 +99,7 @@ function PostEnterQWorldScene(arg_12_0)
 	if QWorldData:GetCurSceneName() ~= arg_12_0 then
 		QWorldData:SetCurSceneName(arg_12_0)
 		print(string.format("进入场景%s", arg_12_0))
+		manager.notify:Invoke(QWORLD_RESTART)
 		PlayQWorldBgm()
 
 		if arg_12_0 == "X510a" then

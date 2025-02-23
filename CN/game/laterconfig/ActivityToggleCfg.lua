@@ -1949,16 +1949,6 @@
 		desc = "",
 		class_name = SkinTrialMainView_2_0
 	},
-	[33027] = {
-		activity_id = 281312,
-		name = "换 装 试 用",
-		id = 33027,
-		sub_title_type = 0,
-		activity_theme = 28,
-		icon = "141311",
-		desc = "",
-		class_name = SkinTrialMainView_2_0
-	},
 	[36001] = {
 		activity_id = 291201,
 		name = "高 墙 上 下",
@@ -2410,108 +2400,199 @@
 		class_name = ActivityPromotionalView
 	},
 	[31003] = {
+		activity_id = 312132,
+		name = "九 州 巡 诫",
+		id = 31003,
+		sub_title_type = 0,
+		activity_theme = 31,
+		icon = "312132",
+		desc = "",
+		class_name = ActivityPromotionalView
+	},
+	[31004] = {
 		activity_id = 313641,
 		name = "侠 游 新 泰",
-		id = 31003,
+		id = 31004,
 		sub_title_type = 0,
 		activity_theme = 31,
 		icon = "313641",
 		desc = "卷中旧城，试炼新篇，且看逐日追云大侠在此大显身手！",
 		class_name = QWActivityMainUI
 	},
-	[31004] = {
+	[31005] = {
 		activity_id = 312431,
 		name = "联防协议·β",
-		id = 31004,
+		id = 31005,
 		sub_title_type = 0,
 		activity_theme = 31,
 		icon = "242432",
 		desc = "",
 		class_name = ActivityPtScrollEnterView
 	},
-	[31005] = {
+	[31006] = {
+		activity_id = 312432,
+		name = "联防协议·α",
+		id = 31006,
+		sub_title_type = 0,
+		activity_theme = 31,
+		icon = "242432",
+		desc = "",
+		class_name = ActivityPtScrollEnterView
+	},
+	[31007] = {
 		activity_id = 313601,
 		name = "乐园特别活动！",
-		id = 31005,
+		id = 31007,
 		sub_title_type = 0,
 		activity_theme = 31,
 		icon = "212511",
 		desc = "彩带、礼炮、欢笑，塔列朗游乐园正因举办特别活动而吵吵闹闹。听说两人组队完成游乐设施挑战就能拿到奖励，不如邀请修正者一起去游乐园玩乐吧！",
 		class_name = ActivityValentineGameV3MainView
 	},
-	[31006] = {
+	[31008] = {
 		activity_id = 313425,
 		name = "义 体 缉 查",
-		id = 31006,
+		id = 31008,
 		sub_title_type = 0,
 		activity_theme = 31,
 		icon = "293425",
 		desc = "科尔盖近期调查到一批经过非法改造的义体部件，从夏什瓦特流往各原质区。目前，深空之眼正协助科尔盖对这批违禁品进行追查。",
 		class_name = AreaBattleEnterView
 	},
-	[31007] = {
+	[31009] = {
+		activity_id = 311631,
+		name = "外 勤 特 派",
+		id = 31009,
+		sub_title_type = 0,
+		activity_theme = 31,
+		icon = "311631",
+		desc = "经第九部门综合科审批后，发布的若干外勤讨伐任务。作战科各小队修正者视自身勤务情况，可灵活接取安排。",
+		class_name = ActivitySequentialBattlePageView
+	},
+	[31010] = {
 		activity_id = 313501,
 		name = "古 远 虚 影",
-		id = 31007,
+		id = 31010,
 		sub_title_type = 0,
 		activity_theme = 31,
 		icon = "110",
 		desc = "源层深处，视骸们的乐园，平时不会有人踏足于此，深空之眼的外勤行动专员们为了寻找断断续续的神能波动而来。在他们即将前往的那片区域中，有些熟悉的模糊人影不知疲倦地与周围的敌人战斗着，像是一段没有暂停键的播片。",
 		class_name = MultHeartDemonEnterView
 	},
-	[31008] = {
+	[31011] = {
+		activity_id = 312161,
+		name = "韶 光 溯 梦",
+		id = 31011,
+		sub_title_type = 0,
+		activity_theme = 31,
+		icon = "141201",
+		desc = "我还有一些故事要讲，关于过去的历史，关于不为人知的时间回廊，关于未来将走向何方——以及置身这些故事中的我们。",
+		class_name = CORGFlipCardHomeView
+	},
+	[31012] = {
 		activity_id = 311891,
 		name = "限 期 委 培",
-		id = 31008,
+		id = 31012,
 		sub_title_type = 0,
 		activity_theme = 31,
 		icon = "141891",
 		desc = "完成养成任务和达成每日任务评分要求可以获得「锤炼之证」，累计「锤炼之证」可以领取丰厚奖励。",
 		class_name = ActivityCultivateHeroMainView_Resident
 	},
-	[31009] = {
+	[31013] = {
 		activity_id = 311311,
 		name = "换 装 试 用",
-		id = 31009,
+		id = 31013,
 		sub_title_type = 0,
 		activity_theme = 31,
 		icon = "141311",
 		desc = "",
 		class_name = SkinTrialMainView_2_0
 	},
-	[31010] = {
+	[31014] = {
 		activity_id = 311071,
 		name = "角 色 试 用",
-		id = 31010,
+		id = 31014,
 		sub_title_type = 0,
 		activity_theme = 31,
 		icon = "141071",
 		desc = "",
 		class_name = HeroTrialView_Resident
 	},
+	[31015] = {
+		activity_id = 311892,
+		name = "限 期 委 培",
+		id = 31015,
+		sub_title_type = 0,
+		activity_theme = 31,
+		icon = "141891",
+		desc = "完成养成任务和达成每日任务评分要求可以获得「锤炼之证」，累计「锤炼之证」可以领取丰厚奖励。",
+		class_name = ActivityCultivateHeroMainView_Resident
+	},
+	[31016] = {
+		activity_id = 311312,
+		name = "换 装 试 用",
+		id = 31016,
+		sub_title_type = 0,
+		activity_theme = 31,
+		icon = "141311",
+		desc = "",
+		class_name = SkinTrialMainView_2_0
+	},
+	[31017] = {
+		activity_id = 313502,
+		name = "古 远 虚 影",
+		id = 31017,
+		sub_title_type = 0,
+		activity_theme = 31,
+		icon = "110",
+		desc = "源层深处，视骸们的乐园，平时不会有人踏足于此，深空之眼的外勤行动专员们为了寻找断断续续的神能波动而来。在他们即将前往的那片区域中，有些熟悉的模糊人影不知疲倦地与周围的敌人战斗着，像是一段没有暂停键的播片。",
+		class_name = MultHeartDemonEnterView
+	},
 	get_id_list_by_activity_id = {
+		[313502] = {
+			31017
+		},
+		[311312] = {
+			31016
+		},
+		[311892] = {
+			31015
+		},
 		[311071] = {
-			31010
+			31014
 		},
 		[311311] = {
-			31009
+			31013
 		},
 		[311891] = {
-			31008
+			31012
+		},
+		[312161] = {
+			31011
 		},
 		[313501] = {
-			31007
+			31010
+		},
+		[311631] = {
+			31009
 		},
 		[313425] = {
-			31006
+			31008
 		},
 		[313601] = {
-			31005
+			31007
+		},
+		[312432] = {
+			31006
 		},
 		[312431] = {
-			31004
+			31005
 		},
 		[313641] = {
+			31004
+		},
+		[312132] = {
 			31003
 		},
 		[312131] = {
@@ -2648,9 +2729,6 @@
 		},
 		[291201] = {
 			36001
-		},
-		[281312] = {
-			33027
 		},
 		[281311] = {
 			33026
@@ -3243,7 +3321,14 @@
 			31007,
 			31008,
 			31009,
-			31010
+			31010,
+			31011,
+			31012,
+			31013,
+			31014,
+			31015,
+			31016,
+			31017
 		},
 		[30] = {
 			30801,
@@ -3319,8 +3404,7 @@
 			33023,
 			33024,
 			33025,
-			33026,
-			33027
+			33026
 		},
 		[27] = {
 			32001,
@@ -3705,7 +3789,6 @@
 		33024,
 		33025,
 		33026,
-		33027,
 		36001,
 		36002,
 		36003,
@@ -3758,6 +3841,13 @@
 		31007,
 		31008,
 		31009,
-		31010
+		31010,
+		31011,
+		31012,
+		31013,
+		31014,
+		31015,
+		31016,
+		31017
 	}
 }

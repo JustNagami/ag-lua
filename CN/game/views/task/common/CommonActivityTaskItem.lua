@@ -127,7 +127,7 @@ function var_0_0.UpdateTaskRewards(arg_14_0, arg_14_1)
 		local var_14_0 = cfgToItemTemplate(arg_14_1[iter_14_0])
 
 		if var_14_0 then
-			var_14_0.completedFlag = arg_14_0.taskComplete_
+			var_14_0.grayFlag = arg_14_0.taskComplete_
 			var_14_0.clickFun = handler(arg_14_0, arg_14_0.OnClickCommonItem)
 		end
 
@@ -159,7 +159,7 @@ function var_0_0.UpdateTaskType(arg_17_0, arg_17_1)
 	if arg_17_0.typeController ~= nil then
 		if arg_17_1 == TaskConst.TASK_TYPE.OSIRIS_TASK_DAILY then
 			arg_17_0.typeController:SetSelectedState("normal")
-		elseif AssignmentCfg[arg_17_0.taskID_].activity_id == ActivityConst.AUTO_COOK then
+		elseif AssignmentCfg[arg_17_0.taskID_].activity_id == ActivityConst.AUTO_COOK or AssignmentCfg[arg_17_0.taskID_].activity_id == ActivityConst.ACTIVITY_BLOOD_CARD_TASK or AssignmentCfg[arg_17_0.taskID_].activity_id == ActivityConst.ACTIVITY_SPRING_QUIZ_TASK then
 			arg_17_0.typeController:SetSelectedState("nolabels")
 		else
 			arg_17_0.typeController:SetSelectedState("challenge")

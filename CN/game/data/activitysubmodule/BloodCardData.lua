@@ -176,7 +176,7 @@ function var_0_0.GetUnPassNpc(arg_21_0)
 		local var_21_0 = arg_21_0:GetStageHasUnlock(iter_21_1)
 		local var_21_1 = arg_21_0:GetStageHasPass(iter_21_1)
 
-		if unlock and not var_21_1 then
+		if var_21_0 and not var_21_1 then
 			for iter_21_2, iter_21_3 in ipairs(BloodCardGameNPCCfg.all) do
 				local var_21_2 = BloodCardGameNPCCfg[iter_21_3]
 

@@ -156,6 +156,8 @@ function var_0_0.UpdateData(arg_18_0)
 end
 
 function var_0_0.UpdateView(arg_19_0)
+	arg_19_0.contentTrans_.anchoredPosition = EatSnakeData:GetEnterPos() or Vector2(0, 0)
+
 	if arg_19_0.updateTimer_ then
 		arg_19_0.updateTimer_:Stop()
 
@@ -223,6 +225,8 @@ function var_0_0.RemoveTween(arg_25_0)
 end
 
 function var_0_0.OnExit(arg_26_0)
+	EatSnakeData:SetEnterPos(arg_26_0.contentTrans_.anchoredPosition)
+
 	if arg_26_0.updateTimer_ then
 		arg_26_0.updateTimer_:Stop()
 

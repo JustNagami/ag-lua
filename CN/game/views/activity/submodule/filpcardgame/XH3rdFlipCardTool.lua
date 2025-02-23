@@ -51,6 +51,10 @@
 			arg_3_0:SetAssetPath(arg_3_0.activityId)
 
 			arg_3_0.assetSetDone = true
+
+			if arg_3_0.callback_ then
+				arg_3_0.callback_()
+			end
 		end
 
 		if arg_3_0.assetSetDone then
@@ -120,7 +124,7 @@
 		local var_17_0 = FlipCardGameController.Instance.CurrentTimeValue
 		local var_17_1 = FlipCardGameController.Instance.TimerDuration
 
-		return math.floor(var_17_1 - var_17_0)
+		return math.ceil(var_17_1 - var_17_0)
 	end,
 	GetHomeUI = function(arg_18_0)
 		local var_18_0 = XH3rdFlipCardData:GetActivityID()
@@ -129,6 +133,8 @@
 			return "UI/VersionUI/XuHeng3rdUI/XH3rdFlipCardUI/XH3rdFlipCardHomeUI"
 		elseif var_18_0 == ActivityConst.ACTIVITY_3_0_FLIPCARD then
 			return "Widget/Version/NorseUI_3_0/NorseUI_3_0FlipCardUI/NorseFlipCardHomeUI"
+		elseif var_18_0 == ActivityConst.ACTIVITY_3_11_FLIPCARD then
+			return "Widget/Version/CORGUI_3_11/CORGUI_3_11_FlipCardUI/CORGUI_FlipCardHomeUI"
 		end
 	end,
 	GetGameUI = function(arg_19_0)
@@ -138,6 +144,8 @@
 			return "UI/VersionUI/XuHeng3rdUI/XH3rdFlipCardUI/XH3rdFlipCardGameUI"
 		elseif var_19_0 == ActivityConst.ACTIVITY_3_0_FLIPCARD then
 			return "Widget/Version/NorseUI_3_0/NorseUI_3_0FlipCardUI/NorseFlipCardGameUI"
+		elseif var_19_0 == ActivityConst.ACTIVITY_3_11_FLIPCARD then
+			return "Widget/Version/CORGUI_3_11/CORGUI_3_11_FlipCardUI/CORGUI_FlipCardGameUI"
 		end
 	end,
 	GetRewardUI = function(arg_20_0)
@@ -147,6 +155,8 @@
 			return "UI/VersionUI/XuHeng3rdUI/XH3rdFlipCardUI/XH3rdFlipCardRewardUI"
 		elseif var_20_0 == ActivityConst.ACTIVITY_3_0_FLIPCARD then
 			return "Widget/Version/NorseUI_3_0/NorseUI_3_0FlipCardUI/NorseFlipCardRewardUI"
+		elseif var_20_0 == ActivityConst.ACTIVITY_3_11_FLIPCARD then
+			return "Widget/Version/CORGUI_3_11/CORGUI_3_11_FlipCardUI/CORGUI_FlipCardRewardUI"
 		end
 	end,
 	GetClueUI = function(arg_21_0)
@@ -156,6 +166,8 @@
 			return "UI/VersionUI/XuHeng3rdUI/XH3rdFlipCardUI/XH3rdFlipCardClueUI"
 		elseif var_21_0 == ActivityConst.ACTIVITY_3_0_FLIPCARD then
 			return "Widget/Version/NorseUI_3_0/NorseUI_3_0FlipCardUI/NorseFlipCardClueUI"
+		elseif var_21_0 == ActivityConst.ACTIVITY_3_11_FLIPCARD then
+			return "Widget/Version/CORGUI_3_11/CORGUI_3_11_FlipCardUI/CORGUI_FlipCardClueUI"
 		end
 	end,
 	GetHelpTips = function(arg_22_0)
@@ -165,6 +177,15 @@
 			return GetTips("ACTIVITY_FLIP_CARD_EXPLAIN")
 		elseif var_22_0 == ActivityConst.ACTIVITY_3_0_FLIPCARD then
 			return GetTips("ACTIVITY_FLIP_CARD_EXPLAIN_3_0")
+		elseif var_22_0 == ActivityConst.ACTIVITY_3_11_FLIPCARD then
+			return GetTips("ACTIVITY_FLIP_CARD_EXPLAIN_3_11")
 		end
+	end,
+	SetCardNum = function(arg_23_0, arg_23_1, arg_23_2)
+		FlipCardGameController.Instance.ColmnCount = arg_23_1
+		FlipCardGameController.Instance.RowCount = arg_23_2
+	end,
+	InitGame = function(arg_24_0)
+		FlipCardGameController.Instance:InitGame()
 	end
 }

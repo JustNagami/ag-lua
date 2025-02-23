@@ -673,7 +673,7 @@
 		desc = "翻翻乐",
 		sceneName = "X221",
 		position = {
-			1.6,
+			1.06,
 			0,
 			-16
 		},
@@ -2146,6 +2146,44 @@
 			5
 		}
 	},
+	chat_6031 = {
+		type = "chat",
+		name = "chat_6031",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6031聊天",
+		sceneName = "",
+		position = {
+			1.8,
+			0.89,
+			6.62
+		},
+		rotate = {
+			-6.721,
+			180.223,
+			0.347
+		}
+	},
+	playerInfo_6031 = {
+		type = "playerInfo",
+		name = "playerInfo_6031",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6031玩家信息界面",
+		sceneName = "",
+		position = {
+			0.066,
+			2.167,
+			4.041
+		},
+		rotate = {
+			0.842,
+			166.112,
+			-9.302
+		}
+	},
 	get_id_list_by_fieldOfView = {
 		[26] = {
 			"barbecue"
@@ -2284,7 +2322,9 @@
 			"chat_6028",
 			"playerInfo_6028",
 			"chat_6029",
-			"playerInfo_6029"
+			"playerInfo_6029",
+			"chat_6031",
+			"playerInfo_6031"
 		}
 	}
 }

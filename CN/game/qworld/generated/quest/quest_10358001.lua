@@ -1,6 +1,7 @@
 ﻿local var_0_0 = {
 	OnClickBubble_30007 = function(arg_1_0)
 		_GRAPH_API.PlayStory(10045, function()
+			_GRAPH_API.GotoTag(311481, 0)
 			_GRAPH_API.QuestSetFinish(arg_1_0.questId_, arg_1_0.questId_)
 		end, 30007)
 	end

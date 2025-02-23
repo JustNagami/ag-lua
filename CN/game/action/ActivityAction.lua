@@ -222,6 +222,10 @@ function var_0_0.UpdateRedPoint(arg_8_0)
 		if arg_8_0 == ActivityConst.ACTIVITY_2_2_SPECIAL then
 			MardukSpecialAction.UpdateRedPoint(arg_8_0)
 		end
+	elseif var_8_0 == ActivityTemplateConst.SEQUENTIAL_BATTLE then
+		if ActivityData:GetActivityData(arg_8_0).stopTime <= manager.time:GetServerTime() then
+			SequentialBattleAction.OverActivity(arg_8_0)
+		end
 	elseif var_8_0 == ActivityTemplateConst.SEQUENTIAL_BATTLE_SUB then
 		SequentialBattleAction.StopRedPoint(arg_8_0)
 	elseif var_8_0 == ActivityTemplateConst.SPRING_FESTIVAL_GREETING then

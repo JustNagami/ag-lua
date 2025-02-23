@@ -28,7 +28,7 @@
 		tag_id = 7
 	},
 	{
-		tag_name = "日常片段·管理员",
+		tag_name = "管理员日志",
 		tag_id = 8
 	},
 	all = {

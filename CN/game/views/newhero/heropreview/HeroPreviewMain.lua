@@ -143,7 +143,7 @@ function var_0_0.OnExit(arg_14_0)
 
 	if arg_14_0.subPages_ then
 		for iter_14_0, iter_14_1 in pairs(arg_14_0.subPages_) do
-			iter_14_1:OnExit()
+			iter_14_1:Hide()
 		end
 	end
 

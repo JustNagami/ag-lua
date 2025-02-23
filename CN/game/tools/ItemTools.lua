@@ -488,6 +488,7 @@ function var_0_0.SortRewardItemList(arg_21_0)
 		ItemConst.ITEM_TYPE.HERO_SKIN,
 		ItemConst.ITEM_TYPE.SCENE,
 		ItemConst.ITEM_TYPE.WEAPON_SERVANT,
+		ItemConst.ITEM_TYPE.GIFT,
 		ItemConst.ITEM_TYPE.CURRENCY,
 		ItemConst.ITEM_TYPE.PORTRAIT,
 		ItemConst.ITEM_TYPE.FRAME,

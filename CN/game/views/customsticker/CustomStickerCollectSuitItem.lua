@@ -173,10 +173,10 @@ function var_0_0.Dispose(arg_11_0)
 	var_0_0.super.Dispose(arg_11_0)
 
 	for iter_11_0 = 1, #arg_11_0.fgPool_ do
-		if arg_11_0.fgPool[iter_11_0] then
-			arg_11_0.fgPool[iter_11_0]:Dispose()
+		if arg_11_0.fgPool_[iter_11_0] then
+			arg_11_0.fgPool_[iter_11_0]:Dispose()
 
-			arg_11_0.fgPool[iter_11_0] = nil
+			arg_11_0.fgPool_[iter_11_0] = nil
 		end
 	end
 

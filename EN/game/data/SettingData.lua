@@ -14,37 +14,30 @@ function var_0_0.InitSetting(arg_3_0)
 	local var_3_0 = GameLocalData:GetCommonModule("userSetting")
 	local var_3_1
 	local var_3_2 = {}
-	local var_3_3 = var_3_0.picOptionId == nil
 
-	if not PictureQualitySettingPcCfg[var_3_0.picOptionId] then
-		var_3_3 = true
-	end
-
-	if var_3_3 then
+	if isFirstOpen then
 		var_0_2 = true
 		var_3_1 = 5
 		var_3_2 = PictureQualitySettingPcCfg[var_3_1]
-	else
-		var_3_2 = PictureQualitySettingPcCfg[var_3_0.picOptionId]
 	end
 
-	local var_3_4 = AreaDifferenceCfg[GameToSDK.CURRENT_SERVER]
-	local var_3_5 = var_3_0.text_language or var_3_4.language_list[1]
+	local var_3_3 = AreaDifferenceCfg[GameToSDK.CURRENT_SERVER]
+	local var_3_4 = var_3_0.text_language or var_3_3.language_list[1]
 
 	if GameToSDK.Text_Language ~= "" then
-		var_3_5 = GameToSDK.Text_Language
+		var_3_4 = GameToSDK.Text_Language
 
 		arg_3_0:SaveData("text_language", GameToSDK.Text_Language)
 	end
 
-	if not table.indexof(var_3_4.language_list, var_3_5) then
-		var_3_5 = var_3_4.language_list[1]
+	if not table.indexof(var_3_3.language_list, var_3_4) then
+		var_3_4 = var_3_3.language_list[1]
 	end
 
-	local var_3_6 = var_3_0.voice_language or var_3_4.voice_list[1]
+	local var_3_5 = var_3_0.voice_language or var_3_3.voice_list[1]
 
-	if not table.indexof(var_3_4.voice_list, var_3_6) then
-		var_3_6 = var_3_4.voice_list[1]
+	if not table.indexof(var_3_3.voice_list, var_3_5) then
+		var_3_5 = var_3_3.voice_list[1]
 	end
 
 	var_0_1 = {
@@ -54,7 +47,7 @@ function var_0_0.InitSetting(arg_3_0)
 			teammate_effect = var_3_0.teammate_effect or var_3_2.teammate_effect,
 			user_effect = var_3_0.user_effect or var_3_2.user_effect or 3,
 			anti_aliasing = var_3_0.anti_aliasing or var_3_2.anti_aliasing,
-			hdr = var_3_0.hdr or var_3_2.hdr,
+			hdr = var_3_0.hdr or var_3_2.hdr or 1,
 			reflection_effect = var_3_0.reflection_effect or var_3_2.reflection_effect,
 			resolution = var_3_0.resolution or var_3_2.resolution
 		},
@@ -64,8 +57,8 @@ function var_0_0.InitSetting(arg_3_0)
 			voice = var_3_0.voice or 50,
 			sound_open = var_3_0.sound_open or 1,
 			teammate_sound_open = var_3_0.teammate_sound_open or 1,
-			voice_language = var_3_6,
-			text_language = var_3_5
+			voice_language = var_3_5,
+			text_language = var_3_4
 		},
 		push = {
 			push_btn = var_3_0.push_btn or 1,
@@ -147,7 +140,7 @@ function var_0_0.InitSetting(arg_3_0)
 		render_scale = var_3_0.render_scale or 1
 	}
 
-	if var_3_3 then
+	if isFirstOpen then
 		arg_3_0:SaveData("pic", var_0_1.pic)
 		arg_3_0:SaveData("battle_hit_num_mine", 1)
 		arg_3_0:SaveData("battle_hit_num_teammate", 1)
@@ -170,18 +163,18 @@ function var_0_0.InitSetting(arg_3_0)
 		arg_3_0:SaveData("battle_ui_rotate_speed_1", 0.5)
 		arg_3_0:SaveData("battle_ui_rotate_speed_2", 0.5)
 		arg_3_0:SaveData("battle_ui_rotate_speed_3", 0.5)
-		arg_3_0:SaveData("text_language", var_3_5)
+		arg_3_0:SaveData("text_language", var_3_4)
 	end
 
 	if var_0_1.sound and var_0_1.sound.voice_language then
-		local var_3_7 = VoiceLanguageCfg[var_0_1.sound.voice_language]
+		local var_3_6 = VoiceLanguageCfg[var_0_1.sound.voice_language]
 
-		if var_3_7 and not VoicePackageManager.Instance:IsHavePackage(var_3_7.affix) then
-			local var_3_8 = VoicePackageManager.Instance:GetValidPackage()
-			local var_3_9 = #VoiceLanguageCfg.all
+		if var_3_6 and not VoicePackageManager.Instance:IsHavePackage(var_3_6.affix) then
+			local var_3_7 = VoicePackageManager.Instance:GetValidPackage()
+			local var_3_8 = #VoiceLanguageCfg.all
 
-			for iter_3_0 = 1, var_3_9 do
-				if VoiceLanguageCfg[iter_3_0].affix == var_3_8 then
+			for iter_3_0 = 1, var_3_8 do
+				if VoiceLanguageCfg[iter_3_0].affix == var_3_7 then
 					var_0_1.sound.voice_language = iter_3_0
 				end
 			end

@@ -784,6 +784,23 @@
 			7507
 		}
 	},
+	[310012] = {
+		cost_item_list = "",
+		type = 0,
+		id = 310012,
+		title = "限时签到",
+		ui_path = "Widget/Version/CORGUI_3_11/CORGUI_3_11_SevenDaySignUI/CORGUI_3_11_SevenDaySignUI",
+		limit_level = 0,
+		config_list = {
+			7501,
+			7502,
+			7503,
+			7504,
+			7505,
+			7506,
+			7507
+		}
+	},
 	all = {
 		1,
 		60011,
@@ -827,6 +844,7 @@
 		290012,
 		300011,
 		300012,
-		310011
+		310011,
+		310012
 	}
 }

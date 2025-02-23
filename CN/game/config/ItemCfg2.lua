@@ -1,4 +1,670 @@
 ﻿return {
+	[520052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 520052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000278
+			},
+			{
+				507
+			}
+		}
+	},
+	[521052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 521052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000278
+			},
+			{
+				507
+			}
+		}
+	},
+	[522052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 522052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000278
+			},
+			{
+				507
+			}
+		}
+	},
+	[523052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 523052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000278
+			},
+			{
+				507
+			}
+		}
+	},
+	[524052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 524052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000278
+			},
+			{
+				507
+			}
+		}
+	},
+	[525052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 525052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000278
+			},
+			{
+				507
+			}
+		}
+	},
+	[529052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 529052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000278
+			},
+			{
+				507
+			}
+		}
+	},
+	[230052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 230052,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			}
+		}
+	},
+	[330052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 330052,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			}
+		}
+	},
+	[430052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 430052,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				507
+			}
+		}
+	},
+	[530052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 530052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000277
+			},
+			{
+				507
+			}
+		}
+	},
+	[531052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 531052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000277
+			},
+			{
+				507
+			}
+		}
+	},
+	[532052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 532052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000277
+			},
+			{
+				507
+			}
+		}
+	},
+	[533052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 533052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000277
+			},
+			{
+				507
+			}
+		}
+	},
+	[534052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 534052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000277
+			},
+			{
+				507
+			}
+		}
+	},
+	[535052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 535052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000277
+			},
+			{
+				507
+			}
+		}
+	},
+	[539052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 539052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000277
+			},
+			{
+				507
+			}
+		}
+	},
+	[240052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 240052,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			}
+		}
+	},
+	[340052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 340052,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			}
+		}
+	},
+	[440052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 440052,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				507
+			}
+		}
+	},
+	[540052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 540052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000276
+			},
+			{
+				507
+			}
+		}
+	},
+	[541052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 541052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000276
+			},
+			{
+				507
+			}
+		}
+	},
+	[542052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 542052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000276
+			},
+			{
+				507
+			}
+		}
+	},
+	[543052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 543052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000276
+			},
+			{
+				507
+			}
+		}
+	},
+	[544052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 544052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000276
+			},
+			{
+				507
+			}
+		}
+	},
+	[545052] = {
+		decompose_id = 0,
+		name = "玄冥的暗涌Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 545052,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——数数回转，所向无常。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "52",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000276
+			},
+			{
+				507
+			}
+		}
+	},
 	[549052] = {
 		decompose_id = 0,
 		name = "玄冥的暗涌Ⅳ",
@@ -5080,7 +5746,11 @@
 		icon = "56",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[310056] = {
 		decompose_id = 0,
@@ -5096,7 +5766,11 @@
 		icon = "56",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[410056] = {
 		decompose_id = 0,
@@ -5114,7 +5788,10 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5134,7 +5811,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000303
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5154,7 +5838,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000303
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5174,7 +5865,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000303
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5194,7 +5892,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000303
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5214,7 +5919,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000303
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5234,7 +5946,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000303
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5254,7 +5973,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000303
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5272,7 +5998,11 @@
 		icon = "56",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[320056] = {
 		decompose_id = 0,
@@ -5288,7 +6018,11 @@
 		icon = "56",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[420056] = {
 		decompose_id = 0,
@@ -5306,7 +6040,10 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5326,7 +6063,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000302
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5346,7 +6090,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000302
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5366,7 +6117,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000302
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5386,7 +6144,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000302
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5406,7 +6171,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000302
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5426,7 +6198,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000302
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5446,7 +6225,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000302
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5464,7 +6250,11 @@
 		icon = "56",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[330056] = {
 		decompose_id = 0,
@@ -5480,7 +6270,11 @@
 		icon = "56",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[430056] = {
 		decompose_id = 0,
@@ -5498,7 +6292,10 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5518,7 +6315,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000301
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5538,7 +6342,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000301
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5558,7 +6369,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000301
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5578,7 +6396,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000301
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5598,7 +6423,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000301
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5618,7 +6450,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000301
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5638,7 +6477,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000301
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5656,7 +6502,11 @@
 		icon = "56",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[340056] = {
 		decompose_id = 0,
@@ -5672,7 +6522,11 @@
 		icon = "56",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[440056] = {
 		decompose_id = 0,
@@ -5690,7 +6544,10 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5710,7 +6567,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000300
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5730,7 +6594,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000300
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5750,7 +6621,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000300
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5770,7 +6648,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000300
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5790,7 +6675,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000300
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5810,7 +6702,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000300
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5830,7 +6729,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000300
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5848,7 +6754,11 @@
 		icon = "56",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[350056] = {
 		decompose_id = 0,
@@ -5864,7 +6774,11 @@
 		icon = "56",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[450056] = {
 		decompose_id = 0,
@@ -5882,7 +6796,10 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5902,7 +6819,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000299
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5922,7 +6846,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000299
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5942,7 +6873,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000299
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5962,7 +6900,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000299
+			},
+			{
+				507
 			}
 		}
 	},
@@ -5982,7 +6927,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000299
+			},
+			{
+				507
 			}
 		}
 	},
@@ -6002,7 +6954,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000299
+			},
+			{
+				507
 			}
 		}
 	},
@@ -6022,7 +6981,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000299
+			},
+			{
+				507
 			}
 		}
 	},
@@ -6040,7 +7006,11 @@
 		icon = "56",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[360056] = {
 		decompose_id = 0,
@@ -6056,7 +7026,11 @@
 		icon = "56",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[460056] = {
 		decompose_id = 0,
@@ -6074,7 +7048,10 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -6094,7 +7071,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000298
+			},
+			{
+				507
 			}
 		}
 	},
@@ -6114,7 +7098,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000298
+			},
+			{
+				507
 			}
 		}
 	},
@@ -6134,7 +7125,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000298
+			},
+			{
+				507
 			}
 		}
 	},
@@ -6154,7 +7152,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000298
+			},
+			{
+				507
 			}
 		}
 	},
@@ -6174,7 +7179,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000298
+			},
+			{
+				507
 			}
 		}
 	},
@@ -6194,7 +7206,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000298
+			},
+			{
+				507
 			}
 		}
 	},
@@ -6214,7 +7233,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000298
+			},
+			{
+				507
 			}
 		}
 	},
@@ -15436,7 +16462,7 @@
 	},
 	[210065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅰ",
+		name = "守护者的低语Ⅰ",
 		compose_id = 0,
 		type = 7,
 		id = 210065,
@@ -15452,7 +16478,7 @@
 	},
 	[310065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅰ",
+		name = "守护者的低语Ⅰ",
 		compose_id = 0,
 		type = 7,
 		id = 310065,
@@ -15468,7 +16494,7 @@
 	},
 	[410065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅰ",
+		name = "守护者的低语Ⅰ",
 		compose_id = 0,
 		type = 7,
 		id = 410065,
@@ -15488,7 +16514,7 @@
 	},
 	[510065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅰ",
+		name = "守护者的低语Ⅰ",
 		compose_id = 0,
 		type = 7,
 		id = 510065,
@@ -15508,7 +16534,7 @@
 	},
 	[511065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅰ",
+		name = "守护者的低语Ⅰ",
 		compose_id = 0,
 		type = 7,
 		id = 511065,
@@ -15528,7 +16554,7 @@
 	},
 	[512065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅰ",
+		name = "守护者的低语Ⅰ",
 		compose_id = 0,
 		type = 7,
 		id = 512065,
@@ -15548,7 +16574,7 @@
 	},
 	[513065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅰ",
+		name = "守护者的低语Ⅰ",
 		compose_id = 0,
 		type = 7,
 		id = 513065,
@@ -15568,7 +16594,7 @@
 	},
 	[514065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅰ",
+		name = "守护者的低语Ⅰ",
 		compose_id = 0,
 		type = 7,
 		id = 514065,
@@ -15588,7 +16614,7 @@
 	},
 	[515065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅰ",
+		name = "守护者的低语Ⅰ",
 		compose_id = 0,
 		type = 7,
 		id = 515065,
@@ -15608,7 +16634,7 @@
 	},
 	[519065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅰ",
+		name = "守护者的低语Ⅰ",
 		compose_id = 0,
 		type = 7,
 		id = 519065,
@@ -15628,7 +16654,7 @@
 	},
 	[220065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅱ",
+		name = "守护者的低语Ⅱ",
 		compose_id = 0,
 		type = 7,
 		id = 220065,
@@ -15644,7 +16670,7 @@
 	},
 	[320065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅱ",
+		name = "守护者的低语Ⅱ",
 		compose_id = 0,
 		type = 7,
 		id = 320065,
@@ -15660,7 +16686,7 @@
 	},
 	[420065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅱ",
+		name = "守护者的低语Ⅱ",
 		compose_id = 0,
 		type = 7,
 		id = 420065,
@@ -15680,7 +16706,7 @@
 	},
 	[520065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅱ",
+		name = "守护者的低语Ⅱ",
 		compose_id = 0,
 		type = 7,
 		id = 520065,
@@ -15700,7 +16726,7 @@
 	},
 	[521065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅱ",
+		name = "守护者的低语Ⅱ",
 		compose_id = 0,
 		type = 7,
 		id = 521065,
@@ -15720,7 +16746,7 @@
 	},
 	[522065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅱ",
+		name = "守护者的低语Ⅱ",
 		compose_id = 0,
 		type = 7,
 		id = 522065,
@@ -15740,7 +16766,7 @@
 	},
 	[523065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅱ",
+		name = "守护者的低语Ⅱ",
 		compose_id = 0,
 		type = 7,
 		id = 523065,
@@ -15760,7 +16786,7 @@
 	},
 	[524065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅱ",
+		name = "守护者的低语Ⅱ",
 		compose_id = 0,
 		type = 7,
 		id = 524065,
@@ -15780,7 +16806,7 @@
 	},
 	[525065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅱ",
+		name = "守护者的低语Ⅱ",
 		compose_id = 0,
 		type = 7,
 		id = 525065,
@@ -15800,7 +16826,7 @@
 	},
 	[529065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅱ",
+		name = "守护者的低语Ⅱ",
 		compose_id = 0,
 		type = 7,
 		id = 529065,
@@ -15820,7 +16846,7 @@
 	},
 	[230065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅲ",
+		name = "守护者的低语Ⅲ",
 		compose_id = 0,
 		type = 7,
 		id = 230065,
@@ -15836,7 +16862,7 @@
 	},
 	[330065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅲ",
+		name = "守护者的低语Ⅲ",
 		compose_id = 0,
 		type = 7,
 		id = 330065,
@@ -15852,7 +16878,7 @@
 	},
 	[430065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅲ",
+		name = "守护者的低语Ⅲ",
 		compose_id = 0,
 		type = 7,
 		id = 430065,
@@ -15872,7 +16898,7 @@
 	},
 	[530065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅲ",
+		name = "守护者的低语Ⅲ",
 		compose_id = 0,
 		type = 7,
 		id = 530065,
@@ -15892,7 +16918,7 @@
 	},
 	[531065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅲ",
+		name = "守护者的低语Ⅲ",
 		compose_id = 0,
 		type = 7,
 		id = 531065,
@@ -15912,7 +16938,7 @@
 	},
 	[532065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅲ",
+		name = "守护者的低语Ⅲ",
 		compose_id = 0,
 		type = 7,
 		id = 532065,
@@ -15932,7 +16958,7 @@
 	},
 	[533065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅲ",
+		name = "守护者的低语Ⅲ",
 		compose_id = 0,
 		type = 7,
 		id = 533065,
@@ -15952,7 +16978,7 @@
 	},
 	[534065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅲ",
+		name = "守护者的低语Ⅲ",
 		compose_id = 0,
 		type = 7,
 		id = 534065,
@@ -15972,7 +16998,7 @@
 	},
 	[535065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅲ",
+		name = "守护者的低语Ⅲ",
 		compose_id = 0,
 		type = 7,
 		id = 535065,
@@ -15992,7 +17018,7 @@
 	},
 	[539065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅲ",
+		name = "守护者的低语Ⅲ",
 		compose_id = 0,
 		type = 7,
 		id = 539065,
@@ -16012,7 +17038,7 @@
 	},
 	[240065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅳ",
+		name = "守护者的低语Ⅳ",
 		compose_id = 0,
 		type = 7,
 		id = 240065,
@@ -16028,7 +17054,7 @@
 	},
 	[340065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅳ",
+		name = "守护者的低语Ⅳ",
 		compose_id = 0,
 		type = 7,
 		id = 340065,
@@ -16044,7 +17070,7 @@
 	},
 	[440065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅳ",
+		name = "守护者的低语Ⅳ",
 		compose_id = 0,
 		type = 7,
 		id = 440065,
@@ -16064,7 +17090,7 @@
 	},
 	[540065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅳ",
+		name = "守护者的低语Ⅳ",
 		compose_id = 0,
 		type = 7,
 		id = 540065,
@@ -16084,7 +17110,7 @@
 	},
 	[541065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅳ",
+		name = "守护者的低语Ⅳ",
 		compose_id = 0,
 		type = 7,
 		id = 541065,
@@ -16104,7 +17130,7 @@
 	},
 	[542065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅳ",
+		name = "守护者的低语Ⅳ",
 		compose_id = 0,
 		type = 7,
 		id = 542065,
@@ -16124,7 +17150,7 @@
 	},
 	[543065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅳ",
+		name = "守护者的低语Ⅳ",
 		compose_id = 0,
 		type = 7,
 		id = 543065,
@@ -16144,7 +17170,7 @@
 	},
 	[544065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅳ",
+		name = "守护者的低语Ⅳ",
 		compose_id = 0,
 		type = 7,
 		id = 544065,
@@ -16164,7 +17190,7 @@
 	},
 	[545065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅳ",
+		name = "守护者的低语Ⅳ",
 		compose_id = 0,
 		type = 7,
 		id = 545065,
@@ -16184,7 +17210,7 @@
 	},
 	[549065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅳ",
+		name = "守护者的低语Ⅳ",
 		compose_id = 0,
 		type = 7,
 		id = 549065,
@@ -16204,7 +17230,7 @@
 	},
 	[250065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅴ",
+		name = "守护者的低语Ⅴ",
 		compose_id = 0,
 		type = 7,
 		id = 250065,
@@ -16220,7 +17246,7 @@
 	},
 	[350065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅴ",
+		name = "守护者的低语Ⅴ",
 		compose_id = 0,
 		type = 7,
 		id = 350065,
@@ -16236,7 +17262,7 @@
 	},
 	[450065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅴ",
+		name = "守护者的低语Ⅴ",
 		compose_id = 0,
 		type = 7,
 		id = 450065,
@@ -16256,7 +17282,7 @@
 	},
 	[550065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅴ",
+		name = "守护者的低语Ⅴ",
 		compose_id = 0,
 		type = 7,
 		id = 550065,
@@ -16276,7 +17302,7 @@
 	},
 	[551065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅴ",
+		name = "守护者的低语Ⅴ",
 		compose_id = 0,
 		type = 7,
 		id = 551065,
@@ -16296,7 +17322,7 @@
 	},
 	[552065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅴ",
+		name = "守护者的低语Ⅴ",
 		compose_id = 0,
 		type = 7,
 		id = 552065,
@@ -16316,7 +17342,7 @@
 	},
 	[553065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅴ",
+		name = "守护者的低语Ⅴ",
 		compose_id = 0,
 		type = 7,
 		id = 553065,
@@ -16336,7 +17362,7 @@
 	},
 	[554065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅴ",
+		name = "守护者的低语Ⅴ",
 		compose_id = 0,
 		type = 7,
 		id = 554065,
@@ -16356,7 +17382,7 @@
 	},
 	[555065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅴ",
+		name = "守护者的低语Ⅴ",
 		compose_id = 0,
 		type = 7,
 		id = 555065,
@@ -16376,7 +17402,7 @@
 	},
 	[559065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅴ",
+		name = "守护者的低语Ⅴ",
 		compose_id = 0,
 		type = 7,
 		id = 559065,
@@ -16396,7 +17422,7 @@
 	},
 	[260065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅵ",
+		name = "守护者的低语Ⅵ",
 		compose_id = 0,
 		type = 7,
 		id = 260065,
@@ -16412,7 +17438,7 @@
 	},
 	[360065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅵ",
+		name = "守护者的低语Ⅵ",
 		compose_id = 0,
 		type = 7,
 		id = 360065,
@@ -16428,7 +17454,7 @@
 	},
 	[460065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅵ",
+		name = "守护者的低语Ⅵ",
 		compose_id = 0,
 		type = 7,
 		id = 460065,
@@ -16448,7 +17474,7 @@
 	},
 	[560065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅵ",
+		name = "守护者的低语Ⅵ",
 		compose_id = 0,
 		type = 7,
 		id = 560065,
@@ -16468,7 +17494,7 @@
 	},
 	[561065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅵ",
+		name = "守护者的低语Ⅵ",
 		compose_id = 0,
 		type = 7,
 		id = 561065,
@@ -16488,7 +17514,7 @@
 	},
 	[562065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅵ",
+		name = "守护者的低语Ⅵ",
 		compose_id = 0,
 		type = 7,
 		id = 562065,
@@ -16508,7 +17534,7 @@
 	},
 	[563065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅵ",
+		name = "守护者的低语Ⅵ",
 		compose_id = 0,
 		type = 7,
 		id = 563065,
@@ -16528,7 +17554,7 @@
 	},
 	[564065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅵ",
+		name = "守护者的低语Ⅵ",
 		compose_id = 0,
 		type = 7,
 		id = 564065,
@@ -16548,7 +17574,7 @@
 	},
 	[565065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅵ",
+		name = "守护者的低语Ⅵ",
 		compose_id = 0,
 		type = 7,
 		id = 565065,
@@ -16568,7 +17594,7 @@
 	},
 	[569065] = {
 		decompose_id = 0,
-		name = "守护者的低语 Ⅵ",
+		name = "守护者的低语Ⅵ",
 		compose_id = 0,
 		type = 7,
 		id = 569065,
@@ -16578,6 +17604,1158 @@
 		sub_type = 0,
 		display_rare = 5,
 		icon = "65",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[210066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 210066,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[310066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 310066,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[410066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 410066,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[510066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 510066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[511066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 511066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[512066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 512066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[513066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 513066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[514066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 514066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[515066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 515066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[519066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 519066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[220066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 220066,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[320066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 320066,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[420066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 420066,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[520066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 520066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[521066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 521066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[522066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 522066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[523066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 523066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[524066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 524066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[525066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 525066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[529066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 529066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[230066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 230066,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[330066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 330066,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[430066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 430066,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[530066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 530066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[531066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 531066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[532066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 532066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[533066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 533066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[534066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 534066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[535066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 535066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[539066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 539066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[240066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 240066,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[340066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 340066,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[440066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 440066,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[540066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 540066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[541066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 541066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[542066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 542066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[543066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 543066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[544066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 544066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[545066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 545066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[549066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 549066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[250066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 250066,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[350066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 350066,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[450066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 450066,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[550066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 550066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[551066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 551066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[552066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 552066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[553066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 553066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[554066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 554066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[555066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 555066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[559066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 559066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[260066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 260066,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[360066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 360066,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[460066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 460066,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[560066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 560066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[561066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 561066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[562066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 562066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[563066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 563066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[564066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 564066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[565066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 565066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[569066] = {
+		decompose_id = 0,
+		name = "万卷明宗Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 569066,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——知情通理，明德幽远，一言以蔽万物。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "66",
 		use = 0,
 		max = 0,
 		source = {
@@ -24776,6 +26954,132 @@
 		},
 		source = {}
 	},
+	[830066] = {
+		name = "万卷明宗(3星套装)",
+		id = 830066,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "套装包含：万卷明宗6个不同位置的3星部件。",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830066",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310066,
+				1
+			},
+			{
+				320066,
+				1
+			},
+			{
+				330066,
+				1
+			},
+			{
+				340066,
+				1
+			},
+			{
+				350066,
+				1
+			},
+			{
+				360066,
+				1
+			}
+		},
+		source = {}
+	},
+	[840066] = {
+		name = "万卷明宗(4星套装)",
+		id = 840066,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "套装包含：万卷明宗6个不同位置的4星部件。",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840066",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410066,
+				1
+			},
+			{
+				420066,
+				1
+			},
+			{
+				430066,
+				1
+			},
+			{
+				440066,
+				1
+			},
+			{
+				450066,
+				1
+			},
+			{
+				460066,
+				1
+			}
+		},
+		source = {}
+	},
+	[850066] = {
+		name = "万卷明宗(5星套装)",
+		id = 850066,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "套装包含：万卷明宗6个不同位置的5星部件。",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850066",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510066,
+				1
+			},
+			{
+				520066,
+				1
+			},
+			{
+				530066,
+				1
+			},
+			{
+				540066,
+				1
+			},
+			{
+				550066,
+				1
+			},
+			{
+				560066,
+				1
+			}
+		},
+		source = {}
+	},
 	[941001] = {
 		decompose_id = 0,
 		name = "炒锅",
@@ -25412,6 +27716,22 @@
 		sub_type = 0,
 		display_rare = 5,
 		icon = "950029",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950030] = {
+		decompose_id = 0,
+		name = "良药苦口",
+		compose_id = 0,
+		type = 15,
+		id = 950030,
+		rare = 5,
+		desc = "近来药材长势还不错……唔，比想象中还要苦一些。\n（陵光与该家具互动时有特殊动画）",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950030",
 		use = 0,
 		max = 0,
 		source = {}
@@ -33477,6 +35797,29 @@
 			}
 		}
 	},
+	[2590010] = {
+		decompose_id = 0,
+		name = "方异·敏牛",
+		compose_id = 0,
+		type = 9,
+		id = 2590010,
+		rare = 5,
+		desc = "特定权钥的顺位适格者，修正者的前身，当与权钥结合时可以改变其对神力的控制方式。\n<color=#9A9A9A>在各处奔波不停的信使少女。对她而言，怎样的险境都能如履平地。</color>",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "2590010",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				1703
+			},
+			{
+				409
+			}
+		}
+	},
 	[2590999] = {
 		decompose_id = 0,
 		name = "方异·狰",
@@ -34795,6 +37138,22 @@
 		max = 0,
 		source = {}
 	},
+	[2110283] = {
+		decompose_id = 0,
+		name = "轰雷·运动时间",
+		compose_id = 0,
+		type = 11,
+		id = 2110283,
+		rare = 5,
+		limit = 0,
+		desc_source = "获得轰雷·托尔换装「运动时间」",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "102802",
+		use = 0,
+		max = 0,
+		source = {}
+	},
 	[2111321] = {
 		decompose_id = 0,
 		name = "烙焰",
@@ -34983,6 +37342,22 @@
 		sub_type = 1,
 		display_rare = 5,
 		icon = "107502",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2110754] = {
+		decompose_id = 0,
+		name = "澄心·试春衣",
+		compose_id = 0,
+		type = 11,
+		id = 2110754,
+		rare = 5,
+		limit = 0,
+		desc_source = "获得澄心·陵光换装「试春衣」",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "107503",
 		use = 0,
 		max = 0,
 		source = {}
@@ -35638,6 +38013,38 @@
 		sub_type = 1,
 		display_rare = 5,
 		icon = "103401",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2110121] = {
+		decompose_id = 0,
+		name = "天诫",
+		compose_id = 0,
+		type = 11,
+		id = 2110121,
+		rare = 5,
+		limit = 0,
+		desc_source = "获得天诫·白泽",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "1012",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2110122] = {
+		decompose_id = 0,
+		name = "天诫·倚新妆",
+		compose_id = 0,
+		type = 11,
+		id = 2110122,
+		rare = 5,
+		limit = 0,
+		desc_source = "获得天诫·白泽换装「倚新妆」",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "101201",
 		use = 0,
 		max = 0,
 		source = {}
@@ -37076,6 +39483,63 @@
 		},
 		source = {}
 	},
+	[101201] = {
+		id = 101201,
+		compose_id = 0,
+		type = 8,
+		decompose_id = 0,
+		rare = 5,
+		desc = "天诫·白泽的换装「倚新妆」。\n——",
+		desc_source = "换装商店购买获得",
+		sub_type = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "101201",
+		use = 0,
+		max = 0,
+		param = {
+			101201
+		},
+		source = {}
+	},
+	[107503] = {
+		id = 107503,
+		compose_id = 0,
+		type = 8,
+		decompose_id = 0,
+		rare = 5,
+		desc = "澄心·陵光的换装「试春衣」。\n——",
+		desc_source = "换装商店购买获得",
+		sub_type = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "107503",
+		use = 0,
+		max = 0,
+		param = {
+			107503
+		},
+		source = {}
+	},
+	[102802] = {
+		id = 102802,
+		compose_id = 0,
+		type = 8,
+		decompose_id = 0,
+		rare = 5,
+		desc = "轰雷·托尔的换装「运动时间」。\n——",
+		desc_source = "换装商店购买获得",
+		sub_type = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "102802",
+		use = 0,
+		max = 0,
+		param = {
+			102802
+		},
+		source = {}
+	},
 	[1037011] = {
 		name = "兑换券-冒牌女仆",
 		id = 1037011,
@@ -38425,6 +40889,20 @@
 		sub_type = 0,
 		display_rare = 5,
 		icon = "1034",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[1012] = {
+		decompose_id = 0,
+		compose_id = 0,
+		display_rare = 5,
+		type = 2,
+		limit = 0,
+		rare = 5,
+		sub_type = 0,
+		id = 1012,
+		icon = "1012",
 		use = 0,
 		max = 0,
 		source = {}
@@ -40177,6 +42655,29 @@
 			}
 		}
 	},
+	[11012] = {
+		decompose_id = 0,
+		name = "天诫情报",
+		compose_id = 0,
+		type = 3,
+		id = 11012,
+		rare = 5,
+		desc = "关于天诫·白泽的碎片化信息，获得足够多之后即可顺利招募。碎片化信息亦可用于制定进阶培养方案。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "1012",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				408
+			},
+			{
+				502
+			}
+		}
+	},
 	[1010950103] = {
 		decompose_id = 0,
 		name = "「入暮之诗」试衣底片（3天）",
@@ -41637,6 +44138,112 @@
 			10000
 		}
 	},
+	[1010120103] = {
+		decompose_id = 0,
+		name = "「倚新妆」试衣底片（3天）",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "使用后可以限时体验指定修正者皮肤。\n——拉克妮高定为回馈顾客发放的试衣底片，放入换装相机后即可暂时试装。",
+		compose_id = 0,
+		icon = "10101201",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "限时活动获取",
+		id = 1010120103,
+		param = {
+			1110120103
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1010750303] = {
+		decompose_id = 0,
+		name = "「试春衣」试衣底片（3天）",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "使用后可以限时体验指定修正者皮肤。\n——拉克妮高定为回馈顾客发放的试衣底片，放入换装相机后即可暂时试装。",
+		compose_id = 0,
+		icon = "10107503",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "限时活动获取",
+		id = 1010750303,
+		param = {
+			1110750303,
+			4603103
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1010280203] = {
+		decompose_id = 0,
+		name = "「运动时间」试衣底片（3天）",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "使用后可以限时体验指定修正者皮肤。\n——拉克妮高定为回馈顾客发放的试衣底片，放入换装相机后即可暂时试装。",
+		compose_id = 0,
+		icon = "10102802",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "限时活动获取",
+		id = 1010280203,
+		param = {
+			1110280203
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
 	[1110950103] = {
 		decompose_id = 0,
 		name = "苍鹭-入暮之诗（3天）",
@@ -42969,6 +45576,96 @@
 			}
 		}
 	},
+	[1110120103] = {
+		name = "天诫-倚新妆（3天）",
+		type = 8,
+		id = 1110120103,
+		rare = 5,
+		desc = "天诫·白泽的换装「倚新妆」。",
+		compose_id = 0,
+		sub_type = 801,
+		decompose_id = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "101201",
+		use = 0,
+		max = 0,
+		param = {
+			101201
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[1110750303] = {
+		name = "澄心-试春衣（3天）",
+		type = 8,
+		id = 1110750303,
+		rare = 5,
+		desc = "澄心·陵光的换装「试春衣」。",
+		compose_id = 0,
+		sub_type = 801,
+		decompose_id = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "107503",
+		use = 0,
+		max = 0,
+		param = {
+			107503
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[1110280203] = {
+		name = "轰雷-运动时间（3天）",
+		type = 8,
+		id = 1110280203,
+		rare = 5,
+		desc = "轰雷·托尔的换装「运动时间」。",
+		compose_id = 0,
+		sub_type = 801,
+		decompose_id = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "102802",
+		use = 0,
+		max = 0,
+		param = {
+			102802
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
 	[4600703] = {
 		decompose_id = 0,
 		name = "花庭余响（3天）",
@@ -43651,6 +46348,37 @@
 			}
 		}
 	},
+	[4603103] = {
+		decompose_id = 0,
+		name = "不思量（3天）",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "阶前细雨，廊边红袖，透过半掩的扇子，从她流转的眸光中，你似乎看见了自己的倒影。",
+		sub_type = 2101,
+		icon = "6031",
+		use = 0,
+		max = 0,
+		rare = 5,
+		littleicon = "6031",
+		id = 4603103,
+		param = {
+			6031
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
 	[4602803] = {
 		decompose_id = 0,
 		name = "杯光摇曳时（3天）",
@@ -43812,7 +46540,8 @@
 			11089,
 			11248,
 			11133,
-			11034
+			11034,
+			11012
 		},
 		[2] = {
 			1039,
@@ -43881,7 +46610,8 @@
 			1089,
 			1248,
 			1133,
-			1034
+			1034,
+			1012
 		},
 		[14] = {
 			1037011,
@@ -43974,6 +46704,9 @@
 			103401,
 			102202,
 			101502,
+			101201,
+			107503,
+			102802,
 			1110950103,
 			1110720103,
 			1110750203,
@@ -44013,7 +46746,10 @@
 			1110340103,
 			1110220203,
 			1110150203,
-			1110700203
+			1110700203,
+			1110120103,
+			1110750303,
+			1110280203
 		},
 		[11] = {
 			2110841,
@@ -44097,6 +46833,7 @@
 			2110522,
 			2110281,
 			2110282,
+			2110283,
 			2111321,
 			2110701,
 			2110702,
@@ -44109,6 +46846,7 @@
 			2110751,
 			2110752,
 			2110753,
+			2110754,
 			2110721,
 			2110761,
 			2110762,
@@ -44150,6 +46888,8 @@
 			2111332,
 			2110341,
 			2110342,
+			2110121,
+			2110122,
 			2200002,
 			2200003,
 			2200004,
@@ -44258,6 +46998,7 @@
 			2590007,
 			2590008,
 			2590009,
+			2590010,
 			2590999
 		},
 		[24] = {
@@ -44354,6 +47095,7 @@
 			950027,
 			950028,
 			950029,
+			950030,
 			950901,
 			950902,
 			950903,
@@ -48575,7 +51317,67 @@
 			563065,
 			564065,
 			565065,
-			569065
+			569065,
+			210066,
+			310066,
+			410066,
+			510066,
+			511066,
+			512066,
+			513066,
+			514066,
+			515066,
+			519066,
+			220066,
+			320066,
+			420066,
+			520066,
+			521066,
+			522066,
+			523066,
+			524066,
+			525066,
+			529066,
+			230066,
+			330066,
+			430066,
+			530066,
+			531066,
+			532066,
+			533066,
+			534066,
+			535066,
+			539066,
+			240066,
+			340066,
+			440066,
+			540066,
+			541066,
+			542066,
+			543066,
+			544066,
+			545066,
+			549066,
+			250066,
+			350066,
+			450066,
+			550066,
+			551066,
+			552066,
+			553066,
+			554066,
+			555066,
+			559066,
+			260066,
+			360066,
+			460066,
+			560066,
+			561066,
+			562066,
+			563066,
+			564066,
+			565066,
+			569066
 		},
 		[20] = {
 			90001,
@@ -48669,6 +51471,18 @@
 			90089,
 			90090,
 			90091,
+			90092,
+			90093,
+			90094,
+			90095,
+			90096,
+			90097,
+			90098,
+			90099,
+			90100,
+			90101,
+			90102,
+			90103,
 			91001,
 			91002,
 			91003,
@@ -48769,6 +51583,7 @@
 			50051,
 			50052,
 			50053,
+			50054,
 			50055
 		},
 		[5] = {
@@ -49266,7 +52081,10 @@
 			850064,
 			830065,
 			840065,
-			850065
+			850065,
+			830066,
+			840066,
+			850066
 		},
 		[4] = {
 			20001,
@@ -49301,6 +52119,8 @@
 			70003,
 			70004,
 			70005,
+			70006,
+			70007,
 			1010950103,
 			1010720103,
 			1010750203,
@@ -49341,7 +52161,10 @@
 			1010340103,
 			1010220203,
 			1010150203,
-			1010700203
+			1010700203,
+			1010120103,
+			1010750303,
+			1010280203
 		},
 		[25] = {
 			11001
@@ -49525,7 +52348,9 @@
 			53141,
 			53142,
 			53150,
+			53151,
 			53152,
+			53153,
 			53999,
 			54006,
 			54049,
@@ -49569,7 +52394,9 @@
 			81056,
 			81037,
 			81067,
-			81026
+			81026,
+			81017,
+			81132
 		},
 		[26] = {
 			9001,
@@ -49620,7 +52447,8 @@
 			7110,
 			7111,
 			7112,
-			7113
+			7113,
+			7114
 		},
 		[21] = {
 			6000,
@@ -49653,6 +52481,7 @@
 			6027,
 			6028,
 			6029,
+			6031,
 			6100,
 			4600703,
 			4600803,
@@ -49676,6 +52505,7 @@
 			4602503,
 			4602403,
 			4602703,
+			4603103,
 			4602803,
 			4602903,
 			4602603
@@ -49805,7 +52635,8 @@
 			2919,
 			2920,
 			2921,
-			2922
+			2922,
+			2926
 		},
 		{
 			1,
@@ -49949,6 +52780,8 @@
 			54079,
 			54080,
 			54081,
+			54082,
+			54083,
 			54112,
 			54113,
 			54114,
@@ -50007,7 +52840,10 @@
 			1110340103,
 			1110220203,
 			1110150203,
-			1110700203
+			1110700203,
+			1110120103,
+			1110750303,
+			1110280203
 		},
 		[407] = {
 			1010950103,
@@ -50050,7 +52886,10 @@
 			1010340103,
 			1010220203,
 			1010150203,
-			1010700203
+			1010700203,
+			1010120103,
+			1010750303,
+			1010280203
 		},
 		[4] = {
 			941001,
@@ -50106,7 +52945,13 @@
 			81056,
 			81037,
 			81067,
-			81026
+			81026,
+			81017,
+			81132
+		},
+		[408] = {
+			70006,
+			70007
 		},
 		[406] = {
 			70001,
@@ -50223,6 +53068,7 @@
 			50051,
 			50052,
 			50053,
+			50054,
 			50055,
 			2110841,
 			2110842,
@@ -50305,6 +53151,7 @@
 			2110522,
 			2110281,
 			2110282,
+			2110283,
 			2111321,
 			2110701,
 			2110702,
@@ -50317,6 +53164,7 @@
 			2110751,
 			2110752,
 			2110753,
+			2110754,
 			2110721,
 			2110761,
 			2110762,
@@ -50358,6 +53206,8 @@
 			2111332,
 			2110341,
 			2110342,
+			2110121,
+			2110122,
 			2200002,
 			2200003,
 			2200004,
@@ -50927,7 +53777,10 @@
 			850064,
 			830065,
 			840065,
-			850065
+			850065,
+			830066,
+			840066,
+			850066
 		},
 		[507] = {
 			30031,
@@ -51056,6 +53909,7 @@
 			6027,
 			6028,
 			6029,
+			6031,
 			6100,
 			4600703,
 			4600803,
@@ -51079,6 +53933,7 @@
 			4602503,
 			4602403,
 			4602703,
+			4603103,
 			4602803,
 			4602903,
 			4602603
@@ -51213,7 +54068,8 @@
 			2918,
 			2919,
 			2921,
-			2922
+			2922,
+			2926
 		},
 		[1702] = {
 			49,
@@ -51322,6 +54178,7 @@
 			7111,
 			7112,
 			7113,
+			7114,
 			8001,
 			8002,
 			8003,
@@ -51450,7 +54307,9 @@
 			53141,
 			53142,
 			53150,
+			53151,
 			53152,
+			53153,
 			53999,
 			54001,
 			54002,
@@ -51529,6 +54388,8 @@
 			54079,
 			54080,
 			54081,
+			54082,
+			54083,
 			54112,
 			54113,
 			54114,
@@ -51636,6 +54497,18 @@
 			90089,
 			90090,
 			90091,
+			90092,
+			90093,
+			90094,
+			90095,
+			90096,
+			90097,
+			90098,
+			90099,
+			90100,
+			90101,
+			90102,
+			90103,
 			91001,
 			91002,
 			91003,
@@ -55541,6 +58414,66 @@
 			564065,
 			565065,
 			569065,
+			210066,
+			310066,
+			410066,
+			510066,
+			511066,
+			512066,
+			513066,
+			514066,
+			515066,
+			519066,
+			220066,
+			320066,
+			420066,
+			520066,
+			521066,
+			522066,
+			523066,
+			524066,
+			525066,
+			529066,
+			230066,
+			330066,
+			430066,
+			530066,
+			531066,
+			532066,
+			533066,
+			534066,
+			535066,
+			539066,
+			240066,
+			340066,
+			440066,
+			540066,
+			541066,
+			542066,
+			543066,
+			544066,
+			545066,
+			549066,
+			250066,
+			350066,
+			450066,
+			550066,
+			551066,
+			552066,
+			553066,
+			554066,
+			555066,
+			559066,
+			260066,
+			360066,
+			460066,
+			560066,
+			561066,
+			562066,
+			563066,
+			564066,
+			565066,
+			569066,
 			950001,
 			950002,
 			950003,
@@ -55569,6 +58502,7 @@
 			950027,
 			950028,
 			950029,
+			950030,
 			950901,
 			950902,
 			950903,
@@ -56037,6 +58971,7 @@
 			2590007,
 			2590008,
 			2590009,
+			2590010,
 			2590999,
 			103901,
 			103906,
@@ -56105,6 +59040,9 @@
 			103401,
 			102202,
 			101502,
+			101201,
+			107503,
+			102802,
 			1037011,
 			1013011,
 			1094021,
@@ -56193,6 +59131,7 @@
 			1248,
 			1133,
 			1034,
+			1012,
 			11039,
 			11048,
 			11066,
@@ -56259,7 +59198,8 @@
 			11089,
 			11248,
 			11133,
-			11034
+			11034,
+			11012
 		}
 	},
 	all = {
@@ -56395,6 +59335,7 @@
 		2920,
 		2921,
 		2922,
+		2926,
 		3001,
 		3002,
 		3003,
@@ -56477,6 +59418,7 @@
 		6027,
 		6028,
 		6029,
+		6031,
 		6100,
 		7001,
 		7002,
@@ -56510,6 +59452,7 @@
 		7111,
 		7112,
 		7113,
+		7114,
 		8001,
 		8002,
 		8003,
@@ -56956,6 +59899,7 @@
 		50051,
 		50052,
 		50053,
+		50054,
 		50055,
 		51009,
 		51010,
@@ -57117,7 +60061,9 @@
 		53141,
 		53142,
 		53150,
+		53151,
 		53152,
+		53153,
 		53999,
 		54001,
 		54002,
@@ -57196,6 +60142,8 @@
 		54079,
 		54080,
 		54081,
+		54082,
+		54083,
 		54112,
 		54113,
 		54114,
@@ -57218,6 +60166,8 @@
 		70003,
 		70004,
 		70005,
+		70006,
+		70007,
 		81084,
 		81050,
 		81058,
@@ -57258,6 +60208,8 @@
 		81037,
 		81067,
 		81026,
+		81017,
+		81132,
 		90001,
 		90002,
 		90003,
@@ -57349,6 +60301,18 @@
 		90089,
 		90090,
 		90091,
+		90092,
+		90093,
+		90094,
+		90095,
+		90096,
+		90097,
+		90098,
+		90099,
+		90100,
+		90101,
+		90102,
+		90103,
 		91001,
 		91002,
 		91003,
@@ -61254,6 +64218,66 @@
 		564065,
 		565065,
 		569065,
+		210066,
+		310066,
+		410066,
+		510066,
+		511066,
+		512066,
+		513066,
+		514066,
+		515066,
+		519066,
+		220066,
+		320066,
+		420066,
+		520066,
+		521066,
+		522066,
+		523066,
+		524066,
+		525066,
+		529066,
+		230066,
+		330066,
+		430066,
+		530066,
+		531066,
+		532066,
+		533066,
+		534066,
+		535066,
+		539066,
+		240066,
+		340066,
+		440066,
+		540066,
+		541066,
+		542066,
+		543066,
+		544066,
+		545066,
+		549066,
+		250066,
+		350066,
+		450066,
+		550066,
+		551066,
+		552066,
+		553066,
+		554066,
+		555066,
+		559066,
+		260066,
+		360066,
+		460066,
+		560066,
+		561066,
+		562066,
+		563066,
+		564066,
+		565066,
+		569066,
 		830001,
 		840001,
 		850001,
@@ -61449,6 +64473,9 @@
 		830065,
 		840065,
 		850065,
+		830066,
+		840066,
+		850066,
 		941001,
 		941002,
 		941003,
@@ -61489,6 +64516,7 @@
 		950027,
 		950028,
 		950029,
+		950030,
 		950901,
 		950902,
 		950903,
@@ -61957,6 +64985,7 @@
 		2590007,
 		2590008,
 		2590009,
+		2590010,
 		2590999,
 		2110841,
 		2110842,
@@ -62039,6 +65068,7 @@
 		2110522,
 		2110281,
 		2110282,
+		2110283,
 		2111321,
 		2110701,
 		2110702,
@@ -62051,6 +65081,7 @@
 		2110751,
 		2110752,
 		2110753,
+		2110754,
 		2110721,
 		2110761,
 		2110762,
@@ -62092,6 +65123,8 @@
 		2111332,
 		2110341,
 		2110342,
+		2110121,
+		2110122,
 		2200002,
 		2200003,
 		2200004,
@@ -62168,6 +65201,9 @@
 		103401,
 		102202,
 		101502,
+		101201,
+		107503,
+		102802,
 		1037011,
 		1013011,
 		1094021,
@@ -62256,6 +65292,7 @@
 		1248,
 		1133,
 		1034,
+		1012,
 		11039,
 		11048,
 		11066,
@@ -62323,6 +65360,7 @@
 		11248,
 		11133,
 		11034,
+		11012,
 		1010950103,
 		1010720103,
 		1010750203,
@@ -62364,6 +65402,9 @@
 		1010220203,
 		1010150203,
 		1010700203,
+		1010120103,
+		1010750303,
+		1010280203,
 		1110950103,
 		1110720103,
 		1110750203,
@@ -62404,6 +65445,9 @@
 		1110220203,
 		1110150203,
 		1110700203,
+		1110120103,
+		1110750303,
+		1110280203,
 		4600703,
 		4600803,
 		4600903,
@@ -62426,6 +65470,7 @@
 		4602503,
 		4602403,
 		4602703,
+		4603103,
 		4602803,
 		4602903,
 		4602603

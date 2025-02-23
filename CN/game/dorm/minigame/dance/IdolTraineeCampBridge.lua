@@ -210,6 +210,7 @@ end
 
 function var_0_0.RemoveHero(arg_16_0)
 	DormData:GetHeroTemplateInfo(arg_16_0):GoToDance(nil)
+	manager.notify:Invoke(DORM_REFRESH_HERO_DEPLOY_LIST)
 end
 
 function var_0_0.GetPosByCharacter(arg_17_0)

@@ -1,4 +1,148 @@
 ﻿return {
+	[10120011] = {
+		name = "禁律",
+		suit_name = "规戒万类",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1012001,
+		id = 10120011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10120012] = {
+		name = "戒规",
+		suit_name = "规戒万类",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10120011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1012001,
+		id = 10120012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10120013] = {
+		name = "镇恶",
+		suit_name = "规戒万类",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10120012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1012001,
+		id = 10120013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10120021] = {
+		name = "福泽",
+		suit_name = "祥瑞之兽",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1012002,
+		id = 10120021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10120022] = {
+		name = "天幸",
+		suit_name = "祥瑞之兽",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10120021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1012002,
+		id = 10120022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10120023] = {
+		name = "造化",
+		suit_name = "祥瑞之兽",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10120022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1012002,
+		id = 10120023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10120031] = {
+		name = "通识",
+		suit_name = "通达万物",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1012003,
+		id = 10120031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10120032] = {
+		name = "通情",
+		suit_name = "通达万物",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10120031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1012003,
+		id = 10120032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10120033] = {
+		name = "知物",
+		suit_name = "通达万物",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10120032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1012003,
+		id = 10120033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
 	[10390011] = {
 		name = "苍洋",
 		suit_name = "海王星",
@@ -10652,6 +10796,21 @@
 			10390011,
 			10390012,
 			10390013
+		},
+		[1012003] = {
+			10120031,
+			10120032,
+			10120033
+		},
+		[1012002] = {
+			10120021,
+			10120022,
+			10120023
+		},
+		[1012001] = {
+			10120011,
+			10120012,
+			10120013
 		}
 	},
 	get_id_list_by_pre_astrolabe_id = {
@@ -11861,7 +12020,28 @@
 		[10390011] = {
 			10390012
 		},
+		[10120032] = {
+			10120033
+		},
+		[10120031] = {
+			10120032
+		},
+		[10120022] = {
+			10120023
+		},
+		[10120021] = {
+			10120022
+		},
+		[10120012] = {
+			10120013
+		},
+		[10120011] = {
+			10120012
+		},
 		[0] = {
+			10120011,
+			10120021,
+			10120031,
 			10390011,
 			10390021,
 			10390031,
@@ -12066,6 +12246,15 @@
 		}
 	},
 	all = {
+		10120011,
+		10120012,
+		10120013,
+		10120021,
+		10120022,
+		10120023,
+		10120031,
+		10120032,
+		10120033,
 		10390011,
 		10390012,
 		10390013,

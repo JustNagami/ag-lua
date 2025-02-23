@@ -638,7 +638,7 @@
 		kind = 99,
 		limit = 1,
 		desc = "入场后，使特殊效果场地内的侠士退场并获得其能力",
-		acquire_text = "通过芭斯特·其一后解锁",
+		acquire_text = "通过芭丝特·其一后解锁",
 		illustration = "BloodCard_char_33",
 		power = 2,
 		icon = "BloodCard_char_33",

@@ -54,7 +54,7 @@ end
 function var_0_0.InitData(arg_11_0)
 	arg_11_0.heroInfo_ = arg_11_0.params_.heroInfo
 	arg_11_0.heroCfg_ = HeroCfg[arg_11_0.heroInfo_.id]
-	arg_11_0.breakIdList_ = HeroBreakCfg.get_id_list_by_race[arg_11_0.heroCfg_.race]
+	arg_11_0.breakIdList_ = clone(HeroBreakCfg.get_id_list_by_race[arg_11_0.heroCfg_.race])
 	arg_11_0.curBreakId_ = HeroTools.GetHeroBreakConfig(arg_11_0.heroCfg_.race, arg_11_0.heroInfo_.break_level or 0).id
 
 	for iter_11_0 = 1, #arg_11_0.breakIdList_ do

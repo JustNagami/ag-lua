@@ -8,7 +8,9 @@
 
 		if var_1_0.type == 1 then
 			for iter_1_0, iter_1_1 in ipairs(arg_1_1) do
-				if HeroData:GetHeroData(iter_1_1).level >= var_1_0.arg[1] then
+				local var_1_1 = HeroData:GetHeroData(iter_1_1)
+
+				if var_1_1.level >= var_1_0.arg[1] and var_1_1.unlock == 1 then
 					return true
 				end
 			end
@@ -16,26 +18,30 @@
 			return false
 		elseif var_1_0.type == 2 then
 			for iter_1_2, iter_1_3 in ipairs(arg_1_1) do
-				local var_1_1 = HeroData:GetHeroData(iter_1_3)
-				local var_1_2 = 0
+				local var_1_2 = HeroData:GetHeroData(iter_1_3)
+				local var_1_3 = 0
 
-				for iter_1_4, iter_1_5 in ipairs(var_1_1.skill) do
-					if SkillTools.GetIsDodgeSkill(iter_1_5.skill_id) then
-						var_1_2 = var_1_2 + 1
-					else
-						var_1_2 = var_1_2 + HeroTools.GetTotalSkillLv(iter_1_3, iter_1_5.skill_id)
+				if var_1_2.unlock == 1 then
+					for iter_1_4, iter_1_5 in ipairs(var_1_2.skill) do
+						if SkillTools.GetIsDodgeSkill(iter_1_5.skill_id) then
+							var_1_3 = var_1_3 + 1
+						else
+							var_1_3 = var_1_3 + HeroTools.GetTotalSkillLv(iter_1_3, iter_1_5.skill_id)
+						end
 					end
-				end
 
-				if var_1_2 >= var_1_0.arg[1] then
-					return true
+					if var_1_3 >= var_1_0.arg[1] then
+						return true
+					end
 				end
 			end
 
 			return false
 		elseif var_1_0.type == 3 then
 			for iter_1_6, iter_1_7 in ipairs(arg_1_1) do
-				if HeroData:GetHeroData(iter_1_7).weapon_info.level >= var_1_0.arg[1] then
+				local var_1_4 = HeroData:GetHeroData(iter_1_7)
+
+				if var_1_4.weapon_info.level >= var_1_0.arg[1] and var_1_4.unlock == 1 then
 					return true
 				end
 			end
@@ -43,7 +49,9 @@
 			return false
 		elseif var_1_0.type == 4 then
 			for iter_1_8, iter_1_9 in ipairs(arg_1_1) do
-				if HeroData:GetHeroData(iter_1_9).star >= var_1_0.arg[1] then
+				local var_1_5 = HeroData:GetHeroData(iter_1_9)
+
+				if var_1_5.star >= var_1_0.arg[1] and var_1_5.unlock == 1 then
 					return true
 				end
 			end
@@ -59,16 +67,16 @@
 			return false
 		elseif var_1_0.type == 6 then
 			for iter_1_12, iter_1_13 in ipairs(arg_1_1) do
-				local var_1_3 = HeroData:GetHeroData(iter_1_13)
+				local var_1_6 = HeroData:GetHeroData(iter_1_13)
 
-				if var_1_3 then
-					local var_1_4 = 0
+				if var_1_6 and var_1_6.unlock == 1 then
+					local var_1_7 = 0
 
-					for iter_1_14, iter_1_15 in ipairs(var_1_3.transition) do
-						var_1_4 = var_1_4 + iter_1_15.talent_points
+					for iter_1_14, iter_1_15 in ipairs(var_1_6.transition) do
+						var_1_7 = var_1_7 + iter_1_15.talent_points
 					end
 
-					if var_1_4 >= var_1_0.arg[1] then
+					if var_1_7 >= var_1_0.arg[1] then
 						return true
 					end
 				end

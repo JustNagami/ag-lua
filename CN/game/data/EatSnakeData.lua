@@ -20,6 +20,7 @@ end
 function var_0_1.InitData(arg_5_0, arg_5_1)
 	arg_5_0.activityID = arg_5_1.activity_id
 	arg_5_0.stageList = {}
+	arg_5_0.enterContentPos_ = Vector2(0, 0)
 
 	for iter_5_0, iter_5_1 in ipairs(arg_5_1.stage_list) do
 		table.insert(arg_5_0.stageList, {
@@ -61,6 +62,18 @@ end
 
 function var_0_0.SetSelecId(arg_8_0, arg_8_1)
 	arg_8_0.selectId_ = arg_8_1
+end
+
+function var_0_0.SetEnterPos(arg_9_0, arg_9_1)
+	arg_9_0.enterContentPos_ = arg_9_1
+end
+
+function var_0_0.GetEnterPos(arg_10_0)
+	local var_10_0 = arg_10_0.enterContentPos_
+
+	arg_10_0.enterContentPos_ = Vector2(0, 0)
+
+	return var_10_0
 end
 
 return var_0_0

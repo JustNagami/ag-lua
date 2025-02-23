@@ -18,7 +18,7 @@ function var_0_0.Ctor(arg_1_0, arg_1_1, arg_1_2, arg_1_3)
 end
 
 function var_0_0.OnEnter(arg_2_0)
-	manager.redPoint:bindUIandKey(arg_2_0.transform_, string.format("%s_%s", RedPointConst.SEQUENTIAL_BATTLE, arg_2_0.activityID_))
+	manager.redPoint:bindUIandKey(arg_2_0.transform_, string.format("%s_%s", RedPointConst.SEQUENTIAL_BATTLE_DAY, arg_2_0.activityID_))
 	arg_2_0:AddTimer()
 
 	arg_2_0.nameText1_.text = GetI18NText(SequentialBattleChapterCfg[arg_2_0.activityID_].stage_name)
@@ -30,7 +30,7 @@ end
 
 function var_0_0.OnExit(arg_3_0)
 	arg_3_0:StopTimer()
-	manager.redPoint:unbindUIandKey(arg_3_0.transform_, string.format("%s_%s", RedPointConst.SEQUENTIAL_BATTLE, arg_3_0.activityID_))
+	manager.redPoint:unbindUIandKey(arg_3_0.transform_, string.format("%s_%s", RedPointConst.SEQUENTIAL_BATTLE_DAY, arg_3_0.activityID_))
 end
 
 function var_0_0.AddListeners(arg_4_0)

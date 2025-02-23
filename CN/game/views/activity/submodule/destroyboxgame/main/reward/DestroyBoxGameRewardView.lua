@@ -17,7 +17,9 @@ end
 
 function var_0_0.InitData(arg_3_0)
 	arg_3_0.sortPanelList_ = DestroyBoxGameTools.GetSortRewardPanel(arg_3_0.mainActivityID_, arg_3_0.rewardPanelList_)
-	arg_3_0.canReceiveRewardList_ = DestroyBoxGameTools.GetCanReceiveRewardList(arg_3_0.mainActivityID_)
+
+	arg_3_0:GetUnReceiveData()
+
 	arg_3_0.uiDataList_ = {}
 
 	for iter_3_0, iter_3_1 in ipairs(arg_3_0.sortPanelList_) do
@@ -35,26 +37,30 @@ function var_0_0.InitData(arg_3_0)
 	end
 end
 
-function var_0_0.GetMaxTaskCnt(arg_4_0)
-	local var_4_0 = 0
+function var_0_0.GetUnReceiveData(arg_4_0)
+	arg_4_0.canReceiveRewardList_ = DestroyBoxGameTools.GetCanReceiveRewardList(arg_4_0.mainActivityID_)
+end
 
-	for iter_4_0, iter_4_1 in ipairs(arg_4_0.sortPanelList_) do
-		var_4_0 = var_4_0 + #arg_4_0.rewardPanelList_[iter_4_1]
+function var_0_0.GetMaxTaskCnt(arg_5_0)
+	local var_5_0 = 0
+
+	for iter_5_0, iter_5_1 in ipairs(arg_5_0.sortPanelList_) do
+		var_5_0 = var_5_0 + #arg_5_0.rewardPanelList_[iter_5_1]
 	end
 
-	return var_4_0
+	return var_5_0
 end
 
-function var_0_0.GetFinishRewardCnt(arg_5_0)
-	return DestroyBoxGameTools.GetFinishRewardCnt(arg_5_0.mainActivityID_)
+function var_0_0.GetFinishRewardCnt(arg_6_0)
+	return DestroyBoxGameTools.GetFinishRewardCnt(arg_6_0.mainActivityID_)
 end
 
-function var_0_0.GetTaskItemClass(arg_6_0)
+function var_0_0.GetTaskItemClass(arg_7_0)
 	return DestroyBoxGameRewardItem
 end
 
-function var_0_0.OnClickReceiveBtn(arg_7_0)
-	DestroyBoxGameAction.RequestReward(arg_7_0.mainActivityID_, arg_7_0.canReceiveRewardList_, function()
+function var_0_0.OnClickReceiveBtn(arg_8_0)
+	DestroyBoxGameAction.RequestReward(arg_8_0.mainActivityID_, arg_8_0.canReceiveRewardList_, function()
 		manager.notify:Invoke(ACTIVITY_REWARD_REFRESH)
 	end)
 end

@@ -355,7 +355,7 @@
 				arg_1_1.screenFilterGo_:SetActive(true)
 
 				arg_1_1.screenFilterEffect_.profile = Asset.Load("Effect/Scene/fx_grey.asset")
-				arg_1_1.hightColor1 = Color.New(0.5568628, 0.5568628, 0.5568628)
+				arg_1_1.hightColor1 = Color.New(0.8980392, 0.8980392, 0.8980392)
 				arg_1_1.hightColor2 = Color.New(0.3411765, 0.3411765, 0.3411765)
 
 				for iter_4_9, iter_4_10 in pairs(arg_1_1.actors_) do
@@ -363,7 +363,7 @@
 
 					for iter_4_11, iter_4_12 in ipairs(var_4_62) do
 						if iter_4_12.color.r > 0.51 then
-							iter_4_12.color = Color.New(0.5568628, 0.5568628, 0.5568628)
+							iter_4_12.color = Color.New(0.8980392, 0.8980392, 0.8980392)
 						else
 							iter_4_12.color = Color.New(0.3411765, 0.3411765, 0.3411765)
 						end
@@ -14084,7 +14084,7 @@
 				arg_332_1.screenFilterGo_:SetActive(true)
 
 				arg_332_1.screenFilterEffect_.profile = Asset.Load("Effect/Scene/fx_grey.asset")
-				arg_332_1.hightColor1 = Color.New(0.5568628, 0.5568628, 0.5568628)
+				arg_332_1.hightColor1 = Color.New(0.8980392, 0.8980392, 0.8980392)
 				arg_332_1.hightColor2 = Color.New(0.3411765, 0.3411765, 0.3411765)
 
 				for iter_335_2, iter_335_3 in pairs(arg_332_1.actors_) do
@@ -14092,7 +14092,7 @@
 
 					for iter_335_4, iter_335_5 in ipairs(var_335_41) do
 						if iter_335_5.color.r > 0.51 then
-							iter_335_5.color = Color.New(0.5568628, 0.5568628, 0.5568628)
+							iter_335_5.color = Color.New(0.8980392, 0.8980392, 0.8980392)
 						else
 							iter_335_5.color = Color.New(0.3411765, 0.3411765, 0.3411765)
 						end

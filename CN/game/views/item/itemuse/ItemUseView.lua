@@ -253,51 +253,68 @@ end
 function var_0_0.UseItemSuccess(arg_25_0, arg_25_1)
 	local var_25_0 = arg_25_0.itemData_.id
 	local var_25_1 = arg_25_0.itemData_.timeValid
+	local var_25_2 = ItemTools.getItemNum(var_25_0, var_25_1)
 
-	if ItemTools.getItemNum(var_25_0, var_25_1) <= 0 then
+	if var_25_2 <= 0 then
 		arg_25_0:Back()
 	else
 		arg_25_0:InitData()
 		arg_25_0:UpdateView()
 	end
 
-	local var_25_2 = arg_25_1.drop_list
+	local var_25_3 = arg_25_1.drop_list
 
 	if ItemCfg[var_25_0].type == ItemConst.ITEM_TYPE.SKIN_CHANGE then
-		local var_25_3 = ItemCfg[var_25_0].param[1]
-		local var_25_4 = SkinCfg[var_25_3].hero
+		local var_25_4 = ItemCfg[var_25_0].param[1]
+		local var_25_5 = SkinCfg[var_25_4].hero
 
 		getReward(formatRewardCfgList({
 			{
-				var_25_3,
+				var_25_4,
 				1
 			}
 		}), {
 			ItemConst.ITEM_TYPE.HERO_SKIN
 		})
 	elseif ItemCfg[var_25_0].sub_type == ItemConst.ITEM_SUB_TYPE.BIRTHDAY_ITEM then
-		local var_25_5 = BirthdayCfg[BirthdayCfg.get_id_list_by_commemorative_props_id[var_25_0][1]].story_id
+		if var_25_2 > 0 then
+			arg_25_0:Back()
+		end
 
-		manager.story:StartStory(var_25_5)
-	elseif ItemCfg[var_25_0].sub_type == ItemConst.ITEM_SUB_TYPE.BITRHDAY_LETTER then
-		local var_25_6 = BirthdayCfg[BirthdayCfg.get_id_list_by_appendix_id[var_25_0][1]].story_id
+		local var_25_6 = BirthdayCfg[BirthdayCfg.get_id_list_by_commemorative_props_id[var_25_0][1]].story_id
 
 		manager.story:StartStory(var_25_6)
-		IllustratedData:ModifyPlot(var_25_6)
-		getReward(var_25_2)
+	elseif ItemCfg[var_25_0].sub_type == ItemConst.ITEM_SUB_TYPE.STORY_ITEM then
+		if var_25_2 > 0 then
+			arg_25_0:Back()
+		end
+
+		local var_25_7 = ItemCfg[var_25_0].param[1]
+
+		manager.story:StartStory(var_25_7)
+	elseif ItemCfg[var_25_0].sub_type == ItemConst.ITEM_SUB_TYPE.BITRHDAY_LETTER then
+		if var_25_2 > 0 then
+			arg_25_0:Back()
+		end
+
+		local var_25_8 = BirthdayCfg[BirthdayCfg.get_id_list_by_appendix_id[var_25_0][1]].story_id
+
+		manager.story:StartStory(var_25_8)
+		IllustratedData:ModifyPlot(var_25_8)
+		getReward(var_25_3)
 		SDKTools.SendMessageToSDK("birthday_received", {
 			story_unlock = 1
 		})
 	elseif ItemCfg[var_25_0].type == ItemConst.ITEM_TYPE.DYNAMIC_STICKER then
 		ShowTips("EXCHANGE_SUCCESS")
 	elseif ItemCfg[var_25_0].sub_type == ItemConst.ITEM_SUB_TYPE.MOON_CAKE_GIFT then
-		getReward(var_25_2)
+		getReward(var_25_3)
 
-		local var_25_7 = ItemCfg[var_25_0].time[2][1]
+		local var_25_9 = ItemCfg[var_25_0].time[2][1]
 
-		MoonCakeAction.OnOpenGift(var_25_7, arg_25_1.drop_list)
+		MoonCakeAction.OnOpenGift(var_25_9, arg_25_1.drop_list)
 	else
-		getReward(mergeReward(var_25_2))
+		getReward(mergeReward(var_25_3))
 	end
 end
 

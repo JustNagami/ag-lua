@@ -384,7 +384,7 @@ function var_0_0.IndexTabItem(arg_27_0, arg_27_1, arg_27_2)
 				arg_27_0:DestroyDynamicFg()
 
 				if var_27_0.type == 1 then
-					arg_27_0.fgStaticImg_.spriteAsync = "TextureConfig/Sticker/Foreground/Stickerfg_m_" .. var_27_0.resource
+					arg_27_0.fgStaticImg_.spriteAsync = "TextureConfig/Sticker/Foreground_l/Stickerfg_l_" .. var_27_0.resource
 					arg_27_0.fgStaticImg_.enabled = true
 				elseif var_27_0.type == 2 then
 					arg_27_0.curDynamicFg_ = Object.Instantiate(Asset.Load("Widget/System/UserInfor/sticker_new/dynamicitem/Foreground/Foregrounditem_" .. var_27_0.resource), arg_27_0.fgDynamicTrs_)
@@ -490,7 +490,7 @@ function var_0_0.IndexTabItem(arg_27_0, arg_27_1, arg_27_2)
 						arg_27_0:DestroyDynamicFg()
 
 						if var_27_0.type == 1 then
-							arg_27_0.fgStaticImg_.spriteAsync = "TextureConfig/Sticker/Foreground/Stickerfg_m_" .. var_27_0.resource
+							arg_27_0.fgStaticImg_.spriteAsync = "TextureConfig/Sticker/Foreground_l/Stickerfg_l_" .. var_27_0.resource
 							arg_27_0.fgStaticImg_.enabled = true
 						elseif var_27_0.type == 2 then
 							arg_27_0.curDynamicFg_ = Object.Instantiate(Asset.Load("Widget/System/UserInfor/sticker_new/dynamicitem/Foreground/Foregrounditem_" .. var_27_0.resource), arg_27_0.fgDynamicTrs_)
@@ -725,7 +725,7 @@ function var_0_0.UpdateView(arg_39_0)
 
 		if var_39_2 then
 			if var_39_2.type == 1 then
-				arg_39_0.fgStaticImg_.spriteAsync = "TextureConfig/Sticker/Foreground/Stickerfg_m_" .. var_39_2.resource
+				arg_39_0.fgStaticImg_.spriteAsync = "TextureConfig/Sticker/Foreground_l/Stickerfg_l_" .. var_39_2.resource
 				arg_39_0.fgStaticImg_.enabled = true
 			elseif var_39_2.type == 2 then
 				arg_39_0.curDynamicFg_ = Object.Instantiate(Asset.Load("Widget/System/UserInfor/sticker_new/dynamicitem/Foreground/Foregrounditem_" .. var_39_2.resource), arg_39_0.fgDynamicTrs_)

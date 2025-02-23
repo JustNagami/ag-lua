@@ -638,7 +638,7 @@
 		arg_18_1.duration_ = 6
 
 		local var_18_0 = {
-			zh = 5.066,
+			zh = 5.3,
 			ja = 6
 		}
 		local var_18_1 = manager.audio:GetLocalizationFlag()
@@ -885,10 +885,10 @@
 		arg_26_1.frameCnt_ = 0
 		arg_26_1.state_ = "playing"
 		arg_26_1.curTalkId_ = 417101006
-		arg_26_1.duration_ = 2.57
+		arg_26_1.duration_ = 2.93
 
 		local var_26_0 = {
-			zh = 2.566,
+			zh = 2.933,
 			ja = 2.166
 		}
 		local var_26_1 = manager.audio:GetLocalizationFlag()
@@ -15624,7 +15624,7 @@
 				arg_400_1:ShowNextGo(false)
 			end
 
-			local var_403_14 = 57
+			local var_403_14 = 56
 			local var_403_15 = 3.73333333333333
 			local var_403_16 = arg_400_1:GetWordFromCfg(417101097)
 			local var_403_17 = arg_400_1:FormatText(var_403_16.content)

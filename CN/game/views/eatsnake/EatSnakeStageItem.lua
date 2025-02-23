@@ -41,15 +41,28 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3, arg_6_4, arg_6_5, a
 	arg_6_0.callback = arg_6_6
 
 	arg_6_0.selectController:SetSelectedState("off")
-	arg_6_0:BindRedPoint()
+	arg_6_0.lockController:SetSelectedState("lock")
 
-	arg_6_0.isNextStage = arg_6_1 == arg_6_3 + 1
+	if arg_6_0.timer then
+		arg_6_0.timer:Stop()
 
-	if arg_6_0.isNextStage or arg_6_2 ~= nil then
-		arg_6_0.lockController:SetSelectedState("unlock")
-	else
-		arg_6_0.lockController:SetSelectedState("lock")
+		arg_6_0.timer = nil
 	end
+
+	arg_6_0.timer = Timer.New(function()
+		if ActivityData:GetActivityIsOpen(arg_6_5.activity_id) then
+			arg_6_0:BindRedPoint()
+
+			arg_6_0.isNextStage = arg_6_1 == arg_6_3 + 1
+
+			arg_6_0.lockController:SetSelectedState((arg_6_0.isNextStage or arg_6_2 ~= nil) and "unlock" or "lock")
+			arg_6_0.timer:Stop()
+
+			arg_6_0.timer = nil
+		end
+	end, 0, -1)
+
+	arg_6_0.timer:Start()
 
 	if arg_6_2 == nil then
 		arg_6_0.greedController:SetSelectedState("notpass")
@@ -67,17 +80,23 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3, arg_6_4, arg_6_5, a
 	end
 end
 
-function var_0_0.Dispose(arg_7_0)
-	var_0_0.super.Dispose(arg_7_0)
-	arg_7_0:UnbindRedPoint()
+function var_0_0.Dispose(arg_8_0)
+	if arg_8_0.timer then
+		arg_8_0.timer:Stop()
+
+		arg_8_0.timer = nil
+	end
+
+	var_0_0.super.Dispose(arg_8_0)
+	arg_8_0:UnbindRedPoint()
 end
 
-function var_0_0.BindRedPoint(arg_8_0)
-	manager.redPoint:bindUIandKey(arg_8_0.transform_, RedPointConst.EAT_SNAKE_STAGE .. "_" .. arg_8_0.index)
-end
-
-function var_0_0.UnbindRedPoint(arg_9_0)
+function var_0_0.BindRedPoint(arg_9_0)
 	manager.redPoint:bindUIandKey(arg_9_0.transform_, RedPointConst.EAT_SNAKE_STAGE .. "_" .. arg_9_0.index)
+end
+
+function var_0_0.UnbindRedPoint(arg_10_0)
+	manager.redPoint:bindUIandKey(arg_10_0.transform_, RedPointConst.EAT_SNAKE_STAGE .. "_" .. arg_10_0.index)
 end
 
 return var_0_0

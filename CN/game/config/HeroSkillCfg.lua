@@ -189,7 +189,7 @@
 		name = "益动势合",
 		cd = 12000,
 		strengthen_desc = "",
-		simpleDesc = "处于<material=underline c=#FFFFFF h=2 event=terminology args=(107101)>「青巽姿态」</material>：该技能替换为「益动势合·巽」。施放时格挡受到的伤害，召唤多把<material=underline c=#FFFFFF h=2 event=terminology args=(107104)>「玉剑」</material>攻击锁定的敌人。该技能处于冷却状态时，每次普通攻击命中后会召唤不同数量的<material=underline c=#FFFFFF h=2 event=terminology args=(107104)>「玉剑」</material>攻击锁定的敌人。\n<material=underline c=#FFFFFF h=2 event=terminology args=(107104)>「玉剑」</material>：造成风属性伤害，并提高风属性伤害。\n处于<material=underline c=#FFFFFF h=2 event=terminology args=(107102)>「苍震姿态」</material>：该技能替换为「益动势合·震」。消耗神能施放二段攻击造成伤害，根据穿插「风雷破」的时机，又演化出二式剑术，造成不同的雷属性伤害。\n第一式：直接施放；\n第二式：在第二段前穿插施放「风雷破」。",
+		simpleDesc = "处于<material=underline c=#FFFFFF h=2 event=terminology args=(107101)>「青巽姿态」</material>：该技能替换为「益动势合·巽」。施放时获得格挡效果，可以格挡攻击，召唤多把<material=underline c=#FFFFFF h=2 event=terminology args=(107104)>「玉剑」</material>攻击锁定的敌人。该技能处于冷却状态时，每次普通攻击命中后会召唤不同数量的<material=underline c=#FFFFFF h=2 event=terminology args=(107104)>「玉剑」</material>攻击锁定的敌人。\n<material=underline c=#FFFFFF h=2 event=terminology args=(107104)>「玉剑」</material>：造成风属性伤害，并提高风属性伤害。\n处于<material=underline c=#FFFFFF h=2 event=terminology args=(107102)>「苍震姿态」</material>：该技能替换为「益动势合·震」。消耗神能施放二段攻击造成伤害，根据穿插「风雷破」的时机，又演化出二式剑术，造成不同的雷属性伤害。\n第一式：直接施放；\n第二式：在第二段前穿插施放「风雷破」。",
 		MaxUseCount = 0,
 		id = 1071202,
 		EnergyChange = 0,
@@ -2079,7 +2079,7 @@
 	[1119201] = {
 		name = "风雷易势",
 		cd = 9000,
-		simpleDesc = "挥舞长枪，造成雷属性伤害，在<material=underline c=#FFFFFF h=2 event=terminology args=(111901)>「进攻姿态」</material>和<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>之间进行切换；处于<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>期间获得硬直效果。\n无论「风雷易势」是否处于冷却、是否替换为「风雷流转」，在施放「雷鸣风啸」、「奔雷疾风」、「风雷流转」或者追击、反击的过程中可以点击该技能进行姿态切换。\n施放「雷鸣风啸」、「奔雷疾风」过程中受击时，若处于<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>，会格挡当前的伤害并触发反击，反击造成雷属性伤害，施放反击时获得无敌效果，每次施放命中后获得<material=underline c=#FFFFFF h=2 event=terminology args=(111904)>「惊岚」</material>标记。\n当标记为满时，「风雷易势」会替换为「风雷流转」。\n「风雷流转」：造成雷属性伤害，施放后消耗全部标记。",
+		simpleDesc = "挥舞长枪，造成雷属性伤害，在<material=underline c=#FFFFFF h=2 event=terminology args=(111901)>「进攻姿态」</material>和<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>之间进行切换；处于<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>期间获得硬直效果。\n无论「风雷易势」是否处于冷却、是否替换为「风雷流转」，在施放「雷鸣风啸」、「奔雷疾风」、「风雷流转」或者追击、反击的过程中可以点击该技能进行姿态切换。\n施放「雷鸣风啸」、「奔雷疾风」过程中受击时，若处于<material=underline c=#FFFFFF h=2 event=terminology args=(111902)>「防御姿态」</material>，会格挡攻击并触发反击，反击造成雷属性伤害，施放反击时获得无敌效果，每次施放命中后获得<material=underline c=#FFFFFF h=2 event=terminology args=(111904)>「惊岚」</material>标记。\n当标记为满时，「风雷易势」会替换为「风雷流转」。\n「风雷流转」：造成雷属性伤害，施放后消耗全部标记。",
 		MaxUseCount = 0,
 		id = 1119201,
 		EnergyChange = 0,
@@ -2800,7 +2800,7 @@
 		name = "燐焰流炘",
 		cd = 0,
 		strengthen_desc = "",
-		simpleDesc = "极限闪避时对自身和攻击者附加<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态。\n<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>：自身可以格挡处于<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态的敌人的攻击伤害，处于<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态的敌人被击败时，移除自身的<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态。\n闪避效果：积蓄条获得率提高。",
+		simpleDesc = "极限闪避时对自身和攻击者附加<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态。\n<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>：自身可以格挡处于<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态的敌人的攻击，处于<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态的敌人被击败时，移除自身的<material=underline c=#FFFFFF h=2 event=terminology args=(115804)>「燃火」</material>状态。\n闪避效果：积蓄条获得率提高。",
 		MaxUseCount = 0,
 		abilities = "",
 		id = 1158305,
@@ -2961,7 +2961,7 @@
 		name = "昆仑枪法",
 		cd = 0,
 		strengthen_desc = "",
-		simpleDesc = "造成光属性伤害。\n\n被动：\n每段普通攻击的起手阶段有短暂的判定，受击时会施放反击技能攻击「崩枪式」。\n「崩枪式」：造成光属性伤害，施放期间获得无敌效果。\n「破军枪舞」：造成光属性伤害，施放期间获得霸体效果，受到的伤害降低。\n\n<color=#297DE0>怒气：</color>普通攻击命中后、触发反击时会获得怒气。",
+		simpleDesc = "造成光属性伤害。\n\n被动：\n每段普通攻击的起手阶段、第四段普通攻击期间获得短暂的格挡效果，受击时会格挡攻击并施放反击技能攻击「崩枪式」。\n「崩枪式」：造成光属性伤害，施放期间获得无敌效果。\n「破军枪舞」：造成光属性伤害，施放期间获得霸体效果，受到的伤害降低。\n\n<color=#297DE0>怒气：</color>普通攻击命中后、触发反击时会获得怒气。",
 		MaxUseCount = 0,
 		id = 1060101,
 		EnergyChange = 2,
@@ -2979,7 +2979,7 @@
 		name = "昆仑枪法",
 		cd = 0,
 		strengthen_desc = "",
-		simpleDesc = "造成光属性伤害。\n\n被动：\n每段普通攻击的起手阶段有短暂的判定，受击时，不处于<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>范围内会施放反击技能攻击「崩枪式」、处于<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>范围内会施放反击技能攻击「崩山式」。\n「崩枪式」：造成光属性伤害，施放期间获得无敌效果。\n「崩山式」：回收<material=underline c=#FFFFFF h=2 event=terminology args=(106002)>「枪」</material>，造成光属性伤害，施放期间获得无敌效果。\n「破军枪舞」：造成光属性伤害，施放期间获得霸体效果，受到的伤害降低。\n\n<color=#297DE0>怒气：</color>普通攻击命中后、触发反击时会获得怒气。",
+		simpleDesc = "造成光属性伤害。\n\n被动：\n每段普通攻击的起手阶段、第四段普通攻击期间获得短暂的格挡效果，受击时会格挡攻击并施放反击技能攻击，不处于<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>范围内会施放反击技能攻击「崩枪式」、处于<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>范围内会施放反击技能攻击「崩山式」。\n「崩枪式」：造成光属性伤害，施放期间获得无敌效果。\n「崩山式」：回收<material=underline c=#FFFFFF h=2 event=terminology args=(106002)>「枪」</material>，造成光属性伤害，施放期间获得无敌效果。\n「破军枪舞」：造成光属性伤害，施放期间获得霸体效果，受到的伤害降低。\n\n<color=#297DE0>怒气：</color>普通攻击命中后、触发反击时会获得怒气。",
 		MaxUseCount = 0,
 		abilities = "",
 		id = 1060111,
@@ -3662,7 +3662,7 @@
 	[1184202] = {
 		name = "反制打击",
 		cd = 12000,
-		simpleDesc = "长按时进行举盾防御并对前方敌人造成雷属性伤害，松开或达到时间上限时会施放一次攻击，造成雷属性伤害。在举盾防御状态下被命中时，会格挡受到的伤害，并施放强力反击，造成雷属性伤害，并进入零时空间。\n\n<color=#297DE0>神能：</color>成功格挡时，获得神能。",
+		simpleDesc = "长按时进行举盾防御并对前方敌人造成雷属性伤害，松开或达到时间上限时会施放一次攻击，造成雷属性伤害。在举盾防御状态下被命中时，会格挡攻击并施放强力反击，造成雷属性伤害，并进入零时空间。\n\n<color=#297DE0>神能：</color>成功格挡时，获得神能。",
 		MaxUseCount = 0,
 		id = 1184202,
 		EnergyChange = 0,
@@ -3996,7 +3996,7 @@
 		name = "铁壁潜航",
 		cd = 0,
 		strengthen_desc = "",
-		simpleDesc = "非<material=underline c=#FFFFFF h=2 event=terminology args=(108102)>「巡航模式」</material>：\n非移动时长按闪避：消耗闪避值在原地展开屏障，自身受到的伤害降低。屏障持续期间可再次消耗闪避值格挡第一次伤害。当自身拥有<material=underline c=#FFFFFF h=2 event=terminology args=(108101)>「破冰」</material>标记时，成功格挡后的短暂时间内取消点击，会消耗<material=underline c=#FFFFFF h=2 event=terminology args=(108101)>「破冰」</material>标记施放一次「霜断」，该次施放「霜断」期间自身获得无敌效果。\n闪避效果：获得<material=underline c=#FFFFFF h=2 event=terminology args=(108101)>「破冰」</material>标记。",
+		simpleDesc = "非<material=underline c=#FFFFFF h=2 event=terminology args=(108102)>「巡航模式」</material>：\n非移动时长按闪避：消耗闪避值在原地展开屏障，自身受到的伤害降低。屏障持续期间可再次消耗闪避值格挡第一次伤害。当自身拥有<material=underline c=#FFFFFF h=2 event=terminology args=(108101)>「破冰」</material>标记时，成功格挡攻击后的短暂时间内取消点击，会消耗<material=underline c=#FFFFFF h=2 event=terminology args=(108101)>「破冰」</material>标记施放一次「霜断」，该次施放「霜断」期间自身获得无敌效果。\n闪避效果：获得<material=underline c=#FFFFFF h=2 event=terminology args=(108101)>「破冰」</material>标记。",
 		MaxUseCount = 0,
 		abilities = "",
 		id = 1081305,
@@ -5588,13 +5588,18 @@
 	[1017101] = {
 		name = "暗影的利爪",
 		cd = 0,
-		strengthen_desc = "",
 		simpleDesc = "挥舞利爪攻击敌人，造成暗属性伤害。普通攻击最后一段命中时，进入<material=underline c=#FFFFFF h=2 event=terminology args=(101701)>「神瞳凝视」</material>状态。",
 		MaxUseCount = 0,
 		id = 1017101,
 		EnergyChange = 0,
 		desc = {
 			101017101
+		},
+		strengthen_desc = {
+			{
+				101721,
+				21101710121
+			}
 		},
 		element_type = {
 			10
@@ -5606,13 +5611,18 @@
 	[1017201] = {
 		name = "残月的奔袭",
 		cd = 9000,
-		strengthen_desc = "",
 		simpleDesc = "短距离突进，并造成暗属性伤害；处于<material=underline c=#FFFFFF h=2 event=terminology args=(101701)>「神瞳凝视」</material>状态时，该技能获得以下额外效果：命中时对锁定的敌人附加暗属性抗性降低的状态。技能施放后，<material=underline c=#FFFFFF h=2 event=terminology args=(101701)>「神瞳凝视」</material>状态立即结束。\n\n<color=#297DE0>印记：</color>每次施放命中后，获得印记。",
 		MaxUseCount = 0,
 		id = 1017201,
 		EnergyChange = 1,
 		desc = {
 			101017201
+		},
+		strengthen_desc = {
+			{
+				101722,
+				21101720122
+			}
 		},
 		element_type = {
 			10
@@ -5624,13 +5634,18 @@
 	[1017202] = {
 		name = "夜灵的游猎",
 		cd = 9000,
-		strengthen_desc = "",
 		simpleDesc = "从地面跃起，暂时隐藏身形，随后现身并用利爪攻击敌人，造成暗属性伤害；处于<material=underline c=#FFFFFF h=2 event=terminology args=(101701)>「神瞳凝视」</material>状态时，该技能获得以下额外效果：对第一个命中的敌人附加眩晕状态。技能施放后，<material=underline c=#FFFFFF h=2 event=terminology args=(101701)>「神瞳凝视」</material>状态立即结束。\n\n<color=#297DE0>印记：</color>每次施放命中后，获得印记。",
 		MaxUseCount = 0,
 		id = 1017202,
 		EnergyChange = 1,
 		desc = {
 			101017202
+		},
+		strengthen_desc = {
+			{
+				101723,
+				21101720223
+			}
 		},
 		element_type = {
 			10
@@ -5642,13 +5657,18 @@
 	[1017203] = {
 		name = "猫神的愚弄",
 		cd = 6000,
-		strengthen_desc = "",
 		simpleDesc = "消耗印记，进入<material=underline c=#FFFFFF h=2 event=terminology args=(101701)>「神瞳凝视」</material>状态，且不会打断普通攻击的连段；每次进入<material=underline c=#FFFFFF h=2 event=terminology args=(101701)>「神瞳凝视」</material>状态，「猫神的愚弄」会替换为「战神的处决」。\n「战神的处决」：释放暗属性神力，造成暗属性范围伤害。技能施放后，<material=underline c=#FFFFFF h=2 event=terminology args=(101701)>「神瞳凝视」</material>状态立即结束。",
 		MaxUseCount = 0,
 		id = 1017203,
 		EnergyChange = -1,
 		desc = {
 			101017203
+		},
+		strengthen_desc = {
+			{
+				101724,
+				21101720324
+			}
 		},
 		element_type = {
 			10
@@ -6089,7 +6109,7 @@
 	[1016201] = {
 		name = "突击战术",
 		cd = 18000,
-		simpleDesc = "大剑模式：侧身用荒獠撞击，造成物理属性伤害，撞击时自身获得短暂的霸体效果，命中后该技能切换到电锯模式。\n电锯模式：使用荒獠进行突刺攻击，造成物理属性伤害；命中时可通过长按该技能消耗神能持续施放，根据消耗的神能会获得<material=underline c=#FFFFFF h=2 event=terminology args=(101601)>「压力槽」</material>、提高伤害并额外造成物理属性伤害；处于修正模式时技能伤害提高。施放后切换回大剑模式。\n\n<color=#297DE0>神能：</color>撞击的霸体效果期间受击时会格挡伤害并获得大量神能。",
+		simpleDesc = "大剑模式：侧身用荒獠撞击，造成物理属性伤害，撞击时自身获得短暂的霸体效果，命中后该技能切换到电锯模式。\n电锯模式：使用荒獠进行突刺攻击，造成物理属性伤害；命中时可通过长按该技能消耗神能持续施放，根据消耗的神能会获得<material=underline c=#FFFFFF h=2 event=terminology args=(101601)>「压力槽」</material>、提高伤害并额外造成物理属性伤害；处于修正模式时技能伤害提高。施放后切换回大剑模式。\n\n<color=#297DE0>神能：</color>撞击的霸体效果期间受击时会格挡攻击并获得大量神能。",
 		MaxUseCount = 0,
 		id = 1016201,
 		EnergyChange = 0,
@@ -6422,13 +6442,18 @@
 	[1132101] = {
 		name = "炽焰烈击",
 		cd = 0,
-		strengthen_desc = "",
 		simpleDesc = "处于<material=underline c=#FFFFFF h=2 event=terminology args=(113201)>「燃剑姿态」</material>：连续挥舞长剑进行强力的斩击，造成火属性伤害。\n处于<material=underline c=#FFFFFF h=2 event=terminology args=(113202)>「炽甲姿态」</material>：使用拳甲进行快速而连续的攻击，造成火属性伤害。\n\n<color=#297DE0>怒气：</color>普通攻击命中后会获得怒气。",
 		MaxUseCount = 0,
 		id = 1132101,
 		EnergyChange = 4,
 		desc = {
 			101132101
+		},
+		strengthen_desc = {
+			{
+				113221,
+				21113210121
+			}
 		},
 		element_type = {
 			4
@@ -6440,13 +6465,18 @@
 	[1132201] = {
 		name = "爆烈强攻",
 		cd = 8000,
-		strengthen_desc = "",
 		simpleDesc = "处于<material=underline c=#FFFFFF h=2 event=terminology args=(113201)>「燃剑姿态」</material>：挥舞长剑向前方斩击，造成火属性伤害，对命中的敌人附加眩晕状态。\n处于<material=underline c=#FFFFFF h=2 event=terminology args=(113202)>「炽甲姿态」</material>：向前突进，使用拳甲重击前方的敌人，消耗怒气，造成火属性伤害，命中时使敌人火属性抗性降低。",
 		MaxUseCount = 0,
 		id = 1132201,
 		EnergyChange = -25,
 		desc = {
 			101132201
+		},
+		strengthen_desc = {
+			{
+				113222,
+				21113220122
+			}
 		},
 		element_type = {
 			4
@@ -6458,13 +6488,18 @@
 	[1132202] = {
 		name = "焚灭掳夺",
 		cd = 12000,
-		strengthen_desc = "",
 		simpleDesc = "处于<material=underline c=#FFFFFF h=2 event=terminology args=(113201)>「燃剑姿态」</material>：挥舞长剑进行大范围的横扫，造成火属性伤害。\n处于<material=underline c=#FFFFFF h=2 event=terminology args=(113202)>「炽甲姿态」</material>：消耗怒气，将旋转长剑移动到锁定的敌人位置并刷新旋转长剑的持续时间，提高旋转长剑造成的伤害。",
 		MaxUseCount = 0,
 		id = 1132202,
 		EnergyChange = -35,
 		desc = {
 			101132202
+		},
+		strengthen_desc = {
+			{
+				113223,
+				21113220223
+			}
 		},
 		element_type = {
 			4
@@ -6476,7 +6511,6 @@
 	[1132203] = {
 		name = "炙炼侵袭",
 		cd = 24000,
-		strengthen_desc = "",
 		simpleDesc = "将长剑向目标位置旋转掷出，自身切换为<material=underline c=#FFFFFF h=2 event=terminology args=(113202)>「炽甲姿态」</material>。长剑命中第一个敌人时会在停留在该位置持续旋转，并持续造成范围火属性伤害，持续时间结束后，旋转长剑消失，自身切换为<material=underline c=#FFFFFF h=2 event=terminology args=(113201)>「燃剑姿态」</material>，之后该技能进入冷却。\n长剑在目标位置持续旋转时，可再次点击该技能，收回长剑。收回长剑后自身切换为<material=underline c=#FFFFFF h=2 event=terminology args=(113201)>「燃剑姿态」</material>，长剑与拳甲合并施放强力攻击，造成火属性伤害。施放强力攻击时自身免疫控制与伤害，之后该技能进入冷却。",
 		MaxUseCount = 0,
 		abilities = "",
@@ -6484,6 +6518,12 @@
 		EnergyChange = 0,
 		desc = {
 			101132203
+		},
+		strengthen_desc = {
+			{
+				113224,
+				21113220324
+			}
 		},
 		element_type = {
 			4
@@ -6911,7 +6951,7 @@
 		name = "彼岸·千引",
 		cd = 20000,
 		strengthen_desc = "",
-		simpleDesc = "唤出日狭女，并在身前凝聚寒冰神力，可以长按该技能进入格挡架势，松开长按或达到时间上限时会施放一次冰属性伤害攻击，之后该技能剩余冷却时间缩短。\n当处于格挡架势被命中后会格挡伤害，对攻击者附加冰冻，自身攻击力提高、获得怒气并和<material=underline c=#FFFFFF h=2 event=terminology args=(104903)>「日狭女」</material>一起施放斩击，造成冰属性伤害。",
+		simpleDesc = "唤出日狭女，并在身前凝聚寒冰神力，可以长按该技能进入格挡架势，松开长按或达到时间上限时会施放一次冰属性伤害攻击，之后该技能剩余冷却时间缩短。\n当处于格挡架势被命中后会格挡攻击，对攻击者附加冰冻，自身攻击力提高、获得怒气并和<material=underline c=#FFFFFF h=2 event=terminology args=(104903)>「日狭女」</material>一起施放斩击，造成冰属性伤害。",
 		MaxUseCount = 0,
 		abilities = "",
 		id = 1049203,
@@ -7134,7 +7174,7 @@
 		name = "玄机变化",
 		cd = 0,
 		strengthen_desc = "",
-		simpleDesc = "脱胎于颛顼秘法的身法。\n长按闪避可以展开盾牌防御，获得<material=underline c=#FFFFFF h=2 event=terminology args=(106102)>「南溟」</material>点数。\n快速闪避敌人攻击，极限闪避会触发闪避效果。展开盾牌防御期间受击时，会格挡伤害并触发闪避效果。\n<material=underline c=#FFFFFF h=2 event=terminology args=(106102)>「南溟」</material>为满时松开长按或展开盾牌防御期间受击时，会清空<material=underline c=#FFFFFF h=2 event=terminology args=(106102)>「南溟」</material>并施放技能攻击，造成水属性伤害，获得神能和<material=underline c=#FFFFFF h=2 event=terminology args=(106101)>「北斗」</material>点数。\n闪避效果：零时空间；通过防御格挡攻击途径触发闪避效果时，额外获得神能和<material=underline c=#FFFFFF h=2 event=terminology args=(106101)>「北斗」</material>点数。",
+		simpleDesc = "脱胎于颛顼秘法的身法。\n长按闪避可以展开盾牌防御，获得<material=underline c=#FFFFFF h=2 event=terminology args=(106102)>「南溟」</material>点数。\n快速闪避敌人攻击，极限闪避会触发闪避效果。展开盾牌防御期间受击时，会格挡攻击并触发闪避效果。\n<material=underline c=#FFFFFF h=2 event=terminology args=(106102)>「南溟」</material>为满时松开长按或展开盾牌防御期间受击时，会清空<material=underline c=#FFFFFF h=2 event=terminology args=(106102)>「南溟」</material>并施放技能攻击，造成水属性伤害，获得神能和<material=underline c=#FFFFFF h=2 event=terminology args=(106101)>「北斗」</material>点数。\n闪避效果：零时空间；通过防御格挡攻击途径触发闪避效果时，额外获得神能和<material=underline c=#FFFFFF h=2 event=terminology args=(106101)>「北斗」</material>点数。",
 		MaxUseCount = 0,
 		abilities = "",
 		id = 1061305,
@@ -7274,7 +7314,7 @@
 		name = "狂狮逐猎",
 		cd = 7000,
 		strengthen_desc = "",
-		simpleDesc = "向敌人发射钩锁，造成物理属性伤害，命中后向敌人突进，突进时获得霸体效果并可以格挡受到的伤害，突进期间成功格挡伤害时，重置「刃爪噬敌」的冷却时间；未能突进时，该技能剩余冷却时间缩短。\n「狂狮逐猎」命中后一段时间内，「狂狮逐猎」会替换为「狂狮锯齿」、「锯刃撼地」会替换为「锯刃轮舞」，施放其中任意一个技能后技能一、二会替换回原技能。\n「狂狮锯齿」：跃起并将审判日轮向下猛砸，造成物理属性伤害。\n\n<color=#297DE0>神能：</color>「狂狮逐猎」命中后、突进期间成功格挡伤害时，会获得或恢复神能。",
+		simpleDesc = "向敌人发射钩锁，造成物理属性伤害，命中后向敌人突进，突进时获得霸体效果并可以格挡攻击，突进期间成功格挡攻击时，重置「刃爪噬敌」的冷却时间；未能突进时，该技能剩余冷却时间缩短。\n「狂狮逐猎」命中后一段时间内，「狂狮逐猎」会替换为「狂狮锯齿」、「锯刃撼地」会替换为「锯刃轮舞」，施放其中任意一个技能后技能一、二会替换回原技能。\n「狂狮锯齿」：跃起并将审判日轮向下猛砸，造成物理属性伤害。\n\n<color=#297DE0>神能：</color>「狂狮逐猎」命中后、突进期间成功格挡攻击时，会获得或恢复神能。",
 		MaxUseCount = 0,
 		id = 1015201,
 		EnergyChange = 0,
@@ -7561,7 +7601,7 @@
 		name = "瞬息刹影",
 		cd = 0,
 		strengthen_desc = "",
-		simpleDesc = "非移动闪避时，会举剑格挡，成功格挡后可以点击普通攻击施放反击，造成光属性伤害；每次施放反击命中时「刹那的辉光」、「命运的涟漪」的剩余冷却时间缩短；反击每次命中后获得神能；闪避效果不处于冷却状态时，反击命中时也会触发闪避效果。\n闪避效果：零时空间。",
+		simpleDesc = "非移动闪避时，会举剑格挡，成功格挡攻击后可以点击普通攻击施放反击，造成光属性伤害；每次施放反击命中时「刹那的辉光」、「命运的涟漪」的剩余冷却时间缩短；反击每次命中后获得神能；闪避效果不处于冷却状态时，反击命中时也会触发闪避效果。\n闪避效果：零时空间。",
 		MaxUseCount = 2,
 		abilities = "",
 		id = 1284305,
@@ -8409,6 +8449,115 @@
 			0
 		}
 	},
+	[1012101] = {
+		name = "横刀斩",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "造成光属性伤害。\n\n被动：\n施放「刀啸决」时会打断其他技能。施放「刀啸决」后短暂时间会出现衔接提示，在合适的时机内成功衔接施放「鬼神式」或「无我意」时，重置「刀啸决」的冷却时间。\n\n<color=#297DE0>怒气：</color>普通攻击命中后会获得怒气。在衔接提示的合适的时机内，成功衔接施放其他技能后，恢复怒气。",
+		MaxUseCount = 0,
+		id = 1012101,
+		EnergyChange = 2,
+		desc = {
+			101012101
+		},
+		element_type = {
+			12
+		},
+		abilities = {
+			1012101
+		}
+	},
+	[1012201] = {
+		name = "刀啸决",
+		cd = 3000,
+		strengthen_desc = "",
+		simpleDesc = "切换形态，在<material=underline c=#FFFFFF h=2 event=terminology args=(101201)>「寒峭势」</material>、<material=underline c=#FFFFFF h=2 event=terminology args=(101202)>「孤锋势」</material>之间切换；切换到<material=underline c=#FFFFFF h=2 event=terminology args=(101202)>「孤锋势」</material>且不衔接施放「鬼神式」、「无我意」时，会切换回<material=underline c=#FFFFFF h=2 event=terminology args=(101201)>「寒峭势」</material>；处于<material=underline c=#FFFFFF h=2 event=terminology args=(101201)>「寒峭势」</material>，该技能替换为「刀啸寒峭」；处于<material=underline c=#FFFFFF h=2 event=terminology args=(101202)>「孤锋势」</material>，该技能替换为「刀啸孤锋」。\n「刀啸寒峭」：造成光属性伤害，从<material=underline c=#FFFFFF h=2 event=terminology args=(101201)>「寒峭势」</material>切换为<material=underline c=#FFFFFF h=2 event=terminology args=(101202)>「孤锋势」</material>。\n「刀啸孤锋」：造成光属性伤害，从<material=underline c=#FFFFFF h=2 event=terminology args=(101202)>「孤锋势」</material>切换为<material=underline c=#FFFFFF h=2 event=terminology args=(101201)>「寒峭势」</material>。\n施放该技能时获得格挡效果，成功格挡攻击时：获得无敌效果；触发额外攻击，造成光属性伤害；切换形态后，该形态的「鬼神式」和「无我意」的剩余冷却时间缩短。",
+		MaxUseCount = 0,
+		id = 1012201,
+		EnergyChange = 0,
+		desc = {
+			101012201
+		},
+		element_type = {
+			12
+		},
+		abilities = {
+			1012201
+		}
+	},
+	[1012202] = {
+		name = "鬼神式",
+		cd = 12500,
+		strengthen_desc = "",
+		simpleDesc = "处于<material=underline c=#FFFFFF h=2 event=terminology args=(101201)>「寒峭势」</material>：\n「鬼神一式」：造成光属性伤害。\n\n处于<material=underline c=#FFFFFF h=2 event=terminology args=(101202)>「孤锋势」</material>：\n「鬼神二式」：造成光属性伤害，施放后可以继续点击施放该技能的收尾攻击，造成光属性伤害，施放该技能时获得格挡效果。",
+		MaxUseCount = 0,
+		id = 1012202,
+		EnergyChange = -30,
+		desc = {
+			101012202
+		},
+		element_type = {
+			12
+		},
+		abilities = {
+			1012202,
+			1012053,
+			1012054
+		}
+	},
+	[1012203] = {
+		name = "无我意",
+		cd = 12500,
+		strengthen_desc = "",
+		simpleDesc = "处于<material=underline c=#FFFFFF h=2 event=terminology args=(101201)>「寒峭势」</material>：\n「意寒峭」：造成光属性伤害。\n\n处于<material=underline c=#FFFFFF h=2 event=terminology args=(101202)>「孤锋势」</material>：\n「意孤锋」：造成光属性伤害。",
+		MaxUseCount = 0,
+		id = 1012203,
+		EnergyChange = -30,
+		desc = {
+			101012203
+		},
+		element_type = {
+			12
+		},
+		abilities = {
+			1012203,
+			1012056
+		}
+	},
+	[1012209] = {
+		name = "拨云见日",
+		cd = 20000,
+		strengthen_desc = "",
+		simpleDesc = "造成光属性伤害；命中时，全队伍会心率、会心伤害提高。\n\n自身或者队友攻击造成会心后，获得奥义值。",
+		MaxUseCount = 0,
+		id = 1012209,
+		EnergyChange = 0,
+		desc = {
+			101012209
+		},
+		element_type = {
+			12
+		},
+		abilities = {
+			1012209
+		}
+	},
+	[1012305] = {
+		name = "急云式",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "闪避效果：零时空间。",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1012305,
+		EnergyChange = 0,
+		desc = {
+			101012305
+		},
+		element_type = {
+			12
+		}
+	},
 	[6087101] = {
 		element_type = "",
 		name = "射击",
@@ -8666,7 +8815,6 @@
 		}
 	},
 	[6110101] = {
-		element_type = "6.0",
 		name = "终止音符",
 		cd = 0,
 		strengthen_desc = "",
@@ -8676,6 +8824,9 @@
 		EnergyChange = 0,
 		desc = {
 			106110101
+		},
+		element_type = {
+			6
 		},
 		abilities = {
 			6110101
@@ -8700,7 +8851,6 @@
 		}
 	},
 	[6110202] = {
-		element_type = "6.0",
 		name = "音符 · 霜花",
 		cd = 0,
 		strengthen_desc = "",
@@ -8711,12 +8861,14 @@
 		desc = {
 			106110202
 		},
+		element_type = {
+			6
+		},
 		abilities = {
 			6110202
 		}
 	},
 	[6110203] = {
-		element_type = "6.0",
 		name = "音符 · 凛冽",
 		cd = 0,
 		strengthen_desc = "",
@@ -8727,10 +8879,12 @@
 		EnergyChange = 0,
 		desc = {
 			106110203
+		},
+		element_type = {
+			6
 		}
 	},
 	[6110209] = {
-		element_type = "6.0",
 		name = "变奏 · 羁绊回声",
 		cd = 0,
 		strengthen_desc = "",
@@ -8740,6 +8894,9 @@
 		EnergyChange = 0,
 		desc = {
 			106110209
+		},
+		element_type = {
+			6
 		},
 		abilities = {
 			6110209
@@ -10023,6 +10180,20 @@
 			101034208
 		}
 	},
+	[1012208] = {
+		element_type = "",
+		name = "司天断邪",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1012208,
+		EnergyChange = 0,
+		desc = {
+			101012208
+		}
+	},
 	all = {
 		1050101,
 		1050201,
@@ -10452,6 +10623,12 @@
 		1034203,
 		1034209,
 		1034305,
+		1012101,
+		1012201,
+		1012202,
+		1012203,
+		1012209,
+		1012305,
 		6087101,
 		6087201,
 		6087202,
@@ -10563,6 +10740,7 @@
 		1248208,
 		1133208,
 		1059208,
-		1034208
+		1034208,
+		1012208
 	}
 }

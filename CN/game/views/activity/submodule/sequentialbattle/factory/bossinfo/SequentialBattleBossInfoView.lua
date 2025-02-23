@@ -1,7 +1,10 @@
 ﻿local var_0_0 = class("SequentialBattleBossInfoView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/MardukUI/continuousBattle/MardukBossDetailsPopUI"
+	local var_1_0 = SequentialBattleChapterCfg[arg_1_0.params_.activityID].main_id
+	local var_1_1 = SequentialBattleUICfg.get_id_list_by_main_activity_id[var_1_0][1]
+
+	return SequentialBattleUICfg[var_1_1].boss_info_prefab
 end
 
 function var_0_0.UIParent(arg_2_0)

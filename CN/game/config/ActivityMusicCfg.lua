@@ -14,6 +14,7 @@
 		id = 1,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -44,6 +45,7 @@
 		id = 2,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				40203,
@@ -74,6 +76,7 @@
 		id = 3,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -104,6 +107,7 @@
 		id = 4,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				40203,
@@ -134,6 +138,7 @@
 		id = 5,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -164,6 +169,7 @@
 		id = 6,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				40203,
@@ -194,6 +200,7 @@
 		id = 7,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -224,6 +231,7 @@
 		id = 8,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				40203,
@@ -254,6 +262,7 @@
 		id = 9,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -284,6 +293,7 @@
 		id = 10,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				40203,
@@ -314,6 +324,7 @@
 		id = 11,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -344,6 +355,7 @@
 		id = 12,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				40203,
@@ -374,6 +386,7 @@
 		id = 13,
 		difficult = 1,
 		aisacValue = 1,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -404,6 +417,7 @@
 		id = 14,
 		difficult = 2,
 		aisacValue = 1,
+		tagType = 0,
 		reward = {
 			{
 				40203,
@@ -434,6 +448,7 @@
 		id = 15,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -464,6 +479,7 @@
 		id = 16,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				40203,
@@ -494,6 +510,7 @@
 		id = 17,
 		difficult = 9,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -511,6 +528,7 @@
 		id = 18,
 		difficult = 9,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -528,6 +546,7 @@
 		id = 19,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -558,6 +577,7 @@
 		id = 20,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				40301,
@@ -588,6 +608,7 @@
 		id = 21,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -618,6 +639,7 @@
 		id = 22,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				40301,
@@ -648,6 +670,7 @@
 		id = 23,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -678,6 +701,7 @@
 		id = 24,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				40301,
@@ -708,6 +732,7 @@
 		id = 25,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -738,6 +763,7 @@
 		id = 26,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				40301,
@@ -768,6 +794,7 @@
 		id = 27,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -798,6 +825,7 @@
 		id = 28,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				40301,
@@ -828,6 +856,7 @@
 		id = 29,
 		difficult = 1,
 		aisacValue = 0.5,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -858,6 +887,7 @@
 		id = 30,
 		difficult = 2,
 		aisacValue = 0.5,
+		tagType = 0,
 		reward = {
 			{
 				40301,
@@ -888,6 +918,7 @@
 		id = 31,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -918,6 +949,7 @@
 		id = 32,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				40301,
@@ -948,6 +980,7 @@
 		id = 33,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -978,6 +1011,7 @@
 		id = 34,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				3021,
@@ -1008,6 +1042,7 @@
 		id = 35,
 		difficult = 9,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1025,6 +1060,7 @@
 		id = 36,
 		difficult = 9,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1042,6 +1078,7 @@
 		id = 37,
 		difficult = 9,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1059,6 +1096,7 @@
 		id = 38,
 		difficult = 9,
 		aisacValue = 0.5,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1076,6 +1114,7 @@
 		id = 39,
 		difficult = 9,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1093,6 +1132,7 @@
 		id = 40,
 		difficult = 9,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1110,6 +1150,7 @@
 		id = 41,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -1140,6 +1181,7 @@
 		id = 42,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1157,6 +1199,7 @@
 		id = 43,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -1187,6 +1230,7 @@
 		id = 44,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1204,6 +1248,7 @@
 		id = 45,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -1234,6 +1279,7 @@
 		id = 46,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1251,6 +1297,7 @@
 		id = 47,
 		difficult = 1,
 		aisacValue = 1,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -1281,6 +1328,7 @@
 		id = 48,
 		difficult = 2,
 		aisacValue = 1,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1298,6 +1346,7 @@
 		id = 49,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -1328,6 +1377,7 @@
 		id = 50,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1345,6 +1395,7 @@
 		id = 51,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -1375,6 +1426,7 @@
 		id = 52,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1392,6 +1444,7 @@
 		id = 53,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -1422,6 +1475,7 @@
 		id = 54,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1439,6 +1493,7 @@
 		id = 55,
 		difficult = 1,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {
 			{
 				1,
@@ -1469,6 +1524,7 @@
 		id = 56,
 		difficult = 2,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1486,6 +1542,7 @@
 		id = 57,
 		difficult = 9,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1503,6 +1560,7 @@
 		id = 58,
 		difficult = 9,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1520,6 +1578,7 @@
 		id = 59,
 		difficult = 9,
 		aisacValue = 1,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1537,6 +1596,7 @@
 		id = 60,
 		difficult = 9,
 		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	{
@@ -1554,9 +1614,700 @@
 		id = 61,
 		difficult = 9,
 		aisacValue = 0,
+		tagType = 0,
+		reward = {}
+	},
+	{
+		name = "Wordless Song for a Starry Night",
+		total_score = 34600,
+		cueSheetName = "bgm_activity_3_0_story_special_seaside",
+		icon = "Music_00025",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_0_story_special_seaside_ez.json",
+		awbFile = "bgm_activity_3_0_story_special_seaside",
+		activity_id = 311491,
+		creator_name = "Polymath9",
+		cueName = "bgm_activity_3_0_story_special_seaside",
+		id = 62,
+		difficult = 1,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				54116,
+				7500
+			},
+			{
+				3048,
+				1
+			}
+		}
+	},
+	{
+		name = "Wordless Song for a Starry Night",
+		total_score = 57300,
+		cueSheetName = "bgm_activity_3_0_story_special_seaside",
+		icon = "Music_00025",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_0_story_special_seaside_hd.json",
+		awbFile = "bgm_activity_3_0_story_special_seaside",
+		activity_id = 311491,
+		creator_name = "Polymath9",
+		cueName = "bgm_activity_3_0_story_special_seaside",
+		id = 63,
+		difficult = 2,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {}
+	},
+	{
+		name = "Wordless Song for a Starry Night",
+		total_score = 77000,
+		cueSheetName = "bgm_activity_3_0_story_special_seaside",
+		icon = "Music_00025",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_0_story_special_seaside_ch.json",
+		awbFile = "bgm_activity_3_0_story_special_seaside",
+		activity_id = 311491,
+		creator_name = "Polymath9",
+		cueName = "bgm_activity_3_0_story_special_seaside",
+		id = 64,
+		difficult = 3,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {}
+	},
+	{
+		name = "Wordless Song for a Starry Night",
+		total_score = 100200,
+		cueSheetName = "bgm_activity_3_0_story_special_seaside",
+		icon = "Music_00025",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_0_story_special_seaside_ex.json",
+		awbFile = "bgm_activity_3_0_story_special_seaside",
+		activity_id = 311491,
+		creator_name = "Polymath9",
+		cueName = "bgm_activity_3_0_story_special_seaside",
+		id = 65,
+		difficult = 9,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {}
+	},
+	{
+		name = "MUSEDASH!!!!",
+		total_score = 27300,
+		cueSheetName = "bgm_activity_3_11_minigame_music_2",
+		icon = "Music_00026",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_2_ez.json",
+		awbFile = "bgm_activity_3_11_minigame_music_2",
+		activity_id = 311492,
+		creator_name = "暖@よみぃ",
+		cueName = "bgm_activity_3_11_minigame_music_2",
+		id = 66,
+		difficult = 1,
+		aisacValue = 0,
+		tagType = 1,
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				54116,
+				7500
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	{
+		name = "MUSEDASH!!!!",
+		total_score = 45500,
+		cueSheetName = "bgm_activity_3_11_minigame_music_2",
+		icon = "Music_00026",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_2_hd.json",
+		awbFile = "bgm_activity_3_11_minigame_music_2",
+		activity_id = 311492,
+		creator_name = "暖@よみぃ",
+		cueName = "bgm_activity_3_11_minigame_music_2",
+		id = 67,
+		difficult = 2,
+		aisacValue = 0,
+		tagType = 1,
+		reward = {}
+	},
+	{
+		name = "MUSEDASH!!!!",
+		total_score = 77000,
+		cueSheetName = "bgm_activity_3_11_minigame_music_2",
+		icon = "Music_00026",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_2_ch.json",
+		awbFile = "bgm_activity_3_11_minigame_music_2",
+		activity_id = 311492,
+		creator_name = "暖@よみぃ",
+		cueName = "bgm_activity_3_11_minigame_music_2",
+		id = 68,
+		difficult = 3,
+		aisacValue = 0,
+		tagType = 1,
+		reward = {}
+	},
+	{
+		name = "MUSEDASH!!!!",
+		total_score = 109900,
+		cueSheetName = "bgm_activity_3_11_minigame_music_2",
+		icon = "Music_00026",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_2_ex.json",
+		awbFile = "bgm_activity_3_11_minigame_music_2",
+		activity_id = 311492,
+		creator_name = "暖@よみぃ",
+		cueName = "bgm_activity_3_11_minigame_music_2",
+		id = 69,
+		difficult = 9,
+		aisacValue = 0,
+		tagType = 1,
+		reward = {}
+	},
+	{
+		name = "Sarvaloka",
+		total_score = 34900,
+		cueSheetName = "bgm_activity_3_6_ui",
+		icon = "Music_00027",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_6_ui_ez.json",
+		awbFile = "bgm_activity_3_6_ui",
+		activity_id = 311493,
+		creator_name = "VeetaCrush",
+		cueName = "bgm_activity_3_6_ui",
+		id = 70,
+		difficult = 1,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				54116,
+				7500
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	{
+		name = "Sarvaloka",
+		total_score = 37000,
+		cueSheetName = "bgm_activity_3_6_ui",
+		icon = "Music_00027",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_6_ui_hd.json",
+		awbFile = "bgm_activity_3_6_ui",
+		activity_id = 311493,
+		creator_name = "VeetaCrush",
+		cueName = "bgm_activity_3_6_ui",
+		id = 71,
+		difficult = 2,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {}
+	},
+	{
+		name = "Sarvaloka",
+		total_score = 67900,
+		cueSheetName = "bgm_activity_3_6_ui",
+		icon = "Music_00027",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_6_ui_ch.json",
+		awbFile = "bgm_activity_3_6_ui",
+		activity_id = 311493,
+		creator_name = "VeetaCrush",
+		cueName = "bgm_activity_3_6_ui",
+		id = 72,
+		difficult = 3,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {}
+	},
+	{
+		name = "Comet Coaster",
+		total_score = 39300,
+		cueSheetName = "bgm_activity_3_11_minigame_music_4",
+		icon = "Music_00028",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_4_ez.json",
+		awbFile = "bgm_activity_3_11_minigame_music_4",
+		activity_id = 311494,
+		creator_name = "DJ Noriken & aran",
+		cueName = "bgm_activity_3_11_minigame_music_4",
+		id = 73,
+		difficult = 1,
+		aisacValue = 0,
+		tagType = 1,
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				54116,
+				7500
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	{
+		name = "Comet Coaster",
+		total_score = 70100,
+		cueSheetName = "bgm_activity_3_11_minigame_music_4",
+		icon = "Music_00028",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_4_hd.json",
+		awbFile = "bgm_activity_3_11_minigame_music_4",
+		activity_id = 311494,
+		creator_name = "DJ Noriken & aran",
+		cueName = "bgm_activity_3_11_minigame_music_4",
+		id = 74,
+		difficult = 2,
+		aisacValue = 0,
+		tagType = 1,
+		reward = {}
+	},
+	{
+		name = "Comet Coaster",
+		total_score = 121900,
+		cueSheetName = "bgm_activity_3_11_minigame_music_4",
+		icon = "Music_00028",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_4_ch.json",
+		awbFile = "bgm_activity_3_11_minigame_music_4",
+		activity_id = 311494,
+		creator_name = "DJ Noriken & aran",
+		cueName = "bgm_activity_3_11_minigame_music_4",
+		id = 75,
+		difficult = 3,
+		aisacValue = 0,
+		tagType = 1,
+		reward = {}
+	},
+	{
+		name = "Comet Coaster",
+		total_score = 146600,
+		cueSheetName = "bgm_activity_3_11_minigame_music_4",
+		icon = "Music_00028",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_4_ex.json",
+		awbFile = "bgm_activity_3_11_minigame_music_4",
+		activity_id = 311494,
+		creator_name = "DJ Noriken & aran",
+		cueName = "bgm_activity_3_11_minigame_music_4",
+		id = 76,
+		difficult = 9,
+		aisacValue = 0,
+		tagType = 1,
+		reward = {}
+	},
+	{
+		name = "Transcend the Abyss",
+		total_score = 36700,
+		cueSheetName = "bgm_activity_3_4_battle_seabed",
+		icon = "Music_00029",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_4_battle_seabed_ez.json",
+		awbFile = "bgm_activity_3_4_battle_seabed",
+		activity_id = 311495,
+		creator_name = "LousikAEy",
+		cueName = "bgm_activity_3_4_battle_seabed",
+		id = 77,
+		difficult = 1,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				54116,
+				7500
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	{
+		name = "Transcend the Abyss",
+		total_score = 41900,
+		cueSheetName = "bgm_activity_3_4_battle_seabed",
+		icon = "Music_00029",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_4_battle_seabed_hd.json",
+		awbFile = "bgm_activity_3_4_battle_seabed",
+		activity_id = 311495,
+		creator_name = "LousikAEy",
+		cueName = "bgm_activity_3_4_battle_seabed",
+		id = 78,
+		difficult = 2,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {}
+	},
+	{
+		name = "Transcend the Abyss",
+		total_score = 91600,
+		cueSheetName = "bgm_activity_3_4_battle_seabed",
+		icon = "Music_00029",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_4_battle_seabed_ch.json",
+		awbFile = "bgm_activity_3_4_battle_seabed",
+		activity_id = 311495,
+		creator_name = "LousikAEy",
+		cueName = "bgm_activity_3_4_battle_seabed",
+		id = 79,
+		difficult = 3,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {}
+	},
+	{
+		name = "Tanuki Step",
+		total_score = 32200,
+		cueSheetName = "bgm_activity_3_11_minigame_music_6",
+		icon = "Music_00030",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_6_ez.json",
+		awbFile = "bgm_activity_3_11_minigame_music_6",
+		activity_id = 311496,
+		creator_name = "Scheol X M2U",
+		cueName = "bgm_activity_3_11_minigame_music_6",
+		id = 80,
+		difficult = 1,
+		aisacValue = 0,
+		tagType = 1,
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				54116,
+				7500
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	{
+		name = "Tanuki Step",
+		total_score = 53400,
+		cueSheetName = "bgm_activity_3_11_minigame_music_6",
+		icon = "Music_00030",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_6_hd.json",
+		awbFile = "bgm_activity_3_11_minigame_music_6",
+		activity_id = 311496,
+		creator_name = "Scheol X M2U",
+		cueName = "bgm_activity_3_11_minigame_music_6",
+		id = 81,
+		difficult = 2,
+		aisacValue = 0,
+		tagType = 1,
+		reward = {}
+	},
+	{
+		name = "Tanuki Step",
+		total_score = 105500,
+		cueSheetName = "bgm_activity_3_11_minigame_music_6",
+		icon = "Music_00030",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_6_ch.json",
+		awbFile = "bgm_activity_3_11_minigame_music_6",
+		activity_id = 311496,
+		creator_name = "Scheol X M2U",
+		cueName = "bgm_activity_3_11_minigame_music_6",
+		id = 82,
+		difficult = 3,
+		aisacValue = 0,
+		tagType = 1,
+		reward = {}
+	},
+	{
+		name = "Tanuki Step",
+		total_score = 130400,
+		cueSheetName = "bgm_activity_3_11_minigame_music_6",
+		icon = "Music_00030",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_6_ex.json",
+		awbFile = "bgm_activity_3_11_minigame_music_6",
+		activity_id = 311496,
+		creator_name = "Scheol X M2U",
+		cueName = "bgm_activity_3_11_minigame_music_6",
+		id = 83,
+		difficult = 9,
+		aisacValue = 0,
+		tagType = 1,
+		reward = {}
+	},
+	{
+		name = "Reverie on World Strings",
+		total_score = 54100,
+		cueSheetName = "bgm_activity_3_11_minigame_music_7",
+		icon = "Music_00031",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_7_ez.json",
+		awbFile = "bgm_activity_3_11_minigame_music_7",
+		activity_id = 311497,
+		creator_name = "Polymath9/LousikAEy",
+		cueName = "bgm_activity_3_11_minigame_music_7",
+		id = 84,
+		difficult = 1,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				54116,
+				7500
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	{
+		name = "Reverie on World Strings",
+		total_score = 69500,
+		cueSheetName = "bgm_activity_3_11_minigame_music_7",
+		icon = "Music_00031",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_7_hd.json",
+		awbFile = "bgm_activity_3_11_minigame_music_7",
+		activity_id = 311497,
+		creator_name = "Polymath9/LousikAEy",
+		cueName = "bgm_activity_3_11_minigame_music_7",
+		id = 85,
+		difficult = 2,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {}
+	},
+	{
+		name = "Reverie on World Strings",
+		total_score = 149500,
+		cueSheetName = "bgm_activity_3_11_minigame_music_7",
+		icon = "Music_00031",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_7_ch.json",
+		awbFile = "bgm_activity_3_11_minigame_music_7",
+		activity_id = 311497,
+		creator_name = "Polymath9/LousikAEy",
+		cueName = "bgm_activity_3_11_minigame_music_7",
+		id = 86,
+		difficult = 3,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {}
+	},
+	{
+		name = "Reverie on World Strings",
+		total_score = 205400,
+		cueSheetName = "bgm_activity_3_11_minigame_music_7",
+		icon = "Music_00031",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_7_ex.json",
+		awbFile = "bgm_activity_3_11_minigame_music_7",
+		activity_id = 311497,
+		creator_name = "Polymath9/LousikAEy",
+		cueName = "bgm_activity_3_11_minigame_music_7",
+		id = 87,
+		difficult = 9,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {}
+	},
+	{
+		name = "; ne m'oubile pas",
+		total_score = 39400,
+		cueSheetName = "bgm_activity_3_11_minigame_music_8",
+		icon = "Music_00032",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_8_ez.json",
+		awbFile = "bgm_activity_3_11_minigame_music_8",
+		activity_id = 311498,
+		creator_name = "Polymath9/LousikAEy",
+		cueName = "bgm_activity_3_11_minigame_music_8",
+		id = 88,
+		difficult = 1,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				54116,
+				7500
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	{
+		name = "; ne m'oubile pas",
+		total_score = 46200,
+		cueSheetName = "bgm_activity_3_11_minigame_music_8",
+		icon = "Music_00032",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_8_hd.json",
+		awbFile = "bgm_activity_3_11_minigame_music_8",
+		activity_id = 311498,
+		creator_name = "Polymath9/LousikAEy",
+		cueName = "bgm_activity_3_11_minigame_music_8",
+		id = 89,
+		difficult = 2,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {}
+	},
+	{
+		name = "; ne m'oubile pas",
+		total_score = 100100,
+		cueSheetName = "bgm_activity_3_11_minigame_music_8",
+		icon = "Music_00032",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_8_ch.json",
+		awbFile = "bgm_activity_3_11_minigame_music_8",
+		activity_id = 311498,
+		creator_name = "Polymath9/LousikAEy",
+		cueName = "bgm_activity_3_11_minigame_music_8",
+		id = 90,
+		difficult = 3,
+		aisacValue = 0,
+		tagType = 0,
+		reward = {}
+	},
+	{
+		name = "; ne m'oubile pas",
+		total_score = 130600,
+		cueSheetName = "bgm_activity_3_11_minigame_music_8",
+		icon = "Music_00032",
+		aisacKey = "",
+		target = 0,
+		path = "Map/MusicMap/bgm_activity_3_11_minigame_music_8_ex.json",
+		awbFile = "bgm_activity_3_11_minigame_music_8",
+		activity_id = 311498,
+		creator_name = "Polymath9/LousikAEy",
+		cueName = "bgm_activity_3_11_minigame_music_8",
+		id = 91,
+		difficult = 9,
+		aisacValue = 0,
+		tagType = 0,
 		reward = {}
 	},
 	get_id_list_by_activity_id = {
+		[311498] = {
+			88,
+			89,
+			90,
+			91
+		},
+		[311497] = {
+			84,
+			85,
+			86,
+			87
+		},
+		[311496] = {
+			80,
+			81,
+			82,
+			83
+		},
+		[311495] = {
+			77,
+			78,
+			79
+		},
+		[311494] = {
+			73,
+			74,
+			75,
+			76
+		},
+		[311493] = {
+			70,
+			71,
+			72
+		},
+		[311492] = {
+			66,
+			67,
+			68,
+			69
+		},
+		[311491] = {
+			62,
+			63,
+			64,
+			65
+		},
 		[231498] = {
 			55,
 			56,
@@ -1728,6 +2479,36 @@
 		58,
 		59,
 		60,
-		61
+		61,
+		62,
+		63,
+		64,
+		65,
+		66,
+		67,
+		68,
+		69,
+		70,
+		71,
+		72,
+		73,
+		74,
+		75,
+		76,
+		77,
+		78,
+		79,
+		80,
+		81,
+		82,
+		83,
+		84,
+		85,
+		86,
+		87,
+		88,
+		89,
+		90,
+		91
 	}
 }

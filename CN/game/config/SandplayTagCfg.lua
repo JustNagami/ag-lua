@@ -327,6 +327,42 @@
 			313531
 		}
 	},
+	[311481] = {
+		tag_behaviour = 4,
+		deputy_name = "<浮光绎曲>",
+		map_display = 3,
+		passthrough_parameters = "",
+		map_icon = "SandPlay_icon_31148001",
+		hud_desc = "无名乐音伴随着点点微光于黑夜中奏起，它们交缠蔓延着，直至笼罩广袤沃野。\n终曲落幕，万物而生。",
+		questId = 10105003,
+		tag_id = 311481,
+		options_switch = 1,
+		tag_name = "浮光绎曲",
+		overview = 0,
+		activityId = 311481,
+		sort = 7,
+		behaviour_parameters = {
+			311481
+		}
+	},
+	[312791] = {
+		tag_behaviour = 4,
+		deputy_name = "<醒狮传说>",
+		map_display = 3,
+		passthrough_parameters = "",
+		map_icon = "SandPlay_icon_31279001",
+		hud_desc = "喔！石塔里面是狮舞团正在彩排！传说瑞狮能够驱除邪祟，保佑一方平安……乌也能试试？嗷乌！那就不客气了，乌要做狮子头，斩除魑魅！",
+		questId = 10105003,
+		tag_id = 312791,
+		options_switch = 1,
+		tag_name = "醒狮传说",
+		overview = 0,
+		activityId = 312791,
+		sort = 8,
+		behaviour_parameters = {
+			312791
+		}
+	},
 	all = {
 		1,
 		2,
@@ -344,6 +380,8 @@
 		313551,
 		313631,
 		312571,
-		313531
+		313531,
+		311481,
+		312791
 	}
 }

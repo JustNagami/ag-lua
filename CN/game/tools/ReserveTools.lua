@@ -5,7 +5,7 @@
 		[ReserveConst.RESERVE_TYPE.ABYSS] = "ReserveAbyssTemplate",
 		[ReserveConst.RESERVE_TYPE.BOSS_CHALLENGE] = "ReserveBossChallengeTemplate",
 		[ReserveConst.RESERVE_TYPE.SOLO_CHALLENGE] = "ReserveSoloChallengeTemplate",
-		[ReserveConst.RESERVE_TYPE.SEQUENTIAL_BATTLE] = "ReserveSequentialBattleTemplate",
+		[ReserveConst.RESERVE_TYPE.SEQUENTIAL_BATTLE_CACHE] = "ReserveSequentialBattleTemplate",
 		[ReserveConst.RESERVE_TYPE.ATTRIBUTE_ARENA] = "ReserveAttributeArenaTemplate",
 		[ReserveConst.RESERVE_TYPE.GUILD_BOSS] = "ReserveGuildBossTemplate",
 		[ReserveConst.RESERVE_TYPE.CORE_VERIFICATION] = "ReserveCoreVerificationTemplate",
@@ -19,14 +19,14 @@
 		[ReserveConst.RESERVE_TYPE.DEFAULT] = "ReserveContDataTemplate",
 		[ReserveConst.RESERVE_TYPE.PROPOSAL] = "ReserveProposalContDataTemplate",
 		[ReserveConst.RESERVE_TYPE.SOLO_CHALLENGE] = "ReserveSoloChallengeContDataTemplate",
-		[ReserveConst.RESERVE_TYPE.SEQUENTIAL_BATTLE] = "ReserveSequentialContDataTemplate",
+		[ReserveConst.RESERVE_TYPE.SEQUENTIAL_BATTLE_CACHE] = "ReserveSequentialContDataTemplate",
 		[ReserveConst.RESERVE_TYPE.MULTI_CHESS] = "ReserveMultiChessContDataTemplate",
 		[ReserveConst.RESERVE_TYPE.CHALLENGE_ROGUE_TEAM] = "ReserveChallengeRogueTeamContDataTemplate"
 	},
 	singleTeamDataClassDic = {
 		[ReserveConst.RESERVE_TYPE.DEFAULT] = "ReserveSingleTeamDataTemplate",
 		[ReserveConst.RESERVE_TYPE.SOLO_CHALLENGE] = "ReserveSoloChallengeSingleTeamDataTemplate",
-		[ReserveConst.RESERVE_TYPE.SEQUENTIAL_BATTLE] = "ReserveSequentialSingleTeamDataTemplate",
+		[ReserveConst.RESERVE_TYPE.SEQUENTIAL_BATTLE_CACHE] = "ReserveSequentialSingleTeamDataTemplate",
 		[ReserveConst.RESERVE_TYPE.MULTI_CHESS] = "ReserveMultiChessSingleTeamDataTemplate",
 		[ReserveConst.RESERVE_TYPE.CHALLENGE_ROGUE_TEAM] = "ReserveChangeRogueTeamSingleTeamDataTemplate"
 	},
@@ -169,124 +169,136 @@ function var_0_0.GetComboSkillID(arg_12_0)
 	return ReserveTools.GetReserveTemplateByReserveType(arg_12_0.reserveType):GetComboSkillID(arg_12_0)
 end
 
-function var_0_0.SetComboSkillID(arg_13_0, arg_13_1)
+function var_0_0.GetRawComboSkillID(arg_13_0)
 	arg_13_0 = var_0_0.CheckReserveParams(arg_13_0)
 
-	ReserveTools.GetReserveTemplateByReserveType(arg_13_0.reserveType):SetComboSkillID(arg_13_0, arg_13_1)
+	return ReserveTools.GetReserveTemplateByReserveType(arg_13_0.reserveType):GetRawComboSkillID(arg_13_0)
 end
 
-function var_0_0.GetMimirData(arg_14_0)
+function var_0_0.SetComboSkillID(arg_14_0, arg_14_1)
 	arg_14_0 = var_0_0.CheckReserveParams(arg_14_0)
 
-	local var_14_0, var_14_1 = ReserveTools.GetReserveTemplateByReserveType(arg_14_0.reserveType):GetMimirData(arg_14_0)
-
-	return var_14_0, var_14_1
+	ReserveTools.GetReserveTemplateByReserveType(arg_14_0.reserveType):SetComboSkillID(arg_14_0, arg_14_1)
 end
 
-function var_0_0.GetMimirID(arg_15_0)
+function var_0_0.GetValidComboSkillID(arg_15_0, arg_15_1)
 	arg_15_0 = var_0_0.CheckReserveParams(arg_15_0)
 
-	return ReserveTools.GetReserveTemplateByReserveType(arg_15_0.reserveType):GetMimirID(arg_15_0)
+	return ReserveTools.GetReserveTemplateByReserveType(arg_15_0.reserveType):GetValidComboSkillID(arg_15_0, arg_15_1)
 end
 
-function var_0_0.SetMimirID(arg_16_0, arg_16_1)
+function var_0_0.GetMimirData(arg_16_0)
 	arg_16_0 = var_0_0.CheckReserveParams(arg_16_0)
 
-	ReserveTools.GetReserveTemplateByReserveType(arg_16_0.reserveType):SetMimirID(arg_16_0, arg_16_1)
+	local var_16_0, var_16_1 = ReserveTools.GetReserveTemplateByReserveType(arg_16_0.reserveType):GetMimirData(arg_16_0)
+
+	return var_16_0, var_16_1
 end
 
-function var_0_0.GetMimirChipList(arg_17_0)
+function var_0_0.GetMimirID(arg_17_0)
 	arg_17_0 = var_0_0.CheckReserveParams(arg_17_0)
 
-	return ReserveTools.GetReserveTemplateByReserveType(arg_17_0.reserveType):GetMimirChipList(arg_17_0)
+	return ReserveTools.GetReserveTemplateByReserveType(arg_17_0.reserveType):GetMimirID(arg_17_0)
 end
 
-function var_0_0.SetMimirChipList(arg_18_0, arg_18_1)
+function var_0_0.SetMimirID(arg_18_0, arg_18_1)
 	arg_18_0 = var_0_0.CheckReserveParams(arg_18_0)
 
-	ReserveTools.GetReserveTemplateByReserveType(arg_18_0.reserveType):SetMimirChipList(arg_18_0, arg_18_1)
+	ReserveTools.GetReserveTemplateByReserveType(arg_18_0.reserveType):SetMimirID(arg_18_0, arg_18_1)
 end
 
-function var_0_0.InsertMimirChip(arg_19_0, arg_19_1)
+function var_0_0.GetMimirChipList(arg_19_0)
 	arg_19_0 = var_0_0.CheckReserveParams(arg_19_0)
 
-	local var_19_0 = ReserveTools.GetReserveTemplateByReserveType(arg_19_0.reserveType)
-	local var_19_1 = var_19_0:GetMimirChipList(arg_19_0)
-
-	ChipTools.InsertChip(var_19_1, arg_19_1, function(arg_20_0)
-		var_19_0:SetMimirChipList(arg_19_0, arg_20_0)
-	end)
+	return ReserveTools.GetReserveTemplateByReserveType(arg_19_0.reserveType):GetMimirChipList(arg_19_0)
 end
 
-function var_0_0.RemoveMimirChip(arg_21_0, arg_21_1)
+function var_0_0.SetMimirChipList(arg_20_0, arg_20_1)
+	arg_20_0 = var_0_0.CheckReserveParams(arg_20_0)
+
+	ReserveTools.GetReserveTemplateByReserveType(arg_20_0.reserveType):SetMimirChipList(arg_20_0, arg_20_1)
+end
+
+function var_0_0.InsertMimirChip(arg_21_0, arg_21_1)
 	arg_21_0 = var_0_0.CheckReserveParams(arg_21_0)
 
 	local var_21_0 = ReserveTools.GetReserveTemplateByReserveType(arg_21_0.reserveType)
 	local var_21_1 = var_21_0:GetMimirChipList(arg_21_0)
 
-	ChipTools.RemoveChip(var_21_1, arg_21_1, function(arg_22_0)
+	ChipTools.InsertChip(var_21_1, arg_21_1, function(arg_22_0)
 		var_21_0:SetMimirChipList(arg_21_0, arg_22_0)
 	end)
 end
 
-function var_0_0.ResetMimirChipList(arg_23_0)
+function var_0_0.RemoveMimirChip(arg_23_0, arg_23_1)
 	arg_23_0 = var_0_0.CheckReserveParams(arg_23_0)
 
-	ReserveTools.GetReserveTemplateByReserveType(arg_23_0.reserveType):ResetMimirChipList(arg_23_0)
+	local var_23_0 = ReserveTools.GetReserveTemplateByReserveType(arg_23_0.reserveType)
+	local var_23_1 = var_23_0:GetMimirChipList(arg_23_0)
+
+	ChipTools.RemoveChip(var_23_1, arg_23_1, function(arg_24_0)
+		var_23_0:SetMimirChipList(arg_23_0, arg_24_0)
+	end)
 end
 
-function var_0_0.ResetContData(arg_24_0, arg_24_1)
-	ReserveTools.GetReserveTemplateByReserveType(arg_24_0):GetContDataTemplateById(arg_24_1):Reset()
+function var_0_0.ResetMimirChipList(arg_25_0)
+	arg_25_0 = var_0_0.CheckReserveParams(arg_25_0)
+
+	ReserveTools.GetReserveTemplateByReserveType(arg_25_0.reserveType):ResetMimirChipList(arg_25_0)
 end
 
-function var_0_0.SwapTeam(arg_25_0, arg_25_1, arg_25_2, arg_25_3)
-	ReserveTools.GetReserveTemplateByReserveType(arg_25_0):GetContDataTemplateById(arg_25_1):SwapTeam(arg_25_2, arg_25_3)
+function var_0_0.ResetContData(arg_26_0, arg_26_1)
+	ReserveTools.GetReserveTemplateByReserveType(arg_26_0):GetContDataTemplateById(arg_26_1):Reset()
 end
 
-function var_0_0.GetReserveTemplateClass(arg_26_0)
-	local var_26_0 = var_0_0.reserveTemplateClassDic[arg_26_0] or var_0_0.reserveTemplateClassDic[ReserveConst.RESERVE_TYPE.DEFAULT]
-
-	return _G[var_26_0]
+function var_0_0.SwapTeam(arg_27_0, arg_27_1, arg_27_2, arg_27_3)
+	ReserveTools.GetReserveTemplateByReserveType(arg_27_0):GetContDataTemplateById(arg_27_1):SwapTeam(arg_27_2, arg_27_3)
 end
 
-function var_0_0.GetContDataClass(arg_27_0)
-	local var_27_0 = var_0_0.contDataClassDic[arg_27_0] or var_0_0.contDataClassDic[ReserveConst.RESERVE_TYPE.DEFAULT]
-
-	return _G[var_27_0]
-end
-
-function var_0_0.GetSingleTeamDataClass(arg_28_0)
-	local var_28_0 = var_0_0.singleTeamDataClassDic[arg_28_0] or var_0_0.singleTeamDataClassDic[ReserveConst.RESERVE_TYPE.DEFAULT]
+function var_0_0.GetReserveTemplateClass(arg_28_0)
+	local var_28_0 = var_0_0.reserveTemplateClassDic[arg_28_0] or var_0_0.reserveTemplateClassDic[ReserveConst.RESERVE_TYPE.DEFAULT]
 
 	return _G[var_28_0]
 end
 
-function var_0_0.GetHeroPosDataClass(arg_29_0)
-	local var_29_0 = var_0_0.heroPosDataClassDic[arg_29_0] or var_0_0.heroPosDataClassDic[ReserveConst.RESERVE_TYPE.DEFAULT]
+function var_0_0.GetContDataClass(arg_29_0)
+	local var_29_0 = var_0_0.contDataClassDic[arg_29_0] or var_0_0.contDataClassDic[ReserveConst.RESERVE_TYPE.DEFAULT]
 
 	return _G[var_29_0]
 end
 
-function var_0_0.GetMimirDataClass(arg_30_0)
-	local var_30_0 = var_0_0.mimirDataClassDic[arg_30_0] or var_0_0.mimirDataClassDic[ReserveConst.RESERVE_TYPE.DEFAULT]
+function var_0_0.GetSingleTeamDataClass(arg_30_0)
+	local var_30_0 = var_0_0.singleTeamDataClassDic[arg_30_0] or var_0_0.singleTeamDataClassDic[ReserveConst.RESERVE_TYPE.DEFAULT]
 
 	return _G[var_30_0]
 end
 
-function var_0_0.CheckReserveParams(arg_31_0)
-	if not arg_31_0 then
-		arg_31_0 = ReserveParams.New(ReserveConst.RESERVE_TYPE.DEFAULT)
+function var_0_0.GetHeroPosDataClass(arg_31_0)
+	local var_31_0 = var_0_0.heroPosDataClassDic[arg_31_0] or var_0_0.heroPosDataClassDic[ReserveConst.RESERVE_TYPE.DEFAULT]
+
+	return _G[var_31_0]
+end
+
+function var_0_0.GetMimirDataClass(arg_32_0)
+	local var_32_0 = var_0_0.mimirDataClassDic[arg_32_0] or var_0_0.mimirDataClassDic[ReserveConst.RESERVE_TYPE.DEFAULT]
+
+	return _G[var_32_0]
+end
+
+function var_0_0.CheckReserveParams(arg_33_0)
+	if not arg_33_0 then
+		arg_33_0 = ReserveParams.New(ReserveConst.RESERVE_TYPE.DEFAULT)
 
 		Debug.LogError("编队参数为空，使用默认编队参数")
 	end
 
-	if not arg_31_0.reserveType then
-		arg_31_0.reserveType = ReserveConst.RESERVE_TYPE.DEFAULT
+	if not arg_33_0.reserveType then
+		arg_33_0.reserveType = ReserveConst.RESERVE_TYPE.DEFAULT
 
 		Debug.LogError("编队类型为空，使用默认编队类型")
 	end
 
-	return arg_31_0
+	return arg_33_0
 end
 
 return var_0_0

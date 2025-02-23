@@ -12821,6 +12821,25 @@
 			0
 		}
 	},
+	[9354] = {
+		name = "天衡",
+		affix_buff_id = 9354,
+		max_level = 1,
+		extra_description = "AFFIX_9354",
+		id = 9354,
+		description = {
+			700009354
+		},
+		buffid = {
+			93541
+		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
 	[9481] = {
 		name = "联机增幅角色生命",
 		affix_buff_id = 9481,
@@ -27796,6 +27815,7 @@
 		9347,
 		9348,
 		9349,
+		9354,
 		9481,
 		9482,
 		9483,

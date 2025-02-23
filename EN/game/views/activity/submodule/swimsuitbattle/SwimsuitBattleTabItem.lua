@@ -62,8 +62,8 @@ function var_0_0.RefreshLock(arg_8_0)
 		if var_8_0 - var_8_1 >= 86400 then
 			arg_8_0.lockText_.text = string.format(GetTips("ACTIVITY_HERO_ENHANCE_HERO_UNLOCK_CONDITION"), manager.time:DiffDay(var_8_1, var_8_0))
 		else
-			local var_8_2 = math.fmod(math.floor(var_8_1 / 3600), 24)
-			local var_8_3 = math.fmod(math.floor(var_8_0 / 3600), 24) - var_8_2
+			local var_8_2 = math.floor(var_8_1 / 3600)
+			local var_8_3 = math.floor(var_8_0 / 3600) - var_8_2
 
 			arg_8_0.lockText_.text = string.format(GetTips("ACTIVITY_ZUMA_LEVEL_UNLOCK_CONDITION"), var_8_3 .. GetTips("HOUR"))
 		end

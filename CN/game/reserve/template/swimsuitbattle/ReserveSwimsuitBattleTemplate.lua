@@ -9,7 +9,7 @@ function var_0_1.GetTrialHeroList(arg_1_0, arg_1_1)
 	}
 end
 
-function var_0_1.GetDefaultTeam(arg_2_0, arg_2_1, arg_2_2)
+function var_0_1.FillDefaultTeam(arg_2_0, arg_2_1, arg_2_2)
 	arg_2_2.resultHeroList = {
 		SwimsuitBattleHeroCfg[arg_2_1.customData.activityID].hero_id,
 		0,

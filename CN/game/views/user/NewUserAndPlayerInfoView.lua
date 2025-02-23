@@ -664,7 +664,7 @@ function var_0_0.RefreshFriendState(arg_45_0)
 
 		if var_45_1 == FriendsConst.FRIEND_TYPE.MY_FRIENDS then
 			arg_45_0.friendStateCon_:SetSelectedState("myFriend")
-		elseif var_45_1 == FriendsConst.FRIEND_TYPE.NEW_FRIENDS then
+		elseif var_45_1 == FriendsConst.FRIEND_TYPE.NEW_FRIENDS or var_45_1 == FriendsConst.FRIEND_TYPE.SEARCH then
 			arg_45_0.friendStateCon_:SetSelectedState("newFriend")
 			arg_45_0.newFriendCon_:SetSelectedState(var_45_0.isDeal and 1 or 0)
 		elseif var_45_1 == FriendsConst.FRIEND_TYPE.FRIEND_REQUESTS then

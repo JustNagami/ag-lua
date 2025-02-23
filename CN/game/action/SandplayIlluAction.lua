@@ -6,6 +6,7 @@ end)
 
 function var_0_0.InitIlluData(arg_2_0)
 	SandplayIlluData:InitData(arg_2_0)
+	var_0_0.InitRedPoint(arg_2_0)
 	var_0_0.UpdateRedPoint()
 end
 
@@ -54,19 +55,47 @@ function var_0_0.ModifyMainQuestID(arg_8_0)
 	var_0_0.UpdateRedPoint()
 end
 
-function var_0_0.UpdateRedPoint()
-	local var_9_0, var_9_1 = SandplayIlluData:GetAwardID()
+function var_0_0.InitRedPoint(arg_9_0)
+	local var_9_0 = {}
 
-	for iter_9_0, iter_9_1 in ipairs(var_9_0) do
-		local var_9_2 = string.format("%s_%s", RedPointConst.ACTIVITY_SANDPLAY_ILLU_ITEM, tostring(iter_9_1))
+	for iter_9_0, iter_9_1 in ipairs(SandplayIlluGroupCfg.all) do
+		local var_9_1 = string.format("%s_%s", RedPointConst.ACTIVITY_SANDPLAY_ILLU_GROUP, iter_9_1)
 
-		manager.redPoint:setTip(var_9_2, 1)
+		table.insert(var_9_0, var_9_1)
+
+		local var_9_2 = {}
+
+		for iter_9_2, iter_9_3 in ipairs(SandplayIlluCfg.get_id_list_by_type[iter_9_1]) do
+			local var_9_3 = string.format("%s_%s", RedPointConst.ACTIVITY_SANDPLAY_ILLU_ITEM, iter_9_3)
+
+			table.insert(var_9_2, var_9_3)
+		end
+
+		manager.redPoint:addGroup(var_9_1, var_9_2)
 	end
 
-	for iter_9_2, iter_9_3 in ipairs(var_9_1) do
-		local var_9_3 = string.format("%s_%s", RedPointConst.ACTIVITY_SANDPLAY_ILLU_ITEM, tostring(iter_9_3))
+	manager.redPoint:addGroup(RedPointConst.ACTIVITY_SANDPLAY_ILLU, var_9_0)
 
-		manager.redPoint:setTip(var_9_3, 0)
+	local var_9_4 = ActivityTools.GetRedPointKey(arg_9_0.activity_id) .. arg_9_0.activity_id
+
+	manager.redPoint:addGroup(var_9_4, {
+		RedPointConst.ACTIVITY_SANDPLAY_ILLU
+	})
+end
+
+function var_0_0.UpdateRedPoint()
+	local var_10_0, var_10_1 = SandplayIlluData:GetAwardID()
+
+	for iter_10_0, iter_10_1 in ipairs(var_10_0) do
+		local var_10_2 = string.format("%s_%s", RedPointConst.ACTIVITY_SANDPLAY_ILLU_ITEM, tostring(iter_10_1))
+
+		manager.redPoint:setTip(var_10_2, 1)
+	end
+
+	for iter_10_2, iter_10_3 in ipairs(var_10_1) do
+		local var_10_3 = string.format("%s_%s", RedPointConst.ACTIVITY_SANDPLAY_ILLU_ITEM, tostring(iter_10_3))
+
+		manager.redPoint:setTip(var_10_3, 0)
 	end
 end
 

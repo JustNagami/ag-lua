@@ -67,7 +67,8 @@ end
 function var_0_0.MuteEnterRedPoint(arg_10_0)
 	if arg_10_0:IsOpenTime() then
 		manager.redPoint:setTip(RedPointConst.ACTIVITY_QUIZ_OPEN .. "_" .. arg_10_0.activityID_, 0)
-		saveData("activity_quiz_enter", tostring(arg_10_0.activityID_), manager.time:GetServerTime())
+		ActivityQuizTools.RecordAlreadyEnterThisLogin(arg_10_0.activityID_)
+		ActivityQuizTools.RecordAlreadyEnterTodayLocal(arg_10_0.activityID_)
 	end
 end
 

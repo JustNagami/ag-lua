@@ -506,8 +506,26 @@
 			70013,
 			70021
 		},
-		reward = {},
-		important_reward = {}
+		reward = {
+			{
+				70006,
+				1
+			},
+			{
+				70007,
+				1
+			}
+		},
+		important_reward = {
+			{
+				70007,
+				1
+			},
+			{
+				70006,
+				1
+			}
+		}
 	},
 	[10116] = {
 		main_task_type = 1,

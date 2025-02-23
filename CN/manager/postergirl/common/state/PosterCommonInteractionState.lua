@@ -115,6 +115,10 @@ function var_0_0.RandomIndexOfInteractionType(arg_4_0, arg_4_1)
 end
 
 function var_0_0.PlaySpecialTalk(arg_5_0, arg_5_1, arg_5_2)
+	if manager.story:IsPlay() then
+		return
+	end
+
 	local var_5_0 = string.split(arg_5_1, "_")
 
 	if #var_5_0 < 2 then

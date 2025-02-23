@@ -1,7 +1,13 @@
 ﻿local var_0_0 = class("EnternalMusicStopView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/VersionUI/JapanRegionUI_2_10/JapanRegionMusicUI/MusicPromptUI"
+	local var_1_0 = MusicData:GetNowMusicUINameList()
+
+	if var_1_0 and var_1_0.stopView then
+		return var_1_0.stopView
+	else
+		return "UI/VersionUI/JapanRegionUI_2_10/JapanRegionMusicUI/MusicPromptUI"
+	end
 end
 
 function var_0_0.UIParent(arg_2_0)

@@ -36,6 +36,12 @@
 			local var_4_2 = 0
 
 			if var_4_2 < arg_1_1.time_ and arg_1_1.time_ <= var_4_2 + arg_4_0 then
+				if arg_1_0.sceneSettingEffect_ then
+					arg_1_1.sceneSettingEffect_.enabled = false
+				end
+
+				arg_1_1.sceneSettingGo_:SetActive(true)
+
 				local var_4_3 = manager.ui.mainCamera.transform.localPosition
 				local var_4_4 = Vector3.New(0, 0, 10) + Vector3.New(var_4_3.x, var_4_3.y, 0)
 				local var_4_5 = arg_1_1.bgs_.ST2201
