@@ -18180,7 +18180,6 @@
 		tips = "",
 		line_text = "",
 		background_1 = "K01",
-		hero_list = "",
 		combo_skill_id = 0,
 		drop_lib_id = 1011300,
 		monster_level = 80,
@@ -18229,9 +18228,23 @@
 			2,
 			100
 		},
+		hero_list = {
+			{
+				1093,
+				160
+			},
+			{
+				1050,
+				161
+			},
+			{
+				1055,
+				162
+			}
+		},
 		team_type = {
 			1,
-			0
+			-1
 		}
 	},
 	[1011605] = {

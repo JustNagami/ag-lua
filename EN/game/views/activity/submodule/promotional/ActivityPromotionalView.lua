@@ -38,7 +38,10 @@ function var_0_0.AddListeners(arg_6_0)
 		})
 
 		local var_7_0 = ActivityPromotionalCfg[arg_6_0.activityID_]
+		local var_7_1 = var_7_0.hero_trial_navigation[3]
+		local var_7_2 = var_7_0.hero_trial_id
 
+		HeroTrialData:SetSelectActivityHeroID(var_7_1, var_7_2)
 		JumpTools.JumpToPage2(var_7_0.hero_trial_navigation)
 	end)
 	arg_6_0:AddBtnListener(arg_6_0.heroSkinBtn_, nil, function()

@@ -30,7 +30,7 @@ end
 function var_0_0.RefreshView(arg_6_0, arg_6_1)
 	arg_6_0.id = arg_6_1
 	arg_6_0.icon.sprite = SimBusinessTools.GetStageIcon(arg_6_0.id)
-	arg_6_0.name.text = SimBusinessStageCfg[arg_6_0.id].name
+	arg_6_0.name.text = GetI18NText(SimBusinessStageCfg[arg_6_0.id].name)
 
 	local var_6_0, var_6_1 = SimBusinessTools.GetStageState(arg_6_0.id)
 

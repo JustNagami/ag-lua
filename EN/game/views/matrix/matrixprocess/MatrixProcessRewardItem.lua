@@ -33,7 +33,7 @@ end
 
 function var_0_0.SetDesc(arg_5_0, arg_5_1)
 	arg_5_0.m_des1:Hide()
-	arg_5_0.m_des1:SetText(arg_5_1)
+	arg_5_0.m_des1:SetText(GetI18NText(arg_5_1))
 
 	arg_5_0.m_des2.text = GetI18NText(arg_5_1)
 	arg_5_0.extendScrollRect.verticalNormalizedPosition = 1

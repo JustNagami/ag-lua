@@ -449,7 +449,7 @@
 		arg_17_1.frameCnt_ = 0
 		arg_17_1.state_ = "playing"
 		arg_17_1.curTalkId_ = 1108106004
-		arg_17_1.duration_ = 5
+		arg_17_1.duration_ = 2
 
 		SetActive(arg_17_1.tipsGo_, false)
 
@@ -616,18 +616,38 @@
 
 				arg_17_1.typewritter:SetDirty()
 				arg_17_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106004", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_20_28 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106004", "story_v_side_new_1108106.awb") / 1000
+
+					if var_20_28 + var_20_20 > arg_17_1.duration_ then
+						arg_17_1.duration_ = var_20_28 + var_20_20
+					end
+
+					if var_20_23.prefab_name ~= "" and arg_17_1.actors_[var_20_23.prefab_name] ~= nil then
+						local var_20_29 = LuaForUtil.PlayVoiceWithCriLipsync(arg_17_1.actors_[var_20_23.prefab_name].transform, "story_v_side_new_1108106", "1108106004", "story_v_side_new_1108106.awb")
+
+						arg_17_1:RecordAudio("1108106004", var_20_29)
+						arg_17_1:RecordAudio("1108106004", var_20_29)
+					else
+						arg_17_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106004", "story_v_side_new_1108106.awb")
+					end
+
+					arg_17_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106004", "story_v_side_new_1108106.awb")
+				end
+
 				arg_17_1:RecordContent(arg_17_1.text_.text)
 			end
 
-			local var_20_28 = math.max(var_20_21, arg_17_1.talkMaxDuration)
+			local var_20_30 = math.max(var_20_21, arg_17_1.talkMaxDuration)
 
-			if var_20_20 <= arg_17_1.time_ and arg_17_1.time_ < var_20_20 + var_20_28 then
-				arg_17_1.typewritter.percent = (arg_17_1.time_ - var_20_20) / var_20_28
+			if var_20_20 <= arg_17_1.time_ and arg_17_1.time_ < var_20_20 + var_20_30 then
+				arg_17_1.typewritter.percent = (arg_17_1.time_ - var_20_20) / var_20_30
 
 				arg_17_1.typewritter:SetDirty()
 			end
 
-			if arg_17_1.time_ >= var_20_20 + var_20_28 and arg_17_1.time_ < var_20_20 + var_20_28 + arg_20_0 then
+			if arg_17_1.time_ >= var_20_20 + var_20_30 and arg_17_1.time_ < var_20_20 + var_20_30 + arg_20_0 then
 				arg_17_1.typewritter.percent = 1
 
 				arg_17_1.typewritter:SetDirty()
@@ -749,7 +769,7 @@
 		arg_25_1.frameCnt_ = 0
 		arg_25_1.state_ = "playing"
 		arg_25_1.curTalkId_ = 1108106006
-		arg_25_1.duration_ = 5
+		arg_25_1.duration_ = 4.73
 
 		SetActive(arg_25_1.tipsGo_, false)
 
@@ -846,18 +866,38 @@
 
 				arg_25_1.typewritter:SetDirty()
 				arg_25_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106006", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_28_14 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106006", "story_v_side_new_1108106.awb") / 1000
+
+					if var_28_14 + var_28_6 > arg_25_1.duration_ then
+						arg_25_1.duration_ = var_28_14 + var_28_6
+					end
+
+					if var_28_9.prefab_name ~= "" and arg_25_1.actors_[var_28_9.prefab_name] ~= nil then
+						local var_28_15 = LuaForUtil.PlayVoiceWithCriLipsync(arg_25_1.actors_[var_28_9.prefab_name].transform, "story_v_side_new_1108106", "1108106006", "story_v_side_new_1108106.awb")
+
+						arg_25_1:RecordAudio("1108106006", var_28_15)
+						arg_25_1:RecordAudio("1108106006", var_28_15)
+					else
+						arg_25_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106006", "story_v_side_new_1108106.awb")
+					end
+
+					arg_25_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106006", "story_v_side_new_1108106.awb")
+				end
+
 				arg_25_1:RecordContent(arg_25_1.text_.text)
 			end
 
-			local var_28_14 = math.max(var_28_7, arg_25_1.talkMaxDuration)
+			local var_28_16 = math.max(var_28_7, arg_25_1.talkMaxDuration)
 
-			if var_28_6 <= arg_25_1.time_ and arg_25_1.time_ < var_28_6 + var_28_14 then
-				arg_25_1.typewritter.percent = (arg_25_1.time_ - var_28_6) / var_28_14
+			if var_28_6 <= arg_25_1.time_ and arg_25_1.time_ < var_28_6 + var_28_16 then
+				arg_25_1.typewritter.percent = (arg_25_1.time_ - var_28_6) / var_28_16
 
 				arg_25_1.typewritter:SetDirty()
 			end
 
-			if arg_25_1.time_ >= var_28_6 + var_28_14 and arg_25_1.time_ < var_28_6 + var_28_14 + arg_28_0 then
+			if arg_25_1.time_ >= var_28_6 + var_28_16 and arg_25_1.time_ < var_28_6 + var_28_16 + arg_28_0 then
 				arg_25_1.typewritter.percent = 1
 
 				arg_25_1.typewritter:SetDirty()
@@ -935,7 +975,7 @@
 		arg_33_1.frameCnt_ = 0
 		arg_33_1.state_ = "playing"
 		arg_33_1.curTalkId_ = 1108106008
-		arg_33_1.duration_ = 5
+		arg_33_1.duration_ = 5.87
 
 		SetActive(arg_33_1.tipsGo_, false)
 
@@ -1026,18 +1066,38 @@
 
 				arg_33_1.typewritter:SetDirty()
 				arg_33_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106008", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_36_13 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106008", "story_v_side_new_1108106.awb") / 1000
+
+					if var_36_13 + var_36_5 > arg_33_1.duration_ then
+						arg_33_1.duration_ = var_36_13 + var_36_5
+					end
+
+					if var_36_8.prefab_name ~= "" and arg_33_1.actors_[var_36_8.prefab_name] ~= nil then
+						local var_36_14 = LuaForUtil.PlayVoiceWithCriLipsync(arg_33_1.actors_[var_36_8.prefab_name].transform, "story_v_side_new_1108106", "1108106008", "story_v_side_new_1108106.awb")
+
+						arg_33_1:RecordAudio("1108106008", var_36_14)
+						arg_33_1:RecordAudio("1108106008", var_36_14)
+					else
+						arg_33_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106008", "story_v_side_new_1108106.awb")
+					end
+
+					arg_33_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106008", "story_v_side_new_1108106.awb")
+				end
+
 				arg_33_1:RecordContent(arg_33_1.text_.text)
 			end
 
-			local var_36_13 = math.max(var_36_6, arg_33_1.talkMaxDuration)
+			local var_36_15 = math.max(var_36_6, arg_33_1.talkMaxDuration)
 
-			if var_36_5 <= arg_33_1.time_ and arg_33_1.time_ < var_36_5 + var_36_13 then
-				arg_33_1.typewritter.percent = (arg_33_1.time_ - var_36_5) / var_36_13
+			if var_36_5 <= arg_33_1.time_ and arg_33_1.time_ < var_36_5 + var_36_15 then
+				arg_33_1.typewritter.percent = (arg_33_1.time_ - var_36_5) / var_36_15
 
 				arg_33_1.typewritter:SetDirty()
 			end
 
-			if arg_33_1.time_ >= var_36_5 + var_36_13 and arg_33_1.time_ < var_36_5 + var_36_13 + arg_36_0 then
+			if arg_33_1.time_ >= var_36_5 + var_36_15 and arg_33_1.time_ < var_36_5 + var_36_15 + arg_36_0 then
 				arg_33_1.typewritter.percent = 1
 
 				arg_33_1.typewritter:SetDirty()
@@ -1165,7 +1225,7 @@
 		arg_41_1.frameCnt_ = 0
 		arg_41_1.state_ = "playing"
 		arg_41_1.curTalkId_ = 1108106011
-		arg_41_1.duration_ = 5
+		arg_41_1.duration_ = 3.17
 
 		SetActive(arg_41_1.tipsGo_, false)
 
@@ -1250,18 +1310,38 @@
 
 				arg_41_1.typewritter:SetDirty()
 				arg_41_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106011", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_44_12 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106011", "story_v_side_new_1108106.awb") / 1000
+
+					if var_44_12 + var_44_4 > arg_41_1.duration_ then
+						arg_41_1.duration_ = var_44_12 + var_44_4
+					end
+
+					if var_44_7.prefab_name ~= "" and arg_41_1.actors_[var_44_7.prefab_name] ~= nil then
+						local var_44_13 = LuaForUtil.PlayVoiceWithCriLipsync(arg_41_1.actors_[var_44_7.prefab_name].transform, "story_v_side_new_1108106", "1108106011", "story_v_side_new_1108106.awb")
+
+						arg_41_1:RecordAudio("1108106011", var_44_13)
+						arg_41_1:RecordAudio("1108106011", var_44_13)
+					else
+						arg_41_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106011", "story_v_side_new_1108106.awb")
+					end
+
+					arg_41_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106011", "story_v_side_new_1108106.awb")
+				end
+
 				arg_41_1:RecordContent(arg_41_1.text_.text)
 			end
 
-			local var_44_12 = math.max(var_44_5, arg_41_1.talkMaxDuration)
+			local var_44_14 = math.max(var_44_5, arg_41_1.talkMaxDuration)
 
-			if var_44_4 <= arg_41_1.time_ and arg_41_1.time_ < var_44_4 + var_44_12 then
-				arg_41_1.typewritter.percent = (arg_41_1.time_ - var_44_4) / var_44_12
+			if var_44_4 <= arg_41_1.time_ and arg_41_1.time_ < var_44_4 + var_44_14 then
+				arg_41_1.typewritter.percent = (arg_41_1.time_ - var_44_4) / var_44_14
 
 				arg_41_1.typewritter:SetDirty()
 			end
 
-			if arg_41_1.time_ >= var_44_4 + var_44_12 and arg_41_1.time_ < var_44_4 + var_44_12 + arg_44_0 then
+			if arg_41_1.time_ >= var_44_4 + var_44_14 and arg_41_1.time_ < var_44_4 + var_44_14 + arg_44_0 then
 				arg_41_1.typewritter.percent = 1
 
 				arg_41_1.typewritter:SetDirty()
@@ -1383,7 +1463,7 @@
 		arg_49_1.frameCnt_ = 0
 		arg_49_1.state_ = "playing"
 		arg_49_1.curTalkId_ = 1108106013
-		arg_49_1.duration_ = 5
+		arg_49_1.duration_ = 5.27
 
 		SetActive(arg_49_1.tipsGo_, false)
 
@@ -1474,18 +1554,38 @@
 
 				arg_49_1.typewritter:SetDirty()
 				arg_49_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106013", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_52_13 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106013", "story_v_side_new_1108106.awb") / 1000
+
+					if var_52_13 + var_52_5 > arg_49_1.duration_ then
+						arg_49_1.duration_ = var_52_13 + var_52_5
+					end
+
+					if var_52_8.prefab_name ~= "" and arg_49_1.actors_[var_52_8.prefab_name] ~= nil then
+						local var_52_14 = LuaForUtil.PlayVoiceWithCriLipsync(arg_49_1.actors_[var_52_8.prefab_name].transform, "story_v_side_new_1108106", "1108106013", "story_v_side_new_1108106.awb")
+
+						arg_49_1:RecordAudio("1108106013", var_52_14)
+						arg_49_1:RecordAudio("1108106013", var_52_14)
+					else
+						arg_49_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106013", "story_v_side_new_1108106.awb")
+					end
+
+					arg_49_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106013", "story_v_side_new_1108106.awb")
+				end
+
 				arg_49_1:RecordContent(arg_49_1.text_.text)
 			end
 
-			local var_52_13 = math.max(var_52_6, arg_49_1.talkMaxDuration)
+			local var_52_15 = math.max(var_52_6, arg_49_1.talkMaxDuration)
 
-			if var_52_5 <= arg_49_1.time_ and arg_49_1.time_ < var_52_5 + var_52_13 then
-				arg_49_1.typewritter.percent = (arg_49_1.time_ - var_52_5) / var_52_13
+			if var_52_5 <= arg_49_1.time_ and arg_49_1.time_ < var_52_5 + var_52_15 then
+				arg_49_1.typewritter.percent = (arg_49_1.time_ - var_52_5) / var_52_15
 
 				arg_49_1.typewritter:SetDirty()
 			end
 
-			if arg_49_1.time_ >= var_52_5 + var_52_13 and arg_49_1.time_ < var_52_5 + var_52_13 + arg_52_0 then
+			if arg_49_1.time_ >= var_52_5 + var_52_15 and arg_49_1.time_ < var_52_5 + var_52_15 + arg_52_0 then
 				arg_49_1.typewritter.percent = 1
 
 				arg_49_1.typewritter:SetDirty()
@@ -1498,7 +1598,7 @@
 		arg_53_1.frameCnt_ = 0
 		arg_53_1.state_ = "playing"
 		arg_53_1.curTalkId_ = 1108106014
-		arg_53_1.duration_ = 5
+		arg_53_1.duration_ = 8.7
 
 		SetActive(arg_53_1.tipsGo_, false)
 
@@ -1562,18 +1662,38 @@
 
 				arg_53_1.typewritter:SetDirty()
 				arg_53_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106014", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_56_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106014", "story_v_side_new_1108106.awb") / 1000
+
+					if var_56_8 + var_56_0 > arg_53_1.duration_ then
+						arg_53_1.duration_ = var_56_8 + var_56_0
+					end
+
+					if var_56_3.prefab_name ~= "" and arg_53_1.actors_[var_56_3.prefab_name] ~= nil then
+						local var_56_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_53_1.actors_[var_56_3.prefab_name].transform, "story_v_side_new_1108106", "1108106014", "story_v_side_new_1108106.awb")
+
+						arg_53_1:RecordAudio("1108106014", var_56_9)
+						arg_53_1:RecordAudio("1108106014", var_56_9)
+					else
+						arg_53_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106014", "story_v_side_new_1108106.awb")
+					end
+
+					arg_53_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106014", "story_v_side_new_1108106.awb")
+				end
+
 				arg_53_1:RecordContent(arg_53_1.text_.text)
 			end
 
-			local var_56_8 = math.max(var_56_1, arg_53_1.talkMaxDuration)
+			local var_56_10 = math.max(var_56_1, arg_53_1.talkMaxDuration)
 
-			if var_56_0 <= arg_53_1.time_ and arg_53_1.time_ < var_56_0 + var_56_8 then
-				arg_53_1.typewritter.percent = (arg_53_1.time_ - var_56_0) / var_56_8
+			if var_56_0 <= arg_53_1.time_ and arg_53_1.time_ < var_56_0 + var_56_10 then
+				arg_53_1.typewritter.percent = (arg_53_1.time_ - var_56_0) / var_56_10
 
 				arg_53_1.typewritter:SetDirty()
 			end
 
-			if arg_53_1.time_ >= var_56_0 + var_56_8 and arg_53_1.time_ < var_56_0 + var_56_8 + arg_56_0 then
+			if arg_53_1.time_ >= var_56_0 + var_56_10 and arg_53_1.time_ < var_56_0 + var_56_10 + arg_56_0 then
 				arg_53_1.typewritter.percent = 1
 
 				arg_53_1.typewritter:SetDirty()
@@ -1586,7 +1706,7 @@
 		arg_57_1.frameCnt_ = 0
 		arg_57_1.state_ = "playing"
 		arg_57_1.curTalkId_ = 1108106015
-		arg_57_1.duration_ = 5
+		arg_57_1.duration_ = 10.5
 
 		SetActive(arg_57_1.tipsGo_, false)
 
@@ -1662,18 +1782,38 @@
 
 				arg_57_1.typewritter:SetDirty()
 				arg_57_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106015", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_60_10 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106015", "story_v_side_new_1108106.awb") / 1000
+
+					if var_60_10 + var_60_2 > arg_57_1.duration_ then
+						arg_57_1.duration_ = var_60_10 + var_60_2
+					end
+
+					if var_60_5.prefab_name ~= "" and arg_57_1.actors_[var_60_5.prefab_name] ~= nil then
+						local var_60_11 = LuaForUtil.PlayVoiceWithCriLipsync(arg_57_1.actors_[var_60_5.prefab_name].transform, "story_v_side_new_1108106", "1108106015", "story_v_side_new_1108106.awb")
+
+						arg_57_1:RecordAudio("1108106015", var_60_11)
+						arg_57_1:RecordAudio("1108106015", var_60_11)
+					else
+						arg_57_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106015", "story_v_side_new_1108106.awb")
+					end
+
+					arg_57_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106015", "story_v_side_new_1108106.awb")
+				end
+
 				arg_57_1:RecordContent(arg_57_1.text_.text)
 			end
 
-			local var_60_10 = math.max(var_60_3, arg_57_1.talkMaxDuration)
+			local var_60_12 = math.max(var_60_3, arg_57_1.talkMaxDuration)
 
-			if var_60_2 <= arg_57_1.time_ and arg_57_1.time_ < var_60_2 + var_60_10 then
-				arg_57_1.typewritter.percent = (arg_57_1.time_ - var_60_2) / var_60_10
+			if var_60_2 <= arg_57_1.time_ and arg_57_1.time_ < var_60_2 + var_60_12 then
+				arg_57_1.typewritter.percent = (arg_57_1.time_ - var_60_2) / var_60_12
 
 				arg_57_1.typewritter:SetDirty()
 			end
 
-			if arg_57_1.time_ >= var_60_2 + var_60_10 and arg_57_1.time_ < var_60_2 + var_60_10 + arg_60_0 then
+			if arg_57_1.time_ >= var_60_2 + var_60_12 and arg_57_1.time_ < var_60_2 + var_60_12 + arg_60_0 then
 				arg_57_1.typewritter.percent = 1
 
 				arg_57_1.typewritter:SetDirty()
@@ -1834,7 +1974,7 @@
 		arg_69_1.frameCnt_ = 0
 		arg_69_1.state_ = "playing"
 		arg_69_1.curTalkId_ = 1108106018
-		arg_69_1.duration_ = 6
+		arg_69_1.duration_ = 5.3
 
 		SetActive(arg_69_1.tipsGo_, false)
 
@@ -1948,19 +2088,39 @@
 
 				arg_69_1.typewritter:SetDirty()
 				arg_69_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106018", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_72_15 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106018", "story_v_side_new_1108106.awb") / 1000
+
+					if var_72_15 + var_72_6 > arg_69_1.duration_ then
+						arg_69_1.duration_ = var_72_15 + var_72_6
+					end
+
+					if var_72_10.prefab_name ~= "" and arg_69_1.actors_[var_72_10.prefab_name] ~= nil then
+						local var_72_16 = LuaForUtil.PlayVoiceWithCriLipsync(arg_69_1.actors_[var_72_10.prefab_name].transform, "story_v_side_new_1108106", "1108106018", "story_v_side_new_1108106.awb")
+
+						arg_69_1:RecordAudio("1108106018", var_72_16)
+						arg_69_1:RecordAudio("1108106018", var_72_16)
+					else
+						arg_69_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106018", "story_v_side_new_1108106.awb")
+					end
+
+					arg_69_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106018", "story_v_side_new_1108106.awb")
+				end
+
 				arg_69_1:RecordContent(arg_69_1.text_.text)
 			end
 
-			local var_72_15 = var_72_6 + 0.3
-			local var_72_16 = math.max(var_72_7, arg_69_1.talkMaxDuration)
+			local var_72_17 = var_72_6 + 0.3
+			local var_72_18 = math.max(var_72_7, arg_69_1.talkMaxDuration)
 
-			if var_72_15 <= arg_69_1.time_ and arg_69_1.time_ < var_72_15 + var_72_16 then
-				arg_69_1.typewritter.percent = (arg_69_1.time_ - var_72_15) / var_72_16
+			if var_72_17 <= arg_69_1.time_ and arg_69_1.time_ < var_72_17 + var_72_18 then
+				arg_69_1.typewritter.percent = (arg_69_1.time_ - var_72_17) / var_72_18
 
 				arg_69_1.typewritter:SetDirty()
 			end
 
-			if arg_69_1.time_ >= var_72_15 + var_72_16 and arg_69_1.time_ < var_72_15 + var_72_16 + arg_72_0 then
+			if arg_69_1.time_ >= var_72_17 + var_72_18 and arg_69_1.time_ < var_72_17 + var_72_18 + arg_72_0 then
 				arg_69_1.typewritter.percent = 1
 
 				arg_69_1.typewritter:SetDirty()
@@ -2082,7 +2242,7 @@
 		arg_79_1.frameCnt_ = 0
 		arg_79_1.state_ = "playing"
 		arg_79_1.curTalkId_ = 1108106020
-		arg_79_1.duration_ = 5
+		arg_79_1.duration_ = 10.3
 
 		SetActive(arg_79_1.tipsGo_, false)
 
@@ -2173,18 +2333,38 @@
 
 				arg_79_1.typewritter:SetDirty()
 				arg_79_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106020", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_82_13 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106020", "story_v_side_new_1108106.awb") / 1000
+
+					if var_82_13 + var_82_5 > arg_79_1.duration_ then
+						arg_79_1.duration_ = var_82_13 + var_82_5
+					end
+
+					if var_82_8.prefab_name ~= "" and arg_79_1.actors_[var_82_8.prefab_name] ~= nil then
+						local var_82_14 = LuaForUtil.PlayVoiceWithCriLipsync(arg_79_1.actors_[var_82_8.prefab_name].transform, "story_v_side_new_1108106", "1108106020", "story_v_side_new_1108106.awb")
+
+						arg_79_1:RecordAudio("1108106020", var_82_14)
+						arg_79_1:RecordAudio("1108106020", var_82_14)
+					else
+						arg_79_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106020", "story_v_side_new_1108106.awb")
+					end
+
+					arg_79_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106020", "story_v_side_new_1108106.awb")
+				end
+
 				arg_79_1:RecordContent(arg_79_1.text_.text)
 			end
 
-			local var_82_13 = math.max(var_82_6, arg_79_1.talkMaxDuration)
+			local var_82_15 = math.max(var_82_6, arg_79_1.talkMaxDuration)
 
-			if var_82_5 <= arg_79_1.time_ and arg_79_1.time_ < var_82_5 + var_82_13 then
-				arg_79_1.typewritter.percent = (arg_79_1.time_ - var_82_5) / var_82_13
+			if var_82_5 <= arg_79_1.time_ and arg_79_1.time_ < var_82_5 + var_82_15 then
+				arg_79_1.typewritter.percent = (arg_79_1.time_ - var_82_5) / var_82_15
 
 				arg_79_1.typewritter:SetDirty()
 			end
 
-			if arg_79_1.time_ >= var_82_5 + var_82_13 and arg_79_1.time_ < var_82_5 + var_82_13 + arg_82_0 then
+			if arg_79_1.time_ >= var_82_5 + var_82_15 and arg_79_1.time_ < var_82_5 + var_82_15 + arg_82_0 then
 				arg_79_1.typewritter.percent = 1
 
 				arg_79_1.typewritter:SetDirty()
@@ -2197,7 +2377,7 @@
 		arg_83_1.frameCnt_ = 0
 		arg_83_1.state_ = "playing"
 		arg_83_1.curTalkId_ = 1108106021
-		arg_83_1.duration_ = 5
+		arg_83_1.duration_ = 5.2
 
 		SetActive(arg_83_1.tipsGo_, false)
 
@@ -2273,18 +2453,38 @@
 
 				arg_83_1.typewritter:SetDirty()
 				arg_83_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106021", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_86_10 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106021", "story_v_side_new_1108106.awb") / 1000
+
+					if var_86_10 + var_86_2 > arg_83_1.duration_ then
+						arg_83_1.duration_ = var_86_10 + var_86_2
+					end
+
+					if var_86_5.prefab_name ~= "" and arg_83_1.actors_[var_86_5.prefab_name] ~= nil then
+						local var_86_11 = LuaForUtil.PlayVoiceWithCriLipsync(arg_83_1.actors_[var_86_5.prefab_name].transform, "story_v_side_new_1108106", "1108106021", "story_v_side_new_1108106.awb")
+
+						arg_83_1:RecordAudio("1108106021", var_86_11)
+						arg_83_1:RecordAudio("1108106021", var_86_11)
+					else
+						arg_83_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106021", "story_v_side_new_1108106.awb")
+					end
+
+					arg_83_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106021", "story_v_side_new_1108106.awb")
+				end
+
 				arg_83_1:RecordContent(arg_83_1.text_.text)
 			end
 
-			local var_86_10 = math.max(var_86_3, arg_83_1.talkMaxDuration)
+			local var_86_12 = math.max(var_86_3, arg_83_1.talkMaxDuration)
 
-			if var_86_2 <= arg_83_1.time_ and arg_83_1.time_ < var_86_2 + var_86_10 then
-				arg_83_1.typewritter.percent = (arg_83_1.time_ - var_86_2) / var_86_10
+			if var_86_2 <= arg_83_1.time_ and arg_83_1.time_ < var_86_2 + var_86_12 then
+				arg_83_1.typewritter.percent = (arg_83_1.time_ - var_86_2) / var_86_12
 
 				arg_83_1.typewritter:SetDirty()
 			end
 
-			if arg_83_1.time_ >= var_86_2 + var_86_10 and arg_83_1.time_ < var_86_2 + var_86_10 + arg_86_0 then
+			if arg_83_1.time_ >= var_86_2 + var_86_12 and arg_83_1.time_ < var_86_2 + var_86_12 + arg_86_0 then
 				arg_83_1.typewritter.percent = 1
 
 				arg_83_1.typewritter:SetDirty()
@@ -2419,7 +2619,7 @@
 		arg_91_1.frameCnt_ = 0
 		arg_91_1.state_ = "playing"
 		arg_91_1.curTalkId_ = 1108106023
-		arg_91_1.duration_ = 5
+		arg_91_1.duration_ = 4.4
 
 		SetActive(arg_91_1.tipsGo_, false)
 
@@ -2490,18 +2690,38 @@
 
 				arg_91_1.typewritter:SetDirty()
 				arg_91_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106023", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_94_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106023", "story_v_side_new_1108106.awb") / 1000
+
+					if var_94_8 + var_94_0 > arg_91_1.duration_ then
+						arg_91_1.duration_ = var_94_8 + var_94_0
+					end
+
+					if var_94_3.prefab_name ~= "" and arg_91_1.actors_[var_94_3.prefab_name] ~= nil then
+						local var_94_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_91_1.actors_[var_94_3.prefab_name].transform, "story_v_side_new_1108106", "1108106023", "story_v_side_new_1108106.awb")
+
+						arg_91_1:RecordAudio("1108106023", var_94_9)
+						arg_91_1:RecordAudio("1108106023", var_94_9)
+					else
+						arg_91_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106023", "story_v_side_new_1108106.awb")
+					end
+
+					arg_91_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106023", "story_v_side_new_1108106.awb")
+				end
+
 				arg_91_1:RecordContent(arg_91_1.text_.text)
 			end
 
-			local var_94_8 = math.max(var_94_1, arg_91_1.talkMaxDuration)
+			local var_94_10 = math.max(var_94_1, arg_91_1.talkMaxDuration)
 
-			if var_94_0 <= arg_91_1.time_ and arg_91_1.time_ < var_94_0 + var_94_8 then
-				arg_91_1.typewritter.percent = (arg_91_1.time_ - var_94_0) / var_94_8
+			if var_94_0 <= arg_91_1.time_ and arg_91_1.time_ < var_94_0 + var_94_10 then
+				arg_91_1.typewritter.percent = (arg_91_1.time_ - var_94_0) / var_94_10
 
 				arg_91_1.typewritter:SetDirty()
 			end
 
-			if arg_91_1.time_ >= var_94_0 + var_94_8 and arg_91_1.time_ < var_94_0 + var_94_8 + arg_94_0 then
+			if arg_91_1.time_ >= var_94_0 + var_94_10 and arg_91_1.time_ < var_94_0 + var_94_10 + arg_94_0 then
 				arg_91_1.typewritter.percent = 1
 
 				arg_91_1.typewritter:SetDirty()
@@ -2991,7 +3211,7 @@
 		arg_117_1.frameCnt_ = 0
 		arg_117_1.state_ = "playing"
 		arg_117_1.curTalkId_ = 1108106029
-		arg_117_1.duration_ = 5
+		arg_117_1.duration_ = 6.93
 
 		SetActive(arg_117_1.tipsGo_, false)
 
@@ -3128,18 +3348,38 @@
 
 				arg_117_1.typewritter:SetDirty()
 				arg_117_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106029", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_120_23 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106029", "story_v_side_new_1108106.awb") / 1000
+
+					if var_120_23 + var_120_15 > arg_117_1.duration_ then
+						arg_117_1.duration_ = var_120_23 + var_120_15
+					end
+
+					if var_120_18.prefab_name ~= "" and arg_117_1.actors_[var_120_18.prefab_name] ~= nil then
+						local var_120_24 = LuaForUtil.PlayVoiceWithCriLipsync(arg_117_1.actors_[var_120_18.prefab_name].transform, "story_v_side_new_1108106", "1108106029", "story_v_side_new_1108106.awb")
+
+						arg_117_1:RecordAudio("1108106029", var_120_24)
+						arg_117_1:RecordAudio("1108106029", var_120_24)
+					else
+						arg_117_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106029", "story_v_side_new_1108106.awb")
+					end
+
+					arg_117_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106029", "story_v_side_new_1108106.awb")
+				end
+
 				arg_117_1:RecordContent(arg_117_1.text_.text)
 			end
 
-			local var_120_23 = math.max(var_120_16, arg_117_1.talkMaxDuration)
+			local var_120_25 = math.max(var_120_16, arg_117_1.talkMaxDuration)
 
-			if var_120_15 <= arg_117_1.time_ and arg_117_1.time_ < var_120_15 + var_120_23 then
-				arg_117_1.typewritter.percent = (arg_117_1.time_ - var_120_15) / var_120_23
+			if var_120_15 <= arg_117_1.time_ and arg_117_1.time_ < var_120_15 + var_120_25 then
+				arg_117_1.typewritter.percent = (arg_117_1.time_ - var_120_15) / var_120_25
 
 				arg_117_1.typewritter:SetDirty()
 			end
 
-			if arg_117_1.time_ >= var_120_15 + var_120_23 and arg_117_1.time_ < var_120_15 + var_120_23 + arg_120_0 then
+			if arg_117_1.time_ >= var_120_15 + var_120_25 and arg_117_1.time_ < var_120_15 + var_120_25 + arg_120_0 then
 				arg_117_1.typewritter.percent = 1
 
 				arg_117_1.typewritter:SetDirty()
@@ -3152,7 +3392,7 @@
 		arg_121_1.frameCnt_ = 0
 		arg_121_1.state_ = "playing"
 		arg_121_1.curTalkId_ = 1108106030
-		arg_121_1.duration_ = 5.67
+		arg_121_1.duration_ = 4.63
 
 		SetActive(arg_121_1.tipsGo_, false)
 
@@ -3245,19 +3485,39 @@
 
 				arg_121_1.typewritter:SetDirty()
 				arg_121_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106030", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_124_11 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106030", "story_v_side_new_1108106.awb") / 1000
+
+					if var_124_11 + var_124_2 > arg_121_1.duration_ then
+						arg_121_1.duration_ = var_124_11 + var_124_2
+					end
+
+					if var_124_6.prefab_name ~= "" and arg_121_1.actors_[var_124_6.prefab_name] ~= nil then
+						local var_124_12 = LuaForUtil.PlayVoiceWithCriLipsync(arg_121_1.actors_[var_124_6.prefab_name].transform, "story_v_side_new_1108106", "1108106030", "story_v_side_new_1108106.awb")
+
+						arg_121_1:RecordAudio("1108106030", var_124_12)
+						arg_121_1:RecordAudio("1108106030", var_124_12)
+					else
+						arg_121_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106030", "story_v_side_new_1108106.awb")
+					end
+
+					arg_121_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106030", "story_v_side_new_1108106.awb")
+				end
+
 				arg_121_1:RecordContent(arg_121_1.text_.text)
 			end
 
-			local var_124_11 = var_124_2 + 0.3
-			local var_124_12 = math.max(var_124_3, arg_121_1.talkMaxDuration)
+			local var_124_13 = var_124_2 + 0.3
+			local var_124_14 = math.max(var_124_3, arg_121_1.talkMaxDuration)
 
-			if var_124_11 <= arg_121_1.time_ and arg_121_1.time_ < var_124_11 + var_124_12 then
-				arg_121_1.typewritter.percent = (arg_121_1.time_ - var_124_11) / var_124_12
+			if var_124_13 <= arg_121_1.time_ and arg_121_1.time_ < var_124_13 + var_124_14 then
+				arg_121_1.typewritter.percent = (arg_121_1.time_ - var_124_13) / var_124_14
 
 				arg_121_1.typewritter:SetDirty()
 			end
 
-			if arg_121_1.time_ >= var_124_11 + var_124_12 and arg_121_1.time_ < var_124_11 + var_124_12 + arg_124_0 then
+			if arg_121_1.time_ >= var_124_13 + var_124_14 and arg_121_1.time_ < var_124_13 + var_124_14 + arg_124_0 then
 				arg_121_1.typewritter.percent = 1
 
 				arg_121_1.typewritter:SetDirty()
@@ -3270,7 +3530,7 @@
 		arg_127_1.frameCnt_ = 0
 		arg_127_1.state_ = "playing"
 		arg_127_1.curTalkId_ = 1108106031
-		arg_127_1.duration_ = 5
+		arg_127_1.duration_ = 5.4
 
 		SetActive(arg_127_1.tipsGo_, false)
 
@@ -3334,18 +3594,38 @@
 
 				arg_127_1.typewritter:SetDirty()
 				arg_127_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106031", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_130_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106031", "story_v_side_new_1108106.awb") / 1000
+
+					if var_130_8 + var_130_0 > arg_127_1.duration_ then
+						arg_127_1.duration_ = var_130_8 + var_130_0
+					end
+
+					if var_130_3.prefab_name ~= "" and arg_127_1.actors_[var_130_3.prefab_name] ~= nil then
+						local var_130_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_127_1.actors_[var_130_3.prefab_name].transform, "story_v_side_new_1108106", "1108106031", "story_v_side_new_1108106.awb")
+
+						arg_127_1:RecordAudio("1108106031", var_130_9)
+						arg_127_1:RecordAudio("1108106031", var_130_9)
+					else
+						arg_127_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106031", "story_v_side_new_1108106.awb")
+					end
+
+					arg_127_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106031", "story_v_side_new_1108106.awb")
+				end
+
 				arg_127_1:RecordContent(arg_127_1.text_.text)
 			end
 
-			local var_130_8 = math.max(var_130_1, arg_127_1.talkMaxDuration)
+			local var_130_10 = math.max(var_130_1, arg_127_1.talkMaxDuration)
 
-			if var_130_0 <= arg_127_1.time_ and arg_127_1.time_ < var_130_0 + var_130_8 then
-				arg_127_1.typewritter.percent = (arg_127_1.time_ - var_130_0) / var_130_8
+			if var_130_0 <= arg_127_1.time_ and arg_127_1.time_ < var_130_0 + var_130_10 then
+				arg_127_1.typewritter.percent = (arg_127_1.time_ - var_130_0) / var_130_10
 
 				arg_127_1.typewritter:SetDirty()
 			end
 
-			if arg_127_1.time_ >= var_130_0 + var_130_8 and arg_127_1.time_ < var_130_0 + var_130_8 + arg_130_0 then
+			if arg_127_1.time_ >= var_130_0 + var_130_10 and arg_127_1.time_ < var_130_0 + var_130_10 + arg_130_0 then
 				arg_127_1.typewritter.percent = 1
 
 				arg_127_1.typewritter:SetDirty()
@@ -3484,7 +3764,7 @@
 		arg_135_1.frameCnt_ = 0
 		arg_135_1.state_ = "playing"
 		arg_135_1.curTalkId_ = 1108106033
-		arg_135_1.duration_ = 5
+		arg_135_1.duration_ = 3.4
 
 		SetActive(arg_135_1.tipsGo_, false)
 
@@ -3625,18 +3905,38 @@
 
 				arg_135_1.typewritter:SetDirty()
 				arg_135_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106033", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_138_24 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106033", "story_v_side_new_1108106.awb") / 1000
+
+					if var_138_24 + var_138_16 > arg_135_1.duration_ then
+						arg_135_1.duration_ = var_138_24 + var_138_16
+					end
+
+					if var_138_19.prefab_name ~= "" and arg_135_1.actors_[var_138_19.prefab_name] ~= nil then
+						local var_138_25 = LuaForUtil.PlayVoiceWithCriLipsync(arg_135_1.actors_[var_138_19.prefab_name].transform, "story_v_side_new_1108106", "1108106033", "story_v_side_new_1108106.awb")
+
+						arg_135_1:RecordAudio("1108106033", var_138_25)
+						arg_135_1:RecordAudio("1108106033", var_138_25)
+					else
+						arg_135_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106033", "story_v_side_new_1108106.awb")
+					end
+
+					arg_135_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106033", "story_v_side_new_1108106.awb")
+				end
+
 				arg_135_1:RecordContent(arg_135_1.text_.text)
 			end
 
-			local var_138_24 = math.max(var_138_17, arg_135_1.talkMaxDuration)
+			local var_138_26 = math.max(var_138_17, arg_135_1.talkMaxDuration)
 
-			if var_138_16 <= arg_135_1.time_ and arg_135_1.time_ < var_138_16 + var_138_24 then
-				arg_135_1.typewritter.percent = (arg_135_1.time_ - var_138_16) / var_138_24
+			if var_138_16 <= arg_135_1.time_ and arg_135_1.time_ < var_138_16 + var_138_26 then
+				arg_135_1.typewritter.percent = (arg_135_1.time_ - var_138_16) / var_138_26
 
 				arg_135_1.typewritter:SetDirty()
 			end
 
-			if arg_135_1.time_ >= var_138_16 + var_138_24 and arg_135_1.time_ < var_138_16 + var_138_24 + arg_138_0 then
+			if arg_135_1.time_ >= var_138_16 + var_138_26 and arg_135_1.time_ < var_138_16 + var_138_26 + arg_138_0 then
 				arg_135_1.typewritter.percent = 1
 
 				arg_135_1.typewritter:SetDirty()
@@ -3764,7 +4064,7 @@
 		arg_143_1.frameCnt_ = 0
 		arg_143_1.state_ = "playing"
 		arg_143_1.curTalkId_ = 1108106035
-		arg_143_1.duration_ = 5
+		arg_143_1.duration_ = 8.27
 
 		SetActive(arg_143_1.tipsGo_, false)
 
@@ -3861,18 +4161,38 @@
 
 				arg_143_1.typewritter:SetDirty()
 				arg_143_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106035", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_146_14 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106035", "story_v_side_new_1108106.awb") / 1000
+
+					if var_146_14 + var_146_6 > arg_143_1.duration_ then
+						arg_143_1.duration_ = var_146_14 + var_146_6
+					end
+
+					if var_146_9.prefab_name ~= "" and arg_143_1.actors_[var_146_9.prefab_name] ~= nil then
+						local var_146_15 = LuaForUtil.PlayVoiceWithCriLipsync(arg_143_1.actors_[var_146_9.prefab_name].transform, "story_v_side_new_1108106", "1108106035", "story_v_side_new_1108106.awb")
+
+						arg_143_1:RecordAudio("1108106035", var_146_15)
+						arg_143_1:RecordAudio("1108106035", var_146_15)
+					else
+						arg_143_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106035", "story_v_side_new_1108106.awb")
+					end
+
+					arg_143_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106035", "story_v_side_new_1108106.awb")
+				end
+
 				arg_143_1:RecordContent(arg_143_1.text_.text)
 			end
 
-			local var_146_14 = math.max(var_146_7, arg_143_1.talkMaxDuration)
+			local var_146_16 = math.max(var_146_7, arg_143_1.talkMaxDuration)
 
-			if var_146_6 <= arg_143_1.time_ and arg_143_1.time_ < var_146_6 + var_146_14 then
-				arg_143_1.typewritter.percent = (arg_143_1.time_ - var_146_6) / var_146_14
+			if var_146_6 <= arg_143_1.time_ and arg_143_1.time_ < var_146_6 + var_146_16 then
+				arg_143_1.typewritter.percent = (arg_143_1.time_ - var_146_6) / var_146_16
 
 				arg_143_1.typewritter:SetDirty()
 			end
 
-			if arg_143_1.time_ >= var_146_6 + var_146_14 and arg_143_1.time_ < var_146_6 + var_146_14 + arg_146_0 then
+			if arg_143_1.time_ >= var_146_6 + var_146_16 and arg_143_1.time_ < var_146_6 + var_146_16 + arg_146_0 then
 				arg_143_1.typewritter.percent = 1
 
 				arg_143_1.typewritter:SetDirty()
@@ -4124,7 +4444,7 @@
 		arg_153_1.frameCnt_ = 0
 		arg_153_1.state_ = "playing"
 		arg_153_1.curTalkId_ = 1108106037
-		arg_153_1.duration_ = 5
+		arg_153_1.duration_ = 5.7
 
 		SetActive(arg_153_1.tipsGo_, false)
 
@@ -4261,18 +4581,38 @@
 
 				arg_153_1.typewritter:SetDirty()
 				arg_153_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106037", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_156_23 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106037", "story_v_side_new_1108106.awb") / 1000
+
+					if var_156_23 + var_156_15 > arg_153_1.duration_ then
+						arg_153_1.duration_ = var_156_23 + var_156_15
+					end
+
+					if var_156_18.prefab_name ~= "" and arg_153_1.actors_[var_156_18.prefab_name] ~= nil then
+						local var_156_24 = LuaForUtil.PlayVoiceWithCriLipsync(arg_153_1.actors_[var_156_18.prefab_name].transform, "story_v_side_new_1108106", "1108106037", "story_v_side_new_1108106.awb")
+
+						arg_153_1:RecordAudio("1108106037", var_156_24)
+						arg_153_1:RecordAudio("1108106037", var_156_24)
+					else
+						arg_153_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106037", "story_v_side_new_1108106.awb")
+					end
+
+					arg_153_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106037", "story_v_side_new_1108106.awb")
+				end
+
 				arg_153_1:RecordContent(arg_153_1.text_.text)
 			end
 
-			local var_156_23 = math.max(var_156_16, arg_153_1.talkMaxDuration)
+			local var_156_25 = math.max(var_156_16, arg_153_1.talkMaxDuration)
 
-			if var_156_15 <= arg_153_1.time_ and arg_153_1.time_ < var_156_15 + var_156_23 then
-				arg_153_1.typewritter.percent = (arg_153_1.time_ - var_156_15) / var_156_23
+			if var_156_15 <= arg_153_1.time_ and arg_153_1.time_ < var_156_15 + var_156_25 then
+				arg_153_1.typewritter.percent = (arg_153_1.time_ - var_156_15) / var_156_25
 
 				arg_153_1.typewritter:SetDirty()
 			end
 
-			if arg_153_1.time_ >= var_156_15 + var_156_23 and arg_153_1.time_ < var_156_15 + var_156_23 + arg_156_0 then
+			if arg_153_1.time_ >= var_156_15 + var_156_25 and arg_153_1.time_ < var_156_15 + var_156_25 + arg_156_0 then
 				arg_153_1.typewritter.percent = 1
 
 				arg_153_1.typewritter:SetDirty()
@@ -4522,7 +4862,7 @@
 		arg_165_1.frameCnt_ = 0
 		arg_165_1.state_ = "playing"
 		arg_165_1.curTalkId_ = 1108106040
-		arg_165_1.duration_ = 5
+		arg_165_1.duration_ = 3.3
 
 		SetActive(arg_165_1.tipsGo_, false)
 
@@ -4633,18 +4973,38 @@
 
 				arg_165_1.typewritter:SetDirty()
 				arg_165_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106040", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_168_17 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106040", "story_v_side_new_1108106.awb") / 1000
+
+					if var_168_17 + var_168_9 > arg_165_1.duration_ then
+						arg_165_1.duration_ = var_168_17 + var_168_9
+					end
+
+					if var_168_12.prefab_name ~= "" and arg_165_1.actors_[var_168_12.prefab_name] ~= nil then
+						local var_168_18 = LuaForUtil.PlayVoiceWithCriLipsync(arg_165_1.actors_[var_168_12.prefab_name].transform, "story_v_side_new_1108106", "1108106040", "story_v_side_new_1108106.awb")
+
+						arg_165_1:RecordAudio("1108106040", var_168_18)
+						arg_165_1:RecordAudio("1108106040", var_168_18)
+					else
+						arg_165_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106040", "story_v_side_new_1108106.awb")
+					end
+
+					arg_165_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106040", "story_v_side_new_1108106.awb")
+				end
+
 				arg_165_1:RecordContent(arg_165_1.text_.text)
 			end
 
-			local var_168_17 = math.max(var_168_10, arg_165_1.talkMaxDuration)
+			local var_168_19 = math.max(var_168_10, arg_165_1.talkMaxDuration)
 
-			if var_168_9 <= arg_165_1.time_ and arg_165_1.time_ < var_168_9 + var_168_17 then
-				arg_165_1.typewritter.percent = (arg_165_1.time_ - var_168_9) / var_168_17
+			if var_168_9 <= arg_165_1.time_ and arg_165_1.time_ < var_168_9 + var_168_19 then
+				arg_165_1.typewritter.percent = (arg_165_1.time_ - var_168_9) / var_168_19
 
 				arg_165_1.typewritter:SetDirty()
 			end
 
-			if arg_165_1.time_ >= var_168_9 + var_168_17 and arg_165_1.time_ < var_168_9 + var_168_17 + arg_168_0 then
+			if arg_165_1.time_ >= var_168_9 + var_168_19 and arg_165_1.time_ < var_168_9 + var_168_19 + arg_168_0 then
 				arg_165_1.typewritter.percent = 1
 
 				arg_165_1.typewritter:SetDirty()
@@ -4784,7 +5144,7 @@
 		arg_177_1.frameCnt_ = 0
 		arg_177_1.state_ = "playing"
 		arg_177_1.curTalkId_ = 1108106043
-		arg_177_1.duration_ = 5
+		arg_177_1.duration_ = 1.97
 
 		SetActive(arg_177_1.tipsGo_, false)
 
@@ -4822,7 +5182,7 @@
 			end
 
 			local var_180_6 = 0
-			local var_180_7 = 1.96666666666667
+			local var_180_7 = 0.166666666666667
 
 			if var_180_6 < arg_177_1.time_ and arg_177_1.time_ <= var_180_6 + arg_180_0 then
 				arg_177_1.talkMaxDuration = 0
@@ -4875,18 +5235,38 @@
 
 				arg_177_1.typewritter:SetDirty()
 				arg_177_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106043", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_180_14 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106043", "story_v_side_new_1108106.awb") / 1000
+
+					if var_180_14 + var_180_6 > arg_177_1.duration_ then
+						arg_177_1.duration_ = var_180_14 + var_180_6
+					end
+
+					if var_180_9.prefab_name ~= "" and arg_177_1.actors_[var_180_9.prefab_name] ~= nil then
+						local var_180_15 = LuaForUtil.PlayVoiceWithCriLipsync(arg_177_1.actors_[var_180_9.prefab_name].transform, "story_v_side_new_1108106", "1108106043", "story_v_side_new_1108106.awb")
+
+						arg_177_1:RecordAudio("1108106043", var_180_15)
+						arg_177_1:RecordAudio("1108106043", var_180_15)
+					else
+						arg_177_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106043", "story_v_side_new_1108106.awb")
+					end
+
+					arg_177_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106043", "story_v_side_new_1108106.awb")
+				end
+
 				arg_177_1:RecordContent(arg_177_1.text_.text)
 			end
 
-			local var_180_14 = math.max(var_180_7, arg_177_1.talkMaxDuration)
+			local var_180_16 = math.max(var_180_7, arg_177_1.talkMaxDuration)
 
-			if var_180_6 <= arg_177_1.time_ and arg_177_1.time_ < var_180_6 + var_180_14 then
-				arg_177_1.typewritter.percent = (arg_177_1.time_ - var_180_6) / var_180_14
+			if var_180_6 <= arg_177_1.time_ and arg_177_1.time_ < var_180_6 + var_180_16 then
+				arg_177_1.typewritter.percent = (arg_177_1.time_ - var_180_6) / var_180_16
 
 				arg_177_1.typewritter:SetDirty()
 			end
 
-			if arg_177_1.time_ >= var_180_6 + var_180_14 and arg_177_1.time_ < var_180_6 + var_180_14 + arg_180_0 then
+			if arg_177_1.time_ >= var_180_6 + var_180_16 and arg_177_1.time_ < var_180_6 + var_180_16 + arg_180_0 then
 				arg_177_1.typewritter.percent = 1
 
 				arg_177_1.typewritter:SetDirty()
@@ -5906,7 +6286,7 @@
 		arg_214_1.frameCnt_ = 0
 		arg_214_1.state_ = "playing"
 		arg_214_1.curTalkId_ = 1108106051
-		arg_214_1.duration_ = 5
+		arg_214_1.duration_ = 1.67
 
 		SetActive(arg_214_1.tipsGo_, false)
 
@@ -5987,18 +6367,38 @@
 
 				arg_214_1.typewritter:SetDirty()
 				arg_214_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106051", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_217_12 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106051", "story_v_side_new_1108106.awb") / 1000
+
+					if var_217_12 + var_217_4 > arg_214_1.duration_ then
+						arg_214_1.duration_ = var_217_12 + var_217_4
+					end
+
+					if var_217_7.prefab_name ~= "" and arg_214_1.actors_[var_217_7.prefab_name] ~= nil then
+						local var_217_13 = LuaForUtil.PlayVoiceWithCriLipsync(arg_214_1.actors_[var_217_7.prefab_name].transform, "story_v_side_new_1108106", "1108106051", "story_v_side_new_1108106.awb")
+
+						arg_214_1:RecordAudio("1108106051", var_217_13)
+						arg_214_1:RecordAudio("1108106051", var_217_13)
+					else
+						arg_214_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106051", "story_v_side_new_1108106.awb")
+					end
+
+					arg_214_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106051", "story_v_side_new_1108106.awb")
+				end
+
 				arg_214_1:RecordContent(arg_214_1.text_.text)
 			end
 
-			local var_217_12 = math.max(var_217_5, arg_214_1.talkMaxDuration)
+			local var_217_14 = math.max(var_217_5, arg_214_1.talkMaxDuration)
 
-			if var_217_4 <= arg_214_1.time_ and arg_214_1.time_ < var_217_4 + var_217_12 then
-				arg_214_1.typewritter.percent = (arg_214_1.time_ - var_217_4) / var_217_12
+			if var_217_4 <= arg_214_1.time_ and arg_214_1.time_ < var_217_4 + var_217_14 then
+				arg_214_1.typewritter.percent = (arg_214_1.time_ - var_217_4) / var_217_14
 
 				arg_214_1.typewritter:SetDirty()
 			end
 
-			if arg_214_1.time_ >= var_217_4 + var_217_12 and arg_214_1.time_ < var_217_4 + var_217_12 + arg_217_0 then
+			if arg_214_1.time_ >= var_217_4 + var_217_14 and arg_214_1.time_ < var_217_4 + var_217_14 + arg_217_0 then
 				arg_214_1.typewritter.percent = 1
 
 				arg_214_1.typewritter:SetDirty()
@@ -6093,7 +6493,7 @@
 		arg_222_1.frameCnt_ = 0
 		arg_222_1.state_ = "playing"
 		arg_222_1.curTalkId_ = 1108106053
-		arg_222_1.duration_ = 6.75
+		arg_222_1.duration_ = 4.25
 
 		SetActive(arg_222_1.tipsGo_, false)
 
@@ -6292,19 +6692,39 @@
 
 				arg_222_1.typewritter:SetDirty()
 				arg_222_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106053", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_225_38 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106053", "story_v_side_new_1108106.awb") / 1000
+
+					if var_225_38 + var_225_29 > arg_222_1.duration_ then
+						arg_222_1.duration_ = var_225_38 + var_225_29
+					end
+
+					if var_225_33.prefab_name ~= "" and arg_222_1.actors_[var_225_33.prefab_name] ~= nil then
+						local var_225_39 = LuaForUtil.PlayVoiceWithCriLipsync(arg_222_1.actors_[var_225_33.prefab_name].transform, "story_v_side_new_1108106", "1108106053", "story_v_side_new_1108106.awb")
+
+						arg_222_1:RecordAudio("1108106053", var_225_39)
+						arg_222_1:RecordAudio("1108106053", var_225_39)
+					else
+						arg_222_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106053", "story_v_side_new_1108106.awb")
+					end
+
+					arg_222_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106053", "story_v_side_new_1108106.awb")
+				end
+
 				arg_222_1:RecordContent(arg_222_1.text_.text)
 			end
 
-			local var_225_38 = var_225_29 + 0.3
-			local var_225_39 = math.max(var_225_30, arg_222_1.talkMaxDuration)
+			local var_225_40 = var_225_29 + 0.3
+			local var_225_41 = math.max(var_225_30, arg_222_1.talkMaxDuration)
 
-			if var_225_38 <= arg_222_1.time_ and arg_222_1.time_ < var_225_38 + var_225_39 then
-				arg_222_1.typewritter.percent = (arg_222_1.time_ - var_225_38) / var_225_39
+			if var_225_40 <= arg_222_1.time_ and arg_222_1.time_ < var_225_40 + var_225_41 then
+				arg_222_1.typewritter.percent = (arg_222_1.time_ - var_225_40) / var_225_41
 
 				arg_222_1.typewritter:SetDirty()
 			end
 
-			if arg_222_1.time_ >= var_225_38 + var_225_39 and arg_222_1.time_ < var_225_38 + var_225_39 + arg_225_0 then
+			if arg_222_1.time_ >= var_225_40 + var_225_41 and arg_222_1.time_ < var_225_40 + var_225_41 + arg_225_0 then
 				arg_222_1.typewritter.percent = 1
 
 				arg_222_1.typewritter:SetDirty()
@@ -6317,7 +6737,7 @@
 		arg_228_1.frameCnt_ = 0
 		arg_228_1.state_ = "playing"
 		arg_228_1.curTalkId_ = 1108106054
-		arg_228_1.duration_ = 5
+		arg_228_1.duration_ = 2.8
 
 		SetActive(arg_228_1.tipsGo_, false)
 
@@ -6388,18 +6808,38 @@
 
 				arg_228_1.typewritter:SetDirty()
 				arg_228_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106054", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_231_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106054", "story_v_side_new_1108106.awb") / 1000
+
+					if var_231_8 + var_231_0 > arg_228_1.duration_ then
+						arg_228_1.duration_ = var_231_8 + var_231_0
+					end
+
+					if var_231_3.prefab_name ~= "" and arg_228_1.actors_[var_231_3.prefab_name] ~= nil then
+						local var_231_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_228_1.actors_[var_231_3.prefab_name].transform, "story_v_side_new_1108106", "1108106054", "story_v_side_new_1108106.awb")
+
+						arg_228_1:RecordAudio("1108106054", var_231_9)
+						arg_228_1:RecordAudio("1108106054", var_231_9)
+					else
+						arg_228_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106054", "story_v_side_new_1108106.awb")
+					end
+
+					arg_228_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106054", "story_v_side_new_1108106.awb")
+				end
+
 				arg_228_1:RecordContent(arg_228_1.text_.text)
 			end
 
-			local var_231_8 = math.max(var_231_1, arg_228_1.talkMaxDuration)
+			local var_231_10 = math.max(var_231_1, arg_228_1.talkMaxDuration)
 
-			if var_231_0 <= arg_228_1.time_ and arg_228_1.time_ < var_231_0 + var_231_8 then
-				arg_228_1.typewritter.percent = (arg_228_1.time_ - var_231_0) / var_231_8
+			if var_231_0 <= arg_228_1.time_ and arg_228_1.time_ < var_231_0 + var_231_10 then
+				arg_228_1.typewritter.percent = (arg_228_1.time_ - var_231_0) / var_231_10
 
 				arg_228_1.typewritter:SetDirty()
 			end
 
-			if arg_228_1.time_ >= var_231_0 + var_231_8 and arg_228_1.time_ < var_231_0 + var_231_8 + arg_231_0 then
+			if arg_228_1.time_ >= var_231_0 + var_231_10 and arg_228_1.time_ < var_231_0 + var_231_10 + arg_231_0 then
 				arg_228_1.typewritter.percent = 1
 
 				arg_228_1.typewritter:SetDirty()
@@ -6598,7 +7038,7 @@
 		arg_241_1.frameCnt_ = 0
 		arg_241_1.state_ = "playing"
 		arg_241_1.curTalkId_ = 1108106057
-		arg_241_1.duration_ = 5
+		arg_241_1.duration_ = 10.33
 
 		SetActive(arg_241_1.tipsGo_, false)
 
@@ -6669,18 +7109,38 @@
 
 				arg_241_1.typewritter:SetDirty()
 				arg_241_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106057", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_244_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106057", "story_v_side_new_1108106.awb") / 1000
+
+					if var_244_8 + var_244_0 > arg_241_1.duration_ then
+						arg_241_1.duration_ = var_244_8 + var_244_0
+					end
+
+					if var_244_3.prefab_name ~= "" and arg_241_1.actors_[var_244_3.prefab_name] ~= nil then
+						local var_244_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_241_1.actors_[var_244_3.prefab_name].transform, "story_v_side_new_1108106", "1108106057", "story_v_side_new_1108106.awb")
+
+						arg_241_1:RecordAudio("1108106057", var_244_9)
+						arg_241_1:RecordAudio("1108106057", var_244_9)
+					else
+						arg_241_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106057", "story_v_side_new_1108106.awb")
+					end
+
+					arg_241_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106057", "story_v_side_new_1108106.awb")
+				end
+
 				arg_241_1:RecordContent(arg_241_1.text_.text)
 			end
 
-			local var_244_8 = math.max(var_244_1, arg_241_1.talkMaxDuration)
+			local var_244_10 = math.max(var_244_1, arg_241_1.talkMaxDuration)
 
-			if var_244_0 <= arg_241_1.time_ and arg_241_1.time_ < var_244_0 + var_244_8 then
-				arg_241_1.typewritter.percent = (arg_241_1.time_ - var_244_0) / var_244_8
+			if var_244_0 <= arg_241_1.time_ and arg_241_1.time_ < var_244_0 + var_244_10 then
+				arg_241_1.typewritter.percent = (arg_241_1.time_ - var_244_0) / var_244_10
 
 				arg_241_1.typewritter:SetDirty()
 			end
 
-			if arg_241_1.time_ >= var_244_0 + var_244_8 and arg_241_1.time_ < var_244_0 + var_244_8 + arg_244_0 then
+			if arg_241_1.time_ >= var_244_0 + var_244_10 and arg_241_1.time_ < var_244_0 + var_244_10 + arg_244_0 then
 				arg_241_1.typewritter.percent = 1
 
 				arg_241_1.typewritter:SetDirty()
@@ -6693,7 +7153,7 @@
 		arg_245_1.frameCnt_ = 0
 		arg_245_1.state_ = "playing"
 		arg_245_1.curTalkId_ = 1108106058
-		arg_245_1.duration_ = 5
+		arg_245_1.duration_ = 3.4
 
 		SetActive(arg_245_1.tipsGo_, false)
 
@@ -6764,18 +7224,38 @@
 
 				arg_245_1.typewritter:SetDirty()
 				arg_245_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106058", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_248_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106058", "story_v_side_new_1108106.awb") / 1000
+
+					if var_248_8 + var_248_0 > arg_245_1.duration_ then
+						arg_245_1.duration_ = var_248_8 + var_248_0
+					end
+
+					if var_248_3.prefab_name ~= "" and arg_245_1.actors_[var_248_3.prefab_name] ~= nil then
+						local var_248_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_245_1.actors_[var_248_3.prefab_name].transform, "story_v_side_new_1108106", "1108106058", "story_v_side_new_1108106.awb")
+
+						arg_245_1:RecordAudio("1108106058", var_248_9)
+						arg_245_1:RecordAudio("1108106058", var_248_9)
+					else
+						arg_245_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106058", "story_v_side_new_1108106.awb")
+					end
+
+					arg_245_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106058", "story_v_side_new_1108106.awb")
+				end
+
 				arg_245_1:RecordContent(arg_245_1.text_.text)
 			end
 
-			local var_248_8 = math.max(var_248_1, arg_245_1.talkMaxDuration)
+			local var_248_10 = math.max(var_248_1, arg_245_1.talkMaxDuration)
 
-			if var_248_0 <= arg_245_1.time_ and arg_245_1.time_ < var_248_0 + var_248_8 then
-				arg_245_1.typewritter.percent = (arg_245_1.time_ - var_248_0) / var_248_8
+			if var_248_0 <= arg_245_1.time_ and arg_245_1.time_ < var_248_0 + var_248_10 then
+				arg_245_1.typewritter.percent = (arg_245_1.time_ - var_248_0) / var_248_10
 
 				arg_245_1.typewritter:SetDirty()
 			end
 
-			if arg_245_1.time_ >= var_248_0 + var_248_8 and arg_245_1.time_ < var_248_0 + var_248_8 + arg_248_0 then
+			if arg_245_1.time_ >= var_248_0 + var_248_10 and arg_245_1.time_ < var_248_0 + var_248_10 + arg_248_0 then
 				arg_245_1.typewritter.percent = 1
 
 				arg_245_1.typewritter:SetDirty()
@@ -7399,7 +7879,7 @@
 		arg_269_1.frameCnt_ = 0
 		arg_269_1.state_ = "playing"
 		arg_269_1.curTalkId_ = 1108106063
-		arg_269_1.duration_ = 5
+		arg_269_1.duration_ = 7.67
 
 		SetActive(arg_269_1.tipsGo_, false)
 
@@ -7536,18 +8016,38 @@
 
 				arg_269_1.typewritter:SetDirty()
 				arg_269_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106063", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_272_23 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106063", "story_v_side_new_1108106.awb") / 1000
+
+					if var_272_23 + var_272_15 > arg_269_1.duration_ then
+						arg_269_1.duration_ = var_272_23 + var_272_15
+					end
+
+					if var_272_18.prefab_name ~= "" and arg_269_1.actors_[var_272_18.prefab_name] ~= nil then
+						local var_272_24 = LuaForUtil.PlayVoiceWithCriLipsync(arg_269_1.actors_[var_272_18.prefab_name].transform, "story_v_side_new_1108106", "1108106063", "story_v_side_new_1108106.awb")
+
+						arg_269_1:RecordAudio("1108106063", var_272_24)
+						arg_269_1:RecordAudio("1108106063", var_272_24)
+					else
+						arg_269_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106063", "story_v_side_new_1108106.awb")
+					end
+
+					arg_269_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106063", "story_v_side_new_1108106.awb")
+				end
+
 				arg_269_1:RecordContent(arg_269_1.text_.text)
 			end
 
-			local var_272_23 = math.max(var_272_16, arg_269_1.talkMaxDuration)
+			local var_272_25 = math.max(var_272_16, arg_269_1.talkMaxDuration)
 
-			if var_272_15 <= arg_269_1.time_ and arg_269_1.time_ < var_272_15 + var_272_23 then
-				arg_269_1.typewritter.percent = (arg_269_1.time_ - var_272_15) / var_272_23
+			if var_272_15 <= arg_269_1.time_ and arg_269_1.time_ < var_272_15 + var_272_25 then
+				arg_269_1.typewritter.percent = (arg_269_1.time_ - var_272_15) / var_272_25
 
 				arg_269_1.typewritter:SetDirty()
 			end
 
-			if arg_269_1.time_ >= var_272_15 + var_272_23 and arg_269_1.time_ < var_272_15 + var_272_23 + arg_272_0 then
+			if arg_269_1.time_ >= var_272_15 + var_272_25 and arg_269_1.time_ < var_272_15 + var_272_25 + arg_272_0 then
 				arg_269_1.typewritter.percent = 1
 
 				arg_269_1.typewritter:SetDirty()
@@ -7669,7 +8169,7 @@
 		arg_277_1.frameCnt_ = 0
 		arg_277_1.state_ = "playing"
 		arg_277_1.curTalkId_ = 1108106065
-		arg_277_1.duration_ = 5
+		arg_277_1.duration_ = 5.3
 
 		SetActive(arg_277_1.tipsGo_, false)
 
@@ -7806,18 +8306,38 @@
 
 				arg_277_1.typewritter:SetDirty()
 				arg_277_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106065", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_280_23 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106065", "story_v_side_new_1108106.awb") / 1000
+
+					if var_280_23 + var_280_15 > arg_277_1.duration_ then
+						arg_277_1.duration_ = var_280_23 + var_280_15
+					end
+
+					if var_280_18.prefab_name ~= "" and arg_277_1.actors_[var_280_18.prefab_name] ~= nil then
+						local var_280_24 = LuaForUtil.PlayVoiceWithCriLipsync(arg_277_1.actors_[var_280_18.prefab_name].transform, "story_v_side_new_1108106", "1108106065", "story_v_side_new_1108106.awb")
+
+						arg_277_1:RecordAudio("1108106065", var_280_24)
+						arg_277_1:RecordAudio("1108106065", var_280_24)
+					else
+						arg_277_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106065", "story_v_side_new_1108106.awb")
+					end
+
+					arg_277_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106065", "story_v_side_new_1108106.awb")
+				end
+
 				arg_277_1:RecordContent(arg_277_1.text_.text)
 			end
 
-			local var_280_23 = math.max(var_280_16, arg_277_1.talkMaxDuration)
+			local var_280_25 = math.max(var_280_16, arg_277_1.talkMaxDuration)
 
-			if var_280_15 <= arg_277_1.time_ and arg_277_1.time_ < var_280_15 + var_280_23 then
-				arg_277_1.typewritter.percent = (arg_277_1.time_ - var_280_15) / var_280_23
+			if var_280_15 <= arg_277_1.time_ and arg_277_1.time_ < var_280_15 + var_280_25 then
+				arg_277_1.typewritter.percent = (arg_277_1.time_ - var_280_15) / var_280_25
 
 				arg_277_1.typewritter:SetDirty()
 			end
 
-			if arg_277_1.time_ >= var_280_15 + var_280_23 and arg_277_1.time_ < var_280_15 + var_280_23 + arg_280_0 then
+			if arg_277_1.time_ >= var_280_15 + var_280_25 and arg_277_1.time_ < var_280_15 + var_280_25 + arg_280_0 then
 				arg_277_1.typewritter.percent = 1
 
 				arg_277_1.typewritter:SetDirty()
@@ -7951,7 +8471,7 @@
 		arg_285_1.frameCnt_ = 0
 		arg_285_1.state_ = "playing"
 		arg_285_1.curTalkId_ = 1108106067
-		arg_285_1.duration_ = 5
+		arg_285_1.duration_ = 9.83
 
 		SetActive(arg_285_1.tipsGo_, false)
 
@@ -8048,18 +8568,38 @@
 
 				arg_285_1.typewritter:SetDirty()
 				arg_285_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106067", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_288_14 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106067", "story_v_side_new_1108106.awb") / 1000
+
+					if var_288_14 + var_288_6 > arg_285_1.duration_ then
+						arg_285_1.duration_ = var_288_14 + var_288_6
+					end
+
+					if var_288_9.prefab_name ~= "" and arg_285_1.actors_[var_288_9.prefab_name] ~= nil then
+						local var_288_15 = LuaForUtil.PlayVoiceWithCriLipsync(arg_285_1.actors_[var_288_9.prefab_name].transform, "story_v_side_new_1108106", "1108106067", "story_v_side_new_1108106.awb")
+
+						arg_285_1:RecordAudio("1108106067", var_288_15)
+						arg_285_1:RecordAudio("1108106067", var_288_15)
+					else
+						arg_285_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106067", "story_v_side_new_1108106.awb")
+					end
+
+					arg_285_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106067", "story_v_side_new_1108106.awb")
+				end
+
 				arg_285_1:RecordContent(arg_285_1.text_.text)
 			end
 
-			local var_288_14 = math.max(var_288_7, arg_285_1.talkMaxDuration)
+			local var_288_16 = math.max(var_288_7, arg_285_1.talkMaxDuration)
 
-			if var_288_6 <= arg_285_1.time_ and arg_285_1.time_ < var_288_6 + var_288_14 then
-				arg_285_1.typewritter.percent = (arg_285_1.time_ - var_288_6) / var_288_14
+			if var_288_6 <= arg_285_1.time_ and arg_285_1.time_ < var_288_6 + var_288_16 then
+				arg_285_1.typewritter.percent = (arg_285_1.time_ - var_288_6) / var_288_16
 
 				arg_285_1.typewritter:SetDirty()
 			end
 
-			if arg_285_1.time_ >= var_288_6 + var_288_14 and arg_285_1.time_ < var_288_6 + var_288_14 + arg_288_0 then
+			if arg_285_1.time_ >= var_288_6 + var_288_16 and arg_285_1.time_ < var_288_6 + var_288_16 + arg_288_0 then
 				arg_285_1.typewritter.percent = 1
 
 				arg_285_1.typewritter:SetDirty()
@@ -8406,7 +8946,7 @@
 		arg_305_1.frameCnt_ = 0
 		arg_305_1.state_ = "playing"
 		arg_305_1.curTalkId_ = 1108106072
-		arg_305_1.duration_ = 5
+		arg_305_1.duration_ = 4.73
 
 		SetActive(arg_305_1.tipsGo_, false)
 
@@ -8497,18 +9037,38 @@
 
 				arg_305_1.typewritter:SetDirty()
 				arg_305_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106072", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_308_13 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106072", "story_v_side_new_1108106.awb") / 1000
+
+					if var_308_13 + var_308_5 > arg_305_1.duration_ then
+						arg_305_1.duration_ = var_308_13 + var_308_5
+					end
+
+					if var_308_8.prefab_name ~= "" and arg_305_1.actors_[var_308_8.prefab_name] ~= nil then
+						local var_308_14 = LuaForUtil.PlayVoiceWithCriLipsync(arg_305_1.actors_[var_308_8.prefab_name].transform, "story_v_side_new_1108106", "1108106072", "story_v_side_new_1108106.awb")
+
+						arg_305_1:RecordAudio("1108106072", var_308_14)
+						arg_305_1:RecordAudio("1108106072", var_308_14)
+					else
+						arg_305_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106072", "story_v_side_new_1108106.awb")
+					end
+
+					arg_305_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106072", "story_v_side_new_1108106.awb")
+				end
+
 				arg_305_1:RecordContent(arg_305_1.text_.text)
 			end
 
-			local var_308_13 = math.max(var_308_6, arg_305_1.talkMaxDuration)
+			local var_308_15 = math.max(var_308_6, arg_305_1.talkMaxDuration)
 
-			if var_308_5 <= arg_305_1.time_ and arg_305_1.time_ < var_308_5 + var_308_13 then
-				arg_305_1.typewritter.percent = (arg_305_1.time_ - var_308_5) / var_308_13
+			if var_308_5 <= arg_305_1.time_ and arg_305_1.time_ < var_308_5 + var_308_15 then
+				arg_305_1.typewritter.percent = (arg_305_1.time_ - var_308_5) / var_308_15
 
 				arg_305_1.typewritter:SetDirty()
 			end
 
-			if arg_305_1.time_ >= var_308_5 + var_308_13 and arg_305_1.time_ < var_308_5 + var_308_13 + arg_308_0 then
+			if arg_305_1.time_ >= var_308_5 + var_308_15 and arg_305_1.time_ < var_308_5 + var_308_15 + arg_308_0 then
 				arg_305_1.typewritter.percent = 1
 
 				arg_305_1.typewritter:SetDirty()
@@ -8521,7 +9081,7 @@
 		arg_309_1.frameCnt_ = 0
 		arg_309_1.state_ = "playing"
 		arg_309_1.curTalkId_ = 1108106073
-		arg_309_1.duration_ = 5
+		arg_309_1.duration_ = 4.47
 
 		SetActive(arg_309_1.tipsGo_, false)
 
@@ -8591,18 +9151,38 @@
 
 				arg_309_1.typewritter:SetDirty()
 				arg_309_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106073", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_312_9 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106073", "story_v_side_new_1108106.awb") / 1000
+
+					if var_312_9 + var_312_1 > arg_309_1.duration_ then
+						arg_309_1.duration_ = var_312_9 + var_312_1
+					end
+
+					if var_312_4.prefab_name ~= "" and arg_309_1.actors_[var_312_4.prefab_name] ~= nil then
+						local var_312_10 = LuaForUtil.PlayVoiceWithCriLipsync(arg_309_1.actors_[var_312_4.prefab_name].transform, "story_v_side_new_1108106", "1108106073", "story_v_side_new_1108106.awb")
+
+						arg_309_1:RecordAudio("1108106073", var_312_10)
+						arg_309_1:RecordAudio("1108106073", var_312_10)
+					else
+						arg_309_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106073", "story_v_side_new_1108106.awb")
+					end
+
+					arg_309_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106073", "story_v_side_new_1108106.awb")
+				end
+
 				arg_309_1:RecordContent(arg_309_1.text_.text)
 			end
 
-			local var_312_9 = math.max(var_312_2, arg_309_1.talkMaxDuration)
+			local var_312_11 = math.max(var_312_2, arg_309_1.talkMaxDuration)
 
-			if var_312_1 <= arg_309_1.time_ and arg_309_1.time_ < var_312_1 + var_312_9 then
-				arg_309_1.typewritter.percent = (arg_309_1.time_ - var_312_1) / var_312_9
+			if var_312_1 <= arg_309_1.time_ and arg_309_1.time_ < var_312_1 + var_312_11 then
+				arg_309_1.typewritter.percent = (arg_309_1.time_ - var_312_1) / var_312_11
 
 				arg_309_1.typewritter:SetDirty()
 			end
 
-			if arg_309_1.time_ >= var_312_1 + var_312_9 and arg_309_1.time_ < var_312_1 + var_312_9 + arg_312_0 then
+			if arg_309_1.time_ >= var_312_1 + var_312_11 and arg_309_1.time_ < var_312_1 + var_312_11 + arg_312_0 then
 				arg_309_1.typewritter.percent = 1
 
 				arg_309_1.typewritter:SetDirty()
@@ -8615,7 +9195,7 @@
 		arg_313_1.frameCnt_ = 0
 		arg_313_1.state_ = "playing"
 		arg_313_1.curTalkId_ = 1108106074
-		arg_313_1.duration_ = 5
+		arg_313_1.duration_ = 4.83
 
 		SetActive(arg_313_1.tipsGo_, false)
 
@@ -8679,18 +9259,38 @@
 
 				arg_313_1.typewritter:SetDirty()
 				arg_313_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106074", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_316_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106074", "story_v_side_new_1108106.awb") / 1000
+
+					if var_316_8 + var_316_0 > arg_313_1.duration_ then
+						arg_313_1.duration_ = var_316_8 + var_316_0
+					end
+
+					if var_316_3.prefab_name ~= "" and arg_313_1.actors_[var_316_3.prefab_name] ~= nil then
+						local var_316_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_313_1.actors_[var_316_3.prefab_name].transform, "story_v_side_new_1108106", "1108106074", "story_v_side_new_1108106.awb")
+
+						arg_313_1:RecordAudio("1108106074", var_316_9)
+						arg_313_1:RecordAudio("1108106074", var_316_9)
+					else
+						arg_313_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106074", "story_v_side_new_1108106.awb")
+					end
+
+					arg_313_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106074", "story_v_side_new_1108106.awb")
+				end
+
 				arg_313_1:RecordContent(arg_313_1.text_.text)
 			end
 
-			local var_316_8 = math.max(var_316_1, arg_313_1.talkMaxDuration)
+			local var_316_10 = math.max(var_316_1, arg_313_1.talkMaxDuration)
 
-			if var_316_0 <= arg_313_1.time_ and arg_313_1.time_ < var_316_0 + var_316_8 then
-				arg_313_1.typewritter.percent = (arg_313_1.time_ - var_316_0) / var_316_8
+			if var_316_0 <= arg_313_1.time_ and arg_313_1.time_ < var_316_0 + var_316_10 then
+				arg_313_1.typewritter.percent = (arg_313_1.time_ - var_316_0) / var_316_10
 
 				arg_313_1.typewritter:SetDirty()
 			end
 
-			if arg_313_1.time_ >= var_316_0 + var_316_8 and arg_313_1.time_ < var_316_0 + var_316_8 + arg_316_0 then
+			if arg_313_1.time_ >= var_316_0 + var_316_10 and arg_313_1.time_ < var_316_0 + var_316_10 + arg_316_0 then
 				arg_313_1.typewritter.percent = 1
 
 				arg_313_1.typewritter:SetDirty()
@@ -8812,7 +9412,7 @@
 		arg_321_1.frameCnt_ = 0
 		arg_321_1.state_ = "playing"
 		arg_321_1.curTalkId_ = 1108106076
-		arg_321_1.duration_ = 5
+		arg_321_1.duration_ = 14.8
 
 		SetActive(arg_321_1.tipsGo_, false)
 
@@ -8903,18 +9503,38 @@
 
 				arg_321_1.typewritter:SetDirty()
 				arg_321_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106076", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_324_13 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106076", "story_v_side_new_1108106.awb") / 1000
+
+					if var_324_13 + var_324_5 > arg_321_1.duration_ then
+						arg_321_1.duration_ = var_324_13 + var_324_5
+					end
+
+					if var_324_8.prefab_name ~= "" and arg_321_1.actors_[var_324_8.prefab_name] ~= nil then
+						local var_324_14 = LuaForUtil.PlayVoiceWithCriLipsync(arg_321_1.actors_[var_324_8.prefab_name].transform, "story_v_side_new_1108106", "1108106076", "story_v_side_new_1108106.awb")
+
+						arg_321_1:RecordAudio("1108106076", var_324_14)
+						arg_321_1:RecordAudio("1108106076", var_324_14)
+					else
+						arg_321_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106076", "story_v_side_new_1108106.awb")
+					end
+
+					arg_321_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106076", "story_v_side_new_1108106.awb")
+				end
+
 				arg_321_1:RecordContent(arg_321_1.text_.text)
 			end
 
-			local var_324_13 = math.max(var_324_6, arg_321_1.talkMaxDuration)
+			local var_324_15 = math.max(var_324_6, arg_321_1.talkMaxDuration)
 
-			if var_324_5 <= arg_321_1.time_ and arg_321_1.time_ < var_324_5 + var_324_13 then
-				arg_321_1.typewritter.percent = (arg_321_1.time_ - var_324_5) / var_324_13
+			if var_324_5 <= arg_321_1.time_ and arg_321_1.time_ < var_324_5 + var_324_15 then
+				arg_321_1.typewritter.percent = (arg_321_1.time_ - var_324_5) / var_324_15
 
 				arg_321_1.typewritter:SetDirty()
 			end
 
-			if arg_321_1.time_ >= var_324_5 + var_324_13 and arg_321_1.time_ < var_324_5 + var_324_13 + arg_324_0 then
+			if arg_321_1.time_ >= var_324_5 + var_324_15 and arg_321_1.time_ < var_324_5 + var_324_15 + arg_324_0 then
 				arg_321_1.typewritter.percent = 1
 
 				arg_321_1.typewritter:SetDirty()
@@ -8962,7 +9582,7 @@
 		arg_329_1.frameCnt_ = 0
 		arg_329_1.state_ = "playing"
 		arg_329_1.curTalkId_ = 1108106078
-		arg_329_1.duration_ = 5
+		arg_329_1.duration_ = 10.17
 
 		SetActive(arg_329_1.tipsGo_, false)
 
@@ -9038,18 +9658,38 @@
 
 				arg_329_1.typewritter:SetDirty()
 				arg_329_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106078", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_332_10 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106078", "story_v_side_new_1108106.awb") / 1000
+
+					if var_332_10 + var_332_2 > arg_329_1.duration_ then
+						arg_329_1.duration_ = var_332_10 + var_332_2
+					end
+
+					if var_332_5.prefab_name ~= "" and arg_329_1.actors_[var_332_5.prefab_name] ~= nil then
+						local var_332_11 = LuaForUtil.PlayVoiceWithCriLipsync(arg_329_1.actors_[var_332_5.prefab_name].transform, "story_v_side_new_1108106", "1108106078", "story_v_side_new_1108106.awb")
+
+						arg_329_1:RecordAudio("1108106078", var_332_11)
+						arg_329_1:RecordAudio("1108106078", var_332_11)
+					else
+						arg_329_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106078", "story_v_side_new_1108106.awb")
+					end
+
+					arg_329_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106078", "story_v_side_new_1108106.awb")
+				end
+
 				arg_329_1:RecordContent(arg_329_1.text_.text)
 			end
 
-			local var_332_10 = math.max(var_332_3, arg_329_1.talkMaxDuration)
+			local var_332_12 = math.max(var_332_3, arg_329_1.talkMaxDuration)
 
-			if var_332_2 <= arg_329_1.time_ and arg_329_1.time_ < var_332_2 + var_332_10 then
-				arg_329_1.typewritter.percent = (arg_329_1.time_ - var_332_2) / var_332_10
+			if var_332_2 <= arg_329_1.time_ and arg_329_1.time_ < var_332_2 + var_332_12 then
+				arg_329_1.typewritter.percent = (arg_329_1.time_ - var_332_2) / var_332_12
 
 				arg_329_1.typewritter:SetDirty()
 			end
 
-			if arg_329_1.time_ >= var_332_2 + var_332_10 and arg_329_1.time_ < var_332_2 + var_332_10 + arg_332_0 then
+			if arg_329_1.time_ >= var_332_2 + var_332_12 and arg_329_1.time_ < var_332_2 + var_332_12 + arg_332_0 then
 				arg_329_1.typewritter.percent = 1
 
 				arg_329_1.typewritter:SetDirty()
@@ -9177,7 +9817,7 @@
 		arg_337_1.frameCnt_ = 0
 		arg_337_1.state_ = "playing"
 		arg_337_1.curTalkId_ = 1108106080
-		arg_337_1.duration_ = 5
+		arg_337_1.duration_ = 1.5
 
 		SetActive(arg_337_1.tipsGo_, false)
 
@@ -9262,18 +9902,38 @@
 
 				arg_337_1.typewritter:SetDirty()
 				arg_337_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106080", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_340_12 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106080", "story_v_side_new_1108106.awb") / 1000
+
+					if var_340_12 + var_340_4 > arg_337_1.duration_ then
+						arg_337_1.duration_ = var_340_12 + var_340_4
+					end
+
+					if var_340_7.prefab_name ~= "" and arg_337_1.actors_[var_340_7.prefab_name] ~= nil then
+						local var_340_13 = LuaForUtil.PlayVoiceWithCriLipsync(arg_337_1.actors_[var_340_7.prefab_name].transform, "story_v_side_new_1108106", "1108106080", "story_v_side_new_1108106.awb")
+
+						arg_337_1:RecordAudio("1108106080", var_340_13)
+						arg_337_1:RecordAudio("1108106080", var_340_13)
+					else
+						arg_337_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106080", "story_v_side_new_1108106.awb")
+					end
+
+					arg_337_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106080", "story_v_side_new_1108106.awb")
+				end
+
 				arg_337_1:RecordContent(arg_337_1.text_.text)
 			end
 
-			local var_340_12 = math.max(var_340_5, arg_337_1.talkMaxDuration)
+			local var_340_14 = math.max(var_340_5, arg_337_1.talkMaxDuration)
 
-			if var_340_4 <= arg_337_1.time_ and arg_337_1.time_ < var_340_4 + var_340_12 then
-				arg_337_1.typewritter.percent = (arg_337_1.time_ - var_340_4) / var_340_12
+			if var_340_4 <= arg_337_1.time_ and arg_337_1.time_ < var_340_4 + var_340_14 then
+				arg_337_1.typewritter.percent = (arg_337_1.time_ - var_340_4) / var_340_14
 
 				arg_337_1.typewritter:SetDirty()
 			end
 
-			if arg_337_1.time_ >= var_340_4 + var_340_12 and arg_337_1.time_ < var_340_4 + var_340_12 + arg_340_0 then
+			if arg_337_1.time_ >= var_340_4 + var_340_14 and arg_337_1.time_ < var_340_4 + var_340_14 + arg_340_0 then
 				arg_337_1.typewritter.percent = 1
 
 				arg_337_1.typewritter:SetDirty()
@@ -9401,7 +10061,7 @@
 		arg_345_1.frameCnt_ = 0
 		arg_345_1.state_ = "playing"
 		arg_345_1.curTalkId_ = 1108106082
-		arg_345_1.duration_ = 5
+		arg_345_1.duration_ = 2
 
 		SetActive(arg_345_1.tipsGo_, false)
 
@@ -9492,18 +10152,38 @@
 
 				arg_345_1.typewritter:SetDirty()
 				arg_345_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106082", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_348_13 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106082", "story_v_side_new_1108106.awb") / 1000
+
+					if var_348_13 + var_348_5 > arg_345_1.duration_ then
+						arg_345_1.duration_ = var_348_13 + var_348_5
+					end
+
+					if var_348_8.prefab_name ~= "" and arg_345_1.actors_[var_348_8.prefab_name] ~= nil then
+						local var_348_14 = LuaForUtil.PlayVoiceWithCriLipsync(arg_345_1.actors_[var_348_8.prefab_name].transform, "story_v_side_new_1108106", "1108106082", "story_v_side_new_1108106.awb")
+
+						arg_345_1:RecordAudio("1108106082", var_348_14)
+						arg_345_1:RecordAudio("1108106082", var_348_14)
+					else
+						arg_345_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106082", "story_v_side_new_1108106.awb")
+					end
+
+					arg_345_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106082", "story_v_side_new_1108106.awb")
+				end
+
 				arg_345_1:RecordContent(arg_345_1.text_.text)
 			end
 
-			local var_348_13 = math.max(var_348_6, arg_345_1.talkMaxDuration)
+			local var_348_15 = math.max(var_348_6, arg_345_1.talkMaxDuration)
 
-			if var_348_5 <= arg_345_1.time_ and arg_345_1.time_ < var_348_5 + var_348_13 then
-				arg_345_1.typewritter.percent = (arg_345_1.time_ - var_348_5) / var_348_13
+			if var_348_5 <= arg_345_1.time_ and arg_345_1.time_ < var_348_5 + var_348_15 then
+				arg_345_1.typewritter.percent = (arg_345_1.time_ - var_348_5) / var_348_15
 
 				arg_345_1.typewritter:SetDirty()
 			end
 
-			if arg_345_1.time_ >= var_348_5 + var_348_13 and arg_345_1.time_ < var_348_5 + var_348_13 + arg_348_0 then
+			if arg_345_1.time_ >= var_348_5 + var_348_15 and arg_345_1.time_ < var_348_5 + var_348_15 + arg_348_0 then
 				arg_345_1.typewritter.percent = 1
 
 				arg_345_1.typewritter:SetDirty()
@@ -9664,7 +10344,7 @@
 		arg_355_1.frameCnt_ = 0
 		arg_355_1.state_ = "playing"
 		arg_355_1.curTalkId_ = 1108106084
-		arg_355_1.duration_ = 5
+		arg_355_1.duration_ = 4.63
 
 		SetActive(arg_355_1.tipsGo_, false)
 
@@ -9805,18 +10485,38 @@
 
 				arg_355_1.typewritter:SetDirty()
 				arg_355_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106084", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_358_24 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106084", "story_v_side_new_1108106.awb") / 1000
+
+					if var_358_24 + var_358_16 > arg_355_1.duration_ then
+						arg_355_1.duration_ = var_358_24 + var_358_16
+					end
+
+					if var_358_19.prefab_name ~= "" and arg_355_1.actors_[var_358_19.prefab_name] ~= nil then
+						local var_358_25 = LuaForUtil.PlayVoiceWithCriLipsync(arg_355_1.actors_[var_358_19.prefab_name].transform, "story_v_side_new_1108106", "1108106084", "story_v_side_new_1108106.awb")
+
+						arg_355_1:RecordAudio("1108106084", var_358_25)
+						arg_355_1:RecordAudio("1108106084", var_358_25)
+					else
+						arg_355_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106084", "story_v_side_new_1108106.awb")
+					end
+
+					arg_355_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106084", "story_v_side_new_1108106.awb")
+				end
+
 				arg_355_1:RecordContent(arg_355_1.text_.text)
 			end
 
-			local var_358_24 = math.max(var_358_17, arg_355_1.talkMaxDuration)
+			local var_358_26 = math.max(var_358_17, arg_355_1.talkMaxDuration)
 
-			if var_358_16 <= arg_355_1.time_ and arg_355_1.time_ < var_358_16 + var_358_24 then
-				arg_355_1.typewritter.percent = (arg_355_1.time_ - var_358_16) / var_358_24
+			if var_358_16 <= arg_355_1.time_ and arg_355_1.time_ < var_358_16 + var_358_26 then
+				arg_355_1.typewritter.percent = (arg_355_1.time_ - var_358_16) / var_358_26
 
 				arg_355_1.typewritter:SetDirty()
 			end
 
-			if arg_355_1.time_ >= var_358_16 + var_358_24 and arg_355_1.time_ < var_358_16 + var_358_24 + arg_358_0 then
+			if arg_355_1.time_ >= var_358_16 + var_358_26 and arg_355_1.time_ < var_358_16 + var_358_26 + arg_358_0 then
 				arg_355_1.typewritter.percent = 1
 
 				arg_355_1.typewritter:SetDirty()
@@ -9829,7 +10529,7 @@
 		arg_359_1.frameCnt_ = 0
 		arg_359_1.state_ = "playing"
 		arg_359_1.curTalkId_ = 1108106085
-		arg_359_1.duration_ = 5
+		arg_359_1.duration_ = 6.8
 
 		SetActive(arg_359_1.tipsGo_, false)
 
@@ -9893,18 +10593,38 @@
 
 				arg_359_1.typewritter:SetDirty()
 				arg_359_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106085", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_362_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106085", "story_v_side_new_1108106.awb") / 1000
+
+					if var_362_8 + var_362_0 > arg_359_1.duration_ then
+						arg_359_1.duration_ = var_362_8 + var_362_0
+					end
+
+					if var_362_3.prefab_name ~= "" and arg_359_1.actors_[var_362_3.prefab_name] ~= nil then
+						local var_362_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_359_1.actors_[var_362_3.prefab_name].transform, "story_v_side_new_1108106", "1108106085", "story_v_side_new_1108106.awb")
+
+						arg_359_1:RecordAudio("1108106085", var_362_9)
+						arg_359_1:RecordAudio("1108106085", var_362_9)
+					else
+						arg_359_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106085", "story_v_side_new_1108106.awb")
+					end
+
+					arg_359_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106085", "story_v_side_new_1108106.awb")
+				end
+
 				arg_359_1:RecordContent(arg_359_1.text_.text)
 			end
 
-			local var_362_8 = math.max(var_362_1, arg_359_1.talkMaxDuration)
+			local var_362_10 = math.max(var_362_1, arg_359_1.talkMaxDuration)
 
-			if var_362_0 <= arg_359_1.time_ and arg_359_1.time_ < var_362_0 + var_362_8 then
-				arg_359_1.typewritter.percent = (arg_359_1.time_ - var_362_0) / var_362_8
+			if var_362_0 <= arg_359_1.time_ and arg_359_1.time_ < var_362_0 + var_362_10 then
+				arg_359_1.typewritter.percent = (arg_359_1.time_ - var_362_0) / var_362_10
 
 				arg_359_1.typewritter:SetDirty()
 			end
 
-			if arg_359_1.time_ >= var_362_0 + var_362_8 and arg_359_1.time_ < var_362_0 + var_362_8 + arg_362_0 then
+			if arg_359_1.time_ >= var_362_0 + var_362_10 and arg_359_1.time_ < var_362_0 + var_362_10 + arg_362_0 then
 				arg_359_1.typewritter.percent = 1
 
 				arg_359_1.typewritter:SetDirty()
@@ -10032,7 +10752,7 @@
 		arg_367_1.frameCnt_ = 0
 		arg_367_1.state_ = "playing"
 		arg_367_1.curTalkId_ = 1108106087
-		arg_367_1.duration_ = 5
+		arg_367_1.duration_ = 4.27
 
 		SetActive(arg_367_1.tipsGo_, false)
 
@@ -10123,18 +10843,38 @@
 
 				arg_367_1.typewritter:SetDirty()
 				arg_367_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106087", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_370_13 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106087", "story_v_side_new_1108106.awb") / 1000
+
+					if var_370_13 + var_370_5 > arg_367_1.duration_ then
+						arg_367_1.duration_ = var_370_13 + var_370_5
+					end
+
+					if var_370_8.prefab_name ~= "" and arg_367_1.actors_[var_370_8.prefab_name] ~= nil then
+						local var_370_14 = LuaForUtil.PlayVoiceWithCriLipsync(arg_367_1.actors_[var_370_8.prefab_name].transform, "story_v_side_new_1108106", "1108106087", "story_v_side_new_1108106.awb")
+
+						arg_367_1:RecordAudio("1108106087", var_370_14)
+						arg_367_1:RecordAudio("1108106087", var_370_14)
+					else
+						arg_367_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106087", "story_v_side_new_1108106.awb")
+					end
+
+					arg_367_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106087", "story_v_side_new_1108106.awb")
+				end
+
 				arg_367_1:RecordContent(arg_367_1.text_.text)
 			end
 
-			local var_370_13 = math.max(var_370_6, arg_367_1.talkMaxDuration)
+			local var_370_15 = math.max(var_370_6, arg_367_1.talkMaxDuration)
 
-			if var_370_5 <= arg_367_1.time_ and arg_367_1.time_ < var_370_5 + var_370_13 then
-				arg_367_1.typewritter.percent = (arg_367_1.time_ - var_370_5) / var_370_13
+			if var_370_5 <= arg_367_1.time_ and arg_367_1.time_ < var_370_5 + var_370_15 then
+				arg_367_1.typewritter.percent = (arg_367_1.time_ - var_370_5) / var_370_15
 
 				arg_367_1.typewritter:SetDirty()
 			end
 
-			if arg_367_1.time_ >= var_370_5 + var_370_13 and arg_367_1.time_ < var_370_5 + var_370_13 + arg_370_0 then
+			if arg_367_1.time_ >= var_370_5 + var_370_15 and arg_367_1.time_ < var_370_5 + var_370_15 + arg_370_0 then
 				arg_367_1.typewritter.percent = 1
 
 				arg_367_1.typewritter:SetDirty()
@@ -10438,7 +11178,7 @@
 		arg_383_1.frameCnt_ = 0
 		arg_383_1.state_ = "playing"
 		arg_383_1.curTalkId_ = 1108106091
-		arg_383_1.duration_ = 5
+		arg_383_1.duration_ = 1.4
 
 		SetActive(arg_383_1.tipsGo_, false)
 
@@ -10523,18 +11263,38 @@
 
 				arg_383_1.typewritter:SetDirty()
 				arg_383_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106091", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_386_12 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106091", "story_v_side_new_1108106.awb") / 1000
+
+					if var_386_12 + var_386_4 > arg_383_1.duration_ then
+						arg_383_1.duration_ = var_386_12 + var_386_4
+					end
+
+					if var_386_7.prefab_name ~= "" and arg_383_1.actors_[var_386_7.prefab_name] ~= nil then
+						local var_386_13 = LuaForUtil.PlayVoiceWithCriLipsync(arg_383_1.actors_[var_386_7.prefab_name].transform, "story_v_side_new_1108106", "1108106091", "story_v_side_new_1108106.awb")
+
+						arg_383_1:RecordAudio("1108106091", var_386_13)
+						arg_383_1:RecordAudio("1108106091", var_386_13)
+					else
+						arg_383_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106091", "story_v_side_new_1108106.awb")
+					end
+
+					arg_383_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106091", "story_v_side_new_1108106.awb")
+				end
+
 				arg_383_1:RecordContent(arg_383_1.text_.text)
 			end
 
-			local var_386_12 = math.max(var_386_5, arg_383_1.talkMaxDuration)
+			local var_386_14 = math.max(var_386_5, arg_383_1.talkMaxDuration)
 
-			if var_386_4 <= arg_383_1.time_ and arg_383_1.time_ < var_386_4 + var_386_12 then
-				arg_383_1.typewritter.percent = (arg_383_1.time_ - var_386_4) / var_386_12
+			if var_386_4 <= arg_383_1.time_ and arg_383_1.time_ < var_386_4 + var_386_14 then
+				arg_383_1.typewritter.percent = (arg_383_1.time_ - var_386_4) / var_386_14
 
 				arg_383_1.typewritter:SetDirty()
 			end
 
-			if arg_383_1.time_ >= var_386_4 + var_386_12 and arg_383_1.time_ < var_386_4 + var_386_12 + arg_386_0 then
+			if arg_383_1.time_ >= var_386_4 + var_386_14 and arg_383_1.time_ < var_386_4 + var_386_14 + arg_386_0 then
 				arg_383_1.typewritter.percent = 1
 
 				arg_383_1.typewritter:SetDirty()
@@ -10547,7 +11307,7 @@
 		arg_387_1.frameCnt_ = 0
 		arg_387_1.state_ = "playing"
 		arg_387_1.curTalkId_ = 1108106092
-		arg_387_1.duration_ = 5
+		arg_387_1.duration_ = 2
 
 		SetActive(arg_387_1.tipsGo_, false)
 
@@ -10623,18 +11383,38 @@
 
 				arg_387_1.typewritter:SetDirty()
 				arg_387_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106092", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_390_10 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106092", "story_v_side_new_1108106.awb") / 1000
+
+					if var_390_10 + var_390_2 > arg_387_1.duration_ then
+						arg_387_1.duration_ = var_390_10 + var_390_2
+					end
+
+					if var_390_5.prefab_name ~= "" and arg_387_1.actors_[var_390_5.prefab_name] ~= nil then
+						local var_390_11 = LuaForUtil.PlayVoiceWithCriLipsync(arg_387_1.actors_[var_390_5.prefab_name].transform, "story_v_side_new_1108106", "1108106092", "story_v_side_new_1108106.awb")
+
+						arg_387_1:RecordAudio("1108106092", var_390_11)
+						arg_387_1:RecordAudio("1108106092", var_390_11)
+					else
+						arg_387_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106092", "story_v_side_new_1108106.awb")
+					end
+
+					arg_387_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106092", "story_v_side_new_1108106.awb")
+				end
+
 				arg_387_1:RecordContent(arg_387_1.text_.text)
 			end
 
-			local var_390_10 = math.max(var_390_3, arg_387_1.talkMaxDuration)
+			local var_390_12 = math.max(var_390_3, arg_387_1.talkMaxDuration)
 
-			if var_390_2 <= arg_387_1.time_ and arg_387_1.time_ < var_390_2 + var_390_10 then
-				arg_387_1.typewritter.percent = (arg_387_1.time_ - var_390_2) / var_390_10
+			if var_390_2 <= arg_387_1.time_ and arg_387_1.time_ < var_390_2 + var_390_12 then
+				arg_387_1.typewritter.percent = (arg_387_1.time_ - var_390_2) / var_390_12
 
 				arg_387_1.typewritter:SetDirty()
 			end
 
-			if arg_387_1.time_ >= var_390_2 + var_390_10 and arg_387_1.time_ < var_390_2 + var_390_10 + arg_390_0 then
+			if arg_387_1.time_ >= var_390_2 + var_390_12 and arg_387_1.time_ < var_390_2 + var_390_12 + arg_390_0 then
 				arg_387_1.typewritter.percent = 1
 
 				arg_387_1.typewritter:SetDirty()
@@ -10712,7 +11492,7 @@
 		arg_395_1.frameCnt_ = 0
 		arg_395_1.state_ = "playing"
 		arg_395_1.curTalkId_ = 1108106094
-		arg_395_1.duration_ = 5
+		arg_395_1.duration_ = 6.4
 
 		SetActive(arg_395_1.tipsGo_, false)
 
@@ -10829,18 +11609,38 @@
 
 				arg_395_1.typewritter:SetDirty()
 				arg_395_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106094", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_398_17 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106094", "story_v_side_new_1108106.awb") / 1000
+
+					if var_398_17 + var_398_9 > arg_395_1.duration_ then
+						arg_395_1.duration_ = var_398_17 + var_398_9
+					end
+
+					if var_398_12.prefab_name ~= "" and arg_395_1.actors_[var_398_12.prefab_name] ~= nil then
+						local var_398_18 = LuaForUtil.PlayVoiceWithCriLipsync(arg_395_1.actors_[var_398_12.prefab_name].transform, "story_v_side_new_1108106", "1108106094", "story_v_side_new_1108106.awb")
+
+						arg_395_1:RecordAudio("1108106094", var_398_18)
+						arg_395_1:RecordAudio("1108106094", var_398_18)
+					else
+						arg_395_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106094", "story_v_side_new_1108106.awb")
+					end
+
+					arg_395_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106094", "story_v_side_new_1108106.awb")
+				end
+
 				arg_395_1:RecordContent(arg_395_1.text_.text)
 			end
 
-			local var_398_17 = math.max(var_398_10, arg_395_1.talkMaxDuration)
+			local var_398_19 = math.max(var_398_10, arg_395_1.talkMaxDuration)
 
-			if var_398_9 <= arg_395_1.time_ and arg_395_1.time_ < var_398_9 + var_398_17 then
-				arg_395_1.typewritter.percent = (arg_395_1.time_ - var_398_9) / var_398_17
+			if var_398_9 <= arg_395_1.time_ and arg_395_1.time_ < var_398_9 + var_398_19 then
+				arg_395_1.typewritter.percent = (arg_395_1.time_ - var_398_9) / var_398_19
 
 				arg_395_1.typewritter:SetDirty()
 			end
 
-			if arg_395_1.time_ >= var_398_9 + var_398_17 and arg_395_1.time_ < var_398_9 + var_398_17 + arg_398_0 then
+			if arg_395_1.time_ >= var_398_9 + var_398_19 and arg_395_1.time_ < var_398_9 + var_398_19 + arg_398_0 then
 				arg_395_1.typewritter.percent = 1
 
 				arg_395_1.typewritter:SetDirty()
@@ -10853,7 +11653,7 @@
 		arg_399_1.frameCnt_ = 0
 		arg_399_1.state_ = "playing"
 		arg_399_1.curTalkId_ = 1108106095
-		arg_399_1.duration_ = 5
+		arg_399_1.duration_ = 5.8
 
 		SetActive(arg_399_1.tipsGo_, false)
 
@@ -10929,18 +11729,38 @@
 
 				arg_399_1.typewritter:SetDirty()
 				arg_399_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106095", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_402_10 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106095", "story_v_side_new_1108106.awb") / 1000
+
+					if var_402_10 + var_402_2 > arg_399_1.duration_ then
+						arg_399_1.duration_ = var_402_10 + var_402_2
+					end
+
+					if var_402_5.prefab_name ~= "" and arg_399_1.actors_[var_402_5.prefab_name] ~= nil then
+						local var_402_11 = LuaForUtil.PlayVoiceWithCriLipsync(arg_399_1.actors_[var_402_5.prefab_name].transform, "story_v_side_new_1108106", "1108106095", "story_v_side_new_1108106.awb")
+
+						arg_399_1:RecordAudio("1108106095", var_402_11)
+						arg_399_1:RecordAudio("1108106095", var_402_11)
+					else
+						arg_399_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106095", "story_v_side_new_1108106.awb")
+					end
+
+					arg_399_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106095", "story_v_side_new_1108106.awb")
+				end
+
 				arg_399_1:RecordContent(arg_399_1.text_.text)
 			end
 
-			local var_402_10 = math.max(var_402_3, arg_399_1.talkMaxDuration)
+			local var_402_12 = math.max(var_402_3, arg_399_1.talkMaxDuration)
 
-			if var_402_2 <= arg_399_1.time_ and arg_399_1.time_ < var_402_2 + var_402_10 then
-				arg_399_1.typewritter.percent = (arg_399_1.time_ - var_402_2) / var_402_10
+			if var_402_2 <= arg_399_1.time_ and arg_399_1.time_ < var_402_2 + var_402_12 then
+				arg_399_1.typewritter.percent = (arg_399_1.time_ - var_402_2) / var_402_12
 
 				arg_399_1.typewritter:SetDirty()
 			end
 
-			if arg_399_1.time_ >= var_402_2 + var_402_10 and arg_399_1.time_ < var_402_2 + var_402_10 + arg_402_0 then
+			if arg_399_1.time_ >= var_402_2 + var_402_12 and arg_399_1.time_ < var_402_2 + var_402_12 + arg_402_0 then
 				arg_399_1.typewritter.percent = 1
 
 				arg_399_1.typewritter:SetDirty()
@@ -11068,7 +11888,7 @@
 		arg_407_1.frameCnt_ = 0
 		arg_407_1.state_ = "playing"
 		arg_407_1.curTalkId_ = 1108106097
-		arg_407_1.duration_ = 5
+		arg_407_1.duration_ = 9.53
 
 		SetActive(arg_407_1.tipsGo_, false)
 
@@ -11159,18 +11979,38 @@
 
 				arg_407_1.typewritter:SetDirty()
 				arg_407_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106097", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_410_13 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106097", "story_v_side_new_1108106.awb") / 1000
+
+					if var_410_13 + var_410_5 > arg_407_1.duration_ then
+						arg_407_1.duration_ = var_410_13 + var_410_5
+					end
+
+					if var_410_8.prefab_name ~= "" and arg_407_1.actors_[var_410_8.prefab_name] ~= nil then
+						local var_410_14 = LuaForUtil.PlayVoiceWithCriLipsync(arg_407_1.actors_[var_410_8.prefab_name].transform, "story_v_side_new_1108106", "1108106097", "story_v_side_new_1108106.awb")
+
+						arg_407_1:RecordAudio("1108106097", var_410_14)
+						arg_407_1:RecordAudio("1108106097", var_410_14)
+					else
+						arg_407_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106097", "story_v_side_new_1108106.awb")
+					end
+
+					arg_407_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106097", "story_v_side_new_1108106.awb")
+				end
+
 				arg_407_1:RecordContent(arg_407_1.text_.text)
 			end
 
-			local var_410_13 = math.max(var_410_6, arg_407_1.talkMaxDuration)
+			local var_410_15 = math.max(var_410_6, arg_407_1.talkMaxDuration)
 
-			if var_410_5 <= arg_407_1.time_ and arg_407_1.time_ < var_410_5 + var_410_13 then
-				arg_407_1.typewritter.percent = (arg_407_1.time_ - var_410_5) / var_410_13
+			if var_410_5 <= arg_407_1.time_ and arg_407_1.time_ < var_410_5 + var_410_15 then
+				arg_407_1.typewritter.percent = (arg_407_1.time_ - var_410_5) / var_410_15
 
 				arg_407_1.typewritter:SetDirty()
 			end
 
-			if arg_407_1.time_ >= var_410_5 + var_410_13 and arg_407_1.time_ < var_410_5 + var_410_13 + arg_410_0 then
+			if arg_407_1.time_ >= var_410_5 + var_410_15 and arg_407_1.time_ < var_410_5 + var_410_15 + arg_410_0 then
 				arg_407_1.typewritter.percent = 1
 
 				arg_407_1.typewritter:SetDirty()
@@ -11298,7 +12138,7 @@
 		arg_415_1.frameCnt_ = 0
 		arg_415_1.state_ = "playing"
 		arg_415_1.curTalkId_ = 1108106099
-		arg_415_1.duration_ = 5
+		arg_415_1.duration_ = 2
 
 		SetActive(arg_415_1.tipsGo_, false)
 
@@ -11389,18 +12229,38 @@
 
 				arg_415_1.typewritter:SetDirty()
 				arg_415_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106099", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_418_13 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106099", "story_v_side_new_1108106.awb") / 1000
+
+					if var_418_13 + var_418_5 > arg_415_1.duration_ then
+						arg_415_1.duration_ = var_418_13 + var_418_5
+					end
+
+					if var_418_8.prefab_name ~= "" and arg_415_1.actors_[var_418_8.prefab_name] ~= nil then
+						local var_418_14 = LuaForUtil.PlayVoiceWithCriLipsync(arg_415_1.actors_[var_418_8.prefab_name].transform, "story_v_side_new_1108106", "1108106099", "story_v_side_new_1108106.awb")
+
+						arg_415_1:RecordAudio("1108106099", var_418_14)
+						arg_415_1:RecordAudio("1108106099", var_418_14)
+					else
+						arg_415_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106099", "story_v_side_new_1108106.awb")
+					end
+
+					arg_415_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106099", "story_v_side_new_1108106.awb")
+				end
+
 				arg_415_1:RecordContent(arg_415_1.text_.text)
 			end
 
-			local var_418_13 = math.max(var_418_6, arg_415_1.talkMaxDuration)
+			local var_418_15 = math.max(var_418_6, arg_415_1.talkMaxDuration)
 
-			if var_418_5 <= arg_415_1.time_ and arg_415_1.time_ < var_418_5 + var_418_13 then
-				arg_415_1.typewritter.percent = (arg_415_1.time_ - var_418_5) / var_418_13
+			if var_418_5 <= arg_415_1.time_ and arg_415_1.time_ < var_418_5 + var_418_15 then
+				arg_415_1.typewritter.percent = (arg_415_1.time_ - var_418_5) / var_418_15
 
 				arg_415_1.typewritter:SetDirty()
 			end
 
-			if arg_415_1.time_ >= var_418_5 + var_418_13 and arg_415_1.time_ < var_418_5 + var_418_13 + arg_418_0 then
+			if arg_415_1.time_ >= var_418_5 + var_418_15 and arg_415_1.time_ < var_418_5 + var_418_15 + arg_418_0 then
 				arg_415_1.typewritter.percent = 1
 
 				arg_415_1.typewritter:SetDirty()
@@ -11623,7 +12483,7 @@
 		arg_427_1.frameCnt_ = 0
 		arg_427_1.state_ = "playing"
 		arg_427_1.curTalkId_ = 1108106102
-		arg_427_1.duration_ = 5
+		arg_427_1.duration_ = 9.77
 
 		SetActive(arg_427_1.tipsGo_, false)
 
@@ -11754,18 +12614,38 @@
 
 				arg_427_1.typewritter:SetDirty()
 				arg_427_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106102", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_430_22 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106102", "story_v_side_new_1108106.awb") / 1000
+
+					if var_430_22 + var_430_14 > arg_427_1.duration_ then
+						arg_427_1.duration_ = var_430_22 + var_430_14
+					end
+
+					if var_430_17.prefab_name ~= "" and arg_427_1.actors_[var_430_17.prefab_name] ~= nil then
+						local var_430_23 = LuaForUtil.PlayVoiceWithCriLipsync(arg_427_1.actors_[var_430_17.prefab_name].transform, "story_v_side_new_1108106", "1108106102", "story_v_side_new_1108106.awb")
+
+						arg_427_1:RecordAudio("1108106102", var_430_23)
+						arg_427_1:RecordAudio("1108106102", var_430_23)
+					else
+						arg_427_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106102", "story_v_side_new_1108106.awb")
+					end
+
+					arg_427_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106102", "story_v_side_new_1108106.awb")
+				end
+
 				arg_427_1:RecordContent(arg_427_1.text_.text)
 			end
 
-			local var_430_22 = math.max(var_430_15, arg_427_1.talkMaxDuration)
+			local var_430_24 = math.max(var_430_15, arg_427_1.talkMaxDuration)
 
-			if var_430_14 <= arg_427_1.time_ and arg_427_1.time_ < var_430_14 + var_430_22 then
-				arg_427_1.typewritter.percent = (arg_427_1.time_ - var_430_14) / var_430_22
+			if var_430_14 <= arg_427_1.time_ and arg_427_1.time_ < var_430_14 + var_430_24 then
+				arg_427_1.typewritter.percent = (arg_427_1.time_ - var_430_14) / var_430_24
 
 				arg_427_1.typewritter:SetDirty()
 			end
 
-			if arg_427_1.time_ >= var_430_14 + var_430_22 and arg_427_1.time_ < var_430_14 + var_430_22 + arg_430_0 then
+			if arg_427_1.time_ >= var_430_14 + var_430_24 and arg_427_1.time_ < var_430_14 + var_430_24 + arg_430_0 then
 				arg_427_1.typewritter.percent = 1
 
 				arg_427_1.typewritter:SetDirty()
@@ -11893,7 +12773,7 @@
 		arg_435_1.frameCnt_ = 0
 		arg_435_1.state_ = "playing"
 		arg_435_1.curTalkId_ = 1108106104
-		arg_435_1.duration_ = 5
+		arg_435_1.duration_ = 8.1
 
 		SetActive(arg_435_1.tipsGo_, false)
 
@@ -11984,18 +12864,38 @@
 
 				arg_435_1.typewritter:SetDirty()
 				arg_435_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106104", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_438_13 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106104", "story_v_side_new_1108106.awb") / 1000
+
+					if var_438_13 + var_438_5 > arg_435_1.duration_ then
+						arg_435_1.duration_ = var_438_13 + var_438_5
+					end
+
+					if var_438_8.prefab_name ~= "" and arg_435_1.actors_[var_438_8.prefab_name] ~= nil then
+						local var_438_14 = LuaForUtil.PlayVoiceWithCriLipsync(arg_435_1.actors_[var_438_8.prefab_name].transform, "story_v_side_new_1108106", "1108106104", "story_v_side_new_1108106.awb")
+
+						arg_435_1:RecordAudio("1108106104", var_438_14)
+						arg_435_1:RecordAudio("1108106104", var_438_14)
+					else
+						arg_435_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106104", "story_v_side_new_1108106.awb")
+					end
+
+					arg_435_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106104", "story_v_side_new_1108106.awb")
+				end
+
 				arg_435_1:RecordContent(arg_435_1.text_.text)
 			end
 
-			local var_438_13 = math.max(var_438_6, arg_435_1.talkMaxDuration)
+			local var_438_15 = math.max(var_438_6, arg_435_1.talkMaxDuration)
 
-			if var_438_5 <= arg_435_1.time_ and arg_435_1.time_ < var_438_5 + var_438_13 then
-				arg_435_1.typewritter.percent = (arg_435_1.time_ - var_438_5) / var_438_13
+			if var_438_5 <= arg_435_1.time_ and arg_435_1.time_ < var_438_5 + var_438_15 then
+				arg_435_1.typewritter.percent = (arg_435_1.time_ - var_438_5) / var_438_15
 
 				arg_435_1.typewritter:SetDirty()
 			end
 
-			if arg_435_1.time_ >= var_438_5 + var_438_13 and arg_435_1.time_ < var_438_5 + var_438_13 + arg_438_0 then
+			if arg_435_1.time_ >= var_438_5 + var_438_15 and arg_435_1.time_ < var_438_5 + var_438_15 + arg_438_0 then
 				arg_435_1.typewritter.percent = 1
 
 				arg_435_1.typewritter:SetDirty()
@@ -12299,7 +13199,7 @@
 		arg_451_1.frameCnt_ = 0
 		arg_451_1.state_ = "playing"
 		arg_451_1.curTalkId_ = 1108106108
-		arg_451_1.duration_ = 5
+		arg_451_1.duration_ = 2
 
 		SetActive(arg_451_1.tipsGo_, false)
 
@@ -12396,18 +13296,38 @@
 
 				arg_451_1.typewritter:SetDirty()
 				arg_451_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106108", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_454_14 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106108", "story_v_side_new_1108106.awb") / 1000
+
+					if var_454_14 + var_454_6 > arg_451_1.duration_ then
+						arg_451_1.duration_ = var_454_14 + var_454_6
+					end
+
+					if var_454_9.prefab_name ~= "" and arg_451_1.actors_[var_454_9.prefab_name] ~= nil then
+						local var_454_15 = LuaForUtil.PlayVoiceWithCriLipsync(arg_451_1.actors_[var_454_9.prefab_name].transform, "story_v_side_new_1108106", "1108106108", "story_v_side_new_1108106.awb")
+
+						arg_451_1:RecordAudio("1108106108", var_454_15)
+						arg_451_1:RecordAudio("1108106108", var_454_15)
+					else
+						arg_451_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106108", "story_v_side_new_1108106.awb")
+					end
+
+					arg_451_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106108", "story_v_side_new_1108106.awb")
+				end
+
 				arg_451_1:RecordContent(arg_451_1.text_.text)
 			end
 
-			local var_454_14 = math.max(var_454_7, arg_451_1.talkMaxDuration)
+			local var_454_16 = math.max(var_454_7, arg_451_1.talkMaxDuration)
 
-			if var_454_6 <= arg_451_1.time_ and arg_451_1.time_ < var_454_6 + var_454_14 then
-				arg_451_1.typewritter.percent = (arg_451_1.time_ - var_454_6) / var_454_14
+			if var_454_6 <= arg_451_1.time_ and arg_451_1.time_ < var_454_6 + var_454_16 then
+				arg_451_1.typewritter.percent = (arg_451_1.time_ - var_454_6) / var_454_16
 
 				arg_451_1.typewritter:SetDirty()
 			end
 
-			if arg_451_1.time_ >= var_454_6 + var_454_14 and arg_451_1.time_ < var_454_6 + var_454_14 + arg_454_0 then
+			if arg_451_1.time_ >= var_454_6 + var_454_16 and arg_451_1.time_ < var_454_6 + var_454_16 + arg_454_0 then
 				arg_451_1.typewritter.percent = 1
 
 				arg_451_1.typewritter:SetDirty()
@@ -13212,7 +14132,7 @@
 		arg_489_1.frameCnt_ = 0
 		arg_489_1.state_ = "playing"
 		arg_489_1.curTalkId_ = 1108106117
-		arg_489_1.duration_ = 5
+		arg_489_1.duration_ = 1.7
 
 		SetActive(arg_489_1.tipsGo_, false)
 
@@ -13276,18 +14196,38 @@
 
 				arg_489_1.typewritter:SetDirty()
 				arg_489_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106117", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_492_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106117", "story_v_side_new_1108106.awb") / 1000
+
+					if var_492_8 + var_492_0 > arg_489_1.duration_ then
+						arg_489_1.duration_ = var_492_8 + var_492_0
+					end
+
+					if var_492_3.prefab_name ~= "" and arg_489_1.actors_[var_492_3.prefab_name] ~= nil then
+						local var_492_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_489_1.actors_[var_492_3.prefab_name].transform, "story_v_side_new_1108106", "1108106117", "story_v_side_new_1108106.awb")
+
+						arg_489_1:RecordAudio("1108106117", var_492_9)
+						arg_489_1:RecordAudio("1108106117", var_492_9)
+					else
+						arg_489_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106117", "story_v_side_new_1108106.awb")
+					end
+
+					arg_489_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106117", "story_v_side_new_1108106.awb")
+				end
+
 				arg_489_1:RecordContent(arg_489_1.text_.text)
 			end
 
-			local var_492_8 = math.max(var_492_1, arg_489_1.talkMaxDuration)
+			local var_492_10 = math.max(var_492_1, arg_489_1.talkMaxDuration)
 
-			if var_492_0 <= arg_489_1.time_ and arg_489_1.time_ < var_492_0 + var_492_8 then
-				arg_489_1.typewritter.percent = (arg_489_1.time_ - var_492_0) / var_492_8
+			if var_492_0 <= arg_489_1.time_ and arg_489_1.time_ < var_492_0 + var_492_10 then
+				arg_489_1.typewritter.percent = (arg_489_1.time_ - var_492_0) / var_492_10
 
 				arg_489_1.typewritter:SetDirty()
 			end
 
-			if arg_489_1.time_ >= var_492_0 + var_492_8 and arg_489_1.time_ < var_492_0 + var_492_8 + arg_492_0 then
+			if arg_489_1.time_ >= var_492_0 + var_492_10 and arg_489_1.time_ < var_492_0 + var_492_10 + arg_492_0 then
 				arg_489_1.typewritter.percent = 1
 
 				arg_489_1.typewritter:SetDirty()
@@ -13300,7 +14240,7 @@
 		arg_493_1.frameCnt_ = 0
 		arg_493_1.state_ = "playing"
 		arg_493_1.curTalkId_ = 1108106118
-		arg_493_1.duration_ = 5
+		arg_493_1.duration_ = 10.4
 
 		SetActive(arg_493_1.tipsGo_, false)
 
@@ -13364,18 +14304,38 @@
 
 				arg_493_1.typewritter:SetDirty()
 				arg_493_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106118", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_496_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106118", "story_v_side_new_1108106.awb") / 1000
+
+					if var_496_8 + var_496_0 > arg_493_1.duration_ then
+						arg_493_1.duration_ = var_496_8 + var_496_0
+					end
+
+					if var_496_3.prefab_name ~= "" and arg_493_1.actors_[var_496_3.prefab_name] ~= nil then
+						local var_496_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_493_1.actors_[var_496_3.prefab_name].transform, "story_v_side_new_1108106", "1108106118", "story_v_side_new_1108106.awb")
+
+						arg_493_1:RecordAudio("1108106118", var_496_9)
+						arg_493_1:RecordAudio("1108106118", var_496_9)
+					else
+						arg_493_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106118", "story_v_side_new_1108106.awb")
+					end
+
+					arg_493_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106118", "story_v_side_new_1108106.awb")
+				end
+
 				arg_493_1:RecordContent(arg_493_1.text_.text)
 			end
 
-			local var_496_8 = math.max(var_496_1, arg_493_1.talkMaxDuration)
+			local var_496_10 = math.max(var_496_1, arg_493_1.talkMaxDuration)
 
-			if var_496_0 <= arg_493_1.time_ and arg_493_1.time_ < var_496_0 + var_496_8 then
-				arg_493_1.typewritter.percent = (arg_493_1.time_ - var_496_0) / var_496_8
+			if var_496_0 <= arg_493_1.time_ and arg_493_1.time_ < var_496_0 + var_496_10 then
+				arg_493_1.typewritter.percent = (arg_493_1.time_ - var_496_0) / var_496_10
 
 				arg_493_1.typewritter:SetDirty()
 			end
 
-			if arg_493_1.time_ >= var_496_0 + var_496_8 and arg_493_1.time_ < var_496_0 + var_496_8 + arg_496_0 then
+			if arg_493_1.time_ >= var_496_0 + var_496_10 and arg_493_1.time_ < var_496_0 + var_496_10 + arg_496_0 then
 				arg_493_1.typewritter.percent = 1
 
 				arg_493_1.typewritter:SetDirty()
@@ -13388,7 +14348,7 @@
 		arg_497_1.frameCnt_ = 0
 		arg_497_1.state_ = "playing"
 		arg_497_1.curTalkId_ = 1108106119
-		arg_497_1.duration_ = 5
+		arg_497_1.duration_ = 6.27
 
 		SetActive(arg_497_1.tipsGo_, false)
 
@@ -13452,18 +14412,38 @@
 
 				arg_497_1.typewritter:SetDirty()
 				arg_497_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106119", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_500_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106119", "story_v_side_new_1108106.awb") / 1000
+
+					if var_500_8 + var_500_0 > arg_497_1.duration_ then
+						arg_497_1.duration_ = var_500_8 + var_500_0
+					end
+
+					if var_500_3.prefab_name ~= "" and arg_497_1.actors_[var_500_3.prefab_name] ~= nil then
+						local var_500_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_497_1.actors_[var_500_3.prefab_name].transform, "story_v_side_new_1108106", "1108106119", "story_v_side_new_1108106.awb")
+
+						arg_497_1:RecordAudio("1108106119", var_500_9)
+						arg_497_1:RecordAudio("1108106119", var_500_9)
+					else
+						arg_497_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106119", "story_v_side_new_1108106.awb")
+					end
+
+					arg_497_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106119", "story_v_side_new_1108106.awb")
+				end
+
 				arg_497_1:RecordContent(arg_497_1.text_.text)
 			end
 
-			local var_500_8 = math.max(var_500_1, arg_497_1.talkMaxDuration)
+			local var_500_10 = math.max(var_500_1, arg_497_1.talkMaxDuration)
 
-			if var_500_0 <= arg_497_1.time_ and arg_497_1.time_ < var_500_0 + var_500_8 then
-				arg_497_1.typewritter.percent = (arg_497_1.time_ - var_500_0) / var_500_8
+			if var_500_0 <= arg_497_1.time_ and arg_497_1.time_ < var_500_0 + var_500_10 then
+				arg_497_1.typewritter.percent = (arg_497_1.time_ - var_500_0) / var_500_10
 
 				arg_497_1.typewritter:SetDirty()
 			end
 
-			if arg_497_1.time_ >= var_500_0 + var_500_8 and arg_497_1.time_ < var_500_0 + var_500_8 + arg_500_0 then
+			if arg_497_1.time_ >= var_500_0 + var_500_10 and arg_497_1.time_ < var_500_0 + var_500_10 + arg_500_0 then
 				arg_497_1.typewritter.percent = 1
 
 				arg_497_1.typewritter:SetDirty()
@@ -13558,7 +14538,7 @@
 		arg_505_1.frameCnt_ = 0
 		arg_505_1.state_ = "playing"
 		arg_505_1.curTalkId_ = 1108106121
-		arg_505_1.duration_ = 5
+		arg_505_1.duration_ = 1.23
 
 		SetActive(arg_505_1.tipsGo_, false)
 
@@ -13622,18 +14602,38 @@
 
 				arg_505_1.typewritter:SetDirty()
 				arg_505_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106121", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_508_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106121", "story_v_side_new_1108106.awb") / 1000
+
+					if var_508_8 + var_508_0 > arg_505_1.duration_ then
+						arg_505_1.duration_ = var_508_8 + var_508_0
+					end
+
+					if var_508_3.prefab_name ~= "" and arg_505_1.actors_[var_508_3.prefab_name] ~= nil then
+						local var_508_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_505_1.actors_[var_508_3.prefab_name].transform, "story_v_side_new_1108106", "1108106121", "story_v_side_new_1108106.awb")
+
+						arg_505_1:RecordAudio("1108106121", var_508_9)
+						arg_505_1:RecordAudio("1108106121", var_508_9)
+					else
+						arg_505_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106121", "story_v_side_new_1108106.awb")
+					end
+
+					arg_505_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106121", "story_v_side_new_1108106.awb")
+				end
+
 				arg_505_1:RecordContent(arg_505_1.text_.text)
 			end
 
-			local var_508_8 = math.max(var_508_1, arg_505_1.talkMaxDuration)
+			local var_508_10 = math.max(var_508_1, arg_505_1.talkMaxDuration)
 
-			if var_508_0 <= arg_505_1.time_ and arg_505_1.time_ < var_508_0 + var_508_8 then
-				arg_505_1.typewritter.percent = (arg_505_1.time_ - var_508_0) / var_508_8
+			if var_508_0 <= arg_505_1.time_ and arg_505_1.time_ < var_508_0 + var_508_10 then
+				arg_505_1.typewritter.percent = (arg_505_1.time_ - var_508_0) / var_508_10
 
 				arg_505_1.typewritter:SetDirty()
 			end
 
-			if arg_505_1.time_ >= var_508_0 + var_508_8 and arg_505_1.time_ < var_508_0 + var_508_8 + arg_508_0 then
+			if arg_505_1.time_ >= var_508_0 + var_508_10 and arg_505_1.time_ < var_508_0 + var_508_10 + arg_508_0 then
 				arg_505_1.typewritter.percent = 1
 
 				arg_505_1.typewritter:SetDirty()
@@ -13646,7 +14646,7 @@
 		arg_509_1.frameCnt_ = 0
 		arg_509_1.state_ = "playing"
 		arg_509_1.curTalkId_ = 1108106122
-		arg_509_1.duration_ = 5
+		arg_509_1.duration_ = 9
 
 		SetActive(arg_509_1.tipsGo_, false)
 
@@ -13710,18 +14710,38 @@
 
 				arg_509_1.typewritter:SetDirty()
 				arg_509_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106122", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_512_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106122", "story_v_side_new_1108106.awb") / 1000
+
+					if var_512_8 + var_512_0 > arg_509_1.duration_ then
+						arg_509_1.duration_ = var_512_8 + var_512_0
+					end
+
+					if var_512_3.prefab_name ~= "" and arg_509_1.actors_[var_512_3.prefab_name] ~= nil then
+						local var_512_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_509_1.actors_[var_512_3.prefab_name].transform, "story_v_side_new_1108106", "1108106122", "story_v_side_new_1108106.awb")
+
+						arg_509_1:RecordAudio("1108106122", var_512_9)
+						arg_509_1:RecordAudio("1108106122", var_512_9)
+					else
+						arg_509_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106122", "story_v_side_new_1108106.awb")
+					end
+
+					arg_509_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106122", "story_v_side_new_1108106.awb")
+				end
+
 				arg_509_1:RecordContent(arg_509_1.text_.text)
 			end
 
-			local var_512_8 = math.max(var_512_1, arg_509_1.talkMaxDuration)
+			local var_512_10 = math.max(var_512_1, arg_509_1.talkMaxDuration)
 
-			if var_512_0 <= arg_509_1.time_ and arg_509_1.time_ < var_512_0 + var_512_8 then
-				arg_509_1.typewritter.percent = (arg_509_1.time_ - var_512_0) / var_512_8
+			if var_512_0 <= arg_509_1.time_ and arg_509_1.time_ < var_512_0 + var_512_10 then
+				arg_509_1.typewritter.percent = (arg_509_1.time_ - var_512_0) / var_512_10
 
 				arg_509_1.typewritter:SetDirty()
 			end
 
-			if arg_509_1.time_ >= var_512_0 + var_512_8 and arg_509_1.time_ < var_512_0 + var_512_8 + arg_512_0 then
+			if arg_509_1.time_ >= var_512_0 + var_512_10 and arg_509_1.time_ < var_512_0 + var_512_10 + arg_512_0 then
 				arg_509_1.typewritter.percent = 1
 
 				arg_509_1.typewritter:SetDirty()
@@ -13734,7 +14754,7 @@
 		arg_513_1.frameCnt_ = 0
 		arg_513_1.state_ = "playing"
 		arg_513_1.curTalkId_ = 1108106123
-		arg_513_1.duration_ = 5
+		arg_513_1.duration_ = 5.8
 
 		SetActive(arg_513_1.tipsGo_, false)
 
@@ -13798,18 +14818,38 @@
 
 				arg_513_1.typewritter:SetDirty()
 				arg_513_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106123", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_516_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106123", "story_v_side_new_1108106.awb") / 1000
+
+					if var_516_8 + var_516_0 > arg_513_1.duration_ then
+						arg_513_1.duration_ = var_516_8 + var_516_0
+					end
+
+					if var_516_3.prefab_name ~= "" and arg_513_1.actors_[var_516_3.prefab_name] ~= nil then
+						local var_516_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_513_1.actors_[var_516_3.prefab_name].transform, "story_v_side_new_1108106", "1108106123", "story_v_side_new_1108106.awb")
+
+						arg_513_1:RecordAudio("1108106123", var_516_9)
+						arg_513_1:RecordAudio("1108106123", var_516_9)
+					else
+						arg_513_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106123", "story_v_side_new_1108106.awb")
+					end
+
+					arg_513_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106123", "story_v_side_new_1108106.awb")
+				end
+
 				arg_513_1:RecordContent(arg_513_1.text_.text)
 			end
 
-			local var_516_8 = math.max(var_516_1, arg_513_1.talkMaxDuration)
+			local var_516_10 = math.max(var_516_1, arg_513_1.talkMaxDuration)
 
-			if var_516_0 <= arg_513_1.time_ and arg_513_1.time_ < var_516_0 + var_516_8 then
-				arg_513_1.typewritter.percent = (arg_513_1.time_ - var_516_0) / var_516_8
+			if var_516_0 <= arg_513_1.time_ and arg_513_1.time_ < var_516_0 + var_516_10 then
+				arg_513_1.typewritter.percent = (arg_513_1.time_ - var_516_0) / var_516_10
 
 				arg_513_1.typewritter:SetDirty()
 			end
 
-			if arg_513_1.time_ >= var_516_0 + var_516_8 and arg_513_1.time_ < var_516_0 + var_516_8 + arg_516_0 then
+			if arg_513_1.time_ >= var_516_0 + var_516_10 and arg_513_1.time_ < var_516_0 + var_516_10 + arg_516_0 then
 				arg_513_1.typewritter.percent = 1
 
 				arg_513_1.typewritter:SetDirty()
@@ -14209,7 +15249,7 @@
 		arg_531_1.frameCnt_ = 0
 		arg_531_1.state_ = "playing"
 		arg_531_1.curTalkId_ = 1108106127
-		arg_531_1.duration_ = 5
+		arg_531_1.duration_ = 4.13
 
 		SetActive(arg_531_1.tipsGo_, false)
 
@@ -14273,18 +15313,38 @@
 
 				arg_531_1.typewritter:SetDirty()
 				arg_531_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106127", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_534_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106127", "story_v_side_new_1108106.awb") / 1000
+
+					if var_534_8 + var_534_0 > arg_531_1.duration_ then
+						arg_531_1.duration_ = var_534_8 + var_534_0
+					end
+
+					if var_534_3.prefab_name ~= "" and arg_531_1.actors_[var_534_3.prefab_name] ~= nil then
+						local var_534_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_531_1.actors_[var_534_3.prefab_name].transform, "story_v_side_new_1108106", "1108106127", "story_v_side_new_1108106.awb")
+
+						arg_531_1:RecordAudio("1108106127", var_534_9)
+						arg_531_1:RecordAudio("1108106127", var_534_9)
+					else
+						arg_531_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106127", "story_v_side_new_1108106.awb")
+					end
+
+					arg_531_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106127", "story_v_side_new_1108106.awb")
+				end
+
 				arg_531_1:RecordContent(arg_531_1.text_.text)
 			end
 
-			local var_534_8 = math.max(var_534_1, arg_531_1.talkMaxDuration)
+			local var_534_10 = math.max(var_534_1, arg_531_1.talkMaxDuration)
 
-			if var_534_0 <= arg_531_1.time_ and arg_531_1.time_ < var_534_0 + var_534_8 then
-				arg_531_1.typewritter.percent = (arg_531_1.time_ - var_534_0) / var_534_8
+			if var_534_0 <= arg_531_1.time_ and arg_531_1.time_ < var_534_0 + var_534_10 then
+				arg_531_1.typewritter.percent = (arg_531_1.time_ - var_534_0) / var_534_10
 
 				arg_531_1.typewritter:SetDirty()
 			end
 
-			if arg_531_1.time_ >= var_534_0 + var_534_8 and arg_531_1.time_ < var_534_0 + var_534_8 + arg_534_0 then
+			if arg_531_1.time_ >= var_534_0 + var_534_10 and arg_531_1.time_ < var_534_0 + var_534_10 + arg_534_0 then
 				arg_531_1.typewritter.percent = 1
 
 				arg_531_1.typewritter:SetDirty()
@@ -14297,7 +15357,7 @@
 		arg_535_1.frameCnt_ = 0
 		arg_535_1.state_ = "playing"
 		arg_535_1.curTalkId_ = 1108106128
-		arg_535_1.duration_ = 5
+		arg_535_1.duration_ = 3.07
 
 		SetActive(arg_535_1.tipsGo_, false)
 
@@ -14361,18 +15421,38 @@
 
 				arg_535_1.typewritter:SetDirty()
 				arg_535_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106128", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_538_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106128", "story_v_side_new_1108106.awb") / 1000
+
+					if var_538_8 + var_538_0 > arg_535_1.duration_ then
+						arg_535_1.duration_ = var_538_8 + var_538_0
+					end
+
+					if var_538_3.prefab_name ~= "" and arg_535_1.actors_[var_538_3.prefab_name] ~= nil then
+						local var_538_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_535_1.actors_[var_538_3.prefab_name].transform, "story_v_side_new_1108106", "1108106128", "story_v_side_new_1108106.awb")
+
+						arg_535_1:RecordAudio("1108106128", var_538_9)
+						arg_535_1:RecordAudio("1108106128", var_538_9)
+					else
+						arg_535_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106128", "story_v_side_new_1108106.awb")
+					end
+
+					arg_535_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106128", "story_v_side_new_1108106.awb")
+				end
+
 				arg_535_1:RecordContent(arg_535_1.text_.text)
 			end
 
-			local var_538_8 = math.max(var_538_1, arg_535_1.talkMaxDuration)
+			local var_538_10 = math.max(var_538_1, arg_535_1.talkMaxDuration)
 
-			if var_538_0 <= arg_535_1.time_ and arg_535_1.time_ < var_538_0 + var_538_8 then
-				arg_535_1.typewritter.percent = (arg_535_1.time_ - var_538_0) / var_538_8
+			if var_538_0 <= arg_535_1.time_ and arg_535_1.time_ < var_538_0 + var_538_10 then
+				arg_535_1.typewritter.percent = (arg_535_1.time_ - var_538_0) / var_538_10
 
 				arg_535_1.typewritter:SetDirty()
 			end
 
-			if arg_535_1.time_ >= var_538_0 + var_538_8 and arg_535_1.time_ < var_538_0 + var_538_8 + arg_538_0 then
+			if arg_535_1.time_ >= var_538_0 + var_538_10 and arg_535_1.time_ < var_538_0 + var_538_10 + arg_538_0 then
 				arg_535_1.typewritter.percent = 1
 
 				arg_535_1.typewritter:SetDirty()
@@ -14385,7 +15465,7 @@
 		arg_539_1.frameCnt_ = 0
 		arg_539_1.state_ = "playing"
 		arg_539_1.curTalkId_ = 1108106129
-		arg_539_1.duration_ = 5
+		arg_539_1.duration_ = 5.2
 
 		SetActive(arg_539_1.tipsGo_, false)
 
@@ -14449,18 +15529,38 @@
 
 				arg_539_1.typewritter:SetDirty()
 				arg_539_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106129", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_542_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106129", "story_v_side_new_1108106.awb") / 1000
+
+					if var_542_8 + var_542_0 > arg_539_1.duration_ then
+						arg_539_1.duration_ = var_542_8 + var_542_0
+					end
+
+					if var_542_3.prefab_name ~= "" and arg_539_1.actors_[var_542_3.prefab_name] ~= nil then
+						local var_542_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_539_1.actors_[var_542_3.prefab_name].transform, "story_v_side_new_1108106", "1108106129", "story_v_side_new_1108106.awb")
+
+						arg_539_1:RecordAudio("1108106129", var_542_9)
+						arg_539_1:RecordAudio("1108106129", var_542_9)
+					else
+						arg_539_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106129", "story_v_side_new_1108106.awb")
+					end
+
+					arg_539_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106129", "story_v_side_new_1108106.awb")
+				end
+
 				arg_539_1:RecordContent(arg_539_1.text_.text)
 			end
 
-			local var_542_8 = math.max(var_542_1, arg_539_1.talkMaxDuration)
+			local var_542_10 = math.max(var_542_1, arg_539_1.talkMaxDuration)
 
-			if var_542_0 <= arg_539_1.time_ and arg_539_1.time_ < var_542_0 + var_542_8 then
-				arg_539_1.typewritter.percent = (arg_539_1.time_ - var_542_0) / var_542_8
+			if var_542_0 <= arg_539_1.time_ and arg_539_1.time_ < var_542_0 + var_542_10 then
+				arg_539_1.typewritter.percent = (arg_539_1.time_ - var_542_0) / var_542_10
 
 				arg_539_1.typewritter:SetDirty()
 			end
 
-			if arg_539_1.time_ >= var_542_0 + var_542_8 and arg_539_1.time_ < var_542_0 + var_542_8 + arg_542_0 then
+			if arg_539_1.time_ >= var_542_0 + var_542_10 and arg_539_1.time_ < var_542_0 + var_542_10 + arg_542_0 then
 				arg_539_1.typewritter.percent = 1
 
 				arg_539_1.typewritter:SetDirty()
@@ -14889,7 +15989,7 @@
 		arg_567_1.frameCnt_ = 0
 		arg_567_1.state_ = "playing"
 		arg_567_1.curTalkId_ = 1108106136
-		arg_567_1.duration_ = 5
+		arg_567_1.duration_ = 5.8
 
 		SetActive(arg_567_1.tipsGo_, false)
 
@@ -14953,18 +16053,38 @@
 
 				arg_567_1.typewritter:SetDirty()
 				arg_567_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106136", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_570_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106136", "story_v_side_new_1108106.awb") / 1000
+
+					if var_570_8 + var_570_0 > arg_567_1.duration_ then
+						arg_567_1.duration_ = var_570_8 + var_570_0
+					end
+
+					if var_570_3.prefab_name ~= "" and arg_567_1.actors_[var_570_3.prefab_name] ~= nil then
+						local var_570_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_567_1.actors_[var_570_3.prefab_name].transform, "story_v_side_new_1108106", "1108106136", "story_v_side_new_1108106.awb")
+
+						arg_567_1:RecordAudio("1108106136", var_570_9)
+						arg_567_1:RecordAudio("1108106136", var_570_9)
+					else
+						arg_567_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106136", "story_v_side_new_1108106.awb")
+					end
+
+					arg_567_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106136", "story_v_side_new_1108106.awb")
+				end
+
 				arg_567_1:RecordContent(arg_567_1.text_.text)
 			end
 
-			local var_570_8 = math.max(var_570_1, arg_567_1.talkMaxDuration)
+			local var_570_10 = math.max(var_570_1, arg_567_1.talkMaxDuration)
 
-			if var_570_0 <= arg_567_1.time_ and arg_567_1.time_ < var_570_0 + var_570_8 then
-				arg_567_1.typewritter.percent = (arg_567_1.time_ - var_570_0) / var_570_8
+			if var_570_0 <= arg_567_1.time_ and arg_567_1.time_ < var_570_0 + var_570_10 then
+				arg_567_1.typewritter.percent = (arg_567_1.time_ - var_570_0) / var_570_10
 
 				arg_567_1.typewritter:SetDirty()
 			end
 
-			if arg_567_1.time_ >= var_570_0 + var_570_8 and arg_567_1.time_ < var_570_0 + var_570_8 + arg_570_0 then
+			if arg_567_1.time_ >= var_570_0 + var_570_10 and arg_567_1.time_ < var_570_0 + var_570_10 + arg_570_0 then
 				arg_567_1.typewritter.percent = 1
 
 				arg_567_1.typewritter:SetDirty()
@@ -15059,7 +16179,7 @@
 		arg_575_1.frameCnt_ = 0
 		arg_575_1.state_ = "playing"
 		arg_575_1.curTalkId_ = 1108106138
-		arg_575_1.duration_ = 5
+		arg_575_1.duration_ = 8.33
 
 		SetActive(arg_575_1.tipsGo_, false)
 
@@ -15123,18 +16243,38 @@
 
 				arg_575_1.typewritter:SetDirty()
 				arg_575_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106138", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_578_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106138", "story_v_side_new_1108106.awb") / 1000
+
+					if var_578_8 + var_578_0 > arg_575_1.duration_ then
+						arg_575_1.duration_ = var_578_8 + var_578_0
+					end
+
+					if var_578_3.prefab_name ~= "" and arg_575_1.actors_[var_578_3.prefab_name] ~= nil then
+						local var_578_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_575_1.actors_[var_578_3.prefab_name].transform, "story_v_side_new_1108106", "1108106138", "story_v_side_new_1108106.awb")
+
+						arg_575_1:RecordAudio("1108106138", var_578_9)
+						arg_575_1:RecordAudio("1108106138", var_578_9)
+					else
+						arg_575_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106138", "story_v_side_new_1108106.awb")
+					end
+
+					arg_575_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106138", "story_v_side_new_1108106.awb")
+				end
+
 				arg_575_1:RecordContent(arg_575_1.text_.text)
 			end
 
-			local var_578_8 = math.max(var_578_1, arg_575_1.talkMaxDuration)
+			local var_578_10 = math.max(var_578_1, arg_575_1.talkMaxDuration)
 
-			if var_578_0 <= arg_575_1.time_ and arg_575_1.time_ < var_578_0 + var_578_8 then
-				arg_575_1.typewritter.percent = (arg_575_1.time_ - var_578_0) / var_578_8
+			if var_578_0 <= arg_575_1.time_ and arg_575_1.time_ < var_578_0 + var_578_10 then
+				arg_575_1.typewritter.percent = (arg_575_1.time_ - var_578_0) / var_578_10
 
 				arg_575_1.typewritter:SetDirty()
 			end
 
-			if arg_575_1.time_ >= var_578_0 + var_578_8 and arg_575_1.time_ < var_578_0 + var_578_8 + arg_578_0 then
+			if arg_575_1.time_ >= var_578_0 + var_578_10 and arg_575_1.time_ < var_578_0 + var_578_10 + arg_578_0 then
 				arg_575_1.typewritter.percent = 1
 
 				arg_575_1.typewritter:SetDirty()
@@ -15147,7 +16287,7 @@
 		arg_579_1.frameCnt_ = 0
 		arg_579_1.state_ = "playing"
 		arg_579_1.curTalkId_ = 1108106139
-		arg_579_1.duration_ = 5
+		arg_579_1.duration_ = 3.1
 
 		SetActive(arg_579_1.tipsGo_, false)
 
@@ -15211,18 +16351,38 @@
 
 				arg_579_1.typewritter:SetDirty()
 				arg_579_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106139", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_582_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106139", "story_v_side_new_1108106.awb") / 1000
+
+					if var_582_8 + var_582_0 > arg_579_1.duration_ then
+						arg_579_1.duration_ = var_582_8 + var_582_0
+					end
+
+					if var_582_3.prefab_name ~= "" and arg_579_1.actors_[var_582_3.prefab_name] ~= nil then
+						local var_582_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_579_1.actors_[var_582_3.prefab_name].transform, "story_v_side_new_1108106", "1108106139", "story_v_side_new_1108106.awb")
+
+						arg_579_1:RecordAudio("1108106139", var_582_9)
+						arg_579_1:RecordAudio("1108106139", var_582_9)
+					else
+						arg_579_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106139", "story_v_side_new_1108106.awb")
+					end
+
+					arg_579_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106139", "story_v_side_new_1108106.awb")
+				end
+
 				arg_579_1:RecordContent(arg_579_1.text_.text)
 			end
 
-			local var_582_8 = math.max(var_582_1, arg_579_1.talkMaxDuration)
+			local var_582_10 = math.max(var_582_1, arg_579_1.talkMaxDuration)
 
-			if var_582_0 <= arg_579_1.time_ and arg_579_1.time_ < var_582_0 + var_582_8 then
-				arg_579_1.typewritter.percent = (arg_579_1.time_ - var_582_0) / var_582_8
+			if var_582_0 <= arg_579_1.time_ and arg_579_1.time_ < var_582_0 + var_582_10 then
+				arg_579_1.typewritter.percent = (arg_579_1.time_ - var_582_0) / var_582_10
 
 				arg_579_1.typewritter:SetDirty()
 			end
 
-			if arg_579_1.time_ >= var_582_0 + var_582_8 and arg_579_1.time_ < var_582_0 + var_582_8 + arg_582_0 then
+			if arg_579_1.time_ >= var_582_0 + var_582_10 and arg_579_1.time_ < var_582_0 + var_582_10 + arg_582_0 then
 				arg_579_1.typewritter.percent = 1
 
 				arg_579_1.typewritter:SetDirty()
@@ -15235,7 +16395,7 @@
 		arg_583_1.frameCnt_ = 0
 		arg_583_1.state_ = "playing"
 		arg_583_1.curTalkId_ = 1108106140
-		arg_583_1.duration_ = 5
+		arg_583_1.duration_ = 2.7
 
 		SetActive(arg_583_1.tipsGo_, false)
 
@@ -15299,18 +16459,38 @@
 
 				arg_583_1.typewritter:SetDirty()
 				arg_583_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106140", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_586_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106140", "story_v_side_new_1108106.awb") / 1000
+
+					if var_586_8 + var_586_0 > arg_583_1.duration_ then
+						arg_583_1.duration_ = var_586_8 + var_586_0
+					end
+
+					if var_586_3.prefab_name ~= "" and arg_583_1.actors_[var_586_3.prefab_name] ~= nil then
+						local var_586_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_583_1.actors_[var_586_3.prefab_name].transform, "story_v_side_new_1108106", "1108106140", "story_v_side_new_1108106.awb")
+
+						arg_583_1:RecordAudio("1108106140", var_586_9)
+						arg_583_1:RecordAudio("1108106140", var_586_9)
+					else
+						arg_583_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106140", "story_v_side_new_1108106.awb")
+					end
+
+					arg_583_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106140", "story_v_side_new_1108106.awb")
+				end
+
 				arg_583_1:RecordContent(arg_583_1.text_.text)
 			end
 
-			local var_586_8 = math.max(var_586_1, arg_583_1.talkMaxDuration)
+			local var_586_10 = math.max(var_586_1, arg_583_1.talkMaxDuration)
 
-			if var_586_0 <= arg_583_1.time_ and arg_583_1.time_ < var_586_0 + var_586_8 then
-				arg_583_1.typewritter.percent = (arg_583_1.time_ - var_586_0) / var_586_8
+			if var_586_0 <= arg_583_1.time_ and arg_583_1.time_ < var_586_0 + var_586_10 then
+				arg_583_1.typewritter.percent = (arg_583_1.time_ - var_586_0) / var_586_10
 
 				arg_583_1.typewritter:SetDirty()
 			end
 
-			if arg_583_1.time_ >= var_586_0 + var_586_8 and arg_583_1.time_ < var_586_0 + var_586_8 + arg_586_0 then
+			if arg_583_1.time_ >= var_586_0 + var_586_10 and arg_583_1.time_ < var_586_0 + var_586_10 + arg_586_0 then
 				arg_583_1.typewritter.percent = 1
 
 				arg_583_1.typewritter:SetDirty()
@@ -15323,7 +16503,7 @@
 		arg_587_1.frameCnt_ = 0
 		arg_587_1.state_ = "playing"
 		arg_587_1.curTalkId_ = 1108106141
-		arg_587_1.duration_ = 5
+		arg_587_1.duration_ = 3.67
 
 		SetActive(arg_587_1.tipsGo_, false)
 
@@ -15387,18 +16567,38 @@
 
 				arg_587_1.typewritter:SetDirty()
 				arg_587_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106141", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_590_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106141", "story_v_side_new_1108106.awb") / 1000
+
+					if var_590_8 + var_590_0 > arg_587_1.duration_ then
+						arg_587_1.duration_ = var_590_8 + var_590_0
+					end
+
+					if var_590_3.prefab_name ~= "" and arg_587_1.actors_[var_590_3.prefab_name] ~= nil then
+						local var_590_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_587_1.actors_[var_590_3.prefab_name].transform, "story_v_side_new_1108106", "1108106141", "story_v_side_new_1108106.awb")
+
+						arg_587_1:RecordAudio("1108106141", var_590_9)
+						arg_587_1:RecordAudio("1108106141", var_590_9)
+					else
+						arg_587_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106141", "story_v_side_new_1108106.awb")
+					end
+
+					arg_587_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106141", "story_v_side_new_1108106.awb")
+				end
+
 				arg_587_1:RecordContent(arg_587_1.text_.text)
 			end
 
-			local var_590_8 = math.max(var_590_1, arg_587_1.talkMaxDuration)
+			local var_590_10 = math.max(var_590_1, arg_587_1.talkMaxDuration)
 
-			if var_590_0 <= arg_587_1.time_ and arg_587_1.time_ < var_590_0 + var_590_8 then
-				arg_587_1.typewritter.percent = (arg_587_1.time_ - var_590_0) / var_590_8
+			if var_590_0 <= arg_587_1.time_ and arg_587_1.time_ < var_590_0 + var_590_10 then
+				arg_587_1.typewritter.percent = (arg_587_1.time_ - var_590_0) / var_590_10
 
 				arg_587_1.typewritter:SetDirty()
 			end
 
-			if arg_587_1.time_ >= var_590_0 + var_590_8 and arg_587_1.time_ < var_590_0 + var_590_8 + arg_590_0 then
+			if arg_587_1.time_ >= var_590_0 + var_590_10 and arg_587_1.time_ < var_590_0 + var_590_10 + arg_590_0 then
 				arg_587_1.typewritter.percent = 1
 
 				arg_587_1.typewritter:SetDirty()
@@ -15493,7 +16693,7 @@
 		arg_595_1.frameCnt_ = 0
 		arg_595_1.state_ = "playing"
 		arg_595_1.curTalkId_ = 1108106143
-		arg_595_1.duration_ = 5
+		arg_595_1.duration_ = 4.4
 
 		SetActive(arg_595_1.tipsGo_, false)
 
@@ -15557,18 +16757,38 @@
 
 				arg_595_1.typewritter:SetDirty()
 				arg_595_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106143", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_598_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106143", "story_v_side_new_1108106.awb") / 1000
+
+					if var_598_8 + var_598_0 > arg_595_1.duration_ then
+						arg_595_1.duration_ = var_598_8 + var_598_0
+					end
+
+					if var_598_3.prefab_name ~= "" and arg_595_1.actors_[var_598_3.prefab_name] ~= nil then
+						local var_598_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_595_1.actors_[var_598_3.prefab_name].transform, "story_v_side_new_1108106", "1108106143", "story_v_side_new_1108106.awb")
+
+						arg_595_1:RecordAudio("1108106143", var_598_9)
+						arg_595_1:RecordAudio("1108106143", var_598_9)
+					else
+						arg_595_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106143", "story_v_side_new_1108106.awb")
+					end
+
+					arg_595_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106143", "story_v_side_new_1108106.awb")
+				end
+
 				arg_595_1:RecordContent(arg_595_1.text_.text)
 			end
 
-			local var_598_8 = math.max(var_598_1, arg_595_1.talkMaxDuration)
+			local var_598_10 = math.max(var_598_1, arg_595_1.talkMaxDuration)
 
-			if var_598_0 <= arg_595_1.time_ and arg_595_1.time_ < var_598_0 + var_598_8 then
-				arg_595_1.typewritter.percent = (arg_595_1.time_ - var_598_0) / var_598_8
+			if var_598_0 <= arg_595_1.time_ and arg_595_1.time_ < var_598_0 + var_598_10 then
+				arg_595_1.typewritter.percent = (arg_595_1.time_ - var_598_0) / var_598_10
 
 				arg_595_1.typewritter:SetDirty()
 			end
 
-			if arg_595_1.time_ >= var_598_0 + var_598_8 and arg_595_1.time_ < var_598_0 + var_598_8 + arg_598_0 then
+			if arg_595_1.time_ >= var_598_0 + var_598_10 and arg_595_1.time_ < var_598_0 + var_598_10 + arg_598_0 then
 				arg_595_1.typewritter.percent = 1
 
 				arg_595_1.typewritter:SetDirty()
@@ -15581,7 +16801,7 @@
 		arg_599_1.frameCnt_ = 0
 		arg_599_1.state_ = "playing"
 		arg_599_1.curTalkId_ = 1108106144
-		arg_599_1.duration_ = 5
+		arg_599_1.duration_ = 7.43
 
 		SetActive(arg_599_1.tipsGo_, false)
 
@@ -15645,18 +16865,38 @@
 
 				arg_599_1.typewritter:SetDirty()
 				arg_599_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106144", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_602_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106144", "story_v_side_new_1108106.awb") / 1000
+
+					if var_602_8 + var_602_0 > arg_599_1.duration_ then
+						arg_599_1.duration_ = var_602_8 + var_602_0
+					end
+
+					if var_602_3.prefab_name ~= "" and arg_599_1.actors_[var_602_3.prefab_name] ~= nil then
+						local var_602_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_599_1.actors_[var_602_3.prefab_name].transform, "story_v_side_new_1108106", "1108106144", "story_v_side_new_1108106.awb")
+
+						arg_599_1:RecordAudio("1108106144", var_602_9)
+						arg_599_1:RecordAudio("1108106144", var_602_9)
+					else
+						arg_599_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106144", "story_v_side_new_1108106.awb")
+					end
+
+					arg_599_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106144", "story_v_side_new_1108106.awb")
+				end
+
 				arg_599_1:RecordContent(arg_599_1.text_.text)
 			end
 
-			local var_602_8 = math.max(var_602_1, arg_599_1.talkMaxDuration)
+			local var_602_10 = math.max(var_602_1, arg_599_1.talkMaxDuration)
 
-			if var_602_0 <= arg_599_1.time_ and arg_599_1.time_ < var_602_0 + var_602_8 then
-				arg_599_1.typewritter.percent = (arg_599_1.time_ - var_602_0) / var_602_8
+			if var_602_0 <= arg_599_1.time_ and arg_599_1.time_ < var_602_0 + var_602_10 then
+				arg_599_1.typewritter.percent = (arg_599_1.time_ - var_602_0) / var_602_10
 
 				arg_599_1.typewritter:SetDirty()
 			end
 
-			if arg_599_1.time_ >= var_602_0 + var_602_8 and arg_599_1.time_ < var_602_0 + var_602_8 + arg_602_0 then
+			if arg_599_1.time_ >= var_602_0 + var_602_10 and arg_599_1.time_ < var_602_0 + var_602_10 + arg_602_0 then
 				arg_599_1.typewritter.percent = 1
 
 				arg_599_1.typewritter:SetDirty()
@@ -15669,7 +16909,7 @@
 		arg_603_1.frameCnt_ = 0
 		arg_603_1.state_ = "playing"
 		arg_603_1.curTalkId_ = 1108106145
-		arg_603_1.duration_ = 8.03
+		arg_603_1.duration_ = 9.2
 
 		SetActive(arg_603_1.tipsGo_, false)
 
@@ -15849,19 +17089,39 @@
 
 				arg_603_1.typewritter:SetDirty()
 				arg_603_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106145", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_606_36 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106145", "story_v_side_new_1108106.awb") / 1000
+
+					if var_606_36 + var_606_27 > arg_603_1.duration_ then
+						arg_603_1.duration_ = var_606_36 + var_606_27
+					end
+
+					if var_606_31.prefab_name ~= "" and arg_603_1.actors_[var_606_31.prefab_name] ~= nil then
+						local var_606_37 = LuaForUtil.PlayVoiceWithCriLipsync(arg_603_1.actors_[var_606_31.prefab_name].transform, "story_v_side_new_1108106", "1108106145", "story_v_side_new_1108106.awb")
+
+						arg_603_1:RecordAudio("1108106145", var_606_37)
+						arg_603_1:RecordAudio("1108106145", var_606_37)
+					else
+						arg_603_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106145", "story_v_side_new_1108106.awb")
+					end
+
+					arg_603_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106145", "story_v_side_new_1108106.awb")
+				end
+
 				arg_603_1:RecordContent(arg_603_1.text_.text)
 			end
 
-			local var_606_36 = var_606_27 + 0.3
-			local var_606_37 = math.max(var_606_28, arg_603_1.talkMaxDuration)
+			local var_606_38 = var_606_27 + 0.3
+			local var_606_39 = math.max(var_606_28, arg_603_1.talkMaxDuration)
 
-			if var_606_36 <= arg_603_1.time_ and arg_603_1.time_ < var_606_36 + var_606_37 then
-				arg_603_1.typewritter.percent = (arg_603_1.time_ - var_606_36) / var_606_37
+			if var_606_38 <= arg_603_1.time_ and arg_603_1.time_ < var_606_38 + var_606_39 then
+				arg_603_1.typewritter.percent = (arg_603_1.time_ - var_606_38) / var_606_39
 
 				arg_603_1.typewritter:SetDirty()
 			end
 
-			if arg_603_1.time_ >= var_606_36 + var_606_37 and arg_603_1.time_ < var_606_36 + var_606_37 + arg_606_0 then
+			if arg_603_1.time_ >= var_606_38 + var_606_39 and arg_603_1.time_ < var_606_38 + var_606_39 + arg_606_0 then
 				arg_603_1.typewritter.percent = 1
 
 				arg_603_1.typewritter:SetDirty()
@@ -16044,7 +17304,7 @@
 		arg_617_1.frameCnt_ = 0
 		arg_617_1.state_ = "playing"
 		arg_617_1.curTalkId_ = 1108106148
-		arg_617_1.duration_ = 5
+		arg_617_1.duration_ = 11.27
 
 		SetActive(arg_617_1.tipsGo_, false)
 
@@ -16108,18 +17368,38 @@
 
 				arg_617_1.typewritter:SetDirty()
 				arg_617_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106148", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_620_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106148", "story_v_side_new_1108106.awb") / 1000
+
+					if var_620_8 + var_620_0 > arg_617_1.duration_ then
+						arg_617_1.duration_ = var_620_8 + var_620_0
+					end
+
+					if var_620_3.prefab_name ~= "" and arg_617_1.actors_[var_620_3.prefab_name] ~= nil then
+						local var_620_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_617_1.actors_[var_620_3.prefab_name].transform, "story_v_side_new_1108106", "1108106148", "story_v_side_new_1108106.awb")
+
+						arg_617_1:RecordAudio("1108106148", var_620_9)
+						arg_617_1:RecordAudio("1108106148", var_620_9)
+					else
+						arg_617_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106148", "story_v_side_new_1108106.awb")
+					end
+
+					arg_617_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106148", "story_v_side_new_1108106.awb")
+				end
+
 				arg_617_1:RecordContent(arg_617_1.text_.text)
 			end
 
-			local var_620_8 = math.max(var_620_1, arg_617_1.talkMaxDuration)
+			local var_620_10 = math.max(var_620_1, arg_617_1.talkMaxDuration)
 
-			if var_620_0 <= arg_617_1.time_ and arg_617_1.time_ < var_620_0 + var_620_8 then
-				arg_617_1.typewritter.percent = (arg_617_1.time_ - var_620_0) / var_620_8
+			if var_620_0 <= arg_617_1.time_ and arg_617_1.time_ < var_620_0 + var_620_10 then
+				arg_617_1.typewritter.percent = (arg_617_1.time_ - var_620_0) / var_620_10
 
 				arg_617_1.typewritter:SetDirty()
 			end
 
-			if arg_617_1.time_ >= var_620_0 + var_620_8 and arg_617_1.time_ < var_620_0 + var_620_8 + arg_620_0 then
+			if arg_617_1.time_ >= var_620_0 + var_620_10 and arg_617_1.time_ < var_620_0 + var_620_10 + arg_620_0 then
 				arg_617_1.typewritter.percent = 1
 
 				arg_617_1.typewritter:SetDirty()
@@ -16172,7 +17452,7 @@
 		arg_625_1.frameCnt_ = 0
 		arg_625_1.state_ = "playing"
 		arg_625_1.curTalkId_ = 1108106150
-		arg_625_1.duration_ = 5
+		arg_625_1.duration_ = 2.07
 
 		SetActive(arg_625_1.tipsGo_, false)
 
@@ -16236,18 +17516,38 @@
 
 				arg_625_1.typewritter:SetDirty()
 				arg_625_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106150", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_628_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106150", "story_v_side_new_1108106.awb") / 1000
+
+					if var_628_8 + var_628_0 > arg_625_1.duration_ then
+						arg_625_1.duration_ = var_628_8 + var_628_0
+					end
+
+					if var_628_3.prefab_name ~= "" and arg_625_1.actors_[var_628_3.prefab_name] ~= nil then
+						local var_628_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_625_1.actors_[var_628_3.prefab_name].transform, "story_v_side_new_1108106", "1108106150", "story_v_side_new_1108106.awb")
+
+						arg_625_1:RecordAudio("1108106150", var_628_9)
+						arg_625_1:RecordAudio("1108106150", var_628_9)
+					else
+						arg_625_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106150", "story_v_side_new_1108106.awb")
+					end
+
+					arg_625_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106150", "story_v_side_new_1108106.awb")
+				end
+
 				arg_625_1:RecordContent(arg_625_1.text_.text)
 			end
 
-			local var_628_8 = math.max(var_628_1, arg_625_1.talkMaxDuration)
+			local var_628_10 = math.max(var_628_1, arg_625_1.talkMaxDuration)
 
-			if var_628_0 <= arg_625_1.time_ and arg_625_1.time_ < var_628_0 + var_628_8 then
-				arg_625_1.typewritter.percent = (arg_625_1.time_ - var_628_0) / var_628_8
+			if var_628_0 <= arg_625_1.time_ and arg_625_1.time_ < var_628_0 + var_628_10 then
+				arg_625_1.typewritter.percent = (arg_625_1.time_ - var_628_0) / var_628_10
 
 				arg_625_1.typewritter:SetDirty()
 			end
 
-			if arg_625_1.time_ >= var_628_0 + var_628_8 and arg_625_1.time_ < var_628_0 + var_628_8 + arg_628_0 then
+			if arg_625_1.time_ >= var_628_0 + var_628_10 and arg_625_1.time_ < var_628_0 + var_628_10 + arg_628_0 then
 				arg_625_1.typewritter.percent = 1
 
 				arg_625_1.typewritter:SetDirty()
@@ -16260,7 +17560,7 @@
 		arg_629_1.frameCnt_ = 0
 		arg_629_1.state_ = "playing"
 		arg_629_1.curTalkId_ = 1108106151
-		arg_629_1.duration_ = 5
+		arg_629_1.duration_ = 8.47
 
 		SetActive(arg_629_1.tipsGo_, false)
 
@@ -16324,18 +17624,38 @@
 
 				arg_629_1.typewritter:SetDirty()
 				arg_629_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106151", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_632_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106151", "story_v_side_new_1108106.awb") / 1000
+
+					if var_632_8 + var_632_0 > arg_629_1.duration_ then
+						arg_629_1.duration_ = var_632_8 + var_632_0
+					end
+
+					if var_632_3.prefab_name ~= "" and arg_629_1.actors_[var_632_3.prefab_name] ~= nil then
+						local var_632_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_629_1.actors_[var_632_3.prefab_name].transform, "story_v_side_new_1108106", "1108106151", "story_v_side_new_1108106.awb")
+
+						arg_629_1:RecordAudio("1108106151", var_632_9)
+						arg_629_1:RecordAudio("1108106151", var_632_9)
+					else
+						arg_629_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106151", "story_v_side_new_1108106.awb")
+					end
+
+					arg_629_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106151", "story_v_side_new_1108106.awb")
+				end
+
 				arg_629_1:RecordContent(arg_629_1.text_.text)
 			end
 
-			local var_632_8 = math.max(var_632_1, arg_629_1.talkMaxDuration)
+			local var_632_10 = math.max(var_632_1, arg_629_1.talkMaxDuration)
 
-			if var_632_0 <= arg_629_1.time_ and arg_629_1.time_ < var_632_0 + var_632_8 then
-				arg_629_1.typewritter.percent = (arg_629_1.time_ - var_632_0) / var_632_8
+			if var_632_0 <= arg_629_1.time_ and arg_629_1.time_ < var_632_0 + var_632_10 then
+				arg_629_1.typewritter.percent = (arg_629_1.time_ - var_632_0) / var_632_10
 
 				arg_629_1.typewritter:SetDirty()
 			end
 
-			if arg_629_1.time_ >= var_632_0 + var_632_8 and arg_629_1.time_ < var_632_0 + var_632_8 + arg_632_0 then
+			if arg_629_1.time_ >= var_632_0 + var_632_10 and arg_629_1.time_ < var_632_0 + var_632_10 + arg_632_0 then
 				arg_629_1.typewritter.percent = 1
 
 				arg_629_1.typewritter:SetDirty()
@@ -16436,7 +17756,7 @@
 		arg_637_1.frameCnt_ = 0
 		arg_637_1.state_ = "playing"
 		arg_637_1.curTalkId_ = 1108106153
-		arg_637_1.duration_ = 5
+		arg_637_1.duration_ = 6.4
 
 		SetActive(arg_637_1.tipsGo_, false)
 
@@ -16500,18 +17820,38 @@
 
 				arg_637_1.typewritter:SetDirty()
 				arg_637_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106153", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_640_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106153", "story_v_side_new_1108106.awb") / 1000
+
+					if var_640_8 + var_640_0 > arg_637_1.duration_ then
+						arg_637_1.duration_ = var_640_8 + var_640_0
+					end
+
+					if var_640_3.prefab_name ~= "" and arg_637_1.actors_[var_640_3.prefab_name] ~= nil then
+						local var_640_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_637_1.actors_[var_640_3.prefab_name].transform, "story_v_side_new_1108106", "1108106153", "story_v_side_new_1108106.awb")
+
+						arg_637_1:RecordAudio("1108106153", var_640_9)
+						arg_637_1:RecordAudio("1108106153", var_640_9)
+					else
+						arg_637_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106153", "story_v_side_new_1108106.awb")
+					end
+
+					arg_637_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106153", "story_v_side_new_1108106.awb")
+				end
+
 				arg_637_1:RecordContent(arg_637_1.text_.text)
 			end
 
-			local var_640_8 = math.max(var_640_1, arg_637_1.talkMaxDuration)
+			local var_640_10 = math.max(var_640_1, arg_637_1.talkMaxDuration)
 
-			if var_640_0 <= arg_637_1.time_ and arg_637_1.time_ < var_640_0 + var_640_8 then
-				arg_637_1.typewritter.percent = (arg_637_1.time_ - var_640_0) / var_640_8
+			if var_640_0 <= arg_637_1.time_ and arg_637_1.time_ < var_640_0 + var_640_10 then
+				arg_637_1.typewritter.percent = (arg_637_1.time_ - var_640_0) / var_640_10
 
 				arg_637_1.typewritter:SetDirty()
 			end
 
-			if arg_637_1.time_ >= var_640_0 + var_640_8 and arg_637_1.time_ < var_640_0 + var_640_8 + arg_640_0 then
+			if arg_637_1.time_ >= var_640_0 + var_640_10 and arg_637_1.time_ < var_640_0 + var_640_10 + arg_640_0 then
 				arg_637_1.typewritter.percent = 1
 
 				arg_637_1.typewritter:SetDirty()
@@ -16524,7 +17864,7 @@
 		arg_641_1.frameCnt_ = 0
 		arg_641_1.state_ = "playing"
 		arg_641_1.curTalkId_ = 1108106154
-		arg_641_1.duration_ = 5
+		arg_641_1.duration_ = 6.5
 
 		SetActive(arg_641_1.tipsGo_, false)
 
@@ -16588,18 +17928,38 @@
 
 				arg_641_1.typewritter:SetDirty()
 				arg_641_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106154", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_644_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106154", "story_v_side_new_1108106.awb") / 1000
+
+					if var_644_8 + var_644_0 > arg_641_1.duration_ then
+						arg_641_1.duration_ = var_644_8 + var_644_0
+					end
+
+					if var_644_3.prefab_name ~= "" and arg_641_1.actors_[var_644_3.prefab_name] ~= nil then
+						local var_644_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_641_1.actors_[var_644_3.prefab_name].transform, "story_v_side_new_1108106", "1108106154", "story_v_side_new_1108106.awb")
+
+						arg_641_1:RecordAudio("1108106154", var_644_9)
+						arg_641_1:RecordAudio("1108106154", var_644_9)
+					else
+						arg_641_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106154", "story_v_side_new_1108106.awb")
+					end
+
+					arg_641_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106154", "story_v_side_new_1108106.awb")
+				end
+
 				arg_641_1:RecordContent(arg_641_1.text_.text)
 			end
 
-			local var_644_8 = math.max(var_644_1, arg_641_1.talkMaxDuration)
+			local var_644_10 = math.max(var_644_1, arg_641_1.talkMaxDuration)
 
-			if var_644_0 <= arg_641_1.time_ and arg_641_1.time_ < var_644_0 + var_644_8 then
-				arg_641_1.typewritter.percent = (arg_641_1.time_ - var_644_0) / var_644_8
+			if var_644_0 <= arg_641_1.time_ and arg_641_1.time_ < var_644_0 + var_644_10 then
+				arg_641_1.typewritter.percent = (arg_641_1.time_ - var_644_0) / var_644_10
 
 				arg_641_1.typewritter:SetDirty()
 			end
 
-			if arg_641_1.time_ >= var_644_0 + var_644_8 and arg_641_1.time_ < var_644_0 + var_644_8 + arg_644_0 then
+			if arg_641_1.time_ >= var_644_0 + var_644_10 and arg_641_1.time_ < var_644_0 + var_644_10 + arg_644_0 then
 				arg_641_1.typewritter.percent = 1
 
 				arg_641_1.typewritter:SetDirty()
@@ -16700,7 +18060,7 @@
 		arg_649_1.frameCnt_ = 0
 		arg_649_1.state_ = "playing"
 		arg_649_1.curTalkId_ = 1108106156
-		arg_649_1.duration_ = 5
+		arg_649_1.duration_ = 7.3
 
 		SetActive(arg_649_1.tipsGo_, false)
 
@@ -16764,18 +18124,38 @@
 
 				arg_649_1.typewritter:SetDirty()
 				arg_649_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106156", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_652_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106156", "story_v_side_new_1108106.awb") / 1000
+
+					if var_652_8 + var_652_0 > arg_649_1.duration_ then
+						arg_649_1.duration_ = var_652_8 + var_652_0
+					end
+
+					if var_652_3.prefab_name ~= "" and arg_649_1.actors_[var_652_3.prefab_name] ~= nil then
+						local var_652_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_649_1.actors_[var_652_3.prefab_name].transform, "story_v_side_new_1108106", "1108106156", "story_v_side_new_1108106.awb")
+
+						arg_649_1:RecordAudio("1108106156", var_652_9)
+						arg_649_1:RecordAudio("1108106156", var_652_9)
+					else
+						arg_649_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106156", "story_v_side_new_1108106.awb")
+					end
+
+					arg_649_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106156", "story_v_side_new_1108106.awb")
+				end
+
 				arg_649_1:RecordContent(arg_649_1.text_.text)
 			end
 
-			local var_652_8 = math.max(var_652_1, arg_649_1.talkMaxDuration)
+			local var_652_10 = math.max(var_652_1, arg_649_1.talkMaxDuration)
 
-			if var_652_0 <= arg_649_1.time_ and arg_649_1.time_ < var_652_0 + var_652_8 then
-				arg_649_1.typewritter.percent = (arg_649_1.time_ - var_652_0) / var_652_8
+			if var_652_0 <= arg_649_1.time_ and arg_649_1.time_ < var_652_0 + var_652_10 then
+				arg_649_1.typewritter.percent = (arg_649_1.time_ - var_652_0) / var_652_10
 
 				arg_649_1.typewritter:SetDirty()
 			end
 
-			if arg_649_1.time_ >= var_652_0 + var_652_8 and arg_649_1.time_ < var_652_0 + var_652_8 + arg_652_0 then
+			if arg_649_1.time_ >= var_652_0 + var_652_10 and arg_649_1.time_ < var_652_0 + var_652_10 + arg_652_0 then
 				arg_649_1.typewritter.percent = 1
 
 				arg_649_1.typewritter:SetDirty()
@@ -16876,7 +18256,7 @@
 		arg_657_1.frameCnt_ = 0
 		arg_657_1.state_ = "playing"
 		arg_657_1.curTalkId_ = 1108106158
-		arg_657_1.duration_ = 5
+		arg_657_1.duration_ = 4
 
 		SetActive(arg_657_1.tipsGo_, false)
 
@@ -16940,18 +18320,38 @@
 
 				arg_657_1.typewritter:SetDirty()
 				arg_657_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106158", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_660_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106158", "story_v_side_new_1108106.awb") / 1000
+
+					if var_660_8 + var_660_0 > arg_657_1.duration_ then
+						arg_657_1.duration_ = var_660_8 + var_660_0
+					end
+
+					if var_660_3.prefab_name ~= "" and arg_657_1.actors_[var_660_3.prefab_name] ~= nil then
+						local var_660_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_657_1.actors_[var_660_3.prefab_name].transform, "story_v_side_new_1108106", "1108106158", "story_v_side_new_1108106.awb")
+
+						arg_657_1:RecordAudio("1108106158", var_660_9)
+						arg_657_1:RecordAudio("1108106158", var_660_9)
+					else
+						arg_657_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106158", "story_v_side_new_1108106.awb")
+					end
+
+					arg_657_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106158", "story_v_side_new_1108106.awb")
+				end
+
 				arg_657_1:RecordContent(arg_657_1.text_.text)
 			end
 
-			local var_660_8 = math.max(var_660_1, arg_657_1.talkMaxDuration)
+			local var_660_10 = math.max(var_660_1, arg_657_1.talkMaxDuration)
 
-			if var_660_0 <= arg_657_1.time_ and arg_657_1.time_ < var_660_0 + var_660_8 then
-				arg_657_1.typewritter.percent = (arg_657_1.time_ - var_660_0) / var_660_8
+			if var_660_0 <= arg_657_1.time_ and arg_657_1.time_ < var_660_0 + var_660_10 then
+				arg_657_1.typewritter.percent = (arg_657_1.time_ - var_660_0) / var_660_10
 
 				arg_657_1.typewritter:SetDirty()
 			end
 
-			if arg_657_1.time_ >= var_660_0 + var_660_8 and arg_657_1.time_ < var_660_0 + var_660_8 + arg_660_0 then
+			if arg_657_1.time_ >= var_660_0 + var_660_10 and arg_657_1.time_ < var_660_0 + var_660_10 + arg_660_0 then
 				arg_657_1.typewritter.percent = 1
 
 				arg_657_1.typewritter:SetDirty()
@@ -16964,7 +18364,7 @@
 		arg_661_1.frameCnt_ = 0
 		arg_661_1.state_ = "playing"
 		arg_661_1.curTalkId_ = 1108106159
-		arg_661_1.duration_ = 5
+		arg_661_1.duration_ = 5.73
 
 		SetActive(arg_661_1.tipsGo_, false)
 
@@ -17028,18 +18428,38 @@
 
 				arg_661_1.typewritter:SetDirty()
 				arg_661_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106159", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_664_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106159", "story_v_side_new_1108106.awb") / 1000
+
+					if var_664_8 + var_664_0 > arg_661_1.duration_ then
+						arg_661_1.duration_ = var_664_8 + var_664_0
+					end
+
+					if var_664_3.prefab_name ~= "" and arg_661_1.actors_[var_664_3.prefab_name] ~= nil then
+						local var_664_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_661_1.actors_[var_664_3.prefab_name].transform, "story_v_side_new_1108106", "1108106159", "story_v_side_new_1108106.awb")
+
+						arg_661_1:RecordAudio("1108106159", var_664_9)
+						arg_661_1:RecordAudio("1108106159", var_664_9)
+					else
+						arg_661_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106159", "story_v_side_new_1108106.awb")
+					end
+
+					arg_661_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106159", "story_v_side_new_1108106.awb")
+				end
+
 				arg_661_1:RecordContent(arg_661_1.text_.text)
 			end
 
-			local var_664_8 = math.max(var_664_1, arg_661_1.talkMaxDuration)
+			local var_664_10 = math.max(var_664_1, arg_661_1.talkMaxDuration)
 
-			if var_664_0 <= arg_661_1.time_ and arg_661_1.time_ < var_664_0 + var_664_8 then
-				arg_661_1.typewritter.percent = (arg_661_1.time_ - var_664_0) / var_664_8
+			if var_664_0 <= arg_661_1.time_ and arg_661_1.time_ < var_664_0 + var_664_10 then
+				arg_661_1.typewritter.percent = (arg_661_1.time_ - var_664_0) / var_664_10
 
 				arg_661_1.typewritter:SetDirty()
 			end
 
-			if arg_661_1.time_ >= var_664_0 + var_664_8 and arg_661_1.time_ < var_664_0 + var_664_8 + arg_664_0 then
+			if arg_661_1.time_ >= var_664_0 + var_664_10 and arg_661_1.time_ < var_664_0 + var_664_10 + arg_664_0 then
 				arg_661_1.typewritter.percent = 1
 
 				arg_661_1.typewritter:SetDirty()
@@ -17427,7 +18847,7 @@
 		arg_679_1.frameCnt_ = 0
 		arg_679_1.state_ = "playing"
 		arg_679_1.curTalkId_ = 1108106163
-		arg_679_1.duration_ = 5
+		arg_679_1.duration_ = 5.5
 
 		SetActive(arg_679_1.tipsGo_, false)
 
@@ -17491,18 +18911,38 @@
 
 				arg_679_1.typewritter:SetDirty()
 				arg_679_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106163", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_682_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106163", "story_v_side_new_1108106.awb") / 1000
+
+					if var_682_8 + var_682_0 > arg_679_1.duration_ then
+						arg_679_1.duration_ = var_682_8 + var_682_0
+					end
+
+					if var_682_3.prefab_name ~= "" and arg_679_1.actors_[var_682_3.prefab_name] ~= nil then
+						local var_682_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_679_1.actors_[var_682_3.prefab_name].transform, "story_v_side_new_1108106", "1108106163", "story_v_side_new_1108106.awb")
+
+						arg_679_1:RecordAudio("1108106163", var_682_9)
+						arg_679_1:RecordAudio("1108106163", var_682_9)
+					else
+						arg_679_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106163", "story_v_side_new_1108106.awb")
+					end
+
+					arg_679_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106163", "story_v_side_new_1108106.awb")
+				end
+
 				arg_679_1:RecordContent(arg_679_1.text_.text)
 			end
 
-			local var_682_8 = math.max(var_682_1, arg_679_1.talkMaxDuration)
+			local var_682_10 = math.max(var_682_1, arg_679_1.talkMaxDuration)
 
-			if var_682_0 <= arg_679_1.time_ and arg_679_1.time_ < var_682_0 + var_682_8 then
-				arg_679_1.typewritter.percent = (arg_679_1.time_ - var_682_0) / var_682_8
+			if var_682_0 <= arg_679_1.time_ and arg_679_1.time_ < var_682_0 + var_682_10 then
+				arg_679_1.typewritter.percent = (arg_679_1.time_ - var_682_0) / var_682_10
 
 				arg_679_1.typewritter:SetDirty()
 			end
 
-			if arg_679_1.time_ >= var_682_0 + var_682_8 and arg_679_1.time_ < var_682_0 + var_682_8 + arg_682_0 then
+			if arg_679_1.time_ >= var_682_0 + var_682_10 and arg_679_1.time_ < var_682_0 + var_682_10 + arg_682_0 then
 				arg_679_1.typewritter.percent = 1
 
 				arg_679_1.typewritter:SetDirty()
@@ -17515,7 +18955,7 @@
 		arg_683_1.frameCnt_ = 0
 		arg_683_1.state_ = "playing"
 		arg_683_1.curTalkId_ = 1108106164
-		arg_683_1.duration_ = 5
+		arg_683_1.duration_ = 5.93
 
 		SetActive(arg_683_1.tipsGo_, false)
 
@@ -17579,18 +19019,38 @@
 
 				arg_683_1.typewritter:SetDirty()
 				arg_683_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106164", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_686_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106164", "story_v_side_new_1108106.awb") / 1000
+
+					if var_686_8 + var_686_0 > arg_683_1.duration_ then
+						arg_683_1.duration_ = var_686_8 + var_686_0
+					end
+
+					if var_686_3.prefab_name ~= "" and arg_683_1.actors_[var_686_3.prefab_name] ~= nil then
+						local var_686_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_683_1.actors_[var_686_3.prefab_name].transform, "story_v_side_new_1108106", "1108106164", "story_v_side_new_1108106.awb")
+
+						arg_683_1:RecordAudio("1108106164", var_686_9)
+						arg_683_1:RecordAudio("1108106164", var_686_9)
+					else
+						arg_683_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106164", "story_v_side_new_1108106.awb")
+					end
+
+					arg_683_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106164", "story_v_side_new_1108106.awb")
+				end
+
 				arg_683_1:RecordContent(arg_683_1.text_.text)
 			end
 
-			local var_686_8 = math.max(var_686_1, arg_683_1.talkMaxDuration)
+			local var_686_10 = math.max(var_686_1, arg_683_1.talkMaxDuration)
 
-			if var_686_0 <= arg_683_1.time_ and arg_683_1.time_ < var_686_0 + var_686_8 then
-				arg_683_1.typewritter.percent = (arg_683_1.time_ - var_686_0) / var_686_8
+			if var_686_0 <= arg_683_1.time_ and arg_683_1.time_ < var_686_0 + var_686_10 then
+				arg_683_1.typewritter.percent = (arg_683_1.time_ - var_686_0) / var_686_10
 
 				arg_683_1.typewritter:SetDirty()
 			end
 
-			if arg_683_1.time_ >= var_686_0 + var_686_8 and arg_683_1.time_ < var_686_0 + var_686_8 + arg_686_0 then
+			if arg_683_1.time_ >= var_686_0 + var_686_10 and arg_683_1.time_ < var_686_0 + var_686_10 + arg_686_0 then
 				arg_683_1.typewritter.percent = 1
 
 				arg_683_1.typewritter:SetDirty()
@@ -17779,7 +19239,7 @@
 		arg_695_1.frameCnt_ = 0
 		arg_695_1.state_ = "playing"
 		arg_695_1.curTalkId_ = 1108106167
-		arg_695_1.duration_ = 5
+		arg_695_1.duration_ = 6
 
 		SetActive(arg_695_1.tipsGo_, false)
 
@@ -17843,18 +19303,38 @@
 
 				arg_695_1.typewritter:SetDirty()
 				arg_695_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106167", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_698_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106167", "story_v_side_new_1108106.awb") / 1000
+
+					if var_698_8 + var_698_0 > arg_695_1.duration_ then
+						arg_695_1.duration_ = var_698_8 + var_698_0
+					end
+
+					if var_698_3.prefab_name ~= "" and arg_695_1.actors_[var_698_3.prefab_name] ~= nil then
+						local var_698_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_695_1.actors_[var_698_3.prefab_name].transform, "story_v_side_new_1108106", "1108106167", "story_v_side_new_1108106.awb")
+
+						arg_695_1:RecordAudio("1108106167", var_698_9)
+						arg_695_1:RecordAudio("1108106167", var_698_9)
+					else
+						arg_695_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106167", "story_v_side_new_1108106.awb")
+					end
+
+					arg_695_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106167", "story_v_side_new_1108106.awb")
+				end
+
 				arg_695_1:RecordContent(arg_695_1.text_.text)
 			end
 
-			local var_698_8 = math.max(var_698_1, arg_695_1.talkMaxDuration)
+			local var_698_10 = math.max(var_698_1, arg_695_1.talkMaxDuration)
 
-			if var_698_0 <= arg_695_1.time_ and arg_695_1.time_ < var_698_0 + var_698_8 then
-				arg_695_1.typewritter.percent = (arg_695_1.time_ - var_698_0) / var_698_8
+			if var_698_0 <= arg_695_1.time_ and arg_695_1.time_ < var_698_0 + var_698_10 then
+				arg_695_1.typewritter.percent = (arg_695_1.time_ - var_698_0) / var_698_10
 
 				arg_695_1.typewritter:SetDirty()
 			end
 
-			if arg_695_1.time_ >= var_698_0 + var_698_8 and arg_695_1.time_ < var_698_0 + var_698_8 + arg_698_0 then
+			if arg_695_1.time_ >= var_698_0 + var_698_10 and arg_695_1.time_ < var_698_0 + var_698_10 + arg_698_0 then
 				arg_695_1.typewritter.percent = 1
 
 				arg_695_1.typewritter:SetDirty()
@@ -18166,7 +19646,7 @@
 		arg_709_1.frameCnt_ = 0
 		arg_709_1.state_ = "playing"
 		arg_709_1.curTalkId_ = 1108106170
-		arg_709_1.duration_ = 5
+		arg_709_1.duration_ = 3.03
 
 		SetActive(arg_709_1.tipsGo_, false)
 
@@ -18230,18 +19710,38 @@
 
 				arg_709_1.typewritter:SetDirty()
 				arg_709_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106170", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_712_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106170", "story_v_side_new_1108106.awb") / 1000
+
+					if var_712_8 + var_712_0 > arg_709_1.duration_ then
+						arg_709_1.duration_ = var_712_8 + var_712_0
+					end
+
+					if var_712_3.prefab_name ~= "" and arg_709_1.actors_[var_712_3.prefab_name] ~= nil then
+						local var_712_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_709_1.actors_[var_712_3.prefab_name].transform, "story_v_side_new_1108106", "1108106170", "story_v_side_new_1108106.awb")
+
+						arg_709_1:RecordAudio("1108106170", var_712_9)
+						arg_709_1:RecordAudio("1108106170", var_712_9)
+					else
+						arg_709_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106170", "story_v_side_new_1108106.awb")
+					end
+
+					arg_709_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106170", "story_v_side_new_1108106.awb")
+				end
+
 				arg_709_1:RecordContent(arg_709_1.text_.text)
 			end
 
-			local var_712_8 = math.max(var_712_1, arg_709_1.talkMaxDuration)
+			local var_712_10 = math.max(var_712_1, arg_709_1.talkMaxDuration)
 
-			if var_712_0 <= arg_709_1.time_ and arg_709_1.time_ < var_712_0 + var_712_8 then
-				arg_709_1.typewritter.percent = (arg_709_1.time_ - var_712_0) / var_712_8
+			if var_712_0 <= arg_709_1.time_ and arg_709_1.time_ < var_712_0 + var_712_10 then
+				arg_709_1.typewritter.percent = (arg_709_1.time_ - var_712_0) / var_712_10
 
 				arg_709_1.typewritter:SetDirty()
 			end
 
-			if arg_709_1.time_ >= var_712_0 + var_712_8 and arg_709_1.time_ < var_712_0 + var_712_8 + arg_712_0 then
+			if arg_709_1.time_ >= var_712_0 + var_712_10 and arg_709_1.time_ < var_712_0 + var_712_10 + arg_712_0 then
 				arg_709_1.typewritter.percent = 1
 
 				arg_709_1.typewritter:SetDirty()
@@ -18254,7 +19754,7 @@
 		arg_713_1.frameCnt_ = 0
 		arg_713_1.state_ = "playing"
 		arg_713_1.curTalkId_ = 1108106171
-		arg_713_1.duration_ = 5
+		arg_713_1.duration_ = 6.5
 
 		SetActive(arg_713_1.tipsGo_, false)
 
@@ -18318,18 +19818,38 @@
 
 				arg_713_1.typewritter:SetDirty()
 				arg_713_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106171", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_716_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106171", "story_v_side_new_1108106.awb") / 1000
+
+					if var_716_8 + var_716_0 > arg_713_1.duration_ then
+						arg_713_1.duration_ = var_716_8 + var_716_0
+					end
+
+					if var_716_3.prefab_name ~= "" and arg_713_1.actors_[var_716_3.prefab_name] ~= nil then
+						local var_716_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_713_1.actors_[var_716_3.prefab_name].transform, "story_v_side_new_1108106", "1108106171", "story_v_side_new_1108106.awb")
+
+						arg_713_1:RecordAudio("1108106171", var_716_9)
+						arg_713_1:RecordAudio("1108106171", var_716_9)
+					else
+						arg_713_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106171", "story_v_side_new_1108106.awb")
+					end
+
+					arg_713_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106171", "story_v_side_new_1108106.awb")
+				end
+
 				arg_713_1:RecordContent(arg_713_1.text_.text)
 			end
 
-			local var_716_8 = math.max(var_716_1, arg_713_1.talkMaxDuration)
+			local var_716_10 = math.max(var_716_1, arg_713_1.talkMaxDuration)
 
-			if var_716_0 <= arg_713_1.time_ and arg_713_1.time_ < var_716_0 + var_716_8 then
-				arg_713_1.typewritter.percent = (arg_713_1.time_ - var_716_0) / var_716_8
+			if var_716_0 <= arg_713_1.time_ and arg_713_1.time_ < var_716_0 + var_716_10 then
+				arg_713_1.typewritter.percent = (arg_713_1.time_ - var_716_0) / var_716_10
 
 				arg_713_1.typewritter:SetDirty()
 			end
 
-			if arg_713_1.time_ >= var_716_0 + var_716_8 and arg_713_1.time_ < var_716_0 + var_716_8 + arg_716_0 then
+			if arg_713_1.time_ >= var_716_0 + var_716_10 and arg_713_1.time_ < var_716_0 + var_716_10 + arg_716_0 then
 				arg_713_1.typewritter.percent = 1
 
 				arg_713_1.typewritter:SetDirty()
@@ -18342,7 +19862,7 @@
 		arg_717_1.frameCnt_ = 0
 		arg_717_1.state_ = "playing"
 		arg_717_1.curTalkId_ = 1108106172
-		arg_717_1.duration_ = 5
+		arg_717_1.duration_ = 5.37
 
 		SetActive(arg_717_1.tipsGo_, false)
 
@@ -18406,18 +19926,38 @@
 
 				arg_717_1.typewritter:SetDirty()
 				arg_717_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106172", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_720_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106172", "story_v_side_new_1108106.awb") / 1000
+
+					if var_720_8 + var_720_0 > arg_717_1.duration_ then
+						arg_717_1.duration_ = var_720_8 + var_720_0
+					end
+
+					if var_720_3.prefab_name ~= "" and arg_717_1.actors_[var_720_3.prefab_name] ~= nil then
+						local var_720_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_717_1.actors_[var_720_3.prefab_name].transform, "story_v_side_new_1108106", "1108106172", "story_v_side_new_1108106.awb")
+
+						arg_717_1:RecordAudio("1108106172", var_720_9)
+						arg_717_1:RecordAudio("1108106172", var_720_9)
+					else
+						arg_717_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106172", "story_v_side_new_1108106.awb")
+					end
+
+					arg_717_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106172", "story_v_side_new_1108106.awb")
+				end
+
 				arg_717_1:RecordContent(arg_717_1.text_.text)
 			end
 
-			local var_720_8 = math.max(var_720_1, arg_717_1.talkMaxDuration)
+			local var_720_10 = math.max(var_720_1, arg_717_1.talkMaxDuration)
 
-			if var_720_0 <= arg_717_1.time_ and arg_717_1.time_ < var_720_0 + var_720_8 then
-				arg_717_1.typewritter.percent = (arg_717_1.time_ - var_720_0) / var_720_8
+			if var_720_0 <= arg_717_1.time_ and arg_717_1.time_ < var_720_0 + var_720_10 then
+				arg_717_1.typewritter.percent = (arg_717_1.time_ - var_720_0) / var_720_10
 
 				arg_717_1.typewritter:SetDirty()
 			end
 
-			if arg_717_1.time_ >= var_720_0 + var_720_8 and arg_717_1.time_ < var_720_0 + var_720_8 + arg_720_0 then
+			if arg_717_1.time_ >= var_720_0 + var_720_10 and arg_717_1.time_ < var_720_0 + var_720_10 + arg_720_0 then
 				arg_717_1.typewritter.percent = 1
 
 				arg_717_1.typewritter:SetDirty()
@@ -18688,7 +20228,7 @@
 		arg_733_1.frameCnt_ = 0
 		arg_733_1.state_ = "playing"
 		arg_733_1.curTalkId_ = 1108106176
-		arg_733_1.duration_ = 5
+		arg_733_1.duration_ = 14.67
 
 		SetActive(arg_733_1.tipsGo_, false)
 
@@ -18752,18 +20292,38 @@
 
 				arg_733_1.typewritter:SetDirty()
 				arg_733_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106176", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_736_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106176", "story_v_side_new_1108106.awb") / 1000
+
+					if var_736_8 + var_736_0 > arg_733_1.duration_ then
+						arg_733_1.duration_ = var_736_8 + var_736_0
+					end
+
+					if var_736_3.prefab_name ~= "" and arg_733_1.actors_[var_736_3.prefab_name] ~= nil then
+						local var_736_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_733_1.actors_[var_736_3.prefab_name].transform, "story_v_side_new_1108106", "1108106176", "story_v_side_new_1108106.awb")
+
+						arg_733_1:RecordAudio("1108106176", var_736_9)
+						arg_733_1:RecordAudio("1108106176", var_736_9)
+					else
+						arg_733_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106176", "story_v_side_new_1108106.awb")
+					end
+
+					arg_733_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106176", "story_v_side_new_1108106.awb")
+				end
+
 				arg_733_1:RecordContent(arg_733_1.text_.text)
 			end
 
-			local var_736_8 = math.max(var_736_1, arg_733_1.talkMaxDuration)
+			local var_736_10 = math.max(var_736_1, arg_733_1.talkMaxDuration)
 
-			if var_736_0 <= arg_733_1.time_ and arg_733_1.time_ < var_736_0 + var_736_8 then
-				arg_733_1.typewritter.percent = (arg_733_1.time_ - var_736_0) / var_736_8
+			if var_736_0 <= arg_733_1.time_ and arg_733_1.time_ < var_736_0 + var_736_10 then
+				arg_733_1.typewritter.percent = (arg_733_1.time_ - var_736_0) / var_736_10
 
 				arg_733_1.typewritter:SetDirty()
 			end
 
-			if arg_733_1.time_ >= var_736_0 + var_736_8 and arg_733_1.time_ < var_736_0 + var_736_8 + arg_736_0 then
+			if arg_733_1.time_ >= var_736_0 + var_736_10 and arg_733_1.time_ < var_736_0 + var_736_10 + arg_736_0 then
 				arg_733_1.typewritter.percent = 1
 
 				arg_733_1.typewritter:SetDirty()
@@ -18776,7 +20336,7 @@
 		arg_737_1.frameCnt_ = 0
 		arg_737_1.state_ = "playing"
 		arg_737_1.curTalkId_ = 1108106177
-		arg_737_1.duration_ = 5
+		arg_737_1.duration_ = 3.9
 
 		SetActive(arg_737_1.tipsGo_, false)
 
@@ -18840,18 +20400,38 @@
 
 				arg_737_1.typewritter:SetDirty()
 				arg_737_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106177", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_740_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106177", "story_v_side_new_1108106.awb") / 1000
+
+					if var_740_8 + var_740_0 > arg_737_1.duration_ then
+						arg_737_1.duration_ = var_740_8 + var_740_0
+					end
+
+					if var_740_3.prefab_name ~= "" and arg_737_1.actors_[var_740_3.prefab_name] ~= nil then
+						local var_740_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_737_1.actors_[var_740_3.prefab_name].transform, "story_v_side_new_1108106", "1108106177", "story_v_side_new_1108106.awb")
+
+						arg_737_1:RecordAudio("1108106177", var_740_9)
+						arg_737_1:RecordAudio("1108106177", var_740_9)
+					else
+						arg_737_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106177", "story_v_side_new_1108106.awb")
+					end
+
+					arg_737_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106177", "story_v_side_new_1108106.awb")
+				end
+
 				arg_737_1:RecordContent(arg_737_1.text_.text)
 			end
 
-			local var_740_8 = math.max(var_740_1, arg_737_1.talkMaxDuration)
+			local var_740_10 = math.max(var_740_1, arg_737_1.talkMaxDuration)
 
-			if var_740_0 <= arg_737_1.time_ and arg_737_1.time_ < var_740_0 + var_740_8 then
-				arg_737_1.typewritter.percent = (arg_737_1.time_ - var_740_0) / var_740_8
+			if var_740_0 <= arg_737_1.time_ and arg_737_1.time_ < var_740_0 + var_740_10 then
+				arg_737_1.typewritter.percent = (arg_737_1.time_ - var_740_0) / var_740_10
 
 				arg_737_1.typewritter:SetDirty()
 			end
 
-			if arg_737_1.time_ >= var_740_0 + var_740_8 and arg_737_1.time_ < var_740_0 + var_740_8 + arg_740_0 then
+			if arg_737_1.time_ >= var_740_0 + var_740_10 and arg_737_1.time_ < var_740_0 + var_740_10 + arg_740_0 then
 				arg_737_1.typewritter.percent = 1
 
 				arg_737_1.typewritter:SetDirty()
@@ -18952,7 +20532,7 @@
 		arg_745_1.frameCnt_ = 0
 		arg_745_1.state_ = "playing"
 		arg_745_1.curTalkId_ = 1108106179
-		arg_745_1.duration_ = 5
+		arg_745_1.duration_ = 4.83
 
 		SetActive(arg_745_1.tipsGo_, false)
 
@@ -19016,18 +20596,38 @@
 
 				arg_745_1.typewritter:SetDirty()
 				arg_745_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106179", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_748_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106179", "story_v_side_new_1108106.awb") / 1000
+
+					if var_748_8 + var_748_0 > arg_745_1.duration_ then
+						arg_745_1.duration_ = var_748_8 + var_748_0
+					end
+
+					if var_748_3.prefab_name ~= "" and arg_745_1.actors_[var_748_3.prefab_name] ~= nil then
+						local var_748_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_745_1.actors_[var_748_3.prefab_name].transform, "story_v_side_new_1108106", "1108106179", "story_v_side_new_1108106.awb")
+
+						arg_745_1:RecordAudio("1108106179", var_748_9)
+						arg_745_1:RecordAudio("1108106179", var_748_9)
+					else
+						arg_745_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106179", "story_v_side_new_1108106.awb")
+					end
+
+					arg_745_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106179", "story_v_side_new_1108106.awb")
+				end
+
 				arg_745_1:RecordContent(arg_745_1.text_.text)
 			end
 
-			local var_748_8 = math.max(var_748_1, arg_745_1.talkMaxDuration)
+			local var_748_10 = math.max(var_748_1, arg_745_1.talkMaxDuration)
 
-			if var_748_0 <= arg_745_1.time_ and arg_745_1.time_ < var_748_0 + var_748_8 then
-				arg_745_1.typewritter.percent = (arg_745_1.time_ - var_748_0) / var_748_8
+			if var_748_0 <= arg_745_1.time_ and arg_745_1.time_ < var_748_0 + var_748_10 then
+				arg_745_1.typewritter.percent = (arg_745_1.time_ - var_748_0) / var_748_10
 
 				arg_745_1.typewritter:SetDirty()
 			end
 
-			if arg_745_1.time_ >= var_748_0 + var_748_8 and arg_745_1.time_ < var_748_0 + var_748_8 + arg_748_0 then
+			if arg_745_1.time_ >= var_748_0 + var_748_10 and arg_745_1.time_ < var_748_0 + var_748_10 + arg_748_0 then
 				arg_745_1.typewritter.percent = 1
 
 				arg_745_1.typewritter:SetDirty()
@@ -19040,7 +20640,7 @@
 		arg_749_1.frameCnt_ = 0
 		arg_749_1.state_ = "playing"
 		arg_749_1.curTalkId_ = 1108106180
-		arg_749_1.duration_ = 6.2
+		arg_749_1.duration_ = 8.27
 
 		SetActive(arg_749_1.tipsGo_, false)
 
@@ -19303,19 +20903,39 @@
 
 				arg_749_1.typewritter:SetDirty()
 				arg_749_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106180", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_752_55 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106180", "story_v_side_new_1108106.awb") / 1000
+
+					if var_752_55 + var_752_46 > arg_749_1.duration_ then
+						arg_749_1.duration_ = var_752_55 + var_752_46
+					end
+
+					if var_752_50.prefab_name ~= "" and arg_749_1.actors_[var_752_50.prefab_name] ~= nil then
+						local var_752_56 = LuaForUtil.PlayVoiceWithCriLipsync(arg_749_1.actors_[var_752_50.prefab_name].transform, "story_v_side_new_1108106", "1108106180", "story_v_side_new_1108106.awb")
+
+						arg_749_1:RecordAudio("1108106180", var_752_56)
+						arg_749_1:RecordAudio("1108106180", var_752_56)
+					else
+						arg_749_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106180", "story_v_side_new_1108106.awb")
+					end
+
+					arg_749_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106180", "story_v_side_new_1108106.awb")
+				end
+
 				arg_749_1:RecordContent(arg_749_1.text_.text)
 			end
 
-			local var_752_55 = var_752_46 + 0.3
-			local var_752_56 = math.max(var_752_47, arg_749_1.talkMaxDuration)
+			local var_752_57 = var_752_46 + 0.3
+			local var_752_58 = math.max(var_752_47, arg_749_1.talkMaxDuration)
 
-			if var_752_55 <= arg_749_1.time_ and arg_749_1.time_ < var_752_55 + var_752_56 then
-				arg_749_1.typewritter.percent = (arg_749_1.time_ - var_752_55) / var_752_56
+			if var_752_57 <= arg_749_1.time_ and arg_749_1.time_ < var_752_57 + var_752_58 then
+				arg_749_1.typewritter.percent = (arg_749_1.time_ - var_752_57) / var_752_58
 
 				arg_749_1.typewritter:SetDirty()
 			end
 
-			if arg_749_1.time_ >= var_752_55 + var_752_56 and arg_749_1.time_ < var_752_55 + var_752_56 + arg_752_0 then
+			if arg_749_1.time_ >= var_752_57 + var_752_58 and arg_749_1.time_ < var_752_57 + var_752_58 + arg_752_0 then
 				arg_749_1.typewritter.percent = 1
 
 				arg_749_1.typewritter:SetDirty()
@@ -19328,7 +20948,7 @@
 		arg_755_1.frameCnt_ = 0
 		arg_755_1.state_ = "playing"
 		arg_755_1.curTalkId_ = 1108106181
-		arg_755_1.duration_ = 5
+		arg_755_1.duration_ = 6
 
 		SetActive(arg_755_1.tipsGo_, false)
 
@@ -19404,18 +21024,38 @@
 
 				arg_755_1.typewritter:SetDirty()
 				arg_755_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106181", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_758_10 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106181", "story_v_side_new_1108106.awb") / 1000
+
+					if var_758_10 + var_758_2 > arg_755_1.duration_ then
+						arg_755_1.duration_ = var_758_10 + var_758_2
+					end
+
+					if var_758_5.prefab_name ~= "" and arg_755_1.actors_[var_758_5.prefab_name] ~= nil then
+						local var_758_11 = LuaForUtil.PlayVoiceWithCriLipsync(arg_755_1.actors_[var_758_5.prefab_name].transform, "story_v_side_new_1108106", "1108106181", "story_v_side_new_1108106.awb")
+
+						arg_755_1:RecordAudio("1108106181", var_758_11)
+						arg_755_1:RecordAudio("1108106181", var_758_11)
+					else
+						arg_755_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106181", "story_v_side_new_1108106.awb")
+					end
+
+					arg_755_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106181", "story_v_side_new_1108106.awb")
+				end
+
 				arg_755_1:RecordContent(arg_755_1.text_.text)
 			end
 
-			local var_758_10 = math.max(var_758_3, arg_755_1.talkMaxDuration)
+			local var_758_12 = math.max(var_758_3, arg_755_1.talkMaxDuration)
 
-			if var_758_2 <= arg_755_1.time_ and arg_755_1.time_ < var_758_2 + var_758_10 then
-				arg_755_1.typewritter.percent = (arg_755_1.time_ - var_758_2) / var_758_10
+			if var_758_2 <= arg_755_1.time_ and arg_755_1.time_ < var_758_2 + var_758_12 then
+				arg_755_1.typewritter.percent = (arg_755_1.time_ - var_758_2) / var_758_12
 
 				arg_755_1.typewritter:SetDirty()
 			end
 
-			if arg_755_1.time_ >= var_758_2 + var_758_10 and arg_755_1.time_ < var_758_2 + var_758_10 + arg_758_0 then
+			if arg_755_1.time_ >= var_758_2 + var_758_12 and arg_755_1.time_ < var_758_2 + var_758_12 + arg_758_0 then
 				arg_755_1.typewritter.percent = 1
 
 				arg_755_1.typewritter:SetDirty()
@@ -19550,7 +21190,7 @@
 		arg_763_1.frameCnt_ = 0
 		arg_763_1.state_ = "playing"
 		arg_763_1.curTalkId_ = 1108106183
-		arg_763_1.duration_ = 5
+		arg_763_1.duration_ = 5.37
 
 		SetActive(arg_763_1.tipsGo_, false)
 
@@ -19621,18 +21261,38 @@
 
 				arg_763_1.typewritter:SetDirty()
 				arg_763_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106183", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_766_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106183", "story_v_side_new_1108106.awb") / 1000
+
+					if var_766_8 + var_766_0 > arg_763_1.duration_ then
+						arg_763_1.duration_ = var_766_8 + var_766_0
+					end
+
+					if var_766_3.prefab_name ~= "" and arg_763_1.actors_[var_766_3.prefab_name] ~= nil then
+						local var_766_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_763_1.actors_[var_766_3.prefab_name].transform, "story_v_side_new_1108106", "1108106183", "story_v_side_new_1108106.awb")
+
+						arg_763_1:RecordAudio("1108106183", var_766_9)
+						arg_763_1:RecordAudio("1108106183", var_766_9)
+					else
+						arg_763_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106183", "story_v_side_new_1108106.awb")
+					end
+
+					arg_763_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106183", "story_v_side_new_1108106.awb")
+				end
+
 				arg_763_1:RecordContent(arg_763_1.text_.text)
 			end
 
-			local var_766_8 = math.max(var_766_1, arg_763_1.talkMaxDuration)
+			local var_766_10 = math.max(var_766_1, arg_763_1.talkMaxDuration)
 
-			if var_766_0 <= arg_763_1.time_ and arg_763_1.time_ < var_766_0 + var_766_8 then
-				arg_763_1.typewritter.percent = (arg_763_1.time_ - var_766_0) / var_766_8
+			if var_766_0 <= arg_763_1.time_ and arg_763_1.time_ < var_766_0 + var_766_10 then
+				arg_763_1.typewritter.percent = (arg_763_1.time_ - var_766_0) / var_766_10
 
 				arg_763_1.typewritter:SetDirty()
 			end
 
-			if arg_763_1.time_ >= var_766_0 + var_766_8 and arg_763_1.time_ < var_766_0 + var_766_8 + arg_766_0 then
+			if arg_763_1.time_ >= var_766_0 + var_766_10 and arg_763_1.time_ < var_766_0 + var_766_10 + arg_766_0 then
 				arg_763_1.typewritter.percent = 1
 
 				arg_763_1.typewritter:SetDirty()
@@ -20505,7 +22165,7 @@
 		arg_803_1.frameCnt_ = 0
 		arg_803_1.state_ = "playing"
 		arg_803_1.curTalkId_ = 1108106192
-		arg_803_1.duration_ = 7.67
+		arg_803_1.duration_ = 9.03
 
 		SetActive(arg_803_1.tipsGo_, false)
 
@@ -20833,19 +22493,39 @@
 
 				arg_803_1.typewritter:SetDirty()
 				arg_803_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106192", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_806_61 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106192", "story_v_side_new_1108106.awb") / 1000
+
+					if var_806_61 + var_806_52 > arg_803_1.duration_ then
+						arg_803_1.duration_ = var_806_61 + var_806_52
+					end
+
+					if var_806_56.prefab_name ~= "" and arg_803_1.actors_[var_806_56.prefab_name] ~= nil then
+						local var_806_62 = LuaForUtil.PlayVoiceWithCriLipsync(arg_803_1.actors_[var_806_56.prefab_name].transform, "story_v_side_new_1108106", "1108106192", "story_v_side_new_1108106.awb")
+
+						arg_803_1:RecordAudio("1108106192", var_806_62)
+						arg_803_1:RecordAudio("1108106192", var_806_62)
+					else
+						arg_803_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106192", "story_v_side_new_1108106.awb")
+					end
+
+					arg_803_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106192", "story_v_side_new_1108106.awb")
+				end
+
 				arg_803_1:RecordContent(arg_803_1.text_.text)
 			end
 
-			local var_806_61 = var_806_52 + 0.3
-			local var_806_62 = math.max(var_806_53, arg_803_1.talkMaxDuration)
+			local var_806_63 = var_806_52 + 0.3
+			local var_806_64 = math.max(var_806_53, arg_803_1.talkMaxDuration)
 
-			if var_806_61 <= arg_803_1.time_ and arg_803_1.time_ < var_806_61 + var_806_62 then
-				arg_803_1.typewritter.percent = (arg_803_1.time_ - var_806_61) / var_806_62
+			if var_806_63 <= arg_803_1.time_ and arg_803_1.time_ < var_806_63 + var_806_64 then
+				arg_803_1.typewritter.percent = (arg_803_1.time_ - var_806_63) / var_806_64
 
 				arg_803_1.typewritter:SetDirty()
 			end
 
-			if arg_803_1.time_ >= var_806_61 + var_806_62 and arg_803_1.time_ < var_806_61 + var_806_62 + arg_806_0 then
+			if arg_803_1.time_ >= var_806_63 + var_806_64 and arg_803_1.time_ < var_806_63 + var_806_64 + arg_806_0 then
 				arg_803_1.typewritter.percent = 1
 
 				arg_803_1.typewritter:SetDirty()
@@ -20980,7 +22660,7 @@
 		arg_814_1.frameCnt_ = 0
 		arg_814_1.state_ = "playing"
 		arg_814_1.curTalkId_ = 1108106194
-		arg_814_1.duration_ = 5
+		arg_814_1.duration_ = 4.03
 
 		SetActive(arg_814_1.tipsGo_, false)
 
@@ -21117,18 +22797,38 @@
 
 				arg_814_1.typewritter:SetDirty()
 				arg_814_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106194", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_817_23 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106194", "story_v_side_new_1108106.awb") / 1000
+
+					if var_817_23 + var_817_15 > arg_814_1.duration_ then
+						arg_814_1.duration_ = var_817_23 + var_817_15
+					end
+
+					if var_817_18.prefab_name ~= "" and arg_814_1.actors_[var_817_18.prefab_name] ~= nil then
+						local var_817_24 = LuaForUtil.PlayVoiceWithCriLipsync(arg_814_1.actors_[var_817_18.prefab_name].transform, "story_v_side_new_1108106", "1108106194", "story_v_side_new_1108106.awb")
+
+						arg_814_1:RecordAudio("1108106194", var_817_24)
+						arg_814_1:RecordAudio("1108106194", var_817_24)
+					else
+						arg_814_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106194", "story_v_side_new_1108106.awb")
+					end
+
+					arg_814_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106194", "story_v_side_new_1108106.awb")
+				end
+
 				arg_814_1:RecordContent(arg_814_1.text_.text)
 			end
 
-			local var_817_23 = math.max(var_817_16, arg_814_1.talkMaxDuration)
+			local var_817_25 = math.max(var_817_16, arg_814_1.talkMaxDuration)
 
-			if var_817_15 <= arg_814_1.time_ and arg_814_1.time_ < var_817_15 + var_817_23 then
-				arg_814_1.typewritter.percent = (arg_814_1.time_ - var_817_15) / var_817_23
+			if var_817_15 <= arg_814_1.time_ and arg_814_1.time_ < var_817_15 + var_817_25 then
+				arg_814_1.typewritter.percent = (arg_814_1.time_ - var_817_15) / var_817_25
 
 				arg_814_1.typewritter:SetDirty()
 			end
 
-			if arg_814_1.time_ >= var_817_15 + var_817_23 and arg_814_1.time_ < var_817_15 + var_817_23 + arg_817_0 then
+			if arg_814_1.time_ >= var_817_15 + var_817_25 and arg_814_1.time_ < var_817_15 + var_817_25 + arg_817_0 then
 				arg_814_1.typewritter.percent = 1
 
 				arg_814_1.typewritter:SetDirty()
@@ -21141,7 +22841,7 @@
 		arg_818_1.frameCnt_ = 0
 		arg_818_1.state_ = "playing"
 		arg_818_1.curTalkId_ = 1108106195
-		arg_818_1.duration_ = 5
+		arg_818_1.duration_ = 6.17
 
 		SetActive(arg_818_1.tipsGo_, false)
 
@@ -21278,18 +22978,38 @@
 
 				arg_818_1.typewritter:SetDirty()
 				arg_818_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106195", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_821_23 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106195", "story_v_side_new_1108106.awb") / 1000
+
+					if var_821_23 + var_821_15 > arg_818_1.duration_ then
+						arg_818_1.duration_ = var_821_23 + var_821_15
+					end
+
+					if var_821_18.prefab_name ~= "" and arg_818_1.actors_[var_821_18.prefab_name] ~= nil then
+						local var_821_24 = LuaForUtil.PlayVoiceWithCriLipsync(arg_818_1.actors_[var_821_18.prefab_name].transform, "story_v_side_new_1108106", "1108106195", "story_v_side_new_1108106.awb")
+
+						arg_818_1:RecordAudio("1108106195", var_821_24)
+						arg_818_1:RecordAudio("1108106195", var_821_24)
+					else
+						arg_818_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106195", "story_v_side_new_1108106.awb")
+					end
+
+					arg_818_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106195", "story_v_side_new_1108106.awb")
+				end
+
 				arg_818_1:RecordContent(arg_818_1.text_.text)
 			end
 
-			local var_821_23 = math.max(var_821_16, arg_818_1.talkMaxDuration)
+			local var_821_25 = math.max(var_821_16, arg_818_1.talkMaxDuration)
 
-			if var_821_15 <= arg_818_1.time_ and arg_818_1.time_ < var_821_15 + var_821_23 then
-				arg_818_1.typewritter.percent = (arg_818_1.time_ - var_821_15) / var_821_23
+			if var_821_15 <= arg_818_1.time_ and arg_818_1.time_ < var_821_15 + var_821_25 then
+				arg_818_1.typewritter.percent = (arg_818_1.time_ - var_821_15) / var_821_25
 
 				arg_818_1.typewritter:SetDirty()
 			end
 
-			if arg_818_1.time_ >= var_821_15 + var_821_23 and arg_818_1.time_ < var_821_15 + var_821_23 + arg_821_0 then
+			if arg_818_1.time_ >= var_821_15 + var_821_25 and arg_818_1.time_ < var_821_15 + var_821_25 + arg_821_0 then
 				arg_818_1.typewritter.percent = 1
 
 				arg_818_1.typewritter:SetDirty()
@@ -21545,7 +23265,7 @@
 		arg_834_1.frameCnt_ = 0
 		arg_834_1.state_ = "playing"
 		arg_834_1.curTalkId_ = 1108106199
-		arg_834_1.duration_ = 5
+		arg_834_1.duration_ = 8.3
 
 		SetActive(arg_834_1.tipsGo_, false)
 
@@ -21682,18 +23402,38 @@
 
 				arg_834_1.typewritter:SetDirty()
 				arg_834_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106199", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_837_23 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106199", "story_v_side_new_1108106.awb") / 1000
+
+					if var_837_23 + var_837_15 > arg_834_1.duration_ then
+						arg_834_1.duration_ = var_837_23 + var_837_15
+					end
+
+					if var_837_18.prefab_name ~= "" and arg_834_1.actors_[var_837_18.prefab_name] ~= nil then
+						local var_837_24 = LuaForUtil.PlayVoiceWithCriLipsync(arg_834_1.actors_[var_837_18.prefab_name].transform, "story_v_side_new_1108106", "1108106199", "story_v_side_new_1108106.awb")
+
+						arg_834_1:RecordAudio("1108106199", var_837_24)
+						arg_834_1:RecordAudio("1108106199", var_837_24)
+					else
+						arg_834_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106199", "story_v_side_new_1108106.awb")
+					end
+
+					arg_834_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106199", "story_v_side_new_1108106.awb")
+				end
+
 				arg_834_1:RecordContent(arg_834_1.text_.text)
 			end
 
-			local var_837_23 = math.max(var_837_16, arg_834_1.talkMaxDuration)
+			local var_837_25 = math.max(var_837_16, arg_834_1.talkMaxDuration)
 
-			if var_837_15 <= arg_834_1.time_ and arg_834_1.time_ < var_837_15 + var_837_23 then
-				arg_834_1.typewritter.percent = (arg_834_1.time_ - var_837_15) / var_837_23
+			if var_837_15 <= arg_834_1.time_ and arg_834_1.time_ < var_837_15 + var_837_25 then
+				arg_834_1.typewritter.percent = (arg_834_1.time_ - var_837_15) / var_837_25
 
 				arg_834_1.typewritter:SetDirty()
 			end
 
-			if arg_834_1.time_ >= var_837_15 + var_837_23 and arg_834_1.time_ < var_837_15 + var_837_23 + arg_837_0 then
+			if arg_834_1.time_ >= var_837_15 + var_837_25 and arg_834_1.time_ < var_837_15 + var_837_25 + arg_837_0 then
 				arg_834_1.typewritter.percent = 1
 
 				arg_834_1.typewritter:SetDirty()
@@ -22572,7 +24312,7 @@
 		arg_876_1.frameCnt_ = 0
 		arg_876_1.state_ = "playing"
 		arg_876_1.curTalkId_ = 1108106209
-		arg_876_1.duration_ = 5
+		arg_876_1.duration_ = 6.43
 
 		SetActive(arg_876_1.tipsGo_, false)
 
@@ -22709,18 +24449,38 @@
 
 				arg_876_1.typewritter:SetDirty()
 				arg_876_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106209", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_879_23 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106209", "story_v_side_new_1108106.awb") / 1000
+
+					if var_879_23 + var_879_15 > arg_876_1.duration_ then
+						arg_876_1.duration_ = var_879_23 + var_879_15
+					end
+
+					if var_879_18.prefab_name ~= "" and arg_876_1.actors_[var_879_18.prefab_name] ~= nil then
+						local var_879_24 = LuaForUtil.PlayVoiceWithCriLipsync(arg_876_1.actors_[var_879_18.prefab_name].transform, "story_v_side_new_1108106", "1108106209", "story_v_side_new_1108106.awb")
+
+						arg_876_1:RecordAudio("1108106209", var_879_24)
+						arg_876_1:RecordAudio("1108106209", var_879_24)
+					else
+						arg_876_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106209", "story_v_side_new_1108106.awb")
+					end
+
+					arg_876_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106209", "story_v_side_new_1108106.awb")
+				end
+
 				arg_876_1:RecordContent(arg_876_1.text_.text)
 			end
 
-			local var_879_23 = math.max(var_879_16, arg_876_1.talkMaxDuration)
+			local var_879_25 = math.max(var_879_16, arg_876_1.talkMaxDuration)
 
-			if var_879_15 <= arg_876_1.time_ and arg_876_1.time_ < var_879_15 + var_879_23 then
-				arg_876_1.typewritter.percent = (arg_876_1.time_ - var_879_15) / var_879_23
+			if var_879_15 <= arg_876_1.time_ and arg_876_1.time_ < var_879_15 + var_879_25 then
+				arg_876_1.typewritter.percent = (arg_876_1.time_ - var_879_15) / var_879_25
 
 				arg_876_1.typewritter:SetDirty()
 			end
 
-			if arg_876_1.time_ >= var_879_15 + var_879_23 and arg_876_1.time_ < var_879_15 + var_879_23 + arg_879_0 then
+			if arg_876_1.time_ >= var_879_15 + var_879_25 and arg_876_1.time_ < var_879_15 + var_879_25 + arg_879_0 then
 				arg_876_1.typewritter.percent = 1
 
 				arg_876_1.typewritter:SetDirty()
@@ -22854,7 +24614,7 @@
 		arg_884_1.frameCnt_ = 0
 		arg_884_1.state_ = "playing"
 		arg_884_1.curTalkId_ = 1108106211
-		arg_884_1.duration_ = 5
+		arg_884_1.duration_ = 11.67
 
 		SetActive(arg_884_1.tipsGo_, false)
 
@@ -22939,18 +24699,38 @@
 
 				arg_884_1.typewritter:SetDirty()
 				arg_884_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106211", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_887_12 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106211", "story_v_side_new_1108106.awb") / 1000
+
+					if var_887_12 + var_887_4 > arg_884_1.duration_ then
+						arg_884_1.duration_ = var_887_12 + var_887_4
+					end
+
+					if var_887_7.prefab_name ~= "" and arg_884_1.actors_[var_887_7.prefab_name] ~= nil then
+						local var_887_13 = LuaForUtil.PlayVoiceWithCriLipsync(arg_884_1.actors_[var_887_7.prefab_name].transform, "story_v_side_new_1108106", "1108106211", "story_v_side_new_1108106.awb")
+
+						arg_884_1:RecordAudio("1108106211", var_887_13)
+						arg_884_1:RecordAudio("1108106211", var_887_13)
+					else
+						arg_884_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106211", "story_v_side_new_1108106.awb")
+					end
+
+					arg_884_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106211", "story_v_side_new_1108106.awb")
+				end
+
 				arg_884_1:RecordContent(arg_884_1.text_.text)
 			end
 
-			local var_887_12 = math.max(var_887_5, arg_884_1.talkMaxDuration)
+			local var_887_14 = math.max(var_887_5, arg_884_1.talkMaxDuration)
 
-			if var_887_4 <= arg_884_1.time_ and arg_884_1.time_ < var_887_4 + var_887_12 then
-				arg_884_1.typewritter.percent = (arg_884_1.time_ - var_887_4) / var_887_12
+			if var_887_4 <= arg_884_1.time_ and arg_884_1.time_ < var_887_4 + var_887_14 then
+				arg_884_1.typewritter.percent = (arg_884_1.time_ - var_887_4) / var_887_14
 
 				arg_884_1.typewritter:SetDirty()
 			end
 
-			if arg_884_1.time_ >= var_887_4 + var_887_12 and arg_884_1.time_ < var_887_4 + var_887_12 + arg_887_0 then
+			if arg_884_1.time_ >= var_887_4 + var_887_14 and arg_884_1.time_ < var_887_4 + var_887_14 + arg_887_0 then
 				arg_884_1.typewritter.percent = 1
 
 				arg_884_1.typewritter:SetDirty()
@@ -23319,7 +25099,7 @@
 		arg_902_1.frameCnt_ = 0
 		arg_902_1.state_ = "playing"
 		arg_902_1.curTalkId_ = 1108106215
-		arg_902_1.duration_ = 5
+		arg_902_1.duration_ = 5.87
 
 		SetActive(arg_902_1.tipsGo_, false)
 
@@ -23456,18 +25236,38 @@
 
 				arg_902_1.typewritter:SetDirty()
 				arg_902_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106215", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_905_23 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106215", "story_v_side_new_1108106.awb") / 1000
+
+					if var_905_23 + var_905_15 > arg_902_1.duration_ then
+						arg_902_1.duration_ = var_905_23 + var_905_15
+					end
+
+					if var_905_18.prefab_name ~= "" and arg_902_1.actors_[var_905_18.prefab_name] ~= nil then
+						local var_905_24 = LuaForUtil.PlayVoiceWithCriLipsync(arg_902_1.actors_[var_905_18.prefab_name].transform, "story_v_side_new_1108106", "1108106215", "story_v_side_new_1108106.awb")
+
+						arg_902_1:RecordAudio("1108106215", var_905_24)
+						arg_902_1:RecordAudio("1108106215", var_905_24)
+					else
+						arg_902_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106215", "story_v_side_new_1108106.awb")
+					end
+
+					arg_902_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106215", "story_v_side_new_1108106.awb")
+				end
+
 				arg_902_1:RecordContent(arg_902_1.text_.text)
 			end
 
-			local var_905_23 = math.max(var_905_16, arg_902_1.talkMaxDuration)
+			local var_905_25 = math.max(var_905_16, arg_902_1.talkMaxDuration)
 
-			if var_905_15 <= arg_902_1.time_ and arg_902_1.time_ < var_905_15 + var_905_23 then
-				arg_902_1.typewritter.percent = (arg_902_1.time_ - var_905_15) / var_905_23
+			if var_905_15 <= arg_902_1.time_ and arg_902_1.time_ < var_905_15 + var_905_25 then
+				arg_902_1.typewritter.percent = (arg_902_1.time_ - var_905_15) / var_905_25
 
 				arg_902_1.typewritter:SetDirty()
 			end
 
-			if arg_902_1.time_ >= var_905_15 + var_905_23 and arg_902_1.time_ < var_905_15 + var_905_23 + arg_905_0 then
+			if arg_902_1.time_ >= var_905_15 + var_905_25 and arg_902_1.time_ < var_905_15 + var_905_25 + arg_905_0 then
 				arg_902_1.typewritter.percent = 1
 
 				arg_902_1.typewritter:SetDirty()
@@ -23549,7 +25349,7 @@
 		arg_910_1.frameCnt_ = 0
 		arg_910_1.state_ = "playing"
 		arg_910_1.curTalkId_ = 1108106217
-		arg_910_1.duration_ = 5
+		arg_910_1.duration_ = 4.83
 
 		SetActive(arg_910_1.tipsGo_, false)
 
@@ -23686,18 +25486,38 @@
 
 				arg_910_1.typewritter:SetDirty()
 				arg_910_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106217", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_913_23 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106217", "story_v_side_new_1108106.awb") / 1000
+
+					if var_913_23 + var_913_15 > arg_910_1.duration_ then
+						arg_910_1.duration_ = var_913_23 + var_913_15
+					end
+
+					if var_913_18.prefab_name ~= "" and arg_910_1.actors_[var_913_18.prefab_name] ~= nil then
+						local var_913_24 = LuaForUtil.PlayVoiceWithCriLipsync(arg_910_1.actors_[var_913_18.prefab_name].transform, "story_v_side_new_1108106", "1108106217", "story_v_side_new_1108106.awb")
+
+						arg_910_1:RecordAudio("1108106217", var_913_24)
+						arg_910_1:RecordAudio("1108106217", var_913_24)
+					else
+						arg_910_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106217", "story_v_side_new_1108106.awb")
+					end
+
+					arg_910_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106217", "story_v_side_new_1108106.awb")
+				end
+
 				arg_910_1:RecordContent(arg_910_1.text_.text)
 			end
 
-			local var_913_23 = math.max(var_913_16, arg_910_1.talkMaxDuration)
+			local var_913_25 = math.max(var_913_16, arg_910_1.talkMaxDuration)
 
-			if var_913_15 <= arg_910_1.time_ and arg_910_1.time_ < var_913_15 + var_913_23 then
-				arg_910_1.typewritter.percent = (arg_910_1.time_ - var_913_15) / var_913_23
+			if var_913_15 <= arg_910_1.time_ and arg_910_1.time_ < var_913_15 + var_913_25 then
+				arg_910_1.typewritter.percent = (arg_910_1.time_ - var_913_15) / var_913_25
 
 				arg_910_1.typewritter:SetDirty()
 			end
 
-			if arg_910_1.time_ >= var_913_15 + var_913_23 and arg_910_1.time_ < var_913_15 + var_913_23 + arg_913_0 then
+			if arg_910_1.time_ >= var_913_15 + var_913_25 and arg_910_1.time_ < var_913_15 + var_913_25 + arg_913_0 then
 				arg_910_1.typewritter.percent = 1
 
 				arg_910_1.typewritter:SetDirty()
@@ -23710,7 +25530,7 @@
 		arg_914_1.frameCnt_ = 0
 		arg_914_1.state_ = "playing"
 		arg_914_1.curTalkId_ = 1108106219
-		arg_914_1.duration_ = 5
+		arg_914_1.duration_ = 2.63
 
 		SetActive(arg_914_1.tipsGo_, false)
 
@@ -23841,18 +25661,38 @@
 
 				arg_914_1.typewritter:SetDirty()
 				arg_914_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106219", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_917_22 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106219", "story_v_side_new_1108106.awb") / 1000
+
+					if var_917_22 + var_917_14 > arg_914_1.duration_ then
+						arg_914_1.duration_ = var_917_22 + var_917_14
+					end
+
+					if var_917_17.prefab_name ~= "" and arg_914_1.actors_[var_917_17.prefab_name] ~= nil then
+						local var_917_23 = LuaForUtil.PlayVoiceWithCriLipsync(arg_914_1.actors_[var_917_17.prefab_name].transform, "story_v_side_new_1108106", "1108106219", "story_v_side_new_1108106.awb")
+
+						arg_914_1:RecordAudio("1108106219", var_917_23)
+						arg_914_1:RecordAudio("1108106219", var_917_23)
+					else
+						arg_914_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106219", "story_v_side_new_1108106.awb")
+					end
+
+					arg_914_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106219", "story_v_side_new_1108106.awb")
+				end
+
 				arg_914_1:RecordContent(arg_914_1.text_.text)
 			end
 
-			local var_917_22 = math.max(var_917_15, arg_914_1.talkMaxDuration)
+			local var_917_24 = math.max(var_917_15, arg_914_1.talkMaxDuration)
 
-			if var_917_14 <= arg_914_1.time_ and arg_914_1.time_ < var_917_14 + var_917_22 then
-				arg_914_1.typewritter.percent = (arg_914_1.time_ - var_917_14) / var_917_22
+			if var_917_14 <= arg_914_1.time_ and arg_914_1.time_ < var_917_14 + var_917_24 then
+				arg_914_1.typewritter.percent = (arg_914_1.time_ - var_917_14) / var_917_24
 
 				arg_914_1.typewritter:SetDirty()
 			end
 
-			if arg_914_1.time_ >= var_917_14 + var_917_22 and arg_914_1.time_ < var_917_14 + var_917_22 + arg_917_0 then
+			if arg_914_1.time_ >= var_917_14 + var_917_24 and arg_914_1.time_ < var_917_14 + var_917_24 + arg_917_0 then
 				arg_914_1.typewritter.percent = 1
 
 				arg_914_1.typewritter:SetDirty()
@@ -23974,7 +25814,7 @@
 		arg_922_1.frameCnt_ = 0
 		arg_922_1.state_ = "playing"
 		arg_922_1.curTalkId_ = 1108106221
-		arg_922_1.duration_ = 5
+		arg_922_1.duration_ = 5.03
 
 		SetActive(arg_922_1.tipsGo_, false)
 
@@ -24065,18 +25905,38 @@
 
 				arg_922_1.typewritter:SetDirty()
 				arg_922_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106221", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_925_13 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106221", "story_v_side_new_1108106.awb") / 1000
+
+					if var_925_13 + var_925_5 > arg_922_1.duration_ then
+						arg_922_1.duration_ = var_925_13 + var_925_5
+					end
+
+					if var_925_8.prefab_name ~= "" and arg_922_1.actors_[var_925_8.prefab_name] ~= nil then
+						local var_925_14 = LuaForUtil.PlayVoiceWithCriLipsync(arg_922_1.actors_[var_925_8.prefab_name].transform, "story_v_side_new_1108106", "1108106221", "story_v_side_new_1108106.awb")
+
+						arg_922_1:RecordAudio("1108106221", var_925_14)
+						arg_922_1:RecordAudio("1108106221", var_925_14)
+					else
+						arg_922_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106221", "story_v_side_new_1108106.awb")
+					end
+
+					arg_922_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106221", "story_v_side_new_1108106.awb")
+				end
+
 				arg_922_1:RecordContent(arg_922_1.text_.text)
 			end
 
-			local var_925_13 = math.max(var_925_6, arg_922_1.talkMaxDuration)
+			local var_925_15 = math.max(var_925_6, arg_922_1.talkMaxDuration)
 
-			if var_925_5 <= arg_922_1.time_ and arg_922_1.time_ < var_925_5 + var_925_13 then
-				arg_922_1.typewritter.percent = (arg_922_1.time_ - var_925_5) / var_925_13
+			if var_925_5 <= arg_922_1.time_ and arg_922_1.time_ < var_925_5 + var_925_15 then
+				arg_922_1.typewritter.percent = (arg_922_1.time_ - var_925_5) / var_925_15
 
 				arg_922_1.typewritter:SetDirty()
 			end
 
-			if arg_922_1.time_ >= var_925_5 + var_925_13 and arg_922_1.time_ < var_925_5 + var_925_13 + arg_925_0 then
+			if arg_922_1.time_ >= var_925_5 + var_925_15 and arg_922_1.time_ < var_925_5 + var_925_15 + arg_925_0 then
 				arg_922_1.typewritter.percent = 1
 
 				arg_922_1.typewritter:SetDirty()
@@ -24089,7 +25949,7 @@
 		arg_926_1.frameCnt_ = 0
 		arg_926_1.state_ = "playing"
 		arg_926_1.curTalkId_ = 1108106222
-		arg_926_1.duration_ = 5
+		arg_926_1.duration_ = 9.87
 
 		SetActive(arg_926_1.tipsGo_, false)
 
@@ -24165,18 +26025,38 @@
 
 				arg_926_1.typewritter:SetDirty()
 				arg_926_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106222", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_929_10 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106222", "story_v_side_new_1108106.awb") / 1000
+
+					if var_929_10 + var_929_2 > arg_926_1.duration_ then
+						arg_926_1.duration_ = var_929_10 + var_929_2
+					end
+
+					if var_929_5.prefab_name ~= "" and arg_926_1.actors_[var_929_5.prefab_name] ~= nil then
+						local var_929_11 = LuaForUtil.PlayVoiceWithCriLipsync(arg_926_1.actors_[var_929_5.prefab_name].transform, "story_v_side_new_1108106", "1108106222", "story_v_side_new_1108106.awb")
+
+						arg_926_1:RecordAudio("1108106222", var_929_11)
+						arg_926_1:RecordAudio("1108106222", var_929_11)
+					else
+						arg_926_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106222", "story_v_side_new_1108106.awb")
+					end
+
+					arg_926_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106222", "story_v_side_new_1108106.awb")
+				end
+
 				arg_926_1:RecordContent(arg_926_1.text_.text)
 			end
 
-			local var_929_10 = math.max(var_929_3, arg_926_1.talkMaxDuration)
+			local var_929_12 = math.max(var_929_3, arg_926_1.talkMaxDuration)
 
-			if var_929_2 <= arg_926_1.time_ and arg_926_1.time_ < var_929_2 + var_929_10 then
-				arg_926_1.typewritter.percent = (arg_926_1.time_ - var_929_2) / var_929_10
+			if var_929_2 <= arg_926_1.time_ and arg_926_1.time_ < var_929_2 + var_929_12 then
+				arg_926_1.typewritter.percent = (arg_926_1.time_ - var_929_2) / var_929_12
 
 				arg_926_1.typewritter:SetDirty()
 			end
 
-			if arg_926_1.time_ >= var_929_2 + var_929_10 and arg_926_1.time_ < var_929_2 + var_929_10 + arg_929_0 then
+			if arg_926_1.time_ >= var_929_2 + var_929_12 and arg_926_1.time_ < var_929_2 + var_929_12 + arg_929_0 then
 				arg_926_1.typewritter.percent = 1
 
 				arg_926_1.typewritter:SetDirty()
@@ -24269,7 +26149,7 @@
 		arg_934_1.frameCnt_ = 0
 		arg_934_1.state_ = "playing"
 		arg_934_1.curTalkId_ = 1108106224
-		arg_934_1.duration_ = 5
+		arg_934_1.duration_ = 2.43
 
 		SetActive(arg_934_1.tipsGo_, false)
 
@@ -24386,18 +26266,38 @@
 
 				arg_934_1.typewritter:SetDirty()
 				arg_934_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106224", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_937_17 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106224", "story_v_side_new_1108106.awb") / 1000
+
+					if var_937_17 + var_937_9 > arg_934_1.duration_ then
+						arg_934_1.duration_ = var_937_17 + var_937_9
+					end
+
+					if var_937_12.prefab_name ~= "" and arg_934_1.actors_[var_937_12.prefab_name] ~= nil then
+						local var_937_18 = LuaForUtil.PlayVoiceWithCriLipsync(arg_934_1.actors_[var_937_12.prefab_name].transform, "story_v_side_new_1108106", "1108106224", "story_v_side_new_1108106.awb")
+
+						arg_934_1:RecordAudio("1108106224", var_937_18)
+						arg_934_1:RecordAudio("1108106224", var_937_18)
+					else
+						arg_934_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106224", "story_v_side_new_1108106.awb")
+					end
+
+					arg_934_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106224", "story_v_side_new_1108106.awb")
+				end
+
 				arg_934_1:RecordContent(arg_934_1.text_.text)
 			end
 
-			local var_937_17 = math.max(var_937_10, arg_934_1.talkMaxDuration)
+			local var_937_19 = math.max(var_937_10, arg_934_1.talkMaxDuration)
 
-			if var_937_9 <= arg_934_1.time_ and arg_934_1.time_ < var_937_9 + var_937_17 then
-				arg_934_1.typewritter.percent = (arg_934_1.time_ - var_937_9) / var_937_17
+			if var_937_9 <= arg_934_1.time_ and arg_934_1.time_ < var_937_9 + var_937_19 then
+				arg_934_1.typewritter.percent = (arg_934_1.time_ - var_937_9) / var_937_19
 
 				arg_934_1.typewritter:SetDirty()
 			end
 
-			if arg_934_1.time_ >= var_937_9 + var_937_17 and arg_934_1.time_ < var_937_9 + var_937_17 + arg_937_0 then
+			if arg_934_1.time_ >= var_937_9 + var_937_19 and arg_934_1.time_ < var_937_9 + var_937_19 + arg_937_0 then
 				arg_934_1.typewritter.percent = 1
 
 				arg_934_1.typewritter:SetDirty()
@@ -24696,7 +26596,7 @@
 		arg_950_1.frameCnt_ = 0
 		arg_950_1.state_ = "playing"
 		arg_950_1.curTalkId_ = 1108106228
-		arg_950_1.duration_ = 5
+		arg_950_1.duration_ = 5.33
 
 		SetActive(arg_950_1.tipsGo_, false)
 
@@ -24833,18 +26733,38 @@
 
 				arg_950_1.typewritter:SetDirty()
 				arg_950_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106228", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_953_23 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106228", "story_v_side_new_1108106.awb") / 1000
+
+					if var_953_23 + var_953_15 > arg_950_1.duration_ then
+						arg_950_1.duration_ = var_953_23 + var_953_15
+					end
+
+					if var_953_18.prefab_name ~= "" and arg_950_1.actors_[var_953_18.prefab_name] ~= nil then
+						local var_953_24 = LuaForUtil.PlayVoiceWithCriLipsync(arg_950_1.actors_[var_953_18.prefab_name].transform, "story_v_side_new_1108106", "1108106228", "story_v_side_new_1108106.awb")
+
+						arg_950_1:RecordAudio("1108106228", var_953_24)
+						arg_950_1:RecordAudio("1108106228", var_953_24)
+					else
+						arg_950_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106228", "story_v_side_new_1108106.awb")
+					end
+
+					arg_950_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106228", "story_v_side_new_1108106.awb")
+				end
+
 				arg_950_1:RecordContent(arg_950_1.text_.text)
 			end
 
-			local var_953_23 = math.max(var_953_16, arg_950_1.talkMaxDuration)
+			local var_953_25 = math.max(var_953_16, arg_950_1.talkMaxDuration)
 
-			if var_953_15 <= arg_950_1.time_ and arg_950_1.time_ < var_953_15 + var_953_23 then
-				arg_950_1.typewritter.percent = (arg_950_1.time_ - var_953_15) / var_953_23
+			if var_953_15 <= arg_950_1.time_ and arg_950_1.time_ < var_953_15 + var_953_25 then
+				arg_950_1.typewritter.percent = (arg_950_1.time_ - var_953_15) / var_953_25
 
 				arg_950_1.typewritter:SetDirty()
 			end
 
-			if arg_950_1.time_ >= var_953_15 + var_953_23 and arg_950_1.time_ < var_953_15 + var_953_23 + arg_953_0 then
+			if arg_950_1.time_ >= var_953_15 + var_953_25 and arg_950_1.time_ < var_953_15 + var_953_25 + arg_953_0 then
 				arg_950_1.typewritter.percent = 1
 
 				arg_950_1.typewritter:SetDirty()
@@ -24857,7 +26777,7 @@
 		arg_954_1.frameCnt_ = 0
 		arg_954_1.state_ = "playing"
 		arg_954_1.curTalkId_ = 1108106229
-		arg_954_1.duration_ = 5
+		arg_954_1.duration_ = 4.63
 
 		SetActive(arg_954_1.tipsGo_, false)
 
@@ -24933,18 +26853,38 @@
 
 				arg_954_1.typewritter:SetDirty()
 				arg_954_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106229", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_957_10 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106229", "story_v_side_new_1108106.awb") / 1000
+
+					if var_957_10 + var_957_2 > arg_954_1.duration_ then
+						arg_954_1.duration_ = var_957_10 + var_957_2
+					end
+
+					if var_957_5.prefab_name ~= "" and arg_954_1.actors_[var_957_5.prefab_name] ~= nil then
+						local var_957_11 = LuaForUtil.PlayVoiceWithCriLipsync(arg_954_1.actors_[var_957_5.prefab_name].transform, "story_v_side_new_1108106", "1108106229", "story_v_side_new_1108106.awb")
+
+						arg_954_1:RecordAudio("1108106229", var_957_11)
+						arg_954_1:RecordAudio("1108106229", var_957_11)
+					else
+						arg_954_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106229", "story_v_side_new_1108106.awb")
+					end
+
+					arg_954_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106229", "story_v_side_new_1108106.awb")
+				end
+
 				arg_954_1:RecordContent(arg_954_1.text_.text)
 			end
 
-			local var_957_10 = math.max(var_957_3, arg_954_1.talkMaxDuration)
+			local var_957_12 = math.max(var_957_3, arg_954_1.talkMaxDuration)
 
-			if var_957_2 <= arg_954_1.time_ and arg_954_1.time_ < var_957_2 + var_957_10 then
-				arg_954_1.typewritter.percent = (arg_954_1.time_ - var_957_2) / var_957_10
+			if var_957_2 <= arg_954_1.time_ and arg_954_1.time_ < var_957_2 + var_957_12 then
+				arg_954_1.typewritter.percent = (arg_954_1.time_ - var_957_2) / var_957_12
 
 				arg_954_1.typewritter:SetDirty()
 			end
 
-			if arg_954_1.time_ >= var_957_2 + var_957_10 and arg_954_1.time_ < var_957_2 + var_957_10 + arg_957_0 then
+			if arg_954_1.time_ >= var_957_2 + var_957_12 and arg_954_1.time_ < var_957_2 + var_957_12 + arg_957_0 then
 				arg_954_1.typewritter.percent = 1
 
 				arg_954_1.typewritter:SetDirty()
@@ -24957,7 +26897,7 @@
 		arg_958_1.frameCnt_ = 0
 		arg_958_1.state_ = "playing"
 		arg_958_1.curTalkId_ = 1108106230
-		arg_958_1.duration_ = 5
+		arg_958_1.duration_ = 4.73
 
 		SetActive(arg_958_1.tipsGo_, false)
 
@@ -25021,18 +26961,38 @@
 
 				arg_958_1.typewritter:SetDirty()
 				arg_958_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106230", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_961_8 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106230", "story_v_side_new_1108106.awb") / 1000
+
+					if var_961_8 + var_961_0 > arg_958_1.duration_ then
+						arg_958_1.duration_ = var_961_8 + var_961_0
+					end
+
+					if var_961_3.prefab_name ~= "" and arg_958_1.actors_[var_961_3.prefab_name] ~= nil then
+						local var_961_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_958_1.actors_[var_961_3.prefab_name].transform, "story_v_side_new_1108106", "1108106230", "story_v_side_new_1108106.awb")
+
+						arg_958_1:RecordAudio("1108106230", var_961_9)
+						arg_958_1:RecordAudio("1108106230", var_961_9)
+					else
+						arg_958_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106230", "story_v_side_new_1108106.awb")
+					end
+
+					arg_958_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106230", "story_v_side_new_1108106.awb")
+				end
+
 				arg_958_1:RecordContent(arg_958_1.text_.text)
 			end
 
-			local var_961_8 = math.max(var_961_1, arg_958_1.talkMaxDuration)
+			local var_961_10 = math.max(var_961_1, arg_958_1.talkMaxDuration)
 
-			if var_961_0 <= arg_958_1.time_ and arg_958_1.time_ < var_961_0 + var_961_8 then
-				arg_958_1.typewritter.percent = (arg_958_1.time_ - var_961_0) / var_961_8
+			if var_961_0 <= arg_958_1.time_ and arg_958_1.time_ < var_961_0 + var_961_10 then
+				arg_958_1.typewritter.percent = (arg_958_1.time_ - var_961_0) / var_961_10
 
 				arg_958_1.typewritter:SetDirty()
 			end
 
-			if arg_958_1.time_ >= var_961_0 + var_961_8 and arg_958_1.time_ < var_961_0 + var_961_8 + arg_961_0 then
+			if arg_958_1.time_ >= var_961_0 + var_961_10 and arg_958_1.time_ < var_961_0 + var_961_10 + arg_961_0 then
 				arg_958_1.typewritter.percent = 1
 
 				arg_958_1.typewritter:SetDirty()
@@ -25045,7 +27005,7 @@
 		arg_962_1.frameCnt_ = 0
 		arg_962_1.state_ = "playing"
 		arg_962_1.curTalkId_ = 1108106231
-		arg_962_1.duration_ = 5
+		arg_962_1.duration_ = 8.43
 
 		SetActive(arg_962_1.tipsGo_, false)
 
@@ -25120,18 +27080,38 @@
 
 				arg_962_1.typewritter:SetDirty()
 				arg_962_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106231", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_965_10 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106231", "story_v_side_new_1108106.awb") / 1000
+
+					if var_965_10 + var_965_2 > arg_962_1.duration_ then
+						arg_962_1.duration_ = var_965_10 + var_965_2
+					end
+
+					if var_965_5.prefab_name ~= "" and arg_962_1.actors_[var_965_5.prefab_name] ~= nil then
+						local var_965_11 = LuaForUtil.PlayVoiceWithCriLipsync(arg_962_1.actors_[var_965_5.prefab_name].transform, "story_v_side_new_1108106", "1108106231", "story_v_side_new_1108106.awb")
+
+						arg_962_1:RecordAudio("1108106231", var_965_11)
+						arg_962_1:RecordAudio("1108106231", var_965_11)
+					else
+						arg_962_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106231", "story_v_side_new_1108106.awb")
+					end
+
+					arg_962_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106231", "story_v_side_new_1108106.awb")
+				end
+
 				arg_962_1:RecordContent(arg_962_1.text_.text)
 			end
 
-			local var_965_10 = math.max(var_965_3, arg_962_1.talkMaxDuration)
+			local var_965_12 = math.max(var_965_3, arg_962_1.talkMaxDuration)
 
-			if var_965_2 <= arg_962_1.time_ and arg_962_1.time_ < var_965_2 + var_965_10 then
-				arg_962_1.typewritter.percent = (arg_962_1.time_ - var_965_2) / var_965_10
+			if var_965_2 <= arg_962_1.time_ and arg_962_1.time_ < var_965_2 + var_965_12 then
+				arg_962_1.typewritter.percent = (arg_962_1.time_ - var_965_2) / var_965_12
 
 				arg_962_1.typewritter:SetDirty()
 			end
 
-			if arg_962_1.time_ >= var_965_2 + var_965_10 and arg_962_1.time_ < var_965_2 + var_965_10 + arg_965_0 then
+			if arg_962_1.time_ >= var_965_2 + var_965_12 and arg_962_1.time_ < var_965_2 + var_965_12 + arg_965_0 then
 				arg_962_1.typewritter.percent = 1
 
 				arg_962_1.typewritter:SetDirty()
@@ -25144,7 +27124,7 @@
 		arg_966_1.frameCnt_ = 0
 		arg_966_1.state_ = "playing"
 		arg_966_1.curTalkId_ = 1108106218
-		arg_966_1.duration_ = 5
+		arg_966_1.duration_ = 2.83
 
 		SetActive(arg_966_1.tipsGo_, false)
 
@@ -25293,18 +27273,38 @@
 
 				arg_966_1.typewritter:SetDirty()
 				arg_966_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106218", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_969_22 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106218", "story_v_side_new_1108106.awb") / 1000
+
+					if var_969_22 + var_969_14 > arg_966_1.duration_ then
+						arg_966_1.duration_ = var_969_22 + var_969_14
+					end
+
+					if var_969_17.prefab_name ~= "" and arg_966_1.actors_[var_969_17.prefab_name] ~= nil then
+						local var_969_23 = LuaForUtil.PlayVoiceWithCriLipsync(arg_966_1.actors_[var_969_17.prefab_name].transform, "story_v_side_new_1108106", "1108106218", "story_v_side_new_1108106.awb")
+
+						arg_966_1:RecordAudio("1108106218", var_969_23)
+						arg_966_1:RecordAudio("1108106218", var_969_23)
+					else
+						arg_966_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106218", "story_v_side_new_1108106.awb")
+					end
+
+					arg_966_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106218", "story_v_side_new_1108106.awb")
+				end
+
 				arg_966_1:RecordContent(arg_966_1.text_.text)
 			end
 
-			local var_969_22 = math.max(var_969_15, arg_966_1.talkMaxDuration)
+			local var_969_24 = math.max(var_969_15, arg_966_1.talkMaxDuration)
 
-			if var_969_14 <= arg_966_1.time_ and arg_966_1.time_ < var_969_14 + var_969_22 then
-				arg_966_1.typewritter.percent = (arg_966_1.time_ - var_969_14) / var_969_22
+			if var_969_14 <= arg_966_1.time_ and arg_966_1.time_ < var_969_14 + var_969_24 then
+				arg_966_1.typewritter.percent = (arg_966_1.time_ - var_969_14) / var_969_24
 
 				arg_966_1.typewritter:SetDirty()
 			end
 
-			if arg_966_1.time_ >= var_969_14 + var_969_22 and arg_966_1.time_ < var_969_14 + var_969_22 + arg_969_0 then
+			if arg_966_1.time_ >= var_969_14 + var_969_24 and arg_966_1.time_ < var_969_14 + var_969_24 + arg_969_0 then
 				arg_966_1.typewritter.percent = 1
 
 				arg_966_1.typewritter:SetDirty()
@@ -25317,7 +27317,7 @@
 		arg_970_1.frameCnt_ = 0
 		arg_970_1.state_ = "playing"
 		arg_970_1.curTalkId_ = 1108106009
-		arg_970_1.duration_ = 5
+		arg_970_1.duration_ = 8.3
 
 		SetActive(arg_970_1.tipsGo_, false)
 
@@ -25434,18 +27434,38 @@
 
 				arg_970_1.typewritter:SetDirty()
 				arg_970_1:ShowNextGo(false)
+
+				if manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106009", "story_v_side_new_1108106.awb") ~= 0 then
+					local var_973_17 = manager.audio:GetVoiceLength("story_v_side_new_1108106", "1108106009", "story_v_side_new_1108106.awb") / 1000
+
+					if var_973_17 + var_973_9 > arg_970_1.duration_ then
+						arg_970_1.duration_ = var_973_17 + var_973_9
+					end
+
+					if var_973_12.prefab_name ~= "" and arg_970_1.actors_[var_973_12.prefab_name] ~= nil then
+						local var_973_18 = LuaForUtil.PlayVoiceWithCriLipsync(arg_970_1.actors_[var_973_12.prefab_name].transform, "story_v_side_new_1108106", "1108106009", "story_v_side_new_1108106.awb")
+
+						arg_970_1:RecordAudio("1108106009", var_973_18)
+						arg_970_1:RecordAudio("1108106009", var_973_18)
+					else
+						arg_970_1:AudioAction("play", "voice", "story_v_side_new_1108106", "1108106009", "story_v_side_new_1108106.awb")
+					end
+
+					arg_970_1:RecordHistoryTalkVoice("story_v_side_new_1108106", "1108106009", "story_v_side_new_1108106.awb")
+				end
+
 				arg_970_1:RecordContent(arg_970_1.text_.text)
 			end
 
-			local var_973_17 = math.max(var_973_10, arg_970_1.talkMaxDuration)
+			local var_973_19 = math.max(var_973_10, arg_970_1.talkMaxDuration)
 
-			if var_973_9 <= arg_970_1.time_ and arg_970_1.time_ < var_973_9 + var_973_17 then
-				arg_970_1.typewritter.percent = (arg_970_1.time_ - var_973_9) / var_973_17
+			if var_973_9 <= arg_970_1.time_ and arg_970_1.time_ < var_973_9 + var_973_19 then
+				arg_970_1.typewritter.percent = (arg_970_1.time_ - var_973_9) / var_973_19
 
 				arg_970_1.typewritter:SetDirty()
 			end
 
-			if arg_970_1.time_ >= var_973_9 + var_973_17 and arg_970_1.time_ < var_973_9 + var_973_17 + arg_973_0 then
+			if arg_970_1.time_ >= var_973_9 + var_973_19 and arg_970_1.time_ < var_973_9 + var_973_19 + arg_973_0 then
 				arg_970_1.typewritter.percent = 1
 
 				arg_970_1.typewritter:SetDirty()
@@ -25465,5 +27485,7 @@
 		"Assets/UIResources/UI_AB/TextureConfig/Background/ST12",
 		"Assets/UIResources/UI_AB/TextureConfig/Background/ST07b"
 	},
-	voices = {}
+	voices = {
+		"story_v_side_new_1108106.awb"
+	}
 }

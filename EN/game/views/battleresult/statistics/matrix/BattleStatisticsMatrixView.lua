@@ -2,6 +2,8 @@
 local var_0_1 = class("BattleStatisticsMatrixView", var_0_0)
 
 function var_0_1.OnEnter(arg_1_0)
+	SetActive(arg_1_0.goShare_, false)
+
 	arg_1_0.stageData = arg_1_0.params_.stageData
 
 	local var_1_0 = arg_1_0.stageData:GetHeroTeam()

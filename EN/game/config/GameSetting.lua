@@ -5153,6 +5153,13 @@
 			80
 		}
 	},
+	joint_game_kickout_time = {
+		id = "joint_game_kickout_time",
+		value2 = "",
+		value = {
+			30
+		}
+	},
 	puzzle_III_describe = {
 		id = "puzzle_III_describe",
 		value2 = "",

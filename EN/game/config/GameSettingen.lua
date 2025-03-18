@@ -4722,8 +4722,8 @@
 		id = "activity_water_online_open",
 		value2 = "",
 		value = {
-			18,
-			22
+			0,
+			24
 		}
 	},
 	activity_supplementary_sign = {
@@ -5151,6 +5151,13 @@
 		value2 = "",
 		value = {
 			40
+		}
+	},
+	joint_game_kickout_time = {
+		id = "joint_game_kickout_time",
+		value2 = "",
+		value = {
+			30
 		}
 	},
 	puzzle_III_describe = {

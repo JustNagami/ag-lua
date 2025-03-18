@@ -2215,6 +2215,50 @@
 			}
 		}
 	},
+	[950025] = {
+		material = "",
+		start_up_action = 0,
+		extend_info = 1,
+		type = 25,
+		dorm_exp = 12000,
+		sub_type = 0,
+		model = "Dorm/Dormitory/HZ05_zhuanshu_sikadi2",
+		is_give = 3,
+		hero_id = 1081,
+		style_type = "",
+		extend = "",
+		theme = 99,
+		give_max = 0,
+		replace = "",
+		interact_max = 1,
+		illu_position = "",
+		can_rot = 0,
+		display_type = 0,
+		mesh = "",
+		is_hide = 0,
+		id = 950025,
+		is_occupy = 0,
+		scene_id = {
+			2,
+			3
+		},
+		title = {
+			6,
+			4,
+			4
+		},
+		cost = {},
+		attractive = {},
+		is_storage = {},
+		is_move = {},
+		is_rotate = {},
+		interact = {
+			{
+				1081,
+				10810201
+			}
+		}
+	},
 	[951001] = {
 		material = "",
 		start_up_action = 0,
@@ -11723,6 +11767,7 @@
 			950021,
 			950022,
 			950023,
+			950025,
 			951001,
 			951002,
 			951003,
@@ -11990,6 +12035,7 @@
 			950021,
 			950022,
 			950023,
+			950025,
 			951001,
 			951002,
 			951003,
@@ -12504,7 +12550,8 @@
 			950020,
 			950021,
 			950022,
-			950023
+			950023,
+			950025
 		},
 		[213] = {
 			950922
@@ -12597,6 +12644,7 @@
 		950021,
 		950022,
 		950023,
+		950025,
 		951001,
 		951002,
 		951003,

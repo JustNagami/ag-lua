@@ -68586,7 +68586,7 @@
 		id = 413091092
 	},
 	[413091093] = {
-		speaker = "阿波罗",
+		speaker = "",
 		prefab_name = "",
 		content = "17a9af12f3b263d49a655a2fee495a5d",
 		id = 413091093

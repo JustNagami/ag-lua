@@ -144,6 +144,7 @@ function var_0_0.UpdateView(arg_17_0)
 		arg_17_0.skillName_.text = GetI18NText(var_17_0.name)
 		arg_17_0.affixDesc_.text = GetI18NText(var_17_1.affix_effect_skill_desc)
 		arg_17_0.coreSkillIndexTxt_.text = GetI18NText(var_17_1.skill_index) or ""
+		arg_17_0.coreSkillIndexTxt_2.text = GetI18NText(var_17_1.skill_index) or ""
 		arg_17_0.skillIcon_.sprite = MonsterCosplayData.GetAffixSprite(arg_17_0.coreAffix)
 
 		arg_17_0.mainController:SetSelectedState(tostring(table.indexof(ActivityMonsterCosplayCfg[arg_17_0.monsterID].skill_list, arg_17_0.coreSkillID)))

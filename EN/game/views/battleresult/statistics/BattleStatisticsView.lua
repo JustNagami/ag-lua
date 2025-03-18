@@ -16,6 +16,9 @@ end
 
 function var_0_0.OnEnter(arg_4_0)
 	arg_4_0.stageData = arg_4_0.params_.stageData
+
+	SetActive(arg_4_0.goShare_, false)
+
 	arg_4_0.statisticsHeroItem_ = {}
 
 	local var_4_0, var_4_1, var_4_2 = BattleTools.GetBattleStatisticsData()

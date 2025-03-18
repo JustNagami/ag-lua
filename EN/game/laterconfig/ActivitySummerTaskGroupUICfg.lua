@@ -19,7 +19,8 @@
 		prefab_path = "",
 		name = "01a40393a0b1fd20c3ffc2ac49226748",
 		item_id_list = {
-			1
+			1,
+			2
 		}
 	},
 	[1003] = {
@@ -32,8 +33,11 @@
 		name = "8a5a7e0a4ca2235c328866834b18a0ec",
 		item_id_list = {
 			3,
+			4,
 			5,
-			7
+			6,
+			7,
+			8
 		}
 	},
 	get_id_list_by_theme = {

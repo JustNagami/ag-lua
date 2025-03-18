@@ -68,7 +68,10 @@ function var_0_0.UpdateVoteFromServer(arg_4_0, arg_4_1)
 		var_0_5[iter_4_1.schedule_id] = {}
 
 		for iter_4_2, iter_4_3 in ipairs(iter_4_1.competition_list) do
-			var_0_5[iter_4_1.schedule_id][iter_4_3.competition_id] = iter_4_3.competition_value
+			table.insert(var_0_5[iter_4_1.schedule_id], {
+				heroID = iter_4_3.competition_id,
+				voteNum = iter_4_3.competition_value
+			})
 		end
 	end
 
@@ -123,104 +126,100 @@ function var_0_0.GetSortVoteContestantsData(arg_12_0, arg_12_1)
 		return var_12_0
 	end
 
-	for iter_12_0, iter_12_1 in pairs(var_0_5[arg_12_1]) do
+	for iter_12_0, iter_12_1 in ipairs(var_0_5[arg_12_1]) do
 		table.insert(var_12_0, {
-			ID = iter_12_0,
-			voteNum = iter_12_1
+			ID = iter_12_1.heroID,
+			voteNum = iter_12_1.voteNum
 		})
 	end
-
-	table.sort(var_12_0, function(arg_13_0, arg_13_1)
-		return arg_13_0.voteNum > arg_13_1.voteNum
-	end)
 
 	return var_12_0
 end
 
-function var_0_0.GetSortVoteContestantsDataByID(arg_14_0, arg_14_1)
-	local var_14_0 = {}
+function var_0_0.GetSortVoteContestantsDataByID(arg_13_0, arg_13_1)
+	local var_13_0 = {}
 
-	if not var_0_5[arg_14_1] then
-		return var_14_0
+	if not var_0_5[arg_13_1] then
+		return var_13_0
 	end
 
-	for iter_14_0, iter_14_1 in pairs(var_0_5[arg_14_1]) do
-		table.insert(var_14_0, {
-			ID = iter_14_0,
-			voteNum = iter_14_1
+	for iter_13_0, iter_13_1 in pairs(var_0_5[arg_13_1]) do
+		table.insert(var_13_0, {
+			ID = iter_13_1.heroID,
+			voteNum = iter_13_1.voteNum
 		})
 	end
 
-	table.sort(var_14_0, function(arg_15_0, arg_15_1)
-		return arg_15_0.ID < arg_15_1.ID
+	table.sort(var_13_0, function(arg_14_0, arg_14_1)
+		return arg_14_0.ID < arg_14_1.ID
 	end)
 
-	return var_14_0
+	return var_13_0
 end
 
-function var_0_0.GetWinerMapByRound(arg_16_0, arg_16_1)
-	if not var_0_6[arg_16_1] then
+function var_0_0.GetWinerMapByRound(arg_15_0, arg_15_1)
+	if not var_0_6[arg_15_1] then
 		return {}
 	end
 
-	return var_0_6[arg_16_1]
+	return var_0_6[arg_15_1]
 end
 
-function var_0_0.GetWinerListByRound(arg_17_0, arg_17_1)
-	local var_17_0 = {}
+function var_0_0.GetWinerListByRound(arg_16_0, arg_16_1)
+	local var_16_0 = {}
 
-	if not var_0_6[arg_17_1] then
-		return var_17_0
+	if not var_0_6[arg_16_1] then
+		return var_16_0
 	end
 
-	for iter_17_0, iter_17_1 in pairs(var_0_6[arg_17_1]) do
-		table.insert(var_17_0, {
-			ID = iter_17_0,
-			voteNum = iter_17_1
+	for iter_16_0, iter_16_1 in pairs(var_0_6[arg_16_1]) do
+		table.insert(var_16_0, {
+			ID = iter_16_0,
+			voteNum = iter_16_1
 		})
 	end
 
-	table.sort(var_17_0, function(arg_18_0, arg_18_1)
-		return arg_18_0.voteNum > arg_18_1.voteNum
+	table.sort(var_16_0, function(arg_17_0, arg_17_1)
+		return arg_17_0.voteNum > arg_17_1.voteNum
 	end)
 
-	return var_17_0
+	return var_16_0
 end
 
-function var_0_0.GetRoundTimerData(arg_19_0, arg_19_1)
-	return var_0_7[arg_19_1]
+function var_0_0.GetRoundTimerData(arg_18_0, arg_18_1)
+	return var_0_7[arg_18_1]
 end
 
-function var_0_0.GetSkinByHeroID(arg_20_0, arg_20_1)
-	for iter_20_0, iter_20_1 in ipairs(var_0_4[var_0_1]) do
-		if iter_20_1.heroID == arg_20_1 then
-			return iter_20_1.skinID
+function var_0_0.GetSkinByHeroID(arg_19_0, arg_19_1)
+	for iter_19_0, iter_19_1 in ipairs(var_0_4[var_0_1]) do
+		if iter_19_1.heroID == arg_19_1 then
+			return iter_19_1.skinID
 		end
 	end
 
 	return nil
 end
 
-function var_0_0.GetVoteActivityID(arg_21_0)
+function var_0_0.GetVoteActivityID(arg_20_0)
 	return var_0_9
 end
 
-function var_0_0.CheckInRoundTime(arg_22_0)
+function var_0_0.CheckInRoundTime(arg_21_0)
 	if var_0_8 == 5 then
 		ShowTips("TIME_OVER")
 
 		return false
 	end
 
-	local var_22_0 = var_0_7[var_0_8]
+	local var_21_0 = var_0_7[var_0_8]
 
-	if manager.time:GetServerTime() < var_22_0.startTime then
+	if manager.time:GetServerTime() < var_21_0.startTime then
 		ShowTips("SOLO_NOT_OPEN")
 
 		return false
 	end
 
-	if manager.time:GetServerTime() >= var_22_0.endTime then
+	if manager.time:GetServerTime() >= var_21_0.endTime then
 		ShowTips("SWIM_VOTE_SETTLEMENT")
 
 		return false
@@ -229,29 +228,29 @@ function var_0_0.CheckInRoundTime(arg_22_0)
 	return true
 end
 
-function var_0_0.GetTaskIdByRound(arg_23_0, arg_23_1)
-	local var_23_0 = AssignmentCfg.get_id_list_by_activity_id[SwimsuitBattleInfoCfg[var_0_1].vote_activity_id]
+function var_0_0.GetTaskIdByRound(arg_22_0, arg_22_1)
+	local var_22_0 = AssignmentCfg.get_id_list_by_activity_id[SwimsuitBattleInfoCfg[var_0_1].vote_activity_id]
 
-	if not arg_23_1 then
-		return var_23_0
+	if not arg_22_1 then
+		return var_22_0
 	end
 
-	local var_23_1 = {}
+	local var_22_1 = {}
 
-	for iter_23_0, iter_23_1 in ipairs(var_23_0) do
-		if AssignmentCfg[iter_23_1].additional_parameter[1] == arg_23_1 then
-			table.insert(var_23_1, iter_23_1)
+	for iter_22_0, iter_22_1 in ipairs(var_22_0) do
+		if AssignmentCfg[iter_22_1].additional_parameter[1] == arg_22_1 then
+			table.insert(var_22_1, iter_22_1)
 		end
 	end
 
-	return var_23_1
+	return var_22_1
 end
 
-function var_0_0.GetRedPointClickTag(arg_24_0)
+function var_0_0.GetRedPointClickTag(arg_23_0)
 	return var_0_10
 end
 
-function var_0_0.SetRedPointClickTag(arg_25_0)
+function var_0_0.SetRedPointClickTag(arg_24_0)
 	var_0_10 = true
 end
 

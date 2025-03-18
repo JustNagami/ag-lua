@@ -1049,7 +1049,7 @@
 		plot_tip = "de85d755a869c4f287cf31639b27d8db",
 		cv_ko = "김예림",
 		like = "871f6f6950817aad74878366eab6de52",
-		super_plot_tip = "",
+		super_plot_tip = "d1edeee9882ef2fda05c12f8cb058f99",
 		plot_tip_picture = "1081",
 		cv_en = "Kayli Mills",
 		cv_zh = "0cc65cc78a311a6dd36f6508e43f2802",
@@ -1077,7 +1077,10 @@
 			210810301,
 			210810401
 		},
-		super_plot_id = {}
+		super_plot_id = {
+			210810105,
+			210810106
+		}
 	},
 	[1042] = {
 		birthday = "adf0f953b6c71b7c41196e333870d438",

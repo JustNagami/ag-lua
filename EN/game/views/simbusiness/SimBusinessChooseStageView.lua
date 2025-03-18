@@ -152,7 +152,7 @@ function var_0_0.RefreshNormalStageInfo(arg_19_0)
 	if var_19_2 == "lock" then
 		arg_19_0.recordBtnController:SetSelectedState("lock")
 
-		arg_19_0.lockTips.text = GetTips(var_19_3)
+		arg_19_0.lockTips.text = var_19_3
 
 		return
 	end
@@ -175,7 +175,7 @@ function var_0_0.RefreshNormalStageInfo(arg_19_0)
 end
 
 function var_0_0.RefreshSpecialStageInfo(arg_20_0)
-	arg_20_0.specialname.text = SimBusinessStageCfg[arg_20_0.stageID].name
+	arg_20_0.specialname.text = GetI18NText(SimBusinessStageCfg[arg_20_0.stageID].name)
 	arg_20_0.speialIcon.sprite = SimBusinessTools.GetStageIcon(arg_20_0.stageID)
 
 	local var_20_0, var_20_1 = SimBusinessTools.GetStageState(arg_20_0.stageID)

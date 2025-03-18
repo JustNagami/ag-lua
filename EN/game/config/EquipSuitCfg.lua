@@ -770,7 +770,7 @@
 	{
 		name = "8e6ad424ba4af577242de3b4ffac50f7",
 		equip_skill_icon = "49",
-		stage_up_list = 0,
+		stage_up_list = 1,
 		power_score = 10,
 		desc = "8d7b3c94734dfc639b05770f7ad79569",
 		need = 3,

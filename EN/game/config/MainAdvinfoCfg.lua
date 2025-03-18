@@ -1533,6 +1533,45 @@
 		},
 		time = {}
 	},
+	[122] = {
+		id = 122,
+		hide_condition = "",
+		type = 1,
+		picture = "activity1058_1081_1041",
+		activityId = 280035,
+		order = 95,
+		parameter = {
+			404,
+			3050105
+		},
+		time = {}
+	},
+	[123] = {
+		id = 123,
+		hide_condition = "",
+		type = 1,
+		picture = "activity1075",
+		activityId = 280038,
+		order = 93,
+		parameter = {
+			404,
+			3050305
+		},
+		time = {}
+	},
+	[124] = {
+		id = 124,
+		hide_condition = "",
+		type = 1,
+		picture = "activity1015",
+		activityId = 280039,
+		order = 94,
+		parameter = {
+			404,
+			3050306
+		},
+		time = {}
+	},
 	[125] = {
 		id = 125,
 		hide_condition = "",
@@ -2150,6 +2189,9 @@
 		119,
 		120,
 		121,
+		122,
+		123,
+		124,
 		125,
 		126,
 		30601,

@@ -317,7 +317,7 @@
 		theme = 28,
 		day_list = {
 			35,
-			72
+			70
 		},
 		icon_list = {
 			"but_Internal_summer_3",

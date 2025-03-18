@@ -260,7 +260,7 @@ function var_0_0.CheckLevelUnlock(arg_27_0)
 	local var_27_0, var_27_1 = var_0_0.CheckPreLevelClear(arg_27_0)
 
 	if not var_27_0 then
-		return false, GetTipsF("SIM_BUSINESS_PRE_STAGE_NOT_CLEAR", SimBusinessStageCfg[var_27_1].name)
+		return false, GetTipsF("SIM_BUSINESS_PRE_STAGE_NOT_CLEAR", GetI18NText(SimBusinessStageCfg[var_27_1].name))
 	end
 
 	local var_27_2, var_27_3 = var_0_0.CheckLevelActivityOpen(arg_27_0)

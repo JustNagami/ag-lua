@@ -2683,12 +2683,35 @@
 		id = 4041,
 		information2 = "a714ee4697dc7bd5eec4823addf92b39"
 	},
+	[4042] = {
+		skill3 = "d44a0cc266d320cb7ffee823f54523dd",
+		skill2 = "5ec411300af02ed5f930d1ac6631a9cc",
+		information3 = "98551deb74c18b10476ba74230c30ad1",
+		type = 2,
+		model_name = "4042_display",
+		skill_desc6 = "",
+		desc = "e03159a8d03cd9ac4b50c1a8fe5bbb2f",
+		race = 10,
+		skill_desc2 = "8e1639dc2fe2674718426c0c3c021048",
+		skill4 = "",
+		skill_desc5 = "",
+		skill_desc3 = "705224300f4c4443789f3066e2484670",
+		skill5 = "",
+		information1 = "6ad2c25b5fe2aa3783b2642c2c202871",
+		skill_desc1 = "4577ea1d2354568131161684b5f06bb8",
+		skill_desc4 = "",
+		skill6 = "",
+		skill1 = "38c5004aea21d25c6921752cca0735e1",
+		id = 4042,
+		information2 = "3beef323b7b308424429d6de5e45a59d"
+	},
 	get_id_list_by_race = {
 		[10] = {
 			2114,
 			2123,
 			3048,
-			4041
+			4041,
+			4042
 		},
 		[6] = {
 			2020,
@@ -2937,6 +2960,7 @@
 		4038,
 		4039,
 		4040,
-		4041
+		4041,
+		4042
 	}
 }

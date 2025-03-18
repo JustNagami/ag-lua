@@ -262,7 +262,7 @@ end
 
 function var_0_0.RefreshShopLevel(arg_36_0)
 	if arg_36_0.satgeType == 0 then
-		arg_36_0.levelName_.text = SimBusinessStageCfg[arg_36_0.stageID].name
+		arg_36_0.levelName_.text = GetI18NText(SimBusinessStageCfg[arg_36_0.stageID].name)
 
 		arg_36_0.shopLevelController:SetSelectedState("exp")
 	elseif arg_36_0.satgeType == 1 then
@@ -321,7 +321,7 @@ end
 
 local function var_0_3(arg_42_0)
 	local var_42_0 = SimBusinessTools.SelectAvailableGoodsList(arg_42_0, function(arg_43_0)
-		return SimBusinessGoodsCfg[arg_43_0].name
+		return GetI18NText(SimBusinessGoodsCfg[arg_43_0].name)
 	end)
 
 	return table.concat(var_42_0, ", ")
@@ -333,7 +333,7 @@ function var_0_0.OnGuestEnter(arg_44_0, arg_44_1)
 
 	if var_44_1 then
 		local var_44_2 = GetTips(SimBusinessConst.GoodTypeDesc[var_44_1.love_type])
-		local var_44_3 = GetTipsF("SIM_BUSINESS_GUEST_SPAWN_LOG", var_44_1.name, var_44_2, var_44_0.hp)
+		local var_44_3 = GetTipsF("SIM_BUSINESS_GUEST_SPAWN_LOG", GetI18NText(var_44_1.name), var_44_2, var_44_0.hp)
 
 		arg_44_0:AppendGuestBuyLog(var_44_3)
 	end
@@ -345,7 +345,7 @@ function var_0_0.OnGuestExit(arg_45_0, arg_45_1)
 
 	if var_45_1 and var_45_0.hp == var_45_0.max then
 		local var_45_2 = GetTips(SimBusinessConst.GoodTypeDesc[var_45_1.love_type])
-		local var_45_3 = GetTipsF("SIM_BUSINESS_GUEST_BUY_NOTHING_EXIT_LOG", var_45_1.name, var_45_2)
+		local var_45_3 = GetTipsF("SIM_BUSINESS_GUEST_BUY_NOTHING_EXIT_LOG", GetI18NText(var_45_1.name), var_45_2)
 
 		arg_45_0:AppendGuestBuyLog(var_45_3)
 	end
@@ -357,12 +357,12 @@ function var_0_0.OnGuestBuy(arg_46_0, arg_46_1, arg_46_2)
 
 	if var_46_1 then
 		local var_46_2
-		local var_46_3 = SimBusinessGoodsCfg[arg_46_2.goods].name
+		local var_46_3 = GetI18NText(SimBusinessGoodsCfg[arg_46_2.goods].name)
 
 		if var_46_0.hp > 0 then
-			var_46_2 = GetTipsF("SIM_BUSINESS_GUEST_BUY_LOG", var_46_1.name, var_46_3, arg_46_2.buyCount, var_46_0.hp)
+			var_46_2 = GetTipsF("SIM_BUSINESS_GUEST_BUY_LOG", GetI18NText(var_46_1.name), var_46_3, arg_46_2.buyCount, var_46_0.hp)
 		else
-			var_46_2 = GetTipsF("SIM_BUSINESS_GUEST_COMPLETE_LOG", var_46_1.name, var_46_3, arg_46_2.buyCount)
+			var_46_2 = GetTipsF("SIM_BUSINESS_GUEST_COMPLETE_LOG", GetI18NText(var_46_1.name), var_46_3, arg_46_2.buyCount)
 		end
 
 		arg_46_0:AppendGuestBuyLog(var_46_2)

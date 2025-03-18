@@ -859,7 +859,74 @@
 		relation_des = "0e59645823c72effc643d549c9c0c2ca",
 		main_hero_id = 1119
 	},
+	[108101] = {
+		story_id = 0,
+		id = 108101,
+		story_reward = "",
+		story_condtion_id = 0,
+		relate_hero_id = 1055,
+		relation_des = "b54b88f8bc3827466c8ce70f4f541153",
+		main_hero_id = 1081
+	},
+	[108102] = {
+		story_id = 0,
+		id = 108102,
+		story_reward = "",
+		story_condtion_id = 0,
+		relate_hero_id = 1056,
+		relation_des = "8c42f081f8fd1dd3f16b5769312ebae2",
+		main_hero_id = 1081
+	},
+	[108103] = {
+		story_id = 710810101,
+		id = 108103,
+		story_condtion_id = 0,
+		relate_hero_id = 1019,
+		relation_des = "cf60af149a01c5ffdfbb1c9c7f6acf9d",
+		main_hero_id = 1081,
+		story_reward = {
+			{
+				1,
+				30
+			}
+		}
+	},
+	[108104] = {
+		story_id = 710810102,
+		id = 108104,
+		story_condtion_id = 0,
+		relate_hero_id = 1039,
+		relation_des = "5d7f4e499a7b87b7d0cbeb241b57b61c",
+		main_hero_id = 1081,
+		story_reward = {
+			{
+				1,
+				30
+			}
+		}
+	},
+	[108105] = {
+		story_id = 710810103,
+		id = 108105,
+		story_condtion_id = 0,
+		relate_hero_id = 1027,
+		relation_des = "a1a379505e9027ed2d99ae10d31347d0",
+		main_hero_id = 1081,
+		story_reward = {
+			{
+				1,
+				30
+			}
+		}
+	},
 	get_id_list_by_main_hero_id = {
+		[1081] = {
+			108101,
+			108102,
+			108103,
+			108104,
+			108105
+		},
 		[1119] = {
 			111901,
 			111902,
@@ -1037,6 +1104,11 @@
 		111903,
 		111904,
 		111905,
-		111906
+		111906,
+		108101,
+		108102,
+		108103,
+		108104,
+		108105
 	}
 }

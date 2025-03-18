@@ -151,6 +151,8 @@ end
 function var_0_0.StopVoice(arg_13_0)
 	SetActive(arg_13_0.dialogBoxGo_, false)
 
+	arg_13_0.dialogContent_.localPosition = Vector3(-10, 0, 0)
+
 	if arg_13_0.delayPlayTimer_ then
 		arg_13_0.delayPlayTimer_:Stop()
 

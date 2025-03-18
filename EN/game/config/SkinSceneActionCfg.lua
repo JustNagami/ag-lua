@@ -103,7 +103,18 @@
 		start_path = "SofdecAsset/function/dlc/102201_login.usm",
 		skin_id = 102201
 	},
+	[102101] = {
+		special_scene_id_2 = 0,
+		special_action_2 = "",
+		special_scene_id = 6015,
+		special_action = "102101ui_custom",
+		start_path = "SofdecAsset/function/dlc/102101_login.usm",
+		skin_id = 102101
+	},
 	get_id_list_by_special_scene_id = {
+		[6015] = {
+			102101
+		},
 		[6014] = {
 			102201
 		},
@@ -157,6 +168,7 @@
 		119701,
 		104902,
 		113907,
-		102201
+		102201,
+		102101
 	}
 }

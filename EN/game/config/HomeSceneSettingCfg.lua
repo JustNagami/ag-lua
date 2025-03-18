@@ -299,6 +299,25 @@
 		scene_setting = {},
 		obtain_way = {}
 	},
+	[6015] = {
+		action_suffix = "",
+		title = "a929692a1b4193e0c6721ce191916133",
+		desc = "298109a077d3d541c5c81c449cf6b635",
+		obtain_word = "",
+		scene_trial = 0,
+		limit_display = 0,
+		prefix_dlc = "",
+		light_effect = "",
+		unlock_description = "",
+		prefix = "X312",
+		light_effect_delay = "",
+		id = 6015,
+		default_music = 0,
+		impact = {},
+		scene_tag = {},
+		scene_setting = {},
+		obtain_way = {}
+	},
 	[6100] = {
 		action_suffix = "",
 		title = "41bd3457c81b7885859d844c2272e16a",
@@ -335,6 +354,7 @@
 		6012,
 		6013,
 		6014,
+		6015,
 		6100
 	}
 }

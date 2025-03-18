@@ -139,6 +139,8 @@ function var_0_0.OnEnter(arg_9_0)
 		})
 		saveData("summer_tangram_decode", "first", true)
 	end
+
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_9_0.hiintTrans_)
 end
 
 function var_0_0.RefreshFixedPos(arg_10_0)
