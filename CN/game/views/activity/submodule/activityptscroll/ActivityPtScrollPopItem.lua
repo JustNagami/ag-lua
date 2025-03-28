@@ -41,7 +41,7 @@ function var_0_0.RefreshUI(arg_7_0)
 
 		arg_7_0.title_.text = var_7_0.name
 		arg_7_0.desc_.text = var_7_0.desc
-		arg_7_0.icon_.sprite = getSpriteWithoutAtlas(SpritePathCfg.AffixIcon.path .. var_7_0.icon)
+		arg_7_0.icon_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.AffixIcon.path .. var_7_0.icon)
 	else
 		arg_7_0.title_.text = getAffixName({
 			arg_7_0.data_.affix

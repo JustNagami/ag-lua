@@ -13,6 +13,7 @@ function var_0_1.InitUI(arg_2_0)
 
 	arg_2_0.statusController_ = ControllerUtil.GetController(arg_2_0.gameObject_.transform, "status")
 	arg_2_0.firstRewardController_ = ControllerUtil.GetController(arg_2_0.gameObject_.transform, "firstRecharge")
+	arg_2_0.retrunController_ = arg_2_0.controller_:GetController("isReturn")
 
 	if SDKTools.GetIsOverSea() then
 		SetActive(arg_2_0.rewardContainer_.gameObject, true)
@@ -113,7 +114,11 @@ function var_0_1.BuyMonthCard(arg_14_0)
 		RechargeData:ResetSign()
 	end
 
-	PayAction.RequestGSPay(101, 1)
+	if RegressionDataNew:CheckIsCanBuyRuturnDiscount(111) then
+		PayAction.RequestGSPay(111, 1)
+	else
+		PayAction.RequestGSPay(101, 1)
+	end
 end
 
 function var_0_1.OnTop(arg_15_0)
@@ -145,6 +150,13 @@ function var_0_1.UpdateView(arg_16_0)
 	end
 
 	SetActive(arg_16_0.refundGo_, not SDKTools.GetIsInputServer("kr"))
+	arg_16_0:UpdateRegressionDiscountShow()
+
+	if RegressionDataNew:CheckIsCanBuyRuturnDiscount(111) then
+		local var_16_2 = RegressionDataNew:GetPassDiscountEndTimes()
+
+		arg_16_0.regressCountDownTxt_.text = string.format(GetTips("LEFT_TIME"), manager.time:GetLostTimeStrWith2Unit(var_16_2))
+	end
 end
 
 function var_0_1.RefreshNewbie(arg_17_0, arg_17_1)
@@ -202,28 +214,48 @@ function var_0_1.OnEnter(arg_18_0)
 	manager.notify:RegistListener(NEWBIE_RECHARGE_UPDATE, arg_18_0.rechargeUpdateHandler_)
 end
 
-function var_0_1.OnExit(arg_20_0)
-	if arg_20_0.timer_ then
-		arg_20_0.timer_:Stop()
+function var_0_1.UpdateRegressionDiscountShow(arg_20_0)
+	if RegressionDataNew:CheckIsCanBuyRuturnDiscount(111) then
+		arg_20_0.retrunController_:SetSelectedState("true")
 
-		arg_20_0.timer_ = nil
+		arg_20_0.regressPriceText_.text = arg_20_0:GetPriceText(111)
+	else
+		arg_20_0.retrunController_:SetSelectedState("false")
+	end
+end
+
+function var_0_1.GetPriceText(arg_21_0, arg_21_1)
+	local var_21_0 = PaymentCfg[arg_21_1].cost / 100
+
+	if SDKTools.GetIsKorea() then
+		return var_21_0 .. GetTips("CURRENCY_TEXT")
+	else
+		return string.format(GetTips("NEW_REGRESSION_MONTH_PRICE"), PaymentCfg[arg_21_1].currency_symbol, var_21_0)
+	end
+end
+
+function var_0_1.OnExit(arg_22_0)
+	if arg_22_0.timer_ then
+		arg_22_0.timer_:Stop()
+
+		arg_22_0.timer_ = nil
 	end
 
-	manager.notify:RemoveListener(NEWBIE_RECHARGE_UPDATE, arg_20_0.rechargeUpdateHandler_)
+	manager.notify:RemoveListener(NEWBIE_RECHARGE_UPDATE, arg_22_0.rechargeUpdateHandler_)
 end
 
-function var_0_1.Hide(arg_21_0)
-	var_0_1.super.Hide(arg_21_0)
+function var_0_1.Hide(arg_23_0)
+	var_0_1.super.Hide(arg_23_0)
 end
 
-function var_0_1.Dispose(arg_22_0)
-	arg_22_0.rechargeUpdateHandler_ = nil
+function var_0_1.Dispose(arg_24_0)
+	arg_24_0.rechargeUpdateHandler_ = nil
 
-	var_0_1.super.Dispose(arg_22_0)
+	var_0_1.super.Dispose(arg_24_0)
 end
 
-function var_0_1.OnRechargeUpdate(arg_23_0, arg_23_1)
-	arg_23_0:RefreshNewbie(true)
+function var_0_1.OnRechargeUpdate(arg_25_0, arg_25_1)
+	arg_25_0:RefreshNewbie(true)
 end
 
 return var_0_1

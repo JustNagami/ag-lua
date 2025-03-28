@@ -168,7 +168,6 @@ function var_0_0.OnTop(arg_16_0)
 end
 
 function var_0_0.OnEnter(arg_18_0)
-	getSpriteWithoutAtlas("TextureConfig/Item_l/40701")
 	arg_18_0:RegistEventListener(MATERIAL_MODIFY, handler(arg_18_0, arg_18_0.RefreshMaterial))
 	manager.redPoint:bindUIandKey(arg_18_0.m_rewardBtn.transform, RedPointConst.MYTHIC_TIMES_AWARD)
 

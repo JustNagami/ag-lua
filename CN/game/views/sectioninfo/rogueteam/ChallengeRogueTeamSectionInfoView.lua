@@ -114,7 +114,7 @@ function var_0_0.RefreshBattleEffectPanel(arg_14_0)
 		local var_14_1 = ChallengeRogueTeamTools.GetBattleEffectTreeID()
 		local var_14_2 = RogueTeamSkillTreeCfg[var_14_1]
 
-		arg_14_0.buffIcon_.sprite = getSpriteWithoutAtlas(var_14_2.icon)
+		arg_14_0.buffIcon_.sprite = pureGetSpriteWithoutAtlas(var_14_2.icon)
 	end
 end
 
@@ -126,7 +126,7 @@ function var_0_0.RefreshShopEffectPanel(arg_15_0)
 
 		local var_15_0 = ChallengeRogueTeamTools.GetShopDiscountMechanismID()
 
-		arg_15_0.eventIcon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_15_0))
+		arg_15_0.eventIcon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_15_0))
 	end
 end
 
@@ -138,7 +138,7 @@ function var_0_0.RefreshEventEffectPanel(arg_16_0)
 
 		local var_16_0 = ChallengeRogueTeamTools.GetEventMoreMechanismID()
 
-		arg_16_0.eventIcon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_16_0))
+		arg_16_0.eventIcon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_16_0))
 	end
 end
 

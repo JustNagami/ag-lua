@@ -28,23 +28,21 @@ function var_0_0.SetData(arg_3_0, arg_3_1, arg_3_2, arg_3_3)
 		arg_3_0.prefabGo_ = Object.Instantiate(Asset.Load(arg_3_2), arg_3_0.transform_)
 	else
 		arg_3_0.showTextureController_:SetSelectedState("true")
-		getSpriteWithoutAtlasAsync(arg_3_2, function(arg_4_0)
-			arg_3_0.m_icon.sprite = arg_4_0
-		end)
+		SetSpriteWithoutAtlasAsync(arg_3_0.m_icon, arg_3_2)
 	end
 end
 
-function var_0_0.DestroyGo(arg_5_0)
-	if arg_5_0.prefabGo_ then
-		Object.Destroy(arg_5_0.prefabGo_)
+function var_0_0.DestroyGo(arg_4_0)
+	if arg_4_0.prefabGo_ then
+		Object.Destroy(arg_4_0.prefabGo_)
 
-		arg_5_0.prefabGo_ = nil
+		arg_4_0.prefabGo_ = nil
 	end
 end
 
-function var_0_0.Dispose(arg_6_0)
-	var_0_0.super.Dispose(arg_6_0)
-	arg_6_0:DestroyGo()
+function var_0_0.Dispose(arg_5_0)
+	var_0_0.super.Dispose(arg_5_0)
+	arg_5_0:DestroyGo()
 end
 
 return var_0_0

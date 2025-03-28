@@ -36,7 +36,7 @@ function var_0_0.OnEnter(arg_9_0)
 
 	local var_9_0 = SkinCfg[arg_9_0.skinID_] and SkinCfg[arg_9_0.skinID_].picture_id or "0"
 
-	arg_9_0.portriatImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/PortraitDLC/" .. var_9_0)
+	arg_9_0.portriatImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/PortraitDLC/" .. var_9_0)
 end
 
 return var_0_0

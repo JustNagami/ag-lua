@@ -450,6 +450,54 @@
 			525
 		}
 	},
+	[42] = {
+		activity_id = 321202,
+		free_dlc_icon = "",
+		id = 42,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_Skuld_1",
+		order = 500,
+		reward_list = {},
+		jump_system = {
+			16101,
+			321001
+		}
+	},
+	[43] = {
+		activity_id = 3200411,
+		free_dlc_icon = "",
+		id = 43,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_QuanZhou",
+		order = 100,
+		reward_list = {},
+		jump_system = {
+			16101,
+			321001,
+			323641
+		}
+	},
+	[44] = {
+		activity_id = 321111,
+		free_dlc_icon = "",
+		id = 44,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_105502",
+		order = 1000,
+		reward_list = {},
+		jump_system = {
+			525
+		}
+	},
+	[50] = {
+		activity_id = 312103,
+		free_dlc_icon = "",
+		id = 50,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_Kolgai_2",
+		order = 100,
+		reward_list = {},
+		jump_system = {
+			16001,
+			311001
+		}
+	},
 	[82101] = {
 		activity_id = 82101,
 		free_dlc_icon = "",
@@ -526,6 +574,10 @@
 		39,
 		40,
 		41,
+		42,
+		43,
+		44,
+		50,
 		82101,
 		92101,
 		102101

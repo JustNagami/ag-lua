@@ -21,6 +21,7 @@ function var_0_0.InitUI(arg_3_0)
 	arg_3_0.skillComtroller = ControllerUtil.GetController(arg_3_0.transform_, "skill")
 	arg_3_0.typeScroll = LuaList.New(handler(arg_3_0, arg_3_0.indexItem), arg_3_0.uilistGo_, DormRecommendSmallItem)
 	arg_3_0.sameNameController = ControllerUtil.GetController(arg_3_0.transform_, "sameName")
+	arg_3_0.lockHeroController = arg_3_0.controllers_:GetController("lock")
 end
 
 function var_0_0.AddUIListener(arg_4_0)
@@ -63,19 +64,23 @@ function var_0_0.RefreshUI(arg_9_0, arg_9_1)
 		arg_9_0.skillComtroller:SetSelectedState("false")
 	end
 
+	local var_9_2 = BackHomeTools.CheckHeroIsLockForAnyFeatureByHeroID(arg_9_1)
+
+	arg_9_0.lockHeroController:SetSelectedState(var_9_2 and "on" or "off")
+
 	arg_9_0.maxText_.text = "/" .. GameSetting.canteen_hero_fatigue_max.value[1]
 
-	local var_9_2 = DormData:GetHeroFatigue(arg_9_1)
+	local var_9_3 = DormData:GetHeroFatigue(arg_9_1)
 
-	arg_9_0.curText_.text = var_9_2
+	arg_9_0.curText_.text = var_9_3
 	arg_9_0.headiconImg_.sprite = DormHeroTools.GetBackHomeHeadSprite(arg_9_0.uid_)
-	arg_9_0.progressImg_.fillAmount = 1 - math.min(var_9_2 / GameSetting.canteen_hero_fatigue_max.value[1], 1)
+	arg_9_0.progressImg_.fillAmount = 1 - math.min(var_9_3 / GameSetting.canteen_hero_fatigue_max.value[1], 1)
 
-	local var_9_3 = GameDisplayCfg.dorm_hero_fatigue_level.value
+	local var_9_4 = GameDisplayCfg.dorm_hero_fatigue_level.value
 
-	if var_9_2 <= var_9_3[1] then
+	if var_9_3 <= var_9_4[1] then
 		arg_9_0.fatigueComtroller:SetSelectedState("lack")
-	elseif var_9_2 > var_9_3[1] and var_9_2 <= var_9_3[2] then
+	elseif var_9_3 > var_9_4[1] and var_9_3 <= var_9_4[2] then
 		arg_9_0.fatigueComtroller:SetSelectedState("middle")
 	else
 		arg_9_0.fatigueComtroller:SetSelectedState("full")
@@ -89,11 +94,9 @@ function var_0_0.RefreshUI(arg_9_0, arg_9_1)
 		return
 	end
 
-	arg_9_0.sameNameController:SetSelectedState("false")
+	local var_9_5 = CanteenEntrustData:CheckDispatchCharacterArchiveList(arg_9_1) and not CanteenEntrustData:CheckDispatchCharacterList(arg_9_1)
 
-	if CanteenEntrustData:CheckDispatchCharacterArchiveList(arg_9_1) and not CanteenEntrustData:CheckDispatchCharacterList(arg_9_1) then
-		arg_9_0.sameNameController:SetSelectedState("true")
-	end
+	arg_9_0.sameNameController:SetSelectedState(var_9_5 and "true" or "false")
 
 	if CanteenEntrustData:CheckDispatchCharacterList(arg_9_1) then
 		arg_9_0.stateController:SetSelectedState("select")

@@ -28,7 +28,7 @@ end
 function var_0_0.RefreshUI(arg_4_0)
 	local var_4_0 = RogueTeamItemCfg[arg_4_0.suitSkillID_].camp[1]
 
-	arg_4_0.icon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetCampIcon(var_4_0))
+	arg_4_0.icon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetCampIcon(var_4_0))
 	arg_4_0.numText_.text = string.format("%d", arg_4_0.cnt_)
 
 	SetActive(arg_4_0.gameObject_, true)

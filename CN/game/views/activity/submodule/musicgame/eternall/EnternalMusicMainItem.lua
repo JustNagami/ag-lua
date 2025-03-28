@@ -102,7 +102,7 @@ function var_0_0.RefreshUI(arg_8_0)
 	local var_8_2 = ActivityMusicCfg[var_8_1]
 
 	arg_8_0.m_title.text = GetI18NText(var_8_2.name)
-	arg_8_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng1stUI/" .. var_8_2.icon)
+	arg_8_0.m_icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng1stUI/" .. var_8_2.icon)
 
 	arg_8_0:RefreshActivity()
 	arg_8_0:RefrenTime()

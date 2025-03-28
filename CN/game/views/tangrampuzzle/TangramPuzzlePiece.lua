@@ -86,7 +86,7 @@ function var_0_0.RefreshUI(arg_10_0)
 		local var_10_0 = TangramPuzzleCfg[arg_10_0.activityID_]
 		local var_10_1 = TangramPuzzleTools.GetPuzzlePictureDic(arg_10_0.activityID_)[arg_10_0.curID_]
 
-		arg_10_0.icon_.sprite = getSpriteWithoutAtlas(var_10_0.path .. var_10_1)
+		arg_10_0.icon_.sprite = pureGetSpriteWithoutAtlas(var_10_0.path .. var_10_1)
 
 		arg_10_0.icon_:SetNativeSize()
 	end

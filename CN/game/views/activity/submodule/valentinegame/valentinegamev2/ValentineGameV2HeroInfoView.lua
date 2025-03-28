@@ -61,7 +61,7 @@ function var_0_0.RefreshUI(arg_10_0)
 	local var_10_0 = ValentineGameData:GetData(arg_10_0.activityID_)
 
 	arg_10_0.finishNumText_.text = #var_10_0.selectQuestionID .. "/" .. #arg_10_0.cfg_.hero_qa_id
-	arg_10_0.heroImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. arg_10_0.cfg_.hero_id .. "_split_1")
+	arg_10_0.heroImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. arg_10_0.cfg_.hero_id .. "_split_1")
 
 	arg_10_0.heroImage_:SetNativeSize()
 	arg_10_0.rewardList_:StartScroll(#arg_10_0.cfg_.reward_item_list)

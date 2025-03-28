@@ -1834,6 +1834,93 @@
 		},
 		time = {}
 	},
+	[144] = {
+		id = 144,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_Rush",
+		activityId = 320761,
+		order = 85,
+		parameter = {
+			302
+		},
+		time = {}
+	},
+	[145] = {
+		id = 145,
+		hide_condition = "",
+		type = 1,
+		picture = "activity46",
+		activityId = 320031,
+		order = 80,
+		parameter = {
+			404,
+			4000303
+		},
+		time = {}
+	},
+	[146] = {
+		id = 146,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1085",
+		activityId = 320033,
+		order = 81,
+		parameter = {
+			404,
+			4000601
+		},
+		time = {}
+	},
+	[147] = {
+		id = 147,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1073",
+		activityId = 320035,
+		order = 82,
+		parameter = {
+			404,
+			4000602
+		},
+		time = {}
+	},
+	[148] = {
+		id = 148,
+		hide_condition = "",
+		type = 1,
+		picture = "activity45",
+		activityId = 321001,
+		order = 84,
+		parameter = {
+			523
+		},
+		time = {}
+	},
+	[149] = {
+		id = 149,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_RechargeReset",
+		activityId = 321001,
+		order = 83,
+		parameter = {
+			536
+		},
+		time = {}
+	},
+	[150] = {
+		id = 150,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_105502",
+		activityId = 321111,
+		order = 86,
+		parameter = {
+			525
+		},
+		time = {}
+	},
 	[31000] = {
 		id = 31000,
 		hide_condition = "",
@@ -1991,6 +2078,13 @@
 		141,
 		142,
 		143,
+		144,
+		145,
+		146,
+		147,
+		148,
+		149,
+		150,
 		31000,
 		31001
 	}

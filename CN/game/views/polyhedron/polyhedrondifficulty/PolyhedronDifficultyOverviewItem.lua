@@ -35,7 +35,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 		end
 
 		arg_5_0.m_des.text = GetTips(PolyhedronConst.SPECIAL_ATTR_DESC[var_5_1][2]) .. "\n" .. GetTips(PolyhedronConst.SPECIAL_ATTR_DESC[var_5_1][3]) .. var_5_2
-		arg_5_0.m_icon.sprite = getSpriteWithoutAtlas(PolyhedronConst.HERO_ATTRIBUTE_ICON_PATH .. var_5_1)
+		arg_5_0.m_icon.sprite = pureGetSpriteWithoutAtlas(PolyhedronConst.HERO_ATTRIBUTE_ICON_PATH .. var_5_1)
 	end
 end
 

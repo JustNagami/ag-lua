@@ -158,10 +158,10 @@ function var_0_0.SendUpdateQuestTrackToSdk(arg_18_0, arg_18_1)
 
 	local var_18_1
 
-	for iter_18_0, iter_18_1 in ipairs(ActivitySandplayCfg.all) do
-		local var_18_2 = ActivitySandplayCfg[iter_18_1]
+	for iter_18_0, iter_18_1 in ipairs(SandPlayMapCfg.all) do
+		local var_18_2 = SandPlayMapCfg[iter_18_1]
 
-		if var_18_2.stage_id == var_18_0 then
+		if var_18_2.id == var_18_0 then
 			var_18_1 = var_18_2.activity_id
 
 			break

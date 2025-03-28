@@ -165,6 +165,7 @@ function var_0_1.Show(arg_17_0)
 	end
 
 	arg_17_0:RefreshSkillItemS()
+	arg_17_0:RefreshComboSkillBtn()
 end
 
 function var_0_1.HideAni(arg_18_0)

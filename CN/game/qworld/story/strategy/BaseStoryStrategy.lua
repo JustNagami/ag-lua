@@ -22,7 +22,7 @@ end
 
 function var_0_0.StartStory(arg_5_0, arg_5_1, arg_5_2)
 	if arg_5_0.isInTalk then
-		arg_5_0:PreContinueStop()
+		QWorldMgr:GetQWorldStoryMgr():PreContinueStop()
 	end
 
 	arg_5_0.luaTarget = arg_5_2
@@ -58,6 +58,18 @@ end
 
 function var_0_0.GetStoryID(arg_11_0)
 	return arg_11_0.storyID
+end
+
+function var_0_0.GetStoryHistory(arg_12_0)
+	return {}
+end
+
+function var_0_0.ChangeAutoPlayState(arg_13_0, arg_13_1)
+	return
+end
+
+function var_0_0.GetAutoPlayState(arg_14_0)
+	return
 end
 
 return var_0_0

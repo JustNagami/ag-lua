@@ -39,7 +39,7 @@ function var_0_0.SetUpMusic()
 	local var_1_6 = GameObject.Find("movie")
 
 	if var_1_6 then
-		var_1_6:GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas("TextureConfig/Music/Music_bg/" .. ActivityMusicCfg[var_1_1].icon)
+		var_1_6:GetComponent("SpriteRenderer").sprite = pureGetSpriteWithoutAtlas("TextureConfig/Music/Music_bg/" .. ActivityMusicCfg[var_1_1].icon)
 	end
 end
 

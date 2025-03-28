@@ -13,271 +13,342 @@ function var_0_0.InitUI(arg_2_0)
 	arg_2_0.criManaMovieController_ = arg_2_0.goMovie_:GetComponent("CriManaMovieControllerForUI")
 	arg_2_0.criplayer_ = arg_2_0.criManaMovieController_.player
 	arg_2_0.criplayer_.statusChangeCallback = handler(arg_2_0, arg_2_0.StatusChangeCallback)
+
+	arg_2_0:SetUIBtnActive(true)
+
+	arg_2_0.soundStateController_ = arg_2_0.soundControllerEx_:GetController("sound")
+	arg_2_0.showSoundSettingController_ = arg_2_0.controllerEx_:GetController("showSoundSetting")
+	arg_2_0.showSoundFlag_ = false
 end
 
-function var_0_0.AddListeners(arg_3_0)
-	arg_3_0:AddBtnListener(arg_3_0.buttonClose_, nil, function()
-		return
+function var_0_0.SetUIBtnActive(arg_3_0, arg_3_1)
+	SetActive(arg_3_0.buttonSkip_.gameObject, arg_3_1)
+	SetActive(arg_3_0.text_.gameObject, arg_3_1)
+end
+
+function var_0_0.AddListeners(arg_4_0)
+	arg_4_0:AddBtnListener(arg_4_0.buttonClose_, nil, function()
+		if arg_4_0.showSoundFlag_ then
+			arg_4_0.showSoundFlag_ = false
+
+			arg_4_0:RefreshSoundPanel()
+
+			return
+		end
 	end)
-	arg_3_0:AddBtnListener(arg_3_0.buttonSkip_, nil, function()
-		if Time.realtimeSinceStartup == arg_3_0.lastTime then
+	arg_4_0:AddBtnListener(arg_4_0.buttonSkip_, nil, function()
+		if Time.realtimeSinceStartup == arg_4_0.lastTime then
 			return
 		end
 
-		arg_3_0.lastTime = Time.realtimeSinceStartup
+		arg_4_0.lastTime = Time.realtimeSinceStartup
 
-		arg_3_0.criManaMovieController_:Pause(true)
+		arg_4_0.criManaMovieController_:Pause(true)
 
-		if arg_3_0.onPauseCallback then
-			arg_3_0.onPauseCallback(true)
+		if arg_4_0.onPauseCallback then
+			arg_4_0.onPauseCallback(true)
 		end
 
-		arg_3_0:RemoveCaptionTimer()
+		arg_4_0:RemoveCaptionTimer()
 		ShowMessageBox({
 			isTop = true,
 			title = GetTips("PROMPT"),
 			content = GetTips("TIP_SKIP_PLOT"),
 			OkCallback = function()
-				if not isNil(arg_3_0.criManaMovieController_) then
-					arg_3_0.criManaMovieController_:Pause(false)
-					arg_3_0.criManaMovieController_:Stop()
+				if not isNil(arg_4_0.criManaMovieController_) then
+					arg_4_0.criManaMovieController_:Pause(false)
+					arg_4_0.criManaMovieController_:Stop()
 				end
 
-				if arg_3_0.onFinishCallback_ then
-					arg_3_0.onFinishCallback_(StoryOperDefine.PASS)
+				if arg_4_0.onFinishCallback_ then
+					arg_4_0.onFinishCallback_(StoryOperDefine.PASS)
 				end
 			end,
 			CancelCallback = function()
-				if not isNil(arg_3_0.criManaMovieController_) then
-					arg_3_0.criManaMovieController_:Pause(false)
+				if not isNil(arg_4_0.criManaMovieController_) then
+					arg_4_0.criManaMovieController_:Pause(false)
 				end
 
-				if arg_3_0.onPauseCallback then
-					arg_3_0.onPauseCallback(false)
+				if arg_4_0.onPauseCallback then
+					arg_4_0.onPauseCallback(false)
 				end
 
-				arg_3_0:StartCaptionTimer()
+				arg_4_0:StartCaptionTimer()
 			end,
 			MaskCallback = function()
-				if not isNil(arg_3_0.criManaMovieController_) then
-					arg_3_0.criManaMovieController_:Pause(false)
+				if not isNil(arg_4_0.criManaMovieController_) then
+					arg_4_0.criManaMovieController_:Pause(false)
 				end
 
-				if arg_3_0.onPauseCallback then
-					arg_3_0.onPauseCallback(false)
+				if arg_4_0.onPauseCallback then
+					arg_4_0.onPauseCallback(false)
 				end
 
-				arg_3_0:StartCaptionTimer()
+				arg_4_0:StartCaptionTimer()
 			end
 		})
 	end)
+	arg_4_0:AddBtnListener(arg_4_0.soundBtn_, nil, function()
+		arg_4_0.showSoundFlag_ = not arg_4_0.showSoundFlag_
+
+		arg_4_0:RefreshSoundPanel()
+	end)
+	arg_4_0:AddToggleListener(arg_4_0.slider_, function(arg_11_0)
+		arg_4_0:SetSoundValue(arg_11_0)
+	end)
+	arg_4_0:AddPressingByTimeListener(arg_4_0.subtractBtn_.gameObject, 3, 0.2, 0.2, function()
+		if arg_4_0.subtractBtn_.interactable and arg_4_0.slider_.value > 0 then
+			local var_12_0 = arg_4_0.slider_.value - 1
+
+			arg_4_0:SetSoundValue(var_12_0)
+
+			return true
+		end
+
+		return false
+	end)
+	arg_4_0:AddPressingByTimeListener(arg_4_0.addBtn_.gameObject, 3, 0.2, 0.2, function()
+		if arg_4_0.addBtn_.interactable and arg_4_0.slider_.value < 100 then
+			local var_13_0 = arg_4_0.slider_.value + 1
+
+			arg_4_0:SetSoundValue(var_13_0)
+
+			return true
+		end
+
+		return false
+	end)
 end
 
-function var_0_0.Play(arg_9_0, arg_9_1, arg_9_2, arg_9_3, arg_9_4, arg_9_5, arg_9_6)
-	if arg_9_0.gameObject_ == nil then
-		arg_9_0:InitUI()
-		arg_9_0:AddListeners()
+function var_0_0.SetPlayer(arg_14_0)
+	return
+end
+
+function var_0_0.Play(arg_15_0, arg_15_1, arg_15_2, arg_15_3, arg_15_4, arg_15_5, arg_15_6, arg_15_7)
+	if arg_15_0.gameObject_ == nil then
+		arg_15_0:InitUI()
+		arg_15_0:AddListeners()
 	end
 
-	arg_9_0.startStop_ = false
+	arg_15_0.startStop_ = false
 
-	if arg_9_3 == nil then
-		arg_9_0.autoHide_ = true
+	if arg_15_3 == nil then
+		arg_15_0.autoHide_ = true
 	else
-		arg_9_0.autoHide_ = arg_9_3
+		arg_15_0.autoHide_ = arg_15_3
 	end
 
-	SetActive(arg_9_0.goSkip_, true)
+	SetActive(arg_15_0.goSkip_, true)
 
-	local var_9_0 = manager.audio:GetMusicVolume()
+	arg_15_0.musicVolume_ = manager.audio:GetMusicVolume() * 100
 
-	arg_9_0.criplayer_:SetVolume(var_9_0)
+	arg_15_0:RefreshSoundUI()
 
-	local var_9_1 = manager.audio:GetLocalizationFlag()
-	local var_9_2 = 0
-	local var_9_3
+	local var_15_0 = manager.audio:GetLocalizationFlag()
+	local var_15_1 = 0
+	local var_15_2
 
-	for iter_9_0 in string.gmatch(arg_9_1, "[^/]+$") do
-		var_9_3 = iter_9_0
+	for iter_15_0 in string.gmatch(arg_15_1, "[^/]+$") do
+		var_15_2 = iter_15_0
 	end
 
-	local var_9_4 = VideoTrackCfg[var_9_3]
+	local var_15_3 = VideoTrackCfg[var_15_2]
 
-	if var_9_4 and var_9_4.has_tracks == 1 then
-		if var_9_1 == "zh" then
-			var_9_2 = 0
-		elseif var_9_1 == "ja" then
-			var_9_2 = 1
-		elseif var_9_1 == "en" then
-			var_9_2 = 2
-		elseif var_9_1 == "ko" then
-			var_9_2 = 3
+	if var_15_3 and var_15_3.has_tracks == 1 then
+		if var_15_0 == "zh" then
+			var_15_1 = 0
+		elseif var_15_0 == "ja" then
+			var_15_1 = 1
+		elseif var_15_0 == "en" then
+			var_15_1 = 2
+		elseif var_15_0 == "ko" then
+			var_15_1 = 3
 		end
 	end
 
-	arg_9_0.criplayer_:SetAudioTrack(var_9_2)
-	arg_9_0.criplayer_:SetSubtitleChannel(var_9_2)
+	arg_15_0.criplayer_:SetAudioTrack(var_15_1)
+	arg_15_0.criplayer_:SetSubtitleChannel(var_15_1)
 
-	if arg_9_4 == nil then
-		arg_9_0.criplayer_:Loop(false)
+	if arg_15_4 == nil then
+		arg_15_0.criplayer_:Loop(false)
 	else
-		arg_9_0.criplayer_:Loop(arg_9_4)
+		arg_15_0.criplayer_:Loop(arg_15_4)
 	end
 
-	SetFile(arg_9_0.criplayer_, nil, arg_9_1)
+	SetFile(arg_15_0.criplayer_, nil, arg_15_1, arg_15_7)
 
-	arg_9_0.onFinishCallback_ = arg_9_2
-	arg_9_0.onPauseCallback = arg_9_5
-	arg_9_0.videoId = arg_9_6
+	arg_15_0.onFinishCallback_ = arg_15_2
+	arg_15_0.onPauseCallback = arg_15_5
+	arg_15_0.videoId = arg_15_6
 
-	SetActive(arg_9_0.gameObject_, true)
+	SetActive(arg_15_0.gameObject_, true)
 
-	if not isNil(arg_9_0.criManaMovieController_) then
-		arg_9_0.criManaMovieController_:Play()
+	if not isNil(arg_15_0.criManaMovieController_) then
+		arg_15_0.criManaMovieController_:Play()
 	end
 
-	arg_9_0:CaptionPlay()
+	arg_15_0:CaptionPlay()
 	manager.windowBar:HideBar()
-	arg_9_0:AdaptScreen()
+	arg_15_0:AdaptScreen()
 end
 
-function var_0_0.CaptionPlay(arg_10_0)
-	arg_10_0.time = 0
-	arg_10_0.lastTime = 0
-	arg_10_0.currentPlayId = 1
+function var_0_0.CaptionPlay(arg_16_0)
+	arg_16_0.time = 0
+	arg_16_0.lastTime = 0
+	arg_16_0.currentPlayId = 1
 
-	arg_10_0:StartCaptionTimer()
+	arg_16_0:StartCaptionTimer()
 end
 
-function var_0_0.StartCaptionTimer(arg_11_0)
-	if arg_11_0.videoId == nil or arg_11_0.videoId == 0 then
-		arg_11_0.text_.text = ""
+function var_0_0.StartCaptionTimer(arg_17_0)
+	if arg_17_0.videoId == nil or arg_17_0.videoId == 0 then
+		arg_17_0.text_.text = ""
 
 		return
 	end
 
-	local var_11_0 = SettingData:GetCurrentLanguage()
-	local var_11_1 = import("game.subtitle.subtitle" .. arg_11_0.videoId)
+	local var_17_0 = SettingData:GetCurrentLanguage()
+	local var_17_1 = import("game.subtitle.subtitle" .. arg_17_0.videoId)
 
-	if var_11_1 == nil then
-		arg_11_0:RemoveCaptionTimer()
+	if var_17_1 == nil then
+		arg_17_0:RemoveCaptionTimer()
 
 		return
 	else
-		var_11_1 = var_11_1[var_11_0]
+		var_17_1 = var_17_1[var_17_0]
 	end
 
-	table.sort(var_11_1, function(arg_12_0, arg_12_1)
-		return arg_12_0.start < arg_12_1.start
+	table.sort(var_17_1, function(arg_18_0, arg_18_1)
+		return arg_18_0.start < arg_18_1.start
 	end)
 
-	if not arg_11_0.captionTimer then
-		arg_11_0.captionTimer = FuncTimerManager.inst:CreateFuncFrameTimer(function()
-			arg_11_0.text_.text = ""
-			arg_11_0.time = arg_11_0.time + Time.deltaTime
+	if not arg_17_0.captionTimer then
+		arg_17_0.captionTimer = FuncTimerManager.inst:CreateFuncFrameTimer(function()
+			arg_17_0.text_.text = ""
+			arg_17_0.time = arg_17_0.time + Time.deltaTime
 
-			if arg_11_0.lastTime + 3 < arg_11_0.time then
-				local var_13_0 = tonumber(tostring(arg_11_0.criplayer_:GetTime()) / 1000000)
+			if arg_17_0.lastTime + 3 < arg_17_0.time then
+				local var_19_0 = tonumber(tostring(arg_17_0.criplayer_:GetTime()) / 1000000)
 
-				arg_11_0.time = var_13_0
-				arg_11_0.lastTime = arg_11_0.time
+				arg_17_0.time = var_19_0
+				arg_17_0.lastTime = arg_17_0.time
 			end
 
-			local var_13_1 = var_11_1[arg_11_0.currentPlayId]
+			local var_19_1 = var_17_1[arg_17_0.currentPlayId]
 
-			if var_13_1 == nil then
-				arg_11_0:RemoveCaptionTimer()
+			if var_19_1 == nil then
+				arg_17_0:RemoveCaptionTimer()
 
 				return
 			end
 
-			if arg_11_0.time < var_13_1.endTime and arg_11_0.time > var_13_1.start then
-				arg_11_0.text_.text = GetI18NText(var_13_1.content)
-			elseif arg_11_0.time > var_13_1.endTime then
-				arg_11_0.currentPlayId = arg_11_0.currentPlayId + 1
+			if arg_17_0.time < var_19_1.endTime and arg_17_0.time > var_19_1.start then
+				arg_17_0.text_.text = GetI18NText(var_19_1.content)
+			elseif arg_17_0.time > var_19_1.endTime then
+				arg_17_0.currentPlayId = arg_17_0.currentPlayId + 1
 			end
 		end, -1, true)
 	end
 end
 
-function var_0_0.PauseCaptionTimer(arg_14_0)
-	if arg_14_0.captionTimer then
-		FuncTimerManager.inst:RemoveFuncTimer(arg_14_0.captionTimer)
+function var_0_0.PauseCaptionTimer(arg_20_0)
+	if arg_20_0.captionTimer then
+		FuncTimerManager.inst:RemoveFuncTimer(arg_20_0.captionTimer)
 
-		arg_14_0.captionTimer = nil
+		arg_20_0.captionTimer = nil
 	end
 end
 
-function var_0_0.RemoveCaptionTimer(arg_15_0)
-	if arg_15_0.captionTimer then
-		FuncTimerManager.inst:RemoveFuncTimer(arg_15_0.captionTimer)
+function var_0_0.RemoveCaptionTimer(arg_21_0)
+	if arg_21_0.captionTimer then
+		FuncTimerManager.inst:RemoveFuncTimer(arg_21_0.captionTimer)
 
-		arg_15_0.captionTimer = nil
+		arg_21_0.captionTimer = nil
 	end
 end
 
-function var_0_0.Dispose(arg_16_0)
-	var_0_0.super.Dispose(arg_16_0)
+function var_0_0.Dispose(arg_22_0)
+	var_0_0.super.Dispose(arg_22_0)
 
-	if arg_16_0.gameObject_ then
-		arg_16_0.criplayer_.statusChangeCallback = nil
+	if arg_22_0.gameObject_ then
+		arg_22_0.criplayer_.statusChangeCallback = nil
 
-		arg_16_0:RemoveCaptionTimer()
-		Object.Destroy(arg_16_0.gameObject_)
+		arg_22_0:RemoveCaptionTimer()
+		Object.Destroy(arg_22_0.gameObject_)
 
-		arg_16_0.gameObject_ = nil
-		arg_16_0.transform_ = nil
-		arg_16_0.onFinishCallback_ = nil
-		arg_16_0.onPauseCallback = nil
+		arg_22_0.gameObject_ = nil
+		arg_22_0.transform_ = nil
+		arg_22_0.onFinishCallback_ = nil
+		arg_22_0.onPauseCallback = nil
 	end
 end
 
-function var_0_0.StatusChangeCallback(arg_17_0, arg_17_1)
-	local var_17_0 = tostring(arg_17_1)
+function var_0_0.StatusChangeCallback(arg_23_0, arg_23_1)
+	local var_23_0 = tostring(arg_23_1)
 
-	if var_17_0 == "PlayEnd" then
-		if not isNil(arg_17_0.criManaMovieController_) then
-			arg_17_0.criManaMovieController_:Stop()
+	if var_23_0 == "PlayEnd" then
+		if not isNil(arg_23_0.criManaMovieController_) then
+			arg_23_0.criManaMovieController_:Stop()
 		end
 
-		arg_17_0:RemoveCaptionTimer()
+		arg_23_0:RemoveCaptionTimer()
 
-		if arg_17_0.onFinishCallback_ then
-			arg_17_0.onFinishCallback_(StoryOperDefine.NORMAL)
+		if arg_23_0.onFinishCallback_ then
+			arg_23_0.onFinishCallback_(StoryOperDefine.NORMAL)
 		end
-	elseif var_17_0 == "StopProcessing" then
-		arg_17_0.startStop_ = true
+	elseif var_23_0 == "StopProcessing" then
+		arg_23_0.startStop_ = true
 
 		return
-	elseif var_17_0 == "Stop" and arg_17_0.startStop_ and arg_17_0.autoHide_ then
-		SetActive(arg_17_0.gameObject_, false)
+	elseif var_23_0 == "Stop" and arg_23_0.startStop_ and arg_23_0.autoHide_ then
+		SetActive(arg_23_0.gameObject_, false)
 	end
 
-	arg_17_0.startStop_ = false
+	arg_23_0.startStop_ = false
 end
 
-function var_0_0.HidePlayer(arg_18_0)
-	if arg_18_0.startStop_ then
-		arg_18_0.autoHide_ = true
+function var_0_0.HidePlayer(arg_24_0)
+	if arg_24_0.startStop_ then
+		arg_24_0.autoHide_ = true
 
 		return
 	end
 
-	if arg_18_0.gameObject_ then
-		SetActive(arg_18_0.gameObject_, false)
+	if arg_24_0.gameObject_ then
+		SetActive(arg_24_0.gameObject_, false)
 	end
 
-	arg_18_0.autoHide_ = true
+	arg_24_0.autoHide_ = true
 end
 
-function var_0_0.AdaptRight(arg_19_0)
-	if arg_19_0.rightTrs_ == nil then
-		arg_19_0.rightGo_ = arg_19_0.goSkip_
-		arg_19_0.rightTrs_ = arg_19_0.rightGo_:GetComponent(typeof(RectTransform))
-		arg_19_0.needAdaptRight_ = false
-	end
+function var_0_0.SetSoundValue(arg_25_0, arg_25_1)
+	arg_25_0.musicVolume_ = arg_25_1
 
-	var_0_0.super.AdaptRight(arg_19_0)
+	arg_25_0:RefreshSoundUI()
+end
+
+function var_0_0.RefreshSoundUI(arg_26_0)
+	arg_26_0.criplayer_:SetVolume(arg_26_0.musicVolume_ / 100)
+	arg_26_0:RefreshSoundState()
+
+	arg_26_0.slider_.value = arg_26_0.musicVolume_
+	arg_26_0.soundText_.text = string.format("%d%%", arg_26_0.musicVolume_)
+end
+
+function var_0_0.RefreshSoundPanel(arg_27_0)
+	if arg_27_0.showSoundFlag_ then
+		arg_27_0.showSoundSettingController_:SetSelectedState("true")
+	else
+		arg_27_0.showSoundSettingController_:SetSelectedState("false")
+	end
+end
+
+function var_0_0.RefreshSoundState(arg_28_0)
+	if arg_28_0.musicVolume_ <= 0 then
+		arg_28_0.soundStateController_:SetSelectedState("off")
+	else
+		arg_28_0.soundStateController_:SetSelectedState("on")
+	end
 end
 
 return var_0_0

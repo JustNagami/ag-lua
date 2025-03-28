@@ -44,7 +44,7 @@ function var_0_0.UpdateView(arg_7_0)
 	arg_7_0.m_icon.sprite = ItemTools.getItemSprite(arg_7_0.data_.icon)
 	arg_7_0.m_name.text = GetI18NText(arg_7_0.data_.name)
 	arg_7_0.m_scoreText.text = arg_7_0.data_.damage
-	arg_7_0.m_frame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_7_0.data_.icon_frame)
+	arg_7_0.m_frame.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_7_0.data_.icon_frame)
 end
 
 function var_0_0.OnEnter(arg_8_0)

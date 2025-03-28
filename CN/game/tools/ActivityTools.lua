@@ -624,6 +624,8 @@ function var_0_0.GetRedPointKey(arg_8_0)
 		return RedPointConst.ACTIVITY_AUTO_COOK .. "_"
 	elseif var_8_0 == ActivityTemplateConst.ACTIVITY_BLOOD_CARD then
 		return RedPointConst.ACTIVITY_BLOOD_CARD .. "_"
+	elseif var_8_0 == ActivityTemplateConst.ACTIVITY_SKULD_MAIN then
+		return RedPointConst.ACTIVITY_STORY_STAGE
 	else
 		return RedPointConst.ACTIVITY_COMMON .. "_"
 	end
@@ -644,57 +646,36 @@ function var_0_0.GetMainActivityId(arg_9_0)
 end
 
 function var_0_0.ActivityOpenCheck(arg_10_0)
-	local var_10_0 = ActivityData:GetActivityData(arg_10_0)
+	local var_10_0, var_10_1 = var_0_0.GetActivityStatusWithTips(arg_10_0)
 
-	if manager.time:GetServerTime() < var_10_0.startTime then
-		local var_10_1 = GetTips("OPEN_TIME")
-
-		ShowTips(string.format(var_10_1, manager.time:GetLostTimeStr(var_10_0.startTime)))
-
-		return false
-	end
-
-	if manager.time:GetServerTime() >= var_10_0.stopTime then
-		ShowTips("TIME_OVER")
+	if var_10_0 == ActivityConst.ACTIVITY_STATE.ACTIVING then
+		return true
+	else
+		ShowTips(var_10_1)
 
 		return false
 	end
-
-	return true
 end
 
 function var_0_0.ActivityOpenCheckByMessageBox(arg_11_0, arg_11_1, arg_11_2)
-	local var_11_0 = ActivityData:GetActivityData(arg_11_0)
+	local var_11_0, var_11_1 = var_0_0.GetActivityStatusWithTips(arg_11_0)
 
-	if manager.time:GetServerTime() < var_11_0.startTime then
-		local var_11_1 = GetTips("OPEN_TIME")
+	if var_11_0 == ActivityConst.ACTIVITY_STATE.ACTIVING then
+		if arg_11_2 then
+			arg_11_2()
+		end
 
+		return true
+	else
 		ShowMessageBox({
 			ButtonType = "SingleBtn",
 			title = GetTips("PROMPT"),
-			content = string.format(var_11_1, manager.time:GetLostTimeStr(var_11_0.start_time)),
+			content = var_11_1,
 			OkCallback = arg_11_1
 		})
 
 		return false
 	end
-
-	if manager.time:GetServerTime() >= var_11_0.stopTime then
-		ShowMessageBox({
-			ButtonType = "SingleBtn",
-			title = GetTips("PROMPT"),
-			content = GetTips("TIME_OVER"),
-			OkCallback = arg_11_1
-		})
-
-		return false
-	end
-
-	if arg_11_2 then
-		arg_11_2()
-	end
-
-	return true
 end
 
 function var_0_0.GetActivityLostTimeStrWith2Unit(arg_12_0)
@@ -804,10 +785,12 @@ function var_0_0.GetActivityIsOpenWithTip(arg_19_0, arg_19_1)
 		local var_19_0 = ActivityData:GetActivityData(arg_19_0)
 		local var_19_1 = manager.time:GetServerTime()
 
-		if var_19_0 and var_19_1 < var_19_0.startTime then
-			ShowTips(string.format(GetTips("OPEN_TIME"), manager.time:GetLostTimeStr(var_19_0.startTime)))
-		else
-			ShowTips("TIME_OVER")
+		if var_19_0 then
+			if var_19_1 <= var_19_0.startTime then
+				ShowTips(GetTipsF("OPEN_TIME", manager.time:GetLostTimeStr(var_19_0.startTime, false, true)))
+			elseif var_19_1 >= var_19_0.stopTime then
+				ShowTips("TIME_OVER")
+			end
 		end
 
 		return false
@@ -823,11 +806,15 @@ function var_0_0.GetActivityStatus(arg_20_0)
 		local var_20_0 = ActivityData:GetActivityData(arg_20_0)
 		local var_20_1 = manager.time:GetServerTime()
 
-		if var_20_0 and var_20_1 < var_20_0.startTime then
-			return ActivityConst.ACTIVITY_STATE.WAIT
-		else
-			return ActivityConst.ACTIVITY_STATE.OVER
+		if var_20_0 then
+			if var_20_1 <= var_20_0.startTime then
+				return ActivityConst.ACTIVITY_STATE.WAIT
+			elseif var_20_1 >= var_20_0.stopTime then
+				return ActivityConst.ACTIVITY_STATE.OVER
+			end
 		end
+
+		return ActivityConst.ACTIVITY_STATE.UNKNOWN
 	end
 end
 
@@ -838,11 +825,15 @@ function var_0_0.GetActivityStatusWithTips(arg_21_0)
 		local var_21_0 = ActivityData:GetActivityData(arg_21_0)
 		local var_21_1 = manager.time:GetServerTime()
 
-		if var_21_0 and var_21_1 < var_21_0.startTime then
-			return ActivityConst.ACTIVITY_STATE.WAIT, GetTipsF("OPEN_TIME", manager.time:GetLostTimeStr(var_21_0.startTime))
-		else
-			return ActivityConst.ACTIVITY_STATE.OVER, GetTips("TIME_OVER")
+		if var_21_0 then
+			if var_21_1 <= var_21_0.startTime then
+				return ActivityConst.ACTIVITY_STATE.WAIT, GetTipsF("OPEN_TIME", manager.time:GetLostTimeStr(var_21_0.startTime, false, true))
+			elseif var_21_1 >= var_21_0.stopTime then
+				return ActivityConst.ACTIVITY_STATE.OVER, GetTips("TIME_OVER")
+			end
 		end
+
+		return ActivityConst.ACTIVITY_STATE.UNKNOWN
 	end
 end
 

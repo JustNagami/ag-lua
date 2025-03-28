@@ -98,6 +98,105 @@
 			-1
 		}
 	},
+	[60500004] = {
+		tips = "《苦岸行旅》 - 无法触碰的手掌 关卡流程测试",
+		name = "主线流程测试一(无复活)",
+		ai_level = 4,
+		map = "60500004",
+		monster_level = 80,
+		need_default_team = 0,
+		affix_type = "",
+		id = 60500004,
+		attribute_factor = {
+			600,
+			1000,
+			3000
+		},
+		hero_list = {
+			{
+				1011,
+				226
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[60500005] = {
+		tips = "《苦岸行旅》 - 独属于心的回应 关卡流程测试",
+		name = "功能流程测试二(无复活)",
+		ai_level = 4,
+		map = "60500005",
+		monster_level = 80,
+		need_default_team = 0,
+		affix_type = "",
+		id = 60500005,
+		attribute_factor = {
+			1000,
+			1000,
+			4000
+		},
+		hero_list = {
+			{
+				1211,
+				221
+			},
+			{
+				1284,
+				227
+			},
+			{
+				0,
+				1
+			}
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[60500006] = {
+		tips = "《苦岸行旅》 - 虚位之主 关卡流程测试",
+		name = "主线流程测试三(无复活)",
+		ai_level = 4,
+		map = "60500006",
+		monster_level = 80,
+		need_default_team = 0,
+		affix_type = "",
+		id = 60500006,
+		attribute_factor = {
+			1000,
+			1000,
+			3700
+		},
+		hero_list = {
+			{
+				10142,
+				219
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
 	[60530089] = {
 		tips = "",
 		name = "怪物测试",
@@ -108,6 +207,26 @@
 		need_default_team = 1,
 		affix_type = "",
 		id = 60530089,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		team_type = {
+			0,
+			0
+		}
+	},
+	[60530110] = {
+		tips = "聚合种<幻骸·幽煌>战斗流程测试",
+		name = "怪物测试",
+		ai_level = 4,
+		hero_list = "",
+		map = "60530110",
+		monster_level = 80,
+		need_default_team = 1,
+		affix_type = "",
+		id = 60530110,
 		attribute_factor = {
 			1000,
 			1000,
@@ -734,10 +853,10 @@
 		}
 	},
 	[60551500] = {
-		tips = "",
-		name = "5150怪物测试",
-		ai_level = 4,
-		map = "60551500",
+		tips = "梦魇<绯染>战斗流程测试",
+		name = "绯染梦魇测试",
+		ai_level = 1,
+		map = "40611503",
 		monster_level = 80,
 		need_default_team = 1,
 		affix_type = "",
@@ -766,11 +885,48 @@
 			0
 		}
 	},
+	[60551990] = {
+		tips = "梦魇<震离>战斗流程测试",
+		name = "震离梦魇测试",
+		ai_level = 1,
+		map = "40611993",
+		monster_level = 80,
+		need_default_team = 1,
+		affix_type = "",
+		id = 60551990,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		hero_list = {
+			{
+				1199,
+				3081199
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
 	all = {
 		60500001,
 		60500002,
 		60500003,
+		60500004,
+		60500005,
+		60500006,
 		60530089,
+		60530110,
 		60530129,
 		60530289,
 		60530399,
@@ -796,6 +952,7 @@
 		60550150,
 		60550950,
 		60551380,
-		60551500
+		60551500,
+		60551990
 	}
 }

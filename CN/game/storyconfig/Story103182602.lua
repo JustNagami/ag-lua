@@ -2141,6 +2141,8 @@
 			if arg_59_0 == 1 then
 				arg_57_0:Play318262015(arg_57_1)
 			end
+
+			arg_57_1:RecordChoiceLog(318262014, 318262015)
 		end
 
 		function arg_57_1.onSingleLineUpdate_(arg_60_0)
@@ -2534,6 +2536,8 @@
 			if arg_71_0 == 1 then
 				arg_69_0:Play318262018(arg_69_1)
 			end
+
+			arg_69_1:RecordChoiceLog(318262017, 318262018)
 		end
 
 		function arg_69_1.onSingleLineUpdate_(arg_72_0)

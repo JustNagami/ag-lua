@@ -11,7 +11,7 @@ function var_0_0.GetNeedLoadSceneName(arg_2_0, arg_2_1)
 	local var_2_0
 
 	for iter_2_0 = #arg_2_1, 1, -1 do
-		if ViewConst.NEED_CHANGE_SCENE_URL_LIST[arg_2_1[iter_2_0]] then
+		if SceneConst.NEED_CHANGE_SCENE_URL_LIST[arg_2_1[iter_2_0]] then
 			var_2_0 = arg_2_1[iter_2_0]
 
 			local var_2_1, var_2_2 = arg_2_0:GetShouldLoadSceneName(arg_2_1[iter_2_0])
@@ -26,7 +26,7 @@ function var_0_0.GetNeedLoadSceneName(arg_2_0, arg_2_1)
 end
 
 function var_0_0.ForceSetShouldLoadSceneName(arg_3_0, arg_3_1, arg_3_2)
-	if not ViewConst.NEED_CHANGE_SCENE_URL_LIST[arg_3_1] then
+	if not SceneConst.NEED_CHANGE_SCENE_URL_LIST[arg_3_1] then
 		if arg_3_2 then
 			arg_3_2()
 		end
@@ -62,7 +62,7 @@ function var_0_0.ForceSetShouldLoadSceneName(arg_3_0, arg_3_1, arg_3_2)
 end
 
 function var_0_0.SetShouldLoadSceneName(arg_5_0, arg_5_1)
-	if not ViewConst.NEED_CHANGE_SCENE_URL_LIST[arg_5_1] then
+	if not SceneConst.NEED_CHANGE_SCENE_URL_LIST[arg_5_1] then
 		return
 	end
 
@@ -139,7 +139,7 @@ function var_0_0.GetShouldLoadSceneName(arg_9_0, arg_9_1)
 	elseif arg_9_1 == "homePreview" then
 		var_9_1 = arg_9_0:GetPreviewHomeShouldLoadSceneName()
 		var_9_0 = "Levels/" .. var_9_1
-	elseif arg_9_1 == "sectionSelectHero" or arg_9_1 == "mythicSectionSelectHero" or arg_9_1 == "challengeRogueTeamSectionSelectHero" or arg_9_1 == "cooperationSectionSelectHero" or arg_9_1 == "summerWaterSectionSelectHero" or arg_9_1 == "sequentialBattleSectionSelectHero" then
+	elseif SceneConst.RESERVE_VIEW_PAGE[arg_9_1] == true then
 		var_9_1 = "X104"
 		var_9_0 = "Levels/X104"
 	elseif arg_9_1 == "furniturePreview" then
@@ -162,7 +162,7 @@ function var_0_0.GetShouldLoadSceneNameID(arg_10_0, arg_10_1)
 		return (HomeSceneSettingData:GetCurScene())
 	elseif arg_10_1 == "homePreview" then
 		return (HomeSceneSettingData:GetPreviewScene())
-	elseif arg_10_1 == "sectionSelectHero" or arg_10_1 == "mythicSectionSelectHero" or arg_10_1 == "challengeRogueTeamSectionSelectHero" or arg_10_1 == "cooperationSectionSelectHero" or arg_10_1 == "summerWaterSectionSelectHero" or arg_10_1 == "sequentialBattleSectionSelectHero" then
+	elseif SceneConst.RESERVE_VIEW_PAGE[arg_10_1] == true then
 		return -1
 	elseif arg_10_1 == "furniturePreview" or arg_10_1 == "furniturePreviewWithEntity" then
 		return -1
@@ -177,21 +177,21 @@ function var_0_0.DealCommonScene(arg_11_0, arg_11_1)
 		"homePreview",
 		"userinfo",
 		"chat",
-		"clubBoss",
-		"sectionSelectHero",
-		"mythicSectionSelectHero",
-		"challengeRogueTeamSectionSelectHero",
-		"sequentialBattleSectionSelectHero"
+		"clubBoss"
 	}
+
+	for iter_11_0, iter_11_1 in pairs(SceneConst.RESERVE_VIEW_PAGE) do
+		var_11_0[#var_11_0 + 1] = iter_11_0
+	end
 
 	if not table.indexof(var_11_0, arg_11_1) then
 		return
 	end
 
-	for iter_11_0, iter_11_1 in ipairs(var_11_0) do
-		if iter_11_1 ~= arg_11_1 and arg_11_0.loadScenePool_[iter_11_1] then
-			arg_11_0.loadScenePool_[arg_11_1] = arg_11_0.loadScenePool_[iter_11_1]
-			arg_11_0.loadScenePool_[iter_11_1] = nil
+	for iter_11_2, iter_11_3 in ipairs(var_11_0) do
+		if iter_11_3 ~= arg_11_1 and arg_11_0.loadScenePool_[iter_11_3] then
+			arg_11_0.loadScenePool_[arg_11_1] = arg_11_0.loadScenePool_[iter_11_3]
+			arg_11_0.loadScenePool_[iter_11_3] = nil
 		end
 	end
 end
@@ -202,19 +202,19 @@ function var_0_0.IsNeedLoadScene(arg_12_0, arg_12_1, arg_12_2)
 		"homePreview",
 		"userinfo",
 		"chat",
-		"clubBoss",
-		"sectionSelectHero",
-		"mythicSectionSelectHero",
-		"challengeRogueTeamSectionSelectHero",
-		"sequentialBattleSectionSelectHero"
+		"clubBoss"
 	}
+
+	for iter_12_0, iter_12_1 in pairs(SceneConst.RESERVE_VIEW_PAGE) do
+		var_12_0[#var_12_0 + 1] = iter_12_0
+	end
 
 	if not table.indexof(var_12_0, arg_12_1) then
 		return arg_12_0.loadScenePool_[arg_12_1] ~= arg_12_2
 	end
 
-	for iter_12_0, iter_12_1 in ipairs(var_12_0) do
-		if arg_12_0.loadScenePool_[iter_12_1] and arg_12_0.loadScenePool_[iter_12_1] ~= arg_12_2 then
+	for iter_12_2, iter_12_3 in ipairs(var_12_0) do
+		if arg_12_0.loadScenePool_[iter_12_3] and arg_12_0.loadScenePool_[iter_12_3] ~= arg_12_2 then
 			return true
 		end
 	end
@@ -226,13 +226,12 @@ function var_0_0.CanEnd(arg_13_0)
 	return not arg_13_0.isLoading_
 end
 
-local function var_0_1(arg_14_0)
+local function var_0_1(arg_14_0, arg_14_1)
 	local var_14_0 = HomeSceneSettingCfg[arg_14_0]
-	local var_14_1 = PlayerData:GetPosterGirlHeroId()
-	local var_14_2 = HeroTools.HeroUsingSkinInfo(var_14_1).id
-	local var_14_3 = SkinSceneActionCfg[var_14_2]
+	local var_14_1 = arg_14_1 or PlayerData:GetPosterGirlHeroSkinId()
+	local var_14_2 = SkinSceneActionCfg[var_14_1]
 
-	if var_14_3 and (arg_14_0 == var_14_3.special_scene_id or arg_14_0 == var_14_3.special_scene_id_2) and not string.isNullOrEmpty(var_14_0.prefix_dlc) then
+	if var_14_2 and (arg_14_0 == var_14_2.special_scene_id or arg_14_0 == var_14_2.special_scene_id_2) and not string.isNullOrEmpty(var_14_0.prefix_dlc) then
 		return var_14_0.prefix_dlc
 	end
 
@@ -304,22 +303,31 @@ end
 function var_0_0.GetPreviewHomeShouldLoadSceneName(arg_19_0)
 	local var_19_0, var_19_1 = HomeSceneSettingData:GetPreviewScene()
 	local var_19_2 = HomeSceneSettingCfg[var_19_0]
-	local var_19_3 = var_19_2.impact
+
+	if not id and HomeSceneSettingData:GetUsedState(var_19_0) == SceneConst.HOME_SCENE_TYPE.LOCK then
+		var_19_0 = GameSetting.home_sence_default.value[1]
+		var_19_2 = HomeSceneSettingCfg[var_19_0]
+
+		HomeSceneSettingAction.SetHomeScene(var_19_0)
+	end
+
+	local var_19_3 = ""
 	local var_19_4 = ""
 	local var_19_5 = ""
-	local var_19_6 = ""
 
 	for iter_19_0, iter_19_1 in ipairs(var_19_2.impact) do
 		if iter_19_1 == SceneConst.HOME_SCENE_IMPACT.WEATHER then
-			var_19_4 = var_19_1.weather
+			var_19_3 = var_19_1.weather
 		elseif iter_19_1 == SceneConst.HOME_SCENE_IMPACT.DATA then
-			var_19_5 = var_19_1.data
+			var_19_4 = var_19_1.data
 		elseif iter_19_1 == SceneConst.HOME_SCENE_IMPACT.TIME then
-			var_19_6 = var_19_1.time
+			var_19_5 = var_19_1.time
 		end
 	end
 
-	return var_19_2.prefix .. var_19_4 .. var_19_5 .. var_19_6
+	local var_19_6 = var_19_1.skinID
+
+	return var_0_1(var_19_0, var_19_6) .. var_19_3 .. var_19_4 .. var_19_5
 end
 
 function var_0_0.SetHomeSceneSoundEffect(arg_20_0)
@@ -429,6 +437,13 @@ end
 
 function var_0_0.SetSceneDisableAutoChange(arg_30_0, arg_30_1)
 	arg_30_0.sceneDisableAutoChange_ = arg_30_1
+end
+
+function var_0_0.SetSceneActive(arg_31_0, arg_31_1, arg_31_2)
+	local var_31_0 = manager.ui:GetSceneByName(arg_31_1)
+
+	LuaForUtil.SetSceneSetting(var_31_0, arg_31_2)
+	SetActive(var_31_0, arg_31_2)
 end
 
 return var_0_0

@@ -9,6 +9,7 @@ manager.net:Bind(83401, function(arg_1_0)
 	end
 
 	var_0_0.AddRedPointGroup(ActivityConst.SUMMER_CHESS_BOARD_NONSTER_COSPLAY)
+	var_0_0.UpdateMonsterStageRedPoint()
 end)
 
 function var_0_0.UpdateMonsterSkill(arg_2_0, arg_2_1)
@@ -92,6 +93,18 @@ function var_0_0.AddRedPointGroup(arg_7_0)
 		string.format("%s_%s", RedPointConst.ACTIVITY_TASK, ActivityConst.SUMMER_CHESS_BOARD_MONSTER_COSPLAY_NORMAL_TASK),
 		string.format("%s_%s", RedPointConst.ACTIVITY_TASK, ActivityConst.SUMMER_CHESS_BOARD_MONSTER_COSPLAY_LIMIT_TASK)
 	})
+
+	local var_7_4 = {}
+
+	for iter_7_4, iter_7_5 in pairs(ActivityMonsterCosplayCfg.all) do
+		for iter_7_6, iter_7_7 in pairs(ActivityMonsterCosplayCfg[iter_7_5].stage_list) do
+			local var_7_5 = RedPointConst.MONSTER_COSPLAY_STAGE .. iter_7_7
+
+			table.insert(var_7_4, var_7_5)
+		end
+	end
+
+	manager.redPoint:addGroup(RedPointConst.MONSTER_COSPLAY_STAGE, var_7_4)
 	manager.redPoint:addGroup(ActivityTools.GetRedPointKey(arg_7_0) .. arg_7_0, {
 		RedPointConst.MONSTER_COSPLAY_STAGE,
 		RedPointConst.MONSTER_COSPLAY_TASK
@@ -99,17 +112,24 @@ function var_0_0.AddRedPointGroup(arg_7_0)
 end
 
 manager.notify:RegistListener(HISTORY_UPDATE, function()
-	local var_8_0 = MonsterCosplayData:GetDataByPara("openStage")
-	local var_8_1 = (ActivitySummerChessConditionCfg.get_id_list_by_activity_id[ActivityConst.SUMMER_CHESS_BOARD_NONSTER_COSPLAY] or {})[1]
+	var_0_0.UpdateMonsterStageRedPoint()
+end)
 
-	for iter_8_0, iter_8_1 in pairs(var_8_0 or {}) do
-		local var_8_2 = BattleActivityMonsterCosplayCfg[iter_8_1]
-		local var_8_3 = tonumber(var_8_2.unlock_condition[1])
+function var_0_0.UpdateMonsterStageRedPoint()
+	local var_9_0 = MonsterCosplayData:GetDataByPara("openStage")
+	local var_9_1 = (ActivitySummerChessConditionCfg.get_id_list_by_activity_id[ActivityConst.SUMMER_CHESS_BOARD_NONSTER_COSPLAY] or {})[1]
 
-		if IsConditionAchieved(var_8_3) and getData("monsterCosplay", tostring(iter_8_1)) ~= "1" and IsConditionAchieved(var_8_1) then
-			manager.redPoint:setTip(RedPointConst.MONSTER_COSPLAY_STAGE, 1)
+	for iter_9_0, iter_9_1 in pairs(var_9_0 or {}) do
+		local var_9_2 = BattleActivityMonsterCosplayCfg[iter_9_1]
+		local var_9_3 = tonumber(var_9_2.unlock_condition[1])
+		local var_9_4 = RedPointConst.MONSTER_COSPLAY_STAGE .. iter_9_1
+
+		if IsConditionAchieved(var_9_3) and not MonsterCosplayData:GetStageIsFinish(iter_9_0, iter_9_1) and not MonsterCosplayData:GetStageIsClick(iter_9_1) and IsConditionAchieved(var_9_1) then
+			manager.redPoint:setTip(var_9_4, 1)
+		else
+			manager.redPoint:setTip(var_9_4, 0)
 		end
 	end
-end)
+end
 
 return var_0_0

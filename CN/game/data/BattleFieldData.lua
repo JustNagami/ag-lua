@@ -51,7 +51,7 @@ function var_0_0.GetCacheChapterClient(arg_5_0, arg_5_1)
 		saveData("BattleField", "toggle_" .. arg_5_1, nil)
 	end
 
-	local var_5_2 = arg_5_0.cacheToggle_[arg_5_1] or getData("BattleField", "toggle_" .. arg_5_1) or arg_5_1 == BattleConst.TOGGLE.PLOT and ChapterTools.GetOptimalChapterClientID(true) or arg_5_1 == BattleConst.TOGGLE.SUB_PLOT and ChapterTools.GetOpenSubPlotClient() or var_5_0
+	local var_5_2 = arg_5_0.cacheToggle_[arg_5_1] or getData("BattleField", "toggle_" .. arg_5_1) or arg_5_1 == BattleConst.TOGGLE.PLOT and ChapterTools.GetOptimalChapterClientID(true) or arg_5_1 == BattleConst.TOGGLE.SUB_PLOT and ChapterTools.GetOpenSubPlotClient() or arg_5_1 == BattleConst.TOGGLE.RESIDENT_ACT and var_5_0 or var_5_0
 
 	if ChapterClientCfg[var_5_2] == nil then
 		var_5_2 = var_5_0

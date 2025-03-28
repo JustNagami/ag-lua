@@ -147,6 +147,8 @@ function var_0_0.OnExit(arg_14_0)
 		end
 	end
 
+	arg_14_0.curPageIndex_ = nil
+
 	HeroTools.StopTalk()
 end
 

@@ -18,7 +18,7 @@ function var_0_0.GetSettingScreenSize(arg_2_0)
 	local var_2_0 = _G.SCREEN_WIDTH
 	local var_2_1 = _G.SCREEN_HEIGHT
 
-	if GameToSDK.PLATFORM_ID == 0 then
+	if (GameToSDK.PLATFORM_ID == 0 or GameToSDK.PLATFORM_ID == 4) and SettingData:GetPicSettingData().super_resolution_enable == 0 then
 		local var_2_2 = 3000000
 		local var_2_3 = var_2_0 * var_2_1
 

@@ -63,7 +63,7 @@ function var_0_0.RefreshUI(arg_8_0)
 			var_8_4,
 			1
 		})
-		arg_8_0.m_ArtifactIcon.sprite = getSpriteWithoutAtlas(PolyhedronConst.ARTIFACT_ICON_PATH .. var_8_3.icon)
+		arg_8_0.m_ArtifactIcon.sprite = pureGetSpriteWithoutAtlas(PolyhedronConst.ARTIFACT_ICON_PATH .. var_8_3.icon)
 
 		if var_8_3.exclusive_hero_id ~= 0 then
 			arg_8_0.artifactFrameController:SetSelectedIndex(1)
@@ -89,7 +89,7 @@ function var_0_0.RefreshUI(arg_8_0)
 			1
 		})
 		arg_8_0.m_desLab.text = PolyhedronTools.getAffixUpLvDes(var_8_10, var_8_8, var_8_9)
-		arg_8_0.m_ArtifactIcon.sprite = getSpriteWithoutAtlas(PolyhedronConst.ARTIFACT_ICON_PATH .. var_8_6.icon)
+		arg_8_0.m_ArtifactIcon.sprite = pureGetSpriteWithoutAtlas(PolyhedronConst.ARTIFACT_ICON_PATH .. var_8_6.icon)
 
 		if var_8_6.exclusive_hero_id ~= 0 then
 			arg_8_0.artifactFrameController:SetSelectedIndex(1)
@@ -107,7 +107,7 @@ function var_0_0.RefreshUI(arg_8_0)
 
 		arg_8_0.artifactFrameController:SetSelectedIndex(0)
 
-		arg_8_0.m_effectIcon.sprite = getSpriteWithoutAtlas(PolyhedronConst.EFFECT_ATTRIBUTE_ICON_PATH .. var_8_12.icon)
+		arg_8_0.m_effectIcon.sprite = pureGetSpriteWithoutAtlas(PolyhedronConst.EFFECT_ATTRIBUTE_ICON_PATH .. var_8_12.icon)
 	elseif var_8_0 == PolyhedronConst.ITEM_TYPE.COIN then
 		arg_8_0.typeController:SetSelectedState("coin")
 
@@ -130,7 +130,7 @@ function var_0_0.RefreshUI(arg_8_0)
 
 		local var_8_19 = PolyhedronData:GetHeroUsingSkinInfo(var_8_17).id
 
-		arg_8_0.m_heroIcon.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_8_19)
+		arg_8_0.m_heroIcon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_8_19)
 
 		local var_8_20 = var_8_18.mechanism_type[1]
 

@@ -131,4 +131,22 @@ function var_0_0.GetSevenDaySignState(arg_5_0, arg_5_1)
 	return ActivityConst.SIGN_STATE.NONE
 end
 
+function var_0_0.GetSevenDaySignState2(arg_6_0, arg_6_1)
+	if var_0_0.GetSevenDaySignIndex(arg_6_0) == arg_6_1 then
+		return ActivityConst.SIGN_STATE.CAN_GET
+	end
+
+	local var_6_0 = SignData:GetSevenDaySignInfo(arg_6_0)
+
+	if not var_6_0 then
+		return ActivityConst.SIGN_STATE.NONE
+	end
+
+	if arg_6_1 <= var_6_0.signCount then
+		return ActivityConst.SIGN_STATE.GETTED
+	end
+
+	return ActivityConst.SIGN_STATE.NONE
+end
+
 return var_0_0

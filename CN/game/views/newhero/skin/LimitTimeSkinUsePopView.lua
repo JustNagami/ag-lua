@@ -180,7 +180,7 @@ function var_0_0.UpdateView(arg_17_0)
 		arg_17_0.showSkin_ = false
 	end
 
-	arg_17_0.skinImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_17_0.skinId_)
+	arg_17_0.skinImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_17_0.skinId_)
 	arg_17_0.titleText_.text = SkinCfg[arg_17_0.skinId_].name
 	arg_17_0.leftTimeText_.text = arg_17_0.LimitskinItemCfg_.time[2][1] .. GetTips("DAY")
 
@@ -216,22 +216,28 @@ function var_0_0.UpdateView(arg_17_0)
 		arg_17_0.dlcOwnController_:SetSelectedState("off")
 	end
 
-	local var_17_2 = HeroCfg[arg_17_0.heroId_].name .. "·" .. HeroCfg[arg_17_0.heroId_].suffix
+	local var_17_2 = HeroTools.GetHeroFullName(arg_17_0.heroId_)
+	local var_17_3 = GetI18NText(ItemCfg[arg_17_0.itemId_].name)
+	local var_17_4 = GetI18NText(SkinCfg[arg_17_0.skinId_].name)
 
 	if arg_17_0.dlcId_ then
+		local var_17_5 = GetI18NText(HomeSceneSettingCfg[arg_17_0.dlcId_].title)
+		local var_17_6 = GetI18NText(arg_17_0.LimitskinItemCfg_.name)
+		local var_17_7 = GetI18NText(arg_17_0.LimitDlcCfg_.name)
+
 		if not var_17_1 and not var_17_0 then
-			arg_17_0.descText_.text = string.format(GetTips("SKIN_LIMIT_TIME_DESC_1"), ItemCfg[arg_17_0.itemId_].name, var_17_2, SkinCfg[arg_17_0.skinId_].name, HomeSceneSettingCfg[arg_17_0.dlcId_].title)
+			arg_17_0.descText_.text = string.format(GetTips("SKIN_LIMIT_TIME_DESC_1"), var_17_3, var_17_2, var_17_4, var_17_5)
 		elseif var_17_1 and not var_17_0 then
-			arg_17_0.descText_.text = string.format(GetTips("SKIN_LIMIT_TIME_DESC_2"), ItemCfg[arg_17_0.itemId_].name, var_17_2, SkinCfg[arg_17_0.skinId_].name, HomeSceneSettingCfg[arg_17_0.dlcId_].title, var_17_2, SkinCfg[arg_17_0.skinId_].name, arg_17_0.LimitskinItemCfg_.name)
+			arg_17_0.descText_.text = string.format(GetTips("SKIN_LIMIT_TIME_DESC_2"), var_17_3, var_17_2, var_17_4, var_17_5, var_17_2, var_17_4, var_17_6)
 		elseif not var_17_1 and var_17_0 then
-			arg_17_0.descText_.text = string.format(GetTips("SKIN_LIMIT_TIME_DESC_3"), ItemCfg[arg_17_0.itemId_].name, var_17_2, SkinCfg[arg_17_0.skinId_].name, var_17_2, SkinCfg[arg_17_0.skinId_].name, HomeSceneSettingCfg[arg_17_0.dlcId_].title, arg_17_0.LimitDlcCfg_.name)
+			arg_17_0.descText_.text = string.format(GetTips("SKIN_LIMIT_TIME_DESC_3"), var_17_3, var_17_2, var_17_4, var_17_2, var_17_4, var_17_5, var_17_7)
 		else
-			arg_17_0.descText_.text = string.format(GetTips("SKIN_LIMIT_TIME_DESC_4"), ItemCfg[arg_17_0.itemId_].name, ItemCfg[arg_17_0.itemId_].name)
+			arg_17_0.descText_.text = string.format(GetTips("SKIN_LIMIT_TIME_DESC_4"), var_17_3, var_17_3)
 		end
 	elseif not var_17_1 then
-		arg_17_0.descText_.text = string.format(GetTips("SKIN_LIMIT_TIME_DESC_5"), ItemCfg[arg_17_0.itemId_].name, var_17_2, SkinCfg[arg_17_0.skinId_].name)
+		arg_17_0.descText_.text = string.format(GetTips("SKIN_LIMIT_TIME_DESC_5"), var_17_3, var_17_2, var_17_4)
 	else
-		arg_17_0.descText_.text = string.format(GetTips("SKIN_LIMIT_TIME_DESC_4"), ItemCfg[arg_17_0.itemId_].name, ItemCfg[arg_17_0.itemId_].name)
+		arg_17_0.descText_.text = string.format(GetTips("SKIN_LIMIT_TIME_DESC_4"), var_17_3, var_17_3)
 	end
 end
 

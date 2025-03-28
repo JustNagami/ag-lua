@@ -48,7 +48,7 @@ function var_0_0.OnEnter(arg_7_0)
 end
 
 function var_0_0.RefreshView(arg_8_0)
-	arg_8_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/BackHouseUI/Portrait/" .. arg_8_0.hero_id)
+	arg_8_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/BackHouseUI/Portrait/" .. arg_8_0.hero_id)
 	arg_8_0.num_.text = arg_8_0.reward_list.num
 	arg_8_0.talkTxt_.text = ActivitySpringRedEnvelopeCfg[arg_8_0.id].letter_content
 

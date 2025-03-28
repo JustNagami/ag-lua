@@ -18559,17 +18559,7 @@
 		arg_391_1.frameCnt_ = 0
 		arg_391_1.state_ = "playing"
 		arg_391_1.curTalkId_ = 413091093
-		arg_391_1.duration_ = 3.9
-
-		local var_391_0 = {
-			zh = 3.9,
-			ja = 1.999999999999
-		}
-		local var_391_1 = manager.audio:GetLocalizationFlag()
-
-		if var_391_0[var_391_1] ~= nil then
-			arg_391_1.duration_ = var_391_0[var_391_1]
-		end
+		arg_391_1.duration_ = 5
 
 		SetActive(arg_391_1.tipsGo_, false)
 
@@ -18787,38 +18777,18 @@
 
 				arg_391_1.typewritter:SetDirty()
 				arg_391_1:ShowNextGo(false)
-
-				if manager.audio:GetVoiceLength("story_v_out_413091", "413091093", "story_v_out_413091.awb") ~= 0 then
-					local var_394_37 = manager.audio:GetVoiceLength("story_v_out_413091", "413091093", "story_v_out_413091.awb") / 1000
-
-					if var_394_37 + var_394_30 > arg_391_1.duration_ then
-						arg_391_1.duration_ = var_394_37 + var_394_30
-					end
-
-					if var_394_32.prefab_name ~= "" and arg_391_1.actors_[var_394_32.prefab_name] ~= nil then
-						local var_394_38 = LuaForUtil.PlayVoiceWithCriLipsync(arg_391_1.actors_[var_394_32.prefab_name].transform, "story_v_out_413091", "413091093", "story_v_out_413091.awb")
-
-						arg_391_1:RecordAudio("413091093", var_394_38)
-						arg_391_1:RecordAudio("413091093", var_394_38)
-					else
-						arg_391_1:AudioAction("play", "voice", "story_v_out_413091", "413091093", "story_v_out_413091.awb")
-					end
-
-					arg_391_1:RecordHistoryTalkVoice("story_v_out_413091", "413091093", "story_v_out_413091.awb")
-				end
-
 				arg_391_1:RecordContent(arg_391_1.text_.text)
 			end
 
-			local var_394_39 = math.max(var_394_31, arg_391_1.talkMaxDuration)
+			local var_394_37 = math.max(var_394_31, arg_391_1.talkMaxDuration)
 
-			if var_394_30 <= arg_391_1.time_ and arg_391_1.time_ < var_394_30 + var_394_39 then
-				arg_391_1.typewritter.percent = (arg_391_1.time_ - var_394_30) / var_394_39
+			if var_394_30 <= arg_391_1.time_ and arg_391_1.time_ < var_394_30 + var_394_37 then
+				arg_391_1.typewritter.percent = (arg_391_1.time_ - var_394_30) / var_394_37
 
 				arg_391_1.typewritter:SetDirty()
 			end
 
-			if arg_391_1.time_ >= var_394_30 + var_394_39 and arg_391_1.time_ < var_394_30 + var_394_39 + arg_394_0 then
+			if arg_391_1.time_ >= var_394_30 + var_394_37 and arg_391_1.time_ < var_394_30 + var_394_37 + arg_394_0 then
 				arg_391_1.typewritter.percent = 1
 
 				arg_391_1.typewritter:SetDirty()
@@ -18831,11 +18801,11 @@
 		arg_395_1.frameCnt_ = 0
 		arg_395_1.state_ = "playing"
 		arg_395_1.curTalkId_ = 413091094
-		arg_395_1.duration_ = 10.13
+		arg_395_1.duration_ = 5.23
 
 		local var_395_0 = {
 			zh = 3.8,
-			ja = 10.133
+			ja = 5.233
 		}
 		local var_395_1 = manager.audio:GetLocalizationFlag()
 

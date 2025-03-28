@@ -17,7 +17,7 @@ function var_0_0.InitView(arg_3_0)
 	for iter_3_0 = 1, 5 do
 		table.insert(arg_3_0.items, DormInfomationHeroItem.New(arg_3_0["heroItem" .. iter_3_0]))
 		arg_3_0.items[iter_3_0]:RegistCallBack(function(arg_4_0)
-			arg_3_0:OnHodlerHeroItemClick(arg_4_0)
+			arg_3_0:OnHolderHeroItemClick(arg_4_0)
 		end)
 	end
 end
@@ -32,7 +32,7 @@ function var_0_0.OnFeedSuccess(arg_6_0)
 	arg_6_0:Render()
 end
 
-function var_0_0.OnHodlerHeroItemClick(arg_7_0, arg_7_1)
+function var_0_0.OnHolderHeroItemClick(arg_7_0, arg_7_1)
 	JumpTools.OpenPageByJump("/dormInfomationTrainSetHeroView", {
 		state = "dorm"
 	})

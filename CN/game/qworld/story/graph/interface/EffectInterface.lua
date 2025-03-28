@@ -1,7 +1,8 @@
 ﻿local var_0_0 = {}
 local var_0_1 = {
-	RoleAttach = "RoleAttach",
-	Point = "Point"
+	ThingAttach = "ThingAttach",
+	Point = "Point",
+	RoleAttach = "RoleAttach"
 }
 local var_0_2 = {
 	DelayTime = "DelayTime",
@@ -81,11 +82,31 @@ function var_0_0.Inject(arg_1_0, arg_1_1)
 					var_3_5.localScale = var_3_3.localScale
 				end
 			end
+		elseif arg_3_1.createMode == var_0_1.ThingAttach then
+			local var_3_6 = arg_3_0.blackboard:GetThing(arg_3_1.thingId):GetAttachPoint(arg_3_1.attachPoint)
+
+			if arg_3_1.attachFollow then
+				local var_3_7 = arg_3_1.obj.transform
+
+				var_3_7.parent = var_3_6
+				var_3_7.localPosition = Vector3.zero
+				var_3_7.localRotation = Quaternion.identity
+				var_3_7.localScale = Vector3.one
+			else
+				local var_3_8 = arg_3_1.obj.transform
+
+				var_3_8.position = var_3_6.position
+				var_3_8.rotation = var_3_6.rotation
+				var_3_8.localScale = var_3_6.localScale
+			end
 		end
 
 		if arg_3_1.destroyMode == var_0_2.DelayTime then
+			local var_3_9 = arg_3_0:AddAutoTask(QWStoryConst.StoryNodeTaskType.DestroyEffect)
+
 			arg_3_0:RegisterDelayAction(function()
 				arg_3_0:RemoveEffect(var_3_0)
+				var_3_9.Complete()
 			end, arg_3_1.delayTime)
 		elseif arg_3_1.destroyMode == var_0_2.Event then
 			arg_3_0:RegisterEvent(arg_3_1.event, function()
@@ -132,10 +153,15 @@ function var_0_0.Inject(arg_1_0, arg_1_1)
 	end
 
 	function arg_1_1.BlackFadeAction(arg_8_0, arg_8_1, arg_8_2, arg_8_3, arg_8_4, arg_8_5)
-		QWorldMgr:GetQWorldStoryMgr():GetTalkView():BlackFadeEffect(arg_8_1, arg_8_2, arg_8_3, function()
+		local var_8_0 = QWorldMgr:GetQWorldStoryMgr():GetTalkView()
+		local var_8_1 = arg_8_0:AddAutoTask(QWStoryConst.StoryNodeTaskType.BlackFadeEffect)
+
+		var_8_0:BlackFadeEffect(arg_8_1, arg_8_2, arg_8_3, function()
 			if arg_8_4 then
 				arg_8_4()
 			end
+
+			var_8_1.Complete()
 		end, function()
 			if arg_8_5 then
 				arg_8_5()

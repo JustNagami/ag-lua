@@ -106,8 +106,8 @@ function var_0_0.SetData(arg_5_0, arg_5_1)
 	end
 
 	arg_5_0.priceText_.text = var_5_4
-	arg_5_0.costImage_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetAttributeIconPath(ChallengeRogueTeamConst.ATTRIBUTE_ENUM.GOLD))
-	arg_5_0.iconImage_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_5_1))
+	arg_5_0.costImage_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetAttributeIconPath(ChallengeRogueTeamConst.ATTRIBUTE_ENUM.GOLD))
+	arg_5_0.iconImage_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_5_1))
 
 	if arg_5_1.isNew then
 		arg_5_0.isNewController_:SetSelectedState("on")

@@ -65,13 +65,29 @@ function var_0_1.GreateTempContID(arg_5_0)
 	return var_5_0 + 1
 end
 
-function var_0_1.DeleteProposal(arg_6_0, arg_6_1)
-	local var_6_0 = arg_6_0.cont_dic[arg_6_1]
-	local var_6_1 = table.indexof(arg_6_0.cont_teams, var_6_0)
+function var_0_1.ConverToValidTempProposalContID(arg_6_0, arg_6_1)
+	if arg_6_1 <= GameSetting.default_formation_num_max.value[1] then
+		return
+	end
 
-	table.remove(arg_6_0.cont_teams, var_6_1)
+	local var_6_0 = arg_6_0:GreateTempContID()
 
-	arg_6_0.cont_teams[#arg_6_0.cont_teams + 1] = var_6_0
+	if var_6_0 ~= arg_6_1 then
+		arg_6_0:CopyContData(var_6_0, arg_6_0.cont_dic[arg_6_1])
+		arg_6_0.cont_dic[arg_6_1]:SetIsTemp(false)
+		arg_6_0.cont_dic[arg_6_1]:Reset()
+	end
+
+	return var_6_0
+end
+
+function var_0_1.DeleteProposal(arg_7_0, arg_7_1)
+	local var_7_0 = arg_7_0.cont_dic[arg_7_1]
+	local var_7_1 = table.indexof(arg_7_0.cont_teams, var_7_0)
+
+	table.remove(arg_7_0.cont_teams, var_7_1)
+
+	arg_7_0.cont_teams[#arg_7_0.cont_teams + 1] = var_7_0
 end
 
 return var_0_1

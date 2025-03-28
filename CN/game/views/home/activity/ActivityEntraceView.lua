@@ -88,8 +88,10 @@ function var_0_0.ActivityOpen(arg_10_0, arg_10_1)
 			return
 		end
 
-		table.insert(arg_10_0.idList_, arg_10_1)
-		table.sort(arg_10_0.idList_)
+		if ActivityData:GetActivityIsOpen(arg_10_1) then
+			table.insert(arg_10_0.idList_, arg_10_1)
+			table.sort(arg_10_0.idList_)
+		end
 	elseif not ActivityData:GetActivityIsOpen(arg_10_1) then
 		table.removebyvalue(arg_10_0.idList_, arg_10_1)
 	end

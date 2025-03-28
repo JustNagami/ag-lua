@@ -143,15 +143,19 @@ function var_0_0.GotoTag(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
 	local var_8_0 = SandplayTagCfg[arg_8_1]
 
 	if var_8_0 then
-		local var_8_1 = manager.ui.mainCamera.transform
-		local var_8_2 = {
-			cameraPosition = var_8_1.position,
-			cameraRotation = var_8_1.rotation,
-			cacheTag = arg_8_1
-		}
+		local var_8_1 = {}
+		local var_8_2 = manager.ui.mainCamera.transform
 
-		QWorldData:SetQWorldContext(var_8_2)
-		QWorldGoto:Goto(var_8_0.tag_behaviour, arg_8_2, var_8_0.behaviour_parameters, var_8_0.passthrough_parameters, arg_8_3)
+		var_8_1.cameraPosition = var_8_2.position
+		var_8_1.cameraRotation = var_8_2.rotation
+
+		if arg_8_0:NeedCacheTag(var_8_0.tag_behaviour) then
+			var_8_1.cacheTag = arg_8_1
+		end
+
+		QWorldData:SetQWorldContext(var_8_1)
+		QWorldGoto:SetTagId(arg_8_1)
+		QWorldGoto:Goto(var_8_0.tag_behaviour, arg_8_2, var_8_0.behaviour_parameters, var_8_0.passthrough_parameters, var_8_0.camera_parameters, arg_8_3)
 	else
 		print("未找到标签" .. arg_8_1)
 	end
@@ -160,6 +164,10 @@ end
 function var_0_0.Dispose(arg_9_0)
 	manager.notify:RemoveListener(ACTIVITY_UPDATE, arg_9_0.activityUpdateHandle_)
 	manager.notify:RemoveListener(QWORLD_SUB_QUEST_FINISH, arg_9_0.questUpdateHandle_)
+end
+
+function var_0_0.NeedCacheTag(arg_10_0, arg_10_1)
+	return NEED_CACHE_GOTO_TYPE[arg_10_1] == true
 end
 
 return var_0_0

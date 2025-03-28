@@ -57,7 +57,7 @@ function var_0_0.RefreshUI(arg_5_0)
 	local var_5_6 = RogueTeamRoomTypeCfg[var_5_5]
 
 	arg_5_0.nameText_.text = var_5_6.name
-	arg_5_0.icon_.sprite = getSpriteWithoutAtlas(var_5_6.icon)
+	arg_5_0.icon_.sprite = pureGetSpriteWithoutAtlas(var_5_6.icon)
 
 	arg_5_0:RefreshState(var_5_1.state)
 	arg_5_0:RefreshLine(var_5_1)

@@ -277,7 +277,7 @@ function var_0_0.UpdateIllustrationRedPoint()
 	end
 
 	for iter_29_1, iter_29_2 in pairs(var_29_0) do
-		if iter_29_2.is_receive == 0 then
+		if iter_29_2.is_receive == 0 and CollectPictureCfg[iter_29_2.id].type < 5 then
 			manager.redPoint:setTip(RedPointConst["ILLU_ILLUSTRATION" .. CollectPictureCfg[iter_29_2.id].type], 1)
 		end
 	end

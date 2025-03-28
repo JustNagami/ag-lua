@@ -3,25 +3,27 @@
 end
 
 function getSpriteWithoutAtlas(arg_2_0)
-	return AtlasManager.GetSpriteWithoutAtlas(arg_2_0)
+	return arg_2_0
 end
 
-function getSpriteWithoutAtlasAsync(arg_3_0, arg_3_1)
-	AtlasManager.GetSpriteWithoutAtlasAsync(arg_3_0, arg_3_1)
+function pureGetSpriteWithoutAtlas(arg_3_0)
+	return arg_3_0
 end
 
-function unloadSpriteWithoutAtlas(arg_4_0)
-	AtlasManager.UnloadSpriteWithoutAtlas(arg_4_0)
+function getSpriteWithoutAtlasAsync(arg_4_0, arg_4_1)
+	AtlasManager.GetSpriteWithoutAtlasAsync(arg_4_0, arg_4_1)
 end
 
-function SetSpriteWithoutAtlasAsync(arg_5_0, arg_5_1)
-	AtlasManager.GetSpriteWithoutAtlasAsync(arg_5_1, function(arg_6_0)
-		if isNil(arg_5_0) then
-			return
-		end
+function unloadSpriteWithoutAtlas(arg_5_0)
+	AtlasManager.UnloadSpriteWithoutAtlas(arg_5_0)
+end
 
-		arg_5_0.sprite = arg_6_0
-	end)
+function SetSpriteWithoutAtlasAsync(arg_6_0, arg_6_1)
+	if isNil(arg_6_0) then
+		return
+	end
+
+	AtlasManager.GetSpriteWithoutAtlasAsyncNew(arg_6_0, arg_6_1)
 end
 
 function getSpriteViaConfig(arg_7_0, arg_7_1)

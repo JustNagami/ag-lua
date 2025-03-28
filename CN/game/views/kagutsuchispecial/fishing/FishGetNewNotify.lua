@@ -25,7 +25,7 @@ function var_0_0.OnEnter(arg_4_0)
 
 	arg_4_0.staminaRecover_.text = string.format("+%d", arg_4_0.params_.staminaRecover or 0)
 	arg_4_0.title_.text = GetTipsF("ACTIVITY_KAGUTSUCHI_FISH_GET", arg_4_0.detail.name)
-	arg_4_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Fishing/FishPortrait/" .. HanafudaCardCfg[var_4_0].picture_name)
+	arg_4_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Fishing/FishPortrait/" .. HanafudaCardCfg[var_4_0].picture_name)
 
 	local var_4_1 = CurrencyIdMapCfg.CURRENCY_TYPE_ACTIVITY_KAGUTSUCHI_FATIGUE.item_id
 

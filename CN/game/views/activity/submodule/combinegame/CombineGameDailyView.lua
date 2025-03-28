@@ -132,7 +132,7 @@ function var_0_0.UpdateView(arg_14_0)
 			if var_14_3 <= 3 then
 				SetActive(arg_14_0["upGo" .. var_14_3 .. "_"], true)
 
-				arg_14_0["upImg" .. var_14_3 .. "_"].sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_14_7.icon)
+				arg_14_0["upImg" .. var_14_3 .. "_"].sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_14_7.icon)
 				var_14_3 = var_14_3 + 1
 			else
 				var_14_5 = var_14_5 + 1
@@ -141,7 +141,7 @@ function var_0_0.UpdateView(arg_14_0)
 			if var_14_4 <= 3 then
 				SetActive(arg_14_0["downGo" .. var_14_4 .. "_"], true)
 
-				arg_14_0["downImg" .. var_14_4 .. "_"].sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_14_7.icon)
+				arg_14_0["downImg" .. var_14_4 .. "_"].sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_14_7.icon)
 				var_14_4 = var_14_4 + 1
 			else
 				var_14_6 = var_14_6 + 1
@@ -149,8 +149,8 @@ function var_0_0.UpdateView(arg_14_0)
 		end
 	end
 
-	arg_14_0.hero1Image_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/" .. var_14_1.icon)
-	arg_14_0.hero2Image_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/" .. var_14_2.icon)
+	arg_14_0.hero1Image_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/" .. var_14_1.icon)
+	arg_14_0.hero2Image_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/" .. var_14_2.icon)
 end
 
 function var_0_0.BindRedPoint(arg_15_0)

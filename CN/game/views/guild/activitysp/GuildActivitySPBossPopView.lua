@@ -184,7 +184,7 @@ function var_0_0.UpdateView(arg_24_0)
 	arg_24_0.bossNameLabel_.text = GetMonsterName({
 		arg_24_0.nodeCfg_.boss_id
 	})
-	arg_24_0.icon_.sprite = getSpriteWithoutAtlas(SpritePathCfg.CollectBoss.path .. arg_24_0.nodeCfg_.boss_id)
+	arg_24_0.icon_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.CollectBoss.path .. arg_24_0.nodeCfg_.boss_id)
 	arg_24_0.costLabel_.text = arg_24_0.nodeCfg_.vitality_cost
 
 	local var_24_8 = GuildActivitySPData:GetCurMainActivityID()

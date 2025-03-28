@@ -25,7 +25,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1)
 
 	local var_5_0 = PolyhedronBeaconCfg[arg_5_0.id]
 
-	arg_5_0.m_icon.sprite = getSpriteWithoutAtlas(PolyhedronConst.BEACON_ICON_PATH .. var_5_0.icon)
+	arg_5_0.m_icon.sprite = pureGetSpriteWithoutAtlas(PolyhedronConst.BEACON_ICON_PATH .. var_5_0.icon)
 	arg_5_0.m_name.text = GetI18NText(var_5_0.name)
 	arg_5_0.m_des.text = GetI18NText(var_5_0.desc)
 

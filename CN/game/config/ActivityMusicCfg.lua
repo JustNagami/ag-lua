@@ -2177,7 +2177,7 @@
 		reward = {}
 	},
 	{
-		name = "; ne m'oubile pas",
+		name = "; ne m'oublie pas",
 		total_score = 39400,
 		cueSheetName = "bgm_activity_3_11_minigame_music_8",
 		icon = "Music_00032",
@@ -2208,7 +2208,7 @@
 		}
 	},
 	{
-		name = "; ne m'oubile pas",
+		name = "; ne m'oublie pas",
 		total_score = 46200,
 		cueSheetName = "bgm_activity_3_11_minigame_music_8",
 		icon = "Music_00032",
@@ -2226,7 +2226,7 @@
 		reward = {}
 	},
 	{
-		name = "; ne m'oubile pas",
+		name = "; ne m'oublie pas",
 		total_score = 100100,
 		cueSheetName = "bgm_activity_3_11_minigame_music_8",
 		icon = "Music_00032",
@@ -2244,7 +2244,7 @@
 		reward = {}
 	},
 	{
-		name = "; ne m'oubile pas",
+		name = "; ne m'oublie pas",
 		total_score = 130600,
 		cueSheetName = "bgm_activity_3_11_minigame_music_8",
 		icon = "Music_00032",

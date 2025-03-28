@@ -68,7 +68,7 @@ function var_0_0.InitBackScene(arg_9_0)
 	local var_9_5 = GameDisplayCfg.club_boss_bg_pos.scale
 
 	arg_9_0.backGroundTrs_.localScale = Vector3(var_9_5[1], var_9_5[2], var_9_5[3])
-	arg_9_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas(SpritePathCfg.ClubBossBg.path .. var_9_4)
+	arg_9_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.ClubBossBg.path .. var_9_4)
 end
 
 function var_0_0.Finish(arg_10_0)

@@ -31,7 +31,7 @@ function var_0_0.OnEnter(arg_6_0)
 	if var_6_0.icon and var_6_0.icon ~= 0 then
 		SetActive(arg_6_0.itemGo_, true)
 
-		arg_6_0.itemiconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/NewWarChess/Item/" .. var_6_0.icon)
+		arg_6_0.itemiconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/NewWarChess/Item/" .. var_6_0.icon)
 	else
 		SetActive(arg_6_0.itemGo_, false)
 	end

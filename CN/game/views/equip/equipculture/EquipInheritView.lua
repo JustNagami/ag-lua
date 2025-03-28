@@ -183,7 +183,7 @@ function var_0_0.OnSelectSuit(arg_19_0, arg_19_1)
 end
 
 function var_0_0.RefreshSelect(arg_20_0)
-	arg_20_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Equip/icon_s/" .. arg_20_0.selectSuitID_)
+	arg_20_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Equip/icon_s/" .. arg_20_0.selectSuitID_)
 
 	local var_20_0 = EquipCfg.get_id_list_by_suit[arg_20_0.selectSuitID_]
 

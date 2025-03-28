@@ -126,6 +126,7 @@ function var_0_0.PlayAction(arg_8_0, arg_8_1, arg_8_2)
 
 	arg_8_0.brain_:RebuildPlayableDirector(var_8_1)
 	arg_8_0:_TransitionTimeline(arg_8_1, var_8_2, var_8_1)
+	var_8_1:Evaluate()
 end
 
 function var_0_0.Stop(arg_9_0)

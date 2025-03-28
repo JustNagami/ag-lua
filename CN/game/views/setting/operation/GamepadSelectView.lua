@@ -5,7 +5,7 @@ function var_0_0.UIName(arg_1_0)
 end
 
 function var_0_0.UIParent(arg_2_0)
-	return manager.ui.uiPop.transform
+	return manager.ui.uiStory.transform
 end
 
 function var_0_0.Ctor(arg_3_0, arg_3_1)

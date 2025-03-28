@@ -96,8 +96,8 @@ function var_0_0.OnEnter(arg_9_0)
 		arg_9_0.rewardTitleTxt_.text = GetTips("BATTLEPASS_REWARD_TIPS_TITLE")
 	end
 
-	arg_9_0.bgImg_.sprite = getSpriteWithoutAtlas(BattlePassListCfg[PassportData:GetId()].poster_ui)
-	arg_9_0.titleImg_.sprite = getSpriteWithoutAtlas(string.format(BattlePassListCfg[PassportData:GetId()].slogan_ui, string.upper(SettingData:GetCurrentLanguage())))
+	arg_9_0.bgImg_.sprite = pureGetSpriteWithoutAtlas(BattlePassListCfg[PassportData:GetId()].poster_ui)
+	arg_9_0.titleImg_.sprite = pureGetSpriteWithoutAtlas(string.format(BattlePassListCfg[PassportData:GetId()].slogan_ui, string.upper(SettingData:GetCurrentLanguage())))
 end
 
 function var_0_0.OnExit(arg_10_0)

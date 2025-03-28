@@ -26,6 +26,19 @@ function QWorldSpawnPrefabByEntityId(arg_3_0)
 	QWorldSpawnPrefab(var_3_0.script_name, var_3_0.id, var_3_0.configId)
 	manager.notify:CallUpdateFunc(QWORLD_TRACK_UPDATE)
 
+	local var_3_1 = QWorldMgr:GetQWorldEntityMgr():GetEntByEntityId(arg_3_0)
+
+	if QWorldMgr:GetQWorldQuestMgr() and var_3_1 then
+		local var_3_2 = QWorldQuestTool.GetEntitySortedMainQuestList(var_3_1.entityId)
+		local var_3_3 = QWorldQuestTool.GetMainQuestTrackingId()
+
+		if #var_3_2 ~= 0 and var_3_3 ~= -1 and table.indexof(var_3_2, var_3_3) then
+			QWorldMgr:GetQWorldEntityMgr():TrackId(var_3_1.entityId)
+		end
+
+		QWorldMgr:GetQWorldQuestMgr():UpdateEntityQuestIcon(var_3_1)
+	end
+
 	return true
 end
 
@@ -41,10 +54,34 @@ function QWorldRemovePrefabByEntityId(arg_4_0)
 	return false
 end
 
-function QWBoxTriggerAreaFunc(arg_5_0, arg_5_1)
+function QWBoxTriggerEnterAreaFunc(arg_5_0)
 	local var_5_0 = QWorldMgr:GetQWorldEntityMgr():GetEnt(arg_5_0)
 
 	if var_5_0 and var_5_0.OnQWBoxTriggerArea then
-		var_5_0:OnQWBoxTriggerArea(arg_5_1)
+		var_5_0:OnQWBoxTriggerArea(true)
+	end
+end
+
+function QWBoxTriggerExitAreaFunc(arg_6_0)
+	local var_6_0 = QWorldMgr:GetQWorldEntityMgr():GetEnt(arg_6_0)
+
+	if var_6_0 and var_6_0.OnQWBoxTriggerArea then
+		var_6_0:OnQWBoxTriggerArea(false)
+	end
+end
+
+function QWSphereEnterAreaFunc(arg_7_0)
+	local var_7_0 = QWorldMgr:GetQWorldEntityMgr():GetEnt(arg_7_0)
+
+	if var_7_0 and var_7_0.OnEnterSphereArea then
+		var_7_0:OnEnterSphereArea()
+	end
+end
+
+function QWSphereExitAreaFunc(arg_8_0)
+	local var_8_0 = QWorldMgr:GetQWorldEntityMgr():GetEnt(arg_8_0)
+
+	if var_8_0 and var_8_0.OnExitSphereArea then
+		var_8_0:OnExitSphereArea()
 	end
 end

@@ -51,7 +51,7 @@ function var_0_0.UpdateCurrentUI(arg_8_0)
 		var_8_2 = var_8_2 .. iter_8_1
 	end
 
-	arg_8_0.image_.sprite = getSpriteWithoutAtlas(SpritePathCfg.CollectBoss.path .. var_8_2)
+	arg_8_0.image_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.CollectBoss.path .. var_8_2)
 end
 
 function var_0_0.UpdateLookBackUI(arg_9_0)

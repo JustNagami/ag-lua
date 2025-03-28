@@ -48,94 +48,100 @@ function var_0_1.AddUIListener(arg_4_0)
 	end)
 end
 
-function var_0_1.HeadRenderer(arg_8_0, arg_8_1, arg_8_2)
-	var_0_1.super.HeadRenderer(arg_8_0, arg_8_1, arg_8_2)
-	arg_8_2:SetLocking(false)
-
-	local var_8_0 = arg_8_0.heroDataList_[arg_8_1].id
-	local var_8_1 = PolyhedronHeroCfg[var_8_0].standard_id
-	local var_8_2 = HeroStandardSystemCfg[var_8_1]
-
-	arg_8_2.levelText_.text = var_8_2.hero_lv
+function var_0_1.ReserveCameraEnter(arg_8_0)
+	SectionSelectHeroScene.GetInstance():SetALlStateGoActive(false)
+	manager.loadScene:SetSceneActive(SceneConst.SCENE_NAME.hero, true)
 end
 
-function var_0_1.UpdateHeroView(arg_9_0)
-	local var_9_0 = arg_9_0.selectHeroData_.id
-	local var_9_1 = HeroCfg[var_9_0]
+function var_0_1.HeadRenderer(arg_9_0, arg_9_1, arg_9_2)
+	var_0_1.super.HeadRenderer(arg_9_0, arg_9_1, arg_9_2)
+	arg_9_2:SetLocking(false)
 
-	arg_9_0.m_heroName.text = GetI18NText(var_9_1.name)
-	arg_9_0.m_heroSuffix.text = GetI18NText(var_9_1.suffix)
+	local var_9_0 = arg_9_0.heroDataList_[arg_9_1].id
+	local var_9_1 = PolyhedronHeroCfg[var_9_0].standard_id
+	local var_9_2 = HeroStandardSystemCfg[var_9_1]
 
-	local var_9_2 = PolyhedronHeroCfg[var_9_0].standard_id
-	local var_9_3 = PolyhedronData:GetHeroUsingSkinInfo(var_9_0).id
-
-	arg_9_0.heroAvatarView_:SetSkinId(var_9_3)
-
-	arg_9_0.fightPowerText_.text = arg_9_0.heroViewProxy_:GetBattlePower(var_9_0)
+	arg_9_2.levelText_.text = var_9_2.hero_lv
 end
 
-function var_0_1.IsInTeam(arg_10_0, arg_10_1, arg_10_2)
+function var_0_1.UpdateHeroView(arg_10_0)
+	local var_10_0 = arg_10_0.selectHeroData_.id
+	local var_10_1 = HeroCfg[var_10_0]
+
+	arg_10_0.m_heroName.text = GetI18NText(var_10_1.name)
+	arg_10_0.m_heroSuffix.text = GetI18NText(var_10_1.suffix)
+
+	local var_10_2 = PolyhedronHeroCfg[var_10_0].standard_id
+	local var_10_3 = PolyhedronData:GetHeroUsingSkinInfo(var_10_0).id
+
+	arg_10_0.fightPowerText_.text = arg_10_0.heroViewProxy_:GetBattlePower(var_10_0)
+
+	arg_10_0:LoadHeroModel(var_10_3)
+	arg_10_0:ProcessCamera(var_10_3)
+end
+
+function var_0_1.IsInTeam(arg_11_0, arg_11_1, arg_11_2)
 	return false, false, -1
 end
 
-function var_0_1.GetHeroTeam(arg_11_0)
-	arg_11_0.heroTeam_ = arg_11_0.params_.heroTeam
-	arg_11_0.lockStateList_ = {}
-	arg_11_0.lockHeroList_ = {}
-	arg_11_0.heroTrialList_ = {
+function var_0_1.GetHeroTeam(arg_12_0)
+	arg_12_0.heroTeam_ = arg_12_0.params_.heroTeam
+	arg_12_0.lockStateList_ = {}
+	arg_12_0.lockHeroList_ = {}
+	arg_12_0.heroTrialList_ = {
 		0
 	}
 end
 
-function var_0_1.GetDefaultHeroData(arg_12_0)
-	local var_12_0 = PolyhedronData:GetCacheSelectHero()
+function var_0_1.GetDefaultHeroData(arg_13_0)
+	local var_13_0 = PolyhedronData:GetCacheSelectHero()
 
-	if var_12_0 ~= 0 then
+	if var_13_0 ~= 0 then
 		return {
 			trialID = 0,
-			id = var_12_0,
-			type = arg_12_0.heroDataType_,
-			heroViewProxy = arg_12_0:GetHeroViewProxy(arg_12_0.heroDataType_)
+			id = var_13_0,
+			type = arg_13_0.heroDataType_,
+			heroViewProxy = arg_13_0:GetHeroViewProxy(arg_13_0.heroDataType_)
 		}
 	end
 
-	local var_12_1 = arg_12_0.heroTeam_[arg_12_0.params_.selectHeroPos] or 0
+	local var_13_1 = arg_13_0.heroTeam_[arg_13_0.params_.selectHeroPos] or 0
 
-	if var_12_1 == 0 then
-		for iter_12_0, iter_12_1 in pairs(arg_12_0.heroDataList_) do
-			local var_12_2 = iter_12_1.id
+	if var_13_1 == 0 then
+		for iter_13_0, iter_13_1 in pairs(arg_13_0.heroDataList_) do
+			local var_13_2 = iter_13_1.id
 
-			if not arg_12_0:IsInTeam(var_12_2) and not table.keyof(arg_12_0.lockHeroList_, var_12_2) then
+			if not arg_13_0:IsInTeam(var_13_2) and not table.keyof(arg_13_0.lockHeroList_, var_13_2) then
 				return {
 					trialID = 0,
-					id = var_12_2,
-					type = arg_12_0.heroDataType_,
-					heroViewProxy = arg_12_0:GetHeroViewProxy(arg_12_0.heroDataType_)
+					id = var_13_2,
+					type = arg_13_0.heroDataType_,
+					heroViewProxy = arg_13_0:GetHeroViewProxy(arg_13_0.heroDataType_)
 				}
 			end
 		end
 	end
 
-	if var_12_1 == 0 then
-		for iter_12_2, iter_12_3 in pairs(arg_12_0.heroDataList_) do
+	if var_13_1 == 0 then
+		for iter_13_2, iter_13_3 in pairs(arg_13_0.heroDataList_) do
 			return {
 				trialID = 0,
-				id = iter_12_3.id,
-				type = arg_12_0.heroDataType_,
-				heroViewProxy = arg_12_0:GetHeroViewProxy(arg_12_0.heroDataType_)
+				id = iter_13_3.id,
+				type = arg_13_0.heroDataType_,
+				heroViewProxy = arg_13_0:GetHeroViewProxy(arg_13_0.heroDataType_)
 			}
 		end
 	end
 
 	return {
 		trialID = 0,
-		id = var_12_1,
-		type = arg_12_0.heroDataType_,
-		heroViewProxy = arg_12_0:GetHeroViewProxy(arg_12_0.heroDataType_)
+		id = var_13_1,
+		type = arg_13_0.heroDataType_,
+		heroViewProxy = arg_13_0:GetHeroViewProxy(arg_13_0.heroDataType_)
 	}
 end
 
-function var_0_1.GetHeroList(arg_13_0)
+function var_0_1.GetHeroList(arg_14_0)
 	return PolyhedronData:GetUnlockHeroList()
 end
 

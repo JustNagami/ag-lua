@@ -513,7 +513,7 @@ function var_0_0.ShowEquipInfo(arg_33_0, arg_33_1, arg_33_2)
 end
 
 function var_0_0.OnEquipStrengthSuccess(arg_35_0, arg_35_1, arg_35_2, arg_35_3)
-	if arg_35_3.equipId == arg_35_0.equipId_ and arg_35_1 then
+	if arg_35_3.equipId == arg_35_0.equipId_ then
 		arg_35_0.handler_:RefreshSideBar(arg_35_0.equipId_)
 	end
 
@@ -540,35 +540,29 @@ end
 function var_0_0.OnExit(arg_37_0)
 	CommonFilterData:ClearFilter(Filter_Root_Define.Equip_Filter_List.filter_id)
 	arg_37_0:RemoveAllEventListener()
-	manager.windowBar:HideBar()
 end
 
-function var_0_0.Hide(arg_38_0)
-	CommonFilterData:ClearFilter(Filter_Root_Define.Equip_Filter_List.filter_id)
-	SetActive(arg_38_0.gameObject_, false)
+function var_0_0.OnFilterChange(arg_38_0)
+	local var_38_0 = CommonFilterData:HasIndexFlag(2, 4, 13)
+	local var_38_1 = CommonFilterData:HasIndexFlag(2, 4, 14)
+	local var_38_2 = CommonFilterData:HasIndexFlag(2, 5, 15)
+	local var_38_3 = CommonFilterData:HasIndexFlag(2, 5, 16)
+	local var_38_4 = var_38_1 and EquipConst.EQUIP_SORT.RARE or EquipConst.EQUIP_SORT.LEVEL
+	local var_38_5 = var_38_3 and 0 or 1
+
+	arg_38_0:ChangeEquipSelectView(var_38_4, var_38_5)
 end
 
-function var_0_0.OnFilterChange(arg_39_0)
-	local var_39_0 = CommonFilterData:HasIndexFlag(2, 4, 13)
-	local var_39_1 = CommonFilterData:HasIndexFlag(2, 4, 14)
-	local var_39_2 = CommonFilterData:HasIndexFlag(2, 5, 15)
-	local var_39_3 = CommonFilterData:HasIndexFlag(2, 5, 16)
-	local var_39_4 = var_39_1 and EquipConst.EQUIP_SORT.RARE or EquipConst.EQUIP_SORT.LEVEL
-	local var_39_5 = var_39_3 and 0 or 1
+function var_0_0.Dispose(arg_39_0)
+	arg_39_0:RemoveAllListeners()
 
-	arg_39_0:ChangeEquipSelectView(var_39_4, var_39_5)
-end
+	if arg_39_0.scrollHelper then
+		arg_39_0.scrollHelper:Dispose()
 
-function var_0_0.Dispose(arg_40_0)
-	arg_40_0:RemoveAllListeners()
-
-	if arg_40_0.scrollHelper then
-		arg_40_0.scrollHelper:Dispose()
-
-		arg_40_0.scrollHelper = nil
+		arg_39_0.scrollHelper = nil
 	end
 
-	var_0_0.super.Dispose(arg_40_0)
+	var_0_0.super.Dispose(arg_39_0)
 end
 
 return var_0_0

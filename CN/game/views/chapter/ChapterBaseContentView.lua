@@ -159,7 +159,8 @@ function var_0_0.RefreshChapterUI(arg_20_0)
 	local var_20_0 = ChapterClientCfg[arg_20_0.selectClientID_]
 
 	arg_20_0.nameText_.text = GetI18NText(var_20_0.name)
-	arg_20_0.mapImage_.spriteAsync = SpritePathCfg.ChapterPaint.path .. var_20_0.chapter_paint
+
+	SetSpriteWithoutAtlasAsync(arg_20_0.mapImage_, SpritePathCfg.ChapterPaint.path .. var_20_0.chapter_paint)
 
 	local var_20_1 = arg_20_0:GetSelectItem()
 	local var_20_2 = var_20_1.renderItem:GetLockState()

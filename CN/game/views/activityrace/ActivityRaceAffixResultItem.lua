@@ -27,7 +27,7 @@ function var_0_0.SetData(arg_4_0, arg_4_1)
 			-- block empty
 		end
 
-		arg_4_0.icon_.sprite = getSpriteWithoutAtlas(SpritePathCfg.AffixIcon.path .. var_4_1)
+		arg_4_0.icon_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.AffixIcon.path .. var_4_1)
 		arg_4_0.name_.text = GetI18NText(var_4_0.name)
 	end
 end

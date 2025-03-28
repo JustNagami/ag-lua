@@ -47,7 +47,8 @@ function var_0_0.AddUIListener(arg_5_0)
 
 		if not var_10_0 or var_10_0 == 0 then
 			JumpTools.OpenPageByJump("illustratedPop", {
-				ID = arg_5_0.ID_
+				ID = arg_5_0.ID_,
+				type_ = arg_5_0.type_
 			})
 			saveData("illustrated", "loading", 1)
 		elseif IllustratedData:IsInLoadingSet(arg_5_0.ID_) then
@@ -80,6 +81,7 @@ end
 
 function var_0_0.OnEnter(arg_12_0)
 	arg_12_0.ID_ = arg_12_0.params_.ID
+	arg_12_0.type_ = CollectPictureCfg[arg_12_0.ID_].type
 
 	local var_12_0 = CollectPictureCfg.get_id_list_by_group_id[CollectPictureCfg[arg_12_0.ID_].group_id] or {}
 
@@ -137,7 +139,12 @@ end
 
 function var_0_0.RefreshUI(arg_16_0)
 	function _RefreshUI()
-		arg_16_0.imageImg_.spriteSync = "TextureConfig/Background/" .. CollectPictureCfg[arg_16_0.ID_].picture
+		if arg_16_0.type_ == 5 then
+			arg_16_0.imageImg_.spriteSync = "TextureConfig/Loading/" .. CollectPictureCfg[arg_16_0.ID_].picture
+		else
+			arg_16_0.imageImg_.spriteSync = "TextureConfig/Background/" .. CollectPictureCfg[arg_16_0.ID_].picture
+		end
+
 		arg_16_0.titleText_.text = GetI18NText(CollectPictureCfg[arg_16_0.ID_].name)
 		arg_16_0.descText_.text = GetI18NText(CollectPictureCfg[arg_16_0.ID_].desc)
 
@@ -152,17 +159,22 @@ function var_0_0.RefreshUI(arg_16_0)
 end
 
 function var_0_0.CheckNeedDownloadAssets(arg_18_0, arg_18_1)
-	local var_18_0 = "TextureConfig/Background/" .. CollectPictureCfg[arg_18_0.ID_].picture
-	local var_18_1 = {
-		var_18_0
+	if arg_18_0.type_ == 5 then
+		local var_18_0 = "TextureConfig/Loading/" .. CollectPictureCfg[arg_18_0.ID_].picture
+	else
+		local var_18_1 = "TextureConfig/Background/" .. CollectPictureCfg[arg_18_0.ID_].picture
+	end
+
+	local var_18_2 = {
+		texturePath
 	}
 
-	if AssetDownloadManager.CheckResourcesNeedDownload(var_18_1) then
+	if AssetDownloadManager.CheckResourcesNeedDownload(var_18_2) then
 		arg_18_0.imageImg_.spriteSync = nil
 
 		SetForceShowQuanquan(true)
 		AssetDownloadManager.Create()
-		AssetDownloadManager.Instance:AddResourceToDownloadQueue(var_18_1)
+		AssetDownloadManager.Instance:AddResourceToDownloadQueue(var_18_2)
 		AssetDownloadManager.Instance:Run(nil, function()
 			AssetDownloadManager.Destroy()
 			arg_18_1()

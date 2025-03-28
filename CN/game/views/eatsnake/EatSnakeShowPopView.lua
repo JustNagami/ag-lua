@@ -36,7 +36,7 @@ end
 
 function var_0_0.UpdateView(arg_9_0)
 	arg_9_0.cfg = ActivityEatSnakeCfg[arg_9_0.params_.id]
-	arg_9_0.image_.sprite = getSpriteWithoutAtlas(arg_9_0.cfg.image)
+	arg_9_0.image_.sprite = pureGetSpriteWithoutAtlas(arg_9_0.cfg.image)
 	arg_9_0.nameText_.text = arg_9_0.cfg.name
 	arg_9_0.descText_.text = arg_9_0.cfg.desc
 

@@ -50,7 +50,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2)
 			arg_6_0.desc = var_6_3.name .. var_6_2
 		end
 
-		arg_6_0.m_icon.sprite = getSpriteWithoutAtlas(PolyhedronConst.HERO_ATTRIBUTE_ICON_PATH .. var_6_1)
+		arg_6_0.m_icon.sprite = pureGetSpriteWithoutAtlas(PolyhedronConst.HERO_ATTRIBUTE_ICON_PATH .. var_6_1)
 	end
 end
 

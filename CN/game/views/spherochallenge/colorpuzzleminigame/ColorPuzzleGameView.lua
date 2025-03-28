@@ -275,7 +275,7 @@ function var_0_0.SetTips(arg_33_0, arg_33_1)
 	else
 		SetActive(arg_33_0.tipsIcon_, true)
 
-		arg_33_0.tipsIcon_.sprite = getSpriteWithoutAtlas(var_33_0)
+		arg_33_0.tipsIcon_.sprite = pureGetSpriteWithoutAtlas(var_33_0)
 	end
 
 	arg_33_0.tipsContent_.text = GetI18NText(arg_33_1.tips)

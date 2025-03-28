@@ -119,7 +119,7 @@ function var_0_0.OnEnter(arg_14_0)
 		local var_14_2 = StrategyMatrixTierTemplateCfg[var_14_1]
 
 		arg_14_0.m_title.text = GetTips("ACTIVITY_STRATEGY_TITLE_" .. var_14_2.tier)
-		arg_14_0.m_bg.sprite = getSpriteWithoutAtlas("TextureConfig/VolumeIIIDownUI/" .. var_14_0[var_14_2.tier])
+		arg_14_0.m_bg.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VolumeIIIDownUI/" .. var_14_0[var_14_2.tier])
 	else
 		arg_14_0.m_title.text = ""
 	end

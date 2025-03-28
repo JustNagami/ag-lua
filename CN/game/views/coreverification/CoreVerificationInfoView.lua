@@ -429,7 +429,7 @@ function var_0_0.LoadBackScene(arg_29_0)
 	local var_29_2 = GameDisplayCfg.boss_background_pos.scale
 
 	arg_29_0.backGroundTrs_.localScale = Vector3(2, 2, 2)
-	arg_29_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas("TextureBg/Core_Verification/bg2")
+	arg_29_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = pureGetSpriteWithoutAtlas("TextureBg/Core_Verification/bg2")
 end
 
 function var_0_0.UnloadBackScene(arg_30_0)

@@ -137,6 +137,14 @@ end
 
 function var_0_0.AddUIListener(arg_19_0)
 	arg_19_0:AddBtnListener(arg_19_0.startBtn, nil, function()
+		local var_20_0, var_20_1 = BackHomeTools.CheckHeroIsLockForAnyFeatureWithTips(arg_19_0.heroID)
+
+		if var_20_0 then
+			ShowTips(var_20_1)
+
+			return
+		end
+
 		if arg_19_0:CheckFatigue() then
 			arg_19_0:StartGame()
 		else

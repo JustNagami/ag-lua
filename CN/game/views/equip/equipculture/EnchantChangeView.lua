@@ -240,7 +240,7 @@ function var_0_1.RreshFixedSkill(arg_24_0, arg_24_1)
 				var_24_9 = string.gsub(var_24_9, tostring(var_24_8), var_24_3.desc_spec_value[arg_24_0.cfg_.num])
 			end
 
-			var_24_2.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_24_3.icon)
+			var_24_2.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_24_3.icon)
 			var_24_2.name_.text = GetI18NText(var_24_3.name)
 			var_24_2.desc_.text = var_24_9
 

@@ -158,6 +158,7 @@ function var_0_0.OnEnter(arg_14_0)
 	manager.redPoint:bindUIandKey(arg_14_0.shopBtn_.transform, RedPointConst.SHOP)
 	arg_14_0:OnPageChange(1)
 	arg_14_0:StartTimer()
+	arg_14_0:RefreshRechargeBtnTag()
 end
 
 function var_0_0.OnExit(arg_16_0)
@@ -226,6 +227,16 @@ function var_0_0.Dispose(arg_22_0)
 	end
 
 	var_0_0.super.Dispose(arg_22_0)
+end
+
+function var_0_0.RefreshRechargeBtnTag(arg_23_0)
+	if ActivityNoobData:IsFirstRechargeNewTag() then
+		SetActive(arg_23_0.rechargeBtnTagGo_, true)
+
+		arg_23_0.rechargeBtnTagText_.text = GetTips("RECHARGE_WELFARE")
+	else
+		SetActive(arg_23_0.rechargeBtnTagGo_, false)
+	end
 end
 
 return var_0_0

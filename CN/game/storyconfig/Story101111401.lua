@@ -874,6 +874,17 @@
 		arg_21_1.curTalkId_ = 111141005
 		arg_21_1.duration_ = 6.53
 
+		local var_21_0 = {
+			ja = 1.999999999999,
+			ko = 6.533,
+			zh = 1.999999999999
+		}
+		local var_21_1 = manager.audio:GetLocalizationFlag()
+
+		if var_21_0[var_21_1] ~= nil then
+			arg_21_1.duration_ = var_21_0[var_21_1]
+		end
+
 		SetActive(arg_21_1.tipsGo_, false)
 
 		function arg_21_1.onSingleLineFinish_()

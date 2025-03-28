@@ -180,7 +180,7 @@ function var_0_0.SetCurID(arg_18_0, arg_18_1)
 
 		local var_18_3 = ChatBubbleCfg[var_18_2].color1
 
-		arg_18_0.chatBubbleTxt_.color = Color(var_18_3[1], var_18_3[2], var_18_3[3])
+		arg_18_0.chatBubbleTxt_.color = LuaHelper.StringToColor("#" .. var_18_3)
 	end
 
 	arg_18_0.itemCfg_ = ItemCfg[arg_18_0.curID_]

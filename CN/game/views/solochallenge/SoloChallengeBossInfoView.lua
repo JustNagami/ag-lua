@@ -37,7 +37,7 @@ function var_0_0.RefreshUI(arg_7_0)
 		arg_7_0.id_
 	})
 	arg_7_0.raceText_.text = GetTips("RACE_TYPE_" .. var_7_0.race)
-	arg_7_0.icon_.sprite = getSpriteWithoutAtlas(string.format("TextureConfig/MardukUI/boss/solo582x648/%s", arg_7_0.id_))
+	arg_7_0.icon_.sprite = pureGetSpriteWithoutAtlas(string.format("TextureConfig/MardukUI/boss/solo582x648/%s", arg_7_0.id_))
 	arg_7_0.riskText_.text = NumberTools.IntToRomam(var_7_0.type + 1)
 
 	arg_7_0:UpdateData()

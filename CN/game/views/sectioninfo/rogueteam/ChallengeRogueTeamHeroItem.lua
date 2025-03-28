@@ -75,7 +75,7 @@ function var_0_1.UpdateView(arg_9_0)
 	local var_9_0 = HeroCfg[arg_9_0.heroId_]
 	local var_9_1 = arg_9_0.heroViewProxy_:GetHeroUsingSkinInfo(arg_9_0.heroId_).id
 
-	arg_9_0.heroImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_9_1)
+	arg_9_0.heroImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_9_1)
 
 	arg_9_0.heroImg_:SetNativeSize()
 

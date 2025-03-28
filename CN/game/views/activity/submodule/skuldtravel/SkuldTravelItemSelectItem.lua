@@ -32,7 +32,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
 	arg_6_0.itemid_ = arg_6_1
 	arg_6_0.mapid_ = arg_6_2
 	arg_6_0.poltid_ = SkuldTravelData:GetPlotIdByMapIdAndItemId(arg_6_0.mapid_, arg_6_0.itemid_)
-	arg_6_0.itemimage_.sprite = getSpriteWithoutAtlas(var_0_1 .. TravelSkuldItemCfg[arg_6_0.itemid_].icon)
+	arg_6_0.itemimage_.sprite = pureGetSpriteWithoutAtlas(var_0_1 .. TravelSkuldItemCfg[arg_6_0.itemid_].icon)
 
 	arg_6_0:RefreshLockStatu()
 	arg_6_0:RefreshSelectStatu(arg_6_3)

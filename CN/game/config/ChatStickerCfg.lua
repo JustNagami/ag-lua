@@ -2015,6 +2015,42 @@
 		icon = "10224",
 		type = 1
 	},
+	[225] = {
+		desc_source = "参与「溯梦之隙」活动获取",
+		name = "诗蔻蒂·探头",
+		free = 0,
+		category = 20,
+		id = 225,
+		icon = "10225",
+		type = 1
+	},
+	[226] = {
+		desc_source = "参与「溯梦之隙」活动获取",
+		name = "诗蔻蒂·晚安",
+		free = 0,
+		category = 20,
+		id = 226,
+		icon = "10226",
+		type = 1
+	},
+	[227] = {
+		desc_source = "参与「溯梦之隙」活动获取",
+		name = "诗蔻蒂·期待",
+		free = 0,
+		category = 20,
+		id = 227,
+		icon = "10227",
+		type = 1
+	},
+	[228] = {
+		desc_source = "参与「溯梦之隙」活动获取",
+		name = "诗蔻蒂·挥手",
+		free = 0,
+		category = 20,
+		id = 228,
+		icon = "10228",
+		type = 1
+	},
 	[229] = {
 		desc_source = "官方论坛「弥弥尔频道」商城兑换",
 		name = "前鬼坊天狗·大头怼屏幕",
@@ -2103,6 +2139,42 @@
 		category = 19,
 		id = 238,
 		icon = "10238",
+		type = 1
+	},
+	[239] = {
+		desc_source = "参与「刺桐港埠漫行纪」活动获取",
+		name = "麟钰·在嘛？",
+		free = 0,
+		category = 20,
+		id = 239,
+		icon = "10239",
+		type = 1
+	},
+	[240] = {
+		desc_source = "参与「刺桐港埠漫行纪」活动获取",
+		name = "麟钰·收到",
+		free = 0,
+		category = 20,
+		id = 240,
+		icon = "10240",
+		type = 1
+	},
+	[241] = {
+		desc_source = "参与「刺桐港埠漫行纪」活动获取",
+		name = "麟钰·好难哦",
+		free = 0,
+		category = 20,
+		id = 241,
+		icon = "10241",
+		type = 1
+	},
+	[242] = {
+		desc_source = "参与「刺桐港埠漫行纪」活动获取",
+		name = "麟钰·已老实",
+		free = 0,
+		category = 20,
+		id = 242,
+		icon = "10242",
 		type = 1
 	},
 	[243] = {
@@ -2213,14 +2285,251 @@
 		icon = "10254",
 		type = 1
 	},
+	[260] = {
+		desc_source = "官方论坛「弥弥尔频道」商城兑换",
+		name = "白泽·白眼",
+		free = 0,
+		category = 21,
+		id = 260,
+		icon = "10260",
+		type = 1
+	},
+	[261] = {
+		desc_source = "官方论坛「弥弥尔频道」商城兑换",
+		name = "白泽·给你",
+		free = 0,
+		category = 21,
+		id = 261,
+		icon = "10261",
+		type = 1
+	},
+	[262] = {
+		desc_source = "官方论坛「弥弥尔频道」商城兑换",
+		name = "白泽·头疼",
+		free = 0,
+		category = 21,
+		id = 262,
+		icon = "10262",
+		type = 1
+	},
+	[263] = {
+		desc_source = "官方论坛「弥弥尔频道」商城兑换",
+		name = "白泽·威胁",
+		free = 0,
+		category = 21,
+		id = 263,
+		icon = "10263",
+		type = 1
+	},
+	[264] = {
+		desc_source = "官方论坛「弥弥尔频道」商城兑换",
+		name = "诗蔻蒂·看飞机",
+		free = 0,
+		category = 22,
+		id = 264,
+		icon = "10264",
+		type = 1
+	},
+	[265] = {
+		desc_source = "官方论坛「弥弥尔频道」商城兑换",
+		name = "诗蔻蒂·生日快乐",
+		free = 0,
+		category = 22,
+		id = 265,
+		icon = "10265",
+		type = 1
+	},
+	[266] = {
+		desc_source = "官方论坛「弥弥尔频道」商城兑换",
+		name = "诗蔻蒂·送花",
+		free = 0,
+		category = 22,
+		id = 266,
+		icon = "10266",
+		type = 1
+	},
+	[267] = {
+		desc_source = "官方论坛「弥弥尔频道」商城兑换",
+		name = "诗蔻蒂·贴贴",
+		free = 0,
+		category = 22,
+		id = 267,
+		icon = "10267",
+		type = 1
+	},
+	[276] = {
+		desc_source = "累计充值福利获取",
+		name = "举杯",
+		free = 0,
+		category = 10,
+		id = 276,
+		icon = "DynamicSticker/1029_01",
+		type = 2
+	},
+	[277] = {
+		desc_source = "累计充值福利获取",
+		name = "无语",
+		free = 0,
+		category = 10,
+		id = 277,
+		icon = "DynamicSticker/1029_02",
+		type = 2
+	},
+	[278] = {
+		desc_source = "累计充值福利获取",
+		name = "稍等",
+		free = 0,
+		category = 10,
+		id = 278,
+		icon = "DynamicSticker/1029_03",
+		type = 2
+	},
+	[279] = {
+		desc_source = "累计充值福利获取",
+		name = "黑脸",
+		free = 0,
+		category = 10,
+		id = 279,
+		icon = "DynamicSticker/1029_04",
+		type = 2
+	},
+	[280] = {
+		desc_source = "累计充值福利获取",
+		name = "嘘",
+		free = 0,
+		category = 10,
+		id = 280,
+		icon = "DynamicSticker/1029_05",
+		type = 2
+	},
+	[281] = {
+		desc_source = "参与运营活动获取",
+		name = "大国主·看戏",
+		free = 0,
+		category = 22,
+		id = 281,
+		icon = "10281",
+		type = 1
+	},
+	[282] = {
+		desc_source = "参与运营活动获取",
+		name = "维达尔·晕",
+		free = 0,
+		category = 22,
+		id = 282,
+		icon = "10282",
+		type = 1
+	},
+	[283] = {
+		desc_source = "参与运营活动获取",
+		name = "执明·生气",
+		free = 0,
+		category = 22,
+		id = 283,
+		icon = "10283",
+		type = 1
+	},
+	[284] = {
+		desc_source = "",
+		name = "管理员·笑",
+		free = 1,
+		category = 22,
+		id = 284,
+		icon = "10284",
+		type = 1
+	},
+	[285] = {
+		desc_source = "",
+		name = "管理员·高手登场",
+		free = 1,
+		category = 22,
+		id = 285,
+		icon = "10285",
+		type = 1
+	},
+	[286] = {
+		desc_source = "",
+		name = "管理员·加班中",
+		free = 1,
+		category = 22,
+		id = 286,
+		icon = "10286",
+		type = 1
+	},
+	[287] = {
+		desc_source = "",
+		name = "管理员·惊吓",
+		free = 1,
+		category = 22,
+		id = 287,
+		icon = "10287",
+		type = 1
+	},
+	[288] = {
+		desc_source = "",
+		name = "管理员·看戏",
+		free = 1,
+		category = 22,
+		id = 288,
+		icon = "10288",
+		type = 1
+	},
+	[289] = {
+		desc_source = "",
+		name = "管理员·累倒",
+		free = 1,
+		category = 22,
+		id = 289,
+		icon = "10289",
+		type = 1
+	},
+	[290] = {
+		desc_source = "",
+		name = "管理员·流汗",
+		free = 1,
+		category = 22,
+		id = 290,
+		icon = "10290",
+		type = 1
+	},
+	[291] = {
+		desc_source = "",
+		name = "管理员·耍帅",
+		free = 1,
+		category = 22,
+		id = 291,
+		icon = "10291",
+		type = 1
+	},
 	get_id_list_by_category = {
+		[22] = {
+			264,
+			265,
+			266,
+			267,
+			281,
+			282,
+			283,
+			284,
+			285,
+			286,
+			287,
+			288,
+			289,
+			290,
+			291
+		},
 		[21] = {
 			249,
 			250,
 			251,
 			252,
 			253,
-			254
+			254,
+			260,
+			261,
+			262,
+			263
 		},
 		[19] = {
 			237,
@@ -2241,6 +2550,16 @@
 			234,
 			235,
 			236
+		},
+		[20] = {
+			225,
+			226,
+			227,
+			228,
+			239,
+			240,
+			241,
+			242
 		},
 		[17] = {
 			212,
@@ -2342,7 +2661,12 @@
 			199,
 			200,
 			218,
-			219
+			219,
+			276,
+			277,
+			278,
+			279,
+			280
 		},
 		[9] = {
 			122,
@@ -2728,6 +3052,10 @@
 		222,
 		223,
 		224,
+		225,
+		226,
+		227,
+		228,
 		229,
 		230,
 		231,
@@ -2738,6 +3066,10 @@
 		236,
 		237,
 		238,
+		239,
+		240,
+		241,
+		242,
 		243,
 		244,
 		245,
@@ -2749,6 +3081,30 @@
 		251,
 		252,
 		253,
-		254
+		254,
+		260,
+		261,
+		262,
+		263,
+		264,
+		265,
+		266,
+		267,
+		276,
+		277,
+		278,
+		279,
+		280,
+		281,
+		282,
+		283,
+		284,
+		285,
+		286,
+		287,
+		288,
+		289,
+		290,
+		291
 	}
 }

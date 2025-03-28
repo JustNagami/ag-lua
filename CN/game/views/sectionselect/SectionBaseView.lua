@@ -23,6 +23,10 @@ function var_0_0.Init(arg_4_0)
 
 	arg_4_0:InitUI()
 	arg_4_0:AddListeners()
+
+	if arg_4_0.doubleGo_ then
+		arg_4_0.multiView = OperationMultiView.New(arg_4_0.doubleGo_)
+	end
 end
 
 function var_0_0.OnEnter(arg_5_0)
@@ -46,206 +50,190 @@ function var_0_0.OnEnter(arg_5_0)
 	arg_5_0:RefreshData()
 	arg_5_0:RefreshBGM()
 	arg_5_0:RefreshMultiReward()
-
-	local var_5_0, var_5_1 = ActivityMultiRewardData:GetMultiRatioByChapterOrToggle(nil, arg_5_0.chapterID_)
-
-	if var_5_0 > 0 and arg_5_0.timer_ == nil then
-		arg_5_0.timer_ = Timer.New(function()
-			arg_5_0.multiRefreshText_.text = string.format(GetTips("REFRESH_LOST_TIME"), manager.time:GetLostTimeStr(arg_5_0.multiTimeRefresh_))
-		end, 1, -1)
-
-		arg_5_0.timer_:Start()
-	end
-
 	arg_5_0:ShowPanel()
 	arg_5_0:RefreshText()
 	arg_5_0:RefreshUI()
 end
 
-function var_0_0.OnTop(arg_9_0)
-	arg_9_0.stopMove_ = false
+function var_0_0.OnTop(arg_8_0)
+	arg_8_0.stopMove_ = false
 end
 
-function var_0_0.OnMultipleRewardCountChange(arg_10_0)
-	arg_10_0:RefreshMultiReward()
+function var_0_0.OnMultipleRewardCountChange(arg_9_0)
+	arg_9_0:RefreshMultiReward()
 end
 
-function var_0_0.OnUpdate(arg_11_0)
-	if arg_11_0:IsOpenSectionInfo() then
-		arg_11_0.stopMove_ = false
+function var_0_0.OnUpdate(arg_10_0)
+	if arg_10_0:IsOpenSectionInfo() then
+		arg_10_0.stopMove_ = false
 	end
 
-	arg_11_0:RefreshData()
-	arg_11_0:RefreshUI()
+	arg_10_0:RefreshData()
+	arg_10_0:RefreshUI()
 end
 
-function var_0_0.RefreshUI(arg_12_0)
-	arg_12_0:RefreshMissionList()
+function var_0_0.RefreshUI(arg_11_0)
+	arg_11_0:RefreshMissionList()
 
-	arg_12_0.selectSection_ = arg_12_0.params_.section or BattleFieldData:GetCacheStage(arg_12_0.chapterID_) or arg_12_0.stageList_[1]
+	arg_11_0.selectSection_ = arg_11_0.params_.section or BattleFieldData:GetCacheStage(arg_11_0.chapterID_) or arg_11_0.stageList_[1]
 
-	local var_12_0 = arg_12_0:GetScrollPos()
-	local var_12_1 = arg_12_0:GetScrollWidth()
+	local var_11_0 = arg_11_0:GetScrollPos()
+	local var_11_1 = arg_11_0:GetScrollWidth()
 
-	if arg_12_0.stopMove_ then
+	if arg_11_0.stopMove_ then
 		-- block empty
 	else
-		arg_12_0.scrollMoveView_:RefreshUI(var_12_0, var_12_1)
+		arg_11_0.scrollMoveView_:RefreshUI(var_11_0, var_11_1)
 	end
 
-	arg_12_0:RefreshSelectItem()
+	arg_11_0:RefreshSelectItem()
 end
 
-function var_0_0.RefreshBGM(arg_13_0)
-	local var_13_0 = ChapterCfg[arg_13_0.chapterID_]
+function var_0_0.RefreshBGM(arg_12_0)
+	local var_12_0 = ChapterCfg[arg_12_0.chapterID_]
 
-	if var_13_0.cue_sheet ~= "" then
-		manager.audio:PlayBGM(var_13_0.cue_sheet, var_13_0.cue_name, var_13_0.awb)
+	if var_12_0.cue_sheet ~= "" then
+		manager.audio:PlayBGM(var_12_0.cue_sheet, var_12_0.cue_name, var_12_0.awb)
 	end
 end
 
-function var_0_0.GetScrollWidth(arg_14_0)
-	local var_14_0 = 0
-	local var_14_1 = arg_14_0.oepnStageList_
+function var_0_0.GetScrollWidth(arg_13_0)
+	local var_13_0 = 0
+	local var_13_1 = arg_13_0.oepnStageList_
 
-	for iter_14_0, iter_14_1 in ipairs(var_14_1) do
-		local var_14_2 = arg_14_0:GetCfgName()[iter_14_1]
-		local var_14_3 = var_14_2.position ~= "" and var_14_2.position[1] or 0
+	for iter_13_0, iter_13_1 in ipairs(var_13_1) do
+		local var_13_2 = arg_13_0:GetCfgName()[iter_13_1]
+		local var_13_3 = var_13_2.position ~= "" and var_13_2.position[1] or 0
 
-		if var_14_0 < var_14_3 then
-			var_14_0 = var_14_3
+		if var_13_0 < var_13_3 then
+			var_13_0 = var_13_3
 		end
 	end
 
-	return var_14_0
+	return var_13_0
 end
 
-function var_0_0.GetScrollPos(arg_15_0)
-	local var_15_0 = arg_15_0:GetCfgName()[arg_15_0.selectSection_]
+function var_0_0.GetScrollPos(arg_14_0)
+	local var_14_0 = arg_14_0:GetCfgName()[arg_14_0.selectSection_]
 
-	return var_15_0 and var_15_0.position[1] or 0
+	return var_14_0 and var_14_0.position[1] or 0
 end
 
-function var_0_0.RefreshMultiReward(arg_16_0)
-	local var_16_0, var_16_1 = ActivityMultiRewardData:GetMultiRatioByChapterOrToggle(nil, arg_16_0.chapterID_)
+function var_0_0.RefreshMultiReward(arg_15_0)
+	if arg_15_0.multiView then
+		local var_15_0 = ChapterCfg[arg_15_0.chapterID_]
 
-	if var_16_0 > 0 then
-		local var_16_2, var_16_3 = ActivityMultiRewardData:GetCountByActivityID(var_16_1)
-
-		arg_16_0.multiCountText_.text = var_16_2 .. "/" .. var_16_3
-		arg_16_0.multiRatioText_.text = var_16_0 / 100
-
-		local var_16_4 = ActivityData:GetActivityData(var_16_1)
-
-		arg_16_0.multiEndText_.text = manager.time:STimeDescS(var_16_4.stopTime, "!%Y/%m/%d %H:%M")
-		arg_16_0.multiTimeRefresh_ = ActivityMultiRewardData:GetTimeByActivityID(var_16_1)
-		arg_16_0.multiRefreshText_.text = string.format(GetTips("REFRESH_LOST_TIME"), manager.time:GetLostTimeStr(arg_16_0.multiTimeRefresh_))
-
-		SetActive(arg_16_0.multiGo_, true)
-	else
-		SetActive(arg_16_0.multiGo_, false)
+		arg_15_0.multiView:RefreshUI(arg_15_0.chapterID_, var_15_0.type, true)
 	end
 end
 
-function var_0_0.OnExit(arg_17_0)
+function var_0_0.OnExit(arg_16_0)
+	if arg_16_0.multiView then
+		arg_16_0.multiView:OnExit()
+	end
+
 	manager.windowBar:HideBar()
 	manager.ui:ResetMainCamera()
+	arg_16_0.scrollMoveView_:OnExit()
 
-	if arg_17_0.timer_ then
-		arg_17_0.timer_:Stop()
-
-		arg_17_0.timer_ = nil
-	end
-
-	arg_17_0.scrollMoveView_:OnExit()
-
-	arg_17_0.lastChapterID_ = nil
-	arg_17_0.stopMove_ = false
+	arg_16_0.lastChapterID_ = nil
+	arg_16_0.stopMove_ = false
 end
 
-function var_0_0.Dispose(arg_18_0)
-	arg_18_0:RemoveListeners()
-	arg_18_0:RemoveAllListeners()
+function var_0_0.Dispose(arg_17_0)
+	arg_17_0:RemoveListeners()
+	arg_17_0:RemoveAllListeners()
 
-	if arg_18_0.timer_ then
-		arg_18_0.timer_:Stop()
+	if arg_17_0.multiView then
+		arg_17_0.multiView:Dispose()
 
-		arg_18_0.timer_ = nil
+		arg_17_0.multiView = nil
 	end
 
-	arg_18_0.lineType_ = nil
+	arg_17_0.lineType_ = nil
 
-	for iter_18_0, iter_18_1 in ipairs(arg_18_0.missionItem_) do
-		iter_18_1:Dispose()
+	for iter_17_0, iter_17_1 in ipairs(arg_17_0.missionItem_) do
+		iter_17_1:Dispose()
 	end
 
-	arg_18_0.missionItem_ = nil
+	arg_17_0.missionItem_ = nil
 
-	arg_18_0:DestroyLine()
+	arg_17_0:DestroyLine()
 
-	arg_18_0.lineList_ = nil
+	arg_17_0.lineList_ = nil
 
-	for iter_18_2, iter_18_3 in pairs(arg_18_0.customLineList_) do
-		iter_18_3:Dispose()
+	for iter_17_2, iter_17_3 in pairs(arg_17_0.customLineList_) do
+		iter_17_3:Dispose()
 	end
 
-	arg_18_0.customLineList_ = nil
+	arg_17_0.customLineList_ = nil
 
-	if arg_18_0.scene_ then
-		Object.Destroy(arg_18_0.scene_)
+	if arg_17_0.scene_ then
+		Object.Destroy(arg_17_0.scene_)
 
-		arg_18_0.scene_ = nil
+		arg_17_0.scene_ = nil
 	end
 
-	arg_18_0.selector_ = nil
+	arg_17_0.selector_ = nil
 
-	arg_18_0.scrollMoveView_:Dispose()
+	arg_17_0.scrollMoveView_:Dispose()
 
-	arg_18_0.scrollMoveView_ = nil
-	arg_18_0.bgBtn_ = nil
-	arg_18_0.scrollView_ = nil
-	arg_18_0.scrollViewGo_ = nil
-	arg_18_0.content_ = nil
-	arg_18_0.contentRect_ = nil
-	arg_18_0.viewportRect_ = nil
-	arg_18_0.scrollViewEvent_ = nil
-	arg_18_0.selectDifficultGo_ = nil
-	arg_18_0.collectBtnGo_ = nil
-	arg_18_0.collectBtn_ = nil
-	arg_18_0.collectCurText_ = nil
-	arg_18_0.collectTotalText_ = nil
-	arg_18_0.collectProgress_ = nil
-	arg_18_0.sectionItem_ = nil
-	arg_18_0.lineGo_ = nil
+	arg_17_0.scrollMoveView_ = nil
+	arg_17_0.bgBtn_ = nil
+	arg_17_0.rollBgBtn_ = nil
+	arg_17_0.scrollView_ = nil
+	arg_17_0.scrollViewGo_ = nil
+	arg_17_0.content_ = nil
+	arg_17_0.contentRect_ = nil
+	arg_17_0.viewportRect_ = nil
+	arg_17_0.scrollViewEvent_ = nil
+	arg_17_0.selectDifficultGo_ = nil
+	arg_17_0.collectBtnGo_ = nil
+	arg_17_0.collectBtn_ = nil
+	arg_17_0.collectCurText_ = nil
+	arg_17_0.collectTotalText_ = nil
+	arg_17_0.collectProgress_ = nil
+	arg_17_0.sectionItem_ = nil
+	arg_17_0.lineGo_ = nil
 
-	var_0_0.super.Dispose(arg_18_0)
+	var_0_0.super.Dispose(arg_17_0)
 end
 
-function var_0_0.InitUI(arg_19_0)
-	arg_19_0:BindCfgUI()
+function var_0_0.InitUI(arg_18_0)
+	arg_18_0:BindCfgUI()
 
-	arg_19_0.scrollMoveView_ = ScrollMoveView.New(arg_19_0, arg_19_0.scrollViewGo_)
+	arg_18_0.scrollMoveView_ = ScrollMoveView.New(arg_18_0, arg_18_0.scrollViewGo_)
 
-	arg_19_0:InitCustom()
+	arg_18_0:InitCustom()
 end
 
-function var_0_0.InitCustom(arg_20_0)
+function var_0_0.InitCustom(arg_19_0)
 	return
 end
 
-function var_0_0.AddListeners(arg_21_0)
-	arg_21_0:AddBtnListener(arg_21_0.bgBtn_, nil, function()
-		if arg_21_0:IsOpenSectionInfo() then
-			arg_21_0.isOpenInfoView_ = false
+function var_0_0.AddListeners(arg_20_0)
+	arg_20_0:AddBtnListener(arg_20_0.bgBtn_, nil, function()
+		if arg_20_0:IsOpenSectionInfo() then
+			arg_20_0.isOpenInfoView_ = false
 
 			var_0_2.Back()
 		end
 	end)
 
-	if arg_21_0.archiveCollectBtn_ then
-		arg_21_0:AddBtnListener(arg_21_0.archiveCollectBtn_, nil, function()
+	if arg_20_0.rollBgBtn_ then
+		arg_20_0:AddBtnListener(arg_20_0.rollBgBtn_, nil, function()
+			if arg_20_0:IsOpenSectionInfo() then
+				arg_20_0.isOpenInfoView_ = false
+
+				var_0_2.Back()
+			end
+		end)
+	end
+
+	if arg_20_0.archiveCollectBtn_ then
+		arg_20_0:AddBtnListener(arg_20_0.archiveCollectBtn_, nil, function()
 			var_0_2.OpenPageByJump("stageArchiveCollect", {
-				chapterID = arg_21_0.chapterID_
+				chapterID = arg_20_0.chapterID_
 			})
 		end)
 	end
@@ -253,6 +241,10 @@ end
 
 function var_0_0.RemoveListeners(arg_24_0)
 	arg_24_0.bgBtn_.onClick:RemoveAllListeners()
+
+	if arg_24_0.rollBgBtn_ then
+		arg_24_0.rollBgBtn_.onClick:RemoveAllListeners()
+	end
 end
 
 function var_0_0.RefreshData(arg_25_0)
@@ -307,7 +299,7 @@ function var_0_0.SwitchBG(arg_31_0)
 	local var_31_0 = ChapterCfg[arg_31_0.chapterID_]
 
 	if var_31_0.bg ~= "" then
-		arg_31_0.bgImage_.sprite = getSpriteWithoutAtlas(var_31_0.bg)
+		arg_31_0.bgImage_.sprite = pureGetSpriteWithoutAtlas(var_31_0.bg)
 	end
 
 	SetActive(arg_31_0.bgImage_.gameObject, var_31_0.bg ~= "")

@@ -26,13 +26,13 @@ function var_0_0.OnEnter(arg_6_0)
 end
 
 function var_0_0.RefreshUI(arg_7_0)
-	local var_7_0 = StageArchivesCollecteCfg[arg_7_0.archiveID_]
+	local var_7_0 = StageArchivesCollectCfg[arg_7_0.archiveID_]
 
 	arg_7_0.nameText_.text = formatText(var_7_0.name)
 	arg_7_0.archiveText_.text = formatText(var_7_0.desc)
 
 	if arg_7_0.iconImage_ then
-		arg_7_0.iconImage_.sprite = getSpriteWithoutAtlas(var_7_0.archive_icon)
+		arg_7_0.iconImage_.sprite = pureGetSpriteWithoutAtlas(var_7_0.archive_icon)
 	end
 
 	arg_7_0.scrollView_.verticalNormalizedPosition = 1

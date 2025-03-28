@@ -17,6 +17,9 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
 	arg_4_0.infoPage_ = IdolTraineeTrainInfoPage.New(arg_4_0.pageGo_)
+
+	arg_4_0.infoPage_:EnableLockControl(true)
+
 	arg_4_0.trainBtnItemList_ = {}
 
 	for iter_4_0 = 1, DormConst.IDOL_TRAINEE_PROPERTY_COUNT do
@@ -65,7 +68,7 @@ function var_0_0.RegisterEvents(arg_10_0)
 
 		manager.windowBar:HideBar()
 
-		arg_10_0.trainAddIcon_.sprite = getSpriteWithoutAtlas(SpritePathCfg.IdolDanceSkillIcon.path .. "IdolTrainee_icon_skill_00" .. arg_11_1)
+		arg_10_0.trainAddIcon_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.IdolDanceSkillIcon.path .. "IdolTrainee_icon_skill_00" .. arg_11_1)
 		arg_10_0.trainAddName_.text = GetTips("IDOL_SKILL_ATTRIBUTE_" .. arg_11_1)
 		arg_10_0.trainAddNum_.text = "+" .. arg_11_2
 
@@ -105,6 +108,7 @@ function var_0_0.OnEnter(arg_14_0)
 	arg_14_0.backToDormInfo = arg_14_0.params_.backToDormInfo or false
 
 	arg_14_0:RegisterEvents()
+	arg_14_0.infoPage_:RegisterEvents()
 
 	arg_14_0.heroList_ = IdolTraineeData:GetIdolHeroList(true)
 
@@ -158,7 +162,8 @@ function var_0_0.OnExit(arg_17_0)
 	manager.windowBar:HideBar()
 	SetActive(arg_17_0.countInfoGo_, false)
 	IdolTraineeCampBridge.SetVCamActive("CamShootAtTrainningPos", false)
-	arg_17_0:RegisterEvents()
+	arg_17_0.infoPage_:RemoveAllEventListener()
+	arg_17_0:RemoveAllEventListener()
 end
 
 function var_0_0.IndexItem(arg_18_0, arg_18_1, arg_18_2)

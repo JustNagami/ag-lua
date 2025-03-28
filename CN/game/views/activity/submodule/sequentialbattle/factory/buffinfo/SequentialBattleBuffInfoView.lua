@@ -118,7 +118,7 @@ function var_0_0.RefreshRightPanel(arg_12_0)
 	local var_12_2 = AffixTypeCfg[var_12_1]
 	local var_12_3 = PublicBuffCfg[var_12_2.affix_buff_id].icon
 
-	arg_12_0.selectIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/MaedukAffix/" .. var_12_3)
+	arg_12_0.selectIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/MaedukAffix/" .. var_12_3)
 
 	local var_12_4 = false
 

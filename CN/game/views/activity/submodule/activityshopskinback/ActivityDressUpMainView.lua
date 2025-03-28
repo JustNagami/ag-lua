@@ -67,7 +67,7 @@ function var_0_0.RefreshUI(arg_10_0)
 	arg_10_0.skinList_ = GameSetting.skin_return.value
 
 	for iter_10_0, iter_10_1 in ipairs(arg_10_0.skinList_) do
-		arg_10_0["skinImg_" .. iter_10_0].sprite = getSpriteWithoutAtlas("TextureBg/Version/NorseUI_3_0/NorseUI_3_0_DressUpMainUI/" .. iter_10_1)
+		arg_10_0["skinImg_" .. iter_10_0].sprite = pureGetSpriteWithoutAtlas("TextureBg/Version/NorseUI_3_0/NorseUI_3_0_DressUpMainUI/" .. iter_10_1)
 	end
 
 	local var_10_0 = ActivityData:GetActivityData(arg_10_0.activityID_).stopTime

@@ -121,6 +121,7 @@ function var_0_0.OnEnter(arg_11_0)
 		arg_11_0.curHeroIndex_ = table.keyof(arg_11_0.heroList_, arg_11_0.curHeroID_)
 	end
 
+	arg_11_0.infoPage_:RegisterEvents()
 	arg_11_0:UpdateView(arg_11_0.curHeroID_)
 	arg_11_0.heroUIList_:StartScroll(#arg_11_0.heroList_)
 	arg_11_0.stageInfoPage:SetParams({
@@ -146,6 +147,7 @@ function var_0_0.UpdateView(arg_13_0, arg_13_1)
 end
 
 function var_0_0.OnExit(arg_14_0)
+	arg_14_0.infoPage_:RemoveAllEventListener()
 	manager.windowBar:HideBar()
 	IdolTraineeCampBridge.SetVCamActive("CamShootAtTrainningPos", false)
 end

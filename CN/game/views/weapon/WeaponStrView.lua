@@ -38,6 +38,9 @@ function var_0_1.OnExit(arg_8_0)
 end
 
 function var_0_1.RefreshStrSuccess(arg_9_0, arg_9_1, arg_9_2, arg_9_3)
+	SetActive(arg_9_0.lvGo_, false)
+	SetActive(arg_9_0.hxGo_, false)
+
 	arg_9_0.descChangeText_.text = arg_9_1
 	arg_9_0.desctextText_.text = arg_9_2
 

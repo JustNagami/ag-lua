@@ -9313,11 +9313,11 @@
 		arg_185_1.frameCnt_ = 0
 		arg_185_1.state_ = "playing"
 		arg_185_1.curTalkId_ = 413141046
-		arg_185_1.duration_ = 11.7
+		arg_185_1.duration_ = 12.2
 
 		local var_185_0 = {
 			zh = 6.266,
-			ja = 11.7
+			ja = 12.2
 		}
 		local var_185_1 = manager.audio:GetLocalizationFlag()
 

@@ -90,19 +90,18 @@ function var_0_0.SelectPage(arg_10_0, arg_10_1)
 			arg_10_0:ChangeCurScene(arg_10_1, arg_10_0.sceneList_[1])
 		end
 	else
-		local var_10_2 = PlayerData:GetPosterGirlHeroId()
-		local var_10_3 = HeroTools.HeroUsingSkinInfo(var_10_2).id
+		local var_10_2 = PlayerData:GetPosterGirlHeroSkinId()
+		local var_10_3
 		local var_10_4
-		local var_10_5
 
-		if var_10_3 and SkinSceneActionCfg[var_10_3] then
-			var_10_4 = SkinSceneActionCfg[var_10_3].special_scene_id
+		if var_10_2 and SkinSceneActionCfg[var_10_2] then
+			var_10_3 = SkinSceneActionCfg[var_10_2].special_scene_id
 		end
 
-		if var_10_4 then
+		if var_10_3 then
 			for iter_10_0, iter_10_1 in ipairs(arg_10_0.dlcList_) do
-				if iter_10_1 == var_10_4 then
-					var_10_5 = iter_10_0
+				if iter_10_1 == var_10_3 then
+					var_10_4 = iter_10_0
 
 					break
 				end
@@ -111,8 +110,8 @@ function var_0_0.SelectPage(arg_10_0, arg_10_1)
 
 		if var_10_1 and var_10_1.limit_display == 0 then
 			arg_10_0:ChangeCurScene(arg_10_1, var_10_0)
-		elseif var_10_4 and var_10_5 then
-			arg_10_0:ChangeCurScene(arg_10_1, var_10_4)
+		elseif var_10_3 and var_10_4 then
+			arg_10_0:ChangeCurScene(arg_10_1, var_10_3)
 		else
 			arg_10_0:ChangeCurScene(arg_10_1, arg_10_0.dlcList_[1])
 		end

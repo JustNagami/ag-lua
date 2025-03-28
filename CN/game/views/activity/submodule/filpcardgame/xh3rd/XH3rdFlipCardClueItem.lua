@@ -19,6 +19,7 @@ function var_0_0.SetData(arg_3_0, arg_3_1, arg_3_2)
 	arg_3_0.icon_path = arg_3_1.icon_path
 	arg_3_0.picture = arg_3_1.picture
 	arg_3_0.activityId = arg_3_2
+	arg_3_0.flipCardCfg = FlipCardCfg[arg_3_0.activityId]
 	arg_3_0.isGetted = XH3rdFlipCardData:CheckClueIsGetted(arg_3_0.clueId)
 	arg_3_0.isViewed = XH3rdFlipCardData:CheckClueIsViewed(arg_3_0.clueId)
 
@@ -47,8 +48,8 @@ function var_0_0.RefreshUI(arg_7_0)
 		arg_7_0.lockController:SetSelectedState("lock")
 	end
 
-	if arg_7_0.icon_path and arg_7_0.icon_path ~= "" then
-		arg_7_0.img_.sprite = getSpriteWithoutAtlas(arg_7_0.icon_path)
+	if arg_7_0.picture and arg_7_0.picture ~= "" and arg_7_0.flipCardCfg.clue_icon_path and arg_7_0.flipCardCfg.clue_icon_path ~= "" then
+		arg_7_0.img_.sprite = pureGetSpriteWithoutAtlas(arg_7_0.flipCardCfg.clue_icon_path .. arg_7_0.picture)
 	end
 end
 

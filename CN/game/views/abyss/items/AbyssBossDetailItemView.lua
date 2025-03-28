@@ -43,7 +43,7 @@ function var_0_0.UpdateView(arg_7_0)
 	})
 	arg_7_0.raceText_.text = GetTips("RACE_TYPE_" .. var_7_0.race)
 	arg_7_0.riskText_.text = NumberTools.IntToRomam(var_7_0.type + 1)
-	arg_7_0.portraitImage_.sprite = getSpriteWithoutAtlas(SpritePathCfg.CollectBoss.path .. arg_7_0.monsterCollectId_)
+	arg_7_0.portraitImage_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.CollectBoss.path .. arg_7_0.monsterCollectId_)
 
 	arg_7_0:UpdateData()
 	arg_7_0:RefreshSkill()

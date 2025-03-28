@@ -44,7 +44,7 @@ function var_0_0.UpdateView(arg_8_0)
 
 	arg_8_0.stateController:SetSelectedState(arg_8_0.data.canUse and "unlock" or "lock")
 
-	arg_8_0.adminCatImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Managecat_l/" .. var_8_0.meow_icon)
+	arg_8_0.adminCatImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Managecat_l/" .. var_8_0.meow_icon)
 	arg_8_0.nameTxt_.text = GetI18NText(var_8_0.meow_name)
 
 	arg_8_0.selectController:SetSelectedState(arg_8_0.index == arg_8_0.selectIndex and "sel" or "normal")

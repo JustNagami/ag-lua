@@ -92,7 +92,7 @@ end
 function var_0_0.RefreshUI(arg_10_0)
 	local var_10_0 = ActivityAttributeArenaCfg[arg_10_0.attribute_arena_id]
 
-	arg_10_0.m_monsterIcon.sprite = getSpriteWithoutAtlas("TextureConfig/ArenaUI/Boss/" .. var_10_0.stage_id)
+	arg_10_0.m_monsterIcon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/ArenaUI/Boss/" .. var_10_0.stage_id)
 	arg_10_0.m_attributeIcon.sprite = HeroTools.GetSkillAttributeIcon(var_10_0.attribute)
 
 	if arg_10_0.score == 0 then

@@ -109,7 +109,7 @@ function var_0_0.RefreshUI(arg_10_0)
 	local var_10_4 = BattleActivityStoryStageCfg[arg_10_0.stageID_]
 
 	arg_10_0.textName_.text = GetI18NText(var_10_4.name)
-	arg_10_0.imageBg_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_10_4.background_1))
+	arg_10_0.imageBg_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_10_4.background_1))
 
 	arg_10_0:Show(not arg_10_0.isLock_)
 	arg_10_0:RefreshClear()

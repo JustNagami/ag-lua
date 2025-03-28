@@ -111,7 +111,7 @@ function var_0_0.RefreshUI(arg_18_0)
 		arg_18_0.resultController_:SetSelectedState("lose")
 	end
 
-	arg_18_0.heroImg_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/snowballPortrait2/" .. PushSnowBallData:GetSelectedHeroID())
+	arg_18_0.heroImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/snowballPortrait2/" .. PushSnowBallData:GetSelectedHeroID())
 
 	arg_18_0.uiList_:StartScroll(#arg_18_0.resultInfo)
 end

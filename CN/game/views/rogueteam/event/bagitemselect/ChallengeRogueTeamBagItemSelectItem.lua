@@ -29,7 +29,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1)
 	local var_5_1 = RogueTeamItemCfg[var_5_0]
 
 	arg_5_0.nameText_.text = var_5_1.name
-	arg_5_0.icon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_5_0))
+	arg_5_0.icon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_5_0))
 
 	arg_5_0:RefreshSelectState(arg_5_1.isSelect)
 

@@ -51,6 +51,12 @@ function var_0_0.OnEnter(arg_7_0)
 		SetActive(arg_7_0.itemList_[iter_7_2].gameObject_, false)
 	end
 
+	if #arg_7_0.activityIDList_ > 3 then
+		arg_7_0.scrollView_.enabled = true
+	else
+		arg_7_0.scrollView_.enabled = false
+	end
+
 	arg_7_0:SelectItem(arg_7_0.selectID_)
 end
 

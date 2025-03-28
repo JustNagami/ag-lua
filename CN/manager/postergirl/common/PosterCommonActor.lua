@@ -43,9 +43,15 @@ end
 
 function var_0_0.GetInteractionCfg(arg_7_0)
 	local var_7_0 = arg_7_0.skinId
-	local var_7_1 = SkinCfg[var_7_0].hero
+	local var_7_1 = tonumber("99" .. var_7_0)
 
-	return arg_7_0:_GetInteractionCfg(var_7_1)
+	if HeroInteractionCfg[var_7_1] then
+		return arg_7_0:_GetInteractionCfg(var_7_1)
+	end
+
+	local var_7_2 = SkinCfg[var_7_0].hero
+
+	return arg_7_0:_GetInteractionCfg(var_7_2)
 end
 
 function var_0_0.DoShacking(arg_8_0)
@@ -54,6 +60,7 @@ function var_0_0.DoShacking(arg_8_0)
 	end
 
 	arg_8_0:ChangeState(PosterGirlConst.StateKay.shake)
+	arg_8_0.super.DoShacking(arg_8_0)
 end
 
 function var_0_0.DoTouch(arg_9_0)
@@ -62,6 +69,7 @@ function var_0_0.DoTouch(arg_9_0)
 	end
 
 	arg_9_0:ChangeState(PosterGirlConst.StateKay.touch)
+	arg_9_0.super.DoTouch(arg_9_0)
 end
 
 function var_0_0.DoQuickTouch(arg_10_0)
@@ -70,6 +78,7 @@ function var_0_0.DoQuickTouch(arg_10_0)
 	end
 
 	arg_10_0:ChangeState(PosterGirlConst.StateKay.quickclick)
+	arg_10_0.super.DoQuickTouch(arg_10_0)
 end
 
 function var_0_0.DoShowing(arg_11_0)
@@ -78,6 +87,7 @@ function var_0_0.DoShowing(arg_11_0)
 	end
 
 	arg_11_0:ChangeState(PosterGirlConst.StateKay.show)
+	arg_11_0.super.DoShowing(arg_11_0)
 end
 
 function var_0_0.DoGreeting(arg_12_0)
@@ -86,6 +96,7 @@ function var_0_0.DoGreeting(arg_12_0)
 	end
 
 	arg_12_0:ChangeState(PosterGirlConst.StateKay.greet)
+	arg_12_0.super.DoGreeting(arg_12_0)
 end
 
 function var_0_0.DoIdle(arg_13_0)
@@ -94,6 +105,7 @@ function var_0_0.DoIdle(arg_13_0)
 	end
 
 	arg_13_0:ChangeState(PosterGirlConst.StateKay.idle)
+	arg_13_0.super.DoIdle(arg_13_0)
 end
 
 function var_0_0.DoInit(arg_14_0, arg_14_1)

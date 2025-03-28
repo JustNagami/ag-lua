@@ -24,7 +24,7 @@ function var_0_1.SetData(arg_5_0, arg_5_1)
 end
 
 function var_0_1.RefreshUI(arg_6_0)
-	arg_6_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/SandPlay/MiniIcon/" .. arg_6_0.functionInfo_.icon)
+	arg_6_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/SandPlay/MiniIcon/" .. arg_6_0.functionInfo_.icon)
 	arg_6_0.content_.text = arg_6_0.functionInfo_.function_content
 end
 
@@ -35,6 +35,7 @@ function var_0_1.Hide(arg_7_0)
 
 	if arg_7_0.functionInfo_ then
 		manager.notify:CallUpdateFunc("CheckQWorldFunctionOpen")
+		manager.notify:Invoke(QWORLD_SYSTEM_OPEN, arg_7_0.functionInfo_.id)
 		QWorldAction.UnlockFunction(arg_7_0.functionInfo_.id)
 	end
 

@@ -35,10 +35,10 @@ function var_0_0.SetData(arg_2_0, arg_2_1)
 	if var_2_0.type == 1 then
 		arg_2_0.lockController_:SetSelectedState("false")
 
-		arg_2_0.icon_.sprite = getSpriteViaConfig("ChatSticker", var_2_0.icon .. SettingData:GetCurrentLanguageKey())
+		arg_2_0.icon_.sprite = getSpriteViaConfig("ChatSticker", var_2_0.icon)
 		arg_2_0.icon_.enabled = true
 	else
-		arg_2_0.dynamicStickerGo_ = Object.Instantiate(Asset.Load(var_2_0.icon .. SettingData:GetCurrentLanguageKey()), arg_2_0.dynamicTf_)
+		arg_2_0.dynamicStickerGo_ = Object.Instantiate(Asset.Load(var_2_0.icon), arg_2_0.dynamicTf_)
 		arg_2_0.icon_.enabled = false
 	end
 end

@@ -355,7 +355,7 @@ function var_0_0.InitBackScene(arg_31_0)
 	arg_31_0.backGroundTrs_.localPosition = Vector3(0, 0, 100)
 	arg_31_0.backGroundTrs_.localEulerAngles = Vector3(0, 0, 0)
 	arg_31_0.backGroundTrs_.localScale = Vector3(11, 11, 1)
-	arg_31_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng1stUI/XuHeng1st_bg_00122")
+	arg_31_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng1stUI/XuHeng1st_bg_00122")
 end
 
 function var_0_0.OnMusicSetNodeHit(arg_32_0, arg_32_1, arg_32_2)

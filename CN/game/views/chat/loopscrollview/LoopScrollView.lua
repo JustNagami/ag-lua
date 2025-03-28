@@ -67,7 +67,9 @@ function var_0_0.RestoredScroll(arg_7_0, arg_7_1, arg_7_2)
 	LayoutRebuilder.ForceRebuildLayoutImmediate(arg_7_0.rectGrid_)
 end
 
-function var_0_0.NavigateIndex(arg_8_0, arg_8_1)
+function var_0_0.NavigateIndex(arg_8_0, arg_8_1, arg_8_2)
+	arg_8_2 = arg_8_2 or 0
+
 	if arg_8_0.isHorizontal then
 		arg_8_0.scrollView_.horizontalNormalizedPosition = 0.9999
 	else
@@ -95,7 +97,7 @@ function var_0_0.NavigateIndex(arg_8_0, arg_8_1)
 			arg_8_0.contentHeight_ = arg_8_0.contentHeight_ + arg_8_0.itemSpace_ + var_8_2.itemView:GetItemHeight()
 		end
 
-		if arg_8_0.contentHeight_ >= arg_8_0:GetContentHeight() then
+		if arg_8_0.contentHeight_ >= arg_8_0:GetContentHeight() + math.abs(arg_8_2) then
 			break
 		end
 	end
@@ -145,7 +147,8 @@ end
 
 function var_0_0.RefreshScrollView(arg_10_0, arg_10_1, arg_10_2)
 	local var_10_0 = 0.99999
-	local var_10_1 = arg_10_0.rectGrid_.localPosition
+	local var_10_1
+	local var_10_2 = arg_10_0.rectGrid_.localPosition
 
 	if arg_10_2 then
 		if arg_10_0.isHorizontal then
@@ -153,6 +156,10 @@ function var_0_0.RefreshScrollView(arg_10_0, arg_10_1, arg_10_2)
 		else
 			var_10_0 = arg_10_0.scrollView_.verticalNormalizedPosition
 		end
+
+		var_10_1 = arg_10_0.rectGrid_.localPosition
+	else
+		var_10_1 = Vector2.zero
 	end
 
 	if #arg_10_0.itemList_ <= 0 then
@@ -169,10 +176,10 @@ function var_0_0.RefreshScrollView(arg_10_0, arg_10_1, arg_10_2)
 		return
 	end
 
-	local var_10_2 = arg_10_0.itemList_[1].itemView:GetIndex()
+	local var_10_3 = arg_10_0.itemList_[1].itemView:GetIndex()
 
 	if arg_10_0.itemList_[1].itemView:IsActive() == false then
-		arg_10_0:NavigateIndex(var_10_2)
+		arg_10_0:NavigateIndex(var_10_3)
 
 		if arg_10_0.isHorizontal then
 			arg_10_0.scrollView_.horizontalNormalizedPosition = var_10_0
@@ -185,9 +192,9 @@ function var_0_0.RefreshScrollView(arg_10_0, arg_10_1, arg_10_2)
 		return
 	end
 
-	local var_10_3 = arg_10_0.parentView_:LsGetItemData()
+	local var_10_4 = arg_10_0.parentView_:LsGetItemData()
 
-	if #var_10_3 <= 0 then
+	if #var_10_4 <= 0 then
 		arg_10_0:DeleteAllItem()
 
 		if arg_10_0.isHorizontal then
@@ -201,27 +208,33 @@ function var_0_0.RefreshScrollView(arg_10_0, arg_10_1, arg_10_2)
 		return
 	end
 
-	local var_10_4 = var_10_3[var_10_2]
+	local var_10_5 = var_10_4[var_10_3]
 
 	if arg_10_1 then
 		arg_10_0:DeleteAllItem()
-		arg_10_0:NavigateIndex(var_10_2)
-		LayoutRebuilder.ForceRebuildLayoutImmediate(arg_10_0.rectGrid_)
+
+		if arg_10_0.isHorizontal then
+			arg_10_0:NavigateIndex(var_10_3, var_10_1.x)
+		else
+			arg_10_0:NavigateIndex(var_10_3, var_10_1.y)
+		end
+
+		arg_10_0.rectGrid_.localPosition = var_10_1
 
 		if arg_10_0.isHorizontal then
 			arg_10_0.scrollView_.horizontalNormalizedPosition = var_10_0
-		else
-			arg_10_0.scrollView_.verticalNormalizedPosition = var_10_0
 		end
+
+		arg_10_0.scrollView_.verticalNormalizedPosition = var_10_0
 
 		return
 	else
-		arg_10_0.parentView_:LsUpdateItem(arg_10_0.itemList_[1], var_10_4, var_10_2)
+		arg_10_0.parentView_:LsUpdateItem(arg_10_0.itemList_[1], var_10_5, var_10_3)
 
 		for iter_10_0 = #arg_10_0.itemList_, 2, -1 do
-			local var_10_5 = arg_10_0.itemList_[iter_10_0]
+			local var_10_6 = arg_10_0.itemList_[iter_10_0]
 
-			arg_10_0.parentView_:LsRemoveItem(var_10_5)
+			arg_10_0.parentView_:LsRemoveItem(var_10_6)
 			table.remove(arg_10_0.itemList_, iter_10_0)
 		end
 

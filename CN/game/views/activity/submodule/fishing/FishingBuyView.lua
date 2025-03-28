@@ -79,7 +79,7 @@ function var_0_0.OnEnter(arg_15_0)
 
 	arg_15_0.cfg_ = RareFishCfg[arg_15_0.params_.fishId]
 	arg_15_0.icon1_.sprite = ItemTools.getItemLittleSprite(CurrencyConst.CURRENCY_TYPE_SUMMER_FISHING_COIN)
-	arg_15_0.icon2_.sprite = getSpriteWithoutAtlas(string.format("TextureConfig/Fishing/RareFishIcon/%d", arg_15_0.params_.fishId))
+	arg_15_0.icon2_.sprite = pureGetSpriteWithoutAtlas(string.format("TextureConfig/Fishing/RareFishIcon/%d", arg_15_0.params_.fishId))
 	arg_15_0.useNameText_.text = ItemTools.getItemName(CurrencyConst.CURRENCY_TYPE_SUMMER_FISHING_COIN)
 	arg_15_0.getNameText_.text = GetI18NText(RareFishCfg[arg_15_0.params_.fishId].name)
 

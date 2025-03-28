@@ -880,6 +880,8 @@
 			if arg_27_0 == 1 then
 				arg_25_0:Play100012007(arg_25_1)
 			end
+
+			arg_25_1:RecordChoiceLog(100012006, 100012007)
 		end
 
 		function arg_25_1.onSingleLineUpdate_(arg_28_0)
@@ -1987,6 +1989,8 @@
 			if arg_61_0 == 1 then
 				arg_59_0:Play100012015(arg_59_1)
 			end
+
+			arg_59_1:RecordChoiceLog(100012014, 100012015)
 		end
 
 		function arg_59_1.onSingleLineUpdate_(arg_62_0)

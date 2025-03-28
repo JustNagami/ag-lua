@@ -22,7 +22,7 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1)
 	arg_4_0.userID_ = arg_4_1.user_id
 	arg_4_0.name_.text = GetI18NText(arg_4_1.nick)
 	arg_4_0.icon_.sprite = ItemTools.getItemSprite(arg_4_1.icon)
-	arg_4_0.frame_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_4_1.icon_frame)
+	arg_4_0.frame_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_4_1.icon_frame)
 	arg_4_0.rank_.text = arg_4_1.rank
 	arg_4_0.score_.text = arg_4_1.score
 

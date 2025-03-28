@@ -165,13 +165,13 @@ function var_0_0.SelectAndSortData(arg_16_0, arg_16_1)
 
 	if arg_16_1 == 7 then
 		for iter_16_1, iter_16_2 in ipairs(arg_16_0.heroDataList) do
-			if not HeroTools.GetIsHide(iter_16_2.id) then
+			if not HeroTools.GetIsHide(iter_16_2.id) and arg_16_0:DoseHeroHaveCooperation(iter_16_2.id) then
 				table.insert(arg_16_0.displayHeroDataList, iter_16_2)
 			end
 		end
 	else
 		for iter_16_3, iter_16_4 in ipairs(arg_16_0.heroDataList) do
-			if not HeroTools.GetIsHide(iter_16_4.id) and HeroCfg[iter_16_4.id].race == arg_16_1 then
+			if not HeroTools.GetIsHide(iter_16_4.id) and arg_16_0:DoseHeroHaveCooperation(iter_16_4.id) and HeroCfg[iter_16_4.id].race == arg_16_1 then
 				table.insert(arg_16_0.displayHeroDataList, iter_16_4)
 			end
 		end
@@ -247,80 +247,65 @@ function var_0_0.SelectAndSortData(arg_16_0, arg_16_1)
 	end
 end
 
-function var_0_0.UpdateSkillList(arg_18_0)
-	if arg_18_0.heroId then
+function var_0_0.DoseHeroHaveCooperation(arg_18_0, arg_18_1)
+	local var_18_0 = ComboSkillTools.GetHeroComboSkill(arg_18_1)
+
+	if var_18_0 and #var_18_0 > 0 then
+		return true
+	end
+
+	return false
+end
+
+function var_0_0.UpdateSkillList(arg_19_0)
+	if arg_19_0.heroId then
 		TimeTools.StartAfterSeconds(0.5, function()
-			arg_18_0.contentTrs_.anchoredPosition = Vector2(-1 * math.max(arg_18_0.index - 1, 0) * (arg_18_0.itemRect_.rect.width + arg_18_0.contentLayout_.spacing), arg_18_0.contentTrs_.anchoredPosition.y)
+			arg_19_0.contentTrs_.anchoredPosition = Vector2(-1 * math.max(arg_19_0.index - 1, 0) * (arg_19_0.itemRect_.rect.width + arg_19_0.contentLayout_.spacing), arg_19_0.contentTrs_.anchoredPosition.y)
 		end, {})
 	end
 
-	for iter_18_0, iter_18_1 in pairs(arg_18_0.heroItemPoolList) do
-		SetActive(iter_18_1.gameObject_, false)
+	for iter_19_0, iter_19_1 in pairs(arg_19_0.heroItemPoolList) do
+		SetActive(iter_19_1.gameObject_, false)
 	end
 
-	for iter_18_2, iter_18_3 in pairs(arg_18_0.displayHeroDataList) do
-		local var_18_0 = arg_18_0.heroItemPoolList[iter_18_2] or arg_18_0:CreateComboSkill(iter_18_2)
+	for iter_19_2, iter_19_3 in pairs(arg_19_0.displayHeroDataList) do
+		local var_19_0 = arg_19_0.heroItemPoolList[iter_19_2] or arg_19_0:CreateComboSkill(iter_19_2)
 
-		SetActive(var_18_0.gameObject_, true)
-		var_18_0:SetData(iter_18_3, handler(arg_18_0, arg_18_0.PlayCombineSkill), arg_18_0.heroId, handler(arg_18_0, arg_18_0.ClickCallBack), iter_18_2, arg_18_0.emptyGo_)
+		SetActive(var_19_0.gameObject_, true)
+		var_19_0:SetData(iter_19_3, handler(arg_19_0, arg_19_0.PlayCombineSkill), arg_19_0.heroId, handler(arg_19_0, arg_19_0.ClickCallBack), iter_19_2, arg_19_0.emptyGo_)
 	end
 
-	arg_18_0.emptyGo_.transform:SetSiblingIndex(#arg_18_0.heroItemPoolList)
+	arg_19_0.emptyGo_.transform:SetSiblingIndex(#arg_19_0.heroItemPoolList)
 
-	arg_18_0.heroId = nil
+	arg_19_0.heroId = nil
 end
 
-function var_0_0.ClickCallBack(arg_20_0, arg_20_1)
-	for iter_20_0, iter_20_1 in pairs(arg_20_0.heroItemPoolList) do
-		if iter_20_1.gameObject_.activeSelf then
-			if iter_20_1.data.id ~= arg_20_1 then
-				if iter_20_1.showController:GetSelectedState() == "true" then
-					iter_20_1.animator_:Play("EsotericVideo_02")
+function var_0_0.ClickCallBack(arg_21_0, arg_21_1)
+	for iter_21_0, iter_21_1 in pairs(arg_21_0.heroItemPoolList) do
+		if iter_21_1.gameObject_.activeSelf then
+			if iter_21_1.data.id ~= arg_21_1 then
+				if iter_21_1.showController:GetSelectedState() == "true" then
+					iter_21_1.animator_:Play("EsotericVideo_02")
 				end
 
-				iter_20_1.showController:SetSelectedState("false")
-			elseif iter_20_1.showController:GetSelectedState() == "false" then
-				local var_20_0 = math.abs(arg_20_0.contentTrs_.anchoredPosition.x)
-				local var_20_1 = arg_20_0.viewRect_.rect.width
-				local var_20_2 = math.max(iter_20_1.index - 1, 0) * (arg_20_0.itemRect_.rect.width + arg_20_0.contentLayout_.spacing)
+				iter_21_1.showController:SetSelectedState("false")
+			elseif iter_21_1.showController:GetSelectedState() == "false" then
+				local var_21_0 = math.abs(arg_21_0.contentTrs_.anchoredPosition.x)
+				local var_21_1 = arg_21_0.viewRect_.rect.width
+				local var_21_2 = math.max(iter_21_1.index - 1, 0) * (arg_21_0.itemRect_.rect.width + arg_21_0.contentLayout_.spacing)
 
-				if var_20_2 < var_20_0 then
-					arg_20_0.contentTrs_.anchoredPosition = Vector2(-1 * var_20_2, arg_20_0.contentTrs_.anchoredPosition.y)
-				elseif var_20_2 + arg_20_0.extentRect_.rect.width + arg_20_0.itemRect_.rect.width + arg_20_0.contentLayout_.spacing > var_20_0 + var_20_1 then
-					arg_20_0.contentTrs_.anchoredPosition = Vector2(-1 * (iter_20_1.index * (arg_20_0.itemRect_.rect.width + arg_20_0.contentLayout_.spacing) - arg_20_0.contentLayout_.spacing - var_20_1 + arg_20_0.extentRect_.rect.width), arg_20_0.contentTrs_.anchoredPosition.y)
+				if var_21_2 < var_21_0 then
+					arg_21_0.contentTrs_.anchoredPosition = Vector2(-1 * var_21_2, arg_21_0.contentTrs_.anchoredPosition.y)
+				elseif var_21_2 + arg_21_0.extentRect_.rect.width + arg_21_0.itemRect_.rect.width + arg_21_0.contentLayout_.spacing > var_21_0 + var_21_1 then
+					arg_21_0.contentTrs_.anchoredPosition = Vector2(-1 * (iter_21_1.index * (arg_21_0.itemRect_.rect.width + arg_21_0.contentLayout_.spacing) - arg_21_0.contentLayout_.spacing - var_21_1 + arg_21_0.extentRect_.rect.width), arg_21_0.contentTrs_.anchoredPosition.y)
 				end
 			end
 		end
 	end
 end
 
-function var_0_0.OnExit(arg_21_0)
+function var_0_0.OnExit(arg_22_0)
 	manager.ui:ResetMainCamera()
-
-	if arg_21_0.timer then
-		arg_21_0.timer:Stop()
-
-		arg_21_0.timer = nil
-	end
-
-	for iter_21_0, iter_21_1 in pairs(arg_21_0.list) do
-		Object.DestroyImmediate(iter_21_1)
-	end
-
-	arg_21_0.list = {}
-	arg_21_0.cinemachineBrain.enabled = false
-
-	for iter_21_2, iter_21_3 in pairs(arg_21_0.poolList) do
-		Object.DestroyImmediate(iter_21_3)
-	end
-end
-
-function var_0_0.Dispose(arg_22_0)
-	arg_22_0:RemoveAllListeners()
-
-	for iter_22_0, iter_22_1 in pairs(arg_22_0.list) do
-		Object.DestroyImmediate(iter_22_1)
-	end
 
 	if arg_22_0.timer then
 		arg_22_0.timer:Stop()
@@ -328,76 +313,101 @@ function var_0_0.Dispose(arg_22_0)
 		arg_22_0.timer = nil
 	end
 
-	for iter_22_2, iter_22_3 in pairs(arg_22_0.heroItemPoolList) do
-		if iter_22_3 then
-			iter_22_3:Dispose()
+	for iter_22_0, iter_22_1 in pairs(arg_22_0.list) do
+		Object.DestroyImmediate(iter_22_1)
+	end
+
+	arg_22_0.list = {}
+	arg_22_0.cinemachineBrain.enabled = false
+
+	for iter_22_2, iter_22_3 in pairs(arg_22_0.poolList) do
+		Object.DestroyImmediate(iter_22_3)
+	end
+end
+
+function var_0_0.Dispose(arg_23_0)
+	arg_23_0:RemoveAllListeners()
+
+	for iter_23_0, iter_23_1 in pairs(arg_23_0.list) do
+		Object.DestroyImmediate(iter_23_1)
+	end
+
+	if arg_23_0.timer then
+		arg_23_0.timer:Stop()
+
+		arg_23_0.timer = nil
+	end
+
+	for iter_23_2, iter_23_3 in pairs(arg_23_0.heroItemPoolList) do
+		if iter_23_3 then
+			iter_23_3:Dispose()
 		end
 	end
 
-	var_0_0.super.Dispose(arg_22_0)
+	var_0_0.super.Dispose(arg_23_0)
 end
 
-function var_0_0.UnlockSorter(arg_23_0, arg_23_1, arg_23_2)
-	if arg_23_1.unlock ~= arg_23_2.unlock then
-		return true, arg_23_1.unlock > arg_23_2.unlock
+function var_0_0.UnlockSorter(arg_24_0, arg_24_1, arg_24_2)
+	if arg_24_1.unlock ~= arg_24_2.unlock then
+		return true, arg_24_1.unlock > arg_24_2.unlock
 	end
 
 	return false, false
 end
 
-function var_0_0.IDSorter(arg_24_0, arg_24_1, arg_24_2)
-	if arg_24_1.id ~= arg_24_2.id then
-		return true, arg_24_1.id > arg_24_2.id
+function var_0_0.IDSorter(arg_25_0, arg_25_1, arg_25_2)
+	if arg_25_1.id ~= arg_25_2.id then
+		return true, arg_25_1.id > arg_25_2.id
 	end
 
 	return false, false
 end
 
-function var_0_0.RareSorter(arg_25_0, arg_25_1, arg_25_2)
-	local var_25_0 = HeroCfg[arg_25_1.id]
-	local var_25_1 = HeroCfg[arg_25_2.id]
+function var_0_0.RareSorter(arg_26_0, arg_26_1, arg_26_2)
+	local var_26_0 = HeroCfg[arg_26_1.id]
+	local var_26_1 = HeroCfg[arg_26_2.id]
 
-	if var_25_0.rare ~= var_25_1.rare then
-		return true, var_25_0.rare > var_25_1.rare
+	if var_26_0.rare ~= var_26_1.rare then
+		return true, var_26_0.rare > var_26_1.rare
 	end
 
 	return false, false
 end
 
-function var_0_0.LevelSorter(arg_26_0, arg_26_1, arg_26_2)
-	if arg_26_1.exp ~= arg_26_2.exp then
-		return true, arg_26_1.exp > arg_26_2.exp
+function var_0_0.LevelSorter(arg_27_0, arg_27_1, arg_27_2)
+	if arg_27_1.exp ~= arg_27_2.exp then
+		return true, arg_27_1.exp > arg_27_2.exp
 	end
 
 	return false, false
 end
 
-function var_0_0.FightPowerSorter(arg_27_0, arg_27_1, arg_27_2, arg_27_3, arg_27_4)
-	local var_27_0
-	local var_27_1
+function var_0_0.FightPowerSorter(arg_28_0, arg_28_1, arg_28_2, arg_28_3, arg_28_4)
+	local var_28_0
+	local var_28_1
 
-	if arg_27_1.tempID then
-		var_27_0 = TempHeroData:GetBattlePower(arg_27_1.tempID)
+	if arg_28_1.tempID then
+		var_28_0 = TempHeroData:GetBattlePower(arg_28_1.tempID)
 	else
-		var_27_0 = arg_27_0.heroSorter_:GetHeroPower(arg_27_1, handler(arg_27_3, arg_27_3.GetBattlePower))
+		var_28_0 = arg_28_0.heroSorter_:GetHeroPower(arg_28_1, handler(arg_28_3, arg_28_3.GetBattlePower))
 	end
 
-	if arg_27_2.tempID then
-		var_27_1 = TempHeroData:GetBattlePower(arg_27_2.tempID)
+	if arg_28_2.tempID then
+		var_28_1 = TempHeroData:GetBattlePower(arg_28_2.tempID)
 	else
-		var_27_1 = arg_27_0.heroSorter_:GetHeroPower(arg_27_2, handler(arg_27_4, arg_27_4.GetBattlePower))
+		var_28_1 = arg_28_0.heroSorter_:GetHeroPower(arg_28_2, handler(arg_28_4, arg_28_4.GetBattlePower))
 	end
 
-	if var_27_0 ~= var_27_1 then
-		return true, var_27_1 < var_27_0
+	if var_28_0 ~= var_28_1 then
+		return true, var_28_1 < var_28_0
 	end
 
 	return false, false
 end
 
-function var_0_0.StarSorter(arg_28_0, arg_28_1, arg_28_2)
-	if arg_28_1.star ~= arg_28_2.star then
-		return true, arg_28_1.star > arg_28_2.star
+function var_0_0.StarSorter(arg_29_0, arg_29_1, arg_29_2)
+	if arg_29_1.star ~= arg_29_2.star then
+		return true, arg_29_1.star > arg_29_2.star
 	end
 
 	return false, false

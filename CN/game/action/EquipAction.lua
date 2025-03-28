@@ -197,285 +197,271 @@ function var_0_0.OneKeyStrength(arg_15_0, arg_15_1, arg_15_2, arg_15_3, arg_15_4
 				equip = var_16_2,
 				oldEquip = var_16_0,
 				newEquip = var_16_2,
+				breakTimes = arg_15_5,
 				callback = function()
 					getReward2(mergeReward2(arg_16_0.mat_list))
 				end
 			}
 
-			if arg_15_5 >= 1 then
-				local var_16_7 = {
-					pageIndex = 2,
-					type = "upgrade",
-					equipId = arg_15_0,
-					oldEquip = var_16_0,
-					newEquip = var_16_2,
-					callback = function()
-						manager.notify:Invoke(EQUIP_STRENGTH_SUCCESS, var_16_3, var_16_5, var_16_6)
-					end
-				}
-
-				manager.notify:Invoke(EQUIP_UPGRADE_SUCCESS, var_16_7)
-			else
-				manager.notify:Invoke(EQUIP_STRENGTH_SUCCESS, var_16_3, var_16_5, var_16_6)
-			end
+			manager.notify:Invoke(EQUIP_STRENGTH_SUCCESS, var_16_3, var_16_5, var_16_6)
 		else
 			ShowTips(arg_16_0.result)
 		end
 	end)
 end
 
-function var_0_0.TurnMatList(arg_19_0, arg_19_1)
-	local var_19_0 = {}
+function var_0_0.TurnMatList(arg_18_0, arg_18_1)
+	local var_18_0 = {}
 
-	for iter_19_0, iter_19_1 in pairs(arg_19_0) do
-		table.insert(var_19_0, iter_19_1.equip_id)
+	for iter_18_0, iter_18_1 in pairs(arg_18_0) do
+		table.insert(var_18_0, iter_18_1.equip_id)
 	end
 
-	local var_19_1 = {}
+	local var_18_1 = {}
 
-	for iter_19_2, iter_19_3 in pairs(arg_19_1) do
-		table.insert(var_19_1, {
-			id = iter_19_2,
-			num = iter_19_3
+	for iter_18_2, iter_18_3 in pairs(arg_18_1) do
+		table.insert(var_18_1, {
+			id = iter_18_2,
+			num = iter_18_3
 		})
 	end
 
-	return var_19_0, var_19_1
+	return var_18_0, var_18_1
 end
 
-function var_0_0.EquipQuickDressOn(arg_20_0, arg_20_1)
+function var_0_0.EquipQuickDressOn(arg_19_0, arg_19_1)
 	return manager.net:SendWithLoadingNew(13026, {
-		hero_id = arg_20_0,
-		use_equip_list = arg_20_1
+		hero_id = arg_19_0,
+		use_equip_list = arg_19_1
 	}, 13027, var_0_0.OnEquipQuickDressOn)
 end
 
-function var_0_0.OnEquipQuickDressOn(arg_21_0, arg_21_1)
-	local var_21_0 = true
+function var_0_0.OnEquipQuickDressOn(arg_20_0, arg_20_1)
+	local var_20_0 = true
 
-	for iter_21_0, iter_21_1 in ipairs(arg_21_0.result) do
-		if not isSuccess(iter_21_1.result) then
-			var_21_0 = false
+	for iter_20_0, iter_20_1 in ipairs(arg_20_0.result) do
+		if not isSuccess(iter_20_1.result) then
+			var_20_0 = false
 		end
 	end
 
-	if not var_21_0 then
+	if not var_20_0 then
 		ShowTips(GetTips("EQUIP_DRESS_FAIL"))
 	else
-		manager.notify:CallUpdateFunc(EQUIP_QUICK_DRESS_ON, arg_21_0, arg_21_1)
+		manager.notify:CallUpdateFunc(EQUIP_QUICK_DRESS_ON, arg_20_0, arg_20_1)
 	end
 end
 
-function var_0_0.QueryEquipEnchant(arg_22_0, arg_22_1, arg_22_2, arg_22_3)
-	local var_22_0 = arg_22_2.id
-	local var_22_1 = arg_22_2.money
-	local var_22_2 = arg_22_2.number
+function var_0_0.QueryEquipEnchant(arg_21_0, arg_21_1, arg_21_2, arg_21_3)
+	local var_21_0 = arg_21_2.id
+	local var_21_1 = arg_21_2.money
+	local var_21_2 = arg_21_2.number
 
-	if not checkGold(var_22_1) then
+	if not checkGold(var_21_1) then
 		return
 	end
 
-	if var_22_2 > ItemTools.getItemNum(var_22_0) then
+	if var_21_2 > ItemTools.getItemNum(var_21_0) then
 		ShowPopItem(POP_SOURCE_ITEM, {
-			var_22_0,
-			var_22_2
+			var_21_0,
+			var_21_2
 		})
 
 		return
 	end
 
-	local var_22_3 = ItemCfg[var_22_0] and ItemCfg[var_22_0].param and ItemCfg[var_22_0].param[1]
+	local var_21_3 = ItemCfg[var_21_0] and ItemCfg[var_21_0].param and ItemCfg[var_21_0].param[1]
 
-	if not var_22_3 and var_22_3 ~= "" then
+	if not var_21_3 and var_21_3 ~= "" then
 		return
 	end
 
 	manager.net:SendWithLoading(13028, {
-		equip_id = arg_22_0,
-		enchant_slot_id = arg_22_1,
-		pool_id = var_22_3,
-		lock_type = arg_22_3
-	}, 13029):next(function(arg_23_0)
-		if isSuccess(arg_23_0.result) then
-			EquipData:AddPreEnchant(arg_22_0, arg_22_1, arg_23_0.enchant_preview)
+		equip_id = arg_21_0,
+		enchant_slot_id = arg_21_1,
+		pool_id = var_21_3,
+		lock_type = arg_21_3
+	}, 13029):next(function(arg_22_0)
+		if isSuccess(arg_22_0.result) then
+			EquipData:AddPreEnchant(arg_21_0, arg_21_1, arg_22_0.enchant_preview)
 			manager.notify:CallUpdateFunc(EQUIP_ENCHANT)
 		else
-			ShowTips(arg_23_0.result)
+			ShowTips(arg_22_0.result)
 		end
 	end)
 end
 
-function var_0_0.QueryEquipEnchantConfirm(arg_24_0, arg_24_1, arg_24_2, arg_24_3)
+function var_0_0.QueryEquipEnchantConfirm(arg_23_0, arg_23_1, arg_23_2, arg_23_3)
 	return manager.net:SendWithLoading(13030, {
-		equip_id = arg_24_0,
-		enchant_slot_id = arg_24_1,
-		confirm = arg_24_2,
-		preview_index = arg_24_3
-	}, 13031):next(function(arg_25_0)
-		if isSuccess(arg_25_0.result) then
-			EquipData:ConfirmEnchant(arg_24_0, arg_24_1, arg_24_2, arg_24_3)
-			manager.notify:CallUpdateFunc(EQUIP_ENCHANT_CONFIRM, arg_24_2)
+		equip_id = arg_23_0,
+		enchant_slot_id = arg_23_1,
+		confirm = arg_23_2,
+		preview_index = arg_23_3
+	}, 13031):next(function(arg_24_0)
+		if isSuccess(arg_24_0.result) then
+			EquipData:ConfirmEnchant(arg_23_0, arg_23_1, arg_23_2, arg_23_3)
+			manager.notify:CallUpdateFunc(EQUIP_ENCHANT_CONFIRM, arg_23_2)
 		else
-			ShowTips(arg_25_0.result)
+			ShowTips(arg_24_0.result)
 		end
 	end)
 end
 
-function var_0_0.QueryEquipGiveUpAllEnchant(arg_26_0, arg_26_1)
+function var_0_0.QueryEquipGiveUpAllEnchant(arg_25_0, arg_25_1)
 	return manager.net:SendWithLoading(13044, {
-		equip_id = arg_26_0,
-		enchant_slot_id = arg_26_1
-	}, 13045):next(function(arg_27_0)
-		if isSuccess(arg_27_0.result) then
-			EquipData:GiveUpAllEnchant(arg_26_0, arg_26_1)
+		equip_id = arg_25_0,
+		enchant_slot_id = arg_25_1
+	}, 13045):next(function(arg_26_0)
+		if isSuccess(arg_26_0.result) then
+			EquipData:GiveUpAllEnchant(arg_25_0, arg_25_1)
 			manager.notify:CallUpdateFunc(EQUIP_ENCHANT_GIVE_UP)
 		else
-			ShowTips(arg_27_0.result)
+			ShowTips(arg_26_0.result)
 		end
 	end)
 end
 
-function var_0_0.QueryEquipRace(arg_28_0, arg_28_1, arg_28_2)
-	local var_28_0 = EquipData:GetRaceMaterial(arg_28_1)
-	local var_28_1 = var_28_0.id
-	local var_28_2 = var_28_0.money
-	local var_28_3 = var_28_0.number
+function var_0_0.QueryEquipRace(arg_27_0, arg_27_1, arg_27_2)
+	local var_27_0 = EquipData:GetRaceMaterial(arg_27_1)
+	local var_27_1 = var_27_0.id
+	local var_27_2 = var_27_0.money
+	local var_27_3 = var_27_0.number
 
-	if not checkGold(var_28_2) then
+	if not checkGold(var_27_2) then
 		return
 	end
 
-	if var_28_3 > ItemTools.getItemNum(var_28_1) then
+	if var_27_3 > ItemTools.getItemNum(var_27_1) then
 		ShowPopItem(POP_SOURCE_ITEM, {
-			var_28_1,
-			var_28_3
+			var_27_1,
+			var_27_3
 		})
 
 		return
 	end
 
-	local var_28_4
-	local var_28_5
-	local var_28_6 = {
-		equip_id = arg_28_0
+	local var_27_4
+	local var_27_5
+	local var_27_6 = {
+		equip_id = arg_27_0
 	}
 
-	if arg_28_1 == 1 then
-		var_28_4 = 13032
-		var_28_5 = 13033
+	if arg_27_1 == 1 then
+		var_27_4 = 13032
+		var_27_5 = 13033
 	else
-		var_28_4 = 13046
-		var_28_5 = 13047
-		var_28_6.hero_id = arg_28_2
+		var_27_4 = 13046
+		var_27_5 = 13047
+		var_27_6.hero_id = arg_27_2
 	end
 
-	manager.net:SendWithLoading(var_28_4, var_28_6, var_28_5):next(function(arg_29_0)
-		if isSuccess(arg_29_0.result) then
-			if arg_28_1 == 2 then
-				EquipData:SetPreRace(arg_28_0, arg_28_2)
-				EquipData:ConfirmRace(arg_28_0, true)
+	manager.net:SendWithLoading(var_27_4, var_27_6, var_27_5):next(function(arg_28_0)
+		if isSuccess(arg_28_0.result) then
+			if arg_27_1 == 2 then
+				EquipData:SetPreRace(arg_27_0, arg_27_2)
+				EquipData:ConfirmRace(arg_27_0, true)
 
-				if not EquipData:GetEquipData(arg_28_0).is_lock then
-					EquipAction.ApplyLockEquip(arg_28_0, true)
+				if not EquipData:GetEquipData(arg_27_0).is_lock then
+					EquipAction.ApplyLockEquip(arg_27_0, true)
 				end
 
 				ShowTips("EQUIP_HERO_SUCCESS")
 				JumpTools.OpenPageByJump("equipCulturePopView", {
 					type = "reset",
-					heroId = arg_28_2,
+					heroId = arg_27_2,
 					callback = function()
 						manager.notify:CallUpdateFunc(EQUIP_RACE)
 					end
 				})
 			else
-				EquipData:SetPreRace(arg_28_0, arg_29_0.race_preview)
+				EquipData:SetPreRace(arg_27_0, arg_28_0.race_preview)
 				JumpTools.OpenPageByJump("/equipRaceConfirmView", {
-					equipId = arg_28_0,
-					heroId = arg_28_2
+					equipId = arg_27_0,
+					heroId = arg_27_2
 				})
 				manager.notify:CallUpdateFunc(EQUIP_RACE)
 			end
 		else
-			ShowTips(arg_29_0.result)
+			ShowTips(arg_28_0.result)
 		end
 	end)
 end
 
-function var_0_0.QueryEquipRaceConfirm(arg_31_0, arg_31_1)
+function var_0_0.QueryEquipRaceConfirm(arg_30_0, arg_30_1)
 	manager.net:SendWithLoading(13034, {
-		equip_id = arg_31_0,
-		confirm = arg_31_1
-	}, 13035):next(function(arg_32_0)
-		if isSuccess(arg_32_0.result) then
-			EquipData:ConfirmRace(arg_31_0, arg_31_1)
+		equip_id = arg_30_0,
+		confirm = arg_30_1
+	}, 13035):next(function(arg_31_0)
+		if isSuccess(arg_31_0.result) then
+			EquipData:ConfirmRace(arg_30_0, arg_30_1)
 			manager.notify:CallUpdateFunc(EQUIP_RACE_CONFIRM)
 		else
-			ShowTips(arg_32_0.result)
+			ShowTips(arg_31_0.result)
 		end
 	end)
 end
 
-function var_0_0.EquipBagFull(arg_33_0)
-	EquipData:EquipBagFull(arg_33_0)
+function var_0_0.EquipBagFull(arg_32_0)
+	EquipData:EquipBagFull(arg_32_0)
 end
 
 local var_0_1
 
-function var_0_0.InheritEquip(arg_34_0, arg_34_1)
-	var_0_1 = arg_34_1
+function var_0_0.InheritEquip(arg_33_0, arg_33_1)
+	var_0_1 = arg_33_1
 
 	manager.net:SendWithLoadingNew(13052, {
-		inherit_equip_prefab_id = arg_34_1,
-		new_equip_id = arg_34_0
+		inherit_equip_prefab_id = arg_33_1,
+		new_equip_id = arg_33_0
 	}, 13053, var_0_0.OnInheritEquip)
 end
 
-function var_0_0.OnInheritEquip(arg_35_0, arg_35_1)
-	if isSuccess(arg_35_0.result) then
+function var_0_0.OnInheritEquip(arg_34_0, arg_34_1)
+	if isSuccess(arg_34_0.result) then
 		ShowTips("EQUIP_INHERIT_SUCCESS")
-		manager.notify:CallUpdateFunc(EQUIP_INHERIT_SUCCESS, arg_35_1.new_equip_id)
+		manager.notify:CallUpdateFunc(EQUIP_INHERIT_SUCCESS, arg_34_1.new_equip_id)
 	else
-		ShowTips(arg_35_0.result)
+		ShowTips(arg_34_0.result)
 	end
 end
 
-manager.net:Bind(13057, function(arg_36_0)
-	EquipData:InitAutoDecompose(arg_36_0)
+manager.net:Bind(13057, function(arg_35_0)
+	EquipData:InitAutoDecompose(arg_35_0)
 end)
 
-function var_0_0.SetAutoDecomposeState(arg_37_0, arg_37_1, arg_37_2)
+function var_0_0.SetAutoDecomposeState(arg_36_0, arg_36_1, arg_36_2)
 	manager.net:SendWithLoadingNew(13054, {
-		type = arg_37_0,
-		sign = arg_37_1 and 1 or 0
-	}, 13055, function(arg_38_0)
-		if isSuccess(arg_38_0.result) then
-			EquipData:UpdateAutoDecompose(arg_37_0, arg_37_1)
-			arg_37_2(arg_38_0)
+		type = arg_36_0,
+		sign = arg_36_1 and 1 or 0
+	}, 13055, function(arg_37_0)
+		if isSuccess(arg_37_0.result) then
+			EquipData:UpdateAutoDecompose(arg_36_0, arg_36_1)
+			arg_36_2(arg_37_0)
 		else
-			ShowTips(arg_38_0.result)
+			ShowTips(arg_37_0.result)
 		end
 	end)
 end
 
-function var_0_0.DirectionalEnchant(arg_39_0, arg_39_1, arg_39_2, arg_39_3)
+function var_0_0.DirectionalEnchant(arg_38_0, arg_38_1, arg_38_2, arg_38_3)
 	manager.net:SendWithLoadingNew(13060, {
-		equip_id = arg_39_0,
-		enchant_slot_id = arg_39_1,
-		seq = arg_39_2,
-		id = arg_39_3
-	}, 13061, function(arg_40_0)
-		if isSuccess(arg_40_0.result) then
-			local var_40_0 = EquipData:GetEquipData(arg_39_0):GetLevel()
-			local var_40_1 = {
+		equip_id = arg_38_0,
+		enchant_slot_id = arg_38_1,
+		seq = arg_38_2,
+		id = arg_38_3
+	}, 13061, function(arg_39_0)
+		if isSuccess(arg_39_0.result) then
+			local var_39_0 = EquipData:GetEquipData(arg_38_0):GetLevel()
+			local var_39_1 = {
 				num = 1,
-				id = arg_39_3,
-				equipLevel = var_40_0
+				id = arg_38_3,
+				equipLevel = var_39_0
 			}
 
-			EquipData:DirectionalEnchant(arg_39_0, arg_39_1, arg_39_2, var_40_1)
+			EquipData:DirectionalEnchant(arg_38_0, arg_38_1, arg_38_2, var_39_1)
 			manager.notify:Invoke(DIRECTIONAL_ENCHANT_SUCCESS)
 		else
-			ShowTips(arg_40_0.result)
+			ShowTips(arg_39_0.result)
 		end
 	end)
 end

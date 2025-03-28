@@ -155,7 +155,7 @@ function var_0_0.Refresh(arg_13_0)
 
 	arg_13_0.nameText_.text = var_13_7 and var_13_7.nick
 	arg_13_0.iconImg_.sprite = ItemTools.getItemSprite(var_13_7 and var_13_7.portrait)
-	arg_13_0.frameImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_13_7.icon_frame)
+	arg_13_0.frameImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Frame/" .. var_13_7.icon_frame)
 
 	arg_13_0:RefreshGuildRankGo()
 end

@@ -78,13 +78,13 @@ end
 
 function var_0_0.RefreshUI(arg_11_0)
 	arg_11_0.campID_ = arg_11_0.schoolIDList_[arg_11_0.index_]
-	arg_11_0.campIcon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetRougeTeamSettingList(ChallengeRogueTeamConst.SETTING_VALUE.CAMP_BIG_ICON_PATH_LIST, ChallengeRogueTeamData:GetCacheTemplateID())[arg_11_0.index_])
+	arg_11_0.campIcon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetRougeTeamSettingList(ChallengeRogueTeamConst.SETTING_VALUE.CAMP_BIG_ICON_PATH_LIST, ChallengeRogueTeamData:GetCacheTemplateID())[arg_11_0.index_])
 	arg_11_0.campTitleText_.text = GetTips("ROGUE_TEAM_SCHOOL_NAME_" .. arg_11_0.campID_)
 	arg_11_0.campDataList_ = ChallengeRogueTeamData:GetIllustratedDataByType(arg_11_0.templateID_, ChallengeRogueTeamConst.COLLECTION_TYPE.CAMP)
 	arg_11_0.campSkllID_ = ChallengeRogueTeamData:GetCampUltimateByCamp(arg_11_0.itemTempID_, arg_11_0.campID_)
 	arg_11_0.treasureIDList_ = ChallengeRogueTeamData:GetAllCampTreasureIDByCamp(arg_11_0.itemTempID_, arg_11_0.campID_)
 	arg_11_0.campSkillCfg_ = RogueTeamItemCfg[arg_11_0.campSkllID_]
-	arg_11_0.campSkillIcon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_11_0.campSkllID_))
+	arg_11_0.campSkillIcon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_11_0.campSkllID_))
 	arg_11_0.campSkillTitleText_.text = arg_11_0.campSkillCfg_.name
 	arg_11_0.campSkillDescText_.text = ChallengeRogueTeamTools.GetItemDesc(arg_11_0.campSkllID_, nil, arg_11_0.campSkillDescText_.color)
 	arg_11_0.unlockTresureList_ = ChallengeRogueTeamData:GetUnlockIllustratedTreasureDataByCamp(arg_11_0.templateID_, arg_11_0.campID_)

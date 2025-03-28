@@ -19,27 +19,9 @@ end
 
 function var_0_0.InitUI(arg_5_0)
 	arg_5_0:BindCfgUI()
-
-	arg_5_0.tapBtn_ = {}
-	arg_5_0.tapSort_ = {}
-	arg_5_0.tapType_ = {
-		[1] = -1,
-		[2] = HeroConst.HERO_ATTACK_TYPE.PYISICS,
-		[3] = HeroConst.HERO_ATTACK_TYPE.WIND,
-		[4] = HeroConst.HERO_ATTACK_TYPE.FLAME,
-		[5] = HeroConst.HERO_ATTACK_TYPE.THUNDER,
-		[6] = HeroConst.HERO_ATTACK_TYPE.DARK,
-		[7] = HeroConst.HERO_ATTACK_TYPE.LIGHT,
-		[8] = HeroConst.HERO_ATTACK_TYPE.FREEZE,
-		[9] = HeroConst.HERO_ATTACK_TYPE.WATER
-	}
-
-	for iter_5_0 = 1, 9 do
-		arg_5_0.tapBtn_[iter_5_0] = arg_5_0["tapBtn_" .. iter_5_0]
-	end
+	arg_5_0:InitTapView()
 
 	arg_5_0.btnCon_ = arg_5_0.collection_:GetController("btn")
-	arg_5_0.tapCon_ = arg_5_0.collection_:GetController("tap")
 	arg_5_0.tipCon_ = arg_5_0.collection_:GetController("tips")
 	arg_5_0.scrollHelper_ = LuaList.New(handler(arg_5_0, arg_5_0.indexItem), arg_5_0.uilistGo_, DrawAllHeroSelectItem)
 end
@@ -74,151 +56,212 @@ function var_0_0.AddUIListener(arg_8_0)
 			arg_8_0:Back()
 		else
 			if arg_8_0.params_.isFirst then
-				local var_10_0 = DrawPoolCfg[arg_8_0.params_.poolId]
-				local var_10_1 = table.indexof(var_10_0.optional_detail, arg_8_0.curHeroId_)
-				local var_10_2 = var_10_0.optional_lists_poolId[var_10_1]
-
-				DrawAction.SetPollUpID(arg_8_0.params_.poolId, var_10_2)
+				arg_8_0:ChangeUp()
 
 				return
 			end
 
-			ShowMessageBox({
-				isTop = true,
-				title = GetTips("PROMPT"),
-				content = GetTips("DRAW_SWITCH_LIMIT_CONFIRM_TIP"),
-				SecondTip = string.format(GetTips("DRAW_REMAIN_UP_TIMES"), ""),
-				SecondValue = DrawData:GetUpRemainTime(arg_8_0.params_.poolId),
-				OkCallback = function()
-					local var_11_0 = DrawPoolCfg[arg_8_0.params_.poolId]
-					local var_11_1 = table.indexof(var_11_0.optional_detail, arg_8_0.curHeroId_)
-					local var_11_2 = var_11_0.optional_lists_poolId[var_11_1]
-
-					DrawAction.SetPollUpID(arg_8_0.params_.poolId, var_11_2)
-				end,
-				CancelCallback = function()
-					return
-				end
-			})
+			if DrawPoolCfg[arg_8_0.params_.poolId].pool_change == 0 then
+				arg_8_0:ChangeUp()
+			else
+				arg_8_0:ShowChangeUpPopTip()
+			end
 		end
 	end)
-
-	for iter_8_0, iter_8_1 in ipairs(arg_8_0.tapBtn_) do
-		arg_8_0:AddBtnListener(iter_8_1, nil, function()
-			arg_8_0:RefreshList(arg_8_0.tapType_[iter_8_0], iter_8_0)
-		end)
-	end
 end
 
-function var_0_0.OnEnter(arg_14_0)
-	arg_14_0.upID = DrawData:GetPollUpID(arg_14_0.params_.poolId)
-	arg_14_0.upHeroID = DrawData:ConvertUpId(arg_14_0.params_.poolId, arg_14_0.upID, 0)
-	arg_14_0.curHeroId_ = arg_14_0.upHeroID
+function var_0_0.ChangeUp(arg_11_0)
+	local var_11_0 = DrawPoolCfg[arg_11_0.params_.poolId]
+	local var_11_1 = table.indexof(var_11_0.optional_detail, arg_11_0.curHeroId_)
+	local var_11_2 = var_11_0.optional_lists_poolId[var_11_1]
 
-	arg_14_0:RefreshData()
-	arg_14_0:UpdateBtnState()
-	arg_14_0:UpdateTipState()
-	arg_14_0:RefreshList(-1, 1)
-	arg_14_0:AddEventListeners()
+	DrawAction.SetPollUpID(arg_11_0.params_.poolId, var_11_2)
+end
 
-	if arg_14_0.curHeroId_ == 0 then
-		arg_14_0.btnCon_:SetSelectedState("false")
+function var_0_0.ShowChangeUpPopTip(arg_12_0)
+	ShowMessageBox({
+		isTop = true,
+		title = GetTips("PROMPT"),
+		content = GetTips("DRAW_SWITCH_LIMIT_CONFIRM_TIP"),
+		SecondTip = string.format(GetTips("DRAW_REMAIN_UP_TIMES"), ""),
+		SecondValue = DrawData:GetUpRemainTime(arg_12_0.params_.poolId),
+		OkCallback = function()
+			arg_12_0:ChangeUp()
+		end,
+		CancelCallback = function()
+			return
+		end
+	})
+end
+
+function var_0_0.OnEnter(arg_15_0)
+	arg_15_0.upID = DrawData:GetPollUpID(arg_15_0.params_.poolId)
+	arg_15_0.upHeroID = DrawData:ConvertUpId(arg_15_0.params_.poolId, arg_15_0.upID, 0)
+	arg_15_0.curHeroId_ = arg_15_0.upHeroID
+
+	arg_15_0:RefreshData()
+	arg_15_0:UpdateBtnState()
+	arg_15_0:UpdateTipState()
+	arg_15_0:RefreshTap()
+	arg_15_0:AddEventListeners()
+
+	if arg_15_0.curHeroId_ == 0 then
+		arg_15_0.btnCon_:SetSelectedState("false")
 	else
-		arg_14_0.btnCon_:SetSelectedState("current")
+		arg_15_0.btnCon_:SetSelectedState("current")
 	end
+
+	arg_15_0:UpdateTitleTxt()
 end
 
-function var_0_0.RefreshData(arg_15_0)
-	if arg_15_0.poolID_ ~= arg_15_0.params_.poolId then
-		arg_15_0.allHeroList_ = arg_15_0.params_.heroIdList
-		arg_15_0.poolID_ = arg_15_0.params_.poolId
-		arg_15_0.tapSort_ = {}
-	end
-end
+function var_0_0.UpdateTitleTxt(arg_16_0)
+	local var_16_0 = arg_16_0.params_.poolId
 
-function var_0_0.UpdateBtnState(arg_16_0)
-	local var_16_0 = DrawData:GetPollUpID(arg_16_0.params_.poolId)
-	local var_16_1 = DrawData:ConvertUpId(arg_16_0.params_.poolId, var_16_0, 0)
-
-	arg_16_0.btnCon_:SetSelectedState(arg_16_0.curHeroId_ ~= var_16_1 and "true" or "current")
-end
-
-function var_0_0.UpdateTipState(arg_17_0)
-	if DrawPoolCfg[arg_17_0.params_.poolId].pool_change == 0 or arg_17_0.params_.isFirst then
-		arg_17_0.tipCon_:SetSelectedState("true")
+	if DrawPoolCfg[var_16_0].pool_type == 9 then
+		arg_16_0.titleTxt_.text = GetTips("NEW_REGRESSION__POOL_SCREEN_TYPE_3")
 	else
-		arg_17_0.tipCon_:SetSelectedState("false")
-
-		local var_17_0 = DrawData:GetPoolUpTimes(arg_17_0.params_.poolId)
-		local var_17_1 = DrawPoolCfg[arg_17_0.params_.poolId].pool_change - var_17_0
-
-		arg_17_0.timesText_.text = string.format(GetTips("DRAW_REMAIN_UP_TIMES"), tostring(var_17_1))
+		arg_16_0.titleTxt_.text = GetTips("NEW_REGRESSION__POOL_SCREEN_TYPE_2")
 	end
 end
 
-function var_0_0.RefreshList(arg_18_0, arg_18_1, arg_18_2)
-	if arg_18_1 == -1 then
-		arg_18_0.curList_ = arg_18_0.allHeroList_
-	else
-		if not arg_18_0.tapSort_[arg_18_1] then
-			local var_18_0 = {}
+function var_0_0.RefreshData(arg_17_0)
+	if arg_17_0.poolID_ ~= arg_17_0.params_.poolId then
+		arg_17_0.allHeroList_ = arg_17_0.params_.heroIdList
+		arg_17_0.poolID_ = arg_17_0.params_.poolId
+		arg_17_0.tapSort_ = {}
+	end
+end
 
-			for iter_18_0, iter_18_1 in ipairs(arg_18_0.allHeroList_) do
-				if arg_18_1 == HeroCfg[iter_18_1].ATK_attribute[1] then
-					table.insert(var_18_0, iter_18_1)
+function var_0_0.UpdateBtnState(arg_18_0)
+	local var_18_0 = DrawData:GetPollUpID(arg_18_0.params_.poolId)
+	local var_18_1 = DrawData:ConvertUpId(arg_18_0.params_.poolId, var_18_0, 0)
+
+	arg_18_0.btnCon_:SetSelectedState(arg_18_0.curHeroId_ ~= var_18_1 and "true" or "current")
+end
+
+function var_0_0.UpdateTipState(arg_19_0)
+	if DrawPoolCfg[arg_19_0.params_.poolId].pool_change == 0 or arg_19_0.params_.isFirst then
+		arg_19_0.tipCon_:SetSelectedState("true")
+	else
+		arg_19_0.tipCon_:SetSelectedState("false")
+
+		local var_19_0 = DrawData:GetPoolUpTimes(arg_19_0.params_.poolId)
+		local var_19_1 = DrawPoolCfg[arg_19_0.params_.poolId].pool_change - var_19_0
+
+		arg_19_0.timesText_.text = string.format(GetTips("DRAW_REMAIN_UP_TIMES"), tostring(var_19_1))
+	end
+end
+
+function var_0_0.RefreshTap(arg_20_0)
+	if not arg_20_0.params_.isBack then
+		arg_20_0.tapView_:Reset()
+	end
+
+	arg_20_0.tapView_:Refresh()
+end
+
+function var_0_0.RefreshList(arg_21_0)
+	if arg_21_0.isAll_ then
+		arg_21_0.curList_ = arg_21_0.allHeroList_
+	else
+		if not arg_21_0.tapSort_[arg_21_0.selectTapID_] then
+			local var_21_0 = {}
+
+			for iter_21_0, iter_21_1 in ipairs(arg_21_0.allHeroList_) do
+				local var_21_1 = HeroCfg[iter_21_1].ATK_attribute[1]
+
+				if arg_21_0.selectTapID_ == var_21_1 then
+					table.insert(var_21_0, iter_21_1)
 				end
 			end
 
-			arg_18_0.tapSort_[arg_18_1] = var_18_0
+			arg_21_0.tapSort_[arg_21_0.selectTapID_] = var_21_0
 		end
 
-		arg_18_0.curList_ = arg_18_0.tapSort_[arg_18_1]
+		arg_21_0.curList_ = arg_21_0.tapSort_[arg_21_0.selectTapID_]
 	end
 
-	arg_18_0.tapCon_:SetSelectedState(arg_18_2)
-	arg_18_0.scrollHelper_:StartScroll(#arg_18_0.curList_)
+	arg_21_0.scrollHelper_:StartScroll(#arg_21_0.curList_)
 end
 
-function var_0_0.AddEventListeners(arg_19_0)
+function var_0_0.AddEventListeners(arg_22_0)
 	return
 end
 
-function var_0_0.OnSetPollUpID(arg_20_0, arg_20_1, arg_20_2)
-	arg_20_0:Back()
+function var_0_0.OnSetPollUpID(arg_23_0, arg_23_1, arg_23_2)
+	arg_23_0:Back()
 end
 
-function var_0_0.OnTop(arg_21_0)
-	arg_21_0:UpdateBar()
+function var_0_0.OnTop(arg_24_0)
+	arg_24_0:UpdateBar()
 end
 
-function var_0_0.OnBehind(arg_22_0)
+function var_0_0.OnBehind(arg_25_0)
 	manager.windowBar:HideBar()
 end
 
-function var_0_0.UpdateBar(arg_23_0)
+function var_0_0.UpdateBar(arg_26_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR,
 		HOME_BAR
 	})
 end
 
-function var_0_0.OnExit(arg_24_0)
-	arg_24_0:RemoveAllEventListener()
+function var_0_0.OnExit(arg_27_0)
+	arg_27_0:RemoveAllEventListener()
 	manager.windowBar:HideBar()
 end
 
-function var_0_0.OnMainHomeViewTop(arg_25_0)
+function var_0_0.OnMainHomeViewTop(arg_28_0)
 	return
 end
 
-function var_0_0.Dispose(arg_26_0)
-	if arg_26_0.scrollHelper_ then
-		arg_26_0.scrollHelper_:Dispose()
+function var_0_0.Dispose(arg_29_0)
+	if arg_29_0.tapView_ then
+		arg_29_0.tapView_:Dispose()
 
-		arg_26_0.scrollHelper_ = nil
+		arg_29_0.tapView_ = nil
 	end
 
-	var_0_0.super.Dispose(arg_26_0)
+	if arg_29_0.scrollHelper_ then
+		arg_29_0.scrollHelper_:Dispose()
+
+		arg_29_0.scrollHelper_ = nil
+	end
+
+	var_0_0.super.Dispose(arg_29_0)
+end
+
+function var_0_0.InitTapView(arg_30_0)
+	arg_30_0.tapTypeList_ = {
+		HeroConst.HERO_ATTACK_TYPE.ALL,
+		HeroConst.HERO_ATTACK_TYPE.PYISICS,
+		HeroConst.HERO_ATTACK_TYPE.WIND,
+		HeroConst.HERO_ATTACK_TYPE.FLAME,
+		HeroConst.HERO_ATTACK_TYPE.THUNDER,
+		HeroConst.HERO_ATTACK_TYPE.DARK,
+		HeroConst.HERO_ATTACK_TYPE.LIGHT,
+		HeroConst.HERO_ATTACK_TYPE.FREEZE,
+		HeroConst.HERO_ATTACK_TYPE.WATER,
+		HeroConst.HERO_ATTACK_TYPE.RANDOM
+	}
+	arg_30_0.tapView_ = CommonHeroSkillAttributeFilter.New(arg_30_0.tapGo_)
+
+	arg_30_0.tapView_:SetAttributeIdList(arg_30_0.tapTypeList_)
+	arg_30_0.tapView_:SetSelectAttributeCallback(handler(arg_30_0, arg_30_0.OnSelectTap))
+end
+
+function var_0_0.ResetTap(arg_31_0)
+	arg_31_0.selectTapID_ = 1
+
+	arg_31_0.tapView_:Reset()
+end
+
+function var_0_0.OnSelectTap(arg_32_0, arg_32_1, arg_32_2)
+	arg_32_0.selectTapID_ = arg_32_1
+	arg_32_0.isAll_ = arg_32_2
+
+	arg_32_0:RefreshList()
 end
 
 return var_0_0

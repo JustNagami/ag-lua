@@ -1,22 +1,22 @@
 ﻿local var_0_0 = {}
 
 local function var_0_1()
-	local var_1_0 = ActivitySandplayCfg.all
+	local var_1_0 = SandPlayMapCfg.all
 
 	for iter_1_0, iter_1_1 in ipairs(var_1_0) do
-		local var_1_1 = ActivityCfg[iter_1_1].sub_activity_list
-		local var_1_2 = {}
+		local var_1_1 = SandPlayMapCfg[iter_1_1].activity_id
+		local var_1_2 = ActivityCfg[var_1_1].sub_activity_list
+		local var_1_3 = {}
 
-		for iter_1_2, iter_1_3 in ipairs(var_1_1) do
-			table.insert(var_1_2, ActivityTools.GetRedPointKey(iter_1_3) .. iter_1_3)
-			manager.redPoint:appendGroup(ActivityTools.GetRedPointKey(iter_1_1) .. iter_1_1, ActivityTools.GetRedPointKey(iter_1_3) .. iter_1_3, true)
+		for iter_1_2, iter_1_3 in ipairs(var_1_2) do
+			table.insert(var_1_3, ActivityTools.GetRedPointKey(iter_1_3) .. iter_1_3)
+			manager.redPoint:appendGroup(ActivityTools.GetRedPointKey(var_1_1) .. var_1_1, ActivityTools.GetRedPointKey(iter_1_3) .. iter_1_3, true)
 		end
 	end
 end
 
 manager.net:Bind(79601, function(arg_2_0)
 	QWorldData:InitData(arg_2_0)
-	var_0_1()
 end)
 manager.net:Bind(28837, function(arg_3_0)
 	QWorldData:InitUnlockFunction(arg_3_0)
@@ -44,10 +44,10 @@ function var_0_0.SavePlayerData(arg_5_0)
 
 	local var_5_1
 
-	for iter_5_0, iter_5_1 in ipairs(ActivitySandplayCfg.all) do
-		local var_5_2 = ActivitySandplayCfg[iter_5_1]
+	for iter_5_0, iter_5_1 in ipairs(SandPlayMapCfg.all) do
+		local var_5_2 = SandPlayMapCfg[iter_5_1]
 
-		if var_5_2.stage_id == var_5_0 then
+		if var_5_2.id == var_5_0 then
 			var_5_1 = var_5_2.activity_id
 
 			break
@@ -108,6 +108,39 @@ function var_0_0.UnlockFunction(arg_7_0)
 	QWorldData:AddUnlockFunction(arg_7_0)
 	manager.net:Push(28834, {
 		sys_id = arg_7_0
+	})
+end
+
+function var_0_0.SendUpdateThingTrackToSDK(arg_8_0, arg_8_1, arg_8_2)
+	local var_8_0 = QWorldData:GetCurMapId()
+
+	if var_8_0 == 0 then
+		return
+	end
+
+	local var_8_1
+
+	for iter_8_0, iter_8_1 in ipairs(SandPlayMapCfg.all) do
+		local var_8_2 = SandPlayMapCfg[iter_8_1]
+
+		if var_8_2.id == var_8_0 then
+			var_8_1 = var_8_2.activity_id
+
+			break
+		end
+	end
+
+	if not var_8_1 then
+		return
+	end
+
+	SDKTools.SendMessageToSDK("task_accept", {
+		type = 2,
+		activity_id = var_8_1,
+		stage_id = var_8_0,
+		task_id = arg_8_0,
+		task_type = arg_8_2 or 1,
+		opt = arg_8_1
 	})
 end
 

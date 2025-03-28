@@ -36,7 +36,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3, arg_6_4)
 end
 
 function var_0_0.UpdateView(arg_7_0)
-	arg_7_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. arg_7_0.cfg.icon)
+	arg_7_0.iconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. arg_7_0.cfg.icon)
 	arg_7_0.descTxt_.text = GetI18NText(arg_7_0.cfg.description)
 	arg_7_0.scoreTxt_.text = arg_7_0.cfg.score > 0 and "+" .. arg_7_0.cfg.score or arg_7_0.cfg.score
 

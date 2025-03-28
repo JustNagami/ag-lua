@@ -22,7 +22,7 @@ function var_0_0.RenderView(arg_4_0, arg_4_1)
 	if arg_4_1 ~= -1 then
 		local var_4_0 = SkinCfg[arg_4_1]
 
-		arg_4_0.headIcon_.sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. var_4_0.picture_id)
+		arg_4_0.headIcon_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. var_4_0.picture_id)
 	end
 end
 

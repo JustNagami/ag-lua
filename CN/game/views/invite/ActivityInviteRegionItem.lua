@@ -52,7 +52,7 @@ function var_0_0.UpdateView(arg_7_0)
 	arg_7_0.completePlotTable = InviteData:GetDataByPara("completePlotTable")
 	arg_7_0.inviteTimes = InviteData:GetDataByPara("inviteTimes")
 	arg_7_0.regionNameTxt_.text = GetTips("ACTIVITY_INVITE_REGION" .. var_7_0.region)
-	arg_7_0.regionImage_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/" .. var_7_0.image_route)
+	arg_7_0.regionImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/" .. var_7_0.image_route)
 
 	SetActive(arg_7_0.gameObject_, arg_7_0.index <= 3 or #arg_7_0.completeHeroTable[arg_7_0.heroId] >= 4)
 	arg_7_0.controller:SetSelectedState(arg_7_0.completePlotTable[arg_7_0.plotId] and "2" or "1")

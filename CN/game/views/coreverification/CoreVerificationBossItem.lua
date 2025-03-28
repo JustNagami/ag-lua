@@ -63,7 +63,7 @@ function var_0_0.RefreshUI(arg_7_0)
 
 	local var_7_3 = CoreVerificationData:GetBossUICfgByBossType(arg_7_0.bossType_)
 
-	arg_7_0.bossImg_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.BossAttribute.path, var_7_3.icon))
+	arg_7_0.bossImg_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.BossAttribute.path, var_7_3.icon))
 
 	local var_7_4 = CoreVerificationData:GetRecommendByBossType(arg_7_0.bossType_)
 

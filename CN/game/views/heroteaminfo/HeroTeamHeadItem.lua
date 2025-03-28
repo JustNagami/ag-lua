@@ -121,7 +121,7 @@ function var_0_1.SetShowAttackType(arg_18_0, arg_18_1)
 			if iter_18_1[1] == var_18_0.ATK_attribute[1] then
 				local var_18_1 = iter_18_1[2]
 
-				arg_18_0.m_attributeIcon.sprite = getSpriteWithoutAtlas("TextureConfig/HeroIconUI/AttributeIcon/" .. var_18_1)
+				arg_18_0.m_attributeIcon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/HeroIconUI/AttributeIcon/" .. var_18_1)
 
 				break
 			end

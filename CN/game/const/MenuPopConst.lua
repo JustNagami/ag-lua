@@ -19,133 +19,168 @@ return {
 	HeartStory = 6,
 	Guide = 20,
 	Suggest = 16,
+	friend = 21,
 	Achieve = 4,
 	Illustrated = 3,
 	OfficialWeb = 19,
 	MenuBtnList = {
 		{
-			id = 1,
 			nameId = 520001,
+			type = 0,
+			id = 1,
 			icon = "icon_weaponservant_new",
-			type = 0
+			sort = 1
 		},
 		{
-			id = 2,
 			nameId = 520002,
+			type = 0,
+			id = 2,
 			icon = "icon_chip_new",
-			type = 0
+			sort = 1
 		},
 		{
-			id = 3,
 			nameId = 520003,
+			type = 0,
+			id = 3,
 			icon = "icon_collect_new",
-			type = 0
+			sort = 1
 		},
 		{
-			id = 4,
 			nameId = 520004,
+			type = 0,
+			id = 4,
 			icon = "icon_achieve_new",
-			type = 0
+			sort = 1
 		},
 		{
-			id = 5,
 			nameId = 520005,
+			type = 0,
+			id = 5,
 			icon = "icon_explore_new",
-			type = 0
+			sort = 1
 		},
 		{
-			id = 6,
 			nameId = 520006,
+			type = 0,
+			id = 6,
 			icon = "icon_ArchiveStory",
-			type = 0
+			sort = 1
 		},
 		{
-			id = 7,
 			nameId = 520007,
+			type = 1,
+			id = 7,
 			icon = "btn_gift_new",
-			type = 1
+			sort = 0
 		},
 		{
-			id = 8,
 			nameId = 520008,
+			type = 1,
+			id = 8,
 			icon = "btn_annc_new",
-			type = 1
+			sort = 0
 		},
 		{
 			systemId = 9907,
 			nameId = 520009,
 			type = 1,
 			id = 9,
-			icon = "icon_psq_new"
+			icon = "icon_psq_new",
+			sort = 0
 		},
 		{
 			systemId = 9912,
 			nameId = 520010,
 			type = 1,
 			id = 10,
-			icon = "icon_info_new"
+			icon = "icon_info_new",
+			sort = 0
 		},
 		{
 			systemId = 9904,
 			nameId = 520011,
 			type = 1,
 			id = 11,
-			icon = "icon_forum_new"
+			icon = "icon_forum_new",
+			sort = 0
 		},
 		{
 			systemId = 9903,
 			nameId = 520012,
 			type = 1,
 			id = 12,
-			icon = "icon_cdk_new"
+			icon = "icon_cdk_new",
+			sort = 0
 		},
 		{
 			systemId = 9908,
 			nameId = 520013,
 			type = 1,
 			id = 13,
-			icon = "icon_attention_new"
+			icon = "icon_attention_new",
+			sort = 0
 		},
 		{
 			systemId = 9911,
 			nameId = 520014,
 			type = 1,
 			id = 14,
-			icon = "icon_perimeter_new"
+			icon = "icon_perimeter_new",
+			sort = 0
 		},
 		{
 			systemId = 9905,
 			nameId = 520015,
 			type = 1,
 			id = 15,
-			icon = "icon_query_new"
+			icon = "icon_query_new",
+			sort = 0
 		},
 		{
 			systemId = 9902,
 			nameId = 520016,
 			type = 1,
 			id = 16,
-			icon = "icon_suggest_new"
+			icon = "icon_suggest_new",
+			sort = 0
 		},
 		{
-			id = 17,
 			nameId = 520017,
+			type = 1,
+			id = 17,
 			icon = "icon_online_new",
-			type = 1
+			sort = 0
 		},
 		{
 			systemId = 9910,
 			nameId = 520018,
 			type = 1,
 			id = 18,
-			icon = "icon_activity_new"
+			icon = "icon_activity_new",
+			sort = 0
 		},
 		{
 			systemId = 9909,
 			nameId = 520019,
 			type = 1,
 			id = 19,
-			icon = "icon_web_new"
+			icon = "icon_web_new",
+			sort = 0
+		},
+		{
+			nameId = 520020,
+			type = 1,
+			id = 20,
+			icon = "icon_guide_new",
+			sort = 0
+		},
+		{
+			systemId = 702,
+			nameId = 520021,
+			type = 0,
+			id = 21,
+			icon = "icon_forum_Friend",
+			sort = 1
 		}
 	},
 	MenuToOperation = {
@@ -176,6 +211,7 @@ return {
 		[14] = RedPointConst.SHOP_TAOBAO,
 		[16] = RedPointConst.CUSTOMER_SERVICE_UNREAD,
 		[17] = RedPointConst.COOPERATION_INVIT,
-		[18] = RedPointConst.OPERATION_ACTIVITY
+		[18] = RedPointConst.OPERATION_ACTIVITY,
+		[21] = RedPointConst.FRIEND
 	}
 }

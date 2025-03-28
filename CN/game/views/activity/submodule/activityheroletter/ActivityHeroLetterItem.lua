@@ -57,7 +57,7 @@ function var_0_0.RefreshUI(arg_9_0)
 	local var_9_0 = arg_9_0.cfg_.hero_id
 
 	arg_9_0.name_.text = HeroCfg[var_9_0].suffix
-	arg_9_0.icon_.sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroIcon.path .. var_9_0)
+	arg_9_0.icon_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroIcon.path .. var_9_0)
 
 	if ActivityHeroLetterTools.IsReward(arg_9_0.id_) then
 		arg_9_0.rewardCon_:SetSelectedState("on")

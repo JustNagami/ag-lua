@@ -59,7 +59,7 @@ end
 function var_0_0.UpdateView(arg_9_0)
 	arg_9_0.titleLabel_.text = arg_9_0.cfg_.title
 	arg_9_0.subTitleLabel_.text = arg_9_0.cfg_.sub_title
-	arg_9_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/RechargeRecommend/icons/" .. arg_9_0.cfg_.icon)
+	arg_9_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/RechargeRecommend/icons/" .. arg_9_0.cfg_.icon)
 end
 
 function var_0_0.GetIndex(arg_10_0)

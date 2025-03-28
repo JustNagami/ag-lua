@@ -245,6 +245,8 @@
 				SetActive(arg_1_1.allBtn_.gameObject, true)
 				arg_1_1.hideBtnsController_:SetSelectedIndex(0)
 				manager.video:Dispose()
+
+				arg_1_1.isInLoopVideo = false
 			end
 
 			local var_4_37 = 0.0166666666666667
@@ -4788,7 +4790,7 @@
 
 			if var_118_1 <= arg_115_1.time_ and arg_115_1.time_ < var_118_1 + var_118_2 then
 				local var_118_3 = (arg_115_1.time_ - var_118_1) / var_118_2
-				local var_118_4 = Vector3.New(0, -1.08, -5.9)
+				local var_118_4 = Vector3.New(-0.2, -1.08, -5.9)
 
 				var_118_0.localPosition = Vector3.Lerp(arg_115_1.var_.moveOldPos1019ui_story, var_118_4, var_118_3)
 
@@ -4804,7 +4806,7 @@
 			end
 
 			if arg_115_1.time_ >= var_118_1 + var_118_2 and arg_115_1.time_ < var_118_1 + var_118_2 + arg_118_0 then
-				var_118_0.localPosition = Vector3.New(0, -1.08, -5.9)
+				var_118_0.localPosition = Vector3.New(-0.2, -1.08, -5.9)
 
 				local var_118_7 = manager.ui.mainCamera.transform.position - var_118_0.position
 
@@ -11696,7 +11698,7 @@
 
 			if var_342_1 <= arg_339_1.time_ and arg_339_1.time_ < var_342_1 + var_342_2 then
 				local var_342_3 = (arg_339_1.time_ - var_342_1) / var_342_2
-				local var_342_4 = Vector3.New(0, -1.08, -5.9)
+				local var_342_4 = Vector3.New(-0.2, -1.08, -5.9)
 
 				var_342_0.localPosition = Vector3.Lerp(arg_339_1.var_.moveOldPos1019ui_story, var_342_4, var_342_3)
 
@@ -11712,7 +11714,7 @@
 			end
 
 			if arg_339_1.time_ >= var_342_1 + var_342_2 and arg_339_1.time_ < var_342_1 + var_342_2 + arg_342_0 then
-				var_342_0.localPosition = Vector3.New(0, -1.08, -5.9)
+				var_342_0.localPosition = Vector3.New(-0.2, -1.08, -5.9)
 
 				local var_342_7 = manager.ui.mainCamera.transform.position - var_342_0.position
 
@@ -12138,6 +12140,8 @@
 			if arg_353_0 == 2 then
 				arg_351_0:Play116121084(arg_351_1)
 			end
+
+			arg_351_1:RecordChoiceLog(116121081, 116121082, 116121084)
 		end
 
 		function arg_351_1.onSingleLineUpdate_(arg_354_0)

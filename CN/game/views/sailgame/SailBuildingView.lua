@@ -67,14 +67,14 @@ function var_0_0.RefreshTitle(arg_10_0)
 		arg_10_0.titleText_.text = GetTips("ACTIVITY_SKADI_SEA_BUILDING_NOT_FOUND_NAME")
 		arg_10_0.descText_.text = GetTips("ACTIVITY_SKADI_SEA_BUILDING_NOT_FOUND_DESCRIBE")
 
-		local var_10_1 = getSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/" .. var_10_0.picture_unlock)
+		local var_10_1 = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/" .. var_10_0.picture_unlock)
 
 		if var_10_1 then
 			arg_10_0.lockIcon_.sprite = var_10_1
 		end
 	end
 
-	local var_10_2 = getSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/" .. var_10_0.picture_pop)
+	local var_10_2 = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/" .. var_10_0.picture_pop)
 
 	if var_10_2 then
 		arg_10_0.normalIcon_.sprite = var_10_2

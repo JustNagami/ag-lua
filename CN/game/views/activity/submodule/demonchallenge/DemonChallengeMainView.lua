@@ -139,7 +139,7 @@ function var_0_0.LevelRenderer(arg_11_0, arg_11_1, arg_11_2)
 	if arg_11_0.iconS_[arg_11_1] then
 		local var_11_1 = DemonChallengeTools.GetChildId(arg_11_1, 1)
 
-		arg_11_0.iconS_[arg_11_1].sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/" .. DemonChallengeCfg[var_11_1].icon)
+		arg_11_0.iconS_[arg_11_1].sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/" .. DemonChallengeCfg[var_11_1].icon)
 	end
 end
 

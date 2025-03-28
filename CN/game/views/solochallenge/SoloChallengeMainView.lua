@@ -161,7 +161,7 @@ function var_0_0.RefreshReward(arg_14_0)
 end
 
 function var_0_0.RefreshRoleImage(arg_15_0)
-	arg_15_0.roleImage_.sprite = getSpriteWithoutAtlas("TextureConfig/SummerUI/" .. ActivitySoloChallengeCfg[arg_15_0.selectActivityID_].background)
+	arg_15_0.roleImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/SummerUI/" .. ActivitySoloChallengeCfg[arg_15_0.selectActivityID_].background)
 
 	arg_15_0.adaptImg_:AdaptImg()
 end

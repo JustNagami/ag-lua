@@ -1,6 +1,7 @@
 ﻿return {
 	{
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 1,
 		title = "开服签到",
@@ -25,6 +26,7 @@
 	},
 	[60011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 60011,
 		title = "限时签到",
@@ -42,6 +44,7 @@
 	},
 	[70011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 70011,
 		title = "限时签到",
@@ -59,6 +62,7 @@
 	},
 	[80011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 80011,
 		title = "限时签到",
@@ -76,6 +80,7 @@
 	},
 	[90011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 90011,
 		title = "限时签到",
@@ -93,6 +98,7 @@
 	},
 	[90012] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 90012,
 		title = "限时签到",
@@ -110,6 +116,7 @@
 	},
 	[90013] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 90013,
 		title = "异界之礼",
@@ -127,6 +134,7 @@
 	},
 	[100011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 100011,
 		title = "限时签到",
@@ -144,6 +152,7 @@
 	},
 	[120011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 120011,
 		title = "限时签到",
@@ -161,6 +170,7 @@
 	},
 	[130011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 130011,
 		title = "限时签到",
@@ -178,6 +188,7 @@
 	},
 	[150011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 150011,
 		title = "应召福利",
@@ -195,6 +206,7 @@
 	},
 	[140011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 140011,
 		title = "限时签到",
@@ -212,6 +224,7 @@
 	},
 	[140012] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 140012,
 		title = "周年签到",
@@ -229,6 +242,7 @@
 	},
 	[170011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 170011,
 		title = "限时签到",
@@ -246,6 +260,7 @@
 	},
 	[180011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 180011,
 		title = "限时签到",
@@ -262,6 +277,7 @@
 		}
 	},
 	[182311] = {
+		gift_item_list = "",
 		type = 2,
 		id = 182311,
 		title = "限时签到",
@@ -305,6 +321,7 @@
 	},
 	[1060011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 1060011,
 		title = "限时签到",
@@ -322,6 +339,7 @@
 	},
 	[190011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 190011,
 		title = "限时签到",
@@ -339,6 +357,7 @@
 	},
 	[190012] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 190012,
 		title = "限时签到",
@@ -356,6 +375,7 @@
 	},
 	[190013] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 190013,
 		title = "限时签到",
@@ -373,6 +393,7 @@
 	},
 	[200011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 200011,
 		title = "限时签到",
@@ -390,6 +411,7 @@
 	},
 	[200012] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 200012,
 		title = "限时签到",
@@ -406,6 +428,7 @@
 		}
 	},
 	[212491] = {
+		gift_item_list = "",
 		type = 1,
 		id = 212491,
 		title = "限时签到",
@@ -429,6 +452,7 @@
 	},
 	[210011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 210011,
 		title = "限时签到",
@@ -446,6 +470,7 @@
 	},
 	[210012] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 210012,
 		title = "限时签到",
@@ -463,6 +488,7 @@
 	},
 	[232751] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 232751,
 		title = "限时签到",
@@ -480,6 +506,7 @@
 	},
 	[230011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 230011,
 		title = "限时签到",
@@ -497,6 +524,7 @@
 	},
 	[230012] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 230012,
 		title = "限时签到",
@@ -514,6 +542,7 @@
 	},
 	[240011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 240011,
 		title = "限时签到",
@@ -531,6 +560,7 @@
 	},
 	[240012] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 240012,
 		title = "限时签到",
@@ -548,6 +578,7 @@
 	},
 	[240013] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 240013,
 		title = "周年签到",
@@ -565,6 +596,7 @@
 	},
 	[270011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 270011,
 		title = "限时签到",
@@ -582,6 +614,7 @@
 	},
 	[270012] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 270012,
 		title = "限时签到",
@@ -599,6 +632,7 @@
 	},
 	[270013] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 270013,
 		title = "热浪将至",
@@ -623,6 +657,7 @@
 	},
 	[280011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 280011,
 		title = "限时签到",
@@ -639,6 +674,7 @@
 		}
 	},
 	[282491] = {
+		gift_item_list = "",
 		type = 1,
 		id = 282491,
 		title = "限时签到",
@@ -662,6 +698,7 @@
 	},
 	[280012] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 280012,
 		title = "限时签到",
@@ -678,6 +715,7 @@
 		}
 	},
 	[293401] = {
+		gift_item_list = "",
 		type = 1,
 		id = 293401,
 		title = "限时签到",
@@ -701,6 +739,7 @@
 	},
 	[290011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 290011,
 		title = "限时签到",
@@ -718,6 +757,7 @@
 	},
 	[290012] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 290012,
 		title = "限时签到",
@@ -735,6 +775,7 @@
 	},
 	[300011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 300011,
 		title = "限时签到",
@@ -752,6 +793,7 @@
 	},
 	[300012] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 300012,
 		title = "限时签到",
@@ -769,6 +811,7 @@
 	},
 	[310011] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 310011,
 		title = "限时签到",
@@ -786,6 +829,7 @@
 	},
 	[310012] = {
 		cost_item_list = "",
+		gift_item_list = "",
 		type = 0,
 		id = 310012,
 		title = "限时签到",
@@ -799,6 +843,66 @@
 			7505,
 			7506,
 			7507
+		}
+	},
+	[323401] = {
+		type = 1,
+		id = 323401,
+		title = "限时签到",
+		ui_path = "Widget/Version/V4_0_SkuldUI/V4_0_Skuld_AnniversaryUI/V4_0_Skuld_AnniversaryUI",
+		limit_level = 0,
+		config_list = {
+			24001,
+			24002,
+			24003,
+			24004,
+			24005,
+			24006,
+			24007
+		},
+		cost_item_list = {
+			{
+				1,
+				100
+			}
+		},
+		gift_item_list = {
+			{
+				30073,
+				1
+			}
+		}
+	},
+	[320012] = {
+		cost_item_list = "",
+		gift_item_list = "",
+		type = 0,
+		id = 320012,
+		title = "限时签到",
+		ui_path = "Widget/Version/V4_0_SkuldUI/V4_0_Skuld_SevenDaySignUI/V4_0_Skuld_SevenDaySignUI",
+		limit_level = 0,
+		config_list = {
+			7501,
+			7502,
+			7503,
+			7504,
+			7505,
+			7506,
+			7507
+		}
+	},
+	[323861] = {
+		cost_item_list = "",
+		gift_item_list = "",
+		type = 0,
+		id = 323861,
+		title = "限时签到",
+		ui_path = "Widget/System/Recharge/RechargeSkinEventUI",
+		limit_level = 0,
+		config_list = {
+			25001,
+			25002,
+			25003
 		}
 	},
 	all = {
@@ -845,6 +949,9 @@
 		300011,
 		300012,
 		310011,
-		310012
+		310012,
+		323401,
+		320012,
+		323861
 	}
 }

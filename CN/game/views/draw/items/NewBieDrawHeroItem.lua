@@ -49,7 +49,7 @@ function var_0_0.RegistClickFunc(arg_9_0, arg_9_1)
 end
 
 function var_0_0.UpdateView(arg_10_0)
-	arg_10_0.roleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_10_0.id_)
+	arg_10_0.roleImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_10_0.id_)
 	arg_10_0.campImg_.sprite = HeroTools.GetHeroRaceIcon(arg_10_0.id_)
 	arg_10_0.attackType_.sprite = HeroTools.GetHeroSkillAttributeIcon(arg_10_0.id_)
 	arg_10_0.nameText_.text = arg_10_0.cfg_.name

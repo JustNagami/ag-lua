@@ -112,7 +112,13 @@ end
 function var_0_0.indexItem(arg_17_0, arg_17_1, arg_17_2)
 	arg_17_2:RefreshUI(arg_17_0.heroList[arg_17_1], arg_17_0.selHero, arg_17_0.jobType)
 	arg_17_2:ResetCharacterCallBack(function(arg_18_0)
-		arg_17_0:ClickHeroItem(arg_18_0)
+		local var_18_0, var_18_1 = BackHomeTools.CheckHeroIsLockForAnyFeatureWithTips(arg_18_0)
+
+		if var_18_0 then
+			ShowTips(var_18_1)
+		else
+			arg_17_0:ClickHeroItem(arg_18_0)
+		end
 	end)
 end
 

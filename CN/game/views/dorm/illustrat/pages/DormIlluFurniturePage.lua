@@ -124,6 +124,8 @@ function var_0_0.IndexFurItem(arg_14_0, arg_14_1, arg_14_2)
 end
 
 function var_0_0.EnterFurState(arg_16_0, arg_16_1, arg_16_2)
+	DormRedPointTools:SetIlluNewTagRed("furNew", RedPointConst.DORM_ILLU_FUR_THEME, false, arg_16_1)
+
 	arg_16_0.themeIndex_ = arg_16_2
 
 	arg_16_0:RefreshFurData(arg_16_1)

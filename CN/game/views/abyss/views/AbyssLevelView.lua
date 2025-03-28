@@ -149,7 +149,7 @@ function var_0_0.UpdateView(arg_18_0)
 	if arg_18_0.stageCfg_[1] == 3 then
 		local var_18_0 = AbyssUICfg[arg_18_0.monsterIdList_[1]]
 
-		arg_18_0.bossImage_.sprite = getSpriteWithoutAtlas(SpritePathCfg.CollectBoss.path .. var_18_0.enemy_id)
+		arg_18_0.bossImage_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.CollectBoss.path .. var_18_0.enemy_id)
 
 		if var_18_0 ~= nil then
 			if var_18_0.icon_pos ~= nil and var_18_0.icon_pos ~= "" and #var_18_0.icon_pos > 0 then

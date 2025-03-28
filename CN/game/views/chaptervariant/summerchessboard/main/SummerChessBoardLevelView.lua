@@ -140,7 +140,7 @@ function var_0_0.RefreshUI(arg_17_0)
 	local var_17_1 = ChessBoardLevelCfg[var_17_0]
 
 	arg_17_0.levelName_.text = var_17_1.name_level
-	arg_17_0.levelImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_ChessBoard/" .. var_17_1.background_level)
+	arg_17_0.levelImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_ChessBoard/" .. var_17_1.background_level)
 
 	if arg_17_0.curIndex_ <= 1 then
 		arg_17_0.leftController_:SetSelectedState("false")

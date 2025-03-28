@@ -44,7 +44,7 @@ function var_0_0.AddBuff(arg_4_0, arg_4_1, arg_4_2, arg_4_3)
 
 		arg_4_0:BindCfgUI(var_4_2, var_4_3)
 
-		var_4_3.icon_.sprite = getSpriteWithoutAtlas(GameDisplayCfg.activity_snowball_buff_icon.value[arg_4_1])
+		var_4_3.icon_.sprite = pureGetSpriteWithoutAtlas(GameDisplayCfg.activity_snowball_buff_icon.value[arg_4_1])
 		arg_4_0.buffs[arg_4_1] = {
 			lastTime = arg_4_2,
 			obj = var_4_2,

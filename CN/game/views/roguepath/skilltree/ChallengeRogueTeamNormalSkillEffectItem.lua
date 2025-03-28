@@ -24,7 +24,7 @@ function var_0_0.SetData(arg_4_0, arg_4_1)
 	arg_4_0.value_ = 0
 	arg_4_0.skillTemp_ = arg_4_1
 	arg_4_0.cfg_ = RogueTeamSkillTreeCfg[RogueTeamSkillTreeCfg.get_id_list_by_show_temp[arg_4_1][1]]
-	arg_4_0.icon_.sprite = getSpriteWithoutAtlas(arg_4_0.cfg_.icon)
+	arg_4_0.icon_.sprite = pureGetSpriteWithoutAtlas(arg_4_0.cfg_.icon)
 	arg_4_0.name_.text = arg_4_0.cfg_.show_desc
 
 	arg_4_0:Show(true)

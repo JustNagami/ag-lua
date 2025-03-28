@@ -267,6 +267,8 @@ function var_0_0.OnClickRoleTab(arg_20_0, arg_20_1)
 	arg_20_0.roleIndex_ = arg_20_1
 	arg_20_0.curHeroID_ = arg_20_0.roleList_[arg_20_1]
 
+	HeroAction.QueryHeroNewData(arg_20_0.curHeroID_)
+
 	if arg_20_0.formState_ then
 		arg_20_0.subPages_[arg_20_0.curPageIndex_]:Show(arg_20_0.curRecordID_, arg_20_0.curHeroID_, true, arg_20_0:GetFormID(arg_20_0.curHeroID_))
 	else

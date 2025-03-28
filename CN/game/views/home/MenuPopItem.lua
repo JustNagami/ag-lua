@@ -21,7 +21,9 @@ end
 
 function var_0_0.AddUIListener(arg_4_0)
 	arg_4_0:AddBtnListener(arg_4_0.button_, nil, function()
-		arg_4_0.clickFun_(arg_4_0)
+		if arg_4_0.clickFun_ then
+			arg_4_0.clickFun_(arg_4_0)
+		end
 	end)
 end
 
@@ -33,7 +35,6 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2)
 
 	arg_6_0.typeController_:SetSelectedState(arg_6_1.type)
 	arg_6_0.lockController_:SetSelectedState(arg_6_1.lock and "true" or "false")
-	arg_6_0:BindRedPointUI()
 end
 
 function var_0_0.BindRedPointUI(arg_7_0)
@@ -75,6 +76,11 @@ end
 
 function var_0_0.OnExit(arg_10_0)
 	arg_10_0:UnBindRedPointUI()
+end
+
+function var_0_0.Dispose(arg_11_0)
+	var_0_0.super.Dispose(arg_11_0)
+	arg_11_0:UnBindRedPointUI()
 end
 
 return var_0_0

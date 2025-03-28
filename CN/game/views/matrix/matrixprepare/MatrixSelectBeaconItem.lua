@@ -29,7 +29,7 @@ function var_0_0.Refresh(arg_5_0, arg_5_1)
 
 	local var_5_0 = MatrixBeaconCfg[arg_5_0.id]
 
-	arg_5_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/MatrixItem/MatrixArtifact/" .. var_5_0.icon)
+	arg_5_0.m_icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/MatrixItem/MatrixArtifact/" .. var_5_0.icon)
 	arg_5_0.m_name.text = GetI18NText(var_5_0.name)
 	arg_5_0.m_des.text = GetI18NText(var_5_0.desc)
 end

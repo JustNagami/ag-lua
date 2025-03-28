@@ -29,7 +29,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 
 	local var_5_0 = RogueTeamItemCfg[arg_5_0.id_]
 
-	arg_5_0.icon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_5_2))
+	arg_5_0.icon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_5_2))
 
 	local var_5_1 = not ChallengeRogueTeamData:IsIllustratedObtained(ChallengeRogueTeamData:GetCacheTemplateID(), ChallengeRogueTeamConst.COLLECTION_TYPE.SEASON, arg_5_2)
 

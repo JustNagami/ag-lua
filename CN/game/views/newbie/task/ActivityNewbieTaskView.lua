@@ -125,9 +125,9 @@ function var_0_0.RefreshIcon(arg_11_0)
 	local var_11_0 = AssignmentCfg[taskID].reward[1][1]
 
 	if ItemCfg[var_11_0].type == ItemConst.ITEM_TYPE.HERO then
-		arg_11_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_11_0)
+		arg_11_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_11_0)
 	else
-		arg_11_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Item_l" .. var_11_0)
+		arg_11_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Item_l" .. var_11_0)
 	end
 end
 

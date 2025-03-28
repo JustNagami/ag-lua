@@ -111,4 +111,85 @@ function var_0_0.IsUnlockReward(arg_11_0)
 	return table.length(SequentialBattleData:GetFinishStageList(var_11_1)) >= var_11_0.complete_num
 end
 
+function var_0_0.CheckHeroTeamList(arg_12_0)
+	if var_0_0.HasAllHeroTeam(arg_12_0) then
+		return
+	end
+
+	local var_12_0 = SequentialBattleChapterCfg[arg_12_0]
+	local var_12_1 = var_12_0.main_id
+	local var_12_2 = SequentialBattleChapterCfg.get_id_list_by_main_id[var_12_1]
+	local var_12_3 = table.keyof(var_12_2, arg_12_0)
+
+	for iter_12_0 = var_12_3 - 1, 1, -1 do
+		local var_12_4 = var_12_2[iter_12_0]
+
+		if var_0_0.HasAllHeroTeam(var_12_4) then
+			for iter_12_1, iter_12_2 in ipairs(var_12_0.stage_id) do
+				var_0_0.ReplayHeroTeam(arg_12_0, var_12_4, iter_12_1, iter_12_2)
+			end
+
+			return
+		end
+	end
+
+	for iter_12_3 = var_12_3 + 1, #var_12_2 do
+		local var_12_5 = var_12_2[iter_12_3]
+
+		if var_0_0.HasAllHeroTeam(var_12_5) then
+			for iter_12_4, iter_12_5 in ipairs(var_12_0.stage_id) do
+				var_0_0.ReplayHeroTeam(arg_12_0, var_12_5, iter_12_4, iter_12_5)
+			end
+
+			return
+		end
+	end
+end
+
+function var_0_0.HasAllHeroTeam(arg_13_0)
+	local var_13_0 = SequentialBattleChapterCfg[arg_13_0]
+
+	for iter_13_0, iter_13_1 in ipairs(var_13_0.stage_id) do
+		if var_0_0.HasHeroTeam(arg_13_0, iter_13_0, iter_13_1) then
+			return true
+		end
+	end
+
+	return false
+end
+
+function var_0_0.HasHeroTeam(arg_14_0, arg_14_1, arg_14_2)
+	if var_0_0.GetHeroTeam(arg_14_0, arg_14_1, arg_14_2)[1] ~= 0 then
+		return true
+	end
+end
+
+function var_0_0.GetHeroTeam(arg_15_0, arg_15_1, arg_15_2)
+	local var_15_0 = ReserveParams.New(ReserveConst.RESERVE_TYPE.SEQUENTIAL_BATTLE, arg_15_0, arg_15_1, {
+		stageType = BattleConst.STAGE_TYPE_NEW.SEQUENTIAL_BATTLE,
+		stageID = arg_15_2,
+		activityID = arg_15_0
+	})
+
+	return ReserveTools.GetHeroList(var_15_0)
+end
+
+function var_0_0.ReplayHeroTeam(arg_16_0, arg_16_1, arg_16_2, arg_16_3)
+	local var_16_0 = ReserveParams.New(ReserveConst.RESERVE_TYPE.SEQUENTIAL_BATTLE, arg_16_1, arg_16_2, {
+		stageType = BattleConst.STAGE_TYPE_NEW.SEQUENTIAL_BATTLE,
+		stageID = arg_16_3,
+		activityID = arg_16_1
+	})
+	local var_16_1, var_16_2, var_16_3, var_16_4 = ReserveTools.GetHeroList(var_16_0)
+	local var_16_5, var_16_6 = ReserveTools.GetMimirData(var_16_0)
+	local var_16_7 = ReserveTools.GetComboSkillID(var_16_0)
+	local var_16_8 = ReserveParams.New(ReserveConst.RESERVE_TYPE.SEQUENTIAL_BATTLE, arg_16_0, arg_16_2, {
+		stageType = BattleConst.STAGE_TYPE_NEW.SEQUENTIAL_BATTLE,
+		stageID = arg_16_3,
+		activityID = arg_16_0
+	})
+
+	ReserveTools.SetTeam(var_16_8, var_16_1, var_16_4 or {}, var_16_7, var_16_5, var_16_6)
+end
+
 return var_0_0

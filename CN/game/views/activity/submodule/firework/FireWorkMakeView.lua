@@ -91,7 +91,7 @@ function var_0_0.NewGame(arg_13_0)
 
 	arg_13_0.m_name.text = GetI18NText(var_13_0.name)
 	arg_13_0.m_des.text = GetI18NText(var_13_0.desc)
-	arg_13_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/EmptyDream/letter_role_title/" .. var_13_0.icon)
+	arg_13_0.m_icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/EmptyDream/letter_role_title/" .. var_13_0.icon)
 	arg_13_0.m_arror.localRotation = Quaternion.Euler(0, 0, 0)
 	arg_13_0.m_circle.localRotation = Quaternion.Euler(0, 0, 0)
 	arg_13_0.m_countDownLab.text = ""

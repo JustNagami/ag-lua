@@ -6,7 +6,7 @@ function var_0_1.RefreshRace(arg_1_0)
 		arg_1_0.raceCon_:SetSelectedState(tostring(arg_1_0.cfg_.race))
 	end
 
-	arg_1_0.raceIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/VolumeIIIDownUI/VolumeIIIDownChellgeUI/" .. arg_1_0.cfg_.race)
+	arg_1_0.raceIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VolumeIIIDownUI/VolumeIIIDownChellgeUI/" .. arg_1_0.cfg_.race)
 end
 
 return var_0_1

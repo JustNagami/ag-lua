@@ -3450,6 +3450,8 @@
 			if arg_87_0 == 1 then
 				arg_85_0:Play123102022(arg_85_1)
 			end
+
+			arg_85_1:RecordChoiceLog(123102021, 123102022)
 		end
 
 		function arg_85_1.onSingleLineUpdate_(arg_88_0)

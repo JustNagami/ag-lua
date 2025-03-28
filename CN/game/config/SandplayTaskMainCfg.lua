@@ -2,7 +2,7 @@
 	[101] = {
 		main_task_type = 1,
 		descrption = "该流程内一共包含9个任务",
-		chapter_task_id = 1,
+		chapter_task_id = 0,
 		priority = 999,
 		unlock_param = "",
 		title = "任务demo",
@@ -495,7 +495,7 @@
 		priority = 1,
 		title = "隐藏任务",
 		main_task_id = 10115,
-		end_task_id = 10115001,
+		end_task_id = 10115002,
 		activity_id = 313641,
 		unlock_operation = 2,
 		hide_task = 1,
@@ -1748,8 +1748,1411 @@
 		reward = {},
 		important_reward = {}
 	},
+	[11199] = {
+		main_task_type = 1,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "无法完成的任务，关卡蓝图",
+		main_task_id = 11199,
+		end_task_id = 11199001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 1,
+		first_task_id = 11199001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {},
+		important_reward = {}
+	},
+	[11101] = {
+		main_task_type = 1,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "古船今事",
+		main_task_id = 11101,
+		end_task_id = 11101005,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11101001,
+		next_main_mission = 11102,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				15
+			},
+			{
+				40603,
+				5
+			},
+			{
+				22003,
+				1
+			}
+		},
+		important_reward = {}
+	},
+	[11102] = {
+		main_task_type = 1,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		title = "腹中空空",
+		main_task_id = 11102,
+		end_task_id = 11102002,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11102001,
+		next_main_mission = 11103,
+		receive_npc = 0,
+		unlock_param = {
+			70101
+		},
+		reward = {
+			{
+				1,
+				15
+			},
+			{
+				40603,
+				5
+			},
+			{
+				22003,
+				1
+			}
+		},
+		important_reward = {}
+	},
+	[11103] = {
+		main_task_type = 1,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		title = "素胚勾勒出……",
+		main_task_id = 11103,
+		end_task_id = 11103006,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11103000,
+		next_main_mission = 11104,
+		receive_npc = 0,
+		unlock_param = {
+			70102
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				40603,
+				10
+			},
+			{
+				22003,
+				2
+			}
+		},
+		important_reward = {}
+	},
+	[11104] = {
+		main_task_type = 1,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		title = "染坊与古井",
+		main_task_id = 11104,
+		end_task_id = 11104011,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11104001,
+		next_main_mission = 11105,
+		receive_npc = 0,
+		unlock_param = {
+			70103
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				40603,
+				10
+			},
+			{
+				22003,
+				2
+			}
+		},
+		important_reward = {}
+	},
+	[11105] = {
+		main_task_type = 1,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		title = "他山之「玉」",
+		main_task_id = 11105,
+		end_task_id = 11105006,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11105000,
+		next_main_mission = 11106,
+		receive_npc = 0,
+		unlock_param = {
+			70104
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				40603,
+				10
+			},
+			{
+				22003,
+				2
+			}
+		},
+		important_reward = {}
+	},
+	[11106] = {
+		main_task_type = 1,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		title = "舌尖上的夏什瓦特",
+		main_task_id = 11106,
+		end_task_id = 11106008,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11106001,
+		next_main_mission = 11107,
+		receive_npc = 0,
+		unlock_param = {
+			70105
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				40603,
+				10
+			},
+			{
+				22003,
+				2
+			}
+		},
+		important_reward = {}
+	},
+	[11107] = {
+		main_task_type = 1,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		title = "迫近的风暴",
+		main_task_id = 11107,
+		end_task_id = 11107010,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11107001,
+		next_main_mission = 11108,
+		receive_npc = 0,
+		unlock_param = {
+			70106
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				40603,
+				10
+			},
+			{
+				22003,
+				2
+			}
+		},
+		important_reward = {}
+	},
+	[11108] = {
+		main_task_type = 1,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		title = "定风波，沧海阔",
+		main_task_id = 11108,
+		end_task_id = 11108006,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11108001,
+		next_main_mission = 11109,
+		receive_npc = 0,
+		unlock_param = {
+			70107
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				40603,
+				10
+			},
+			{
+				22003,
+				2
+			}
+		},
+		important_reward = {}
+	},
+	[11109] = {
+		main_task_type = 1,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		title = "刺桐依旧",
+		main_task_id = 11109,
+		end_task_id = 11109001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11109000,
+		next_main_mission = 11219,
+		receive_npc = 0,
+		unlock_param = {
+			70108
+		},
+		reward = {},
+		important_reward = {}
+	},
+	[11201] = {
+		main_task_type = 2,
+		descrption = "平静的海边，却站着一个并不平静的男孩，他是为什么展露出了伤心的表情？",
+		chapter_task_id = 0,
+		priority = 2,
+		title = "遗失的礼物",
+		main_task_id = 11201,
+		end_task_id = 11201004,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11201002,
+		next_main_mission = 0,
+		receive_npc = 0,
+		unlock_param = {
+			70201
+		},
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40603,
+				5
+			},
+			{
+				22003,
+				1
+			}
+		},
+		important_reward = {}
+	},
+	[11202] = {
+		main_task_type = 2,
+		descrption = "在大街上如果发现了有神能波动的物品，该怎么偷偷处理掉比较好呢？真是让人伤脑筋……",
+		chapter_task_id = 0,
+		priority = 2,
+		title = "神奇的石敢当",
+		main_task_id = 11202,
+		end_task_id = 11202006,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11202002,
+		next_main_mission = 0,
+		receive_npc = 0,
+		unlock_param = {
+			70202
+		},
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40603,
+				5
+			},
+			{
+				22003,
+				1
+			}
+		},
+		important_reward = {}
+	},
+	[11203] = {
+		main_task_type = 2,
+		descrption = "平时会在终端上挂着委托平台的麟钰，收到了来自附近的一则特殊委托，是来自一家人工智能企业的，一线业务员的求助……",
+		chapter_task_id = 0,
+		priority = 2,
+		title = "稍作思考",
+		main_task_id = 11203,
+		end_task_id = 11203004,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11203002,
+		next_main_mission = 0,
+		receive_npc = 0,
+		unlock_param = {
+			70203
+		},
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40603,
+				5
+			},
+			{
+				22003,
+				1
+			}
+		},
+		important_reward = {}
+	},
+	[11206] = {
+		main_task_type = 2,
+		descrption = "不经历过一次熊孩子的捣蛋事件，你永远不知道一个母亲会在一瞬间爆发出多大的怒火……",
+		chapter_task_id = 0,
+		priority = 2,
+		title = "暴走妈妈",
+		main_task_id = 11206,
+		end_task_id = 11206006,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11206002,
+		next_main_mission = 0,
+		receive_npc = 0,
+		unlock_param = {
+			70206
+		},
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40603,
+				5
+			},
+			{
+				22003,
+				1
+			}
+		},
+		important_reward = {}
+	},
+	[11207] = {
+		main_task_type = 2,
+		descrption = "开元寺里好不热闹，大家都在这里求签解签，想沾沾福气。没想到树边，男孩和女孩却因为福签的事情苦恼着……",
+		chapter_task_id = 0,
+		priority = 2,
+		title = "错过还是恰好",
+		main_task_id = 11207,
+		end_task_id = 11207003,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11207004,
+		next_main_mission = 0,
+		receive_npc = 0,
+		unlock_param = {
+			70207
+		},
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40603,
+				5
+			},
+			{
+				22003,
+				1
+			}
+		},
+		important_reward = {}
+	},
+	[11208] = {
+		main_task_type = 2,
+		descrption = "让你不去钓鱼，你偏要去，公司出了事不知道，这下老实了吧？一天就知道钓鱼，钓鱼，再钓下去，你干脆跟鱼去过算了。——郝嫂如是说",
+		chapter_task_id = 0,
+		priority = 2,
+		title = "戒钓",
+		main_task_id = 11208,
+		end_task_id = 11208003,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11208002,
+		next_main_mission = 0,
+		receive_npc = 0,
+		unlock_param = {
+			70208
+		},
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40603,
+				5
+			},
+			{
+				22003,
+				1
+			}
+		},
+		important_reward = {}
+	},
+	[11209] = {
+		main_task_type = 2,
+		descrption = "风暴虽然已经结束，但四方院仍然有一些善后事宜需要处理。",
+		chapter_task_id = 0,
+		priority = 2,
+		title = "「善后」事宜",
+		main_task_id = 11209,
+		end_task_id = 11209005,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11209000,
+		next_main_mission = 0,
+		receive_npc = 0,
+		unlock_param = {
+			70209
+		},
+		reward = {
+			{
+				1,
+				60
+			},
+			{
+				40603,
+				15
+			},
+			{
+				22003,
+				4
+			}
+		},
+		important_reward = {}
+	},
+	[11211] = {
+		main_task_type = 2,
+		descrption = "平静的海边，却站着一个并不平静的男孩，他是为什么展露出了伤心的表情？",
+		chapter_task_id = 0,
+		priority = 2,
+		title = "遗失的礼物",
+		main_task_id = 11211,
+		end_task_id = 11201001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11201001,
+		next_main_mission = 11201,
+		receive_npc = 0,
+		unlock_param = {
+			70104
+		},
+		reward = {},
+		important_reward = {}
+	},
+	[11212] = {
+		main_task_type = 2,
+		descrption = "在大街上如果发现了有神能波动的物品，该怎么偷偷处理掉比较好呢？真是让人伤脑筋……",
+		chapter_task_id = 0,
+		priority = 2,
+		title = "神奇的石敢当",
+		main_task_id = 11212,
+		end_task_id = 11202001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11202001,
+		next_main_mission = 11202,
+		receive_npc = 0,
+		unlock_param = {
+			70104
+		},
+		reward = {},
+		important_reward = {}
+	},
+	[11213] = {
+		main_task_type = 2,
+		descrption = "平时会在终端上挂着委托平台的麟钰，收到了来自附近的一则特殊委托，是来自一家人工智能企业的，一线业务员的求助……",
+		chapter_task_id = 0,
+		priority = 2,
+		title = "稍作思考",
+		main_task_id = 11213,
+		end_task_id = 11203001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11203001,
+		next_main_mission = 11203,
+		receive_npc = 0,
+		unlock_param = {
+			70106
+		},
+		reward = {},
+		important_reward = {}
+	},
+	[11216] = {
+		main_task_type = 2,
+		descrption = "不经历过一次熊孩子的捣蛋事件，你永远不知道一个母亲会在一瞬间爆发出多大的怒火……",
+		chapter_task_id = 0,
+		priority = 2,
+		unlock_param = "",
+		title = "暴走妈妈",
+		main_task_id = 11216,
+		end_task_id = 11206001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11206001,
+		next_main_mission = 11206,
+		receive_npc = 0,
+		reward = {},
+		important_reward = {}
+	},
+	[11217] = {
+		main_task_type = 2,
+		descrption = "开元寺里好不热闹，大家都在这里求签解签，想沾沾福气。没想到树边，男孩和女孩却因为福签的事情苦恼着……",
+		chapter_task_id = 0,
+		priority = 2,
+		unlock_param = "",
+		title = "错过还是恰好",
+		main_task_id = 11217,
+		end_task_id = 11207000,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11207000,
+		next_main_mission = 11207,
+		receive_npc = 0,
+		reward = {},
+		important_reward = {}
+	},
+	[11218] = {
+		main_task_type = 2,
+		descrption = "让你不去钓鱼，你偏要去，公司出了事不知道，这下老实了吧？一天就知道钓鱼，钓鱼，再钓下去，你干脆跟鱼去过算了。——郝嫂如是说",
+		chapter_task_id = 0,
+		priority = 2,
+		title = "戒钓",
+		main_task_id = 11218,
+		end_task_id = 11208001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11208001,
+		next_main_mission = 11208,
+		receive_npc = 0,
+		unlock_param = {
+			70106
+		},
+		reward = {},
+		important_reward = {}
+	},
+	[11219] = {
+		main_task_type = 2,
+		descrption = "风暴虽然已经结束，但四方院仍然有一些善后事宜需要处理。",
+		chapter_task_id = 0,
+		priority = 2,
+		title = "「善后」事宜",
+		main_task_id = 11219,
+		end_task_id = 11209001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 0,
+		first_task_id = 11209001,
+		next_main_mission = 11209,
+		receive_npc = 0,
+		unlock_param = {
+			70108
+		},
+		reward = {},
+		important_reward = {}
+	},
+	[11307] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		title = "打卡拍照2",
+		main_task_id = 11307,
+		end_task_id = 11307001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 1,
+		first_task_id = 11307001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		unlock_param = {
+			70104
+		},
+		reward = {},
+		important_reward = {}
+	},
+	[11308] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		title = "打卡拍照3",
+		main_task_id = 11308,
+		end_task_id = 11308001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 1,
+		first_task_id = 11308001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		unlock_param = {
+			70104
+		},
+		reward = {},
+		important_reward = {}
+	},
+	[11309] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		title = "打卡拍照4",
+		main_task_id = 11309,
+		end_task_id = 11309001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 1,
+		first_task_id = 11309001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		unlock_param = {
+			70104
+		},
+		reward = {},
+		important_reward = {}
+	},
+	[11310] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		title = "打卡拍照5",
+		main_task_id = 11310,
+		end_task_id = 11310001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 1,
+		first_task_id = 11310001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		unlock_param = {
+			70104
+		},
+		reward = {},
+		important_reward = {}
+	},
+	[11311] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "",
+		main_task_id = 11311,
+		end_task_id = 11311001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 3,
+		first_task_id = 11311001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		important_reward = {}
+	},
+	[11312] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "",
+		main_task_id = 11312,
+		end_task_id = 11312001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 3,
+		first_task_id = 11312001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		important_reward = {}
+	},
+	[11313] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "",
+		main_task_id = 11313,
+		end_task_id = 11313001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 3,
+		first_task_id = 11313001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		important_reward = {}
+	},
+	[11314] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "",
+		main_task_id = 11314,
+		end_task_id = 11314001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 3,
+		first_task_id = 11314001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		important_reward = {}
+	},
+	[11315] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "",
+		main_task_id = 11315,
+		end_task_id = 11315001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 3,
+		first_task_id = 11315001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		important_reward = {}
+	},
+	[11321] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "",
+		main_task_id = 11321,
+		end_task_id = 11321001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 3,
+		first_task_id = 11321001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		important_reward = {}
+	},
+	[11322] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "",
+		main_task_id = 11322,
+		end_task_id = 11322001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 3,
+		first_task_id = 11322001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		important_reward = {}
+	},
+	[11323] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "",
+		main_task_id = 11323,
+		end_task_id = 11323001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 3,
+		first_task_id = 11323001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		important_reward = {}
+	},
+	[11324] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "",
+		main_task_id = 11324,
+		end_task_id = 11324001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 3,
+		first_task_id = 11324001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		important_reward = {}
+	},
+	[11331] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "",
+		main_task_id = 11331,
+		end_task_id = 11331001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 3,
+		first_task_id = 11331001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		important_reward = {}
+	},
+	[11332] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "",
+		main_task_id = 11332,
+		end_task_id = 11332001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 3,
+		first_task_id = 11332001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		important_reward = {}
+	},
+	[11333] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "",
+		main_task_id = 11333,
+		end_task_id = 11333001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 3,
+		first_task_id = 11333001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		important_reward = {}
+	},
+	[11334] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "",
+		main_task_id = 11334,
+		end_task_id = 11334001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 3,
+		first_task_id = 11334001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		important_reward = {}
+	},
+	[11335] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "",
+		main_task_id = 11335,
+		end_task_id = 11335001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 3,
+		first_task_id = 11335001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		important_reward = {}
+	},
+	[11336] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 1,
+		unlock_param = "",
+		title = "",
+		main_task_id = 11336,
+		end_task_id = 11336001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 3,
+		first_task_id = 11336001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		important_reward = {}
+	},
+	[11341] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 3,
+		unlock_param = "",
+		title = "金宝箱任务01",
+		main_task_id = 11341,
+		end_task_id = 11341001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 2,
+		first_task_id = 11341001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40603,
+				10
+			},
+			{
+				2,
+				10000
+			}
+		},
+		important_reward = {}
+	},
+	[11342] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 3,
+		unlock_param = "",
+		title = "金宝箱任务02",
+		main_task_id = 11342,
+		end_task_id = 11342001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 2,
+		first_task_id = 11342001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40603,
+				10
+			},
+			{
+				2,
+				10000
+			}
+		},
+		important_reward = {}
+	},
+	[11343] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 3,
+		unlock_param = "",
+		title = "银宝箱任务01",
+		main_task_id = 11343,
+		end_task_id = 11343001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 2,
+		first_task_id = 11343001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40504,
+				5
+			},
+			{
+				2,
+				5000
+			}
+		},
+		important_reward = {}
+	},
+	[11344] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 3,
+		unlock_param = "",
+		title = "银宝箱任务02",
+		main_task_id = 11344,
+		end_task_id = 11344001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 2,
+		first_task_id = 11344001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40504,
+				5
+			},
+			{
+				2,
+				5000
+			}
+		},
+		important_reward = {}
+	},
+	[11345] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 3,
+		unlock_param = "",
+		title = "银宝箱任务03",
+		main_task_id = 11345,
+		end_task_id = 11345001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 2,
+		first_task_id = 11345001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40504,
+				5
+			},
+			{
+				2,
+				5000
+			}
+		},
+		important_reward = {}
+	},
+	[11346] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 3,
+		unlock_param = "",
+		title = "银宝箱任务04",
+		main_task_id = 11346,
+		end_task_id = 11346001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 2,
+		first_task_id = 11346001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40504,
+				5
+			},
+			{
+				2,
+				5000
+			}
+		},
+		important_reward = {}
+	},
+	[11347] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 3,
+		unlock_param = "",
+		title = "银宝箱任务05",
+		main_task_id = 11347,
+		end_task_id = 11347001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 2,
+		first_task_id = 11347001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40504,
+				5
+			},
+			{
+				2,
+				5000
+			}
+		},
+		important_reward = {}
+	},
+	[11348] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 3,
+		unlock_param = "",
+		title = "银宝箱任务06",
+		main_task_id = 11348,
+		end_task_id = 11348001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 2,
+		first_task_id = 11348001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40504,
+				5
+			},
+			{
+				2,
+				5000
+			}
+		},
+		important_reward = {}
+	},
+	[11349] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 3,
+		unlock_param = "",
+		title = "银宝箱任务07",
+		main_task_id = 11349,
+		end_task_id = 11349001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 2,
+		first_task_id = 11349001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40504,
+				5
+			},
+			{
+				2,
+				5000
+			}
+		},
+		important_reward = {}
+	},
+	[11350] = {
+		main_task_type = 3,
+		descrption = "",
+		chapter_task_id = 0,
+		priority = 3,
+		unlock_param = "",
+		title = "银宝箱任务08",
+		main_task_id = 11350,
+		end_task_id = 11350001,
+		activity_id = 323641,
+		unlock_operation = 2,
+		hide_task = 2,
+		first_task_id = 11350001,
+		next_main_mission = 0,
+		receive_npc = 0,
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40504,
+				5
+			},
+			{
+				2,
+				5000
+			}
+		},
+		important_reward = {}
+	},
 	get_id_list_by_chapter_task_id = {
 		[0] = {
+			101,
 			201,
 			202,
 			10101,
@@ -1816,10 +3219,191 @@
 			10401,
 			10402,
 			10403,
-			10404
+			10404,
+			11199,
+			11101,
+			11102,
+			11103,
+			11104,
+			11105,
+			11106,
+			11107,
+			11108,
+			11109,
+			11201,
+			11202,
+			11203,
+			11206,
+			11207,
+			11208,
+			11209,
+			11211,
+			11212,
+			11213,
+			11216,
+			11217,
+			11218,
+			11219,
+			11307,
+			11308,
+			11309,
+			11310,
+			11311,
+			11312,
+			11313,
+			11314,
+			11315,
+			11321,
+			11322,
+			11323,
+			11324,
+			11331,
+			11332,
+			11333,
+			11334,
+			11335,
+			11336,
+			11341,
+			11342,
+			11343,
+			11344,
+			11345,
+			11346,
+			11347,
+			11348,
+			11349,
+			11350
+		}
+	},
+	get_id_list_by_hide_task = {
+		[2] = {
+			11341,
+			11342,
+			11343,
+			11344,
+			11345,
+			11346,
+			11347,
+			11348,
+			11349,
+			11350
+		},
+		[3] = {
+			11311,
+			11312,
+			11313,
+			11314,
+			11315,
+			11321,
+			11322,
+			11323,
+			11324,
+			11331,
+			11332,
+			11333,
+			11334,
+			11335,
+			11336
 		},
 		{
-			101
+			201,
+			202,
+			10115,
+			10116,
+			10117,
+			10118,
+			10302,
+			10303,
+			10304,
+			10305,
+			10306,
+			10307,
+			10308,
+			10309,
+			10310,
+			10311,
+			10312,
+			10313,
+			10314,
+			10315,
+			10320,
+			10321,
+			10322,
+			10325,
+			10326,
+			10327,
+			10328,
+			10329,
+			10330,
+			10331,
+			10332,
+			10333,
+			10334,
+			10350,
+			10352,
+			10353,
+			10354,
+			10355,
+			10356,
+			10357,
+			10358,
+			10359,
+			10360,
+			10361,
+			10362,
+			10401,
+			10402,
+			10403,
+			10404,
+			11199,
+			11307,
+			11308,
+			11309,
+			11310
+		},
+		[0] = {
+			101,
+			10101,
+			10102,
+			10103,
+			10104,
+			10105,
+			10106,
+			10107,
+			10108,
+			10109,
+			10110,
+			10111,
+			10112,
+			10113,
+			10114,
+			10345,
+			10346,
+			10347,
+			10348,
+			11101,
+			11102,
+			11103,
+			11104,
+			11105,
+			11106,
+			11107,
+			11108,
+			11109,
+			11201,
+			11202,
+			11203,
+			11206,
+			11207,
+			11208,
+			11209,
+			11211,
+			11212,
+			11213,
+			11216,
+			11217,
+			11218,
+			11219
 		}
 	},
 	all = {
@@ -1890,6 +3474,59 @@
 		10401,
 		10402,
 		10403,
-		10404
+		10404,
+		11199,
+		11101,
+		11102,
+		11103,
+		11104,
+		11105,
+		11106,
+		11107,
+		11108,
+		11109,
+		11201,
+		11202,
+		11203,
+		11206,
+		11207,
+		11208,
+		11209,
+		11211,
+		11212,
+		11213,
+		11216,
+		11217,
+		11218,
+		11219,
+		11307,
+		11308,
+		11309,
+		11310,
+		11311,
+		11312,
+		11313,
+		11314,
+		11315,
+		11321,
+		11322,
+		11323,
+		11324,
+		11331,
+		11332,
+		11333,
+		11334,
+		11335,
+		11336,
+		11341,
+		11342,
+		11343,
+		11344,
+		11345,
+		11346,
+		11347,
+		11348,
+		11349,
+		11350
 	}
 }

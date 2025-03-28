@@ -21,6 +21,28 @@
 		plot_title = {},
 		plot_id = {}
 	},
+	[1211] = {
+		display_model_id = "1211ui_display",
+		name = "魂羽·源",
+		portrait = 2112111,
+		video_url = "",
+		hero = 1211,
+		gift = "",
+		desc = "综合考量修正者的能力和个人需求设计定制的作战服，在不影响体感的基础上，能保证作战能力的全部发挥。",
+		skin_level = 0,
+		ui_has_timeline = 1,
+		home_weapon_show = 0,
+		ui_modelId = "1211ui_tpose",
+		picture_id = "1211",
+		weapon_modelId = "1211ui_weapon",
+		display_type = 1,
+		id = 1211,
+		modelId = "1211ui_light",
+		main_model_id = "1211ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
 	[1015] = {
 		display_model_id = "1015ui_display",
 		name = "狂狮·源",
@@ -765,6 +787,28 @@
 		id = 105501,
 		modelId = "105501ui_light",
 		main_model_id = "105501ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
+	[105502] = {
+		display_model_id = "105502ui_display",
+		name = "庆典遐思",
+		portrait = 2110553,
+		video_url = "",
+		hero = 1055,
+		gift = "",
+		desc = "笹波女孩在节庆或是祭典时会穿的衣服，是因为要和管理员一起造访神社，暗御津羽特意换上的。\n「来来来，先帮我看看腰带系歪了没有。」",
+		skin_level = 0,
+		ui_has_timeline = 1,
+		home_weapon_show = 0,
+		ui_modelId = "105502ui_tpose",
+		picture_id = "105502",
+		weapon_modelId = "1055ui_weapon",
+		display_type = 1,
+		id = 105502,
+		modelId = "105502ui_light",
+		main_model_id = "105502ui_main",
 		unlock_id_list = {},
 		plot_title = {},
 		plot_id = {}
@@ -3211,6 +3255,94 @@
 		plot_title = {},
 		plot_id = {}
 	},
+	[1073] = {
+		display_model_id = "1073ui_display",
+		name = "巧构·源",
+		portrait = 2110731,
+		video_url = "",
+		hero = 1073,
+		gift = "",
+		desc = "综合考量修正者的能力和个人需求设计定制的作战服，在不影响体感的基础上，能保证作战能力的全部发挥。",
+		skin_level = 0,
+		ui_has_timeline = 0,
+		home_weapon_show = 0,
+		ui_modelId = "1073ui_tpose",
+		picture_id = "1073",
+		weapon_modelId = "1073ui_weapon",
+		display_type = 1,
+		id = 1073,
+		modelId = "1073ui_light",
+		main_model_id = "1073ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
+	[107301] = {
+		display_model_id = "107301ui_display",
+		name = "岁华似锦",
+		portrait = 2110732,
+		video_url = "",
+		hero = 1073,
+		gift = "",
+		desc = "回到家乡的麟钰换上了旧时的服饰，绣衣簪花，街头贩货，为刺桐港南来北往的街市添了一抹清丽的光彩。\n「一起出去玩？那你得先照顾一下我的生意才行~」",
+		skin_level = 0,
+		ui_has_timeline = 1,
+		home_weapon_show = 0,
+		ui_modelId = "107301ui_tpose",
+		picture_id = "107301",
+		weapon_modelId = "1073ui_weapon",
+		display_type = 1,
+		id = 107301,
+		modelId = "107301ui_light",
+		main_model_id = "107301ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
+	[1085] = {
+		display_model_id = "1085ui_display",
+		name = "绮望·源",
+		portrait = 2110851,
+		video_url = "",
+		hero = 1085,
+		gift = "",
+		desc = "综合考量修正者的能力和个人需求设计定制的作战服，在不影响体感的基础上，能保证作战能力的全部发挥。",
+		skin_level = 0,
+		ui_has_timeline = 0,
+		home_weapon_show = 0,
+		ui_modelId = "1085ui_tpose",
+		picture_id = "1085",
+		weapon_modelId = "1085ui_weapon",
+		display_type = 1,
+		id = 1085,
+		modelId = "1085ui_light",
+		main_model_id = "1085ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
+	[108501] = {
+		display_model_id = "108501ui_display",
+		name = "梦的伊始",
+		portrait = 2110852,
+		video_url = "",
+		hero = 1085,
+		gift = "",
+		desc = "不是适逢其会的偶然，而是命运的必然。无论命运的轮盘重启多少次，诗蔻蒂都会在那家服装店里穿着这身衣服——遇到你。",
+		skin_level = 0,
+		ui_has_timeline = 1,
+		home_weapon_show = 0,
+		ui_modelId = "108501ui_tpose",
+		picture_id = "108501",
+		weapon_modelId = "1085ui_weapon",
+		display_type = 2,
+		id = 108501,
+		modelId = "108501ui_light",
+		main_model_id = "108501ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
 	[101201] = {
 		display_model_id = "101201ui_display",
 		name = "倚新妆",
@@ -3541,6 +3673,28 @@
 		plot_title = {},
 		plot_id = {}
 	},
+	[6141] = {
+		display_model_id = "2079ui_tpose",
+		name = "科尔盖士兵",
+		portrait = 0,
+		video_url = "",
+		hero = 6141,
+		gift = "",
+		desc = "综合考量修正者的能力和个人需求设计定制的作战服，在不影响体感的基础上，能保证作战能力的全部发挥。",
+		skin_level = 0,
+		ui_has_timeline = 0,
+		home_weapon_show = 0,
+		ui_modelId = "2079ui_tpose",
+		picture_id = "6141",
+		weapon_modelId = "2079ui_tpose",
+		display_type = 2,
+		id = 6141,
+		modelId = "2079ui_tpose",
+		main_model_id = "2079ui_tpose",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
 	[10051] = {
 		display_model_id = "10051ui_light",
 		name = "薇儿觉醒主线",
@@ -3647,6 +3801,28 @@
 		id = 10097,
 		modelId = "1197ui_light",
 		main_model_id = "1197ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
+	[10142] = {
+		display_model_id = "1111ui_display",
+		name = "残缺冥王",
+		portrait = 0,
+		video_url = "",
+		hero = 10142,
+		gift = "",
+		desc = "综合考量修正者的能力和个人需求设计定制的作战服，在不影响体感的基础上，能保证作战能力的全部发挥。",
+		skin_level = 0,
+		ui_has_timeline = 0,
+		home_weapon_show = 0,
+		ui_modelId = "1111ui_tpose",
+		picture_id = "1111",
+		weapon_modelId = "1111ui_weapon",
+		display_type = 2,
+		id = 10142,
+		modelId = "1111ui_light",
+		main_model_id = "1111ui_main",
 		unlock_id_list = {},
 		plot_title = {},
 		plot_id = {}
@@ -5499,6 +5675,28 @@
 		modelId = "",
 		main_model_id = ""
 	},
+	[5197] = {
+		display_model_id = "",
+		name = "",
+		portrait = 0,
+		unlock_id_list = "",
+		video_url = "",
+		hero = 5197,
+		gift = "",
+		desc = "",
+		skin_level = 0,
+		ui_has_timeline = 0,
+		home_weapon_show = 0,
+		plot_title = "",
+		ui_modelId = "",
+		picture_id = "",
+		weapon_modelId = "",
+		plot_id = "",
+		display_type = 0,
+		id = 5197,
+		modelId = "",
+		main_model_id = ""
+	},
 	[5199] = {
 		display_model_id = "",
 		name = "",
@@ -5606,6 +5804,28 @@
 		plot_id = "",
 		display_type = 0,
 		id = 6112,
+		modelId = "",
+		main_model_id = ""
+	},
+	[6133] = {
+		display_model_id = "",
+		name = "",
+		portrait = 0,
+		unlock_id_list = "",
+		video_url = "",
+		hero = 6133,
+		gift = "",
+		desc = "",
+		skin_level = 0,
+		ui_has_timeline = 0,
+		home_weapon_show = 0,
+		plot_title = "",
+		ui_modelId = "",
+		picture_id = "",
+		weapon_modelId = "",
+		plot_id = "",
+		display_type = 0,
+		id = 6133,
 		modelId = "",
 		main_model_id = ""
 	},
@@ -5735,6 +5955,9 @@
 		[9049] = {
 			904901
 		},
+		[6133] = {
+			6133
+		},
 		[6112] = {
 			6112
 		},
@@ -5749,6 +5972,9 @@
 		},
 		[5199] = {
 			5199
+		},
+		[5197] = {
+			5197
 		},
 		[5095] = {
 			5095
@@ -6002,6 +6228,9 @@
 		[2017] = {
 			2017
 		},
+		[10142] = {
+			10142
+		},
 		[10097] = {
 			10097
 		},
@@ -6016,6 +6245,9 @@
 		},
 		[10051] = {
 			10051
+		},
+		[6141] = {
+			6141
 		},
 		[6138] = {
 			6138
@@ -6056,6 +6288,14 @@
 		[6056] = {
 			6056,
 			605601
+		},
+		[1085] = {
+			1085,
+			108501
+		},
+		[1073] = {
+			1073,
+			107301
 		},
 		[1012] = {
 			1012,
@@ -6277,7 +6517,8 @@
 		},
 		[1055] = {
 			1055,
-			105501
+			105501,
+			105502
 		},
 		[1150] = {
 			1150,
@@ -6348,12 +6589,16 @@
 			101501,
 			101502
 		},
+		[1211] = {
+			1211
+		},
 		[1011] = {
 			1011
 		}
 	},
 	all = {
 		1011,
+		1211,
 		1015,
 		101501,
 		101502,
@@ -6388,6 +6633,7 @@
 		115002,
 		1055,
 		105501,
+		105502,
 		1056,
 		1058,
 		105804,
@@ -6498,6 +6744,10 @@
 		1034,
 		103401,
 		1012,
+		1073,
+		107301,
+		1085,
+		108501,
 		101201,
 		6056,
 		605601,
@@ -6513,11 +6763,13 @@
 		6111,
 		6117,
 		6138,
+		6141,
 		10051,
 		10055,
 		10056,
 		10079,
 		10097,
+		10142,
 		2017,
 		2018,
 		2019,
@@ -6602,11 +6854,13 @@
 		5055,
 		5067,
 		5095,
+		5197,
 		5199,
 		65535,
 		6108,
 		6109,
 		6112,
+		6133,
 		904901,
 		905501,
 		906001,

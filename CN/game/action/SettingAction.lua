@@ -47,16 +47,32 @@ function var_0_0.DeployPicSetting(arg_6_0, arg_6_1)
 	local var_6_0 = {}
 
 	if arg_6_0 == "picOptionId" and arg_6_1 ~= SettingConst.GRAPHIC_CUSTOM_ID then
-		local var_6_1 = PictureQualitySettingPcCfg[arg_6_1]
+		if GameToSDK.IsPCPlatform() then
+			local var_6_1 = PictureQualitySettingPcCfg[arg_6_1]
 
-		var_6_0.picOptionId = var_6_1.id
-		var_6_0.user_effect = var_6_1.user_effect
-		var_6_0.teammate_effect = var_6_1.teammate_effect
-		var_6_0.frame = var_6_1.frame
-		var_6_0.shadow = var_6_1.shadow
-		var_6_0.post_process = var_6_1.post_process
-		var_6_0.anti_aliasing = var_6_1.anti_aliasing
-		var_6_0.vertical_sync = var_6_1.vertical_sync
+			var_6_0.picOptionId = var_6_1.id
+			var_6_0.user_effect = var_6_1.user_effect
+			var_6_0.teammate_effect = var_6_1.teammate_effect
+			var_6_0.frame = var_6_1.frame
+			var_6_0.shadow = var_6_1.shadow
+			var_6_0.post_process = var_6_1.post_process
+			var_6_0.anti_aliasing = var_6_1.anti_aliasing
+			var_6_0.vertical_sync = var_6_1.vertical_sync
+		else
+			local var_6_2 = PictureQualitySettingCfg[arg_6_1]
+
+			var_6_0.picOptionId = var_6_2.id
+			var_6_0.resolution = var_6_2.resolution
+			var_6_0.frame = var_6_2.frame
+			var_6_0.high_quality = var_6_2.high_quality
+			var_6_0.anti_aliasing = var_6_2.anti_aliasing
+			var_6_0.distortion_effect = var_6_2.distortion_effect
+			var_6_0.reflection_effect = var_6_2.reflection_effect
+			var_6_0.physical_simulation = var_6_2.physical_simulation
+			var_6_0.teammate_effect = var_6_2.teammate_effect
+			var_6_0.user_effect = var_6_2.user_effect
+			var_6_0.super_resolution_enable = var_6_2.super_resolution_enable
+		end
 	elseif arg_6_0 == "allData" then
 		var_6_0 = arg_6_1
 	else
@@ -68,10 +84,10 @@ function var_0_0.DeployPicSetting(arg_6_0, arg_6_1)
 	PlayerPrefs.SetInt("allowHDR", 1)
 
 	if var_6_0.resolution then
-		local var_6_2 = tonumber(var_6_0.resolution)
-		local var_6_3, var_6_4 = SettingTools.GetSettingScreenSize(var_6_2)
+		local var_6_3 = tonumber(var_6_0.resolution)
+		local var_6_4, var_6_5 = SettingTools.GetSettingScreenSize(var_6_3)
 
-		Screen.SetResolution(var_6_3, var_6_4, true)
+		Screen.SetResolution(var_6_4, var_6_5, true)
 	elseif var_6_0.pc_resolution then
 		Screen.SetResolution(var_6_0.pc_resolution[1], var_6_0.pc_resolution[2], Screen.fullScreenMode)
 	elseif var_6_0.anti_aliasing then
@@ -81,9 +97,13 @@ function var_0_0.DeployPicSetting(arg_6_0, arg_6_1)
 			UnityEngine.Pipelines.SimPipeline.SimPipelineSettings.AliasingEnable = true
 		end
 	elseif var_6_0.frame then
-		local var_6_5 = SettingConst.TARGET_FRAME_RATE[var_6_0.frame] or 60
+		if GameToSDK.IsPCPlatform() then
+			local var_6_6 = SettingConst.TARGET_FRAME_RATE[var_6_0.frame] or 60
 
-		Application.targetFrameRate = var_6_5
+			Application.targetFrameRate = var_6_6
+		else
+			Application.targetFrameRate = var_6_0.frame == 0 and 30 or var_6_0.frame == 1 and 60 or 120
+		end
 	elseif var_6_0.window then
 		Screen.fullScreenMode = SettingTools.NumToFullScreenType(var_6_0.window)
 	elseif var_6_0.vertical_sync then
@@ -94,6 +114,8 @@ function var_0_0.DeployPicSetting(arg_6_0, arg_6_1)
 		manager.IngameGraphic:ChangePostProcessQuality(var_6_0.post_process)
 	elseif var_6_0.render_scale then
 		manager.IngameGraphic:ChangeRenderScale(var_6_0.render_scale)
+	elseif var_6_0.depth_of_field_enable then
+		manager.IngameGraphic:ChangeDof(var_6_0.depth_of_field_enable)
 	end
 end
 

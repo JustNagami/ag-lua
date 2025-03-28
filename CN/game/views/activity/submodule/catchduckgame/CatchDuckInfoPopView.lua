@@ -44,7 +44,7 @@ function var_0_0.SwitchPage(arg_9_0, arg_9_1)
 
 	arg_9_0.nameText_.text = var_9_0.name
 	arg_9_0.descText_.text = var_9_0.desc
-	arg_9_0.icon_.sprite = getSpriteWithoutAtlas(var_9_0.icon)
+	arg_9_0.icon_.sprite = pureGetSpriteWithoutAtlas(var_9_0.icon)
 	arg_9_0.leftBtn_.enabled = arg_9_1 > 1
 	arg_9_0.rightBtn_.enabled = arg_9_1 < #arg_9_0.duckList_
 

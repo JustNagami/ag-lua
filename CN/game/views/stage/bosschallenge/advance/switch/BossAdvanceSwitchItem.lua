@@ -68,7 +68,7 @@ function var_0_0.RefreshUI(arg_11_0)
 	local var_11_0 = BattleBossChallengeAdvanceData:GetBossList()[arg_11_0.bossIndex_]
 	local var_11_1 = BossChallengeUICfg[var_11_0.templateID]
 
-	arg_11_0.icon_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.BossLittlePaint.path, var_11_1.icon))
+	arg_11_0.icon_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.BossLittlePaint.path, var_11_1.icon))
 	arg_11_0.nameText_.text = GetI18NText(var_11_1.main_name)
 	arg_11_0.weaknessText_.text = GetI18NText(var_11_1.weakness)
 	arg_11_0.numText_.text = string.format("NO.%02d", arg_11_0.bossIndex_)

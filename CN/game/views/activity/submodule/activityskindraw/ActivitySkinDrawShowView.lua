@@ -37,13 +37,13 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2)
 
 	if var_6_2.type == ItemConst.ITEM_TYPE.DYNAMIC_STICKER then
 		local var_6_4 = var_6_2.param[1]
-		local var_6_5 = ChatStickerCfg[var_6_4].icon .. SettingData:GetCurrentLanguageKey()
+		local var_6_5 = ChatStickerCfg[var_6_4]
 
-		arg_6_0.dynamicStickerGo_ = Object.Instantiate(Asset.Load(var_6_5), arg_6_0.dynamicTf_)
+		arg_6_0.dynamicStickerGo_ = Object.Instantiate(Asset.Load(var_6_5.icon), arg_6_0.dynamicTf_)
 
 		arg_6_0.typeCon_:SetSelectedState("dynamic")
 	elseif var_6_2.type == ItemConst.ITEM_TYPE.HERO_SKIN then
-		arg_6_0.role_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_6_1)
+		arg_6_0.role_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_6_1)
 
 		arg_6_0.typeCon_:SetSelectedState("skin")
 	else

@@ -80,7 +80,7 @@ function var_0_0.RefreshUI(arg_10_0)
 		arg_10_0.descText_.text = var_10_0.super_plot_tip
 	end
 
-	arg_10_0.roleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_10_0.plot_tip_picture)
+	arg_10_0.roleImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_10_0.plot_tip_picture)
 	arg_10_0.roleNameText_.text = var_10_1.suffix
 end
 

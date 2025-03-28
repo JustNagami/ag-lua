@@ -64,61 +64,67 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 	arg_5_0:UpdateView()
 end
 
-function var_0_0.UpdateView(arg_6_0)
-	arg_6_0.skinItem:SetData(arg_6_0.data)
-	arg_6_0.dlcItem:SetData(arg_6_0.dlcID, arg_6_0.skinID, arg_6_0.goodID)
-	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_6_0.transform_)
-	arg_6_0:UpdateTimerView()
+function var_0_0.SetCallBack(arg_6_0, arg_6_1)
+	arg_6_0.callBack_ = arg_6_1
 end
 
-function var_0_0.UpdateTimerView(arg_7_0)
-	arg_7_0.skinItem:UpdateTimerView()
-	arg_7_0.dlcItem:UpdateTimerView()
+function var_0_0.UpdateView(arg_7_0)
+	arg_7_0.skinItem:SetData(arg_7_0.data)
+	arg_7_0.dlcItem:SetData(arg_7_0.dlcID, arg_7_0.skinID, arg_7_0.goodID)
+	arg_7_0.skinItem:SetCallBack(arg_7_0.callBack_, arg_7_0.index)
+	arg_7_0.dlcItem:SetCallBack(arg_7_0.callBack_, arg_7_0.index)
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_7_0.transform_)
+	arg_7_0:UpdateTimerView()
 end
 
-function var_0_0.OnEnter(arg_8_0)
-	arg_8_0:UpdateView()
+function var_0_0.UpdateTimerView(arg_8_0)
+	arg_8_0.skinItem:UpdateTimerView()
+	arg_8_0.dlcItem:UpdateTimerView()
 end
 
-function var_0_0.OnExit(arg_9_0)
-	arg_9_0.skinItem:OnExit()
-	arg_9_0.dlcItem:OnExit()
-	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_9_0.transform_)
+function var_0_0.OnEnter(arg_9_0)
+	arg_9_0:UpdateView()
 end
 
-function var_0_0.Dispose(arg_10_0)
-	arg_10_0.skinItem:Dispose()
-	arg_10_0.dlcItem:Dispose()
-	var_0_0.super.Dispose(arg_10_0)
-	Object.Destroy(arg_10_0.gameObject_)
+function var_0_0.OnExit(arg_10_0)
+	arg_10_0.skinItem:OnExit()
+	arg_10_0.dlcItem:OnExit()
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_10_0.transform_)
 end
 
-function var_0_0.GetItemHeight(arg_11_0)
-	return arg_11_0.rectGo_.sizeDelta.x
+function var_0_0.Dispose(arg_11_0)
+	arg_11_0.skinItem:Dispose()
+	arg_11_0.dlcItem:Dispose()
+	var_0_0.super.Dispose(arg_11_0)
+	Object.Destroy(arg_11_0.gameObject_)
 end
 
-function var_0_0.SetAsLastSibling(arg_12_0)
-	arg_12_0.transform_:SetAsLastSibling()
+function var_0_0.GetItemHeight(arg_12_0)
+	return arg_12_0.rectGo_.sizeDelta.x
 end
 
-function var_0_0.SetAsFirstSibling(arg_13_0)
-	arg_13_0.transform_:SetAsFirstSibling()
+function var_0_0.SetAsLastSibling(arg_13_0)
+	arg_13_0.transform_:SetAsLastSibling()
 end
 
-function var_0_0.GetIndex(arg_14_0)
-	return arg_14_0.index
+function var_0_0.SetAsFirstSibling(arg_14_0)
+	arg_14_0.transform_:SetAsFirstSibling()
 end
 
-function var_0_0.IsActive(arg_15_0)
+function var_0_0.GetIndex(arg_15_0)
+	return arg_15_0.index
+end
+
+function var_0_0.IsActive(arg_16_0)
 	return true
 end
 
-function var_0_0.IsTimeBar(arg_16_0)
+function var_0_0.IsTimeBar(arg_17_0)
 	return false
 end
 
-function var_0_0.Show(arg_17_0, arg_17_1)
-	SetActive(arg_17_0.gameObject_, arg_17_1)
+function var_0_0.Show(arg_18_0, arg_18_1)
+	SetActive(arg_18_0.gameObject_, arg_18_1)
 end
 
 return var_0_0

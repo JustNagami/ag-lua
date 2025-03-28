@@ -62,7 +62,7 @@ function var_0_0.RefreshUI(arg_8_0)
 	else
 		local var_8_0 = HeroClueCfg[arg_8_0.clueID_]
 
-		arg_8_0.clueIcon_.sprite = getSpriteWithoutAtlas(var_8_0.icon_path)
+		arg_8_0.clueIcon_.sprite = pureGetSpriteWithoutAtlas(var_8_0.icon_path)
 
 		if arg_8_0.curData_.level < 2 then
 			arg_8_0.nameText_.text = GetTips("ACTIVITY_HERO_CLUE_NICK_TITLE")

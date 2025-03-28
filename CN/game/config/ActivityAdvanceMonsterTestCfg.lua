@@ -14,6 +14,21 @@
 			"Widget/System/BossTestUI/popUI/60550950"
 		}
 	},
+	[51990] = {
+		stage_id = 60551990,
+		type = 1,
+		base_point = 1000,
+		activity_id = 51990,
+		order = 4,
+		boss_list = {
+			5199
+		},
+		pool = {},
+		multiple_affix = {},
+		level_describe = {
+			"Widget/System/BossTestUI/popUI/60551990"
+		}
+	},
 	[51380] = {
 		stage_id = 60551380,
 		type = 0,
@@ -156,10 +171,10 @@
 	},
 	[40460] = {
 		stage_id = 60540460,
-		type = 1,
+		type = 0,
 		base_point = 1000,
 		activity_id = 40460,
-		order = 2,
+		order = 40460,
 		boss_list = {
 			4046
 		},
@@ -231,10 +246,10 @@
 	},
 	[5230124] = {
 		stage_id = 60500003,
-		type = 1,
+		type = 0,
 		base_point = 1000,
 		activity_id = 5230124,
-		order = 1,
+		order = 5230124,
 		boss_list = {
 			4046
 		},
@@ -244,10 +259,57 @@
 			"Widget/System/BossTestUI/popUI/60500003"
 		}
 	},
+	[1032123] = {
+		stage_id = 60500004,
+		type = 1,
+		base_point = 1000,
+		activity_id = 1032123,
+		order = 1,
+		boss_list = {
+			4047
+		},
+		pool = {},
+		multiple_affix = {},
+		level_describe = {
+			"Widget/System/BossTestUI/popUI/60500004"
+		}
+	},
+	[1032125] = {
+		stage_id = 60500005,
+		type = 1,
+		base_point = 1000,
+		activity_id = 1032125,
+		order = 2,
+		boss_list = {
+			4047
+		},
+		pool = {},
+		multiple_affix = {},
+		level_describe = {
+			"Widget/System/BossTestUI/popUI/60500005"
+		}
+	},
+	[1032113] = {
+		stage_id = 60500006,
+		type = 1,
+		base_point = 1000,
+		activity_id = 1032113,
+		order = 3,
+		boss_list = {
+			1032113
+		},
+		pool = {},
+		multiple_affix = {},
+		level_describe = {
+			"Widget/System/BossTestUI/popUI/60500006"
+		}
+	},
 	get_id_list_by_type = {
 		{
-			40460,
-			5230124
+			51990,
+			1032123,
+			1032125,
+			1032113
 		},
 		[0] = {
 			50950,
@@ -261,14 +323,17 @@
 			40440,
 			40441,
 			40442,
+			40460,
 			30490,
 			30510,
 			1032012,
-			5230111
+			5230111,
+			5230124
 		}
 	},
 	all = {
 		50950,
+		51990,
 		51380,
 		2,
 		40200,
@@ -284,6 +349,9 @@
 		30510,
 		1032012,
 		5230111,
-		5230124
+		5230124,
+		1032123,
+		1032125,
+		1032113
 	}
 }

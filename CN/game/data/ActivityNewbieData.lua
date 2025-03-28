@@ -9,7 +9,7 @@ function var_0_0.Init(arg_1_0)
 	arg_1_0.rechargeStatus_ = {}
 	arg_1_0.firstRechargeRewardStatus_ = {}
 	arg_1_0.firstMonthlyCardStatus_ = {}
-	arg_1_0.bpRewardStatus_ = 0
+	arg_1_0.firstBattlePassStatus_ = {}
 end
 
 function var_0_0.InitData(arg_2_0, arg_2_1)
@@ -115,7 +115,9 @@ function var_0_0.UpdateRecharge(arg_15_0, arg_15_1)
 		firstGearStatus = var_15_0.first_gear_recharge_reward,
 		secondGearStatus = var_15_0.second_gear_recharge_flag,
 		signTimes = var_15_0.now_sign_times,
-		lastSignTimestamp = var_15_0.last_sign_timestamp
+		lastSignTimestamp = var_15_0.last_sign_timestamp,
+		firstGearNewTag = var_15_0.is_new_recharge_6,
+		secondGearNewTag = var_15_0.is_new_recharge_18
 	}
 
 	local var_15_1 = arg_15_1.first_monthly_card_reward
@@ -126,7 +128,13 @@ function var_0_0.UpdateRecharge(arg_15_0, arg_15_1)
 		signTimes = var_15_1.sign_times,
 		signRewardFlag = var_15_1.sign_reward_flag
 	}
-	arg_15_0.bpRewardStatus_ = arg_15_1.first_battlepass_reward
+
+	local var_15_2 = arg_15_1.first_battlepass_reward
+
+	arg_15_0.firstBattlePassStatus_ = {
+		bpRewardStatus = var_15_2.first_battlepass_reward,
+		battlePassNewTag = var_15_2.is_new_battlepass_reward
+	}
 end
 
 function var_0_0.GetFirstRechargeStatus(arg_16_0)
@@ -158,24 +166,28 @@ function var_0_0.SetMonthlyCardSign(arg_20_0)
 	return
 end
 
-function var_0_0.GetBpRewardStatus(arg_21_0)
-	return arg_21_0.bpRewardStatus_
+function var_0_0.GetBattlePassStatus(arg_21_0)
+	return arg_21_0.firstBattlePassStatus_
 end
 
-function var_0_0.SetBpRewardStatus(arg_22_0)
-	arg_22_0.bpRewardStatus_ = 2
+function var_0_0.GetBpRewardStatus(arg_22_0)
+	return arg_22_0.firstBattlePassStatus_.bpRewardStatus
 end
 
-function var_0_0.GetRechargeStatus(arg_23_0)
-	return arg_23_0.rechargeStatus_
+function var_0_0.SetBpRewardStatus(arg_23_0)
+	arg_23_0.firstBattlePassStatus_.bpRewardStatus = 2
 end
 
-function var_0_0.GetNewbieOpenTime(arg_24_0)
-	return arg_24_0.trigger_time
+function var_0_0.GetRechargeStatus(arg_24_0)
+	return arg_24_0.rechargeStatus_
 end
 
-function var_0_0.SetNewbieOpenTime(arg_25_0, arg_25_1)
-	arg_25_0.trigger_time = arg_25_1
+function var_0_0.GetNewbieOpenTime(arg_25_0)
+	return arg_25_0.trigger_time
+end
+
+function var_0_0.SetNewbieOpenTime(arg_26_0, arg_26_1)
+	arg_26_0.trigger_time = arg_26_1
 end
 
 return var_0_0

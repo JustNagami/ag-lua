@@ -40,7 +40,7 @@ function var_0_0.OnCameraExit()
 
 	manager.ui.mainCameraCom_.fieldOfView = var_0_0.orignalFov or 35
 
-	SetActive(manager.ui.uiMain, true)
+	manager.ui:SetMainActive(true)
 
 	manager.ui.mainCamera.transform.parent = nil
 

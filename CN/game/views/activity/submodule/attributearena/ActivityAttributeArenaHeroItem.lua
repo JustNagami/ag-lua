@@ -21,7 +21,7 @@ function var_0_0.AddUIListener(arg_4_0)
 end
 
 function var_0_0.SetData(arg_5_0, arg_5_1)
-	arg_5_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/Character/LittleIcon/" .. arg_5_1)
+	arg_5_0.m_icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/LittleIcon/" .. arg_5_1)
 end
 
 function var_0_0.Dispose(arg_6_0)

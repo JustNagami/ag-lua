@@ -30,7 +30,7 @@ end
 function var_0_0.Refresh(arg_6_0)
 	local var_6_0 = PolyhedronBeaconCfg[arg_6_0.id]
 
-	arg_6_0.m_icon.sprite = getSpriteWithoutAtlas(PolyhedronConst.BEACON_ICON_PATH .. var_6_0.icon)
+	arg_6_0.m_icon.sprite = pureGetSpriteWithoutAtlas(PolyhedronConst.BEACON_ICON_PATH .. var_6_0.icon)
 	arg_6_0.m_name.text = GetI18NText(var_6_0.name)
 	arg_6_0.m_des.text = GetI18NText(var_6_0.desc)
 

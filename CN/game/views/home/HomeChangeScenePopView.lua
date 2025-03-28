@@ -49,8 +49,8 @@ function var_0_0.OnEnter(arg_9_0)
 	arg_9_0.rightID_ = arg_9_0.params_.right
 	arg_9_0.leftText_.text = HomeSceneSettingCfg[arg_9_0.leftID_].title
 	arg_9_0.rightText_.text = HomeSceneSettingCfg[arg_9_0.rightID_].title
-	arg_9_0.leftIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/SceneChangeUI/item/" .. arg_9_0.leftID_)
-	arg_9_0.rightIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/SceneChangeUI/item/" .. arg_9_0.rightID_)
+	arg_9_0.leftIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/SceneChangeUI/item/" .. arg_9_0.leftID_)
+	arg_9_0.rightIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/SceneChangeUI/item/" .. arg_9_0.rightID_)
 	arg_9_0.desc_.text = GetTips("HOME_SCENE_FORCE_CHANGE")
 
 	arg_9_0:RefreshState()

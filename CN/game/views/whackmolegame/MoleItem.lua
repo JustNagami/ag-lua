@@ -34,7 +34,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2)
 end
 
 function var_0_0.GetSprite(arg_7_0)
-	return getSpriteWithoutAtlas(ActivityMoleCfg[arg_7_0.whackMoleID_].pitcture_path)
+	return pureGetSpriteWithoutAtlas(ActivityMoleCfg[arg_7_0.whackMoleID_].pitcture_path)
 end
 
 return var_0_0

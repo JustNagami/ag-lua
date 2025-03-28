@@ -33,7 +33,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1)
 end
 
 function var_0_0.RefreshUI(arg_6_0)
-	arg_6_0.costImage_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetAttributeIconPath(ChallengeRogueTeamConst.ATTRIBUTE_ENUM.GOLD))
+	arg_6_0.costImage_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetAttributeIconPath(ChallengeRogueTeamConst.ATTRIBUTE_ENUM.GOLD))
 
 	local var_6_0 = ChallengeRogueTeamTools.GetWindowBarText(ChallengeRogueTeamConst.ATTRIBUTE_ENUM.GOLD)
 	local var_6_1 = arg_6_0.itemData_

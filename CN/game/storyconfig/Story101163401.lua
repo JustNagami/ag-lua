@@ -12890,7 +12890,7 @@
 				arg_364_1.allBtn_.enabled = false
 			end
 
-			local var_367_64 = 3.73333333333333
+			local var_367_64 = 1.16666666666667
 
 			if arg_364_1.time_ >= var_367_63 + var_367_64 and arg_364_1.time_ < var_367_63 + var_367_64 + arg_367_0 then
 				arg_364_1.allBtn_.enabled = true
@@ -13097,6 +13097,8 @@
 				SetActive(arg_368_1.allBtn_.gameObject, true)
 				arg_368_1.hideBtnsController_:SetSelectedIndex(0)
 				manager.video:Dispose()
+
+				arg_368_1.isInLoopVideo = false
 			end
 
 			local var_371_36 = 0.0166666666666667

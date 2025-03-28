@@ -54,6 +54,7 @@ function var_0_0.OnEnter(arg_8_0)
 end
 
 function var_0_0.RefreshView(arg_9_0)
+	SetActive(arg_9_0.previewBtn_.gameObject, not IsQworldRunning())
 	arg_9_0:RefreshCommonItem()
 	arg_9_0:RefreshItemInfo()
 	arg_9_0:RefreshLableContent()

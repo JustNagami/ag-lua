@@ -103,6 +103,8 @@ function var_0_0.SetCurrencyValue(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
 
 	if arg_6_1 == CurrencyConst.CURRENCY_TYPE_SHIFTING_EXP then
 		PolyhedronAction.RefreshPolicyRedPoint()
+	elseif arg_6_1 == CurrencyConst.CURRENCY_TYPE_SKULD_TRUST then
+		SkuldSystemData:UpdateSkuldPointRewardRedPoint()
 	end
 
 	manager.notify:Invoke(CURRENCY_UPDATE, arg_6_1, arg_6_3, arg_6_2)

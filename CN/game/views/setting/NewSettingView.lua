@@ -191,6 +191,10 @@ function var_0_0.OnEnter(arg_28_0)
 
 	arg_28_0:SetSelectPage(var_28_1)
 	arg_28_0:RefreshQuitType()
+
+	if arg_28_0.pages.Sound then
+		arg_28_0.pages.Sound:OnEnter()
+	end
 end
 
 function var_0_0.OnExit(arg_30_0)
@@ -204,6 +208,7 @@ function var_0_0.OnExit(arg_30_0)
 		manager.windowBar:HideBar()
 		LuaExchangeHelper.ApplyBattleSetting()
 		arg_30_0:BackFunc()
+		LuaExchangeHelper.ContinueGame()
 	end
 
 	arg_30_0.isSystem_ = nil
@@ -307,7 +312,7 @@ function var_0_0.RefreshUI(arg_35_0)
 
 	arg_35_0.curPage:SetActive(true)
 
-	if arg_35_0.curPage.class == GraphicSettingPCView then
+	if arg_35_0.curPage.class == GraphicSettingPCView or arg_35_0.curPage.class == GraphicSettingView then
 		arg_35_0.curPage:RefreshUI()
 	end
 
@@ -344,8 +349,6 @@ function var_0_0.RefreshQuitType(arg_36_0)
 			else
 				gameContext:DestroyCurRoutes()
 			end
-
-			LuaExchangeHelper.ContinueGame()
 		end)
 	end
 end

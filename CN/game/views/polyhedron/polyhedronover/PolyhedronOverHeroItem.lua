@@ -160,7 +160,7 @@ function var_0_0.SetData(arg_12_0, arg_12_1, arg_12_2)
 	else
 		SetActive(arg_12_0.m_servantGo, true)
 
-		arg_12_0.m_servantIcon.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/Icon438x238/" .. arg_12_0.servant_id)
+		arg_12_0.m_servantIcon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/WeaponServant/Icon438x238/" .. arg_12_0.servant_id)
 	end
 end
 

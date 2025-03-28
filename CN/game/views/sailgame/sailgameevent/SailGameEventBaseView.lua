@@ -61,7 +61,7 @@ function var_0_0.RefreshTitle(arg_11_0)
 	arg_11_0.titleText_.text = SailGameEventCfg[arg_11_0.eventID_].name
 	arg_11_0.descText_.text = SailGameEventCfg[arg_11_0.eventID_].desc
 
-	local var_11_0 = getSpriteWithoutAtlas("TextureConfig/Fishing/FishPortrait/" .. SailGameEventCfg[arg_11_0.eventID_].picture)
+	local var_11_0 = pureGetSpriteWithoutAtlas("TextureConfig/Fishing/FishPortrait/" .. SailGameEventCfg[arg_11_0.eventID_].picture)
 
 	if var_11_0 then
 		arg_11_0.roleIcon_.sprite = var_11_0

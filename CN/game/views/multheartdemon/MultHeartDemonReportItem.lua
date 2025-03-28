@@ -34,14 +34,14 @@ function var_0_0.UpdatePlayer(arg_6_0, arg_6_1)
 	local var_6_1 = HeroStandardSystemCfg[arg_6_1.heroId]
 
 	if var_6_1 then
-		arg_6_0.playerIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_6_1.skin_id)
+		arg_6_0.playerIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_6_1.skin_id)
 		var_6_0 = var_6_1.hero_id
 	else
 		var_6_0 = arg_6_1.heroId
 
 		local var_6_2 = HeroData:GetHeroUsingSkinInfo(var_6_0).id
 
-		arg_6_0.playerIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_6_2)
+		arg_6_0.playerIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_6_2)
 	end
 
 	arg_6_0.playerNameTxt_.text = HeroTools.GetHeroFullName(var_6_0)
@@ -52,7 +52,7 @@ end
 function var_0_0.UpdateAI(arg_7_0, arg_7_1)
 	arg_7_0.aiSlider_.value = arg_7_1.bossHP == 0 and 0 or arg_7_1.bossHP / 100
 	arg_7_0.aiHp_.text = arg_7_1.bossHP .. "%"
-	arg_7_0.aiIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_7_1.bossId - 4000)
+	arg_7_0.aiIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_7_1.bossId - 4000)
 	arg_7_0.aiNameTxt_.text = arg_7_0.nameTable[arg_7_1.bossId]
 end
 
@@ -67,7 +67,7 @@ function var_0_0.UpdateView(arg_8_0)
 		arg_8_0.stateController:SetSelectedState(var_8_0.bossHP == 0 and "true" or "false")
 
 		arg_8_0.scoreTxt_.text = var_8_0.maxScore
-		arg_8_0.timeImg_.sprite = getSpriteWithoutAtlas("TextureBg/Activity_Resident/Acitvity_SoloHeartDemon/SoloHeartDemonUI_" .. 1505 + arg_8_0.index)
+		arg_8_0.timeImg_.sprite = pureGetSpriteWithoutAtlas("TextureBg/Activity_Resident/Acitvity_SoloHeartDemon/SoloHeartDemonUI_" .. 1505 + arg_8_0.index)
 	end
 end
 

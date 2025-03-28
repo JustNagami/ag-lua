@@ -6,23 +6,25 @@ local var_0_4
 local var_0_5
 local var_0_6
 local var_0_7
+local var_0_8
 
 function var_0_0.Init(arg_1_0)
 	var_0_1 = false
 	var_0_2 = {}
 	var_0_3 = 0
+	var_0_4 = 0
 	var_0_2[var_0_3] = {
 		position = {},
 		rotation = {},
 		cameraPosition = {},
 		cameraRotation = {}
 	}
-	var_0_6 = {
+	var_0_7 = {
 		hintsQueue = {},
 		displayDuration = SandplaySettingCfg.pop_hint_display.value[1],
 		intervalDuration = SandplaySettingCfg.pop_hint_interval.value[1]
 	}
-	var_0_7 = {}
+	var_0_8 = {}
 end
 
 function var_0_0.InitData(arg_2_0, arg_2_1)
@@ -44,25 +46,29 @@ function var_0_0.GetQWorldContext(arg_4_0)
 	return var_0_2[var_0_3]
 end
 
-function var_0_0.SetQWorldContext(arg_5_0, ...)
-	local var_5_0 = arg_5_0:GetQWorldContext()
-
-	if not var_5_0 then
-		var_5_0 = clone(var_0_2[0])
-		var_0_2[var_0_3] = var_5_0
-	end
-
-	local var_5_1 = ...
-
-	var_5_0.position = var_5_1.position or var_5_0.position
-	var_5_0.rotation = var_5_1.rotation or var_5_0.rotation
-	var_5_0.cameraPosition = var_5_1.cameraPosition or var_5_0.cameraPosition
-	var_5_0.cameraRotation = var_5_1.cameraRotation or var_5_0.cameraRotation
-	var_5_0.cacheTag = var_5_1.cacheTag or var_5_0.cacheTag
+function var_0_0.GetQWorldContextByMapId(arg_5_0, arg_5_1)
+	return var_0_2[arg_5_1]
 end
 
-function var_0_0.GetCachedPosition(arg_6_0)
-	if not arg_6_0:GetQWorldContext() then
+function var_0_0.SetQWorldContext(arg_6_0, ...)
+	local var_6_0 = arg_6_0:GetQWorldContext()
+
+	if not var_6_0 then
+		var_6_0 = clone(var_0_2[0])
+		var_0_2[var_0_3] = var_6_0
+	end
+
+	local var_6_1 = ...
+
+	var_6_0.position = var_6_1.position or var_6_0.position
+	var_6_0.rotation = var_6_1.rotation or var_6_0.rotation
+	var_6_0.cameraPosition = var_6_1.cameraPosition or var_6_0.cameraPosition
+	var_6_0.cameraRotation = var_6_1.cameraRotation or var_6_0.cameraRotation
+	var_6_0.cacheTag = var_6_1.cacheTag or var_6_0.cacheTag
+end
+
+function var_0_0.GetCachedPosition(arg_7_0)
+	if not arg_7_0:GetQWorldContext() then
 		return {
 			0,
 			0,
@@ -70,13 +76,13 @@ function var_0_0.GetCachedPosition(arg_6_0)
 		}
 	end
 
-	local var_6_0 = arg_6_0:GetQWorldContext().position
+	local var_7_0 = arg_7_0:GetQWorldContext().position
 
-	if var_6_0 and var_6_0.x then
+	if var_7_0 and var_7_0.x then
 		return {
-			var_6_0.x,
-			var_6_0.y,
-			var_6_0.z
+			var_7_0.x,
+			var_7_0.y,
+			var_7_0.z
 		}
 	end
 
@@ -87,117 +93,137 @@ function var_0_0.GetCachedPosition(arg_6_0)
 	}
 end
 
-function var_0_0.GetCurMapId(arg_7_0)
+function var_0_0.GetCurMapId(arg_8_0)
 	return var_0_3
 end
 
-function var_0_0.SetCurMapId(arg_8_0, arg_8_1)
-	var_0_3 = arg_8_1
+function var_0_0.SetCurMapId(arg_9_0, arg_9_1)
+	var_0_3 = arg_9_1
 end
 
-function var_0_0.SetCurSceneName(arg_9_0, arg_9_1)
-	var_0_4 = arg_9_1
+function var_0_0.SetCurActivityId(arg_10_0, arg_10_1)
+	var_0_4 = arg_10_1
 end
 
-function var_0_0.GetCurSceneName(arg_10_0)
+function var_0_0.GetCurActivityId(arg_11_0)
 	return var_0_4
 end
 
-function var_0_0.SetCurHomeBgmId(arg_11_0, arg_11_1)
-	var_0_5 = arg_11_1
+function var_0_0.SetCurSceneName(arg_12_0, arg_12_1)
+	var_0_5 = arg_12_1
 end
 
-function var_0_0.GetCurHomeBgmId(arg_12_0)
-	return var_0_5 or 0
+function var_0_0.GetCurSceneName(arg_13_0)
+	return var_0_5
 end
 
-function var_0_0.SetIsBackQWorld(arg_13_0, arg_13_1)
-	var_0_1 = arg_13_1
+function var_0_0.SetCurHomeBgmId(arg_14_0, arg_14_1)
+	var_0_6 = arg_14_1
 end
 
-function var_0_0.GetIsBackQWorld(arg_14_0)
+function var_0_0.GetCurHomeBgmId(arg_15_0)
+	return var_0_6 or 0
+end
+
+function var_0_0.SetIsBackQWorld(arg_16_0, arg_16_1)
+	var_0_1 = arg_16_1
+end
+
+function var_0_0.GetIsBackQWorld(arg_17_0)
 	return var_0_1
 end
 
-function var_0_0.SetCacheTag(arg_15_0, arg_15_1)
-	local var_15_0 = arg_15_0:GetQWorldContext()
+function var_0_0.SetCacheTag(arg_18_0, arg_18_1)
+	local var_18_0 = arg_18_0:GetQWorldContext()
 
-	if not var_15_0 then
+	if not var_18_0 then
 		return
 	end
 
-	var_15_0.cacheTag = arg_15_1
+	var_18_0.cacheTag = arg_18_1
 end
 
-function var_0_0.GetCacheTag(arg_16_0)
-	local var_16_0 = arg_16_0:GetQWorldContext()
+function var_0_0.GetCacheTag(arg_19_0)
+	local var_19_0 = arg_19_0:GetQWorldContext()
 
-	if not var_16_0 then
+	if not var_19_0 then
 		return
 	end
 
-	return var_16_0.cacheTag
+	return var_19_0.cacheTag
 end
 
-function var_0_0.ClearIsBack(arg_17_0)
-	local var_17_0 = arg_17_0:GetQWorldContext()
+function var_0_0.ClearIsBack(arg_20_0)
+	local var_20_0 = arg_20_0:GetQWorldContext()
 
-	if var_17_0 then
-		var_17_0.cacheTag = nil
+	if var_20_0 then
+		var_20_0.cacheTag = nil
 	end
 
 	var_0_1 = false
 end
 
-function var_0_0.GetHintData(arg_18_0)
-	return var_0_6
+function var_0_0.GetHintData(arg_21_0)
+	return var_0_7
 end
 
-function var_0_0.AddHint(arg_19_0, arg_19_1)
-	table.insert(var_0_6.hintsQueue, arg_19_1)
+function var_0_0.AddHint(arg_22_0, arg_22_1)
+	table.insert(var_0_7.hintsQueue, arg_22_1)
 	manager.notify:Invoke(QWORLD_HINT_UPDATE)
 end
 
-function var_0_0.PopHint(arg_20_0)
-	return table.remove(var_0_6.hintsQueue, 1)
+function var_0_0.PopHint(arg_23_0)
+	return table.remove(var_0_7.hintsQueue, 1)
 end
 
-function var_0_0.HasHints(arg_21_0)
-	return #var_0_6.hintsQueue > 0
+function var_0_0.HasHints(arg_24_0)
+	return #var_0_7.hintsQueue > 0
 end
 
-function var_0_0.AddItemHint(arg_22_0, arg_22_1)
-	table.insert(var_0_7, arg_22_1)
+function var_0_0.AddItemHint(arg_25_0, arg_25_1)
+	table.insert(var_0_8, arg_25_1)
 	manager.notify:Invoke(QWORLD_HINT_UPDATE)
 end
 
-function var_0_0.GetItemHintList(arg_23_0)
-	if #var_0_7 < 1 then
+function var_0_0.GetItemHintList(arg_26_0)
+	if #var_0_8 < 1 then
 		return nil
 	else
-		local var_23_0 = var_0_7
+		local var_26_0 = var_0_8
 
-		var_0_7 = {}
+		var_0_8 = {}
 
-		return var_23_0
+		return var_26_0
 	end
 end
 
-function var_0_0.HasItemHints(arg_24_0)
-	return #var_0_7 > 0
+function var_0_0.HasItemHints(arg_27_0)
+	return #var_0_8 > 0
 end
 
-function var_0_0.CleanHintDataQuque(arg_25_0)
-	var_0_6.hintsQueue = {}
-	var_0_7 = {}
+function var_0_0.CleanHintDataQuque(arg_28_0)
+	var_0_7.hintsQueue = {}
+	var_0_8 = {}
 end
 
-function var_0_0.AddUnlockFunction(arg_26_0, arg_26_1)
-	table.insert(arg_26_0.unLockFunctionIdList_, arg_26_1)
+function var_0_0.AddUnlockFunction(arg_29_0, arg_29_1)
+	table.insert(arg_29_0.unLockFunctionIdList_, arg_29_1)
 end
 
-function var_0_0.IsUnlockFunction(arg_27_0, arg_27_1)
-	return table.indexof(arg_27_0.unLockFunctionIdList_, arg_27_1)
+function var_0_0.IsUnlockFunction(arg_30_0, arg_30_1)
+	return table.indexof(arg_30_0.unLockFunctionIdList_, arg_30_1)
+end
+
+function var_0_0.GetNowPhaseId(arg_31_0)
+	local var_31_0 = 1
+
+	for iter_31_0 = 2, #QuanzhouPhaseCfg.all do
+		if QuanzhouPhaseCfg[iter_31_0].task_id ~= 0 and (QWorldQuestTool.GetQuestStatus(QuanzhouPhaseCfg[iter_31_0].task_id) == QWorldQuestConst.QUEST_STATUS.IN_PROGRESS or QWorldQuestTool.IsSubQuestFinish(QuanzhouPhaseCfg[iter_31_0].task_id)) then
+			var_31_0 = QuanzhouPhaseCfg.all[iter_31_0]
+		end
+	end
+
+	return var_31_0
 end
 
 return var_0_0

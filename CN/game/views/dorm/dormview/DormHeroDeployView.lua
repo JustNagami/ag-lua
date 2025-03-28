@@ -1,23 +1,24 @@
-﻿local var_0_0 = class("DormHeroDeployView", ReduxView)
+﻿local var_0_0 = import("game.dorm.DormEnum")
+local var_0_1 = class("DormHeroDeployView", ReduxView)
 
-function var_0_0.UIName(arg_1_0)
+function var_0_1.UIName(arg_1_0)
 	return "Widget/BackHouseUI/Dorm/DormPersonnelAllocationUI"
 end
 
-function var_0_0.UIParent(arg_2_0)
+function var_0_1.UIParent(arg_2_0)
 	return manager.ui.uiMain.transform
 end
 
-function var_0_0.OnCtor(arg_3_0)
+function var_0_1.OnCtor(arg_3_0)
 	return
 end
 
-function var_0_0.Init(arg_4_0)
+function var_0_1.Init(arg_4_0)
 	arg_4_0:InitUI()
 	arg_4_0:AddUIListener()
 end
 
-function var_0_0.InitUI(arg_5_0)
+function var_0_1.InitUI(arg_5_0)
 	arg_5_0:BindCfgUI()
 
 	arg_5_0.characterScroll = LuaList.New(handler(arg_5_0, arg_5_0.indexItem), arg_5_0.uilistGo_, DormCharacterItem)
@@ -25,21 +26,21 @@ function var_0_0.InitUI(arg_5_0)
 	arg_5_0.allCharacterController = ControllerUtil.GetController(arg_5_0.quickRecall.transform, "useState")
 end
 
-local function var_0_1()
+local function var_0_2()
 	return Dorm.storage:GetData(DormCharacterManager.curGrabbingInfoNamespace, "eid")
 end
 
-local function var_0_2(arg_7_0)
+local function var_0_3(arg_7_0)
 	local var_7_0 = DormUtils.GetEntityData(arg_7_0)
 
 	return var_7_0.heroID or var_7_0.cfgID
 end
 
-function var_0_0.IndexOf(arg_8_0, arg_8_1)
+function var_0_1.IndexOf(arg_8_0, arg_8_1)
 	return table.indexof(arg_8_0.dataList_, arg_8_0.heroID)
 end
 
-function var_0_0.OnEnter(arg_9_0)
+function var_0_1.OnEnter(arg_9_0)
 	arg_9_0.roomID = DormData:GetCurrectSceneID()
 
 	if BackHomeCfg[arg_9_0.roomID].type == DormConst.BACKHOME_TYPE.PublicDorm then
@@ -59,10 +60,10 @@ function var_0_0.OnEnter(arg_9_0)
 	arg_9_0:RefreshPlaceHeroNum()
 
 	arg_9_0.postStartHandle = FrameTimer.New(function()
-		arg_9_0.curGrabbing = var_0_1()
+		arg_9_0.curGrabbing = var_0_2()
 
 		if arg_9_0.curGrabbing then
-			arg_9_0.selHeroID = var_0_2(arg_9_0.curGrabbing)
+			arg_9_0.selHeroID = var_0_3(arg_9_0.curGrabbing)
 
 			local var_10_0 = arg_9_0:IndexOf(arg_9_0.curGrabbing)
 
@@ -81,7 +82,7 @@ function var_0_0.OnEnter(arg_9_0)
 	arg_9_0.postStartHandle:Start()
 end
 
-function var_0_0.OnExit(arg_11_0)
+function var_0_1.OnExit(arg_11_0)
 	arg_11_0:RemoveAllEventListener()
 
 	if arg_11_0.postStartHandle then
@@ -91,19 +92,19 @@ function var_0_0.OnExit(arg_11_0)
 	end
 end
 
-function var_0_0.indexItem(arg_12_0, arg_12_1, arg_12_2)
+function var_0_1.indexItem(arg_12_0, arg_12_1, arg_12_2)
 	arg_12_2:ShowMaskCallBack(function(arg_13_0)
 		local var_13_0 = DormData:GetHeroTemplateInfo(arg_13_0)
 
 		if var_13_0 then
 			local var_13_1 = var_13_0:GetHeroState()
 
-			if var_13_1 == DormEnum.DormHeroState.InCanteenEntrust or var_13_1 == DormEnum.DormHeroState.InCanteenJob then
+			if var_13_1 == var_0_0.DormHeroState.InCanteenEntrust or var_13_1 == var_0_0.DormHeroState.InCanteenJob then
 				return true
 			end
 
-			if (var_13_1 == DormEnum.DormHeroState.InPublicDorm or var_13_1 == DormEnum.DormHeroState.InPrivateDorm) and var_13_0.hero_id ~= arg_13_0 then
-				return true
+			if var_13_1 == var_0_0.DormHeroState.InPublicDorm and var_13_0.hero_id ~= arg_13_0 then
+				return nullable(BackHomeCfg, DormData:GetCurrectSceneID(), "type") ~= DormConst.BACKHOME_TYPE.PrivateDorm
 			end
 
 			return false
@@ -111,7 +112,7 @@ function var_0_0.indexItem(arg_12_0, arg_12_1, arg_12_2)
 	end)
 	arg_12_2:RefreshUI(arg_12_0.dataList_[arg_12_1], arg_12_0.selHeroID, arg_12_1)
 	arg_12_2:SetOnPointerDown(function(arg_14_0)
-		arg_12_0.selHeroID = arg_12_0.curGrabbing and var_0_2(arg_12_0.curGrabbing) or arg_14_0
+		arg_12_0.selHeroID = arg_12_0.curGrabbing and var_0_3(arg_12_0.curGrabbing) or arg_14_0
 
 		arg_12_0.characterScroll:Refresh()
 	end)
@@ -129,14 +130,14 @@ function var_0_0.indexItem(arg_12_0, arg_12_1, arg_12_2)
 				end
 			end
 
-			DormAction:DeployHeroInRoom(var_15_0, var_15_2, DormEnum.DormDeployType.ReCall)
+			DormAction:DeployHeroInRoom(var_15_0, var_15_2, var_0_0.DormDeployType.ReCall)
 		elseif var_15_0 then
 			DormAction:RecallHeroInPrivateDorm(var_15_0, arg_15_0)
 		end
 	end)
 end
 
-local function var_0_3()
+local function var_0_4()
 	local var_16_0 = nullable(GameDisplayCfg.dorm_hero_first_set_dialogue, "value")
 
 	if var_16_0 then
@@ -162,7 +163,7 @@ local function var_0_3()
 	return 0
 end
 
-function var_0_0.RegisterEvents(arg_17_0)
+function var_0_1.RegisterEvents(arg_17_0)
 	arg_17_0:RegistEventListener(DORM_REFRESH_HERO_DEPLOY_LIST, function()
 		arg_17_0.characterScroll:Refresh()
 		arg_17_0:RefreshPlaceHeroNum()
@@ -172,7 +173,7 @@ function var_0_0.RegisterEvents(arg_17_0)
 	end)
 end
 
-function var_0_0.AddUIListener(arg_20_0)
+function var_0_1.AddUIListener(arg_20_0)
 	arg_20_0:AddBtnListenerScale(arg_20_0.backBtn_, nil, function()
 		JumpTools.Back()
 	end)
@@ -188,14 +189,14 @@ function var_0_0.AddUIListener(arg_20_0)
 	end)
 end
 
-function var_0_0.OnStartGrabHero(arg_23_0, arg_23_1)
+function var_0_1.OnStartGrabHero(arg_23_0, arg_23_1)
 	arg_23_0.curGrabbing = arg_23_1
-	arg_23_0.selHeroID = var_0_2(arg_23_1), DormTools:PlayDormAudioEffect(DormConst.DORM_AUDIO_EFFECT.UpCharacter)
+	arg_23_0.selHeroID = var_0_3(arg_23_1), DormTools:PlayDormAudioEffect(DormConst.DORM_AUDIO_EFFECT.UpCharacter)
 
 	arg_23_0.characterScroll:Refresh()
 end
 
-function var_0_0.OnReleaseGrabHero(arg_24_0)
+function var_0_1.OnReleaseGrabHero(arg_24_0)
 	if arg_24_0.curGrabbing then
 		local var_24_0 = arg_24_0.curGrabbing
 
@@ -203,7 +204,7 @@ function var_0_0.OnReleaseGrabHero(arg_24_0)
 
 		DormTools:PlayDormAudioEffect(DormConst.DORM_AUDIO_EFFECT.DownCharacter)
 
-		local var_24_1 = var_0_3()
+		local var_24_1 = var_0_4()
 
 		if var_24_1 ~= 0 then
 			manager.notify:Invoke(DORM_CHARACTER_PLAY_SUBTITLE, var_24_0, var_24_1)
@@ -213,14 +214,14 @@ function var_0_0.OnReleaseGrabHero(arg_24_0)
 	end
 end
 
-function var_0_0.NotDragOutYet(arg_25_0, arg_25_1)
+function var_0_1.NotDragOutYet(arg_25_0, arg_25_1)
 	local var_25_0 = arg_25_1.position
 	local var_25_1 = manager.ui.canvas:GetComponent(typeof(Canvas)).worldCamera
 
 	return UnityEngine.RectTransformUtility.RectangleContainsScreenPoint(arg_25_0.dragOutRect_, var_25_0, var_25_1)
 end
 
-function var_0_0.OnBeginDragHeroItem(arg_26_0, arg_26_1)
+function var_0_1.OnBeginDragHeroItem(arg_26_0, arg_26_1)
 	if not arg_26_0.curGrabbing then
 		arg_26_0.uilistSrex_:OnBeginDrag(arg_26_1)
 
@@ -228,7 +229,7 @@ function var_0_0.OnBeginDragHeroItem(arg_26_0, arg_26_1)
 	end
 end
 
-function var_0_0.OnDragHeroItem(arg_27_0, arg_27_1)
+function var_0_1.OnDragHeroItem(arg_27_0, arg_27_1)
 	if not arg_27_0.curGrabbing and not arg_27_0.alreadyDragOut then
 		if arg_27_0:NotDragOutYet(arg_27_1) then
 			arg_27_0.uilistSrex_:OnDrag(arg_27_1)
@@ -241,29 +242,37 @@ function var_0_0.OnDragHeroItem(arg_27_0, arg_27_1)
 	end
 end
 
-function var_0_0.TryDragHeroOut(arg_28_0, arg_28_1)
+local var_0_5 = {
+	[var_0_0.DormHeroState.InCanteenEntrust] = "DORM_HERO_WORK_IN_CANTEEN",
+	[var_0_0.DormHeroState.InCanteenJob] = "DORM_HERO_WORK_IN_CANTEEN"
+}
+
+function var_0_1.TryDragHeroOut(arg_28_0, arg_28_1)
 	if arg_28_0.curGrabbing then
 		return
 	end
 
 	if arg_28_0.selHeroID then
 		local var_28_0 = DormData:GetHeroArchiveID(arg_28_0.selHeroID)
-		local var_28_1 = DormData:GetHeroInfo(var_28_0):GetHeroState()
+		local var_28_1 = DormData:GetHeroInfo(var_28_0)
+		local var_28_2 = var_28_1:GetHeroState()
+		local var_28_3 = nullable(var_0_5, var_28_2)
 
-		if var_28_1 == DormEnum.DormHeroState.InCanteenEntrust or DormEnum.DormHeroState.InCanteenJob == var_28_1 then
-			ShowTips(GetTips("DORM_HERO_WORK_IN_CANTEEN"))
+		if var_28_3 then
+			ShowTips(GetTips(var_28_3))
 
 			return
 		end
 
 		if arg_28_0:CheckCharacterNumMax() then
-			local var_28_2 = DormData:GetCurrectSceneID()
+			local var_28_4 = DormData:GetCurrectSceneID()
+			local var_28_5 = BackHomeCfg[var_28_4].type
 
-			if BackHomeCfg[var_28_2].type == DormConst.BACKHOME_TYPE.PublicDorm then
-				local var_28_3 = DormitoryData:GetDormHerosByArchitecture(var_28_2)
-				local var_28_4 = DormitoryData:GetDormArchivesByArchitecture(var_28_2)
+			if var_28_5 == DormConst.BACKHOME_TYPE.PublicDorm then
+				local var_28_6 = DormitoryData:GetDormHerosByArchitecture(var_28_4)
+				local var_28_7 = DormitoryData:GetDormArchivesByArchitecture(var_28_4)
 
-				for iter_28_0, iter_28_1 in ipairs(var_28_4) do
+				for iter_28_0, iter_28_1 in ipairs(var_28_7) do
 					if iter_28_1 == var_28_0 then
 						ShowTips(GetTips("DORM_HERO_SAME_SET"))
 
@@ -271,22 +280,28 @@ function var_0_0.TryDragHeroOut(arg_28_0, arg_28_1)
 					end
 				end
 
-				local var_28_5 = {}
+				local var_28_8 = {}
 
-				for iter_28_2, iter_28_3 in ipairs(var_28_3) do
-					table.insert(var_28_5, iter_28_3)
+				for iter_28_2, iter_28_3 in ipairs(var_28_6) do
+					table.insert(var_28_8, iter_28_3)
 				end
 
-				table.insert(var_28_5, arg_28_0.selHeroID)
-				arg_28_0:OnStartGrabHero(DormHeroTools:GenerateHeroByDrag(arg_28_0.selHeroID, arg_28_1))
-				DormAction:DeployHeroInRoom(var_28_2, var_28_5, DormEnum.DormDeployType.Place)
-			elseif BackHomeCfg[var_28_2].type == DormConst.BACKHOME_TYPE.PrivateDorm then
-				if var_28_1 == DormEnum.DormHeroState.InPublicDorm or var_28_1 == DormEnum.DormHeroState.OutDorm then
-					arg_28_0:OnStartGrabHero(DormHeroTools:GenerateHeroByDrag(arg_28_0.selHeroID, arg_28_1))
-					DormAction:RecallHeroInPrivateDorm(var_28_2, arg_28_0.selHeroID)
-				elseif var_28_1 == DormEnum.DormHeroState.InPrivateDorm then
-					ShowTips(GetTips("DORM_HERO_SAME_SET"))
+				table.insert(var_28_8, arg_28_0.selHeroID)
+				arg_28_0:OnStartGrabHero(DormHeroTools.GenerateHeroByDrag(arg_28_0.selHeroID, arg_28_1))
+				DormAction:DeployHeroInRoom(var_28_4, var_28_8, var_0_0.DormDeployType.Place)
+			elseif var_28_5 == DormConst.BACKHOME_TYPE.PrivateDorm then
+				if var_28_2 == var_0_0.DormHeroState.InPrivateDorm then
+					local var_28_9 = var_28_1:GetHeroId()
+
+					if var_28_9 == arg_28_0.selHeroID then
+						return
+					end
+
+					DormHeroTools.RemoveHero(var_28_9)
 				end
+
+				arg_28_0:OnStartGrabHero(DormHeroTools.GenerateHeroByDrag(arg_28_0.selHeroID, arg_28_1))
+				DormAction:RecallHeroInPrivateDorm(var_28_4, arg_28_0.selHeroID)
 			end
 		else
 			ShowTips(GetTips("DORM_LOBBY_SET_MAX"))
@@ -294,7 +309,7 @@ function var_0_0.TryDragHeroOut(arg_28_0, arg_28_1)
 	end
 end
 
-function var_0_0.OnEndDragHeroItem(arg_29_0, arg_29_1)
+function var_0_1.OnEndDragHeroItem(arg_29_0, arg_29_1)
 	if arg_29_0.curGrabbing then
 		DormLuaBridge.EndGrabPlayerEntity(arg_29_0.curGrabbing)
 		arg_29_0:OnReleaseGrabHero()
@@ -303,7 +318,7 @@ function var_0_0.OnEndDragHeroItem(arg_29_0, arg_29_1)
 	end
 end
 
-function var_0_0.GetDormHeroList(arg_30_0)
+function var_0_1.GetDormHeroList(arg_30_0)
 	local var_30_0 = {}
 
 	arg_30_0 = arg_30_0 or DormData:GetCurrectSceneID()
@@ -315,13 +330,13 @@ function var_0_0.GetDormHeroList(arg_30_0)
 		map = function(arg_31_0)
 			local var_31_0 = DormData:GetHeroTemplateInfo(arg_31_0):GetHeroState()
 
-			if var_31_0 == DormEnum.DormHeroState.InPublicDorm then
+			if var_31_0 == var_0_0.DormHeroState.InPublicDorm then
 				return 1
-			elseif var_31_0 == DormEnum.DormHeroState.OutDorm then
+			elseif var_31_0 == var_0_0.DormHeroState.OutDorm then
 				return 2
-			elseif var_31_0 == DormEnum.DormHeroState.InPrivateDorm then
+			elseif var_31_0 == var_0_0.DormHeroState.InPrivateDorm then
 				return 3
-			elseif var_31_0 == DormEnum.DormHeroState.InCanteenJob then
+			elseif var_31_0 == var_0_0.DormHeroState.InCanteenJob then
 				local var_31_1 = DormData:GetHeroTemplateInfo(arg_31_0).jobType
 
 				if var_31_1 == DormNpcTools.BackHomeNpcType.cook then
@@ -331,9 +346,9 @@ function var_0_0.GetDormHeroList(arg_30_0)
 				elseif var_31_1 == DormNpcTools.BackHomeNpcType.cashier then
 					return 6
 				end
-			elseif var_31_0 == DormEnum.DormHeroState.InCanteenEntrust then
+			elseif var_31_0 == var_0_0.DormHeroState.InCanteenEntrust then
 				return 7
-			elseif var_31_0 == DormEnum.DormHeroState.InIdolTraineeCamp then
+			elseif var_31_0 == var_0_0.DormHeroState.InIdolTraineeCamp then
 				return 8
 			end
 		end
@@ -355,13 +370,13 @@ function var_0_0.GetDormHeroList(arg_30_0)
 	return var_30_1
 end
 
-function var_0_0.RefreshDormHeroList(arg_35_0)
-	arg_35_0.dataList_ = var_0_0.GetDormHeroList()
+function var_0_1.RefreshDormHeroList(arg_35_0)
+	arg_35_0.dataList_ = var_0_1.GetDormHeroList()
 
 	arg_35_0.characterScroll:StartScroll(#arg_35_0.dataList_)
 end
 
-function var_0_0.CheckCharacterNumMax(arg_36_0)
+function var_0_1.CheckCharacterNumMax(arg_36_0)
 	if BackHomeCfg[arg_36_0.roomID].type == DormConst.BACKHOME_TYPE.PublicDorm then
 		local var_36_0 = DormitoryData:GetDormSceneData(arg_36_0.roomID).archiveIDList
 
@@ -380,7 +395,7 @@ function var_0_0.CheckCharacterNumMax(arg_36_0)
 	end
 end
 
-function var_0_0.RefreshPlaceHeroNum(arg_37_0)
+function var_0_1.RefreshPlaceHeroNum(arg_37_0)
 	if BackHomeCfg[arg_37_0.roomID].type == DormConst.BACKHOME_TYPE.PublicDorm then
 		local var_37_0 = DormitoryData:GetDormSceneData(arg_37_0.roomID).archiveIDList
 
@@ -410,7 +425,7 @@ function var_0_0.RefreshPlaceHeroNum(arg_37_0)
 	else
 		local var_37_3 = DormitoryData:GetDormSceneData(arg_37_0.roomID).archiveIDList[1]
 
-		if DormData:GetHeroInfo(var_37_3):GetHeroState() == DormEnum.DormHeroState.InPrivateDorm then
+		if DormData:GetHeroInfo(var_37_3):GetHeroState() == var_0_0.DormHeroState.InPrivateDorm then
 			arg_37_0.curnumText_.text = 1
 		else
 			arg_37_0.curnumText_.text = 0
@@ -418,13 +433,13 @@ function var_0_0.RefreshPlaceHeroNum(arg_37_0)
 	end
 end
 
-function var_0_0.Dispose(arg_38_0)
+function var_0_1.Dispose(arg_38_0)
 	if arg_38_0.characterScroll then
 		arg_38_0.characterScroll:Dispose()
 	end
 
 	arg_38_0.uilistSrex_.ExitScrollArea:RemoveAllListeners()
-	var_0_0.super.Dispose(arg_38_0)
+	var_0_1.super.Dispose(arg_38_0)
 end
 
-return var_0_0
+return var_0_1

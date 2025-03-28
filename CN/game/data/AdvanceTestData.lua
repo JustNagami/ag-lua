@@ -29,7 +29,19 @@ function var_0_0.SetCacheActivityID(arg_4_0, arg_4_1)
 end
 
 function var_0_0.GetLastSelectIndex(arg_5_0, arg_5_1)
-	return arg_5_0.lastSelectIndex[arg_5_1] or 1
+	local var_5_0 = 1
+
+	if not arg_5_0.lastSelectIndex[arg_5_1] then
+		local var_5_1 = AdvanceTestCfg.get_id_list_by_activity_id[arg_5_1]
+
+		if var_5_1 and var_5_1[1] then
+			var_5_0 = AdvanceTestCfg[var_5_1[1]].stage_type
+		end
+	else
+		var_5_0 = arg_5_0.lastSelectIndex[arg_5_1]
+	end
+
+	return var_5_0
 end
 
 function var_0_0.SetLastSelectIndex(arg_6_0, arg_6_1, arg_6_2)
@@ -79,12 +91,30 @@ function var_0_0.SetHeroListByDifficult(arg_13_0, arg_13_1, arg_13_2)
 	local var_13_0 = arg_13_0:GetCurCfgByIndex(arg_13_1, arg_13_2)
 	local var_13_1 = var_13_0.character
 	local var_13_2 = var_13_0.weapon
+	local var_13_3 = {}
 
-	for iter_13_0, iter_13_1 in pairs(arg_13_0.heroList) do
-		iter_13_1.star = var_13_1
+	for iter_13_0, iter_13_1 in pairs(var_13_0.limit_hero) do
+		if iter_13_1[1] == 8 then
+			local var_13_4 = iter_13_1[2]
 
-		if iter_13_1.servant_uid ~= 0 and iter_13_1.unlock == 1 then
-			iter_13_1.servantInfo.stage = var_13_2
+			table.insert(var_13_3, var_13_4[1], var_13_4[2])
+		end
+	end
+
+	for iter_13_2, iter_13_3 in pairs(arg_13_0.heroList) do
+		iter_13_3.star = var_13_1
+
+		if iter_13_3.servant_uid ~= 0 and iter_13_3.unlock == 1 then
+			iter_13_3.servantInfo.stage = var_13_2
+		end
+
+		local var_13_5 = iter_13_3.id
+		local var_13_6 = var_13_3[var_13_5]
+
+		if var_13_6 then
+			local var_13_7 = HeroCfg[var_13_5].astrolabe[var_13_6]
+
+			iter_13_3.using_astrolabe = HeroAstrolabeCfg.get_id_list_by_hero_astrolabe_suit_id[var_13_7]
 		end
 	end
 end

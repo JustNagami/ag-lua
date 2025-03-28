@@ -48,6 +48,13 @@ local var_0_1 = {
 
 function var_0_0.Init(arg_1_0)
 	var_0_1.levelUpInfos = {}
+	arg_1_0.cacheHeroSkinList_ = {}
+	arg_1_0.cacheHeroSkin_ = {}
+	arg_1_0.clearHeroFlag_ = false
+
+	arg_1_0:SetIsDeskMode(false)
+
+	arg_1_0.selectSkinList_ = {}
 end
 
 local var_0_2 = {}
@@ -163,6 +170,7 @@ function var_0_0.EXPChange(arg_16_0, arg_16_1)
 
 	if var_16_0 ~= var_16_1 then
 		manager.notify:Invoke(PLAYER_LEVEL_UP, var_16_0, var_16_1)
+		ChapterResidentTools.SetNewTag()
 		SDKTools.SetDefaultPublicAttribute()
 		SendMessageManagerToSDK("role_level", {
 			level = var_16_1
@@ -1511,9 +1519,9 @@ function var_0_0.GetPlayerStoryTriggerGroupInfo(arg_116_0, arg_116_1)
 	return var_116_2, var_116_1
 end
 
-local var_0_19 = 0
+local var_0_19 = 2
 local var_0_20 = {}
-local var_0_21 = 0
+local var_0_21 = 2
 local var_0_22 = false
 local var_0_23 = false
 
@@ -1542,6 +1550,14 @@ function var_0_0.SetRandomHeroData(arg_119_0, arg_119_1)
 	var_0_23 = arg_119_1.routine_hero_dressing_scene ~= 0
 
 	table.insertto(var_0_20, arg_119_1.random_list)
+
+	for iter_119_0 = #var_0_20, 1, -1 do
+		local var_119_0 = var_0_20[iter_119_0]
+
+		if table.keyof(var_0_20, var_119_0) ~= iter_119_0 then
+			table.remove(var_0_20, iter_119_0)
+		end
+	end
 end
 
 function var_0_0.IsRandomHeroUseDlcScene(arg_120_0)
@@ -1596,36 +1612,122 @@ function var_0_0.SetRandomHero(arg_131_0, arg_131_1)
 	var_0_21 = arg_131_1
 end
 
-function var_0_0.CalcNextRandomHero(arg_132_0)
-	local var_132_0 = arg_132_0:GetRandomHeroList()
-	local var_132_1 = #var_132_0
+function var_0_0.SetForceRandomHeroID(arg_132_0, arg_132_1)
+	arg_132_0.forceRandomHeroID_ = arg_132_1
+end
 
-	if var_132_1 == 0 then
+function var_0_0.GetForceRandomHeroID(arg_133_0)
+	return arg_133_0.forceRandomHeroID_
+end
+
+function var_0_0.CalcNextRandomHero(arg_134_0)
+	local var_134_0 = CustomCenterTools.GetRandomHeroList()
+	local var_134_1 = #var_134_0
+
+	if var_134_1 == 0 then
 		var_0_21 = var_0_1.poster_girl
+		arg_134_0.forceRandomHeroID_ = nil
 
 		return var_0_21
 	end
 
-	local var_132_2 = math.random(var_132_1)
-	local var_132_3 = var_132_0[var_132_2]
+	if arg_134_0.forceRandomHeroID_ then
+		var_0_21 = arg_134_0.forceRandomHeroID_
+		arg_134_0.forceRandomHeroID_ = nil
 
-	if var_132_3 == var_0_21 then
-		if var_132_1 >= var_132_2 + 1 then
-			var_132_3 = var_132_0[var_132_2 + 1]
-		elseif var_132_2 - 1 >= 1 then
-			var_132_3 = var_132_0[var_132_2 - 1]
+		return
+	end
+
+	local var_134_2 = math.random(var_134_1)
+	local var_134_3 = var_134_0[var_134_2]
+
+	if var_134_3 == var_0_21 then
+		if var_134_1 >= var_134_2 + 1 then
+			var_134_3 = var_134_0[var_134_2 + 1]
+		elseif var_134_2 - 1 >= 1 then
+			var_134_3 = var_134_0[var_134_2 - 1]
 		end
 	end
 
-	var_0_21 = var_132_3
+	var_0_21 = var_134_3
 end
 
-function var_0_0.GetPosterGirlHeroId(arg_133_0)
-	if arg_133_0:IsRandomHero() then
-		return arg_133_0:GetRandomHero()
+function var_0_0.GetPosterGirlHeroSkinId(arg_135_0)
+	if arg_135_0:IsRandomHero() then
+		return arg_135_0:GetRandomHero()
 	else
-		return var_0_1.poster_girl
+		return HeroTools.HeroUsingSkinInfo(var_0_1.poster_girl).id
 	end
+end
+
+function var_0_0.GetCacheHeroSkinList(arg_136_0)
+	return arg_136_0.cacheHeroSkinList_
+end
+
+function var_0_0.SetCacheHeroSkinList(arg_137_0, arg_137_1)
+	arg_137_0.cacheHeroSkinList_ = arg_137_1
+end
+
+function var_0_0.UpdateCacheHeroSkinID(arg_138_0, arg_138_1)
+	local var_138_0 = table.keyof(arg_138_0.cacheHeroSkinList_, arg_138_1)
+
+	if var_138_0 then
+		table.remove(arg_138_0.cacheHeroSkinList_, var_138_0)
+	else
+		table.insert(arg_138_0.cacheHeroSkinList_, arg_138_1)
+	end
+end
+
+function var_0_0.GetCacheHeroSkinID(arg_139_0, arg_139_1)
+	if not arg_139_0.cacheHeroSkin_[arg_139_1] then
+		arg_139_0.cacheHeroSkin_[arg_139_1] = HeroTools.HeroUsingSkinInfo(arg_139_1).id
+	end
+
+	return arg_139_0.cacheHeroSkin_[arg_139_1]
+end
+
+function var_0_0.SetCacheHeroSkinID(arg_140_0, arg_140_1, arg_140_2)
+	arg_140_0.cacheHeroSkin_[arg_140_1] = arg_140_2
+end
+
+function var_0_0.ClearCacheHeroSkinID(arg_141_0)
+	arg_141_0.cacheHeroSkin_ = {}
+end
+
+function var_0_0.GetClearHeroFlag(arg_142_0)
+	return arg_142_0.clearHeroFlag_
+end
+
+function var_0_0.SetClearHeroFlag(arg_143_0, arg_143_1)
+	arg_143_0.clearHeroFlag_ = arg_143_1
+end
+
+function var_0_0.SetPosterGirlDebut(arg_144_0, arg_144_1)
+	arg_144_0.posterGrilDebut_ = arg_144_1
+end
+
+function var_0_0.GetPosterGirlDebut(arg_145_0)
+	return arg_145_0.posterGrilDebut_
+end
+
+function var_0_0.AddSelectSkinID(arg_146_0, arg_146_1)
+	table.insert(arg_146_0.selectSkinList_, arg_146_1)
+end
+
+function var_0_0.GetSelectSkinList(arg_147_0)
+	return arg_147_0.selectSkinList_
+end
+
+function var_0_0.ClearSelectSkinList(arg_148_0)
+	arg_148_0.selectSkinList_ = {}
+end
+
+function var_0_0.SetIsDeskMode(arg_149_0, arg_149_1)
+	arg_149_0.deskMode_ = arg_149_1
+end
+
+function var_0_0.GetDeskMode(arg_150_0)
+	return arg_150_0.deskMode_
 end
 
 return var_0_0

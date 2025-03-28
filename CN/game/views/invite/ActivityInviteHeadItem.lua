@@ -39,7 +39,7 @@ function var_0_0.GetFinishController(arg_7_0)
 end
 
 function var_0_0.UpdateView(arg_8_0)
-	arg_8_0.headImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/LittleIcon/" .. tostring(arg_8_0.data.image))
+	arg_8_0.headImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/LittleIcon/" .. tostring(arg_8_0.data.image))
 
 	local var_8_0 = InviteData:GetDataByPara("completeHeroTable")[arg_8_0.data.heroId] or {}
 	local var_8_1 = HeroCfg[arg_8_0.data.heroId]

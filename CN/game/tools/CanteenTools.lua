@@ -214,19 +214,17 @@
 }
 
 local function var_0_1(arg_20_0, arg_20_1)
-	if GameSetting.dorm_canteen_work_fatigue.value[1] / 100 > DormData:GetHeroFatigue(arg_20_0) then
+	if CanteenEntrustData:CheckHasChooseEntrustCharacter(arg_20_0) then
 		return false
 	end
 
-	local var_20_0 = DormData:GetHeroTemplateInfo(arg_20_0)
-
-	if CanteenEntrustData:CheckHasChooseEntrustCharacter(arg_20_0) or var_20_0.jobType then
+	if BackHomeTools.CheckHeroIsLockForAnyFeatureByHeroID(arg_20_0) then
 		return false
 	end
 
-	local var_20_1 = DormData:GetHeroArchiveID(arg_20_0)
+	local var_20_0 = DormData:GetHeroArchiveID(arg_20_0)
 
-	if nullable(arg_20_1, var_20_1) then
+	if nullable(arg_20_1, var_20_0) then
 		return false
 	end
 
@@ -234,68 +232,110 @@ local function var_0_1(arg_20_0, arg_20_1)
 end
 
 local function var_0_2(arg_21_0, arg_21_1)
-	return not nullable(arg_21_1, "filter", arg_21_0)
+	if GameSetting.dorm_canteen_work_fatigue.value[1] / 100 > DormData:GetHeroFatigue(arg_21_0) then
+		return false
+	end
+
+	local var_21_0 = DormData:GetHeroTemplateInfo(arg_21_0)
+
+	if CanteenEntrustData:CheckHasChooseEntrustCharacter(arg_21_0) or var_21_0.jobType then
+		return false
+	end
+
+	if BackHomeTools.CheckHeroIsLockForAnyFeatureByHeroID(arg_21_0) then
+		return false
+	end
+
+	local var_21_1 = DormData:GetHeroArchiveID(arg_21_0)
+
+	if nullable(arg_21_1, var_21_1) then
+		return false
+	end
+
+	return true
 end
 
-local function var_0_3(arg_22_0, arg_22_1, arg_22_2, arg_22_3, arg_22_4, arg_22_5)
-	arg_22_5 = arg_22_5 or {
+local function var_0_3(arg_22_0, arg_22_1)
+	return not nullable(arg_22_1, arg_22_0)
+end
+
+local function var_0_4(arg_23_0)
+	local var_23_0 = {
 		need = 0,
 		result = {},
 		filter = {},
 		reduce = {}
 	}
 
-	if arg_22_4 > 0 then
-		local var_22_0 = #arg_22_5.result + 1
+	if arg_23_0 then
+		for iter_23_0, iter_23_1 in ipairs(arg_23_0) do
+			local var_23_1 = DormData:GetHeroArchiveID(iter_23_1)
+			local var_23_2 = DormData:GetHeroFatigue(iter_23_1)
+			local var_23_3 = DormSkillData:GetSkillEffect(CanteenConst.HeroSkillType.EntrustTotalFatigueReduce, iter_23_1)
 
-		for iter_22_0, iter_22_1 in ipairs(arg_22_1) do
-			local var_22_1 = arg_22_0[iter_22_1]
+			var_23_0.filter[var_23_1] = true
 
-			for iter_22_2, iter_22_3 in ipairs(var_22_1) do
-				local var_22_2 = DormData:GetHeroArchiveID(iter_22_3)
+			table.insert(var_23_0.result, iter_23_1)
 
-				if var_0_2(var_22_2, arg_22_5) then
-					arg_22_5.filter[var_22_2] = true
-					arg_22_5.result[var_22_0] = iter_22_3
+			var_23_0.need = var_23_0.need + var_23_2
 
-					local var_22_3 = DormData:GetHeroFatigue(iter_22_3)
+			table.insert(var_23_0.reduce, var_23_3)
+		end
+	end
 
-					arg_22_5.need = arg_22_5.need + var_22_3
+	return var_23_0
+end
 
-					local var_22_4 = DormSkillData:GetSkillEffect(CanteenConst.HeroSkillType.EntrustTotalFatigueReduce, iter_22_3)
+local function var_0_5(arg_24_0, arg_24_1, arg_24_2, arg_24_3, arg_24_4, arg_24_5)
+	arg_24_5 = arg_24_5 or var_0_4(nil)
 
-					table.insert(arg_22_5.reduce, var_22_4)
+	if arg_24_4 > 0 then
+		for iter_24_0, iter_24_1 in ipairs(arg_24_1) do
+			local var_24_0 = arg_24_0[iter_24_1]
 
-					local var_22_5 = 0
+			for iter_24_2, iter_24_3 in ipairs(var_24_0) do
+				local var_24_1 = DormData:GetHeroArchiveID(iter_24_3)
 
-					for iter_22_4, iter_22_5 in ipairs(arg_22_5.reduce) do
-						var_22_5 = math.min(100, var_22_5 + iter_22_5)
+				if var_0_3(var_24_1, arg_24_5.filter) then
+					local var_24_2 = DormData:GetHeroFatigue(iter_24_3)
+					local var_24_3 = DormSkillData:GetSkillEffect(CanteenConst.HeroSkillType.EntrustTotalFatigueReduce, iter_24_3)
+
+					table.insert(arg_24_5.result, iter_24_3)
+					table.insert(arg_24_5.reduce, var_24_3)
+
+					arg_24_5.need = arg_24_5.need + var_24_2
+					arg_24_5.filter[var_24_1] = true
+
+					local var_24_4 = 0
+
+					for iter_24_4, iter_24_5 in ipairs(arg_24_5.reduce) do
+						var_24_4 = math.min(100, var_24_4 + iter_24_5)
 					end
 
-					local var_22_6 = arg_22_2 - math.floor(arg_22_2 * var_22_4 / 100)
+					local var_24_5 = arg_24_2 - math.floor(arg_24_2 * var_24_3 / 100)
 
-					if var_0_3(arg_22_0, arg_22_1, var_22_6, arg_22_3, arg_22_4 - 1, arg_22_5) then
-						return true, arg_22_5.result
+					if var_0_5(arg_24_0, arg_24_1, var_24_5, arg_24_3, arg_24_4 - 1, arg_24_5) then
+						return true, arg_24_5.result
 					end
 
-					table.remove(arg_22_5.reduce)
+					arg_24_5.need = arg_24_5.need - var_24_2
+					arg_24_5.filter[var_24_1] = nil
 
-					arg_22_5.need = arg_22_5.need - var_22_3
-					arg_22_5.result[var_22_0] = nil
-					arg_22_5.filter[var_22_2] = nil
+					table.remove(arg_24_5.reduce)
+					table.remove(arg_24_5.result)
 				end
 			end
 		end
 	end
 
-	return arg_22_2 <= arg_22_5.need and arg_22_3 <= #arg_22_5.result, arg_22_5.result
+	return arg_24_2 <= arg_24_5.need and arg_24_3 <= #arg_24_5.result, arg_24_5.result
 end
 
 function var_0_0.AnyAvailableEntrustHero()
-	local var_23_0 = DormHeroTools:GetUnLockBackHomeHeroIDList()
+	local var_25_0 = DormHeroTools:GetUnLockBackHomeHeroIDList()
 
-	for iter_23_0, iter_23_1 in ipairs(var_23_0) do
-		if var_0_1(iter_23_1) then
+	for iter_25_0, iter_25_1 in ipairs(var_25_0) do
+		if var_0_2(iter_25_1) then
 			return true
 		end
 	end
@@ -303,50 +343,60 @@ function var_0_0.AnyAvailableEntrustHero()
 	return false
 end
 
-function var_0_0.AutoSelectEntrustHero(arg_24_0, arg_24_1)
-	local var_24_0 = {}
-	local var_24_1 = {}
-	local var_24_2 = DormHeroTools:GetUnLockBackHomeHeroIDList()
-	local var_24_3 = arg_24_0.id
-	local var_24_4 = arg_24_0.tags
+function var_0_0.AutoSelectEntrustHero(arg_26_0, arg_26_1, arg_26_2)
+	local var_26_0 = {}
+	local var_26_1 = {}
+	local var_26_2 = DormHeroTools:GetUnLockBackHomeHeroIDList()
+	local var_26_3 = arg_26_0.id
+	local var_26_4 = arg_26_0.tags
 
-	for iter_24_0, iter_24_1 in ipairs(var_24_2) do
-		if var_0_1(iter_24_1, arg_24_1) then
-			local var_24_5 = CanteenEntrustData:CalHeroMatchNum(iter_24_1, var_24_4)
-			local var_24_6 = DormSkillData:GetSkillEffect(CanteenConst.HeroSkillType.EntrustExternSucceedAdd, iter_24_1) / BackHomeCanteenTaskCfg[var_24_3].tag_success
-			local var_24_7 = math.min(var_24_5 + var_24_6, DormConst.DORM_HERO_TAG_MAX)
-			local var_24_8 = var_24_0[var_24_7]
+	for iter_26_0, iter_26_1 in ipairs(var_26_2) do
+		if var_0_2(iter_26_1, arg_26_2) then
+			local var_26_5 = CanteenEntrustData:CalHeroMatchNum(iter_26_1, var_26_4)
+			local var_26_6 = DormSkillData:GetSkillEffect(CanteenConst.HeroSkillType.EntrustExternSucceedAdd, iter_26_1) / BackHomeCanteenTaskCfg[var_26_3].tag_success
+			local var_26_7 = math.min(var_26_5 + var_26_6, DormConst.DORM_HERO_TAG_MAX)
+			local var_26_8 = var_26_0[var_26_7]
 
-			if var_24_8 == nil then
-				var_24_8 = {}
-				var_24_0[var_24_7] = var_24_8
+			if var_26_8 == nil then
+				var_26_8 = {}
+				var_26_0[var_26_7] = var_26_8
 
-				table.insert(var_24_1, var_24_7)
+				table.insert(var_26_1, var_26_7)
 			end
 
-			table.insert(var_24_8, iter_24_1)
+			table.insert(var_26_8, iter_26_1)
 		end
 	end
 
-	for iter_24_2, iter_24_3 in pairs(var_24_0) do
-		CommonTools.UniversalSortEx(iter_24_3, {
-			map = function(arg_25_0)
-				return DormData:GetHeroFatigue(arg_25_0)
+	for iter_26_2, iter_26_3 in pairs(var_26_0) do
+		CommonTools.UniversalSortEx(iter_26_3, {
+			map = function(arg_27_0)
+				return DormData:GetHeroFatigue(arg_27_0)
 			end
 		})
 	end
 
-	table.sort(var_24_1, function(arg_26_0, arg_26_1)
-		return arg_26_1 < arg_26_0
+	table.sort(var_26_1, function(arg_28_0, arg_28_1)
+		return arg_28_1 < arg_28_0
 	end)
 
-	local var_24_9 = BackHomeCanteenTaskCfg[var_24_3].need
-	local var_24_10 = BackHomeCanteenTaskCfg[var_24_3].cost
-	local var_24_11, var_24_12 = var_0_3(var_24_0, var_24_1, var_24_10, var_24_9[1], var_24_9[2])
+	local var_26_9 = BackHomeCanteenTaskCfg[var_26_3].need
+	local var_26_10 = var_26_9[1]
+	local var_26_11, var_26_12 = var_26_9[2], BackHomeCanteenTaskCfg[var_26_3].cost
 
-	if var_24_11 then
-		return var_24_12
+	if arg_26_1 then
+		var_26_11 = var_26_11 - #arg_26_1
 	end
+
+	local var_26_13, var_26_14 = var_0_5(var_26_0, var_26_1, var_26_12, var_26_10, var_26_11, var_0_4(arg_26_1))
+
+	if var_26_13 then
+		return var_26_14
+	end
+end
+
+function var_0_0.GetAvailableJobHeroList()
+	return DormHeroTools:GetFilteredUnlockBackHomeHeroIDList(var_0_1)
 end
 
 return var_0_0

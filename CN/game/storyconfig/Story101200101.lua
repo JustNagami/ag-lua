@@ -327,6 +327,8 @@
 				SetActive(arg_1_1.allBtn_.gameObject, true)
 				arg_1_1.hideBtnsController_:SetSelectedIndex(0)
 				manager.video:Dispose()
+
+				arg_1_1.isInLoopVideo = false
 			end
 
 			local var_4_54 = 0.199999999999989
@@ -8447,6 +8449,8 @@
 			if arg_288_0 == 2 then
 				arg_286_0:Play120011072(arg_286_1)
 			end
+
+			arg_286_1:RecordChoiceLog(120011069, 120011070, 120011072)
 		end
 
 		function arg_286_1.onSingleLineUpdate_(arg_289_0)
@@ -18743,6 +18747,8 @@
 			if arg_602_0 == 2 then
 				arg_600_0:Play120011148(arg_600_1)
 			end
+
+			arg_600_1:RecordChoiceLog(120011147, 120011148, 120011148)
 		end
 
 		function arg_600_1.onSingleLineUpdate_(arg_603_0)
@@ -21521,6 +21527,8 @@
 			if arg_678_0 == 2 then
 				arg_676_0:Play120011167(arg_676_1)
 			end
+
+			arg_676_1:RecordChoiceLog(120011166, 120011167, 120011167)
 		end
 
 		function arg_676_1.onSingleLineUpdate_(arg_679_0)

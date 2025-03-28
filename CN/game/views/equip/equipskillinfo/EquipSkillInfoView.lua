@@ -50,7 +50,7 @@ function var_0_0.RefreshUI(arg_9_0)
 
 	arg_9_0.selectItem_:ShowSelect(true)
 
-	arg_9_0.iconImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_9_0.icon)
+	arg_9_0.iconImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_9_0.icon)
 	arg_9_0.nameText_.text = GetI18NText(var_9_0.name)
 	arg_9_0.lvText_.text = string.format("%s/%s", arg_9_0.equipSkillData_.skillLevel, var_9_0.lvmax)
 

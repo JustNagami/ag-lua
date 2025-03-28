@@ -31,7 +31,7 @@ end
 function var_0_0.UpdateView(arg_6_0)
 	arg_6_0.nameText_.text = arg_6_0.cfg_.name
 	arg_6_0.descText_.text = arg_6_0:GetDesc()
-	arg_6_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. arg_6_0.cfg_.icon or "")
+	arg_6_0.iconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. arg_6_0.cfg_.icon or "")
 	arg_6_0.levelText_.text = GetTips("LEVEL") .. arg_6_0.level_
 end
 

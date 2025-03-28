@@ -35,7 +35,6 @@ function var_0_1.InitUI(arg_5_0)
 end
 
 function var_0_1.InitSubView(arg_6_0)
-	arg_6_0.heroAvatarView_ = HeroAvatarView.New(arg_6_0, arg_6_0.displayGo_)
 	arg_6_0.selfHeroList_ = LuaList.New(handler(arg_6_0, arg_6_0.indexSelfHeroItem), arg_6_0.uiListGo_, SectionHeroTeamHeadItem)
 	arg_6_0.assistantHeroList_ = LuaList.New(handler(arg_6_0, arg_6_0.indexAssistantItem), arg_6_0.assitUIListGo_, NewGuildBossAssistantHeadItemView)
 	arg_6_0.toggleController1_ = ControllerUtil.GetController(arg_6_0.myHeroToggleBtn_.transform, "select")
@@ -243,8 +242,6 @@ function var_0_1.RefreshSingleModeHeadItem(arg_23_0)
 end
 
 function var_0_1.SelectEmptyAssistHero(arg_24_0)
-	arg_24_0.heroAvatarView_:ShowHeroModel(false)
-
 	arg_24_0.fightPowerText_.text = "--"
 	arg_24_0.nameText_.text = "--"
 	arg_24_0.subNameText_.text = "--"
@@ -272,9 +269,6 @@ function var_0_1.UpdateSelfHeroView(arg_26_0)
 		arg_26_0.selectHeroData_.trialID
 	}).id
 
-	arg_26_0.heroAvatarView_:ShowHeroModel(true)
-	arg_26_0.heroAvatarView_:SetSkinId(var_26_1)
-
 	arg_26_0.fightPowerText_.text = getHeroPower(var_26_0, false)
 
 	local var_26_2 = HeroCfg[var_26_0]
@@ -284,6 +278,8 @@ function var_0_1.UpdateSelfHeroView(arg_26_0)
 
 	arg_26_0.infoBtnController_:SetSelectedState("on")
 	arg_26_0:UpdateJoin(var_26_0)
+	arg_26_0:LoadHeroModel(var_26_1)
+	arg_26_0:ProcessCamera(var_26_1)
 end
 
 function var_0_1.UpdateJoin(arg_27_0, arg_27_1, arg_27_2)
@@ -337,9 +333,6 @@ function var_0_1.UpdateAssistHeroView(arg_29_0)
 
 	local var_29_1 = arg_29_0.selectedAssistHeroID_
 
-	arg_29_0.heroAvatarView_:ShowHeroModel(true)
-	arg_29_0.heroAvatarView_:SetSkinId(var_29_0)
-
 	arg_29_0.fightPowerText_.text = arg_29_0.selectedAssistHeroData_.fight_capacity
 
 	local var_29_2 = HeroCfg[var_29_1]
@@ -349,6 +342,8 @@ function var_0_1.UpdateAssistHeroView(arg_29_0)
 
 	arg_29_0.infoBtnController_:SetSelectedState("on")
 	arg_29_0:UpdateJoin(arg_29_0.selectedAssistHeroData_.assist_hero_id, arg_29_0.selectedAssistHeroData_.member_id)
+	arg_29_0:LoadHeroModel(var_29_0)
+	arg_29_0:ProcessCamera(var_29_0)
 end
 
 function var_0_1.AddUIListener(arg_30_0)
@@ -487,10 +482,6 @@ function var_0_1.AddEventListeners(arg_37_0)
 		if arg_37_0.assistantHeroList_ == nil then
 			return
 		end
-
-		if arg_37_0.heroAvatarView_ then
-			arg_37_0.heroAvatarView_:OnEnter()
-		end
 	end)
 	arg_37_0:RegistEventListener(GUILD_EXIT, function()
 		arg_37_0:Go("/home")
@@ -574,12 +565,9 @@ function var_0_1.OnExit(arg_48_0)
 	end
 
 	arg_48_0:RemoveAllEventListener()
-	manager.ui:ResetMainCamera()
 	manager.windowBar:HideBar()
-
-	if arg_48_0.heroAvatarView_ then
-		arg_48_0.heroAvatarView_:OnExit()
-	end
+	manager.loadScene:SetSceneActive(SceneConst.SCENE_NAME.reserve, false)
+	SectionSelectHeroScene.GetInstance():DestroyModels()
 
 	if arg_48_0.heroDataList_ and #arg_48_0.heroDataList_ <= 0 then
 		HeroData:ResetSortValue()
@@ -619,12 +607,6 @@ function var_0_1.Dispose(arg_50_0)
 		arg_50_0.filterView_:Dispose()
 
 		arg_50_0.filterView_ = nil
-	end
-
-	if arg_50_0.heroAvatarView_ then
-		arg_50_0.heroAvatarView_:Dispose()
-
-		arg_50_0.heroAvatarView_ = nil
 	end
 
 	if arg_50_0.assistFilterView_ then

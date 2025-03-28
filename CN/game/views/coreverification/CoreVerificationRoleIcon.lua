@@ -23,7 +23,7 @@ function var_0_0.SetData(arg_3_0, arg_3_1)
 			var_3_0 = arg_3_1
 		end
 
-		arg_3_0.icon_.sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. var_3_0)
+		arg_3_0.icon_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. var_3_0)
 	else
 		arg_3_0.emptyController_:SetSelectedState("true")
 	end

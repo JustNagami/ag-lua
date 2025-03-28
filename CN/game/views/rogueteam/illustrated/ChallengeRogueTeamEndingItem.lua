@@ -33,7 +33,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 	arg_5_0.cfg_ = RogueTeamEndingCfg[arg_5_0.id_]
 	arg_5_0.titleText_.text = arg_5_0.cfg_.story_name
 	arg_5_0.numText_.text = arg_5_0.index_ >= 10 and arg_5_0.index_ or "0" .. arg_5_0.index_
-	arg_5_0.image_.sprite = getSpriteWithoutAtlas(arg_5_0.cfg_.image)
+	arg_5_0.image_.sprite = pureGetSpriteWithoutAtlas(arg_5_0.cfg_.image)
 	arg_5_0.templateID_ = ChallengeRogueTeamData:GetCacheTemplateID()
 	arg_5_0.passCount = ChallengeRogueTeamData:GetHistoryEndingPassCnt(arg_5_0.templateID_, arg_5_0.id_)
 

@@ -289,6 +289,41 @@
 		name = "story_1041714.usm",
 		has_non_native = 0
 	},
+	["story_1042018.usm"] = {
+		has_tracks = 1,
+		name = "story_1042018.usm",
+		has_non_native = 0
+	},
+	["story_1032125.usm"] = {
+		has_tracks = 1,
+		name = "story_1032125.usm",
+		has_non_native = 0
+	},
+	["story_1042012.usm"] = {
+		has_tracks = 1,
+		name = "story_1042012.usm",
+		has_non_native = 0
+	},
+	["1032125.usm"] = {
+		has_tracks = 0,
+		name = "1032125.usm",
+		has_non_native = 0
+	},
+	["1076_skin02_activity_loop.usm"] = {
+		has_tracks = 0,
+		name = "1076_skin02_activity_loop.usm",
+		has_non_native = 0
+	},
+	["1076_skin02_activity_loop02.usm"] = {
+		has_tracks = 0,
+		name = "1076_skin02_activity_loop02.usm",
+		has_non_native = 0
+	},
+	["1076_skin02_activity_loop03.usm"] = {
+		has_tracks = 0,
+		name = "1076_skin02_activity_loop03.usm",
+		has_non_native = 0
+	},
 	["Farskyyard.usm"] = {
 		has_tracks = 0,
 		name = "Farskyyard.usm",
@@ -332,6 +367,46 @@
 	["CorgUI_3_10_PlotUI.usm"] = {
 		has_tracks = 0,
 		name = "CorgUI_3_10_PlotUI.usm",
+		has_non_native = 0
+	},
+	["login_1.usm"] = {
+		has_tracks = 0,
+		name = "login_1.usm",
+		has_non_native = 0
+	},
+	["login_2.usm"] = {
+		has_tracks = 0,
+		name = "login_2.usm",
+		has_non_native = 0
+	},
+	["login_3.usm"] = {
+		has_tracks = 0,
+		name = "login_3.usm",
+		has_non_native = 0
+	},
+	["login_4.usm"] = {
+		has_tracks = 0,
+		name = "login_4.usm",
+		has_non_native = 0
+	},
+	["Activity_Skuld_EntranceUI.usm"] = {
+		has_tracks = 0,
+		name = "Activity_Skuld_EntranceUI.usm",
+		has_non_native = 0
+	},
+	["Activity_Skuld_MianUI_start.usm"] = {
+		has_tracks = 0,
+		name = "Activity_Skuld_MianUI_start.usm",
+		has_non_native = 0
+	},
+	["Activity_Skuld_MianUI_loop.usm"] = {
+		has_tracks = 0,
+		name = "Activity_Skuld_MianUI_loop.usm",
+		has_non_native = 0
+	},
+	["V4_0_SkuldUI_PlotUI.usm"] = {
+		has_tracks = 0,
+		name = "V4_0_SkuldUI_PlotUI.usm",
 		has_non_native = 0
 	},
 	["blue.usm"] = {
@@ -387,6 +462,16 @@
 	["pool_1012.usm"] = {
 		has_tracks = 0,
 		name = "pool_1012.usm",
+		has_non_native = 0
+	},
+	["pool_1073.usm"] = {
+		has_tracks = 0,
+		name = "pool_1073.usm",
+		has_non_native = 0
+	},
+	["pool_1085.usm"] = {
+		has_tracks = 0,
+		name = "pool_1085.usm",
 		has_non_native = 0
 	},
 	["1070_start.usm"] = {
@@ -774,6 +859,26 @@
 		name = "1012_loop.usm",
 		has_non_native = 0
 	},
+	["1073_start.usm"] = {
+		has_tracks = 0,
+		name = "1073_start.usm",
+		has_non_native = 0
+	},
+	["1073_loop.usm"] = {
+		has_tracks = 0,
+		name = "1073_loop.usm",
+		has_non_native = 0
+	},
+	["1085_start.usm"] = {
+		has_tracks = 0,
+		name = "1085_start.usm",
+		has_non_native = 0
+	},
+	["1085_loop.usm"] = {
+		has_tracks = 0,
+		name = "1085_loop.usm",
+		has_non_native = 0
+	},
 	["1076_skin02_start.usm"] = {
 		has_tracks = 0,
 		name = "1076_skin02_start.usm",
@@ -907,6 +1012,16 @@
 	["107503_login.usm"] = {
 		has_tracks = 1,
 		name = "107503_login.usm",
+		has_non_native = 0
+	},
+	["107301_login.usm"] = {
+		has_tracks = 1,
+		name = "107301_login.usm",
+		has_non_native = 0
+	},
+	["108501_login.usm"] = {
+		has_tracks = 1,
+		name = "108501_login.usm",
 		has_non_native = 0
 	}
 }

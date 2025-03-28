@@ -103,11 +103,11 @@ function var_0_0.UpdateView(arg_13_0)
 	arg_13_0.skillTxt_.text = GetTips("ACTIVITY_COMBINE_GAME_HERO_SKILL")
 	arg_13_0.inbornTxt_.text = GetTips("ACTIVITY_COMBINE_GAME_HERO_FACTOR")
 	arg_13_0.lvTxt_.text = arg_13_0.lv == 999 and #var_13_0.level_unlock or arg_13_0.lv
-	arg_13_0.role1Img_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/" .. ActivityCombineHeroCfg[ActivityCombineHeroCfg.all[1]].icon)
-	arg_13_0.role2Img_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/" .. ActivityCombineHeroCfg[ActivityCombineHeroCfg.all[2]].icon)
+	arg_13_0.role1Img_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/" .. ActivityCombineHeroCfg[ActivityCombineHeroCfg.all[1]].icon)
+	arg_13_0.role2Img_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/" .. ActivityCombineHeroCfg[ActivityCombineHeroCfg.all[2]].icon)
 
 	TimeTools.StartAfterSeconds(0.01, function()
-		arg_13_0.roleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/" .. ActivityCombineHeroCfg[arg_13_0.roleId].image)
+		arg_13_0.roleImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/" .. ActivityCombineHeroCfg[arg_13_0.roleId].image)
 	end, {})
 	SetActive(arg_13_0.lvGo_, arg_13_0.lv ~= 999)
 

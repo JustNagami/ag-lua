@@ -153,7 +153,7 @@ function var_0_0.RefreshTitleUI(arg_19_0)
 	local var_19_0 = BattleRhythmGameStageCfg[arg_19_0.stageID_]
 
 	arg_19_0.textcheckpointnameText_.text = GetI18NText(var_19_0.name)
-	arg_19_0.bgImg_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_19_0.background_1))
+	arg_19_0.bgImg_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_19_0.background_1))
 end
 
 return var_0_0

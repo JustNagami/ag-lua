@@ -12,7 +12,7 @@
 
 		local var_1_1 = SandplayTaskMainCfg[arg_1_0]
 
-		if not arg_1_2 and var_1_1.hide_task == 1 then
+		if not arg_1_2 and var_1_1.hide_task ~= 0 then
 			return false
 		end
 
@@ -306,13 +306,13 @@ function var_0_0.IsCurMapMainQuest(arg_21_0)
 	end
 
 	local var_21_1 = SandplayTaskMainCfg[arg_21_0].activity_id
-	local var_21_2 = ActivitySandplayCfg[var_21_1]
+	local var_21_2 = QWorldMgr:GetActivityMap(var_21_1)
 
 	if not var_21_2 then
 		return false
 	end
 
-	return var_21_2.stage_id == var_21_0
+	return var_21_2 == var_21_0
 end
 
 function var_0_0.IsMainQuestFinish(arg_22_0)
@@ -344,55 +344,86 @@ function var_0_0.GetVisibleQuestIdList(arg_24_0, arg_24_1)
 	for iter_24_0, iter_24_1 in ipairs(var_24_1.taskIdList) do
 		local var_24_2 = QWorldQuestData:GetQuestData(iter_24_1)
 
-		if (var_24_2.status == QWorldQuestConst.QUEST_STATUS.IN_PROGRESS or var_24_2.status == QWorldQuestConst.QUEST_STATUS.FINISH and not arg_24_1) and SandplayTaskCfg[iter_24_1].hide_task ~= 1 then
+		if (var_24_2.status == QWorldQuestConst.QUEST_STATUS.IN_PROGRESS or var_24_2.status == QWorldQuestConst.QUEST_STATUS.FINISH and not arg_24_1) and SandplayTaskCfg[iter_24_1].hide_task == 0 then
 			table.insert(var_24_0, iter_24_1)
 		end
 	end
 
+	table.sort(var_24_0)
+
 	return var_24_0
 end
 
-function var_0_0.GetQuestProgressText(arg_25_0)
-	local var_25_0 = SandplayTaskCfg[arg_25_0]
+function var_0_0.GetLoadedQuestIdList(arg_25_0)
+	local var_25_0 = var_0_0.GetVisibleQuestIdList(arg_25_0)
+	local var_25_1 = {}
 
-	if var_25_0.condition == 61 then
-		local var_25_1 = var_25_0.additional_parameter
-		local var_25_2 = manager.time:parseTimeFromConfig({
+	for iter_25_0, iter_25_1 in ipairs(var_25_0) do
+		local var_25_2 = SandplayTaskCfg[iter_25_1]
+
+		if var_25_2 and var_25_2.is_unload == 1 then
+			table.clean(var_25_1)
+		end
+
+		table.insert(var_25_1, iter_25_1)
+	end
+
+	return var_25_1
+end
+
+function var_0_0.GetQuestProgress(arg_26_0)
+	local var_26_0 = QWorldQuestGraph:GetQuestLocalProgress(arg_26_0)
+
+	if var_26_0 then
+		return var_26_0
+	end
+
+	local var_26_1 = QWorldQuestData:GetQuestData(arg_26_0)
+
+	return var_26_1 and var_26_1.progress or -1
+end
+
+function var_0_0.GetQuestProgressText(arg_27_0)
+	local var_27_0 = SandplayTaskCfg[arg_27_0]
+
+	if var_27_0.condition == 61 then
+		local var_27_1 = var_27_0.additional_parameter
+		local var_27_2 = manager.time:parseTimeFromConfig({
 			{
-				var_25_1[1],
-				var_25_1[2],
-				var_25_1[3]
+				var_27_1[1],
+				var_27_1[2],
+				var_27_1[3]
 			},
 			{
-				var_25_1[4],
-				var_25_1[5],
-				var_25_1[6]
+				var_27_1[4],
+				var_27_1[5],
+				var_27_1[6]
 			}
 		})
 
-		return manager.time:GetLostTimeStr(var_25_2, nil, true)
-	elseif var_25_0.need > 1 then
-		local var_25_3 = QWorldQuestData:GetQuestData(arg_25_0)
+		return manager.time:GetLostTimeStr(var_27_2, nil, true)
+	elseif var_27_0.need > 1 then
+		local var_27_3 = QWorldQuestData:GetQuestData(arg_27_0)
 
-		return GetTipsF("VERIFY_ASSETS_PROCESSING_RATE", var_25_3.progress, var_25_0.need)
+		return GetTipsF("VERIFY_ASSETS_PROCESSING_RATE", QWorldQuestTool.GetQuestProgress(arg_27_0), var_27_0.need)
 	else
 		return ""
 	end
 end
 
-function var_0_0.MainQuestHasRealtimeProgress(arg_26_0)
-	if arg_26_0 == -1 then
+function var_0_0.MainQuestHasRealtimeProgress(arg_28_0)
+	if arg_28_0 == -1 then
 		return false
 	end
 
-	local var_26_0 = QWorldQuestData:GetMainQuestData(arg_26_0)
+	local var_28_0 = QWorldQuestData:GetMainQuestData(arg_28_0)
 
-	if not var_26_0 then
+	if not var_28_0 then
 		return false
 	end
 
-	for iter_26_0, iter_26_1 in ipairs(var_26_0.taskIdList) do
-		if QWorldQuestData:GetQuestData(iter_26_1).status == QWorldQuestConst.QUEST_STATUS.IN_PROGRESS and SandplayTaskCfg[iter_26_1].condition == 61 then
+	for iter_28_0, iter_28_1 in ipairs(var_28_0.taskIdList) do
+		if QWorldQuestData:GetQuestData(iter_28_1).status == QWorldQuestConst.QUEST_STATUS.IN_PROGRESS and SandplayTaskCfg[iter_28_1].condition == 61 then
 			return true
 		end
 	end

@@ -85,7 +85,7 @@ function var_0_0.UpdateView(arg_9_0)
 
 	local var_9_2 = HeroCfg[arg_9_0.heroId]
 
-	arg_9_0.roleIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/" .. arg_9_0.heroPlotList[1].hero_image_route)
+	arg_9_0.roleIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/" .. arg_9_0.heroPlotList[1].hero_image_route)
 	arg_9_0.nameTxt_.text = GetI18NText(var_9_2.suffix)
 
 	for iter_9_0 = 1, 6 do

@@ -85,6 +85,7 @@ function var_0_0.AddListeners(arg_7_0)
 			return
 		end
 
+		SequentialBattleTools.CheckHeroTeamList(arg_7_0.selectID_)
 		arg_7_0:Go("/sequentialBattleFactoryTeam", {
 			activityID = arg_7_0.selectID_
 		})
@@ -112,7 +113,7 @@ end
 function var_0_0.RefreshRightPanel(arg_14_0)
 	local var_14_0 = SequentialBattleChapterCfg[arg_14_0.selectID_]
 
-	arg_14_0.portraitImage_.sprite = getSpriteWithoutAtlas("TextureConfig/MardukUI/boss/Portrait/" .. var_14_0.portrait)
+	arg_14_0.portraitImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/MardukUI/boss/Portrait/" .. var_14_0.portrait)
 
 	arg_14_0.adaptImg_:AdaptImg()
 

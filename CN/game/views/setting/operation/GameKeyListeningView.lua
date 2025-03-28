@@ -92,7 +92,7 @@ function var_0_0.IsKeyLegal(arg_13_0, arg_13_1)
 
 	local var_13_1 = arg_13_0.gamepadType_
 
-	if LuaHidTools.IsKeyNotAllow(var_13_1, var_13_0) then
+	if LuaHidTools.IsKeyNotAllow(var_13_1, var_13_0, arg_13_0.params_.controlType) then
 		local var_13_2 = GetTipsF("INPUT_KEY_NOT_ALLOW", GetKeyCodeMappedName(var_13_0))
 
 		ShowTips(var_13_2)

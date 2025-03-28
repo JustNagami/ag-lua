@@ -161,4 +161,22 @@ function var_0_0.UpdateFirstSign()
 	end)
 end
 
+function var_0_0.UpdateFirstGearNewTag()
+	manager.net:SendWithLoadingNew(59020, {}, 59021, function(arg_20_0)
+		ActivityNoobData:SetFirstGearNewTag(false)
+	end)
+end
+
+function var_0_0.UpdateSecondGearNewTag()
+	manager.net:SendWithLoadingNew(59022, {}, 59023, function(arg_22_0)
+		ActivityNoobData:SetSecondGearNewTag(false)
+	end)
+end
+
+function var_0_0.UpdateBattlePassNewTag()
+	manager.net:SendWithLoadingNew(59024, {}, 59025, function(arg_24_0)
+		ActivityNoobData:SetBattlePassNewTag(false)
+	end)
+end
+
 return var_0_0

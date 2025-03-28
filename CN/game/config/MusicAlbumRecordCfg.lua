@@ -137,6 +137,24 @@
 		albumName = "Silence in the Rain",
 		verName = "雨声"
 	},
+	{
+		id = 24,
+		cover = "icon_CD_24",
+		albumName = "Everbloom Erythrina",
+		verName = "刺桐依旧"
+	},
+	{
+		id = 25,
+		cover = "icon_CD_25",
+		albumName = "Through the veil of dream",
+		verName = "溯梦之隙"
+	},
+	{
+		id = 26,
+		cover = "icon_CD_26",
+		albumName = "Transcendence of Suffering",
+		verName = "苦岸行旅"
+	},
 	all = {
 		1,
 		2,
@@ -160,6 +178,9 @@
 		20,
 		21,
 		22,
-		23
+		23,
+		24,
+		25,
+		26
 	}
 }

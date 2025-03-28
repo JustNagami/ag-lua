@@ -244,7 +244,7 @@ function var_0_0.PlayEventAnim(arg_29_0, arg_29_1, arg_29_2)
 	arg_29_0.tipsAnim_.enabled = false
 
 	if arg_29_1 ~= 0 then
-		arg_29_0.eventRoleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Fishing/FishPortrait/" .. SailGameEventCfg[arg_29_1].picture)
+		arg_29_0.eventRoleImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Fishing/FishPortrait/" .. SailGameEventCfg[arg_29_1].picture)
 	else
 		local var_29_0 = GameDisplayCfg.activity_skadi_sea_box_picture.value[1]
 		local var_29_1 = GameDisplayCfg.activity_skadi_sea_box_picture.value[2]

@@ -112,7 +112,7 @@ end
 function var_0_0.RefreshUI(arg_15_0)
 	local var_15_0 = BossChallengeUICfg[arg_15_0.bossID_]
 
-	arg_15_0.bossImage_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.BossLittlePaint.path, var_15_0.icon))
+	arg_15_0.bossImage_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.BossLittlePaint.path, var_15_0.icon))
 	arg_15_0.bossAffixText_.text = getAffixDesc(var_15_0.custom_affix)
 
 	arg_15_0:ChooseCondition()

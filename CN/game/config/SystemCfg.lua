@@ -407,6 +407,18 @@
 			}
 		}
 	},
+	[335] = {
+		operation_stop_id = 0,
+		id = 335,
+		system_hide = 0,
+		sound_impact = "",
+		open_condition = {
+			{
+				1,
+				30
+			}
+		}
+	},
 	[336] = {
 		operation_stop_id = 0,
 		id = 336,
@@ -1122,6 +1134,18 @@
 			}
 		}
 	},
+	[3001] = {
+		operation_stop_id = 0,
+		id = 3001,
+		system_hide = 0,
+		sound_impact = "",
+		open_condition = {
+			{
+				1,
+				30
+			}
+		}
+	},
 	[10101] = {
 		operation_stop_id = 301,
 		id = 10101,
@@ -1251,6 +1275,18 @@
 			{
 				1,
 				35
+			}
+		}
+	},
+	[10703] = {
+		operation_stop_id = 0,
+		id = 10703,
+		system_hide = 0,
+		sound_impact = "",
+		open_condition = {
+			{
+				2,
+				1010112
 			}
 		}
 	},
@@ -1421,6 +1457,7 @@
 		332,
 		333,
 		334,
+		335,
 		336,
 		337,
 		341,
@@ -1479,6 +1516,7 @@
 		2701,
 		2801,
 		2901,
+		3001,
 		10101,
 		10102,
 		10301,
@@ -1490,6 +1528,7 @@
 		10601,
 		10701,
 		10702,
+		10703,
 		9901,
 		9902,
 		9903,

@@ -32,7 +32,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1)
 
 	local var_6_0 = PolyhedronBeaconCfg[arg_6_1]
 
-	arg_6_0.icon_.sprite = getSpriteWithoutAtlas(PolyhedronConst.BEACON_ICON_PATH .. var_6_0.icon)
+	arg_6_0.icon_.sprite = pureGetSpriteWithoutAtlas(PolyhedronConst.BEACON_ICON_PATH .. var_6_0.icon)
 end
 
 function var_0_0.RegistCallBack(arg_7_0, arg_7_1)

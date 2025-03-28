@@ -24,6 +24,8 @@ end
 function var_0_0.Init(arg_3_0)
 	arg_3_0:InitUI()
 	arg_3_0:AddUIListeners()
+
+	arg_3_0.OnHideMenuHanlder_ = handler(arg_3_0, arg_3_0.OnHideMenu)
 end
 
 function var_0_0.InitUI(arg_4_0)
@@ -72,11 +74,6 @@ function var_0_0.AddUIListeners(arg_5_0)
 	arg_5_0:AddBtnListener(arg_5_0.bgBtn_, nil, function()
 		arg_5_0:Back()
 	end)
-	arg_5_0:AddBtnListener(arg_5_0.sceneBtn_, nil, function()
-		local var_15_0 = HomeSceneSettingData:GetCurScene()
-
-		JumpTools.OpenPageByJump("/scenePreview")
-	end)
 	arg_5_0:AddBtnListener(arg_5_0.userCenterBtn_, nil, function()
 		NeedGameUserInfo()
 		GameToSDK.GoUserCenter()
@@ -120,16 +117,16 @@ function var_0_0.AddUIListeners(arg_5_0)
 			activityID = ActivityConst.SIGN
 		}, ViewConst.SYSTEM_ID.SIGN)
 	end
-	arg_5_0.menuFunctionList_[MenuPopConst.Announcement] = function(arg_24_0)
+	arg_5_0.menuFunctionList_[MenuPopConst.Announcement] = function(arg_23_0)
 		OperationRecorder.RecordButtonTouch("homepage_expand_8")
 
-		local var_24_0 = arg_24_0:GetBulletinID()
+		local var_23_0 = arg_23_0:GetBulletinID()
 
-		if var_24_0 == false then
+		if var_23_0 == false then
 			ShowTips("NO_ANNOUNCEMENT")
 		else
 			JumpTools.OpenPageByJump("bulletin", {
-				bulletinID = var_24_0
+				bulletinID = var_23_0
 			}, ViewConst.SYSTEM_ID.ANNOUNCEMENT)
 		end
 	end
@@ -147,28 +144,28 @@ function var_0_0.AddUIListeners(arg_5_0)
 	arg_5_0.menuFunctionList_[MenuPopConst.Infomation] = function()
 		OperationRecorder.RecordButtonTouch("homepage_expand_17")
 
+		local var_25_0 = {
+			userId = PlayerData:GetPlayerInfo().userID,
+			signUserId = PlayerData:GetPlayerInfo().signUserId
+		}
+
+		OperationAction.OpenOperationUrl("INFORMATION_URL", var_25_0)
+		RedPointAction.HandleRedPoint(RED_POINT_ID.INFOMATION)
+		manager.redPoint:setTip(RedPointConst.INFOMATION, 0)
+	end
+	arg_5_0.menuFunctionList_[MenuPopConst.Forum] = function()
 		local var_26_0 = {
 			userId = PlayerData:GetPlayerInfo().userID,
 			signUserId = PlayerData:GetPlayerInfo().signUserId
 		}
 
-		OperationAction.OpenOperationUrl("INFORMATION_URL", var_26_0)
-		RedPointAction.HandleRedPoint(RED_POINT_ID.INFOMATION)
-		manager.redPoint:setTip(RedPointConst.INFOMATION, 0)
-	end
-	arg_5_0.menuFunctionList_[MenuPopConst.Forum] = function()
-		local var_27_0 = {
-			userId = PlayerData:GetPlayerInfo().userID,
-			signUserId = PlayerData:GetPlayerInfo().signUserId
-		}
-
 		if _G.ChannelLoginInfo ~= nil then
-			var_27_0.gameAppId = _G.ChannelLoginInfo.channelAppId
-			var_27_0.token = _G.ChannelLoginInfo.channelToken
+			var_26_0.gameAppId = _G.ChannelLoginInfo.channelAppId
+			var_26_0.token = _G.ChannelLoginInfo.channelToken
 		end
 
 		OperationRecorder.RecordButtonTouch("homepage_expand_12")
-		OperationAction.OpenOperationUrl("FORUM_URL", var_27_0)
+		OperationAction.OpenOperationUrl("FORUM_URL", var_26_0)
 		RedPointAction.HandleNeedRedPoint(RED_POINT_ID.FORUM)
 		SDKTools.SendMessageToSDK("direction", {
 			direction_type = 8,
@@ -196,10 +193,10 @@ function var_0_0.AddUIListeners(arg_5_0)
 		})
 	end
 	arg_5_0.menuFunctionList_[MenuPopConst.Shop] = function()
-		local var_30_0 = {}
+		local var_29_0 = {}
 
 		OperationRecorder.RecordButtonTouch("homepage_expand_14")
-		OperationAction.OpenOperationUrl("SHOPPING_URL", var_30_0)
+		OperationAction.OpenOperationUrl("SHOPPING_URL", var_29_0)
 		RedPointAction.HandleNeedRedPoint(RED_POINT_ID.SHOP_TAOBAO)
 		manager.redPoint:setTip(RedPointConst.SHOP_TAOBAO, 0)
 		SDKTools.SendMessageToSDK("direction", {
@@ -210,12 +207,12 @@ function var_0_0.AddUIListeners(arg_5_0)
 	arg_5_0.menuFunctionList_[MenuPopConst.Inquery] = function()
 		OperationRecorder.RecordButtonTouch("homepage_expand_15")
 
-		local var_31_0 = {
+		local var_30_0 = {
 			userId = PlayerData:GetPlayerInfo().userID,
 			signUserId = PlayerData:GetPlayerInfo().signUserId
 		}
 
-		OperationAction.OpenOperationUrl("INQUERY_URL", var_31_0)
+		OperationAction.OpenOperationUrl("INQUERY_URL", var_30_0)
 		SDKTools.SendMessageToSDK("direction", {
 			direction_type = 6,
 			direction_channel = 4
@@ -223,12 +220,12 @@ function var_0_0.AddUIListeners(arg_5_0)
 	end
 	arg_5_0.menuFunctionList_[MenuPopConst.Suggest] = function()
 		if GameToSDK.IsPCPlatform() then
-			local var_32_0 = {
+			local var_31_0 = {
 				userId = PlayerData:GetPlayerInfo().userID,
 				signUserId = PlayerData:GetPlayerInfo().signUserId
 			}
 
-			OperationAction.OpenOperationUrl("PC_FEEDBACK", var_32_0)
+			OperationAction.OpenOperationUrl("PC_FEEDBACK", var_31_0)
 			manager.redPoint:setTip(RedPointConst.CUSTOMER_SERVICE_UNREAD, 0)
 		else
 			OperationRecorder.RecordButtonTouch("homepage_expand_16")
@@ -253,12 +250,12 @@ function var_0_0.AddUIListeners(arg_5_0)
 	arg_5_0.menuFunctionList_[MenuPopConst.Activity] = function()
 		OperationRecorder.RecordButtonTouch("homepage_expand_13")
 
-		local var_34_0 = {
+		local var_33_0 = {
 			userId = PlayerData:GetPlayerInfo().userID,
 			signUserId = PlayerData:GetPlayerInfo().signUserId
 		}
 
-		OperationAction.OpenOperationUrl("ACTIVITY_URL", var_34_0)
+		OperationAction.OpenOperationUrl("ACTIVITY_URL", var_33_0)
 		RedPointAction.HandleNeedRedPoint(RED_POINT_ID.ACTIVITY)
 		manager.redPoint:setTip(RedPointConst.OPERATION_ACTIVITY, 0)
 	end
@@ -270,125 +267,172 @@ function var_0_0.AddUIListeners(arg_5_0)
 			direction_channel = 4
 		})
 	end
+	arg_5_0.menuFunctionList_[MenuPopConst.friend] = function()
+		local var_35_0 = ViewConst.SYSTEM_ID.FRIEND
+		local var_35_1 = JumpTools.IsSystemLocked(var_35_0)
+
+		if var_35_0 and var_35_1 then
+			ShowTips(JumpTools.GetSystemLockedTip(var_35_0, var_35_1))
+
+			return
+		end
+
+		FriendsAction:TryToRefreshFriendsView(FriendsConst.FRIEND_TYPE.MY_FRIENDS, function()
+			OperationRecorder.RecordButtonTouch("homepage_firend")
+			JumpTools.GoToSystem("/friendsUI", {
+				friendPage = FriendsConst.FRIEND_TYPE.MY_FRIENDS
+			}, ViewConst.SYSTEM_ID.FRIEND)
+		end)
+	end
 end
 
-function var_0_0.OnEnter(arg_36_0)
-	arg_36_0.btnList_ = {}
+function var_0_0.OnEnter(arg_37_0)
+	arg_37_0.btnList_ = {}
 
-	arg_36_0:RefreshBtnOpen()
-	arg_36_0:RefreshLock()
-	arg_36_0.menuList_:StartScroll(#arg_36_0.btnList_)
-	arg_36_0:RefreshMusic()
-	arg_36_0:BindRedPointUI()
+	arg_37_0:RefreshBtnOpen()
+	arg_37_0:RefreshLock()
+	arg_37_0.menuList_:StartScroll(#arg_37_0.btnList_)
+	arg_37_0:RefreshMusic()
+	arg_37_0:BindRedPointUI()
+	arg_37_0:CheckPosterGirlDebut()
+	manager.notify:RegistListener(HOME_HIDE_MENU_POP, arg_37_0.OnHideMenuHanlder_)
 end
 
-function var_0_0.IndexMenuItem(arg_37_0, arg_37_1, arg_37_2)
-	local var_37_0 = arg_37_0.btnList_[arg_37_1]
+function var_0_0.IndexMenuItem(arg_38_0, arg_38_1, arg_38_2)
+	local var_38_0 = arg_38_0.btnList_[arg_38_1]
 
-	arg_37_2:SetData(var_37_0, arg_37_0.menuFunctionList_[var_37_0.id])
+	arg_38_2:SetData(var_38_0, arg_38_0.menuFunctionList_[var_38_0.id])
+	arg_38_2:UnBindRedPointUI()
+	arg_38_2:BindRedPointUI()
 end
 
-function var_0_0.RefreshBtnOpen(arg_38_0)
-	local var_38_0 = OperationData:GetOperationOpenList()
-	local var_38_1 = PlayerData:GetPlayerInfo().userLevel
+function var_0_0.RefreshBtnOpen(arg_39_0)
+	local var_39_0 = OperationData:GetOperationOpenList()
+	local var_39_1 = PlayerData:GetPlayerInfo().userLevel
 
-	SetActive(arg_38_0.userCenterBtn_.gameObject, table.keyof(var_38_0, OperationConst.USER_CENTER) ~= nil and var_38_1 >= SystemCfg[var_0_1.userCenter].open_condition[1][2])
+	SetActive(arg_39_0.userCenterBtn_.gameObject, table.keyof(var_39_0, OperationConst.USER_CENTER) ~= nil and var_39_1 >= SystemCfg[var_0_1.userCenter].open_condition[1][2])
 
-	local var_38_2 = clone(MenuPopConst.MenuBtnList)
+	local var_39_2 = clone(MenuPopConst.MenuBtnList)
 
-	for iter_38_0, iter_38_1 in ipairs(var_38_2) do
-		if not MenuPopConst.MenuToOperation[iter_38_0] or table.keyof(var_38_0, MenuPopConst.MenuToOperation[iter_38_0]) ~= nil and var_38_1 >= SystemCfg[iter_38_1.systemId].open_condition[1][2] then
-			if iter_38_1.id ~= MenuPopConst.Cooperation then
-				table.insert(arg_38_0.btnList_, iter_38_1)
+	for iter_39_0, iter_39_1 in ipairs(var_39_2) do
+		if not MenuPopConst.MenuToOperation[iter_39_0] or table.keyof(var_39_0, MenuPopConst.MenuToOperation[iter_39_0]) ~= nil and var_39_1 >= SystemCfg[iter_39_1.systemId].open_condition[1][2] then
+			if iter_39_1.id ~= MenuPopConst.Cooperation then
+				if iter_39_1.id ~= MenuPopConst.Guide then
+					table.insert(arg_39_0.btnList_, iter_39_1)
+				end
 			elseif CooperationTools.GetShowInviteRoot() then
-				table.insert(arg_38_0.btnList_, iter_38_1)
+				table.insert(arg_39_0.btnList_, iter_39_1)
 			end
 		end
 	end
+
+	table.sort(arg_39_0.btnList_, function(arg_40_0, arg_40_1)
+		local var_40_0 = arg_40_0.sort and arg_40_0.sort or 0
+		local var_40_1 = arg_40_1.sort and arg_40_1.sort or 0
+
+		if var_40_0 == var_40_1 then
+			return arg_40_0.id < arg_40_1.id
+		end
+
+		return var_40_1 < var_40_0
+	end)
 end
 
-function var_0_0.RefreshLock(arg_39_0)
-	for iter_39_0, iter_39_1 in ipairs(arg_39_0.btnList_) do
-		if iter_39_1.id == MenuPopConst.Chip then
-			iter_39_1.lock = JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.CHIP_MANAGER)
-		elseif iter_39_1.id == MenuPopConst.Explore then
-			iter_39_1.lock = JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.ADMIN_CAT_EXPLORE)
+function var_0_0.RefreshLock(arg_41_0)
+	for iter_41_0, iter_41_1 in ipairs(arg_41_0.btnList_) do
+		if iter_41_1.id == MenuPopConst.Chip then
+			iter_41_1.lock = JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.CHIP_MANAGER)
+		elseif iter_41_1.id == MenuPopConst.Explore then
+			iter_41_1.lock = JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.ADMIN_CAT_EXPLORE)
+		elseif iter_41_1.id == MenuPopConst.friend then
+			local var_41_0 = ViewConst.SYSTEM_ID.FRIEND
+
+			iter_41_1.lock = JumpTools.IsSystemLocked(var_41_0)
 		end
 	end
 end
 
-function var_0_0.RefreshMusic(arg_40_0)
-	local var_40_0 = MusicRecordCfg.all[1]
-	local var_40_1 = GetHomeMusicID()
+function var_0_0.RefreshMusic(arg_42_0)
+	local var_42_0 = MusicRecordCfg.all[1]
+	local var_42_1 = GetHomeMusicID()
 
-	if var_40_1 ~= 0 and MusicRecordCfg[var_40_1] then
-		var_40_0 = var_40_1
+	if var_42_1 ~= 0 and MusicRecordCfg[var_42_1] then
+		var_42_0 = var_42_1
 	else
-		local var_40_2 = manager.audio:GetBgmPlayer()
+		local var_42_2 = manager.audio:GetBgmPlayer()
 
-		if var_40_2 then
-			local var_40_3 = var_40_2.cueName or ""
-			local var_40_4 = var_40_2.cueSheet or ""
+		if var_42_2 then
+			local var_42_3 = var_42_2.cueName or ""
+			local var_42_4 = var_42_2.cueSheet or ""
 
-			if var_40_3 ~= "" and var_40_4 ~= "" then
-				local var_40_5 = MusicRecordCfg.all
+			if var_42_3 ~= "" and var_42_4 ~= "" then
+				local var_42_5 = MusicRecordCfg.all
 
-				for iter_40_0, iter_40_1 in ipairs(var_40_5) do
-					local var_40_6 = MusicRecordCfg[iter_40_1]
+				for iter_42_0, iter_42_1 in ipairs(var_42_5) do
+					local var_42_6 = MusicRecordCfg[iter_42_1]
 
-					if var_40_6.cueName == var_40_3 and var_40_6.cuesheet == var_40_4 then
-						var_40_0 = iter_40_1
+					if var_42_6.cueName == var_42_3 and var_42_6.cuesheet == var_42_4 then
+						var_42_0 = iter_42_1
 					end
 				end
 			end
 		end
 	end
 
-	arg_40_0.musicTxt_.text = GetI18NText(MusicRecordCfg[var_40_0].musicName)
+	arg_42_0.musicTxt_.text = GetI18NText(MusicRecordCfg[var_42_0].musicName)
 end
 
-function var_0_0.BindRedPointUI(arg_41_0)
-	manager.redPoint:bindUIandKey(arg_41_0.settingBtn_.transform, RedPointConst.SETTING_NEW_FUNCTION)
-	manager.redPoint:bindUIandKey(arg_41_0.taskBtn_.transform, RedPointConst.TASK)
-	manager.redPoint:bindUIandKey(arg_41_0.mailBtn_.transform, RedPointConst.MAIL_UNREAD)
-	manager.redPoint:bindUIandKey(arg_41_0.sceneBtn_.transform, RedPointConst.SCENE)
+function var_0_0.BindRedPointUI(arg_43_0)
+	manager.redPoint:bindUIandKey(arg_43_0.settingBtn_.transform, RedPointConst.SETTING_NEW_FUNCTION)
+	manager.redPoint:bindUIandKey(arg_43_0.taskBtn_.transform, RedPointConst.TASK)
+	manager.redPoint:bindUIandKey(arg_43_0.mailBtn_.transform, RedPointConst.MAIL_UNREAD)
 end
 
-function var_0_0.UnBindRedPointUI(arg_42_0)
-	manager.redPoint:unbindUIandKey(arg_42_0.settingBtn_.transform, RedPointConst.SETTING_NEW_FUNCTION)
-	manager.redPoint:unbindUIandKey(arg_42_0.taskBtn_.transform, RedPointConst.TASK)
-	manager.redPoint:unbindUIandKey(arg_42_0.mailBtn_.transform, RedPointConst.MAIL_UNREAD)
-	manager.redPoint:unbindUIandKey(arg_42_0.sceneBtn_.transform, RedPointConst.SCENE)
+function var_0_0.UnBindRedPointUI(arg_44_0)
+	manager.redPoint:unbindUIandKey(arg_44_0.settingBtn_.transform, RedPointConst.SETTING_NEW_FUNCTION)
+	manager.redPoint:unbindUIandKey(arg_44_0.taskBtn_.transform, RedPointConst.TASK)
+	manager.redPoint:unbindUIandKey(arg_44_0.mailBtn_.transform, RedPointConst.MAIL_UNREAD)
 end
 
-function var_0_0.OnTop(arg_43_0)
+function var_0_0.CheckPosterGirlDebut(arg_45_0)
+	if PlayerData:GetPosterGirlDebut() then
+		arg_45_0:OnHideMenu(true)
+	end
+end
+
+function var_0_0.OnHideMenu(arg_46_0, arg_46_1)
+	SetActive(arg_46_0.gameObject_, not arg_46_1)
+end
+
+function var_0_0.OnTop(arg_47_0)
 	return
 end
 
-function var_0_0.OnExit(arg_44_0)
-	if arg_44_0.menuList_ then
-		local var_44_0 = arg_44_0.menuList_:GetItemList()
+function var_0_0.OnExit(arg_48_0)
+	if arg_48_0.menuList_ then
+		local var_48_0 = arg_48_0.menuList_:GetItemList()
 
-		for iter_44_0, iter_44_1 in ipairs(var_44_0) do
-			iter_44_1:OnExit()
+		for iter_48_0, iter_48_1 in ipairs(var_48_0) do
+			iter_48_1:OnExit()
 		end
 	end
 
-	arg_44_0:UnBindRedPointUI()
+	arg_48_0:UnBindRedPointUI()
+	manager.notify:RemoveListener(HOME_HIDE_MENU_POP, arg_48_0.OnHideMenuHanlder_)
 end
 
-function var_0_0.Dispose(arg_45_0)
-	arg_45_0:RemoveAllListeners()
+function var_0_0.Dispose(arg_49_0)
+	arg_49_0:RemoveAllListeners()
 
-	if arg_45_0.menuList_ then
-		arg_45_0.menuList_:Dispose()
+	if arg_49_0.menuList_ then
+		arg_49_0.menuList_:Dispose()
 	end
 
-	var_0_0.super.Dispose(arg_45_0)
+	var_0_0.super.Dispose(arg_49_0)
 end
 
-function var_0_0.OnExitInput(arg_46_0)
-	arg_46_0:Back()
+function var_0_0.OnExitInput(arg_50_0)
+	arg_50_0:Back()
 end
 
 return var_0_0

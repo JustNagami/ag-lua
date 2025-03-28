@@ -76,7 +76,7 @@ function var_0_0.SetServantID(arg_3_0, arg_3_1)
 
 			arg_3_0.context.oldAtlas = "TextureConfig/WeaponServant/Portrait/" .. arg_3_1
 
-			arg_3_0.context.adaptiveSpriteComps:SetSprite(getSpriteWithoutAtlas(arg_3_0.context.oldAtlas), var_3_2 ~= nil, var_3_3 ~= nil, var_3_2 or 0, var_3_3 or 0, var_3_6, var_3_4 or 1)
+			arg_3_0.context.adaptiveSpriteComps:SetSprite(AtlasManager.GetSpriteWithoutAtlas(arg_3_0.context.oldAtlas), var_3_2 ~= nil, var_3_3 ~= nil, var_3_2 or 0, var_3_3 or 0, var_3_6, var_3_4 or 1)
 			SetActive(arg_3_0.context.obj, true)
 
 			var_3_0 = true

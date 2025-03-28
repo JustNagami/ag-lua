@@ -134,7 +134,6 @@ end
 
 function var_0_1.OnEnter(arg_6_0)
 	arg_6_0:UpdateData()
-	arg_6_0:ProcessCamera()
 	arg_6_0:UpdateBar()
 	arg_6_0:ProcessParams()
 	arg_6_0:SubViewOnEnter()
@@ -162,6 +161,7 @@ function var_0_1.UpdateData(arg_9_0)
 	arg_9_0.difficult = arg_9_0.params_.difficult
 	arg_9_0.multHeroList = arg_9_0:GetMultHeartDemonTeam()
 	arg_9_0.clickIndex = arg_9_0.params_.clickIndex or 1
+	arg_9_0.params_.selectHeroPos = arg_9_0.clickIndex
 	arg_9_0.isMult = false
 	arg_9_0.multBtn_.isOn = false
 	arg_9_0.isLock = arg_9_0.params_.isLock
@@ -359,7 +359,6 @@ function var_0_1.OnListChange(arg_20_0, arg_20_1, arg_20_2)
 
 	if #arg_20_0.heroDataList_ == 0 then
 		arg_20_0.emptyController_:SetSelectedState("true")
-		arg_20_0.heroAvatarView_:ShowHeroModel(false)
 	else
 		arg_20_0.emptyController_:SetSelectedState("false")
 
@@ -368,8 +367,6 @@ function var_0_1.OnListChange(arg_20_0, arg_20_1, arg_20_2)
 		else
 			arg_20_0.params_.isEnter = false
 		end
-
-		arg_20_0.heroAvatarView_:ShowHeroModel(true)
 	end
 end
 

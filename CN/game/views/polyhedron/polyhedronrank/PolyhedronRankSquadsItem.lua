@@ -16,14 +16,14 @@ end
 function var_0_0.SetData(arg_3_0, arg_3_1, arg_3_2)
 	if HeroStandardSystemCfg[arg_3_1.id] ~= nil then
 		arg_3_0.heroID_ = HeroStandardSystemCfg[arg_3_1.id].hero_id
-		arg_3_0.portraitImg_.sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroIcon.path .. arg_3_1.skin_id)
+		arg_3_0.portraitImg_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroIcon.path .. arg_3_1.skin_id)
 	else
 		arg_3_0.heroID_ = arg_3_1.hero_id
 
 		if not arg_3_1.skin_id or arg_3_1.skin_id == 0 then
-			arg_3_0.portraitImg_.sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroIcon.path .. arg_3_0.heroID_)
+			arg_3_0.portraitImg_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroIcon.path .. arg_3_0.heroID_)
 		else
-			arg_3_0.portraitImg_.sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroIcon.path .. arg_3_1.skin_id)
+			arg_3_0.portraitImg_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroIcon.path .. arg_3_1.skin_id)
 		end
 	end
 

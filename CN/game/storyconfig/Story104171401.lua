@@ -691,9 +691,6 @@
 				SetActive(arg_18_1.allBtn_.gameObject, false)
 				arg_18_1.hideBtnsController_:SetSelectedIndex(1)
 				arg_18_1:StopAllVoice()
-
-				arg_18_1.marker = "104170101stop"
-
 				manager.video:Play("SofdecAsset/story/story_1041714.usm", function(arg_22_0)
 					if arg_18_1.state_ == "playing" then
 						arg_18_1:JumpToEnd()
@@ -721,12 +718,33 @@
 			end
 
 			if arg_18_1.time_ >= var_21_0 + var_21_1 and arg_18_1.time_ < var_21_0 + var_21_1 + arg_21_0 then
-				arg_18_1.marker = ""
+				-- block empty
 			end
 
-			local var_21_2 = 0
+			local var_21_2 = 32.4666666666667
 
 			if var_21_2 < arg_18_1.time_ and arg_18_1.time_ <= var_21_2 + arg_21_0 then
+				SetActive(arg_18_1.dialog_, true)
+				SetActive(arg_18_1.allBtn_.gameObject, true)
+				arg_18_1.hideBtnsController_:SetSelectedIndex(0)
+				manager.video:Dispose()
+
+				arg_18_1.isInLoopVideo = false
+			end
+
+			local var_21_3 = 0.199999999999996
+
+			if var_21_2 <= arg_18_1.time_ and arg_18_1.time_ < var_21_2 + var_21_3 then
+				-- block empty
+			end
+
+			if arg_18_1.time_ >= var_21_2 + var_21_3 and arg_18_1.time_ < var_21_2 + var_21_3 + arg_21_0 then
+				-- block empty
+			end
+
+			local var_21_4 = 0
+
+			if var_21_4 < arg_18_1.time_ and arg_18_1.time_ <= var_21_4 + arg_21_0 then
 				arg_18_1.fswbg_:SetActive(false)
 				arg_18_1.dialog_:SetActive(false)
 				arg_18_1:ShowNextGo(false)
@@ -965,6 +983,8 @@
 				SetActive(arg_24_1.allBtn_.gameObject, true)
 				arg_24_1.hideBtnsController_:SetSelectedIndex(0)
 				manager.video:Dispose()
+
+				arg_24_1.isInLoopVideo = false
 			end
 
 			local var_27_52 = 0.1
@@ -12601,8 +12621,5 @@
 	},
 	voices = {
 		"story_v_out_417141.awb"
-	},
-	skipMarkers = {
-		417141005
 	}
 }

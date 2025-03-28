@@ -72,7 +72,7 @@ function var_0_0.RefreshSelfRank(arg_11_0)
 	local var_11_0 = PlayerData:GetPlayerInfo()
 
 	arg_11_0.icon_.sprite = ItemTools.getItemSprite(var_11_0 and var_11_0.portrait)
-	arg_11_0.frame_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_11_0.icon_frame)
+	arg_11_0.frame_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Frame/" .. var_11_0.icon_frame)
 	arg_11_0.name_.text = var_11_0.nick
 
 	if arg_11_0.curRankType_ == var_0_1.ALL then

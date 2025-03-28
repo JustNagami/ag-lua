@@ -64,9 +64,9 @@ function var_0_0.UpdateView(arg_8_0)
 		arg_8_0.stateController:SetSelectedState(arg_8_0.data.canUse and "normal" or "lock")
 	end
 
-	arg_8_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Managecat_s/" .. var_8_0.meow_icon)
-	arg_8_0.skillImg1_.sprite = getSpriteWithoutAtlas("TextureConfig/Chip/" .. var_8_2.inborn_icon)
-	arg_8_0.skillImg2_.sprite = getSpriteWithoutAtlas("TextureConfig/Chip/" .. var_8_1.skill_icon)
+	arg_8_0.iconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Managecat_s/" .. var_8_0.meow_icon)
+	arg_8_0.skillImg1_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Chip/" .. var_8_2.inborn_icon)
+	arg_8_0.skillImg2_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Chip/" .. var_8_1.skill_icon)
 end
 
 function var_0_0.OnEnter(arg_9_0)

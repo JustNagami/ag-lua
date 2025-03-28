@@ -122,7 +122,7 @@ function var_0_0.UpdateView(arg_14_0)
 
 	local var_14_0 = arg_14_0.selectDifficulty == 3 and "SoloHeartDemonUI_00026" or "SoloHeartDemonUI_00012"
 
-	arg_14_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas("TextureConfig/SoloHeartDemonUI/" .. var_14_0)
+	arg_14_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = pureGetSpriteWithoutAtlas("TextureConfig/SoloHeartDemonUI/" .. var_14_0)
 
 	if arg_14_0.selectDifficulty == 3 and arg_14_0.hardEffect_.activeSelf == false then
 		manager.audio:PlayEffect("minigame_activity_2_4", "minigame_activity_2_4_xinmo_turn", "")

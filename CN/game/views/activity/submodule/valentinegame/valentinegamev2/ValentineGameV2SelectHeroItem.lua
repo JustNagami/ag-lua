@@ -40,7 +40,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1)
 	arg_6_0.activityID_ = arg_6_1
 	arg_6_0.cfg_ = ActivityValentineCfg[arg_6_0.activityID_]
 	arg_6_0.nameText_.text = arg_6_0.cfg_.name
-	arg_6_0.iconImage_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/Role/" .. arg_6_0.cfg_.hero_id)
+	arg_6_0.iconImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/Role/" .. arg_6_0.cfg_.hero_id)
 
 	arg_6_0:RefreshStatus()
 	manager.redPoint:bindUIandKey(arg_6_0.redTrans_, RedPointConst.VALENTINE_GAME .. "_" .. arg_6_0.activityID_)

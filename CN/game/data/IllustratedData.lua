@@ -10,13 +10,8 @@ local var_0_8 = {}
 local var_0_9 = {}
 local var_0_10 = 0
 local var_0_11 = {}
-local var_0_12 = {}
-local var_0_13 = {}
-local var_0_14 = {}
-local var_0_15 = {}
-local var_0_16 = {}
 
-local function var_0_17(arg_1_0)
+local function var_0_12(arg_1_0)
 	if arg_1_0 == CollectConst.INFORMATION then
 		return var_0_2
 	end
@@ -105,14 +100,30 @@ function var_0_0.InitData(arg_2_0, arg_2_1)
 		}
 	end
 
-	for iter_2_14, iter_2_15 in ipairs(arg_2_1.affix_info) do
-		var_0_9[iter_2_15.id] = {
-			id = iter_2_15.id,
-			is_view = iter_2_15.is_view
+	for iter_2_14, iter_2_15 in ipairs(CollectPictureCfg.get_id_list_by_type[5]) do
+		vid = CollectPictureCfg[iter_2_15].id
+		var_0_8[vid] = {
+			is_receive = 1,
+			is_view = 1,
+			id = vid
 		}
 	end
 
-	var_0_0:InitComData()
+	for iter_2_16, iter_2_17 in ipairs(CollectPictureCfg.get_id_list_by_type[6]) do
+		vid = CollectPictureCfg[iter_2_17].id
+		var_0_8[vid] = {
+			is_receive = 1,
+			is_view = 1,
+			id = vid
+		}
+	end
+
+	for iter_2_18, iter_2_19 in ipairs(arg_2_1.affix_info) do
+		var_0_9[iter_2_19.id] = {
+			id = iter_2_19.id,
+			is_view = iter_2_19.is_view
+		}
+	end
 end
 
 function var_0_0.GetIntelligenceReward(arg_3_0)
@@ -144,7 +155,7 @@ function var_0_0.GetAffixInfo(arg_9_0)
 end
 
 function var_0_0.GetInfoIsView(arg_10_0, arg_10_1, arg_10_2)
-	local var_10_0 = var_0_17(arg_10_1)
+	local var_10_0 = var_0_12(arg_10_1)
 
 	if not var_10_0[arg_10_2] then
 		return 0
@@ -360,7 +371,7 @@ function var_0_0.SaveLoadingSet(arg_30_0, arg_30_1)
 		table.insert(var_0_11[var_30_0], iter_30_1)
 	end
 
-	var_0_0:ResetLoading()
+	LoadingUI:ResetLoading()
 end
 
 function var_0_0.ChangeLoadingSet(arg_31_0, arg_31_1, arg_31_2)
@@ -376,95 +387,13 @@ function var_0_0.ChangeLoadingSet(arg_31_0, arg_31_1, arg_31_2)
 		table.remove(var_0_11[var_31_0], table.indexof(var_0_11[var_31_0], arg_31_2))
 	end
 
-	var_0_0:ResetLoading()
+	LoadingUI:ResetLoading()
 end
 
 function var_0_0.IsInLoadingSet(arg_32_0, arg_32_1)
 	local var_32_0 = CollectPictureCfg[arg_32_1].type
 
 	return var_0_11[var_32_0] and table.indexof(var_0_11[var_32_0], arg_32_1) ~= false
-end
-
-function var_0_0.InitComData(arg_33_0)
-	var_0_12 = {}
-	var_0_13 = {}
-
-	for iter_33_0, iter_33_1 in ipairs(LoadingTipsPoolCfg.all) do
-		local var_33_0 = LoadingTipsPoolCfg[iter_33_1].loading_picture
-
-		if var_33_0 and var_33_0 ~= "" then
-			table.insert(var_0_12, iter_33_1)
-		else
-			table.insert(var_0_13, iter_33_1)
-		end
-	end
-end
-
-function var_0_0.ResetLoading(arg_34_0)
-	var_0_14 = deepClone(var_0_12)
-	var_0_15 = deepClone(LoadingTipsPicturePoolCfg.all)
-	var_0_16 = deepClone(var_0_0:GetAllLoadingSet())
-end
-
-function var_0_0.GetRandomTips(arg_35_0)
-	if #var_0_14 <= 0 and #var_0_15 <= 0 and #var_0_16 <= 0 then
-		var_0_0:ResetLoading()
-	end
-
-	local var_35_0 = #var_0_14
-	local var_35_1 = #var_0_13
-	local var_35_2 = #var_0_16
-
-	if #var_0_15 <= 0 then
-		var_35_1 = 0
-	end
-
-	local var_35_3 = math.random(1, var_35_0 + var_35_1 + var_35_2)
-
-	if var_35_3 <= var_35_0 then
-		local var_35_4 = var_35_3
-		local var_35_5 = var_0_14[var_35_3]
-		local var_35_6 = LoadingTipsPoolCfg[var_35_5]
-
-		table.remove(var_0_14, var_35_4)
-
-		for iter_35_0, iter_35_1 in ipairs(var_0_15) do
-			if LoadingTipsPicturePoolCfg[iter_35_1].loading_picture == var_35_6.loading_picture then
-				table.remove(var_0_15, iter_35_0)
-
-				break
-			end
-		end
-
-		return var_35_6.title, var_35_6.tips, var_35_6.loading_picture, true
-	elseif var_35_3 <= var_35_0 + var_35_1 then
-		local var_35_7 = var_35_3 - var_35_0
-		local var_35_8 = var_0_13[var_35_7]
-		local var_35_9 = LoadingTipsPoolCfg[var_35_8]
-		local var_35_10 = math.random(1, #var_0_15)
-		local var_35_11 = var_0_15[var_35_10]
-		local var_35_12 = LoadingTipsPicturePoolCfg[var_35_11].loading_picture
-
-		table.remove(var_0_15, var_35_10)
-
-		for iter_35_2, iter_35_3 in ipairs(var_0_14) do
-			if LoadingTipsPoolCfg[iter_35_3].loading_picture == var_35_12 then
-				table.remove(var_0_14, iter_35_2)
-
-				break
-			end
-		end
-
-		return var_35_9.title, var_35_9.tips, var_35_12, true
-	else
-		local var_35_13 = var_35_3 - var_35_0 - var_35_1
-		local var_35_14 = var_0_16[var_35_13]
-		local var_35_15 = CollectPictureCfg[var_35_14]
-
-		table.remove(var_0_16, var_35_13)
-
-		return var_35_15.name, var_35_15.desc, var_35_15.picture, false
-	end
 end
 
 return var_0_0

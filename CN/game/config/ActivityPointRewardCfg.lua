@@ -1,9 +1,11 @@
 ﻿return {
 	[50401] = {
 		need = 1000,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50401,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -21,9 +23,11 @@
 	},
 	[50402] = {
 		need = 1500,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50402,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -41,9 +45,11 @@
 	},
 	[50403] = {
 		need = 2000,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50403,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -61,9 +67,11 @@
 	},
 	[50404] = {
 		need = 2500,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50404,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -81,9 +89,11 @@
 	},
 	[50405] = {
 		need = 3000,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50405,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -101,9 +111,11 @@
 	},
 	[50406] = {
 		need = 3500,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50406,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -121,9 +133,11 @@
 	},
 	[50407] = {
 		need = 4000,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50407,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -141,9 +155,11 @@
 	},
 	[50408] = {
 		need = 4500,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50408,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -161,9 +177,11 @@
 	},
 	[50409] = {
 		need = 5000,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50409,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -181,9 +199,11 @@
 	},
 	[50410] = {
 		need = 6000,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50410,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -201,9 +221,11 @@
 	},
 	[50411] = {
 		need = 7000,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50411,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -221,9 +243,11 @@
 	},
 	[50412] = {
 		need = 8000,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50412,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -241,9 +265,11 @@
 	},
 	[50413] = {
 		need = 9000,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50413,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -261,9 +287,11 @@
 	},
 	[50414] = {
 		need = 10000,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50414,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -281,9 +309,11 @@
 	},
 	[50415] = {
 		need = 11000,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50415,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -301,9 +331,11 @@
 	},
 	[50416] = {
 		need = 12500,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50416,
+		special_level = "",
 		reward_item_list = {
 			{
 				3012,
@@ -317,9 +349,11 @@
 	},
 	[50417] = {
 		need = 14000,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50417,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -337,9 +371,11 @@
 	},
 	[50418] = {
 		need = 15500,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50418,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -357,9 +393,11 @@
 	},
 	[50419] = {
 		need = 17000,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50419,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -377,9 +415,11 @@
 	},
 	[50420] = {
 		need = 18500,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50420,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -397,9 +437,11 @@
 	},
 	[50421] = {
 		need = 20000,
-		activity_id = 504,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 504,
 		id = 50421,
+		special_level = "",
 		reward_item_list = {
 			{
 				53001,
@@ -417,9 +459,11 @@
 	},
 	[711901] = {
 		need = 20000,
-		activity_id = 71281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71281,
 		id = 711901,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -437,9 +481,11 @@
 	},
 	[711902] = {
 		need = 24000,
-		activity_id = 71281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71281,
 		id = 711902,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -457,9 +503,11 @@
 	},
 	[711903] = {
 		need = 28000,
-		activity_id = 71281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71281,
 		id = 711903,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -477,9 +525,11 @@
 	},
 	[711904] = {
 		need = 32000,
-		activity_id = 71281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71281,
 		id = 711904,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -497,9 +547,11 @@
 	},
 	[711905] = {
 		need = 36000,
-		activity_id = 71281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71281,
 		id = 711905,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -517,9 +569,11 @@
 	},
 	[711906] = {
 		need = 40000,
-		activity_id = 71281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71281,
 		id = 711906,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -537,9 +591,11 @@
 	},
 	[711907] = {
 		need = 44000,
-		activity_id = 71281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71281,
 		id = 711907,
+		special_level = "",
 		reward_item_list = {
 			{
 				54006,
@@ -553,9 +609,11 @@
 	},
 	[711908] = {
 		need = 48000,
-		activity_id = 71281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71281,
 		id = 711908,
+		special_level = "",
 		reward_item_list = {
 			{
 				54006,
@@ -569,9 +627,11 @@
 	},
 	[711909] = {
 		need = 54000,
-		activity_id = 71281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71281,
 		id = 711909,
+		special_level = "",
 		reward_item_list = {
 			{
 				3028,
@@ -589,9 +649,11 @@
 	},
 	[711910] = {
 		need = 60000,
-		activity_id = 71281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71281,
 		id = 711910,
+		special_level = "",
 		reward_item_list = {
 			{
 				54006,
@@ -605,9 +667,11 @@
 	},
 	[711911] = {
 		need = 66000,
-		activity_id = 71281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71281,
 		id = 711911,
+		special_level = "",
 		reward_item_list = {
 			{
 				54006,
@@ -621,9 +685,11 @@
 	},
 	[711912] = {
 		need = 72000,
-		activity_id = 71281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71281,
 		id = 711912,
+		special_level = "",
 		reward_item_list = {
 			{
 				54006,
@@ -637,9 +703,11 @@
 	},
 	[7127101] = {
 		need = 1000,
-		activity_id = 71271,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71271,
 		id = 7127101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40301,
@@ -653,9 +721,11 @@
 	},
 	[7127102] = {
 		need = 2000,
-		activity_id = 71271,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71271,
 		id = 7127102,
+		special_level = "",
 		reward_item_list = {
 			{
 				40103,
@@ -669,9 +739,11 @@
 	},
 	[7127103] = {
 		need = 3000,
-		activity_id = 71271,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71271,
 		id = 7127103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -685,9 +757,11 @@
 	},
 	[7127104] = {
 		need = 4000,
-		activity_id = 71271,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71271,
 		id = 7127104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -701,9 +775,11 @@
 	},
 	[7127105] = {
 		need = 5000,
-		activity_id = 71271,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 71271,
 		id = 7127105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -717,9 +793,11 @@
 	},
 	[8141101] = {
 		need = 4000,
-		activity_id = 81411,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81411,
 		id = 8141101,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -737,9 +815,11 @@
 	},
 	[8141102] = {
 		need = 6000,
-		activity_id = 81411,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81411,
 		id = 8141102,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -753,9 +833,11 @@
 	},
 	[8141103] = {
 		need = 8000,
-		activity_id = 81411,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81411,
 		id = 8141103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -769,9 +851,11 @@
 	},
 	[8141201] = {
 		need = 4000,
-		activity_id = 81412,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81412,
 		id = 8141201,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -789,9 +873,11 @@
 	},
 	[8141202] = {
 		need = 6000,
-		activity_id = 81412,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81412,
 		id = 8141202,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -805,9 +891,11 @@
 	},
 	[8141203] = {
 		need = 8000,
-		activity_id = 81412,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81412,
 		id = 8141203,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -821,9 +909,11 @@
 	},
 	[8141301] = {
 		need = 4000,
-		activity_id = 81413,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81413,
 		id = 8141301,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -841,9 +931,11 @@
 	},
 	[8141302] = {
 		need = 6000,
-		activity_id = 81413,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81413,
 		id = 8141302,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -857,9 +949,11 @@
 	},
 	[8141303] = {
 		need = 8000,
-		activity_id = 81413,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81413,
 		id = 8141303,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -873,9 +967,11 @@
 	},
 	[8141401] = {
 		need = 4000,
-		activity_id = 81414,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81414,
 		id = 8141401,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -893,9 +989,11 @@
 	},
 	[8141402] = {
 		need = 6000,
-		activity_id = 81414,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81414,
 		id = 8141402,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -909,9 +1007,11 @@
 	},
 	[8141403] = {
 		need = 8000,
-		activity_id = 81414,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81414,
 		id = 8141403,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -925,9 +1025,11 @@
 	},
 	[8141501] = {
 		need = 4000,
-		activity_id = 81415,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81415,
 		id = 8141501,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -945,9 +1047,11 @@
 	},
 	[8141502] = {
 		need = 6000,
-		activity_id = 81415,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81415,
 		id = 8141502,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -961,9 +1065,11 @@
 	},
 	[8141503] = {
 		need = 8000,
-		activity_id = 81415,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81415,
 		id = 8141503,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -977,9 +1083,11 @@
 	},
 	[8141601] = {
 		need = 4000,
-		activity_id = 81416,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81416,
 		id = 8141601,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -997,9 +1105,11 @@
 	},
 	[8141602] = {
 		need = 6000,
-		activity_id = 81416,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81416,
 		id = 8141602,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -1013,9 +1123,11 @@
 	},
 	[8141603] = {
 		need = 8000,
-		activity_id = 81416,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81416,
 		id = 8141603,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -1029,9 +1141,11 @@
 	},
 	[8141701] = {
 		need = 4000,
-		activity_id = 81417,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81417,
 		id = 8141701,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -1049,9 +1163,11 @@
 	},
 	[8141702] = {
 		need = 6000,
-		activity_id = 81417,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81417,
 		id = 8141702,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -1065,9 +1181,11 @@
 	},
 	[8141703] = {
 		need = 8000,
-		activity_id = 81417,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81417,
 		id = 8141703,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -1081,9 +1199,11 @@
 	},
 	[8141801] = {
 		need = 4000,
-		activity_id = 81418,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81418,
 		id = 8141801,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -1101,9 +1221,11 @@
 	},
 	[8141802] = {
 		need = 6000,
-		activity_id = 81418,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81418,
 		id = 8141802,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -1117,9 +1239,11 @@
 	},
 	[8141803] = {
 		need = 8000,
-		activity_id = 81418,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81418,
 		id = 8141803,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -1133,9 +1257,11 @@
 	},
 	[8143101] = {
 		need = 12000,
-		activity_id = 81431,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81431,
 		id = 8143101,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -1153,9 +1279,11 @@
 	},
 	[8143102] = {
 		need = 15000,
-		activity_id = 81431,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81431,
 		id = 8143102,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -1169,9 +1297,11 @@
 	},
 	[8143103] = {
 		need = 18000,
-		activity_id = 81431,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81431,
 		id = 8143103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40502,
@@ -1185,9 +1315,11 @@
 	},
 	[8143201] = {
 		need = 12000,
-		activity_id = 81432,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81432,
 		id = 8143201,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -1205,9 +1337,11 @@
 	},
 	[8143202] = {
 		need = 15000,
-		activity_id = 81432,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81432,
 		id = 8143202,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -1221,9 +1355,11 @@
 	},
 	[8143203] = {
 		need = 18000,
-		activity_id = 81432,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81432,
 		id = 8143203,
+		special_level = "",
 		reward_item_list = {
 			{
 				40502,
@@ -1237,9 +1373,11 @@
 	},
 	[8143301] = {
 		need = 12000,
-		activity_id = 81433,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81433,
 		id = 8143301,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -1257,9 +1395,11 @@
 	},
 	[8143302] = {
 		need = 15000,
-		activity_id = 81433,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81433,
 		id = 8143302,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -1273,9 +1413,11 @@
 	},
 	[8143303] = {
 		need = 18000,
-		activity_id = 81433,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81433,
 		id = 8143303,
+		special_level = "",
 		reward_item_list = {
 			{
 				40502,
@@ -1289,9 +1431,11 @@
 	},
 	[8143401] = {
 		need = 12000,
-		activity_id = 81434,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81434,
 		id = 8143401,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -1309,9 +1453,11 @@
 	},
 	[8143402] = {
 		need = 15000,
-		activity_id = 81434,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81434,
 		id = 8143402,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -1325,9 +1471,11 @@
 	},
 	[8143403] = {
 		need = 18000,
-		activity_id = 81434,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81434,
 		id = 8143403,
+		special_level = "",
 		reward_item_list = {
 			{
 				40502,
@@ -1341,9 +1489,11 @@
 	},
 	[8143501] = {
 		need = 12000,
-		activity_id = 81435,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81435,
 		id = 8143501,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -1361,9 +1511,11 @@
 	},
 	[8143502] = {
 		need = 15000,
-		activity_id = 81435,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81435,
 		id = 8143502,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -1377,9 +1529,11 @@
 	},
 	[8143503] = {
 		need = 18000,
-		activity_id = 81435,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81435,
 		id = 8143503,
+		special_level = "",
 		reward_item_list = {
 			{
 				40502,
@@ -1393,9 +1547,11 @@
 	},
 	[8143601] = {
 		need = 12000,
-		activity_id = 81436,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81436,
 		id = 8143601,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -1409,9 +1565,11 @@
 	},
 	[8143602] = {
 		need = 15000,
-		activity_id = 81436,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81436,
 		id = 8143602,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -1425,9 +1583,11 @@
 	},
 	[8143603] = {
 		need = 18000,
-		activity_id = 81436,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81436,
 		id = 8143603,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -1441,9 +1601,11 @@
 	},
 	[8143604] = {
 		need = 19000,
-		activity_id = 81436,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81436,
 		id = 8143604,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -1457,9 +1619,11 @@
 	},
 	[8143605] = {
 		need = 20000,
-		activity_id = 81436,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81436,
 		id = 8143605,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -1469,9 +1633,11 @@
 	},
 	[8143606] = {
 		need = 21000,
-		activity_id = 81436,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 81436,
 		id = 8143606,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -1481,9 +1647,11 @@
 	},
 	[9105101] = {
 		need = 1000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1501,9 +1669,11 @@
 	},
 	[9105102] = {
 		need = 1500,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105102,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1521,9 +1691,11 @@
 	},
 	[9105103] = {
 		need = 2000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1541,9 +1713,11 @@
 	},
 	[9105104] = {
 		need = 2500,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1561,9 +1735,11 @@
 	},
 	[9105105] = {
 		need = 3000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1581,9 +1757,11 @@
 	},
 	[9105106] = {
 		need = 3500,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105106,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1601,9 +1779,11 @@
 	},
 	[9105107] = {
 		need = 4000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105107,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1621,9 +1801,11 @@
 	},
 	[9105108] = {
 		need = 4500,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105108,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1641,9 +1823,11 @@
 	},
 	[9105109] = {
 		need = 5000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105109,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1661,9 +1845,11 @@
 	},
 	[9105110] = {
 		need = 5500,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105110,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1681,9 +1867,11 @@
 	},
 	[9105111] = {
 		need = 6000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105111,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1701,9 +1889,11 @@
 	},
 	[9105112] = {
 		need = 7000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105112,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1721,9 +1911,11 @@
 	},
 	[9105113] = {
 		need = 8000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105113,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1741,9 +1933,11 @@
 	},
 	[9105114] = {
 		need = 9000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105114,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1761,9 +1955,11 @@
 	},
 	[9105115] = {
 		need = 10000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105115,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1781,9 +1977,11 @@
 	},
 	[9105116] = {
 		need = 11000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105116,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1801,9 +1999,11 @@
 	},
 	[9105117] = {
 		need = 12000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105117,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1821,9 +2021,11 @@
 	},
 	[9105118] = {
 		need = 13000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105118,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1841,9 +2043,11 @@
 	},
 	[9105119] = {
 		need = 14000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105119,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1861,9 +2065,11 @@
 	},
 	[9105120] = {
 		need = 15000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105120,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1881,9 +2087,11 @@
 	},
 	[9105121] = {
 		need = 16000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105121,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1901,9 +2109,11 @@
 	},
 	[9105122] = {
 		need = 17000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105122,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1921,9 +2131,11 @@
 	},
 	[9105123] = {
 		need = 18000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105123,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1941,9 +2153,11 @@
 	},
 	[9105124] = {
 		need = 20000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105124,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1961,9 +2175,11 @@
 	},
 	[9105125] = {
 		need = 22000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105125,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -1981,9 +2197,11 @@
 	},
 	[9105126] = {
 		need = 24000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105126,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -2001,9 +2219,11 @@
 	},
 	[9105127] = {
 		need = 26000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105127,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -2021,9 +2241,11 @@
 	},
 	[9105128] = {
 		need = 28000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105128,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -2037,9 +2259,11 @@
 	},
 	[9105129] = {
 		need = 30000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105129,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -2053,9 +2277,11 @@
 	},
 	[9105130] = {
 		need = 32000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105130,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -2069,9 +2295,11 @@
 	},
 	[9105131] = {
 		need = 34000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105131,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -2085,9 +2313,11 @@
 	},
 	[9105132] = {
 		need = 36000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105132,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -2097,9 +2327,11 @@
 	},
 	[9105133] = {
 		need = 38000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105133,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -2109,9 +2341,11 @@
 	},
 	[9105134] = {
 		need = 40000,
-		activity_id = 91051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91051,
 		id = 9105134,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -2121,9 +2355,11 @@
 	},
 	[9150101] = {
 		need = 50000,
-		activity_id = 91501,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91501,
 		id = 9150101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40103,
@@ -2137,9 +2373,11 @@
 	},
 	[9150102] = {
 		need = 100000,
-		activity_id = 91501,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91501,
 		id = 9150102,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -2157,9 +2395,11 @@
 	},
 	[9150103] = {
 		need = 125000,
-		activity_id = 91501,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91501,
 		id = 9150103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40103,
@@ -2173,9 +2413,11 @@
 	},
 	[9150104] = {
 		need = 150000,
-		activity_id = 91501,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91501,
 		id = 9150104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -2193,9 +2435,11 @@
 	},
 	[9150105] = {
 		need = 175000,
-		activity_id = 91501,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91501,
 		id = 9150105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40103,
@@ -2209,9 +2453,11 @@
 	},
 	[9150106] = {
 		need = 200000,
-		activity_id = 91501,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91501,
 		id = 9150106,
+		special_level = "",
 		reward_item_list = {
 			{
 				40103,
@@ -2225,9 +2471,11 @@
 	},
 	[9150107] = {
 		need = 225000,
-		activity_id = 91501,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91501,
 		id = 9150107,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -2237,9 +2485,11 @@
 	},
 	[9150108] = {
 		need = 250000,
-		activity_id = 91501,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91501,
 		id = 9150108,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -2249,9 +2499,11 @@
 	},
 	[9150151] = {
 		need = 100000,
-		activity_id = 91501,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91501,
 		id = 9150151,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -2265,9 +2517,11 @@
 	},
 	[9150152] = {
 		need = 200000,
-		activity_id = 91501,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91501,
 		id = 9150152,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -2281,9 +2535,11 @@
 	},
 	[9150153] = {
 		need = 350000,
-		activity_id = 91501,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91501,
 		id = 9150153,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -2297,9 +2553,11 @@
 	},
 	[9150154] = {
 		need = 500000,
-		activity_id = 91501,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 91501,
 		id = 9150154,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -2313,9 +2571,11 @@
 	},
 	[10162101] = {
 		need = 2400,
-		activity_id = 101621,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101621,
 		id = 10162101,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -2333,9 +2593,11 @@
 	},
 	[10162102] = {
 		need = 4800,
-		activity_id = 101621,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101621,
 		id = 10162102,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -2353,9 +2615,11 @@
 	},
 	[10162103] = {
 		need = 8000,
-		activity_id = 101621,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101621,
 		id = 10162103,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -2373,9 +2637,11 @@
 	},
 	[10162201] = {
 		need = 2400,
-		activity_id = 101622,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101622,
 		id = 10162201,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -2393,9 +2659,11 @@
 	},
 	[10162202] = {
 		need = 4800,
-		activity_id = 101622,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101622,
 		id = 10162202,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -2413,9 +2681,11 @@
 	},
 	[10162203] = {
 		need = 8000,
-		activity_id = 101622,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101622,
 		id = 10162203,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -2433,9 +2703,11 @@
 	},
 	[10162301] = {
 		need = 2400,
-		activity_id = 101623,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101623,
 		id = 10162301,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -2453,9 +2725,11 @@
 	},
 	[10162302] = {
 		need = 4800,
-		activity_id = 101623,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101623,
 		id = 10162302,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -2473,9 +2747,11 @@
 	},
 	[10162303] = {
 		need = 8000,
-		activity_id = 101623,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101623,
 		id = 10162303,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -2493,9 +2769,11 @@
 	},
 	[10162401] = {
 		need = 2400,
-		activity_id = 101624,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101624,
 		id = 10162401,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -2513,9 +2791,11 @@
 	},
 	[10162402] = {
 		need = 4800,
-		activity_id = 101624,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101624,
 		id = 10162402,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -2533,9 +2813,11 @@
 	},
 	[10162403] = {
 		need = 8000,
-		activity_id = 101624,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101624,
 		id = 10162403,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -2553,9 +2835,11 @@
 	},
 	[10162501] = {
 		need = 2400,
-		activity_id = 101625,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101625,
 		id = 10162501,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -2573,9 +2857,11 @@
 	},
 	[10162502] = {
 		need = 4800,
-		activity_id = 101625,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101625,
 		id = 10162502,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -2593,9 +2879,11 @@
 	},
 	[10162503] = {
 		need = 8000,
-		activity_id = 101625,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101625,
 		id = 10162503,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -2613,9 +2901,11 @@
 	},
 	[10162601] = {
 		need = 2400,
-		activity_id = 101626,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101626,
 		id = 10162601,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -2633,9 +2923,11 @@
 	},
 	[10162602] = {
 		need = 4800,
-		activity_id = 101626,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101626,
 		id = 10162602,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -2653,9 +2945,11 @@
 	},
 	[10162603] = {
 		need = 8000,
-		activity_id = 101626,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101626,
 		id = 10162603,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -2673,9 +2967,11 @@
 	},
 	[10162701] = {
 		need = 2400,
-		activity_id = 101627,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101627,
 		id = 10162701,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -2693,9 +2989,11 @@
 	},
 	[10162702] = {
 		need = 4800,
-		activity_id = 101627,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101627,
 		id = 10162702,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -2713,9 +3011,11 @@
 	},
 	[10162703] = {
 		need = 8000,
-		activity_id = 101627,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101627,
 		id = 10162703,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -2733,9 +3033,11 @@
 	},
 	[10162801] = {
 		need = 2400,
-		activity_id = 101628,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101628,
 		id = 10162801,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -2753,9 +3055,11 @@
 	},
 	[10162802] = {
 		need = 4800,
-		activity_id = 101628,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101628,
 		id = 10162802,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -2773,9 +3077,11 @@
 	},
 	[10162803] = {
 		need = 8000,
-		activity_id = 101628,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101628,
 		id = 10162803,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -2793,9 +3099,11 @@
 	},
 	[10162901] = {
 		need = 2400,
-		activity_id = 101629,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101629,
 		id = 10162901,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -2813,9 +3121,11 @@
 	},
 	[10162902] = {
 		need = 4800,
-		activity_id = 101629,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101629,
 		id = 10162902,
+		special_level = "",
 		reward_item_list = {
 			{
 				41401,
@@ -2833,9 +3143,11 @@
 	},
 	[10162903] = {
 		need = 8000,
-		activity_id = 101629,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101629,
 		id = 10162903,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -2853,9 +3165,11 @@
 	},
 	[10160101] = {
 		need = 5,
-		activity_id = 101601,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101601,
 		id = 10160101,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -2873,9 +3187,11 @@
 	},
 	[10160102] = {
 		need = 10,
-		activity_id = 101601,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101601,
 		id = 10160102,
+		special_level = "",
 		reward_item_list = {
 			{
 				11016,
@@ -2893,9 +3209,11 @@
 	},
 	[10160103] = {
 		need = 15,
-		activity_id = 101601,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101601,
 		id = 10160103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -2913,9 +3231,11 @@
 	},
 	[10160201] = {
 		need = 5,
-		activity_id = 101602,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101602,
 		id = 10160201,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -2933,9 +3253,11 @@
 	},
 	[10160202] = {
 		need = 10,
-		activity_id = 101602,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101602,
 		id = 10160202,
+		special_level = "",
 		reward_item_list = {
 			{
 				11016,
@@ -2953,9 +3275,11 @@
 	},
 	[10160203] = {
 		need = 15,
-		activity_id = 101602,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101602,
 		id = 10160203,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -2973,9 +3297,11 @@
 	},
 	[10160301] = {
 		need = 5,
-		activity_id = 101603,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101603,
 		id = 10160301,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -2993,9 +3319,11 @@
 	},
 	[10160302] = {
 		need = 10,
-		activity_id = 101603,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101603,
 		id = 10160302,
+		special_level = "",
 		reward_item_list = {
 			{
 				11016,
@@ -3013,9 +3341,11 @@
 	},
 	[10160303] = {
 		need = 15,
-		activity_id = 101603,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101603,
 		id = 10160303,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -3033,9 +3363,11 @@
 	},
 	[10160401] = {
 		need = 5,
-		activity_id = 101604,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101604,
 		id = 10160401,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3053,9 +3385,11 @@
 	},
 	[10160402] = {
 		need = 10,
-		activity_id = 101604,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101604,
 		id = 10160402,
+		special_level = "",
 		reward_item_list = {
 			{
 				11016,
@@ -3073,9 +3407,11 @@
 	},
 	[10160403] = {
 		need = 15,
-		activity_id = 101604,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101604,
 		id = 10160403,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -3093,9 +3429,11 @@
 	},
 	[10160501] = {
 		need = 5,
-		activity_id = 101605,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101605,
 		id = 10160501,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3113,9 +3451,11 @@
 	},
 	[10160502] = {
 		need = 10,
-		activity_id = 101605,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101605,
 		id = 10160502,
+		special_level = "",
 		reward_item_list = {
 			{
 				41401,
@@ -3133,9 +3473,11 @@
 	},
 	[10160503] = {
 		need = 15,
-		activity_id = 101605,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101605,
 		id = 10160503,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -3153,9 +3495,11 @@
 	},
 	[10160601] = {
 		need = 5,
-		activity_id = 101606,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101606,
 		id = 10160601,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3173,9 +3517,11 @@
 	},
 	[10160602] = {
 		need = 10,
-		activity_id = 101606,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101606,
 		id = 10160602,
+		special_level = "",
 		reward_item_list = {
 			{
 				41401,
@@ -3193,9 +3539,11 @@
 	},
 	[10160603] = {
 		need = 15,
-		activity_id = 101606,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 101606,
 		id = 10160603,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -3213,9 +3561,11 @@
 	},
 	[111771] = {
 		need = 60,
-		activity_id = 111771,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111771,
 		id = 111771,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3233,9 +3583,11 @@
 	},
 	[111772] = {
 		need = 60,
-		activity_id = 111772,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111772,
 		id = 111772,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3253,9 +3605,11 @@
 	},
 	[111773] = {
 		need = 60,
-		activity_id = 111773,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111773,
 		id = 111773,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3273,9 +3627,11 @@
 	},
 	[111774] = {
 		need = 60,
-		activity_id = 111774,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111774,
 		id = 111774,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3293,9 +3649,11 @@
 	},
 	[111775] = {
 		need = 60,
-		activity_id = 111775,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111775,
 		id = 111775,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3313,9 +3671,11 @@
 	},
 	[111776] = {
 		need = 60,
-		activity_id = 111776,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111776,
 		id = 111776,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3333,9 +3693,11 @@
 	},
 	[111777] = {
 		need = 60,
-		activity_id = 111777,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111777,
 		id = 111777,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3353,9 +3715,11 @@
 	},
 	[111778] = {
 		need = 60,
-		activity_id = 111778,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111778,
 		id = 111778,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3373,9 +3737,11 @@
 	},
 	[1117311] = {
 		need = 1,
-		activity_id = 111731,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111731,
 		id = 1117311,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3385,9 +3751,11 @@
 	},
 	[1117312] = {
 		need = 2,
-		activity_id = 111731,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111731,
 		id = 1117312,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3397,9 +3765,11 @@
 	},
 	[1117313] = {
 		need = 3,
-		activity_id = 111731,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111731,
 		id = 1117313,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3409,9 +3779,11 @@
 	},
 	[1117314] = {
 		need = 4,
-		activity_id = 111731,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111731,
 		id = 1117314,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3421,9 +3793,11 @@
 	},
 	[1117315] = {
 		need = 5,
-		activity_id = 111731,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111731,
 		id = 1117315,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3433,9 +3807,11 @@
 	},
 	[1117316] = {
 		need = 6,
-		activity_id = 111731,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111731,
 		id = 1117316,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3445,9 +3821,11 @@
 	},
 	[1117317] = {
 		need = 7,
-		activity_id = 111731,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111731,
 		id = 1117317,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3457,9 +3835,11 @@
 	},
 	[1117811] = {
 		need = 1,
-		activity_id = 111781,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111781,
 		id = 1117811,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3477,9 +3857,11 @@
 	},
 	[1117812] = {
 		need = 2,
-		activity_id = 111781,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111781,
 		id = 1117812,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3497,9 +3879,11 @@
 	},
 	[1117813] = {
 		need = 3,
-		activity_id = 111781,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111781,
 		id = 1117813,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3517,9 +3901,11 @@
 	},
 	[1117814] = {
 		need = 4,
-		activity_id = 111781,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111781,
 		id = 1117814,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3537,9 +3923,11 @@
 	},
 	[1117815] = {
 		need = 5,
-		activity_id = 111781,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111781,
 		id = 1117815,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3557,9 +3945,11 @@
 	},
 	[1117816] = {
 		need = 6,
-		activity_id = 111781,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111781,
 		id = 1117816,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3577,9 +3967,11 @@
 	},
 	[1117817] = {
 		need = 7,
-		activity_id = 111781,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111781,
 		id = 1117817,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3597,9 +3989,11 @@
 	},
 	[1117818] = {
 		need = 8,
-		activity_id = 111781,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 111781,
 		id = 1117818,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3617,9 +4011,11 @@
 	},
 	[1312811] = {
 		need = 20000,
-		activity_id = 131281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131281,
 		id = 1312811,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3637,9 +4033,11 @@
 	},
 	[1312812] = {
 		need = 24000,
-		activity_id = 131281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131281,
 		id = 1312812,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3657,9 +4055,11 @@
 	},
 	[1312813] = {
 		need = 28000,
-		activity_id = 131281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131281,
 		id = 1312813,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3677,9 +4077,11 @@
 	},
 	[1312814] = {
 		need = 32000,
-		activity_id = 131281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131281,
 		id = 1312814,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3697,9 +4099,11 @@
 	},
 	[1312815] = {
 		need = 36000,
-		activity_id = 131281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131281,
 		id = 1312815,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3717,9 +4121,11 @@
 	},
 	[1312816] = {
 		need = 40000,
-		activity_id = 131281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131281,
 		id = 1312816,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -3737,9 +4143,11 @@
 	},
 	[1312817] = {
 		need = 44000,
-		activity_id = 131281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131281,
 		id = 1312817,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -3753,9 +4161,11 @@
 	},
 	[1312818] = {
 		need = 48000,
-		activity_id = 131281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131281,
 		id = 1312818,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -3769,9 +4179,11 @@
 	},
 	[1312819] = {
 		need = 54000,
-		activity_id = 131281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131281,
 		id = 1312819,
+		special_level = "",
 		reward_item_list = {
 			{
 				2013,
@@ -3781,9 +4193,11 @@
 	},
 	[1312820] = {
 		need = 60000,
-		activity_id = 131281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131281,
 		id = 1312820,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -3797,9 +4211,11 @@
 	},
 	[1312821] = {
 		need = 66000,
-		activity_id = 131281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131281,
 		id = 1312821,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -3813,9 +4229,11 @@
 	},
 	[1312822] = {
 		need = 72000,
-		activity_id = 131281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131281,
 		id = 1312822,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -3825,9 +4243,11 @@
 	},
 	[13184101] = {
 		need = 1000,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -3845,9 +4265,11 @@
 	},
 	[13184102] = {
 		need = 1500,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184102,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -3865,9 +4287,11 @@
 	},
 	[13184103] = {
 		need = 2000,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -3885,9 +4309,11 @@
 	},
 	[13184104] = {
 		need = 3000,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -3905,9 +4331,11 @@
 	},
 	[13184105] = {
 		need = 4000,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -3925,9 +4353,11 @@
 	},
 	[13184106] = {
 		need = 5000,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184106,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -3945,9 +4375,11 @@
 	},
 	[13184107] = {
 		need = 6500,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184107,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -3965,9 +4397,11 @@
 	},
 	[13184108] = {
 		need = 8000,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184108,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -3985,9 +4419,11 @@
 	},
 	[13184109] = {
 		need = 9500,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184109,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4005,9 +4441,11 @@
 	},
 	[13184110] = {
 		need = 11000,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184110,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4025,9 +4463,11 @@
 	},
 	[13184111] = {
 		need = 12500,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184111,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4045,9 +4485,11 @@
 	},
 	[13184112] = {
 		need = 14000,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184112,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -4065,9 +4507,11 @@
 	},
 	[13184113] = {
 		need = 15500,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184113,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4085,9 +4529,11 @@
 	},
 	[13184114] = {
 		need = 17000,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184114,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4105,9 +4551,11 @@
 	},
 	[13184115] = {
 		need = 18500,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184115,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4125,9 +4573,11 @@
 	},
 	[13184116] = {
 		need = 20000,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184116,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -4145,9 +4595,11 @@
 	},
 	[13184117] = {
 		need = 22000,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184117,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -4161,9 +4613,11 @@
 	},
 	[13184118] = {
 		need = 24000,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184118,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -4177,9 +4631,11 @@
 	},
 	[13184119] = {
 		need = 26000,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184119,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -4193,9 +4649,11 @@
 	},
 	[13184120] = {
 		need = 28000,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184120,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -4209,9 +4667,11 @@
 	},
 	[13184121] = {
 		need = 30000,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184121,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -4221,9 +4681,11 @@
 	},
 	[13184122] = {
 		need = 32000,
-		activity_id = 131841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 131841,
 		id = 13184122,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -4233,9 +4695,11 @@
 	},
 	[14189101] = {
 		need = 20,
-		activity_id = 141891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 141891,
 		id = 14189101,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -4253,9 +4717,11 @@
 	},
 	[14189102] = {
 		need = 40,
-		activity_id = 141891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 141891,
 		id = 14189102,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -4273,9 +4739,11 @@
 	},
 	[14189103] = {
 		need = 60,
-		activity_id = 141891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 141891,
 		id = 14189103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -4293,9 +4761,11 @@
 	},
 	[14189104] = {
 		need = 80,
-		activity_id = 141891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 141891,
 		id = 14189104,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -4313,9 +4783,11 @@
 	},
 	[14189105] = {
 		need = 100,
-		activity_id = 141891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 141891,
 		id = 14189105,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -4333,9 +4805,11 @@
 	},
 	[14189106] = {
 		need = 120,
-		activity_id = 141891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 141891,
 		id = 14189106,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -4353,9 +4827,11 @@
 	},
 	[14189107] = {
 		need = 140,
-		activity_id = 141891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 141891,
 		id = 14189107,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -4373,9 +4849,11 @@
 	},
 	[14189108] = {
 		need = 160,
-		activity_id = 141891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 141891,
 		id = 14189108,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -4393,9 +4871,11 @@
 	},
 	[14189109] = {
 		need = 180,
-		activity_id = 141891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 141891,
 		id = 14189109,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -4413,9 +4893,11 @@
 	},
 	[14189110] = {
 		need = 200,
-		activity_id = 141891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 141891,
 		id = 14189110,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -4433,9 +4915,11 @@
 	},
 	[14189111] = {
 		need = 220,
-		activity_id = 141891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 141891,
 		id = 14189111,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -4453,9 +4937,11 @@
 	},
 	[14189112] = {
 		need = 240,
-		activity_id = 141891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 141891,
 		id = 14189112,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -4473,9 +4959,11 @@
 	},
 	[14189113] = {
 		need = 250,
-		activity_id = 141891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 141891,
 		id = 14189113,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -4493,9 +4981,11 @@
 	},
 	[17105101] = {
 		need = 2000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4513,9 +5003,11 @@
 	},
 	[17105102] = {
 		need = 3000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105102,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4533,9 +5025,11 @@
 	},
 	[17105103] = {
 		need = 4000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4553,9 +5047,11 @@
 	},
 	[17105104] = {
 		need = 5000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4573,9 +5069,11 @@
 	},
 	[17105105] = {
 		need = 6000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4593,9 +5091,11 @@
 	},
 	[17105106] = {
 		need = 7000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105106,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4613,9 +5113,11 @@
 	},
 	[17105107] = {
 		need = 8000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105107,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4633,9 +5135,11 @@
 	},
 	[17105108] = {
 		need = 9000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105108,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4653,9 +5157,11 @@
 	},
 	[17105109] = {
 		need = 10000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105109,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4673,9 +5179,11 @@
 	},
 	[17105110] = {
 		need = 11000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105110,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4693,9 +5201,11 @@
 	},
 	[17105111] = {
 		need = 12000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105111,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4713,9 +5223,11 @@
 	},
 	[17105112] = {
 		need = 13000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105112,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4733,9 +5245,11 @@
 	},
 	[17105113] = {
 		need = 14000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105113,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4753,9 +5267,11 @@
 	},
 	[17105114] = {
 		need = 15000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105114,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4773,9 +5289,11 @@
 	},
 	[17105115] = {
 		need = 16000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105115,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4793,9 +5311,11 @@
 	},
 	[17105116] = {
 		need = 17000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105116,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4813,9 +5333,11 @@
 	},
 	[17105117] = {
 		need = 18000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105117,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4833,9 +5355,11 @@
 	},
 	[17105118] = {
 		need = 20000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105118,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4853,9 +5377,11 @@
 	},
 	[17105119] = {
 		need = 22000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105119,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4873,9 +5399,11 @@
 	},
 	[17105120] = {
 		need = 24000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105120,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4893,9 +5421,11 @@
 	},
 	[17105121] = {
 		need = 26000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105121,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4913,9 +5443,11 @@
 	},
 	[17105122] = {
 		need = 28000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105122,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4933,9 +5465,11 @@
 	},
 	[17105123] = {
 		need = 30000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105123,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4953,9 +5487,11 @@
 	},
 	[17105124] = {
 		need = 32000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105124,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4973,9 +5509,11 @@
 	},
 	[17105125] = {
 		need = 34000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105125,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -4993,9 +5531,11 @@
 	},
 	[17105126] = {
 		need = 36000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105126,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -5013,9 +5553,11 @@
 	},
 	[17105127] = {
 		need = 38000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105127,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -5033,9 +5575,11 @@
 	},
 	[17105128] = {
 		need = 40000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105128,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -5049,9 +5593,11 @@
 	},
 	[17105129] = {
 		need = 42000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105129,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -5065,9 +5611,11 @@
 	},
 	[17105130] = {
 		need = 44000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105130,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -5081,9 +5629,11 @@
 	},
 	[17105131] = {
 		need = 46000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105131,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -5097,9 +5647,11 @@
 	},
 	[17105132] = {
 		need = 48000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105132,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -5109,9 +5661,11 @@
 	},
 	[17105133] = {
 		need = 50000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105133,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -5121,9 +5675,11 @@
 	},
 	[17105134] = {
 		need = 52000,
-		activity_id = 171051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171051,
 		id = 17105134,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -5133,9 +5689,11 @@
 	},
 	[17189101] = {
 		need = 20,
-		activity_id = 171891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171891,
 		id = 17189101,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -5153,9 +5711,11 @@
 	},
 	[17189102] = {
 		need = 40,
-		activity_id = 171891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171891,
 		id = 17189102,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -5173,9 +5733,11 @@
 	},
 	[17189103] = {
 		need = 60,
-		activity_id = 171891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171891,
 		id = 17189103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -5193,9 +5755,11 @@
 	},
 	[17189104] = {
 		need = 80,
-		activity_id = 171891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171891,
 		id = 17189104,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -5213,9 +5777,11 @@
 	},
 	[17189105] = {
 		need = 100,
-		activity_id = 171891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171891,
 		id = 17189105,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -5233,9 +5799,11 @@
 	},
 	[17189106] = {
 		need = 120,
-		activity_id = 171891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171891,
 		id = 17189106,
+		special_level = "",
 		reward_item_list = {
 			{
 				951301,
@@ -5253,9 +5821,11 @@
 	},
 	[17189107] = {
 		need = 140,
-		activity_id = 171891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171891,
 		id = 17189107,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -5273,9 +5843,11 @@
 	},
 	[17189108] = {
 		need = 160,
-		activity_id = 171891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171891,
 		id = 17189108,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -5293,9 +5865,11 @@
 	},
 	[17189109] = {
 		need = 180,
-		activity_id = 171891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171891,
 		id = 17189109,
+		special_level = "",
 		reward_item_list = {
 			{
 				951302,
@@ -5313,9 +5887,11 @@
 	},
 	[17189110] = {
 		need = 200,
-		activity_id = 171891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171891,
 		id = 17189110,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -5333,9 +5909,11 @@
 	},
 	[17189111] = {
 		need = 210,
-		activity_id = 171891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171891,
 		id = 17189111,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -5353,9 +5931,11 @@
 	},
 	[17189112] = {
 		need = 220,
-		activity_id = 171891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171891,
 		id = 17189112,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -5373,9 +5953,11 @@
 	},
 	[17189113] = {
 		need = 230,
-		activity_id = 171891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171891,
 		id = 17189113,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -5393,9 +5975,11 @@
 	},
 	[17189114] = {
 		need = 240,
-		activity_id = 171891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171891,
 		id = 17189114,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -5413,9 +5997,11 @@
 	},
 	[17189115] = {
 		need = 250,
-		activity_id = 171891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 171891,
 		id = 17189115,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -5433,9 +6019,11 @@
 	},
 	[18189101] = {
 		need = 20,
-		activity_id = 181891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181891,
 		id = 18189101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -5453,9 +6041,11 @@
 	},
 	[18189102] = {
 		need = 50,
-		activity_id = 181891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181891,
 		id = 18189102,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -5473,9 +6063,11 @@
 	},
 	[18189103] = {
 		need = 80,
-		activity_id = 181891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181891,
 		id = 18189103,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -5493,9 +6085,11 @@
 	},
 	[18189104] = {
 		need = 110,
-		activity_id = 181891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181891,
 		id = 18189104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -5513,9 +6107,11 @@
 	},
 	[18189105] = {
 		need = 140,
-		activity_id = 181891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181891,
 		id = 18189105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -5533,9 +6129,11 @@
 	},
 	[18189106] = {
 		need = 170,
-		activity_id = 181891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181891,
 		id = 18189106,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -5553,9 +6151,11 @@
 	},
 	[18189107] = {
 		need = 200,
-		activity_id = 181891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181891,
 		id = 18189107,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -5573,9 +6173,11 @@
 	},
 	[18189201] = {
 		need = 20,
-		activity_id = 181892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181892,
 		id = 18189201,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -5593,9 +6195,11 @@
 	},
 	[18189202] = {
 		need = 50,
-		activity_id = 181892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181892,
 		id = 18189202,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -5613,9 +6217,11 @@
 	},
 	[18189203] = {
 		need = 80,
-		activity_id = 181892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181892,
 		id = 18189203,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -5633,9 +6239,11 @@
 	},
 	[18189204] = {
 		need = 110,
-		activity_id = 181892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181892,
 		id = 18189204,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -5653,9 +6261,11 @@
 	},
 	[18189205] = {
 		need = 140,
-		activity_id = 181892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181892,
 		id = 18189205,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -5673,9 +6283,11 @@
 	},
 	[18189206] = {
 		need = 170,
-		activity_id = 181892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181892,
 		id = 18189206,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -5693,9 +6305,11 @@
 	},
 	[18189207] = {
 		need = 200,
-		activity_id = 181892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181892,
 		id = 18189207,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -5713,9 +6327,11 @@
 	},
 	[18215101] = {
 		need = 0,
-		activity_id = 182151,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182151,
 		id = 18215101,
+		special_level = "",
 		reward_item_list = {
 			{
 				54021,
@@ -5725,9 +6341,11 @@
 	},
 	[18215102] = {
 		need = 1,
-		activity_id = 182151,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182151,
 		id = 18215102,
+		special_level = "",
 		reward_item_list = {
 			{
 				54021,
@@ -5737,9 +6355,11 @@
 	},
 	[18215103] = {
 		need = 600,
-		activity_id = 182151,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182151,
 		id = 18215103,
+		special_level = "",
 		reward_item_list = {
 			{
 				54021,
@@ -5749,9 +6369,11 @@
 	},
 	[18215104] = {
 		need = 800,
-		activity_id = 182151,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182151,
 		id = 18215104,
+		special_level = "",
 		reward_item_list = {
 			{
 				54021,
@@ -5761,9 +6383,11 @@
 	},
 	[18215105] = {
 		need = 1000,
-		activity_id = 182151,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182151,
 		id = 18215105,
+		special_level = "",
 		reward_item_list = {
 			{
 				54021,
@@ -5773,9 +6397,11 @@
 	},
 	[18215106] = {
 		need = 1150,
-		activity_id = 182151,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182151,
 		id = 18215106,
+		special_level = "",
 		reward_item_list = {
 			{
 				54021,
@@ -5785,9 +6411,11 @@
 	},
 	[18215107] = {
 		need = 1200,
-		activity_id = 182151,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182151,
 		id = 18215107,
+		special_level = "",
 		reward_item_list = {
 			{
 				54021,
@@ -5797,9 +6425,11 @@
 	},
 	[18215108] = {
 		need = 1250,
-		activity_id = 182151,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182151,
 		id = 18215108,
+		special_level = "",
 		reward_item_list = {
 			{
 				54021,
@@ -5809,9 +6439,11 @@
 	},
 	[18215109] = {
 		need = 1300,
-		activity_id = 182151,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182151,
 		id = 18215109,
+		special_level = "",
 		reward_item_list = {
 			{
 				54021,
@@ -5821,9 +6453,11 @@
 	},
 	[18162001] = {
 		need = 2400,
-		activity_id = 181620,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181620,
 		id = 18162001,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -5841,9 +6475,11 @@
 	},
 	[18162002] = {
 		need = 4800,
-		activity_id = 181620,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181620,
 		id = 18162002,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -5861,9 +6497,11 @@
 	},
 	[18162003] = {
 		need = 8000,
-		activity_id = 181620,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181620,
 		id = 18162003,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -5881,9 +6519,11 @@
 	},
 	[18162101] = {
 		need = 2400,
-		activity_id = 181621,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181621,
 		id = 18162101,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -5901,9 +6541,11 @@
 	},
 	[18162102] = {
 		need = 4800,
-		activity_id = 181621,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181621,
 		id = 18162102,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -5921,9 +6563,11 @@
 	},
 	[18162103] = {
 		need = 8000,
-		activity_id = 181621,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181621,
 		id = 18162103,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -5941,9 +6585,11 @@
 	},
 	[18162201] = {
 		need = 2400,
-		activity_id = 181622,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181622,
 		id = 18162201,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -5961,9 +6607,11 @@
 	},
 	[18162202] = {
 		need = 4800,
-		activity_id = 181622,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181622,
 		id = 18162202,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -5981,9 +6629,11 @@
 	},
 	[18162203] = {
 		need = 8000,
-		activity_id = 181622,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181622,
 		id = 18162203,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -6001,9 +6651,11 @@
 	},
 	[18162301] = {
 		need = 2400,
-		activity_id = 181623,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181623,
 		id = 18162301,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -6021,9 +6673,11 @@
 	},
 	[18162302] = {
 		need = 4800,
-		activity_id = 181623,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181623,
 		id = 18162302,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -6041,9 +6695,11 @@
 	},
 	[18162303] = {
 		need = 8000,
-		activity_id = 181623,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181623,
 		id = 18162303,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -6061,9 +6717,11 @@
 	},
 	[18162401] = {
 		need = 2400,
-		activity_id = 181624,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181624,
 		id = 18162401,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -6081,9 +6739,11 @@
 	},
 	[18162402] = {
 		need = 4800,
-		activity_id = 181624,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181624,
 		id = 18162402,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -6101,9 +6761,11 @@
 	},
 	[18162403] = {
 		need = 8000,
-		activity_id = 181624,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181624,
 		id = 18162403,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -6121,9 +6783,11 @@
 	},
 	[18162501] = {
 		need = 2400,
-		activity_id = 181625,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181625,
 		id = 18162501,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -6141,9 +6805,11 @@
 	},
 	[18162502] = {
 		need = 4800,
-		activity_id = 181625,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181625,
 		id = 18162502,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -6161,9 +6827,11 @@
 	},
 	[18162503] = {
 		need = 8000,
-		activity_id = 181625,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181625,
 		id = 18162503,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -6181,9 +6849,11 @@
 	},
 	[18162601] = {
 		need = 2400,
-		activity_id = 181626,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181626,
 		id = 18162601,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -6201,9 +6871,11 @@
 	},
 	[18162602] = {
 		need = 4800,
-		activity_id = 181626,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181626,
 		id = 18162602,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -6221,9 +6893,11 @@
 	},
 	[18162603] = {
 		need = 8000,
-		activity_id = 181626,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181626,
 		id = 18162603,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -6241,9 +6915,11 @@
 	},
 	[18162701] = {
 		need = 2400,
-		activity_id = 181627,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181627,
 		id = 18162701,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -6261,9 +6937,11 @@
 	},
 	[18162702] = {
 		need = 4800,
-		activity_id = 181627,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181627,
 		id = 18162702,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -6281,9 +6959,11 @@
 	},
 	[18162703] = {
 		need = 8000,
-		activity_id = 181627,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181627,
 		id = 18162703,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -6301,9 +6981,11 @@
 	},
 	[18162801] = {
 		need = 2400,
-		activity_id = 181628,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181628,
 		id = 18162801,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -6321,9 +7003,11 @@
 	},
 	[18162802] = {
 		need = 4800,
-		activity_id = 181628,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181628,
 		id = 18162802,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -6341,9 +7025,11 @@
 	},
 	[18162803] = {
 		need = 8000,
-		activity_id = 181628,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181628,
 		id = 18162803,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -6361,9 +7047,11 @@
 	},
 	[18162901] = {
 		need = 2400,
-		activity_id = 181629,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181629,
 		id = 18162901,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -6381,9 +7069,11 @@
 	},
 	[18162902] = {
 		need = 4800,
-		activity_id = 181629,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181629,
 		id = 18162902,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -6401,9 +7091,11 @@
 	},
 	[18162903] = {
 		need = 8000,
-		activity_id = 181629,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 181629,
 		id = 18162903,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -6421,9 +7113,11 @@
 	},
 	[18217101] = {
 		need = 100,
-		activity_id = 182171,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182171,
 		id = 18217101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40301,
@@ -6433,9 +7127,11 @@
 	},
 	[18217102] = {
 		need = 300,
-		activity_id = 182171,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182171,
 		id = 18217102,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -6445,9 +7141,11 @@
 	},
 	[18217103] = {
 		need = 500,
-		activity_id = 182171,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182171,
 		id = 18217103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40413,
@@ -6457,9 +7155,11 @@
 	},
 	[18217104] = {
 		need = 800,
-		activity_id = 182171,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182171,
 		id = 18217104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -6469,9 +7169,11 @@
 	},
 	[18217105] = {
 		need = 1000,
-		activity_id = 182171,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182171,
 		id = 18217105,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -6481,9 +7183,11 @@
 	},
 	[18217106] = {
 		need = 1300,
-		activity_id = 182171,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182171,
 		id = 18217106,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -6493,9 +7197,11 @@
 	},
 	[18217107] = {
 		need = 1500,
-		activity_id = 182171,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182171,
 		id = 18217107,
+		special_level = "",
 		reward_item_list = {
 			{
 				40413,
@@ -6505,9 +7211,11 @@
 	},
 	[18217108] = {
 		need = 1800,
-		activity_id = 182171,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182171,
 		id = 18217108,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -6517,9 +7225,11 @@
 	},
 	[18217109] = {
 		need = 2000,
-		activity_id = 182171,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182171,
 		id = 18217109,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -6529,9 +7239,11 @@
 	},
 	[18217110] = {
 		need = 2300,
-		activity_id = 182171,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182171,
 		id = 18217110,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -6541,9 +7253,11 @@
 	},
 	[18217111] = {
 		need = 2500,
-		activity_id = 182171,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182171,
 		id = 18217111,
+		special_level = "",
 		reward_item_list = {
 			{
 				40414,
@@ -6553,9 +7267,11 @@
 	},
 	[18217112] = {
 		need = 2800,
-		activity_id = 182171,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182171,
 		id = 18217112,
+		special_level = "",
 		reward_item_list = {
 			{
 				40301,
@@ -6565,9 +7281,11 @@
 	},
 	[18217113] = {
 		need = 3000,
-		activity_id = 182171,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182171,
 		id = 18217113,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -6577,9 +7295,11 @@
 	},
 	[19184101] = {
 		need = 1000,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -6597,9 +7317,11 @@
 	},
 	[19184102] = {
 		need = 1500,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184102,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -6617,9 +7339,11 @@
 	},
 	[19184103] = {
 		need = 2000,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -6637,9 +7361,11 @@
 	},
 	[19184104] = {
 		need = 3000,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -6657,9 +7383,11 @@
 	},
 	[19184105] = {
 		need = 4000,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -6677,9 +7405,11 @@
 	},
 	[19184106] = {
 		need = 5000,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184106,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -6697,9 +7427,11 @@
 	},
 	[19184107] = {
 		need = 6500,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184107,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -6717,9 +7449,11 @@
 	},
 	[19184108] = {
 		need = 8000,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184108,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -6737,9 +7471,11 @@
 	},
 	[19184109] = {
 		need = 9500,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184109,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -6757,9 +7493,11 @@
 	},
 	[19184110] = {
 		need = 11000,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184110,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -6777,9 +7515,11 @@
 	},
 	[19184111] = {
 		need = 12500,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184111,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -6797,9 +7537,11 @@
 	},
 	[19184112] = {
 		need = 14000,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184112,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -6817,9 +7559,11 @@
 	},
 	[19184113] = {
 		need = 15500,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184113,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -6837,9 +7581,11 @@
 	},
 	[19184114] = {
 		need = 17000,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184114,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -6857,9 +7603,11 @@
 	},
 	[19184115] = {
 		need = 18500,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184115,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -6877,9 +7625,11 @@
 	},
 	[19184116] = {
 		need = 20000,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184116,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -6897,9 +7647,11 @@
 	},
 	[19184117] = {
 		need = 22000,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184117,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -6913,9 +7665,11 @@
 	},
 	[19184118] = {
 		need = 24000,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184118,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -6929,9 +7683,11 @@
 	},
 	[19184119] = {
 		need = 26000,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184119,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -6945,9 +7701,11 @@
 	},
 	[19184120] = {
 		need = 28000,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184120,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -6961,9 +7719,11 @@
 	},
 	[19184121] = {
 		need = 30000,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184121,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -6973,9 +7733,11 @@
 	},
 	[19184122] = {
 		need = 32000,
-		activity_id = 191841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191841,
 		id = 19184122,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -6985,9 +7747,11 @@
 	},
 	[19189101] = {
 		need = 20,
-		activity_id = 191891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191891,
 		id = 19189101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -7005,9 +7769,11 @@
 	},
 	[19189102] = {
 		need = 50,
-		activity_id = 191891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191891,
 		id = 19189102,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -7025,9 +7791,11 @@
 	},
 	[19189103] = {
 		need = 80,
-		activity_id = 191891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191891,
 		id = 19189103,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -7045,9 +7813,11 @@
 	},
 	[19189104] = {
 		need = 110,
-		activity_id = 191891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191891,
 		id = 19189104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -7065,9 +7835,11 @@
 	},
 	[19189105] = {
 		need = 140,
-		activity_id = 191891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191891,
 		id = 19189105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -7085,9 +7857,11 @@
 	},
 	[19189106] = {
 		need = 170,
-		activity_id = 191891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191891,
 		id = 19189106,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -7105,9 +7879,11 @@
 	},
 	[19189107] = {
 		need = 200,
-		activity_id = 191891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191891,
 		id = 19189107,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -7125,9 +7901,11 @@
 	},
 	[19189201] = {
 		need = 20,
-		activity_id = 191892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191892,
 		id = 19189201,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -7145,9 +7923,11 @@
 	},
 	[19189202] = {
 		need = 50,
-		activity_id = 191892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191892,
 		id = 19189202,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -7165,9 +7945,11 @@
 	},
 	[19189203] = {
 		need = 80,
-		activity_id = 191892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191892,
 		id = 19189203,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -7185,9 +7967,11 @@
 	},
 	[19189204] = {
 		need = 110,
-		activity_id = 191892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191892,
 		id = 19189204,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -7205,9 +7989,11 @@
 	},
 	[19189205] = {
 		need = 140,
-		activity_id = 191892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191892,
 		id = 19189205,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -7225,9 +8011,11 @@
 	},
 	[19189206] = {
 		need = 170,
-		activity_id = 191892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191892,
 		id = 19189206,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -7245,9 +8033,11 @@
 	},
 	[19189207] = {
 		need = 200,
-		activity_id = 191892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 191892,
 		id = 19189207,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -7265,9 +8055,11 @@
 	},
 	[20105101] = {
 		need = 2000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7285,9 +8077,11 @@
 	},
 	[20105102] = {
 		need = 3000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105102,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7305,9 +8099,11 @@
 	},
 	[20105103] = {
 		need = 4000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7325,9 +8121,11 @@
 	},
 	[20105104] = {
 		need = 5000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7345,9 +8143,11 @@
 	},
 	[20105105] = {
 		need = 6000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7365,9 +8165,11 @@
 	},
 	[20105106] = {
 		need = 7000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105106,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7385,9 +8187,11 @@
 	},
 	[20105107] = {
 		need = 8000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105107,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7405,9 +8209,11 @@
 	},
 	[20105108] = {
 		need = 9000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105108,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7425,9 +8231,11 @@
 	},
 	[20105109] = {
 		need = 10000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105109,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7445,9 +8253,11 @@
 	},
 	[20105110] = {
 		need = 11000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105110,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7465,9 +8275,11 @@
 	},
 	[20105111] = {
 		need = 12000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105111,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7485,9 +8297,11 @@
 	},
 	[20105112] = {
 		need = 13000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105112,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7505,9 +8319,11 @@
 	},
 	[20105113] = {
 		need = 14000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105113,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7525,9 +8341,11 @@
 	},
 	[20105114] = {
 		need = 15000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105114,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7545,9 +8363,11 @@
 	},
 	[20105115] = {
 		need = 16000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105115,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7565,9 +8385,11 @@
 	},
 	[20105116] = {
 		need = 17000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105116,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7585,9 +8407,11 @@
 	},
 	[20105117] = {
 		need = 18000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105117,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7605,9 +8429,11 @@
 	},
 	[20105118] = {
 		need = 20000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105118,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7625,9 +8451,11 @@
 	},
 	[20105119] = {
 		need = 22000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105119,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7645,9 +8473,11 @@
 	},
 	[20105120] = {
 		need = 24000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105120,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7665,9 +8495,11 @@
 	},
 	[20105121] = {
 		need = 26000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105121,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7685,9 +8517,11 @@
 	},
 	[20105122] = {
 		need = 28000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105122,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7705,9 +8539,11 @@
 	},
 	[20105123] = {
 		need = 30000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105123,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7725,9 +8561,11 @@
 	},
 	[20105124] = {
 		need = 32000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105124,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7745,9 +8583,11 @@
 	},
 	[20105125] = {
 		need = 34000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105125,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7765,9 +8605,11 @@
 	},
 	[20105126] = {
 		need = 36000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105126,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7785,9 +8627,11 @@
 	},
 	[20105127] = {
 		need = 38000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105127,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -7805,9 +8649,11 @@
 	},
 	[20105128] = {
 		need = 40000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105128,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -7821,9 +8667,11 @@
 	},
 	[20105129] = {
 		need = 42000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105129,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -7837,9 +8685,11 @@
 	},
 	[20105130] = {
 		need = 44000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105130,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -7853,9 +8703,11 @@
 	},
 	[20105131] = {
 		need = 46000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105131,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -7869,9 +8721,11 @@
 	},
 	[20105132] = {
 		need = 48000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105132,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -7881,9 +8735,11 @@
 	},
 	[20105133] = {
 		need = 50000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105133,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -7893,9 +8749,11 @@
 	},
 	[20105134] = {
 		need = 52000,
-		activity_id = 201051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201051,
 		id = 20105134,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -7905,9 +8763,11 @@
 	},
 	[20189101] = {
 		need = 20,
-		activity_id = 201891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201891,
 		id = 20189101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -7925,9 +8785,11 @@
 	},
 	[20189102] = {
 		need = 50,
-		activity_id = 201891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201891,
 		id = 20189102,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -7945,9 +8807,11 @@
 	},
 	[20189103] = {
 		need = 80,
-		activity_id = 201891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201891,
 		id = 20189103,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -7965,9 +8829,11 @@
 	},
 	[20189104] = {
 		need = 110,
-		activity_id = 201891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201891,
 		id = 20189104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -7985,9 +8851,11 @@
 	},
 	[20189105] = {
 		need = 140,
-		activity_id = 201891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201891,
 		id = 20189105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -8005,9 +8873,11 @@
 	},
 	[20189106] = {
 		need = 170,
-		activity_id = 201891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201891,
 		id = 20189106,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -8025,9 +8895,11 @@
 	},
 	[20189107] = {
 		need = 200,
-		activity_id = 201891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201891,
 		id = 20189107,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -8045,9 +8917,11 @@
 	},
 	[20189201] = {
 		need = 20,
-		activity_id = 201892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201892,
 		id = 20189201,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -8065,9 +8939,11 @@
 	},
 	[20189202] = {
 		need = 50,
-		activity_id = 201892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201892,
 		id = 20189202,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -8085,9 +8961,11 @@
 	},
 	[20189203] = {
 		need = 80,
-		activity_id = 201892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201892,
 		id = 20189203,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -8105,9 +8983,11 @@
 	},
 	[20189204] = {
 		need = 110,
-		activity_id = 201892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201892,
 		id = 20189204,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -8125,9 +9005,11 @@
 	},
 	[20189205] = {
 		need = 140,
-		activity_id = 201892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201892,
 		id = 20189205,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -8145,9 +9027,11 @@
 	},
 	[20189206] = {
 		need = 170,
-		activity_id = 201892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201892,
 		id = 20189206,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -8165,9 +9049,11 @@
 	},
 	[20189207] = {
 		need = 200,
-		activity_id = 201892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 201892,
 		id = 20189207,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -8185,9 +9071,11 @@
 	},
 	[21253101] = {
 		need = 1,
-		activity_id = 212531,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212531,
 		id = 21253101,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -8205,9 +9093,11 @@
 	},
 	[21253102] = {
 		need = 2,
-		activity_id = 212531,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212531,
 		id = 21253102,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -8225,9 +9115,11 @@
 	},
 	[21253103] = {
 		need = 3,
-		activity_id = 212531,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212531,
 		id = 21253103,
+		special_level = "",
 		reward_item_list = {
 			{
 				53088,
@@ -8245,9 +9137,11 @@
 	},
 	[21253104] = {
 		need = 4,
-		activity_id = 212531,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212531,
 		id = 21253104,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -8265,9 +9159,11 @@
 	},
 	[21253105] = {
 		need = 5,
-		activity_id = 212531,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212531,
 		id = 21253105,
+		special_level = "",
 		reward_item_list = {
 			{
 				53088,
@@ -8285,9 +9181,11 @@
 	},
 	[21253106] = {
 		need = 6,
-		activity_id = 212531,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212531,
 		id = 21253106,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -8305,9 +9203,11 @@
 	},
 	[21253107] = {
 		need = 7,
-		activity_id = 212531,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212531,
 		id = 21253107,
+		special_level = "",
 		reward_item_list = {
 			{
 				53088,
@@ -8325,9 +9225,11 @@
 	},
 	[22254101] = {
 		need = 4,
-		activity_id = 222541,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222541,
 		id = 22254101,
+		special_level = "",
 		reward_item_list = {
 			{
 				53088,
@@ -8337,9 +9239,11 @@
 	},
 	[22254102] = {
 		need = 8,
-		activity_id = 222541,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222541,
 		id = 22254102,
+		special_level = "",
 		reward_item_list = {
 			{
 				53088,
@@ -8349,9 +9253,11 @@
 	},
 	[22254103] = {
 		need = 12,
-		activity_id = 222541,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222541,
 		id = 22254103,
+		special_level = "",
 		reward_item_list = {
 			{
 				53088,
@@ -8361,9 +9267,11 @@
 	},
 	[22254104] = {
 		need = 16,
-		activity_id = 222541,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222541,
 		id = 22254104,
+		special_level = "",
 		reward_item_list = {
 			{
 				53088,
@@ -8373,9 +9281,11 @@
 	},
 	[22254105] = {
 		need = 20,
-		activity_id = 222541,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222541,
 		id = 22254105,
+		special_level = "",
 		reward_item_list = {
 			{
 				53088,
@@ -8385,9 +9295,11 @@
 	},
 	[22254106] = {
 		need = 24,
-		activity_id = 222541,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222541,
 		id = 22254106,
+		special_level = "",
 		reward_item_list = {
 			{
 				53088,
@@ -8397,9 +9309,11 @@
 	},
 	[22254107] = {
 		need = 28,
-		activity_id = 222541,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222541,
 		id = 22254107,
+		special_level = "",
 		reward_item_list = {
 			{
 				53088,
@@ -8409,9 +9323,11 @@
 	},
 	[22254108] = {
 		need = 32,
-		activity_id = 222541,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222541,
 		id = 22254108,
+		special_level = "",
 		reward_item_list = {
 			{
 				53088,
@@ -8421,9 +9337,11 @@
 	},
 	[22261101] = {
 		need = 8000,
-		activity_id = 222611,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222611,
 		id = 22261101,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -8441,9 +9359,11 @@
 	},
 	[22261102] = {
 		need = 10000,
-		activity_id = 222611,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222611,
 		id = 22261102,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -8461,9 +9381,11 @@
 	},
 	[22261103] = {
 		need = 12000,
-		activity_id = 222611,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222611,
 		id = 22261103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -8481,9 +9403,11 @@
 	},
 	[22261201] = {
 		need = 10000,
-		activity_id = 222612,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222612,
 		id = 22261201,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -8501,9 +9425,11 @@
 	},
 	[22261202] = {
 		need = 12000,
-		activity_id = 222612,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222612,
 		id = 22261202,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -8521,9 +9447,11 @@
 	},
 	[22261203] = {
 		need = 14000,
-		activity_id = 222612,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222612,
 		id = 22261203,
+		special_level = "",
 		reward_item_list = {
 			{
 				40503,
@@ -8541,9 +9469,11 @@
 	},
 	[22262101] = {
 		need = 6000,
-		activity_id = 222621,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222621,
 		id = 22262101,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -8561,9 +9491,11 @@
 	},
 	[22262102] = {
 		need = 10000,
-		activity_id = 222621,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222621,
 		id = 22262102,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -8581,9 +9513,11 @@
 	},
 	[22262103] = {
 		need = 14000,
-		activity_id = 222621,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222621,
 		id = 22262103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -8601,9 +9535,11 @@
 	},
 	[22262201] = {
 		need = 6000,
-		activity_id = 222622,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222622,
 		id = 22262201,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -8621,9 +9557,11 @@
 	},
 	[22262202] = {
 		need = 10000,
-		activity_id = 222622,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222622,
 		id = 22262202,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -8641,9 +9579,11 @@
 	},
 	[22262203] = {
 		need = 14000,
-		activity_id = 222622,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222622,
 		id = 22262203,
+		special_level = "",
 		reward_item_list = {
 			{
 				40503,
@@ -8661,9 +9601,11 @@
 	},
 	[22263101] = {
 		need = 6000,
-		activity_id = 222631,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222631,
 		id = 22263101,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -8681,9 +9623,11 @@
 	},
 	[22263102] = {
 		need = 8000,
-		activity_id = 222631,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222631,
 		id = 22263102,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -8701,9 +9645,11 @@
 	},
 	[22263103] = {
 		need = 12000,
-		activity_id = 222631,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222631,
 		id = 22263103,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -8721,9 +9667,11 @@
 	},
 	[22263201] = {
 		need = 6000,
-		activity_id = 222632,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222632,
 		id = 22263201,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -8741,9 +9689,11 @@
 	},
 	[22263202] = {
 		need = 8000,
-		activity_id = 222632,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222632,
 		id = 22263202,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -8761,9 +9711,11 @@
 	},
 	[22263203] = {
 		need = 12000,
-		activity_id = 222632,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 222632,
 		id = 22263203,
+		special_level = "",
 		reward_item_list = {
 			{
 				40503,
@@ -8781,9 +9733,11 @@
 	},
 	[21189101] = {
 		need = 20,
-		activity_id = 211891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 211891,
 		id = 21189101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -8801,9 +9755,11 @@
 	},
 	[21189102] = {
 		need = 50,
-		activity_id = 211891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 211891,
 		id = 21189102,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -8821,9 +9777,11 @@
 	},
 	[21189103] = {
 		need = 80,
-		activity_id = 211891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 211891,
 		id = 21189103,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -8841,9 +9799,11 @@
 	},
 	[21189104] = {
 		need = 110,
-		activity_id = 211891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 211891,
 		id = 21189104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -8861,9 +9821,11 @@
 	},
 	[21189105] = {
 		need = 140,
-		activity_id = 211891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 211891,
 		id = 21189105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -8881,9 +9843,11 @@
 	},
 	[21189106] = {
 		need = 160,
-		activity_id = 211891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 211891,
 		id = 21189106,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -8901,9 +9865,11 @@
 	},
 	[21189107] = {
 		need = 180,
-		activity_id = 211891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 211891,
 		id = 21189107,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -8921,9 +9887,11 @@
 	},
 	[21189201] = {
 		need = 20,
-		activity_id = 211892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 211892,
 		id = 21189201,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -8941,9 +9909,11 @@
 	},
 	[21189202] = {
 		need = 50,
-		activity_id = 211892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 211892,
 		id = 21189202,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -8961,9 +9931,11 @@
 	},
 	[21189203] = {
 		need = 80,
-		activity_id = 211892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 211892,
 		id = 21189203,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -8981,9 +9953,11 @@
 	},
 	[21189204] = {
 		need = 110,
-		activity_id = 211892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 211892,
 		id = 21189204,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -9001,9 +9975,11 @@
 	},
 	[21189205] = {
 		need = 140,
-		activity_id = 211892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 211892,
 		id = 21189205,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -9021,9 +9997,11 @@
 	},
 	[21189206] = {
 		need = 160,
-		activity_id = 211892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 211892,
 		id = 21189206,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -9041,9 +10019,11 @@
 	},
 	[21189207] = {
 		need = 180,
-		activity_id = 211892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 211892,
 		id = 21189207,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -9061,9 +10041,11 @@
 	},
 	[18225101] = {
 		need = 5,
-		activity_id = 182251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182251,
 		id = 18225101,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9073,9 +10055,11 @@
 	},
 	[18225102] = {
 		need = 10,
-		activity_id = 182251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182251,
 		id = 18225102,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9085,9 +10069,11 @@
 	},
 	[18225103] = {
 		need = 30,
-		activity_id = 182251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182251,
 		id = 18225103,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9097,9 +10083,11 @@
 	},
 	[18225201] = {
 		need = 5,
-		activity_id = 182252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182252,
 		id = 18225201,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9109,9 +10097,11 @@
 	},
 	[18225202] = {
 		need = 10,
-		activity_id = 182252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182252,
 		id = 18225202,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9121,9 +10111,11 @@
 	},
 	[18225203] = {
 		need = 30,
-		activity_id = 182252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182252,
 		id = 18225203,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9133,9 +10125,11 @@
 	},
 	[18225301] = {
 		need = 5,
-		activity_id = 182253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182253,
 		id = 18225301,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9145,9 +10139,11 @@
 	},
 	[18225302] = {
 		need = 10,
-		activity_id = 182253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182253,
 		id = 18225302,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9157,9 +10153,11 @@
 	},
 	[18225303] = {
 		need = 30,
-		activity_id = 182253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 182253,
 		id = 18225303,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9169,9 +10167,11 @@
 	},
 	[19225101] = {
 		need = 5,
-		activity_id = 192251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 192251,
 		id = 19225101,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9181,9 +10181,11 @@
 	},
 	[19225102] = {
 		need = 10,
-		activity_id = 192251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 192251,
 		id = 19225102,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9193,9 +10195,11 @@
 	},
 	[19225103] = {
 		need = 30,
-		activity_id = 192251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 192251,
 		id = 19225103,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9205,9 +10209,11 @@
 	},
 	[19225201] = {
 		need = 5,
-		activity_id = 192252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 192252,
 		id = 19225201,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9217,9 +10223,11 @@
 	},
 	[19225202] = {
 		need = 10,
-		activity_id = 192252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 192252,
 		id = 19225202,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9229,9 +10237,11 @@
 	},
 	[19225203] = {
 		need = 30,
-		activity_id = 192252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 192252,
 		id = 19225203,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9241,9 +10251,11 @@
 	},
 	[19225301] = {
 		need = 5,
-		activity_id = 192253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 192253,
 		id = 19225301,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9253,9 +10265,11 @@
 	},
 	[19225302] = {
 		need = 10,
-		activity_id = 192253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 192253,
 		id = 19225302,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9265,9 +10279,11 @@
 	},
 	[19225303] = {
 		need = 30,
-		activity_id = 192253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 192253,
 		id = 19225303,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9277,9 +10293,11 @@
 	},
 	[19225401] = {
 		need = 5,
-		activity_id = 192254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 192254,
 		id = 19225401,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9289,9 +10307,11 @@
 	},
 	[19225402] = {
 		need = 10,
-		activity_id = 192254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 192254,
 		id = 19225402,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9301,9 +10321,11 @@
 	},
 	[19225403] = {
 		need = 30,
-		activity_id = 192254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 192254,
 		id = 19225403,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9313,9 +10335,11 @@
 	},
 	[20225101] = {
 		need = 5,
-		activity_id = 202251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202251,
 		id = 20225101,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9325,9 +10349,11 @@
 	},
 	[20225102] = {
 		need = 10,
-		activity_id = 202251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202251,
 		id = 20225102,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9337,9 +10363,11 @@
 	},
 	[20225103] = {
 		need = 30,
-		activity_id = 202251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202251,
 		id = 20225103,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9349,9 +10377,11 @@
 	},
 	[20225201] = {
 		need = 5,
-		activity_id = 202252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202252,
 		id = 20225201,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9361,9 +10391,11 @@
 	},
 	[20225202] = {
 		need = 10,
-		activity_id = 202252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202252,
 		id = 20225202,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9373,9 +10405,11 @@
 	},
 	[20225203] = {
 		need = 30,
-		activity_id = 202252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202252,
 		id = 20225203,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9385,9 +10419,11 @@
 	},
 	[20225301] = {
 		need = 5,
-		activity_id = 202253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202253,
 		id = 20225301,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9397,9 +10433,11 @@
 	},
 	[20225302] = {
 		need = 10,
-		activity_id = 202253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202253,
 		id = 20225302,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9409,9 +10447,11 @@
 	},
 	[20225303] = {
 		need = 30,
-		activity_id = 202253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202253,
 		id = 20225303,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9421,9 +10461,11 @@
 	},
 	[21225101] = {
 		need = 5,
-		activity_id = 212251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212251,
 		id = 21225101,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9433,9 +10475,11 @@
 	},
 	[21225102] = {
 		need = 10,
-		activity_id = 212251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212251,
 		id = 21225102,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9445,9 +10489,11 @@
 	},
 	[21225103] = {
 		need = 30,
-		activity_id = 212251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212251,
 		id = 21225103,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9457,9 +10503,11 @@
 	},
 	[21225201] = {
 		need = 5,
-		activity_id = 212252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212252,
 		id = 21225201,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9469,9 +10517,11 @@
 	},
 	[21225202] = {
 		need = 10,
-		activity_id = 212252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212252,
 		id = 21225202,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9481,9 +10531,11 @@
 	},
 	[21225203] = {
 		need = 30,
-		activity_id = 212252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212252,
 		id = 21225203,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9493,9 +10545,11 @@
 	},
 	[21225301] = {
 		need = 5,
-		activity_id = 212253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212253,
 		id = 21225301,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9505,9 +10559,11 @@
 	},
 	[21225302] = {
 		need = 10,
-		activity_id = 212253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212253,
 		id = 21225302,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9517,9 +10573,11 @@
 	},
 	[21225303] = {
 		need = 30,
-		activity_id = 212253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212253,
 		id = 21225303,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9529,9 +10587,11 @@
 	},
 	[20225401] = {
 		need = 5,
-		activity_id = 202254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202254,
 		id = 20225401,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9541,9 +10601,11 @@
 	},
 	[20225402] = {
 		need = 10,
-		activity_id = 202254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202254,
 		id = 20225402,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9553,9 +10615,11 @@
 	},
 	[20225403] = {
 		need = 30,
-		activity_id = 202254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202254,
 		id = 20225403,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9565,9 +10629,11 @@
 	},
 	[20225501] = {
 		need = 5,
-		activity_id = 202255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202255,
 		id = 20225501,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9577,9 +10643,11 @@
 	},
 	[20225502] = {
 		need = 10,
-		activity_id = 202255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202255,
 		id = 20225502,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9589,9 +10657,11 @@
 	},
 	[20225503] = {
 		need = 30,
-		activity_id = 202255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202255,
 		id = 20225503,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9601,9 +10671,11 @@
 	},
 	[20225601] = {
 		need = 5,
-		activity_id = 202256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202256,
 		id = 20225601,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9613,9 +10685,11 @@
 	},
 	[20225602] = {
 		need = 10,
-		activity_id = 202256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202256,
 		id = 20225602,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9625,9 +10699,11 @@
 	},
 	[20225603] = {
 		need = 30,
-		activity_id = 202256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 202256,
 		id = 20225603,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9637,9 +10713,11 @@
 	},
 	[21225401] = {
 		need = 5,
-		activity_id = 212254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212254,
 		id = 21225401,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9649,9 +10727,11 @@
 	},
 	[21225402] = {
 		need = 10,
-		activity_id = 212254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212254,
 		id = 21225402,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9661,9 +10741,11 @@
 	},
 	[21225403] = {
 		need = 30,
-		activity_id = 212254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212254,
 		id = 21225403,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9673,9 +10755,11 @@
 	},
 	[21225501] = {
 		need = 5,
-		activity_id = 212255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212255,
 		id = 21225501,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9685,9 +10769,11 @@
 	},
 	[21225502] = {
 		need = 10,
-		activity_id = 212255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212255,
 		id = 21225502,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9697,9 +10783,11 @@
 	},
 	[21225503] = {
 		need = 30,
-		activity_id = 212255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212255,
 		id = 21225503,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9709,9 +10797,11 @@
 	},
 	[21225601] = {
 		need = 5,
-		activity_id = 212256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212256,
 		id = 21225601,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9721,9 +10811,11 @@
 	},
 	[21225602] = {
 		need = 10,
-		activity_id = 212256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212256,
 		id = 21225602,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9733,9 +10825,11 @@
 	},
 	[21225603] = {
 		need = 30,
-		activity_id = 212256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 212256,
 		id = 21225603,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9745,9 +10839,11 @@
 	},
 	[23225101] = {
 		need = 5,
-		activity_id = 232251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232251,
 		id = 23225101,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9757,9 +10853,11 @@
 	},
 	[23225102] = {
 		need = 10,
-		activity_id = 232251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232251,
 		id = 23225102,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9769,9 +10867,11 @@
 	},
 	[23225103] = {
 		need = 30,
-		activity_id = 232251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232251,
 		id = 23225103,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9781,9 +10881,11 @@
 	},
 	[23225201] = {
 		need = 5,
-		activity_id = 232252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232252,
 		id = 23225201,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9793,9 +10895,11 @@
 	},
 	[23225202] = {
 		need = 10,
-		activity_id = 232252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232252,
 		id = 23225202,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9805,9 +10909,11 @@
 	},
 	[23225203] = {
 		need = 30,
-		activity_id = 232252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232252,
 		id = 23225203,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9817,9 +10923,11 @@
 	},
 	[23225301] = {
 		need = 5,
-		activity_id = 232253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232253,
 		id = 23225301,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9829,9 +10937,11 @@
 	},
 	[23225302] = {
 		need = 10,
-		activity_id = 232253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232253,
 		id = 23225302,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9841,9 +10951,11 @@
 	},
 	[23225303] = {
 		need = 30,
-		activity_id = 232253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232253,
 		id = 23225303,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9853,9 +10965,11 @@
 	},
 	[23225401] = {
 		need = 5,
-		activity_id = 232254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232254,
 		id = 23225401,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9865,9 +10979,11 @@
 	},
 	[23225402] = {
 		need = 10,
-		activity_id = 232254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232254,
 		id = 23225402,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9877,9 +10993,11 @@
 	},
 	[23225403] = {
 		need = 30,
-		activity_id = 232254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232254,
 		id = 23225403,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9889,9 +11007,11 @@
 	},
 	[23225501] = {
 		need = 5,
-		activity_id = 232255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232255,
 		id = 23225501,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9901,9 +11021,11 @@
 	},
 	[23225502] = {
 		need = 10,
-		activity_id = 232255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232255,
 		id = 23225502,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9913,9 +11035,11 @@
 	},
 	[23225503] = {
 		need = 30,
-		activity_id = 232255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232255,
 		id = 23225503,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9925,9 +11049,11 @@
 	},
 	[23225601] = {
 		need = 5,
-		activity_id = 232256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232256,
 		id = 23225601,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9937,9 +11063,11 @@
 	},
 	[23225602] = {
 		need = 10,
-		activity_id = 232256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232256,
 		id = 23225602,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9949,9 +11077,11 @@
 	},
 	[23225603] = {
 		need = 30,
-		activity_id = 232256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 232256,
 		id = 23225603,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9961,9 +11091,11 @@
 	},
 	[24225101] = {
 		need = 5,
-		activity_id = 242251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242251,
 		id = 24225101,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9973,9 +11105,11 @@
 	},
 	[24225102] = {
 		need = 10,
-		activity_id = 242251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242251,
 		id = 24225102,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9985,9 +11119,11 @@
 	},
 	[24225103] = {
 		need = 30,
-		activity_id = 242251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242251,
 		id = 24225103,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -9997,9 +11133,11 @@
 	},
 	[24225201] = {
 		need = 5,
-		activity_id = 242252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242252,
 		id = 24225201,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -10009,9 +11147,11 @@
 	},
 	[24225202] = {
 		need = 10,
-		activity_id = 242252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242252,
 		id = 24225202,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -10021,9 +11161,11 @@
 	},
 	[24225203] = {
 		need = 30,
-		activity_id = 242252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242252,
 		id = 24225203,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -10033,9 +11175,11 @@
 	},
 	[24225301] = {
 		need = 5,
-		activity_id = 242253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242253,
 		id = 24225301,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -10045,9 +11189,11 @@
 	},
 	[24225302] = {
 		need = 10,
-		activity_id = 242253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242253,
 		id = 24225302,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -10057,9 +11203,11 @@
 	},
 	[24225303] = {
 		need = 30,
-		activity_id = 242253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242253,
 		id = 24225303,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -10069,9 +11217,11 @@
 	},
 	[23128101] = {
 		need = 20000,
-		activity_id = 231281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231281,
 		id = 23128101,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -10089,9 +11239,11 @@
 	},
 	[23128102] = {
 		need = 24000,
-		activity_id = 231281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231281,
 		id = 23128102,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -10109,9 +11261,11 @@
 	},
 	[23128103] = {
 		need = 28000,
-		activity_id = 231281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231281,
 		id = 23128103,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -10129,9 +11283,11 @@
 	},
 	[23128104] = {
 		need = 32000,
-		activity_id = 231281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231281,
 		id = 23128104,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -10149,9 +11305,11 @@
 	},
 	[23128105] = {
 		need = 36000,
-		activity_id = 231281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231281,
 		id = 23128105,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -10169,9 +11327,11 @@
 	},
 	[23128106] = {
 		need = 40000,
-		activity_id = 231281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231281,
 		id = 23128106,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -10189,9 +11349,11 @@
 	},
 	[23128107] = {
 		need = 44000,
-		activity_id = 231281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231281,
 		id = 23128107,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -10205,9 +11367,11 @@
 	},
 	[23128108] = {
 		need = 48000,
-		activity_id = 231281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231281,
 		id = 23128108,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -10221,9 +11385,11 @@
 	},
 	[23128109] = {
 		need = 54000,
-		activity_id = 231281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231281,
 		id = 23128109,
+		special_level = "",
 		reward_item_list = {
 			{
 				40103,
@@ -10237,9 +11403,11 @@
 	},
 	[23128110] = {
 		need = 60000,
-		activity_id = 231281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231281,
 		id = 23128110,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -10253,9 +11421,11 @@
 	},
 	[23128111] = {
 		need = 66000,
-		activity_id = 231281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231281,
 		id = 23128111,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -10269,9 +11439,11 @@
 	},
 	[23128112] = {
 		need = 72000,
-		activity_id = 231281,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231281,
 		id = 23128112,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -10281,9 +11453,11 @@
 	},
 	[23105101] = {
 		need = 2000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10301,9 +11475,11 @@
 	},
 	[23105102] = {
 		need = 3000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105102,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10321,9 +11497,11 @@
 	},
 	[23105103] = {
 		need = 4000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10341,9 +11519,11 @@
 	},
 	[23105104] = {
 		need = 5000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10361,9 +11541,11 @@
 	},
 	[23105105] = {
 		need = 6000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10381,9 +11563,11 @@
 	},
 	[23105106] = {
 		need = 7000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105106,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10401,9 +11585,11 @@
 	},
 	[23105107] = {
 		need = 8000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105107,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10421,9 +11607,11 @@
 	},
 	[23105108] = {
 		need = 9000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105108,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10441,9 +11629,11 @@
 	},
 	[23105109] = {
 		need = 10000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105109,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10461,9 +11651,11 @@
 	},
 	[23105110] = {
 		need = 11000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105110,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10481,9 +11673,11 @@
 	},
 	[23105111] = {
 		need = 12000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105111,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10501,9 +11695,11 @@
 	},
 	[23105112] = {
 		need = 13000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105112,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10521,9 +11717,11 @@
 	},
 	[23105113] = {
 		need = 14000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105113,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10541,9 +11739,11 @@
 	},
 	[23105114] = {
 		need = 15000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105114,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10561,9 +11761,11 @@
 	},
 	[23105115] = {
 		need = 16000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105115,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10581,9 +11783,11 @@
 	},
 	[23105116] = {
 		need = 17000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105116,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10601,9 +11805,11 @@
 	},
 	[23105117] = {
 		need = 18000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105117,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10621,9 +11827,11 @@
 	},
 	[23105118] = {
 		need = 20000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105118,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10641,9 +11849,11 @@
 	},
 	[23105119] = {
 		need = 22000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105119,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10661,9 +11871,11 @@
 	},
 	[23105120] = {
 		need = 24000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105120,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10681,9 +11893,11 @@
 	},
 	[23105121] = {
 		need = 26000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105121,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10701,9 +11915,11 @@
 	},
 	[23105122] = {
 		need = 28000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105122,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10721,9 +11937,11 @@
 	},
 	[23105123] = {
 		need = 30000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105123,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10741,9 +11959,11 @@
 	},
 	[23105124] = {
 		need = 32000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105124,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10761,9 +11981,11 @@
 	},
 	[23105125] = {
 		need = 34000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105125,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10781,9 +12003,11 @@
 	},
 	[23105126] = {
 		need = 36000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105126,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10801,9 +12025,11 @@
 	},
 	[23105127] = {
 		need = 38000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105127,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -10821,9 +12047,11 @@
 	},
 	[23105128] = {
 		need = 40000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105128,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -10837,9 +12065,11 @@
 	},
 	[23105129] = {
 		need = 42000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105129,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -10853,9 +12083,11 @@
 	},
 	[23105130] = {
 		need = 44000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105130,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -10869,9 +12101,11 @@
 	},
 	[23105131] = {
 		need = 46000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105131,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -10885,9 +12119,11 @@
 	},
 	[23105132] = {
 		need = 48000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105132,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -10897,9 +12133,11 @@
 	},
 	[23105133] = {
 		need = 50000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105133,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -10909,9 +12147,11 @@
 	},
 	[23105134] = {
 		need = 52000,
-		activity_id = 231051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231051,
 		id = 23105134,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -10921,9 +12161,11 @@
 	},
 	[23189101] = {
 		need = 20,
-		activity_id = 231891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231891,
 		id = 23189101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -10941,9 +12183,11 @@
 	},
 	[23189102] = {
 		need = 50,
-		activity_id = 231891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231891,
 		id = 23189102,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -10961,9 +12205,11 @@
 	},
 	[23189103] = {
 		need = 80,
-		activity_id = 231891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231891,
 		id = 23189103,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -10981,9 +12227,11 @@
 	},
 	[23189104] = {
 		need = 110,
-		activity_id = 231891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231891,
 		id = 23189104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -11001,9 +12249,11 @@
 	},
 	[23189105] = {
 		need = 140,
-		activity_id = 231891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231891,
 		id = 23189105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -11021,9 +12271,11 @@
 	},
 	[23189106] = {
 		need = 160,
-		activity_id = 231891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231891,
 		id = 23189106,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -11041,9 +12293,11 @@
 	},
 	[23189107] = {
 		need = 180,
-		activity_id = 231891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231891,
 		id = 23189107,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -11061,9 +12315,11 @@
 	},
 	[23189201] = {
 		need = 20,
-		activity_id = 231892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231892,
 		id = 23189201,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -11081,9 +12337,11 @@
 	},
 	[23189202] = {
 		need = 50,
-		activity_id = 231892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231892,
 		id = 23189202,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -11101,9 +12359,11 @@
 	},
 	[23189203] = {
 		need = 80,
-		activity_id = 231892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231892,
 		id = 23189203,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -11121,9 +12381,11 @@
 	},
 	[23189204] = {
 		need = 110,
-		activity_id = 231892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231892,
 		id = 23189204,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -11141,9 +12403,11 @@
 	},
 	[23189205] = {
 		need = 140,
-		activity_id = 231892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231892,
 		id = 23189205,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -11161,9 +12425,11 @@
 	},
 	[23189206] = {
 		need = 160,
-		activity_id = 231892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231892,
 		id = 23189206,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -11181,9 +12447,11 @@
 	},
 	[23189207] = {
 		need = 180,
-		activity_id = 231892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 231892,
 		id = 23189207,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -11201,9 +12469,11 @@
 	},
 	[24279101] = {
 		need = 500,
-		activity_id = 242791,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242791,
 		id = 24279101,
+		special_level = "",
 		reward_item_list = {
 			{
 				53105,
@@ -11213,9 +12483,11 @@
 	},
 	[24279102] = {
 		need = 1000,
-		activity_id = 242791,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242791,
 		id = 24279102,
+		special_level = "",
 		reward_item_list = {
 			{
 				53105,
@@ -11225,9 +12497,11 @@
 	},
 	[24279103] = {
 		need = 1500,
-		activity_id = 242791,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242791,
 		id = 24279103,
+		special_level = "",
 		reward_item_list = {
 			{
 				53105,
@@ -11237,9 +12511,11 @@
 	},
 	[24279104] = {
 		need = 500,
-		activity_id = 242791,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242791,
 		id = 24279104,
+		special_level = "",
 		reward_item_list = {
 			{
 				53105,
@@ -11249,9 +12525,11 @@
 	},
 	[24279105] = {
 		need = 1500,
-		activity_id = 242791,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242791,
 		id = 24279105,
+		special_level = "",
 		reward_item_list = {
 			{
 				53105,
@@ -11261,9 +12539,11 @@
 	},
 	[24279106] = {
 		need = 2500,
-		activity_id = 242791,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242791,
 		id = 24279106,
+		special_level = "",
 		reward_item_list = {
 			{
 				53105,
@@ -11273,9 +12553,11 @@
 	},
 	[24189101] = {
 		need = 20,
-		activity_id = 241891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 241891,
 		id = 24189101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -11293,9 +12575,11 @@
 	},
 	[24189102] = {
 		need = 50,
-		activity_id = 241891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 241891,
 		id = 24189102,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -11313,9 +12597,11 @@
 	},
 	[24189103] = {
 		need = 80,
-		activity_id = 241891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 241891,
 		id = 24189103,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -11333,9 +12619,11 @@
 	},
 	[24189104] = {
 		need = 110,
-		activity_id = 241891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 241891,
 		id = 24189104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -11353,9 +12641,11 @@
 	},
 	[24189105] = {
 		need = 140,
-		activity_id = 241891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 241891,
 		id = 24189105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -11373,9 +12663,11 @@
 	},
 	[24189106] = {
 		need = 160,
-		activity_id = 241891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 241891,
 		id = 24189106,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -11393,9 +12685,11 @@
 	},
 	[24189107] = {
 		need = 180,
-		activity_id = 241891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 241891,
 		id = 24189107,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -11413,9 +12707,11 @@
 	},
 	[24292101] = {
 		need = 20,
-		activity_id = 242921,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242921,
 		id = 24292101,
+		special_level = "",
 		reward_item_list = {
 			{
 				64,
@@ -11425,9 +12721,11 @@
 	},
 	[24292102] = {
 		need = 40,
-		activity_id = 242921,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242921,
 		id = 24292102,
+		special_level = "",
 		reward_item_list = {
 			{
 				40415,
@@ -11437,9 +12735,11 @@
 	},
 	[24292103] = {
 		need = 60,
-		activity_id = 242921,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242921,
 		id = 24292103,
+		special_level = "",
 		reward_item_list = {
 			{
 				19,
@@ -11449,9 +12749,11 @@
 	},
 	[24292104] = {
 		need = 90,
-		activity_id = 242921,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242921,
 		id = 24292104,
+		special_level = "",
 		reward_item_list = {
 			{
 				24,
@@ -11461,9 +12763,11 @@
 	},
 	[24292105] = {
 		need = 120,
-		activity_id = 242921,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242921,
 		id = 24292105,
+		special_level = "",
 		reward_item_list = {
 			{
 				64,
@@ -11473,9 +12777,11 @@
 	},
 	[24292106] = {
 		need = 150,
-		activity_id = 242921,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242921,
 		id = 24292106,
+		special_level = "",
 		reward_item_list = {
 			{
 				30092,
@@ -11485,9 +12791,11 @@
 	},
 	[24292107] = {
 		need = 180,
-		activity_id = 242921,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242921,
 		id = 24292107,
+		special_level = "",
 		reward_item_list = {
 			{
 				2520000,
@@ -11497,9 +12805,11 @@
 	},
 	[24292108] = {
 		need = 240,
-		activity_id = 242921,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242921,
 		id = 24292108,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -11509,9 +12819,11 @@
 	},
 	[24292109] = {
 		need = 320,
-		activity_id = 242921,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242921,
 		id = 24292109,
+		special_level = "",
 		reward_item_list = {
 			{
 				11095,
@@ -11521,9 +12833,11 @@
 	},
 	[24189201] = {
 		need = 20,
-		activity_id = 241892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 241892,
 		id = 24189201,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -11541,9 +12855,11 @@
 	},
 	[24189202] = {
 		need = 50,
-		activity_id = 241892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 241892,
 		id = 24189202,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -11561,9 +12877,11 @@
 	},
 	[24189203] = {
 		need = 80,
-		activity_id = 241892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 241892,
 		id = 24189203,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -11581,9 +12899,11 @@
 	},
 	[24189204] = {
 		need = 110,
-		activity_id = 241892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 241892,
 		id = 24189204,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -11601,9 +12921,11 @@
 	},
 	[24189205] = {
 		need = 140,
-		activity_id = 241892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 241892,
 		id = 24189205,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -11621,9 +12943,11 @@
 	},
 	[24189206] = {
 		need = 160,
-		activity_id = 241892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 241892,
 		id = 24189206,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -11641,9 +12965,11 @@
 	},
 	[24189207] = {
 		need = 180,
-		activity_id = 241892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 241892,
 		id = 24189207,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -11661,9 +12987,11 @@
 	},
 	[24225401] = {
 		need = 5,
-		activity_id = 242254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242254,
 		id = 24225401,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -11673,9 +13001,11 @@
 	},
 	[24225402] = {
 		need = 10,
-		activity_id = 242254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242254,
 		id = 24225402,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -11685,9 +13015,11 @@
 	},
 	[24225403] = {
 		need = 30,
-		activity_id = 242254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242254,
 		id = 24225403,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -11697,9 +13029,11 @@
 	},
 	[24225501] = {
 		need = 5,
-		activity_id = 242255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242255,
 		id = 24225501,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -11709,9 +13043,11 @@
 	},
 	[24225502] = {
 		need = 10,
-		activity_id = 242255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242255,
 		id = 24225502,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -11721,9 +13057,11 @@
 	},
 	[24225503] = {
 		need = 30,
-		activity_id = 242255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242255,
 		id = 24225503,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -11733,9 +13071,11 @@
 	},
 	[24225601] = {
 		need = 5,
-		activity_id = 242256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242256,
 		id = 24225601,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -11745,9 +13085,11 @@
 	},
 	[24225602] = {
 		need = 10,
-		activity_id = 242256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242256,
 		id = 24225602,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -11757,9 +13099,11 @@
 	},
 	[24225603] = {
 		need = 30,
-		activity_id = 242256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 242256,
 		id = 24225603,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -11769,9 +13113,11 @@
 	},
 	[24190001] = {
 		need = 10,
-		activity_id = 280004,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280004,
 		id = 24190001,
+		special_level = "",
 		reward_item_list = {
 			{
 				40414,
@@ -11781,9 +13127,11 @@
 	},
 	[24190002] = {
 		need = 20,
-		activity_id = 280004,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280004,
 		id = 24190002,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -11793,9 +13141,11 @@
 	},
 	[24190003] = {
 		need = 30,
-		activity_id = 280004,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280004,
 		id = 24190003,
+		special_level = "",
 		reward_item_list = {
 			{
 				40301,
@@ -11805,9 +13155,11 @@
 	},
 	[24190004] = {
 		need = 40,
-		activity_id = 280004,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280004,
 		id = 24190004,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -11817,9 +13169,11 @@
 	},
 	[24190005] = {
 		need = 50,
-		activity_id = 280004,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280004,
 		id = 24190005,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -11829,9 +13183,11 @@
 	},
 	[24190006] = {
 		need = 60,
-		activity_id = 280004,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280004,
 		id = 24190006,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -11841,9 +13197,11 @@
 	},
 	[24190007] = {
 		need = 70,
-		activity_id = 280004,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280004,
 		id = 24190007,
+		special_level = "",
 		reward_item_list = {
 			{
 				40414,
@@ -11853,9 +13211,11 @@
 	},
 	[24190008] = {
 		need = 80,
-		activity_id = 280004,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280004,
 		id = 24190008,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -11865,9 +13225,11 @@
 	},
 	[24190009] = {
 		need = 90,
-		activity_id = 280004,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280004,
 		id = 24190009,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -11877,9 +13239,11 @@
 	},
 	[24190010] = {
 		need = 100,
-		activity_id = 280004,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280004,
 		id = 24190010,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -11889,9 +13253,11 @@
 	},
 	[24190011] = {
 		need = 110,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190011,
+		special_level = "",
 		reward_item_list = {
 			{
 				39,
@@ -11901,9 +13267,11 @@
 	},
 	[24190012] = {
 		need = 120,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190012,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -11913,9 +13281,11 @@
 	},
 	[24190013] = {
 		need = 130,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190013,
+		special_level = "",
 		reward_item_list = {
 			{
 				40104,
@@ -11925,9 +13295,11 @@
 	},
 	[24190014] = {
 		need = 140,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190014,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -11937,9 +13309,11 @@
 	},
 	[24190015] = {
 		need = 150,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190015,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -11949,9 +13323,11 @@
 	},
 	[24190016] = {
 		need = 160,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190016,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -11961,9 +13337,11 @@
 	},
 	[24190017] = {
 		need = 170,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190017,
+		special_level = "",
 		reward_item_list = {
 			{
 				22003,
@@ -11973,9 +13351,11 @@
 	},
 	[24190018] = {
 		need = 180,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190018,
+		special_level = "",
 		reward_item_list = {
 			{
 				39,
@@ -11985,9 +13365,11 @@
 	},
 	[24190019] = {
 		need = 190,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190019,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -11997,9 +13379,11 @@
 	},
 	[24190020] = {
 		need = 200,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190020,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -12009,9 +13393,11 @@
 	},
 	[24190021] = {
 		need = 210,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190021,
+		special_level = "",
 		reward_item_list = {
 			{
 				40414,
@@ -12021,9 +13407,11 @@
 	},
 	[24190022] = {
 		need = 220,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190022,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -12033,9 +13421,11 @@
 	},
 	[24190023] = {
 		need = 230,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190023,
+		special_level = "",
 		reward_item_list = {
 			{
 				40104,
@@ -12045,9 +13435,11 @@
 	},
 	[24190024] = {
 		need = 240,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190024,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -12057,9 +13449,11 @@
 	},
 	[24190025] = {
 		need = 250,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190025,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -12069,9 +13463,11 @@
 	},
 	[24190026] = {
 		need = 260,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190026,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -12081,9 +13477,11 @@
 	},
 	[24190027] = {
 		need = 270,
-		activity_id = 280005,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280005,
 		id = 24190027,
+		special_level = "",
 		reward_item_list = {
 			{
 				40301,
@@ -12093,9 +13491,11 @@
 	},
 	[24190028] = {
 		need = 280,
-		activity_id = 280006,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280006,
 		id = 24190028,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -12105,9 +13505,11 @@
 	},
 	[24190029] = {
 		need = 290,
-		activity_id = 280006,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280006,
 		id = 24190029,
+		special_level = "",
 		reward_item_list = {
 			{
 				40414,
@@ -12117,9 +13519,11 @@
 	},
 	[24190030] = {
 		need = 300,
-		activity_id = 280006,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280006,
 		id = 24190030,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -12129,9 +13533,11 @@
 	},
 	[24190031] = {
 		need = 310,
-		activity_id = 280006,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280006,
 		id = 24190031,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -12141,9 +13547,11 @@
 	},
 	[24190032] = {
 		need = 320,
-		activity_id = 280006,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280006,
 		id = 24190032,
+		special_level = "",
 		reward_item_list = {
 			{
 				39,
@@ -12153,9 +13561,11 @@
 	},
 	[24190033] = {
 		need = 330,
-		activity_id = 280006,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280006,
 		id = 24190033,
+		special_level = "",
 		reward_item_list = {
 			{
 				40104,
@@ -12165,9 +13575,11 @@
 	},
 	[24190034] = {
 		need = 340,
-		activity_id = 280006,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280006,
 		id = 24190034,
+		special_level = "",
 		reward_item_list = {
 			{
 				39,
@@ -12177,9 +13589,11 @@
 	},
 	[24190035] = {
 		need = 350,
-		activity_id = 280006,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280006,
 		id = 24190035,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -12189,9 +13603,11 @@
 	},
 	[24190036] = {
 		need = 360,
-		activity_id = 280006,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280006,
 		id = 24190036,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -12201,9 +13617,11 @@
 	},
 	[24190037] = {
 		need = 370,
-		activity_id = 280006,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280006,
 		id = 24190037,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -12213,9 +13631,11 @@
 	},
 	[24190038] = {
 		need = 380,
-		activity_id = 280006,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280006,
 		id = 24190038,
+		special_level = "",
 		reward_item_list = {
 			{
 				22003,
@@ -12225,9 +13645,11 @@
 	},
 	[24190039] = {
 		need = 390,
-		activity_id = 280006,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280006,
 		id = 24190039,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -12237,9 +13659,11 @@
 	},
 	[24190040] = {
 		need = 400,
-		activity_id = 280006,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280006,
 		id = 24190040,
+		special_level = "",
 		reward_item_list = {
 			{
 				40301,
@@ -12249,9 +13673,11 @@
 	},
 	[24190041] = {
 		need = 410,
-		activity_id = 280006,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280006,
 		id = 24190041,
+		special_level = "",
 		reward_item_list = {
 			{
 				40104,
@@ -12261,9 +13687,11 @@
 	},
 	[24190042] = {
 		need = 420,
-		activity_id = 280006,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280006,
 		id = 24190042,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -12273,9 +13701,11 @@
 	},
 	[24190043] = {
 		need = 430,
-		activity_id = 280006,
+		system_key = 0,
 		need_item_id = 54065,
+		activity_id = 280006,
 		id = 24190043,
+		special_level = "",
 		reward_item_list = {
 			{
 				2915,
@@ -12285,9 +13715,11 @@
 	},
 	[28002201] = {
 		need = 3,
-		activity_id = 280422,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 280422,
 		id = 28002201,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -12301,9 +13733,11 @@
 	},
 	[28002202] = {
 		need = 6,
-		activity_id = 280422,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 280422,
 		id = 28002202,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -12317,9 +13751,11 @@
 	},
 	[28002203] = {
 		need = 9,
-		activity_id = 280422,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 280422,
 		id = 28002203,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -12333,9 +13769,11 @@
 	},
 	[28002204] = {
 		need = 12,
-		activity_id = 280422,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 280422,
 		id = 28002204,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -12349,9 +13787,11 @@
 	},
 	[28002205] = {
 		need = 15,
-		activity_id = 280422,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 280422,
 		id = 28002205,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -12365,9 +13805,11 @@
 	},
 	[28002206] = {
 		need = 18,
-		activity_id = 280422,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 280422,
 		id = 28002206,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -12381,9 +13823,11 @@
 	},
 	[28002207] = {
 		need = 21,
-		activity_id = 280422,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 280422,
 		id = 28002207,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -12397,9 +13841,11 @@
 	},
 	[28002210] = {
 		need = 2,
-		activity_id = 280423,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 280423,
 		id = 28002210,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -12413,9 +13859,11 @@
 	},
 	[28002211] = {
 		need = 4,
-		activity_id = 280423,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 280423,
 		id = 28002211,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -12429,9 +13877,11 @@
 	},
 	[28002212] = {
 		need = 6,
-		activity_id = 280423,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 280423,
 		id = 28002212,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -12445,9 +13895,11 @@
 	},
 	[28002213] = {
 		need = 8,
-		activity_id = 280423,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 280423,
 		id = 28002213,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -12461,9 +13913,11 @@
 	},
 	[28002214] = {
 		need = 10,
-		activity_id = 280423,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 280423,
 		id = 28002214,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -12477,9 +13931,11 @@
 	},
 	[28002215] = {
 		need = 12,
-		activity_id = 280423,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 280423,
 		id = 28002215,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -12493,9 +13949,11 @@
 	},
 	[28002216] = {
 		need = 14,
-		activity_id = 280423,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 280423,
 		id = 28002216,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -12509,9 +13967,11 @@
 	},
 	[28314101] = {
 		need = 35,
-		activity_id = 283141,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 283141,
 		id = 28314101,
+		special_level = "",
 		reward_item_list = {
 			{
 				7014,
@@ -12521,9 +13981,11 @@
 	},
 	[27184101] = {
 		need = 1000,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40301,
@@ -12541,9 +14003,11 @@
 	},
 	[27184102] = {
 		need = 1500,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184102,
+		special_level = "",
 		reward_item_list = {
 			{
 				40802,
@@ -12561,9 +14025,11 @@
 	},
 	[27184103] = {
 		need = 2000,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -12581,9 +14047,11 @@
 	},
 	[27184104] = {
 		need = 3000,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -12601,9 +14069,11 @@
 	},
 	[27184105] = {
 		need = 4000,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -12621,9 +14091,11 @@
 	},
 	[27184106] = {
 		need = 5000,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184106,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -12641,9 +14113,11 @@
 	},
 	[27184107] = {
 		need = 6500,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184107,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -12661,9 +14135,11 @@
 	},
 	[27184108] = {
 		need = 8000,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184108,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -12681,9 +14157,11 @@
 	},
 	[27184109] = {
 		need = 9500,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184109,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -12701,9 +14179,11 @@
 	},
 	[27184110] = {
 		need = 11000,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184110,
+		special_level = "",
 		reward_item_list = {
 			{
 				40203,
@@ -12721,9 +14201,11 @@
 	},
 	[27184111] = {
 		need = 12500,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184111,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -12741,9 +14223,11 @@
 	},
 	[27184112] = {
 		need = 14000,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184112,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -12761,9 +14245,11 @@
 	},
 	[27184113] = {
 		need = 15500,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184113,
+		special_level = "",
 		reward_item_list = {
 			{
 				40414,
@@ -12781,9 +14267,11 @@
 	},
 	[27184114] = {
 		need = 17000,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184114,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -12801,9 +14289,11 @@
 	},
 	[27184115] = {
 		need = 18500,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184115,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -12821,9 +14311,11 @@
 	},
 	[27184116] = {
 		need = 20000,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184116,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -12841,9 +14333,11 @@
 	},
 	[27184117] = {
 		need = 22000,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184117,
+		special_level = "",
 		reward_item_list = {
 			{
 				40103,
@@ -12857,9 +14351,11 @@
 	},
 	[27184118] = {
 		need = 24000,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184118,
+		special_level = "",
 		reward_item_list = {
 			{
 				40103,
@@ -12873,9 +14369,11 @@
 	},
 	[27184119] = {
 		need = 26000,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184119,
+		special_level = "",
 		reward_item_list = {
 			{
 				40103,
@@ -12889,9 +14387,11 @@
 	},
 	[27184120] = {
 		need = 28000,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184120,
+		special_level = "",
 		reward_item_list = {
 			{
 				40103,
@@ -12905,9 +14405,11 @@
 	},
 	[27184121] = {
 		need = 30000,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184121,
+		special_level = "",
 		reward_item_list = {
 			{
 				22003,
@@ -12917,9 +14419,11 @@
 	},
 	[27184122] = {
 		need = 32000,
-		activity_id = 271841,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271841,
 		id = 27184122,
+		special_level = "",
 		reward_item_list = {
 			{
 				22003,
@@ -12929,9 +14433,11 @@
 	},
 	[27189101] = {
 		need = 20,
-		activity_id = 271891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271891,
 		id = 27189101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -12949,9 +14455,11 @@
 	},
 	[27189102] = {
 		need = 50,
-		activity_id = 271891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271891,
 		id = 27189102,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -12969,9 +14477,11 @@
 	},
 	[27189103] = {
 		need = 80,
-		activity_id = 271891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271891,
 		id = 27189103,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -12989,9 +14499,11 @@
 	},
 	[27189104] = {
 		need = 110,
-		activity_id = 271891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271891,
 		id = 27189104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -13009,9 +14521,11 @@
 	},
 	[27189105] = {
 		need = 140,
-		activity_id = 271891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271891,
 		id = 27189105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -13029,9 +14543,11 @@
 	},
 	[27189106] = {
 		need = 160,
-		activity_id = 271891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271891,
 		id = 27189106,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -13049,9 +14565,11 @@
 	},
 	[27189107] = {
 		need = 180,
-		activity_id = 271891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 271891,
 		id = 27189107,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -13069,9 +14587,11 @@
 	},
 	[28189101] = {
 		need = 20,
-		activity_id = 281891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 281891,
 		id = 28189101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -13089,9 +14609,11 @@
 	},
 	[28189102] = {
 		need = 50,
-		activity_id = 281891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 281891,
 		id = 28189102,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -13109,9 +14631,11 @@
 	},
 	[28189103] = {
 		need = 80,
-		activity_id = 281891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 281891,
 		id = 28189103,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -13129,9 +14653,11 @@
 	},
 	[28189104] = {
 		need = 110,
-		activity_id = 281891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 281891,
 		id = 28189104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -13149,9 +14675,11 @@
 	},
 	[28189105] = {
 		need = 140,
-		activity_id = 281891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 281891,
 		id = 28189105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -13169,9 +14697,11 @@
 	},
 	[28189106] = {
 		need = 160,
-		activity_id = 281891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 281891,
 		id = 28189106,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -13189,9 +14719,11 @@
 	},
 	[28189107] = {
 		need = 180,
-		activity_id = 281891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 281891,
 		id = 28189107,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -13209,9 +14741,11 @@
 	},
 	[27225101] = {
 		need = 5,
-		activity_id = 272251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 272251,
 		id = 27225101,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13221,9 +14755,11 @@
 	},
 	[27225102] = {
 		need = 10,
-		activity_id = 272251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 272251,
 		id = 27225102,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13233,9 +14769,11 @@
 	},
 	[27225103] = {
 		need = 30,
-		activity_id = 272251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 272251,
 		id = 27225103,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13245,9 +14783,11 @@
 	},
 	[27225201] = {
 		need = 5,
-		activity_id = 272252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 272252,
 		id = 27225201,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13257,9 +14797,11 @@
 	},
 	[27225202] = {
 		need = 10,
-		activity_id = 272252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 272252,
 		id = 27225202,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13269,9 +14811,11 @@
 	},
 	[27225203] = {
 		need = 30,
-		activity_id = 272252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 272252,
 		id = 27225203,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13281,9 +14825,11 @@
 	},
 	[27225301] = {
 		need = 5,
-		activity_id = 272253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 272253,
 		id = 27225301,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13293,9 +14839,11 @@
 	},
 	[27225302] = {
 		need = 10,
-		activity_id = 272253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 272253,
 		id = 27225302,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13305,9 +14853,11 @@
 	},
 	[27225303] = {
 		need = 30,
-		activity_id = 272253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 272253,
 		id = 27225303,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13317,9 +14867,11 @@
 	},
 	[28189201] = {
 		need = 20,
-		activity_id = 281892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 281892,
 		id = 28189201,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -13337,9 +14889,11 @@
 	},
 	[28189202] = {
 		need = 50,
-		activity_id = 281892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 281892,
 		id = 28189202,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -13357,9 +14911,11 @@
 	},
 	[28189203] = {
 		need = 80,
-		activity_id = 281892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 281892,
 		id = 28189203,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -13377,9 +14933,11 @@
 	},
 	[28189204] = {
 		need = 110,
-		activity_id = 281892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 281892,
 		id = 28189204,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -13397,9 +14955,11 @@
 	},
 	[28189205] = {
 		need = 140,
-		activity_id = 281892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 281892,
 		id = 28189205,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -13417,9 +14977,11 @@
 	},
 	[28189206] = {
 		need = 160,
-		activity_id = 281892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 281892,
 		id = 28189206,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -13437,9 +14999,11 @@
 	},
 	[28189207] = {
 		need = 180,
-		activity_id = 281892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 281892,
 		id = 28189207,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -13457,9 +15021,11 @@
 	},
 	[28225101] = {
 		need = 5,
-		activity_id = 282251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282251,
 		id = 28225101,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13469,9 +15035,11 @@
 	},
 	[28225102] = {
 		need = 10,
-		activity_id = 282251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282251,
 		id = 28225102,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13481,9 +15049,11 @@
 	},
 	[28225103] = {
 		need = 30,
-		activity_id = 282251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282251,
 		id = 28225103,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13493,9 +15063,11 @@
 	},
 	[28225201] = {
 		need = 5,
-		activity_id = 282252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282252,
 		id = 28225201,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13505,9 +15077,11 @@
 	},
 	[28225202] = {
 		need = 10,
-		activity_id = 282252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282252,
 		id = 28225202,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13517,9 +15091,11 @@
 	},
 	[28225203] = {
 		need = 30,
-		activity_id = 282252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282252,
 		id = 28225203,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13529,9 +15105,11 @@
 	},
 	[28225301] = {
 		need = 5,
-		activity_id = 282253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282253,
 		id = 28225301,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13541,9 +15119,11 @@
 	},
 	[28225302] = {
 		need = 10,
-		activity_id = 282253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282253,
 		id = 28225302,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13553,9 +15133,11 @@
 	},
 	[28225303] = {
 		need = 30,
-		activity_id = 282253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282253,
 		id = 28225303,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13565,9 +15147,11 @@
 	},
 	[28225401] = {
 		need = 5,
-		activity_id = 282254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282254,
 		id = 28225401,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13577,9 +15161,11 @@
 	},
 	[28225402] = {
 		need = 10,
-		activity_id = 282254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282254,
 		id = 28225402,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13589,9 +15175,11 @@
 	},
 	[28225403] = {
 		need = 30,
-		activity_id = 282254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282254,
 		id = 28225403,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13601,9 +15189,11 @@
 	},
 	[28225501] = {
 		need = 5,
-		activity_id = 282255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282255,
 		id = 28225501,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13613,9 +15203,11 @@
 	},
 	[28225502] = {
 		need = 10,
-		activity_id = 282255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282255,
 		id = 28225502,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13625,9 +15217,11 @@
 	},
 	[28225503] = {
 		need = 30,
-		activity_id = 282255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282255,
 		id = 28225503,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13637,9 +15231,11 @@
 	},
 	[28225601] = {
 		need = 5,
-		activity_id = 282256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282256,
 		id = 28225601,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13649,9 +15245,11 @@
 	},
 	[28225602] = {
 		need = 10,
-		activity_id = 282256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282256,
 		id = 28225602,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13661,9 +15259,11 @@
 	},
 	[28225603] = {
 		need = 30,
-		activity_id = 282256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 282256,
 		id = 28225603,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -13673,9 +15273,11 @@
 	},
 	[29338101] = {
 		need = 6000,
-		activity_id = 293381,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 293381,
 		id = 29338101,
+		special_level = "",
 		reward_item_list = {
 			{
 				1156,
@@ -13685,9 +15287,11 @@
 	},
 	[29338102] = {
 		need = 12000,
-		activity_id = 293381,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 293381,
 		id = 29338102,
+		special_level = "",
 		reward_item_list = {
 			{
 				1156,
@@ -13697,9 +15301,11 @@
 	},
 	[29189101] = {
 		need = 20,
-		activity_id = 291891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 291891,
 		id = 29189101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -13717,9 +15323,11 @@
 	},
 	[29189102] = {
 		need = 50,
-		activity_id = 291891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 291891,
 		id = 29189102,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -13737,9 +15345,11 @@
 	},
 	[29189103] = {
 		need = 80,
-		activity_id = 291891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 291891,
 		id = 29189103,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -13757,9 +15367,11 @@
 	},
 	[29189104] = {
 		need = 110,
-		activity_id = 291891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 291891,
 		id = 29189104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -13777,9 +15389,11 @@
 	},
 	[29189105] = {
 		need = 140,
-		activity_id = 291891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 291891,
 		id = 29189105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -13797,9 +15411,11 @@
 	},
 	[29189106] = {
 		need = 160,
-		activity_id = 291891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 291891,
 		id = 29189106,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -13817,9 +15433,11 @@
 	},
 	[29189107] = {
 		need = 180,
-		activity_id = 291891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 291891,
 		id = 29189107,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -13837,9 +15455,11 @@
 	},
 	[29189201] = {
 		need = 20,
-		activity_id = 291892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 291892,
 		id = 29189201,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -13857,9 +15477,11 @@
 	},
 	[29189202] = {
 		need = 50,
-		activity_id = 291892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 291892,
 		id = 29189202,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -13877,9 +15499,11 @@
 	},
 	[29189203] = {
 		need = 80,
-		activity_id = 291892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 291892,
 		id = 29189203,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -13897,9 +15521,11 @@
 	},
 	[29189204] = {
 		need = 110,
-		activity_id = 291892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 291892,
 		id = 29189204,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -13917,9 +15543,11 @@
 	},
 	[29189205] = {
 		need = 140,
-		activity_id = 291892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 291892,
 		id = 29189205,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -13937,9 +15565,11 @@
 	},
 	[29189206] = {
 		need = 160,
-		activity_id = 291892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 291892,
 		id = 29189206,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -13957,9 +15587,11 @@
 	},
 	[29189207] = {
 		need = 180,
-		activity_id = 291892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 291892,
 		id = 29189207,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -13977,9 +15609,11 @@
 	},
 	[110101] = {
 		need = 35,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110101,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -13989,9 +15623,11 @@
 	},
 	[110102] = {
 		need = 70,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110102,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -14001,9 +15637,11 @@
 	},
 	[110103] = {
 		need = 105,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110103,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -14013,9 +15651,11 @@
 	},
 	[110104] = {
 		need = 140,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110104,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -14025,9 +15665,11 @@
 	},
 	[110105] = {
 		need = 175,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -14037,9 +15679,11 @@
 	},
 	[110106] = {
 		need = 210,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110106,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -14049,9 +15693,11 @@
 	},
 	[110107] = {
 		need = 245,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110107,
+		special_level = "",
 		reward_item_list = {
 			{
 				40104,
@@ -14061,9 +15707,11 @@
 	},
 	[110108] = {
 		need = 280,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110108,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -14073,9 +15721,11 @@
 	},
 	[110109] = {
 		need = 315,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110109,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -14085,9 +15735,11 @@
 	},
 	[110110] = {
 		need = 350,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110110,
+		special_level = "",
 		reward_item_list = {
 			{
 				91001,
@@ -14097,9 +15749,11 @@
 	},
 	[110111] = {
 		need = 385,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110111,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -14109,9 +15763,11 @@
 	},
 	[110112] = {
 		need = 420,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110112,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -14121,9 +15777,11 @@
 	},
 	[110113] = {
 		need = 455,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110113,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -14133,9 +15791,11 @@
 	},
 	[110114] = {
 		need = 490,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110114,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -14145,9 +15805,11 @@
 	},
 	[110115] = {
 		need = 525,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110115,
+		special_level = "",
 		reward_item_list = {
 			{
 				40104,
@@ -14157,9 +15819,11 @@
 	},
 	[110116] = {
 		need = 560,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110116,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -14169,9 +15833,11 @@
 	},
 	[110117] = {
 		need = 595,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110117,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -14181,9 +15847,11 @@
 	},
 	[110118] = {
 		need = 630,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110118,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -14193,9 +15861,11 @@
 	},
 	[110119] = {
 		need = 665,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110119,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -14205,9 +15875,11 @@
 	},
 	[110120] = {
 		need = 700,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110120,
+		special_level = "",
 		reward_item_list = {
 			{
 				91002,
@@ -14217,9 +15889,11 @@
 	},
 	[110121] = {
 		need = 735,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110121,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -14229,9 +15903,11 @@
 	},
 	[110122] = {
 		need = 770,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110122,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -14241,9 +15917,11 @@
 	},
 	[110123] = {
 		need = 805,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110123,
+		special_level = "",
 		reward_item_list = {
 			{
 				40104,
@@ -14253,9 +15931,11 @@
 	},
 	[110124] = {
 		need = 840,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110124,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -14265,9 +15945,11 @@
 	},
 	[110125] = {
 		need = 875,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110125,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -14277,9 +15959,11 @@
 	},
 	[110126] = {
 		need = 910,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110126,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -14289,9 +15973,11 @@
 	},
 	[110127] = {
 		need = 945,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110127,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -14301,9 +15987,11 @@
 	},
 	[110128] = {
 		need = 980,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110128,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -14313,9 +16001,11 @@
 	},
 	[110129] = {
 		need = 1015,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110129,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -14325,9 +16015,11 @@
 	},
 	[110130] = {
 		need = 1050,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110130,
+		special_level = "",
 		reward_item_list = {
 			{
 				91003,
@@ -14337,9 +16029,11 @@
 	},
 	[110131] = {
 		need = 1085,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110131,
+		special_level = "",
 		reward_item_list = {
 			{
 				40104,
@@ -14349,9 +16043,11 @@
 	},
 	[110132] = {
 		need = 1120,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110132,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -14361,9 +16057,11 @@
 	},
 	[110133] = {
 		need = 1155,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110133,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -14373,9 +16071,11 @@
 	},
 	[110134] = {
 		need = 1190,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110134,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -14385,9 +16085,11 @@
 	},
 	[110135] = {
 		need = 1225,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110135,
+		special_level = "",
 		reward_item_list = {
 			{
 				2916,
@@ -14397,9 +16099,11 @@
 	},
 	[110136] = {
 		need = 1260,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110136,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -14409,9 +16113,11 @@
 	},
 	[110137] = {
 		need = 1295,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110137,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -14421,9 +16127,11 @@
 	},
 	[110138] = {
 		need = 1330,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110138,
+		special_level = "",
 		reward_item_list = {
 			{
 				1,
@@ -14433,9 +16141,11 @@
 	},
 	[110139] = {
 		need = 1365,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110139,
+		special_level = "",
 		reward_item_list = {
 			{
 				40104,
@@ -14445,9 +16155,11 @@
 	},
 	[110140] = {
 		need = 1400,
-		activity_id = 1101,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 1101,
 		id = 110140,
+		special_level = "",
 		reward_item_list = {
 			{
 				2200011,
@@ -14457,9 +16169,11 @@
 	},
 	[29225101] = {
 		need = 5,
-		activity_id = 292251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292251,
 		id = 29225101,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -14469,9 +16183,11 @@
 	},
 	[29225102] = {
 		need = 10,
-		activity_id = 292251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292251,
 		id = 29225102,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -14481,9 +16197,11 @@
 	},
 	[29225103] = {
 		need = 30,
-		activity_id = 292251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292251,
 		id = 29225103,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -14493,9 +16211,11 @@
 	},
 	[29225201] = {
 		need = 5,
-		activity_id = 292252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292252,
 		id = 29225201,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -14505,9 +16225,11 @@
 	},
 	[29225202] = {
 		need = 10,
-		activity_id = 292252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292252,
 		id = 29225202,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -14517,9 +16239,11 @@
 	},
 	[29225203] = {
 		need = 30,
-		activity_id = 292252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292252,
 		id = 29225203,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -14529,9 +16253,11 @@
 	},
 	[29225301] = {
 		need = 5,
-		activity_id = 292253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292253,
 		id = 29225301,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -14541,9 +16267,11 @@
 	},
 	[29225302] = {
 		need = 10,
-		activity_id = 292253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292253,
 		id = 29225302,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -14553,9 +16281,11 @@
 	},
 	[29225303] = {
 		need = 30,
-		activity_id = 292253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292253,
 		id = 29225303,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -14565,9 +16295,11 @@
 	},
 	[29225401] = {
 		need = 5,
-		activity_id = 292254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292254,
 		id = 29225401,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -14577,9 +16309,11 @@
 	},
 	[29225402] = {
 		need = 10,
-		activity_id = 292254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292254,
 		id = 29225402,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -14589,9 +16323,11 @@
 	},
 	[29225403] = {
 		need = 30,
-		activity_id = 292254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292254,
 		id = 29225403,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -14601,9 +16337,11 @@
 	},
 	[29225501] = {
 		need = 5,
-		activity_id = 292255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292255,
 		id = 29225501,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -14613,9 +16351,11 @@
 	},
 	[29225502] = {
 		need = 10,
-		activity_id = 292255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292255,
 		id = 29225502,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -14625,9 +16365,11 @@
 	},
 	[29225503] = {
 		need = 30,
-		activity_id = 292255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292255,
 		id = 29225503,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -14637,9 +16379,11 @@
 	},
 	[30105101] = {
 		need = 2000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14657,9 +16401,11 @@
 	},
 	[30105102] = {
 		need = 3000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105102,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14677,9 +16423,11 @@
 	},
 	[30105103] = {
 		need = 4000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105103,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14697,9 +16445,11 @@
 	},
 	[30105104] = {
 		need = 5000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14717,9 +16467,11 @@
 	},
 	[30105105] = {
 		need = 6000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14737,9 +16489,11 @@
 	},
 	[30105106] = {
 		need = 7000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105106,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14757,9 +16511,11 @@
 	},
 	[30105107] = {
 		need = 8000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105107,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14777,9 +16533,11 @@
 	},
 	[30105108] = {
 		need = 9000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105108,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14797,9 +16555,11 @@
 	},
 	[30105109] = {
 		need = 10000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105109,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14817,9 +16577,11 @@
 	},
 	[30105110] = {
 		need = 11000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105110,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14837,9 +16599,11 @@
 	},
 	[30105111] = {
 		need = 12000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105111,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14857,9 +16621,11 @@
 	},
 	[30105112] = {
 		need = 13000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105112,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14877,9 +16643,11 @@
 	},
 	[30105113] = {
 		need = 14000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105113,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14897,9 +16665,11 @@
 	},
 	[30105114] = {
 		need = 15000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105114,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14917,9 +16687,11 @@
 	},
 	[30105115] = {
 		need = 16000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105115,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14937,9 +16709,11 @@
 	},
 	[30105116] = {
 		need = 17000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105116,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14957,9 +16731,11 @@
 	},
 	[30105117] = {
 		need = 18000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105117,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14977,9 +16753,11 @@
 	},
 	[30105118] = {
 		need = 20000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105118,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -14997,9 +16775,11 @@
 	},
 	[30105119] = {
 		need = 22000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105119,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -15017,9 +16797,11 @@
 	},
 	[30105120] = {
 		need = 24000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105120,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -15037,9 +16819,11 @@
 	},
 	[30105121] = {
 		need = 26000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105121,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -15057,9 +16841,11 @@
 	},
 	[30105122] = {
 		need = 28000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105122,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -15077,9 +16863,11 @@
 	},
 	[30105123] = {
 		need = 30000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105123,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -15097,9 +16885,11 @@
 	},
 	[30105124] = {
 		need = 32000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105124,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -15117,9 +16907,11 @@
 	},
 	[30105125] = {
 		need = 34000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105125,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -15137,9 +16929,11 @@
 	},
 	[30105126] = {
 		need = 36000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105126,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -15157,9 +16951,11 @@
 	},
 	[30105127] = {
 		need = 38000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105127,
+		special_level = "",
 		reward_item_list = {
 			{
 				40504,
@@ -15177,9 +16973,11 @@
 	},
 	[30105128] = {
 		need = 40000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105128,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -15193,9 +16991,11 @@
 	},
 	[30105129] = {
 		need = 42000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105129,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -15209,9 +17009,11 @@
 	},
 	[30105130] = {
 		need = 44000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105130,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -15225,9 +17027,11 @@
 	},
 	[30105131] = {
 		need = 46000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105131,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -15241,9 +17045,11 @@
 	},
 	[30105132] = {
 		need = 48000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105132,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -15253,9 +17059,11 @@
 	},
 	[30105133] = {
 		need = 50000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105133,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -15265,9 +17073,11 @@
 	},
 	[30105134] = {
 		need = 52000,
-		activity_id = 301051,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301051,
 		id = 30105134,
+		special_level = "",
 		reward_item_list = {
 			{
 				2,
@@ -15277,9 +17087,11 @@
 	},
 	[29225601] = {
 		need = 5,
-		activity_id = 292256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292256,
 		id = 29225601,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15289,9 +17101,11 @@
 	},
 	[29225602] = {
 		need = 10,
-		activity_id = 292256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292256,
 		id = 29225602,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15301,9 +17115,11 @@
 	},
 	[29225603] = {
 		need = 30,
-		activity_id = 292256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292256,
 		id = 29225603,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15313,9 +17129,11 @@
 	},
 	[30189101] = {
 		need = 20,
-		activity_id = 301891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301891,
 		id = 30189101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -15333,9 +17151,11 @@
 	},
 	[30189102] = {
 		need = 50,
-		activity_id = 301891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301891,
 		id = 30189102,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -15353,9 +17173,11 @@
 	},
 	[30189103] = {
 		need = 80,
-		activity_id = 301891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301891,
 		id = 30189103,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -15373,9 +17195,11 @@
 	},
 	[30189104] = {
 		need = 110,
-		activity_id = 301891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301891,
 		id = 30189104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -15393,9 +17217,11 @@
 	},
 	[30189105] = {
 		need = 140,
-		activity_id = 301891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301891,
 		id = 30189105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -15413,9 +17239,11 @@
 	},
 	[30189106] = {
 		need = 160,
-		activity_id = 301891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301891,
 		id = 30189106,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -15433,9 +17261,11 @@
 	},
 	[30189107] = {
 		need = 180,
-		activity_id = 301891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301891,
 		id = 30189107,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -15453,9 +17283,11 @@
 	},
 	[29225701] = {
 		need = 5,
-		activity_id = 292257,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292257,
 		id = 29225701,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15465,9 +17297,11 @@
 	},
 	[29225702] = {
 		need = 10,
-		activity_id = 292257,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292257,
 		id = 29225702,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15477,9 +17311,11 @@
 	},
 	[29225703] = {
 		need = 30,
-		activity_id = 292257,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292257,
 		id = 29225703,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15489,9 +17325,11 @@
 	},
 	[30189201] = {
 		need = 20,
-		activity_id = 301892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301892,
 		id = 30189201,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -15509,9 +17347,11 @@
 	},
 	[30189202] = {
 		need = 50,
-		activity_id = 301892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301892,
 		id = 30189202,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -15529,9 +17369,11 @@
 	},
 	[30189203] = {
 		need = 80,
-		activity_id = 301892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301892,
 		id = 30189203,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -15549,9 +17391,11 @@
 	},
 	[30189204] = {
 		need = 110,
-		activity_id = 301892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301892,
 		id = 30189204,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -15569,9 +17413,11 @@
 	},
 	[30189205] = {
 		need = 140,
-		activity_id = 301892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301892,
 		id = 30189205,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -15589,9 +17435,11 @@
 	},
 	[30189206] = {
 		need = 160,
-		activity_id = 301892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301892,
 		id = 30189206,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -15609,9 +17457,11 @@
 	},
 	[30189207] = {
 		need = 180,
-		activity_id = 301892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 301892,
 		id = 30189207,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -15629,9 +17479,11 @@
 	},
 	[29225801] = {
 		need = 5,
-		activity_id = 292258,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292258,
 		id = 29225801,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15641,9 +17493,11 @@
 	},
 	[29225802] = {
 		need = 10,
-		activity_id = 292258,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292258,
 		id = 29225802,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15653,9 +17507,11 @@
 	},
 	[29225803] = {
 		need = 30,
-		activity_id = 292258,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292258,
 		id = 29225803,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15665,9 +17521,11 @@
 	},
 	[29225901] = {
 		need = 5,
-		activity_id = 292259,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292259,
 		id = 29225901,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15677,9 +17535,11 @@
 	},
 	[29225902] = {
 		need = 10,
-		activity_id = 292259,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292259,
 		id = 29225902,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15689,9 +17549,11 @@
 	},
 	[29225903] = {
 		need = 30,
-		activity_id = 292259,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 292259,
 		id = 29225903,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15701,9 +17563,11 @@
 	},
 	[30225101] = {
 		need = 5,
-		activity_id = 302251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302251,
 		id = 30225101,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15713,9 +17577,11 @@
 	},
 	[30225102] = {
 		need = 10,
-		activity_id = 302251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302251,
 		id = 30225102,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15725,9 +17591,11 @@
 	},
 	[30225103] = {
 		need = 30,
-		activity_id = 302251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302251,
 		id = 30225103,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15737,9 +17605,11 @@
 	},
 	[30225201] = {
 		need = 5,
-		activity_id = 302252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302252,
 		id = 30225201,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15749,9 +17619,11 @@
 	},
 	[30225202] = {
 		need = 10,
-		activity_id = 302252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302252,
 		id = 30225202,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15761,9 +17633,11 @@
 	},
 	[30225203] = {
 		need = 30,
-		activity_id = 302252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302252,
 		id = 30225203,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15773,9 +17647,11 @@
 	},
 	[31363101] = {
 		need = 30000,
-		activity_id = 313631,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 313631,
 		id = 31363101,
+		special_level = "",
 		reward_item_list = {
 			{
 				30047,
@@ -15785,9 +17661,11 @@
 	},
 	[31363102] = {
 		need = 60000,
-		activity_id = 313631,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 313631,
 		id = 31363102,
+		special_level = "",
 		reward_item_list = {
 			{
 				30047,
@@ -15797,9 +17675,11 @@
 	},
 	[31363103] = {
 		need = 90000,
-		activity_id = 313631,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 313631,
 		id = 31363103,
+		special_level = "",
 		reward_item_list = {
 			{
 				30048,
@@ -15809,9 +17689,11 @@
 	},
 	[31363104] = {
 		need = 120000,
-		activity_id = 313631,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 313631,
 		id = 31363104,
+		special_level = "",
 		reward_item_list = {
 			{
 				30048,
@@ -15821,9 +17703,11 @@
 	},
 	[31363105] = {
 		need = 150000,
-		activity_id = 313631,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 313631,
 		id = 31363105,
+		special_level = "",
 		reward_item_list = {
 			{
 				30047,
@@ -15833,9 +17717,11 @@
 	},
 	[31363106] = {
 		need = 180000,
-		activity_id = 313631,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 313631,
 		id = 31363106,
+		special_level = "",
 		reward_item_list = {
 			{
 				30047,
@@ -15845,9 +17731,11 @@
 	},
 	[31363107] = {
 		need = 210000,
-		activity_id = 313631,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 313631,
 		id = 31363107,
+		special_level = "",
 		reward_item_list = {
 			{
 				30048,
@@ -15857,9 +17745,11 @@
 	},
 	[31363108] = {
 		need = 240000,
-		activity_id = 313631,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 313631,
 		id = 31363108,
+		special_level = "",
 		reward_item_list = {
 			{
 				30048,
@@ -15869,9 +17759,11 @@
 	},
 	[30225301] = {
 		need = 5,
-		activity_id = 302253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302253,
 		id = 30225301,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15881,9 +17773,11 @@
 	},
 	[30225302] = {
 		need = 10,
-		activity_id = 302253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302253,
 		id = 30225302,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15893,9 +17787,11 @@
 	},
 	[30225303] = {
 		need = 30,
-		activity_id = 302253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302253,
 		id = 30225303,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15905,9 +17801,11 @@
 	},
 	[30225401] = {
 		need = 5,
-		activity_id = 302254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302254,
 		id = 30225401,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15917,9 +17815,11 @@
 	},
 	[30225402] = {
 		need = 10,
-		activity_id = 302254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302254,
 		id = 30225402,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15929,9 +17829,11 @@
 	},
 	[30225403] = {
 		need = 30,
-		activity_id = 302254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302254,
 		id = 30225403,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15941,9 +17843,11 @@
 	},
 	[30225501] = {
 		need = 5,
-		activity_id = 302255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302255,
 		id = 30225501,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15953,9 +17857,11 @@
 	},
 	[30225502] = {
 		need = 10,
-		activity_id = 302255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302255,
 		id = 30225502,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15965,9 +17871,11 @@
 	},
 	[30225503] = {
 		need = 30,
-		activity_id = 302255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302255,
 		id = 30225503,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15977,9 +17885,11 @@
 	},
 	[30225601] = {
 		need = 5,
-		activity_id = 302256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302256,
 		id = 30225601,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -15989,9 +17899,11 @@
 	},
 	[30225602] = {
 		need = 10,
-		activity_id = 302256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302256,
 		id = 30225602,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16001,9 +17913,11 @@
 	},
 	[30225603] = {
 		need = 30,
-		activity_id = 302256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 302256,
 		id = 30225603,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16013,9 +17927,11 @@
 	},
 	[31189101] = {
 		need = 20,
-		activity_id = 311891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 311891,
 		id = 31189101,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -16033,9 +17949,11 @@
 	},
 	[31189102] = {
 		need = 50,
-		activity_id = 311891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 311891,
 		id = 31189102,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -16053,9 +17971,11 @@
 	},
 	[31189103] = {
 		need = 80,
-		activity_id = 311891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 311891,
 		id = 31189103,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -16073,9 +17993,11 @@
 	},
 	[31189104] = {
 		need = 110,
-		activity_id = 311891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 311891,
 		id = 31189104,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -16093,9 +18015,11 @@
 	},
 	[31189105] = {
 		need = 140,
-		activity_id = 311891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 311891,
 		id = 31189105,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -16113,9 +18037,11 @@
 	},
 	[31189106] = {
 		need = 160,
-		activity_id = 311891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 311891,
 		id = 31189106,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -16133,9 +18059,11 @@
 	},
 	[31189107] = {
 		need = 180,
-		activity_id = 311891,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 311891,
 		id = 31189107,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -16153,9 +18081,11 @@
 	},
 	[31225101] = {
 		need = 5,
-		activity_id = 312251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312251,
 		id = 31225101,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16165,9 +18095,11 @@
 	},
 	[31225102] = {
 		need = 10,
-		activity_id = 312251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312251,
 		id = 31225102,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16177,9 +18109,11 @@
 	},
 	[31225103] = {
 		need = 30,
-		activity_id = 312251,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312251,
 		id = 31225103,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16189,9 +18123,11 @@
 	},
 	[31225201] = {
 		need = 5,
-		activity_id = 312252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312252,
 		id = 31225201,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16201,9 +18137,11 @@
 	},
 	[31225202] = {
 		need = 10,
-		activity_id = 312252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312252,
 		id = 31225202,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16213,9 +18151,11 @@
 	},
 	[31225203] = {
 		need = 30,
-		activity_id = 312252,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312252,
 		id = 31225203,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16225,9 +18165,11 @@
 	},
 	[31225301] = {
 		need = 5,
-		activity_id = 312253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312253,
 		id = 31225301,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16237,9 +18179,11 @@
 	},
 	[31225302] = {
 		need = 10,
-		activity_id = 312253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312253,
 		id = 31225302,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16249,9 +18193,11 @@
 	},
 	[31225303] = {
 		need = 30,
-		activity_id = 312253,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312253,
 		id = 31225303,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16261,9 +18207,11 @@
 	},
 	[31279101] = {
 		need = 500,
-		activity_id = 312791,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312791,
 		id = 31279101,
+		special_level = "",
 		reward_item_list = {
 			{
 				53151,
@@ -16273,9 +18221,11 @@
 	},
 	[31279102] = {
 		need = 1000,
-		activity_id = 312791,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312791,
 		id = 31279102,
+		special_level = "",
 		reward_item_list = {
 			{
 				53151,
@@ -16285,9 +18235,11 @@
 	},
 	[31279103] = {
 		need = 1500,
-		activity_id = 312791,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312791,
 		id = 31279103,
+		special_level = "",
 		reward_item_list = {
 			{
 				53151,
@@ -16297,9 +18249,11 @@
 	},
 	[31279104] = {
 		need = 800,
-		activity_id = 312791,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312791,
 		id = 31279104,
+		special_level = "",
 		reward_item_list = {
 			{
 				53151,
@@ -16309,9 +18263,11 @@
 	},
 	[31279105] = {
 		need = 1500,
-		activity_id = 312791,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312791,
 		id = 31279105,
+		special_level = "",
 		reward_item_list = {
 			{
 				53151,
@@ -16321,9 +18277,11 @@
 	},
 	[31279106] = {
 		need = 2000,
-		activity_id = 312791,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312791,
 		id = 31279106,
+		special_level = "",
 		reward_item_list = {
 			{
 				53151,
@@ -16333,9 +18291,11 @@
 	},
 	[31279107] = {
 		need = 800,
-		activity_id = 312791,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312791,
 		id = 31279107,
+		special_level = "",
 		reward_item_list = {
 			{
 				53151,
@@ -16345,9 +18305,11 @@
 	},
 	[31279108] = {
 		need = 1500,
-		activity_id = 312791,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312791,
 		id = 31279108,
+		special_level = "",
 		reward_item_list = {
 			{
 				53151,
@@ -16357,9 +18319,11 @@
 	},
 	[31279109] = {
 		need = 2000,
-		activity_id = 312791,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312791,
 		id = 31279109,
+		special_level = "",
 		reward_item_list = {
 			{
 				53151,
@@ -16369,9 +18333,11 @@
 	},
 	[31189201] = {
 		need = 20,
-		activity_id = 311892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 311892,
 		id = 31189201,
+		special_level = "",
 		reward_item_list = {
 			{
 				40803,
@@ -16389,9 +18355,11 @@
 	},
 	[31189202] = {
 		need = 50,
-		activity_id = 311892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 311892,
 		id = 31189202,
+		special_level = "",
 		reward_item_list = {
 			{
 				41501,
@@ -16409,9 +18377,11 @@
 	},
 	[31189203] = {
 		need = 80,
-		activity_id = 311892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 311892,
 		id = 31189203,
+		special_level = "",
 		reward_item_list = {
 			{
 				41301,
@@ -16429,9 +18399,11 @@
 	},
 	[31189204] = {
 		need = 110,
-		activity_id = 311892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 311892,
 		id = 31189204,
+		special_level = "",
 		reward_item_list = {
 			{
 				40603,
@@ -16449,9 +18421,11 @@
 	},
 	[31189205] = {
 		need = 140,
-		activity_id = 311892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 311892,
 		id = 31189205,
+		special_level = "",
 		reward_item_list = {
 			{
 				40701,
@@ -16469,9 +18443,11 @@
 	},
 	[31189206] = {
 		need = 160,
-		activity_id = 311892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 311892,
 		id = 31189206,
+		special_level = "",
 		reward_item_list = {
 			{
 				41302,
@@ -16489,9 +18465,11 @@
 	},
 	[31189207] = {
 		need = 180,
-		activity_id = 311892,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 311892,
 		id = 31189207,
+		special_level = "",
 		reward_item_list = {
 			{
 				41303,
@@ -16509,9 +18487,11 @@
 	},
 	[31225401] = {
 		need = 5,
-		activity_id = 312254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312254,
 		id = 31225401,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16521,9 +18501,11 @@
 	},
 	[31225402] = {
 		need = 10,
-		activity_id = 312254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312254,
 		id = 31225402,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16533,9 +18515,11 @@
 	},
 	[31225403] = {
 		need = 30,
-		activity_id = 312254,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312254,
 		id = 31225403,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16545,9 +18529,11 @@
 	},
 	[31225501] = {
 		need = 5,
-		activity_id = 312255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312255,
 		id = 31225501,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16557,9 +18543,11 @@
 	},
 	[31225502] = {
 		need = 10,
-		activity_id = 312255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312255,
 		id = 31225502,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16569,9 +18557,11 @@
 	},
 	[31225503] = {
 		need = 30,
-		activity_id = 312255,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312255,
 		id = 31225503,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16581,9 +18571,11 @@
 	},
 	[31225601] = {
 		need = 5,
-		activity_id = 312256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312256,
 		id = 31225601,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16593,9 +18585,11 @@
 	},
 	[31225602] = {
 		need = 10,
-		activity_id = 312256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312256,
 		id = 31225602,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16605,9 +18599,11 @@
 	},
 	[31225603] = {
 		need = 30,
-		activity_id = 312256,
+		system_key = 0,
 		need_item_id = 0,
+		activity_id = 312256,
 		id = 31225603,
+		special_level = "",
 		reward_item_list = {
 			{
 				53999,
@@ -16615,7 +18611,2017 @@
 			}
 		}
 	},
+	[32120101] = {
+		need = 10,
+		system_key = 0,
+		need_item_id = 76,
+		activity_id = 321201,
+		id = 32120101,
+		special_level = "",
+		reward_item_list = {
+			{
+				1,
+				30
+			},
+			{
+				2200015,
+				1
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32120102] = {
+		need = 20,
+		system_key = 0,
+		need_item_id = 76,
+		activity_id = 321201,
+		id = 32120102,
+		special_level = "",
+		reward_item_list = {
+			{
+				1,
+				30
+			},
+			{
+				3051,
+				1
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32120103] = {
+		need = 30,
+		system_key = 0,
+		need_item_id = 76,
+		activity_id = 321201,
+		id = 32120103,
+		special_level = "",
+		reward_item_list = {
+			{
+				1,
+				30
+			},
+			{
+				91006,
+				1
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32120104] = {
+		need = 40,
+		system_key = 0,
+		need_item_id = 76,
+		activity_id = 321201,
+		id = 32120104,
+		special_level = "",
+		reward_item_list = {
+			{
+				1,
+				30
+			},
+			{
+				3052,
+				1
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32120105] = {
+		need = 50,
+		system_key = 0,
+		need_item_id = 76,
+		activity_id = 321201,
+		id = 32120105,
+		special_level = "",
+		reward_item_list = {
+			{
+				1,
+				30
+			},
+			{
+				91007,
+				1
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32120106] = {
+		need = 60,
+		system_key = 0,
+		need_item_id = 76,
+		activity_id = 321201,
+		id = 32120106,
+		special_level = "",
+		reward_item_list = {
+			{
+				1,
+				30
+			},
+			{
+				3053,
+				1
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32120107] = {
+		need = 70,
+		system_key = 0,
+		need_item_id = 76,
+		activity_id = 321201,
+		id = 32120107,
+		special_level = "",
+		reward_item_list = {
+			{
+				1,
+				30
+			},
+			{
+				91008,
+				1
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32120108] = {
+		need = 80,
+		system_key = 0,
+		need_item_id = 76,
+		activity_id = 321201,
+		id = 32120108,
+		special_level = "",
+		reward_item_list = {
+			{
+				1,
+				30
+			},
+			{
+				3054,
+				1
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32120109] = {
+		need = 90,
+		system_key = 0,
+		need_item_id = 76,
+		activity_id = 321201,
+		id = 32120109,
+		special_level = "",
+		reward_item_list = {
+			{
+				1,
+				30
+			},
+			{
+				91009,
+				1
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32120110] = {
+		need = 100,
+		system_key = 0,
+		need_item_id = 76,
+		activity_id = 321201,
+		id = 32120110,
+		special_level = "",
+		reward_item_list = {
+			{
+				1,
+				30
+			},
+			{
+				4007,
+				1
+			},
+			{
+				3055,
+				1
+			}
+		}
+	},
+	[32364101] = {
+		need = 1,
+		system_key = 40007701,
+		need_item_id = 77,
+		activity_id = 323841,
+		id = 32364101,
+		special_level = "",
+		reward_item_list = {
+			{
+				1073,
+				1
+			},
+			{
+				1,
+				20
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32364102] = {
+		need = 2,
+		system_key = 40007701,
+		need_item_id = 77,
+		activity_id = 323841,
+		id = 32364102,
+		special_level = "",
+		reward_item_list = {
+			{
+				91010,
+				1
+			},
+			{
+				1,
+				20
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32364103] = {
+		need = 3,
+		system_key = 40007701,
+		need_item_id = 77,
+		activity_id = 323841,
+		id = 32364103,
+		special_level = "",
+		reward_item_list = {
+			{
+				91011,
+				1
+			},
+			{
+				1,
+				20
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32364104] = {
+		need = 4,
+		system_key = 40007701,
+		need_item_id = 77,
+		activity_id = 323841,
+		id = 32364104,
+		special_level = "",
+		reward_item_list = {
+			{
+				30013,
+				5
+			},
+			{
+				1,
+				20
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32364105] = {
+		need = 5,
+		system_key = 40007701,
+		need_item_id = 77,
+		activity_id = 323841,
+		id = 32364105,
+		special_level = "",
+		reward_item_list = {
+			{
+				7019,
+				1
+			},
+			{
+				1,
+				20
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32364106] = {
+		need = 6,
+		system_key = 40007701,
+		need_item_id = 77,
+		activity_id = 323841,
+		id = 32364106,
+		special_level = "",
+		reward_item_list = {
+			{
+				9008,
+				1
+			},
+			{
+				1,
+				20
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32364107] = {
+		need = 7,
+		system_key = 40007701,
+		need_item_id = 77,
+		activity_id = 323841,
+		id = 32364107,
+		special_level = "",
+		reward_item_list = {
+			{
+				91012,
+				1
+			},
+			{
+				1,
+				20
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32364108] = {
+		need = 8,
+		system_key = 40007701,
+		need_item_id = 77,
+		activity_id = 323841,
+		id = 32364108,
+		special_level = "",
+		reward_item_list = {
+			{
+				91013,
+				1
+			},
+			{
+				1,
+				20
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32364109] = {
+		need = 9,
+		system_key = 40007701,
+		need_item_id = 77,
+		activity_id = 323841,
+		id = 32364109,
+		special_level = "",
+		reward_item_list = {
+			{
+				30013,
+				5
+			},
+			{
+				1,
+				20
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32364110] = {
+		need = 10,
+		system_key = 40007701,
+		need_item_id = 77,
+		activity_id = 323841,
+		id = 32364110,
+		special_level = "",
+		reward_item_list = {
+			{
+				2925,
+				1
+			},
+			{
+				1,
+				20
+			},
+			{
+				22003,
+				2
+			}
+		}
+	},
+	[32105101] = {
+		need = 2000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105101,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40502,
+				5
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32105102] = {
+		need = 3000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105102,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40502,
+				5
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32105103] = {
+		need = 4000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105103,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40502,
+				5
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32105104] = {
+		need = 5000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105104,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40502,
+				5
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32105105] = {
+		need = 6000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105105,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40502,
+				5
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32105106] = {
+		need = 7000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105106,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40502,
+				5
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32105107] = {
+		need = 8000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105107,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40502,
+				5
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32105108] = {
+		need = 9000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105108,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40502,
+				5
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32105109] = {
+		need = 10000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105109,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40803,
+				3
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32105110] = {
+		need = 11000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105110,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40803,
+				3
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32105111] = {
+		need = 12000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105111,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40803,
+				3
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32105112] = {
+		need = 13000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105112,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40803,
+				3
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32105113] = {
+		need = 14000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105113,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40803,
+				3
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32105114] = {
+		need = 15000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105114,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40803,
+				3
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32105115] = {
+		need = 16000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105115,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40503,
+				5
+			},
+			{
+				2,
+				4000
+			}
+		}
+	},
+	[32105116] = {
+		need = 17000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105116,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40503,
+				5
+			},
+			{
+				2,
+				4000
+			}
+		}
+	},
+	[32105117] = {
+		need = 18000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105117,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40503,
+				5
+			},
+			{
+				2,
+				4000
+			}
+		}
+	},
+	[32105118] = {
+		need = 20000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105118,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40503,
+				5
+			},
+			{
+				2,
+				4000
+			}
+		}
+	},
+	[32105119] = {
+		need = 22000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105119,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40503,
+				5
+			},
+			{
+				2,
+				4000
+			}
+		}
+	},
+	[32105120] = {
+		need = 24000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105120,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40503,
+				5
+			},
+			{
+				2,
+				4000
+			}
+		}
+	},
+	[32105121] = {
+		need = 26000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105121,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40803,
+				4
+			},
+			{
+				2,
+				4000
+			}
+		}
+	},
+	[32105122] = {
+		need = 28000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105122,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40803,
+				4
+			},
+			{
+				2,
+				4000
+			}
+		}
+	},
+	[32105123] = {
+		need = 30000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105123,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40803,
+				4
+			},
+			{
+				2,
+				4000
+			}
+		}
+	},
+	[32105124] = {
+		need = 32000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105124,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40803,
+				4
+			},
+			{
+				2,
+				4000
+			}
+		}
+	},
+	[32105125] = {
+		need = 34000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105125,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40803,
+				4
+			},
+			{
+				2,
+				4000
+			}
+		}
+	},
+	[32105126] = {
+		need = 36000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105126,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40803,
+				4
+			},
+			{
+				2,
+				4000
+			}
+		}
+	},
+	[32105127] = {
+		need = 38000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105127,
+		special_level = "",
+		reward_item_list = {
+			{
+				40504,
+				2
+			},
+			{
+				40803,
+				4
+			},
+			{
+				2,
+				4000
+			}
+		}
+	},
+	[32105128] = {
+		need = 40000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105128,
+		special_level = "",
+		reward_item_list = {
+			{
+				40803,
+				2
+			},
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[32105129] = {
+		need = 42000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105129,
+		special_level = "",
+		reward_item_list = {
+			{
+				40803,
+				2
+			},
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[32105130] = {
+		need = 44000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105130,
+		special_level = "",
+		reward_item_list = {
+			{
+				40803,
+				2
+			},
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[32105131] = {
+		need = 46000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105131,
+		special_level = "",
+		reward_item_list = {
+			{
+				40803,
+				2
+			},
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[32105132] = {
+		need = 48000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105132,
+		special_level = "",
+		reward_item_list = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[32105133] = {
+		need = 50000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105133,
+		special_level = "",
+		reward_item_list = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[32105134] = {
+		need = 52000,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321051,
+		id = 32105134,
+		special_level = "",
+		reward_item_list = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[32292101] = {
+		need = 20,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322921,
+		id = 32292101,
+		special_level = "",
+		reward_item_list = {
+			{
+				40415,
+				60
+			}
+		}
+	},
+	[32292102] = {
+		need = 40,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322921,
+		id = 32292102,
+		special_level = "",
+		reward_item_list = {
+			{
+				68,
+				10
+			}
+		}
+	},
+	[32292103] = {
+		need = 60,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322921,
+		id = 32292103,
+		special_level = "",
+		reward_item_list = {
+			{
+				24,
+				30
+			}
+		}
+	},
+	[32292104] = {
+		need = 90,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322921,
+		id = 32292104,
+		special_level = "",
+		reward_item_list = {
+			{
+				30056,
+				1
+			}
+		}
+	},
+	[32292105] = {
+		need = 120,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322921,
+		id = 32292105,
+		special_level = "",
+		reward_item_list = {
+			{
+				11085,
+				30
+			}
+		}
+	},
+	[32292106] = {
+		need = 150,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322921,
+		id = 32292106,
+		special_level = "",
+		reward_item_list = {
+			{
+				40604,
+				4
+			}
+		}
+	},
+	[32292107] = {
+		need = 180,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322921,
+		id = 32292107,
+		special_level = "",
+		reward_item_list = {
+			{
+				41201,
+				30
+			}
+		}
+	},
+	[32292108] = {
+		need = 200,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322921,
+		id = 32292108,
+		special_level = "",
+		reward_item_list = {
+			{
+				2540000,
+				1
+			}
+		}
+	},
+	[32189101] = {
+		need = 20,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321891,
+		id = 32189101,
+		special_level = "",
+		reward_item_list = {
+			{
+				40803,
+				20
+			},
+			{
+				40202,
+				20
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32189102] = {
+		need = 50,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321891,
+		id = 32189102,
+		special_level = "",
+		reward_item_list = {
+			{
+				41501,
+				20
+			},
+			{
+				40202,
+				30
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32189103] = {
+		need = 80,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321891,
+		id = 32189103,
+		special_level = "",
+		reward_item_list = {
+			{
+				41301,
+				30
+			},
+			{
+				40102,
+				20
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32189104] = {
+		need = 110,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321891,
+		id = 32189104,
+		special_level = "",
+		reward_item_list = {
+			{
+				40603,
+				20
+			},
+			{
+				40102,
+				30
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32189105] = {
+		need = 140,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321891,
+		id = 32189105,
+		special_level = "",
+		reward_item_list = {
+			{
+				40701,
+				20
+			},
+			{
+				40301,
+				60
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32189106] = {
+		need = 160,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321891,
+		id = 32189106,
+		special_level = "",
+		reward_item_list = {
+			{
+				41302,
+				20
+			},
+			{
+				40301,
+				80
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32189107] = {
+		need = 180,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 321891,
+		id = 32189107,
+		special_level = "",
+		reward_item_list = {
+			{
+				41303,
+				10
+			},
+			{
+				40301,
+				100
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[32225101] = {
+		need = 5,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322251,
+		id = 32225101,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				500
+			}
+		}
+	},
+	[32225102] = {
+		need = 10,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322251,
+		id = 32225102,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				300
+			}
+		}
+	},
+	[32225103] = {
+		need = 30,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322251,
+		id = 32225103,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				150
+			}
+		}
+	},
+	[32225201] = {
+		need = 5,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322252,
+		id = 32225201,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				400
+			}
+		}
+	},
+	[32225202] = {
+		need = 10,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322252,
+		id = 32225202,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				240
+			}
+		}
+	},
+	[32225203] = {
+		need = 30,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322252,
+		id = 32225203,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				120
+			}
+		}
+	},
+	[32225301] = {
+		need = 5,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322253,
+		id = 32225301,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				400
+			}
+		}
+	},
+	[32225302] = {
+		need = 10,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322253,
+		id = 32225302,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				240
+			}
+		}
+	},
+	[32225303] = {
+		need = 30,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322253,
+		id = 32225303,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				120
+			}
+		}
+	},
+	[32225401] = {
+		need = 5,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322254,
+		id = 32225401,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				500
+			}
+		}
+	},
+	[32225402] = {
+		need = 10,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322254,
+		id = 32225402,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				300
+			}
+		}
+	},
+	[32225403] = {
+		need = 30,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322254,
+		id = 32225403,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				150
+			}
+		}
+	},
+	[32225501] = {
+		need = 5,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322255,
+		id = 32225501,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				400
+			}
+		}
+	},
+	[32225502] = {
+		need = 10,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322255,
+		id = 32225502,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				240
+			}
+		}
+	},
+	[32225503] = {
+		need = 30,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322255,
+		id = 32225503,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				120
+			}
+		}
+	},
+	[32225601] = {
+		need = 5,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322256,
+		id = 32225601,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				400
+			}
+		}
+	},
+	[32225602] = {
+		need = 10,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322256,
+		id = 32225602,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				240
+			}
+		}
+	},
+	[32225603] = {
+		need = 30,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322256,
+		id = 32225603,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				120
+			}
+		}
+	},
+	[32225701] = {
+		need = 5,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322257,
+		id = 32225701,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				400
+			}
+		}
+	},
+	[32225702] = {
+		need = 10,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322257,
+		id = 32225702,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				240
+			}
+		}
+	},
+	[32225703] = {
+		need = 30,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322257,
+		id = 32225703,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				120
+			}
+		}
+	},
+	[32225801] = {
+		need = 5,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322258,
+		id = 32225801,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				400
+			}
+		}
+	},
+	[32225802] = {
+		need = 10,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322258,
+		id = 32225802,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				240
+			}
+		}
+	},
+	[32225803] = {
+		need = 30,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322258,
+		id = 32225803,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				120
+			}
+		}
+	},
+	[32225901] = {
+		need = 5,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322259,
+		id = 32225901,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				400
+			}
+		}
+	},
+	[32225902] = {
+		need = 10,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322259,
+		id = 32225902,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				240
+			}
+		}
+	},
+	[32225903] = {
+		need = 30,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322259,
+		id = 32225903,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				120
+			}
+		}
+	},
+	[32225001] = {
+		need = 5,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322250,
+		id = 32225001,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				400
+			}
+		}
+	},
+	[32225002] = {
+		need = 10,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322250,
+		id = 32225002,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				240
+			}
+		}
+	},
+	[32225003] = {
+		need = 30,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 322250,
+		id = 32225003,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				120
+			}
+		}
+	},
+	[322251001] = {
+		need = 5,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 3222510,
+		id = 322251001,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				400
+			}
+		}
+	},
+	[322251002] = {
+		need = 10,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 3222510,
+		id = 322251002,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				240
+			}
+		}
+	},
+	[322251003] = {
+		need = 30,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 3222510,
+		id = 322251003,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				120
+			}
+		}
+	},
 	get_id_list_by_activity_id = {
+		[3222510] = {
+			322251001,
+			322251002,
+			322251003
+		},
+		[322250] = {
+			32225001,
+			32225002,
+			32225003
+		},
+		[322259] = {
+			32225901,
+			32225902,
+			32225903
+		},
+		[322258] = {
+			32225801,
+			32225802,
+			32225803
+		},
+		[322257] = {
+			32225701,
+			32225702,
+			32225703
+		},
+		[322256] = {
+			32225601,
+			32225602,
+			32225603
+		},
+		[322255] = {
+			32225501,
+			32225502,
+			32225503
+		},
+		[322254] = {
+			32225401,
+			32225402,
+			32225403
+		},
+		[322253] = {
+			32225301,
+			32225302,
+			32225303
+		},
+		[322252] = {
+			32225201,
+			32225202,
+			32225203
+		},
+		[322251] = {
+			32225101,
+			32225102,
+			32225103
+		},
+		[321891] = {
+			32189101,
+			32189102,
+			32189103,
+			32189104,
+			32189105,
+			32189106,
+			32189107
+		},
+		[322921] = {
+			32292101,
+			32292102,
+			32292103,
+			32292104,
+			32292105,
+			32292106,
+			32292107,
+			32292108
+		},
+		[321051] = {
+			32105101,
+			32105102,
+			32105103,
+			32105104,
+			32105105,
+			32105106,
+			32105107,
+			32105108,
+			32105109,
+			32105110,
+			32105111,
+			32105112,
+			32105113,
+			32105114,
+			32105115,
+			32105116,
+			32105117,
+			32105118,
+			32105119,
+			32105120,
+			32105121,
+			32105122,
+			32105123,
+			32105124,
+			32105125,
+			32105126,
+			32105127,
+			32105128,
+			32105129,
+			32105130,
+			32105131,
+			32105132,
+			32105133,
+			32105134
+		},
+		[323841] = {
+			32364101,
+			32364102,
+			32364103,
+			32364104,
+			32364105,
+			32364106,
+			32364107,
+			32364108,
+			32364109,
+			32364110
+		},
+		[321201] = {
+			32120101,
+			32120102,
+			32120103,
+			32120104,
+			32120105,
+			32120106,
+			32120107,
+			32120108,
+			32120109,
+			32120110
+		},
 		[312256] = {
 			31225601,
 			31225602,
@@ -17953,6 +21959,1112 @@
 			50421
 		}
 	},
+	get_id_list_by_system_key = {
+		[40007701] = {
+			32364101,
+			32364102,
+			32364103,
+			32364104,
+			32364105,
+			32364106,
+			32364107,
+			32364108,
+			32364109,
+			32364110
+		},
+		[0] = {
+			50401,
+			50402,
+			50403,
+			50404,
+			50405,
+			50406,
+			50407,
+			50408,
+			50409,
+			50410,
+			50411,
+			50412,
+			50413,
+			50414,
+			50415,
+			50416,
+			50417,
+			50418,
+			50419,
+			50420,
+			50421,
+			711901,
+			711902,
+			711903,
+			711904,
+			711905,
+			711906,
+			711907,
+			711908,
+			711909,
+			711910,
+			711911,
+			711912,
+			7127101,
+			7127102,
+			7127103,
+			7127104,
+			7127105,
+			8141101,
+			8141102,
+			8141103,
+			8141201,
+			8141202,
+			8141203,
+			8141301,
+			8141302,
+			8141303,
+			8141401,
+			8141402,
+			8141403,
+			8141501,
+			8141502,
+			8141503,
+			8141601,
+			8141602,
+			8141603,
+			8141701,
+			8141702,
+			8141703,
+			8141801,
+			8141802,
+			8141803,
+			8143101,
+			8143102,
+			8143103,
+			8143201,
+			8143202,
+			8143203,
+			8143301,
+			8143302,
+			8143303,
+			8143401,
+			8143402,
+			8143403,
+			8143501,
+			8143502,
+			8143503,
+			8143601,
+			8143602,
+			8143603,
+			8143604,
+			8143605,
+			8143606,
+			9105101,
+			9105102,
+			9105103,
+			9105104,
+			9105105,
+			9105106,
+			9105107,
+			9105108,
+			9105109,
+			9105110,
+			9105111,
+			9105112,
+			9105113,
+			9105114,
+			9105115,
+			9105116,
+			9105117,
+			9105118,
+			9105119,
+			9105120,
+			9105121,
+			9105122,
+			9105123,
+			9105124,
+			9105125,
+			9105126,
+			9105127,
+			9105128,
+			9105129,
+			9105130,
+			9105131,
+			9105132,
+			9105133,
+			9105134,
+			9150101,
+			9150102,
+			9150103,
+			9150104,
+			9150105,
+			9150106,
+			9150107,
+			9150108,
+			9150151,
+			9150152,
+			9150153,
+			9150154,
+			10162101,
+			10162102,
+			10162103,
+			10162201,
+			10162202,
+			10162203,
+			10162301,
+			10162302,
+			10162303,
+			10162401,
+			10162402,
+			10162403,
+			10162501,
+			10162502,
+			10162503,
+			10162601,
+			10162602,
+			10162603,
+			10162701,
+			10162702,
+			10162703,
+			10162801,
+			10162802,
+			10162803,
+			10162901,
+			10162902,
+			10162903,
+			10160101,
+			10160102,
+			10160103,
+			10160201,
+			10160202,
+			10160203,
+			10160301,
+			10160302,
+			10160303,
+			10160401,
+			10160402,
+			10160403,
+			10160501,
+			10160502,
+			10160503,
+			10160601,
+			10160602,
+			10160603,
+			111771,
+			111772,
+			111773,
+			111774,
+			111775,
+			111776,
+			111777,
+			111778,
+			1117311,
+			1117312,
+			1117313,
+			1117314,
+			1117315,
+			1117316,
+			1117317,
+			1117811,
+			1117812,
+			1117813,
+			1117814,
+			1117815,
+			1117816,
+			1117817,
+			1117818,
+			1312811,
+			1312812,
+			1312813,
+			1312814,
+			1312815,
+			1312816,
+			1312817,
+			1312818,
+			1312819,
+			1312820,
+			1312821,
+			1312822,
+			13184101,
+			13184102,
+			13184103,
+			13184104,
+			13184105,
+			13184106,
+			13184107,
+			13184108,
+			13184109,
+			13184110,
+			13184111,
+			13184112,
+			13184113,
+			13184114,
+			13184115,
+			13184116,
+			13184117,
+			13184118,
+			13184119,
+			13184120,
+			13184121,
+			13184122,
+			14189101,
+			14189102,
+			14189103,
+			14189104,
+			14189105,
+			14189106,
+			14189107,
+			14189108,
+			14189109,
+			14189110,
+			14189111,
+			14189112,
+			14189113,
+			17105101,
+			17105102,
+			17105103,
+			17105104,
+			17105105,
+			17105106,
+			17105107,
+			17105108,
+			17105109,
+			17105110,
+			17105111,
+			17105112,
+			17105113,
+			17105114,
+			17105115,
+			17105116,
+			17105117,
+			17105118,
+			17105119,
+			17105120,
+			17105121,
+			17105122,
+			17105123,
+			17105124,
+			17105125,
+			17105126,
+			17105127,
+			17105128,
+			17105129,
+			17105130,
+			17105131,
+			17105132,
+			17105133,
+			17105134,
+			17189101,
+			17189102,
+			17189103,
+			17189104,
+			17189105,
+			17189106,
+			17189107,
+			17189108,
+			17189109,
+			17189110,
+			17189111,
+			17189112,
+			17189113,
+			17189114,
+			17189115,
+			18189101,
+			18189102,
+			18189103,
+			18189104,
+			18189105,
+			18189106,
+			18189107,
+			18189201,
+			18189202,
+			18189203,
+			18189204,
+			18189205,
+			18189206,
+			18189207,
+			18215101,
+			18215102,
+			18215103,
+			18215104,
+			18215105,
+			18215106,
+			18215107,
+			18215108,
+			18215109,
+			18162001,
+			18162002,
+			18162003,
+			18162101,
+			18162102,
+			18162103,
+			18162201,
+			18162202,
+			18162203,
+			18162301,
+			18162302,
+			18162303,
+			18162401,
+			18162402,
+			18162403,
+			18162501,
+			18162502,
+			18162503,
+			18162601,
+			18162602,
+			18162603,
+			18162701,
+			18162702,
+			18162703,
+			18162801,
+			18162802,
+			18162803,
+			18162901,
+			18162902,
+			18162903,
+			18217101,
+			18217102,
+			18217103,
+			18217104,
+			18217105,
+			18217106,
+			18217107,
+			18217108,
+			18217109,
+			18217110,
+			18217111,
+			18217112,
+			18217113,
+			19184101,
+			19184102,
+			19184103,
+			19184104,
+			19184105,
+			19184106,
+			19184107,
+			19184108,
+			19184109,
+			19184110,
+			19184111,
+			19184112,
+			19184113,
+			19184114,
+			19184115,
+			19184116,
+			19184117,
+			19184118,
+			19184119,
+			19184120,
+			19184121,
+			19184122,
+			19189101,
+			19189102,
+			19189103,
+			19189104,
+			19189105,
+			19189106,
+			19189107,
+			19189201,
+			19189202,
+			19189203,
+			19189204,
+			19189205,
+			19189206,
+			19189207,
+			20105101,
+			20105102,
+			20105103,
+			20105104,
+			20105105,
+			20105106,
+			20105107,
+			20105108,
+			20105109,
+			20105110,
+			20105111,
+			20105112,
+			20105113,
+			20105114,
+			20105115,
+			20105116,
+			20105117,
+			20105118,
+			20105119,
+			20105120,
+			20105121,
+			20105122,
+			20105123,
+			20105124,
+			20105125,
+			20105126,
+			20105127,
+			20105128,
+			20105129,
+			20105130,
+			20105131,
+			20105132,
+			20105133,
+			20105134,
+			20189101,
+			20189102,
+			20189103,
+			20189104,
+			20189105,
+			20189106,
+			20189107,
+			20189201,
+			20189202,
+			20189203,
+			20189204,
+			20189205,
+			20189206,
+			20189207,
+			21253101,
+			21253102,
+			21253103,
+			21253104,
+			21253105,
+			21253106,
+			21253107,
+			22254101,
+			22254102,
+			22254103,
+			22254104,
+			22254105,
+			22254106,
+			22254107,
+			22254108,
+			22261101,
+			22261102,
+			22261103,
+			22261201,
+			22261202,
+			22261203,
+			22262101,
+			22262102,
+			22262103,
+			22262201,
+			22262202,
+			22262203,
+			22263101,
+			22263102,
+			22263103,
+			22263201,
+			22263202,
+			22263203,
+			21189101,
+			21189102,
+			21189103,
+			21189104,
+			21189105,
+			21189106,
+			21189107,
+			21189201,
+			21189202,
+			21189203,
+			21189204,
+			21189205,
+			21189206,
+			21189207,
+			18225101,
+			18225102,
+			18225103,
+			18225201,
+			18225202,
+			18225203,
+			18225301,
+			18225302,
+			18225303,
+			19225101,
+			19225102,
+			19225103,
+			19225201,
+			19225202,
+			19225203,
+			19225301,
+			19225302,
+			19225303,
+			19225401,
+			19225402,
+			19225403,
+			20225101,
+			20225102,
+			20225103,
+			20225201,
+			20225202,
+			20225203,
+			20225301,
+			20225302,
+			20225303,
+			21225101,
+			21225102,
+			21225103,
+			21225201,
+			21225202,
+			21225203,
+			21225301,
+			21225302,
+			21225303,
+			20225401,
+			20225402,
+			20225403,
+			20225501,
+			20225502,
+			20225503,
+			20225601,
+			20225602,
+			20225603,
+			21225401,
+			21225402,
+			21225403,
+			21225501,
+			21225502,
+			21225503,
+			21225601,
+			21225602,
+			21225603,
+			23225101,
+			23225102,
+			23225103,
+			23225201,
+			23225202,
+			23225203,
+			23225301,
+			23225302,
+			23225303,
+			23225401,
+			23225402,
+			23225403,
+			23225501,
+			23225502,
+			23225503,
+			23225601,
+			23225602,
+			23225603,
+			24225101,
+			24225102,
+			24225103,
+			24225201,
+			24225202,
+			24225203,
+			24225301,
+			24225302,
+			24225303,
+			23128101,
+			23128102,
+			23128103,
+			23128104,
+			23128105,
+			23128106,
+			23128107,
+			23128108,
+			23128109,
+			23128110,
+			23128111,
+			23128112,
+			23105101,
+			23105102,
+			23105103,
+			23105104,
+			23105105,
+			23105106,
+			23105107,
+			23105108,
+			23105109,
+			23105110,
+			23105111,
+			23105112,
+			23105113,
+			23105114,
+			23105115,
+			23105116,
+			23105117,
+			23105118,
+			23105119,
+			23105120,
+			23105121,
+			23105122,
+			23105123,
+			23105124,
+			23105125,
+			23105126,
+			23105127,
+			23105128,
+			23105129,
+			23105130,
+			23105131,
+			23105132,
+			23105133,
+			23105134,
+			23189101,
+			23189102,
+			23189103,
+			23189104,
+			23189105,
+			23189106,
+			23189107,
+			23189201,
+			23189202,
+			23189203,
+			23189204,
+			23189205,
+			23189206,
+			23189207,
+			24279101,
+			24279102,
+			24279103,
+			24279104,
+			24279105,
+			24279106,
+			24189101,
+			24189102,
+			24189103,
+			24189104,
+			24189105,
+			24189106,
+			24189107,
+			24292101,
+			24292102,
+			24292103,
+			24292104,
+			24292105,
+			24292106,
+			24292107,
+			24292108,
+			24292109,
+			24189201,
+			24189202,
+			24189203,
+			24189204,
+			24189205,
+			24189206,
+			24189207,
+			24225401,
+			24225402,
+			24225403,
+			24225501,
+			24225502,
+			24225503,
+			24225601,
+			24225602,
+			24225603,
+			24190001,
+			24190002,
+			24190003,
+			24190004,
+			24190005,
+			24190006,
+			24190007,
+			24190008,
+			24190009,
+			24190010,
+			24190011,
+			24190012,
+			24190013,
+			24190014,
+			24190015,
+			24190016,
+			24190017,
+			24190018,
+			24190019,
+			24190020,
+			24190021,
+			24190022,
+			24190023,
+			24190024,
+			24190025,
+			24190026,
+			24190027,
+			24190028,
+			24190029,
+			24190030,
+			24190031,
+			24190032,
+			24190033,
+			24190034,
+			24190035,
+			24190036,
+			24190037,
+			24190038,
+			24190039,
+			24190040,
+			24190041,
+			24190042,
+			24190043,
+			28002201,
+			28002202,
+			28002203,
+			28002204,
+			28002205,
+			28002206,
+			28002207,
+			28002210,
+			28002211,
+			28002212,
+			28002213,
+			28002214,
+			28002215,
+			28002216,
+			28314101,
+			27184101,
+			27184102,
+			27184103,
+			27184104,
+			27184105,
+			27184106,
+			27184107,
+			27184108,
+			27184109,
+			27184110,
+			27184111,
+			27184112,
+			27184113,
+			27184114,
+			27184115,
+			27184116,
+			27184117,
+			27184118,
+			27184119,
+			27184120,
+			27184121,
+			27184122,
+			27189101,
+			27189102,
+			27189103,
+			27189104,
+			27189105,
+			27189106,
+			27189107,
+			28189101,
+			28189102,
+			28189103,
+			28189104,
+			28189105,
+			28189106,
+			28189107,
+			27225101,
+			27225102,
+			27225103,
+			27225201,
+			27225202,
+			27225203,
+			27225301,
+			27225302,
+			27225303,
+			28189201,
+			28189202,
+			28189203,
+			28189204,
+			28189205,
+			28189206,
+			28189207,
+			28225101,
+			28225102,
+			28225103,
+			28225201,
+			28225202,
+			28225203,
+			28225301,
+			28225302,
+			28225303,
+			28225401,
+			28225402,
+			28225403,
+			28225501,
+			28225502,
+			28225503,
+			28225601,
+			28225602,
+			28225603,
+			29338101,
+			29338102,
+			29189101,
+			29189102,
+			29189103,
+			29189104,
+			29189105,
+			29189106,
+			29189107,
+			29189201,
+			29189202,
+			29189203,
+			29189204,
+			29189205,
+			29189206,
+			29189207,
+			110101,
+			110102,
+			110103,
+			110104,
+			110105,
+			110106,
+			110107,
+			110108,
+			110109,
+			110110,
+			110111,
+			110112,
+			110113,
+			110114,
+			110115,
+			110116,
+			110117,
+			110118,
+			110119,
+			110120,
+			110121,
+			110122,
+			110123,
+			110124,
+			110125,
+			110126,
+			110127,
+			110128,
+			110129,
+			110130,
+			110131,
+			110132,
+			110133,
+			110134,
+			110135,
+			110136,
+			110137,
+			110138,
+			110139,
+			110140,
+			29225101,
+			29225102,
+			29225103,
+			29225201,
+			29225202,
+			29225203,
+			29225301,
+			29225302,
+			29225303,
+			29225401,
+			29225402,
+			29225403,
+			29225501,
+			29225502,
+			29225503,
+			30105101,
+			30105102,
+			30105103,
+			30105104,
+			30105105,
+			30105106,
+			30105107,
+			30105108,
+			30105109,
+			30105110,
+			30105111,
+			30105112,
+			30105113,
+			30105114,
+			30105115,
+			30105116,
+			30105117,
+			30105118,
+			30105119,
+			30105120,
+			30105121,
+			30105122,
+			30105123,
+			30105124,
+			30105125,
+			30105126,
+			30105127,
+			30105128,
+			30105129,
+			30105130,
+			30105131,
+			30105132,
+			30105133,
+			30105134,
+			29225601,
+			29225602,
+			29225603,
+			30189101,
+			30189102,
+			30189103,
+			30189104,
+			30189105,
+			30189106,
+			30189107,
+			29225701,
+			29225702,
+			29225703,
+			30189201,
+			30189202,
+			30189203,
+			30189204,
+			30189205,
+			30189206,
+			30189207,
+			29225801,
+			29225802,
+			29225803,
+			29225901,
+			29225902,
+			29225903,
+			30225101,
+			30225102,
+			30225103,
+			30225201,
+			30225202,
+			30225203,
+			31363101,
+			31363102,
+			31363103,
+			31363104,
+			31363105,
+			31363106,
+			31363107,
+			31363108,
+			30225301,
+			30225302,
+			30225303,
+			30225401,
+			30225402,
+			30225403,
+			30225501,
+			30225502,
+			30225503,
+			30225601,
+			30225602,
+			30225603,
+			31189101,
+			31189102,
+			31189103,
+			31189104,
+			31189105,
+			31189106,
+			31189107,
+			31225101,
+			31225102,
+			31225103,
+			31225201,
+			31225202,
+			31225203,
+			31225301,
+			31225302,
+			31225303,
+			31279101,
+			31279102,
+			31279103,
+			31279104,
+			31279105,
+			31279106,
+			31279107,
+			31279108,
+			31279109,
+			31189201,
+			31189202,
+			31189203,
+			31189204,
+			31189205,
+			31189206,
+			31189207,
+			31225401,
+			31225402,
+			31225403,
+			31225501,
+			31225502,
+			31225503,
+			31225601,
+			31225602,
+			31225603,
+			32120101,
+			32120102,
+			32120103,
+			32120104,
+			32120105,
+			32120106,
+			32120107,
+			32120108,
+			32120109,
+			32120110,
+			32105101,
+			32105102,
+			32105103,
+			32105104,
+			32105105,
+			32105106,
+			32105107,
+			32105108,
+			32105109,
+			32105110,
+			32105111,
+			32105112,
+			32105113,
+			32105114,
+			32105115,
+			32105116,
+			32105117,
+			32105118,
+			32105119,
+			32105120,
+			32105121,
+			32105122,
+			32105123,
+			32105124,
+			32105125,
+			32105126,
+			32105127,
+			32105128,
+			32105129,
+			32105130,
+			32105131,
+			32105132,
+			32105133,
+			32105134,
+			32292101,
+			32292102,
+			32292103,
+			32292104,
+			32292105,
+			32292106,
+			32292107,
+			32292108,
+			32189101,
+			32189102,
+			32189103,
+			32189104,
+			32189105,
+			32189106,
+			32189107,
+			32225101,
+			32225102,
+			32225103,
+			32225201,
+			32225202,
+			32225203,
+			32225301,
+			32225302,
+			32225303,
+			32225401,
+			32225402,
+			32225403,
+			32225501,
+			32225502,
+			32225503,
+			32225601,
+			32225602,
+			32225603,
+			32225701,
+			32225702,
+			32225703,
+			32225801,
+			32225802,
+			32225803,
+			32225901,
+			32225902,
+			32225903,
+			32225001,
+			32225002,
+			32225003,
+			322251001,
+			322251002,
+			322251003
+		}
+	},
 	all = {
 		50401,
 		50402,
@@ -18951,6 +24063,108 @@
 		31225503,
 		31225601,
 		31225602,
-		31225603
+		31225603,
+		32120101,
+		32120102,
+		32120103,
+		32120104,
+		32120105,
+		32120106,
+		32120107,
+		32120108,
+		32120109,
+		32120110,
+		32364101,
+		32364102,
+		32364103,
+		32364104,
+		32364105,
+		32364106,
+		32364107,
+		32364108,
+		32364109,
+		32364110,
+		32105101,
+		32105102,
+		32105103,
+		32105104,
+		32105105,
+		32105106,
+		32105107,
+		32105108,
+		32105109,
+		32105110,
+		32105111,
+		32105112,
+		32105113,
+		32105114,
+		32105115,
+		32105116,
+		32105117,
+		32105118,
+		32105119,
+		32105120,
+		32105121,
+		32105122,
+		32105123,
+		32105124,
+		32105125,
+		32105126,
+		32105127,
+		32105128,
+		32105129,
+		32105130,
+		32105131,
+		32105132,
+		32105133,
+		32105134,
+		32292101,
+		32292102,
+		32292103,
+		32292104,
+		32292105,
+		32292106,
+		32292107,
+		32292108,
+		32189101,
+		32189102,
+		32189103,
+		32189104,
+		32189105,
+		32189106,
+		32189107,
+		32225101,
+		32225102,
+		32225103,
+		32225201,
+		32225202,
+		32225203,
+		32225301,
+		32225302,
+		32225303,
+		32225401,
+		32225402,
+		32225403,
+		32225501,
+		32225502,
+		32225503,
+		32225601,
+		32225602,
+		32225603,
+		32225701,
+		32225702,
+		32225703,
+		32225801,
+		32225802,
+		32225803,
+		32225901,
+		32225902,
+		32225903,
+		32225001,
+		32225002,
+		32225003,
+		322251001,
+		322251002,
+		322251003
 	}
 }

@@ -122,7 +122,9 @@ function var_0_0.AddListeners(arg_8_0)
 		elseif var_0_6 == "qworld" then
 			QWorldUIShow()
 		else
-			gameContext:Go("/home", nil, nil, true)
+			gameContext:Go("/home", {
+				isHomeBack = true
+			}, nil, true)
 		end
 	end)
 	arg_8_0:AddBtnListener(arg_8_0.backBtn_, nil, function()
@@ -423,33 +425,35 @@ function var_0_0.OnClickCurrencyBar(arg_39_0)
 	end
 
 	local var_39_0 = ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_VITALITY)
-	local var_39_1 = PlayerData:GetPlayerInfo().userLevel
-	local var_39_2 = GameLevelSetting[var_39_1].fatigue_max
+	local var_39_1 = var_39_0
+	local var_39_2 = PlayerData:GetPlayerInfo().userLevel
+	local var_39_3 = GameLevelSetting[var_39_2].fatigue_max
 
 	arg_39_0:StopTimer()
 
-	if var_39_0 < var_39_2 then
-		local var_39_3 = GameSetting.fatigue_recovery.value[1] * 60
-		local var_39_4 = CurrencyData:GetLastFatigueRecoverTime() == 0 and var_39_3 or var_39_3 - (manager.time:GetServerTime() - CurrencyData:GetLastFatigueRecoverTime()) % var_39_3
-		local var_39_5 = (var_39_2 - var_39_0 - 1) * var_39_3 + var_39_4
+	if var_39_0 < var_39_3 then
+		local var_39_4 = GameSetting.fatigue_recovery.value[1] * 60
+		local var_39_5 = CurrencyData:GetLastFatigueRecoverTime() == 0 and var_39_4 or var_39_4 - (manager.time:GetServerTime() - CurrencyData:GetLastFatigueRecoverTime()) % var_39_4
+		local var_39_6 = (var_39_3 - var_39_0 - 1) * var_39_4 + (var_39_5 == var_39_4 and var_39_0 == var_39_1 and 0 or var_39_5)
 
-		arg_39_0.time_.text = string.format("%02d:%02d:%02d", math.floor(var_39_4 / 3600), math.floor(var_39_4 % 3600 / 60), var_39_4 % 60)
-		arg_39_0.allTime_.text = string.format("%02d:%02d:%02d", math.floor(var_39_5 / 3600), math.floor(var_39_5 % 3600 / 60), var_39_5 % 60)
+		arg_39_0.time_.text = string.format("%02d:%02d:%02d", math.floor(var_39_5 / 3600), math.floor(var_39_5 % 3600 / 60), var_39_5 % 60)
+		arg_39_0.allTime_.text = string.format("%02d:%02d:%02d", math.floor(var_39_6 / 3600), math.floor(var_39_6 % 3600 / 60), var_39_6 % 60)
 		arg_39_0.timer_ = Timer.New(function()
-			var_39_4 = CurrencyData:GetLastFatigueRecoverTime() == 0 and var_39_3 or var_39_3 - (manager.time:GetServerTime() - CurrencyData:GetLastFatigueRecoverTime()) % var_39_3
+			var_39_5 = CurrencyData:GetLastFatigueRecoverTime() == 0 and var_39_4 or var_39_4 - (manager.time:GetServerTime() - CurrencyData:GetLastFatigueRecoverTime()) % var_39_4
 			var_39_0 = ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_VITALITY)
-			var_39_5 = (var_39_2 - var_39_0 - 1) * var_39_3 + var_39_4
-
-			if var_39_4 <= 0 then
-				var_39_4 = 0
-			end
+			var_39_6 = (var_39_3 - var_39_0 - 1) * var_39_4 + (var_39_5 == var_39_4 and var_39_0 == var_39_1 and 0 or var_39_5)
 
 			if var_39_5 <= 0 then
 				var_39_5 = 0
 			end
 
-			arg_39_0.time_.text = string.format("%02d:%02d:%02d", math.floor(var_39_4 / 3600), math.floor(var_39_4 % 3600 / 60), var_39_4 % 60)
-			arg_39_0.allTime_.text = string.format("%02d:%02d:%02d", math.floor(var_39_5 / 3600), math.floor(var_39_5 % 3600 / 60), var_39_5 % 60)
+			if var_39_6 <= 0 then
+				var_39_6 = 0
+			end
+
+			arg_39_0.time_.text = string.format("%02d:%02d:%02d", math.floor(var_39_5 / 3600), math.floor(var_39_5 % 3600 / 60), var_39_5 % 60)
+			arg_39_0.allTime_.text = string.format("%02d:%02d:%02d", math.floor(var_39_6 / 3600), math.floor(var_39_6 % 3600 / 60), var_39_6 % 60)
+			var_39_1 = var_39_0
 		end, 1, -1)
 
 		arg_39_0.timer_:Start()

@@ -23,7 +23,7 @@ end
 function var_0_0.SetData(arg_4_0, arg_4_1)
 	arg_4_0.heroInfo_ = arg_4_1
 	arg_4_0.cfg_ = NewWarChessHeroCfg[arg_4_0.heroInfo_[1]]
-	arg_4_0.heroImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_4_0.cfg_.hero_id)
+	arg_4_0.heroImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_4_0.cfg_.hero_id)
 	arg_4_0.heroNameText_.text = arg_4_0.cfg_.description
 
 	if arg_4_0.cfg_.effect_type == NewChessConst.HERO_EFFECT_TYPE.BUFF then

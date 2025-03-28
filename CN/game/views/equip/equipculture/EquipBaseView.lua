@@ -14,6 +14,7 @@ end
 
 function var_0_0.Hide(arg_3_0)
 	SetActive(arg_3_0.gameObject_, false)
+	arg_3_0:OnExit()
 end
 
 function var_0_0.Dispose(arg_4_0)

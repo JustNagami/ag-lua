@@ -75,7 +75,7 @@ function var_0_0.RefreshUI(arg_11_0)
 		local var_11_1 = PuzzleNewTools.GetPuzzlePosDic(arg_11_0.activityID_)[arg_11_0.curID_]
 		local var_11_2 = var_11_0.picture_fragment_id[var_11_1]
 
-		arg_11_0.icon_.sprite = getSpriteWithoutAtlas(var_11_0.path .. var_11_2)
+		arg_11_0.icon_.sprite = pureGetSpriteWithoutAtlas(var_11_0.path .. var_11_2)
 	end
 
 	SetActive(arg_11_0.gameObject_, arg_11_0.curID_ ~= 0)

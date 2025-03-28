@@ -123,6 +123,8 @@
 				SetActive(arg_1_1.allBtn_.gameObject, true)
 				arg_1_1.hideBtnsController_:SetSelectedIndex(0)
 				manager.video:Dispose()
+
+				arg_1_1.isInLoopVideo = false
 			end
 
 			local var_4_19 = 0.0166666666666667
@@ -1086,6 +1088,8 @@
 				SetActive(arg_22_1.allBtn_.gameObject, true)
 				arg_22_1.hideBtnsController_:SetSelectedIndex(0)
 				manager.video:Dispose()
+
+				arg_22_1.isInLoopVideo = false
 			end
 
 			local var_25_25 = 0.0166666666666667
@@ -5597,6 +5601,8 @@
 				SetActive(arg_148_1.allBtn_.gameObject, true)
 				arg_148_1.hideBtnsController_:SetSelectedIndex(0)
 				manager.video:Dispose()
+
+				arg_148_1.isInLoopVideo = false
 			end
 
 			local var_151_64 = 0.0300000000000002

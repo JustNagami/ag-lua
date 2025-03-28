@@ -7,7 +7,7 @@ StageStrategyType = {
 	GotoActivityRaceStage = "GotoActivityRaceStage",
 	GotoActivityWaterStage = "GotoActivityWaterStage",
 	GotoScoreStage = "GotoScoreStage",
-	GotoAbyssStage = "GotoAbyssStage",
+	GotoSkuldStage = "GotoSkuldStage",
 	GotoRaceTrialStage = "GotoRaceTrialStage",
 	GotoSoloSurviveStage = "GotoSoloSurviveStage",
 	GotoStage = "GotoStage",
@@ -29,6 +29,7 @@ StageStrategyType = {
 	GotoSpKaliStage = "GotoSpKaliStage",
 	GotoMultHeartDemonStage = "GotoMultHeartDemonStage",
 	GotoDodgeBarrageStage = "GotoDodgeBarrageStage",
+	GotoAbyssStage = "GotoAbyssStage",
 	GotoActivityWorldBoss = "GotoActivityWorldBoss",
 	GotoPushSnowBallSingleBattleStage = "GotoPushSnowBallSingleBattleStage",
 	GotoSoloChallengeStage = "GotoSoloChallengeStage",
@@ -36,6 +37,7 @@ StageStrategyType = {
 	GotoMatrixStage = "GotoMatrixStage",
 	GotoChapterStage = "GotoChapterStage",
 	GotoScoreWithMaxScoreStage = "GotoScoreWithMaxScoreStage",
+	GotoSeaWarfareStage = "GotoSeaWarfareStage",
 	GotoPolyhedronStage = "GotoPolyhedronStage",
 	GotoGuildBossStage = "GotoGuildBossStage",
 	GotoBossChallengeStage = "GotoBossChallengeStage",
@@ -46,7 +48,8 @@ StageStrategyType = {
 	GotoMultipleResultStage = "GotoMultipleResultStage",
 	GotoSoloHeartDemonStage = "GotoSoloHeartDemonStage",
 	GotoMonsterCosplayStage = "GotoMonsterCosplayStage",
-	GotoKagutsuchiStage = "GotoKagutsuchiStage"
+	GotoKagutsuchiStage = "GotoKagutsuchiStage",
+	GotoSandPlayStage = "GotoSandPlayStage"
 }
 var_0_0.CustomStageStrategy = {
 	[BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_PLOT] = StageStrategyType.GotoChapterStage,
@@ -106,7 +109,10 @@ var_0_0.CustomStageStrategy = {
 	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_CATCH_DUCK] = StageStrategyType.GotoCatchDuckStage,
 	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_SPKALI_CHALLENGE] = StageStrategyType.GotoSpKaliStage,
 	[BattleConst.STAGE_TYPE_NEW.CHALLENGE_ROGUE_TEAM] = StageStrategyType.GotoChallengeRogueTeamStage,
-	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_DODGE_BARRAGE] = StageStrategyType.GotoDodgeBarrageStage
+	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_DODGE_BARRAGE] = StageStrategyType.GotoDodgeBarrageStage,
+	[BattleConst.STAGE_TYPE_NEW.SKULD] = StageStrategyType.GotoSkuldStage,
+	[BattleConst.STAGE_TYPE_NEW.SEA_WARFARE] = StageStrategyType.GotoSeaWarfareStage,
+	[BattleConst.STAGE_TYPE_NEW.SAND_PLAY] = StageStrategyType.GotoSandPlayStage
 }
 
 function var_0_0.Init(arg_1_0)

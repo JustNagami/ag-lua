@@ -57,7 +57,7 @@ function var_0_0.RefreshUI(arg_7_0, arg_7_1, arg_7_2)
 		arg_7_0.affixID = var_7_2[2]
 		arg_7_0.nameText.text = GetTips("TIP_CLEARTIMES") .. var_7_2[1]
 		arg_7_0.skillText.text = ActivityAffixPoolCfg[var_7_2[2]].name
-		arg_7_0.skillIcon.sprite = getSpriteWithoutAtlas(SpritePathCfg.AffixIcon.path .. PublicBuffCfg[var_7_2[2]].icon)
+		arg_7_0.skillIcon.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.AffixIcon.path .. PublicBuffCfg[var_7_2[2]].icon)
 
 		if var_7_3 < var_7_2[1] then
 			arg_7_0.stateController:SetSelectedState("lock")

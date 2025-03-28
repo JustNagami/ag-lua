@@ -60,7 +60,7 @@ function var_0_0.OnEnter(arg_9_0)
 end
 
 function var_0_0.RefreshUI(arg_10_0)
-	arg_10_0.bg_.sprite = getSpriteWithoutAtlas("TextureConfig/Sticker/stickerBtn/Sticker_big_" .. arg_10_0.bgID_)
+	arg_10_0.bg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Sticker/stickerBtn/Sticker_big_" .. arg_10_0.bgID_)
 
 	arg_10_0:Sortlist()
 	arg_10_0:SetTemplateID(arg_10_0.chooseID_)
@@ -85,7 +85,7 @@ function var_0_0.SetTemplateID(arg_13_0, arg_13_1)
 end
 
 function var_0_0.RefreshInfo(arg_14_0)
-	arg_14_0.show_.sprite = getSpriteWithoutAtlas("TextureConfig/Sticker/stickerBtn/Sticker_template_" .. arg_14_0.curID_)
+	arg_14_0.show_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Sticker/stickerBtn/Sticker_template_" .. arg_14_0.curID_)
 
 	if arg_14_0.curID_ == arg_14_0.chooseID_ then
 		arg_14_0.stateCon_:SetSelectedState("use")

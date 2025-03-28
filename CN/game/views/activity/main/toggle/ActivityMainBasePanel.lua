@@ -249,7 +249,7 @@ end
 function var_0_0.GetRealActivityId(arg_22_0, arg_22_1)
 	local var_22_0 = ActivityData:GetActivityData(arg_22_1)
 
-	arg_22_0.isAdvanceActivity_ = var_22_0.template == ActivityTemplateConst.ACTIVITY_ADVANCE_OPEN
+	arg_22_0.isAdvanceActivity_ = var_22_0.template == ActivityTemplateConst.ACTIVITY_ADVANCE_OPEN or var_22_0.template == ActivityTemplateConst.ACTIVITY_ADVANCE_PRE_OPEN
 	arg_22_0.toggleActivityID_ = arg_22_1
 	arg_22_0.activityID_ = arg_22_0.isAdvanceActivity_ and var_22_0.subActivityIdList[1] or arg_22_1
 end

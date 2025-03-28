@@ -489,6 +489,20 @@
 		id = 1012,
 		default_mouth = 41
 	},
+	[1073] = {
+		hero_id = 1073,
+		style = "female",
+		model = "9073_tpose",
+		id = 1073,
+		default_mouth = 0
+	},
+	[1085] = {
+		hero_id = 1085,
+		style = "female",
+		model = "9085_tpose",
+		id = 1085,
+		default_mouth = 0
+	},
 	all = {
 		1084,
 		1039,
@@ -559,6 +573,8 @@
 		1248,
 		1133,
 		1034,
-		1012
+		1012,
+		1073,
+		1085
 	}
 }

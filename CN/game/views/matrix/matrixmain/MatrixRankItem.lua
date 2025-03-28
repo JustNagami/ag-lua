@@ -49,7 +49,7 @@ function var_0_0.Refresh(arg_3_0, arg_3_1)
 
 	arg_3_0.m_name.text = GetI18NText(arg_3_1.nick)
 	arg_3_0.m_icon.sprite = ItemTools.getItemSprite(arg_3_1.icon)
-	arg_3_0.m_frame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_3_1.icon_frame)
+	arg_3_0.m_frame.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_3_1.icon_frame)
 end
 
 return var_0_0

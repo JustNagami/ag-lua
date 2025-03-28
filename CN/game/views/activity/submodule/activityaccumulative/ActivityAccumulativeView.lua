@@ -3,7 +3,7 @@
 local var_0_0 = class("ActivityAccumulativeView", ActivityMainBasePanel)
 
 function var_0_0.GetUIName(arg_1_0)
-	return "Widget/Version/NorseUI_3_0/NorseUI_3_0_AccumulateUI/NorseUI_3_0_AccumulateUI"
+	return "Widget/System/Activity_Resident/Acitvity_AccumulateUI/Acitvity_AccumulateUI"
 end
 
 function var_0_0.Init(arg_2_0)
@@ -66,20 +66,33 @@ function var_0_0.AddListeners(arg_7_0)
 end
 
 function var_0_0.RefreshTimeText(arg_10_0)
-	arg_10_0.texttimeText_.text = manager.time:GetLostTimeStrWith2Unit(arg_10_0.stopTime_)
+	if arg_10_0.texttimeText_ then
+		if arg_10_0:isHasLeftTimeDes() then
+			local var_10_0, var_10_1 = arg_10_0:CheckAdvanceOpenTime()
+
+			arg_10_0.texttimeText_.text = var_10_1
+
+			arg_10_0:RefreshAcvanceStatus(not var_10_0)
+		else
+			arg_10_0.texttimeText_.text = manager.time:GetLostTimeStrWith2Unit(arg_10_0.stopTime_, true)
+		end
+	end
 end
 
-function var_0_0.TaskUpdate(arg_11_0)
-	arg_11_0.tasklist = ActivityAccumulativeData:GetList(arg_11_0.activityID_)
+function var_0_0.isHasLeftTimeDes(arg_11_0)
+	return true
+end
 
-	arg_11_0.taskScroll_:StartScroll(#arg_11_0.tasklist)
+function var_0_0.TaskUpdate(arg_12_0)
+	arg_12_0.tasklist = ActivityAccumulativeData:GetList(arg_12_0.activityID_)
 
-	local var_11_0 = 0
+	arg_12_0.taskScroll_:StartScroll(#arg_12_0.tasklist)
 
-	arg_11_0.descTxt_.text = ActivityAccumulativeData:GetNum()
-	arg_11_0.textText_.text = GetTips("ACTIVITY_ACCUMULATIVE_INTRODUCE")
+	local var_12_0 = 0
 
-	local var_11_1 = {
+	arg_12_0.descnumTxt_.text = ActivityAccumulativeData:GetNum()
+
+	local var_12_1 = {
 		0.08,
 		0.18,
 		0.3,
@@ -91,48 +104,47 @@ function var_0_0.TaskUpdate(arg_11_0)
 		1,
 		1
 	}
-	local var_11_2 = 1425
-	local var_11_3 = 0
-	local var_11_4 = 0.1
-	local var_11_5 = 0
-	local var_11_6 = 0
-	local var_11_7 = 9999
+	local var_12_2 = 0
+	local var_12_3 = 0.08
+	local var_12_4 = 0
+	local var_12_5 = 0
+	local var_12_6 = 9999
 
-	for iter_11_0 = 1, #arg_11_0.tasklist do
-		if not arg_11_0.nodeList[iter_11_0] then
-			local var_11_8 = arg_11_0[string.format("point%sGo_", iter_11_0)]
+	for iter_12_0 = 1, #arg_12_0.tasklist do
+		if not arg_12_0.nodeList[iter_12_0] then
+			local var_12_7 = arg_12_0[string.format("point%sGo_", iter_12_0)]
 
-			arg_11_0.nodeList[iter_11_0] = AccumulativeGachaPoint.New(var_11_8)
+			arg_12_0.nodeList[iter_12_0] = AccumulativeGachaPoint.New(var_12_7)
 		end
 
-		local var_11_9 = arg_11_0.tasklist[iter_11_0]
-		local var_11_10 = ActivityPointRewardCfg[var_11_9.id]
+		local var_12_8 = arg_12_0.tasklist[iter_12_0]
+		local var_12_9 = ActivityPointRewardCfg[var_12_8.id]
 
-		if var_11_10 then
-			var_11_3 = math.max(var_11_3, var_11_10.need)
+		if var_12_9 then
+			var_12_2 = math.max(var_12_2, var_12_9.need)
 
-			local var_11_11 = var_11_9.state
+			local var_12_10 = var_12_8.state
 
-			arg_11_0.drawIndex = math.max(var_11_11 == 2 and iter_11_0 or 0, arg_11_0.drawIndex)
+			arg_12_0.drawIndex = math.max(var_12_10 == 2 and iter_12_0 or 0, arg_12_0.drawIndex)
 
-			if ActivityAccumulativeData:GetNum() >= var_11_10.need then
-				var_11_4 = 0.12
-				var_11_5 = var_11_1[iter_11_0]
+			if ActivityAccumulativeData:GetNum() >= var_12_9.need then
+				var_12_3 = 0.12
+				var_12_4 = var_12_1[iter_12_0]
 
-				arg_11_0.nodeList[iter_11_0]:SetIsDraw(true)
+				arg_12_0.nodeList[iter_12_0]:SetIsDraw(true)
 
-				var_11_6 = math.max(var_11_6, var_11_10.need)
+				var_12_5 = math.max(var_12_5, var_12_9.need)
 			else
-				var_11_7 = math.min(var_11_7, var_11_10.need)
+				var_12_6 = math.min(var_12_6, var_12_9.need)
 
-				arg_11_0.nodeList[iter_11_0]:SetIsDraw(false)
+				arg_12_0.nodeList[iter_12_0]:SetIsDraw(false)
 			end
 		end
 	end
 
-	local var_11_12 = var_11_5 + (ActivityAccumulativeData:GetNum() - var_11_6) / (var_11_7 - var_11_6) * var_11_4
+	local var_12_11 = var_12_4 + (ActivityAccumulativeData:GetNum() - var_12_5) / (var_12_6 - var_12_5) * var_12_3
 
-	arg_11_0.sliderSlr_.value = var_11_12
+	arg_12_0.sliderSlr_.value = var_12_11
 end
 
 return var_0_0

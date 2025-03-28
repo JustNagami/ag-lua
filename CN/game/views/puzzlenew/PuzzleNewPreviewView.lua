@@ -28,7 +28,7 @@ function var_0_0.OnEnter(arg_7_0)
 
 	local var_7_0 = PuzzleNewCfg[arg_7_0.activityID_]
 
-	arg_7_0.img_.sprite = getSpriteWithoutAtlas(var_7_0.preview_album_id)
+	arg_7_0.img_.sprite = pureGetSpriteWithoutAtlas(var_7_0.preview_album_id)
 end
 
 return var_0_0

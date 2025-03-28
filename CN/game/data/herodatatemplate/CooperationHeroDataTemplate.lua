@@ -100,6 +100,7 @@ function var_0_0.Init(arg_2_0, arg_2_1)
 	var_2_7:InitData(arg_2_1.trust.relation)
 
 	arg_2_0.relation = var_2_7
+	arg_2_0.mainDamageType = arg_2_1.main_damage_type
 end
 
 function var_0_0.ModifyHero(arg_3_0, arg_3_1)

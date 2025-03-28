@@ -79,7 +79,6 @@ function var_0_1.ChangeTeam(arg_7_0, arg_7_1, arg_7_2)
 end
 
 function var_0_1.OnChangeTeamSuccess(arg_8_0)
-	arg_8_0.heroAvatarView_:RemoveTween()
 	arg_8_0:Back(1, {
 		isSorted = true
 	})

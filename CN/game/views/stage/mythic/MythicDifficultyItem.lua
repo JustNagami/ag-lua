@@ -39,7 +39,7 @@ function var_0_0.RefreshData(arg_7_0, arg_7_1)
 	local var_7_0 = MythicCfg.all[arg_7_0.index]
 	local var_7_1 = MythicCfg[var_7_0]
 
-	arg_7_0.m_bg.sprite = getSpriteWithoutAtlas("TextureConfig/Challenge_Mythic/" .. var_7_1.background)
+	arg_7_0.m_bg.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Challenge_Mythic/" .. var_7_1.background)
 	arg_7_0.unlock = MythicData:GetIsOpenDifficulty(var_7_0)
 
 	arg_7_0.lockController_:SetSelectedIndex(arg_7_0.unlock and 0 or 1)

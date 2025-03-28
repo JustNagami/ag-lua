@@ -107,7 +107,7 @@ function var_0_0.RefreshUI(arg_14_0, arg_14_1, arg_14_2)
 	arg_14_0.commonPortrait_:RenderHead(arg_14_1.icon)
 	arg_14_0.commonPortrait_:RenderFrame(arg_14_0.data_.icon_frame)
 
-	arg_14_0.bg_.sprite = getSpriteWithoutAtlas("TextureConfig/Friends/" .. arg_14_0.data_.bg .. "_s")
+	arg_14_0.bg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Friends/" .. arg_14_0.data_.bg .. "_s")
 
 	if arg_14_0.curType_ ~= arg_14_0.friendType_.friendsRequest and arg_14_0.curType_ ~= arg_14_0.friendType_.blackList then
 		local var_14_0 = arg_14_1.online_state or -1

@@ -5381,6 +5381,45 @@
 			0
 		}
 	},
+	[4051073] = {
+		monster_level = 80,
+		name = "巧构·麟钰",
+		drop_lib_id = 0,
+		map = "4051073",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "巧构·麟钰",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 4051073,
+		attribute_factor = {
+			1000,
+			1000,
+			6000
+		},
+		hero_list = {
+			{
+				1073,
+				107302
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
 	[4051074] = {
 		monster_level = 80,
 		name = "巡天·英招",
@@ -5601,6 +5640,45 @@
 			{
 				1084,
 				108407
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
+	[4051085] = {
+		monster_level = 80,
+		name = "绮望·诗蔻蒂",
+		drop_lib_id = 0,
+		map = "4051085",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "绮望·诗蔻蒂",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 4051085,
+		attribute_factor = {
+			1000,
+			1000,
+			10000
+		},
+		hero_list = {
+			{
+				1085,
+				108502
 			},
 			{
 				0,
@@ -6651,12 +6729,14 @@
 		4051070,
 		4051071,
 		4051072,
+		4051073,
 		4051074,
 		4051075,
 		4051076,
 		4051080,
 		4051081,
 		4051084,
+		4051085,
 		4051089,
 		4051093,
 		4051094,

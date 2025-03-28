@@ -9122,6 +9122,8 @@
 				SetActive(arg_242_1.allBtn_.gameObject, true)
 				arg_242_1.hideBtnsController_:SetSelectedIndex(0)
 				manager.video:Dispose()
+
+				arg_242_1.isInLoopVideo = false
 			end
 
 			local var_245_55 = 0.0333333333333333

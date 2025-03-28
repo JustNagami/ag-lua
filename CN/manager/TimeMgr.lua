@@ -815,18 +815,30 @@ function var_0_0.GetOnLineText(arg_60_0, arg_60_1)
 	end
 end
 
-function var_0_0.CalcTimeZone(arg_61_0)
-	local var_61_0 = os.time()
+function var_0_0.GetIsSameDate(arg_61_0, arg_61_1, arg_61_2)
+	local var_61_0 = arg_61_0:GetServerTime()
+	local var_61_1 = tonumber(os.date("!%m", var_61_0))
+	local var_61_2 = tonumber(os.date("!%d", var_61_0))
 
-	return os.difftime(var_61_0, os.time(os.date("!*t", var_61_0)))
+	if arg_61_1 == var_61_1 and var_61_2 == arg_61_2 then
+		return true
+	end
+
+	return false
 end
 
-function var_0_0.GetTimeZone(arg_62_0)
-	return arg_62_0.timeZero_
+function var_0_0.CalcTimeZone(arg_62_0)
+	local var_62_0 = os.time()
+
+	return os.difftime(var_62_0, os.time(os.date("!*t", var_62_0)))
 end
 
-function var_0_0.GetDeltaTimeZone(arg_63_0)
-	return arg_63_0.deltaTimeZero_
+function var_0_0.GetTimeZone(arg_63_0)
+	return arg_63_0.timeZero_
+end
+
+function var_0_0.GetDeltaTimeZone(arg_64_0)
+	return arg_64_0.deltaTimeZero_
 end
 
 return var_0_0

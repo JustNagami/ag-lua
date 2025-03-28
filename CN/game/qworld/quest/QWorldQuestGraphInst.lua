@@ -25,11 +25,13 @@ function var_0_0.UpdateGraph(arg_3_0)
 		arg_3_0:BindGraphEvent(QWorldQuestConst.QUEST_EVENT.ON_ACCOMPLISHED, "OnQuestAccomplished")
 	end
 
+	arg_3_0:BindGraphEvent(QWorldQuestConst.QUEST_EVENT.ON_PROG_UPDATE, "OnQuestProgUpdate")
 	arg_3_0:BindGraphEvent(QWorldQuestConst.QUEST_EVENT.ON_ENTER_ZONE, "OnEnterZone")
 	arg_3_0:BindGraphEvent(QWorldQuestConst.QUEST_EVENT.ON_EXIT_ZONE, "OnExitZone")
 	arg_3_0:BindGraphEvent(QWorldQuestConst.QUEST_EVENT.ON_MINIGAME_FINISH, "OnMiniGameFinish")
 	arg_3_0:BindGraphEvent(QWorldQuestConst.QUEST_EVENT.ON_MINIGAME_FAIL, "OnMiniGameFail")
 	arg_3_0:BindGraphEvent(QWorldQuestConst.QUEST_EVENT.ON_BACK_MAIN_HOME, "OnBackMainHome", 0)
+	arg_3_0:BindGraphEvent(QWorldQuestConst.QUEST_EVENT.ON_RECEIVE_EVENT, "OnReceiveEvent")
 
 	if arg_3_0.graph_.OnClickBubble then
 		arg_3_0.OnClickBubble = {}
@@ -96,7 +98,7 @@ function var_0_0.BindGraphEvent(arg_5_0, arg_5_1, arg_5_2, arg_5_3)
 end
 
 function var_0_0.GetTrackingEntityIdList(arg_7_0, arg_7_1, arg_7_2)
-	if SandplayTaskCfg[arg_7_0.questId_].hide_task == 1 then
+	if SandplayTaskCfg[arg_7_0.questId_].hide_task ~= 0 then
 		return
 	end
 
@@ -113,10 +115,45 @@ function var_0_0.GetTrackingEntityIdList(arg_7_0, arg_7_1, arg_7_2)
 	end
 end
 
-function var_0_0.Dispose(arg_8_0)
-	arg_8_0:UnbindEvents()
+function var_0_0.GetLocalVariable(arg_8_0, arg_8_1)
+	local var_8_0 = arg_8_0.localVarTable_
 
-	arg_8_0.events_ = nil
+	return var_8_0 and var_8_0[arg_8_1] or nil
+end
+
+function var_0_0.SetLocalVariable(arg_9_0, arg_9_1, arg_9_2)
+	local var_9_0 = arg_9_0.localVarTable_
+
+	if not var_9_0 then
+		var_9_0 = {}
+		arg_9_0.localVarTable_ = var_9_0
+	end
+
+	var_9_0[arg_9_1] = arg_9_2
+end
+
+function var_0_0.GetQuestLocalProgress(arg_10_0)
+	return arg_10_0:GetLocalVariable(QWorldQuestConst.GRAPH_PREDEFINE_VAR.QUEST_LOCAL_PROGRESS)
+end
+
+function var_0_0.IncreaseQuestLocalProgress(arg_11_0, arg_11_1)
+	local var_11_0 = (arg_11_0:GetLocalVariable(QWorldQuestConst.GRAPH_PREDEFINE_VAR.QUEST_LOCAL_PROGRESS) or 0) + arg_11_1
+
+	arg_11_0:SetLocalVariable(QWorldQuestConst.GRAPH_PREDEFINE_VAR.QUEST_LOCAL_PROGRESS, var_11_0)
+
+	local var_11_1 = SandplayTaskCfg[arg_11_0.questId_]
+
+	if var_11_0 >= var_11_1.need then
+		QWorldMgr:GetQWorldQuestMgr():QuestSetParam(arg_11_0.questId_, arg_11_0.questId_, var_11_0, nil)
+	end
+
+	QWorldMgr:GetQWorldQuestMgr():OnMainQuestUpdate(var_11_1.main_task_id)
+end
+
+function var_0_0.Dispose(arg_12_0)
+	arg_12_0:UnbindEvents()
+
+	arg_12_0.events_ = nil
 end
 
 return var_0_0

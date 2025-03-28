@@ -91,7 +91,7 @@ function var_0_0.SetData(arg_9_0, arg_9_1, arg_9_2)
 			arg_9_0.hero_id = ActivitySpringRedEnvelopeCfg[var_9_0].letter_people
 		end
 
-		arg_9_0.headIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_3_10/SandPlay_3_10/SandPlay_3_10_RedEnvelope/RedEnvelope_head_" .. arg_9_0.hero_id)
+		arg_9_0.headIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_3_10/SandPlay_3_10/SandPlay_3_10_RedEnvelope/RedEnvelope_head_" .. arg_9_0.hero_id)
 	end
 end
 
@@ -141,7 +141,7 @@ function var_0_0.RefreshView(arg_10_0, arg_10_1, arg_10_2)
 			arg_10_0:RefreshMemeIcon()
 		end
 
-		arg_10_0.headIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_3_10/SandPlay_3_10/SandPlay_3_10_RedEnvelope/RedEnvelope_head_" .. arg_10_0.hero_id)
+		arg_10_0.headIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_3_10/SandPlay_3_10/SandPlay_3_10_RedEnvelope/RedEnvelope_head_" .. arg_10_0.hero_id)
 	else
 		arg_10_0.flipCon_:SetSelectedIndex(1)
 		arg_10_0.starCon_:SetSelectedIndex(0)
@@ -205,7 +205,7 @@ function var_0_0.AddTimer(arg_15_0)
 		local var_16_0 = math.random(1, #arg_15_0.meme_list)
 		local var_16_1 = arg_15_0.meme_list[var_16_0]
 
-		arg_15_0.memeImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Chat/ChatSticker/" .. var_16_1)
+		arg_15_0.memeImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Chat/ChatSticker/" .. var_16_1)
 
 		arg_15_0:StopTimer()
 		arg_15_0:HideMeme()

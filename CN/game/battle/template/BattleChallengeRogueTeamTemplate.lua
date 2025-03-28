@@ -88,7 +88,7 @@ function var_0_0.GetStageAffix(arg_12_0)
 		table.insert(var_12_2, var_12_8[3])
 	end
 
-	local var_12_9, var_12_10 = ChallengeRogueTeamData:GetTeamBuffAffixList()
+	local var_12_9, var_12_10 = ChallengeRogueTeamData:GetTeamBuffAffixList(arg_12_0.roleDataInLua)
 
 	for iter_12_2, iter_12_3 in pairs(var_12_9) do
 		table.insert(var_12_0, iter_12_3)

@@ -35,7 +35,7 @@ function var_0_0.InitUI(arg_2_0)
 		manager.notify:CallUpdateFunc(ZUMA_TALENT_INFO, arg_2_0.talentID)
 	end)
 
-	arg_2_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_3_11/SandPlay_3_11/SandPlay_3_11_Zuma/" .. arg_2_0.talentCfg.icon)
+	arg_2_0.iconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_3_11/SandPlay_3_11/SandPlay_3_11_Zuma/" .. arg_2_0.talentCfg.icon)
 end
 
 function var_0_0.GetTalentID(arg_4_0)

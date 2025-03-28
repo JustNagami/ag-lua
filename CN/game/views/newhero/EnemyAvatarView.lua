@@ -113,7 +113,7 @@ function var_0_0.InitBackScene(arg_11_0)
 	local var_11_5 = GameDisplayCfg.collect_monster_background_pos.scale
 
 	arg_11_0.backGroundTrs_.localScale = Vector3(var_11_5[1], var_11_5[2], var_11_5[3])
-	arg_11_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas(SpritePathCfg.Bg.path .. var_11_4)
+	arg_11_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.Bg.path .. var_11_4)
 end
 
 function var_0_0.Finish(arg_12_0)

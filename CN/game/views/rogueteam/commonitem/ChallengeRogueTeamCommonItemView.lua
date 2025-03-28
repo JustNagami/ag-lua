@@ -67,7 +67,7 @@ function var_0_0.RefreshIcon(arg_8_0)
 	local var_8_0 = arg_8_0.info_.id
 	local var_8_1 = RogueTeamItemCfg[var_8_0]
 
-	arg_8_0.iconImage_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_8_0))
+	arg_8_0.iconImage_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_8_0))
 
 	if var_8_1.type == ChallengeRogueTeamConst.ITEM_TYPE.MECHANISM then
 		arg_8_0.typeController_:SetSelectedState("Mechanis")

@@ -33,7 +33,7 @@ function var_0_0.RefreshUI(arg_5_0)
 		arg_5_0.starController_:SetSelectedState(tostring(arg_5_0.equipStruct_.star))
 	end
 
-	arg_5_0.icon_.sprite = getSpriteWithoutAtlas(SpritePathCfg.EquipIcon_s.path .. ItemCfg[arg_5_0.equipId_].icon)
+	arg_5_0.icon_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.EquipIcon_s.path .. ItemCfg[arg_5_0.equipId_].icon)
 
 	SetActive(arg_5_0.btnGet_.gameObject, not arg_5_0.isHave_)
 	SetActive(arg_5_0.btnEquip_.gameObject, arg_5_0.isHave_)

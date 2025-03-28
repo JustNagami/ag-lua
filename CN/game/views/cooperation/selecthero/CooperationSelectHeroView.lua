@@ -2,10 +2,13 @@
 local var_0_1 = class("CooperationSelectHeroView", var_0_0)
 
 function var_0_1.InitCallback(arg_1_0)
+	var_0_1.super.InitCallback(arg_1_0)
+
 	arg_1_0.battleStartHandler_ = handler(arg_1_0, arg_1_0.BattleStart)
 end
 
 function var_0_1.AddEventListener(arg_2_0)
+	var_0_1.super.AddEventListener(arg_2_0)
 	arg_2_0:RegistEventListener(START_COOPERATION_BATTLE, arg_2_0.battleStartHandler_)
 end
 

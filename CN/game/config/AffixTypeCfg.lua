@@ -6369,6 +6369,57 @@
 			50
 		}
 	},
+	[447] = {
+		name = "复合有利",
+		affix_buff_id = 447,
+		max_level = 20,
+		extra_description = "AFFIX_447",
+		id = 447,
+		description = {
+			700000447
+		},
+		buffid = {},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[448] = {
+		name = "复合有利",
+		affix_buff_id = 448,
+		max_level = 20,
+		extra_description = "AFFIX_448",
+		id = 448,
+		description = {
+			700000448
+		},
+		buffid = {},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
+	[449] = {
+		name = "复合有利",
+		affix_buff_id = 449,
+		max_level = 20,
+		extra_description = "AFFIX_449",
+		id = 449,
+		description = {
+			700000449
+		},
+		buffid = {},
+		base = {
+			50
+		},
+		factor = {
+			50
+		}
+	},
 	[501] = {
 		name = "必胜御守",
 		affix_buff_id = 501,
@@ -12840,6 +12891,108 @@
 			0
 		}
 	},
+	[9355] = {
+		name = "普通弹",
+		affix_buff_id = 9355,
+		max_level = 1,
+		extra_description = "AFFIX_9355",
+		id = 9355,
+		description = {
+			700009355
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9356] = {
+		name = "激光弹",
+		affix_buff_id = 9356,
+		max_level = 1,
+		extra_description = "AFFIX_9356",
+		id = 9356,
+		description = {
+			700009356
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9357] = {
+		name = "追踪弹",
+		affix_buff_id = 9357,
+		max_level = 1,
+		extra_description = "AFFIX_9357",
+		id = 9357,
+		description = {
+			700009357
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9358] = {
+		name = "加速冲撞",
+		affix_buff_id = 9358,
+		max_level = 1,
+		extra_description = "AFFIX_9358",
+		id = 9358,
+		description = {
+			700009358
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9359] = {
+		name = "蓄力激光",
+		affix_buff_id = 9359,
+		max_level = 1,
+		extra_description = "AFFIX_9359",
+		id = 9359,
+		description = {
+			700009359
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9360] = {
+		name = "护盾反伤",
+		affix_buff_id = 9360,
+		max_level = 1,
+		extra_description = "AFFIX_9360",
+		id = 9360,
+		description = {
+			700009360
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
 	[9481] = {
 		name = "联机增幅角色生命",
 		affix_buff_id = 9481,
@@ -15028,6 +15181,23 @@
 		id = 9642,
 		description = {
 			700009642
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9651] = {
+		name = "控制强化",
+		affix_buff_id = 9651,
+		max_level = 1,
+		extra_description = "AFFIX_9651",
+		id = 9651,
+		description = {
+			700009651
 		},
 		buffid = {},
 		base = {
@@ -21039,6 +21209,91 @@
 			0
 		}
 	},
+	[70231] = {
+		name = "勇者小羊",
+		affix_buff_id = 70231,
+		max_level = 1,
+		extra_description = "AFFIX_70231",
+		id = 70231,
+		description = {
+			700070231
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70232] = {
+		name = "超级兔机器人",
+		affix_buff_id = 70232,
+		max_level = 1,
+		extra_description = "AFFIX_70232",
+		id = 70232,
+		description = {
+			700070232
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70233] = {
+		name = "断掉的丝线",
+		affix_buff_id = 70233,
+		max_level = 1,
+		extra_description = "AFFIX_70233",
+		id = 70233,
+		description = {
+			700070233
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70234] = {
+		name = "温柔撞击",
+		affix_buff_id = 70234,
+		max_level = 1,
+		extra_description = "AFFIX_70234",
+		id = 70234,
+		description = {
+			700070234
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70235] = {
+		name = "《属于我的冒险》",
+		affix_buff_id = 70235,
+		max_level = 1,
+		extra_description = "AFFIX_70235",
+		id = 70235,
+		description = {
+			700070235
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
 	[70501] = {
 		name = "老座钟",
 		affix_buff_id = 70501,
@@ -23731,6 +23986,23 @@
 			0,
 			0,
 			0,
+			0
+		}
+	},
+	[71009] = {
+		name = "随机属性说明",
+		affix_buff_id = 71009,
+		max_level = 1,
+		extra_description = "AFFIX_71009",
+		id = 71009,
+		description = {
+			700071009
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
 			0
 		}
 	},
@@ -27465,6 +27737,9 @@
 		444,
 		445,
 		446,
+		447,
+		448,
+		449,
 		501,
 		502,
 		503,
@@ -27816,6 +28091,12 @@
 		9348,
 		9349,
 		9354,
+		9355,
+		9356,
+		9357,
+		9358,
+		9359,
+		9360,
 		9481,
 		9482,
 		9483,
@@ -27944,6 +28225,7 @@
 		9640,
 		9641,
 		9642,
+		9651,
 		9681,
 		9682,
 		9683,
@@ -28287,6 +28569,11 @@
 		70228,
 		70229,
 		70230,
+		70231,
+		70232,
+		70233,
+		70234,
+		70235,
 		70501,
 		70502,
 		70503,
@@ -28418,6 +28705,7 @@
 		71006,
 		71007,
 		71008,
+		71009,
 		71011,
 		71012,
 		71013,

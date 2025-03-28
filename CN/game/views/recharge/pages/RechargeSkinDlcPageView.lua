@@ -75,6 +75,11 @@ function var_0_1.SwitchPage(arg_12_0, arg_12_1)
 end
 
 function var_0_1.RefreshList(arg_13_0, arg_13_1)
+	arg_13_0.loopScrollView_:NavigateIndex(arg_13_0.selectIndex_ or 1)
+	LayoutRebuilder.ForceRebuildLayoutImmediate(arg_13_0.loopScrollView_.rectGrid_)
+
+	arg_13_0.loopScrollView_.scrollView_.horizontalNormalizedPosition = 0
+
 	if arg_13_0.timer_ == nil then
 		arg_13_0.timer_ = FrameTimer.New(function()
 			for iter_14_0, iter_14_1 in pairs(arg_13_0.item1Pool) do
@@ -253,17 +258,20 @@ function var_0_1.LsAddItem(arg_28_0, arg_28_1, arg_28_2)
 		end)
 	end
 
+	var_28_0.itemView:SetCallBack(function(arg_31_0)
+		arg_28_0.selectIndex_ = arg_31_0
+	end)
 	var_28_0.itemView:SetData(arg_28_1, arg_28_2)
 
 	return var_28_0
 end
 
-function var_0_1.LsGetItemData(arg_31_0)
-	return arg_31_0.skinDataList_
+function var_0_1.LsGetItemData(arg_32_0)
+	return arg_32_0.skinDataList_
 end
 
-function var_0_1.LsUpdateItem(arg_32_0, arg_32_1, arg_32_2, arg_32_3)
-	arg_32_1.itemView:SetData(arg_32_2, arg_32_3)
+function var_0_1.LsUpdateItem(arg_33_0, arg_33_1, arg_33_2, arg_33_3)
+	arg_33_1.itemView:SetData(arg_33_2, arg_33_3)
 end
 
 return var_0_1

@@ -111,6 +111,10 @@ function var_0_0.onRenderMultiResultContent(arg_14_0)
 			if type(iter_14_1) == "table" and #iter_14_1 > 0 then
 				local var_14_0, var_14_1, var_14_2 = ActivityMultiRewardData:GetLastBattleMultiData()
 
+				if RegressionDataNew:GetMultipleUseTimes() > 0 then
+					var_14_0, var_14_1, var_14_2 = RegressionDataNew:GetMultipleValue()
+				end
+
 				arg_14_0.multiCountText_.text = var_14_0 .. "/" .. var_14_1
 				arg_14_0.multiRatioText_.text = var_14_2 / 100
 
@@ -375,10 +379,22 @@ function var_0_0.OnTop(arg_33_0)
 	arg_33_0.lastAddBarList_ = manager.windowBar:GetLastAddBarList()
 	arg_33_0.lastCanClickBarList_ = manager.windowBar:GetLastCanClickBarList()
 
-	manager.windowBar:SwitchBar({
-		CurrencyConst.CURRENCY_TYPE_VITALITY,
-		CurrencyConst.CURRENCY_TYPE_DIAMOND
-	})
+	if arg_33_0.stageType == BattleConst.STAGE_TYPE_NEW.ACTIVITY_PT_SCROLL then
+		local var_33_0 = arg_33_0.stageData:GetDest()
+		local var_33_1 = ActivityPtRouletteStageCfg[var_33_0].cost[1]
+
+		manager.windowBar:SwitchBar({
+			CurrencyConst.CURRENCY_TYPE_VITALITY,
+			var_33_1,
+			CurrencyConst.CURRENCY_TYPE_DIAMOND
+		})
+	else
+		manager.windowBar:SwitchBar({
+			CurrencyConst.CURRENCY_TYPE_VITALITY,
+			CurrencyConst.CURRENCY_TYPE_DIAMOND
+		})
+	end
+
 	manager.windowBar:SetBarCanAdd(CurrencyConst.CURRENCY_TYPE_DIAMOND, true)
 	manager.windowBar:SetAsLastSibling()
 	SetActive(arg_33_0.gameObject_, true)
@@ -442,6 +458,11 @@ function var_0_0.OnceMoreFunc(arg_40_0)
 	local var_40_4 = arg_40_0.stageData:GetMultiple()
 	local var_40_5 = CurrencyData:GetCurrencyNum(CurrencyConst.CURRENCY_TYPE_VITALITY)
 	local var_40_6 = CurrencyConst.CURRENCY_TYPE_VITALITY
+
+	if var_40_2 == BattleConst.STAGE_TYPE_NEW.ACTIVITY_PT_SCROLL then
+		var_40_5 = CurrencyData:GetCurrencyNum(ActivityPtRouletteStageCfg[var_40_0].cost[1])
+		var_40_6 = ActivityPtRouletteStageCfg[var_40_0].cost[1]
+	end
 
 	if var_40_5 < var_40_3 * var_40_4 then
 		if var_40_6 ~= CurrencyConst.CURRENCY_TYPE_VITALITY then

@@ -76,7 +76,7 @@ function var_0_0.SetData(arg_2_0, arg_2_1, arg_2_2)
 			end
 		end
 
-		arg_2_0.portraitImage_.sprite = getSpriteWithoutAtlas(string.format("TextureConfig/MardukUI/boss/icon/%s", var_2_11))
+		arg_2_0.portraitImage_.sprite = pureGetSpriteWithoutAtlas(string.format("TextureConfig/MardukUI/boss/icon/%s", var_2_11))
 	else
 		arg_2_0.bossController_:SetSelectedState("false")
 	end

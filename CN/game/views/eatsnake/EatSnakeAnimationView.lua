@@ -42,7 +42,7 @@ function var_0_0.UpdateData(arg_8_0)
 end
 
 function var_0_0.UpdateView(arg_9_0)
-	arg_9_0.image_.sprite = getSpriteWithoutAtlas(arg_9_0.cfg.image)
+	arg_9_0.image_.sprite = pureGetSpriteWithoutAtlas(arg_9_0.cfg.image)
 	arg_9_0.nameTxt_.text = arg_9_0.cfg.name
 	arg_9_0.time = TimeTools.StartAfterSeconds(5, function()
 		arg_9_0.Back()

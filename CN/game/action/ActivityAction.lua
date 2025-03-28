@@ -141,6 +141,10 @@ function var_0_0.DealWithActivityData(arg_5_0)
 		BloodCardAction.InitRedPoint(arg_5_0.id)
 	elseif var_5_0 == ActivityTemplateConst.ACTIVITY_3_10_SANDPLAY_MAIN then
 		QWorldAction.InitRedPoint(arg_5_0.id)
+	elseif var_5_0 == ActivityTemplateConst.SKIN_DISCOUNT_GIFT then
+		SkinDiscountGiftAction.InitRedPoint(arg_5_0.id)
+	elseif var_5_0 == ActivityTemplateConst.ACTIVITY_SKULD_MAIN then
+		SkuldSystemAction.InitRedPoint()
 	end
 end
 

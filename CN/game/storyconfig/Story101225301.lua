@@ -5980,6 +5980,8 @@
 			if arg_185_0 == 2 then
 				arg_183_0:Play122531046(arg_183_1)
 			end
+
+			arg_183_1:RecordChoiceLog(122531045, 122531046, 122531046)
 		end
 
 		function arg_183_1.onSingleLineUpdate_(arg_186_0)
@@ -6580,6 +6582,8 @@
 			if arg_205_0 == 1 then
 				arg_203_0:Play122531051(arg_203_1)
 			end
+
+			arg_203_1:RecordChoiceLog(122531050, 122531051)
 		end
 
 		function arg_203_1.onSingleLineUpdate_(arg_206_0)

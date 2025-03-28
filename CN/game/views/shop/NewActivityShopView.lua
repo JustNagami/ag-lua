@@ -146,7 +146,7 @@ function var_0_0.ClickTitle(arg_16_0, arg_16_1)
 		iter_16_1.controller:SetSelectedState(iter_16_0 == arg_16_1 and "false" or "true")
 	end
 
-	arg_16_0.roleBg_.sprite = getSpriteWithoutAtlas(var_16_1.shop_background)
+	arg_16_0.roleBg_.sprite = pureGetSpriteWithoutAtlas(var_16_1.shop_background)
 
 	arg_16_0:UpdateBarByShopId(var_16_0)
 

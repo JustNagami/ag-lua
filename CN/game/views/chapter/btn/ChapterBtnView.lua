@@ -22,6 +22,10 @@ function var_0_0.OnEnter(arg_2_0)
 		arg_2_0.isLock_ = JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.BATTLE_EQUIP)
 	elseif arg_2_0.toggle_ == BattleConst.TOGGLE.CHALLENGE then
 		arg_2_0.isLock_ = JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.BATTLE_ASTROLABE)
+	elseif arg_2_0.toggle_ == BattleConst.TOGGLE.RESIDENT_ACT then
+		local var_2_0 = #ChapterResidentTools.GetResidentChapterOpenList() > 0
+
+		arg_2_0.isLock_ = JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.RESIDENT_ACT) or not var_2_0
 	end
 
 	arg_2_0:RefreshLock()
@@ -52,6 +56,12 @@ function var_0_0.AddListeners(arg_5_0)
 			var_6_1 = ViewConst.SYSTEM_ID.BATTLE_ASTROLABE
 		elseif var_6_0 == BattleConst.TOGGLE.EQUIP then
 			var_6_1 = ViewConst.SYSTEM_ID.BATTLE_EQUIP
+		elseif var_6_0 == BattleConst.TOGGLE.RESIDENT_ACT then
+			var_6_1 = ViewConst.SYSTEM_ID.RESIDENT_ACT
+
+			if not (#ChapterResidentTools.GetResidentChapterOpenList() > 0) then
+				return
+			end
 		end
 
 		JumpTools.GoToSystem("/chapterMap", {
@@ -82,6 +92,8 @@ function var_0_0.RefreshRedPoint(arg_8_0)
 		manager.redPoint:bindUIandKey(arg_8_0.transform_, RedPointConst.COMBAT_EQUIP)
 	elseif var_8_0 == BattleConst.TOGGLE.RESOURCE then
 		manager.redPoint:bindUIandKey(arg_8_0.transform_, RedPointConst.RESOURSE_STAGE)
+	elseif var_8_0 == BattleConst.TOGGLE.RESIDENT_ACT then
+		manager.redPoint:bindUIandKey(arg_8_0.transform_, RedPointConst.RESIDENT_ACT)
 	end
 end
 

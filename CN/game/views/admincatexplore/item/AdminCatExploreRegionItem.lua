@@ -124,7 +124,7 @@ function var_0_0.UpdateView(arg_8_0)
 	if arg_8_0.regionData then
 		local var_8_2 = ExploreMeowCfg[arg_8_0.regionData.adminCatID]
 
-		arg_8_0.adminCatImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Managecat_s/" .. var_8_2.meow_icon)
+		arg_8_0.adminCatImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Managecat_s/" .. var_8_2.meow_icon)
 	end
 end
 

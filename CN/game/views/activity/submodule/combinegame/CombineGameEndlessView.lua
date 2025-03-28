@@ -136,8 +136,8 @@ function var_0_0.UpdateView(arg_15_0)
 
 	arg_15_0.scoreController:SetSelectedState(var_15_2 ~= nil and "true" or "false")
 
-	arg_15_0.hero1Image_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/" .. var_15_0.icon)
-	arg_15_0.hero2Image_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/" .. var_15_1.icon)
+	arg_15_0.hero1Image_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/" .. var_15_0.icon)
+	arg_15_0.hero2Image_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/" .. var_15_1.icon)
 	arg_15_0.maxScoreTxt_.text = var_15_3
 	arg_15_0.titleTxt_.text = GetTips("ACTIVITY_COMBINE_GAME_MODE_NAME_3")
 	arg_15_0.titleDescTxt_.text = GetTips("ACTIVITY_COMBINE_GAME_MODE_CONTENT_3")
@@ -173,7 +173,7 @@ function var_0_0.UpdateFactorAndScoreView(arg_16_0)
 			if var_16_0 <= 3 then
 				SetActive(arg_16_0["upGo" .. var_16_0 .. "_"], true)
 
-				arg_16_0["upImg" .. var_16_0 .. "_"].sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_16_5.icon)
+				arg_16_0["upImg" .. var_16_0 .. "_"].sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_16_5.icon)
 				var_16_0 = var_16_0 + 1
 			else
 				var_16_2 = var_16_2 + 1
@@ -186,7 +186,7 @@ function var_0_0.UpdateFactorAndScoreView(arg_16_0)
 			if var_16_1 <= 3 then
 				SetActive(arg_16_0["downGo" .. var_16_1 .. "_"], true)
 
-				arg_16_0["downImg" .. var_16_1 .. "_"].sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_16_5.icon)
+				arg_16_0["downImg" .. var_16_1 .. "_"].sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_16_5.icon)
 				var_16_1 = var_16_1 + 1
 			else
 				var_16_3 = var_16_3 + 1

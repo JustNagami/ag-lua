@@ -60,7 +60,7 @@ function var_0_0.RefreshUI(arg_10_0)
 	local var_10_1 = ActivityMusicCfg[var_10_0]
 
 	arg_10_0.m_name.text = GetI18NText(var_10_1.name)
-	arg_10_0.m_bg.sprite = getSpriteWithoutAtlas("TextureConfig/VolumeIIIDownUI/" .. var_10_1.icon)
+	arg_10_0.m_bg.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VolumeIIIDownUI/" .. var_10_1.icon)
 
 	if var_10_1.difficult == 2 then
 		arg_10_0.difficultController_:SetSelectedIndex(1)

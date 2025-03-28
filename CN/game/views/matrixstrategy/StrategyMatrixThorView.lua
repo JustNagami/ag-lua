@@ -183,9 +183,9 @@ function var_0_0.Refresh(arg_23_0)
 		}
 
 		if var_23_0 then
-			arg_23_0.m_bg.sprite = getSpriteWithoutAtlas("TextureConfig/EmptyDream/" .. var_23_4[var_23_2.tier])
+			arg_23_0.m_bg.sprite = pureGetSpriteWithoutAtlas("TextureConfig/EmptyDream/" .. var_23_4[var_23_2.tier])
 		else
-			arg_23_0.m_bg.sprite = getSpriteWithoutAtlas("TextureConfig/EmptyDream/" .. var_23_3[var_23_2.tier])
+			arg_23_0.m_bg.sprite = pureGetSpriteWithoutAtlas("TextureConfig/EmptyDream/" .. var_23_3[var_23_2.tier])
 		end
 	else
 		arg_23_0.m_title.text = ""

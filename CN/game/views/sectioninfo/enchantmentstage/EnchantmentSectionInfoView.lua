@@ -68,7 +68,7 @@ function var_0_0.RefreshStageInfo(arg_11_0)
 	local var_11_0 = BattleEnchantmentStageCfg[arg_11_0.stageID_]
 
 	arg_11_0.sectionName_.text = GetI18NText(var_11_0.name)
-	arg_11_0.sectionImage_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_11_0.background_1))
+	arg_11_0.sectionImage_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_11_0.background_1))
 end
 
 function var_0_0.RefreshBattleAffix(arg_12_0)

@@ -98,7 +98,7 @@ end
 function var_0_0.RefreshBg(arg_14_0)
 	local var_14_0 = ChapterClientCfg[arg_14_0.chapterClientID_]
 
-	arg_14_0.chapterPaint_.sprite = getSpriteWithoutAtlas("TextureConfig/WarChess_Stage/" .. var_14_0.chapter_paint)
+	arg_14_0.chapterPaint_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/WarChess_Stage/" .. var_14_0.chapter_paint)
 end
 
 function var_0_0.IsLock(arg_15_0)

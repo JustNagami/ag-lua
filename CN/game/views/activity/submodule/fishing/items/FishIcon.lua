@@ -57,7 +57,7 @@ function var_0_0.UpdateView(arg_10_0)
 		arg_10_0:UpdateHaveBg()
 	end
 
-	arg_10_0.icon_.sprite = getSpriteWithoutAtlas(string.format("TextureConfig/Fishing/RareFishIcon/%d", arg_10_0.id_))
+	arg_10_0.icon_.sprite = pureGetSpriteWithoutAtlas(string.format("TextureConfig/Fishing/RareFishIcon/%d", arg_10_0.id_))
 
 	if arg_10_0.num_ == -1 then
 		arg_10_0.showNumController_:SetSelectedState("false")

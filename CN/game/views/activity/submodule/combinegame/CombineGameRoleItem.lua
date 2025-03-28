@@ -33,10 +33,10 @@ function var_0_0.UpdateView(arg_5_0)
 		local var_5_1 = ActivityCombineSkillCfg[var_5_0.effect[1]]
 
 		arg_5_0.descTxt_.text = GetI18NText(var_5_1.description)
-		arg_5_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_5_1.icon)
+		arg_5_0.iconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_5_1.icon)
 	else
 		arg_5_0.descTxt_.text = GetI18NText(var_5_0.description)
-		arg_5_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_5_0.icon)
+		arg_5_0.iconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_5_0.icon)
 	end
 end
 

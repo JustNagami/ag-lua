@@ -19,7 +19,7 @@ function var_0_0.InitSetting(arg_3_0)
 	if var_3_3 then
 		var_0_2 = true
 		var_3_1 = 5
-		var_3_2 = PictureQualitySettingPcCfg[var_3_1]
+		var_3_2 = PictureQualitySettingCfg[var_3_1]
 	end
 
 	local var_3_4 = AreaDifferenceCfg[GameToSDK.CURRENT_SERVER]
@@ -44,12 +44,14 @@ function var_0_0.InitSetting(arg_3_0)
 	var_0_1 = {
 		pic = {
 			picOptionId = var_3_0.picOptionId or var_3_1,
-			frame = var_3_0.frame or var_3_2.frame,
+			resolution = var_3_0.resolution or var_3_2.resolution,
 			teammate_effect = var_3_0.teammate_effect or var_3_2.teammate_effect,
-			user_effect = var_3_0.user_effect or var_3_2.user_effect or 3,
+			frame = var_3_0.frame or var_3_2.frame,
 			anti_aliasing = var_3_0.anti_aliasing or var_3_2.anti_aliasing,
 			reflection_effect = var_3_0.reflection_effect or var_3_2.reflection_effect,
-			resolution = var_3_0.resolution or var_3_2.resolution
+			user_effect = var_3_0.user_effect or var_3_2.user_effect or 3,
+			depth_of_field_enable = var_3_0.depth_of_field_enable or 0,
+			super_resolution_enable = var_3_0.super_resolution_enable or 0
 		},
 		sound = {
 			music = var_3_0.music or 50,
@@ -76,10 +78,11 @@ function var_0_0.InitSetting(arg_3_0)
 			cus_full_play_controlled_type = var_3_0.cus_full_play_controlled_type or 0,
 			hide_main_voice_subtitle = var_3_0.hide_main_voice_subtitle or 1,
 			show_music_name = var_3_0.show_music_name or 1,
-			music_time = var_3_0.music_time or 3
+			music_time = var_3_0.music_time or 3,
+			home_scene_dlc_btn = var_3_0.home_scene_dlc_btn or 1
 		},
 		battleUI = {
-			battle_ui_cur_type = var_3_0.battle_ui_cur_type or (GameToSDK.PLATFORM_ID == 0 or GameToSDK.PLATFORM_ID == 1) and "" or "DKVTdGlja8pCYAAAykJPMzPKPszMzdkgU2NyZWVuQWRqdXN0Q29udGFpbmVyL1BsYXllckluZm/KAAAAAMpCpAAAyj9MzM3ZMVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL0FiaWxpdEJ1dHRvbjDKwrhmWMrDTmZoyj8ZmZrZMVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL0FiaWxpdEJ1dHRvbjHKQLZnAMrDTpmbyj8ZmZrZMVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL0FiaWxpdEJ1dHRvbjLKQs3MzcrDTpmayj8ZmZrZKVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL01lbGVlysOQgADKwtgAAMo/JmZm2SlTY3JlZW5BZGp1c3RDb250YWluZXIvQmF0dGxlQnV0dG9ucy9Bdm9pZMpDUUzNysNN5mjKPxmZmtktU2NyZWVuQWRqdXN0Q29udGFpbmVyL0JhdHRsZUJ1dHRvbnMvUVRFQnV0dG9uykNSGZrKwspmZso/GZma2S5TY3JlZW5BZGp1c3RDb250YWluZXIvQmF0dGxlQnV0dG9ucy9NYW51YWxsb2NrysMwMzPKw1/mZso/AAAA2SpTY3JlZW5BZGp1c3RDb250YWluZXIvVGVhbVBhbmVsL1JvbGUxUGFuZWzKQhLMzcpCmMzQyj8ZmZrZKlNjcmVlbkFkanVzdENvbnRhaW5lci9UZWFtUGFuZWwvUm9sZTJQYW5lbMpCEszAysIEAADKPxmZmtkvU2NyZWVuQWRqdXN0Q29udGFpbmVyL1JpZ2h0VG9wQnV0dG9ucy9idG5fcGF1c2XKwrQzM8rCXHtuyj+AAAA=",
+			battle_ui_cur_type = var_3_0.battle_ui_cur_type or (GameToSDK.PLATFORM_ID == 0 or GameToSDK.PLATFORM_ID == 1 or GameToSDK.PLATFORM_ID == 4) and "" or "DKVTdGlja8rEYgAAysP0GZrKPszMzdkgU2NyZWVuQWRqdXN0Q29udGFpbmVyL1BsYXllckluZm/KAAAAAMrD5QAAyj9MzM3ZMVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL0FiaWxpdEJ1dHRvbjDKw6pmZ8pCohmYyj7MzM3ZMVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL0FiaWxpdEJ1dHRvbjHKw4QAAMpCohmYyj7MzM3ZMVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL0FiaWxpdEJ1dHRvbjLKwztMzcpCohmYyj7MzM3ZKVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL01lbGVlysQBmZrKQxAMzMo/AAAA2SlTY3JlZW5BZGp1c3RDb250YWluZXIvQmF0dGxlQnV0dG9ucy9Bdm9pZMrCzzM0ykKiGZjKPszMzdktU2NyZWVuQWRqdXN0Q29udGFpbmVyL0JhdHRsZUJ1dHRvbnMvUVRFQnV0dG9uysLPMzTKQyhZmco/AAAA2S5TY3JlZW5BZGp1c3RDb250YWluZXIvQmF0dGxlQnV0dG9ucy9NYW51YWxsb2NrysPRwADKQoxMzMo+mZma2SpTY3JlZW5BZGp1c3RDb250YWluZXIvVGVhbVBhbmVsL1JvbGUxUGFuZWzKwschRsrCnmZwyj8AAADZKlNjcmVlbkFkanVzdENvbnRhaW5lci9UZWFtUGFuZWwvUm9sZTJQYW5lbMrCxyFAysMtmaDKPwAAANkvU2NyZWVuQWRqdXN0Q29udGFpbmVyL1JpZ2h0VG9wQnV0dG9ucy9idG5fcGF1c2XKwrQzM8rCXHtuyj+AAAA=",
 			battle_ui_cur_alpha_value = var_3_0.battle_ui_cur_alpha_value or 1,
 			battle_ui_cur_rotate_speed = var_3_0.battle_ui_cur_rotate_speed or 0.5,
 			battle_ui_type_0 = var_3_0.battle_ui_type_0 or "",
@@ -122,24 +125,28 @@ function var_0_0.InitSetting(arg_3_0)
 			home_scene_scene_bgm = var_3_0.home_scene_scene_bgm or 1
 		}
 	}
-	var_0_1.pic = {
-		hdr = 1,
-		reflection_effect = 1,
-		picOptionId = var_3_0.picOptionId or var_3_1,
-		user_effect = var_3_0.user_effect or var_3_2.user_effect or 3,
-		teammate_effect = var_3_0.teammate_effect or var_3_2.teammate_effect or 3,
-		frame = var_3_0.frame or var_3_2.frame or 0,
-		shadow = var_3_0.shadow or var_3_2.shadow or 3,
-		post_process = var_3_0.post_process or var_3_2.post_process or 3,
-		anti_aliasing = var_3_0.anti_aliasing or var_3_2.anti_aliasing or 3,
-		vertical_sync = var_3_0.vertical_sync or var_3_2.vertical_sync or 1,
-		window = var_3_0.window or SettingTools.FullScreenTypeToNum(Screen.fullScreenMode),
-		pc_resolution = {
-			Screen.width,
-			Screen.height
-		},
-		render_scale = var_3_0.render_scale or 1
-	}
+
+	if GameToSDK.IsPCPlatform() then
+		var_0_1.pic = {
+			hdr = 1,
+			reflection_effect = 1,
+			picOptionId = var_3_0.picOptionId or var_3_1,
+			user_effect = var_3_0.user_effect or var_3_2.user_effect or 3,
+			teammate_effect = var_3_0.teammate_effect or var_3_2.teammate_effect or 3,
+			frame = var_3_0.frame or var_3_2.frame or 0,
+			shadow = var_3_0.shadow or var_3_2.shadow or 3,
+			post_process = var_3_0.post_process or var_3_2.post_process or 3,
+			anti_aliasing = var_3_0.anti_aliasing or var_3_2.anti_aliasing or 3,
+			vertical_sync = var_3_0.vertical_sync or var_3_2.vertical_sync or 1,
+			window = var_3_0.window or SettingTools.FullScreenTypeToNum(Screen.fullScreenMode),
+			pc_resolution = {
+				Screen.width,
+				Screen.height
+			},
+			render_scale = var_3_0.render_scale or var_3_2.render_scale and var_3_2.render_scale / 100 or 1,
+			depth_of_field_enable = var_3_0.depth_of_field_enable or 0
+		}
+	end
 
 	if var_3_3 then
 		arg_3_0:SaveData("pic", var_0_1.pic)
@@ -165,6 +172,7 @@ function var_0_0.InitSetting(arg_3_0)
 		arg_3_0:SaveData("battle_ui_rotate_speed_2", 0.5)
 		arg_3_0:SaveData("battle_ui_rotate_speed_3", 0.5)
 		arg_3_0:SaveData("text_language", var_3_5)
+		arg_3_0:SaveData("Hide_Dlc_btn", 0)
 	end
 
 	if var_0_1.sound and var_0_1.sound.voice_language then
@@ -185,18 +193,32 @@ end
 
 function var_0_0.ModifyPicSetting(arg_4_0, arg_4_1, arg_4_2)
 	if arg_4_1 == "picOptionId" and arg_4_2 ~= SettingConst.GRAPHIC_CUSTOM_ID or arg_4_1 == "allData" then
-		local var_4_0 = arg_4_1 == "picOptionId" and PictureQualitySettingPcCfg[arg_4_2] or arg_4_2
+		if GameToSDK.IsPCPlatform() then
+			local var_4_0 = arg_4_1 == "picOptionId" and PictureQualitySettingPcCfg[arg_4_2] or arg_4_2
 
-		var_0_1.pic.picOptionId = var_4_0.picOptionId or var_4_0.id
-		var_0_1.pic.user_effect = var_4_0.user_effect
-		var_0_1.pic.teammate_effect = var_4_0.teammate_effect
-		var_0_1.pic.frame = var_4_0.frame
-		var_0_1.pic.shadow = var_4_0.shadow
-		var_0_1.pic.post_process = var_4_0.post_process
-		var_0_1.pic.anti_aliasing = var_4_0.anti_aliasing
-		var_0_1.pic.vertical_sync = var_4_0.vertical_sync
-		var_0_1.pic.hdr = 1
-		var_0_1.pic.reflection_effect = 1
+			var_0_1.pic.picOptionId = var_4_0.picOptionId or var_4_0.id
+			var_0_1.pic.anti_aliasing = var_4_0.anti_aliasing
+			var_0_1.pic.frame = var_4_0.frame
+			var_0_1.pic.post_process = var_4_0.post_process
+			var_0_1.pic.shadow = var_4_0.shadow
+			var_0_1.pic.vertical_sync = var_4_0.vertical_sync
+			var_0_1.pic.render_scale = var_4_0.super_resolution_setting / 100
+			var_0_1.pic.teammate_effect = var_4_0.teammate_effect
+			var_0_1.pic.user_effect = var_4_0.user_effect
+			var_0_1.pic.hdr = var_4_0.hdr
+			var_0_1.pic.depth_of_field_enable = var_4_0.depth_of_field_enable
+		else
+			local var_4_1 = arg_4_1 == "picOptionId" and PictureQualitySettingCfg[arg_4_2] or arg_4_2
+
+			var_0_1.pic.picOptionId = var_4_1.picOptionId or var_4_1.id
+			var_0_1.pic.resolution = var_4_1.resolution
+			var_0_1.pic.frame = var_4_1.frame
+			var_0_1.pic.anti_aliasing = var_4_1.anti_aliasing
+			var_0_1.pic.reflection_effect = var_4_1.reflection_effect
+			var_0_1.pic.teammate_effect = var_4_1.teammate_effect
+			var_0_1.pic.user_effect = var_4_1.user_effect
+			var_0_1.pic.super_resolution_enable = var_4_1.super_resolution_enable
+		end
 
 		arg_4_0:SaveData("pic", var_0_1.pic)
 	else
@@ -286,19 +308,29 @@ end
 
 function var_0_0.SaveData(arg_11_0, arg_11_1, arg_11_2)
 	if arg_11_1 == "pic" then
-		GameLocalData:SaveToCommonModule("userSetting", "picOptionId", arg_11_2.picOptionId)
-		GameLocalData:SaveToCommonModule("userSetting", "user_effect", arg_11_2.user_effect)
-		GameLocalData:SaveToCommonModule("userSetting", "teammate_effect", arg_11_2.teammate_effect)
-		GameLocalData:SaveToCommonModule("userSetting", "frame", arg_11_2.frame)
-		GameLocalData:SaveToCommonModule("userSetting", "shadow", arg_11_2.shadow)
-		GameLocalData:SaveToCommonModule("userSetting", "post_process", arg_11_2.post_process)
-		GameLocalData:SaveToCommonModule("userSetting", "anti_aliasing", arg_11_2.anti_aliasing)
-		GameLocalData:SaveToCommonModule("userSetting", "vertical_sync", arg_11_2.vertical_sync)
-		GameLocalData:SaveToCommonModule("userSetting", "window", arg_11_2.window)
-		GameLocalData:SaveToCommonModule("userSetting", "pc_resolution", arg_11_2.pc_resolution)
-		GameLocalData:SaveToCommonModule("userSetting", "render_scale", arg_11_2.render_scale)
-		GameLocalData:SaveToCommonModule("userSetting", "hdr", arg_11_2.hdr)
-		GameLocalData:SaveToCommonModule("userSetting", "reflection_effect", arg_11_2.reflection_effect)
+		if GameToSDK.IsPCPlatform() then
+			GameLocalData:SaveToCommonModule("userSetting", "picOptionId", arg_11_2.picOptionId)
+			GameLocalData:SaveToCommonModule("userSetting", "user_effect", arg_11_2.user_effect)
+			GameLocalData:SaveToCommonModule("userSetting", "teammate_effect", arg_11_2.teammate_effect)
+			GameLocalData:SaveToCommonModule("userSetting", "frame", arg_11_2.frame)
+			GameLocalData:SaveToCommonModule("userSetting", "shadow", arg_11_2.shadow)
+			GameLocalData:SaveToCommonModule("userSetting", "post_process", arg_11_2.post_process)
+			GameLocalData:SaveToCommonModule("userSetting", "anti_aliasing", arg_11_2.anti_aliasing)
+			GameLocalData:SaveToCommonModule("userSetting", "vertical_sync", arg_11_2.vertical_sync)
+			GameLocalData:SaveToCommonModule("userSetting", "window", arg_11_2.window)
+			GameLocalData:SaveToCommonModule("userSetting", "pc_resolution", arg_11_2.pc_resolution)
+			GameLocalData:SaveToCommonModule("userSetting", "render_scale", arg_11_2.render_scale)
+		else
+			GameLocalData:SaveToCommonModule("userSetting", "picOptionId", arg_11_2.picOptionId)
+			GameLocalData:SaveToCommonModule("userSetting", "resolution", arg_11_2.resolution)
+			GameLocalData:SaveToCommonModule("userSetting", "frame", arg_11_2.frame)
+			GameLocalData:SaveToCommonModule("userSetting", "anti_aliasing", arg_11_2.anti_aliasing)
+			GameLocalData:SaveToCommonModule("userSetting", "reflection_effect", arg_11_2.reflection_effect)
+			GameLocalData:SaveToCommonModule("userSetting", "teammate_effect", arg_11_2.teammate_effect)
+			GameLocalData:SaveToCommonModule("userSetting", "user_effect", arg_11_2.user_effect)
+			GameLocalData:SaveToCommonModule("userSetting", "depth_of_field_enable", arg_11_2.depth_of_field_enable)
+			GameLocalData:SaveToCommonModule("userSetting", "super_resolution_enable", arg_11_2.super_resolution_enable)
+		end
 	else
 		GameLocalData:SaveToCommonModule("userSetting", arg_11_1, arg_11_2)
 	end
@@ -388,19 +420,19 @@ function var_0_0.GetDefaultSetting(arg_24_0)
 		end
 	end
 
-	if UnityEngine.SystemInfo.systemMemorySize > 24575 and UnityEngine.SystemInfo.processorCount > 7 and UnityEngine.SystemInfo.graphicsMemorySize > 7167 then
-		return 5
-	elseif UnityEngine.SystemInfo.systemMemorySize > 16383 and UnityEngine.SystemInfo.processorCount > 5 and UnityEngine.SystemInfo.graphicsMemorySize > 6143 then
-		return 4
-	else
-		return 3
-	end
-
 	if UnityEngine.SystemInfo.systemMemorySize > 4096 and UnityEngine.SystemInfo.processorCount > 4 and UnityEngine.SystemInfo.processorFrequency > 2000 and UnityEngine.SystemInfo.supports2DArrayTextures and UnityEngine.SystemInfo.supports3DTextures and UnityEngine.SystemInfo.supportsComputeShaders and UnityEngine.SystemInfo.graphicsMemorySize > 1024 then
 		return 5
 	end
 
 	return 4
+end
+
+function var_0_0.SetStoryVoiceLanguageCache(arg_25_0, arg_25_1)
+	arg_25_0.storyVoiceLanguageCache_ = arg_25_1
+end
+
+function var_0_0.GetStoryVoiceLanguageCache(arg_26_0)
+	return arg_26_0.storyVoiceLanguageCache_ or arg_26_0:GetSoundSettingData().voice_language
 end
 
 return var_0_0

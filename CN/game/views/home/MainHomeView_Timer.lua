@@ -46,11 +46,11 @@ end
 
 function var_0_0.StartViewHideTimer(arg_6_0)
 	arg_6_0:StopViewHideTimer()
-	SetActive(arg_6_0.appearViewBtn_.gameObject, true)
+	arg_6_0:SetPureModeBtnActive(true)
 
 	arg_6_0.viewHideTimer_ = Timer.New(function()
 		arg_6_0:StopViewHideTimer()
-		SetActive(arg_6_0.appearViewBtn_.gameObject, false)
+		arg_6_0:SetPureModeBtnActive(false)
 	end, 3, 1)
 
 	arg_6_0.viewHideTimer_:Start()

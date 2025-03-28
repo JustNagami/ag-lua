@@ -10170,6 +10170,8 @@
 			if arg_272_0 == 2 then
 				arg_270_0:Play1107506065(arg_270_1)
 			end
+
+			arg_270_1:RecordChoiceLog(1107506064, 1107506065, 1107506065)
 		end
 
 		function arg_270_1.onSingleLineUpdate_(arg_273_0)
@@ -12189,6 +12191,8 @@
 			if arg_340_0 == 1 then
 				arg_338_0:Play1107506082(arg_338_1)
 			end
+
+			arg_338_1:RecordChoiceLog(1107506081, 1107506082)
 		end
 
 		function arg_338_1.onSingleLineUpdate_(arg_341_0)
@@ -14991,6 +14995,8 @@
 			if arg_434_0 == 1 then
 				arg_432_0:Play1107506105(arg_432_1)
 			end
+
+			arg_432_1:RecordChoiceLog(1107506104, 1107506105)
 		end
 
 		function arg_432_1.onSingleLineUpdate_(arg_435_0)
@@ -16523,6 +16529,8 @@
 			if arg_482_0 == 2 then
 				arg_480_0:Play1107506118(arg_480_1)
 			end
+
+			arg_480_1:RecordChoiceLog(1107506116, 1107506117, 1107506118)
 		end
 
 		function arg_480_1.onSingleLineUpdate_(arg_483_0)
@@ -17539,6 +17547,8 @@
 			if arg_514_0 == 2 then
 				arg_512_0:Play1107506128(arg_512_1)
 			end
+
+			arg_512_1:RecordChoiceLog(1107506125, 1107506126, 1107506128)
 		end
 
 		function arg_512_1.onSingleLineUpdate_(arg_515_0)
@@ -22974,6 +22984,8 @@
 				PlayerAction.UseStoryTrigger(1075013, 210750106, 1107506170, 2)
 				arg_694_0:Play1107506171(arg_694_1)
 			end
+
+			arg_694_1:RecordChoiceLog(1107506170, 1107506171, 1107506171)
 		end
 
 		function arg_694_1.onSingleLineUpdate_(arg_697_0)

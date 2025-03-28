@@ -27,7 +27,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 	arg_5_0.index_ = arg_5_1
 	arg_5_0.id_ = arg_5_2
 	arg_5_0.cfg_ = BloodCardGameCardCfg[arg_5_2]
-	arg_5_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_Com/CORGUI_3_10_BloodCardUI/" .. arg_5_0.cfg_.illustration)
+	arg_5_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_Com/CORGUI_3_10_BloodCardUI/" .. arg_5_0.cfg_.illustration)
 
 	arg_5_0:RefreshUI()
 end

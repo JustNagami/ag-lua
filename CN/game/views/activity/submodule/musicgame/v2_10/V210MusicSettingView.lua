@@ -326,6 +326,10 @@ function var_0_0.OnExit(arg_29_0)
 	if arg_29_0.backGround_ then
 		manager.resourcePool:DestroyOrReturn(arg_29_0.backGround_, ASSET_TYPE.SCENE)
 	end
+
+	if arg_29_0.sceneSetting_ then
+		arg_29_0.sceneSetting_.enabled = true
+	end
 end
 
 function var_0_0.SetMusicCamera(arg_30_0)
@@ -464,6 +468,11 @@ function var_0_0.InitBackScene(arg_40_0)
 	arg_40_0.backGroundTrs_.localEulerAngles = Vector3(0, 0, 0)
 	arg_40_0.backGroundTrs_.localScale = Vector3(11, 11, 1)
 	arg_40_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = arg_40_0.bgImg_.sprite
+
+	local var_40_1 = QWorldData:GetCurSceneName()
+
+	arg_40_0.sceneSetting_ = manager.ui:GetSceneSettingBySceneName(var_40_1)
+	arg_40_0.sceneSetting_.enabled = false
 end
 
 function var_0_0.OnMusicSetNodeHit(arg_41_0, arg_41_1, arg_41_2)

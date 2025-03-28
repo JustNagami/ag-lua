@@ -121,7 +121,7 @@ function var_0_0.AddUIListener(arg_8_0)
 				for iter_12_6, iter_12_7 in ipairs(var_12_1) do
 					SetActive(iter_12_7.hammerGo_, true)
 
-					iter_12_7.iceImage_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/JapanRegionUI2_6_00953")
+					iter_12_7.iceImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/JapanRegionUI2_6_00953")
 				end
 
 				arg_8_0.isGet = false

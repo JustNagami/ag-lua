@@ -52,7 +52,7 @@ function var_0_0.AddUIListeners(arg_5_0)
 
 					arg_5_0["selectController" .. iter_6_0 .. "_"]:SetSelectedState("on")
 
-					arg_5_0["selectImage" .. iter_6_0 .. "_"].sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_SandPlay_Com/SandPlay_Com_IdleCanteen/FoodIngredient/" .. ActivityAutoCookMaterialCfg[arg_5_0.curSelectList_[iter_6_0]].icon_path)
+					arg_5_0["selectImage" .. iter_6_0 .. "_"].sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_SandPlay_Com/SandPlay_Com_IdleCanteen/FoodIngredient/" .. ActivityAutoCookMaterialCfg[arg_5_0.curSelectList_[iter_6_0]].icon_path)
 
 					arg_5_0:RefreshCookBtn()
 
@@ -89,7 +89,7 @@ function var_0_0.AddUIListeners(arg_5_0)
 		local var_8_0
 		local var_8_1 = arg_5_0.cookState_ == var_0_0.SUCCESS and "Cooking" or "Cooking02"
 
-		arg_5_0.foodImage_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_SandPlay_Com/SandPlay_Com_IdleCanteen/Cuisine/" .. ActivityAutoCookFoodCfg[arg_5_0.curFoodID_].icon_path)
+		arg_5_0.foodImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_SandPlay_Com/SandPlay_Com_IdleCanteen/Cuisine/" .. ActivityAutoCookFoodCfg[arg_5_0.curFoodID_].icon_path)
 
 		manager.ui:UIEventEnabled(false)
 		manager.windowBar:HideBar()
@@ -106,7 +106,7 @@ function var_0_0.AddUIListeners(arg_5_0)
 
 			SetActive(arg_5_0.dargImage_.gameObject, true)
 
-			arg_5_0.dargImage_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_SandPlay_Com/SandPlay_Com_IdleCanteen/FoodIngredient/" .. ActivityAutoCookMaterialCfg[arg_5_0.curDragMaterialID_].icon_path)
+			arg_5_0.dargImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_SandPlay_Com/SandPlay_Com_IdleCanteen/FoodIngredient/" .. ActivityAutoCookMaterialCfg[arg_5_0.curDragMaterialID_].icon_path)
 		end, function(arg_11_0, arg_11_1, arg_11_2, arg_11_3)
 			local var_11_0 = -arg_11_0
 			local var_11_1 = -arg_11_1
@@ -132,7 +132,7 @@ function var_0_0.AddUIListeners(arg_5_0)
 
 					arg_5_0["selectController" .. iter_12_0 .. "_"]:SetSelectedState("on")
 
-					arg_5_0["selectImage" .. iter_12_0 .. "_"].sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_SandPlay_Com/SandPlay_Com_IdleCanteen/FoodIngredient/" .. ActivityAutoCookMaterialCfg[arg_5_0.curSelectList_[iter_12_0]].icon_path)
+					arg_5_0["selectImage" .. iter_12_0 .. "_"].sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_SandPlay_Com/SandPlay_Com_IdleCanteen/FoodIngredient/" .. ActivityAutoCookMaterialCfg[arg_5_0.curSelectList_[iter_12_0]].icon_path)
 
 					arg_5_0:RefreshCookBtn()
 				end
@@ -219,7 +219,7 @@ end
 
 function var_0_0.RefreshUI(arg_19_0)
 	for iter_19_0, iter_19_1 in pairs(arg_19_0.materialList_) do
-		arg_19_0["materialImage" .. iter_19_0 .. "_"].sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_SandPlay_Com/SandPlay_Com_IdleCanteen/FoodIngredient/" .. ActivityAutoCookMaterialCfg[iter_19_1].icon_path)
+		arg_19_0["materialImage" .. iter_19_0 .. "_"].sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_SandPlay_Com/SandPlay_Com_IdleCanteen/FoodIngredient/" .. ActivityAutoCookMaterialCfg[iter_19_1].icon_path)
 	end
 
 	arg_19_0:RefreshCookBtn()
@@ -300,16 +300,17 @@ function var_0_0.ServerFood(arg_25_0)
 		local var_25_3 = string.format("[%s]", table.concat(var_25_1, ","))
 		local var_25_4 = string.format("[%s]", table.concat(arg_25_0.foodHistoryList_, ","))
 
-		SDKTools.SendMessageToSDK("activity_combat_over", {
-			result = 1,
-			activity_id = arg_25_0.activityID_,
-			stage_id = arg_25_0.activityStageID_,
-			use_seconds = var_25_0,
-			battle_times = arg_25_0.serverCount_,
-			cost_item_list = var_25_3,
-			params_list = var_25_4
-		})
-		ActivityAutoCookAction:AutoCookStageFinish(arg_25_0.activityStageID_, arg_25_0.battleHeroID_)
+		ActivityAutoCookAction:AutoCookStageFinish(arg_25_0.activityStageID_, arg_25_0.battleHeroID_, function()
+			SDKTools.SendMessageToSDK("activity_combat_over", {
+				result = 1,
+				activity_id = arg_25_0.activityID_,
+				stage_id = arg_25_0.activityStageID_,
+				use_seconds = var_25_0,
+				battle_times = arg_25_0.serverCount_,
+				cost_item_list = var_25_3,
+				params_list = var_25_4
+			})
+		end)
 		arg_25_0.heroSpine_.AnimationState:SetAnimation(0, "kaixin", true)
 		arg_25_0:TalkWithTimer(arg_25_0.stageCfg_.success_tips, function()
 			arg_25_0.bubbleController_:SetSelectedState("normal")
@@ -347,116 +348,116 @@ function var_0_0.ServerFood(arg_25_0)
 	end
 end
 
-function var_0_0.CookTips(arg_29_0)
-	arg_29_0.bubbleAnimator_:Play("in", 0, 0)
-	arg_29_0.bubbleAnimator_:Update(0)
-	arg_29_0.bubbleController_:SetSelectedState("normal")
+function var_0_0.CookTips(arg_30_0)
+	arg_30_0.bubbleAnimator_:Play("in", 0, 0)
+	arg_30_0.bubbleAnimator_:Update(0)
+	arg_30_0.bubbleController_:SetSelectedState("normal")
 
-	if arg_29_0.faildCount_ == 0 then
-		arg_29_0.desText_.text = arg_29_0.stageCfg_.simple_challenge_tips
+	if arg_30_0.faildCount_ == 0 then
+		arg_30_0.desText_.text = arg_30_0.stageCfg_.simple_challenge_tips
 	else
-		arg_29_0.desText_.text = arg_29_0.stageCfg_.challenge_tips
+		arg_30_0.desText_.text = arg_30_0.stageCfg_.challenge_tips
 	end
 
-	arg_29_0.faildCount_ = arg_29_0.faildCount_ + 1
+	arg_30_0.faildCount_ = arg_30_0.faildCount_ + 1
 
-	arg_29_0.heroSpine_.AnimationState:SetAnimation(0, "idle", true)
+	arg_30_0.heroSpine_.AnimationState:SetAnimation(0, "idle", true)
 end
 
-function var_0_0.PlayCookAnimator(arg_30_0, arg_30_1, arg_30_2)
-	arg_30_0.cookingAnimator_:Play(arg_30_1, 0, 0)
-	arg_30_0.bubbleAnimator_:Play("out", 0, 0)
+function var_0_0.PlayCookAnimator(arg_31_0, arg_31_1, arg_31_2)
+	arg_31_0.cookingAnimator_:Play(arg_31_1, 0, 0)
+	arg_31_0.bubbleAnimator_:Play("out", 0, 0)
 
-	arg_30_0.cookTimer_ = FrameTimer.New(function()
-		if arg_30_0.cookingAnimator_:GetCurrentAnimatorStateInfo(0).normalizedTime >= 1 then
-			arg_30_0:StopCookAnimator()
-			arg_30_2()
+	arg_31_0.cookTimer_ = FrameTimer.New(function()
+		if arg_31_0.cookingAnimator_:GetCurrentAnimatorStateInfo(0).normalizedTime >= 1 then
+			arg_31_0:StopCookAnimator()
+			arg_31_2()
 		end
 	end, 1, -1)
 
-	arg_30_0.cookTimer_:Start()
+	arg_31_0.cookTimer_:Start()
 end
 
-function var_0_0.StopCookAnimator(arg_32_0)
-	if arg_32_0.cookTimer_ then
-		arg_32_0.cookTimer_:Stop()
+function var_0_0.StopCookAnimator(arg_33_0)
+	if arg_33_0.cookTimer_ then
+		arg_33_0.cookTimer_:Stop()
 
-		arg_32_0.cookTimer_ = nil
+		arg_33_0.cookTimer_ = nil
 	end
 end
 
-function var_0_0.TalkWithTimer(arg_33_0, arg_33_1, arg_33_2)
-	if arg_33_0.talkTimer_ ~= nil then
-		arg_33_0:StopTimer()
+function var_0_0.TalkWithTimer(arg_34_0, arg_34_1, arg_34_2)
+	if arg_34_0.talkTimer_ ~= nil then
+		arg_34_0:StopTimer()
 	end
 
-	arg_33_0.desText_.text = arg_33_1
+	arg_34_0.desText_.text = arg_34_1
 
-	arg_33_0.bubbleAnimator_:Play("in", 0, 0)
-	arg_33_0.bubbleAnimator_:Update(0)
+	arg_34_0.bubbleAnimator_:Play("in", 0, 0)
+	arg_34_0.bubbleAnimator_:Update(0)
 
-	arg_33_0.talkTimer_ = Timer.New(function()
-		if arg_33_2 then
-			arg_33_2()
+	arg_34_0.talkTimer_ = Timer.New(function()
+		if arg_34_2 then
+			arg_34_2()
 		end
 	end, 4, 1)
 
-	arg_33_0.talkTimer_:Start()
+	arg_34_0.talkTimer_:Start()
 end
 
-function var_0_0.StopTimer(arg_35_0)
-	if arg_35_0.talkTimer_ then
-		arg_35_0.talkTimer_:Stop()
+function var_0_0.StopTimer(arg_36_0)
+	if arg_36_0.talkTimer_ then
+		arg_36_0.talkTimer_:Stop()
 
-		arg_35_0.talkTimer_ = nil
+		arg_36_0.talkTimer_ = nil
 	end
 end
 
-function var_0_0.StopGuideTimer(arg_36_0)
-	if arg_36_0.timer_ then
-		arg_36_0.timer_:Stop()
+function var_0_0.StopGuideTimer(arg_37_0)
+	if arg_37_0.timer_ then
+		arg_37_0.timer_:Stop()
 
-		arg_36_0.timer_ = nil
+		arg_37_0.timer_ = nil
 	end
 end
 
-function var_0_0.OnExit(arg_37_0)
+function var_0_0.OnExit(arg_38_0)
 	manager.windowBar:HideBar()
 
-	if not arg_37_0.isWin_ then
-		local var_37_0 = manager.time:GetServerTime() - arg_37_0.startPlayTimeStep_
-		local var_37_1 = {}
+	if not arg_38_0.isWin_ then
+		local var_38_0 = manager.time:GetServerTime() - arg_38_0.startPlayTimeStep_
+		local var_38_1 = {}
 
-		for iter_37_0, iter_37_1 in pairs(arg_37_0.materialHistoryList_) do
-			local var_37_2 = string.format("[%s]", table.concat(iter_37_1, ","))
+		for iter_38_0, iter_38_1 in pairs(arg_38_0.materialHistoryList_) do
+			local var_38_2 = string.format("[%s]", table.concat(iter_38_1, ","))
 
-			table.insert(var_37_1, var_37_2)
+			table.insert(var_38_1, var_38_2)
 		end
 
-		local var_37_3 = string.format("[%s]", table.concat(var_37_1, ","))
-		local var_37_4 = string.format("[%s]", table.concat(arg_37_0.foodHistoryList_, ","))
+		local var_38_3 = string.format("[%s]", table.concat(var_38_1, ","))
+		local var_38_4 = string.format("[%s]", table.concat(arg_38_0.foodHistoryList_, ","))
 
 		SDKTools.SendMessageToSDK("activity_combat_over", {
 			result = 3,
-			activity_id = arg_37_0.activityID_,
-			stage_id = arg_37_0.activityStageID_,
-			use_seconds = var_37_0,
-			battle_times = arg_37_0.serverCount_,
-			cost_item_list = var_37_3,
-			params_list = var_37_4
+			activity_id = arg_38_0.activityID_,
+			stage_id = arg_38_0.activityStageID_,
+			use_seconds = var_38_0,
+			battle_times = arg_38_0.serverCount_,
+			cost_item_list = var_38_3,
+			params_list = var_38_4
 		})
 	end
 
-	arg_37_0:StopTimer()
-	arg_37_0:StopGuideTimer()
-	arg_37_0:StopEatTimer()
-	arg_37_0:StopCookAnimator()
-end
-
-function var_0_0.Dispose(arg_38_0)
 	arg_38_0:StopTimer()
 	arg_38_0:StopGuideTimer()
-	arg_38_0.super.Dispose(arg_38_0)
+	arg_38_0:StopEatTimer()
+	arg_38_0:StopCookAnimator()
+end
+
+function var_0_0.Dispose(arg_39_0)
+	arg_39_0:StopTimer()
+	arg_39_0:StopGuideTimer()
+	arg_39_0.super.Dispose(arg_39_0)
 end
 
 return var_0_0

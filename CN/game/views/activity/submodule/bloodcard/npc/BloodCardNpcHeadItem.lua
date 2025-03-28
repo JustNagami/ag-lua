@@ -44,7 +44,7 @@ end
 function var_0_0.RefreshUI(arg_7_0, arg_7_1)
 	arg_7_0.nameText_.text = arg_7_0.cfg_.name
 	arg_7_0.numText_.text = #arg_7_0.cfg_.stage_list
-	arg_7_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/BackHouseUI/RoleHead/" .. arg_7_0.cfg_.icon)
+	arg_7_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/BackHouseUI/RoleHead/" .. arg_7_0.cfg_.icon)
 
 	local var_7_0 = BloodCardData:GetUnPassNpc()
 	local var_7_1 = getData("bloodCard", "hasClickStage") or 0

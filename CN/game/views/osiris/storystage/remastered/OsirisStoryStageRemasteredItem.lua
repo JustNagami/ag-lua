@@ -45,7 +45,7 @@ function var_0_1.RefreshUI(arg_5_0)
 	local var_5_3 = BattleActivityStoryStageCfg[arg_5_0.stageID_]
 
 	arg_5_0.textName_.text = GetI18NText(var_5_3.name)
-	arg_5_0.imageBg_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_5_3.background_1))
+	arg_5_0.imageBg_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_5_3.background_1))
 
 	if var_5_2 == 1 or BattleStageData:GetStageData()[arg_5_0.stageID_] then
 		arg_5_0:Show(true)

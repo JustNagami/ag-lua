@@ -46,7 +46,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 
 	arg_5_0.IconTypeController:SetSelectedIndex(var_5_3)
 
-	arg_5_0.m_icon.sprite = getSpriteWithoutAtlas(var_5_2)
+	arg_5_0.m_icon.sprite = pureGetSpriteWithoutAtlas(var_5_2)
 
 	arg_5_0:UpdateRedPoint()
 end

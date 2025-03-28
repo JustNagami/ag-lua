@@ -23,7 +23,7 @@ function var_0_0.RefreshItem(arg_4_0, arg_4_1)
 
 	arg_4_0.foodCfgID = var_4_0.cfgID
 	arg_4_0.nameText_.text = string.format("<color=#%s>%s</color>", CanteenConst.FoodTaste[var_4_0.taste][2], GetTips(CanteenConst.FoodTaste[var_4_0.taste][1]))
-	arg_4_0.iconImg_.sprite = getSpriteWithoutAtlas(DormConst.CANTEEN_FOOD_PATH .. BackHomeCanteenFoodCfg[arg_4_0.foodCfgID].icon)
+	arg_4_0.iconImg_.sprite = pureGetSpriteWithoutAtlas(DormConst.CANTEEN_FOOD_PATH .. BackHomeCanteenFoodCfg[arg_4_0.foodCfgID].icon)
 end
 
 function var_0_0.AddUIListener(arg_5_0)

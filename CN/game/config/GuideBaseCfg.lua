@@ -2949,6 +2949,30 @@
 		ignore_group_condition = {},
 		leaps = {}
 	},
+	[114] = {
+		narrator_name = "诗蔻蒂",
+		group = 0,
+		not_skip_guide = 0,
+		id = 114,
+		narrator_icon = "1085",
+		is_no_home = false,
+		steps = {
+			11401,
+			11402,
+			11403
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"skuldPuzzleGameView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
 	[115] = {
 		narrator_name = "金乌",
 		group = 0,
@@ -2996,6 +3020,90 @@
 			}
 		},
 		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[117] = {
+		narrator_name = "麟钰",
+		skip_condition = "",
+		group = 0,
+		not_skip_guide = 0,
+		id = 117,
+		narrator_icon = "1073",
+		is_no_home = false,
+		steps = {
+			11701,
+			11702,
+			11703
+		},
+		open_condition = {
+			{
+				"qworldFunction",
+				111010101
+			},
+			{
+				"uiNameList",
+				{
+					"qworldMainHome"
+				}
+			}
+		},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[119] = {
+		narrator_name = "麟钰",
+		skip_condition = "",
+		group = 0,
+		not_skip_guide = 0,
+		id = 119,
+		narrator_icon = "1073",
+		is_no_home = false,
+		steps = {
+			11901,
+			11902
+		},
+		open_condition = {
+			{
+				"qworldSubQuest",
+				11109001
+			},
+			{
+				"uiNameList",
+				{
+					"qworldMainHome"
+				}
+			}
+		},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[120] = {
+		narrator_name = "麟钰",
+		skip_condition = "",
+		group = 0,
+		not_skip_guide = 0,
+		id = 120,
+		narrator_icon = "1073",
+		is_no_home = false,
+		steps = {
+			12001,
+			12002,
+			12003,
+			12004
+		},
+		open_condition = {
+			{
+				"qworldSubQuest",
+				11103004
+			},
+			{
+				"uiNameList",
+				{
+					"seaWarfareNormalBattleReady"
+				}
+			}
+		},
 		ignore_group_condition = {},
 		leaps = {}
 	},
@@ -3091,8 +3199,12 @@
 			111,
 			112,
 			113,
+			114,
 			115,
-			116
+			116,
+			117,
+			119,
+			120
 		},
 		{
 			1,
@@ -3206,7 +3318,11 @@
 		111,
 		112,
 		113,
+		114,
 		115,
-		116
+		116,
+		117,
+		119,
+		120
 	}
 }

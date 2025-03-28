@@ -293,7 +293,7 @@ function var_0_0.UpdateView(arg_26_0)
 
 	SetActive(arg_26_0.ownGo_, ShopTools.CheckGoodsOwen(arg_26_0.goodID))
 
-	arg_26_0.image_.sprite = getSpriteWithoutAtlas("TextureConfig/PrizeItem/" .. arg_26_0.itemDesCfg.icon)
+	arg_26_0.image_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/PrizeItem/" .. arg_26_0.itemDesCfg.icon)
 
 	arg_26_0.image_:SetNativeSize()
 
@@ -373,17 +373,22 @@ function var_0_0.UpdateView(arg_26_0)
 		for iter_26_4, iter_26_5 in ipairs(var_26_8) do
 			if iter_26_4 <= #arg_26_0.dailyRewardItemList_ then
 				arg_26_0.dailyRewardItemList_[iter_26_4]:SetData(iter_26_5[1], iter_26_5[2])
+				arg_26_0.dailyRewardItemList_[iter_26_4]:SetActive(true)
 			else
 				local var_26_9 = Object.Instantiate(arg_26_0.GiftPopItemPrefab_, arg_26_0.dailyList_)
 				local var_26_10 = RechargeGiftPopItem.New(var_26_9)
 
 				var_26_10:SetData(iter_26_5[1], iter_26_5[2])
+				var_26_10:SetActive(true)
 				table.insert(arg_26_0.dailyRewardItemList_, var_26_10)
 			end
 		end
 
 		while #var_26_8 < #arg_26_0.dailyRewardItemList_ do
-			arg_26_0.dailyRewardItemList_[#arg_26_0.dailyRewardItemList_]:Dispose()
+			local var_26_11 = arg_26_0.dailyRewardItemList_[#arg_26_0.dailyRewardItemList_]
+
+			var_26_11:SetActive(false)
+			var_26_11:Dispose()
 			table.remove(arg_26_0.dailyRewardItemList_, #arg_26_0.dailyRewardItemList_)
 		end
 

@@ -150,7 +150,7 @@ function var_0_0.UpdateView(arg_24_0)
 
 	arg_24_0.hpProgressBar_.value = var_24_5
 	arg_24_0.bossNameLabel_.text = GetI18NText(arg_24_0.nodeCfg_.boss_name)
-	arg_24_0.icon_.sprite = getSpriteWithoutAtlas(SpritePathCfg.ActivityClubBossHeadIcon.path .. arg_24_0.nodeCfg_.boss_icon)
+	arg_24_0.icon_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.ActivityClubBossHeadIcon.path .. arg_24_0.nodeCfg_.boss_icon)
 	arg_24_0.costLabel_.text = arg_24_0.nodeCfg_.vitality_cost
 
 	local var_24_6 = GuildActivityData:IsNodeCanReach(arg_24_0.params_.nodeId)

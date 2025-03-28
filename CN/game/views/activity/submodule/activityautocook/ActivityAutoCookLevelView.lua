@@ -77,7 +77,7 @@ function var_0_0.RefreshUI(arg_10_0)
 		local var_10_0 = ActivityAutoCookStageCfg[iter_10_1]
 		local var_10_1 = var_10_0.food
 
-		arg_10_0["stageImage" .. iter_10_0 .. "_"].sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_SandPlay_Com/SandPlay_Com_IdleCanteen/Cuisine/" .. ActivityAutoCookFoodCfg[var_10_1].icon_path)
+		arg_10_0["stageImage" .. iter_10_0 .. "_"].sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_SandPlay_Com/SandPlay_Com_IdleCanteen/Cuisine/" .. ActivityAutoCookFoodCfg[var_10_1].icon_path)
 
 		if var_10_0.condition ~= 0 then
 			if IsConditionAchieved(var_10_0.condition) then

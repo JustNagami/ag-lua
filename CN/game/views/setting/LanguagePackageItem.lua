@@ -29,7 +29,7 @@ function var_0_0.AddUIListener(arg_3_0)
 				end
 			})
 		else
-			OpenDownLoadPage(nil, arg_3_0.info_.affix)
+			OpenDownLoadPage(nil, arg_3_0.info_.affix, arg_3_0.needSetParent_)
 		end
 	end)
 	arg_3_0:AddBtnListenerScale(arg_3_0.deleteBtn_, nil, function()
@@ -38,7 +38,7 @@ function var_0_0.AddUIListener(arg_3_0)
 			OkCallback = function()
 				VoicePackageManager.Instance:DeleteDownLoadPackage(arg_3_0.info_.affix)
 				manager.notify:CallUpdateFunc(LANGUAGE_PACKAGE_DELETED, arg_3_0.info_.affix)
-				arg_3_0:RefreshData(arg_3_0.info_)
+				arg_3_0:RefreshData(arg_3_0.info_, arg_3_0.needSetParent_)
 			end,
 			CancelCallback = function()
 				return
@@ -56,11 +56,12 @@ function var_0_0.Init(arg_12_0)
 end
 
 function var_0_0.Render(arg_13_0)
-	arg_13_0:RefreshData(arg_13_0.info_)
+	arg_13_0:RefreshData(arg_13_0.info_, arg_13_0.needSetParent_)
 end
 
-function var_0_0.RefreshData(arg_14_0, arg_14_1)
+function var_0_0.RefreshData(arg_14_0, arg_14_1, arg_14_2)
 	if arg_14_1 then
+		arg_14_0.needSetParent_ = arg_14_2
 		arg_14_0.info_ = arg_14_1
 		arg_14_0.nameText_.text = GetI18NText(arg_14_1.name)
 

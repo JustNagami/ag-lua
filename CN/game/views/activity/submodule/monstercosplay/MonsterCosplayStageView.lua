@@ -168,66 +168,63 @@ function var_0_1.OnEnter(arg_16_0)
 	arg_16_0:RefreshData()
 	arg_16_0:RefreshUI()
 	arg_16_0:SetItemData()
-	arg_16_0:UpdateNewStage()
 	arg_16_0.infoController:SetSelectedState("state0")
 	MonsterCosplayAction.ViewMonsterSkill(arg_16_0.selectID, 0)
 end
 
-function var_0_1.UpdateNewStage(arg_17_0)
-	local var_17_0 = MonsterCosplayData:GetDataByPara("openStage")
+function var_0_1.RefreshUI(arg_17_0)
+	local var_17_0 = arg_17_0:GetScrollPos()
+	local var_17_1 = arg_17_0:GetScrollWidth()
 
-	for iter_17_0, iter_17_1 in pairs(var_17_0) do
-		local var_17_1 = BattleActivityMonsterCosplayCfg[iter_17_1]
-		local var_17_2 = tonumber(var_17_1.unlock_condition[1])
+	arg_17_0.scrollMoveView_ = arg_17_0.selectID == ActivityMonsterCosplayCfg[ActivityMonsterCosplayCfg.all[1]].id and arg_17_0.scrollMoveView1 or arg_17_0.scrollMoveView2
+	arg_17_0.titleTxt_ = arg_17_0.selectID == ActivityMonsterCosplayCfg[ActivityMonsterCosplayCfg.all[1]].id and arg_17_0.titleTxt1_ or arg_17_0.titleTxt2_
+	arg_17_0.titleTxt1_.text = GetI18NText(ActivityMonsterCosplayCfg[ActivityMonsterCosplayCfg.all[1]].chapter_name)
 
-		if IsConditionAchieved(var_17_2) then
-			saveData("monsterCosplay", tostring(iter_17_1), "1")
-			manager.redPoint:setTip(RedPointConst.MONSTER_COSPLAY_STAGE, 0)
-		end
-	end
+	local var_17_2 = arg_17_0.selectID == ActivityMonsterCosplayCfg.all[1] and 1 or 2
+
+	arg_17_0.scrollMoveView_:RefreshUI(var_17_0, var_17_1, arg_17_0["stop" .. var_17_2])
+
+	arg_17_0["stop" .. var_17_2] = false
+
+	arg_17_0:RefreshSelectItem()
 end
 
-function var_0_1.RefreshUI(arg_18_0)
-	local var_18_0 = arg_18_0:GetScrollPos()
-	local var_18_1 = arg_18_0:GetScrollWidth()
+function var_0_1.SetItemData(arg_18_0)
+	arg_18_0:UnbindRedPoint()
 
-	arg_18_0.scrollMoveView_ = arg_18_0.selectID == ActivityMonsterCosplayCfg[ActivityMonsterCosplayCfg.all[1]].id and arg_18_0.scrollMoveView1 or arg_18_0.scrollMoveView2
-	arg_18_0.titleTxt_ = arg_18_0.selectID == ActivityMonsterCosplayCfg[ActivityMonsterCosplayCfg.all[1]].id and arg_18_0.titleTxt1_ or arg_18_0.titleTxt2_
-	arg_18_0.titleTxt1_.text = GetI18NText(ActivityMonsterCosplayCfg[ActivityMonsterCosplayCfg.all[1]].chapter_name)
+	arg_18_0.curStageGo = arg_18_0.stageList[arg_18_0.selectID]
 
-	local var_18_2 = arg_18_0.selectID == ActivityMonsterCosplayCfg.all[1] and 1 or 2
+	for iter_18_0 = 1, #arg_18_0.stageList_ do
+		arg_18_0.stageItemList_[iter_18_0] = arg_18_0:GetItemClass().New(arg_18_0.curStageGo[iter_18_0], arg_18_0.content_)
 
-	arg_18_0.scrollMoveView_:RefreshUI(var_18_0, var_18_1, arg_18_0["stop" .. var_18_2])
-
-	arg_18_0["stop" .. var_18_2] = false
-
-	arg_18_0:RefreshSelectItem()
-end
-
-function var_0_1.SetItemData(arg_19_0)
-	arg_19_0:UnbindRedPoint()
-
-	arg_19_0.curStageGo = arg_19_0.stageList[arg_19_0.selectID]
-
-	for iter_19_0 = 1, #arg_19_0.stageList_ do
-		arg_19_0.stageItemList_[iter_19_0] = arg_19_0:GetItemClass().New(arg_19_0.curStageGo[iter_19_0], arg_19_0.content_)
-
-		arg_19_0.stageItemList_[iter_19_0]:SetData(arg_19_0.stageList_[iter_19_0], arg_19_0.selectID, arg_19_0)
+		arg_18_0.stageItemList_[iter_18_0]:SetData(arg_18_0.stageList_[iter_18_0], arg_18_0.selectID, arg_18_0)
 	end
 
-	local var_19_0 = MonsterCosplayData:GetDataByPara("firstView")
+	local var_18_0 = MonsterCosplayData:GetDataByPara("firstView")
 
-	SetActive(arg_19_0.effGo_, arg_19_0.canSwap and var_19_0)
+	SetActive(arg_18_0.effGo_, arg_18_0.canSwap and var_18_0)
 
-	if arg_19_0.canSwap then
-		arg_19_0.typeController:SetSelectedState(arg_19_0.selectID == ActivityMonsterCosplayCfg.all[1] and "2" or "3")
-		arg_19_0.animator_:Play(arg_19_0.selectID == ActivityMonsterCosplayCfg.all[1] and "change02" or "change01")
+	if arg_18_0.canSwap then
+		arg_18_0.typeController:SetSelectedState(arg_18_0.selectID == ActivityMonsterCosplayCfg.all[1] and "2" or "3")
+		arg_18_0.animator_:Play(arg_18_0.selectID == ActivityMonsterCosplayCfg.all[1] and "change02" or "change01")
 		MonsterCosplayData.SetFirstView()
 	else
-		arg_19_0.typeController:SetSelectedState("1")
+		arg_18_0.typeController:SetSelectedState("1")
 	end
 
-	arg_19_0:BindRedPoint()
+	arg_18_0:BindRedPoint()
+end
+
+function var_0_1.SelectedItem(arg_19_0, arg_19_1)
+	local var_19_0 = BattleActivityMonsterCosplayCfg[arg_19_1]
+	local var_19_1 = tonumber(var_19_0.unlock_condition[1])
+
+	if IsConditionAchieved(var_19_1) then
+		local var_19_2 = RedPointConst.MONSTER_COSPLAY_STAGE .. arg_19_1
+
+		MonsterCosplayData:ClickStage(arg_19_1)
+		manager.redPoint:setTip(var_19_2, 0)
+	end
 end
 
 function var_0_1.RefreshSelectItem(arg_20_0)
@@ -329,6 +326,10 @@ end
 function var_0_1.UnbindRedPoint(arg_30_0)
 	manager.redPoint:unbindUIandKey(arg_30_0.modelViewBtn_.transform, "MonsterCosPlayMonsterID" .. arg_30_0.selectID)
 	manager.redPoint:unbindUIandKey(arg_30_0.taskBtn_.transform, RedPointConst.MONSTER_COSPLAY_TASK)
+
+	for iter_30_0, iter_30_1 in pairs(arg_30_0.stageItemList_) do
+		iter_30_1:UnbindRedPoint()
+	end
 end
 
 function var_0_1.BindRedPoint(arg_31_0)
@@ -337,6 +338,10 @@ function var_0_1.BindRedPoint(arg_31_0)
 		y = 130
 	})
 	manager.redPoint:bindUIandKey(arg_31_0.taskBtn_.transform, RedPointConst.MONSTER_COSPLAY_TASK)
+
+	for iter_31_0, iter_31_1 in pairs(arg_31_0.stageItemList_) do
+		iter_31_1:BindRedPoint()
+	end
 end
 
 function var_0_1.OnTop(arg_32_0)

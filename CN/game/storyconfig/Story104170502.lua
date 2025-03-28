@@ -8293,7 +8293,7 @@
 				arg_181_1:ShowNextGo(false)
 			end
 
-			local var_184_4 = 43
+			local var_184_4 = 37
 			local var_184_5 = 2.46666666666667
 			local var_184_6 = arg_181_1:GetWordFromCfg(417052044)
 			local var_184_7 = arg_181_1:FormatText(var_184_6.content)

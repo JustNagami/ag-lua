@@ -33,14 +33,14 @@ function var_0_0.Refresh(arg_4_0, arg_4_1)
 	for iter_4_0, iter_4_1 in ipairs(arg_4_0.heroList_) do
 		if HeroStandardSystemCfg[iter_4_1.id] ~= nil then
 			arg_4_0.heroID_ = HeroStandardSystemCfg[davta.id].hero_id
-			arg_4_0[string.format("heroImg_%s", iter_4_0)].sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. iter_4_1.skin_id)
+			arg_4_0[string.format("heroImg_%s", iter_4_0)].sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. iter_4_1.skin_id)
 		else
 			arg_4_0.heroID_ = iter_4_1.hero_id
 
 			if not iter_4_1.skin_id or iter_4_1.skin_id == 0 then
-				arg_4_0[string.format("heroImg_%s", iter_4_0)].sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. arg_4_0.heroID_)
+				arg_4_0[string.format("heroImg_%s", iter_4_0)].sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. arg_4_0.heroID_)
 			else
-				arg_4_0[string.format("heroImg_%s", iter_4_0)].sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. iter_4_1.skin_id)
+				arg_4_0[string.format("heroImg_%s", iter_4_0)].sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. iter_4_1.skin_id)
 			end
 		end
 	end

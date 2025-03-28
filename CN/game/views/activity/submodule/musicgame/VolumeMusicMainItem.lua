@@ -84,7 +84,7 @@ function var_0_0.RefreshUI(arg_8_0)
 	arg_8_0:RefrenTime()
 
 	arg_8_0.m_title.text = GetI18NText(var_8_2.name)
-	arg_8_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/VolumeIIIDownUI/" .. var_8_2.icon)
+	arg_8_0.m_icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VolumeIIIDownUI/" .. var_8_2.icon)
 end
 
 function var_0_0.RegistCallBack(arg_9_0, arg_9_1)

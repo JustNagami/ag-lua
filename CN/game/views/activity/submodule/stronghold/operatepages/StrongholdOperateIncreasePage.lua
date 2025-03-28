@@ -133,7 +133,7 @@ function var_0_0.RefreshRightInfo(arg_12_0)
 		arg_12_0.m_lvLab.text = "Lv" .. var_12_3.skill_level
 		arg_12_0.m_nextLvDes.text = ""
 		arg_12_0.m_costLab.text = string.format(GetTips("ACTIVITY_STRONGHOLD_POINT_COST"), var_12_3.cost)
-		arg_12_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/StrongholdUI/StrongholdIncrease/" .. var_12_3.skill_id)
+		arg_12_0.m_icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/StrongholdUI/StrongholdIncrease/" .. var_12_3.skill_id)
 	elseif var_12_1 >= #var_12_0 then
 		arg_12_0.stateConotroller:SetSelectedIndex(2)
 
@@ -145,7 +145,7 @@ function var_0_0.RefreshRightInfo(arg_12_0)
 		arg_12_0.m_lvLab.text = GetTips("ACTIVITY_STRONGHOLD_SKILL_MAX")
 		arg_12_0.m_nextLvDes.text = ""
 		arg_12_0.m_costLab.text = ""
-		arg_12_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/StrongholdUI/StrongholdIncrease/" .. var_12_5.skill_id)
+		arg_12_0.m_icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/StrongholdUI/StrongholdIncrease/" .. var_12_5.skill_id)
 	else
 		arg_12_0.stateConotroller:SetSelectedIndex(1)
 
@@ -159,7 +159,7 @@ function var_0_0.RefreshRightInfo(arg_12_0)
 		arg_12_0.m_lvLab.text = "Lv" .. var_12_8.skill_level
 		arg_12_0.m_nextLvDes.text = string.format(GetTips("ACTIVITY_STRONGHOLD_INCREASE_NEXT_LV"), "", arg_12_0:GetSkillDes(var_12_9))
 		arg_12_0.m_costLab.text = string.format(GetTips("ACTIVITY_STRONGHOLD_POINT_COST"), var_12_9.cost)
-		arg_12_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/StrongholdUI/StrongholdIncrease/" .. var_12_8.skill_id)
+		arg_12_0.m_icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/StrongholdUI/StrongholdIncrease/" .. var_12_8.skill_id)
 	end
 end
 

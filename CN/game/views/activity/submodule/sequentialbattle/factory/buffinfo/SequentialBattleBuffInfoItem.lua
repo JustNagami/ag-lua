@@ -34,7 +34,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 	local var_5_1 = AffixTypeCfg[var_5_0]
 	local var_5_2 = PublicBuffCfg[var_5_1.affix_buff_id].icon
 
-	arg_5_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/MaedukAffix/" .. var_5_2)
+	arg_5_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/MaedukAffix/" .. var_5_2)
 end
 
 function var_0_0.RefreshSelect(arg_6_0, arg_6_1)

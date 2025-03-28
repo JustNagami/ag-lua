@@ -56,7 +56,7 @@ function var_0_0.RefreshUI(arg_10_0)
 
 	arg_10_0.nameText_.text = var_10_0.name
 	arg_10_0.descText_.text = var_10_0.description
-	arg_10_0.icon_.sprite = getSpriteWithoutAtlas(RogueTeamSkillTreeCfg[arg_10_0.skillID_].icon)
+	arg_10_0.icon_.sprite = pureGetSpriteWithoutAtlas(RogueTeamSkillTreeCfg[arg_10_0.skillID_].icon)
 	arg_10_0.costIcon_.sprite = ItemTools.getItemSprite(RogueTeamCfg[arg_10_0.templateID_].tech_item)
 	arg_10_0.cost_.text = var_10_0.cost
 

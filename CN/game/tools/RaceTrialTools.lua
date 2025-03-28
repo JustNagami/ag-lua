@@ -70,28 +70,28 @@
 		elseif var_6_0 == ActivityConst.THEME.ACTIVITY_3_8 then
 			return RaceTrialBattleItem_3_8
 		else
-			return RaceTrialBattleItem
+			return RaceTrialBattleItem_3_8
 		end
 	end,
 	GetFirstRewardPopItem = function(arg_7_0)
 		if ActivityTools.GetActivityTheme(arg_7_0) == ActivityConst.THEME.ACTIVITY_3_8 then
 			return RaceTrialFirstRewardItem_3_8
 		else
-			return RaceTrialFirstRewardItem
+			return RaceTrialFirstRewardItem_3_8
 		end
 	end,
 	GetScoreRewardPopItem = function(arg_8_0)
 		if ActivityTools.GetActivityTheme(arg_8_0) == ActivityConst.THEME.ACTIVITY_3_8 then
 			return RaceTrialScoreRewardItem_3_8
 		else
-			return RaceTrialScoreRewardItem
+			return RaceTrialScoreRewardItem_3_8
 		end
 	end,
 	GetDisplayScorePatternTips = function(arg_9_0)
 		if ActivityTools.GetActivityTheme(arg_9_0) == ActivityConst.THEME.ACTIVITY_3_8 then
 			return "RACE_TRIAL_DISPLAY_SCORE_3_8"
 		else
-			return "RACE_TRIAL_DISPLAY_SCORE"
+			return "RACE_TRIAL_DISPLAY_SCORE_3_8"
 		end
 	end
 }

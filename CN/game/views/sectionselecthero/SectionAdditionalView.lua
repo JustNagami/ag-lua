@@ -32,6 +32,10 @@ function var_0_0.InitSubViewCfg(arg_4_0)
 		stageInfoView = {
 			go = arg_4_0.stageInfoGo_,
 			getClassFunc = handler(arg_4_0, arg_4_0.GetStageInfoClass)
+		},
+		heroVoiceInfoView = {
+			go = arg_4_0.heroVoiceInfoGo_,
+			getClassFunc = handler(arg_4_0, arg_4_0.GetHeroVoiceInfoViewClass)
 		}
 	}
 end
@@ -228,26 +232,18 @@ function var_0_0.GetComboSkillViewClass(arg_31_0)
 	return arg_31_0.sectionProxy_:GetComboSkillViewClass()
 end
 
-function var_0_0.InitSubView(arg_32_0)
-	if not arg_32_0.createdSubview_ then
-		arg_32_0.createdSubview_ = true
-
-		for iter_32_0, iter_32_1 in pairs(arg_32_0.subViewDic_) do
-			local var_32_0 = iter_32_1.go
-
-			iter_32_1.instance = iter_32_1.getClassFunc().New(var_32_0)
-
-			if iter_32_1.initFunc then
-				iter_32_1.initFunc()
-			end
-		end
-	end
+function var_0_0.GetHeroVoiceInfoViewClass(arg_32_0)
+	return arg_32_0.sectionProxy_:GetHeroVoiceInfoViewClass()
 end
 
-function var_0_0.TryReloadSubView(arg_33_0)
-	for iter_33_0, iter_33_1 in pairs(arg_33_0.subViewDic_) do
-		if SectionSelectHeroTools.IsDiffViewClass(iter_33_1.instance, iter_33_1.getClassFunc()) then
-			iter_33_1.instance = SectionSelectHeroTools.ReloadView(iter_33_1.instance, iter_33_1.getClassFunc())
+function var_0_0.InitSubView(arg_33_0)
+	if not arg_33_0.createdSubview_ then
+		arg_33_0.createdSubview_ = true
+
+		for iter_33_0, iter_33_1 in pairs(arg_33_0.subViewDic_) do
+			local var_33_0 = iter_33_1.go
+
+			iter_33_1.instance = iter_33_1.getClassFunc().New(var_33_0)
 
 			if iter_33_1.initFunc then
 				iter_33_1.initFunc()
@@ -256,12 +252,24 @@ function var_0_0.TryReloadSubView(arg_33_0)
 	end
 end
 
-function var_0_0.SubViewCallFunc(arg_34_0, arg_34_1, ...)
+function var_0_0.TryReloadSubView(arg_34_0)
 	for iter_34_0, iter_34_1 in pairs(arg_34_0.subViewDic_) do
-		local var_34_0 = iter_34_1.instance
+		if SectionSelectHeroTools.IsDiffViewClass(iter_34_1.instance, iter_34_1.getClassFunc()) then
+			iter_34_1.instance = SectionSelectHeroTools.ReloadView(iter_34_1.instance, iter_34_1.getClassFunc())
 
-		if var_34_0 and var_34_0[arg_34_1] then
-			var_34_0[arg_34_1](var_34_0, ...)
+			if iter_34_1.initFunc then
+				iter_34_1.initFunc()
+			end
+		end
+	end
+end
+
+function var_0_0.SubViewCallFunc(arg_35_0, arg_35_1, ...)
+	for iter_35_0, iter_35_1 in pairs(arg_35_0.subViewDic_) do
+		local var_35_0 = iter_35_1.instance
+
+		if var_35_0 and var_35_0[arg_35_1] then
+			var_35_0[arg_35_1](var_35_0, ...)
 		end
 	end
 end

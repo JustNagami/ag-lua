@@ -14155,6 +14155,288 @@
 			-818
 		}
 	},
+	[11401] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 11401,
+		talk_content = "这是洛肯交给我的日程本，要把每天的行程记录下来，这样她才不会担心。",
+		params = {},
+		guide_component = {
+			"common",
+			"skuldPuzzleGameView",
+			{
+				"guideComponents",
+				"guide_4"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-444
+		}
+	},
+	[11402] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 11402,
+		talk_content = "点击行程可以旋转，这样就可以填充不同方向的时间格。",
+		params = {},
+		guide_component = {
+			"common",
+			"skuldPuzzleGameView",
+			{
+				"guideComponents",
+				"guide_2"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-887,
+			-206
+		}
+	},
+	[11403] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 11403,
+		talk_content = "如果没有头绪的话，可以开启剧情模式。我会将主要行程填进日程本，剩下的时间格就用其他行程填满吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"skuldPuzzleGameView",
+			{
+				"guideComponents",
+				"guide_3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-887,
+			-105
+		}
+	},
+	[11701] = {
+		talk_anchors = 7,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 11701,
+		talk_content = "好久没有回刺桐镇了，遇见了好多想要记录下来的东西，还好带了我的小册子。",
+		params = {},
+		guide_component = {
+			"listIndex",
+			"qworldMainHome",
+			{
+				"menuList"
+			},
+			1,
+			{
+				"entity",
+				"m_clickBtn"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			247,
+			352
+		}
+	},
+	[11702] = {
+		talk_anchors = 7,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 11702,
+		talk_content = "必不可少的就是照片啦，唔……拍好的照片就贴到这里吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"qWorldBookletEntry",
+			{
+				"mainBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			520,
+			423
+		}
+	},
+	[11703] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 11703,
+		talk_content = "不知道这次回经历什么有趣的事情呢，到时候就把遇到的事情都拍下来贴到这里吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"qWorldBookletMain",
+			{
+				"guideComponents",
+				"guide_introduce3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			444,
+			176
+		}
+	},
+	[11901] = {
+		talk_anchors = 7,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 11901,
+		talk_content = "听安海姐姐说还有事情需要我帮助，让我来看看……",
+		params = {},
+		guide_component = {
+			"listIndex",
+			"qworldMainHome",
+			{
+				"menuList"
+			},
+			1,
+			{
+				"entity",
+				"m_clickBtn"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			247,
+			352
+		}
+	},
+	[11902] = {
+		talk_anchors = 7,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 11902,
+		talk_content = "安海姐姐说附近的海面还是有些不太平，有空的话就去帮忙处理一下吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"qWorldBookletEntry",
+			{
+				"sailingBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-230,
+			-343
+		}
+	},
+	[12001] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12001,
+		talk_content = "现在就把「冲击梁」装好吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"seaWarfareNormalBattleReady",
+			{
+				"skillItemList_",
+				1,
+				"btn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-83,
+			-353
+		}
+	},
+	[12002] = {
+		talk_anchors = 8,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12002,
+		talk_content = "有了「冲击梁」后，就不怕海上的爆桶了。",
+		params = {},
+		guide_component = {
+			"common",
+			"seaWarfareNormalBattleReady",
+			{
+				"guideComponents",
+				"guide_introduce1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-308,
+			-105
+		}
+	},
+	[12003] = {
+		talk_anchors = 6,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12003,
+		talk_content = "好像这次航行就会遇到，刚好用上！",
+		params = {},
+		guide_component = {
+			"common",
+			"seaWarfareNormalBattleReady",
+			{
+				"guideComponents",
+				"guide_introduce2"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-180,
+			301
+		}
+	},
+	[12004] = {
+		talk_anchors = 3,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12004,
+		talk_content = "现在，扬帆起航！",
+		params = {},
+		guide_component = {
+			"common",
+			"seaWarfareNormalBattleReady",
+			{
+				"startBattle_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-903,
+			125
+		}
+	},
 	all = {
 		101,
 		102,
@@ -14759,6 +15041,18 @@
 		11501,
 		11502,
 		11601,
-		11602
+		11602,
+		11401,
+		11402,
+		11403,
+		11701,
+		11702,
+		11703,
+		11901,
+		11902,
+		12001,
+		12002,
+		12003,
+		12004
 	}
 }

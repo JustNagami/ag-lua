@@ -133,7 +133,7 @@ function var_0_0.RefreshUI(arg_16_0)
 		local var_16_4 = ChipCfg[arg_16_0.chipManagerID]
 
 		arg_16_0.iconImage_.sprite = getSpriteViaConfig("ChipSkillIcon", var_16_0.picture_id)
-		arg_16_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Managecat_l/" .. var_16_4.picture_id)
+		arg_16_0.iconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Managecat_l/" .. var_16_4.picture_id)
 		arg_16_0.name_.text = GetI18NText(var_16_0.suit_name)
 		arg_16_0.effectText_.text = GetI18NText(var_16_0.desc)
 

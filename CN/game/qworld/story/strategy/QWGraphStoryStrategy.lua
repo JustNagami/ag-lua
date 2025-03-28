@@ -32,4 +32,32 @@ function var_0_0.PreContinueStop(arg_4_0)
 	end
 end
 
+function var_0_0.GetStoryHistory(arg_5_0)
+	if arg_5_0.graphInstance then
+		return arg_5_0.graphInstance:GetHistory()
+	end
+
+	return {}
+end
+
+function var_0_0.ChangeAutoPlayState(arg_6_0, arg_6_1)
+	if arg_6_0.graphInstance then
+		arg_6_0.graphInstance:ChangeAutoPlayState(arg_6_1)
+	end
+end
+
+function var_0_0.GetAutoPlayState(arg_7_0)
+	if arg_7_0.graphInstance then
+		return arg_7_0.graphInstance:GetAutoPlayState()
+	end
+end
+
+function var_0_0.Dispose(arg_8_0)
+	if arg_8_0.graphInstance then
+		arg_8_0.graphInstance:PreContinueStop()
+
+		arg_8_0.graphInstance = nil
+	end
+end
+
 return var_0_0

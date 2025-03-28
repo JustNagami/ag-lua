@@ -17,7 +17,7 @@ function var_0_1.UpdateView(arg_2_0)
 		var_2_1 = var_2_1 .. iter_2_1
 	end
 
-	arg_2_0.icon_.sprite = getSpriteWithoutAtlas(SpritePathCfg.CollectBoss.path .. var_2_1)
+	arg_2_0.icon_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.CollectBoss.path .. var_2_1)
 	arg_2_0.riskText_.text = NumberTools.IntToRomam(var_2_0.type + 1)
 
 	arg_2_0:UpdateData()

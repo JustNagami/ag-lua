@@ -227,10 +227,10 @@ function var_0_0.StartGame(arg_32_0)
 	arg_32_0.tools.rock = arg_32_0.gameData.rock
 
 	arg_32_0.tools.spriteList:Clear()
-	arg_32_0.tools.spriteList:Add(getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. 1))
+	arg_32_0.tools.spriteList:Add(AtlasManager.GetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. 1))
 
 	for iter_32_0, iter_32_1 in ipairs(GameSetting.activity_combine_game_icon.value) do
-		arg_32_0.tools.spriteList:Add(getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. iter_32_1))
+		arg_32_0.tools.spriteList:Add(AtlasManager.GetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. iter_32_1))
 	end
 
 	arg_32_0.tools.skillSprites:Clear()
@@ -238,10 +238,10 @@ function var_0_0.StartGame(arg_32_0)
 	for iter_32_2, iter_32_3 in ipairs(ActivityCombineSkillCfg.all) do
 		local var_32_0 = ActivityCombineSkillCfg[iter_32_3]
 
-		arg_32_0.tools.skillSprites[var_32_0.id] = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_32_0.icon)
+		arg_32_0.tools.skillSprites[var_32_0.id] = AtlasManager.GetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_32_0.icon)
 	end
 
-	arg_32_0.heroIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/" .. ActivityCombineHeroCfg[arg_32_0.heroId].Icon_2)
+	arg_32_0.heroIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/" .. ActivityCombineHeroCfg[arg_32_0.heroId].Icon_2)
 
 	arg_32_0.stageController:SetSelectedState("box1")
 	arg_32_0:SetInitBlock()
@@ -572,10 +572,10 @@ function var_0_0.RoleLevelUpView(arg_49_0)
 		local var_49_4 = ActivityCombineSkillCfg[var_49_3.effect[1]]
 
 		arg_49_0.skillDescTxt_.text = GetI18NText(var_49_4.description)
-		arg_49_0.skillImg_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_49_4.icon)
+		arg_49_0.skillImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_49_4.icon)
 	else
 		arg_49_0.skillDescTxt_.text = GetI18NText(var_49_3.description)
-		arg_49_0.skillImg_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_49_3.icon)
+		arg_49_0.skillImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/combinegame/" .. var_49_3.icon)
 	end
 
 	if arg_49_0.gameData.nextTechNeed == 0 then

@@ -33,10 +33,11 @@ function var_0_0.Dispose(arg_7_0)
 	arg_7_0.super.Dispose(arg_7_0)
 end
 
-function var_0_0.SetData(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
+function var_0_0.SetData(arg_8_0, arg_8_1, arg_8_2, arg_8_3, arg_8_4)
 	arg_8_0.layoutName_ = arg_8_1
 	arg_8_0.itemData_ = arg_8_2
 	arg_8_0.gamepadType_ = arg_8_3
+	arg_8_0.controlType_ = arg_8_4
 end
 
 function var_0_0.SetKeyChangedCallback(arg_9_0, arg_9_1)
@@ -105,6 +106,7 @@ function var_0_0.StartListeningNewKey(arg_12_0)
 
 	gameContext:Go("gameKeyListening", {
 		gamepadType = arg_12_0.gamepadType_,
+		controlType = arg_12_0.controlType_,
 		listenCallback = function(arg_13_0)
 			arg_12_0:SetKey(arg_13_0)
 		end

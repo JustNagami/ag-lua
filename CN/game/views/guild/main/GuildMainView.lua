@@ -282,11 +282,11 @@ function var_0_0.UpdateTimer(arg_33_0)
 		if var_33_0 == "prepose" then
 			arg_33_0.stageLabel_.text = GetTips("CLUB_BOSS_PREPOSE_TIP")
 			arg_33_0.lastTimeText_.text = GetTips("GONGHUIBOSS_LIEXIZHENGZHAO")
-			arg_33_0.bossBtnImage_.sprite = getSpriteWithoutAtlas("TextureConfig/ClubUI/Boss_btn_002")
+			arg_33_0.bossBtnImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/ClubUI/Boss_btn_002")
 		else
 			arg_33_0.stageLabel_.text = GetTips("CLUB_BOSS_CHALLENGE_TIP")
 			arg_33_0.lastTimeText_.text = GetTips("GONGHUIBOSS_LIEXIKAIFANG")
-			arg_33_0.bossBtnImage_.sprite = getSpriteWithoutAtlas("TextureConfig/ClubUI/Boss_btn_001")
+			arg_33_0.bossBtnImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/ClubUI/Boss_btn_001")
 		end
 
 		arg_33_0.statusName_ = var_33_0

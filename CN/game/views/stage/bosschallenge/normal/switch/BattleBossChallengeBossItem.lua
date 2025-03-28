@@ -71,7 +71,7 @@ function var_0_0.RefreshUI(arg_11_0)
 	local var_11_0 = BattleBossChallengeNormalData:GetBossList()
 	local var_11_1 = BossChallengeUICfg[StageGroupCfg[var_11_0[arg_11_0.bossIndex_]].boss_id]
 
-	arg_11_0.icon_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.BossLittlePaint.path, var_11_1.icon))
+	arg_11_0.icon_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.BossLittlePaint.path, var_11_1.icon))
 	arg_11_0.textName_.text = GetI18NText(var_11_1.main_name)
 
 	local var_11_2 = StageTools.GetBossChallengeNextIndex(arg_11_0.bossIndex_)

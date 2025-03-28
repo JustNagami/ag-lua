@@ -32,7 +32,7 @@ function var_0_0.OnEnter(arg_7_0)
 
 	arg_7_0.nameText_.text = GetI18NText(var_7_0.name)
 	arg_7_0.levelText_.text = HeroData:GetCurModuleLevel(arg_7_0.heroID_)
-	arg_7_0.moduleImage_.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponModule/" .. arg_7_0.heroID_)
+	arg_7_0.moduleImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/WeaponModule/" .. arg_7_0.heroID_)
 end
 
 function var_0_0.Dispose(arg_8_0)

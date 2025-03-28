@@ -103,8 +103,8 @@ function var_0_0.UpdateView(arg_11_0)
 	arg_11_0.list:StartScroll(#arg_11_0.reward)
 
 	arg_11_0.nameTxt_.text = GetI18NText(var_11_9.area_name)
-	arg_11_0.regionImage_.sprite = getSpriteWithoutAtlas("TextureBg/ExploreUI/" .. var_11_9.icon)
-	arg_11_0.adminCatImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Managecat_s/" .. var_11_1.meow_icon)
+	arg_11_0.regionImage_.sprite = pureGetSpriteWithoutAtlas("TextureBg/ExploreUI/" .. var_11_9.icon)
+	arg_11_0.adminCatImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Managecat_s/" .. var_11_1.meow_icon)
 
 	arg_11_0.list2:StartScroll(#arg_11_0.regionData.eventData)
 end

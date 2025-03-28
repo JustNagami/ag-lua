@@ -49,101 +49,122 @@ function var_0_0.SetChapterID(arg_7_0, arg_7_1, arg_7_2)
 	arg_7_0:BindRedPoint(arg_7_1)
 
 	arg_7_0.chapterID_ = arg_7_1
+	arg_7_0.toggleType_ = getChapterClientCfgByChapterID(arg_7_0.chapterID_).toggle
 
-	local var_7_0 = getChapterClientCfgByChapterID(arg_7_0.chapterID_)
+	local var_7_0 = arg_7_1 == arg_7_2
 
-	arg_7_0.toggleType_ = var_7_0.toggle
-
-	local var_7_1 = arg_7_1 == arg_7_2
-
-	arg_7_0.choiceController_:SetSelectedState(tostring(var_7_1))
-
-	if var_7_0.id ~= ChapterConst.CHAPTER_CLIENT_XUHENG_PART_2_2 then
-		arg_7_0.nameText_.text = ChapterCfg[arg_7_1].subhead
-	end
-
+	arg_7_0.choiceController_:SetSelectedState(tostring(var_7_0))
+	arg_7_0:UpdateNameText()
 	arg_7_0:AddTimer()
 end
 
-function var_0_0.BindRedPoint(arg_8_0, arg_8_1)
-	if arg_8_0.toggleType_ == nil then
-		arg_8_0.toggleType_ = getChapterClientCfgByChapterID(arg_8_1).toggle
-	end
+local var_0_1 = {
+	[2] = {
+		"MAIN_STORY_TAB_1",
+		"MAIN_STORY_TAB_3"
+	},
+	[3] = {
+		"MAIN_STORY_TAB_1",
+		"MAIN_STORY_TAB_2",
+		"MAIN_STORY_TAB_3"
+	}
+}
 
-	if arg_8_0.toggleType_ == BattleConst.TOGGLE.PLOT then
-		manager.redPoint:bindUIandKey(arg_8_0.transform_, string.format("%s_%s", RedPointConst.COMBAT_PLOT_CHAPTER, arg_8_1))
+function var_0_0.UpdateNameText(arg_8_0)
+	local var_8_0 = getChapterClientCfgByChapterID(arg_8_0.chapterID_)
+
+	if var_8_0.id == ChapterConst.CHAPTER_CLIENT_XUHENG_PART_2_2 or var_8_0.id == ChapterConst.CHAPTER_CLIENT_21 then
+		local var_8_1 = #var_8_0.chapter_list
+
+		arg_8_0.nameText_.text = GetTips(var_0_1[var_8_1][arg_8_0.index_])
 	else
-		manager.redPoint:bindUIandKey(arg_8_0.transform_, string.format("%s_%s", RedPointConst.COMBAT_SUB_PLOT_CHAPTER, arg_8_1))
+		arg_8_0.nameText_.text = ChapterCfg[arg_8_0.chapterID_].subhead
 	end
 end
 
-function var_0_0.UnBindRedPoint(arg_9_0, arg_9_1)
-	if arg_9_1 then
-		if arg_9_0.toggleType_ == BattleConst.TOGGLE.PLOT then
-			manager.redPoint:unbindUIandKey(arg_9_0.transform_, string.format("%s_%s", RedPointConst.COMBAT_PLOT_CHAPTER, arg_9_1))
+function var_0_0.BindRedPoint(arg_9_0, arg_9_1)
+	if arg_9_0.toggleType_ == nil then
+		arg_9_0.toggleType_ = getChapterClientCfgByChapterID(arg_9_1).toggle
+	end
+
+	if arg_9_0.toggleType_ == BattleConst.TOGGLE.PLOT then
+		manager.redPoint:bindUIandKey(arg_9_0.transform_, string.format("%s_%s", RedPointConst.COMBAT_PLOT_CHAPTER, arg_9_1))
+	else
+		manager.redPoint:bindUIandKey(arg_9_0.transform_, string.format("%s_%s", RedPointConst.COMBAT_SUB_PLOT_CHAPTER, arg_9_1))
+	end
+end
+
+function var_0_0.UnBindRedPoint(arg_10_0, arg_10_1)
+	if arg_10_1 then
+		if arg_10_0.toggleType_ == BattleConst.TOGGLE.PLOT then
+			manager.redPoint:unbindUIandKey(arg_10_0.transform_, string.format("%s_%s", RedPointConst.COMBAT_PLOT_CHAPTER, arg_10_1))
 		else
-			manager.redPoint:unbindUIandKey(arg_9_0.transform_, string.format("%s_%s", RedPointConst.COMBAT_SUB_PLOT_CHAPTER, arg_9_1))
+			manager.redPoint:unbindUIandKey(arg_10_0.transform_, string.format("%s_%s", RedPointConst.COMBAT_SUB_PLOT_CHAPTER, arg_10_1))
 		end
 	end
 end
 
-function var_0_0.AddTimer(arg_10_0)
-	arg_10_0:StopTimer()
+function var_0_0.AddTimer(arg_11_0)
+	arg_11_0:StopTimer()
 
-	local var_10_0 = getChapterClientCfgByChapterID(arg_10_0.chapterID_)
-	local var_10_1 = table.keyof(var_10_0.chapter_list, arg_10_0.chapterID_)
+	local var_11_0 = getChapterClientCfgByChapterID(arg_11_0.chapterID_)
+	local var_11_1 = table.keyof(var_11_0.chapter_list, arg_11_0.chapterID_)
 
-	if var_10_1 > 1 then
-		local var_10_2 = var_10_0.chapter_list[var_10_1 - 1]
+	if var_11_1 > 1 then
+		local var_11_2 = var_11_0.chapter_list[var_11_1 - 1]
 
-		if not ChapterTools.IsClearChapter(var_10_2) then
-			arg_10_0.lockController_:SetSelectedState("lock")
+		if not ChapterTools.IsClearChapter(var_11_2) then
+			arg_11_0.lockController_:SetSelectedState("lock")
 
 			return
 		end
 	end
 
-	local var_10_3
+	local var_11_3
 
-	if arg_10_0.toggleType_ == BattleConst.TOGGLE.PLOT then
-		var_10_3 = ChapterCfg[arg_10_0.chapterID_].unlock_activity_id
+	if arg_11_0.toggleType_ == BattleConst.TOGGLE.PLOT then
+		var_11_3 = ChapterCfg[arg_11_0.chapterID_].unlock_activity_id
 	else
-		var_10_3 = ChapterCfg[arg_10_0.chapterID_].activity_id
+		var_11_3 = ChapterCfg[arg_11_0.chapterID_].activity_id
 	end
 
-	local var_10_4
+	local var_11_4
 
-	if arg_10_0.toggleType_ == BattleConst.TOGGLE.PLOT then
-		var_10_4 = ActivityData:GetActivityData(var_10_3).startTime
+	if arg_11_0.toggleType_ == BattleConst.TOGGLE.PLOT then
+		var_11_4 = ActivityData:GetActivityData(var_11_3).startTime
 	else
-		var_10_4 = ActivityData:GetActivityRefreshTime(var_10_3)
+		var_11_4 = ActivityData:GetActivityRefreshTime(var_11_3)
 	end
 
-	if var_10_4 <= manager.time:GetServerTime() then
-		arg_10_0.lockController_:SetSelectedState("unlock")
+	if var_11_4 <= manager.time:GetServerTime() then
+		arg_11_0.lockController_:SetSelectedState("unlock")
 
 		return
 	end
 
-	arg_10_0.lockController_:SetSelectedState("lock")
+	arg_11_0.lockController_:SetSelectedState("lock")
 
-	arg_10_0.timer_ = Timer.New(function()
-		if var_10_4 <= manager.time:GetServerTime() then
-			arg_10_0.lockController_:SetSelectedState("unlock")
-			arg_10_0:StopTimer()
+	arg_11_0.timer_ = Timer.New(function()
+		if var_11_4 <= manager.time:GetServerTime() then
+			arg_11_0.lockController_:SetSelectedState("unlock")
+			arg_11_0:StopTimer()
 
 			return
 		end
 	end, 1, -1)
 
-	arg_10_0.timer_:Start()
+	arg_11_0.timer_:Start()
 end
 
-function var_0_0.StopTimer(arg_12_0)
-	if arg_12_0.timer_ then
-		arg_12_0.timer_:Stop()
+function var_0_0.SetActive(arg_13_0, arg_13_1)
+	SetActive(arg_13_0.gameObject_, arg_13_1)
+end
 
-		arg_12_0.timer_ = nil
+function var_0_0.StopTimer(arg_14_0)
+	if arg_14_0.timer_ then
+		arg_14_0.timer_:Stop()
+
+		arg_14_0.timer_ = nil
 	end
 end
 

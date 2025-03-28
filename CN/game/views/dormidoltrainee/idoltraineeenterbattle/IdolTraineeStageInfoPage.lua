@@ -83,7 +83,7 @@ function var_0_0.RefreshUI(arg_11_0)
 	if var_11_0 then
 		local var_11_1 = IdolStageSceneCfg[var_11_0.scene_id].stage_picture
 
-		arg_11_0.scene_.sprite = getSpriteWithoutAtlas(SpritePathCfg.IdolStageIcon.path .. var_11_1)
+		arg_11_0.scene_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.IdolStageIcon.path .. var_11_1)
 		arg_11_0.bgmName_.text = IdolStageMusicCfg[var_11_0.bgm].music_name
 		arg_11_0.descText_.text = var_11_0.stage_desc
 		arg_11_0.raceData_ = var_11_0.race_id_list

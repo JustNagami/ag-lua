@@ -137,81 +137,85 @@ function var_0_0.SetSelected(arg_13_0, arg_13_1)
 	arg_13_0.selectedController_:SetSelectedState(arg_13_1 and "true" or "false")
 end
 
-function var_0_0.SetHp(arg_14_0, arg_14_1)
-	arg_14_0.hpText_.text = math.floor(arg_14_1 * 100) .. "%"
-	arg_14_0.hpSlider_.fillAmount = arg_14_1
-
-	arg_14_0.hpController_:SetSelectedState(arg_14_1 ~= 0 and "true" or "false")
+function var_0_0.SetFavor(arg_14_0, arg_14_1)
+	arg_14_0.favorController_:SetSelectedState(arg_14_1 and "true" or "false")
 end
 
-function var_0_0.SetLable(arg_15_0, arg_15_1)
-	arg_15_0.lableText_.text = arg_15_1
+function var_0_0.SetHp(arg_15_0, arg_15_1)
+	arg_15_0.hpText_.text = math.floor(arg_15_1 * 100) .. "%"
+	arg_15_0.hpSlider_.fillAmount = arg_15_1
 
-	arg_15_0.lableController_:SetSelectedState(arg_15_1 ~= nil and "true" or "false")
+	arg_15_0.hpController_:SetSelectedState(arg_15_1 ~= 0 and "true" or "false")
 end
 
-function var_0_0.SetLevel(arg_16_0, arg_16_1)
-	arg_16_0.levelText_.text = tostring(arg_16_1 or 1)
+function var_0_0.SetLable(arg_16_0, arg_16_1)
+	arg_16_0.lableText_.text = arg_16_1
+
+	arg_16_0.lableController_:SetSelectedState(arg_16_1 ~= nil and "true" or "false")
 end
 
-function var_0_0.SetHeroCfgData(arg_17_0, arg_17_1, arg_17_2, arg_17_3)
-	local var_17_0 = HeroCfg[arg_17_1]
+function var_0_0.SetLevel(arg_17_0, arg_17_1)
+	arg_17_0.levelText_.text = tostring(arg_17_1 or 1)
+end
 
-	arg_17_0.heroCfg_ = var_17_0
-	arg_17_0.campLogo_.sprite = HeroTools.GetHeroRaceIcon(arg_17_1)
+function var_0_0.SetHeroCfgData(arg_18_0, arg_18_1, arg_18_2, arg_18_3)
+	local var_18_0 = HeroCfg[arg_18_1]
 
-	if arg_17_3 == 0 then
-		arg_17_0.rareImg_.sprite = HeroTools.GetRareSprite(var_17_0.rare or 0)
+	arg_18_0.heroCfg_ = var_18_0
+	arg_18_0.campLogo_.sprite = HeroTools.GetHeroRaceIcon(arg_18_1)
+
+	if arg_18_3 == 0 then
+		arg_18_0.rareImg_.sprite = HeroTools.GetRareSprite(var_18_0.rare or 0)
 	else
-		arg_17_0.rareImg_.sprite = HeroTools.GetRareSprite(arg_17_3)
+		arg_18_0.rareImg_.sprite = HeroTools.GetRareSprite(arg_18_3)
 	end
 
-	arg_17_0.attackType_.sprite = HeroTools.GetHeroSkillAttributeIcon(arg_17_1)
+	arg_18_0.attackType_.sprite = HeroTools.GetHeroSkillAttributeIcon(arg_18_1)
 
-	if arg_17_2 then
-		local var_17_1 = SkinCfg[arg_17_2]
+	if arg_18_2 then
+		local var_18_1 = SkinCfg[arg_18_2]
 
-		arg_17_0.headIcon_.sprite = HeroTools.GetHeadSprite(var_17_1.picture_id)
+		arg_18_0.headIcon_.sprite = HeroTools.GetHeadSprite(var_18_1.picture_id)
 
-		arg_17_0.headIcon_:SetNativeSize()
+		arg_18_0.headIcon_:SetNativeSize()
 	end
 end
 
-function var_0_0.SetHeroSkin(arg_18_0, arg_18_1)
-	arg_18_0.headIcon_.sprite = HeroTools.GetHeadSprite(arg_18_1)
+function var_0_0.SetHeroSkin(arg_19_0, arg_19_1)
+	arg_19_0.headIcon_.sprite = HeroTools.GetHeadSprite(arg_19_1)
 
-	arg_18_0.headIcon_:SetNativeSize()
+	arg_19_0.headIcon_:SetNativeSize()
 end
 
-function var_0_0.RegisterClickListener(arg_19_0, arg_19_1)
-	arg_19_0.clickListener_ = arg_19_1
+function var_0_0.RegisterClickListener(arg_20_0, arg_20_1)
+	arg_20_0.clickListener_ = arg_20_1
 end
 
-function var_0_0.AddUIListener(arg_20_0)
-	arg_20_0:AddBtnListener(arg_20_0.selfBtn_, nil, function()
-		if arg_20_0.heroViewProxy_ and arg_20_0.heroViewProxy_:GetViewDataType() == HeroConst.HERO_DATA_TYPE.DEFAULT then
-			arg_20_0:ClearNewHeroRed(arg_20_0.heroCfg_.id)
+function var_0_0.AddUIListener(arg_21_0)
+	arg_21_0:AddBtnListener(arg_21_0.selfBtn_, nil, function()
+		if arg_21_0.heroViewProxy_ and arg_21_0.heroViewProxy_:GetViewDataType() == HeroConst.HERO_DATA_TYPE.DEFAULT then
+			arg_21_0:ClearNewHeroRed(arg_21_0.heroCfg_.id)
 		end
 
-		if arg_20_0.clickListener_ ~= nil and arg_20_0.heroCfg_ then
-			arg_20_0.clickListener_(arg_20_0.heroCfg_.id)
+		if arg_21_0.clickListener_ ~= nil and arg_21_0.heroCfg_ then
+			arg_21_0.clickListener_(arg_21_0.heroCfg_.id)
 		end
 	end)
 end
 
-function var_0_0.ClearNewHeroRed(arg_22_0, arg_22_1)
-	if arg_22_1 and arg_22_0.heroViewProxy_ and arg_22_0.heroViewProxy_:GetViewDataType() == HeroConst.HERO_DATA_TYPE.DEFAULT then
-		HeroTools.SetHeroNewTagRed(arg_22_1, "unlockHero", RedPointConst.HERO_ID .. arg_22_1, false)
+function var_0_0.ClearNewHeroRed(arg_23_0, arg_23_1)
+	if arg_23_1 and arg_23_0.heroViewProxy_ and arg_23_0.heroViewProxy_:GetViewDataType() == HeroConst.HERO_DATA_TYPE.DEFAULT then
+		HeroTools.SetHeroNewTagRed(arg_23_1, "unlockHero", RedPointConst.HERO_ID .. arg_23_1, false)
 	end
 end
 
-function var_0_0.Dispose(arg_23_0)
-	manager.redPoint:unbindUIandKey(arg_23_0.noticePos_)
-	arg_23_0:RemoveAllEventListener()
+function var_0_0.Dispose(arg_24_0)
+	manager.redPoint:unbindUIandKey(arg_24_0.noticePos_)
+	arg_24_0:RemoveAllEventListener()
 
-	arg_23_0.clickListener_ = nil
+	arg_24_0.clickListener_ = nil
 
-	var_0_0.super.Dispose(arg_23_0)
+	var_0_0.super.Dispose(arg_24_0)
 end
 
 return var_0_0

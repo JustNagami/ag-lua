@@ -54,7 +54,7 @@ function var_0_0.RefreshStageInfo(arg_7_0)
 
 	if arg_7_0.oldCfgID_ ~= arg_7_0.cfg_.id then
 		arg_7_0.sectionName_.text = GetI18NText(ClubBossPreposeCfg[arg_7_0.params_.index].name)
-		arg_7_0.sectionImage_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, arg_7_0.cfg_.background_1))
+		arg_7_0.sectionImage_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, arg_7_0.cfg_.background_1))
 		arg_7_0.oldCfgID_ = arg_7_0.cfg_.id
 		arg_7_0.multiple_ = 1
 

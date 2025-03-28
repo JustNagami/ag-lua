@@ -24,7 +24,7 @@ function var_0_0.InitUI(arg_4_0)
 		if arg_4_0.heroDataList_[iter_4_0] then
 			local var_4_0 = ControllerUtil.GetController(arg_4_0["heroItem" .. iter_4_0].transform, "toggle")
 
-			arg_4_0["heroIcon" .. iter_4_0].sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/snowballPortrait/" .. arg_4_0.heroDataList_[iter_4_0])
+			arg_4_0["heroIcon" .. iter_4_0].sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/snowballPortrait/" .. arg_4_0.heroDataList_[iter_4_0])
 
 			arg_4_0:AddBtnListener(arg_4_0["heroItem" .. iter_4_0], nil, function()
 				arg_4_0.selectIndex_ = iter_4_0

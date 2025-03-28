@@ -80,7 +80,7 @@ function var_0_0.SetData(arg_8_0, arg_8_1, arg_8_2, arg_8_3, arg_8_4)
 	for iter_8_0, iter_8_1 in ipairs(arg_8_0.recommendIdList_) do
 		local var_8_0 = EquipSkillCfg[iter_8_1]
 
-		arg_8_0.iconList_[iter_8_0].sprite = getSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_8_0.icon or "")
+		arg_8_0.iconList_[iter_8_0].sprite = pureGetSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_8_0.icon or "")
 		arg_8_0.nameList_[iter_8_0].text = var_8_0.name
 		arg_8_0.data_[iter_8_0].name = var_8_0.name
 		arg_8_0.data_[iter_8_0].desc = EquipTools.GetSkillDescWithoutNext(iter_8_1, 3, arg_8_0.heroId_)

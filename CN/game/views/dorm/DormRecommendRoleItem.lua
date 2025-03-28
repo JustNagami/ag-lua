@@ -36,15 +36,11 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1, arg_4_2)
 				end
 			end
 		elseif var_4_0 == 3 then
-			for iter_4_4, iter_4_5 in ipairs(GameDisplayCfg.hero_atack_type_white_tag.value) do
+			arg_4_0.recIcon_.sprite = HeroTools.GetSkillAttributeIcon(arg_4_1.tag, true)
+		elseif var_4_0 == 4 then
+			for iter_4_4, iter_4_5 in ipairs(GameDisplayCfg.hero_mechanism_type_white_tag.value) do
 				if iter_4_5[1] == arg_4_1.tag then
 					arg_4_0.recIcon_.sprite = getSprite("Atlas/Hero_arrtAtlas", iter_4_5[2])
-				end
-			end
-		elseif var_4_0 == 4 then
-			for iter_4_6, iter_4_7 in ipairs(GameDisplayCfg.hero_mechanism_type_white_tag.value) do
-				if iter_4_7[1] == arg_4_1.tag then
-					arg_4_0.recIcon_.sprite = getSprite("Atlas/Hero_arrtAtlas", iter_4_7[2])
 				end
 			end
 		end

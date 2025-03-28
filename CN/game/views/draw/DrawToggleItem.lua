@@ -32,7 +32,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2)
 	local var_6_0 = DrawData:GetPollUpID(arg_6_0.poolId)
 
 	if DrawData:IsOnePrefabPool(arg_6_1) then
-		arg_6_0.bgImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Treasure/" .. 140035 .. SettingData:GetCurrentLanguageKey())
+		arg_6_0.bgImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Treasure/" .. 140035 .. SettingData:GetCurrentLanguageKey())
 	else
 		arg_6_0:RefreshBgImg(var_6_0)
 	end
@@ -66,7 +66,7 @@ function var_0_0.RefreshBgImg(arg_8_0, arg_8_1)
 		end
 	end
 
-	arg_8_0.bgImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Treasure/" .. var_8_0 .. SettingData:GetCurrentLanguageKey())
+	arg_8_0.bgImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Treasure/" .. var_8_0 .. SettingData:GetCurrentLanguageKey())
 end
 
 function var_0_0.RegistCallBack(arg_9_0, arg_9_1)

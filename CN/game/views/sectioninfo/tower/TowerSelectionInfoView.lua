@@ -47,7 +47,7 @@ function var_0_0.RefreshUI(arg_5_0)
 	arg_5_0:RefreshReward()
 
 	arg_5_0.sectionName_.text = GetI18NText(arg_5_0.cfg_.name)
-	arg_5_0.sectionImage_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, arg_5_0.cfg_.background_1))
+	arg_5_0.sectionImage_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, arg_5_0.cfg_.background_1))
 	arg_5_0.storyText_.text = GetI18NText(arg_5_0.cfg_.tips)
 	arg_5_0.btnText_.text = arg_5_0.btnTips_
 end

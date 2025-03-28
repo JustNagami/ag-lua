@@ -30,7 +30,7 @@ function var_0_0.SetData(arg_4_0, arg_4_1, arg_4_2)
 		arg_4_0["m_skillText" .. iter_4_0].text = getAffixDesc(var_4_0)
 	end
 
-	arg_4_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/StrongholdUI/StrongholdSkill/" .. arg_4_1)
+	arg_4_0.m_icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/StrongholdUI/StrongholdSkill/" .. arg_4_1)
 end
 
 return var_0_0

@@ -95,7 +95,7 @@ function var_0_0.RefreshStageInfo(arg_8_0)
 	local var_8_1 = BattleMythicStageCfg[var_8_0]
 
 	arg_8_0.sectionName_.text = GetI18NText(var_8_1.name)
-	arg_8_0.sectionImage_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_8_1.background_1))
+	arg_8_0.sectionImage_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_8_1.background_1))
 	arg_8_0.storyText_.text = GetI18NText(var_8_1.tips)
 end
 

@@ -6123,6 +6123,8 @@
 				PlayerAction.UseStoryTrigger(1039011, 210390102, 103902052, 2)
 				arg_211_0:Play103902056(arg_211_1)
 			end
+
+			arg_211_1:RecordChoiceLog(103902052, 103902053, 103902056)
 		end
 
 		function arg_211_1.onSingleLineUpdate_(arg_214_0)

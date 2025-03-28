@@ -167,7 +167,7 @@ function var_0_0.UpdateAvatarView(arg_11_0)
 		if var_11_0 ~= 0 then
 			SetActive(arg_11_0.m_weaponIcon.gameObject, true)
 
-			arg_11_0.m_weaponIcon.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/Portrait/" .. var_11_0)
+			arg_11_0.m_weaponIcon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/WeaponServant/Portrait/" .. var_11_0)
 		end
 	else
 		arg_11_0.heroAvatarView_:SetSkinId(arg_11_0:GetHeroSkin(arg_11_0.curHeroId_))

@@ -34,8 +34,8 @@ end
 
 function var_0_0.UpdateView(arg_8_0)
 	arg_8_0.nameTxt_.text = GetI18NText(arg_8_0.cfg.skill_name)
-	arg_8_0.normalIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_MonsterPlayUI/" .. arg_8_0.cfg.skill_start_icon)
-	arg_8_0.upIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_MonsterPlayUI/" .. arg_8_0.cfg.skill_new_icon)
+	arg_8_0.normalIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_MonsterPlayUI/" .. arg_8_0.cfg.skill_start_icon)
+	arg_8_0.upIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_MonsterPlayUI/" .. arg_8_0.cfg.skill_new_icon)
 end
 
 function var_0_0.OnExit(arg_9_0)

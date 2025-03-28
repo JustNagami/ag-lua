@@ -99,7 +99,7 @@ function var_0_0.RefreshUI(arg_11_0)
 	end
 
 	arg_11_0.numText_.text = arg_11_0.index_ >= 10 and arg_11_0.index_ or "0" .. arg_11_0.index_
-	arg_11_0.image_.sprite = getSpriteWithoutAtlas(arg_11_0.cfg_.image)
+	arg_11_0.image_.sprite = pureGetSpriteWithoutAtlas(arg_11_0.cfg_.image)
 	arg_11_0.topTitleText_.text = arg_11_0.cfg_.story_name
 
 	arg_11_0:RefreshTask()

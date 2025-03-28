@@ -62,7 +62,11 @@ function var_0_0.onRenderMultiResultContent(arg_6_0)
 			if type(iter_6_1) == "table" and #iter_6_1 > 0 then
 				local var_6_0, var_6_1, var_6_2 = ActivityMultiRewardData:GetLastBattleMultiData()
 
-				arg_6_0.multiCountText_.text = var_6_0 .. "/" .. var_6_1
+				if RegressionDataNew:GetMultipleUseTimes() > 0 then
+					var_6_0, var_6_1, var_6_2 = RegressionDataNew:GetMultipleValue()
+				end
+
+				arg_6_0.multiCountText_.text = string.format(GetTips("NEW_REGRESSION_DOUBLE_REWARD_DESC"), var_6_0, var_6_1)
 				arg_6_0.multiRatioText_.text = var_6_2 / 100
 
 				arg_6_0.multiController:SetSelectedState("true")

@@ -17,7 +17,6 @@ end
 
 function var_0_0.AddUIListener(arg_3_0)
 	arg_3_0:AddBtnListener(arg_3_0.mainBtn_, nil, function()
-		DormRedPointTools:SetIlluNewTagRed("furNew", RedPointConst.DORM_ILLU_FUR_THEME, false, arg_3_0.themeID_)
 		arg_3_0.clickFunc_(arg_3_0.themeID_, arg_3_0.index_)
 	end)
 end

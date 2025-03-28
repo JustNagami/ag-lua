@@ -57,7 +57,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
 	SetActive(arg_6_0.icon_.gameObject, not var_6_2)
 
 	if var_6_2 then
-		arg_6_0.role_.sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroIcon.path .. arg_6_0.itemID_)
+		arg_6_0.role_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroIcon.path .. arg_6_0.itemID_)
 	else
 		arg_6_0.icon_.sprite = ItemTools.getItemSprite(arg_6_0.itemID_)
 	end

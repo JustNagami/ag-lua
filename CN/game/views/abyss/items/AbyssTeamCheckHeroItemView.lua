@@ -41,7 +41,7 @@ function var_0_0.UpdateView(arg_8_0)
 		var_8_0 = arg_8_0.heroInfo_.hero_id
 	end
 
-	arg_8_0.icon_.sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. var_8_0)
+	arg_8_0.icon_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. var_8_0)
 end
 
 function var_0_0.OnEnter(arg_9_0)

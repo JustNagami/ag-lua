@@ -50,7 +50,7 @@ function var_0_0.RefreshUI(arg_8_0)
 
 	arg_8_0.name2_.text = HeroCfg[var_8_0].suffix
 	arg_8_0.name1_.text = string.format(GetTips("ACTIVITY_HERO_TASK_REWARD"), HeroCfg[var_8_0].suffix)
-	arg_8_0.icon_.sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroIcon.path .. var_8_0)
+	arg_8_0.icon_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroIcon.path .. var_8_0)
 	arg_8_0.desc_.text = arg_8_0.cfg_.desc
 
 	local var_8_1 = ActivityHeroLetterTools.IsReward(arg_8_0.id_)

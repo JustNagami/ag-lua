@@ -29,7 +29,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1)
 
 	local var_5_0 = RogueTeamItemCfg[arg_5_1]
 
-	arg_5_0.icon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_5_1))
+	arg_5_0.icon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_5_1))
 	arg_5_0.name_.text = var_5_0.name
 
 	arg_5_0:Show(true)

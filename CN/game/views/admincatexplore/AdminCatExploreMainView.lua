@@ -138,7 +138,7 @@ function var_0_0.UpdateView(arg_13_0)
 	end
 
 	arg_13_0.level = AdminCatExploreData:GetDataByPara("level")
-	arg_13_0.exploreLevelImg_.sprite = getSpriteWithoutAtlas("TextureBg/ExploreUI/icon_" .. arg_13_0.level)
+	arg_13_0.exploreLevelImg_.sprite = pureGetSpriteWithoutAtlas("TextureBg/ExploreUI/icon_" .. arg_13_0.level)
 
 	local var_13_0 = ExploreLevelCfg[arg_13_0.level]
 	local var_13_1 = AdminCatExploreData:GetDataByPara("exp")

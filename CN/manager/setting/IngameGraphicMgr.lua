@@ -36,8 +36,18 @@ function var_0_0.ChangeVerticalSync(arg_5_0, arg_5_1)
 	end
 end
 
-function var_0_0.Dispose(arg_6_0)
-	return
+function var_0_0.ChangeDof(arg_6_0, arg_6_1)
+	local var_6_0 = arg_6_1 == 1
+
+	if arg_6_0.ingameSetting_ then
+		arg_6_0.ingameSetting_:ChangeDof(var_6_0)
+	else
+		Debug.LogError("未找到IngameGraphicSetting！！请联系sqjc")
+	end
+end
+
+function var_0_0.Dispose(arg_7_0)
+	arg_7_0.ingameSetting_ = nil
 end
 
 return var_0_0

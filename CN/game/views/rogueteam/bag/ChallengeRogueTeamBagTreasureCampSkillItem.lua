@@ -37,7 +37,7 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1)
 			local var_4_1 = ChallengeRogueTeamTools.GetItemIDByCampID(var_4_0)
 
 			arg_4_0.cfg_ = RogueTeamItemCfg[var_4_1]
-			arg_4_0.icon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_4_1))
+			arg_4_0.icon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_4_1))
 			arg_4_0.nameText_.text = arg_4_0.cfg_.name
 			arg_4_0.descText_.text = ChallengeRogueTeamTools.GetItemDesc(var_4_1, nil, arg_4_0.descText_.color)
 
@@ -49,7 +49,7 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1)
 		return
 	end
 
-	arg_4_0.icon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_4_0.skillID_))
+	arg_4_0.icon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_4_0.skillID_))
 	arg_4_0.nameText_.text = arg_4_0.cfg_.name
 	arg_4_0.descText_.text = ChallengeRogueTeamTools.GetItemDesc(arg_4_0.skillID_, nil, arg_4_0.descText_.color)
 

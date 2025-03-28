@@ -172,7 +172,7 @@ function var_0_0.RefreshUI(arg_13_0)
 	if var_13_19 and var_13_19 ~= 0 then
 		arg_13_0.skillController:SetSelectedIndex(1)
 
-		arg_13_0.m_skillIcon.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/StrongholdUI/StrongholdSkill/" .. var_13_19)
+		arg_13_0.m_skillIcon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/StrongholdUI/StrongholdSkill/" .. var_13_19)
 	else
 		arg_13_0.skillController:SetSelectedIndex(0)
 	end

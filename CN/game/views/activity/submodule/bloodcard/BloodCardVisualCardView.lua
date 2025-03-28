@@ -37,7 +37,7 @@ end
 
 function var_0_0.RefreshUI(arg_5_0)
 	arg_5_0.powerText_.text = arg_5_0.cfg_.power
-	arg_5_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_Com/CORGUI_3_10_BloodCardUI/" .. arg_5_0.cfg_.illustration)
+	arg_5_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_Com/CORGUI_3_10_BloodCardUI/" .. arg_5_0.cfg_.illustration)
 
 	arg_5_0.needPointController_:SetSelectedState(arg_5_0.cfg_.need_point)
 

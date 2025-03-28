@@ -69,7 +69,7 @@ function var_0_0.RefreshUI(arg_12_0)
 	local var_12_3 = ActivitySpringFestivalGreetingCfg[var_12_2]
 	local var_12_4 = SkinCfg[var_12_3.story_name].picture_id
 
-	arg_12_0.portraitImage_.sprite = getSpriteWithoutAtlas("TextureConfig/EmptyDream/letter_role_title/" .. var_12_4)
+	arg_12_0.portraitImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/EmptyDream/letter_role_title/" .. var_12_4)
 	arg_12_0.titleText_.text = string.format(GetTips("ACTIVITY_HERO_PRESENT"), GetI18NText(HeroCfg[SkinCfg[var_12_3.story_name].hero].suffix))
 	arg_12_0.greetingText_.text = GetI18NText(var_12_3.story_word)
 

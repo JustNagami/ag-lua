@@ -109,7 +109,7 @@ function var_0_0.Refresh(arg_13_0, arg_13_1)
 	local var_13_6 = PlayerData:GetPlayerInfo()
 
 	arg_13_0.m_icon.sprite = ItemTools.getItemSprite(var_13_6 and var_13_6.portrait)
-	arg_13_0.m_frame.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_13_6.icon_frame)
+	arg_13_0.m_frame.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Frame/" .. var_13_6.icon_frame)
 
 	arg_13_0.rankTypeController:SetSelectedIndex(arg_13_0.rankType - 1)
 end

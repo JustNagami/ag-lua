@@ -32,7 +32,7 @@ function var_0_1.SetData(arg_5_0, arg_5_1, arg_5_2, arg_5_3)
 end
 
 function var_0_1.Refresh(arg_6_0)
-	local var_6_0 = StageArchivesCollecteMomoTalkCfg[arg_6_0.talkID_]
+	local var_6_0 = StageArchivesCollectMomoTalkCfg[arg_6_0.talkID_]
 
 	arg_6_0.speakerIcon_.sprite = getSpriteViaConfig("StoryHeadIcon", var_6_0.speaker_icon)
 	arg_6_0.speakerName_.text = var_6_0.speaker_name

@@ -121,6 +121,10 @@
 		component = SkinDlcShowView
 	},
 	{
+		name = "skinDlcListShow",
+		component = SkinDlcListShowView
+	},
+	{
 		name = "videoShowView",
 		component = VideoShowView
 	},
@@ -285,6 +289,10 @@
 		component = RechargeTotalRechargeView
 	},
 	{
+		name = "rechargeAppendPop",
+		component = RechargeAppendPopView
+	},
+	{
 		name = "currencyBuyFatigue",
 		component = ExchangeFatigueView
 	},
@@ -328,6 +336,11 @@
 		name = "chapterSection",
 		ignoreMerge = true,
 		component = ChapterSectionView
+	},
+	{
+		name = "chapterSectionRollBg",
+		ignoreMerge = true,
+		component = ChapterSectionRollBgView
 	},
 	{
 		name = "chapterSectionReward",
@@ -1069,6 +1082,10 @@
 		component = BirthdaySettingView
 	},
 	{
+		name = "BirthdayPop",
+		component = BirthdayPopView
+	},
+	{
 		name = "HeroShowChange",
 		component = HeroShowChangeView
 	},
@@ -1131,10 +1148,6 @@
 	{
 		name = "showHeroSelect",
 		component = ShowHeroSelectView
-	},
-	{
-		name = "posterGirlSelect",
-		component = PosterGirlSelectView
 	},
 	{
 		name = "portraitSelect",
@@ -1689,6 +1702,10 @@
 	{
 		name = "rechargeGiftPop",
 		component = RechargeGiftPopView
+	},
+	{
+		name = "rechargeSkinListFilterView",
+		component = RechargeSkinListFilterView
 	},
 	{
 		name = "rechargeFukubukuro",
@@ -3718,6 +3735,10 @@
 		component = ActivityAthenaStoryView
 	},
 	{
+		name = "athenaStoryStage",
+		component = AthenaStoryView
+	},
+	{
 		name = "activityFactoryStoryStage",
 		component = ActivityFactoryStoryView
 	},
@@ -3831,7 +3852,7 @@
 	},
 	{
 		name = "heroTeamInfoCooperation",
-		component = HeroTeamInfoCooperationView
+		component = NewHeroTeamInfoCooperationView
 	},
 	{
 		name = "battleCooperationFailed",
@@ -4303,7 +4324,7 @@
 	},
 	{
 		name = "regressionNew",
-		component = RegressionNewView
+		component = RegressionMainView
 	},
 	{
 		name = "capsuleToysGetReward",
@@ -5879,6 +5900,14 @@
 		component = RandomHeroModePopView
 	},
 	{
+		name = "customCenter",
+		component = CustomCenterView
+	},
+	{
+		name = "customCenterSceneDetail",
+		component = CustomCenterSceneDetailView
+	},
+	{
 		name = "assetPendPop",
 		component = AssetPendPopView
 	},
@@ -6195,6 +6224,10 @@
 		component = QWorldQuestMainView
 	},
 	{
+		name = "qworldStoryHistory",
+		component = QWorldStoryHistoryView
+	},
+	{
 		name = "bloodCardBuild",
 		component = BloodCardBuildView
 	},
@@ -6265,5 +6298,141 @@
 	{
 		name = "valentineGameV3StagePopView",
 		component = ValentineGameV3StagePopView
+	},
+	{
+		name = "seaWarfareMain",
+		component = SeaWarfareMainView
+	},
+	{
+		name = "seaWarfareBattleReady",
+		component = SeaWarfareBattleReadyView
+	},
+	{
+		name = "qWorldStageInfo",
+		component = QWorldStageInfoView
+	},
+	{
+		name = "qWorldComfirmView_4_0",
+		component = QWorldComfirmView_4_0
+	},
+	{
+		name = "seaWarfareNormalStageInfo",
+		component = SeaWarfareNormalStageInfoView
+	},
+	{
+		name = "battleSeaWarfareResult",
+		component = BattleSeaWarfareResultView
+	},
+	{
+		name = "seaWarfareNormalBattleReady",
+		component = SeaWarfareNormalBattleReadyView
+	},
+	{
+		name = "seaWarfareGmPanel",
+		component = SeaWarfareGmPanelView
+	},
+	{
+		name = "skuldPuzzleGameView",
+		component = SkuldPuzzleGameView
+	},
+	{
+		name = "skuldWalkPerformanceView",
+		component = SkuldWalkPerformanceView
+	},
+	{
+		name = "skuldPuzzleSettleView",
+		component = SkuldPuzzleSettleView
+	},
+	{
+		name = "skuldPuzzleTipsView",
+		component = SkuldPuzzleTipsView
+	},
+	{
+		name = "sandPlayTakePhotoView",
+		component = SandPlayTakePhotoView
+	},
+	{
+		name = "sandPlayTakingPhotoView",
+		component = SandPlayTakingPhotoView
+	},
+	{
+		name = "skuldSystemStageView",
+		component = SkuldSystemStageView
+	},
+	{
+		name = "skuldSystemStageSectionView",
+		component = SkuldSystemStageSectionView
+	},
+	{
+		name = "skuldSystemMainView",
+		component = SkuldSystemMainView
+	},
+	{
+		name = "skuldSystemTaskView",
+		component = SkuldSystemTaskView
+	},
+	{
+		name = "battleResultSkuldView",
+		component = BattleResultSkuldView
+	},
+	{
+		name = "skuldSystemTrustView",
+		component = SkuldSystemTrustView
+	},
+	{
+		name = "qWorldBookletEntry",
+		component = QWorldBookletEntryView
+	},
+	{
+		name = "qWorldBookletMain",
+		component = QWorldBookletMainView
+	},
+	{
+		name = "qWorldBookletLevel",
+		component = QWorldBookletLevelView
+	},
+	{
+		name = "qWorldBookletPhotoPop",
+		component = QWorldBookletPhotoPopView
+	},
+	{
+		name = "quanZhouLimitTimeTaskView",
+		component = QuanZhouLimitTimeTaskView
+	},
+	{
+		name = "skuldSystemPhotoView",
+		component = SkuldSystemPhotoView
+	},
+	{
+		name = "skuldSystemPhotoPopView",
+		component = SkuldSystemPhotoPopView
+	},
+	{
+		name = "skuldSystemEnterView",
+		component = SkuldSystemEnterView
+	},
+	{
+		name = "skinDiscountGiftMain",
+		component = SkinDiscountGiftMainView
+	},
+	{
+		name = "skinDiscountGiftShop",
+		component = SkinDiscountGiftShopView
+	},
+	{
+		name = "storySoundSetting",
+		component = StorySoundSettingView
+	},
+	{
+		name = "storyVoiceSwitch",
+		component = StoryVoiceSwitchView
+	},
+	{
+		name = "regressionNewGift",
+		component = RegressionGiftPopView
+	},
+	{
+		name = "PureModeView",
+		component = PureModeView
 	}
 }

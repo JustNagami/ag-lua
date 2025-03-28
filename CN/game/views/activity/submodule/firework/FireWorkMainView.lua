@@ -134,7 +134,7 @@ function var_0_0.RefreshUI(arg_15_0)
 		FireWorkAction.SetRead(arg_15_0.select)
 
 		arg_15_0.m_roleDes.text = GetI18NText(var_15_0.desc)
-		arg_15_0.m_roleIcon.sprite = getSpriteWithoutAtlas("TextureConfig/EmptyDream/letter_role_title/" .. var_15_0.icon)
+		arg_15_0.m_roleIcon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/EmptyDream/letter_role_title/" .. var_15_0.icon)
 		arg_15_0.rewards = var_15_0.reward_item_list
 
 		arg_15_0.rewardList:StartScroll(#arg_15_0.rewards)

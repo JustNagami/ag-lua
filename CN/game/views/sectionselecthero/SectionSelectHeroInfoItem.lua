@@ -6,300 +6,386 @@ function var_0_0.OnCtor(arg_1_0, arg_1_1, arg_1_2)
 	arg_1_0.pos_ = arg_1_2
 
 	SetActive(arg_1_0.gameObject_, true)
+
+	arg_1_0.positionCulculated_ = false
+
 	arg_1_0:Init()
-
-	local var_1_0 = arg_1_0.dragEventListener_.transform
-
-	arg_1_0.originalDragPosition_ = var_1_0:GetLocalPosition()
-	arg_1_0.originalDragScreenPos_ = manager.ui.uiCamera:WorldToScreenPoint(var_1_0.position)
 end
 
 function var_0_0.Init(arg_2_0)
 	arg_2_0:BindCfgUI()
+	arg_2_0:InitHandler()
 	arg_2_0:InitController()
+	arg_2_0:InitSubView()
 	arg_2_0:AddUIListener()
 end
 
-function var_0_0.InitController(arg_3_0)
-	arg_3_0.trialController_ = arg_3_0.controllerExCollection_:GetController("trial")
-	arg_3_0.heroLockController_ = arg_3_0.controllerExCollection_:GetController("heroLock")
-	arg_3_0.postController_ = arg_3_0.controllerExCollection_:GetController("post")
-	arg_3_0.emptyController_ = arg_3_0.controllerExCollection_:GetController("empty")
-	arg_3_0.hpController_ = arg_3_0.controllerExCollection_:GetController("HP")
-	arg_3_0.assistantController_ = arg_3_0.controllerExCollection_:GetController("assistant")
-	arg_3_0.powerController_ = arg_3_0.controllerExCollection_:GetController("power")
-	arg_3_0.energyController_ = arg_3_0.controllerExCollection_:GetController("energy")
+function var_0_0.InitHandler(arg_3_0)
+	arg_3_0.beginDragHeroHandler_ = handler(arg_3_0, arg_3_0.OnSectionBeginDragHero)
 end
 
-function var_0_0.AddUIListener(arg_4_0)
-	arg_4_0.dragEventListener_:AddListenerType1(UnityEngine.EventSystems.EventTriggerType.BeginDrag, LuaHelper.EventTriggerAction1(function(arg_5_0, arg_5_1)
-		arg_4_0.canDrag_ = not arg_4_0:IsEmpty()
+function var_0_0.InitController(arg_4_0)
+	arg_4_0.tipsController_ = arg_4_0.controllerExCollection_:GetController("tips")
+	arg_4_0.trialController_ = arg_4_0.controllerExCollection_:GetController("trial")
+	arg_4_0.heroLockController_ = arg_4_0.controllerExCollection_:GetController("heroLock")
+	arg_4_0.postController_ = arg_4_0.controllerExCollection_:GetController("post")
+	arg_4_0.emptyController_ = arg_4_0.controllerExCollection_:GetController("empty")
+	arg_4_0.hpController_ = arg_4_0.controllerExCollection_:GetController("HP")
+	arg_4_0.assistantController_ = arg_4_0.controllerExCollection_:GetController("assistant")
+	arg_4_0.powerController_ = arg_4_0.controllerExCollection_:GetController("power")
+	arg_4_0.energyController_ = arg_4_0.controllerExCollection_:GetController("energy")
+end
 
-		if not arg_4_0.canDrag_ then
+function var_0_0.InitSubView(arg_5_0)
+	arg_5_0.randomAttributeTipsView_ = SectionRandomAttributeTipsView.New(arg_5_0.randomAttributeTipsGo_)
+end
+
+function var_0_0.AddUIListener(arg_6_0)
+	arg_6_0.dragEventListener_:AddListenerType1(UnityEngine.EventSystems.EventTriggerType.BeginDrag, LuaHelper.EventTriggerAction1(function(arg_7_0, arg_7_1)
+		arg_6_0.canDrag_ = not arg_6_0:IsEmpty()
+
+		if not arg_6_0.canDrag_ then
 			return
 		end
 
-		if arg_4_0.beginDragCallback_ then
-			arg_4_0.beginDragCallback_(arg_4_0.pos_, arg_5_0, arg_5_1)
+		if arg_6_0.beginDragCallback_ then
+			arg_6_0.beginDragCallback_(arg_6_0.pos_, arg_7_0, arg_7_1)
 		end
 	end))
-	arg_4_0.dragEventListener_:AddListenerType1(UnityEngine.EventSystems.EventTriggerType.Drag, LuaHelper.EventTriggerAction1(function(arg_6_0, arg_6_1)
-		if not arg_4_0.canDrag_ then
+	arg_6_0.dragEventListener_:AddListenerType1(UnityEngine.EventSystems.EventTriggerType.Drag, LuaHelper.EventTriggerAction1(function(arg_8_0, arg_8_1)
+		if not arg_6_0.canDrag_ then
 			return
 		end
 
-		if arg_4_0.dragCallback_ then
-			arg_4_0.dragCallback_(arg_4_0.pos_, arg_6_0, arg_6_1)
+		if arg_6_0.dragCallback_ then
+			arg_6_0.dragCallback_(arg_6_0.pos_, arg_8_0, arg_8_1)
 		end
 	end))
-	arg_4_0.dragEventListener_:AddListenerType1(UnityEngine.EventSystems.EventTriggerType.EndDrag, LuaHelper.EventTriggerAction1(function(arg_7_0, arg_7_1)
-		if not arg_4_0.canDrag_ then
+	arg_6_0.dragEventListener_:AddListenerType1(UnityEngine.EventSystems.EventTriggerType.EndDrag, LuaHelper.EventTriggerAction1(function(arg_9_0, arg_9_1)
+		if not arg_6_0.canDrag_ then
 			return
 		end
 
-		if arg_4_0.endDragCallback_ then
-			arg_4_0.endDragCallback_(arg_4_0.pos_, arg_7_0, arg_7_1)
+		if arg_6_0.endDragCallback_ then
+			arg_6_0.endDragCallback_(arg_6_0.pos_, arg_9_0, arg_9_1)
 		end
 	end))
-	arg_4_0.dragEventListener_:AddListenerType1(UnityEngine.EventSystems.EventTriggerType.PointerUp, LuaHelper.EventTriggerAction1(function(arg_8_0, arg_8_1)
-		if arg_4_0.clickCallback_ then
-			arg_4_0.clickCallback_(arg_4_0.pos_, arg_8_0, arg_8_1)
+	arg_6_0.dragEventListener_:AddListenerType1(UnityEngine.EventSystems.EventTriggerType.PointerUp, LuaHelper.EventTriggerAction1(function(arg_10_0, arg_10_1)
+		if arg_6_0.clickCallback_ then
+			arg_6_0.clickCallback_(arg_6_0.pos_, arg_10_0, arg_10_1)
 		end
 	end))
+	arg_6_0:AddBtnListener(arg_6_0.randomAttributeTipsBtn_, nil, function()
+		arg_6_0.randomAttributeTipsView_:SetData(arg_6_0.sectionProxy_)
+	end)
 end
 
-function var_0_0.RegisterBeginDrag(arg_9_0, arg_9_1)
-	arg_9_0.beginDragCallback_ = arg_9_1
+function var_0_0.RegisterBeginDrag(arg_12_0, arg_12_1)
+	arg_12_0.beginDragCallback_ = arg_12_1
 end
 
-function var_0_0.RegisterDrag(arg_10_0, arg_10_1)
-	arg_10_0.dragCallback_ = arg_10_1
+function var_0_0.RegisterDrag(arg_13_0, arg_13_1)
+	arg_13_0.dragCallback_ = arg_13_1
 end
 
-function var_0_0.RegisterEndDrag(arg_11_0, arg_11_1)
-	arg_11_0.endDragCallback_ = arg_11_1
+function var_0_0.RegisterEndDrag(arg_14_0, arg_14_1)
+	arg_14_0.endDragCallback_ = arg_14_1
 end
 
-function var_0_0.RegistClick(arg_12_0, arg_12_1)
-	arg_12_0.clickCallback_ = arg_12_1
+function var_0_0.RegistClick(arg_15_0, arg_15_1)
+	arg_15_0.clickCallback_ = arg_15_1
 end
 
-function var_0_0.GetOriginalDragPosition(arg_13_0)
-	return arg_13_0.originalDragPosition_
+function var_0_0.GetOriginalDragPosition(arg_16_0)
+	return arg_16_0.originalDragPosition_
 end
 
-function var_0_0.GetOriginalDragScreenPosition(arg_14_0)
-	return arg_14_0.originalDragScreenPos_
+function var_0_0.GetOriginalDragScreenPosition(arg_17_0)
+	return arg_17_0.originalDragScreenPos_
 end
 
-function var_0_0.Dispose(arg_15_0)
-	arg_15_0:RemoveTriggerListeners()
+function var_0_0.Dispose(arg_18_0)
+	arg_18_0:RemoveTriggerListeners()
 
-	arg_15_0.originalDragPosition_ = nil
+	arg_18_0.originalDragPosition_ = nil
 
-	var_0_0.super.Dispose(arg_15_0)
+	arg_18_0.randomAttributeTipsView_:Dispose()
+	var_0_0.super.Dispose(arg_18_0)
 end
 
-function var_0_0.RemoveTriggerListeners(arg_16_0)
-	arg_16_0.dragEventListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.BeginDrag)
-	arg_16_0.dragEventListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.Drag)
-	arg_16_0.dragEventListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.EndDrag)
-	arg_16_0.dragEventListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.PointerUp)
+function var_0_0.RemoveTriggerListeners(arg_19_0)
+	arg_19_0.dragEventListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.BeginDrag)
+	arg_19_0.dragEventListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.Drag)
+	arg_19_0.dragEventListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.EndDrag)
+	arg_19_0.dragEventListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.PointerUp)
 end
 
-function var_0_0.SetProxy(arg_17_0, arg_17_1)
-	arg_17_0.sectionProxy_ = arg_17_1
+function var_0_0.SetProxy(arg_20_0, arg_20_1)
+	arg_20_0.sectionProxy_ = arg_20_1
 end
 
-function var_0_0.OnEnter(arg_18_0, arg_18_1)
-	arg_18_0:BindRedPoint()
+function var_0_0.OnEnter(arg_21_0, arg_21_1)
+	arg_21_0:BindRedPoint()
+	arg_21_0:AddEventListener()
+	arg_21_0:Show(false)
 end
 
-function var_0_0.OnExit(arg_19_0)
-	arg_19_0:UnBindRedPoint()
+function var_0_0.OnExit(arg_22_0)
+	arg_22_0:UnBindRedPoint()
+	arg_22_0:RemoveAllEventListener()
 end
 
-function var_0_0.Refresh(arg_20_0, arg_20_1)
-	arg_20_0.pos_ = arg_20_1
-	arg_20_0.isCaptain_ = arg_20_1 == 1
-	arg_20_0.heroID_ = arg_20_0.sectionProxy_.heroInfoList[arg_20_0.pos_].heroID
-	arg_20_0.trialID_ = arg_20_0.sectionProxy_.heroInfoList[arg_20_0.pos_].trialID
-	arg_20_0.isPosLock_ = arg_20_0.sectionProxy_.heroInfoList[arg_20_0.pos_].isPosLock
-	arg_20_0.isHeroLock_ = arg_20_0.sectionProxy_.heroInfoList[arg_20_0.pos_].isHeroLock
-
-	arg_20_0:RefreshUI()
-	arg_20_0:RefreshCustomUI()
+function var_0_0.AddEventListener(arg_23_0)
+	arg_23_0:RegistEventListener(SECTION_BEGIN_DRAG_HERO, arg_23_0.beginDragHeroHandler_)
 end
 
-function var_0_0.RefreshUI(arg_21_0)
-	if not arg_21_0.stateController_ then
-		arg_21_0:RebindController()
-	end
+function var_0_0.Refresh(arg_24_0, arg_24_1)
+	arg_24_0.pos_ = arg_24_1
+	arg_24_0.isCaptain_ = arg_24_1 == 1
+	arg_24_0.heroID_ = arg_24_0.sectionProxy_.heroInfoList[arg_24_0.pos_].heroID
+	arg_24_0.trialID_ = arg_24_0.sectionProxy_.heroInfoList[arg_24_0.pos_].trialID
+	arg_24_0.isPosLock_ = arg_24_0.sectionProxy_.heroInfoList[arg_24_0.pos_].isPosLock
+	arg_24_0.isHeroLock_ = arg_24_0.sectionProxy_.heroInfoList[arg_24_0.pos_].isHeroLock
 
-	arg_21_0:RefreshAddBtn()
+	arg_24_0:RefreshUI()
+	arg_24_0:RefreshCustomUI()
+end
 
-	if arg_21_0:IsEmpty() then
-		arg_21_0.emptyController_:SetSelectedState("true")
+function var_0_0.RefreshUI(arg_25_0)
+	arg_25_0:RefreshAddBtn()
+
+	if arg_25_0:IsEmpty() then
+		arg_25_0.emptyController_:SetSelectedState("true")
 
 		return
 	else
-		arg_21_0.emptyController_:SetSelectedState("false")
+		arg_25_0.emptyController_:SetSelectedState("false")
 	end
 
-	arg_21_0:RefreshTrial()
-	arg_21_0:RefreshHeroLock()
-	arg_21_0:RefershPower()
-	arg_21_0:RefreshRace()
-	arg_21_0:RefreshPost()
-	arg_21_0:RefreshAttackType()
-	arg_21_0:RefreshHP()
-	arg_21_0:RefreshAssistant()
-	arg_21_0:RefreshEnergy()
+	arg_25_0:RefrehsTips()
+	arg_25_0:RefreshTrial()
+	arg_25_0:RefreshHeroLock()
+	arg_25_0:RefershPower()
+	arg_25_0:RefreshRace()
+	arg_25_0:RefreshPost()
+	arg_25_0:RefreshAttackType()
+	arg_25_0:RefreshHP()
+	arg_25_0:RefreshAssistant()
+	arg_25_0:RefreshEnergy()
 end
 
-function var_0_0.RefreshTrial(arg_22_0)
-	local var_22_0 = not arg_22_0.isPosLock_ and not arg_22_0.isHeroLock_ and arg_22_0.trialID_ and arg_22_0.trialID_ ~= 0
-
-	arg_22_0.trialController_:SetSelectedState(tostring(var_22_0))
-end
-
-function var_0_0.RefreshHeroLock(arg_23_0)
-	local var_23_0 = arg_23_0.isHeroLock_ or arg_23_0.isPosLock_
-
-	arg_23_0.heroLockController_:SetSelectedState(tostring(var_23_0))
-end
-
-function var_0_0.RefreshAddBtn(arg_24_0)
-	if arg_24_0.stateController_ then
-		if not arg_24_0:IsEmpty() then
-			arg_24_0.stateController_:SetSelectedState("selected")
-		elseif arg_24_0.isPosLock_ == true or not arg_24_0.sectionProxy_.canChangeTeam then
-			arg_24_0.stateController_:SetSelectedState("lock")
-		else
-			arg_24_0.stateController_:SetSelectedState("empty")
-		end
-	end
-end
-
-function var_0_0.RebindController(arg_25_0)
-	local var_25_0 = GameObject.Find(string.format("X104/X104_SceneSteps/X104_Formation_HeroPos_%s", arg_25_0.pos_))
-
-	if var_25_0 then
-		arg_25_0.stateController_ = var_25_0:GetComponent("ControllerExCollection"):GetController("state")
-	end
-end
-
-function var_0_0.IsEmpty(arg_26_0)
-	return not arg_26_0.heroID_ or arg_26_0.heroID_ == 0
-end
-
-function var_0_0.RefershPower(arg_27_0)
-	arg_27_0.powerController_:SetSelectedState(tostring(arg_27_0.sectionProxy_.needHeroPower))
-
-	if arg_27_0.sectionProxy_.needHeroPower then
-		arg_27_0:RefreshPowerUI()
-	end
-end
-
-function var_0_0.RefreshPowerUI(arg_28_0)
-	arg_28_0.powerText_.text = arg_28_0:GetHeroPower()
-end
-
-function var_0_0.RefreshRace(arg_29_0)
-	arg_29_0.raceIcon_.sprite = HeroTools.GetHeroRaceIcon(arg_29_0.heroID_)
-end
-
-function var_0_0.RefreshPost(arg_30_0)
-	arg_30_0.postController_:SetSelectedState(tostring(arg_30_0.isCaptain_))
-end
-
-function var_0_0.RefreshAttackType(arg_31_0)
-	local var_31_0 = HeroTools.GetHeroSkillAttributeIcon(arg_31_0.heroID_)
-
-	if var_31_0 then
-		SetActive(arg_31_0.attackTypeIcon_.gameObject, true)
-
-		arg_31_0.attackTypeIcon_.sprite = var_31_0
-	else
-		SetActive(arg_31_0.attackTypeIcon_.gameObject, false)
-	end
-end
-
-function var_0_0.RefreshCustomUI(arg_32_0)
+function var_0_0.RefreshCustomUI(arg_26_0)
 	return
 end
 
-function var_0_0.RefreshHP(arg_33_0)
-	arg_33_0.hpController_:SetSelectedState(tostring(arg_33_0.sectionProxy_.needHeroHP))
+function var_0_0.RefrehsTips(arg_27_0)
+	local var_27_0 = HeroCfg[arg_27_0.heroID_].ATK_attribute
 
-	if arg_33_0.sectionProxy_.needHeroHP then
-		arg_33_0:RefreshHPUI()
+	if type(var_27_0) == "table" then
+		for iter_27_0, iter_27_1 in ipairs(var_27_0) do
+			if iter_27_1 == HeroConst.HERO_ATTACK_TYPE.RANDOM then
+				arg_27_0.tipsController_:SetSelectedState("on")
+
+				return
+			end
+		end
 	end
+
+	arg_27_0.tipsController_:SetSelectedState("off")
 end
 
-function var_0_0.RefreshHPUI(arg_34_0)
-	local var_34_0, var_34_1 = arg_34_0:GetHeroHP()
+function var_0_0.RefreshTrial(arg_28_0)
+	local var_28_0 = not arg_28_0.isPosLock_ and not arg_28_0.isHeroLock_ and arg_28_0.trialID_ and arg_28_0.trialID_ ~= 0
 
-	arg_34_0.hpImg_.fillAmount = var_34_1 / 100
-	arg_34_0.hpText_.text = var_34_1 .. "%"
+	arg_28_0.trialController_:SetSelectedState(tostring(var_28_0))
 end
 
-function var_0_0.RefreshAssistant(arg_35_0)
-	arg_35_0.assistantController_:SetSelectedState(tostring(arg_35_0.sectionProxy_.needHeroAssistant))
+function var_0_0.RefreshHeroLock(arg_29_0)
+	local var_29_0 = arg_29_0.isHeroLock_ or arg_29_0.isPosLock_
 
-	if arg_35_0.sectionProxy_.needHeroAssistant then
-		arg_35_0:RefreshAssistantUI()
-	end
+	arg_29_0.heroLockController_:SetSelectedState(tostring(var_29_0))
 end
 
-function var_0_0.RefreshAssistantUI(arg_36_0)
-	local var_36_0 = arg_36_0.sectionProxy_.heroInfoList[arg_36_0.pos_].isAssistant
-
-	arg_36_0.assistantController_:SetSelectedState(tostring(var_36_0))
-end
-
-function var_0_0.RefreshEnergy(arg_37_0)
-	arg_37_0.energyController_:SetSelectedState(tostring(arg_37_0.sectionProxy_.needHeroEnergy))
-
-	if arg_37_0.sectionProxy_.needHeroEnergy then
-		arg_37_0:RefreshEnergyUI()
-	end
-end
-
-function var_0_0.RefreshEnergyUI(arg_38_0)
-	if arg_38_0.heroID_ ~= 0 then
-		arg_38_0.energyController_:SetSelectedState("true")
-
-		arg_38_0.energyText_.text = arg_38_0:GetHeroEnergy()
-
-		UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_38_0.energyBgTrans_)
+function var_0_0.RefreshAddBtn(arg_30_0)
+	if not arg_30_0:IsEmpty() then
+		SectionSelectHeroScene.GetInstance():RefreshPositionState(arg_30_0.pos_, SectionSelectHeroConst.HERO_POS_STATE.selected)
+	elseif arg_30_0.isPosLock_ == true or not arg_30_0.sectionProxy_.canChangeTeam then
+		SectionSelectHeroScene.GetInstance():RefreshPositionState(arg_30_0.pos_, SectionSelectHeroConst.HERO_POS_STATE.lock)
 	else
-		arg_38_0.energyController_:SetSelectedState("false")
+		SectionSelectHeroScene.GetInstance():RefreshPositionState(arg_30_0.pos_, SectionSelectHeroConst.HERO_POS_STATE.empty)
 	end
 end
 
-function var_0_0.BindRedPoint(arg_39_0)
-	arg_39_0.sectionProxy_:CustomHeroBindRedPoint(arg_39_0.pos_, arg_39_0)
+function var_0_0.RebindController(arg_31_0)
+	SectionSelectHeroScene.GetInstance():RebindController(arg_31_0.pos_)
 end
 
-function var_0_0.UnBindRedPoint(arg_40_0)
-	arg_40_0.sectionProxy_:CustomHeroUnBindRedPoint(arg_40_0.pos_, arg_40_0)
+function var_0_0.IsEmpty(arg_32_0)
+	return not arg_32_0.heroID_ or arg_32_0.heroID_ == 0
 end
 
-function var_0_0.GetHeroPower(arg_41_0)
-	return arg_41_0.sectionProxy_:CustomGetHeroPower(arg_41_0.pos_, arg_41_0.heroID_, arg_41_0.trialID_)
+function var_0_0.RefershPower(arg_33_0)
+	arg_33_0.powerController_:SetSelectedState(tostring(arg_33_0.sectionProxy_.needHeroPower))
+
+	if arg_33_0.sectionProxy_.needHeroPower then
+		arg_33_0:RefreshPowerUI()
+	end
 end
 
-function var_0_0.GetHeroHP(arg_42_0)
-	return arg_42_0.sectionProxy_:CustomGetHeroHP(arg_42_0.pos_, arg_42_0.heroID_, arg_42_0.trialID_)
+function var_0_0.RefreshPowerUI(arg_34_0)
+	arg_34_0.powerText_.text = arg_34_0:GetHeroPower()
 end
 
-function var_0_0.GetHeroEnergy(arg_43_0)
-	return arg_43_0.sectionProxy_:CustomGetHeroEnergy(arg_43_0.pos_, arg_43_0.heroID_, arg_43_0.trialID_)
+function var_0_0.RefreshRace(arg_35_0)
+	arg_35_0.raceIcon_.sprite = HeroTools.GetHeroRaceIcon(arg_35_0.heroID_)
 end
 
-function var_0_0.Show(arg_44_0, arg_44_1)
-	SetActive(arg_44_0.gameObject_, arg_44_1)
+function var_0_0.RefreshPost(arg_36_0)
+	arg_36_0.postController_:SetSelectedState(tostring(arg_36_0.isCaptain_))
+end
+
+function var_0_0.RefreshAttackType(arg_37_0)
+	local var_37_0 = HeroTools.GetHeroSkillAttributeIcon(arg_37_0.heroID_)
+
+	if var_37_0 then
+		SetActive(arg_37_0.attackTypeIcon_.gameObject, true)
+
+		arg_37_0.attackTypeIcon_.sprite = var_37_0
+	else
+		SetActive(arg_37_0.attackTypeIcon_.gameObject, false)
+	end
+end
+
+function var_0_0.RefreshHP(arg_38_0)
+	arg_38_0.hpController_:SetSelectedState(tostring(arg_38_0.sectionProxy_.needHeroHP))
+
+	if arg_38_0.sectionProxy_.needHeroHP then
+		arg_38_0:RefreshHPUI()
+	end
+end
+
+function var_0_0.RefreshHPUI(arg_39_0)
+	local var_39_0, var_39_1 = arg_39_0:GetHeroHP()
+
+	arg_39_0.hpImg_.fillAmount = var_39_1 / 100
+	arg_39_0.hpText_.text = var_39_1 .. "%"
+end
+
+function var_0_0.RefreshAssistant(arg_40_0)
+	arg_40_0.assistantController_:SetSelectedState(tostring(arg_40_0.sectionProxy_.needHeroAssistant))
+
+	if arg_40_0.sectionProxy_.needHeroAssistant then
+		arg_40_0:RefreshAssistantUI()
+	end
+end
+
+function var_0_0.RefreshAssistantUI(arg_41_0)
+	local var_41_0 = arg_41_0.sectionProxy_.heroInfoList[arg_41_0.pos_].isAssistant
+
+	arg_41_0.assistantController_:SetSelectedState(tostring(var_41_0))
+end
+
+function var_0_0.RefreshEnergy(arg_42_0)
+	arg_42_0.energyController_:SetSelectedState(tostring(arg_42_0.sectionProxy_.needHeroEnergy))
+
+	if arg_42_0.sectionProxy_.needHeroEnergy then
+		arg_42_0:RefreshEnergyUI()
+	end
+end
+
+function var_0_0.RefreshEnergyUI(arg_43_0)
+	if arg_43_0.heroID_ ~= 0 then
+		arg_43_0.energyController_:SetSelectedState("true")
+
+		arg_43_0.energyText_.text = arg_43_0:GetHeroEnergy()
+
+		UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_43_0.energyBgTrans_)
+	else
+		arg_43_0.energyController_:SetSelectedState("false")
+	end
+end
+
+function var_0_0.BindRedPoint(arg_44_0)
+	arg_44_0.sectionProxy_:CustomHeroBindRedPoint(arg_44_0.pos_, arg_44_0)
+end
+
+function var_0_0.UnBindRedPoint(arg_45_0)
+	arg_45_0.sectionProxy_:CustomHeroUnBindRedPoint(arg_45_0.pos_, arg_45_0)
+end
+
+function var_0_0.GetHeroPower(arg_46_0)
+	return arg_46_0.sectionProxy_:CustomGetHeroPower(arg_46_0.pos_, arg_46_0.heroID_, arg_46_0.trialID_)
+end
+
+function var_0_0.GetHeroHP(arg_47_0)
+	return arg_47_0.sectionProxy_:CustomGetHeroHP(arg_47_0.pos_, arg_47_0.heroID_, arg_47_0.trialID_)
+end
+
+function var_0_0.GetHeroEnergy(arg_48_0)
+	return arg_48_0.sectionProxy_:CustomGetHeroEnergy(arg_48_0.pos_, arg_48_0.heroID_, arg_48_0.trialID_)
+end
+
+function var_0_0.Show(arg_49_0, arg_49_1)
+	SetActive(arg_49_0.gameObject_, arg_49_1)
+	arg_49_0.enterAnim_:Update(0)
+end
+
+function var_0_0.OnSectionBeginDragHero(arg_50_0)
+	arg_50_0.emptyController_:SetSelectedState("true")
+end
+
+function var_0_0.UpdatePosition(arg_51_0)
+	if not arg_51_0:UpdateLocalPosition() then
+		return false
+	end
+
+	arg_51_0:UpdateDragPosition()
+	arg_51_0:Show(true)
+
+	return true
+end
+
+function var_0_0.UpdateLocalPosition(arg_52_0)
+	local var_52_0 = manager.ui.canvas:GetComponent(typeof(Canvas)).worldCamera
+
+	if not arg_52_0:IsEmpty() then
+		local var_52_1 = SectionSelectHeroScene.GetInstance():GetModelPowerPointScreenPos(arg_52_0.pos_)
+
+		if var_52_1 then
+			if var_52_1.x < 0 or var_52_1.x > _G.SCREEN_WIDTH then
+				Debug.LogError("HeroInfoItem position is out of range, powerPoitnScreenPosX: " .. var_52_1.x)
+
+				return false
+			end
+
+			local var_52_2, var_52_3 = UnityEngine.RectTransformUtility.ScreenPointToLocalPointInRectangle(arg_52_0.transform_.parent, var_52_1, var_52_0, nil)
+
+			arg_52_0.transform_:SetLocalPositionEx(var_52_3.x, var_52_3.y, 0)
+		end
+	else
+		local var_52_4 = SectionSelectHeroScene.GetInstance():GetStateGoScreenPos(arg_52_0.pos_)
+
+		if var_52_4 then
+			if var_52_4.x < 0 or var_52_4.x > _G.SCREEN_WIDTH then
+				Debug.LogError("HeroInfoItem position is out of range, sceneStateGoScreenPos: " .. var_52_4.x)
+
+				return false
+			end
+
+			local var_52_5, var_52_6 = UnityEngine.RectTransformUtility.ScreenPointToLocalPointInRectangle(arg_52_0.transform_.parent, var_52_4, var_52_0, nil)
+
+			arg_52_0.transform_:SetLocalPositionX(var_52_6.x)
+		end
+	end
+
+	return true
+end
+
+function var_0_0.UpdateDragPosition(arg_53_0)
+	local var_53_0 = arg_53_0.dragEventListener_.transform
+
+	arg_53_0.originalDragPosition_ = var_53_0:GetLocalPosition()
+	arg_53_0.originalDragScreenPos_ = manager.ui.uiCamera:WorldToScreenPoint(var_53_0.position)
 end
 
 return var_0_0

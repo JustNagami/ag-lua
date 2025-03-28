@@ -5,7 +5,8 @@ local var_0_1 = {
 	"DRAW_POOL_TYPE_7",
 	"DRAW_POOL_TYPE_8",
 	"DRAW_POOL_TYPE_1",
-	"DRAW_POOL_TYPE_2"
+	"DRAW_POOL_TYPE_2",
+	"DRAW_POOL_TYPE_9"
 }
 local var_0_2 = {
 	5,
@@ -15,7 +16,8 @@ local var_0_2 = {
 	5,
 	1,
 	3,
-	4
+	4,
+	7
 }
 local var_0_3 = {
 	[1] = "90",
@@ -110,8 +112,12 @@ function var_0_0.AddUIListener(arg_6_0)
 		arg_6_0:DrawCheck(DrawConst.DRAW_TYPE.ONE)
 	end)
 	arg_6_0:AddBtnListener(arg_6_0.btnTenth_, nil, function()
-		if DrawPoolCfg[arg_6_0.selectPoolId_].pool_type == 8 then
+		local var_10_0 = DrawPoolCfg[arg_6_0.selectPoolId_]
+
+		if var_10_0.pool_type == 8 then
 			arg_6_0:DrawCheck(math.min(40 - DrawData:GetPoolDrawTimes(arg_6_0.selectPoolId_), 10))
+		elseif var_10_0.pool_type == 9 then
+			arg_6_0:DrawCheck(math.min(70 - DrawData:GetPoolDrawTimes(arg_6_0.selectPoolId_), 10))
 		else
 			arg_6_0:DrawCheck(DrawConst.DRAW_TYPE.TEN)
 		end
@@ -121,48 +127,7 @@ function var_0_0.AddUIListener(arg_6_0)
 		arg_6_0:SkipMovie()
 	end)
 	arg_6_0:AddBtnListener(arg_6_0.chooseBtn_, nil, function()
-		local var_12_0 = DrawPoolCfg[arg_6_0.selectPoolId_]
-
-		if var_12_0.pool_selected_type == 2 then
-			if var_12_0.pool_type == 1 then
-				local var_12_1 = table.indexof(var_12_0.optional_lists_poolId, arg_6_0.showId)
-				local var_12_2 = var_12_0.optional_detail[var_12_1]
-
-				arg_6_0:Go("/newbieDrawHeroSelect", {
-					poolId = arg_6_0.selectPoolId_,
-					heroIdList = var_12_0.optional_detail,
-					heroId = var_12_2
-				})
-			else
-				arg_6_0:Go("/drawAllHeroSelect", {
-					isFirst = true,
-					poolId = arg_6_0.selectPoolId_,
-					heroIdList = var_12_0.optional_detail
-				})
-			end
-		elseif var_12_0.pool_selected_type == 8 then
-			local var_12_3 = table.indexof(var_12_0.optional_lists_poolId, arg_6_0.showId)
-			local var_12_4 = var_12_0.optional_detail[var_12_3]
-
-			arg_6_0:Go("/newbieDrawHeroSelect", {
-				poolId = arg_6_0.selectPoolId_,
-				heroIdList = var_12_0.optional_detail,
-				heroId = var_12_4
-			})
-		elseif var_12_0.pool_selected_type == 9 then
-			arg_6_0:Go("/drawSelect", {
-				poolID = arg_6_0.selectPoolId_
-			})
-		elseif var_12_0.pool_selected_type == 1 then
-			local var_12_5 = table.indexof(var_12_0.optional_lists_poolId, arg_6_0.showId)
-			local var_12_6 = var_12_0.optional_detail[var_12_5]
-
-			arg_6_0:Go("/newbieDrawHeroSelect", {
-				poolId = arg_6_0.selectPoolId_,
-				heroIdList = var_12_0.optional_detail,
-				heroId = var_12_6
-			})
-		end
+		DrawTools:GoToSelectUpHeroView(arg_6_0.selectPoolId_, arg_6_0.showId, true)
 	end)
 	arg_6_0:AddBtnListener(arg_6_0.skipInteractBtn_, nil, function()
 		manager.audio:PlayEffect("ui_system_search", "search_skip", "")
@@ -335,7 +300,7 @@ function var_0_0.InitTree(arg_18_0)
 			if var_18_10 ~= 0 then
 				var_18_9.text = GetTips(var_0_4[var_18_10])
 			end
-		elseif var_18_7.pool_show_type == 8 or var_18_7.pool_show_type == 3 and var_18_7.pool_selected_type == 2 then
+		elseif var_18_7.pool_show_type == 8 or var_18_7.pool_show_type == 9 or var_18_7.pool_show_type == 3 and var_18_7.pool_selected_type == 2 then
 			local var_18_11 = DrawData:GetPollUpID(iter_18_6)
 
 			var_18_9.text = GetI18NText(var_18_7.name)
@@ -362,7 +327,7 @@ function var_0_0.InitTree(arg_18_0)
 		var_18_6[var_18_8].itemDatas:Add(var_18_9)
 	end
 
-	for iter_18_7 = 1, 6 do
+	for iter_18_7 = 1, 7 do
 		if var_18_6[iter_18_7].itemDatas.Count > 0 then
 			var_18_0.groupDatas:Add(var_18_6[iter_18_7])
 		end
@@ -418,56 +383,16 @@ function var_0_0.OnItemSelect(arg_20_0, arg_20_1, arg_20_2, arg_20_3, arg_20_4)
 		arg_20_0.upTips_.text = GetTips("DRAW_POOL_PROBABILITY_FIVE_WEAPON_4")
 		arg_20_0.upTips1_.text = GetTips("DRAW_POOL_PROBABILITY_FIVE_WEAPON_4")
 		arg_20_0.upTips2_.text = GetTips("DRAW_POOL_PROBABILITY_FIVE_WEAPON_4")
+	elseif var_20_1 == 7 then
+		arg_20_0.upTips_.text = GetTips("DRAW_POOL_PROBABILITY_S_8")
+		arg_20_0.upTips1_.text = GetTips("DRAW_POOL_PROBABILITY_S_4")
+		arg_20_0.upTips2_.text = GetTips("DRAW_POOL_PROBABILITY_S_4")
+
+		arg_20_0.infoController:SetSelectedState("info_3")
 	end
 
 	if DrawData:GetPollUpID(arg_20_0.selectPoolId_) == 0 and DrawData:GetPoolIsNew(arg_20_0.selectPoolId_) == 1 then
-		local var_20_2 = DrawPoolCfg[arg_20_0.selectPoolId_]
-
-		if var_20_2.pool_selected_type == 2 then
-			if var_20_2.pool_type == 1 then
-				local var_20_3 = table.indexof(var_20_2.optional_lists_poolId, arg_20_0.showId)
-				local var_20_4 = var_20_2.optional_detail[var_20_3]
-
-				arg_20_0:Go("/newbieDrawHeroSelect", {
-					poolId = arg_20_0.selectPoolId_,
-					heroIdList = var_20_2.optional_detail,
-					heroId = var_20_4
-				})
-			else
-				arg_20_0:Go("/drawAllHeroSelect", {
-					isFirst = true,
-					poolId = arg_20_0.selectPoolId_,
-					heroIdList = var_20_2.optional_detail
-				})
-			end
-		elseif var_20_2.pool_selected_type == 8 then
-			local var_20_5 = table.indexof(var_20_2.optional_lists_poolId, arg_20_0.showId)
-			local var_20_6 = var_20_2.optional_detail[var_20_5]
-
-			arg_20_0:Go("/newbieDrawHeroSelect", {
-				poolId = arg_20_0.selectPoolId_,
-				heroIdList = var_20_2.optional_detail,
-				heroId = var_20_6
-			})
-		elseif var_20_2.pool_selected_type == 9 then
-			arg_20_0:Go("/drawSelect", {
-				poolID = arg_20_0.selectPoolId_
-			})
-		elseif var_20_2.pool_selected_type == 1 then
-			local var_20_7 = table.indexof(var_20_2.optional_lists_poolId, arg_20_0.showId)
-
-			if var_20_7 == false then
-				return
-			end
-
-			local var_20_8 = var_20_2.optional_detail[var_20_7]
-
-			arg_20_0:Go("/newbieDrawHeroSelect", {
-				poolId = arg_20_0.selectPoolId_,
-				heroIdList = var_20_2.optional_detail,
-				heroId = var_20_8
-			})
-		end
+		DrawTools:GoToSelectUpHeroView(arg_20_0.selectPoolId_, arg_20_0.showId, true)
 	end
 end
 
@@ -482,8 +407,16 @@ function var_0_0.SetupActivityPool(arg_21_0)
 
 			if var_21_1 then
 				for iter_21_2, iter_21_3 in ipairs(var_21_1.config_list) do
-					if DrawPoolCfg[iter_21_3].pool_show_type == 8 then
+					local var_21_2 = DrawPoolCfg[iter_21_3]
+
+					if var_21_2.pool_show_type == 8 then
 						if not DrawData:GetNewbieChooseDrawFlag() then
+							table.insert(arg_21_0.poolToggles_, iter_21_3)
+
+							arg_21_0.poolActivitys_[iter_21_3] = iter_21_1
+						end
+					elseif var_21_2.pool_show_type == 9 then
+						if RegressionDataNew:CheckIsOpenRuturnPool() then
 							table.insert(arg_21_0.poolToggles_, iter_21_3)
 
 							arg_21_0.poolActivitys_[iter_21_3] = iter_21_1
@@ -503,7 +436,11 @@ function var_0_0.SetupActivityPool(arg_21_0)
 	end
 
 	table.sort(arg_21_0.poolToggles_, function(arg_22_0, arg_22_1)
-		return DrawPoolCfg[arg_22_0].order < DrawPoolCfg[arg_22_1].order
+		if DrawPoolCfg[arg_22_0].order == DrawPoolCfg[arg_22_1].order then
+			return arg_22_1 < arg_22_0
+		else
+			return DrawPoolCfg[arg_22_0].order < DrawPoolCfg[arg_22_1].order
+		end
 	end)
 	arg_21_0:InitTree()
 	arg_21_0:InitPoolNew()
@@ -722,6 +659,10 @@ function var_0_0.RefreshUI(arg_31_0)
 		arg_31_0.tenOneKeyGetText_.text = string.format(GetTips("DRAW_POOL_SCREEN_TYPE_2"), string.format(GetTips("NUM_" .. math.min(40 - DrawData:GetPoolDrawTimes(var_31_0), 10))))
 		arg_31_0.tips3Text_.text = GetTips("DRAW_POOL_SCREEN_TYPE_3")
 		arg_31_0.tenIconText_.text = "x" .. math.min(40 - DrawData:GetPoolDrawTimes(var_31_0), 10)
+	elseif var_31_1.pool_type == 9 then
+		arg_31_0.tenOneKeyGetText_.text = string.format(GetTips("DRAW_POOL_SCREEN_TYPE_2"), string.format(GetTips("NUM_" .. math.min(70 - DrawData:GetPoolDrawTimes(var_31_0), 10))))
+		arg_31_0.tips3Text_.text = GetTips("NEW_REGRESSION__POOL_SCREEN_TYPE_1")
+		arg_31_0.tenIconText_.text = "x" .. math.min(70 - DrawData:GetPoolDrawTimes(var_31_0), 10)
 	else
 		arg_31_0.tenOneKeyGetText_.text = string.format(GetTips("DRAW_POOL_SCREEN_TYPE_2"), GetTips("NUM_10"))
 		arg_31_0.tenIconText_.text = "x10"
@@ -743,13 +684,15 @@ function var_0_0.RefreshUI(arg_31_0)
 	if not arg_31_0.poolObjects_[var_31_2] then
 		if var_31_1.pool_type == 1 then
 			if DrawData:IsOnePrefabPool(var_31_0) then
-				arg_31_0.poolObjects_[var_31_2] = DrawNormalSelectPool.New(arg_31_0.poolcontentTrs_, var_31_0, var_31_2)
+				arg_31_0.poolObjects_[var_31_2] = DrawRolePoolContainer.New(arg_31_0.poolcontentTrs_, var_31_0, var_31_2)
 			else
 				arg_31_0.poolObjects_[var_31_2] = DrawNormalPool.New(arg_31_0.poolcontentTrs_, var_31_0, var_31_2)
 			end
 		elseif var_31_1.pool_selected_type == 2 or var_31_1.pool_selected_type == 8 then
 			if DrawData:IsOnePrefabPool(var_31_0) then
-				if var_31_1.pool_selected_type == 8 then
+				if var_31_1.pool_type == 9 then
+					arg_31_0.poolObjects_[var_31_2] = ReturnDrawSelectPool.New(arg_31_0.poolcontentTrs_, var_31_0, var_31_2)
+				elseif var_31_1.pool_selected_type == 8 then
 					arg_31_0.poolObjects_[var_31_2] = NewbieDrawSelectPool.New(arg_31_0.poolcontentTrs_, var_31_0, var_31_2)
 				else
 					arg_31_0.poolObjects_[var_31_2] = DrawSelectPool.New(arg_31_0.poolcontentTrs_, var_31_0, var_31_2)
@@ -803,12 +746,13 @@ function var_0_0.OnRequestRecord(arg_34_0)
 	if var_34_0 then
 		local var_34_2 = var_34_0.ssr_draw_times
 		local var_34_3 = var_0_2[var_34_1.pool_show_type]
+		local var_34_4 = var_0_3[var_34_3] or "70"
 
 		arg_34_0.drawOutLineTxt_.text = var_34_2
-		arg_34_0.drawTxt_.text = "/" .. (var_0_3[var_34_3] or "70")
+		arg_34_0.drawTxt_.text = "/" .. var_34_4
 		arg_34_0.drawAllTxt_.text = var_34_2
 		arg_34_0.drawOutLineTxt1_.text = var_34_2
-		arg_34_0.drawTxt1_.text = "/" .. (var_0_3[var_34_3] or "70")
+		arg_34_0.drawTxt1_.text = "/" .. var_34_4
 		arg_34_0.drawAllTxt1_.text = var_34_2
 	else
 		DrawAction.RequestRecord(arg_34_0.selectPoolId_)
@@ -1238,8 +1182,15 @@ function var_0_0.JumpToReward(arg_52_0)
 							num = var_52_4
 						}
 					}, nil, function()
-						if DrawPoolCfg[arg_52_0.selectPoolId_].pool_type == 8 and DrawData:GetNewbieChooseDrawFlag() then
-							ShowTips("DRAW_POOL_SCREEN_TYPE_1")
+						local var_54_0 = DrawPoolCfg[arg_52_0.selectPoolId_]
+
+						if var_54_0.pool_type == 8 and DrawData:GetNewbieChooseDrawFlag() or var_54_0.pool_type == 9 and not RegressionDataNew:CheckIsOpenRuturnPool() then
+							if var_54_0.pool_type == 9 then
+								ShowTips("NEW_REGRESSION__POOL_SCREEN_TYPE_4")
+							else
+								ShowTips("DRAW_POOL_SCREEN_TYPE_1")
+							end
+
 							arg_52_0:SetupActivityPool()
 
 							arg_52_0.tree_.tree_.data.groupDatas[1].defaultIndex = 1
@@ -1251,8 +1202,15 @@ function var_0_0.JumpToReward(arg_52_0)
 				end
 			})
 		else
-			if DrawPoolCfg[arg_52_0.selectPoolId_].pool_type == 8 and DrawData:GetNewbieChooseDrawFlag() then
-				ShowTips("DRAW_POOL_SCREEN_TYPE_1")
+			local var_52_8 = DrawPoolCfg[arg_52_0.selectPoolId_]
+
+			if var_52_8.pool_type == 8 and DrawData:GetNewbieChooseDrawFlag() or var_52_8.pool_type == 9 and not RegressionDataNew:CheckIsOpenRuturnPool() then
+				if var_52_8.pool_type == 9 then
+					ShowTips("NEW_REGRESSION__POOL_SCREEN_TYPE_4")
+				else
+					ShowTips("DRAW_POOL_SCREEN_TYPE_1")
+				end
+
 				arg_52_0:SetupActivityPool()
 
 				arg_52_0.tree_.tree_.data.groupDatas[1].defaultIndex = 1

@@ -193,44 +193,6 @@
 			}
 		}
 	},
-	hero_atack_type_tag = {
-		id = "hero_atack_type_tag",
-		scale = "",
-		value = {
-			{
-				0,
-				"icon_physical"
-			},
-			{
-				2,
-				"icon_wind"
-			},
-			{
-				4,
-				"icon_fire"
-			},
-			{
-				6,
-				"icon_ice"
-			},
-			{
-				8,
-				"icon_water"
-			},
-			{
-				10,
-				"icon_dark"
-			},
-			{
-				12,
-				"icon_light"
-			},
-			{
-				14,
-				"icon_ray"
-			}
-		}
-	},
 	hero_mechanism_type_tag = {
 		id = "hero_mechanism_type_tag",
 		scale = "",
@@ -294,44 +256,6 @@
 			{
 				1,
 				"icon_white_remote"
-			}
-		}
-	},
-	hero_atack_type_white_tag = {
-		id = "hero_atack_type_white_tag",
-		scale = "",
-		value = {
-			{
-				0,
-				"icon_white_physical"
-			},
-			{
-				2,
-				"icon_white_wind"
-			},
-			{
-				4,
-				"icon_white_fire"
-			},
-			{
-				6,
-				"icon_white_ice"
-			},
-			{
-				8,
-				"icon_white_water"
-			},
-			{
-				10,
-				"icon_white_dark"
-			},
-			{
-				12,
-				"icon_white_light"
-			},
-			{
-				14,
-				"icon_white_ray"
 			}
 		}
 	},
@@ -902,10 +826,10 @@
 		id = "login_concept_guild_movie_frames",
 		scale = "",
 		value = {
-			1084,
-			63,
-			105,
-			96
+			1128,
+			65,
+			109,
+			100
 		}
 	},
 	login_bonus_movie_path = {

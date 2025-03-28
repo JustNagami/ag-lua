@@ -43,7 +43,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 	local var_5_2 = EquipSkillCfg[var_5_0]
 
 	arg_5_0.name_.text = GetI18NText(var_5_2.name)
-	arg_5_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_5_2.icon)
+	arg_5_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_5_2.icon)
 	arg_5_0.num_.text = var_5_1
 
 	if var_5_1 <= 0 then

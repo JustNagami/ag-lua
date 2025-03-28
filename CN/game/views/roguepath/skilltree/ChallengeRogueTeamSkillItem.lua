@@ -59,7 +59,7 @@ function var_0_0.RefreshUI(arg_8_0)
 	local var_8_2 = table.indexof(var_8_1, arg_8_0.skillID_)
 	local var_8_3 = ChallengeRogueTeamData:GetCacheTemplateID()
 
-	arg_8_0.icon_.sprite = getSpriteWithoutAtlas(var_8_0.icon)
+	arg_8_0.icon_.sprite = pureGetSpriteWithoutAtlas(var_8_0.icon)
 	arg_8_0.transform_.localPosition = Vector3(var_8_0.level * 400, (var_8_2 - math.ceil(#var_8_1 / 2)) * 200, 0)
 
 	if var_8_0.node_type == 0 then

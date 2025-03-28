@@ -60,7 +60,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1)
 		var_6_0 = var_6_0 .. TravelSkuldEndingCfg[arg_6_0.endingid_].picture
 	end
 
-	arg_6_0.itemimage_.sprite = getSpriteWithoutAtlas(var_6_0)
+	arg_6_0.itemimage_.sprite = pureGetSpriteWithoutAtlas(var_6_0)
 
 	if arg_6_1 > 3 then
 		arg_6_0.isshowtaskController_:SetSelectedState("false")

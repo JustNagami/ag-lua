@@ -51,6 +51,7 @@ function var_0_0.AddListeners(arg_4_0)
 			parent = arg_4_0.parent
 		})
 		arg_4_0:SelectorItem(arg_4_0.stageID)
+		arg_4_0.parent:SelectedItem(arg_4_0.stageID)
 		arg_4_0.parent.infoController:SetSelectedState("state1")
 		arg_4_0.parent:RefreshUI()
 	end)
@@ -92,20 +93,32 @@ function var_0_0.RefreshCustomUI(arg_8_0)
 	end
 end
 
-function var_0_0.SelectorItem(arg_9_0, arg_9_1)
-	if arg_9_0.stageID == arg_9_1 then
-		arg_9_0.selController:SetSelectedState("state1")
+function var_0_0.BindRedPoint(arg_9_0)
+	local var_9_0 = RedPointConst.MONSTER_COSPLAY_STAGE .. arg_9_0.stageID
+
+	manager.redPoint:bindUIandKey(arg_9_0.transform_, var_9_0)
+end
+
+function var_0_0.UnbindRedPoint(arg_10_0)
+	local var_10_0 = RedPointConst.MONSTER_COSPLAY_STAGE .. arg_10_0.stageID
+
+	manager.redPoint:unbindUIandKey(arg_10_0.transform_, var_10_0)
+end
+
+function var_0_0.SelectorItem(arg_11_0, arg_11_1)
+	if arg_11_0.stageID == arg_11_1 then
+		arg_11_0.selController:SetSelectedState("state1")
 	else
-		arg_9_0.selController:SetSelectedState("state0")
+		arg_11_0.selController:SetSelectedState("state0")
 	end
 end
 
-function var_0_0.GetLocalPosition(arg_10_0)
-	return arg_10_0.transform_.localPosition
+function var_0_0.GetLocalPosition(arg_12_0)
+	return arg_12_0.transform_.localPosition
 end
 
-function var_0_0.Show(arg_11_0, arg_11_1)
-	SetActive(arg_11_0.gameObject_, arg_11_1)
+function var_0_0.Show(arg_13_0, arg_13_1)
+	SetActive(arg_13_0.gameObject_, arg_13_1)
 end
 
 return var_0_0

@@ -34,8 +34,8 @@ end
 function var_0_0.RefreshUI(arg_7_0, arg_7_1, arg_7_2)
 	arg_7_0.id_ = arg_7_1
 	arg_7_0.bgID_ = arg_7_2
-	arg_7_0.bg_.sprite = getSpriteWithoutAtlas("TextureConfig/Sticker/stickerBtn/Sticker_bg_" .. arg_7_0.bgID_)
-	arg_7_0.template_.sprite = getSpriteWithoutAtlas("TextureConfig/Sticker/stickerBtn/Sticker_button_" .. arg_7_0.id_)
+	arg_7_0.bg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Sticker/stickerBtn/Sticker_bg_" .. arg_7_0.bgID_)
+	arg_7_0.template_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Sticker/stickerBtn/Sticker_button_" .. arg_7_0.id_)
 end
 
 function var_0_0.SetState(arg_8_0, arg_8_1)

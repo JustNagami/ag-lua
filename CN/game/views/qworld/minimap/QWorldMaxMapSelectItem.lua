@@ -31,7 +31,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 
 	arg_5_0.IconTypeController:SetSelectedIndex(var_5_1)
 
-	arg_5_0.iconImg_.sprite = getSpriteWithoutAtlas(var_5_0)
+	arg_5_0.iconImg_.sprite = pureGetSpriteWithoutAtlas(var_5_0)
 
 	print("ddddddd", arg_5_1)
 	print_r(arg_5_2)

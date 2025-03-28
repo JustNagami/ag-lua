@@ -21,7 +21,7 @@ end
 function var_0_0.IndexItem(arg_4_0, arg_4_1, arg_4_2)
 	local var_4_0 = arg_4_0.groupData_.items[arg_4_1]
 
-	arg_4_2:SetData(arg_4_0.layoutName_, var_4_0, arg_4_0.gamepadType_)
+	arg_4_2:SetData(arg_4_0.layoutName_, var_4_0, arg_4_0.gamepadType_, arg_4_0.controlType_)
 	arg_4_2:RefreshUI()
 	arg_4_2:SetKeyChangedCallback(function(arg_5_0, arg_5_1)
 		arg_5_1.controlType = arg_4_0.groupData_.controlType
@@ -38,6 +38,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3, arg_6_4)
 	arg_6_0.title_ = arg_6_2
 	arg_6_0.groupData_ = arg_6_3
 	arg_6_0.gamepadType_ = arg_6_4
+	arg_6_0.controlType_ = arg_6_3.controlType
 end
 
 function var_0_0.SetKeyChangedCallback(arg_7_0, arg_7_1)

@@ -56,7 +56,7 @@ function var_0_0.RenderM(arg_5_0, arg_5_1)
 
 	local var_5_1 = var_5_0.color2
 
-	arg_5_0.text_.color = Color(var_5_1[1], var_5_1[2], var_5_1[3])
+	arg_5_0.text_.color = LuaHelper.StringToColor("#" .. var_5_1)
 
 	if var_5_0.type and var_5_0.type == 2 then
 		SetActive(arg_5_0.bubbleImg_.gameObject, false)
@@ -76,7 +76,7 @@ function var_0_0.RenderM(arg_5_0, arg_5_1)
 
 		SetActive(arg_5_0.bubbleImg_.gameObject, true)
 
-		arg_5_0.bubbleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/ChatBubble/" .. var_5_0.image2)
+		arg_5_0.bubbleImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/ChatBubble/" .. var_5_0.image2)
 	end
 end
 
@@ -84,7 +84,7 @@ function var_0_0.RenderO(arg_6_0, arg_6_1)
 	local var_6_0 = ChatBubbleCfg[arg_6_1]
 	local var_6_1 = var_6_0.color1
 
-	arg_6_0.text_.color = Color(var_6_1[1], var_6_1[2], var_6_1[3])
+	arg_6_0.text_.color = LuaHelper.StringToColor("#" .. var_6_1)
 
 	if var_6_0.type and var_6_0.type == 2 then
 		SetActive(arg_6_0.bubbleImg_.gameObject, false)
@@ -104,7 +104,7 @@ function var_0_0.RenderO(arg_6_0, arg_6_1)
 
 		SetActive(arg_6_0.bubbleImg_.gameObject, true)
 
-		arg_6_0.bubbleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/ChatBubble/" .. var_6_0.image1)
+		arg_6_0.bubbleImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/ChatBubble/" .. var_6_0.image1)
 	end
 end
 
@@ -123,14 +123,13 @@ function var_0_0.SetData(arg_7_0, arg_7_1)
 	else
 		local var_7_0 = tonumber(arg_7_1.content)
 		local var_7_1 = ChatStickerCfg[var_7_0]
-		local var_7_2 = var_7_1.icon .. SettingData:GetCurrentLanguageKey()
 
 		if var_7_1.type == 1 then
 			arg_7_0.memesImg_.enabled = true
-			arg_7_0.memesImg_.sprite = getSpriteViaConfig("ChatSticker", var_7_2)
+			arg_7_0.memesImg_.sprite = getSpriteViaConfig("ChatSticker", var_7_1.icon)
 		else
 			arg_7_0.memesImg_.enabled = false
-			arg_7_0.dynamicStickerGo_ = Object.Instantiate(Asset.Load(var_7_2), arg_7_0.memesImg_.transform)
+			arg_7_0.dynamicStickerGo_ = Object.Instantiate(Asset.Load(var_7_1.icon), arg_7_0.memesImg_.transform)
 		end
 
 		arg_7_0.contentController:SetSelectedState("memes")

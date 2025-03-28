@@ -49,7 +49,7 @@
 		id = "user_friend_num_max",
 		value2 = "",
 		value = {
-			50
+			100
 		}
 	},
 	user_black_num_max = {
@@ -103,6 +103,13 @@
 		value2 = "",
 		value = {
 			40
+		}
+	},
+	return_draw_ssr_lucky_num_beginner = {
+		id = "return_draw_ssr_lucky_num_beginner",
+		value2 = "",
+		value = {
+			70
 		}
 	},
 	fragment_break_num = {
@@ -385,9 +392,30 @@
 		}
 	},
 	guide_map = {
-		value = "",
 		id = "guide_map",
-		value2 = "1010001=1110001,1010002=1110002,1010003=1110003,1010004=1110004,1010005=1110005"
+		value2 = "1010001=1110001,1010002=1110002,1010003=1110003,1010004=1110004,1010005=1110005",
+		value = {
+			{
+				1110001,
+				1010001
+			},
+			{
+				1110002,
+				1010002
+			},
+			{
+				1110003,
+				1010003
+			},
+			{
+				1110004,
+				1010004
+			},
+			{
+				1110005,
+				1010005
+			}
+		}
 	},
 	guide_use_old_result_stage = {
 		id = "guide_use_old_result_stage",
@@ -1027,6 +1055,23 @@
 		value2 = "",
 		value = {
 			{
+				107301,
+				1
+			},
+			{
+				6033,
+				1
+			},
+			{
+				1902
+			}
+		}
+	},
+	newbie_battlepass_ver_1 = {
+		id = "newbie_battlepass_ver_1",
+		value2 = "",
+		value = {
+			{
 				102701,
 				1
 			},
@@ -1055,7 +1100,7 @@
 		id = "monthly_card_num_max",
 		value2 = "",
 		value = {
-			7
+			8
 		}
 	},
 	battlepass_exp_limit_weekly = {
@@ -1397,7 +1442,7 @@
 				523
 			},
 			{
-				1050,
+				1150,
 				1
 			}
 		}
@@ -1410,6 +1455,106 @@
 			{
 				523
 			},
+			{
+				{
+					1,
+					{
+						11150,
+						10
+					},
+					{
+						40103,
+						10
+					}
+				},
+				{
+					2,
+					{
+						11150,
+						10
+					},
+					{
+						20002,
+						5
+					}
+				},
+				{
+					3,
+					{
+						11150,
+						10
+					},
+					{
+						20003,
+						5
+					}
+				}
+			}
+		}
+	},
+	newbie_first_monthly_card_reward = {
+		id = "newbie_first_monthly_card_reward",
+		value2 = "",
+		value = {
+			{
+				30072,
+				1
+			},
+			{
+				524
+			}
+		}
+	},
+	newbie_first_monthly_card_cumulative = {
+		id = "newbie_first_monthly_card_cumulative",
+		value2 = "",
+		value = {
+			25,
+			{
+				30071,
+				1
+			}
+		}
+	},
+	newbie_stuck_time = {
+		id = "newbie_stuck_time",
+		value2 = "",
+		value = {
+			5
+		}
+	},
+	newbie_first_monthly_card_reward_2_0 = {
+		id = "newbie_first_monthly_card_reward_2_0",
+		value2 = "",
+		value = {
+			30022,
+			1
+		}
+	},
+	newbie_first_monthly_card_cumulative_2_0 = {
+		id = "newbie_first_monthly_card_cumulative_2_0",
+		value2 = "",
+		value = {
+			30023,
+			1
+		}
+	},
+	newbie_recharge_6_ver_1 = {
+		id = "newbie_recharge_6_ver_1",
+		value2 = "",
+		value = {
+			6,
+			{
+				1050,
+				1
+			}
+		}
+	},
+	newbie_recharge_18_ver_1 = {
+		id = "newbie_recharge_18_ver_1",
+		value2 = "",
+		value = {
+			18,
 			{
 				{
 					1,
@@ -1447,50 +1592,19 @@
 			}
 		}
 	},
-	newbie_first_monthly_card_reward = {
-		id = "newbie_first_monthly_card_reward",
+	newbie_first_monthly_card_reward_3_0 = {
+		id = "newbie_first_monthly_card_reward_3_0",
 		value2 = "",
 		value = {
-			{
-				30035,
-				1
-			},
-			{
-				524
-			}
-		}
-	},
-	newbie_first_monthly_card_cumulative = {
-		id = "newbie_first_monthly_card_cumulative",
-		value2 = "",
-		value = {
-			25,
-			{
-				30034,
-				1
-			}
-		}
-	},
-	newbie_stuck_time = {
-		id = "newbie_stuck_time",
-		value2 = "",
-		value = {
-			5
-		}
-	},
-	newbie_first_monthly_card_reward_2_0 = {
-		id = "newbie_first_monthly_card_reward_2_0",
-		value2 = "",
-		value = {
-			30022,
+			30035,
 			1
 		}
 	},
-	newbie_first_monthly_card_cumulative_2_0 = {
-		id = "newbie_first_monthly_card_cumulative_2_0",
+	newbie_first_monthly_card_cumulative_3_0 = {
+		id = "newbie_first_monthly_card_cumulative_3_0",
 		value2 = "",
 		value = {
-			30023,
+			30034,
 			1
 		}
 	},
@@ -3416,7 +3530,13 @@
 			5200707,
 			5200708,
 			5230111,
-			5230117
+			5230117,
+			1032107,
+			1032112,
+			1032113,
+			1032118,
+			1032125,
+			60500005
 		}
 	},
 	personal_signature_max = {
@@ -3578,7 +3698,7 @@
 		id = "default_formation_num_max",
 		value2 = "",
 		value = {
-			10
+			20
 		}
 	},
 	equip_crossroads_healing = {
@@ -3845,7 +3965,7 @@
 		id = "loading_pic_max",
 		value2 = "",
 		value = {
-			15
+			50
 		}
 	},
 	activity_spring_festival_riddle_punish_time = {
@@ -7456,7 +7576,8 @@
 		id = "quick_battle_mode",
 		value2 = "",
 		value = {
-			1
+			1,
+			2
 		}
 	},
 	activity_sign_3_6_participate_level_limit = {
@@ -7818,6 +7939,80 @@
 		value2 = "",
 		value = {
 			100
+		}
+	},
+	skuld_photo1 = {
+		id = "skuld_photo1",
+		value2 = "",
+		value = {
+			"side_story_skuld_photo4",
+			"SKULD_PHOTO_NAME1",
+			"SKULD_PHOTO_DESC1",
+			"SKULD_PHOTO_UNLOCK1",
+			1008
+		}
+	},
+	skuld_photo2 = {
+		id = "skuld_photo2",
+		value2 = "",
+		value = {
+			"side_story_skuld_photo1",
+			"SKULD_PHOTO_NAME2",
+			"SKULD_PHOTO_DESC2",
+			"SKULD_PHOTO_UNLOCK2",
+			1011
+		}
+	},
+	skuld_photo3 = {
+		id = "skuld_photo3",
+		value2 = "",
+		value = {
+			"side_story_skuld_photo2",
+			"SKULD_PHOTO_NAME3",
+			"SKULD_PHOTO_DESC3",
+			"SKULD_PHOTO_UNLOCK3",
+			1014
+		}
+	},
+	skuld_photo4 = {
+		id = "skuld_photo4",
+		value2 = "",
+		value = {
+			"side_story_skuld_photo3",
+			"SKULD_PHOTO_NAME4",
+			"SKULD_PHOTO_DESC4",
+			"SKULD_PHOTO_UNLOCK4",
+			1017
+		}
+	},
+	skuld_trust_max = {
+		id = "skuld_trust_max",
+		value2 = "",
+		value = {
+			100
+		}
+	},
+	skuld_puzzle_describe = {
+		id = "skuld_puzzle_describe",
+		value2 = "",
+		value = {
+			"Widget/System/Activity_Skuld/Activity_Skuld_Description_01",
+			"Widget/System/Activity_Skuld/Activity_Skuld_Description_02",
+			"Widget/System/Activity_Skuld/Activity_Skuld_Description_03"
+		}
+	},
+	skuld_walk_speed = {
+		id = "skuld_walk_speed",
+		value2 = "",
+		value = {
+			380
+		}
+	},
+	skuld_walk_distance = {
+		id = "skuld_walk_distance",
+		value2 = "",
+		value = {
+			574
 		}
 	}
 }

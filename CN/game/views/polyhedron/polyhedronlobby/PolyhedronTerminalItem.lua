@@ -29,7 +29,7 @@ function var_0_0.InitUI(arg_3_0)
 		arg_3_0.frameController:SetSelectedIndex(var_3_1 + 3)
 	end
 
-	arg_3_0.m_icon.sprite = getSpriteWithoutAtlas(PolyhedronConst.TERMINAL_ICON_PATH .. var_3_0.icon)
+	arg_3_0.m_icon.sprite = pureGetSpriteWithoutAtlas(PolyhedronConst.TERMINAL_ICON_PATH .. var_3_0.icon)
 end
 
 function var_0_0.AddUIListener(arg_4_0)

@@ -16,8 +16,6 @@ function var_0_0.Init(arg_2_0)
 		activeThing = -1,
 		luaInterrupt = false
 	}
-
-	manager.notify:RegistListener(event, func)
 end
 
 function var_0_0.GetCManager(arg_3_0)
@@ -77,6 +75,8 @@ function var_0_0.StartPerform(arg_9_0, arg_9_1, arg_9_2, arg_9_3)
 				arg_9_3()
 			end
 
+			arg_9_0.context.activeThing = -1
+
 			manager.notify:Invoke(QWORLD_ENTER_PERFORM, false)
 
 			arg_9_0.isInPerform = false
@@ -119,21 +119,32 @@ function var_0_0.NextPerform(arg_12_0, arg_12_1, arg_12_2, arg_12_3)
 				if arg_12_3 then
 					arg_12_3()
 				end
+
+				arg_12_0.context.activeThing = -1
 			end
 		end)
 	end)
 end
 
-function var_0_0.ForceStopPlayerPerform(arg_15_0, arg_15_1)
+function var_0_0.ForceStopPlayerPerform(arg_15_0, arg_15_1, arg_15_2)
 	if arg_15_0.context.activeThing ~= -1 then
-		QWorldMgr:StartBlackFade(0.3, 0.3, 0.2, function()
+		if arg_15_2 then
 			var_0_1:StopRunner()
 
-			local var_16_0 = QWorldMgr:GetQWorldEntityMgr():GetEnt(arg_15_0.context.activeThing)
+			local var_15_0 = QWorldMgr:GetQWorldEntityMgr():GetEnt(arg_15_0.context.activeThing)
 
-			arg_15_0:GetCManager():EndFurniturInteract(var_16_0.entity)
+			arg_15_0:GetCManager():EndFurniturInteract(var_15_0.entity)
 			arg_15_0:ForceStopAllTask(true, arg_15_1)
-		end)
+		else
+			QWorldMgr:StartBlackFade(0.3, 0.3, 0.2, function()
+				var_0_1:StopRunner()
+
+				local var_16_0 = QWorldMgr:GetQWorldEntityMgr():GetEnt(arg_15_0.context.activeThing)
+
+				arg_15_0:GetCManager():EndFurniturInteract(var_16_0.entity)
+				arg_15_0:ForceStopAllTask(true, arg_15_1)
+			end)
+		end
 	elseif arg_15_1 then
 		arg_15_1()
 	end

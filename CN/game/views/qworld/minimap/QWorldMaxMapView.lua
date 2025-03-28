@@ -29,6 +29,7 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.infoList = LuaList.New(handler(arg_4_0, arg_4_0.IndexInfoItem), arg_4_0.m_infoList, QWorldMaxMapInfoItem)
 	arg_4_0.selectList = LuaList.New(handler(arg_4_0, arg_4_0.IndexSelectItem), arg_4_0.m_selectList, QWorldMaxMapSelectItem)
 	arg_4_0.selectController = arg_4_0.m_controller:GetController("select")
+	arg_4_0.rightController = arg_4_0.m_controller:GetController("right")
 	arg_4_0.selectClickHandler = handler(arg_4_0, arg_4_0.SelectClickCallBack)
 	arg_4_0.infoClickHandler = handler(arg_4_0, arg_4_0.InfoClickCallBack)
 	arg_4_0.condItems_ = {}
@@ -36,6 +37,7 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.showRewardController = arg_4_0.m_detailController:GetController("showRewards")
 	arg_4_0.showdetailController = arg_4_0.m_detailController:GetController("showdetails")
 	arg_4_0.btnStateController = arg_4_0.m_detailController:GetController("btnState")
+	arg_4_0.followBtnStateController = arg_4_0.m_followBtnController:GetController("btnstate")
 	arg_4_0.IconTypeController = arg_4_0.m_iconController:GetController("type")
 	arg_4_0.m_teleportLab.text = GetTips("SANDPLAY_TRANSMIT")
 end
@@ -61,9 +63,37 @@ function var_0_0.AddUIListener(arg_5_0)
 					QWorldQuestAction.SendUpdateQuestTrackToSdk(var_7_2, QWorldQuestConst.SDK_QUEST_TRACK_TYPE.TRACK)
 				end)
 			else
+				QWorldAction.SendUpdateThingTrackToSDK(var_7_1, QWorldQuestConst.SDK_QUEST_TRACK_TYPE.TRACK)
 				var_7_0:TrackId(var_7_1)
 			end
+
+			local var_7_3 = arg_5_0.curBoardInfo:GetTag()
+
+			if not SandPlayTakePhotoTools.CheckIsPhotoTag(arg_5_0.curBoardInfo.param) and (QWorldEntityMiniMapTag.Thing == var_7_3 or QWorldEntityMiniMapTag.Hud == var_7_3 and arg_5_0.curBoardInfo:GetTeleportId() == 0) then
+				ShowMessageBox({
+					title = GetTips("PROMPT"),
+					content = GetTips("SANDPLAY_TELEPORT_NEARBY"),
+					OkCallback = function()
+						local var_9_0 = arg_5_0.curBoardInfo:GetTeleportId()
+
+						if var_9_0 ~= 0 then
+							arg_5_0:Back()
+							QWorldTeleport(var_9_0)
+						end
+
+						if arg_5_0.curBoardInfo and arg_5_0.curBoardInfo.inst.entityId ~= 0 then
+							local var_9_1 = QWorldMgr:GetQWorldEntityMgr():GetEntByEntityId(arg_5_0.curBoardInfo.inst.entityId):GetPosition()
+
+							arg_5_0:Back()
+							QWorldTeleportToNearest(var_9_1)
+
+							return
+						end
+					end
+				})
+			end
 		else
+			QWorldAction.SendUpdateThingTrackToSDK(var_7_1, QWorldQuestConst.SDK_QUEST_TRACK_TYPE.UNTRACK)
 			var_7_0:CancelTrack(var_7_1)
 			arg_5_0.selectController:SetSelectedIndex(0)
 			arg_5_0:SelectEntity(nil)
@@ -71,22 +101,35 @@ function var_0_0.AddUIListener(arg_5_0)
 
 		if QWorldMgr:GetQWorldEntityMgr():IsTrack(var_7_1) then
 			arg_5_0.m_followLab.text = GetTips("SANDPLAY_TRACK_CANCEL")
+
+			arg_5_0.followBtnStateController:SetSelectedState("cancel")
 		else
 			arg_5_0.m_followLab.text = GetTips("SANDPLAY_TRACK")
+
+			arg_5_0.followBtnStateController:SetSelectedState("go")
 		end
 
-		arg_5_0:UpdateRignt()
+		arg_5_0:UpdateRight()
 	end)
 	arg_5_0:AddBtnListener(arg_5_0.m_teleportBtn, nil, function()
 		if arg_5_0.curBoardInfo == nil then
 			return
 		end
 
-		local var_9_0 = arg_5_0.curBoardInfo:GetTeleportId()
+		local var_10_0 = arg_5_0.curBoardInfo:GetTeleportId()
 
-		if var_9_0 ~= 0 then
+		if var_10_0 ~= 0 then
 			QWorldUIShow()
-			QWorldTeleport(var_9_0)
+			QWorldTeleport(var_10_0)
+		end
+
+		if arg_5_0.curBoardInfo and arg_5_0.curBoardInfo.inst.entityId ~= 0 then
+			local var_10_1 = QWorldMgr:GetQWorldEntityMgr():GetEntByEntityId(arg_5_0.curBoardInfo.inst.entityId):GetPosition()
+
+			arg_5_0:Back()
+			QWorldTeleportToNearest(var_10_1)
+
+			return
 		end
 	end)
 	arg_5_0:AddBtnListener(arg_5_0.m_playerBtn, nil, function()
@@ -106,251 +149,302 @@ function var_0_0.AddUIListener(arg_5_0)
 	end)
 end
 
-function var_0_0.OnTop(arg_14_0)
+function var_0_0.OnTop(arg_15_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR,
 		HOME_BAR
 	})
 end
 
-function var_0_0.OnEnter(arg_15_0)
-	arg_15_0:UpdateRignt(true)
-	arg_15_0.selectController:SetSelectedIndex(0)
+function var_0_0.OnEnter(arg_16_0)
+	arg_16_0:UpdateLeft()
+	arg_16_0:UpdateRight(true)
+	arg_16_0.selectController:SetSelectedIndex(0)
 
-	if arg_15_0.params_.selectEntity then
-		arg_15_0:SelectClickCallBack(arg_15_0.params_.selectEntity)
+	if arg_16_0.params_.selectEntity then
+		arg_16_0:SelectClickCallBack(arg_16_0.params_.selectEntity)
 
-		arg_15_0.params_.selectEntity = nil
+		arg_16_0.params_.selectEntity = nil
 	end
 end
 
-function var_0_0.OnExit(arg_16_0)
-	arg_16_0:SelectEntity(nil)
+function var_0_0.OnExit(arg_17_0)
+	arg_17_0:SelectEntity(nil)
 	manager.windowBar:HideBar()
 end
 
-function var_0_0.Dispose(arg_17_0)
-	arg_17_0.mapCom:Dispose()
+function var_0_0.Dispose(arg_18_0)
+	arg_18_0.mapCom:Dispose()
 
-	arg_17_0.mapCom = nil
+	arg_18_0.mapCom = nil
 
-	arg_17_0.selectList:Dispose()
-	arg_17_0.infoList:Dispose()
-	arg_17_0.rewardList:Dispose()
+	arg_18_0.selectList:Dispose()
+	arg_18_0.infoList:Dispose()
+	arg_18_0.rewardList:Dispose()
 
-	for iter_17_0, iter_17_1 in ipairs(arg_17_0.condItems_) do
-		iter_17_1:Dispose()
+	for iter_18_0, iter_18_1 in ipairs(arg_18_0.condItems_) do
+		iter_18_1:Dispose()
 	end
 
-	arg_17_0.condItems_ = {}
+	arg_18_0.condItems_ = {}
 
-	var_0_0.super.Dispose(arg_17_0)
+	var_0_0.super.Dispose(arg_18_0)
 end
 
-function var_0_0.UpdateRignt(arg_18_0, arg_18_1)
-	arg_18_0.miniMapBoardList = QWorldMgr:GetQWorldEntityMgr():GetMiniMapBoardList()
+function var_0_0.UpdateRight(arg_19_0, arg_19_1)
+	arg_19_0.miniMapBoardList = QWorldMgr:GetQWorldEntityMgr():GetMiniMapBoardList()
 
-	if arg_18_1 then
-		arg_18_0.infoList:StartScroll(#arg_18_0.miniMapBoardList)
+	if arg_19_1 then
+		arg_19_0.infoList:StartScroll(#arg_19_0.miniMapBoardList)
 	else
-		local var_18_0 = arg_18_0.infoList:GetScrolledPosition()
+		local var_19_0 = arg_19_0.infoList:GetScrolledPosition()
 
-		arg_18_0.infoList:StartScrollWithoutAnimator(#arg_18_0.miniMapBoardList, false)
-	end
-end
-
-function var_0_0.InfoClickCallBack(arg_19_0, arg_19_1)
-	SetActive(arg_19_0.m_selectList.gameObject, false)
-	arg_19_0.selectController:SetSelectedIndex(1)
-	arg_19_0.mapCom:SelectInMaxMap(arg_19_1.inst.entityId)
-	arg_19_0:SelectEntity(arg_19_1)
-end
-
-function var_0_0.OnMapUnitSelectAction(arg_20_0)
-	local var_20_0 = arg_20_0.mapCom:GetSelectEntityEntityIds()
-
-	arg_20_0.selectEntityIdList = {}
-
-	local var_20_1 = var_20_0.Length - 1
-
-	for iter_20_0 = 0, var_20_1 do
-		table.insert(arg_20_0.selectEntityIdList, var_20_0[iter_20_0])
+		arg_19_0.infoList:StartScrollWithoutAnimator(#arg_19_0.miniMapBoardList, false)
 	end
 
-	local var_20_2 = #arg_20_0.selectEntityIdList
+	arg_19_0.rightController:SetSelectedState(tostring(QWorldMgr:GetMapId() == 1031001))
+end
 
-	if var_20_2 >= 2 then
-		SetActive(arg_20_0.m_selectList.gameObject, true)
-		arg_20_0.selectList:StartScroll(#arg_20_0.selectEntityIdList)
+function var_0_0.UpdateLeft(arg_20_0)
+	arg_20_0:RefreshCollectProgress()
+end
+
+function var_0_0.InfoClickCallBack(arg_21_0, arg_21_1)
+	SetActive(arg_21_0.m_selectList.gameObject, false)
+	arg_21_0.selectController:SetSelectedIndex(1)
+	arg_21_0.mapCom:SelectInMaxMap(arg_21_1.inst.entityId)
+	arg_21_0:SelectEntity(arg_21_1)
+end
+
+function var_0_0.OnMapUnitSelectAction(arg_22_0)
+	local var_22_0 = arg_22_0.mapCom:GetSelectEntityEntityIds()
+
+	arg_22_0.selectEntityIdList = {}
+
+	local var_22_1 = var_22_0.Length - 1
+
+	for iter_22_0 = 0, var_22_1 do
+		table.insert(arg_22_0.selectEntityIdList, var_22_0[iter_22_0])
+	end
+
+	local var_22_2 = #arg_22_0.selectEntityIdList
+
+	if var_22_2 >= 2 then
+		SetActive(arg_22_0.m_selectList.gameObject, true)
+		arg_22_0.selectList:StartScroll(#arg_22_0.selectEntityIdList)
 	else
-		SetActive(arg_20_0.m_selectList.gameObject, false)
+		SetActive(arg_22_0.m_selectList.gameObject, false)
 	end
 
-	if var_20_2 == 0 then
-		arg_20_0.selectController:SetSelectedIndex(0)
-		arg_20_0:SelectEntity(nil)
+	if var_22_2 == 0 then
+		arg_22_0.selectController:SetSelectedIndex(0)
+		arg_22_0:SelectEntity(nil)
 	else
-		arg_20_0:SelectClickCallBack(arg_20_0.selectEntityIdList[1])
+		arg_22_0:SelectClickCallBack(arg_22_0.selectEntityIdList[1])
 	end
 end
 
-function var_0_0.SelectClickCallBack(arg_21_0, arg_21_1)
-	local var_21_0 = QWorldMgr:GetQWorldEntityMgr():GetEntByEntityId(arg_21_1)
+function var_0_0.SelectClickCallBack(arg_23_0, arg_23_1)
+	local var_23_0 = QWorldMgr:GetQWorldEntityMgr():GetEntByEntityId(arg_23_1)
 
-	if var_21_0 and var_21_0.miniMapUnit then
-		local var_21_1 = var_21_0.miniMapUnit:GetDefaultBoard()
+	if var_23_0 and var_23_0.miniMapUnit then
+		local var_23_1 = var_23_0.miniMapUnit:GetDefaultBoard()
 
-		arg_21_0.selectController:SetSelectedIndex(1)
-		arg_21_0:SelectEntity(var_21_1)
+		arg_23_0.selectController:SetSelectedIndex(1)
+		arg_23_0:SelectEntity(var_23_1)
 	end
 
-	arg_21_0.mapCom:SelectInMaxMap(arg_21_1)
+	arg_23_0.mapCom:SelectInMaxMap(arg_23_1)
 end
 
-function var_0_0.SelectEntity(arg_22_0, arg_22_1)
-	if arg_22_1 ~= arg_22_0.curBoardInfo then
-		if arg_22_0.curBoardInfo and arg_22_0.curBoardInfo.inst.miniMapUnit then
-			arg_22_0.curBoardInfo.inst.miniMapUnit:SetSelect(false)
+function var_0_0.SelectEntity(arg_24_0, arg_24_1)
+	if arg_24_1 ~= arg_24_0.curBoardInfo then
+		if arg_24_0.curBoardInfo and arg_24_0.curBoardInfo.inst.miniMapUnit then
+			arg_24_0.curBoardInfo.inst.miniMapUnit:SetSelect(false)
 		end
 
-		if arg_22_1 then
-			arg_22_1.inst.miniMapUnit:SetSelect(true)
+		if arg_24_1 then
+			arg_24_1.inst.miniMapUnit:SetSelect(true)
 		end
 
-		arg_22_0.m_rightAnim:Play("UI_nodeDetailPanel", 0, 0)
+		arg_24_0.m_rightAnim:Play("UI_nodeDetailPanel", 0, 0)
 	end
 
-	arg_22_0.curBoardInfo = arg_22_1
+	arg_24_0.curBoardInfo = arg_24_1
 
-	if arg_22_1 then
-		local var_22_0 = arg_22_1.inst.entityId
-		local var_22_1, var_22_2 = arg_22_1:GetName()
+	if arg_24_1 then
+		local var_24_0 = arg_24_1.inst.entityId
+		local var_24_1, var_24_2 = arg_24_1:GetName()
 
-		arg_22_0.m_title.text = var_22_1
-		arg_22_0.m_desc.text = var_22_2
-		arg_22_0.rewards = arg_22_1:GetRewards()
+		arg_24_0.m_title.text = var_24_1
+		arg_24_0.m_desc.text = var_24_2
+		arg_24_0.rewards = arg_24_1:GetRewards()
 
-		local var_22_3 = #arg_22_0.rewards
+		local var_24_3 = #arg_24_0.rewards
 
-		if var_22_3 > 0 then
-			arg_22_0.rewards = formatRewardCfgList(arg_22_0.rewards)
-			arg_22_0.rewards = sortReward(arg_22_0.rewards)
+		if var_24_3 > 0 then
+			arg_24_0.rewards = formatRewardCfgList(arg_24_0.rewards)
+			arg_24_0.rewards = sortReward(arg_24_0.rewards)
 
-			arg_22_0.rewardList:StartScroll(var_22_3)
-			arg_22_0.showRewardController:SetSelectedIndex(0)
+			arg_24_0.rewardList:StartScroll(var_24_3)
+			arg_24_0.showRewardController:SetSelectedIndex(0)
 		else
-			arg_22_0.showRewardController:SetSelectedIndex(1)
+			arg_24_0.showRewardController:SetSelectedIndex(1)
 		end
 
-		arg_22_0:RefreshTask(arg_22_1)
+		arg_24_0:RefreshTask(arg_24_1)
 
-		local var_22_4 = arg_22_1:GetTag()
+		local var_24_4 = arg_24_1:GetTag()
+		local var_24_5 = SandPlayTakePhotoTools.CheckIsPhotoTag(arg_24_1.param)
 
-		if QWorldEntityMiniMapTag.Task == var_22_4 then
-			arg_22_0.btnStateController:SetSelectedIndex(1)
+		if QWorldEntityMiniMapTag.Task == var_24_4 or var_24_5 then
+			arg_24_0.btnStateController:SetSelectedState("both")
 
-			if QWorldMgr:GetQWorldEntityMgr():IsTrack(var_22_0) then
-				arg_22_0.m_followLab.text = GetTips("SANDPLAY_TRACK_CANCEL")
+			if QWorldMgr:GetQWorldEntityMgr():IsTrack(var_24_0) then
+				arg_24_0.m_followLab.text = GetTips("SANDPLAY_TRACK_CANCEL")
+
+				arg_24_0.followBtnStateController:SetSelectedState("cancel")
 			else
-				arg_22_0.m_followLab.text = GetTips("SANDPLAY_TRACK")
+				arg_24_0.m_followLab.text = GetTips("SANDPLAY_TRACK")
+
+				arg_24_0.followBtnStateController:SetSelectedState("go")
 			end
-		elseif QWorldEntityMiniMapTag.Hud == var_22_4 and arg_22_1:GetTeleportId() ~= 0 then
-			arg_22_0.btnStateController:SetSelectedIndex(2)
+		elseif QWorldEntityMiniMapTag.Hud == var_24_4 and arg_24_0.curBoardInfo:GetTeleportId() ~= 0 then
+			arg_24_0.btnStateController:SetSelectedState("teleport")
+		elseif QWorldEntityMiniMapTag.Thing == var_24_4 or QWorldEntityMiniMapTag.Hud == var_24_4 and arg_24_0.curBoardInfo:GetTeleportId() == 0 then
+			arg_24_0.btnStateController:SetSelectedState("follow")
+
+			if QWorldMgr:GetQWorldEntityMgr():IsTrack(var_24_0) then
+				arg_24_0.m_followLab.text = GetTips("SANDPLAY_TRACK_CANCEL")
+
+				arg_24_0.followBtnStateController:SetSelectedState("cancel")
+			else
+				arg_24_0.m_followLab.text = GetTips("SANDPLAY_TRACK")
+
+				arg_24_0.followBtnStateController:SetSelectedState("go")
+			end
 		else
-			arg_22_0.btnStateController:SetSelectedIndex(0)
+			arg_24_0.btnStateController:SetSelectedState("null")
 		end
 
-		local var_22_5, var_22_6 = arg_22_1:GetIcon()
+		local var_24_6, var_24_7 = arg_24_1:GetIcon()
 
-		arg_22_0.m_icon.sprite = getSpriteWithoutAtlas(var_22_5)
+		arg_24_0.m_icon.sprite = pureGetSpriteWithoutAtlas(var_24_6)
 
-		arg_22_0.IconTypeController:SetSelectedIndex(var_22_6)
+		arg_24_0.IconTypeController:SetSelectedIndex(var_24_7)
 
-		local var_22_7 = false
+		local var_24_8 = false
 
-		if arg_22_1.tag == QWorldEntityMiniMapTag.Hud then
-			local var_22_8 = nullable(SandplayTagCfg, arg_22_1.param, "activityId")
+		if arg_24_1.tag == QWorldEntityMiniMapTag.Hud then
+			local var_24_9 = nullable(SandplayTagCfg, arg_24_1.param, "activityId")
 
-			if var_22_8 then
-				var_22_7 = manager.redPoint:getTipBoolean(ActivityTools.GetRedPointKey(var_22_8) .. var_22_8)
+			if var_24_9 then
+				var_24_8 = manager.redPoint:getTipBoolean(ActivityTools.GetRedPointKey(var_24_9) .. var_24_9)
 			end
 		end
 
-		manager.redPoint:SetRedPointIndependent(arg_22_0.m_teleportBtn.transform, var_22_7)
+		manager.redPoint:SetRedPointIndependent(arg_24_0.m_teleportBtn.transform, var_24_8)
 	end
 end
 
-function var_0_0.RefreshTask(arg_23_0, arg_23_1)
-	local var_23_0 = arg_23_1:GetTag()
+function var_0_0.RefreshTask(arg_25_0, arg_25_1)
+	local var_25_0 = arg_25_1:GetTag()
 
-	if QWorldEntityMiniMapTag.Task == var_23_0 then
-		local var_23_1 = arg_23_1:GetMainQuestId()
+	if QWorldEntityMiniMapTag.Task == var_25_0 then
+		local var_25_1 = arg_25_1:GetMainQuestId()
 
-		arg_23_0.questIdList_ = QWorldQuestTool.GetVisibleQuestIdList(var_23_1)
+		arg_25_0.questIdList_ = QWorldQuestTool.GetLoadedQuestIdList(var_25_1)
 
-		local var_23_2 = #arg_23_0.questIdList_
+		local var_25_2 = #arg_25_0.questIdList_
 
-		for iter_23_0, iter_23_1 in ipairs(arg_23_0.condItems_) do
-			SetActive(iter_23_1.gameObject_, iter_23_0 <= var_23_2)
+		for iter_25_0, iter_25_1 in ipairs(arg_25_0.condItems_) do
+			SetActive(iter_25_1.gameObject_, iter_25_0 <= var_25_2)
 		end
 
-		for iter_23_2 = 1, var_23_2 do
-			local var_23_3 = arg_23_0.condItems_[iter_23_2]
+		for iter_25_2 = 1, var_25_2 do
+			local var_25_3 = arg_25_0.condItems_[iter_25_2]
 
-			if not var_23_3 then
-				local var_23_4 = Object.Instantiate(arg_23_0.m_detailItem, arg_23_0.m_detailContent)
+			if not var_25_3 then
+				local var_25_4 = Object.Instantiate(arg_25_0.m_detailItem, arg_25_0.m_detailContent)
 
-				SetActive(var_23_4, true)
+				SetActive(var_25_4, true)
 
-				var_23_3 = QWorldMaxMapTaskDetailItem.New(var_23_4)
-				arg_23_0.condItems_[iter_23_2] = var_23_3
+				var_25_3 = QWorldMaxMapTaskDetailItem.New(var_25_4)
+				arg_25_0.condItems_[iter_25_2] = var_25_3
 			end
 
-			var_23_3:SetData(arg_23_0.questIdList_[iter_23_2])
+			var_25_3:SetData(arg_25_0.questIdList_[iter_25_2])
 		end
 
-		arg_23_0.showdetailController:SetSelectedIndex(0)
+		arg_25_0.showdetailController:SetSelectedIndex(0)
 	else
-		arg_23_0.showdetailController:SetSelectedIndex(1)
+		arg_25_0.showdetailController:SetSelectedIndex(1)
 	end
 end
 
-function var_0_0.IndexInfoItem(arg_24_0, arg_24_1, arg_24_2)
-	local var_24_0 = arg_24_0.miniMapBoardList[arg_24_1]
+function var_0_0.IndexInfoItem(arg_26_0, arg_26_1, arg_26_2)
+	local var_26_0 = arg_26_0.miniMapBoardList[arg_26_1]
 
-	arg_24_2:SetData(arg_24_1, var_24_0)
-	arg_24_2:RegistCallBack(arg_24_0.infoClickHandler)
+	arg_26_2:SetData(arg_26_1, var_26_0)
+	arg_26_2:RegistCallBack(arg_26_0.infoClickHandler)
 end
 
-function var_0_0.IndexSelectItem(arg_25_0, arg_25_1, arg_25_2)
-	local var_25_0 = arg_25_0.selectEntityIdList[arg_25_1]
-	local var_25_1 = QWorldMgr:GetQWorldEntityMgr():GetEntByEntityId(var_25_0)
+function var_0_0.IndexSelectItem(arg_27_0, arg_27_1, arg_27_2)
+	local var_27_0 = arg_27_0.selectEntityIdList[arg_27_1]
+	local var_27_1 = QWorldMgr:GetQWorldEntityMgr():GetEntByEntityId(var_27_0)
 
-	if var_25_1 and var_25_1.miniMapUnit then
-		local var_25_2 = var_25_1.miniMapUnit:GetDefaultBoard()
+	if var_27_1 and var_27_1.miniMapUnit then
+		local var_27_2 = var_27_1.miniMapUnit:GetDefaultBoard()
 
-		arg_25_2:SetData(var_25_0, var_25_2)
+		arg_27_2:SetData(var_27_0, var_27_2)
 	end
 
-	arg_25_2:RegistCallBack(arg_25_0.selectClickHandler)
+	arg_27_2:RegistCallBack(arg_27_0.selectClickHandler)
 end
 
-function var_0_0.IndexRewardItem(arg_26_0, arg_26_1, arg_26_2)
-	local var_26_0 = arg_26_0.rewards[arg_26_1]
-	local var_26_1 = clone(ItemTemplateData)
+function var_0_0.IndexRewardItem(arg_28_0, arg_28_1, arg_28_2)
+	local var_28_0 = arg_28_0.rewards[arg_28_1]
+	local var_28_1 = clone(ItemTemplateData)
 
-	var_26_1.id = var_26_0.id
-	var_26_1.number = var_26_0.num
-	var_26_1.race = var_26_0.race
+	var_28_1.id = var_28_0.id
+	var_28_1.number = var_28_0.num
+	var_28_1.race = var_28_0.race
 
-	function var_26_1.clickFun(arg_27_0)
+	function var_28_1.clickFun(arg_29_0)
 		ShowPopItem(POP_ITEM, {
-			arg_27_0.id,
-			arg_27_0.number
+			arg_29_0.id,
+			arg_29_0.number
 		})
 	end
 
-	arg_26_2:SetData(var_26_1)
+	arg_28_2:SetData(var_28_1)
+end
+
+function var_0_0.RefreshCollectProgress(arg_30_0)
+	local var_30_0 = SandplayTaskMainCfg.get_id_list_by_hide_task[2]
+	local var_30_1 = SandplayTaskMainCfg.get_id_list_by_hide_task[3]
+	local var_30_2, var_30_3 = arg_30_0:CheckCollectQuest(var_30_0)
+	local var_30_4, var_30_5 = arg_30_0:CheckCollectQuest(var_30_1)
+
+	arg_30_0.m_boxCollectText.text = string.format("%s/%s", var_30_2, var_30_3)
+	arg_30_0.m_yahahaCollectText.text = string.format("%s/%s", var_30_4, var_30_5)
+end
+
+function var_0_0.CheckCollectQuest(arg_31_0, arg_31_1)
+	local var_31_0 = 0
+	local var_31_1 = 0
+
+	for iter_31_0, iter_31_1 in ipairs(arg_31_1) do
+		if QWorldQuestTool.IsCurMapMainQuest(iter_31_1) then
+			var_31_1 = var_31_1 + 1
+
+			if QWorldQuestTool.IsMainQuestFinish(iter_31_1) then
+				var_31_0 = var_31_0 + 1
+			end
+		end
+	end
+
+	return var_31_0, var_31_1
 end
 
 return var_0_0

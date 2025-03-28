@@ -45,40 +45,43 @@ function var_0_0.AddUIListener(arg_5_0)
 			QWorldLuaBridge.TeleportToStageOrigin()
 		end
 	end)
+	arg_5_0:AddBtnListener(arg_5_0.seaWarfareBtn_, nil, function()
+		arg_5_0:Go("/seaWarfareGmPanel")
+	end)
 end
 
-function var_0_0.OnEnter(arg_13_0)
+function var_0_0.OnEnter(arg_14_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR,
 		HOME_BAR
 	})
-	arg_13_0:RefreshUI()
+	arg_14_0:RefreshUI()
 end
 
-function var_0_0.OnExit(arg_14_0)
+function var_0_0.OnExit(arg_15_0)
 	manager.windowBar:HideBar()
 end
 
-function var_0_0.RefreshUI(arg_15_0)
+function var_0_0.RefreshUI(arg_16_0)
 	return
 end
 
-function var_0_0.SendGM(arg_16_0, arg_16_1)
-	arg_16_1 = "$ " .. arg_16_1
+function var_0_0.SendGM(arg_17_0, arg_17_1)
+	arg_17_1 = "$ " .. arg_17_1
 
-	local var_16_0 = {
-		content = arg_16_1
+	local var_17_0 = {
+		content = arg_17_1
 	}
 
-	print(arg_16_1)
-	manager.net:SendWithLoadingNew(27100, var_16_0, 27101, function(arg_17_0, arg_17_1)
-		print("Send Msg Return:", arg_17_0.result)
-		ShowTips(arg_17_0.result)
+	print(arg_17_1)
+	manager.net:SendWithLoadingNew(27100, var_17_0, 27101, function(arg_18_0, arg_18_1)
+		print("Send Msg Return:", arg_18_0.result)
+		ShowTips(arg_18_0.result)
 	end)
 end
 
-function var_0_0.Dispose(arg_18_0)
-	var_0_0.super.Dispose(arg_18_0)
+function var_0_0.Dispose(arg_19_0)
+	var_0_0.super.Dispose(arg_19_0)
 end
 
 return var_0_0

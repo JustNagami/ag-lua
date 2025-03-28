@@ -973,6 +973,8 @@
 			if arg_35_0 == 2 then
 				arg_33_0:Play922031009(arg_33_1)
 			end
+
+			arg_33_1:RecordChoiceLog(922031008, 922031009, 922031009)
 		end
 
 		function arg_33_1.onSingleLineUpdate_(arg_36_0)
@@ -1449,6 +1451,8 @@
 			if arg_55_0 == 2 then
 				arg_53_0:Play922031014(arg_53_1)
 			end
+
+			arg_53_1:RecordChoiceLog(922031013, 922031014, 922031014)
 		end
 
 		function arg_53_1.onSingleLineUpdate_(arg_56_0)
@@ -6241,6 +6245,8 @@
 			if arg_207_0 == 2 then
 				arg_205_0:Play922031050(arg_205_1)
 			end
+
+			arg_205_1:RecordChoiceLog(922031049, 922031050, 922031050)
 		end
 
 		function arg_205_1.onSingleLineUpdate_(arg_208_0)
@@ -18426,6 +18432,8 @@
 			if arg_543_0 == 3 then
 				arg_541_0:Play922031135(arg_541_1)
 			end
+
+			arg_541_1:RecordChoiceLog(922031130, 922031131, 922031133, 922031135)
 		end
 
 		function arg_541_1.onSingleLineUpdate_(arg_544_0)
@@ -23267,6 +23275,8 @@
 			if arg_693_0 == 3 then
 				arg_691_0:Play922031175(arg_691_1)
 			end
+
+			arg_691_1:RecordChoiceLog(922031171, 922031172, 922031174, 922031175)
 		end
 
 		function arg_691_1.onSingleLineUpdate_(arg_694_0)
@@ -38073,6 +38083,8 @@
 			if arg_1072_0 == 2 then
 				arg_1070_0:Play922031266(arg_1070_1)
 			end
+
+			arg_1070_1:RecordChoiceLog(922031265, 922031266, 922031266)
 		end
 
 		function arg_1070_1.onSingleLineUpdate_(arg_1073_0)

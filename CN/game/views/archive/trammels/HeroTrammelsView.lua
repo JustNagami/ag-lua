@@ -126,7 +126,7 @@ function var_0_0.OnEnter(arg_14_0)
 	local var_14_0 = HeroCfg[arg_14_0.heroId]
 
 	arg_14_0.m_heroName.text = var_14_0.name
-	arg_14_0.m_heroIcon.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_14_0.heroId)
+	arg_14_0.m_heroIcon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_14_0.heroId)
 
 	local var_14_1 = ArchiveData:GetTrustLevel(arg_14_0.heroId)
 
@@ -181,7 +181,7 @@ function var_0_0.Refresh(arg_18_0)
 	local var_18_0 = HeroCfg[arg_18_0.targetId]
 
 	arg_18_0.m_targetHeroName.text = var_18_0.name
-	arg_18_0.m_targetHeroIcon.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_18_0.targetId)
+	arg_18_0.m_targetHeroIcon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_18_0.targetId)
 
 	local var_18_1 = ArchiveTools.GetRelationConfig(arg_18_0.heroId, arg_18_0.targetId)
 
@@ -220,7 +220,7 @@ function var_0_0.Refresh(arg_18_0)
 
 			for iter_18_0, iter_18_1 in ipairs(var_18_4.cooperate_role_ids) do
 				if iter_18_1 ~= arg_18_0.heroId and iter_18_1 ~= arg_18_0.targetId then
-					arg_18_0.m_thirdHeroIcon.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. iter_18_1)
+					arg_18_0.m_thirdHeroIcon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. iter_18_1)
 
 					break
 				end

@@ -355,103 +355,121 @@ function var_0_0.OnSelectSkin(arg_51_0, arg_51_1)
 	manager.notify:CallUpdateFunc(HERO_SKIN_SELECT, arg_51_0, arg_51_1)
 end
 
-function var_0_0.SkinAdd(arg_52_0, arg_52_1, arg_52_2)
-	local var_52_0 = SkinCfg[arg_52_0].hero
-	local var_52_1 = HeroData:GetHeroData(var_52_0).unlocked_skin
+function var_0_0.SelectSkinWithCallback(arg_52_0, arg_52_1, arg_52_2)
+	if arg_52_0 == arg_52_1 then
+		arg_52_1 = 0
+	end
 
-	if not arg_52_1 then
-		table.insert(var_52_1, {
+	manager.net:SendWithLoadingNew(14034, {
+		hero_id = arg_52_0,
+		skin_id = arg_52_1
+	}, 14035, function(arg_53_0)
+		if isSuccess(arg_53_0.result) then
+			HeroData:SelectSkin(arg_52_0, arg_52_1)
+			arg_52_2()
+		else
+			ShowTips(arg_53_0.result)
+		end
+	end)
+end
+
+function var_0_0.SkinAdd(arg_54_0, arg_54_1, arg_54_2)
+	local var_54_0 = SkinCfg[arg_54_0].hero
+	local var_54_1 = HeroData:GetHeroData(var_54_0).unlocked_skin
+
+	if not arg_54_1 then
+		table.insert(var_54_1, {
 			time = 0,
-			skin_id = arg_52_0
+			skin_id = arg_54_0
 		})
 	else
-		table.insert(var_52_1, {
-			skin_id = arg_52_0,
-			time = arg_52_2
+		table.insert(var_54_1, {
+			skin_id = arg_54_0,
+			time = arg_54_2
 		})
 	end
 
-	if HeroData:GetHeroList()[var_52_0].unlock > 0 then
-		if SkinCfg[arg_52_0] and #SkinCfg[arg_52_0].gift > 0 then
-			manager.redPoint:setTip(RedPointConst.SKIN_GIFT .. "_" .. arg_52_0, 1)
+	if HeroData:GetHeroList()[var_54_0].unlock > 0 then
+		if SkinCfg[arg_54_0] and #SkinCfg[arg_54_0].gift > 0 then
+			manager.redPoint:setTip(RedPointConst.SKIN_GIFT .. "_" .. arg_54_0, 1)
 		end
 
-		manager.redPoint:setTip(RedPointConst.HERO_SKIN_ROUTE_ID .. arg_52_0, 1, RedPointStyle.SHOW_NEW_TAG)
+		manager.redPoint:setTip(RedPointConst.HERO_SKIN_ROUTE_ID .. arg_54_0, 1, RedPointStyle.SHOW_NEW_TAG)
 	end
 
-	local var_52_2 = SkinCfg[arg_52_0].portrait
+	local var_54_2 = SkinCfg[arg_54_0].portrait
 
-	if not arg_52_1 then
-		PlayerAction.UnlockPortrait(var_52_2)
+	if not arg_54_1 then
+		PlayerAction.UnlockPortrait(var_54_2)
 	end
 end
 
 local var_0_1
 
-function var_0_0.SendGift(arg_53_0, arg_53_1, arg_53_2)
-	local var_53_0 = {
-		archive_id = arg_53_0,
-		gift_list = arg_53_1
+function var_0_0.SendGift(arg_55_0, arg_55_1, arg_55_2)
+	local var_55_0 = {
+		archive_id = arg_55_0,
+		gift_list = arg_55_1
 	}
 
-	var_0_1 = arg_53_2
+	var_0_1 = arg_55_2
 
-	manager.net:SendWithLoadingNew(14100, var_53_0, 14101, var_0_0.OnSendGift)
+	manager.net:SendWithLoadingNew(14100, var_55_0, 14101, var_0_0.OnSendGift)
 end
 
-function var_0_0.OnSendGift(arg_54_0, arg_54_1)
-	if isSuccess(arg_54_0.result) then
-		ArchiveData:AddExp(arg_54_1.archive_id, var_0_1)
-		ArchiveData:AddGift(arg_54_1.archive_id, arg_54_1.gift_list)
+function var_0_0.OnSendGift(arg_56_0, arg_56_1)
+	if isSuccess(arg_56_0.result) then
+		ArchiveData:AddExp(arg_56_1.archive_id, var_0_1)
+		ArchiveData:AddGift(arg_56_1.archive_id, arg_56_1.gift_list)
 		var_0_0.UpdateHeartRedPoint()
 		var_0_0.UpdateStoryRedPoint()
 		var_0_0.UpdateSuperStoryRedPoint()
-		manager.notify:CallUpdateFunc(HERO_SEND_GIFT, arg_54_0, arg_54_1)
+		manager.notify:CallUpdateFunc(HERO_SEND_GIFT, arg_56_0, arg_56_1)
 	else
-		ShowTips(arg_54_0.result)
+		ShowTips(arg_56_0.result)
 	end
 end
 
 function var_0_0.InitHeartStoryRedPoint()
-	local var_55_0 = ArchiveData:GetArchiveList()
+	local var_57_0 = ArchiveData:GetArchiveList()
 
-	if not var_55_0 then
+	if not var_57_0 then
 		return
 	end
 
-	for iter_55_0, iter_55_1 in pairs(var_55_0) do
-		local var_55_1 = RedPointConst.HERO_STORY_ID .. iter_55_0
-		local var_55_2 = RedPointConst.HERO_SUPER_STORY_ID .. iter_55_0
-		local var_55_3 = RedPointConst.HERO_ANEDOTE_ID .. iter_55_0
-		local var_55_4 = RedPointConst.HERO_HEART_STORY_ROOT_ID .. iter_55_0
+	for iter_57_0, iter_57_1 in pairs(var_57_0) do
+		local var_57_1 = RedPointConst.HERO_STORY_ID .. iter_57_0
+		local var_57_2 = RedPointConst.HERO_SUPER_STORY_ID .. iter_57_0
+		local var_57_3 = RedPointConst.HERO_ANEDOTE_ID .. iter_57_0
+		local var_57_4 = RedPointConst.HERO_HEART_STORY_ROOT_ID .. iter_57_0
 
-		manager.redPoint:addGroup(var_55_4, {
-			var_55_2,
-			var_55_1,
-			var_55_3
+		manager.redPoint:addGroup(var_57_4, {
+			var_57_2,
+			var_57_1,
+			var_57_3
 		})
 	end
 end
 
 function var_0_0.UpdateStoryRedPoint()
-	local function var_56_0(arg_57_0)
-		local var_57_0 = HeroRecordCfg[arg_57_0].plot_id
+	local function var_58_0(arg_59_0)
+		local var_59_0 = HeroRecordCfg[arg_59_0].plot_id
 
-		for iter_57_0, iter_57_1 in ipairs(var_57_0) do
-			local var_57_1 = GameSetting.hero_plot_unlock_condition.value[iter_57_0]
-			local var_57_2 = IsConditionAchieved(var_57_1, {
-				heroId = arg_57_0
+		for iter_59_0, iter_59_1 in ipairs(var_59_0) do
+			local var_59_1 = GameSetting.hero_plot_unlock_condition.value[iter_59_0]
+			local var_59_2 = IsConditionAchieved(var_59_1, {
+				heroId = arg_59_0
 			})
-			local var_57_3 = true
-			local var_57_4
+			local var_59_3 = true
+			local var_59_4
 
-			if iter_57_0 > 1 then
-				var_57_3 = ArchiveData:IsStoryRead(arg_57_0, HeroRecordCfg[arg_57_0].plot_id[iter_57_0 - 1])
+			if iter_59_0 > 1 then
+				var_59_3 = ArchiveData:IsStoryRead(arg_59_0, HeroRecordCfg[arg_59_0].plot_id[iter_59_0 - 1])
 			end
 
-			local var_57_5 = ArchiveData:IsStoryRead(arg_57_0, HeroRecordCfg[arg_57_0].plot_id[iter_57_0])
+			local var_59_5 = ArchiveData:IsStoryRead(arg_59_0, HeroRecordCfg[arg_59_0].plot_id[iter_59_0])
 
-			if var_57_2 and var_57_3 and not var_57_5 then
+			if var_59_2 and var_59_3 and not var_59_5 then
 				return true
 			end
 		end
@@ -459,37 +477,37 @@ function var_0_0.UpdateStoryRedPoint()
 		return false
 	end
 
-	local var_56_1 = ArchiveData:GetArchiveList()
+	local var_58_1 = ArchiveData:GetArchiveList()
 
-	for iter_56_0, iter_56_1 in pairs(var_56_1) do
-		if HeroRecordCfg.get_id_list_by_hero_id[iter_56_0] then
-			local var_56_2 = RedPointConst.HERO_STORY_ID .. iter_56_0
-			local var_56_3 = "heartStroy_" .. PlayerData:GetPlayerInfo().userID .. "_" .. HeroRecordCfg.get_id_list_by_hero_id[iter_56_0][1]
-			local var_56_4 = getData("HearListRedPoint", var_56_3)
-			local var_56_5, var_56_6, var_56_7 = ArchiveData:GetUnlockHeartListInfoLengthByHeroId(iter_56_0)
-			local var_56_8 = var_56_4 and var_56_4[1] == var_56_5
+	for iter_58_0, iter_58_1 in pairs(var_58_1) do
+		if HeroRecordCfg.get_id_list_by_hero_id[iter_58_0] then
+			local var_58_2 = RedPointConst.HERO_STORY_ID .. iter_58_0
+			local var_58_3 = "heartStroy_" .. PlayerData:GetPlayerInfo().userID .. "_" .. HeroRecordCfg.get_id_list_by_hero_id[iter_58_0][1]
+			local var_58_4 = getData("HearListRedPoint", var_58_3)
+			local var_58_5, var_58_6, var_58_7 = ArchiveData:GetUnlockHeartListInfoLengthByHeroId(iter_58_0)
+			local var_58_8 = var_58_4 and var_58_4[1] == var_58_5
 
-			manager.redPoint:setTip(var_56_2, var_56_0(iter_56_0) and not var_56_8 and 1 or 0)
+			manager.redPoint:setTip(var_58_2, var_58_0(iter_58_0) and not var_58_8 and 1 or 0)
 		end
 	end
 end
 
 function var_0_0.UpdateSuperStoryRedPoint()
-	local function var_58_0(arg_59_0)
-		local var_59_0 = HeroRecordCfg[arg_59_0].super_plot_id
+	local function var_60_0(arg_61_0)
+		local var_61_0 = HeroRecordCfg[arg_61_0].super_plot_id
 
-		for iter_59_0, iter_59_1 in ipairs(var_59_0) do
-			local var_59_1 = false
+		for iter_61_0, iter_61_1 in ipairs(var_61_0) do
+			local var_61_1 = false
 
-			for iter_59_2, iter_59_3 in ipairs(HeroRecordCfg[arg_59_0].hero_id) do
-				local var_59_2 = GameSetting.hero_super_plot_unlock_condition.value[iter_59_0]
+			for iter_61_2, iter_61_3 in ipairs(HeroRecordCfg[arg_61_0].hero_id) do
+				local var_61_2 = GameSetting.hero_super_plot_unlock_condition.value[iter_61_0]
 
-				var_59_1 = var_59_1 or IsConditionAchieved(var_59_2, {
-					heroId = iter_59_3
+				var_61_1 = var_61_1 or IsConditionAchieved(var_61_2, {
+					heroId = iter_61_3
 				})
 			end
 
-			if var_59_1 and not ArchiveData:IsSuperHeartRead(arg_59_0, iter_59_0) then
+			if var_61_1 and not ArchiveData:IsSuperHeartRead(arg_61_0, iter_61_0) then
 				return true
 			end
 		end
@@ -497,19 +515,19 @@ function var_0_0.UpdateSuperStoryRedPoint()
 		return false
 	end
 
-	local function var_58_1(arg_60_0)
-		local var_60_0 = GameSetting.hero_anecdote_unlock_condition.value[1]
-		local var_60_1 = HeroRecordCfg[arg_60_0]
-		local var_60_2 = false
+	local function var_60_1(arg_62_0)
+		local var_62_0 = GameSetting.hero_anecdote_unlock_condition.value[1]
+		local var_62_1 = HeroRecordCfg[arg_62_0]
+		local var_62_2 = false
 
-		for iter_60_0, iter_60_1 in ipairs(var_60_1.hero_id) do
-			var_60_2 = var_60_2 or IsConditionAchieved(var_60_0, {
-				heroId = iter_60_1
+		for iter_62_0, iter_62_1 in ipairs(var_62_1.hero_id) do
+			var_62_2 = var_62_2 or IsConditionAchieved(var_62_0, {
+				heroId = iter_62_1
 			})
 
-			local var_60_3 = ArchiveData:IsArchiveStoryRead(arg_60_0, iter_60_1)
+			local var_62_3 = ArchiveData:IsArchiveStoryRead(arg_62_0, iter_62_1)
 
-			if var_60_2 and not var_60_3 then
+			if var_62_2 and not var_62_3 then
 				return true
 			end
 		end
@@ -517,277 +535,277 @@ function var_0_0.UpdateSuperStoryRedPoint()
 		return false
 	end
 
-	local var_58_2 = ArchiveData:GetArchiveList()
+	local var_60_2 = ArchiveData:GetArchiveList()
 
-	for iter_58_0, iter_58_1 in pairs(var_58_2) do
-		if HeroRecordCfg.get_id_list_by_hero_id[iter_58_0] then
-			local var_58_3 = RedPointConst.HERO_SUPER_STORY_ID .. iter_58_0
-			local var_58_4 = RedPointConst.HERO_ANEDOTE_ID .. iter_58_0
-			local var_58_5 = "heartStroy_" .. PlayerData:GetPlayerInfo().userID .. "_" .. HeroRecordCfg.get_id_list_by_hero_id[iter_58_0][1]
-			local var_58_6 = getData("HearListRedPoint", var_58_5)
-			local var_58_7, var_58_8, var_58_9 = ArchiveData:GetUnlockHeartListInfoLengthByHeroId(iter_58_0)
-			local var_58_10 = var_58_6 and var_58_6[2] == var_58_8
-			local var_58_11 = var_58_6 and var_58_6[3] == var_58_9
+	for iter_60_0, iter_60_1 in pairs(var_60_2) do
+		if HeroRecordCfg.get_id_list_by_hero_id[iter_60_0] then
+			local var_60_3 = RedPointConst.HERO_SUPER_STORY_ID .. iter_60_0
+			local var_60_4 = RedPointConst.HERO_ANEDOTE_ID .. iter_60_0
+			local var_60_5 = "heartStroy_" .. PlayerData:GetPlayerInfo().userID .. "_" .. HeroRecordCfg.get_id_list_by_hero_id[iter_60_0][1]
+			local var_60_6 = getData("HearListRedPoint", var_60_5)
+			local var_60_7, var_60_8, var_60_9 = ArchiveData:GetUnlockHeartListInfoLengthByHeroId(iter_60_0)
+			local var_60_10 = var_60_6 and var_60_6[2] == var_60_8
+			local var_60_11 = var_60_6 and var_60_6[3] == var_60_9
 
-			manager.redPoint:setTip(var_58_3, var_58_0(iter_58_0) and not var_58_10 and 1 or 0)
-			manager.redPoint:setTip(var_58_4, var_58_1(iter_58_0) and not var_58_11 and 1 or 0)
+			manager.redPoint:setTip(var_60_3, var_60_0(iter_60_0) and not var_60_10 and 1 or 0)
+			manager.redPoint:setTip(var_60_4, var_60_1(iter_60_0) and not var_60_11 and 1 or 0)
 		end
 	end
 end
 
 function var_0_0.UpdateHeartRedPoint()
-	local var_61_0 = HeroRecordCfg.all
+	local var_63_0 = HeroRecordCfg.all
 
-	if not var_61_0 then
+	if not var_63_0 then
 		return
 	end
 
-	for iter_61_0, iter_61_1 in pairs(var_61_0) do
-		for iter_61_2 = 1, HeroConst.HERO_HEARTLINK_STORY_MAX_COUNT do
-			local var_61_1 = RedPointConst.HERO_HEARTLINK_ID .. iter_61_1 .. "_" .. iter_61_2
-			local var_61_2 = GameSetting.heart_chain_unlock_condition.value[iter_61_2]
-			local var_61_3 = IsConditionAchieved(var_61_2, {
-				heroId = iter_61_1
-			}) and not ArchiveData:IsHeartRead(iter_61_1, iter_61_2)
+	for iter_63_0, iter_63_1 in pairs(var_63_0) do
+		for iter_63_2 = 1, HeroConst.HERO_HEARTLINK_STORY_MAX_COUNT do
+			local var_63_1 = RedPointConst.HERO_HEARTLINK_ID .. iter_63_1 .. "_" .. iter_63_2
+			local var_63_2 = GameSetting.heart_chain_unlock_condition.value[iter_63_2]
+			local var_63_3 = IsConditionAchieved(var_63_2, {
+				heroId = iter_63_1
+			}) and not ArchiveData:IsHeartRead(iter_63_1, iter_63_2)
 
-			manager.redPoint:setTip(var_61_1, var_61_3 and 1 or 0)
+			manager.redPoint:setTip(var_63_1, var_63_3 and 1 or 0)
 		end
 	end
 end
 
-function var_0_0.ReadStory(arg_62_0, arg_62_1, arg_62_2, arg_62_3)
-	local var_62_0 = {
-		arg_62_1
+function var_0_0.ReadStory(arg_64_0, arg_64_1, arg_64_2, arg_64_3)
+	local var_64_0 = {
+		arg_64_1
 	}
-	local var_62_1 = {
-		archive_id = arg_62_0,
-		video_list = var_62_0
+	local var_64_1 = {
+		archive_id = arg_64_0,
+		video_list = var_64_0
 	}
 
-	if arg_62_2 == 1 then
-		ArchiveData:SetStoryRead(arg_62_0, arg_62_1)
-		manager.net:SendWithLoadingNew(14104, var_62_1, 14105, var_0_0.OnReadStory)
+	if arg_64_2 == 1 then
+		ArchiveData:SetStoryRead(arg_64_0, arg_64_1)
+		manager.net:SendWithLoadingNew(14104, var_64_1, 14105, var_0_0.OnReadStory)
 		var_0_0.UpdateStoryRedPoint()
-	elseif arg_62_2 == 2 then
-		ArchiveData:SetSuperHeartRead(arg_62_0, arg_62_3)
-		ArchiveAction.SendViewSuperHeart(arg_62_0, arg_62_3)
+	elseif arg_64_2 == 2 then
+		ArchiveData:SetSuperHeartRead(arg_64_0, arg_64_3)
+		ArchiveAction.SendViewSuperHeart(arg_64_0, arg_64_3)
 		HeroAction.UpdateSuperStoryRedPoint()
 	end
 
 	manager.notify:Invoke(UPDATE_HEARTLIST)
 end
 
-function var_0_0.OnReadStory(arg_63_0, arg_63_1)
-	if not isSuccess(arg_63_0.result) then
-		ShowTips(arg_63_0.result)
-	end
-end
-
-function var_0_0.ReadHeartLink(arg_64_0, arg_64_1)
-	local var_64_0 = {
-		arg_64_1
-	}
-	local var_64_1 = {
-		archive_id = arg_64_0,
-		text_list = var_64_0
-	}
-
-	ArchiveData:SetHeartRead(arg_64_0, arg_64_1)
-	manager.net:SendWithLoadingNew(14102, var_64_1, 14103, var_0_0.OnReadHeartLink)
-end
-
-function var_0_0.OnReadHeartLink(arg_65_0, arg_65_1)
+function var_0_0.OnReadStory(arg_65_0, arg_65_1)
 	if not isSuccess(arg_65_0.result) then
 		ShowTips(arg_65_0.result)
 	end
 end
 
-function var_0_0.SetFavoriteHeroOn(arg_66_0)
+function var_0_0.ReadHeartLink(arg_66_0, arg_66_1)
 	local var_66_0 = {
-		hero_id = arg_66_0
+		arg_66_1
+	}
+	local var_66_1 = {
+		archive_id = arg_66_0,
+		text_list = var_66_0
 	}
 
-	manager.net:SendWithLoadingNew(14106, var_66_0, 14107, var_0_0.OnSetFavoriteHeroOn)
+	ArchiveData:SetHeartRead(arg_66_0, arg_66_1)
+	manager.net:SendWithLoadingNew(14102, var_66_1, 14103, var_0_0.OnReadHeartLink)
 end
 
-function var_0_0.OnSetFavoriteHeroOn(arg_67_0, arg_67_1)
-	if isSuccess(arg_67_0.result) then
-		HeroData:SetFavoriteHeroOn(arg_67_1.hero_id)
-		manager.notify:Invoke(FAVORITE_HERO)
-	else
+function var_0_0.OnReadHeartLink(arg_67_0, arg_67_1)
+	if not isSuccess(arg_67_0.result) then
 		ShowTips(arg_67_0.result)
 	end
 end
 
-function var_0_0.SetFavoriteHeroOff(arg_68_0)
+function var_0_0.SetFavoriteHeroOn(arg_68_0)
 	local var_68_0 = {
 		hero_id = arg_68_0
 	}
 
-	manager.net:SendWithLoadingNew(14108, var_68_0, 14109, var_0_0.OnSetFavoriteHeroOff)
+	manager.net:SendWithLoadingNew(14106, var_68_0, 14107, var_0_0.OnSetFavoriteHeroOn)
 end
 
-function var_0_0.OnSetFavoriteHeroOff(arg_69_0, arg_69_1)
+function var_0_0.OnSetFavoriteHeroOn(arg_69_0, arg_69_1)
 	if isSuccess(arg_69_0.result) then
-		HeroData:SetFavoriteHeroOff(arg_69_1.hero_id)
+		HeroData:SetFavoriteHeroOn(arg_69_1.hero_id)
 		manager.notify:Invoke(FAVORITE_HERO)
 	else
 		ShowTips(arg_69_0.result)
 	end
 end
 
-function var_0_0.UnLockSkin(arg_70_0)
-	manager.net:SendWithLoadingNew(14110, {
-		skin_id = arg_70_0
-	}, 14111, var_0_0.OnUnLockSkin)
+function var_0_0.SetFavoriteHeroOff(arg_70_0)
+	local var_70_0 = {
+		hero_id = arg_70_0
+	}
+
+	manager.net:SendWithLoadingNew(14108, var_70_0, 14109, var_0_0.OnSetFavoriteHeroOff)
 end
 
-function var_0_0.OnUnLockSkin(arg_71_0, arg_71_1)
+function var_0_0.OnSetFavoriteHeroOff(arg_71_0, arg_71_1)
 	if isSuccess(arg_71_0.result) then
-		HeroAction.GetSkinAni(arg_71_1.skin_id)
-		PlayerAction.RefreshSkinGiftRedPoint()
+		HeroData:SetFavoriteHeroOff(arg_71_1.hero_id)
+		manager.notify:Invoke(FAVORITE_HERO)
 	else
 		ShowTips(arg_71_0.result)
 	end
 end
 
-function var_0_0.TryToImproveTransitionGiftPt(arg_72_0, arg_72_1, arg_72_2, arg_72_3)
-	local var_72_0 = {
-		hero_id = arg_72_0,
-		slot_id = arg_72_1,
-		lv_up_num = arg_72_2
-	}
-
-	manager.net:SendWithLoadingNew(14112, var_72_0, 14113, function(arg_73_0)
-		if isSuccess(arg_73_0.result) then
-			HeroData:ImproveTransitionGiftPt(var_72_0)
-			manager.notify:Invoke(IMPROVE_TRANSITION_GIFT_PT)
-		else
-			ShowTips(arg_73_0.result)
-		end
-	end)
+function var_0_0.UnLockSkin(arg_72_0)
+	manager.net:SendWithLoadingNew(14110, {
+		skin_id = arg_72_0
+	}, 14111, var_0_0.OnUnLockSkin)
 end
 
-function var_0_0.TryToSaveTransitionSkill(arg_74_0, arg_74_1, arg_74_2, arg_74_3)
+function var_0_0.OnUnLockSkin(arg_73_0, arg_73_1)
+	if isSuccess(arg_73_0.result) then
+		HeroAction.GetSkinAni(arg_73_1.skin_id)
+		PlayerAction.RefreshSkinGiftRedPoint()
+	else
+		ShowTips(arg_73_0.result)
+	end
+end
+
+function var_0_0.TryToImproveTransitionGiftPt(arg_74_0, arg_74_1, arg_74_2, arg_74_3)
 	local var_74_0 = {
 		hero_id = arg_74_0,
 		slot_id = arg_74_1,
-		skill_list = arg_74_2
+		lv_up_num = arg_74_2
 	}
 
-	manager.net:SendWithLoadingNew(14114, var_74_0, 14115, function(arg_75_0)
+	manager.net:SendWithLoadingNew(14112, var_74_0, 14113, function(arg_75_0)
 		if isSuccess(arg_75_0.result) then
-			HeroData:ModifyTransitionSkill(var_74_0)
-
-			if arg_74_3 then
-				arg_74_3()
-			end
+			HeroData:ImproveTransitionGiftPt(var_74_0)
+			manager.notify:Invoke(IMPROVE_TRANSITION_GIFT_PT)
 		else
 			ShowTips(arg_75_0.result)
 		end
 	end)
 end
 
-function var_0_0.TryToLevelUpModule(arg_76_0)
-	manager.net:SendWithLoadingNew(14116, {
-		hero_id = arg_76_0
-	}, 14117, function(arg_77_0)
+function var_0_0.TryToSaveTransitionSkill(arg_76_0, arg_76_1, arg_76_2, arg_76_3)
+	local var_76_0 = {
+		hero_id = arg_76_0,
+		slot_id = arg_76_1,
+		skill_list = arg_76_2
+	}
+
+	manager.net:SendWithLoadingNew(14114, var_76_0, 14115, function(arg_77_0)
 		if isSuccess(arg_77_0.result) then
-			local var_77_0 = HeroData:GetCurModuleLevel(arg_76_0) + 1
-			local var_77_1 = WeaponModuleCfg[arg_76_0].cost[var_77_0]
+			HeroData:ModifyTransitionSkill(var_76_0)
 
-			HeroData:ModuleLevelUp(arg_76_0)
-			HeroAction.UpdateModuleRedPointByHeroID(arg_76_0)
-
-			if HeroData:GetCurModuleLevel(arg_76_0) > 1 then
-				JumpTools.OpenPageByJump("weaponModuleLevelUpPopView", {
-					heroID = arg_76_0
-				})
-			else
-				JumpTools.OpenPageByJump("/weaponModuleUnlockPopView", {
-					heroID = arg_76_0
-				})
+			if arg_76_3 then
+				arg_76_3()
 			end
-
-			manager.notify:Invoke(HERO_DATA_MODIFY, arg_76_0)
 		else
 			ShowTips(arg_77_0.result)
 		end
 	end)
 end
 
-function var_0_0.ResolveModuleItem(arg_78_0)
-	manager.net:SendWithLoadingNew(14118, {
-		item_list = arg_78_0
-	}, 14119, function(arg_79_0, arg_79_1)
+function var_0_0.TryToLevelUpModule(arg_78_0)
+	manager.net:SendWithLoadingNew(14116, {
+		hero_id = arg_78_0
+	}, 14117, function(arg_79_0)
 		if isSuccess(arg_79_0.result) then
-			manager.notify:CallUpdateFunc(ON_RESOLVE_MODULE_ITEM, arg_79_0, arg_79_1.item_list)
+			local var_79_0 = HeroData:GetCurModuleLevel(arg_78_0) + 1
+			local var_79_1 = WeaponModuleCfg[arg_78_0].cost[var_79_0]
+
+			HeroData:ModuleLevelUp(arg_78_0)
+			HeroAction.UpdateModuleRedPointByHeroID(arg_78_0)
+
+			if HeroData:GetCurModuleLevel(arg_78_0) > 1 then
+				JumpTools.OpenPageByJump("weaponModuleLevelUpPopView", {
+					heroID = arg_78_0
+				})
+			else
+				JumpTools.OpenPageByJump("/weaponModuleUnlockPopView", {
+					heroID = arg_78_0
+				})
+			end
+
+			manager.notify:Invoke(HERO_DATA_MODIFY, arg_78_0)
 		else
 			ShowTips(arg_79_0.result)
 		end
 	end)
 end
 
-function var_0_0.GetSkinAni(arg_80_0)
-	local var_80_0 = SkinCfg[arg_80_0].hero
+function var_0_0.ResolveModuleItem(arg_80_0)
+	manager.net:SendWithLoadingNew(14118, {
+		item_list = arg_80_0
+	}, 14119, function(arg_81_0, arg_81_1)
+		if isSuccess(arg_81_0.result) then
+			manager.notify:CallUpdateFunc(ON_RESOLVE_MODULE_ITEM, arg_81_0, arg_81_1.item_list)
+		else
+			ShowTips(arg_81_0.result)
+		end
+	end)
+end
+
+function var_0_0.GetSkinAni(arg_82_0)
+	local var_82_0 = SkinCfg[arg_82_0].hero
 
 	getReward({
 		{
 			num = 1,
-			id = arg_80_0
+			id = arg_82_0
 		}
 	}, {
 		ItemConst.ITEM_TYPE.HERO_SKIN
 	})
-	HeroAction.SkinAdd(arg_80_0)
-	HeroAction.UpdateHeroSkinRedPoint(var_80_0)
+	HeroAction.SkinAdd(arg_82_0)
+	HeroAction.UpdateHeroSkinRedPoint(var_82_0)
 end
 
 function var_0_0.UpdateAllSkinRedPoint()
-	local var_81_0 = HeroData:GetHeroList()
+	local var_83_0 = HeroData:GetHeroList()
 
-	for iter_81_0, iter_81_1 in pairs(var_81_0) do
-		local var_81_1 = iter_81_1.unlocked_skin
-		local var_81_2 = iter_81_1.unlock > 0
-		local var_81_3 = {}
+	for iter_83_0, iter_83_1 in pairs(var_83_0) do
+		local var_83_1 = iter_83_1.unlocked_skin
+		local var_83_2 = iter_83_1.unlock > 0
+		local var_83_3 = {}
 
-		for iter_81_2, iter_81_3 in ipairs(var_81_1) do
-			table.insert(var_81_3, iter_81_3.skin_id)
+		for iter_83_2, iter_83_3 in ipairs(var_83_1) do
+			table.insert(var_83_3, iter_83_3.skin_id)
 		end
 
-		for iter_81_4, iter_81_5 in pairs(SkinCfg.get_id_list_by_hero[iter_81_1.id]) do
-			local var_81_4 = RedPointConst.HERO_SKIN_ID_EXTEND .. iter_81_5
+		for iter_83_4, iter_83_5 in pairs(SkinCfg.get_id_list_by_hero[iter_83_1.id]) do
+			local var_83_4 = RedPointConst.HERO_SKIN_ID_EXTEND .. iter_83_5
 
-			if var_81_2 and not table.indexof(var_81_3, iter_81_5) and HeroTools.GetSkinIsCanUnlockAndGet(iter_81_5) then
-				manager.redPoint:setTip(var_81_4, 1)
+			if var_83_2 and not table.indexof(var_83_3, iter_83_5) and HeroTools.GetSkinIsCanUnlockAndGet(iter_83_5) then
+				manager.redPoint:setTip(var_83_4, 1)
 			else
-				manager.redPoint:setTip(var_81_4, 0)
+				manager.redPoint:setTip(var_83_4, 0)
 			end
 		end
 	end
 end
 
-function var_0_0.UpdateHeroSkinRedPoint(arg_82_0)
-	local var_82_0 = HeroData:GetHeroList()
-	local var_82_1 = var_82_0[arg_82_0].unlocked_skin
-	local var_82_2 = {}
+function var_0_0.UpdateHeroSkinRedPoint(arg_84_0)
+	local var_84_0 = HeroData:GetHeroList()
+	local var_84_1 = var_84_0[arg_84_0].unlocked_skin
+	local var_84_2 = {}
 
-	for iter_82_0, iter_82_1 in ipairs(var_82_1) do
-		table.insert(var_82_2, iter_82_1.skin_id)
+	for iter_84_0, iter_84_1 in ipairs(var_84_1) do
+		table.insert(var_84_2, iter_84_1.skin_id)
 	end
 
-	local var_82_3 = var_82_0[arg_82_0].unlock > 0
+	local var_84_3 = var_84_0[arg_84_0].unlock > 0
 
-	for iter_82_2, iter_82_3 in pairs(SkinCfg.get_id_list_by_hero[arg_82_0]) do
-		local var_82_4 = RedPointConst.HERO_SKIN_ID_EXTEND .. iter_82_3
+	for iter_84_2, iter_84_3 in pairs(SkinCfg.get_id_list_by_hero[arg_84_0]) do
+		local var_84_4 = RedPointConst.HERO_SKIN_ID_EXTEND .. iter_84_3
 
-		if var_82_3 and not table.indexof(var_82_2, iter_82_3) and HeroTools.GetSkinIsCanUnlockAndGet(iter_82_3) then
-			manager.redPoint:setTip(var_82_4, 1)
+		if var_84_3 and not table.indexof(var_84_2, iter_84_3) and HeroTools.GetSkinIsCanUnlockAndGet(iter_84_3) then
+			manager.redPoint:setTip(var_84_4, 1)
 		else
-			manager.redPoint:setTip(var_82_4, 0)
+			manager.redPoint:setTip(var_84_4, 0)
 		end
 
-		manager.redPoint:setTip(RedPointConst.HERO_SKIN_ROUTE_ID .. iter_82_3, not table.indexof(var_82_2, iter_82_3) and HeroTools.GetSkinIsCanUnlockAndGet(iter_82_3) and 1 or 0, RedPointStyle.SHOW_NEW_TAG)
+		manager.redPoint:setTip(RedPointConst.HERO_SKIN_ROUTE_ID .. iter_84_3, not table.indexof(var_84_2, iter_84_3) and HeroTools.GetSkinIsCanUnlockAndGet(iter_84_3) and 1 or 0, RedPointStyle.SHOW_NEW_TAG)
 	end
 end
 
@@ -795,99 +813,99 @@ function var_0_0.RefreshHeroRedPointAfterSeverSendData()
 	var_0_0.UpdateAllSkinRedPoint()
 end
 
-function var_0_0.UpdateModuleRedPointByHeroID(arg_84_0)
-	local var_84_0 = WeaponModuleCfg[arg_84_0]
+function var_0_0.UpdateModuleRedPointByHeroID(arg_86_0)
+	local var_86_0 = WeaponModuleCfg[arg_86_0]
 
-	if var_84_0 == nil then
+	if var_86_0 == nil then
 		return
 	end
 
-	local var_84_1 = HeroData:GetCurModuleLevel(arg_84_0)
-	local var_84_2 = HeroData:GetModuleMaxLevel(arg_84_0)
-	local var_84_3 = RedPointConst.WEAPON_MODULE_UNLOCK .. "_" .. arg_84_0
+	local var_86_1 = HeroData:GetCurModuleLevel(arg_86_0)
+	local var_86_2 = HeroData:GetModuleMaxLevel(arg_86_0)
+	local var_86_3 = RedPointConst.WEAPON_MODULE_UNLOCK .. "_" .. arg_86_0
 
-	if var_84_2 <= var_84_1 then
-		manager.redPoint:setTip(var_84_3, 0)
+	if var_86_2 <= var_86_1 then
+		manager.redPoint:setTip(var_86_3, 0)
 
 		return
 	end
 
-	local var_84_4 = var_84_0.condition[var_84_1 + 1]
-	local var_84_5 = var_84_0.cost[var_84_1 + 1]
-	local var_84_6 = {}
-	local var_84_7 = 0
+	local var_86_4 = var_86_0.condition[var_86_1 + 1]
+	local var_86_5 = var_86_0.cost[var_86_1 + 1]
+	local var_86_6 = {}
+	local var_86_7 = 0
 
-	for iter_84_0, iter_84_1 in pairs(var_84_5) do
-		if iter_84_1[1] == 2 then
-			var_84_7 = iter_84_1[2]
+	for iter_86_0, iter_86_1 in pairs(var_86_5) do
+		if iter_86_1[1] == 2 then
+			var_86_7 = iter_86_1[2]
 		else
-			table.insert(var_84_6, iter_84_1)
+			table.insert(var_86_6, iter_86_1)
 		end
 	end
 
-	if not checkGold(var_84_7, false) then
-		manager.redPoint:setTip(var_84_3, 0)
+	if not checkGold(var_86_7, false) then
+		manager.redPoint:setTip(var_86_3, 0)
 
 		return
 	end
 
-	if not HeroData:GetModuleAssignmentIsFinish(arg_84_0) then
-		manager.redPoint:setTip(var_84_3, 0)
+	if not HeroData:GetModuleAssignmentIsFinish(arg_86_0) then
+		manager.redPoint:setTip(var_86_3, 0)
 
 		return
 	end
 
-	if var_84_4 and var_84_4[1] then
-		for iter_84_2, iter_84_3 in pairs(var_84_4) do
-			if not IsConditionAchieved(iter_84_3, {
-				heroId = arg_84_0
+	if var_86_4 and var_86_4[1] then
+		for iter_86_2, iter_86_3 in pairs(var_86_4) do
+			if not IsConditionAchieved(iter_86_3, {
+				heroId = arg_86_0
 			}) then
-				manager.redPoint:setTip(var_84_3, 0)
+				manager.redPoint:setTip(var_86_3, 0)
 
 				return
 			end
 		end
 	end
 
-	for iter_84_4, iter_84_5 in pairs(var_84_6) do
-		if iter_84_5[2] > ItemTools.getItemNum(iter_84_5[1]) then
-			manager.redPoint:setTip(var_84_3, 0)
+	for iter_86_4, iter_86_5 in pairs(var_86_6) do
+		if iter_86_5[2] > ItemTools.getItemNum(iter_86_5[1]) then
+			manager.redPoint:setTip(var_86_3, 0)
 
 			return
 		end
 	end
 
-	manager.redPoint:setTip(var_84_3, 1)
+	manager.redPoint:setTip(var_86_3, 1)
 end
 
-function var_0_0.QueryHeroNewData(arg_85_0)
+function var_0_0.QueryHeroNewData(arg_87_0)
 	manager.net:SendWithLoadingNew(14042, {
-		hero_id = arg_85_0
+		hero_id = arg_87_0
 	}, 14043, var_0_0.OnHeroNewDataBack)
 end
 
-function var_0_0.OnHeroNewDataBack(arg_86_0)
-	if isSuccess(arg_86_0.result) then
+function var_0_0.OnHeroNewDataBack(arg_88_0)
+	if isSuccess(arg_88_0.result) then
 		-- block empty
 	else
-		ShowTips(arg_86_0.result)
+		ShowTips(arg_88_0.result)
 	end
 end
 
-function var_0_0.ReqHeroHeartRate(arg_87_0)
+function var_0_0.ReqHeroHeartRate(arg_89_0)
 	manager.net:SendWithLoadingNew(14122, {
-		hero_id = arg_87_0
+		hero_id = arg_89_0
 	}, 14123, var_0_0.OnReqHeroHeartRate)
 end
 
-function var_0_0.OnReqHeroHeartRate(arg_88_0, arg_88_1)
-	if isSuccess(arg_88_0.result) then
-		local var_88_0 = arg_88_1.hero_id
+function var_0_0.OnReqHeroHeartRate(arg_90_0, arg_90_1)
+	if isSuccess(arg_90_0.result) then
+		local var_90_0 = arg_90_1.hero_id
 
-		print("修正者" .. var_88_0 .. "的心动值为：", arg_88_0.value)
-		SpecialAttributesTools.OnReqHeroHeartRate(arg_88_0.value)
+		print("修正者" .. var_90_0 .. "的心动值为：", arg_90_0.value)
+		SpecialAttributesTools.OnReqHeroHeartRate(arg_90_0.value)
 	else
-		ShowTips(arg_88_0.result)
+		ShowTips(arg_90_0.result)
 	end
 end
 

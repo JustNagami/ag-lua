@@ -387,7 +387,7 @@
 
 			if var_12_6 <= arg_9_1.time_ and arg_9_1.time_ < var_12_6 + var_12_7 then
 				local var_12_8 = (arg_9_1.time_ - var_12_6) / var_12_7
-				local var_12_9 = Vector3.New(0, -0.83, -6)
+				local var_12_9 = Vector3.New(0, -0.87, -5.7)
 
 				var_12_5.localPosition = Vector3.Lerp(arg_9_1.var_.moveOldPos1111ui_story, var_12_9, var_12_8)
 
@@ -403,7 +403,7 @@
 			end
 
 			if arg_9_1.time_ >= var_12_6 + var_12_7 and arg_9_1.time_ < var_12_6 + var_12_7 + arg_12_0 then
-				var_12_5.localPosition = Vector3.New(0, -0.83, -6)
+				var_12_5.localPosition = Vector3.New(0, -0.87, -5.7)
 
 				local var_12_12 = manager.ui.mainCamera.transform.position - var_12_5.position
 
@@ -1117,7 +1117,7 @@
 
 			if var_32_1 <= arg_29_1.time_ and arg_29_1.time_ < var_32_1 + var_32_2 then
 				local var_32_3 = (arg_29_1.time_ - var_32_1) / var_32_2
-				local var_32_4 = Vector3.New(0, -0.83, -6)
+				local var_32_4 = Vector3.New(0, -0.87, -5.7)
 
 				var_32_0.localPosition = Vector3.Lerp(arg_29_1.var_.moveOldPos1111ui_story, var_32_4, var_32_3)
 
@@ -1133,7 +1133,7 @@
 			end
 
 			if arg_29_1.time_ >= var_32_1 + var_32_2 and arg_29_1.time_ < var_32_1 + var_32_2 + arg_32_0 then
-				var_32_0.localPosition = Vector3.New(0, -0.83, -6)
+				var_32_0.localPosition = Vector3.New(0, -0.87, -5.7)
 
 				local var_32_7 = manager.ui.mainCamera.transform.position - var_32_0.position
 
@@ -1681,7 +1681,7 @@
 
 			if var_48_1 <= arg_45_1.time_ and arg_45_1.time_ < var_48_1 + var_48_2 then
 				local var_48_3 = (arg_45_1.time_ - var_48_1) / var_48_2
-				local var_48_4 = Vector3.New(0, -0.83, -6)
+				local var_48_4 = Vector3.New(0, -0.87, -5.7)
 
 				var_48_0.localPosition = Vector3.Lerp(arg_45_1.var_.moveOldPos1111ui_story, var_48_4, var_48_3)
 
@@ -1697,7 +1697,7 @@
 			end
 
 			if arg_45_1.time_ >= var_48_1 + var_48_2 and arg_45_1.time_ < var_48_1 + var_48_2 + arg_48_0 then
-				var_48_0.localPosition = Vector3.New(0, -0.83, -6)
+				var_48_0.localPosition = Vector3.New(0, -0.87, -5.7)
 
 				local var_48_7 = manager.ui.mainCamera.transform.position - var_48_0.position
 

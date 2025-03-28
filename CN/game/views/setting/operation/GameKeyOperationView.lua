@@ -7,7 +7,8 @@ local var_0_2 = {
 	PS = "PS4Layout",
 	Xbox = "XboxLayout"
 }
-local var_0_3 = {
+
+CONTROL_TYPES = {
 	Move = 1,
 	View = 2,
 	SandPlay = 8,
@@ -51,18 +52,18 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
 	arg_4_0.bindings_ = {}
-	arg_4_0.bindings_[var_0_3.Move] = GameKeyBindingContent.New(arg_4_0.moveBindingGo_)
-	arg_4_0.bindings_[var_0_3.View] = GameKeyBindingContent.New(arg_4_0.viewBindingGo_)
-	arg_4_0.bindings_[var_0_3.SubJoystick] = GameKeyBindingContent.New(arg_4_0.subJoyBindingGo_)
-	arg_4_0.bindings_[var_0_3.Battle] = GameKeyBindingContent.New(arg_4_0.battleBindingGo_)
-	arg_4_0.bindings_[var_0_3.Operation] = GameKeyBindingContent.New(arg_4_0.operBindingGo_)
-	arg_4_0.bindings_[var_0_3.System] = GameKeyBindingContent.New(arg_4_0.sysBindingGo_)
-	arg_4_0.bindings_[var_0_3.MiniGame] = GameKeyBindingContent.New(arg_4_0.miniGameBindingGo_)
-	arg_4_0.bindings_[var_0_3.SandPlay] = GameKeyBindingContent.New(arg_4_0.sandPlayBindingGo_)
+	arg_4_0.bindings_[CONTROL_TYPES.Move] = GameKeyBindingContent.New(arg_4_0.moveBindingGo_)
+	arg_4_0.bindings_[CONTROL_TYPES.View] = GameKeyBindingContent.New(arg_4_0.viewBindingGo_)
+	arg_4_0.bindings_[CONTROL_TYPES.SubJoystick] = GameKeyBindingContent.New(arg_4_0.subJoyBindingGo_)
+	arg_4_0.bindings_[CONTROL_TYPES.Battle] = GameKeyBindingContent.New(arg_4_0.battleBindingGo_)
+	arg_4_0.bindings_[CONTROL_TYPES.Operation] = GameKeyBindingContent.New(arg_4_0.operBindingGo_)
+	arg_4_0.bindings_[CONTROL_TYPES.System] = GameKeyBindingContent.New(arg_4_0.sysBindingGo_)
+	arg_4_0.bindings_[CONTROL_TYPES.MiniGame] = GameKeyBindingContent.New(arg_4_0.miniGameBindingGo_)
+	arg_4_0.bindings_[CONTROL_TYPES.SandPlay] = GameKeyBindingContent.New(arg_4_0.sandPlayBindingGo_)
 
 	for iter_4_0, iter_4_1 in pairs(arg_4_0.bindings_) do
 		iter_4_1:SetKeyChangedCallback(function(arg_5_0, arg_5_1, arg_5_2)
-			arg_4_0:OnKeyChanged(arg_5_0, arg_5_1, arg_5_2)
+			arg_4_0:OnKeyChanged(arg_5_0, arg_5_1, arg_5_2, iter_4_0)
 		end)
 	end
 
@@ -379,7 +380,7 @@ function var_0_0.UpdateBindingVisibility(arg_34_0)
 	end
 end
 
-function var_0_0.OnKeyChanged(arg_35_0, arg_35_1, arg_35_2, arg_35_3)
+function var_0_0.OnKeyChanged(arg_35_0, arg_35_1, arg_35_2, arg_35_3, arg_35_4)
 	local var_35_0 = true
 
 	for iter_35_0, iter_35_1 in ipairs(arg_35_0.controlGroupsData_.groups) do

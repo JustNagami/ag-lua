@@ -254,11 +254,17 @@ function var_0_0.IsLockSubChapterStage(arg_14_0, arg_14_1)
 	return false
 end
 
-function var_0_0.GetStageArchiveID(arg_15_0)
-	local var_15_0 = StageArchiveCfg.get_id_list_by_unlock_by_stage_id[arg_15_0]
+function var_0_0.IsStageFirstClear(arg_15_0)
+	local var_15_0 = BattleStageData:GetStageData()[arg_15_0]
 
-	if var_15_0 then
-		return var_15_0[1]
+	return var_15_0 and var_15_0.clear_times == 1
+end
+
+function var_0_0.GetStageArchiveID(arg_16_0)
+	local var_16_0 = StageArchiveCfg.get_id_list_by_unlock_by_stage_id[arg_16_0]
+
+	if var_16_0 then
+		return var_16_0[1]
 	else
 		return 0
 	end
@@ -267,141 +273,127 @@ end
 var_0_0.stageArchiveChapterDic = {}
 
 function var_0_0.InitStageArchiveCfg()
-	for iter_16_0, iter_16_1 in ipairs(StageArchivesCollecteCfg.all) do
-		local var_16_0 = StageArchivesCollecteCfg[iter_16_1].chapter_id
+	for iter_17_0, iter_17_1 in ipairs(StageArchivesCollectCfg.all) do
+		local var_17_0 = StageArchivesCollectCfg[iter_17_1].chapter_id
 
-		for iter_16_2, iter_16_3 in ipairs(var_16_0) do
-			var_0_0.stageArchiveChapterDic[iter_16_3] = var_0_0.stageArchiveChapterDic[iter_16_3] or {}
+		for iter_17_2, iter_17_3 in ipairs(var_17_0) do
+			var_0_0.stageArchiveChapterDic[iter_17_3] = var_0_0.stageArchiveChapterDic[iter_17_3] or {}
 
-			table.insert(var_0_0.stageArchiveChapterDic[iter_16_3], iter_16_1)
+			table.insert(var_0_0.stageArchiveChapterDic[iter_17_3], iter_17_1)
 		end
 	end
 end
 
-function var_0_0.GetStageArchiveIDListByChapterID(arg_17_0)
-	return var_0_0.stageArchiveChapterDic[arg_17_0] or {}
+function var_0_0.GetStageArchiveIDListByChapterID(arg_18_0)
+	return var_0_0.stageArchiveChapterDic[arg_18_0] or {}
 end
 
-function var_0_0.IsNeedStageArchiveEntrace(arg_18_0)
-	return #var_0_0.GetStageArchiveIDListByChapterID(arg_18_0) > 0
+function var_0_0.IsNeedStageArchiveEntrace(arg_19_0)
+	return #var_0_0.GetStageArchiveIDListByChapterID(arg_19_0) > 0
 end
 
-function var_0_0.GetUnlockStageArchiveList(arg_19_0)
-	local var_19_0 = {}
-	local var_19_1 = var_0_0.GetStageArchiveIDListByChapterID(arg_19_0)
+function var_0_0.GetUnlockStageArchiveList(arg_20_0)
+	local var_20_0 = {}
+	local var_20_1 = var_0_0.GetStageArchiveIDListByChapterID(arg_20_0)
 
-	for iter_19_0, iter_19_1 in ipairs(var_19_1) do
-		if var_0_0.IsStageArchiveUnLock(iter_19_1) then
-			var_19_0[#var_19_0 + 1] = iter_19_1
+	for iter_20_0, iter_20_1 in ipairs(var_20_1) do
+		if var_0_0.IsStageArchiveUnLock(iter_20_1) then
+			var_20_0[#var_20_0 + 1] = iter_20_1
 		end
 	end
 
-	return var_19_0
+	return var_20_0
 end
 
-function var_0_0.IsStageArchiveUnLock(arg_20_0)
-	local var_20_0 = StageArchivesCollecteCfg[arg_20_0]
-	local var_20_1 = false
-	local var_20_2 = var_20_0.unlock_by_stage_id
-
-	if var_20_2 == 0 or var_0_0.StageIsCleared(var_20_2) then
-		var_20_1 = true
-	end
-
-	local var_20_3 = false
-
-	if var_20_0.unlock_by_time == "" or manager.time:parseTimeFromConfig(var_20_0.unlock_by_time) <= manager.time:GetServerTime() then
-		var_20_3 = true
-	end
-
-	return var_20_1 and var_20_3
+function var_0_0.IsStageArchiveUnLock(arg_21_0)
+	return BattleStageData:IsStageArchiveUnlock(arg_21_0)
 end
 
-function var_0_0.ReorderStageArchiveListByGroup(arg_21_0)
-	local var_21_0 = {}
-	local var_21_1 = {}
+function var_0_0.ReorderStageArchiveListByGroup(arg_22_0)
+	local var_22_0 = {}
+	local var_22_1 = {}
 
-	for iter_21_0, iter_21_1 in ipairs(arg_21_0) do
-		local var_21_2 = StageArchivesCollecteCfg[iter_21_1].tag_id
+	for iter_22_0, iter_22_1 in ipairs(arg_22_0) do
+		local var_22_2 = StageArchivesCollectCfg[iter_22_1].tag_id
 
-		var_21_0[var_21_2] = var_21_0[var_21_2] or {}
+		var_22_0[var_22_2] = var_22_0[var_22_2] or {}
 
-		table.insert(var_21_0[var_21_2], iter_21_1)
+		table.insert(var_22_0[var_22_2], iter_22_1)
 	end
 
-	for iter_21_2, iter_21_3 in pairs(var_21_0) do
-		var_21_1[#var_21_1 + 1] = iter_21_2
+	for iter_22_2, iter_22_3 in pairs(var_22_0) do
+		var_22_1[#var_22_1 + 1] = iter_22_2
 	end
 
-	table.sort(var_21_1, function(arg_22_0, arg_22_1)
-		return arg_22_0 < arg_22_1
+	table.sort(var_22_1, function(arg_23_0, arg_23_1)
+		return arg_23_0 < arg_23_1
 	end)
 
-	local var_21_3 = {}
+	local var_22_3 = {}
 
-	for iter_21_4, iter_21_5 in ipairs(var_21_1) do
-		table.sort(var_21_0[iter_21_5], function(arg_23_0, arg_23_1)
-			return arg_23_0 < arg_23_1
+	for iter_22_4, iter_22_5 in ipairs(var_22_1) do
+		table.sort(var_22_0[iter_22_5], function(arg_24_0, arg_24_1)
+			return arg_24_0 < arg_24_1
 		end)
 
-		var_21_3[iter_21_5] = var_21_0[iter_21_5]
+		var_22_3[iter_22_5] = var_22_0[iter_22_5]
 	end
 
-	return var_21_1, var_21_3
+	return var_22_1, var_22_3
 end
 
-function var_0_0.OpenStageArchiveInfo(arg_24_0)
-	local var_24_0 = StageArchivesCollecteCfg[arg_24_0]
+function var_0_0.OpenStageArchiveInfo(arg_25_0)
+	local var_25_0 = StageArchivesCollectCfg[arg_25_0]
 
-	if var_24_0.archive_type == StageConst.STAGE_ARCHIVE_TAG_TYPE.PICTURE_TEXT then
+	if var_25_0.archive_type == StageConst.STAGE_ARCHIVE_TAG_TYPE.PICTURE_TEXT then
 		JumpTools.OpenPageByJump("stageArchivePictureInfo", {
-			archiveID = arg_24_0
+			archiveID = arg_25_0
 		})
-	elseif var_24_0.archive_type == StageConst.STAGE_ARCHIVE_TAG_TYPE.TEXT then
+	elseif var_25_0.archive_type == StageConst.STAGE_ARCHIVE_TAG_TYPE.TEXT then
 		JumpTools.OpenPageByJump("gameHelpLong", {
-			title = var_24_0.name,
-			content = formatText(var_24_0.desc)
+			title = var_25_0.name,
+			content = formatText(var_25_0.desc)
 		})
-	elseif var_24_0.archive_type == StageConst.STAGE_ARCHIVE_TAG_TYPE.STORY then
-		local var_24_1 = var_24_0.archive_parameter
+	elseif var_25_0.archive_type == StageConst.STAGE_ARCHIVE_TAG_TYPE.STORY then
+		local var_25_1 = var_25_0.archive_parameter
 
-		manager.story:StartStory(var_24_1)
-	elseif var_24_0.archive_type == StageConst.STAGE_ARCHIVE_TAG_TYPE.MOMO_TALK then
+		manager.story:StartStory(var_25_1)
+	elseif var_25_0.archive_type == StageConst.STAGE_ARCHIVE_TAG_TYPE.MOMO_TALK then
 		JumpTools.OpenPageByJump("stageArchiveMomoTalk", {
-			archiveID = arg_24_0
+			archiveID = arg_25_0
 		})
 	else
-		Debug.LogError("undefine stage archive: " .. arg_24_0)
+		Debug.LogError("undefine stage archive: " .. arg_25_0)
 	end
 end
 
-function var_0_0.IsArchiveMomotalkPlayed(arg_25_0)
-	return getData(string.format("stage_archive_momotalk_%d", arg_25_0), "played") == true
+function var_0_0.IsArchiveMomotalkPlayed(arg_26_0)
+	return getData(string.format("stage_archive_momotalk_%d", arg_26_0), "played") == true
 end
 
-function var_0_0.SetArchiveMomotalkPlayed(arg_26_0)
-	saveData(string.format("stage_archive_momotalk_%d", arg_26_0), "played", true)
+function var_0_0.SetArchiveMomotalkPlayed(arg_27_0)
+	saveData(string.format("stage_archive_momotalk_%d", arg_27_0), "played", true)
 end
 
-function var_0_0.IsHavedStageArchiveRedInChapter(arg_27_0)
-	local var_27_0 = var_0_0.GetStageArchiveIDListByChapterID(arg_27_0)
-	local var_27_1 = false
+function var_0_0.IsHavedStageArchiveRedInChapter(arg_28_0)
+	local var_28_0 = var_0_0.GetStageArchiveIDListByChapterID(arg_28_0)
+	local var_28_1 = false
 
-	for iter_27_0, iter_27_1 in ipairs(var_27_0) do
-		if var_0_0.IsStageArchiveUnLock(iter_27_1) then
-			var_27_1 = var_0_0.IsHaveRedStageArchive(iter_27_1)
+	for iter_28_0, iter_28_1 in ipairs(var_28_0) do
+		if var_0_0.IsStageArchiveUnLock(iter_28_1) then
+			var_28_1 = var_0_0.IsHaveRedStageArchive(iter_28_1)
 
-			if var_27_1 then
+			if var_28_1 then
 				break
 			end
 		end
 	end
 
-	return var_27_1
+	return var_28_1
 end
 
-function var_0_0.IsHaveRedStageArchive(arg_28_0)
-	return BattleStageData:GetStageArchiveRedState(arg_28_0)
+function var_0_0.IsHaveRedStageArchive(arg_29_0)
+	return BattleStageData:GetStageArchiveRedState(arg_29_0)
 end
 
 return var_0_0

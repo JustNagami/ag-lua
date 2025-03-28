@@ -21,7 +21,9 @@ function var_0_0.Order(arg_5_0)
 end
 
 function var_0_0.RedPointKey(arg_6_0)
-	return nil
+	return {
+		RedPointConst.SETING_GAME_RED
+	}
 end
 
 function var_0_0.Image(arg_7_0)

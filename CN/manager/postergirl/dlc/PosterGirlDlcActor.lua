@@ -79,6 +79,7 @@ function var_0_0.SkipDebut(arg_9_0)
 	end
 
 	arg_9_0:ChangeState(PosterGirlConst.StateKay.init, true)
+	arg_9_0:AddInteractionsTimes()
 
 	return true
 end
@@ -160,6 +161,7 @@ function var_0_0.DoShacking(arg_20_0)
 	end
 
 	arg_20_0:ChangeState(PosterGirlConst.StateKay.shake)
+	var_0_0.super.DoShacking(arg_20_0)
 end
 
 function var_0_0.DoTouch(arg_21_0)
@@ -176,6 +178,7 @@ function var_0_0.DoTouch(arg_21_0)
 	end
 
 	arg_21_0:ChangeState(PosterGirlConst.StateKay.touch)
+	var_0_0.super.DoTouch(arg_21_0)
 end
 
 function var_0_0.DoQuickTouch(arg_22_0)
@@ -192,6 +195,7 @@ function var_0_0.DoQuickTouch(arg_22_0)
 	end
 
 	arg_22_0:ChangeState(PosterGirlConst.StateKay.quickclick)
+	var_0_0.super.DoQuickTouch(arg_22_0)
 end
 
 function var_0_0.DoShowing(arg_23_0)
@@ -200,6 +204,7 @@ function var_0_0.DoShowing(arg_23_0)
 	end
 
 	arg_23_0:ChangeState(PosterGirlConst.StateKay.show)
+	var_0_0.super.DoShowing(arg_23_0)
 end
 
 function var_0_0.DoInit(arg_24_0, arg_24_1)
@@ -232,6 +237,10 @@ end
 
 function var_0_0.ResetBlendShapes(arg_27_0)
 	return
+end
+
+function var_0_0.DOEndDrag(arg_28_0)
+	arg_28_0:AddInteractionsTimes()
 end
 
 return var_0_0

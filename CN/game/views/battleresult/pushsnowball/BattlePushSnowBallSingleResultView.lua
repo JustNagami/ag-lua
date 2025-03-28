@@ -93,7 +93,7 @@ function var_0_0.RefreshUI(arg_18_0)
 	arg_18_0.useSecondText_.text = arg_18_0.useSecond
 	arg_18_0.nameText_.text = arg_18_0.stageData:GetName()
 	arg_18_0.playerNameText_.text = PlayerData:GetPlayerInfo().nick
-	arg_18_0.heroImg_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/snowballPortrait2/" .. PushSnowBallData:GetSelectedHeroID())
+	arg_18_0.heroImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/snowballPortrait2/" .. PushSnowBallData:GetSelectedHeroID())
 end
 
 function var_0_0.OnExit(arg_19_0)

@@ -30,7 +30,7 @@ function var_0_0.OnEnter(arg_4_0)
 	arg_4_0.archiveText_.text = formatText(var_4_1.desc)
 
 	if arg_4_0.iconImage_ then
-		arg_4_0.iconImage_.sprite = getSpriteWithoutAtlas(var_4_1.iconPath)
+		arg_4_0.iconImage_.sprite = pureGetSpriteWithoutAtlas(var_4_1.iconPath)
 	end
 
 	arg_4_0.scrollView_.verticalNormalizedPosition = 1

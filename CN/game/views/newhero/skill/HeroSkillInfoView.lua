@@ -45,12 +45,7 @@ function var_0_0.Init(arg_2_0)
 	arg_2_0:InitSkillAddition()
 
 	arg_2_0.upStateController_ = arg_2_0.infoControllerexcollection_:GetController(var_0_1.infoShowEx.upState.name)
-	arg_2_0.propertIconList = {}
-
-	for iter_2_0 = 1, arg_2_0.properylistTrs_.childCount do
-		arg_2_0.propertIconList[iter_2_0] = arg_2_0[string.format("properyicon%sImg_", iter_2_0)]
-	end
-
+	arg_2_0.skillAttributeItemList_ = {}
 	arg_2_0.describeCanvas = arg_2_0.describeTrs_:GetComponent(typeof(Canvas))
 end
 
@@ -365,8 +360,6 @@ function var_0_0.UpdateUpStateController(arg_30_0)
 end
 
 function var_0_0.UpdateElemShow(arg_31_0, arg_31_1)
-	local var_31_0 = arg_31_1.element_type
-
 	if arg_31_1.cd == 0 then
 		arg_31_0.cdvalueText_.text = " - "
 	else
@@ -375,149 +368,171 @@ function var_0_0.UpdateElemShow(arg_31_0, arg_31_1)
 
 	arg_31_0.costGo_:SetActive(false)
 	arg_31_0.skilltypeGo_:SetActive(false)
+	arg_31_0:UpdateAttribute(arg_31_1)
 
-	for iter_31_0, iter_31_1 in pairs(arg_31_0.propertIconList) do
-		local var_31_1 = var_31_0[iter_31_0]
-
-		if var_31_1 then
-			iter_31_1.enabled = true
-			iter_31_1.sprite = getSprite("Atlas/Hero_arrtAtlas", SkillElementCfg[var_31_1].icon)
-		else
-			iter_31_1.enabled = false
-		end
-	end
-
-	local var_31_2 = 2
+	local var_31_0 = 2
 
 	if arg_31_1.EnergyChange < 0 then
 		arg_31_0.costvalueText_.text = math.abs(arg_31_1.EnergyChange) .. " " .. GetTips("NOTE_ENERGYTYPE_" .. CharactorParamCfg[arg_31_0.heroId].EnergyType)
 
 		arg_31_0.costGo_:SetActive(true)
 
-		var_31_2 = var_31_2 + 1
+		var_31_0 = var_31_0 + 1
 	end
 
-	local var_31_3 = PublicSkillCfg[arg_31_0.skillId].skill_sub_type
+	local var_31_1 = PublicSkillCfg[arg_31_0.skillId].skill_sub_type
 
-	if var_31_3 == nil then
-		var_31_3 = 0
+	if var_31_1 == nil then
+		var_31_1 = 0
 	end
 
-	if var_31_3 ~= 0 then
-		local var_31_4 = SkillSubTypeCfg.get_id_list_by_value[var_31_3]
+	if var_31_1 ~= 0 then
+		local var_31_2 = SkillSubTypeCfg.get_id_list_by_value[var_31_1]
 
-		arg_31_0.skilltypevalueText_.text = GetI18NText(SkillSubTypeCfg[var_31_4[1]].annotation)
+		arg_31_0.skilltypevalueText_.text = GetI18NText(SkillSubTypeCfg[var_31_2[1]].annotation)
 
 		arg_31_0.skilltypeGo_:SetActive(true)
 
-		var_31_2 = var_31_2 + 1
+		var_31_0 = var_31_0 + 1
 	end
 
-	local var_31_5 = -187
+	local var_31_3 = -187
 
-	if var_31_2 == 3 then
-		var_31_5 = -237
-	elseif var_31_2 == 4 then
-		var_31_5 = -287
+	if var_31_0 == 3 then
+		var_31_3 = -237
+	elseif var_31_0 == 4 then
+		var_31_3 = -287
 	end
 
-	arg_31_0.descviewTrs_.sizeDelta = Vector2(arg_31_0.descviewTrs_.sizeDelta.x, arg_31_0.infonodeTrs_.rect.height + var_31_5)
+	arg_31_0.descviewTrs_.sizeDelta = Vector2(arg_31_0.descviewTrs_.sizeDelta.x, arg_31_0.infonodeTrs_.rect.height + var_31_3)
 end
 
-function var_0_0.RefreshAddition(arg_32_0)
-	for iter_32_0 = 1, 4 do
-		local var_32_0 = arg_32_0:UpdateTargetCondition(iter_32_0)
+function var_0_0.UpdateAttribute(arg_32_0, arg_32_1)
+	local var_32_0 = arg_32_1.element_type
 
-		if var_32_0 then
-			isShowNode = var_32_0
+	if type(var_32_0) ~= "table" then
+		var_32_0 = {}
+	end
+
+	for iter_32_0, iter_32_1 in ipairs(var_32_0) do
+		local var_32_1 = arg_32_0.skillAttributeItemList_[iter_32_0]
+
+		if not var_32_1 then
+			local var_32_2 = GameObject.Instantiate(arg_32_0.skillAttributeItemGo_, arg_32_0.skillAttributePanelTrans_)
+
+			var_32_1 = HeroSkillAttributeItem.New(var_32_2)
+			arg_32_0.skillAttributeItemList_[iter_32_0] = var_32_1
+		end
+
+		var_32_1:SetData(iter_32_1)
+		var_32_1:Show(true)
+	end
+
+	for iter_32_2 = #var_32_0 + 1, #arg_32_0.skillAttributeItemList_ do
+		arg_32_0.skillAttributeItemList_[iter_32_2]:Show(false)
+	end
+end
+
+function var_0_0.RefreshAddition(arg_33_0)
+	for iter_33_0 = 1, 4 do
+		local var_33_0 = arg_33_0:UpdateTargetCondition(iter_33_0)
+
+		if var_33_0 then
+			isShowNode = var_33_0
 		end
 	end
 end
 
-function var_0_0.RefreshCondition(arg_33_0)
-	local var_33_0 = SkillTools.GetSkillIdIndex(arg_33_0.skillId)
-	local var_33_1 = SkillCfg[arg_33_0.level]["skill_limit" .. var_33_0]
-	local var_33_2 = arg_33_0.heroViewDataProxy:GetHeroData(arg_33_0.heroId)
-	local var_33_3 = false
+function var_0_0.RefreshCondition(arg_34_0)
+	local var_34_0 = SkillTools.GetSkillIdIndex(arg_34_0.skillId)
+	local var_34_1 = SkillCfg[arg_34_0.level]["skill_limit" .. var_34_0]
+	local var_34_2 = arg_34_0.heroViewDataProxy:GetHeroData(arg_34_0.heroId)
+	local var_34_3 = false
 
-	if arg_33_0.level and var_33_1 and arg_33_0.level < HeroConst.MAX_SKILL_LEVEL and var_33_1 > var_33_2.break_level then
-		arg_33_0.conditiondescireText_.text = string.format(GetTips("NOTE_SKILL_LIMIT"), var_33_1)
-		arg_33_0.conditionvalueText_.text = string.format("%s/%s", var_33_2.break_level, var_33_1)
-		var_33_3 = true
+	if arg_34_0.level and var_34_1 and arg_34_0.level < HeroConst.MAX_SKILL_LEVEL and var_34_1 > var_34_2.break_level then
+		arg_34_0.conditiondescireText_.text = string.format(GetTips("NOTE_SKILL_LIMIT"), var_34_1)
+		arg_34_0.conditionvalueText_.text = string.format("%s/%s", var_34_2.break_level, var_34_1)
+		var_34_3 = true
 	end
 
-	return var_33_3
+	return var_34_3
 end
 
-function var_0_0.UpdateTargetCondition(arg_34_0, arg_34_1)
-	local var_34_0 = arg_34_0.additionControDataList[arg_34_1].controller
-	local var_34_1, var_34_2 = arg_34_0:GetAdditionValue(arg_34_1)
+function var_0_0.UpdateTargetCondition(arg_35_0, arg_35_1)
+	local var_35_0 = arg_35_0.additionControDataList[arg_35_1].controller
+	local var_35_1, var_35_2 = arg_35_0:GetAdditionValue(arg_35_1)
 
-	SetActive(arg_34_0.additionControDataList[arg_34_1].obj, var_34_2)
+	SetActive(arg_35_0.additionControDataList[arg_35_1].obj, var_35_2)
 
-	if var_34_1 then
-		var_34_0:SetSelectedState(var_0_1.additionEx.showState.normal)
+	if var_35_1 then
+		var_35_0:SetSelectedState(var_0_1.additionEx.showState.normal)
 	else
-		var_34_0:SetSelectedState(var_0_1.additionEx.showState.lock)
+		var_35_0:SetSelectedState(var_0_1.additionEx.showState.lock)
 	end
 
-	arg_34_0.additionControDataList[arg_34_1].value = var_34_1
+	arg_35_0.additionControDataList[arg_35_1].value = var_35_1
 
-	return var_34_2
+	return var_35_2
 end
 
-function var_0_0.GetSkillLv(arg_35_0)
-	if not arg_35_0.skillLevel or arg_35_0.skillLevel == 0 then
-		arg_35_0.skillLevel = arg_35_0.heroViewDataProxy:GetSkillLv(arg_35_0.heroId, arg_35_0.skillId)
+function var_0_0.GetSkillLv(arg_36_0)
+	if not arg_36_0.skillLevel or arg_36_0.skillLevel == 0 then
+		arg_36_0.skillLevel = arg_36_0.heroViewDataProxy:GetSkillLv(arg_36_0.heroId, arg_36_0.skillId)
 	end
 
-	return arg_35_0.skillLevel + (arg_35_0.tempAddLevel or 0)
+	return arg_36_0.skillLevel + (arg_36_0.tempAddLevel or 0)
 end
 
-function var_0_0.ChangeSkillDescState(arg_36_0, arg_36_1)
-	if arg_36_1 then
-		arg_36_0.descType_ = arg_36_1
-	elseif arg_36_0.descType_ == var_0_2.NORMAL then
-		arg_36_0.descType_ = var_0_2.DETAIL
-		arg_36_0.detailTxt_.text = GetTips("SERVANT_DETAIL_SIMPLE")
+function var_0_0.ChangeSkillDescState(arg_37_0, arg_37_1)
+	if arg_37_1 then
+		arg_37_0.descType_ = arg_37_1
+	elseif arg_37_0.descType_ == var_0_2.NORMAL then
+		arg_37_0.descType_ = var_0_2.DETAIL
+		arg_37_0.detailTxt_.text = GetTips("SERVANT_DETAIL_SIMPLE")
 	else
-		arg_36_0.descType_ = var_0_2.NORMAL
-		arg_36_0.detailTxt_.text = GetTips("SERVANT_DETAIL_FULL")
+		arg_37_0.descType_ = var_0_2.NORMAL
+		arg_37_0.detailTxt_.text = GetTips("SERVANT_DETAIL_FULL")
 	end
 
-	arg_36_0:UpdateSkillDescShow()
+	arg_37_0:UpdateSkillDescShow()
 end
 
-function var_0_0.UpdateSkillDescShow(arg_37_0)
-	local var_37_0 = ""
+function var_0_0.UpdateSkillDescShow(arg_38_0)
+	local var_38_0 = ""
 
-	if arg_37_0.descType_ == var_0_2.NORMAL then
-		var_37_0 = HeroSkillCfg[arg_37_0.realSkillId].simpleDesc
+	if arg_38_0.descType_ == var_0_2.NORMAL then
+		var_38_0 = HeroSkillCfg[arg_38_0.realSkillId].simpleDesc
 	else
-		local var_37_1 = SkillTools.GetIsDodgeSkill(arg_37_0.skillId)
+		local var_38_1 = SkillTools.GetIsDodgeSkill(arg_38_0.skillId)
 
-		var_37_0 = arg_37_0.heroViewDataProxy:GetSkillDesc(arg_37_0.realSkillId, arg_37_0.level + arg_37_0.addSkillLv + arg_37_0.addEquipSkillLv, var_37_1)
+		var_38_0 = arg_38_0.heroViewDataProxy:GetSkillDesc(arg_38_0.realSkillId, arg_38_0.level + arg_38_0.addSkillLv + arg_38_0.addEquipSkillLv, var_38_1)
 	end
 
-	arg_37_0.describetextText_.text = string.format("%s%s", var_37_0, "\n")
+	arg_38_0.describetextText_.text = string.format("%s%s", var_38_0, "\n")
 
-	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_37_0.describetextText_.transform)
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_38_0.describetextText_.transform)
 end
 
-function var_0_0.Dispose(arg_38_0)
-	if arg_38_0.talkCDTimer_ then
-		arg_38_0.talkCDTimer_:Stop()
+function var_0_0.Dispose(arg_39_0)
+	if arg_39_0.talkCDTimer_ then
+		arg_39_0.talkCDTimer_:Stop()
 
-		arg_38_0.talkCDTimer_ = nil
+		arg_39_0.talkCDTimer_ = nil
 	end
 
-	for iter_38_0, iter_38_1 in pairs(arg_38_0.costItem or {}) do
-		if iter_38_1 then
-			iter_38_1:Dispose()
+	for iter_39_0, iter_39_1 in pairs(arg_39_0.costItem or {}) do
+		if iter_39_1 then
+			iter_39_1:Dispose()
 		end
 	end
 
-	var_0_0.super.Dispose(arg_38_0)
+	for iter_39_2, iter_39_3 in pairs(arg_39_0.skillAttributeItemList_ or {}) do
+		if iter_39_3 then
+			iter_39_3:Dispose()
+		end
+	end
+
+	var_0_0.super.Dispose(arg_39_0)
 end
 
 return var_0_0

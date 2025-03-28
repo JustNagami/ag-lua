@@ -137,10 +137,10 @@ function var_0_0.UpdateView(arg_15_0)
 
 	arg_15_0.adminCatList_:StartScroll(var_15_5)
 
-	arg_15_0.inbornImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Chip/" .. var_15_4.inborn_icon)
-	arg_15_0.skillImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Chip/" .. var_15_3.skill_icon)
-	arg_15_0.adminCatImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Managecat_l/" .. var_15_2.meow_icon)
-	arg_15_0.lvImage_.sprite = getSpriteWithoutAtlas("TextureBg/ExploreUI/icon_" .. var_15_1)
+	arg_15_0.inbornImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Chip/" .. var_15_4.inborn_icon)
+	arg_15_0.skillImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Chip/" .. var_15_3.skill_icon)
+	arg_15_0.adminCatImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Managecat_l/" .. var_15_2.meow_icon)
+	arg_15_0.lvImage_.sprite = pureGetSpriteWithoutAtlas("TextureBg/ExploreUI/icon_" .. var_15_1)
 	arg_15_0.skillLv_.text = "Lv." .. var_15_6
 	arg_15_0.adminCatTxt_.text = GetI18NText(var_15_2.meow_name)
 	arg_15_0.inbornDescTxt_.text = GetI18NText(var_15_4.inborn_description)

@@ -595,7 +595,7 @@
 
 			if var_24_6 <= arg_21_1.time_ and arg_21_1.time_ < var_24_6 + var_24_7 then
 				local var_24_8 = (arg_21_1.time_ - var_24_6) / var_24_7
-				local var_24_9 = Vector3.New(0, -0.83, -6)
+				local var_24_9 = Vector3.New(0, -0.87, -5.7)
 
 				var_24_5.localPosition = Vector3.Lerp(arg_21_1.var_.moveOldPos1111ui_story, var_24_9, var_24_8)
 
@@ -611,7 +611,7 @@
 			end
 
 			if arg_21_1.time_ >= var_24_6 + var_24_7 and arg_21_1.time_ < var_24_6 + var_24_7 + arg_24_0 then
-				var_24_5.localPosition = Vector3.New(0, -0.83, -6)
+				var_24_5.localPosition = Vector3.New(0, -0.87, -5.7)
 
 				local var_24_12 = manager.ui.mainCamera.transform.position - var_24_5.position
 
@@ -1277,7 +1277,7 @@
 
 			if var_46_1 <= arg_43_1.time_ and arg_43_1.time_ < var_46_1 + var_46_2 then
 				local var_46_3 = (arg_43_1.time_ - var_46_1) / var_46_2
-				local var_46_4 = Vector3.New(0, -0.83, -6)
+				local var_46_4 = Vector3.New(0, -0.87, -5.7)
 
 				var_46_0.localPosition = Vector3.Lerp(arg_43_1.var_.moveOldPos1111ui_story, var_46_4, var_46_3)
 
@@ -1293,7 +1293,7 @@
 			end
 
 			if arg_43_1.time_ >= var_46_1 + var_46_2 and arg_43_1.time_ < var_46_1 + var_46_2 + arg_46_0 then
-				var_46_0.localPosition = Vector3.New(0, -0.83, -6)
+				var_46_0.localPosition = Vector3.New(0, -0.87, -5.7)
 
 				local var_46_7 = manager.ui.mainCamera.transform.position - var_46_0.position
 
@@ -2291,7 +2291,7 @@
 
 			if var_74_13 <= arg_71_1.time_ and arg_71_1.time_ < var_74_13 + var_74_14 then
 				local var_74_15 = (arg_71_1.time_ - var_74_13) / var_74_14
-				local var_74_16 = Vector3.New(0.7, -0.83, -6)
+				local var_74_16 = Vector3.New(0.7, -0.87, -5.7)
 
 				var_74_12.localPosition = Vector3.Lerp(arg_71_1.var_.moveOldPos1111ui_story, var_74_16, var_74_15)
 
@@ -2307,7 +2307,7 @@
 			end
 
 			if arg_71_1.time_ >= var_74_13 + var_74_14 and arg_71_1.time_ < var_74_13 + var_74_14 + arg_74_0 then
-				var_74_12.localPosition = Vector3.New(0.7, -0.83, -6)
+				var_74_12.localPosition = Vector3.New(0.7, -0.87, -5.7)
 
 				local var_74_19 = manager.ui.mainCamera.transform.position - var_74_12.position
 

@@ -46,13 +46,19 @@ end
 
 function var_0_0.OnEnter(arg_10_0)
 	arg_10_0.ID_ = arg_10_0.params_.ID
+	arg_10_0.type_ = arg_10_0.params_.type_
 	arg_10_0.cfg_ = CollectPictureCfg[arg_10_0.ID_]
 
 	arg_10_0:RefreshUI()
 end
 
 function var_0_0.RefreshUI(arg_11_0)
-	arg_11_0.img_.spriteSync = "TextureConfig/Background/" .. arg_11_0.cfg_.picture
+	if arg_11_0.type_ == 5 then
+		arg_11_0.img_.spriteSync = "TextureConfig/Loading/" .. arg_11_0.cfg_.picture
+	else
+		arg_11_0.img_.spriteSync = "TextureConfig/Background/" .. arg_11_0.cfg_.picture
+	end
+
 	arg_11_0.name_.text = GetI18NText(arg_11_0.cfg_.name)
 	arg_11_0.desc_.text = GetI18NText(arg_11_0.cfg_.desc)
 

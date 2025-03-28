@@ -64,9 +64,7 @@ function var_0_0.AddUIListener(arg_6_0)
 		local var_10_0 = {}
 
 		for iter_10_0, iter_10_1 in pairs(arg_6_0.selectList) do
-			local var_10_1 = TalentTreeCfg[iter_10_0]
-
-			table.insert(var_10_0, var_10_1.affix_id)
+			table.insert(var_10_0, iter_10_0)
 		end
 
 		AreaBattleAction.SaveAffix(arg_6_0.activityID, var_10_0, arg_6_0.stageID)

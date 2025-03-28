@@ -59,16 +59,18 @@ end
 
 function var_0_0.TouchHelpSingleDrag(arg_7_0, arg_7_1, arg_7_2)
 	local var_7_0 = GameSetting.drag_to_move_speed and GameSetting.drag_to_move_speed.value[1] or 200
+	local var_7_1 = PosterGirlTools.CanInterruptCurAni()
+	local var_7_2 = PosterGirlTools.IsDlcBtn()
 
-	if not arg_7_0:CheckInitState() then
+	if var_7_1 then
 		return
 	end
 
-	local var_7_1 = arg_7_0.cameraManager_.lastCameraIndex
+	local var_7_3 = arg_7_0.cameraManager_.lastCameraIndex
 
-	if var_7_0 < arg_7_1 and var_7_1 == 0 then
+	if var_7_0 < arg_7_1 and var_7_3 == 0 and not var_7_2 then
 		arg_7_0:SwipeToRight()
-	elseif arg_7_1 < -1 * var_7_0 and var_7_1 == 0 then
+	elseif arg_7_1 < -1 * var_7_0 and var_7_3 == 0 and not var_7_2 then
 		arg_7_0:SwipeToLeft()
 	else
 		arg_7_0.cameraManager_:RotateCamera(arg_7_1, arg_7_2)
@@ -128,6 +130,14 @@ end
 
 function var_0_0.GetTimeParam(arg_11_0)
 	return arg_11_0.time_param
+end
+
+function var_0_0.GetTimeParam(arg_12_0)
+	return arg_12_0.time_param
+end
+
+function var_0_0.DOEndDrag(arg_13_0)
+	arg_13_0:AddInteractionsTimes()
 end
 
 return var_0_0

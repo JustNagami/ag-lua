@@ -122,16 +122,16 @@ function var_0_0.AddListeners(arg_7_0)
 			arg_7_0.info_.clickFun(arg_7_0.info_)
 		end
 	end)
-	arg_7_0:AddPressingByTimeListener(arg_7_0.longClickGo_, 3, 0.5, 0.2, function(arg_9_0, arg_9_1)
+	arg_7_0:AddPressingByTimeListener(arg_7_0.longClickGo_, 3, 0.5, 0.2, function(arg_9_0, arg_9_1, arg_9_2)
 		if arg_7_0.info_.longClickFun then
-			return (arg_7_0.info_.longClickFun(arg_7_0.info_, arg_9_0, arg_9_1))
+			return (arg_7_0.info_.longClickFun(arg_7_0.info_, arg_9_0, arg_9_1, arg_9_2))
 		end
 
 		return false
 	end)
-	arg_7_0:AddPressingByTimeListener(arg_7_0.topAmountGo_, 3, 0.5, 0.2, function(arg_10_0, arg_10_1)
+	arg_7_0:AddPressingByTimeListener(arg_7_0.topAmountGo_, 3, 0.5, 0.2, function(arg_10_0, arg_10_1, arg_10_2)
 		if arg_7_0.info_.clickAmountFun then
-			return (arg_7_0.info_.clickAmountFun(arg_7_0.info_, arg_10_0, arg_10_1))
+			return (arg_7_0.info_.clickAmountFun(arg_7_0.info_, arg_10_0, arg_10_1, arg_10_2))
 		end
 
 		return false

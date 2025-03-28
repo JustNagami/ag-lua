@@ -159,6 +159,10 @@ function var_0_0.IsGoodCanDisplay(arg_9_0, arg_9_1, arg_9_2)
 		return true
 	end
 
+	if var_9_0.shop_id == var_0_1.SHOP_ID.REGRESSION_SHOP then
+		return true
+	end
+
 	return false
 end
 

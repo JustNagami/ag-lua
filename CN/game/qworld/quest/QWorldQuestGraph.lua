@@ -52,6 +52,10 @@ function var_0_0.UpdateQuestGraph(arg_3_0, arg_3_1)
 
 	arg_3_0.questLastStatus_[arg_3_1] = var_3_0
 
+	if (not var_3_1 or var_3_1 == QWorldQuestConst.QUEST_STATUS.NOT_START) and var_3_0 == QWorldQuestConst.QUEST_STATUS.IN_PROGRESS then
+		manager.notify:Invoke(QWORLD_ON_QUEST_GRAPH_START, arg_3_1)
+	end
+
 	local var_3_2 = SandplayTaskCfg[arg_3_1]
 
 	if var_3_2.task_blueprint_sign == QWorldQuestConst.TASK_BLUEPRINT_TAG.NO_GRAPH then
@@ -203,40 +207,58 @@ function var_0_0.StartTimer(arg_12_0, arg_12_1)
 	end
 end
 
-function var_0_0._InsertGraphBubbles(arg_13_0, arg_13_1)
+function var_0_0.GetQuestLocalProgress(arg_13_0, arg_13_1)
 	local var_13_0 = arg_13_0.questGraph_[arg_13_1]
 
-	if var_13_0.OnClickBubble then
-		for iter_13_0, iter_13_1 in ipairs(var_13_0.OnClickBubble) do
-			local var_13_1 = arg_13_0.entityBubbleQuests_[iter_13_1] or {}
+	if not var_13_0 then
+		return nil
+	end
 
-			table.insert(var_13_1, arg_13_1)
+	return var_13_0:GetQuestLocalProgress()
+end
 
-			arg_13_0.entityBubbleQuests_[iter_13_1] = var_13_1
+function var_0_0.IncreaseQuestLocalProgress(arg_14_0, arg_14_1, arg_14_2)
+	local var_14_0 = arg_14_0.questGraph_[arg_14_1]
+
+	if var_14_0 then
+		var_14_0:IncreaseQuestLocalProgress(arg_14_2)
+	end
+end
+
+function var_0_0._InsertGraphBubbles(arg_15_0, arg_15_1)
+	local var_15_0 = arg_15_0.questGraph_[arg_15_1]
+
+	if var_15_0.OnClickBubble then
+		for iter_15_0, iter_15_1 in ipairs(var_15_0.OnClickBubble) do
+			local var_15_1 = arg_15_0.entityBubbleQuests_[iter_15_1] or {}
+
+			table.insert(var_15_1, arg_15_1)
+
+			arg_15_0.entityBubbleQuests_[iter_15_1] = var_15_1
 		end
 	end
 end
 
-function var_0_0._RemoveGraphBubbles(arg_14_0, arg_14_1)
-	local var_14_0 = arg_14_0.questGraph_[arg_14_1]
+function var_0_0._RemoveGraphBubbles(arg_16_0, arg_16_1)
+	local var_16_0 = arg_16_0.questGraph_[arg_16_1]
 
-	if var_14_0.OnClickBubble then
-		for iter_14_0, iter_14_1 in ipairs(var_14_0.OnClickBubble) do
-			table.removebyvalue(arg_14_0.entityBubbleQuests_[iter_14_1], arg_14_1)
+	if var_16_0.OnClickBubble then
+		for iter_16_0, iter_16_1 in ipairs(var_16_0.OnClickBubble) do
+			table.removebyvalue(arg_16_0.entityBubbleQuests_[iter_16_1], arg_16_1)
 
-			if #arg_14_0.entityBubbleQuests_[iter_14_1] == 0 then
-				arg_14_0.entityBubbleQuests_[iter_14_1] = nil
+			if #arg_16_0.entityBubbleQuests_[iter_16_1] == 0 then
+				arg_16_0.entityBubbleQuests_[iter_16_1] = nil
 			end
 		end
 	end
 end
 
-function var_0_0._OnEntityEnterZone(arg_15_0, arg_15_1, arg_15_2)
-	arg_15_0:DispatchQuestEvent(QWorldQuestConst.QUEST_EVENT.ON_ENTER_ZONE, arg_15_1)
+function var_0_0._OnEntityEnterZone(arg_17_0, arg_17_1, arg_17_2)
+	arg_17_0:DispatchQuestEvent(QWorldQuestConst.QUEST_EVENT.ON_ENTER_ZONE, arg_17_1)
 end
 
-function var_0_0._OnEntityExitZone(arg_16_0, arg_16_1, arg_16_2)
-	arg_16_0:DispatchQuestEvent(QWorldQuestConst.QUEST_EVENT.ON_EXIT_ZONE, arg_16_1)
+function var_0_0._OnEntityExitZone(arg_18_0, arg_18_1, arg_18_2)
+	arg_18_0:DispatchQuestEvent(QWorldQuestConst.QUEST_EVENT.ON_EXIT_ZONE, arg_18_1)
 end
 
 return var_0_0

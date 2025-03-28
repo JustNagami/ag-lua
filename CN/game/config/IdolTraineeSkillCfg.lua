@@ -51,7 +51,7 @@
 		action = "",
 		type = 0,
 		id = 103902,
-		icon = "8_1",
+		icon = "1_1",
 		counter_action = "",
 		skill_effect = {
 			10390201,
@@ -64,7 +64,7 @@
 		action = "",
 		type = 1,
 		id = 114801,
-		icon = "8_1",
+		icon = "1_1",
 		counter_action = "",
 		skill_effect = {
 			11480101,
@@ -114,7 +114,7 @@
 		action = "",
 		type = 1,
 		id = 107001,
-		icon = "9_1",
+		icon = "8_1",
 		counter_action = "",
 		skill_effect = {
 			10700101,
@@ -153,7 +153,7 @@
 		action = "",
 		type = 0,
 		id = 109502,
-		icon = "8_1",
+		icon = "2_1",
 		counter_action = "",
 		skill_effect = {
 			10950201,
@@ -190,7 +190,7 @@
 		action = "",
 		type = 1,
 		id = 91480101,
-		icon = "8_1",
+		icon = "1_1",
 		counter_action = "",
 		skill_effect = {
 			9148010101,
@@ -345,7 +345,7 @@
 		action = "",
 		type = 1,
 		id = 102101,
-		icon = "6_2",
+		icon = "8_2",
 		counter_action = "",
 		skill_effect = {
 			10210101,
@@ -370,7 +370,7 @@
 		action = "",
 		type = 1,
 		id = 102001,
-		icon = "8_2",
+		icon = "1_2",
 		counter_action = "",
 		skill_effect = {
 			10200101,
@@ -422,7 +422,7 @@
 		action = "",
 		type = 1,
 		id = 108901,
-		icon = "8_1",
+		icon = "9_1",
 		counter_action = "",
 		skill_effect = {
 			10890101,
@@ -448,7 +448,7 @@
 		action = "",
 		type = 1,
 		id = 113801,
-		icon = "9_1",
+		icon = "8_1",
 		counter_action = "",
 		skill_effect = {
 			11380101,
@@ -502,7 +502,7 @@
 		action = "",
 		type = 1,
 		id = 103401,
-		icon = "4_1",
+		icon = "8_1",
 		counter_action = "",
 		skill_effect = {
 			10340101,
@@ -528,7 +528,7 @@
 		action = "",
 		type = 1,
 		id = 101201,
-		icon = "8_1",
+		icon = "7_1",
 		counter_action = "",
 		skill_effect = {
 			10120101,
@@ -540,12 +540,66 @@
 		action = "",
 		type = 0,
 		id = 101202,
-		icon = "8_1",
+		icon = "2_1",
 		counter_action = "",
 		skill_effect = {
 			10120201,
 			10120202,
 			10120203
+		}
+	},
+	[107301] = {
+		name = "雏鸟先飞",
+		action = "",
+		type = 1,
+		id = 107301,
+		icon = "9_2",
+		counter_action = "",
+		skill_effect = {
+			10730101,
+			10730102,
+			10730103,
+			10730104
+		}
+	},
+	[107302] = {
+		name = "脚踏实地",
+		action = "",
+		type = 0,
+		id = 107302,
+		icon = "8_1",
+		counter_action = "",
+		skill_effect = {
+			10730201,
+			10730202,
+			10730203,
+			10730204
+		}
+	},
+	[108501] = {
+		name = "思念的心情",
+		action = "",
+		type = 1,
+		id = 108501,
+		icon = "9_1",
+		counter_action = "",
+		skill_effect = {
+			10850101,
+			10850102,
+			10850103,
+			10850104
+		}
+	},
+	[108502] = {
+		name = "萌发的愿望",
+		action = "",
+		type = 0,
+		id = 108502,
+		icon = "6_1",
+		counter_action = "",
+		skill_effect = {
+			10850201,
+			10850202
 		}
 	},
 	all = {
@@ -591,6 +645,10 @@
 		103401,
 		103402,
 		101201,
-		101202
+		101202,
+		107301,
+		107302,
+		108501,
+		108502
 	}
 }

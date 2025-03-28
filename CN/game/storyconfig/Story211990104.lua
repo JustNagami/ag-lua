@@ -12194,6 +12194,8 @@
 			if arg_355_0 == 2 then
 				arg_353_0:Play119904089(arg_353_1)
 			end
+
+			arg_353_1:RecordChoiceLog(119904087, 119904089, 119904089)
 		end
 
 		function arg_353_1.onSingleLineUpdate_(arg_356_0)
@@ -13207,6 +13209,8 @@
 				PlayerAction.UseStoryTrigger(1099012, 211990104, 119904097, 2)
 				arg_391_0:Play119904100(arg_391_1)
 			end
+
+			arg_391_1:RecordChoiceLog(119904097, 119904098, 119904100)
 		end
 
 		function arg_391_1.onSingleLineUpdate_(arg_394_0)

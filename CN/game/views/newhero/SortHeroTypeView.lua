@@ -42,7 +42,8 @@ function var_0_0.InitUI(arg_4_0)
 		HeroConst.HERO_ATTACK_TYPE.LIGHT,
 		HeroConst.HERO_ATTACK_TYPE.FREEZE,
 		HeroConst.HERO_ATTACK_TYPE.WATER,
-		HeroConst.HERO_ATTACK_TYPE.MIX
+		HeroConst.HERO_ATTACK_TYPE.MIX,
+		HeroConst.HERO_ATTACK_TYPE.RANDOM
 	}
 
 	for iter_4_3, iter_4_4 in ipairs(arg_4_0.attackType_) do

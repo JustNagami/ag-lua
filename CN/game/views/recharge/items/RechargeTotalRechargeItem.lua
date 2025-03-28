@@ -15,98 +15,125 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
-	arg_3_0.statusController_ = ControllerUtil.GetController(arg_3_0.gameObject_.transform, "status")
-	arg_3_0.commonItem1_ = CommonItemView.New(arg_3_0.itemGo1_)
-	arg_3_0.commonItem2_ = CommonItemView.New(arg_3_0.itemGo2_)
-	arg_3_0.commonItem3_ = CommonItemView.New(arg_3_0.itemGo3_)
-	arg_3_0.CommonData1 = clone(ItemTemplateData)
-	arg_3_0.CommonData2 = clone(ItemTemplateData)
-	arg_3_0.CommonData3 = clone(ItemTemplateData)
-	arg_3_0.commonItems_ = {
-		arg_3_0.commonItem1_,
-		arg_3_0.commonItem2_,
-		arg_3_0.commonItem3_
-	}
-	arg_3_0.commonItemData = {
-		arg_3_0.CommonData1,
-		arg_3_0.CommonData2,
-		arg_3_0.CommonData3
-	}
+	arg_3_0.statusController_ = arg_3_0.transCon_:GetController("status")
+	arg_3_0.lastController_ = arg_3_0.transCon_:GetController("last")
+	arg_3_0.itemList_ = {}
+	arg_3_0.itemParentList_ = {}
+	arg_3_0.rewardControllerList_ = {}
+
+	for iter_3_0 = 1, 4 do
+		local var_3_0 = arg_3_0["itemGo_" .. iter_3_0]
+		local var_3_1 = arg_3_0["itemParent_" .. iter_3_0]
+		local var_3_2 = arg_3_0.transCon_:GetController("reward" .. iter_3_0)
+
+		if var_3_0 then
+			arg_3_0.itemList_[iter_3_0] = CommonItemView.New(arg_3_0["itemGo_" .. iter_3_0])
+		end
+
+		if var_3_1 then
+			arg_3_0.itemParentList_[iter_3_0] = var_3_1
+		end
+
+		if var_3_2 then
+			arg_3_0.rewardControllerList_[iter_3_0] = var_3_2
+		end
+	end
 end
 
 function var_0_0.AddUIListener(arg_4_0)
 	arg_4_0:AddBtnListener(arg_4_0.getBtn_, nil, function()
-		PayAction.GetTotalRechargeBonus(arg_4_0.cfg_.id)
-	end)
-
-	for iter_4_0, iter_4_1 in ipairs(arg_4_0.commonItemData) do
-		function iter_4_1.clickFun(arg_6_0)
-			ShowPopItem(POP_ITEM, {
-				arg_6_0.id,
-				arg_6_0.number
+		if arg_4_0.isVersion_ then
+			PayAction.GetVersionRechargeBonus({
+				arg_4_0.cfg_.id
+			})
+		else
+			PayAction.GetTotalRechargeBonus({
+				arg_4_0.cfg_.id
 			})
 		end
+	end)
+end
+
+function var_0_0.OnEnter(arg_6_0)
+	return
+end
+
+function var_0_0.OnExit(arg_7_0)
+	return
+end
+
+function var_0_0.SetData(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
+	arg_8_0.index_ = arg_8_1.index
+	arg_8_0.isReceive_ = arg_8_1.isReceive
+	arg_8_0.isVersion_ = arg_8_2
+	arg_8_0.cfg_ = arg_8_2 and VersionRechargeCfg[arg_8_1.id] or TotalRechargeCfg[arg_8_1.id]
+	arg_8_0.nextNum_ = arg_8_3 and TotalRechargeCfg[arg_8_3.id].num or 0
+
+	if arg_8_0.lastController_ then
+		arg_8_0.lastController_:SetSelectedState(tostring(arg_8_3 == nil))
 	end
+
+	arg_8_0:UpdateView()
 end
 
-function var_0_0.OnEnter(arg_7_0)
-	return
-end
+function var_0_0.UpdateView(arg_9_0)
+	arg_9_0.nameLabel_.text = string.format("%02d", arg_9_0.index_)
+	arg_9_0.numText_.text = arg_9_0.cfg_.num
 
-function var_0_0.OnExit(arg_8_0)
-	return
-end
+	local var_9_0 = arg_9_0.isVersion_ and 2 or 4
+	local var_9_1 = arg_9_0.isVersion_ and arg_9_0.cfg_.reward or arg_9_0.cfg_.reward_show
 
-function var_0_0.SetData(arg_9_0, arg_9_1, arg_9_2)
-	arg_9_0.index_ = arg_9_1
-	arg_9_0.cfg_ = TotalRechargeCfg[arg_9_2]
+	for iter_9_0 = 1, var_9_0 do
+		local var_9_2 = var_9_1[iter_9_0]
 
-	arg_9_0:UpdateView()
-end
+		if var_9_2 then
+			SetActive(arg_9_0.itemParentList_[iter_9_0], true)
 
-function var_0_0.UpdateView(arg_10_0)
-	arg_10_0.nameLabel_.text = string.format("%02d", arg_10_0.index_)
-	arg_10_0.descLabel_.text = string.format(GetTips("PAYMENT_TOTAL_POINT"), arg_10_0.cfg_.num)
+			local var_9_3 = clone(ItemTemplateData)
 
-	for iter_10_0 = 1, 3 do
-		if arg_10_0.cfg_.reward[iter_10_0] then
-			SetActive(arg_10_0.commonItems_[iter_10_0].gameObject_, true)
-			CommonTools.SetCommonData(arg_10_0.commonItems_[iter_10_0], {
-				id = arg_10_0.cfg_.reward[iter_10_0][1],
-				number = arg_10_0.cfg_.reward[iter_10_0][2]
-			}, arg_10_0.commonItemData[iter_10_0])
+			var_9_3.id = var_9_2[1]
+			var_9_3.number = var_9_2[2]
+
+			function var_9_3.clickFun(arg_10_0)
+				ShowPopItem(POP_ITEM, {
+					arg_10_0.id,
+					arg_10_0.number
+				})
+			end
+
+			arg_9_0.itemList_[iter_9_0]:SetData(var_9_3)
 		else
-			SetActive(arg_10_0.commonItems_[iter_10_0].gameObject_, false)
+			SetActive(arg_9_0.itemParentList_[iter_9_0], false)
+		end
+
+		if not arg_9_0.isVersion_ then
+			arg_9_0.rewardControllerList_[iter_9_0]:SetSelectedState(var_9_2 and table.indexof(arg_9_0.cfg_.Important_rewards, iter_9_0) and "show" or "hide")
 		end
 	end
 
-	if RechargeData:HaveGetTotalRechargeBonus(arg_10_0.cfg_.id) then
-		arg_10_0.statusController_:SetSelectedState("already_received")
-	elseif RechargeData:GetTotalRechargeNum() >= arg_10_0.cfg_.num then
-		arg_10_0.statusController_:SetSelectedState("receive")
+	local var_9_4 = arg_9_0.isVersion_ and RechargeData:GetVersionRechargeNum() or RechargeData:GetTotalRechargeNum()
+
+	if not arg_9_0.isVersion_ and var_9_4 >= arg_9_0.cfg_.num then
+		arg_9_0.slider_.value = arg_9_0.nextNum_ ~= 0 and (var_9_4 - arg_9_0.cfg_.num) / (arg_9_0.nextNum_ - arg_9_0.cfg_.num) or 1
+	end
+
+	if arg_9_0.isReceive_ then
+		arg_9_0.statusController_:SetSelectedState("already_received")
+	elseif var_9_4 >= arg_9_0.cfg_.num then
+		arg_9_0.statusController_:SetSelectedState("receive")
 	else
-		arg_10_0.statusController_:SetSelectedState("not_reach")
+		arg_9_0.statusController_:SetSelectedState("not_reach")
 	end
 end
 
 function var_0_0.Dispose(arg_11_0)
-	if arg_11_0.commonItem1_ then
-		arg_11_0.commonItem1_:Dispose()
+	for iter_11_0, iter_11_1 in ipairs(arg_11_0.itemList_) do
+		iter_11_1:Dispose()
 
-		arg_11_0.commonItem1_ = nil
+		iter_11_1 = nil
 	end
 
-	if arg_11_0.commonItem2_ then
-		arg_11_0.commonItem2_:Dispose()
-
-		arg_11_0.commonItem2_ = nil
-	end
-
-	if arg_11_0.commonItem3_ then
-		arg_11_0.commonItem3_:Dispose()
-
-		arg_11_0.commonItem3_ = nil
-	end
+	arg_11_0.itemList_ = nil
 
 	var_0_0.super.Dispose(arg_11_0)
 end

@@ -68,8 +68,8 @@ function var_0_0.OnQuestFinish(arg_11_0)
 end
 
 function var_0_0.OnEnterZone_150013(arg_12_0)
-	if not arg_12_0.__var_do_once_2095425578 then
-		arg_12_0.__var_do_once_2095425578 = true
+	if not arg_12_0.__var_do_once_2139915296 then
+		arg_12_0.__var_do_once_2139915296 = true
 
 		_GRAPH_API.ThingCreate(150014)
 		_GRAPH_API.ThingCreate(150015)

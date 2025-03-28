@@ -81,7 +81,7 @@ function var_0_1.RefreshStageInfo(arg_6_0)
 
 	if arg_6_0.oldCfgID_ ~= var_6_0.id then
 		arg_6_0.sectionName_.text = GetI18NText(var_6_0.name)
-		arg_6_0.sectionImage_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_6_0.background_1))
+		arg_6_0.sectionImage_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_6_0.background_1))
 		arg_6_0.tipsText_.text = GetI18NText(var_6_0.tips)
 
 		UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_6_0.tipsTextContentTrans_)

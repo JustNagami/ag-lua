@@ -158,11 +158,11 @@ function var_0_0.UpdatePlayer(arg_19_0)
 
 	if var_19_0 then
 		if HeroStandardSystemCfg[var_19_0] then
-			arg_19_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. HeroStandardSystemCfg[var_19_0].skin_id)
+			arg_19_0.iconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. HeroStandardSystemCfg[var_19_0].skin_id)
 		else
 			local var_19_2 = HeroData:GetHeroUsingSkinInfo(var_19_0).id
 
-			arg_19_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_19_2)
+			arg_19_0.iconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_19_2)
 		end
 
 		arg_19_0.pressController:SetSelectedState("state0")
@@ -212,7 +212,7 @@ end
 function var_0_0.UpdateAI(arg_20_0)
 	arg_20_0.normalController:SetSelectedState("state1")
 
-	arg_20_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_20_0.cfg.heart_damon_id[arg_20_0.index - 3] - 4000)
+	arg_20_0.iconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_20_0.cfg.heart_damon_id[arg_20_0.index - 3] - 4000)
 
 	arg_20_0.HpController:SetSelectedState("state0")
 	arg_20_0.pressController:SetSelectedState("state0")

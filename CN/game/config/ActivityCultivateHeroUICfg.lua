@@ -64,6 +64,11 @@
 		reward_ui_path = "Widget/System/Activity_Resident/ActivityReceivedUI/ActivityReceivedPopUI",
 		main_ui_path = "Widget/System/Activity_Resident/ActivityReceivedUI/ActivityReceivedUI"
 	},
+	[32] = {
+		activity_theme = 32,
+		reward_ui_path = "Widget/System/Activity_Resident/ActivityReceivedUI/ActivityReceivedPopUI",
+		main_ui_path = "Widget/System/Activity_Resident/ActivityReceivedUI/ActivityReceivedUI"
+	},
 	all = {
 		14,
 		17,
@@ -77,6 +82,7 @@
 		28,
 		29,
 		30,
-		31
+		31,
+		32
 	}
 }

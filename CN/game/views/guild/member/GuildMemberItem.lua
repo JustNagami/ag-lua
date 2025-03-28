@@ -26,7 +26,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 	local var_5_0 = GuildData:GetGuildMemberData(arg_5_1)
 
 	arg_5_0.imageIcon_.sprite = ItemTools.getItemSprite(var_5_0.icon)
-	arg_5_0.imageHeadBg_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_5_0.frame)
+	arg_5_0.imageHeadBg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Frame/" .. var_5_0.frame)
 	arg_5_0.textName_.text = GetI18NText(var_5_0.name)
 	arg_5_0.textLevel_.text = GetTips("LEVEL") .. string.format("%s", var_5_0.level)
 

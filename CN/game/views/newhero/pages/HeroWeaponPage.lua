@@ -204,6 +204,8 @@ function var_0_0.RefreshServantModel(arg_15_0)
 end
 
 function var_0_0.RefreshServant(arg_16_0, arg_16_1)
+	arg_16_0.isSelfController_:SetSelectedState(tostring(arg_16_0.heroViewProxy_.isSelf))
+
 	if not arg_16_1 or arg_16_1.id == 0 then
 		arg_16_0.servantController:SetSelectedState("false")
 
@@ -233,8 +235,6 @@ function var_0_0.RefreshServant(arg_16_0, arg_16_1)
 	else
 		arg_16_0.refinetextText_.text = string.format(GetTips("SERVANT_PROMOTE_LEVEL_1"), var_16_4)
 	end
-
-	arg_16_0.isSelfController_:SetSelectedState(tostring(arg_16_0.heroViewProxy_.isSelf))
 end
 
 function var_0_0.Hide(arg_17_0)

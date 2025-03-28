@@ -85,23 +85,23 @@ function var_0_0.RefreshTgl(arg_9_0, arg_9_1)
 end
 
 function var_0_0.OnFriendsListChange(arg_10_0, arg_10_1)
-	arg_10_1 = arg_10_1 or arg_10_0.curPageIndex_
-
 	if arg_10_0.curPageIndex_ == FriendsConst.FRIEND_TYPE.NEW_FRIENDS and arg_10_1 == FriendsConst.FRIEND_TYPE.SEARCH then
 		arg_10_0.curPageIndex_ = FriendsConst.FRIEND_TYPE.SEARCH
 		arg_10_0.params_.friendPage = arg_10_0.curPageIndex_
+	elseif arg_10_0.curPageIndex_ == FriendsConst.FRIEND_TYPE.SEARCH and arg_10_1 == FriendsConst.FRIEND_TYPE.NEW_FRIENDS then
+		arg_10_0.curPageIndex_ = FriendsConst.FRIEND_TYPE.NEW_FRIENDS
+		arg_10_0.params_.friendPage = arg_10_1
 	end
 
-	if arg_10_1 == FriendsConst.FRIEND_TYPE.SEARCH then
+	if arg_10_0.curPageIndex_ == FriendsConst.FRIEND_TYPE.SEARCH then
 		arg_10_0:RefreshTgl(FriendsConst.FRIEND_TYPE.NEW_FRIENDS)
+		arg_10_0.pageCon_:SetSelectedState(arg_10_0.curPageIndex_)
+		arg_10_0.contentView_:RefreshUI(arg_10_0.curPageIndex_)
 	else
-		arg_10_0:RefreshTgl(arg_10_1)
+		arg_10_0:RefreshTgl(arg_10_0.curPageIndex_)
+		arg_10_0.pageCon_:SetSelectedState(arg_10_0.curPageIndex_)
+		arg_10_0.contentView_:RefreshUI(arg_10_0.curPageIndex_)
 	end
-
-	arg_10_0.isRefreshing_ = false
-
-	arg_10_0.contentView_:RefreshUI(arg_10_0.curPageIndex_)
-	arg_10_0.pageCon_:SetSelectedState(arg_10_0.curPageIndex_)
 end
 
 function var_0_0.OnFriendsChatChange(arg_11_0, arg_11_1, arg_11_2, arg_11_3)

@@ -64,7 +64,7 @@ function var_0_0.RefreshUI(arg_10_0)
 
 	arg_10_0.title_.text = string.format(GetTips("HERO_ANECDOTE_TITLE"), var_10_0.name)
 	arg_10_0.rewardText_.text = "x" .. arg_10_0.data_.reward[1][2]
-	arg_10_0.rewardIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Piece/" .. arg_10_0.data_.id)
+	arg_10_0.rewardIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Piece/" .. arg_10_0.data_.id)
 
 	local var_10_1 = GameSetting.hero_anecdote_unlock_condition.value[1]
 	local var_10_2

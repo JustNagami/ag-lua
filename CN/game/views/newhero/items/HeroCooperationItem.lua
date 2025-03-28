@@ -68,8 +68,8 @@ end
 function var_0_0.UpdateView(arg_10_0)
 	local var_10_0 = HeroCfg[arg_10_0.data.id]
 
-	arg_10_0.unSelectImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_10_0.skinID)
-	arg_10_0.selectImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_10_0.skinID)
+	arg_10_0.unSelectImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_10_0.skinID)
+	arg_10_0.selectImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_10_0.skinID)
 	arg_10_0.unSelectName_.text = GetI18NText(var_10_0.name)
 	arg_10_0.selectName_.text = GetI18NText(var_10_0.name)
 

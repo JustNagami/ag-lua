@@ -92,7 +92,7 @@ function var_0_0.Refresh(arg_6_0, arg_6_1)
 			arg_6_0.nameText_.text = HeroTools.GetHeroFullName(arg_6_0.heroId)
 		end
 
-		arg_6_0.pic_.sprite = getSpriteWithoutAtlas(string.format("TextureConfig/Character/Portrait/%d", arg_6_0.heroId))
+		arg_6_0.pic_.sprite = pureGetSpriteWithoutAtlas(string.format("TextureConfig/Character/Portrait/%d", arg_6_0.heroId))
 		arg_6_0.campIcon_.sprite = HeroTools.GetHeroRaceIcon(arg_6_0.heroId)
 
 		arg_6_0.pic_:SetNativeSize()

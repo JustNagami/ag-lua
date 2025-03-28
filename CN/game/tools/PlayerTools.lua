@@ -82,7 +82,7 @@ function var_0_0.UpdateRandomDataAfterLogin()
 		local var_8_3 = manager.time:GetServerTime()
 		local var_8_4 = getData("RandomData", "LastId_SCENE") or 0
 
-		if var_8_4 == 0 or var_8_2 == 0 or not manager.time:CheckIsToday(var_8_2, var_8_3) then
+		if table.keyof(HomeSceneSettingData:GetRandomSceneList(), var_8_4) == nil or var_8_4 == 0 or var_8_2 == 0 or not manager.time:CheckIsToday(var_8_2, var_8_3) then
 			saveData("RandomData", "LastLoginTime_SCENE", var_8_3)
 			var_0_0.UpdateRandomData(var_8_1)
 
@@ -101,7 +101,7 @@ function var_0_0.UpdateRandomDataAfterLogin()
 		local var_8_7 = manager.time:GetServerTime()
 		local var_8_8 = getData("RandomData", "LastId_HERO") or 0
 
-		if var_8_8 == 0 or var_8_6 == 0 or not manager.time:CheckIsToday(var_8_6, var_8_7) then
+		if table.keyof(PlayerData:GetRandomHeroList(), var_8_8) == nil or var_8_8 == 0 or var_8_6 == 0 or not manager.time:CheckIsToday(var_8_6, var_8_7) then
 			saveData("RandomData", "LastLoginTime_HERO", var_8_7)
 			var_0_0.UpdateRandomData(var_8_5)
 			saveData("RandomData", "LastId_HERO", PlayerData:GetRandomHero())
@@ -127,13 +127,20 @@ function var_0_0.UpdateRandomData(arg_9_0)
 		HomeSceneSettingData:SetIsSwitchTime(false)
 	end
 
-	if arg_9_0 == HomeSceneSettingData:GetRandomMode() then
+	local var_9_0 = HomeSceneSettingData:GetForceRandomSceneID() ~= nil
+
+	if arg_9_0 == HomeSceneSettingData:GetRandomMode() or var_9_0 then
 		HomeSceneSettingData:CalcNextScene()
 	end
 
-	if arg_9_0 == PlayerData:GetRandomHeroMode() then
+	local var_9_1 = PlayerData:GetForceRandomHeroID() ~= nil
+
+	if arg_9_0 == PlayerData:GetRandomHeroMode() or var_9_1 then
 		PlayerData:CalcNextRandomHero()
 	end
+
+	PlayerData:SetForceRandomHeroID(nil)
+	HomeSceneSettingData:SetForceRandomSceneID(nil)
 end
 
 return var_0_0

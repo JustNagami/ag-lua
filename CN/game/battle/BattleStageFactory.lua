@@ -158,6 +158,12 @@
 			var_1_0 = BattleAreaBattleTemplate.New(arg_1_1, arg_1_2)
 		elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_DODGE_BARRAGE == arg_1_0 then
 			var_1_0 = BattleDodgeBarrageTemplate.New(arg_1_1, arg_1_2)
+		elseif BattleConst.STAGE_TYPE_NEW.SEA_WARFARE == arg_1_0 then
+			var_1_0 = BattleSeaWarfareStageTemplate.New(arg_1_1, arg_1_2)
+		elseif BattleConst.STAGE_TYPE_NEW.SKULD == arg_1_0 then
+			var_1_0 = BattleSkuldTemplate.New(arg_1_1)
+		elseif BattleConst.STAGE_TYPE_NEW.SAND_PLAY == arg_1_0 then
+			var_1_0 = BattleSandPlayStageTemplate.New(arg_1_1, arg_1_2)
 		end
 
 		var_1_0:SetReserveParams(arg_1_3)

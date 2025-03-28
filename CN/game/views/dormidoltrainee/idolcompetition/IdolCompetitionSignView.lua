@@ -22,11 +22,17 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.style3Data_ = {}
 	arg_4_0.selectPosController_ = {}
 
-	for iter_4_0 = 1, 3 do
-		local var_4_0 = GameObject.Find("WT_RK/WT_XR_Scene/WT_XR_Scene/X104_SceneSteps/X104_Formation_HeroPos_" .. iter_4_0)
+	local var_4_0 = Asset.Load("Effect/Scene/X104_Formation_HeroPos")
 
-		if var_4_0 then
-			arg_4_0.selectPosController_[iter_4_0] = var_4_0:GetComponent("ControllerExCollection"):GetController("state")
+	for iter_4_0 = 1, 3 do
+		local var_4_1 = GameObject.Find("WT_RK/WT_XR_Scene/WT_XR_Scene/X104_SceneSteps/X104_Formation_HeroPos_" .. iter_4_0)
+
+		if var_4_1 then
+			local var_4_2 = Object.Instantiate(var_4_0, var_4_1.transform)
+
+			if var_4_2 then
+				arg_4_0.selectPosController_[iter_4_0] = var_4_2:GetComponent("ControllerExCollection"):GetController("state")
+			end
 		end
 	end
 
@@ -43,11 +49,11 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.snap3DPos_ = {}
 
 	for iter_4_2 = 1, 3 do
-		local var_4_1 = nullable(Dorm.storage:PickData("idol.camp.pos.competition" .. iter_4_2), "transform")
+		local var_4_3 = nullable(Dorm.storage:PickData("idol.camp.pos.competition" .. iter_4_2), "transform")
 
 		arg_4_0.snap3DPos_[iter_4_2] = {
-			x = var_4_1.position.x,
-			z = var_4_1.position.z
+			x = var_4_3.position.x,
+			z = var_4_3.position.z
 		}
 	end
 

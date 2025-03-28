@@ -244,9 +244,9 @@ function var_0_0.UpdateView(arg_23_0)
 			arg_23_0.dlcbtnController:SetSelectedState("gift1")
 		end
 
-		arg_23_0.dlcIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. arg_23_0.skinCfg.id .. "_character")
+		arg_23_0.dlcIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. arg_23_0.skinCfg.id .. "_character")
 		arg_23_0.dlcLittleIcon_.sprite = ItemTools.getItemSprite(arg_23_0.itemDlcCfg.id)
-		arg_23_0.dlcBgImg_.sprite = getSpriteWithoutAtlas("TextureConfig/BackgroundQuad/" .. HomeSceneSettingCfg[arg_23_0.itemDlcCfg.id].prefix)
+		arg_23_0.dlcBgImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/BackgroundQuad/" .. HomeSceneSettingCfg[arg_23_0.itemDlcCfg.id].prefix)
 		arg_23_0.dlcbuyTxt_.text = string.format(GetTips("BUY_SKIN_DLC_TIPS"), ItemTools.getItemName(arg_23_0.itemDlcCfg.id))
 		arg_23_0.dlcItemNameTxt_.text = string.format(ItemTools.getItemName(arg_23_0.itemDlcCfg.id))
 	end

@@ -281,8 +281,8 @@ function var_0_0.RefreshUI(arg_29_0)
 		ActivityTools.JumpBackToActivityMainViewByTheme(ActivityCfg[ActivitySummerWaterData:GetMainActivityID()].activity_theme)
 	end
 
-	arg_29_0.roleImg1_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. HeroStandardSystemCfg[arg_29_0.singleHeroList_[1]].hero_id)
-	arg_29_0.roleImg2_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. HeroStandardSystemCfg[arg_29_0.singleHeroList_[2]].hero_id)
+	arg_29_0.roleImg1_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. HeroStandardSystemCfg[arg_29_0.singleHeroList_[1]].hero_id)
+	arg_29_0.roleImg2_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. HeroStandardSystemCfg[arg_29_0.singleHeroList_[2]].hero_id)
 
 	local var_29_0 = ActivitySummerWaterData:GetTotalGainCurrenyNum() .. "/" .. arg_29_0.scheduleCfg_.voting_ticket_limit
 

@@ -79,6 +79,8 @@ function var_0_0.AddUIListener(arg_9_0)
 
 		if arg_9_0.upHeroID == 0 then
 			var_9_0()
+		elseif DrawPoolCfg[arg_9_0.params_.poolId].pool_change == 0 then
+			var_9_0()
 		else
 			ShowMessageBox({
 				isTop = true,
@@ -152,15 +154,23 @@ function var_0_0.UpdateList(arg_19_0)
 
 	arg_19_0.uiList_:StartScroll(#arg_19_0.idList_)
 
-	if DrawPoolCfg[arg_19_0.params_.poolId].pool_change == 0 or arg_19_0.params_.isFirst then
+	local var_19_0 = DrawPoolCfg[arg_19_0.params_.poolId]
+
+	if var_19_0.pool_change == 0 or arg_19_0.params_.isFirst then
 		arg_19_0.limitController_:SetSelectedState("false")
 	else
 		arg_19_0.limitController_:SetSelectedState("true")
 
-		local var_19_0 = DrawData:GetPoolUpTimes(arg_19_0.params_.poolId)
-		local var_19_1 = DrawPoolCfg[arg_19_0.params_.poolId].pool_change - var_19_0
+		local var_19_1 = DrawData:GetPoolUpTimes(arg_19_0.params_.poolId)
+		local var_19_2 = DrawPoolCfg[arg_19_0.params_.poolId].pool_change - var_19_1
 
-		arg_19_0.timesText_.text = string.format(GetTips("DRAW_REMAIN_UP_TIMES"), tostring(var_19_1))
+		arg_19_0.timesText_.text = string.format(GetTips("DRAW_REMAIN_UP_TIMES"), tostring(var_19_2))
+	end
+
+	if var_19_0.pool_type == 9 then
+		arg_19_0.uilistSrex_.enabled = true
+	else
+		arg_19_0.uilistSrex_.enabled = false
 	end
 end
 

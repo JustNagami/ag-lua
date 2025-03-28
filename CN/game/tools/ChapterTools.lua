@@ -232,14 +232,16 @@ function var_0_0.GetSubPlotFinishPercentage(arg_14_0)
 		end
 	end
 
-	local var_14_4 = WarchessLevelCfg.get_id_list_by_chapter_tag[arg_14_0]
+	if arg_14_0 ~= 6010002 then
+		local var_14_4 = WarchessLevelCfg.get_id_list_by_chapter_tag[arg_14_0]
 
-	if var_14_4 ~= nil then
-		for iter_14_4, iter_14_5 in pairs(var_14_4) do
-			var_14_0 = var_14_0 + 1
+		if var_14_4 ~= nil then
+			for iter_14_4, iter_14_5 in pairs(var_14_4) do
+				var_14_0 = var_14_0 + 1
 
-			if ChessTools.GetChapterProgress(iter_14_5) >= 100 then
-				var_14_1 = var_14_1 + 1
+				if ChessTools.GetChapterProgress(iter_14_5) >= 100 then
+					var_14_1 = var_14_1 + 1
+				end
 			end
 		end
 	end
@@ -560,7 +562,7 @@ function var_0_0.GotoChapterSection(arg_31_0)
 		return
 	end
 
-	if #var_31_1.chapter_list > 1 and var_31_1.id ~= ChapterConst.CHAPTER_CLIENT_XUHENG_PART_2_2 then
+	if #var_31_1.chapter_list > 1 and var_31_1.id ~= ChapterConst.CHAPTER_CLIENT_XUHENG_PART_2_2 and not ChapterConst.ROLL_MAIN_CLINET[var_31_1.id] then
 		local var_31_3 = var_31_1.chapter_list[2]
 		local var_31_4 = ChapterCfg[var_31_3].section_id_list[1]
 
@@ -602,9 +604,15 @@ function var_0_0.GotoChapterSection(arg_31_0)
 		return
 	end
 
-	JumpTools.OpenPageByJump("/chapterSection", {
-		chapterID = arg_31_0
-	})
+	if ChapterConst.ROLL_MAIN_CLINET[var_31_1.id] then
+		JumpTools.OpenPageByJump("/chapterSectionRollBg", {
+			chapterID = arg_31_0
+		})
+	else
+		JumpTools.OpenPageByJump("/chapterSection", {
+			chapterID = arg_31_0
+		})
+	end
 end
 
 function var_0_0.GetChapterBranchURL(arg_32_0)
@@ -658,26 +666,37 @@ function var_0_0.GetSubPlotUrl(arg_33_0, arg_33_1)
 			end
 		end
 	else
-		var_33_0 = arg_33_0 == 6010109 and "/subPlotHera" or (arg_33_0 == 6010110 or arg_33_0 == 6010111 or arg_33_0 == 6010112) and "/activityFactoryStoryStage" or arg_33_0 == 6010113 and "/subPlotTyr" or (arg_33_0 == 6010116 or arg_33_0 == 6010117) and "/subPlotLuWuAndZhiMing" or (arg_33_0 == 6010118 or arg_33_0 == 6010119) and (arg_33_1 and "/chapterVariantThoth" or "/subPlotSection") or arg_33_0 == 6010121 and "/summerChessBoardMainEntry" or (arg_33_0 == 6010122 or arg_33_0 == 6010123) and "/subPlotOuMoFeiSi" or (arg_33_0 == 6010124 or arg_33_0 == 6010125) and "/subPlotBaiChao" or (arg_33_0 == 6010126 or arg_33_0 == 6010127) and "/subPlotKeErGai" or "/subPlotSection"
+		var_33_0 = arg_33_0 == 6010109 and "/subPlotHera" or (arg_33_0 == 6010110 or arg_33_0 == 6010111 or arg_33_0 == 6010112) and "/activityFactoryStoryStage" or arg_33_0 == 6010113 and "/subPlotTyr" or (arg_33_0 == 6010116 or arg_33_0 == 6010117) and "/subPlotLuWuAndZhiMing" or (arg_33_0 == 6010118 or arg_33_0 == 6010119) and (arg_33_1 and "/chapterVariantThoth" or "/subPlotSection") or arg_33_0 == 6010121 and "/summerChessBoardMainEntry" or (arg_33_0 == 6010122 or arg_33_0 == 6010123) and "/subPlotOuMoFeiSi" or (arg_33_0 == 6010124 or arg_33_0 == 6010125) and "/subPlotBaiChao" or (arg_33_0 == 6010126 or arg_33_0 == 6010127) and "/subPlotKeErGai" or arg_33_0 == 6010128 and "/skuldSystemMainView" or arg_33_0 == 6010108 and "/athenaStoryStage" or "/subPlotSection"
 	end
 
 	return var_33_0, var_33_1
 end
 
 function var_0_0.GetOpenSubPlotClient()
-	local var_34_0 = ChapterClientCfg.get_id_list_by_toggle[BattleConst.TOGGLE.SUB_PLOT]
+	local var_34_0
+	local var_34_1 = -1
+	local var_34_2 = ChapterClientCfg.get_id_list_by_toggle[BattleConst.TOGGLE.SUB_PLOT]
 
-	for iter_34_0 = #var_34_0, 1, -1 do
-		local var_34_1 = var_34_0[iter_34_0]
+	for iter_34_0 = #var_34_2, 1, -1 do
+		local var_34_3 = var_34_2[iter_34_0]
+		local var_34_4 = ChapterClientCfg[var_34_3]
 
-		for iter_34_1, iter_34_2 in ipairs(ChapterClientCfg[var_34_1].chapter_list) do
-			if var_0_0.IsOpenSubPlotByTime(iter_34_2) then
-				return var_34_1
+		if var_34_1 < var_34_4.sort then
+			var_34_1 = var_34_4.sort
+
+			for iter_34_1, iter_34_2 in ipairs(var_34_4.chapter_list) do
+				var_34_0 = var_34_3
+
+				break
 			end
 		end
 	end
 
-	return var_34_0[#var_34_0]
+	if var_34_0 then
+		return var_34_0
+	else
+		return var_34_2[#var_34_2]
+	end
 end
 
 function var_0_0.IsUnlockSubPlotClient(arg_35_0)
@@ -1188,31 +1207,47 @@ function var_0_0.GetChapterAudioIDList(arg_55_0)
 	return var_55_1
 end
 
-function var_0_0.GetChapterDayList(arg_56_0)
-	local var_56_0 = {}
+function var_0_0.GetSkuildAudio()
+	local var_56_0 = 11
+	local var_56_1 = SkuldStageCfg.all
 
-	for iter_56_0, iter_56_1 in pairs(ChapterMapCfg.get_id_list_by_chapter_id_day[arg_56_0]) do
-		table.insert(var_56_0, iter_56_0)
+	for iter_56_0 = #var_56_1, 1, -1 do
+		local var_56_2 = var_56_1[iter_56_0]
+		local var_56_3 = ChapterAudioCfg.get_id_list_by_unlock_by_skuld_stage_id[var_56_2]
+
+		if var_56_3 and SkuldSystemData:GetLevelIDIsClear(var_56_2) then
+			return var_56_3[1]
+		end
 	end
-
-	table.sort(var_56_0, function(arg_57_0, arg_57_1)
-		return arg_57_0 < arg_57_1
-	end)
 
 	return var_56_0
 end
 
-function var_0_0.IsLastDay(arg_58_0, arg_58_1)
-	local var_58_0 = var_0_0.GetChapterDayList(arg_58_0)
+function var_0_0.GetChapterDayList(arg_57_0)
+	local var_57_0 = {}
 
-	return GameSetting.chapter19_timeline.value[1] == table.keyof(var_58_0, arg_58_1)
+	for iter_57_0, iter_57_1 in pairs(ChapterMapCfg.get_id_list_by_chapter_id_day[arg_57_0]) do
+		table.insert(var_57_0, iter_57_0)
+	end
+
+	table.sort(var_57_0, function(arg_58_0, arg_58_1)
+		return arg_58_0 < arg_58_1
+	end)
+
+	return var_57_0
 end
 
-function var_0_0.IsNeedExpandDay(arg_59_0)
+function var_0_0.IsLastDay(arg_59_0, arg_59_1)
 	local var_59_0 = var_0_0.GetChapterDayList(arg_59_0)
 
-	for iter_59_0, iter_59_1 in ipairs(var_59_0) do
-		if iter_59_0 ~= 1 and iter_59_0 ~= 2 and iter_59_0 ~= GameSetting.chapter19_timeline.value[1] and var_0_0.IsNeedGuildDay(arg_59_0, iter_59_1) then
+	return GameSetting.chapter19_timeline.value[1] == table.keyof(var_59_0, arg_59_1)
+end
+
+function var_0_0.IsNeedExpandDay(arg_60_0)
+	local var_60_0 = var_0_0.GetChapterDayList(arg_60_0)
+
+	for iter_60_0, iter_60_1 in ipairs(var_60_0) do
+		if iter_60_0 ~= 1 and iter_60_0 ~= 2 and iter_60_0 ~= GameSetting.chapter19_timeline.value[1] and var_0_0.IsNeedGuildDay(arg_60_0, iter_60_1) then
 			return true
 		end
 	end
@@ -1220,56 +1255,56 @@ function var_0_0.IsNeedExpandDay(arg_59_0)
 	return false
 end
 
-function var_0_0.IsNeedGuildDay(arg_60_0, arg_60_1)
-	local var_60_0 = ChapterMapCfg.get_id_list_by_chapter_id_day[arg_60_0][arg_60_1][1]
-	local var_60_1 = ChapterMapCfg[var_60_0].location_list[1]
-	local var_60_2 = ChapterLocationCfg[var_60_1].stage_list[1]
-	local var_60_3 = BattleStageData:GetStageData()[var_60_2]
-	local var_60_4 = var_0_0.GetChapterDayList(arg_60_0)
-	local var_60_5 = table.keyof(var_60_4, arg_60_1)
+function var_0_0.IsNeedGuildDay(arg_61_0, arg_61_1)
+	local var_61_0 = ChapterMapCfg.get_id_list_by_chapter_id_day[arg_61_0][arg_61_1][1]
+	local var_61_1 = ChapterMapCfg[var_61_0].location_list[1]
+	local var_61_2 = ChapterLocationCfg[var_61_1].stage_list[1]
+	local var_61_3 = BattleStageData:GetStageData()[var_61_2]
+	local var_61_4 = var_0_0.GetChapterDayList(arg_61_0)
+	local var_61_5 = table.keyof(var_61_4, arg_61_1)
 
-	if var_60_5 == 2 or var_60_5 == GameSetting.chapter19_timeline.value[1] then
+	if var_61_5 == 2 or var_61_5 == GameSetting.chapter19_timeline.value[1] then
 		return false
 	end
 
-	if var_60_3 and var_60_3.clear_times <= 0 and var_0_0.IsUnlockChapterDay(arg_60_0, arg_60_1) and not BattleStageData:GetOperateChapterDay(arg_60_0, arg_60_1) and not var_0_0.IsLastDay(arg_60_0, arg_60_1) then
+	if var_61_3 and var_61_3.clear_times <= 0 and var_0_0.IsUnlockChapterDay(arg_61_0, arg_61_1) and not BattleStageData:GetOperateChapterDay(arg_61_0, arg_61_1) and not var_0_0.IsLastDay(arg_61_0, arg_61_1) then
 		return true
 	end
 
 	return false
 end
 
-function var_0_0.IsUnlockChapterDay(arg_61_0, arg_61_1)
-	if not ChapterTools.IsClearPreChapterDayAllStage(arg_61_0, arg_61_1) then
+function var_0_0.IsUnlockChapterDay(arg_62_0, arg_62_1)
+	if not ChapterTools.IsClearPreChapterDayAllStage(arg_62_0, arg_62_1) then
 		return false
 	end
 
-	local var_61_0 = ChapterMapCfg.get_id_list_by_chapter_id_day[arg_61_0][arg_61_1][1]
-	local var_61_1 = ChapterMapCfg[var_61_0]
+	local var_62_0 = ChapterMapCfg.get_id_list_by_chapter_id_day[arg_62_0][arg_62_1][1]
+	local var_62_1 = ChapterMapCfg[var_62_0]
 
-	if ActivityTools.GetActivityStatus(var_61_1.activity_id) == 0 then
+	if ActivityTools.GetActivityStatus(var_62_1.activity_id) == 0 then
 		return false
 	end
 
 	return true
 end
 
-function var_0_0.IsClearPreChapterDayAllStage(arg_62_0, arg_62_1)
-	local var_62_0 = var_0_0.GetChapterDayList(arg_62_0)
-	local var_62_1 = table.keyof(var_62_0, arg_62_1)
+function var_0_0.IsClearPreChapterDayAllStage(arg_63_0, arg_63_1)
+	local var_63_0 = var_0_0.GetChapterDayList(arg_63_0)
+	local var_63_1 = table.keyof(var_63_0, arg_63_1)
 
-	if var_62_1 == 1 then
+	if var_63_1 == 1 then
 		return true
 	end
 
-	local var_62_2 = var_62_0[var_62_1 - 1]
+	local var_63_2 = var_63_0[var_63_1 - 1]
 
-	return var_0_0.IsClearChapterDayAllStage(arg_62_0, var_62_2)
+	return var_0_0.IsClearChapterDayAllStage(arg_63_0, var_63_2)
 end
 
-function var_0_0.IsClearChapterDayAllStage(arg_63_0, arg_63_1)
-	for iter_63_0, iter_63_1 in ipairs(ChapterMapCfg.get_id_list_by_chapter_id_day[arg_63_0][arg_63_1]) do
-		if var_0_0.IsClearMapAllStage(iter_63_1) == false then
+function var_0_0.IsClearChapterDayAllStage(arg_64_0, arg_64_1)
+	for iter_64_0, iter_64_1 in ipairs(ChapterMapCfg.get_id_list_by_chapter_id_day[arg_64_0][arg_64_1]) do
+		if var_0_0.IsClearMapAllStage(iter_64_1) == false then
 			return false
 		end
 	end
@@ -1277,9 +1312,9 @@ function var_0_0.IsClearChapterDayAllStage(arg_63_0, arg_63_1)
 	return true
 end
 
-function var_0_0.IsClearMapAllStage(arg_64_0)
-	for iter_64_0, iter_64_1 in ipairs(ChapterMapCfg[arg_64_0].location_list) do
-		if var_0_0.IsClearLocationAllStage(iter_64_1) == false then
+function var_0_0.IsClearMapAllStage(arg_65_0)
+	for iter_65_0, iter_65_1 in ipairs(ChapterMapCfg[arg_65_0].location_list) do
+		if var_0_0.IsClearLocationAllStage(iter_65_1) == false then
 			return false
 		end
 	end
@@ -1287,11 +1322,11 @@ function var_0_0.IsClearMapAllStage(arg_64_0)
 	return true
 end
 
-function var_0_0.IsClearLocationAllStage(arg_65_0)
-	for iter_65_0, iter_65_1 in ipairs(ChapterLocationCfg[arg_65_0].stage_list) do
-		local var_65_0 = BattleStageData:GetStageData()[iter_65_1]
+function var_0_0.IsClearLocationAllStage(arg_66_0)
+	for iter_66_0, iter_66_1 in ipairs(ChapterLocationCfg[arg_66_0].stage_list) do
+		local var_66_0 = BattleStageData:GetStageData()[iter_66_1]
 
-		if not var_65_0 or not (var_65_0.clear_times > 0) then
+		if not var_66_0 or not (var_66_0.clear_times > 0) then
 			return false
 		end
 	end
@@ -1299,15 +1334,15 @@ function var_0_0.IsClearLocationAllStage(arg_65_0)
 	return true
 end
 
-function var_0_0.GetUnclearMainStageLocationID(arg_66_0)
-	for iter_66_0, iter_66_1 in ipairs(ChapterMapCfg[arg_66_0].location_list) do
-		local var_66_0 = ChapterLocationCfg[iter_66_1].stage_list
+function var_0_0.GetUnclearMainStageLocationID(arg_67_0)
+	for iter_67_0, iter_67_1 in ipairs(ChapterMapCfg[arg_67_0].location_list) do
+		local var_67_0 = ChapterLocationCfg[iter_67_1].stage_list
 
-		for iter_66_2, iter_66_3 in ipairs(var_66_0) do
-			local var_66_1 = BattleStageData:GetStageData()[iter_66_3]
+		for iter_67_2, iter_67_3 in ipairs(var_67_0) do
+			local var_67_1 = BattleStageData:GetStageData()[iter_67_3]
 
-			if var_66_1 and var_66_1.clear_times <= 0 then
-				return iter_66_1
+			if var_67_1 and var_67_1.clear_times <= 0 then
+				return iter_67_1
 			end
 		end
 	end
@@ -1315,15 +1350,15 @@ function var_0_0.GetUnclearMainStageLocationID(arg_66_0)
 	return nil
 end
 
-function var_0_0.NeedShowSwitchMapGuild(arg_67_0, arg_67_1, arg_67_2)
-	if var_0_0.GetUnclearMainStageLocationID(arg_67_2) then
+function var_0_0.NeedShowSwitchMapGuild(arg_68_0, arg_68_1, arg_68_2)
+	if var_0_0.GetUnclearMainStageLocationID(arg_68_2) then
 		return false
 	end
 
-	local var_67_0 = ChapterMapCfg.get_id_list_by_chapter_id_day[arg_67_0][arg_67_1]
+	local var_68_0 = ChapterMapCfg.get_id_list_by_chapter_id_day[arg_68_0][arg_68_1]
 
-	for iter_67_0, iter_67_1 in ipairs(var_67_0) do
-		if iter_67_1 ~= arg_67_2 and var_0_0.GetUnclearMainStageLocationID(iter_67_1) then
+	for iter_68_0, iter_68_1 in ipairs(var_68_0) do
+		if iter_68_1 ~= arg_68_2 and var_0_0.GetUnclearMainStageLocationID(iter_68_1) then
 			return true
 		end
 	end
@@ -1331,24 +1366,10 @@ function var_0_0.NeedShowSwitchMapGuild(arg_67_0, arg_67_1, arg_67_2)
 	return false
 end
 
-function var_0_0.HasNewLocationMainStage(arg_68_0)
-	local var_68_0 = ChapterLocationCfg[arg_68_0]
+function var_0_0.HasNewLocationMainStage(arg_69_0)
+	local var_69_0 = ChapterLocationCfg[arg_69_0]
 
-	for iter_68_0, iter_68_1 in ipairs(var_68_0.stage_list) do
-		local var_68_1 = BattleStageData:GetStageData()[iter_68_1]
-
-		if var_68_1 and var_68_1.clear_times <= 0 then
-			return true
-		end
-	end
-
-	return false
-end
-
-function var_0_0.HasNewLocationStage(arg_69_0, arg_69_1)
-	local var_69_0 = ChapterLocationCfg[arg_69_1]
-
-	for iter_69_0, iter_69_1 in ipairs(var_69_0.sub_stage_list) do
+	for iter_69_0, iter_69_1 in ipairs(var_69_0.stage_list) do
 		local var_69_1 = BattleStageData:GetStageData()[iter_69_1]
 
 		if var_69_1 and var_69_1.clear_times <= 0 then
@@ -1356,16 +1377,30 @@ function var_0_0.HasNewLocationStage(arg_69_0, arg_69_1)
 		end
 	end
 
-	for iter_69_2, iter_69_3 in ipairs(var_69_0.event_list) do
-		if var_0_0.IsUnlockEvent(iter_69_3) and not var_0_0.HasReadEventID(iter_69_3) then
+	return false
+end
+
+function var_0_0.HasNewLocationStage(arg_70_0, arg_70_1)
+	local var_70_0 = ChapterLocationCfg[arg_70_1]
+
+	for iter_70_0, iter_70_1 in ipairs(var_70_0.sub_stage_list) do
+		local var_70_1 = BattleStageData:GetStageData()[iter_70_1]
+
+		if var_70_1 and var_70_1.clear_times <= 0 then
 			return true
 		end
 	end
 
-	if #var_69_0.clue > 0 then
-		local var_69_2 = BattleStageData:GetMapLocationData(arg_69_0)[arg_69_1]
+	for iter_70_2, iter_70_3 in ipairs(var_70_0.event_list) do
+		if var_0_0.IsUnlockEvent(iter_70_3) and not var_0_0.HasReadEventID(iter_70_3) then
+			return true
+		end
+	end
 
-		if var_69_2 == nil or var_69_2 == 0 then
+	if #var_70_0.clue > 0 then
+		local var_70_2 = BattleStageData:GetMapLocationData(arg_70_0)[arg_70_1]
+
+		if var_70_2 == nil or var_70_2 == 0 then
 			return true
 		end
 	end
@@ -1373,9 +1408,9 @@ function var_0_0.HasNewLocationStage(arg_69_0, arg_69_1)
 	return false
 end
 
-function var_0_0.IsReadFirstEvent(arg_70_0)
-	for iter_70_0, iter_70_1 in ipairs(ChapterStoryCollectCfg.get_id_list_by_chapter_id[arg_70_0]) do
-		if var_0_0.HasReadEvent(iter_70_1) then
+function var_0_0.IsReadFirstEvent(arg_71_0)
+	for iter_71_0, iter_71_1 in ipairs(ChapterStoryCollectCfg.get_id_list_by_chapter_id[arg_71_0]) do
+		if var_0_0.HasReadEvent(iter_71_1) then
 			return true
 		end
 	end
@@ -1383,9 +1418,9 @@ function var_0_0.IsReadFirstEvent(arg_70_0)
 	return false
 end
 
-function var_0_0.HasReadEvent(arg_71_0)
-	for iter_71_0, iter_71_1 in ipairs(ChapterStoryCollectCfg[arg_71_0].story_id_list) do
-		if var_0_0.HasReadEventID(iter_71_1) then
+function var_0_0.HasReadEvent(arg_72_0)
+	for iter_72_0, iter_72_1 in ipairs(ChapterStoryCollectCfg[arg_72_0].story_id_list) do
+		if var_0_0.HasReadEventID(iter_72_1) then
 			return true
 		end
 	end
@@ -1393,31 +1428,15 @@ function var_0_0.HasReadEvent(arg_71_0)
 	return false
 end
 
-function var_0_0.HasReadEventID(arg_72_0)
-	return BattleStageData:HasReadLocationEvent(arg_72_0)
+function var_0_0.HasReadEventID(arg_73_0)
+	return BattleStageData:HasReadLocationEvent(arg_73_0)
 end
 
-function var_0_0.IsUnlockEvent(arg_73_0)
-	local var_73_0 = StageArchiveCfg[arg_73_0]
+function var_0_0.IsUnlockEvent(arg_74_0)
+	local var_74_0 = StageArchiveCfg[arg_74_0]
 
-	if var_73_0.unlock_by_stage_id ~= 0 then
-		local var_73_1 = BattleStageData:GetStageData()[var_73_0.unlock_by_stage_id]
-
-		if var_73_1 and var_73_1.clear_times > 0 then
-			-- block empty
-		else
-			return false
-		end
-	end
-
-	return true
-end
-
-function var_0_0.NeedShowLocation(arg_74_0, arg_74_1)
-	local var_74_0 = ChapterLocationCfg[arg_74_1]
-
-	if var_74_0.unlock_stage_id ~= 0 then
-		local var_74_1 = BattleStageData:GetStageData()[var_74_0.unlock_stage_id]
+	if var_74_0.unlock_by_stage_id ~= 0 then
+		local var_74_1 = BattleStageData:GetStageData()[var_74_0.unlock_by_stage_id]
 
 		if var_74_1 and var_74_1.clear_times > 0 then
 			-- block empty
@@ -1426,42 +1445,58 @@ function var_0_0.NeedShowLocation(arg_74_0, arg_74_1)
 		end
 	end
 
-	local var_74_2 = BattleStageData:GetStageData()[var_74_0.show_by_stage_id]
+	return true
+end
 
-	if var_74_2 and var_74_2.clear_times > 0 then
+function var_0_0.NeedShowLocation(arg_75_0, arg_75_1)
+	local var_75_0 = ChapterLocationCfg[arg_75_1]
+
+	if var_75_0.unlock_stage_id ~= 0 then
+		local var_75_1 = BattleStageData:GetStageData()[var_75_0.unlock_stage_id]
+
+		if var_75_1 and var_75_1.clear_times > 0 then
+			-- block empty
+		else
+			return false
+		end
+	end
+
+	local var_75_2 = BattleStageData:GetStageData()[var_75_0.show_by_stage_id]
+
+	if var_75_2 and var_75_2.clear_times > 0 then
 		return true
 	end
 
-	local var_74_3 = BattleStageData:GetStageData()[var_74_0.hide_by_stage_id]
+	local var_75_3 = BattleStageData:GetStageData()[var_75_0.hide_by_stage_id]
 
-	if var_74_3 and var_74_3.clear_times > 0 then
+	if var_75_3 and var_75_3.clear_times > 0 then
 		return false
 	end
 
-	if var_74_0.type == BattleConst.LOCATION_TYPE.CLUE or var_74_0.type == BattleConst.LOCATION_TYPE.BATTLE_CLUE then
-		local var_74_4 = BattleStageData:GetMapLocationData(arg_74_0)
+	if var_75_0.type == BattleConst.LOCATION_TYPE.CLUE or var_75_0.type == BattleConst.LOCATION_TYPE.BATTLE_CLUE then
+		local var_75_4 = BattleStageData:GetMapLocationData(arg_75_0)
 
-		if var_74_0.need_scan == 1 and (not var_74_4 or not var_74_4[arg_74_1]) then
+		if var_75_0.need_scan == 1 and (not var_75_4 or not var_75_4[arg_75_1]) then
 			return false
 		else
 			return true
 		end
 	end
 
-	for iter_74_0, iter_74_1 in pairs(var_74_0.stage_list) do
-		if BattleStageData:GetStageData()[iter_74_1] then
+	for iter_75_0, iter_75_1 in pairs(var_75_0.stage_list) do
+		if BattleStageData:GetStageData()[iter_75_1] then
 			return true
 		end
 	end
 
-	for iter_74_2, iter_74_3 in pairs(var_74_0.sub_stage_list) do
-		if BattleStageData:GetStageData()[iter_74_3] then
+	for iter_75_2, iter_75_3 in pairs(var_75_0.sub_stage_list) do
+		if BattleStageData:GetStageData()[iter_75_3] then
 			return true
 		end
 	end
 
-	for iter_74_4, iter_74_5 in ipairs(var_74_0.event_list) do
-		if var_0_0.IsUnlockEvent(iter_74_5) then
+	for iter_75_4, iter_75_5 in ipairs(var_75_0.event_list) do
+		if var_0_0.IsUnlockEvent(iter_75_5) then
 			return true
 		end
 	end
@@ -1469,34 +1504,34 @@ function var_0_0.NeedShowLocation(arg_74_0, arg_74_1)
 	return false
 end
 
-function var_0_0.IsReadClue(arg_75_0, arg_75_1)
-	local var_75_0 = BattleStageData:GetMapLocationData(arg_75_0)
+function var_0_0.IsReadClue(arg_76_0, arg_76_1)
+	local var_76_0 = BattleStageData:GetMapLocationData(arg_76_0)
 
-	if var_75_0 and var_75_0[arg_75_1] and var_75_0[arg_75_1] ~= 0 then
+	if var_76_0 and var_76_0[arg_76_1] and var_76_0[arg_76_1] ~= 0 then
 		return true
 	end
 
 	return false
 end
 
-function var_0_0.IsEnableLocation(arg_76_0)
+function var_0_0.IsEnableLocation(arg_77_0)
 	if not var_0_0.IsNeedShowFog() then
 		return true
 	end
 
-	return ChapterLocationCfg[arg_76_0].can_not_click_until_unlock_fog ~= 1
+	return ChapterLocationCfg[arg_77_0].can_not_click_until_unlock_fog ~= 1
 end
 
-function var_0_0.GetChapter19MapState(arg_77_0)
-	local var_77_0 = ChapterMapCfg[arg_77_0]
+function var_0_0.GetChapter19MapState(arg_78_0)
+	local var_78_0 = ChapterMapCfg[arg_78_0]
 
-	if var_77_0.unlock_map_state_by_stage_id == "" then
+	if var_78_0.unlock_map_state_by_stage_id == "" then
 		return 0
 	end
 
-	for iter_77_0, iter_77_1 in ipairs(var_77_0.unlock_map_state_by_stage_id) do
-		if not var_0_0.IsClearStage(iter_77_1) then
-			return iter_77_0 - 1
+	for iter_78_0, iter_78_1 in ipairs(var_78_0.unlock_map_state_by_stage_id) do
+		if not var_0_0.IsClearStage(iter_78_1) then
+			return iter_78_0 - 1
 		end
 	end
 
@@ -1504,9 +1539,9 @@ function var_0_0.GetChapter19MapState(arg_77_0)
 end
 
 function var_0_0.IsNeedShowFog()
-	local var_78_0 = GameSetting.chapter19_fog_dissipation.value[1]
+	local var_79_0 = GameSetting.chapter19_fog_dissipation.value[1]
 
-	if var_0_0.IsClearStage(var_78_0) then
+	if var_0_0.IsClearStage(var_79_0) then
 		return false
 	end
 
@@ -1514,77 +1549,77 @@ function var_0_0.IsNeedShowFog()
 end
 
 function var_0_0.NeedPlayFogAnimator()
-	local var_79_0 = GameSetting.chapter19_fog_dissipation.value[1]
-	local var_79_1 = BattleChapterStageCfg[var_79_0].next_unlock_id_list
+	local var_80_0 = GameSetting.chapter19_fog_dissipation.value[1]
+	local var_80_1 = BattleChapterStageCfg[var_80_0].next_unlock_id_list
 
-	if BattleStageData:GetFogAnimatorFlag() or var_0_0.IsClearStage(var_79_1) then
+	if BattleStageData:GetFogAnimatorFlag() or var_0_0.IsClearStage(var_80_1) then
 		return false
 	end
 
 	return true
 end
 
-function var_0_0.GetChapterGroupList(arg_80_0)
-	local var_80_0 = ChapterClientCfg[arg_80_0]
-	local var_80_1 = {}
+function var_0_0.GetChapterGroupList(arg_81_0)
+	local var_81_0 = ChapterClientCfg[arg_81_0]
+	local var_81_1 = {}
 
-	if var_80_0.toggle == BattleConst.TOGGLE.PLOT then
-		local var_80_2 = var_80_0.difficulty
-		local var_80_3 = ChapterMainPlotToggleCfg.get_id_list_by_difficulty[var_80_2]
+	if var_81_0.toggle == BattleConst.TOGGLE.PLOT then
+		local var_81_2 = var_81_0.difficulty
+		local var_81_3 = ChapterMainPlotToggleCfg.get_id_list_by_difficulty[var_81_2]
 
-		for iter_80_0, iter_80_1 in ipairs(var_80_3) do
-			local var_80_4 = ChapterMainPlotToggleCfg[iter_80_1].chapter_client_list
+		for iter_81_0, iter_81_1 in ipairs(var_81_3) do
+			local var_81_4 = ChapterMainPlotToggleCfg[iter_81_1].chapter_client_list
 
-			if table.keyof(var_80_4, arg_80_0) then
-				for iter_80_2, iter_80_3 in ipairs(var_80_4) do
-					table.insert(var_80_1, {
+			if table.keyof(var_81_4, arg_81_0) then
+				for iter_81_2, iter_81_3 in ipairs(var_81_4) do
+					table.insert(var_81_1, {
 						2,
-						iter_80_3
+						iter_81_3
 					})
 				end
-			elseif #var_80_4 == 1 then
-				table.insert(var_80_1, {
+			elseif #var_81_4 == 1 then
+				table.insert(var_81_1, {
 					2,
-					var_80_4[1]
+					var_81_4[1]
 				})
 			else
-				table.insert(var_80_1, {
+				table.insert(var_81_1, {
 					1,
-					iter_80_1
+					iter_81_1
 				})
 			end
 		end
-	elseif var_80_0.toggle == BattleConst.TOGGLE.SUB_PLOT then
-		local var_80_5 = ChapterClientCfg.get_id_list_by_toggle[BattleConst.TOGGLE.SUB_PLOT]
+	elseif var_81_0.toggle == BattleConst.TOGGLE.SUB_PLOT then
+		local var_81_5 = ChapterClientCfg.get_id_list_by_toggle[BattleConst.TOGGLE.SUB_PLOT]
 
-		for iter_80_4, iter_80_5 in ipairs(var_80_5) do
-			table.insert(var_80_1, {
+		for iter_81_4, iter_81_5 in ipairs(var_81_5) do
+			table.insert(var_81_1, {
 				2,
-				iter_80_5
+				iter_81_5
 			})
 		end
 	end
 
-	return var_80_1
+	return var_81_1
 end
 
-function var_0_0.IsChapterSystemLock(arg_81_0)
-	local var_81_0 = ChapterClientCfg[arg_81_0]
+function var_0_0.IsChapterSystemLock(arg_82_0)
+	local var_82_0 = ChapterClientCfg[arg_82_0]
 
-	if not var_81_0 then
+	if not var_82_0 then
 		return false
 	end
 
-	local var_81_1 = type(var_81_0.jump_system) == "table" and var_81_0.jump_system[1]
+	local var_82_1 = type(var_82_0.jump_system) == "table" and var_82_0.jump_system[1]
 
-	return var_81_1 and SystemCfg[var_81_1] and SystemCfg[var_81_1].system_hide == 1
+	return var_82_1 and SystemCfg[var_82_1] and SystemCfg[var_82_1].system_hide == 1
 end
 
-function var_0_0.GetChapterShowTypeData(arg_82_0)
-	local var_82_0 = ChapterClientCfg[arg_82_0]
-	local var_82_1
+function var_0_0.GetChapterShowTypeData(arg_83_0)
+	local var_83_0 = ChapterClientCfg[arg_83_0]
+	local var_83_1
 
-	return var_82_0.show_tag_type == 1 and "activity" or "normal"
+	return var_83_0.show_tag_type == 1 and "activity" or "normal"
 end
 
 return var_0_0

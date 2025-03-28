@@ -11,7 +11,7 @@ function var_0_0.Ctor(arg_1_0, arg_1_1, arg_1_2, arg_1_3)
 
 	local var_1_0 = ChatStickerCategoryCfg[arg_1_3]
 
-	arg_1_0.icon_.sprite = getSpriteViaConfig("ChatSticker", var_1_0.icon .. SettingData:GetCurrentLanguageKey())
+	arg_1_0.icon_.sprite = getSpriteViaConfig("ChatSticker", var_1_0.icon)
 	arg_1_0.controller_ = ControllerUtil.GetController(arg_1_0.transform_, "select")
 
 	if not arg_1_0.controller_ then

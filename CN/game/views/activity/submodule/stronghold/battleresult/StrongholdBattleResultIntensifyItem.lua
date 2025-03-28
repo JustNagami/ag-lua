@@ -29,7 +29,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1)
 
 	local var_6_0 = ActivityStrongholdArtifactCfg[arg_6_1]
 
-	arg_6_0.m_icon.sprite = getSpriteWithoutAtlas(var_6_0.icon)
+	arg_6_0.m_icon.sprite = pureGetSpriteWithoutAtlas(var_6_0.icon)
 	arg_6_0.m_name.text = var_6_0.name
 end
 

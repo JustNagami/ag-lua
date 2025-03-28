@@ -59,7 +59,7 @@ end
 
 function var_0_0.UpdateView(arg_11_0)
 	arg_11_0.playerNameLabel_.text = GetI18NText(arg_11_0.friendInfo_.nick)
-	arg_11_0.playerHeadIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_11_0.friendInfo_.icon)
+	arg_11_0.playerHeadIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_11_0.friendInfo_.icon)
 
 	arg_11_0.uiList_:StartScroll(#arg_11_0.data_.fishList)
 

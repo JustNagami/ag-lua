@@ -30,7 +30,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1)
 end
 
 function var_0_0.RefreshUI(arg_6_0, arg_6_1)
-	arg_6_0.text_.text = HeroCfg[arg_6_0.cfg_.hero].name .. "·" .. HeroCfg[arg_6_0.cfg_.hero].suffix
+	arg_6_0.text_.text = arg_6_0.cfg_.stage_name
 	arg_6_0.bossImg_.spriteSync = "TextureConfig/Character/Icon/" .. arg_6_0.cfg_.hero
 end
 

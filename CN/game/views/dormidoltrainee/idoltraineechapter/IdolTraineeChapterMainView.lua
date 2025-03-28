@@ -39,7 +39,14 @@ function var_0_0.OnExit(arg_8_0)
 end
 
 function var_0_0.IndexItem(arg_9_0, arg_9_1, arg_9_2)
-	arg_9_2:SetData(arg_9_0.chapterList_[arg_9_1])
+	local var_9_0 = arg_9_0.chapterList_[arg_9_1]
+
+	arg_9_2:SetData(var_9_0)
+
+	local var_9_1 = string.format("%s_%s", RedPointConst.IDOL_TRAINEE_CHAPTER_TASK, var_9_0)
+	local var_9_2 = manager.redPoint:getTipBoolean(var_9_1)
+
+	manager.redPoint:SetRedPointIndependent(arg_9_2.transform_, var_9_2)
 end
 
 function var_0_0.Dispose(arg_10_0)

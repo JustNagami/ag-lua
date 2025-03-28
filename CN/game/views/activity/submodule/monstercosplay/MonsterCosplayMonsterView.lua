@@ -225,7 +225,7 @@ function var_0_0.InitBackScene(arg_19_0)
 	local var_19_4 = var_19_1.scale
 
 	arg_19_0.backGroundTrs_.localScale = Vector3(var_19_4[1], var_19_4[2], var_19_4[3])
-	arg_19_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas(var_19_2.bg_pic)
+	arg_19_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = pureGetSpriteWithoutAtlas(var_19_2.bg_pic)
 end
 
 function var_0_0.DestroyBackScene(arg_20_0)

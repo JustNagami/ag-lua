@@ -40,6 +40,14 @@ end
 function var_0_0.AddRedPoint(arg_5_0)
 	arg_5_0.multiTag_ = ActivityMultiRewardData:GetMultiRatioByChapterOrToggle(nil, arg_5_0.chapterClientID_, true)
 
+	if arg_5_0.multiTag_ <= 0 and RegressionDataNew:IsRegressionOpen() then
+		local var_5_0, var_5_1, var_5_2 = RegressionDataNew:GetMultipleValue()
+
+		if var_5_0 and var_5_0 > 0 and var_5_2 then
+			arg_5_0.multiTag_ = var_5_2
+		end
+	end
+
 	if arg_5_0.multiTag_ <= 0 then
 		SetActive(arg_5_0.multiGo_, false)
 		manager.redPoint:bindUIandKey(arg_5_0.panelTf_, ChapterTools.GetRedPoint(arg_5_0.chapterClientID_))
@@ -48,10 +56,10 @@ function var_0_0.AddRedPoint(arg_5_0)
 
 		SetActive(arg_5_0.multiGo_, true)
 
-		local var_5_0 = arg_5_0.panelTf_:Find("notice_img")
+		local var_5_3 = arg_5_0.panelTf_:Find("notice_img")
 
-		if var_5_0 then
-			SetActive(var_5_0.gameObject, false)
+		if var_5_3 then
+			SetActive(var_5_3.gameObject, false)
 		end
 	end
 end

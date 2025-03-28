@@ -16,17 +16,13 @@ end
 
 function var_0_0.PlayTalk(arg_2_0)
 	if arg_2_0.skinID then
-		local var_2_0 = SkinCfg[arg_2_0.skinID]
+		arg_2_0:StopTimer()
 
-		if var_2_0 and var_2_0.hero then
-			arg_2_0:StopTimer()
+		arg_2_0.talkTimer_ = Timer.New(function()
+			HeroTools.PlayTalkBySkinID(arg_2_0.skinID, "choose")
+		end, 1)
 
-			arg_2_0.talkTimer_ = Timer.New(function()
-				HeroTools.PlayTalk(var_2_0.hero, "choose")
-			end, 1)
-
-			arg_2_0.talkTimer_:Start()
-		end
+		arg_2_0.talkTimer_:Start()
 	end
 end
 
@@ -217,8 +213,11 @@ function var_0_0.SwitchAni(arg_20_0, arg_20_1, arg_20_2)
 	end
 
 	if arg_20_2 == "" then
-		LuaForUtil.EnableEyeController(arg_20_0.tpose.transform, true)
-		manager.resourcePool:ResetBlendShapes(arg_20_0.tpose.transform)
+		if not isNil(arg_20_0.tpose) then
+			LuaForUtil.EnableEyeController(arg_20_0.tpose.transform, true)
+			manager.resourcePool:ResetBlendShapes(arg_20_0.tpose.transform)
+		end
+
 		arg_20_0:RemainAni(HeroRaiseTrackConst.HeroAniName[12])
 
 		return

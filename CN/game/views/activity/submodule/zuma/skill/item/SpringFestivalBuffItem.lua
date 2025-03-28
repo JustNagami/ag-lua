@@ -55,7 +55,7 @@ function var_0_0.RefreshUI(arg_9_0, arg_9_1)
 	if arg_9_0.iconImg_ then
 		local var_9_0 = ActivityZumaTalentCfg[arg_9_0.TalentID]
 
-		arg_9_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_3_11/SandPlay_3_11/SandPlay_3_11_Zuma/" .. var_9_0.icon)
+		arg_9_0.iconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_3_11/SandPlay_3_11/SandPlay_3_11_Zuma/" .. var_9_0.icon)
 	end
 
 	local var_9_1 = arg_9_0:GetIsCanUse()

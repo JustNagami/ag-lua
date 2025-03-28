@@ -2824,6 +2824,8 @@
 			if arg_77_0 == 1 then
 				arg_75_0:Play114022019(arg_75_1)
 			end
+
+			arg_75_1:RecordChoiceLog(114022018, 114022019)
 		end
 
 		function arg_75_1.onSingleLineUpdate_(arg_78_0)
@@ -3773,6 +3775,8 @@
 			if arg_101_0 == 2 then
 				arg_99_0:Play114022025(arg_99_1)
 			end
+
+			arg_99_1:RecordChoiceLog(114022024, 114022025, 114022025)
 		end
 
 		function arg_99_1.onSingleLineUpdate_(arg_102_0)

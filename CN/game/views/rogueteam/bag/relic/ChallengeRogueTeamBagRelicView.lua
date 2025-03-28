@@ -30,7 +30,7 @@ function var_0_0.ShowItemInfo(arg_3_0, arg_3_1)
 
 		SetActive(arg_3_0.infoGo_, true)
 
-		arg_3_0.icon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_3_1))
+		arg_3_0.icon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_3_1))
 		arg_3_0.relicName_.text = var_3_0.name
 		arg_3_0.itemDesc_.text = ChallengeRogueTeamTools.GetItemEffectDesc(arg_3_1)
 		arg_3_0.effectDesc_.text = var_3_0.story_desc

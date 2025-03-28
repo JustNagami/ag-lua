@@ -76,6 +76,17 @@
 		currency_type = "CNY",
 		id = 101
 	},
+	[111] = {
+		cost = 2100,
+		product_id = "com.yongshi.tenojo.monthlycardreturn",
+		name = "恒定观测-特权折扣",
+		type = 2,
+		describe = "购买立即获得300移转之花，连续30日每日登录获得90移转之辉",
+		total_point = 21,
+		currency_symbol = "￥",
+		currency_type = "CNY",
+		id = 111
+	},
 	[201] = {
 		cost = 6800,
 		product_id = "com.yongshi.tenojo.battlepass01",
@@ -108,6 +119,39 @@
 		currency_symbol = "￥",
 		currency_type = "CNY",
 		id = 203
+	},
+	[211] = {
+		cost = 4700,
+		product_id = "com.yongshi.tenojo.battlepassreturn01",
+		name = "进阶合约-特权折扣",
+		type = 3,
+		describe = "购买后解锁进阶合约的奖励",
+		total_point = 47,
+		currency_symbol = "￥",
+		currency_type = "CNY",
+		id = 211
+	},
+	[212] = {
+		cost = 8900,
+		product_id = "com.yongshi.tenojo.battlepassreturn02",
+		name = "深度合约-特权折扣",
+		type = 3,
+		describe = "购买后解锁进阶合约的奖励，并额外获得10级合约经验及其他超值奖励",
+		total_point = 89,
+		currency_symbol = "￥",
+		currency_type = "CNY",
+		id = 212
+	},
+	[213] = {
+		cost = 4200,
+		product_id = "com.yongshi.tenojo.battlepassreturn03",
+		name = "进阶合约升级-特权折扣",
+		type = 3,
+		describe = "将进阶合约升级为深度合约",
+		total_point = 42,
+		currency_symbol = "￥",
+		currency_type = "CNY",
+		id = 213
 	},
 	[601] = {
 		cost = 3000,
@@ -458,9 +502,13 @@
 		5,
 		6,
 		101,
+		111,
 		201,
 		202,
 		203,
+		211,
+		212,
+		213,
 		601,
 		701,
 		1037011,

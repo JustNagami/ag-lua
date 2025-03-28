@@ -153,8 +153,16 @@ function var_0_0.Back(arg_3_0, arg_3_1, arg_3_2)
 			arg_3_0.history_[#arg_3_0.history_].url = string.sub(var_3_2, 0, var_3_3 - 2)
 		end
 
-		for iter_3_1 = 1, var_3_0 - arg_3_1 do
-			table.insert(var_3_1, arg_3_0.routes_[iter_3_1])
+		local var_3_4 = arg_3_0.history_[#arg_3_0.history_]
+
+		if arg_3_2 then
+			for iter_3_1, iter_3_2 in pairs(arg_3_2) do
+				var_3_4.args.params[iter_3_1] = iter_3_2
+			end
+		end
+
+		for iter_3_3 = 1, var_3_0 - arg_3_1 do
+			table.insert(var_3_1, arg_3_0.routes_[iter_3_3])
 		end
 
 		arg_3_0.routes_ = var_3_1
@@ -173,25 +181,25 @@ function var_0_0.Back(arg_3_0, arg_3_1, arg_3_2)
 
 		arg_3_0.history_[#arg_3_0.history_] = nil
 
-		local var_3_4 = arg_3_0.history_[#arg_3_0.history_]
+		local var_3_5 = arg_3_0.history_[#arg_3_0.history_]
 
 		if arg_3_2 then
-			for iter_3_2, iter_3_3 in pairs(arg_3_2) do
-				var_3_4.args.params[iter_3_2] = iter_3_3
+			for iter_3_4, iter_3_5 in pairs(arg_3_2) do
+				var_3_5.args.params[iter_3_4] = iter_3_5
 			end
 		end
 
-		local var_3_5 = arg_3_0:GetRoutesFromUrl(var_3_4.url)
+		local var_3_6 = arg_3_0:GetRoutesFromUrl(var_3_5.url)
 
-		while arg_3_0:NeedBackNextUrl(var_3_5, var_3_4.args) do
+		while arg_3_0:NeedBackNextUrl(var_3_6, var_3_5.args) do
 			arg_3_0.history_[#arg_3_0.history_] = nil
-			var_3_4 = arg_3_0.history_[#arg_3_0.history_]
-			var_3_5 = arg_3_0:GetRoutesFromUrl(var_3_4.url)
+			var_3_5 = arg_3_0.history_[#arg_3_0.history_]
+			var_3_6 = arg_3_0:GetRoutesFromUrl(var_3_5.url)
 		end
 
-		var_3_4.args.isBack = true
+		var_3_5.args.isBack = true
 
-		arg_3_0:Open(var_3_4.url, var_3_4.args)
+		arg_3_0:Open(var_3_5.url, var_3_5.args)
 	end
 end
 
@@ -382,6 +390,7 @@ function var_0_0.OnEnterNewRoutes(arg_17_0)
 		}
 
 		var_17_4:CameraEnter(arg_17_0.curArgs_.isRootUrl)
+		var_17_4:ReserveCameraEnter(arg_17_0.curArgs_.isRootUrl)
 		var_17_4:OnEnter(var_17_7)
 		var_17_4:AdaptScreen()
 		LuaHidTools.EnterInputPage(var_17_4)

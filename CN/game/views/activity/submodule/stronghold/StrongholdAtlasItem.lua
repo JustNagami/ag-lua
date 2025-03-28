@@ -35,7 +35,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 
 		arg_5_0.m_name.text = var_5_0.name
 		arg_5_0.m_des.text = var_5_0.desc
-		arg_5_0.m_icon.sprite = getSpriteWithoutAtlas(var_5_0.icon)
+		arg_5_0.m_icon.sprite = pureGetSpriteWithoutAtlas(var_5_0.icon)
 
 		arg_5_0.rareController:SetSelectedIndex(var_5_0.rare - 1)
 

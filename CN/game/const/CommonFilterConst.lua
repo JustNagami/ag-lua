@@ -6,31 +6,32 @@ Filter_Tags_Define = {
 	FURNITURETYPE1 = 29,
 	Star4 = 11,
 	ARRT2 = 22,
-	ARRT14 = 21,
+	ARRT254 = 47,
 	DESCending = 16,
-	ARRT4 = 18,
-	ARRT0 = 17,
 	ARRT8 = 19,
+	ARRT0 = 17,
+	ARRT14 = 21,
+	ARRT4 = 18,
 	Race3 = 3,
-	Race2 = 2,
+	ARRT10 = 24,
 	Race4 = 4,
-	Race9 = 6,
-	FURNITURETYPE6 = 34,
+	Race2 = 2,
 	IdolDanceStyle1 = 39,
-	FURNITURETYPE8 = 36,
+	FURNITURETYPE7 = 35,
 	Beyond = 7,
 	FURNITURETYPE9 = 37,
 	IdolDanceBeat16 = 45,
-	FURNITURETYPE7 = 35,
 	FURNITURETYPEALL = 38,
+	FURNITURETYPE6 = 34,
 	FURNITURETYPE3 = 31,
-	ARRT10 = 24,
+	Race9 = 6,
 	CallName = 9,
 	FURNITURETYPE5 = 33,
-	IdolDanceBeat32 = 46,
+	FURNITURETYPE8 = 36,
 	IdolDanceStyle3 = 41,
-	IdolDanceBeatReserve3 = 48,
+	IdolDanceBeat32 = 46,
 	Star3 = 10,
+	IdolDanceBeatReserve3 = 48,
 	MECHAINISM1 = 25,
 	Race5 = 5,
 	ARRT12 = 23,
@@ -119,7 +120,8 @@ Filter_Group_Define = {
 			Filter_Tags_Define.ARRT14,
 			Filter_Tags_Define.ARRT2,
 			Filter_Tags_Define.ARRT12,
-			Filter_Tags_Define.ARRT10
+			Filter_Tags_Define.ARRT10,
+			Filter_Tags_Define.ARRT254
 		}
 	},
 	MECHAINISMTYPE = {
@@ -301,6 +303,39 @@ function var_0_1.GetTagIndexAtGroup(arg_6_0, arg_6_1)
 	end
 
 	return -1
+end
+
+function var_0_1.GetDefaultHeroAttributeIdList(arg_7_0)
+	local var_7_0 = {}
+
+	for iter_7_0, iter_7_1 in ipairs(arg_7_0) do
+		var_7_0[iter_7_1] = true
+	end
+
+	local var_7_1 = {}
+	local var_7_2 = Filter_Group_Define.ARRT.tags
+
+	for iter_7_2, iter_7_3 in ipairs(var_7_2) do
+		var_7_1[iter_7_3] = iter_7_2
+	end
+
+	local var_7_3 = SkillElementCfg.all
+	local var_7_4 = {}
+
+	for iter_7_4, iter_7_5 in ipairs(var_7_3) do
+		if not var_7_0[iter_7_5] and Filter_Tags_Define["ARRT" .. iter_7_5] then
+			var_7_4[#var_7_4 + 1] = iter_7_5
+		end
+	end
+
+	table.sort(var_7_4, function(arg_8_0, arg_8_1)
+		local var_8_0 = Filter_Tags_Define["ARRT" .. arg_8_0]
+		local var_8_1 = Filter_Tags_Define["ARRT" .. arg_8_1]
+
+		return var_7_1[var_8_0] < var_7_1[var_8_1]
+	end)
+
+	return var_7_4
 end
 
 return var_0_0

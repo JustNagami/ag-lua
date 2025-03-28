@@ -180,30 +180,37 @@ function var_0_0.OnPreOpenPage(arg_16_0)
 		local var_16_0 = arg_16_0.params_.isFullScreen
 		local var_16_1 = arg_16_0.params_.race
 		local var_16_2 = arg_16_0.params_.servantID
+		local var_16_3 = arg_16_0.params_.uid
 
 		if var_16_1 and var_16_1 ~= 0 then
 			arg_16_0:OnCallNameBtnClick(var_16_1, var_16_2)
 		else
-			local var_16_3
+			local var_16_4
 
 			if arg_16_0.data.heroId then
-				var_16_3 = HeroViewDataProxy.New(HeroConst.HERO_DATA_TYPE.DEFAULT):GetHeroServantInfo(arg_16_0.data.heroId)
-			end
+				var_16_4 = HeroViewDataProxy.New(HeroConst.HERO_DATA_TYPE.DEFAULT):GetHeroServantInfo(arg_16_0.data.heroId)
 
-			arg_16_0:OnHoldBtnClick(var_16_3)
+				arg_16_0:OnHoldBtnClick(var_16_4)
+			else
+				if var_16_3 then
+					var_16_4 = WeaponServantData:GetServantDataByUID(var_16_3)
+				end
+
+				arg_16_0:OnHoldBtnClick(var_16_4)
+			end
 		end
 	else
-		local var_16_4 = arg_16_0.params_.tempParams
+		local var_16_5 = arg_16_0.params_.tempParams
 
-		arg_16_0.data.heroId = var_16_4.HeroID or nil
+		arg_16_0.data.heroId = var_16_5.HeroID or nil
 
-		if var_16_4.isFullScreen ~= nil then
-			local var_16_5 = var_16_4.servantData
+		if var_16_5.isFullScreen ~= nil then
+			local var_16_6 = var_16_5.servantData
 
-			if var_16_4.isFullScreen then
-				if var_16_5.uid then
-					if WeaponServantData:GetServantDataByUID(var_16_5.uid) then
-						arg_16_0:OnFullScreenBtnClick(var_16_5)
+			if var_16_5.isFullScreen then
+				if var_16_6.uid then
+					if WeaponServantData:GetServantDataByUID(var_16_6.uid) then
+						arg_16_0:OnFullScreenBtnClick(var_16_6)
 					elseif not arg_16_0.data.heroId then
 						if WeaponServantData:GetServantNum() == 0 then
 							arg_16_0:OnHoldBtnClick()
@@ -214,23 +221,23 @@ function var_0_0.OnPreOpenPage(arg_16_0)
 						arg_16_0:OnFullScreenBtnClick()
 					end
 				else
-					arg_16_0:OnFullScreenBtnClick(var_16_5)
+					arg_16_0:OnFullScreenBtnClick(var_16_6)
 				end
-			elseif var_16_4.viewIdx == 1 then
-				arg_16_0:OnHoldBtnClick(var_16_5)
-			elseif var_16_5.id and var_16_5.id ~= 0 then
-				arg_16_0:OnCallNameBtnClick(arg_16_0:GetServantRace(var_16_5.id), var_16_5.id)
+			elseif var_16_5.viewIdx == 1 then
+				arg_16_0:OnHoldBtnClick(var_16_6)
+			elseif var_16_6.id and var_16_6.id ~= 0 then
+				arg_16_0:OnCallNameBtnClick(arg_16_0:GetServantRace(var_16_6.id), var_16_6.id)
 			else
 				arg_16_0:OnCallNameBtnClick()
 			end
 		else
-			local var_16_6
+			local var_16_7
 
 			if arg_16_0.data.heroId then
-				var_16_6 = HeroViewDataProxy.New(HeroConst.HERO_DATA_TYPE.DEFAULT):GetHeroServantInfo(arg_16_0.data.heroId)
+				var_16_7 = HeroViewDataProxy.New(HeroConst.HERO_DATA_TYPE.DEFAULT):GetHeroServantInfo(arg_16_0.data.heroId)
 			end
 
-			arg_16_0:OnHoldBtnClick(var_16_6)
+			arg_16_0:OnHoldBtnClick(var_16_7)
 		end
 	end
 

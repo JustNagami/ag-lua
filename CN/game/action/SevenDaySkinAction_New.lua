@@ -45,4 +45,21 @@ function var_0_0.OnReSign(arg_6_0, arg_6_1)
 	manager.notify:Invoke(SEVEN_DAY_SKIN_SIGN_SUCCESS, arg_6_0)
 end
 
+function var_0_0.ReceiveGiftSHero(arg_7_0)
+	manager.net:SendWithLoadingNew(11106, {
+		activity_id = arg_7_0
+	}, 11107, var_0_0.OnReceiveGiftSHero)
+end
+
+function var_0_0.OnReceiveGiftSHero(arg_8_0, arg_8_1)
+	if not isSuccess(arg_8_0.result) then
+		return
+	end
+
+	local var_8_0 = arg_8_1.activity_id
+
+	SevenDaySkinData_New:UpdateActivityDataByGiftReward(var_8_0)
+	manager.notify:Invoke(SEVEN_DAY_SKIN_RECEIVE_SHERO_SUCCESS, arg_8_0)
+end
+
 return var_0_0

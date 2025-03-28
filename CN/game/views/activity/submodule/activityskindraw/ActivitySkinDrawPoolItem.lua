@@ -46,11 +46,11 @@ function var_0_0.RefreshUI(arg_8_0)
 	end
 
 	if arg_8_0.info_.poll_picture_select ~= "" then
-		arg_8_0.imgSelect_.sprite = getSpriteWithoutAtlas(arg_8_0.info_.poll_picture_select)
+		arg_8_0.imgSelect_.sprite = pureGetSpriteWithoutAtlas(arg_8_0.info_.poll_picture_select)
 	end
 
 	if arg_8_0.info_.poll_picture ~= "" then
-		arg_8_0.imgUnselect_.sprite = getSpriteWithoutAtlas(arg_8_0.info_.poll_picture)
+		arg_8_0.imgUnselect_.sprite = pureGetSpriteWithoutAtlas(arg_8_0.info_.poll_picture)
 	end
 end
 

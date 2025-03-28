@@ -332,6 +332,12 @@ function var_0_0.RefreshMonthlyCardRedPoint()
 	else
 		manager.redPoint:setTip(RedPointConst.NOOB_MONTHLY_RECHARGE, 0)
 	end
+
+	if not getData("FirstGear", "hasView") then
+		manager.redPoint:setTip(RedPointConst.FIRST_GEAR, 1)
+	else
+		manager.redPoint:setTip(RedPointConst.FIRST_GEAR, 0)
+	end
 end
 
 function var_0_0.SetSelectMonthlyRecharge()
@@ -398,6 +404,12 @@ function var_0_0.RefreshAdvanceTaskRedPoint()
 				TaskRedPoint:UpdateNoobAdvanceTaskRed(var_30_1, iter_30_3[1])
 			end
 		end
+	end
+end
+
+function var_0_0.RefreshNewBPRecharge(arg_31_0)
+	if arg_31_0 then
+		arg_31_0:SetSelectedState(ActivityNoobData:GetBpNewRecharge() and "true" or "false")
 	end
 end
 

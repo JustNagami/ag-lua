@@ -2,10 +2,24 @@
 require("game/qworld/story/QWorldStoryLuaBridge")
 require("game/qworld/prefabScript/QWorldEntityLuaBridge")
 
-function LaunchQWorld(arg_1_0)
+function LaunchQWorld(arg_1_0, arg_1_1)
 	DestroyLua()
 	QWorldData:SetIsBackQWorld(arg_1_0)
-	QWorldLuaBridge.EntraceLauncher("1031001")
+
+	local var_1_0 = "1031001"
+	local var_1_1 = 9070
+
+	if arg_1_0 then
+		var_1_0 = QWorldMgr:GetMapId()
+	elseif arg_1_1 then
+		QWorldData:SetCurActivityId(arg_1_1)
+
+		var_1_0 = tostring(QWorldMgr:GetMapId())
+	end
+
+	local var_1_2 = QWorldMgr:GetMapHeroId() or 9070
+
+	QWorldLuaBridge.EntraceLauncher(var_1_0, var_1_2)
 end
 
 function PostEnterQWorld()
@@ -23,8 +37,9 @@ end
 
 function PostExitQWorld()
 	QWorldTools.SendMessageToSDK(QWorldMgr:GetActivityId(), QWorldMgr:GetMapId(), QWorldMessageType.EXIT, -1, "", -1)
-	manager.windowBar:ClearWhereTag()
+	QWorldMgr:DisposeQueue()
 	DestroyLua()
+	manager.windowBar:ClearWhereTag()
 	QWorldMgr:PostExitQWorld()
 	QWorldMgr:ExitQWorld()
 	manager.audio:RemoveCue("ui_sandplay")
@@ -68,31 +83,7 @@ function GetQWorldSceneName(arg_10_0)
 end
 
 function PlayQWorldBgm()
-	local var_11_0 = QWorldData:GetCurSceneName()
-	local var_11_1 = SandplaySettingCfg[string.format("bgm_name_of_scene_%s", var_11_0)]
-
-	if var_11_1 and #var_11_1.value > 0 then
-		local var_11_2 = var_11_1.value
-		local var_11_3 = #var_11_2
-		local var_11_4 = math.random(var_11_3)
-		local var_11_5 = var_11_2[var_11_4]
-
-		if var_11_5 == QWorldData:GetCurHomeBgmId() then
-			if var_11_3 >= var_11_4 + 1 then
-				var_11_5 = var_11_2[var_11_4 + 1]
-			elseif var_11_4 - 1 >= 1 then
-				var_11_5 = var_11_2[var_11_4 - 1]
-			end
-
-			var_11_4 = table.indexof(var_11_2, var_11_5)
-		end
-
-		local var_11_6 = var_11_5
-		local var_11_7 = SandplaySettingCfg[string.format("bgm_sheet_of_scene_%s", var_11_0)].value[var_11_4]
-
-		manager.audio:PlayBGM(var_11_7, var_11_6, var_11_6)
-		QWorldData:SetCurHomeBgmId(var_11_6)
-	end
+	QWorldMgr:GetQWorldSoundMgr():InitMapSound(QWorldData:GetCurMapId())
 end
 
 function PostEnterQWorldScene(arg_12_0)
@@ -108,18 +99,128 @@ function PostEnterQWorldScene(arg_12_0)
 	end
 end
 
-function QWorldTeleport(arg_13_0)
+function QWorldTeleport(arg_13_0, arg_13_1)
 	QWorldMgr:StartBlackFade(1, 1, 1, function()
 		manager.notify:Invoke(QWORLD_TELEPORT, arg_13_0)
 		QWorldLuaBridge.Teleport(arg_13_0, true)
+	end, function()
+		if arg_13_1 then
+			arg_13_1()
+		end
 	end)
 end
 
-function QWorldTeleportWithoutBlackFade(arg_15_0)
-	manager.notify:Invoke(QWORLD_TELEPORT, arg_15_0)
-	QWorldLuaBridge.Teleport(arg_15_0)
+function QWorldTeleportToNearest(arg_16_0)
+	QWorldMgr:StartBlackFade(1, 1, 1, function()
+		QWorldLuaBridge.TeleportToNearest(arg_16_0)
+	end)
+end
+
+function QWorldTeleportWithoutBlackFade(arg_18_0)
+	manager.notify:Invoke(QWORLD_TELEPORT, arg_18_0)
+	QWorldLuaBridge.Teleport(arg_18_0)
 end
 
 function GM_QWorldJumpStory()
 	QWorldMgr:GetQWorldStoryMgr():StopStory()
+end
+
+function CancelTrack(arg_20_0)
+	local var_20_0 = QWorldMgr:GetQWorldEntityMgr():GetEntByEntityId(arg_20_0)
+	local var_20_1 = var_20_0.thingCfg and var_20_0.thingCfg.hud and SandplayTagCfg[var_20_0.thingCfg.hud]
+	local var_20_2 = QWorldQuestTool.GetCurQuestTrackingEntityIdList()
+	local var_20_3 = table.indexof(var_20_2, arg_20_0)
+
+	if var_20_1 and not var_20_3 then
+		QWorldMgr:GetQWorldEntityMgr():CancelTrack(arg_20_0)
+		ShowTips("SANDPLAY_REACH_TARGET")
+	end
+end
+
+function SendGM(arg_21_0)
+	arg_21_0 = "$ " .. arg_21_0
+
+	local var_21_0 = {
+		content = arg_21_0
+	}
+
+	print(arg_21_0)
+	manager.net:SendWithLoadingNew(27100, var_21_0, 27101, function(arg_22_0, arg_22_1)
+		print("Send Msg Return:", arg_22_0.result)
+		ShowTips(arg_22_0.result)
+	end)
+end
+
+function GM_ChangeScene(arg_23_0)
+	QWorldLuaBridge.Restart(arg_23_0)
+end
+
+function GM_FinishCurSubQuest()
+	local var_24_0 = QWorldQuestTool.GetMainQuestTrackingId()
+
+	if var_24_0 == -1 then
+		ShowTips("当前没有追踪的任务")
+
+		return
+	end
+
+	local var_24_1 = QWorldQuestTool.GetVisibleQuestIdList(var_24_0, true)
+
+	for iter_24_0, iter_24_1 in ipairs(var_24_1) do
+		SendGM(string.format("xt rw pass %s", iter_24_1))
+	end
+end
+
+function GM_AddQuest(arg_25_0, arg_25_1)
+	if arg_25_1 then
+		SendGM(string.format("xt zrw add %s", arg_25_0))
+	else
+		SendGM(string.format("xt rw add %s", arg_25_0))
+	end
+end
+
+function GM_FinishQuest(arg_26_0, arg_26_1)
+	if arg_26_1 then
+		SendGM(string.format("xt zrw pass %s", arg_26_0))
+	else
+		SendGM(string.format("xt rw pass %s", arg_26_0))
+	end
+end
+
+function GM_GetTaskData(arg_27_0)
+	local var_27_0 = {}
+	local var_27_1 = {}
+
+	for iter_27_0, iter_27_1 in ipairs(SandplayTaskCfg.all) do
+		local var_27_2 = SandplayTaskCfg[iter_27_1]
+		local var_27_3 = SandplayTaskMainCfg[var_27_2.main_task_id]
+
+		if var_27_3 then
+			if var_27_3.activity_id == arg_27_0 then
+				table.insert(var_27_0, {
+					[0] = var_27_2.task_target,
+					iter_27_1
+				})
+			end
+		else
+			Debug.LogError(string.format("任务%s没有对应的主线任务", iter_27_1))
+		end
+	end
+
+	for iter_27_2, iter_27_3 in ipairs(SandplayTaskMainCfg.all) do
+		local var_27_4 = SandplayTaskMainCfg[iter_27_3]
+
+		if var_27_4.activity_id == arg_27_0 then
+			table.insert(var_27_1, {
+				[0] = var_27_4.title,
+				iter_27_3
+			})
+		end
+	end
+
+	return var_27_0, var_27_1
+end
+
+function QWorldChangeInteractionMode(arg_28_0)
+	manager.notify:Invoke(QWORLD_INTERACTION_CHANGE, arg_28_0)
 end

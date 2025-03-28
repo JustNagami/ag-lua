@@ -94,6 +94,8 @@ function var_0_0.OnClickCancelBtn(arg_13_0)
 			gameContext:Go("/chessBoardHomeView")
 		end
 	elseif arg_13_0.currentState == var_0_2.change_select_prop or arg_13_0.currentState == var_0_2.change_check_prop then
+		arg_13_0.selectChangePropID = arg_13_0.selectPropID
+
 		arg_13_0:ChangeControllerState(arg_13_0.lastState)
 	end
 end

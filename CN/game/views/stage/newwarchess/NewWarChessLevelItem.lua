@@ -67,7 +67,7 @@ end
 
 function var_0_0.RefreshUI(arg_8_0)
 	arg_8_0.nametext_.text = arg_8_0.cfg_.name_level
-	arg_8_0.bgImage_.sprite = getSpriteWithoutAtlas("TextureConfig/NewWarChess/" .. arg_8_0.cfg_.background_level)
+	arg_8_0.bgImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/NewWarChess/" .. arg_8_0.cfg_.background_level)
 	arg_8_0.movePointText_.text = NewChessTools.GetMovePointText(NewWarChessData:GetMovePoint(arg_8_0.chapterID_))
 
 	local var_8_0 = NewWarChessData:GetExploreValue(arg_8_0.chapterID_) .. "<size=16>%</size>"

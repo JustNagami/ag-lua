@@ -377,11 +377,7 @@ end
 function var_0_0.SetInfoText(arg_17_0, arg_17_1, arg_17_2)
 	local var_17_0 = arg_17_1.draw_pool_desc
 
-	for iter_17_0 = 1, 15 do
-		if var_17_0 == "DRAW_POOL_DESC_TEMP_FIXED_" .. iter_17_0 then
-			arg_17_0.infoTxt_.text = GetTips(var_17_0)
-		end
-	end
+	arg_17_0.infoTxt_.text = GetTips(arg_17_1.draw_pool_desc)
 
 	if var_17_0 == "DRAW_POOL_DESC_TEMP_1" then
 		local var_17_1 = arg_17_2.s_up_item[1]

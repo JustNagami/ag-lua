@@ -275,6 +275,12 @@
 		atlasName = "",
 		spriteName = ""
 	},
+	{
+		id = 47,
+		name = "空白",
+		atlasName = "Atlas/Hero_arrtAtlas",
+		spriteName = "icon_white_random"
+	},
 	all = {
 		1,
 		2,
@@ -321,6 +327,7 @@
 		43,
 		44,
 		45,
-		46
+		46,
+		47
 	}
 }

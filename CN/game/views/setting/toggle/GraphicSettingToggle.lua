@@ -5,11 +5,19 @@ function var_0_0.GetName(arg_1_0)
 end
 
 function var_0_0.UIClass(arg_2_0)
-	return GraphicSettingPCView
+	if GameToSDK.IsPCPlatform() then
+		return GraphicSettingPCView
+	else
+		return GraphicSettingView
+	end
 end
 
 function var_0_0.GetPath(arg_3_0)
-	return "Widget/System/Setting/FrameSetting_pcUI"
+	if GameToSDK.IsPCPlatform() then
+		return "Widget/System/Setting/FrameSetting_pcUI"
+	else
+		return "Widget/System/Setting/FrameSettingUI"
+	end
 end
 
 function var_0_0.Order(arg_4_0)

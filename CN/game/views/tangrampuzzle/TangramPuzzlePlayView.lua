@@ -274,7 +274,7 @@ function var_0_0.RefreshUI(arg_21_0)
 		arg_21_0:CheckFinalReward()
 	end
 
-	arg_21_0.completeImg_.sprite = getSpriteWithoutAtlas(arg_21_0.puzzleCfg_.path .. arg_21_0.puzzleCfg_.album_id)
+	arg_21_0.completeImg_.sprite = pureGetSpriteWithoutAtlas(arg_21_0.puzzleCfg_.path .. arg_21_0.puzzleCfg_.album_id)
 end
 
 function var_0_0.SwitchToPlay(arg_22_0)

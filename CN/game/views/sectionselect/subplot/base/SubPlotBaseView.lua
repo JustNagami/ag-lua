@@ -156,7 +156,7 @@ function var_0_0.SwitchBG(arg_17_0)
 	local var_17_0 = ChapterCfg[arg_17_0.chapterID_]
 
 	if var_17_0.bg ~= "" then
-		arg_17_0.bgImage_.sprite = getSpriteWithoutAtlas(var_17_0.bg)
+		arg_17_0.bgImage_.sprite = pureGetSpriteWithoutAtlas(var_17_0.bg)
 	end
 
 	SetActive(arg_17_0.bgImage_.gameObject, var_17_0.bg ~= "")

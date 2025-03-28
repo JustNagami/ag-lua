@@ -219,54 +219,58 @@ function var_0_0.GetDefaultTeam(arg_14_0, arg_14_1, arg_14_2)
 	arg_14_2.resultHeroList, arg_14_2.lockStateList, arg_14_2.lockHeroList, arg_14_2.resultTrialList, arg_14_2.isInVaild = ReserveTools.GetHeroList(ReserveParams.New(ReserveConst.RESERVE_TYPE.DEFAULT))
 end
 
-function var_0_0.GetComboSkillID(arg_15_0, arg_15_1)
-	local var_15_0 = arg_15_0:GetConfigComboSkillID(arg_15_1)
+function var_0_0.GetAddedHeroIDList(arg_15_0, arg_15_1)
+	return arg_15_0:GetContDataTemplateById(arg_15_1.contID):GetAddedHeroIDList(arg_15_1.teamIndex)
+end
 
-	if var_15_0 then
-		return var_15_0
+function var_0_0.GetComboSkillID(arg_16_0, arg_16_1)
+	local var_16_0 = arg_16_0:GetConfigComboSkillID(arg_16_1)
+
+	if var_16_0 then
+		return var_16_0
 	end
 
-	return arg_15_0:GetValidComboSkillID(arg_15_1)
+	return arg_16_0:GetValidComboSkillID(arg_16_1)
 end
 
-function var_0_0.GetRawComboSkillID(arg_16_0, arg_16_1)
-	return arg_16_0:GetContDataTemplateById(arg_16_1.contID):GetComboSkillID(arg_16_1.teamIndex)
+function var_0_0.GetRawComboSkillID(arg_17_0, arg_17_1)
+	return arg_17_0:GetContDataTemplateById(arg_17_1.contID):GetComboSkillID(arg_17_1.teamIndex)
 end
 
-function var_0_0.SetComboSkillID(arg_17_0, arg_17_1, arg_17_2)
-	arg_17_0:GetContDataTemplateById(arg_17_1.contID):SetComboSkillID(arg_17_2, arg_17_1.teamIndex)
+function var_0_0.SetComboSkillID(arg_18_0, arg_18_1, arg_18_2)
+	arg_18_0:GetContDataTemplateById(arg_18_1.contID):SetComboSkillID(arg_18_2, arg_18_1.teamIndex)
 end
 
-function var_0_0.GetValidComboSkillID(arg_18_0, arg_18_1, arg_18_2)
-	local var_18_0 = ReserveTools.GetRawComboSkillID(arg_18_1)
-	local var_18_1 = arg_18_2 or ReserveTools.GetHeroList(arg_18_1)
+function var_0_0.GetValidComboSkillID(arg_19_0, arg_19_1, arg_19_2)
+	local var_19_0 = ReserveTools.GetRawComboSkillID(arg_19_1)
+	local var_19_1 = arg_19_2 or ReserveTools.GetHeroList(arg_19_1)
 
-	if not arg_18_0:IsValidComboSKillID(var_18_0, var_18_1) then
-		return ComboSkillTools.GetRecommendSkillID(var_18_1, true)
+	if not arg_19_0:IsValidComboSKillID(var_19_0, var_19_1) then
+		return ComboSkillTools.GetRecommendSkillID(var_19_1, true)
 	end
 
-	return var_18_0
+	return var_19_0
 end
 
-function var_0_0.IsValidComboSKillID(arg_19_0, arg_19_1, arg_19_2)
-	local var_19_0 = arg_19_2 or {}
+function var_0_0.IsValidComboSKillID(arg_20_0, arg_20_1, arg_20_2)
+	local var_20_0 = arg_20_2 or {}
 
-	if arg_19_1 ~= 0 and not ComboSkillTools.IsAllMatch(arg_19_1, var_19_0) then
+	if arg_20_1 ~= 0 and not ComboSkillTools.IsAllMatch(arg_20_1, var_20_0) then
 		return false
 	end
 
 	return true
 end
 
-function var_0_0.GetConfigComboSkillID(arg_20_0, arg_20_1)
-	if arg_20_1.stageID and arg_20_1.stageID ~= 0 then
-		local var_20_0 = BattleStageTools.GetStageCfg(arg_20_1.stageType, arg_20_1.stageID)
+function var_0_0.GetConfigComboSkillID(arg_21_0, arg_21_1)
+	if arg_21_1.stageID and arg_21_1.stageID ~= 0 then
+		local var_21_0 = BattleStageTools.GetStageCfg(arg_21_1.stageType, arg_21_1.stageID)
 
-		if var_20_0 and var_20_0.combo_skill_id and var_20_0.combo_skill_id ~= 0 then
-			return var_20_0.combo_skill_id
+		if var_21_0 and var_21_0.combo_skill_id and var_21_0.combo_skill_id ~= 0 then
+			return var_21_0.combo_skill_id
 		end
 
-		if SectionSelectHeroTools.IsAllPosFullLock(arg_20_1.stageType, arg_20_1.stageID) then
+		if SectionSelectHeroTools.IsAllPosFullLock(arg_21_1.stageType, arg_21_1.stageID) then
 			return ReserveConst.DEFAULT_COMBO_SKILL_ID
 		end
 	end
@@ -274,67 +278,83 @@ function var_0_0.GetConfigComboSkillID(arg_20_0, arg_20_1)
 	return nil
 end
 
-function var_0_0.GetMimirData(arg_21_0, arg_21_1)
-	local var_21_0 = arg_21_0:GetMimirID(arg_21_1)
-	local var_21_1 = arg_21_0:GetMimirChipList(arg_21_1)
+function var_0_0.GetMimirData(arg_22_0, arg_22_1)
+	local var_22_0 = arg_22_0:GetMimirID(arg_22_1)
+	local var_22_1 = arg_22_0:GetMimirChipList(arg_22_1)
 
-	return var_21_0, var_21_1
+	return var_22_0, var_22_1
 end
 
-function var_0_0.GetMimirID(arg_22_0, arg_22_1)
-	return arg_22_0:GetContDataTemplateById(arg_22_1.contID):GetMimirID(arg_22_1.teamIndex)
+function var_0_0.GetMimirID(arg_23_0, arg_23_1)
+	return arg_23_0:GetContDataTemplateById(arg_23_1.contID):GetMimirID(arg_23_1.teamIndex)
 end
 
-function var_0_0.SetMimirID(arg_23_0, arg_23_1, arg_23_2)
-	arg_23_0:GetContDataTemplateById(arg_23_1.contID):SetMimirID(arg_23_2, arg_23_1.teamIndex)
+function var_0_0.SetMimirID(arg_24_0, arg_24_1, arg_24_2)
+	arg_24_0:GetContDataTemplateById(arg_24_1.contID):SetMimirID(arg_24_2, arg_24_1.teamIndex)
 end
 
-function var_0_0.GetMimirChipList(arg_24_0, arg_24_1)
-	return arg_24_0:GetContDataTemplateById(arg_24_1.contID):GetMimirChipList(arg_24_1.teamIndex)
+function var_0_0.GetMimirChipList(arg_25_0, arg_25_1)
+	return arg_25_0:GetContDataTemplateById(arg_25_1.contID):GetMimirChipList(arg_25_1.teamIndex)
 end
 
-function var_0_0.SetMimirChipList(arg_25_0, arg_25_1, arg_25_2)
-	return arg_25_0:GetContDataTemplateById(arg_25_1.contID):SetMimirChipList(arg_25_2, arg_25_1.teamIndex)
+function var_0_0.SetMimirChipList(arg_26_0, arg_26_1, arg_26_2)
+	return arg_26_0:GetContDataTemplateById(arg_26_1.contID):SetMimirChipList(arg_26_2, arg_26_1.teamIndex)
 end
 
-function var_0_0.ResetMimirChipList(arg_26_0, arg_26_1)
-	arg_26_0:GetContDataTemplateById(arg_26_1.contID):ResetMimirChipList(arg_26_1.teamIndex)
+function var_0_0.ResetMimirChipList(arg_27_0, arg_27_1)
+	arg_27_0:GetContDataTemplateById(arg_27_1.contID):ResetMimirChipList(arg_27_1.teamIndex)
 end
 
-function var_0_0.GetContDataTemplateById(arg_27_0, arg_27_1)
-	arg_27_1 = arg_27_1 or ReserveConst.DETAULT_CONT_ID
+function var_0_0.GetContDataTemplateById(arg_28_0, arg_28_1)
+	arg_28_1 = arg_28_1 or ReserveConst.DETAULT_CONT_ID
 
-	if not arg_27_0.cont_dic[arg_27_1] then
-		arg_27_0.cont_dic[arg_27_1] = arg_27_0:GetContDataTemplateClass().New(arg_27_0:GetTeamType(), arg_27_1)
-		arg_27_0.cont_teams[#arg_27_0.cont_teams + 1] = arg_27_0.cont_dic[arg_27_1]
+	if not arg_28_0.cont_dic[arg_28_1] then
+		arg_28_0.cont_dic[arg_28_1] = arg_28_0:GetContDataTemplateClass().New(arg_28_0:GetTeamType(), arg_28_1)
+		arg_28_0.cont_teams[#arg_28_0.cont_teams + 1] = arg_28_0.cont_dic[arg_28_1]
 	end
 
-	return arg_27_0.cont_dic[arg_27_1]
+	return arg_28_0.cont_dic[arg_28_1]
 end
 
-function var_0_0.GetSingleTeamData(arg_28_0, arg_28_1)
-	local var_28_0 = arg_28_1.contID or ReserveTools.GetContID(arg_28_1.stageType, arg_28_1.stageID)
-	local var_28_1 = arg_28_1.teamIndex or arg_28_0:GetTeamIndex(arg_28_1)
+function var_0_0.GetSingleTeamData(arg_29_0, arg_29_1)
+	local var_29_0 = arg_29_1.contID or ReserveTools.GetContID(arg_29_1.stageType, arg_29_1.stageID)
+	local var_29_1 = arg_29_1.teamIndex or arg_29_0:GetTeamIndex(arg_29_1)
 
-	return (arg_28_0:GetContDataTemplateById(var_28_0):GetSingleTeamData(var_28_1))
+	return (arg_29_0:GetContDataTemplateById(var_29_0):GetSingleTeamData(var_29_1))
 end
 
-function var_0_0.CleanCacheData(arg_29_0)
-	for iter_29_0, iter_29_1 in ipairs(arg_29_0.cont_teams) do
-		iter_29_1:CleanCacheData()
+function var_0_0.CopyContData(arg_30_0, arg_30_1, arg_30_2)
+	local var_30_0 = arg_30_2:Clone()
+
+	var_30_0:SetContID(arg_30_1)
+
+	for iter_30_0, iter_30_1 in ipairs(arg_30_0.cont_teams) do
+		if iter_30_1:GetContID() == arg_30_1 then
+			arg_30_0.cont_teams[iter_30_0] = var_30_0
+
+			break
+		end
+	end
+
+	arg_30_0.cont_dic[arg_30_1] = var_30_0
+end
+
+function var_0_0.CleanCacheData(arg_31_0)
+	for iter_31_0, iter_31_1 in ipairs(arg_31_0.cont_teams) do
+		iter_31_1:CleanCacheData()
 	end
 end
 
-function var_0_0.GetTeamIndex(arg_30_0, arg_30_1)
+function var_0_0.GetTeamIndex(arg_32_0, arg_32_1)
 	return ReserveConst.DEFAULT_TEAM_INDEX
 end
 
-function var_0_0.GetContDataTemplateClass(arg_31_0)
-	return ReserveTools.GetContDataClass(arg_31_0:GetTeamType())
+function var_0_0.GetContDataTemplateClass(arg_33_0)
+	return ReserveTools.GetContDataClass(arg_33_0:GetTeamType())
 end
 
-function var_0_0.Clone(arg_32_0)
-	return deepClone(arg_32_0)
+function var_0_0.Clone(arg_34_0)
+	return deepClone(arg_34_0)
 end
 
 return var_0_0

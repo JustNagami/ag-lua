@@ -33,7 +33,7 @@ function var_0_0.RefreshUI(arg_6_0)
 
 	arg_6_0.nameText_.text = string.format(arg_6_0.data_.name)
 	arg_6_0.storyText_.text = formatText(arg_6_0.data_.anecdote)
-	arg_6_0.roleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_6_0.data_.id)
+	arg_6_0.roleImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_6_0.data_.id)
 	arg_6_0.roleNameText_.text = var_6_0.name
 end
 

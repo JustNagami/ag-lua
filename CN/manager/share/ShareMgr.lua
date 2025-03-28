@@ -56,9 +56,7 @@ function var_0_2.InitUI(arg_2_0)
 		end
 	end
 
-	if not GameToSDK.IsEditorOrPcPlatform() then
-		SetActive(arg_2_0.buttonPath_.transform.gameObject, false)
-	end
+	SetActive(arg_2_0.buttonPath_.transform.gameObject, GameToSDK.IsEditorOrPcPlatform())
 end
 
 function var_0_2.Share(arg_3_0, arg_3_1, arg_3_2, arg_3_3, arg_3_4, arg_3_5)

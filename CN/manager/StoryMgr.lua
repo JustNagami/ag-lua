@@ -672,18 +672,22 @@ function var_0_0.HideMainUI(arg_44_0)
 	arg_44_0.uiShow_ = false
 
 	if manager.ui and manager.ui.uiMain then
-		manager.ui.uiMain.gameObject:SetActive(false)
+		manager.ui:SetMainActive(false)
 		manager.ui.uiPop.gameObject:SetActive(false)
 	end
+
+	manager.notify:Invoke(STORY_AVG_HIDE_MAIN_UI, true)
 end
 
 function var_0_0.ShowMainUI(arg_45_0)
 	arg_45_0.uiShow_ = true
 
 	if manager.ui and manager.ui.uiMain then
-		manager.ui.uiMain.gameObject:SetActive(true)
+		manager.ui:SetMainActive(true)
 		manager.ui.uiPop.gameObject:SetActive(true)
 	end
+
+	manager.notify:Invoke(STORY_AVG_HIDE_MAIN_UI, false)
 end
 
 function var_0_0.ResetStoryChoice(arg_46_0)

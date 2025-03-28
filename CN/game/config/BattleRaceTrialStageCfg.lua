@@ -917,6 +917,222 @@
 			0
 		}
 	},
+	[5240501] = {
+		monster_level = 80,
+		name = "奥山试炼I",
+		ai_level = 3,
+		map = "5240501",
+		need_default_team = 1,
+		id = 5240501,
+		level = 30,
+		attribute_factor = {
+			700,
+			1000,
+			3500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5240502] = {
+		monster_level = 80,
+		name = "尼罗试炼I",
+		ai_level = 3,
+		map = "5240502",
+		need_default_team = 1,
+		id = 5240502,
+		level = 30,
+		attribute_factor = {
+			700,
+			1000,
+			3500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5240503] = {
+		monster_level = 80,
+		name = "真樱试炼I",
+		ai_level = 3,
+		map = "5240503",
+		need_default_team = 1,
+		id = 5240503,
+		level = 30,
+		attribute_factor = {
+			700,
+			1000,
+			3500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5240504] = {
+		monster_level = 80,
+		name = "圣树试炼I",
+		ai_level = 3,
+		map = "5240504",
+		need_default_team = 1,
+		id = 5240504,
+		level = 30,
+		attribute_factor = {
+			700,
+			1000,
+			3500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5240505] = {
+		monster_level = 80,
+		name = "众星试炼I",
+		ai_level = 3,
+		map = "5240505",
+		need_default_team = 1,
+		id = 5240505,
+		level = 30,
+		attribute_factor = {
+			700,
+			1000,
+			3500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5240506] = {
+		monster_level = 80,
+		name = "天垣试炼I",
+		ai_level = 3,
+		map = "5240506",
+		need_default_team = 1,
+		id = 5240506,
+		level = 30,
+		attribute_factor = {
+			700,
+			1000,
+			3500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5240511] = {
+		monster_level = 80,
+		name = "奥山试炼II",
+		ai_level = 3,
+		map = "5240511",
+		need_default_team = 1,
+		id = 5240511,
+		level = 30,
+		attribute_factor = {
+			800,
+			1000,
+			5500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5240512] = {
+		monster_level = 80,
+		name = "尼罗试炼II",
+		ai_level = 3,
+		map = "5240512",
+		need_default_team = 1,
+		id = 5240512,
+		level = 30,
+		attribute_factor = {
+			800,
+			1000,
+			5500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5240513] = {
+		monster_level = 80,
+		name = "真樱试炼II",
+		ai_level = 3,
+		map = "5240513",
+		need_default_team = 1,
+		id = 5240513,
+		level = 30,
+		attribute_factor = {
+			800,
+			1000,
+			5500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5240514] = {
+		monster_level = 80,
+		name = "圣树试炼II",
+		ai_level = 3,
+		map = "5240514",
+		need_default_team = 1,
+		id = 5240514,
+		level = 30,
+		attribute_factor = {
+			800,
+			1000,
+			5500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5240515] = {
+		monster_level = 80,
+		name = "众星试炼II",
+		ai_level = 3,
+		map = "5240515",
+		need_default_team = 1,
+		id = 5240515,
+		level = 30,
+		attribute_factor = {
+			800,
+			1000,
+			5500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
+	[5240516] = {
+		monster_level = 80,
+		name = "天垣试炼II",
+		ai_level = 3,
+		map = "5240516",
+		need_default_team = 1,
+		id = 5240516,
+		level = 30,
+		attribute_factor = {
+			800,
+			1000,
+			5500
+		},
+		team_type = {
+			204,
+			0
+		}
+	},
 	all = {
 		5020211,
 		5020221,
@@ -968,6 +1184,18 @@
 		5220313,
 		5220314,
 		5220315,
-		5220316
+		5220316,
+		5240501,
+		5240502,
+		5240503,
+		5240504,
+		5240505,
+		5240506,
+		5240511,
+		5240512,
+		5240513,
+		5240514,
+		5240515,
+		5240516
 	}
 }

@@ -54,7 +54,7 @@ function var_0_0.RefreshUI(arg_7_0)
 	local var_7_1 = RogueTeamDifficultyCfg.get_id_list_by_template_id[var_7_0.template_id]
 	local var_7_2 = table.keyof(var_7_1, arg_7_0.difficultyID_)
 
-	arg_7_0.difficultyIcon_.sprite = getSpriteWithoutAtlas(string.format("TextureConfig/Common/com_icondifficulty_%02d", var_7_2))
+	arg_7_0.difficultyIcon_.sprite = pureGetSpriteWithoutAtlas(string.format("TextureConfig/Common/com_icondifficulty_%02d", var_7_2))
 
 	local var_7_3 = IsConditionAchieved(var_7_0.unlock_condition)
 

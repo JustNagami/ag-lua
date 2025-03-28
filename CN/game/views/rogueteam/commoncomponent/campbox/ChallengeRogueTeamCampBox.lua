@@ -313,7 +313,7 @@ function var_0_0.RefreshSuitSkillIcon(arg_15_0)
 	if var_15_0 ~= 0 then
 		local var_15_1 = ChallengeRogueTeamTools.GetItemIDByCampID(var_15_0)
 
-		arg_15_0.suitSkillIcon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_15_1))
+		arg_15_0.suitSkillIcon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_15_1))
 	end
 end
 

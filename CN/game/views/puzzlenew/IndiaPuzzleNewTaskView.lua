@@ -112,8 +112,8 @@ end
 function var_0_1.RefreshUI(arg_12_0)
 	arg_12_0.taskDataList_ = TaskData2:GetActivityTaskSortList(arg_12_0.taskActivityID_)
 
-	arg_12_0.scrollHelper_:StartScroll(#arg_12_0.taskDataList_)
 	arg_12_0:RefreshReceiveBtn()
+	arg_12_0.scrollHelper_:StartScroll(#arg_12_0.taskDataList_)
 end
 
 function var_0_1.RefreshReceiveBtn(arg_13_0)

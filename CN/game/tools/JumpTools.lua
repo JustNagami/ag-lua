@@ -65,6 +65,15 @@ function var_0_0.JumpToPage2(arg_5_0)
 		end
 
 		if var_5_5 <= manager.time:GetServerTime() then
+			if ChapterResidentTools.IsResidentActList(var_5_3) then
+				JumpTools.GoToSystem("/chapterMap", {
+					chapterToggle = var_0_1.TOGGLE.RESIDENT_ACT,
+					activityID = var_5_3
+				})
+
+				return
+			end
+
 			ShowTips("TIME_OVER")
 
 			return
@@ -234,7 +243,7 @@ function var_0_0.JumpToPage2(arg_5_0)
 		end
 	end
 
-	if arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.BATTLE_MAIN then
+	if arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.BATTLE_MAIN or arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.BATTLE_ROLL_MAIN then
 		local var_5_31
 		local var_5_32
 		local var_5_33 = ChapterCfg[arg_5_0[2]].section_id_list
@@ -280,8 +289,15 @@ function var_0_0.JumpToPage2(arg_5_0)
 			return
 		end
 
+		local var_5_38 = arg_5_0[1]
+		local var_5_39 = getChapterClientCfgByChapterID(var_5_35)
+
+		if ChapterConst.ROLL_MAIN_CLINET[var_5_39.id] then
+			var_5_38 = var_0_3.JUMP_SPECIAL_ID.BATTLE_ROLL_MAIN
+		end
+
 		var_0_0.OpenPageByJump(var_0_0.GetLinkAndParams({
-			arg_5_0[1],
+			var_5_38,
 			var_5_35,
 			var_5_34
 		}))
@@ -289,9 +305,9 @@ function var_0_0.JumpToPage2(arg_5_0)
 		return
 	elseif arg_5_0[1] == var_0_3.SYSTEM_ID.BUY_FATIGUE and arg_5_0[2] == 2 then
 		if var_0_0.GetLinkIsLocked(arg_5_0) then
-			local var_5_38, var_5_39 = JumpTools.GetSystemLockedText(arg_5_0)
+			local var_5_40, var_5_41 = JumpTools.GetSystemLockedText(arg_5_0)
 
-			ShowTips(var_5_39)
+			ShowTips(var_5_41)
 
 			return
 		end
@@ -311,9 +327,9 @@ function var_0_0.JumpToPage2(arg_5_0)
 		return
 	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.BOSS_CHALLENGE then
 		if var_0_0.GetLinkIsLocked(arg_5_0) then
-			local var_5_40, var_5_41 = JumpTools.GetSystemLockedText(arg_5_0)
+			local var_5_42, var_5_43 = JumpTools.GetSystemLockedText(arg_5_0)
 
-			ShowTips(var_5_41)
+			ShowTips(var_5_43)
 
 			return
 		end
@@ -335,9 +351,9 @@ function var_0_0.JumpToPage2(arg_5_0)
 		return
 	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.BATTLE_EQUIP_BREAK_THROUGH_MATERIAL then
 		if var_0_0.GetLinkIsLocked(arg_5_0) then
-			local var_5_42, var_5_43 = JumpTools.GetSystemLockedText(arg_5_0)
+			local var_5_44, var_5_45 = JumpTools.GetSystemLockedText(arg_5_0)
 
-			ShowTips(var_5_43)
+			ShowTips(var_5_45)
 
 			return
 		end
@@ -347,9 +363,9 @@ function var_0_0.JumpToPage2(arg_5_0)
 		return
 	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.MYTHIC then
 		if var_0_0.GetLinkIsLocked(arg_5_0) then
-			local var_5_44, var_5_45 = JumpTools.GetSystemLockedText(arg_5_0)
+			local var_5_46, var_5_47 = JumpTools.GetSystemLockedText(arg_5_0)
 
-			ShowTips(var_5_45)
+			ShowTips(var_5_47)
 
 			return
 		else
@@ -362,10 +378,10 @@ function var_0_0.JumpToPage2(arg_5_0)
 			return
 		end
 	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.CANTEEN_MAP then
-		local var_5_46 = JumpTools.IsSystemLocked(var_0_3.SYSTEM_ID.DORM)
+		local var_5_48 = JumpTools.IsSystemLocked(var_0_3.SYSTEM_ID.DORM)
 
-		if var_5_46 then
-			ShowTips(JumpTools.GetSystemLockedTip(var_0_3.SYSTEM_ID.DORM, var_5_46))
+		if var_5_48 then
+			ShowTips(JumpTools.GetSystemLockedTip(var_0_3.SYSTEM_ID.DORM, var_5_48))
 
 			return nil
 		else
@@ -374,10 +390,10 @@ function var_0_0.JumpToPage2(arg_5_0)
 			return
 		end
 	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.DORM_MAP then
-		local var_5_47 = JumpTools.IsSystemLocked(var_0_3.SYSTEM_ID.DORM)
+		local var_5_49 = JumpTools.IsSystemLocked(var_0_3.SYSTEM_ID.DORM)
 
-		if var_5_47 then
-			ShowTips(JumpTools.GetSystemLockedTip(var_0_3.SYSTEM_ID.DORM, var_5_47))
+		if var_5_49 then
+			ShowTips(JumpTools.GetSystemLockedTip(var_0_3.SYSTEM_ID.DORM, var_5_49))
 
 			return nil
 		else
@@ -386,10 +402,10 @@ function var_0_0.JumpToPage2(arg_5_0)
 			return
 		end
 	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.BACKHOME_MAP then
-		local var_5_48 = JumpTools.IsSystemLocked(var_0_3.SYSTEM_ID.DORM)
+		local var_5_50 = JumpTools.IsSystemLocked(var_0_3.SYSTEM_ID.DORM)
 
-		if var_5_48 then
-			ShowTips(JumpTools.GetSystemLockedTip(var_0_3.SYSTEM_ID.DORM, var_5_48))
+		if var_5_50 then
+			ShowTips(JumpTools.GetSystemLockedTip(var_0_3.SYSTEM_ID.DORM, var_5_50))
 
 			return nil
 		else
@@ -399,10 +415,10 @@ function var_0_0.JumpToPage2(arg_5_0)
 			return
 		end
 	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.IDOL_TRAINEE then
-		local var_5_49 = JumpTools.IsSystemLocked(var_0_3.SYSTEM_ID.DORM)
+		local var_5_51 = JumpTools.IsSystemLocked(var_0_3.SYSTEM_ID.DORM)
 
-		if var_5_49 then
-			ShowTips(JumpTools.GetSystemLockedTip(var_0_3.SYSTEM_ID.DORM, var_5_49))
+		if var_5_51 then
+			ShowTips(JumpTools.GetSystemLockedTip(var_0_3.SYSTEM_ID.DORM, var_5_51))
 
 			return nil
 		else
@@ -411,25 +427,25 @@ function var_0_0.JumpToPage2(arg_5_0)
 			return
 		end
 	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.HERO_TEACH then
-		local var_5_50 = arg_5_0[2]
+		local var_5_52 = arg_5_0[2]
 
-		if var_5_50 ~= nil then
-			if HeroData:GetHeroData(var_5_50).unlock ~= 1 then
+		if var_5_52 ~= nil then
+			if HeroData:GetHeroData(var_5_52).unlock ~= 1 then
 				ShowTips("ERROR_HERO_NOT_UNLOCK")
 
 				return
 			end
 
-			local var_5_51 = HeroCfg[var_5_50]
+			local var_5_53 = HeroCfg[var_5_52]
 
-			if var_5_51 and var_5_51.study_stage and var_5_51.study_stage[1] then
+			if var_5_53 and var_5_53.study_stage and var_5_53.study_stage[1] then
 				JumpTools.OpenPageByJump("/teachStage", {
 					switchType = var_0_1.STAGE_TYPE_NEW.STAGE_TYPE_HERO_TEACHING,
-					heroID = var_5_50
+					heroID = var_5_52
 				})
 				JumpTools.OpenPageByJump("teachSectionInfo", {
 					sectionType = var_0_1.STAGE_TYPE_NEW.STAGE_TYPE_HERO_TEACHING,
-					section = var_5_51.study_stage[1]
+					section = var_5_53.study_stage[1]
 				})
 			end
 		else
@@ -445,9 +461,9 @@ function var_0_0.JumpToPage2(arg_5_0)
 		return
 	elseif var_5_0.system_id == var_0_3.SYSTEM_ID.BATTLE_SUB_PLOT then
 		if var_0_0.GetLinkIsLocked(arg_5_0) then
-			local var_5_52, var_5_53 = JumpTools.GetSystemLockedText(arg_5_0)
+			local var_5_54, var_5_55 = JumpTools.GetSystemLockedText(arg_5_0)
 
-			ShowTips(var_5_53)
+			ShowTips(var_5_55)
 
 			return
 		end
@@ -460,84 +476,84 @@ function var_0_0.JumpToPage2(arg_5_0)
 
 		return
 	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.MOON_CAKE then
-		local var_5_54 = tostring(arg_5_0[2])
-		local var_5_55 = SystemLinkCfg[arg_5_0[1]].activity_id
-		local var_5_56 = MoonCakeTools.GetMainActivityID(var_5_55)
+		local var_5_56 = tostring(arg_5_0[2])
+		local var_5_57 = SystemLinkCfg[arg_5_0[1]].activity_id
+		local var_5_58 = MoonCakeTools.GetMainActivityID(var_5_57)
 
-		if var_5_54 == USER_ID then
+		if var_5_56 == USER_ID then
 			JumpTools.OpenPageByJump("/moonCakeParty", {
-				activityID = var_5_55,
-				mainActivityID = var_5_56,
+				activityID = var_5_57,
+				mainActivityID = var_5_58,
 				partyOwnerUID = USER_ID
 			})
 		else
-			MoonCakeAction.VisitParty(var_5_55, var_5_54, MoonCakeConst.VISIT_WAY.SHARE)
+			MoonCakeAction.VisitParty(var_5_57, var_5_56, MoonCakeConst.VISIT_WAY.SHARE)
 		end
 
 		return
 	elseif arg_5_0[1] == var_0_3.SYSTEM_ID.SERVANT_SHOP then
-		local var_5_57 = arg_5_0[2]
-		local var_5_58 = SystemLinkCfg[arg_5_0[1]].params[1]
-		local var_5_59 = ShopTools.GetGoodsIDListByItemID(var_5_58, var_5_57)
-		local var_5_60 = {}
-		local var_5_61 = {}
-		local var_5_62 = ShopTools.FilterShopDataList(var_5_58)
+		local var_5_59 = arg_5_0[2]
+		local var_5_60 = SystemLinkCfg[arg_5_0[1]].params[1]
+		local var_5_61 = ShopTools.GetGoodsIDListByItemID(var_5_60, var_5_59)
+		local var_5_62 = {}
+		local var_5_63 = {}
+		local var_5_64 = ShopTools.FilterShopDataList(var_5_60)
 
-		for iter_5_0, iter_5_1 in pairs(var_5_62) do
-			if iter_5_1.id == var_5_59[1] then
-				var_5_61 = iter_5_1
+		for iter_5_0, iter_5_1 in pairs(var_5_64) do
+			if iter_5_1.id == var_5_61[1] then
+				var_5_63 = iter_5_1
 			end
 		end
 
-		if getShopCfg(var_5_59[1]) then
-			local var_5_63 = getShopCfg(var_5_59[1])
+		if getShopCfg(var_5_61[1]) then
+			local var_5_65 = getShopCfg(var_5_61[1])
 		end
 
 		if JumpTools.GetLinkIsLocked(arg_5_0) then
-			local var_5_64, var_5_65 = JumpTools.GetSystemLockedText(arg_5_0)
+			local var_5_66, var_5_67 = JumpTools.GetSystemLockedText(arg_5_0)
 
-			ShowTips(var_5_65)
+			ShowTips(var_5_67)
 		else
 			JumpTools.OpenPageByJump("/shop", {
-				shopId = var_5_58
+				shopId = var_5_60
 			}, var_0_3.SYSTEM_ID.SHOP)
 
-			local var_5_66 = getShopCfg(var_5_61.id, var_5_58)
+			local var_5_68 = getShopCfg(var_5_63.id, var_5_60)
 
-			if ItemCfg[var_5_66.give_id].type == ItemConst.ITEM_TYPE.HERO_SKIN then
-				if ShopTools.HaveSkin(var_5_66.give_id) then
+			if ItemCfg[var_5_68.give_id].type == ItemConst.ITEM_TYPE.HERO_SKIN then
+				if ShopTools.HaveSkin(var_5_68.give_id) then
 					return
 				end
-			elseif var_5_66.limit_num then
-				if var_5_66.limit_num ~= -1 and var_5_66.limit_num <= var_5_61.buyTime then
+			elseif var_5_68.limit_num then
+				if var_5_68.limit_num ~= -1 and var_5_68.limit_num <= var_5_63.buyTime then
 					return
 				end
 
-				local var_5_67, var_5_68 = ShopTools.JudgeIsLvLimit(var_5_66.level_limit)
+				local var_5_69, var_5_70 = ShopTools.JudgeIsLvLimit(var_5_68.level_limit)
 
-				if var_5_67 then
+				if var_5_69 then
 					return
 				end
 			end
 
 			JumpTools.OpenPopUp("shopBuy", {
-				goodInfo = var_5_61
+				goodInfo = var_5_63
 			})
 		end
 
 		return
 	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.WEAPON_SERVANT_MERGE then
-		local var_5_69 = arg_5_0[2]
-		local var_5_70 = WeaponServantCfg[var_5_69].race
-		local var_5_71 = {
+		local var_5_71 = arg_5_0[2]
+		local var_5_72 = WeaponServantCfg[var_5_71].race
+		local var_5_73 = {
 			guideForce = true,
 			openTab = "callName",
-			race = var_5_70,
-			servantID = var_5_69
+			race = var_5_72,
+			servantID = var_5_71
 		}
 
-		manager.notify:Invoke(SERVANT_SWITCH_TO_CALLNAME, var_5_71)
-		JumpTools.OpenPageByJump("/weaponServant", var_5_71)
+		manager.notify:Invoke(SERVANT_SWITCH_TO_CALLNAME, var_5_73)
+		JumpTools.OpenPageByJump("/weaponServant", var_5_73)
 
 		return
 	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.SP_HERO_CHALLENGE_BARBECUE then
@@ -546,18 +562,18 @@ function var_0_0.JumpToPage2(arg_5_0)
 		return
 	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.SP_HERO_CHALLENGE_MAIN_VIEW or arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.SP_HERO_CHALLENGE_MAIN_VIEW_RESOURCE then
 		if SystemLinkCfg[arg_5_0[1]] then
-			local var_5_72 = SystemLinkCfg[arg_5_0[1]].activity_id
+			local var_5_74 = SystemLinkCfg[arg_5_0[1]].activity_id
 
-			SPHeroChallengeTools:EnterSystem(var_5_72)
+			SPHeroChallengeTools:EnterSystem(var_5_74)
 		end
 
 		return
 	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.SUMMER_CHESSBOARD then
-		local var_5_73 = arg_5_0[2]
-		local var_5_74, var_5_75 = SummerChessBoardData:CallFun("CurrentUnlockStageID", var_5_73)
+		local var_5_75 = arg_5_0[2]
+		local var_5_76, var_5_77 = SummerChessBoardData:CallFun("CurrentUnlockStageID", var_5_75)
 
-		if not var_5_74 then
-			ShowTips(SummerChessBoardData:CallFun("GetUnlockTips", var_5_73))
+		if not var_5_76 then
+			ShowTips(SummerChessBoardData:CallFun("GetUnlockTips", var_5_75))
 
 			return
 		end
@@ -572,18 +588,18 @@ function var_0_0.JumpToPage2(arg_5_0)
 		return
 	elseif var_5_0.system_id >= var_0_3.SYSTEM_ID.HERO and var_5_0.system_id <= var_0_3.SYSTEM_ID.TRANSITION then
 		if var_0_0.GetLinkIsLocked(arg_5_0) then
-			local var_5_76, var_5_77 = JumpTools.GetSystemLockedText(arg_5_0)
+			local var_5_78, var_5_79 = JumpTools.GetSystemLockedText(arg_5_0)
 
-			ShowTips(var_5_77)
+			ShowTips(var_5_79)
 
 			return
 		end
 
-		local var_5_78, var_5_79, var_5_80 = var_0_0.GetLinkAndParams(arg_5_0)
+		local var_5_80, var_5_81, var_5_82 = var_0_0.GetLinkAndParams(arg_5_0)
 
-		var_5_79.isEnter = true
+		var_5_81.isEnter = true
 
-		var_0_0.OpenPageByJump(var_5_78, var_5_79, var_5_80)
+		var_0_0.OpenPageByJump(var_5_80, var_5_81, var_5_82)
 
 		return
 	elseif var_5_0.system_id == var_0_3.SYSTEM_ID.PASSPORT_MAIN or var_5_0.system_id == var_0_3.SYSTEM_ID.PASSPORT_BUY then
@@ -592,10 +608,38 @@ function var_0_0.JumpToPage2(arg_5_0)
 
 			return
 		end
-	elseif var_0_0.GetLinkIsLocked(arg_5_0) then
-		local var_5_81, var_5_82 = JumpTools.GetSystemLockedText(arg_5_0)
+	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.SKULD_SELECT_LEVEL then
+		JumpTools.OpenPageByJump("/skuldSystemStageView", {
+			isFinal = false,
+			startNext = false
+		})
 
-		ShowTips(var_5_82)
+		return
+	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.SKULD_SELECT_LEVEL_FINAL then
+		local var_5_83 = false
+
+		for iter_5_2, iter_5_3 in pairs(SkuldStageCfg.get_id_list_by_section[9]) do
+			if SkuldSystemData:GetLevelIDIsOpen(iter_5_3) then
+				var_5_83 = true
+
+				break
+			end
+		end
+
+		if var_5_83 then
+			JumpTools.OpenPageByJump("/skuldSystemStageView", {
+				isFinal = true,
+				startNext = false
+			})
+		else
+			ShowTips("SKULD_ENDING_LOCK")
+		end
+
+		return
+	elseif var_0_0.GetLinkIsLocked(arg_5_0) then
+		local var_5_84, var_5_85 = JumpTools.GetSystemLockedText(arg_5_0)
+
+		ShowTips(var_5_85)
 
 		return
 	end
@@ -762,12 +806,18 @@ function var_0_0.GotoSubPlot(arg_12_0)
 end
 
 function var_0_0.GetActivityTime(arg_13_0)
-	local var_13_0 = ActivityData:GetActivityData(arg_13_0)
-	local var_13_1 = var_13_0.startTime
-	local var_13_2 = var_13_0.stopTime
-	local var_13_3 = var_13_0:GetStateBool()
+	local var_13_0 = ChapterResidentTools.GetResidentActMainID(arg_13_0)
 
-	return var_13_1, var_13_2, var_13_3
+	if var_13_0 then
+		arg_13_0 = var_13_0
+	end
+
+	local var_13_1 = ActivityData:GetActivityData(arg_13_0)
+	local var_13_2 = var_13_1.startTime
+	local var_13_3 = var_13_1.stopTime
+	local var_13_4 = var_13_1:GetStateBool()
+
+	return var_13_2, var_13_3, var_13_4
 end
 
 function var_0_0.GetLinkAndParams(arg_14_0)
@@ -800,7 +850,7 @@ function var_0_0.GetLinkAndParams(arg_14_0)
 		end
 	end
 
-	if arg_14_0[1] == var_0_3.JUMP_SPECIAL_ID.BATTLE_MAIN then
+	if arg_14_0[1] == var_0_3.JUMP_SPECIAL_ID.BATTLE_MAIN or arg_14_0[1] == var_0_3.JUMP_SPECIAL_ID.BATTLE_ROLL_MAIN then
 		var_14_1.sectionType = var_0_1.STAGE_TYPE_NEW.STAGE_TYPE_PLOT
 	end
 

@@ -1378,6 +1378,8 @@
 			if arg_45_0 == 1 then
 				arg_43_0:Play116191012(arg_43_1)
 			end
+
+			arg_43_1:RecordChoiceLog(116191011, 116191012)
 		end
 
 		function arg_43_1.onSingleLineUpdate_(arg_46_0)
@@ -1843,6 +1845,8 @@
 			if arg_61_0 == 1 then
 				arg_59_0:Play116191016(arg_59_1)
 			end
+
+			arg_59_1:RecordChoiceLog(116191015, 116191016)
 		end
 
 		function arg_59_1.onSingleLineUpdate_(arg_62_0)
@@ -2054,6 +2058,8 @@
 			if arg_69_0 == 1 then
 				arg_67_0:Play116191018(arg_67_1)
 			end
+
+			arg_67_1:RecordChoiceLog(116191017, 116191018)
 		end
 
 		function arg_67_1.onSingleLineUpdate_(arg_70_0)
@@ -5333,6 +5339,8 @@
 			if arg_181_0 == 1 then
 				arg_179_0:Play116191044(arg_179_1)
 			end
+
+			arg_179_1:RecordChoiceLog(116191043, 116191044)
 		end
 
 		function arg_179_1.onSingleLineUpdate_(arg_182_0)

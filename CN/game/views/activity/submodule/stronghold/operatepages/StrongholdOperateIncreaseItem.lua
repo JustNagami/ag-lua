@@ -18,7 +18,7 @@ function var_0_0.InitUI(arg_3_0)
 
 	arg_3_0.selectController = ControllerUtil.GetController(arg_3_0.transform_, "select")
 	arg_3_0.lockController = ControllerUtil.GetController(arg_3_0.transform_, "lock")
-	arg_3_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/StrongholdUI/StrongholdIncrease/" .. arg_3_0.node_id)
+	arg_3_0.m_icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/StrongholdUI/StrongholdIncrease/" .. arg_3_0.node_id)
 end
 
 function var_0_0.AddUIListener(arg_4_0)

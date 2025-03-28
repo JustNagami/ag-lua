@@ -46,7 +46,7 @@ local function var_0_2(arg_2_0)
 	local var_2_2 = {}
 
 	for iter_2_2, iter_2_3 in ipairs(var_2_0) do
-		local var_2_3 = CanteenTools.AutoSelectEntrustHero(iter_2_3, var_2_1)
+		local var_2_3 = CanteenTools.AutoSelectEntrustHero(iter_2_3, nil, var_2_1)
 
 		if var_2_3 then
 			for iter_2_4, iter_2_5 in ipairs(var_2_3) do
@@ -85,7 +85,23 @@ function var_0_0.BatchSendTaskDispatchInfo(arg_4_0, arg_4_1, arg_4_2)
 	elseif not CanteenTools.AnyAvailableEntrustHero() then
 		ShowTips("DORM_CANTEEN_TASK_CANT_FIT")
 	else
-		ShowTips("CANTEEN_TASK_DISPATCH_FAIL")
+		local var_4_4 = false
+
+		if not CanteenEntrustData.NoEntrustDispatched() then
+			ShowTips("CANTEEN_TASK_DISPATCH_FAIL")
+		else
+			for iter_4_2, iter_4_3 in pairs(var_4_0) do
+				if CanteenTools.AutoSelectEntrustHero(iter_4_2) then
+					var_4_4 = true
+				end
+			end
+
+			if var_4_4 then
+				ShowTips("CANTEEN_TASK_DISPATCH_FAIL")
+			else
+				ShowTips("DORM_CANTEEN_TASK_CANT_FIT")
+			end
+		end
 	end
 end
 

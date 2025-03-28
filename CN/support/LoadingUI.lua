@@ -1,39 +1,9 @@
 ﻿local var_0_0 = {}
+local var_0_1 = {}
+local var_0_2 = {}
 
 function var_0_0.LoadingShow(arg_1_0, arg_1_1)
-	if LoadingUIType.Battle == arg_1_1 then
-		local var_1_0 = false
-		local var_1_1 = BattleController.GetInstance():GetBattleStageData()
-
-		if not var_1_1 then
-			LoadingUIManager.inst:UpdateLoadingInfo("", "", nil)
-		end
-
-		local var_1_2 = var_1_1:GetStageId()
-		local var_1_3 = var_1_1:GetType()
-
-		if BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_MYTHIC == var_1_3 then
-			local var_1_4 = var_1_1:GetDest()
-
-			var_1_0 = MythicData:GetIsFirstClear(var_1_4)
-		elseif BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_TOWER == var_1_3 then
-			var_1_0 = true
-		else
-			local var_1_5 = BattleStageData:GetStageData()[var_1_2]
-
-			if var_1_5 then
-				var_1_0 = var_1_5.clear_times <= 0
-			end
-		end
-
-		if var_1_0 and LoadingTipsStage[var_1_2] then
-			LoadingUIManager.inst:UpdateLoadingInfo(LoadingTipsStage[var_1_2].title, LoadingTipsStage[var_1_2].tips, LoadingTipsStage[var_1_2].loading_picture)
-		else
-			var_0_0:ChooseRandom()
-		end
-	elseif LoadingUIType.Main == arg_1_1 then
-		var_0_0:ChooseRandom()
-	elseif LoadingUIType.GameStart == arg_1_1 then
+	if LoadingUIType.GameStart == arg_1_1 then
 		LoadingUIManager.inst:UpdateLoadingInfo("", "", nil)
 	else
 		var_0_0:ChooseRandom()
@@ -41,7 +11,7 @@ function var_0_0.LoadingShow(arg_1_0, arg_1_1)
 end
 
 function var_0_0.ChooseRandom(arg_2_0)
-	local var_2_0, var_2_1, var_2_2, var_2_3 = IllustratedData:GetRandomTips()
+	local var_2_0, var_2_1, var_2_2, var_2_3 = var_0_0:GetRandomTips()
 
 	if var_2_3 then
 		LoadingUIManager.inst:UpdateLoadingInfo(var_2_0, var_2_1, var_2_2)
@@ -50,28 +20,46 @@ function var_0_0.ChooseRandom(arg_2_0)
 	end
 end
 
-function var_0_0.GetRandomTips(arg_3_0)
-	local var_3_0 = math.random(1, #LoadingTipsPoolCfg.all)
-	local var_3_1 = LoadingTipsPoolCfg.all[var_3_0]
-	local var_3_2 = LoadingTipsPoolCfg[var_3_1]
-	local var_3_3 = var_3_2.loading_picture
-
-	if not var_3_3 or var_3_3 == "" then
-		local var_3_4 = math.random(1, #LoadingTipsPicturePoolCfg.all)
-		local var_3_5 = LoadingTipsPicturePoolCfg.all[var_3_4]
-
-		var_3_3 = LoadingTipsPicturePoolCfg[var_3_5].loading_picture
-	end
-
-	return var_3_2.title, var_3_2.tips, var_3_3
+function var_0_0.ResetLoading(arg_3_0)
+	var_0_1 = deepClone(LoadingTipsPoolCfg.all)
+	var_0_2 = deepClone(IllustratedData:GetAllLoadingSet())
 end
 
-function var_0_0.GetRandomTips2(arg_4_0)
-	local var_4_0 = IllustratedData:GetAllLoadingSet()
-	local var_4_1 = math.random(1, #var_4_0)
-	local var_4_2 = CollectPictureCfg[var_4_0[var_4_1]]
+function var_0_0.GetRandomTips(arg_4_0)
+	if #var_0_1 <= 0 and #var_0_2 <= 0 then
+		var_0_0.ResetLoading()
+	end
 
-	return var_4_2.name, var_4_2.desc, var_4_2.picture
+	local var_4_0 = #var_0_2
+
+	if var_4_0 > 0 then
+		local var_4_1 = math.random(1, var_4_0)
+		local var_4_2 = var_0_2[var_4_1]
+		local var_4_3 = CollectPictureCfg[var_4_2]
+
+		if var_4_0 == 1 then
+			var_0_2 = deepClone(IllustratedData:GetAllLoadingSet())
+		else
+			table.remove(var_0_2, var_4_1)
+		end
+
+		local var_4_4 = var_4_3.type == 5 and true or false
+
+		return var_4_3.name, var_4_3.desc, var_4_3.picture, var_4_4
+	end
+
+	local var_4_5 = #var_0_1
+	local var_4_6 = math.random(1, var_4_5)
+	local var_4_7 = var_0_1[var_4_6]
+	local var_4_8 = LoadingTipsPoolCfg[var_4_7]
+
+	if var_4_5 == 1 then
+		var_0_1 = deepClone(LoadingTipsPoolCfg.all)
+	else
+		table.remove(var_0_1, var_4_6)
+	end
+
+	return var_4_8.title, var_4_8.tips, var_4_8.loading_picture, true
 end
 
 LoadingUIManager.inst:SetLoadingShowAction(handler(var_0_0, var_0_0.LoadingShow))

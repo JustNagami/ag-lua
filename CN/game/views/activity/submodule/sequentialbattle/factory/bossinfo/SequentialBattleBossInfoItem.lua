@@ -35,7 +35,7 @@ function var_0_0.SetBossID(arg_3_0, arg_3_1, arg_3_2)
 		end
 	end
 
-	arg_3_0.portraitImage_.sprite = getSpriteWithoutAtlas(string.format("TextureConfig/MardukUI/boss/solo582x648/%s", var_3_0))
+	arg_3_0.portraitImage_.sprite = pureGetSpriteWithoutAtlas(string.format("TextureConfig/MardukUI/boss/solo582x648/%s", var_3_0))
 
 	local var_3_1 = MonsterCfg[arg_3_0.bossIDList_[1]]
 

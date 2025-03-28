@@ -254,7 +254,7 @@ end
 
 function var_0_0.RenderMaskBg(arg_21_0)
 	if not arg_21_0.hasSnapshot_ then
-		arg_21_0.commonMaskBg_.sprite = getSpriteWithoutAtlas("TextureBg/BattleResult/battleResult_bg_common")
+		arg_21_0.commonMaskBg_.sprite = pureGetSpriteWithoutAtlas("TextureBg/BattleResult/battleResult_bg_common")
 
 		arg_21_0.adaptComp:AdaptImg()
 		SetActive(arg_21_0.commonMaskBg_.gameObject, true)

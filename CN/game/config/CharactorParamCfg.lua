@@ -11,6 +11,12 @@
 		EnergyType = 1,
 		RangeType = 0
 	},
+	[1211] = {
+		ID = 1211,
+		Name = "魂羽·奥西里斯",
+		EnergyType = 4,
+		RangeType = 0
+	},
 	[1013] = {
 		ID = 1013,
 		Name = "障月·阿修罗",
@@ -191,6 +197,12 @@
 		EnergyType = 4,
 		RangeType = 1
 	},
+	[1043] = {
+		ID = 1043,
+		Name = "伊里伽尔",
+		EnergyType = 4,
+		RangeType = 1
+	},
 	[1048] = {
 		ID = 1048,
 		Name = "彗光·前鬼坊天狗",
@@ -317,6 +329,12 @@
 		EnergyType = 3,
 		RangeType = 0
 	},
+	[1073] = {
+		ID = 1073,
+		Name = "巧构·麟钰",
+		EnergyType = 2,
+		RangeType = 1
+	},
 	[1074] = {
 		ID = 1074,
 		Name = "英招",
@@ -350,6 +368,12 @@
 	[1084] = {
 		ID = 1084,
 		Name = "朝约·薇儿丹蒂",
+		EnergyType = 4,
+		RangeType = 0
+	},
+	[1085] = {
+		ID = 1085,
+		Name = "诗蔻蒂",
 		EnergyType = 4,
 		RangeType = 0
 	},
@@ -1031,6 +1055,12 @@
 		EnergyType = 0,
 		RangeType = 0
 	},
+	[2131] = {
+		ID = 2131,
+		Name = "侵蚀种<亡骸>",
+		EnergyType = 0,
+		RangeType = 0
+	},
 	[3002] = {
 		ID = 3002,
 		Name = "3002",
@@ -1493,6 +1523,18 @@
 		EnergyType = 0,
 		RangeType = 0
 	},
+	[4047] = {
+		ID = 4047,
+		Name = "拟造心影<死兆之女>",
+		EnergyType = 0,
+		RangeType = 0
+	},
+	[4048] = {
+		ID = 4048,
+		Name = "拟造天灾<苏什那>",
+		EnergyType = 0,
+		RangeType = 0
+	},
 	[5011] = {
 		ID = 5011,
 		Name = "雏心·奥西里斯",
@@ -1526,6 +1568,12 @@
 	[5028] = {
 		ID = 5028,
 		Name = "托尔",
+		EnergyType = 3,
+		RangeType = 0
+	},
+	[5032] = {
+		ID = 5032,
+		Name = "熯天·提尔",
 		EnergyType = 3,
 		RangeType = 0
 	},
@@ -1709,9 +1757,21 @@
 		EnergyType = 1,
 		RangeType = 0
 	},
+	[5197] = {
+		ID = 5197,
+		Name = "梦影·俄尼里伊",
+		EnergyType = 2,
+		RangeType = 1
+	},
 	[5199] = {
 		ID = 5199,
 		Name = "震离·月读",
+		EnergyType = 1,
+		RangeType = 0
+	},
+	[5284] = {
+		ID = 5284,
+		Name = "黯耀·薇儿丹蒂",
 		EnergyType = 1,
 		RangeType = 0
 	},
@@ -1979,11 +2039,59 @@
 		EnergyType = 1,
 		RangeType = 0
 	},
+	[6133] = {
+		ID = 6133,
+		Name = "船只",
+		EnergyType = 0,
+		RangeType = 1
+	},
+	[6134] = {
+		ID = 6134,
+		Name = "怪异的船只",
+		EnergyType = 0,
+		RangeType = 1
+	},
+	[6135] = {
+		ID = 6135,
+		Name = "怪异的船只",
+		EnergyType = 0,
+		RangeType = 1
+	},
+	[6136] = {
+		ID = 6136,
+		Name = "怪异大型船只",
+		EnergyType = 0,
+		RangeType = 1
+	},
+	[6137] = {
+		ID = 6137,
+		Name = "障碍",
+		EnergyType = 0,
+		RangeType = 0
+	},
 	[6138] = {
 		ID = 6138,
 		Name = "瓦吉特摩托",
 		EnergyType = 0,
 		RangeType = 0
+	},
+	[6139] = {
+		ID = 6139,
+		Name = "源初种<蚁骸>",
+		EnergyType = 0,
+		RangeType = 1
+	},
+	[6140] = {
+		ID = 6140,
+		Name = "聚合种<战骸>",
+		EnergyType = 0,
+		RangeType = 1
+	},
+	[6141] = {
+		ID = 6141,
+		Name = "科尔盖<机动哨兵>",
+		EnergyType = 0,
+		RangeType = 1
 	},
 	[10025] = {
 		ID = 10025,
@@ -2075,9 +2183,16 @@
 		EnergyType = 0,
 		RangeType = 0
 	},
+	[10142] = {
+		ID = 10142,
+		Name = "生魂·奥西里斯",
+		EnergyType = 3,
+		RangeType = 0
+	},
 	all = {
 		1011,
 		1012,
+		1211,
 		1013,
 		1015,
 		1016,
@@ -2108,6 +2223,7 @@
 		1139,
 		1041,
 		1042,
+		1043,
 		1048,
 		1049,
 		1148,
@@ -2129,12 +2245,14 @@
 		1070,
 		1071,
 		1072,
+		1073,
 		1074,
 		1075,
 		1076,
 		1080,
 		1081,
 		1084,
+		1085,
 		1089,
 		1184,
 		1284,
@@ -2248,6 +2366,7 @@
 		2127,
 		2128,
 		2130,
+		2131,
 		3002,
 		3004,
 		3005,
@@ -2325,12 +2444,15 @@
 		4043,
 		4044,
 		4046,
+		4047,
+		4048,
 		5011,
 		5013,
 		5015,
 		5016,
 		5019,
 		5028,
+		5032,
 		5035,
 		5049,
 		5050,
@@ -2361,7 +2483,9 @@
 		5119,
 		5184,
 		5158,
+		5197,
 		5199,
+		5284,
 		300101,
 		6045,
 		6046,
@@ -2406,7 +2530,15 @@
 		6110,
 		6111,
 		6121,
+		6133,
+		6134,
+		6135,
+		6136,
+		6137,
 		6138,
+		6139,
+		6140,
+		6141,
 		10025,
 		65535,
 		10006,
@@ -2421,6 +2553,7 @@
 		10083,
 		10097,
 		10105,
-		10132
+		10132,
+		10142
 	}
 }

@@ -41,8 +41,6 @@ function var_0_1.InitVisitDormData(arg_4_0, arg_4_1)
 			heroID = iter_4_1.hero_id
 		})
 	end
-
-	arg_4_0:UpdateReceivedWeekGiftNum(arg_4_1.received_be_visited_gift_num)
 end
 
 function var_0_1.GetVisitInfo(arg_5_0)
@@ -99,7 +97,8 @@ function var_0_1.InitHeroInfo(arg_12_0, arg_12_1)
 				hero_id = iter_12_1.hero_id,
 				feed_times = iter_12_1.feed_times or 0,
 				fatigue = iter_12_1.fatigue,
-				totalFeedTime = iter_12_1.total_feed_times
+				totalFeedTime = iter_12_1.total_feed_times,
+				isLock = iter_12_1.is_lock
 			}
 
 			if DormHeroTools:GetTemplateIDInDorm(iter_12_1.archives_id) then

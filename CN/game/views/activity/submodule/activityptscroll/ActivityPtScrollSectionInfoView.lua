@@ -204,7 +204,7 @@ function var_0_0.RefreshStageInfo(arg_14_0)
 
 		arg_14_0.sectionText_.text = string.format("%s-%s", GetI18NText(var_14_1), GetI18NText(var_14_2))
 		arg_14_0.sectionName_.text = GetI18NText(var_14_0.name)
-		arg_14_0.sectionImage_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_14_0.background_1))
+		arg_14_0.sectionImage_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_14_0.background_1))
 		arg_14_0.oldCfgID_ = var_14_0.id
 		arg_14_0.multiple_ = 1
 	end

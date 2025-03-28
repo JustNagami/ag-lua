@@ -3607,6 +3607,8 @@
 			if arg_105_0 == 2 then
 				arg_103_0:Play414121026(arg_103_1)
 			end
+
+			arg_103_1:RecordChoiceLog(414121025, 414121026, 414121026)
 		end
 
 		function arg_103_1.onSingleLineUpdate_(arg_106_0)
@@ -5480,6 +5482,8 @@
 				SetActive(arg_155_1.allBtn_.gameObject, true)
 				arg_155_1.hideBtnsController_:SetSelectedIndex(0)
 				manager.video:Dispose()
+
+				arg_155_1.isInLoopVideo = false
 			end
 
 			local var_158_48 = 0.125

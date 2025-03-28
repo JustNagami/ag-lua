@@ -475,6 +475,244 @@
 		idle3_talk = {},
 		idle3_delay = {}
 	},
+	[1073] = {
+		skinId = 1073,
+		greeting = {
+			"login",
+			"login",
+			"login"
+		},
+		greeting_talk = {
+			"1073_greet",
+			"1073_greet2",
+			"1073_greet3"
+		},
+		greeting_delay = {
+			990,
+			990,
+			1518
+		},
+		greeting_weight = {
+			1,
+			1,
+			1
+		},
+		mainTouch = {
+			"touch1",
+			"touch2",
+			"touch3",
+			"touch4",
+			"emotion"
+		},
+		mainTouch_talk = {
+			"1073_talk1",
+			"1073_talk2",
+			"1073_talk3",
+			"1073_talk4",
+			"1073_talk5"
+		},
+		mainTouch_delay = {
+			594,
+			165,
+			0,
+			330,
+			1122
+		},
+		mainTouch_weight = {
+			1,
+			1,
+			1,
+			1,
+			1
+		},
+		mainQuickTouch = {
+			"quickclick"
+		},
+		mainQuickTouch_talk = {
+			"1073_qc"
+		},
+		mainQuickTouch_delay = {
+			330
+		},
+		shaking = {
+			"shake"
+		},
+		shaking_talk = {
+			"1073_shake"
+		},
+		shaking_delay = {
+			396
+		},
+		showing = {
+			"assistant"
+		},
+		showing_talk = {
+			"1073_assistant"
+		},
+		showing_delay = {
+			924
+		},
+		idle = {
+			"idle",
+			"idle",
+			"idle"
+		},
+		idle_talk = {
+			"1073_idle",
+			"1073_idle2",
+			"1073_idle3"
+		},
+		idle_delay = {
+			990,
+			858,
+			858
+		},
+		idle_weight = {
+			1,
+			1,
+			1
+		},
+		roleChange = {},
+		roleChange_talk = {
+			"1073_choose"
+		},
+		roleChange_delay = {
+			0
+		},
+		roleIdle = {},
+		roleIdle_talk = {},
+		touch2 = {},
+		touch2_talk = {},
+		touch2_delay = {},
+		touch3 = {},
+		touch3_talk = {},
+		touch3_delay = {},
+		idle2 = {},
+		idle2_talk = {},
+		idle2_delay = {},
+		idle3 = {},
+		idle3_talk = {},
+		idle3_delay = {}
+	},
+	[1085] = {
+		skinId = 1085,
+		greeting = {
+			"login",
+			"login",
+			"login"
+		},
+		greeting_talk = {
+			"1085_greet",
+			"1085_greet2",
+			"1085_greet3"
+		},
+		greeting_delay = {
+			1320,
+			825,
+			1980
+		},
+		greeting_weight = {
+			1,
+			1,
+			1
+		},
+		mainTouch = {
+			"touch1",
+			"touch2",
+			"touch3",
+			"touch4",
+			"emotion"
+		},
+		mainTouch_talk = {
+			"1085_talk1",
+			"1085_talk2",
+			"1085_talk3",
+			"1085_talk4",
+			"1085_talk5"
+		},
+		mainTouch_delay = {
+			660,
+			825,
+			0,
+			0,
+			0
+		},
+		mainTouch_weight = {
+			1,
+			1,
+			1,
+			1,
+			1
+		},
+		mainQuickTouch = {
+			"quickclick"
+		},
+		mainQuickTouch_talk = {
+			"1085_qc"
+		},
+		mainQuickTouch_delay = {
+			495
+		},
+		shaking = {
+			"shake"
+		},
+		shaking_talk = {
+			"1085_shake"
+		},
+		shaking_delay = {
+			231
+		},
+		showing = {
+			"assistant"
+		},
+		showing_talk = {
+			"1085_assistant"
+		},
+		showing_delay = {
+			165
+		},
+		idle = {
+			"idle",
+			"idle",
+			"idle"
+		},
+		idle_talk = {
+			"1085_idle",
+			"1085_idle2",
+			"1085_idle3"
+		},
+		idle_delay = {
+			1815,
+			1650,
+			1980
+		},
+		idle_weight = {
+			1,
+			1,
+			1
+		},
+		roleChange = {},
+		roleChange_talk = {
+			"1085_choose"
+		},
+		roleChange_delay = {
+			0
+		},
+		roleIdle = {},
+		roleIdle_talk = {},
+		touch2 = {},
+		touch2_talk = {},
+		touch2_delay = {},
+		touch3 = {},
+		touch3_talk = {},
+		touch3_delay = {},
+		idle2 = {},
+		idle2_talk = {},
+		idle2_delay = {},
+		idle3 = {},
+		idle3_talk = {},
+		idle3_delay = {}
+	},
 	[1038] = {
 		skinId = 1038,
 		greeting = {
@@ -9658,11 +9896,238 @@
 		idle3_talk = {},
 		idle3_delay = {}
 	},
+	[108501] = {
+		skinId = 108501,
+		greeting = {},
+		greeting_talk = {},
+		greeting_delay = {},
+		greeting_weight = {},
+		mainTouch = {
+			"touch1",
+			"touch2"
+		},
+		mainTouch_talk = {
+			"108501_talk6",
+			"108501_talk7"
+		},
+		mainTouch_delay = {
+			0,
+			0
+		},
+		mainTouch_weight = {
+			1,
+			1
+		},
+		mainQuickTouch = {},
+		mainQuickTouch_talk = {},
+		mainQuickTouch_delay = {},
+		shaking = {},
+		shaking_talk = {},
+		shaking_delay = {},
+		showing = {},
+		showing_talk = {},
+		showing_delay = {},
+		idle = {},
+		idle_talk = {},
+		idle_delay = {},
+		idle_weight = {},
+		roleChange = {},
+		roleChange_talk = {},
+		roleChange_delay = {},
+		roleIdle = {},
+		roleIdle_talk = {},
+		touch2 = {},
+		touch2_talk = {},
+		touch2_delay = {},
+		touch3 = {},
+		touch3_talk = {},
+		touch3_delay = {},
+		idle2 = {},
+		idle2_talk = {},
+		idle2_delay = {},
+		idle3 = {},
+		idle3_talk = {},
+		idle3_delay = {}
+	},
+	[107301] = {
+		skinId = 107301,
+		greeting = {},
+		greeting_talk = {},
+		greeting_delay = {},
+		greeting_weight = {},
+		mainTouch = {
+			"touch1",
+			"touch2"
+		},
+		mainTouch_talk = {
+			"107301_talk1",
+			"107301_talk2"
+		},
+		mainTouch_delay = {
+			0,
+			0
+		},
+		mainTouch_weight = {
+			1,
+			1
+		},
+		mainQuickTouch = {},
+		mainQuickTouch_talk = {},
+		mainQuickTouch_delay = {},
+		shaking = {},
+		shaking_talk = {},
+		shaking_delay = {},
+		showing = {},
+		showing_talk = {},
+		showing_delay = {},
+		idle = {},
+		idle_talk = {},
+		idle_delay = {},
+		idle_weight = {},
+		roleChange = {},
+		roleChange_talk = {},
+		roleChange_delay = {},
+		roleIdle = {},
+		roleIdle_talk = {},
+		touch2 = {},
+		touch2_talk = {},
+		touch2_delay = {},
+		touch3 = {},
+		touch3_talk = {},
+		touch3_delay = {},
+		idle2 = {},
+		idle2_talk = {},
+		idle2_delay = {},
+		idle3 = {},
+		idle3_talk = {},
+		idle3_delay = {}
+	},
+	[99108501] = {
+		skinId = 99108501,
+		greeting = {
+			"login",
+			"login",
+			"login"
+		},
+		greeting_talk = {
+			"108501_greet",
+			"108501_greet2",
+			"108501_greet3"
+		},
+		greeting_delay = {
+			990,
+			660,
+			990
+		},
+		greeting_weight = {
+			1,
+			1,
+			1
+		},
+		mainTouch = {
+			"touch1",
+			"touch2",
+			"touch3",
+			"touch4",
+			"emotion"
+		},
+		mainTouch_talk = {
+			"108501_talk1",
+			"108501_talk2",
+			"108501_talk3",
+			"108501_talk4",
+			"108501_talk5"
+		},
+		mainTouch_delay = {
+			330,
+			594,
+			495,
+			0,
+			0
+		},
+		mainTouch_weight = {
+			1,
+			1,
+			1,
+			1,
+			1
+		},
+		mainQuickTouch = {
+			"quickclick"
+		},
+		mainQuickTouch_talk = {
+			"108501_qc"
+		},
+		mainQuickTouch_delay = {
+			330
+		},
+		shaking = {
+			"shake"
+		},
+		shaking_talk = {
+			"108501_shake"
+		},
+		shaking_delay = {
+			165
+		},
+		showing = {
+			"assistant"
+		},
+		showing_talk = {
+			"108501_assistant"
+		},
+		showing_delay = {
+			660
+		},
+		idle = {
+			"idle",
+			"idle",
+			"idle"
+		},
+		idle_talk = {
+			"108501_idle",
+			"108501_idle2",
+			"108501_idle3"
+		},
+		idle_delay = {
+			495,
+			2145,
+			1980
+		},
+		idle_weight = {
+			1,
+			1,
+			1
+		},
+		roleChange = {},
+		roleChange_talk = {
+			"108501_choose"
+		},
+		roleChange_delay = {
+			0
+		},
+		roleIdle = {},
+		roleIdle_talk = {},
+		touch2 = {},
+		touch2_talk = {},
+		touch2_delay = {},
+		touch3 = {},
+		touch3_talk = {},
+		touch3_delay = {},
+		idle2 = {},
+		idle2_talk = {},
+		idle2_delay = {},
+		idle3 = {},
+		idle3_talk = {},
+		idle3_delay = {}
+	},
 	all = {
 		1012,
 		1039,
 		1048,
 		1066,
+		1073,
+		1085,
 		1038,
 		1099,
 		1084,
@@ -9752,6 +10217,9 @@
 		103401,
 		102202,
 		101502,
-		107503
+		107503,
+		108501,
+		107301,
+		99108501
 	}
 }

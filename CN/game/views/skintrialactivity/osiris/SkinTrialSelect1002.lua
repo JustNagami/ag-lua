@@ -41,7 +41,7 @@ function var_0_0.RefreshUI(arg_6_0)
 	local var_6_3 = HeroStandardSystemCfg[var_6_1].hero_id
 
 	arg_6_0.heroTitleText_.text = GetI18NText(SkinCfg[var_6_2].name)
-	arg_6_0.skinImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. SkinCfg[var_6_2].picture_id)
+	arg_6_0.skinImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. SkinCfg[var_6_2].picture_id)
 	arg_6_0.heroNameText_.text = string.format("%s·%s", GetI18NText(HeroCfg[var_6_3].name), GetI18NText(HeroCfg[var_6_3].suffix))
 
 	local var_6_4 = SettingData:GetCurrentLanguage()

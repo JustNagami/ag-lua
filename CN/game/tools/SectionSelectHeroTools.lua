@@ -34,7 +34,8 @@ function var_0_0.CreateClassDic()
 		[BattleConst.STAGE_TYPE_NEW.CHALLENGE_ROGUE_TEAM] = ChallengeRogueTeamSelectHeroProxy,
 		[BattleConst.STAGE_TYPE_NEW.ACTIVITY_WATER_COOPERATION] = CooperationSelectHeroProxy,
 		[BattleConst.STAGE_TYPE_NEW.AREA_BATTLE] = AreaBattleSelectHeroProxy,
-		[BattleConst.STAGE_TYPE_NEW.SEQUENTIAL_BATTLE] = SequentialBattleSelectHeroProxy
+		[BattleConst.STAGE_TYPE_NEW.SEQUENTIAL_BATTLE] = SequentialBattleSelectHeroProxy,
+		[BattleConst.STAGE_TYPE_NEW.RACE_TRIAL] = ActivityRaceTrialSelectHeroProxy
 	}
 end
 
@@ -170,11 +171,27 @@ function var_0_0.IsSameHeroInTeam(arg_9_0, arg_9_1)
 	return false, nil
 end
 
-function var_0_0.IsEmptyTeam(arg_10_0)
-	arg_10_0 = arg_10_0 or {}
+function var_0_0.IsHeroDataEqual(arg_10_0, arg_10_1)
+	if arg_10_0.id ~= arg_10_1.id then
+		return false
+	end
 
-	for iter_10_0, iter_10_1 in ipairs(arg_10_0) do
-		if iter_10_1 ~= 0 then
+	if arg_10_0.trialID ~= arg_10_1.trialID then
+		return false
+	end
+
+	if arg_10_0.type ~= arg_10_1.type then
+		return false
+	end
+
+	return true
+end
+
+function var_0_0.IsEmptyTeam(arg_11_0)
+	arg_11_0 = arg_11_0 or {}
+
+	for iter_11_0, iter_11_1 in ipairs(arg_11_0) do
+		if iter_11_1 ~= 0 then
 			return false
 		end
 	end
@@ -182,96 +199,96 @@ function var_0_0.IsEmptyTeam(arg_10_0)
 	return true
 end
 
-function var_0_0.IsAllPosFullLock(arg_11_0, arg_11_1)
-	if not arg_11_1 or arg_11_1 == 0 then
+function var_0_0.IsAllPosFullLock(arg_12_0, arg_12_1)
+	if not arg_12_1 or arg_12_1 == 0 then
 		return false
 	end
 
-	if not BattleStageTools.GetStageCfg(arg_11_0, arg_11_1) then
+	if not BattleStageTools.GetStageCfg(arg_12_0, arg_12_1) then
 		return false
 	end
 
-	local var_11_0 = true
-	local var_11_1, var_11_2 = SectionSelectHeroTools.GetRestrictHeroList(arg_11_0, arg_11_1)
+	local var_12_0 = true
+	local var_12_1, var_12_2 = SectionSelectHeroTools.GetRestrictHeroList(arg_12_0, arg_12_1)
 
-	for iter_11_0, iter_11_1 in ipairs(var_11_1) do
-		if not iter_11_1[1] or var_11_2[iter_11_0] ~= ReserveConst.RESTRICT_HERO_SWITCH_MODE.FORBID then
-			var_11_0 = false
+	for iter_12_0, iter_12_1 in ipairs(var_12_1) do
+		if not iter_12_1[1] or var_12_2[iter_12_0] ~= ReserveConst.RESTRICT_HERO_SWITCH_MODE.FORBID then
+			var_12_0 = false
 
 			break
 		end
 	end
 
-	return var_11_0
+	return var_12_0
 end
 
-function var_0_0.ReorderHeroTeam(arg_12_0, arg_12_1, arg_12_2)
-	arg_12_2 = arg_12_2 or var_0_0.GetDefaultCanSwitchResctrictHeroList()
+function var_0_0.ReorderHeroTeam(arg_13_0, arg_13_1, arg_13_2)
+	arg_13_2 = arg_13_2 or var_0_0.GetDefaultCanSwitchResctrictHeroList()
 
-	local var_12_0 = 1
-	local var_12_1 = 2
+	local var_13_0 = 1
+	local var_13_1 = 2
 
-	while var_12_0 <= 3 and var_12_1 <= 3 do
-		if arg_12_0[var_12_0] == 0 then
-			if arg_12_2[var_12_1] == ReserveConst.RESTRICT_HERO_SWITCH_MODE.FORBID and arg_12_0[var_12_1] ~= 0 then
-				arg_12_0[var_12_0] = arg_12_0[var_12_1]
-				arg_12_1[var_12_0] = arg_12_1[var_12_1]
-				arg_12_0[var_12_1] = 0
-				arg_12_1[var_12_1] = 0
-				var_12_0 = var_12_1
+	while var_13_0 <= 3 and var_13_1 <= 3 do
+		if arg_13_0[var_13_0] == 0 then
+			if arg_13_2[var_13_1] == ReserveConst.RESTRICT_HERO_SWITCH_MODE.FORBID and arg_13_0[var_13_1] ~= 0 then
+				arg_13_0[var_13_0] = arg_13_0[var_13_1]
+				arg_13_1[var_13_0] = arg_13_1[var_13_1]
+				arg_13_0[var_13_1] = 0
+				arg_13_1[var_13_1] = 0
+				var_13_0 = var_13_1
 			end
 		else
-			var_12_0 = var_12_0 + 1
+			var_13_0 = var_13_0 + 1
 		end
 
-		var_12_1 = var_12_1 + 1
+		var_13_1 = var_13_1 + 1
 	end
 end
 
 function var_0_0.GetDefaultCanSwitchResctrictHeroList()
-	local var_13_0 = {}
-	local var_13_1 = ReserveConst.RESTRICT_HERO_SWITCH_MODE.FORBID
+	local var_14_0 = {}
+	local var_14_1 = ReserveConst.RESTRICT_HERO_SWITCH_MODE.FORBID
 
 	return {
-		var_13_1,
-		var_13_1,
-		var_13_1
+		var_14_1,
+		var_14_1,
+		var_14_1
 	}
 end
 
-function var_0_0.IsReserveProposalEqual(arg_14_0, arg_14_1, arg_14_2, arg_14_3, arg_14_4, arg_14_5)
-	local var_14_0 = ReserveParams.New(ReserveConst.RESERVE_TYPE.PROPOSAL, arg_14_0)
-	local var_14_1 = ReserveTools.GetReserveTemplateByReserveType(ReserveConst.RESERVE_TYPE.PROPOSAL, arg_14_5)
-	local var_14_2 = var_14_1:GetHeroList(var_14_0)
+function var_0_0.IsReserveProposalEqual(arg_15_0, arg_15_1, arg_15_2, arg_15_3, arg_15_4, arg_15_5)
+	local var_15_0 = ReserveParams.New(ReserveConst.RESERVE_TYPE.PROPOSAL, arg_15_0)
+	local var_15_1 = ReserveTools.GetReserveTemplateByReserveType(ReserveConst.RESERVE_TYPE.PROPOSAL, arg_15_5)
+	local var_15_2 = var_15_1:GetHeroList(var_15_0)
 
-	for iter_14_0, iter_14_1 in ipairs(arg_14_1) do
-		if iter_14_1 ~= var_14_2[iter_14_0] then
+	for iter_15_0, iter_15_1 in ipairs(arg_15_1) do
+		if iter_15_1 ~= var_15_2[iter_15_0] then
 			return false
 		end
 	end
 
-	if arg_14_2 ~= var_14_1:GetComboSkillID(var_14_0) then
+	if arg_15_2 ~= var_15_1:GetComboSkillID(var_15_0) then
 		return false
 	end
 
-	local var_14_3, var_14_4 = var_14_1:GetMimirData(var_14_0)
+	local var_15_3, var_15_4 = var_15_1:GetMimirData(var_15_0)
 
-	if arg_14_3 ~= var_14_3 then
+	if arg_15_3 ~= var_15_3 then
 		return false
 	end
 
-	if #arg_14_4 ~= #var_14_4 then
+	if #arg_15_4 ~= #var_15_4 then
 		return false
 	end
 
-	local var_14_5 = {}
+	local var_15_5 = {}
 
-	for iter_14_2, iter_14_3 in ipairs(var_14_4) do
-		var_14_5[iter_14_3] = true
+	for iter_15_2, iter_15_3 in ipairs(var_15_4) do
+		var_15_5[iter_15_3] = true
 	end
 
-	for iter_14_4, iter_14_5 in ipairs(arg_14_4) do
-		if not var_14_5[iter_14_5] then
+	for iter_15_4, iter_15_5 in ipairs(arg_15_4) do
+		if not var_15_5[iter_15_5] then
 			return false
 		end
 	end
@@ -279,12 +296,12 @@ function var_0_0.IsReserveProposalEqual(arg_14_0, arg_14_1, arg_14_2, arg_14_3, 
 	return true
 end
 
-function var_0_0.IsNeedDisplayFilterLockHero(arg_15_0, arg_15_1)
-	if not arg_15_0.needDisplayFilterLocalHero then
+function var_0_0.IsNeedDisplayFilterLockHero(arg_16_0, arg_16_1)
+	if not arg_16_0.needDisplayFilterLocalHero then
 		return false
 	end
 
-	if #arg_15_1.filterLockHeroList == 0 then
+	if #arg_16_1.filterLockHeroList == 0 then
 		return false
 	end
 
@@ -295,23 +312,23 @@ function var_0_0.IsNeedDisplayFilterLockHero(arg_15_0, arg_15_1)
 	return true
 end
 
-function var_0_0.SetSkipDisplayFilterLockHeroTime(arg_16_0)
-	saveData("section_select_hero", "SkipDisplayFilterLockHeroTime", arg_16_0)
+function var_0_0.SetSkipDisplayFilterLockHeroTime(arg_17_0)
+	saveData("section_select_hero", "SkipDisplayFilterLockHeroTime", arg_17_0)
 end
 
 function var_0_0.GetSkipDisplayFilterLockHeroTime()
 	return getData("section_select_hero", "SkipDisplayFilterLockHeroTime") or 0
 end
 
-function var_0_0.CanUseMultiMode(arg_18_0, arg_18_1)
-	if not arg_18_0 or not arg_18_1 or arg_18_1 == 0 then
+function var_0_0.CanUseMultiMode(arg_19_0, arg_19_1)
+	if not arg_19_0 or not arg_19_1 or arg_19_1 == 0 then
 		return false
 	end
 
-	local var_18_0 = var_0_0.GetRestrictHeroList(arg_18_0, arg_18_1)
+	local var_19_0 = var_0_0.GetRestrictHeroList(arg_19_0, arg_19_1)
 
-	for iter_18_0, iter_18_1 in ipairs(var_18_0) do
-		if iter_18_1[1] and iter_18_1[1] ~= 0 then
+	for iter_19_0, iter_19_1 in ipairs(var_19_0) do
+		if iter_19_1[1] and iter_19_1[1] ~= 0 then
 			return false
 		end
 	end
@@ -319,23 +336,34 @@ function var_0_0.CanUseMultiMode(arg_18_0, arg_18_1)
 	return true
 end
 
-function var_0_0.GetModelOffesetPosition(arg_19_0, arg_19_1, arg_19_2)
-	local var_19_0 = Vector3(0, 0, 0)
-	local var_19_1 = (arg_19_1.x - arg_19_0.x) / arg_19_2
+function var_0_0.GetModelOffesetPosition(arg_20_0, arg_20_1, arg_20_2)
+	local var_20_0
+	local var_20_1
 
-	var_19_0.x = var_19_1 * SectionSelectHeroConst.ModelDistanceX
-
-	if var_19_1 > 0 then
-		var_19_0.z = -var_19_1 * SectionSelectHeroConst.ModelDistanceZ
+	if arg_20_0.x <= arg_20_1.x then
+		var_20_0 = SectionSelectHeroConst.f2SModelDistanceX
+		var_20_1 = SectionSelectHeroConst.f2SModelDistanceZ
 	else
-		var_19_0.z = var_19_1 * SectionSelectHeroConst.ModelDistanceZ
+		var_20_0 = SectionSelectHeroConst.f2TModelDistanceX
+		var_20_1 = SectionSelectHeroConst.f2TModelDistanceZ
 	end
 
-	return var_19_0
+	local var_20_2 = Vector3(0, 0, 0)
+	local var_20_3 = (arg_20_1.x - arg_20_0.x) / arg_20_2
+
+	var_20_2.x = var_20_3 * var_20_0
+
+	if var_20_3 > 0 then
+		var_20_2.z = -var_20_3 * var_20_1
+	else
+		var_20_2.z = var_20_3 * var_20_1
+	end
+
+	return var_20_2
 end
 
-function var_0_0.SetCurSelectHeroData(arg_20_0)
-	var_0_0.curSelectHeroData = arg_20_0
+function var_0_0.SetCurSelectHeroData(arg_21_0)
+	var_0_0.curSelectHeroData = arg_21_0
 end
 
 function var_0_0.GetCurSelectHeroData()

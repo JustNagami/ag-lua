@@ -19,6 +19,7 @@ function var_0_0.Init(arg_3_0)
 
 	arg_3_0.criplayer_:SetVolume(manager.audio:GetEffectVolume())
 	arg_3_0.criplayer_:SetMaxPictureDataSize(600000)
+	arg_3_0.criplayer_:SetBufferingTime(0.05)
 	arg_3_0:InitMovieData()
 
 	arg_3_0._timer = FrameTimer.New(handler(arg_3_0, arg_3_0.MovieProcess), 1, -1)
@@ -46,7 +47,7 @@ end
 
 function var_0_0.AddListeners(arg_5_0)
 	arg_5_0:AddBtnListener(arg_5_0.nextBtn_1, nil, function()
-		arg_5_0:CalcNextMovieData(1, 1)
+		arg_5_0:CalcNextMovieData(1)
 		arg_5_0:StepPlayLoopMovie(2)
 		SetActive(arg_5_0.nextGo_1, false)
 	end)
@@ -57,6 +58,7 @@ function var_0_0.AddListeners(arg_5_0)
 end
 
 function var_0_0.OnEnter(arg_8_0)
+	GameLocalData:SaveToCommonModule("LoginConceptGuideData", "watched", true)
 	gameContext:SetSystemLayer("login")
 
 	_G.isLogining = false
@@ -69,6 +71,8 @@ function var_0_0.OnEnter(arg_8_0)
 
 	arg_8_0:StepPlayLoopMovie(1)
 	arg_8_0._timer:Start()
+	manager.audio:PlayVoice("vo_login_vocal", "vo_login_vocal_1", "vo_login_vocal.awb")
+	manager.audio:PlayBGM("bgm_login_4_0", "bgm_login_4_0_part1", "bgm_login_4_0")
 
 	arg_8_0.movieExited_ = {}
 end
@@ -103,8 +107,9 @@ function var_0_0.OnMovieEnd(arg_12_0, arg_12_1)
 		SetActive(arg_12_0.nextGo_1, true)
 	elseif arg_12_1 == 2 then
 		arg_12_0:CalcNextMovieData(arg_12_1)
+		manager.audio:PlayBGM("bgm_login_4_0", "bgm_login_4_0_part3", "bgm_login_4_0")
 	elseif arg_12_1 == 3 then
-		SetActive(arg_12_0.nextGo_2, true)
+		arg_12_0:CalcNextMovieData(arg_12_1)
 	elseif arg_12_1 == 4 then
 		arg_12_0:JumpToLoginPage()
 	elseif arg_12_1 == 5 then
@@ -136,6 +141,16 @@ function var_0_0.MovieProcess(arg_16_0)
 	local var_16_1 = arg_16_0.criplayer_:GetDisplayedFrameNo()
 	local var_16_2 = arg_16_0.curMovieIdx_
 
+	if var_16_2 == 2 then
+		if not arg_16_0.lastAudioPlayTime_ then
+			arg_16_0.lastAudioPlayTime_ = Time.time
+		elseif Time.time - arg_16_0.lastAudioPlayTime_ > 6 then
+			arg_16_0.lastAudioPlayTime_ = Time.time
+
+			manager.audio:PlayVoice("vo_login_vocal", "vo_login_vocal_2", "vo_login_vocal.awb")
+		end
+	end
+
 	if arg_16_0.movieEndFrames_[var_16_2] == nil then
 		return
 	end
@@ -146,32 +161,44 @@ function var_0_0.MovieProcess(arg_16_0)
 end
 
 function var_0_0.JumpToLoginPage(arg_17_0)
-	local var_17_0 = arg_17_0.params_.isAutoLogin
+	manager.transition:OnlyShowEffect(true, function()
+		if arg_17_0.OnlyShowEffectExiting_ then
+			return
+		end
 
-	arg_17_0:Back()
-	gameContext:Go("/login", {
-		isAutoLogin = var_17_0
-	})
+		arg_17_0.OnlyShowEffectExiting_ = true
+
+		manager.transition:OnlyShowEffect(false)
+
+		arg_17_0.OnlyShowEffectExiting_ = false
+
+		local var_18_0 = arg_17_0.params_.isAutoLogin
+
+		arg_17_0:Back()
+		gameContext:Go("/login", {
+			isAutoLogin = var_18_0
+		})
+	end)
 end
 
-function var_0_0.CalcNextMovieData(arg_18_0, arg_18_1, arg_18_2)
-	local var_18_0 = arg_18_1 + 1
+function var_0_0.CalcNextMovieData(arg_19_0, arg_19_1, arg_19_2)
+	local var_19_0 = arg_19_1 + 1
 
-	if arg_18_1 == 0 then
-		arg_18_0.movieEndFrames_[var_18_0] = arg_18_0.movieTotalFrames_[var_18_0]
+	if arg_19_1 == 0 then
+		arg_19_0.movieEndFrames_[var_19_0] = arg_19_0.movieTotalFrames_[var_19_0]
 
 		return
 	end
 
-	if arg_18_2 == nil then
-		arg_18_2 = 0
+	if arg_19_2 == nil then
+		arg_19_2 = 0
 	end
 
-	local var_18_1 = arg_18_0.criplayer_:GetDisplayedFrameNo()
-	local var_18_2 = arg_18_0.movieTotalFrames_[var_18_0]
-	local var_18_3 = arg_18_0.movieEndFrames_[arg_18_1]
+	local var_19_1 = arg_19_0.criplayer_:GetDisplayedFrameNo()
+	local var_19_2 = arg_19_0.movieTotalFrames_[var_19_0]
+	local var_19_3 = arg_19_0.movieEndFrames_[arg_19_1]
 
-	arg_18_0.movieEndFrames_[var_18_0] = var_18_3 + var_18_2 * math.max(math.ceil((var_18_1 - var_18_3) / var_18_2) + arg_18_2, 1)
+	arg_19_0.movieEndFrames_[var_19_0] = var_19_3 + var_19_2 * math.max(math.ceil((var_19_1 - var_19_3) / var_19_2) + arg_19_2, 1)
 end
 
 return var_0_0

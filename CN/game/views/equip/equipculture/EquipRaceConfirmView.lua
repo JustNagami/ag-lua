@@ -43,7 +43,7 @@ function var_0_0.OnEnter(arg_8_0)
 		return
 	end
 
-	arg_8_0.equipIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Equip/icon_s/" .. ItemCfg[var_8_0.prefab_id].icon)
+	arg_8_0.equipIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Equip/icon_s/" .. ItemCfg[var_8_0.prefab_id].icon)
 
 	local var_8_2 = var_8_0.race
 	local var_8_3 = var_8_2 ~= 0 and RaceEffectCfg[var_8_2]
@@ -53,7 +53,7 @@ function var_0_0.OnEnter(arg_8_0)
 
 		arg_8_0.leftGroupText_.text = string.format(GetTips("EQUIP_RACE_ATTRIBUTE_UP"), GetI18NText(var_8_3.name))
 		arg_8_0.leftGroupIcon_.sprite = getSprite("Atlas/SystemGroupAtlas", var_8_3.icon2)
-		arg_8_0.leftIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Group_l/" .. var_8_3.icon2)
+		arg_8_0.leftIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Group_l/" .. var_8_3.icon2)
 
 		local var_8_4 = var_8_1 and var_8_2 == var_8_1.race
 
@@ -75,7 +75,7 @@ function var_0_0.OnEnter(arg_8_0)
 
 		arg_8_0.rightGroupText_.text = string.format(GetTips("EQUIP_RACE_ATTRIBUTE_UP"), GetI18NText(var_8_6.name))
 		arg_8_0.rightGroupIcon_.sprite = getSprite("Atlas/SystemGroupAtlas", var_8_6.icon2)
-		arg_8_0.rightIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Group_l/" .. var_8_6.icon2)
+		arg_8_0.rightIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Group_l/" .. var_8_6.icon2)
 
 		local var_8_7 = var_8_1 and var_8_5 == var_8_1.race
 

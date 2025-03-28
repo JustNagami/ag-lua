@@ -2442,7 +2442,145 @@
 				{
 					2025,
 					3,
+					25
+				},
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[100053] = {
+		new_recommend = 1,
+		prefab = "recommend_105502",
+		show_type = 0,
+		goods_id = 100053,
+		info_desc = "",
+		title = "庆典遐思",
+		sub_title = "霜影·暗御津羽",
+		free_dlc_icon = "",
+		show_time = "",
+		params = "",
+		icon = "icon_105502",
+		order = 2,
+		jump = {
+			525
+		},
+		jump2 = {
+			534,
+			15000035,
+			1055,
+			105502,
+			15
+		},
+		time = {
+			{
+				{
+					2025,
+					3,
 					27
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2025,
+					5,
+					8
+				},
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[100054] = {
+		jump2 = "",
+		new_recommend = 1,
+		prefab = "recommend_107301",
+		show_type = 0,
+		goods_id = 100054,
+		info_desc = "",
+		title = "岁华似锦",
+		sub_title = "巧构·麟钰",
+		free_dlc_icon = "",
+		show_time = "",
+		params = "",
+		icon = "icon_107301",
+		order = 3,
+		jump = {
+			537
+		},
+		time = {
+			{
+				{
+					2025,
+					3,
+					27
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2025,
+					5,
+					8
+				},
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[100058] = {
+		jump2 = "",
+		new_recommend = 1,
+		prefab = "recommend_shouchong",
+		show_type = 0,
+		goods_id = 100058,
+		info_desc = "",
+		title = "首充奖励重置",
+		sub_title = "充值获得超值奖励",
+		free_dlc_icon = "",
+		show_time = "",
+		params = "",
+		icon = "icon_shouchong",
+		order = 1,
+		jump = {
+			536
+		},
+		time = {
+			{
+				{
+					2025,
+					3,
+					27
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2025,
+					5,
+					8
 				},
 				{
 					5,
@@ -2503,6 +2641,9 @@
 		100048,
 		100050,
 		100051,
-		100052
+		100052,
+		100053,
+		100054,
+		100058
 	}
 }

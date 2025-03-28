@@ -31,7 +31,7 @@ function var_0_0.UpdateView(arg_7_0)
 	SetActive(arg_7_0.regionGo_, arg_7_0.lockRegion ~= nil)
 	SetActive(arg_7_0.adminCatGo_, arg_7_0.lockAdminCat ~= nil)
 
-	arg_7_0.titleImage_.sprite = getSpriteWithoutAtlas("TextureBg/ExploreUI/icon_" .. arg_7_0.curLevel)
+	arg_7_0.titleImage_.sprite = pureGetSpriteWithoutAtlas("TextureBg/ExploreUI/icon_" .. arg_7_0.curLevel)
 
 	local var_7_0 = ExploreLevelCfg[arg_7_0.curLevel - 1]
 	local var_7_1 = ExploreLevelCfg[arg_7_0.curLevel]
@@ -40,7 +40,7 @@ function var_0_0.UpdateView(arg_7_0)
 		local var_7_2 = ExploreAreaCfg[arg_7_0.lockRegion]
 
 		arg_7_0.regionNameTxt_.text = GetI18NText(var_7_2.area_name)
-		arg_7_0.regionImage_.sprite = getSpriteWithoutAtlas("TextureBg/ExploreUI/" .. var_7_2.icon)
+		arg_7_0.regionImage_.sprite = pureGetSpriteWithoutAtlas("TextureBg/ExploreUI/" .. var_7_2.icon)
 	end
 
 	if arg_7_0.lockAdminCat then
@@ -51,9 +51,9 @@ function var_0_0.UpdateView(arg_7_0)
 		local var_7_4 = ExploreMeowSkillCfg[var_7_3.skill]
 		local var_7_5 = ExploreMeowInbornCfg[var_7_3.inborn]
 
-		arg_7_0.skillImg1_.sprite = getSpriteWithoutAtlas("TextureConfig/Chip/" .. var_7_5.inborn_icon)
-		arg_7_0.skillImg2_.sprite = getSpriteWithoutAtlas("TextureConfig/Chip/" .. var_7_4.skill_icon)
-		arg_7_0.adminCatImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Managecat_l/" .. var_7_3.meow_icon)
+		arg_7_0.skillImg1_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Chip/" .. var_7_5.inborn_icon)
+		arg_7_0.skillImg2_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Chip/" .. var_7_4.skill_icon)
+		arg_7_0.adminCatImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Managecat_l/" .. var_7_3.meow_icon)
 	end
 
 	arg_7_0.oldQueueTxt_.text = string.format(GetTips("EXPLORE_QUEUE_AMOUNT"), var_7_0.amount)

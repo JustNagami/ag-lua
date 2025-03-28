@@ -15,6 +15,7 @@ function var_0_0.InitUI(arg_2_0)
 	arg_2_0.skuldBtnController_ = ControllerUtil.GetController(arg_2_0.skuldbtn_.transform, "isbreach")
 	arg_2_0.chapterPartBtnView_ = ChapterPartBtnView.New(arg_2_0.chapterBranchGo_)
 	arg_2_0.stopMoveHandler_ = handler(arg_2_0, arg_2_0.StopMove)
+	arg_2_0.bgTypeController_ = arg_2_0.controller_:GetController("bgType")
 end
 
 function var_0_0.RefreshData(arg_3_0)
@@ -189,6 +190,7 @@ end
 
 function var_0_0.OnEnter(arg_19_0)
 	var_0_0.super.OnEnter(arg_19_0)
+	arg_19_0.bgTypeController_:SetSelectedState("normal")
 	arg_19_0.hardLevelView_:OnEnter()
 	arg_19_0.chapterPartBtnView_:OnEnter()
 	arg_19_0:SwitchRewardShow()

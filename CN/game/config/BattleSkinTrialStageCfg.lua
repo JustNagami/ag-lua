@@ -1832,6 +1832,45 @@
 			0
 		}
 	},
+	[405105502] = {
+		monster_level = 80,
+		name = "霜影·庆典遐思",
+		drop_lib_id = 0,
+		map = "405105502",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "霜影·庆典遐思",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 405105502,
+		attribute_factor = {
+			1000,
+			1000,
+			5000
+		},
+		hero_list = {
+			{
+				1055,
+				10550201
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
 	[405119904] = {
 		monster_level = 80,
 		name = "震离·课后补习",
@@ -2729,6 +2768,84 @@
 			0
 		}
 	},
+	[405107301] = {
+		monster_level = 80,
+		name = "巧构·岁华似锦",
+		drop_lib_id = 0,
+		map = "405107301",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "巧构·岁华似锦",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 405107301,
+		attribute_factor = {
+			1000,
+			1000,
+			6000
+		},
+		hero_list = {
+			{
+				1073,
+				10730102
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
+	[405108501] = {
+		monster_level = 80,
+		name = "绮望·梦的伊始",
+		drop_lib_id = 0,
+		map = "405108501",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "绮望·梦的伊始",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 405108501,
+		attribute_factor = {
+			1000,
+			1000,
+			10000
+		},
+		hero_list = {
+			{
+				1085,
+				10850101
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
 	all = {
 		405101301,
 		405101701,
@@ -2777,6 +2894,7 @@
 		405119701,
 		405119901,
 		405105501,
+		405105502,
 		405119904,
 		405109304,
 		405104901,
@@ -2799,6 +2917,8 @@
 		405115002,
 		405113301,
 		405106102,
-		405101201
+		405101201,
+		405107301,
+		405108501
 	}
 }

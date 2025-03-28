@@ -220,6 +220,12 @@
 				if not BloodCardTools.IsUnlockGuide(var_1_27) then
 					return false
 				end
+			elseif iter_1_1[1] == "qworldSubQuest" then
+				local var_1_28 = iter_1_1[2]
+
+				if not QWorldQuestTool.IsSubQuestFinish(var_1_28) then
+					return false
+				end
 			else
 				print("未实现的条件类型:", iter_1_1[1])
 			end
@@ -403,7 +409,8 @@ local var_0_4 = {
 	5,
 	1,
 	3,
-	4
+	4,
+	7
 }
 
 function var_0_0.GetPoolIndex(arg_11_0)

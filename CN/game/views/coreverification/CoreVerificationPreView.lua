@@ -26,9 +26,9 @@ function var_0_0.OnEnter(arg_6_0)
 	local var_6_3 = BossChallengeUICfg[var_6_1.stage_id] or BossChallengeUICfg[3090009]
 	local var_6_4 = BossChallengeUICfg[var_6_2.stage_id] or BossChallengeUICfg[3090009]
 
-	arg_6_0.mainImg_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.CollectBoss.path, var_6_3.boss_id_list[1]))
+	arg_6_0.mainImg_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.CollectBoss.path, var_6_3.boss_id_list[1]))
 	arg_6_0.mainText_.text = GetI18NText(var_6_3.main_name)
-	arg_6_0.subImg_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.CollectBoss.path, var_6_4.boss_id_list[1]))
+	arg_6_0.subImg_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.CollectBoss.path, var_6_4.boss_id_list[1]))
 	arg_6_0.subText_.text = GetI18NText(var_6_4.main_name)
 	arg_6_0.title1Text_.text = GetTips("CORE_VERIFICATION_BOSS_1")
 	arg_6_0.title2Text_.text = GetTips("CORE_VERIFICATION_BOSS_2")

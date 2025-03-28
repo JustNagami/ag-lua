@@ -36,7 +36,7 @@ end
 
 function var_0_0.UpdateView(arg_7_0)
 	arg_7_0.icon_.sprite = ItemTools.getItemSprite(arg_7_0.data_.portrait)
-	arg_7_0.frame_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_7_0.data_.frame)
+	arg_7_0.frame_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Frame/" .. arg_7_0.data_.frame)
 	arg_7_0.name_.text = GetI18NText(arg_7_0.data_.nick)
 	arg_7_0.score_.text = arg_7_0.data_.score
 	arg_7_0.rank_.text = arg_7_0.data_.rank

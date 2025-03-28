@@ -42,7 +42,7 @@ function var_0_0.RefreshUI(arg_8_0)
 		var_8_1 = var_8_1 .. var_8_0.picture
 	end
 
-	arg_8_0.itemimage_.sprite = getSpriteWithoutAtlas(var_8_1)
+	arg_8_0.itemimage_.sprite = pureGetSpriteWithoutAtlas(var_8_1)
 
 	SetActive(arg_8_0.panelGo_, false)
 end

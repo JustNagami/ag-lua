@@ -134,7 +134,7 @@ function var_0_0.RefreshUI(arg_12_0)
 
 	LayoutRebuilder.ForceRebuildLayoutImmediate(arg_12_0.titleTrans_)
 
-	arg_12_0.moduleImage_.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponModule/" .. arg_12_0.heroID_)
+	arg_12_0.moduleImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/WeaponModule/" .. arg_12_0.heroID_)
 
 	local var_12_1 = HeroData:GetCurModuleLevel(arg_12_0.heroID_)
 

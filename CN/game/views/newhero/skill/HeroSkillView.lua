@@ -147,6 +147,7 @@ function var_0_0.OnEnter(arg_12_0, arg_12_1)
 
 	arg_12_0:RefreshSelectSkill(arg_12_0.selectSkillId)
 	arg_12_0.previewController_:SetSelectedState(tostring(arg_12_0.heroViewDataProxy:GetViewDataType() == HeroConst.HERO_DATA_TYPE.PREVIEW))
+	arg_12_0:RefreshComboSkillBtn()
 end
 
 function var_0_0.InitData(arg_13_0)
@@ -177,111 +178,121 @@ function var_0_0.InitViewCallback(arg_14_0)
 	end)
 end
 
-function var_0_0.ChangeTabShow(arg_16_0, arg_16_1)
-	arg_16_0.showStateController_:SetSelectedState(var_0_2[arg_16_1])
-	arg_16_0:RefreshSkillList()
+function var_0_0.RefreshComboSkillBtn(arg_16_0)
+	local var_16_0 = ComboSkillTools.GetHeroComboSkill(arg_16_0.heroId)
+
+	if var_16_0 and #var_16_0 > 0 then
+		SetActive(arg_16_0.comboskillBtn_.gameObject, true)
+	else
+		SetActive(arg_16_0.comboskillBtn_.gameObject, false)
+	end
 end
 
-function var_0_0.OnHeroSkillAttrUpgradeInView(arg_17_0, arg_17_1, arg_17_2)
-	arg_17_0:RefreshSkillData()
-	arg_17_0.heroSkillProperty_:OnHeroSkillAttrUpgradeInView(arg_17_1, arg_17_2)
-	arg_17_0.heroSkillInfo_:UpdateTargetCondition(4)
+function var_0_0.ChangeTabShow(arg_17_0, arg_17_1)
+	arg_17_0.showStateController_:SetSelectedState(var_0_2[arg_17_1])
+	arg_17_0:RefreshSkillList()
 end
 
-function var_0_0.OnHeroSkillUpgrade(arg_18_0, arg_18_1, arg_18_2)
+function var_0_0.OnHeroSkillAttrUpgradeInView(arg_18_0, arg_18_1, arg_18_2)
 	arg_18_0:RefreshSkillData()
-	arg_18_0.heroSkillInfo_:OnHeroSkillUpgrade(arg_18_1, arg_18_2)
-	arg_18_0.heroSkillProperty_:RefreshUi()
+	arg_18_0.heroSkillProperty_:OnHeroSkillAttrUpgradeInView(arg_18_1, arg_18_2)
+	arg_18_0.heroSkillInfo_:UpdateTargetCondition(4)
 end
 
-function var_0_0.TempSkillUpgrade(arg_19_0, arg_19_1, arg_19_2, arg_19_3)
-	for iter_19_0, iter_19_1 in pairs(arg_19_0.skillList) do
-		if arg_19_1 == iter_19_1.id then
-			arg_19_0.skillList[iter_19_0].tempAddLevel = arg_19_2
-		end
-
-		iter_19_1.isCanStarUp = SkillTools.GetIsCanUp(iter_19_1.id, iter_19_1.lv + (iter_19_1.tempAddLevel or 0), arg_19_3)
-	end
-
-	arg_19_0:RefreshSkillList()
-
-	for iter_19_2, iter_19_3 in pairs(arg_19_0.skillList) do
-		if arg_19_1 == iter_19_3.id then
-			arg_19_0.skillList[iter_19_2].tempAddLevel = 0
-		end
-	end
+function var_0_0.OnHeroSkillUpgrade(arg_19_0, arg_19_1, arg_19_2)
+	arg_19_0:RefreshSkillData()
+	arg_19_0.heroSkillInfo_:OnHeroSkillUpgrade(arg_19_1, arg_19_2)
+	arg_19_0.heroSkillProperty_:RefreshUi()
 end
 
-function var_0_0.RefreshSkillData(arg_20_0)
-	arg_20_0.skillList = arg_20_0.heroViewDataProxy:GetHeroSkillInfo(arg_20_0.heroId)
+function var_0_0.TempSkillUpgrade(arg_20_0, arg_20_1, arg_20_2, arg_20_3)
+	for iter_20_0, iter_20_1 in pairs(arg_20_0.skillList) do
+		if arg_20_1 == iter_20_1.id then
+			arg_20_0.skillList[iter_20_0].tempAddLevel = arg_20_2
+		end
+
+		iter_20_1.isCanStarUp = SkillTools.GetIsCanUp(iter_20_1.id, iter_20_1.lv + (iter_20_1.tempAddLevel or 0), arg_20_3)
+	end
 
 	arg_20_0:RefreshSkillList()
+
+	for iter_20_2, iter_20_3 in pairs(arg_20_0.skillList) do
+		if arg_20_1 == iter_20_3.id then
+			arg_20_0.skillList[iter_20_2].tempAddLevel = 0
+		end
+	end
 end
 
-function var_0_0.RefreshSkillList(arg_21_0)
-	if arg_21_0.skillList then
-		for iter_21_0 = 1, var_0_3 do
-			arg_21_0.skillItemList[iter_21_0]:RefreshData(arg_21_0.skillList[iter_21_0], arg_21_0.parent:GetSelectTabType())
+function var_0_0.RefreshSkillData(arg_21_0)
+	arg_21_0.skillList = arg_21_0.heroViewDataProxy:GetHeroSkillInfo(arg_21_0.heroId)
+
+	arg_21_0:RefreshSkillList()
+end
+
+function var_0_0.RefreshSkillList(arg_22_0)
+	if arg_22_0.skillList then
+		for iter_22_0 = 1, var_0_3 do
+			arg_22_0.skillItemList[iter_22_0]:RefreshData(arg_22_0.skillList[iter_22_0], arg_22_0.parent:GetSelectTabType())
 		end
 	end
 
-	arg_21_0:UpdateRedState()
+	arg_22_0:UpdateRedState()
 end
 
-function var_0_0.RefreshSkillInfo(arg_22_0, arg_22_1)
-	arg_22_0.heroSkillInfo_:UpdateSkillData(arg_22_0.skillList[arg_22_0.selectIndex], arg_22_1)
+function var_0_0.RefreshSkillInfo(arg_23_0, arg_23_1)
+	arg_23_0.heroSkillInfo_:UpdateSkillData(arg_23_0.skillList[arg_23_0.selectIndex], arg_23_1)
 end
 
-function var_0_0.RefreshPropertyInfo(arg_23_0, arg_23_1)
-	arg_23_0.heroSkillProperty_:UpdatePropertyData(arg_23_0.skillList[arg_23_0.selectIndex], arg_23_1)
+function var_0_0.RefreshPropertyInfo(arg_24_0, arg_24_1)
+	arg_24_0.heroSkillProperty_:UpdatePropertyData(arg_24_0.skillList[arg_24_0.selectIndex], arg_24_1)
 end
 
-function var_0_0.GetPlayBackwardsAnimator(arg_24_0)
-	if not arg_24_0.isGoHeroMain then
+function var_0_0.GetPlayBackwardsAnimator(arg_25_0)
+	if not arg_25_0.isGoHeroMain then
 		return {}, nil
 	end
 
-	local var_24_0
+	local var_25_0
 
-	if arg_24_0.parent:isPropertyView() then
-		var_24_0 = {
+	if arg_25_0.parent:isPropertyView() then
+		var_25_0 = {
 			{
-				arg_24_0.propertynodeAni_,
+				arg_25_0.propertynodeAni_,
 				"Fx_Common_right_cx_out 1",
 				false
 			}
 		}
 	else
-		var_24_0 = {
+		var_25_0 = {
 			{
-				arg_24_0.skillnodeAni_,
+				arg_25_0.skillnodeAni_,
 				"Fx_Common_right_cx_out 1",
 				false
 			}
 		}
 	end
 
-	return var_24_0, handler(arg_24_0, arg_24_0.PlayBackwardsAnimatorFun)
+	return var_25_0, handler(arg_25_0, arg_25_0.PlayBackwardsAnimatorFun)
 end
 
-function var_0_0.PlayBackwardsAnimatorFun(arg_25_0)
+function var_0_0.PlayBackwardsAnimatorFun(arg_26_0)
 	manager.heroRaiseTrack:SetViewState(HeroRaiseTrackConst.ViewType.heroRaiseCommon, {
 		2,
 		0
 	}, false)
-	arg_25_0:PlayBackAniEffect()
-	arg_25_0.skillItemList[arg_25_0.selectIndex]:UpdateSelectState(false)
+	arg_26_0:PlayBackAniEffect()
+	arg_26_0.skillItemList[arg_26_0.selectIndex]:UpdateSelectState(false)
 end
 
-function var_0_0.OnExit(arg_26_0)
-	arg_26_0.selectSkillId = nil
+function var_0_0.OnExit(arg_27_0)
+	arg_27_0.selectSkillId = nil
 
-	SetActive(arg_26_0.gameObject_, false)
+	SetActive(arg_27_0.gameObject_, false)
 end
 
-function var_0_0.OnTop(arg_27_0)
+function var_0_0.OnTop(arg_28_0)
 	manager.windowBar:RegistBackCallBack(function()
-		arg_27_0.isGoHeroMain = true
+		arg_28_0.isGoHeroMain = true
 
 		JumpTools.Back(nil, {
 			isSkillReturn = true
@@ -289,79 +300,79 @@ function var_0_0.OnTop(arg_27_0)
 	end)
 end
 
-function var_0_0.Dispose(arg_29_0)
-	if arg_29_0.exitTimer then
-		arg_29_0.exitTimer:Stop()
+function var_0_0.Dispose(arg_30_0)
+	if arg_30_0.exitTimer then
+		arg_30_0.exitTimer:Stop()
 
-		arg_29_0.exitTimer = nil
+		arg_30_0.exitTimer = nil
 	end
 
-	if arg_29_0.skillCxTimer then
-		arg_29_0.skillCxTimer:Stop()
-
-		arg_29_0.skillCxTimer = nil
-	end
-
-	if arg_29_0.backTween then
-		LeanTween.cancel(arg_29_0.backTween.id)
-
-		arg_29_0.backTween = nil
-	end
-
-	for iter_29_0 = 1, var_0_3 do
-		arg_29_0.skillItemList[iter_29_0]:Dispose()
-	end
-
-	arg_29_0.heroSkillInfo_:Dispose()
-	arg_29_0.heroSkillProperty_:Dispose()
-	var_0_0.super.Dispose(arg_29_0)
-end
-
-function var_0_0.PlaySkillCxAnim(arg_30_0)
 	if arg_30_0.skillCxTimer then
 		arg_30_0.skillCxTimer:Stop()
 
 		arg_30_0.skillCxTimer = nil
 	end
 
-	arg_30_0.skillCxTimer = Timer.New(function()
-		arg_30_0.skillAni_:Play("Fx_skill_cx", 0, 0)
-	end, 0.5)
+	if arg_30_0.backTween then
+		LeanTween.cancel(arg_30_0.backTween.id)
 
-	arg_30_0.skillCxTimer:Start()
+		arg_30_0.backTween = nil
+	end
+
+	for iter_30_0 = 1, var_0_3 do
+		arg_30_0.skillItemList[iter_30_0]:Dispose()
+	end
+
+	arg_30_0.heroSkillInfo_:Dispose()
+	arg_30_0.heroSkillProperty_:Dispose()
+	var_0_0.super.Dispose(arg_30_0)
 end
 
-function var_0_0.SetEffectState(arg_32_0, arg_32_1)
-	if arg_32_1 then
-		arg_32_0:PlayBackAniEffect()
+function var_0_0.PlaySkillCxAnim(arg_31_0)
+	if arg_31_0.skillCxTimer then
+		arg_31_0.skillCxTimer:Stop()
 
-		local var_32_0 = arg_32_0.skillnodeAni_:GetCurrentAnimatorClipInfo(0)
+		arg_31_0.skillCxTimer = nil
+	end
 
-		if arg_32_0.skillnodeAni_:GetCurrentAnimatorClipInfoCount(0) > 0 then
-			arg_32_0.skillnodeAni_:SetFloat("speed", -var_0_4)
-			arg_32_0.skillnodeAni_:Play("Fx_Common_right_cx", 0, var_32_0[0].clip.length)
+	arg_31_0.skillCxTimer = Timer.New(function()
+		arg_31_0.skillAni_:Play("Fx_skill_cx", 0, 0)
+	end, 0.5)
+
+	arg_31_0.skillCxTimer:Start()
+end
+
+function var_0_0.SetEffectState(arg_33_0, arg_33_1)
+	if arg_33_1 then
+		arg_33_0:PlayBackAniEffect()
+
+		local var_33_0 = arg_33_0.skillnodeAni_:GetCurrentAnimatorClipInfo(0)
+
+		if arg_33_0.skillnodeAni_:GetCurrentAnimatorClipInfoCount(0) > 0 then
+			arg_33_0.skillnodeAni_:SetFloat("speed", -var_0_4)
+			arg_33_0.skillnodeAni_:Play("Fx_Common_right_cx", 0, var_33_0[0].clip.length)
 		end
 
-		local var_32_1 = arg_32_0.propertynodeAni_:GetCurrentAnimatorClipInfo(0)
+		local var_33_1 = arg_33_0.propertynodeAni_:GetCurrentAnimatorClipInfo(0)
 
-		if arg_32_0.propertynodeAni_:GetCurrentAnimatorClipInfoCount(0) > 0 then
-			arg_32_0.propertynodeAni_:SetFloat("speed", -var_0_4)
-			arg_32_0.propertynodeAni_:Play("Fx_Common_right_cx", 0, var_32_1[0].clip.length)
+		if arg_33_0.propertynodeAni_:GetCurrentAnimatorClipInfoCount(0) > 0 then
+			arg_33_0.propertynodeAni_:SetFloat("speed", -var_0_4)
+			arg_33_0.propertynodeAni_:Play("Fx_Common_right_cx", 0, var_33_1[0].clip.length)
 		end
 	end
 end
 
-function var_0_0.PlayBackAniEffect(arg_33_0)
-	local var_33_0 = arg_33_0.skillTrs_.position
+function var_0_0.PlayBackAniEffect(arg_34_0)
+	local var_34_0 = arg_34_0.skillTrs_.position
 
-	arg_33_0.skillAni_.enabled = false
-	arg_33_0.backTween = LeanTween.value(0, 1, var_0_5 / var_0_4):setOnUpdate(LuaHelper.FloatAction(function(arg_34_0)
-		arg_33_0.skillTrs_.position = Vector3.Lerp(var_33_0, arg_33_0.aniEndPos, arg_34_0)
+	arg_34_0.skillAni_.enabled = false
+	arg_34_0.backTween = LeanTween.value(0, 1, var_0_5 / var_0_4):setOnUpdate(LuaHelper.FloatAction(function(arg_35_0)
+		arg_34_0.skillTrs_.position = Vector3.Lerp(var_34_0, arg_34_0.aniEndPos, arg_35_0)
 	end)):setOnComplete(LuaHelper.VoidAction(function()
-		if arg_33_0.backTween then
-			arg_33_0.backTween:setOnUpdate(nil):setOnComplete(nil):setEase(nil)
+		if arg_34_0.backTween then
+			arg_34_0.backTween:setOnUpdate(nil):setOnComplete(nil):setEase(nil)
 
-			arg_33_0.backTween = nil
+			arg_34_0.backTween = nil
 		end
 	end)):setEase(LeanTweenType.easeOutQuad)
 end

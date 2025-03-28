@@ -429,7 +429,7 @@ function var_0_0.RefreshEventEffectPanel(arg_26_0)
 
 		local var_26_0 = ChallengeRogueTeamTools.GetEventMoreMechanismID()
 
-		arg_26_0.effectIcon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_26_0))
+		arg_26_0.effectIcon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_26_0))
 
 		ChallengeRogueTeamData:EventSetTriggerType(0)
 		arg_26_0:AddTipsTimer()

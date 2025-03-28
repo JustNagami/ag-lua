@@ -88,14 +88,15 @@ function var_0_0.RefreshUI(arg_11_0)
 end
 
 function var_0_0.EnterQWorld(arg_12_0)
-	local var_12_0 = ActivitySandplayCfg[arg_12_0.activityID_]
-	local var_12_1 = var_12_0 and var_12_0.story_id
+	local var_12_0 = QWorldMgr:GetActivityMap(arg_12_0.activityID_)
+	local var_12_1 = SandPlayMapCfg[var_12_0]
+	local var_12_2 = var_12_1 and var_12_1.story_id
 
-	if not var_12_1 or var_12_1 == 0 or manager.story:IsStoryPlayed(var_12_1) then
-		LaunchQWorld()
+	if not var_12_2 or var_12_2 == 0 or manager.story:IsStoryPlayed(var_12_2) then
+		LaunchQWorld(false, arg_12_0.activityID_)
 	else
-		manager.story:StartStoryById(var_12_1, function()
-			LaunchQWorld()
+		manager.story:StartStoryById(var_12_2, function()
+			LaunchQWorld(false, arg_12_0.activityID_)
 		end)
 	end
 end

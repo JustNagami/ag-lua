@@ -57,9 +57,9 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2)
 		arg_6_0.nameText_.text = GetTips("ERROR_NO_TEMPLATE")
 	end
 
-	arg_6_0.heroImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_6_0.cfg_.hero_id)
+	arg_6_0.heroImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_6_0.cfg_.hero_id)
 	arg_6_0.heroImage_.transform.localPosition = Vector3(arg_6_0.cfg_.offset[1], arg_6_0.cfg_.offset[2], 0)
-	arg_6_0.heroBgImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_6_0.cfg_.hero_id)
+	arg_6_0.heroBgImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_6_0.cfg_.hero_id)
 	arg_6_0.heroBgImage_.transform.localPosition = Vector3(arg_6_0.cfg_.offset[1], arg_6_0.cfg_.offset[2], 0)
 
 	arg_6_0:RefreshStatus()

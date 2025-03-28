@@ -123,7 +123,7 @@ function var_0_0.UpdateView(arg_16_0)
 	local var_16_0 = ExploreAreaCfg[arg_16_0.regionId]
 
 	arg_16_0.adminCatItemList = {}
-	arg_16_0.regionMapImage_.sprite = getSpriteWithoutAtlas("TextureBg/ExploreUI/" .. var_16_0.icon)
+	arg_16_0.regionMapImage_.sprite = pureGetSpriteWithoutAtlas("TextureBg/ExploreUI/" .. var_16_0.icon)
 	arg_16_0.regionNameTxt_.text = GetI18NText(var_16_0.area_name)
 	arg_16_0.regionDescTxt_.text = GetI18NText(var_16_0.description)
 	arg_16_0.catList = AdminCatExploreData:SortAdminCatList(arg_16_0.regionId)

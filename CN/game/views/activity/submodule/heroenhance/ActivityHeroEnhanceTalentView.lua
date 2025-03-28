@@ -72,9 +72,9 @@ function var_0_0.RefreshUI(arg_10_0)
 	}
 
 	if ActivityTools.GetActivityTheme(var_10_1) == ActivityConst.THEME.ACTIVITY_3_5 and table.indexof(var_10_3, var_10_2) then
-		arg_10_0.heroImage_.sprite = getSpriteWithoutAtlas("TextureBg/Version/SummerUI_3_5/SummerUI_3_5_HeroEnhanceUI/SummerUI3_5_" .. var_10_2)
+		arg_10_0.heroImage_.sprite = pureGetSpriteWithoutAtlas("TextureBg/Version/SummerUI_3_5/SummerUI_3_5_HeroEnhanceUI/SummerUI3_5_" .. var_10_2)
 	else
-		arg_10_0.heroImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_10_2)
+		arg_10_0.heroImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_10_2)
 	end
 
 	arg_10_0.heroImage_:SetNativeSize()

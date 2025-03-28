@@ -827,7 +827,7 @@ function var_0_0.RefreshCardBg(arg_59_0, arg_59_1)
 	local var_59_1 = var_59_0.resource
 
 	if var_59_0.type == 1 then
-		arg_59_0.cardBgIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/UserInfor/" .. var_59_1)
+		arg_59_0.cardBgIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/UserInfor/" .. var_59_1)
 	elseif var_59_0.type == 2 then
 		-- block empty
 	elseif var_59_0.type == 3 then
@@ -938,7 +938,7 @@ function var_0_0.RefreshScene(arg_63_0)
 		arg_63_0.backGroundTrs_.localPosition = Vector3(var_63_7[1], var_63_7[2], var_63_7[3])
 		arg_63_0.backGroundTrs_.localEulerAngles = Vector3(0, 0, 0)
 		arg_63_0.backGroundTrs_.localScale = Vector3(11, 11, 1)
-		arg_63_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas("TextureConfig/BackgroundQuad/" .. var_63_5)
+		arg_63_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = pureGetSpriteWithoutAtlas("TextureConfig/BackgroundQuad/" .. var_63_5)
 
 		manager.ui:SetMainCamera("playerInfo", false, true)
 	end

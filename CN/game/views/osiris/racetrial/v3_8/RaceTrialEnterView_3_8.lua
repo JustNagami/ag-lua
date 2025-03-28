@@ -43,6 +43,7 @@ end
 function var_0_0.OnExit(arg_6_0)
 	manager.windowBar:HideBar()
 	arg_6_0:UnBindRedPointUI()
+	arg_6_0.battleItemList:UpdateUIList(0)
 end
 
 function var_0_0.LazyInit(arg_7_0)

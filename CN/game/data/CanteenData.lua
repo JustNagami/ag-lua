@@ -276,6 +276,8 @@ function var_0_1.UpdataDynmicPopularity(arg_21_0)
 end
 
 function var_0_1.RefreshAutoAwardInfo(arg_22_0, arg_22_1)
+	Debug.Log("RefreshAutoAwardInfo")
+
 	if not var_0_3 then
 		var_0_3 = {}
 		var_0_3[var_0_7] = {}

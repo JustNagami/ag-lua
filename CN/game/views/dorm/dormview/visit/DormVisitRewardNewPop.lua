@@ -36,7 +36,7 @@ function var_0_0.OnEnter(arg_8_0)
 
 	arg_8_0:UpdataView()
 
-	arg_8_0.titleTxt_ = GetTips("ERROR_BACKHOME_VISIT_REWARD_TITLE") .. string.format(var_0_1, DormData:GetWeekReceivedGiftNum(), DormData:GetMaxWeekReceivedGiftNum())
+	arg_8_0.titleTxt_.text = GetTips("ERROR_BACKHOME_VISIT_REWARD_TITLE") .. string.format(var_0_1, DormData:GetWeekReceivedGiftNum(), DormData:GetMaxWeekReceivedGiftNum())
 end
 
 function var_0_0.UpdataView(arg_9_0)

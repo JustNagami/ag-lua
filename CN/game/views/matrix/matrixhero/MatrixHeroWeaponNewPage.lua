@@ -130,7 +130,7 @@ end
 
 function var_0_1.UpdateView(arg_14_0)
 	if arg_14_0.servantData.id > 0 then
-		arg_14_0.portrait_.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/Portrait/" .. arg_14_0.servantData.id)
+		arg_14_0.portrait_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/WeaponServant/Portrait/" .. arg_14_0.servantData.id)
 
 		arg_14_0.singleton.viewDetail:OnRenderServant(arg_14_0.servantData, arg_14_0.heroInfo_.id)
 	else

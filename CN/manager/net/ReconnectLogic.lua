@@ -66,6 +66,7 @@ function var_0_0.ReconnectError(arg_1_0)
 			manager.ChessBoardManager = nil
 		end
 
+		QWorldMgr:DisposeQueue()
 		SetForceShowQuanquan(false)
 		manager.ui:UIEventEnabledByUI(true, false)
 		ResetSceneDataForExcehange()

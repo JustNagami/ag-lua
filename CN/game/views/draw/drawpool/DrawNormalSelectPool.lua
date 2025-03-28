@@ -1,9 +1,7 @@
 ﻿local var_0_0 = class("DrawNormalSelectPool", ReduxView)
 
 function var_0_0.OnCtor(arg_1_0, arg_1_1, arg_1_2, arg_1_3)
-	local var_1_0 = Asset.Load("Widget/System/Pool/pool_" .. arg_1_3)
-
-	arg_1_0.gameObject_ = Object.Instantiate(var_1_0, arg_1_1)
+	arg_1_0.gameObject_ = arg_1_1
 	arg_1_0.transform_ = arg_1_0.gameObject_.transform
 	arg_1_0.poolId = arg_1_2
 	arg_1_0.showId = arg_1_3

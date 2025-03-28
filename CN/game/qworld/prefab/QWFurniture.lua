@@ -56,7 +56,7 @@ end
 
 local function var_0_5(arg_6_0, arg_6_1)
 	if arg_6_1 then
-		arg_6_0.entity:AddBubbleTag(QWorldBubbleConst.BUBBLE_PRE_DEFINED_TAG.FURNITURE_INTERACT, arg_6_0.entity:GetName(), arg_6_0:GetBubbleIcon())
+		arg_6_0.entity:AddBubbleTag(QWorldBubbleConst.BUBBLE_PRE_DEFINED_TAG.FURNITURE_INTERACT, arg_6_0:GetBubbleName(), arg_6_0:GetBubbleIcon())
 	else
 		arg_6_0.entity:RemoveBubbleTag(QWorldBubbleConst.BUBBLE_PRE_DEFINED_TAG.FURNITURE_INTERACT)
 	end
@@ -86,13 +86,7 @@ local function var_0_7(arg_8_0, arg_8_1)
 end
 
 local function var_0_8(arg_9_0, arg_9_1)
-	local var_9_0 = QWorldMgr:GetQWorldEntityMgr():CreateEntity(arg_9_0, QWORLD_ENTITY_TYPE.FUNITURE)
-
-	var_9_0:AnalyThingCfg(arg_9_1)
-
-	if var_9_0.entity:GetDefaultInteract() then
-		var_9_0.entity:AddBubbleTag(QWorldBubbleConst.BUBBLE_PRE_DEFINED_TAG.FURNITURE_INTERACT, var_9_0.entity:GetName(), var_9_0:GetBubbleIcon())
-	end
+	local var_9_0 = QWorldMgr:GetQWorldEntityMgr():CreateEntity(arg_9_0, arg_9_1, QWORLD_ENTITY_TYPE.FUNITURE)
 
 	function var_9_0.entity.bubbleClick(arg_10_0)
 		if QWorldQuestGraph:HasQuestEvent(QWorldQuestConst.QUEST_EVENT.ON_BUBBLE_CLICK, var_9_0.entityId) then
@@ -130,7 +124,7 @@ local function var_0_8(arg_9_0, arg_9_1)
 			return
 		end
 
-		local var_10_0 = var_9_0.entity:GetDefaultTalk()
+		local var_10_0 = var_9_0:GetDefaultTalk()
 
 		if var_10_0 > 0 then
 			QWorldTools.SendMessageToSDK(QWorldMgr:GetActivityId(), QWorldMgr:GetMapId(), QWorldMessageType.TALK, var_10_0, "", var_9_0.entityId)
@@ -145,7 +139,8 @@ local function var_0_8(arg_9_0, arg_9_1)
 		end
 	end
 
-	var_9_0.ChangeInteractive = var_0_5
+	var_9_0:ResetChangeBubble(var_0_5)
+
 	var_9_0.OnRemoveEntity = var_0_4
 	var_9_0.InitDropEffect = var_0_6
 	var_9_0.StartStory = var_0_7

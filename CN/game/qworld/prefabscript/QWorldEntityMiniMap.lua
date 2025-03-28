@@ -1,7 +1,8 @@
 ﻿QWorldEntityMiniMapTag = {
 	Common = 1,
 	Hud = 2,
-	Task = 3
+	Thing = 3,
+	Task = 4
 }
 QWorldMiniMapBoardInfo = class("QWorldMiniMapBoardInfo")
 
@@ -22,7 +23,7 @@ function QWorldMiniMapBoardInfo.GetName(arg_3_0)
 		local var_3_2 = var_3_1 and var_3_1.main_task_id
 
 		return SandplayTaskMainCfg[var_3_2].title, SandplayTaskMainCfg[var_3_2].descrption
-	elseif QWorldEntityMiniMapTag.Hud == arg_3_0.tag then
+	elseif QWorldEntityMiniMapTag.Hud == arg_3_0.tag or QWorldEntityMiniMapTag.Thing == arg_3_0.tag then
 		local var_3_3 = arg_3_0.param
 		local var_3_4 = SandplayTagCfg[var_3_3]
 
@@ -107,25 +108,32 @@ local var_0_0 = class("QWorldEntityMiniMap")
 
 function var_0_0.GetIcon(arg_9_0, arg_9_1)
 	local var_9_0 = "TextureConfig/SandPlay/MiniIcon/"
+	local var_9_1 = "TextureConfig/SandPlay/BaseBoard/"
 
 	if QWorldEntityMiniMapTag.Task == arg_9_0 then
-		local var_9_1 = arg_9_1
-		local var_9_2 = SandplayTaskCfg[var_9_1]
-		local var_9_3 = var_9_2 and var_9_2.main_task_id
-		local var_9_4 = SandplayTaskMainCfg[var_9_3]
+		local var_9_2 = arg_9_1
+		local var_9_3 = SandplayTaskCfg[var_9_2]
+		local var_9_4 = var_9_3 and var_9_3.main_task_id
+		local var_9_5 = SandplayTaskMainCfg[var_9_4]
 
-		if QWorldQuestConst.QUEST_TASK_TYPE.MAIN == var_9_4.main_task_type then
+		if QWorldQuestConst.QUEST_TASK_TYPE.MAIN == var_9_5.main_task_type then
 			return var_9_0 .. "SandPlay_Questicon_Main", 2
-		elseif QWorldQuestConst.QUEST_TASK_TYPE.SIDE == var_9_4.main_task_type then
+		elseif QWorldQuestConst.QUEST_TASK_TYPE.SIDE == var_9_5.main_task_type then
 			return var_9_0 .. "SandPlay_Questicon_Side", 3
 		else
 			return var_9_0 .. "SandPlay_Questicon_Explore", 4
 		end
-	elseif QWorldEntityMiniMapTag.Hud == arg_9_0 then
-		local var_9_5 = arg_9_1
-		local var_9_6 = SandplayTagCfg[var_9_5]
+	elseif QWorldEntityMiniMapTag.Hud == arg_9_0 or QWorldEntityMiniMapTag.Thing == arg_9_0 then
+		local var_9_6 = arg_9_1
+		local var_9_7 = SandplayTagCfg[var_9_6]
 
-		return var_9_0 .. var_9_6.map_icon, 0
+		if var_9_7.baseboard and var_9_7.baseboard ~= "" then
+			return var_9_0 .. var_9_7.map_icon, 1, var_9_1 .. var_9_7.baseboard
+		elseif var_9_7.tag_behaviour == 1 then
+			return var_9_0 .. var_9_7.map_icon, 5
+		else
+			return var_9_0 .. var_9_7.map_icon, 1
+		end
 	else
 		return var_9_0 .. "SandPlay_icon_00001", 1
 	end
@@ -136,6 +144,7 @@ function var_0_0.Ctor(arg_10_0, arg_10_1, arg_10_2, arg_10_3)
 	arg_10_0.unit = arg_10_1.entity:AddMiniMap()
 	arg_10_0.tags = {}
 	arg_10_0.hud = 0
+	arg_10_0.thing = 0
 	arg_10_0.taskList = {}
 	arg_10_0.boardDict = {}
 end
@@ -149,10 +158,6 @@ function var_0_0.GetBoardKey(arg_11_0, arg_11_1, arg_11_2)
 end
 
 function var_0_0.AddMini(arg_12_0, arg_12_1, arg_12_2)
-	if not table.indexof(arg_12_0.tags, arg_12_1) then
-		table.insert(arg_12_0.tags, arg_12_1)
-	end
-
 	if QWorldEntityMiniMapTag.Task == arg_12_1 then
 		if not table.indexof(arg_12_0.taskList, arg_12_2) then
 			table.insert(arg_12_0.taskList, arg_12_2)
@@ -167,11 +172,17 @@ function var_0_0.AddMini(arg_12_0, arg_12_1, arg_12_2)
 
 			manager.redPoint:appendGroup(RedPointConst.QWORLD_MINI_MAP, var_12_1)
 		end
+	elseif QWorldEntityMiniMapTag.Thing == arg_12_1 then
+		arg_12_0.thing = arg_12_2
+	end
+
+	if not table.indexof(arg_12_0.tags, arg_12_1) and arg_12_0:GetMapDisplay(arg_12_1) ~= 0 then
+		table.insert(arg_12_0.tags, arg_12_1)
 	end
 
 	local var_12_2 = arg_12_0:GetBoardKey(arg_12_1, arg_12_2)
 
-	if not arg_12_0.boardDict[var_12_2] then
+	if not arg_12_0.boardDict[var_12_2] and arg_12_0:GetMapDisplay(arg_12_1) ~= 0 then
 		arg_12_0.boardDict[var_12_2] = QWorldMiniMapBoardInfo.New(arg_12_0.inst, arg_12_1, arg_12_2)
 	end
 
@@ -200,6 +211,8 @@ function var_0_0.RemoveMini(arg_13_0, arg_13_1, arg_13_2)
 			})
 		end
 
+		table.removebyvalue(arg_13_0.tags, arg_13_1)
+	elseif QWorldEntityMiniMapTag.Thing == arg_13_1 then
 		table.removebyvalue(arg_13_0.tags, arg_13_1)
 	else
 		table.removebyvalue(arg_13_0.tags, arg_13_1)
@@ -233,15 +246,17 @@ function var_0_0.UpdateDisplay(arg_14_0)
 		var_14_1 = arg_14_0.taskList[1] or 0
 	elseif QWorldEntityMiniMapTag.Hud == var_14_0 then
 		var_14_1 = arg_14_0.hud
+	elseif QWorldEntityMiniMapTag.Thing == var_14_0 then
+		var_14_1 = arg_14_0.thing
 	end
 
-	local var_14_2, var_14_3 = var_0_0.GetIcon(var_14_0, var_14_1)
+	local var_14_2, var_14_3, var_14_4 = var_0_0.GetIcon(var_14_0, var_14_1)
 
-	arg_14_0.unit:SetIcon(var_14_2, var_14_3)
+	arg_14_0.unit:SetIcon(var_14_2, var_14_3, var_14_4)
 
-	local var_14_4 = arg_14_0:GetMapDisplay(var_14_0)
+	local var_14_5 = arg_14_0:GetMapDisplay(var_14_0)
 
-	arg_14_0.unit:SetMapDisplay(var_14_4)
+	arg_14_0.unit:SetMapDisplay(var_14_5)
 end
 
 function var_0_0.GetMapDisplay(arg_15_0, arg_15_1)
@@ -251,6 +266,10 @@ function var_0_0.GetMapDisplay(arg_15_0, arg_15_1)
 		local var_15_0 = arg_15_0.hud
 
 		return SandplayTagCfg[var_15_0].map_display or 3
+	elseif QWorldEntityMiniMapTag.Thing == arg_15_1 then
+		local var_15_1 = arg_15_0.thing
+
+		return SandplayTagCfg[var_15_1].map_display or 3
 	elseif arg_15_0.inst.thingCfg then
 		return arg_15_0.inst.thingCfg.map_display or 3
 	else

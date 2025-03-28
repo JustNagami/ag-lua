@@ -121,8 +121,8 @@
 		local var_11_0 = PaperCutCfg[arg_11_1].cut_result_picture
 		local var_11_1 = PaperCutCfg[arg_11_1].cut_line_picture
 
-		arg_11_0.drawSpriteRenderer_.sprite = getSpriteWithoutAtlas("TextureConfig/EmptyDream/paperCut/" .. var_11_0)
-		arg_11_0.drawOutline_.sprite = getSpriteWithoutAtlas("TextureConfig/EmptyDream/paperCut/" .. var_11_1)
+		arg_11_0.drawSpriteRenderer_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/EmptyDream/paperCut/" .. var_11_0)
+		arg_11_0.drawOutline_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/EmptyDream/paperCut/" .. var_11_1)
 	end,
 	SetCheckPointPanel = function(arg_12_0, arg_12_1)
 		arg_12_0.paperCutManager_:LoadCheckPointPanel(arg_12_1)

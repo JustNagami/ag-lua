@@ -70,7 +70,7 @@ function var_0_0.RefreshUI(arg_10_0)
 	arg_10_0.info_ = TaskData2:GetTask(arg_10_0.taskID_)
 	arg_10_0.desc_.text = arg_10_0.cfg_.des
 	arg_10_0.taskDes_.text = arg_10_0.taskCfg_.desc
-	arg_10_0.icon_.sprite = getSpriteWithoutAtlas(arg_10_0.cfg_.icon)
+	arg_10_0.icon_.sprite = pureGetSpriteWithoutAtlas(arg_10_0.cfg_.icon)
 end
 
 function var_0_0.RefreshState(arg_11_0)

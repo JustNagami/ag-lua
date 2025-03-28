@@ -272,3 +272,103 @@ function var_0_0.CheckPreviewTaskActivity(arg_21_0)
 
 	SetActive(arg_21_0.advanceMonsterTestBtn_, var_21_3)
 end
+
+function var_0_0.SetPureMode(arg_22_0, arg_22_1, arg_22_2)
+	if arg_22_1 then
+		arg_22_0:StopViewHideTimer()
+		arg_22_0.puremodeCon_:SetSelectedState("hide")
+
+		arg_22_0.isHide_ = false
+
+		arg_22_0:RefreshHide()
+		arg_22_0.animator_:Play("HomeUI_cx")
+	else
+		arg_22_0.isHide_ = true
+
+		arg_22_0:RefreshHide()
+		arg_22_0:StartViewHideTimer()
+
+		if not arg_22_2 then
+			arg_22_0.animator_:Play("HomeUI_hide")
+		end
+
+		arg_22_0:ShowPureModeBar()
+		arg_22_0.puremodeCon_:SetSelectedState("show")
+		OperationRecorder.RecordButtonTouch("homepage_hide")
+	end
+end
+
+function var_0_0.RecordPureModeLog(arg_23_0, arg_23_1, arg_23_2)
+	local var_23_0 = manager.posterGirl:GetInteractionsTimes()
+	local var_23_1 = manager.time:GetServerTime()
+
+	if arg_23_1 then
+		SDKTools.SendMessageToSDK("duration", {
+			opt = 1,
+			duration_name = "homepage_heroshow_enjoy",
+			type = arg_23_2
+		})
+	else
+		local var_23_2 = var_23_0 - (arg_23_0.lastInteractionsTimes or 0)
+		local var_23_3 = arg_23_0.lastPureModeTime and var_23_1 - arg_23_0.lastPureModeTime or 0
+
+		SDKTools.SendMessageToSDK("duration", {
+			opt = 2,
+			duration_name = "homepage_heroshow_enjoy",
+			touch_times = var_23_2,
+			duration = var_23_3
+		})
+	end
+
+	arg_23_0.lastInteractionsTimes = var_23_0
+	arg_23_0.lastPureModeTime = var_23_1
+end
+
+function var_0_0.SetPureModeBtnActive(arg_24_0, arg_24_1, arg_24_2)
+	if arg_24_1 then
+		arg_24_0:ShowPureModeBar()
+	else
+		manager.windowBar:SwitchBar({})
+	end
+
+	SetActive(arg_24_0.appearViewBtn_.gameObject, false)
+	SetActive(arg_24_0.btn_arrow_hide2Btn_.gameObject, arg_24_1)
+end
+
+function var_0_0.AdaptLeft(arg_25_0)
+	if arg_25_0.leftBtnPos_ == nil then
+		arg_25_0.leftBtnPos_ = arg_25_0.puremode_leftGo_.transform.anchoredPosition
+	end
+
+	local var_25_0 = arg_25_0.leftBtnPos_
+
+	arg_25_0.puremode_leftGo_.transform.anchoredPosition = Vector2.New(var_25_0.x + var_0_0.VIEW_ADAPT_DISTANCE, var_25_0.y)
+
+	var_0_0.super.AdaptLeft(arg_25_0)
+end
+
+function var_0_0.AdaptRight(arg_26_0)
+	if arg_26_0.rightBtnPos_ == nil then
+		arg_26_0.rightBtnPos_ = arg_26_0.btn_youBtn_.transform.anchoredPosition
+	end
+
+	local var_26_0 = arg_26_0.rightBtnPos_
+
+	arg_26_0.btn_youBtn_.transform.anchoredPosition = Vector2.New(var_26_0.x - var_0_0.VIEW_ADAPT_DISTANCE, var_26_0.y)
+
+	var_0_0.super.AdaptRight(arg_26_0)
+end
+
+function var_0_0.ShowPureModeBar(arg_27_0)
+	manager.windowBar:SwitchBar({
+		BACK_BAR
+	})
+	manager.windowBar:RegistBackCallBack(function()
+		arg_27_0.isPureMode_ = false
+
+		arg_27_0:SetPureMode(true)
+		arg_27_0:RecordPureModeLog(false)
+		arg_27_0:InitBar()
+		PlayerData:SetIsDeskMode(false)
+	end)
+end

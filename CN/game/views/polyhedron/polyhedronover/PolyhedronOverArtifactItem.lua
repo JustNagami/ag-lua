@@ -41,7 +41,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1)
 
 	local var_6_0 = PolyhedronArtifactCfg[arg_6_0.id]
 
-	arg_6_0.icon_.sprite = getSpriteWithoutAtlas(PolyhedronConst.ARTIFACT_ICON_PATH .. var_6_0.icon)
+	arg_6_0.icon_.sprite = pureGetSpriteWithoutAtlas(PolyhedronConst.ARTIFACT_ICON_PATH .. var_6_0.icon)
 end
 
 function var_0_0.SetActive(arg_7_0, arg_7_1)

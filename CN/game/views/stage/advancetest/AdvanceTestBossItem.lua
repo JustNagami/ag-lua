@@ -49,7 +49,7 @@ function var_0_0.RefreshUI(arg_6_0, arg_6_1)
 	}))
 	arg_6_0.descText_.text = var_6_3.desc
 	arg_6_0.riskText_.text = arg_6_0:GetTipsByCfg(var_6_1)
-	arg_6_0.bossImg_.sprite = getSpriteWithoutAtlas(SpritePathCfg.CollectBoss.path .. var_6_2)
+	arg_6_0.bossImg_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.CollectBoss.path .. var_6_2)
 
 	local var_6_4 = arg_6_0:SetLimitTextTop(var_6_1)
 	local var_6_5 = string.format(GetTips("TEST_CHALLENGE_TIPS_1"), arg_6_0:GetStrByCharacterStar(var_6_1.character), var_6_1.weapon)
@@ -76,6 +76,10 @@ function var_0_0.SetLimitTextTop(arg_7_0, arg_7_1)
 
 		for iter_7_1, iter_7_2 in pairs(var_7_5) do
 			var_7_6 = var_7_6 .. HeroCfg[iter_7_2].name .. "·" .. HeroCfg[iter_7_2].suffix .. " "
+
+			if var_7_4 == 8 then
+				break
+			end
 		end
 
 		local var_7_7 = string.gsub(var_7_6, "^[%s]*(.-)[%s]*$", "%1")
@@ -94,6 +98,14 @@ function var_0_0.SetLimitTextTop(arg_7_0, arg_7_1)
 			var_7_0 = var_7_0 .. string.format(GetTips("TEST_CHALLENGE_OTHER_HERO_LIMIT_2"), var_7_7)
 		elseif var_7_4 == 7 then
 			var_7_0 = var_7_0 .. string.format(GetTips("TEST_CHALLENGE_HERO_LIST_LIMIT_2"), var_7_7)
+		elseif var_7_4 == 8 then
+			local var_7_8 = var_7_5[1]
+			local var_7_9 = var_7_5[2]
+			local var_7_10 = HeroCfg[var_7_8].astrolabe[var_7_9]
+			local var_7_11 = HeroAstrolabeCfg.get_id_list_by_hero_astrolabe_suit_id[var_7_10]
+			local var_7_12 = HeroAstrolabeCfg[var_7_11[1]].suit_name
+
+			var_7_0 = var_7_0 .. string.format(GetTips("TEST_CHALLENGE_HERO_ASTROLABE_LIMIT"), var_7_7, var_7_12)
 		end
 
 		if iter_7_0 ~= var_7_2 then

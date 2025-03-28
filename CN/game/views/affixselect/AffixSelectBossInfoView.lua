@@ -64,7 +64,7 @@ function var_0_0.UpdateView(arg_14_0)
 
 	arg_14_0.nameText_.text = GetMonsterName(arg_14_0.bossIDList_)
 	arg_14_0.raceText_.text = GetTips("RACE_TYPE_" .. var_14_0.race)
-	arg_14_0.icon_.sprite = getSpriteWithoutAtlas(string.format("TextureConfig/VersionUI/DarkFlameUI/Boss_QualsDrill/DarkFlame_boss_0000%s", arg_14_0.params_.index))
+	arg_14_0.icon_.sprite = pureGetSpriteWithoutAtlas(string.format("TextureConfig/VersionUI/DarkFlameUI/Boss_QualsDrill/DarkFlame_boss_0000%s", arg_14_0.params_.index))
 	arg_14_0.riskText_.text = NumberTools.IntToRomam(var_14_0.type + 1)
 
 	arg_14_0:UpdateData()

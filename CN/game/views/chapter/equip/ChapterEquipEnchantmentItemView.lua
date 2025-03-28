@@ -5,6 +5,14 @@ local var_0_0 = class("ChapterEquipEnchantmentItemView", ChapterChallengeItemVie
 function var_0_0.AddRedPoint(arg_1_0)
 	arg_1_0.multiTag_ = ActivityMultiRewardData:GetMultiRatioByChapterOrToggle(nil, arg_1_0.chapterClientID_, true)
 
+	if arg_1_0.multiTag_ <= 0 and RegressionDataNew:IsRegressionOpen() then
+		local var_1_0, var_1_1, var_1_2 = RegressionDataNew:GetMultipleValue()
+
+		if var_1_0 and var_1_0 > 0 and var_1_2 then
+			arg_1_0.multiTag_ = var_1_2
+		end
+	end
+
 	if arg_1_0.multiTag_ <= 0 then
 		SetActive(arg_1_0.multiGo_, false)
 		manager.redPoint:bindUIandKey(arg_1_0.panelTf_, RedPointConst.DAILY_EQUIP_ENCHANT)
@@ -13,10 +21,10 @@ function var_0_0.AddRedPoint(arg_1_0)
 
 		SetActive(arg_1_0.multiGo_, true)
 
-		local var_1_0 = arg_1_0.panelTf_:Find("notice_img")
+		local var_1_3 = arg_1_0.panelTf_:Find("notice_img")
 
-		if var_1_0 then
-			SetActive(var_1_0.gameObject, false)
+		if var_1_3 then
+			SetActive(var_1_3.gameObject, false)
 		end
 	end
 end

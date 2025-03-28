@@ -92,6 +92,28 @@ local var_0_4 = {
 	Keypad4 = "Pad4",
 	Keypad1 = "Pad1"
 }
+local var_0_5 = {
+	"Alpha0",
+	"Alpha1",
+	"Alpha2",
+	"Alpha3",
+	"Alpha4",
+	"Alpha5",
+	"Alpha6",
+	"Alpha7",
+	"Alpha8",
+	"Alpha9",
+	"Keypad0",
+	"Keypad1",
+	"Keypad2",
+	"Keypad3",
+	"Keypad4",
+	"Keypad5",
+	"Keypad6",
+	"Keypad7",
+	"Keypad8",
+	"Keypad9"
+}
 
 function GetKeyCodeMappedName(arg_5_0)
 	local var_5_0 = "KEYCODE_" .. string.upper(arg_5_0)
@@ -106,13 +128,13 @@ function GetKeyCodeMappedName(arg_5_0)
 	return arg_5_0
 end
 
-local var_0_5 = {}
-local var_0_6
+local var_0_6 = {}
+local var_0_7
 
 function var_0_0.StopDeviceAddTimer()
-	var_0_6:Stop()
+	var_0_7:Stop()
 
-	var_0_6 = nil
+	var_0_7 = nil
 end
 
 function var_0_0.OpenGamepadSelectWin(arg_7_0)
@@ -127,16 +149,16 @@ end
 
 function OnGamepadDeviceAdded(arg_8_0, arg_8_1)
 	print("OnGamepadDeviceAdded: " .. arg_8_1)
-	table.insert(var_0_5, {
+	table.insert(var_0_6, {
 		arg_8_1,
 		arg_8_0
 	})
 
-	if var_0_6 then
+	if var_0_7 then
 		return
 	end
 
-	var_0_6 = Timer.New(function()
+	var_0_7 = Timer.New(function()
 		if var_0_0.selectWin_ then
 			if manager.guide:IsPlaying() then
 				var_0_0.selectWin_:CloseWindow()
@@ -145,7 +167,7 @@ function OnGamepadDeviceAdded(arg_8_0, arg_8_1)
 			return
 		end
 
-		if #var_0_5 <= 0 then
+		if #var_0_6 <= 0 then
 			var_0_0.StopDeviceAddTimer()
 
 			return
@@ -155,7 +177,7 @@ function OnGamepadDeviceAdded(arg_8_0, arg_8_1)
 			return
 		end
 
-		local var_9_0 = var_0_5[1]
+		local var_9_0 = var_0_6[1]
 
 		if manager.managerInit then
 			local var_9_1 = LuaForGamepad.GetGamepadType()
@@ -165,12 +187,12 @@ function OnGamepadDeviceAdded(arg_8_0, arg_8_1)
 					var_0_0.OpenGamepadSelectWin(var_9_0.gamepadType)
 				end
 
-				table.clean(var_0_5)
+				table.clean(var_0_6)
 			end
 		end
 	end, 1, -1)
 
-	var_0_6:Start()
+	var_0_7:Start()
 end
 
 function OnGamepadDeviceRemoved(arg_10_0, arg_10_1)
@@ -178,25 +200,25 @@ function OnGamepadDeviceRemoved(arg_10_0, arg_10_1)
 
 	local var_10_0
 
-	for iter_10_0, iter_10_1 in ipairs(var_0_5) do
+	for iter_10_0, iter_10_1 in ipairs(var_0_6) do
 		if iter_10_1[1] == arg_10_1 then
 			var_10_0 = iter_10_1
 		end
 	end
 
 	if var_10_0 then
-		table.removebyvalue(var_0_5, var_10_0)
+		table.removebyvalue(var_0_6, var_10_0)
 	end
 end
 
-local var_0_7
+local var_0_8
 
-local function var_0_8()
-	if var_0_7 then
+local function var_0_9()
+	if var_0_8 then
 		return
 	end
 
-	var_0_7 = {
+	var_0_8 = {
 		Insert = true,
 		Numlock = true,
 		Escape = true,
@@ -240,13 +262,17 @@ local function var_0_8()
 		}
 	end
 
-	table.merge(var_0_7, var_11_0)
+	table.merge(var_0_8, var_11_0)
 end
 
-function var_0_0.IsKeyNotAllow(arg_12_0, arg_12_1)
-	var_0_8()
+function var_0_0.IsKeyNotAllow(arg_12_0, arg_12_1, arg_12_2)
+	if arg_12_2 == CONTROL_TYPES.Operation and table.keyof(var_0_5, arg_12_1) then
+		return true
+	end
 
-	if var_0_7[arg_12_1] then
+	var_0_9()
+
+	if var_0_8[arg_12_1] then
 		return true
 	end
 
@@ -255,7 +281,7 @@ function var_0_0.IsKeyNotAllow(arg_12_0, arg_12_1)
 	if var_12_0 then
 		local var_12_1 = var_12_0 .. arg_12_1
 
-		if var_0_7[var_12_1] then
+		if var_0_8[var_12_1] then
 			return true
 		end
 	end
@@ -263,7 +289,7 @@ function var_0_0.IsKeyNotAllow(arg_12_0, arg_12_1)
 	return false
 end
 
-local var_0_9 = {
+local var_0_10 = {
 	Sys_Confirm = true,
 	Sys_Home = true,
 	Sys_BattlePause = true,
@@ -273,7 +299,7 @@ local var_0_9 = {
 }
 
 function var_0_0.IsOpNotAllow(arg_13_0, arg_13_1)
-	if var_0_9[arg_13_1] then
+	if var_0_10[arg_13_1] then
 		return true
 	end
 
@@ -308,7 +334,7 @@ function var_0_0.ForceSelectKeyboard(arg_19_0)
 	LuaForGamepad.ForceSelectKeyboard(arg_19_0 or HID_TYPES.None)
 end
 
-local var_0_10 = "InputRemapNoticeEnableList"
+local var_0_11 = "InputRemapNoticeEnableList"
 
 function var_0_0.SetRemapNotice(arg_20_0, arg_20_1)
 	LuaForGamepad.SetNeedRemapNotice(arg_20_0, arg_20_1)
@@ -319,7 +345,7 @@ function var_0_0.GetRemapNotice(arg_21_0)
 end
 
 function var_0_0.ResetRemapNotice()
-	PlayerPrefs.DeleteKey(var_0_10)
+	PlayerPrefs.DeleteKey(var_0_11)
 
 	local var_22_0 = var_0_0.GetRemapNotice(HID_TYPES.None)
 
@@ -331,7 +357,7 @@ function var_0_0.HasSetRemapNotice()
 		return true
 	end
 
-	if PlayerPrefs.HasKey(var_0_10) then
+	if PlayerPrefs.HasKey(var_0_11) then
 		return true
 	end
 

@@ -37,7 +37,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1)
 
 	local var_6_0 = ActivityFireWorkCfg[arg_6_1]
 
-	arg_6_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/EmptyDream/letter_role_title/role_small/" .. var_6_0.icon)
+	arg_6_0.m_icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/EmptyDream/letter_role_title/role_small/" .. var_6_0.icon)
 
 	arg_6_0:RefrenTime()
 

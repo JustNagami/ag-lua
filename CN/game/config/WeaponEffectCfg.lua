@@ -489,7 +489,7 @@
 		simple_strength_description = {}
 	},
 	[420] = {
-		simple_description = "对处于异常状态的敌人命中瞬间伤害提高。\n异常状态包括：受创，灼烧，眩晕，冰冻，禁锢，混乱。",
+		simple_description = "对处于异常状态的敌人命中瞬间伤害提高。\n异常状态包括：受创、灼烧、潮蚀、冻伤、静电、切割、衍射、衰变、重力、熔断、水牢、冰冻、麻痹、风压、眩光、黑暗、眩晕、禁锢、混乱。",
 		id = 420,
 		description = {
 			500000420
@@ -640,35 +640,6 @@
 		spec_char = {},
 		strengthen_description = {},
 		simple_strength_description = {}
-	},
-	[109901] = {
-		simple_description = "当朔望·月读装备时，获得以下效果。\n技能三<color=#297DE0>「朔望·月夜见」</color>改变为<color=#297DE0>「朔望·末月」</color>。\n神能为满时，重置<color=#297DE0>「朔望·末月」</color>的冷却时间。\n<color=#297DE0>「望·末月」</color>的蓄力时间缩短，副刀波伤害提高。",
-		id = 109901,
-		description = {
-			500109901
-		},
-		level_param = {
-			{
-				120,
-				150,
-				180,
-				210,
-				240,
-				270,
-				300
-			}
-		},
-		spec_char = {
-			1099
-		},
-		strengthen_description = {
-			109941,
-			220109901
-		},
-		simple_strength_description = {
-			109941,
-			"当朔望·月读装备时，获得以下效果。\n技能三<color=#297DE0>「朔望·月夜见」</color>改变为<color=#297DE0>「朔望·末月」</color>。\n普通攻击每次命中时额外获得神能。蓄力时获得硬直效果。\n神能为满时，重置<color=#297DE0>「朔望·末月」</color>的冷却时间。\n<color=#297DE0>「望·末月」</color>的蓄力时间缩短，基础伤害提高。"
-		}
 	},
 	[103801] = {
 		simple_description = "当羽灼·赫拉装备时，获得以下效果。\n技能二<color=#297DE0>「炽拥」</color>改变为<color=#297DE0>「灼舞」</color>。\n<color=#297DE0>「灼舞」</color>对处于灼烧状态的敌人伤害提高。",
@@ -887,6 +858,35 @@
 		simple_strength_description = {
 			109341,
 			"当觅影·国常立装备时，获得以下效果。\n<color=#297DE0>「天之持」</color>、<color=#297DE0>「地之持」</color>的冷却时间缩短。\n施放<color=#297DE0>「天之持」</color>后，对锁定敌人进行一次手里剑袭击，造成物理属性伤害；施放<color=#297DE0>「地之持」</color>后，对周围的敌人进行一次范围性的冲击，造成物理属性伤害。\n随着专属钥从等级提升，<color=#297DE0>「忍法」</color>独立伤害提高。\n施放奥义时不再需要消耗<material=underline c=#297DE0 h=2 event=terminology args=(109301)>「忍持」</material>。"
+		}
+	},
+	[109901] = {
+		simple_description = "当朔望·月读装备时，获得以下效果。\n技能三<color=#297DE0>「朔望·月夜见」</color>改变为<color=#297DE0>「朔望·末月」</color>。\n神能为满时，重置<color=#297DE0>「朔望·末月」</color>的冷却时间。\n<color=#297DE0>「望·末月」</color>的蓄力时间缩短，副刀波伤害提高。",
+		id = 109901,
+		description = {
+			500109901
+		},
+		level_param = {
+			{
+				120,
+				150,
+				180,
+				210,
+				240,
+				270,
+				300
+			}
+		},
+		spec_char = {
+			1099
+		},
+		strengthen_description = {
+			109941,
+			220109901
+		},
+		simple_strength_description = {
+			109941,
+			"当朔望·月读装备时，获得以下效果。\n技能三<color=#297DE0>「朔望·月夜见」</color>改变为<color=#297DE0>「朔望·末月」</color>。\n普通攻击每次命中时额外获得神能。蓄力时获得硬直效果。\n神能为满时，重置<color=#297DE0>「朔望·末月」</color>的冷却时间。\n<color=#297DE0>「望·末月」</color>的蓄力时间缩短，基础伤害提高。"
 		}
 	},
 	[101901] = {
@@ -1521,7 +1521,7 @@
 		}
 	},
 	[113801] = {
-		simple_description = "当黎幻·赫拉装备时，获得以下效果。\n闪避效果<color=#297DE0>「光幻瞬变」</color>改变为<color=#297DE0>「浮光幻羽」</color>。\n闪避必定触发闪避效果；可通过长按闪避键，消耗能量额外触发一次闪避效果，该效果有自身的冷却时间。受到<color=#297DE0>「曙光祈愿」</color>影响的自身或者队友，处于零时空间时，造成的伤害提高。",
+		simple_description = "当黎幻·赫拉装备时，获得以下效果。\n闪避效果<color=#297DE0>「光幻瞬变」</color>改变为<color=#297DE0>「浮光幻羽」</color>。\n闪避必定触发闪避效果；可通过长按闪避键，消耗能量额外触发一次闪避效果，该效果有自身的冷却时间。\n受到<color=#297DE0>「曙光祈愿」</color>影响的自身或者队友，处于零时空间时，命中瞬间伤害提高。",
 		id = 113801,
 		description = {
 			500113801
@@ -1540,8 +1540,14 @@
 		spec_char = {
 			1138
 		},
-		strengthen_description = {},
-		simple_strength_description = {}
+		strengthen_description = {
+			113841,
+			220113801
+		},
+		simple_strength_description = {
+			113841,
+			"当黎幻·赫拉装备时，获得以下效果。\n独立伤害提高。\n每秒额外获得能量、奥义值。\n闪避<color=#297DE0>「光幻瞬变」</color>改变为<color=#297DE0>「浮光幻羽」</color>。\n闪避必定触发闪避效果；长按闪避可额外触发闪避效果，该效果的触发间隔时间与自身闪避效果冷却时间相同。\n受到<color=#297DE0>「曙光祈愿」</color>影响的自身或者队友，处于零时空间时，命中瞬间伤害提高。\n施放<color=#297DE0>「黄道天枢」</color>会额外消耗剩余的能量，额外消耗的能量不低于一定值时，命中瞬间会心率提高。\n携带单人奥义时获得额外的效果：奥义值为满且不处于冷却状态时，给全队伍施加伤害提高。"
+		}
 	},
 	[105601] = {
 		simple_description = "当雷獠·伽梨装备时，获得以下效果。\n出场时、自身触发闪避效果时、进入修正空间时，获得一次强化效果。\n每次施放强化效果时，攻击力提高。\n强化<color=#297DE0>「神怒·雷织」</color>的额外踢击以及强化<color=#297DE0>「神怒·千雳」</color>的蓄力不会被闪避打断，闪避之后点击技能键会继续踢击和蓄力。",
@@ -4010,6 +4016,187 @@
 		strengthen_description = {},
 		simple_strength_description = {}
 	},
+	[108501] = {
+		simple_description = "当绮望·诗蔻蒂装备时，获得以下效果。\n独立伤害提高。\n神格<color=#297DE0>「空白的记忆·梦境」</color>获得额外的效果：进入<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(108504)>「化身」</material></color>的攻击命中不处于控制抗性状态的且锁定的敌人时，会尽可能地随机附加短暂的且当前未被附加的控制效果；敌人进入控制抗性状态时，根据进入控制抗性状态的属性种类数量，自身独立伤害提高。\n神格<color=#297DE0>「唯一的心愿·命运」</color>获得额外的效果：施放奥义时，全队伍会心率提高、全属性伤害提高。\n神格<color=#297DE0>「同行的誓言·辟路」</color>获得额外的效果：技能一、二、三基础伤害提高。",
+		id = 108501,
+		description = {
+			500108501
+		},
+		level_param = {
+			{
+				80,
+				100,
+				120,
+				140,
+				160,
+				180,
+				200
+			},
+			{
+				125,
+				125,
+				125,
+				125,
+				125,
+				125,
+				125
+			},
+			{
+				400,
+				400,
+				400,
+				400,
+				400,
+				400,
+				400
+			},
+			{
+				100,
+				125,
+				150,
+				175,
+				200,
+				225,
+				250
+			},
+			{
+				80,
+				100,
+				120,
+				140,
+				160,
+				180,
+				200
+			},
+			{
+				250,
+				250,
+				250,
+				250,
+				250,
+				250,
+				250
+			},
+			{
+				160,
+				200,
+				240,
+				280,
+				320,
+				360,
+				400
+			}
+		},
+		spec_char = {
+			1085
+		},
+		strengthen_description = {},
+		simple_strength_description = {}
+	},
+	[107301] = {
+		simple_description = "当巧构·麟钰装备时，获得以下效果。\n出场时，根据自身能量上限，全队伍伤害提高。\n施放「绝影阵」时，全队伍风属性修正者会心率提高。\n璇玑裁风刃会对命中的敌人附加风属性抗性降低。\n神格<color=#297DE0>「显圣昭灵·瑞应」</color>获得额外的效果：获得<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107307)>「含仁」</material></color>状态时，对全队伍附加<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107308)>「行矩」</material></color>状态。\n神格<color=#297DE0>「明王吉征·振公」</color>获得额外的效果：获得<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107308)>「行矩」</material></color>状态时，对全队伍附加<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107307)>「含仁」</material></color>状态。\n神格<color=#297DE0>「中土兽伯·定方」</color>获得额外的效果：<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107307)>「含仁」</material></color>状态改变为风属性伤害提高；<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107308)>「行矩」</material></color>状态改变为独立伤害提高。",
+		id = 107301,
+		description = {
+			500107301
+		},
+		level_param = {
+			{
+				10,
+				10,
+				10,
+				10,
+				10,
+				10,
+				10
+			},
+			{
+				300,
+				300,
+				300,
+				300,
+				300,
+				300,
+				300
+			},
+			{
+				100,
+				125,
+				150,
+				175,
+				200,
+				225,
+				250
+			},
+			{
+				120,
+				120,
+				120,
+				120,
+				120,
+				120,
+				120
+			},
+			{
+				160,
+				200,
+				240,
+				280,
+				320,
+				360,
+				400
+			},
+			{
+				120,
+				120,
+				120,
+				120,
+				120,
+				120,
+				120
+			},
+			{
+				300,
+				300,
+				300,
+				300,
+				300,
+				300,
+				300
+			},
+			{
+				360,
+				360,
+				360,
+				360,
+				360,
+				360,
+				360
+			},
+			{
+				200,
+				200,
+				200,
+				200,
+				200,
+				200,
+				200
+			},
+			{
+				360,
+				360,
+				360,
+				360,
+				360,
+				360,
+				360
+			}
+		},
+		spec_char = {
+			1073
+		},
+		strengthen_description = {},
+		simple_strength_description = {}
+	},
 	all = {
 		401,
 		402,
@@ -4036,13 +4223,13 @@
 		423,
 		424,
 		425,
-		109901,
 		103801,
 		103901,
 		104802,
 		106601,
 		108401,
 		109301,
+		109901,
 		101901,
 		108001,
 		105001,
@@ -4104,6 +4291,8 @@
 		124801,
 		113301,
 		103401,
-		101201
+		101201,
+		108501,
+		107301
 	}
 }

@@ -163,7 +163,7 @@ function var_0_1.RefreshCommonUI(arg_10_0)
 
 	arg_10_0.nameLabel_.text = string.format("%s", arg_10_0.skinCfg.name)
 	arg_10_0.titleLabel_.text = ItemTools.getItemName(var_10_0.id)
-	arg_10_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_10_0.skinCfg.picture_id)
+	arg_10_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_10_0.skinCfg.picture_id)
 
 	local var_10_1, var_10_2, var_10_3 = ShopTools.IsOnDiscountArea(arg_10_0.goodID)
 
@@ -179,7 +179,7 @@ function var_0_1.RefreshDlcUI(arg_11_0)
 	arg_11_0.titleLabel_.text = ""
 
 	if arg_11_0.itemCfg and ItemConst.ITEM_TYPE.SCENE == arg_11_0.itemCfg.type then
-		arg_11_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_11_0.itemCfg.param[1])
+		arg_11_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_11_0.itemCfg.param[1])
 	else
 		arg_11_0.icon_.sprite = nil
 	end

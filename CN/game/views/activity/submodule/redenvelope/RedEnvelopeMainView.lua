@@ -145,7 +145,7 @@ function var_0_0.Refresh(arg_15_0, arg_15_1)
 	local var_15_0 = arg_15_0.curSelectDay + 1000
 
 	arg_15_0.hero_id = ActivitySpringRedEnvelopeCfg[var_15_0].letter_people
-	arg_15_0.headIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_3_10/SandPlay_3_10/SandPlay_3_10_RedEnvelope/RedEnvelope_" .. arg_15_0.hero_id)
+	arg_15_0.headIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_3_10/SandPlay_3_10/SandPlay_3_10_RedEnvelope/RedEnvelope_" .. arg_15_0.hero_id)
 
 	SetActive(arg_15_0.talkGo_, false)
 	SetActive(arg_15_0.characterGo_, false)

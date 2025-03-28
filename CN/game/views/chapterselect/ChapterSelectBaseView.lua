@@ -74,11 +74,7 @@ function var_0_0.DragFun(arg_9_0, arg_9_1, arg_9_2)
 		local var_9_2 = ChapterClientCfg[var_9_1]
 		local var_9_3 = SpritePathCfg.ChapterPaint.path .. var_9_2.chapter_paint
 
-		getSpriteWithoutAtlasAsync(var_9_3, function(arg_10_0)
-			if arg_9_0.chapterBehindImage_ then
-				arg_9_0.chapterBehindImage_.sprite = arg_10_0
-			end
-		end)
+		SetSpriteWithoutAtlasAsync(arg_9_0.chapterBehindImage_, var_9_3)
 
 		arg_9_0.nextChapterClientID_ = var_9_1
 	end
@@ -89,194 +85,183 @@ function var_0_0.DragFun(arg_9_0, arg_9_1, arg_9_2)
 	arg_9_0.chapterBehindCanvasGroup_.alpha = var_9_4
 end
 
-function var_0_0.EndDragFun(arg_11_0, arg_11_1, arg_11_2)
-	local var_11_0 = arg_11_2.position.x - arg_11_2.pressPosition.x
+function var_0_0.EndDragFun(arg_10_0, arg_10_1, arg_10_2)
+	local var_10_0 = arg_10_2.position.x - arg_10_2.pressPosition.x
 
-	if ChapterTools.GetNeighborClientID(arg_11_0.selectChapterClientID_, var_11_0 < 0) == arg_11_0.selectChapterClientID_ then
+	if ChapterTools.GetNeighborClientID(arg_10_0.selectChapterClientID_, var_10_0 < 0) == arg_10_0.selectChapterClientID_ then
 		return
 	end
 
-	if math.abs(var_11_0) > var_0_0.MIN_DRAG_LENGTH then
-		arg_11_0.selectChapterClientID_ = arg_11_0.nextChapterClientID_
-		arg_11_0.nextChapterClientID_ = nil
+	if math.abs(var_10_0) > var_0_0.MIN_DRAG_LENGTH then
+		arg_10_0.selectChapterClientID_ = arg_10_0.nextChapterClientID_
+		arg_10_0.nextChapterClientID_ = nil
 
-		BattleFieldData:SetCacheChapterClient(BattleConst.TOGGLE.PLOT, arg_11_0.selectChapterClientID_)
-		arg_11_0:RefreshData()
+		BattleFieldData:SetCacheChapterClient(BattleConst.TOGGLE.PLOT, arg_10_0.selectChapterClientID_)
+		arg_10_0:RefreshData()
 
-		if math.abs(var_11_0) > var_0_0.MAX_DRAG_LENGTH then
-			arg_11_0:RefreshChapterUI()
-			arg_11_0:SwitchImageOver()
+		if math.abs(var_10_0) > var_0_0.MAX_DRAG_LENGTH then
+			arg_10_0:RefreshChapterUI()
+			arg_10_0:SwitchImageOver()
 		else
-			local var_11_1 = (var_0_0.MAX_DRAG_LENGTH - math.abs(var_11_0)) / var_0_0.MAX_DRAG_LENGTH * var_0_0.SWITCH_STAGE_TIME
+			local var_10_1 = (var_0_0.MAX_DRAG_LENGTH - math.abs(var_10_0)) / var_0_0.MAX_DRAG_LENGTH * var_0_0.SWITCH_STAGE_TIME
 
-			arg_11_0.leanTweenHandler_ = LeanTween.value(arg_11_0.chapterFrontImage_.gameObject, arg_11_0.chapterFrontCanvasGroup_.alpha, 0, var_11_1)
+			arg_10_0.leanTweenHandler_ = LeanTween.value(arg_10_0.chapterFrontImage_.gameObject, arg_10_0.chapterFrontCanvasGroup_.alpha, 0, var_10_1)
 
-			arg_11_0.leanTweenHandler_:setOnUpdate(LuaHelper.FloatAction(function(arg_12_0)
-				arg_11_0.chapterFrontCanvasGroup_.alpha = arg_12_0
-				arg_11_0.chapterBehindCanvasGroup_.alpha = 1 - arg_12_0
+			arg_10_0.leanTweenHandler_:setOnUpdate(LuaHelper.FloatAction(function(arg_11_0)
+				arg_10_0.chapterFrontCanvasGroup_.alpha = arg_11_0
+				arg_10_0.chapterBehindCanvasGroup_.alpha = 1 - arg_11_0
 			end))
-			arg_11_0.leanTweenHandler_:setOnComplete(System.Action(function()
-				arg_11_0:RefreshChapterUI()
-				arg_11_0:SwitchImageOver()
-				LeanTween.cancel(arg_11_0.chapterFrontImage_.gameObject)
-				arg_11_0.leanTweenHandler_:setOnUpdate(nil):setOnComplete(nil)
+			arg_10_0.leanTweenHandler_:setOnComplete(System.Action(function()
+				arg_10_0:RefreshChapterUI()
+				arg_10_0:SwitchImageOver()
+				LeanTween.cancel(arg_10_0.chapterFrontImage_.gameObject)
+				arg_10_0.leanTweenHandler_:setOnUpdate(nil):setOnComplete(nil)
 
-				arg_11_0.leanTweenHandler_ = nil
+				arg_10_0.leanTweenHandler_ = nil
 			end))
 		end
 	else
-		local var_11_2 = (1 - (var_0_0.MIN_DRAG_LENGTH - math.abs(var_11_0)) / var_0_0.MIN_DRAG_LENGTH) * 0.8
+		local var_10_2 = (1 - (var_0_0.MIN_DRAG_LENGTH - math.abs(var_10_0)) / var_0_0.MIN_DRAG_LENGTH) * 0.8
 
-		arg_11_0.leanTweenHandler_ = LeanTween.value(arg_11_0.chapterFrontImage_.gameObject, arg_11_0.chapterFrontCanvasGroup_.alpha, 1, var_11_2)
+		arg_10_0.leanTweenHandler_ = LeanTween.value(arg_10_0.chapterFrontImage_.gameObject, arg_10_0.chapterFrontCanvasGroup_.alpha, 1, var_10_2)
 
-		arg_11_0.leanTweenHandler_:setOnUpdate(LuaHelper.FloatAction(function(arg_14_0)
-			arg_11_0.chapterFrontCanvasGroup_.alpha = arg_14_0
-			arg_11_0.chapterBehindCanvasGroup_.alpha = 1 - arg_14_0
+		arg_10_0.leanTweenHandler_:setOnUpdate(LuaHelper.FloatAction(function(arg_13_0)
+			arg_10_0.chapterFrontCanvasGroup_.alpha = arg_13_0
+			arg_10_0.chapterBehindCanvasGroup_.alpha = 1 - arg_13_0
 		end))
-		arg_11_0.leanTweenHandler_:setOnComplete(System.Action(function()
-			LeanTween.cancel(arg_11_0.chapterFrontImage_.gameObject)
-			arg_11_0.leanTweenHandler_:setOnUpdate(nil):setOnComplete(nil)
+		arg_10_0.leanTweenHandler_:setOnComplete(System.Action(function()
+			LeanTween.cancel(arg_10_0.chapterFrontImage_.gameObject)
+			arg_10_0.leanTweenHandler_:setOnUpdate(nil):setOnComplete(nil)
 
-			arg_11_0.leanTweenHandler_ = nil
+			arg_10_0.leanTweenHandler_ = nil
 		end))
 	end
 end
 
-function var_0_0.PointerUpFun(arg_16_0, arg_16_1, arg_16_2)
-	if arg_16_2.dragging then
+function var_0_0.PointerUpFun(arg_15_0, arg_15_1, arg_15_2)
+	if arg_15_2.dragging then
 		return
 	end
 
-	local var_16_0 = arg_16_0.selectChapterClientID_
-	local var_16_1 = BattleFieldData:GetCacheChapter(var_16_0)
-	local var_16_2, var_16_3 = ChapterTools.IsFinishPreChapter(var_16_1)
+	local var_15_0 = arg_15_0.selectChapterClientID_
+	local var_15_1 = BattleFieldData:GetCacheChapter(var_15_0)
+	local var_15_2, var_15_3 = ChapterTools.IsFinishPreChapter(var_15_1)
 
-	if not var_16_2 then
-		ShowTips(ChapterTools.GetChapterLockText(var_16_1, var_16_3))
+	if not var_15_2 then
+		ShowTips(ChapterTools.GetChapterLockText(var_15_1, var_15_3))
 
 		return
 	end
 
-	ChapterTools.GotoChapterSection(var_16_1)
+	ChapterTools.GotoChapterSection(var_15_1)
 end
 
-function var_0_0.BeginToggleDragFun(arg_17_0, arg_17_1, arg_17_2)
-	arg_17_0:StopMoveTimer()
-	arg_17_0.scrollView_:OnBeginDrag(arg_17_2)
+function var_0_0.BeginToggleDragFun(arg_16_0, arg_16_1, arg_16_2)
+	arg_16_0:StopMoveTimer()
+	arg_16_0.scrollView_:OnBeginDrag(arg_16_2)
 end
 
-function var_0_0.RemoveListeners(arg_18_0)
-	arg_18_0.eventTriggerListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.BeginDrag)
-	arg_18_0.eventTriggerListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.Drag)
-	arg_18_0.eventTriggerListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.EndDrag)
-	arg_18_0.eventTriggerListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.PointerUp)
-	arg_18_0.toggleEventTriggerListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.BeginDrag)
+function var_0_0.RemoveListeners(arg_17_0)
+	arg_17_0.eventTriggerListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.BeginDrag)
+	arg_17_0.eventTriggerListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.Drag)
+	arg_17_0.eventTriggerListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.EndDrag)
+	arg_17_0.eventTriggerListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.PointerUp)
+	arg_17_0.toggleEventTriggerListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.BeginDrag)
 end
 
-function var_0_0.SwitchImageOver(arg_19_0)
-	arg_19_0.chapterBehindImage_, arg_19_0.chapterFrontImage_ = arg_19_0.chapterFrontImage_, arg_19_0.chapterBehindImage_
-	arg_19_0.chapterBehindCanvasGroup_, arg_19_0.chapterFrontCanvasGroup_ = arg_19_0.chapterFrontCanvasGroup_, arg_19_0.chapterBehindCanvasGroup_
+function var_0_0.SwitchImageOver(arg_18_0)
+	arg_18_0.chapterBehindImage_, arg_18_0.chapterFrontImage_ = arg_18_0.chapterFrontImage_, arg_18_0.chapterBehindImage_
+	arg_18_0.chapterBehindCanvasGroup_, arg_18_0.chapterFrontCanvasGroup_ = arg_18_0.chapterFrontCanvasGroup_, arg_18_0.chapterBehindCanvasGroup_
 end
 
-function var_0_0.AutoSwitchImage(arg_20_0)
-	local var_20_0 = arg_20_0.selectChapterClientID_
-	local var_20_1 = ChapterClientCfg[var_20_0]
-	local var_20_2 = SpritePathCfg.ChapterPaint.path .. var_20_1.chapter_paint
+function var_0_0.AutoSwitchImage(arg_19_0)
+	local var_19_0 = arg_19_0.selectChapterClientID_
+	local var_19_1 = ChapterClientCfg[var_19_0]
+	local var_19_2 = SpritePathCfg.ChapterPaint.path .. var_19_1.chapter_paint
 
-	getSpriteWithoutAtlasAsync(var_20_2, function(arg_21_0)
-		if arg_20_0.chapterBehindImage_ then
-			arg_20_0.chapterBehindImage_.sprite = arg_21_0
-		end
-	end)
+	SetSpriteWithoutAtlasAsync(arg_19_0.chapterBehindImage_, var_19_2)
 
-	local var_20_3 = var_0_0.SWITCH_STAGE_TIME
+	local var_19_3 = var_0_0.SWITCH_STAGE_TIME
 
-	arg_20_0.leanTweenHandler_ = LeanTween.value(arg_20_0.chapterFrontImage_.gameObject, arg_20_0.chapterFrontCanvasGroup_.alpha, 0, var_20_3)
+	arg_19_0.leanTweenHandler_ = LeanTween.value(arg_19_0.chapterFrontImage_.gameObject, arg_19_0.chapterFrontCanvasGroup_.alpha, 0, var_19_3)
 
-	arg_20_0.leanTweenHandler_:setOnUpdate(LuaHelper.FloatAction(function(arg_22_0)
-		arg_20_0.chapterFrontCanvasGroup_.alpha = arg_22_0
-		arg_20_0.chapterBehindCanvasGroup_.alpha = 1 - arg_22_0
+	arg_19_0.leanTweenHandler_:setOnUpdate(LuaHelper.FloatAction(function(arg_20_0)
+		arg_19_0.chapterFrontCanvasGroup_.alpha = arg_20_0
+		arg_19_0.chapterBehindCanvasGroup_.alpha = 1 - arg_20_0
 	end))
-	arg_20_0.leanTweenHandler_:setOnComplete(System.Action(function()
-		arg_20_0:SwitchImageOver()
-		LeanTween.cancel(arg_20_0.chapterFrontImage_.gameObject)
-		arg_20_0.leanTweenHandler_:setOnUpdate(nil):setOnComplete(nil)
+	arg_19_0.leanTweenHandler_:setOnComplete(System.Action(function()
+		arg_19_0:SwitchImageOver()
+		LeanTween.cancel(arg_19_0.chapterFrontImage_.gameObject)
+		arg_19_0.leanTweenHandler_:setOnUpdate(nil):setOnComplete(nil)
 
-		arg_20_0.leanTweenHandler_ = nil
+		arg_19_0.leanTweenHandler_ = nil
 	end))
 end
 
-function var_0_0.RefreshData(arg_24_0)
+function var_0_0.RefreshData(arg_22_0)
 	return
 end
 
-function var_0_0.InitImage(arg_25_0)
-	local var_25_0 = ChapterClientCfg[arg_25_0.selectChapterClientID_]
-	local var_25_1 = SpritePathCfg.ChapterPaint.path .. var_25_0.chapter_paint
+function var_0_0.InitImage(arg_23_0)
+	local var_23_0 = ChapterClientCfg[arg_23_0.selectChapterClientID_]
+	local var_23_1 = SpritePathCfg.ChapterPaint.path .. var_23_0.chapter_paint
 
-	getSpriteWithoutAtlasAsync(var_25_1, function(arg_26_0)
-		if arg_25_0.chapterBehindImage_ then
-			arg_25_0.chapterBehindImage_.sprite = arg_26_0
-		end
-
-		if arg_25_0.chapterFrontImage_ then
-			arg_25_0.chapterFrontImage_.sprite = arg_26_0
-		end
-	end)
+	SetSpriteWithoutAtlasAsync(arg_23_0.chapterBehindImage_, var_23_1)
+	SetSpriteWithoutAtlasAsync(arg_23_0.chapterFrontImage_, var_23_1)
 end
 
-function var_0_0.RefreshUI(arg_27_0)
+function var_0_0.RefreshUI(arg_24_0)
 	return
 end
 
-function var_0_0.AddMoveTimer(arg_28_0, arg_28_1)
-	arg_28_0:StopMoveTimer()
+function var_0_0.AddMoveTimer(arg_25_0, arg_25_1)
+	arg_25_0:StopMoveTimer()
 
-	arg_28_0.moveTimer_ = FrameTimer.New(function()
-		local var_29_0 = arg_28_0.contentTf_.rect.width / 2
-		local var_29_1 = arg_28_0.scrollTf_.rect.width / 2
-		local var_29_2 = arg_28_0.contentTf_.anchoredPosition
-		local var_29_3 = arg_28_1:GetLocalPosition().x * -1
+	arg_25_0.moveTimer_ = FrameTimer.New(function()
+		local var_26_0 = arg_25_0.contentTf_.rect.width / 2
+		local var_26_1 = arg_25_0.scrollTf_.rect.width / 2
+		local var_26_2 = arg_25_0.contentTf_.anchoredPosition
+		local var_26_3 = arg_25_1:GetLocalPosition().x * -1
 
-		if var_29_1 >= var_29_0 + var_29_3 then
-			var_29_3 = var_29_1 - var_29_0
-		elseif var_29_1 >= var_29_0 - var_29_3 then
-			var_29_3 = var_29_0 - var_29_1
+		if var_26_1 >= var_26_0 + var_26_3 then
+			var_26_3 = var_26_1 - var_26_0
+		elseif var_26_1 >= var_26_0 - var_26_3 then
+			var_26_3 = var_26_0 - var_26_1
 		end
 
-		local var_29_4 = 3 * math.pow(arg_28_0.scrollView_.decelerationRate, UnityEngine.Time.unscaledDeltaTime) * UnityEngine.Time.unscaledDeltaTime
+		local var_26_4 = 3 * math.pow(arg_25_0.scrollView_.decelerationRate, UnityEngine.Time.unscaledDeltaTime) * UnityEngine.Time.unscaledDeltaTime
 
-		arg_28_0.tempVector2_.x = var_29_3
-		arg_28_0.tempVector2_.y = var_29_2.y
-		arg_28_0.contentTf_.anchoredPosition = Vector2.Lerp(var_29_2, arg_28_0.tempVector2_, var_29_4)
+		arg_25_0.tempVector2_.x = var_26_3
+		arg_25_0.tempVector2_.y = var_26_2.y
+		arg_25_0.contentTf_.anchoredPosition = Vector2.Lerp(var_26_2, arg_25_0.tempVector2_, var_26_4)
 
-		if math.abs(var_29_2.x - var_29_3) <= 1 then
-			arg_28_0.contentTf_.anchoredPosition = arg_28_0.tempVector2_
+		if math.abs(var_26_2.x - var_26_3) <= 1 then
+			arg_25_0.contentTf_.anchoredPosition = arg_25_0.tempVector2_
 
-			arg_28_0:StopMoveTimer()
+			arg_25_0:StopMoveTimer()
 		end
 	end, 1, -1)
 
-	arg_28_0.moveTimer_:Start()
+	arg_25_0.moveTimer_:Start()
 end
 
-function var_0_0.StopMoveTimer(arg_30_0)
-	if arg_30_0.moveTimer_ then
-		arg_30_0.moveTimer_:Stop()
+function var_0_0.StopMoveTimer(arg_27_0)
+	if arg_27_0.moveTimer_ then
+		arg_27_0.moveTimer_:Stop()
 
-		arg_30_0.moveTimer_ = nil
+		arg_27_0.moveTimer_ = nil
 	end
 end
 
-function var_0_0.StopLeanTween(arg_31_0)
-	if arg_31_0.leanTweenHandler_ then
-		LeanTween.cancel(arg_31_0.chapterFrontImage_.gameObject)
-		arg_31_0.leanTweenHandler_:callOnCompletes()
+function var_0_0.StopLeanTween(arg_28_0)
+	if arg_28_0.leanTweenHandler_ then
+		LeanTween.cancel(arg_28_0.chapterFrontImage_.gameObject)
+		arg_28_0.leanTweenHandler_:callOnCompletes()
 	end
 end
 
-function var_0_0.StopAllTimer(arg_32_0)
-	arg_32_0:StopMoveTimer()
+function var_0_0.StopAllTimer(arg_29_0)
+	arg_29_0:StopMoveTimer()
 end
 
 return var_0_0

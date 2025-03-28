@@ -29,11 +29,11 @@ function var_0_1.RefreshIcon(arg_4_0)
 		local var_4_0 = HeroClueCfg[arg_4_0.clueID_]
 
 		if arg_4_0.curData_.level == 1 then
-			arg_4_0.clueIcon_.sprite = getSpriteWithoutAtlas(var_4_0.icon_path_1)
+			arg_4_0.clueIcon_.sprite = pureGetSpriteWithoutAtlas(var_4_0.icon_path_1)
 		elseif arg_4_0.curData_.level == 2 then
-			arg_4_0.clueIcon_.sprite = getSpriteWithoutAtlas(var_4_0.icon_path_2)
+			arg_4_0.clueIcon_.sprite = pureGetSpriteWithoutAtlas(var_4_0.icon_path_2)
 		else
-			arg_4_0.clueIcon_.sprite = getSpriteWithoutAtlas(var_4_0.icon_path_3)
+			arg_4_0.clueIcon_.sprite = pureGetSpriteWithoutAtlas(var_4_0.icon_path_3)
 		end
 	end
 end

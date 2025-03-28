@@ -82,7 +82,7 @@ function var_0_0.AddListeners(arg_5_0)
 			return
 		end
 
-		arg_5_0:CheckItemUse(var_7_0)
+		arg_5_0:CheckItemUse(var_7_0, var_7_1)
 	end)
 	arg_5_0:AddBtnListener(arg_5_0.composeBtn_, nil, function()
 		JumpTools.OpenPageByJump("synthesise", {
@@ -233,15 +233,21 @@ function var_0_0.CheckHeroOptionalOne(arg_14_0, arg_14_1, arg_14_2)
 	end
 end
 
-function var_0_0.CheckItemUse(arg_17_0, arg_17_1)
-	if arg_17_1.sub_type == ItemConst.ITEM_SUB_TYPE.HERO_OPTIONAL_MULTI then
+function var_0_0.CheckItemUse(arg_17_0, arg_17_1, arg_17_2)
+	if arg_17_1.sub_type == ItemConst.ITEM_SUB_TYPE.HERO_OPTIONAL_MULTI or arg_17_1.sub_type == ItemConst.ITEM_SUB_TYPE.OPTIONAL_ITEM_MULT then
 		if arg_17_0:CheckSelectItem() and not _G.SkipTip.SkipExchangeHero2 then
 			ShowMessageBox({
 				content = GetTips("CHOICEBOX_CHOSEN_ALL_MAX"),
 				OkCallback = function()
-					JumpTools.OpenPageByJump("itemUse", {
-						noPop = true,
-						itemData = arg_17_0.itemData_
+					JumpTools.OpenPageByJump("optionalItemSelect", {
+						selectNum = 1,
+						popItemInfo = {
+							arg_17_0.itemData_.id,
+							arg_17_0.itemData_.number,
+							0,
+							arg_17_2
+						},
+						noPop = _G.SkipTip.SkipExchangeHero2
 					})
 				end,
 				ToggleCallback = function(arg_19_0)
@@ -249,8 +255,14 @@ function var_0_0.CheckItemUse(arg_17_0, arg_17_1)
 				end
 			})
 		else
-			JumpTools.OpenPageByJump("itemUse", {
-				itemData = arg_17_0.itemData_,
+			JumpTools.OpenPageByJump("optionalItemSelect", {
+				selectNum = 1,
+				popItemInfo = {
+					arg_17_0.itemData_.id,
+					arg_17_0.itemData_.number,
+					0,
+					arg_17_2
+				},
 				noPop = _G.SkipTip.SkipExchangeHero2
 			})
 		end

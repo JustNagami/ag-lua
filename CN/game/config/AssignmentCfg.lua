@@ -16457,6 +16457,1018 @@
 			1032032
 		}
 	},
+	[32400] = {
+		name = "普通第二十一章·前篇",
+		pre_id = 0,
+		type = 3,
+		source = "",
+		condition = 500,
+		desc = "完成普通第二十一章·前篇的所有任务",
+		need = 9,
+		activity_id = 0,
+		system = "",
+		id = 32400,
+		phase = 31,
+		additional_parameter = {
+			3,
+			31
+		},
+		reward = {
+			{
+				40203,
+				3
+			},
+			{
+				40803,
+				3
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		}
+	},
+	[32401] = {
+		name = "普通第二十一章·前篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-1-1",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32401,
+		phase = 31,
+		additional_parameter = {
+			1032101
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10121,
+			1032101
+		}
+	},
+	[32402] = {
+		name = "普通第二十一章·前篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-1-2",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32402,
+		phase = 31,
+		additional_parameter = {
+			1032102
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10121,
+			1032102
+		}
+	},
+	[32403] = {
+		name = "普通第二十一章·前篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-1-3",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32403,
+		phase = 31,
+		additional_parameter = {
+			1032103
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10121,
+			1032103
+		}
+	},
+	[32404] = {
+		name = "普通第二十一章·前篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-1-4",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32404,
+		phase = 31,
+		additional_parameter = {
+			1032104
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10121,
+			1032104
+		}
+	},
+	[32405] = {
+		name = "普通第二十一章·前篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-1-5",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32405,
+		phase = 31,
+		additional_parameter = {
+			1032105
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10121,
+			1032105
+		}
+	},
+	[32406] = {
+		name = "普通第二十一章·前篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-1-6",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32406,
+		phase = 31,
+		additional_parameter = {
+			1032106
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10121,
+			1032106
+		}
+	},
+	[32407] = {
+		name = "普通第二十一章·前篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-1-7",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32407,
+		phase = 31,
+		additional_parameter = {
+			1032107
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10121,
+			1032107
+		}
+	},
+	[32408] = {
+		name = "普通第二十一章·前篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-1-8",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32408,
+		phase = 31,
+		additional_parameter = {
+			1032108
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10121,
+			1032108
+		}
+	},
+	[32409] = {
+		name = "普通第二十一章·前篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-1-9",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32409,
+		phase = 31,
+		additional_parameter = {
+			1032109
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10121,
+			1032109
+		}
+	},
+	[32410] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		source = "",
+		condition = 500,
+		desc = "完成普通第二十一章·中篇的所有任务",
+		need = 16,
+		activity_id = 0,
+		system = "",
+		id = 32410,
+		phase = 32,
+		additional_parameter = {
+			3,
+			32
+		},
+		reward = {
+			{
+				40203,
+				3
+			},
+			{
+				40803,
+				3
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		}
+	},
+	[32411] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-2-1",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32411,
+		phase = 32,
+		additional_parameter = {
+			1032110
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11121,
+			1032110
+		}
+	},
+	[32412] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-2-2",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32412,
+		phase = 32,
+		additional_parameter = {
+			1032111
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11121,
+			1032111
+		}
+	},
+	[32413] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-2-3",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32413,
+		phase = 32,
+		additional_parameter = {
+			1032112
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11121,
+			1032112
+		}
+	},
+	[32414] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-2-4",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32414,
+		phase = 32,
+		additional_parameter = {
+			1032113
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11121,
+			1032113
+		}
+	},
+	[32415] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-2-5",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32415,
+		phase = 32,
+		additional_parameter = {
+			1032114
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11121,
+			1032114
+		}
+	},
+	[32416] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-2-6",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32416,
+		phase = 32,
+		additional_parameter = {
+			1032115
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11121,
+			1032115
+		}
+	},
+	[32417] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-2-7",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32417,
+		phase = 32,
+		additional_parameter = {
+			1032116
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11121,
+			1032116
+		}
+	},
+	[32418] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-2-8",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32418,
+		phase = 32,
+		additional_parameter = {
+			1032117
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11121,
+			1032117
+		}
+	},
+	[32419] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-2-9",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32419,
+		phase = 32,
+		additional_parameter = {
+			1032118
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11121,
+			1032118
+		}
+	},
+	[32420] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-2-10",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32420,
+		phase = 32,
+		additional_parameter = {
+			1032119
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11121,
+			1032119
+		}
+	},
+	[32421] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-2-11",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32421,
+		phase = 32,
+		additional_parameter = {
+			1032120
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11121,
+			1032120
+		}
+	},
+	[32422] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-2-12",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32422,
+		phase = 32,
+		additional_parameter = {
+			1032121
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11121,
+			1032121
+		}
+	},
+	[32423] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-2-13",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32423,
+		phase = 32,
+		additional_parameter = {
+			1032122
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11121,
+			1032122
+		}
+	},
+	[32424] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-2-14",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32424,
+		phase = 32,
+		additional_parameter = {
+			1032123
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11121,
+			1032123
+		}
+	},
+	[32425] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-2-15",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32425,
+		phase = 32,
+		additional_parameter = {
+			1032124
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11121,
+			1032124
+		}
+	},
+	[32426] = {
+		name = "普通第二十一章·中篇",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "通关主线普通难度21-2-16",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32426,
+		phase = 32,
+		additional_parameter = {
+			1032125
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11121,
+			1032125
+		}
+	},
 	[40100] = {
 		name = "第一阶段",
 		pre_id = 0,
@@ -21621,6 +22633,339 @@
 			16001,
 			311001,
 			313641
+		}
+	},
+	[60101] = {
+		name = "累计探测",
+		pre_id = 0,
+		type = 207,
+		source = "",
+		condition = 700,
+		desc = "累计探测次数达到10次",
+		need = 10,
+		activity_id = 0,
+		system = "",
+		id = 60101,
+		phase = 0,
+		additional_parameter = {
+			0
+		},
+		reward = {
+			{
+				19,
+				6
+			}
+		},
+		unlock_condition = {
+			30,
+			100
+		}
+	},
+	[60102] = {
+		name = "累计探测",
+		pre_id = 0,
+		type = 207,
+		source = "",
+		condition = 700,
+		desc = "累计探测次数达到30次",
+		need = 30,
+		activity_id = 0,
+		system = "",
+		id = 60102,
+		phase = 0,
+		additional_parameter = {
+			0
+		},
+		reward = {
+			{
+				40415,
+				50
+			}
+		},
+		unlock_condition = {
+			30,
+			100
+		}
+	},
+	[60103] = {
+		name = "累计探测",
+		pre_id = 0,
+		type = 207,
+		source = "",
+		condition = 700,
+		desc = "累计探测次数达到50次",
+		need = 50,
+		activity_id = 0,
+		system = "",
+		id = 60103,
+		phase = 0,
+		additional_parameter = {
+			0
+		},
+		reward = {
+			{
+				19,
+				4
+			}
+		},
+		unlock_condition = {
+			30,
+			100
+		}
+	},
+	[60104] = {
+		name = "累计探测",
+		pre_id = 0,
+		type = 207,
+		source = "",
+		condition = 700,
+		desc = "累计探测次数达到70次",
+		need = 70,
+		activity_id = 0,
+		system = "",
+		id = 60104,
+		phase = 0,
+		additional_parameter = {
+			0
+		},
+		reward = {
+			{
+				30074,
+				1
+			}
+		},
+		unlock_condition = {
+			30,
+			100
+		}
+	},
+	[60301] = {
+		name = "吨吨值消耗",
+		pre_id = 0,
+		type = 209,
+		source = "",
+		condition = 350,
+		desc = "累计消耗500点吨吨值",
+		need = 500,
+		activity_id = 0,
+		system = "",
+		id = 60301,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				30091,
+				30
+			}
+		},
+		unlock_condition = {
+			30,
+			100
+		}
+	},
+	[60302] = {
+		name = "吨吨值消耗",
+		pre_id = 0,
+		type = 209,
+		source = "",
+		condition = 350,
+		desc = "累计消耗1000点吨吨值",
+		need = 1000,
+		activity_id = 0,
+		system = "",
+		id = 60302,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				1,
+				200
+			}
+		},
+		unlock_condition = {
+			30,
+			100
+		}
+	},
+	[60303] = {
+		name = "吨吨值消耗",
+		pre_id = 0,
+		type = 209,
+		source = "",
+		condition = 350,
+		desc = "累计消耗1500点吨吨值",
+		need = 1500,
+		activity_id = 0,
+		system = "",
+		id = 60303,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				20003,
+				10
+			}
+		},
+		unlock_condition = {
+			30,
+			100
+		}
+	},
+	[60304] = {
+		name = "吨吨值消耗",
+		pre_id = 0,
+		type = 209,
+		source = "",
+		condition = 350,
+		desc = "累计消耗2000点吨吨值",
+		need = 2000,
+		activity_id = 0,
+		system = "",
+		id = 60304,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				1,
+				400
+			}
+		},
+		unlock_condition = {
+			30,
+			100
+		}
+	},
+	[60401] = {
+		name = "资源找回",
+		pre_id = 0,
+		type = 210,
+		source = "",
+		condition = 300,
+		desc = "累计「每周评分」达到500分，可额外找回1次",
+		need = 500,
+		activity_id = 0,
+		system = "",
+		id = 60401,
+		phase = 0,
+		additional_parameter = {
+			35
+		},
+		reward = {},
+		unlock_condition = {
+			30,
+			100
+		}
+	},
+	[60501] = {
+		name = "4.0-当期推荐",
+		pre_id = 0,
+		type = 211,
+		source = "",
+		condition = 300,
+		desc = "在「刺桐港埠漫行纪」中见闻等级达到3级",
+		need = 3,
+		activity_id = 0,
+		system = "",
+		id = 60501,
+		phase = 0,
+		additional_parameter = {
+			77
+		},
+		reward = {
+			{
+				41302,
+				50
+			}
+		},
+		unlock_condition = {
+			30,
+			100
+		}
+	},
+	[60502] = {
+		name = "4.0-当期推荐",
+		pre_id = 0,
+		type = 211,
+		source = "",
+		condition = 300,
+		desc = "在「刺桐港埠漫行纪」中见闻等级达到5级",
+		need = 5,
+		activity_id = 0,
+		system = "",
+		id = 60502,
+		phase = 0,
+		additional_parameter = {
+			77
+		},
+		reward = {
+			{
+				40603,
+				100
+			}
+		},
+		unlock_condition = {
+			30,
+			100
+		}
+	},
+	[60503] = {
+		name = "4.0-当期推荐",
+		pre_id = 0,
+		type = 211,
+		source = "",
+		condition = 300,
+		desc = "在「刺桐港埠漫行纪」中见闻等级达到8级",
+		need = 8,
+		activity_id = 0,
+		system = "",
+		id = 60503,
+		phase = 0,
+		additional_parameter = {
+			77
+		},
+		reward = {
+			{
+				40104,
+				80
+			}
+		},
+		unlock_condition = {
+			30,
+			100
+		}
+	},
+	[60504] = {
+		name = "4.0-当期推荐",
+		pre_id = 0,
+		type = 211,
+		source = "",
+		condition = 300,
+		desc = "在「刺桐港埠漫行纪」中见闻等级达到10级",
+		need = 10,
+		activity_id = 0,
+		system = "",
+		id = 60504,
+		phase = 0,
+		additional_parameter = {
+			77
+		},
+		reward = {
+			{
+				1,
+				300
+			}
+		},
+		unlock_condition = {
+			30,
+			100
 		}
 	},
 	[71001] = {
@@ -27904,7 +29249,7 @@
 		reward = {
 			{
 				53021,
-				50
+				100
 			}
 		},
 		unlock_condition = {
@@ -27928,7 +29273,7 @@
 		reward = {
 			{
 				53021,
-				150
+				200
 			}
 		},
 		unlock_condition = {
@@ -27952,7 +29297,7 @@
 		reward = {
 			{
 				53021,
-				300
+				400
 			}
 		},
 		unlock_condition = {
@@ -112200,6 +113545,3811 @@
 		},
 		source = {}
 	},
+	[40001001] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "通关剧情关卡「创口贴」",
+		need = 1,
+		activity_id = 320042,
+		system = "",
+		id = 40001001,
+		phase = 0,
+		additional_parameter = {
+			1003
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40103,
+				5
+			},
+			{
+				39,
+				10000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001002] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "通关剧情关卡「相机」",
+		need = 1,
+		activity_id = 320042,
+		system = "",
+		id = 40001002,
+		phase = 0,
+		additional_parameter = {
+			1006
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40103,
+				5
+			},
+			{
+				39,
+				10000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001003] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "通关剧情关卡「影院」",
+		need = 1,
+		activity_id = 320042,
+		system = "",
+		id = 40001003,
+		phase = 0,
+		additional_parameter = {
+			1009
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40103,
+				5
+			},
+			{
+				39,
+				10000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001004] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "通关剧情关卡「街市」",
+		need = 1,
+		activity_id = 320042,
+		system = "",
+		id = 40001004,
+		phase = 0,
+		additional_parameter = {
+			1012
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40103,
+				5
+			},
+			{
+				39,
+				10000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001005] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "通关剧情关卡「会餐」",
+		need = 1,
+		activity_id = 320042,
+		system = "",
+		id = 40001005,
+		phase = 0,
+		additional_parameter = {
+			1015
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40103,
+				5
+			},
+			{
+				39,
+				10000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001006] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "通关剧情关卡「摩天轮」",
+		need = 1,
+		activity_id = 320042,
+		system = "",
+		id = 40001006,
+		phase = 0,
+		additional_parameter = {
+			1018
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40103,
+				5
+			},
+			{
+				39,
+				10000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001007] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "通关剧情关卡「忘记」",
+		need = 1,
+		activity_id = 320042,
+		system = "",
+		id = 40001007,
+		phase = 0,
+		additional_parameter = {
+			1021
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40103,
+				5
+			},
+			{
+				39,
+				10000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001008] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "通关剧情关卡「选择」",
+		need = 1,
+		activity_id = 320042,
+		system = "",
+		id = 40001008,
+		phase = 0,
+		additional_parameter = {
+			1024
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40103,
+				5
+			},
+			{
+				39,
+				10000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001009] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "通关剧情关卡「雨滴」",
+		need = 1,
+		activity_id = 320042,
+		system = "",
+		id = 40001009,
+		phase = 0,
+		additional_parameter = {
+			1027
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40103,
+				5
+			},
+			{
+				39,
+				10000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001010] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "通关剧情关卡「Date：9/17」",
+		need = 1,
+		activity_id = 320042,
+		system = "",
+		id = 40001010,
+		phase = 0,
+		additional_parameter = {
+			1030
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40103,
+				5
+			},
+			{
+				39,
+				10000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001011] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "通关挑战关卡「某日同行1」",
+		need = 1,
+		activity_id = 320043,
+		system = "",
+		id = 40001011,
+		phase = 0,
+		additional_parameter = {
+			2001
+		},
+		reward = {
+			{
+				1,
+				40
+			},
+			{
+				40503,
+				10
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40009
+		}
+	},
+	[40001012] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "通关挑战关卡「某日同行2」",
+		need = 1,
+		activity_id = 320043,
+		system = "",
+		id = 40001012,
+		phase = 0,
+		additional_parameter = {
+			2002
+		},
+		reward = {
+			{
+				1,
+				40
+			},
+			{
+				40503,
+				10
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40009
+		}
+	},
+	[40001013] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "通关挑战关卡「某日同行3」",
+		need = 1,
+		activity_id = 320043,
+		system = "",
+		id = 40001013,
+		phase = 0,
+		additional_parameter = {
+			2003
+		},
+		reward = {
+			{
+				1,
+				40
+			},
+			{
+				40503,
+				10
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40009
+		}
+	},
+	[40001014] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "通关挑战关卡「某日同行4」",
+		need = 1,
+		activity_id = 320043,
+		system = "",
+		id = 40001014,
+		phase = 0,
+		additional_parameter = {
+			2004
+		},
+		reward = {
+			{
+				1,
+				40
+			},
+			{
+				40503,
+				10
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40009
+		}
+	},
+	[40001015] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "通关挑战关卡「某日同行5」",
+		need = 1,
+		activity_id = 320043,
+		system = "",
+		id = 40001015,
+		phase = 0,
+		additional_parameter = {
+			2005
+		},
+		reward = {
+			{
+				1,
+				40
+			},
+			{
+				40503,
+				10
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40009
+		}
+	},
+	[40001016] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "通关挑战关卡「某日同行6」",
+		need = 1,
+		activity_id = 320043,
+		system = "",
+		id = 40001016,
+		phase = 0,
+		additional_parameter = {
+			2006
+		},
+		reward = {
+			{
+				1,
+				40
+			},
+			{
+				40503,
+				10
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40009
+		}
+	},
+	[40001017] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "收集照片「你眼中的我」",
+		need = 1,
+		activity_id = 320044,
+		system = "",
+		id = 40001017,
+		phase = 0,
+		additional_parameter = {
+			1008
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				30015,
+				5
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001018] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "收集照片「光影的倒带」",
+		need = 1,
+		activity_id = 320044,
+		system = "",
+		id = 40001018,
+		phase = 0,
+		additional_parameter = {
+			1011
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				30015,
+				5
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001019] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "收集照片「旋转的唱片」",
+		need = 1,
+		activity_id = 320044,
+		system = "",
+		id = 40001019,
+		phase = 0,
+		additional_parameter = {
+			1014
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				30015,
+				5
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001020] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 329001,
+		desc = "收集照片「跳动的思绪」",
+		need = 1,
+		activity_id = 320044,
+		system = "",
+		id = 40001020,
+		phase = 0,
+		additional_parameter = {
+			1017
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				30015,
+				5
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001021] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "完成5个诗蔻蒂任务",
+		need = 5,
+		activity_id = 320045,
+		system = "",
+		id = 40001021,
+		phase = 0,
+		additional_parameter = {
+			40001001,
+			40001002,
+			40001003,
+			40001004,
+			40001005,
+			40001006,
+			40001007,
+			40001008,
+			40001009,
+			40001010,
+			40001011,
+			40001012,
+			40001013,
+			40001014,
+			40001015,
+			40001016,
+			40001017,
+			40001018,
+			40001019,
+			40001020
+		},
+		reward = {
+			{
+				1,
+				100
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001022] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "完成10个诗蔻蒂任务",
+		need = 10,
+		activity_id = 320045,
+		system = "",
+		id = 40001022,
+		phase = 0,
+		additional_parameter = {
+			40001001,
+			40001002,
+			40001003,
+			40001004,
+			40001005,
+			40001006,
+			40001007,
+			40001008,
+			40001009,
+			40001010,
+			40001011,
+			40001012,
+			40001013,
+			40001014,
+			40001015,
+			40001016,
+			40001017,
+			40001018,
+			40001019,
+			40001020
+		},
+		reward = {
+			{
+				1,
+				100
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001023] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "完成15个诗蔻蒂任务",
+		need = 15,
+		activity_id = 320045,
+		system = "",
+		id = 40001023,
+		phase = 0,
+		additional_parameter = {
+			40001001,
+			40001002,
+			40001003,
+			40001004,
+			40001005,
+			40001006,
+			40001007,
+			40001008,
+			40001009,
+			40001010,
+			40001011,
+			40001012,
+			40001013,
+			40001014,
+			40001015,
+			40001016,
+			40001017,
+			40001018,
+			40001019,
+			40001020
+		},
+		reward = {
+			{
+				1,
+				100
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40001024] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "完成20个诗蔻蒂任务",
+		need = 20,
+		activity_id = 320045,
+		system = "",
+		id = 40001024,
+		phase = 0,
+		additional_parameter = {
+			40001001,
+			40001002,
+			40001003,
+			40001004,
+			40001005,
+			40001006,
+			40001007,
+			40001008,
+			40001009,
+			40001010,
+			40001011,
+			40001012,
+			40001013,
+			40001014,
+			40001015,
+			40001016,
+			40001017,
+			40001018,
+			40001019,
+			40001020
+		},
+		reward = {
+			{
+				2924,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			40008
+		}
+	},
+	[40002001] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 310002,
+		desc = "完成任务「古船今事」",
+		need = 1,
+		activity_id = 3200412,
+		system = "",
+		id = 40002001,
+		phase = 0,
+		additional_parameter = {
+			11102
+		},
+		reward = {
+			{
+				1,
+				80
+			},
+			{
+				41701,
+				60
+			},
+			{
+				39,
+				12000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002002] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 310002,
+		desc = "完成任务「素胚勾勒出……」",
+		need = 1,
+		activity_id = 3200412,
+		system = "",
+		id = 40002002,
+		phase = 0,
+		additional_parameter = {
+			11103
+		},
+		reward = {
+			{
+				1,
+				80
+			},
+			{
+				41701,
+				60
+			},
+			{
+				39,
+				12000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002003] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 310002,
+		desc = "完成任务「染坊与古井」",
+		need = 1,
+		activity_id = 3200412,
+		system = "",
+		id = 40002003,
+		phase = 0,
+		additional_parameter = {
+			11104
+		},
+		reward = {
+			{
+				1,
+				80
+			},
+			{
+				41701,
+				60
+			},
+			{
+				39,
+				12000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002004] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 310002,
+		desc = "完成任务「他山之「玉」」",
+		need = 1,
+		activity_id = 3200412,
+		system = "",
+		id = 40002004,
+		phase = 0,
+		additional_parameter = {
+			11105
+		},
+		reward = {
+			{
+				1,
+				80
+			},
+			{
+				41701,
+				60
+			},
+			{
+				39,
+				12000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002005] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 310002,
+		desc = "完成任务「舌尖上的夏什瓦特」",
+		need = 1,
+		activity_id = 3200412,
+		system = "",
+		id = 40002005,
+		phase = 0,
+		additional_parameter = {
+			11106
+		},
+		reward = {
+			{
+				1,
+				80
+			},
+			{
+				41701,
+				60
+			},
+			{
+				39,
+				12000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002006] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 310002,
+		desc = "完成任务「迫近的风暴」",
+		need = 1,
+		activity_id = 3200412,
+		system = "",
+		id = 40002006,
+		phase = 0,
+		additional_parameter = {
+			11107
+		},
+		reward = {
+			{
+				1,
+				80
+			},
+			{
+				41701,
+				60
+			},
+			{
+				39,
+				12000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002007] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 310002,
+		desc = "完成任务「定风波，沧海阔」",
+		need = 1,
+		activity_id = 3200412,
+		system = "",
+		id = 40002007,
+		phase = 0,
+		additional_parameter = {
+			11108
+		},
+		reward = {
+			{
+				1,
+				80
+			},
+			{
+				30065,
+				1
+			},
+			{
+				3011001,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002008] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330003,
+		desc = "在「渡洋承运」中获得修正者「英招」",
+		need = 1,
+		activity_id = 3200413,
+		system = "",
+		id = 40002008,
+		phase = 0,
+		additional_parameter = {
+			11104004
+		},
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40603,
+				10
+			},
+			{
+				39,
+				3000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002009] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330003,
+		desc = "在「渡洋承运」中获得修正者「禄良」",
+		need = 1,
+		activity_id = 3200413,
+		system = "",
+		id = 40002009,
+		phase = 0,
+		additional_parameter = {
+			11106005
+		},
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40603,
+				10
+			},
+			{
+				39,
+				3000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002010] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330003,
+		desc = "在「渡洋承运」中获得修正者「陆吾」",
+		need = 1,
+		activity_id = 3200413,
+		system = "",
+		id = 40002010,
+		phase = 0,
+		additional_parameter = {
+			11108003
+		},
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40603,
+				10
+			},
+			{
+				39,
+				3000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002011] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330003,
+		desc = "在「渡洋承运」获得船只改装部件「冲击梁」",
+		need = 1,
+		activity_id = 3200413,
+		system = "",
+		id = 40002011,
+		phase = 0,
+		additional_parameter = {
+			11103005
+		},
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40301,
+				1000
+			},
+			{
+				39,
+				3000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002012] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330003,
+		desc = "在「渡洋承运」获得船只改装部件「船首炮」",
+		need = 1,
+		activity_id = 3200413,
+		system = "",
+		id = 40002012,
+		phase = 0,
+		additional_parameter = {
+			11105005
+		},
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				40301,
+				1000
+			},
+			{
+				39,
+				3000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002013] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330003,
+		desc = "在「渡洋承运」获得船只改装部件「驭风台」",
+		need = 1,
+		activity_id = 3200413,
+		system = "",
+		id = 40002013,
+		phase = 0,
+		additional_parameter = {
+			11107009
+		},
+		reward = {
+			{
+				1,
+				20
+			},
+			{
+				30066,
+				1
+			},
+			{
+				3011002,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002014] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330001,
+		desc = "通关「渡洋承运」近海贸易Ⅰ",
+		need = 1,
+		activity_id = 3200414,
+		system = "",
+		id = 40002014,
+		phase = 0,
+		additional_parameter = {
+			5240202
+		},
+		reward = {
+			{
+				1,
+				40
+			},
+			{
+				40104,
+				10
+			},
+			{
+				39,
+				8000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002015] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330001,
+		desc = "通关「渡洋承运」近海贸易Ⅱ",
+		need = 1,
+		activity_id = 3200414,
+		system = "",
+		id = 40002015,
+		phase = 0,
+		additional_parameter = {
+			5240203
+		},
+		reward = {
+			{
+				1,
+				40
+			},
+			{
+				40104,
+				10
+			},
+			{
+				39,
+				8000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002016] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330001,
+		desc = "通关「渡洋承运」远洋贸易Ⅰ",
+		need = 1,
+		activity_id = 3200414,
+		system = "",
+		id = 40002016,
+		phase = 0,
+		additional_parameter = {
+			5240204
+		},
+		reward = {
+			{
+				1,
+				40
+			},
+			{
+				40104,
+				10
+			},
+			{
+				39,
+				8000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002017] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330001,
+		desc = "通关「渡洋承运」远洋贸易Ⅱ",
+		need = 1,
+		activity_id = 3200414,
+		system = "",
+		id = 40002017,
+		phase = 0,
+		additional_parameter = {
+			5240205
+		},
+		reward = {
+			{
+				1,
+				40
+			},
+			{
+				40104,
+				10
+			},
+			{
+				39,
+				8000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002018] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330001,
+		desc = "通关「渡洋承运」暗礁风暴Ⅰ",
+		need = 1,
+		activity_id = 3200414,
+		system = "",
+		id = 40002018,
+		phase = 0,
+		additional_parameter = {
+			5240206
+		},
+		reward = {
+			{
+				1,
+				40
+			},
+			{
+				40104,
+				10
+			},
+			{
+				39,
+				8000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002019] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330001,
+		desc = "通关「渡洋承运」暗礁风暴Ⅱ",
+		need = 1,
+		activity_id = 3200414,
+		system = "",
+		id = 40002019,
+		phase = 0,
+		additional_parameter = {
+			5240207
+		},
+		reward = {
+			{
+				1,
+				40
+			},
+			{
+				30067,
+				1
+			},
+			{
+				39,
+				8000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002020] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330001,
+		desc = "通关「渡洋承运」深海危机Ⅰ",
+		need = 1,
+		activity_id = 3200414,
+		system = "",
+		id = 40002020,
+		phase = 0,
+		additional_parameter = {
+			5240208
+		},
+		reward = {
+			{
+				1,
+				40
+			},
+			{
+				40104,
+				10
+			},
+			{
+				39,
+				8000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002021] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330001,
+		desc = "通关「渡洋承运」深海危机Ⅱ",
+		need = 1,
+		activity_id = 3200414,
+		system = "",
+		id = 40002021,
+		phase = 0,
+		additional_parameter = {
+			5240209
+		},
+		reward = {
+			{
+				1,
+				40
+			},
+			{
+				40104,
+				10
+			},
+			{
+				39,
+				8000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002022] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330001,
+		desc = "通关「渡洋承运」深海危机Ⅲ",
+		need = 1,
+		activity_id = 3200414,
+		system = "",
+		id = 40002022,
+		phase = 0,
+		additional_parameter = {
+			5240210
+		},
+		reward = {
+			{
+				1,
+				40
+			},
+			{
+				40104,
+				10
+			},
+			{
+				39,
+				8000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002023] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330001,
+		desc = "通关「渡洋承运」深海危机Ⅳ",
+		need = 1,
+		activity_id = 3200414,
+		system = "",
+		id = 40002023,
+		phase = 0,
+		additional_parameter = {
+			5240211
+		},
+		reward = {
+			{
+				1,
+				40
+			},
+			{
+				40104,
+				10
+			},
+			{
+				39,
+				8000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002024] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 300,
+		desc = "获得2张照片",
+		need = 2,
+		activity_id = 3200415,
+		system = "",
+		id = 40002024,
+		phase = 0,
+		additional_parameter = {
+			77
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				41701,
+				60
+			},
+			{
+				39,
+				5000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002025] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 300,
+		desc = "获得4张照片",
+		need = 4,
+		activity_id = 3200415,
+		system = "",
+		id = 40002025,
+		phase = 0,
+		additional_parameter = {
+			77
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				41701,
+				60
+			},
+			{
+				39,
+				5000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002026] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 300,
+		desc = "获得6张照片",
+		need = 6,
+		activity_id = 3200415,
+		system = "",
+		id = 40002026,
+		phase = 0,
+		additional_parameter = {
+			77
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				41701,
+				60
+			},
+			{
+				39,
+				5000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002027] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 300,
+		desc = "获得8张照片",
+		need = 8,
+		activity_id = 3200415,
+		system = "",
+		id = 40002027,
+		phase = 0,
+		additional_parameter = {
+			77
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				41701,
+				60
+			},
+			{
+				39,
+				5000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002028] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 300,
+		desc = "获得10张照片",
+		need = 10,
+		activity_id = 3200415,
+		system = "",
+		id = 40002028,
+		phase = 0,
+		additional_parameter = {
+			77
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				30068,
+				1
+			},
+			{
+				39,
+				5000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002029] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330003,
+		desc = "完成任务「暴走妈妈」",
+		need = 1,
+		activity_id = 3200416,
+		system = "",
+		id = 40002029,
+		phase = 0,
+		additional_parameter = {
+			11206006
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40602,
+				20
+			},
+			{
+				39,
+				10000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002030] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330003,
+		desc = "完成任务「神奇的石敢当」",
+		need = 1,
+		activity_id = 3200416,
+		system = "",
+		id = 40002030,
+		phase = 0,
+		additional_parameter = {
+			11202006
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40602,
+				20
+			},
+			{
+				39,
+				10000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002031] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330004,
+		desc = "在地图中开启3个宝箱",
+		need = 3,
+		activity_id = 3200416,
+		system = "",
+		id = 40002031,
+		phase = 0,
+		additional_parameter = {
+			323641
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40504,
+				20
+			},
+			{
+				39,
+				10000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002032] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330004,
+		desc = "在地图中开启6个宝箱",
+		need = 6,
+		activity_id = 3200416,
+		system = "",
+		id = 40002032,
+		phase = 0,
+		additional_parameter = {
+			323641
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				30069,
+				1
+			},
+			{
+				39,
+				10000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002033] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330005,
+		desc = "在地图中巧遇5个石敢当",
+		need = 5,
+		activity_id = 3200416,
+		system = "",
+		id = 40002033,
+		phase = 0,
+		additional_parameter = {
+			323641
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40104,
+				5
+			},
+			{
+				39,
+				10000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002034] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 330005,
+		desc = "在地图中巧遇10个石敢当",
+		need = 10,
+		activity_id = 3200416,
+		system = "",
+		id = 40002034,
+		phase = 0,
+		additional_parameter = {
+			323641
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				40104,
+				5
+			},
+			{
+				39,
+				10000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002035] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "完成8个任务",
+		need = 8,
+		activity_id = 3200411,
+		system = "",
+		id = 40002035,
+		phase = 0,
+		additional_parameter = {
+			40002001,
+			40002002,
+			40002003,
+			40002004,
+			40002005,
+			40002006,
+			40002007,
+			40002008,
+			40002009,
+			40002010,
+			40002011,
+			40002012,
+			40002013,
+			40002014,
+			40002015,
+			40002016,
+			40002017,
+			40002018,
+			40002019,
+			40002020,
+			40002021,
+			40002022,
+			40002023,
+			40002024,
+			40002025,
+			40002026,
+			40002027,
+			40002028,
+			40002029,
+			40002030,
+			40002031,
+			40002032,
+			40002033,
+			40002034
+		},
+		reward = {
+			{
+				8011,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002036] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "完成16个任务",
+		need = 16,
+		activity_id = 3200411,
+		system = "",
+		id = 40002036,
+		phase = 0,
+		additional_parameter = {
+			40002001,
+			40002002,
+			40002003,
+			40002004,
+			40002005,
+			40002006,
+			40002007,
+			40002008,
+			40002009,
+			40002010,
+			40002011,
+			40002012,
+			40002013,
+			40002014,
+			40002015,
+			40002016,
+			40002017,
+			40002018,
+			40002019,
+			40002020,
+			40002021,
+			40002022,
+			40002023,
+			40002024,
+			40002025,
+			40002026,
+			40002027,
+			40002028,
+			40002029,
+			40002030,
+			40002031,
+			40002032,
+			40002033,
+			40002034
+		},
+		reward = {
+			{
+				1,
+				100
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002037] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "完成24个任务",
+		need = 24,
+		activity_id = 3200411,
+		system = "",
+		id = 40002037,
+		phase = 0,
+		additional_parameter = {
+			40002001,
+			40002002,
+			40002003,
+			40002004,
+			40002005,
+			40002006,
+			40002007,
+			40002008,
+			40002009,
+			40002010,
+			40002011,
+			40002012,
+			40002013,
+			40002014,
+			40002015,
+			40002016,
+			40002017,
+			40002018,
+			40002019,
+			40002020,
+			40002021,
+			40002022,
+			40002023,
+			40002024,
+			40002025,
+			40002026,
+			40002027,
+			40002028,
+			40002029,
+			40002030,
+			40002031,
+			40002032,
+			40002033,
+			40002034
+		},
+		reward = {
+			{
+				2200016,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40002038] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "完成34个任务",
+		need = 34,
+		activity_id = 3200411,
+		system = "",
+		id = 40002038,
+		phase = 0,
+		additional_parameter = {
+			40002001,
+			40002002,
+			40002003,
+			40002004,
+			40002005,
+			40002006,
+			40002007,
+			40002008,
+			40002009,
+			40002010,
+			40002011,
+			40002012,
+			40002013,
+			40002014,
+			40002015,
+			40002016,
+			40002017,
+			40002018,
+			40002019,
+			40002020,
+			40002021,
+			40002022,
+			40002023,
+			40002024,
+			40002025,
+			40002026,
+			40002027,
+			40002028,
+			40002029,
+			40002030,
+			40002031,
+			40002032,
+			40002033,
+			40002034
+		},
+		reward = {
+			{
+				1,
+				100
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40003001] = {
+		name = "每日",
+		pre_id = 0,
+		type = 3001,
+		condition = 1,
+		desc = "每日首次登录",
+		need = 1,
+		activity_id = 322142,
+		system = "",
+		id = 40003001,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				53155,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40003002] = {
+		name = "每日",
+		pre_id = 0,
+		type = 3001,
+		condition = 350,
+		desc = "累计消耗120点吨吨值",
+		need = 120,
+		activity_id = 322142,
+		system = "",
+		id = 40003002,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				53154,
+				3
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40003003] = {
+		name = "每日",
+		pre_id = 0,
+		type = 3001,
+		condition = 402,
+		desc = "通关任意关卡3次",
+		need = 3,
+		activity_id = 322142,
+		system = "",
+		id = 40003003,
+		phase = 0,
+		additional_parameter = {
+			0
+		},
+		reward = {
+			{
+				53154,
+				3
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40003004] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 350,
+		desc = "累计消耗600吨吨值",
+		need = 600,
+		activity_id = 322142,
+		system = "",
+		id = 40003004,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				53154,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40003005] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 424,
+		desc = "累计通关多维变量1次",
+		need = 1,
+		activity_id = 322142,
+		system = "",
+		id = 40003005,
+		phase = 0,
+		additional_parameter = {
+			0
+		},
+		reward = {
+			{
+				53154,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40003006] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 405,
+		desc = "累计通关梦境再构任意难度3次",
+		need = 3,
+		activity_id = 322142,
+		system = "",
+		id = 40003006,
+		phase = 0,
+		additional_parameter = {
+			301
+		},
+		reward = {
+			{
+				53155,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40003007] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 453,
+		desc = "累计通关黑区净化2次",
+		need = 2,
+		activity_id = 322142,
+		system = "",
+		id = 40003007,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				53155,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004001] = {
+		name = "每日",
+		pre_id = 0,
+		type = 3001,
+		condition = 1,
+		desc = "每日首次登录",
+		need = 1,
+		activity_id = 320047,
+		system = "",
+		id = 40004001,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				54118,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004002] = {
+		name = "每日",
+		pre_id = 0,
+		type = 3001,
+		condition = 350,
+		desc = "累计消耗60点吨吨值",
+		need = 60,
+		activity_id = 320047,
+		system = "",
+		id = 40004002,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				54118,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004003] = {
+		name = "每日",
+		pre_id = 0,
+		type = 3001,
+		condition = 350,
+		desc = "累计消耗120点吨吨值",
+		need = 120,
+		activity_id = 320047,
+		system = "",
+		id = 40004003,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				54118,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004004] = {
+		name = "每日",
+		pre_id = 0,
+		type = 3001,
+		condition = 350,
+		desc = "累计消耗180点吨吨值",
+		need = 180,
+		activity_id = 320047,
+		system = "",
+		id = 40004004,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				54118,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004005] = {
+		name = "每日",
+		pre_id = 0,
+		type = 3001,
+		condition = 350,
+		desc = "累计消耗240点吨吨值",
+		need = 240,
+		activity_id = 320047,
+		system = "",
+		id = 40004005,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				54118,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004006] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得900补给清单Ⅱ",
+		need = 900,
+		activity_id = 320047,
+		system = "",
+		id = 40004006,
+		phase = 0,
+		additional_parameter = {
+			53161
+		},
+		reward = {
+			{
+				54118,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004007] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得1000补给清单Ⅱ",
+		need = 1000,
+		activity_id = 320047,
+		system = "",
+		id = 40004007,
+		phase = 0,
+		additional_parameter = {
+			53161
+		},
+		reward = {
+			{
+				54118,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004008] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得1500补给清单Ⅱ",
+		need = 1500,
+		activity_id = 320047,
+		system = "",
+		id = 40004008,
+		phase = 0,
+		additional_parameter = {
+			53161
+		},
+		reward = {
+			{
+				54118,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004009] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得2000补给清单Ⅱ",
+		need = 2000,
+		activity_id = 320047,
+		system = "",
+		id = 40004009,
+		phase = 0,
+		additional_parameter = {
+			53161
+		},
+		reward = {
+			{
+				54118,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004010] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得2500补给清单Ⅱ",
+		need = 2500,
+		activity_id = 320047,
+		system = "",
+		id = 40004010,
+		phase = 0,
+		additional_parameter = {
+			53161
+		},
+		reward = {
+			{
+				54118,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004011] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得3000补给清单Ⅱ",
+		need = 3000,
+		activity_id = 320047,
+		system = "",
+		id = 40004011,
+		phase = 0,
+		additional_parameter = {
+			53161
+		},
+		reward = {
+			{
+				54118,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004012] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得3500补给清单Ⅱ",
+		need = 3500,
+		activity_id = 320047,
+		system = "",
+		id = 40004012,
+		phase = 0,
+		additional_parameter = {
+			53161
+		},
+		reward = {
+			{
+				54118,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004013] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得4000补给清单Ⅱ",
+		need = 4000,
+		activity_id = 320047,
+		system = "",
+		id = 40004013,
+		phase = 0,
+		additional_parameter = {
+			53161
+		},
+		reward = {
+			{
+				54118,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004014] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得4500补给清单Ⅱ",
+		need = 4500,
+		activity_id = 320047,
+		system = "",
+		id = 40004014,
+		phase = 0,
+		additional_parameter = {
+			53161
+		},
+		reward = {
+			{
+				54118,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004015] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得7000补给清单Ⅱ",
+		need = 7000,
+		activity_id = 320047,
+		system = "",
+		id = 40004015,
+		phase = 0,
+		additional_parameter = {
+			53161
+		},
+		reward = {
+			{
+				54118,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004016] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 401,
+		desc = "通关主线第21章–探查顽疾",
+		need = 1,
+		activity_id = 320047,
+		system = "",
+		id = 40004016,
+		phase = 0,
+		additional_parameter = {
+			1032101
+		},
+		reward = {
+			{
+				54118,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004017] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 401,
+		desc = "通关主线第21章–异灾余生",
+		need = 1,
+		activity_id = 320047,
+		system = "",
+		id = 40004017,
+		phase = 0,
+		additional_parameter = {
+			1032110
+		},
+		reward = {
+			{
+				54118,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40004018] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 401,
+		desc = "通关主线第21章–独属于心的回应",
+		need = 1,
+		activity_id = 320047,
+		system = "",
+		id = 40004018,
+		phase = 0,
+		additional_parameter = {
+			1032125
+		},
+		reward = {
+			{
+				54118,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40005001] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 9,
+		condition = 302,
+		desc = "在「联防协议·β」中累计获得10000「补给清单Ⅱ」",
+		need = 10000,
+		activity_id = 320048,
+		system = "",
+		id = 40005001,
+		phase = 0,
+		additional_parameter = {
+			53161
+		},
+		reward = {
+			{
+				14,
+				2500
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			16101,
+			321001,
+			322431
+		}
+	},
+	[40005002] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 9,
+		condition = 310002,
+		desc = "在「刺桐港埠漫行纪」中完成「染坊与古井」任务",
+		need = 1,
+		activity_id = 320048,
+		system = "",
+		id = 40005002,
+		phase = 0,
+		additional_parameter = {
+			11104
+		},
+		reward = {
+			{
+				14,
+				2000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			16101,
+			321001,
+			323641
+		}
+	},
+	[40005003] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 9,
+		condition = 329001,
+		desc = "在「溯梦之隙」中收集照片「跳动的思绪」",
+		need = 1,
+		activity_id = 320048,
+		system = "",
+		id = 40005003,
+		phase = 0,
+		additional_parameter = {
+			1017
+		},
+		reward = {
+			{
+				14,
+				1500
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			16101,
+			321001,
+			321201
+		}
+	},
+	[40006001] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 11006,
+		desc = "在任意难度下，完成挑战1次",
+		need = 1,
+		activity_id = 323501,
+		system = "",
+		id = 40006001,
+		phase = 0,
+		additional_parameter = {
+			1
+		},
+		reward = {
+			{
+				1,
+				200
+			},
+			{
+				40104,
+				5
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40006002] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 11008,
+		desc = "在任意难度下，达到1000000分完成挑战1次",
+		need = 1,
+		activity_id = 323501,
+		system = "",
+		id = 40006002,
+		phase = 0,
+		additional_parameter = {
+			1000000
+		},
+		reward = {
+			{
+				1,
+				200
+			},
+			{
+				40104,
+				5
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40006003] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 11007,
+		desc = "参与凝实难度挑战1次",
+		need = 1,
+		activity_id = 323501,
+		system = "",
+		id = 40006003,
+		phase = 0,
+		additional_parameter = {
+			2
+		},
+		reward = {
+			{
+				40603,
+				10
+			},
+			{
+				22003,
+				6
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40006004] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 11006,
+		desc = "完成凝实难度挑战1次",
+		need = 1,
+		activity_id = 323501,
+		system = "",
+		id = 40006004,
+		phase = 0,
+		additional_parameter = {
+			2
+		},
+		reward = {
+			{
+				2,
+				20000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150367] = {
+		name = "每日",
+		pre_id = 0,
+		type = 401,
+		condition = 1,
+		desc = "每日首次登录",
+		need = 1,
+		activity_id = 322001,
+		system = "",
+		id = 150367,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				1,
+				2000
+			},
+			{
+				20003,
+				40
+			},
+			{
+				41101,
+				4
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150368] = {
+		name = "每日",
+		pre_id = 0,
+		type = 401,
+		condition = 402,
+		desc = "通关任意关卡5次",
+		need = 5,
+		activity_id = 322001,
+		system = "",
+		id = 150368,
+		phase = 0,
+		additional_parameter = {
+			0
+		},
+		reward = {
+			{
+				53999,
+				40
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150369] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 403,
+		desc = "通关一次「能力增幅测试」绮望·诗蔻蒂SS分区",
+		need = 1,
+		activity_id = 322001,
+		system = "",
+		id = 150369,
+		phase = 0,
+		additional_parameter = {
+			{
+				322241,
+				322242,
+				322243
+			},
+			{
+				6040124
+			}
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150370] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 403,
+		desc = "通关一次「能力增幅测试」绮望·诗蔻蒂SSS分区",
+		need = 1,
+		activity_id = 322001,
+		system = "",
+		id = 150370,
+		phase = 0,
+		additional_parameter = {
+			{
+				322241,
+				322242,
+				322243
+			},
+			{
+				6040125
+			}
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150371] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 403,
+		desc = "通关一次「能力增幅测试」绮望·诗蔻蒂Ω分区",
+		need = 1,
+		activity_id = 322001,
+		system = "",
+		id = 150371,
+		phase = 0,
+		additional_parameter = {
+			{
+				322241,
+				322242,
+				322243
+			},
+			{
+				6040126
+			}
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150372] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 403,
+		desc = "通关一次「能力增幅测试」巧构·麟钰SS分区",
+		need = 1,
+		activity_id = 322001,
+		system = "",
+		id = 150372,
+		phase = 0,
+		additional_parameter = {
+			{
+				322244,
+				322245,
+				322246
+			},
+			{
+				6040124
+			}
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150374] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 403,
+		desc = "通关一次「能力增幅测试」巧构·麟钰Ω分区",
+		need = 1,
+		activity_id = 322001,
+		system = "",
+		id = 150374,
+		phase = 0,
+		additional_parameter = {
+			{
+				322244,
+				322245,
+				322246
+			},
+			{
+				6040126
+			}
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150375] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 498,
+		desc = "队伍中携带绮望·诗蔻蒂，通关一次迭代8的α区",
+		need = 1,
+		activity_id = 322001,
+		system = "",
+		id = 150375,
+		phase = 0,
+		additional_parameter = {
+			{
+				1085
+			},
+			1,
+			8
+		},
+		reward = {
+			{
+				53999,
+				100
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150376] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 498,
+		desc = "队伍中携带巧构·麟钰，通关一次迭代8的α区",
+		need = 1,
+		activity_id = 322001,
+		system = "",
+		id = 150376,
+		phase = 0,
+		additional_parameter = {
+			{
+				1073
+			},
+			1,
+			8
+		},
+		reward = {
+			{
+				53999,
+				100
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150377] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 501,
+		desc = "「溯梦之隙」玩法中完成10个限时任务",
+		need = 10,
+		activity_id = 322001,
+		system = "",
+		id = 150377,
+		phase = 0,
+		additional_parameter = {
+			40001001,
+			40001002,
+			40001003,
+			40001004,
+			40001005,
+			40001006,
+			40001007,
+			40001008,
+			40001009,
+			40001010,
+			40001011,
+			40001012,
+			40001013,
+			40001014,
+			40001015,
+			40001016,
+			40001017,
+			40001018,
+			40001019,
+			40001020
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150378] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 501,
+		desc = "「溯梦之隙」玩法中完成20个限时任务",
+		need = 20,
+		activity_id = 322001,
+		system = "",
+		id = 150378,
+		phase = 0,
+		additional_parameter = {
+			40001001,
+			40001002,
+			40001003,
+			40001004,
+			40001005,
+			40001006,
+			40001007,
+			40001008,
+			40001009,
+			40001010,
+			40001011,
+			40001012,
+			40001013,
+			40001014,
+			40001015,
+			40001016,
+			40001017,
+			40001018,
+			40001019,
+			40001020
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150379] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 330005,
+		desc = "「刺桐港埠漫行记」玩法中在地图中巧遇5个石敢当",
+		need = 5,
+		activity_id = 322001,
+		system = "",
+		id = 150379,
+		phase = 0,
+		additional_parameter = {
+			323641
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150380] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 300,
+		desc = "「刺桐港埠漫行记」玩法中获得8张照片",
+		need = 8,
+		activity_id = 322001,
+		system = "",
+		id = 150380,
+		phase = 0,
+		additional_parameter = {
+			77
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150381] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 330001,
+		desc = "「刺桐港埠漫行记」玩法中通关「渡洋承运」深海危机IV",
+		need = 1,
+		activity_id = 322001,
+		system = "",
+		id = 150381,
+		phase = 0,
+		additional_parameter = {
+			5240211
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150382] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 310002,
+		desc = "「刺桐港埠漫行记」玩法中完成主线任务「定风波，沧海阔」",
+		need = 1,
+		activity_id = 322001,
+		system = "",
+		id = 150382,
+		phase = 0,
+		additional_parameter = {
+			11108
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150383] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 501,
+		desc = "「刺桐港埠漫行记」玩法中完成24个限时任务",
+		need = 24,
+		activity_id = 322001,
+		system = "",
+		id = 150383,
+		phase = 0,
+		additional_parameter = {
+			40002001,
+			40002002,
+			40002003,
+			40002004,
+			40002005,
+			40002006,
+			40002007,
+			40002008,
+			40002009,
+			40002010,
+			40002011,
+			40002012,
+			40002013,
+			40002014,
+			40002015,
+			40002016,
+			40002017,
+			40002018,
+			40002019,
+			40002020,
+			40002021,
+			40002022,
+			40002023,
+			40002024,
+			40002025,
+			40002026,
+			40002027,
+			40002028,
+			40002029,
+			40002030,
+			40002031,
+			40002032,
+			40002033,
+			40002034
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150384] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 1015,
+		desc = "使用权钥同调3级的黎幻·赫拉作为队长，通关Ω黑区25怨念等级2次",
+		need = 2,
+		activity_id = 322001,
+		system = "",
+		id = 150384,
+		phase = 0,
+		additional_parameter = {
+			1138,
+			25
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150385] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 190001,
+		desc = "在「怪物测试」中完成挑战「主线流程测试一」，分数达到1000分",
+		need = 1,
+		activity_id = 322001,
+		system = "",
+		id = 150385,
+		phase = 0,
+		additional_parameter = {
+			60500004,
+			1000
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150386] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 190001,
+		desc = "在「怪物测试」中完成挑战「功能流程测试二」，分数达到1000分",
+		need = 1,
+		activity_id = 322001,
+		system = "",
+		id = 150386,
+		phase = 0,
+		additional_parameter = {
+			60500005,
+			1000
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150387] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 190001,
+		desc = "在「怪物测试」中完成挑战「主线流程测试三」，分数达到1000分",
+		need = 1,
+		activity_id = 322001,
+		system = "",
+		id = 150387,
+		phase = 0,
+		additional_parameter = {
+			60500006,
+			1000
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[150388] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 402,
+		condition = 190001,
+		desc = "在「怪物测试」中完成挑战「震离梦魇测试」，分数达到1000分",
+		need = 1,
+		activity_id = 322001,
+		system = "",
+		id = 150388,
+		phase = 0,
+		additional_parameter = {
+			60551990,
+			1000
+		},
+		reward = {
+			{
+				53999,
+				50
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
 	get_id_list_by_type = {
 		[1101] = {
 			30701001,
@@ -113590,7 +118740,26 @@
 			150363,
 			150364,
 			150365,
-			150366
+			150366,
+			150369,
+			150370,
+			150371,
+			150372,
+			150374,
+			150375,
+			150376,
+			150377,
+			150378,
+			150379,
+			150380,
+			150381,
+			150382,
+			150383,
+			150384,
+			150385,
+			150386,
+			150387,
+			150388
 		},
 		[401] = {
 			150001,
@@ -113634,7 +118803,9 @@
 			150341,
 			150342,
 			150356,
-			150357
+			150357,
+			150367,
+			150368
 		},
 		[204] = {
 			145101,
@@ -114914,7 +120085,90 @@
 			31012001,
 			31012002,
 			31012003,
-			31012004
+			31012004,
+			40001001,
+			40001002,
+			40001003,
+			40001004,
+			40001005,
+			40001006,
+			40001007,
+			40001008,
+			40001009,
+			40001010,
+			40001011,
+			40001012,
+			40001013,
+			40001014,
+			40001015,
+			40001016,
+			40001017,
+			40001018,
+			40001019,
+			40001020,
+			40001021,
+			40001022,
+			40001023,
+			40001024,
+			40002001,
+			40002002,
+			40002003,
+			40002004,
+			40002005,
+			40002006,
+			40002007,
+			40002008,
+			40002009,
+			40002010,
+			40002011,
+			40002012,
+			40002013,
+			40002014,
+			40002015,
+			40002016,
+			40002017,
+			40002018,
+			40002019,
+			40002020,
+			40002021,
+			40002022,
+			40002023,
+			40002024,
+			40002025,
+			40002026,
+			40002027,
+			40002028,
+			40002029,
+			40002030,
+			40002031,
+			40002032,
+			40002033,
+			40002034,
+			40002035,
+			40002036,
+			40002037,
+			40002038,
+			40003004,
+			40003005,
+			40003006,
+			40003007,
+			40004006,
+			40004007,
+			40004008,
+			40004009,
+			40004010,
+			40004011,
+			40004012,
+			40004013,
+			40004014,
+			40004015,
+			40004016,
+			40004017,
+			40004018,
+			40006001,
+			40006002,
+			40006003,
+			40006004
 		},
 		[3001] = {
 			130001,
@@ -115110,7 +120364,15 @@
 			31011002,
 			31011003,
 			31011004,
-			31011005
+			31011005,
+			40003001,
+			40003002,
+			40003003,
+			40004001,
+			40004002,
+			40004003,
+			40004004,
+			40004005
 		},
 		[11] = {
 			120001,
@@ -115227,7 +120489,10 @@
 			30801003,
 			31008001,
 			31008002,
-			31008003
+			31008003,
+			40005001,
+			40005002,
+			40005003
 		},
 		[8] = {
 			81001,
@@ -115244,6 +120509,27 @@
 			71001,
 			71002,
 			71003
+		},
+		[211] = {
+			60501,
+			60502,
+			60503,
+			60504
+		},
+		[210] = {
+			60401
+		},
+		[209] = {
+			60301,
+			60302,
+			60303,
+			60304
+		},
+		[207] = {
+			60101,
+			60102,
+			60103,
+			60104
 		},
 		[203] = {
 			60007,
@@ -115810,7 +121096,34 @@
 			32330,
 			32331,
 			32332,
-			32333
+			32333,
+			32400,
+			32401,
+			32402,
+			32403,
+			32404,
+			32405,
+			32406,
+			32407,
+			32408,
+			32409,
+			32410,
+			32411,
+			32412,
+			32413,
+			32414,
+			32415,
+			32416,
+			32417,
+			32418,
+			32419,
+			32420,
+			32421,
+			32422,
+			32423,
+			32424,
+			32425,
+			32426
 		},
 		[903] = {
 			10101,
@@ -115852,6 +121165,151 @@
 		}
 	},
 	get_id_list_by_activity_id = {
+		[322001] = {
+			150367,
+			150368,
+			150369,
+			150370,
+			150371,
+			150372,
+			150374,
+			150375,
+			150376,
+			150377,
+			150378,
+			150379,
+			150380,
+			150381,
+			150382,
+			150383,
+			150384,
+			150385,
+			150386,
+			150387,
+			150388
+		},
+		[323501] = {
+			40006001,
+			40006002,
+			40006003,
+			40006004
+		},
+		[320048] = {
+			40005001,
+			40005002,
+			40005003
+		},
+		[320047] = {
+			40004001,
+			40004002,
+			40004003,
+			40004004,
+			40004005,
+			40004006,
+			40004007,
+			40004008,
+			40004009,
+			40004010,
+			40004011,
+			40004012,
+			40004013,
+			40004014,
+			40004015,
+			40004016,
+			40004017,
+			40004018
+		},
+		[322142] = {
+			40003001,
+			40003002,
+			40003003,
+			40003004,
+			40003005,
+			40003006,
+			40003007
+		},
+		[3200411] = {
+			40002035,
+			40002036,
+			40002037,
+			40002038
+		},
+		[3200416] = {
+			40002029,
+			40002030,
+			40002031,
+			40002032,
+			40002033,
+			40002034
+		},
+		[3200415] = {
+			40002024,
+			40002025,
+			40002026,
+			40002027,
+			40002028
+		},
+		[3200414] = {
+			40002014,
+			40002015,
+			40002016,
+			40002017,
+			40002018,
+			40002019,
+			40002020,
+			40002021,
+			40002022,
+			40002023
+		},
+		[3200413] = {
+			40002008,
+			40002009,
+			40002010,
+			40002011,
+			40002012,
+			40002013
+		},
+		[3200412] = {
+			40002001,
+			40002002,
+			40002003,
+			40002004,
+			40002005,
+			40002006,
+			40002007
+		},
+		[320045] = {
+			40001021,
+			40001022,
+			40001023,
+			40001024
+		},
+		[320044] = {
+			40001017,
+			40001018,
+			40001019,
+			40001020
+		},
+		[320043] = {
+			40001011,
+			40001012,
+			40001013,
+			40001014,
+			40001015,
+			40001016
+		},
+		[320042] = {
+			40001001,
+			40001002,
+			40001003,
+			40001004,
+			40001005,
+			40001006,
+			40001007,
+			40001008,
+			40001009,
+			40001010
+		},
 		[312002] = {
 			150356,
 			150357,
@@ -119077,6 +124535,33 @@
 			32331,
 			32332,
 			32333,
+			32400,
+			32401,
+			32402,
+			32403,
+			32404,
+			32405,
+			32406,
+			32407,
+			32408,
+			32409,
+			32410,
+			32411,
+			32412,
+			32413,
+			32414,
+			32415,
+			32416,
+			32417,
+			32418,
+			32419,
+			32420,
+			32421,
+			32422,
+			32423,
+			32424,
+			32425,
+			32426,
 			40100,
 			40101,
 			40102,
@@ -119180,6 +124665,19 @@
 			60010,
 			60011,
 			60012,
+			60101,
+			60102,
+			60103,
+			60104,
+			60301,
+			60302,
+			60303,
+			60304,
+			60401,
+			60501,
+			60502,
+			60503,
+			60504,
 			71001,
 			71002,
 			71003,
@@ -120371,6 +125869,33 @@
 		32331,
 		32332,
 		32333,
+		32400,
+		32401,
+		32402,
+		32403,
+		32404,
+		32405,
+		32406,
+		32407,
+		32408,
+		32409,
+		32410,
+		32411,
+		32412,
+		32413,
+		32414,
+		32415,
+		32416,
+		32417,
+		32418,
+		32419,
+		32420,
+		32421,
+		32422,
+		32423,
+		32424,
+		32425,
+		32426,
 		40100,
 		40101,
 		40102,
@@ -120514,6 +126039,19 @@
 		60050,
 		60051,
 		60052,
+		60101,
+		60102,
+		60103,
+		60104,
+		60301,
+		60302,
+		60303,
+		60304,
+		60401,
+		60501,
+		60502,
+		60503,
+		60504,
 		71001,
 		71002,
 		71003,
@@ -123473,6 +129011,121 @@
 		150363,
 		150364,
 		150365,
-		150366
+		150366,
+		40001001,
+		40001002,
+		40001003,
+		40001004,
+		40001005,
+		40001006,
+		40001007,
+		40001008,
+		40001009,
+		40001010,
+		40001011,
+		40001012,
+		40001013,
+		40001014,
+		40001015,
+		40001016,
+		40001017,
+		40001018,
+		40001019,
+		40001020,
+		40001021,
+		40001022,
+		40001023,
+		40001024,
+		40002001,
+		40002002,
+		40002003,
+		40002004,
+		40002005,
+		40002006,
+		40002007,
+		40002008,
+		40002009,
+		40002010,
+		40002011,
+		40002012,
+		40002013,
+		40002014,
+		40002015,
+		40002016,
+		40002017,
+		40002018,
+		40002019,
+		40002020,
+		40002021,
+		40002022,
+		40002023,
+		40002024,
+		40002025,
+		40002026,
+		40002027,
+		40002028,
+		40002029,
+		40002030,
+		40002031,
+		40002032,
+		40002033,
+		40002034,
+		40002035,
+		40002036,
+		40002037,
+		40002038,
+		40003001,
+		40003002,
+		40003003,
+		40003004,
+		40003005,
+		40003006,
+		40003007,
+		40004001,
+		40004002,
+		40004003,
+		40004004,
+		40004005,
+		40004006,
+		40004007,
+		40004008,
+		40004009,
+		40004010,
+		40004011,
+		40004012,
+		40004013,
+		40004014,
+		40004015,
+		40004016,
+		40004017,
+		40004018,
+		40005001,
+		40005002,
+		40005003,
+		40006001,
+		40006002,
+		40006003,
+		40006004,
+		150367,
+		150368,
+		150369,
+		150370,
+		150371,
+		150372,
+		150374,
+		150375,
+		150376,
+		150377,
+		150378,
+		150379,
+		150380,
+		150381,
+		150382,
+		150383,
+		150384,
+		150385,
+		150386,
+		150387,
+		150388
 	}
 }

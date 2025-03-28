@@ -24,16 +24,13 @@ function var_0_0.Init(arg_3_0)
 
 	arg_3_0.questSideView_ = QWorldQuestSideView.New(arg_3_0.gameObject_, arg_3_0)
 	arg_3_0.rewardSideView_ = QWorldRewardSideView.New(arg_3_0.gameObject_, arg_3_0)
-
-	QWorldNotifyQueue:Init()
 end
 
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
 	arg_4_0.doggleController = arg_4_0.rootController_:GetController("doggleState")
-	arg_4_0.collectLockController = arg_4_0.collectController_:GetController("lock")
-	arg_4_0.collectTimelimitController = arg_4_0.collectController_:GetController("timelimit")
+	arg_4_0.interactController = arg_4_0.rootController_:GetController("InteractState")
 
 	local var_4_0 = arg_4_0.leftPanelTrans_:GetComponent("VerticalLayoutGroup")
 
@@ -43,6 +40,7 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.rewardPanelGo_.transform.anchorMax = Vector2(0, 1)
 	arg_4_0.questContentGo_.transform.anchorMin = Vector2(0, 1)
 	arg_4_0.questContentGo_.transform.anchorMax = Vector2(0, 1)
+	arg_4_0.menuList = LuaList.New(handler(arg_4_0, arg_4_0.IndexMenuItem), arg_4_0.menuObj_, QWorldMainMenuItemContainer)
 end
 
 function var_0_0.GetPlayBackwardsAnimator(arg_5_0)
@@ -80,15 +78,6 @@ function var_0_0.AddUIListener(arg_6_0)
 			end
 		})
 	end)
-	arg_6_0:AddBtnListener(arg_6_0.sealBtn_, nil, function()
-		if not arg_6_0:CheckCanInteract() then
-			return
-		end
-
-		arg_6_0.fadeAnim = true
-
-		JumpTools.OpenPageByJump("/springStampingMain")
-	end)
 	arg_6_0:AddBtnListener(arg_6_0.miniMapBtn_, nil, function()
 		if not arg_6_0:CheckCanInteract() then
 			return
@@ -98,41 +87,32 @@ function var_0_0.AddUIListener(arg_6_0)
 
 		JumpTools.GoToSystem("/qWorldMaxMapView")
 	end)
-	arg_6_0:AddBtnListener(arg_6_0.bookBtn_, nil, function()
-		if not arg_6_0:CheckCanInteract() then
-			return
-		end
-
-		SandPlayIlluTool.EnterSandPlayIllu()
-	end)
-	arg_6_0:AddBtnListener(arg_6_0.shopBtn_, nil, function()
-		if not arg_6_0:CheckCanInteract() then
-			return
-		end
-
-		QWorldMgr:GetQWorldTagMgr():GotoTag(arg_6_0.shopTagId, arg_6_0.entityId)
-	end)
-	arg_6_0:AddBtnListener(arg_6_0.collectBtn_, nil, function()
-		if not arg_6_0:CheckCanInteract() then
-			return
-		end
-
-		if QWorldMgr:GetQWorldTagMgr():CheckTagCanOpen(arg_6_0.redCardTagId) and arg_6_0:GetRedCardAvaliable() then
-			QWorldMgr:GetQWorldTagMgr():GotoTag(arg_6_0.redCardTagId, arg_6_0.entityId)
-		else
-			local var_15_0 = ActivityData:GetActivityData(SandplayTagCfg[arg_6_0.redCardTagId].activityId)
-
-			ShowTips(GetTipsF("ACTIVITY_SPRING_RED_ENVELOPE_OPEN_TIPS", manager.time:GetLostTimeStr(var_15_0.startTime)))
-		end
-	end)
 	arg_6_0:AddBtnListener(arg_6_0.exitInteractBtn_, nil, function()
 		QWorldMgr:GetQWorldPerformMgr():MarkFuniturePerformWaitInterrupt()
 	end)
-	arg_6_0:RegistEventListener(QWORLD_ENTER_PERFORM, function(arg_17_0, arg_17_1)
-		if not arg_17_0 then
+	arg_6_0:RegistEventListener(QWORLD_ENTER_PERFORM, function(arg_13_0, arg_13_1)
+		if not arg_13_0 then
 			arg_6_0:ChangeDoddleState("doggle")
-		elseif not arg_17_1 then
+		elseif not arg_13_1 then
 			arg_6_0:ChangeDoddleState("exitInteract")
+		end
+	end)
+	arg_6_0:RegistEventListener(QWORLD_SYSTEM_OPEN, function(arg_14_0)
+		arg_6_0:RenderMenu()
+	end)
+	arg_6_0:RegistEventListener(QWORLD_SYSTEM_CLOSE, function(arg_15_0)
+		arg_6_0:RenderMenu()
+	end)
+	arg_6_0:RegistEventListener(QWORLD_INTERACTION_CHANGE, function(arg_16_0)
+		arg_6_0:ChangeInteractionMode(arg_16_0)
+	end)
+	arg_6_0:RegistEventListener(STORY_AVG_HIDE_MAIN_UI, function(arg_17_0)
+		if gameContext:GetLastOpenPage() == "qworldMainHome" then
+			if arg_17_0 then
+				arg_6_0:OnBehind()
+			else
+				arg_6_0:OnTop()
+			end
 		end
 	end)
 end
@@ -146,12 +126,15 @@ function var_0_0.OnEnter(arg_18_0)
 	arg_18_0:BindRedPoint()
 	arg_18_0:RefreshUI()
 	arg_18_0:OnQworldTrackUpdate()
-	arg_18_0:InitShopAndRedCard()
 	arg_18_0:CheckAutoCookHaveGoldIsMax()
 	ActivityQuizTools.CheckQuizActivityHint()
 	arg_18_0:RedEnvelopeClaimed()
+	arg_18_0:RenderMenu()
+	arg_18_0:ChangeInteractionMode(QWorldLuaBridge.GetInteractionMode())
 
 	arg_18_0.fadeAnim = false
+
+	QWorldQuanzhouNotify:Process()
 end
 
 function var_0_0.RedEnvelopeClaimed(arg_19_0)
@@ -197,7 +180,7 @@ end
 function var_0_0.CheckHint(arg_24_0)
 	local var_24_0 = QWorldMgr:GetQWorldHintMgr()
 
-	if not var_24_0.isPlayingQueue then
+	if var_24_0 and not var_24_0.isPlayingQueue then
 		var_24_0:DisplayNextHint()
 	end
 end
@@ -210,10 +193,13 @@ function var_0_0.OnTop(arg_25_0)
 	QWorldQuestGraph:DispatchQuestEvent(QWorldQuestConst.QUEST_EVENT.ON_BACK_MAIN_HOME, 0)
 	arg_25_0:OnQWorldMainQueueUpdate()
 	arg_25_0:CheckQWorldFunctionOpen()
+	SetActive(arg_25_0.miniMapGo_, true)
 
 	if arg_25_0.notifyTimer_ and QWorldNotifyQueue:HasNotifies() then
 		QWorldNotifyQueue:UpdateNotifies()
 	end
+
+	arg_25_0:ChangeInteractionMode(QWorldLuaBridge.GetInteractionMode())
 end
 
 function var_0_0.OnBehind(arg_26_0)
@@ -226,12 +212,12 @@ function var_0_0.OnBehind(arg_26_0)
 end
 
 function var_0_0.OnExit(arg_27_0)
-	CursorTools.LuaSwitchCursor(true)
+	LuaForCursor.SwitchCursor(true)
 	manager.notify:Invoke(QWORLD_OPEN_MAIN_VIEW, 0)
 	QWorldMgr:ActivePlayerControl(false)
 	arg_27_0.questSideView_:OnExit()
 	arg_27_0.rewardSideView_:OnExit()
-	QWorldMgr:GetQWorldHintMgr():StopTimerAndHideHint(true)
+	QWorldMgr:GetQWorldHintMgr():StopTimerAndHideHint()
 	arg_27_0:UnBindRedPoint()
 	arg_27_0:StopCheckHintTimer()
 	arg_27_0:StopAutoCookTimer()
@@ -265,7 +251,7 @@ function var_0_0.CheckQWorldFunctionOpen(arg_32_0, arg_32_1)
 	for iter_32_0, iter_32_1 in pairs(QWorldFunction) do
 		local var_32_0 = SandPlayFunctionOpenCfg[iter_32_0]
 
-		if var_32_0 then
+		if var_32_0 and var_32_0.map_id == QWorldMgr:GetMapId() then
 			SetActive(arg_32_0[iter_32_1], IsConditionAchieved(var_32_0.condition_id))
 		end
 	end
@@ -303,154 +289,81 @@ function var_0_0.RefreshUI(arg_36_0)
 	return
 end
 
-function var_0_0.BindRedPoint(arg_37_0)
-	manager.redPoint:bindUIandKey(arg_37_0.sealBtn_.transform, RedPointConst.ACTIVITY_SPRING_STAMPING)
-	manager.redPoint:bindUIandKey(arg_37_0.bookBtn_.transform, RedPointConst.ACTIVITY_SANDPLAY_ILLU)
-	manager.redPoint:bindUIandKey(arg_37_0.miniMapGo_.transform, RedPointConst.QWORLD_MINI_MAP)
-	manager.redPoint:bindUIandKey(arg_37_0.shopBtnObj_.transform, RedPointConst.ACTIVITY_SPRING_FESTIVAL_SHOP)
-	manager.redPoint:bindUIandKey(arg_37_0.collectBtn_.transform, RedPointConst.ACTIVITY_RED_ENVELOPE .. "_" .. ActivityConst.ACTIVITY_RED_ENVELOPE)
-end
+function var_0_0.RenderMenu(arg_37_0)
+	local var_37_0 = SandPlayMapCfg[QWorldMgr:GetMapId()].system_list
 
-function var_0_0.UnBindRedPoint(arg_38_0)
-	manager.redPoint:unbindUIandKey(arg_38_0.sealBtn_.transform, RedPointConst.ACTIVITY_SPRING_STAMPING)
-	manager.redPoint:unbindUIandKey(arg_38_0.bookBtn_.transform, RedPointConst.ACTIVITY_SANDPLAY_ILLU)
-	manager.redPoint:unbindUIandKey(arg_38_0.miniMapGo_.transform, RedPointConst.QWORLD_MINI_MAP)
-	manager.redPoint:unbindUIandKey(arg_38_0.shopBtnObj_.transform, RedPointConst.ACTIVITY_SPRING_FESTIVAL_SHOP)
-	manager.redPoint:unbindUIandKey(arg_38_0.collectBtn_.transform, RedPointConst.ACTIVITY_RED_ENVELOPE .. "_" .. ActivityConst.ACTIVITY_RED_ENVELOPE)
-end
+	arg_37_0.systemList = {}
 
-function var_0_0.ChangeDoddleState(arg_39_0, arg_39_1)
-	arg_39_0.doggleController:SetSelectedState(arg_39_1)
-end
-
-function var_0_0.Dispose(arg_40_0)
-	arg_40_0.leftPanelSpacing_ = nil
-
-	arg_40_0:StopTimers()
-	arg_40_0.questSideView_:Dispose()
-	arg_40_0.rewardSideView_:Dispose()
-	arg_40_0.miniMapCom:Dispose()
-	arg_40_0:DisposeShopAndRed()
-	QWorldNotifyQueue:Dispose()
-	var_0_0.super.Dispose(arg_40_0)
-end
-
-function var_0_0.OnQworldTrackUpdate(arg_41_0)
-	local var_41_0 = QWorldMgr:GetQWorldEntityMgr():GetTrackEntityIds()
-
-	arg_41_0.trackerCom:UpdateTrack(var_41_0)
-end
-
-function var_0_0.StopTimers(arg_42_0)
-	if arg_42_0.notifyTimer_ then
-		QWorldNotifyQueue:HideNotifies()
-		arg_42_0.notifyTimer_:Stop()
-
-		arg_42_0.notifyTimer_ = nil
-	end
-end
-
-function var_0_0.InitShopAndRedCard(arg_43_0)
-	arg_43_0.shopTagId = 313631
-	arg_43_0.redCardTagId = 313581
-	arg_43_0.redCardEntityId = 30046
-	arg_43_0.unlockRedCard = 10117001
-
-	arg_43_0:OnTagActiveChanged()
-	arg_43_0:RegistEventListener(QWORLD_TAG_ACTIVE_CHANGE, function()
-		arg_43_0:OnTagActiveChanged()
-	end)
-	arg_43_0:RegistEventListener(QWORLD_SUB_QUEST_FINISH, function(arg_45_0)
-		if arg_45_0 == arg_43_0.unlockRedCard then
-			arg_43_0:OnTagActiveChanged()
+	for iter_37_0, iter_37_1 in ipairs(var_37_0) do
+		if SandPlaySystemCfg[iter_37_1].is_entrance == 1 and QWorldSystemData:IsSystemOpened(iter_37_1) then
+			table.insert(arg_37_0.systemList, iter_37_1)
 		end
+	end
+
+	table.sort(arg_37_0.systemList, function(arg_38_0, arg_38_1)
+		local var_38_0 = SandPlaySystemCfg[arg_38_0]
+		local var_38_1 = SandPlaySystemCfg[arg_38_1]
+
+		if var_38_0.sort == var_38_1.sort then
+			return var_38_0.id > var_38_1.id
+		end
+
+		return var_38_0.sort < var_38_1.sort
 	end)
+	arg_37_0.menuList:StartScroll(#arg_37_0.systemList)
 end
 
-function var_0_0.OnTagActiveChanged(arg_46_0)
-	arg_46_0:CheckShopAvaliable()
-	arg_46_0:CheckRedCardAvaliable()
+function var_0_0.IndexMenuItem(arg_39_0, arg_39_1, arg_39_2)
+	arg_39_2:Render(arg_39_0, arg_39_0.systemList[arg_39_1])
 end
 
-function var_0_0.CheckShopAvaliable(arg_47_0)
-	SetActive(arg_47_0.shopBtnObj_, QWorldMgr:GetQWorldTagMgr():CheckTagCanOpen(arg_47_0.shopTagId))
+function var_0_0.BindRedPoint(arg_40_0)
+	manager.redPoint:bindUIandKey(arg_40_0.miniMapGo_.transform, RedPointConst.QWORLD_MINI_MAP)
 end
 
-function var_0_0.GetRedCardAvaliable(arg_48_0)
-	return QWorldQuestTool.IsSubQuestFinish(SandplayTagCfg[arg_48_0.redCardTagId].questId) and ActivityData:GetActivityIsOpen(SandplayTagCfg[arg_48_0.redCardTagId].activityId) and QWorldQuestTool.IsSubQuestFinish(arg_48_0.unlockRedCard)
+function var_0_0.UnBindRedPoint(arg_41_0)
+	manager.redPoint:unbindUIandKey(arg_41_0.miniMapGo_.transform, RedPointConst.QWORLD_MINI_MAP)
 end
 
-function var_0_0.CheckRedCardAvaliable(arg_49_0)
-	arg_49_0:CheckRedCardLeftTime()
+function var_0_0.ChangeDoddleState(arg_42_0, arg_42_1)
+	arg_42_0.doggleController:SetSelectedState(arg_42_1)
+end
 
-	local var_49_0 = QWorldQuestTool.IsSubQuestFinish(SandplayTagCfg[arg_49_0.redCardTagId].questId) and (not QWorldQuestTool.IsSubQuestFinish(arg_49_0.unlockRedCard) or ActivityData:GetActivityIsOpen(SandplayTagCfg[arg_49_0.redCardTagId].activityId) or false) and true
+function var_0_0.Dispose(arg_43_0)
+	arg_43_0.leftPanelSpacing_ = nil
 
-	SetActive(arg_49_0.collectBtnObj_, var_49_0)
+	arg_43_0:StopTimers()
+	arg_43_0.questSideView_:Dispose()
+	arg_43_0.rewardSideView_:Dispose()
+	arg_43_0.miniMapCom:Dispose()
+	arg_43_0.menuList:Dispose()
+	QWorldMgr:DisposeQueue()
+	var_0_0.super.Dispose(arg_43_0)
+end
 
-	if not var_49_0 then
-		return
-	end
+function var_0_0.OnQworldTrackUpdate(arg_44_0)
+	local var_44_0 = QWorldMgr:GetQWorldEntityMgr():GetTrackEntityIds()
 
-	if arg_49_0.redCardTimer then
-		arg_49_0.redCardTimer:Stop()
+	arg_44_0.trackerCom:UpdateTrack(var_44_0)
+end
 
-		arg_49_0.redCardTimer = nil
-	end
+function var_0_0.StopTimers(arg_45_0)
+	if arg_45_0.notifyTimer_ then
+		QWorldNotifyQueue:HideNotifies()
+		arg_45_0.notifyTimer_:Stop()
 
-	local var_49_1 = QWorldQuestTool.IsSubQuestFinish(arg_49_0.unlockRedCard) and ActivityData:GetActivityIsOpen(SandplayTagCfg[arg_49_0.redCardTagId].activityId)
-
-	arg_49_0.collectLockController:SetSelectedState(var_49_1 and "unlock" or "lock")
-	arg_49_0.collectTimelimitController:SetSelectedState(var_49_1 and "state1" or "state0")
-
-	if var_49_1 then
-		local var_49_2 = manager.time:GetLostTimeStr(arg_49_0.stopTime_)
-
-		arg_49_0.countDownTime_.text = var_49_2
-		arg_49_0.redCardTimer = Timer.New(function()
-			if not ActivityData:GetActivityIsOpen(SandplayTagCfg[arg_49_0.redCardTagId].activityId) then
-				if arg_49_0.redCardTimer then
-					arg_49_0.redCardTimer:Stop()
-
-					arg_49_0.redCardTimer = nil
-				end
-
-				arg_49_0.collectTimelimitController:SetSelectedState("state1")
-			else
-				local var_50_0 = manager.time:GetLostTimeStr(arg_49_0.stopTime_)
-
-				arg_49_0.countDownTime_.text = var_50_0
-			end
-		end, 1, -1)
-
-		arg_49_0.redCardTimer:Start()
+		arg_45_0.notifyTimer_ = nil
 	end
 end
 
-function var_0_0.CheckRedCardLeftTime(arg_51_0)
-	local var_51_0 = 0
-	local var_51_1 = 0
-	local var_51_2 = ActivityData:GetActivityData(SandplayTagCfg[arg_51_0.redCardTagId].activityId)
+function var_0_0.AddAutoCookTimer(arg_46_0)
+	arg_46_0:StopAutoCookTimer()
 
-	arg_51_0.stopTime_ = var_51_2.stopTime
-	arg_51_0.startTime_ = var_51_2.startTime
-end
-
-function var_0_0.DisposeShopAndRed(arg_52_0)
-	if arg_52_0.redCardTimer then
-		arg_52_0.redCardTimer:Stop()
-
-		arg_52_0.redCardTimer = nil
-	end
-end
-
-function var_0_0.AddAutoCookTimer(arg_53_0)
-	arg_53_0:StopAutoCookTimer()
-
-	arg_53_0.autoCookTimer_ = Timer.New(function()
+	arg_46_0.autoCookTimer_ = Timer.New(function()
 		if ActivityAutoCookData:CheckWillRewardMaxToLimit() then
-			arg_53_0.autoCookMaxGoldFlag_ = true
+			arg_46_0.autoCookMaxGoldFlag_ = true
 
-			arg_53_0:StopAutoCookTimer()
+			arg_46_0:StopAutoCookTimer()
 
 			if ActivityAutoCookData:GetCurWeekCanGet() <= 0 then
 				return
@@ -460,22 +373,32 @@ function var_0_0.AddAutoCookTimer(arg_53_0)
 		end
 	end, 5, -1)
 
-	arg_53_0.autoCookTimer_:Start()
+	arg_46_0.autoCookTimer_:Start()
 end
 
-function var_0_0.StopAutoCookTimer(arg_55_0)
-	if arg_55_0.autoCookTimer_ then
-		arg_55_0.autoCookTimer_:Stop()
-
-		arg_55_0.autoCookTimer_ = nil
+function var_0_0.ChangeInteractionMode(arg_48_0, arg_48_1)
+	if arg_48_1 == QWorldInteractionMode.FULL or arg_48_1 == QWorldInteractionMode.ONLY_CONTROL then
+		arg_48_0.interactController:SetSelectedState("Full")
+	elseif arg_48_1 == QWorldInteractionMode.ONLY_CONTROL_RUN then
+		arg_48_0.interactController:SetSelectedState("Full")
+	elseif arg_48_1 == QWorldInteractionMode.ONLY_CONTROL_WALK then
+		arg_48_0.interactController:SetSelectedState("OnlyMove")
 	end
 end
 
-function var_0_0.StopCheckHintTimer(arg_56_0)
-	if arg_56_0.checkHintTimer_ then
-		arg_56_0.checkHintTimer_:Stop()
+function var_0_0.StopAutoCookTimer(arg_49_0)
+	if arg_49_0.autoCookTimer_ then
+		arg_49_0.autoCookTimer_:Stop()
 
-		arg_56_0.checkHintTimer_ = nil
+		arg_49_0.autoCookTimer_ = nil
+	end
+end
+
+function var_0_0.StopCheckHintTimer(arg_50_0)
+	if arg_50_0.checkHintTimer_ then
+		arg_50_0.checkHintTimer_:Stop()
+
+		arg_50_0.checkHintTimer_ = nil
 	end
 end
 

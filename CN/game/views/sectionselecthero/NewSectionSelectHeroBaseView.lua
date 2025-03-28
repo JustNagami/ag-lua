@@ -37,100 +37,101 @@ function var_0_0.InitCallback(arg_6_0)
 	arg_6_0.clickStartBattleHandler_ = handler(arg_6_0, arg_6_0.OnSectionClickStartBattle)
 end
 
-function var_0_0.AddListener(arg_7_0)
+function var_0_0.ReserveCameraEnter(arg_7_0)
+	manager.loadScene:SetSceneActive(SceneConst.SCENE_NAME.reserve, true)
+	manager.reserveCamera:SwitchCamera(ReserveCameraConst.CAMERA_TYPE.common, ReserveCameraConst.VIRTUAL_CAMERA.sectionSelectHero)
+end
+
+function var_0_0.AddListener(arg_8_0)
 	return
 end
 
-function var_0_0.OnTop(arg_8_0)
-	arg_8_0:UpdateBar()
+function var_0_0.OnTop(arg_9_0)
+	arg_9_0:UpdateBar()
 end
 
-function var_0_0.OnBehind(arg_9_0)
+function var_0_0.OnBehind(arg_10_0)
 	manager.windowBar:HideBar()
 end
 
-function var_0_0.OnEnter(arg_10_0)
-	arg_10_0:AddEventListener()
-	arg_10_0:ProcessParams()
-	arg_10_0:ProcessSubView()
-	arg_10_0:UpdateCamera()
-	arg_10_0:SubViewOnEnter()
-	arg_10_0:Refresh()
+function var_0_0.OnEnter(arg_11_0)
+	arg_11_0:AddEventListener()
+	arg_11_0:ProcessParams()
+	arg_11_0:ProcessSubView()
+	arg_11_0:SubViewOnEnter()
+	arg_11_0:Refresh()
 end
 
-function var_0_0.OnEnterOver(arg_11_0)
-	arg_11_0:RegistEventListener(ON_ASYNC_SCENE_LOADED, function(arg_12_0)
-		if arg_12_0 == "X104" and arg_11_0.gameObject_.activeInHierarchy then
-			arg_11_0:OnAsyncSceneLoaded()
+function var_0_0.OnEnterOver(arg_12_0)
+	arg_12_0:RegistEventListener(ON_ASYNC_SCENE_LOADED, function(arg_13_0)
+		if arg_13_0 == "X104" and arg_12_0.gameObject_.activeInHierarchy then
+			arg_12_0:OnAsyncSceneLoaded()
 		end
 	end)
 end
 
-function var_0_0.OnAsyncSceneLoaded(arg_13_0)
-	arg_13_0.subViewDic_.selectHeroView.instance:RebindController()
-	arg_13_0.subViewDic_.selectHeroView.instance:RefreshHeroInfoItem()
+function var_0_0.OnAsyncSceneLoaded(arg_14_0)
+	arg_14_0.subViewDic_.selectHeroView.instance:RebindController()
+	arg_14_0.subViewDic_.selectHeroView.instance:UpdatePosition()
+	arg_14_0.subViewDic_.selectHeroView.instance:RefreshHeroInfoItem()
 end
 
-function var_0_0.AddEventListener(arg_14_0)
-	arg_14_0:RegistEventListener(SECTION_CLICK_HERO, arg_14_0.clickHeroHandler_)
-	arg_14_0:RegistEventListener(SECTION_CLICK_START_BATTLE, arg_14_0.clickStartBattleHandler_)
+function var_0_0.AddEventListener(arg_15_0)
+	arg_15_0:RegistEventListener(SECTION_CLICK_HERO, arg_15_0.clickHeroHandler_)
+	arg_15_0:RegistEventListener(SECTION_CLICK_START_BATTLE, arg_15_0.clickStartBattleHandler_)
 end
 
-function var_0_0.ProcessParams(arg_15_0)
-	arg_15_0:ProcessBaseParams()
-	arg_15_0:ProcessReserveParams()
-	arg_15_0:ProcessProxyParams()
-	arg_15_0:ProcessCustomParams()
+function var_0_0.ProcessParams(arg_16_0)
+	arg_16_0:ProcessBaseParams()
+	arg_16_0:ProcessReserveParams()
+	arg_16_0:ProcessProxyParams()
+	arg_16_0:ProcessCustomParams()
 end
 
-function var_0_0.ProcessBaseParams(arg_16_0)
-	arg_16_0.multiple_ = arg_16_0.params_.multiple or 1
-	arg_16_0.stageID_ = arg_16_0.params_.section
-	arg_16_0.stageType_ = arg_16_0.params_.sectionType or BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_UNDEFINED
-	arg_16_0.activityID_ = arg_16_0.params_.activityID
+function var_0_0.ProcessBaseParams(arg_17_0)
+	arg_17_0.multiple_ = arg_17_0.params_.multiple or 1
+	arg_17_0.stageID_ = arg_17_0.params_.section
+	arg_17_0.stageType_ = arg_17_0.params_.sectionType or BattleConst.STAGE_TYPE_NEW.STAGE_TYPE_UNDEFINED
+	arg_17_0.activityID_ = arg_17_0.params_.activityID
 end
 
-function var_0_0.ProcessReserveParams(arg_17_0)
-	if not arg_17_0.params_.reserveParams then
-		arg_17_0.params_.reserveParams = ReserveTools.GetReserveParams(arg_17_0.stageType_, arg_17_0.stageID_, arg_17_0.activityID_)
-	elseif not arg_17_0.params_.reserveParams.customData.activityID then
-		arg_17_0.params_.reserveParams.customData.activityID = arg_17_0.activityID_
+function var_0_0.ProcessReserveParams(arg_18_0)
+	if not arg_18_0.params_.reserveParams then
+		arg_18_0.params_.reserveParams = ReserveTools.GetReserveParams(arg_18_0.stageType_, arg_18_0.stageID_, arg_18_0.activityID_)
+	elseif not arg_18_0.params_.reserveParams.customData.activityID then
+		arg_18_0.params_.reserveParams.customData.activityID = arg_18_0.activityID_
 	end
 
-	arg_17_0.reserveParams_ = arg_17_0.params_.reserveParams
+	arg_18_0.reserveParams_ = arg_18_0.params_.reserveParams
 end
 
-function var_0_0.ProcessProxyParams(arg_18_0)
-	if not arg_18_0.params_.sectionProxy then
-		local var_18_0 = arg_18_0.params_.heroDataType or HeroConst.HERO_DATA_TYPE.DEFAULT
+function var_0_0.ProcessProxyParams(arg_19_0)
+	if not arg_19_0.params_.sectionProxy then
+		local var_19_0 = arg_19_0.params_.heroDataType or HeroConst.HERO_DATA_TYPE.DEFAULT
 
-		arg_18_0.params_.sectionProxy = SectionSelectHeroTools.GetProxy(arg_18_0.params_, arg_18_0.reserveParams_, var_18_0)
+		arg_19_0.params_.sectionProxy = SectionSelectHeroTools.GetProxy(arg_19_0.params_, arg_19_0.reserveParams_, var_19_0)
 	end
 
-	arg_18_0.sectionProxy_ = arg_18_0.params_.sectionProxy
+	arg_19_0.sectionProxy_ = arg_19_0.params_.sectionProxy
+	arg_19_0.sectionProxy_.isEnter = not arg_19_0.params_.isBack
 end
 
-function var_0_0.ProcessCustomParams(arg_19_0)
+function var_0_0.ProcessCustomParams(arg_20_0)
 	return
 end
 
-function var_0_0.ProcessSubView(arg_20_0)
-	arg_20_0:InitSubView()
-	arg_20_0:TryReloadSubView()
-	arg_20_0:ProcessSubViewParams()
+function var_0_0.ProcessSubView(arg_21_0)
+	arg_21_0:InitSubView()
+	arg_21_0:TryReloadSubView()
+	arg_21_0:ProcessSubViewParams()
 end
 
-function var_0_0.ProcessSubViewParams(arg_21_0)
-	arg_21_0:SubViewCallFunc("SetProxy", arg_21_0.sectionProxy_)
+function var_0_0.ProcessSubViewParams(arg_22_0)
+	arg_22_0:SubViewCallFunc("SetProxy", arg_22_0.sectionProxy_)
 end
 
-function var_0_0.UpdateBar(arg_22_0)
-	arg_22_0.sectionProxy_:UpdateBar()
-end
-
-function var_0_0.UpdateCamera(arg_23_0)
-	manager.ui:SetMainCamera("battleHeroSelect")
-	manager.ui:AdaptUIByFOV()
+function var_0_0.UpdateBar(arg_23_0)
+	arg_23_0.sectionProxy_:UpdateBar()
 end
 
 function var_0_0.SubViewOnEnter(arg_24_0)
@@ -143,7 +144,7 @@ function var_0_0.OnExit(arg_25_0)
 
 	arg_25_0.params_.isSorted = false
 
-	manager.ui:ResetMainCamera()
+	manager.loadScene:SetSceneActive(SceneConst.SCENE_NAME.reserve, false)
 end
 
 function var_0_0.SubViewOnExit(arg_26_0)

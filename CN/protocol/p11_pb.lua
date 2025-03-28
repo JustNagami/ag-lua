@@ -89,7 +89,9 @@ local var_0_2 = {
 	CS_11100_FIELD_LIST = {},
 	SC_11101_FIELD_LIST = {},
 	SC_11103_FIELD_LIST = {},
-	SC_11105_FIELD_LIST = {}
+	SC_11105_FIELD_LIST = {},
+	CS_11106_FIELD_LIST = {},
+	SC_11107_FIELD_LIST = {}
 }
 
 SC_11001 = var_0_0.Descriptor()
@@ -338,6 +340,7 @@ var_0_2.SC_11097_FIELD_LIST.SC_11097_ACTIVITY_ID_FIELD = var_0_0.FieldDescriptor
 var_0_2.SC_11097_FIELD_LIST.SC_11097_UNLOCK_REWARD_FIELD = var_0_0.FieldDescriptor()
 var_0_2.SC_11097_FIELD_LIST.SC_11097_GAIN_REWARD_FIELD = var_0_0.FieldDescriptor()
 var_0_2.SC_11097_FIELD_LIST.SC_11097_UNLOCK_TIMES_FIELD = var_0_0.FieldDescriptor()
+var_0_2.SC_11097_FIELD_LIST.SC_11097_GIFT_REWARD_FIELD = var_0_0.FieldDescriptor()
 CS_11098 = var_0_0.Descriptor()
 var_0_2.CS_11098_FIELD_LIST.CS_11098_ACTIVITY_ID_FIELD = var_0_0.FieldDescriptor()
 var_0_2.CS_11098_FIELD_LIST.CS_11098_ID_LIST_FIELD = var_0_0.FieldDescriptor()
@@ -357,6 +360,11 @@ var_0_2.SC_11103_FIELD_LIST.SC_11103_REWARD_LIST_FIELD = var_0_0.FieldDescriptor
 SC_11105 = var_0_0.Descriptor()
 var_0_2.SC_11105_FIELD_LIST.SC_11105_ACTIVITY_ID_FIELD = var_0_0.FieldDescriptor()
 var_0_2.SC_11105_FIELD_LIST.SC_11105_POINT_FIELD = var_0_0.FieldDescriptor()
+CS_11106 = var_0_0.Descriptor()
+var_0_2.CS_11106_FIELD_LIST.CS_11106_ACTIVITY_ID_FIELD = var_0_0.FieldDescriptor()
+SC_11107 = var_0_0.Descriptor()
+var_0_2.SC_11107_FIELD_LIST.SC_11107_RESULT_FIELD = var_0_0.FieldDescriptor()
+var_0_2.SC_11107_FIELD_LIST.SC_11107_REWARDS_FIELD = var_0_0.FieldDescriptor()
 var_0_2.SC_11001_FIELD_LIST.SC_11001_ACTIVITY_LIST_FIELD.name = "activity_list"
 var_0_2.SC_11001_FIELD_LIST.SC_11001_ACTIVITY_LIST_FIELD.full_name = ".common.sc_11001.activity_list"
 var_0_2.SC_11001_FIELD_LIST.SC_11001_ACTIVITY_LIST_FIELD.number = 1
@@ -2680,6 +2688,15 @@ var_0_2.SC_11097_FIELD_LIST.SC_11097_UNLOCK_TIMES_FIELD.has_default_value = fals
 var_0_2.SC_11097_FIELD_LIST.SC_11097_UNLOCK_TIMES_FIELD.default_value = 0
 var_0_2.SC_11097_FIELD_LIST.SC_11097_UNLOCK_TIMES_FIELD.type = 13
 var_0_2.SC_11097_FIELD_LIST.SC_11097_UNLOCK_TIMES_FIELD.cpp_type = 3
+var_0_2.SC_11097_FIELD_LIST.SC_11097_GIFT_REWARD_FIELD.name = "gift_reward"
+var_0_2.SC_11097_FIELD_LIST.SC_11097_GIFT_REWARD_FIELD.full_name = ".common.sc_11097.gift_reward"
+var_0_2.SC_11097_FIELD_LIST.SC_11097_GIFT_REWARD_FIELD.number = 5
+var_0_2.SC_11097_FIELD_LIST.SC_11097_GIFT_REWARD_FIELD.index = 4
+var_0_2.SC_11097_FIELD_LIST.SC_11097_GIFT_REWARD_FIELD.label = 2
+var_0_2.SC_11097_FIELD_LIST.SC_11097_GIFT_REWARD_FIELD.has_default_value = false
+var_0_2.SC_11097_FIELD_LIST.SC_11097_GIFT_REWARD_FIELD.default_value = 0
+var_0_2.SC_11097_FIELD_LIST.SC_11097_GIFT_REWARD_FIELD.type = 13
+var_0_2.SC_11097_FIELD_LIST.SC_11097_GIFT_REWARD_FIELD.cpp_type = 3
 SC_11097.name = "sc_11097"
 SC_11097.full_name = ".common.sc_11097"
 SC_11097.nested_types = {}
@@ -2688,7 +2705,8 @@ SC_11097.fields = {
 	var_0_2.SC_11097_FIELD_LIST.SC_11097_ACTIVITY_ID_FIELD,
 	var_0_2.SC_11097_FIELD_LIST.SC_11097_UNLOCK_REWARD_FIELD,
 	var_0_2.SC_11097_FIELD_LIST.SC_11097_GAIN_REWARD_FIELD,
-	var_0_2.SC_11097_FIELD_LIST.SC_11097_UNLOCK_TIMES_FIELD
+	var_0_2.SC_11097_FIELD_LIST.SC_11097_UNLOCK_TIMES_FIELD,
+	var_0_2.SC_11097_FIELD_LIST.SC_11097_GIFT_REWARD_FIELD
 }
 SC_11097.is_extendable = false
 SC_11097.extensions = {}
@@ -2872,6 +2890,53 @@ SC_11105.fields = {
 }
 SC_11105.is_extendable = false
 SC_11105.extensions = {}
+var_0_2.CS_11106_FIELD_LIST.CS_11106_ACTIVITY_ID_FIELD.name = "activity_id"
+var_0_2.CS_11106_FIELD_LIST.CS_11106_ACTIVITY_ID_FIELD.full_name = ".common.cs_11106.activity_id"
+var_0_2.CS_11106_FIELD_LIST.CS_11106_ACTIVITY_ID_FIELD.number = 1
+var_0_2.CS_11106_FIELD_LIST.CS_11106_ACTIVITY_ID_FIELD.index = 0
+var_0_2.CS_11106_FIELD_LIST.CS_11106_ACTIVITY_ID_FIELD.label = 2
+var_0_2.CS_11106_FIELD_LIST.CS_11106_ACTIVITY_ID_FIELD.has_default_value = false
+var_0_2.CS_11106_FIELD_LIST.CS_11106_ACTIVITY_ID_FIELD.default_value = 0
+var_0_2.CS_11106_FIELD_LIST.CS_11106_ACTIVITY_ID_FIELD.type = 13
+var_0_2.CS_11106_FIELD_LIST.CS_11106_ACTIVITY_ID_FIELD.cpp_type = 3
+CS_11106.name = "cs_11106"
+CS_11106.full_name = ".common.cs_11106"
+CS_11106.nested_types = {}
+CS_11106.enum_types = {}
+CS_11106.fields = {
+	var_0_2.CS_11106_FIELD_LIST.CS_11106_ACTIVITY_ID_FIELD
+}
+CS_11106.is_extendable = false
+CS_11106.extensions = {}
+var_0_2.SC_11107_FIELD_LIST.SC_11107_RESULT_FIELD.name = "result"
+var_0_2.SC_11107_FIELD_LIST.SC_11107_RESULT_FIELD.full_name = ".common.sc_11107.result"
+var_0_2.SC_11107_FIELD_LIST.SC_11107_RESULT_FIELD.number = 1
+var_0_2.SC_11107_FIELD_LIST.SC_11107_RESULT_FIELD.index = 0
+var_0_2.SC_11107_FIELD_LIST.SC_11107_RESULT_FIELD.label = 2
+var_0_2.SC_11107_FIELD_LIST.SC_11107_RESULT_FIELD.has_default_value = false
+var_0_2.SC_11107_FIELD_LIST.SC_11107_RESULT_FIELD.default_value = 0
+var_0_2.SC_11107_FIELD_LIST.SC_11107_RESULT_FIELD.type = 13
+var_0_2.SC_11107_FIELD_LIST.SC_11107_RESULT_FIELD.cpp_type = 3
+var_0_2.SC_11107_FIELD_LIST.SC_11107_REWARDS_FIELD.name = "rewards"
+var_0_2.SC_11107_FIELD_LIST.SC_11107_REWARDS_FIELD.full_name = ".common.sc_11107.rewards"
+var_0_2.SC_11107_FIELD_LIST.SC_11107_REWARDS_FIELD.number = 2
+var_0_2.SC_11107_FIELD_LIST.SC_11107_REWARDS_FIELD.index = 1
+var_0_2.SC_11107_FIELD_LIST.SC_11107_REWARDS_FIELD.label = 3
+var_0_2.SC_11107_FIELD_LIST.SC_11107_REWARDS_FIELD.has_default_value = false
+var_0_2.SC_11107_FIELD_LIST.SC_11107_REWARDS_FIELD.default_value = {}
+var_0_2.SC_11107_FIELD_LIST.SC_11107_REWARDS_FIELD.message_type = var_0_1.ITEM_NET_REC
+var_0_2.SC_11107_FIELD_LIST.SC_11107_REWARDS_FIELD.type = 11
+var_0_2.SC_11107_FIELD_LIST.SC_11107_REWARDS_FIELD.cpp_type = 10
+SC_11107.name = "sc_11107"
+SC_11107.full_name = ".common.sc_11107"
+SC_11107.nested_types = {}
+SC_11107.enum_types = {}
+SC_11107.fields = {
+	var_0_2.SC_11107_FIELD_LIST.SC_11107_RESULT_FIELD,
+	var_0_2.SC_11107_FIELD_LIST.SC_11107_REWARDS_FIELD
+}
+SC_11107.is_extendable = false
+SC_11107.extensions = {}
 activity_net_rec = var_0_0.Message(ACTIVITY_NET_REC)
 cs_11006 = var_0_0.Message(CS_11006)
 cs_11010 = var_0_0.Message(CS_11010)
@@ -2895,6 +2960,7 @@ cs_11088 = var_0_0.Message(CS_11088)
 cs_11092 = var_0_0.Message(CS_11092)
 cs_11098 = var_0_0.Message(CS_11098)
 cs_11100 = var_0_0.Message(CS_11100)
+cs_11106 = var_0_0.Message(CS_11106)
 heart_demon_activity_info_rec = var_0_0.Message(HEART_DEMON_ACTIVITY_INFO_REC)
 heart_demon_challenge_info = var_0_0.Message(HEART_DEMON_CHALLENGE_INFO)
 hero_trial_activity_info_rec = var_0_0.Message(HERO_TRIAL_ACTIVITY_INFO_REC)
@@ -2952,6 +3018,7 @@ sc_11099 = var_0_0.Message(SC_11099)
 sc_11101 = var_0_0.Message(SC_11101)
 sc_11103 = var_0_0.Message(SC_11103)
 sc_11105 = var_0_0.Message(SC_11105)
+sc_11107 = var_0_0.Message(SC_11107)
 shot_activity_info_net_rec = var_0_0.Message(SHOT_ACTIVITY_INFO_NET_REC)
 skin_trial_activity_info_rec = var_0_0.Message(SKIN_TRIAL_ACTIVITY_INFO_REC)
 slayer_point_reward_activity_net_rec = var_0_0.Message(SLAYER_POINT_REWARD_ACTIVITY_NET_REC)

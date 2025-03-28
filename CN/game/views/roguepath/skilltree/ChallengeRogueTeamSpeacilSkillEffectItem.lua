@@ -23,7 +23,7 @@ end
 function var_0_0.SetData(arg_4_0, arg_4_1)
 	arg_4_0.id_ = arg_4_1
 	arg_4_0.cfg_ = RogueTeamSkillTreeCfg[arg_4_1]
-	arg_4_0.icon_.sprite = getSpriteWithoutAtlas(arg_4_0.cfg_.icon)
+	arg_4_0.icon_.sprite = pureGetSpriteWithoutAtlas(arg_4_0.cfg_.icon)
 	arg_4_0.name_.text = arg_4_0.cfg_.name
 	arg_4_0.desc_.text = arg_4_0.cfg_.description
 

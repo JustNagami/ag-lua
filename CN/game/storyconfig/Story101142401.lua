@@ -10934,13 +10934,13 @@
 
 			if var_236_1 <= arg_233_1.time_ and arg_233_1.time_ < var_236_1 + var_236_4 then
 				local var_236_5 = (arg_233_1.time_ - var_236_1) / var_236_4
-				local var_236_6 = Vector3.New(0, 0, 0)
+				local var_236_6 = Vector3.New(0, -2000, -180)
 
 				var_236_0.localPosition = Vector3.Lerp(arg_233_1.var_.moveOldPos10018, var_236_6, var_236_5)
 			end
 
 			if arg_233_1.time_ >= var_236_1 + var_236_4 and arg_233_1.time_ < var_236_1 + var_236_4 + arg_236_0 then
-				var_236_0.localPosition = Vector3.New(0, 0, 0)
+				var_236_0.localPosition = Vector3.New(0, -2000, -180)
 			end
 
 			local var_236_7 = arg_233_1.actors_["10015"].transform

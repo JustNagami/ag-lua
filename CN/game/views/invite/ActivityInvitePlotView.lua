@@ -63,7 +63,7 @@ function var_0_0.UpdateView(arg_10_0)
 	local var_10_1 = HeroCfg[arg_10_0.inviteCfg.hero_id]
 
 	arg_10_0.nameTxt_.text = GetI18NText(var_10_1.suffix)
-	arg_10_0.roleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/" .. tostring(arg_10_0.inviteCfg.hero_image_route))
+	arg_10_0.roleImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/" .. tostring(arg_10_0.inviteCfg.hero_image_route))
 
 	arg_10_0.list:StartScroll(arg_10_0.index, arg_10_0.index)
 end

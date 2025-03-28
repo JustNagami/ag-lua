@@ -90,7 +90,7 @@ function var_0_0.GetSkills(arg_5_0, arg_5_1, arg_5_2, arg_5_3)
 			local var_5_11 = {
 				id = iter_5_6,
 				desc = var_5_10.skill_start_description,
-				sprite = getSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_MonsterPlayUI/" .. var_5_10.skill_start_icon)
+				sprite = pureGetSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_MonsterPlayUI/" .. var_5_10.skill_start_icon)
 			}
 
 			var_5_11.desc = string.gsub(var_5_11.desc, "\n\n", "\n")

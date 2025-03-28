@@ -150,7 +150,7 @@ function var_0_1.RefreshUI(arg_9_0, arg_9_1)
 		arg_9_0.scorevalueText_.text = GetTips("NO_RECORD")
 	end
 
-	arg_9_0.chapterImg_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_3_11/SandPlay_3_11/SandPlay_3_11_Zuma/" .. arg_9_1.preview)
+	arg_9_0.chapterImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_3_11/SandPlay_3_11/SandPlay_3_11_Zuma/" .. arg_9_1.preview)
 end
 
 function var_0_1.UpdateBtnController(arg_10_0, arg_10_1)

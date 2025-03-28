@@ -135,7 +135,7 @@ end
 
 function var_0_0.RefreshAvatar(arg_18_0)
 	if arg_18_0.servantId and arg_18_0.staticVar.isInView then
-		arg_18_0.avatarIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/Portrait/" .. arg_18_0.servantId)
+		arg_18_0.avatarIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/WeaponServant/Portrait/" .. arg_18_0.servantId)
 	end
 end
 

@@ -25,6 +25,14 @@ function var_0_0.UpdateSevenDaySignRedPoint()
 
 		manager.redPoint:setTip(var_3_1, SignTools.GetSevenDaySignIndex(iter_3_1) ~= 0 and 1 or 0)
 	end
+
+	local var_3_2 = ActivityCfg.get_id_list_by_activity_template[ActivityTemplateConst.SKIN_DISCOUNT_GIFT_SIGN] or {}
+
+	for iter_3_2, iter_3_3 in ipairs(var_3_2) do
+		local var_3_3 = string.format("%s_%s", RedPointConst.SIGN_SEVEN_DAY, iter_3_3)
+
+		manager.redPoint:setTip(var_3_3, SignTools.GetSevenDaySignIndex(iter_3_3) ~= 0 and 1 or 0)
+	end
 end
 
 function var_0_0.OnActivityUpdate(arg_4_0, arg_4_1)

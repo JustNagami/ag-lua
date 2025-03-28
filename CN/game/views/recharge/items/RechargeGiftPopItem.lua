@@ -32,44 +32,50 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2, arg_5_3)
 	arg_5_0:UpdateView()
 end
 
-function var_0_0.UpdateView(arg_6_0)
-	CommonTools.SetCommonData(arg_6_0.commonItem, {
-		id = arg_6_0.id,
-		clickFun = function(arg_7_0)
+function var_0_0.SetActive(arg_6_0, arg_6_1)
+	if arg_6_0.gameObject_ and not isNil(arg_6_0.gameObject_) then
+		SetActive(arg_6_0.gameObject_, arg_6_1)
+	end
+end
+
+function var_0_0.UpdateView(arg_7_0)
+	CommonTools.SetCommonData(arg_7_0.commonItem, {
+		id = arg_7_0.id,
+		clickFun = function(arg_8_0)
 			ShowPopItem(POP_ITEM, {
-				arg_7_0.id
+				arg_8_0.id
 			})
 		end
-	}, arg_6_0.CommonData1)
+	}, arg_7_0.CommonData1)
 
-	arg_6_0.limitLabel_.text = "X" .. arg_6_0.number
-	arg_6_0.nameLabel_.text = ItemTools.getItemName(arg_6_0.id)
+	arg_7_0.limitLabel_.text = "X" .. arg_7_0.number
+	arg_7_0.nameLabel_.text = ItemTools.getItemName(arg_7_0.id)
 
-	local var_6_0 = ItemCfg[arg_6_0.id]
+	local var_7_0 = ItemCfg[arg_7_0.id]
 
-	if var_6_0.num_exchange_item then
-		arg_6_0.controller:SetSelectedState(tostring(ItemTools.getItemNum(arg_6_0.id) >= var_6_0.limit))
+	if var_7_0.num_exchange_item then
+		arg_7_0.controller:SetSelectedState(tostring(ItemTools.getItemNum(arg_7_0.id) >= var_7_0.limit))
 	else
-		arg_6_0.controller:SetSelectedState("false")
+		arg_7_0.controller:SetSelectedState("false")
 	end
 end
 
-function var_0_0.OnEnter(arg_8_0)
+function var_0_0.OnEnter(arg_9_0)
 	return
 end
 
-function var_0_0.OnExit(arg_9_0)
+function var_0_0.OnExit(arg_10_0)
 	return
 end
 
-function var_0_0.Dispose(arg_10_0)
-	if arg_10_0.commonItem then
-		arg_10_0.commonItem:Dispose()
+function var_0_0.Dispose(arg_11_0)
+	if arg_11_0.commonItem then
+		arg_11_0.commonItem:Dispose()
 
-		arg_10_0.commonItem = nil
+		arg_11_0.commonItem = nil
 	end
 
-	var_0_0.super.Dispose(arg_10_0)
+	var_0_0.super.Dispose(arg_11_0)
 end
 
 return var_0_0

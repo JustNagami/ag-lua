@@ -2,12 +2,12 @@
 local var_0_1
 
 function var_0_0.RotateToPortrait(arg_1_0)
-	if GameToSDK.PLATFORM_ID == 0 then
+	if GameToSDK.PLATFORM_ID == 1 or GameToSDK.PLATFORM_ID == 3 then
+		var_0_0.RotateToPortraitIOS(arg_1_0)
+	else
 		var_0_1 = Screen.orientation
 
 		var_0_0.RotateToPortraitAndroid(arg_1_0)
-	else
-		var_0_0.RotateToPortraitIOS(arg_1_0)
 	end
 end
 
@@ -143,10 +143,10 @@ function var_0_0.AutoRotation2Portrait(arg_9_0)
 end
 
 function var_0_0.RotateToLandscape(arg_12_0)
-	if GameToSDK.PLATFORM_ID == 0 then
-		var_0_0.RotateToLandscapeAndroid(arg_12_0)
-	else
+	if GameToSDK.PLATFORM_ID == 1 or GameToSDK.PLATFORM_ID == 3 then
 		var_0_0.RotateToLandScapeIOS(arg_12_0)
+	else
+		var_0_0.RotateToLandscapeAndroid(arg_12_0)
 	end
 end
 

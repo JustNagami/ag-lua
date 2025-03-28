@@ -110,7 +110,7 @@ function var_0_0.RefreshLock(arg_11_0)
 	end
 
 	if arg_11_0.bgImg_ then
-		arg_11_0.bgImg_.sprite = getSpriteWithoutAtlas("TextureConfig/SummerUI/" .. var_0_1[arg_11_0.gameObject_.name])
+		arg_11_0.bgImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/SummerUI/" .. var_0_1[arg_11_0.gameObject_.name])
 	end
 
 	if arg_11_0.textTime_ then

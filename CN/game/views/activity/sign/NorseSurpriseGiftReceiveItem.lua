@@ -50,7 +50,7 @@ function var_0_0.UpdateView(arg_8_0, arg_8_1, arg_8_2)
 	local var_8_0 = HeroCfg[arg_8_0.heroId]
 	local var_8_1 = var_8_0.ATK_attribute[1]
 
-	arg_8_0.icon.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_8_0.heroId)
+	arg_8_0.icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_8_0.heroId)
 	arg_8_0.numTxt_.text = var_0_1[arg_8_2]
 	arg_8_0.atkImg_.sprite = HeroTools.GetHeroSkillAttributeIcon(arg_8_0.heroId)
 	arg_8_0.raceImg_.sprite = HeroTools.GetHeroRaceIcon(arg_8_0.heroId)

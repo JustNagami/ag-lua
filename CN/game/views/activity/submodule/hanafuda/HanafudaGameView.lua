@@ -362,7 +362,7 @@ function var_0_0.RefreshPoolLeftCardUI(arg_36_0, arg_36_1)
 		local var_36_2 = var_36_0[#var_36_0]
 		local var_36_3 = string.format("icon_group_%d_c", var_36_2.race)
 
-		arg_36_0.enemyCombineIconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/JapanRegionKagutsuchiUI/Hanafuda/" .. var_36_2.id)
+		arg_36_0.enemyCombineIconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/JapanRegionKagutsuchiUI/Hanafuda/" .. var_36_2.id)
 		arg_36_0.enemyCombineRaceTypeImg_.sprite = getSprite("Atlas/CampItemAtlas", var_36_3)
 	end
 
@@ -370,7 +370,7 @@ function var_0_0.RefreshPoolLeftCardUI(arg_36_0, arg_36_1)
 		local var_36_4 = var_36_1[#var_36_1]
 		local var_36_5 = string.format("icon_group_%d_c", var_36_4.race)
 
-		arg_36_0.playerCombineIconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/JapanRegionKagutsuchiUI/Hanafuda/" .. var_36_4.id)
+		arg_36_0.playerCombineIconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/JapanRegionKagutsuchiUI/Hanafuda/" .. var_36_4.id)
 		arg_36_0.playerCombineRaceTypeImg_.sprite = getSprite("Atlas/CampItemAtlas", var_36_5)
 	end
 end

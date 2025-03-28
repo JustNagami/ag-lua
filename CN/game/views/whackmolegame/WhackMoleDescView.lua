@@ -65,7 +65,7 @@ function var_0_0.GetDesc(arg_11_0)
 end
 
 function var_0_0.GetSprite(arg_12_0)
-	return getSpriteWithoutAtlas(ActivityMoleCfg[arg_12_0.id_].pitcture_path)
+	return pureGetSpriteWithoutAtlas(ActivityMoleCfg[arg_12_0.id_].pitcture_path)
 end
 
 return var_0_0

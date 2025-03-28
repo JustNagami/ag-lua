@@ -108,7 +108,8 @@ function var_0_0.RefreshItem(arg_11_0)
 
 		local var_11_2 = SpritePathCfg.ChapterPaint.path .. var_11_1.chapter_paint
 
-		arg_11_0.chapterPaint_.spriteAsync = var_11_2
+		SetSpriteWithoutAtlasAsync(arg_11_0.chapterPaint_, var_11_2)
+
 		arg_11_0.oldChapterClientID_ = var_11_0
 	end
 end

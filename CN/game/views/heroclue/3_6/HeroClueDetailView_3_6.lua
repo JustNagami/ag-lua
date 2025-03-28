@@ -6,7 +6,7 @@ function var_0_1.RefreshUI(arg_1_0)
 
 	arg_1_0.nameText_.text = var_1_0.name
 	arg_1_0.descText_.text = var_1_0.desc
-	arg_1_0.iconImg_.sprite = getSpriteWithoutAtlas(var_1_0.icon_path_3)
+	arg_1_0.iconImg_.sprite = pureGetSpriteWithoutAtlas(var_1_0.icon_path_3)
 end
 
 return var_0_1

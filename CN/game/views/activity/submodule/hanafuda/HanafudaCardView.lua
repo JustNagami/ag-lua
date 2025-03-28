@@ -97,7 +97,7 @@ function var_0_0.SetData(arg_13_0, arg_13_1, arg_13_2, arg_13_3)
 	local var_13_1 = KagutsuchiFishingEventData:GetRarity(arg_13_0.data_.id).order
 
 	arg_13_0.nameText_.text = RareFishCfg[arg_13_0.data_.desc].name
-	arg_13_0.roleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/JapanRegionKagutsuchiUI/Hanafuda/" .. arg_13_0.data_.id)
+	arg_13_0.roleImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/JapanRegionKagutsuchiUI/Hanafuda/" .. arg_13_0.data_.id)
 	arg_13_0.rarityImg_.sprite = getSprite("Atlas/Common", "star_" .. var_13_1)
 	arg_13_0.raceImg_.sprite = getSprite("Atlas/CampItemAtlas", var_13_0)
 

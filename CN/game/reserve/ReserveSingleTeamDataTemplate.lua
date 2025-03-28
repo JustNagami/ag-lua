@@ -4,6 +4,7 @@ function var_0_0.Ctor(arg_1_0, arg_1_1, arg_1_2)
 	arg_1_0.team_type = arg_1_1 or ReserveConst.RESERVE_TYPE.DEFAULT
 	arg_1_0.team_index = arg_1_2 or ReserveConst.DEFAULT_TEAM_INDEX
 	arg_1_0.hero_list = {}
+	arg_1_0.last_hero_list = {}
 	arg_1_0.cooperate_unique_skill_id = ReserveConst.DEFAULT_COMBO_SKILL_ID
 	arg_1_0.mimir_info = arg_1_0:GetMimirDataClass().New()
 
@@ -45,136 +46,173 @@ function var_0_0.SetHeroList(arg_7_0, arg_7_1, arg_7_2)
 	arg_7_1 = arg_7_1 or {}
 	arg_7_2 = arg_7_2 or {}
 
-	local var_7_0 = {}
+	arg_7_0:SaveLastHeroList()
 
 	for iter_7_0, iter_7_1 in ipairs(arg_7_0:GetHeroList()) do
-		var_7_0[iter_7_1:GetHeroID()] = true
-
 		arg_7_0:SetHeroPosData(iter_7_0, arg_7_1[iter_7_0], arg_7_2[iter_7_0])
 	end
 
-	arg_7_0:TryUpdateComboSkillID(arg_7_1, var_7_0)
+	arg_7_0:TryUpdateComboSkillID()
 end
 
-function var_0_0.GetHeroList(arg_8_0)
-	return arg_8_0.hero_list
+function var_0_0.SaveLastHeroList(arg_8_0)
+	arg_8_0.last_hero_list = deepClone(arg_8_0.hero_list)
 end
 
-function var_0_0.GetHeroPosData(arg_9_0, arg_9_1)
-	if not arg_9_0.hero_list[arg_9_1] then
-		arg_9_0.hero_list[arg_9_1] = arg_9_0:GetHeroPosClass().New(arg_9_1)
+function var_0_0.GetHeroList(arg_9_0)
+	return arg_9_0.hero_list
+end
+
+function var_0_0.GetLastHeroList(arg_10_0)
+	return arg_10_0.last_hero_list
+end
+
+function var_0_0.GetAddedHeroIDList(arg_11_0)
+	local var_11_0 = {}
+	local var_11_1 = arg_11_0:GetLastHeroList()
+
+	if #var_11_1 == 0 then
+		return var_11_0
 	end
 
-	return arg_9_0.hero_list[arg_9_1]
-end
+	local var_11_2 = {}
 
-function var_0_0.SetHeroPosData(arg_10_0, arg_10_1, arg_10_2, arg_10_3)
-	local var_10_0 = arg_10_0:GetHeroPosData(arg_10_1)
+	for iter_11_0, iter_11_1 in ipairs(var_11_1) do
+		var_11_2[iter_11_1:GetHeroID()] = true
+	end
 
-	var_10_0:SetHeroID(arg_10_2)
-	var_10_0:SetTrialID(arg_10_3)
-end
-
-function var_0_0.TryUpdateComboSkillID(arg_11_0, arg_11_1, arg_11_2)
-	local var_11_0 = true
-
-	for iter_11_0, iter_11_1 in ipairs(arg_11_1) do
-		if not arg_11_2[iter_11_1] then
-			var_11_0 = false
+	for iter_11_2, iter_11_3 in ipairs(arg_11_0:GetHeroList()) do
+		if not var_11_2[iter_11_3:GetHeroID()] then
+			var_11_0[#var_11_0 + 1] = iter_11_3:GetHeroID()
 		end
 	end
 
-	if not var_11_0 then
-		arg_11_0:UpdateComboSkillID()
+	return var_11_0
+end
+
+function var_0_0.GetHeroPosData(arg_12_0, arg_12_1)
+	if not arg_12_0.hero_list[arg_12_1] then
+		arg_12_0.hero_list[arg_12_1] = arg_12_0:GetHeroPosClass().New(arg_12_1)
+	end
+
+	return arg_12_0.hero_list[arg_12_1]
+end
+
+function var_0_0.SetHeroPosData(arg_13_0, arg_13_1, arg_13_2, arg_13_3)
+	local var_13_0 = arg_13_0:GetHeroPosData(arg_13_1)
+
+	var_13_0:SetHeroID(arg_13_2)
+	var_13_0:SetTrialID(arg_13_3)
+end
+
+function var_0_0.TryUpdateComboSkillID(arg_14_0)
+	local var_14_0 = arg_14_0:GetHeroList()
+	local var_14_1 = arg_14_0:GetLastHeroList()
+	local var_14_2 = {}
+
+	for iter_14_0, iter_14_1 in ipairs(var_14_1) do
+		var_14_2[iter_14_1:GetHeroID()] = true
+	end
+
+	local var_14_3 = true
+
+	for iter_14_2, iter_14_3 in ipairs(var_14_0) do
+		if not var_14_2[iter_14_3:GetHeroID()] then
+			var_14_3 = false
+		end
+	end
+
+	if not var_14_3 then
+		arg_14_0:UpdateComboSkillID()
 	end
 end
 
-function var_0_0.GetComboSkillID(arg_12_0)
-	return arg_12_0.cooperate_unique_skill_id
+function var_0_0.GetComboSkillID(arg_15_0)
+	return arg_15_0.cooperate_unique_skill_id
 end
 
-function var_0_0.SetComboSkillID(arg_13_0, arg_13_1)
-	arg_13_1 = arg_13_1 or ReserveConst.DEFAULT_COMBO_SKILL_ID
-	arg_13_0.cooperate_unique_skill_id = arg_13_1
+function var_0_0.SetComboSkillID(arg_16_0, arg_16_1)
+	arg_16_1 = arg_16_1 or ReserveConst.DEFAULT_COMBO_SKILL_ID
+	arg_16_0.cooperate_unique_skill_id = arg_16_1
 end
 
-function var_0_0.UpdateComboSkillID(arg_14_0)
-	local var_14_0 = {}
+function var_0_0.UpdateComboSkillID(arg_17_0)
+	local var_17_0 = {}
 
-	for iter_14_0, iter_14_1 in ipairs(arg_14_0:GetHeroList()) do
-		var_14_0[iter_14_0] = iter_14_1:GetHeroID()
+	for iter_17_0, iter_17_1 in ipairs(arg_17_0:GetHeroList()) do
+		var_17_0[iter_17_0] = iter_17_1:GetHeroID()
 	end
 
-	arg_14_0:SetComboSkillID(ComboSkillTools.GetRecommendSkillID(var_14_0, true))
+	arg_17_0:SetComboSkillID(ComboSkillTools.GetRecommendSkillID(var_17_0, true))
 end
 
-function var_0_0.GetMimirInfo(arg_15_0)
-	return arg_15_0.mimir_info
+function var_0_0.GetMimirInfo(arg_18_0)
+	return arg_18_0.mimir_info
 end
 
-function var_0_0.GetMimirID(arg_16_0)
-	return arg_16_0.mimir_info.mimir_id
+function var_0_0.GetMimirID(arg_19_0)
+	return arg_19_0.mimir_info.mimir_id
 end
 
-function var_0_0.SetMimirID(arg_17_0, arg_17_1)
-	arg_17_1 = arg_17_1 or 0
-	arg_17_0.mimir_info.mimir_id = arg_17_1
+function var_0_0.SetMimirID(arg_20_0, arg_20_1)
+	arg_20_1 = arg_20_1 or 0
+	arg_20_0.mimir_info.mimir_id = arg_20_1
 end
 
-function var_0_0.GetMimirChipList(arg_18_0)
-	return clone(arg_18_0.mimir_info.chip_list)
+function var_0_0.GetMimirChipList(arg_21_0)
+	return clone(arg_21_0.mimir_info.chip_list)
 end
 
-function var_0_0.SetMimirChipList(arg_19_0, arg_19_1)
-	if not arg_19_1 then
-		arg_19_1 = {}
+function var_0_0.SetMimirChipList(arg_22_0, arg_22_1)
+	if not arg_22_1 then
+		arg_22_1 = {}
 	else
-		arg_19_1 = clone(arg_19_1)
+		arg_22_1 = clone(arg_22_1)
 	end
 
-	arg_19_0.mimir_info.chip_list = arg_19_1
+	arg_22_0.mimir_info.chip_list = arg_22_1
 end
 
-function var_0_0.ResetMimirChipList(arg_20_0)
-	arg_20_0.mimir_info.chip_list = {}
+function var_0_0.ResetMimirChipList(arg_23_0)
+	arg_23_0.mimir_info.chip_list = {}
 end
 
-function var_0_0.GetHeroPosClass(arg_21_0)
-	return ReserveTools.GetHeroPosDataClass(arg_21_0:GetTeamType())
+function var_0_0.GetHeroPosClass(arg_24_0)
+	return ReserveTools.GetHeroPosDataClass(arg_24_0:GetTeamType())
 end
 
-function var_0_0.GetMimirDataClass(arg_22_0)
-	return ReserveTools.GetMimirDataClass(arg_22_0:GetTeamType())
+function var_0_0.GetMimirDataClass(arg_25_0)
+	return ReserveTools.GetMimirDataClass(arg_25_0:GetTeamType())
 end
 
-function var_0_0.Clone(arg_23_0)
-	return deepClone(arg_23_0)
+function var_0_0.Clone(arg_26_0)
+	return deepClone(arg_26_0)
 end
 
-function var_0_0.ConvertToSendData(arg_24_0)
-	local var_24_0 = {
-		team_index = arg_24_0:GetTeamIndex(),
+function var_0_0.ConvertToSendData(arg_27_0)
+	local var_27_0 = {
+		team_index = arg_27_0:GetTeamIndex(),
 		hero_list = {}
 	}
 
-	for iter_24_0, iter_24_1 in ipairs(arg_24_0:GetHeroList()) do
-		var_24_0.hero_list[iter_24_0] = iter_24_1:ConvertToSendData()
+	for iter_27_0, iter_27_1 in ipairs(arg_27_0:GetHeroList()) do
+		var_27_0.hero_list[iter_27_0] = iter_27_1:ConvertToSendData()
 	end
 
-	var_24_0.cooperate_unique_skill_id = arg_24_0:GetComboSkillID()
-	var_24_0.mimir_info = arg_24_0:GetMimirInfo():ConvertToSendData()
+	var_27_0.cooperate_unique_skill_id = arg_27_0:GetComboSkillID()
+	var_27_0.mimir_info = arg_27_0:GetMimirInfo():ConvertToSendData()
 
-	return var_24_0
+	return var_27_0
 end
 
-function var_0_0.Reset(arg_25_0)
-	for iter_25_0, iter_25_1 in ipairs(arg_25_0.hero_list) do
-		iter_25_1:Reset()
+function var_0_0.Reset(arg_28_0)
+	for iter_28_0, iter_28_1 in ipairs(arg_28_0.hero_list) do
+		iter_28_1:Reset()
 	end
 
-	arg_25_0.cooperate_unique_skill_id = ReserveConst.DEFAULT_COMBO_SKILL_ID
+	arg_28_0.cooperate_unique_skill_id = ReserveConst.DEFAULT_COMBO_SKILL_ID
 
-	arg_25_0.mimir_info:Reset()
+	arg_28_0.mimir_info:Reset()
 end
 
 return var_0_0

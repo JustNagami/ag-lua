@@ -3,6 +3,7 @@
 		album_id = "TextureConfig/VersionUI/XuHeng2ndUI/XuHeng2nd_00584",
 		path = "TextureConfig/VersionUI/XuHeng2ndUI/jigsawItem/",
 		activity_id = 172141,
+		clueContainerUIPath = "",
 		main_activity_id = 172141,
 		preview_album_id = "TextureConfig/VersionUI/XuHeng2ndUI/XuHeng2nd_00579",
 		picture_fragment_id = {
@@ -253,6 +254,7 @@
 		album_id = "TextureConfig/VersionUI/IndiaUI_2_8/IndiaUI2_8_00093",
 		path = "TextureConfig/VersionUI/IndiaUI_2_8/jigsawItem/",
 		activity_id = 222141,
+		clueContainerUIPath = "",
 		main_activity_id = 222141,
 		preview_album_id = "TextureConfig/VersionUI/IndiaUI_2_8/IndiaUI2_8_00092",
 		picture_fragment_id = {
@@ -504,6 +506,7 @@
 		album_id = "TextureConfig/VersionUI/BaichaoUI_3_9/BaichaoUI_3_9_SpecialJigsawPuzzle/ActivitySpecialJigsaw_00002",
 		path = "TextureConfig/VersionUI/BaichaoUI_3_9/BaichaoUI_3_9_SpecialJigsawPuzzle/",
 		activity_id = 302141,
+		clueContainerUIPath = "Widget/System/Activity_Resident/Activity_SpecialJigsawUI/ActivitySpecialJigsawClueContainer",
 		main_activity_id = 302141,
 		preview_album_id = "TextureConfig/VersionUI/BaichaoUI_3_9/BaichaoUI_3_9_SpecialJigsawPuzzle/ActivitySpecialJigsaw_00001",
 		picture_fragment_id = {
@@ -750,9 +753,263 @@
 			3021403
 		}
 	},
+	[322141] = {
+		album_id = "TextureConfig/VersionUI/V4_0_SkuldUI/V4_0_Skuld_SpecialJigsawPuzzleUI/ActivitySpecialJigsaw_00002",
+		path = "TextureConfig/VersionUI/V4_0_SkuldUI/V4_0_Skuld_SpecialJigsawPuzzleUI/",
+		activity_id = 322141,
+		clueContainerUIPath = "Widget/Version/V4_0_SkuldUI/V4_0_Skuld_JigsawUI/V4_0_ActivitySpecialJigsawClueContainer",
+		main_activity_id = 322141,
+		preview_album_id = "TextureConfig/VersionUI/V4_0_SkuldUI/V4_0_Skuld_SpecialJigsawPuzzleUI/ActivitySpecialJigsaw_00001",
+		picture_fragment_id = {
+			1001,
+			1002,
+			1003,
+			1004,
+			1005,
+			1006,
+			1007,
+			1008,
+			1009,
+			1010,
+			1011,
+			1012,
+			1013,
+			1014,
+			1015,
+			1016,
+			1017,
+			1018,
+			1019,
+			1020,
+			1021,
+			1022,
+			1023,
+			1024,
+			1025,
+			1026,
+			1027,
+			1028,
+			1029,
+			1030,
+			1031,
+			1032
+		},
+		size = {
+			4,
+			8
+		},
+		correct_array = {
+			1001,
+			1002,
+			1003,
+			1004,
+			1005,
+			1006,
+			1007,
+			1008,
+			1009,
+			1010,
+			1011,
+			1012,
+			1013,
+			1014,
+			1015,
+			1016,
+			1017,
+			1018,
+			1019,
+			1020,
+			1021,
+			1022,
+			1023,
+			1024,
+			1025,
+			1026,
+			1027,
+			1028,
+			1029,
+			1030,
+			1031,
+			1032
+		},
+		reward_area_list = {
+			{
+				1,
+				{
+					{
+						40603,
+						10
+					}
+				}
+			},
+			{
+				2,
+				{
+					{
+						1,
+						100
+					}
+				}
+			},
+			{
+				3,
+				{
+					{
+						1,
+						100
+					}
+				}
+			},
+			{
+				4,
+				{
+					{
+						40104,
+						10
+					}
+				}
+			},
+			{
+				5,
+				{
+					{
+						40803,
+						10
+					}
+				}
+			},
+			{
+				6,
+				{
+					{
+						40503,
+						30
+					}
+				}
+			},
+			{
+				7,
+				{
+					{
+						40203,
+						10
+					}
+				}
+			},
+			{
+				8,
+				{
+					{
+						40701,
+						5
+					}
+				}
+			}
+		},
+		area_fragment_list = {
+			{
+				1,
+				{
+					1001,
+					1002,
+					1009,
+					1010
+				}
+			},
+			{
+				2,
+				{
+					1003,
+					1004,
+					1005,
+					1011,
+					1012,
+					1013,
+					1019,
+					1020,
+					1021
+				}
+			},
+			{
+				3,
+				{
+					1006,
+					1007,
+					1008,
+					1014,
+					1015,
+					1016,
+					1022,
+					1023,
+					1024
+				}
+			},
+			{
+				4,
+				{
+					1017,
+					1018,
+					1025,
+					1026
+				}
+			},
+			{
+				5,
+				{
+					1027
+				}
+			},
+			{
+				6,
+				{
+					1028,
+					1029,
+					1030
+				}
+			},
+			{
+				7,
+				{
+					1031
+				}
+			},
+			{
+				8,
+				{
+					1032
+				}
+			}
+		},
+		fragment_id = {
+			{
+				53154,
+				1
+			}
+		},
+		coin_id = {
+			{
+				53155,
+				1
+			}
+		},
+		clue_tips_id = {
+			{
+				53154,
+				5
+			}
+		},
+		clue_id = {
+			3221411,
+			3221412,
+			3221413,
+			3221414,
+			3221415
+		}
+	},
 	all = {
 		172141,
 		222141,
-		302141
+		302141,
+		322141
 	}
 }

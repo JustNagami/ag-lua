@@ -111,7 +111,7 @@ function var_0_0.RefreshDrawUI(arg_12_0)
 
 		local var_12_1 = MainAdvinfoCfg[arg_12_0.drawCfg_[3]].picture
 
-		arg_12_0.drawIcon_.sprite = getSpriteWithoutAtlas("I18NImg/" .. string.upper(SettingData:GetCurrentLanguage()) .. "/Banner/" .. var_12_1 .. SettingData:GetCurrentLanguageKey())
+		arg_12_0.drawIcon_.sprite = pureGetSpriteWithoutAtlas("I18NImg/" .. string.upper(SettingData:GetCurrentLanguage()) .. "/Banner/" .. var_12_1 .. SettingData:GetCurrentLanguageKey())
 	else
 		SetActive(arg_12_0.drawItemGo_, false)
 	end
@@ -131,7 +131,7 @@ function var_0_0.RefreshPlotUI(arg_13_0)
 end
 
 function var_0_0.RefreshProgressUI(arg_14_0)
-	arg_14_0.progressIcon_.sprite = getSpriteWithoutAtlas("TextureBg/ReturnTwo/" .. arg_14_0.progressCfg_[3])
+	arg_14_0.progressIcon_.sprite = pureGetSpriteWithoutAtlas("TextureBg/ReturnTwo/" .. arg_14_0.progressCfg_[3])
 end
 
 return var_0_0

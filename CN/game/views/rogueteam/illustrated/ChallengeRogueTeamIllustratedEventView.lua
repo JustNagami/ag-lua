@@ -86,7 +86,7 @@ function var_0_0.RefreshSelect(arg_9_0, arg_9_1)
 
 	local var_9_0 = RogueTeamEventCfg[arg_9_1]
 
-	arg_9_0.eventImg_.sprite = getSpriteWithoutAtlas(var_9_0.image)
+	arg_9_0.eventImg_.sprite = pureGetSpriteWithoutAtlas(var_9_0.image)
 	arg_9_0.eventTitleText_.text = var_9_0.title
 	arg_9_0.descText_.text = var_9_0.brief_desc
 

@@ -10,10 +10,13 @@ function var_0_1.Ctor(arg_1_0, arg_1_1)
 
 	arg_1_0.statusController_ = ControllerUtil.GetController(arg_1_0.btnPanelTrans_, "status")
 	arg_1_0.typeController_ = ControllerUtil.GetController(arg_1_0.transform_, "type")
+
+	local var_1_0 = ActivityNewbieTools.GetFirstRechargeStatus()
 end
 
 function var_0_1.Dispose(arg_2_0)
 	if arg_2_0.commonItem_ then
+		manager.redPoint:unbindUIandKey(arg_2_0.commonItem_.transform_, RedPointConst.FIRST_GEAR)
 		arg_2_0.commonItem_:Dispose()
 
 		arg_2_0.commonItem_ = nil
@@ -64,16 +67,24 @@ function var_0_1.RefreshUI(arg_9_0)
 			else
 				ShowPopItem(POP_ITEM, arg_9_0.rewardCfg_)
 			end
+
+			saveData("FirstGear", "hasView", true)
+			manager.redPoint:setTip(RedPointConst.FIRST_GEAR, 0)
 		end
 
 		arg_9_0.commonItem_ = CommonItemView.New(arg_9_0.commonGo_)
 
 		arg_9_0.commonItem_:SetData(var_9_0)
+		manager.redPoint:bindUIandKey(arg_9_0.commonItem_.transform_, RedPointConst.FIRST_GEAR)
 	end
 
 	arg_9_0:RefreshStatus()
 	arg_9_0.typeController_:SetSelectedIndex(1)
 	ActivityNewbieTools.SetSelectMonthlyRecharge()
+
+	local var_9_1 = arg_9_0.rewardCfg_[1]
+
+	arg_9_0.rewardDesc_.text = ItemCfg[var_9_1].desc
 end
 
 function var_0_1.Show(arg_11_0)
@@ -101,6 +112,11 @@ function var_0_1.ReceiveReward(arg_13_0)
 	ActivityNewbieTools.ReceiveRechargeReward(2, 0, function(arg_14_0)
 		arg_13_0:RefreshStatus()
 	end)
+end
+
+function var_0_1.OnExit(arg_15_0)
+	saveData("FirstGear", "hasView", true)
+	manager.redPoint:setTip(RedPointConst.FIRST_GEAR, 0)
 end
 
 return var_0_1

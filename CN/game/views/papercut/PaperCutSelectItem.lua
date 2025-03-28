@@ -114,7 +114,7 @@ function var_0_0.RefreshUI(arg_10_0)
 end
 
 function var_0_0.RefreshImage(arg_11_0)
-	arg_11_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/EmptyDream/paperCut/" .. PaperCutCfg[arg_11_0.activityID_].picture)
+	arg_11_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/EmptyDream/paperCut/" .. PaperCutCfg[arg_11_0.activityID_].picture)
 end
 
 function var_0_0.RefreshTitle(arg_12_0)

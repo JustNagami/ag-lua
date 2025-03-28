@@ -166,8 +166,8 @@ function var_0_0.UpdateView(arg_14_0)
 						local var_14_2 = ActivityMonsterCosplaySkillCfg[arg_14_0.coreSkillCfg.affix_effect_skill_list[iter_14_2]]
 
 						arg_14_0["core" .. iter_14_2 .. "Txt_"].text = GetI18NText(var_14_2.skill_name)
-						arg_14_0["core" .. iter_14_2 .. "normalIcon_"].sprite = getSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_MonsterPlayUI/" .. var_14_2.skill_start_icon)
-						arg_14_0["core" .. iter_14_2 .. "upIcon_"].sprite = getSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_MonsterPlayUI/" .. var_14_2.skill_new_icon)
+						arg_14_0["core" .. iter_14_2 .. "normalIcon_"].sprite = pureGetSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_MonsterPlayUI/" .. var_14_2.skill_start_icon)
+						arg_14_0["core" .. iter_14_2 .. "upIcon_"].sprite = pureGetSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_MonsterPlayUI/" .. var_14_2.skill_new_icon)
 					end
 
 					SetActive(arg_14_0["core" .. iter_14_2 .. "Go_"], iter_14_2 <= #arg_14_0.coreSkillCfg.affix_effect_skill_list)
@@ -195,7 +195,7 @@ function var_0_0.UpdateView(arg_14_0)
 		end
 	end
 
-	arg_14_0.skillIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_MonsterPlayUI/" .. arg_14_0.cfg.skill_start_icon)
+	arg_14_0.skillIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_MonsterPlayUI/" .. arg_14_0.cfg.skill_start_icon)
 end
 
 function var_0_0.Dispose(arg_15_0)

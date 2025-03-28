@@ -40,15 +40,25 @@ function var_0_0.AddUIListeners(arg_5_0)
 	end)
 end
 
-function var_0_0.RefreshTimeText(arg_8_0)
-	if arg_8_0.m_timeLab then
-		arg_8_0.m_timeLab.text = manager.time:GetLostTimeStrWith2UnitWithPrefix(arg_8_0.stopTime_, true)
+function var_0_0.OnEnter(arg_8_0)
+	manager.redPoint:bindUIandKey(arg_8_0.m_entrustBtn.transform, string.format("%s_%s", RedPointConst.ACTIVITY_RACE_TRIAL, arg_8_0.activityID_))
+	var_0_0.super.OnEnter(arg_8_0)
+end
+
+function var_0_0.RefreshTimeText(arg_9_0)
+	if arg_9_0.m_timeLab then
+		arg_9_0.m_timeLab.text = manager.time:GetLostTimeStrWith2UnitWithPrefix(arg_9_0.stopTime_, true)
 	end
 end
 
-function var_0_0.Dispose(arg_9_0)
-	arg_9_0:RemoveAllListeners()
-	var_0_0.super.Dispose(arg_9_0)
+function var_0_0.OnExit(arg_10_0)
+	manager.redPoint:unbindUIandKey(arg_10_0.m_entrustBtn.transform, string.format("%s_%s", RedPointConst.ACTIVITY_RACE_TRIAL, arg_10_0.activityID_))
+	var_0_0.super.OnExit(arg_10_0)
+end
+
+function var_0_0.Dispose(arg_11_0)
+	arg_11_0:RemoveAllListeners()
+	var_0_0.super.Dispose(arg_11_0)
 end
 
 return var_0_0

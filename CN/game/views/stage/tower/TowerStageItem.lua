@@ -84,7 +84,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2)
 	local var_6_7 = ChapterClientCfg[arg_6_1]
 	local var_6_8 = var_6_7 and var_6_7.chapter_paint or ""
 
-	arg_6_0.m_role.sprite = getSpriteWithoutAtlas("TextureConfig/TowerUI/Boss/" .. var_6_8)
+	arg_6_0.m_role.sprite = pureGetSpriteWithoutAtlas("TextureConfig/TowerUI/Boss/" .. var_6_8)
 
 	local var_6_9 = manager.redPoint:getTipValue(RedPointConst.TOWER_NEW_LEVEL + arg_6_0.chapterId)
 

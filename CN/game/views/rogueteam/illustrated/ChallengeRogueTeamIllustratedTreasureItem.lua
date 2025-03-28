@@ -35,7 +35,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2, arg_5_3)
 	local var_5_0 = ChallengeRogueTeamTools.GetTreasureAffix(arg_5_0.id_)
 	local var_5_1 = AffixTypeCfg[var_5_0[1]].description[1]
 
-	arg_5_0.iconImage_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_5_2))
+	arg_5_0.iconImage_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_5_2))
 
 	arg_5_0.ownController_:SetSelectedState(tostring(arg_5_3 == true))
 

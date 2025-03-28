@@ -227,7 +227,7 @@ function var_0_0.Refresh(arg_18_0, arg_18_1, arg_18_2, arg_18_3)
 		local var_18_8 = HeroCfg[arg_18_3]
 		local var_18_9 = PolyhedronData:GetHeroUsingSkinInfo(arg_18_3).id
 
-		arg_18_0.m_heroIcon.sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. var_18_9)
+		arg_18_0.m_heroIcon.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. var_18_9)
 		arg_18_0.m_heroNameText_.text = string.format("%s·%s", GetI18NText(var_18_8.name), GetI18NText(var_18_8.suffix))
 
 		if arg_18_0.heroAnimator_ then

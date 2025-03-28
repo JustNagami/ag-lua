@@ -60,7 +60,7 @@ function var_0_0.UpdateView(arg_5_0)
 	arg_5_0:SetCostIcon()
 	arg_5_0:SetPriceText(arg_5_0.goodID)
 
-	arg_5_0.titleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Common/com_equip_icon_0" .. arg_5_0.index)
+	arg_5_0.titleImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Common/com_equip_icon_0" .. arg_5_0.index)
 end
 
 function var_0_0.OnEnter(arg_6_0)

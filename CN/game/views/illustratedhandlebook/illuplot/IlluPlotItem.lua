@@ -31,6 +31,8 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1, arg_4_2)
 	for iter_4_0, iter_4_1 in ipairs(arg_4_0.info_.storyList) do
 		if IllustratedData:GetPlotInfo()[iter_4_1] then
 			var_4_0 = var_4_0 + 1
+		elseif iter_4_1 == 101110501 and IllustratedData:GetPlotInfo()[101110401] then
+			var_4_0 = var_4_0 + 1
 		end
 	end
 

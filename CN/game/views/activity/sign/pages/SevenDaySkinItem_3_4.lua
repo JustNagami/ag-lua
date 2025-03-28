@@ -49,7 +49,7 @@ function var_0_0.RefreshView(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
 	SetActive(arg_6_0.numGo_, var_6_1 >= 1)
 
 	if ItemCfg[var_6_0].type == ItemConst.ITEM_TYPE.HERO_SKIN then
-		arg_6_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_6_0)
+		arg_6_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_6_0)
 	else
 		arg_6_0.icon_.sprite = ItemTools.getItemSprite(var_6_0)
 	end

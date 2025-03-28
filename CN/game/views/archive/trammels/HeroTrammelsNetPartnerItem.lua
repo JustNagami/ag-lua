@@ -28,7 +28,7 @@ end
 
 function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
 	arg_6_0.hero_id = arg_6_1
-	arg_6_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_6_1)
+	arg_6_0.m_icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_6_1)
 
 	arg_6_0.selectController:SetSelectedIndex(arg_6_1 == arg_6_2 and 1 or 0)
 

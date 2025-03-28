@@ -74,6 +74,8 @@ function var_0_0.SetShowCallBack(arg_9_0, arg_9_1, arg_9_2)
 end
 
 function var_0_0.OnEnter(arg_10_0)
+	arg_10_0.infoPage_:RegisterEvents()
+
 	if arg_10_0.showFlag then
 		arg_10_0:RefreshUI()
 	end
@@ -83,6 +85,8 @@ function var_0_0.OnExit(arg_11_0)
 	if arg_11_0.showFlag then
 		-- block empty
 	end
+
+	arg_11_0.infoPage_:RemoveAllEventListener()
 end
 
 function var_0_0.RefreshUI(arg_12_0)

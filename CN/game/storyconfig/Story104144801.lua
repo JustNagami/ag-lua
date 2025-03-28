@@ -1300,6 +1300,8 @@
 			if arg_41_0 == 2 then
 				arg_39_0:Play414481011(arg_39_1)
 			end
+
+			arg_39_1:RecordChoiceLog(414481010, 414481011, 414481011)
 		end
 
 		function arg_39_1.onSingleLineUpdate_(arg_42_0)

@@ -49,7 +49,7 @@ function var_0_0.AddUIListener(arg_4_0)
 
 				local var_6_1 = 1
 
-				arg_4_0.iceImage_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/JapanRegionUI2_6_00953")
+				arg_4_0.iceImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/JapanRegionUI2_6_00953")
 				arg_4_0.isGet = false
 				arg_4_0.captionTimer = FuncTimerManager.inst:CreateFuncFrameTimer(function()
 					arg_4_0.time = arg_4_0.time + Time.deltaTime
@@ -145,7 +145,7 @@ function var_0_0.UpdateView(arg_10_0)
 		SetActive(arg_10_0.hammerGo_, false)
 	end
 
-	arg_10_0.iceImage_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/JapanRegionUI2_6_00952")
+	arg_10_0.iceImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/JapanRegionUI2_6_00952")
 
 	arg_10_0.stateController:SetSelectedState(var_10_0 and "Knocked" or "Knock")
 end

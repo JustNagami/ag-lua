@@ -33,7 +33,7 @@ end
 
 function var_0_0.OnEnter(arg_9_0)
 	arg_9_0.image_ = arg_9_0.params_.image
-	arg_9_0.portriatImg_.sprite = getSpriteWithoutAtlas(arg_9_0.image_)
+	arg_9_0.portriatImg_.sprite = pureGetSpriteWithoutAtlas(arg_9_0.image_)
 
 	arg_9_0.portriatImg_:SetNativeSize()
 end

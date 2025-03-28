@@ -1,2164 +1,4 @@
 ﻿return {
-	[10120011] = {
-		name = "禁律",
-		suit_name = "规戒万类",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1012001,
-		id = 10120011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10120012] = {
-		name = "戒规",
-		suit_name = "规戒万类",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10120011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1012001,
-		id = 10120012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10120013] = {
-		name = "镇恶",
-		suit_name = "规戒万类",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10120012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1012001,
-		id = 10120013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10120021] = {
-		name = "福泽",
-		suit_name = "祥瑞之兽",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1012002,
-		id = 10120021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10120022] = {
-		name = "天幸",
-		suit_name = "祥瑞之兽",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10120021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1012002,
-		id = 10120022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10120023] = {
-		name = "造化",
-		suit_name = "祥瑞之兽",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10120022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1012002,
-		id = 10120023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10120031] = {
-		name = "通识",
-		suit_name = "通达万物",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1012003,
-		id = 10120031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10120032] = {
-		name = "通情",
-		suit_name = "通达万物",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10120031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1012003,
-		id = 10120032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10120033] = {
-		name = "知物",
-		suit_name = "通达万物",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10120032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1012003,
-		id = 10120033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10390011] = {
-		name = "苍洋",
-		suit_name = "海王星",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1039001,
-		id = 10390011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10390012] = {
-		name = "碧波",
-		suit_name = "海王星",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10390011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1039001,
-		id = 10390012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10390013] = {
-		name = "银浪",
-		suit_name = "海王星",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10390012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1039001,
-		id = 10390013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10390021] = {
-		name = "巨洪",
-		suit_name = "亚特兰蒂斯",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1039002,
-		id = 10390021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10390022] = {
-		name = "神殿",
-		suit_name = "亚特兰蒂斯",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10390021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1039002,
-		id = 10390022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10390023] = {
-		name = "听潮",
-		suit_name = "亚特兰蒂斯",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10390022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1039002,
-		id = 10390023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10390031] = {
-		name = "怒涛",
-		suit_name = "三叉戟怒涛",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1039003,
-		id = 10390031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10390032] = {
-		name = "圣戟",
-		suit_name = "三叉戟怒涛",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10390031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1039003,
-		id = 10390032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10390033] = {
-		name = "深蓝",
-		suit_name = "三叉戟怒涛",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10390032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1039003,
-		id = 10390033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10480011] = {
-		name = "残弹",
-		suit_name = "大峰山之护",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1048001,
-		id = 10480011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10480012] = {
-		name = "备战",
-		suit_name = "大峰山之护",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10480011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1048001,
-		id = 10480012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10480013] = {
-		name = "火力",
-		suit_name = "大峰山之护",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10480012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1048001,
-		id = 10480013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10480021] = {
-		name = "轰炸",
-		suit_name = "善童鬼",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1048002,
-		id = 10480021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10480022] = {
-		name = "连锁",
-		suit_name = "善童鬼",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10480021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1048002,
-		id = 10480022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10480023] = {
-		name = "迅捷",
-		suit_name = "善童鬼",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10480022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1048002,
-		id = 10480023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10480031] = {
-		name = "爆轰",
-		suit_name = "试炼的凝望",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1048003,
-		id = 10480031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10480032] = {
-		name = "引爆",
-		suit_name = "试炼的凝望",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10480031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1048003,
-		id = 10480032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10480033] = {
-		name = "强袭",
-		suit_name = "试炼的凝望",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10480032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1048003,
-		id = 10480033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10660011] = {
-		name = "死神",
-		suit_name = "大物主神",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1066001,
-		id = 10660011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10660012] = {
-		name = "预言",
-		suit_name = "大物主神",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10660011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1066001,
-		id = 10660012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10660013] = {
-		name = "兔兔",
-		suit_name = "大物主神",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10660012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1066001,
-		id = 10660013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10660021] = {
-		name = "星连",
-		suit_name = "根国之途",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1066002,
-		id = 10660021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10660022] = {
-		name = "揭示",
-		suit_name = "根国之途",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10660021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1066002,
-		id = 10660022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10660023] = {
-		name = "洗牌",
-		suit_name = "根国之途",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10660022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1066002,
-		id = 10660023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10660031] = {
-		name = "命运",
-		suit_name = "出云国魂",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1066003,
-		id = 10660031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10660032] = {
-		name = "审判",
-		suit_name = "出云国魂",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10660031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1066003,
-		id = 10660032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10660033] = {
-		name = "卜测",
-		suit_name = "出云国魂",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10660032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1066003,
-		id = 10660033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10380011] = {
-		name = "圣焰",
-		suit_name = "神母天后",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1038001,
-		id = 10380011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10380012] = {
-		name = "天炎",
-		suit_name = "神母天后",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10380011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1038001,
-		id = 10380012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10380013] = {
-		name = "怒羽",
-		suit_name = "神母天后",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10380012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1038001,
-		id = 10380013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10380021] = {
-		name = "灼伤",
-		suit_name = "黄金苹果",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1038002,
-		id = 10380021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10380022] = {
-		name = "凰痕",
-		suit_name = "黄金苹果",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10380021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1038002,
-		id = 10380022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10380023] = {
-		name = "炎径",
-		suit_name = "黄金苹果",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10380022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1038002,
-		id = 10380023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10380031] = {
-		name = "临界",
-		suit_name = "妒之心",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1038003,
-		id = 10380031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10380032] = {
-		name = "火种",
-		suit_name = "妒之心",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10380031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1038003,
-		id = 10380032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10380033] = {
-		name = "震旦",
-		suit_name = "妒之心",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10380032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1038003,
-		id = 10380033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10990011] = {
-		name = "深月",
-		suit_name = "涤右目而生",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1099001,
-		id = 10990011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10990012] = {
-		name = "朔弧",
-		suit_name = "涤右目而生",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10990011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1099001,
-		id = 10990012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10990013] = {
-		name = "暗相",
-		suit_name = "涤右目而生",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10990012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1099001,
-		id = 10990013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10990021] = {
-		name = "痛蚀",
-		suit_name = "月夜见尊",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1099002,
-		id = 10990021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10990022] = {
-		name = "辉夜",
-		suit_name = "月夜见尊",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10990021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1099002,
-		id = 10990022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10990023] = {
-		name = "残月",
-		suit_name = "月夜见尊",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10990022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1099002,
-		id = 10990023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10990031] = {
-		name = "月见",
-		suit_name = "天照拟偶",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1099003,
-		id = 10990031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10990032] = {
-		name = "逐影",
-		suit_name = "天照拟偶",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10990031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1099003,
-		id = 10990032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10990033] = {
-		name = "分光",
-		suit_name = "天照拟偶",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10990032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1099003,
-		id = 10990033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10840011] = {
-		name = "破棘",
-		suit_name = "命运之印",
-		unlock_condition = 2320,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1084001,
-		id = 10840011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10840012] = {
-		name = "黑檀",
-		suit_name = "命运之印",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10840011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1084001,
-		id = 10840012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10840013] = {
-		name = "刃芒",
-		suit_name = "命运之印",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10840012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1084001,
-		id = 10840013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10840021] = {
-		name = "守护",
-		suit_name = "木刻文字",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1084002,
-		id = 10840021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10840022] = {
-		name = "天启",
-		suit_name = "木刻文字",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10840021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1084002,
-		id = 10840022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10840023] = {
-		name = "道标",
-		suit_name = "木刻文字",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10840022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1084002,
-		id = 10840023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10840031] = {
-		name = "黑锋",
-		suit_name = "卢恩咒文",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1084003,
-		id = 10840031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10840032] = {
-		name = "凯旋",
-		suit_name = "卢恩咒文",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10840031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1084003,
-		id = 10840032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10840033] = {
-		name = "读眸",
-		suit_name = "卢恩咒文",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10840032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1084003,
-		id = 10840033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10930011] = {
-		name = "天印",
-		suit_name = "苇芽之神",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1093001,
-		id = 10930011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10930012] = {
-		name = "地章",
-		suit_name = "苇芽之神",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10930011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1093001,
-		id = 10930012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10930013] = {
-		name = "常立",
-		suit_name = "苇芽之神",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10930012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1093001,
-		id = 10930013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10930021] = {
-		name = "剖判",
-		suit_name = "辟天之初",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1093002,
-		id = 10930021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10930022] = {
-		name = "疾法",
-		suit_name = "辟天之初",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10930021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1093002,
-		id = 10930022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10930023] = {
-		name = "忍道",
-		suit_name = "辟天之初",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10930022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1093002,
-		id = 10930023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10930031] = {
-		name = "四象",
-		suit_name = "四象之界",
-		unlock_condition = 2304,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1093003,
-		id = 10930031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10930032] = {
-		name = "心惑",
-		suit_name = "四象之界",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10930031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1093003,
-		id = 10930032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10930033] = {
-		name = "惑解",
-		suit_name = "四象之界",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10930032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1093003,
-		id = 10930033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10190011] = {
-		name = "律图",
-		suit_name = "柱之神",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1019001,
-		id = 10190011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10190012] = {
-		name = "原初",
-		suit_name = "柱之神",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10190011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1019001,
-		id = 10190012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10190013] = {
-		name = "空冥",
-		suit_name = "柱之神",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10190012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1019001,
-		id = 10190013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10190021] = {
-		name = "虹星",
-		suit_name = "砂暴主宰",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1019002,
-		id = 10190021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10190022] = {
-		name = "砂岚",
-		suit_name = "砂暴主宰",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10190021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1019002,
-		id = 10190022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10190023] = {
-		name = "蜃楼",
-		suit_name = "砂暴主宰",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10190022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1019002,
-		id = 10190023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10190031] = {
-		name = "风御",
-		suit_name = "裂空之翼",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1019003,
-		id = 10190031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10190032] = {
-		name = "残痕",
-		suit_name = "裂空之翼",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10190031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1019003,
-		id = 10190032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10190033] = {
-		name = "执淬",
-		suit_name = "裂空之翼",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10190032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1019003,
-		id = 10190033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10800011] = {
-		name = "凛冬",
-		suit_name = "霜土之子",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1080001,
-		id = 10800011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10800012] = {
-		name = "璨雪",
-		suit_name = "霜土之子",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10800011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1080001,
-		id = 10800012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10800013] = {
-		name = "冰渡",
-		suit_name = "霜土之子",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10800012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1080001,
-		id = 10800013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10800021] = {
-		name = "寒切",
-		suit_name = "不灭之力",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1080002,
-		id = 10800021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10800022] = {
-		name = "风啸",
-		suit_name = "不灭之力",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10800021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1080002,
-		id = 10800022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10800023] = {
-		name = "晶瀑",
-		suit_name = "不灭之力",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10800022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1080002,
-		id = 10800023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10800031] = {
-		name = "地鸣",
-		suit_name = "终结黄昏",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1080003,
-		id = 10800031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10800032] = {
-		name = "燃冰",
-		suit_name = "终结黄昏",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10800031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1080003,
-		id = 10800032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10800033] = {
-		name = "寂眠",
-		suit_name = "终结黄昏",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10800032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1080003,
-		id = 10800033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10270011] = {
-		name = "霜柱",
-		suit_name = "天灾海兽",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1027001,
-		id = 10270011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10270012] = {
-		name = "冰结",
-		suit_name = "天灾海兽",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10270011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1027001,
-		id = 10270012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10270013] = {
-		name = "雾冰",
-		suit_name = "天灾海兽",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10270012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1027001,
-		id = 10270013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10270021] = {
-		name = "烁光",
-		suit_name = "虚空星宇",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1027002,
-		id = 10270021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10270022] = {
-		name = "初源",
-		suit_name = "虚空星宇",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10270021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1027002,
-		id = 10270022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10270023] = {
-		name = "宇轨",
-		suit_name = "虚空星宇",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10270022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1027002,
-		id = 10270023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10270031] = {
-		name = "海啸",
-		suit_name = "嫉妒原罪",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1027003,
-		id = 10270031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10270032] = {
-		name = "巨物",
-		suit_name = "嫉妒原罪",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10270031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1027003,
-		id = 10270032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10270033] = {
-		name = "底力",
-		suit_name = "嫉妒原罪",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10270032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1027003,
-		id = 10270033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10500011] = {
-		name = "忍骨",
-		suit_name = "天忍穗耳命",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1050001,
-		id = 10500011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10500012] = {
-		name = "空蝉",
-		suit_name = "天忍穗耳命",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10500011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1050001,
-		id = 10500012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10500013] = {
-		name = "目隐",
-		suit_name = "天忍穗耳命",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10500012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1050001,
-		id = 10500013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10500021] = {
-		name = "澄镜",
-		suit_name = "八神鵺羽",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1050002,
-		id = 10500021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10500022] = {
-		name = "夜见",
-		suit_name = "八神鵺羽",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10500021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1050002,
-		id = 10500022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10500023] = {
-		name = "枭神",
-		suit_name = "八神鵺羽",
-		unlock_condition = 2305,
-		pre_astrolabe_id = 10500022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1050002,
-		id = 10500023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10500031] = {
-		name = "韬之形",
-		suit_name = "融月绯刃",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1050003,
-		id = 10500031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10500032] = {
-		name = "八双",
-		suit_name = "融月绯刃",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10500031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1050003,
-		id = 10500032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10500033] = {
-		name = "炼津",
-		suit_name = "融月绯刃",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10500032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1050003,
-		id = 10500033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11480011] = {
-		name = "空震",
-		suit_name = "暴结星",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1148001,
-		id = 11480011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11480012] = {
-		name = "融爆",
-		suit_name = "暴结星",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 11480011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1148001,
-		id = 11480012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11480013] = {
-		name = "逆火",
-		suit_name = "暴结星",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 11480012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1148001,
-		id = 11480013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11480021] = {
-		name = "贯破",
-		suit_name = "大峰天狩",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1148002,
-		id = 11480021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11480022] = {
-		name = "暴弹",
-		suit_name = "大峰天狩",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 11480021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1148002,
-		id = 11480022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11480023] = {
-		name = "阵列",
-		suit_name = "大峰天狩",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 11480022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1148002,
-		id = 11480023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11480031] = {
-		name = "棘刺",
-		suit_name = "乱战的心得",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1148003,
-		id = 11480031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11480032] = {
-		name = "奇袭",
-		suit_name = "乱战的心得",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 11480031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1148003,
-		id = 11480032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11480033] = {
-		name = "续行",
-		suit_name = "乱战的心得",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 11480032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1148003,
-		id = 11480033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10940011] = {
-		name = "虚饰",
-		suit_name = "灾厄圣所",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1094001,
-		id = 10940011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10940012] = {
-		name = "怨慕",
-		suit_name = "灾厄圣所",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10940011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1094001,
-		id = 10940012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10940013] = {
-		name = "幽煌",
-		suit_name = "灾厄圣所",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10940012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1094001,
-		id = 10940013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10940021] = {
-		name = "魔魇",
-		suit_name = "告死魔女",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1094002,
-		id = 10940021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10940022] = {
-		name = "极光",
-		suit_name = "告死魔女",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10940021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1094002,
-		id = 10940022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10940023] = {
-		name = "荒秽",
-		suit_name = "告死魔女",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10940022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1094002,
-		id = 10940023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10940031] = {
-		name = "罪痕",
-		suit_name = "终末葬仪",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1094003,
-		id = 10940031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10940032] = {
-		name = "暗晦",
-		suit_name = "终末葬仪",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10940031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1094003,
-		id = 10940032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10940033] = {
-		name = "纳祭",
-		suit_name = "终末葬仪",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10940032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1094003,
-		id = 10940033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10370011] = {
-		name = "行虚",
-		suit_name = "幽暗荆棘",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1037001,
-		id = 10370011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10370012] = {
-		name = "乱魂",
-		suit_name = "幽暗荆棘",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10370011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1037001,
-		id = 10370012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10370013] = {
-		name = "黯星",
-		suit_name = "幽暗荆棘",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10370012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1037001,
-		id = 10370013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10370021] = {
-		name = "晦暗",
-		suit_name = "宿命之茧",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1037002,
-		id = 10370021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10370022] = {
-		name = "谬误",
-		suit_name = "宿命之茧",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10370021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1037002,
-		id = 10370022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10370023] = {
-		name = "泪华",
-		suit_name = "宿命之茧",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10370022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1037002,
-		id = 10370023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10370031] = {
-		name = "终灭",
-		suit_name = "黄昏丧钟",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1037003,
-		id = 10370031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10370032] = {
-		name = "冥淩",
-		suit_name = "黄昏丧钟",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10370031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1037003,
-		id = 10370032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10370033] = {
-		name = "晓夜",
-		suit_name = "黄昏丧钟",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10370032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1037003,
-		id = 10370033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
 	[10110011] = {
 		name = "引渡",
 		suit_name = "杜埃主宰",
@@ -2303,14 +143,14 @@
 			}
 		}
 	},
-	[11990011] = {
-		name = "真天",
-		suit_name = "逆天罚鳞",
+	[10120011] = {
+		name = "禁律",
+		suit_name = "规戒万类",
 		unlock_condition = 2101,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1199001,
-		id = 11990011,
+		hero_astrolabe_suit_id = 1012001,
+		id = 10120011,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -2319,14 +159,14 @@
 			}
 		}
 	},
-	[11990012] = {
-		name = "神咒",
-		suit_name = "逆天罚鳞",
+	[10120012] = {
+		name = "戒规",
+		suit_name = "规戒万类",
 		unlock_condition = 2102,
-		pre_astrolabe_id = 11990011,
+		pre_astrolabe_id = 10120011,
 		pos = 2,
-		hero_astrolabe_suit_id = 1199001,
-		id = 11990012,
+		hero_astrolabe_suit_id = 1012001,
+		id = 10120012,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -2335,14 +175,14 @@
 			}
 		}
 	},
-	[11990013] = {
-		name = "威烈",
-		suit_name = "逆天罚鳞",
+	[10120013] = {
+		name = "镇恶",
+		suit_name = "规戒万类",
 		unlock_condition = 2103,
-		pre_astrolabe_id = 11990012,
+		pre_astrolabe_id = 10120012,
 		pos = 3,
-		hero_astrolabe_suit_id = 1199001,
-		id = 11990013,
+		hero_astrolabe_suit_id = 1012001,
+		id = 10120013,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -2351,14 +191,14 @@
 			}
 		}
 	},
-	[11990021] = {
-		name = "夜都",
-		suit_name = "夜原神乐",
+	[10120021] = {
+		name = "福泽",
+		suit_name = "祥瑞之兽",
 		unlock_condition = 2201,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1199002,
-		id = 11990021,
+		hero_astrolabe_suit_id = 1012002,
+		id = 10120021,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -2367,14 +207,14 @@
 			}
 		}
 	},
-	[11990022] = {
-		name = "偃月",
-		suit_name = "夜原神乐",
+	[10120022] = {
+		name = "天幸",
+		suit_name = "祥瑞之兽",
 		unlock_condition = 2202,
-		pre_astrolabe_id = 11990021,
+		pre_astrolabe_id = 10120021,
 		pos = 2,
-		hero_astrolabe_suit_id = 1199002,
-		id = 11990022,
+		hero_astrolabe_suit_id = 1012002,
+		id = 10120022,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -2383,14 +223,14 @@
 			}
 		}
 	},
-	[11990023] = {
-		name = "御刃",
-		suit_name = "夜原神乐",
+	[10120023] = {
+		name = "造化",
+		suit_name = "祥瑞之兽",
 		unlock_condition = 2203,
-		pre_astrolabe_id = 11990022,
+		pre_astrolabe_id = 10120022,
 		pos = 3,
-		hero_astrolabe_suit_id = 1199002,
-		id = 11990023,
+		hero_astrolabe_suit_id = 1012002,
+		id = 10120023,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -2399,14 +239,14 @@
 			}
 		}
 	},
-	[11990031] = {
-		name = "神世",
-		suit_name = "一念刹那生",
+	[10120031] = {
+		name = "通识",
+		suit_name = "通达万物",
 		unlock_condition = 2301,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1199003,
-		id = 11990031,
+		hero_astrolabe_suit_id = 1012003,
+		id = 10120031,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -2415,14 +255,14 @@
 			}
 		}
 	},
-	[11990032] = {
-		name = "创生",
-		suit_name = "一念刹那生",
+	[10120032] = {
+		name = "通情",
+		suit_name = "通达万物",
 		unlock_condition = 2302,
-		pre_astrolabe_id = 11990031,
+		pre_astrolabe_id = 10120031,
 		pos = 2,
-		hero_astrolabe_suit_id = 1199003,
-		id = 11990032,
+		hero_astrolabe_suit_id = 1012003,
+		id = 10120032,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -2431,1166 +271,14 @@
 			}
 		}
 	},
-	[11990033] = {
-		name = "极尽",
-		suit_name = "一念刹那生",
+	[10120033] = {
+		name = "知物",
+		suit_name = "通达万物",
 		unlock_condition = 2303,
-		pre_astrolabe_id = 11990032,
+		pre_astrolabe_id = 10120032,
 		pos = 3,
-		hero_astrolabe_suit_id = 1199003,
-		id = 11990033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11840011] = {
-		name = "掷星",
-		suit_name = "神铁之盾",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1184001,
-		id = 11840011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11840012] = {
-		name = "心锁",
-		suit_name = "神铁之盾",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 11840011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1184001,
-		id = 11840012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11840013] = {
-		name = "同调",
-		suit_name = "神铁之盾",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 11840012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1184001,
-		id = 11840013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11840021] = {
-		name = "辰幕",
-		suit_name = "永命垂线",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1184002,
-		id = 11840021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11840022] = {
-		name = "星守",
-		suit_name = "永命垂线",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 11840021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1184002,
-		id = 11840022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11840023] = {
-		name = "天司",
-		suit_name = "永命垂线",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 11840022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1184002,
-		id = 11840023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11840031] = {
-		name = "织翼",
-		suit_name = "青空约束",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1184003,
-		id = 11840031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11840032] = {
-		name = "誓念",
-		suit_name = "青空约束",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 11840031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1184003,
-		id = 11840032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11840033] = {
-		name = "守望",
-		suit_name = "青空约束",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 11840032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1184003,
-		id = 11840033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10580011] = {
-		name = "烧蚀",
-		suit_name = "归天止境",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1058001,
-		id = 10580011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10580012] = {
-		name = "赤灼",
-		suit_name = "归天止境",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10580011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1058001,
-		id = 10580012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10580013] = {
-		name = "烛魇",
-		suit_name = "归天止境",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10580012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1058001,
-		id = 10580013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10580021] = {
-		name = "古燿",
-		suit_name = "炫毗古神",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1058002,
-		id = 10580021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10580022] = {
-		name = "焚樱",
-		suit_name = "炫毗古神",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10580021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1058002,
-		id = 10580022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10580023] = {
-		name = "祸殁",
-		suit_name = "炫毗古神",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10580022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1058002,
-		id = 10580023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10580031] = {
-		name = "逆卷",
-		suit_name = "火曦降世",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1058003,
-		id = 10580031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10580032] = {
-		name = "燃烬",
-		suit_name = "火曦降世",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10580031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1058003,
-		id = 10580032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10580033] = {
-		name = "涅灭",
-		suit_name = "火曦降世",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10580032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1058003,
-		id = 10580033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10590011] = {
-		name = "辉誉",
-		suit_name = "炙白桂冠",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1059001,
-		id = 10590011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10590012] = {
-		name = "闪熠",
-		suit_name = "炙白桂冠",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10590011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1059001,
-		id = 10590012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10590013] = {
-		name = "光冕",
-		suit_name = "炙白桂冠",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10590012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1059001,
-		id = 10590013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10590021] = {
-		name = "日珥",
-		suit_name = "日曜国度",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1059002,
-		id = 10590021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10590022] = {
-		name = "耀斑",
-		suit_name = "日曜国度",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10590021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1059002,
-		id = 10590022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10590023] = {
-		name = "晨星",
-		suit_name = "日曜国度",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10590022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1059002,
-		id = 10590023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10590031] = {
-		name = "圣寰",
-		suit_name = "浩渺煌光",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1059003,
-		id = 10590031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10590032] = {
-		name = "日仪",
-		suit_name = "浩渺煌光",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10590031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1059003,
-		id = 10590032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10590033] = {
-		name = "烈辉",
-		suit_name = "浩渺煌光",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10590032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1059003,
-		id = 10590033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10960011] = {
-		name = "时续",
-		suit_name = "狡知游戏",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1096001,
-		id = 10960011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10960012] = {
-		name = "疾行",
-		suit_name = "狡知游戏",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10960011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1096001,
-		id = 10960012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10960013] = {
-		name = "翔风",
-		suit_name = "狡知游戏",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10960012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1096001,
-		id = 10960013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10960021] = {
-		name = "真识",
-		suit_name = "三重伟大",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1096002,
-		id = 10960021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10960022] = {
-		name = "苍翠",
-		suit_name = "三重伟大",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10960021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1096002,
-		id = 10960022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10960023] = {
-		name = "摧坚",
-		suit_name = "三重伟大",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10960022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1096002,
-		id = 10960023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10960031] = {
-		name = "白羽",
-		suit_name = "匿影信使",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1096003,
-		id = 10960031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10960032] = {
-		name = "极速",
-		suit_name = "匿影信使",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10960031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1096003,
-		id = 10960032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10960033] = {
-		name = "沧岚",
-		suit_name = "匿影信使",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10960032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1096003,
-		id = 10960033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10260011] = {
-		name = "焰征",
-		suit_name = "战火熔炉",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1026001,
-		id = 10260011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10260012] = {
-		name = "熔击",
-		suit_name = "战火熔炉",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10260011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1026001,
-		id = 10260012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10260013] = {
-		name = "爆炎",
-		suit_name = "战火熔炉",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10260012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1026001,
-		id = 10260013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10260021] = {
-		name = "械能",
-		suit_name = "撕裂银手",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1026002,
-		id = 10260021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10260022] = {
-		name = "超载",
-		suit_name = "撕裂银手",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10260021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1026002,
-		id = 10260022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10260023] = {
-		name = "增殖",
-		suit_name = "撕裂银手",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10260022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1026002,
-		id = 10260023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10260031] = {
-		name = "焚尽",
-		suit_name = "机装猎兵",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1026003,
-		id = 10260031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10260032] = {
-		name = "威焰",
-		suit_name = "机装猎兵",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10260031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1026003,
-		id = 10260032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10260033] = {
-		name = "地火",
-		suit_name = "机装猎兵",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10260032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1026003,
-		id = 10260033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10970011] = {
-		name = "梦兆",
-		suit_name = "梦境之国",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1097001,
-		id = 10970011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10970012] = {
-		name = "夜寐",
-		suit_name = "梦境之国",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10970011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1097001,
-		id = 10970012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10970013] = {
-		name = "旧思",
-		suit_name = "梦境之国",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10970012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1097001,
-		id = 10970013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10970021] = {
-		name = "幽想",
-		suit_name = "空幻造物",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1097002,
-		id = 10970021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10970022] = {
-		name = "投影",
-		suit_name = "空幻造物",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10970021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1097002,
-		id = 10970022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10970023] = {
-		name = "流绚",
-		suit_name = "空幻造物",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10970022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1097002,
-		id = 10970023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10970031] = {
-		name = "幻奏",
-		suit_name = "永恒摇篮",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1097003,
-		id = 10970031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10970032] = {
-		name = "咏歌",
-		suit_name = "永恒摇篮",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10970031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1097003,
-		id = 10970032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10970033] = {
-		name = "芊眠",
-		suit_name = "永恒摇篮",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10970032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1097003,
-		id = 10970033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11390011] = {
-		name = "寒晶",
-		suit_name = "璀璨寒冬",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1139001,
-		id = 11390011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11390012] = {
-		name = "绝封",
-		suit_name = "璀璨寒冬",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 11390011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1139001,
-		id = 11390012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11390013] = {
-		name = "凛寒",
-		suit_name = "璀璨寒冬",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 11390012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1139001,
-		id = 11390013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11390021] = {
-		name = "空凌",
-		suit_name = "极地银河",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1139002,
-		id = 11390021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11390022] = {
-		name = "烁雪",
-		suit_name = "极地银河",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 11390021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1139002,
-		id = 11390022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11390023] = {
-		name = "极渊",
-		suit_name = "极地银河",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 11390022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1139002,
-		id = 11390023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11390031] = {
-		name = "冰尘",
-		suit_name = "静谧之白",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1139003,
-		id = 11390031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11390032] = {
-		name = "凝华",
-		suit_name = "静谧之白",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 11390031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1139003,
-		id = 11390032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11390033] = {
-		name = "雪覆",
-		suit_name = "静谧之白",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 11390032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1139003,
-		id = 11390033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11380011] = {
-		name = "星穹",
-		suit_name = "清辉星海",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1138001,
-		id = 11380011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11380012] = {
-		name = "天权",
-		suit_name = "清辉星海",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 11380011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1138001,
-		id = 11380012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11380013] = {
-		name = "瀚宇",
-		suit_name = "清辉星海",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 11380012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1138001,
-		id = 11380013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11380021] = {
-		name = "破曙",
-		suit_name = "昼夜天启",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1138002,
-		id = 11380021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11380022] = {
-		name = "辰光",
-		suit_name = "昼夜天启",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 11380021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1138002,
-		id = 11380022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11380023] = {
-		name = "幻耀",
-		suit_name = "昼夜天启",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 11380022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1138002,
-		id = 11380023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11380031] = {
-		name = "崇极",
-		suit_name = "极光咏叹",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1138003,
-		id = 11380031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11380032] = {
-		name = "无瑕",
-		suit_name = "极光咏叹",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 11380031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1138003,
-		id = 11380032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11380033] = {
-		name = "清晖",
-		suit_name = "极光咏叹",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 11380032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1138003,
-		id = 11380033,
+		hero_astrolabe_suit_id = 1012003,
+		id = 10120033,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3743,14 +431,14 @@
 			}
 		}
 	},
-	[10560011] = {
-		name = "赞歌",
-		suit_name = "提毗时母",
+	[10150011] = {
+		name = "摧城",
+		suit_name = "战争母狮",
 		unlock_condition = 2101,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1056001,
-		id = 10560011,
+		hero_astrolabe_suit_id = 1015001,
+		id = 10150011,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3759,14 +447,14 @@
 			}
 		}
 	},
-	[10560012] = {
-		name = "梵行",
-		suit_name = "提毗时母",
+	[10150012] = {
+		name = "登锋",
+		suit_name = "战争母狮",
 		unlock_condition = 2102,
-		pre_astrolabe_id = 10560011,
+		pre_astrolabe_id = 10150011,
 		pos = 2,
-		hero_astrolabe_suit_id = 1056001,
-		id = 10560012,
+		hero_astrolabe_suit_id = 1015001,
+		id = 10150012,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3775,14 +463,14 @@
 			}
 		}
 	},
-	[10560013] = {
-		name = "刚耐",
-		suit_name = "提毗时母",
+	[10150013] = {
+		name = "统军",
+		suit_name = "战争母狮",
 		unlock_condition = 2103,
-		pre_astrolabe_id = 10560012,
+		pre_astrolabe_id = 10150012,
 		pos = 3,
-		hero_astrolabe_suit_id = 1056001,
-		id = 10560013,
+		hero_astrolabe_suit_id = 1015001,
+		id = 10150013,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3791,14 +479,14 @@
 			}
 		}
 	},
-	[10560021] = {
-		name = "崩世",
-		suit_name = "惶怒降魔",
+	[10150021] = {
+		name = "罚罪",
+		suit_name = "神圣审判",
 		unlock_condition = 2201,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1056002,
-		id = 10560021,
+		hero_astrolabe_suit_id = 1015002,
+		id = 10150021,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3807,14 +495,14 @@
 			}
 		}
 	},
-	[10560022] = {
-		name = "摧神",
-		suit_name = "惶怒降魔",
+	[10150022] = {
+		name = "噬恶",
+		suit_name = "神圣审判",
 		unlock_condition = 2202,
-		pre_astrolabe_id = 10560021,
+		pre_astrolabe_id = 10150021,
 		pos = 2,
-		hero_astrolabe_suit_id = 1056002,
-		id = 10560022,
+		hero_astrolabe_suit_id = 1015002,
+		id = 10150022,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3823,14 +511,14 @@
 			}
 		}
 	},
-	[10560023] = {
-		name = "摩罗",
-		suit_name = "惶怒降魔",
+	[10150023] = {
+		name = "裁断",
+		suit_name = "神圣审判",
 		unlock_condition = 2203,
-		pre_astrolabe_id = 10560022,
+		pre_astrolabe_id = 10150022,
 		pos = 3,
-		hero_astrolabe_suit_id = 1056002,
-		id = 10560023,
+		hero_astrolabe_suit_id = 1015002,
+		id = 10150023,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3839,14 +527,14 @@
 			}
 		}
 	},
-	[10560031] = {
-		name = "神孽",
-		suit_name = "三摩耶之主",
+	[10150031] = {
+		name = "扬尘",
+		suit_name = "沙湖酩酊",
 		unlock_condition = 2301,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1056003,
-		id = 10560031,
+		hero_astrolabe_suit_id = 1015003,
+		id = 10150031,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3855,14 +543,14 @@
 			}
 		}
 	},
-	[10560032] = {
-		name = "侵蚀",
-		suit_name = "三摩耶之主",
+	[10150032] = {
+		name = "微醺",
+		suit_name = "沙湖酩酊",
 		unlock_condition = 2302,
-		pre_astrolabe_id = 10560031,
+		pre_astrolabe_id = 10150031,
 		pos = 2,
-		hero_astrolabe_suit_id = 1056003,
-		id = 10560032,
+		hero_astrolabe_suit_id = 1015003,
+		id = 10150032,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3871,14 +559,14 @@
 			}
 		}
 	},
-	[10560033] = {
-		name = "诡隐",
-		suit_name = "三摩耶之主",
+	[10150033] = {
+		name = "酣醉",
+		suit_name = "沙湖酩酊",
 		unlock_condition = 2303,
-		pre_astrolabe_id = 10560032,
+		pre_astrolabe_id = 10150032,
 		pos = 3,
-		hero_astrolabe_suit_id = 1056003,
-		id = 10560033,
+		hero_astrolabe_suit_id = 1015003,
+		id = 10150033,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3887,14 +575,14 @@
 			}
 		}
 	},
-	[11110011] = {
-		name = "萨赫",
-		suit_name = "逆转复生",
+	[10160011] = {
+		name = "扩容",
+		suit_name = "爆裂扩容模块",
 		unlock_condition = 2101,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1111001,
-		id = 11110011,
+		hero_astrolabe_suit_id = 1016001,
+		id = 10160011,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3903,14 +591,14 @@
 			}
 		}
 	},
-	[11110012] = {
-		name = "神柩",
-		suit_name = "逆转复生",
+	[10160012] = {
+		name = "引燃",
+		suit_name = "爆裂扩容模块",
 		unlock_condition = 2102,
-		pre_astrolabe_id = 11110011,
+		pre_astrolabe_id = 10160011,
 		pos = 2,
-		hero_astrolabe_suit_id = 1111001,
-		id = 11110012,
+		hero_astrolabe_suit_id = 1016001,
+		id = 10160012,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3919,14 +607,14 @@
 			}
 		}
 	},
-	[11110013] = {
-		name = "殓藏",
-		suit_name = "逆转复生",
+	[10160013] = {
+		name = "冲击",
+		suit_name = "爆裂扩容模块",
 		unlock_condition = 2103,
-		pre_astrolabe_id = 11110012,
+		pre_astrolabe_id = 10160012,
 		pos = 3,
-		hero_astrolabe_suit_id = 1111001,
-		id = 11110013,
+		hero_astrolabe_suit_id = 1016001,
+		id = 10160013,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3935,14 +623,14 @@
 			}
 		}
 	},
-	[11110021] = {
-		name = "礼颂",
-		suit_name = "至上审判",
+	[10160021] = {
+		name = "升频",
+		suit_name = "动能超频模块",
 		unlock_condition = 2201,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1111002,
-		id = 11110021,
+		hero_astrolabe_suit_id = 1016002,
+		id = 10160021,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3951,14 +639,14 @@
 			}
 		}
 	},
-	[11110022] = {
-		name = "戒律",
-		suit_name = "至上审判",
+	[10160022] = {
+		name = "充能",
+		suit_name = "动能超频模块",
 		unlock_condition = 2202,
-		pre_astrolabe_id = 11110021,
+		pre_astrolabe_id = 10160021,
 		pos = 2,
-		hero_astrolabe_suit_id = 1111002,
-		id = 11110022,
+		hero_astrolabe_suit_id = 1016002,
+		id = 10160022,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3967,14 +655,14 @@
 			}
 		}
 	},
-	[11110023] = {
-		name = "赦令",
-		suit_name = "至上审判",
+	[10160023] = {
+		name = "震裂",
+		suit_name = "动能超频模块",
 		unlock_condition = 2203,
-		pre_astrolabe_id = 11110022,
+		pre_astrolabe_id = 10160022,
 		pos = 3,
-		hero_astrolabe_suit_id = 1111002,
-		id = 11110023,
+		hero_astrolabe_suit_id = 1016002,
+		id = 10160023,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3983,14 +671,14 @@
 			}
 		}
 	},
-	[11110031] = {
-		name = "圣书",
-		suit_name = "丰饶鸵羽",
+	[10160031] = {
+		name = "分流",
+		suit_name = "压力增幅模块",
 		unlock_condition = 2301,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1111003,
-		id = 11110031,
+		hero_astrolabe_suit_id = 1016003,
+		id = 10160031,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -3999,14 +687,14 @@
 			}
 		}
 	},
-	[11110032] = {
-		name = "神辞",
-		suit_name = "丰饶鸵羽",
+	[10160032] = {
+		name = "气蚀",
+		suit_name = "压力增幅模块",
 		unlock_condition = 2302,
-		pre_astrolabe_id = 11110031,
+		pre_astrolabe_id = 10160031,
 		pos = 2,
-		hero_astrolabe_suit_id = 1111003,
-		id = 11110032,
+		hero_astrolabe_suit_id = 1016003,
+		id = 10160032,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4015,14 +703,1310 @@
 			}
 		}
 	},
-	[11110033] = {
-		name = "苏生",
-		suit_name = "丰饶鸵羽",
+	[10160033] = {
+		name = "增压",
+		suit_name = "压力增幅模块",
 		unlock_condition = 2303,
-		pre_astrolabe_id = 11110032,
+		pre_astrolabe_id = 10160032,
 		pos = 3,
-		hero_astrolabe_suit_id = 1111003,
-		id = 11110033,
+		hero_astrolabe_suit_id = 1016003,
+		id = 10160033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10170011] = {
+		name = "处决",
+		suit_name = "战神的二重身",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1017001,
+		id = 10170011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10170012] = {
+		name = "猎杀",
+		suit_name = "战神的二重身",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10170011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1017001,
+		id = 10170012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10170013] = {
+		name = "血祭",
+		suit_name = "战神的二重身",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10170012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1017001,
+		id = 10170013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10170021] = {
+		name = "灵动",
+		suit_name = "圣坛上的舞步",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1017002,
+		id = 10170021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10170022] = {
+		name = "锋锐",
+		suit_name = "圣坛上的舞步",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10170021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1017002,
+		id = 10170022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10170023] = {
+		name = "幽光",
+		suit_name = "圣坛上的舞步",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10170022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1017002,
+		id = 10170023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10170031] = {
+		name = "灵瞳",
+		suit_name = "神之眼的印记",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1017003,
+		id = 10170031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10170032] = {
+		name = "凝视",
+		suit_name = "神之眼的印记",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10170031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1017003,
+		id = 10170032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10170033] = {
+		name = "判决",
+		suit_name = "神之眼的印记",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10170032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1017003,
+		id = 10170033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10190011] = {
+		name = "律图",
+		suit_name = "柱之神",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1019001,
+		id = 10190011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10190012] = {
+		name = "原初",
+		suit_name = "柱之神",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10190011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1019001,
+		id = 10190012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10190013] = {
+		name = "空冥",
+		suit_name = "柱之神",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10190012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1019001,
+		id = 10190013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10190021] = {
+		name = "虹星",
+		suit_name = "砂暴主宰",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1019002,
+		id = 10190021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10190022] = {
+		name = "砂岚",
+		suit_name = "砂暴主宰",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10190021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1019002,
+		id = 10190022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10190023] = {
+		name = "蜃楼",
+		suit_name = "砂暴主宰",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10190022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1019002,
+		id = 10190023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10190031] = {
+		name = "风御",
+		suit_name = "裂空之翼",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1019003,
+		id = 10190031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10190032] = {
+		name = "残痕",
+		suit_name = "裂空之翼",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10190031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1019003,
+		id = 10190032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10190033] = {
+		name = "执淬",
+		suit_name = "裂空之翼",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10190032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1019003,
+		id = 10190033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10200011] = {
+		name = "璃伽",
+		suit_name = "破灭之神",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1020001,
+		id = 10200011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10200012] = {
+		name = "俱毁",
+		suit_name = "破灭之神",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10200011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1020001,
+		id = 10200012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10200013] = {
+		name = "圣舞",
+		suit_name = "破灭之神",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10200012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1020001,
+		id = 10200013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10200021] = {
+		name = "莲诞",
+		suit_name = "创生之神",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1020002,
+		id = 10200021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10200022] = {
+		name = "金卵",
+		suit_name = "创生之神",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10200021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1020002,
+		id = 10200022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10200023] = {
+		name = "应许",
+		suit_name = "创生之神",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10200022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1020002,
+		id = 10200023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10200031] = {
+		name = "创造",
+		suit_name = "三相合一",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1020003,
+		id = 10200031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10200032] = {
+		name = "维护",
+		suit_name = "三相合一",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10200031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1020003,
+		id = 10200032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10200033] = {
+		name = "破坏",
+		suit_name = "三相合一",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10200032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1020003,
+		id = 10200033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10210011] = {
+		name = "猎林",
+		suit_name = "荒原狩野",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1021001,
+		id = 10210011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10210012] = {
+		name = "夜狩",
+		suit_name = "荒原狩野",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10210011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1021001,
+		id = 10210012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10210013] = {
+		name = "金矢",
+		suit_name = "荒原狩野",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10210012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1021001,
+		id = 10210013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10210021] = {
+		name = "奏曲",
+		suit_name = "灯塔和弦",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1021002,
+		id = 10210021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10210022] = {
+		name = "守望",
+		suit_name = "灯塔和弦",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10210021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1021002,
+		id = 10210022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10210023] = {
+		name = "音律",
+		suit_name = "灯塔和弦",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10210022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1021002,
+		id = 10210023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10210031] = {
+		name = "协调",
+		suit_name = "音符骑士",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1021003,
+		id = 10210031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10210032] = {
+		name = "剑鸣",
+		suit_name = "音符骑士",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10210031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1021003,
+		id = 10210032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10210033] = {
+		name = "弦音",
+		suit_name = "音符骑士",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10210032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1021003,
+		id = 10210033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10220011] = {
+		name = "清辉",
+		suit_name = "满月辉光",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1022001,
+		id = 10220011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10220012] = {
+		name = "月露",
+		suit_name = "满月辉光",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10220011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1022001,
+		id = 10220012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10220013] = {
+		name = "薄暮",
+		suit_name = "满月辉光",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10220012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1022001,
+		id = 10220013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10220021] = {
+		name = "朔月",
+		suit_name = "新月桂冠",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1022002,
+		id = 10220021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10220022] = {
+		name = "隐月",
+		suit_name = "新月桂冠",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10220021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1022002,
+		id = 10220022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10220023] = {
+		name = "月冠",
+		suit_name = "新月桂冠",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10220022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1022002,
+		id = 10220023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10220031] = {
+		name = "幽歌",
+		suit_name = "幽月咏叹",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1022003,
+		id = 10220031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10220032] = {
+		name = "寂月",
+		suit_name = "幽月咏叹",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10220031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1022003,
+		id = 10220032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10220033] = {
+		name = "皓华",
+		suit_name = "幽月咏叹",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10220032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1022003,
+		id = 10220033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10240011] = {
+		name = "引渡",
+		suit_name = "亡魂接引",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1024001,
+		id = 10240011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10240012] = {
+		name = "感应",
+		suit_name = "亡魂接引",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10240011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1024001,
+		id = 10240012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10240013] = {
+		name = "魂链",
+		suit_name = "亡魂接引",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10240012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1024001,
+		id = 10240013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10240021] = {
+		name = "协从",
+		suit_name = "死灵审判",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1024002,
+		id = 10240021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10240022] = {
+		name = "判决",
+		suit_name = "死灵审判",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10240021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1024002,
+		id = 10240022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10240023] = {
+		name = "神罚",
+		suit_name = "死灵审判",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10240022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1024002,
+		id = 10240023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10240031] = {
+		name = "激愤",
+		suit_name = "幽冥神怒",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1024003,
+		id = 10240031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10240032] = {
+		name = "怒魂",
+		suit_name = "幽冥神怒",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10240031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1024003,
+		id = 10240032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10240033] = {
+		name = "狂狼",
+		suit_name = "幽冥神怒",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10240032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1024003,
+		id = 10240033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10260011] = {
+		name = "焰征",
+		suit_name = "战火熔炉",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1026001,
+		id = 10260011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10260012] = {
+		name = "熔击",
+		suit_name = "战火熔炉",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10260011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1026001,
+		id = 10260012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10260013] = {
+		name = "爆炎",
+		suit_name = "战火熔炉",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10260012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1026001,
+		id = 10260013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10260021] = {
+		name = "械能",
+		suit_name = "撕裂银手",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1026002,
+		id = 10260021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10260022] = {
+		name = "超载",
+		suit_name = "撕裂银手",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10260021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1026002,
+		id = 10260022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10260023] = {
+		name = "增殖",
+		suit_name = "撕裂银手",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10260022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1026002,
+		id = 10260023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10260031] = {
+		name = "焚尽",
+		suit_name = "机装猎兵",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1026003,
+		id = 10260031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10260032] = {
+		name = "威焰",
+		suit_name = "机装猎兵",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10260031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1026003,
+		id = 10260032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10260033] = {
+		name = "地火",
+		suit_name = "机装猎兵",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10260032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1026003,
+		id = 10260033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10270011] = {
+		name = "霜柱",
+		suit_name = "天灾海兽",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1027001,
+		id = 10270011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10270012] = {
+		name = "冰结",
+		suit_name = "天灾海兽",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10270011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1027001,
+		id = 10270012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10270013] = {
+		name = "雾冰",
+		suit_name = "天灾海兽",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10270012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1027001,
+		id = 10270013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10270021] = {
+		name = "烁光",
+		suit_name = "虚空星宇",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1027002,
+		id = 10270021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10270022] = {
+		name = "初源",
+		suit_name = "虚空星宇",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10270021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1027002,
+		id = 10270022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10270023] = {
+		name = "宇轨",
+		suit_name = "虚空星宇",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10270022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1027002,
+		id = 10270023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10270031] = {
+		name = "海啸",
+		suit_name = "嫉妒原罪",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1027003,
+		id = 10270031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10270032] = {
+		name = "巨物",
+		suit_name = "嫉妒原罪",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10270031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1027003,
+		id = 10270032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10270033] = {
+		name = "底力",
+		suit_name = "嫉妒原罪",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10270032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1027003,
+		id = 10270033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10280011] = {
+		name = "陨击",
+		suit_name = "雷霆的权柄",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1028001,
+		id = 10280011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10280012] = {
+		name = "天威",
+		suit_name = "雷霆的权柄",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10280011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1028001,
+		id = 10280012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10280013] = {
+		name = "降神",
+		suit_name = "雷霆的权柄",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10280012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1028001,
+		id = 10280013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10280021] = {
+		name = "迅击",
+		suit_name = "神国的战狂",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1028002,
+		id = 10280021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10280022] = {
+		name = "战溢",
+		suit_name = "神国的战狂",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10280021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1028002,
+		id = 10280022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10280023] = {
+		name = "狂热",
+		suit_name = "神国的战狂",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10280022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1028002,
+		id = 10280023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10280031] = {
+		name = "绝灭",
+		suit_name = "尘世的宿敌",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1028003,
+		id = 10280031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10280032] = {
+		name = "无尽",
+		suit_name = "尘世的宿敌",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10280031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1028003,
+		id = 10280032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10280033] = {
+		name = "终战",
+		suit_name = "尘世的宿敌",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10280032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1028003,
+		id = 10280033,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4175,6 +2159,294 @@
 			}
 		}
 	},
+	[10330011] = {
+		name = "先驱",
+		suit_name = "天启",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1033001,
+		id = 10330011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10330012] = {
+		name = "冥思",
+		suit_name = "天启",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10330011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1033001,
+		id = 10330012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10330013] = {
+		name = "引戈",
+		suit_name = "天启",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10330012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1033001,
+		id = 10330013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10330021] = {
+		name = "逐虹",
+		suit_name = "威临",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1033002,
+		id = 10330021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10330022] = {
+		name = "破阵",
+		suit_name = "威临",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10330021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1033002,
+		id = 10330022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10330023] = {
+		name = "斗者",
+		suit_name = "威临",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10330022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1033002,
+		id = 10330023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10330031] = {
+		name = "藏蕴",
+		suit_name = "昭世",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1033003,
+		id = 10330031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10330032] = {
+		name = "隐锋",
+		suit_name = "昭世",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10330031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1033003,
+		id = 10330032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10330033] = {
+		name = "无冕",
+		suit_name = "昭世",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10330032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1033003,
+		id = 10330033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10340011] = {
+		name = "夺魄",
+		suit_name = "烈毒主宰",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1034001,
+		id = 10340011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10340012] = {
+		name = "穿心",
+		suit_name = "烈毒主宰",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10340011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1034001,
+		id = 10340012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10340013] = {
+		name = "摄目",
+		suit_name = "烈毒主宰",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10340012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1034001,
+		id = 10340013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10340021] = {
+		name = "异鳞",
+		suit_name = "万戮灾异",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1034002,
+		id = 10340021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10340022] = {
+		name = "蜕生",
+		suit_name = "万戮灾异",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10340021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1034002,
+		id = 10340022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10340023] = {
+		name = "狂潮",
+		suit_name = "万戮灾异",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10340022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1034002,
+		id = 10340023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10340031] = {
+		name = "驱邪",
+		suit_name = "守护圣蛇",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1034003,
+		id = 10340031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10340032] = {
+		name = "蛇变",
+		suit_name = "守护圣蛇",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10340031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1034003,
+		id = 10340032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10340033] = {
+		name = "赐佑",
+		suit_name = "守护圣蛇",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10340032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1034003,
+		id = 10340033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
 	[10350011] = {
 		name = "戗罚",
 		suit_name = "蹈锋饮战",
@@ -4311,6 +2583,438 @@
 		pos = 3,
 		hero_astrolabe_suit_id = 1035003,
 		id = 10350033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10370011] = {
+		name = "行虚",
+		suit_name = "幽暗荆棘",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1037001,
+		id = 10370011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10370012] = {
+		name = "乱魂",
+		suit_name = "幽暗荆棘",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10370011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1037001,
+		id = 10370012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10370013] = {
+		name = "黯星",
+		suit_name = "幽暗荆棘",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10370012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1037001,
+		id = 10370013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10370021] = {
+		name = "晦暗",
+		suit_name = "宿命之茧",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1037002,
+		id = 10370021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10370022] = {
+		name = "谬误",
+		suit_name = "宿命之茧",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10370021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1037002,
+		id = 10370022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10370023] = {
+		name = "泪华",
+		suit_name = "宿命之茧",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10370022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1037002,
+		id = 10370023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10370031] = {
+		name = "终灭",
+		suit_name = "黄昏丧钟",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1037003,
+		id = 10370031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10370032] = {
+		name = "冥淩",
+		suit_name = "黄昏丧钟",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10370031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1037003,
+		id = 10370032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10370033] = {
+		name = "晓夜",
+		suit_name = "黄昏丧钟",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10370032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1037003,
+		id = 10370033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10380011] = {
+		name = "圣焰",
+		suit_name = "神母天后",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1038001,
+		id = 10380011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10380012] = {
+		name = "天炎",
+		suit_name = "神母天后",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10380011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1038001,
+		id = 10380012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10380013] = {
+		name = "怒羽",
+		suit_name = "神母天后",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10380012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1038001,
+		id = 10380013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10380021] = {
+		name = "灼伤",
+		suit_name = "黄金苹果",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1038002,
+		id = 10380021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10380022] = {
+		name = "凰痕",
+		suit_name = "黄金苹果",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10380021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1038002,
+		id = 10380022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10380023] = {
+		name = "炎径",
+		suit_name = "黄金苹果",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10380022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1038002,
+		id = 10380023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10380031] = {
+		name = "临界",
+		suit_name = "妒之心",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1038003,
+		id = 10380031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10380032] = {
+		name = "火种",
+		suit_name = "妒之心",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10380031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1038003,
+		id = 10380032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10380033] = {
+		name = "震旦",
+		suit_name = "妒之心",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10380032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1038003,
+		id = 10380033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10390011] = {
+		name = "苍洋",
+		suit_name = "海王星",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1039001,
+		id = 10390011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10390012] = {
+		name = "碧波",
+		suit_name = "海王星",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10390011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1039001,
+		id = 10390012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10390013] = {
+		name = "银浪",
+		suit_name = "海王星",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10390012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1039001,
+		id = 10390013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10390021] = {
+		name = "巨洪",
+		suit_name = "亚特兰蒂斯",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1039002,
+		id = 10390021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10390022] = {
+		name = "神殿",
+		suit_name = "亚特兰蒂斯",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10390021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1039002,
+		id = 10390022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10390023] = {
+		name = "听潮",
+		suit_name = "亚特兰蒂斯",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10390022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1039002,
+		id = 10390023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10390031] = {
+		name = "怒涛",
+		suit_name = "三叉戟怒涛",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1039003,
+		id = 10390031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10390032] = {
+		name = "圣戟",
+		suit_name = "三叉戟怒涛",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10390031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1039003,
+		id = 10390032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10390033] = {
+		name = "深蓝",
+		suit_name = "三叉戟怒涛",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10390032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1039003,
+		id = 10390033,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4607,14 +3311,14 @@
 			}
 		}
 	},
-	[11190011] = {
-		name = "谐振",
-		suit_name = "鸣雷沙暴",
+	[10480011] = {
+		name = "残弹",
+		suit_name = "大峰山之护",
 		unlock_condition = 2101,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1119001,
-		id = 11190011,
+		hero_astrolabe_suit_id = 1048001,
+		id = 10480011,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4623,14 +3327,14 @@
 			}
 		}
 	},
-	[11190012] = {
-		name = "强风",
-		suit_name = "鸣雷沙暴",
+	[10480012] = {
+		name = "备战",
+		suit_name = "大峰山之护",
 		unlock_condition = 2102,
-		pre_astrolabe_id = 11190011,
+		pre_astrolabe_id = 10480011,
 		pos = 2,
-		hero_astrolabe_suit_id = 1119001,
-		id = 11190012,
+		hero_astrolabe_suit_id = 1048001,
+		id = 10480012,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4639,14 +3343,14 @@
 			}
 		}
 	},
-	[11190013] = {
-		name = "雷暴",
-		suit_name = "鸣雷沙暴",
+	[10480013] = {
+		name = "火力",
+		suit_name = "大峰山之护",
 		unlock_condition = 2103,
-		pre_astrolabe_id = 11190012,
+		pre_astrolabe_id = 10480012,
 		pos = 3,
-		hero_astrolabe_suit_id = 1119001,
-		id = 11190013,
+		hero_astrolabe_suit_id = 1048001,
+		id = 10480013,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4655,14 +3359,14 @@
 			}
 		}
 	},
-	[11190021] = {
-		name = "尖碑",
-		suit_name = "风雷领域",
+	[10480021] = {
+		name = "轰炸",
+		suit_name = "善童鬼",
 		unlock_condition = 2201,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1119002,
-		id = 11190021,
+		hero_astrolabe_suit_id = 1048002,
+		id = 10480021,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4671,14 +3375,14 @@
 			}
 		}
 	},
-	[11190022] = {
-		name = "沙蚀",
-		suit_name = "风雷领域",
+	[10480022] = {
+		name = "连锁",
+		suit_name = "善童鬼",
 		unlock_condition = 2202,
-		pre_astrolabe_id = 11190021,
+		pre_astrolabe_id = 10480021,
 		pos = 2,
-		hero_astrolabe_suit_id = 1119002,
-		id = 11190022,
+		hero_astrolabe_suit_id = 1048002,
+		id = 10480022,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4687,14 +3391,14 @@
 			}
 		}
 	},
-	[11190023] = {
-		name = "雷御",
-		suit_name = "风雷领域",
+	[10480023] = {
+		name = "迅捷",
+		suit_name = "善童鬼",
 		unlock_condition = 2203,
-		pre_astrolabe_id = 11190022,
+		pre_astrolabe_id = 10480022,
 		pos = 3,
-		hero_astrolabe_suit_id = 1119002,
-		id = 11190023,
+		hero_astrolabe_suit_id = 1048002,
+		id = 10480023,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4703,14 +3407,14 @@
 			}
 		}
 	},
-	[11190031] = {
-		name = "蓄势",
-		suit_name = "天地之柱",
+	[10480031] = {
+		name = "爆轰",
+		suit_name = "试炼的凝望",
 		unlock_condition = 2301,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1119003,
-		id = 11190031,
+		hero_astrolabe_suit_id = 1048003,
+		id = 10480031,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4719,14 +3423,14 @@
 			}
 		}
 	},
-	[11190032] = {
-		name = "流转",
-		suit_name = "天地之柱",
+	[10480032] = {
+		name = "引爆",
+		suit_name = "试炼的凝望",
 		unlock_condition = 2302,
-		pre_astrolabe_id = 11190031,
+		pre_astrolabe_id = 10480031,
 		pos = 2,
-		hero_astrolabe_suit_id = 1119003,
-		id = 11190032,
+		hero_astrolabe_suit_id = 1048003,
+		id = 10480032,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4735,14 +3439,14 @@
 			}
 		}
 	},
-	[11190033] = {
-		name = "锚定",
-		suit_name = "天地之柱",
+	[10480033] = {
+		name = "强袭",
+		suit_name = "试炼的凝望",
 		unlock_condition = 2303,
-		pre_astrolabe_id = 11190032,
+		pre_astrolabe_id = 10480032,
 		pos = 3,
-		hero_astrolabe_suit_id = 1119003,
-		id = 11190033,
+		hero_astrolabe_suit_id = 1048003,
+		id = 10480033,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4751,14 +3455,14 @@
 			}
 		}
 	},
-	[10330011] = {
-		name = "先驱",
-		suit_name = "天启",
+	[10490011] = {
+		name = "幽镜",
+		suit_name = "常世冰镜",
 		unlock_condition = 2101,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1033001,
-		id = 10330011,
+		hero_astrolabe_suit_id = 1049001,
+		id = 10490011,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4767,14 +3471,14 @@
 			}
 		}
 	},
-	[10330012] = {
-		name = "冥思",
-		suit_name = "天启",
+	[10490012] = {
+		name = "霜葬",
+		suit_name = "常世冰镜",
 		unlock_condition = 2102,
-		pre_astrolabe_id = 10330011,
+		pre_astrolabe_id = 10490011,
 		pos = 2,
-		hero_astrolabe_suit_id = 1033001,
-		id = 10330012,
+		hero_astrolabe_suit_id = 1049001,
+		id = 10490012,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4783,14 +3487,14 @@
 			}
 		}
 	},
-	[10330013] = {
-		name = "引戈",
-		suit_name = "天启",
+	[10490013] = {
+		name = "冰凝",
+		suit_name = "常世冰镜",
 		unlock_condition = 2103,
-		pre_astrolabe_id = 10330012,
+		pre_astrolabe_id = 10490012,
 		pos = 3,
-		hero_astrolabe_suit_id = 1033001,
-		id = 10330013,
+		hero_astrolabe_suit_id = 1049001,
+		id = 10490013,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4799,14 +3503,14 @@
 			}
 		}
 	},
-	[10330021] = {
-		name = "逐虹",
-		suit_name = "威临",
+	[10490021] = {
+		name = "逐命",
+		suit_name = "泉津弃誓",
 		unlock_condition = 2201,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1033002,
-		id = 10330021,
+		hero_astrolabe_suit_id = 1049002,
+		id = 10490021,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4815,14 +3519,14 @@
 			}
 		}
 	},
-	[10330022] = {
-		name = "破阵",
-		suit_name = "威临",
+	[10490022] = {
+		name = "怖颜",
+		suit_name = "泉津弃誓",
 		unlock_condition = 2202,
-		pre_astrolabe_id = 10330021,
+		pre_astrolabe_id = 10490021,
 		pos = 2,
-		hero_astrolabe_suit_id = 1033002,
-		id = 10330022,
+		hero_astrolabe_suit_id = 1049002,
+		id = 10490022,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4831,14 +3535,14 @@
 			}
 		}
 	},
-	[10330023] = {
-		name = "斗者",
-		suit_name = "威临",
+	[10490023] = {
+		name = "破约",
+		suit_name = "泉津弃誓",
 		unlock_condition = 2203,
-		pre_astrolabe_id = 10330022,
+		pre_astrolabe_id = 10490022,
 		pos = 3,
-		hero_astrolabe_suit_id = 1033002,
-		id = 10330023,
+		hero_astrolabe_suit_id = 1049002,
+		id = 10490023,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4847,14 +3551,14 @@
 			}
 		}
 	},
-	[10330031] = {
-		name = "藏蕴",
-		suit_name = "昭世",
+	[10490031] = {
+		name = "冥拥",
+		suit_name = "比良坂之主",
 		unlock_condition = 2301,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1033003,
-		id = 10330031,
+		hero_astrolabe_suit_id = 1049003,
+		id = 10490031,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4863,14 +3567,14 @@
 			}
 		}
 	},
-	[10330032] = {
-		name = "隐锋",
-		suit_name = "昭世",
+	[10490032] = {
+		name = "堕污",
+		suit_name = "比良坂之主",
 		unlock_condition = 2302,
-		pre_astrolabe_id = 10330031,
+		pre_astrolabe_id = 10490031,
 		pos = 2,
-		hero_astrolabe_suit_id = 1033003,
-		id = 10330032,
+		hero_astrolabe_suit_id = 1049003,
+		id = 10490032,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4879,14 +3583,14 @@
 			}
 		}
 	},
-	[10330033] = {
-		name = "无冕",
-		suit_name = "昭世",
+	[10490033] = {
+		name = "千伐",
+		suit_name = "比良坂之主",
 		unlock_condition = 2303,
-		pre_astrolabe_id = 10330032,
+		pre_astrolabe_id = 10490032,
 		pos = 3,
-		hero_astrolabe_suit_id = 1033003,
-		id = 10330033,
+		hero_astrolabe_suit_id = 1049003,
+		id = 10490033,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4895,14 +3599,14 @@
 			}
 		}
 	},
-	[10680011] = {
-		name = "高压",
-		suit_name = "军神之触",
+	[10500011] = {
+		name = "忍骨",
+		suit_name = "天忍穗耳命",
 		unlock_condition = 2101,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1068001,
-		id = 10680011,
+		hero_astrolabe_suit_id = 1050001,
+		id = 10500011,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4911,14 +3615,14 @@
 			}
 		}
 	},
-	[10680012] = {
-		name = "气爆",
-		suit_name = "军神之触",
+	[10500012] = {
+		name = "空蝉",
+		suit_name = "天忍穗耳命",
 		unlock_condition = 2102,
-		pre_astrolabe_id = 10680011,
+		pre_astrolabe_id = 10500011,
 		pos = 2,
-		hero_astrolabe_suit_id = 1068001,
-		id = 10680012,
+		hero_astrolabe_suit_id = 1050001,
+		id = 10500012,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4927,14 +3631,14 @@
 			}
 		}
 	},
-	[10680013] = {
-		name = "紊流",
-		suit_name = "军神之触",
+	[10500013] = {
+		name = "目隐",
+		suit_name = "天忍穗耳命",
 		unlock_condition = 2103,
-		pre_astrolabe_id = 10680012,
+		pre_astrolabe_id = 10500012,
 		pos = 3,
-		hero_astrolabe_suit_id = 1068001,
-		id = 10680013,
+		hero_astrolabe_suit_id = 1050001,
+		id = 10500013,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4943,14 +3647,14 @@
 			}
 		}
 	},
-	[10680021] = {
-		name = "真空",
-		suit_name = "风神之心",
+	[10500021] = {
+		name = "澄镜",
+		suit_name = "八神鵺羽",
 		unlock_condition = 2201,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1068002,
-		id = 10680021,
+		hero_astrolabe_suit_id = 1050002,
+		id = 10500021,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4959,14 +3663,14 @@
 			}
 		}
 	},
-	[10680022] = {
-		name = "涡流",
-		suit_name = "风神之心",
+	[10500022] = {
+		name = "夜见",
+		suit_name = "八神鵺羽",
 		unlock_condition = 2202,
-		pre_astrolabe_id = 10680021,
+		pre_astrolabe_id = 10500021,
 		pos = 2,
-		hero_astrolabe_suit_id = 1068002,
-		id = 10680022,
+		hero_astrolabe_suit_id = 1050002,
+		id = 10500022,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4975,14 +3679,14 @@
 			}
 		}
 	},
-	[10680023] = {
-		name = "风蚀",
-		suit_name = "风神之心",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10680022,
+	[10500023] = {
+		name = "枭神",
+		suit_name = "八神鵺羽",
+		unlock_condition = 2305,
+		pre_astrolabe_id = 10500022,
 		pos = 3,
-		hero_astrolabe_suit_id = 1068002,
-		id = 10680023,
+		hero_astrolabe_suit_id = 1050002,
+		id = 10500023,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -4991,14 +3695,14 @@
 			}
 		}
 	},
-	[10680031] = {
-		name = "凝聚",
-		suit_name = "精神之主",
+	[10500031] = {
+		name = "韬之形",
+		suit_name = "融月绯刃",
 		unlock_condition = 2301,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1068003,
-		id = 10680031,
+		hero_astrolabe_suit_id = 1050003,
+		id = 10500031,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5007,14 +3711,14 @@
 			}
 		}
 	},
-	[10680032] = {
-		name = "回旋",
-		suit_name = "精神之主",
+	[10500032] = {
+		name = "八双",
+		suit_name = "融月绯刃",
 		unlock_condition = 2302,
-		pre_astrolabe_id = 10680031,
+		pre_astrolabe_id = 10500031,
 		pos = 2,
-		hero_astrolabe_suit_id = 1068003,
-		id = 10680032,
+		hero_astrolabe_suit_id = 1050003,
+		id = 10500032,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5023,446 +3727,14 @@
 			}
 		}
 	},
-	[10680033] = {
-		name = "逸散",
-		suit_name = "精神之主",
+	[10500033] = {
+		name = "炼津",
+		suit_name = "融月绯刃",
 		unlock_condition = 2303,
-		pre_astrolabe_id = 10680032,
+		pre_astrolabe_id = 10500032,
 		pos = 3,
-		hero_astrolabe_suit_id = 1068003,
-		id = 10680033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10670011] = {
-		name = "深压",
-		suit_name = "长河波涛",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1067001,
-		id = 10670011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10670012] = {
-		name = "波澜",
-		suit_name = "长河波涛",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10670011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1067001,
-		id = 10670012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10670013] = {
-		name = "涌合",
-		suit_name = "长河波涛",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10670012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1067001,
-		id = 10670013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10670021] = {
-		name = "汇聚",
-		suit_name = "大洋聚散",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1067002,
-		id = 10670021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10670022] = {
-		name = "暗涌",
-		suit_name = "大洋聚散",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10670021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1067002,
-		id = 10670022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10670023] = {
-		name = "漫延",
-		suit_name = "大洋聚散",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10670022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1067002,
-		id = 10670023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10670031] = {
-		name = "激浪",
-		suit_name = "激浪掠影",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1067003,
-		id = 10670031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10670032] = {
-		name = "锐流",
-		suit_name = "激浪掠影",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10670031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1067003,
-		id = 10670032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10670033] = {
-		name = "浪影",
-		suit_name = "激浪掠影",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10670032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1067003,
-		id = 10670033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10240011] = {
-		name = "引渡",
-		suit_name = "亡魂接引",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1024001,
-		id = 10240011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10240012] = {
-		name = "感应",
-		suit_name = "亡魂接引",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10240011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1024001,
-		id = 10240012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10240013] = {
-		name = "魂链",
-		suit_name = "亡魂接引",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10240012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1024001,
-		id = 10240013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10240021] = {
-		name = "协从",
-		suit_name = "死灵审判",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1024002,
-		id = 10240021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10240022] = {
-		name = "判决",
-		suit_name = "死灵审判",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10240021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1024002,
-		id = 10240022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10240023] = {
-		name = "神罚",
-		suit_name = "死灵审判",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10240022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1024002,
-		id = 10240023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10240031] = {
-		name = "激愤",
-		suit_name = "幽冥神怒",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1024003,
-		id = 10240031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10240032] = {
-		name = "怒魂",
-		suit_name = "幽冥神怒",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10240031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1024003,
-		id = 10240032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10240033] = {
-		name = "狂狼",
-		suit_name = "幽冥神怒",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10240032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1024003,
-		id = 10240033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10280011] = {
-		name = "陨击",
-		suit_name = "雷霆的权柄",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1028001,
-		id = 10280011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10280012] = {
-		name = "天威",
-		suit_name = "雷霆的权柄",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10280011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1028001,
-		id = 10280012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10280013] = {
-		name = "降神",
-		suit_name = "雷霆的权柄",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10280012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1028001,
-		id = 10280013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10280021] = {
-		name = "迅击",
-		suit_name = "神国的战狂",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1028002,
-		id = 10280021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10280022] = {
-		name = "战溢",
-		suit_name = "神国的战狂",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10280021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1028002,
-		id = 10280022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10280023] = {
-		name = "狂热",
-		suit_name = "神国的战狂",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10280022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1028002,
-		id = 10280023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10280031] = {
-		name = "绝灭",
-		suit_name = "尘世的宿敌",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1028003,
-		id = 10280031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10280032] = {
-		name = "无尽",
-		suit_name = "尘世的宿敌",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10280031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1028003,
-		id = 10280032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10280033] = {
-		name = "终战",
-		suit_name = "尘世的宿敌",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10280032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1028003,
-		id = 10280033,
+		hero_astrolabe_suit_id = 1050003,
+		id = 10500033,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5615,14 +3887,14 @@
 			}
 		}
 	},
-	[10170011] = {
-		name = "处决",
-		suit_name = "战神的二重身",
+	[10550011] = {
+		name = "凛锋",
+		suit_name = "天之羽的寒意",
 		unlock_condition = 2101,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1017001,
-		id = 10170011,
+		hero_astrolabe_suit_id = 1055001,
+		id = 10550011,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5631,14 +3903,14 @@
 			}
 		}
 	},
-	[10170012] = {
-		name = "猎杀",
-		suit_name = "战神的二重身",
+	[10550012] = {
+		name = "裂破",
+		suit_name = "天之羽的寒意",
 		unlock_condition = 2102,
-		pre_astrolabe_id = 10170011,
+		pre_astrolabe_id = 10550011,
 		pos = 2,
-		hero_astrolabe_suit_id = 1017001,
-		id = 10170012,
+		hero_astrolabe_suit_id = 1055001,
+		id = 10550012,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5647,14 +3919,14 @@
 			}
 		}
 	},
-	[10170013] = {
-		name = "血祭",
-		suit_name = "战神的二重身",
+	[10550013] = {
+		name = "寒极",
+		suit_name = "天之羽的寒意",
 		unlock_condition = 2103,
-		pre_astrolabe_id = 10170012,
+		pre_astrolabe_id = 10550012,
 		pos = 3,
-		hero_astrolabe_suit_id = 1017001,
-		id = 10170013,
+		hero_astrolabe_suit_id = 1055001,
+		id = 10550013,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5663,14 +3935,14 @@
 			}
 		}
 	},
-	[10170021] = {
-		name = "灵动",
-		suit_name = "圣坛上的舞步",
+	[10550021] = {
+		name = "冻层",
+		suit_name = "神之血的霜结",
 		unlock_condition = 2201,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1017002,
-		id = 10170021,
+		hero_astrolabe_suit_id = 1055002,
+		id = 10550021,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5679,14 +3951,14 @@
 			}
 		}
 	},
-	[10170022] = {
-		name = "锋锐",
-		suit_name = "圣坛上的舞步",
+	[10550022] = {
+		name = "寒影",
+		suit_name = "神之血的霜结",
 		unlock_condition = 2202,
-		pre_astrolabe_id = 10170021,
+		pre_astrolabe_id = 10550021,
 		pos = 2,
-		hero_astrolabe_suit_id = 1017002,
-		id = 10170022,
+		hero_astrolabe_suit_id = 1055002,
+		id = 10550022,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5695,14 +3967,14 @@
 			}
 		}
 	},
-	[10170023] = {
-		name = "幽光",
-		suit_name = "圣坛上的舞步",
+	[10550023] = {
+		name = "啸风",
+		suit_name = "神之血的霜结",
 		unlock_condition = 2203,
-		pre_astrolabe_id = 10170022,
+		pre_astrolabe_id = 10550022,
 		pos = 3,
-		hero_astrolabe_suit_id = 1017002,
-		id = 10170023,
+		hero_astrolabe_suit_id = 1055002,
+		id = 10550023,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5711,14 +3983,14 @@
 			}
 		}
 	},
-	[10170031] = {
-		name = "灵瞳",
-		suit_name = "神之眼的印记",
+	[10550031] = {
+		name = "凝晶",
+		suit_name = "羽之神的晶造",
 		unlock_condition = 2301,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1017003,
-		id = 10170031,
+		hero_astrolabe_suit_id = 1055003,
+		id = 10550031,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5727,14 +3999,14 @@
 			}
 		}
 	},
-	[10170032] = {
-		name = "凝视",
-		suit_name = "神之眼的印记",
+	[10550032] = {
+		name = "散尘",
+		suit_name = "羽之神的晶造",
 		unlock_condition = 2302,
-		pre_astrolabe_id = 10170031,
+		pre_astrolabe_id = 10550031,
 		pos = 2,
-		hero_astrolabe_suit_id = 1017003,
-		id = 10170032,
+		hero_astrolabe_suit_id = 1055003,
+		id = 10550032,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5743,14 +4015,14 @@
 			}
 		}
 	},
-	[10170033] = {
-		name = "判决",
-		suit_name = "神之眼的印记",
+	[10550033] = {
+		name = "飘洒",
+		suit_name = "羽之神的晶造",
 		unlock_condition = 2303,
-		pre_astrolabe_id = 10170032,
+		pre_astrolabe_id = 10550032,
 		pos = 3,
-		hero_astrolabe_suit_id = 1017003,
-		id = 10170033,
+		hero_astrolabe_suit_id = 1055003,
+		id = 10550033,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5759,14 +4031,14 @@
 			}
 		}
 	},
-	[11270011] = {
-		name = "溟海",
-		suit_name = "亘古沧洋",
+	[10560011] = {
+		name = "赞歌",
+		suit_name = "提毗时母",
 		unlock_condition = 2101,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1127001,
-		id = 11270011,
+		hero_astrolabe_suit_id = 1056001,
+		id = 10560011,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5775,14 +4047,14 @@
 			}
 		}
 	},
-	[11270012] = {
-		name = "悠远",
-		suit_name = "亘古沧洋",
+	[10560012] = {
+		name = "梵行",
+		suit_name = "提毗时母",
 		unlock_condition = 2102,
-		pre_astrolabe_id = 11270011,
+		pre_astrolabe_id = 10560011,
 		pos = 2,
-		hero_astrolabe_suit_id = 1127001,
-		id = 11270012,
+		hero_astrolabe_suit_id = 1056001,
+		id = 10560012,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5791,14 +4063,14 @@
 			}
 		}
 	},
-	[11270013] = {
-		name = "古迹",
-		suit_name = "亘古沧洋",
+	[10560013] = {
+		name = "刚耐",
+		suit_name = "提毗时母",
 		unlock_condition = 2103,
-		pre_astrolabe_id = 11270012,
+		pre_astrolabe_id = 10560012,
 		pos = 3,
-		hero_astrolabe_suit_id = 1127001,
-		id = 11270013,
+		hero_astrolabe_suit_id = 1056001,
+		id = 10560013,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5807,14 +4079,14 @@
 			}
 		}
 	},
-	[11270021] = {
-		name = "幽黯",
-		suit_name = "扭曲漩涡",
+	[10560021] = {
+		name = "崩世",
+		suit_name = "惶怒降魔",
 		unlock_condition = 2201,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1127002,
-		id = 11270021,
+		hero_astrolabe_suit_id = 1056002,
+		id = 10560021,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5823,14 +4095,14 @@
 			}
 		}
 	},
-	[11270022] = {
-		name = "潆洄",
-		suit_name = "扭曲漩涡",
+	[10560022] = {
+		name = "摧神",
+		suit_name = "惶怒降魔",
 		unlock_condition = 2202,
-		pre_astrolabe_id = 11270021,
+		pre_astrolabe_id = 10560021,
 		pos = 2,
-		hero_astrolabe_suit_id = 1127002,
-		id = 11270022,
+		hero_astrolabe_suit_id = 1056002,
+		id = 10560022,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5839,14 +4111,14 @@
 			}
 		}
 	},
-	[11270023] = {
-		name = "蚀涡",
-		suit_name = "扭曲漩涡",
+	[10560023] = {
+		name = "摩罗",
+		suit_name = "惶怒降魔",
 		unlock_condition = 2203,
-		pre_astrolabe_id = 11270022,
+		pre_astrolabe_id = 10560022,
 		pos = 3,
-		hero_astrolabe_suit_id = 1127002,
-		id = 11270023,
+		hero_astrolabe_suit_id = 1056002,
+		id = 10560023,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5855,14 +4127,14 @@
 			}
 		}
 	},
-	[11270031] = {
-		name = "幻梦",
-		suit_name = "幻海泡影",
+	[10560031] = {
+		name = "神孽",
+		suit_name = "三摩耶之主",
 		unlock_condition = 2301,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1127003,
-		id = 11270031,
+		hero_astrolabe_suit_id = 1056003,
+		id = 10560031,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5871,14 +4143,14 @@
 			}
 		}
 	},
-	[11270032] = {
-		name = "空灭",
-		suit_name = "幻海泡影",
+	[10560032] = {
+		name = "侵蚀",
+		suit_name = "三摩耶之主",
 		unlock_condition = 2302,
-		pre_astrolabe_id = 11270031,
+		pre_astrolabe_id = 10560031,
 		pos = 2,
-		hero_astrolabe_suit_id = 1127003,
-		id = 11270032,
+		hero_astrolabe_suit_id = 1056003,
+		id = 10560032,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5887,14 +4159,14 @@
 			}
 		}
 	},
-	[11270033] = {
-		name = "澄心",
-		suit_name = "幻海泡影",
+	[10560033] = {
+		name = "诡隐",
+		suit_name = "三摩耶之主",
 		unlock_condition = 2303,
-		pre_astrolabe_id = 11270032,
+		pre_astrolabe_id = 10560032,
 		pos = 3,
-		hero_astrolabe_suit_id = 1127003,
-		id = 11270033,
+		hero_astrolabe_suit_id = 1056003,
+		id = 10560033,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5903,14 +4175,14 @@
 			}
 		}
 	},
-	[11320011] = {
-		name = "附着",
-		suit_name = "燃剑的制裁",
+	[10580011] = {
+		name = "烧蚀",
+		suit_name = "归天止境",
 		unlock_condition = 2101,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1132001,
-		id = 11320011,
+		hero_astrolabe_suit_id = 1058001,
+		id = 10580011,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5919,14 +4191,14 @@
 			}
 		}
 	},
-	[11320012] = {
-		name = "瞬燃",
-		suit_name = "燃剑的制裁",
+	[10580012] = {
+		name = "赤灼",
+		suit_name = "归天止境",
 		unlock_condition = 2102,
-		pre_astrolabe_id = 11320011,
+		pre_astrolabe_id = 10580011,
 		pos = 2,
-		hero_astrolabe_suit_id = 1132001,
-		id = 11320012,
+		hero_astrolabe_suit_id = 1058001,
+		id = 10580012,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5935,14 +4207,14 @@
 			}
 		}
 	},
-	[11320013] = {
-		name = "炽烈",
-		suit_name = "燃剑的制裁",
+	[10580013] = {
+		name = "烛魇",
+		suit_name = "归天止境",
 		unlock_condition = 2103,
-		pre_astrolabe_id = 11320012,
+		pre_astrolabe_id = 10580012,
 		pos = 3,
-		hero_astrolabe_suit_id = 1132001,
-		id = 11320013,
+		hero_astrolabe_suit_id = 1058001,
+		id = 10580013,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5951,14 +4223,14 @@
 			}
 		}
 	},
-	[11320021] = {
-		name = "炽热",
-		suit_name = "炽甲的惩戒",
+	[10580021] = {
+		name = "古燿",
+		suit_name = "炫毗古神",
 		unlock_condition = 2201,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1132002,
-		id = 11320021,
+		hero_astrolabe_suit_id = 1058002,
+		id = 10580021,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5967,14 +4239,14 @@
 			}
 		}
 	},
-	[11320022] = {
-		name = "锻铸",
-		suit_name = "炽甲的惩戒",
+	[10580022] = {
+		name = "焚樱",
+		suit_name = "炫毗古神",
 		unlock_condition = 2202,
-		pre_astrolabe_id = 11320021,
+		pre_astrolabe_id = 10580021,
 		pos = 2,
-		hero_astrolabe_suit_id = 1132002,
-		id = 11320022,
+		hero_astrolabe_suit_id = 1058002,
+		id = 10580022,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5983,14 +4255,14 @@
 			}
 		}
 	},
-	[11320023] = {
-		name = "凝火",
-		suit_name = "炽甲的惩戒",
+	[10580023] = {
+		name = "祸殁",
+		suit_name = "炫毗古神",
 		unlock_condition = 2203,
-		pre_astrolabe_id = 11320022,
+		pre_astrolabe_id = 10580022,
 		pos = 3,
-		hero_astrolabe_suit_id = 1132002,
-		id = 11320023,
+		hero_astrolabe_suit_id = 1058002,
+		id = 10580023,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -5999,14 +4271,14 @@
 			}
 		}
 	},
-	[11320031] = {
-		name = "燃血",
-		suit_name = "炼狱的复仇",
+	[10580031] = {
+		name = "逆卷",
+		suit_name = "火曦降世",
 		unlock_condition = 2301,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1132003,
-		id = 11320031,
+		hero_astrolabe_suit_id = 1058003,
+		id = 10580031,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -6015,14 +4287,14 @@
 			}
 		}
 	},
-	[11320032] = {
-		name = "炙罪",
-		suit_name = "炼狱的复仇",
+	[10580032] = {
+		name = "燃烬",
+		suit_name = "火曦降世",
 		unlock_condition = 2302,
-		pre_astrolabe_id = 11320031,
+		pre_astrolabe_id = 10580031,
 		pos = 2,
-		hero_astrolabe_suit_id = 1132003,
-		id = 11320032,
+		hero_astrolabe_suit_id = 1058003,
+		id = 10580032,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -6031,14 +4303,1022 @@
 			}
 		}
 	},
-	[11320033] = {
-		name = "炽刑",
-		suit_name = "炼狱的复仇",
+	[10580033] = {
+		name = "涅灭",
+		suit_name = "火曦降世",
 		unlock_condition = 2303,
-		pre_astrolabe_id = 11320032,
+		pre_astrolabe_id = 10580032,
 		pos = 3,
-		hero_astrolabe_suit_id = 1132003,
-		id = 11320033,
+		hero_astrolabe_suit_id = 1058003,
+		id = 10580033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10590011] = {
+		name = "辉誉",
+		suit_name = "炙白桂冠",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1059001,
+		id = 10590011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10590012] = {
+		name = "闪熠",
+		suit_name = "炙白桂冠",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10590011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1059001,
+		id = 10590012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10590013] = {
+		name = "光冕",
+		suit_name = "炙白桂冠",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10590012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1059001,
+		id = 10590013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10590021] = {
+		name = "日珥",
+		suit_name = "日曜国度",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1059002,
+		id = 10590021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10590022] = {
+		name = "耀斑",
+		suit_name = "日曜国度",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10590021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1059002,
+		id = 10590022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10590023] = {
+		name = "晨星",
+		suit_name = "日曜国度",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10590022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1059002,
+		id = 10590023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10590031] = {
+		name = "圣寰",
+		suit_name = "浩渺煌光",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1059003,
+		id = 10590031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10590032] = {
+		name = "日仪",
+		suit_name = "浩渺煌光",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10590031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1059003,
+		id = 10590032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10590033] = {
+		name = "烈辉",
+		suit_name = "浩渺煌光",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10590032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1059003,
+		id = 10590033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10600011] = {
+		name = "昆丘",
+		suit_name = "开明御兽",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1060001,
+		id = 10600011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10600012] = {
+		name = "御护",
+		suit_name = "开明御兽",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10600011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1060001,
+		id = 10600012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10600013] = {
+		name = "破阵",
+		suit_name = "开明御兽",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10600012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1060001,
+		id = 10600013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10600021] = {
+		name = "神虎",
+		suit_name = "天之九部",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1060002,
+		id = 10600021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10600022] = {
+		name = "九部",
+		suit_name = "天之九部",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10600021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1060002,
+		id = 10600022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10600023] = {
+		name = "神囿",
+		suit_name = "天之九部",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10600022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1060002,
+		id = 10600023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10600031] = {
+		name = "天司",
+		suit_name = "帝都司将",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1060003,
+		id = 10600031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10600032] = {
+		name = "摧军",
+		suit_name = "帝都司将",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10600031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1060003,
+		id = 10600032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10600033] = {
+		name = "帝将",
+		suit_name = "帝都司将",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10600032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1060003,
+		id = 10600033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10610011] = {
+		name = "阴象",
+		suit_name = "北陆玄冥",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1061001,
+		id = 10610011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10610012] = {
+		name = "虚宿",
+		suit_name = "北陆玄冥",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10610011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1061001,
+		id = 10610012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10610013] = {
+		name = "天节",
+		suit_name = "北陆玄冥",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10610012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1061001,
+		id = 10610013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10610021] = {
+		name = "玄天",
+		suit_name = "真武帝君",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1061002,
+		id = 10610021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10610022] = {
+		name = "千演",
+		suit_name = "真武帝君",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10610021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1061002,
+		id = 10610022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10610023] = {
+		name = "北帝",
+		suit_name = "真武帝君",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10610022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1061002,
+		id = 10610023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10610031] = {
+		name = "水色",
+		suit_name = "坎水护神",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1061003,
+		id = 10610031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10610032] = {
+		name = "卦破",
+		suit_name = "坎水护神",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10610031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1061003,
+		id = 10610032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10610033] = {
+		name = "不盈",
+		suit_name = "坎水护神",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10610032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1061003,
+		id = 10610033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10660011] = {
+		name = "死神",
+		suit_name = "大物主神",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1066001,
+		id = 10660011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10660012] = {
+		name = "预言",
+		suit_name = "大物主神",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10660011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1066001,
+		id = 10660012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10660013] = {
+		name = "兔兔",
+		suit_name = "大物主神",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10660012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1066001,
+		id = 10660013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10660021] = {
+		name = "星连",
+		suit_name = "根国之途",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1066002,
+		id = 10660021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10660022] = {
+		name = "揭示",
+		suit_name = "根国之途",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10660021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1066002,
+		id = 10660022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10660023] = {
+		name = "洗牌",
+		suit_name = "根国之途",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10660022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1066002,
+		id = 10660023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10660031] = {
+		name = "命运",
+		suit_name = "出云国魂",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1066003,
+		id = 10660031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10660032] = {
+		name = "审判",
+		suit_name = "出云国魂",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10660031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1066003,
+		id = 10660032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10660033] = {
+		name = "卜测",
+		suit_name = "出云国魂",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10660032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1066003,
+		id = 10660033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10670011] = {
+		name = "深压",
+		suit_name = "长河波涛",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1067001,
+		id = 10670011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10670012] = {
+		name = "波澜",
+		suit_name = "长河波涛",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10670011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1067001,
+		id = 10670012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10670013] = {
+		name = "涌合",
+		suit_name = "长河波涛",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10670012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1067001,
+		id = 10670013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10670021] = {
+		name = "汇聚",
+		suit_name = "大洋聚散",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1067002,
+		id = 10670021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10670022] = {
+		name = "暗涌",
+		suit_name = "大洋聚散",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10670021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1067002,
+		id = 10670022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10670023] = {
+		name = "漫延",
+		suit_name = "大洋聚散",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10670022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1067002,
+		id = 10670023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10670031] = {
+		name = "激浪",
+		suit_name = "激浪掠影",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1067003,
+		id = 10670031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10670032] = {
+		name = "锐流",
+		suit_name = "激浪掠影",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10670031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1067003,
+		id = 10670032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10670033] = {
+		name = "浪影",
+		suit_name = "激浪掠影",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10670032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1067003,
+		id = 10670033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10680011] = {
+		name = "高压",
+		suit_name = "军神之触",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1068001,
+		id = 10680011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10680012] = {
+		name = "气爆",
+		suit_name = "军神之触",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10680011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1068001,
+		id = 10680012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10680013] = {
+		name = "紊流",
+		suit_name = "军神之触",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10680012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1068001,
+		id = 10680013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10680021] = {
+		name = "真空",
+		suit_name = "风神之心",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1068002,
+		id = 10680021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10680022] = {
+		name = "涡流",
+		suit_name = "风神之心",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10680021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1068002,
+		id = 10680022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10680023] = {
+		name = "风蚀",
+		suit_name = "风神之心",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10680022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1068002,
+		id = 10680023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10680031] = {
+		name = "凝聚",
+		suit_name = "精神之主",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1068003,
+		id = 10680031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10680032] = {
+		name = "回旋",
+		suit_name = "精神之主",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10680031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1068003,
+		id = 10680032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10680033] = {
+		name = "逸散",
+		suit_name = "精神之主",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10680032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1068003,
+		id = 10680033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10700011] = {
+		name = "夕晖",
+		suit_name = "三足金乌",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1070001,
+		id = 10700011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10700012] = {
+		name = "逐日",
+		suit_name = "三足金乌",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10700011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1070001,
+		id = 10700012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10700013] = {
+		name = "当空",
+		suit_name = "三足金乌",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10700012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1070001,
+		id = 10700013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10700021] = {
+		name = "神威",
+		suit_name = "炽轮神兵",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1070002,
+		id = 10700021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10700022] = {
+		name = "聚灵",
+		suit_name = "炽轮神兵",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10700021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1070002,
+		id = 10700022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10700023] = {
+		name = "轮转",
+		suit_name = "炽轮神兵",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10700022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1070002,
+		id = 10700023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10700031] = {
+		name = "曜灼",
+		suit_name = "日曜显圣",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1070003,
+		id = 10700031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10700032] = {
+		name = "九曜",
+		suit_name = "日曜显圣",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10700031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1070003,
+		id = 10700032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10700033] = {
+		name = "乾火",
+		suit_name = "日曜显圣",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10700032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1070003,
+		id = 10700033,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -6335,14 +5615,14 @@
 			}
 		}
 	},
-	[10700011] = {
-		name = "夕晖",
-		suit_name = "三足金乌",
+	[10730011] = {
+		name = "德化",
+		suit_name = "显圣昭灵",
 		unlock_condition = 2101,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1070001,
-		id = 10700011,
+		hero_astrolabe_suit_id = 1073001,
+		id = 10730011,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -6351,14 +5631,14 @@
 			}
 		}
 	},
-	[10700012] = {
-		name = "逐日",
-		suit_name = "三足金乌",
+	[10730012] = {
+		name = "瑞应",
+		suit_name = "显圣昭灵",
 		unlock_condition = 2102,
-		pre_astrolabe_id = 10700011,
+		pre_astrolabe_id = 10730011,
 		pos = 2,
-		hero_astrolabe_suit_id = 1070001,
-		id = 10700012,
+		hero_astrolabe_suit_id = 1073001,
+		id = 10730012,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -6367,14 +5647,14 @@
 			}
 		}
 	},
-	[10700013] = {
-		name = "当空",
-		suit_name = "三足金乌",
+	[10730013] = {
+		name = "通明",
+		suit_name = "显圣昭灵",
 		unlock_condition = 2103,
-		pre_astrolabe_id = 10700012,
+		pre_astrolabe_id = 10730012,
 		pos = 3,
-		hero_astrolabe_suit_id = 1070001,
-		id = 10700013,
+		hero_astrolabe_suit_id = 1073001,
+		id = 10730013,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -6383,14 +5663,14 @@
 			}
 		}
 	},
-	[10700021] = {
-		name = "神威",
-		suit_name = "炽轮神兵",
+	[10730021] = {
+		name = "政平",
+		suit_name = "明王吉征",
 		unlock_condition = 2201,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1070002,
-		id = 10700021,
+		hero_astrolabe_suit_id = 1073002,
+		id = 10730021,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -6399,14 +5679,14 @@
 			}
 		}
 	},
-	[10700022] = {
-		name = "聚灵",
-		suit_name = "炽轮神兵",
+	[10730022] = {
+		name = "振公",
+		suit_name = "明王吉征",
 		unlock_condition = 2202,
-		pre_astrolabe_id = 10700021,
+		pre_astrolabe_id = 10730021,
 		pos = 2,
-		hero_astrolabe_suit_id = 1070002,
-		id = 10700022,
+		hero_astrolabe_suit_id = 1073002,
+		id = 10730022,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -6415,14 +5695,14 @@
 			}
 		}
 	},
-	[10700023] = {
-		name = "轮转",
-		suit_name = "炽轮神兵",
+	[10730023] = {
+		name = "玄云",
+		suit_name = "明王吉征",
 		unlock_condition = 2203,
-		pre_astrolabe_id = 10700022,
+		pre_astrolabe_id = 10730022,
 		pos = 3,
-		hero_astrolabe_suit_id = 1070002,
-		id = 10700023,
+		hero_astrolabe_suit_id = 1073002,
+		id = 10730023,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -6431,14 +5711,14 @@
 			}
 		}
 	},
-	[10700031] = {
-		name = "曜灼",
-		suit_name = "日曜显圣",
+	[10730031] = {
+		name = "维天",
+		suit_name = "中土兽伯",
 		unlock_condition = 2301,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1070003,
-		id = 10700031,
+		hero_astrolabe_suit_id = 1073003,
+		id = 10730031,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -6447,14 +5727,14 @@
 			}
 		}
 	},
-	[10700032] = {
-		name = "九曜",
-		suit_name = "日曜显圣",
+	[10730032] = {
+		name = "定方",
+		suit_name = "中土兽伯",
 		unlock_condition = 2302,
-		pre_astrolabe_id = 10700031,
+		pre_astrolabe_id = 10730031,
 		pos = 2,
-		hero_astrolabe_suit_id = 1070003,
-		id = 10700032,
+		hero_astrolabe_suit_id = 1073003,
+		id = 10730032,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -6463,302 +5743,14 @@
 			}
 		}
 	},
-	[10700033] = {
-		name = "乾火",
-		suit_name = "日曜显圣",
+	[10730033] = {
+		name = "御世",
+		suit_name = "中土兽伯",
 		unlock_condition = 2303,
-		pre_astrolabe_id = 10700032,
+		pre_astrolabe_id = 10730032,
 		pos = 3,
-		hero_astrolabe_suit_id = 1070003,
-		id = 10700033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10810011] = {
-		name = "冬猎",
-		suit_name = "踏雪之靴",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1081001,
-		id = 10810011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10810012] = {
-		name = "荒寒",
-		suit_name = "踏雪之靴",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10810011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1081001,
-		id = 10810012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10810013] = {
-		name = "极星",
-		suit_name = "踏雪之靴",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10810012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1081001,
-		id = 10810013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10810021] = {
-		name = "啸浪",
-		suit_name = "临海之冬",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1081002,
-		id = 10810021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10810022] = {
-		name = "冰洋",
-		suit_name = "临海之冬",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10810021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1081002,
-		id = 10810022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10810023] = {
-		name = "冻原",
-		suit_name = "临海之冬",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10810022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1081002,
-		id = 10810023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10810031] = {
-		name = "白絮",
-		suit_name = "远航之星",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1081003,
-		id = 10810031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10810032] = {
-		name = "覆霜",
-		suit_name = "远航之星",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10810031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1081003,
-		id = 10810032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10810033] = {
-		name = "雪晶",
-		suit_name = "远航之星",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10810032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1081003,
-		id = 10810033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10160011] = {
-		name = "扩容",
-		suit_name = "爆裂扩容模块",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1016001,
-		id = 10160011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10160012] = {
-		name = "引燃",
-		suit_name = "爆裂扩容模块",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10160011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1016001,
-		id = 10160012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10160013] = {
-		name = "冲击",
-		suit_name = "爆裂扩容模块",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10160012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1016001,
-		id = 10160013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10160021] = {
-		name = "升频",
-		suit_name = "动能超频模块",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1016002,
-		id = 10160021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10160022] = {
-		name = "充能",
-		suit_name = "动能超频模块",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10160021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1016002,
-		id = 10160022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10160023] = {
-		name = "震裂",
-		suit_name = "动能超频模块",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10160022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1016002,
-		id = 10160023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10160031] = {
-		name = "分流",
-		suit_name = "压力增幅模块",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1016003,
-		id = 10160031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10160032] = {
-		name = "气蚀",
-		suit_name = "压力增幅模块",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10160031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1016003,
-		id = 10160032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10160033] = {
-		name = "增压",
-		suit_name = "压力增幅模块",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10160032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1016003,
-		id = 10160033,
+		hero_astrolabe_suit_id = 1073003,
+		id = 10730033,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7199,14 +6191,14 @@
 			}
 		}
 	},
-	[11580011] = {
-		name = "炘烬",
-		suit_name = "烬灭之神",
+	[10800011] = {
+		name = "凛冬",
+		suit_name = "霜土之子",
 		unlock_condition = 2101,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1158001,
-		id = 11580011,
+		hero_astrolabe_suit_id = 1080001,
+		id = 10800011,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7215,14 +6207,14 @@
 			}
 		}
 	},
-	[11580012] = {
-		name = "焚灭",
-		suit_name = "烬灭之神",
+	[10800012] = {
+		name = "璨雪",
+		suit_name = "霜土之子",
 		unlock_condition = 2102,
-		pre_astrolabe_id = 11580011,
+		pre_astrolabe_id = 10800011,
 		pos = 2,
-		hero_astrolabe_suit_id = 1158001,
-		id = 11580012,
+		hero_astrolabe_suit_id = 1080001,
+		id = 10800012,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7231,14 +6223,14 @@
 			}
 		}
 	},
-	[11580013] = {
-		name = "永炎",
-		suit_name = "烬灭之神",
+	[10800013] = {
+		name = "冰渡",
+		suit_name = "霜土之子",
 		unlock_condition = 2103,
-		pre_astrolabe_id = 11580012,
+		pre_astrolabe_id = 10800012,
 		pos = 3,
-		hero_astrolabe_suit_id = 1158001,
-		id = 11580013,
+		hero_astrolabe_suit_id = 1080001,
+		id = 10800013,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7247,14 +6239,14 @@
 			}
 		}
 	},
-	[11580021] = {
-		name = "熔火",
-		suit_name = "焚心惑火",
+	[10800021] = {
+		name = "寒切",
+		suit_name = "不灭之力",
 		unlock_condition = 2201,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1158002,
-		id = 11580021,
+		hero_astrolabe_suit_id = 1080002,
+		id = 10800021,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7263,14 +6255,14 @@
 			}
 		}
 	},
-	[11580022] = {
-		name = "祸卷",
-		suit_name = "焚心惑火",
+	[10800022] = {
+		name = "风啸",
+		suit_name = "不灭之力",
 		unlock_condition = 2202,
-		pre_astrolabe_id = 11580021,
+		pre_astrolabe_id = 10800021,
 		pos = 2,
-		hero_astrolabe_suit_id = 1158002,
-		id = 11580022,
+		hero_astrolabe_suit_id = 1080002,
+		id = 10800022,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7279,14 +6271,14 @@
 			}
 		}
 	},
-	[11580023] = {
-		name = "魇焚",
-		suit_name = "焚心惑火",
+	[10800023] = {
+		name = "晶瀑",
+		suit_name = "不灭之力",
 		unlock_condition = 2203,
-		pre_astrolabe_id = 11580022,
+		pre_astrolabe_id = 10800022,
 		pos = 3,
-		hero_astrolabe_suit_id = 1158002,
-		id = 11580023,
+		hero_astrolabe_suit_id = 1080002,
+		id = 10800023,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7295,14 +6287,14 @@
 			}
 		}
 	},
-	[11580031] = {
-		name = "熔炼",
-		suit_name = "祸炽初诞",
+	[10800031] = {
+		name = "地鸣",
+		suit_name = "终结黄昏",
 		unlock_condition = 2301,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1158003,
-		id = 11580031,
+		hero_astrolabe_suit_id = 1080003,
+		id = 10800031,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7311,14 +6303,14 @@
 			}
 		}
 	},
-	[11580032] = {
-		name = "惑灼",
-		suit_name = "祸炽初诞",
+	[10800032] = {
+		name = "燃冰",
+		suit_name = "终结黄昏",
 		unlock_condition = 2302,
-		pre_astrolabe_id = 11580031,
+		pre_astrolabe_id = 10800031,
 		pos = 2,
-		hero_astrolabe_suit_id = 1158003,
-		id = 11580032,
+		hero_astrolabe_suit_id = 1080003,
+		id = 10800032,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7327,14 +6319,14 @@
 			}
 		}
 	},
-	[11580033] = {
-		name = "炽燃",
-		suit_name = "祸炽初诞",
+	[10800033] = {
+		name = "寂眠",
+		suit_name = "终结黄昏",
 		unlock_condition = 2303,
-		pre_astrolabe_id = 11580032,
+		pre_astrolabe_id = 10800032,
 		pos = 3,
-		hero_astrolabe_suit_id = 1158003,
-		id = 11580033,
+		hero_astrolabe_suit_id = 1080003,
+		id = 10800033,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7343,14 +6335,14 @@
 			}
 		}
 	},
-	[10490011] = {
-		name = "幽镜",
-		suit_name = "常世冰镜",
+	[10810011] = {
+		name = "冬猎",
+		suit_name = "踏雪之靴",
 		unlock_condition = 2101,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1049001,
-		id = 10490011,
+		hero_astrolabe_suit_id = 1081001,
+		id = 10810011,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7359,14 +6351,14 @@
 			}
 		}
 	},
-	[10490012] = {
-		name = "霜葬",
-		suit_name = "常世冰镜",
+	[10810012] = {
+		name = "荒寒",
+		suit_name = "踏雪之靴",
 		unlock_condition = 2102,
-		pre_astrolabe_id = 10490011,
+		pre_astrolabe_id = 10810011,
 		pos = 2,
-		hero_astrolabe_suit_id = 1049001,
-		id = 10490012,
+		hero_astrolabe_suit_id = 1081001,
+		id = 10810012,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7375,14 +6367,14 @@
 			}
 		}
 	},
-	[10490013] = {
-		name = "冰凝",
-		suit_name = "常世冰镜",
+	[10810013] = {
+		name = "极星",
+		suit_name = "踏雪之靴",
 		unlock_condition = 2103,
-		pre_astrolabe_id = 10490012,
+		pre_astrolabe_id = 10810012,
 		pos = 3,
-		hero_astrolabe_suit_id = 1049001,
-		id = 10490013,
+		hero_astrolabe_suit_id = 1081001,
+		id = 10810013,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7391,14 +6383,14 @@
 			}
 		}
 	},
-	[10490021] = {
-		name = "逐命",
-		suit_name = "泉津弃誓",
+	[10810021] = {
+		name = "啸浪",
+		suit_name = "临海之冬",
 		unlock_condition = 2201,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1049002,
-		id = 10490021,
+		hero_astrolabe_suit_id = 1081002,
+		id = 10810021,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7407,14 +6399,14 @@
 			}
 		}
 	},
-	[10490022] = {
-		name = "怖颜",
-		suit_name = "泉津弃誓",
+	[10810022] = {
+		name = "冰洋",
+		suit_name = "临海之冬",
 		unlock_condition = 2202,
-		pre_astrolabe_id = 10490021,
+		pre_astrolabe_id = 10810021,
 		pos = 2,
-		hero_astrolabe_suit_id = 1049002,
-		id = 10490022,
+		hero_astrolabe_suit_id = 1081002,
+		id = 10810022,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7423,14 +6415,14 @@
 			}
 		}
 	},
-	[10490023] = {
-		name = "破约",
-		suit_name = "泉津弃誓",
+	[10810023] = {
+		name = "冻原",
+		suit_name = "临海之冬",
 		unlock_condition = 2203,
-		pre_astrolabe_id = 10490022,
+		pre_astrolabe_id = 10810022,
 		pos = 3,
-		hero_astrolabe_suit_id = 1049002,
-		id = 10490023,
+		hero_astrolabe_suit_id = 1081002,
+		id = 10810023,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7439,14 +6431,14 @@
 			}
 		}
 	},
-	[10490031] = {
-		name = "冥拥",
-		suit_name = "比良坂之主",
+	[10810031] = {
+		name = "白絮",
+		suit_name = "远航之星",
 		unlock_condition = 2301,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1049003,
-		id = 10490031,
+		hero_astrolabe_suit_id = 1081003,
+		id = 10810031,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7455,14 +6447,14 @@
 			}
 		}
 	},
-	[10490032] = {
-		name = "堕污",
-		suit_name = "比良坂之主",
+	[10810032] = {
+		name = "覆霜",
+		suit_name = "远航之星",
 		unlock_condition = 2302,
-		pre_astrolabe_id = 10490031,
+		pre_astrolabe_id = 10810031,
 		pos = 2,
-		hero_astrolabe_suit_id = 1049003,
-		id = 10490032,
+		hero_astrolabe_suit_id = 1081003,
+		id = 10810032,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7471,14 +6463,14 @@
 			}
 		}
 	},
-	[10490033] = {
-		name = "千伐",
-		suit_name = "比良坂之主",
+	[10810033] = {
+		name = "雪晶",
+		suit_name = "远航之星",
 		unlock_condition = 2303,
-		pre_astrolabe_id = 10490032,
+		pre_astrolabe_id = 10810032,
 		pos = 3,
-		hero_astrolabe_suit_id = 1049003,
-		id = 10490033,
+		hero_astrolabe_suit_id = 1081003,
+		id = 10810033,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7487,14 +6479,158 @@
 			}
 		}
 	},
-	[10550011] = {
-		name = "凛锋",
-		suit_name = "天之羽的寒意",
+	[10840011] = {
+		name = "破棘",
+		suit_name = "命运之印",
+		unlock_condition = 2320,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1084001,
+		id = 10840011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10840012] = {
+		name = "黑檀",
+		suit_name = "命运之印",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10840011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1084001,
+		id = 10840012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10840013] = {
+		name = "刃芒",
+		suit_name = "命运之印",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10840012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1084001,
+		id = 10840013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10840021] = {
+		name = "守护",
+		suit_name = "木刻文字",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1084002,
+		id = 10840021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10840022] = {
+		name = "天启",
+		suit_name = "木刻文字",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10840021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1084002,
+		id = 10840022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10840023] = {
+		name = "道标",
+		suit_name = "木刻文字",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10840022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1084002,
+		id = 10840023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10840031] = {
+		name = "黑锋",
+		suit_name = "卢恩咒文",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1084003,
+		id = 10840031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10840032] = {
+		name = "凯旋",
+		suit_name = "卢恩咒文",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10840031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1084003,
+		id = 10840032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10840033] = {
+		name = "读眸",
+		suit_name = "卢恩咒文",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10840032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1084003,
+		id = 10840033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10850011] = {
+		name = "过往",
+		suit_name = "空白的记忆",
 		unlock_condition = 2101,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1055001,
-		id = 10550011,
+		hero_astrolabe_suit_id = 1085001,
+		id = 10850011,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7503,14 +6639,14 @@
 			}
 		}
 	},
-	[10550012] = {
-		name = "裂破",
-		suit_name = "天之羽的寒意",
+	[10850012] = {
+		name = "忘却",
+		suit_name = "空白的记忆",
 		unlock_condition = 2102,
-		pre_astrolabe_id = 10550011,
+		pre_astrolabe_id = 10850011,
 		pos = 2,
-		hero_astrolabe_suit_id = 1055001,
-		id = 10550012,
+		hero_astrolabe_suit_id = 1085001,
+		id = 10850012,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7519,14 +6655,14 @@
 			}
 		}
 	},
-	[10550013] = {
-		name = "寒极",
-		suit_name = "天之羽的寒意",
+	[10850013] = {
+		name = "梦境",
+		suit_name = "空白的记忆",
 		unlock_condition = 2103,
-		pre_astrolabe_id = 10550012,
+		pre_astrolabe_id = 10850012,
 		pos = 3,
-		hero_astrolabe_suit_id = 1055001,
-		id = 10550013,
+		hero_astrolabe_suit_id = 1085001,
+		id = 10850013,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7535,14 +6671,14 @@
 			}
 		}
 	},
-	[10550021] = {
-		name = "冻层",
-		suit_name = "神之血的霜结",
+	[10850021] = {
+		name = "献身",
+		suit_name = "唯一的心愿",
 		unlock_condition = 2201,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1055002,
-		id = 10550021,
+		hero_astrolabe_suit_id = 1085002,
+		id = 10850021,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7551,14 +6687,14 @@
 			}
 		}
 	},
-	[10550022] = {
-		name = "寒影",
-		suit_name = "神之血的霜结",
+	[10850022] = {
+		name = "心愿",
+		suit_name = "唯一的心愿",
 		unlock_condition = 2202,
-		pre_astrolabe_id = 10550021,
+		pre_astrolabe_id = 10850021,
 		pos = 2,
-		hero_astrolabe_suit_id = 1055002,
-		id = 10550022,
+		hero_astrolabe_suit_id = 1085002,
+		id = 10850022,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7567,14 +6703,14 @@
 			}
 		}
 	},
-	[10550023] = {
-		name = "啸风",
-		suit_name = "神之血的霜结",
+	[10850023] = {
+		name = "命运",
+		suit_name = "唯一的心愿",
 		unlock_condition = 2203,
-		pre_astrolabe_id = 10550022,
+		pre_astrolabe_id = 10850022,
 		pos = 3,
-		hero_astrolabe_suit_id = 1055002,
-		id = 10550023,
+		hero_astrolabe_suit_id = 1085002,
+		id = 10850023,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7583,14 +6719,14 @@
 			}
 		}
 	},
-	[10550031] = {
-		name = "凝晶",
-		suit_name = "羽之神的晶造",
+	[10850031] = {
+		name = "携手",
+		suit_name = "同行的誓言",
 		unlock_condition = 2301,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1055003,
-		id = 10550031,
+		hero_astrolabe_suit_id = 1085003,
+		id = 10850031,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7599,14 +6735,14 @@
 			}
 		}
 	},
-	[10550032] = {
-		name = "散尘",
-		suit_name = "羽之神的晶造",
+	[10850032] = {
+		name = "同行",
+		suit_name = "同行的誓言",
 		unlock_condition = 2302,
-		pre_astrolabe_id = 10550031,
+		pre_astrolabe_id = 10850031,
 		pos = 2,
-		hero_astrolabe_suit_id = 1055003,
-		id = 10550032,
+		hero_astrolabe_suit_id = 1085003,
+		id = 10850032,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -7615,1598 +6751,14 @@
 			}
 		}
 	},
-	[10550033] = {
-		name = "飘洒",
-		suit_name = "羽之神的晶造",
+	[10850033] = {
+		name = "辟路",
+		suit_name = "同行的誓言",
 		unlock_condition = 2303,
-		pre_astrolabe_id = 10550032,
+		pre_astrolabe_id = 10850032,
 		pos = 3,
-		hero_astrolabe_suit_id = 1055003,
-		id = 10550033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10600011] = {
-		name = "昆丘",
-		suit_name = "开明御兽",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1060001,
-		id = 10600011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10600012] = {
-		name = "御护",
-		suit_name = "开明御兽",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10600011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1060001,
-		id = 10600012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10600013] = {
-		name = "破阵",
-		suit_name = "开明御兽",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10600012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1060001,
-		id = 10600013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10600021] = {
-		name = "神虎",
-		suit_name = "天之九部",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1060002,
-		id = 10600021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10600022] = {
-		name = "九部",
-		suit_name = "天之九部",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10600021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1060002,
-		id = 10600022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10600023] = {
-		name = "神囿",
-		suit_name = "天之九部",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10600022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1060002,
-		id = 10600023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10600031] = {
-		name = "天司",
-		suit_name = "帝都司将",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1060003,
-		id = 10600031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10600032] = {
-		name = "摧军",
-		suit_name = "帝都司将",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10600031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1060003,
-		id = 10600032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10600033] = {
-		name = "帝将",
-		suit_name = "帝都司将",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10600032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1060003,
-		id = 10600033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10610011] = {
-		name = "阴象",
-		suit_name = "北陆玄冥",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1061001,
-		id = 10610011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10610012] = {
-		name = "虚宿",
-		suit_name = "北陆玄冥",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10610011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1061001,
-		id = 10610012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10610013] = {
-		name = "天节",
-		suit_name = "北陆玄冥",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10610012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1061001,
-		id = 10610013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10610021] = {
-		name = "玄天",
-		suit_name = "真武帝君",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1061002,
-		id = 10610021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10610022] = {
-		name = "千演",
-		suit_name = "真武帝君",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10610021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1061002,
-		id = 10610022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10610023] = {
-		name = "北帝",
-		suit_name = "真武帝君",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10610022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1061002,
-		id = 10610023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10610031] = {
-		name = "水色",
-		suit_name = "坎水护神",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1061003,
-		id = 10610031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10610032] = {
-		name = "卦破",
-		suit_name = "坎水护神",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10610031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1061003,
-		id = 10610032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10610033] = {
-		name = "不盈",
-		suit_name = "坎水护神",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10610032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1061003,
-		id = 10610033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11500011] = {
-		name = "饮锋",
-		suit_name = "妖刀",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1150001,
-		id = 11500011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11500012] = {
-		name = "浴血",
-		suit_name = "妖刀",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 11500011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1150001,
-		id = 11500012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11500013] = {
-		name = "噬命",
-		suit_name = "妖刀",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 11500012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1150001,
-		id = 11500013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11500021] = {
-		name = "裂空",
-		suit_name = "破空",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1150002,
-		id = 11500021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11500022] = {
-		name = "斩绝",
-		suit_name = "破空",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 11500021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1150002,
-		id = 11500022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11500023] = {
-		name = "越隙",
-		suit_name = "破空",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 11500022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1150002,
-		id = 11500023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11500031] = {
-		name = "樱舞",
-		suit_name = "散樱",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1150003,
-		id = 11500031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11500032] = {
-		name = "落华",
-		suit_name = "散樱",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 11500031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1150003,
-		id = 11500032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11500033] = {
-		name = "绯影",
-		suit_name = "散樱",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 11500032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1150003,
-		id = 11500033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10150011] = {
-		name = "摧城",
-		suit_name = "战争母狮",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1015001,
-		id = 10150011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10150012] = {
-		name = "登锋",
-		suit_name = "战争母狮",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10150011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1015001,
-		id = 10150012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10150013] = {
-		name = "统军",
-		suit_name = "战争母狮",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10150012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1015001,
-		id = 10150013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10150021] = {
-		name = "罚罪",
-		suit_name = "神圣审判",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1015002,
-		id = 10150021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10150022] = {
-		name = "噬恶",
-		suit_name = "神圣审判",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10150021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1015002,
-		id = 10150022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10150023] = {
-		name = "裁断",
-		suit_name = "神圣审判",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10150022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1015002,
-		id = 10150023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10150031] = {
-		name = "扬尘",
-		suit_name = "沙湖酩酊",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1015003,
-		id = 10150031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10150032] = {
-		name = "微醺",
-		suit_name = "沙湖酩酊",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10150031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1015003,
-		id = 10150032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10150033] = {
-		name = "酣醉",
-		suit_name = "沙湖酩酊",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10150032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1015003,
-		id = 10150033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10950011] = {
-		name = "月生",
-		suit_name = "新月与仲裁",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1095001,
-		id = 10950011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10950012] = {
-		name = "朔晖",
-		suit_name = "新月与仲裁",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10950011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1095001,
-		id = 10950012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10950013] = {
-		name = "言决",
-		suit_name = "新月与仲裁",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10950012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1095001,
-		id = 10950013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10950021] = {
-		name = "密符",
-		suit_name = "文字与诗篇",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1095002,
-		id = 10950021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10950022] = {
-		name = "文封",
-		suit_name = "文字与诗篇",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10950021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1095002,
-		id = 10950022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10950023] = {
-		name = "诗咏",
-		suit_name = "文字与诗篇",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10950022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1095002,
-		id = 10950023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10950031] = {
-		name = "述咒",
-		suit_name = "智慧与学识",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1095003,
-		id = 10950031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10950032] = {
-		name = "阅界",
-		suit_name = "智慧与学识",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10950031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1095003,
-		id = 10950032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10950033] = {
-		name = "智络",
-		suit_name = "智慧与学识",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10950032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1095003,
-		id = 10950033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[12840011] = {
-		name = "晨曦",
-		suit_name = "拂晓的耀剑",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1284001,
-		id = 12840011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[12840012] = {
-		name = "炽光",
-		suit_name = "拂晓的耀剑",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 12840011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1284001,
-		id = 12840012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[12840013] = {
-		name = "光华",
-		suit_name = "拂晓的耀剑",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 12840012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1284001,
-		id = 12840013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[12840021] = {
-		name = "刻命",
-		suit_name = "命定的裁断",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1284002,
-		id = 12840021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[12840022] = {
-		name = "命定",
-		suit_name = "命定的裁断",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 12840021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1284002,
-		id = 12840022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[12840023] = {
-		name = "命缘",
-		suit_name = "命定的裁断",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 12840022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1284002,
-		id = 12840023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[12840031] = {
-		name = "现今",
-		suit_name = "约定的现在",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1284003,
-		id = 12840031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[12840032] = {
-		name = "一刹",
-		suit_name = "约定的现在",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 12840031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1284003,
-		id = 12840032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[12840033] = {
-		name = "约束",
-		suit_name = "约定的现在",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 12840032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1284003,
-		id = 12840033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11970011] = {
-		name = "象梦",
-		suit_name = "无尽幻梦",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1197001,
-		id = 11970011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11970012] = {
-		name = "永眠",
-		suit_name = "无尽幻梦",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 11970011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1197001,
-		id = 11970012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11970013] = {
-		name = "沉梦",
-		suit_name = "无尽幻梦",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 11970012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1197001,
-		id = 11970013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11970021] = {
-		name = "梦乡",
-		suit_name = "三千梦神",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1197002,
-		id = 11970021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11970022] = {
-		name = "造形",
-		suit_name = "三千梦神",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 11970021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1197002,
-		id = 11970022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11970023] = {
-		name = "似像",
-		suit_name = "三千梦神",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 11970022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1197002,
-		id = 11970023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11970031] = {
-		name = "梦呓",
-		suit_name = "沉梦初醒",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1197003,
-		id = 11970031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11970032] = {
-		name = "浅眠",
-		suit_name = "沉梦初醒",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 11970031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1197003,
-		id = 11970032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11970033] = {
-		name = "初醒",
-		suit_name = "沉梦初醒",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 11970032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1197003,
-		id = 11970033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10220011] = {
-		name = "清辉",
-		suit_name = "满月辉光",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1022001,
-		id = 10220011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10220012] = {
-		name = "月露",
-		suit_name = "满月辉光",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10220011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1022001,
-		id = 10220012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10220013] = {
-		name = "薄暮",
-		suit_name = "满月辉光",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10220012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1022001,
-		id = 10220013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10220021] = {
-		name = "朔月",
-		suit_name = "新月桂冠",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1022002,
-		id = 10220021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10220022] = {
-		name = "隐月",
-		suit_name = "新月桂冠",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10220021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1022002,
-		id = 10220022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10220023] = {
-		name = "月冠",
-		suit_name = "新月桂冠",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10220022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1022002,
-		id = 10220023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10220031] = {
-		name = "幽歌",
-		suit_name = "幽月咏叹",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1022003,
-		id = 10220031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10220032] = {
-		name = "寂月",
-		suit_name = "幽月咏叹",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10220031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1022003,
-		id = 10220032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10220033] = {
-		name = "皓华",
-		suit_name = "幽月咏叹",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10220032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1022003,
-		id = 10220033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10210011] = {
-		name = "猎林",
-		suit_name = "荒原狩野",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1021001,
-		id = 10210011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10210012] = {
-		name = "夜狩",
-		suit_name = "荒原狩野",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10210011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1021001,
-		id = 10210012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10210013] = {
-		name = "金矢",
-		suit_name = "荒原狩野",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10210012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1021001,
-		id = 10210013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10210021] = {
-		name = "奏曲",
-		suit_name = "灯塔和弦",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1021002,
-		id = 10210021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10210022] = {
-		name = "守望",
-		suit_name = "灯塔和弦",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10210021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1021002,
-		id = 10210022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10210023] = {
-		name = "音律",
-		suit_name = "灯塔和弦",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10210022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1021002,
-		id = 10210023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10210031] = {
-		name = "协调",
-		suit_name = "音符骑士",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1021003,
-		id = 10210031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10210032] = {
-		name = "剑鸣",
-		suit_name = "音符骑士",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10210031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1021003,
-		id = 10210032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10210033] = {
-		name = "弦音",
-		suit_name = "音符骑士",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10210032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1021003,
-		id = 10210033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10200011] = {
-		name = "璃伽",
-		suit_name = "破灭之神",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1020001,
-		id = 10200011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10200012] = {
-		name = "俱毁",
-		suit_name = "破灭之神",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 10200011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1020001,
-		id = 10200012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10200013] = {
-		name = "圣舞",
-		suit_name = "破灭之神",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 10200012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1020001,
-		id = 10200013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10200021] = {
-		name = "莲诞",
-		suit_name = "创生之神",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1020002,
-		id = 10200021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10200022] = {
-		name = "金卵",
-		suit_name = "创生之神",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 10200021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1020002,
-		id = 10200022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10200023] = {
-		name = "应许",
-		suit_name = "创生之神",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 10200022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1020002,
-		id = 10200023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[10200031] = {
-		name = "创造",
-		suit_name = "三相合一",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1020003,
-		id = 10200031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[10200032] = {
-		name = "维护",
-		suit_name = "三相合一",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 10200031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1020003,
-		id = 10200032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[10200033] = {
-		name = "破坏",
-		suit_name = "三相合一",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 10200032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1020003,
-		id = 10200033,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11560011] = {
-		name = "雷劫",
-		suit_name = "难近母神",
-		unlock_condition = 2101,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1156001,
-		id = 11560011,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11560012] = {
-		name = "杀伐",
-		suit_name = "难近母神",
-		unlock_condition = 2102,
-		pre_astrolabe_id = 11560011,
-		pos = 2,
-		hero_astrolabe_suit_id = 1156001,
-		id = 11560012,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11560013] = {
-		name = "诛魔",
-		suit_name = "难近母神",
-		unlock_condition = 2103,
-		pre_astrolabe_id = 11560012,
-		pos = 3,
-		hero_astrolabe_suit_id = 1156001,
-		id = 11560013,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11560021] = {
-		name = "雷刹",
-		suit_name = "永劫时雷",
-		unlock_condition = 2201,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1156002,
-		id = 11560021,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11560022] = {
-		name = "鸣雷",
-		suit_name = "永劫时雷",
-		unlock_condition = 2202,
-		pre_astrolabe_id = 11560021,
-		pos = 2,
-		hero_astrolabe_suit_id = 1156002,
-		id = 11560022,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11560023] = {
-		name = "霆耀",
-		suit_name = "永劫时雷",
-		unlock_condition = 2203,
-		pre_astrolabe_id = 11560022,
-		pos = 3,
-		hero_astrolabe_suit_id = 1156002,
-		id = 11560023,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				10000
-			}
-		}
-	},
-	[11560031] = {
-		name = "踏界",
-		suit_name = "忿怒之神",
-		unlock_condition = 2301,
-		pre_astrolabe_id = 0,
-		pos = 1,
-		hero_astrolabe_suit_id = 1156003,
-		id = 11560031,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				1000
-			}
-		}
-	},
-	[11560032] = {
-		name = "黑神",
-		suit_name = "忿怒之神",
-		unlock_condition = 2302,
-		pre_astrolabe_id = 11560031,
-		pos = 2,
-		hero_astrolabe_suit_id = 1156003,
-		id = 11560032,
-		astrolabe_type = 0,
-		unlock = {
-			{
-				2,
-				5000
-			}
-		}
-	},
-	[11560033] = {
-		name = "愤懑",
-		suit_name = "忿怒之神",
-		unlock_condition = 2303,
-		pre_astrolabe_id = 11560032,
-		pos = 3,
-		hero_astrolabe_suit_id = 1156003,
-		id = 11560033,
+		hero_astrolabe_suit_id = 1085003,
+		id = 10850033,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9359,14 +6911,14 @@
 			}
 		}
 	},
-	[12480011] = {
-		name = "友情",
-		suit_name = "爱与和平",
+	[10930011] = {
+		name = "天印",
+		suit_name = "苇芽之神",
 		unlock_condition = 2101,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1248001,
-		id = 12480011,
+		hero_astrolabe_suit_id = 1093001,
+		id = 10930011,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9375,14 +6927,14 @@
 			}
 		}
 	},
-	[12480012] = {
-		name = "努力",
-		suit_name = "爱与和平",
+	[10930012] = {
+		name = "地章",
+		suit_name = "苇芽之神",
 		unlock_condition = 2102,
-		pre_astrolabe_id = 12480011,
+		pre_astrolabe_id = 10930011,
 		pos = 2,
-		hero_astrolabe_suit_id = 1248001,
-		id = 12480012,
+		hero_astrolabe_suit_id = 1093001,
+		id = 10930012,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9391,14 +6943,14 @@
 			}
 		}
 	},
-	[12480013] = {
-		name = "胜利",
-		suit_name = "爱与和平",
+	[10930013] = {
+		name = "常立",
+		suit_name = "苇芽之神",
 		unlock_condition = 2103,
-		pre_astrolabe_id = 12480012,
+		pre_astrolabe_id = 10930012,
 		pos = 3,
-		hero_astrolabe_suit_id = 1248001,
-		id = 12480013,
+		hero_astrolabe_suit_id = 1093001,
+		id = 10930013,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9407,14 +6959,14 @@
 			}
 		}
 	},
-	[12480021] = {
-		name = "顽心",
-		suit_name = "善童恶戏",
+	[10930021] = {
+		name = "剖判",
+		suit_name = "辟天之初",
 		unlock_condition = 2201,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1248002,
-		id = 12480021,
+		hero_astrolabe_suit_id = 1093002,
+		id = 10930021,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9423,14 +6975,14 @@
 			}
 		}
 	},
-	[12480022] = {
-		name = "妙友",
-		suit_name = "善童恶戏",
+	[10930022] = {
+		name = "疾法",
+		suit_name = "辟天之初",
 		unlock_condition = 2202,
-		pre_astrolabe_id = 12480021,
+		pre_astrolabe_id = 10930021,
 		pos = 2,
-		hero_astrolabe_suit_id = 1248002,
-		id = 12480022,
+		hero_astrolabe_suit_id = 1093002,
+		id = 10930022,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9439,14 +6991,14 @@
 			}
 		}
 	},
-	[12480023] = {
-		name = "闹剧",
-		suit_name = "善童恶戏",
+	[10930023] = {
+		name = "忍道",
+		suit_name = "辟天之初",
 		unlock_condition = 2203,
-		pre_astrolabe_id = 12480022,
+		pre_astrolabe_id = 10930022,
 		pos = 3,
-		hero_astrolabe_suit_id = 1248002,
-		id = 12480023,
+		hero_astrolabe_suit_id = 1093002,
+		id = 10930023,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9455,14 +7007,14 @@
 			}
 		}
 	},
-	[12480031] = {
-		name = "神妙",
-		suit_name = "神威神威",
-		unlock_condition = 2301,
+	[10930031] = {
+		name = "四象",
+		suit_name = "四象之界",
+		unlock_condition = 2304,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1248003,
-		id = 12480031,
+		hero_astrolabe_suit_id = 1093003,
+		id = 10930031,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9471,14 +7023,14 @@
 			}
 		}
 	},
-	[12480032] = {
-		name = "神翼",
-		suit_name = "神威神威",
+	[10930032] = {
+		name = "心惑",
+		suit_name = "四象之界",
 		unlock_condition = 2302,
-		pre_astrolabe_id = 12480031,
+		pre_astrolabe_id = 10930031,
 		pos = 2,
-		hero_astrolabe_suit_id = 1248003,
-		id = 12480032,
+		hero_astrolabe_suit_id = 1093003,
+		id = 10930032,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9487,14 +7039,1310 @@
 			}
 		}
 	},
-	[12480033] = {
-		name = "神御",
-		suit_name = "神威神威",
+	[10930033] = {
+		name = "惑解",
+		suit_name = "四象之界",
 		unlock_condition = 2303,
-		pre_astrolabe_id = 12480032,
+		pre_astrolabe_id = 10930032,
 		pos = 3,
-		hero_astrolabe_suit_id = 1248003,
-		id = 12480033,
+		hero_astrolabe_suit_id = 1093003,
+		id = 10930033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10940011] = {
+		name = "虚饰",
+		suit_name = "灾厄圣所",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1094001,
+		id = 10940011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10940012] = {
+		name = "怨慕",
+		suit_name = "灾厄圣所",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10940011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1094001,
+		id = 10940012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10940013] = {
+		name = "幽煌",
+		suit_name = "灾厄圣所",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10940012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1094001,
+		id = 10940013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10940021] = {
+		name = "魔魇",
+		suit_name = "告死魔女",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1094002,
+		id = 10940021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10940022] = {
+		name = "极光",
+		suit_name = "告死魔女",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10940021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1094002,
+		id = 10940022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10940023] = {
+		name = "荒秽",
+		suit_name = "告死魔女",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10940022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1094002,
+		id = 10940023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10940031] = {
+		name = "罪痕",
+		suit_name = "终末葬仪",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1094003,
+		id = 10940031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10940032] = {
+		name = "暗晦",
+		suit_name = "终末葬仪",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10940031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1094003,
+		id = 10940032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10940033] = {
+		name = "纳祭",
+		suit_name = "终末葬仪",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10940032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1094003,
+		id = 10940033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10950011] = {
+		name = "月生",
+		suit_name = "新月与仲裁",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1095001,
+		id = 10950011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10950012] = {
+		name = "朔晖",
+		suit_name = "新月与仲裁",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10950011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1095001,
+		id = 10950012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10950013] = {
+		name = "言决",
+		suit_name = "新月与仲裁",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10950012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1095001,
+		id = 10950013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10950021] = {
+		name = "密符",
+		suit_name = "文字与诗篇",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1095002,
+		id = 10950021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10950022] = {
+		name = "文封",
+		suit_name = "文字与诗篇",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10950021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1095002,
+		id = 10950022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10950023] = {
+		name = "诗咏",
+		suit_name = "文字与诗篇",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10950022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1095002,
+		id = 10950023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10950031] = {
+		name = "述咒",
+		suit_name = "智慧与学识",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1095003,
+		id = 10950031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10950032] = {
+		name = "阅界",
+		suit_name = "智慧与学识",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10950031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1095003,
+		id = 10950032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10950033] = {
+		name = "智络",
+		suit_name = "智慧与学识",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10950032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1095003,
+		id = 10950033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10960011] = {
+		name = "时续",
+		suit_name = "狡知游戏",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1096001,
+		id = 10960011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10960012] = {
+		name = "疾行",
+		suit_name = "狡知游戏",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10960011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1096001,
+		id = 10960012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10960013] = {
+		name = "翔风",
+		suit_name = "狡知游戏",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10960012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1096001,
+		id = 10960013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10960021] = {
+		name = "真识",
+		suit_name = "三重伟大",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1096002,
+		id = 10960021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10960022] = {
+		name = "苍翠",
+		suit_name = "三重伟大",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10960021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1096002,
+		id = 10960022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10960023] = {
+		name = "摧坚",
+		suit_name = "三重伟大",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10960022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1096002,
+		id = 10960023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10960031] = {
+		name = "白羽",
+		suit_name = "匿影信使",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1096003,
+		id = 10960031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10960032] = {
+		name = "极速",
+		suit_name = "匿影信使",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10960031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1096003,
+		id = 10960032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10960033] = {
+		name = "沧岚",
+		suit_name = "匿影信使",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10960032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1096003,
+		id = 10960033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10970011] = {
+		name = "梦兆",
+		suit_name = "梦境之国",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1097001,
+		id = 10970011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10970012] = {
+		name = "夜寐",
+		suit_name = "梦境之国",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10970011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1097001,
+		id = 10970012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10970013] = {
+		name = "旧思",
+		suit_name = "梦境之国",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10970012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1097001,
+		id = 10970013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10970021] = {
+		name = "幽想",
+		suit_name = "空幻造物",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1097002,
+		id = 10970021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10970022] = {
+		name = "投影",
+		suit_name = "空幻造物",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10970021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1097002,
+		id = 10970022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10970023] = {
+		name = "流绚",
+		suit_name = "空幻造物",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10970022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1097002,
+		id = 10970023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10970031] = {
+		name = "幻奏",
+		suit_name = "永恒摇篮",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1097003,
+		id = 10970031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10970032] = {
+		name = "咏歌",
+		suit_name = "永恒摇篮",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10970031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1097003,
+		id = 10970032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10970033] = {
+		name = "芊眠",
+		suit_name = "永恒摇篮",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10970032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1097003,
+		id = 10970033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10990011] = {
+		name = "深月",
+		suit_name = "涤右目而生",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1099001,
+		id = 10990011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10990012] = {
+		name = "朔弧",
+		suit_name = "涤右目而生",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10990011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1099001,
+		id = 10990012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10990013] = {
+		name = "暗相",
+		suit_name = "涤右目而生",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10990012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1099001,
+		id = 10990013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10990021] = {
+		name = "痛蚀",
+		suit_name = "月夜见尊",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1099002,
+		id = 10990021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10990022] = {
+		name = "辉夜",
+		suit_name = "月夜见尊",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10990021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1099002,
+		id = 10990022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10990023] = {
+		name = "残月",
+		suit_name = "月夜见尊",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10990022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1099002,
+		id = 10990023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10990031] = {
+		name = "月见",
+		suit_name = "天照拟偶",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1099003,
+		id = 10990031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10990032] = {
+		name = "逐影",
+		suit_name = "天照拟偶",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10990031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1099003,
+		id = 10990032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10990033] = {
+		name = "分光",
+		suit_name = "天照拟偶",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10990032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1099003,
+		id = 10990033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11110011] = {
+		name = "萨赫",
+		suit_name = "逆转复生",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1111001,
+		id = 11110011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11110012] = {
+		name = "神柩",
+		suit_name = "逆转复生",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 11110011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1111001,
+		id = 11110012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11110013] = {
+		name = "殓藏",
+		suit_name = "逆转复生",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 11110012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1111001,
+		id = 11110013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11110021] = {
+		name = "礼颂",
+		suit_name = "至上审判",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1111002,
+		id = 11110021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11110022] = {
+		name = "戒律",
+		suit_name = "至上审判",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 11110021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1111002,
+		id = 11110022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11110023] = {
+		name = "赦令",
+		suit_name = "至上审判",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 11110022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1111002,
+		id = 11110023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11110031] = {
+		name = "圣书",
+		suit_name = "丰饶鸵羽",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1111003,
+		id = 11110031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11110032] = {
+		name = "神辞",
+		suit_name = "丰饶鸵羽",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 11110031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1111003,
+		id = 11110032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11110033] = {
+		name = "苏生",
+		suit_name = "丰饶鸵羽",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 11110032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1111003,
+		id = 11110033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11190011] = {
+		name = "谐振",
+		suit_name = "鸣雷沙暴",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1119001,
+		id = 11190011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11190012] = {
+		name = "强风",
+		suit_name = "鸣雷沙暴",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 11190011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1119001,
+		id = 11190012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11190013] = {
+		name = "雷暴",
+		suit_name = "鸣雷沙暴",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 11190012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1119001,
+		id = 11190013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11190021] = {
+		name = "尖碑",
+		suit_name = "风雷领域",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1119002,
+		id = 11190021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11190022] = {
+		name = "沙蚀",
+		suit_name = "风雷领域",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 11190021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1119002,
+		id = 11190022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11190023] = {
+		name = "雷御",
+		suit_name = "风雷领域",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 11190022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1119002,
+		id = 11190023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11190031] = {
+		name = "蓄势",
+		suit_name = "天地之柱",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1119003,
+		id = 11190031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11190032] = {
+		name = "流转",
+		suit_name = "天地之柱",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 11190031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1119003,
+		id = 11190032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11190033] = {
+		name = "锚定",
+		suit_name = "天地之柱",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 11190032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1119003,
+		id = 11190033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11270011] = {
+		name = "溟海",
+		suit_name = "亘古沧洋",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1127001,
+		id = 11270011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11270012] = {
+		name = "悠远",
+		suit_name = "亘古沧洋",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 11270011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1127001,
+		id = 11270012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11270013] = {
+		name = "古迹",
+		suit_name = "亘古沧洋",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 11270012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1127001,
+		id = 11270013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11270021] = {
+		name = "幽黯",
+		suit_name = "扭曲漩涡",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1127002,
+		id = 11270021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11270022] = {
+		name = "潆洄",
+		suit_name = "扭曲漩涡",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 11270021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1127002,
+		id = 11270022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11270023] = {
+		name = "蚀涡",
+		suit_name = "扭曲漩涡",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 11270022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1127002,
+		id = 11270023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11270031] = {
+		name = "幻梦",
+		suit_name = "幻海泡影",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1127003,
+		id = 11270031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11270032] = {
+		name = "空灭",
+		suit_name = "幻海泡影",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 11270031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1127003,
+		id = 11270032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11270033] = {
+		name = "澄心",
+		suit_name = "幻海泡影",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 11270032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1127003,
+		id = 11270033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11320011] = {
+		name = "附着",
+		suit_name = "燃剑的制裁",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1132001,
+		id = 11320011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11320012] = {
+		name = "瞬燃",
+		suit_name = "燃剑的制裁",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 11320011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1132001,
+		id = 11320012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11320013] = {
+		name = "炽烈",
+		suit_name = "燃剑的制裁",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 11320012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1132001,
+		id = 11320013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11320021] = {
+		name = "炽热",
+		suit_name = "炽甲的惩戒",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1132002,
+		id = 11320021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11320022] = {
+		name = "锻铸",
+		suit_name = "炽甲的惩戒",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 11320021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1132002,
+		id = 11320022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11320023] = {
+		name = "凝火",
+		suit_name = "炽甲的惩戒",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 11320022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1132002,
+		id = 11320023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11320031] = {
+		name = "燃血",
+		suit_name = "炼狱的复仇",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1132003,
+		id = 11320031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11320032] = {
+		name = "炙罪",
+		suit_name = "炼狱的复仇",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 11320031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1132003,
+		id = 11320032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11320033] = {
+		name = "炽刑",
+		suit_name = "炼狱的复仇",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 11320032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1132003,
+		id = 11320033,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9647,14 +8495,14 @@
 			}
 		}
 	},
-	[10340011] = {
-		name = "夺魄",
-		suit_name = "烈毒主宰",
+	[11380011] = {
+		name = "星穹",
+		suit_name = "清辉星海",
 		unlock_condition = 2101,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1034001,
-		id = 10340011,
+		hero_astrolabe_suit_id = 1138001,
+		id = 11380011,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9663,14 +8511,14 @@
 			}
 		}
 	},
-	[10340012] = {
-		name = "穿心",
-		suit_name = "烈毒主宰",
+	[11380012] = {
+		name = "天权",
+		suit_name = "清辉星海",
 		unlock_condition = 2102,
-		pre_astrolabe_id = 10340011,
+		pre_astrolabe_id = 11380011,
 		pos = 2,
-		hero_astrolabe_suit_id = 1034001,
-		id = 10340012,
+		hero_astrolabe_suit_id = 1138001,
+		id = 11380012,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9679,14 +8527,14 @@
 			}
 		}
 	},
-	[10340013] = {
-		name = "摄目",
-		suit_name = "烈毒主宰",
+	[11380013] = {
+		name = "瀚宇",
+		suit_name = "清辉星海",
 		unlock_condition = 2103,
-		pre_astrolabe_id = 10340012,
+		pre_astrolabe_id = 11380012,
 		pos = 3,
-		hero_astrolabe_suit_id = 1034001,
-		id = 10340013,
+		hero_astrolabe_suit_id = 1138001,
+		id = 11380013,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9695,14 +8543,14 @@
 			}
 		}
 	},
-	[10340021] = {
-		name = "异鳞",
-		suit_name = "万戮灾异",
+	[11380021] = {
+		name = "破曙",
+		suit_name = "昼夜天启",
 		unlock_condition = 2201,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1034002,
-		id = 10340021,
+		hero_astrolabe_suit_id = 1138002,
+		id = 11380021,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9711,14 +8559,14 @@
 			}
 		}
 	},
-	[10340022] = {
-		name = "蜕生",
-		suit_name = "万戮灾异",
+	[11380022] = {
+		name = "辰光",
+		suit_name = "昼夜天启",
 		unlock_condition = 2202,
-		pre_astrolabe_id = 10340021,
+		pre_astrolabe_id = 11380021,
 		pos = 2,
-		hero_astrolabe_suit_id = 1034002,
-		id = 10340022,
+		hero_astrolabe_suit_id = 1138002,
+		id = 11380022,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9727,14 +8575,14 @@
 			}
 		}
 	},
-	[10340023] = {
-		name = "狂潮",
-		suit_name = "万戮灾异",
+	[11380023] = {
+		name = "幻耀",
+		suit_name = "昼夜天启",
 		unlock_condition = 2203,
-		pre_astrolabe_id = 10340022,
+		pre_astrolabe_id = 11380022,
 		pos = 3,
-		hero_astrolabe_suit_id = 1034002,
-		id = 10340023,
+		hero_astrolabe_suit_id = 1138002,
+		id = 11380023,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9743,14 +8591,14 @@
 			}
 		}
 	},
-	[10340031] = {
-		name = "驱邪",
-		suit_name = "守护圣蛇",
+	[11380031] = {
+		name = "崇极",
+		suit_name = "极光咏叹",
 		unlock_condition = 2301,
 		pre_astrolabe_id = 0,
 		pos = 1,
-		hero_astrolabe_suit_id = 1034003,
-		id = 10340031,
+		hero_astrolabe_suit_id = 1138003,
+		id = 11380031,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9759,14 +8607,14 @@
 			}
 		}
 	},
-	[10340032] = {
-		name = "蛇变",
-		suit_name = "守护圣蛇",
+	[11380032] = {
+		name = "无瑕",
+		suit_name = "极光咏叹",
 		unlock_condition = 2302,
-		pre_astrolabe_id = 10340031,
+		pre_astrolabe_id = 11380031,
 		pos = 2,
-		hero_astrolabe_suit_id = 1034003,
-		id = 10340032,
+		hero_astrolabe_suit_id = 1138003,
+		id = 11380032,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9775,14 +8623,1454 @@
 			}
 		}
 	},
-	[10340033] = {
-		name = "赐佑",
-		suit_name = "守护圣蛇",
+	[11380033] = {
+		name = "清晖",
+		suit_name = "极光咏叹",
 		unlock_condition = 2303,
-		pre_astrolabe_id = 10340032,
+		pre_astrolabe_id = 11380032,
 		pos = 3,
-		hero_astrolabe_suit_id = 1034003,
-		id = 10340033,
+		hero_astrolabe_suit_id = 1138003,
+		id = 11380033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11390011] = {
+		name = "寒晶",
+		suit_name = "璀璨寒冬",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1139001,
+		id = 11390011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11390012] = {
+		name = "绝封",
+		suit_name = "璀璨寒冬",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 11390011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1139001,
+		id = 11390012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11390013] = {
+		name = "凛寒",
+		suit_name = "璀璨寒冬",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 11390012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1139001,
+		id = 11390013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11390021] = {
+		name = "空凌",
+		suit_name = "极地银河",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1139002,
+		id = 11390021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11390022] = {
+		name = "烁雪",
+		suit_name = "极地银河",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 11390021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1139002,
+		id = 11390022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11390023] = {
+		name = "极渊",
+		suit_name = "极地银河",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 11390022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1139002,
+		id = 11390023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11390031] = {
+		name = "冰尘",
+		suit_name = "静谧之白",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1139003,
+		id = 11390031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11390032] = {
+		name = "凝华",
+		suit_name = "静谧之白",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 11390031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1139003,
+		id = 11390032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11390033] = {
+		name = "雪覆",
+		suit_name = "静谧之白",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 11390032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1139003,
+		id = 11390033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11480011] = {
+		name = "空震",
+		suit_name = "暴结星",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1148001,
+		id = 11480011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11480012] = {
+		name = "融爆",
+		suit_name = "暴结星",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 11480011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1148001,
+		id = 11480012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11480013] = {
+		name = "逆火",
+		suit_name = "暴结星",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 11480012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1148001,
+		id = 11480013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11480021] = {
+		name = "贯破",
+		suit_name = "大峰天狩",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1148002,
+		id = 11480021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11480022] = {
+		name = "暴弹",
+		suit_name = "大峰天狩",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 11480021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1148002,
+		id = 11480022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11480023] = {
+		name = "阵列",
+		suit_name = "大峰天狩",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 11480022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1148002,
+		id = 11480023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11480031] = {
+		name = "棘刺",
+		suit_name = "乱战的心得",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1148003,
+		id = 11480031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11480032] = {
+		name = "奇袭",
+		suit_name = "乱战的心得",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 11480031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1148003,
+		id = 11480032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11480033] = {
+		name = "续行",
+		suit_name = "乱战的心得",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 11480032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1148003,
+		id = 11480033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11500011] = {
+		name = "饮锋",
+		suit_name = "妖刀",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1150001,
+		id = 11500011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11500012] = {
+		name = "浴血",
+		suit_name = "妖刀",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 11500011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1150001,
+		id = 11500012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11500013] = {
+		name = "噬命",
+		suit_name = "妖刀",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 11500012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1150001,
+		id = 11500013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11500021] = {
+		name = "裂空",
+		suit_name = "破空",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1150002,
+		id = 11500021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11500022] = {
+		name = "斩绝",
+		suit_name = "破空",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 11500021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1150002,
+		id = 11500022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11500023] = {
+		name = "越隙",
+		suit_name = "破空",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 11500022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1150002,
+		id = 11500023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11500031] = {
+		name = "樱舞",
+		suit_name = "散樱",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1150003,
+		id = 11500031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11500032] = {
+		name = "落华",
+		suit_name = "散樱",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 11500031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1150003,
+		id = 11500032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11500033] = {
+		name = "绯影",
+		suit_name = "散樱",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 11500032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1150003,
+		id = 11500033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11560011] = {
+		name = "雷劫",
+		suit_name = "难近母神",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1156001,
+		id = 11560011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11560012] = {
+		name = "杀伐",
+		suit_name = "难近母神",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 11560011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1156001,
+		id = 11560012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11560013] = {
+		name = "诛魔",
+		suit_name = "难近母神",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 11560012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1156001,
+		id = 11560013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11560021] = {
+		name = "雷刹",
+		suit_name = "永劫时雷",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1156002,
+		id = 11560021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11560022] = {
+		name = "鸣雷",
+		suit_name = "永劫时雷",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 11560021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1156002,
+		id = 11560022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11560023] = {
+		name = "霆耀",
+		suit_name = "永劫时雷",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 11560022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1156002,
+		id = 11560023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11560031] = {
+		name = "踏界",
+		suit_name = "忿怒之神",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1156003,
+		id = 11560031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11560032] = {
+		name = "黑神",
+		suit_name = "忿怒之神",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 11560031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1156003,
+		id = 11560032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11560033] = {
+		name = "愤懑",
+		suit_name = "忿怒之神",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 11560032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1156003,
+		id = 11560033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11580011] = {
+		name = "炘烬",
+		suit_name = "烬灭之神",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1158001,
+		id = 11580011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11580012] = {
+		name = "焚灭",
+		suit_name = "烬灭之神",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 11580011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1158001,
+		id = 11580012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11580013] = {
+		name = "永炎",
+		suit_name = "烬灭之神",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 11580012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1158001,
+		id = 11580013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11580021] = {
+		name = "熔火",
+		suit_name = "焚心惑火",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1158002,
+		id = 11580021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11580022] = {
+		name = "祸卷",
+		suit_name = "焚心惑火",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 11580021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1158002,
+		id = 11580022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11580023] = {
+		name = "魇焚",
+		suit_name = "焚心惑火",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 11580022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1158002,
+		id = 11580023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11580031] = {
+		name = "熔炼",
+		suit_name = "祸炽初诞",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1158003,
+		id = 11580031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11580032] = {
+		name = "惑灼",
+		suit_name = "祸炽初诞",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 11580031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1158003,
+		id = 11580032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11580033] = {
+		name = "炽燃",
+		suit_name = "祸炽初诞",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 11580032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1158003,
+		id = 11580033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11840011] = {
+		name = "掷星",
+		suit_name = "神铁之盾",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1184001,
+		id = 11840011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11840012] = {
+		name = "心锁",
+		suit_name = "神铁之盾",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 11840011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1184001,
+		id = 11840012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11840013] = {
+		name = "同调",
+		suit_name = "神铁之盾",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 11840012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1184001,
+		id = 11840013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11840021] = {
+		name = "辰幕",
+		suit_name = "永命垂线",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1184002,
+		id = 11840021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11840022] = {
+		name = "星守",
+		suit_name = "永命垂线",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 11840021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1184002,
+		id = 11840022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11840023] = {
+		name = "天司",
+		suit_name = "永命垂线",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 11840022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1184002,
+		id = 11840023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11840031] = {
+		name = "织翼",
+		suit_name = "青空约束",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1184003,
+		id = 11840031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11840032] = {
+		name = "誓念",
+		suit_name = "青空约束",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 11840031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1184003,
+		id = 11840032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11840033] = {
+		name = "守望",
+		suit_name = "青空约束",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 11840032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1184003,
+		id = 11840033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11970011] = {
+		name = "象梦",
+		suit_name = "无尽幻梦",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1197001,
+		id = 11970011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11970012] = {
+		name = "永眠",
+		suit_name = "无尽幻梦",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 11970011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1197001,
+		id = 11970012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11970013] = {
+		name = "沉梦",
+		suit_name = "无尽幻梦",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 11970012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1197001,
+		id = 11970013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11970021] = {
+		name = "梦乡",
+		suit_name = "三千梦神",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1197002,
+		id = 11970021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11970022] = {
+		name = "造形",
+		suit_name = "三千梦神",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 11970021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1197002,
+		id = 11970022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11970023] = {
+		name = "似像",
+		suit_name = "三千梦神",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 11970022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1197002,
+		id = 11970023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11970031] = {
+		name = "梦呓",
+		suit_name = "沉梦初醒",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1197003,
+		id = 11970031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11970032] = {
+		name = "浅眠",
+		suit_name = "沉梦初醒",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 11970031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1197003,
+		id = 11970032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11970033] = {
+		name = "初醒",
+		suit_name = "沉梦初醒",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 11970032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1197003,
+		id = 11970033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11990011] = {
+		name = "真天",
+		suit_name = "逆天罚鳞",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1199001,
+		id = 11990011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11990012] = {
+		name = "神咒",
+		suit_name = "逆天罚鳞",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 11990011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1199001,
+		id = 11990012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11990013] = {
+		name = "威烈",
+		suit_name = "逆天罚鳞",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 11990012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1199001,
+		id = 11990013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11990021] = {
+		name = "夜都",
+		suit_name = "夜原神乐",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1199002,
+		id = 11990021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11990022] = {
+		name = "偃月",
+		suit_name = "夜原神乐",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 11990021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1199002,
+		id = 11990022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11990023] = {
+		name = "御刃",
+		suit_name = "夜原神乐",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 11990022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1199002,
+		id = 11990023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[11990031] = {
+		name = "神世",
+		suit_name = "一念刹那生",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1199003,
+		id = 11990031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[11990032] = {
+		name = "创生",
+		suit_name = "一念刹那生",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 11990031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1199003,
+		id = 11990032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[11990033] = {
+		name = "极尽",
+		suit_name = "一念刹那生",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 11990032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1199003,
+		id = 11990033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[12480011] = {
+		name = "友情",
+		suit_name = "爱与和平",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1248001,
+		id = 12480011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[12480012] = {
+		name = "努力",
+		suit_name = "爱与和平",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 12480011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1248001,
+		id = 12480012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[12480013] = {
+		name = "胜利",
+		suit_name = "爱与和平",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 12480012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1248001,
+		id = 12480013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[12480021] = {
+		name = "顽心",
+		suit_name = "善童恶戏",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1248002,
+		id = 12480021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[12480022] = {
+		name = "妙友",
+		suit_name = "善童恶戏",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 12480021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1248002,
+		id = 12480022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[12480023] = {
+		name = "闹剧",
+		suit_name = "善童恶戏",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 12480022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1248002,
+		id = 12480023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[12480031] = {
+		name = "神妙",
+		suit_name = "神威神威",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1248003,
+		id = 12480031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[12480032] = {
+		name = "神翼",
+		suit_name = "神威神威",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 12480031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1248003,
+		id = 12480032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[12480033] = {
+		name = "神御",
+		suit_name = "神威神威",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 12480032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1248003,
+		id = 12480033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[12840011] = {
+		name = "晨曦",
+		suit_name = "拂晓的耀剑",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1284001,
+		id = 12840011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[12840012] = {
+		name = "炽光",
+		suit_name = "拂晓的耀剑",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 12840011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1284001,
+		id = 12840012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[12840013] = {
+		name = "光华",
+		suit_name = "拂晓的耀剑",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 12840012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1284001,
+		id = 12840013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[12840021] = {
+		name = "刻命",
+		suit_name = "命定的裁断",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1284002,
+		id = 12840021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[12840022] = {
+		name = "命定",
+		suit_name = "命定的裁断",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 12840021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1284002,
+		id = 12840022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[12840023] = {
+		name = "命缘",
+		suit_name = "命定的裁断",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 12840022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1284002,
+		id = 12840023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[12840031] = {
+		name = "现今",
+		suit_name = "约定的现在",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1284003,
+		id = 12840031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[12840032] = {
+		name = "一刹",
+		suit_name = "约定的现在",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 12840031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1284003,
+		id = 12840032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[12840033] = {
+		name = "约束",
+		suit_name = "约定的现在",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 12840032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1284003,
+		id = 12840033,
 		astrolabe_type = 0,
 		unlock = {
 			{
@@ -9792,35 +10080,20 @@
 		}
 	},
 	get_id_list_by_hero_astrolabe_suit_id = {
-		[1034003] = {
-			10340031,
-			10340032,
-			10340033
+		[1284003] = {
+			12840031,
+			12840032,
+			12840033
 		},
-		[1034002] = {
-			10340021,
-			10340022,
-			10340023
+		[1284002] = {
+			12840021,
+			12840022,
+			12840023
 		},
-		[1034001] = {
-			10340011,
-			10340012,
-			10340013
-		},
-		[1133003] = {
-			11330031,
-			11330032,
-			11330033
-		},
-		[1133002] = {
-			11330021,
-			11330022,
-			11330023
-		},
-		[1133001] = {
-			11330011,
-			11330012,
-			11330013
+		[1284001] = {
+			12840011,
+			12840012,
+			12840013
 		},
 		[1248003] = {
 			12480031,
@@ -9837,80 +10110,20 @@
 			12480012,
 			12480013
 		},
-		[1089003] = {
-			10890031,
-			10890032,
-			10890033
+		[1199003] = {
+			11990031,
+			11990032,
+			11990033
 		},
-		[1089002] = {
-			10890021,
-			10890022,
-			10890023
+		[1199002] = {
+			11990021,
+			11990022,
+			11990023
 		},
-		[1089001] = {
-			10890011,
-			10890012,
-			10890013
-		},
-		[1156003] = {
-			11560031,
-			11560032,
-			11560033
-		},
-		[1156002] = {
-			11560021,
-			11560022,
-			11560023
-		},
-		[1156001] = {
-			11560011,
-			11560012,
-			11560013
-		},
-		[1020003] = {
-			10200031,
-			10200032,
-			10200033
-		},
-		[1020002] = {
-			10200021,
-			10200022,
-			10200023
-		},
-		[1020001] = {
-			10200011,
-			10200012,
-			10200013
-		},
-		[1021003] = {
-			10210031,
-			10210032,
-			10210033
-		},
-		[1021002] = {
-			10210021,
-			10210022,
-			10210023
-		},
-		[1021001] = {
-			10210011,
-			10210012,
-			10210013
-		},
-		[1022003] = {
-			10220031,
-			10220032,
-			10220033
-		},
-		[1022002] = {
-			10220021,
-			10220022,
-			10220023
-		},
-		[1022001] = {
-			10220011,
-			10220012,
-			10220013
+		[1199001] = {
+			11990011,
+			11990012,
+			11990013
 		},
 		[1197003] = {
 			11970031,
@@ -9927,50 +10140,50 @@
 			11970012,
 			11970013
 		},
-		[1284003] = {
-			12840031,
-			12840032,
-			12840033
+		[1184003] = {
+			11840031,
+			11840032,
+			11840033
 		},
-		[1284002] = {
-			12840021,
-			12840022,
-			12840023
+		[1184002] = {
+			11840021,
+			11840022,
+			11840023
 		},
-		[1284001] = {
-			12840011,
-			12840012,
-			12840013
+		[1184001] = {
+			11840011,
+			11840012,
+			11840013
 		},
-		[1095003] = {
-			10950031,
-			10950032,
-			10950033
+		[1158003] = {
+			11580031,
+			11580032,
+			11580033
 		},
-		[1095002] = {
-			10950021,
-			10950022,
-			10950023
+		[1158002] = {
+			11580021,
+			11580022,
+			11580023
 		},
-		[1095001] = {
-			10950011,
-			10950012,
-			10950013
+		[1158001] = {
+			11580011,
+			11580012,
+			11580013
 		},
-		[1015003] = {
-			10150031,
-			10150032,
-			10150033
+		[1156003] = {
+			11560031,
+			11560032,
+			11560033
 		},
-		[1015002] = {
-			10150021,
-			10150022,
-			10150023
+		[1156002] = {
+			11560021,
+			11560022,
+			11560023
 		},
-		[1015001] = {
-			10150011,
-			10150012,
-			10150013
+		[1156001] = {
+			11560011,
+			11560012,
+			11560013
 		},
 		[1150003] = {
 			11500031,
@@ -9987,80 +10200,290 @@
 			11500012,
 			11500013
 		},
-		[1061003] = {
-			10610031,
-			10610032,
-			10610033
+		[1148003] = {
+			11480031,
+			11480032,
+			11480033
 		},
-		[1061002] = {
-			10610021,
-			10610022,
-			10610023
+		[1148002] = {
+			11480021,
+			11480022,
+			11480023
 		},
-		[1061001] = {
-			10610011,
-			10610012,
-			10610013
+		[1148001] = {
+			11480011,
+			11480012,
+			11480013
 		},
-		[1060003] = {
-			10600031,
-			10600032,
-			10600033
+		[1139003] = {
+			11390031,
+			11390032,
+			11390033
 		},
-		[1060002] = {
-			10600021,
-			10600022,
-			10600023
+		[1139002] = {
+			11390021,
+			11390022,
+			11390023
 		},
-		[1060001] = {
-			10600011,
-			10600012,
-			10600013
+		[1139001] = {
+			11390011,
+			11390012,
+			11390013
 		},
-		[1055003] = {
-			10550031,
-			10550032,
-			10550033
+		[1138003] = {
+			11380031,
+			11380032,
+			11380033
 		},
-		[1055002] = {
-			10550021,
-			10550022,
-			10550023
+		[1138002] = {
+			11380021,
+			11380022,
+			11380023
 		},
-		[1055001] = {
-			10550011,
-			10550012,
-			10550013
+		[1138001] = {
+			11380011,
+			11380012,
+			11380013
 		},
-		[1049003] = {
-			10490031,
-			10490032,
-			10490033
+		[1133003] = {
+			11330031,
+			11330032,
+			11330033
 		},
-		[1049002] = {
-			10490021,
-			10490022,
-			10490023
+		[1133002] = {
+			11330021,
+			11330022,
+			11330023
 		},
-		[1049001] = {
-			10490011,
-			10490012,
-			10490013
+		[1133001] = {
+			11330011,
+			11330012,
+			11330013
 		},
-		[1158003] = {
-			11580031,
-			11580032,
-			11580033
+		[1132003] = {
+			11320031,
+			11320032,
+			11320033
 		},
-		[1158002] = {
-			11580021,
-			11580022,
-			11580023
+		[1132002] = {
+			11320021,
+			11320022,
+			11320023
 		},
-		[1158001] = {
-			11580011,
-			11580012,
-			11580013
+		[1132001] = {
+			11320011,
+			11320012,
+			11320013
+		},
+		[1127003] = {
+			11270031,
+			11270032,
+			11270033
+		},
+		[1127002] = {
+			11270021,
+			11270022,
+			11270023
+		},
+		[1127001] = {
+			11270011,
+			11270012,
+			11270013
+		},
+		[1119003] = {
+			11190031,
+			11190032,
+			11190033
+		},
+		[1119002] = {
+			11190021,
+			11190022,
+			11190023
+		},
+		[1119001] = {
+			11190011,
+			11190012,
+			11190013
+		},
+		[1111003] = {
+			11110031,
+			11110032,
+			11110033
+		},
+		[1111002] = {
+			11110021,
+			11110022,
+			11110023
+		},
+		[1111001] = {
+			11110011,
+			11110012,
+			11110013
+		},
+		[1099003] = {
+			10990031,
+			10990032,
+			10990033
+		},
+		[1099002] = {
+			10990021,
+			10990022,
+			10990023
+		},
+		[1099001] = {
+			10990011,
+			10990012,
+			10990013
+		},
+		[1097003] = {
+			10970031,
+			10970032,
+			10970033
+		},
+		[1097002] = {
+			10970021,
+			10970022,
+			10970023
+		},
+		[1097001] = {
+			10970011,
+			10970012,
+			10970013
+		},
+		[1096003] = {
+			10960031,
+			10960032,
+			10960033
+		},
+		[1096002] = {
+			10960021,
+			10960022,
+			10960023
+		},
+		[1096001] = {
+			10960011,
+			10960012,
+			10960013
+		},
+		[1095003] = {
+			10950031,
+			10950032,
+			10950033
+		},
+		[1095002] = {
+			10950021,
+			10950022,
+			10950023
+		},
+		[1095001] = {
+			10950011,
+			10950012,
+			10950013
+		},
+		[1094003] = {
+			10940031,
+			10940032,
+			10940033
+		},
+		[1094002] = {
+			10940021,
+			10940022,
+			10940023
+		},
+		[1094001] = {
+			10940011,
+			10940012,
+			10940013
+		},
+		[1093003] = {
+			10930031,
+			10930032,
+			10930033
+		},
+		[1093002] = {
+			10930021,
+			10930022,
+			10930023
+		},
+		[1093001] = {
+			10930011,
+			10930012,
+			10930013
+		},
+		[1089003] = {
+			10890031,
+			10890032,
+			10890033
+		},
+		[1089002] = {
+			10890021,
+			10890022,
+			10890023
+		},
+		[1089001] = {
+			10890011,
+			10890012,
+			10890013
+		},
+		[1085003] = {
+			10850031,
+			10850032,
+			10850033
+		},
+		[1085002] = {
+			10850021,
+			10850022,
+			10850023
+		},
+		[1085001] = {
+			10850011,
+			10850012,
+			10850013
+		},
+		[1084003] = {
+			10840031,
+			10840032,
+			10840033
+		},
+		[1084002] = {
+			10840021,
+			10840022,
+			10840023
+		},
+		[1084001] = {
+			10840011,
+			10840012,
+			10840013
+		},
+		[1081003] = {
+			10810031,
+			10810032,
+			10810033
+		},
+		[1081002] = {
+			10810021,
+			10810022,
+			10810023
+		},
+		[1081001] = {
+			10810011,
+			10810012,
+			10810013
+		},
+		[1080003] = {
+			10800031,
+			10800032,
+			10800033
+		},
+		[1080002] = {
+			10800021,
+			10800022,
+			10800023
+		},
+		[1080001] = {
+			10800011,
+			10800012,
+			10800013
 		},
 		[1076003] = {
 			10760031,
@@ -10107,50 +10530,20 @@
 			10740012,
 			10740013
 		},
-		[1016003] = {
-			10160031,
-			10160032,
-			10160033
+		[1073003] = {
+			10730031,
+			10730032,
+			10730033
 		},
-		[1016002] = {
-			10160021,
-			10160022,
-			10160023
+		[1073002] = {
+			10730021,
+			10730022,
+			10730023
 		},
-		[1016001] = {
-			10160011,
-			10160012,
-			10160013
-		},
-		[1081003] = {
-			10810031,
-			10810032,
-			10810033
-		},
-		[1081002] = {
-			10810021,
-			10810022,
-			10810023
-		},
-		[1081001] = {
-			10810011,
-			10810012,
-			10810013
-		},
-		[1070003] = {
-			10700031,
-			10700032,
-			10700033
-		},
-		[1070002] = {
-			10700021,
-			10700022,
-			10700023
-		},
-		[1070001] = {
-			10700011,
-			10700012,
-			10700013
+		[1073001] = {
+			10730011,
+			10730012,
+			10730013
 		},
 		[1072003] = {
 			10720031,
@@ -10182,110 +10575,20 @@
 			10710012,
 			10710013
 		},
-		[1132003] = {
-			11320031,
-			11320032,
-			11320033
+		[1070003] = {
+			10700031,
+			10700032,
+			10700033
 		},
-		[1132002] = {
-			11320021,
-			11320022,
-			11320023
+		[1070002] = {
+			10700021,
+			10700022,
+			10700023
 		},
-		[1132001] = {
-			11320011,
-			11320012,
-			11320013
-		},
-		[1127003] = {
-			11270031,
-			11270032,
-			11270033
-		},
-		[1127002] = {
-			11270021,
-			11270022,
-			11270023
-		},
-		[1127001] = {
-			11270011,
-			11270012,
-			11270013
-		},
-		[1017003] = {
-			10170031,
-			10170032,
-			10170033
-		},
-		[1017002] = {
-			10170021,
-			10170022,
-			10170023
-		},
-		[1017001] = {
-			10170011,
-			10170012,
-			10170013
-		},
-		[1052003] = {
-			10520031,
-			10520032,
-			10520033
-		},
-		[1052002] = {
-			10520021,
-			10520022,
-			10520023
-		},
-		[1052001] = {
-			10520011,
-			10520012,
-			10520013
-		},
-		[1028003] = {
-			10280031,
-			10280032,
-			10280033
-		},
-		[1028002] = {
-			10280021,
-			10280022,
-			10280023
-		},
-		[1028001] = {
-			10280011,
-			10280012,
-			10280013
-		},
-		[1024003] = {
-			10240031,
-			10240032,
-			10240033
-		},
-		[1024002] = {
-			10240021,
-			10240022,
-			10240023
-		},
-		[1024001] = {
-			10240011,
-			10240012,
-			10240013
-		},
-		[1067003] = {
-			10670031,
-			10670032,
-			10670033
-		},
-		[1067002] = {
-			10670021,
-			10670022,
-			10670023
-		},
-		[1067001] = {
-			10670011,
-			10670012,
-			10670013
+		[1070001] = {
+			10700011,
+			10700012,
+			10700013
 		},
 		[1068003] = {
 			10680031,
@@ -10302,215 +10605,65 @@
 			10680012,
 			10680013
 		},
-		[1033003] = {
-			10330031,
-			10330032,
-			10330033
+		[1067003] = {
+			10670031,
+			10670032,
+			10670033
 		},
-		[1033002] = {
-			10330021,
-			10330022,
-			10330023
+		[1067002] = {
+			10670021,
+			10670022,
+			10670023
 		},
-		[1033001] = {
-			10330011,
-			10330012,
-			10330013
+		[1067001] = {
+			10670011,
+			10670012,
+			10670013
 		},
-		[1119003] = {
-			11190031,
-			11190032,
-			11190033
+		[1066003] = {
+			10660031,
+			10660032,
+			10660033
 		},
-		[1119002] = {
-			11190021,
-			11190022,
-			11190023
+		[1066002] = {
+			10660021,
+			10660022,
+			10660023
 		},
-		[1119001] = {
-			11190011,
-			11190012,
-			11190013
+		[1066001] = {
+			10660011,
+			10660012,
+			10660013
 		},
-		[1042003] = {
-			10420031,
-			10420032,
-			10420033
+		[1061003] = {
+			10610031,
+			10610032,
+			10610033
 		},
-		[1042002] = {
-			10420021,
-			10420022,
-			10420023
+		[1061002] = {
+			10610021,
+			10610022,
+			10610023
 		},
-		[1042001] = {
-			10420011,
-			10420012,
-			10420013
+		[1061001] = {
+			10610011,
+			10610012,
+			10610013
 		},
-		[1041003] = {
-			10410031,
-			10410032,
-			10410033
+		[1060003] = {
+			10600031,
+			10600032,
+			10600033
 		},
-		[1041002] = {
-			10410021,
-			10410022,
-			10410023
+		[1060002] = {
+			10600021,
+			10600022,
+			10600023
 		},
-		[1041001] = {
-			10410011,
-			10410012,
-			10410013
-		},
-		[1035003] = {
-			10350031,
-			10350032,
-			10350033
-		},
-		[1035002] = {
-			10350021,
-			10350022,
-			10350023
-		},
-		[1035001] = {
-			10350011,
-			10350012,
-			10350013
-		},
-		[1032003] = {
-			10320031,
-			10320032,
-			10320033
-		},
-		[1032002] = {
-			10320021,
-			10320022,
-			10320023
-		},
-		[1032001] = {
-			10320011,
-			10320012,
-			10320013
-		},
-		[1111003] = {
-			11110031,
-			11110032,
-			11110033
-		},
-		[1111002] = {
-			11110021,
-			11110022,
-			11110023
-		},
-		[1111001] = {
-			11110011,
-			11110012,
-			11110013
-		},
-		[1056003] = {
-			10560031,
-			10560032,
-			10560033
-		},
-		[1056002] = {
-			10560021,
-			10560022,
-			10560023
-		},
-		[1056001] = {
-			10560011,
-			10560012,
-			10560013
-		},
-		[1013003] = {
-			10130031,
-			10130032,
-			10130033
-		},
-		[1013002] = {
-			10130021,
-			10130022,
-			10130023
-		},
-		[1013001] = {
-			10130011,
-			10130012,
-			10130013
-		},
-		[1138003] = {
-			11380031,
-			11380032,
-			11380033
-		},
-		[1138002] = {
-			11380021,
-			11380022,
-			11380023
-		},
-		[1138001] = {
-			11380011,
-			11380012,
-			11380013
-		},
-		[1139003] = {
-			11390031,
-			11390032,
-			11390033
-		},
-		[1139002] = {
-			11390021,
-			11390022,
-			11390023
-		},
-		[1139001] = {
-			11390011,
-			11390012,
-			11390013
-		},
-		[1097003] = {
-			10970031,
-			10970032,
-			10970033
-		},
-		[1097002] = {
-			10970021,
-			10970022,
-			10970023
-		},
-		[1097001] = {
-			10970011,
-			10970012,
-			10970013
-		},
-		[1026003] = {
-			10260031,
-			10260032,
-			10260033
-		},
-		[1026002] = {
-			10260021,
-			10260022,
-			10260023
-		},
-		[1026001] = {
-			10260011,
-			10260012,
-			10260013
-		},
-		[1096003] = {
-			10960031,
-			10960032,
-			10960033
-		},
-		[1096002] = {
-			10960021,
-			10960022,
-			10960023
-		},
-		[1096001] = {
-			10960011,
-			10960012,
-			10960013
+		[1060001] = {
+			10600011,
+			10600012,
+			10600013
 		},
 		[1059003] = {
 			10590031,
@@ -10542,95 +10695,50 @@
 			10580012,
 			10580013
 		},
-		[1184003] = {
-			11840031,
-			11840032,
-			11840033
+		[1056003] = {
+			10560031,
+			10560032,
+			10560033
 		},
-		[1184002] = {
-			11840021,
-			11840022,
-			11840023
+		[1056002] = {
+			10560021,
+			10560022,
+			10560023
 		},
-		[1184001] = {
-			11840011,
-			11840012,
-			11840013
+		[1056001] = {
+			10560011,
+			10560012,
+			10560013
 		},
-		[1199003] = {
-			11990031,
-			11990032,
-			11990033
+		[1055003] = {
+			10550031,
+			10550032,
+			10550033
 		},
-		[1199002] = {
-			11990021,
-			11990022,
-			11990023
+		[1055002] = {
+			10550021,
+			10550022,
+			10550023
 		},
-		[1199001] = {
-			11990011,
-			11990012,
-			11990013
+		[1055001] = {
+			10550011,
+			10550012,
+			10550013
 		},
-		[1011003] = {
-			10110031,
-			10110032,
-			10110033
+		[1052003] = {
+			10520031,
+			10520032,
+			10520033
 		},
-		[1011002] = {
-			10110021,
-			10110022,
-			10110023
+		[1052002] = {
+			10520021,
+			10520022,
+			10520023
 		},
-		[1011001] = {
-			10110011,
-			10110012,
-			10110013
-		},
-		[1037003] = {
-			10370031,
-			10370032,
-			10370033
-		},
-		[1037002] = {
-			10370021,
-			10370022,
-			10370023
-		},
-		[1037001] = {
-			10370011,
-			10370012,
-			10370013
-		},
-		[1094003] = {
-			10940031,
-			10940032,
-			10940033
-		},
-		[1094002] = {
-			10940021,
-			10940022,
-			10940023
-		},
-		[1094001] = {
-			10940011,
-			10940012,
-			10940013
-		},
-		[1148003] = {
-			11480031,
-			11480032,
-			11480033
-		},
-		[1148002] = {
-			11480021,
-			11480022,
-			11480023
-		},
-		[1148001] = {
-			11480011,
-			11480012,
-			11480013
+		[1052001] = {
+			10520011,
+			10520012,
+			10520013
 		},
 		[1050003] = {
 			10500031,
@@ -10647,125 +10755,20 @@
 			10500012,
 			10500013
 		},
-		[1027003] = {
-			10270031,
-			10270032,
-			10270033
+		[1049003] = {
+			10490031,
+			10490032,
+			10490033
 		},
-		[1027002] = {
-			10270021,
-			10270022,
-			10270023
+		[1049002] = {
+			10490021,
+			10490022,
+			10490023
 		},
-		[1027001] = {
-			10270011,
-			10270012,
-			10270013
-		},
-		[1080003] = {
-			10800031,
-			10800032,
-			10800033
-		},
-		[1080002] = {
-			10800021,
-			10800022,
-			10800023
-		},
-		[1080001] = {
-			10800011,
-			10800012,
-			10800013
-		},
-		[1019003] = {
-			10190031,
-			10190032,
-			10190033
-		},
-		[1019002] = {
-			10190021,
-			10190022,
-			10190023
-		},
-		[1019001] = {
-			10190011,
-			10190012,
-			10190013
-		},
-		[1093003] = {
-			10930031,
-			10930032,
-			10930033
-		},
-		[1093002] = {
-			10930021,
-			10930022,
-			10930023
-		},
-		[1093001] = {
-			10930011,
-			10930012,
-			10930013
-		},
-		[1084003] = {
-			10840031,
-			10840032,
-			10840033
-		},
-		[1084002] = {
-			10840021,
-			10840022,
-			10840023
-		},
-		[1084001] = {
-			10840011,
-			10840012,
-			10840013
-		},
-		[1099003] = {
-			10990031,
-			10990032,
-			10990033
-		},
-		[1099002] = {
-			10990021,
-			10990022,
-			10990023
-		},
-		[1099001] = {
-			10990011,
-			10990012,
-			10990013
-		},
-		[1038003] = {
-			10380031,
-			10380032,
-			10380033
-		},
-		[1038002] = {
-			10380021,
-			10380022,
-			10380023
-		},
-		[1038001] = {
-			10380011,
-			10380012,
-			10380013
-		},
-		[1066003] = {
-			10660031,
-			10660032,
-			10660033
-		},
-		[1066002] = {
-			10660021,
-			10660022,
-			10660023
-		},
-		[1066001] = {
-			10660011,
-			10660012,
-			10660013
+		[1049001] = {
+			10490011,
+			10490012,
+			10490013
 		},
 		[1048003] = {
 			10480031,
@@ -10782,6 +10785,36 @@
 			10480012,
 			10480013
 		},
+		[1042003] = {
+			10420031,
+			10420032,
+			10420033
+		},
+		[1042002] = {
+			10420021,
+			10420022,
+			10420023
+		},
+		[1042001] = {
+			10420011,
+			10420012,
+			10420013
+		},
+		[1041003] = {
+			10410031,
+			10410032,
+			10410033
+		},
+		[1041002] = {
+			10410021,
+			10410022,
+			10410023
+		},
+		[1041001] = {
+			10410011,
+			10410012,
+			10410013
+		},
 		[1039003] = {
 			10390031,
 			10390032,
@@ -10797,6 +10830,276 @@
 			10390012,
 			10390013
 		},
+		[1038003] = {
+			10380031,
+			10380032,
+			10380033
+		},
+		[1038002] = {
+			10380021,
+			10380022,
+			10380023
+		},
+		[1038001] = {
+			10380011,
+			10380012,
+			10380013
+		},
+		[1037003] = {
+			10370031,
+			10370032,
+			10370033
+		},
+		[1037002] = {
+			10370021,
+			10370022,
+			10370023
+		},
+		[1037001] = {
+			10370011,
+			10370012,
+			10370013
+		},
+		[1035003] = {
+			10350031,
+			10350032,
+			10350033
+		},
+		[1035002] = {
+			10350021,
+			10350022,
+			10350023
+		},
+		[1035001] = {
+			10350011,
+			10350012,
+			10350013
+		},
+		[1034003] = {
+			10340031,
+			10340032,
+			10340033
+		},
+		[1034002] = {
+			10340021,
+			10340022,
+			10340023
+		},
+		[1034001] = {
+			10340011,
+			10340012,
+			10340013
+		},
+		[1033003] = {
+			10330031,
+			10330032,
+			10330033
+		},
+		[1033002] = {
+			10330021,
+			10330022,
+			10330023
+		},
+		[1033001] = {
+			10330011,
+			10330012,
+			10330013
+		},
+		[1032003] = {
+			10320031,
+			10320032,
+			10320033
+		},
+		[1032002] = {
+			10320021,
+			10320022,
+			10320023
+		},
+		[1032001] = {
+			10320011,
+			10320012,
+			10320013
+		},
+		[1028003] = {
+			10280031,
+			10280032,
+			10280033
+		},
+		[1028002] = {
+			10280021,
+			10280022,
+			10280023
+		},
+		[1028001] = {
+			10280011,
+			10280012,
+			10280013
+		},
+		[1027003] = {
+			10270031,
+			10270032,
+			10270033
+		},
+		[1027002] = {
+			10270021,
+			10270022,
+			10270023
+		},
+		[1027001] = {
+			10270011,
+			10270012,
+			10270013
+		},
+		[1026003] = {
+			10260031,
+			10260032,
+			10260033
+		},
+		[1026002] = {
+			10260021,
+			10260022,
+			10260023
+		},
+		[1026001] = {
+			10260011,
+			10260012,
+			10260013
+		},
+		[1024003] = {
+			10240031,
+			10240032,
+			10240033
+		},
+		[1024002] = {
+			10240021,
+			10240022,
+			10240023
+		},
+		[1024001] = {
+			10240011,
+			10240012,
+			10240013
+		},
+		[1022003] = {
+			10220031,
+			10220032,
+			10220033
+		},
+		[1022002] = {
+			10220021,
+			10220022,
+			10220023
+		},
+		[1022001] = {
+			10220011,
+			10220012,
+			10220013
+		},
+		[1021003] = {
+			10210031,
+			10210032,
+			10210033
+		},
+		[1021002] = {
+			10210021,
+			10210022,
+			10210023
+		},
+		[1021001] = {
+			10210011,
+			10210012,
+			10210013
+		},
+		[1020003] = {
+			10200031,
+			10200032,
+			10200033
+		},
+		[1020002] = {
+			10200021,
+			10200022,
+			10200023
+		},
+		[1020001] = {
+			10200011,
+			10200012,
+			10200013
+		},
+		[1019003] = {
+			10190031,
+			10190032,
+			10190033
+		},
+		[1019002] = {
+			10190021,
+			10190022,
+			10190023
+		},
+		[1019001] = {
+			10190011,
+			10190012,
+			10190013
+		},
+		[1017003] = {
+			10170031,
+			10170032,
+			10170033
+		},
+		[1017002] = {
+			10170021,
+			10170022,
+			10170023
+		},
+		[1017001] = {
+			10170011,
+			10170012,
+			10170013
+		},
+		[1016003] = {
+			10160031,
+			10160032,
+			10160033
+		},
+		[1016002] = {
+			10160021,
+			10160022,
+			10160023
+		},
+		[1016001] = {
+			10160011,
+			10160012,
+			10160013
+		},
+		[1015003] = {
+			10150031,
+			10150032,
+			10150033
+		},
+		[1015002] = {
+			10150021,
+			10150022,
+			10150023
+		},
+		[1015001] = {
+			10150011,
+			10150012,
+			10150013
+		},
+		[1013003] = {
+			10130031,
+			10130032,
+			10130033
+		},
+		[1013002] = {
+			10130021,
+			10130022,
+			10130023
+		},
+		[1013001] = {
+			10130011,
+			10130012,
+			10130013
+		},
 		[1012003] = {
 			10120031,
 			10120032,
@@ -10811,44 +11114,41 @@
 			10120011,
 			10120012,
 			10120013
+		},
+		[1011003] = {
+			10110031,
+			10110032,
+			10110033
+		},
+		[1011002] = {
+			10110021,
+			10110022,
+			10110023
+		},
+		[1011001] = {
+			10110011,
+			10110012,
+			10110013
 		}
 	},
 	get_id_list_by_pre_astrolabe_id = {
-		[10340032] = {
-			10340033
+		[12840032] = {
+			12840033
 		},
-		[10340031] = {
-			10340032
+		[12840031] = {
+			12840032
 		},
-		[10340022] = {
-			10340023
+		[12840022] = {
+			12840023
 		},
-		[10340021] = {
-			10340022
+		[12840021] = {
+			12840022
 		},
-		[10340012] = {
-			10340013
+		[12840012] = {
+			12840013
 		},
-		[10340011] = {
-			10340012
-		},
-		[11330032] = {
-			11330033
-		},
-		[11330031] = {
-			11330032
-		},
-		[11330022] = {
-			11330023
-		},
-		[11330021] = {
-			11330022
-		},
-		[11330012] = {
-			11330013
-		},
-		[11330011] = {
-			11330012
+		[12840011] = {
+			12840012
 		},
 		[12480032] = {
 			12480033
@@ -10868,95 +11168,23 @@
 		[12480011] = {
 			12480012
 		},
-		[10890032] = {
-			10890033
+		[11990032] = {
+			11990033
 		},
-		[10890031] = {
-			10890032
+		[11990031] = {
+			11990032
 		},
-		[10890022] = {
-			10890023
+		[11990022] = {
+			11990023
 		},
-		[10890021] = {
-			10890022
+		[11990021] = {
+			11990022
 		},
-		[10890012] = {
-			10890013
+		[11990012] = {
+			11990013
 		},
-		[10890011] = {
-			10890012
-		},
-		[11560032] = {
-			11560033
-		},
-		[11560031] = {
-			11560032
-		},
-		[11560022] = {
-			11560023
-		},
-		[11560021] = {
-			11560022
-		},
-		[11560012] = {
-			11560013
-		},
-		[11560011] = {
-			11560012
-		},
-		[10200032] = {
-			10200033
-		},
-		[10200031] = {
-			10200032
-		},
-		[10200022] = {
-			10200023
-		},
-		[10200021] = {
-			10200022
-		},
-		[10200012] = {
-			10200013
-		},
-		[10200011] = {
-			10200012
-		},
-		[10210032] = {
-			10210033
-		},
-		[10210031] = {
-			10210032
-		},
-		[10210022] = {
-			10210023
-		},
-		[10210021] = {
-			10210022
-		},
-		[10210012] = {
-			10210013
-		},
-		[10210011] = {
-			10210012
-		},
-		[10220032] = {
-			10220033
-		},
-		[10220031] = {
-			10220032
-		},
-		[10220022] = {
-			10220023
-		},
-		[10220021] = {
-			10220022
-		},
-		[10220012] = {
-			10220013
-		},
-		[10220011] = {
-			10220012
+		[11990011] = {
+			11990012
 		},
 		[11970032] = {
 			11970033
@@ -10976,59 +11204,59 @@
 		[11970011] = {
 			11970012
 		},
-		[12840032] = {
-			12840033
+		[11840032] = {
+			11840033
 		},
-		[12840031] = {
-			12840032
+		[11840031] = {
+			11840032
 		},
-		[12840022] = {
-			12840023
+		[11840022] = {
+			11840023
 		},
-		[12840021] = {
-			12840022
+		[11840021] = {
+			11840022
 		},
-		[12840012] = {
-			12840013
+		[11840012] = {
+			11840013
 		},
-		[12840011] = {
-			12840012
+		[11840011] = {
+			11840012
 		},
-		[10950032] = {
-			10950033
+		[11580032] = {
+			11580033
 		},
-		[10950031] = {
-			10950032
+		[11580031] = {
+			11580032
 		},
-		[10950022] = {
-			10950023
+		[11580022] = {
+			11580023
 		},
-		[10950021] = {
-			10950022
+		[11580021] = {
+			11580022
 		},
-		[10950012] = {
-			10950013
+		[11580012] = {
+			11580013
 		},
-		[10950011] = {
-			10950012
+		[11580011] = {
+			11580012
 		},
-		[10150032] = {
-			10150033
+		[11560032] = {
+			11560033
 		},
-		[10150031] = {
-			10150032
+		[11560031] = {
+			11560032
 		},
-		[10150022] = {
-			10150023
+		[11560022] = {
+			11560023
 		},
-		[10150021] = {
-			10150022
+		[11560021] = {
+			11560022
 		},
-		[10150012] = {
-			10150013
+		[11560012] = {
+			11560013
 		},
-		[10150011] = {
-			10150012
+		[11560011] = {
+			11560012
 		},
 		[11500032] = {
 			11500033
@@ -11048,95 +11276,347 @@
 		[11500011] = {
 			11500012
 		},
-		[10610032] = {
-			10610033
+		[11480032] = {
+			11480033
 		},
-		[10610031] = {
-			10610032
+		[11480031] = {
+			11480032
 		},
-		[10610022] = {
-			10610023
+		[11480022] = {
+			11480023
 		},
-		[10610021] = {
-			10610022
+		[11480021] = {
+			11480022
 		},
-		[10610012] = {
-			10610013
+		[11480012] = {
+			11480013
 		},
-		[10610011] = {
-			10610012
+		[11480011] = {
+			11480012
 		},
-		[10600032] = {
-			10600033
+		[11390032] = {
+			11390033
 		},
-		[10600031] = {
-			10600032
+		[11390031] = {
+			11390032
 		},
-		[10600022] = {
-			10600023
+		[11390022] = {
+			11390023
 		},
-		[10600021] = {
-			10600022
+		[11390021] = {
+			11390022
 		},
-		[10600012] = {
-			10600013
+		[11390012] = {
+			11390013
 		},
-		[10600011] = {
-			10600012
+		[11390011] = {
+			11390012
 		},
-		[10550032] = {
-			10550033
+		[11380032] = {
+			11380033
 		},
-		[10550031] = {
-			10550032
+		[11380031] = {
+			11380032
 		},
-		[10550022] = {
-			10550023
+		[11380022] = {
+			11380023
 		},
-		[10550021] = {
-			10550022
+		[11380021] = {
+			11380022
 		},
-		[10550012] = {
-			10550013
+		[11380012] = {
+			11380013
 		},
-		[10550011] = {
-			10550012
+		[11380011] = {
+			11380012
 		},
-		[10490032] = {
-			10490033
+		[11330032] = {
+			11330033
 		},
-		[10490031] = {
-			10490032
+		[11330031] = {
+			11330032
 		},
-		[10490022] = {
-			10490023
+		[11330022] = {
+			11330023
 		},
-		[10490021] = {
-			10490022
+		[11330021] = {
+			11330022
 		},
-		[10490012] = {
-			10490013
+		[11330012] = {
+			11330013
 		},
-		[10490011] = {
-			10490012
+		[11330011] = {
+			11330012
 		},
-		[11580032] = {
-			11580033
+		[11320032] = {
+			11320033
 		},
-		[11580031] = {
-			11580032
+		[11320031] = {
+			11320032
 		},
-		[11580022] = {
-			11580023
+		[11320022] = {
+			11320023
 		},
-		[11580021] = {
-			11580022
+		[11320021] = {
+			11320022
 		},
-		[11580012] = {
-			11580013
+		[11320012] = {
+			11320013
 		},
-		[11580011] = {
-			11580012
+		[11320011] = {
+			11320012
+		},
+		[11270032] = {
+			11270033
+		},
+		[11270031] = {
+			11270032
+		},
+		[11270022] = {
+			11270023
+		},
+		[11270021] = {
+			11270022
+		},
+		[11270012] = {
+			11270013
+		},
+		[11270011] = {
+			11270012
+		},
+		[11190032] = {
+			11190033
+		},
+		[11190031] = {
+			11190032
+		},
+		[11190022] = {
+			11190023
+		},
+		[11190021] = {
+			11190022
+		},
+		[11190012] = {
+			11190013
+		},
+		[11190011] = {
+			11190012
+		},
+		[11110032] = {
+			11110033
+		},
+		[11110031] = {
+			11110032
+		},
+		[11110022] = {
+			11110023
+		},
+		[11110021] = {
+			11110022
+		},
+		[11110012] = {
+			11110013
+		},
+		[11110011] = {
+			11110012
+		},
+		[10990032] = {
+			10990033
+		},
+		[10990031] = {
+			10990032
+		},
+		[10990022] = {
+			10990023
+		},
+		[10990021] = {
+			10990022
+		},
+		[10990012] = {
+			10990013
+		},
+		[10990011] = {
+			10990012
+		},
+		[10970032] = {
+			10970033
+		},
+		[10970031] = {
+			10970032
+		},
+		[10970022] = {
+			10970023
+		},
+		[10970021] = {
+			10970022
+		},
+		[10970012] = {
+			10970013
+		},
+		[10970011] = {
+			10970012
+		},
+		[10960032] = {
+			10960033
+		},
+		[10960031] = {
+			10960032
+		},
+		[10960022] = {
+			10960023
+		},
+		[10960021] = {
+			10960022
+		},
+		[10960012] = {
+			10960013
+		},
+		[10960011] = {
+			10960012
+		},
+		[10950032] = {
+			10950033
+		},
+		[10950031] = {
+			10950032
+		},
+		[10950022] = {
+			10950023
+		},
+		[10950021] = {
+			10950022
+		},
+		[10950012] = {
+			10950013
+		},
+		[10950011] = {
+			10950012
+		},
+		[10940032] = {
+			10940033
+		},
+		[10940031] = {
+			10940032
+		},
+		[10940022] = {
+			10940023
+		},
+		[10940021] = {
+			10940022
+		},
+		[10940012] = {
+			10940013
+		},
+		[10940011] = {
+			10940012
+		},
+		[10930032] = {
+			10930033
+		},
+		[10930031] = {
+			10930032
+		},
+		[10930022] = {
+			10930023
+		},
+		[10930021] = {
+			10930022
+		},
+		[10930012] = {
+			10930013
+		},
+		[10930011] = {
+			10930012
+		},
+		[10890032] = {
+			10890033
+		},
+		[10890031] = {
+			10890032
+		},
+		[10890022] = {
+			10890023
+		},
+		[10890021] = {
+			10890022
+		},
+		[10890012] = {
+			10890013
+		},
+		[10890011] = {
+			10890012
+		},
+		[10850032] = {
+			10850033
+		},
+		[10850031] = {
+			10850032
+		},
+		[10850022] = {
+			10850023
+		},
+		[10850021] = {
+			10850022
+		},
+		[10850012] = {
+			10850013
+		},
+		[10850011] = {
+			10850012
+		},
+		[10840032] = {
+			10840033
+		},
+		[10840031] = {
+			10840032
+		},
+		[10840022] = {
+			10840023
+		},
+		[10840021] = {
+			10840022
+		},
+		[10840012] = {
+			10840013
+		},
+		[10840011] = {
+			10840012
+		},
+		[10810032] = {
+			10810033
+		},
+		[10810031] = {
+			10810032
+		},
+		[10810022] = {
+			10810023
+		},
+		[10810021] = {
+			10810022
+		},
+		[10810012] = {
+			10810013
+		},
+		[10810011] = {
+			10810012
+		},
+		[10800032] = {
+			10800033
+		},
+		[10800031] = {
+			10800032
+		},
+		[10800022] = {
+			10800023
+		},
+		[10800021] = {
+			10800022
+		},
+		[10800012] = {
+			10800013
+		},
+		[10800011] = {
+			10800012
 		},
 		[10760032] = {
 			10760033
@@ -11192,59 +11672,23 @@
 		[10740011] = {
 			10740012
 		},
-		[10160032] = {
-			10160033
+		[10730032] = {
+			10730033
 		},
-		[10160031] = {
-			10160032
+		[10730031] = {
+			10730032
 		},
-		[10160022] = {
-			10160023
+		[10730022] = {
+			10730023
 		},
-		[10160021] = {
-			10160022
+		[10730021] = {
+			10730022
 		},
-		[10160012] = {
-			10160013
+		[10730012] = {
+			10730013
 		},
-		[10160011] = {
-			10160012
-		},
-		[10810032] = {
-			10810033
-		},
-		[10810031] = {
-			10810032
-		},
-		[10810022] = {
-			10810023
-		},
-		[10810021] = {
-			10810022
-		},
-		[10810012] = {
-			10810013
-		},
-		[10810011] = {
-			10810012
-		},
-		[10700032] = {
-			10700033
-		},
-		[10700031] = {
-			10700032
-		},
-		[10700022] = {
-			10700023
-		},
-		[10700021] = {
-			10700022
-		},
-		[10700012] = {
-			10700013
-		},
-		[10700011] = {
-			10700012
+		[10730011] = {
+			10730012
 		},
 		[10720032] = {
 			10720033
@@ -11282,131 +11726,23 @@
 		[10710011] = {
 			10710012
 		},
-		[11320032] = {
-			11320033
+		[10700032] = {
+			10700033
 		},
-		[11320031] = {
-			11320032
+		[10700031] = {
+			10700032
 		},
-		[11320022] = {
-			11320023
+		[10700022] = {
+			10700023
 		},
-		[11320021] = {
-			11320022
+		[10700021] = {
+			10700022
 		},
-		[11320012] = {
-			11320013
+		[10700012] = {
+			10700013
 		},
-		[11320011] = {
-			11320012
-		},
-		[11270032] = {
-			11270033
-		},
-		[11270031] = {
-			11270032
-		},
-		[11270022] = {
-			11270023
-		},
-		[11270021] = {
-			11270022
-		},
-		[11270012] = {
-			11270013
-		},
-		[11270011] = {
-			11270012
-		},
-		[10170032] = {
-			10170033
-		},
-		[10170031] = {
-			10170032
-		},
-		[10170022] = {
-			10170023
-		},
-		[10170021] = {
-			10170022
-		},
-		[10170012] = {
-			10170013
-		},
-		[10170011] = {
-			10170012
-		},
-		[10520032] = {
-			10520033
-		},
-		[10520031] = {
-			10520032
-		},
-		[10520022] = {
-			10520023
-		},
-		[10520021] = {
-			10520022
-		},
-		[10520012] = {
-			10520013
-		},
-		[10520011] = {
-			10520012
-		},
-		[10280032] = {
-			10280033
-		},
-		[10280031] = {
-			10280032
-		},
-		[10280022] = {
-			10280023
-		},
-		[10280021] = {
-			10280022
-		},
-		[10280012] = {
-			10280013
-		},
-		[10280011] = {
-			10280012
-		},
-		[10240032] = {
-			10240033
-		},
-		[10240031] = {
-			10240032
-		},
-		[10240022] = {
-			10240023
-		},
-		[10240021] = {
-			10240022
-		},
-		[10240012] = {
-			10240013
-		},
-		[10240011] = {
-			10240012
-		},
-		[10670032] = {
-			10670033
-		},
-		[10670031] = {
-			10670032
-		},
-		[10670022] = {
-			10670023
-		},
-		[10670021] = {
-			10670022
-		},
-		[10670012] = {
-			10670013
-		},
-		[10670011] = {
-			10670012
+		[10700011] = {
+			10700012
 		},
 		[10680032] = {
 			10680033
@@ -11426,257 +11762,77 @@
 		[10680011] = {
 			10680012
 		},
-		[10330032] = {
-			10330033
+		[10670032] = {
+			10670033
 		},
-		[10330031] = {
-			10330032
+		[10670031] = {
+			10670032
 		},
-		[10330022] = {
-			10330023
+		[10670022] = {
+			10670023
 		},
-		[10330021] = {
-			10330022
+		[10670021] = {
+			10670022
 		},
-		[10330012] = {
-			10330013
+		[10670012] = {
+			10670013
 		},
-		[10330011] = {
-			10330012
+		[10670011] = {
+			10670012
 		},
-		[11190032] = {
-			11190033
+		[10660032] = {
+			10660033
 		},
-		[11190031] = {
-			11190032
+		[10660031] = {
+			10660032
 		},
-		[11190022] = {
-			11190023
+		[10660022] = {
+			10660023
 		},
-		[11190021] = {
-			11190022
+		[10660021] = {
+			10660022
 		},
-		[11190012] = {
-			11190013
+		[10660012] = {
+			10660013
 		},
-		[11190011] = {
-			11190012
+		[10660011] = {
+			10660012
 		},
-		[10420032] = {
-			10420033
+		[10610032] = {
+			10610033
 		},
-		[10420031] = {
-			10420032
+		[10610031] = {
+			10610032
 		},
-		[10420022] = {
-			10420023
+		[10610022] = {
+			10610023
 		},
-		[10420021] = {
-			10420022
+		[10610021] = {
+			10610022
 		},
-		[10420012] = {
-			10420013
+		[10610012] = {
+			10610013
 		},
-		[10420011] = {
-			10420012
+		[10610011] = {
+			10610012
 		},
-		[10410032] = {
-			10410033
+		[10600032] = {
+			10600033
 		},
-		[10410031] = {
-			10410032
+		[10600031] = {
+			10600032
 		},
-		[10410022] = {
-			10410023
+		[10600022] = {
+			10600023
 		},
-		[10410021] = {
-			10410022
+		[10600021] = {
+			10600022
 		},
-		[10410012] = {
-			10410013
+		[10600012] = {
+			10600013
 		},
-		[10410011] = {
-			10410012
-		},
-		[10350032] = {
-			10350033
-		},
-		[10350031] = {
-			10350032
-		},
-		[10350022] = {
-			10350023
-		},
-		[10350021] = {
-			10350022
-		},
-		[10350012] = {
-			10350013
-		},
-		[10350011] = {
-			10350012
-		},
-		[10320032] = {
-			10320033
-		},
-		[10320031] = {
-			10320032
-		},
-		[10320022] = {
-			10320023
-		},
-		[10320021] = {
-			10320022
-		},
-		[10320012] = {
-			10320013
-		},
-		[10320011] = {
-			10320012
-		},
-		[11110032] = {
-			11110033
-		},
-		[11110031] = {
-			11110032
-		},
-		[11110022] = {
-			11110023
-		},
-		[11110021] = {
-			11110022
-		},
-		[11110012] = {
-			11110013
-		},
-		[11110011] = {
-			11110012
-		},
-		[10560032] = {
-			10560033
-		},
-		[10560031] = {
-			10560032
-		},
-		[10560022] = {
-			10560023
-		},
-		[10560021] = {
-			10560022
-		},
-		[10560012] = {
-			10560013
-		},
-		[10560011] = {
-			10560012
-		},
-		[10130032] = {
-			10130033
-		},
-		[10130031] = {
-			10130032
-		},
-		[10130022] = {
-			10130023
-		},
-		[10130021] = {
-			10130022
-		},
-		[10130012] = {
-			10130013
-		},
-		[10130011] = {
-			10130012
-		},
-		[11380032] = {
-			11380033
-		},
-		[11380031] = {
-			11380032
-		},
-		[11380022] = {
-			11380023
-		},
-		[11380021] = {
-			11380022
-		},
-		[11380012] = {
-			11380013
-		},
-		[11380011] = {
-			11380012
-		},
-		[11390032] = {
-			11390033
-		},
-		[11390031] = {
-			11390032
-		},
-		[11390022] = {
-			11390023
-		},
-		[11390021] = {
-			11390022
-		},
-		[11390012] = {
-			11390013
-		},
-		[11390011] = {
-			11390012
-		},
-		[10970032] = {
-			10970033
-		},
-		[10970031] = {
-			10970032
-		},
-		[10970022] = {
-			10970023
-		},
-		[10970021] = {
-			10970022
-		},
-		[10970012] = {
-			10970013
-		},
-		[10970011] = {
-			10970012
-		},
-		[10260032] = {
-			10260033
-		},
-		[10260031] = {
-			10260032
-		},
-		[10260022] = {
-			10260023
-		},
-		[10260021] = {
-			10260022
-		},
-		[10260012] = {
-			10260013
-		},
-		[10260011] = {
-			10260012
-		},
-		[10960032] = {
-			10960033
-		},
-		[10960031] = {
-			10960032
-		},
-		[10960022] = {
-			10960023
-		},
-		[10960021] = {
-			10960022
-		},
-		[10960012] = {
-			10960013
-		},
-		[10960011] = {
-			10960012
+		[10600011] = {
+			10600012
 		},
 		[10590032] = {
 			10590033
@@ -11714,113 +11870,59 @@
 		[10580011] = {
 			10580012
 		},
-		[11840032] = {
-			11840033
+		[10560032] = {
+			10560033
 		},
-		[11840031] = {
-			11840032
+		[10560031] = {
+			10560032
 		},
-		[11840022] = {
-			11840023
+		[10560022] = {
+			10560023
 		},
-		[11840021] = {
-			11840022
+		[10560021] = {
+			10560022
 		},
-		[11840012] = {
-			11840013
+		[10560012] = {
+			10560013
 		},
-		[11840011] = {
-			11840012
+		[10560011] = {
+			10560012
 		},
-		[11990032] = {
-			11990033
+		[10550032] = {
+			10550033
 		},
-		[11990031] = {
-			11990032
+		[10550031] = {
+			10550032
 		},
-		[11990022] = {
-			11990023
+		[10550022] = {
+			10550023
 		},
-		[11990021] = {
-			11990022
+		[10550021] = {
+			10550022
 		},
-		[11990012] = {
-			11990013
+		[10550012] = {
+			10550013
 		},
-		[11990011] = {
-			11990012
+		[10550011] = {
+			10550012
 		},
-		[10110032] = {
-			10110033
+		[10520032] = {
+			10520033
 		},
-		[10110031] = {
-			10110032
+		[10520031] = {
+			10520032
 		},
-		[10110022] = {
-			10110023
+		[10520022] = {
+			10520023
 		},
-		[10110021] = {
-			10110022
+		[10520021] = {
+			10520022
 		},
-		[10110012] = {
-			10110013
+		[10520012] = {
+			10520013
 		},
-		[10110011] = {
-			10110012
-		},
-		[10370032] = {
-			10370033
-		},
-		[10370031] = {
-			10370032
-		},
-		[10370022] = {
-			10370023
-		},
-		[10370021] = {
-			10370022
-		},
-		[10370012] = {
-			10370013
-		},
-		[10370011] = {
-			10370012
-		},
-		[10940032] = {
-			10940033
-		},
-		[10940031] = {
-			10940032
-		},
-		[10940022] = {
-			10940023
-		},
-		[10940021] = {
-			10940022
-		},
-		[10940012] = {
-			10940013
-		},
-		[10940011] = {
-			10940012
-		},
-		[11480032] = {
-			11480033
-		},
-		[11480031] = {
-			11480032
-		},
-		[11480022] = {
-			11480023
-		},
-		[11480021] = {
-			11480022
-		},
-		[11480012] = {
-			11480013
-		},
-		[11480011] = {
-			11480012
+		[10520011] = {
+			10520012
 		},
 		[10500032] = {
 			10500033
@@ -11840,149 +11942,23 @@
 		[10500011] = {
 			10500012
 		},
-		[10270032] = {
-			10270033
+		[10490032] = {
+			10490033
 		},
-		[10270031] = {
-			10270032
+		[10490031] = {
+			10490032
 		},
-		[10270022] = {
-			10270023
+		[10490022] = {
+			10490023
 		},
-		[10270021] = {
-			10270022
+		[10490021] = {
+			10490022
 		},
-		[10270012] = {
-			10270013
+		[10490012] = {
+			10490013
 		},
-		[10270011] = {
-			10270012
-		},
-		[10800032] = {
-			10800033
-		},
-		[10800031] = {
-			10800032
-		},
-		[10800022] = {
-			10800023
-		},
-		[10800021] = {
-			10800022
-		},
-		[10800012] = {
-			10800013
-		},
-		[10800011] = {
-			10800012
-		},
-		[10190032] = {
-			10190033
-		},
-		[10190031] = {
-			10190032
-		},
-		[10190022] = {
-			10190023
-		},
-		[10190021] = {
-			10190022
-		},
-		[10190012] = {
-			10190013
-		},
-		[10190011] = {
-			10190012
-		},
-		[10930032] = {
-			10930033
-		},
-		[10930031] = {
-			10930032
-		},
-		[10930022] = {
-			10930023
-		},
-		[10930021] = {
-			10930022
-		},
-		[10930012] = {
-			10930013
-		},
-		[10930011] = {
-			10930012
-		},
-		[10840032] = {
-			10840033
-		},
-		[10840031] = {
-			10840032
-		},
-		[10840022] = {
-			10840023
-		},
-		[10840021] = {
-			10840022
-		},
-		[10840012] = {
-			10840013
-		},
-		[10840011] = {
-			10840012
-		},
-		[10990032] = {
-			10990033
-		},
-		[10990031] = {
-			10990032
-		},
-		[10990022] = {
-			10990023
-		},
-		[10990021] = {
-			10990022
-		},
-		[10990012] = {
-			10990013
-		},
-		[10990011] = {
-			10990012
-		},
-		[10380032] = {
-			10380033
-		},
-		[10380031] = {
-			10380032
-		},
-		[10380022] = {
-			10380023
-		},
-		[10380021] = {
-			10380022
-		},
-		[10380012] = {
-			10380013
-		},
-		[10380011] = {
-			10380012
-		},
-		[10660032] = {
-			10660033
-		},
-		[10660031] = {
-			10660032
-		},
-		[10660022] = {
-			10660023
-		},
-		[10660021] = {
-			10660022
-		},
-		[10660012] = {
-			10660013
-		},
-		[10660011] = {
-			10660012
+		[10490011] = {
+			10490012
 		},
 		[10480032] = {
 			10480033
@@ -12002,6 +11978,42 @@
 		[10480011] = {
 			10480012
 		},
+		[10420032] = {
+			10420033
+		},
+		[10420031] = {
+			10420032
+		},
+		[10420022] = {
+			10420023
+		},
+		[10420021] = {
+			10420022
+		},
+		[10420012] = {
+			10420013
+		},
+		[10420011] = {
+			10420012
+		},
+		[10410032] = {
+			10410033
+		},
+		[10410031] = {
+			10410032
+		},
+		[10410022] = {
+			10410023
+		},
+		[10410021] = {
+			10410022
+		},
+		[10410012] = {
+			10410013
+		},
+		[10410011] = {
+			10410012
+		},
 		[10390032] = {
 			10390033
 		},
@@ -12019,6 +12031,330 @@
 		},
 		[10390011] = {
 			10390012
+		},
+		[10380032] = {
+			10380033
+		},
+		[10380031] = {
+			10380032
+		},
+		[10380022] = {
+			10380023
+		},
+		[10380021] = {
+			10380022
+		},
+		[10380012] = {
+			10380013
+		},
+		[10380011] = {
+			10380012
+		},
+		[10370032] = {
+			10370033
+		},
+		[10370031] = {
+			10370032
+		},
+		[10370022] = {
+			10370023
+		},
+		[10370021] = {
+			10370022
+		},
+		[10370012] = {
+			10370013
+		},
+		[10370011] = {
+			10370012
+		},
+		[10350032] = {
+			10350033
+		},
+		[10350031] = {
+			10350032
+		},
+		[10350022] = {
+			10350023
+		},
+		[10350021] = {
+			10350022
+		},
+		[10350012] = {
+			10350013
+		},
+		[10350011] = {
+			10350012
+		},
+		[10340032] = {
+			10340033
+		},
+		[10340031] = {
+			10340032
+		},
+		[10340022] = {
+			10340023
+		},
+		[10340021] = {
+			10340022
+		},
+		[10340012] = {
+			10340013
+		},
+		[10340011] = {
+			10340012
+		},
+		[10330032] = {
+			10330033
+		},
+		[10330031] = {
+			10330032
+		},
+		[10330022] = {
+			10330023
+		},
+		[10330021] = {
+			10330022
+		},
+		[10330012] = {
+			10330013
+		},
+		[10330011] = {
+			10330012
+		},
+		[10320032] = {
+			10320033
+		},
+		[10320031] = {
+			10320032
+		},
+		[10320022] = {
+			10320023
+		},
+		[10320021] = {
+			10320022
+		},
+		[10320012] = {
+			10320013
+		},
+		[10320011] = {
+			10320012
+		},
+		[10280032] = {
+			10280033
+		},
+		[10280031] = {
+			10280032
+		},
+		[10280022] = {
+			10280023
+		},
+		[10280021] = {
+			10280022
+		},
+		[10280012] = {
+			10280013
+		},
+		[10280011] = {
+			10280012
+		},
+		[10270032] = {
+			10270033
+		},
+		[10270031] = {
+			10270032
+		},
+		[10270022] = {
+			10270023
+		},
+		[10270021] = {
+			10270022
+		},
+		[10270012] = {
+			10270013
+		},
+		[10270011] = {
+			10270012
+		},
+		[10260032] = {
+			10260033
+		},
+		[10260031] = {
+			10260032
+		},
+		[10260022] = {
+			10260023
+		},
+		[10260021] = {
+			10260022
+		},
+		[10260012] = {
+			10260013
+		},
+		[10260011] = {
+			10260012
+		},
+		[10240032] = {
+			10240033
+		},
+		[10240031] = {
+			10240032
+		},
+		[10240022] = {
+			10240023
+		},
+		[10240021] = {
+			10240022
+		},
+		[10240012] = {
+			10240013
+		},
+		[10240011] = {
+			10240012
+		},
+		[10220032] = {
+			10220033
+		},
+		[10220031] = {
+			10220032
+		},
+		[10220022] = {
+			10220023
+		},
+		[10220021] = {
+			10220022
+		},
+		[10220012] = {
+			10220013
+		},
+		[10220011] = {
+			10220012
+		},
+		[10210032] = {
+			10210033
+		},
+		[10210031] = {
+			10210032
+		},
+		[10210022] = {
+			10210023
+		},
+		[10210021] = {
+			10210022
+		},
+		[10210012] = {
+			10210013
+		},
+		[10210011] = {
+			10210012
+		},
+		[10200032] = {
+			10200033
+		},
+		[10200031] = {
+			10200032
+		},
+		[10200022] = {
+			10200023
+		},
+		[10200021] = {
+			10200022
+		},
+		[10200012] = {
+			10200013
+		},
+		[10200011] = {
+			10200012
+		},
+		[10190032] = {
+			10190033
+		},
+		[10190031] = {
+			10190032
+		},
+		[10190022] = {
+			10190023
+		},
+		[10190021] = {
+			10190022
+		},
+		[10190012] = {
+			10190013
+		},
+		[10190011] = {
+			10190012
+		},
+		[10170032] = {
+			10170033
+		},
+		[10170031] = {
+			10170032
+		},
+		[10170022] = {
+			10170023
+		},
+		[10170021] = {
+			10170022
+		},
+		[10170012] = {
+			10170013
+		},
+		[10170011] = {
+			10170012
+		},
+		[10160032] = {
+			10160033
+		},
+		[10160031] = {
+			10160032
+		},
+		[10160022] = {
+			10160023
+		},
+		[10160021] = {
+			10160022
+		},
+		[10160012] = {
+			10160013
+		},
+		[10160011] = {
+			10160012
+		},
+		[10150032] = {
+			10150033
+		},
+		[10150031] = {
+			10150032
+		},
+		[10150022] = {
+			10150023
+		},
+		[10150021] = {
+			10150022
+		},
+		[10150012] = {
+			10150013
+		},
+		[10150011] = {
+			10150012
+		},
+		[10130032] = {
+			10130033
+		},
+		[10130031] = {
+			10130032
+		},
+		[10130022] = {
+			10130023
+		},
+		[10130021] = {
+			10130022
+		},
+		[10130012] = {
+			10130013
+		},
+		[10130011] = {
+			10130012
 		},
 		[10120032] = {
 			10120033
@@ -12038,148 +12374,145 @@
 		[10120011] = {
 			10120012
 		},
+		[10110032] = {
+			10110033
+		},
+		[10110031] = {
+			10110032
+		},
+		[10110022] = {
+			10110023
+		},
+		[10110021] = {
+			10110022
+		},
+		[10110012] = {
+			10110013
+		},
+		[10110011] = {
+			10110012
+		},
 		[0] = {
-			10120011,
-			10120021,
-			10120031,
-			10390011,
-			10390021,
-			10390031,
-			10480011,
-			10480021,
-			10480031,
-			10660011,
-			10660021,
-			10660031,
-			10380011,
-			10380021,
-			10380031,
-			10990011,
-			10990021,
-			10990031,
-			10840011,
-			10840021,
-			10840031,
-			10930011,
-			10930021,
-			10930031,
-			10190011,
-			10190021,
-			10190031,
-			10800011,
-			10800021,
-			10800031,
-			10270011,
-			10270021,
-			10270031,
-			10500011,
-			10500021,
-			10500031,
-			11480011,
-			11480021,
-			11480031,
-			10940011,
-			10940021,
-			10940031,
-			10370011,
-			10370021,
-			10370031,
 			10110011,
 			10110021,
 			10110031,
-			11990011,
-			11990021,
-			11990031,
-			11840011,
-			11840021,
-			11840031,
-			10580011,
-			10580021,
-			10580031,
-			10590011,
-			10590021,
-			10590031,
-			10960011,
-			10960021,
-			10960031,
-			10260011,
-			10260021,
-			10260031,
-			10970011,
-			10970021,
-			10970031,
-			11390011,
-			11390021,
-			11390031,
-			11380011,
-			11380021,
-			11380031,
+			10120011,
+			10120021,
+			10120031,
 			10130011,
 			10130021,
 			10130031,
-			10560011,
-			10560021,
-			10560031,
-			11110011,
-			11110021,
-			11110031,
+			10150011,
+			10150021,
+			10150031,
+			10160011,
+			10160021,
+			10160031,
+			10170011,
+			10170021,
+			10170031,
+			10190011,
+			10190021,
+			10190031,
+			10200011,
+			10200021,
+			10200031,
+			10210011,
+			10210021,
+			10210031,
+			10220011,
+			10220021,
+			10220031,
+			10240011,
+			10240021,
+			10240031,
+			10260011,
+			10260021,
+			10260031,
+			10270011,
+			10270021,
+			10270031,
+			10280011,
+			10280021,
+			10280031,
 			10320011,
 			10320021,
 			10320031,
+			10330011,
+			10330021,
+			10330031,
+			10340011,
+			10340021,
+			10340031,
 			10350011,
 			10350021,
 			10350031,
+			10370011,
+			10370021,
+			10370031,
+			10380011,
+			10380021,
+			10380031,
+			10390011,
+			10390021,
+			10390031,
 			10410011,
 			10410021,
 			10410031,
 			10420011,
 			10420021,
 			10420031,
-			11190011,
-			11190021,
-			11190031,
-			10330011,
-			10330021,
-			10330031,
-			10680011,
-			10680021,
-			10680031,
-			10670011,
-			10670021,
-			10670031,
-			10240011,
-			10240021,
-			10240031,
-			10280011,
-			10280021,
-			10280031,
+			10480011,
+			10480021,
+			10480031,
+			10490011,
+			10490021,
+			10490031,
+			10500011,
+			10500021,
+			10500031,
 			10520011,
 			10520021,
 			10520031,
-			10170011,
-			10170021,
-			10170031,
-			11270011,
-			11270021,
-			11270031,
-			11320011,
-			11320021,
-			11320031,
+			10550011,
+			10550021,
+			10550031,
+			10560011,
+			10560021,
+			10560031,
+			10580011,
+			10580021,
+			10580031,
+			10590011,
+			10590021,
+			10590031,
+			10600011,
+			10600021,
+			10600031,
+			10610011,
+			10610021,
+			10610031,
+			10660011,
+			10660021,
+			10660031,
+			10670011,
+			10670021,
+			10670031,
+			10680011,
+			10680021,
+			10680031,
+			10700011,
+			10700021,
+			10700031,
 			10710011,
 			10710021,
 			10710031,
 			10720011,
 			10720021,
 			10720031,
-			10700011,
-			10700021,
-			10700031,
-			10810011,
-			10810021,
-			10810031,
-			10160011,
-			10160021,
-			10160031,
+			10730011,
+			10730021,
+			10730031,
 			10740011,
 			10740021,
 			10740031,
@@ -12189,198 +12522,90 @@
 			10760011,
 			10760021,
 			10760031,
-			11580011,
-			11580021,
-			11580031,
-			10490011,
-			10490021,
-			10490031,
-			10550011,
-			10550021,
-			10550031,
-			10600011,
-			10600021,
-			10600031,
-			10610011,
-			10610021,
-			10610031,
-			11500011,
-			11500021,
-			11500031,
-			10150011,
-			10150021,
-			10150031,
-			10950011,
-			10950021,
-			10950031,
-			12840011,
-			12840021,
-			12840031,
-			11970011,
-			11970021,
-			11970031,
-			10220011,
-			10220021,
-			10220031,
-			10210011,
-			10210021,
-			10210031,
-			10200011,
-			10200021,
-			10200031,
-			11560011,
-			11560021,
-			11560031,
+			10800011,
+			10800021,
+			10800031,
+			10810011,
+			10810021,
+			10810031,
+			10840011,
+			10840021,
+			10840031,
+			10850011,
+			10850021,
+			10850031,
 			10890011,
 			10890021,
 			10890031,
-			12480011,
-			12480021,
-			12480031,
+			10930011,
+			10930021,
+			10930031,
+			10940011,
+			10940021,
+			10940031,
+			10950011,
+			10950021,
+			10950031,
+			10960011,
+			10960021,
+			10960031,
+			10970011,
+			10970021,
+			10970031,
+			10990011,
+			10990021,
+			10990031,
+			11110011,
+			11110021,
+			11110031,
+			11190011,
+			11190021,
+			11190031,
+			11270011,
+			11270021,
+			11270031,
+			11320011,
+			11320021,
+			11320031,
 			11330011,
 			11330021,
 			11330031,
-			10340011,
-			10340021,
-			10340031
+			11380011,
+			11380021,
+			11380031,
+			11390011,
+			11390021,
+			11390031,
+			11480011,
+			11480021,
+			11480031,
+			11500011,
+			11500021,
+			11500031,
+			11560011,
+			11560021,
+			11560031,
+			11580011,
+			11580021,
+			11580031,
+			11840011,
+			11840021,
+			11840031,
+			11970011,
+			11970021,
+			11970031,
+			11990011,
+			11990021,
+			11990031,
+			12480011,
+			12480021,
+			12480031,
+			12840011,
+			12840021,
+			12840031
 		}
 	},
 	all = {
-		10120011,
-		10120012,
-		10120013,
-		10120021,
-		10120022,
-		10120023,
-		10120031,
-		10120032,
-		10120033,
-		10390011,
-		10390012,
-		10390013,
-		10390021,
-		10390022,
-		10390023,
-		10390031,
-		10390032,
-		10390033,
-		10480011,
-		10480012,
-		10480013,
-		10480021,
-		10480022,
-		10480023,
-		10480031,
-		10480032,
-		10480033,
-		10660011,
-		10660012,
-		10660013,
-		10660021,
-		10660022,
-		10660023,
-		10660031,
-		10660032,
-		10660033,
-		10380011,
-		10380012,
-		10380013,
-		10380021,
-		10380022,
-		10380023,
-		10380031,
-		10380032,
-		10380033,
-		10990011,
-		10990012,
-		10990013,
-		10990021,
-		10990022,
-		10990023,
-		10990031,
-		10990032,
-		10990033,
-		10840011,
-		10840012,
-		10840013,
-		10840021,
-		10840022,
-		10840023,
-		10840031,
-		10840032,
-		10840033,
-		10930011,
-		10930012,
-		10930013,
-		10930021,
-		10930022,
-		10930023,
-		10930031,
-		10930032,
-		10930033,
-		10190011,
-		10190012,
-		10190013,
-		10190021,
-		10190022,
-		10190023,
-		10190031,
-		10190032,
-		10190033,
-		10800011,
-		10800012,
-		10800013,
-		10800021,
-		10800022,
-		10800023,
-		10800031,
-		10800032,
-		10800033,
-		10270011,
-		10270012,
-		10270013,
-		10270021,
-		10270022,
-		10270023,
-		10270031,
-		10270032,
-		10270033,
-		10500011,
-		10500012,
-		10500013,
-		10500021,
-		10500022,
-		10500023,
-		10500031,
-		10500032,
-		10500033,
-		11480011,
-		11480012,
-		11480013,
-		11480021,
-		11480022,
-		11480023,
-		11480031,
-		11480032,
-		11480033,
-		10940011,
-		10940012,
-		10940013,
-		10940021,
-		10940022,
-		10940023,
-		10940031,
-		10940032,
-		10940033,
-		10370011,
-		10370012,
-		10370013,
-		10370021,
-		10370022,
-		10370023,
-		10370031,
-		10370032,
-		10370033,
 		10110011,
 		10110012,
 		10110013,
@@ -12390,87 +12615,15 @@
 		10110031,
 		10110032,
 		10110033,
-		11990011,
-		11990012,
-		11990013,
-		11990021,
-		11990022,
-		11990023,
-		11990031,
-		11990032,
-		11990033,
-		11840011,
-		11840012,
-		11840013,
-		11840021,
-		11840022,
-		11840023,
-		11840031,
-		11840032,
-		11840033,
-		10580011,
-		10580012,
-		10580013,
-		10580021,
-		10580022,
-		10580023,
-		10580031,
-		10580032,
-		10580033,
-		10590011,
-		10590012,
-		10590013,
-		10590021,
-		10590022,
-		10590023,
-		10590031,
-		10590032,
-		10590033,
-		10960011,
-		10960012,
-		10960013,
-		10960021,
-		10960022,
-		10960023,
-		10960031,
-		10960032,
-		10960033,
-		10260011,
-		10260012,
-		10260013,
-		10260021,
-		10260022,
-		10260023,
-		10260031,
-		10260032,
-		10260033,
-		10970011,
-		10970012,
-		10970013,
-		10970021,
-		10970022,
-		10970023,
-		10970031,
-		10970032,
-		10970033,
-		11390011,
-		11390012,
-		11390013,
-		11390021,
-		11390022,
-		11390023,
-		11390031,
-		11390032,
-		11390033,
-		11380011,
-		11380012,
-		11380013,
-		11380021,
-		11380022,
-		11380023,
-		11380031,
-		11380032,
-		11380033,
+		10120011,
+		10120012,
+		10120013,
+		10120021,
+		10120022,
+		10120023,
+		10120031,
+		10120032,
+		10120033,
 		10130011,
 		10130012,
 		10130013,
@@ -12480,24 +12633,105 @@
 		10130031,
 		10130032,
 		10130033,
-		10560011,
-		10560012,
-		10560013,
-		10560021,
-		10560022,
-		10560023,
-		10560031,
-		10560032,
-		10560033,
-		11110011,
-		11110012,
-		11110013,
-		11110021,
-		11110022,
-		11110023,
-		11110031,
-		11110032,
-		11110033,
+		10150011,
+		10150012,
+		10150013,
+		10150021,
+		10150022,
+		10150023,
+		10150031,
+		10150032,
+		10150033,
+		10160011,
+		10160012,
+		10160013,
+		10160021,
+		10160022,
+		10160023,
+		10160031,
+		10160032,
+		10160033,
+		10170011,
+		10170012,
+		10170013,
+		10170021,
+		10170022,
+		10170023,
+		10170031,
+		10170032,
+		10170033,
+		10190011,
+		10190012,
+		10190013,
+		10190021,
+		10190022,
+		10190023,
+		10190031,
+		10190032,
+		10190033,
+		10200011,
+		10200012,
+		10200013,
+		10200021,
+		10200022,
+		10200023,
+		10200031,
+		10200032,
+		10200033,
+		10210011,
+		10210012,
+		10210013,
+		10210021,
+		10210022,
+		10210023,
+		10210031,
+		10210032,
+		10210033,
+		10220011,
+		10220012,
+		10220013,
+		10220021,
+		10220022,
+		10220023,
+		10220031,
+		10220032,
+		10220033,
+		10240011,
+		10240012,
+		10240013,
+		10240021,
+		10240022,
+		10240023,
+		10240031,
+		10240032,
+		10240033,
+		10260011,
+		10260012,
+		10260013,
+		10260021,
+		10260022,
+		10260023,
+		10260031,
+		10260032,
+		10260033,
+		10270011,
+		10270012,
+		10270013,
+		10270021,
+		10270022,
+		10270023,
+		10270031,
+		10270032,
+		10270033,
+		10280011,
+		10280012,
+		10280013,
+		10280021,
+		10280022,
+		10280023,
+		10280031,
+		10280032,
+		10280033,
 		10320011,
 		10320012,
 		10320013,
@@ -12507,6 +12741,24 @@
 		10320031,
 		10320032,
 		10320033,
+		10330011,
+		10330012,
+		10330013,
+		10330021,
+		10330022,
+		10330023,
+		10330031,
+		10330032,
+		10330033,
+		10340011,
+		10340012,
+		10340013,
+		10340021,
+		10340022,
+		10340023,
+		10340031,
+		10340032,
+		10340033,
 		10350011,
 		10350012,
 		10350013,
@@ -12516,6 +12768,33 @@
 		10350031,
 		10350032,
 		10350033,
+		10370011,
+		10370012,
+		10370013,
+		10370021,
+		10370022,
+		10370023,
+		10370031,
+		10370032,
+		10370033,
+		10380011,
+		10380012,
+		10380013,
+		10380021,
+		10380022,
+		10380023,
+		10380031,
+		10380032,
+		10380033,
+		10390011,
+		10390012,
+		10390013,
+		10390021,
+		10390022,
+		10390023,
+		10390031,
+		10390032,
+		10390033,
 		10410011,
 		10410012,
 		10410013,
@@ -12534,60 +12813,33 @@
 		10420031,
 		10420032,
 		10420033,
-		11190011,
-		11190012,
-		11190013,
-		11190021,
-		11190022,
-		11190023,
-		11190031,
-		11190032,
-		11190033,
-		10330011,
-		10330012,
-		10330013,
-		10330021,
-		10330022,
-		10330023,
-		10330031,
-		10330032,
-		10330033,
-		10680011,
-		10680012,
-		10680013,
-		10680021,
-		10680022,
-		10680023,
-		10680031,
-		10680032,
-		10680033,
-		10670011,
-		10670012,
-		10670013,
-		10670021,
-		10670022,
-		10670023,
-		10670031,
-		10670032,
-		10670033,
-		10240011,
-		10240012,
-		10240013,
-		10240021,
-		10240022,
-		10240023,
-		10240031,
-		10240032,
-		10240033,
-		10280011,
-		10280012,
-		10280013,
-		10280021,
-		10280022,
-		10280023,
-		10280031,
-		10280032,
-		10280033,
+		10480011,
+		10480012,
+		10480013,
+		10480021,
+		10480022,
+		10480023,
+		10480031,
+		10480032,
+		10480033,
+		10490011,
+		10490012,
+		10490013,
+		10490021,
+		10490022,
+		10490023,
+		10490031,
+		10490032,
+		10490033,
+		10500011,
+		10500012,
+		10500013,
+		10500021,
+		10500022,
+		10500023,
+		10500031,
+		10500032,
+		10500033,
 		10520011,
 		10520012,
 		10520013,
@@ -12597,33 +12849,96 @@
 		10520031,
 		10520032,
 		10520033,
-		10170011,
-		10170012,
-		10170013,
-		10170021,
-		10170022,
-		10170023,
-		10170031,
-		10170032,
-		10170033,
-		11270011,
-		11270012,
-		11270013,
-		11270021,
-		11270022,
-		11270023,
-		11270031,
-		11270032,
-		11270033,
-		11320011,
-		11320012,
-		11320013,
-		11320021,
-		11320022,
-		11320023,
-		11320031,
-		11320032,
-		11320033,
+		10550011,
+		10550012,
+		10550013,
+		10550021,
+		10550022,
+		10550023,
+		10550031,
+		10550032,
+		10550033,
+		10560011,
+		10560012,
+		10560013,
+		10560021,
+		10560022,
+		10560023,
+		10560031,
+		10560032,
+		10560033,
+		10580011,
+		10580012,
+		10580013,
+		10580021,
+		10580022,
+		10580023,
+		10580031,
+		10580032,
+		10580033,
+		10590011,
+		10590012,
+		10590013,
+		10590021,
+		10590022,
+		10590023,
+		10590031,
+		10590032,
+		10590033,
+		10600011,
+		10600012,
+		10600013,
+		10600021,
+		10600022,
+		10600023,
+		10600031,
+		10600032,
+		10600033,
+		10610011,
+		10610012,
+		10610013,
+		10610021,
+		10610022,
+		10610023,
+		10610031,
+		10610032,
+		10610033,
+		10660011,
+		10660012,
+		10660013,
+		10660021,
+		10660022,
+		10660023,
+		10660031,
+		10660032,
+		10660033,
+		10670011,
+		10670012,
+		10670013,
+		10670021,
+		10670022,
+		10670023,
+		10670031,
+		10670032,
+		10670033,
+		10680011,
+		10680012,
+		10680013,
+		10680021,
+		10680022,
+		10680023,
+		10680031,
+		10680032,
+		10680033,
+		10700011,
+		10700012,
+		10700013,
+		10700021,
+		10700022,
+		10700023,
+		10700031,
+		10700032,
+		10700033,
 		10710011,
 		10710012,
 		10710013,
@@ -12642,33 +12957,15 @@
 		10720031,
 		10720032,
 		10720033,
-		10700011,
-		10700012,
-		10700013,
-		10700021,
-		10700022,
-		10700023,
-		10700031,
-		10700032,
-		10700033,
-		10810011,
-		10810012,
-		10810013,
-		10810021,
-		10810022,
-		10810023,
-		10810031,
-		10810032,
-		10810033,
-		10160011,
-		10160012,
-		10160013,
-		10160021,
-		10160022,
-		10160023,
-		10160031,
-		10160032,
-		10160033,
+		10730011,
+		10730012,
+		10730013,
+		10730021,
+		10730022,
+		10730023,
+		10730031,
+		10730032,
+		10730033,
 		10740011,
 		10740012,
 		10740013,
@@ -12696,132 +12993,42 @@
 		10760031,
 		10760032,
 		10760033,
-		11580011,
-		11580012,
-		11580013,
-		11580021,
-		11580022,
-		11580023,
-		11580031,
-		11580032,
-		11580033,
-		10490011,
-		10490012,
-		10490013,
-		10490021,
-		10490022,
-		10490023,
-		10490031,
-		10490032,
-		10490033,
-		10550011,
-		10550012,
-		10550013,
-		10550021,
-		10550022,
-		10550023,
-		10550031,
-		10550032,
-		10550033,
-		10600011,
-		10600012,
-		10600013,
-		10600021,
-		10600022,
-		10600023,
-		10600031,
-		10600032,
-		10600033,
-		10610011,
-		10610012,
-		10610013,
-		10610021,
-		10610022,
-		10610023,
-		10610031,
-		10610032,
-		10610033,
-		11500011,
-		11500012,
-		11500013,
-		11500021,
-		11500022,
-		11500023,
-		11500031,
-		11500032,
-		11500033,
-		10150011,
-		10150012,
-		10150013,
-		10150021,
-		10150022,
-		10150023,
-		10150031,
-		10150032,
-		10150033,
-		10950011,
-		10950012,
-		10950013,
-		10950021,
-		10950022,
-		10950023,
-		10950031,
-		10950032,
-		10950033,
-		12840011,
-		12840012,
-		12840013,
-		12840021,
-		12840022,
-		12840023,
-		12840031,
-		12840032,
-		12840033,
-		11970011,
-		11970012,
-		11970013,
-		11970021,
-		11970022,
-		11970023,
-		11970031,
-		11970032,
-		11970033,
-		10220011,
-		10220012,
-		10220013,
-		10220021,
-		10220022,
-		10220023,
-		10220031,
-		10220032,
-		10220033,
-		10210011,
-		10210012,
-		10210013,
-		10210021,
-		10210022,
-		10210023,
-		10210031,
-		10210032,
-		10210033,
-		10200011,
-		10200012,
-		10200013,
-		10200021,
-		10200022,
-		10200023,
-		10200031,
-		10200032,
-		10200033,
-		11560011,
-		11560012,
-		11560013,
-		11560021,
-		11560022,
-		11560023,
-		11560031,
-		11560032,
-		11560033,
+		10800011,
+		10800012,
+		10800013,
+		10800021,
+		10800022,
+		10800023,
+		10800031,
+		10800032,
+		10800033,
+		10810011,
+		10810012,
+		10810013,
+		10810021,
+		10810022,
+		10810023,
+		10810031,
+		10810032,
+		10810033,
+		10840011,
+		10840012,
+		10840013,
+		10840021,
+		10840022,
+		10840023,
+		10840031,
+		10840032,
+		10840033,
+		10850011,
+		10850012,
+		10850013,
+		10850021,
+		10850022,
+		10850023,
+		10850031,
+		10850032,
+		10850033,
 		10890011,
 		10890012,
 		10890013,
@@ -12831,15 +13038,96 @@
 		10890031,
 		10890032,
 		10890033,
-		12480011,
-		12480012,
-		12480013,
-		12480021,
-		12480022,
-		12480023,
-		12480031,
-		12480032,
-		12480033,
+		10930011,
+		10930012,
+		10930013,
+		10930021,
+		10930022,
+		10930023,
+		10930031,
+		10930032,
+		10930033,
+		10940011,
+		10940012,
+		10940013,
+		10940021,
+		10940022,
+		10940023,
+		10940031,
+		10940032,
+		10940033,
+		10950011,
+		10950012,
+		10950013,
+		10950021,
+		10950022,
+		10950023,
+		10950031,
+		10950032,
+		10950033,
+		10960011,
+		10960012,
+		10960013,
+		10960021,
+		10960022,
+		10960023,
+		10960031,
+		10960032,
+		10960033,
+		10970011,
+		10970012,
+		10970013,
+		10970021,
+		10970022,
+		10970023,
+		10970031,
+		10970032,
+		10970033,
+		10990011,
+		10990012,
+		10990013,
+		10990021,
+		10990022,
+		10990023,
+		10990031,
+		10990032,
+		10990033,
+		11110011,
+		11110012,
+		11110013,
+		11110021,
+		11110022,
+		11110023,
+		11110031,
+		11110032,
+		11110033,
+		11190011,
+		11190012,
+		11190013,
+		11190021,
+		11190022,
+		11190023,
+		11190031,
+		11190032,
+		11190033,
+		11270011,
+		11270012,
+		11270013,
+		11270021,
+		11270022,
+		11270023,
+		11270031,
+		11270032,
+		11270033,
+		11320011,
+		11320012,
+		11320013,
+		11320021,
+		11320022,
+		11320023,
+		11320031,
+		11320032,
+		11320033,
 		11330011,
 		11330012,
 		11330013,
@@ -12849,14 +13137,104 @@
 		11330031,
 		11330032,
 		11330033,
-		10340011,
-		10340012,
-		10340013,
-		10340021,
-		10340022,
-		10340023,
-		10340031,
-		10340032,
-		10340033
+		11380011,
+		11380012,
+		11380013,
+		11380021,
+		11380022,
+		11380023,
+		11380031,
+		11380032,
+		11380033,
+		11390011,
+		11390012,
+		11390013,
+		11390021,
+		11390022,
+		11390023,
+		11390031,
+		11390032,
+		11390033,
+		11480011,
+		11480012,
+		11480013,
+		11480021,
+		11480022,
+		11480023,
+		11480031,
+		11480032,
+		11480033,
+		11500011,
+		11500012,
+		11500013,
+		11500021,
+		11500022,
+		11500023,
+		11500031,
+		11500032,
+		11500033,
+		11560011,
+		11560012,
+		11560013,
+		11560021,
+		11560022,
+		11560023,
+		11560031,
+		11560032,
+		11560033,
+		11580011,
+		11580012,
+		11580013,
+		11580021,
+		11580022,
+		11580023,
+		11580031,
+		11580032,
+		11580033,
+		11840011,
+		11840012,
+		11840013,
+		11840021,
+		11840022,
+		11840023,
+		11840031,
+		11840032,
+		11840033,
+		11970011,
+		11970012,
+		11970013,
+		11970021,
+		11970022,
+		11970023,
+		11970031,
+		11970032,
+		11970033,
+		11990011,
+		11990012,
+		11990013,
+		11990021,
+		11990022,
+		11990023,
+		11990031,
+		11990032,
+		11990033,
+		12480011,
+		12480012,
+		12480013,
+		12480021,
+		12480022,
+		12480023,
+		12480031,
+		12480032,
+		12480033,
+		12840011,
+		12840012,
+		12840013,
+		12840021,
+		12840022,
+		12840023,
+		12840031,
+		12840032,
+		12840033
 	}
 }

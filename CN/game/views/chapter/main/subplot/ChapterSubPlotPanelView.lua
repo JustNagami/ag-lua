@@ -37,11 +37,7 @@ function var_0_0.RefreshUI(arg_7_0)
 	local var_7_1 = ChapterClientCfg[var_7_0]
 	local var_7_2 = SpritePathCfg.ChapterPaint.path .. var_7_1.chapter_paint_2
 
-	getSpriteWithoutAtlasAsync(var_7_2, function(arg_8_0)
-		if arg_7_0.chapterImage_ then
-			arg_7_0.chapterImage_.sprite = arg_8_0
-		end
-	end)
+	SetSpriteWithoutAtlasAsync(arg_7_0.chapterImage_, var_7_2)
 	arg_7_0.titleTagController_:SetSelectedState(ChapterTools.GetChapterShowTypeData(var_7_0))
 
 	arg_7_0.chapterNameText_.text = var_7_1.name
@@ -56,11 +52,11 @@ function var_0_0.RefreshUI(arg_7_0)
 	end
 end
 
-function var_0_0.RefreshLockState(arg_9_0)
-	if arg_9_0.isLock_ then
-		arg_9_0.controller_:SetSelectedState("true")
+function var_0_0.RefreshLockState(arg_8_0)
+	if arg_8_0.isLock_ then
+		arg_8_0.controller_:SetSelectedState("true")
 	else
-		arg_9_0.controller_:SetSelectedState("false")
+		arg_8_0.controller_:SetSelectedState("false")
 	end
 end
 

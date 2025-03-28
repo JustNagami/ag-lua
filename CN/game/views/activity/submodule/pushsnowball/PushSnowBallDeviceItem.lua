@@ -53,7 +53,7 @@ function var_0_0.RefreshItem(arg_9_0)
 	arg_9_0.lockText_.text = ConditionCfg[arg_9_0.cfg_.condition_id].desc
 	arg_9_0.powerSliderImg_.fillAmount = arg_9_0.cfg_.power_star / 5
 	arg_9_0.agilitySliderImg_.fillAmount = arg_9_0.cfg_.agile_star / 5
-	arg_9_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Item_l/" .. arg_9_0.cfg_.icon)
+	arg_9_0.iconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Item_l/" .. arg_9_0.cfg_.icon)
 end
 
 function var_0_0.RefreshState(arg_10_0)

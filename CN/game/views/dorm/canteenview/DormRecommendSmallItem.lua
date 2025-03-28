@@ -33,15 +33,11 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1, arg_4_2)
 			end
 		end
 	elseif var_4_0 == 3 then
-		for iter_4_4, iter_4_5 in ipairs(GameDisplayCfg.hero_atack_type_white_tag.value) do
+		arg_4_0.recIcon_.sprite = HeroTools.GetSkillAttributeIcon(arg_4_1.tag, true)
+	elseif var_4_0 == 4 then
+		for iter_4_4, iter_4_5 in ipairs(GameDisplayCfg.hero_mechanism_type_white_tag.value) do
 			if iter_4_5[1] == arg_4_1.tag then
 				arg_4_0.recIcon_.sprite = getSprite("Atlas/Hero_arrtAtlas", iter_4_5[2])
-			end
-		end
-	elseif var_4_0 == 4 then
-		for iter_4_6, iter_4_7 in ipairs(GameDisplayCfg.hero_mechanism_type_white_tag.value) do
-			if iter_4_7[1] == arg_4_1.tag then
-				arg_4_0.recIcon_.sprite = getSprite("Atlas/Hero_arrtAtlas", iter_4_7[2])
 			end
 		end
 	end
@@ -49,8 +45,8 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1, arg_4_2)
 	local var_4_1 = CanteenEntrustData:GetCurDispatchTask().pos
 	local var_4_2 = CanteenEntrustData:GetEntrustByPos(var_4_1).tags
 
-	for iter_4_8, iter_4_9 in ipairs(var_4_2) do
-		if iter_4_9.type == var_4_0 and iter_4_9.tag == arg_4_1.tag then
+	for iter_4_6, iter_4_7 in ipairs(var_4_2) do
+		if iter_4_7.type == var_4_0 and iter_4_7.tag == arg_4_1.tag then
 			arg_4_0.statusController_:SetSelectedState("lightup")
 
 			return

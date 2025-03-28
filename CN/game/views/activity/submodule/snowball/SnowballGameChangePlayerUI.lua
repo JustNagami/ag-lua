@@ -112,7 +112,7 @@ function var_0_0.RefreshUI(arg_13_0)
 
 		local var_13_0 = SnowballGameUnitCfg[iter_13_1.id]
 
-		iter_13_1.icon_.sprite = getSpriteWithoutAtlas(var_13_0.head_image)
+		iter_13_1.icon_.sprite = pureGetSpriteWithoutAtlas(var_13_0.head_image)
 	end
 
 	local var_13_1 = arg_13_0.select and arg_13_0.select ~= arg_13_0.currentPlayer

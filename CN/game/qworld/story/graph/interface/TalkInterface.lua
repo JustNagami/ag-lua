@@ -7,6 +7,7 @@
 			local var_2_0 = SandplayStoryTalkCfg[arg_2_1]
 
 			if var_2_0 then
+				arg_2_0:RememberHistory(arg_2_1)
 				var_1_0:RenderContent(arg_2_1, arg_2_2, arg_2_3)
 
 				local var_2_1 = var_2_0.voice_actor or -1

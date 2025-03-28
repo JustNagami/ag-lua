@@ -77,7 +77,7 @@ function var_0_0.OnEnter(arg_8_0)
 end
 
 function var_0_0.RefreshUI(arg_9_0)
-	arg_9_0.heroImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. arg_9_0.cfg_.hero_id .. "_split_1")
+	arg_9_0.heroImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. arg_9_0.cfg_.hero_id .. "_split_1")
 
 	arg_9_0.heroImage_:SetNativeSize()
 

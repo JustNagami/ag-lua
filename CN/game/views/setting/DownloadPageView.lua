@@ -52,6 +52,7 @@ function var_0_0.OnEnter(arg_11_0)
 		arg_11_0:SetTitle(arg_11_0.params_.title)
 	end
 
+	arg_11_0:SetParent()
 	arg_11_0:SetProgress(0, GetTips("DOWNLOAD_START"))
 	arg_11_0.downloadStateController_:SetSelectedIndex(1)
 
@@ -134,10 +135,18 @@ function var_0_0.OnExit(arg_13_0)
 	end
 end
 
-function var_0_0.Dispose(arg_14_0)
-	arg_14_0.params_ = nil
+function var_0_0.SetParent(arg_14_0)
+	if arg_14_0.params_.needSetParent then
+		arg_14_0.transform_:SetParent(manager.ui.uiStory.transform)
+	else
+		arg_14_0.transform_:SetParent(arg_14_0:UIParent())
+	end
+end
 
-	var_0_0.super.Dispose(arg_14_0)
+function var_0_0.Dispose(arg_15_0)
+	arg_15_0.params_ = nil
+
+	var_0_0.super.Dispose(arg_15_0)
 end
 
 return var_0_0

@@ -22,8 +22,10 @@ function var_0_0.SetController(arg_3_0, arg_3_1)
 
 	if not GameToSDK.IsEditorOrPcPlatform() then
 		arg_3_0:SetCameraParams(1000, 1000, 0.03)
-	else
+	elseif GameToSDK.IsPCPlatform() then
 		arg_3_0:SetCameraParams(1, 1, 0.1)
+	else
+		arg_3_0:SetCameraParams(1, 1, 1)
 	end
 end
 
@@ -139,7 +141,7 @@ function var_0_0.SwitchLens(arg_18_0, arg_18_1)
 	else
 		arg_18_0.context.lensImgComp.gameObject:SetActive(true)
 
-		arg_18_0.context.lensImgComp.sprite = getSpriteWithoutAtlas(CaptureGameTools:GetLensPath(arg_18_1))
+		arg_18_0.context.lensImgComp.sprite = pureGetSpriteWithoutAtlas(CaptureGameTools:GetLensPath(arg_18_1))
 	end
 end
 

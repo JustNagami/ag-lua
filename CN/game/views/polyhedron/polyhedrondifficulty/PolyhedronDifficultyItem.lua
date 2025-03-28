@@ -38,7 +38,7 @@ function var_0_0.OnCtor(arg_1_0, arg_1_1, arg_1_2)
 			arg_1_0.m_des.text = GetI18NText(var_1_7.name) .. var_1_6
 		end
 
-		arg_1_0.m_icon.sprite = getSpriteWithoutAtlas(PolyhedronConst.HERO_ATTRIBUTE_ICON_PATH .. var_1_5)
+		arg_1_0.m_icon.sprite = pureGetSpriteWithoutAtlas(PolyhedronConst.HERO_ATTRIBUTE_ICON_PATH .. var_1_5)
 	end
 
 	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_1_0.m_desTrans)

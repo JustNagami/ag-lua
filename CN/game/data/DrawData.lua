@@ -226,7 +226,7 @@ function var_0_0.IsOnePrefabPool(arg_22_0, arg_22_1)
 		CustomLog.Log(debug.traceback(string.format("null")))
 	end
 
-	return (var_22_0.pool_type == 3 or var_22_0.pool_type == 8 or var_22_0.pool_type == 1) and #var_22_0.optional_lists_poolId > 2
+	return (var_22_0.pool_type == 3 or var_22_0.pool_type == 8 or var_22_0.pool_type == 1 or var_22_0.pool_type == 9) and #var_22_0.optional_lists_poolId > 2
 end
 
 function var_0_0.GetUpRemainTime(arg_23_0, arg_23_1)

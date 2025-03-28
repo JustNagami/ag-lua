@@ -85,7 +85,7 @@ end
 
 function var_0_0.RefreshRoleImage(arg_10_0)
 	local var_10_0 = SkinTrialTools.GetHeroStandardID(arg_10_0.skinTrialID_)
-	local var_10_1 = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. SkinCfg[HeroStandardSystemCfg[var_10_0].skin_id].picture_id)
+	local var_10_1 = pureGetSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. SkinCfg[HeroStandardSystemCfg[var_10_0].skin_id].picture_id)
 
 	if var_10_1 ~= nil then
 		arg_10_0.skinImage_.sprite = var_10_1

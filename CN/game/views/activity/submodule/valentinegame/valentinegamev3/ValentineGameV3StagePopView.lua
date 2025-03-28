@@ -58,7 +58,7 @@ function var_0_0.OnEnter(arg_11_0)
 	arg_11_0.storyID_ = var_11_0["stage_storyid_and_dorpid_" .. arg_11_0.stageIndex_][1]
 	arg_11_0.dropID_ = var_11_0["stage_storyid_and_dorpid_" .. arg_11_0.stageIndex_][2]
 	arg_11_0.nameText_.text = var_11_0["stage_name_" .. arg_11_0.stageIndex_]
-	arg_11_0.image_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_Com/CORGUI_3_10_ValentineUI/" .. var_11_0["stage_image_" .. arg_11_0.stageIndex_])
+	arg_11_0.image_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_Com/CORGUI_3_10_ValentineUI/" .. var_11_0["stage_image_" .. arg_11_0.stageIndex_])
 
 	local var_11_1 = false
 

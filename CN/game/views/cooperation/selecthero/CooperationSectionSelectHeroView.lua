@@ -21,7 +21,6 @@ function var_0_1.OnEnter(arg_3_0)
 	FriendsAction:TryToRefreshFriendsView(1)
 	arg_3_0:ProcessParams()
 	arg_3_0:ProcessSubView()
-	arg_3_0:UpdateCamera()
 	arg_3_0:SubViewOnEnter()
 	arg_3_0:Refresh()
 end

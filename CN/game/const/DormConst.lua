@@ -137,5 +137,9 @@ var_0_0.PROTOCOL_TILE_TYPE_INDEX = {
 	FORNT = 3,
 	LEFT = 1
 }
+var_0_0.LOCK_HERO_FOR_FEATURE = {
+	LOCK_FOR_IDOL_TRAINING = 1,
+	NONE = 0
+}
 
 return var_0_0

@@ -713,7 +713,78 @@
 			380
 		}
 	},
+	[2102] = {
+		closetime = 5,
+		priority = 1,
+		talk_adapt = 0,
+		talk_anchors = 0,
+		name = "seaWarfareNormalBattleReady",
+		narrator_icon = "1073",
+		id = 2102,
+		talk_content = "姐姐加入以后，我们的船变得更厉害了呢。",
+		narrator_name = "麟钰",
+		guide_component = {
+			"guideComponents",
+			"guide_introduce3"
+		},
+		mask_component = {},
+		opencondition = {
+			{
+				"qworldSubQuest",
+				11104003
+			},
+			{
+				"uiNameList",
+				{
+					"seaWarfareNormalBattleReady"
+				}
+			}
+		},
+		skipcondition = {},
+		talk_position = {
+			-85,
+			122
+		}
+	},
+	[2103] = {
+		closetime = 5,
+		priority = 1,
+		talk_adapt = 0,
+		talk_anchors = 0,
+		name = "qWorldBookletMain",
+		narrator_icon = "1073",
+		id = 2103,
+		talk_content = "要是在街巷中拍到了好风景，就记录在这里吧。",
+		narrator_name = "麟钰",
+		guide_component = {
+			"extraScenicBtn_"
+		},
+		mask_component = {},
+		opencondition = {
+			{
+				"qworldSubQuest",
+				11104011
+			},
+			{
+				"uiNameList",
+				{
+					"qWorldBookletMain"
+				}
+			}
+		},
+		skipcondition = {},
+		talk_position = {
+			-581,
+			133
+		}
+	},
 	get_id_list_by_name = {
+		qWorldBookletMain = {
+			2103
+		},
+		seaWarfareNormalBattleReady = {
+			2102
+		},
 		eatSnakesGame = {
 			1901
 		},
@@ -787,6 +858,8 @@
 		1701,
 		1804,
 		1805,
-		1901
+		1901,
+		2102,
+		2103
 	}
 }

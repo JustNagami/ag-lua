@@ -69,13 +69,13 @@ function var_0_0.RefreshUI(arg_13_0)
 	end
 
 	arg_13_0.desText_.text = arg_13_0.cfg_.word
-	arg_13_0.heroImage_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_13_0.cfg_.hero_id)
+	arg_13_0.heroImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_13_0.cfg_.hero_id)
 	arg_13_0.name1_.text = arg_13_0.cfg_.stage_name_1
 	arg_13_0.name2_.text = arg_13_0.cfg_.stage_name_2
 	arg_13_0.name3_.text = arg_13_0.cfg_.stage_name_3
-	arg_13_0.image1_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_Com/CORGUI_3_10_ValentineUI/" .. arg_13_0.cfg_.stage_image_1)
-	arg_13_0.image2_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_Com/CORGUI_3_10_ValentineUI/" .. arg_13_0.cfg_.stage_image_2)
-	arg_13_0.image3_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_Com/CORGUI_3_10_ValentineUI/" .. arg_13_0.cfg_.stage_image_3)
+	arg_13_0.image1_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_Com/CORGUI_3_10_ValentineUI/" .. arg_13_0.cfg_.stage_image_1)
+	arg_13_0.image2_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_Com/CORGUI_3_10_ValentineUI/" .. arg_13_0.cfg_.stage_image_2)
+	arg_13_0.image3_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/CORGUI_Com/CORGUI_3_10_ValentineUI/" .. arg_13_0.cfg_.stage_image_3)
 
 	local var_13_0 = PlayerData:GetStoryList()
 

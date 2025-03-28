@@ -163,20 +163,27 @@ function var_0_0.OnQuestUpdate(arg_11_0, arg_11_1)
 		return
 	end
 
-	QWorldQuestGraph:UpdateQuestGraph(arg_11_1)
-
 	local var_11_1 = QWorldQuestData:GetQuestData(arg_11_1)
-
-	if var_11_1.status ~= QWorldQuestConst.QUEST_STATUS.IN_PROGRESS then
-		return false
-	end
-
-	if var_11_1.progress > var_11_0.need then
-		Debug.LogWarning(string.format("%d 实际进度大于配置所需进度", arg_11_1))
-	end
 
 	if QWorldQuestTool.IsQuestCanSubmit(arg_11_1) then
 		arg_11_0:_PushFinishQuest(nil, arg_11_1)
+	else
+		QWorldQuestGraph:UpdateQuestGraph(arg_11_1)
+		QWorldQuestGraph:DispatchQuestEvent(QWorldQuestConst.QUEST_EVENT.ON_PROG_UPDATE, arg_11_1, QWorldQuestTool.GetQuestProgress(arg_11_1))
+
+		local var_11_2 = QWorldQuestData:GetQuestData(arg_11_1)
+
+		if var_11_2.status ~= QWorldQuestConst.QUEST_STATUS.IN_PROGRESS then
+			return false
+		end
+
+		if var_11_2.progress > var_11_0.need then
+			Debug.LogWarning(string.format("%d 实际进度大于配置所需进度", arg_11_1))
+		end
+
+		if QWorldQuestTool.IsQuestCanSubmit(arg_11_1) then
+			arg_11_0:_PushFinishQuest(nil, arg_11_1)
+		end
 	end
 end
 
@@ -188,13 +195,17 @@ function var_0_0.OnRemoveEntity(arg_13_0, arg_13_1)
 	return
 end
 
-function var_0_0.SetStoryEndCallback(arg_14_0, arg_14_1)
-	arg_14_0.storyEndCallback_ = arg_14_1
+function var_0_0.SetStoryEndCallback(arg_14_0, arg_14_1, arg_14_2)
+	if not arg_14_0.storyEndCallback_ then
+		arg_14_0.storyEndCallback_ = {}
+	end
+
+	arg_14_0.storyEndCallback_[arg_14_1] = arg_14_2
 end
 
 function var_0_0.OnStoryEnd(arg_15_0, arg_15_1)
-	if arg_15_0.storyEndCallback_ then
-		arg_15_0.storyEndCallback_()
+	if arg_15_0.storyEndCallback_ and arg_15_0.storyEndCallback_[arg_15_1] then
+		arg_15_0.storyEndCallback_[arg_15_1]()
 	end
 end
 
@@ -317,94 +328,80 @@ function var_0_0.UpdateEntityQuestBubble(arg_19_0, arg_19_1)
 	else
 		arg_19_0.entityBubbleList_[var_19_0.uniqueId] = nil
 	end
-
-	if QWorldQuestGraph:GetEntityBubbleQuests(arg_19_1.entityId) then
-		if not arg_19_1.entity.bubbleClick then
-			arg_19_1.entity:AddBubbleTag(0, arg_19_1.entity:GetName(), arg_19_1:GetBubbleIcon())
-
-			function arg_19_1.entity.bubbleClick(arg_21_0)
-				QWorldQuestGraph:DispatchQuestEvent(QWorldQuestConst.QUEST_EVENT.ON_BUBBLE_CLICK, arg_19_1.entityId)
-			end
-
-			arg_19_1.__bubbleByTask = true
-		end
-	elseif arg_19_1.__bubbleByTask then
-		arg_19_1.entity:RemoveBubbleTag(0)
-	end
 end
 
-function var_0_0.IsSendingQuestFinish(arg_22_0)
-	return arg_22_0.__isSendingFinishQuest or arg_22_0.__isSendingFinishMainQuest or #arg_22_0.finishQuests_ > 0 or #arg_22_0.finishMainQuests_ > 0
+function var_0_0.IsSendingQuestFinish(arg_21_0)
+	return arg_21_0.__isSendingFinishQuest or arg_21_0.__isSendingFinishMainQuest or #arg_21_0.finishQuests_ > 0 or #arg_21_0.finishMainQuests_ > 0
 end
 
-function var_0_0._OnEntityEnterInteractRange(arg_23_0, arg_23_1)
-	local var_23_0 = QWorldMgr:GetQWorldEntityMgr():GetEnt(arg_23_1.uniqueId)
+function var_0_0._OnEntityEnterInteractRange(arg_22_0, arg_22_1)
+	local var_22_0 = QWorldMgr:GetQWorldEntityMgr():GetEnt(arg_22_1.uniqueId)
 
-	arg_23_0:UpdateEntityQuestBubble(var_23_0)
+	arg_22_0:UpdateEntityQuestBubble(var_22_0)
 end
 
-function var_0_0._OnEntityExitInteractRange(arg_24_0, arg_24_1)
+function var_0_0._OnEntityExitInteractRange(arg_23_0, arg_23_1)
 	return
 end
 
-function var_0_0._OnEntityEnterZone(arg_25_0, arg_25_1, arg_25_2)
-	QWorldMgr:GetQWorldEntityMgr():SetTrackEnable(arg_25_1, false)
+function var_0_0._OnEntityEnterZone(arg_24_0, arg_24_1, arg_24_2)
+	QWorldMgr:GetQWorldEntityMgr():SetTrackEnable(arg_24_1, false)
 end
 
-function var_0_0._OnEntityExitZone(arg_26_0, arg_26_1, arg_26_2)
-	QWorldMgr:GetQWorldEntityMgr():SetTrackEnable(arg_26_1, true)
+function var_0_0._OnEntityExitZone(arg_25_0, arg_25_1, arg_25_2)
+	QWorldMgr:GetQWorldEntityMgr():SetTrackEnable(arg_25_1, true)
 end
 
-function var_0_0._OnQuestOptionClick(arg_27_0, arg_27_1, arg_27_2)
-	local var_27_0 = -arg_27_2
-	local var_27_1 = QWorldQuestData:GetMainQuestData(var_27_0)
-	local var_27_2 = SandplayTaskMainCfg[var_27_0]
+function var_0_0._OnQuestOptionClick(arg_26_0, arg_26_1, arg_26_2)
+	local var_26_0 = -arg_26_2
+	local var_26_1 = QWorldQuestData:GetMainQuestData(var_26_0)
+	local var_26_2 = SandplayTaskMainCfg[var_26_0]
 
-	if QWorldQuestTool.IsMainQuestCanReceive(var_27_0) then
-		QWorldQuestAction.TakeMainQuest(var_27_0, function()
-			arg_27_0:UpdateEntityQuestBubble(arg_27_1)
+	if QWorldQuestTool.IsMainQuestCanReceive(var_26_0) then
+		QWorldQuestAction.TakeMainQuest(var_26_0, function()
+			arg_26_0:UpdateEntityQuestBubble(arg_26_1)
 		end)
 	end
 end
 
-function var_0_0._StopTimer(arg_29_0)
-	if arg_29_0.timerNotifyServer_ then
-		arg_29_0.timerNotifyServer_:Stop()
+function var_0_0._StopTimer(arg_28_0)
+	if arg_28_0.timerNotifyServer_ then
+		arg_28_0.timerNotifyServer_:Stop()
 
-		arg_29_0.timerNotifyServer_ = nil
+		arg_28_0.timerNotifyServer_ = nil
 	end
 
-	if arg_29_0.timerFinishQuest_ then
-		arg_29_0.timerFinishQuest_:Stop()
+	if arg_28_0.timerFinishQuest_ then
+		arg_28_0.timerFinishQuest_:Stop()
 
-		arg_29_0.timerFinishQuest_ = nil
+		arg_28_0.timerFinishQuest_ = nil
 	end
 end
 
-function var_0_0._ShouldUpdateQuests(arg_30_0, arg_30_1)
-	local var_30_0 = QWorldQuestData:GetMainQuestData(arg_30_1)
+function var_0_0._ShouldUpdateQuests(arg_29_0, arg_29_1)
+	local var_29_0 = QWorldQuestData:GetMainQuestData(arg_29_1)
 
-	for iter_30_0, iter_30_1 in ipairs(var_30_0.taskIdList) do
-		if QWorldQuestData:GetQuestData(iter_30_1).status == QWorldQuestConst.QUEST_STATUS.IN_PROGRESS then
-			local var_30_1 = SandplayTaskCfg[iter_30_1]
-			local var_30_2 = var_30_1.additional_parameter
+	for iter_29_0, iter_29_1 in ipairs(var_29_0.taskIdList) do
+		if QWorldQuestData:GetQuestData(iter_29_1).status == QWorldQuestConst.QUEST_STATUS.IN_PROGRESS then
+			local var_29_1 = SandplayTaskCfg[iter_29_1]
+			local var_29_2 = var_29_1.additional_parameter
 
-			if var_30_1.condition == 61 then
-				local var_30_3 = {
+			if var_29_1.condition == 61 then
+				local var_29_3 = {
 					{
-						var_30_2[1],
-						var_30_2[2],
-						var_30_2[3]
+						var_29_2[1],
+						var_29_2[2],
+						var_29_2[3]
 					},
 					{
-						var_30_2[4],
-						var_30_2[5],
-						var_30_2[6]
+						var_29_2[4],
+						var_29_2[5],
+						var_29_2[6]
 					}
 				}
 
-				if manager.time:parseTimeFromConfig(var_30_3) <= manager.time:GetServerTime() then
-					return true, iter_30_1
+				if manager.time:parseTimeFromConfig(var_29_3) <= manager.time:GetServerTime() then
+					return true, iter_29_1
 				else
 					return true
 				end
@@ -415,198 +412,198 @@ function var_0_0._ShouldUpdateQuests(arg_30_0, arg_30_1)
 	return false
 end
 
-function var_0_0._CheckNotifyServerTimer(arg_31_0, arg_31_1)
-	if not arg_31_0:_ShouldUpdateQuests(arg_31_1) then
+function var_0_0._CheckNotifyServerTimer(arg_30_0, arg_30_1)
+	if not arg_30_0:_ShouldUpdateQuests(arg_30_1) then
 		return
 	end
 
-	if not table.indexof(arg_31_0.mainQuestsNotifyServer_, arg_31_1) then
-		table.insert(arg_31_0.mainQuestsNotifyServer_, arg_31_1)
+	if not table.indexof(arg_30_0.mainQuestsNotifyServer_, arg_30_1) then
+		table.insert(arg_30_0.mainQuestsNotifyServer_, arg_30_1)
 	end
 
-	if not arg_31_0.timerNotifyServer_ then
-		arg_31_0.timerNotifyServer_ = Timer.New(function()
-			local var_32_0 = false
-			local var_32_1 = false
-			local var_32_2 = #arg_31_0.mainQuestsNotifyServer_
+	if not arg_30_0.timerNotifyServer_ then
+		arg_30_0.timerNotifyServer_ = Timer.New(function()
+			local var_31_0 = false
+			local var_31_1 = false
+			local var_31_2 = #arg_30_0.mainQuestsNotifyServer_
 
-			while var_32_2 > 0 do
-				local var_32_3 = arg_31_0.mainQuestsNotifyServer_[var_32_2]
-				local var_32_4, var_32_5 = arg_31_0:_ShouldUpdateQuests(var_32_3)
+			while var_31_2 > 0 do
+				local var_31_3 = arg_30_0.mainQuestsNotifyServer_[var_31_2]
+				local var_31_4, var_31_5 = arg_30_0:_ShouldUpdateQuests(var_31_3)
 
-				if var_32_4 then
-					if var_32_5 then
-						var_32_1 = true
+				if var_31_4 then
+					if var_31_5 then
+						var_31_1 = true
 					end
 
-					var_32_0 = true
+					var_31_0 = true
 				else
-					table.removebyvalue(arg_31_0.mainQuestsNotifyServer_, var_32_3)
+					table.removebyvalue(arg_30_0.mainQuestsNotifyServer_, var_31_3)
 				end
 
-				var_32_2 = var_32_2 - 1
+				var_31_2 = var_31_2 - 1
 			end
 
-			if var_32_0 then
-				if var_32_1 then
+			if var_31_0 then
+				if var_31_1 then
 					QWorldQuestAction.NotifyServerUpdateQuests()
 				end
 
 				manager.notify:CallUpdateFunc("OnQWorldQuestUpdateProgress")
 			else
-				arg_31_0.timerNotifyServer_:Stop()
+				arg_30_0.timerNotifyServer_:Stop()
 
-				arg_31_0.timerNotifyServer_ = nil
+				arg_30_0.timerNotifyServer_ = nil
 			end
 		end, 5, -1)
 
-		arg_31_0.timerNotifyServer_:Start()
+		arg_30_0.timerNotifyServer_:Start()
 	end
 end
 
-function var_0_0._OnUpdateMapQuestInfoWrapped(arg_33_0, arg_33_1)
-	local var_33_0 = {}
+function var_0_0._OnUpdateMapQuestInfoWrapped(arg_32_0, arg_32_1)
+	local var_32_0 = {}
 
-	QWorldQuestGraph:GetTrackingEntityIdListRaw(arg_33_1, var_33_0)
+	QWorldQuestGraph:GetTrackingEntityIdListRaw(arg_32_1, var_32_0)
 
-	local var_33_1 = QWorldQuestTool.GetQuestStatus(arg_33_1)
+	local var_32_1 = QWorldQuestTool.GetQuestStatus(arg_32_1)
 
-	arg_33_0:OnUpdateMapQuestInfo(arg_33_1, var_33_0, var_33_1 == QWorldQuestConst.QUEST_STATUS.FINISH)
+	arg_32_0:OnUpdateMapQuestInfo(arg_32_1, var_32_0, var_32_1 == QWorldQuestConst.QUEST_STATUS.FINISH)
 end
 
-function var_0_0._FinishMainQuest(arg_34_0, arg_34_1)
-	print(string.format("自动完成主任务[%s]", table.concat(arg_34_1, ", ")))
+function var_0_0._FinishMainQuest(arg_33_0, arg_33_1)
+	print(string.format("自动完成主任务[%s]", table.concat(arg_33_1, ", ")))
 
-	arg_34_0.__isSendingFinishMainQuest = true
+	arg_33_0.__isSendingFinishMainQuest = true
 
-	QWorldQuestAction.SubmitMainQuest(arg_34_1, function(arg_35_0)
-		arg_34_0.__isSendingFinishMainQuest = false
+	QWorldQuestAction.SubmitMainQuest(arg_33_1, function(arg_34_0)
+		arg_33_0.__isSendingFinishMainQuest = false
 
-		if not isSuccess(arg_35_0.result) then
+		if not isSuccess(arg_34_0.result) then
 			return
 		end
 
-		for iter_35_0, iter_35_1 in ipairs(arg_34_1) do
-			local var_35_0 = SandplayTaskMainCfg[iter_35_1]
+		for iter_34_0, iter_34_1 in ipairs(arg_33_1) do
+			local var_34_0 = SandplayTaskMainCfg[iter_34_1]
 
-			if var_35_0.important_reward and var_35_0.important_reward ~= "" then
-				QWorldNotifyQueue:GetCriticalRewards(formatRewardCfgList(var_35_0.important_reward))
+			if var_34_0.important_reward and var_34_0.important_reward ~= "" then
+				QWorldNotifyQueue:GetCriticalRewards(formatRewardCfgList(var_34_0.important_reward))
 			end
 		end
 
-		QWorldNotifyQueue:GetRewards(arg_35_0.reward_list)
-		QWorldNotifyQueue:MainQuestsFinish(arg_34_1)
+		QWorldNotifyQueue:GetRewards(arg_34_0.reward_list)
+		QWorldNotifyQueue:MainQuestsFinish(arg_33_1)
 
-		local var_35_1 = QWorldQuestData:GetMainQuestTrackingIdRaw()
+		local var_34_1 = QWorldQuestData:GetMainQuestTrackingIdRaw()
 
-		if table.indexof(arg_34_1, var_35_1) then
-			local var_35_2 = SandplayTaskMainCfg[var_35_1].next_main_mission
+		if table.indexof(arg_33_1, var_34_1) then
+			local var_34_2 = SandplayTaskMainCfg[var_34_1].next_main_mission
 
-			if var_35_2 == 0 or QWorldQuestTool.IsMainQuestFinish(var_35_2) then
-				var_35_2 = QWorldQuestTool.FindFirstTrackableMainQuestId()
+			if var_34_2 == 0 or QWorldQuestTool.IsMainQuestFinish(var_34_2) then
+				var_34_2 = QWorldQuestTool.FindFirstTrackableMainQuestId()
 			end
 
-			if var_35_2 ~= -1 and QWorldQuestData:GetMainQuestData(var_35_2) then
-				QWorldQuestAction.UpdateTrackingMainQuestId(var_35_2, function()
-					QWorldQuestAction.SendUpdateQuestTrackToSdk(var_35_2, QWorldQuestConst.SDK_QUEST_TRACK_TYPE.AUTO_TRACK)
+			if var_34_2 ~= -1 and QWorldQuestData:GetMainQuestData(var_34_2) then
+				QWorldQuestAction.UpdateTrackingMainQuestId(var_34_2, function()
+					QWorldQuestAction.SendUpdateQuestTrackToSdk(var_34_2, QWorldQuestConst.SDK_QUEST_TRACK_TYPE.AUTO_TRACK)
 				end)
 			else
 				QWorldQuestAction.UpdateTrackingMainQuestId(-1)
 			end
 		elseif QWorldQuestTool.GetMainQuestTrackingId() == -1 then
-			local var_35_3 = false
-			local var_35_4 = 0
+			local var_34_3 = false
+			local var_34_4 = 0
 
-			for iter_35_2, iter_35_3 in ipairs(arg_34_1) do
-				local var_35_5 = SandplayTaskMainCfg[iter_35_3]
+			for iter_34_2, iter_34_3 in ipairs(arg_33_1) do
+				local var_34_5 = SandplayTaskMainCfg[iter_34_3]
 
-				if var_35_5.next_main_mission ~= 0 and QWorldQuestTool.IsMainQuestTrackable(var_35_5.next_main_mission, true) then
-					var_35_4 = var_35_5.next_main_mission
+				if var_34_5.next_main_mission ~= 0 and QWorldQuestTool.IsMainQuestTrackable(var_34_5.next_main_mission, true) then
+					var_34_4 = var_34_5.next_main_mission
 				end
 
-				if var_35_5.hide_task == 0 then
-					var_35_3 = true
+				if var_34_5.hide_task == 0 then
+					var_34_3 = true
 				end
 			end
 
-			if var_35_4 == 0 then
-				if var_35_3 then
-					var_35_4 = QWorldQuestTool.FindFirstTrackableMainQuestId()
+			if var_34_4 == 0 then
+				if var_34_3 then
+					var_34_4 = QWorldQuestTool.FindFirstTrackableMainQuestId()
 				else
-					var_35_4 = -1
+					var_34_4 = -1
 				end
 			end
 
-			if var_35_4 ~= -1 and QWorldQuestData:GetMainQuestData(var_35_4) then
-				QWorldQuestAction.UpdateTrackingMainQuestId(var_35_4, function()
-					QWorldQuestAction.SendUpdateQuestTrackToSdk(var_35_4, QWorldQuestConst.SDK_QUEST_TRACK_TYPE.AUTO_TRACK)
+			if var_34_4 ~= -1 and QWorldQuestData:GetMainQuestData(var_34_4) then
+				QWorldQuestAction.UpdateTrackingMainQuestId(var_34_4, function()
+					QWorldQuestAction.SendUpdateQuestTrackToSdk(var_34_4, QWorldQuestConst.SDK_QUEST_TRACK_TYPE.AUTO_TRACK)
 				end)
 			end
 		end
 	end)
 end
 
-function var_0_0._FinishQuest(arg_38_0, arg_38_1)
-	print(string.format("自动完成任务[%s]", table.concat(arg_38_1, ", ")))
+function var_0_0._FinishQuest(arg_37_0, arg_37_1)
+	print(string.format("自动完成任务[%s]", table.concat(arg_37_1, ", ")))
 
-	arg_38_0.__isSendingFinishQuest = true
+	arg_37_0.__isSendingFinishQuest = true
 
-	QWorldQuestAction.SubmitQuest(arg_38_1, function(arg_39_0)
-		arg_38_0.__isSendingFinishQuest = false
+	QWorldQuestAction.SubmitQuest(arg_37_1, function(arg_38_0)
+		arg_37_0.__isSendingFinishQuest = false
 
-		if not isSuccess(arg_39_0.result) then
+		if not isSuccess(arg_38_0.result) then
 			return
 		end
 
-		QWorldNotifyQueue:GetRewards(arg_39_0.reward_list)
+		QWorldNotifyQueue:GetRewards(arg_38_0.reward_list)
 
-		for iter_39_0, iter_39_1 in ipairs(arg_38_1) do
-			QWorldQuestGraph:UpdateQuestGraph(iter_39_1)
+		for iter_38_0, iter_38_1 in ipairs(arg_37_1) do
+			QWorldQuestGraph:UpdateQuestGraph(iter_38_1)
 		end
 	end)
 end
 
-function var_0_0._PushFinishQuest(arg_40_0, arg_40_1, arg_40_2)
-	if arg_40_2 and not table.indexof(arg_40_0.finishQuests_, arg_40_2) then
-		table.insert(arg_40_0.finishQuests_, arg_40_2)
+function var_0_0._PushFinishQuest(arg_39_0, arg_39_1, arg_39_2)
+	if arg_39_2 and not table.indexof(arg_39_0.finishQuests_, arg_39_2) then
+		table.insert(arg_39_0.finishQuests_, arg_39_2)
 	end
 
-	if arg_40_1 and not table.indexof(arg_40_0.finishMainQuests_, arg_40_1) then
-		table.insert(arg_40_0.finishMainQuests_, arg_40_1)
+	if arg_39_1 and not table.indexof(arg_39_0.finishMainQuests_, arg_39_1) then
+		table.insert(arg_39_0.finishMainQuests_, arg_39_1)
 	end
 
-	if not arg_40_0.timerFinishQuest_ then
-		arg_40_0.timerFinishQuest_ = Timer.New(function()
-			local var_41_0 = true
+	if not arg_39_0.timerFinishQuest_ then
+		arg_39_0.timerFinishQuest_ = Timer.New(function()
+			local var_40_0 = true
 
-			if #arg_40_0.finishQuests_ > 0 then
-				var_41_0 = false
+			if #arg_39_0.finishQuests_ > 0 then
+				var_40_0 = false
 
-				if not arg_40_0.__isSendingFinishQuest then
-					arg_40_0:_FinishQuest(arg_40_0.finishQuests_)
+				if not arg_39_0.__isSendingFinishQuest then
+					arg_39_0:_FinishQuest(arg_39_0.finishQuests_)
 
-					arg_40_0.finishQuests_ = {}
+					arg_39_0.finishQuests_ = {}
 				end
 			end
 
-			if #arg_40_0.finishMainQuests_ > 0 then
-				var_41_0 = false
+			if #arg_39_0.finishMainQuests_ > 0 then
+				var_40_0 = false
 
-				if not arg_40_0.__isSendingFinishMainQuest then
-					arg_40_0:_FinishMainQuest(arg_40_0.finishMainQuests_)
+				if not arg_39_0.__isSendingFinishMainQuest then
+					arg_39_0:_FinishMainQuest(arg_39_0.finishMainQuests_)
 
-					arg_40_0.finishMainQuests_ = {}
+					arg_39_0.finishMainQuests_ = {}
 				end
 			end
 
-			if var_41_0 then
-				arg_40_0.timerFinishQuest_:Stop()
+			if var_40_0 then
+				arg_39_0.timerFinishQuest_:Stop()
 
-				arg_40_0.timerFinishQuest_ = nil
+				arg_39_0.timerFinishQuest_ = nil
 			end
 		end, 0.1, -1)
 
-		arg_40_0.timerFinishQuest_:Start()
+		arg_39_0.timerFinishQuest_:Start()
 	end
 end
 

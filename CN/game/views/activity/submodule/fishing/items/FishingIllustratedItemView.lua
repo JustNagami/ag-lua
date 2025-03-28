@@ -99,7 +99,7 @@ function var_0_0.UpdateView(arg_12_0)
 	arg_12_0.fishIcon_:SetId(arg_12_0.id_)
 
 	arg_12_0.costIcon_.sprite = ItemTools.getItemLittleSprite(CurrencyConst.CURRENCY_TYPE_SUMMER_FISHING_COIN)
-	arg_12_0.pic_.sprite = getSpriteWithoutAtlas("TextureConfig/Fishing/FishRole/" .. arg_12_0.id_)
+	arg_12_0.pic_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Fishing/FishRole/" .. arg_12_0.id_)
 
 	arg_12_0.pic_:SetNativeSize()
 

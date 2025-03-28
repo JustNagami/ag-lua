@@ -119,7 +119,7 @@ function var_0_0.RefreshUI(arg_18_0)
 	arg_18_0.scoreText_.text = arg_18_0.info.score
 	arg_18_0.nameText_.text = arg_18_0.stageData:GetName()
 	arg_18_0.playerNameText_.text = PlayerData:GetPlayerInfo().nick
-	arg_18_0.heroImg_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/snowballPortrait2/" .. PushSnowBallData:GetSelectedHeroID())
+	arg_18_0.heroImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/IndiaUI_2_8/snowballPortrait2/" .. PushSnowBallData:GetSelectedHeroID())
 
 	if arg_18_0.info.type == 1 then
 		arg_18_0.teamController_:SetSelectedState("boss")

@@ -71,11 +71,29 @@
 			601
 		}
 	},
+	assetpend_common_branch_b = {
+		asset_name = "迷蝶所归处 剧情资源包",
+		asset_type = 2,
+		asset_id = "assetpend_common_branch_b",
+		asset_desc = "进入支线迷蝶所归处所必须的场景、语音、视频资源",
+		asset_stage_type = {
+			601
+		}
+	},
 	assetpend_common_branch_c = {
 		asset_name = "逆潮鲸歌 剧情资源包",
 		asset_type = 2,
 		asset_id = "assetpend_common_branch_c",
 		asset_desc = "进入支线逆潮鲸歌所必须的场景、语音、视频资源",
+		asset_stage_type = {
+			601
+		}
+	},
+	assetpend_common_branch_d = {
+		asset_name = "君瞻长夜星  剧情资源包",
+		asset_type = 2,
+		asset_id = "assetpend_common_branch_d",
+		asset_desc = "进入支线君瞻长夜星所必须的场景、语音、视频资源",
 		asset_stage_type = {
 			601
 		}
@@ -276,7 +294,9 @@
 		},
 		[601] = {
 			"assetpend_common_branch_a",
+			"assetpend_common_branch_b",
 			"assetpend_common_branch_c",
+			"assetpend_common_branch_d",
 			"assetpend_common_branch_e",
 			"assetpend_common_branch_f",
 			"assetpend_common_branch_g",

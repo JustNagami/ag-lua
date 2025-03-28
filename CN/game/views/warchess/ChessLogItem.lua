@@ -26,7 +26,7 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1, arg_4_2)
 	local var_4_1 = WarChessData:GetCurrentWarChessMapData().mapId
 	local var_4_2 = WarchessLevelCfg[var_4_1].log_icon
 
-	arg_4_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. var_4_2)
+	arg_4_0.iconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Story/Character/" .. var_4_2)
 end
 
 function var_0_0.AddUIListener(arg_5_0)

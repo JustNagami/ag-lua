@@ -47,12 +47,11 @@ function var_0_0.AddMiddlePanelUILisener(arg_1_0)
 		HomeSceneSettingAction.ChangeSceneTab(arg_1_0.skinId_)
 	end)
 	arg_1_0:AddBtnListener(arg_1_0.hideViewBtn_, nil, function()
-		arg_1_0.isHide_ = true
+		arg_1_0:SetPureMode(false)
 
-		arg_1_0:RefreshHide()
-		arg_1_0:StartViewHideTimer()
-		arg_1_0.animator_:Play("HomeUI_hide", -1, 0)
-		OperationRecorder.RecordButtonTouch("homepage_hide")
+		arg_1_0.isPureMode_ = true
+
+		arg_1_0:RecordPureModeLog(true, PureModeConst.EnterMode.mode1)
 	end)
 	arg_1_0:AddBtnListener(arg_1_0.showAniSkipBtn_, nil, function()
 		manager.posterGirl:SkipDebut()
@@ -61,38 +60,49 @@ function var_0_0.AddMiddlePanelUILisener(arg_1_0)
 	arg_1_0:AddBtnListener(arg_1_0.bgmaskBtn_, nil, function()
 		arg_1_0:OnClickBg()
 	end)
+	arg_1_0:AddBtnListener(arg_1_0.btn_arrow_hide2Btn_, nil, function()
+		arg_1_0:SetPureModeBtnActive(false)
+		arg_1_0:RecordPureModeLog(false)
+		arg_1_0:StopAllTimers()
+
+		arg_1_0.isPureMode_ = false
+
+		JumpTools.OpenPageByJump("PureModeView", {
+			enterType = PureModeConst.EnterMode.mode4
+		})
+	end)
 end
 
-function var_0_0.AddRightPanelUIListener(arg_10_0)
-	arg_10_0:AddBtnListenerScale(arg_10_0.btnPreviewTask_, nil, function()
+function var_0_0.AddRightPanelUIListener(arg_11_0)
+	arg_11_0:AddBtnListenerScale(arg_11_0.btnPreviewTask_, nil, function()
 		JumpTools.OpenPageByJump("previewTaskMain")
 	end)
-	arg_10_0:AddBtnListenerScale(arg_10_0.btn_task, nil, function()
+	arg_11_0:AddBtnListenerScale(arg_11_0.btn_task, nil, function()
 		OperationRecorder.RecordButtonTouch("homepage_task")
 		JumpTools.GoToSystem("/task", {
 			initNormalizedPosition = true,
 			taskIndex = TaskConst.TASK_TYPE.DAILY
 		}, ViewConst.SYSTEM_ID.TASK_PLOT)
 	end)
-	arg_10_0:AddBtnListenerScale(arg_10_0.btn_mail, nil, function()
+	arg_11_0:AddBtnListenerScale(arg_11_0.btn_mail, nil, function()
 		OperationRecorder.RecordButtonTouch("homepage_mail")
 
-		local var_13_0 = handler(arg_10_0, function()
+		local var_14_0 = handler(arg_11_0, function()
 			JumpTools.GoToSystem("/mailBox")
 		end)
 
-		MailData.GetMailListFromServer(var_13_0)
+		MailData.GetMailListFromServer(var_14_0)
 		MailData.ClickMailBtn(manager.time:GetServerTime())
 	end)
-	arg_10_0:AddBtnListenerScale(arg_10_0.btn_menu, nil, function()
+	arg_11_0:AddBtnListenerScale(arg_11_0.btn_menu, nil, function()
 		OperationRecorder.RecordButtonTouch("homepage_function")
 		JumpTools.OpenPageByJump("menuPop")
 	end)
-	arg_10_0:AddBtnListener(arg_10_0.btn_combat, nil, function()
-		local var_16_0 = getData("SDK", "btn_homepage_combat")
-		local var_16_1 = TimeMgr:GetServerTime()
+	arg_11_0:AddBtnListener(arg_11_0.btn_combat, nil, function()
+		local var_17_0 = getData("SDK", "btn_homepage_combat")
+		local var_17_1 = TimeMgr:GetServerTime()
 
-		if var_16_0 == nil or not TimeMgr:IsSameDay(var_16_0, var_16_1) then
+		if var_17_0 == nil or not TimeMgr:IsSameDay(var_17_0, var_17_1) then
 			saveData("SDK", "btn_homepage_combat", TimeMgr:GetServerTime())
 			OperationRecorder.RecordButtonTouch("homepage_combat")
 		end
@@ -101,7 +111,7 @@ function var_0_0.AddRightPanelUIListener(arg_10_0)
 			chapterToggle = BattleConst.TOGGLE.MAIN
 		}, ViewConst.SYSTEM_ID.BATTLE)
 	end)
-	arg_10_0:AddBtnListenerScale(arg_10_0.btn_goddess, nil, function()
+	arg_11_0:AddBtnListenerScale(arg_11_0.btn_goddess, nil, function()
 		OperationRecorder.RecordButtonTouch("homepage_hero")
 		HeroData:SetupHeroMainOpenStatus(true)
 		JumpTools.GoToSystem("/newHero", {
@@ -109,25 +119,25 @@ function var_0_0.AddRightPanelUIListener(arg_10_0)
 			type = HeroConst.HERO_DATA_TYPE.DEFAULT
 		}, ViewConst.SYSTEM_ID.HERO)
 	end)
-	arg_10_0:AddBtnListenerScale(arg_10_0.btn_shop, nil, function()
+	arg_11_0:AddBtnListenerScale(arg_11_0.btn_shop, nil, function()
 		OperationRecorder.RecordButtonTouch("homepage_shop")
 		JumpTools.GoToSystem("/rechargeEnter", nil, ViewConst.SYSTEM_ID.SHOP_ENTER)
 	end)
-	arg_10_0:AddBtnListenerScale(arg_10_0.btn_backPake, nil, function()
+	arg_11_0:AddBtnListenerScale(arg_11_0.btn_backPake, nil, function()
 		OperationRecorder.RecordButtonTouch("homepage_warehouse")
 		JumpTools.GoToSystem("/bag", nil, ViewConst.SYSTEM_ID.BAG)
 	end)
-	arg_10_0:AddBtnListenerScale(arg_10_0.btnGuild_, nil, function()
+	arg_11_0:AddBtnListenerScale(arg_11_0.btnGuild_, nil, function()
 		if JumpTools.IsSystemOperationStoped(ViewConst.SYSTEM_ID.GUILD) then
 			ShowTips("ERROR_FUNCTION_STOP")
 
 			return nil
 		end
 
-		local var_20_0 = JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.GUILD)
+		local var_21_0 = JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.GUILD)
 
-		if var_20_0 then
-			ShowTips(JumpTools.GetSystemLockedTip(ViewConst.SYSTEM_ID.GUILD, var_20_0))
+		if var_21_0 then
+			ShowTips(JumpTools.GetSystemLockedTip(ViewConst.SYSTEM_ID.GUILD, var_21_0))
 
 			return
 		end
@@ -135,31 +145,31 @@ function var_0_0.AddRightPanelUIListener(arg_10_0)
 		if GuildData:GetGuildInfo().id == nil then
 			GuildAction.EnterGuild()
 		else
-			GuildAction.RequiredGuildInfo(function(arg_21_0)
-				if isSuccess(arg_21_0.result) then
+			GuildAction.RequiredGuildInfo(function(arg_22_0)
+				if isSuccess(arg_22_0.result) then
 					JumpTools.OpenPageByJump("/guildEntrace/guildMain")
 				else
-					ShowTips(arg_21_0.result)
+					ShowTips(arg_22_0.result)
 				end
 			end)
 		end
 	end)
-	arg_10_0:AddBtnListenerScale(arg_10_0.btn_dorm_, nil, function()
-		local var_22_0 = JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.DORM)
+	arg_11_0:AddBtnListenerScale(arg_11_0.btn_dorm_, nil, function()
+		local var_23_0 = JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.DORM)
 
-		if var_22_0 then
-			ShowTips(JumpTools.GetSystemLockedTip(ViewConst.SYSTEM_ID.DORM, var_22_0))
+		if var_23_0 then
+			ShowTips(JumpTools.GetSystemLockedTip(ViewConst.SYSTEM_ID.DORM, var_23_0))
 
 			return nil
 		end
 
-		local function var_22_1()
+		local function var_23_1()
 			manager.posterGirl:SetViewTag(PosterGirlConst.ViewTag.null)
 
-			local var_23_0 = GameDisplayCfg.dorm_begin_story.value[1]
+			local var_24_0 = GameDisplayCfg.dorm_begin_story.value[1]
 
-			if var_23_0 and not manager.story:IsStoryPlayed(var_23_0) then
-				manager.story:StartStoryById(var_23_0, function(arg_24_0)
+			if var_24_0 and not manager.story:IsStoryPlayed(var_24_0) then
+				manager.story:StartStoryById(var_24_0, function(arg_25_0)
 					JumpTools.OpenPageByJump("/dormChooseRoomView")
 				end)
 			else
@@ -169,9 +179,9 @@ function var_0_0.AddRightPanelUIListener(arg_10_0)
 			OperationRecorder.RecordButtonTouch("homepage_backhome")
 		end
 
-		BackHomeDataManager:EnterBackHomeSystem(var_22_1)
+		BackHomeDataManager:EnterBackHomeSystem(var_23_1)
 	end)
-	arg_10_0:AddBtnListenerScale(arg_10_0.btn_draw, nil, function()
+	arg_11_0:AddBtnListenerScale(arg_11_0.btn_draw, nil, function()
 		OperationRecorder.RecordButtonTouch("homepage_draw")
 		JumpTools.GoToSystem("/draw", {
 			isFirst = true
@@ -179,51 +189,42 @@ function var_0_0.AddRightPanelUIListener(arg_10_0)
 	end)
 end
 
-function var_0_0.AddLeftPanelUIListener(arg_26_0)
-	arg_26_0:AddBtnListener(arg_26_0.appearViewBtn_, nil, function()
-		arg_26_0:StopViewHideTimer()
-		SetActive(arg_26_0.appearViewBtn_.gameObject, false)
-
-		arg_26_0.isHide_ = false
-
-		arg_26_0:RefreshHide()
-		arg_26_0.animator_:Play("HomeUI_cx", -1, 0)
-	end)
-	arg_26_0:AddBtnListener(arg_26_0.btn_message, nil, function()
+function var_0_0.AddLeftPanelUIListener(arg_27_0)
+	arg_27_0:AddBtnListener(arg_27_0.btn_message, nil, function()
 		OperationRecorder.RecordButtonTouch("homepage_userinfo")
 		OpenPageUntilLoaded("/userinfo", {
 			page = "info"
 		}, ViewConst.SYSTEM_ID.PLAYER_INFO)
 	end)
-	arg_26_0:AddBtnListener(arg_26_0.btn_callback, nil, function()
+	arg_27_0:AddBtnListener(arg_27_0.btn_callback, nil, function()
 		local var_29_0 = ActivityConst.RECALL_MAIN
 
 		ActivityRecallAction.RequestOpenRecallView(var_29_0, function()
 			JumpTools.GoToSystem("/recallMain", nil)
 		end)
 	end)
-	arg_26_0:AddBtnListenerScale(arg_26_0.btn_regression, nil, function()
+	arg_27_0:AddBtnListenerScale(arg_27_0.btn_regression, nil, function()
 		OperationRecorder.RecordButtonTouch("homepage_regression")
-		RegressionAction.CheckRegressionStory({
+		RegressionActionNew.CheckRegressionStory({
 			isEnter = true,
 			Inited = false
 		})
 	end)
-	arg_26_0:AddBtnListenerScale(arg_26_0.buttonNewbie_, nil, function()
+	arg_27_0:AddBtnListenerScale(arg_27_0.buttonNewbie_, nil, function()
 		OperationRecorder.RecordButtonTouch("homepage_new_task")
 		ActivityNewbieTools.GotoMainView()
 	end)
-	arg_26_0:AddBtnListenerScale(arg_26_0.btn_newbie_task, nil, function()
+	arg_27_0:AddBtnListenerScale(arg_27_0.btn_newbie_task, nil, function()
 		OperationRecorder.RecordButtonTouch("homepage_study")
 		ActivityNewbieTools.GotoNoobAdvanceTaskView()
 	end)
-	arg_26_0:AddBtnListenerScale(arg_26_0.advanceTestBtn_, nil, function()
+	arg_27_0:AddBtnListenerScale(arg_27_0.advanceTestBtn_, nil, function()
 		JumpTools.OpenPageByJump("advanceTestEntrace")
 	end)
-	arg_26_0:AddBtnListenerScale(arg_26_0.advanceMonsterTestBtn_, nil, function()
+	arg_27_0:AddBtnListenerScale(arg_27_0.advanceMonsterTestBtn_, nil, function()
 		JumpTools.GoToSystem("/advanceMonsterTestMainView")
 	end)
-	arg_26_0:AddBtnListenerScale(arg_26_0.btn_passport, nil, function()
+	arg_27_0:AddBtnListenerScale(arg_27_0.btn_passport, nil, function()
 		OperationRecorder.RecordButtonTouch("homepage_bp")
 
 		if not PassportData:IsOpen() then
@@ -234,38 +235,21 @@ function var_0_0.AddLeftPanelUIListener(arg_26_0)
 
 		JumpTools.OpenPageByJump("/passportMain", nil, ViewConst.SYSTEM_ID.PASSPORT_MAIN)
 	end)
-	arg_26_0:AddBtnListenerScale(arg_26_0.btn_gm, nil, function()
+	arg_27_0:AddBtnListenerScale(arg_27_0.btn_gm, nil, function()
 		JumpTools.GoToSystem("gm")
 	end)
-	arg_26_0:AddBtnListenerScale(arg_26_0.btn_heroInteractionGM, nil, function()
+	arg_27_0:AddBtnListenerScale(arg_27_0.btn_heroInteractionGM, nil, function()
 		JumpTools.GoToSystem("heroInteractionGM", {
-			skinId = arg_26_0.skinId_
+			skinId = arg_27_0.skinId_
 		})
 	end)
-	arg_26_0:AddBtnListener(arg_26_0.btn_story, nil, function()
+	arg_27_0:AddBtnListener(arg_27_0.btn_story, nil, function()
 		JumpTools.GoToSystem("/storylist")
 	end)
-	arg_26_0:AddBtnListenerScale(arg_26_0.btn_newServer, nil, function()
+	arg_27_0:AddBtnListenerScale(arg_27_0.btn_newServer, nil, function()
 		JumpTools.OpenPageByJump("/activityNewServerMain")
 	end)
-	arg_26_0:AddBtnListenerScale(arg_26_0.btn_friends_, nil, function()
-		local var_41_0 = ViewConst.SYSTEM_ID.FRIEND
-		local var_41_1 = JumpTools.IsSystemLocked(var_41_0)
-
-		if var_41_0 and var_41_1 then
-			ShowTips(JumpTools.GetSystemLockedTip(var_41_0, var_41_1))
-
-			return
-		end
-
-		FriendsAction:TryToRefreshFriendsView(FriendsConst.FRIEND_TYPE.MY_FRIENDS, function()
-			OperationRecorder.RecordButtonTouch("homepage_firend")
-			JumpTools.GoToSystem("/friendsUI", {
-				friendPage = FriendsConst.FRIEND_TYPE.MY_FRIENDS
-			}, ViewConst.SYSTEM_ID.FRIEND)
-		end)
-	end)
-	arg_26_0:AddBtnListenerScale(arg_26_0.btn_chat, nil, function()
+	arg_27_0:AddBtnListenerScale(arg_27_0.btn_chat, nil, function()
 		OperationRecorder.RecordButtonTouch("homepage_chat")
 		JumpTools.GoToSystem("/chat", {
 			chatToggleID = ChatConst.CHAT_CHANNEL_WORLD
@@ -273,25 +257,28 @@ function var_0_0.AddLeftPanelUIListener(arg_26_0)
 	end)
 end
 
-function var_0_0.AddUIListenersHome(arg_44_0)
-	function arg_44_0.mutiTouchHelper_.OnIdle()
+function var_0_0.AddUIListenersHome(arg_42_0)
+	function arg_42_0.mutiTouchHelper_.OnIdle()
 		manager.posterGirl:TouchHelpIdle()
 	end
 
-	function arg_44_0.mutiTouchHelper_.OnSingleDrag(arg_46_0, arg_46_1)
-		manager.posterGirl:TouchHelpSingleDrag(arg_46_0, arg_46_1)
+	function arg_42_0.mutiTouchHelper_.OnSingleDrag(arg_44_0, arg_44_1)
+		manager.posterGirl:TouchHelpSingleDrag(arg_44_0, arg_44_1)
 	end
 
-	function arg_44_0.mutiTouchHelper_.OnMutiDrag(arg_47_0)
-		manager.posterGirl:TouchHelpMutiDrag(arg_47_0)
+	function arg_42_0.mutiTouchHelper_.OnMutiDrag(arg_45_0)
+		manager.posterGirl:TouchHelpMutiDrag(arg_45_0)
 	end
 
-	function arg_44_0.mutiTouchHelper_.OnClick()
-		arg_44_0:ShowPosterGirlBtn()
-		arg_44_0:DelayToPlayMultiTouchInteraction()
+	function arg_42_0.mutiTouchHelper_.EndDrag()
+		manager.posterGirl:EndDrag()
 	end
 
-	arg_44_0:AddBtnListener(arg_44_0.timeSwitchBtn_, nil, function()
+	function arg_42_0.mutiTouchHelper_.OnClick()
+		arg_42_0:DelayToPlayMultiTouchInteraction()
+	end
+
+	arg_42_0:AddBtnListener(arg_42_0.timeSwitchBtn_, nil, function()
 		if Time.realtimeSinceStartup < var_0_1 + 1 then
 			return
 		end
@@ -300,13 +287,13 @@ function var_0_0.AddUIListenersHome(arg_44_0)
 
 		HomeSceneSettingAction.ChangeTimeScene()
 
-		arg_44_0.updateBgm_ = true
+		arg_42_0.updateBgm_ = true
 
 		HomeSceneSettingData:SetIsSwitchTime(true)
 		HomeSceneSettingData:SetIsTimeScene(false)
 		OperationRecorder.RecordButtonTouch("poster_scene")
 	end)
-	arg_44_0:AddBtnListener(arg_44_0.weatherSwitchBtn_, nil, function()
+	arg_42_0:AddBtnListener(arg_42_0.weatherSwitchBtn_, nil, function()
 		if Time.realtimeSinceStartup < var_0_1 + 1 then
 			return
 		end
@@ -318,5 +305,25 @@ function var_0_0.AddUIListenersHome(arg_44_0)
 		else
 			manager.loadScene:SetSceneWeather(SceneConst.HOME_SCENE_WEATHER.SUNNY)
 		end
+	end)
+	arg_42_0:AddBtnListener(arg_42_0.customCenterBtn_, nil, function()
+		PlayerData:SetIsDeskMode(false)
+		JumpTools.OpenPageByJump("/customCenter")
+	end)
+	arg_42_0:AddBtnListener(arg_42_0.btn_zuo01Btn_, nil, function()
+		if PosterGirlTools.CanInterruptCurAni() then
+			return
+		end
+
+		manager.posterGirl:SwipeToLeft()
+		arg_42_0:UpdatePosterGirlBtn()
+	end)
+	arg_42_0:AddBtnListener(arg_42_0.btn_youBtn_, nil, function()
+		if PosterGirlTools.CanInterruptCurAni() then
+			return
+		end
+
+		manager.posterGirl:SwipeToRight()
+		arg_42_0:UpdatePosterGirlBtn()
 	end)
 end

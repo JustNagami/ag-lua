@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("HellaStoryRemasteredView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/BranchlineUI/HellaSelectStageUI"
+	return "Widget/System/Operation/ChapterSectionUI/HellaSelectStageUI"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -43,10 +43,17 @@ function var_0_0.OnEnter(arg_4_0)
 	arg_4_0:RefreshData()
 
 	local var_4_0 = getChapterClientCfgByChapterID(arg_4_0.selectChapterID_)
-	local var_4_1 = ChapterClientCfg[var_4_0.id].chapter_list
+	local var_4_1 = var_4_0.id
+
+	if not getData("SUB_PLOT_CHAPTER", "NEW_TAG_" .. var_4_1) then
+		saveData("SUB_PLOT_CHAPTER", "NEW_TAG_" .. var_4_1, 1)
+		manager.redPoint:setTip(string.format("%s_%s", RedPointConst.COMBAT_SUB_POLT_NEW_TAG, var_4_1), 0, RedPointStyle.SHOW_NEW_TAG)
+	end
+
+	local var_4_2 = ChapterClientCfg[var_4_0.id].chapter_list
 
 	for iter_4_0 = 1, 3 do
-		arg_4_0.storyChapterView_[iter_4_0] = arg_4_0.storyChapterView_[iter_4_0] or HellaStoryChapterView.New(arg_4_0[string.format("chapterBtn%s_", iter_4_0)], var_4_1[iter_4_0])
+		arg_4_0.storyChapterView_[iter_4_0] = arg_4_0.storyChapterView_[iter_4_0] or HellaStoryChapterView.New(arg_4_0[string.format("chapterBtn%s_", iter_4_0)], var_4_2[iter_4_0])
 	end
 
 	for iter_4_1, iter_4_2 in pairs(arg_4_0.storyChapterView_) do
@@ -57,7 +64,7 @@ function var_0_0.OnEnter(arg_4_0)
 	BattleStageAction.ClickSubPlot(arg_4_0.selectChapterID_)
 	manager.notify:RegistListener(CHANGE_CHAPTER, arg_4_0.changeChapterHandler_)
 	arg_4_0.extraStoryView_:OnEnter()
-	manager.redPoint:bindUIandKey(arg_4_0.transformRedPoint2_, string.format("%s_%s", RedPointConst.COMBAT_SUB_PLOT_CHAPTER, var_4_1[4]))
+	manager.redPoint:bindUIandKey(arg_4_0.transformRedPoint2_, string.format("%s_%s", RedPointConst.COMBAT_SUB_PLOT_CHAPTER, var_4_2[4]))
 end
 
 function var_0_0.OnExit(arg_6_0)
@@ -132,6 +139,7 @@ function var_0_0.AddListeners(arg_9_0)
 				BattleFieldData:SetStageByClientID(var_10_0.id, var_10_4)
 				BattleFieldData:SetCacheChapterClient(getChapterToggle(var_10_0.id), var_10_0.id)
 				BattleFieldData:SetSecondCacheChapter(getChapterToggle(var_10_0.id), arg_9_0.selectChapterID_)
+				BattleFieldData:SetCacheChapter(var_10_0.id, var_10_3)
 				BattleStageAction.ClickSubPlot(var_10_3)
 				JumpTools.Jump2SubPlot(var_10_0.id, true)
 			end
@@ -141,6 +149,7 @@ function var_0_0.AddListeners(arg_9_0)
 
 			BattleFieldData:SetStageByClientID(var_10_0.id, var_10_6)
 			BattleFieldData:SetCacheChapterClient(getChapterToggle(var_10_0.id), var_10_0.id)
+			BattleFieldData:SetCacheChapter(var_10_0.id, var_10_5)
 			JumpTools.Jump2SubPlot(var_10_0.id, true)
 		end
 	end)

@@ -96,6 +96,10 @@ function var_0_0.Render(arg_12_0)
 
 		local var_12_6, var_12_7, var_12_8 = ActivityMultiRewardData:GetLastBattleMultiData()
 
+		if not var_12_8 or not var_12_6 or not (var_12_6 > 0) then
+			_, _, var_12_8 = RegressionDataNew:GetMultipleValue()
+		end
+
 		arg_12_0.multiRatioText_.text = var_12_8 / 100
 
 		SetActive(arg_12_0.multiGo_, true)

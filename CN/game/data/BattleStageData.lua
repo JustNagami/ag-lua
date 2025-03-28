@@ -11,8 +11,8 @@ function var_0_0.Init(arg_1_0)
 	arg_1_0.mapLocationInfo_ = {}
 	arg_1_0.mapLocationEventList_ = {}
 	arg_1_0.operateChapterDayList_ = {}
-	arg_1_0.stageArchiveChapterRedList = {}
-	arg_1_0.isInitStageArchiveList = false
+	arg_1_0.unlockStageArchiveDic_ = {}
+	arg_1_0.stageArchiveChapterRedDic_ = {}
 end
 
 local var_0_1 = 0
@@ -96,8 +96,6 @@ function var_0_0.InitPlotData(arg_2_0, arg_2_1)
 	manager.notify:Invoke(BATTLE_STAGE_PLOT_CHANGE)
 
 	arg_2_0.isLogin_ = 1
-
-	arg_2_0:InitStageUnLockArchive()
 end
 
 function var_0_0.ModifyThreeStar(arg_4_0, arg_4_1, arg_4_2)
@@ -391,36 +389,29 @@ function var_0_0.SaveFogAnimatorFlag(arg_36_0, arg_36_1)
 	saveData("BattleStage", "fog", arg_36_1)
 end
 
-function var_0_0.InitStageUnLockArchive(arg_37_0)
-	if arg_37_0.isInitStageArchiveList then
-		return
-	end
-
-	arg_37_0.isInitStageArchiveList = true
-
-	for iter_37_0, iter_37_1 in ipairs(StageArchivesCollecteCfg.all) do
-		if StageTools.IsStageArchiveUnLock(iter_37_1) and arg_37_0.stageArchiveChapterRedList[iter_37_1] == nil then
-			arg_37_0.stageArchiveChapterRedList[iter_37_1] = false
-		end
+function var_0_0.InitStageArchiveData(arg_37_0, arg_37_1)
+	for iter_37_0, iter_37_1 in ipairs(arg_37_1) do
+		arg_37_0.unlockStageArchiveDic_[iter_37_1] = true
 	end
 end
 
-function var_0_0.InitStageArchiveData(arg_38_0, arg_38_1)
+function var_0_0.UpdateStageArchiveRedPoint(arg_38_0, arg_38_1)
 	for iter_38_0, iter_38_1 in ipairs(arg_38_1 or {}) do
-		arg_38_0.stageArchiveChapterRedList[iter_38_1] = true
+		arg_38_0.stageArchiveChapterRedDic_[iter_38_1] = true
+		arg_38_0.unlockStageArchiveDic_[iter_38_1] = true
 	end
 end
 
 function var_0_0.GetStageArchiveRedState(arg_39_0, arg_39_1)
-	if arg_39_0.stageArchiveChapterRedList[arg_39_1] == nil or arg_39_0.stageArchiveChapterRedList[arg_39_1] == true then
-		return true
-	else
-		return false
-	end
+	return arg_39_0.stageArchiveChapterRedDic_[arg_39_1] == true
 end
 
 function var_0_0.SetStageArchiveRedState(arg_40_0, arg_40_1)
-	arg_40_0.stageArchiveChapterRedList[arg_40_1] = false
+	arg_40_0.stageArchiveChapterRedDic_[arg_40_1] = false
+end
+
+function var_0_0.IsStageArchiveUnlock(arg_41_0, arg_41_1)
+	return arg_41_0.unlockStageArchiveDic_[arg_41_1]
 end
 
 return var_0_0

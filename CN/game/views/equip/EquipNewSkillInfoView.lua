@@ -38,7 +38,7 @@ function var_0_0.RefreshData(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
 end
 
 function var_0_0.RefreshUI(arg_7_0)
-	arg_7_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. arg_7_0.skillCfg_.icon)
+	arg_7_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. arg_7_0.skillCfg_.icon)
 	arg_7_0.name_.text = GetI18NText(arg_7_0.skillCfg_.name)
 
 	local var_7_0 = arg_7_0.info_.num > arg_7_0.skillCfg_.lvmax and string.format("<color=#FF000B>%s</color>", arg_7_0.info_.num) or arg_7_0.info_.num

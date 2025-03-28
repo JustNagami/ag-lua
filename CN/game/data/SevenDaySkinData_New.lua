@@ -53,20 +53,43 @@ function var_0_2.UpdateActivityData(arg_6_0, arg_6_1, arg_6_2)
 	arg_6_0:UpdateRedDotCount(arg_6_1)
 end
 
-function var_0_2.UpdateUnlockTimes(arg_7_0, arg_7_1)
-	arg_7_0:GetActivityData(arg_7_1):UpdateUnlockTimes()
+function var_0_2.UpdateActivityDataByGiftReward(arg_7_0, arg_7_1)
+	arg_7_0:GetActivityData(arg_7_1):UpdateActivityDataByGiftReward()
+	arg_7_0:UpdateRedDotCount(arg_7_1)
 end
 
-function var_0_2.GetRedDotCount(arg_8_0, arg_8_1)
-	return arg_8_0:GetActivityData(arg_8_1):RedDotCount()
+function var_0_2.UpdateUnlockTimes(arg_8_0, arg_8_1)
+	arg_8_0:GetActivityData(arg_8_1):UpdateUnlockTimes()
 end
 
-function var_0_2.UpdateRedDotCount(arg_9_0, arg_9_1)
-	local var_9_0 = string.format("%s_%s", RedPointConst.SEVEN_DAY_SIGN_SKIN, arg_9_1)
-	local var_9_1 = arg_9_0:GetRedDotCount(arg_9_1)
+function var_0_2.GetRedDotCount(arg_9_0, arg_9_1)
+	return arg_9_0:GetActivityData(arg_9_1):RedDotCount()
+end
 
-	print(arg_9_1, "------------------------->", var_9_1)
-	manager.redPoint:setTip(var_9_0, var_9_1)
+function var_0_2.GetGiftRedDotCount(arg_10_0, arg_10_1)
+	return arg_10_0:GetActivityData(arg_10_1):GetGiftRedDotCount()
+end
+
+function var_0_2.UpdateRedDotCount(arg_11_0, arg_11_1)
+	local var_11_0 = string.format("%s_%s", RedPointConst.SEVEN_DAY_SIGN_SKIN_NEWSIGN, arg_11_1)
+	local var_11_1 = arg_11_0:GetRedDotCount(arg_11_1)
+
+	manager.redPoint:setTip(var_11_0, var_11_1)
+
+	local var_11_2 = string.format("%s_%s", RedPointConst.SEVEN_DAY_SIGN_SKIN_GIFT, arg_11_1)
+	local var_11_3 = arg_11_0:GetGiftRedDotCount(arg_11_1)
+
+	manager.redPoint:setTip(var_11_2, var_11_3 == 0 and 1 or 0)
+end
+
+local var_0_3 = false
+
+function var_0_2.GetDlcReward(arg_12_0)
+	return var_0_3
+end
+
+function var_0_2.SetDlcReward(arg_13_0, arg_13_1)
+	var_0_3 = arg_13_1
 end
 
 return var_0_2

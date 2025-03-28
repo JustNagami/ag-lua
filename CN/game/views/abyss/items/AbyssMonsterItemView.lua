@@ -37,7 +37,7 @@ function var_0_0.SetData(arg_7_0, arg_7_1, arg_7_2)
 end
 
 function var_0_0.UpdateView(arg_8_0)
-	arg_8_0.bossImg_.sprite = getSpriteWithoutAtlas(SpritePathCfg.CollectBoss.path .. arg_8_0.abyssUICfg_.enemy_id)
+	arg_8_0.bossImg_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.CollectBoss.path .. arg_8_0.abyssUICfg_.enemy_id)
 
 	if arg_8_0.abyssUICfg_ ~= nil then
 		if arg_8_0.abyssUICfg_.icon_pos ~= nil and arg_8_0.abyssUICfg_.icon_pos ~= "" and #arg_8_0.abyssUICfg_.icon_pos > 0 then

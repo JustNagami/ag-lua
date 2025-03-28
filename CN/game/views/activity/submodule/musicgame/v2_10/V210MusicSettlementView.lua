@@ -60,10 +60,11 @@ function var_0_0.AddUIListener(arg_6_0)
 		local var_8_0 = MusicData:GetGameId()
 		local var_8_1 = ActivityMusicCfg[var_8_0].activity_id
 		local var_8_2 = MusicData:GetMusicViewPathList(var_8_1)
+		local var_8_3 = MusicData:GetPageActivityID()
 
 		DestroyLua()
 
-		if ActivityTools.GetActivityTheme(var_8_1) == ActivityConst.THEME.ACTIVITY_3_11 then
+		if ActivityTools.GetActivityTheme(var_8_3) == ActivityConst.THEME.ACTIVITY_3_11 then
 			LaunchQWorld(true)
 		else
 			LuaExchangeHelper.GoToMain()
@@ -122,8 +123,8 @@ function var_0_0.RefreshUI(arg_13_0)
 	local var_13_1 = ActivityMusicCfg[var_13_0]
 
 	arg_13_0.m_name.text = GetI18NText(var_13_1.name)
-	arg_13_0.m_bg.sprite = getSpriteWithoutAtlas("TextureConfig/Music/Music_icon/" .. var_13_1.icon)
-	arg_13_0.bgImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Music/Music1_icon/" .. var_13_1.icon)
+	arg_13_0.m_bg.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Music/Music_icon/" .. var_13_1.icon)
+	arg_13_0.bgImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Music/Music1_icon/" .. var_13_1.icon)
 
 	if var_13_1.difficult == 1 then
 		arg_13_0.difficultController_:SetSelectedIndex(0)

@@ -87,7 +87,7 @@ function var_0_0.RefreshRace(arg_9_0)
 		arg_9_0.raceCon_:SetSelectedState(tostring(arg_9_0.cfg_.race))
 	end
 
-	arg_9_0.raceIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/OsirisUI/RaceTrial/" .. arg_9_0.cfg_.race)
+	arg_9_0.raceIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/OsirisUI/RaceTrial/" .. arg_9_0.cfg_.race)
 end
 
 function var_0_0.StopTimer(arg_10_0)

@@ -63,7 +63,7 @@ function var_0_0.RefreshUI(arg_9_0)
 	local var_9_1 = BossChallengeUICfg[var_9_0.boss_id]
 
 	arg_9_0.bossHealthText_.text = var_9_0.boss_base_hp
-	arg_9_0.bossImage_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.BossLittlePaint.path, var_9_1.icon))
+	arg_9_0.bossImage_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.BossLittlePaint.path, var_9_1.icon))
 end
 
 function var_0_0.RefreshAffixItem(arg_10_0, arg_10_1, arg_10_2)

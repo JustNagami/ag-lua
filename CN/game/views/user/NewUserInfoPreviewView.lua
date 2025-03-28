@@ -278,7 +278,7 @@ function var_0_0.RefreshCardBg(arg_23_0, arg_23_1)
 	local var_23_1 = var_23_0.resource
 
 	if var_23_0.type == 1 then
-		arg_23_0.cardBgIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/UserInfor/" .. var_23_1)
+		arg_23_0.cardBgIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/UserInfor/" .. var_23_1)
 	elseif var_23_0.type == 2 then
 		-- block empty
 	elseif var_23_0.type == 3 then

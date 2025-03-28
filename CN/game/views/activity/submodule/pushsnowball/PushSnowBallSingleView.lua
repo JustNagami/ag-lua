@@ -247,7 +247,7 @@ function var_0_0.RefreshWeeklyTask(arg_28_0)
 end
 
 function var_0_0.RefreshHeroIcon(arg_31_0)
-	arg_31_0.heroIconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/BackHouseUI/RoleHead/" .. PushSnowBallData:GetSelectedHeroID())
+	arg_31_0.heroIconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/BackHouseUI/RoleHead/" .. PushSnowBallData:GetSelectedHeroID())
 end
 
 function var_0_0.RefreshDeviceIcon(arg_32_0)
@@ -256,7 +256,7 @@ function var_0_0.RefreshDeviceIcon(arg_32_0)
 	arg_32_0.deviceController_:SetSelectedState(tostring(var_32_0 ~= 0))
 
 	if var_32_0 ~= 0 then
-		arg_32_0.deviceIconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Item_l" .. PushSnowBallDeviceCfg[PushSnowBallData:GetSelectedDeviceID()].icon)
+		arg_32_0.deviceIconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Item_l" .. PushSnowBallDeviceCfg[PushSnowBallData:GetSelectedDeviceID()].icon)
 	end
 end
 

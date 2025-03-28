@@ -82,6 +82,10 @@ function var_0_0.SetData(arg_9_0)
 	end
 
 	ActivityNewbieTools.SetSelectMonthlyRecharge()
+
+	local var_9_1 = arg_9_0.rewardCfg_[1]
+
+	arg_9_0.rewardDesc_.text = ItemCfg[var_9_1].desc
 end
 
 function var_0_0.RefreshStatus(arg_11_0)

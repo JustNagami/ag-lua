@@ -75,9 +75,9 @@ function var_0_0.UpdateView(arg_7_0)
 			local var_7_1 = PublicBuffCfg[var_7_0.affix_id]
 
 			arg_7_0["item" .. iter_7_2 .. "Txt_"].text = var_7_0.desc
-			arg_7_0["item" .. iter_7_2 .. "Image_"].sprite = getSpriteWithoutAtlas("TextureConfig/BuffIcon/" .. var_7_1.icon)
+			arg_7_0["item" .. iter_7_2 .. "Image_"].sprite = pureGetSpriteWithoutAtlas("TextureConfig/BuffIcon/" .. var_7_1.icon)
 			arg_7_0["item" .. iter_7_2 .. "1Txt_"].text = var_7_0.desc
-			arg_7_0["item" .. iter_7_2 .. "1Image_"].sprite = getSpriteWithoutAtlas("TextureConfig/BuffIcon/" .. var_7_1.icon)
+			arg_7_0["item" .. iter_7_2 .. "1Image_"].sprite = pureGetSpriteWithoutAtlas("TextureConfig/BuffIcon/" .. var_7_1.icon)
 		else
 			SetActive(arg_7_0["item" .. iter_7_2 .. "Go_"], false)
 		end

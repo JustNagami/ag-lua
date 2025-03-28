@@ -303,7 +303,7 @@ return {
 		})
 	end,
 	GetChanceImage = function(arg_18_0)
-		return getSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_Eventicon/" .. arg_18_0)
+		return pureGetSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_Eventicon/" .. arg_18_0)
 	end,
 	GetPropImage = function(arg_19_0)
 		return getSprite("Atlas/ChessBoardPropIconAtlas", arg_19_0)
@@ -311,7 +311,7 @@ return {
 	GetBuffImage = function(arg_20_0)
 		local var_20_0 = ChessBoardBuffPoolCfg[arg_20_0]
 
-		return getSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_Buff/" .. var_20_0.icon)
+		return pureGetSpriteWithoutAtlas("TextureConfig/Summer2024/Summer2024_Buff/" .. var_20_0.icon)
 	end,
 	CSharpMapIndexToXZ = function(arg_21_0, arg_21_1)
 		local var_21_0

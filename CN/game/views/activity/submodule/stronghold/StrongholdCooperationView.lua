@@ -48,7 +48,7 @@ function var_0_1.RefreshUI(arg_8_0)
 			arg_8_0["skillLockController_" .. iter_8_0]:SetSelectedIndex(0)
 		end
 
-		arg_8_0["m_skillIcon" .. iter_8_0].sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/StrongholdUI/StrongholdSkill/" .. iter_8_0)
+		arg_8_0["m_skillIcon" .. iter_8_0].sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/StrongholdUI/StrongholdSkill/" .. iter_8_0)
 	end
 
 	local var_8_5 = StrongholdData:GetSelfRoomSkillType(arg_8_0.roomData.room_id)

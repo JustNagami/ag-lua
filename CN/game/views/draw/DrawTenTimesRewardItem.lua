@@ -80,12 +80,12 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
 		local var_6_10 = WeaponServantCfg[var_6_1]
 		local var_6_11 = RaceEffectCfg[var_6_10.race]
 
-		arg_6_0.m_camp.sprite = getSpriteWithoutAtlas("TextureConfig/Group_l/" .. var_6_11.icon2)
+		arg_6_0.m_camp.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Group_l/" .. var_6_11.icon2)
 
 		local var_6_12 = string.split(ItemTools.getItemName(var_6_3.id) or "", "·")
 
 		arg_6_0.m_weaponName.text = var_6_12[1]
-		arg_6_0.m_weaponImg.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/Icon/" .. var_6_3.icon)
+		arg_6_0.m_weaponImg.sprite = pureGetSpriteWithoutAtlas("TextureConfig/WeaponServant/Icon/" .. var_6_3.icon)
 	end
 
 	if arg_6_0.timer then

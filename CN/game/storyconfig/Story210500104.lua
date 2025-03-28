@@ -12417,6 +12417,8 @@
 			if arg_405_0 == 2 then
 				arg_403_0:Play1105004098(arg_403_1)
 			end
+
+			arg_403_1:RecordChoiceLog(1105004097, 1105004098, 1105004098)
 		end
 
 		function arg_403_1.onSingleLineUpdate_(arg_406_0)

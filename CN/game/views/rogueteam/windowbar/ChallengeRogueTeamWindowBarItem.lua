@@ -63,7 +63,7 @@ end
 function var_0_0.RefreshUI(arg_7_0)
 	arg_7_0:RefreshText()
 
-	arg_7_0.icon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetAttributeIconPath(arg_7_0.id_))
+	arg_7_0.icon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetAttributeIconPath(arg_7_0.id_))
 end
 
 function var_0_0.RefreshText(arg_8_0)

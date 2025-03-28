@@ -23,6 +23,7 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.bannerView_ = BannerView.New(arg_4_0, arg_4_0.btnActivityGo_)
 	arg_4_0.activityEntraceView_ = ActivityEntraceView.New(arg_4_0.activityListGo_)
 	arg_4_0.skinDrawEntraceView_ = ActivitySkinDrawEntraceViewOld.New(arg_4_0.skinDrawGo_)
+	arg_4_0.skinDiscountGiftEntranceView_ = SkinDiscountGiftEntranceView.New(arg_4_0.skinDiscountGo_)
 	arg_4_0.socializeCon_ = arg_4_0.conExCollection_:GetController("socialize")
 	arg_4_0.hideCon_ = arg_4_0.conExCollection_:GetController("hide")
 	arg_4_0.sceneCon_ = arg_4_0.conExCollection_:GetController("scene")
@@ -33,9 +34,15 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.shopCon_ = arg_4_0.conExCollection_:GetController("shopLocked")
 	arg_4_0.textLimit_ = arg_4_0.chatTxt_.gameObject:GetComponent("TextExtension")
 	arg_4_0.mutiTouchHelper_ = arg_4_0.btn_girl.gameObject:GetComponent("MutiTouchHelper")
+	arg_4_0.changedlcCon_ = arg_4_0.conExCollection_:GetController("changedlcView")
+	arg_4_0.puremodeCon_ = arg_4_0.conExCollection_:GetController("puremode")
+	arg_4_0.btn_zuoCon_ = arg_4_0.btn_zuo01Controllerexcollection_:GetController("zuo01")
+	arg_4_0.btn_youCon_ = arg_4_0.btn_youControllerexcollection_:GetController("you01")
 
 	arg_4_0:SwitchPosterGirlPanel(false)
 	SetActive(arg_4_0.talkBubbleGo_, false)
+	arg_4_0.puremodeCon_:SetSelectedState("hide")
+	arg_4_0.changedlcCon_:SetSelectedState("hide")
 end
 
 function var_0_0.AddUIListeners(arg_5_0)
@@ -65,6 +72,8 @@ end
 
 function var_0_0.OnEnter(arg_7_0)
 	arg_7_0:RegistEventListener(HOME_POSTER_TALK, handler(arg_7_0, arg_7_0.OnHomePosterTalk))
+	arg_7_0:RegistEventListener(PUREMODE_SHOW, handler(arg_7_0, arg_7_0.SetPureModeShow))
+	arg_7_0:RegistEventListener(ON_POSTERGIRL_TRANSITION_END, handler(arg_7_0, arg_7_0.UpdateBtnState))
 	manager.ui:ShowBackground(false)
 	arg_7_0:CheckHomeSceneInteration(true)
 	arg_7_0:ClearHeroFilter()
@@ -80,9 +89,29 @@ function var_0_0.OnTop(arg_8_0)
 end
 
 function var_0_0.OnTopFunc(arg_9_0)
-	arg_9_0:InitBar()
+	if arg_9_0.params_.isPureMode ~= nil then
+		arg_9_0.isPureMode_ = arg_9_0.params_.isPureMode
+		arg_9_0.params_.isPureMode = nil
+	end
+
+	if arg_9_0.isPureMode_ then
+		arg_9_0.isPureMode_ = false
+
+		arg_9_0:SetPureMode(false, true)
+	else
+		arg_9_0:InitBar()
+		PlayerData:SetIsDeskMode(false)
+		arg_9_0:SetPureMode(true)
+	end
+
 	RedPointAction.UpdateSDKRedPoint()
-	arg_9_0:CheckNeedPopWindow()
+
+	arg_9_0.isDoActionEnd_ = arg_9_0:CheckNeedPopWindow()
+
+	if arg_9_0.isDoActionEnd_ then
+		arg_9_0.isBehind_ = false
+	end
+
 	arg_9_0:UpdateActivityLoginRedPoint()
 end
 
@@ -90,6 +119,7 @@ function var_0_0.OnExit(arg_10_0)
 	arg_10_0.updateBgm_ = nil
 	arg_10_0.wait_posetr_debut = false
 
+	PlayerData:SetPosterGirlDebut(false)
 	manager.posterGirl:SetViewTag(PosterGirlConst.ViewTag.null)
 	manager.loadScene:StopSceneSoundEffect()
 	manager.notify:RemoveListener(MUTE_MAIN_AUDIO, arg_10_0.muteAudioHandler_)
@@ -105,6 +135,7 @@ function var_0_0.OnExit(arg_10_0)
 
 	arg_10_0.activityEntraceView_:OnExit()
 	arg_10_0.skinDrawEntraceView_:OnExit()
+	arg_10_0.skinDiscountGiftEntranceView_:OnExit()
 
 	if not JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.CHAT) then
 		ChatAction.EnterChatUI(2)
@@ -136,6 +167,10 @@ function var_0_0.Dispose(arg_11_0)
 	arg_11_0.skinDrawEntraceView_:Dispose()
 
 	arg_11_0.skinDrawEntraceView_ = nil
+
+	arg_11_0.skinDiscountGiftEntranceView_:Dispose()
+
+	arg_11_0.skinDiscountGiftEntranceView_ = nil
 
 	for iter_11_0, iter_11_1 in pairs(arg_11_0.page_) do
 		iter_11_1:Dispose()
@@ -174,12 +209,14 @@ function var_0_0.OnEnterFunc(arg_12_0)
 	arg_12_0:StartRefreshUITimer()
 	arg_12_0:UpdataOperationViewRedPoint()
 	arg_12_0:BindRedPointUI()
+	arg_12_0:UpdateShopBtnTag()
 	arg_12_0:RegistEventListener(PASSPORT_INIT, function()
 		arg_12_0:CheckPassportBtn()
 	end)
 	arg_12_0:CheckPassportBtn()
 	arg_12_0:UpdateChipRedPoint()
 	arg_12_0:UpdateFriendsRedPoint()
+	PosterGirlTools.UpdateDlCBtnRed()
 	SetActive(arg_12_0.skinDrawRedPanel_, not JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.SKIN_DRAW))
 	arg_12_0:RefreshChat()
 
@@ -200,7 +237,7 @@ function var_0_0.OnEnterFunc(arg_12_0)
 		arg_12_0.newbieAdvanceTaskTitle_.text = GetTips(NoobVersionCfg[var_12_3.versionID].noob_advance_task_title[var_12_3.index])
 	end
 
-	local var_12_4 = RegressionData:IsRegressionOpen()
+	local var_12_4 = RegressionDataNew:IsRegressionOpen()
 
 	SetActive(arg_12_0.btn_regression.gameObject, var_12_4)
 
@@ -212,11 +249,25 @@ function var_0_0.OnEnterFunc(arg_12_0)
 	arg_12_0:CheckActivite()
 	arg_12_0.activityEntraceView_:OnEnter()
 	arg_12_0.skinDrawEntraceView_:OnEnter()
+	arg_12_0.skinDiscountGiftEntranceView_:OnEnter()
 	BulletinData.SetIslogin(true)
 	manager.rollTips:TryToCreatTips()
 	manager.notify:RegistListener(MUTE_MAIN_AUDIO, arg_12_0.muteAudioHandler_)
 	manager.notify:RegistListener(SHAKING_MOBILE, arg_12_0.shakingAniHandler_)
 	arg_12_0:RefreshHide()
+	arg_12_0:UpdatePosterGirlBtn()
+
+	if arg_12_0.params_.isHomeBack then
+		arg_12_0.isPureMode_ = false
+
+		PlayerData:SetIsDeskMode(false)
+
+		arg_12_0.params_.isHomeBack = nil
+	end
+
+	if PlayerData:GetDeskMode() then
+		arg_12_0.animator_:Play("HomeUI_hide2")
+	end
 end
 
 local var_0_1 = {
@@ -239,6 +290,9 @@ local var_0_1 = {
 	},
 	RegressionNewGift = {
 		"regressionNewGift"
+	},
+	Birthday = {
+		"BirthdayPop"
 	}
 }
 
@@ -286,12 +340,13 @@ function var_0_0.CheckNeedPopWindow(arg_19_0)
 	local var_19_3 = var_19_0
 	local var_19_4 = SurveyData:GetPraise()
 	local var_19_5 = ChatData:IsMuted() and not ChatData:GetShowMutedTips()
-	local var_19_6 = RegressionData:CheckRegressionGift()
+	local var_19_6 = RegressionDataNew:CheckIsShowGift()
 	local var_19_7 = ActivityAdvertiseTools.NeedShowAdvertise()
 	local var_19_8 = BulletinData.CheckDailyLoginPopBulletin()
 	local var_19_9, var_19_10, var_19_11 = ArchiveTools.NeedShowArchivePop()
 	local var_19_12, var_19_13, var_19_14 = HomeSceneSettingData:IsNeedSceenCheck()
 	local var_19_15 = not LuaHidTools.HasSetRemapNotice()
+	local var_19_16 = BirthdayTools.IsShowBirthdayPop()
 
 	if var_19_3 or var_19_4 or var_19_6 or var_19_5 or var_19_7 or var_19_9 or var_19_12 or var_19_15 then
 		SetActive(arg_19_0.mask_, true)
@@ -319,31 +374,33 @@ function var_0_0.CheckNeedPopWindow(arg_19_0)
 		arg_19_0.params_.isFirstCheck = false
 	end
 
-	local var_19_16 = {}
+	local var_19_17 = {}
 
-	if not var_0_2(var_19_16, var_0_3(var_0_1.Sign), var_19_1 or var_19_2 or var_19_3) and not var_0_2(var_19_16, var_0_3(var_0_1.Praise), var_19_4) and not var_0_2(var_19_16, var_0_3(var_0_1.ActivityAdvertise), var_19_7) and not var_0_2(var_19_16, var_0_3({
+	if not var_0_2(var_19_17, var_0_3(var_0_1.Sign), var_19_1 or var_19_2 or var_19_3) and not var_0_2(var_19_17, var_0_3(var_0_1.Praise), var_19_4) and not var_0_2(var_19_17, var_0_3(var_0_1.ActivityAdvertise), var_19_7) and not var_0_2(var_19_17, var_0_3({
 		"bulletin",
 		{
 			bulletinID = var_19_8
 		},
 		ViewConst.SYSTEM_ID.ANNOUNCEMENT
-	}), var_19_8) and not var_0_2(var_19_16, var_0_3(var_0_1.ChatMuted), var_19_5) and not var_0_2(var_19_16, var_0_3(var_0_1.RegressionNewGift), var_19_6) and not var_0_2(var_19_16, var_0_3({
+	}), var_19_8) and not var_0_2(var_19_17, var_0_3(var_0_1.ChatMuted), var_19_5) and not var_0_2(var_19_17, var_0_3(var_0_1.RegressionNewGift), var_19_6) and not var_0_2(var_19_17, var_0_3({
 		"archiveHomePop",
 		{
 			heroID = var_19_10,
 			type = var_19_11
 		}
-	}), var_19_9) and not var_0_2(var_19_16, var_0_3({
+	}), var_19_9) and not var_0_2(var_19_17, var_0_3({
 		"homeChangeScenePop",
 		{
 			left = var_19_13,
 			right = var_19_14
 		}
-	}), var_19_12) then
-		local var_19_17 = var_0_2(var_19_16, LuaHidTools.QueryRemapNotice, var_19_15)
+	}), var_19_12) and not var_0_2(var_19_17, LuaHidTools.QueryRemapNotice, var_19_15) then
+		local var_19_18 = var_0_2(var_19_17, var_0_3(var_0_1.Birthday), var_19_16)
 	end
 
-	arg_19_0:StartShowTimer(var_19_16)
+	arg_19_0:StartShowTimer(var_19_17)
+
+	return #var_19_17 <= 0
 end
 
 function var_0_0.UpdateActivityLoginRedPoint(arg_20_0)
@@ -372,7 +429,7 @@ function var_0_0.HideTimeline(arg_22_0)
 end
 
 function var_0_0.OnClickBg(arg_23_0)
-	if arg_23_0.isHide_ then
+	if arg_23_0.isHide_ and not arg_23_0.isBehind_ then
 		arg_23_0:StartViewHideTimer()
 	end
 end
@@ -420,7 +477,7 @@ function var_0_0.SwitchPosterGirlPanel(arg_29_0, arg_29_1)
 	local var_29_1 = false
 
 	if arg_29_1 then
-		local var_29_2 = HeroTools.HeroUsingSkinInfo(arg_29_0.posterGirl_).id
+		local var_29_2 = PlayerData:GetPosterGirlHeroSkinId()
 		local var_29_3 = SkinSceneActionCfg[var_29_2]
 
 		if var_29_3 and HomeSceneSettingData:GetUsedState(var_29_3.special_scene_id) ~= SceneConst.HOME_SCENE_TYPE.LOCK and HomeSceneSettingCfg[var_29_3.special_scene_id].limit_display ~= 1 then
@@ -547,8 +604,20 @@ function var_0_0.CheckHomeSceneInteration(arg_37_0)
 
 	arg_37_0.isHide_ = false
 	arg_37_0.userData_ = PlayerData:GetPlayerInfo()
-	arg_37_0.posterGirl_ = PlayerData:GetPosterGirlHeroId()
-	arg_37_0.skinId_ = HeroTools.HeroUsingSkinInfo(arg_37_0.posterGirl_).id
+	arg_37_0.skinId_ = PlayerData:GetPosterGirlHeroSkinId()
+	arg_37_0.posterGirl_ = SkinCfg[arg_37_0.skinId_].hero
+
+	HeroAction.SelectSkinWithCallback(arg_37_0.posterGirl_, arg_37_0.skinId_, function()
+		return
+	end)
+
+	if CustomCenterTools.IsRandomHero() and PlayerData:GetRandomHeroMode() == HomeSceneSettingConst.RANDOM_MODE.EACH_DAY then
+		saveData("RandomData", "LastId_HERO", PlayerData:GetRandomHero())
+	end
+
+	if CustomCenterTools.IsRandomScene() and HomeSceneSettingData:GetRandomMode() == HomeSceneSettingConst.RANDOM_MODE.EACH_DAY then
+		saveData("RandomData", "LastId_SCENE", HomeSceneSettingData:GetRandomScene())
+	end
 
 	manager.posterGirl:SetViewTag(PosterGirlConst.ViewTag.home)
 	manager.posterGirl:InitTouchHelp(arg_37_0.mutiTouchHelper_)
@@ -556,8 +625,10 @@ function var_0_0.CheckHomeSceneInteration(arg_37_0)
 	if not manager.guide:IsPlaying() and manager.posterGirl:CheckDebut() then
 		arg_37_0.wait_posetr_debut = true
 
+		PlayerData:SetPosterGirlDebut(true)
 		manager.windowBar:SwitchBar({})
 		arg_37_0.sceneCon_:SetSelectedState("off")
+		arg_37_0:HideSceneMenuPanel(true)
 	else
 		arg_37_0.sceneCon_:SetSelectedState("on")
 		arg_37_0:OnEnterFunc()
@@ -567,100 +638,161 @@ function var_0_0.CheckHomeSceneInteration(arg_37_0)
 	manager.loadScene:SetHomeSceneSoundEffect()
 end
 
-function var_0_0.OnHomeDebutOver(arg_38_0)
-	if arg_38_0.wait_posetr_debut then
-		arg_38_0:OnEnterFunc()
-		arg_38_0:OnTopFunc()
+function var_0_0.OnHomeDebutOver(arg_39_0)
+	if arg_39_0.wait_posetr_debut then
+		arg_39_0:OnEnterFunc()
+		arg_39_0:OnTopFunc()
 	end
 
-	arg_38_0:InitBar()
-	arg_38_0.sceneCon_:SetSelectedState("on")
+	arg_39_0:InitBar()
+	arg_39_0.sceneCon_:SetSelectedState("on")
+	arg_39_0:HideSceneMenuPanel(false)
 
-	arg_38_0.wait_posetr_debut = false
+	arg_39_0.wait_posetr_debut = false
+
+	PlayerData:SetPosterGirlDebut(false)
 end
 
-function var_0_0.PlayHeroGreeting(arg_39_0)
+function var_0_0.HideSceneMenuPanel(arg_40_0, arg_40_1)
+	if arg_40_0:IsOpenRoute("menuPop") then
+		manager.notify:Invoke(HOME_HIDE_MENU_POP, arg_40_1)
+	end
+end
+
+function var_0_0.PlayHeroGreeting(arg_41_0)
 	manager.posterGirl:DoGreeting()
 end
 
-function var_0_0.DelayToPlayMultiTouchInteraction(arg_40_0)
-	arg_40_0.clickCount_ = arg_40_0.clickCount_ + 1
+function var_0_0.DelayToPlayMultiTouchInteraction(arg_42_0)
+	arg_42_0.clickCount_ = arg_42_0.clickCount_ + 1
 
-	if arg_40_0.multiTouchTimer_ == nil then
-		arg_40_0.multiTouchTimer_ = Timer.New(function()
-			if arg_40_0.multiTouchTimer_ then
-				arg_40_0.multiTouchTimer_:Stop()
+	if arg_42_0.multiTouchTimer_ == nil then
+		arg_42_0.multiTouchTimer_ = Timer.New(function()
+			if arg_42_0.multiTouchTimer_ then
+				arg_42_0.multiTouchTimer_:Stop()
 
-				arg_40_0.multiTouchTimer_ = nil
+				arg_42_0.multiTouchTimer_ = nil
 			end
 
-			local var_41_0 = HomeSceneSettingData:GetCurScene()
+			local var_43_0 = HomeSceneSettingData:GetCurScene()
 
-			if arg_40_0.clickCount_ >= 3 then
+			if arg_42_0.clickCount_ >= 3 then
 				SDKTools.SendMessageToSDK("poster_touch", {
 					touch_times = 3,
 					position = 0,
-					hero_id = arg_40_0.skinId_,
-					scene_id = var_41_0
+					hero_id = arg_42_0.skinId_,
+					scene_id = var_43_0
 				})
 				manager.posterGirl:DoQuickTouch()
 			else
 				SDKTools.SendMessageToSDK("poster_touch", {
 					touch_times = 1,
 					position = 0,
-					hero_id = arg_40_0.skinId_,
-					scene_id = var_41_0
+					hero_id = arg_42_0.skinId_,
+					scene_id = var_43_0
 				})
 				manager.posterGirl:DoTouch()
 			end
 
-			arg_40_0.clickCount_ = 0
+			arg_42_0.clickCount_ = 0
 		end, 0.5, 1)
 
-		arg_40_0.multiTouchTimer_:Start()
+		arg_42_0.multiTouchTimer_:Start()
 	end
 end
 
-function var_0_0.OnHomePosterTalk(arg_42_0, arg_42_1, arg_42_2, arg_42_3)
-	local var_42_0 = tonumber(arg_42_1)
-	local var_42_1 = HeroVoiceDescCfg.Get(var_42_0, arg_42_2[1])
+function var_0_0.OnHomePosterTalk(arg_44_0, arg_44_1, arg_44_2, arg_44_3)
+	local var_44_0 = tonumber(arg_44_1)
+	local var_44_1 = HeroVoiceDescCfg.Get(var_44_0, arg_44_2[1])
 
-	if var_42_1 then
-		arg_42_0.talking_ = true
+	if var_44_1 then
+		arg_44_0.talking_ = true
 
-		if not isNil(arg_42_0.talkBubbleGo_) then
-			arg_42_0:RefreshTalkBubbleHide()
+		if not isNil(arg_44_0.talkBubbleGo_) then
+			arg_44_0:RefreshTalkBubbleHide()
 		end
 
-		if not isNil(arg_42_0.talkLabel_) then
-			arg_42_0.talkLabel_.text = var_42_1
+		if not isNil(arg_44_0.talkLabel_) then
+			arg_44_0.talkLabel_.text = var_44_1
 		end
 
-		if arg_42_0.talkBubbleTimer_ ~= nil then
-			arg_42_0.talkBubbleTimer_:Stop()
+		if arg_44_0.talkBubbleTimer_ ~= nil then
+			arg_44_0.talkBubbleTimer_:Stop()
 
-			arg_42_0.talkBubbleTimer_ = nil
+			arg_44_0.talkBubbleTimer_ = nil
 		end
 
-		arg_42_0.talkBubbleTimer_ = TimeTools.StartAfterSeconds(arg_42_3 / 1000, function()
-			arg_42_0.talking_ = false
+		arg_44_0.talkBubbleTimer_ = TimeTools.StartAfterSeconds(arg_44_3 / 1000, function()
+			arg_44_0.talking_ = false
 
-			if not isNil(arg_42_0.talkBubbleGo_) then
-				SetActive(arg_42_0.talkBubbleGo_, false)
+			if not isNil(arg_44_0.talkBubbleGo_) then
+				SetActive(arg_44_0.talkBubbleGo_, false)
 			end
 
-			if arg_42_0.talkBubbleTimer_ ~= nil then
-				arg_42_0.talkBubbleTimer_:Stop()
+			if arg_44_0.talkBubbleTimer_ ~= nil then
+				arg_44_0.talkBubbleTimer_:Stop()
 
-				arg_42_0.talkBubbleTimer_ = nil
+				arg_44_0.talkBubbleTimer_ = nil
 			end
 		end, {})
 	end
 end
 
-function var_0_0.ClearHeroFilter(arg_44_0)
+function var_0_0.ClearHeroFilter(arg_46_0)
 	HeroData:SetupHeroMainOpenStatus(false)
 	CommonFilterData:ClearFilter(Filter_Root_Define.Hero_Filter_List.filter_id)
+end
+
+function var_0_0.UpdatePosterGirlBtn(arg_47_0)
+	local var_47_0 = PosterGirlTools.IsDlcBtn()
+
+	arg_47_0.changedlcCon_:SetSelectedState(var_47_0 and "show" or "hide")
+
+	local var_47_1 = HomeSceneSettingData:GetCurScene()
+	local var_47_2 = manager.posterGirl:GetViewDirect()
+	local var_47_3 = PosterGirlTools.IsLoopSwitch(var_47_1)
+	local var_47_4 = manager.posterGirl:GetCurrentState()
+	local var_47_5 = PosterGirlTools.CanInterruptCurAni()
+
+	if var_47_2 == PosterGirlConst.ViewDirect.left and not var_47_3 or var_47_5 then
+		arg_47_0.btn_zuoCon_:SetSelectedState("disable")
+	else
+		arg_47_0.btn_zuoCon_:SetSelectedState("enable")
+	end
+
+	if var_47_2 == PosterGirlConst.ViewDirect.right and not var_47_3 or var_47_5 then
+		arg_47_0.btn_youCon_:SetSelectedState("disable")
+	else
+		arg_47_0.btn_youCon_:SetSelectedState("enable")
+	end
+end
+
+function var_0_0.OnBehind(arg_48_0)
+	arg_48_0.isBehind_ = true
+end
+
+function var_0_0.UpdateBtnState(arg_49_0)
+	arg_49_0:UpdatePosterGirlBtn()
+end
+
+function var_0_0.SetPureModeShow(arg_50_0)
+	if manager.guide:IsPlaying() or manager.guide:IsPlayingWeaking() or not arg_50_0.isDoActionEnd_ or arg_50_0.isBehind_ then
+		return
+	end
+
+	arg_50_0:StopAllTimers()
+	arg_50_0:SetPureMode(false)
+	arg_50_0:SetPureModeBtnActive(false)
+
+	local var_50_0 = arg_50_0.isPureMode_ and PureModeConst.EnterMode.mode3 or PureModeConst.EnterMode.mode2
+
+	JumpTools.OpenPageByJump("PureModeView", {
+		enterType = var_50_0
+	})
+
+	if arg_50_0.isPureMode_ then
+		arg_50_0:RecordPureModeLog(false)
+	end
 end
 
 return var_0_0

@@ -8,6 +8,15 @@
 		title = "登入问候",
 		tag_id = 4
 	},
+	[101103] = {
+		id = 101103,
+		file = "greet",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始登录问候1",
+		tag_id = 3
+	},
 	[1012] = {
 		id = 1012,
 		file = "greet2",
@@ -17,6 +26,15 @@
 		title = "登入问候2",
 		tag_id = 4
 	},
+	[101201] = {
+		id = 101201,
+		file = "greet2",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始登录问候2",
+		tag_id = 3
+	},
 	[1013] = {
 		id = 1013,
 		file = "greet3",
@@ -25,6 +43,15 @@
 		unlock_condition = 0,
 		title = "登入问候3",
 		tag_id = 4
+	},
+	[101301] = {
+		id = 101301,
+		file = "greet3",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始登录问候3",
+		tag_id = 3
 	},
 	[1014] = {
 		id = 1014,
@@ -59,8 +86,35 @@
 		use_skin_id = 0,
 		type = 1,
 		unlock_condition = 0,
-		title = "选择角色",
+		title = "选择角色1",
 		tag_id = 1
+	},
+	[102101] = {
+		id = 102101,
+		file = "choose",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始选择角色1",
+		tag_id = 3
+	},
+	[1022] = {
+		id = 1022,
+		file = "choose2",
+		use_skin_id = 0,
+		type = 1,
+		unlock_condition = 0,
+		title = "选择角色2",
+		tag_id = 1
+	},
+	[102201] = {
+		id = 102201,
+		file = "choose2",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始选择角色2",
+		tag_id = 3
 	},
 	[1031] = {
 		id = 1031,
@@ -80,6 +134,15 @@
 		title = "编入队伍",
 		tag_id = 1
 	},
+	[104101] = {
+		id = 104101,
+		file = "team",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始编入队伍",
+		tag_id = 3
+	},
 	[1051] = {
 		id = 1051,
 		file = "leader",
@@ -88,6 +151,15 @@
 		unlock_condition = 0,
 		title = "设为队长",
 		tag_id = 1
+	},
+	[105101] = {
+		id = 105101,
+		file = "leader",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始设为队长",
+		tag_id = 3
 	},
 	[1061] = {
 		id = 1061,
@@ -98,6 +170,15 @@
 		title = "经验增长",
 		tag_id = 2
 	},
+	[106101] = {
+		id = 106101,
+		file = "expup",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始经验增长",
+		tag_id = 3
+	},
 	[1071] = {
 		id = 1071,
 		file = "pro1",
@@ -106,6 +187,15 @@
 		unlock_condition = 3021,
 		title = "神识超越1",
 		tag_id = 2
+	},
+	[107101] = {
+		id = 107101,
+		file = "pro1",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始神识超越1",
+		tag_id = 3
 	},
 	[1081] = {
 		id = 1081,
@@ -116,6 +206,15 @@
 		title = "神识超越2",
 		tag_id = 2
 	},
+	[107102] = {
+		id = 107102,
+		file = "pro2",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始神识超越2",
+		tag_id = 3
+	},
 	[1091] = {
 		id = 1091,
 		file = "pro3",
@@ -124,6 +223,15 @@
 		unlock_condition = 3023,
 		title = "神识超越3",
 		tag_id = 2
+	},
+	[107103] = {
+		id = 107103,
+		file = "pro3",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始神识超越3",
+		tag_id = 3
 	},
 	[1101] = {
 		id = 1101,
@@ -134,6 +242,15 @@
 		title = "技能升级",
 		tag_id = 2
 	},
+	[110101] = {
+		id = 110101,
+		file = "skillup",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始技能升级",
+		tag_id = 3
+	},
 	[1111] = {
 		id = 1111,
 		file = "equip",
@@ -142,6 +259,15 @@
 		unlock_condition = 0,
 		title = "钥从装备",
 		tag_id = 2
+	},
+	[111101] = {
+		id = 111101,
+		file = "equip",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始钥从装备",
+		tag_id = 3
 	},
 	[1121] = {
 		id = 1121,
@@ -152,6 +278,15 @@
 		title = "神格共鸣",
 		tag_id = 2
 	},
+	[112101] = {
+		id = 112101,
+		file = "echo",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始神格共鸣",
+		tag_id = 3
+	},
 	[1131] = {
 		id = 1131,
 		file = "assistant",
@@ -160,6 +295,15 @@
 		unlock_condition = 0,
 		title = "任命助理",
 		tag_id = 4
+	},
+	[113101] = {
+		id = 113101,
+		file = "assistant",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始任命助理",
+		tag_id = 3
 	},
 	[1141] = {
 		id = 1141,
@@ -393,6 +537,24 @@
 		type = 1,
 		unlock_condition = 101727,
 		title = "不思量换装交谈1",
+		tag_id = 3
+	},
+	[114127] = {
+		id = 114127,
+		file = "talk6",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101728,
+		title = "梦的伊始换装交谈1",
+		tag_id = 3
+	},
+	[114128] = {
+		id = 114128,
+		file = "talk1",
+		use_skin_id = 107301,
+		type = 1,
+		unlock_condition = 101729,
+		title = "清平乐换装交谈1",
 		tag_id = 3
 	},
 	[1151] = {
@@ -629,6 +791,24 @@
 		title = "不思量换装交谈2",
 		tag_id = 3
 	},
+	[115127] = {
+		id = 115127,
+		file = "talk7",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101728,
+		title = "梦的伊始换装交谈2",
+		tag_id = 3
+	},
+	[115128] = {
+		id = 115128,
+		file = "talk2",
+		use_skin_id = 107301,
+		type = 1,
+		unlock_condition = 101729,
+		title = "清平乐换装交谈2",
+		tag_id = 3
+	},
 	[1161] = {
 		id = 1161,
 		file = "talk3",
@@ -647,6 +827,15 @@
 		title = "海上的私语交谈3",
 		tag_id = 3
 	},
+	[116102] = {
+		id = 116102,
+		file = "talk1",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始换装交谈3",
+		tag_id = 3
+	},
 	[1162] = {
 		id = 1162,
 		file = "talk4",
@@ -656,6 +845,15 @@
 		title = "触摸交谈4",
 		tag_id = 4
 	},
+	[116202] = {
+		id = 116202,
+		file = "talk2",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始换装交谈4",
+		tag_id = 3
+	},
 	[1163] = {
 		id = 1163,
 		file = "talk5",
@@ -664,6 +862,15 @@
 		unlock_condition = 0,
 		title = "触摸交谈5",
 		tag_id = 4
+	},
+	[116302] = {
+		id = 116302,
+		file = "talk3",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始换装交谈5",
+		tag_id = 3
 	},
 	[1164] = {
 		id = 1164,
@@ -682,6 +889,42 @@
 		unlock_condition = 0,
 		title = "触摸交谈3_2",
 		tag_id = 4
+	},
+	[1166] = {
+		id = 1166,
+		file = "talk6",
+		use_skin_id = 0,
+		type = 1,
+		unlock_condition = 0,
+		title = "触摸交谈6",
+		tag_id = 1
+	},
+	[116602] = {
+		id = 116602,
+		file = "talk4",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始换装交谈6",
+		tag_id = 3
+	},
+	[1167] = {
+		id = 1167,
+		file = "talk7",
+		use_skin_id = 0,
+		type = 1,
+		unlock_condition = 0,
+		title = "触摸交谈7",
+		tag_id = 1
+	},
+	[116702] = {
+		id = 116702,
+		file = "talk5",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始换装交谈7",
+		tag_id = 3
 	},
 	[1171] = {
 		id = 1171,
@@ -845,6 +1088,15 @@
 		title = "绘夜之诗闲置16",
 		tag_id = 3
 	},
+	[117119] = {
+		id = 117119,
+		file = "idle",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始闲置1",
+		tag_id = 3
+	},
 	[1172] = {
 		id = 1172,
 		file = "idle2",
@@ -854,6 +1106,15 @@
 		title = "闲置2",
 		tag_id = 4
 	},
+	[117201] = {
+		id = 117201,
+		file = "idle2",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始闲置2",
+		tag_id = 3
+	},
 	[1173] = {
 		id = 1173,
 		file = "idle3",
@@ -862,6 +1123,15 @@
 		unlock_condition = 0,
 		title = "闲置3",
 		tag_id = 4
+	},
+	[117301] = {
+		id = 117301,
+		file = "idle3",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始闲置3",
+		tag_id = 3
 	},
 	[1174] = {
 		id = 1174,
@@ -890,6 +1160,15 @@
 		title = "海上的私语连点",
 		tag_id = 3
 	},
+	[118103] = {
+		id = 118103,
+		file = "qc",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始连点",
+		tag_id = 3
+	},
 	[1191] = {
 		id = 1191,
 		file = "shake",
@@ -908,6 +1187,15 @@
 		title = "海上的私语晃动",
 		tag_id = 3
 	},
+	[119103] = {
+		id = 119103,
+		file = "shake",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始晃动",
+		tag_id = 3
+	},
 	[1201] = {
 		id = 1201,
 		file = "emotion",
@@ -916,6 +1204,15 @@
 		unlock_condition = 0,
 		title = "赠送礼物",
 		tag_id = 5
+	},
+	[120101] = {
+		id = 120101,
+		file = "emotion",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始赠送礼物",
+		tag_id = 3
 	},
 	[1211] = {
 		id = 1211,
@@ -926,6 +1223,15 @@
 		title = "心链对话1",
 		tag_id = 5
 	},
+	[121101] = {
+		id = 121101,
+		file = "trust1",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始心链对话1",
+		tag_id = 3
+	},
 	[1221] = {
 		id = 1221,
 		file = "trust2",
@@ -934,6 +1240,15 @@
 		unlock_condition = 101602,
 		title = "心链对话2",
 		tag_id = 5
+	},
+	[122101] = {
+		id = 122101,
+		file = "trust2",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始心链对话2",
+		tag_id = 3
 	},
 	[1231] = {
 		id = 1231,
@@ -944,6 +1259,15 @@
 		title = "心链对话3",
 		tag_id = 5
 	},
+	[123101] = {
+		id = 123101,
+		file = "trust3",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始心链对话3",
+		tag_id = 3
+	},
 	[1241] = {
 		id = 1241,
 		file = "trust4",
@@ -953,6 +1277,15 @@
 		title = "心链对话4",
 		tag_id = 5
 	},
+	[124101] = {
+		id = 124101,
+		file = "trust4",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始心链对话4",
+		tag_id = 3
+	},
 	[1251] = {
 		id = 1251,
 		file = "trust5",
@@ -961,6 +1294,15 @@
 		unlock_condition = 101605,
 		title = "心链对话5",
 		tag_id = 5
+	},
+	[125101] = {
+		id = 125101,
+		file = "trust5",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始心链对话5",
+		tag_id = 3
 	},
 	[1261] = {
 		id = 1261,
@@ -1178,6 +1520,15 @@
 		title = "更换服装",
 		tag_id = 3
 	},
+	[130101] = {
+		id = 130101,
+		file = "cloth",
+		use_skin_id = 108501,
+		type = 1,
+		unlock_condition = 101802,
+		title = "梦的伊始更换服装",
+		tag_id = 3
+	},
 	[1401] = {
 		id = 1401,
 		file = "enter1",
@@ -1275,6 +1626,24 @@
 		type = 2,
 		unlock_condition = 0,
 		title = "作战中3",
+		tag_id = 6
+	},
+	[2042] = {
+		id = 2042,
+		file = "battle4",
+		use_skin_id = 0,
+		type = 2,
+		unlock_condition = 0,
+		title = "作战中4",
+		tag_id = 6
+	},
+	[2043] = {
+		id = 2043,
+		file = "battle5",
+		use_skin_id = 0,
+		type = 2,
+		unlock_condition = 0,
+		title = "作战中5",
 		tag_id = 6
 	},
 	[2051] = {
@@ -1502,7 +1871,67 @@
 		title = "击倒起身",
 		tag_id = 6
 	},
+	[2251] = {
+		id = 2251,
+		file = "admin",
+		use_skin_id = 0,
+		type = 1,
+		unlock_condition = 0,
+		title = "对管理员的评价",
+		tag_id = 7
+	},
+	[226101] = {
+		id = 226101,
+		file = "evaluate_1043",
+		use_skin_id = 0,
+		type = 1,
+		unlock_condition = 0,
+		title = "对其他人的看法·伊里伽尔",
+		tag_id = 7
+	},
+	[226102] = {
+		id = 226102,
+		file = "evaluate_1074",
+		use_skin_id = 0,
+		type = 1,
+		unlock_condition = 0,
+		title = "对其他人的看法·英招",
+		tag_id = 7
+	},
+	[226103] = {
+		id = 226103,
+		file = "evaluate_1071",
+		use_skin_id = 0,
+		type = 1,
+		unlock_condition = 0,
+		title = "对其他人的看法·孟章",
+		tag_id = 7
+	},
+	[226104] = {
+		id = 226104,
+		file = "evaluate_1061",
+		use_skin_id = 0,
+		type = 1,
+		unlock_condition = 0,
+		title = "对其他人的看法·执明",
+		tag_id = 7
+	},
 	get_id_list_by_file = {
+		evaluate_1061 = {
+			226104
+		},
+		evaluate_1071 = {
+			226103
+		},
+		evaluate_1074 = {
+			226102
+		},
+		evaluate_1043 = {
+			226101
+		},
+		admin = {
+			2251
+		},
 		down = {
 			2231
 		},
@@ -1578,6 +2007,12 @@
 		lhp = {
 			2051
 		},
+		battle5 = {
+			2043
+		},
+		battle4 = {
+			2042
+		},
 		battle3 = {
 			2041
 		},
@@ -1608,7 +2043,8 @@
 			140101
 		},
 		cloth = {
-			1301
+			1301,
+			130101
 		},
 		touch_window02_2_night = {
 			126123
@@ -1680,39 +2116,49 @@
 			1261
 		},
 		trust5 = {
-			1251
+			1251,
+			125101
 		},
 		trust4 = {
-			1241
+			1241,
+			124101
 		},
 		trust3 = {
-			1231
+			1231,
+			123101
 		},
 		trust2 = {
-			1221
+			1221,
+			122101
 		},
 		trust1 = {
-			1211
+			1211,
+			121101
 		},
 		emotion = {
-			1201
+			1201,
+			120101
 		},
 		shake = {
 			1191,
-			119102
+			119102,
+			119103
 		},
 		qc = {
 			1181,
-			118102
+			118102,
+			118103
 		},
 		idle202 = {
 			1174
 		},
 		idle3 = {
-			1173
+			1173,
+			117301
 		},
 		idle2 = {
-			1172
+			1172,
+			117201
 		},
 		idle_window_night = {
 			117118
@@ -1764,7 +2210,8 @@
 		},
 		idle = {
 			1171,
-			117102
+			117102,
+			117119
 		},
 		talk302 = {
 			1165
@@ -1773,16 +2220,23 @@
 			1164
 		},
 		talk5 = {
-			1163
+			1163,
+			116702
 		},
 		talk4 = {
-			1162
+			1162,
+			116602
 		},
 		touch3 = {
 			116101
 		},
 		talk3 = {
-			1161
+			1161,
+			116302
+		},
+		talk7 = {
+			115127,
+			1167
 		},
 		talk2 = {
 			1151,
@@ -1810,7 +2264,13 @@
 			115123,
 			115124,
 			115125,
-			115126
+			115126,
+			115128,
+			116202
+		},
+		talk6 = {
+			114127,
+			1166
 		},
 		talk1 = {
 			1141,
@@ -1838,43 +2298,60 @@
 			114123,
 			114124,
 			114125,
-			114126
+			114126,
+			114128,
+			116102
 		},
 		assistant = {
-			1131
+			1131,
+			113101
 		},
 		echo = {
-			1121
+			1121,
+			112101
 		},
 		equip = {
-			1111
+			1111,
+			111101
 		},
 		skillup = {
-			1101
+			1101,
+			110101
 		},
 		pro3 = {
-			1091
+			1091,
+			107103
 		},
 		pro2 = {
-			1081
+			1081,
+			107102
 		},
 		pro1 = {
-			1071
+			1071,
+			107101
 		},
 		expup = {
-			1061
+			1061,
+			106101
 		},
 		leader = {
-			1051
+			1051,
+			105101
 		},
 		team = {
-			1041
+			1041,
+			104101
 		},
 		get = {
 			1031
 		},
+		choose2 = {
+			1022,
+			102201
+		},
 		choose = {
-			1021
+			1021,
+			102101
 		},
 		greet_night = {
 			101102
@@ -1886,22 +2363,34 @@
 			1014
 		},
 		greet3 = {
-			1013
+			1013,
+			101301
 		},
 		greet2 = {
-			1012
+			1012,
+			101201
 		},
 		greet = {
-			1011
+			1011,
+			101103
 		}
 	},
 	get_id_list_by_tag_id = {
+		[7] = {
+			2251,
+			226101,
+			226102,
+			226103,
+			226104
+		},
 		[6] = {
 			2011,
 			2012,
 			2021,
 			2031,
 			2041,
+			2042,
+			2043,
 			2051,
 			2061,
 			2071,
@@ -1948,12 +2437,30 @@
 		},
 		{
 			1021,
+			1022,
 			1041,
-			1051
+			1051,
+			1166,
+			1167
 		},
 		[3] = {
+			101103,
+			101201,
+			101301,
 			101101,
 			101102,
+			102101,
+			102201,
+			104101,
+			105101,
+			106101,
+			107101,
+			107102,
+			107103,
+			110101,
+			111101,
+			112101,
+			113101,
 			114102,
 			114103,
 			114104,
@@ -1979,6 +2486,8 @@
 			114124,
 			114125,
 			114126,
+			114127,
+			114128,
 			115102,
 			115103,
 			115104,
@@ -2004,7 +2513,14 @@
 			115124,
 			115125,
 			115126,
+			115127,
+			115128,
 			116101,
+			116102,
+			116202,
+			116302,
+			116602,
+			116702,
 			117102,
 			117103,
 			117104,
@@ -2022,8 +2538,19 @@
 			117116,
 			117117,
 			117118,
+			117119,
+			117201,
+			117301,
 			118102,
+			118103,
 			119102,
+			119103,
+			120101,
+			121101,
+			122101,
+			123101,
+			124101,
+			125101,
 			1261,
 			126102,
 			126103,
@@ -2048,6 +2575,7 @@
 			126122,
 			126123,
 			1301,
+			130101,
 			1401,
 			1402,
 			140101,
@@ -2078,23 +2606,39 @@
 	},
 	all = {
 		1011,
+		101103,
 		1012,
+		101201,
 		1013,
+		101301,
 		1014,
 		101101,
 		101102,
 		1021,
+		102101,
+		1022,
+		102201,
 		1031,
 		1041,
+		104101,
 		1051,
+		105101,
 		1061,
+		106101,
 		1071,
+		107101,
 		1081,
+		107102,
 		1091,
+		107103,
 		1101,
+		110101,
 		1111,
+		111101,
 		1121,
+		112101,
 		1131,
+		113101,
 		1141,
 		114102,
 		114103,
@@ -2121,6 +2665,8 @@
 		114124,
 		114125,
 		114126,
+		114127,
+		114128,
 		1151,
 		115102,
 		115103,
@@ -2147,12 +2693,21 @@
 		115124,
 		115125,
 		115126,
+		115127,
+		115128,
 		1161,
 		116101,
+		116102,
 		1162,
+		116202,
 		1163,
+		116302,
 		1164,
 		1165,
+		1166,
+		116602,
+		1167,
+		116702,
 		1171,
 		117102,
 		117103,
@@ -2171,19 +2726,30 @@
 		117116,
 		117117,
 		117118,
+		117119,
 		1172,
+		117201,
 		1173,
+		117301,
 		1174,
 		1181,
 		118102,
+		118103,
 		1191,
 		119102,
+		119103,
 		1201,
+		120101,
 		1211,
+		121101,
 		1221,
+		122101,
 		1231,
+		123101,
 		1241,
+		124101,
 		1251,
+		125101,
 		1261,
 		126102,
 		126103,
@@ -2208,6 +2774,7 @@
 		126122,
 		126123,
 		1301,
+		130101,
 		1401,
 		1402,
 		140101,
@@ -2219,6 +2786,8 @@
 		2021,
 		2031,
 		2041,
+		2042,
+		2043,
 		2051,
 		2061,
 		2071,
@@ -2243,6 +2812,11 @@
 		2202,
 		2211,
 		2221,
-		2231
+		2231,
+		2251,
+		226101,
+		226102,
+		226103,
+		226104
 	}
 }

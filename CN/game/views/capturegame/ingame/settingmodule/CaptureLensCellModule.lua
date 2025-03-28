@@ -48,7 +48,7 @@ function var_0_0.Render(arg_7_0, arg_7_1)
 
 		arg_7_0.filterImg_.gameObject:SetActive(true)
 
-		arg_7_0.filterImg_.sprite = getSpriteWithoutAtlas(CaptureGameTools:GetLensPath(arg_7_1.id))
+		arg_7_0.filterImg_.sprite = pureGetSpriteWithoutAtlas(CaptureGameTools:GetLensPath(arg_7_1.id))
 	end
 
 	arg_7_0.staticCtx.controller:SetSelectedState(arg_7_1.isUse and "state1" or "state0")

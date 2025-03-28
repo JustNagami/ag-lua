@@ -113,7 +113,7 @@ function var_0_0.InitBackScene(arg_11_0, arg_11_1)
 
 	arg_11_0.backGroundTrs_.localPosition = Vector3(var_11_1[1], var_11_1[2], var_11_1[3])
 	arg_11_0.backGroundTrs_.localEulerAngles = Vector3(0, 0, 0)
-	arg_11_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas(SpritePathCfg.Bg.path .. var_11_2)
+	arg_11_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.Bg.path .. var_11_2)
 end
 
 function var_0_0.Finish(arg_12_0)

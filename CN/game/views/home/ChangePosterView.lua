@@ -137,7 +137,7 @@ function var_0_0.OnEnter(arg_20_0)
 	arg_20_0.filterView_:SetHeroIdList(var_20_0)
 	arg_20_0:UpdateBar()
 
-	local var_20_1 = PlayerData:GetPosterGirlHeroId()
+	local var_20_1 = SkinCfg[PlayerData:GetPosterGirlHeroSkinId()].hero
 	local var_20_2 = 1
 
 	if arg_20_0.params_.index then

@@ -5228,6 +5228,120 @@
 			}
 		}
 	},
+	[1085] = {
+		id = 1085,
+		position = {
+			500,
+			0,
+			0
+		},
+		rotation = {
+			0,
+			0,
+			0
+		},
+		scale = {
+			1,
+			1,
+			1
+		},
+		effectList = {},
+		skinMeshIDList = {},
+		skinMeshPresetName = {},
+		skinMeshPresetValue = {},
+		skinMeshPresetEffect = {},
+		poseList = {
+			{
+				108500,
+				0
+			},
+			{
+				108599,
+				0
+			},
+			{
+				108501,
+				0
+			},
+			{
+				108502,
+				0
+			},
+			{
+				108503,
+				0
+			},
+			{
+				108504,
+				0
+			},
+			{
+				108505,
+				0
+			},
+			{
+				108506,
+				0
+			}
+		}
+	},
+	[1073] = {
+		id = 1073,
+		position = {
+			500,
+			0,
+			0
+		},
+		rotation = {
+			0,
+			0,
+			0
+		},
+		scale = {
+			1,
+			1,
+			1
+		},
+		effectList = {},
+		skinMeshIDList = {},
+		skinMeshPresetName = {},
+		skinMeshPresetValue = {},
+		skinMeshPresetEffect = {},
+		poseList = {
+			{
+				107300,
+				0
+			},
+			{
+				107399,
+				0
+			},
+			{
+				107301,
+				0
+			},
+			{
+				107302,
+				0
+			},
+			{
+				107303,
+				1
+			},
+			{
+				107304,
+				1
+			},
+			{
+				107305,
+				1
+			},
+			{
+				107306,
+				1
+			}
+		}
+	},
 	all = {
 		1039,
 		1048,
@@ -5310,6 +5424,8 @@
 		1034,
 		102202,
 		1012,
-		107503
+		107503,
+		1085,
+		1073
 	}
 }

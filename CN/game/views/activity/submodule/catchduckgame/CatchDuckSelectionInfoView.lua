@@ -55,7 +55,7 @@ end
 
 function var_0_0.RefreshUI(arg_10_0)
 	arg_10_0.sectionName_.text = GetI18NText(arg_10_0.stageCfg_.name)
-	arg_10_0.sectionImage_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, arg_10_0.stageCfg_.background_1))
+	arg_10_0.sectionImage_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, arg_10_0.stageCfg_.background_1))
 	arg_10_0.targetScoreText_.text = string.format(GetTips("DUCK_NUM"), arg_10_0.targetScore_)
 	arg_10_0.limitTimeText_.text = manager.time:DescCDTime(arg_10_0.limitTime_)
 

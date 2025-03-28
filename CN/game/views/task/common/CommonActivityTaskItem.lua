@@ -52,6 +52,10 @@ local var_0_1 = {
 }
 
 local function var_0_2(arg_5_0, arg_5_1, arg_5_2, arg_5_3)
+	if not arg_5_0 then
+		return nil
+	end
+
 	arg_5_3 = arg_5_3 or arg_5_2
 
 	return arg_5_0:GetController(arg_5_2) or ControllerUtil.GetController(arg_5_1, arg_5_2)

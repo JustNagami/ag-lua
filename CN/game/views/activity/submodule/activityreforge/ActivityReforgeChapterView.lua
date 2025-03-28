@@ -72,10 +72,6 @@ function var_0_0.AddUIListeners(arg_5_0)
 
 			if ActivityTools.GetActivityIsOpenWithTip(var_11_0) then
 				if ActivityReforgeData:GetChapterIsUnlock(var_11_0) then
-					local var_11_1 = RedPointConst.ACTIVITY_REFORGE_NEW_CHPATER .. var_11_0
-
-					manager.redPoint:setTip(var_11_1, 0)
-
 					arg_5_0.curSelectIndex_ = iter_5_0
 
 					arg_5_0:RefreshUI()

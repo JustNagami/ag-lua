@@ -176,8 +176,8 @@ function var_0_0.RefreshUI(arg_16_0)
 
 	local var_16_2 = var_16_1.icon
 
-	arg_16_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/Music/Music_icon/" .. var_16_2)
-	arg_16_0.m_bgIcon.sprite = getSpriteWithoutAtlas("TextureConfig/Music/Music1_icon/" .. var_16_2)
+	arg_16_0.m_icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Music/Music_icon/" .. var_16_2)
+	arg_16_0.m_bgIcon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Music/Music1_icon/" .. var_16_2)
 	arg_16_0.m_author.text = GetI18NText(var_16_1.creator_name)
 
 	arg_16_0:RefreshActivity()

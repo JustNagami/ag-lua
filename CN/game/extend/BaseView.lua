@@ -270,13 +270,13 @@ function var_0_0.AddPressingByTimeListener(arg_26_0, arg_26_1, arg_26_2, arg_26_
 
 	arg_26_0.pressing_ = false
 
-	local function var_26_3(arg_27_0, arg_27_1, arg_27_2)
+	local function var_26_3(arg_27_0, arg_27_1, arg_27_2, arg_27_3)
 		arg_26_0.pressCnt_ = arg_26_0.pressCnt_ + 1
 
 		if type(arg_27_0) == "string" then
-			return arg_26_0[arg_27_0](arg_26_0, arg_27_1, arg_27_2, unpack(var_26_0))
+			return arg_26_0[arg_27_0](arg_26_0, arg_27_1, arg_27_2, arg_27_3, unpack(var_26_0))
 		else
-			return arg_27_0(arg_27_1, arg_27_2, unpack(var_26_0))
+			return arg_27_0(arg_27_1, arg_27_2, arg_27_3, unpack(var_26_0))
 		end
 	end
 
@@ -295,7 +295,7 @@ function var_0_0.AddPressingByTimeListener(arg_26_0, arg_26_1, arg_26_2, arg_26_
 			var_0_2.StartTimerLoop(arg_26_0, "PressTimer", arg_26_2, arg_26_3, arg_26_4, function(arg_30_0)
 				OperationRecorder.Record(arg_26_0.class.__cname, arg_29_0.name .. arg_30_0)
 
-				return var_26_3(arg_26_5, arg_29_0, arg_29_1)
+				return var_26_3(arg_26_5, arg_29_0, arg_29_1, arg_30_0)
 			end)
 		end
 	end))

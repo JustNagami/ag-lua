@@ -7585,6 +7585,8 @@
 			if arg_158_0 == 2 then
 				arg_156_0:Play113072041(arg_156_1)
 			end
+
+			arg_156_1:RecordChoiceLog(113072039, 113072040, 113072041)
 		end
 
 		function arg_156_1.onSingleLineUpdate_(arg_159_0)

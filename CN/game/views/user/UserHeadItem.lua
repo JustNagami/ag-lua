@@ -69,7 +69,7 @@ function var_0_0.RefreshItem(arg_7_0, arg_7_1, arg_7_2)
 
 		local var_7_0 = ChatBubbleCfg[arg_7_0.itemID_].color1
 
-		arg_7_0.chatBubbleTxt_.color = Color(var_7_0[1], var_7_0[2], var_7_0[3])
+		arg_7_0.chatBubbleTxt_.color = LuaHelper.StringToColor("#" .. var_7_0)
 
 		manager.redPoint:bindUIandKey(arg_7_0.transform_, string.format("%s_%s", RedPointConst.CHAT_BUBBLE, arg_7_0.itemID_))
 	end

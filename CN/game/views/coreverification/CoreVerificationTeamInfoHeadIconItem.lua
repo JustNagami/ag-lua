@@ -27,7 +27,7 @@ function var_0_0.SetData(arg_4_0, arg_4_1)
 			var_4_0 = arg_4_1
 		end
 
-		arg_4_0.icon_.sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. var_4_0)
+		arg_4_0.icon_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. var_4_0)
 	end
 end
 

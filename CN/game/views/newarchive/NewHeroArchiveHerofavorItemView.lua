@@ -41,7 +41,7 @@ function var_0_0.RefreshUI(arg_7_0, arg_7_1)
 
 	local var_7_0 = ArchiveData:GetTrustLevel(arg_7_0.id)
 
-	arg_7_0.roleImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Itemshead/" .. arg_7_0.id)
+	arg_7_0.roleImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Itemshead/" .. arg_7_0.id)
 
 	if var_7_0 > 0 then
 		arg_7_0.favorController:SetSelectedState("3")

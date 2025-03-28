@@ -8,8 +8,12 @@ function var_0_0.Ctor(arg_1_0, arg_1_1)
 
 	arg_1_0.partBtnItemList_ = {}
 
-	for iter_1_0 = 1, 2 do
-		arg_1_0.partBtnItemList_[iter_1_0] = ChapterPartBtnItem.New(arg_1_0[string.format("chapterPart%sGo_", iter_1_0)], iter_1_0)
+	for iter_1_0 = 1, arg_1_0.transform_.childCount do
+		local var_1_0 = arg_1_0[string.format("chapterPart%sGo_", iter_1_0)]
+
+		if var_1_0 then
+			arg_1_0.partBtnItemList_[iter_1_0] = ChapterPartBtnItem.New(var_1_0, iter_1_0)
+		end
 	end
 end
 
@@ -42,11 +46,20 @@ end
 function var_0_0.RefreshUI(arg_6_0, arg_6_1)
 	local var_6_0 = getChapterClientCfgByChapterID(arg_6_1)
 
-	if #var_6_0.chapter_list > 1 and (var_6_0.id == ChapterConst.CHAPTER_CLIENT_XUHENG_PART_2_2 or var_6_0.id == ChapterConst.CHAPTER_CLIENT_LUWU_ZHIMING or var_6_0.id == ChapterConst.CHAPTER_CLIENT_OUMOFEISI or var_6_0.id == ChapterConst.CHAPTER_CLIENT_BAICHAO or var_6_0.id == ChapterConst.CHAPTER_CLIENT_KEERGAI) then
+	if #var_6_0.chapter_list > 1 and (var_6_0.id == ChapterConst.CHAPTER_CLIENT_XUHENG_PART_2_2 or var_6_0.id == ChapterConst.CHAPTER_CLIENT_LUWU_ZHIMING or var_6_0.id == ChapterConst.CHAPTER_CLIENT_OUMOFEISI or var_6_0.id == ChapterConst.CHAPTER_CLIENT_BAICHAO or var_6_0.id == ChapterConst.CHAPTER_CLIENT_KEERGAI or var_6_0.id == ChapterConst.CHAPTER_CLIENT_21) then
 		arg_6_0:Show(true)
 
-		for iter_6_0 = 1, 2 do
-			arg_6_0.partBtnItemList_[iter_6_0]:SetChapterID(var_6_0.chapter_list[iter_6_0], arg_6_1)
+		local var_6_1 = var_6_0.chapter_list
+
+		for iter_6_0 = 1, arg_6_0.transform_.childCount do
+			if arg_6_0.partBtnItemList_[iter_6_0] then
+				if not var_6_1[iter_6_0] then
+					arg_6_0.partBtnItemList_[iter_6_0]:SetActive(false)
+				else
+					arg_6_0.partBtnItemList_[iter_6_0]:SetActive(true)
+					arg_6_0.partBtnItemList_[iter_6_0]:SetChapterID(var_6_1[iter_6_0], arg_6_1)
+				end
+			end
 		end
 	else
 		arg_6_0:Show(false)

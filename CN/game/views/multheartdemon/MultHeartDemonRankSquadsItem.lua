@@ -34,7 +34,7 @@ function var_0_0.SetData(arg_4_0, arg_4_1, arg_4_2, arg_4_3)
 		var_4_1 = var_0_1(arg_4_1.skin_id, arg_4_0.heroID_)
 	end
 
-	arg_4_0.portraitImg_.sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroIcon.path .. var_4_1)
+	arg_4_0.portraitImg_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroIcon.path .. var_4_1)
 
 	local var_4_3 = HeroCfg[arg_4_0.heroID_]
 

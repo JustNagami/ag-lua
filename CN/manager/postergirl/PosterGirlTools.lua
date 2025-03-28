@@ -111,4 +111,53 @@ function var_0_0.IsSkinSceneTzeroMode(arg_9_0, arg_9_1)
 	return false
 end
 
+function var_0_0.IsLoopSwitch(arg_10_0)
+	local var_10_0 = HomeSceneSettingCfg[arg_10_0]
+
+	return var_10_0.can_loop_switch_camera and var_10_0.can_loop_switch_camera == 1 or false
+end
+
+function var_0_0.IsInterruptCurAni(arg_11_0)
+	local var_11_0 = HomeSceneSettingCfg[arg_11_0]
+
+	return var_11_0.can_interrupt_current_anim_switch_camera and var_11_0.can_interrupt_current_anim_switch_camera == 1 or false
+end
+
+function var_0_0.CanInterruptCurAni()
+	local var_12_0 = manager.posterGirl.actor
+
+	if var_12_0 then
+		local var_12_1 = HomeSceneSettingData:GetCurScene()
+		local var_12_2 = PosterGirlTools.IsInterruptCurAni(var_12_1)
+
+		if not var_12_0:CheckInitState() and not var_12_2 then
+			return true
+		end
+	end
+
+	return false
+end
+
+function var_0_0.ShowPureMode()
+	manager.notify:Invoke(PUREMODE_SHOW)
+end
+
+function var_0_0.IsDlcBtn()
+	local var_14_0 = manager.posterGirl:GetTag()
+	local var_14_1 = manager.posterGirl:GetCurScene()
+	local var_14_2 = HomeSceneSettingCfg[var_14_1]
+	local var_14_3 = var_14_0 == PosterGirlConst.PosterGirlTag.t0
+	local var_14_4 = var_14_2.limit_display ~= 0
+
+	return SettingData:GetGameSettingData().home_scene_dlc_btn == 1 and (var_14_3 and var_14_4 or var_14_2.can_loop_switch_camera == 1)
+end
+
+function var_0_0.UpdateDlCBtnRed()
+	if getData("GAMESETTING", "DLC_BTN") == 1 then
+		manager.redPoint:setTip(RedPointConst.DLC_BTN_RED, 0)
+	else
+		manager.redPoint:setTip(RedPointConst.DLC_BTN_RED, 1)
+	end
+end
+
 return var_0_0

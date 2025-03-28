@@ -278,19 +278,20 @@ end
 
 function var_0_0.ShopItemUpdate(arg_13_0, arg_13_1)
 	local var_13_0 = {}
+	local var_13_1 = {}
 
 	if arg_13_0.result == 0 then
 		if var_0_0.CheckIsDlcAndSkin(arg_13_1.buy_goods_list) then
 			manager.notify:CallUpdateFunc(SHOP_BUY_CALLBACK, arg_13_0.result, arg_13_1.buy_goods_list[1].buy_id, arg_13_1.shop_id, arg_13_1.buy_goods_list[1].buy_num)
 			manager.notify:CallUpdateFunc(SHOP_BUY_CALLBACK, arg_13_0.result, arg_13_1.buy_goods_list[2].buy_id, arg_13_1.shop_id, arg_13_1.buy_goods_list[2].buy_num)
 
-			local var_13_1 = var_0_0.GetSkinGiveBackList(arg_13_1.buy_goods_list)
+			local var_13_2 = var_0_0.GetSkinGiveBackList(arg_13_1.buy_goods_list)
 
 			JumpTools.OpenPageByJump("/skinDlcShow", {
 				goodId = arg_13_1.buy_goods_list[1].buy_id,
 				dlcId = arg_13_1.buy_goods_list[2].buy_id,
 				callBack = function()
-					getReward(var_13_1, {
+					getReward(var_13_2, {
 						ItemConst.ITEM_TYPE.HERO_SKIN
 					})
 				end
@@ -304,82 +305,82 @@ function var_0_0.ShopItemUpdate(arg_13_0, arg_13_1)
 		for iter_13_0, iter_13_1 in ipairs(arg_13_1.buy_goods_list) do
 			ShopData.ShopItemUpdate(iter_13_1.buy_id, arg_13_1.shop_id, iter_13_1.buy_num)
 
-			local var_13_2 = getShopCfg(iter_13_1.buy_id)
-			local var_13_3 = var_13_2.give_id or var_13_2.description
-			local var_13_4 = var_13_2.give or 1
-			local var_13_5
+			local var_13_3 = getShopCfg(iter_13_1.buy_id)
+			local var_13_4 = var_13_3.give_id or var_13_3.description
+			local var_13_5 = var_13_3.give or 1
 			local var_13_6
+			local var_13_7
 
-			if var_13_2.description then
-				local var_13_7 = var_13_2.description
+			if var_13_3.description then
+				local var_13_8 = var_13_3.description
 
-				var_13_6 = RechargeShopDescriptionCfg[var_13_7]
+				var_13_7 = RechargeShopDescriptionCfg[var_13_8]
 			else
-				var_13_6 = ItemCfg[var_13_3]
+				var_13_7 = ItemCfg[var_13_4]
 			end
 
-			if var_13_6.sub_type == ItemConst.ITEM_SUB_TYPE.SHOP_PACKS then
-				local var_13_8 = {}
-				local var_13_9 = var_13_6.param
+			if var_13_7.sub_type == ItemConst.ITEM_SUB_TYPE.SHOP_PACKS then
+				local var_13_9 = {}
+				local var_13_10 = var_13_7.param
 
-				for iter_13_2, iter_13_3 in ipairs(var_13_9) do
-					table.insert(var_13_8, {
+				for iter_13_2, iter_13_3 in ipairs(var_13_10) do
+					table.insert(var_13_9, {
 						iter_13_3[1],
-						iter_13_3[2] * iter_13_1.buy_num * var_13_4
+						iter_13_3[2] * iter_13_1.buy_num * var_13_5
 					})
 				end
 
-				var_13_0 = var_13_8
-			elseif var_13_6.sub_type == ItemConst.ITEM_SUB_TYPE.SHOP_SEVEN_PACKS then
-				local var_13_10 = {}
-				local var_13_11 = var_13_6.param[1]
+				var_13_0 = var_13_9
+			elseif var_13_7.sub_type == ItemConst.ITEM_SUB_TYPE.SHOP_SEVEN_PACKS then
+				local var_13_11 = {}
+				local var_13_12 = var_13_7.param[1]
 
-				for iter_13_4, iter_13_5 in ipairs(var_13_11) do
-					table.insert(var_13_10, {
+				for iter_13_4, iter_13_5 in ipairs(var_13_12) do
+					table.insert(var_13_11, {
 						iter_13_5[1],
-						iter_13_5[2] * iter_13_1.buy_num * var_13_4
+						iter_13_5[2] * iter_13_1.buy_num * var_13_5
 					})
 				end
 
-				var_13_0 = var_13_10
-			elseif var_13_6.type == 5 and ItemConst.ITEM_SUB_TYPE.FUKUBUKURO == var_13_6.sub_type then
+				var_13_0 = var_13_11
+			elseif var_13_7.type == 5 and ItemConst.ITEM_SUB_TYPE.FUKUBUKURO == var_13_7.sub_type then
 				var_13_0 = {
 					{
-						var_13_3,
-						var_13_4 * iter_13_1.buy_num
+						var_13_4,
+						var_13_5 * iter_13_1.buy_num
 					}
 				}
-			elseif var_13_6.type == 8 and var_13_2.description then
+			elseif var_13_7.type == 8 and var_13_3.description then
 				var_13_0 = {}
 
-				local var_13_12 = var_13_6.param[1]
+				local var_13_13 = var_13_7.param[1]
 
 				var_13_0 = {
 					{
-						var_13_12,
+						var_13_13,
 						1
 					}
 				}
-			elseif var_13_6.type == ItemConst.ITEM_TYPE.SCENE then
+			elseif var_13_7.type == ItemConst.ITEM_TYPE.SCENE then
 				var_13_0 = {
 					{
-						var_13_6.id,
+						var_13_7.id,
 						[2] = 1
 					}
 				}
 			end
 
-			if var_13_2.give_back_list and next(var_13_2.give_back_list) ~= nil then
-				local var_13_13 = {}
+			if var_13_3.give_back_list and next(var_13_3.give_back_list) ~= nil then
+				local var_13_14 = {}
 
-				for iter_13_6, iter_13_7 in ipairs(var_13_2.give_back_list) do
-					table.insert(var_13_13, {
+				for iter_13_6, iter_13_7 in ipairs(var_13_3.give_back_list) do
+					table.insert(var_13_14, {
 						iter_13_7.id,
 						iter_13_7.num
 					})
 				end
 
-				table.insertto(var_13_0, var_13_13)
+				table.insertto(var_13_0, var_13_14)
 			end
 
 			var_13_0 = ShopTools.revertGoodsReward(var_13_0)
@@ -388,7 +389,30 @@ function var_0_0.ShopItemUpdate(arg_13_0, arg_13_1)
 
 			manager.notify:CallUpdateFunc(SHOP_BUY_CALLBACK, arg_13_0.result, iter_13_1.buy_id, arg_13_1.shop_id, iter_13_1.buy_num)
 
-			if var_13_6.type == ItemConst.ITEM_TYPE.SCENE then
+			if var_13_3.shop_id == ShopConst.SHOP_ID.REGRESSION_SHOP then
+				for iter_13_8, iter_13_9 in pairs(var_13_0 or {}) do
+					table.insert(var_13_1, iter_13_9)
+				end
+
+				var_13_1 = mergeReward(var_13_1)
+
+				if iter_13_0 == #arg_13_1.buy_goods_list then
+					if #var_13_1 > 0 then
+						getReward(var_13_1)
+					else
+						local var_13_15 = var_13_7.param
+
+						for iter_13_10, iter_13_11 in ipairs(var_13_15) do
+							table.insert(var_13_1, {
+								id = iter_13_11[1],
+								num = iter_13_11[2]
+							})
+						end
+
+						getReward(var_13_1)
+					end
+				end
+			elseif var_13_7.type == ItemConst.ITEM_TYPE.SCENE then
 				JumpTools.OpenPageByJump("/skinDlcShow", {
 					goodId = iter_13_1.buy_id,
 					callBack = function()
@@ -399,7 +423,7 @@ function var_0_0.ShopItemUpdate(arg_13_0, arg_13_1)
 				getReward(var_13_0, {
 					ItemConst.ITEM_TYPE.HERO_SKIN
 				}, function()
-					var_0_0:AfterShopItemUpdate(var_13_6)
+					var_0_0:AfterShopItemUpdate(var_13_7)
 				end)
 			else
 				ShowTips("TRANSACTION_SUCCESS")

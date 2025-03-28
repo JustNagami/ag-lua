@@ -342,7 +342,7 @@ function var_0_0.RefreshBuff(arg_26_0)
 	if var_26_1.useless then
 		local var_26_2 = ActivityPtRouletteTipsCfg[var_26_1.affix]
 
-		arg_26_0.buffIcon_.sprite = getSpriteWithoutAtlas(SpritePathCfg.AffixIcon.path .. var_26_2.icon)
+		arg_26_0.buffIcon_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.AffixIcon.path .. var_26_2.icon)
 		arg_26_0.buffText_.text = var_26_2.desc
 	else
 		arg_26_0.buffIcon_.sprite = getAffixSprite({

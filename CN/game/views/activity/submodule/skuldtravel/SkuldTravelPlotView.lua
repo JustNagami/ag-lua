@@ -76,7 +76,7 @@ function var_0_0.RefreshUI(arg_10_0)
 	arg_10_0.nametext_.text = GetI18NText(var_10_0.story_name)
 	arg_10_0.stroytext_.text = GetI18NText(var_10_0.story_word)
 	arg_10_0.itemnametext_.text = GetI18NText(TravelSkuldItemCfg[var_10_0.item_id].name)
-	arg_10_0.itemimage_.sprite = getSpriteWithoutAtlas(var_0_1 .. TravelSkuldItemCfg[var_10_0.item_id].icon)
+	arg_10_0.itemimage_.sprite = pureGetSpriteWithoutAtlas(var_0_1 .. TravelSkuldItemCfg[var_10_0.item_id].icon)
 end
 
 function var_0_0.OnExit(arg_11_0)

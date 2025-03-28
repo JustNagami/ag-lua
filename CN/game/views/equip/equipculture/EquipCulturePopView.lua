@@ -27,6 +27,7 @@ function var_0_1.InitUI(arg_4_0)
 	end
 
 	arg_4_0.stateController_ = arg_4_0.transCon_:GetController("state")
+	arg_4_0.upgradeController_ = arg_4_0.transCon_:GetController("upgrade")
 end
 
 function var_0_1.AddUIListener(arg_5_0)
@@ -93,11 +94,20 @@ function var_0_1.RefreshType(arg_9_0, arg_9_1)
 	local var_9_1 = arg_9_0.params_.newEquip
 
 	arg_9_0.stateController_:SetSelectedState(arg_9_1 == "reset" and "reset" or "lv")
+	arg_9_0.upgradeController_:SetSelectedState("hide")
 
 	if arg_9_1 == "levelup" then
 		arg_9_0.oldLv_.text = var_9_0:GetLevel()
 		arg_9_0.newLv_.text = var_9_1:GetLevel()
 		arg_9_0.mainTitle_.text = GetTips("EQUIP_LEVELUP_POP")
+
+		if arg_9_0.params_.breakTimes and arg_9_0.params_.breakTimes > 0 then
+			arg_9_0.upgradeController_:SetSelectedState("show")
+
+			arg_9_0.oldUpgradeLv_.text = var_9_0:GetMaxLv()
+			arg_9_0.nowUpgradeLv_.text = var_9_1:GetMaxLv()
+			arg_9_0.params_.breakTimes = nil
+		end
 	elseif arg_9_1 == "upgrade" then
 		arg_9_0.oldLv_.text = var_9_0:GetMaxLv()
 		arg_9_0.newLv_.text = var_9_1:GetMaxLv()
@@ -142,7 +152,7 @@ function var_0_1.RefreshSkill(arg_12_0, arg_12_1, arg_12_2)
 		local var_12_3 = arg_12_1[iter_12_0]
 		local var_12_4 = EquipSkillCfg[var_12_3.id]
 
-		arg_12_0.skillItems_[iter_12_0].icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_12_4.icon)
+		arg_12_0.skillItems_[iter_12_0].icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_12_4.icon)
 		arg_12_0.skillItems_[iter_12_0].name_.text = GetI18NText(var_12_4.name)
 		arg_12_0.skillItems_[iter_12_0].lv_.text = GetTips("LEVEL") .. var_12_3.num
 	end

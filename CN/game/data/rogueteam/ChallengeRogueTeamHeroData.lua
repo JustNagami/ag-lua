@@ -201,32 +201,27 @@ function var_0_0.GetReserveHeroList(arg_17_0)
 	return ReserveTools.GetHeroList(var_17_0)
 end
 
-function var_0_0.GetTeamBuffAffixList(arg_18_0)
-	local var_18_0 = arg_18_0:GetReserveHeroList()
+function var_0_0.GetTeamBuffAffixList(arg_18_0, arg_18_1)
+	local var_18_0 = {}
 	local var_18_1 = {}
-	local var_18_2 = {}
-	local var_18_3 = ChallengeRogueTeamTools.GetRougeTeamSettingList(ChallengeRogueTeamConst.SETTING_VALUE.TEAM_ATTRIBUTE_BUFF_LIST)
-	local var_18_4 = arg_18_0:GetAttriIDList()
+	local var_18_2 = ChallengeRogueTeamTools.GetRougeTeamSettingList(ChallengeRogueTeamConst.SETTING_VALUE.TEAM_ATTRIBUTE_BUFF_LIST)
+	local var_18_3 = arg_18_0:GetAttriIDList()
 
-	for iter_18_0, iter_18_1 in ipairs(var_18_0) do
-		local var_18_5 = HeroCfg[iter_18_1]
+	for iter_18_0, iter_18_1 in ipairs(arg_18_1) do
+		local var_18_4 = table.indexof(var_18_3, iter_18_1.mainDamageType)
 
-		if var_18_5 then
-			local var_18_6 = table.indexof(var_18_4, var_18_5.ATK_attribute[1])
+		if var_18_4 then
+			if not table.indexof(var_18_1, var_18_2[var_18_4]) then
+				table.insert(var_18_1, var_18_2[var_18_4])
 
-			if var_18_6 then
-				if not table.indexof(var_18_2, var_18_3[var_18_6]) then
-					table.insert(var_18_2, var_18_3[var_18_6])
-
-					var_18_1[var_18_3[var_18_6]] = 1
-				else
-					var_18_1[var_18_3[var_18_6]] = var_18_1[var_18_3[var_18_6]] + 1
-				end
+				var_18_0[var_18_2[var_18_4]] = 1
+			else
+				var_18_0[var_18_2[var_18_4]] = var_18_0[var_18_2[var_18_4]] + 1
 			end
 		end
 	end
 
-	return var_18_2, var_18_1
+	return var_18_1, var_18_0
 end
 
 function var_0_0.GetAttriIDList(arg_19_0)

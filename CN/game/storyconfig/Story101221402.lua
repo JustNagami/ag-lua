@@ -954,6 +954,8 @@
 			if arg_34_0 == 1 then
 				arg_32_0:Play122142009(arg_32_1)
 			end
+
+			arg_32_1:RecordChoiceLog(122142008, 122142009)
 		end
 
 		function arg_32_1.onSingleLineUpdate_(arg_35_0)
@@ -2504,6 +2506,8 @@
 			if arg_93_0 == 1 then
 				arg_91_0:Play122142023(arg_91_1)
 			end
+
+			arg_91_1:RecordChoiceLog(122142022, 122142023)
 		end
 
 		function arg_91_1.onSingleLineUpdate_(arg_94_0)
@@ -2549,6 +2553,8 @@
 			if arg_97_0 == 1 then
 				arg_95_0:Play122142024(arg_95_1)
 			end
+
+			arg_95_1:RecordChoiceLog(122142023, 122142024)
 		end
 
 		function arg_95_1.onSingleLineUpdate_(arg_98_0)

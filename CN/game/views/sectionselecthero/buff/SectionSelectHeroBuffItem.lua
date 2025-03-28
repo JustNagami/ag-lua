@@ -20,7 +20,7 @@ function var_0_0.SetData(arg_3_0, arg_3_1)
 	local var_3_1 = AffixTypeCfg[var_3_0]
 	local var_3_2 = PublicBuffCfg[var_3_1.affix_buff_id].icon
 
-	arg_3_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/MaedukAffix/" .. var_3_2)
+	arg_3_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/MaedukAffix/" .. var_3_2)
 
 	arg_3_0:Show(true)
 end

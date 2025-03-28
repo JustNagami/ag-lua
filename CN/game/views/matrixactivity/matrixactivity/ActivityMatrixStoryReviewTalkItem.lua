@@ -19,7 +19,7 @@ function var_0_0.SetData(arg_4_0, arg_4_1)
 	local var_4_0 = arg_4_1[1] or ""
 	local var_4_1 = arg_4_1[2] or 0
 
-	arg_4_0.m_head.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. var_4_0)
+	arg_4_0.m_head.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Story/Character/" .. var_4_0)
 	arg_4_0.m_content.text = StoryWordCfg[var_4_1] and GetI18NText(StoryWordCfg[var_4_1].content) or ""
 end
 

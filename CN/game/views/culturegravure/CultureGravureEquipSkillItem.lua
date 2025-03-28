@@ -28,7 +28,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1)
 
 	local var_5_0 = EquipSkillCfg[arg_5_0.equipSkillId_]
 
-	arg_5_0.iconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_5_0.icon)
+	arg_5_0.iconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_5_0.icon)
 	arg_5_0.nameText_.text = var_5_0.name
 
 	local var_5_1 = var_5_0.upgrade / var_5_0.percent * var_5_0.lvmax

@@ -28,8 +28,8 @@ function var_0_0.OnEnter(arg_7_0)
 
 	local var_7_0 = PuzzleNewCfg[arg_7_0.activityID_]
 
-	arg_7_0.originImg_.sprite = getSpriteWithoutAtlas(var_7_0.preview_album_id)
-	arg_7_0.checkImg_.sprite = getSpriteWithoutAtlas(var_7_0.album_id)
+	arg_7_0.originImg_.sprite = pureGetSpriteWithoutAtlas(var_7_0.preview_album_id)
+	arg_7_0.checkImg_.sprite = pureGetSpriteWithoutAtlas(var_7_0.album_id)
 
 	local var_7_1 = #var_7_0.clue_id
 	local var_7_2 = PuzzleNewData:GetCurCheckList(arg_7_0.activityID_)
@@ -40,6 +40,7 @@ function var_0_0.OnEnter(arg_7_0)
 	end
 
 	arg_7_0.progressText_.text = string.format("%d/%d", var_7_3, var_7_1)
+	arg_7_0.checkGoalText_.text = string.format(GetTips("PUZZLE_CHECK_GOAL_TIP"), #var_7_0.clue_id)
 end
 
 return var_0_0

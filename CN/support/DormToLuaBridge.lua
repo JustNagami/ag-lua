@@ -195,18 +195,3 @@ end
 function ChangeDormScene()
 	DestroyLua()
 end
-
-function ChangeDormBackGround()
-	local var_12_0 = GameDisplayCfg.dorm_loading_tips
-	local var_12_1 = GameDisplayCfg.dorm_loading_picture
-
-	if var_12_0 and var_12_1 then
-		local var_12_2 = math.random(1, #var_12_0.value)
-		local var_12_3 = math.random(1, #var_12_1.value)
-		local var_12_4 = GetTips(var_12_0.value[var_12_2][1]) or ""
-		local var_12_5 = GetTips(var_12_0.value[var_12_2][2]) or ""
-		local var_12_6 = var_12_1.value[var_12_3] or "loading_11"
-
-		LoadingUIManager.inst:UpdateLoadingInfo(var_12_4, var_12_5, var_12_6)
-	end
-end

@@ -929,6 +929,24 @@
 			2016
 		}
 	},
+	[347] = {
+		text_display_1 = "战斗掉落",
+		text_display_2 = "剧情",
+		text_invalid = 0,
+		need_hide = 0,
+		asset_pend_key = "",
+		link = "/chapterSectionRollBg/chapterSectionInfo",
+		pagename = "",
+		activity_id = 0,
+		params = "",
+		id = 347,
+		icon = "icon_access_site_white",
+		system_id = 301,
+		paramName = {
+			"chapterID",
+			"section"
+		}
+	},
 	[401] = {
 		text_display_1 = "获取",
 		text_display_2 = "精准探测",
@@ -1621,6 +1639,48 @@
 			"heroID",
 			"skinID",
 			"shopID"
+		}
+	},
+	[536] = {
+		text_display_1 = "首充福利",
+		text_display_2 = "首充福利",
+		text_invalid = 0,
+		need_hide = 0,
+		asset_pend_key = "",
+		link = "/rechargeMain",
+		pagename = "",
+		activity_id = 0,
+		id = 536,
+		icon = "icon_access_site_white",
+		system_id = 501,
+		paramName = {
+			"page",
+			"childShopIndex"
+		},
+		params = {
+			4,
+			1
+		}
+	},
+	[537] = {
+		text_display_1 = "首充福利",
+		text_display_2 = "首充福利",
+		text_invalid = 0,
+		need_hide = 0,
+		asset_pend_key = "",
+		link = "/rechargeMain",
+		pagename = "",
+		activity_id = 0,
+		id = 537,
+		icon = "icon_access_site_white",
+		system_id = 501,
+		paramName = {
+			"page",
+			"childShopIndex"
+		},
+		params = {
+			4,
+			4
 		}
 	},
 	[601] = {
@@ -3352,6 +3412,24 @@
 			"isPrefab"
 		}
 	},
+	[16101] = {
+		text_display_1 = "获取",
+		text_display_2 = "限时活动",
+		text_invalid = 0,
+		need_hide = 1,
+		asset_pend_key = "",
+		link = "/activityMain_2_8",
+		pagename = "",
+		activity_id = 321001,
+		params = "",
+		id = 16101,
+		icon = "icon_access_site_white",
+		system_id = 10301,
+		paramName = {
+			"activityID",
+			"subActivityID"
+		}
+	},
 	[2510] = {
 		text_display_1 = "",
 		text_display_2 = "",
@@ -3992,6 +4070,36 @@
 			"chapterClientID"
 		}
 	},
+	[40008] = {
+		text_display_1 = "",
+		text_display_2 = "支线剧情",
+		text_invalid = 0,
+		need_hide = 0,
+		asset_pend_key = "",
+		link = "/skuldSystemStageView",
+		pagename = "",
+		activity_id = 0,
+		params = "",
+		id = 40008,
+		icon = "icon_access_site_white",
+		system_id = 10101,
+		paramName = ""
+	},
+	[40009] = {
+		text_display_1 = "",
+		text_display_2 = "支线剧情",
+		text_invalid = 0,
+		need_hide = 0,
+		asset_pend_key = "",
+		link = "/skuldSystemStageView",
+		pagename = "",
+		activity_id = 0,
+		params = "",
+		id = 40009,
+		icon = "icon_access_site_white",
+		system_id = 10101,
+		paramName = ""
+	},
 	[916] = {
 		text_display_1 = "",
 		text_display_2 = "",
@@ -4125,6 +4233,7 @@
 		344,
 		345,
 		346,
+		347,
 		401,
 		402,
 		403,
@@ -4161,6 +4270,8 @@
 		533,
 		534,
 		535,
+		536,
+		537,
 		601,
 		604,
 		701,
@@ -4260,6 +4371,7 @@
 		15901,
 		16001,
 		16002,
+		16101,
 		2510,
 		2511,
 		2512,
@@ -4297,6 +4409,8 @@
 		40005,
 		40006,
 		40007,
+		40008,
+		40009,
 		916,
 		2901,
 		408,

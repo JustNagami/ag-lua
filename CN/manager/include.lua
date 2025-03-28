@@ -37,6 +37,9 @@ ShareMgr = require("manager/share/ShareMgr")
 require("manager/guide/includeGuide")
 require("manager/posterGirl/includePosterGirl")
 require("manager/heroRaiseTrack/includeHeroRaiseTrack")
+require("manager/reserveCamera/includeReserveCamera")
 
 VideoPlayMgr = require("manager/video/VideoPlayMgr")
 UITimeMgr = require("manager/UITimeMgr")
+
+require("manager/story/include")

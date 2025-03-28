@@ -634,83 +634,130 @@ function var_0_0.RefreshFriendTitle(arg_49_0)
 	arg_49_0.onlineStateController_:SetSelectedState(var_49_0.online_state == 0 and "on" or "off")
 end
 
-function var_0_0.OnReceiveFriendMsg(arg_50_0, arg_50_1)
-	arg_50_0.friendsLuaUIlist_:StartScroll(#ChatFriendData:GetCacheHeroList())
-
-	if arg_50_0.curfriendID_ ~= arg_50_1 then
+function var_0_0.OnFriendsDelect(arg_50_0, arg_50_1)
+	if arg_50_0.chatToggleID_ ~= ChatConst.CHAT_CHANNEL_FRIEND then
 		return
 	end
 
-	for iter_50_0 = 0, ChatFriendData:GetUnreadMsgCnt(arg_50_1) - 1 do
-		if arg_50_0:LsGetItemData()[#arg_50_0:LsGetItemData() - iter_50_0].senderID == USER_ID then
-			arg_50_0.loopScrollView_:Scroll2End()
-			ChatFriendData:UpdateSeek(arg_50_0.curfriendID_)
+	local var_50_0 = ChatFriendData:GetCacheHeroList()
+
+	arg_50_0.tabStateController_:SetSelectedState(#var_50_0 > 0 and "friendsChannel" or "friendsEmpty")
+	arg_50_0.emptyStateController_:SetSelectedState(#var_50_0 > 0 and "normal" or "nothing")
+	SetActive(arg_50_0.friendCancelBtn_.gameObject, false)
+
+	if arg_50_0.curfriendID_ ~= arg_50_1 then
+		arg_50_0.friendsLuaUIlist_:StartScroll(#var_50_0)
+
+		return
+	end
+
+	if #var_50_0 > 0 then
+		local var_50_1 = var_50_0[1]
+
+		arg_50_0:RefreshFriends(var_50_1)
+	else
+		arg_50_0.friendsLuaUIlist_:StartScroll(0)
+	end
+end
+
+function var_0_0.OnReceiveFriendMsg(arg_51_0, arg_51_1)
+	if arg_51_0.chatToggleID_ ~= ChatConst.CHAT_CHANNEL_FRIEND then
+		return
+	end
+
+	if arg_51_0.tabStateController_:GetSelectedState() == "friendsEmpty" then
+		local var_51_0 = ChatFriendData:GetCacheHeroList()
+
+		arg_51_0.tabStateController_:SetSelectedState(#var_51_0 > 0 and "friendsChannel" or "friendsEmpty")
+		arg_51_0.emptyStateController_:SetSelectedState(#var_51_0 > 0 and "normal" or "nothing")
+
+		if #var_51_0 > 0 then
+			local var_51_1 = var_51_0[1]
+
+			arg_51_0:RefreshFriends(var_51_1)
+		else
+			arg_51_0.friendsLuaUIlist_:StartScroll(0)
+		end
+
+		return
+	end
+
+	arg_51_0.friendsLuaUIlist_:StartScroll(#ChatFriendData:GetCacheHeroList())
+
+	if arg_51_0.curfriendID_ ~= arg_51_1 then
+		return
+	end
+
+	for iter_51_0 = 0, ChatFriendData:GetUnreadMsgCnt(arg_51_1) - 1 do
+		if arg_51_0:LsGetItemData()[#arg_51_0:LsGetItemData() - iter_51_0].senderID == USER_ID then
+			arg_51_0.loopScrollView_:Scroll2End()
+			ChatFriendData:UpdateSeek(arg_51_0.curfriendID_)
 
 			return
 		end
 	end
 
-	if not arg_50_0.loopScrollView_:IsFillContent() or arg_50_0.diaScrollEx_.verticalNormalizedPosition <= 0.0001 then
-		arg_50_0.loopScrollView_:Scroll2End()
-		ChatFriendData:UpdateSeek(arg_50_0.curfriendID_)
+	if not arg_51_0.loopScrollView_:IsFillContent() or arg_51_0.diaScrollEx_.verticalNormalizedPosition <= 0.0001 then
+		arg_51_0.loopScrollView_:Scroll2End()
+		ChatFriendData:UpdateSeek(arg_51_0.curfriendID_)
 
 		return
 	end
 
-	SetActive(arg_50_0.newJumpBtn_.gameObject, true)
-	arg_50_0.loopScrollView_:RefreshScrollView()
+	SetActive(arg_51_0.newJumpBtn_.gameObject, true)
+	arg_51_0.loopScrollView_:RefreshScrollView()
 end
 
-function var_0_0.CloseCurFriendChat(arg_51_0)
-	ChatFriendData:RemoveCacheHero(arg_51_0.curfriendID_)
-	ChatFriendData:SaveRecordCnt(arg_51_0.curfriendID_)
-	FriendsAction:RefreshUnread(arg_51_0.curfriendID_, 0)
+function var_0_0.CloseCurFriendChat(arg_52_0)
+	ChatFriendData:RemoveCacheHero(arg_52_0.curfriendID_)
+	ChatFriendData:SaveRecordCnt(arg_52_0.curfriendID_)
+	FriendsAction:RefreshUnread(arg_52_0.curfriendID_, 0)
 
-	local var_51_0 = ChatFriendData:GetCacheHeroList()
+	local var_52_0 = ChatFriendData:GetCacheHeroList()
 
-	if #var_51_0 > 0 then
-		arg_51_0:RefreshFriends(var_51_0[1])
+	if #var_52_0 > 0 then
+		arg_52_0:RefreshFriends(var_52_0[1])
 	else
-		arg_51_0.tabStateController_:SetSelectedState("friendsEmpty")
-		arg_51_0.emptyStateController_:SetSelectedState("nothing")
-		arg_51_0:RefreshFriends()
+		arg_52_0.tabStateController_:SetSelectedState("friendsEmpty")
+		arg_52_0.emptyStateController_:SetSelectedState("nothing")
+		arg_52_0:RefreshFriends()
 	end
 end
 
-function var_0_0.AddReguireMessageTimer(arg_52_0)
-	arg_52_0:TryToRequireMsg()
+function var_0_0.AddReguireMessageTimer(arg_53_0)
+	arg_53_0:TryToRequireMsg()
 
-	if arg_52_0.reguireMessageTimer_ ~= nil then
+	if arg_53_0.reguireMessageTimer_ ~= nil then
 		return
 	end
 
-	arg_52_0.reguireMessageTimer_ = Timer.New(function()
-		arg_52_0:TryToRequireMsg()
+	arg_53_0.reguireMessageTimer_ = Timer.New(function()
+		arg_53_0:TryToRequireMsg()
 	end, 1, -1)
 
-	arg_52_0.reguireMessageTimer_:Start()
+	arg_53_0.reguireMessageTimer_:Start()
 end
 
-function var_0_0.StopReguireMessageTimer(arg_54_0)
-	if arg_54_0.reguireMessageTimer_ then
-		arg_54_0.reguireMessageTimer_:Stop()
+function var_0_0.StopReguireMessageTimer(arg_55_0)
+	if arg_55_0.reguireMessageTimer_ then
+		arg_55_0.reguireMessageTimer_:Stop()
 
-		arg_54_0.reguireMessageTimer_ = nil
+		arg_55_0.reguireMessageTimer_ = nil
 	end
 end
 
-function var_0_0.TryToRequireMsg(arg_55_0)
-	if arg_55_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD_RECRUIT and manager.time:GetServerTime() - ChatGuildRecruitData:GetLastTimestamp() > GameSetting.chat_club_refresh_time.value[1] then
+function var_0_0.TryToRequireMsg(arg_56_0)
+	if arg_56_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD_RECRUIT and manager.time:GetServerTime() - ChatGuildRecruitData:GetLastTimestamp() > GameSetting.chat_club_refresh_time.value[1] then
 		ChatAction.RequireGuildShareInfo()
-	elseif arg_55_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_RECALL and manager.time:GetServerTime() - ActivityRecallData:GetLastTimestamp() > GameSetting.chat_club_refresh_time.value[1] then
+	elseif arg_56_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_RECALL and manager.time:GetServerTime() - ActivityRecallData:GetLastTimestamp() > GameSetting.chat_club_refresh_time.value[1] then
 		ChatAction.RequireRecallInfo()
-	elseif ChatToggleCfg[arg_55_0.chatToggleID_] and ChatToggleCfg[arg_55_0.chatToggleID_].require_type[1] == ChatConst.REQUIRE_TYPE.MANUAL and ChatToggleCfg[arg_55_0.chatToggleID_].require_type[2][1] < manager.time:GetServerTime() - ChatChannelData:GetLastRequireMsgTimestamp(arg_55_0.chatToggleID_) then
-		ChatAction.RequireChatNormalMsg(arg_55_0.chatToggleID_)
+	elseif ChatToggleCfg[arg_56_0.chatToggleID_] and ChatToggleCfg[arg_56_0.chatToggleID_].require_type[1] == ChatConst.REQUIRE_TYPE.MANUAL and ChatToggleCfg[arg_56_0.chatToggleID_].require_type[2][1] < manager.time:GetServerTime() - ChatChannelData:GetLastRequireMsgTimestamp(arg_56_0.chatToggleID_) then
+		ChatAction.RequireChatNormalMsg(arg_56_0.chatToggleID_)
 	end
 end
 
-function var_0_0.GetChatJudgeMessageType(arg_56_0, arg_56_1)
-	local var_56_0 = ({
+function var_0_0.GetChatJudgeMessageType(arg_57_0, arg_57_1)
+	local var_57_0 = ({
 		[ChatConst.CHAT_CHANNEL_WORLD] = JUDGE_MESSAGE_TYPE.CHAT_WORLD,
 		[ChatConst.CHAT_CHANNEL_FRIEND] = JUDGE_MESSAGE_TYPE.CHAT_FRIEND,
 		[ChatConst.CHAT_CHANNEL_GUILD] = JUDGE_MESSAGE_TYPE.CHAT_GUILD,
@@ -720,464 +767,464 @@ function var_0_0.GetChatJudgeMessageType(arg_56_0, arg_56_1)
 		[ChatConst.CHAT_CHANNEL_GUILD_ACTIVITY_SP_2_4] = JUDGE_MESSAGE_TYPE.OTHER,
 		[ChatConst.CHAT_CHANNEL_GUILD_ACTIVITY_SP_2_8] = JUDGE_MESSAGE_TYPE.OTHER,
 		[ChatConst.CHAT_CHANNEL_MOON_CAKE] = JUDGE_MESSAGE_TYPE.ACTIVITY_MOON_CAKE
-	})[arg_56_1]
+	})[arg_57_1]
 
-	if var_56_0 then
-		return var_56_0
+	if var_57_0 then
+		return var_57_0
 	end
 end
 
-function var_0_0.LsGetItemData(arg_57_0)
-	if arg_57_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_WORLD then
+function var_0_0.LsGetItemData(arg_58_0)
+	if arg_58_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_WORLD then
 		return ChatData:GetWorldChatData()
-	elseif arg_57_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD then
+	elseif arg_58_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD then
 		return ChatGuildData:GetCacheContent()
-	elseif arg_57_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD_RECRUIT then
+	elseif arg_58_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD_RECRUIT then
 		return ChatGuildRecruitData:GetChatData()
-	elseif arg_57_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_COOPERATION then
+	elseif arg_58_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_COOPERATION then
 		return ChatCooperationData:GetCacheContent()
-	elseif arg_57_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_RECALL then
+	elseif arg_58_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_RECALL then
 		return ActivityRecallData:GetChatData()
-	elseif ChatToggleCfg[arg_57_0.chatToggleID_] then
-		return ChatChannelData:GetCacheContent(arg_57_0.chatToggleID_)
-	elseif arg_57_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_FRIEND then
-		return ChatFriendData:GetCacheContent(arg_57_0.curfriendID_)
+	elseif ChatToggleCfg[arg_58_0.chatToggleID_] then
+		return ChatChannelData:GetCacheContent(arg_58_0.chatToggleID_)
+	elseif arg_58_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_FRIEND then
+		return ChatFriendData:GetCacheContent(arg_58_0.curfriendID_)
 	else
 		return {}
 	end
 end
 
-function var_0_0.ParseFriendData(arg_58_0, arg_58_1)
-	if not arg_58_1.senderID then
-		return arg_58_1
+function var_0_0.ParseFriendData(arg_59_0, arg_59_1)
+	if not arg_59_1.senderID then
+		return arg_59_1
 	end
 
-	local var_58_0 = {
-		id = arg_58_1.senderID,
-		content = arg_58_1.content,
-		contentType = arg_58_1.contentType,
-		msgID = arg_58_1.msgID,
-		timestamp = arg_58_1.timestamp
+	local var_59_0 = {
+		id = arg_59_1.senderID,
+		content = arg_59_1.content,
+		contentType = arg_59_1.contentType,
+		msgID = arg_59_1.msgID,
+		timestamp = arg_59_1.timestamp
 	}
 
-	var_58_0.roomID = 0
+	var_59_0.roomID = 0
 
-	local var_58_1 = arg_58_1.senderID
+	local var_59_1 = arg_59_1.senderID
 
-	if var_58_1 == USER_ID then
-		local var_58_2 = PlayerData:GetPlayerInfo()
+	if var_59_1 == USER_ID then
+		local var_59_2 = PlayerData:GetPlayerInfo()
 
-		var_58_0.bubbleID = PlayerData:GetCurChatBubbleID() or GameSetting.profile_chat_bubble_default.value[1]
-		var_58_0.icon = var_58_2.portrait
-		var_58_0.iconFrame = var_58_2.icon_frame
-		var_58_0.ip = var_58_2.ip
-		var_58_0.nick = var_58_2.nick
+		var_59_0.bubbleID = PlayerData:GetCurChatBubbleID() or GameSetting.profile_chat_bubble_default.value[1]
+		var_59_0.icon = var_59_2.portrait
+		var_59_0.iconFrame = var_59_2.icon_frame
+		var_59_0.ip = var_59_2.ip
+		var_59_0.nick = var_59_2.nick
 	else
-		local var_58_3 = FriendsData:GetInfoByID(var_58_1)
+		local var_59_3 = FriendsData:GetInfoByID(var_59_1)
 
-		var_58_0.bubbleID = var_58_3.bubbleID or GameSetting.profile_chat_bubble_default.value[1]
-		var_58_0.icon = var_58_3.icon
-		var_58_0.iconFrame = var_58_3.icon_frame
-		var_58_0.ip = var_58_3.ip
-		var_58_0.nick = var_58_3.nick
+		var_59_0.bubbleID = var_59_3.bubbleID or GameSetting.profile_chat_bubble_default.value[1]
+		var_59_0.icon = var_59_3.icon
+		var_59_0.iconFrame = var_59_3.icon_frame
+		var_59_0.ip = var_59_3.ip
+		var_59_0.nick = var_59_3.nick
 	end
 
-	return var_58_0
+	return var_59_0
 end
 
-function var_0_0.LsAddItem(arg_59_0, arg_59_1, arg_59_2)
-	local var_59_0 = arg_59_0:ParseFriendData(arg_59_1)
-	local var_59_1
+function var_0_0.LsAddItem(arg_60_0, arg_60_1, arg_60_2)
+	local var_60_0 = arg_60_0:ParseFriendData(arg_60_1)
+	local var_60_1
 
-	if var_59_0.contentType == ChatConst.CHAT_CONTENT_TYPE.CHANNEL then
-		var_59_1 = arg_59_0:GetFreeItem(arg_59_0.itemChannelPool_, function()
-			return ChatChannelView.New(arg_59_0.channelTitleGo_, arg_59_0.diaGridGo_)
+	if var_60_0.contentType == ChatConst.CHAT_CONTENT_TYPE.CHANNEL then
+		var_60_1 = arg_60_0:GetFreeItem(arg_60_0.itemChannelPool_, function()
+			return ChatChannelView.New(arg_60_0.channelTitleGo_, arg_60_0.diaGridGo_)
 		end)
-	elseif var_59_0.contentType == ChatConst.CHAT_CONTENT_TYPE.TIMESTAMP then
-		var_59_1 = arg_59_0:GetFreeItem(arg_59_0.itemTimePool_, function()
-			return ChatTimeView.New(arg_59_0.timeStampGo_, arg_59_0.diaGridGo_)
+	elseif var_60_0.contentType == ChatConst.CHAT_CONTENT_TYPE.TIMESTAMP then
+		var_60_1 = arg_60_0:GetFreeItem(arg_60_0.itemTimePool_, function()
+			return ChatTimeView.New(arg_60_0.timeStampGo_, arg_60_0.diaGridGo_)
 		end)
-	elseif var_59_0.contentType == ChatConst.CHAT_CONTENT_TYPE.HISTORY_TIPS then
-		var_59_1 = arg_59_0:GetFreeItem(arg_59_0.historyTipsPool_, function()
-			return ChatFriendHistoryTipsItem.New(arg_59_0.historyTipsGo_, arg_59_0.diaGridGo_)
+	elseif var_60_0.contentType == ChatConst.CHAT_CONTENT_TYPE.HISTORY_TIPS then
+		var_60_1 = arg_60_0:GetFreeItem(arg_60_0.historyTipsPool_, function()
+			return ChatFriendHistoryTipsItem.New(arg_60_0.historyTipsGo_, arg_60_0.diaGridGo_)
 		end)
-	elseif var_59_0.contentType == ChatConst.CHAT_CONTENT_TYPE.GUILD_RECRUIT then
-		if var_59_0.id == tostring(PlayerData:GetPlayerInfo().userID) then
-			var_59_1 = arg_59_0:GetFreeItem(arg_59_0.itemSelfGuildRecruitPool_, function()
-				return ChatGuildRecruitItemView.New(arg_59_0.recruitSelfGo_, arg_59_0.diaGridGo_)
+	elseif var_60_0.contentType == ChatConst.CHAT_CONTENT_TYPE.GUILD_RECRUIT then
+		if var_60_0.id == tostring(PlayerData:GetPlayerInfo().userID) then
+			var_60_1 = arg_60_0:GetFreeItem(arg_60_0.itemSelfGuildRecruitPool_, function()
+				return ChatGuildRecruitItemView.New(arg_60_0.recruitSelfGo_, arg_60_0.diaGridGo_)
 			end)
 		else
-			var_59_1 = arg_59_0:GetFreeItem(arg_59_0.itemFriendGuildRecruitPool_, function()
-				return ChatGuildRecruitItemView.New(arg_59_0.recruitOtherGo_, arg_59_0.diaGridGo_)
+			var_60_1 = arg_60_0:GetFreeItem(arg_60_0.itemFriendGuildRecruitPool_, function()
+				return ChatGuildRecruitItemView.New(arg_60_0.recruitOtherGo_, arg_60_0.diaGridGo_)
 			end)
 		end
-	elseif var_59_0.contentType == ChatConst.CHAT_CONTENT_TYPE.JUMP then
-		local var_59_2 = var_59_0.id == tostring(PlayerData:GetPlayerInfo().userID)
-		local var_59_3 = arg_59_0:GetJumpItemClass()
+	elseif var_60_0.contentType == ChatConst.CHAT_CONTENT_TYPE.JUMP then
+		local var_60_2 = var_60_0.id == tostring(PlayerData:GetPlayerInfo().userID)
+		local var_60_3 = arg_60_0:GetJumpItemClass()
 
-		if var_59_2 then
-			var_59_1 = arg_59_0:GetFreeItem(arg_59_0.itemSelfJumpPool_, function()
-				return var_59_3.New(arg_59_0.jumpSelfGo_, arg_59_0.diaGridGo_)
+		if var_60_2 then
+			var_60_1 = arg_60_0:GetFreeItem(arg_60_0.itemSelfJumpPool_, function()
+				return var_60_3.New(arg_60_0.jumpSelfGo_, arg_60_0.diaGridGo_)
 			end)
 		else
-			var_59_1 = arg_59_0:GetFreeItem(arg_59_0.itemFriendJumptPool_, function()
-				return var_59_3.New(arg_59_0.jumpOtherGo_, arg_59_0.diaGridGo_)
+			var_60_1 = arg_60_0:GetFreeItem(arg_60_0.itemFriendJumptPool_, function()
+				return var_60_3.New(arg_60_0.jumpOtherGo_, arg_60_0.diaGridGo_)
 			end)
 		end
-	elseif var_59_0.contentType == ChatConst.CHAT_CONTENT_TYPE.RECALL then
-		if var_59_0.id == tostring(PlayerData:GetPlayerInfo().userID) then
-			var_59_1 = arg_59_0:GetFreeItem(arg_59_0.itemSelfRecallPool_, function()
-				return ChatRecallItemView.New(arg_59_0.recallSelfGo_, arg_59_0.diaGridGo_)
+	elseif var_60_0.contentType == ChatConst.CHAT_CONTENT_TYPE.RECALL then
+		if var_60_0.id == tostring(PlayerData:GetPlayerInfo().userID) then
+			var_60_1 = arg_60_0:GetFreeItem(arg_60_0.itemSelfRecallPool_, function()
+				return ChatRecallItemView.New(arg_60_0.recallSelfGo_, arg_60_0.diaGridGo_)
 			end)
 		else
-			var_59_1 = arg_59_0:GetFreeItem(arg_59_0.itemFriendRecallPool_, function()
-				return ChatRecallItemView.New(arg_59_0.recallOtherGo_, arg_59_0.diaGridGo_)
+			var_60_1 = arg_60_0:GetFreeItem(arg_60_0.itemFriendRecallPool_, function()
+				return ChatRecallItemView.New(arg_60_0.recallOtherGo_, arg_60_0.diaGridGo_)
 			end)
 		end
-	elseif var_59_0.id == tostring(PlayerData:GetPlayerInfo().userID) then
-		var_59_1 = arg_59_0:GetFreeItem(arg_59_0.itemSelfPool_, function()
-			return ChatItemView.New(arg_59_0.chatSelfGo_, arg_59_0.diaGridGo_, arg_59_0.diaScrollEx_)
+	elseif var_60_0.id == tostring(PlayerData:GetPlayerInfo().userID) then
+		var_60_1 = arg_60_0:GetFreeItem(arg_60_0.itemSelfPool_, function()
+			return ChatItemView.New(arg_60_0.chatSelfGo_, arg_60_0.diaGridGo_, arg_60_0.diaScrollEx_)
 		end)
 	else
-		var_59_1 = arg_59_0:GetFreeItem(arg_59_0.itemFriendPool_, function()
-			return ChatItemView.New(arg_59_0.chatOtherGo_, arg_59_0.diaGridGo_, arg_59_0.diaScrollEx_)
+		var_60_1 = arg_60_0:GetFreeItem(arg_60_0.itemFriendPool_, function()
+			return ChatItemView.New(arg_60_0.chatOtherGo_, arg_60_0.diaGridGo_, arg_60_0.diaScrollEx_)
 		end)
 	end
 
-	var_59_1.itemView:SetData(var_59_0, arg_59_2)
+	var_60_1.itemView:SetData(var_60_0, arg_60_2)
 
-	arg_59_0.chatSeek_[arg_59_0.chatToggleID_] = arg_59_0.chatSeek_[arg_59_0.chatToggleID_] or 0
+	arg_60_0.chatSeek_[arg_60_0.chatToggleID_] = arg_60_0.chatSeek_[arg_60_0.chatToggleID_] or 0
 
-	if arg_59_2 > arg_59_0.chatSeek_[arg_59_0.chatToggleID_] then
-		arg_59_0.chatSeek_[arg_59_0.chatToggleID_] = arg_59_2
+	if arg_60_2 > arg_60_0.chatSeek_[arg_60_0.chatToggleID_] then
+		arg_60_0.chatSeek_[arg_60_0.chatToggleID_] = arg_60_2
 	end
 
-	if arg_59_2 >= #arg_59_0:LsGetItemData() then
-		SetActive(arg_59_0.newJumpBtn_.gameObject, false)
+	if arg_60_2 >= #arg_60_0:LsGetItemData() then
+		SetActive(arg_60_0.newJumpBtn_.gameObject, false)
 	end
 
-	if arg_59_0.curfriendID_ and arg_59_0.curfriendID_ ~= 0 then
-		local var_59_4 = ChatFriendData:GetUnreadMsgCnt(arg_59_0.curfriendID_)
+	if arg_60_0.curfriendID_ and arg_60_0.curfriendID_ ~= 0 then
+		local var_60_4 = ChatFriendData:GetUnreadMsgCnt(arg_60_0.curfriendID_)
 
-		if arg_59_2 >= #arg_59_0:LsGetItemData() then
-			ChatFriendData:SaveRecordCnt(arg_59_0.curfriendID_)
-			FriendsAction:RefreshUnread(arg_59_0.curfriendID_, 0)
+		if arg_60_2 >= #arg_60_0:LsGetItemData() then
+			ChatFriendData:SaveRecordCnt(arg_60_0.curfriendID_)
+			FriendsAction:RefreshUnread(arg_60_0.curfriendID_, 0)
 		else
-			local var_59_5 = #arg_59_0:LsGetItemData() - arg_59_2
+			local var_60_5 = #arg_60_0:LsGetItemData() - arg_60_2
 
-			if var_59_5 < var_59_4 then
-				ChatFriendData:SaveRecordCnt(arg_59_0.curfriendID_, var_59_5)
-				FriendsAction:RefreshUnread(arg_59_0.curfriendID_, var_59_5)
+			if var_60_5 < var_60_4 then
+				ChatFriendData:SaveRecordCnt(arg_60_0.curfriendID_, var_60_5)
+				FriendsAction:RefreshUnread(arg_60_0.curfriendID_, var_60_5)
 			end
 		end
 	end
 
-	if arg_59_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD then
+	if arg_60_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD then
 		ChatGuildData:SaveRecordCnt()
-	elseif ChatToggleCfg[arg_59_0.chatToggleID_] then
-		ChatChannelData:SaveRecordCnt(arg_59_0.chatToggleID_)
+	elseif ChatToggleCfg[arg_60_0.chatToggleID_] then
+		ChatChannelData:SaveRecordCnt(arg_60_0.chatToggleID_)
 	end
 
-	return var_59_1
+	return var_60_1
 end
 
-function var_0_0.LsUpdateItem(arg_71_0, arg_71_1, arg_71_2, arg_71_3)
-	local var_71_0 = arg_71_0:ParseFriendData(arg_71_2)
+function var_0_0.LsUpdateItem(arg_72_0, arg_72_1, arg_72_2, arg_72_3)
+	local var_72_0 = arg_72_0:ParseFriendData(arg_72_2)
 
-	arg_71_1.itemView:SetData(var_71_0, arg_71_3)
+	arg_72_1.itemView:SetData(var_72_0, arg_72_3)
 end
 
-function var_0_0.LsRemoveItem(arg_72_0, arg_72_1)
-	arg_72_1.itemView:Show(false)
+function var_0_0.LsRemoveItem(arg_73_0, arg_73_1)
+	arg_73_1.itemView:Show(false)
 
-	arg_72_1.isFree = true
+	arg_73_1.isFree = true
 end
 
-function var_0_0.GetJumpItemClass(arg_73_0)
-	if arg_73_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_MOON_CAKE then
+function var_0_0.GetJumpItemClass(arg_74_0)
+	if arg_74_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_MOON_CAKE then
 		return MoonCakeChatJumpItemView
 	else
 		return ChatJumpItemView
 	end
 end
 
-function var_0_0.InitItemPool(arg_74_0)
-	arg_74_0.itemChannelPool_ = {}
-	arg_74_0.itemTimePool_ = {}
-	arg_74_0.itemSelfPool_ = {}
-	arg_74_0.itemFriendPool_ = {}
-	arg_74_0.itemSelfGuildRecruitPool_ = {}
-	arg_74_0.itemFriendGuildRecruitPool_ = {}
-	arg_74_0.historyTipsPool_ = {}
-	arg_74_0.itemSelfJumpPool_ = {}
-	arg_74_0.itemFriendJumptPool_ = {}
-	arg_74_0.itemSelfRecallPool_ = {}
-	arg_74_0.itemFriendRecallPool_ = {}
+function var_0_0.InitItemPool(arg_75_0)
+	arg_75_0.itemChannelPool_ = {}
+	arg_75_0.itemTimePool_ = {}
+	arg_75_0.itemSelfPool_ = {}
+	arg_75_0.itemFriendPool_ = {}
+	arg_75_0.itemSelfGuildRecruitPool_ = {}
+	arg_75_0.itemFriendGuildRecruitPool_ = {}
+	arg_75_0.historyTipsPool_ = {}
+	arg_75_0.itemSelfJumpPool_ = {}
+	arg_75_0.itemFriendJumptPool_ = {}
+	arg_75_0.itemSelfRecallPool_ = {}
+	arg_75_0.itemFriendRecallPool_ = {}
 end
 
-function var_0_0.GetFreeItem(arg_75_0, arg_75_1, arg_75_2)
-	for iter_75_0, iter_75_1 in pairs(arg_75_1) do
-		if iter_75_1.isFree == true then
-			iter_75_1.isFree = false
+function var_0_0.GetFreeItem(arg_76_0, arg_76_1, arg_76_2)
+	for iter_76_0, iter_76_1 in pairs(arg_76_1) do
+		if iter_76_1.isFree == true then
+			iter_76_1.isFree = false
 
-			return iter_75_1
+			return iter_76_1
 		end
 	end
 
-	local var_75_0 = {
+	local var_76_0 = {
 		isFree = false,
-		itemView = arg_75_2()
+		itemView = arg_76_2()
 	}
 
-	table.insert(arg_75_1, var_75_0)
+	table.insert(arg_76_1, var_76_0)
 
-	return var_75_0
+	return var_76_0
 end
 
-function var_0_0.DisposeItemPool(arg_76_0)
-	for iter_76_0, iter_76_1 in ipairs(arg_76_0.itemChannelPool_) do
-		iter_76_1.itemView:Dispose()
+function var_0_0.DisposeItemPool(arg_77_0)
+	for iter_77_0, iter_77_1 in ipairs(arg_77_0.itemChannelPool_) do
+		iter_77_1.itemView:Dispose()
 	end
 
-	arg_76_0.itemChannelPool_ = nil
+	arg_77_0.itemChannelPool_ = nil
 
-	for iter_76_2, iter_76_3 in ipairs(arg_76_0.itemTimePool_) do
-		iter_76_3.itemView:Dispose()
+	for iter_77_2, iter_77_3 in ipairs(arg_77_0.itemTimePool_) do
+		iter_77_3.itemView:Dispose()
 	end
 
-	arg_76_0.itemTimePool_ = nil
+	arg_77_0.itemTimePool_ = nil
 
-	for iter_76_4, iter_76_5 in ipairs(arg_76_0.itemSelfPool_) do
-		iter_76_5.itemView:Dispose()
+	for iter_77_4, iter_77_5 in ipairs(arg_77_0.itemSelfPool_) do
+		iter_77_5.itemView:Dispose()
 	end
 
-	arg_76_0.itemSelfPool_ = nil
+	arg_77_0.itemSelfPool_ = nil
 
-	for iter_76_6, iter_76_7 in ipairs(arg_76_0.itemFriendPool_) do
-		iter_76_7.itemView:Dispose()
+	for iter_77_6, iter_77_7 in ipairs(arg_77_0.itemFriendPool_) do
+		iter_77_7.itemView:Dispose()
 	end
 
-	arg_76_0.itemFriendPool_ = nil
+	arg_77_0.itemFriendPool_ = nil
 
-	for iter_76_8, iter_76_9 in ipairs(arg_76_0.itemSelfGuildRecruitPool_) do
-		iter_76_9.itemView:Dispose()
+	for iter_77_8, iter_77_9 in ipairs(arg_77_0.itemSelfGuildRecruitPool_) do
+		iter_77_9.itemView:Dispose()
 	end
 
-	for iter_76_10, iter_76_11 in ipairs(arg_76_0.itemFriendGuildRecruitPool_) do
-		iter_76_11.itemView:Dispose()
+	for iter_77_10, iter_77_11 in ipairs(arg_77_0.itemFriendGuildRecruitPool_) do
+		iter_77_11.itemView:Dispose()
 	end
 
-	for iter_76_12, iter_76_13 in ipairs(arg_76_0.historyTipsPool_) do
-		iter_76_13.itemView:Dispose()
+	for iter_77_12, iter_77_13 in ipairs(arg_77_0.historyTipsPool_) do
+		iter_77_13.itemView:Dispose()
 	end
 
-	for iter_76_14, iter_76_15 in ipairs(arg_76_0.itemSelfJumpPool_) do
-		iter_76_15.itemView:Dispose()
+	for iter_77_14, iter_77_15 in ipairs(arg_77_0.itemSelfJumpPool_) do
+		iter_77_15.itemView:Dispose()
 	end
 
-	arg_76_0.itemSelfJumpPool_ = nil
+	arg_77_0.itemSelfJumpPool_ = nil
 
-	for iter_76_16, iter_76_17 in ipairs(arg_76_0.itemFriendJumptPool_) do
-		iter_76_17.itemView:Dispose()
+	for iter_77_16, iter_77_17 in ipairs(arg_77_0.itemFriendJumptPool_) do
+		iter_77_17.itemView:Dispose()
 	end
 
-	arg_76_0.itemFriendJumptPool_ = nil
+	arg_77_0.itemFriendJumptPool_ = nil
 
-	for iter_76_18, iter_76_19 in ipairs(arg_76_0.itemSelfRecallPool_) do
-		iter_76_19.itemView:Dispose()
+	for iter_77_18, iter_77_19 in ipairs(arg_77_0.itemSelfRecallPool_) do
+		iter_77_19.itemView:Dispose()
 	end
 
-	arg_76_0.itemSelfRecallPool_ = nil
+	arg_77_0.itemSelfRecallPool_ = nil
 
-	for iter_76_20, iter_76_21 in ipairs(arg_76_0.itemFriendRecallPool_) do
-		iter_76_21.itemView:Dispose()
+	for iter_77_20, iter_77_21 in ipairs(arg_77_0.itemFriendRecallPool_) do
+		iter_77_21.itemView:Dispose()
 	end
 
-	arg_76_0.itemFriendRecallPool_ = nil
+	arg_77_0.itemFriendRecallPool_ = nil
 end
 
-function var_0_0.RefreshReceiveMessage(arg_77_0)
-	local var_77_0 = arg_77_0:LsGetItemData()[#arg_77_0:LsGetItemData()]
+function var_0_0.RefreshReceiveMessage(arg_78_0)
+	local var_78_0 = arg_78_0:LsGetItemData()[#arg_78_0:LsGetItemData()]
 
-	if var_77_0 == nil then
+	if var_78_0 == nil then
 		return
 	end
 
-	for iter_77_0 = arg_77_0.chatSeek_[arg_77_0.chatToggleID_] + 1, #arg_77_0:LsGetItemData() do
-		if arg_77_0:LsGetItemData()[iter_77_0].id == USER_ID then
-			arg_77_0.loopScrollView_:Scroll2End()
+	for iter_78_0 = arg_78_0.chatSeek_[arg_78_0.chatToggleID_] + 1, #arg_78_0:LsGetItemData() do
+		if arg_78_0:LsGetItemData()[iter_78_0].id == USER_ID then
+			arg_78_0.loopScrollView_:Scroll2End()
 
 			return
 		end
 	end
 
-	if var_77_0.id == USER_ID then
-		arg_77_0.loopScrollView_:Scroll2End()
+	if var_78_0.id == USER_ID then
+		arg_78_0.loopScrollView_:Scroll2End()
 
 		return
 	end
 
-	if not arg_77_0.loopScrollView_:IsFillContent() or arg_77_0.diaScrollEx_.verticalNormalizedPosition <= 0.01 then
-		arg_77_0.loopScrollView_:Scroll2End()
+	if not arg_78_0.loopScrollView_:IsFillContent() or arg_78_0.diaScrollEx_.verticalNormalizedPosition <= 0.01 then
+		arg_78_0.loopScrollView_:Scroll2End()
 
 		return
 	end
 
-	SetActive(arg_77_0.newJumpBtn_.gameObject, true)
+	SetActive(arg_78_0.newJumpBtn_.gameObject, true)
 end
 
-function var_0_0.SendMessageResult(arg_78_0, arg_78_1)
-	if isSuccess(arg_78_1.result) then
-		if arg_78_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_WORLD or ChatToggleCfg[arg_78_0.chatToggleID_] and ChatToggleCfg[arg_78_0.chatToggleID_].limit_type == 1 then
-			ChatData:SetLevelTextTimeStamp(arg_78_0.chatToggleID_)
+function var_0_0.SendMessageResult(arg_79_0, arg_79_1)
+	if isSuccess(arg_79_1.result) then
+		if arg_79_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_WORLD or ChatToggleCfg[arg_79_0.chatToggleID_] and ChatToggleCfg[arg_79_0.chatToggleID_].limit_type == 1 then
+			ChatData:SetLevelTextTimeStamp(arg_79_0.chatToggleID_)
 		end
 
 		ChatData:SetSendTextTimestamp()
-		arg_78_0:UpdateSendTimeCD()
+		arg_79_0:UpdateSendTimeCD()
 
-		arg_78_0.sendInputfield_.text = ""
-	elseif arg_78_1.result == TipsCfg.get_id_list_by_define.ERROR_CHAT_NOT_IN_ROOM then
+		arg_79_0.sendInputfield_.text = ""
+	elseif arg_79_1.result == TipsCfg.get_id_list_by_define.ERROR_CHAT_NOT_IN_ROOM then
 		ShowMessageBox({
 			isTop = true,
 			ButtonType = "SingleBtn",
 			title = GetTips("PROMPT"),
 			content = GetTips("WORLD_CHANNEL_ERROR"),
 			OkCallback = function()
-				arg_78_0:Back()
+				arg_79_0:Back()
 			end
 		})
-	elseif arg_78_1.result == TipsCfg.get_id_list_by_define.ERROR_CHAT_BAN then
-		arg_78_0.sendInputfield_.text = ""
+	elseif arg_79_1.result == TipsCfg.get_id_list_by_define.ERROR_CHAT_BAN then
+		arg_79_0.sendInputfield_.text = ""
 
 		JumpTools.OpenPageByJump("chatMuted")
 
 		return
 	else
-		ShowTips(arg_78_1.result)
+		ShowTips(arg_79_1.result)
 	end
 end
 
-function var_0_0.OnSwitchChannel(arg_80_0)
-	if arg_80_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_WORLD then
-		arg_80_0.loopScrollView_:Scroll2End()
+function var_0_0.OnSwitchChannel(arg_81_0)
+	if arg_81_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_WORLD then
+		arg_81_0.loopScrollView_:Scroll2End()
 	end
 end
 
-function var_0_0.OnRecallFriendMsg(arg_81_0, arg_81_1)
-	if arg_81_0.curfriendID_ ~= arg_81_1 then
+function var_0_0.OnRecallFriendMsg(arg_82_0, arg_82_1)
+	if arg_82_0.curfriendID_ ~= arg_82_1 then
 		return
 	end
 
-	arg_81_0.loopScrollView_:RefreshScrollView(true)
-	SetActive(arg_81_0.newJumpBtn_.gameObject, ChatFriendData:GetUnreadMsgCnt(arg_81_1) > 0)
+	arg_82_0.loopScrollView_:RefreshScrollView(true)
+	SetActive(arg_82_0.newJumpBtn_.gameObject, ChatFriendData:GetUnreadMsgCnt(arg_82_1) > 0)
 end
 
-function var_0_0.OnChatReport(arg_82_0, arg_82_1)
-	arg_82_0.reportTrs_:SetParent(arg_82_1.parentRect.transform, false)
+function var_0_0.OnChatReport(arg_83_0, arg_83_1)
+	arg_83_0.reportTrs_:SetParent(arg_83_1.parentRect.transform, false)
 
-	arg_82_0.reportTrs_.localPosition = Vector2(arg_82_1.x, arg_82_1.y)
-	arg_82_0.reportData_ = arg_82_1.reportData
+	arg_83_0.reportTrs_.localPosition = Vector2(arg_83_1.x, arg_83_1.y)
+	arg_83_0.reportData_ = arg_83_1.reportData
 
-	SetActive(arg_82_0.reportGo_, true)
+	SetActive(arg_83_0.reportGo_, true)
 end
 
-function var_0_0.OnHideChatReport(arg_83_0)
-	SetActive(arg_83_0.reportGo_, false)
+function var_0_0.OnHideChatReport(arg_84_0)
+	SetActive(arg_84_0.reportGo_, false)
 end
 
-function var_0_0.OnReceiveMessage(arg_84_0, arg_84_1)
-	local var_84_0 = arg_84_1.chatToggleID
+function var_0_0.OnReceiveMessage(arg_85_0, arg_85_1)
+	local var_85_0 = arg_85_1.chatToggleID
 
-	if arg_84_0.chatToggleID_ ~= var_84_0 then
+	if arg_85_0.chatToggleID_ ~= var_85_0 then
 		return
 	end
 
-	if arg_84_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_WORLD then
-		arg_84_0:RefreshReceiveMessage()
-	elseif arg_84_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD_RECRUIT then
-		if #arg_84_0.loopScrollView_:GetItemList() <= 0 then
-			arg_84_0.loopScrollView_:Scroll2End()
+	if arg_85_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_WORLD then
+		arg_85_0:RefreshReceiveMessage()
+	elseif arg_85_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD_RECRUIT then
+		if #arg_85_0.loopScrollView_:GetItemList() <= 0 then
+			arg_85_0.loopScrollView_:Scroll2End()
 		else
-			arg_84_0.loopScrollView_:RefreshScrollView(true, true)
+			arg_85_0.loopScrollView_:RefreshScrollView(true, true)
 		end
-	elseif ChatToggleCfg[arg_84_0.chatToggleID_] then
-		arg_84_0:RefreshReceiveMessage()
-	end
-end
-
-function var_0_0.OnReceiveGuildMessage(arg_85_0)
-	if arg_85_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD then
+	elseif ChatToggleCfg[arg_85_0.chatToggleID_] then
 		arg_85_0:RefreshReceiveMessage()
 	end
 end
 
-function var_0_0.OnReceiveCooperationMessage(arg_86_0)
-	if arg_86_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_COOPERATION then
+function var_0_0.OnReceiveGuildMessage(arg_86_0)
+	if arg_86_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD then
 		arg_86_0:RefreshReceiveMessage()
 	end
 end
 
-function var_0_0.OnSendSticker(arg_87_0, arg_87_1)
-	if ChatToggleCfg[arg_87_0.chatToggleID_] and not ChatTools.IsOpenChatChannel(arg_87_0.chatToggleID_) then
+function var_0_0.OnReceiveCooperationMessage(arg_87_0)
+	if arg_87_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_COOPERATION then
+		arg_87_0:RefreshReceiveMessage()
+	end
+end
+
+function var_0_0.OnSendSticker(arg_88_0, arg_88_1)
+	if ChatToggleCfg[arg_88_0.chatToggleID_] and not ChatTools.IsOpenChatChannel(arg_88_0.chatToggleID_) then
 		ShowTips("TIME_OVER")
 
 		return
 	end
 
-	arg_87_0:HideStickerPanel()
+	arg_88_0:HideStickerPanel()
 
 	if ChatData:IsMuted() then
-		arg_87_0.sendInputfield_.text = ""
+		arg_88_0.sendInputfield_.text = ""
 
 		JumpTools.OpenPageByJump("chatMuted")
 
 		return
 	end
 
-	if arg_87_0.sendTipsCD_ > 0 or manager.time:GetServerTime() - ChatData:GetSendStickerTimestamp() < 10 then
+	if arg_88_0.sendTipsCD_ > 0 or manager.time:GetServerTime() - ChatData:GetSendStickerTimestamp() < 10 then
 		ShowTips("SEND_MESSAGE_FREQUENTLY")
 
 		return
 	end
 
-	if arg_87_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_WORLD then
-		ChatAction.SendSticker(arg_87_1, function(arg_88_0)
-			arg_87_0:SendStickerResult(arg_88_0)
+	if arg_88_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_WORLD then
+		ChatAction.SendSticker(arg_88_1, function(arg_89_0)
+			arg_88_0:SendStickerResult(arg_89_0)
 		end)
-	elseif arg_87_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD then
+	elseif arg_88_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD then
 		if GuildData:GetGuildInfo().id == nil then
 			ShowTips("SEND_SOCIETY_MESSAGE_ERROR")
 
 			return
 		end
 
-		ChatAction.SendGuildSticker(arg_87_1, function(arg_89_0)
-			arg_87_0:SendStickerResult(arg_89_0)
+		ChatAction.SendGuildSticker(arg_88_1, function(arg_90_0)
+			arg_88_0:SendStickerResult(arg_90_0)
 		end)
-	elseif arg_87_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD_RECRUIT then
-		ChatAction.SendGuildRecruitSticker(arg_87_1, function(arg_90_0)
-			arg_87_0:SendStickerResult(arg_90_0)
+	elseif arg_88_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD_RECRUIT then
+		ChatAction.SendGuildRecruitSticker(arg_88_1, function(arg_91_0)
+			arg_88_0:SendStickerResult(arg_91_0)
 		end)
-	elseif ChatToggleCfg[arg_87_0.chatToggleID_] then
-		ChatAction.SendChatNormalSticker(arg_87_0.chatToggleID_, arg_87_1, function(arg_91_0)
-			arg_87_0:SendStickerResult(arg_91_0)
+	elseif ChatToggleCfg[arg_88_0.chatToggleID_] then
+		ChatAction.SendChatNormalSticker(arg_88_0.chatToggleID_, arg_88_1, function(arg_92_0)
+			arg_88_0:SendStickerResult(arg_92_0)
 		end)
-	elseif arg_87_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_COOPERATION then
+	elseif arg_88_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_COOPERATION then
 		if not CooperationData:CheckInRoom() then
 			ShowTips("ERROR_INVALID_OPERATION")
 
 			return
 		end
 
-		ChatAction.SendCooperationSticker(arg_87_1, function(arg_92_0)
-			arg_87_0:SendStickerResult(arg_92_0)
+		ChatAction.SendCooperationSticker(arg_88_1, function(arg_93_0)
+			arg_88_0:SendStickerResult(arg_93_0)
 		end)
-	elseif arg_87_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_FRIEND then
-		ChatAction.SendFriendSticker(arg_87_0.curfriendID_, arg_87_1, function(arg_93_0)
-			if isSuccess(arg_93_0.result) then
+	elseif arg_88_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_FRIEND then
+		ChatAction.SendFriendSticker(arg_88_0.curfriendID_, arg_88_1, function(arg_94_0)
+			if isSuccess(arg_94_0.result) then
 				ChatData:SetSendStickerTimestamp()
 
-				arg_87_0.sendInputfield_.text = ""
+				arg_88_0.sendInputfield_.text = ""
 			end
 		end)
 	else
@@ -1185,91 +1232,91 @@ function var_0_0.OnSendSticker(arg_87_0, arg_87_1)
 	end
 end
 
-function var_0_0.SendStickerResult(arg_94_0, arg_94_1)
-	if isSuccess(arg_94_1.result) then
-		if arg_94_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_WORLD or ChatToggleCfg[arg_94_0.chatToggleID_] and ChatToggleCfg[arg_94_0.chatToggleID_].limit_type == 1 then
-			ChatData:SetLevelTextTimeStamp(arg_94_0.chatToggleID_)
+function var_0_0.SendStickerResult(arg_95_0, arg_95_1)
+	if isSuccess(arg_95_1.result) then
+		if arg_95_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_WORLD or ChatToggleCfg[arg_95_0.chatToggleID_] and ChatToggleCfg[arg_95_0.chatToggleID_].limit_type == 1 then
+			ChatData:SetLevelTextTimeStamp(arg_95_0.chatToggleID_)
 		end
 
 		ChatData:SetSendStickerTimestamp()
-		arg_94_0:UpdateSendTimeCD()
-	elseif arg_94_1.result == TipsCfg.get_id_list_by_define.ERROR_CHAT_NOT_IN_ROOM then
+		arg_95_0:UpdateSendTimeCD()
+	elseif arg_95_1.result == TipsCfg.get_id_list_by_define.ERROR_CHAT_NOT_IN_ROOM then
 		ShowMessageBox({
 			isTop = true,
 			ButtonType = "SingleBtn",
 			title = GetTips("PROMPT"),
 			content = GetTips("WORLD_CHANNEL_ERROR"),
 			OkCallback = function()
-				arg_94_0:Back()
+				arg_95_0:Back()
 			end
 		})
-	elseif arg_94_1.result == TipsCfg.get_id_list_by_define.ERROR_CHAT_BAN then
-		arg_94_0.sendInputfield_.text = ""
+	elseif arg_95_1.result == TipsCfg.get_id_list_by_define.ERROR_CHAT_BAN then
+		arg_95_0.sendInputfield_.text = ""
 
 		JumpTools.OpenPageByJump("chatMuted")
 
 		return
 	else
-		ShowTips(arg_94_1.result)
+		ShowTips(arg_95_1.result)
 	end
 end
 
-function var_0_0.HideStickerPanel(arg_96_0)
-	arg_96_0.chatStickerView_:Show(false)
+function var_0_0.HideStickerPanel(arg_97_0)
+	arg_97_0.chatStickerView_:Show(false)
 end
 
-function var_0_0.OnResetWorldChat(arg_97_0)
-	if arg_97_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_WORLD or ChatToggleCfg[arg_97_0.chatToggleID_] then
-		if ChatToggleCfg[arg_97_0.chatToggleID_] then
-			ChatChannelData:InitCacheContent(arg_97_0.chatToggleID_)
+function var_0_0.OnResetWorldChat(arg_98_0)
+	if arg_98_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_WORLD or ChatToggleCfg[arg_98_0.chatToggleID_] then
+		if ChatToggleCfg[arg_98_0.chatToggleID_] then
+			ChatChannelData:InitCacheContent(arg_98_0.chatToggleID_)
 		end
 
-		arg_97_0.loopScrollView_:RefreshScrollView(true)
+		arg_98_0.loopScrollView_:RefreshScrollView(true)
 	end
 end
 
-function var_0_0.OnResetGuildChat(arg_98_0)
-	if arg_98_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD then
+function var_0_0.OnResetGuildChat(arg_99_0)
+	if arg_99_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD then
 		ChatGuildData:InitCacheGuildContent()
-		arg_98_0.loopScrollView_:RefreshScrollView(true)
-	elseif arg_98_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD_RECRUIT then
+		arg_99_0.loopScrollView_:RefreshScrollView(true)
+	elseif arg_99_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_GUILD_RECRUIT then
 		ChatGuildRecruitData:InitCacheContent()
-		arg_98_0.loopScrollView_:RefreshScrollView(true)
-	end
-end
-
-function var_0_0.OnResetCooperationChat(arg_99_0)
-	if arg_99_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_COOPERATION then
 		arg_99_0.loopScrollView_:RefreshScrollView(true)
 	end
 end
 
-function var_0_0.OnBehind(arg_100_0)
-	arg_100_0:OnHideChatReport()
+function var_0_0.OnResetCooperationChat(arg_100_0)
+	if arg_100_0.chatToggleID_ == ChatConst.CHAT_CHANNEL_COOPERATION then
+		arg_100_0.loopScrollView_:RefreshScrollView(true)
+	end
 end
 
-function var_0_0.Dispose(arg_101_0)
-	for iter_101_0, iter_101_1 in pairs(arg_101_0.activityTabItemList_) do
-		iter_101_1:Dispose()
-	end
-
-	arg_101_0.activityTabItemList_ = nil
-
-	arg_101_0.loopScrollView_:Dispose()
-	arg_101_0.friendsLuaUIlist_:Dispose()
-	arg_101_0:DisposeItemPool()
-
-	if arg_101_0.chatStickerView_ then
-		arg_101_0.chatStickerView_:Dispose()
-
-		arg_101_0.chatStickerView_ = nil
-	end
-
-	var_0_0.super.Dispose(arg_101_0)
+function var_0_0.OnBehind(arg_101_0)
+	arg_101_0:OnHideChatReport()
 end
 
-function var_0_0.OnExitInput(arg_102_0)
-	arg_102_0:Back()
+function var_0_0.Dispose(arg_102_0)
+	for iter_102_0, iter_102_1 in pairs(arg_102_0.activityTabItemList_) do
+		iter_102_1:Dispose()
+	end
+
+	arg_102_0.activityTabItemList_ = nil
+
+	arg_102_0.loopScrollView_:Dispose()
+	arg_102_0.friendsLuaUIlist_:Dispose()
+	arg_102_0:DisposeItemPool()
+
+	if arg_102_0.chatStickerView_ then
+		arg_102_0.chatStickerView_:Dispose()
+
+		arg_102_0.chatStickerView_ = nil
+	end
+
+	var_0_0.super.Dispose(arg_102_0)
+end
+
+function var_0_0.OnExitInput(arg_103_0)
+	arg_103_0:Back()
 
 	return true
 end

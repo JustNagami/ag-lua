@@ -53,9 +53,12 @@ function var_0_0.AddListener(arg_5_0)
 
 		CaptureGameTools:SendShareSdk(6, 2)
 	end)
-	arg_5_0:AddBtnListener(arg_5_0.visitBtn_, nil, function()
-		LuaForUtil.OpenScreenShotFolder()
-	end)
+
+	if GameToSDK.IsEditorOrPcPlatform() then
+		arg_5_0:AddBtnListener(arg_5_0.visitBtn_, nil, function()
+			LuaForUtil.OpenScreenShotFolder()
+		end)
+	end
 end
 
 function var_0_0.OnRestartClick(arg_11_0)

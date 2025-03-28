@@ -5018,7 +5018,7 @@
 
 			if var_91_6 <= arg_88_1.time_ and arg_88_1.time_ < var_91_6 + var_91_7 then
 				local var_91_8 = (arg_88_1.time_ - var_91_6) / var_91_7
-				local var_91_9 = Vector3.New(0, -1.08, -5.9)
+				local var_91_9 = Vector3.New(-0.2, -1.08, -5.9)
 
 				var_91_5.localPosition = Vector3.Lerp(arg_88_1.var_.moveOldPos1019ui_story, var_91_9, var_91_8)
 
@@ -5034,7 +5034,7 @@
 			end
 
 			if arg_88_1.time_ >= var_91_6 + var_91_7 and arg_88_1.time_ < var_91_6 + var_91_7 + arg_91_0 then
-				var_91_5.localPosition = Vector3.New(0, -1.08, -5.9)
+				var_91_5.localPosition = Vector3.New(-0.2, -1.08, -5.9)
 
 				local var_91_12 = manager.ui.mainCamera.transform.position - var_91_5.position
 
@@ -6500,7 +6500,7 @@
 
 			if var_119_21 <= arg_116_1.time_ and arg_116_1.time_ < var_119_21 + var_119_22 then
 				local var_119_23 = (arg_116_1.time_ - var_119_21) / var_119_22
-				local var_119_24 = Vector3.New(0, -1.08, -5.9)
+				local var_119_24 = Vector3.New(-0.2, -1.08, -5.9)
 
 				var_119_20.localPosition = Vector3.Lerp(arg_116_1.var_.moveOldPos1019ui_story, var_119_24, var_119_23)
 
@@ -6516,7 +6516,7 @@
 			end
 
 			if arg_116_1.time_ >= var_119_21 + var_119_22 and arg_116_1.time_ < var_119_21 + var_119_22 + arg_119_0 then
-				var_119_20.localPosition = Vector3.New(0, -1.08, -5.9)
+				var_119_20.localPosition = Vector3.New(-0.2, -1.08, -5.9)
 
 				local var_119_27 = manager.ui.mainCamera.transform.position - var_119_20.position
 
@@ -7139,7 +7139,7 @@
 
 			if var_131_5 <= arg_128_1.time_ and arg_128_1.time_ < var_131_5 + var_131_6 then
 				local var_131_7 = (arg_128_1.time_ - var_131_5) / var_131_6
-				local var_131_8 = Vector3.New(0, -1.08, -5.9)
+				local var_131_8 = Vector3.New(-0.2, -1.08, -5.9)
 
 				var_131_4.localPosition = Vector3.Lerp(arg_128_1.var_.moveOldPos1019ui_story, var_131_8, var_131_7)
 
@@ -7155,7 +7155,7 @@
 			end
 
 			if arg_128_1.time_ >= var_131_5 + var_131_6 and arg_128_1.time_ < var_131_5 + var_131_6 + arg_131_0 then
-				var_131_4.localPosition = Vector3.New(0, -1.08, -5.9)
+				var_131_4.localPosition = Vector3.New(-0.2, -1.08, -5.9)
 
 				local var_131_11 = manager.ui.mainCamera.transform.position - var_131_4.position
 

@@ -38,6 +38,7 @@
 		RECHARGE = 1043,
 		EIGHT_SHOP = 35,
 		COHOMOLOGY_TRACKS = 14,
+		REGRESSION_SHOP = 308,
 		CANTEEN_SHOP = 50,
 		SKIN_TARGET = 18,
 		DLC_SHOP = 15,
@@ -79,6 +80,21 @@
 	ADD_CURRENCY = {
 		[2] = true,
 		[1] = true
+	},
+	FILTER_SKIN_TYPE = {
+		STATE_GOODS = 2,
+		HERO = 1,
+		STATE_BUY = 3
+	},
+	FILTER_HERO_TYPE = {
+		ALL = 1,
+		DLC = 3,
+		SKIN = 2
+	},
+	FILTER_STATE_TYPE = {
+		ALL = 1,
+		CAN_BUY = 2,
+		CANT_BUY = 3
 	}
 }
 
@@ -112,19 +128,30 @@ var_0_0.SHOP_ID_TO_RED_CONST = {
 	[var_0_0.SHOP_ID.SIX_SHOP] = "NOOB_FIRST_RECHARGE_1",
 	[var_0_0.SHOP_ID.EIGHT_SHOP] = "NOOB_FIRST_RECHARGE_2",
 	[var_0_0.SHOP_ID.OBSERVATION_SHOP] = "NOOB_MONTHLY_RECHARGE",
-	[var_0_0.SHOP_ID.CONTRACT_BENEFITS] = "NOOB_BP_RECHARGE"
+	[var_0_0.SHOP_ID.CONTRACT_BENEFITS] = "NOOB_BP_RECHARGE",
+	[var_0_0.SHOP_ID.SKIN_SHOP] = "SKIN_DISCOUNT_GIFT"
 }
 var_0_0.PC_LOCK_SHOP = {
 	[var_0_0.SHOP_ID.SKIN_TARGET] = true,
 	[var_0_0.SHOP_ID.MIGRATION_OBSERVATIONS] = true
 }
 var_0_0.PC_LOCK_RECHARGE = {
-	["1_4"] = true,
 	["2_3"] = true
 }
 var_0_0.NEED_HIDE_TIME = {
 	[var_0_0.SHOP_ID.SP_HERO_CHALLENGE_1] = true,
 	[var_0_0.SHOP_ID.CANTEEN_SHOP] = true
+}
+var_0_0.SKIN_SHOP_LIST = {
+	[var_0_0.SHOP_ID.SKIN_SHOP] = true,
+	[var_0_0.SHOP_ID.DIRECT_SHOP] = true,
+	[var_0_0.SHOP_ID.REPURCHASE_SHOP] = true
+}
+var_0_0.SPECIAL_ID = {
+	SKIN_LIST = -1
+}
+var_0_0.SPRCIAL_PREFAB = {
+	[var_0_0.SPECIAL_ID.SKIN_LIST] = "Widget/System/Recharge/pages/RechargeSkinListPageUI_New"
 }
 
 return var_0_0

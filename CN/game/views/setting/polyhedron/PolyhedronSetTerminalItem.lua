@@ -41,7 +41,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1)
 		arg_6_0.frameController:SetSelectedIndex(var_6_1 + 3)
 	end
 
-	arg_6_0.m_icon.sprite = getSpriteWithoutAtlas(PolyhedronConst.TERMINAL_ICON_PATH .. var_6_0.icon)
+	arg_6_0.m_icon.sprite = pureGetSpriteWithoutAtlas(PolyhedronConst.TERMINAL_ICON_PATH .. var_6_0.icon)
 	arg_6_0.m_name.text = GetI18NText(var_6_0.name)
 end
 

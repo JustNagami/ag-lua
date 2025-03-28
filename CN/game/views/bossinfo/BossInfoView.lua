@@ -69,7 +69,7 @@ function var_0_0.UpdateView(arg_14_0)
 
 	local var_14_1 = arg_14_0.params_.spritePath
 
-	arg_14_0.icon_.sprite = getSpriteWithoutAtlas(var_14_1)
+	arg_14_0.icon_.sprite = pureGetSpriteWithoutAtlas(var_14_1)
 	arg_14_0.riskText_.text = NumberTools.IntToRomam(var_14_0.type + 1)
 
 	arg_14_0:UpdateData()

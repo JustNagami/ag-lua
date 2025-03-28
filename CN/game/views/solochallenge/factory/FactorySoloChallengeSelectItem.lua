@@ -19,7 +19,7 @@ end
 function var_0_1.RefreshEnemyUI(arg_3_0)
 	local var_3_0 = ActivitySoloChallengeCfg[arg_3_0.activityID_].boss_id_list
 
-	arg_3_0.bossIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/MardukUI/boss/solo384x172/" .. var_3_0[arg_3_0.selectHeroPos_])
+	arg_3_0.bossIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/MardukUI/boss/solo384x172/" .. var_3_0[arg_3_0.selectHeroPos_])
 end
 
 return var_0_1

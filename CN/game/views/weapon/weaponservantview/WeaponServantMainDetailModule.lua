@@ -161,12 +161,7 @@ function var_0_0.OnRenderServant(arg_17_0, arg_17_1, arg_17_2)
 	local var_17_5 = ItemCfg[var_17_3]
 
 	arg_17_0.nameTxt_.text = ItemTools.getItemName(var_17_5.id)
-
-	arg_17_0:AsyncLoadIcon(var_17_3, function(arg_18_0, arg_18_1)
-		if arg_17_0.gameObject_ and not isNil(arg_17_0.gameObject_) and arg_18_0 == arg_17_0.data.info.id then
-			arg_17_0.servantImg_.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/Icon/" .. arg_18_0)
-		end
-	end)
+	arg_17_0.servantImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/WeaponServant/Icon/" .. var_17_3)
 
 	local var_17_6 = var_17_5.rare
 
@@ -205,235 +200,229 @@ function var_0_0.OnRenderServant(arg_17_0, arg_17_1, arg_17_2)
 	arg_17_0:RenderLockObj()
 end
 
-function var_0_0.SwitchControllerState(arg_19_0, arg_19_1, arg_19_2)
-	local var_19_0 = arg_19_0.controller.state[arg_19_1]
+function var_0_0.SwitchControllerState(arg_18_0, arg_18_1, arg_18_2)
+	local var_18_0 = arg_18_0.controller.state[arg_18_1]
 
-	if var_19_0 then
-		var_19_0.comps:SetSelectedState(arg_19_2)
+	if var_18_0 then
+		var_18_0.comps:SetSelectedState(arg_18_2)
 	end
 end
 
-function var_0_0.AsyncLoadIcon(arg_20_0, arg_20_1, arg_20_2)
-	getSpriteWithoutAtlasAsync("TextureConfig/WeaponServant/Icon/" .. arg_20_1, function(arg_21_0)
-		arg_20_2(arg_20_1, arg_21_0)
-	end)
-end
-
-function var_0_0.GetHeroInfo(arg_22_0, arg_22_1)
-	if arg_22_0.constVar.proxy and arg_22_1 and arg_22_1 ~= 0 then
-		return arg_22_0.constVar.proxy:GetHeroData(arg_22_1)
+function var_0_0.GetHeroInfo(arg_19_0, arg_19_1)
+	if arg_19_0.constVar.proxy and arg_19_1 and arg_19_1 ~= 0 then
+		return arg_19_0.constVar.proxy:GetHeroData(arg_19_1)
 	else
 		return nil
 	end
 end
 
-function var_0_0.GetServantInfo(arg_23_0, arg_23_1)
-	if arg_23_0.constVar.proxy and arg_23_1 and arg_23_1 ~= 0 then
-		return arg_23_0.constVar.proxy:GetHeroServantInfo(arg_23_1)
+function var_0_0.GetServantInfo(arg_20_0, arg_20_1)
+	if arg_20_0.constVar.proxy and arg_20_1 and arg_20_1 ~= 0 then
+		return arg_20_0.constVar.proxy:GetHeroServantInfo(arg_20_1)
 	else
 		return nil
 	end
 end
 
-function var_0_0.RefreshEffectText(arg_24_0)
-	local var_24_0 = arg_24_0.constVar.descType
-	local var_24_1 = ""
-	local var_24_2 = arg_24_0.data.info
-	local var_24_3 = WeaponServantCfg[var_24_2.id].desc
+function var_0_0.RefreshEffectText(arg_21_0)
+	local var_21_0 = arg_21_0.constVar.descType
+	local var_21_1 = ""
+	local var_21_2 = arg_21_0.data.info
+	local var_21_3 = WeaponServantCfg[var_21_2.id].desc
 
-	if var_24_0 == 1 then
-		var_24_1 = arg_24_0.constVar.proxy:GetServantEffect(var_24_2.id, nil, true)
-		arg_24_0.detailTxt_.text = GetTips("SERVANT_DETAIL_FULL")
+	if var_21_0 == 1 then
+		var_21_1 = arg_21_0.constVar.proxy:GetServantEffect(var_21_2.id, nil, true)
+		arg_21_0.detailTxt_.text = GetTips("SERVANT_DETAIL_FULL")
 	else
-		var_24_1 = arg_24_0.constVar.proxy:GetServantEffect(var_24_2.id, var_24_2.stage + arg_24_0.data.servantAddLv)
-		arg_24_0.detailTxt_.text = GetTips("SERVANT_DETAIL_SIMPLE")
+		var_21_1 = arg_21_0.constVar.proxy:GetServantEffect(var_21_2.id, var_21_2.stage + arg_21_0.data.servantAddLv)
+		arg_21_0.detailTxt_.text = GetTips("SERVANT_DETAIL_SIMPLE")
 	end
 
-	arg_24_0.descTxt_.text = table.concat({
-		var_24_1,
+	arg_21_0.descTxt_.text = table.concat({
+		var_21_1,
 		"\n<color=",
-		arg_24_0.constVar.subDescColor,
+		arg_21_0.constVar.subDescColor,
 		">",
-		var_24_3,
+		var_21_3,
 		"</color>"
 	})
 end
 
-function var_0_0.RefreshRecommend(arg_25_0)
-	local var_25_0 = arg_25_0.data.info
-	local var_25_1 = WeaponServantCfg[var_25_0.id].effect[1]
-	local var_25_2 = 0
+function var_0_0.RefreshRecommend(arg_22_0)
+	local var_22_0 = arg_22_0.data.info
+	local var_22_1 = WeaponServantCfg[var_22_0.id].effect[1]
+	local var_22_2 = 0
 
-	if var_25_1 > 0 then
-		var_25_2 = WeaponEffectCfg[var_25_1].spec_char[1]
+	if var_22_1 > 0 then
+		var_22_2 = WeaponEffectCfg[var_22_1].spec_char[1]
 	end
 
-	if var_25_2 ~= nil and var_25_2 > 0 then
-		SetActive(arg_25_0.recommendObj_, true)
+	if var_22_2 ~= nil and var_22_2 > 0 then
+		SetActive(arg_22_0.recommendObj_, true)
 
-		arg_25_0.heroImg_.sprite = HeroTools.GetSmallHeadSprite(var_25_2)
+		arg_22_0.heroImg_.sprite = HeroTools.GetSmallHeadSprite(var_22_2)
 	else
-		SetActive(arg_25_0.recommendObj_, false)
+		SetActive(arg_22_0.recommendObj_, false)
 	end
 end
 
-function var_0_0.RenderEquipStatus(arg_26_0)
-	local var_26_0 = arg_26_0.data.info
+function var_0_0.RenderEquipStatus(arg_23_0)
+	local var_23_0 = arg_23_0.data.info
 
-	if var_26_0.uid then
-		local var_26_1 = arg_26_0.data.servantMap[var_26_0.uid]
+	if var_23_0.uid then
+		local var_23_1 = arg_23_0.data.servantMap[var_23_0.uid]
 
-		if var_26_1 then
-			SetActive(arg_26_0.equipObj_, true)
+		if var_23_1 then
+			SetActive(arg_23_0.equipObj_, true)
 
-			arg_26_0.equipHeroIcon_.sprite = HeroTools.GetSmallHeadSprite(var_26_1)
-			arg_26_0.equipHeroTxt_.text = string.format(GetTips("SERVANT_EQUIPED"), GetI18NText(HeroCfg[var_26_1].name))
+			arg_23_0.equipHeroIcon_.sprite = HeroTools.GetSmallHeadSprite(var_23_1)
+			arg_23_0.equipHeroTxt_.text = string.format(GetTips("SERVANT_EQUIPED"), GetI18NText(HeroCfg[var_23_1].name))
 		else
-			SetActive(arg_26_0.equipObj_, false)
+			SetActive(arg_23_0.equipObj_, false)
 		end
 	else
-		SetActive(arg_26_0.equipObj_, false)
+		SetActive(arg_23_0.equipObj_, false)
 	end
 end
 
-function var_0_0.RenderLockObj(arg_27_0)
-	local var_27_0 = arg_27_0.data.info
+function var_0_0.RenderLockObj(arg_24_0)
+	local var_24_0 = arg_24_0.data.info
 
-	if var_27_0.uid and var_27_0.uid ~= 0 then
-		SetActive(arg_27_0.lockImg_.gameObject, true)
+	if var_24_0.uid and var_24_0.uid ~= 0 then
+		SetActive(arg_24_0.lockImg_.gameObject, true)
 	else
-		SetActive(arg_27_0.lockImg_.gameObject, false)
+		SetActive(arg_24_0.lockImg_.gameObject, false)
 	end
 end
 
-function var_0_0.OnSwitchDescClick(arg_28_0)
-	arg_28_0.constVar.descType = (arg_28_0.constVar.descType + 1) % 2
+function var_0_0.OnSwitchDescClick(arg_25_0)
+	arg_25_0.constVar.descType = (arg_25_0.constVar.descType + 1) % 2
 
-	arg_28_0:RefreshEffectText()
+	arg_25_0:RefreshEffectText()
 end
 
-function var_0_0.OnServantDetailClick(arg_29_0)
-	if arg_29_0.data.info then
-		if arg_29_0.constVar.curBtnStyle == 3 then
-			local var_29_0 = {
+function var_0_0.OnServantDetailClick(arg_26_0)
+	if arg_26_0.data.info then
+		if arg_26_0.constVar.curBtnStyle == 3 then
+			local var_26_0 = {
 				disableTabList = {
 					[2] = true
 				},
-				disableOrigin = arg_29_0.data.info.isCustom or false
+				disableOrigin = arg_26_0.data.info.isCustom or false
 			}
 
 			JumpTools.OpenPageByJump("/showServantDetailsView", {
-				servantData = arg_29_0.data.info,
-				heroId = arg_29_0.data.heroId,
-				openContext = var_29_0
+				servantData = arg_26_0.data.info,
+				heroId = arg_26_0.data.heroId,
+				openContext = var_26_0
 			})
-		elseif arg_29_0:CheckCanCallName() then
-			arg_29_0:OnCallNameBtnClick()
+		elseif arg_26_0:CheckCanCallName() then
+			arg_26_0:OnCallNameBtnClick()
 		end
 	end
 end
 
-function var_0_0.OnGachaBtnClick(arg_30_0)
-	local var_30_0 = arg_30_0.data.info
-	local var_30_1 = var_30_0.id
+function var_0_0.OnGachaBtnClick(arg_27_0)
+	local var_27_0 = arg_27_0.data.info
+	local var_27_1 = var_27_0.id
 
-	if ServantTools.IsSleepServant(var_30_1) then
-		arg_30_0:OnServantDetailClick()
+	if ServantTools.IsSleepServant(var_27_1) then
+		arg_27_0:OnServantDetailClick()
 
 		return
 	end
 
-	local var_30_2 = ServantTools.GetSleepyServantByServant(var_30_0.id)
+	local var_27_2 = ServantTools.GetSleepyServantByServant(var_27_0.id)
 
-	DrawAction.SetPollUpIDIgnoreFail(DrawConst.WEAPON_SERVANT_POOL_ID, var_30_2)
+	DrawAction.SetPollUpIDIgnoreFail(DrawConst.WEAPON_SERVANT_POOL_ID, var_27_2)
 end
 
-function var_0_0.OnCallNameBtnClick(arg_31_0)
-	local var_31_0 = arg_31_0.data.info.id
+function var_0_0.OnCallNameBtnClick(arg_28_0)
+	local var_28_0 = arg_28_0.data.info.id
 
-	if ServantTools.IsSleepServant(var_31_0) then
-		arg_31_0:JumpToCallName()
+	if ServantTools.IsSleepServant(var_28_0) then
+		arg_28_0:JumpToCallName()
 
 		return
 	end
 
-	local var_31_1 = WeaponServantCfg[var_31_0]
-	local var_31_2, var_31_3 = arg_31_0:MaterialEnough(var_31_0)
+	local var_28_1 = WeaponServantCfg[var_28_0]
+	local var_28_2, var_28_3 = arg_28_0:MaterialEnough(var_28_0)
 
-	if not var_31_2 then
+	if not var_28_2 then
 		ShowTips("SERVANT_MERGE_MATERIAL_NOT_ENOUGH")
 
 		return
 	end
 
-	if not var_31_3 then
+	if not var_28_3 then
 		ShowTips("ERROR_ITEM_NOT_ENOUGH_GOLD")
 
 		return
 	end
 
-	local var_31_4 = {}
+	local var_28_4 = {}
 
-	for iter_31_0, iter_31_1 in ipairs(GameSetting.exclusive_weapon_servant_cost.value) do
-		if iter_31_1[1] == var_31_1.race then
-			var_31_4 = iter_31_1[2]
+	for iter_28_0, iter_28_1 in ipairs(GameSetting.exclusive_weapon_servant_cost.value) do
+		if iter_28_1[1] == var_28_1.race then
+			var_28_4 = iter_28_1[2]
 		end
 	end
 
-	local var_31_5 = WeaponServantData:GetWeaponServantById(var_31_4[1][1])
-	local var_31_6 = 0
+	local var_28_5 = WeaponServantData:GetWeaponServantById(var_28_4[1][1])
+	local var_28_6 = 0
 
-	if arg_31_0.data.heroId and arg_31_0.data.heroId ~= 0 then
-		local var_31_7 = arg_31_0:GetHeroInfo(arg_31_0.data.heroId)
+	if arg_28_0.data.heroId and arg_28_0.data.heroId ~= 0 then
+		local var_28_7 = arg_28_0:GetHeroInfo(arg_28_0.data.heroId)
 
-		if var_31_7 then
-			var_31_6 = var_31_7.servant_uid or 0
+		if var_28_7 then
+			var_28_6 = var_28_7.servant_uid or 0
 		end
 	end
 
-	local function var_31_8(arg_32_0, arg_32_1)
-		if arg_32_0.locked ~= arg_32_1.locked then
-			return arg_32_0.locked < arg_32_1.locked
+	local function var_28_8(arg_29_0, arg_29_1)
+		if arg_29_0.locked ~= arg_29_1.locked then
+			return arg_29_0.locked < arg_29_1.locked
 		end
 
-		return arg_32_0.uid < arg_32_1.uid
+		return arg_29_0.uid < arg_29_1.uid
 	end
 
-	table.sort(var_31_5, var_31_8)
+	table.sort(var_28_5, var_28_8)
 
-	local var_31_9 = 1
+	local var_28_9 = 1
 
-	if var_31_6 ~= 0 then
-		for iter_31_2, iter_31_3 in ipairs(var_31_5) do
-			if iter_31_3.uid == var_31_6 then
-				var_31_9 = iter_31_2
+	if var_28_6 ~= 0 then
+		for iter_28_2, iter_28_3 in ipairs(var_28_5) do
+			if iter_28_3.uid == var_28_6 then
+				var_28_9 = iter_28_2
 
 				break
 			end
 		end
 	end
 
-	local var_31_10 = var_31_5[var_31_9].locked == 1
-	local var_31_11 = var_31_10
-	local var_31_12 = var_31_5[var_31_9].uid
-	local var_31_13 = ItemTools.getItemName(var_31_5[var_31_9].id)
+	local var_28_10 = var_28_5[var_28_9].locked == 1
+	local var_28_11 = var_28_10
+	local var_28_12 = var_28_5[var_28_9].uid
+	local var_28_13 = ItemTools.getItemName(var_28_5[var_28_9].id)
 
-	if var_31_11 then
-		local var_31_14
+	if var_28_11 then
+		local var_28_14
 
-		if var_31_10 then
-			var_31_14 = string.format(GetTips("SERVANT_MATERIAL_LOCKED"), var_31_13)
+		if var_28_10 then
+			var_28_14 = string.format(GetTips("SERVANT_MATERIAL_LOCKED"), var_28_13)
 		end
 
 		ShowMessageBox({
 			title = GetTips("PROMPT"),
-			content = var_31_14,
+			content = var_28_14,
 			OkCallback = function()
-				arg_31_0:Go("/weaponServantWakeUp", {
-					race = arg_31_0:GetCurServantRace(),
-					servantID = var_31_0,
-					uid = var_31_12,
-					HeroId = arg_31_0.data.heroId
+				arg_28_0:Go("/weaponServantWakeUp", {
+					race = arg_28_0:GetCurServantRace(),
+					servantID = var_28_0,
+					uid = var_28_12,
+					HeroId = arg_28_0.data.heroId
 				})
 			end,
 			CancelCallback = function()
@@ -441,62 +430,62 @@ function var_0_0.OnCallNameBtnClick(arg_31_0)
 			end
 		})
 	else
-		arg_31_0:Go("/weaponServantWakeUp", {
-			race = arg_31_0:GetCurServantRace(),
-			servantID = var_31_0,
-			uid = var_31_12,
-			HeroId = arg_31_0.data.heroId
+		arg_28_0:Go("/weaponServantWakeUp", {
+			race = arg_28_0:GetCurServantRace(),
+			servantID = var_28_0,
+			uid = var_28_12,
+			HeroId = arg_28_0.data.heroId
 		})
 	end
 end
 
-function var_0_0.JumpToCallName(arg_35_0)
-	ServantTools.JumpToCallName(arg_35_0.data.heroId, arg_35_0.data.info.id)
+function var_0_0.JumpToCallName(arg_32_0)
+	ServantTools.JumpToCallName(arg_32_0.data.heroId, arg_32_0.data.info.id)
 end
 
-function var_0_0.OnExchangeBtnClick(arg_36_0)
-	if not arg_36_0:CheckRaceSame() then
+function var_0_0.OnExchangeBtnClick(arg_33_0)
+	if not arg_33_0:CheckRaceSame() then
 		ShowTips("ERROR_SERVANT_RACE_NO_MATCH")
 
 		return
 	end
 
-	local var_36_0 = arg_36_0.data.info.uid
-	local var_36_1 = arg_36_0.data.heroId
-	local var_36_2 = arg_36_0:GetHeroInfo(var_36_1)
-	local var_36_3 = arg_36_0.data.servantMap
+	local var_33_0 = arg_33_0.data.info.uid
+	local var_33_1 = arg_33_0.data.heroId
+	local var_33_2 = arg_33_0:GetHeroInfo(var_33_1)
+	local var_33_3 = arg_33_0.data.servantMap
 
-	if var_36_2 and var_36_0 == var_36_2.servant_uid then
-		ServantAction.ServantReplace(var_36_1, 0)
+	if var_33_2 and var_33_0 == var_33_2.servant_uid then
+		ServantAction.ServantReplace(var_33_1, 0)
 
 		return
 	end
 
-	if var_36_3[var_36_0] then
-		local var_36_4 = var_36_3[var_36_0]
+	if var_33_3[var_33_0] then
+		local var_33_4 = var_33_3[var_33_0]
 
 		ShowMessageBox({
 			title = "Warning",
-			content = string.format(GetTips("SERVANT_IS_USING"), GetI18NText(HeroCfg[var_36_4].name)),
+			content = string.format(GetTips("SERVANT_IS_USING"), GetI18NText(HeroCfg[var_33_4].name)),
 			OkCallback = function()
-				ServantAction.ServantReplace(var_36_1, var_36_0)
+				ServantAction.ServantReplace(var_33_1, var_33_0)
 			end
 		})
 
 		return
 	end
 
-	ServantAction.ServantReplace(var_36_1, var_36_0)
+	ServantAction.ServantReplace(var_33_1, var_33_0)
 end
 
-function var_0_0.OnBeyondBtnClick(arg_38_0)
-	if arg_38_0.data.info then
-		if ServantTools.IsSleepServant(arg_38_0.data.info.id) then
-			ServantTools.JumpToCallName(arg_38_0.data.heroId, arg_38_0.data.info.id)
+function var_0_0.OnBeyondBtnClick(arg_35_0)
+	if arg_35_0.data.info then
+		if ServantTools.IsSleepServant(arg_35_0.data.info.id) then
+			ServantTools.JumpToCallName(arg_35_0.data.heroId, arg_35_0.data.info.id)
 		else
 			JumpTools.OpenPageByJump("/showServantDetailsView", {
-				servantData = arg_38_0.data.info,
-				heroId = arg_38_0.data.heroId,
+				servantData = arg_35_0.data.info,
+				heroId = arg_35_0.data.heroId,
 				openContext = {
 					tabIndex = 2
 				}
@@ -505,191 +494,191 @@ function var_0_0.OnBeyondBtnClick(arg_38_0)
 	end
 end
 
-function var_0_0.OnLockBtnClick(arg_39_0)
-	if arg_39_0.data.info.uid and arg_39_0.data.info.uid ~= 0 then
-		ServantAction.ServantLock(arg_39_0.data.info.uid)
+function var_0_0.OnLockBtnClick(arg_36_0)
+	if arg_36_0.data.info.uid and arg_36_0.data.info.uid ~= 0 then
+		ServantAction.ServantLock(arg_36_0.data.info.uid)
 	end
 end
 
-function var_0_0.SwitchBtnStyle(arg_40_0, arg_40_1)
-	local var_40_0 = arg_40_0.controller.state.btnState
+function var_0_0.SwitchBtnStyle(arg_37_0, arg_37_1)
+	local var_37_0 = arg_37_0.controller.state.btnState
 
-	arg_40_0.constVar.curBtnStyle = arg_40_1
+	arg_37_0.constVar.curBtnStyle = arg_37_1
 
-	arg_40_0:SwitchControllerState(var_40_0.name, arg_40_0.constVar.btnStyleMap[arg_40_1])
-	arg_40_0:RenderBtnLogic()
+	arg_37_0:SwitchControllerState(var_37_0.name, arg_37_0.constVar.btnStyleMap[arg_37_1])
+	arg_37_0:RenderBtnLogic()
 end
 
-function var_0_0.RenderBtnLogic(arg_41_0)
-	if arg_41_0.constVar.curBtnStyle == 1 then
-		arg_41_0:RenderBeyondBtnState()
+function var_0_0.RenderBtnLogic(arg_38_0)
+	if arg_38_0.constVar.curBtnStyle == 1 then
+		arg_38_0:RenderBeyondBtnState()
 	end
 
-	if arg_41_0.constVar.curBtnStyle == 2 then
-		SetActive(arg_41_0.callNameToken_, true)
+	if arg_38_0.constVar.curBtnStyle == 2 then
+		SetActive(arg_38_0.callNameToken_, true)
 
-		arg_41_0.gachaBtnIcon_.sprite = getSprite("Atlas/Hero_servantAtlas", "icon_detection")
-		arg_41_0.gachaBtnTxt_.text = GetTips("SERVANT_MAIN_PAGE_GACHA")
+		arg_38_0.gachaBtnIcon_.sprite = getSprite("Atlas/Hero_servantAtlas", "icon_detection")
+		arg_38_0.gachaBtnTxt_.text = GetTips("SERVANT_MAIN_PAGE_GACHA")
 
-		arg_41_0:RenderCallNameBtn()
+		arg_38_0:RenderCallNameBtn()
 	else
-		arg_41_0:SwitchControllerState(arg_41_0.controller.state.callNameBtnState.name, arg_41_0.controller.state.callNameBtnState.True)
+		arg_38_0:SwitchControllerState(arg_38_0.controller.state.callNameBtnState.name, arg_38_0.controller.state.callNameBtnState.True)
 	end
 
-	if arg_41_0.constVar.curBtnStyle == 3 then
-		local var_41_0 = arg_41_0.data.info
+	if arg_38_0.constVar.curBtnStyle == 3 then
+		local var_38_0 = arg_38_0.data.info
 
-		if var_41_0 and ServantTools.IsSleepServant(var_41_0.id) then
-			arg_41_0:SwitchControllerState(arg_41_0.controller.state.btnState.name, arg_41_0.constVar.btnStyleMap[2])
-			SetActive(arg_41_0.callNameToken_, false)
+		if var_38_0 and ServantTools.IsSleepServant(var_38_0.id) then
+			arg_38_0:SwitchControllerState(arg_38_0.controller.state.btnState.name, arg_38_0.constVar.btnStyleMap[2])
+			SetActive(arg_38_0.callNameToken_, false)
 
-			arg_41_0.gachaBtnIcon_.sprite = getSprite("Atlas/SystemCommonAtlas", "com_white_icon_08")
-			arg_41_0.gachaBtnTxt_.text = GetTips("TIP_DETAIL")
+			arg_38_0.gachaBtnIcon_.sprite = getSprite("Atlas/SystemCommonAtlas", "com_white_icon_08")
+			arg_38_0.gachaBtnTxt_.text = GetTips("TIP_DETAIL")
 		else
-			arg_41_0:SwitchControllerState(arg_41_0.controller.state.btnState.name, arg_41_0.constVar.btnStyleMap[3])
+			arg_38_0:SwitchControllerState(arg_38_0.controller.state.btnState.name, arg_38_0.constVar.btnStyleMap[3])
 		end
 
-		arg_41_0.upBtnTxt_.text = GetTips("SERVANT_MAIN_PAGE_DETAIL")
+		arg_38_0.upBtnTxt_.text = GetTips("SERVANT_MAIN_PAGE_DETAIL")
 	end
 
-	if arg_41_0.constVar.curBtnStyle == 4 then
-		arg_41_0:SwitchControllerState(arg_41_0.controller.state.btnState.name, arg_41_0.controller.state.btnState.no)
+	if arg_38_0.constVar.curBtnStyle == 4 then
+		arg_38_0:SwitchControllerState(arg_38_0.controller.state.btnState.name, arg_38_0.controller.state.btnState.no)
 	end
 end
 
-function var_0_0.RenderCallNameBtn(arg_42_0)
-	local var_42_0 = {}
-	local var_42_1 = arg_42_0:GetCurServantRace()
+function var_0_0.RenderCallNameBtn(arg_39_0)
+	local var_39_0 = {}
+	local var_39_1 = arg_39_0:GetCurServantRace()
 
-	for iter_42_0, iter_42_1 in ipairs(GameSetting.exclusive_weapon_servant_cost.value) do
-		if iter_42_1[1] == var_42_1 then
-			var_42_0 = iter_42_1[2]
+	for iter_39_0, iter_39_1 in ipairs(GameSetting.exclusive_weapon_servant_cost.value) do
+		if iter_39_1[1] == var_39_1 then
+			var_39_0 = iter_39_1[2]
 		end
 	end
 
-	local var_42_2 = WeaponServantData:GetWeaponServantById(var_42_0[1][1])
-	local var_42_3 = 0
+	local var_39_2 = WeaponServantData:GetWeaponServantById(var_39_0[1][1])
+	local var_39_3 = 0
 
-	if var_42_2 then
-		var_42_3 = #var_42_2
+	if var_39_2 then
+		var_39_3 = #var_39_2
 	end
 
-	local var_42_4 = ItemTools.getItemNum(var_42_0[2][1])
-	local var_42_5 = tostring(var_42_3)
+	local var_39_4 = ItemTools.getItemNum(var_39_0[2][1])
+	local var_39_5 = tostring(var_39_3)
 
-	if var_42_3 < var_42_0[1][2] then
-		var_42_5 = "<color='#FF0000'>" .. var_42_5 .. "</color>"
+	if var_39_3 < var_39_0[1][2] then
+		var_39_5 = "<color='#FF0000'>" .. var_39_5 .. "</color>"
 	end
 
-	local var_42_6 = var_42_5 .. "/" .. tostring(var_42_0[1][2])
-	local var_42_7 = tostring(var_42_0[2][2])
+	local var_39_6 = var_39_5 .. "/" .. tostring(var_39_0[1][2])
+	local var_39_7 = tostring(var_39_0[2][2])
 
-	if var_42_4 < var_42_0[2][2] then
-		var_42_7 = "<color='#FF0000'>" .. tostring(var_42_0[2][2]) .. "</color>"
+	if var_39_4 < var_39_0[2][2] then
+		var_39_7 = "<color='#FF0000'>" .. tostring(var_39_0[2][2]) .. "</color>"
 	end
 
-	arg_42_0.costmoneyText_.text = var_42_7
+	arg_39_0.costmoneyText_.text = var_39_7
 
-	if var_42_3 >= var_42_0[1][2] and var_42_4 >= var_42_0[2][2] then
-		arg_42_0:SwitchControllerState(arg_42_0.controller.state.callNameBtnState.name, arg_42_0.controller.state.callNameBtnState.True)
+	if var_39_3 >= var_39_0[1][2] and var_39_4 >= var_39_0[2][2] then
+		arg_39_0:SwitchControllerState(arg_39_0.controller.state.callNameBtnState.name, arg_39_0.controller.state.callNameBtnState.True)
 	else
-		arg_42_0:SwitchControllerState(arg_42_0.controller.state.callNameBtnState.name, arg_42_0.controller.state.callNameBtnState.False)
+		arg_39_0:SwitchControllerState(arg_39_0.controller.state.callNameBtnState.name, arg_39_0.controller.state.callNameBtnState.False)
 	end
 end
 
-function var_0_0.RenderBeyondBtnState(arg_43_0)
-	local var_43_0 = arg_43_0.data.info
-	local var_43_1 = var_43_0.isRecommend
-	local var_43_2 = arg_43_0.controller.state.btnState
+function var_0_0.RenderBeyondBtnState(arg_40_0)
+	local var_40_0 = arg_40_0.data.info
+	local var_40_1 = var_40_0.isRecommend
+	local var_40_2 = arg_40_0.controller.state.btnState
 
-	if var_43_1 then
-		if arg_43_0:CheckCanCallName() then
-			arg_43_0:SwitchControllerState(var_43_2.name, var_43_2.detail)
+	if var_40_1 then
+		if arg_40_0:CheckCanCallName() then
+			arg_40_0:SwitchControllerState(var_40_2.name, var_40_2.detail)
 
-			arg_43_0.upBtnTxt_.text = GetTips("SERVANT_MAIN_PAGE_CALLNAME")
+			arg_40_0.upBtnTxt_.text = GetTips("SERVANT_MAIN_PAGE_CALLNAME")
 		else
-			arg_43_0:SwitchControllerState(var_43_2.name, var_43_2.unReached)
+			arg_40_0:SwitchControllerState(var_40_2.name, var_40_2.unReached)
 		end
 	else
-		arg_43_0:SwitchControllerState(var_43_2.name, var_43_2.beyond)
+		arg_40_0:SwitchControllerState(var_40_2.name, var_40_2.beyond)
 
-		local var_43_3 = var_43_0.uid
-		local var_43_4 = arg_43_0.data.servantMap[var_43_3]
+		local var_40_3 = var_40_0.uid
+		local var_40_4 = arg_40_0.data.servantMap[var_40_3]
 
-		if arg_43_0.data.heroId then
-			if not var_43_4 then
-				local var_43_5 = arg_43_0:GetServantInfo(arg_43_0.data.heroId)
+		if arg_40_0.data.heroId then
+			if not var_40_4 then
+				local var_40_5 = arg_40_0:GetServantInfo(arg_40_0.data.heroId)
 
-				if var_43_5 and var_43_5.id ~= 0 then
-					arg_43_0.exchangeEquipTxt_.text = arg_43_0.constVar.exchangeBtnLang.Change
+				if var_40_5 and var_40_5.id ~= 0 then
+					arg_40_0.exchangeEquipTxt_.text = arg_40_0.constVar.exchangeBtnLang.Change
 				else
-					arg_43_0.exchangeEquipTxt_.text = arg_43_0.constVar.exchangeBtnLang.Equip
+					arg_40_0.exchangeEquipTxt_.text = arg_40_0.constVar.exchangeBtnLang.Equip
 				end
-			elseif arg_43_0.data.heroId == var_43_4 then
-				arg_43_0.exchangeEquipTxt_.text = arg_43_0.constVar.exchangeBtnLang.TakeOff
+			elseif arg_40_0.data.heroId == var_40_4 then
+				arg_40_0.exchangeEquipTxt_.text = arg_40_0.constVar.exchangeBtnLang.TakeOff
 			else
-				arg_43_0.exchangeEquipTxt_.text = arg_43_0.constVar.exchangeBtnLang.Exchange
+				arg_40_0.exchangeEquipTxt_.text = arg_40_0.constVar.exchangeBtnLang.Exchange
 			end
 		end
 
-		local var_43_6 = arg_43_0:CheckRaceSame()
-		local var_43_7 = arg_43_0.controller.state.equipBtnState.False
+		local var_40_6 = arg_40_0:CheckRaceSame()
+		local var_40_7 = arg_40_0.controller.state.equipBtnState.False
 
-		if var_43_6 then
-			var_43_7 = arg_43_0.controller.state.equipBtnState.True
+		if var_40_6 then
+			var_40_7 = arg_40_0.controller.state.equipBtnState.True
 		end
 
-		arg_43_0:SwitchControllerState(arg_43_0.controller.state.equipBtnState.name, var_43_7)
+		arg_40_0:SwitchControllerState(arg_40_0.controller.state.equipBtnState.name, var_40_7)
 
-		if ServantTools.IsSleepServant(var_43_0.id) then
-			arg_43_0.beyondBtnTxt_.text = GetTips("SERVANT_MAIN_PAGE_CALLNAME")
+		if ServantTools.IsSleepServant(var_40_0.id) then
+			arg_40_0.beyondBtnTxt_.text = GetTips("SERVANT_MAIN_PAGE_CALLNAME")
 		else
-			arg_43_0.beyondBtnTxt_.text = GetTips("PROMOTE")
+			arg_40_0.beyondBtnTxt_.text = GetTips("PROMOTE")
 		end
 	end
 end
 
-function var_0_0.MaterialEnough(arg_44_0, arg_44_1)
-	local var_44_0 = WeaponServantCfg[arg_44_1]
-	local var_44_1 = {}
+function var_0_0.MaterialEnough(arg_41_0, arg_41_1)
+	local var_41_0 = WeaponServantCfg[arg_41_1]
+	local var_41_1 = {}
 
-	for iter_44_0, iter_44_1 in ipairs(GameSetting.exclusive_weapon_servant_cost.value) do
-		if iter_44_1[1] == var_44_0.race then
-			var_44_1 = iter_44_1[2]
+	for iter_41_0, iter_41_1 in ipairs(GameSetting.exclusive_weapon_servant_cost.value) do
+		if iter_41_1[1] == var_41_0.race then
+			var_41_1 = iter_41_1[2]
 		end
 	end
 
-	local var_44_2 = WeaponServantData:GetWeaponServantById(var_44_1[1][1])
-	local var_44_3 = 0
+	local var_41_2 = WeaponServantData:GetWeaponServantById(var_41_1[1][1])
+	local var_41_3 = 0
 
-	if var_44_2 then
-		var_44_3 = #var_44_2
+	if var_41_2 then
+		var_41_3 = #var_41_2
 	end
 
-	local var_44_4 = ItemTools.getItemNum(var_44_1[2][1])
+	local var_41_4 = ItemTools.getItemNum(var_41_1[2][1])
 
-	return var_44_3 >= var_44_1[1][2], var_44_4 >= var_44_1[2][2]
+	return var_41_3 >= var_41_1[1][2], var_41_4 >= var_41_1[2][2]
 end
 
-function var_0_0.CheckRaceSame(arg_45_0)
-	if not arg_45_0.data.heroId then
+function var_0_0.CheckRaceSame(arg_42_0)
+	if not arg_42_0.data.heroId then
 		return false
 	end
 
-	return arg_45_0:GetCurServantRace() == HeroCfg[arg_45_0.data.heroId].race
+	return arg_42_0:GetCurServantRace() == HeroCfg[arg_42_0.data.heroId].race
 end
 
-function var_0_0.GetCurServantRace(arg_46_0)
-	local var_46_0 = arg_46_0.data.info
+function var_0_0.GetCurServantRace(arg_43_0)
+	local var_43_0 = arg_43_0.data.info
 
-	return WeaponServantCfg[var_46_0.id].race
+	return WeaponServantCfg[var_43_0.id].race
 end
 
-function var_0_0.CheckCanCallName(arg_47_0)
-	local var_47_0 = arg_47_0.data.info
-	local var_47_1, var_47_2 = arg_47_0:MaterialEnough(var_47_0.id)
+function var_0_0.CheckCanCallName(arg_44_0)
+	local var_44_0 = arg_44_0.data.info
+	local var_44_1, var_44_2 = arg_44_0:MaterialEnough(var_44_0.id)
 
-	return var_47_1
+	return var_44_1
 end
 
 return var_0_0

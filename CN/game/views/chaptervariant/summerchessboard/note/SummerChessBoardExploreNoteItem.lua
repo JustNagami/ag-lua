@@ -69,11 +69,7 @@ function var_0_0.RefreshUI(arg_8_0)
 
 		arg_8_0.text2_.text = var_8_1.desc
 
-		getSpriteWithoutAtlasAsync(var_8_2.image_path, function(arg_9_0)
-			if arg_8_0.image_ then
-				arg_8_0.image_.sprite = arg_9_0
-			end
-		end)
+		SetSpriteWithoutAtlasAsync(arg_8_0.image_, var_8_2.image_path)
 	else
 		arg_8_0.withPicController_:SetSelectedState("false")
 
@@ -83,15 +79,15 @@ function var_0_0.RefreshUI(arg_8_0)
 	arg_8_0:Show(true)
 end
 
-function var_0_0.TaskUpdate(arg_10_0)
-	arg_10_0:RefreshUI()
+function var_0_0.TaskUpdate(arg_9_0)
+	arg_9_0:RefreshUI()
 end
 
-function var_0_0.Show(arg_11_0, arg_11_1)
-	SetActive(arg_11_0.gameObject_, arg_11_1)
+function var_0_0.Show(arg_10_0, arg_10_1)
+	SetActive(arg_10_0.gameObject_, arg_10_1)
 
-	if arg_11_1 == false then
-		arg_11_0.taskID_ = nil
+	if arg_10_1 == false then
+		arg_10_0.taskID_ = nil
 	end
 end
 

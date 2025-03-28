@@ -40,7 +40,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1)
 
 		arg_5_0.isSuitSkillController_:SetSelectedState("false")
 
-		arg_5_0.icon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetCampIcon(arg_5_1))
+		arg_5_0.icon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetCampIcon(arg_5_1))
 	end
 
 	arg_5_0:Show(true)

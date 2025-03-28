@@ -898,7 +898,7 @@
 	{
 		name = "梦境的门扉",
 		equip_skill_icon = "57",
-		stage_up_list = 0,
+		stage_up_list = 1,
 		power_score = 10,
 		desc = "「梦境的尽头，在虚实之间徘徊 。」",
 		need = 3,
@@ -914,7 +914,7 @@
 	{
 		name = "月华的冠冕",
 		equip_skill_icon = "58",
-		stage_up_list = 0,
+		stage_up_list = 1,
 		power_score = 10,
 		desc = "「以银辉加冕，以月华照彻。」",
 		need = 3,
@@ -1055,7 +1055,45 @@
 			66
 		}
 	},
+	{
+		name = "嘉瑞临庭",
+		equip_skill_icon = "67",
+		stage_up_list = 0,
+		power_score = 10,
+		desc = "「祯祥沓至，以昭太平。祥麟之来，适际文明。」",
+		need = 3,
+		inherit_cost_type = 1,
+		equip_type = 2,
+		id = 67,
+		icon = "67",
+		suit = 67,
+		suit_effect = {
+			67
+		}
+	},
+	{
+		name = "缄默的命书",
+		equip_skill_icon = "68",
+		stage_up_list = 0,
+		power_score = 10,
+		desc = "「神与人皆如飘萍，命运只是缄口不言。」",
+		need = 3,
+		inherit_cost_type = 1,
+		equip_type = 0,
+		id = 68,
+		icon = "68",
+		suit = 68,
+		suit_effect = {
+			68
+		}
+	},
 	get_id_list_by_suit = {
+		[68] = {
+			68
+		},
+		[67] = {
+			67
+		},
 		[66] = {
 			66
 		},
@@ -1270,7 +1308,8 @@
 			37,
 			38,
 			63,
-			65
+			65,
+			67
 		},
 		{
 			8,
@@ -1326,7 +1365,8 @@
 			45,
 			56,
 			60,
-			66
+			66,
+			68
 		}
 	},
 	all = {
@@ -1395,6 +1435,8 @@
 		63,
 		64,
 		65,
-		66
+		66,
+		67,
+		68
 	}
 }

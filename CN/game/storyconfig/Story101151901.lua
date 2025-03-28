@@ -3232,7 +3232,7 @@
 
 			if var_88_1 <= arg_85_1.time_ and arg_85_1.time_ < var_88_1 + var_88_2 then
 				local var_88_3 = (arg_85_1.time_ - var_88_1) / var_88_2
-				local var_88_4 = Vector3.New(0, -0.95, -6.2)
+				local var_88_4 = Vector3.New(0, -18.66, -121.78)
 
 				var_88_0.localPosition = Vector3.Lerp(arg_85_1.var_.moveOldPos1016ui_story, var_88_4, var_88_3)
 
@@ -3248,7 +3248,7 @@
 			end
 
 			if arg_85_1.time_ >= var_88_1 + var_88_2 and arg_85_1.time_ < var_88_1 + var_88_2 + arg_88_0 then
-				var_88_0.localPosition = Vector3.New(0, -0.95, -6.2)
+				var_88_0.localPosition = Vector3.New(0, -18.66, -121.78)
 
 				local var_88_7 = manager.ui.mainCamera.transform.position - var_88_0.position
 
@@ -4744,7 +4744,7 @@
 
 			if var_128_1 <= arg_125_1.time_ and arg_125_1.time_ < var_128_1 + var_128_2 then
 				local var_128_3 = (arg_125_1.time_ - var_128_1) / var_128_2
-				local var_128_4 = Vector3.New(0, -0.95, -6.2)
+				local var_128_4 = Vector3.New(0, -18.66, -121.78)
 
 				var_128_0.localPosition = Vector3.Lerp(arg_125_1.var_.moveOldPos1016ui_story, var_128_4, var_128_3)
 
@@ -4760,7 +4760,7 @@
 			end
 
 			if arg_125_1.time_ >= var_128_1 + var_128_2 and arg_125_1.time_ < var_128_1 + var_128_2 + arg_128_0 then
-				var_128_0.localPosition = Vector3.New(0, -0.95, -6.2)
+				var_128_0.localPosition = Vector3.New(0, -18.66, -121.78)
 
 				local var_128_7 = manager.ui.mainCamera.transform.position - var_128_0.position
 

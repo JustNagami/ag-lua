@@ -140,7 +140,7 @@ function var_0_0.CheckOpenRedPoint(arg_9_0)
 					break
 				end
 
-				if MusicData:GetIsComplete(iter_9_1, var_9_5.difficult) then
+				if MusicData:GetIsComplete(iter_9_1, var_9_5.difficult) ~= 0 then
 					var_9_3 = false
 
 					break
@@ -237,8 +237,9 @@ function var_0_0.GoToMusicMain()
 	local var_13_0 = MusicData:GetGameId()
 	local var_13_1 = ActivityMusicCfg[var_13_0].activity_id
 	local var_13_2 = MusicData:GetMusicViewPathList(var_13_1)
+	local var_13_3 = MusicData:GetPageActivityID()
 
-	if ActivityTools.GetActivityTheme(var_13_1) == ActivityConst.THEME.ACTIVITY_3_11 then
+	if ActivityTools.GetActivityTheme(var_13_3) == ActivityConst.THEME.ACTIVITY_3_11 then
 		LaunchQWorld(true)
 	else
 		LuaExchangeHelper.GoToMain()

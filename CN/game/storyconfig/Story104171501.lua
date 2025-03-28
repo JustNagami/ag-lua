@@ -4268,13 +4268,13 @@
 
 			if var_109_20 <= arg_106_1.time_ and arg_106_1.time_ < var_109_20 + var_109_23 then
 				local var_109_24 = (arg_106_1.time_ - var_109_20) / var_109_23
-				local var_109_25 = Vector3.New(390, -340, -288)
+				local var_109_25 = Vector3.New(-585.3, -349.1, -288)
 
 				var_109_19.localPosition = Vector3.Lerp(arg_106_1.var_.moveOldPos1015, var_109_25, var_109_24)
 			end
 
 			if arg_106_1.time_ >= var_109_20 + var_109_23 and arg_106_1.time_ < var_109_20 + var_109_23 + arg_109_0 then
-				var_109_19.localPosition = Vector3.New(390, -340, -288)
+				var_109_19.localPosition = Vector3.New(-585.3, -349.1, -288)
 			end
 
 			local var_109_26 = 0
@@ -5612,13 +5612,13 @@
 
 			if var_135_24 <= arg_132_1.time_ and arg_132_1.time_ < var_135_24 + var_135_27 then
 				local var_135_28 = (arg_132_1.time_ - var_135_24) / var_135_27
-				local var_135_29 = Vector3.New(390, -340, -288)
+				local var_135_29 = Vector3.New(-585.3, -349.1, -288)
 
 				var_135_23.localPosition = Vector3.Lerp(arg_132_1.var_.moveOldPos1015, var_135_29, var_135_28)
 			end
 
 			if arg_132_1.time_ >= var_135_24 + var_135_27 and arg_132_1.time_ < var_135_24 + var_135_27 + arg_135_0 then
-				var_135_23.localPosition = Vector3.New(390, -340, -288)
+				var_135_23.localPosition = Vector3.New(-585.3, -349.1, -288)
 			end
 
 			local var_135_30 = 0
@@ -6063,13 +6063,13 @@
 
 			if var_143_17 <= arg_140_1.time_ and arg_140_1.time_ < var_143_17 + var_143_20 then
 				local var_143_21 = (arg_140_1.time_ - var_143_17) / var_143_20
-				local var_143_22 = Vector3.New(390, -340, -288)
+				local var_143_22 = Vector3.New(-585.3, -349.1, -288)
 
 				var_143_16.localPosition = Vector3.Lerp(arg_140_1.var_.moveOldPos1015, var_143_22, var_143_21)
 			end
 
 			if arg_140_1.time_ >= var_143_17 + var_143_20 and arg_140_1.time_ < var_143_17 + var_143_20 + arg_143_0 then
-				var_143_16.localPosition = Vector3.New(390, -340, -288)
+				var_143_16.localPosition = Vector3.New(-585.3, -349.1, -288)
 			end
 
 			local var_143_23 = 0
@@ -10079,13 +10079,13 @@
 
 			if var_227_17 <= arg_224_1.time_ and arg_224_1.time_ < var_227_17 + var_227_20 then
 				local var_227_21 = (arg_224_1.time_ - var_227_17) / var_227_20
-				local var_227_22 = Vector3.New(390, -340, -288)
+				local var_227_22 = Vector3.New(-585.3, -349.1, -288)
 
 				var_227_16.localPosition = Vector3.Lerp(arg_224_1.var_.moveOldPos1015, var_227_22, var_227_21)
 			end
 
 			if arg_224_1.time_ >= var_227_17 + var_227_20 and arg_224_1.time_ < var_227_17 + var_227_20 + arg_227_0 then
-				var_227_16.localPosition = Vector3.New(390, -340, -288)
+				var_227_16.localPosition = Vector3.New(-585.3, -349.1, -288)
 			end
 
 			local var_227_23 = arg_224_1.actors_["10128"].transform
@@ -12171,13 +12171,13 @@
 
 			if var_267_24 <= arg_264_1.time_ and arg_264_1.time_ < var_267_24 + var_267_27 then
 				local var_267_28 = (arg_264_1.time_ - var_267_24) / var_267_27
-				local var_267_29 = Vector3.New(390, -340, -288)
+				local var_267_29 = Vector3.New(-585.3, -349.1, -288)
 
 				var_267_23.localPosition = Vector3.Lerp(arg_264_1.var_.moveOldPos1015, var_267_29, var_267_28)
 			end
 
 			if arg_264_1.time_ >= var_267_24 + var_267_27 and arg_264_1.time_ < var_267_24 + var_267_27 + arg_267_0 then
-				var_267_23.localPosition = Vector3.New(390, -340, -288)
+				var_267_23.localPosition = Vector3.New(-585.3, -349.1, -288)
 			end
 
 			local var_267_30 = 0
@@ -13947,13 +13947,13 @@
 
 			if var_303_24 <= arg_300_1.time_ and arg_300_1.time_ < var_303_24 + var_303_27 then
 				local var_303_28 = (arg_300_1.time_ - var_303_24) / var_303_27
-				local var_303_29 = Vector3.New(390, -340, -288)
+				local var_303_29 = Vector3.New(-585.3, -349.1, -288)
 
 				var_303_23.localPosition = Vector3.Lerp(arg_300_1.var_.moveOldPos1015, var_303_29, var_303_28)
 			end
 
 			if arg_300_1.time_ >= var_303_24 + var_303_27 and arg_300_1.time_ < var_303_24 + var_303_27 + arg_303_0 then
-				var_303_23.localPosition = Vector3.New(390, -340, -288)
+				var_303_23.localPosition = Vector3.New(-585.3, -349.1, -288)
 			end
 
 			local var_303_30 = 0
@@ -16298,13 +16298,13 @@
 
 			if var_359_17 <= arg_356_1.time_ and arg_356_1.time_ < var_359_17 + var_359_20 then
 				local var_359_21 = (arg_356_1.time_ - var_359_17) / var_359_20
-				local var_359_22 = Vector3.New(390, -340, -288)
+				local var_359_22 = Vector3.New(-585.3, -349.1, -288)
 
 				var_359_16.localPosition = Vector3.Lerp(arg_356_1.var_.moveOldPos1015, var_359_22, var_359_21)
 			end
 
 			if arg_356_1.time_ >= var_359_17 + var_359_20 and arg_356_1.time_ < var_359_17 + var_359_20 + arg_359_0 then
-				var_359_16.localPosition = Vector3.New(390, -340, -288)
+				var_359_16.localPosition = Vector3.New(-585.3, -349.1, -288)
 			end
 
 			local var_359_23 = 0
@@ -17221,13 +17221,13 @@
 
 			if var_383_17 <= arg_380_1.time_ and arg_380_1.time_ < var_383_17 + var_383_20 then
 				local var_383_21 = (arg_380_1.time_ - var_383_17) / var_383_20
-				local var_383_22 = Vector3.New(390, -340, -288)
+				local var_383_22 = Vector3.New(-585.3, -349.1, -288)
 
 				var_383_16.localPosition = Vector3.Lerp(arg_380_1.var_.moveOldPos1015, var_383_22, var_383_21)
 			end
 
 			if arg_380_1.time_ >= var_383_17 + var_383_20 and arg_380_1.time_ < var_383_17 + var_383_20 + arg_383_0 then
-				var_383_16.localPosition = Vector3.New(390, -340, -288)
+				var_383_16.localPosition = Vector3.New(-585.3, -349.1, -288)
 			end
 
 			local var_383_23 = 0
@@ -18241,13 +18241,13 @@
 
 			if var_403_1 <= arg_400_1.time_ and arg_400_1.time_ < var_403_1 + var_403_4 then
 				local var_403_5 = (arg_400_1.time_ - var_403_1) / var_403_4
-				local var_403_6 = Vector3.New(390, -340, -288)
+				local var_403_6 = Vector3.New(-585.3, -349.1, -288)
 
 				var_403_0.localPosition = Vector3.Lerp(arg_400_1.var_.moveOldPos1015, var_403_6, var_403_5)
 			end
 
 			if arg_400_1.time_ >= var_403_1 + var_403_4 and arg_400_1.time_ < var_403_1 + var_403_4 + arg_403_0 then
-				var_403_0.localPosition = Vector3.New(390, -340, -288)
+				var_403_0.localPosition = Vector3.New(-585.3, -349.1, -288)
 			end
 
 			local var_403_7 = 0

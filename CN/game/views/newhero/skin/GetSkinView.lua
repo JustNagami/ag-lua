@@ -37,7 +37,7 @@ function var_0_0.OnEnter(arg_8_0)
 
 	local var_8_0 = SkinCfg[arg_8_0.skinID_]
 
-	arg_8_0.portrait_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_8_0.picture_id)
+	arg_8_0.portrait_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_8_0.picture_id)
 	arg_8_0.name_.text = ItemTools.getItemName(arg_8_0.skinID_)
 
 	arg_8_0.playableDirector_:Evaluate()

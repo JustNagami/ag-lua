@@ -101,6 +101,12 @@
 		prefab_path = "Widget/Version/CORGUI_Com/CorgUI_3_10_PlotUI",
 		id = 311201
 	},
+	[321202] = {
+		chapter_type = 1,
+		chapter_client_id = 10121,
+		prefab_path = "Widget/Version/V4_0_1_SkuldUI_Com/V4_0_SkuldUI_PlotUI",
+		id = 321202
+	},
 	all = {
 		141200,
 		141204,
@@ -118,6 +124,7 @@
 		281201,
 		291201,
 		301201,
-		311201
+		311201,
+		321202
 	}
 }

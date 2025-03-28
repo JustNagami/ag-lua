@@ -67,6 +67,11 @@ function var_0_0.OnEnter(arg_12_0)
 		arg_12_0.updateTimer = Timer.New(function()
 			local var_13_0 = RepairAssetsToLua.GetCurrentVerifyIndex()
 			local var_13_1 = RepairAssetsToLua.GetTotalVerifyCount()
+
+			if var_13_1 < var_13_0 then
+				var_13_0 = var_13_1
+			end
+
 			local var_13_2 = 0
 
 			if var_13_1 ~= 0 then

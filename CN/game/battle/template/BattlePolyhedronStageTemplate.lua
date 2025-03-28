@@ -99,24 +99,31 @@ end
 
 function var_0_0.UpdateRoleDatas(arg_12_0, arg_12_1)
 	arg_12_0.serverTeamPlayer = arg_12_1
+
+	local var_12_0 = {}
+
+	for iter_12_0, iter_12_1 in pairs(arg_12_1.heroList) do
+		var_12_0[iter_12_1.id] = iter_12_1
+	end
+
 	arg_12_0.roleDataInLua = {}
 
-	local var_12_0 = PolyhedronData:GetPolyhedronInfo()
-	local var_12_1 = var_12_0:GetPolyhedronLeader()
-	local var_12_2 = var_12_0:GetLeaderHeroId()
-	local var_12_3 = PolyhedronHeroCfg[var_12_2]
-	local var_12_4 = BattleController.GetInstance():SetPolyhedronHeroData(var_12_0, var_12_1, var_12_3.standard_id, arg_12_1.playerID, arg_12_1.level)
+	local var_12_1 = PolyhedronData:GetPolyhedronInfo()
+	local var_12_2 = var_12_1:GetPolyhedronLeader()
+	local var_12_3 = var_12_1:GetLeaderHeroId()
+	local var_12_4 = PolyhedronHeroCfg[var_12_3]
+	local var_12_5 = BattleController.GetInstance():SetPolyhedronHeroData(var_12_1, var_12_0[var_12_3], var_12_2, var_12_4.standard_id, arg_12_1.playerID, arg_12_1.level)
 
-	table.insert(arg_12_0.roleDataInLua, var_12_4)
+	table.insert(arg_12_0.roleDataInLua, var_12_5)
 
-	local var_12_5 = var_12_0:GetFightHeroList()
+	local var_12_6 = var_12_1:GetFightHeroList()
 
-	for iter_12_0, iter_12_1 in ipairs(var_12_5) do
-		if not var_12_0:GetHeroPolyData(iter_12_1):IsDead() and iter_12_1 ~= var_12_2 then
-			local var_12_6 = PolyhedronHeroCfg[iter_12_1]
-			local var_12_7 = BattleController.GetInstance():SetPolyhedronHeroData(var_12_0, nil, var_12_6.standard_id, arg_12_1.playerID, arg_12_1.level)
+	for iter_12_2, iter_12_3 in ipairs(var_12_6) do
+		if not var_12_1:GetHeroPolyData(iter_12_3):IsDead() and iter_12_3 ~= var_12_3 then
+			local var_12_7 = PolyhedronHeroCfg[iter_12_3]
+			local var_12_8 = BattleController.GetInstance():SetPolyhedronHeroData(var_12_1, var_12_0[iter_12_3], nil, var_12_7.standard_id, arg_12_1.playerID, arg_12_1.level)
 
-			table.insert(arg_12_0.roleDataInLua, var_12_7)
+			table.insert(arg_12_0.roleDataInLua, var_12_8)
 		end
 	end
 

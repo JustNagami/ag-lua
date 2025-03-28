@@ -37,7 +37,7 @@
 		value2 = "",
 		exclude = false,
 		value = {
-			1500
+			10000
 		}
 	},
 	pop_unlock = {
@@ -94,6 +94,32 @@
 		exclude = false,
 		value = {
 			"bgm_activity_3_10_spring_night_ingame"
+		}
+	},
+	story_word_duration = {
+		id = "story_word_duration",
+		value2 = "",
+		exclude = false,
+		value = {
+			20,
+			5
+		}
+	},
+	story_word_display = {
+		id = "story_word_display",
+		value2 = "",
+		exclude = false,
+		value = {
+			40
+		}
+	},
+	story_word_bubble_duration = {
+		id = "story_word_bubble_duration",
+		value2 = "",
+		exclude = false,
+		value = {
+			5,
+			4
 		}
 	}
 }

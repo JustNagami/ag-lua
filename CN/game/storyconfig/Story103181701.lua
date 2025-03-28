@@ -685,7 +685,7 @@
 
 			if var_20_6 <= arg_17_1.time_ and arg_17_1.time_ < var_20_6 + var_20_7 then
 				local var_20_8 = (arg_17_1.time_ - var_20_6) / var_20_7
-				local var_20_9 = Vector3.New(0, -1.08, -5.9)
+				local var_20_9 = Vector3.New(-0.2, -1.08, -5.9)
 
 				var_20_5.localPosition = Vector3.Lerp(arg_17_1.var_.moveOldPos1019ui_story, var_20_9, var_20_8)
 
@@ -701,7 +701,7 @@
 			end
 
 			if arg_17_1.time_ >= var_20_6 + var_20_7 and arg_17_1.time_ < var_20_6 + var_20_7 + arg_20_0 then
-				var_20_5.localPosition = Vector3.New(0, -1.08, -5.9)
+				var_20_5.localPosition = Vector3.New(-0.2, -1.08, -5.9)
 
 				local var_20_12 = manager.ui.mainCamera.transform.position - var_20_5.position
 
@@ -6746,6 +6746,8 @@
 			if arg_179_0 == 2 then
 				arg_177_0:Play318171046(arg_177_1)
 			end
+
+			arg_177_1:RecordChoiceLog(318171044, 318171045, 318171046)
 		end
 
 		function arg_177_1.onSingleLineUpdate_(arg_180_0)

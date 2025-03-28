@@ -28,7 +28,7 @@ function var_0_0.RefreshUI(arg_5_0, arg_5_1, arg_5_2, arg_5_3)
 	arg_5_0.nameText_.text = ""
 	arg_5_0.suffixText_.text = ItemTools.getItemName(arg_5_3)
 	arg_5_0.campImg_.sprite = HeroTools.GetRaceIcon(WeaponServantCfg[arg_5_0.servantID_].race)
-	arg_5_0.groupbgImg_.sprite = getSpriteWithoutAtlas("TextureConfig/ServantUpSelect/" .. arg_5_0.id_ .. SettingData:GetCurrentLanguageKey())
+	arg_5_0.groupbgImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/ServantUpSelect/" .. arg_5_0.id_ .. SettingData:GetCurrentLanguageKey())
 end
 
 function var_0_0.ShowSelect(arg_6_0, arg_6_1)

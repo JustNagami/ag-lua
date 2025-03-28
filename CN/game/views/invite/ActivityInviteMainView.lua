@@ -120,7 +120,7 @@ function var_0_0.UpdateRefreshView(arg_13_0)
 	local var_13_1 = HeroCfg[var_13_0]
 
 	arg_13_0.nameTxt_.text = GetI18NText(var_13_1.suffix)
-	arg_13_0.roleImg.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/" .. tostring(arg_13_0.heroPlotList[arg_13_0.selectIndex][1].hero_image_route))
+	arg_13_0.roleImg.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/JapanRegionUI_2_6/" .. tostring(arg_13_0.heroPlotList[arg_13_0.selectIndex][1].hero_image_route))
 
 	arg_13_0:UpdateDrawController()
 end

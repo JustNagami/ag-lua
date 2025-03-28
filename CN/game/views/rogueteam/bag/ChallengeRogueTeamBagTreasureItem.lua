@@ -23,7 +23,7 @@ function var_0_0.SetData(arg_4_0, arg_4_1, arg_4_2)
 	arg_4_0.data_ = arg_4_2
 	arg_4_0.cfg_ = RogueTeamItemCfg[arg_4_0.data_.id]
 	arg_4_0.nameText_.text = arg_4_0.cfg_.name
-	arg_4_0.icon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_4_0.data_.id))
+	arg_4_0.icon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_4_0.data_.id))
 	arg_4_0.descText_.text = ChallengeRogueTeamTools.GetItemDesc(arg_4_0.data_.id, arg_4_0.data_.rare, arg_4_0.descText_.color)
 
 	arg_4_0.rareController_:SetSelectedState(arg_4_0.data_.rare)

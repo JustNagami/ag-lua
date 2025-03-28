@@ -9,7 +9,7 @@ function var_0_0.Init(arg_1_0)
 	arg_1_0.rechargeStatus_ = {}
 	arg_1_0.firstRechargeRewardStatus_ = {}
 	arg_1_0.firstMonthlyCardStatus_ = {}
-	arg_1_0.bpRewardStatus_ = 0
+	arg_1_0.firstBattlePassStatus_ = {}
 	arg_1_0.unlockPhase_ = 0
 	arg_1_0.noobAccumulateReceivedList_ = {}
 end
@@ -148,7 +148,9 @@ function var_0_0.UpdateRecharge(arg_20_0, arg_20_1)
 		firstGearStatus = var_20_0.first_gear_recharge_reward,
 		secondGearStatus = var_20_0.second_gear_recharge_flag,
 		signTimes = var_20_0.now_sign_times,
-		lastSignTimestamp = var_20_0.last_sign_timestamp
+		lastSignTimestamp = var_20_0.last_sign_timestamp,
+		firstGearNewTag = var_20_0.is_new_recharge_6,
+		secondGearNewTag = var_20_0.is_new_recharge_18
 	}
 
 	local var_20_1 = arg_20_1.first_monthly_card_reward
@@ -161,7 +163,13 @@ function var_0_0.UpdateRecharge(arg_20_0, arg_20_1)
 		newTagRoleFlag = var_20_1.is_new_tag_role_reward,
 		newTagSignFlag = var_20_1.is_new_tag_sign_reward
 	}
-	arg_20_0.bpRewardStatus_ = arg_20_1.first_battlepass_reward
+
+	local var_20_2 = arg_20_1.first_battlepass_reward
+
+	arg_20_0.firstBattlePassStatus_ = {
+		bpRewardStatus = var_20_2.first_battlepass_reward,
+		battlePassNewTag = var_20_2.is_new_battlepass_reward
+	}
 end
 
 function var_0_0.GetFirstRechargeStatus(arg_21_0)
@@ -176,49 +184,75 @@ function var_0_0.SetNewTagSignFlag(arg_23_0, arg_23_1)
 	arg_23_0.firstMonthlyCardStatus_.newTagSignFlag = arg_23_1
 end
 
-function var_0_0.ReceiveFirstRecharge(arg_24_0, arg_24_1)
-	if arg_24_1 == 0 then
-		arg_24_0.firstRechargeRewardStatus_.firstGearStatus = 2
+function var_0_0.SetFirstGearNewTag(arg_24_0, arg_24_1)
+	arg_24_0.firstRechargeRewardStatus_.firstGearNewTag = arg_24_1
+end
+
+function var_0_0.SetSecondGearNewTag(arg_25_0, arg_25_1)
+	arg_25_0.firstRechargeRewardStatus_.secondGearNewTag = arg_25_1
+end
+
+function var_0_0.IsFirstRechargeNewTag(arg_26_0)
+	return arg_26_0.firstMonthlyCardStatus_.newTagSignFlag or arg_26_0.firstRechargeRewardStatus_.firstGearNewTag or arg_26_0.firstRechargeRewardStatus_.secondGearNewTag or arg_26_0.firstBattlePassStatus_.battlePassNewTag
+end
+
+function var_0_0.ReceiveFirstRecharge(arg_27_0, arg_27_1)
+	if arg_27_1 == 0 then
+		arg_27_0.firstRechargeRewardStatus_.firstGearStatus = 2
 	else
-		arg_24_0.firstRechargeRewardStatus_.signTimes = arg_24_0.firstRechargeRewardStatus_.signTimes + 1
-		arg_24_0.firstRechargeRewardStatus_.lastSignTimestamp = manager.time:GetServerTime()
+		arg_27_0.firstRechargeRewardStatus_.signTimes = arg_27_0.firstRechargeRewardStatus_.signTimes + 1
+		arg_27_0.firstRechargeRewardStatus_.lastSignTimestamp = manager.time:GetServerTime()
 	end
 end
 
-function var_0_0.GetFirstMonthlyCardStatus(arg_25_0)
-	return arg_25_0.firstMonthlyCardStatus_
+function var_0_0.GetFirstMonthlyCardStatus(arg_28_0)
+	return arg_28_0.firstMonthlyCardStatus_
 end
 
-function var_0_0.ReceiveMonthlyCard(arg_26_0, arg_26_1)
-	if arg_26_1 == 0 then
-		arg_26_0.firstMonthlyCardStatus_.heroRewardFlag = true
+function var_0_0.ReceiveMonthlyCard(arg_29_0, arg_29_1)
+	if arg_29_1 == 0 then
+		arg_29_0.firstMonthlyCardStatus_.heroRewardFlag = true
 	else
-		arg_26_0.firstMonthlyCardStatus_.signRewardFlag = true
+		arg_29_0.firstMonthlyCardStatus_.signRewardFlag = true
 	end
 end
 
-function var_0_0.SetMonthlyCardSign(arg_27_0)
+function var_0_0.SetMonthlyCardSign(arg_30_0)
 	return
 end
 
-function var_0_0.GetBpRewardStatus(arg_28_0)
-	return arg_28_0.bpRewardStatus_
+function var_0_0.GetBattlePassStatus(arg_31_0)
+	return arg_31_0.firstBattlePassStatus_
 end
 
-function var_0_0.SetBpRewardStatus(arg_29_0)
-	arg_29_0.bpRewardStatus_ = 2
+function var_0_0.GetBpRewardStatus(arg_32_0)
+	return arg_32_0.firstBattlePassStatus_.bpRewardStatus
 end
 
-function var_0_0.GetRechargeStatus(arg_30_0)
-	return arg_30_0.rechargeStatus_
+function var_0_0.SetBpRewardStatus(arg_33_0)
+	arg_33_0.firstBattlePassStatus_.bpRewardStatus = 2
 end
 
-function var_0_0.GetNewbieOpenTime(arg_31_0)
-	return arg_31_0.trigger_time
+function var_0_0.SetBattlePassNewTag(arg_34_0, arg_34_1)
+	arg_34_0.firstBattlePassStatus_.battlePassNewTag = arg_34_1
 end
 
-function var_0_0.SetNewbieOpenTime(arg_32_0, arg_32_1)
-	arg_32_0.trigger_time = arg_32_1
+function var_0_0.GetRechargeStatus(arg_35_0)
+	return arg_35_0.rechargeStatus_
+end
+
+function var_0_0.GetBpNewRecharge(arg_36_0)
+	local var_36_0 = arg_36_0.firstBattlePassStatus_.bpRewardStatus
+
+	return var_36_0 == nil or var_36_0 == 0
+end
+
+function var_0_0.GetNewbieOpenTime(arg_37_0)
+	return arg_37_0.trigger_time
+end
+
+function var_0_0.SetNewbieOpenTime(arg_38_0, arg_38_1)
+	arg_38_0.trigger_time = arg_38_1
 end
 
 return var_0_0

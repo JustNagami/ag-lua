@@ -140,7 +140,7 @@ function var_0_0.RefreshUI(arg_11_0, arg_11_1, arg_11_2, arg_11_3, arg_11_4, arg
 
 		local var_11_3 = ChipCfg[var_11_0]
 
-		arg_11_0.chipiconImg_.sprite = getSpriteWithoutAtlas("TextureConfig/Managecat_s/" .. var_11_3.picture_id)
+		arg_11_0.chipiconImg_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Managecat_s/" .. var_11_3.picture_id)
 
 		for iter_11_1 = 1, 2 do
 			if var_11_1[iter_11_1] then

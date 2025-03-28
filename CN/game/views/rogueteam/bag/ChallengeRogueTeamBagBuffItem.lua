@@ -33,7 +33,7 @@ function var_0_0.SetData(arg_3_0, arg_3_1, arg_3_2)
 	arg_3_0.leftTimesController_:SetSelectedState(tostring(arg_3_0.effectData.leftTime and arg_3_0.effectData.leftTime ~= 9999))
 
 	arg_3_0.leftTimesText_.text = arg_3_0.effectData.leftTime
-	arg_3_0.icon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_3_2.id))
+	arg_3_0.icon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_3_2.id))
 end
 
 return var_0_0

@@ -68,7 +68,7 @@ function var_0_0.RefreshUI(arg_13_0)
 
 	arg_13_0.nametext_.text = var_13_2.name
 	arg_13_0.destext_.text = var_13_2.tips
-	arg_13_0.bgimage_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_13_2.background_1))
+	arg_13_0.bgimage_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, var_13_2.background_1))
 
 	arg_13_0.controller_:SetSelectedState(MythicData:GetLevelStatus())
 end

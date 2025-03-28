@@ -274,6 +274,12 @@ function var_0_0.GetStageCfg(arg_5_0, arg_5_1)
 		var_5_0 = BattleRogueTeamStageCfg[arg_5_1]
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_DODGE_BARRAGE == arg_5_0 then
 		var_5_0 = BattleDodgeBarrageCfg[arg_5_1]
+	elseif BattleConst.STAGE_TYPE_NEW.SEA_WARFARE == arg_5_0 then
+		var_5_0 = BattleSeaWarfareStageCfg[arg_5_1]
+	elseif BattleConst.STAGE_TYPE_NEW.SKULD == arg_5_0 then
+		var_5_0 = BattleSkuldStageCfg[arg_5_1]
+	elseif BattleConst.STAGE_TYPE_NEW.SAND_PLAY == arg_5_0 then
+		var_5_0 = BattleSandPlayStageCfg[arg_5_1]
 	end
 
 	if var_5_0 == nil then

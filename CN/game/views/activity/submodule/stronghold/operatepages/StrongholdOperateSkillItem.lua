@@ -29,7 +29,7 @@ function var_0_0.RefreshUI(arg_4_0)
 		end
 	end
 
-	arg_4_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/StrongholdUI/StrongholdSkill/" .. arg_4_0.skill_type)
+	arg_4_0.m_icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/VersionUI/XuHeng3rdUI/StrongholdUI/StrongholdSkill/" .. arg_4_0.skill_type)
 
 	local var_4_1, var_4_2, var_4_3, var_4_4 = StrongholdData:GetStrongholdLevel(arg_4_0.skill_type)
 	local var_4_5 = StrongholdData:GetSkillLimitLv()

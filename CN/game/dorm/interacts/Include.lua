@@ -6,6 +6,9 @@
 	["game.dorm.interacts.aaa"] = {
 		require("game.dorm.interacts.aaa")
 	},
+	["game.dorm.interacts.aideng"] = {
+		require("game.dorm.interacts.aideng")
+	},
 	["game.dorm.interacts.angry01_effect"] = {
 		require("game.dorm.interacts.angry01_effect")
 	},
@@ -133,6 +136,9 @@
 	},
 	["game.dorm.interacts.mic_sing"] = {
 		require("game.dorm.interacts.mic_sing")
+	},
+	["game.dorm.interacts.muzhuang"] = {
+		require("game.dorm.interacts.muzhuang")
 	},
 	["game.dorm.interacts.nangua_kick"] = {
 		require("game.dorm.interacts.nangua_kick")
@@ -620,8 +626,36 @@
 	["game.dorm.interacts.male.train_show"] = {
 		require("game.dorm.interacts.male.train_show03")
 	},
+	["game.dorm.interacts.qworld.props_beike"] = {
+		require("game.dorm.interacts.qworld.props_beike")
+	},
+	["game.dorm.interacts.qworld.props_bench"] = {
+		require("game.dorm.interacts.qworld.props_bench")
+	},
 	["game.dorm.interacts.qworld.props_box_open"] = {
 		require("game.dorm.interacts.qworld.props_box_open")
+	},
+	["game.dorm.interacts.qworld.props_box_open_quanzhou_big"] = {
+		require("game.dorm.interacts.qworld.props_box_open_quanzhou_big")
+	},
+	["game.dorm.interacts.qworld.props_box_open_quanzhou_small"] = {
+		require("game.dorm.interacts.qworld.props_box_open_quanzhou_small")
+	},
+	["game.dorm.interacts.qworld.props_dance_idle"] = {
+		require("game.dorm.interacts.qworld.props_dance_idle1"),
+		require("game.dorm.interacts.qworld.props_dance_idle2"),
+		require("game.dorm.interacts.qworld.props_dance_idle3"),
+		require("game.dorm.interacts.qworld.props_dance_idle4"),
+		require("game.dorm.interacts.qworld.props_dance_idle5")
+	},
+	["game.dorm.interacts.qworld.props_dance_start"] = {
+		require("game.dorm.interacts.qworld.props_dance_start")
+	},
+	["game.dorm.interacts.qworld.props_dig"] = {
+		require("game.dorm.interacts.qworld.props_dig")
+	},
+	["game.dorm.interacts.qworld.props_dig_"] = {
+		require("game.dorm.interacts.qworld.props_dig_01")
 	},
 	["game.dorm.interacts.qworld.props_divine_exit"] = {
 		require("game.dorm.interacts.qworld.props_divine_exit")
@@ -636,14 +670,50 @@
 	["game.dorm.interacts.qworld.props_divine_stand"] = {
 		require("game.dorm.interacts.qworld.props_divine_stand")
 	},
+	["game.dorm.interacts.qworld.props_duibo"] = {
+		require("game.dorm.interacts.qworld.props_duibo")
+	},
 	["game.dorm.interacts.qworld.props_empty"] = {
 		require("game.dorm.interacts.qworld.props_empty")
+	},
+	["game.dorm.interacts.qworld.props_fishing_bite"] = {
+		require("game.dorm.interacts.qworld.props_fishing_bite")
+	},
+	["game.dorm.interacts.qworld.props_fishing_finish"] = {
+		require("game.dorm.interacts.qworld.props_fishing_finish")
+	},
+	["game.dorm.interacts.qworld.props_fishing_start"] = {
+		require("game.dorm.interacts.qworld.props_fishing_start")
+	},
+	["game.dorm.interacts.qworld.props_fishing_wait"] = {
+		require("game.dorm.interacts.qworld.props_fishing_wait")
 	},
 	["game.dorm.interacts.qworld.props_horse_hit"] = {
 		require("game.dorm.interacts.qworld.props_horse_hit")
 	},
 	["game.dorm.interacts.qworld.props_horse_ride"] = {
 		require("game.dorm.interacts.qworld.props_horse_ride")
+	},
+	["game.dorm.interacts.qworld.props_kaoroujia_failed"] = {
+		require("game.dorm.interacts.qworld.props_kaoroujia_failed")
+	},
+	["game.dorm.interacts.qworld.props_kaoroujia_idle"] = {
+		require("game.dorm.interacts.qworld.props_kaoroujia_idle")
+	},
+	["game.dorm.interacts.qworld.props_kaoroujia_success"] = {
+		require("game.dorm.interacts.qworld.props_kaoroujia_success")
+	},
+	["game.dorm.interacts.qworld.props_lie_down"] = {
+		require("game.dorm.interacts.qworld.props_lie_down")
+	},
+	["game.dorm.interacts.qworld.props_muzhuang"] = {
+		require("game.dorm.interacts.qworld.props_muzhuang")
+	},
+	["game.dorm.interacts.qworld.props_muzhuang_empty"] = {
+		require("game.dorm.interacts.qworld.props_muzhuang_empty")
+	},
+	["game.dorm.interacts.qworld.props_niudongjinxiao"] = {
+		require("game.dorm.interacts.qworld.props_niudongjinxiao")
 	},
 	["game.dorm.interacts.qworld.props_paryer_exit"] = {
 		require("game.dorm.interacts.qworld.props_paryer_exit")
@@ -666,6 +736,9 @@
 	["game.dorm.interacts.qworld.props_qiuqian_idle"] = {
 		require("game.dorm.interacts.qworld.props_qiuqian_idle")
 	},
+	["game.dorm.interacts.qworld.props_read"] = {
+		require("game.dorm.interacts.qworld.props_read")
+	},
 	["game.dorm.interacts.qworld.props_recliner_exit"] = {
 		require("game.dorm.interacts.qworld.props_recliner_exit")
 	},
@@ -676,6 +749,15 @@
 	["game.dorm.interacts.qworld.props_recliner_sit"] = {
 		require("game.dorm.interacts.qworld.props_recliner_sit")
 	},
+	["game.dorm.interacts.qworld.props_shuihua"] = {
+		require("game.dorm.interacts.qworld.props_shuihua")
+	},
+	["game.dorm.interacts.qworld.props_sit_xiari_tangyi_idle"] = {
+		require("game.dorm.interacts.qworld.props_sit_xiari_tangyi_idle")
+	},
+	["game.dorm.interacts.qworld.props_sit_xiari_tangyi_sit"] = {
+		require("game.dorm.interacts.qworld.props_sit_xiari_tangyi_sit")
+	},
 	["game.dorm.interacts.qworld.props_small_chair_exit"] = {
 		require("game.dorm.interacts.qworld.props_small_chair_exit")
 	},
@@ -684,5 +766,17 @@
 	},
 	["game.dorm.interacts.qworld.props_small_chair_sit"] = {
 		require("game.dorm.interacts.qworld.props_small_chair_sit")
+	},
+	["game.dorm.interacts.qworld.props_swim_ring_sit"] = {
+		require("game.dorm.interacts.qworld.props_swim_ring_sit")
+	},
+	["game.dorm.interacts.qworld.props_tuanziwu"] = {
+		require("game.dorm.interacts.qworld.props_tuanziwu")
+	},
+	["game.dorm.interacts.qworld.props_weaving"] = {
+		require("game.dorm.interacts.qworld.props_weaving")
+	},
+	["game.dorm.interacts.qworld.props_zongziboat"] = {
+		require("game.dorm.interacts.qworld.props_zongziboat")
 	}
 }

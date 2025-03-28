@@ -267,17 +267,24 @@ function var_0_0.OnWeaponQuick(arg_22_0, arg_22_1, arg_22_2, arg_22_3, arg_22_4)
 end
 
 function var_0_0.ShowQuickBreakTips(arg_23_0, arg_23_1, arg_23_2, arg_23_3, arg_23_4)
-	local var_23_0 = arg_23_0.data.heroId
-	local var_23_1 = arg_23_3 + arg_23_2.breakthrough_times
+	local var_23_0 = arg_23_4
+	local var_23_1 = arg_23_2.target_level
+	local var_23_2 = arg_23_0.data.heroId
+	local var_23_3 = arg_23_3 + arg_23_2.breakthrough_times
 
-	JumpTools.OpenPageByJump("weaponOneKeyBreak", {
-		heroID = var_23_0,
+	JumpTools.OpenPageByJump("weaponOneKeyStr", {
+		isBreak = true,
+		oriLv = var_23_0,
+		afterLv = arg_23_2.target_level,
+		heroID = var_23_2,
 		beforeBreak = arg_23_3,
-		afterBreak = var_23_1,
+		afterBreak = var_23_3,
 		beforeLevel = arg_23_4,
 		afterLevel = arg_23_2.target_level,
 		callback = function()
-			arg_23_0:OpenLvUpPop(arg_23_1, arg_23_2, arg_23_3, arg_23_4)
+			local var_24_0 = arg_23_1.mat_list
+
+			getReward(formatRewardCfgList(var_24_0))
 		end
 	})
 end
@@ -288,6 +295,7 @@ function var_0_0.OpenLvUpPop(arg_25_0, arg_25_1, arg_25_2, arg_25_3, arg_25_4)
 	local var_25_2 = arg_25_3 + arg_25_2.breakthrough_times
 
 	JumpTools.OpenPageByJump("weaponOneKeyStr", {
+		isBreak = false,
 		oriLv = var_25_0,
 		afterLv = arg_25_2.target_level,
 		beforeBreak = arg_25_3,

@@ -86,8 +86,11 @@ function var_0_0.SyncInit(arg_12_0, arg_12_1, arg_12_2)
 	if var_12_0 then
 		local var_12_1 = Asset.Load(var_12_0)
 
+		arg_12_0.loadPath = var_12_0
+
 		if var_12_1 == nil then
-			var_12_1 = Asset.Load(var_12_0 .. SettingData:GetCurrentLanguageKey())
+			arg_12_0.loadPath = var_12_0 .. SettingData:GetCurrentLanguageKey()
+			var_12_1 = Asset.Load(arg_12_0.loadPath)
 
 			if var_12_1 == nil then
 				error("找不到资源：" .. var_12_0)
@@ -106,326 +109,340 @@ function var_0_0.SyncInit(arg_12_0, arg_12_1, arg_12_2)
 	end
 end
 
-function var_0_0.AdaptScreen(arg_13_0)
-	if not var_0_0.NEED_ADAPT or arg_13_0.transform_ == nil or var_0_0.VIEW_ADAPT_DISTANCE == arg_13_0.lastAdaptDistance_ then
+function var_0_0.UnloadAsset(arg_13_0)
+	if arg_13_0.loadPath then
+		Asset.Unload(arg_13_0.loadPath)
+
+		arg_13_0.loadPath = nil
+	end
+end
+
+function var_0_0.AdaptScreen(arg_14_0)
+	if not var_0_0.NEED_ADAPT or arg_14_0.transform_ == nil or var_0_0.VIEW_ADAPT_DISTANCE == arg_14_0.lastAdaptDistance_ then
 		return
 	end
 
-	arg_13_0:AdaptLeft()
-	arg_13_0:AdaptRight()
-	arg_13_0:AdaptMiddle()
-	arg_13_0:AdaptChild()
+	arg_14_0:AdaptLeft()
+	arg_14_0:AdaptRight()
+	arg_14_0:AdaptMiddle()
+	arg_14_0:AdaptChild()
 
-	arg_13_0.lastAdaptDistance_ = var_0_0.VIEW_ADAPT_DISTANCE
+	arg_14_0.lastAdaptDistance_ = var_0_0.VIEW_ADAPT_DISTANCE
 end
 
-function var_0_0.AdaptLeft(arg_14_0)
-	if arg_14_0.leftTrs_ == nil then
-		if arg_14_0.leftGo_ == nil then
-			arg_14_0.leftGo_ = arg_14_0:FindGo("panel/left") or arg_14_0:FindGo("Canvas/panel/left")
+function var_0_0.AdaptLeft(arg_15_0)
+	if arg_15_0.leftTrs_ == nil then
+		if arg_15_0.leftGo_ == nil then
+			arg_15_0.leftGo_ = arg_15_0:FindGo("panel/left") or arg_15_0:FindGo("Canvas/panel/left")
 		end
 
-		arg_14_0.needAdaptLeft_ = false
+		arg_15_0.needAdaptLeft_ = false
 
-		if arg_14_0.leftGo_ == nil then
-			arg_14_0.leftGo_ = arg_14_0:FindGo("panel/left_adapt") or arg_14_0:FindGo("Canvas/panel/left_adapt")
+		if arg_15_0.leftGo_ == nil then
+			arg_15_0.leftGo_ = arg_15_0:FindGo("panel/left_adapt") or arg_15_0:FindGo("Canvas/panel/left_adapt")
 
-			if arg_14_0.leftGo_ then
-				arg_14_0.needAdaptLeft_ = true
+			if arg_15_0.leftGo_ then
+				arg_15_0.needAdaptLeft_ = true
 			end
 		end
 
-		if arg_14_0.leftGo_ then
-			arg_14_0.leftTrs_ = arg_14_0.leftGo_:GetComponent(typeof(RectTransform))
+		if arg_15_0.leftGo_ then
+			arg_15_0.leftTrs_ = arg_15_0.leftGo_:GetComponent(typeof(RectTransform))
 		end
 	end
 
-	if arg_14_0.leftTrs_ then
-		arg_14_0.leftTrs_.anchoredPosition = Vector3(var_0_0.VIEW_ADAPT_DISTANCE, 0, 0)
+	if arg_15_0.leftTrs_ then
+		arg_15_0.leftTrs_.anchoredPosition = Vector3(var_0_0.VIEW_ADAPT_DISTANCE, 0, 0)
 
-		if arg_14_0.needAdaptLeft_ then
-			if arg_14_0.leftTrsSizeDelta_ == nil then
-				arg_14_0.leftTrsSizeDelta_ = arg_14_0.leftTrs_.sizeDelta
+		if arg_15_0.needAdaptLeft_ then
+			if arg_15_0.leftTrsSizeDelta_ == nil then
+				arg_15_0.leftTrsSizeDelta_ = arg_15_0.leftTrs_.sizeDelta
 			end
 
-			local var_14_0 = arg_14_0.leftTrsSizeDelta_
+			local var_15_0 = arg_15_0.leftTrsSizeDelta_
 
-			arg_14_0.leftTrs_.sizeDelta = Vector2.New(var_14_0.x - var_0_0.VIEW_ADAPT_DISTANCE * 2, var_14_0.y)
+			arg_15_0.leftTrs_.sizeDelta = Vector2.New(var_15_0.x - var_0_0.VIEW_ADAPT_DISTANCE * 2, var_15_0.y)
 		end
 	end
 end
 
-function var_0_0.AdaptRight(arg_15_0)
-	if arg_15_0.rightTrs_ == nil then
-		if arg_15_0.rightGo_ == nil then
-			arg_15_0.rightGo_ = arg_15_0:FindGo("panel/right") or arg_15_0:FindGo("Canvas/panel/right")
+function var_0_0.AdaptRight(arg_16_0)
+	if arg_16_0.rightTrs_ == nil then
+		if arg_16_0.rightGo_ == nil then
+			arg_16_0.rightGo_ = arg_16_0:FindGo("panel/right") or arg_16_0:FindGo("Canvas/panel/right")
 		end
 
-		arg_15_0.needAdaptRight_ = false
+		arg_16_0.needAdaptRight_ = false
 
-		if arg_15_0.rightGo_ == nil then
-			arg_15_0.rightGo_ = arg_15_0:FindGo("panel/right_adapt") or arg_15_0:FindGo("Canvas/panel/right_adapt")
+		if arg_16_0.rightGo_ == nil then
+			arg_16_0.rightGo_ = arg_16_0:FindGo("panel/right_adapt") or arg_16_0:FindGo("Canvas/panel/right_adapt")
 
-			if arg_15_0.rightGo_ then
-				arg_15_0.needAdaptRight_ = true
+			if arg_16_0.rightGo_ then
+				arg_16_0.needAdaptRight_ = true
 			end
 		end
 
-		if arg_15_0.rightGo_ then
-			arg_15_0.rightTrs_ = arg_15_0.rightGo_:GetComponent(typeof(RectTransform))
+		if arg_16_0.rightGo_ then
+			arg_16_0.rightTrs_ = arg_16_0.rightGo_:GetComponent(typeof(RectTransform))
 		end
 	end
 
-	if arg_15_0.rightTrs_ then
-		arg_15_0.rightTrs_.anchoredPosition = Vector3(-1 * var_0_0.VIEW_ADAPT_DISTANCE, 0, 0)
+	if arg_16_0.rightTrs_ then
+		arg_16_0.rightTrs_.anchoredPosition = Vector3(-1 * var_0_0.VIEW_ADAPT_DISTANCE, 0, 0)
 
-		if arg_15_0.needAdaptRight_ then
-			if arg_15_0.rightTrsSizeDelta_ == nil then
-				arg_15_0.rightTrsSizeDelta_ = arg_15_0.rightTrs_.sizeDelta
+		if arg_16_0.needAdaptRight_ then
+			if arg_16_0.rightTrsSizeDelta_ == nil then
+				arg_16_0.rightTrsSizeDelta_ = arg_16_0.rightTrs_.sizeDelta
 			end
 
-			local var_15_0 = arg_15_0.rightTrsSizeDelta_
+			local var_16_0 = arg_16_0.rightTrsSizeDelta_
 
-			arg_15_0.rightTrs_.sizeDelta = Vector2.New(var_15_0.x - var_0_0.VIEW_ADAPT_DISTANCE * 2, var_15_0.y)
+			arg_16_0.rightTrs_.sizeDelta = Vector2.New(var_16_0.x - var_0_0.VIEW_ADAPT_DISTANCE * 2, var_16_0.y)
 		end
 	end
 end
 
-function var_0_0.AdaptMiddle(arg_16_0)
-	if arg_16_0.middleTrs_ == nil then
-		if arg_16_0.middleGo_ == nil then
-			arg_16_0.middleGo_ = arg_16_0:FindGo("panel/middle_adapt") or arg_16_0:FindGo("Canvas/panel/middle_adapt")
+function var_0_0.AdaptMiddle(arg_17_0)
+	if arg_17_0.middleTrs_ == nil then
+		if arg_17_0.middleGo_ == nil then
+			arg_17_0.middleGo_ = arg_17_0:FindGo("panel/middle_adapt") or arg_17_0:FindGo("Canvas/panel/middle_adapt")
 		end
 
-		if arg_16_0.middleGo_ then
-			arg_16_0.middleTrs_ = arg_16_0.middleGo_:GetComponent(typeof(RectTransform))
-		end
-	end
-
-	if arg_16_0.middleTrs_ then
-		if arg_16_0.middleTrsSizeDelta_ == nil then
-			arg_16_0.middleTrsSizeDelta_ = arg_16_0.middleTrs_.sizeDelta
-		end
-
-		local var_16_0 = arg_16_0.middleTrsSizeDelta_
-
-		arg_16_0.middleTrs_.sizeDelta = Vector2.New(var_16_0.x - var_0_0.VIEW_ADAPT_DISTANCE * 2, var_16_0.y)
-	end
-end
-
-function var_0_0.AdaptChild(arg_17_0)
-	if arg_17_0.containerTrs_ == nil then
-		if arg_17_0.containerGo_ == nil then
-			arg_17_0.containerGo_ = arg_17_0:FindGo("panel/pageContainer") or arg_17_0:FindGo("Canvas/panel/pageContainer")
-		end
-
-		if arg_17_0.containerGo_ then
-			arg_17_0.containerTrs_ = arg_17_0.containerGo_:GetComponent(typeof(RectTransform))
+		if arg_17_0.middleGo_ then
+			arg_17_0.middleTrs_ = arg_17_0.middleGo_:GetComponent(typeof(RectTransform))
 		end
 	end
 
-	if arg_17_0.containerTrs_ then
-		if arg_17_0.containerTrsSizeDelta_ == nil then
-			arg_17_0.containerTrsSizeDelta_ = arg_17_0.containerTrs_.sizeDelta
+	if arg_17_0.middleTrs_ then
+		if arg_17_0.middleTrsSizeDelta_ == nil then
+			arg_17_0.middleTrsSizeDelta_ = arg_17_0.middleTrs_.sizeDelta
 		end
 
-		local var_17_0 = arg_17_0.containerTrsSizeDelta_
+		local var_17_0 = arg_17_0.middleTrsSizeDelta_
 
-		arg_17_0.containerTrs_.sizeDelta = Vector2.New(var_17_0.x - var_0_0.VIEW_ADAPT_DISTANCE * 2, var_17_0.y)
+		arg_17_0.middleTrs_.sizeDelta = Vector2.New(var_17_0.x - var_0_0.VIEW_ADAPT_DISTANCE * 2, var_17_0.y)
 	end
 end
 
-function var_0_0.OnEnter(arg_18_0)
+function var_0_0.AdaptChild(arg_18_0)
+	if arg_18_0.containerTrs_ == nil then
+		if arg_18_0.containerGo_ == nil then
+			arg_18_0.containerGo_ = arg_18_0:FindGo("panel/pageContainer") or arg_18_0:FindGo("Canvas/panel/pageContainer")
+		end
+
+		if arg_18_0.containerGo_ then
+			arg_18_0.containerTrs_ = arg_18_0.containerGo_:GetComponent(typeof(RectTransform))
+		end
+	end
+
+	if arg_18_0.containerTrs_ then
+		if arg_18_0.containerTrsSizeDelta_ == nil then
+			arg_18_0.containerTrsSizeDelta_ = arg_18_0.containerTrs_.sizeDelta
+		end
+
+		local var_18_0 = arg_18_0.containerTrsSizeDelta_
+
+		arg_18_0.containerTrs_.sizeDelta = Vector2.New(var_18_0.x - var_0_0.VIEW_ADAPT_DISTANCE * 2, var_18_0.y)
+	end
+end
+
+function var_0_0.OnEnter(arg_19_0)
 	return
 end
 
-function var_0_0.OnEnterOver(arg_19_0)
+function var_0_0.OnEnterOver(arg_20_0)
 	return
 end
 
-function var_0_0.CameraEnter(arg_20_0, arg_20_1)
-	if arg_20_1 and arg_20_0:UIParent() ~= manager.ui.uiPop.transform then
+function var_0_0.CameraEnter(arg_21_0, arg_21_1)
+	if arg_21_1 and arg_21_0:UIParent() ~= manager.ui.uiPop.transform then
 		manager.heroRaiseTrack:SetViewState(HeroRaiseTrackConst.ViewType.null)
 	end
 end
 
-function var_0_0.OnExit(arg_21_0)
+function var_0_0.ReserveCameraEnter(arg_22_0, arg_22_1)
+	if arg_22_1 and arg_22_0:UIParent() ~= manager.ui.uiPop.transform then
+		manager.reserveCamera:SwitchCamera(ReserveCameraConst.CAMERA_TYPE.null)
+	end
+end
+
+function var_0_0.OnExit(arg_23_0)
 	return
 end
 
-function var_0_0.OnTop(arg_22_0)
+function var_0_0.OnTop(arg_24_0)
 	return
 end
 
-function var_0_0.OnOverlapped(arg_23_0)
+function var_0_0.OnOverlapped(arg_25_0)
 	return
 end
 
-function var_0_0.OnBehind(arg_24_0)
+function var_0_0.OnBehind(arg_26_0)
 	return
 end
 
-function var_0_0.SetParams(arg_25_0, arg_25_1)
-	arg_25_0.params_ = arg_25_1
+function var_0_0.SetParams(arg_27_0, arg_27_1)
+	arg_27_0.params_ = arg_27_1
 end
 
-function var_0_0.Go(arg_26_0, arg_26_1, arg_26_2, arg_26_3)
-	gameContext:Go(arg_26_1, arg_26_2, arg_26_3)
+function var_0_0.Go(arg_28_0, arg_28_1, arg_28_2, arg_28_3)
+	gameContext:Go(arg_28_1, arg_28_2, arg_28_3)
 end
 
-function var_0_0.Back(arg_27_0, arg_27_1, arg_27_2)
-	var_0_1.Back(arg_27_1, arg_27_2)
+function var_0_0.Back(arg_29_0, arg_29_1, arg_29_2)
+	var_0_1.Back(arg_29_1, arg_29_2)
 end
 
-function var_0_0.IsBack(arg_28_0, arg_28_1)
-	return gameContext:IsBack(arg_28_1)
+function var_0_0.IsBack(arg_30_0, arg_30_1)
+	return gameContext:IsBack(arg_30_1)
 end
 
-function var_0_0.IsOpenRoute(arg_29_0, arg_29_1)
-	return gameContext:IsOpenRoute(arg_29_1)
+function var_0_0.IsOpenRoute(arg_31_0, arg_31_1)
+	return gameContext:IsOpenRoute(arg_31_1)
 end
 
-function var_0_0.Unequal(arg_30_0, arg_30_1, arg_30_2)
-	if type(arg_30_1) == "table" and type(arg_30_2) == "table" then
-		if table.length(arg_30_1) ~= table.length(arg_30_2) then
+function var_0_0.Unequal(arg_32_0, arg_32_1, arg_32_2)
+	if type(arg_32_1) == "table" and type(arg_32_2) == "table" then
+		if table.length(arg_32_1) ~= table.length(arg_32_2) then
 			return true
 		end
 
-		for iter_30_0, iter_30_1 in pairs(arg_30_1) do
-			if arg_30_0:Unequal(iter_30_1, arg_30_2[iter_30_0]) == true then
+		for iter_32_0, iter_32_1 in pairs(arg_32_1) do
+			if arg_32_0:Unequal(iter_32_1, arg_32_2[iter_32_0]) == true then
 				return true
 			end
 		end
-	elseif arg_30_1 ~= arg_30_2 then
+	elseif arg_32_1 ~= arg_32_2 then
 		return true
 	end
 
 	return false
 end
 
-function var_0_0.SetViewProp(arg_31_0, arg_31_1, arg_31_2)
-	arg_31_0.props_ = arg_31_0.props_ or {}
-	arg_31_0.oldProps_ = arg_31_0.oldProps_ or {}
+function var_0_0.SetViewProp(arg_33_0, arg_33_1, arg_33_2)
+	arg_33_0.props_ = arg_33_0.props_ or {}
+	arg_33_0.oldProps_ = arg_33_0.oldProps_ or {}
 
-	local var_31_0 = false
+	local var_33_0 = false
 
-	if arg_31_0.props_[arg_31_1] == nil then
-		var_31_0 = true
+	if arg_33_0.props_[arg_33_1] == nil then
+		var_33_0 = true
 	end
 
-	if arg_31_0:Unequal(arg_31_0.oldProps_[arg_31_1], arg_31_2) then
-		if type(arg_31_2) == "table" then
-			arg_31_0.props_[arg_31_1] = deepClone(arg_31_2)
-			arg_31_0.oldProps_[arg_31_1] = deepClone(arg_31_2)
+	if arg_33_0:Unequal(arg_33_0.oldProps_[arg_33_1], arg_33_2) then
+		if type(arg_33_2) == "table" then
+			arg_33_0.props_[arg_33_1] = deepClone(arg_33_2)
+			arg_33_0.oldProps_[arg_33_1] = deepClone(arg_33_2)
 		else
-			arg_31_0.props_[arg_31_1] = arg_31_2
-			arg_31_0.oldProps_[arg_31_1] = arg_31_2
+			arg_33_0.props_[arg_33_1] = arg_33_2
+			arg_33_0.oldProps_[arg_33_1] = arg_33_2
 		end
 
-		if not var_31_0 then
-			arg_31_0:OnViewPropChanged(arg_31_1, arg_31_2)
+		if not var_33_0 then
+			arg_33_0:OnViewPropChanged(arg_33_1, arg_33_2)
 		end
 	end
 end
 
-function var_0_0.GetViewProp(arg_32_0, arg_32_1)
-	arg_32_0.props_ = arg_32_0.props_ or {}
+function var_0_0.GetViewProp(arg_34_0, arg_34_1)
+	arg_34_0.props_ = arg_34_0.props_ or {}
 
-	return arg_32_0.props_[arg_32_1]
+	return arg_34_0.props_[arg_34_1]
 end
 
-function var_0_0.OnViewPropChanged(arg_33_0, arg_33_1, arg_33_2)
+function var_0_0.OnViewPropChanged(arg_35_0, arg_35_1, arg_35_2)
 	return
 end
 
-function var_0_0.OnUnload(arg_34_0)
-	if arg_34_0.currentUIState_ ~= var_0_3 then
-		arg_34_0:Dispose()
-		arg_34_0:Unload()
+function var_0_0.OnUnload(arg_36_0)
+	if arg_36_0.currentUIState_ ~= var_0_3 then
+		arg_36_0:Dispose()
+		arg_36_0:Unload()
 	end
 
-	arg_34_0.currentUIState_ = var_0_5
+	arg_36_0.currentUIState_ = var_0_5
 end
 
-function var_0_0.Unload(arg_35_0)
+function var_0_0.Unload(arg_37_0)
 	manager.gc:Collect()
 
-	if not isNil(arg_35_0.gameObject_) then
-		Object.Destroy(arg_35_0.gameObject_)
+	if not isNil(arg_37_0.gameObject_) then
+		Object.Destroy(arg_37_0.gameObject_)
 
-		arg_35_0.gameObject_ = nil
-		arg_35_0.transform_ = nil
+		arg_37_0.gameObject_ = nil
+		arg_37_0.transform_ = nil
 	end
 
-	arg_35_0.props_ = nil
-	arg_35_0.oldProps_ = nil
+	arg_37_0.props_ = nil
+	arg_37_0.oldProps_ = nil
 end
 
-function var_0_0.IsTop(arg_36_0)
-	return gameContext.routes_[#gameContext.routes_] == arg_36_0.routeName_
+function var_0_0.IsTop(arg_38_0)
+	return gameContext.routes_[#gameContext.routes_] == arg_38_0.routeName_
 end
 
-function var_0_0.Cacheable(arg_37_0)
+function var_0_0.Cacheable(arg_39_0)
 	return true
 end
 
-function var_0_0.SetRouteName(arg_38_0, arg_38_1)
-	arg_38_0.routeName_ = arg_38_1
+function var_0_0.SetRouteName(arg_40_0, arg_40_1)
+	arg_40_0.routeName_ = arg_40_1
 end
 
-function var_0_0.CheckWeakGuide(arg_39_0)
-	arg_39_0:RealCheckWeakGuide()
+function var_0_0.CheckWeakGuide(arg_41_0)
+	arg_41_0:RealCheckWeakGuide()
 end
 
-function var_0_0.RealCheckWeakGuide(arg_40_0)
+function var_0_0.RealCheckWeakGuide(arg_42_0)
 	if manager.guide:IsPlaying() then
 		return
 	end
 
-	local var_40_0, var_40_1 = GuideTool.CheckWeakGuide(arg_40_0.routeName_)
+	local var_42_0, var_42_1 = GuideTool.CheckWeakGuide(arg_42_0.routeName_)
 
-	if var_40_0 then
-		local var_40_2 = string.sub(var_40_1.guide_component[1], 1, 2)
-		local var_40_3
-		local var_40_4 = GuideTool.GetGuideComponentByRoute(arg_40_0, var_40_1.mask_component)
+	if var_42_0 then
+		local var_42_2 = string.sub(var_42_1.guide_component[1], 1, 2)
+		local var_42_3
+		local var_42_4 = GuideTool.GetGuideComponentByRoute(arg_42_0, var_42_1.mask_component)
 
-		local function var_40_5()
-			if var_40_3 then
-				manager.guide:ShowWeakView(var_40_1, var_40_3, var_40_4)
+		local function var_42_5()
+			if var_42_3 then
+				manager.guide:ShowWeakView(var_42_1, var_42_3, var_42_4)
 			else
-				NewPlayerGuideAction.FinishWeakGuide(var_40_1.id)
-				GuideTool.Log("未找到弱引导组件，弱引导id:" .. var_40_1.id)
+				NewPlayerGuideAction.FinishWeakGuide(var_42_1.id)
+				GuideTool.Log("未找到弱引导组件，弱引导id:" .. var_42_1.id)
 			end
 		end
 
-		if var_40_2 == "@@" then
-			local var_40_6
+		if var_42_2 == "@@" then
+			local var_42_6
 
-			var_40_6 = FrameTimer.New(function()
-				var_40_3 = arg_40_0:GetSpecialCom(var_40_1.guide_component)
+			var_42_6 = FrameTimer.New(function()
+				var_42_3 = arg_42_0:GetSpecialCom(var_42_1.guide_component)
 
-				var_40_5()
-				var_40_6:Stop()
+				var_42_5()
+				var_42_6:Stop()
 			end, 10, 1)
 
-			var_40_6:Start()
+			var_42_6:Start()
 		else
-			var_40_3 = GuideTool.GetGuideComponentByRoute(arg_40_0, var_40_1.guide_component)
+			var_42_3 = GuideTool.GetGuideComponentByRoute(arg_42_0, var_42_1.guide_component)
 
-			var_40_5()
+			var_42_5()
 		end
 	end
 end
 
-function var_0_0.GetSpecialCom(arg_43_0, arg_43_1)
+function var_0_0.GetSpecialCom(arg_45_0, arg_45_1)
 	return
 end
 
-function var_0_0.OnAsyncSceneLoaded(arg_44_0, arg_44_1)
+function var_0_0.OnAsyncSceneLoaded(arg_46_0, arg_46_1)
 	return
 end
 
-function var_0_0.HideWeakGuide(arg_45_0)
+function var_0_0.HideWeakGuide(arg_47_0)
 	manager.guide.weakView:Hide()
 end
 

@@ -129,15 +129,13 @@ function var_0_0.StopTimer(arg_12_0)
 end
 
 function var_0_0.StopVoice(arg_13_0)
-	if arg_13_0.ExcuteContext.isPlayingVoice then
-		arg_13_0.ExcuteContext.isPlayingVoice = false
-
+	if arg_13_0.ExcuteContext.isInExcuting then
 		manager.audio:StopVoiceImmediate()
 	end
 end
 
 function var_0_0.PauseVoice(arg_14_0)
-	if arg_14_0.ExcuteContext.isPlayingVoice then
+	if arg_14_0.ExcuteContext.isInExcuting then
 		manager.audio:PauseVoice()
 	end
 end
@@ -146,13 +144,15 @@ function var_0_0.RenderContentList(arg_15_0, arg_15_1, arg_15_2, arg_15_3)
 	arg_15_0:StopTimer()
 
 	if arg_15_0.ExcuteContext.isInExcuting then
-		arg_15_0.ExcuteContext.isInExcuting = false
+		arg_15_0:StopVoice()
 
 		if arg_15_0.ExcuteContext.callback then
 			arg_15_0.ExcuteContext.callback()
 
 			arg_15_0.ExcuteContext.callback = nil
 		end
+
+		arg_15_0.ExcuteContext.isInExcuting = false
 	end
 
 	arg_15_0.ExcuteContext.isInExcuting = true
@@ -168,29 +168,47 @@ function var_0_0.ShowContentList(arg_16_0, arg_16_1, arg_16_2, arg_16_3, arg_16_
 		arg_16_0:RenderContent(var_16_0, SandplayStoryTalkCfg[var_16_0].speaker_name, nil, arg_16_3, function()
 			arg_16_0:ShowContentList(arg_16_1, arg_16_2 + 1, arg_16_3, arg_16_4)
 		end)
-	elseif arg_16_4 then
-		arg_16_4()
-	end
-end
+	else
+		arg_16_0.ExcuteContext.isInExcuting = false
 
-function var_0_0.TryInterrupt(arg_18_0)
-	arg_18_0:StopTimer()
-
-	if arg_18_0.ExcuteContext.isInExcuting then
-		arg_18_0.ExcuteContext.isInExcuting = false
-
-		if arg_18_0.ExcuteContext.callback then
-			arg_18_0.ExcuteContext.callback()
-
-			arg_18_0.ExcuteContext.callback = nil
+		if arg_16_4 then
+			arg_16_4()
 		end
 	end
 end
 
-function var_0_0.Dispose(arg_19_0)
-	GameObject.Destroy(arg_19_0.gameObject_)
-	Asset.Unload(arg_19_0:GetUIName())
-	var_0_0.super.Dispose(arg_19_0)
+function var_0_0.TryDispose(arg_18_0)
+	if arg_18_0.ExcuteContext.isInExcuting then
+		return false
+	end
+
+	arg_18_0.ExcuteContext.isInExcuting = false
+
+	arg_18_0:Dispose()
+
+	return true
+end
+
+function var_0_0.TryInterrupt(arg_19_0)
+	arg_19_0:StopTimer()
+
+	if arg_19_0.ExcuteContext.isInExcuting then
+		arg_19_0:StopVoice()
+
+		arg_19_0.ExcuteContext.isInExcuting = false
+
+		if arg_19_0.ExcuteContext.callback then
+			arg_19_0.ExcuteContext.callback()
+
+			arg_19_0.ExcuteContext.callback = nil
+		end
+	end
+end
+
+function var_0_0.Dispose(arg_20_0)
+	GameObject.Destroy(arg_20_0.gameObject_)
+	Asset.Unload(arg_20_0:GetUIName())
+	var_0_0.super.Dispose(arg_20_0)
 end
 
 return var_0_0

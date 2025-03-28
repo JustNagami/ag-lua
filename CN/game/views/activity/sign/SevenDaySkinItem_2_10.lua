@@ -33,7 +33,7 @@ function var_0_0.RefreshView(arg_3_0, arg_3_1, arg_3_2)
 	arg_3_0.txt.text = var_3_1
 
 	if var_3_0 == 106001 then
-		arg_3_0.icon.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/106001")
+		arg_3_0.icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Portrait/106001")
 	else
 		arg_3_0.icon.sprite = ItemTools.getItemSprite(var_3_0)
 	end

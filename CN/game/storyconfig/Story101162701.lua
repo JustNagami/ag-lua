@@ -1607,6 +1607,8 @@
 			if arg_53_0 == 1 then
 				arg_51_0:Play116271014(arg_51_1)
 			end
+
+			arg_51_1:RecordChoiceLog(116271013, 116271014)
 		end
 
 		function arg_51_1.onSingleLineUpdate_(arg_54_0)

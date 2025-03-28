@@ -17,6 +17,7 @@ function var_0_0.InitUI(arg_2_0)
 	arg_2_0.jobController = ControllerUtil.GetController(arg_2_0.transform_, "work")
 	arg_2_0.skillController = ControllerUtil.GetController(arg_2_0.transform_, "skill")
 	arg_2_0.sameNameController = ControllerUtil.GetController(arg_2_0.transform_, "sameName")
+	arg_2_0.lockHeroController = arg_2_0.controllers_:GetController("lock")
 end
 
 function var_0_0.SetFunction(arg_3_0, arg_3_1)
@@ -51,35 +52,39 @@ function var_0_0.RefreshHeroInfo(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
 	arg_8_0.heroIcon_.sprite = DormHeroTools.GetBackHomeHeadSprite(arg_8_1)
 	arg_8_0.heroitemBtn_.interactable = true
 
-	local var_8_0 = DormData:GetHeroFatigue(arg_8_1)
+	local var_8_0 = BackHomeTools.CheckHeroIsLockForAnyFeatureByHeroID(arg_8_1)
 
-	arg_8_0.curText_.text = var_8_0
+	arg_8_0.lockHeroController:SetSelectedState(var_8_0 and "on" or "off")
+
+	local var_8_1 = DormData:GetHeroFatigue(arg_8_1)
+
+	arg_8_0.curText_.text = var_8_1
 	arg_8_0.maxText_.text = "/" .. GameSetting.canteen_hero_fatigue_max.value[1]
-	arg_8_0.progressImg_.fillAmount = 1 - math.min(var_8_0 / GameSetting.canteen_hero_fatigue_max.value[1], 1)
+	arg_8_0.progressImg_.fillAmount = 1 - math.min(var_8_1 / GameSetting.canteen_hero_fatigue_max.value[1], 1)
 
-	local var_8_1 = GameDisplayCfg.dorm_hero_fatigue_level.value
+	local var_8_2 = GameDisplayCfg.dorm_hero_fatigue_level.value
 
-	if var_8_0 <= var_8_1[1] then
+	if var_8_1 <= var_8_2[1] then
 		arg_8_0.fatigueController:SetSelectedState("lack")
-	elseif var_8_0 > var_8_1[1] and var_8_0 <= var_8_1[2] then
+	elseif var_8_1 > var_8_2[1] and var_8_1 <= var_8_2[2] then
 		arg_8_0.fatigueController:SetSelectedState("middle")
 	else
 		arg_8_0.fatigueController:SetSelectedState("full")
 	end
 
-	local var_8_2 = DormData:GetHeroTemplateInfo(arg_8_1)
+	local var_8_3 = DormData:GetHeroTemplateInfo(arg_8_1)
 
 	arg_8_0.jobController:SetSelectedState("false")
 
 	if not arg_8_0.showWork then
-		local var_8_3 = var_8_2.jobType
+		local var_8_4 = var_8_3.jobType
 
-		if var_8_3 then
+		if var_8_4 then
 			arg_8_0.jobController:SetSelectedState("true")
 
-			arg_8_0.jobText_.text = GetI18NText(CanteenTools:GetJobName(var_8_3))
+			arg_8_0.jobText_.text = GetI18NText(CanteenTools:GetJobName(var_8_4))
 
-			if var_8_2.hero_id ~= arg_8_1 then
+			if var_8_3.hero_id ~= arg_8_1 then
 				arg_8_0.selController:SetSelectedState("no")
 			end
 		elseif CanteenEntrustData:CheckHasChooseEntrustCharacter(arg_8_1) then
@@ -89,12 +94,12 @@ function var_0_0.RefreshHeroInfo(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
 		end
 	end
 
-	local var_8_4 = DormSkillData:CheckSkillCanOpen(arg_8_3, arg_8_1)
+	local var_8_5 = DormSkillData:CheckSkillCanOpen(arg_8_3, arg_8_1)
 
-	if #var_8_4 > 0 then
-		local var_8_5 = var_8_4[1]
+	if #var_8_5 > 0 then
+		local var_8_6 = var_8_5[1]
 
-		arg_8_0.iconImg_.sprite = CanteenTools.GetCanteenSkillSprite(var_8_5)
+		arg_8_0.iconImg_.sprite = CanteenTools.GetCanteenSkillSprite(var_8_6)
 
 		arg_8_0.skillController:SetSelectedState("true")
 	else
@@ -109,10 +114,10 @@ function var_0_0.RefreshHeroInfo(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
 		return
 	end
 
-	local var_8_6
+	local var_8_7
 
 	if arg_8_2 and not DormNpcTools:CheckIDIsNpc(arg_8_2) then
-		var_8_6 = HeroRecordCfg.get_id_list_by_hero_id[arg_8_2][1]
+		var_8_7 = HeroRecordCfg.get_id_list_by_hero_id[arg_8_2][1]
 	end
 
 	arg_8_0.archiveID = HeroRecordCfg.get_id_list_by_hero_id[arg_8_1][1]
@@ -121,15 +126,15 @@ function var_0_0.RefreshHeroInfo(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
 
 	if arg_8_2 == arg_8_1 then
 		arg_8_0.selController:SetSelectedState("sel")
-	elseif arg_8_0.archiveID == var_8_6 then
-		if not var_8_2.jobType then
+	elseif arg_8_0.archiveID == var_8_7 then
+		if not var_8_3.jobType then
 			arg_8_0.sameNameController:SetSelectedState("true")
 		end
 	else
 		arg_8_0.selController:SetSelectedState("normal")
 	end
 
-	if var_8_2.jobType and var_8_2.hero_id ~= arg_8_1 then
+	if var_8_3.jobType and var_8_3.hero_id ~= arg_8_1 then
 		arg_8_0.selController:SetSelectedState("no")
 
 		arg_8_0.heroitemBtn_.interactable = false
@@ -137,6 +142,10 @@ function var_0_0.RefreshHeroInfo(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
 end
 
 function var_0_0.RefreshNpcInfo(arg_9_0, arg_9_1, arg_9_2, arg_9_3)
+	arg_9_0.heroitemBtn_.interactable = true
+
+	arg_9_0.lockHeroController:SetSelectedState("off")
+
 	arg_9_0.heroIcon_.sprite = DormNpcTools:GetNpcHeadSprite(arg_9_1)
 
 	if DormNpcTools:GetNpcFatigue(arg_9_1) < 0 then

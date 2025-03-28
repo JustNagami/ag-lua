@@ -287,4 +287,51 @@ function var_0_0.GetRoleUpPoolID(arg_17_0, arg_17_1)
 	return false
 end
 
+function var_0_0.GoToSelectUpHeroView(arg_18_0, arg_18_1, arg_18_2, arg_18_3)
+	local var_18_0 = DrawPoolCfg[arg_18_1]
+
+	if var_18_0.is_grid_select == 1 then
+		gameContext:Go("/drawAllHeroSelect", {
+			poolId = arg_18_1,
+			heroIdList = var_18_0.optional_detail,
+			isFirst = arg_18_3
+		})
+
+		return
+	end
+
+	if var_18_0.pool_selected_type == 2 then
+		if var_18_0.pool_type == 1 then
+			gameContext:Go("/newbieDrawHeroSelect", {
+				poolId = arg_18_1,
+				heroIdList = var_18_0.optional_detail
+			})
+		else
+			gameContext:Go("/drawAllHeroSelect", {
+				poolId = arg_18_1,
+				heroIdList = var_18_0.optional_detail,
+				isFirst = arg_18_3
+			})
+		end
+	elseif var_18_0.pool_selected_type == 8 then
+		gameContext:Go("/newbieDrawHeroSelect", {
+			poolId = arg_18_1,
+			heroIdList = var_18_0.optional_detail
+		})
+	elseif var_18_0.pool_selected_type == 9 then
+		gameContext:Go("/drawSelect", {
+			poolID = arg_18_1
+		})
+	elseif var_18_0.pool_selected_type == 1 then
+		if table.indexof(var_18_0.optional_lists_poolId, arg_18_0.showId) == false then
+			return
+		end
+
+		gameContext:Go("/newbieDrawHeroSelect", {
+			poolId = arg_18_1,
+			heroIdList = var_18_0.optional_detail
+		})
+	end
+end
+
 return var_0_0

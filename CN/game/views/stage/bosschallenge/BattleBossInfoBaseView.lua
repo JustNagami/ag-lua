@@ -252,7 +252,7 @@ function var_0_0.InitBackScene(arg_21_0)
 	local var_21_2 = GameDisplayCfg.boss_background_pos.scale
 
 	arg_21_0.backGroundTrs_.localScale = Vector3(var_21_2[1], var_21_2[2], var_21_2[3])
-	arg_21_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas("TextureBg/Challenge_Boss/" .. CameraCfg.bossChallenge.pictureName)
+	arg_21_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = pureGetSpriteWithoutAtlas("TextureBg/Challenge_Boss/" .. CameraCfg.bossChallenge.pictureName)
 end
 
 function var_0_0.DestroyBackScene(arg_22_0)

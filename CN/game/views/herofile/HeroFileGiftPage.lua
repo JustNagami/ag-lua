@@ -516,176 +516,137 @@ function var_0_0.RefreshExpProcess(arg_27_0, arg_27_1)
 	end
 end
 
-function var_0_0.PlayVoice(arg_28_0)
-	if arg_28_0.voiceCoolDown_ then
+local function var_0_5(arg_28_0)
+	if arg_28_0 and arg_28_0 ~= 0 then
+		for iter_28_0, iter_28_1 in ipairs(HeroVoiceCfg.get_id_list_by_file.emotion) do
+			local var_28_0 = HeroVoiceCfg[iter_28_1]
+
+			if var_28_0.use_skin_id == arg_28_0 then
+				return var_28_0
+			end
+		end
+	end
+end
+
+function var_0_0.PlayVoice(arg_29_0)
+	if arg_29_0.voiceCoolDown_ then
 		return
 	end
 
-	arg_28_0.voiceCoolDown_ = true
+	arg_29_0.voiceCoolDown_ = true
 
-	local var_28_0 = HeroVoiceCfg.get_id_list_by_file.emotion[1]
+	local var_29_0 = HeroVoiceCfg.get_id_list_by_file.emotion[1]
 
 	SDKTools.SendMessageToSDK("hero_sound", {
-		hero_id = arg_28_0.curHeroID_,
-		sound_id = var_28_0
+		hero_id = arg_29_0.curHeroID_,
+		sound_id = var_29_0
 	})
-	arg_28_0:StopVoice()
+	arg_29_0:StopVoice()
 
-	arg_28_0.delayPlayTimer_ = Timer.New(function()
+	arg_29_0.delayPlayTimer_ = Timer.New(function()
 		if manager.audio:IsStoppedOfVoice() then
-			arg_28_0.delayPlayTimer_:Stop()
+			arg_29_0.delayPlayTimer_:Stop()
 
-			arg_28_0.delayPlayTimer_ = nil
+			arg_29_0.delayPlayTimer_ = nil
 
-			local var_29_0 = arg_28_0.curHeroID_
+			local var_30_0 = arg_29_0.curHeroID_
+			local var_30_1 = HeroData:GetHeroData(var_30_0)
+			local var_30_2 = nullable(var_30_1, "using_skin")
+			local var_30_3 = var_0_5(var_30_2)
 
-			if HeroVoiceCfg[var_28_0].use_skin_id and HeroVoiceCfg[var_28_0].use_skin_id ~= 0 then
-				var_29_0 = HeroVoiceCfg[var_28_0].use_skin_id
+			if var_30_3 then
+				var_30_0 = var_30_3.use_skin_id
 			end
 
-			HeroTools.PlayVoice(var_29_0, HeroVoiceCfg[var_28_0].file, HeroVoiceCfg[var_28_0].type)
+			HeroTools.PlayVoice(var_30_0, HeroVoiceCfg[var_29_0].file, HeroVoiceCfg[var_29_0].type)
 
-			local var_29_1 = HeroTools.GetTalkLength(var_29_0, HeroVoiceCfg[var_28_0].file, HeroVoiceCfg[var_28_0].type)
-			local var_29_2 = math.max(var_29_1, 0.017)
+			local var_30_4 = HeroTools.GetTalkLength(var_30_0, HeroVoiceCfg[var_29_0].file, HeroVoiceCfg[var_29_0].type)
+			local var_30_5 = math.max(var_30_4, 0.017)
 
-			arg_28_0.timer_ = TimeTools.StartAfterSeconds(var_29_2 / 1000, function()
-				arg_28_0:StopVoice()
+			arg_29_0.timer_ = TimeTools.StartAfterSeconds(var_30_5 / 1000, function()
+				arg_29_0:StopVoice()
 			end, {})
 		end
 	end, 0.033, -1)
 
-	arg_28_0.delayPlayTimer_:Start()
+	arg_29_0.delayPlayTimer_:Start()
 end
 
-function var_0_0.StopVoice(arg_31_0)
-	if arg_31_0.delayPlayTimer_ then
-		arg_31_0.delayPlayTimer_:Stop()
+function var_0_0.StopVoice(arg_32_0)
+	if arg_32_0.delayPlayTimer_ then
+		arg_32_0.delayPlayTimer_:Stop()
 
-		arg_31_0.delayPlayTimer_ = nil
+		arg_32_0.delayPlayTimer_ = nil
 	end
 
 	manager.audio:StopVoiceImmediate()
 
-	if arg_31_0.timer_ then
-		arg_31_0.timer_:Stop()
+	if arg_32_0.timer_ then
+		arg_32_0.timer_:Stop()
 
-		arg_31_0.timer_ = nil
-		arg_31_0.voiceCoolDown_ = false
+		arg_32_0.timer_ = nil
+		arg_32_0.voiceCoolDown_ = false
 	end
 end
 
-function var_0_0.OnHeroTrustUpdate(arg_32_0)
-	arg_32_0:UpdateGiftData()
-	arg_32_0:RefreshExpProcess()
-
-	local var_32_0, var_32_1, var_32_2 = ArchiveData:GetTrustLevel(arg_32_0.curHeroID_)
-
-	Debug.Log("角色的交心等级是和经验是" .. var_32_0 .. " " .. var_32_1)
-	arg_32_0:PlayVoice()
-
-	if var_32_0 >= HeroConst.HERO_TRUST_LV_MAX then
-		ShowTips("HERO_LOVE_LEVEL_MAX")
-	else
-		ShowTips("HERO_LOVE_EXP_UP")
-	end
-
-	if var_32_0 > 0 then
-		arg_32_0.likeStateController_:SetSelectedState("trust")
-
-		local var_32_3 = HeroTrustMoodCfg[var_32_2]
-
-		if var_32_3 then
-			arg_32_0.moodTitleText_.text = var_32_3.name
-			arg_32_0.moodBuffText_.text = var_32_3.desc
-
-			arg_32_0.moodStateController_:SetSelectedState(var_32_2)
-		end
-	else
-		arg_32_0.likeStateController_:SetSelectedState("like")
-	end
-
-	if var_32_0 >= HeroConst.HERO_TRUST_LV_MAX then
-		arg_32_0.likePanelStateController_:SetSelectedState("max")
-
-		arg_32_0.impressionText_.text = HeroCfg[arg_32_0.curHeroID_].impression
-	elseif var_32_1 >= HeroTrustLevelCfg[var_32_0].exp then
-		arg_32_0.likePanelStateController_:SetSelectedState("levelup")
-		arg_32_0.likeStateController_:SetSelectedState("like")
-
-		arg_32_0.trustPriorText_.text = ArchiveTools.GetTrustLvDes(var_32_0)
-		arg_32_0.trustNextText_.text = ArchiveTools.GetTrustLvDes(var_32_0 + 1)
-
-		local var_32_4 = HeroTrustCfg.get_id_list_by_hero_id[arg_32_0.curHeroID_][var_32_0]
-		local var_32_5 = HeroTrustCfg[var_32_4]
-
-		arg_32_0.taskList_ = var_32_5.condition_list
-
-		arg_32_0.trustLvUpTaskLuaUIList_:StartScroll(#arg_32_0.taskList_)
-
-		local var_32_6 = var_32_5.reward_item_list[1]
-
-		if var_32_6 then
-			local var_32_7 = var_32_6[1]
-			local var_32_8 = var_32_6[2]
-
-			arg_32_0.trustLvTipsText_.text = GetTipsF("HERO_TRUST_UP_LV_REWARD", ArchiveTools.GetTrustLvDes(var_32_0 + 1))
-			arg_32_0.trustLvRewardText_.text = ItemTools.getItemName(var_32_7) .. " X" .. var_32_8
-			arg_32_0.trustLvRewardImg_.sprite = ItemTools.getItemSprite(var_32_7)
-		end
-	elseif #arg_32_0.giftList_ > 0 then
-		arg_32_0.likePanelStateController_:SetSelectedState("gift")
-
-		if arg_32_0.curGiftIndex_ > #arg_32_0.giftList_ then
-			arg_32_0.curGiftIndex_ = #arg_32_0.giftList_
-		elseif arg_32_0.curGiftIndex_ < 1 then
-			arg_32_0.curGiftIndex_ = 1
-		end
-
-		arg_32_0.giftLuaUIList_:StartScroll(#arg_32_0.giftList_)
-		arg_32_0:RefreshGiftInfo()
-	else
-		arg_32_0.likePanelStateController_:SetSelectedState("empty")
-	end
-end
-
-function var_0_0.OnSendGift(arg_33_0)
+function var_0_0.OnHeroTrustUpdate(arg_33_0)
 	arg_33_0:UpdateGiftData()
 	arg_33_0:RefreshExpProcess()
+
+	local var_33_0, var_33_1, var_33_2 = ArchiveData:GetTrustLevel(arg_33_0.curHeroID_)
+
+	Debug.Log("角色的交心等级是和经验是" .. var_33_0 .. " " .. var_33_1)
 	arg_33_0:PlayVoice()
 
-	if ArchiveData:GetArchive(arg_33_0.curRecordID_).exp >= var_0_2() then
+	if var_33_0 >= HeroConst.HERO_TRUST_LV_MAX then
 		ShowTips("HERO_LOVE_LEVEL_MAX")
 	else
 		ShowTips("HERO_LOVE_EXP_UP")
 	end
 
-	if HeroRelationNetCfg.get_id_list_by_hero_id[arg_33_0.curHeroID_] then
-		if ArchiveData:GetArchive(arg_33_0.curRecordID_).exp >= var_0_2() then
-			if HeroTools.GetHeroIsUnlock(arg_33_0.curHeroID_) then
-				arg_33_0.likePanelStateController_:SetSelectedState("canbreak")
-			else
-				arg_33_0.likePanelStateController_:SetSelectedState("notbreak")
+	if var_33_0 > 0 then
+		arg_33_0.likeStateController_:SetSelectedState("trust")
 
-				local var_33_0 = HeroCfg[arg_33_0.curHeroID_]
+		local var_33_3 = HeroTrustMoodCfg[var_33_2]
 
-				arg_33_0.notbreakTipText_.text = GetTipsF("HERO_TRUST_BREAK_HERO_LOCK", string.format("%s·%s", var_33_0.name, var_33_0.suffix))
-			end
-		elseif #arg_33_0.giftList_ > 0 then
-			arg_33_0.likePanelStateController_:SetSelectedState("gift")
+		if var_33_3 then
+			arg_33_0.moodTitleText_.text = var_33_3.name
+			arg_33_0.moodBuffText_.text = var_33_3.desc
 
-			if arg_33_0.curGiftIndex_ > #arg_33_0.giftList_ then
-				arg_33_0.curGiftIndex_ = #arg_33_0.giftList_
-			elseif arg_33_0.curGiftIndex_ < 1 then
-				arg_33_0.curGiftIndex_ = 1
-			end
-
-			arg_33_0.giftLuaUIList_:StartScroll(#arg_33_0.giftList_)
-			arg_33_0:RefreshGiftInfo()
-		else
-			arg_33_0.likePanelStateController_:SetSelectedState("empty")
+			arg_33_0.moodStateController_:SetSelectedState(var_33_2)
 		end
-	elseif ArchiveData:GetArchive(arg_33_0.curRecordID_).exp >= var_0_2() then
+	else
+		arg_33_0.likeStateController_:SetSelectedState("like")
+	end
+
+	if var_33_0 >= HeroConst.HERO_TRUST_LV_MAX then
 		arg_33_0.likePanelStateController_:SetSelectedState("max")
+
+		arg_33_0.impressionText_.text = HeroCfg[arg_33_0.curHeroID_].impression
+	elseif var_33_1 >= HeroTrustLevelCfg[var_33_0].exp then
+		arg_33_0.likePanelStateController_:SetSelectedState("levelup")
+		arg_33_0.likeStateController_:SetSelectedState("like")
+
+		arg_33_0.trustPriorText_.text = ArchiveTools.GetTrustLvDes(var_33_0)
+		arg_33_0.trustNextText_.text = ArchiveTools.GetTrustLvDes(var_33_0 + 1)
+
+		local var_33_4 = HeroTrustCfg.get_id_list_by_hero_id[arg_33_0.curHeroID_][var_33_0]
+		local var_33_5 = HeroTrustCfg[var_33_4]
+
+		arg_33_0.taskList_ = var_33_5.condition_list
+
+		arg_33_0.trustLvUpTaskLuaUIList_:StartScroll(#arg_33_0.taskList_)
+
+		local var_33_6 = var_33_5.reward_item_list[1]
+
+		if var_33_6 then
+			local var_33_7 = var_33_6[1]
+			local var_33_8 = var_33_6[2]
+
+			arg_33_0.trustLvTipsText_.text = GetTipsF("HERO_TRUST_UP_LV_REWARD", ArchiveTools.GetTrustLvDes(var_33_0 + 1))
+			arg_33_0.trustLvRewardText_.text = ItemTools.getItemName(var_33_7) .. " X" .. var_33_8
+			arg_33_0.trustLvRewardImg_.sprite = ItemTools.getItemSprite(var_33_7)
+		end
 	elseif #arg_33_0.giftList_ > 0 then
 		arg_33_0.likePanelStateController_:SetSelectedState("gift")
 
@@ -702,22 +663,76 @@ function var_0_0.OnSendGift(arg_33_0)
 	end
 end
 
-function var_0_0.OnHeroModify(arg_34_0)
-	local var_34_0, var_34_1, var_34_2 = ArchiveData:GetTrustLevel(arg_34_0.curHeroID_)
-	local var_34_3 = HeroTrustMoodCfg[var_34_2]
+function var_0_0.OnSendGift(arg_34_0)
+	arg_34_0:UpdateGiftData()
+	arg_34_0:RefreshExpProcess()
+	arg_34_0:PlayVoice()
 
-	if var_34_3 then
-		arg_34_0.moodTitleText_.text = var_34_3.name
-		arg_34_0.moodBuffText_.text = var_34_3.desc
+	if ArchiveData:GetArchive(arg_34_0.curRecordID_).exp >= var_0_2() then
+		ShowTips("HERO_LOVE_LEVEL_MAX")
+	else
+		ShowTips("HERO_LOVE_EXP_UP")
+	end
 
-		arg_34_0.moodStateController_:SetSelectedState(var_34_2)
+	if HeroRelationNetCfg.get_id_list_by_hero_id[arg_34_0.curHeroID_] then
+		if ArchiveData:GetArchive(arg_34_0.curRecordID_).exp >= var_0_2() then
+			if HeroTools.GetHeroIsUnlock(arg_34_0.curHeroID_) then
+				arg_34_0.likePanelStateController_:SetSelectedState("canbreak")
+			else
+				arg_34_0.likePanelStateController_:SetSelectedState("notbreak")
+
+				local var_34_0 = HeroCfg[arg_34_0.curHeroID_]
+
+				arg_34_0.notbreakTipText_.text = GetTipsF("HERO_TRUST_BREAK_HERO_LOCK", string.format("%s·%s", var_34_0.name, var_34_0.suffix))
+			end
+		elseif #arg_34_0.giftList_ > 0 then
+			arg_34_0.likePanelStateController_:SetSelectedState("gift")
+
+			if arg_34_0.curGiftIndex_ > #arg_34_0.giftList_ then
+				arg_34_0.curGiftIndex_ = #arg_34_0.giftList_
+			elseif arg_34_0.curGiftIndex_ < 1 then
+				arg_34_0.curGiftIndex_ = 1
+			end
+
+			arg_34_0.giftLuaUIList_:StartScroll(#arg_34_0.giftList_)
+			arg_34_0:RefreshGiftInfo()
+		else
+			arg_34_0.likePanelStateController_:SetSelectedState("empty")
+		end
+	elseif ArchiveData:GetArchive(arg_34_0.curRecordID_).exp >= var_0_2() then
+		arg_34_0.likePanelStateController_:SetSelectedState("max")
+	elseif #arg_34_0.giftList_ > 0 then
+		arg_34_0.likePanelStateController_:SetSelectedState("gift")
+
+		if arg_34_0.curGiftIndex_ > #arg_34_0.giftList_ then
+			arg_34_0.curGiftIndex_ = #arg_34_0.giftList_
+		elseif arg_34_0.curGiftIndex_ < 1 then
+			arg_34_0.curGiftIndex_ = 1
+		end
+
+		arg_34_0.giftLuaUIList_:StartScroll(#arg_34_0.giftList_)
+		arg_34_0:RefreshGiftInfo()
+	else
+		arg_34_0.likePanelStateController_:SetSelectedState("empty")
 	end
 end
 
-function var_0_0.Dispose(arg_35_0)
-	arg_35_0.giftLuaUIList_:Dispose()
-	arg_35_0.trustLvUpTaskLuaUIList_:Dispose()
-	var_0_0.super.Dispose(arg_35_0)
+function var_0_0.OnHeroModify(arg_35_0)
+	local var_35_0, var_35_1, var_35_2 = ArchiveData:GetTrustLevel(arg_35_0.curHeroID_)
+	local var_35_3 = HeroTrustMoodCfg[var_35_2]
+
+	if var_35_3 then
+		arg_35_0.moodTitleText_.text = var_35_3.name
+		arg_35_0.moodBuffText_.text = var_35_3.desc
+
+		arg_35_0.moodStateController_:SetSelectedState(var_35_2)
+	end
+end
+
+function var_0_0.Dispose(arg_36_0)
+	arg_36_0.giftLuaUIList_:Dispose()
+	arg_36_0.trustLvUpTaskLuaUIList_:Dispose()
+	var_0_0.super.Dispose(arg_36_0)
 end
 
 return var_0_0

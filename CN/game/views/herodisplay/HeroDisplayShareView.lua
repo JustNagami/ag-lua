@@ -19,13 +19,15 @@ function var_0_1.SetData(arg_2_0, arg_2_1, arg_2_2, arg_2_3)
 end
 
 function var_0_1.OnSnape(arg_3_0, arg_3_1)
+	local var_3_0
+
 	if GameToSDK.PLATFORM_ID == 3 then
 		-- block empty
 	else
-		local var_3_0 = tonumber(SettingData:GetSettingData().pic.resolution)
+		var_3_0 = tonumber(SettingData:GetSettingData().pic.resolution)
 	end
 
-	local var_3_1, var_3_2 = SettingTools.GetSettingScreenSize(resolution)
+	local var_3_1, var_3_2 = SettingTools.GetSettingScreenSize(var_3_0)
 
 	if not SDKTools.IsSDK() then
 		var_3_1, var_3_2 = _G.SCREEN_WIDTH, _G.SCREEN_HEIGHT
@@ -41,7 +43,7 @@ function var_0_1.OnSnape(arg_3_0, arg_3_1)
 
 	local var_3_3 = arg_3_0.screenSnap_:GetSprite()
 
-	if GameToSDK.IsEditorOrPcPlatform() then
+	if GameToSDK.IsPCPlatform() then
 		SetActive(arg_3_0.imageShotGo_, false)
 		SetActive(arg_3_0.imageShotGoPc_, true)
 
@@ -73,10 +75,7 @@ function var_0_1.OnEnter(arg_4_0)
 		SetActive(arg_4_0.buttonTwiiter_.transform.gameObject, true)
 	end
 
-	if not GameToSDK.IsEditorOrPcPlatform() then
-		SetActive(arg_4_0.buttonPath_.transform.gameObject, false)
-	end
-
+	SetActive(arg_4_0.buttonPath_.transform.gameObject, GameToSDK.IsEditorOrPcPlatform())
 	manager.notify:RegistListener(SHARE_CALLBACK, arg_4_0.shareCallbackHandler_)
 end
 

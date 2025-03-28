@@ -60,33 +60,36 @@ function var_0_0.GetJumpDataByHeroSpecialType(arg_3_0)
 
 	for iter_3_0, iter_3_1 in pairs(var_3_0) do
 		local var_3_3 = DrawPoolCfg[iter_3_1]
+		local var_3_4 = var_3_3.excluded_group
 
 		if var_3_3 then
-			local var_3_4 = var_3_3.pool_type
-			local var_3_5 = var_3_3.pool_show_type
-			local var_3_6 = DrawSettingCfg[var_3_4]
+			local var_3_5 = var_3_3.pool_type
+			local var_3_6 = var_3_3.pool_show_type
+			local var_3_7 = DrawSettingCfg[var_3_5]
 
-			if var_3_6 then
-				local var_3_7 = var_3_6.pool_id
+			if var_3_7 then
+				local var_3_8 = var_3_7.pool_id
 
-				if var_3_7 ~= "" then
-					for iter_3_2, iter_3_3 in pairs(var_3_7) do
-						local var_3_8 = DrawItemCfg.get_id_list_by_pool_id[iter_3_3] or {}
+				if var_3_8 ~= "" then
+					for iter_3_2, iter_3_3 in pairs(var_3_8) do
+						local var_3_9 = DrawItemCfg.get_id_list_by_pool_id[iter_3_3] or {}
 
-						for iter_3_4, iter_3_5 in ipairs(var_3_8) do
-							local var_3_9 = DrawItemCfg[iter_3_5] and DrawItemCfg[iter_3_5].item_id or 0
+						for iter_3_4, iter_3_5 in ipairs(var_3_9) do
+							local var_3_10 = DrawItemCfg[iter_3_5] and DrawItemCfg[iter_3_5].item_id or 0
 
-							if (ItemCfg[arg_3_0] and ItemCfg[arg_3_0].hero_id or 0) == var_3_9 and not var_3_2[var_3_5] and SystemLinkCfg[var_3_1[var_3_5]] then
-								if var_3_4 == 8 then
+							if (ItemCfg[arg_3_0] and ItemCfg[arg_3_0].hero_id or 0) == var_3_10 and not var_3_2[var_3_6] and SystemLinkCfg[var_3_1[var_3_6]] then
+								if var_3_5 == 8 then
 									if not DrawData:GetNewbieChooseDrawFlag() then
-										var_3_2[var_3_5] = {
-											var_3_1[var_3_5],
+										var_3_2[var_3_6] = {
+											var_3_1[var_3_6],
 											iter_3_1
 										}
 									end
+								elseif var_3_4[1][1] and var_3_4[1][1] == var_3_10 then
+									-- block empty
 								else
-									var_3_2[var_3_5] = {
-										var_3_1[var_3_5],
+									var_3_2[var_3_6] = {
+										var_3_1[var_3_6],
 										iter_3_1
 									}
 								end
@@ -98,13 +101,13 @@ function var_0_0.GetJumpDataByHeroSpecialType(arg_3_0)
 		end
 	end
 
-	local var_3_10 = {}
+	local var_3_11 = {}
 
 	for iter_3_6, iter_3_7 in pairs(var_3_2) do
-		table.insert(var_3_10, iter_3_7)
+		table.insert(var_3_11, iter_3_7)
 	end
 
-	return #var_3_10 > 0, var_3_10
+	return #var_3_11 > 0, var_3_11
 end
 
 function var_0_0.GetJumpDataByServantSpecialType(arg_4_0)

@@ -2540,6 +2540,8 @@
 			if arg_76_0 == 1 then
 				arg_74_0:Play317312019(arg_74_1)
 			end
+
+			arg_74_1:RecordChoiceLog(317312018, 317312019)
 		end
 
 		function arg_74_1.onSingleLineUpdate_(arg_77_0)
@@ -2589,6 +2591,8 @@
 				SetActive(arg_74_1.allBtn_.gameObject, true)
 				arg_74_1.hideBtnsController_:SetSelectedIndex(1)
 				manager.video:Dispose()
+
+				arg_74_1.isInLoopVideo = false
 			end
 
 			local var_77_9 = 1
@@ -2631,6 +2635,8 @@
 				SetActive(arg_78_1.allBtn_.gameObject, true)
 				arg_78_1.hideBtnsController_:SetSelectedIndex(0)
 				manager.video:Dispose()
+
+				arg_78_1.isInLoopVideo = false
 			end
 
 			local var_81_1 = 0.1
@@ -3855,6 +3861,8 @@
 				SetActive(arg_112_1.allBtn_.gameObject, true)
 				arg_112_1.hideBtnsController_:SetSelectedIndex(0)
 				manager.video:Dispose()
+
+				arg_112_1.isInLoopVideo = false
 			end
 
 			local var_115_49 = 0.0166666666666667
@@ -4515,6 +4523,8 @@
 			if arg_137_0 == 1 then
 				arg_135_0:Play317312031(arg_135_1)
 			end
+
+			arg_135_1:RecordChoiceLog(317312030, 317312031)
 		end
 
 		function arg_135_1.onSingleLineUpdate_(arg_138_0)
@@ -5555,6 +5565,8 @@
 			if arg_165_0 == 1 then
 				arg_163_0:Play317312038(arg_163_1)
 			end
+
+			arg_163_1:RecordChoiceLog(317312037, 317312038)
 		end
 
 		function arg_163_1.onSingleLineUpdate_(arg_166_0)
@@ -5776,6 +5788,8 @@
 			if arg_173_0 == 1 then
 				arg_171_0:Play317312040(arg_171_1)
 			end
+
+			arg_171_1:RecordChoiceLog(317312039, 317312040)
 		end
 
 		function arg_171_1.onSingleLineUpdate_(arg_174_0)
@@ -5997,6 +6011,8 @@
 			if arg_181_0 == 1 then
 				arg_179_0:Play317312042(arg_179_1)
 			end
+
+			arg_179_1:RecordChoiceLog(317312041, 317312042)
 		end
 
 		function arg_179_1.onSingleLineUpdate_(arg_182_0)
@@ -6218,6 +6234,8 @@
 			if arg_189_0 == 1 then
 				arg_187_0:Play317312044(arg_187_1)
 			end
+
+			arg_187_1:RecordChoiceLog(317312043, 317312044)
 		end
 
 		function arg_187_1.onSingleLineUpdate_(arg_190_0)
@@ -7931,6 +7949,8 @@
 			if arg_249_0 == 1 then
 				arg_247_0:Play317312059(arg_247_1)
 			end
+
+			arg_247_1:RecordChoiceLog(317312058, 317312059)
 		end
 
 		function arg_247_1.onSingleLineUpdate_(arg_250_0)

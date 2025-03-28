@@ -91,7 +91,9 @@ function var_0_0.StartFade(arg_5_0, arg_5_1)
 end
 
 function var_0_0.ShowContent(arg_7_0)
-	if arg_7_0.curCtx.content then
+	arg_7_0:Load()
+
+	if arg_7_0.curCtx.content and arg_7_0.curCtx.content > 0 then
 		arg_7_0.stroyPage.textComp.text = SandplayStoryTalkCfg[tonumber(arg_7_0.curCtx.content)].dialogue_text
 	else
 		arg_7_0.stroyPage.textComp.text = ""
@@ -127,6 +129,8 @@ function var_0_0.ShowContent(arg_7_0)
 end
 
 function var_0_0.ContinueFade(arg_9_0)
+	arg_9_0:Load()
+
 	arg_9_0.stroyPage.textEffect_.percent = 0
 
 	arg_9_0.stroyPage.textEffect_:SetDirty()
@@ -148,11 +152,13 @@ function var_0_0.ContinueFade(arg_9_0)
 			if var_10_0 >= arg_9_0.curCtx.outTimer then
 				arg_9_0:StopTimer()
 
-				if arg_9_0.curCtx.done then
-					arg_9_0.curCtx.done()
-				end
+				local var_10_2 = arg_9_0.curCtx.done
 
 				arg_9_0:Reset()
+
+				if var_10_2 then
+					var_10_2()
+				end
 			end
 		end, 1, -1)
 
@@ -170,7 +176,9 @@ function var_0_0.Reset(arg_12_0)
 	arg_12_0.curCtx = nil
 	arg_12_0.startTimestamp = -1
 
-	arg_12_0.stroyPage.gameObject:SetActive(false)
+	if arg_12_0.stroyPage then
+		arg_12_0.stroyPage.gameObject:SetActive(false)
+	end
 end
 
 function var_0_0.Dispose(arg_13_0)

@@ -8,10 +8,12 @@ function var_0_1.SetActive(arg_1_0, arg_1_1)
 end
 
 function var_0_1.UIName(arg_2_0)
-	if GameToSDK.PLATFORM_ID == 0 or GameToSDK.PLATFORM_ID == 1 then
+	if GameToSDK.PLATFORM_ID == 3 then
+		return "Widget/System/Setting/BattlePanelSetting_PC_Variant"
+	elseif GameToSDK.PLATFORM_ID == 0 or GameToSDK.PLATFORM_ID == 1 or GameToSDK.PLATFORM_ID == 4 then
 		return "Widget/System/Setting/BattlePanelSetting"
 	else
-		return "Widget/System/Setting/BattlePanelSetting_PC_Variant"
+		return "Widget/System/Setting/BattlePanelSetting"
 	end
 end
 

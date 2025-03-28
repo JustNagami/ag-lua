@@ -177,7 +177,7 @@
 				local var_4_34 = ""
 				local var_4_35 = manager.audio:GetAudioName("bgm_activity_3_6_story_new_industry", "bgm_activity_3_6_story_new_industry")
 
-				if var_4_35 ~= "" and arg_1_1.state_ ~= "playing" then
+				if var_4_35 ~= "" then
 					if arg_1_1.bgmTxt_.text ~= var_4_35 and arg_1_1.bgmTxt_.text ~= "" then
 						if arg_1_1.bgmTxt2_.text ~= "" then
 							arg_1_1.bgmTxt_.text = arg_1_1.bgmTxt2_.text

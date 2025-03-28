@@ -42,7 +42,7 @@ end
 function var_0_0.SetMySelfData(arg_8_0, arg_8_1)
 	local var_8_0 = PlayerData:GetPlayerInfo()
 
-	arg_8_0.frame_.sprite = getSpriteWithoutAtlas("TextureConfig/Frame/" .. var_8_0.icon_frame)
+	arg_8_0.frame_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Frame/" .. var_8_0.icon_frame)
 	arg_8_0.name_.text = GetI18NText(var_8_0.nick)
 	arg_8_0.icon_.sprite = ItemTools.getItemSprite(var_8_0 and var_8_0.portrait)
 	arg_8_0.battleId_ = arg_8_1

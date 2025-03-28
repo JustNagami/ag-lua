@@ -5367,13 +5367,13 @@
 
 			if var_141_20 <= arg_138_1.time_ and arg_138_1.time_ < var_141_20 + var_141_23 then
 				local var_141_24 = (arg_138_1.time_ - var_141_20) / var_141_23
-				local var_141_25 = Vector3.New(390, -340, -288)
+				local var_141_25 = Vector3.New(-585.3, -349.1, -288)
 
 				var_141_19.localPosition = Vector3.Lerp(arg_138_1.var_.moveOldPos1015, var_141_25, var_141_24)
 			end
 
 			if arg_138_1.time_ >= var_141_20 + var_141_23 and arg_138_1.time_ < var_141_20 + var_141_23 + arg_141_0 then
-				var_141_19.localPosition = Vector3.New(390, -340, -288)
+				var_141_19.localPosition = Vector3.New(-585.3, -349.1, -288)
 			end
 
 			local var_141_26 = 0
@@ -6120,13 +6120,13 @@
 
 			if var_153_17 <= arg_150_1.time_ and arg_150_1.time_ < var_153_17 + var_153_20 then
 				local var_153_21 = (arg_150_1.time_ - var_153_17) / var_153_20
-				local var_153_22 = Vector3.New(390, -340, -288)
+				local var_153_22 = Vector3.New(-585.3, -349.1, -288)
 
 				var_153_16.localPosition = Vector3.Lerp(arg_150_1.var_.moveOldPos1015, var_153_22, var_153_21)
 			end
 
 			if arg_150_1.time_ >= var_153_17 + var_153_20 and arg_150_1.time_ < var_153_17 + var_153_20 + arg_153_0 then
-				var_153_16.localPosition = Vector3.New(390, -340, -288)
+				var_153_16.localPosition = Vector3.New(-585.3, -349.1, -288)
 			end
 
 			local var_153_23 = arg_150_1.actors_["1060"].transform
@@ -7352,13 +7352,13 @@
 
 			if var_177_24 <= arg_174_1.time_ and arg_174_1.time_ < var_177_24 + var_177_27 then
 				local var_177_28 = (arg_174_1.time_ - var_177_24) / var_177_27
-				local var_177_29 = Vector3.New(390, -340, -288)
+				local var_177_29 = Vector3.New(-585.3, -349.1, -288)
 
 				var_177_23.localPosition = Vector3.Lerp(arg_174_1.var_.moveOldPos1015, var_177_29, var_177_28)
 			end
 
 			if arg_174_1.time_ >= var_177_24 + var_177_27 and arg_174_1.time_ < var_177_24 + var_177_27 + arg_177_0 then
-				var_177_23.localPosition = Vector3.New(390, -340, -288)
+				var_177_23.localPosition = Vector3.New(-585.3, -349.1, -288)
 			end
 
 			local var_177_30 = 0
@@ -7956,13 +7956,13 @@
 
 			if var_189_1 <= arg_186_1.time_ and arg_186_1.time_ < var_189_1 + var_189_4 then
 				local var_189_5 = (arg_186_1.time_ - var_189_1) / var_189_4
-				local var_189_6 = Vector3.New(390, -340, -288)
+				local var_189_6 = Vector3.New(-585.3, -349.1, -288)
 
 				var_189_0.localPosition = Vector3.Lerp(arg_186_1.var_.moveOldPos1015, var_189_6, var_189_5)
 			end
 
 			if arg_186_1.time_ >= var_189_1 + var_189_4 and arg_186_1.time_ < var_189_1 + var_189_4 + arg_189_0 then
-				var_189_0.localPosition = Vector3.New(390, -340, -288)
+				var_189_0.localPosition = Vector3.New(-585.3, -349.1, -288)
 			end
 
 			local var_189_7 = 0
@@ -8975,13 +8975,13 @@
 
 			if var_209_17 <= arg_206_1.time_ and arg_206_1.time_ < var_209_17 + var_209_20 then
 				local var_209_21 = (arg_206_1.time_ - var_209_17) / var_209_20
-				local var_209_22 = Vector3.New(390, -340, -288)
+				local var_209_22 = Vector3.New(-585.3, -349.1, -288)
 
 				var_209_16.localPosition = Vector3.Lerp(arg_206_1.var_.moveOldPos1015, var_209_22, var_209_21)
 			end
 
 			if arg_206_1.time_ >= var_209_17 + var_209_20 and arg_206_1.time_ < var_209_17 + var_209_20 + arg_209_0 then
-				var_209_16.localPosition = Vector3.New(390, -340, -288)
+				var_209_16.localPosition = Vector3.New(-585.3, -349.1, -288)
 			end
 
 			local var_209_23 = arg_206_1.actors_["1060"].transform
@@ -9253,13 +9253,13 @@
 
 			if var_213_17 <= arg_210_1.time_ and arg_210_1.time_ < var_213_17 + var_213_20 then
 				local var_213_21 = (arg_210_1.time_ - var_213_17) / var_213_20
-				local var_213_22 = Vector3.New(390, -340, -288)
+				local var_213_22 = Vector3.New(-585.3, -349.1, -288)
 
 				var_213_16.localPosition = Vector3.Lerp(arg_210_1.var_.moveOldPos1015, var_213_22, var_213_21)
 			end
 
 			if arg_210_1.time_ >= var_213_17 + var_213_20 and arg_210_1.time_ < var_213_17 + var_213_20 + arg_213_0 then
-				var_213_16.localPosition = Vector3.New(390, -340, -288)
+				var_213_16.localPosition = Vector3.New(-585.3, -349.1, -288)
 			end
 
 			local var_213_23 = 0

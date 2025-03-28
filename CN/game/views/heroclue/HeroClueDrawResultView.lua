@@ -34,7 +34,7 @@ end
 function var_0_0.RefreshUI(arg_8_0)
 	local var_8_0 = HeroClueCfg[arg_8_0.clueID_]
 
-	arg_8_0.clueIcon_.sprite = getSpriteWithoutAtlas(var_8_0.icon_path)
+	arg_8_0.clueIcon_.sprite = pureGetSpriteWithoutAtlas(var_8_0.icon_path)
 	arg_8_0.clueName_.text = string.format(GetTips("ACTIVITY_HERO_CLUE_UNLOCK"), var_8_0.name)
 
 	local var_8_1 = HeroClueData:GetUnlockClueDataDic()[arg_8_0.clueID_]

@@ -467,6 +467,8 @@
 			if arg_15_0 == 1 then
 				arg_13_0:Play116431004(arg_13_1)
 			end
+
+			arg_13_1:RecordChoiceLog(116431003, 116431004)
 		end
 
 		function arg_13_1.onSingleLineUpdate_(arg_16_0)
@@ -2364,6 +2366,8 @@
 			if arg_75_0 == 1 then
 				arg_73_0:Play116431019(arg_73_1)
 			end
+
+			arg_73_1:RecordChoiceLog(116431018, 116431019)
 		end
 
 		function arg_73_1.onSingleLineUpdate_(arg_76_0)
@@ -10501,6 +10505,8 @@
 			if arg_310_0 == 1 then
 				arg_308_0:Play116431071(arg_308_1)
 			end
+
+			arg_308_1:RecordChoiceLog(116431070, 116431071)
 		end
 
 		function arg_308_1.onSingleLineUpdate_(arg_311_0)
@@ -15741,6 +15747,8 @@
 			if arg_445_0 == 2 then
 				arg_443_0:Play116431101(arg_443_1)
 			end
+
+			arg_443_1:RecordChoiceLog(116431100, 116431101, 116431101)
 		end
 
 		function arg_443_1.onSingleLineUpdate_(arg_446_0)
@@ -16542,6 +16550,8 @@
 			if arg_479_0 == 1 then
 				arg_477_0:Play116431109(arg_477_1)
 			end
+
+			arg_477_1:RecordChoiceLog(116431108, 116431109)
 		end
 
 		function arg_477_1.onSingleLineUpdate_(arg_480_0)
@@ -17501,6 +17511,8 @@
 				SetActive(arg_498_1.allBtn_.gameObject, true)
 				arg_498_1.hideBtnsController_:SetSelectedIndex(0)
 				manager.video:Dispose()
+
+				arg_498_1.isInLoopVideo = false
 			end
 
 			local var_501_33 = 0.0166666666666667

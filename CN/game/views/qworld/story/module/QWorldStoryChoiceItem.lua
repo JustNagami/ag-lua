@@ -77,7 +77,7 @@ function var_0_0.RenderView(arg_8_0, arg_8_1, arg_8_2)
 end
 
 function var_0_0.RenderFuncChoice(arg_9_0, arg_9_1)
-	local var_9_0, var_9_1 = arg_9_0:GetIcon(arg_9_1.type, arg_9_1.id)
+	local var_9_0, var_9_1, var_9_2 = arg_9_0:GetIcon(arg_9_1.type, arg_9_1.id)
 
 	arg_9_0.context.funcChoiceCtx = arg_9_1
 	arg_9_0.context.id = arg_9_1.id
@@ -85,6 +85,7 @@ function var_0_0.RenderFuncChoice(arg_9_0, arg_9_1)
 
 	arg_9_0.btnState:SetSelectedState(var_9_1)
 
+	arg_9_0.backBoardImg_.spriteSync = "TextureConfig/SandPlay/BaseBoard/" .. var_9_2
 	arg_9_0.choiceTxt_.text = arg_9_1.title
 	arg_9_0.context.funcClick = arg_9_1.action
 end
@@ -107,17 +108,19 @@ function var_0_0.GetIcon(arg_10_0, arg_10_1, arg_10_2)
 		local var_10_4 = SandplayTaskMainCfg[var_10_1]
 
 		if QWorldQuestConst.QUEST_TASK_TYPE.MAIN == var_10_4.main_task_type then
-			return var_10_0 .. "SandPlay_Questicon_Main", "questMain"
+			return var_10_0 .. "SandPlay_Questicon_Main", "questMain", ""
 		elseif QWorldQuestConst.QUEST_TASK_TYPE.SIDE == var_10_4.main_task_type then
-			return var_10_0 .. "SandPlay_Questicon_Side", "questSide"
+			return var_10_0 .. "SandPlay_Questicon_Side", "questSide", ""
 		else
-			return var_10_0 .. "SandPlay_Questicon_Explore", "quesExplore"
+			return var_10_0 .. "SandPlay_Questicon_Explore", "quesExplore", ""
 		end
+	elseif SandplayTagCfg[arg_10_2].tag_behaviour == 1 then
+		return var_10_0 .. SandplayTagCfg[arg_10_2].map_icon, "teleport", SandplayTagCfg[arg_10_2].baseboard
 	else
-		return var_10_0 .. SandplayTagCfg[arg_10_2].map_icon, "active"
+		return var_10_0 .. SandplayTagCfg[arg_10_2].map_icon, "active", SandplayTagCfg[arg_10_2].baseboard
 	end
 
-	return "", "active"
+	return "", "active", ""
 end
 
 function var_0_0.RegistCallback(arg_11_0, arg_11_1)

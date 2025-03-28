@@ -35,7 +35,7 @@ function var_0_0.RefreshUI(arg_6_0, arg_6_1)
 	if arg_6_1 and arg_6_1.id ~= 0 then
 		local var_6_0 = EquipSkillCfg[arg_6_1.id]
 
-		arg_6_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_6_0.icon)
+		arg_6_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_6_0.icon)
 		arg_6_0.name_.text = GetI18NText(var_6_0.name)
 	end
 end

@@ -41,8 +41,8 @@ function var_0_0.OnEnter(arg_8_0)
 	arg_8_0:UpdataNeedFatigue()
 	arg_8_0.characterScroll_:StartScroll(#arg_8_0.itemList_)
 	arg_8_0.recomendScroll_:StartScroll(#arg_8_0.reList_)
+	arg_8_0:UpdateSuccess()
 
-	arg_8_0.successnumText_.text = 0
 	arg_8_0.tasknmaeText_.text = GetI18NText(BackHomeCanteenTaskCfg[CanteenEntrustData:GetCurDispatchTask().id].name)
 end
 
@@ -56,6 +56,14 @@ function var_0_0.indexCharacter(arg_9_0, arg_9_1, arg_9_2)
 			return
 		end
 
+		local var_10_1, var_10_2 = BackHomeTools.CheckHeroIsLockForAnyFeatureWithTips(arg_10_0)
+
+		if var_10_1 then
+			ShowTips(var_10_2)
+
+			return
+		end
+
 		if DormData:GetHeroFatigue(arg_10_0) < GameSetting.dorm_canteen_work_fatigue.value[1] / 100 then
 			ShowTips("CANTEEN_HERO_FATIGUE_NULL")
 
@@ -63,7 +71,7 @@ function var_0_0.indexCharacter(arg_9_0, arg_9_1, arg_9_2)
 		end
 
 		if #CanteenEntrustData:GetDispatchCharacterList() <= DormConst.CANTEEN_TRUST_CHARACTER_NUM and CanteenEntrustData:CheckDispatchCharacterList(arg_10_0) == false then
-			CanteenEntrustData:SetDispatchCharacterList(arg_10_0)
+			CanteenEntrustData:InsertToDispatchCharacterList(arg_10_0)
 			arg_10_1:SetSelectedState("select")
 		elseif CanteenEntrustData:CheckDispatchCharacterList(arg_10_0) == true then
 			CanteenEntrustData:RemoveDispatchCharacterList(arg_10_0)
@@ -127,12 +135,10 @@ function var_0_0.AddUIListener(arg_13_0)
 	end)
 	arg_13_0:AddBtnListener(arg_13_0.quickBtn_, nil, function()
 		local var_16_0 = CanteenEntrustData:GetEntrustList()[CanteenEntrustData:GetCurDispatchTask().pos]
-		local var_16_1 = CanteenTools.AutoSelectEntrustHero(var_16_0)
+		local var_16_1 = CanteenTools.AutoSelectEntrustHero(var_16_0, CanteenEntrustData:GetDispatchCharacterList())
 
 		if var_16_1 then
-			for iter_16_0, iter_16_1 in ipairs(var_16_1) do
-				CanteenEntrustData:SetDispatchCharacterList(iter_16_1)
-			end
+			CanteenEntrustData:SetDispatchCharacterList(var_16_1)
 		else
 			ShowTips("DORM_CANTEEN_TASK_CANT_FIT")
 		end

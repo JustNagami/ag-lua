@@ -30,7 +30,7 @@ end
 function var_0_0.UpdateView(arg_6_0)
 	local var_6_0 = MatrixBeaconCfg[arg_6_0.id]
 
-	arg_6_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/MatrixItem/MatrixArtifact/" .. var_6_0.icon)
+	arg_6_0.m_icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/MatrixItem/MatrixArtifact/" .. var_6_0.icon)
 	arg_6_0.m_name.text = GetI18NText(var_6_0.name)
 	arg_6_0.m_des.text = GetI18NText(var_6_0.desc)
 

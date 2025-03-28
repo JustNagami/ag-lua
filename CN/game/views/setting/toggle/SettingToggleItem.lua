@@ -40,6 +40,13 @@ function var_0_0.SetData(arg_7_0, arg_7_1, arg_7_2)
 
 	arg_7_0.icon_01.sprite = var_7_0
 	arg_7_0.icon_02.sprite = var_7_0
+	arg_7_0.data = arg_7_2
+
+	if arg_7_2 and arg_7_2.RedPointKey and arg_7_2:RedPointKey() ~= nil then
+		for iter_7_0, iter_7_1 in ipairs(arg_7_2:RedPointKey()) do
+			manager.redPoint:bindUIandKey(arg_7_0.transform_, iter_7_1)
+		end
+	end
 end
 
 function var_0_0.SetSelect(arg_8_0, arg_8_1)
@@ -55,7 +62,12 @@ function var_0_0.RegistCallBack(arg_9_0, arg_9_1)
 end
 
 function var_0_0.Dispose(arg_10_0)
-	manager.redPoint:unbindUIandKey(arg_10_0.transform_)
+	if arg_10_0.data and arg_10_0.data.RedPointKey and arg_10_0.data:RedPointKey() ~= nil then
+		for iter_10_0, iter_10_1 in ipairs(arg_10_0.data:RedPointKey()) do
+			manager.redPoint:unbindUIandKey(arg_10_0.transform_, iter_10_1)
+		end
+	end
+
 	var_0_0.super.Dispose(arg_10_0)
 end
 

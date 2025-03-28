@@ -34,7 +34,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1)
 	local var_6_0 = PolyhedronArtifactCfg[arg_6_1]
 
 	arg_6_0.m_name.text = GetI18NText(var_6_0.name)
-	arg_6_0.m_icon.sprite = getSpriteWithoutAtlas(PolyhedronConst.ARTIFACT_ICON_PATH .. var_6_0.icon)
+	arg_6_0.m_icon.sprite = pureGetSpriteWithoutAtlas(PolyhedronConst.ARTIFACT_ICON_PATH .. var_6_0.icon)
 	arg_6_0.state = PolyhedronData:GetArtifaceAtlasState(arg_6_1)
 
 	if arg_6_0.state == 0 then

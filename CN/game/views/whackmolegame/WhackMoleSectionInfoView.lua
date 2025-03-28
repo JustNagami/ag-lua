@@ -67,7 +67,7 @@ end
 
 function var_0_0.RefreshStageInfo(arg_12_0)
 	arg_12_0.sectionName_.text = GetI18NText(arg_12_0.stageCfg_.name)
-	arg_12_0.sectionImage_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, arg_12_0.stageCfg_.background_1))
+	arg_12_0.sectionImage_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, arg_12_0.stageCfg_.background_1))
 
 	if ActivityWhackMoleCfg[arg_12_0.whackMoleID_].type == WhackMoleConst.STAGE_TYPE.INFINITY then
 		local var_12_0 = ActivityWhackMoleCfg[arg_12_0.whackMoleID_].stage_id

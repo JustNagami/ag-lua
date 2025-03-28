@@ -27,6 +27,7 @@ TetrisToLuaBridge = require("support/TetrisToLuaBridge")
 QuizToLuaBridge = require("support/QuizToLuaBridge")
 ChessBoardToLuaBridge = require("support/ChessBoardToLuaBridge")
 WaterPipeToluaBridge = require("support/WaterPipeToluaBridge")
+SkuldPuzzleToluaBridge = require("support/SkuldPuzzleToluaBridge")
 
 require("support/P08Support")
 require("support/P08Const")

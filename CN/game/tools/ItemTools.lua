@@ -128,7 +128,7 @@ function var_0_0.getItemTexturePath(arg_4_0, arg_4_1)
 		if var_4_0.sub_type == 1 then
 			return SpritePathCfg.HeroLittleIcon.path
 		elseif var_4_0.sub_type == 2 then
-			return "TextureConfig/Item_l"
+			return "TextureConfig/Item_l/"
 		else
 			print("暂未定义的头像来源")
 		end

@@ -90,3 +90,6 @@ BattleAdvanceMonsterTestTemplate = import("game.battle.template.BattleAdvanceMon
 BattleKaliChallengeTemplate = import("game.battle.template.BattleKaliChallengeTemplate")
 BattleChallengeRogueTeamTemplate = import("game.battle.template.BattleChallengeRogueTeamTemplate")
 BattleDodgeBarrageTemplate = import("game.battle.template.BattleDodgeBarrageTemplate")
+BattleSkuldTemplate = import("game.battle.template.BattleSkuldTemplate")
+BattleSeaWarfareStageTemplate = import("game.battle.template.BattleSeaWarfareStageTemplate")
+BattleSandPlayStageTemplate = import("game.battle.template.BattleSandPlayStageTemplate")

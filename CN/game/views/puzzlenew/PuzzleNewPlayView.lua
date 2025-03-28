@@ -175,7 +175,6 @@ function var_0_0.OnEnter(arg_16_0)
 	arg_16_0.params_.isEnter = true
 
 	arg_16_0:SwitchStatus()
-	arg_16_0:AddTimer()
 	SetActive(arg_16_0.maskGo_, false)
 	manager.redPoint:bindUIandKey(arg_16_0.putBtn_.transform, string.format("%s_%s", RedPointConst.PUZZLE_NEW_PIECE, arg_16_0.activityID_))
 end
@@ -188,8 +187,6 @@ function var_0_0.OnExit(arg_17_0)
 
 		arg_17_0.checkAnimtimer_ = nil
 	end
-
-	arg_17_0:StopTimer()
 
 	arg_17_0.params_.isEnter = false
 
@@ -209,8 +206,6 @@ function var_0_0.OnTop(arg_18_0)
 end
 
 function var_0_0.Dispose(arg_19_0)
-	arg_19_0:StopTimer()
-
 	arg_19_0.endDragHandler_ = nil
 	arg_19_0.onClickHandler_ = nil
 
@@ -258,6 +253,8 @@ function var_0_0.SwitchToCheck(arg_23_0)
 	for iter_23_0, iter_23_1 in ipairs(arg_23_0.puzzleItemList_) do
 		iter_23_1:StopAnim()
 	end
+
+	arg_23_0.checkGoalText_.text = string.format(GetTips("PUZZLE_CHECK_GOAL_TIP"), #arg_23_0.puzzleCfg_.clue_id)
 end
 
 function var_0_0.OnPuzzleNewUpdate(arg_24_0)
@@ -485,22 +482,28 @@ function var_0_0.OnClick(arg_43_0, arg_43_1)
 end
 
 function var_0_0.SpawnCheckPoint(arg_44_0)
-	local var_44_0 = arg_44_0.puzzleCfg_.clue_id
-	local var_44_1 = arg_44_0.checkPointContent_.childCount
+	local var_44_0 = arg_44_0.puzzleCfg_.clueContainerUIPath
+
+	if var_44_0 ~= "" then
+		arg_44_0.checkPointContent_ = Object.Instantiate(Asset.Load(var_44_0), arg_44_0.checkPointContent_).transform
+	end
+
+	local var_44_1 = arg_44_0.puzzleCfg_.clue_id
+	local var_44_2 = arg_44_0.checkPointContent_.childCount
 
 	arg_44_0.checkPointList_ = arg_44_0.checkPointList_ or {}
 
-	for iter_44_0 = 1, var_44_1 do
-		local var_44_2 = arg_44_0.checkPointContent_:GetChild(iter_44_0 - 1)
-		local var_44_3 = var_44_0[iter_44_0]
+	for iter_44_0 = 1, var_44_2 do
+		local var_44_3 = arg_44_0.checkPointContent_:GetChild(iter_44_0 - 1)
+		local var_44_4 = var_44_1[iter_44_0]
 
-		if not arg_44_0.checkPointList_[var_44_3] then
-			arg_44_0.checkPointList_[var_44_3] = PuzzleNewCheckPoint.New(var_44_2)
+		if not arg_44_0.checkPointList_[var_44_4] then
+			arg_44_0.checkPointList_[var_44_4] = PuzzleNewCheckPoint.New(var_44_3)
 		end
 	end
 
-	arg_44_0.originImage_.sprite = getSpriteWithoutAtlas(arg_44_0.puzzleCfg_.preview_album_id)
-	arg_44_0.checkPanelImage_.sprite = getSpriteWithoutAtlas(arg_44_0.puzzleCfg_.album_id)
+	arg_44_0.originImage_.sprite = pureGetSpriteWithoutAtlas(arg_44_0.puzzleCfg_.album_id)
+	arg_44_0.checkPanelImage_.sprite = pureGetSpriteWithoutAtlas(arg_44_0.puzzleCfg_.album_id)
 end
 
 function var_0_0.DespawnCheckPoint(arg_45_0)
@@ -526,7 +529,6 @@ end
 function var_0_0.HideAllUI(arg_47_0)
 	manager.windowBar:HideBar()
 	SetActive(arg_47_0.btnPanelGo_, false)
-	SetActive(arg_47_0.titlePanelGo_, false)
 end
 
 function var_0_0.RecoverAllUI(arg_48_0)
@@ -537,50 +539,18 @@ function var_0_0.RecoverAllUI(arg_48_0)
 		arg_48_0.puzzleCfg_.fragment_id[1][1]
 	})
 	SetActive(arg_48_0.btnPanelGo_, true)
-	SetActive(arg_48_0.titlePanelGo_, true)
 end
 
-function var_0_0.AddTimer(arg_49_0)
-	arg_49_0:StopTimer()
-	arg_49_0:RefreshTimeText()
+function var_0_0.IsActivityTime(arg_49_0)
+	if manager.time:GetServerTime() < arg_49_0.startTime_ then
+		local var_49_0 = GetTips("OPEN_TIME")
 
-	arg_49_0.timer_ = Timer.New(function()
-		if manager.time:GetServerTime() > arg_49_0.stopTime_ then
-			arg_49_0.timeText_.text = GetTips("TIME_OVER")
-
-			return
-		end
-
-		arg_49_0:RefreshTimeText()
-	end, 1, -1)
-
-	arg_49_0.timer_:Start()
-end
-
-function var_0_0.StopTimer(arg_51_0)
-	if arg_51_0.timer_ then
-		arg_51_0.timer_:Stop()
-
-		arg_51_0.timer_ = nil
-	end
-end
-
-function var_0_0.RefreshTimeText(arg_52_0)
-	if arg_52_0.timeText_ then
-		arg_52_0.timeText_.text = manager.time:GetLostTimeStr2(arg_52_0.stopTime_, nil, true)
-	end
-end
-
-function var_0_0.IsActivityTime(arg_53_0)
-	if manager.time:GetServerTime() < arg_53_0.startTime_ then
-		local var_53_0 = GetTips("OPEN_TIME")
-
-		ShowTips(string.format(var_53_0, manager.time:GetLostTimeStr2(arg_53_0.startTime_, nil, true)))
+		ShowTips(string.format(var_49_0, manager.time:GetLostTimeStr2(arg_49_0.startTime_, nil, true)))
 
 		return false
 	end
 
-	if manager.time:GetServerTime() >= arg_53_0.stopTime_ then
+	if manager.time:GetServerTime() >= arg_49_0.stopTime_ then
 		ShowTips("TIME_OVER")
 
 		return false

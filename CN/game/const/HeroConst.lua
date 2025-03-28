@@ -148,18 +148,21 @@
 		nil,
 		"LIGHT",
 		nil,
-		"THUNDER"
+		"THUNDER",
+		[254] = "RANDOM"
 	},
 	HERO_ATTACK_TYPE = {
-		WIND = 2,
+		ALL = -999,
 		FLAME = 4,
-		LIGHT = 12,
+		DARK = 10,
 		THUNDER = 14,
+		WIND = 2,
 		MIX = -1,
 		PYISICS = 0,
 		FREEZE = 6,
 		WATER = 8,
-		DARK = 10
+		RANDOM = 254,
+		LIGHT = 12
 	},
 	HERO_CHARGE_TYPE = {
 		ENERGY = 2,

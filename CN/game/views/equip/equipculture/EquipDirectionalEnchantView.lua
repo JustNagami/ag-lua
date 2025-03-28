@@ -150,7 +150,7 @@ function var_0_0.InitFixedSkill(arg_11_0)
 
 			local var_11_2 = EquipSkillCfg[var_11_1.skillId]
 
-			var_11_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_11_2.icon)
+			var_11_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_11_2.icon)
 			var_11_0.name_.text = GetI18NText(var_11_2.name)
 			var_11_0.num_.text = var_11_1.numText
 			var_11_0.desc_.text = var_11_1.descText

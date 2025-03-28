@@ -16,6 +16,8 @@ local function var_0_1(arg_1_0, arg_1_1, arg_1_2, arg_1_3, arg_1_4)
 			_G.TMP_MAC_ADDRESS = tostring(_G.deviceInfo.uuid)
 		elseif _G.deviceInfo.idfa ~= nil then
 			_G.TMP_MAC_ADDRESS = tostring(_G.deviceInfo.idfa)
+		elseif _G.deviceInfo.odid ~= nil then
+			_G.TMP_MAC_ADDRESS = tostring(_G.deviceInfo.odid)
 		else
 			_G.TMP_MAC_ADDRESS = "unknown"
 		end
@@ -195,7 +197,8 @@ local function var_0_4(arg_11_0, arg_11_1, arg_11_2, arg_11_3)
 		imei = _G.deviceInfo and _G.deviceInfo.imei or nil,
 		idfa = _G.deviceInfo and _G.deviceInfo.idfa or nil,
 		distinct_id = _G.AnalyticsPresetProperties.distinctId,
-		oaid = _G.deviceInfo and _G.deviceInfo.gaid or nil,
+		oaid = _G.deviceInfo and _G.deviceInfo.oaid or nil,
+		gaid = _G.deviceInfo and _G.deviceInfo.gaid or nil,
 		master_channel_id = _G.CHANNEL_MASTER_ID,
 		app_id = _G.APP_ID or "channel_internal_app_id",
 		sub_id = _G.deviceInfo and tostring(_G.deviceInfo.subId) or nil,

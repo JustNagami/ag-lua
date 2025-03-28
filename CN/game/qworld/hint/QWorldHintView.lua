@@ -13,6 +13,7 @@ function var_0_0.Init(arg_2_0)
 	arg_2_0:AddUIListener()
 
 	arg_2_0.hasTagController_ = arg_2_0.controller_:GetController("hasTag")
+	arg_2_0.stateController_ = arg_2_0.controller_:GetController("state")
 	arg_2_0.itemList_ = {}
 end
 
@@ -81,6 +82,12 @@ function var_0_0.Refresh(arg_6_0, arg_6_1)
 	arg_6_0.tag_ = arg_6_0.cfg_.tag
 
 	arg_6_0.hasTagController_:SetSelectedState(tostring(arg_6_0.tag_ ~= 0))
+
+	if arg_6_1 == 323641001 then
+		arg_6_0.stateController_:SetSelectedState("photo")
+	else
+		arg_6_0.stateController_:SetSelectedState("normal")
+	end
 end
 
 function var_0_0.HideHint(arg_7_0, arg_7_1)

@@ -38,7 +38,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 end
 
 function var_0_0.RefreshUI(arg_6_0)
-	arg_6_0.campImage_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetCampIcon(arg_6_0.campID_))
+	arg_6_0.campImage_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetCampIcon(arg_6_0.campID_))
 
 	for iter_6_0 = 1, ChallengeRogueTeamConst.SUIT_SKILL_NEED_TREASURE_CNT do
 		local var_6_0 = arg_6_0["item" .. iter_6_0 .. "_"]

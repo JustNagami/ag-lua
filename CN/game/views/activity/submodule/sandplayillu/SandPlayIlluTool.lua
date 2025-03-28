@@ -15,7 +15,7 @@ function var_0_0.OnEnterSandPlayIllu()
 end
 
 function var_0_0.ExitSandPlayIllu()
-	QWorldMgr:ExitTopCustomCamera()
+	QWorldMgr:ExitCustomCamera(var_0_1)
 end
 
 function var_0_0.IsIlluUnlock()

@@ -70,7 +70,7 @@ function var_0_0.OnEnter(arg_10_0)
 		local var_10_0 = HeroCfg[arg_10_0.leader]
 		local var_10_1 = PolyhedronData:GetHeroUsingSkinInfo(arg_10_0.leader).id
 
-		arg_10_0.m_icon.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_10_1)
+		arg_10_0.m_icon.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. var_10_1)
 		arg_10_0.m_name.text = GetI18NText(var_10_0.name)
 	end
 end

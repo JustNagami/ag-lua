@@ -256,7 +256,7 @@ function var_0_0.RefreshScoreRedPoint(arg_24_0, arg_24_1)
 	local var_24_3 = arg_24_0:GetTotalScore(arg_24_1)
 	local var_24_4 = ActivityPointRewardCfg.get_id_list_by_activity_id[arg_24_1]
 
-	for iter_24_0, iter_24_1 in ipairs(var_24_4) do
+	for iter_24_0, iter_24_1 in ipairs(var_24_4 or {}) do
 		local var_24_5 = ActivityPointRewardCfg[iter_24_1]
 		local var_24_6 = arg_24_0.scoreRewardData_[iter_24_1]
 

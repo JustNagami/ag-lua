@@ -19,7 +19,7 @@ end
 function var_0_0.SetData(arg_4_0, arg_4_1)
 	local var_4_0 = RogueTeamItemCfg[arg_4_1]
 
-	arg_4_0.icon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_4_1))
+	arg_4_0.icon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(arg_4_1))
 	arg_4_0.nameText_.text = var_4_0.name
 	arg_4_0.descText_.text = ChallengeRogueTeamTools.GetItemEffectDesc(arg_4_1)
 end

@@ -43,7 +43,7 @@ function var_0_0.RefreshItem(arg_4_0, arg_4_1, arg_4_2, arg_4_3)
 			arg_4_0.statusController:SetSelectedState("off")
 
 			arg_4_0.nameText_.text = GetI18NText(BackHomeCanteenFoodCfg[arg_4_1].name)
-			arg_4_0.iconimageImg_.sprite = getSpriteWithoutAtlas(DormConst.CANTEEN_FOOD_PATH .. BackHomeCanteenFoodCfg[arg_4_1].icon)
+			arg_4_0.iconimageImg_.sprite = pureGetSpriteWithoutAtlas(DormConst.CANTEEN_FOOD_PATH .. BackHomeCanteenFoodCfg[arg_4_1].icon)
 		end
 	elseif arg_4_2 == DormEnum.MenuType.bag then
 		local var_4_1 = CanteenFoodData:GetCateenIngredient()[arg_4_1]

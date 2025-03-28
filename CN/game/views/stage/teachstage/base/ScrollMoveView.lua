@@ -58,6 +58,10 @@ function var_0_0.AddListeners(arg_5_0)
 				JumpTools.Back()
 			end
 		end
+
+		if arg_5_0.parentView_.OnScrollValueChanged then
+			arg_5_0.parentView_:OnScrollValueChanged()
+		end
 	end)
 end
 
@@ -180,9 +184,17 @@ function var_0_0.ScrollPosition(arg_17_0, arg_17_1, arg_17_2, arg_17_3)
 			arg_17_0.tween_ = LeanTween.value(arg_17_0.gameObject_, arg_17_0.scrollView_.horizontalNormalizedPosition, var_17_0 / (arg_17_0.contentRect_.rect.width - arg_17_0.viewportRect_.rect.width), 0.5):setOnUpdate(LuaHelper.FloatAction(function(arg_18_0)
 				arg_17_0.horizontalNormalizedPosition_ = arg_18_0
 				arg_17_0.scrollView_.horizontalNormalizedPosition = arg_18_0
+
+				if arg_17_0.parentView_.OnScrollValueChanged then
+					arg_17_0.parentView_:OnScrollValueChanged()
+				end
 			end)):setOnComplete(System.Action(function()
 				if arg_17_0.parentView_:IsOpenSectionInfo() then
 					arg_17_0.isOpenInfoView_ = true
+				end
+
+				if arg_17_0.parentView_.OnScrollValueChanged then
+					arg_17_0.parentView_:OnScrollValueChanged()
 				end
 
 				arg_17_0:RemoveTween()

@@ -649,7 +649,7 @@ function var_0_0.GetShowList(arg_43_0, arg_43_1)
 	LayoutRebuilder.ForceRebuildLayoutImmediate(arg_43_0.item1Trs_.transform)
 	LayoutRebuilder.ForceRebuildLayoutImmediate(arg_43_0.shopItemTrs_.transform)
 
-	arg_43_0.lineCount = math.floor(arg_43_0.item1Trs_.rect.width / arg_43_0.shopItemTrs_.rect.width)
+	arg_43_0.lineCount = math.floor((arg_43_0.item1Trs_.rect.width - 20) / arg_43_0.shopItemTrs_.rect.width)
 
 	for iter_43_0 = 1, #arg_43_1 do
 		var_43_1 = var_43_1 + 1

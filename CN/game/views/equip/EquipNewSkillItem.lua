@@ -41,7 +41,7 @@ function var_0_0.RefreshUI(arg_7_0)
 	if arg_7_0.info_ then
 		local var_7_0 = EquipSkillCfg[arg_7_0.info_.id]
 
-		arg_7_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_7_0.icon)
+		arg_7_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Equip/EquipSkillIcon/" .. var_7_0.icon)
 		arg_7_0.name_.text = GetI18NText(var_7_0.name)
 
 		local var_7_1 = arg_7_0.info_.num > var_7_0.lvmax and var_7_0.lvmax or arg_7_0.info_.num

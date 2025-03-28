@@ -52,7 +52,7 @@ function var_0_0.RefreshArchiveItem(arg_7_0)
 end
 
 function var_0_0.RefreshTitle(arg_8_0)
-	arg_8_0.titleText_.text = StageArchivesCollecteTagCfg[arg_8_0.groupID_].tag_name
+	arg_8_0.titleText_.text = StageArchivesCollectTagCfg[arg_8_0.groupID_].tag_name
 end
 
 function var_0_0.SetActive(arg_9_0, arg_9_1)

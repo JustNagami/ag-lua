@@ -720,7 +720,7 @@
 	},
 	{
 		cueName = "bgm_activity_1_3_ui",
-		authorName = "Tony",
+		authorName = "Tony Yan",
 		ableBGM = 1,
 		album = 5,
 		cuesheet = "bgm_activity_1_3_ui",
@@ -728,11 +728,11 @@
 		id = 58,
 		awbName = "bgm_activity_1_3_ui",
 		initAISAC = "",
-		detail = "万众瞩目之下，一场即将开幕的盛典——\n\n作曲：Tony"
+		detail = "万众瞩目之下，一场即将开幕的盛典——\n\n作曲：Tony Yan"
 	},
 	{
 		cueName = "bgm_activity_1_3_battle1",
-		authorName = "Tony",
+		authorName = "Tony Yan",
 		ableBGM = 1,
 		album = 5,
 		cuesheet = "bgm_activity_1_3_battle1",
@@ -740,11 +740,11 @@
 		id = 59,
 		awbName = "bgm_activity_1_3_battle1",
 		initAISAC = "",
-		detail = "作曲：Tony"
+		detail = "作曲：Tony Yan"
 	},
 	{
 		cueName = "bgm_activity_1_3_boss_4023",
-		authorName = "Tony",
+		authorName = "Tony Yan",
 		ableBGM = 1,
 		album = 5,
 		cuesheet = "bgm_activity_1_3_boss_4023",
@@ -752,11 +752,11 @@
 		id = 60,
 		awbName = "bgm_activity_1_3_boss_4023",
 		initAISAC = "",
-		detail = "只要这片土地上还有追求自由和创造的人们，铃兰团就有为之而战的意义。\n\n作曲：Tony"
+		detail = "只要这片土地上还有追求自由和创造的人们，铃兰团就有为之而战的意义。\n\n作曲：Tony Yan"
 	},
 	{
 		cueName = "bgm_activity_1_3_warchess",
-		authorName = "Tony",
+		authorName = "Tony Yan",
 		ableBGM = 1,
 		album = 5,
 		cuesheet = "bgm_activity_1_3_warchess",
@@ -764,11 +764,11 @@
 		id = 61,
 		awbName = "bgm_activity_1_3_warchess",
 		initAISAC = "",
-		detail = "作曲：Tony"
+		detail = "作曲：Tony Yan"
 	},
 	{
 		cueName = "bgm_activity_1_3_story_indoor",
-		authorName = "Tony",
+		authorName = "Tony Yan",
 		ableBGM = 1,
 		album = 5,
 		cuesheet = "bgm_activity_1_3_story_indoor",
@@ -776,11 +776,11 @@
 		id = 62,
 		awbName = "bgm_activity_1_3_story_indoor",
 		initAISAC = "",
-		detail = "作曲：Tony"
+		detail = "作曲：Tony Yan"
 	},
 	{
 		cueName = "bgm_activity_1_3_story_outdoor",
-		authorName = "Tony",
+		authorName = "Tony Yan",
 		ableBGM = 1,
 		album = 5,
 		cuesheet = "bgm_activity_1_3_story_outdoor",
@@ -788,11 +788,11 @@
 		id = 63,
 		awbName = "bgm_activity_1_3_story_outdoor",
 		initAISAC = "",
-		detail = "作曲：Tony"
+		detail = "作曲：Tony Yan"
 	},
 	{
 		cueName = "bgm_activity_1_3_story_battle",
-		authorName = "Tony",
+		authorName = "Tony Yan",
 		ableBGM = 1,
 		album = 5,
 		cuesheet = "bgm_activity_1_3_story_battle",
@@ -800,7 +800,7 @@
 		id = 64,
 		awbName = "bgm_activity_1_3_story_battle",
 		initAISAC = "",
-		detail = "作曲：Tony"
+		detail = "作曲：Tony Yan"
 	},
 	{
 		cueName = "bgm_activity_1_3_story_destroyed",
@@ -840,7 +840,7 @@
 	},
 	{
 		cueName = "bgm_activity_1_4_ui",
-		authorName = "Tony",
+		authorName = "Tony Yan",
 		ableBGM = 1,
 		album = 6,
 		cuesheet = "bgm_activity_1_4_ui",
@@ -848,7 +848,7 @@
 		id = 68,
 		awbName = "bgm_activity_1_4_ui",
 		initAISAC = "",
-		detail = "中止的盛典，反而带来新生的序曲。\n\n作曲：Tony"
+		detail = "中止的盛典，反而带来新生的序曲。\n\n作曲：Tony Yan"
 	},
 	{
 		cueName = "bgm_activity_1_4_battle_source2",
@@ -876,7 +876,7 @@
 	},
 	{
 		cueName = "bgm_activity_1_4_boss_4025_1",
-		authorName = "Tony",
+		authorName = "Tony Yan",
 		ableBGM = 1,
 		album = 6,
 		cuesheet = "bgm_activity_1_4_boss_4025_1",
@@ -884,11 +884,11 @@
 		id = 71,
 		awbName = "bgm_activity_1_4_boss_4025_1",
 		initAISAC = "",
-		detail = "作曲：Tony"
+		detail = "作曲：Tony Yan"
 	},
 	{
 		cueName = "bgm_activity_1_4_boss_4025_2",
-		authorName = "Tony",
+		authorName = "Tony Yan",
 		ableBGM = 1,
 		album = 6,
 		cuesheet = "bgm_activity_1_4_boss_4025_2",
@@ -896,11 +896,11 @@
 		id = 72,
 		awbName = "bgm_activity_1_4_boss_4025_2",
 		initAISAC = "",
-		detail = "你们真的惹恼了拉冬大人…………\n嗯嗯，想让我手下留情？我偏不，那样可就不好玩了~\n\n作曲：Tony"
+		detail = "你们真的惹恼了拉冬大人…………\n嗯嗯，想让我手下留情？我偏不，那样可就不好玩了~\n\n作曲：Tony Yan"
 	},
 	{
 		cueName = "bgm_activity_1_4_story_source",
-		authorName = "Tony",
+		authorName = "Tony Yan",
 		ableBGM = 1,
 		album = 6,
 		cuesheet = "bgm_activity_1_4_story_source",
@@ -908,11 +908,11 @@
 		id = 73,
 		awbName = "bgm_activity_1_4_story_source",
 		initAISAC = "",
-		detail = "作曲：Tony"
+		detail = "作曲：Tony Yan"
 	},
 	{
 		cueName = "bgm_activity_1_4_story_surface",
-		authorName = "Tony",
+		authorName = "Tony Yan",
 		ableBGM = 1,
 		album = 6,
 		cuesheet = "bgm_activity_1_4_story_surface",
@@ -920,7 +920,7 @@
 		id = 74,
 		awbName = "bgm_activity_1_4_story_surface",
 		initAISAC = "",
-		detail = "作曲：Tony"
+		detail = "作曲：Tony Yan"
 	},
 	{
 		cueName = "bgm_side_daily01",
@@ -1381,7 +1381,7 @@
 	},
 	{
 		cueName = "bgm_activity_2_0_battle_oldtown",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 10,
 		cuesheet = "bgm_activity_2_0_battle_oldtown",
@@ -1389,7 +1389,7 @@
 		id = 111,
 		awbName = "bgm_activity_2_0_battle_oldtown",
 		initAISAC = "",
-		detail = "作曲：melo"
+		detail = "作曲：MeLo"
 	},
 	{
 		cueName = "bgm_activity_2_0_battle_jingdu",
@@ -1429,7 +1429,7 @@
 	},
 	{
 		cueName = "bgm_activity_2_0_story_oldtown",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 10,
 		cuesheet = "bgm_activity_2_0_story_oldtown",
@@ -1437,7 +1437,7 @@
 		id = 115,
 		awbName = "bgm_activity_2_0_story_oldtown",
 		initAISAC = "",
-		detail = "作曲：melo"
+		detail = "作曲：MeLo"
 	},
 	{
 		cueName = "bgm_activity_2_0_story_jingdu",
@@ -1465,7 +1465,7 @@
 	},
 	{
 		cueName = "bgm_activity_2_0_warchess",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 10,
 		cuesheet = "bgm_activity_2_0_warchess",
@@ -1473,7 +1473,7 @@
 		id = 118,
 		awbName = "bgm_activity_2_0_warchess",
 		initAISAC = "",
-		detail = "作曲：melo"
+		detail = "作曲：MeLo"
 	},
 	{
 		cueName = "bgm_dorm_01",
@@ -1489,7 +1489,7 @@
 	},
 	{
 		cueName = "bgm_activity_2_1_ui",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 11,
 		cuesheet = "bgm_activity_2_1_ui",
@@ -1497,7 +1497,7 @@
 		id = 120,
 		awbName = "bgm_activity_2_1_ui",
 		initAISAC = "",
-		detail = "洛水宵明坠灵枢，灵枢倾欹人殊途。\n作曲：melo"
+		detail = "洛水宵明坠灵枢，灵枢倾欹人殊途。\n作曲：MeLo"
 	},
 	{
 		cueName = "bgm_activity_2_0_battle_source_xuheng",
@@ -1513,7 +1513,7 @@
 	},
 	{
 		cueName = "bgm_activity_2_1_battle_city",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 11,
 		cuesheet = "bgm_activity_2_1_battle_city",
@@ -1521,7 +1521,7 @@
 		id = 122,
 		awbName = "bgm_activity_2_1_battle_city",
 		initAISAC = "",
-		detail = "作曲：melo"
+		detail = "作曲：MeLo"
 	},
 	{
 		cueName = "bgm_activity_2_1_battle_boss_4038_1",
@@ -1573,7 +1573,7 @@
 	},
 	{
 		cueName = "bgm_activity_2_1_story_sifangyuan",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 11,
 		cuesheet = "bgm_activity_2_1_story_sifangyuan",
@@ -1581,11 +1581,11 @@
 		id = 127,
 		awbName = "bgm_activity_2_1_story_sifangyuan",
 		initAISAC = "",
-		detail = "作曲：melo"
+		detail = "作曲：MeLo"
 	},
 	{
 		cueName = "bgm_activity_2_1_story_city",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 11,
 		cuesheet = "bgm_activity_2_1_story_city",
@@ -1593,7 +1593,7 @@
 		id = 128,
 		awbName = "bgm_activity_2_1_story_city",
 		initAISAC = "",
-		detail = "作曲：melo"
+		detail = "作曲：MeLo"
 	},
 	{
 		cueName = "bgm_activity_2_1_story_farewell",
@@ -1679,7 +1679,7 @@
 	},
 	{
 		cueName = "bgm_activity_2_2_ui",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 12,
 		cuesheet = "bgm_activity_2_2_ui",
@@ -1687,7 +1687,7 @@
 		id = 135,
 		awbName = "bgm_activity_2_2_ui",
 		initAISAC = "",
-		detail = "重霄一剑斩长夜，破云清光照永劫。\n\n作曲：melo"
+		detail = "重霄一剑斩长夜，破云清光照永劫。\n\n作曲：MeLo"
 	},
 	{
 		cueName = "bgm_activity_2_2_story_tiantongyinqing",
@@ -1715,7 +1715,7 @@
 	},
 	{
 		cueName = "bgm_activity_2_2_story_ruomuhuajing",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 12,
 		cuesheet = "bgm_activity_2_2_story_ruomuhuajing",
@@ -1723,11 +1723,11 @@
 		id = 138,
 		awbName = "bgm_activity_2_2_story_ruomuhuajing",
 		initAISAC = "",
-		detail = "作曲：melo"
+		detail = "作曲：MeLo"
 	},
 	{
 		cueName = "bgm_activity_2_2_battle_ruomuhuajing",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 12,
 		cuesheet = "bgm_activity_2_2_battle_ruomuhuajing",
@@ -1735,7 +1735,7 @@
 		id = 139,
 		awbName = "bgm_activity_2_2_battle_ruomuhuajing",
 		initAISAC = "",
-		detail = "作曲：melo"
+		detail = "作曲：MeLo"
 	},
 	{
 		cueName = "bgm_activity_2_2_battle_boss_4036_1",
@@ -1895,7 +1895,7 @@
 	},
 	{
 		cueName = "bgm_activity_2_4_battle_forest",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 13,
 		cuesheet = "bgm_activity_2_4_battle_forest",
@@ -1903,7 +1903,7 @@
 		id = 153,
 		awbName = "bgm_activity_2_4_battle_forest",
 		initAISAC = "",
-		detail = "作曲：melo"
+		detail = "作曲：MeLo"
 	},
 	{
 		cueName = "bgm_activity_2_4_battle_xiajingqu",
@@ -1919,7 +1919,7 @@
 	},
 	{
 		cueName = "bgm_activity_2_4_battle_wall",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 13,
 		cuesheet = "bgm_activity_2_4_battle_wall",
@@ -1927,7 +1927,7 @@
 		id = 155,
 		awbName = "bgm_activity_2_4_battle_wall",
 		initAISAC = "",
-		detail = "作曲：melo"
+		detail = "作曲：MeLo"
 	},
 	{
 		cueName = "bgm_activity_2_4_battle_boss_4030",
@@ -1943,7 +1943,7 @@
 	},
 	{
 		cueName = "bgm_activity_2_4_story_forest",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 13,
 		cuesheet = "bgm_activity_2_4_story_forest",
@@ -1951,7 +1951,7 @@
 		id = 157,
 		awbName = "bgm_activity_2_4_story_forest",
 		initAISAC = "",
-		detail = "作曲：melo"
+		detail = "作曲：MeLo"
 	},
 	{
 		cueName = "bgm_activity_2_4_story_xiajingqu",
@@ -1967,7 +1967,7 @@
 	},
 	{
 		cueName = "bgm_activity_2_4_story_wall",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 13,
 		cuesheet = "bgm_activity_2_4_story_wall",
@@ -1975,7 +1975,7 @@
 		id = 159,
 		awbName = "bgm_activity_2_4_story_wall",
 		initAISAC = "",
-		detail = "作曲：melo"
+		detail = "作曲：MeLo"
 	},
 	{
 		cueName = "bgm_activity_2_4_story_firework",
@@ -2169,7 +2169,7 @@
 	},
 	{
 		cueName = "bgm_activity_2_8_ui",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 15,
 		cuesheet = "bgm_activity_2_8_ui",
@@ -2177,7 +2177,7 @@
 		id = 175,
 		awbName = "bgm_activity_2_8_ui",
 		initAISAC = "",
-		detail = "以能载心，以志劳心，以德守心。夫此三用，再无移易，道心不外如是。\n\n作曲：melo"
+		detail = "以能载心，以志劳心，以德守心。夫此三用，再无移易，道心不外如是。\n\n作曲：MeLo"
 	},
 	{
 		cueName = "bgm_activity_2_8_battle_jivitabad_slum",
@@ -3247,7 +3247,7 @@
 	},
 	{
 		cueName = "bgm_activity_3_6_rogue_xuheng_title",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 21,
 		cuesheet = "bgm_activity_3_6_rogue_xuheng_title",
@@ -3255,11 +3255,11 @@
 		id = 264,
 		awbName = "bgm_activity_3_6_rogue_xuheng_title",
 		initAISAC = "",
-		detail = "百转千回，踏过峰峦叠嶂。蓦然回首，坐看过眼云烟。\n\n作曲：melo"
+		detail = "百转千回，踏过峰峦叠嶂。蓦然回首，坐看过眼云烟。\n\n作曲：MeLo"
 	},
 	{
 		cueName = "bgm_activity_3_6_rogue_xuheng_rest",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 21,
 		cuesheet = "bgm_activity_3_6_rogue_xuheng_rest",
@@ -3267,11 +3267,11 @@
 		id = 265,
 		awbName = "bgm_activity_3_6_rogue_xuheng_rest",
 		initAISAC = "",
-		detail = "作曲：melo"
+		detail = "作曲：MeLo"
 	},
 	{
 		cueName = "bgm_activity_3_6_rogue_xuheng_NE",
-		authorName = "melo",
+		authorName = "MeLo",
 		ableBGM = 1,
 		album = 21,
 		cuesheet = "bgm_activity_3_6_rogue_xuheng_NE",
@@ -3279,7 +3279,7 @@
 		id = 266,
 		awbName = "bgm_activity_3_6_rogue_xuheng_NE",
 		initAISAC = "",
-		detail = "作曲：melo"
+		detail = "作曲：MeLo"
 	},
 	{
 		cueName = "bgm_minigame_4",
@@ -3749,7 +3749,462 @@
 		initAISAC = "",
 		detail = "当我们选择踏入暴风骤雨，就不再有折返的权力，唯一能做的便是向前走，无论穿过它，还是被淹没。\n\n作曲：Polymath9\n编曲：HJLL"
 	},
+	{
+		cueName = "bgm_activity_3_11_minigame_music_2",
+		authorName = "暖@よみぃ",
+		ableBGM = 1,
+		album = 23,
+		cuesheet = "bgm_activity_3_11_minigame_music_2",
+		musicName = "MUSEDASH!!!!",
+		id = 306,
+		awbName = "bgm_activity_3_11_minigame_music_2",
+		initAISAC = "",
+		detail = "作曲：暖@よみぃ"
+	},
+	{
+		cueName = "bgm_activity_3_11_minigame_music_4",
+		authorName = "DJ Noriken & aran",
+		ableBGM = 1,
+		album = 23,
+		cuesheet = "bgm_activity_3_11_minigame_music_4",
+		musicName = "Comet Coaster",
+		id = 307,
+		awbName = "bgm_activity_3_11_minigame_music_4",
+		initAISAC = "",
+		detail = "作曲：DJ Noriken & aran"
+	},
+	{
+		cueName = "bgm_activity_3_11_minigame_music_6",
+		authorName = "Scheol X M2U",
+		ableBGM = 1,
+		album = 23,
+		cuesheet = "bgm_activity_3_11_minigame_music_6",
+		musicName = "Tanuki Step",
+		id = 308,
+		awbName = "bgm_activity_3_11_minigame_music_6",
+		initAISAC = "",
+		detail = "作曲：Scheol X M2U"
+	},
+	{
+		cueName = "bgm_activity_3_11_minigame_music_7",
+		authorName = "Polymath9/LousikAEy",
+		ableBGM = 1,
+		album = 23,
+		cuesheet = "bgm_activity_3_11_minigame_music_7",
+		musicName = "Reverie on World Strings",
+		id = 309,
+		awbName = "bgm_activity_3_11_minigame_music_7",
+		initAISAC = "",
+		detail = "拉长的时间排成琴弦，路过了世界模糊溶解。弦上的我们一步一步，和鸣曾耀眼的天空与大地的碎片。\n\n曲名：Reverie on World Strings\n副标题：世界弦上的遐想\n作曲：Polymath9/LousikAEy\n编曲：LousikAEy/Polymath9"
+	},
+	{
+		cueName = "bgm_activity_3_11_minigame_music_8",
+		authorName = "Polymath9/LousikAEy",
+		ableBGM = 1,
+		album = 23,
+		cuesheet = "bgm_activity_3_11_minigame_music_8",
+		musicName = "; ne m'oublie pas",
+		id = 310,
+		awbName = "bgm_activity_3_11_minigame_music_8",
+		initAISAC = "",
+		detail = "——在黄昏结束后的每一次触碰，明天到来前的每一次呼吸。\n\n曲名：; ne m'oublie pas\n副标题：不要忘记我\n作曲：Polymath9/LousikAEy\n编曲：LousikAEy/Polymath9"
+	},
+	{
+		cueName = "bgm_activity_4_0_promotional_citong",
+		authorName = "Aria子鱼",
+		ableBGM = 1,
+		album = 24,
+		cuesheet = "bgm_activity_4_0_promotional_citong",
+		musicName = "七桃游逍遥",
+		id = 311,
+		awbName = "bgm_activity_4_0_promotional_citong",
+		initAISAC = "",
+		detail = "远客踏歌来，刺桐正喧嚣，烟火映长夜，欢喜趁今朝。\n\n演唱：Aria子鱼\n作曲：Tony Yan\n作词：林啟得\n混音：Hyoukuro"
+	},
+	{
+		cueName = "bgm_activity_4_0_scene_citong",
+		authorName = "MeLo",
+		ableBGM = 1,
+		album = 24,
+		cuesheet = "bgm_activity_4_0_scene_citong",
+		musicName = "客舟来",
+		id = 312,
+		awbName = "bgm_activity_4_0_scene_citong",
+		initAISAC = "",
+		detail = "作曲：MeLo"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_citong_daily",
+		authorName = "MeLo",
+		ableBGM = 1,
+		album = 24,
+		cuesheet = "bgm_activity_4_0_story_citong_daily",
+		musicName = "棹歌遥",
+		id = 313,
+		awbName = "bgm_activity_4_0_story_citong_daily",
+		initAISAC = "",
+		detail = "作曲：MeLo"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_citong_intense",
+		authorName = "MeLo",
+		ableBGM = 1,
+		album = 24,
+		cuesheet = "bgm_activity_4_0_story_citong_intense",
+		musicName = "风满襟",
+		id = 314,
+		awbName = "bgm_activity_4_0_story_citong_intense",
+		initAISAC = "",
+		detail = "作曲：MeLo"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_citong_sail",
+		authorName = "Tony Yan",
+		ableBGM = 1,
+		album = 24,
+		cuesheet = "bgm_activity_4_0_story_citong_sail",
+		musicName = "踏浪行",
+		id = 315,
+		awbName = "bgm_activity_4_0_story_citong_sail",
+		initAISAC = "",
+		detail = "作曲：Tony Yan"
+	},
+	{
+		cueName = "bgm_activity_4_0_promotional_1085",
+		authorName = "Sennzai",
+		ableBGM = 1,
+		album = 25,
+		cuesheet = "bgm_activity_4_0_promotional_1085",
+		musicName = "Redemption",
+		id = 316,
+		awbName = "bgm_activity_4_0_promotional_1085",
+		initAISAC = "",
+		detail = "我们的身影曾映照在无数的碎片中，近在咫尺，却又破碎不堪。\n但它们终将弥合，手与心会再度交汇，穿过幻景，撕开荆棘，通向……\n唯一的未来。\n\n演唱：Sennzai\n作曲：Polymath9\n编曲：VeetaCrush\n作词：大九_LN\n人声和声编写：Polymath9/LousikAEy"
+	},
+	{
+		cueName = "bgm_activity_4_0_promotional_1085_inst",
+		authorName = "VeetaCrush/Polymath9",
+		ableBGM = 1,
+		album = 25,
+		cuesheet = "bgm_activity_4_0_promotional_1085_inst",
+		musicName = "Redemption (Inst. Ver.)",
+		id = 317,
+		awbName = "bgm_activity_4_0_promotional_1085_inst",
+		initAISAC = "",
+		detail = "作曲：VeetaCrush/Polymath9\n编曲：VeetaCrush"
+	},
+	{
+		cueName = "bgm_activity_4_0_ui_1085_inst",
+		authorName = "Polymath9/LousikAEy",
+		ableBGM = 1,
+		album = 25,
+		cuesheet = "bgm_activity_4_0_ui_1085_inst",
+		musicName = "Ease into blank",
+		id = 318,
+		awbName = "bgm_activity_4_0_ui_1085_inst",
+		initAISAC = "",
+		detail = "每一天都是新的一天，带着空白的回忆与过去眺望窗外。未来……究竟是什么样子的呢？\n\n曲名：Ease into blank\n副标题：惘然入梦\n作曲：Polymath9\n编曲：Polymath9/LousikAEy"
+	},
+	{
+		cueName = "bgm_activity_4_0_ui_1085_vocal",
+		authorName = "Sennzai",
+		ableBGM = 1,
+		album = 25,
+		cuesheet = "bgm_activity_4_0_ui_1085_vocal",
+		musicName = "Wake with colors",
+		id = 319,
+		awbName = "bgm_activity_4_0_ui_1085_vocal",
+		initAISAC = "",
+		detail = "每一天都是新的一天，带着崭新的回忆与希望眺望窗外。未来……已经知道该怎样前往了。\n\n曲名：Wake with colors\n副标题：醒染晨曦\n演唱：Sennzai\n作曲：Polymath9\n编曲：Polymath9/LousikAEy"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_intro",
+		authorName = "Polymath9",
+		ableBGM = 1,
+		album = 25,
+		cuesheet = "bgm_activity_4_0_story_intro",
+		musicName = "Droplets of memories, merging into a stream",
+		id = 320,
+		awbName = "bgm_activity_4_0_story_intro",
+		initAISAC = "",
+		detail = "它们像是指尖的流沙，金黄灿烂。它们让人向往，让人怀念，却无法用力抓住，像是某些已经忘却的遗憾。\n\n曲名：Droplets of memories, merging into a stream\n副标题：记忆之滴汇聚成流\n作曲：Polymath9"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_lab",
+		authorName = "LousikAEy",
+		ableBGM = 1,
+		album = 25,
+		cuesheet = "bgm_activity_4_0_story_lab",
+		musicName = "Seek the origin",
+		id = 321,
+		awbName = "bgm_activity_4_0_story_lab",
+		initAISAC = "",
+		detail = "作曲：LousikAEy"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_daily",
+		authorName = "LousikAEy",
+		ableBGM = 1,
+		album = 25,
+		cuesheet = "bgm_activity_4_0_story_daily",
+		musicName = "Dancing world on your touch",
+		id = 322,
+		awbName = "bgm_activity_4_0_story_daily",
+		initAISAC = "",
+		detail = "曲名：Dancing world on your touch\n副标题：鲜活的世界在指尖流淌\n作曲：LousikAEy"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_park_night",
+		authorName = "Feather7",
+		ableBGM = 1,
+		album = 25,
+		cuesheet = "bgm_activity_4_0_story_park_night",
+		musicName = "Hold the moment with all I can",
+		id = 323,
+		awbName = "bgm_activity_4_0_story_park_night",
+		initAISAC = "",
+		detail = "曲名：Hold the moment with all I can\n副标题：将此刻珍藏在手心\n作曲：Feather7"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_loop_intense",
+		authorName = "Polymath9",
+		ableBGM = 1,
+		album = 25,
+		cuesheet = "bgm_activity_4_0_story_loop_intense",
+		musicName = "Shadow fades behind, quietly in secret",
+		id = 324,
+		awbName = "bgm_activity_4_0_story_loop_intense",
+		initAISAC = "",
+		detail = "她走过整条街道，不引起任何波澜。\n世界与她擦身而过，带走了所有气息。\n\n曲名：Shadow fades behind, quietly in secret\n副标题：渐隐于盲区之影\n作曲：Polymath9"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_sad",
+		authorName = "Polymath9",
+		ableBGM = 1,
+		album = 25,
+		cuesheet = "bgm_activity_4_0_story_sad",
+		musicName = "Lost alone, in where memories sleep",
+		id = 325,
+		awbName = "bgm_activity_4_0_story_sad",
+		initAISAC = "",
+		detail = "曲名：Lost alone, in where memories sleep\n副标题：迷失在回忆的尽头\n作曲：Polymath9"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_park_heart",
+		authorName = "Polymath9",
+		ableBGM = 1,
+		album = 25,
+		cuesheet = "bgm_activity_4_0_story_park_heart",
+		musicName = "The place in memories",
+		id = 326,
+		awbName = "bgm_activity_4_0_story_park_heart",
+		initAISAC = "",
+		detail = "是脑海中依稀存留的背景音，总代表着欢笑与期盼。\n可是，为什么呢……？\n\n作曲：Polymath9"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_found",
+		authorName = "Polymath9",
+		ableBGM = 1,
+		album = 25,
+		cuesheet = "bgm_activity_4_0_story_found",
+		musicName = "With you, till the end",
+		id = 327,
+		awbName = "bgm_activity_4_0_story_found",
+		initAISAC = "",
+		detail = "我们的轨迹会再度相遇，没有任何循环能够阻止。\n现在，让我们一起前行吧。向着希望，向着明天。\n\n曲名：With you, till the end\n副标题：重逢，然后迈向明天\n作曲：Polymath9"
+	},
+	{
+		cueName = "bgm_login_4_0",
+		authorName = "VeetaCrush",
+		ableBGM = 1,
+		album = 1,
+		cuesheet = "bgm_login_4_0",
+		musicName = "GAEA: Initialization",
+		id = 328,
+		awbName = "bgm_login_4_0",
+		initAISAC = "",
+		detail = "未来的曙光已在远方展现。\n我们将伸手，触碰更美好的希望。\n\n作曲：VeetaCrush"
+	},
+	{
+		cueName = "bgm_activity_4_0_ui_shashvat",
+		authorName = "VeetaCrush",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_ui_shashvat",
+		musicName = "Transcendence of Suffering",
+		id = 329,
+		awbName = "bgm_activity_4_0_ui_shashvat",
+		initAISAC = "",
+		detail = "在泥土中仰望星辰，在绝望中祈盼光明。\n请许我一双翅膀，飞跃苦难，终抵彼岸。\n\n曲名：Transcendence of Suffering\n副标题：苦岸行旅\n作曲：VeetaCrush"
+	},
+	{
+		cueName = "bgm_activity_4_0_battle_shashvat_sewer",
+		authorName = "S9ryne",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_battle_shashvat_sewer",
+		musicName = "Hunt in Hub",
+		id = 330,
+		awbName = "bgm_activity_4_0_battle_shashvat_sewer",
+		initAISAC = "",
+		detail = "作曲：S9ryne"
+	},
+	{
+		cueName = "bgm_activity_4_0_battle_shashvat_source",
+		authorName = "HJLL",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_battle_shashvat_source",
+		musicName = "Shifting Realm",
+		id = 331,
+		awbName = "bgm_activity_4_0_battle_shashvat_source",
+		initAISAC = "",
+		detail = "作曲：HJLL"
+	},
+	{
+		cueName = "bgm_activity_4_0_battle_boss_4047_1",
+		authorName = "LousikAEy",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_battle_boss_4047_1",
+		musicName = "The Forgotten Forbidden",
+		id = 332,
+		awbName = "bgm_activity_4_0_battle_boss_4047_1",
+		initAISAC = "",
+		detail = "被遗忘的正在复苏，被抛弃的正在腐烂。\n她是被催生的毒草，随绝望的浇灌茁壮成长，直至遮天蔽日。\n\n作曲：LousikAEy"
+	},
+	{
+		cueName = "bgm_activity_4_0_battle_boss_4047_2",
+		authorName = "Polymath9/LousikAEy",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_battle_boss_4047_2",
+		musicName = "Burst Through Oblivion, Defy the Doom",
+		id = 333,
+		awbName = "bgm_activity_4_0_battle_boss_4047_2",
+		initAISAC = "",
+		detail = "即使世界崩坏，即使毁灭将至，即使一切行将注定，\n我也会冲向天空，打碎压下的命运！\n\n曲名：Burst Through Oblivion, Defy the Doom\n作曲：Polymath9\n编曲：Polymath9/LousikAEy\n混音：LousikAEy"
+	},
+	{
+		cueName = "bgm_activity_4_0_battle_shashvat_city",
+		authorName = "LousikAEy",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_battle_shashvat_city",
+		musicName = "Striving after Apocalypse",
+		id = 334,
+		awbName = "bgm_activity_4_0_battle_shashvat_city",
+		initAISAC = "",
+		detail = "作曲：LousikAEy"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_shashvat_sewer",
+		authorName = "LousikAEy",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_story_shashvat_sewer",
+		musicName = "Veiled Beneath Dust",
+		id = 335,
+		awbName = "bgm_activity_4_0_story_shashvat_sewer",
+		initAISAC = "",
+		detail = "作曲：LousikAEy"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_quake_unsettled",
+		authorName = "Polymath9",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_story_quake_unsettled",
+		musicName = "Drifting Through Unknowns",
+		id = 336,
+		awbName = "bgm_activity_4_0_story_quake_unsettled",
+		initAISAC = "",
+		detail = "曲名：Drifting Through Unknowns\n作曲：Polymath9"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_quake_daily",
+		authorName = "LousikAEy",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_story_quake_daily",
+		musicName = "City Falls Asleep",
+		id = 337,
+		awbName = "bgm_activity_4_0_story_quake_daily",
+		initAISAC = "",
+		detail = "作曲：LousikAEy"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_quake_battle",
+		authorName = "LousikAEy",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_story_quake_battle",
+		musicName = "Hostile Homeland",
+		id = 338,
+		awbName = "bgm_activity_4_0_story_quake_battle",
+		initAISAC = "",
+		detail = "作曲：LousikAEy"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_shashvat_source",
+		authorName = "LousikAEy",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_story_shashvat_source",
+		musicName = "Exile to the Root",
+		id = 339,
+		awbName = "bgm_activity_4_0_story_shashvat_source",
+		initAISAC = "",
+		detail = "作曲：LousikAEy"
+	},
+	{
+		cueName = "bgm_activity_4_0_story_osiris_room",
+		authorName = "Polymath9",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_story_osiris_room",
+		musicName = "Whispering Labyrinth",
+		id = 340,
+		awbName = "bgm_activity_4_0_story_osiris_room",
+		initAISAC = "",
+		detail = "熟悉又陌生的房间低语着绝望，再度化身为锁闭的囚笼。\n黑暗正在翻腾，这一次，还会有光明照入吗？\n\n作曲：Polymath9"
+	},
 	get_id_list_by_album = {
+		[26] = {
+			329,
+			330,
+			331,
+			332,
+			333,
+			334,
+			335,
+			336,
+			337,
+			338,
+			339,
+			340
+		},
+		[25] = {
+			316,
+			317,
+			318,
+			319,
+			320,
+			321,
+			322,
+			323,
+			324,
+			325,
+			326,
+			327
+		},
+		[24] = {
+			311,
+			312,
+			313,
+			314,
+			315
+		},
 		[23] = {
 			288,
 			289,
@@ -3768,7 +4223,12 @@
 			302,
 			303,
 			304,
-			305
+			305,
+			306,
+			307,
+			308,
+			309,
+			310
 		},
 		[22] = {
 			276,
@@ -4099,7 +4559,8 @@
 			29,
 			30,
 			201,
-			202
+			202,
+			328
 		}
 	},
 	all = {
@@ -4407,6 +4868,41 @@
 		302,
 		303,
 		304,
-		305
+		305,
+		306,
+		307,
+		308,
+		309,
+		310,
+		311,
+		312,
+		313,
+		314,
+		315,
+		316,
+		317,
+		318,
+		319,
+		320,
+		321,
+		322,
+		323,
+		324,
+		325,
+		326,
+		327,
+		328,
+		329,
+		330,
+		331,
+		332,
+		333,
+		334,
+		335,
+		336,
+		337,
+		338,
+		339,
+		340
 	}
 }

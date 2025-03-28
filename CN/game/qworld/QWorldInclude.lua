@@ -15,3 +15,4 @@ QWorldGoto = import("game.qworld.go.QWorldGoto")
 QWorldGoto:Init()
 
 QWorldNotifyQueue = import("game.qworld.gameMgr.QWorldNotifyQueue")
+QWorldQuanzhouNotify = import("game.qworld.gameMgr.QWorldQuanzhouNotify")

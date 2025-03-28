@@ -33,7 +33,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1)
 
 	local var_5_0 = PublicBuffCfg[arg_5_0.cfg.affix_id]
 
-	arg_5_0.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/BuffIcon/" .. var_5_0.icon)
+	arg_5_0.icon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/BuffIcon/" .. var_5_0.icon)
 end
 
 function var_0_0.OnExit(arg_6_0)

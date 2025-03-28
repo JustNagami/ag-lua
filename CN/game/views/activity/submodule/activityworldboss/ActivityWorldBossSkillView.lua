@@ -33,7 +33,7 @@ function var_0_0.OnEnter(arg_8_0)
 	local var_8_0 = arg_8_0.params_.bossID
 
 	arg_8_0.bossID_ = var_8_0
-	arg_8_0.portraitImage_.sprite = getSpriteWithoutAtlas(string.format("TextureConfig/MardukUI/boss/solo582x648/%s", var_8_0))
+	arg_8_0.portraitImage_.sprite = pureGetSpriteWithoutAtlas(string.format("TextureConfig/MardukUI/boss/solo582x648/%s", var_8_0))
 
 	local var_8_1 = MonsterCfg[var_8_0]
 

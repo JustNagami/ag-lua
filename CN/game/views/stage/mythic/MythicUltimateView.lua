@@ -59,7 +59,6 @@ function var_0_0.AddUIListeners(arg_5_0)
 end
 
 function var_0_0.OnEnter(arg_12_0)
-	getSpriteWithoutAtlas("TextureConfig/Item_l/40701")
 	arg_12_0:RegistEventListener(MATERIAL_MODIFY, handler(arg_12_0, arg_12_0.RefreshMaterial))
 
 	if not RankData:GetCommonRank(RankConst.RANK_ID.MYTHIC) then

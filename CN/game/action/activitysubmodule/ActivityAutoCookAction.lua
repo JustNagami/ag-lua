@@ -33,6 +33,10 @@ function var_0_0.AutoCookStageFinish(arg_4_0, arg_4_1, arg_4_2, arg_4_3)
 		hero_id = arg_4_2
 	}, 86019, function(arg_5_0, arg_5_1)
 		if isSuccess(arg_5_0.result) then
+			if arg_4_3 ~= nil then
+				arg_4_3()
+			end
+
 			ActivityAutoCookData:FinishStage(arg_5_1.stage_id)
 		else
 			ShowTips(GetTips(arg_5_0.result))

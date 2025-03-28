@@ -254,13 +254,13 @@
 
 			if var_10_5 <= arg_7_1.time_ and arg_7_1.time_ < var_10_5 + var_10_8 then
 				local var_10_9 = (arg_7_1.time_ - var_10_5) / var_10_8
-				local var_10_10 = Vector3.New(150.77, -446.9, 7.24)
+				local var_10_10 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_10_4.localPosition = Vector3.Lerp(arg_7_1.var_.moveOldPos1071, var_10_10, var_10_9)
 			end
 
 			if arg_7_1.time_ >= var_10_5 + var_10_8 and arg_7_1.time_ < var_10_5 + var_10_8 + arg_10_0 then
-				var_10_4.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_10_4.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_10_11 = arg_7_1.actors_["1071"]
@@ -422,13 +422,13 @@
 
 			if var_14_1 <= arg_11_1.time_ and arg_11_1.time_ < var_14_1 + var_14_4 then
 				local var_14_5 = (arg_11_1.time_ - var_14_1) / var_14_4
-				local var_14_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_14_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_14_0.localPosition = Vector3.Lerp(arg_11_1.var_.moveOldPos1071, var_14_6, var_14_5)
 			end
 
 			if arg_11_1.time_ >= var_14_1 + var_14_4 and arg_11_1.time_ < var_14_1 + var_14_4 + arg_14_0 then
-				var_14_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_14_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_14_7 = arg_11_1.actors_["1071"]
@@ -590,13 +590,13 @@
 
 			if var_18_1 <= arg_15_1.time_ and arg_15_1.time_ < var_18_1 + var_18_4 then
 				local var_18_5 = (arg_15_1.time_ - var_18_1) / var_18_4
-				local var_18_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_18_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_18_0.localPosition = Vector3.Lerp(arg_15_1.var_.moveOldPos1071, var_18_6, var_18_5)
 			end
 
 			if arg_15_1.time_ >= var_18_1 + var_18_4 and arg_15_1.time_ < var_18_1 + var_18_4 + arg_18_0 then
-				var_18_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_18_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_18_7 = arg_15_1.actors_["1071"]
@@ -758,13 +758,13 @@
 
 			if var_22_1 <= arg_19_1.time_ and arg_19_1.time_ < var_22_1 + var_22_4 then
 				local var_22_5 = (arg_19_1.time_ - var_22_1) / var_22_4
-				local var_22_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_22_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_22_0.localPosition = Vector3.Lerp(arg_19_1.var_.moveOldPos1071, var_22_6, var_22_5)
 			end
 
 			if arg_19_1.time_ >= var_22_1 + var_22_4 and arg_19_1.time_ < var_22_1 + var_22_4 + arg_22_0 then
-				var_22_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_22_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_22_7 = arg_19_1.actors_["1071"]
@@ -926,13 +926,13 @@
 
 			if var_26_1 <= arg_23_1.time_ and arg_23_1.time_ < var_26_1 + var_26_4 then
 				local var_26_5 = (arg_23_1.time_ - var_26_1) / var_26_4
-				local var_26_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_26_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_26_0.localPosition = Vector3.Lerp(arg_23_1.var_.moveOldPos1071, var_26_6, var_26_5)
 			end
 
 			if arg_23_1.time_ >= var_26_1 + var_26_4 and arg_23_1.time_ < var_26_1 + var_26_4 + arg_26_0 then
-				var_26_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_26_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_26_7 = arg_23_1.actors_["1071"]
@@ -1094,13 +1094,13 @@
 
 			if var_30_1 <= arg_27_1.time_ and arg_27_1.time_ < var_30_1 + var_30_4 then
 				local var_30_5 = (arg_27_1.time_ - var_30_1) / var_30_4
-				local var_30_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_30_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_30_0.localPosition = Vector3.Lerp(arg_27_1.var_.moveOldPos1071, var_30_6, var_30_5)
 			end
 
 			if arg_27_1.time_ >= var_30_1 + var_30_4 and arg_27_1.time_ < var_30_1 + var_30_4 + arg_30_0 then
-				var_30_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_30_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_30_7 = arg_27_1.actors_["1071"]
@@ -1262,13 +1262,13 @@
 
 			if var_34_1 <= arg_31_1.time_ and arg_31_1.time_ < var_34_1 + var_34_4 then
 				local var_34_5 = (arg_31_1.time_ - var_34_1) / var_34_4
-				local var_34_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_34_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_34_0.localPosition = Vector3.Lerp(arg_31_1.var_.moveOldPos1071, var_34_6, var_34_5)
 			end
 
 			if arg_31_1.time_ >= var_34_1 + var_34_4 and arg_31_1.time_ < var_34_1 + var_34_4 + arg_34_0 then
-				var_34_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_34_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_34_7 = arg_31_1.actors_["1071"]
@@ -1430,13 +1430,13 @@
 
 			if var_38_1 <= arg_35_1.time_ and arg_35_1.time_ < var_38_1 + var_38_4 then
 				local var_38_5 = (arg_35_1.time_ - var_38_1) / var_38_4
-				local var_38_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_38_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_38_0.localPosition = Vector3.Lerp(arg_35_1.var_.moveOldPos1071, var_38_6, var_38_5)
 			end
 
 			if arg_35_1.time_ >= var_38_1 + var_38_4 and arg_35_1.time_ < var_38_1 + var_38_4 + arg_38_0 then
-				var_38_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_38_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_38_7 = arg_35_1.actors_["1071"]
@@ -1598,13 +1598,13 @@
 
 			if var_42_1 <= arg_39_1.time_ and arg_39_1.time_ < var_42_1 + var_42_4 then
 				local var_42_5 = (arg_39_1.time_ - var_42_1) / var_42_4
-				local var_42_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_42_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_42_0.localPosition = Vector3.Lerp(arg_39_1.var_.moveOldPos1071, var_42_6, var_42_5)
 			end
 
 			if arg_39_1.time_ >= var_42_1 + var_42_4 and arg_39_1.time_ < var_42_1 + var_42_4 + arg_42_0 then
-				var_42_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_42_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_42_7 = arg_39_1.actors_["1071"]
@@ -1766,13 +1766,13 @@
 
 			if var_46_1 <= arg_43_1.time_ and arg_43_1.time_ < var_46_1 + var_46_4 then
 				local var_46_5 = (arg_43_1.time_ - var_46_1) / var_46_4
-				local var_46_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_46_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_46_0.localPosition = Vector3.Lerp(arg_43_1.var_.moveOldPos1071, var_46_6, var_46_5)
 			end
 
 			if arg_43_1.time_ >= var_46_1 + var_46_4 and arg_43_1.time_ < var_46_1 + var_46_4 + arg_46_0 then
-				var_46_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_46_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_46_7 = arg_43_1.actors_["1071"]
@@ -1934,13 +1934,13 @@
 
 			if var_50_1 <= arg_47_1.time_ and arg_47_1.time_ < var_50_1 + var_50_4 then
 				local var_50_5 = (arg_47_1.time_ - var_50_1) / var_50_4
-				local var_50_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_50_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_50_0.localPosition = Vector3.Lerp(arg_47_1.var_.moveOldPos1071, var_50_6, var_50_5)
 			end
 
 			if arg_47_1.time_ >= var_50_1 + var_50_4 and arg_47_1.time_ < var_50_1 + var_50_4 + arg_50_0 then
-				var_50_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_50_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_50_7 = arg_47_1.actors_["1071"]
@@ -2102,13 +2102,13 @@
 
 			if var_54_1 <= arg_51_1.time_ and arg_51_1.time_ < var_54_1 + var_54_4 then
 				local var_54_5 = (arg_51_1.time_ - var_54_1) / var_54_4
-				local var_54_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_54_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_54_0.localPosition = Vector3.Lerp(arg_51_1.var_.moveOldPos1071, var_54_6, var_54_5)
 			end
 
 			if arg_51_1.time_ >= var_54_1 + var_54_4 and arg_51_1.time_ < var_54_1 + var_54_4 + arg_54_0 then
-				var_54_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_54_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_54_7 = arg_51_1.actors_["1071"]
@@ -2270,13 +2270,13 @@
 
 			if var_58_1 <= arg_55_1.time_ and arg_55_1.time_ < var_58_1 + var_58_4 then
 				local var_58_5 = (arg_55_1.time_ - var_58_1) / var_58_4
-				local var_58_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_58_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_58_0.localPosition = Vector3.Lerp(arg_55_1.var_.moveOldPos1071, var_58_6, var_58_5)
 			end
 
 			if arg_55_1.time_ >= var_58_1 + var_58_4 and arg_55_1.time_ < var_58_1 + var_58_4 + arg_58_0 then
-				var_58_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_58_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_58_7 = arg_55_1.actors_["1071"]
@@ -2438,13 +2438,13 @@
 
 			if var_62_1 <= arg_59_1.time_ and arg_59_1.time_ < var_62_1 + var_62_4 then
 				local var_62_5 = (arg_59_1.time_ - var_62_1) / var_62_4
-				local var_62_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_62_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_62_0.localPosition = Vector3.Lerp(arg_59_1.var_.moveOldPos1071, var_62_6, var_62_5)
 			end
 
 			if arg_59_1.time_ >= var_62_1 + var_62_4 and arg_59_1.time_ < var_62_1 + var_62_4 + arg_62_0 then
-				var_62_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_62_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_62_7 = arg_59_1.actors_["1071"]
@@ -2606,13 +2606,13 @@
 
 			if var_66_1 <= arg_63_1.time_ and arg_63_1.time_ < var_66_1 + var_66_4 then
 				local var_66_5 = (arg_63_1.time_ - var_66_1) / var_66_4
-				local var_66_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_66_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_66_0.localPosition = Vector3.Lerp(arg_63_1.var_.moveOldPos1071, var_66_6, var_66_5)
 			end
 
 			if arg_63_1.time_ >= var_66_1 + var_66_4 and arg_63_1.time_ < var_66_1 + var_66_4 + arg_66_0 then
-				var_66_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_66_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_66_7 = arg_63_1.actors_["1071"]
@@ -2774,13 +2774,13 @@
 
 			if var_70_1 <= arg_67_1.time_ and arg_67_1.time_ < var_70_1 + var_70_4 then
 				local var_70_5 = (arg_67_1.time_ - var_70_1) / var_70_4
-				local var_70_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_70_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_70_0.localPosition = Vector3.Lerp(arg_67_1.var_.moveOldPos1071, var_70_6, var_70_5)
 			end
 
 			if arg_67_1.time_ >= var_70_1 + var_70_4 and arg_67_1.time_ < var_70_1 + var_70_4 + arg_70_0 then
-				var_70_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_70_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_70_7 = arg_67_1.actors_["1071"]
@@ -2936,13 +2936,13 @@
 
 			if var_74_1 <= arg_71_1.time_ and arg_71_1.time_ < var_74_1 + var_74_4 then
 				local var_74_5 = (arg_71_1.time_ - var_74_1) / var_74_4
-				local var_74_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_74_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_74_0.localPosition = Vector3.Lerp(arg_71_1.var_.moveOldPos1071, var_74_6, var_74_5)
 			end
 
 			if arg_71_1.time_ >= var_74_1 + var_74_4 and arg_71_1.time_ < var_74_1 + var_74_4 + arg_74_0 then
-				var_74_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_74_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_74_7 = arg_71_1.actors_["1071"]
@@ -3104,13 +3104,13 @@
 
 			if var_78_1 <= arg_75_1.time_ and arg_75_1.time_ < var_78_1 + var_78_4 then
 				local var_78_5 = (arg_75_1.time_ - var_78_1) / var_78_4
-				local var_78_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_78_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_78_0.localPosition = Vector3.Lerp(arg_75_1.var_.moveOldPos1071, var_78_6, var_78_5)
 			end
 
 			if arg_75_1.time_ >= var_78_1 + var_78_4 and arg_75_1.time_ < var_78_1 + var_78_4 + arg_78_0 then
-				var_78_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_78_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_78_7 = arg_75_1.actors_["1071"]
@@ -3272,13 +3272,13 @@
 
 			if var_82_1 <= arg_79_1.time_ and arg_79_1.time_ < var_82_1 + var_82_4 then
 				local var_82_5 = (arg_79_1.time_ - var_82_1) / var_82_4
-				local var_82_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_82_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_82_0.localPosition = Vector3.Lerp(arg_79_1.var_.moveOldPos1071, var_82_6, var_82_5)
 			end
 
 			if arg_79_1.time_ >= var_82_1 + var_82_4 and arg_79_1.time_ < var_82_1 + var_82_4 + arg_82_0 then
-				var_82_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_82_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_82_7 = arg_79_1.actors_["1071"]
@@ -3440,13 +3440,13 @@
 
 			if var_86_1 <= arg_83_1.time_ and arg_83_1.time_ < var_86_1 + var_86_4 then
 				local var_86_5 = (arg_83_1.time_ - var_86_1) / var_86_4
-				local var_86_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_86_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_86_0.localPosition = Vector3.Lerp(arg_83_1.var_.moveOldPos1071, var_86_6, var_86_5)
 			end
 
 			if arg_83_1.time_ >= var_86_1 + var_86_4 and arg_83_1.time_ < var_86_1 + var_86_4 + arg_86_0 then
-				var_86_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_86_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_86_7 = arg_83_1.actors_["1071"]
@@ -3608,13 +3608,13 @@
 
 			if var_90_1 <= arg_87_1.time_ and arg_87_1.time_ < var_90_1 + var_90_4 then
 				local var_90_5 = (arg_87_1.time_ - var_90_1) / var_90_4
-				local var_90_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_90_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_90_0.localPosition = Vector3.Lerp(arg_87_1.var_.moveOldPos1071, var_90_6, var_90_5)
 			end
 
 			if arg_87_1.time_ >= var_90_1 + var_90_4 and arg_87_1.time_ < var_90_1 + var_90_4 + arg_90_0 then
-				var_90_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_90_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_90_7 = arg_87_1.actors_["1071"]
@@ -3776,13 +3776,13 @@
 
 			if var_94_1 <= arg_91_1.time_ and arg_91_1.time_ < var_94_1 + var_94_4 then
 				local var_94_5 = (arg_91_1.time_ - var_94_1) / var_94_4
-				local var_94_6 = Vector3.New(150.77, -446.9, 7.24)
+				local var_94_6 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_94_0.localPosition = Vector3.Lerp(arg_91_1.var_.moveOldPos1071, var_94_6, var_94_5)
 			end
 
 			if arg_91_1.time_ >= var_94_1 + var_94_4 and arg_91_1.time_ < var_94_1 + var_94_4 + arg_94_0 then
-				var_94_0.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_94_0.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_94_7 = arg_91_1.actors_["1071"]
@@ -3982,13 +3982,13 @@
 
 			if var_98_9 <= arg_95_1.time_ and arg_95_1.time_ < var_98_9 + var_98_12 then
 				local var_98_13 = (arg_95_1.time_ - var_98_9) / var_98_12
-				local var_98_14 = Vector3.New(150.77, -446.9, 7.24)
+				local var_98_14 = Vector3.New(13.6, -446.9, -45.9)
 
 				var_98_8.localPosition = Vector3.Lerp(arg_95_1.var_.moveOldPos1071, var_98_14, var_98_13)
 			end
 
 			if arg_95_1.time_ >= var_98_9 + var_98_12 and arg_95_1.time_ < var_98_9 + var_98_12 + arg_98_0 then
-				var_98_8.localPosition = Vector3.New(150.77, -446.9, 7.24)
+				var_98_8.localPosition = Vector3.New(13.6, -446.9, -45.9)
 			end
 
 			local var_98_15 = 0

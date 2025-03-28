@@ -23,7 +23,7 @@ end
 function var_0_0.SetData(arg_4_0, arg_4_1)
 	local var_4_0 = arg_4_1.id
 
-	arg_4_0.icon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_4_0))
+	arg_4_0.icon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetItemIcon(var_4_0))
 
 	arg_4_0:Show(true)
 end

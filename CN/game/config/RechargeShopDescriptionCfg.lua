@@ -895,6 +895,20 @@
 			102802
 		}
 	},
+	[105502] = {
+		name = "庆典遐思",
+		recommend_item = 0,
+		type = 8,
+		desc2 = "",
+		desc = "笹波女孩在节庆或是祭典时会穿的衣服，是因为要和管理员一起造访神社，暗御津羽特意换上的。\n「来来来，先帮我看看腰带系歪了没有。」",
+		desc_source = "",
+		sub_type = 0,
+		id = 105502,
+		icon = "105502",
+		param = {
+			105502
+		}
+	},
 	[6004] = {
 		name = "朱阁幽话",
 		recommend_item = 0,
@@ -3520,6 +3534,175 @@
 			{
 				20002,
 				3
+			}
+		}
+	},
+	[33201] = {
+		name = "免费",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "",
+		desc_source = "",
+		sub_type = 501,
+		id = 33201,
+		icon = "",
+		param = {
+			{
+				1,
+				100
+			}
+		}
+	},
+	[33202] = {
+		name = "6元-1付费",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "",
+		desc_source = "",
+		sub_type = 501,
+		id = 33202,
+		icon = "",
+		param = {
+			{
+				38,
+				1
+			},
+			{
+				1,
+				100
+			}
+		}
+	},
+	[33203] = {
+		name = "6元-1免费1",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "",
+		desc_source = "",
+		sub_type = 501,
+		id = 33203,
+		icon = "",
+		param = {
+			{
+				38,
+				1
+			}
+		}
+	},
+	[33204] = {
+		name = "6元-1免费2",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "",
+		desc_source = "",
+		sub_type = 501,
+		id = 33204,
+		icon = "",
+		param = {
+			{
+				1,
+				100
+			}
+		}
+	},
+	[33208] = {
+		name = "30元-1付费",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "",
+		desc_source = "",
+		sub_type = 501,
+		id = 33208,
+		icon = "",
+		param = {
+			{
+				38,
+				5
+			},
+			{
+				1,
+				200
+			}
+		}
+	},
+	[33209] = {
+		name = "30元-1免费1",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "",
+		desc_source = "",
+		sub_type = 501,
+		id = 33209,
+		icon = "",
+		param = {
+			{
+				38,
+				3
+			}
+		}
+	},
+	[33210] = {
+		name = "30元-1免费2",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "",
+		desc_source = "",
+		sub_type = 501,
+		id = 33210,
+		icon = "",
+		param = {
+			{
+				1,
+				200
+			}
+		}
+	},
+	[33214] = {
+		name = "98元-1付费",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "",
+		desc_source = "",
+		sub_type = 501,
+		id = 33214,
+		icon = "",
+		param = {
+			{
+				38,
+				14
+			},
+			{
+				1,
+				400
+			}
+		}
+	},
+	[33215] = {
+		name = "98元-1免费1",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "",
+		desc_source = "",
+		sub_type = 501,
+		id = 33215,
+		icon = "",
+		param = {
+			{
+				38,
+				6
+			},
+			{
+				1,
+				500
 			}
 		}
 	},
@@ -11640,6 +11823,293 @@
 			}
 		}
 	},
+	[34483] = {
+		name = "诗蔻蒂的赠礼",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "礼包内容：精确探测凭证x1。",
+		desc_source = "",
+		sub_type = 501,
+		id = 34483,
+		icon = "34154",
+		param = {
+			{
+				38,
+				1
+			}
+		}
+	},
+	[34484] = {
+		name = "乐园追忆庆典特惠券",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "礼包内容：限时精确探测凭证x20。",
+		desc_source = "",
+		sub_type = 505,
+		id = 34484,
+		icon = "34484",
+		param = {
+			{},
+			{
+				{
+					68,
+					5
+				}
+			},
+			4,
+			1040
+		}
+	},
+	[34485] = {
+		name = "幻梦胶卷庆典七日券",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "礼包内容：精确探测凭证x7,冷却剂·大号x7。",
+		desc_source = "",
+		sub_type = 505,
+		id = 34485,
+		icon = "34485",
+		param = {
+			{},
+			{
+				{
+					38,
+					1
+				},
+				{
+					20003,
+					1
+				}
+			},
+			7,
+			1039
+		}
+	},
+	[34486] = {
+		name = "早安小昙庆典组合包",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "礼包内容：精确探测凭证x10,钥从探测凭证x5,冷却剂·大号x10。",
+		desc_source = "",
+		sub_type = 501,
+		id = 34486,
+		icon = "34486",
+		param = {
+			{
+				38,
+				10
+			},
+			{
+				19,
+				5
+			},
+			{
+				20003,
+				10
+			}
+		}
+	},
+	[34487] = {
+		name = "晚安小昙庆典精确包",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "礼包内容：精确探测凭证x15,冷却剂·大号x8,重构秘仪x20。",
+		desc_source = "",
+		sub_type = 501,
+		id = 34487,
+		icon = "34487",
+		param = {
+			{
+				38,
+				15
+			},
+			{
+				20003,
+				8
+			},
+			{
+				40701,
+				20
+			}
+		}
+	},
+	[34488] = {
+		name = "幻梦回环之理精确特惠包",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "礼包内容：精确探测凭证x3,冷却剂·大号x3。",
+		desc_source = "",
+		sub_type = 501,
+		id = 34488,
+		icon = "34488",
+		param = {
+			{
+				38,
+				3
+			},
+			{
+				20003,
+				3
+			}
+		}
+	},
+	[34489] = {
+		name = "幻梦回环之理精确优选包",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "礼包内容：精确探测凭证x5,冷却剂·大号x8。",
+		desc_source = "",
+		sub_type = 501,
+		id = 34489,
+		icon = "34489",
+		param = {
+			{
+				38,
+				5
+			},
+			{
+				20003,
+				8
+			}
+		}
+	},
+	[34490] = {
+		name = "命运女神之锋精确组合包",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "礼包内容：精确探测凭证x7,重构秘仪x20。",
+		desc_source = "",
+		sub_type = 501,
+		id = 34490,
+		icon = "34454",
+		param = {
+			{
+				38,
+				7
+			},
+			{
+				40701,
+				20
+			}
+		}
+	},
+	[34491] = {
+		name = "命运女神之锋精确十连包",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "礼包内容：精确探测凭证x10,极致灵泉萃取液x24,冷却剂·大号x8。",
+		desc_source = "",
+		sub_type = 501,
+		id = 34491,
+		icon = "34455",
+		param = {
+			{
+				38,
+				10
+			},
+			{
+				40504,
+				24
+			},
+			{
+				20003,
+				8
+			}
+		}
+	},
+	[34492] = {
+		name = "绮望钥从组合包",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "礼包内容：钥从探测凭证x5,次级权能因子x24。",
+		desc_source = "",
+		sub_type = 501,
+		id = 34492,
+		icon = "34456",
+		param = {
+			{
+				19,
+				5
+			},
+			{
+				41301,
+				24
+			}
+		}
+	},
+	[34493] = {
+		name = "溯梦之隙修正优选包",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "礼包内容：修正者探测凭证x5,高级赋能模块x15。",
+		desc_source = "",
+		sub_type = 501,
+		id = 34493,
+		icon = "34457",
+		param = {
+			{
+				5,
+				5
+			},
+			{
+				40603,
+				15
+			}
+		}
+	},
+	[34494] = {
+		name = "溯梦之隙修正十连包",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "礼包内容：修正者探测凭证x10,重构秘仪x20,冷却剂·大号x8。",
+		desc_source = "",
+		sub_type = 501,
+		id = 34494,
+		icon = "34458",
+		param = {
+			{
+				5,
+				10
+			},
+			{
+				40701,
+				20
+			},
+			{
+				20003,
+				8
+			}
+		}
+	},
+	[34495] = {
+		name = "隐科组冷却剂支援包",
+		recommend_item = 0,
+		type = 5,
+		desc2 = "",
+		desc = "礼包内容：冷却剂·大号x5。",
+		desc_source = "",
+		sub_type = 501,
+		id = 34495,
+		icon = "34253",
+		param = {
+			{
+				20003,
+				5
+			}
+		}
+	},
 	[30041] = {
 		name = "庆典幸运心愿盒",
 		recommend_item = 0,
@@ -14679,6 +15149,7 @@
 		101201,
 		107503,
 		102802,
+		105502,
 		6004,
 		6005,
 		6006,
@@ -14787,6 +15258,15 @@
 		33103,
 		33104,
 		33105,
+		33201,
+		33202,
+		33203,
+		33204,
+		33208,
+		33209,
+		33210,
+		33214,
+		33215,
 		34011,
 		34012,
 		34013,
@@ -15151,6 +15631,19 @@
 		34480,
 		34481,
 		34482,
+		34483,
+		34484,
+		34485,
+		34486,
+		34487,
+		34488,
+		34489,
+		34490,
+		34491,
+		34492,
+		34493,
+		34494,
+		34495,
 		30041,
 		30042,
 		30043,

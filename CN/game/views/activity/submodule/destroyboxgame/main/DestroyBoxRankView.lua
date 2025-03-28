@@ -214,7 +214,7 @@ function var_0_0.Refresh(arg_17_0, arg_17_1, arg_17_2, arg_17_3)
 		local var_17_8 = HeroCfg[arg_17_3]
 		local var_17_9 = arg_17_0:GetHeroSkinID(arg_17_3)
 
-		arg_17_0.m_heroIcon.sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. var_17_9)
+		arg_17_0.m_heroIcon.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroLittleIcon.path .. var_17_9)
 		arg_17_0.m_heroNameText_.text = string.format("%s·%s", var_17_8.name, var_17_8.suffix)
 
 		if arg_17_0.heroAnimator_ then

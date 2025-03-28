@@ -3,6 +3,7 @@
 		story_id = 910201011,
 		picture_path = "bg_activity_birthday_1",
 		commemorative_props_id = 70001,
+		new_birthday_appendix = "",
 		id = 1,
 		appendix_id = 70000,
 		reward_item_list = {
@@ -16,6 +17,7 @@
 		story_id = 910202011,
 		picture_path = "bg_activity_birthday_2",
 		commemorative_props_id = 70003,
+		new_birthday_appendix = "",
 		id = 2,
 		appendix_id = 70002,
 		reward_item_list = {
@@ -35,6 +37,16 @@
 			{
 				4,
 				120
+			}
+		},
+		new_birthday_appendix = {
+			{
+				70005,
+				1
+			},
+			{
+				20003,
+				1
 			}
 		}
 	},

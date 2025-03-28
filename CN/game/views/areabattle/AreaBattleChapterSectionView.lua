@@ -262,7 +262,7 @@ end
 
 function var_0_0.RefreshTitleDesc(arg_19_0)
 	arg_19_0.nameTxt_.text = arg_19_0.cfg.name
-	arg_19_0.bgIcon_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, BattleAreaBattleCfg[arg_19_0.stageID].background_1))
+	arg_19_0.bgIcon_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, BattleAreaBattleCfg[arg_19_0.stageID].background_1))
 end
 
 function var_0_0.Dispose(arg_20_0)

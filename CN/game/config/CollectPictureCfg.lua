@@ -4141,6 +4141,234 @@
 			}
 		}
 	},
+	[3210101] = {
+		name = "探寻心语",
+		type = 1,
+		unlock_condition = 800,
+		picture = "MS2101",
+		group_display_order = 1,
+		desc = "身处心理互助小组的活动现场，伊里伽尔开口分享了自己过往的些许经历。",
+		id = 3210101,
+		group_id = 100197,
+		additional_parameter = {
+			103210101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[3210102] = {
+		name = "探寻心语",
+		type = 1,
+		unlock_condition = 800,
+		picture = "MS2101a",
+		group_display_order = 2,
+		desc = "身处心理互助小组的活动现场，伊里伽尔开口分享了自己过往的些许经历。",
+		id = 3210102,
+		group_id = 100197,
+		additional_parameter = {
+			103210101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[3210601] = {
+		name = "二次重逢",
+		type = 1,
+		unlock_condition = 800,
+		picture = "MS2102",
+		group_display_order = 1,
+		desc = "时隔几日，在管理员安排的住处中，管理员与诗蔻蒂再次相见。",
+		id = 3210601,
+		group_id = 100198,
+		additional_parameter = {
+			103210601
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[3210801] = {
+		name = "狩猎季节",
+		type = 1,
+		unlock_condition = 800,
+		picture = "MS2103",
+		group_display_order = 1,
+		desc = "猎人与猎物的身份转换，往往只在刹那之间。",
+		id = 3210801,
+		group_id = 100199,
+		additional_parameter = {
+			103210801
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[3210802] = {
+		name = "狩猎季节",
+		type = 1,
+		unlock_condition = 800,
+		picture = "MS2103a",
+		group_display_order = 2,
+		desc = "猎人与猎物的身份转换，往往只在刹那之间。",
+		id = 3210802,
+		group_id = 100199,
+		additional_parameter = {
+			103210801
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[3211001] = {
+		name = "焰雨焚生",
+		type = 1,
+		unlock_condition = 800,
+		picture = "MS2104",
+		group_display_order = 1,
+		desc = "劫难从天空浮现，似乎要焚毁大地上的一切。",
+		id = 3211001,
+		group_id = 100200,
+		additional_parameter = {
+			103211001
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[3211601] = {
+		name = "彼时所见",
+		type = 1,
+		unlock_condition = 800,
+		picture = "MS2105",
+		group_display_order = 1,
+		desc = "在那一瞬间，她朦胧的预感仿佛就要应验。",
+		id = 3211601,
+		group_id = 100201,
+		additional_parameter = {
+			103211601
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[3212201] = {
+		name = "存在的意义",
+		type = 1,
+		unlock_condition = 800,
+		picture = "MS2106",
+		group_display_order = 1,
+		desc = "「别多想，只是我被创造出来时所赋予的，应该做的事情罢了……」",
+		id = 3212201,
+		group_id = 100202,
+		additional_parameter = {
+			103212201
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[3212301] = {
+		name = "死兆高悬",
+		type = 1,
+		unlock_condition = 800,
+		picture = "MS2107",
+		group_display_order = 1,
+		desc = "这距离仿佛触手可及，却又好似比天涯更加遥远。",
+		id = 3212301,
+		group_id = 100203,
+		additional_parameter = {
+			103212301
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[3212302] = {
+		name = "死兆高悬",
+		type = 1,
+		unlock_condition = 800,
+		picture = "MS2107a",
+		group_display_order = 2,
+		desc = "这距离仿佛触手可及，却又好似比天涯更加遥远。",
+		id = 3212302,
+		group_id = 100203,
+		additional_parameter = {
+			103212301
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[3212303] = {
+		name = "前路的尽头",
+		type = 1,
+		unlock_condition = 800,
+		picture = "MS2108",
+		group_display_order = 1,
+		desc = "「果然……这里就是，属于我的归宿吗……」",
+		id = 3212303,
+		group_id = 100204,
+		additional_parameter = {
+			103212302
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[3212501] = {
+		name = "心灵的回应",
+		type = 1,
+		unlock_condition = 800,
+		picture = "MS2114",
+		group_display_order = 1,
+		desc = "从深渊仰望光明……然后展翅翱翔。",
+		id = 3212501,
+		group_id = 100205,
+		additional_parameter = {
+			103212501
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
 	[2105911] = {
 		name = "小女孩的大英雄",
 		type = 2,
@@ -8435,6 +8663,196 @@
 			}
 		}
 	},
+	[32042201] = {
+		name = "良夜存影",
+		type = 3,
+		unlock_condition = 800,
+		picture = "SS2001",
+		group_display_order = 1,
+		desc = "无虑的夜晚，颠簸的摩天轮和好久不见的你。",
+		id = 32042201,
+		group_id = 300144,
+		additional_parameter = {
+			104200402
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[32042202] = {
+		name = "良夜存影",
+		type = 3,
+		unlock_condition = 800,
+		picture = "SS2001a",
+		group_display_order = 2,
+		desc = "无虑的夜晚，颠簸的摩天轮和好久不见的你。",
+		id = 32042202,
+		group_id = 300144,
+		additional_parameter = {
+			104200402
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[32017101] = {
+		name = "瞬眼平生",
+		type = 3,
+		unlock_condition = 800,
+		picture = "SS2002",
+		group_display_order = 1,
+		desc = "似曾相识，未曾相遇，直至走到空白的尽头，才发现你一直等在那里。",
+		id = 32017101,
+		group_id = 300145,
+		additional_parameter = {
+			104201201
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[32017102] = {
+		name = "瞬眼平生",
+		type = 3,
+		unlock_condition = 800,
+		picture = "SS2002a",
+		group_display_order = 2,
+		desc = "似曾相识，未曾相遇，直至走到空白的尽头，才发现你一直等在那里。",
+		id = 32017102,
+		group_id = 300145,
+		additional_parameter = {
+			104201201
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[32019201] = {
+		name = "明日之约",
+		type = 3,
+		unlock_condition = 800,
+		picture = "SS2004",
+		group_display_order = 1,
+		desc = "穿过命运的缝隙，追逐时钟的指针，确定每个明天都有你的存在。",
+		id = 32019201,
+		group_id = 300146,
+		additional_parameter = {
+			104201901
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[31042111] = {
+		name = "明日之约",
+		type = 3,
+		unlock_condition = 800,
+		picture = "SS2004a",
+		group_display_order = 2,
+		desc = "穿过命运的缝隙，追逐时钟的指针，确定每个明天都有你的存在。",
+		id = 31042111,
+		group_id = 300146,
+		additional_parameter = {
+			104201901
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[31042113] = {
+		name = "重逢的你",
+		type = 3,
+		unlock_condition = 800,
+		picture = "SS2005",
+		group_display_order = 1,
+		desc = "跨越时间和空间，我们终将重逢。",
+		id = 31042113,
+		group_id = 300147,
+		additional_parameter = {
+			104201702
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[31810101] = {
+		name = "古船出航",
+		type = 3,
+		unlock_condition = 800,
+		picture = "SS1801",
+		group_display_order = 1,
+		desc = "船上和船下，从前和现在，是两代人的记忆。",
+		id = 31810101,
+		group_id = 300148,
+		additional_parameter = {
+			104181001
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[31810102] = {
+		name = "古船出航",
+		type = 3,
+		unlock_condition = 800,
+		picture = "SS1801a",
+		group_display_order = 2,
+		desc = "船上和船下，从前和现在，是两代人的记忆。",
+		id = 31810102,
+		group_id = 300148,
+		additional_parameter = {
+			104181001
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[31811101] = {
+		name = "刺桐依旧",
+		type = 3,
+		unlock_condition = 800,
+		picture = "SS1802",
+		group_display_order = 1,
+		desc = "刺桐还是那个刺桐，而现如今的人们，将会去往更美好的未来。",
+		id = 31811101,
+		group_id = 300149,
+		additional_parameter = {
+			104181101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
 	[40000001] = {
 		name = "管理员的生日",
 		type = 4,
@@ -8511,7 +8929,4551 @@
 			}
 		}
 	},
+	[50000001] = {
+		name = "光轨",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_1",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000001,
+		group_id = 500001,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000002] = {
+		name = "源层",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_2",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000002,
+		group_id = 500002,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000003] = {
+		name = "视骸灾害",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_3",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000003,
+		group_id = 500003,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000004] = {
+		name = "欧莫菲斯·宅邸",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_5",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000004,
+		group_id = 500005,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000005] = {
+		name = "盖亚·一",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_7",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000005,
+		group_id = 500006,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000006] = {
+		name = "视骸",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_8",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000006,
+		group_id = 500007,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000007] = {
+		name = "薇儿丹蒂",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_12",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000007,
+		group_id = 500009,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000008] = {
+		name = "第九部门",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_13",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000008,
+		group_id = 500010,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000009] = {
+		name = "赫尔墨斯",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_14",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000009,
+		group_id = 500011,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000010] = {
+		name = "工厂",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_15",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000010,
+		group_id = 500012,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000011] = {
+		name = "智械展台",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_16",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000011,
+		group_id = 500013,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000012] = {
+		name = "修正者们",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_17",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000012,
+		group_id = 500014,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000013] = {
+		name = "盖亚·二",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_18",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000013,
+		group_id = 500015,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000014] = {
+		name = "艾因索菲·街道",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_19",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000014,
+		group_id = 500016,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000015] = {
+		name = "意识上传",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_23",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000015,
+		group_id = 500017,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000016] = {
+		name = "艾因索菲·西岸核心城",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_24",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000016,
+		group_id = 500018,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000017] = {
+		name = "依托比尔轴",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_25",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000017,
+		group_id = 500019,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000018] = {
+		name = "铃兰团",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_26",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000018,
+		group_id = 500020,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000019] = {
+		name = "神系",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_29",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000019,
+		group_id = 500021,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000020] = {
+		name = "阿尔蒂斯盛典",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_31",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000020,
+		group_id = 500022,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000021] = {
+		name = "千星学院",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_32",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000021,
+		group_id = 500023,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000022] = {
+		name = "大型会场",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_33",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000022,
+		group_id = 500024,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000023] = {
+		name = "欧莫菲斯·千星市",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_34",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000023,
+		group_id = 500025,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000024] = {
+		name = "欧莫菲斯·城区",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_35",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000024,
+		group_id = 500026,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000025] = {
+		name = "科尔盖大楼",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_36",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000025,
+		group_id = 500027,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000026] = {
+		name = "公会大厅",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_37",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000026,
+		group_id = 500028,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000027] = {
+		name = "虚恒·新玉京",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_40",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000027,
+		group_id = 500031,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000028] = {
+		name = "笹波·上京区一",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_41",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000028,
+		group_id = 500032,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000029] = {
+		name = "笹波·上京区二",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_42",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000029,
+		group_id = 500033,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000030] = {
+		name = "笹波·上京区三",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_43",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000030,
+		group_id = 500034,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000031] = {
+		name = "笹波·鸦家宅邸",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_45",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000031,
+		group_id = 500036,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000032] = {
+		name = "山神祭典",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_46",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000032,
+		group_id = 500037,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000033] = {
+		name = "夏什瓦特·基维塔巴一",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_47",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000033,
+		group_id = 500038,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000034] = {
+		name = "弥楼衍",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_48",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000034,
+		group_id = 500039,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000035] = {
+		name = "加尔",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_49",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000035,
+		group_id = 500040,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000036] = {
+		name = "普渡制药",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_50",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000036,
+		group_id = 500041,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000037] = {
+		name = "丽天宫",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_51",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000037,
+		group_id = 500042,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000038] = {
+		name = "艾因索菲·墨兰德市",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_52",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000038,
+		group_id = 500043,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000039] = {
+		name = "轴外分支空间演算实验",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_53",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000039,
+		group_id = 500044,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000040] = {
+		name = "欧莫菲斯·克里特岛",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_56",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000040,
+		group_id = 500046,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000041] = {
+		name = "夏什瓦特·基维塔巴二",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_57",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000041,
+		group_id = 500047,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000042] = {
+		name = "夏什瓦特·基维塔巴三",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_58",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000042,
+		group_id = 500048,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000043] = {
+		name = "艾因索菲·诺斯维克",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_59",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000043,
+		group_id = 500049,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000044] = {
+		name = "白潮·侵蚀一",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_60",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000044,
+		group_id = 500050,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000045] = {
+		name = "移转观测枢",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_61",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000045,
+		group_id = 500051,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000046] = {
+		name = "游园街日常·1",
+		type = 5,
+		unlock_condition = 800,
+		picture = "backhome_loading_1",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000046,
+		group_id = 500052,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000047] = {
+		name = "游园街日常·2",
+		type = 5,
+		unlock_condition = 800,
+		picture = "backhome_loading_2",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000047,
+		group_id = 500053,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000048] = {
+		name = "游园街日常·3",
+		type = 5,
+		unlock_condition = 800,
+		picture = "backhome_loading_3",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000048,
+		group_id = 500054,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000049] = {
+		name = "游园街日常·4",
+		type = 5,
+		unlock_condition = 800,
+		picture = "backhome_loading_4",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000049,
+		group_id = 500055,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000050] = {
+		name = "游园街日常·5",
+		type = 5,
+		unlock_condition = 800,
+		picture = "backhome_loading_5",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000050,
+		group_id = 500056,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000051] = {
+		name = "艾因索菲·格雷安港",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_62",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000051,
+		group_id = 500057,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000052] = {
+		name = "科尔盖总部园区",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_63",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000052,
+		group_id = 500058,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000053] = {
+		name = "科尔盖银松山基地",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_64",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000053,
+		group_id = 500059,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[50000054] = {
+		name = "算力转换网络·中央枢纽",
+		type = 5,
+		unlock_condition = 800,
+		picture = "loading_65",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 50000054,
+		group_id = 500060,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000001] = {
+		name = "深空之眼·房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST01",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000001,
+		group_id = 600001,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000002] = {
+		name = "深空之眼·房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST01a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000002,
+		group_id = 600001,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000003] = {
+		name = "深空之眼·房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST01b",
+		group_display_order = 3,
+		desc = "<color=#ffffffff></color>",
+		id = 60000003,
+		group_id = 600001,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000004] = {
+		name = "艾因索菲·餐厅一",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST02",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000004,
+		group_id = 600002,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000005] = {
+		name = "艾因索菲·街道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST03",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000005,
+		group_id = 600003,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000006] = {
+		name = "艾因索菲·街道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST03a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000006,
+		group_id = 600003,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000007] = {
+		name = "艾因索菲·公园步道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST04a",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000007,
+		group_id = 600004,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000008] = {
+		name = "艾因索菲·公园",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST04b",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000008,
+		group_id = 600005,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000009] = {
+		name = "艾因索菲·公园",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST04c",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000009,
+		group_id = 600005,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000010] = {
+		name = "深空之眼·休息室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST05",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000010,
+		group_id = 600006,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000011] = {
+		name = "深空之眼·水吧",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST05a",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000011,
+		group_id = 600007,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000012] = {
+		name = "笹波·房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST06",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000012,
+		group_id = 600008,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000013] = {
+		name = "笹波·房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST06a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000013,
+		group_id = 600008,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000014] = {
+		name = "笹波·房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST06b",
+		group_display_order = 3,
+		desc = "<color=#ffffffff></color>",
+		id = 60000014,
+		group_id = 600008,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000015] = {
+		name = "普通病房",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST07a",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000015,
+		group_id = 600009,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000016] = {
+		name = "深空之眼·医疗科",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST07b",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000016,
+		group_id = 600010,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000017] = {
+		name = "艾因索菲·教室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST08",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000017,
+		group_id = 600011,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000018] = {
+		name = "艾因索菲·教室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST08a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000018,
+		group_id = 600011,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000019] = {
+		name = "艾因索菲·校园",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST09",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000019,
+		group_id = 600012,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000020] = {
+		name = "艾因索菲·校园",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST09a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000020,
+		group_id = 600012,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000021] = {
+		name = "深空之眼实验室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST10",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000021,
+		group_id = 600013,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000022] = {
+		name = "笹波·上京区街道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST11",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000022,
+		group_id = 600014,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000023] = {
+		name = "笹波·上京区街道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST11a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000023,
+		group_id = 600014,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000024] = {
+		name = "深空之眼·办公室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST12",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000024,
+		group_id = 600015,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000025] = {
+		name = "深空之眼·办公室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST12a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000025,
+		group_id = 600015,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000026] = {
+		name = "工坊",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST13",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000026,
+		group_id = 600016,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000027] = {
+		name = "工坊",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST13a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000027,
+		group_id = 600016,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000028] = {
+		name = "海洋馆",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST14",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000028,
+		group_id = 600017,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000029] = {
+		name = "艾因索菲·沙滩",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST15",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000029,
+		group_id = 600018,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000030] = {
+		name = "艾因索菲·沙滩",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST15a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000030,
+		group_id = 600018,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000031] = {
+		name = "武道馆",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST16",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000031,
+		group_id = 600019,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000032] = {
+		name = "武道馆",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST16a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000032,
+		group_id = 600019,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000033] = {
+		name = "商场·一",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST17",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000033,
+		group_id = 600020,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000034] = {
+		name = "深空之眼·看护室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST18",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000034,
+		group_id = 600021,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000035] = {
+		name = "深空之眼·看护室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST18a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000035,
+		group_id = 600021,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000036] = {
+		name = "心象迷宫",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST19",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000036,
+		group_id = 600022,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000037] = {
+		name = "深空之眼·会客厅",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST20",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000037,
+		group_id = 600023,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000038] = {
+		name = "欧莫菲斯·办公室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST21",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000038,
+		group_id = 600024,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000039] = {
+		name = "欧莫菲斯·办公室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST21a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000039,
+		group_id = 600024,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000040] = {
+		name = "欧莫菲斯·街道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST22",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000040,
+		group_id = 600025,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000041] = {
+		name = "欧莫菲斯·街道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST22a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000041,
+		group_id = 600025,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000042] = {
+		name = "欧莫菲斯·走廊",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST23",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000042,
+		group_id = 600026,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000043] = {
+		name = "欧莫菲斯·宅邸",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST24",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000043,
+		group_id = 600027,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000044] = {
+		name = "欧莫菲斯·宅邸",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST24a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000044,
+		group_id = 600027,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000045] = {
+		name = "欧莫菲斯·教室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST25",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000045,
+		group_id = 600028,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000046] = {
+		name = "阿尔蒂斯墓",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST26",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000046,
+		group_id = 600029,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000047] = {
+		name = "欧莫菲斯·会客室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST27",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000047,
+		group_id = 600030,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000048] = {
+		name = "欧莫菲斯·会客室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST27a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000048,
+		group_id = 600030,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000049] = {
+		name = "欧莫菲斯·公园步道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST28",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000049,
+		group_id = 600031,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000050] = {
+		name = "欧莫菲斯·公园步道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST28a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000050,
+		group_id = 600031,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000051] = {
+		name = "虚恒·会客厅",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST29",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000051,
+		group_id = 600032,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000052] = {
+		name = "虚恒·会客厅",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST29a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000052,
+		group_id = 600032,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000053] = {
+		name = "欧莫菲斯·儿童房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST30",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000053,
+		group_id = 600033,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000054] = {
+		name = "欧莫菲斯·儿童房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST30a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000054,
+		group_id = 600033,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000055] = {
+		name = "虚恒·街道一",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST31",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000055,
+		group_id = 600034,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000056] = {
+		name = "虚恒·街道一",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST31a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000056,
+		group_id = 600034,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000057] = {
+		name = "虚恒·茶室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST32",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000057,
+		group_id = 600035,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000058] = {
+		name = "虚恒·茶室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST32a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000058,
+		group_id = 600035,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000059] = {
+		name = "虚恒·小街",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST33",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000059,
+		group_id = 600036,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000060] = {
+		name = "深空之眼·电梯",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST34",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000060,
+		group_id = 600037,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000061] = {
+		name = "摩天轮座舱内",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST36",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000061,
+		group_id = 600038,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000062] = {
+		name = "虚恒·房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST37",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000062,
+		group_id = 600039,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000063] = {
+		name = "虚恒·房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST37a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000063,
+		group_id = 600039,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000064] = {
+		name = "虚恒·商店",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST39",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000064,
+		group_id = 600040,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000065] = {
+		name = "虚恒·商店",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST39a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000065,
+		group_id = 600040,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000066] = {
+		name = "虚恒·餐厅",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST40",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000066,
+		group_id = 600041,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000067] = {
+		name = "四方院办公室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST41",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000067,
+		group_id = 600042,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000068] = {
+		name = "四方院办公室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST41a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000068,
+		group_id = 600042,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000069] = {
+		name = "四方院",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST42",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000069,
+		group_id = 600043,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000070] = {
+		name = "四方院",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST42a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000070,
+		group_id = 600043,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000071] = {
+		name = "虚恒·旧城",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST43",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000071,
+		group_id = 600044,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000072] = {
+		name = "虚恒·山间洞窟",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST44",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000072,
+		group_id = 600045,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000073] = {
+		name = "虚恒·庭院",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST45",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000073,
+		group_id = 600046,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000074] = {
+		name = "虚恒·源层",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST46",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000074,
+		group_id = 600047,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000075] = {
+		name = "虚恒·南交",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST47",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000075,
+		group_id = 600048,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000076] = {
+		name = "虚恒·南交",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST47a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000076,
+		group_id = 600048,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000077] = {
+		name = "空岛崩裂",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST49",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000077,
+		group_id = 600049,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000078] = {
+		name = "若木画境",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST52",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000078,
+		group_id = 600050,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000079] = {
+		name = "修行之地",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST53",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000079,
+		group_id = 600051,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000080] = {
+		name = "虚恒·街道二",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST54",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000080,
+		group_id = 600052,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000081] = {
+		name = "笹波·下京区街道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST55",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000081,
+		group_id = 600053,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000082] = {
+		name = "游艇大厅",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST57",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000082,
+		group_id = 600054,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000083] = {
+		name = "笹波·宅邸",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST58",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000083,
+		group_id = 600055,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000084] = {
+		name = "笹波·下京区街道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST59",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000084,
+		group_id = 600056,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000085] = {
+		name = "笹波·下京区街道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST59a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000085,
+		group_id = 600056,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000086] = {
+		name = "笹波·下京区街道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST59b",
+		group_display_order = 3,
+		desc = "<color=#ffffffff></color>",
+		id = 60000086,
+		group_id = 600056,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000087] = {
+		name = "天台",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST60",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000087,
+		group_id = 600057,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000088] = {
+		name = "弥楼衍大厅",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST61",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000088,
+		group_id = 600058,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000089] = {
+		name = "弥楼衍大厅",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST61a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000089,
+		group_id = 600058,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000090] = {
+		name = "普渡制药·实验室一",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST62",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000090,
+		group_id = 600059,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000091] = {
+		name = "普渡制药·实验室一",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST62a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000091,
+		group_id = 600059,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000092] = {
+		name = "普渡制药·实验室二",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST63",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000092,
+		group_id = 600060,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000093] = {
+		name = "普渡制药·实验室二",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST63a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000093,
+		group_id = 600060,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000094] = {
+		name = "普渡制药·走廊",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST64",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000094,
+		group_id = 600061,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000095] = {
+		name = "普渡制药·走廊",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST64a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000095,
+		group_id = 600061,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000096] = {
+		name = "加尔拳场",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST65",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000096,
+		group_id = 600062,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000097] = {
+		name = "普渡制药·生产线",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST66",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000097,
+		group_id = 600063,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000098] = {
+		name = "地下实验室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST67",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000098,
+		group_id = 600064,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000099] = {
+		name = "漫画店",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST68",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000099,
+		group_id = 600065,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000100] = {
+		name = "隐蔽房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST69",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000100,
+		group_id = 600066,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000101] = {
+		name = "隐蔽房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST69a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000101,
+		group_id = 600066,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000102] = {
+		name = "墨兰德市街道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST70",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000102,
+		group_id = 600067,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000103] = {
+		name = "墨兰德市街道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST70a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000103,
+		group_id = 600067,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000104] = {
+		name = "特殊病房",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST71",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000104,
+		group_id = 600068,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000105] = {
+		name = "特殊病房",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST71a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000105,
+		group_id = 600068,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000106] = {
+		name = "圣索菲娅医疗中心",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST72",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000106,
+		group_id = 600069,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000107] = {
+		name = "圣索菲娅医疗中心",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST72a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000107,
+		group_id = 600069,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000108] = {
+		name = "科尔盖办公室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST73",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000108,
+		group_id = 600070,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000109] = {
+		name = "科尔盖办公室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST73a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000109,
+		group_id = 600070,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000110] = {
+		name = "旧书店",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST74",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000110,
+		group_id = 600071,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000111] = {
+		name = "旧书店",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST74a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000111,
+		group_id = 600071,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000112] = {
+		name = "临时仓库",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST75",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000112,
+		group_id = 600072,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000113] = {
+		name = "诗蔻蒂的心灵世界",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST76",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000113,
+		group_id = 600073,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000114] = {
+		name = "静谧的房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST77",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000114,
+		group_id = 600074,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000115] = {
+		name = "静谧的房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST77a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000115,
+		group_id = 600074,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000116] = {
+		name = "静谧的房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST77b",
+		group_display_order = 3,
+		desc = "<color=#ffffffff></color>",
+		id = 60000116,
+		group_id = 600074,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000117] = {
+		name = "电玩城",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST78",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000117,
+		group_id = 600075,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000118] = {
+		name = "祈福树",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST79",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000118,
+		group_id = 600076,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000119] = {
+		name = "欧莫菲斯·普通房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST84",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000119,
+		group_id = 600077,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000120] = {
+		name = "欧莫菲斯·普通房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST84a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000120,
+		group_id = 600077,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000121] = {
+		name = "绘梦长廊",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST85",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000121,
+		group_id = 600078,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000122] = {
+		name = "绘梦长廊",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST85a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000122,
+		group_id = 600078,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000123] = {
+		name = "绘梦长廊",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST85b",
+		group_display_order = 3,
+		desc = "<color=#ffffffff></color>",
+		id = 60000123,
+		group_id = 600078,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000124] = {
+		name = "白夜画廊",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST86a",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000124,
+		group_id = 600079,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000125] = {
+		name = "白夜画廊",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST86",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000125,
+		group_id = 600079,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000126] = {
+		name = "海洋之星乐园俯瞰",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0101",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000126,
+		group_id = 600080,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000127] = {
+		name = "艾因索菲·西岸城市大学",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0105",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000127,
+		group_id = 600081,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000128] = {
+		name = "艾因索菲·西岸城市大学",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0105a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000128,
+		group_id = 600081,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000129] = {
+		name = "艾因索菲·旧宅",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0106",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000129,
+		group_id = 600082,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000130] = {
+		name = "约库尔·冰川海岸",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0401",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000130,
+		group_id = 600083,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000131] = {
+		name = "约库尔·冰川海岸",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0401a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000131,
+		group_id = 600083,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000132] = {
+		name = "约库尔·山地",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0402",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000132,
+		group_id = 600084,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000133] = {
+		name = "约库尔·山地",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0402a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000133,
+		group_id = 600084,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000134] = {
+		name = "约库尔·山地",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0402b",
+		group_display_order = 3,
+		desc = "<color=#ffffffff></color>",
+		id = 60000134,
+		group_id = 600084,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000135] = {
+		name = "约库尔·冰窟",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0403",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000135,
+		group_id = 600085,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000136] = {
+		name = "约库尔·冰窟",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0403a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000136,
+		group_id = 600085,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000137] = {
+		name = "夏什瓦特·宴会厅",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0501",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000137,
+		group_id = 600086,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000138] = {
+		name = "生命科技大厅",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0502",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000138,
+		group_id = 600087,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000139] = {
+		name = "黑市仓库",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0503",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000139,
+		group_id = 600088,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000140] = {
+		name = "黑市仓库",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0503a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000140,
+		group_id = 600088,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000141] = {
+		name = "夏什瓦特·会客厅",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0504",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000141,
+		group_id = 600089,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000142] = {
+		name = "夏什瓦特·会客厅",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0504a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000142,
+		group_id = 600089,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000143] = {
+		name = "夏什瓦特·卧室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0505",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000143,
+		group_id = 600090,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000144] = {
+		name = "夏什瓦特·卧室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0505a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000144,
+		group_id = 600090,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000145] = {
+		name = "艾因索菲·餐厅二",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0506",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000145,
+		group_id = 600091,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000146] = {
+		name = "艾因索菲·餐厅二",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0506a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000146,
+		group_id = 600091,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000147] = {
+		name = "无线格斗之夜竞技场",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0507",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000147,
+		group_id = 600092,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000148] = {
+		name = "无线格斗之夜竞技场",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0507a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000148,
+		group_id = 600092,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000149] = {
+		name = "欧莫菲斯·餐馆",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0601",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000149,
+		group_id = 600093,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000150] = {
+		name = "舰船指挥室",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0602",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000150,
+		group_id = 600094,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000151] = {
+		name = "灯塔内部",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0603",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000151,
+		group_id = 600095,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000152] = {
+		name = "灯塔内部",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0603a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000152,
+		group_id = 600095,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000153] = {
+		name = "笹波·普通房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0901",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000153,
+		group_id = 600096,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000154] = {
+		name = "笹波·普通房间",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST0901a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000154,
+		group_id = 600096,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000155] = {
+		name = "刺桐城·码头",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST1001",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000155,
+		group_id = 600097,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000156] = {
+		name = "刺桐城·码头",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST1001a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000156,
+		group_id = 600097,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000157] = {
+		name = "刺桐城·码头",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST1001b",
+		group_display_order = 3,
+		desc = "<color=#ffffffff></color>",
+		id = 60000157,
+		group_id = 600097,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000158] = {
+		name = "刺桐城·钟楼街口",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST1002",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000158,
+		group_id = 600098,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000159] = {
+		name = "刺桐城·钟楼街口",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST1002a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000159,
+		group_id = 600098,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000160] = {
+		name = "刺桐城·街道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST1003",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000160,
+		group_id = 600099,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000161] = {
+		name = "刺桐城·街道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST1003a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000161,
+		group_id = 600099,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000162] = {
+		name = "刺桐城·沿海步道",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST1004",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000162,
+		group_id = 600100,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000163] = {
+		name = "科尔盖移动指挥中心",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST2101",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000163,
+		group_id = 600101,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000164] = {
+		name = "最高理事会小院",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST2102",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000164,
+		group_id = 600102,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000165] = {
+		name = "光轨港内",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST2103",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000165,
+		group_id = 600103,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000166] = {
+		name = "光轨港内",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST2103a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000166,
+		group_id = 600103,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000167] = {
+		name = "银松山基地内",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST2104",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000167,
+		group_id = 600104,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000168] = {
+		name = "银松山基地内",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST2104a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000168,
+		group_id = 600104,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000169] = {
+		name = "银松山基地内",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST2104b",
+		group_display_order = 3,
+		desc = "<color=#ffffffff></color>",
+		id = 60000169,
+		group_id = 600104,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000170] = {
+		name = "艾因索菲·码头",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST2105",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000170,
+		group_id = 600105,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000171] = {
+		name = "艾因索菲·码头",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST2105a",
+		group_display_order = 2,
+		desc = "<color=#ffffffff></color>",
+		id = 60000171,
+		group_id = 600105,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000172] = {
+		name = "档案库",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST2106",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000172,
+		group_id = 600106,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
+	[60000173] = {
+		name = "移转观测枢",
+		type = 6,
+		unlock_condition = 800,
+		picture = "ST2201",
+		group_display_order = 1,
+		desc = "<color=#ffffffff></color>",
+		id = 60000173,
+		group_id = 600107,
+		additional_parameter = {
+			101000101
+		},
+		reward = {
+			{
+				1,
+				20
+			}
+		}
+	},
 	get_id_list_by_type = {
+		[6] = {
+			60000001,
+			60000002,
+			60000003,
+			60000004,
+			60000005,
+			60000006,
+			60000007,
+			60000008,
+			60000009,
+			60000010,
+			60000011,
+			60000012,
+			60000013,
+			60000014,
+			60000015,
+			60000016,
+			60000017,
+			60000018,
+			60000019,
+			60000020,
+			60000021,
+			60000022,
+			60000023,
+			60000024,
+			60000025,
+			60000026,
+			60000027,
+			60000028,
+			60000029,
+			60000030,
+			60000031,
+			60000032,
+			60000033,
+			60000034,
+			60000035,
+			60000036,
+			60000037,
+			60000038,
+			60000039,
+			60000040,
+			60000041,
+			60000042,
+			60000043,
+			60000044,
+			60000045,
+			60000046,
+			60000047,
+			60000048,
+			60000049,
+			60000050,
+			60000051,
+			60000052,
+			60000053,
+			60000054,
+			60000055,
+			60000056,
+			60000057,
+			60000058,
+			60000059,
+			60000060,
+			60000061,
+			60000062,
+			60000063,
+			60000064,
+			60000065,
+			60000066,
+			60000067,
+			60000068,
+			60000069,
+			60000070,
+			60000071,
+			60000072,
+			60000073,
+			60000074,
+			60000075,
+			60000076,
+			60000077,
+			60000078,
+			60000079,
+			60000080,
+			60000081,
+			60000082,
+			60000083,
+			60000084,
+			60000085,
+			60000086,
+			60000087,
+			60000088,
+			60000089,
+			60000090,
+			60000091,
+			60000092,
+			60000093,
+			60000094,
+			60000095,
+			60000096,
+			60000097,
+			60000098,
+			60000099,
+			60000100,
+			60000101,
+			60000102,
+			60000103,
+			60000104,
+			60000105,
+			60000106,
+			60000107,
+			60000108,
+			60000109,
+			60000110,
+			60000111,
+			60000112,
+			60000113,
+			60000114,
+			60000115,
+			60000116,
+			60000117,
+			60000118,
+			60000119,
+			60000120,
+			60000121,
+			60000122,
+			60000123,
+			60000124,
+			60000125,
+			60000126,
+			60000127,
+			60000128,
+			60000129,
+			60000130,
+			60000131,
+			60000132,
+			60000133,
+			60000134,
+			60000135,
+			60000136,
+			60000137,
+			60000138,
+			60000139,
+			60000140,
+			60000141,
+			60000142,
+			60000143,
+			60000144,
+			60000145,
+			60000146,
+			60000147,
+			60000148,
+			60000149,
+			60000150,
+			60000151,
+			60000152,
+			60000153,
+			60000154,
+			60000155,
+			60000156,
+			60000157,
+			60000158,
+			60000159,
+			60000160,
+			60000161,
+			60000162,
+			60000163,
+			60000164,
+			60000165,
+			60000166,
+			60000167,
+			60000168,
+			60000169,
+			60000170,
+			60000171,
+			60000172,
+			60000173
+		},
+		[5] = {
+			50000001,
+			50000002,
+			50000003,
+			50000004,
+			50000005,
+			50000006,
+			50000007,
+			50000008,
+			50000009,
+			50000010,
+			50000011,
+			50000012,
+			50000013,
+			50000014,
+			50000015,
+			50000016,
+			50000017,
+			50000018,
+			50000019,
+			50000020,
+			50000021,
+			50000022,
+			50000023,
+			50000024,
+			50000025,
+			50000026,
+			50000027,
+			50000028,
+			50000029,
+			50000030,
+			50000031,
+			50000032,
+			50000033,
+			50000034,
+			50000035,
+			50000036,
+			50000037,
+			50000038,
+			50000039,
+			50000040,
+			50000041,
+			50000042,
+			50000043,
+			50000044,
+			50000045,
+			50000046,
+			50000047,
+			50000048,
+			50000049,
+			50000050,
+			50000051,
+			50000052,
+			50000053,
+			50000054
+		},
 		[4] = {
 			40000001,
 			40000002,
@@ -8671,7 +13633,17 @@
 			31717101,
 			31723101,
 			31724101,
-			31724102
+			31724102,
+			32042201,
+			32042202,
+			32017101,
+			32017102,
+			32019201,
+			31042111,
+			31042113,
+			31810101,
+			31810102,
+			31811101
 		},
 		[2] = {
 			2105911,
@@ -8966,10 +13938,703 @@
 			3203002,
 			3203101,
 			3203102,
-			3203103
+			3203103,
+			3210101,
+			3210102,
+			3210601,
+			3210801,
+			3210802,
+			3211001,
+			3211601,
+			3212201,
+			3212301,
+			3212302,
+			3212303,
+			3212501
 		}
 	},
 	get_id_list_by_picture = {
+		ST2201 = {
+			60000173
+		},
+		ST2106 = {
+			60000172
+		},
+		ST2105a = {
+			60000171
+		},
+		ST2105 = {
+			60000170
+		},
+		ST2104b = {
+			60000169
+		},
+		ST2104a = {
+			60000168
+		},
+		ST2104 = {
+			60000167
+		},
+		ST2103a = {
+			60000166
+		},
+		ST2103 = {
+			60000165
+		},
+		ST2102 = {
+			60000164
+		},
+		ST2101 = {
+			60000163
+		},
+		ST1004 = {
+			60000162
+		},
+		ST1003a = {
+			60000161
+		},
+		ST1003 = {
+			60000160
+		},
+		ST1002a = {
+			60000159
+		},
+		ST1002 = {
+			60000158
+		},
+		ST1001b = {
+			60000157
+		},
+		ST1001a = {
+			60000156
+		},
+		ST1001 = {
+			60000155
+		},
+		ST0901a = {
+			60000154
+		},
+		ST0901 = {
+			60000153
+		},
+		ST0603a = {
+			60000152
+		},
+		ST0603 = {
+			60000151
+		},
+		ST0602 = {
+			60000150
+		},
+		ST0601 = {
+			60000149
+		},
+		ST0507a = {
+			60000148
+		},
+		ST0507 = {
+			60000147
+		},
+		ST0506a = {
+			60000146
+		},
+		ST0506 = {
+			60000145
+		},
+		ST0505a = {
+			60000144
+		},
+		ST0505 = {
+			60000143
+		},
+		ST0504a = {
+			60000142
+		},
+		ST0504 = {
+			60000141
+		},
+		ST0503a = {
+			60000140
+		},
+		ST0503 = {
+			60000139
+		},
+		ST0502 = {
+			60000138
+		},
+		ST0501 = {
+			60000137
+		},
+		ST0403a = {
+			60000136
+		},
+		ST0403 = {
+			60000135
+		},
+		ST0402b = {
+			60000134
+		},
+		ST0402a = {
+			60000133
+		},
+		ST0402 = {
+			60000132
+		},
+		ST0401a = {
+			60000131
+		},
+		ST0401 = {
+			60000130
+		},
+		ST0106 = {
+			60000129
+		},
+		ST0105a = {
+			60000128
+		},
+		ST0105 = {
+			60000127
+		},
+		ST0101 = {
+			60000126
+		},
+		ST86 = {
+			60000125
+		},
+		ST86a = {
+			60000124
+		},
+		ST85b = {
+			60000123
+		},
+		ST85a = {
+			60000122
+		},
+		ST85 = {
+			60000121
+		},
+		ST84a = {
+			60000120
+		},
+		ST84 = {
+			60000119
+		},
+		ST79 = {
+			60000118
+		},
+		ST78 = {
+			60000117
+		},
+		ST77b = {
+			60000116
+		},
+		ST77a = {
+			60000115
+		},
+		ST77 = {
+			60000114
+		},
+		ST76 = {
+			60000113
+		},
+		ST75 = {
+			60000112
+		},
+		ST74a = {
+			60000111
+		},
+		ST74 = {
+			60000110
+		},
+		ST73a = {
+			60000109
+		},
+		ST73 = {
+			60000108
+		},
+		ST72a = {
+			60000107
+		},
+		ST72 = {
+			60000106
+		},
+		ST71a = {
+			60000105
+		},
+		ST71 = {
+			60000104
+		},
+		ST70a = {
+			60000103
+		},
+		ST70 = {
+			60000102
+		},
+		ST69a = {
+			60000101
+		},
+		ST69 = {
+			60000100
+		},
+		ST68 = {
+			60000099
+		},
+		ST67 = {
+			60000098
+		},
+		ST66 = {
+			60000097
+		},
+		ST65 = {
+			60000096
+		},
+		ST64a = {
+			60000095
+		},
+		ST64 = {
+			60000094
+		},
+		ST63a = {
+			60000093
+		},
+		ST63 = {
+			60000092
+		},
+		ST62a = {
+			60000091
+		},
+		ST62 = {
+			60000090
+		},
+		ST61a = {
+			60000089
+		},
+		ST61 = {
+			60000088
+		},
+		ST60 = {
+			60000087
+		},
+		ST59b = {
+			60000086
+		},
+		ST59a = {
+			60000085
+		},
+		ST59 = {
+			60000084
+		},
+		ST58 = {
+			60000083
+		},
+		ST57 = {
+			60000082
+		},
+		ST55 = {
+			60000081
+		},
+		ST54 = {
+			60000080
+		},
+		ST53 = {
+			60000079
+		},
+		ST52 = {
+			60000078
+		},
+		ST49 = {
+			60000077
+		},
+		ST47a = {
+			60000076
+		},
+		ST47 = {
+			60000075
+		},
+		ST46 = {
+			60000074
+		},
+		ST45 = {
+			60000073
+		},
+		ST44 = {
+			60000072
+		},
+		ST43 = {
+			60000071
+		},
+		ST42a = {
+			60000070
+		},
+		ST42 = {
+			60000069
+		},
+		ST41a = {
+			60000068
+		},
+		ST41 = {
+			60000067
+		},
+		ST40 = {
+			60000066
+		},
+		ST39a = {
+			60000065
+		},
+		ST39 = {
+			60000064
+		},
+		ST37a = {
+			60000063
+		},
+		ST37 = {
+			60000062
+		},
+		ST36 = {
+			60000061
+		},
+		ST34 = {
+			60000060
+		},
+		ST33 = {
+			60000059
+		},
+		ST32a = {
+			60000058
+		},
+		ST32 = {
+			60000057
+		},
+		ST31a = {
+			60000056
+		},
+		ST31 = {
+			60000055
+		},
+		ST30a = {
+			60000054
+		},
+		ST30 = {
+			60000053
+		},
+		ST29a = {
+			60000052
+		},
+		ST29 = {
+			60000051
+		},
+		ST28a = {
+			60000050
+		},
+		ST28 = {
+			60000049
+		},
+		ST27a = {
+			60000048
+		},
+		ST27 = {
+			60000047
+		},
+		ST26 = {
+			60000046
+		},
+		ST25 = {
+			60000045
+		},
+		ST24a = {
+			60000044
+		},
+		ST24 = {
+			60000043
+		},
+		ST23 = {
+			60000042
+		},
+		ST22a = {
+			60000041
+		},
+		ST22 = {
+			60000040
+		},
+		ST21a = {
+			60000039
+		},
+		ST21 = {
+			60000038
+		},
+		ST20 = {
+			60000037
+		},
+		ST19 = {
+			60000036
+		},
+		ST18a = {
+			60000035
+		},
+		ST18 = {
+			60000034
+		},
+		ST17 = {
+			60000033
+		},
+		ST16a = {
+			60000032
+		},
+		ST16 = {
+			60000031
+		},
+		ST15a = {
+			60000030
+		},
+		ST15 = {
+			60000029
+		},
+		ST14 = {
+			60000028
+		},
+		ST13a = {
+			60000027
+		},
+		ST13 = {
+			60000026
+		},
+		ST12a = {
+			60000025
+		},
+		ST12 = {
+			60000024
+		},
+		ST11a = {
+			60000023
+		},
+		ST11 = {
+			60000022
+		},
+		ST10 = {
+			60000021
+		},
+		ST09a = {
+			60000020
+		},
+		ST09 = {
+			60000019
+		},
+		ST08a = {
+			60000018
+		},
+		ST08 = {
+			60000017
+		},
+		ST07b = {
+			60000016
+		},
+		ST07a = {
+			60000015
+		},
+		ST06b = {
+			60000014
+		},
+		ST06a = {
+			60000013
+		},
+		ST06 = {
+			60000012
+		},
+		ST05a = {
+			60000011
+		},
+		ST05 = {
+			60000010
+		},
+		ST04c = {
+			60000009
+		},
+		ST04b = {
+			60000008
+		},
+		ST04a = {
+			60000007
+		},
+		ST03a = {
+			60000006
+		},
+		ST03 = {
+			60000005
+		},
+		ST02 = {
+			60000004
+		},
+		ST01b = {
+			60000003
+		},
+		ST01a = {
+			60000002
+		},
+		ST01 = {
+			60000001
+		},
+		loading_65 = {
+			50000054
+		},
+		loading_64 = {
+			50000053
+		},
+		loading_63 = {
+			50000052
+		},
+		loading_62 = {
+			50000051
+		},
+		backhome_loading_5 = {
+			50000050
+		},
+		backhome_loading_4 = {
+			50000049
+		},
+		backhome_loading_3 = {
+			50000048
+		},
+		backhome_loading_2 = {
+			50000047
+		},
+		backhome_loading_1 = {
+			50000046
+		},
+		loading_61 = {
+			50000045
+		},
+		loading_60 = {
+			50000044
+		},
+		loading_59 = {
+			50000043
+		},
+		loading_58 = {
+			50000042
+		},
+		loading_57 = {
+			50000041
+		},
+		loading_56 = {
+			50000040
+		},
+		loading_53 = {
+			50000039
+		},
+		loading_52 = {
+			50000038
+		},
+		loading_51 = {
+			50000037
+		},
+		loading_50 = {
+			50000036
+		},
+		loading_49 = {
+			50000035
+		},
+		loading_48 = {
+			50000034
+		},
+		loading_47 = {
+			50000033
+		},
+		loading_46 = {
+			50000032
+		},
+		loading_45 = {
+			50000031
+		},
+		loading_43 = {
+			50000030
+		},
+		loading_42 = {
+			50000029
+		},
+		loading_41 = {
+			50000028
+		},
+		loading_40 = {
+			50000027
+		},
+		loading_37 = {
+			50000026
+		},
+		loading_36 = {
+			50000025
+		},
+		loading_35 = {
+			50000024
+		},
+		loading_34 = {
+			50000023
+		},
+		loading_33 = {
+			50000022
+		},
+		loading_32 = {
+			50000021
+		},
+		loading_31 = {
+			50000020
+		},
+		loading_29 = {
+			50000019
+		},
+		loading_26 = {
+			50000018
+		},
+		loading_25 = {
+			50000017
+		},
+		loading_24 = {
+			50000016
+		},
+		loading_23 = {
+			50000015
+		},
+		loading_19 = {
+			50000014
+		},
+		loading_18 = {
+			50000013
+		},
+		loading_17 = {
+			50000012
+		},
+		loading_16 = {
+			50000011
+		},
+		loading_15 = {
+			50000010
+		},
+		loading_14 = {
+			50000009
+		},
+		loading_13 = {
+			50000008
+		},
+		loading_12 = {
+			50000007
+		},
+		loading_8 = {
+			50000006
+		},
+		loading_7 = {
+			50000005
+		},
+		loading_5 = {
+			50000004
+		},
+		loading_3 = {
+			50000003
+		},
+		loading_2 = {
+			50000002
+		},
+		loading_1 = {
+			50000001
+		},
 		HB0301 = {
 			40000004
 		},
@@ -8981,6 +14646,36 @@
 		},
 		HB0101 = {
 			40000001
+		},
+		SS1802 = {
+			31811101
+		},
+		SS1801a = {
+			31810102
+		},
+		SS1801 = {
+			31810101
+		},
+		SS2005 = {
+			31042113
+		},
+		SS2004a = {
+			31042111
+		},
+		SS2004 = {
+			32019201
+		},
+		SS2002a = {
+			32017102
+		},
+		SS2002 = {
+			32017101
+		},
+		SS2001a = {
+			32042202
+		},
+		SS2001 = {
+			32042201
 		},
 		SS1710 = {
 			31724102
@@ -9660,6 +15355,42 @@
 		R5901 = {
 			2105911
 		},
+		MS2114 = {
+			3212501
+		},
+		MS2108 = {
+			3212303
+		},
+		MS2107a = {
+			3212302
+		},
+		MS2107 = {
+			3212301
+		},
+		MS2106 = {
+			3212201
+		},
+		MS2105 = {
+			3211601
+		},
+		MS2104 = {
+			3211001
+		},
+		MS2103a = {
+			3210802
+		},
+		MS2103 = {
+			3210801
+		},
+		MS2102 = {
+			3210601
+		},
+		MS2101a = {
+			3210102
+		},
+		MS2101 = {
+			3210101
+		},
 		XS0205 = {
 			3203103
 		},
@@ -10316,6 +16047,555 @@
 		}
 	},
 	get_id_list_by_group_id = {
+		[600107] = {
+			60000173
+		},
+		[600106] = {
+			60000172
+		},
+		[600105] = {
+			60000170,
+			60000171
+		},
+		[600104] = {
+			60000167,
+			60000168,
+			60000169
+		},
+		[600103] = {
+			60000165,
+			60000166
+		},
+		[600102] = {
+			60000164
+		},
+		[600101] = {
+			60000163
+		},
+		[600100] = {
+			60000162
+		},
+		[600099] = {
+			60000160,
+			60000161
+		},
+		[600098] = {
+			60000158,
+			60000159
+		},
+		[600097] = {
+			60000155,
+			60000156,
+			60000157
+		},
+		[600096] = {
+			60000153,
+			60000154
+		},
+		[600095] = {
+			60000151,
+			60000152
+		},
+		[600094] = {
+			60000150
+		},
+		[600093] = {
+			60000149
+		},
+		[600092] = {
+			60000147,
+			60000148
+		},
+		[600091] = {
+			60000145,
+			60000146
+		},
+		[600090] = {
+			60000143,
+			60000144
+		},
+		[600089] = {
+			60000141,
+			60000142
+		},
+		[600088] = {
+			60000139,
+			60000140
+		},
+		[600087] = {
+			60000138
+		},
+		[600086] = {
+			60000137
+		},
+		[600085] = {
+			60000135,
+			60000136
+		},
+		[600084] = {
+			60000132,
+			60000133,
+			60000134
+		},
+		[600083] = {
+			60000130,
+			60000131
+		},
+		[600082] = {
+			60000129
+		},
+		[600081] = {
+			60000127,
+			60000128
+		},
+		[600080] = {
+			60000126
+		},
+		[600079] = {
+			60000124,
+			60000125
+		},
+		[600078] = {
+			60000121,
+			60000122,
+			60000123
+		},
+		[600077] = {
+			60000119,
+			60000120
+		},
+		[600076] = {
+			60000118
+		},
+		[600075] = {
+			60000117
+		},
+		[600074] = {
+			60000114,
+			60000115,
+			60000116
+		},
+		[600073] = {
+			60000113
+		},
+		[600072] = {
+			60000112
+		},
+		[600071] = {
+			60000110,
+			60000111
+		},
+		[600070] = {
+			60000108,
+			60000109
+		},
+		[600069] = {
+			60000106,
+			60000107
+		},
+		[600068] = {
+			60000104,
+			60000105
+		},
+		[600067] = {
+			60000102,
+			60000103
+		},
+		[600066] = {
+			60000100,
+			60000101
+		},
+		[600065] = {
+			60000099
+		},
+		[600064] = {
+			60000098
+		},
+		[600063] = {
+			60000097
+		},
+		[600062] = {
+			60000096
+		},
+		[600061] = {
+			60000094,
+			60000095
+		},
+		[600060] = {
+			60000092,
+			60000093
+		},
+		[600059] = {
+			60000090,
+			60000091
+		},
+		[600058] = {
+			60000088,
+			60000089
+		},
+		[600057] = {
+			60000087
+		},
+		[600056] = {
+			60000084,
+			60000085,
+			60000086
+		},
+		[600055] = {
+			60000083
+		},
+		[600054] = {
+			60000082
+		},
+		[600053] = {
+			60000081
+		},
+		[600052] = {
+			60000080
+		},
+		[600051] = {
+			60000079
+		},
+		[600050] = {
+			60000078
+		},
+		[600049] = {
+			60000077
+		},
+		[600048] = {
+			60000075,
+			60000076
+		},
+		[600047] = {
+			60000074
+		},
+		[600046] = {
+			60000073
+		},
+		[600045] = {
+			60000072
+		},
+		[600044] = {
+			60000071
+		},
+		[600043] = {
+			60000069,
+			60000070
+		},
+		[600042] = {
+			60000067,
+			60000068
+		},
+		[600041] = {
+			60000066
+		},
+		[600040] = {
+			60000064,
+			60000065
+		},
+		[600039] = {
+			60000062,
+			60000063
+		},
+		[600038] = {
+			60000061
+		},
+		[600037] = {
+			60000060
+		},
+		[600036] = {
+			60000059
+		},
+		[600035] = {
+			60000057,
+			60000058
+		},
+		[600034] = {
+			60000055,
+			60000056
+		},
+		[600033] = {
+			60000053,
+			60000054
+		},
+		[600032] = {
+			60000051,
+			60000052
+		},
+		[600031] = {
+			60000049,
+			60000050
+		},
+		[600030] = {
+			60000047,
+			60000048
+		},
+		[600029] = {
+			60000046
+		},
+		[600028] = {
+			60000045
+		},
+		[600027] = {
+			60000043,
+			60000044
+		},
+		[600026] = {
+			60000042
+		},
+		[600025] = {
+			60000040,
+			60000041
+		},
+		[600024] = {
+			60000038,
+			60000039
+		},
+		[600023] = {
+			60000037
+		},
+		[600022] = {
+			60000036
+		},
+		[600021] = {
+			60000034,
+			60000035
+		},
+		[600020] = {
+			60000033
+		},
+		[600019] = {
+			60000031,
+			60000032
+		},
+		[600018] = {
+			60000029,
+			60000030
+		},
+		[600017] = {
+			60000028
+		},
+		[600016] = {
+			60000026,
+			60000027
+		},
+		[600015] = {
+			60000024,
+			60000025
+		},
+		[600014] = {
+			60000022,
+			60000023
+		},
+		[600013] = {
+			60000021
+		},
+		[600012] = {
+			60000019,
+			60000020
+		},
+		[600011] = {
+			60000017,
+			60000018
+		},
+		[600010] = {
+			60000016
+		},
+		[600009] = {
+			60000015
+		},
+		[600008] = {
+			60000012,
+			60000013,
+			60000014
+		},
+		[600007] = {
+			60000011
+		},
+		[600006] = {
+			60000010
+		},
+		[600005] = {
+			60000008,
+			60000009
+		},
+		[600004] = {
+			60000007
+		},
+		[600003] = {
+			60000005,
+			60000006
+		},
+		[600002] = {
+			60000004
+		},
+		[600001] = {
+			60000001,
+			60000002,
+			60000003
+		},
+		[500060] = {
+			50000054
+		},
+		[500059] = {
+			50000053
+		},
+		[500058] = {
+			50000052
+		},
+		[500057] = {
+			50000051
+		},
+		[500056] = {
+			50000050
+		},
+		[500055] = {
+			50000049
+		},
+		[500054] = {
+			50000048
+		},
+		[500053] = {
+			50000047
+		},
+		[500052] = {
+			50000046
+		},
+		[500051] = {
+			50000045
+		},
+		[500050] = {
+			50000044
+		},
+		[500049] = {
+			50000043
+		},
+		[500048] = {
+			50000042
+		},
+		[500047] = {
+			50000041
+		},
+		[500046] = {
+			50000040
+		},
+		[500044] = {
+			50000039
+		},
+		[500043] = {
+			50000038
+		},
+		[500042] = {
+			50000037
+		},
+		[500041] = {
+			50000036
+		},
+		[500040] = {
+			50000035
+		},
+		[500039] = {
+			50000034
+		},
+		[500038] = {
+			50000033
+		},
+		[500037] = {
+			50000032
+		},
+		[500036] = {
+			50000031
+		},
+		[500034] = {
+			50000030
+		},
+		[500033] = {
+			50000029
+		},
+		[500032] = {
+			50000028
+		},
+		[500031] = {
+			50000027
+		},
+		[500028] = {
+			50000026
+		},
+		[500027] = {
+			50000025
+		},
+		[500026] = {
+			50000024
+		},
+		[500025] = {
+			50000023
+		},
+		[500024] = {
+			50000022
+		},
+		[500023] = {
+			50000021
+		},
+		[500022] = {
+			50000020
+		},
+		[500021] = {
+			50000019
+		},
+		[500020] = {
+			50000018
+		},
+		[500019] = {
+			50000017
+		},
+		[500018] = {
+			50000016
+		},
+		[500017] = {
+			50000015
+		},
+		[500016] = {
+			50000014
+		},
+		[500015] = {
+			50000013
+		},
+		[500014] = {
+			50000012
+		},
+		[500013] = {
+			50000011
+		},
+		[500012] = {
+			50000010
+		},
+		[500011] = {
+			50000009
+		},
+		[500010] = {
+			50000008
+		},
+		[500009] = {
+			50000007
+		},
+		[500007] = {
+			50000006
+		},
+		[500006] = {
+			50000005
+		},
+		[500005] = {
+			50000004
+		},
+		[500003] = {
+			50000003
+		},
+		[500002] = {
+			50000002
+		},
+		[500001] = {
+			50000001
+		},
 		[400004] = {
 			40000004
 		},
@@ -10327,6 +16607,28 @@
 		},
 		[400001] = {
 			40000001
+		},
+		[300149] = {
+			31811101
+		},
+		[300148] = {
+			31810101,
+			31810102
+		},
+		[300147] = {
+			31042113
+		},
+		[300146] = {
+			32019201,
+			31042111
+		},
+		[300145] = {
+			32017101,
+			32017102
+		},
+		[300144] = {
+			32042201,
+			32042202
 		},
 		[300143] = {
 			31724102
@@ -10933,6 +17235,36 @@
 		},
 		[200001] = {
 			2105911
+		},
+		[100205] = {
+			3212501
+		},
+		[100204] = {
+			3212303
+		},
+		[100203] = {
+			3212301,
+			3212302
+		},
+		[100202] = {
+			3212201
+		},
+		[100201] = {
+			3211601
+		},
+		[100200] = {
+			3211001
+		},
+		[100199] = {
+			3210801,
+			3210802
+		},
+		[100198] = {
+			3210601
+		},
+		[100197] = {
+			3210101,
+			3210102
 		},
 		[100196] = {
 			3203103
@@ -11556,6 +17888,28 @@
 		[910201011] = {
 			40000001
 		},
+		[104181101] = {
+			31811101
+		},
+		[104181001] = {
+			31810101,
+			31810102
+		},
+		[104201702] = {
+			31042113
+		},
+		[104201901] = {
+			32019201,
+			31042111
+		},
+		[104201201] = {
+			32017101,
+			32017102
+		},
+		[104200402] = {
+			32042201,
+			32042202
+		},
 		[104172401] = {
 			31724101,
 			31724102
@@ -12150,6 +18504,36 @@
 		[210590104] = {
 			2105911
 		},
+		[103212501] = {
+			3212501
+		},
+		[103212302] = {
+			3212303
+		},
+		[103212301] = {
+			3212301,
+			3212302
+		},
+		[103212201] = {
+			3212201
+		},
+		[103211601] = {
+			3211601
+		},
+		[103211001] = {
+			3211001
+		},
+		[103210801] = {
+			3210801,
+			3210802
+		},
+		[103210601] = {
+			3210601
+		},
+		[103210101] = {
+			3210101,
+			3210102
+		},
 		[103203102] = {
 			3203103
 		},
@@ -12720,7 +19104,234 @@
 			1000201
 		},
 		[101000101] = {
-			1000101
+			1000101,
+			50000001,
+			50000002,
+			50000003,
+			50000004,
+			50000005,
+			50000006,
+			50000007,
+			50000008,
+			50000009,
+			50000010,
+			50000011,
+			50000012,
+			50000013,
+			50000014,
+			50000015,
+			50000016,
+			50000017,
+			50000018,
+			50000019,
+			50000020,
+			50000021,
+			50000022,
+			50000023,
+			50000024,
+			50000025,
+			50000026,
+			50000027,
+			50000028,
+			50000029,
+			50000030,
+			50000031,
+			50000032,
+			50000033,
+			50000034,
+			50000035,
+			50000036,
+			50000037,
+			50000038,
+			50000039,
+			50000040,
+			50000041,
+			50000042,
+			50000043,
+			50000044,
+			50000045,
+			50000046,
+			50000047,
+			50000048,
+			50000049,
+			50000050,
+			50000051,
+			50000052,
+			50000053,
+			50000054,
+			60000001,
+			60000002,
+			60000003,
+			60000004,
+			60000005,
+			60000006,
+			60000007,
+			60000008,
+			60000009,
+			60000010,
+			60000011,
+			60000012,
+			60000013,
+			60000014,
+			60000015,
+			60000016,
+			60000017,
+			60000018,
+			60000019,
+			60000020,
+			60000021,
+			60000022,
+			60000023,
+			60000024,
+			60000025,
+			60000026,
+			60000027,
+			60000028,
+			60000029,
+			60000030,
+			60000031,
+			60000032,
+			60000033,
+			60000034,
+			60000035,
+			60000036,
+			60000037,
+			60000038,
+			60000039,
+			60000040,
+			60000041,
+			60000042,
+			60000043,
+			60000044,
+			60000045,
+			60000046,
+			60000047,
+			60000048,
+			60000049,
+			60000050,
+			60000051,
+			60000052,
+			60000053,
+			60000054,
+			60000055,
+			60000056,
+			60000057,
+			60000058,
+			60000059,
+			60000060,
+			60000061,
+			60000062,
+			60000063,
+			60000064,
+			60000065,
+			60000066,
+			60000067,
+			60000068,
+			60000069,
+			60000070,
+			60000071,
+			60000072,
+			60000073,
+			60000074,
+			60000075,
+			60000076,
+			60000077,
+			60000078,
+			60000079,
+			60000080,
+			60000081,
+			60000082,
+			60000083,
+			60000084,
+			60000085,
+			60000086,
+			60000087,
+			60000088,
+			60000089,
+			60000090,
+			60000091,
+			60000092,
+			60000093,
+			60000094,
+			60000095,
+			60000096,
+			60000097,
+			60000098,
+			60000099,
+			60000100,
+			60000101,
+			60000102,
+			60000103,
+			60000104,
+			60000105,
+			60000106,
+			60000107,
+			60000108,
+			60000109,
+			60000110,
+			60000111,
+			60000112,
+			60000113,
+			60000114,
+			60000115,
+			60000116,
+			60000117,
+			60000118,
+			60000119,
+			60000120,
+			60000121,
+			60000122,
+			60000123,
+			60000124,
+			60000125,
+			60000126,
+			60000127,
+			60000128,
+			60000129,
+			60000130,
+			60000131,
+			60000132,
+			60000133,
+			60000134,
+			60000135,
+			60000136,
+			60000137,
+			60000138,
+			60000139,
+			60000140,
+			60000141,
+			60000142,
+			60000143,
+			60000144,
+			60000145,
+			60000146,
+			60000147,
+			60000148,
+			60000149,
+			60000150,
+			60000151,
+			60000152,
+			60000153,
+			60000154,
+			60000155,
+			60000156,
+			60000157,
+			60000158,
+			60000159,
+			60000160,
+			60000161,
+			60000162,
+			60000163,
+			60000164,
+			60000165,
+			60000166,
+			60000167,
+			60000168,
+			60000169,
+			60000170,
+			60000171,
+			60000172,
+			60000173
 		}
 	},
 	all = {
@@ -12942,6 +19553,18 @@
 		3203101,
 		3203102,
 		3203103,
+		3210101,
+		3210102,
+		3210601,
+		3210801,
+		3210802,
+		3211001,
+		3211601,
+		3212201,
+		3212301,
+		3212302,
+		3212303,
+		3212501,
 		2105911,
 		2108401,
 		2108402,
@@ -13168,9 +19791,246 @@
 		31723101,
 		31724101,
 		31724102,
+		32042201,
+		32042202,
+		32017101,
+		32017102,
+		32019201,
+		31042111,
+		31042113,
+		31810101,
+		31810102,
+		31811101,
 		40000001,
 		40000002,
 		40000003,
-		40000004
+		40000004,
+		50000001,
+		50000002,
+		50000003,
+		50000004,
+		50000005,
+		50000006,
+		50000007,
+		50000008,
+		50000009,
+		50000010,
+		50000011,
+		50000012,
+		50000013,
+		50000014,
+		50000015,
+		50000016,
+		50000017,
+		50000018,
+		50000019,
+		50000020,
+		50000021,
+		50000022,
+		50000023,
+		50000024,
+		50000025,
+		50000026,
+		50000027,
+		50000028,
+		50000029,
+		50000030,
+		50000031,
+		50000032,
+		50000033,
+		50000034,
+		50000035,
+		50000036,
+		50000037,
+		50000038,
+		50000039,
+		50000040,
+		50000041,
+		50000042,
+		50000043,
+		50000044,
+		50000045,
+		50000046,
+		50000047,
+		50000048,
+		50000049,
+		50000050,
+		50000051,
+		50000052,
+		50000053,
+		50000054,
+		60000001,
+		60000002,
+		60000003,
+		60000004,
+		60000005,
+		60000006,
+		60000007,
+		60000008,
+		60000009,
+		60000010,
+		60000011,
+		60000012,
+		60000013,
+		60000014,
+		60000015,
+		60000016,
+		60000017,
+		60000018,
+		60000019,
+		60000020,
+		60000021,
+		60000022,
+		60000023,
+		60000024,
+		60000025,
+		60000026,
+		60000027,
+		60000028,
+		60000029,
+		60000030,
+		60000031,
+		60000032,
+		60000033,
+		60000034,
+		60000035,
+		60000036,
+		60000037,
+		60000038,
+		60000039,
+		60000040,
+		60000041,
+		60000042,
+		60000043,
+		60000044,
+		60000045,
+		60000046,
+		60000047,
+		60000048,
+		60000049,
+		60000050,
+		60000051,
+		60000052,
+		60000053,
+		60000054,
+		60000055,
+		60000056,
+		60000057,
+		60000058,
+		60000059,
+		60000060,
+		60000061,
+		60000062,
+		60000063,
+		60000064,
+		60000065,
+		60000066,
+		60000067,
+		60000068,
+		60000069,
+		60000070,
+		60000071,
+		60000072,
+		60000073,
+		60000074,
+		60000075,
+		60000076,
+		60000077,
+		60000078,
+		60000079,
+		60000080,
+		60000081,
+		60000082,
+		60000083,
+		60000084,
+		60000085,
+		60000086,
+		60000087,
+		60000088,
+		60000089,
+		60000090,
+		60000091,
+		60000092,
+		60000093,
+		60000094,
+		60000095,
+		60000096,
+		60000097,
+		60000098,
+		60000099,
+		60000100,
+		60000101,
+		60000102,
+		60000103,
+		60000104,
+		60000105,
+		60000106,
+		60000107,
+		60000108,
+		60000109,
+		60000110,
+		60000111,
+		60000112,
+		60000113,
+		60000114,
+		60000115,
+		60000116,
+		60000117,
+		60000118,
+		60000119,
+		60000120,
+		60000121,
+		60000122,
+		60000123,
+		60000124,
+		60000125,
+		60000126,
+		60000127,
+		60000128,
+		60000129,
+		60000130,
+		60000131,
+		60000132,
+		60000133,
+		60000134,
+		60000135,
+		60000136,
+		60000137,
+		60000138,
+		60000139,
+		60000140,
+		60000141,
+		60000142,
+		60000143,
+		60000144,
+		60000145,
+		60000146,
+		60000147,
+		60000148,
+		60000149,
+		60000150,
+		60000151,
+		60000152,
+		60000153,
+		60000154,
+		60000155,
+		60000156,
+		60000157,
+		60000158,
+		60000159,
+		60000160,
+		60000161,
+		60000162,
+		60000163,
+		60000164,
+		60000165,
+		60000166,
+		60000167,
+		60000168,
+		60000169,
+		60000170,
+		60000171,
+		60000172,
+		60000173
 	}
 }

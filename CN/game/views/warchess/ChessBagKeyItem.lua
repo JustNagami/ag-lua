@@ -26,7 +26,7 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1)
 	arg_4_0.typeController_:SetSelectedState("material")
 	arg_4_0.bottomAmountController_:SetSelectedState("on")
 
-	arg_4_0.iconImage_.sprite = getSpriteWithoutAtlas(arg_4_0.info_.iconPath)
+	arg_4_0.iconImage_.sprite = pureGetSpriteWithoutAtlas(arg_4_0.info_.iconPath)
 	arg_4_0.bottomAmountText_.text = arg_4_0.info_.number
 
 	LayoutRebuilder.ForceRebuildLayoutImmediate(arg_4_0.bottomAmountText_.transform)

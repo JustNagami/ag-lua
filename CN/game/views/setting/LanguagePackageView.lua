@@ -44,7 +44,7 @@ end
 function var_0_0.indexItem(arg_9_0, arg_9_1, arg_9_2)
 	local var_9_0 = AreaDifferenceCfg[GameToSDK.CURRENT_SERVER].voice_list[arg_9_1]
 
-	arg_9_2:RefreshData(VoiceLanguageCfg[var_9_0])
+	arg_9_2:RefreshData(VoiceLanguageCfg[var_9_0], arg_9_0.params_.needSetParent)
 end
 
 function var_0_0.RefreshUI(arg_10_0)
@@ -77,18 +77,27 @@ end
 
 function var_0_0.OnEnter(arg_13_0)
 	arg_13_0:RefreshUI()
+	arg_13_0:SetParent()
 end
 
 function var_0_0.OnExit(arg_14_0)
 	return
 end
 
-function var_0_0.Dispose(arg_15_0)
-	arg_15_0.scrollHelper_:Dispose()
+function var_0_0.SetParent(arg_15_0)
+	if arg_15_0.params_.needSetParent then
+		arg_15_0.transform_:SetParent(manager.ui.uiStory.transform)
+	else
+		arg_15_0.transform_:SetParent(arg_15_0:UIParent())
+	end
+end
 
-	arg_15_0.params_ = nil
+function var_0_0.Dispose(arg_16_0)
+	arg_16_0.scrollHelper_:Dispose()
 
-	var_0_0.super.Dispose(arg_15_0)
+	arg_16_0.params_ = nil
+
+	var_0_0.super.Dispose(arg_16_0)
 end
 
 return var_0_0

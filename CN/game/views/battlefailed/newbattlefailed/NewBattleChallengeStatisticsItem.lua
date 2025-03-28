@@ -35,7 +35,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 		local var_5_0 = HeroData:GetHeroData(arg_5_2)
 		local var_5_1 = var_5_0.using_skin > 0 and var_5_0.using_skin or arg_5_2
 
-		arg_5_0.battleCountIcon_.sprite = getSpriteWithoutAtlas(SpritePathCfg.HeroIcon.path .. var_5_1)
+		arg_5_0.battleCountIcon_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.HeroIcon.path .. var_5_1)
 
 		if arg_5_1 == 1 then
 			arg_5_0:RefreshLv(arg_5_2)

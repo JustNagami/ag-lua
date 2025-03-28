@@ -25,7 +25,7 @@ end
 
 function var_0_0.RefreshUI(arg_5_0, arg_5_1)
 	if arg_5_1 then
-		arg_5_0.iconImg_.sprite = getSpriteWithoutAtlas(SpritePathCfg.EquipIcon_s.path .. arg_5_1.id)
+		arg_5_0.iconImg_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.EquipIcon_s.path .. arg_5_1.id)
 	end
 end
 

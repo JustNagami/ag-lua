@@ -114,7 +114,6 @@ function var_0_0.OnEnter(arg_9_0)
 	end
 
 	arg_9_0:RefreshView()
-	arg_9_0:GoToTarget(arg_9_0.params_.pageIndex)
 	arg_9_0:RefreshSideBar(arg_9_0.equipId_)
 	arg_9_0:RegistEventListener(EQUIP_UPGRADE_SUCCESS, handler(arg_9_0, arg_9_0.OnEquipUpgradeSuccess))
 end
@@ -243,7 +242,7 @@ function var_0_0.GoToTarget(arg_18_0, arg_18_1)
 
 			arg_18_0.pages_[arg_18_1] = var_18_2.New(arg_18_0, var_18_5, var_18_1)
 
-			arg_18_0.pages_[arg_18_1]:OnEnter()
+			arg_18_0.pages_[arg_18_1]:Show(var_18_1)
 		end
 	else
 		arg_18_0.pages_[arg_18_1]:Show(var_18_1)
@@ -291,12 +290,16 @@ function var_0_0.RefreshSideBar(arg_19_0, arg_19_1)
 		if var_19_0 == arg_19_0.params_.pageIndex then
 			arg_19_0.equipDisc_:RefreshItemByIndex(arg_19_0.index_, arg_19_0.equip)
 		end
+
+		return var_19_0
 	else
 		SetActive(arg_19_0.gameObject_levelup, false)
 		SetActive(arg_19_0.gameObject_upgrade, false)
 		SetActive(arg_19_0.gameObject_enchant, false)
 		SetActive(arg_19_0.gameObject_reset, false)
 		SetActive(arg_19_0.gameObject_inherit, false)
+
+		return 0
 	end
 end
 
@@ -373,10 +376,6 @@ function var_0_0.OnExit(arg_29_0)
 		end
 
 		arg_29_0.curPageIndex_ = nil
-	end
-
-	for iter_29_0, iter_29_1 in pairs(arg_29_0.pages_) do
-		iter_29_1:OnExit()
 	end
 end
 

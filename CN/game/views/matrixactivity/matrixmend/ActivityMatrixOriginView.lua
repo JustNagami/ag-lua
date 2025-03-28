@@ -145,7 +145,7 @@ function var_0_0.InitBackScene(arg_12_0)
 	arg_12_0.backGroundTrs_.localPosition = Vector3(0, 0, 20)
 	arg_12_0.backGroundTrs_.localEulerAngles = Vector3(0, 0, 0)
 	arg_12_0.backGroundTrs_.localScale = Vector3(1, 1, 1)
-	arg_12_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas("TextureConfig/VolumeIIIUI/Volume_bg_00210")
+	arg_12_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = pureGetSpriteWithoutAtlas("TextureConfig/VolumeIIIUI/Volume_bg_00210")
 end
 
 function var_0_0.OnExit(arg_13_0)

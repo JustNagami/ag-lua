@@ -27,7 +27,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2)
 	arg_5_0.index_ = arg_5_1
 	arg_5_0.id_ = arg_5_2
 	arg_5_0.cfg_ = RogueTeamEventCfg[arg_5_2]
-	arg_5_0.image_.sprite = getSpriteWithoutAtlas(arg_5_0.cfg_.image)
+	arg_5_0.image_.sprite = pureGetSpriteWithoutAtlas(arg_5_0.cfg_.image)
 	arg_5_0.text_.text = arg_5_0.cfg_.title
 end
 

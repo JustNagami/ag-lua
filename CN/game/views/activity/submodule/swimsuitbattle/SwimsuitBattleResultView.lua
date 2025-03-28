@@ -41,9 +41,9 @@ function var_0_0.OnEnter(arg_8_0)
 		arg_8_0.resultController_:SetSelectedState("result")
 		arg_8_0.winerUIList_:StartScroll(0)
 
-		arg_8_0.win1Img_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. SwimsuitVoteHeroCfg[arg_8_0.voteData_[1].ID].show_image)
-		arg_8_0.win2Img_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. SwimsuitVoteHeroCfg[arg_8_0.voteData_[2].ID].show_image)
-		arg_8_0.win3Img_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. SwimsuitVoteHeroCfg[arg_8_0.voteData_[3].ID].show_image)
+		arg_8_0.win1Img_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. SwimsuitVoteHeroCfg[arg_8_0.voteData_[1].ID].show_image)
+		arg_8_0.win2Img_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. SwimsuitVoteHeroCfg[arg_8_0.voteData_[2].ID].show_image)
+		arg_8_0.win3Img_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. SwimsuitVoteHeroCfg[arg_8_0.voteData_[3].ID].show_image)
 	else
 		arg_8_0.voteData_ = SwimsuitBattleData:GetSortVoteContestantsData(arg_8_0.round_)
 

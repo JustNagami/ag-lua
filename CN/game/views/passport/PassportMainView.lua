@@ -36,6 +36,7 @@ function var_0_0.InitUI(arg_5_0)
 	arg_5_0.nextCommonItem2_ = CommonItemView.New(arg_5_0.rightCommonItem2_)
 	arg_5_0.CommonData1 = clone(ItemTemplateData)
 	arg_5_0.CommonData2 = clone(ItemTemplateData)
+	arg_5_0.bpNewController_ = arg_5_0.controllerEx_:GetController("isNewPBRecharge")
 end
 
 function var_0_0.indexItem(arg_6_0, arg_6_1, arg_6_2)
@@ -178,6 +179,7 @@ function var_0_0.UpdateView(arg_20_0)
 
 	SetActive(arg_20_0.viewBtn_.gameObject, var_20_4 >= 17)
 	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_20_0.bglvTransform_)
+	ActivityNewbieTools.RefreshNewBPRecharge(arg_20_0.bpNewController_)
 end
 
 function var_0_0.UpdateNextBonus(arg_21_0, arg_21_1)

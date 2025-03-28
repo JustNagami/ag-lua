@@ -36,7 +36,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1)
 end
 
 function var_0_0.RefreshUI(arg_7_0)
-	arg_7_0.titleText_.text = StageArchivesCollecteCfg[arg_7_0.archiveID_].name
+	arg_7_0.titleText_.text = StageArchivesCollectCfg[arg_7_0.archiveID_].name
 
 	manager.redPoint:SetRedPointIndependent(arg_7_0.transform_, StageTools.IsHaveRedStageArchive(arg_7_0.archiveID_))
 end

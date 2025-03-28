@@ -1920,6 +1920,8 @@
 			if arg_51_0 == 3 then
 				arg_49_0:Play414331017(arg_49_1)
 			end
+
+			arg_49_1:RecordChoiceLog(414331012, 414331013, 414331015, 414331017)
 		end
 
 		function arg_49_1.onSingleLineUpdate_(arg_52_0)

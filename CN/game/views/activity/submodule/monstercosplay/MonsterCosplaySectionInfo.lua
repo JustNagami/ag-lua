@@ -157,7 +157,7 @@ end
 function var_0_0.RefreshTitleDesc(arg_14_0)
 	arg_14_0.nameTxt_.text = BattleActivityMonsterCosplayCfg[arg_14_0.stageID_].name
 	arg_14_0.descTxt_.text = BattleActivityMonsterCosplayCfg[arg_14_0.stageID_].tips
-	arg_14_0.bgIcon_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, BattleActivityMonsterCosplayCfg[arg_14_0.stageID_].background_1))
+	arg_14_0.bgIcon_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.Stage.path, BattleActivityMonsterCosplayCfg[arg_14_0.stageID_].background_1))
 end
 
 function var_0_0.Dispose(arg_15_0)

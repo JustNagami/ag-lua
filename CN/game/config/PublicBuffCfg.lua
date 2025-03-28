@@ -2069,7 +2069,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 102701,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[102712] = {
@@ -2093,7 +2093,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 102711,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[102713] = {
@@ -2188,7 +2188,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 102709,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[102710] = {
@@ -2212,7 +2212,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 102714,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[102715] = {
@@ -3727,7 +3727,7 @@
 		buff_class_id = 202,
 		max_level = 10,
 		ID = 103605,
-		icon = "BUFF_TYPE_BLOOD",
+		icon = "BUFF_DOT_LIGHT_1",
 		buff_ticktime = 3000,
 		buffparam_base = {
 			100
@@ -3800,7 +3800,7 @@
 		buff_class_id = 202,
 		max_level = 10,
 		ID = 103705,
-		icon = "BUFF_TYPE_BLOOD",
+		icon = "BUFF_DOT_DARK_1",
 		buff_ticktime = 3000,
 		buffparam_base = {
 			100
@@ -5383,7 +5383,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 104901,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[104902] = {
@@ -5392,7 +5392,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 104902,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[104903] = {
@@ -5629,7 +5629,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 104919,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[104920] = {
@@ -5769,7 +5769,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 104929,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[104930] = {
@@ -6985,7 +6985,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 105510,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 9999999
 	},
 	[105511] = {
@@ -10735,7 +10735,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 108001,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[108013] = {
@@ -10789,7 +10789,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 108003,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[108004] = {
@@ -10884,7 +10884,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 108010,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[108015] = {
@@ -11036,7 +11036,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 108105,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[108106] = {
@@ -11114,7 +11114,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 108111,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[108112] = {
@@ -13104,7 +13104,7 @@
 		buff_class_id = 202,
 		max_level = 40,
 		ID = 109902,
-		icon = "BUFF_TYPE_BLOOD",
+		icon = "BUFF_DOT_DARK_1",
 		buff_ticktime = 3000,
 		buffparam_base = {
 			400
@@ -13143,7 +13143,7 @@
 		buff_class_id = 202,
 		max_level = 40,
 		ID = 109916,
-		icon = "BUFF_TYPE_BLOOD",
+		icon = "BUFF_DOT_DARK_1",
 		buff_ticktime = 3000,
 		buffparam_base = {
 			800
@@ -13257,7 +13257,7 @@
 		buff_class_id = 202,
 		max_level = 40,
 		ID = 109913,
-		icon = "BUFF_TYPE_BLOOD",
+		icon = "BUFF_DOT_DARK_1",
 		buff_ticktime = 3000,
 		buffparam_base = {
 			800
@@ -13877,6 +13877,186 @@
 			0
 		}
 	},
+	[113815] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 113815,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			51,
+			240
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[113816] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 113816,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			52,
+			240
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[113817] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 113817,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			53,
+			240
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[113818] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 113818,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			81,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[113819] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 113819,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			82,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[113820] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 113820,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			401,
+			600
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[113821] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 113821,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			401,
+			120
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[113822] = {
+		buff_class_id = 2,
+		max_level = 1,
+		ID = 113822,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			81,
+			120
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[113823] = {
+		buff_class_id = 1,
+		max_level = 120,
+		ID = 113823,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			81,
+			1
+		},
+		buffparam_factor = {
+			0,
+			1
+		}
+	},
+	[113824] = {
+		buff_class_id = 14,
+		max_level = 9999999,
+		ID = 113824,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			450,
+			1
+		},
+		buffparam_factor = {
+			0,
+			1
+		}
+	},
+	[113825] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 113825,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			401,
+			108
+		},
+		buffparam_factor = {
+			0,
+			3
+		}
+	},
+	[113826] = {
+		buff_class_id = 2,
+		max_level = 1,
+		ID = 113826,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			81,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
 	[114806] = {
 		buff_class_id = 205,
 		max_level = 1,
@@ -14487,7 +14667,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 113901,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[113902] = {
@@ -14599,7 +14779,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 113909,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[113910] = {
@@ -17433,6 +17613,81 @@
 			0
 		}
 	},
+	[115032] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 115032,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			81,
+			120
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[115033] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 115033,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			302,
+			250
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[115034] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 115034,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			82,
+			600
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[115035] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 115035,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			24,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[115036] = {
+		buff_class_id = 14,
+		max_level = 999999,
+		ID = 115036,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			450,
+			400
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
 	[128401] = {
 		buffparam_base = "",
 		buff_class_id = 113,
@@ -19630,7 +19885,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 124819,
-		icon = "BUFF_TYPE_PARALYZE",
+		icon = "BUFF_STRONG_CONTROL_THUNDER",
 		buff_ticktime = 1
 	},
 	[124820] = {
@@ -20900,6 +21155,1814 @@
 			1
 		}
 	},
+	[107301] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 107301,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			51,
+			80
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[107302] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 107302,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			52,
+			80
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[107303] = {
+		buff_class_id = 202,
+		max_level = 1,
+		ID = 107303,
+		icon = "BUFF_DOT_WIND_1",
+		buff_ticktime = 3000,
+		buffparam_base = {
+			3000
+		},
+		buffparam_factor = {
+			0
+		}
+	},
+	[107304] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 107304,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			152,
+			240
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[107305] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 107305,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			302,
+			240
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[107306] = {
+		buff_class_id = 306,
+		max_level = 1,
+		ID = 107306,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			0
+		},
+		buffparam_factor = {
+			0
+		}
+	},
+	[107307] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 107307,
+		icon = "BUFF_DEFENSE_DOWN",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			25,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[107308] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 107308,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			81,
+			150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[107309] = {
+		buffparam_base = "",
+		buff_class_id = 113,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 107309,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[107310] = {
+		buff_class_id = 2,
+		max_level = 3,
+		ID = 107310,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			82,
+			150
+		},
+		buffparam_factor = {
+			0,
+			150
+		}
+	},
+	[107311] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 107311,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			11,
+			400
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[107312] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 107312,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			81,
+			150
+		},
+		buffparam_factor = {
+			0,
+			10
+		}
+	},
+	[107313] = {
+		buff_class_id = 7,
+		max_level = 1,
+		ID = 107313,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			500,
+			300
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[107314] = {
+		buff_class_id = 14,
+		max_level = 8,
+		ID = 107314,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			450,
+			30
+		},
+		buffparam_factor = {
+			0,
+			30
+		}
+	},
+	[107315] = {
+		buff_class_id = 1,
+		max_level = 8,
+		ID = 107315,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			11,
+			25
+		},
+		buffparam_factor = {
+			0,
+			25
+		}
+	},
+	[107316] = {
+		buff_class_id = 2,
+		max_level = 1,
+		ID = 107316,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			51,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[107317] = {
+		buff_class_id = 2,
+		max_level = 1,
+		ID = 107317,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			52,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[107318] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 107318,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			152,
+			300
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[107319] = {
+		buff_class_id = 14,
+		max_level = 1,
+		ID = 107319,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			450,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[107320] = {
+		buff_class_id = 1,
+		max_level = 7,
+		ID = 107320,
+		icon = "BUFF_DEFENSE_DOWN",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			162,
+			-1
+		},
+		buffparam_factor = {
+			0,
+			-1
+		}
+	},
+	[107321] = {
+		buff_class_id = 1,
+		max_level = 7,
+		ID = 107321,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			81,
+			1
+		},
+		buffparam_factor = {
+			0,
+			1
+		}
+	},
+	[107322] = {
+		buffparam_base = "",
+		buff_class_id = 104,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 107322,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[107323] = {
+		buff_class_id = 1,
+		max_level = 30,
+		ID = 107323,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			401,
+			10
+		},
+		buffparam_factor = {
+			0,
+			10
+		}
+	},
+	[107324] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 107324,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			152,
+			300
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[107325] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 107325,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			152,
+			300
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[107326] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 107326,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			302,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[107327] = {
+		buff_class_id = 204,
+		max_level = 3,
+		ID = 107327,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			80,
+			0
+		},
+		buffparam_factor = {
+			80,
+			0
+		}
+	},
+	[107328] = {
+		buff_class_id = 204,
+		max_level = 3,
+		ID = 107328,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			200,
+			0
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[107329] = {
+		buffparam_base = "",
+		buff_class_id = 111,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 107329,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[108501] = {
+		buffparam_base = "",
+		buff_class_id = 304,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 108501,
+		icon = "BUFF_STRONG_CONTROL_PHYSICS",
+		buff_ticktime = 1
+	},
+	[108502] = {
+		buffparam_base = "",
+		buff_class_id = 304,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 108502,
+		icon = "BUFF_STRONG_CONTROL_WIND",
+		buff_ticktime = 1
+	},
+	[108503] = {
+		buffparam_base = "",
+		buff_class_id = 304,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 108503,
+		icon = "BUFF_STRONG_CONTROL_FIRE",
+		buff_ticktime = 1
+	},
+	[108504] = {
+		buffparam_base = "",
+		buff_class_id = 304,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 108504,
+		icon = "BUFF_STRONG_CONTROL_ICE",
+		buff_ticktime = 1
+	},
+	[108505] = {
+		buffparam_base = "",
+		buff_class_id = 304,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 108505,
+		icon = "BUFF_STRONG_CONTROL_WATER",
+		buff_ticktime = 1
+	},
+	[108506] = {
+		buffparam_base = "",
+		buff_class_id = 304,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 108506,
+		icon = "BUFF_STRONG_CONTROL_DARK",
+		buff_ticktime = 1
+	},
+	[108507] = {
+		buffparam_base = "",
+		buff_class_id = 304,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 108507,
+		icon = "BUFF_STRONG_CONTROL_LIGHT",
+		buff_ticktime = 1
+	},
+	[108508] = {
+		buffparam_base = "",
+		buff_class_id = 304,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 108508,
+		icon = "BUFF_STRONG_CONTROL_THUNDER",
+		buff_ticktime = 1
+	},
+	[108509] = {
+		buff_class_id = 100100106,
+		max_level = 1,
+		ID = 108509,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			6,
+			4,
+			5,
+			6,
+			7,
+			60
+		},
+		buffparam_factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[108510] = {
+		buff_class_id = 1,
+		max_level = 60,
+		ID = 108510,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			401,
+			0
+		},
+		buffparam_factor = {
+			0,
+			2
+		}
+	},
+	[108511] = {
+		buffparam_base = "",
+		buff_class_id = 101,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 108511,
+		icon = "",
+		buff_ticktime = 1
+	},
+	[108512] = {
+		buff_class_id = 108520151,
+		max_level = 1,
+		ID = 108512,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			20000
+		},
+		buffparam_factor = {
+			0
+		}
+	},
+	[108513] = {
+		buffparam_base = "",
+		buff_class_id = 113,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 108513,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[108521] = {
+		buff_class_id = 108520251,
+		max_level = 1,
+		ID = 108521,
+		icon = "",
+		buff_ticktime = 1,
+		buffparam_base = {
+			4000,
+			3000,
+			2000,
+			1000,
+			1000
+		},
+		buffparam_factor = {
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[108531] = {
+		buffparam_base = "",
+		buff_class_id = 113,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 108531,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[108532] = {
+		buffparam_base = "",
+		buff_class_id = 108520351,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 108532,
+		icon = "",
+		buff_ticktime = 1
+	},
+	[108533] = {
+		buff_class_id = 108520352,
+		max_level = 1,
+		ID = 108533,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			2000,
+			2000,
+			2000,
+			2000,
+			3000,
+			4000,
+			5000,
+			1000,
+			1000
+		},
+		buffparam_factor = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[108541] = {
+		buffparam_base = "",
+		buff_class_id = 104,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 108541,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[108542] = {
+		buffparam_base = "",
+		buff_class_id = 108520451,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 108542,
+		icon = "",
+		buff_ticktime = 1
+	},
+	[108543] = {
+		buff_class_id = 108520452,
+		max_level = 1,
+		ID = 108543,
+		icon = "",
+		buff_ticktime = 1,
+		buffparam_base = {
+			4000,
+			4000,
+			5000,
+			6000,
+			7000
+		},
+		buffparam_factor = {
+			0,
+			0,
+			0,
+			0,
+			0
+		}
+	},
+	[108544] = {
+		buff_class_id = 7,
+		max_level = 1,
+		ID = 108544,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			500,
+			900
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108551] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108551,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			159,
+			150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108552] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108552,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			701,
+			100
+		},
+		buffparam_factor = {
+			0,
+			100
+		}
+	},
+	[108554] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108554,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			401,
+			-300
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108555] = {
+		buff_class_id = 2,
+		max_level = 1,
+		ID = 108555,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			81,
+			120
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108556] = {
+		buff_class_id = 2,
+		max_level = 1,
+		ID = 108556,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			82,
+			300
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108561] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108561,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			161,
+			-150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108562] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108562,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			162,
+			-150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108563] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108563,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			163,
+			-150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108564] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108564,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			164,
+			-150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108565] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108565,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			165,
+			-150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108566] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108566,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			166,
+			-150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108567] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108567,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			167,
+			-150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108568] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108568,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			168,
+			-150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108569] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108569,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			401,
+			-200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108570] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108570,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			402,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108571] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108571,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			151,
+			150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108572] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108572,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			152,
+			150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108573] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108573,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			153,
+			150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108574] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108574,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			154,
+			150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108575] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108575,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			155,
+			150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108576] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108576,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			156,
+			150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108577] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108577,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			157,
+			150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108578] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108578,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			158,
+			150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108579] = {
+		buffparam_base = "",
+		buff_class_id = 104,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 108579,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[108580] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108580,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			82,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108581] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108581,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			701,
+			250
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108582] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108582,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			159,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108583] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108583,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			81,
+			120
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108584] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 108584,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			82,
+			700
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108585] = {
+		buff_class_id = 14,
+		max_level = 1,
+		ID = 108585,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			450,
+			250
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108586] = {
+		buff_class_id = 14,
+		max_level = 1,
+		ID = 108586,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			450,
+			250
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[108587] = {
+		buff_class_id = 1,
+		max_level = 1314,
+		ID = 108587,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			1,
+			1
+		},
+		buffparam_factor = {
+			0,
+			1
+		}
+	},
+	[108591] = {
+		buff_class_id = 14,
+		max_level = 7,
+		ID = 108591,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			450,
+			80
+		},
+		buffparam_factor = {
+			0,
+			20
+		}
+	},
+	[108592] = {
+		buff_class_id = 14,
+		max_level = 8,
+		ID = 108592,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			450,
+			125
+		},
+		buffparam_factor = {
+			0,
+			125
+		}
+	},
+	[108593] = {
+		buff_class_id = 1,
+		max_level = 7,
+		ID = 108593,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			81,
+			100
+		},
+		buffparam_factor = {
+			0,
+			25
+		}
+	},
+	[108594] = {
+		buff_class_id = 1,
+		max_level = 7,
+		ID = 108594,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			159,
+			80
+		},
+		buffparam_factor = {
+			0,
+			20
+		}
+	},
+	[108595] = {
+		buff_class_id = 1,
+		max_level = 7,
+		ID = 108595,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			51,
+			160
+		},
+		buffparam_factor = {
+			0,
+			40
+		}
+	},
+	[108596] = {
+		buff_class_id = 1,
+		max_level = 7,
+		ID = 108596,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			52,
+			160
+		},
+		buffparam_factor = {
+			0,
+			40
+		}
+	},
+	[108597] = {
+		buff_class_id = 1,
+		max_level = 7,
+		ID = 108597,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			53,
+			160
+		},
+		buffparam_factor = {
+			0,
+			40
+		}
+	},
+	[121101] = {
+		buff_class_id = 306,
+		max_level = 1,
+		ID = 121101,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			0
+		},
+		buffparam_factor = {
+			0
+		}
+	},
+	[121102] = {
+		buffparam_base = "",
+		buff_class_id = 111,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 121102,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[121103] = {
+		buffparam_base = "",
+		buff_class_id = 109,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 121103,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[121104] = {
+		buff_class_id = 2,
+		max_level = 1,
+		ID = 121104,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			51,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121105] = {
+		buffparam_base = "",
+		buff_class_id = 104,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 121105,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[121106] = {
+		buff_class_id = 10,
+		max_level = 1,
+		ID = 121106,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			31,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121107] = {
+		buff_class_id = 204,
+		max_level = 1,
+		ID = 121107,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			200,
+			0
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121108] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 121108,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			157,
+			150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121109] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 121109,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			302,
+			50
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121110] = {
+		buffparam_base = "",
+		buff_class_id = 104,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 121110,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[121111] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 121111,
+		icon = "BUFF_ATTACK_DOWN",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			11,
+			-200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121112] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 121112,
+		icon = "BUFF_DEFENSE_DOWN",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			167,
+			-200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121113] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 121113,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			82,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121114] = {
+		buff_class_id = 1,
+		max_level = 25,
+		ID = 121114,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			157,
+			18
+		},
+		buffparam_factor = {
+			0,
+			18
+		}
+	},
+	[121115] = {
+		buff_class_id = 1,
+		max_level = 25,
+		ID = 121115,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			302,
+			6
+		},
+		buffparam_factor = {
+			0,
+			6
+		}
+	},
+	[121116] = {
+		buff_class_id = 208,
+		max_level = 9999999,
+		ID = 121116,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			0,
+			1
+		},
+		buffparam_factor = {
+			0,
+			1
+		}
+	},
+	[121117] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 121117,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			157,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121118] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 121118,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			82,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121119] = {
+		buff_class_id = 14,
+		max_level = 1,
+		ID = 121119,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			450,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121120] = {
+		buff_class_id = 1,
+		max_level = 25,
+		ID = 121120,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			82,
+			1
+		},
+		buffparam_factor = {
+			0,
+			1
+		}
+	},
+	[121121] = {
+		buff_class_id = 208,
+		max_level = 1,
+		ID = 121121,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			150,
+			0
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121122] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 121122,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			159,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121123] = {
+		buff_class_id = 1,
+		max_level = 75,
+		ID = 121123,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			81,
+			4
+		},
+		buffparam_factor = {
+			0,
+			4
+		}
+	},
+	[121124] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 121124,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			11,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121125] = {
+		buff_class_id = 204,
+		max_level = 1,
+		ID = 121125,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			200,
+			0
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121126] = {
+		buffparam_base = "",
+		buff_class_id = 101,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 121126,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[121127] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 121127,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			82,
+			300
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121128] = {
+		buff_class_id = 2,
+		max_level = 100,
+		ID = 121128,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			11,
+			4
+		},
+		buffparam_factor = {
+			0,
+			4
+		}
+	},
+	[121129] = {
+		buff_class_id = 15,
+		max_level = 100,
+		ID = 121129,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			450,
+			40
+		},
+		buffparam_factor = {
+			0,
+			40
+		}
+	},
+	[121130] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 121130,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			42,
+			1000
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121131] = {
+		buff_class_id = 2,
+		max_level = 100,
+		ID = 121131,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			82,
+			40
+		},
+		buffparam_factor = {
+			0,
+			40
+		}
+	},
+	[121132] = {
+		buff_class_id = 10,
+		max_level = 7,
+		ID = 121132,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			31,
+			1
+		},
+		buffparam_factor = {
+			0,
+			1
+		}
+	},
+	[121133] = {
+		buff_class_id = 1,
+		max_level = 7,
+		ID = 121133,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			81,
+			1
+		},
+		buffparam_factor = {
+			0,
+			1
+		}
+	},
+	[121134] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 121134,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			159,
+			300
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121135] = {
+		buff_class_id = 14,
+		max_level = 25,
+		ID = 121135,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			450,
+			20
+		},
+		buffparam_factor = {
+			0,
+			20
+		}
+	},
+	[121136] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 121136,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			11,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121137] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 121137,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			157,
+			200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121138] = {
+		buff_class_id = 18,
+		max_level = 1,
+		ID = 121138,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			1105,
+			1200
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[121139] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 121139,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			81,
+			150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
 	[202901] = {
 		buff_class_id = 1,
 		max_level = 1,
@@ -22106,7 +24169,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 402502,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[402503] = {
@@ -22902,6 +24965,66 @@
 			0
 		}
 	},
+	[404701] = {
+		buff_class_id = 204,
+		max_level = 1,
+		ID = 404701,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			60,
+			0
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[404702] = {
+		buff_class_id = 204,
+		max_level = 1,
+		ID = 404702,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			40,
+			0
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[404703] = {
+		buff_class_id = 204,
+		max_level = 1,
+		ID = 404703,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			10,
+			0
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[404704] = {
+		buff_class_id = 208,
+		max_level = 9999999,
+		ID = 404704,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			0,
+			1
+		},
+		buffparam_factor = {
+			0,
+			1
+		}
+	},
 	[501101] = {
 		buff_class_id = 208,
 		max_level = 9999999,
@@ -23081,7 +25204,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 504902,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[504903] = {
@@ -23132,7 +25255,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 508001,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[509301] = {
@@ -23197,7 +25320,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 513902,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[515003] = {
@@ -23599,6 +25722,21 @@
 			0,
 			0,
 			0
+		}
+	},
+	[614001] = {
+		buff_class_id = 108,
+		max_level = 3,
+		ID = 614001,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			4081,
+			220
+		},
+		buffparam_factor = {
+			0,
+			60
 		}
 	},
 	[10011] = {
@@ -25733,6 +27871,66 @@
 		buffparam_base = {
 			82,
 			350
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[10671] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 10671,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			314,
+			100
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[10672] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 10672,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			82,
+			350
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[10681] = {
+		buff_class_id = 1,
+		max_level = 1,
+		ID = 10681,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			159,
+			150
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[10682] = {
+		buff_class_id = 14,
+		max_level = 1,
+		ID = 10682,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			450,
+			150
 		},
 		buffparam_factor = {
 			0,
@@ -34530,6 +36728,33 @@
 		icon = "AFFIX_BUFF_PHYSIC_DARKRES_UP",
 		buff_ticktime = 9999999
 	},
+	[447] = {
+		buffparam_base = "",
+		buff_class_id = 4420,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 447,
+		icon = "AFFIX_BUFF_ALLDAMAGE_UP",
+		buff_ticktime = 9999999
+	},
+	[448] = {
+		buffparam_base = "",
+		buff_class_id = 4420,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 448,
+		icon = "AFFIX_BUFF_ALLDAMAGE_UP",
+		buff_ticktime = 9999999
+	},
+	[449] = {
+		buffparam_base = "",
+		buff_class_id = 4420,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 449,
+		icon = "AFFIX_BUFF_ALLDAMAGE_UP",
+		buff_ticktime = 9999999
+	},
 	[80101] = {
 		buff_class_id = 204,
 		max_level = 1000,
@@ -41145,6 +43370,60 @@
 			0
 		}
 	},
+	[9355] = {
+		buffparam_base = "",
+		buff_class_id = 93550,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 9355,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[9356] = {
+		buffparam_base = "",
+		buff_class_id = 93560,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 9356,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[9357] = {
+		buffparam_base = "",
+		buff_class_id = 93570,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 9357,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[9358] = {
+		buffparam_base = "",
+		buff_class_id = 93580,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 9358,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[9359] = {
+		buffparam_base = "",
+		buff_class_id = 93590,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 9359,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[9360] = {
+		buffparam_base = "",
+		buff_class_id = 93600,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 9360,
+		icon = "",
+		buff_ticktime = 9999999
+	},
 	[95001] = {
 		buff_class_id = 10,
 		max_level = 20,
@@ -43190,6 +45469,15 @@
 		buffparam_factor = "",
 		ID = 9642,
 		icon = "AFFIX_BUFF_MITIGATE_50UP",
+		buff_ticktime = 9999999
+	},
+	[9651] = {
+		buffparam_base = "",
+		buff_class_id = 9651,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 9651,
+		icon = "AFFIX_BUFF_CD_DOWN",
 		buff_ticktime = 9999999
 	},
 	[9681] = {
@@ -46741,7 +49029,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 91631,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[9164] = {
@@ -50889,6 +53177,66 @@
 		icon = "",
 		buff_ticktime = 9999999
 	},
+	[70231] = {
+		buffparam_base = "",
+		buff_class_id = 702310,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 70231,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[70232] = {
+		buffparam_base = "",
+		buff_class_id = 702320,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 70232,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[70233] = {
+		buffparam_base = "",
+		buff_class_id = 702330,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 70233,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[70234] = {
+		buffparam_base = "",
+		buff_class_id = 702340,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 70234,
+		icon = "",
+		buff_ticktime = 9999999
+	},
+	[702341] = {
+		buff_class_id = 2,
+		max_level = 1000,
+		ID = 702341,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			11,
+			8000
+		},
+		buffparam_factor = {
+			0,
+			0
+		}
+	},
+	[70235] = {
+		buffparam_base = "",
+		buff_class_id = 702350,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 70235,
+		icon = "",
+		buff_ticktime = 9999999
+	},
 	[70501] = {
 		buffparam_base = "",
 		buff_class_id = 705010,
@@ -53342,6 +55690,15 @@
 			1000
 		}
 	},
+	[71009] = {
+		buffparam_base = "",
+		buff_class_id = 710010,
+		max_level = 1,
+		buffparam_factor = "",
+		ID = 71009,
+		icon = "",
+		buff_ticktime = 9999999
+	},
 	[71011] = {
 		buffparam_base = "",
 		buff_class_id = 710110,
@@ -54951,7 +57308,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 713551,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[71356] = {
@@ -54969,7 +57326,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 713561,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[71357] = {
@@ -55148,7 +57505,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 713992,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[713993] = {
@@ -55316,7 +57673,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 714561,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[94001] = {
@@ -55907,7 +58264,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 94041,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[94042] = {
@@ -57031,7 +59388,7 @@
 		max_level = 1,
 		buffparam_factor = "",
 		ID = 92208,
-		icon = "BUFF_TYPE_FREEZE",
+		icon = "BUFF_STRONG_CONTROL_ICE",
 		buff_ticktime = 1
 	},
 	[92209] = {
@@ -58585,6 +60942,18 @@
 		113812,
 		113813,
 		113814,
+		113815,
+		113816,
+		113817,
+		113818,
+		113819,
+		113820,
+		113821,
+		113822,
+		113823,
+		113824,
+		113825,
+		113826,
 		114806,
 		114807,
 		114801,
@@ -58831,6 +61200,11 @@
 		115029,
 		115030,
 		115031,
+		115032,
+		115033,
+		115034,
+		115035,
+		115036,
 		128401,
 		128402,
 		128403,
@@ -59076,6 +61450,134 @@
 		101229,
 		101230,
 		101231,
+		107301,
+		107302,
+		107303,
+		107304,
+		107305,
+		107306,
+		107307,
+		107308,
+		107309,
+		107310,
+		107311,
+		107312,
+		107313,
+		107314,
+		107315,
+		107316,
+		107317,
+		107318,
+		107319,
+		107320,
+		107321,
+		107322,
+		107323,
+		107324,
+		107325,
+		107326,
+		107327,
+		107328,
+		107329,
+		108501,
+		108502,
+		108503,
+		108504,
+		108505,
+		108506,
+		108507,
+		108508,
+		108509,
+		108510,
+		108511,
+		108512,
+		108513,
+		108521,
+		108531,
+		108532,
+		108533,
+		108541,
+		108542,
+		108543,
+		108544,
+		108551,
+		108552,
+		108554,
+		108555,
+		108556,
+		108561,
+		108562,
+		108563,
+		108564,
+		108565,
+		108566,
+		108567,
+		108568,
+		108569,
+		108570,
+		108571,
+		108572,
+		108573,
+		108574,
+		108575,
+		108576,
+		108577,
+		108578,
+		108579,
+		108580,
+		108581,
+		108582,
+		108583,
+		108584,
+		108585,
+		108586,
+		108587,
+		108591,
+		108592,
+		108593,
+		108594,
+		108595,
+		108596,
+		108597,
+		121101,
+		121102,
+		121103,
+		121104,
+		121105,
+		121106,
+		121107,
+		121108,
+		121109,
+		121110,
+		121111,
+		121112,
+		121113,
+		121114,
+		121115,
+		121116,
+		121117,
+		121118,
+		121119,
+		121120,
+		121121,
+		121122,
+		121123,
+		121124,
+		121125,
+		121126,
+		121127,
+		121128,
+		121129,
+		121130,
+		121131,
+		121132,
+		121133,
+		121134,
+		121135,
+		121136,
+		121137,
+		121138,
+		121139,
 		202901,
 		202902,
 		203001,
@@ -59238,6 +61740,10 @@
 		404603,
 		404604,
 		404605,
+		404701,
+		404702,
+		404703,
+		404704,
 		501101,
 		501102,
 		501103,
@@ -59291,6 +61797,7 @@
 		608901,
 		608902,
 		611701,
+		614001,
 		10011,
 		10012,
 		10021,
@@ -59435,6 +61942,10 @@
 		10662,
 		10663,
 		10664,
+		10671,
+		10672,
+		10681,
+		10682,
 		14011,
 		14021,
 		14031,
@@ -60162,6 +62673,9 @@
 		444,
 		445,
 		446,
+		447,
+		448,
+		449,
 		80101,
 		80102,
 		80103,
@@ -60731,6 +63245,12 @@
 		9349,
 		9354,
 		93541,
+		9355,
+		9356,
+		9357,
+		9358,
+		9359,
+		9360,
 		95001,
 		95002,
 		95003,
@@ -60918,6 +63438,7 @@
 		9641,
 		96411,
 		9642,
+		9651,
 		9681,
 		96811,
 		9682,
@@ -61597,6 +64118,12 @@
 		70228,
 		70229,
 		70230,
+		70231,
+		70232,
+		70233,
+		70234,
+		702341,
+		70235,
 		70501,
 		70502,
 		705021,
@@ -61816,6 +64343,7 @@
 		710071,
 		71008,
 		710081,
+		71009,
 		71011,
 		710111,
 		71012,

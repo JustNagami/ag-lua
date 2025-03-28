@@ -243,7 +243,7 @@ function var_0_0.RefreshInfoPage(arg_29_0, arg_29_1)
 		arg_29_0:UpdataMaterialItemData(arg_29_1)
 		arg_29_0.materialItemScroll_:StartScroll(#arg_29_0.materialItemList_)
 
-		arg_29_0.foodiconImg_.sprite = getSpriteWithoutAtlas(DormConst.CANTEEN_FOOD_PATH .. BackHomeCanteenFoodCfg[arg_29_1].icon)
+		arg_29_0.foodiconImg_.sprite = pureGetSpriteWithoutAtlas(DormConst.CANTEEN_FOOD_PATH .. BackHomeCanteenFoodCfg[arg_29_1].icon)
 		arg_29_0.progressnumText_.text = CanteenFoodData:GetFoodProficiency(arg_29_1)
 
 		arg_29_0:UpdataTasteData(arg_29_1)

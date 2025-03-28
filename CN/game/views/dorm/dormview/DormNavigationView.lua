@@ -48,11 +48,13 @@ end
 function var_0_0.BindRedPoint(arg_7_0)
 	manager.redPoint:bindUIandKey(arg_7_0.illustratBtn_.transform, RedPointConst.DORM_ILLU)
 	manager.redPoint:bindUIandKey(arg_7_0.canteenBtn_.transform, RedPointConst.CANTEEN)
+	manager.redPoint:bindUIandKey(arg_7_0.trainingroomBtn_.transform, RedPointConst.IDOL_TRAINEE)
 end
 
 function var_0_0.UnBindRedPoint(arg_8_0)
 	manager.redPoint:unbindUIandKey(arg_8_0.illustratBtn_.transform)
 	manager.redPoint:unbindUIandKey(arg_8_0.canteenBtn_.transform)
+	manager.redPoint:unbindUIandKey(arg_8_0.trainingroomBtn_.transform)
 end
 
 function var_0_0.indexHeroItem(arg_9_0, arg_9_1, arg_9_2)

@@ -28,6 +28,14 @@ function var_0_0.OnEnter(arg_7_0)
 
 	arg_7_0.contentText_.text = var_7_0.content
 	arg_7_0.titleText_.text = var_7_0.title or GetTips("STAGE_DESCRIPE")
+
+	if var_7_0.titleStatus ~= nil then
+		local var_7_1 = true
+		local var_7_2 = var_7_0.titleStatus
+
+		SetActive(arg_7_0.titleGo_, var_7_2)
+	end
+
 	arg_7_0.scrollView_.normalizedPosition = Vector2(0, 1)
 end
 

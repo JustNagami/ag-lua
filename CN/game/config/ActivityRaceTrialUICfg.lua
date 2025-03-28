@@ -47,12 +47,21 @@
 		activity_theme = 30,
 		ready_ui_path = "Widget/System/Activity_Resident/Activity_RaceTrial/VolumeIIIDownRaceTrialSelectAffixUI"
 	},
+	[32] = {
+		first_reward_pop_ui_path = "Widget/System/Activity_Resident/Activity_RaceTrial/VolumeIIIRaceTrialFirstRewardUI",
+		score_reward_ui_path = "Widget/System/Activity_Resident/Activity_RaceTrial/VolumeIIIRaceTrialScoreRewardUI",
+		page_ui_path = "Widget/System/Activity_Resident/Activity_RaceTrial/Activity_RaceTrialEntranceUI",
+		main_ui_path = "Widget/System/Activity_Resident/Activity_RaceTrial/Activity_RaceTrialMainUI",
+		activity_theme = 32,
+		ready_ui_path = "Widget/System/Activity_Resident/Activity_RaceTrial/VolumeIIIDownRaceTrialSelectAffixUI"
+	},
 	all = {
 		5,
 		9,
 		17,
 		20,
 		23,
-		30
+		30,
+		32
 	}
 }

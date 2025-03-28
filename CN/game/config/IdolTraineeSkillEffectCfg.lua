@@ -1837,6 +1837,223 @@
 			60
 		}
 	},
+	[10730101] = {
+		condition = 0,
+		effect_type = 8,
+		con_param = "",
+		round = 1,
+		probability = 100,
+		trigger_time = 0,
+		id = 10730101,
+		effect_icon = "IdolTrainee_icon_skill_008",
+		valid_probability = 100,
+		object = 1,
+		unique = {
+			2,
+			15
+		}
+	},
+	[10730102] = {
+		condition = 0,
+		effect_type = 8,
+		con_param = "",
+		round = 1,
+		probability = 100,
+		trigger_time = 0,
+		id = 10730102,
+		effect_icon = "IdolTrainee_icon_skill_008",
+		valid_probability = 100,
+		object = 1,
+		unique = {
+			5,
+			10
+		}
+	},
+	[10730103] = {
+		condition = 0,
+		effect_type = 7,
+		con_param = "",
+		round = 1,
+		probability = 50,
+		trigger_time = 0,
+		id = 10730103,
+		effect_icon = "IdolTrainee_icon_skill_014",
+		valid_probability = 100,
+		object = 2,
+		unique = {
+			-30
+		}
+	},
+	[10730104] = {
+		condition = 0,
+		effect_type = 6,
+		con_param = "",
+		round = 1,
+		probability = 50,
+		trigger_time = 0,
+		id = 10730104,
+		effect_icon = "IdolTrainee_icon_skill_014",
+		valid_probability = 100,
+		object = 2,
+		unique = {
+			-20
+		}
+	},
+	[10730201] = {
+		condition = 0,
+		effect_type = 1,
+		con_param = "",
+		round = -1,
+		probability = 100,
+		trigger_time = 0,
+		id = 10730201,
+		effect_icon = "IdolTrainee_icon_skill_002",
+		valid_probability = 100,
+		object = 1,
+		unique = {
+			2,
+			15
+		}
+	},
+	[10730202] = {
+		condition = 0,
+		effect_type = 1,
+		con_param = "",
+		round = -1,
+		probability = 100,
+		trigger_time = 0,
+		id = 10730202,
+		effect_icon = "IdolTrainee_icon_skill_005",
+		valid_probability = 100,
+		object = 1,
+		unique = {
+			5,
+			10
+		}
+	},
+	[10730203] = {
+		condition = 3,
+		effect_type = 2,
+		con_param = "",
+		round = -1,
+		probability = 100,
+		trigger_time = 0,
+		id = 10730203,
+		effect_icon = "IdolTrainee_icon_skill_018",
+		valid_probability = 100,
+		object = 1,
+		unique = {
+			2,
+			15
+		}
+	},
+	[10730204] = {
+		condition = 3,
+		effect_type = 2,
+		con_param = "",
+		round = -1,
+		probability = 100,
+		trigger_time = 0,
+		id = 10730204,
+		effect_icon = "IdolTrainee_icon_skill_021",
+		valid_probability = 100,
+		object = 1,
+		unique = {
+			5,
+			10
+		}
+	},
+	[10850101] = {
+		condition = 0,
+		effect_type = 3,
+		con_param = "",
+		round = 2,
+		probability = 100,
+		trigger_time = 1,
+		id = 10850101,
+		effect_icon = "IdolTrainee_icon_skill_007",
+		valid_probability = 100,
+		object = 1,
+		unique = {
+			5
+		}
+	},
+	[10850102] = {
+		condition = 0,
+		effect_type = 6,
+		con_param = "",
+		round = 2,
+		probability = 60,
+		trigger_time = 0,
+		id = 10850102,
+		effect_icon = "IdolTrainee_icon_skill_006",
+		valid_probability = 100,
+		object = 1,
+		unique = {
+			10
+		}
+	},
+	[10850103] = {
+		condition = 0,
+		effect_type = 7,
+		con_param = "",
+		round = 2,
+		probability = 60,
+		trigger_time = 0,
+		id = 10850103,
+		effect_icon = "IdolTrainee_icon_skill_006",
+		valid_probability = 100,
+		object = 1,
+		unique = {
+			20
+		}
+	},
+	[10850104] = {
+		condition = 0,
+		effect_type = 8,
+		con_param = "",
+		round = 1,
+		probability = 100,
+		trigger_time = 0,
+		id = 10850104,
+		effect_icon = "IdolTrainee_icon_skill_008",
+		valid_probability = 100,
+		object = 1,
+		unique = {
+			4,
+			20
+		}
+	},
+	[10850201] = {
+		condition = 0,
+		effect_type = 3,
+		con_param = "",
+		round = -1,
+		probability = 100,
+		trigger_time = 0,
+		id = 10850201,
+		effect_icon = "IdolTrainee_icon_skill_007",
+		valid_probability = 60,
+		object = 1,
+		unique = {
+			5
+		}
+	},
+	[10850202] = {
+		condition = 0,
+		effect_type = 6,
+		con_param = "",
+		round = -1,
+		probability = 100,
+		trigger_time = 0,
+		id = 10850202,
+		effect_icon = "IdolTrainee_icon_skill_006",
+		valid_probability = 60,
+		object = 1,
+		unique = {
+			10
+		}
+	},
 	all = {
 		10840101,
 		10840102,
@@ -1954,6 +2171,20 @@
 		10120102,
 		10120201,
 		10120202,
-		10120203
+		10120203,
+		10730101,
+		10730102,
+		10730103,
+		10730104,
+		10730201,
+		10730202,
+		10730203,
+		10730204,
+		10850101,
+		10850102,
+		10850103,
+		10850104,
+		10850201,
+		10850202
 	}
 }

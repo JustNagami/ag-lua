@@ -15,7 +15,7 @@ function var_0_0.RefreshData(arg_2_0, arg_2_1)
 	local var_2_0 = DamageTestCfg[arg_2_0.info_.id]
 	local var_2_1 = BossChallengeUICfg[var_2_0.boss_id]
 
-	arg_2_0.icon_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.BossLittlePaint.path, var_2_1.icon))
+	arg_2_0.icon_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.BossLittlePaint.path, var_2_1.icon))
 	arg_2_0.nameText_.text = GetI18NText(var_2_1.main_name)
 	arg_2_0.numText_.text = string.format("NO.%02d", arg_2_0.info_.index)
 end

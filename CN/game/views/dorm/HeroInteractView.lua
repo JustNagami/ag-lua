@@ -252,6 +252,14 @@ function var_0_0.AddUIListener(arg_12_0)
 		end
 	end)
 	arg_12_0:AddBtnListenerScale(arg_12_0.gameBtn_, nil, function()
+		local var_19_0, var_19_1 = BackHomeTools.CheckHeroIsLockForAnyFeatureWithTips(arg_12_0.heroID)
+
+		if var_19_0 then
+			ShowTips(var_19_1)
+
+			return
+		end
+
 		if arg_12_0.canInteractFlag then
 			JumpTools.OpenPageByJump("/dormRhythmGameView", {
 				heroID = arg_12_0.heroID,
@@ -295,6 +303,7 @@ end
 
 function var_0_0.RefreshView(arg_24_0)
 	local var_24_0 = DormHeroTools:GetDormLevelByHeroID(arg_24_0.archiveID)
+	local var_24_1 = BackHomeTools.CheckHeroIsLockForAnyFeatureByHeroID(arg_24_0.heroID)
 
 	if var_24_0 == 0 then
 		arg_24_0.giftController:SetSelectedState("lock")
@@ -315,7 +324,7 @@ function var_0_0.RefreshView(arg_24_0)
 	end
 
 	arg_24_0.skinController:SetSelectedState("normal")
-	arg_24_0.gameController:SetSelectedState("normal")
+	arg_24_0.gameController:SetSelectedState(var_24_1 and "lock" or "normal")
 	arg_24_0:RefreshFatigue()
 
 	if DormitoryData:GetAllFeedFlag() then

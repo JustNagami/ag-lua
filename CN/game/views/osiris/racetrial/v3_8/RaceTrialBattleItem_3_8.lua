@@ -10,8 +10,10 @@ function var_0_0.AddUIListeners(arg_2_0)
 	arg_2_0:AddBtnListener(arg_2_0.btn_, nil, function()
 		local var_3_0, var_3_1 = ActivityTools.GetActivityStatusWithTips(arg_2_0.activityID)
 
-		if var_3_0 ~= 1 then
-			ShowTips(var_3_1)
+		if var_3_0 ~= ActivityConst.ACTIVITY_STATE.ACTIVING then
+			if var_3_1 then
+				ShowTips(var_3_1)
+			end
 
 			return
 		end
@@ -44,7 +46,7 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1, arg_4_2)
 	local var_4_0, var_4_1 = ActivityTools.GetActivityStatusWithTips(arg_4_1)
 
 	if var_4_0 ~= 1 then
-		arg_4_0:RefreshState(var_0_1.Lock, var_4_1)
+		arg_4_0:RefreshState(var_0_1.Lock, var_4_1 or "--")
 	else
 		arg_4_0:RefreshScore()
 	end
@@ -72,17 +74,17 @@ function var_0_0.StartTimer(arg_6_0)
 	arg_6_0.timer_ = Timer.New(function()
 		local var_7_0, var_7_1 = ActivityTools.GetActivityStatusWithTips(arg_6_0.activityID)
 
-		if var_7_0 == 0 then
-			arg_6_0:RefreshState(var_0_1.Lock, var_7_1)
-		elseif var_7_0 == 1 then
-			arg_6_0:RefreshScore()
-		else
+		if var_7_0 == ActivityConst.ACTIVITY_STATE.OVER then
 			arg_6_0:RefreshState(var_0_1.Lock, var_7_1)
 			arg_6_0:StopTimer()
+		elseif var_7_0 == ActivityConst.ACTIVITY_STATE.ACTIVING then
+			arg_6_0:RefreshScore()
+		else
+			arg_6_0:RefreshState(var_0_1.Lock, var_7_1 or "--")
 		end
 
 		arg_6_0:RefreshRedPoint()
-	end, 1, -1)
+	end, 0.99, -1)
 
 	arg_6_0.timer_:Start()
 end

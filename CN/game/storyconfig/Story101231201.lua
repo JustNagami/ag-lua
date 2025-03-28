@@ -6493,6 +6493,8 @@
 			if arg_197_0 == 1 then
 				arg_195_0:Play123121049(arg_195_1)
 			end
+
+			arg_195_1:RecordChoiceLog(123121048, 123121049)
 		end
 
 		function arg_195_1.onSingleLineUpdate_(arg_198_0)
@@ -10535,6 +10537,8 @@
 			if arg_311_0 == 1 then
 				arg_309_0:Play123121077(arg_309_1)
 			end
+
+			arg_309_1:RecordChoiceLog(123121076, 123121077)
 		end
 
 		function arg_309_1.onSingleLineUpdate_(arg_312_0)

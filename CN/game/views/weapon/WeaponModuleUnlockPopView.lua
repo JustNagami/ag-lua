@@ -36,7 +36,7 @@ function var_0_0.OnEnter(arg_7_0)
 
 	LayoutRebuilder.ForceRebuildLayoutImmediate(arg_7_0.contentTrans_)
 
-	arg_7_0.moduleImage_.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponModule/" .. arg_7_0.params_.heroID)
+	arg_7_0.moduleImage_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/WeaponModule/" .. arg_7_0.params_.heroID)
 end
 
 function var_0_0.OnExit(arg_8_0)

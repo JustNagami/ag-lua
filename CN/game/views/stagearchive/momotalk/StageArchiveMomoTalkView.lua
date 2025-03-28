@@ -57,9 +57,9 @@ function var_0_0.OnEnter(arg_11_0)
 end
 
 function var_0_0.InitMessageData(arg_12_0)
-	local var_12_0 = StageArchivesCollecteCfg[arg_12_0.archiveID_].archive_parameter
+	local var_12_0 = StageArchivesCollectCfg[arg_12_0.archiveID_].archive_parameter
 
-	arg_12_0.messageIDList_ = StageArchivesCollecteMomoTalkCfg.get_id_list_by_momotalk_plot_id[var_12_0]
+	arg_12_0.messageIDList_ = StageArchivesCollectMomoTalkCfg.get_id_list_by_momotalk_plot_id[var_12_0]
 end
 
 function var_0_0.PlayTalk(arg_13_0)
@@ -132,7 +132,7 @@ function var_0_0.LsAddItem(arg_20_0, arg_20_1, arg_20_2)
 end
 
 function var_0_0.GetTalkItem(arg_21_0, arg_21_1, arg_21_2)
-	local var_21_0 = StageArchivesCollecteMomoTalkCfg[arg_21_1]
+	local var_21_0 = StageArchivesCollectMomoTalkCfg[arg_21_1]
 	local var_21_1 = var_21_0.speaker_position
 	local var_21_2
 
@@ -150,7 +150,7 @@ function var_0_0.GetTalkItem(arg_21_0, arg_21_1, arg_21_2)
 	local var_21_4 = arg_21_0.playedMessageIDList_[arg_21_2 - 1]
 
 	if var_21_4 then
-		var_21_3 = StageArchivesCollecteMomoTalkCfg[var_21_4].speaker_position == var_21_0.speaker_position
+		var_21_3 = StageArchivesCollectMomoTalkCfg[var_21_4].speaker_position == var_21_0.speaker_position
 	end
 
 	var_21_2.itemView:SetData(arg_21_1, arg_21_2, var_21_3)

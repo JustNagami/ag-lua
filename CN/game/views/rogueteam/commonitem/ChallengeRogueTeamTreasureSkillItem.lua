@@ -20,7 +20,7 @@ function var_0_0.AddListeners(arg_3_0)
 end
 
 function var_0_0.SetData(arg_4_0, arg_4_1)
-	arg_4_0.icon_.sprite = getSpriteWithoutAtlas(ChallengeRogueTeamTools.GetCampIcon(arg_4_1))
+	arg_4_0.icon_.sprite = pureGetSpriteWithoutAtlas(ChallengeRogueTeamTools.GetCampIcon(arg_4_1))
 
 	local var_4_0 = ChallengeRogueTeamData:GetCacheTemplateID()
 	local var_4_1 = RogueTeamCfg[var_4_0].item_temp

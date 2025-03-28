@@ -3674,6 +3674,111 @@
 			0
 		}
 	},
+	[3081991] = {
+		tips = "",
+		name = "震离",
+		ai_level = 1,
+		map = "40611991",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3081991,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3081992] = {
+		tips = "",
+		name = "震离",
+		ai_level = 1,
+		map = "40611992",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3081992,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		hero_list = {
+			{},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
+	[3081993] = {
+		tips = "",
+		name = "震离",
+		ai_level = 1,
+		map = "40611993",
+		monster_level = 80,
+		need_default_team = 1,
+		combo_skill_id = 0,
+		id = 3081993,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		hero_list = {
+			{
+				1199,
+				3081199
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		},
+		team_type = {
+			214,
+			0
+		}
+	},
 	all = {
 		3080741,
 		3080742,
@@ -3779,6 +3884,9 @@
 		3080613,
 		3080601,
 		3080602,
-		3080603
+		3080603,
+		3081991,
+		3081992,
+		3081993
 	}
 }

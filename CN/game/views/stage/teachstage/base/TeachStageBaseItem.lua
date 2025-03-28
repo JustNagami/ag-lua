@@ -89,7 +89,7 @@ function var_0_0.RefreshUI(arg_9_0)
 		local var_9_0 = BattleBaseTeachStageCfg[arg_9_0.stageID_]
 
 		arg_9_0.transform_.localPosition = Vector3(var_9_0.position[1], var_9_0.position[2], 0)
-		arg_9_0.icon_.sprite = getSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.StageHDPaint.path, var_9_0.hd_image))
+		arg_9_0.icon_.sprite = pureGetSpriteWithoutAtlas(string.format("%s%s", SpritePathCfg.StageHDPaint.path, var_9_0.hd_image))
 		arg_9_0.text_.text = GetI18NText(var_9_0.name)
 	end
 

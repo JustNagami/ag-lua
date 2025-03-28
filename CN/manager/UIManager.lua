@@ -130,7 +130,7 @@ function var_0_0.ShowBackground(arg_10_0, arg_10_1)
 	end
 end
 
-function var_0_0.SetMainCamera(arg_11_0, arg_11_1, arg_11_2, arg_11_3)
+function var_0_0.SetMainCamera(arg_11_0, arg_11_1, arg_11_2, arg_11_3, arg_11_4)
 	local var_11_0 = CameraCfg[arg_11_1]
 
 	if not arg_11_2 and var_11_0 == nil then
@@ -158,7 +158,11 @@ function var_0_0.SetMainCamera(arg_11_0, arg_11_1, arg_11_2, arg_11_3)
 	if not arg_11_2 then
 		if var_11_0.multiscene == 1 then
 			if var_11_0.type == "home" or var_11_0.type == "chat" or var_11_0.type == "playerInfo" then
-				var_11_1 = manager.loadScene:GetHomeShouldLoadSceneName()
+				if arg_11_4 then
+					var_11_1 = manager.loadScene:GetPreviewHomeShouldLoadSceneName()
+				else
+					var_11_1 = manager.loadScene:GetHomeShouldLoadSceneName()
+				end
 			elseif var_11_0.type == "homePreview" then
 				var_11_1 = manager.loadScene:GetPreviewHomeShouldLoadSceneName()
 			end

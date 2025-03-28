@@ -174,7 +174,7 @@ function var_0_0.RefreshTitleAndBg(arg_21_0)
 
 	arg_21_0.TxtDifficult.text = GetTips(var_21_5 and "HARDLEVEL_HARD" or "HARDLEVEL_EASY")
 	arg_21_0.TxtTier.text = GetTips("ROGUELIKE_2_1_TITLE_" .. var_21_3.tier)
-	arg_21_0.ImgBg.sprite = getSpriteWithoutAtlas(var_21_0.background[var_21_3.tier])
+	arg_21_0.ImgBg.sprite = pureGetSpriteWithoutAtlas(var_21_0.background[var_21_3.tier])
 
 	arg_21_0.CtrlRank.gameObject:SetActive(arg_21_0.rank_id ~= 0)
 	arg_21_0.CtrlRank:SetSelectedIndex(var_21_4 > 0 and 1 or 0)

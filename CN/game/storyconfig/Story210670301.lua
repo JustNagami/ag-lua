@@ -12912,6 +12912,8 @@
 			if arg_403_0 == 1 then
 				arg_401_0:Play1106703098(arg_401_1)
 			end
+
+			arg_401_1:RecordChoiceLog(1106703097, 1106703098)
 		end
 
 		function arg_401_1.onSingleLineUpdate_(arg_404_0)

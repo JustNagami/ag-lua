@@ -41,7 +41,7 @@ function var_0_0.UpdateView(arg_5_0)
 		local var_5_0 = HeroCfg[arg_5_0.data.heroId]
 
 		arg_5_0.roleTxt_.text = GetI18NText(var_5_0.suffix)
-		arg_5_0.headIcon_.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_5_0.cfg.hero_image_route)
+		arg_5_0.headIcon_.sprite = pureGetSpriteWithoutAtlas("TextureConfig/Character/Icon/" .. arg_5_0.cfg.hero_image_route)
 	elseif arg_5_0.data.role == 2 then
 		arg_5_0.roleTxt_.text = GetTips("ACTIVITY_INVITE_NPC1")
 	elseif arg_5_0.data.role == 3 then

@@ -60,7 +60,7 @@ function var_0_0.RefreshAffixImage(arg_8_0)
 			-- block empty
 		end
 
-		arg_8_0.icon_.sprite = getSpriteWithoutAtlas(SpritePathCfg.AffixIcon.path .. var_8_1)
+		arg_8_0.icon_.sprite = pureGetSpriteWithoutAtlas(SpritePathCfg.AffixIcon.path .. var_8_1)
 		arg_8_0.name_.text = GetI18NText(var_8_0.name)
 	end
 end

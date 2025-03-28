@@ -40,64 +40,79 @@ function var_0_0.Dispose(arg_8_0)
 end
 
 function var_0_0.RefreshUI(arg_9_0)
-	local var_9_0 = PuzzleNewCfg[arg_9_0.activityID_]
+	arg_9_0:RefreshRegionItem()
+	arg_9_0:RefreshPuzzleMask()
+	arg_9_0:RefreshPreviewImg()
+end
 
-	for iter_9_0, iter_9_1 in pairs(arg_9_0.regionList_) do
-		iter_9_1:SetData(arg_9_0.activityID_)
-	end
-
-	local var_9_1 = PuzzleNewData:GetCurPuzzleList(arg_9_0.activityID_)
-
-	for iter_9_2, iter_9_3 in ipairs(arg_9_0.maskList_) do
-		SetActive(iter_9_3, var_9_1[iter_9_2] == nil or var_9_1[iter_9_2] ~= var_9_0.correct_array[iter_9_2])
+function var_0_0.RefreshRegionItem(arg_10_0)
+	for iter_10_0, iter_10_1 in pairs(arg_10_0.regionList_) do
+		iter_10_1:SetData(arg_10_0.activityID_)
 	end
 end
 
-function var_0_0.SpawnRegion(arg_10_0, arg_10_1)
-	local var_10_0 = PuzzleNewCfg[arg_10_1]
-	local var_10_1 = PuzzleNewTools.GetPuzzlePosDic(arg_10_1)
-	local var_10_2 = PuzzleNewTools.GetRegionPosDic(arg_10_1)
-	local var_10_3 = var_10_0.area_fragment_list
-	local var_10_4 = var_10_0.reward_area_list
+function var_0_0.RefreshPuzzleMask(arg_11_0)
+	local var_11_0 = PuzzleNewCfg[arg_11_0.activityID_]
+	local var_11_1 = PuzzleNewData:GetCurPuzzleList(arg_11_0.activityID_)
 
-	arg_10_0.regionList_ = arg_10_0.regionList_ or {}
-
-	local var_10_5 = arg_10_0.regionContentTrans_.childCount
-
-	for iter_10_0 = 1, var_10_5 do
-		local var_10_6 = arg_10_0.regionContentTrans_:GetChild(iter_10_0 - 1)
-		local var_10_7 = tonumber(var_10_6.name)
-		local var_10_8 = var_10_2[var_10_7]
-		local var_10_9 = var_10_3[var_10_8]
-		local var_10_10 = var_10_9[2]
-		local var_10_11 = var_10_4[var_10_8][2]
-
-		if not arg_10_0.regionList_[var_10_7] then
-			arg_10_0.regionList_[var_10_7] = PuzzleNewRegionItem.New(var_10_6, var_10_9, var_10_1, var_10_11)
-		end
-	end
-
-	arg_10_0.maskList_ = arg_10_0.maskList_ or {}
-
-	local var_10_12 = arg_10_0.maskPanelTrans_.childCount
-
-	for iter_10_1 = 1, var_10_12 do
-		local var_10_13 = arg_10_0.maskPanelTrans_:GetChild(iter_10_1 - 1)
-
-		arg_10_0.maskList_[iter_10_1] = var_10_13
+	for iter_11_0, iter_11_1 in ipairs(arg_11_0.maskList_) do
+		SetActive(iter_11_1, var_11_1[iter_11_0] == nil or var_11_1[iter_11_0] ~= var_11_0.correct_array[iter_11_0])
 	end
 end
 
-function var_0_0.DispawnRegion(arg_11_0)
-	if arg_11_0.regionList_ then
-		for iter_11_0, iter_11_1 in pairs(arg_11_0.regionList_) do
-			iter_11_1:Dispose()
-		end
+function var_0_0.RefreshPreviewImg(arg_12_0)
+	local var_12_0 = PuzzleNewCfg[arg_12_0.activityID_]
 
-		arg_11_0.regionList_ = nil
+	if arg_12_0.previewImg_ then
+		arg_12_0.previewImg_.sprite = pureGetSpriteWithoutAtlas(var_12_0.preview_album_id)
+	end
+end
+
+function var_0_0.SpawnRegion(arg_13_0, arg_13_1)
+	local var_13_0 = PuzzleNewCfg[arg_13_1]
+	local var_13_1 = PuzzleNewTools.GetPuzzlePosDic(arg_13_1)
+	local var_13_2 = PuzzleNewTools.GetRegionPosDic(arg_13_1)
+	local var_13_3 = var_13_0.area_fragment_list
+	local var_13_4 = var_13_0.reward_area_list
+
+	arg_13_0.regionList_ = arg_13_0.regionList_ or {}
+
+	local var_13_5 = arg_13_0.regionContentTrans_.childCount
+
+	for iter_13_0 = 1, var_13_5 do
+		local var_13_6 = arg_13_0.regionContentTrans_:GetChild(iter_13_0 - 1)
+		local var_13_7 = tonumber(var_13_6.name)
+		local var_13_8 = var_13_2[var_13_7]
+		local var_13_9 = var_13_3[var_13_8]
+		local var_13_10 = var_13_9[2]
+		local var_13_11 = var_13_4[var_13_8][2]
+
+		if not arg_13_0.regionList_[var_13_7] then
+			arg_13_0.regionList_[var_13_7] = PuzzleNewRegionItem.New(var_13_6, var_13_9, var_13_1, var_13_11)
+		end
 	end
 
-	arg_11_0.maskList_ = nil
+	arg_13_0.maskList_ = arg_13_0.maskList_ or {}
+
+	local var_13_12 = arg_13_0.maskPanelTrans_.childCount
+
+	for iter_13_1 = 1, var_13_12 do
+		local var_13_13 = arg_13_0.maskPanelTrans_:GetChild(iter_13_1 - 1)
+
+		arg_13_0.maskList_[iter_13_1] = var_13_13
+	end
+end
+
+function var_0_0.DispawnRegion(arg_14_0)
+	if arg_14_0.regionList_ then
+		for iter_14_0, iter_14_1 in pairs(arg_14_0.regionList_) do
+			iter_14_1:Dispose()
+		end
+
+		arg_14_0.regionList_ = nil
+	end
+
+	arg_14_0.maskList_ = nil
 end
 
 return var_0_0

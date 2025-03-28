@@ -81,6 +81,9 @@ function var_0_0.RegisterEvents(arg_13_0)
 	arg_13_0:RegistEventListener(DOMR_RENAME_TEMPLATE_SUCCESS, function()
 		arg_13_0:RefreshDormFurTemplateList()
 	end)
+	arg_13_0:RegistEventListener(SDK_UPLOAD_IMG, function(arg_16_0)
+		arg_13_0:UploadImageSuccess(arg_16_0)
+	end)
 	arg_13_0:RegistEventListener(DOMR_SAVE_FLAG_CHANGE, function()
 		if DormFurnitureTemplateData:GetOtherCanSave() then
 			arg_13_0.saveText.text = GetTips("DORM_TEMPLATE_SHAREABLE")
@@ -92,133 +95,137 @@ function var_0_0.RegisterEvents(arg_13_0)
 	end)
 end
 
-function var_0_0.indexTemplate(arg_17_0, arg_17_1, arg_17_2)
-	arg_17_2:RefreshUI(arg_17_0.templateData[arg_17_1], arg_17_1, arg_17_0.canPreview)
-	arg_17_2:RegisterUseTemplateCallBack(function(arg_18_0)
-		if not arg_17_0.canPreview or arg_18_0 < 0 then
+function var_0_0.indexTemplate(arg_18_0, arg_18_1, arg_18_2)
+	arg_18_2:RefreshUI(arg_18_0.templateData[arg_18_1], arg_18_1, arg_18_0.canPreview)
+	arg_18_2:RegisterUseTemplateCallBack(function(arg_19_0)
+		if not arg_18_0.canPreview or arg_19_0 < 0 then
 			ShowTips(GetTips("DORM_MOULD_CANT_USE"))
 
 			return
 		end
 
-		local var_18_0 = DormData:GetCurrectSceneID()
-		local var_18_1 = DormFurnitureTemplateData:GetDormTemplateInfo(arg_18_0)
-		local var_18_2, var_18_3 = DormFurnitureTemplateData:CheckFurNumSuitTemplate(arg_18_0, var_18_0)
+		local var_19_0 = DormData:GetCurrectSceneID()
+		local var_19_1 = DormFurnitureTemplateData:GetDormTemplateInfo(arg_19_0)
+		local var_19_2, var_19_3 = DormFurnitureTemplateData:CheckFurNumSuitTemplate(arg_19_0, var_19_0)
 
 		DormHeroTools.HideAllCharacter()
 
-		if not var_18_2 then
+		if not var_19_2 then
 			ShowMessageBox({
 				isTop = true,
 				content = GetTips("DORM_MOULD_NOT_ENOUGH"),
 				OkCallback = function()
-					local var_19_0, var_19_1 = DormFurnitureTemplateData:ReduceTemplateLackFurInfoS(arg_18_0, var_18_3)
+					local var_20_0, var_20_1 = DormFurnitureTemplateData:ReduceTemplateLackFurInfoS(arg_19_0, var_19_3)
 
-					DormFurnitureTools:GenFurListInCurRoom(var_19_0)
-					DormSpecialFurnitureTools:ChangeDormFloorOrWallData(var_19_1)
+					DormFurnitureTools:GenFurListInCurRoom(var_20_0)
+					DormSpecialFurnitureTools:ChangeDormFloorOrWallData(var_20_1)
 
-					local var_19_2 = {
-						furInfoList = var_19_0,
-						specialInfo = var_19_1
+					local var_20_2 = {
+						furInfoList = var_20_0,
+						specialInfo = var_20_1
 					}
 
-					DormFurnitureTemplateData:ConfirmUseTemplateInRoom(arg_18_0, var_18_0, var_18_2, var_19_2)
-					ShowTips(GetTips("DORM_MOULD_SET_SUCCESS"))
-					JumpTools.OpenPageByJump("/dorm")
-					DormHeroTools:GenerateHeroWhenEnterScene()
+					if SDKTools.IsSDK() then
+						arg_18_0:PreSaveShot(arg_19_0, var_19_0, var_19_2, var_20_2, true)
+					else
+						arg_18_0:SaveFurTemplet(arg_19_0, var_19_0, var_19_2, var_20_2, true)
+					end
 				end,
 				CancelCallback = function()
 					return
 				end
 			})
 		else
-			if var_18_1 then
-				local var_18_4 = var_18_1.furnitureInfoS
+			if var_19_1 then
+				local var_19_4 = var_19_1.furnitureInfoS
 
-				DormFurnitureTools:GenFurListInCurRoom(var_18_4)
-				DormSpecialFurnitureTools:ChangeDormFloorOrWallData(var_18_1.specialFur)
-				DormFurnitureTemplateData:ConfirmUseTemplateInRoom(arg_18_0, var_18_0, var_18_2)
-				ShowTips(GetTips("DORM_MOULD_SET_SUCCESS"))
-				JumpTools.OpenPageByJump("/dorm")
+				DormFurnitureTools:GenFurListInCurRoom(var_19_4)
+				DormSpecialFurnitureTools:ChangeDormFloorOrWallData(var_19_1.specialFur)
+
+				if SDKTools.IsSDK() then
+					arg_18_0:PreSaveShot(arg_19_0, var_19_0, var_19_2, nil, false)
+				else
+					arg_18_0:SaveFurTemplet(arg_19_0, var_19_0, var_19_2, nil, false)
+				end
 			else
-				print("未找到模板信息,id为" .. arg_18_0)
+				print("未找到模板信息,id为" .. arg_19_0)
 			end
 
 			DormHeroTools:GenerateHeroWhenEnterScene()
 		end
 	end)
-	arg_17_2:RegisterPreviewCallBack(function(arg_21_0, arg_21_1)
-		if not arg_17_0.canPreview then
+	arg_18_2:RegisterPreviewCallBack(function(arg_22_0, arg_22_1)
+		if not arg_18_0.canPreview then
 			ShowTips(GetTips("DORM_MOULD_CANT_USE"))
 
 			return
 		end
 
-		if arg_21_0 < 0 then
+		if arg_22_0 < 0 then
 			ShowTips(GetTips("DORM_MOULD_CANT_USE"))
 
 			return
 		end
 
-		arg_17_0.pos = arg_21_1
+		arg_18_0.pos = arg_22_1
 
-		DormFurnitureTemplateData:PreviewDormSceneTemplate(arg_21_0)
+		DormFurnitureTemplateData:PreviewDormSceneTemplate(arg_22_0)
 		JumpTools.OpenPageByJump("/dormSuitFurInfoView", {
-			templateID = arg_21_0
+			templateID = arg_22_0
 		})
 	end)
-	arg_17_2:SaveTemplateCallBack(function(arg_22_0, arg_22_1)
-		local var_22_0 = DormData:GetCurrectSceneID()
-		local var_22_1 = DormitoryData:GetDormSceneData(var_22_0)
+	arg_18_2:SaveTemplateCallBack(function(arg_23_0, arg_23_1)
+		local var_23_0 = DormData:GetCurrectSceneID()
+		local var_23_1 = DormitoryData:GetDormSceneData(var_23_0)
 
-		if arg_22_1 then
-			arg_17_0.pos = arg_22_1
+		if arg_23_1 then
+			arg_18_0.pos = arg_23_1
 
-			if arg_22_0 > 0 then
+			if arg_23_0 > 0 then
 				ShowMessageBox({
 					isTop = true,
 					content = GetTips("DORM_MOULD_COVER"),
 					OkCallback = function()
-						local var_23_0 = BackHomeCfg[var_22_0].type
-						local var_23_1 = DormFurnitureTemplateData:GetDormTemplateInfo(arg_22_0):GetTemplateName()
+						local var_24_0 = BackHomeCfg[var_23_0].type
+						local var_24_1 = DormFurnitureTemplateData:GetDormTemplateInfo(arg_23_0):GetTemplateName()
 
-						DormFurnitureTemplateData:SaveDormSceneTemplate(arg_22_0, var_23_0, var_23_1, var_22_0, arg_22_1)
+						DormFurnitureTemplateData:SaveDormSceneTemplate(arg_23_0, var_24_0, var_24_1, var_23_0, arg_23_1)
 					end,
 					CancelCallback = function()
 						return
 					end
 				})
 			else
-				local var_22_2 = BackHomeCfg[var_22_0].type
-				local var_22_3 = string.format(GetTips("DORM_MOULD_DEFAULT_NAME"), tostring(arg_22_1))
-				local var_22_4 = DormFurnitureTemplateData:GetCanUseTemplateID()
+				local var_23_2 = BackHomeCfg[var_23_0].type
+				local var_23_3 = string.format(GetTips("DORM_MOULD_DEFAULT_NAME"), tostring(arg_23_1))
+				local var_23_4 = DormFurnitureTemplateData:GetCanUseTemplateID()
 
-				DormFurnitureTemplateData:SaveDormSceneTemplate(var_22_4, var_22_2, var_22_3, var_22_0, arg_22_1)
+				DormFurnitureTemplateData:SaveDormSceneTemplate(var_23_4, var_23_2, var_23_3, var_23_0, arg_23_1)
 			end
 		end
 	end)
-	arg_17_2:ReviseNameCallBack(function(arg_25_0, arg_25_1)
-		if arg_25_0 < 0 then
+	arg_18_2:ReviseNameCallBack(function(arg_26_0, arg_26_1)
+		if arg_26_0 < 0 then
 			ShowTips(GetTips("DORM_MOULD_DATA_NULL"))
 
 			return
 		end
 
-		arg_17_0.pos = arg_25_1
+		arg_18_0.pos = arg_26_1
 
-		local function var_25_0(arg_26_0)
-			DormAction:ReviseFurTemplateName(arg_25_0, arg_26_0)
+		local function var_26_0(arg_27_0)
+			DormAction:ReviseFurTemplateName(arg_26_0, arg_27_0)
 		end
 
 		JumpTools.OpenPageByJump("dormChangeTemplateNameView", {
-			callBack = var_25_0,
-			template_ID = arg_25_0,
-			oldName = DormFurnitureTemplateData:GetDormTemplateInfo(arg_25_0).name,
+			callBack = var_26_0,
+			template_ID = arg_26_0,
+			oldName = DormFurnitureTemplateData:GetDormTemplateInfo(arg_26_0).name,
 			showText = GetTips("DORM_MOULD_NAME_SET_TIPS")
 		})
 	end)
-	arg_17_2:DelTemplateCallBack(function(arg_27_0, arg_27_1)
-		if arg_27_0 < 0 then
+	arg_18_2:DelTemplateCallBack(function(arg_28_0, arg_28_1)
+		if arg_28_0 < 0 then
 			ShowTips(GetTips("DORM_MOULD_DATA_NULL"))
 
 			return
@@ -228,9 +235,9 @@ function var_0_0.indexTemplate(arg_17_0, arg_17_1, arg_17_2)
 			isTop = true,
 			content = GetTips("DORM_DELETE_TEMPLATE"),
 			OkCallback = function()
-				arg_17_0.pos = arg_27_1
+				arg_18_0.pos = arg_28_1
 
-				DormAction:DeleteFurTemplate(arg_27_0)
+				DormAction:DeleteFurTemplate(arg_28_0)
 			end,
 			CancelCallback = function()
 				return
@@ -239,88 +246,139 @@ function var_0_0.indexTemplate(arg_17_0, arg_17_1, arg_17_2)
 	end)
 end
 
-function var_0_0.RefreshDormFurTemplateList(arg_30_0)
-	local var_30_0 = DormData:GetCurrectSceneID()
-	local var_30_1 = BackHomeCfg[var_30_0].type
+function var_0_0.SaveFurTemplet(arg_31_0, arg_31_1, arg_31_2, arg_31_3, arg_31_4, arg_31_5, arg_31_6)
+	DormFurnitureTemplateData:ConfirmUseTemplateInRoom(arg_31_1, arg_31_2, arg_31_3, arg_31_4, arg_31_6)
+	ShowTips(GetTips("DORM_MOULD_SET_SUCCESS"))
+	JumpTools.OpenPageByJump("/dorm")
 
-	if var_30_1 == DormConst.BACKHOME_TYPE.VISITPUBLICDORM then
-		var_30_1 = DormConst.BACKHOME_TYPE.PublicDorm
-	elseif var_30_1 == DormConst.BACKHOME_TYPE.VISITPRIVATEDORM then
-		var_30_1 = DormConst.BACKHOME_TYPE.PrivateDorm
+	if arg_31_5 then
+		DormHeroTools:GenerateHeroWhenEnterScene()
+	end
+end
+
+function var_0_0.PreSaveShot(arg_32_0, arg_32_1, arg_32_2, arg_32_3, arg_32_4, arg_32_5)
+	SetForceShowQuanquan(true)
+
+	arg_32_0.tempShotCtx = {
+		templateID = arg_32_1,
+		curRoomID = arg_32_2,
+		flag = arg_32_3,
+		furInfo = arg_32_4,
+		generateHero = arg_32_5
+	}
+	arg_32_0.snapShot = UnityEngine.RenderTexture.New(math.floor(Screen.width / 4), math.floor(Screen.height / 4), 0, UnityEngine.RenderTextureFormat.ARGB32)
+
+	local var_32_0 = manager.ui.mainCamera:GetComponent("CameraExtension")
+
+	if not isNil(var_32_0) then
+		var_32_0:CaptureSnapshot(arg_32_0.snapShot)
 	end
 
-	arg_30_0.templateData = {}
+	local var_32_1 = FrameTimer.New(function()
+		local var_33_0 = manager.share:SaveRenderTextureByModule("room_edit", arg_32_0.snapShot)
 
-	local var_30_2
+		arg_32_0.snapShot:Release()
 
-	if var_30_1 == DormConst.BACKHOME_TYPE.PublicDorm then
-		var_30_2 = DormConst.DORM_TEMPLATE_NUM_MAX
+		arg_32_0.snapShot = nil
+
+		SDKUploadImage("room_edit", var_33_0)
+	end, 1, 1):Start()
+end
+
+function var_0_0.UploadImageSuccess(arg_34_0, arg_34_1)
+	if arg_34_1.code == 1 then
+		arg_34_0:SaveFurTemplet(arg_34_0.tempShotCtx.templateID, arg_34_0.tempShotCtx.curRoomID, arg_34_0.tempShotCtx.flag, arg_34_0.tempShotCtx.furInfo, arg_34_0.tempShotCtx.generateHero, arg_34_1.url)
+
+		arg_34_0.tempShotCtx = nil
 	else
-		var_30_2 = DormConst.DORM_TEMPLATE_PRIVATE_NUM_MAX
+		ShowTips("IMAGE_UPLOAD_FAIL")
 	end
 
-	for iter_30_0 = 1, var_30_2 do
-		local var_30_3 = DormFurnitureTemplateData:GetDormTemplateInfoByPosID(iter_30_0, var_30_1)
+	SetForceShowQuanquan(false)
+end
 
-		if var_30_3 then
-			table.insert(arg_30_0.templateData, var_30_3)
+function var_0_0.RefreshDormFurTemplateList(arg_35_0)
+	local var_35_0 = DormData:GetCurrectSceneID()
+	local var_35_1 = BackHomeCfg[var_35_0].type
+
+	if var_35_1 == DormConst.BACKHOME_TYPE.VISITPUBLICDORM then
+		var_35_1 = DormConst.BACKHOME_TYPE.PublicDorm
+	elseif var_35_1 == DormConst.BACKHOME_TYPE.VISITPRIVATEDORM then
+		var_35_1 = DormConst.BACKHOME_TYPE.PrivateDorm
+	end
+
+	arg_35_0.templateData = {}
+
+	local var_35_2
+
+	if var_35_1 == DormConst.BACKHOME_TYPE.PublicDorm then
+		var_35_2 = DormConst.DORM_TEMPLATE_NUM_MAX
+	else
+		var_35_2 = DormConst.DORM_TEMPLATE_PRIVATE_NUM_MAX
+	end
+
+	for iter_35_0 = 1, var_35_2 do
+		local var_35_3 = DormFurnitureTemplateData:GetDormTemplateInfoByPosID(iter_35_0, var_35_1)
+
+		if var_35_3 then
+			table.insert(arg_35_0.templateData, var_35_3)
 		else
-			table.insert(arg_30_0.templateData, -1)
+			table.insert(arg_35_0.templateData, -1)
 		end
 	end
 
-	arg_30_0.scrollHelper_:StartScroll(#arg_30_0.templateData)
+	arg_35_0.scrollHelper_:StartScroll(#arg_35_0.templateData)
 
-	if arg_30_0.pos then
-		arg_30_0.scrollHelper_:ScrollToIndex(arg_30_0.pos, true, false)
+	if arg_35_0.pos then
+		arg_35_0.scrollHelper_:ScrollToIndex(arg_35_0.pos, true, false)
 	end
 end
 
-function var_0_0.RefreshCanSaveView(arg_31_0)
-	arg_31_0.tgl1.text = GetTips("DORM_TEMPLATE_CANNOT_SHAREABLE")
-	arg_31_0.tgl2.text = GetTips("DORM_TEMPLATE_SHAREABLE")
+function var_0_0.RefreshCanSaveView(arg_36_0)
+	arg_36_0.tgl1.text = GetTips("DORM_TEMPLATE_CANNOT_SHAREABLE")
+	arg_36_0.tgl2.text = GetTips("DORM_TEMPLATE_SHAREABLE")
 end
 
-function var_0_0.RefreshCanSaveFlag(arg_32_0)
-	local var_32_0 = DormFurnitureTemplateData:GetOtherCanSave()
+function var_0_0.RefreshCanSaveFlag(arg_37_0)
+	local var_37_0 = DormFurnitureTemplateData:GetOtherCanSave()
 
-	if var_32_0 then
-		arg_32_0.saveText.text = GetTips("DORM_TEMPLATE_SHAREABLE")
+	if var_37_0 then
+		arg_37_0.saveText.text = GetTips("DORM_TEMPLATE_SHAREABLE")
 	else
-		arg_32_0.saveText.text = GetTips("DORM_TEMPLATE_CANNOT_SHAREABLE")
+		arg_37_0.saveText.text = GetTips("DORM_TEMPLATE_CANNOT_SHAREABLE")
 	end
 
-	if arg_32_0.switchFlag then
-		arg_32_0.switchController:SetSelectedState("on")
+	if arg_37_0.switchFlag then
+		arg_37_0.switchController:SetSelectedState("on")
 
-		if var_32_0 then
-			arg_32_0["label_" .. 2 .. "Tgl_"].isOn = true
+		if var_37_0 then
+			arg_37_0["label_" .. 2 .. "Tgl_"].isOn = true
 		else
-			arg_32_0["label_" .. 1 .. "Tgl_"].isOn = true
+			arg_37_0["label_" .. 1 .. "Tgl_"].isOn = true
 		end
 	else
-		arg_32_0.switchController:SetSelectedState("off")
+		arg_37_0.switchController:SetSelectedState("off")
 	end
 end
 
-function var_0_0.SelectSaveType(arg_33_0, arg_33_1)
-	local var_33_0 = DormFurnitureTemplateData:GetOtherCanSave()
+function var_0_0.SelectSaveType(arg_38_0, arg_38_1)
+	local var_38_0 = DormFurnitureTemplateData:GetOtherCanSave()
 
-	if arg_33_1 == 1 and var_33_0 then
+	if arg_38_1 == 1 and var_38_0 then
 		DormAction.SetFurnitureTemplatCanSave(false)
-	elseif arg_33_1 == 2 and not var_33_0 then
+	elseif arg_38_1 == 2 and not var_38_0 then
 		DormAction.SetFurnitureTemplatCanSave(true)
 	end
 end
 
-function var_0_0.Dispose(arg_34_0)
-	if arg_34_0.scrollHelper_ then
-		arg_34_0.scrollHelper_:Dispose()
+function var_0_0.Dispose(arg_39_0)
+	if arg_39_0.scrollHelper_ then
+		arg_39_0.scrollHelper_:Dispose()
 
-		arg_34_0.scrollHelper_ = nil
+		arg_39_0.scrollHelper_ = nil
 	end
 
-	var_0_0.super.Dispose(arg_34_0)
+	var_0_0.super.Dispose(arg_39_0)
 end
 
 return var_0_0
