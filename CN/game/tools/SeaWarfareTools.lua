@@ -134,58 +134,66 @@ function var_0_0.SetNeedFirstCompleteAnimStageID(arg_21_0)
 	var_0_0.needFirstCompleteAnimStageID = arg_21_0
 end
 
+function var_0_0.SetNeedFirstUnlockAnimStageID(arg_22_0)
+	var_0_0.needFirstUnlockAnimStageID = arg_22_0
+end
+
+function var_0_0.GetNeedFirstUnlockAnimStageID()
+	return var_0_0.needFirstUnlockAnimStageID
+end
+
 function var_0_0.GetNeedFirstCompleteAnimStageID()
 	return var_0_0.needFirstCompleteAnimStageID
 end
 
-function var_0_0.GetSeaWarfareStageID(arg_23_0)
+function var_0_0.GetSeaWarfareStageID(arg_25_0)
 	if not var_0_0.initedSeaWarfareStageIdDic then
 		var_0_0.initedSeaWarfareStageIdDic = true
 		var_0_0.seaWarfareStageIdDic = {}
 
-		for iter_23_0, iter_23_1 in ipairs(SeaWarfareStageCfg.all) do
-			local var_23_0 = SeaWarfareStageCfg[iter_23_1].stage_id
+		for iter_25_0, iter_25_1 in ipairs(SeaWarfareStageCfg.all) do
+			local var_25_0 = SeaWarfareStageCfg[iter_25_1].stage_id
 
-			var_0_0.seaWarfareStageIdDic[var_23_0] = iter_23_1
+			var_0_0.seaWarfareStageIdDic[var_25_0] = iter_25_1
 		end
 	end
 
-	return var_0_0.seaWarfareStageIdDic[arg_23_0]
+	return var_0_0.seaWarfareStageIdDic[arg_25_0]
 end
 
-function var_0_0.PlayAnim(arg_24_0, arg_24_1, arg_24_2)
-	arg_24_0.enabled = true
+function var_0_0.PlayAnim(arg_26_0, arg_26_1, arg_26_2)
+	arg_26_0.enabled = true
 
-	arg_24_0:Play(arg_24_1, -1, 0)
-	arg_24_0:Update(0)
+	arg_26_0:Play(arg_26_1, -1, 0)
+	arg_26_0:Update(0)
 
-	local var_24_0 = Timer.New(function()
-		local var_25_0 = arg_24_0:GetCurrentAnimatorStateInfo(0)
+	local var_26_0 = Timer.New(function()
+		local var_27_0 = arg_26_0:GetCurrentAnimatorStateInfo(0)
 
-		if var_25_0:IsName(arg_24_1) and var_25_0.normalizedTime >= 1 then
-			if arg_24_2 then
-				arg_24_2()
+		if var_27_0:IsName(arg_26_1) and var_27_0.normalizedTime >= 1 then
+			if arg_26_2 then
+				arg_26_2()
 			end
 
-			if var_0_0.animTimerDic_[arg_24_1] then
-				var_0_0.animTimerDic_[arg_24_1]:Stop()
+			if var_0_0.animTimerDic_[arg_26_1] then
+				var_0_0.animTimerDic_[arg_26_1]:Stop()
 
-				var_0_0.animTimerDic_[arg_24_1] = nil
+				var_0_0.animTimerDic_[arg_26_1] = nil
 			end
 
-			arg_24_0.enabled = false
+			arg_26_0.enabled = false
 		end
 	end, 0.033, -1)
 
-	var_24_0:Start()
-	var_0_0.AddAnimTimer(var_24_0, arg_24_1)
+	var_26_0:Start()
+	var_0_0.AddAnimTimer(var_26_0, arg_26_1)
 
-	return var_24_0
+	return var_26_0
 end
 
-function var_0_0.AddAnimTimer(arg_26_0, arg_26_1)
+function var_0_0.AddAnimTimer(arg_28_0, arg_28_1)
 	var_0_0.animTimerDic_ = var_0_0.animTimerDic_ or {}
-	var_0_0.animTimerDic_[arg_26_1] = arg_26_0
+	var_0_0.animTimerDic_[arg_28_1] = arg_28_0
 end
 
 return var_0_0

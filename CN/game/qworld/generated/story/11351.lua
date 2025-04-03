@@ -42,6 +42,7 @@ function var_0_0.BlackFadeDialogueNode_1(arg_5_0)
 			path = "QWWorld/Effect/EmotionBubble/fx_xixi_1201_QW"
 		})
 		arg_5_0:HideAllDynamicAction(false, true, 4095, {})
+		arg_5_0:WalkingPeopleGlobleCull(true)
 		arg_5_0:ContinueBlackFade()
 		arg_5_0:OnNext(function()
 			arg_5_0:ClearOnNext()
@@ -115,9 +116,7 @@ function var_0_0.BlackFadeDialogueNode_5(arg_25_0)
 		arg_25_0:DestroyCharAction(907301)
 		arg_25_0:EnableCameraByTagAction("", 1, 0)
 		arg_25_0:HideAllDynamicAction(false, false, 4095, {})
-
-		QWorldLuaBridge.WalkingPeopleGlobleCull = false
-
+		arg_25_0:WalkingPeopleGlobleCull(false)
 		arg_25_0:ContinueBlackFade()
 		arg_25_0:OnNext(function()
 			arg_25_0:ClearOnNext()

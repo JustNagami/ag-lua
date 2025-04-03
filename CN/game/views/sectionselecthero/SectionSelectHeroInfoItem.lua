@@ -76,6 +76,7 @@ function var_0_0.AddUIListener(arg_6_0)
 		end
 	end))
 	arg_6_0:AddBtnListener(arg_6_0.randomAttributeTipsBtn_, nil, function()
+		manager.notify:Invoke(SECTION_CLICK_RANDOM_ATTRIBUTE_TIPS, arg_6_0.randomAttributeTipsView_.transform_)
 		arg_6_0.randomAttributeTipsView_:SetData(arg_6_0.sectionProxy_)
 	end)
 end
@@ -131,6 +132,7 @@ function var_0_0.OnEnter(arg_21_0, arg_21_1)
 end
 
 function var_0_0.OnExit(arg_22_0)
+	arg_22_0.randomAttributeTipsView_:OnExit()
 	arg_22_0:UnBindRedPoint()
 	arg_22_0:RemoveAllEventListener()
 end
@@ -327,11 +329,17 @@ end
 
 function var_0_0.Show(arg_49_0, arg_49_1)
 	SetActive(arg_49_0.gameObject_, arg_49_1)
+
+	if not arg_49_1 then
+		arg_49_0.randomAttributeTipsView_:Show(false)
+	end
+
 	arg_49_0.enterAnim_:Update(0)
 end
 
 function var_0_0.OnSectionBeginDragHero(arg_50_0)
 	arg_50_0.emptyController_:SetSelectedState("true")
+	arg_50_0.randomAttributeTipsView_:Show(false)
 end
 
 function var_0_0.UpdatePosition(arg_51_0)

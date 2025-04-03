@@ -11167,7 +11167,7 @@
 		arg_340_1.frameCnt_ = 0
 		arg_340_1.state_ = "playing"
 		arg_340_1.curTalkId_ = 420172082
-		arg_340_1.duration_ = 2.37
+		arg_340_1.duration_ = 9.87
 
 		SetActive(arg_340_1.tipsGo_, false)
 
@@ -11333,7 +11333,7 @@
 				arg_340_1.allBtn_.enabled = false
 			end
 
-			local var_343_39 = 0.733333333333333
+			local var_343_39 = 1.56666666666667
 
 			if arg_340_1.time_ >= var_343_38 + var_343_39 and arg_340_1.time_ < var_343_38 + var_343_39 + arg_343_0 then
 				arg_340_1.allBtn_.enabled = true
@@ -11369,6 +11369,23 @@
 
 			if arg_340_1.time_ >= var_343_40 + var_343_42 and arg_340_1.time_ < var_343_40 + var_343_42 + arg_343_0 then
 				arg_340_1.screenFilterEffect_.weight = 0
+			end
+
+			local var_343_44 = 0
+			local var_343_45 = 9.866
+			local var_343_46 = manager.audio:GetVoiceLength("story_v_out_420172", "420172082", "story_v_out_420172.awb") / 1000
+
+			if var_343_46 > 0 and var_343_45 < var_343_46 and var_343_46 + var_343_44 > arg_340_1.duration_ then
+				local var_343_47 = var_343_46
+
+				arg_340_1.duration_ = var_343_46 + var_343_44
+			end
+
+			if var_343_44 < arg_340_1.time_ and arg_340_1.time_ <= var_343_44 + arg_343_0 then
+				local var_343_48 = "play"
+				local var_343_49 = "voice"
+
+				arg_340_1:AudioAction(var_343_48, var_343_49, "story_v_out_420172", "420172082", "story_v_out_420172.awb")
 			end
 		end
 	end,

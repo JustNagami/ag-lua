@@ -10,12 +10,31 @@ function var_0_0.LoadingShow(arg_1_0, arg_1_1)
 	end
 end
 
+local var_0_3 = {
+	loading_12 = "loading_12",
+	loading_29 = "loading_29",
+	loading_2_1 = "XH0105_blur",
+	loading_2_2 = "XH0105a_blur"
+}
+
 function var_0_0.ChooseRandom(arg_2_0)
 	local var_2_0, var_2_1, var_2_2, var_2_3 = var_0_0:GetRandomTips()
 
 	if var_2_3 then
+		if var_0_3.loading_12 == var_2_2 then
+			LoadingUIManager.inst:UpdateLoadingInfo(var_2_0, var_2_1, var_0_3.loading_29)
+		else
+			LoadingUIManager.inst:UpdateLoadingInfo(var_2_0, var_2_1, var_0_3.loading_12)
+		end
+
 		LoadingUIManager.inst:UpdateLoadingInfo(var_2_0, var_2_1, var_2_2)
 	else
+		if var_0_3.loading_2_1 == var_2_2 then
+			LoadingUIManager.inst:UpdateLoadingInfo2(var_2_0, var_2_1, var_0_3.loading_2_2)
+		else
+			LoadingUIManager.inst:UpdateLoadingInfo2(var_2_0, var_2_1, var_0_3.loading_2_1)
+		end
+
 		LoadingUIManager.inst:UpdateLoadingInfo2(var_2_0, var_2_1, var_2_2)
 	end
 end

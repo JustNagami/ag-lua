@@ -131,7 +131,7 @@ function var_0_0.RefreshData(arg_14_0)
 		arg_14_0.chapterID_ = BattleFieldData:GetCacheChapter(var_14_1.id)
 
 		if table.keyof(var_14_1.chapter_list, arg_14_0.chapterID_) < 4 then
-			arg_14_0.chapterID_ = BattleFieldData:GetSecondCacheChapter(getChapterToggle(var_14_1.id)) or var_14_1.chapter_list[1]
+			arg_14_0.chapterID_ = BattleFieldData:GetSecondCacheChapter(getChapterToggle(var_14_1.id), var_14_1.id) or var_14_1.chapter_list[1]
 		end
 	else
 		arg_14_0.chapterID_ = arg_14_0.params_.chapterID

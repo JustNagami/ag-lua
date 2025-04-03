@@ -72,16 +72,20 @@ function var_0_0.GetCacheChapter(arg_7_0, arg_7_1)
 	return arg_7_0.cacheChapter_[arg_7_1] or getData("BattleField", "chapterClientID_" .. arg_7_1) or ChapterClientCfg[arg_7_1].chapter_list[1]
 end
 
-function var_0_0.SetSecondCacheChapter(arg_8_0, arg_8_1, arg_8_2)
-	if arg_8_2 and arg_8_0.secondCacheStage_[arg_8_1] ~= arg_8_2 then
-		arg_8_0.secondCacheStage_[arg_8_1] = arg_8_2
+function var_0_0.SetSecondCacheChapter(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
+	local var_8_0 = string.format("secondChapterID_%s_%s", arg_8_3, arg_8_1)
 
-		saveData("BattleField", "secondChapterID" .. arg_8_1, arg_8_2)
+	if arg_8_2 and arg_8_0.secondCacheStage_[var_8_0] ~= arg_8_2 then
+		arg_8_0.secondCacheStage_[var_8_0] = arg_8_2
+
+		saveData("BattleField", var_8_0, arg_8_2)
 	end
 end
 
-function var_0_0.GetSecondCacheChapter(arg_9_0, arg_9_1)
-	return arg_9_0.secondCacheStage_[arg_9_1] or getData("BattleField", "secondChapterID" .. arg_9_1)
+function var_0_0.GetSecondCacheChapter(arg_9_0, arg_9_1, arg_9_2)
+	local var_9_0 = string.format("secondChapterID_%s_%s", arg_9_2, arg_9_1)
+
+	return arg_9_0.secondCacheStage_[var_9_0] or getData("BattleField", var_9_0)
 end
 
 function var_0_0.SetCacheStage(arg_10_0, arg_10_1, arg_10_2)

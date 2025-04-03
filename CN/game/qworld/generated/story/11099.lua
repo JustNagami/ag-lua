@@ -85,6 +85,7 @@ function var_0_0.PureActorDialogueNode_1(arg_5_0)
 										arg_5_0:SetCharToTagAction(9074, "9074_1", function()
 											return
 										end)
+										arg_5_0:WalkingPeopleGlobleCull(false)
 									end)
 								end)
 								arg_5_0:EnableCameraByTagAction("3", 1, 0)
@@ -113,9 +114,7 @@ function var_0_0.PureActorDialogueNode_1(arg_5_0)
 			30003
 		})
 		arg_5_0:CameraMoveAction("1", 1, 2, 10, 0.8)
-
-		QWorldLuaBridge.WalkingPeopleGlobleCull = true
-
+		arg_5_0:WalkingPeopleGlobleCull(true)
 		arg_5_0:PlaySoundsAction(2, "ui_sandplay", "ui_sandplay_x511_story_02_bangang", "", "")
 	end)
 	arg_5_0:HideTalkView()
@@ -145,7 +144,7 @@ function var_0_0.DialogueNode_2(arg_33_0)
 		end)
 	end)
 	arg_33_0:ShowTalkView()
-	arg_33_0:SetTalkContent(11013011, "", 0)
+	arg_33_0:SetTalkContent(11013011, "", 9073)
 	arg_33_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_33_0:Skip("End")
@@ -167,7 +166,7 @@ function var_0_0.DialogueNode_3(arg_41_0)
 		return
 	end)
 	arg_41_0:ShowTalkView()
-	arg_41_0:SetTalkContent(11013012, "", 0)
+	arg_41_0:SetTalkContent(11013012, "", 9074)
 	arg_41_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_41_0:Skip("End")
@@ -189,7 +188,7 @@ function var_0_0.DialogueNode_4(arg_46_0)
 		return
 	end)
 	arg_46_0:ShowTalkView()
-	arg_46_0:SetTalkContent(11013013, "", 0)
+	arg_46_0:SetTalkContent(11013013, "", 9073)
 	arg_46_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_46_0:Skip("End")

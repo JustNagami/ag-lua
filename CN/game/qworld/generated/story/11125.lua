@@ -20,6 +20,7 @@ function var_0_0.StartStory(arg_4_0)
 end
 
 function var_0_0.DialogueNode_1(arg_5_0)
+	arg_5_0:PlaySoundsAction(2, "ui_sandplay", "ui_sandplay_x511_action_sgd_disappear_act", "", "")
 	arg_5_0:ShowTalkView()
 	arg_5_0:SetTalkContent(11125001, "", 0)
 	arg_5_0:SetNeedSkip(false, {

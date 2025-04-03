@@ -1,4 +1,4 @@
-﻿local var_0_0 = class("CusteomCenterHeroItem", ReduxView)
+﻿local var_0_0 = class("CustomCenterHeroItem", ReduxView)
 
 function var_0_0.Ctor(arg_1_0, arg_1_1)
 	arg_1_0.gameObject_ = arg_1_1

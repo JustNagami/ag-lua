@@ -232,9 +232,67 @@ function var_0_0.EndDragHero(arg_19_0, arg_19_1, arg_19_2, arg_19_3)
 	arg_19_0.selectIndex_ = nil
 end
 
-function var_0_0.ClickHero(arg_20_0, arg_20_1, arg_20_2, arg_20_3)
-	if not arg_20_3.dragging then
-		if arg_20_0.selectIndex_ then
+function var_0_0.TryModifyHeroPos(arg_20_0)
+	local var_20_0 = SectionSelectHeroScene.GetInstance():GetModelLocalPosition(arg_20_0.selectIndex_)
+
+	for iter_20_0 = 1, 3 do
+		if math.abs(SectionSelectHeroConst.HeroModelTransform[iter_20_0].position.x - var_20_0.x) <= 0.6 and iter_20_0 ~= arg_20_0.cacheSelectIndex_ then
+			if arg_20_0.cacheHeroTeam_[arg_20_0.cacheHeroNumber_[iter_20_0]] == 0 or arg_20_0.canSwitchResctrictHeroList_[arg_20_0.cacheHeroNumber_[iter_20_0]] ~= ReserveConst.RESTRICT_HERO_SWITCH_MODE.FORBID then
+				break
+			end
+
+			if arg_20_0.lockStateList_[arg_20_0.selectIndex_] or arg_20_0.lockStateList_[iter_20_0] then
+				return
+			end
+
+			local var_20_1 = SectionSelectHeroScene.GetInstance():GetModel(arg_20_0.cacheHeroNumber_[iter_20_0])
+
+			SectionSelectHeroScene.GetInstance():InitModelTransform(var_20_1, arg_20_0.cacheSelectIndex_)
+
+			local var_20_2 = arg_20_0.cacheHeroNumber_[iter_20_0]
+
+			arg_20_0.cacheHeroNumber_[iter_20_0] = arg_20_0.cacheHeroNumber_[arg_20_0.cacheSelectIndex_]
+			arg_20_0.cacheHeroNumber_[arg_20_0.cacheSelectIndex_] = var_20_2
+			arg_20_0.cacheSelectIndex_ = iter_20_0
+
+			break
+		end
+	end
+end
+
+function var_0_0.EndDrag(arg_21_0, arg_21_1)
+	local var_21_0 = {}
+
+	for iter_21_0 = 1, 3 do
+		var_21_0[iter_21_0] = arg_21_0.cacheHeroTeam_[arg_21_0.cacheHeroNumber_[iter_21_0]]
+	end
+
+	local var_21_1 = {}
+
+	for iter_21_1, iter_21_2 in pairs(var_21_0) do
+		local var_21_2 = 1
+
+		for iter_21_3 = 1, 3 do
+			if arg_21_0.cacheHeroTeam_[iter_21_3] == iter_21_2 then
+				var_21_2 = iter_21_3
+
+				break
+			end
+		end
+
+		var_21_1[iter_21_1] = var_21_2
+	end
+
+	SectionSelectHeroScene.GetInstance():ReorderModelByPosList(var_21_1)
+	arg_21_0:ChangeHeroTeam(var_21_0)
+	arg_21_0:RefreshHeroTeam()
+	arg_21_0:StartUpdateHeorInfoItemPos()
+	OperationRecorder.Record(arg_21_0.class.__cname, "endDrag")
+end
+
+function var_0_0.ClickHero(arg_22_0, arg_22_1, arg_22_2, arg_22_3)
+	if not arg_22_3.dragging then
+		if arg_22_0.selectIndex_ then
 			return
 		end
 
@@ -242,99 +300,41 @@ function var_0_0.ClickHero(arg_20_0, arg_20_1, arg_20_2, arg_20_3)
 			return
 		end
 
-		arg_20_0:RrocessClickHero(arg_20_1)
+		arg_22_0:RrocessClickHero(arg_22_1)
 	end
 end
 
-function var_0_0.RrocessClickHero(arg_21_0, arg_21_1)
-	manager.notify:Invoke(SECTION_CLICK_HERO, arg_21_1)
+function var_0_0.RrocessClickHero(arg_23_0, arg_23_1)
+	manager.notify:Invoke(SECTION_CLICK_HERO, arg_23_1)
 end
 
-function var_0_0.Refresh(arg_22_0)
-	arg_22_0:RefreshHeroTeam()
-	arg_22_0:LoadHeroModels()
+function var_0_0.Refresh(arg_24_0)
+	arg_24_0:RefreshHeroTeam()
+	arg_24_0:LoadHeroModels()
 end
 
-function var_0_0.RefreshHeroTeam(arg_23_0)
-	arg_23_0:GetHeroTeam()
-	arg_23_0:RefreshHeroInfoItem()
+function var_0_0.RefreshHeroTeam(arg_25_0)
+	arg_25_0:GetHeroTeam()
+	arg_25_0:RefreshHeroInfoItem()
 end
 
-function var_0_0.RefreshHeroInfoItem(arg_24_0)
-	for iter_24_0 = 1, 3 do
-		arg_24_0.heroInfoItemList_[iter_24_0]:Refresh(iter_24_0)
-	end
-end
-
-function var_0_0.ChangeHeroTeam(arg_25_0, arg_25_1)
-	local var_25_0 = arg_25_1
-	local var_25_1 = {}
-
-	for iter_25_0, iter_25_1 in ipairs(arg_25_1) do
-		local var_25_2 = table.keyof(arg_25_0.cacheHeroTeam_, iter_25_1)
-
-		var_25_1[iter_25_0] = arg_25_0.heroTrialList_[var_25_2]
-	end
-
-	arg_25_0.sectionProxy_:ChangeHeroTeam(var_25_0, var_25_1)
-end
-
-function var_0_0.TryModifyHeroPos(arg_26_0)
-	local var_26_0 = SectionSelectHeroScene.GetInstance():GetModelLocalPosition(arg_26_0.selectIndex_)
-
+function var_0_0.RefreshHeroInfoItem(arg_26_0)
 	for iter_26_0 = 1, 3 do
-		if math.abs(SectionSelectHeroConst.HeroModelTransform[iter_26_0].position.x - var_26_0.x) <= 0.6 and iter_26_0 ~= arg_26_0.cacheSelectIndex_ then
-			if arg_26_0.cacheHeroTeam_[arg_26_0.cacheHeroNumber_[iter_26_0]] == 0 or arg_26_0.canSwitchResctrictHeroList_[arg_26_0.cacheHeroNumber_[iter_26_0]] ~= ReserveConst.RESTRICT_HERO_SWITCH_MODE.FORBID then
-				break
-			end
-
-			if arg_26_0.lockStateList_[arg_26_0.selectIndex_] or arg_26_0.lockStateList_[iter_26_0] then
-				return
-			end
-
-			local var_26_1 = SectionSelectHeroScene.GetInstance():GetModel(arg_26_0.cacheHeroNumber_[iter_26_0])
-
-			SectionSelectHeroScene.GetInstance():InitModelTransform(var_26_1, arg_26_0.cacheSelectIndex_)
-
-			local var_26_2 = arg_26_0.cacheHeroNumber_[iter_26_0]
-
-			arg_26_0.cacheHeroNumber_[iter_26_0] = arg_26_0.cacheHeroNumber_[arg_26_0.cacheSelectIndex_]
-			arg_26_0.cacheHeroNumber_[arg_26_0.cacheSelectIndex_] = var_26_2
-			arg_26_0.cacheSelectIndex_ = iter_26_0
-
-			break
-		end
+		arg_26_0.heroInfoItemList_[iter_26_0]:Refresh(iter_26_0)
 	end
 end
 
-function var_0_0.EndDrag(arg_27_0, arg_27_1)
-	local var_27_0 = {}
-
-	for iter_27_0 = 1, 3 do
-		var_27_0[iter_27_0] = arg_27_0.cacheHeroTeam_[arg_27_0.cacheHeroNumber_[iter_27_0]]
-	end
-
+function var_0_0.ChangeHeroTeam(arg_27_0, arg_27_1)
+	local var_27_0 = arg_27_1
 	local var_27_1 = {}
 
-	for iter_27_1, iter_27_2 in pairs(var_27_0) do
-		local var_27_2 = 1
+	for iter_27_0, iter_27_1 in ipairs(arg_27_1) do
+		local var_27_2 = table.keyof(arg_27_0.cacheHeroTeam_, iter_27_1)
 
-		for iter_27_3 = 1, 3 do
-			if arg_27_0.cacheHeroTeam_[iter_27_3] == iter_27_2 then
-				var_27_2 = iter_27_3
-
-				break
-			end
-		end
-
-		var_27_1[iter_27_1] = var_27_2
+		var_27_1[iter_27_0] = arg_27_0.heroTrialList_[var_27_2]
 	end
 
-	SectionSelectHeroScene.GetInstance():ReorderModelByPosList(var_27_1)
-	arg_27_0:ChangeHeroTeam(var_27_0)
-	arg_27_0:RefreshHeroTeam()
-	arg_27_0:StartUpdateHeorInfoItemPos()
-	OperationRecorder.Record(arg_27_0.class.__cname, "endDrag")
+	arg_27_0.sectionProxy_:ChangeHeroTeam(var_27_0, var_27_1)
 end
 
 function var_0_0.LoadHeroModels(arg_28_0)
@@ -402,123 +402,123 @@ function var_0_0.InitSubView(arg_35_0)
 	end
 end
 
-function var_0_0.TryReloadSubView(arg_36_0)
-	for iter_36_0, iter_36_1 in ipairs(arg_36_0.heroInfoItemList_) do
-		if SectionSelectHeroTools.IsDiffViewClass(iter_36_1, arg_36_0.sectionProxy_:GetHeroInfoItemClass()) then
-			iter_36_1 = SectionSelectHeroTools.ReloadView(iter_36_1, arg_36_0.sectionProxy_:GetHeroInfoItemClass())
-
-			arg_36_0:InitHeroInfoItem(iter_36_0)
-		end
-	end
-
-	arg_36_0:RebindController()
+function var_0_0.InitHeroInfoItem(arg_36_0, arg_36_1)
+	arg_36_0.heroInfoItemList_[arg_36_1]:RegisterBeginDrag(handler(arg_36_0, arg_36_0.BeginDragHero))
+	arg_36_0.heroInfoItemList_[arg_36_1]:RegisterDrag(handler(arg_36_0, arg_36_0.DragHero))
+	arg_36_0.heroInfoItemList_[arg_36_1]:RegisterEndDrag(handler(arg_36_0, arg_36_0.EndDragHero))
+	arg_36_0.heroInfoItemList_[arg_36_1]:RegistClick(handler(arg_36_0, arg_36_0.ClickHero))
 end
 
-function var_0_0.RebindController(arg_37_0)
-	for iter_37_0, iter_37_1 in ipairs(arg_37_0.heroInfoItemList_) do
-		iter_37_1:RebindController()
-	end
-end
+function var_0_0.GetTargetDragDistance(arg_37_0, arg_37_1)
+	local var_37_0
 
-function var_0_0.InitHeroInfoItem(arg_38_0, arg_38_1)
-	arg_38_0.heroInfoItemList_[arg_38_1]:RegisterBeginDrag(handler(arg_38_0, arg_38_0.BeginDragHero))
-	arg_38_0.heroInfoItemList_[arg_38_1]:RegisterDrag(handler(arg_38_0, arg_38_0.DragHero))
-	arg_38_0.heroInfoItemList_[arg_38_1]:RegisterEndDrag(handler(arg_38_0, arg_38_0.EndDragHero))
-	arg_38_0.heroInfoItemList_[arg_38_1]:RegistClick(handler(arg_38_0, arg_38_0.ClickHero))
-end
-
-function var_0_0.GetTargetDragDistance(arg_39_0, arg_39_1)
-	local var_39_0
-
-	if arg_39_1.x <= arg_39_0.firstHeroScreenPos_.x then
-		var_39_0 = arg_39_0.f2SHeroScreenDistance_
+	if arg_37_1.x <= arg_37_0.firstHeroScreenPos_.x then
+		var_37_0 = arg_37_0.f2SHeroScreenDistance_
 	else
-		var_39_0 = arg_39_0.f2THeroScreenDistance_
+		var_37_0 = arg_37_0.f2THeroScreenDistance_
 	end
 
-	return var_39_0
+	return var_37_0
 end
 
-function var_0_0.ResetUpdatePosFlag(arg_40_0)
-	arg_40_0.isCameraTransitionEnd_ = false
-	arg_40_0.isHeroModelLoaded_ = false
+function var_0_0.ResetUpdatePosFlag(arg_38_0)
+	arg_38_0.isCameraTransitionEnd_ = false
+	arg_38_0.isHeroModelLoaded_ = false
 end
 
-function var_0_0.OnCameraTransitionEnd(arg_41_0)
-	arg_41_0.isCameraTransitionEnd_ = true
+function var_0_0.OnCameraTransitionEnd(arg_39_0)
+	arg_39_0.isCameraTransitionEnd_ = true
 
+	if arg_39_0:CanUpdatePosition() then
+		arg_39_0:UpdatePosition()
+	end
+end
+
+function var_0_0.OnHeroModelLoaded(arg_40_0)
+	arg_40_0.isHeroModelLoaded_ = true
+
+	if arg_40_0:CanUpdatePosition() then
+		arg_40_0:UpdatePosition()
+	end
+end
+
+function var_0_0.OnChangeHeroTeam(arg_41_0)
 	if arg_41_0:CanUpdatePosition() then
 		arg_41_0:UpdatePosition()
 	end
 end
 
-function var_0_0.OnHeroModelLoaded(arg_42_0)
-	arg_42_0.isHeroModelLoaded_ = true
+function var_0_0.CanUpdatePosition(arg_42_0)
+	return arg_42_0.isCameraTransitionEnd_ and arg_42_0.isHeroModelLoaded_ and arg_42_0.needUpdatePosition_
+end
 
-	if arg_42_0:CanUpdatePosition() then
-		arg_42_0:UpdatePosition()
+function var_0_0.UpdatePosition(arg_43_0)
+	arg_43_0:StopUpdatePosTimer()
+	arg_43_0:StartUpdatePosTimer()
+end
+
+function var_0_0.StopUpdatePosTimer(arg_44_0)
+	if arg_44_0.updatePosTimer_ then
+		arg_44_0.updatePosTimer_:Stop()
+
+		arg_44_0.updatePisTimer_ = nil
 	end
 end
 
-function var_0_0.OnChangeHeroTeam(arg_43_0)
-	if arg_43_0:CanUpdatePosition() then
-		arg_43_0:UpdatePosition()
-	end
+function var_0_0.StartUpdatePosTimer(arg_45_0)
+	arg_45_0.updatePosTimer_ = FrameTimer.New(handler(arg_45_0, arg_45_0.OnUpdatePosTimerEnd), 1, 1)
+
+	arg_45_0.updatePosTimer_:Start()
 end
 
-function var_0_0.CanUpdatePosition(arg_44_0)
-	return arg_44_0.isCameraTransitionEnd_ and arg_44_0.isHeroModelLoaded_ and arg_44_0.needUpdatePosition_
+function var_0_0.OnUpdatePosTimerEnd(arg_46_0)
+	arg_46_0:StartUpdateHeorInfoItemPos()
+
+	arg_46_0.needUpdatePosition_ = false
 end
 
-function var_0_0.UpdatePosition(arg_45_0)
-	arg_45_0:StopUpdatePosTimer()
-	arg_45_0:StartUpdatePosTimer()
-end
-
-function var_0_0.StopUpdatePosTimer(arg_46_0)
-	if arg_46_0.updatePosTimer_ then
-		arg_46_0.updatePosTimer_:Stop()
-
-		arg_46_0.updatePisTimer_ = nil
-	end
-end
-
-function var_0_0.StartUpdatePosTimer(arg_47_0)
-	arg_47_0.updatePosTimer_ = FrameTimer.New(handler(arg_47_0, arg_47_0.OnUpdatePosTimerEnd), 1, 1)
-
-	arg_47_0.updatePosTimer_:Start()
-end
-
-function var_0_0.OnUpdatePosTimerEnd(arg_48_0)
-	arg_48_0:StartUpdateHeorInfoItemPos()
-
-	arg_48_0.needUpdatePosition_ = false
-end
-
-function var_0_0.StartUpdateHeorInfoItemPos(arg_49_0)
-	for iter_49_0, iter_49_1 in ipairs(arg_49_0.heroInfoItemList_) do
-		if not iter_49_1:UpdatePosition() then
+function var_0_0.StartUpdateHeorInfoItemPos(arg_47_0)
+	for iter_47_0, iter_47_1 in ipairs(arg_47_0.heroInfoItemList_) do
+		if not iter_47_1:UpdatePosition() then
 			Debug.LogError("Culculate hero pos error, reculculate at next frame")
-			arg_49_0:StartUpdatePosTimer()
+			arg_47_0:StartUpdatePosTimer()
 
 			return
 		end
 	end
 
-	arg_49_0:UpdateDragParams()
+	arg_47_0:UpdateDragParams()
 end
 
-function var_0_0.UpdateDragParams(arg_50_0)
-	for iter_50_0, iter_50_1 in ipairs(arg_50_0.heroInfoItemList_) do
-		arg_50_0.dragPosition_[iter_50_0] = iter_50_1:GetOriginalDragPosition()
+function var_0_0.UpdateDragParams(arg_48_0)
+	for iter_48_0, iter_48_1 in ipairs(arg_48_0.heroInfoItemList_) do
+		arg_48_0.dragPosition_[iter_48_0] = iter_48_1:GetOriginalDragPosition()
 	end
 
-	arg_50_0.firstHeroScreenPos_ = arg_50_0.heroInfoItemList_[1]:GetOriginalDragScreenPosition()
-	arg_50_0.secondHeroScreenPos_ = arg_50_0.heroInfoItemList_[2]:GetOriginalDragScreenPosition()
-	arg_50_0.thirdHeroScreenPos_ = arg_50_0.heroInfoItemList_[3]:GetOriginalDragScreenPosition()
-	arg_50_0.f2SHeroScreenDistance_ = math.abs(arg_50_0.firstHeroScreenPos_.x - arg_50_0.secondHeroScreenPos_.x)
-	arg_50_0.f2THeroScreenDistance_ = math.abs(arg_50_0.firstHeroScreenPos_.x - arg_50_0.thirdHeroScreenPos_.x)
-	arg_50_0.prepareToDrag_ = true
+	arg_48_0.firstHeroScreenPos_ = arg_48_0.heroInfoItemList_[1]:GetOriginalDragScreenPosition()
+	arg_48_0.secondHeroScreenPos_ = arg_48_0.heroInfoItemList_[2]:GetOriginalDragScreenPosition()
+	arg_48_0.thirdHeroScreenPos_ = arg_48_0.heroInfoItemList_[3]:GetOriginalDragScreenPosition()
+	arg_48_0.f2SHeroScreenDistance_ = math.abs(arg_48_0.firstHeroScreenPos_.x - arg_48_0.secondHeroScreenPos_.x)
+	arg_48_0.f2THeroScreenDistance_ = math.abs(arg_48_0.firstHeroScreenPos_.x - arg_48_0.thirdHeroScreenPos_.x)
+	arg_48_0.prepareToDrag_ = true
+end
+
+function var_0_0.TryReloadSubView(arg_49_0)
+	for iter_49_0, iter_49_1 in ipairs(arg_49_0.heroInfoItemList_) do
+		if SectionSelectHeroTools.IsDiffViewClass(iter_49_1, arg_49_0.sectionProxy_:GetHeroInfoItemClass()) then
+			iter_49_1 = SectionSelectHeroTools.ReloadView(iter_49_1, arg_49_0.sectionProxy_:GetHeroInfoItemClass())
+
+			arg_49_0:InitHeroInfoItem(iter_49_0)
+		end
+	end
+
+	arg_49_0:RebindController()
+end
+
+function var_0_0.RebindController(arg_50_0)
+	for iter_50_0, iter_50_1 in ipairs(arg_50_0.heroInfoItemList_) do
+		iter_50_1:RebindController()
+	end
 end
 
 return var_0_0

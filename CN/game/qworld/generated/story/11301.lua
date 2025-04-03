@@ -115,9 +115,6 @@ function var_0_0.BlackFadeDialogueNode_5(arg_25_0)
 		arg_25_0:DestroyCharAction(9073)
 		arg_25_0:EnableCameraByTagAction("", 1, 0)
 		arg_25_0:HideAllDynamicAction(false, false, 4095, {})
-
-		QWorldLuaBridge.WalkingPeopleGlobleCull = false
-
 		arg_25_0:ContinueBlackFade()
 		arg_25_0:OnNext(function()
 			arg_25_0:ClearOnNext()

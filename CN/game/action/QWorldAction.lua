@@ -65,6 +65,10 @@ function var_0_0.SavePlayerData(arg_5_0)
 		return
 	end
 
+	if QWorldMgr:GetQWorldPerformMgr():IsInPerform() then
+		return
+	end
+
 	QWorldData:SetQWorldContext({
 		position = var_5_3.transform.position,
 		rotation = var_5_3.transform.rotation

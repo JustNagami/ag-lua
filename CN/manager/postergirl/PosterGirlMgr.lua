@@ -138,7 +138,9 @@ function var_0_0.GetCurScene(arg_12_0)
 	if arg_12_0.view_tag == PosterGirlConst.ViewTag.preview then
 		return HomeSceneSettingData:GetPreviewScene()
 	else
-		return HomeSceneSettingData:GetCurScene()
+		local var_12_0 = HomeSceneSettingData:GetCurScene()
+
+		return manager.loadScene:GetTimeSceneID(var_12_0)
 	end
 end
 

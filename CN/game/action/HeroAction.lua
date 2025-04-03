@@ -360,6 +360,12 @@ function var_0_0.SelectSkinWithCallback(arg_52_0, arg_52_1, arg_52_2)
 		arg_52_1 = 0
 	end
 
+	if HeroData:GetHeroData(arg_52_0).using_skin == arg_52_1 then
+		arg_52_2()
+
+		return
+	end
+
 	manager.net:SendWithLoadingNew(14034, {
 		hero_id = arg_52_0,
 		skin_id = arg_52_1

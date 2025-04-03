@@ -211,7 +211,12 @@ function var_0_0.RefreshRandomPanel(arg_25_0)
 		arg_25_0:RefreshRandomCnt()
 		arg_25_0:RefreshAddBtn()
 	else
-		arg_25_0.randomController_:SetSelectedState("false")
+		if CustomCenterTools.IsRandomHero() and CustomCenterTools.IsDLCScene(arg_25_0.sceneID_) then
+			arg_25_0.randomController_:SetSelectedState("notSelectDLC")
+		else
+			arg_25_0.randomController_:SetSelectedState("false")
+		end
+
 		arg_25_0.randomToggleView_:SetSelectedState(false)
 		arg_25_0:RefreshUseBtn()
 	end

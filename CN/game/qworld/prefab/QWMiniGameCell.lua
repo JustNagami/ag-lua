@@ -5,6 +5,8 @@
 		QWorldMgr:GetQWorldEntityMgr():GetEnt(iter_1_1):PushEvent(arg_1_1 and "cell_game_success" or "cell_game_fail")
 	end
 
+	QWorldChangeInteractionModeImeediate(QWorldInteractionMode.FULL)
+
 	if arg_1_1 then
 		manager.audio:PlayEffect("ui_sandplay", "ui_sandplay_game_maze_finish", "")
 	else
@@ -96,6 +98,7 @@ local function var_0_2(arg_3_0)
 	arg_3_0.entity:SetBuild(arg_3_0.config.collectDirEffect)
 	arg_3_0:ChangeInteractive(false)
 	QWorldMgr:EnableCamera(QWorldCameraFlag.CustomCamera, arg_3_0.entity:GetMiniGameCamera(), QWorldCameraLayer.MiniGame)
+	QWorldChangeInteractionModeImeediate(QWorldInteractionMode.ONLY_CONTROL_WALK)
 
 	local var_3_1 = QWorldLuaBridge.GetMapEntityData(arg_3_0.entityId)
 	local var_3_2 = var_3_1.entity_child_list.Count

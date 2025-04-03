@@ -308,6 +308,8 @@ function var_0_0.OnEnter(arg_26_0)
 	manager.redPoint:bindUIandKey(arg_26_0.btn2trs_, RedPointConst.ILLU_ILLUSTRATION2)
 	manager.redPoint:bindUIandKey(arg_26_0.btn3trs_, RedPointConst.ILLU_ILLUSTRATION3)
 	manager.redPoint:bindUIandKey(arg_26_0.btn4trs_, RedPointConst.ILLU_ILLUSTRATION4)
+	manager.redPoint:bindUIandKey(arg_26_0.btn5trs_, RedPointConst.ILLU_ILLUSTRATION5)
+	manager.redPoint:bindUIandKey(arg_26_0.btn6trs_, RedPointConst.ILLU_ILLUSTRATION6)
 end
 
 function var_0_0.UpdateBar(arg_27_0)
@@ -396,6 +398,8 @@ function var_0_0.OnExit(arg_37_0)
 	manager.redPoint:unbindUIandKey(arg_37_0.btn2trs_, RedPointConst.ILLU_ILLUSTRATION2)
 	manager.redPoint:unbindUIandKey(arg_37_0.btn3trs_, RedPointConst.ILLU_ILLUSTRATION3)
 	manager.redPoint:unbindUIandKey(arg_37_0.btn4trs_, RedPointConst.ILLU_ILLUSTRATION4)
+	manager.redPoint:unbindUIandKey(arg_37_0.btn5trs_, RedPointConst.ILLU_ILLUSTRATION5)
+	manager.redPoint:unbindUIandKey(arg_37_0.btn6trs_, RedPointConst.ILLU_ILLUSTRATION6)
 
 	arg_37_0.params_.scrollPos_ = arg_37_0.itemScroll_:GetScrolledPosition()
 end

@@ -57,6 +57,18 @@ function var_0_0.BuildContext(arg_4_0)
 			isInAuto = false
 		}
 	}
+
+	if GameToSDK.IsIOSPlatform() then
+		arg_4_0.recoverStack = {
+			birdsCull = true,
+			walkingPeopleCull = QWorldLuaBridge.WalkingPeopleGlobleCull
+		}
+	else
+		arg_4_0.recoverStack = {
+			birdsCull = QWorldLuaBridge.BirdsGlobleCull,
+			walkingPeopleCull = QWorldLuaBridge.WalkingPeopleGlobleCull
+		}
+	end
 end
 
 function var_0_0.Init(arg_6_0)
@@ -250,88 +262,97 @@ function var_0_0.EndStory(arg_23_0)
 	QWorldMgr:GetQWorldStoryMgr():StopStory()
 end
 
-function var_0_0.OnStopStory(arg_24_0)
+function var_0_0.RecoverEnv(arg_24_0)
+	if not GameToSDK.IsIOSPlatform() then
+		QWorldLuaBridge.BirdsGlobleCull = arg_24_0.recoverStack.birdsCull
+	end
+
+	QWorldLuaBridge.WalkingPeopleGlobleCull = arg_24_0.recoverStack.walkingPeopleCull
+end
+
+function var_0_0.OnStopStory(arg_25_0)
+	arg_25_0:RecoverEnv()
 	QWorldMgr:GetQWorldStoryMgr():GetTalkView():SetCanShow(true)
 
-	if arg_24_0.isChangeBGM then
-		local var_24_0 = QWorldMgr:GetQWorldSoundMgr().curSound
+	if arg_25_0.isChangeBGM then
+		local var_25_0 = QWorldMgr:GetQWorldSoundMgr().curSound
 
-		if var_24_0 then
-			manager.audio:PlayBGM(var_24_0.cueSheet, var_24_0.cueName, var_24_0.cueName)
+		if var_25_0 then
+			manager.audio:PlayBGM(var_25_0.cueSheet, var_25_0.cueName, var_25_0.cueName)
 		end
 	end
 
-	arg_24_0:DisposeEvent()
-	arg_24_0:DisposeEffect()
-	arg_24_0.blackboard:PreStop()
-	arg_24_0:Dispose()
-end
-
-function var_0_0.PreContinueStop(arg_25_0)
 	arg_25_0:DisposeEvent()
 	arg_25_0:DisposeEffect()
+	arg_25_0.blackboard:PreStop()
 	arg_25_0:Dispose()
 end
 
-function var_0_0.SetImmediateNextFlag(arg_26_0, arg_26_1)
-	if arg_26_0.nextCallback then
-		arg_26_0:Next(arg_26_1)
+function var_0_0.PreContinueStop(arg_26_0)
+	arg_26_0:DisposeEvent()
+	arg_26_0:DisposeEffect()
+	arg_26_0:Dispose()
+end
+
+function var_0_0.SetImmediateNextFlag(arg_27_0, arg_27_1)
+	if arg_27_0.nextCallback then
+		arg_27_0:Next(arg_27_1)
 	else
-		arg_26_0.context.immediateNextFlag = arg_26_1
+		arg_27_0.context.immediateNextFlag = arg_27_1
 	end
 end
 
-function var_0_0.RegisterUpdateAction(arg_27_0, arg_27_1)
-	arg_27_0.updateIdentity = arg_27_0.updateIdentity + 1
-	arg_27_0.updateDelegate[arg_27_0.updateIdentity] = arg_27_1
+function var_0_0.RegisterUpdateAction(arg_28_0, arg_28_1)
+	arg_28_0.updateIdentity = arg_28_0.updateIdentity + 1
+	arg_28_0.updateDelegate[arg_28_0.updateIdentity] = arg_28_1
 
-	return arg_27_0.updateIdentity
+	return arg_28_0.updateIdentity
 end
 
-function var_0_0.RemoveUpdateAction(arg_28_0, arg_28_1)
-	arg_28_0.updateDelegate[arg_28_1] = nil
+function var_0_0.RemoveUpdateAction(arg_29_0, arg_29_1)
+	arg_29_0.updateDelegate[arg_29_1] = nil
 end
 
-function var_0_0.RegisterDelayAction(arg_29_0, arg_29_1, arg_29_2)
-	arg_29_0.delayIdentity = arg_29_0.delayIdentity + 1
-	arg_29_0.delayDelegate[arg_29_0.delayIdentity] = {
+function var_0_0.RegisterDelayAction(arg_30_0, arg_30_1, arg_30_2)
+	arg_30_0.delayIdentity = arg_30_0.delayIdentity + 1
+	arg_30_0.delayDelegate[arg_30_0.delayIdentity] = {
 		startTime = Time.time,
-		action = arg_29_1,
-		duration = arg_29_2
+		action = arg_30_1,
+		duration = arg_30_2
 	}
 
-	return arg_29_0.delayIdentity
+	return arg_30_0.delayIdentity
 end
 
-function var_0_0.RemoveDelayAction(arg_30_0, arg_30_1)
-	arg_30_0.delayDelegate[arg_30_1] = nil
+function var_0_0.RemoveDelayAction(arg_31_0, arg_31_1)
+	arg_31_0.delayDelegate[arg_31_1] = nil
 end
 
-function var_0_0.RegisterTalkFunction(arg_31_0, arg_31_1, arg_31_2)
-	arg_31_0.funcMap[arg_31_1] = arg_31_2
+function var_0_0.RegisterTalkFunction(arg_32_0, arg_32_1, arg_32_2)
+	arg_32_0.funcMap[arg_32_1] = arg_32_2
 end
 
-function var_0_0.RememberHistory(arg_32_0, arg_32_1)
-	table.insert(arg_32_0.historyContent, arg_32_1)
+function var_0_0.RememberHistory(arg_33_0, arg_33_1)
+	table.insert(arg_33_0.historyContent, arg_33_1)
 end
 
-function var_0_0.GetHistory(arg_33_0)
-	return arg_33_0.historyContent
+function var_0_0.GetHistory(arg_34_0)
+	return arg_34_0.historyContent
 end
 
-function var_0_0.Dispose(arg_34_0)
-	if arg_34_0.timer then
-		arg_34_0.timer:Stop()
+function var_0_0.Dispose(arg_35_0)
+	if arg_35_0.timer then
+		arg_35_0.timer:Stop()
 
-		arg_34_0.timer = nil
+		arg_35_0.timer = nil
 	end
 
-	arg_34_0.blackboard:Dispose()
+	arg_35_0.blackboard:Dispose()
 
-	arg_34_0.blackboard = nil
+	arg_35_0.blackboard = nil
 
-	GameObject.Destroy(arg_34_0.blackboardObj)
-	Asset.Unload(arg_34_0:ConfigPath())
+	GameObject.Destroy(arg_35_0.blackboardObj)
+	Asset.Unload(arg_35_0:ConfigPath())
 end
 
 return var_0_0

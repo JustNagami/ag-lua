@@ -207,7 +207,9 @@ function var_0_0.HideNotifies(arg_7_0)
 end
 
 function var_0_0.OnQueueUpdate(arg_8_0)
-	manager.notify:CallUpdateFunc("OnQWorldMainQueueUpdate")
+	if var_0_1 then
+		manager.notify:CallUpdateFunc("OnQWorldMainQueueUpdate")
+	end
 end
 
 function var_0_0.GetRewards(arg_9_0, arg_9_1)

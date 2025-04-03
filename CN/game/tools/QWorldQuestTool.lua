@@ -354,76 +354,111 @@ function var_0_0.GetVisibleQuestIdList(arg_24_0, arg_24_1)
 	return var_24_0
 end
 
-function var_0_0.GetLoadedQuestIdList(arg_25_0)
-	local var_25_0 = var_0_0.GetVisibleQuestIdList(arg_25_0)
-	local var_25_1 = {}
+local function var_0_1(arg_25_0, arg_25_1)
+	for iter_25_0, iter_25_1 in ipairs(arg_25_0) do
+		if iter_25_1 == arg_25_1 then
+			return true
+		end
+	end
 
-	for iter_25_0, iter_25_1 in ipairs(var_25_0) do
-		local var_25_2 = SandplayTaskCfg[iter_25_1]
+	return false
+end
 
-		if var_25_2 and var_25_2.is_unload == 1 then
-			table.clean(var_25_1)
+function var_0_0.GetLoadedQuestIdList(arg_26_0)
+	local var_26_0 = var_0_0.GetVisibleQuestIdList(arg_26_0)
+	local var_26_1 = #var_26_0
+
+	while var_26_1 >= 1 do
+		local var_26_2 = var_26_0[var_26_1]
+		local var_26_3 = SandplayTaskCfg[var_26_2]
+
+		for iter_26_0 = 1, var_26_1 - 1 do
+			local var_26_4 = var_26_0[iter_26_0]
+			local var_26_5 = SandplayTaskCfg[var_26_4]
+
+			if var_26_5.pre_task_id ~= nil and type(var_26_5.pre_task_id) == "table" and #var_26_5.pre_task_id > 0 and var_0_1(var_26_5.pre_task_id, var_26_2) and var_26_4 < var_26_2 then
+				local var_26_6 = var_26_0[var_26_1]
+
+				table.remove(var_26_0, var_26_1)
+				table.insert(var_26_0, iter_26_0, var_26_6)
+
+				var_26_1 = var_26_1 + 1
+
+				break
+			end
 		end
 
-		table.insert(var_25_1, iter_25_1)
+		var_26_1 = var_26_1 - 1
 	end
 
-	return var_25_1
-end
+	local var_26_7 = {}
 
-function var_0_0.GetQuestProgress(arg_26_0)
-	local var_26_0 = QWorldQuestGraph:GetQuestLocalProgress(arg_26_0)
+	for iter_26_1, iter_26_2 in ipairs(var_26_0) do
+		local var_26_8 = SandplayTaskCfg[iter_26_2]
 
-	if var_26_0 then
-		return var_26_0
+		if var_26_8 and var_26_8.is_unload == 1 then
+			table.clean(var_26_7)
+		end
+
+		table.insert(var_26_7, iter_26_2)
 	end
 
-	local var_26_1 = QWorldQuestData:GetQuestData(arg_26_0)
-
-	return var_26_1 and var_26_1.progress or -1
+	return var_26_7
 end
 
-function var_0_0.GetQuestProgressText(arg_27_0)
-	local var_27_0 = SandplayTaskCfg[arg_27_0]
+function var_0_0.GetQuestProgress(arg_27_0)
+	local var_27_0 = QWorldQuestGraph:GetQuestLocalProgress(arg_27_0)
 
-	if var_27_0.condition == 61 then
-		local var_27_1 = var_27_0.additional_parameter
-		local var_27_2 = manager.time:parseTimeFromConfig({
+	if var_27_0 then
+		return var_27_0
+	end
+
+	local var_27_1 = QWorldQuestData:GetQuestData(arg_27_0)
+
+	return var_27_1 and var_27_1.progress or -1
+end
+
+function var_0_0.GetQuestProgressText(arg_28_0)
+	local var_28_0 = SandplayTaskCfg[arg_28_0]
+
+	if var_28_0.condition == 61 then
+		local var_28_1 = var_28_0.additional_parameter
+		local var_28_2 = manager.time:parseTimeFromConfig({
 			{
-				var_27_1[1],
-				var_27_1[2],
-				var_27_1[3]
+				var_28_1[1],
+				var_28_1[2],
+				var_28_1[3]
 			},
 			{
-				var_27_1[4],
-				var_27_1[5],
-				var_27_1[6]
+				var_28_1[4],
+				var_28_1[5],
+				var_28_1[6]
 			}
 		})
 
-		return manager.time:GetLostTimeStr(var_27_2, nil, true)
-	elseif var_27_0.need > 1 then
-		local var_27_3 = QWorldQuestData:GetQuestData(arg_27_0)
+		return manager.time:GetLostTimeStr(var_28_2, nil, true)
+	elseif var_28_0.need > 1 then
+		local var_28_3 = QWorldQuestData:GetQuestData(arg_28_0)
 
-		return GetTipsF("VERIFY_ASSETS_PROCESSING_RATE", QWorldQuestTool.GetQuestProgress(arg_27_0), var_27_0.need)
+		return GetTipsF("VERIFY_ASSETS_PROCESSING_RATE", QWorldQuestTool.GetQuestProgress(arg_28_0), var_28_0.need)
 	else
 		return ""
 	end
 end
 
-function var_0_0.MainQuestHasRealtimeProgress(arg_28_0)
-	if arg_28_0 == -1 then
+function var_0_0.MainQuestHasRealtimeProgress(arg_29_0)
+	if arg_29_0 == -1 then
 		return false
 	end
 
-	local var_28_0 = QWorldQuestData:GetMainQuestData(arg_28_0)
+	local var_29_0 = QWorldQuestData:GetMainQuestData(arg_29_0)
 
-	if not var_28_0 then
+	if not var_29_0 then
 		return false
 	end
 
-	for iter_28_0, iter_28_1 in ipairs(var_28_0.taskIdList) do
-		if QWorldQuestData:GetQuestData(iter_28_1).status == QWorldQuestConst.QUEST_STATUS.IN_PROGRESS and SandplayTaskCfg[iter_28_1].condition == 61 then
+	for iter_29_0, iter_29_1 in ipairs(var_29_0.taskIdList) do
+		if QWorldQuestData:GetQuestData(iter_29_1).status == QWorldQuestConst.QUEST_STATUS.IN_PROGRESS and SandplayTaskCfg[iter_29_1].condition == 61 then
 			return true
 		end
 	end

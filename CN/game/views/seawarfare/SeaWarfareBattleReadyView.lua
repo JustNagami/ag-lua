@@ -247,7 +247,7 @@ function var_0_0.OnEnterAnimEnd(arg_34_0)
 	arg_34_0:StopAnim()
 
 	for iter_34_0, iter_34_1 in pairs(arg_34_0.marinerItemList_) do
-		iter_34_1:PlayFirstUnlockAnim()
+		iter_34_1:PlayAnim()
 	end
 
 	for iter_34_2, iter_34_3 in pairs(arg_34_0.skillItemList_) do

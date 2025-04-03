@@ -43,8 +43,9 @@ function var_0_0.DialogueNode_1(arg_5_0)
 		createMode = "Point",
 		path = "QWWorld/Effect/fx_yahaha_smoke.prefab"
 	})
+	arg_5_0:PlaySoundsAction(2, "ui_sandplay", "ui_sandplay_x511_action_sgd_disappear_act", "", "")
 	arg_5_0:ShowTalkView()
-	arg_5_0:SetTalkContent(11122001, "", 0)
+	arg_5_0:SetTalkContent(11122001, "", 9516)
 	arg_5_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_5_0:Skip("End")
@@ -63,7 +64,7 @@ end
 
 function var_0_0.DialogueNode_2(arg_9_0)
 	arg_9_0:ShowTalkView()
-	arg_9_0:SetTalkContent(11122002, "", 0)
+	arg_9_0:SetTalkContent(11122002, "", 9073)
 	arg_9_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_9_0:Skip("End")
@@ -82,7 +83,7 @@ end
 
 function var_0_0.DialogueNode_3(arg_13_0)
 	arg_13_0:ShowTalkView()
-	arg_13_0:SetTalkContent(11122003, "", 0)
+	arg_13_0:SetTalkContent(11122003, "", 9516)
 	arg_13_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_13_0:Skip("End")

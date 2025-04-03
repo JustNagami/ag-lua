@@ -120,18 +120,30 @@ function var_0_0.GetSceneID(arg_9_0, arg_9_1)
 		else
 			return arg_9_0:GetDefaultScene()
 		end
-	elseif HomeSceneSettingCfg[var_9_0].limit_display == 0 then
-		if var_9_1 and HomeSceneSettingData:CanUseScene(var_9_1.special_scene_id) and (var_9_0 == var_9_1.special_scene_id or var_9_0 == var_9_1.special_scene_id_2) then
+	else
+		if CustomCenterTools.IsRandomHero() then
+			local var_9_2 = CustomCenterTools.GetDLCScene(arg_9_1)
+
+			if var_9_2 then
+				return var_9_2
+			end
+		end
+
+		if HomeSceneSettingCfg[var_9_0].limit_display == 0 then
+			if var_9_1 and HomeSceneSettingData:CanUseScene(var_9_1.special_scene_id) and (var_9_0 == var_9_1.special_scene_id or var_9_0 == var_9_1.special_scene_id_2) then
+				return var_9_0
+			elseif var_9_1 and HomeSceneSettingData:CanUseScene(var_9_1.special_scene_id) then
+				return var_9_1.special_scene_id
+			elseif HomeSceneSettingCfg[var_0_5].limit_display == 0 then
+				return arg_9_0:GetDefaultScene()
+			else
+				return var_0_5
+			end
+		elseif HomeSceneSettingData:CanUseScene(var_9_0) then
 			return var_9_0
-		elseif var_9_1 and HomeSceneSettingData:CanUseScene(var_9_1.special_scene_id) then
-			return var_9_1.special_scene_id
 		else
 			return arg_9_0:GetDefaultScene()
 		end
-	elseif HomeSceneSettingData:CanUseScene(var_9_0) then
-		return var_9_0
-	else
-		return arg_9_0:GetDefaultScene()
 	end
 end
 

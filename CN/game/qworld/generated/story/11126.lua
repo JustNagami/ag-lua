@@ -47,7 +47,7 @@ function var_0_0.DialogueNode_2(arg_11_0)
 		return
 	end)
 	arg_11_0:ShowTalkView()
-	arg_11_0:SetTalkContent(11126001, "", 0)
+	arg_11_0:SetTalkContent(11126001, "", 9516)
 	arg_11_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_11_0:Skip("End")
@@ -66,7 +66,7 @@ end
 
 function var_0_0.DialogueNode_3(arg_16_0)
 	arg_16_0:ShowTalkView()
-	arg_16_0:SetTalkContent(11126002, "", 0)
+	arg_16_0:SetTalkContent(11126002, "", 9073)
 	arg_16_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_16_0:Skip("End")
@@ -88,7 +88,7 @@ function var_0_0.DialogueNode_4(arg_20_0)
 		return
 	end)
 	arg_20_0:ShowTalkView()
-	arg_20_0:SetTalkContent(11126003, "", 0)
+	arg_20_0:SetTalkContent(11126003, "", 9516)
 	arg_20_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_20_0:Skip("End")
@@ -110,7 +110,7 @@ function var_0_0.DialogueNode_5(arg_25_0)
 		return
 	end)
 	arg_25_0:ShowTalkView()
-	arg_25_0:SetTalkContent(11126004, "", 0)
+	arg_25_0:SetTalkContent(11126004, "", 9073)
 	arg_25_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_25_0:Skip("End")
@@ -155,7 +155,7 @@ function var_0_0.DialogueNode_7(arg_34_0)
 		return
 	end)
 	arg_34_0:ShowTalkView()
-	arg_34_0:SetTalkContent(11126006, "", 0)
+	arg_34_0:SetTalkContent(11126006, "", 9516)
 	arg_34_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_34_0:Skip("End")
@@ -241,6 +241,7 @@ function var_0_0.DialogueNode_10(arg_47_0)
 		createMode = "Point",
 		path = "QWWorld/Effect/fx_yahaha_smoke.prefab"
 	})
+	arg_47_0:PlaySoundsAction(2, "ui_sandplay", "ui_sandplay_x511_action_sgd_disappear_act", "", "")
 	arg_47_0:ShowTalkView()
 	arg_47_0:SetTalkContent(11126009, "", 0)
 	arg_47_0:SetNeedSkip(true, {
@@ -266,7 +267,7 @@ function var_0_0.DialogueNode_11(arg_51_0)
 	arg_51_0:SetLookAtParamsAction(9516, 0.8, 1, 1)
 	arg_51_0:LookAtRoleAction(true, 9516, "9073")
 	arg_51_0:ShowTalkView()
-	arg_51_0:SetTalkContent(11126010, "", 0)
+	arg_51_0:SetTalkContent(11126010, "", 9516)
 	arg_51_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_51_0:Skip("End")
@@ -288,7 +289,7 @@ function var_0_0.DialogueNode_12(arg_56_0)
 		return
 	end)
 	arg_56_0:ShowTalkView()
-	arg_56_0:SetTalkContent(11126011, "", 0)
+	arg_56_0:SetTalkContent(11126011, "", 9073)
 	arg_56_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_56_0:Skip("End")

@@ -170,8 +170,8 @@ function var_0_0.PlayLvUpAni(arg_12_0)
 			arg_12_0.bookCanvas_.alpha = 0
 
 			TimeTools.StartAfterSeconds(0.01, function()
-				manager.notify:Invoke(QWORLD_TAKE_PHOTO)
 				JumpTools.Back()
+				manager.notify:Invoke(QWORLD_TAKE_PHOTO)
 			end, {})
 		end
 	end, 1, -1)

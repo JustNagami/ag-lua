@@ -350,8 +350,8 @@ function var_0_0.UpdateSceneView(arg_29_0, arg_29_1, arg_29_2)
 			arg_29_0.previewSceneName_ = var_29_1
 
 			arg_29_0:SetCamera()
+			arg_29_2()
 		end)
-		arg_29_2()
 	end
 end
 
@@ -408,7 +408,7 @@ end
 
 function var_0_0.ExitFunc(arg_42_0, arg_42_1)
 	local var_42_0 = not CustomCenterTools.IsRandomHero() and arg_42_0.skinID_ ~= PlayerData:GetPosterGirlHeroSkinId()
-	local var_42_1 = not CustomCenterTools.IsRandomScene() and arg_42_0.selectSceneID_ ~= HomeSceneSettingData:GetCurSceneID() and not CustomCenterTools.IsDLCScene(arg_42_0.selectSceneID_)
+	local var_42_1 = not CustomCenterTools.IsRandomScene() and arg_42_0.selectSceneID_ ~= HomeSceneSettingData:GetCurSceneID() and (SkinSceneActionCfg.get_id_list_by_special_scene_id[arg_42_0.selectSceneID_] and not CustomCenterTools.IsRandomHero() or not SkinSceneActionCfg.get_id_list_by_special_scene_id[arg_42_0.selectSceneID_])
 	local var_42_2 = HomeSceneSettingData:GetCurSceneID()
 
 	if var_42_0 or var_42_1 then

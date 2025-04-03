@@ -280,8 +280,6 @@ function var_0_0.ChangeTimeScene(arg_17_0, arg_17_1)
 		end
 	end
 
-	HomeSceneSettingAction.SetHomeScene(var_17_2)
-
 	return var_17_2
 end
 

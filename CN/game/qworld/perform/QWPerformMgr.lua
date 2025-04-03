@@ -60,129 +60,133 @@ function var_0_0.IsInPerform(arg_8_0)
 	return arg_8_0.isInPerform
 end
 
-function var_0_0.StartPerform(arg_9_0, arg_9_1, arg_9_2, arg_9_3)
-	local var_9_0 = arg_9_1:GetId()
+function var_0_0.GetCurPreformThingID(arg_9_0)
+	return arg_9_0.context.activeThing
+end
 
-	arg_9_0.isInPerform = true
-	arg_9_0.context.luaInterrupt = false
-	arg_9_0.context.activeThing = var_9_0
-	arg_9_0.context.onFinish = arg_9_3
+function var_0_0.StartPerform(arg_10_0, arg_10_1, arg_10_2, arg_10_3)
+	local var_10_0 = arg_10_1:GetId()
 
-	manager.notify:Invoke(QWORLD_ENTER_PERFORM, true, QWorldLuaBridge.GetFurnitureCanAutoExit(arg_9_1.entity))
-	arg_9_0:GetCManager():StartFurniturInteract(arg_9_1.entity, function()
-		arg_9_0:NextPerform(arg_9_1, arg_9_2, function()
-			if arg_9_3 then
-				arg_9_3()
+	arg_10_0.isInPerform = true
+	arg_10_0.context.luaInterrupt = false
+	arg_10_0.context.activeThing = var_10_0
+	arg_10_0.context.onFinish = arg_10_3
+
+	manager.notify:Invoke(QWORLD_ENTER_PERFORM, true, QWorldLuaBridge.GetFurnitureCanAutoExit(arg_10_1.entity))
+	arg_10_0:GetCManager():StartFurniturInteract(arg_10_1.entity, function()
+		arg_10_0:NextPerform(arg_10_1, arg_10_2, function()
+			if arg_10_3 then
+				arg_10_3()
 			end
 
-			arg_9_0.context.activeThing = -1
+			arg_10_0.context.activeThing = -1
 
 			manager.notify:Invoke(QWORLD_ENTER_PERFORM, false)
 
-			arg_9_0.isInPerform = false
+			arg_10_0.isInPerform = false
 		end)
 	end)
 end
 
-function var_0_0.NextPerform(arg_12_0, arg_12_1, arg_12_2, arg_12_3)
-	local var_12_0 = arg_12_1:GetId()
+function var_0_0.NextPerform(arg_13_0, arg_13_1, arg_13_2, arg_13_3)
+	local var_13_0 = arg_13_1:GetId()
 
-	var_0_1:StartPerformTask(function(arg_13_0)
-		var_0_2.SetupInteractTask(var_12_0, arg_12_2, arg_13_0, function(arg_14_0)
-			if arg_14_0.nextAction then
-				local var_14_0 = QWorldLuaBridge.GetFuniturePerformExitAction(arg_12_1.entity)
+	var_0_1:StartPerformTask(function(arg_14_0)
+		var_0_2.SetupInteractTask(var_13_0, arg_13_2, arg_14_0, function(arg_15_0)
+			if arg_15_0.nextAction then
+				local var_15_0 = QWorldLuaBridge.GetFuniturePerformExitAction(arg_13_1.entity)
 
-				if not var_14_0 or var_14_0 == -1 or var_14_0 == 0 then
-					arg_12_0:NextPerform(arg_12_1, arg_14_0.nextAction, arg_12_3)
+				if not var_15_0 or var_15_0 == -1 or var_15_0 == 0 then
+					arg_13_0:NextPerform(arg_13_1, arg_15_0.nextAction, arg_13_3)
 
 					return
 				else
-					if arg_12_0.context.luaInterrupt then
-						arg_12_0:NextPerform(arg_12_1, var_14_0, arg_12_3)
+					if arg_13_0.context.luaInterrupt then
+						arg_13_0:NextPerform(arg_13_1, var_15_0, arg_13_3)
 
 						return
 					end
 
-					if arg_12_0:GetCManager():CheckFuniturePerformInterrupt(arg_12_1.entity) then
-						arg_12_0:NextPerform(arg_12_1, var_14_0, arg_12_3)
+					if arg_13_0:GetCManager():CheckFuniturePerformInterrupt(arg_13_1.entity) then
+						arg_13_0:NextPerform(arg_13_1, var_15_0, arg_13_3)
 
 						return
 					else
-						arg_12_0:GetCManager():MarkFuniturePerformWaitInterrupt(arg_12_1.entity)
+						arg_13_0:GetCManager():MarkFuniturePerformWaitInterrupt(arg_13_1.entity)
 					end
 				end
 
-				arg_12_0:NextPerform(arg_12_1, arg_14_0.nextAction, arg_12_3)
+				arg_13_0:NextPerform(arg_13_1, arg_15_0.nextAction, arg_13_3)
 			else
-				arg_12_0:GetCManager():EndFurniturInteract(arg_12_1.entity)
+				arg_13_0:GetCManager():EndFurniturInteract(arg_13_1.entity)
 
-				if arg_12_3 then
-					arg_12_3()
+				if arg_13_3 then
+					arg_13_3()
 				end
 
-				arg_12_0.context.activeThing = -1
+				arg_13_0.context.activeThing = -1
 			end
 		end)
 	end)
 end
 
-function var_0_0.ForceStopPlayerPerform(arg_15_0, arg_15_1, arg_15_2)
-	if arg_15_0.context.activeThing ~= -1 then
-		if arg_15_2 then
+function var_0_0.ForceStopPlayerPerform(arg_16_0, arg_16_1, arg_16_2)
+	if arg_16_0.context.activeThing ~= -1 then
+		if arg_16_2 then
 			var_0_1:StopRunner()
 
-			local var_15_0 = QWorldMgr:GetQWorldEntityMgr():GetEnt(arg_15_0.context.activeThing)
+			local var_16_0 = QWorldMgr:GetQWorldEntityMgr():GetEnt(arg_16_0.context.activeThing)
 
-			arg_15_0:GetCManager():EndFurniturInteract(var_15_0.entity)
-			arg_15_0:ForceStopAllTask(true, arg_15_1)
+			arg_16_0:GetCManager():EndFurniturInteract(var_16_0.entity)
+			arg_16_0:ForceStopAllTask(true, arg_16_1)
 		else
 			QWorldMgr:StartBlackFade(0.3, 0.3, 0.2, function()
 				var_0_1:StopRunner()
 
-				local var_16_0 = QWorldMgr:GetQWorldEntityMgr():GetEnt(arg_15_0.context.activeThing)
+				local var_17_0 = QWorldMgr:GetQWorldEntityMgr():GetEnt(arg_16_0.context.activeThing)
 
-				arg_15_0:GetCManager():EndFurniturInteract(var_16_0.entity)
-				arg_15_0:ForceStopAllTask(true, arg_15_1)
+				arg_16_0:GetCManager():EndFurniturInteract(var_17_0.entity)
+				arg_16_0:ForceStopAllTask(true, arg_16_1)
 			end)
 		end
-	elseif arg_15_1 then
-		arg_15_1()
+	elseif arg_16_1 then
+		arg_16_1()
 	end
 end
 
-function var_0_0.ForceStopAllTask(arg_17_0, arg_17_1, arg_17_2)
-	if arg_17_0.context.activeThing ~= -1 then
-		if not arg_17_1 then
+function var_0_0.ForceStopAllTask(arg_18_0, arg_18_1, arg_18_2)
+	if arg_18_0.context.activeThing ~= -1 then
+		if not arg_18_1 then
 			var_0_1:StopRunner()
 		end
 
-		if arg_17_0.context.onFinish then
-			arg_17_0.context.onFinish()
+		if arg_18_0.context.onFinish then
+			arg_18_0.context.onFinish()
 		end
 
 		manager.notify:Invoke(QWORLD_ENTER_PERFORM, false)
 
-		arg_17_0.isInPerform = false
+		arg_18_0.isInPerform = false
 
-		if arg_17_2 then
-			arg_17_2()
+		if arg_18_2 then
+			arg_18_2()
 		end
 
-		arg_17_0.context.activeThing = -1
+		arg_18_0.context.activeThing = -1
 	end
 end
 
-function var_0_0.MarkFuniturePerformWaitInterrupt(arg_18_0)
-	if arg_18_0.context.activeThing ~= -1 then
-		local var_18_0 = QWorldMgr:GetQWorldEntityMgr():GetEnt(arg_18_0.context.activeThing)
+function var_0_0.MarkFuniturePerformWaitInterrupt(arg_19_0)
+	if arg_19_0.context.activeThing ~= -1 then
+		local var_19_0 = QWorldMgr:GetQWorldEntityMgr():GetEnt(arg_19_0.context.activeThing)
 
-		arg_18_0.context.luaInterrupt = true
+		arg_19_0.context.luaInterrupt = true
 	else
 		manager.notify:Invoke(QWORLD_ENTER_PERFORM, false)
 	end
 end
 
-function var_0_0.Dispose(arg_19_0)
+function var_0_0.Dispose(arg_20_0)
 	var_0_3 = nil
 
 	var_0_1:Dispose()

@@ -44,6 +44,7 @@ function var_0_0.BlackFadeDialogueNode_1(arg_5_0)
 			return
 		end)
 		arg_5_0:EnableCameraByTagAction("1", 1, 0)
+		arg_5_0:BirdsGlobleCull(true)
 		arg_5_0:ContinueBlackFade()
 		arg_5_0:OnNext(function()
 			arg_5_0:ClearOnNext()
@@ -168,10 +169,10 @@ end
 function var_0_0.DialogueNode_6(arg_38_0)
 	arg_38_0:EnableCameraByTagAction("5", 1, 0.5)
 	arg_38_0:CameraMoveAction("5", 4, 6, 3, 0.2)
-	arg_38_0:PlayActorAnimationAction(9073, "proud", 0.05, 2.333333, function()
+	arg_38_0:PlayActorAnimationAction(907301, "proud", 0.05, 2.333333, function()
 		return
 	end)
-	arg_38_0:ActorSeekerAction(9073, {
+	arg_38_0:ActorSeekerAction(907301, {
 		"9073-2"
 	}, 0.5, function()
 		return
@@ -206,7 +207,7 @@ function var_0_0.DialogueNode_7(arg_45_0)
 		end)
 	end, true, false)
 	arg_45_0:SetLookAtParamsAction(9510, 0.8, 1, 1)
-	arg_45_0:LookAtRoleAction(true, 9510, "9073")
+	arg_45_0:LookAtRoleAction(true, 9510, "907301")
 	arg_45_0:EnableCameraByTagAction("6", 1, 0.5)
 	arg_45_0:ShowTalkView()
 	arg_45_0:SetTalkContent(11040006, "", 9510)
@@ -447,6 +448,7 @@ end
 
 function var_0_0.CloseStoryEventNode_15(arg_101_0)
 	arg_101_0:EnableCameraCutAction(false)
+	arg_101_0:BirdsGlobleCull(false)
 	arg_101_0:EndStory()
 end
 

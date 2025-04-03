@@ -36,9 +36,7 @@ function var_0_0.BlackFadeDialogueNode_1(arg_5_0)
 		arg_5_0:PlayActorAnimationAction(9510, "conversation_2", 0.05, 3.166667, function()
 			return
 		end)
-
-		QWorldLuaBridge.WalkingPeopleGlobleCull = true
-
+		arg_5_0:WalkingPeopleGlobleCull(true)
 		arg_5_0:ContinueBlackFade()
 		arg_5_0:OnNext(function()
 			arg_5_0:ClearOnNext()
@@ -51,7 +49,7 @@ end
 
 function var_0_0.DialogueNode_2(arg_13_0)
 	arg_13_0:ShowTalkView()
-	arg_13_0:SetTalkContent(11032001, "", 0)
+	arg_13_0:SetTalkContent(11032001, "", 9510)
 	arg_13_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_13_0:Skip("End")
@@ -74,7 +72,7 @@ function var_0_0.DialogueNode_3(arg_17_0)
 	end)
 	arg_17_0:EnableCameraByTagAction("LookAtCamera_2_1_R", 1, 0)
 	arg_17_0:ShowTalkView()
-	arg_17_0:SetTalkContent(11032002, "", 0)
+	arg_17_0:SetTalkContent(11032002, "", 9073)
 	arg_17_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_17_0:Skip("End")
@@ -96,7 +94,7 @@ function var_0_0.DialogueNode_4(arg_22_0)
 		return
 	end)
 	arg_22_0:ShowTalkView()
-	arg_22_0:SetTalkContent(11032003, "", 0)
+	arg_22_0:SetTalkContent(11032003, "", 9072)
 	arg_22_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_22_0:Skip("End")
@@ -118,7 +116,7 @@ function var_0_0.DialogueNode_5(arg_27_0)
 		return
 	end)
 	arg_27_0:ShowTalkView()
-	arg_27_0:SetTalkContent(11032004, "", 0)
+	arg_27_0:SetTalkContent(11032004, "", 9510)
 	arg_27_0:SetNeedSkip(true, {
 		Invoke = function()
 			arg_27_0:Skip("End")
@@ -143,6 +141,7 @@ function var_0_0.BlackFadeDialogueNode_6(arg_32_0)
 		arg_32_0:DestroyCharAction(9510)
 		arg_32_0:DestroyCharAction(9073)
 		arg_32_0:EnableCameraByTagAction("", 1, 0)
+		arg_32_0:WalkingPeopleGlobleCull(false)
 		arg_32_0:ContinueBlackFade()
 		arg_32_0:OnNext(function()
 			arg_32_0:ClearOnNext()

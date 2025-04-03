@@ -35,6 +35,7 @@ end
 function var_0_0.InitCallback(arg_6_0)
 	arg_6_0.clickHeroHandler_ = handler(arg_6_0, arg_6_0.OnSectionClickHero)
 	arg_6_0.clickStartBattleHandler_ = handler(arg_6_0, arg_6_0.OnSectionClickStartBattle)
+	arg_6_0.clickRandomAttributeTipsHandler_ = handler(arg_6_0, arg_6_0.OnClickRandomAttributeTips)
 end
 
 function var_0_0.ReserveCameraEnter(arg_7_0)
@@ -79,6 +80,7 @@ end
 function var_0_0.AddEventListener(arg_15_0)
 	arg_15_0:RegistEventListener(SECTION_CLICK_HERO, arg_15_0.clickHeroHandler_)
 	arg_15_0:RegistEventListener(SECTION_CLICK_START_BATTLE, arg_15_0.clickStartBattleHandler_)
+	arg_15_0:RegistEventListener(SECTION_CLICK_RANDOM_ATTRIBUTE_TIPS, arg_15_0.clickRandomAttributeTipsHandler_)
 end
 
 function var_0_0.ProcessParams(arg_16_0)
@@ -214,34 +216,26 @@ function var_0_0.StartBattle(arg_35_0)
 	arg_35_0.sectionProxy_:StartBattle()
 end
 
-function var_0_0.GetAdditionalViewClass(arg_36_0)
-	return arg_36_0.sectionProxy_:GetAdditionalViewClass()
+function var_0_0.OnClickRandomAttributeTips(arg_36_0, arg_36_1)
+	arg_36_1:SetParent(arg_36_0.pageContainerTrans_)
 end
 
-function var_0_0.GetSelectHeroViewClass(arg_37_0)
-	return arg_37_0.sectionProxy_:GetSelectHeroViewClass()
+function var_0_0.GetAdditionalViewClass(arg_37_0)
+	return arg_37_0.sectionProxy_:GetAdditionalViewClass()
 end
 
-function var_0_0.InitSubView(arg_38_0)
-	if not arg_38_0.createdSubview_ then
-		arg_38_0.createdSubview_ = true
-
-		for iter_38_0, iter_38_1 in pairs(arg_38_0.subViewDic_) do
-			local var_38_0 = iter_38_1.go
-
-			iter_38_1.instance = iter_38_1.getClassFunc().New(var_38_0)
-
-			if iter_38_1.initFunc then
-				iter_38_1.initFunc()
-			end
-		end
-	end
+function var_0_0.GetSelectHeroViewClass(arg_38_0)
+	return arg_38_0.sectionProxy_:GetSelectHeroViewClass()
 end
 
-function var_0_0.TryReloadSubView(arg_39_0)
-	for iter_39_0, iter_39_1 in pairs(arg_39_0.subViewDic_) do
-		if SectionSelectHeroTools.IsDiffViewClass(iter_39_1.instance, iter_39_1.getClassFunc()) then
-			iter_39_1.instance = SectionSelectHeroTools.ReloadView(iter_39_1.instance, iter_39_1.getClassFunc())
+function var_0_0.InitSubView(arg_39_0)
+	if not arg_39_0.createdSubview_ then
+		arg_39_0.createdSubview_ = true
+
+		for iter_39_0, iter_39_1 in pairs(arg_39_0.subViewDic_) do
+			local var_39_0 = iter_39_1.go
+
+			iter_39_1.instance = iter_39_1.getClassFunc().New(var_39_0)
 
 			if iter_39_1.initFunc then
 				iter_39_1.initFunc()
@@ -250,12 +244,24 @@ function var_0_0.TryReloadSubView(arg_39_0)
 	end
 end
 
-function var_0_0.SubViewCallFunc(arg_40_0, arg_40_1, ...)
+function var_0_0.TryReloadSubView(arg_40_0)
 	for iter_40_0, iter_40_1 in pairs(arg_40_0.subViewDic_) do
-		local var_40_0 = iter_40_1.instance
+		if SectionSelectHeroTools.IsDiffViewClass(iter_40_1.instance, iter_40_1.getClassFunc()) then
+			iter_40_1.instance = SectionSelectHeroTools.ReloadView(iter_40_1.instance, iter_40_1.getClassFunc())
 
-		if var_40_0 and var_40_0[arg_40_1] then
-			var_40_0[arg_40_1](var_40_0, ...)
+			if iter_40_1.initFunc then
+				iter_40_1.initFunc()
+			end
+		end
+	end
+end
+
+function var_0_0.SubViewCallFunc(arg_41_0, arg_41_1, ...)
+	for iter_41_0, iter_41_1 in pairs(arg_41_0.subViewDic_) do
+		local var_41_0 = iter_41_1.instance
+
+		if var_41_0 and var_41_0[arg_41_1] then
+			var_41_0[arg_41_1](var_41_0, ...)
 		end
 	end
 end

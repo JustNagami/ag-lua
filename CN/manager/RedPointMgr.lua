@@ -491,7 +491,6 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.BULLETIN_UNREAD,
 		RedPointConst.EXPLORE_MAIN,
 		RedPointConst.COOPERATION_INVIT,
-		RedPointConst.SCENE,
 		RedPointConst.ACHIEVEMENT,
 		RedPointConst.ILLU_USER,
 		RedPointConst.FRIEND
@@ -613,7 +612,9 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.ILLU_ILLUSTRATION1,
 		RedPointConst.ILLU_ILLUSTRATION2,
 		RedPointConst.ILLU_ILLUSTRATION3,
-		RedPointConst.ILLU_ILLUSTRATION4
+		RedPointConst.ILLU_ILLUSTRATION4,
+		RedPointConst.ILLU_ILLUSTRATION5,
+		RedPointConst.ILLU_ILLUSTRATION6
 	})
 	arg_2_0:addGroup(RedPointConst.ILLU_USER, {
 		RedPointConst.ILLU_ILLUSTRATION,

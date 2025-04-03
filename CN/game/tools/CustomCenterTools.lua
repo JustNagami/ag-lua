@@ -16,9 +16,9 @@ function var_0_0.GetRandomHeroList()
 
 			if var_0_0.IsValidHeroSkin(var_2_2, var_2_3) and not table.keyof(var_2_0, var_2_3) then
 				var_2_0[iter_2_0] = var_2_3
+			else
+				table.remove(var_2_0, iter_2_0)
 			end
-
-			table.remove(var_2_0, iter_2_0)
 		end
 	end
 
@@ -136,54 +136,55 @@ end
 function var_0_0.GetSceneList(arg_12_0, arg_12_1)
 	local var_12_0 = {}
 	local var_12_1 = {}
+	local var_12_2 = SkinSceneActionCfg[arg_12_0]
 
-	if cfg then
-		local var_12_2 = cfg.special_scene_id
+	if var_12_2 then
+		local var_12_3 = var_12_2.special_scene_id
 
-		if table.keyof(var_12_0, var_12_2) or table.keyof(unlockScenList, var_12_2) then
-			-- block empty
-		elseif HomeSceneSettingData:CanUseScene(var_12_2) then
-			table.insert(var_12_0, var_12_2)
-		else
-			table.insert(var_12_1, var_12_2)
-		end
-
-		local var_12_3 = cfg.special_scene_id_2
-
-		if var_12_3 == 0 or table.keyof(var_12_0, var_12_3) or table.keyof(unlockScenList, var_12_3) then
+		if table.keyof(var_12_0, var_12_3) or table.keyof(var_12_1, var_12_3) then
 			-- block empty
 		elseif HomeSceneSettingData:CanUseScene(var_12_3) then
 			table.insert(var_12_0, var_12_3)
 		else
 			table.insert(var_12_1, var_12_3)
 		end
+
+		local var_12_4 = var_12_2.special_scene_id_2
+
+		if var_12_4 == 0 or table.keyof(var_12_0, var_12_4) or table.keyof(var_12_1, var_12_4) then
+			-- block empty
+		elseif HomeSceneSettingData:CanUseScene(var_12_4) then
+			table.insert(var_12_0, var_12_4)
+		else
+			table.insert(var_12_1, var_12_4)
+		end
 	end
 
 	for iter_12_0, iter_12_1 in ipairs(SkinSceneActionCfg.all) do
-		local var_12_4 = SkinSceneActionCfg[iter_12_1]
-		local var_12_5 = var_12_4.special_scene_id
+		local var_12_5 = SkinSceneActionCfg[iter_12_1]
+		local var_12_6 = var_12_5.special_scene_id
 
-		if not table.keyof(HomeSceneSettingCfg.get_id_list_by_limit_display[1], var_12_5) or table.keyof(var_12_0, var_12_5) or table.keyof(unlockScenList, var_12_5) then
-			-- block empty
-		elseif HomeSceneSettingData:CanUseScene(var_12_5) then
-			table.insert(var_12_0, var_12_5)
-		else
-			table.insert(var_12_1, var_12_5)
-		end
-
-		local var_12_6 = var_12_4.special_scene_id_2
-
-		if var_12_6 == 0 or not table.keyof(HomeSceneSettingCfg.get_id_list_by_limit_display[1], var_12_6) or table.keyof(var_12_0, var_12_6) or table.keyof(unlockScenList, var_12_6) then
+		if not table.keyof(HomeSceneSettingCfg.get_id_list_by_limit_display[1], var_12_6) or table.keyof(var_12_0, var_12_6) or table.keyof(var_12_1, var_12_6) then
 			-- block empty
 		elseif HomeSceneSettingData:CanUseScene(var_12_6) then
 			table.insert(var_12_0, var_12_6)
 		else
 			table.insert(var_12_1, var_12_6)
 		end
+
+		local var_12_7 = var_12_5.special_scene_id_2
+
+		if var_12_7 == 0 or not table.keyof(HomeSceneSettingCfg.get_id_list_by_limit_display[1], var_12_7) or table.keyof(var_12_0, var_12_7) or table.keyof(var_12_1, var_12_7) then
+			-- block empty
+		elseif HomeSceneSettingData:CanUseScene(var_12_7) then
+			table.insert(var_12_0, var_12_7)
+		else
+			table.insert(var_12_1, var_12_7)
+		end
 	end
 
 	for iter_12_2, iter_12_3 in ipairs(HomeSceneSettingCfg.get_id_list_by_limit_display[1]) do
-		if table.keyof(var_12_0, iter_12_3) or table.keyof(unlockScenList, iter_12_3) then
+		if table.keyof(var_12_0, iter_12_3) or table.keyof(var_12_1, iter_12_3) then
 			-- block empty
 		elseif HomeSceneSettingData:CanUseScene(iter_12_3) then
 			table.insert(var_12_0, iter_12_3)
@@ -192,34 +193,34 @@ function var_0_0.GetSceneList(arg_12_0, arg_12_1)
 		end
 	end
 
-	local var_12_7 = SkinSceneActionCfg[arg_12_0]
+	local var_12_8 = SkinSceneActionCfg[arg_12_0]
 
 	table.insertto(var_12_0, var_12_1)
 
 	if var_0_0.IsRandomScene() then
-		local var_12_8 = {}
-		local var_12_9 = HomeSceneSettingData:GetCacheRandomSceneList()
+		local var_12_9 = {}
+		local var_12_10 = HomeSceneSettingData:GetCacheRandomSceneList()
 
 		for iter_12_4, iter_12_5 in ipairs(var_12_0) do
-			if table.keyof(var_12_9, iter_12_5) then
-				table.insert(var_12_8, iter_12_5)
+			if table.keyof(var_12_10, iter_12_5) then
+				table.insert(var_12_9, iter_12_5)
 			end
 		end
 
-		for iter_12_6, iter_12_7 in ipairs(var_12_8) do
+		for iter_12_6, iter_12_7 in ipairs(var_12_9) do
 			table.removebyvalue(var_12_0, iter_12_7)
 		end
 
-		table.insertto(var_12_8, var_12_0)
+		table.insertto(var_12_9, var_12_0)
 
-		var_12_0 = var_12_8
+		var_12_0 = var_12_9
 	else
-		local var_12_10 = HomeSceneSettingData:GetRealScene()
-		local var_12_11 = table.keyof(var_12_0, var_12_10)
+		local var_12_11 = HomeSceneSettingData:GetRealScene()
+		local var_12_12 = table.keyof(var_12_0, var_12_11)
 
-		if var_12_11 then
-			table.remove(var_12_0, var_12_11)
-			table.insert(var_12_0, 1, var_12_10)
+		if var_12_12 then
+			table.remove(var_12_0, var_12_12)
+			table.insert(var_12_0, 1, var_12_11)
 		end
 	end
 
@@ -329,9 +330,7 @@ function var_0_0.GetMatchScene(arg_24_0, arg_24_1)
 	end
 
 	if var_0_0.IsRandomScene() then
-		if var_0_0.GetRandomSceneCnt() <= 0 then
-			var_0_0.UpdateCacheRandomSceneID(HomeSceneSettingData:GetRandomScene())
-		end
+		-- block empty
 	else
 		HomeSceneSettingData:SetCacheSceneID(arg_24_1)
 	end

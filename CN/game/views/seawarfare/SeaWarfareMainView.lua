@@ -49,7 +49,7 @@ function var_0_0.InitRewardList(arg_7_0)
 end
 
 function var_0_0.InitStageList(arg_9_0)
-	arg_9_0.stageItemList_ = LuaList.New(handler(arg_9_0, arg_9_0.IndexItem), arg_9_0.stageListGo_, SeaWarfareStageItem)
+	arg_9_0.stageItemList_ = {}
 	arg_9_0.selectStageHandler_ = handler(arg_9_0, arg_9_0.OnSelectStage)
 end
 
@@ -61,8 +61,17 @@ function var_0_0.OnEnter(arg_11_0)
 	arg_11_0:InitCamera()
 	arg_11_0:InitModel()
 	arg_11_0:GetStageIDList()
-	arg_11_0:GetDefaultSelectStageID()
+
+	local var_11_0 = SeaWarfareTools.GetNeedFirstCompleteAnimStageID()
+
+	if var_11_0 ~= nil then
+		arg_11_0.selectStageID_ = var_11_0
+	else
+		arg_11_0.selectStageID_ = arg_11_0:GetDefaultSelectStageID()
+	end
+
 	arg_11_0:RefreshUI()
+	arg_11_0:PlayEnterAnim()
 end
 
 function var_0_0.InitCamera(arg_12_0)
@@ -82,9 +91,7 @@ end
 function var_0_0.OnExit(arg_14_0)
 	arg_14_0:CloseCamera()
 
-	local var_14_0 = arg_14_0.stageItemList_:GetItemList()
-
-	for iter_14_0, iter_14_1 in pairs(var_14_0) do
+	for iter_14_0, iter_14_1 in pairs(arg_14_0.stageItemList_) do
 		iter_14_1:ResetAnim()
 	end
 
@@ -93,6 +100,8 @@ function var_0_0.OnExit(arg_14_0)
 	end
 
 	arg_14_0.params_.lastSelectStageID = arg_14_0.selectStageID_
+
+	arg_14_0:StopAnim()
 end
 
 function var_0_0.CloseCamera(arg_15_0)
@@ -127,7 +136,7 @@ end
 
 function var_0_0.GetDefaultSelectStageID(arg_21_0)
 	if arg_21_0.params_.isBack then
-		arg_21_0.selectStageID_ = arg_21_0.params_.lastSelectStageID
+		return arg_21_0.params_.lastSelectStageID
 	else
 		local var_21_0 = clone(arg_21_0.stageIDList_)
 
@@ -147,7 +156,7 @@ function var_0_0.GetDefaultSelectStageID(arg_21_0)
 			end
 		end)
 
-		arg_21_0.selectStageID_ = var_21_0[1]
+		return var_21_0[1]
 	end
 end
 
@@ -155,11 +164,20 @@ function var_0_0.RefreshUI(arg_23_0)
 	arg_23_0:RefreshStageList()
 	arg_23_0:RefreshStageSelect()
 	arg_23_0:RefreshStage()
-	arg_23_0:PlayStageCompletedAnim()
 end
 
 function var_0_0.RefreshStageList(arg_24_0)
-	arg_24_0.stageItemList_:StartScroll(#arg_24_0.stageIDList_)
+	for iter_24_0, iter_24_1 in ipairs(arg_24_0.stageIDList_) do
+		if not arg_24_0.stageItemList_[iter_24_0] then
+			local var_24_0 = Object.Instantiate(arg_24_0.stageItemGo_, arg_24_0.stageItemContentTrans_)
+
+			SetActive(var_24_0, true)
+
+			arg_24_0.stageItemList_[iter_24_0] = SeaWarfareStageItem.New(var_24_0)
+		end
+
+		arg_24_0:IndexItem(iter_24_0, arg_24_0.stageItemList_[iter_24_0])
+	end
 end
 
 function var_0_0.IndexItem(arg_25_0, arg_25_1, arg_25_2)
@@ -182,12 +200,10 @@ function var_0_0.OnSelectStage(arg_26_0, arg_26_1)
 end
 
 function var_0_0.RefreshStageSelect(arg_27_0)
-	local var_27_0 = arg_27_0.stageItemList_:GetItemList()
+	for iter_27_0, iter_27_1 in pairs(arg_27_0.stageItemList_) do
+		local var_27_0 = iter_27_1:GetStageID()
 
-	for iter_27_0, iter_27_1 in pairs(var_27_0) do
-		local var_27_1 = iter_27_1:GetStageID()
-
-		iter_27_1:SetSelect(var_27_1 == arg_27_0.selectStageID_)
+		iter_27_1:SetSelect(var_27_0 == arg_27_0.selectStageID_)
 	end
 end
 
@@ -235,35 +251,85 @@ function var_0_0.RefreshRewardItem(arg_32_0)
 end
 
 function var_0_0.Dispose(arg_33_0)
-	arg_33_0.stageItemList_:Dispose()
-
-	for iter_33_0, iter_33_1 in pairs(arg_33_0.rewardItemList_) do
+	for iter_33_0, iter_33_1 in ipairs(arg_33_0.stageItemList_) do
 		iter_33_1:Dispose()
+	end
+
+	for iter_33_2, iter_33_3 in pairs(arg_33_0.rewardItemList_) do
+		iter_33_3:Dispose()
 	end
 
 	var_0_0.super.Dispose(arg_33_0)
 end
 
-function var_0_0.PlayStageCompletedAnim(arg_34_0)
-	local var_34_0 = SeaWarfareTools.GetNeedFirstCompleteAnimStageID()
-	local var_34_1 = arg_34_0.stageItemList_:GetItemList()
+function var_0_0.StopAnim(arg_34_0)
+	if arg_34_0.enterAnimTimer_ then
+		arg_34_0.enterAnimTimer_:Stop()
 
-	for iter_34_0, iter_34_1 in pairs(var_34_1) do
-		if iter_34_1:GetStageID() == var_34_0 then
+		arg_34_0.enterAnimTimer_ = nil
+	end
+
+	if arg_34_0.checkActiveTimer_ then
+		arg_34_0.checkActiveTimer_:Stop()
+
+		arg_34_0.checkActiveTimer_ = nil
+	end
+end
+
+function var_0_0.PlayEnterAnim(arg_35_0)
+	arg_35_0:StopAnim()
+
+	arg_35_0.checkActiveTimer_ = FrameTimer.New(function()
+		if arg_35_0.gameObject_.activeInHierarchy then
+			arg_35_0.checkActiveTimer_:Stop()
+
+			arg_35_0.checkActiveTimer_ = nil
+			arg_35_0.enterAnimTimer_ = SeaWarfareTools.PlayAnim(arg_35_0.enterAnim_, "UI_right_cx", handler(arg_35_0, arg_35_0.PlayStageCompletedAnim))
+		end
+	end, 1, -1)
+
+	arg_35_0.checkActiveTimer_:Start()
+end
+
+function var_0_0.PlayStageCompletedAnim(arg_37_0)
+	arg_37_0.firstCompleteStageID_ = SeaWarfareTools.GetNeedFirstCompleteAnimStageID()
+
+	if not arg_37_0.firstCompleteStageID_ then
+		return
+	end
+
+	for iter_37_0, iter_37_1 in pairs(arg_37_0.stageItemList_) do
+		if iter_37_1:GetStageID() == arg_37_0.firstCompleteStageID_ then
 			SeaWarfareTools.SetNeedFirstCompleteAnimStageID(nil)
-			iter_34_1:PlayCompletedAnim()
-			arg_34_0:PlayStageFirstUnlockAnim(iter_34_0 + 1)
+			iter_37_1:PlayCompletedAnim(handler(arg_37_0, arg_37_0.OnStageCompletedAnimEnd))
 
 			break
 		end
 	end
 end
 
-function var_0_0.PlayStageFirstUnlockAnim(arg_35_0, arg_35_1)
-	local var_35_0 = arg_35_0.stageItemList_:GetItemList()
+function var_0_0.OnStageCompletedAnimEnd(arg_38_0)
+	arg_38_0.firstUnlockStageID_ = SeaWarfareTools.GetNeedFirstUnlockAnimStageID()
 
-	if var_35_0[arg_35_1] then
-		var_35_0[arg_35_1]:PlayUnlockAnim()
+	if not arg_38_0.firstUnlockStageID_ then
+		return
+	end
+
+	for iter_38_0, iter_38_1 in pairs(arg_38_0.stageItemList_) do
+		if iter_38_1:GetStageID() == arg_38_0.firstUnlockStageID_ then
+			SeaWarfareTools.SetNeedFirstUnlockAnimStageID(nil)
+			iter_38_1:PlayUnlockAnim(handler(arg_38_0, arg_38_0.OnStageUnlockAnimEnd))
+
+			break
+		end
+	end
+end
+
+function var_0_0.OnStageUnlockAnimEnd(arg_39_0)
+	if arg_39_0.selectStageID_ == arg_39_0.firstCompleteStageID_ and arg_39_0.firstUnlockStageID_ then
+		arg_39_0.selectStageID_ = arg_39_0.firstUnlockStageID_
+
+		arg_39_0:RefreshUI()
 	end
 end
 

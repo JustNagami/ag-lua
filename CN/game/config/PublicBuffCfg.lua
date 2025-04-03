@@ -21709,6 +21709,19 @@
 		icon = "",
 		buff_ticktime = 9999999
 	},
+	[108514] = {
+		buff_class_id = 306,
+		max_level = 1,
+		ID = 108514,
+		icon = "",
+		buff_ticktime = 9999999,
+		buffparam_base = {
+			50
+		},
+		buffparam_factor = {
+			0
+		}
+	},
 	[108521] = {
 		buff_class_id = 108520251,
 		max_level = 1,
@@ -61492,6 +61505,7 @@
 		108511,
 		108512,
 		108513,
+		108514,
 		108521,
 		108531,
 		108532,

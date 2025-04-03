@@ -100,6 +100,13 @@
 
 				PlayQWorldBgm()
 				QWorldUIShow()
+
+				local var_17_0 = manager.ui.mainCamera:GetComponent("CameraExtension")
+
+				if var_17_0 then
+					var_17_0.shadowRotationImmediately = true
+				end
+
 				arg_16_1()
 			end)
 			manager.ui:UIEventEnabledByUI(true)
@@ -110,6 +117,12 @@
 				LuaExchangeHelper.LoadEmpty(LuaHelper.VoidAction(function()
 					CheckManagers()
 					manager.story:StartStoryById(arg_18_0, function()
+						local var_21_0 = manager.ui.mainCamera:GetComponent("CameraExtension")
+
+						if var_21_0 then
+							var_21_0.shadowRotationImmediately = true
+						end
+
 						LaunchQWorld(true)
 					end)
 				end))

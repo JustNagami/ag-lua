@@ -30,9 +30,7 @@ function var_0_0.BlackFadeDialogueNode_1(arg_5_0)
 			return
 		end)
 		arg_5_0:EnableCameraByTagAction("LookAtCamera_2_1_R", 1, 0)
-
-		QWorldLuaBridge.WalkingPeopleGlobleCull = true
-
+		arg_5_0:WalkingPeopleGlobleCull(true)
 		arg_5_0:ContinueBlackFade()
 		arg_5_0:OnNext(function()
 			arg_5_0:ClearOnNext()
@@ -278,9 +276,7 @@ function var_0_0.BlackFadeDialogueNode_11(arg_63_0)
 		arg_63_0:Agent_PlayerPosControl("chuansong", function()
 			arg_63_0:EnableCameraByTagAction("", 1, 0)
 		end)
-
-		QWorldLuaBridge.WalkingPeopleGlobleCull = false
-
+		arg_63_0:WalkingPeopleGlobleCull(false)
 		arg_63_0:ContinueBlackFade()
 		arg_63_0:OnNext(function()
 			arg_63_0:ClearOnNext()

@@ -77,9 +77,7 @@ function var_0_0.BlackFadeDialogueNode_2(arg_13_0)
 			30007,
 			30008
 		})
-
-		QWorldLuaBridge.WalkingPeopleGlobleCull = true
-
+		arg_13_0:WalkingPeopleGlobleCull(true)
 		arg_13_0:ContinueBlackFade()
 		arg_13_0:OnNext(function()
 			arg_13_0:ClearOnNext()
@@ -356,9 +354,7 @@ function var_0_0.BlackFadeDialogueNode_14(arg_77_0)
 		arg_77_0:DestroyCharAction(9513)
 		arg_77_0:EnableCameraByTagAction("", 1, 0)
 		arg_77_0:HideAllDynamicAction(false, false, 4095, {})
-
-		QWorldLuaBridge.WalkingPeopleGlobleCull = false
-
+		arg_77_0:WalkingPeopleGlobleCull(false)
 		arg_77_0:ContinueBlackFade()
 		arg_77_0:OnNext(function()
 			arg_77_0:ClearOnNext()

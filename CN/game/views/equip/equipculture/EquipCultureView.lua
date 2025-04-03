@@ -293,6 +293,7 @@ function var_0_0.RefreshSideBar(arg_19_0, arg_19_1)
 
 		return var_19_0
 	else
+		arg_19_0:GoToTarget(1)
 		SetActive(arg_19_0.gameObject_levelup, false)
 		SetActive(arg_19_0.gameObject_upgrade, false)
 		SetActive(arg_19_0.gameObject_enchant, false)

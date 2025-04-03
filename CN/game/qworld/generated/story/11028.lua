@@ -27,9 +27,7 @@ function var_0_0.BlackFadeDialogueNode_1(arg_5_0)
 		end)
 		arg_5_0:HideAllDynamicAction(true, true, 4081, {})
 		arg_5_0:EnableCameraByTagAction("1", 1, 0)
-
-		QWorldLuaBridge.WalkingPeopleGlobleCull = true
-
+		arg_5_0:WalkingPeopleGlobleCull(true)
 		arg_5_0:ContinueBlackFade()
 		arg_5_0:OnNext(function()
 			arg_5_0:ClearOnNext()
@@ -529,7 +527,7 @@ end
 function var_0_0.BlackFadeDialogueNode_32(arg_93_0)
 	arg_93_0:HideTalkView()
 	arg_93_0:OnBlackFade(false, 0, 0.2, 0.5, 0.5, function()
-		arg_93_0:HideAllDynamicAction(true, true, 1, {
+		arg_93_0:HideAllDynamicAction(false, false, 1, {
 			50013,
 			50011,
 			50012
@@ -539,6 +537,7 @@ function var_0_0.BlackFadeDialogueNode_32(arg_93_0)
 		arg_93_0:EventAction(function()
 			arg_93_0:ImmediateNextFlag(-1)
 		end)
+		arg_93_0:WalkingPeopleGlobleCull(false)
 		arg_93_0:ContinueBlackFade()
 		arg_93_0:OnNext(function()
 			arg_93_0:ClearOnNext()

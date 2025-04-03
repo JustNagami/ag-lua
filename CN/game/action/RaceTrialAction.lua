@@ -130,7 +130,7 @@ function var_0_0.InitRedPointKey(arg_13_0)
 	var_13_1[#var_13_1 + 1] = string.format("%s_%s_PointReward", RedPointConst.ACTIVITY_RACE_TRIAL, arg_13_0)
 	var_13_1[#var_13_1 + 1] = string.format("%s_%s_firstReward", RedPointConst.ACTIVITY_RACE_TRIAL, arg_13_0)
 
-	manager.redPoint:addGroup(string.format("%s_%s", RedPointConst.ACTIVITY_RACE_TRIAL, arg_13_0), var_13_1, true)
+	manager.redPoint:addGroup(string.format("%s_%s", RedPointConst.ACTIVITY_RACE_TRIAL, arg_13_0), var_13_1, false)
 end
 
 function var_0_0.UpdateRedPoint(arg_14_0)

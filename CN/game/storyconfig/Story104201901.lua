@@ -11806,8 +11806,8 @@
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_377_1.cswt_)
 
-				arg_377_1.cswt_.fontSize = 120
-				arg_377_1.cswt_:GetComponent("Text").color = Color(0, 0, 0)
+				arg_377_1.cswt_.fontSize = 108
+				arg_377_1.cswt_:GetComponent("Text").color = Color(1, 1, 1)
 				arg_377_1.cswt_.font = Asset.Load("Fonts/SourceHanSerifCN-Bold-3.0")
 			end
 		end
@@ -12555,7 +12555,7 @@
 				local var_403_27 = Asset.Load("Char/" .. "404001ui_story")
 
 				if not isNil(var_403_27) then
-					local var_403_28 = Object.Instantiate(Asset.Load("Char/" .. "4040ui_story"), arg_400_1.stage_.transform)
+					local var_403_28 = Object.Instantiate(Asset.Load("Char/" .. "404001ui_story"), arg_400_1.stage_.transform)
 
 					var_403_28.name = var_403_26
 					var_403_28.transform.localPosition = Vector3.New(0, 100, 0)

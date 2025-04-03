@@ -255,7 +255,7 @@ function var_0_0.RefreshActivityPoint(arg_20_0)
 
 	arg_20_0.progressText_.text = string.format(var_0_1, tostring(var_20_0), tostring(var_20_1))
 	arg_20_0.progressShadowText_.text = string.format(var_0_1, tostring(var_20_0), tostring(var_20_1))
-	arg_20_0.taskScheduleText_.text = ActivityCfg[arg_20_0.mainActivityID_].remark
+	arg_20_0.taskScheduleText_.text = GetTips("QUANZHOU_XIANSHI_TIPS")
 end
 
 function var_0_0.RefreshTaskList(arg_21_0)

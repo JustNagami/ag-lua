@@ -958,6 +958,7 @@ function var_0_0.Play(arg_62_0)
 	local var_62_0 = manager.audio:GetMusicVolume()
 
 	arg_62_0.dlcPlayer_:SetVolume(var_62_0)
+	arg_62_0.dlcBgPlayer_:SetVolume(0)
 	arg_62_0:SetVideoTrack(arg_62_0.dlcPlayer_, arg_62_0.start_path)
 	arg_62_0:SetVideoTrack(arg_62_0.dlcBgPlayer_, arg_62_0.start_path)
 

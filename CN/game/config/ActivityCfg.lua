@@ -22413,6 +22413,10 @@
 		},
 		reward_show = {
 			1,
+			2,
+			40803,
+			40502,
+			40503,
 			40504
 		}
 	},
@@ -25944,7 +25948,7 @@
 		reward_show_permanent = "",
 		unlock_condition = "",
 		reward_show = "",
-		remark = "累计完成任务",
+		remark = "刺桐港埠漫行纪-限时奖励",
 		activity_theme = 32,
 		activity_template = 4,
 		sub_activity_list = {
@@ -26430,6 +26434,10 @@
 		},
 		reward_show = {
 			1,
+			2,
+			40803,
+			40502,
+			40503,
 			40504
 		}
 	},

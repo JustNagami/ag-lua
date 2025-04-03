@@ -50,7 +50,7 @@ function var_0_3.OnEnter(arg_7_0)
 	arg_7_0:BindRedPoint()
 	arg_7_0:RegistEventListener(COMMON_FILTER_OK, handler(arg_7_0, arg_7_0.RenderFilterBtn))
 
-	if arg_7_0.params_.isBack == false then
+	if not arg_7_0.params_.isBack then
 		arg_7_0.curIndex_ = 1
 		arg_7_0.isBack = false
 	else

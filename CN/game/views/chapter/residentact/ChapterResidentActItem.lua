@@ -54,7 +54,7 @@ function var_0_0.UpdateSelectState(arg_10_0, arg_10_1)
 end
 
 function var_0_0.OnExit(arg_11_0)
-	manager.redPoint:unbindUIandKey(arg_11_0.transform_, ActivityTools.GetRedPointKey(arg_11_0:GetActID()) .. arg_11_0:GetActID())
+	manager.redPoint:unbindUIandKey(arg_11_0.transform_, RedPointConst.RESIDENT_ACT .. arg_11_0:GetActID())
 end
 
 function var_0_0.Dispose(arg_12_0)

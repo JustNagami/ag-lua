@@ -396,7 +396,7 @@ function var_0_0.RefreshState(arg_38_0)
 	SetActive(arg_38_0.btn_account_, var_38_0)
 	SetActive(arg_38_0.btn_start_, var_38_0)
 
-	local var_38_1 = GameToSDK.CURRENT_SDK_ID == SDK_PLATFORM.DEV or _G.CHANNEL_MASTER_ID == 1 or _G.CHANNEL_MASTER_ID == 0
+	local var_38_1 = GameToSDK.CURRENT_SDK_ID == SDK_PLATFORM.DEV or _G.CHANNEL_MASTER_ID == 1 or _G.CHANNEL_MASTER_ID == 0 or _G.CHANNEL_MASTER_ID == 15
 
 	if arg_38_0.isOverSeas_ then
 		SetActive(arg_38_0.levelBtn_.gameObject, false)

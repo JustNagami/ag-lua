@@ -52,10 +52,12 @@ function var_0_0.SetSceneData(arg_5_0, arg_5_1, arg_5_2)
 end
 
 function var_0_0.RefreshState(arg_6_0)
-	if CustomCenterTools.IsRandomScene() and table.keyof(HomeSceneSettingData:GetCacheRandomSceneList(), arg_6_0.sceneID_) then
-		arg_6_0.useController_:SetSelectedState("true")
+	if CustomCenterTools.IsRandomScene() then
+		if table.keyof(HomeSceneSettingData:GetCacheRandomSceneList(), arg_6_0.sceneID_) then
+			arg_6_0.useController_:SetSelectedState("true")
 
-		return
+			return
+		end
 	elseif HomeSceneSettingData:GetRealScene() == arg_6_0.sceneID_ then
 		arg_6_0.useController_:SetSelectedState("true")
 

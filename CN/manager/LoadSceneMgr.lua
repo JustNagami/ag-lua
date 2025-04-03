@@ -159,7 +159,9 @@ end
 
 function var_0_0.GetShouldLoadSceneNameID(arg_10_0, arg_10_1)
 	if arg_10_1 == "home" or arg_10_1 == "chat" or arg_10_1 == "userinfo" then
-		return (HomeSceneSettingData:GetCurScene())
+		local var_10_0 = HomeSceneSettingData:GetCurScene()
+
+		return (manager.loadScene:GetTimeSceneID(var_10_0))
 	elseif arg_10_1 == "homePreview" then
 		return (HomeSceneSettingData:GetPreviewScene())
 	elseif SceneConst.RESERVE_VIEW_PAGE[arg_10_1] == true then
@@ -244,97 +246,104 @@ function var_0_0.GetHomeShouldLoadSceneName(arg_15_0, arg_15_1)
 
 	if not arg_15_1 and HomeSceneSettingData:GetUsedState(var_15_0) == SceneConst.HOME_SCENE_TYPE.LOCK then
 		var_15_0 = GameSetting.home_sence_default.value[1]
-		var_15_1 = HomeSceneSettingCfg[var_15_0]
+
+		local var_15_2 = HomeSceneSettingCfg[var_15_0]
 
 		HomeSceneSettingAction.SetHomeScene(var_15_0)
 	end
 
-	local var_15_2 = manager.time:GetServerTime()
+	local var_15_3 = manager.time:GetServerTime()
+	local var_15_4 = arg_15_0:GetTimeSceneID(var_15_0)
+	local var_15_5 = HomeSceneSettingCfg[var_15_4]
+	local var_15_6 = ""
+	local var_15_7 = ""
+	local var_15_8 = ""
 
-	if not arg_15_0.sceneDisableAutoChange_ and HomeSceneSettingData:IsTimeScene() and not HomeSceneSettingData:IsRandomScene() and PosterGirlTools.SceneHasTimeEffect(var_15_0) then
-		var_15_0 = HomeSceneSettingAction.ChangeTimeScene(var_15_0, var_15_2)
-		var_15_1 = HomeSceneSettingCfg[var_15_0]
-	end
-
-	local var_15_3 = ""
-	local var_15_4 = ""
-	local var_15_5 = ""
-
-	for iter_15_0, iter_15_1 in ipairs(var_15_1.impact) do
+	for iter_15_0, iter_15_1 in ipairs(var_15_5.impact) do
 		if iter_15_1 == SceneConst.HOME_SCENE_IMPACT.WEATHER then
-			var_15_3 = arg_15_0:GetWeatherScene()
+			var_15_6 = arg_15_0:GetWeatherScene()
 		elseif iter_15_1 == SceneConst.HOME_SCENE_IMPACT.DATA then
-			var_15_4 = arg_15_0:GetDataScene()
+			var_15_7 = arg_15_0:GetDataScene()
 		elseif iter_15_1 == SceneConst.HOME_SCENE_IMPACT.TIME then
-			local var_15_6 = manager.time:STimeDescS(var_15_2, "!%H")
+			local var_15_9 = manager.time:STimeDescS(var_15_3, "!%H")
 
-			var_15_5 = arg_15_0:GetTimeScene(var_15_6)
+			var_15_8 = arg_15_0:GetTimeScene(var_15_9)
 		end
 	end
 
-	return var_0_1(var_15_0) .. var_15_3 .. var_15_4 .. var_15_5
+	return var_0_1(var_15_4) .. var_15_6 .. var_15_7 .. var_15_8
 end
 
-function var_0_0.GetWeatherScene(arg_16_0)
+function var_0_0.GetTimeSceneID(arg_16_0, arg_16_1)
+	if not arg_16_0.sceneDisableAutoChange_ and HomeSceneSettingData:IsTimeScene() and not CustomCenterTools.IsRandomScene() and PosterGirlTools.SceneHasTimeEffect(arg_16_1) then
+		local var_16_0 = manager.time:GetServerTime()
+
+		return HomeSceneSettingAction.ChangeTimeScene(arg_16_1, var_16_0)
+	end
+
+	return arg_16_1
+end
+
+function var_0_0.GetWeatherScene(arg_17_0)
 	return ""
 end
 
-function var_0_0.GetDataScene(arg_17_0)
+function var_0_0.GetDataScene(arg_18_0)
 	return ""
 end
 
-function var_0_0.GetTimeScene(arg_18_0, arg_18_1)
-	local var_18_0 = tonumber(arg_18_1)
-	local var_18_1 = HomeSceneCfg.get_id_list_by_type[SceneConst.HOME_SCENE_IMPACT.TIME]
+function var_0_0.GetTimeScene(arg_19_0, arg_19_1)
+	local var_19_0 = tonumber(arg_19_1)
+	local var_19_1 = HomeSceneCfg.get_id_list_by_type[SceneConst.HOME_SCENE_IMPACT.TIME]
 
-	for iter_18_0, iter_18_1 in ipairs(var_18_1) do
-		local var_18_2 = HomeSceneCfg[iter_18_1]
-		local var_18_3 = var_18_2.start_time
-		local var_18_4 = var_18_2.end_time
+	for iter_19_0, iter_19_1 in ipairs(var_19_1) do
+		local var_19_2 = HomeSceneCfg[iter_19_1]
+		local var_19_3 = var_19_2.start_time
+		local var_19_4 = var_19_2.end_time
 
-		if var_18_3 <= var_18_0 and var_18_0 <= var_18_4 then
-			return var_18_2.scene
+		if var_19_3 <= var_19_0 and var_19_0 <= var_19_4 then
+			return var_19_2.scene
 		end
 	end
 
 	return ""
 end
 
-function var_0_0.GetPreviewHomeShouldLoadSceneName(arg_19_0)
-	local var_19_0, var_19_1 = HomeSceneSettingData:GetPreviewScene()
-	local var_19_2 = HomeSceneSettingCfg[var_19_0]
+function var_0_0.GetPreviewHomeShouldLoadSceneName(arg_20_0)
+	local var_20_0, var_20_1 = HomeSceneSettingData:GetPreviewScene()
+	local var_20_2 = HomeSceneSettingCfg[var_20_0]
 
-	if not id and HomeSceneSettingData:GetUsedState(var_19_0) == SceneConst.HOME_SCENE_TYPE.LOCK then
-		var_19_0 = GameSetting.home_sence_default.value[1]
-		var_19_2 = HomeSceneSettingCfg[var_19_0]
+	if not id and HomeSceneSettingData:GetUsedState(var_20_0) == SceneConst.HOME_SCENE_TYPE.LOCK then
+		var_20_0 = GameSetting.home_sence_default.value[1]
+		var_20_2 = HomeSceneSettingCfg[var_20_0]
 
-		HomeSceneSettingAction.SetHomeScene(var_19_0)
+		HomeSceneSettingAction.SetHomeScene(var_20_0)
 	end
 
-	local var_19_3 = ""
-	local var_19_4 = ""
-	local var_19_5 = ""
+	local var_20_3 = ""
+	local var_20_4 = ""
+	local var_20_5 = ""
 
-	for iter_19_0, iter_19_1 in ipairs(var_19_2.impact) do
-		if iter_19_1 == SceneConst.HOME_SCENE_IMPACT.WEATHER then
-			var_19_3 = var_19_1.weather
-		elseif iter_19_1 == SceneConst.HOME_SCENE_IMPACT.DATA then
-			var_19_4 = var_19_1.data
-		elseif iter_19_1 == SceneConst.HOME_SCENE_IMPACT.TIME then
-			var_19_5 = var_19_1.time
+	for iter_20_0, iter_20_1 in ipairs(var_20_2.impact) do
+		if iter_20_1 == SceneConst.HOME_SCENE_IMPACT.WEATHER then
+			var_20_3 = var_20_1.weather
+		elseif iter_20_1 == SceneConst.HOME_SCENE_IMPACT.DATA then
+			var_20_4 = var_20_1.data
+		elseif iter_20_1 == SceneConst.HOME_SCENE_IMPACT.TIME then
+			var_20_5 = var_20_1.time
 		end
 	end
 
-	local var_19_6 = var_19_1.skinID
+	local var_20_6 = var_20_1.skinID
 
-	return var_0_1(var_19_0, var_19_6) .. var_19_3 .. var_19_4 .. var_19_5
+	return var_0_1(var_20_0, var_20_6) .. var_20_3 .. var_20_4 .. var_20_5
 end
 
-function var_0_0.SetHomeSceneSoundEffect(arg_20_0)
-	local var_20_0 = HomeSceneSettingData:GetCurScene()
-	local var_20_1 = HomeSceneSettingCfg[var_20_0].scene_setting
+function var_0_0.SetHomeSceneSoundEffect(arg_21_0)
+	local var_21_0 = HomeSceneSettingData:GetCurScene()
+	local var_21_1 = HomeSceneSettingCfg[var_21_0].scene_setting
 
-	if not table.indexof(var_20_1, HomeSceneSettingConst.SETTING.SOUND_EFFECT) then
+	if not table.indexof(var_21_1, HomeSceneSettingConst.SETTING.SOUND_EFFECT) then
 		return
 	end
 
@@ -344,11 +353,11 @@ function var_0_0.SetHomeSceneSoundEffect(arg_20_0)
 	end
 end
 
-function var_0_0.SetPreviewHomeSceneSoundEffect(arg_21_0)
-	local var_21_0, var_21_1 = HomeSceneSettingData:GetPreviewScene()
-	local var_21_2 = HomeSceneSettingCfg[var_21_0].scene_setting
+function var_0_0.SetPreviewHomeSceneSoundEffect(arg_22_0)
+	local var_22_0, var_22_1 = HomeSceneSettingData:GetPreviewScene()
+	local var_22_2 = HomeSceneSettingCfg[var_22_0].scene_setting
 
-	if not table.indexof(var_21_2, HomeSceneSettingConst.SETTING.SOUND_EFFECT) then
+	if not table.indexof(var_22_2, HomeSceneSettingConst.SETTING.SOUND_EFFECT) then
 		return
 	end
 
@@ -358,92 +367,92 @@ function var_0_0.SetPreviewHomeSceneSoundEffect(arg_21_0)
 	end
 end
 
-function var_0_0.TryStopSceneSoundEffect(arg_22_0, arg_22_1)
-	local var_22_0 = arg_22_0:GetShouldLoadSceneNameID(arg_22_1)
-	local var_22_1 = HomeSceneSettingCfg[var_22_0]
+function var_0_0.TryStopSceneSoundEffect(arg_23_0, arg_23_1)
+	local var_23_0 = arg_23_0:GetShouldLoadSceneNameID(arg_23_1)
+	local var_23_1 = HomeSceneSettingCfg[var_23_0]
 
-	if var_22_1 then
-		local var_22_2 = var_22_1.scene_setting
+	if var_23_1 then
+		local var_23_2 = var_23_1.scene_setting
 
-		if not table.indexof(var_22_2, HomeSceneSettingConst.SETTING.SOUND_EFFECT) then
-			arg_22_0:StopSceneSoundEffect()
+		if not table.indexof(var_23_2, HomeSceneSettingConst.SETTING.SOUND_EFFECT) then
+			arg_23_0:StopSceneSoundEffect()
 		end
 	else
-		arg_22_0:StopSceneSoundEffect()
+		arg_23_0:StopSceneSoundEffect()
 	end
 end
 
-function var_0_0.StopSceneSoundEffect(arg_23_0)
+function var_0_0.StopSceneSoundEffect(arg_24_0)
 	manager.audio:PlayEffect("ui_scene", "ui_scene_x201_stop", "")
 	manager.audio:PlayEffect("ui_scene", "ui_scene_ambience_loop_stop", "")
 end
 
-function var_0_0.SetSceneWeather(arg_24_0, arg_24_1)
-	local var_24_0, var_24_1 = PosterGirlTools.GetLoadWeatherEffect(arg_24_1)
+function var_0_0.SetSceneWeather(arg_25_0, arg_25_1)
+	local var_25_0, var_25_1 = PosterGirlTools.GetLoadWeatherEffect(arg_25_1)
 
-	if var_24_0 then
-		manager.ui:SetSceneWeatherEffect(var_24_1)
+	if var_25_0 then
+		manager.ui:SetSceneWeatherEffect(var_25_1)
 	end
 
-	arg_24_0.curWeather_ = arg_24_1
+	arg_25_0.curWeather_ = arg_25_1
 end
 
-function var_0_0.GetCurWeather(arg_25_0)
-	return arg_25_0.curWeather_ or SceneConst.HOME_SCENE_WEATHER.SUNNY
+function var_0_0.GetCurWeather(arg_26_0)
+	return arg_26_0.curWeather_ or SceneConst.HOME_SCENE_WEATHER.SUNNY
 end
 
-function var_0_0.GetLoadScenePool(arg_26_0)
-	return arg_26_0.loadScenePool_
+function var_0_0.GetLoadScenePool(arg_27_0)
+	return arg_27_0.loadScenePool_
 end
 
-function var_0_0.Dispose(arg_27_0)
-	for iter_27_0, iter_27_1 in pairs(arg_27_0.loadScenePool_) do
-		SceneManager.UnloadSceneAsync(iter_27_1)
+function var_0_0.Dispose(arg_28_0)
+	for iter_28_0, iter_28_1 in pairs(arg_28_0.loadScenePool_) do
+		SceneManager.UnloadSceneAsync(iter_28_1)
 	end
 
-	arg_27_0.loadScenePool_ = {}
-	arg_27_0.cacheSceneNameList_ = {}
+	arg_28_0.loadScenePool_ = {}
+	arg_28_0.cacheSceneNameList_ = {}
 end
 
-function var_0_0.HideLastSceneList(arg_28_0)
-	local var_28_0 = arg_28_0.loadScenePool_
+function var_0_0.HideLastSceneList(arg_29_0)
+	local var_29_0 = arg_29_0.loadScenePool_
 
-	for iter_28_0 = #arg_28_0.cacheSceneNameList_, 1, -1 do
-		local var_28_1 = arg_28_0.cacheSceneNameList_[iter_28_0]
+	for iter_29_0 = #arg_29_0.cacheSceneNameList_, 1, -1 do
+		local var_29_1 = arg_29_0.cacheSceneNameList_[iter_29_0]
 
-		if var_28_0[var_28_1] then
-			local var_28_2, var_28_3 = arg_28_0:GetShouldLoadSceneName(var_28_1)
-			local var_28_4 = SceneManager.GetSceneByName(var_28_3)
+		if var_29_0[var_29_1] then
+			local var_29_2, var_29_3 = arg_29_0:GetShouldLoadSceneName(var_29_1)
+			local var_29_4 = SceneManager.GetSceneByName(var_29_3)
 
-			if var_28_4.rootCount > 0 then
-				local var_28_5 = var_28_4:GetRootGameObjects()
+			if var_29_4.rootCount > 0 then
+				local var_29_5 = var_29_4:GetRootGameObjects()
 
-				if var_28_5 then
-					arg_28_0:ActiveScene(var_28_5, var_28_3, false)
-					table.remove(arg_28_0.cacheSceneNameList_, iter_28_0)
+				if var_29_5 then
+					arg_29_0:ActiveScene(var_29_5, var_29_3, false)
+					table.remove(arg_29_0.cacheSceneNameList_, iter_29_0)
 				end
 			end
 		end
 	end
 end
 
-function var_0_0.AddCachePage(arg_29_0)
-	if not arg_29_0:CanEnd() then
-		local var_29_0 = gameContext:GetFirstRoutePage()
+function var_0_0.AddCachePage(arg_30_0)
+	if not arg_30_0:CanEnd() then
+		local var_30_0 = gameContext:GetFirstRoutePage()
 
-		table.insert(arg_29_0.cacheSceneNameList_, var_29_0)
+		table.insert(arg_30_0.cacheSceneNameList_, var_30_0)
 	end
 end
 
-function var_0_0.SetSceneDisableAutoChange(arg_30_0, arg_30_1)
-	arg_30_0.sceneDisableAutoChange_ = arg_30_1
+function var_0_0.SetSceneDisableAutoChange(arg_31_0, arg_31_1)
+	arg_31_0.sceneDisableAutoChange_ = arg_31_1
 end
 
-function var_0_0.SetSceneActive(arg_31_0, arg_31_1, arg_31_2)
-	local var_31_0 = manager.ui:GetSceneByName(arg_31_1)
+function var_0_0.SetSceneActive(arg_32_0, arg_32_1, arg_32_2)
+	local var_32_0 = manager.ui:GetSceneByName(arg_32_1)
 
-	LuaForUtil.SetSceneSetting(var_31_0, arg_31_2)
-	SetActive(var_31_0, arg_31_2)
+	LuaForUtil.SetSceneSetting(var_32_0, arg_32_2)
+	SetActive(var_32_0, arg_32_2)
 end
 
 return var_0_0

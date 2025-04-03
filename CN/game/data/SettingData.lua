@@ -82,7 +82,7 @@ function var_0_0.InitSetting(arg_3_0)
 			home_scene_dlc_btn = var_3_0.home_scene_dlc_btn or 1
 		},
 		battleUI = {
-			battle_ui_cur_type = var_3_0.battle_ui_cur_type or (GameToSDK.PLATFORM_ID == 0 or GameToSDK.PLATFORM_ID == 1 or GameToSDK.PLATFORM_ID == 4) and "" or "DKVTdGlja8rEYgAAysP0GZrKPszMzdkgU2NyZWVuQWRqdXN0Q29udGFpbmVyL1BsYXllckluZm/KAAAAAMrD5QAAyj9MzM3ZMVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL0FiaWxpdEJ1dHRvbjDKw6pmZ8pCohmYyj7MzM3ZMVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL0FiaWxpdEJ1dHRvbjHKw4QAAMpCohmYyj7MzM3ZMVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL0FiaWxpdEJ1dHRvbjLKwztMzcpCohmYyj7MzM3ZKVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL01lbGVlysQBmZrKQxAMzMo/AAAA2SlTY3JlZW5BZGp1c3RDb250YWluZXIvQmF0dGxlQnV0dG9ucy9Bdm9pZMrCzzM0ykKiGZjKPszMzdktU2NyZWVuQWRqdXN0Q29udGFpbmVyL0JhdHRsZUJ1dHRvbnMvUVRFQnV0dG9uysLPMzTKQyhZmco/AAAA2S5TY3JlZW5BZGp1c3RDb250YWluZXIvQmF0dGxlQnV0dG9ucy9NYW51YWxsb2NrysPRwADKQoxMzMo+mZma2SpTY3JlZW5BZGp1c3RDb250YWluZXIvVGVhbVBhbmVsL1JvbGUxUGFuZWzKwschRsrCnmZwyj8AAADZKlNjcmVlbkFkanVzdENvbnRhaW5lci9UZWFtUGFuZWwvUm9sZTJQYW5lbMrCxyFAysMtmaDKPwAAANkvU2NyZWVuQWRqdXN0Q29udGFpbmVyL1JpZ2h0VG9wQnV0dG9ucy9idG5fcGF1c2XKwrQzM8rCXHtuyj+AAAA=",
+			battle_ui_cur_type = var_3_0.battle_ui_cur_type or (GameToSDK.PLATFORM_ID == 0 or GameToSDK.PLATFORM_ID == 1 or GameToSDK.PLATFORM_ID == 4) and "" or "DaVTdGlja8pCYAAAykJPMzPKPszMzdkgU2NyZWVuQWRqdXN0Q29udGFpbmVyL1BsYXllckluZm/KAAAAAMpCpAAAyj9MzM3ZMVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL0FiaWxpdEJ1dHRvbjDKwrhmWMrDTmZoyj8ZmZrZMVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL0FiaWxpdEJ1dHRvbjHKQLZnAMrDTpmbyj8ZmZrZMVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL0FiaWxpdEJ1dHRvbjLKQs3MzcrDTpmayj8ZmZrZKVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL01lbGVlysOQgADKwtgAAMo/JmZm2SlTY3JlZW5BZGp1c3RDb250YWluZXIvQmF0dGxlQnV0dG9ucy9Bdm9pZMpDUUzNysNN5mjKPxmZmtktU2NyZWVuQWRqdXN0Q29udGFpbmVyL0JhdHRsZUJ1dHRvbnMvUVRFQnV0dG9uykNSGZrKwspmZso/GZma2S5TY3JlZW5BZGp1c3RDb250YWluZXIvQmF0dGxlQnV0dG9ucy9NYW51YWxsb2NrysMwMzPKw1/mZso/AAAA2SpTY3JlZW5BZGp1c3RDb250YWluZXIvVGVhbVBhbmVsL1JvbGUxUGFuZWzKQhLMzcpCmMzQyj8ZmZrZKlNjcmVlbkFkanVzdENvbnRhaW5lci9UZWFtUGFuZWwvUm9sZTJQYW5lbMpCEszAysIEAADKPxmZmtkvU2NyZWVuQWRqdXN0Q29udGFpbmVyL1JpZ2h0VG9wQnV0dG9ucy9idG5fcGF1c2XKwrQzM8rCXHtuyj+AAADZNVNjcmVlbkFkanVzdENvbnRhaW5lci9CYXR0bGVCdXR0b25zL05ld01hdHJpeEV4QnV0dG9uykNTFwrKQNmZgMo/GZma",
 			battle_ui_cur_alpha_value = var_3_0.battle_ui_cur_alpha_value or 1,
 			battle_ui_cur_rotate_speed = var_3_0.battle_ui_cur_rotate_speed or 0.5,
 			battle_ui_type_0 = var_3_0.battle_ui_type_0 or "",
@@ -193,31 +193,25 @@ end
 
 function var_0_0.ModifyPicSetting(arg_4_0, arg_4_1, arg_4_2)
 	if arg_4_1 == "picOptionId" and arg_4_2 ~= SettingConst.GRAPHIC_CUSTOM_ID or arg_4_1 == "allData" then
-		if GameToSDK.IsPCPlatform() then
-			local var_4_0 = arg_4_1 == "picOptionId" and PictureQualitySettingPcCfg[arg_4_2] or arg_4_2
+		local var_4_0 = arg_4_1 == "picOptionId" and PictureQualitySettingCfg[arg_4_2] or arg_4_2
 
-			var_0_1.pic.picOptionId = var_4_0.picOptionId or var_4_0.id
-			var_0_1.pic.anti_aliasing = var_4_0.anti_aliasing
-			var_0_1.pic.frame = var_4_0.frame
-			var_0_1.pic.post_process = var_4_0.post_process
+		var_0_1.pic.picOptionId = var_4_0.picOptionId or var_4_0.id
+		var_0_1.pic.resolution = var_4_0.resolution
+		var_0_1.pic.frame = var_4_0.frame
+		var_0_1.pic.anti_aliasing = var_4_0.anti_aliasing
+		var_0_1.pic.reflection_effect = var_4_0.reflection_effect
+		var_0_1.pic.teammate_effect = var_4_0.teammate_effect
+		var_0_1.pic.user_effect = var_4_0.user_effect
+		var_0_1.pic.super_resolution_enable = var_4_0.super_resolution_enable
+
+		if GameToSDK.IsPCPlatform() then
 			var_0_1.pic.shadow = var_4_0.shadow
 			var_0_1.pic.vertical_sync = var_4_0.vertical_sync
-			var_0_1.pic.render_scale = var_4_0.super_resolution_setting / 100
-			var_0_1.pic.teammate_effect = var_4_0.teammate_effect
-			var_0_1.pic.user_effect = var_4_0.user_effect
+			var_0_1.pic.window = var_4_0.window
+			var_0_1.pic.pc_resolution = var_4_0.pc_resolution
+			var_0_1.pic.render_scale = var_4_0.render_scale
 			var_0_1.pic.hdr = var_4_0.hdr
 			var_0_1.pic.depth_of_field_enable = var_4_0.depth_of_field_enable
-		else
-			local var_4_1 = arg_4_1 == "picOptionId" and PictureQualitySettingCfg[arg_4_2] or arg_4_2
-
-			var_0_1.pic.picOptionId = var_4_1.picOptionId or var_4_1.id
-			var_0_1.pic.resolution = var_4_1.resolution
-			var_0_1.pic.frame = var_4_1.frame
-			var_0_1.pic.anti_aliasing = var_4_1.anti_aliasing
-			var_0_1.pic.reflection_effect = var_4_1.reflection_effect
-			var_0_1.pic.teammate_effect = var_4_1.teammate_effect
-			var_0_1.pic.user_effect = var_4_1.user_effect
-			var_0_1.pic.super_resolution_enable = var_4_1.super_resolution_enable
 		end
 
 		arg_4_0:SaveData("pic", var_0_1.pic)
@@ -308,29 +302,15 @@ end
 
 function var_0_0.SaveData(arg_11_0, arg_11_1, arg_11_2)
 	if arg_11_1 == "pic" then
-		if GameToSDK.IsPCPlatform() then
-			GameLocalData:SaveToCommonModule("userSetting", "picOptionId", arg_11_2.picOptionId)
-			GameLocalData:SaveToCommonModule("userSetting", "user_effect", arg_11_2.user_effect)
-			GameLocalData:SaveToCommonModule("userSetting", "teammate_effect", arg_11_2.teammate_effect)
-			GameLocalData:SaveToCommonModule("userSetting", "frame", arg_11_2.frame)
-			GameLocalData:SaveToCommonModule("userSetting", "shadow", arg_11_2.shadow)
-			GameLocalData:SaveToCommonModule("userSetting", "post_process", arg_11_2.post_process)
-			GameLocalData:SaveToCommonModule("userSetting", "anti_aliasing", arg_11_2.anti_aliasing)
-			GameLocalData:SaveToCommonModule("userSetting", "vertical_sync", arg_11_2.vertical_sync)
-			GameLocalData:SaveToCommonModule("userSetting", "window", arg_11_2.window)
-			GameLocalData:SaveToCommonModule("userSetting", "pc_resolution", arg_11_2.pc_resolution)
-			GameLocalData:SaveToCommonModule("userSetting", "render_scale", arg_11_2.render_scale)
-		else
-			GameLocalData:SaveToCommonModule("userSetting", "picOptionId", arg_11_2.picOptionId)
-			GameLocalData:SaveToCommonModule("userSetting", "resolution", arg_11_2.resolution)
-			GameLocalData:SaveToCommonModule("userSetting", "frame", arg_11_2.frame)
-			GameLocalData:SaveToCommonModule("userSetting", "anti_aliasing", arg_11_2.anti_aliasing)
-			GameLocalData:SaveToCommonModule("userSetting", "reflection_effect", arg_11_2.reflection_effect)
-			GameLocalData:SaveToCommonModule("userSetting", "teammate_effect", arg_11_2.teammate_effect)
-			GameLocalData:SaveToCommonModule("userSetting", "user_effect", arg_11_2.user_effect)
-			GameLocalData:SaveToCommonModule("userSetting", "depth_of_field_enable", arg_11_2.depth_of_field_enable)
-			GameLocalData:SaveToCommonModule("userSetting", "super_resolution_enable", arg_11_2.super_resolution_enable)
-		end
+		GameLocalData:SaveToCommonModule("userSetting", "picOptionId", arg_11_2.picOptionId)
+		GameLocalData:SaveToCommonModule("userSetting", "resolution", arg_11_2.resolution)
+		GameLocalData:SaveToCommonModule("userSetting", "frame", arg_11_2.frame)
+		GameLocalData:SaveToCommonModule("userSetting", "anti_aliasing", arg_11_2.anti_aliasing)
+		GameLocalData:SaveToCommonModule("userSetting", "reflection_effect", arg_11_2.reflection_effect)
+		GameLocalData:SaveToCommonModule("userSetting", "teammate_effect", arg_11_2.teammate_effect)
+		GameLocalData:SaveToCommonModule("userSetting", "user_effect", arg_11_2.user_effect)
+		GameLocalData:SaveToCommonModule("userSetting", "depth_of_field_enable", arg_11_2.depth_of_field_enable)
+		GameLocalData:SaveToCommonModule("userSetting", "super_resolution_enable", arg_11_2.super_resolution_enable)
 	else
 		GameLocalData:SaveToCommonModule("userSetting", arg_11_1, arg_11_2)
 	end

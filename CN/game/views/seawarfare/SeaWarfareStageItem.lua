@@ -41,6 +41,7 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2)
 	arg_6_0:RefreshLock()
 	arg_6_0:RefreshComplete()
 	arg_6_0:RefreshNumber()
+	arg_6_0:InitAnimStatus()
 end
 
 function var_0_0.SetSelect(arg_7_0, arg_7_1)
@@ -71,33 +72,51 @@ function var_0_0.GetStageID(arg_12_0)
 	return arg_12_0.stageID_
 end
 
-function var_0_0.PlayUnlockAnim(arg_13_0)
-	SetActive(arg_13_0.unlockAnim_.gameObject, true)
+function var_0_0.InitAnimStatus(arg_13_0)
+	if arg_13_0.stageID_ == SeaWarfareTools.GetNeedFirstUnlockAnimStageID() then
+		arg_13_0.lockController_:SetSelectedState("on")
+	end
 
-	arg_13_0.unlockAnimtimer_ = SeaWarfareTools.PlayAnim(arg_13_0.unlockAnim_, "UI_lock_cx", function()
-		SetActive(arg_13_0.unlockAnim_.gameObject, false)
+	if arg_13_0.stageID_ == SeaWarfareTools.GetNeedFirstCompleteAnimStageID() then
+		arg_13_0.completeController_:SetSelectedState("off")
+	end
+end
+
+function var_0_0.PlayUnlockAnim(arg_14_0, arg_14_1)
+	arg_14_0.unlockAnimtimer_ = SeaWarfareTools.PlayAnim(arg_14_0.unlockAnim_, "UI_lock_cx", function()
+		arg_14_0.lockController_:SetSelectedState("off")
+
+		if arg_14_1 then
+			arg_14_1()
+		end
 	end)
 end
 
-function var_0_0.PlayCompletedAnim(arg_15_0)
-	arg_15_0.completeAnimtimer_ = SeaWarfareTools.PlayAnim(arg_15_0.completeAnim_, "UI_complet_cx")
+function var_0_0.PlayCompletedAnim(arg_16_0, arg_16_1)
+	arg_16_0.completeController_:SetSelectedState("on")
+
+	arg_16_0.completeAnimtimer_ = SeaWarfareTools.PlayAnim(arg_16_0.completeAnim_, "UI_complet_cx", function()
+		if arg_16_1 then
+			arg_16_1()
+		end
+	end)
 end
 
-function var_0_0.ResetAnim(arg_16_0)
-	arg_16_0.unlockAnim_.enabled = false
+function var_0_0.ResetAnim(arg_18_0)
+	arg_18_0.unlockAnim_.enabled = false
 
-	if arg_16_0.unlockAnimtimer_ then
-		arg_16_0.unlockAnimtimer_:Stop()
+	if arg_18_0.unlockAnimtimer_ then
+		arg_18_0.unlockAnimtimer_:Stop()
 
-		arg_16_0.unlockAnimtimer_ = nil
+		arg_18_0.unlockAnimtimer_ = nil
 	end
 
-	arg_16_0.completeAnim_:Update(9999)
+	arg_18_0.completeAnim_.enabled = false
 
-	if arg_16_0.completeAnimtimer_ then
-		arg_16_0.completeAnimtimer_:Stop()
+	if arg_18_0.completeAnimtimer_ then
+		arg_18_0.completeAnimtimer_:Stop()
 
-		arg_16_0.completeAnimtimer_ = nil
+		arg_18_0.completeAnimtimer_ = nil
 	end
 end
 

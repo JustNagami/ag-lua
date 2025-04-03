@@ -48,9 +48,7 @@ function var_0_0.BlackFadeDialogueNode_1(arg_5_0)
 		end)
 		arg_5_0:SetLookAtParamsAction(9510, 0.8, 1, 1)
 		arg_5_0:LookAtRoleAction(true, 9510, "9514")
-
-		QWorldLuaBridge.WalkingPeopleGlobleCull = true
-
+		arg_5_0:WalkingPeopleGlobleCull(true)
 		arg_5_0:ContinueBlackFade()
 		arg_5_0:OnNext(function()
 			arg_5_0:ClearOnNext()
@@ -913,9 +911,7 @@ function var_0_0.BlackFadeDialogueNode_33(arg_196_0)
 		arg_196_0:DestroyCharAction(9072)
 		arg_196_0:DestroyCharAction(9510)
 		arg_196_0:DestroyCharAction(9514)
-
-		QWorldLuaBridge.WalkingPeopleGlobleCull = false
-
+		arg_196_0:WalkingPeopleGlobleCull(false)
 		arg_196_0:ContinueBlackFade()
 		arg_196_0:OnNext(function()
 			arg_196_0:ClearOnNext()

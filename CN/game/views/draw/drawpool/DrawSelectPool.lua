@@ -87,7 +87,7 @@ function var_0_0.Refresh(arg_6_0, arg_6_1)
 		arg_6_0.nameText_.text = GetI18NText(var_6_2.suffix)
 
 		if arg_6_0.suffixText_ then
-			arg_6_0.suffixText_.text = GetI18NText(var_6_2.suffix)
+			arg_6_0.suffixText_.text = GetI18NText(var_6_2.name)
 		else
 			arg_6_0.nameText_.text = HeroTools.GetHeroFullName(arg_6_0.heroId)
 		end

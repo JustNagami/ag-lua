@@ -236,7 +236,7 @@ function var_0_0.DialogueNode_9(arg_53_0)
 	end, true, true)
 	arg_53_0:ActorSeekerAction(9072, {
 		"5"
-	}, 0.6, function()
+	}, 0.7, function()
 		arg_53_0:PlayActorAnimationAction(9072, "action2_1", 0.05, 1.666667, function()
 			return
 		end)
@@ -253,7 +253,7 @@ function var_0_0.DialogueNode_9(arg_53_0)
 	arg_53_0:SetCharToTagAction(9515, "9", function()
 		return
 	end)
-	arg_53_0:DelayTimeAction(2.6, function()
+	arg_53_0:DelayTimeAction(2.8, function()
 		arg_53_0:SetNeedClick(true, {
 			Invoke = function()
 				arg_53_0:Next()
@@ -322,6 +322,18 @@ function var_0_0.DialogueNode_11(arg_74_0)
 	end, true, false)
 	arg_74_0:CameraMoveAction("10", 4, 6, 5, 0.2)
 	arg_74_0:EnableCameraByTagAction("10", 1, 0)
+	arg_74_0:DelayTimeAction(2, function()
+		arg_74_0:SetNeedClick(true, {
+			Invoke = function()
+				arg_74_0:Next()
+			end
+		})
+		arg_74_0:SetNeedSkip(true, {
+			Invoke = function()
+				arg_74_0:Skip("End")
+			end
+		})
+	end)
 	arg_74_0:ShowTalkView()
 	arg_74_0:SetTalkContent(11022010, "", 9072)
 	arg_74_0:SetNeedSkip(true, {
@@ -329,718 +341,718 @@ function var_0_0.DialogueNode_11(arg_74_0)
 			arg_74_0:Skip("End")
 		end
 	})
-	arg_74_0:SetNeedClick(true, {
+	arg_74_0:SetNeedClick(false, {
 		Invoke = function()
 			arg_74_0:Next()
 		end
 	})
-	arg_74_0:OnNext(function(arg_79_0)
+	arg_74_0:OnNext(function(arg_82_0)
 		arg_74_0:ClearOnNext()
 		arg_74_0:DialogueNode_12()
 	end)
 end
 
-function var_0_0.DialogueNode_12(arg_80_0)
-	arg_80_0:EnableCameraByTagAction("11", 1, 0)
-	arg_80_0:PlayActorAnimationAction(9515, "conversation_2", 0, 3.166667, function()
+function var_0_0.DialogueNode_12(arg_83_0)
+	arg_83_0:EnableCameraByTagAction("11", 1, 0)
+	arg_83_0:PlayActorAnimationAction(9515, "conversation_2", 0, 3.166667, function()
 		return
 	end)
-	arg_80_0:ShowTalkView()
-	arg_80_0:SetTalkContent(11022011, "", 9515)
-	arg_80_0:SetNeedSkip(true, {
+	arg_83_0:ShowTalkView()
+	arg_83_0:SetTalkContent(11022011, "", 9515)
+	arg_83_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_80_0:Skip("End")
+			arg_83_0:Skip("End")
 		end
 	})
-	arg_80_0:SetNeedClick(true, {
+	arg_83_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_80_0:Next()
+			arg_83_0:Next()
 		end
 	})
-	arg_80_0:OnNext(function(arg_84_0)
-		arg_80_0:ClearOnNext()
-		arg_80_0:DialogueNode_13()
+	arg_83_0:OnNext(function(arg_87_0)
+		arg_83_0:ClearOnNext()
+		arg_83_0:DialogueNode_13()
 	end)
 end
 
-function var_0_0.DialogueNode_13(arg_85_0)
-	arg_85_0:EnableCameraByTagAction("12", 1, 0)
-	arg_85_0:PlayActorAnimationAction(9072, "action2_1", 0.05, 1.666667, function()
+function var_0_0.DialogueNode_13(arg_88_0)
+	arg_88_0:EnableCameraByTagAction("12", 1, 0)
+	arg_88_0:PlayActorAnimationAction(9072, "action2_1", 0.05, 1.666667, function()
 		return
 	end)
-	arg_85_0:CameraMoveAction("12", 4, 4, 5, 0.4)
-	arg_85_0:PlayActorAnimationAction(9073, "embarrassed", 0.05, 2.6, function()
+	arg_88_0:CameraMoveAction("12", 4, 4, 5, 0.4)
+	arg_88_0:PlayActorAnimationAction(9073, "embarrassed", 0.05, 2.6, function()
 		return
 	end)
-	arg_85_0:PlayActorEmoteAction(9073, "blink", 0, 0.3333333, function()
+	arg_88_0:PlayActorEmoteAction(9073, "blink", 0, 0.3333333, function()
 		return
 	end, true, false)
-	arg_85_0:ShowTalkView()
-	arg_85_0:SetTalkContent(11022012, "", 9072)
-	arg_85_0:SetNeedSkip(true, {
+	arg_88_0:ShowTalkView()
+	arg_88_0:SetTalkContent(11022012, "", 9072)
+	arg_88_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_85_0:Skip("End")
+			arg_88_0:Skip("End")
 		end
 	})
-	arg_85_0:SetNeedClick(true, {
+	arg_88_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_85_0:Next()
+			arg_88_0:Next()
 		end
 	})
-	arg_85_0:OnNext(function(arg_91_0)
-		arg_85_0:ClearOnNext()
-		arg_85_0:DialogueNode_14()
+	arg_88_0:OnNext(function(arg_94_0)
+		arg_88_0:ClearOnNext()
+		arg_88_0:DialogueNode_14()
 	end)
 end
 
-function var_0_0.DialogueNode_14(arg_92_0)
-	arg_92_0:EnableCameraByTagAction("13", 1, 0)
-	arg_92_0:PlayActorAnimationAction(9515, "speechless_start", 0.05, 0.5333334, function()
+function var_0_0.DialogueNode_14(arg_95_0)
+	arg_95_0:EnableCameraByTagAction("13", 1, 0)
+	arg_95_0:PlayActorAnimationAction(9515, "speechless_start", 0.05, 0.5333334, function()
 		return
 	end)
-	arg_92_0:PlayActorEmoteAction(9515, "complaint01_start", 0, 0.3333333, function()
+	arg_95_0:PlayActorEmoteAction(9515, "complaint01_start", 0, 0.3333333, function()
 		return
 	end, true, true)
-	arg_92_0:ShowTalkView()
-	arg_92_0:SetTalkContent(11022013, "", 0)
-	arg_92_0:SetNeedSkip(true, {
+	arg_95_0:ShowTalkView()
+	arg_95_0:SetTalkContent(11022013, "", 9515)
+	arg_95_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_92_0:Skip("End")
+			arg_95_0:Skip("End")
 		end
 	})
-	arg_92_0:SetNeedClick(true, {
+	arg_95_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_92_0:Next()
+			arg_95_0:Next()
 		end
 	})
-	arg_92_0:OnNext(function(arg_97_0)
-		arg_92_0:ClearOnNext()
-		arg_92_0:DialogueNode_15()
+	arg_95_0:OnNext(function(arg_100_0)
+		arg_95_0:ClearOnNext()
+		arg_95_0:DialogueNode_15()
 	end)
 end
 
-function var_0_0.DialogueNode_15(arg_98_0)
-	arg_98_0:EnableCameraByTagAction("14", 1, 0)
-	arg_98_0:PlayActorAnimationAction(9072, "action2_3", 0.05, 1.333333, function()
+function var_0_0.DialogueNode_15(arg_101_0)
+	arg_101_0:EnableCameraByTagAction("14", 1, 0)
+	arg_101_0:PlayActorAnimationAction(9072, "action2_3", 0.05, 1.333333, function()
 		return
 	end)
-	arg_98_0:PlayActorEmoteAction(9072, "happy01_start", 0, 0.1333333, function()
+	arg_101_0:PlayActorEmoteAction(9072, "happy01_start", 0, 0.1333333, function()
 		return
 	end, true, true)
-	arg_98_0:ShowTalkView()
-	arg_98_0:SetTalkContent(11022014, "", 0)
-	arg_98_0:SetNeedSkip(true, {
+	arg_101_0:ShowTalkView()
+	arg_101_0:SetTalkContent(11022014, "", 9072)
+	arg_101_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_98_0:Skip("End")
+			arg_101_0:Skip("End")
 		end
 	})
-	arg_98_0:SetNeedClick(true, {
+	arg_101_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_98_0:Next()
+			arg_101_0:Next()
 		end
 	})
-	arg_98_0:OnNext(function(arg_103_0)
-		arg_98_0:ClearOnNext()
-		arg_98_0:DialogueNode_16()
+	arg_101_0:OnNext(function(arg_106_0)
+		arg_101_0:ClearOnNext()
+		arg_101_0:DialogueNode_16()
 	end)
 end
 
-function var_0_0.DialogueNode_16(arg_104_0)
-	arg_104_0:EnableCameraByTagAction("15", 1, 0)
-	arg_104_0:PlayActorAnimationAction(9515, "action2_1", 0.05, 1.666667, function()
+function var_0_0.DialogueNode_16(arg_107_0)
+	arg_107_0:EnableCameraByTagAction("15", 1, 0)
+	arg_107_0:PlayActorAnimationAction(9515, "action2_1", 0.05, 1.666667, function()
 		return
 	end)
-	arg_104_0:ShowTalkView()
-	arg_104_0:SetTalkContent(11022015, "", 0)
-	arg_104_0:SetNeedSkip(true, {
+	arg_107_0:ShowTalkView()
+	arg_107_0:SetTalkContent(11022015, "", 9515)
+	arg_107_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_104_0:Skip("End")
+			arg_107_0:Skip("End")
 		end
 	})
-	arg_104_0:SetNeedClick(true, {
+	arg_107_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_104_0:Next()
+			arg_107_0:Next()
 		end
 	})
-	arg_104_0:OnNext(function(arg_108_0)
-		arg_104_0:ClearOnNext()
-		arg_104_0:DialogueNode_17()
+	arg_107_0:OnNext(function(arg_111_0)
+		arg_107_0:ClearOnNext()
+		arg_107_0:DialogueNode_17()
 	end)
 end
 
-function var_0_0.DialogueNode_17(arg_109_0)
-	arg_109_0:PlayActorAnimationAction(9072, "action2_1", 0.05, 1.666667, function()
+function var_0_0.DialogueNode_17(arg_112_0)
+	arg_112_0:PlayActorAnimationAction(9072, "action2_1", 0.05, 1.666667, function()
 		return
 	end)
-	arg_109_0:ShowTalkView()
-	arg_109_0:SetTalkContent(11022016, "", 0)
-	arg_109_0:SetNeedSkip(true, {
+	arg_112_0:ShowTalkView()
+	arg_112_0:SetTalkContent(11022016, "", 9072)
+	arg_112_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_109_0:Skip("End")
+			arg_112_0:Skip("End")
 		end
 	})
-	arg_109_0:SetNeedClick(true, {
+	arg_112_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_109_0:Next()
+			arg_112_0:Next()
 		end
 	})
-	arg_109_0:OnNext(function(arg_113_0)
-		arg_109_0:ClearOnNext()
-		arg_109_0:DialogueNode_18()
+	arg_112_0:OnNext(function(arg_116_0)
+		arg_112_0:ClearOnNext()
+		arg_112_0:DialogueNode_18()
 	end)
 end
 
-function var_0_0.DialogueNode_18(arg_114_0)
-	arg_114_0:EnableCameraByTagAction("13", 1, 0)
-	arg_114_0:PlayActorAnimationAction(9515, "conversation_2", 0.05, 3.166667, function()
+function var_0_0.DialogueNode_18(arg_117_0)
+	arg_117_0:EnableCameraByTagAction("13", 1, 0)
+	arg_117_0:PlayActorAnimationAction(9515, "conversation_2", 0.05, 3.166667, function()
 		return
 	end)
-	arg_114_0:PlayActorEmoteAction(9515, "anger02_start", 0, 0.5, function()
+	arg_117_0:PlayActorEmoteAction(9515, "anger02_start", 0, 0.5, function()
 		return
 	end, true, true)
-	arg_114_0:ShowTalkView()
-	arg_114_0:SetTalkContent(11022017, "", 0)
-	arg_114_0:SetNeedSkip(true, {
+	arg_117_0:ShowTalkView()
+	arg_117_0:SetTalkContent(11022017, "", 9515)
+	arg_117_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_114_0:Skip("End")
+			arg_117_0:Skip("End")
 		end
 	})
-	arg_114_0:SetNeedClick(true, {
+	arg_117_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_114_0:Next()
+			arg_117_0:Next()
 		end
 	})
-	arg_114_0:OnNext(function(arg_119_0)
-		arg_114_0:ClearOnNext()
-		arg_114_0:DialogueNode_19()
+	arg_117_0:OnNext(function(arg_122_0)
+		arg_117_0:ClearOnNext()
+		arg_117_0:DialogueNode_19()
 	end)
 end
 
-function var_0_0.DialogueNode_19(arg_120_0)
-	arg_120_0:EnableCameraByTagAction("14", 1, 0)
-	arg_120_0:PlayActorEmoteAction(9072, "happy01_end", 0, 0.2666667, function()
+function var_0_0.DialogueNode_19(arg_123_0)
+	arg_123_0:EnableCameraByTagAction("14", 1, 0)
+	arg_123_0:PlayActorEmoteAction(9072, "happy01_end", 0, 0.2666667, function()
 		return
 	end, true, false)
-	arg_120_0:DelayTimeAction(1.5, function()
-		arg_120_0:PlayActorAnimationAction(9072, "take", 0.05, 1.833333, function()
+	arg_123_0:DelayTimeAction(1.5, function()
+		arg_123_0:PlayActorAnimationAction(9072, "take", 0.05, 1.833333, function()
 			return
 		end)
 	end)
-	arg_120_0:ShowTalkView()
-	arg_120_0:SetTalkContent(11022018, "", 0)
-	arg_120_0:SetNeedSkip(true, {
+	arg_123_0:ShowTalkView()
+	arg_123_0:SetTalkContent(11022018, "", 9072)
+	arg_123_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_120_0:Skip("End")
+			arg_123_0:Skip("End")
 		end
 	})
-	arg_120_0:SetNeedClick(true, {
+	arg_123_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_120_0:Next()
+			arg_123_0:Next()
 		end
 	})
-	arg_120_0:OnNext(function(arg_126_0)
-		arg_120_0:ClearOnNext()
-		arg_120_0:DialogueNode_20()
+	arg_123_0:OnNext(function(arg_129_0)
+		arg_123_0:ClearOnNext()
+		arg_123_0:DialogueNode_20()
 	end)
 end
 
-function var_0_0.DialogueNode_20(arg_127_0)
-	arg_127_0:EnableCameraByTagAction("15", 1, 0)
-	arg_127_0:PlayActorEmoteAction(9515, "shocked01", 0, 1.4, function()
-		arg_127_0:PlayActorAnimationAction(9515, "summer_doubt", 0.05, 2, function()
+function var_0_0.DialogueNode_20(arg_130_0)
+	arg_130_0:EnableCameraByTagAction("15", 1, 0)
+	arg_130_0:PlayActorEmoteAction(9515, "shocked01", 0, 1.4, function()
+		arg_130_0:PlayActorAnimationAction(9515, "summer_doubt", 0.05, 2, function()
 			return
 		end)
 	end, true, false)
-	arg_127_0:ShowTalkView()
-	arg_127_0:SetTalkContent(11022019, "", 0)
-	arg_127_0:SetNeedSkip(true, {
+	arg_130_0:ShowTalkView()
+	arg_130_0:SetTalkContent(11022019, "", 9515)
+	arg_130_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_127_0:Skip("End")
+			arg_130_0:Skip("End")
 		end
 	})
-	arg_127_0:SetNeedClick(true, {
+	arg_130_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_127_0:Next()
+			arg_130_0:Next()
 		end
 	})
-	arg_127_0:OnNext(function(arg_132_0)
-		arg_127_0:ClearOnNext()
-		arg_127_0:DialogueNode_21()
+	arg_130_0:OnNext(function(arg_135_0)
+		arg_130_0:ClearOnNext()
+		arg_130_0:DialogueNode_21()
 	end)
 end
 
-function var_0_0.DialogueNode_21(arg_133_0)
-	arg_133_0:EnableCameraByTagAction("14", 1, 0)
-	arg_133_0:PlayActorAnimationAction(9072, "conversation_1", 0.05, 3, function()
+function var_0_0.DialogueNode_21(arg_136_0)
+	arg_136_0:EnableCameraByTagAction("14", 1, 0)
+	arg_136_0:PlayActorAnimationAction(9072, "conversation_1", 0.05, 3, function()
 		return
 	end)
-	arg_133_0:ShowTalkView()
-	arg_133_0:SetTalkContent(11022020, "", 0)
-	arg_133_0:SetNeedSkip(true, {
+	arg_136_0:ShowTalkView()
+	arg_136_0:SetTalkContent(11022020, "", 9072)
+	arg_136_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_133_0:Skip("End")
+			arg_136_0:Skip("End")
 		end
 	})
-	arg_133_0:SetNeedClick(true, {
+	arg_136_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_133_0:Next()
+			arg_136_0:Next()
 		end
 	})
-	arg_133_0:OnNext(function(arg_137_0)
-		arg_133_0:ClearOnNext()
-		arg_133_0:DialogueNode_22()
+	arg_136_0:OnNext(function(arg_140_0)
+		arg_136_0:ClearOnNext()
+		arg_136_0:DialogueNode_22()
 	end)
 end
 
-function var_0_0.DialogueNode_22(arg_138_0)
-	arg_138_0:EnableCameraByTagAction("11", 1, 0)
-	arg_138_0:PlayActorEmoteAction(9073, "shocked01", 0, 1.4, function()
+function var_0_0.DialogueNode_22(arg_141_0)
+	arg_141_0:EnableCameraByTagAction("11", 1, 0)
+	arg_141_0:PlayActorEmoteAction(9073, "shocked01", 0, 1.4, function()
 		return
 	end, true, false)
-	arg_138_0:PlaySoundsAction(2, "ui_sandplay", "ui_sandplay_x511_story_04_mingshi", "", "")
-	arg_138_0:ShowTalkView()
-	arg_138_0:SetTalkContent(11022021, "", 0)
-	arg_138_0:SetNeedSkip(true, {
+	arg_141_0:PlaySoundsAction(2, "ui_sandplay", "ui_sandplay_x511_story_04_mingshi", "", "")
+	arg_141_0:ShowTalkView()
+	arg_141_0:SetTalkContent(11022021, "", 9515)
+	arg_141_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_138_0:Skip("End")
+			arg_141_0:Skip("End")
 		end
 	})
-	arg_138_0:SetNeedClick(true, {
+	arg_141_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_138_0:Next()
+			arg_141_0:Next()
 		end
 	})
-	arg_138_0:OnNext(function(arg_142_0)
-		arg_138_0:ClearOnNext()
-		arg_138_0:DialogueNode_23()
+	arg_141_0:OnNext(function(arg_145_0)
+		arg_141_0:ClearOnNext()
+		arg_141_0:DialogueNode_23()
 	end)
 end
 
-function var_0_0.DialogueNode_23(arg_143_0)
-	arg_143_0:PlayActorAnimationAction(9072, "conversation_2", 0.05, 3.166667, function()
+function var_0_0.DialogueNode_23(arg_146_0)
+	arg_146_0:PlayActorAnimationAction(9072, "conversation_2", 0.05, 3.166667, function()
 		return
 	end)
-	arg_143_0:ShowTalkView()
-	arg_143_0:SetTalkContent(11022022, "", 0)
-	arg_143_0:SetNeedSkip(true, {
+	arg_146_0:ShowTalkView()
+	arg_146_0:SetTalkContent(11022022, "", 9072)
+	arg_146_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_143_0:Skip("End")
+			arg_146_0:Skip("End")
 		end
 	})
-	arg_143_0:SetNeedClick(true, {
+	arg_146_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_143_0:Next()
+			arg_146_0:Next()
 		end
 	})
-	arg_143_0:OnNext(function(arg_147_0)
-		arg_143_0:ClearOnNext()
-		arg_143_0:DialogueNode_24()
+	arg_146_0:OnNext(function(arg_150_0)
+		arg_146_0:ClearOnNext()
+		arg_146_0:DialogueNode_24()
 	end)
 end
 
-function var_0_0.DialogueNode_24(arg_148_0)
-	arg_148_0:EnableCameraByTagAction("13", 1, 0)
-	arg_148_0:PlayActorAnimationAction(9515, "think_loop", 0.05, 2, function()
+function var_0_0.DialogueNode_24(arg_151_0)
+	arg_151_0:EnableCameraByTagAction("13", 1, 0)
+	arg_151_0:PlayActorAnimationAction(9515, "think_loop", 0.05, 2, function()
 		return
 	end)
-	arg_148_0:PlayActorEmoteAction(9515, "disdain01_start", 0, 0.4, function()
+	arg_151_0:PlayActorEmoteAction(9515, "disdain01_start", 0, 0.4, function()
 		return
 	end, true, true)
-	arg_148_0:ShowTalkView()
-	arg_148_0:SetTalkContent(11022023, "", 0)
-	arg_148_0:SetNeedSkip(true, {
+	arg_151_0:ShowTalkView()
+	arg_151_0:SetTalkContent(11022023, "", 9515)
+	arg_151_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_148_0:Skip("End")
+			arg_151_0:Skip("End")
 		end
 	})
-	arg_148_0:SetNeedClick(true, {
+	arg_151_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_148_0:Next()
+			arg_151_0:Next()
 		end
 	})
-	arg_148_0:OnNext(function(arg_153_0)
-		arg_148_0:ClearOnNext()
-		arg_148_0:DialogueNode_25()
+	arg_151_0:OnNext(function(arg_156_0)
+		arg_151_0:ClearOnNext()
+		arg_151_0:DialogueNode_25()
 	end)
 end
 
-function var_0_0.DialogueNode_25(arg_154_0)
-	arg_154_0:EnableCameraByTagAction("24_1", 1, 0)
-	arg_154_0:PlayActorAnimationAction(9072, "conversation_1", 0.05, 3, function()
+function var_0_0.DialogueNode_25(arg_157_0)
+	arg_157_0:EnableCameraByTagAction("24_1", 1, 0)
+	arg_157_0:PlayActorAnimationAction(9072, "conversation_1", 0.05, 3, function()
 		return
 	end)
-	arg_154_0:ShowTalkView()
-	arg_154_0:SetTalkContent(11022024, "", 0)
-	arg_154_0:SetNeedSkip(true, {
+	arg_157_0:ShowTalkView()
+	arg_157_0:SetTalkContent(11022024, "", 9072)
+	arg_157_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_154_0:Skip("End")
+			arg_157_0:Skip("End")
 		end
 	})
-	arg_154_0:SetNeedClick(true, {
+	arg_157_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_154_0:Next()
+			arg_157_0:Next()
 		end
 	})
-	arg_154_0:OnNext(function(arg_158_0)
-		arg_154_0:ClearOnNext()
-		arg_154_0:DialogueNode_26()
+	arg_157_0:OnNext(function(arg_161_0)
+		arg_157_0:ClearOnNext()
+		arg_157_0:DialogueNode_26()
 	end)
 end
 
-function var_0_0.DialogueNode_26(arg_159_0)
-	arg_159_0:EnableCameraByTagAction("15", 1, 0)
-	arg_159_0:PlayActorAnimationAction(9515, "conversation_2", 0.05, 3.166667, function()
+function var_0_0.DialogueNode_26(arg_162_0)
+	arg_162_0:EnableCameraByTagAction("15", 1, 0)
+	arg_162_0:PlayActorAnimationAction(9515, "conversation_2", 0.05, 3.166667, function()
 		return
 	end)
-	arg_159_0:PlayActorEmoteAction(9515, "blink", 0, 0.3333333, function()
+	arg_162_0:PlayActorEmoteAction(9515, "blink", 0, 0.3333333, function()
 		return
 	end, true, false)
-	arg_159_0:ShowTalkView()
-	arg_159_0:SetTalkContent(11022025, "", 0)
-	arg_159_0:SetNeedSkip(true, {
+	arg_162_0:ShowTalkView()
+	arg_162_0:SetTalkContent(11022025, "", 9515)
+	arg_162_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_159_0:Skip("End")
+			arg_162_0:Skip("End")
 		end
 	})
-	arg_159_0:SetNeedClick(true, {
+	arg_162_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_159_0:Next()
+			arg_162_0:Next()
 		end
 	})
-	arg_159_0:OnNext(function(arg_164_0)
-		arg_159_0:ClearOnNext()
-		arg_159_0:DialogueNode_27()
+	arg_162_0:OnNext(function(arg_167_0)
+		arg_162_0:ClearOnNext()
+		arg_162_0:DialogueNode_27()
 	end)
 end
 
-function var_0_0.DialogueNode_27(arg_165_0)
-	arg_165_0:EnableCameraByTagAction("24", 1, 0)
-	arg_165_0:PlayActorAnimationAction(9072, "take", 0.05, 1.833333, function()
+function var_0_0.DialogueNode_27(arg_168_0)
+	arg_168_0:EnableCameraByTagAction("24", 1, 0)
+	arg_168_0:PlayActorAnimationAction(9072, "take", 0.05, 1.833333, function()
 		return
 	end)
-	arg_165_0:ShowTalkView()
-	arg_165_0:SetTalkContent(11022026, "", 0)
-	arg_165_0:SetNeedSkip(true, {
+	arg_168_0:ShowTalkView()
+	arg_168_0:SetTalkContent(11022026, "", 9072)
+	arg_168_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_165_0:Skip("End")
+			arg_168_0:Skip("End")
 		end
 	})
-	arg_165_0:SetNeedClick(true, {
+	arg_168_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_165_0:Next()
+			arg_168_0:Next()
 		end
 	})
-	arg_165_0:OnNext(function(arg_169_0)
-		arg_165_0:ClearOnNext()
-		arg_165_0:DialogueNode_28()
+	arg_168_0:OnNext(function(arg_172_0)
+		arg_168_0:ClearOnNext()
+		arg_168_0:DialogueNode_28()
 	end)
 end
 
-function var_0_0.DialogueNode_28(arg_170_0)
-	arg_170_0:PlayActorEmoteAction(9073, "disdain01_start", 0, 0.4, function()
+function var_0_0.DialogueNode_28(arg_173_0)
+	arg_173_0:PlayActorEmoteAction(9073, "disdain01_start", 0, 0.4, function()
 		return
 	end, true, true)
-	arg_170_0:ShowTalkView()
-	arg_170_0:SetTalkContent(11022027, "", 0)
-	arg_170_0:SetNeedSkip(true, {
+	arg_173_0:ShowTalkView()
+	arg_173_0:SetTalkContent(11022027, "", 9515)
+	arg_173_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_170_0:Skip("End")
+			arg_173_0:Skip("End")
 		end
 	})
-	arg_170_0:SetNeedClick(true, {
+	arg_173_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_170_0:Next()
+			arg_173_0:Next()
 		end
 	})
-	arg_170_0:OnNext(function(arg_174_0)
-		arg_170_0:ClearOnNext()
-		arg_170_0:DialogueNode_29()
+	arg_173_0:OnNext(function(arg_177_0)
+		arg_173_0:ClearOnNext()
+		arg_173_0:DialogueNode_29()
 	end)
 end
 
-function var_0_0.DialogueNode_29(arg_175_0)
-	arg_175_0:ShowTalkView()
-	arg_175_0:SetTalkContent(11022028, "", 0)
-	arg_175_0:SetNeedSkip(true, {
+function var_0_0.DialogueNode_29(arg_178_0)
+	arg_178_0:ShowTalkView()
+	arg_178_0:SetTalkContent(11022028, "", 9073)
+	arg_178_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_175_0:Skip("End")
+			arg_178_0:Skip("End")
 		end
 	})
-	arg_175_0:SetNeedClick(true, {
+	arg_178_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_175_0:Next()
+			arg_178_0:Next()
 		end
 	})
-	arg_175_0:OnNext(function(arg_178_0)
-		arg_175_0:ClearOnNext()
-		arg_175_0:DialogueNode_30()
+	arg_178_0:OnNext(function(arg_181_0)
+		arg_178_0:ClearOnNext()
+		arg_178_0:DialogueNode_30()
 	end)
 end
 
-function var_0_0.DialogueNode_30(arg_179_0)
-	arg_179_0:EnableCameraByTagAction("13", 1, 0)
-	arg_179_0:PlayActorAnimationAction(9515, "conversation_2", 0.05, 3.166667, function()
+function var_0_0.DialogueNode_30(arg_182_0)
+	arg_182_0:EnableCameraByTagAction("13", 1, 0)
+	arg_182_0:PlayActorAnimationAction(9515, "conversation_2", 0.05, 3.166667, function()
 		return
 	end)
-	arg_179_0:PlayActorEmoteAction(9515, "disdain01_end", 0, 0.4333334, function()
+	arg_182_0:PlayActorEmoteAction(9515, "disdain01_end", 0, 0.4333334, function()
 		return
 	end, true, false)
-	arg_179_0:ShowTalkView()
-	arg_179_0:SetTalkContent(11022029, "", 0)
-	arg_179_0:SetNeedSkip(true, {
+	arg_182_0:ShowTalkView()
+	arg_182_0:SetTalkContent(11022029, "", 9515)
+	arg_182_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_179_0:Skip("End")
+			arg_182_0:Skip("End")
 		end
 	})
-	arg_179_0:SetNeedClick(true, {
+	arg_182_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_179_0:Next()
+			arg_182_0:Next()
 		end
 	})
-	arg_179_0:OnNext(function(arg_184_0)
-		arg_179_0:ClearOnNext()
-		arg_179_0:DialogueNode_31()
+	arg_182_0:OnNext(function(arg_187_0)
+		arg_182_0:ClearOnNext()
+		arg_182_0:DialogueNode_31()
 	end)
 end
 
-function var_0_0.DialogueNode_31(arg_185_0)
-	arg_185_0:EnableCameraByTagAction("14", 1, 0)
-	arg_185_0:PlayActorEmoteAction(9072, "shocked01", 0, 1.4, function()
-		arg_185_0:PlayActorAnimationAction(9072, "conversation_1", 0.05, 3, function()
+function var_0_0.DialogueNode_31(arg_188_0)
+	arg_188_0:EnableCameraByTagAction("14", 1, 0)
+	arg_188_0:PlayActorEmoteAction(9072, "shocked01", 0, 1.4, function()
+		arg_188_0:PlayActorAnimationAction(9072, "conversation_1", 0.05, 3, function()
 			return
 		end)
 	end, true, false)
-	arg_185_0:ShowTalkView()
-	arg_185_0:SetTalkContent(11022030, "", 0)
-	arg_185_0:SetNeedSkip(true, {
+	arg_188_0:ShowTalkView()
+	arg_188_0:SetTalkContent(11022030, "", 9072)
+	arg_188_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_185_0:Skip("End")
+			arg_188_0:Skip("End")
 		end
 	})
-	arg_185_0:SetNeedClick(true, {
+	arg_188_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_185_0:Next()
+			arg_188_0:Next()
 		end
 	})
-	arg_185_0:OnNext(function(arg_190_0)
-		arg_185_0:ClearOnNext()
-		arg_185_0:DialogueNode_32()
+	arg_188_0:OnNext(function(arg_193_0)
+		arg_188_0:ClearOnNext()
+		arg_188_0:DialogueNode_32()
 	end)
 end
 
-function var_0_0.DialogueNode_32(arg_191_0)
-	arg_191_0:EnableCameraByTagAction("15", 1, 0)
-	arg_191_0:PlayActorAnimationAction(9515, "think_loop", 0, 2, function()
+function var_0_0.DialogueNode_32(arg_194_0)
+	arg_194_0:EnableCameraByTagAction("15", 1, 0)
+	arg_194_0:PlayActorAnimationAction(9515, "think_loop", 0, 2, function()
 		return
 	end)
-	arg_191_0:PlayActorEmoteAction(9515, "disdain01", 0, 1.566667, function()
+	arg_194_0:PlayActorEmoteAction(9515, "disdain01", 0, 1.566667, function()
 		return
 	end, true, false)
-	arg_191_0:ShowTalkView()
-	arg_191_0:SetTalkContent(11022031, "", 0)
-	arg_191_0:SetNeedSkip(true, {
+	arg_194_0:ShowTalkView()
+	arg_194_0:SetTalkContent(11022031, "", 9515)
+	arg_194_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_191_0:Skip("End")
+			arg_194_0:Skip("End")
 		end
 	})
-	arg_191_0:SetNeedClick(true, {
+	arg_194_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_191_0:Next()
+			arg_194_0:Next()
 		end
 	})
-	arg_191_0:OnNext(function(arg_196_0)
-		arg_191_0:ClearOnNext()
-		arg_191_0:DialogueNode_33()
+	arg_194_0:OnNext(function(arg_199_0)
+		arg_194_0:ClearOnNext()
+		arg_194_0:DialogueNode_33()
 	end)
 end
 
-function var_0_0.DialogueNode_33(arg_197_0)
-	arg_197_0:ActorSeekerAction(9072, {
+function var_0_0.DialogueNode_33(arg_200_0)
+	arg_200_0:ActorSeekerAction(9072, {
 		"22"
 	}, 0.5, function()
-		arg_197_0:PlayActorAnimationAction(9072, "take", 0.05, 1.833333, function()
+		arg_200_0:PlayActorAnimationAction(9072, "take", 0.05, 1.833333, function()
 			return
 		end)
 	end)
-	arg_197_0:DelayTimeAction(1, function()
-		arg_197_0:SetLookAtParamsAction(9510, 0.8, 1, 1)
-		arg_197_0:LookAtRoleAction(true, 9510, "9072")
-		arg_197_0:EnableCameraByTagAction("32", 1, 0)
-		arg_197_0:SetLookAtParamsAction(9073, 0.8, 1, 1)
-		arg_197_0:LookAtRoleAction(true, 9073, "9072")
+	arg_200_0:DelayTimeAction(1, function()
+		arg_200_0:SetLookAtParamsAction(9510, 0.8, 1, 1)
+		arg_200_0:LookAtRoleAction(true, 9510, "9072")
+		arg_200_0:EnableCameraByTagAction("32", 1, 0)
+		arg_200_0:SetLookAtParamsAction(9073, 0.8, 1, 1)
+		arg_200_0:LookAtRoleAction(true, 9073, "9072")
 	end)
-	arg_197_0:ShowTalkView()
-	arg_197_0:SetTalkContent(11022032, "", 0)
+	arg_200_0:ShowTalkView()
+	arg_200_0:SetTalkContent(11022032, "", 9072)
 
-	local var_197_0 = {
+	local var_200_0 = {
 		[0] = {
 			id = 11022033,
 			icon = "",
 			Invoke = function()
-				arg_197_0:Next(11022033)
+				arg_200_0:Next(11022033)
 			end
 		},
 		{
 			id = 11022034,
 			icon = "",
 			Invoke = function()
-				arg_197_0:Next(11022034)
+				arg_200_0:Next(11022034)
 			end
 		},
 		Length = 2
 	}
 
-	arg_197_0:SetChoice(var_197_0, false)
-	arg_197_0:SetNeedSkip(false, nil)
-	arg_197_0:SetNeedClick(false, nil)
-	arg_197_0:OnNext(function(arg_203_0)
-		arg_197_0:ClearOnNext()
-		arg_197_0:CloseChoice()
+	arg_200_0:SetChoice(var_200_0, false)
+	arg_200_0:SetNeedSkip(false, nil)
+	arg_200_0:SetNeedClick(false, nil)
+	arg_200_0:OnNext(function(arg_206_0)
+		arg_200_0:ClearOnNext()
+		arg_200_0:CloseChoice()
 
-		if arg_203_0 == 11022033 then
-			arg_197_0:DialogueBranchNode_34()
-		elseif arg_203_0 == 11022034 then
-			arg_197_0:DialogueBranchNode_35()
+		if arg_206_0 == 11022033 then
+			arg_200_0:DialogueBranchNode_34()
+		elseif arg_206_0 == 11022034 then
+			arg_200_0:DialogueBranchNode_35()
 		end
 	end)
 end
 
-function var_0_0.DialogueBranchNode_34(arg_204_0)
-	arg_204_0:OnNext(function()
-		arg_204_0:ClearOnNext()
-		arg_204_0:PureActorDialogueNode_36()
+function var_0_0.DialogueBranchNode_34(arg_207_0)
+	arg_207_0:OnNext(function()
+		arg_207_0:ClearOnNext()
+		arg_207_0:PureActorDialogueNode_36()
 	end)
-	arg_204_0:Next()
+	arg_207_0:Next()
 end
 
-function var_0_0.PureActorDialogueNode_36(arg_206_0)
-	arg_206_0:EnableCameraByTagAction("33", 1, 0)
-	arg_206_0:PlayActorEmoteAction(9073, "shocked01_start", 0, 0.3666667, function()
+function var_0_0.PureActorDialogueNode_36(arg_209_0)
+	arg_209_0:EnableCameraByTagAction("33", 1, 0)
+	arg_209_0:PlayActorEmoteAction(9073, "shocked01_start", 0, 0.3666667, function()
 		return
 	end, true, true)
-	arg_206_0:CameraMoveAction("33", 4, 1, 1, 0.35)
-	arg_206_0:DelayTimeAction(2, function()
-		arg_206_0:EventAction(function()
-			arg_206_0:ImmediateNextFlag(-1)
+	arg_209_0:CameraMoveAction("33", 4, 1, 1, 0.35)
+	arg_209_0:DelayTimeAction(2, function()
+		arg_209_0:EventAction(function()
+			arg_209_0:ImmediateNextFlag(-1)
 		end)
 	end)
-	arg_206_0:HideTalkView()
-	arg_206_0:OnNext(function()
-		arg_206_0:ClearOnNext()
-		arg_206_0:DialogueNode_37()
+	arg_209_0:HideTalkView()
+	arg_209_0:OnNext(function()
+		arg_209_0:ClearOnNext()
+		arg_209_0:DialogueNode_37()
 	end)
 end
 
-function var_0_0.DialogueNode_37(arg_211_0)
-	arg_211_0:EnableCameraByTagAction("35", 1, 0)
-	arg_211_0:PlayActorAnimationAction(9072, "summer_doubt", 0.05, 2, function()
-		arg_211_0:PlayActorAnimationAction(9072, "conversation_2", 0.05, 3.166667, function()
+function var_0_0.DialogueNode_37(arg_214_0)
+	arg_214_0:EnableCameraByTagAction("35", 1, 0)
+	arg_214_0:PlayActorAnimationAction(9072, "summer_doubt", 0.05, 2, function()
+		arg_214_0:PlayActorAnimationAction(9072, "conversation_2", 0.05, 3.166667, function()
 			return
 		end)
 	end)
-	arg_211_0:PlayActorEmoteAction(9072, "happy01_start", 0, 0.1333333, function()
+	arg_214_0:PlayActorEmoteAction(9072, "happy01_start", 0, 0.1333333, function()
 		return
 	end, true, true)
-	arg_211_0:ShowTalkView()
-	arg_211_0:SetTalkContent(11022035, "", 0)
-	arg_211_0:SetNeedSkip(true, {
+	arg_214_0:ShowTalkView()
+	arg_214_0:SetTalkContent(11022035, "", 9072)
+	arg_214_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_211_0:Skip("End")
+			arg_214_0:Skip("End")
 		end
 	})
-	arg_211_0:SetNeedClick(true, {
+	arg_214_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_211_0:Next()
+			arg_214_0:Next()
 		end
 	})
-	arg_211_0:OnNext(function(arg_217_0)
-		arg_211_0:ClearOnNext()
-		arg_211_0:DialogueNode_38()
+	arg_214_0:OnNext(function(arg_220_0)
+		arg_214_0:ClearOnNext()
+		arg_214_0:DialogueNode_38()
 	end)
 end
 
-function var_0_0.DialogueNode_38(arg_218_0)
-	arg_218_0:PlayActorEmoteAction(9073, "happy01_start", 0, 0.1333333, function()
+function var_0_0.DialogueNode_38(arg_221_0)
+	arg_221_0:PlayActorEmoteAction(9073, "happy01_start", 0, 0.1333333, function()
 		return
 	end, false, false)
-	arg_218_0:PlayActorAnimationAction(9073, "action3_1", 0.05, 2.266667, function()
+	arg_221_0:PlayActorAnimationAction(9073, "action3_1", 0.05, 2.266667, function()
 		return
 	end)
-	arg_218_0:ShowTalkView()
-	arg_218_0:SetTalkContent(11022036, "", 0)
-	arg_218_0:SetNeedSkip(true, {
+	arg_221_0:ShowTalkView()
+	arg_221_0:SetTalkContent(11022036, "", 9073)
+	arg_221_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_218_0:Skip("End")
+			arg_221_0:Skip("End")
 		end
 	})
-	arg_218_0:SetNeedClick(true, {
+	arg_221_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_218_0:Next()
+			arg_221_0:Next()
 		end
 	})
-	arg_218_0:OnNext(function(arg_223_0)
-		arg_218_0:ClearOnNext()
-		arg_218_0:DialogueNode_39()
+	arg_221_0:OnNext(function(arg_226_0)
+		arg_221_0:ClearOnNext()
+		arg_221_0:DialogueNode_39()
 	end)
 end
 
-function var_0_0.DialogueNode_39(arg_224_0)
-	arg_224_0:PlayActorAnimationAction(9510, "conversation_1", 0.05, 3, function()
+function var_0_0.DialogueNode_39(arg_227_0)
+	arg_227_0:PlayActorAnimationAction(9510, "conversation_1", 0.05, 3, function()
 		return
 	end)
-	arg_224_0:ShowTalkView()
-	arg_224_0:SetTalkContent(11022037, "", 0)
-	arg_224_0:SetNeedSkip(true, {
+	arg_227_0:ShowTalkView()
+	arg_227_0:SetTalkContent(11022037, "", 9510)
+	arg_227_0:SetNeedSkip(true, {
 		Invoke = function()
-			arg_224_0:Skip("End")
+			arg_227_0:Skip("End")
 		end
 	})
-	arg_224_0:SetNeedClick(true, {
+	arg_227_0:SetNeedClick(true, {
 		Invoke = function()
-			arg_224_0:Next()
+			arg_227_0:Next()
 		end
 	})
-	arg_224_0:OnNext(function(arg_228_0)
-		arg_224_0:ClearOnNext()
-		arg_224_0:BlackFadeDialogueNode_40()
+	arg_227_0:OnNext(function(arg_231_0)
+		arg_227_0:ClearOnNext()
+		arg_227_0:BlackFadeDialogueNode_40()
 	end)
 end
 
-function var_0_0.BlackFadeDialogueNode_40(arg_229_0)
-	arg_229_0:HideTalkView()
-	arg_229_0:OnBlackFade(false, 0, 0.2, 0.5, 0.5, function()
-		arg_229_0:HideAllDynamicAction(false, false, 4095, {})
-		arg_229_0:EnableCameraByTagAction("", 1, 0)
-		arg_229_0:DestroyCharAction(9072)
-		arg_229_0:DestroyCharAction(9073)
-		arg_229_0:DestroyCharAction(9515)
-		arg_229_0:DestroyCharAction(9510)
-		arg_229_0:ContinueBlackFade()
-		arg_229_0:OnNext(function()
-			arg_229_0:ClearOnNext()
-			arg_229_0:CloseStoryEventNode_41()
+function var_0_0.BlackFadeDialogueNode_40(arg_232_0)
+	arg_232_0:HideTalkView()
+	arg_232_0:OnBlackFade(false, 0, 0.2, 0.5, 0.5, function()
+		arg_232_0:HideAllDynamicAction(false, false, 4095, {})
+		arg_232_0:EnableCameraByTagAction("", 1, 0)
+		arg_232_0:DestroyCharAction(9072)
+		arg_232_0:DestroyCharAction(9073)
+		arg_232_0:DestroyCharAction(9515)
+		arg_232_0:DestroyCharAction(9510)
+		arg_232_0:ContinueBlackFade()
+		arg_232_0:OnNext(function()
+			arg_232_0:ClearOnNext()
+			arg_232_0:CloseStoryEventNode_41()
 		end)
 	end, function()
-		arg_229_0:Next()
+		arg_232_0:Next()
 	end)
 end
 
-function var_0_0.CloseStoryEventNode_41(arg_233_0)
-	arg_233_0:EnableCameraCutAction(false)
-	arg_233_0:EndStory()
+function var_0_0.CloseStoryEventNode_41(arg_236_0)
+	arg_236_0:EnableCameraCutAction(false)
+	arg_236_0:EndStory()
 end
 
-function var_0_0.DialogueBranchNode_35(arg_234_0)
-	arg_234_0:OnNext(function()
-		arg_234_0:ClearOnNext()
-		arg_234_0:PureActorDialogueNode_36()
+function var_0_0.DialogueBranchNode_35(arg_237_0)
+	arg_237_0:OnNext(function()
+		arg_237_0:ClearOnNext()
+		arg_237_0:PureActorDialogueNode_36()
 	end)
-	arg_234_0:Next()
+	arg_237_0:Next()
 end
 
-function var_0_0.RegisterFuncMap(arg_236_0)
-	arg_236_0:RegisterTalkFunction("End", arg_236_0.BlackFadeDialogueNode_40)
-	arg_236_0:RegisterTalkFunction("End", arg_236_0.CloseStoryEventNode_41)
+function var_0_0.RegisterFuncMap(arg_239_0)
+	arg_239_0:RegisterTalkFunction("End", arg_239_0.BlackFadeDialogueNode_40)
+	arg_239_0:RegisterTalkFunction("End", arg_239_0.CloseStoryEventNode_41)
 end
 
 return var_0_0

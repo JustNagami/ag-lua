@@ -213,18 +213,11 @@ function var_0_0.UpdateDailyRewardUI(arg_17_0)
 
 	local var_17_1
 	local var_17_2 = getShopCfg(var_17_0)
-
-	if var_17_2.description then
-		var_17_1 = RechargeShopDescriptionCfg[var_17_2.description]
-	else
-		var_17_1 = ItemCfg[var_17_2.give_id]
-	end
-
-	local var_17_3 = var_17_1.param
+	local var_17_3 = ItemCfg[var_17_2.give_id]
 	local var_17_4 = arg_17_0.itemData
 
-	var_17_4.id = var_17_3[1][1]
-	var_17_4.number = var_17_3[1][2]
+	var_17_4.id = var_17_2.give_id
+	var_17_4.number = var_17_2.give
 
 	function var_17_4.clickFun()
 		ShowPopItem(POP_ITEM, {

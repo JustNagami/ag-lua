@@ -337,7 +337,6 @@ function var_0_0.Dispose(arg_43_0)
 	arg_43_0.rewardSideView_:Dispose()
 	arg_43_0.miniMapCom:Dispose()
 	arg_43_0.menuList:Dispose()
-	QWorldMgr:DisposeQueue()
 	var_0_0.super.Dispose(arg_43_0)
 end
 

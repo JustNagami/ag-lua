@@ -105,6 +105,8 @@ function var_0_0.AddTimer(arg_11_0)
 		arg_11_0.monthCardRemainTxt_.text = string.format(GetTips("LEFT_TIME"), manager.time:GetLostTimeStrWith2Unit(var_11_0))
 		arg_11_0.passportRemainTxt_.text = string.format(GetTips("LEFT_TIME"), manager.time:GetLostTimeStrWith2Unit(var_11_0))
 	end, 1, -1)
+
+	arg_11_0.timeTimer:Start()
 end
 
 function var_0_0.SetActive(arg_13_0, arg_13_1)

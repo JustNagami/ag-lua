@@ -400,13 +400,20 @@ function var_0_0.ShopItemUpdate(arg_13_0, arg_13_1)
 					if #var_13_1 > 0 then
 						getReward(var_13_1)
 					else
-						local var_13_15 = var_13_7.param
-
-						for iter_13_10, iter_13_11 in ipairs(var_13_15) do
+						if var_13_3.shop_refresh == 1 then
 							table.insert(var_13_1, {
-								id = iter_13_11[1],
-								num = iter_13_11[2]
+								id = var_13_3.give_id,
+								num = var_13_3.give
 							})
+						else
+							local var_13_15 = var_13_7.param
+
+							for iter_13_10, iter_13_11 in ipairs(var_13_15) do
+								table.insert(var_13_1, {
+									id = iter_13_11[1],
+									num = iter_13_11[2]
+								})
+							end
 						end
 
 						getReward(var_13_1)

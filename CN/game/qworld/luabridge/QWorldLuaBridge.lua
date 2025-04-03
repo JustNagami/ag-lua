@@ -224,3 +224,7 @@ end
 function QWorldChangeInteractionMode(arg_28_0)
 	manager.notify:Invoke(QWORLD_INTERACTION_CHANGE, arg_28_0)
 end
+
+function QWorldChangeInteractionModeImeediate(arg_29_0)
+	QWorldLuaBridge.ChangeInteractionMode(arg_29_0)
+end

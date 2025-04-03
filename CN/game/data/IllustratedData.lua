@@ -100,28 +100,10 @@ function var_0_0.InitData(arg_2_0, arg_2_1)
 		}
 	end
 
-	for iter_2_14, iter_2_15 in ipairs(CollectPictureCfg.get_id_list_by_type[5]) do
-		vid = CollectPictureCfg[iter_2_15].id
-		var_0_8[vid] = {
-			is_receive = 1,
-			is_view = 1,
-			id = vid
-		}
-	end
-
-	for iter_2_16, iter_2_17 in ipairs(CollectPictureCfg.get_id_list_by_type[6]) do
-		vid = CollectPictureCfg[iter_2_17].id
-		var_0_8[vid] = {
-			is_receive = 1,
-			is_view = 1,
-			id = vid
-		}
-	end
-
-	for iter_2_18, iter_2_19 in ipairs(arg_2_1.affix_info) do
-		var_0_9[iter_2_19.id] = {
-			id = iter_2_19.id,
-			is_view = iter_2_19.is_view
+	for iter_2_14, iter_2_15 in ipairs(arg_2_1.affix_info) do
+		var_0_9[iter_2_15.id] = {
+			id = iter_2_15.id,
+			is_view = iter_2_15.is_view
 		}
 	end
 end

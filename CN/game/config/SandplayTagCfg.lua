@@ -604,7 +604,7 @@
 		}
 	},
 	[11010501] = {
-		tag_behaviour = 5,
+		tag_behaviour = 0,
 		deputy_name = "",
 		map_display = 0,
 		passthrough_parameters = "",
@@ -619,12 +619,10 @@
 		camera_parameters = "",
 		activityId = 0,
 		sort = 0,
-		behaviour_parameters = {
-			1
-		}
+		behaviour_parameters = {}
 	},
 	[11010502] = {
-		tag_behaviour = 5,
+		tag_behaviour = 0,
 		deputy_name = "",
 		map_display = 0,
 		passthrough_parameters = "",
@@ -639,12 +637,10 @@
 		camera_parameters = "",
 		activityId = 0,
 		sort = 0,
-		behaviour_parameters = {
-			1
-		}
+		behaviour_parameters = {}
 	},
 	[11010503] = {
-		tag_behaviour = 5,
+		tag_behaviour = 0,
 		deputy_name = "",
 		map_display = 0,
 		passthrough_parameters = "",
@@ -659,12 +655,10 @@
 		camera_parameters = "",
 		activityId = 0,
 		sort = 0,
-		behaviour_parameters = {
-			1
-		}
+		behaviour_parameters = {}
 	},
 	[11010504] = {
-		tag_behaviour = 5,
+		tag_behaviour = 0,
 		deputy_name = "",
 		map_display = 0,
 		passthrough_parameters = "",
@@ -679,12 +673,10 @@
 		camera_parameters = "",
 		activityId = 0,
 		sort = 0,
-		behaviour_parameters = {
-			1
-		}
+		behaviour_parameters = {}
 	},
 	[11010505] = {
-		tag_behaviour = 5,
+		tag_behaviour = 0,
 		deputy_name = "",
 		map_display = 0,
 		passthrough_parameters = "",
@@ -699,12 +691,10 @@
 		camera_parameters = "",
 		activityId = 0,
 		sort = 0,
-		behaviour_parameters = {
-			1
-		}
+		behaviour_parameters = {}
 	},
 	[11010506] = {
-		tag_behaviour = 5,
+		tag_behaviour = 0,
 		deputy_name = "",
 		map_display = 0,
 		passthrough_parameters = "",
@@ -719,12 +709,10 @@
 		camera_parameters = "",
 		activityId = 0,
 		sort = 0,
-		behaviour_parameters = {
-			1
-		}
+		behaviour_parameters = {}
 	},
 	[11010507] = {
-		tag_behaviour = 5,
+		tag_behaviour = 0,
 		deputy_name = "",
 		map_display = 0,
 		passthrough_parameters = "",
@@ -739,12 +727,10 @@
 		camera_parameters = "",
 		activityId = 0,
 		sort = 0,
-		behaviour_parameters = {
-			1
-		}
+		behaviour_parameters = {}
 	},
 	[11010508] = {
-		tag_behaviour = 5,
+		tag_behaviour = 0,
 		deputy_name = "",
 		map_display = 0,
 		passthrough_parameters = "",
@@ -759,12 +745,10 @@
 		camera_parameters = "",
 		activityId = 0,
 		sort = 0,
-		behaviour_parameters = {
-			1
-		}
+		behaviour_parameters = {}
 	},
 	[11010509] = {
-		tag_behaviour = 5,
+		tag_behaviour = 0,
 		deputy_name = "",
 		map_display = 0,
 		passthrough_parameters = "",
@@ -779,12 +763,10 @@
 		camera_parameters = "",
 		activityId = 0,
 		sort = 0,
-		behaviour_parameters = {
-			1
-		}
+		behaviour_parameters = {}
 	},
 	[11010510] = {
-		tag_behaviour = 5,
+		tag_behaviour = 0,
 		deputy_name = "",
 		map_display = 0,
 		passthrough_parameters = "",
@@ -799,9 +781,7 @@
 		camera_parameters = "",
 		activityId = 0,
 		sort = 0,
-		behaviour_parameters = {
-			1
-		}
+		behaviour_parameters = {}
 	},
 	[11010511] = {
 		tag_behaviour = 0,

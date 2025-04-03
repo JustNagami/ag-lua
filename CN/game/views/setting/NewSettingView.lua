@@ -122,6 +122,9 @@ function var_0_0.AddListeners(arg_15_0)
 	end)
 	arg_15_0:AddBtnListenerScale(arg_15_0.restartBtn_, nil, function()
 		manager.audio:DestoryCriAtom()
+
+		arg_15_0.isRestartFlag_ = true
+
 		BattleController.GetInstance():LaunchBattle(arg_15_0.params_.stageData, nil, nil, true)
 		LuaForCursor.SwitchCursor(false)
 	end)
@@ -208,7 +211,12 @@ function var_0_0.OnExit(arg_30_0)
 		manager.windowBar:HideBar()
 		LuaExchangeHelper.ApplyBattleSetting()
 		arg_30_0:BackFunc()
-		LuaExchangeHelper.ContinueGame()
+
+		if arg_30_0.isRestartFlag_ then
+			arg_30_0.isRestartFlag_ = false
+		else
+			LuaExchangeHelper.ContinueGame()
+		end
 	end
 
 	arg_30_0.isSystem_ = nil

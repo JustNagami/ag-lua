@@ -141,7 +141,7 @@ function var_0_0.InitRedPoint(arg_8_0)
 		var_8_4[#var_8_4 + 1] = var_8_11
 	end
 
-	manager.redPoint:addGroup(var_8_5, var_8_4, true)
+	manager.redPoint:addGroup(var_8_5, var_8_4)
 end
 
 return var_0_0

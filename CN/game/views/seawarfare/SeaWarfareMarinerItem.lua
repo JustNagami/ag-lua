@@ -47,8 +47,8 @@ function var_0_0.SetData(arg_6_0, arg_6_1)
 		arg_6_0:RefreshUI()
 	end
 
+	SetActive(arg_6_0.gameObject_, false)
 	arg_6_0:ResetAnim()
-	arg_6_0:PlayAnim()
 end
 
 function var_0_0.RefreshLock(arg_7_0)
@@ -66,11 +66,11 @@ function var_0_0.RefreshUI(arg_8_0)
 end
 
 function var_0_0.PlayAnim(arg_9_0)
-	if arg_9_0.isFirstUnLock_ then
-		return
-	end
+	SetActive(arg_9_0.gameObject_, true)
 
-	if arg_9_0.isLock_ then
+	if arg_9_0.isFirstUnLock_ then
+		arg_9_0:PlayFirstUnlockAnim()
+	elseif arg_9_0.isLock_ then
 		arg_9_0:PlayLockAnim()
 	else
 		arg_9_0:PlayEnterAnim()
@@ -88,13 +88,11 @@ function var_0_0.PlayEnterAnim(arg_11_0)
 end
 
 function var_0_0.PlayFirstUnlockAnim(arg_12_0)
-	if arg_12_0.isFirstUnLock_ then
-		arg_12_0.isFirstUnLock_ = false
+	arg_12_0.isFirstUnLock_ = false
 
-		arg_12_0.lockController_:SetSelectedState("off")
+	arg_12_0.lockController_:SetSelectedState("off")
 
-		arg_12_0.unlockAnimtimer_ = SeaWarfareTools.PlayAnim(arg_12_0.unlockAnim_, "UI_QuanZhou_Navigation_MemberItem_unlock")
-	end
+	arg_12_0.unlockAnimtimer_ = SeaWarfareTools.PlayAnim(arg_12_0.unlockAnim_, "UI_QuanZhou_Navigation_MemberItem_unlock")
 end
 
 function var_0_0.ResetAnim(arg_13_0)

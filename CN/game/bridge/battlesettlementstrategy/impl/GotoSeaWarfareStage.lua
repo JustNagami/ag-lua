@@ -21,6 +21,13 @@ function var_0_0.OnGotoSettlement(arg_1_0, arg_1_1)
 
 			if var_1_4.type == SeaWarfareConst.STAGE_TYPE.CHALLENGE then
 				SeaWarfareTools.SetNeedFirstCompleteAnimStageID(var_1_3)
+
+				local var_1_5 = SeaWarfareTools.GetStageIDList(SeaWarfareConst.STAGE_TYPE.CHALLENGE)
+				local var_1_6 = table.indexof(var_1_5, var_1_3)
+
+				if var_1_6 + 1 <= #var_1_5 then
+					SeaWarfareTools.SetNeedFirstUnlockAnimStageID(var_1_5[var_1_6 + 1])
+				end
 			end
 		end
 	end

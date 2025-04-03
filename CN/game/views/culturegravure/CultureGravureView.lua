@@ -37,7 +37,7 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.transitionList_ = LuaList.New(handler(arg_4_0, arg_4_0.IndexTransitionItem), arg_4_0.transitionListGo_, CultureGravureTransitionItem)
 	arg_4_0.equipSkillList_ = LuaList.New(handler(arg_4_0, arg_4_0.IndexEquipSkillItem), arg_4_0.equipSkillListGo_, CultureGravureEquipSkillItem)
 
-	if _G.CHANNEL_MASTER_ID == 1 or _G.CHANNEL_MASTER_ID == 1 then
+	if _G.CHANNEL_MASTER_ID == 1 or _G.CHANNEL_MASTER_ID == 1 or _G.CHANNEL_MASTER_ID == 15 then
 		SetActive(arg_4_0.forumBtn_.gameObject, true)
 	else
 		SetActive(arg_4_0.forumBtn_.gameObject, false)
