@@ -66,6 +66,14 @@ function var_0_1.OnEnter(arg_4_0)
 
 	if not SDKTools.GetIsOverSea() then
 		SetActive(arg_4_0.buttonTwiiter_.transform.gameObject, false)
+
+		if GameToSDK.PLATFORM_ID == 4 then
+			SetActive(arg_4_0.buttonWechat_.transform.gameObject, false)
+			SetActive(arg_4_0.buttonWeibo_.transform.gameObject, false)
+			SetActive(arg_4_0.buttonQQ_.transform.gameObject, false)
+			SetActive(arg_4_0.buttonQQZone_.transform.gameObject, false)
+			SetActive(arg_4_0.buttonWechatMoments_.transform.gameObject, false)
+		end
 	else
 		SetActive(arg_4_0.buttonQQ_.transform.gameObject, false)
 		SetActive(arg_4_0.buttonQQZone_.transform.gameObject, false)

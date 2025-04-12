@@ -38,11 +38,19 @@ function var_0_2.InitUI(arg_2_0)
 		if arg_2_0.buttonTwiiter_ then
 			SetActive(arg_2_0.buttonTwiiter_.transform.gameObject, false)
 		end
+
+		if GameToSDK.PLATFORM_ID == 4 then
+			SetActive(arg_2_0.buttonWechat_.transform.gameObject, false)
+			SetActive(arg_2_0.buttonWeibo_.transform.gameObject, false)
+			SetActive(arg_2_0.buttonQQ_.transform.gameObject, false)
+			SetActive(arg_2_0.buttonQQZone_.transform.gameObject, false)
+			SetActive(arg_2_0.buttonWechatMoments_.transform.gameObject, false)
+		end
 	else
-		SetActive(arg_2_0.buttonQQ_.transform.gameObject, false)
-		SetActive(arg_2_0.buttonQQZone_.transform.gameObject, false)
 		SetActive(arg_2_0.buttonWechat_.transform.gameObject, false)
 		SetActive(arg_2_0.buttonWeibo_.transform.gameObject, false)
+		SetActive(arg_2_0.buttonQQ_.transform.gameObject, false)
+		SetActive(arg_2_0.buttonQQZone_.transform.gameObject, false)
 		SetActive(arg_2_0.buttonWechatMoments_.transform.gameObject, false)
 
 		if arg_2_0.buttonTwiiter_ then

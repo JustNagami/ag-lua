@@ -38,6 +38,8 @@ function var_0_2.OnEnter(arg_3_0)
 		arg_3_0.enterScrollPosition_ = nil
 
 		arg_3_0:ResetTap()
+	else
+		arg_3_0.selectHeroData_ = arg_3_0.params_.curSelectHeroData
 	end
 
 	arg_3_0.cacheBattlePower_ = {}
