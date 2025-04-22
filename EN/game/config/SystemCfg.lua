@@ -407,6 +407,18 @@
 			}
 		}
 	},
+	[337] = {
+		operation_stop_id = 0,
+		id = 337,
+		system_hide = 0,
+		sound_impact = "",
+		open_condition = {
+			{
+				1,
+				65
+			}
+		}
+	},
 	[341] = {
 		operation_stop_id = 0,
 		id = 341,
@@ -1397,6 +1409,7 @@
 		332,
 		333,
 		334,
+		337,
 		341,
 		342,
 		343,

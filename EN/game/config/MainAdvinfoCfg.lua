@@ -1723,6 +1723,44 @@
 		},
 		time = {}
 	},
+	[151] = {
+		id = 151,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1045",
+		activityId = 340033,
+		order = 1,
+		parameter = {
+			404,
+			4020601
+		},
+		time = {}
+	},
+	[152] = {
+		id = 152,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1046",
+		activityId = 340035,
+		order = 2,
+		parameter = {
+			404,
+			4020602
+		},
+		time = {}
+	},
+	[153] = {
+		id = 153,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_104501_104601",
+		activityId = 341001,
+		order = 3,
+		parameter = {
+			525
+		},
+		time = {}
+	},
 	[31000] = {
 		id = 31000,
 		hide_condition = "",
@@ -2078,6 +2116,56 @@
 		},
 		time = {}
 	},
+	[31031] = {
+		id = 31031,
+		hide_condition = "",
+		type = 1,
+		picture = "activity55",
+		activityId = 3611129,
+		order = 100,
+		parameter = {
+			528
+		},
+		time = {}
+	},
+	[31032] = {
+		id = 31032,
+		hide_condition = "",
+		type = 1,
+		picture = "activity31",
+		activityId = 3611130,
+		order = 100,
+		parameter = {
+			528
+		},
+		time = {}
+	},
+	[31033] = {
+		id = 31033,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1094_1138_1041_WF",
+		activityId = 3600327,
+		order = 100,
+		parameter = {
+			404,
+			31023
+		},
+		time = {}
+	},
+	[31034] = {
+		id = 31034,
+		hide_condition = "",
+		type = 1,
+		picture = "activity92",
+		activityId = 3600328,
+		order = 100,
+		parameter = {
+			404,
+			31024
+		},
+		time = {}
+	},
 	all = {
 		1,
 		7,
@@ -2202,6 +2290,9 @@
 		30606,
 		132,
 		133,
+		151,
+		152,
+		153,
 		31000,
 		31001,
 		31003,
@@ -2231,6 +2322,10 @@
 		31027,
 		31028,
 		31029,
-		31030
+		31030,
+		31031,
+		31032,
+		31033,
+		31034
 	}
 }

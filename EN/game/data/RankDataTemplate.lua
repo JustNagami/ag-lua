@@ -1,10 +1,11 @@
 ﻿RankConst = {
 	RANK_ID = {
 		ABYSS = 3,
-		SOLOHEARTDEMON = 5,
+		MULTHEARTDEMON = 7,
 		MATRIX = 2,
 		COREVERIFICATION = 6,
 		POLYHERON = 4,
+		SOLOHEARTDEMON = 5,
 		MYTHIC = 1
 	}
 }
@@ -47,7 +48,7 @@ function RankTemplate.GetRankVersion(arg_5_0)
 	return arg_5_0.rank_version
 end
 
-function RankTemplate.GetCurRankDes(arg_6_0)
+function RankTemplate.GetCurRankDes(arg_6_0, arg_6_1)
 	if not arg_6_0.curRank then
 		return GetTips("MATRIX_RANK_NO_RANK"), GetTips("MATRIX_RANK_NO_INFO")
 	end
@@ -55,18 +56,19 @@ function RankTemplate.GetCurRankDes(arg_6_0)
 	local var_6_0 = ""
 	local var_6_1 = ""
 	local var_6_2 = arg_6_0.curRank.rank
+	local var_6_3 = arg_6_1 or 100
 
 	if var_6_2 == 0 then
 		var_6_0 = GetTips("MATRIX_RANK_NO_RANK")
 		var_6_1 = GetTips("MATRIX_RANK_NO_INFO")
-	elseif var_6_2 >= 1 and var_6_2 <= 100 then
+	elseif var_6_2 >= 1 and var_6_2 <= var_6_3 then
 		var_6_0 = tostring(arg_6_0.curRank.rank)
 		var_6_1 = tostring(arg_6_0.curRank.score)
 	else
-		local var_6_3 = arg_6_0.total_people
-		local var_6_4 = arg_6_0.curRank.rank / var_6_3 * 100
+		local var_6_4 = arg_6_0.total_people
+		local var_6_5 = arg_6_0.curRank.rank / var_6_4 * 100
 
-		var_6_0 = string.format("%.2f", var_6_4) .. "%"
+		var_6_0 = string.format("%.2f", var_6_5) .. "%"
 		var_6_1 = tostring(arg_6_0.curRank.score)
 	end
 

@@ -5,6 +5,7 @@
 		remark = "b43824816168cb580e7b24dff0221762",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -14,6 +15,7 @@
 		remark = "04e397553f07e8c7d2158e644a297949",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -23,6 +25,7 @@
 		remark = "db2e4ef9da2f834ecf4a0803d2d102c1",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 2,
 		sub_activity_list = {}
 	},
@@ -32,6 +35,7 @@
 		remark = "612e1fbdf2f08b8cf6dd300f9eee12d0",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -41,6 +45,7 @@
 		remark = "c665de410d23b905433597422f314639",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {}
 	},
@@ -50,6 +55,7 @@
 		remark = "184191d66ae0bb67e4ebf2a62c576df9",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 51,
 		sub_activity_list = {}
 	},
@@ -59,6 +65,7 @@
 		remark = "b79a53649d9ee3363e90cda40335368c",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 52,
 		sub_activity_list = {}
 	},
@@ -68,6 +75,7 @@
 		remark = "e65873186cca88a3db3ec85907b9d7df",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 61,
 		sub_activity_list = {}
 	},
@@ -77,6 +85,7 @@
 		remark = "d2861a3594eec6875e0c5cbece63ffa8",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 70,
 		sub_activity_list = {}
 	},
@@ -86,6 +95,7 @@
 		remark = "f8fca08e436bed97d3ae6f75e16795af",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 53,
 		sub_activity_list = {}
 	},
@@ -95,6 +105,7 @@
 		remark = "5900a964357004c41ffbafc59479bc78",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 54,
 		sub_activity_list = {}
 	},
@@ -104,6 +115,7 @@
 		remark = "5e86cfdca5f5f267b7922e8174fae851",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 57,
 		sub_activity_list = {}
 	},
@@ -113,6 +125,7 @@
 		remark = "14ad5d3647d00f08420e3726a1548d5d",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 58,
 		sub_activity_list = {}
 	},
@@ -122,6 +135,7 @@
 		remark = "dd076556c07133cdc34166c0ebde7c2d",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 59,
 		sub_activity_list = {}
 	},
@@ -131,6 +145,7 @@
 		remark = "6487655862ef2bc5d1596a52482f6eba",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 60,
 		sub_activity_list = {}
 	},
@@ -140,6 +155,7 @@
 		remark = "17fa472919f2e35c265d48652150adf4",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 71,
 		sub_activity_list = {}
 	},
@@ -149,6 +165,7 @@
 		remark = "ab41a51b8ef457edb17aa379fbf8e61b",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 62,
 		sub_activity_list = {}
 	},
@@ -158,6 +175,7 @@
 		remark = "7b6a5be5bd5cb8c09b76b94195e6343b",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 63,
 		sub_activity_list = {
 			102,
@@ -172,6 +190,7 @@
 		remark = "bcf16713819386d38cb40962eb5fd5cb",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 11,
 		sub_activity_list = {}
 	},
@@ -181,6 +200,7 @@
 		remark = "ec150f02b233ba9dbf95915da771fd25",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 74,
 		sub_activity_list = {}
 	},
@@ -190,6 +210,7 @@
 		remark = "59b8bdf9337554ce0a8b454ad2de85d9",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 75,
 		sub_activity_list = {}
 	},
@@ -199,6 +220,7 @@
 		remark = "3ff678f5d96e9fdfffb4a8af4c2e6e8b",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 13,
 		sub_activity_list = {}
 	},
@@ -208,6 +230,7 @@
 		remark = "16d80c39e1e1ed1c76935b2bee7e0cea",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 76,
 		sub_activity_list = {}
 	},
@@ -217,6 +240,7 @@
 		remark = "fd4c92342f1ceb04e54ddc5e59a62c99",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 55,
 		sub_activity_list = {}
 	},
@@ -226,6 +250,7 @@
 		remark = "20575d70553439e37c8e39a3edbe21d2",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 72,
 		sub_activity_list = {}
 	},
@@ -235,6 +260,7 @@
 		remark = "1c84544b7ff5f9c3a67b372bc3d3396c",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -244,6 +270,7 @@
 		remark = "3f4327bf0a1995fd19e14183faa1c0fa",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 5,
 		sub_activity_list = {}
 	},
@@ -253,6 +280,7 @@
 		remark = "1305cd5cd4f477f8104a76eae3e2ebfd",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			501,
@@ -271,6 +299,7 @@
 		remark = "3674ff53ab5d002fed6999ed5fee5ec8",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 101,
 		sub_activity_list = {}
 	},
@@ -280,6 +309,7 @@
 		remark = "cecd4fa1a6e3774e863dbaa0799875ff",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 102,
 		sub_activity_list = {}
 	},
@@ -289,6 +319,7 @@
 		remark = "b5cc9418eddb4b875ff06e210608d40b",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 103,
 		sub_activity_list = {
 			508,
@@ -304,6 +335,7 @@
 		remark = "a837e260f1ce55e8b5553eb5b416e02f",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 105,
 		sub_activity_list = {
 			521,
@@ -319,6 +351,7 @@
 		remark = "ca6f68af95669b0a130ad04534dc20f2",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 106,
 		sub_activity_list = {}
 	},
@@ -328,6 +361,7 @@
 		remark = "3e3c216ed193620e570464c9271d21e8",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -337,6 +371,7 @@
 		remark = "9150fbc934bbf8dc0d60be229a7ac358",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {}
 	},
@@ -346,6 +381,7 @@
 		remark = "aec050180ee75c8dedecd679f71c142f",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -355,6 +391,7 @@
 		remark = "0d8225787f9996f3480c857d13e60d3d",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -364,6 +401,7 @@
 		remark = "77bc6629aaaafe1da69975d1b082f590",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -373,6 +411,7 @@
 		remark = "f6a762e63b7fa05a6476b9cc7bfd51b4",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -382,6 +421,7 @@
 		remark = "2b04aa9c64b6af562a40d94198d61453",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -391,6 +431,7 @@
 		remark = "14b09974dcf7937ef3e91de31717b0c1",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -400,6 +441,7 @@
 		remark = "640b69f99a3b6da17078292b0a40cc44",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -409,6 +451,7 @@
 		remark = "1b009692499490c09de5e16c16905389",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -418,6 +461,7 @@
 		remark = "ce3d32a05740710a26e7cfea5dec0287",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -427,6 +471,7 @@
 		remark = "12987f58aa001310e982b9b82d27e010",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -436,6 +481,7 @@
 		remark = "705565f24f46f5e5d2991141cd98a716",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -445,6 +491,7 @@
 		remark = "95cf8c8fcd9ee57f9d410e01fb78feda",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -454,6 +501,7 @@
 		remark = "bacee983f4b762ca941499ea4085caa3",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -463,6 +511,7 @@
 		remark = "18448dbf9e7155e3f027725488e97e0f",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -472,6 +521,7 @@
 		remark = "d48c4f5982616b6028116df10e40bb41",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			527,
@@ -484,6 +534,7 @@
 		remark = "f2fab7cb1a502e0603aa7412e683c120",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -493,6 +544,7 @@
 		remark = "7c2e90fdf6662d90e36120386e5afc6b",
 		unlock_condition = "",
 		activity_theme = 5,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -502,6 +554,7 @@
 		remark = "1bde47c98f16097df78559c370f95db5",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 274,
 		sub_activity_list = {}
 	},
@@ -511,6 +564,7 @@
 		remark = "018b178efd4166e1325259aa2f14024a",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			61020,
@@ -535,6 +589,7 @@
 		remark = "c2b4b3096fc0b00bdfe70653df6679b8",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			61021,
@@ -547,6 +602,7 @@
 		remark = "dcfa2c3e1745d1453633508ad526936c",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 102,
 		sub_activity_list = {}
 	},
@@ -556,6 +612,7 @@
 		remark = "3113f7af4430fa0797191ddc02593468",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 102,
 		sub_activity_list = {}
 	},
@@ -565,6 +622,7 @@
 		remark = "036630c84c21a6b8808836548cbeeb66",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 101,
 		sub_activity_list = {}
 	},
@@ -574,6 +632,7 @@
 		remark = "09d1a9e48c55746dde33b16f028f24ff",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 108,
 		sub_activity_list = {
 			61141,
@@ -591,6 +650,7 @@
 		remark = "9c65c47f4f588da90f5df90d4e2cd1ef",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 113,
 		sub_activity_list = {
 			61091,
@@ -608,6 +668,7 @@
 		remark = "c1b5264391bf855e25ca6b6b17741176",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 110,
 		sub_activity_list = {
 			61151,
@@ -625,6 +686,7 @@
 		remark = "bd493a03916e45b874b665d3f3cd1d02",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 103,
 		sub_activity_list = {
 			61041,
@@ -640,6 +702,7 @@
 		remark = "c2bf04e623354c636f4e5be0df7ba0be",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -649,6 +712,7 @@
 		remark = "d66d11f5171206508cd422138773e233",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -658,6 +722,7 @@
 		remark = "cfc1184c16f196b266851cfb06c4fb63",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			61111,
@@ -670,6 +735,7 @@
 		remark = "257518d63d6988197b1b479f98d8a6cc",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -679,6 +745,7 @@
 		remark = "726c7d60104cc35b85f20fa28a0f8952",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -688,6 +755,7 @@
 		remark = "285ddf22b16443f581207a8b4259c6c7",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -697,6 +765,7 @@
 		remark = "7e60167588da8f9a060f24ff6af43eea",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -706,6 +775,7 @@
 		remark = "ae8b69aa1163d7f871c584f4f7fa55bb",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -715,6 +785,7 @@
 		remark = "c2e4243dd2b17b29350976b593c1cfb0",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -724,6 +795,7 @@
 		remark = "2adc11c6a192272e0b3036deecca1618",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 112,
 		sub_activity_list = {}
 	},
@@ -733,6 +805,7 @@
 		remark = "a2c96311dca9aabeca40f2ac30661542",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 9001,
 		sub_activity_list = {}
 	},
@@ -742,6 +815,7 @@
 		remark = "fad754145f028b71f0e7341232e343a4",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -751,6 +825,7 @@
 		remark = "6613c11d0c56c3769a69d4a16910a859",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 109,
 		sub_activity_list = {}
 	},
@@ -760,6 +835,7 @@
 		remark = "0a1bdcde23c381ac23a0ca6d3fd2b0bd",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 109,
 		sub_activity_list = {}
 	},
@@ -769,6 +845,7 @@
 		remark = "2d6cefdfad0ab96ebba3b71c9275797b",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 109,
 		sub_activity_list = {}
 	},
@@ -778,6 +855,7 @@
 		remark = "c4b59558d60e28a79c233a18855ffc3e",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 109,
 		sub_activity_list = {}
 	},
@@ -787,6 +865,7 @@
 		remark = "9708be8e6830e8294a726e3ffc3659a4",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 109,
 		sub_activity_list = {}
 	},
@@ -796,6 +875,7 @@
 		remark = "71955d04d1b67c8788b1b5d974772be8",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 109,
 		sub_activity_list = {}
 	},
@@ -805,6 +885,7 @@
 		remark = "65a0a9b5d95a6cd213a326def110fb13",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 109,
 		sub_activity_list = {}
 	},
@@ -814,6 +895,7 @@
 		remark = "bd9f83bb7051e7872a1ecd52c42cb8ee",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -823,6 +905,7 @@
 		remark = "0865b26495a81f73865ceb5843940272",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -832,6 +915,7 @@
 		remark = "e8806613b9f96574c2028ee38a78b014",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -841,6 +925,7 @@
 		remark = "78af17bc401442142df36aa018602090",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -850,6 +935,7 @@
 		remark = "7a7e616008bf36593a458bf6a2fd6a04",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -859,6 +945,7 @@
 		remark = "5f4381b3a944c6166addc207cd68acd7",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 114,
 		sub_activity_list = {}
 	},
@@ -868,6 +955,7 @@
 		remark = "a5dd9fb41466acd9fc99549d6dc78250",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 114,
 		sub_activity_list = {}
 	},
@@ -877,6 +965,7 @@
 		remark = "87e7b53038df81abf08d9818cdc52d08",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 114,
 		sub_activity_list = {}
 	},
@@ -886,6 +975,7 @@
 		remark = "7b44a956aedd230b3bf1882fabd349d6",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 114,
 		sub_activity_list = {}
 	},
@@ -895,6 +985,7 @@
 		remark = "89aef91374bb31cbd6cef943b9ace726",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 114,
 		sub_activity_list = {}
 	},
@@ -904,6 +995,7 @@
 		remark = "4cb743463406eae64a863c4f95daeb69",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 114,
 		sub_activity_list = {}
 	},
@@ -913,6 +1005,7 @@
 		remark = "3ced2f56b91778f582d1feb831a83547",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 114,
 		sub_activity_list = {}
 	},
@@ -922,6 +1015,7 @@
 		remark = "f6c15296096c0c76b8383aaf7eaffda7",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -931,6 +1025,7 @@
 		remark = "7a631b9f73cf285dd4bd1aca7c3fd151",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -940,6 +1035,7 @@
 		remark = "95227aaf5e8e8a23cdb9d9b0c0bdb28a",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -949,6 +1045,7 @@
 		remark = "802a4b9cf3143f69853423d2b5de1c43",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -958,6 +1055,7 @@
 		remark = "e069c907b73843349ca607aad9fef465",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -967,6 +1065,7 @@
 		remark = "d6f9cc9117702d81275dcd9560b899b6",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -976,6 +1075,7 @@
 		remark = "132d2c19d6dfa78bb9d57d70e45abfd0",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -985,6 +1085,7 @@
 		remark = "1229c76a69a54273b432edda4565ffd7",
 		unlock_condition = "",
 		activity_theme = 6,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -994,6 +1095,7 @@
 		remark = "327f467de27a210f4fe07fbedb3e0252",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			71201,
@@ -1019,6 +1121,7 @@
 		remark = "219b1bb5b4b024617c9d854840239747",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			71021,
@@ -1033,6 +1136,7 @@
 		remark = "5a4e6bd71c3c0be60cede0214eb80a20",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 102,
 		sub_activity_list = {}
 	},
@@ -1041,6 +1145,7 @@
 		name = "655e190049475ed9df320cd4182475ff",
 		remark = "3e37ea7f54be579cec14f83855ed26cd",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 102,
 		sub_activity_list = {},
 		unlock_condition = {
@@ -1056,6 +1161,7 @@
 		name = "e0982e93445ed8dea1f583e28abdd0c6",
 		remark = "2887e122b60e91634a714b8459f922d8",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 101,
 		sub_activity_list = {},
 		unlock_condition = {
@@ -1071,6 +1177,7 @@
 		name = "c0620a4e7110af400ef66db7917debe8",
 		remark = "5d555837496354deccf595d44cd0b334",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 101,
 		sub_activity_list = {},
 		unlock_condition = {
@@ -1087,6 +1194,7 @@
 		remark = "569c814475d5b731112adb7f263c20d3",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -1096,6 +1204,7 @@
 		remark = "95bd76a3bc3678024aadebcc2afefb34",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -1105,6 +1214,7 @@
 		remark = "eb906b38178c139110e0066f8c38fdbc",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			71111,
@@ -1117,6 +1227,7 @@
 		remark = "3c5214e5dd0e50edf31aae112f05ddd3",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -1126,6 +1237,7 @@
 		remark = "3540333e2805b464f0bdd6679826232c",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -1135,6 +1247,7 @@
 		remark = "c5f21193d36a33336ecfab551c9a8b1a",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -1144,6 +1257,7 @@
 		remark = "3a60f1158e74eccfbbbffa6094c01b3c",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -1153,6 +1267,7 @@
 		remark = "48cbce445061723a9d9f926daf7cc991",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -1162,6 +1277,7 @@
 		remark = "4dce993d7113faa78637401c489f58ac",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -1171,6 +1287,7 @@
 		remark = "af72eaa6ef6c708f43e97cd7284c091a",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -1180,6 +1297,7 @@
 		remark = "088f2c9fe97678120ebc9ffe9ddb220a",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 9002,
 		sub_activity_list = {}
 	},
@@ -1189,6 +1307,7 @@
 		remark = "daa70375db9f488759fb218eed186390",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 117,
 		sub_activity_list = {
 			71231,
@@ -1207,6 +1326,7 @@
 		remark = "84454a774173adae71e8c593a7cef730",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 118,
 		sub_activity_list = {
 			71241,
@@ -1223,6 +1343,7 @@
 		remark = "23202da5ab2d5d57664b354fee4a89a9",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 128,
 		sub_activity_list = {
 			71191,
@@ -1239,6 +1360,7 @@
 		remark = "e51b6a39baf6631d3df6ee8dbd348d96",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 130,
 		sub_activity_list = {}
 	},
@@ -1248,6 +1370,7 @@
 		remark = "90453ceb9bc3293ce0cf849b7047462e",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 119,
 		sub_activity_list = {}
 	},
@@ -1257,6 +1380,7 @@
 		remark = "7413b34c83b03178df24083349a28016",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 119,
 		sub_activity_list = {}
 	},
@@ -1266,6 +1390,7 @@
 		remark = "165751ce382cd8bb33967e046e691a20",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 119,
 		sub_activity_list = {}
 	},
@@ -1275,6 +1400,7 @@
 		remark = "7b598bb4fa9448fcaedc65cd2cb64a27",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 119,
 		sub_activity_list = {}
 	},
@@ -1284,6 +1410,7 @@
 		remark = "06742471dc50e9653a64b1d2b02f509e",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 119,
 		sub_activity_list = {}
 	},
@@ -1293,6 +1420,7 @@
 		remark = "36d5b8a1d5ac2381d8d1b2e7b7dc08d3",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 122,
 		sub_activity_list = {
 			71251,
@@ -1310,6 +1438,7 @@
 		remark = "5cafee36e96c390d37179642211b4c47",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 129,
 		sub_activity_list = {}
 	},
@@ -1319,6 +1448,7 @@
 		remark = "a4ec422942caff49dcf0e2668f73bd30",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 123,
 		sub_activity_list = {}
 	},
@@ -1328,6 +1458,7 @@
 		remark = "96daa01a9486b0630d652042d01560c5",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 123,
 		sub_activity_list = {}
 	},
@@ -1337,6 +1468,7 @@
 		remark = "d1d566a1378c4578570ee581601ace85",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 123,
 		sub_activity_list = {}
 	},
@@ -1346,6 +1478,7 @@
 		remark = "9dce076c00eda6084923955637a2421b",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 123,
 		sub_activity_list = {}
 	},
@@ -1355,6 +1488,7 @@
 		remark = "cd18176c52d1461d7797dc41b454ee07",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 123,
 		sub_activity_list = {}
 	},
@@ -1364,6 +1498,7 @@
 		remark = "55184ae2fea2a7c88100a6c578d4d009",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 123,
 		sub_activity_list = {}
 	},
@@ -1373,6 +1508,7 @@
 		remark = "09dab0b61a832c07df76fe5daa190176",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 123,
 		sub_activity_list = {}
 	},
@@ -1382,6 +1518,7 @@
 		remark = "9adb3c7c5480194f31e8082bc0728823",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 123,
 		sub_activity_list = {}
 	},
@@ -1391,6 +1528,7 @@
 		remark = "8ed4af2c207d94383afb0e36f332cae6",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -1400,6 +1538,7 @@
 		remark = "a8b53de21fb1b922797e594dbeb01c26",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -1409,6 +1548,7 @@
 		remark = "78b699702f62e90ddad01741a82d43d9",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -1418,6 +1558,7 @@
 		remark = "b3fa160f8fb251e7f56c4a43c1330771",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -1427,6 +1568,7 @@
 		remark = "36fead261f1c08f47e2b206fdd10ce5f",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -1436,6 +1578,7 @@
 		remark = "89511976d05fcc71375cf773430863df",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -1445,6 +1588,7 @@
 		remark = "0c89c162406a42af8b258b164a345e5e",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 125,
 		sub_activity_list = {}
 	},
@@ -1454,6 +1598,7 @@
 		remark = "429ae0dda0d5d49d6546fa713879cee1",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 125,
 		sub_activity_list = {}
 	},
@@ -1463,6 +1608,7 @@
 		remark = "12f178a558646bae4accef5977390588",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 125,
 		sub_activity_list = {}
 	},
@@ -1472,6 +1618,7 @@
 		remark = "62fc17e06cd4a256278cd8e5d04abd57",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 125,
 		sub_activity_list = {}
 	},
@@ -1481,6 +1628,7 @@
 		remark = "6e1ccf88c256cccc8a0885b89f536f73",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 125,
 		sub_activity_list = {}
 	},
@@ -1490,6 +1638,7 @@
 		remark = "bd3adf1fe06f42c7a2d81158b6300f1c",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 125,
 		sub_activity_list = {}
 	},
@@ -1499,6 +1648,7 @@
 		remark = "9a0b59c407d096155e3bfd316ecbd6cd",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 125,
 		sub_activity_list = {}
 	},
@@ -1508,6 +1658,7 @@
 		remark = "fbc23e12c1571d5876cf680d046817ef",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -1517,6 +1668,7 @@
 		remark = "a7243d3e4b384a1c621b822d4cc253e2",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 145,
 		sub_activity_list = {}
 	},
@@ -1526,6 +1678,7 @@
 		remark = "581f0b4d679d5fcc7a8d1c349cd548fb",
 		unlock_condition = "",
 		activity_theme = 7,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -1535,6 +1688,7 @@
 		remark = "dbde52b32250472b2db52f206bbae9a3",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			81341,
@@ -1557,6 +1711,7 @@
 		remark = "55a34d2c584c11c5706a14f2f011c74c",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 56,
 		sub_activity_list = {}
 	},
@@ -1566,6 +1721,7 @@
 		remark = "8824e496cd69b2e43db520ac1e81e736",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 134,
 		sub_activity_list = {
 			81401,
@@ -1584,6 +1740,7 @@
 		remark = "d6e0d329cbc68ddb7eed983d19e3b9c7",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 135,
 		sub_activity_list = {
 			81411,
@@ -1602,6 +1759,7 @@
 		remark = "9debd0d16ba291cff8e4790e95c8db9b",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 136,
 		sub_activity_list = {}
 	},
@@ -1611,6 +1769,7 @@
 		remark = "daed755f5ca01215e5932780a8dcc3bd",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 113,
 		sub_activity_list = {
 			81421,
@@ -1629,6 +1788,7 @@
 		remark = "02ac11dea7b7df071c26a7a26177b9e9",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 138,
 		sub_activity_list = {
 			81431,
@@ -1646,6 +1806,7 @@
 		remark = "99c872726c0c285c379517e671a3dc74",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -1655,6 +1816,7 @@
 		remark = "2319bffddae3dbd4abbac6898ae9dc72",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -1664,6 +1826,7 @@
 		remark = "aafd168815dcdea42d579cfc2fe492fe",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			81111,
@@ -1676,6 +1839,7 @@
 		remark = "2cc351e894cef03aad65bb5d05ed0c86",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -1685,6 +1849,7 @@
 		remark = "5583f0da47323238ad4240f5d81124e0",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -1694,6 +1859,7 @@
 		remark = "8aba0a2c444519d06175a4f109d7e138",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -1703,6 +1869,7 @@
 		remark = "90fcfb3c28f7e0d664d1fd320f00e407",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -1712,6 +1879,7 @@
 		remark = "71344b4a9e956082548377d35ddd6d1f",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -1721,6 +1889,7 @@
 		remark = "6f527c931038e67fc9ea6d5c99f40e5b",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -1730,6 +1899,7 @@
 		remark = "b6c51c01b3ef1c32431c9d33d94e111a",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -1739,6 +1909,7 @@
 		remark = "b56cdab65444996b114aae1f3828caa6",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -1748,6 +1919,7 @@
 		remark = "55a375dcd134a9a9f1b691b6aadf76b4",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -1757,6 +1929,7 @@
 		remark = "5d472af3c9c2bd321bbdc175aff1ddb5",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 140,
 		sub_activity_list = {}
 	},
@@ -1766,6 +1939,7 @@
 		remark = "8b1da2f899ef59431901b0eccdc2a42a",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 140,
 		sub_activity_list = {}
 	},
@@ -1775,6 +1949,7 @@
 		remark = "eccec45f5bd6ff3f6dcacc4bed4b8fda",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 140,
 		sub_activity_list = {}
 	},
@@ -1784,6 +1959,7 @@
 		remark = "c4199eec8d6c7c7f89bd47fd0f921853",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 140,
 		sub_activity_list = {}
 	},
@@ -1793,6 +1969,7 @@
 		remark = "26e5c7fe3dfb88bcf90f82c74d696f7f",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 140,
 		sub_activity_list = {}
 	},
@@ -1802,6 +1979,7 @@
 		remark = "f0688750e53265c09b01cd8f1a29fa28",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 140,
 		sub_activity_list = {}
 	},
@@ -1811,6 +1989,7 @@
 		remark = "e84641e21737ff399e2c27320507123f",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 140,
 		sub_activity_list = {}
 	},
@@ -1820,6 +1999,7 @@
 		remark = "43f26e67a9b932e35fceec6afd9202af",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 140,
 		sub_activity_list = {}
 	},
@@ -1829,6 +2009,7 @@
 		remark = "ad48feff3966f04588497a7f4201feaa",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 141,
 		sub_activity_list = {}
 	},
@@ -1838,6 +2019,7 @@
 		remark = "436554bbbc859cda9c688a354d0dcf8d",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 141,
 		sub_activity_list = {}
 	},
@@ -1847,6 +2029,7 @@
 		remark = "9991416bb08c8d67b3ffd9b061ef51f3",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 141,
 		sub_activity_list = {}
 	},
@@ -1856,6 +2039,7 @@
 		remark = "1af0529058e95a7bdcd9625f7ce9233c",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 141,
 		sub_activity_list = {}
 	},
@@ -1865,6 +2049,7 @@
 		remark = "ccc0a15359bd595fdcf81194a06bc1d7",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 141,
 		sub_activity_list = {}
 	},
@@ -1874,6 +2059,7 @@
 		remark = "51f210b1469f2939ffbf1531436b8f61",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 141,
 		sub_activity_list = {}
 	},
@@ -1883,6 +2069,7 @@
 		remark = "57af607fb37c393a2dc2d4023d0d3211",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 141,
 		sub_activity_list = {}
 	},
@@ -1892,6 +2079,7 @@
 		remark = "42cac8384503ab0f0eb86e90e5183e93",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 141,
 		sub_activity_list = {}
 	},
@@ -1901,6 +2089,7 @@
 		remark = "870f0e93e15ae935c6295e70c64901fd",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -1910,6 +2099,7 @@
 		remark = "9087f53eee9a92dd3a4d902c50ef5141",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -1919,6 +2109,7 @@
 		remark = "08554842bd95bd67115c4b96befa8153",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -1928,6 +2119,7 @@
 		remark = "028e215234dfa8cdf73261eff1f791cd",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -1937,6 +2129,7 @@
 		remark = "18638a218c2fa0bde7659a0847322cfe",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -1946,6 +2139,7 @@
 		remark = "750d8cb39f475bca32aa607862fe9ffc",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -1955,6 +2149,7 @@
 		remark = "95fb9324c05ee0be439699ea7c0219bb",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -1964,6 +2159,7 @@
 		remark = "4dd5a1ac9b9dfca1374f0a7299f28117",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -1973,6 +2169,7 @@
 		remark = "f3814b83337586d5e30ce98ab70cfd83",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 143,
 		sub_activity_list = {}
 	},
@@ -1982,6 +2179,7 @@
 		remark = "0222a0f11ae35105724e34ac17e4ff25",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 143,
 		sub_activity_list = {}
 	},
@@ -1991,6 +2189,7 @@
 		remark = "660cdf6b7cebe52d14c9de41285da515",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 143,
 		sub_activity_list = {}
 	},
@@ -2000,6 +2199,7 @@
 		remark = "a9019fdd15f92916b03b8ee665a0ff76",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 143,
 		sub_activity_list = {}
 	},
@@ -2009,6 +2209,7 @@
 		remark = "a7748251eebdc7bc3683e229fac59c27",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 143,
 		sub_activity_list = {}
 	},
@@ -2018,6 +2219,7 @@
 		remark = "709b269c2c6e950cfdc5b230b5e7525d",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 143,
 		sub_activity_list = {
 			81441
@@ -2029,6 +2231,7 @@
 		remark = "dace3925c73a5d650b80d667dd929c52",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 144,
 		sub_activity_list = {}
 	},
@@ -2038,6 +2241,7 @@
 		remark = "38261de537fef2873e94933413df85f3",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 145,
 		sub_activity_list = {}
 	},
@@ -2047,6 +2251,7 @@
 		remark = "d98e96974f9bc9edd51c8a47f0d23607",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -2056,6 +2261,7 @@
 		remark = "637f1959486184b40e0ee139d0171d43",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -2065,6 +2271,7 @@
 		remark = "50b54e2c4ea20b6d97c241b2ef8c2eeb",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {}
 	},
@@ -2074,6 +2281,7 @@
 		remark = "c13c3407e761e1e16dcaff8632f087c8",
 		unlock_condition = "",
 		activity_theme = 8,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -2083,6 +2291,7 @@
 		remark = "e1533452366f9a24f8f8f09945f0d7fa",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			91481,
@@ -2112,6 +2321,7 @@
 		remark = "3f85f01e7ed8986ead64a9a1b35d0947",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 56,
 		sub_activity_list = {}
 	},
@@ -2121,6 +2331,7 @@
 		remark = "384573a8080e728ef4e33428ca19a2d1",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 102,
 		sub_activity_list = {}
 	},
@@ -2130,6 +2341,7 @@
 		remark = "77e780a13453ea9ed6e2eee1c1446217",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 148,
 		sub_activity_list = {
 			91491,
@@ -2148,6 +2360,7 @@
 		remark = "92d8515a7abad677e0a6222444220140",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 150,
 		sub_activity_list = {
 			91511,
@@ -2164,6 +2377,7 @@
 		remark = "c0bec6b3c0a0686d84cd40ab720e87f8",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 103,
 		sub_activity_list = {
 			91041,
@@ -2182,6 +2396,7 @@
 		remark = "bf3bb4d001b3a41dd72d1c39de81476b",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 105,
 		sub_activity_list = {
 			91270,
@@ -2202,6 +2417,7 @@
 		remark = "1b50d9289b10615d7556579f906931f0",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -2211,6 +2427,7 @@
 		remark = "62de446d7e9b0447547ef30a9ec02bcb",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -2220,6 +2437,7 @@
 		remark = "11ef7313c51f27e662c4a680e8bdd176",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -2229,6 +2447,7 @@
 		remark = "8b2b2442136b3730484fa903b0d91a0b",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -2238,6 +2457,7 @@
 		remark = "3d798d5f97d75e774a008dda6c122ae0",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -2247,6 +2467,7 @@
 		remark = "9d41beca7e2ad3104fa15ad2113aa336",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -2256,6 +2477,7 @@
 		remark = "31014518925dcbaf274c6d8cf68c8960",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -2265,6 +2487,7 @@
 		remark = "f6c27a8ee2e34327c96a41ffc9544ab2",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -2274,6 +2497,7 @@
 		remark = "f520404e3e634911628faf74ce17ab8b",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -2283,6 +2507,7 @@
 		remark = "b956f501672045928920d1be7fde0b8e",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -2292,6 +2517,7 @@
 		remark = "f3bbd008e26f29f695453ad11e34db9b",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 152,
 		sub_activity_list = {}
 	},
@@ -2301,6 +2527,7 @@
 		remark = "978387f95d354a61dd94321178a6cba8",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -2310,6 +2537,7 @@
 		remark = "5c945120daa38a0d7de9f1d969d04c4a",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -2319,6 +2547,7 @@
 		remark = "30eddea914f898488b8aa352bebc146c",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			91111,
@@ -2331,6 +2560,7 @@
 		remark = "3352dfcf8f69b45a293e59f2102b994f",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			91113
@@ -2342,6 +2572,7 @@
 		remark = "d9888d7041b40cc1d75e4d27851e45b2",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -2351,6 +2582,7 @@
 		remark = "f21d71293429e1768c01a70fe036217b",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -2360,6 +2592,7 @@
 		remark = "bdf4dcd5759fbcf1ee216d5f9a3358c9",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -2369,6 +2602,7 @@
 		remark = "b1f18bfe1d283dee6e99976fc2c23420",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -2378,6 +2612,7 @@
 		remark = "e3fd0d640c852545b1fb72327cdd8f45",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -2387,6 +2622,7 @@
 		remark = "8fef0c2e974b0e4e314736412bf65109",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -2396,6 +2632,7 @@
 		remark = "0d9c5a8f96c169e610d026c2f71a79b4",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -2405,6 +2642,7 @@
 		remark = "aa1a7d0393b1f59302bd11c03668503e",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -2414,6 +2652,7 @@
 		remark = "a52604e120d08eb31a02c6292c60dbb5",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -2423,6 +2662,7 @@
 		remark = "fa06befe252815f1cf690c1a81b66e8c",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -2432,6 +2672,7 @@
 		remark = "5ce3647995d4fcea53fe1cb0e8a5c93d",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -2441,6 +2682,7 @@
 		remark = "6be6c33022dc6866ad5ce5176bb7a3da",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -2450,6 +2692,7 @@
 		remark = "5bf121547425064504b9fb64ca4027b0",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -2459,6 +2702,7 @@
 		remark = "7f185b56387b9812b2f33bca4b2310a9",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -2468,6 +2712,7 @@
 		remark = "e1dc1c023f4cb611d2f98ce28b478a69",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -2477,6 +2722,7 @@
 		remark = "1e9dee0eecaa0d2a068372fa3b949562",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -2486,6 +2732,7 @@
 		remark = "d325368f9f7320f73fd45947e3afa420",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -2495,6 +2742,7 @@
 		remark = "766191fa4d3b2bcaf48f63ccb1d0cf7c",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -2504,6 +2752,7 @@
 		remark = "91c1f41b5adfa115cb1220c1709a4514",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -2513,6 +2762,7 @@
 		remark = "87ed808eacb74c1e3b778521cad5654f",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -2522,6 +2772,7 @@
 		remark = "060e84e6fafa5384e5ebfd97c8bd3607",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -2531,6 +2782,7 @@
 		remark = "206ce5546a57173c2ba3da00c1a5c595",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -2540,6 +2792,7 @@
 		remark = "7737536cda4e71c15583bfaaf9e0078e",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -2549,6 +2802,7 @@
 		remark = "1c028f0d45680a575b8ded9087ed819b",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -2558,6 +2812,7 @@
 		remark = "6a9a2f47e6d79d332e00d8c8da739658",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -2567,6 +2822,7 @@
 		remark = "2e6d9062fefa062e9dbb474973dbd936",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -2576,6 +2832,7 @@
 		remark = "ad096e6dd9ee3cff18dfb7338ea6383e",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 151,
 		sub_activity_list = {}
 	},
@@ -2585,6 +2842,7 @@
 		remark = "65dbb932bb9bd8f74f359f94677ed734",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 151,
 		sub_activity_list = {}
 	},
@@ -2594,6 +2852,7 @@
 		remark = "c648621cd0f0864e714453e1fc5652ec",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 151,
 		sub_activity_list = {}
 	},
@@ -2603,6 +2862,7 @@
 		remark = "d0c8b024b440dabeb15822faf091214e",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 151,
 		sub_activity_list = {}
 	},
@@ -2612,6 +2872,7 @@
 		remark = "aad267e5509a4353a68000a0d5355515",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 151,
 		sub_activity_list = {}
 	},
@@ -2621,6 +2882,7 @@
 		remark = "2289d169f03f4dd4b1d41a0c421b8666",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -2630,6 +2892,7 @@
 		remark = "bbe732bc63393b171a63d1f53c50cc28",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -2639,6 +2902,7 @@
 		remark = "32d3a1a03d929cfb1d0eac6b2a901f00",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -2648,6 +2912,7 @@
 		remark = "72b711b796711b9c1832530baafd4c7d",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -2657,6 +2922,7 @@
 		remark = "1808e2cce9de169fa7786fef5205ea0f",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -2666,6 +2932,7 @@
 		remark = "ea31194eedf46333877be7f3afe2d78a",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -2675,6 +2942,7 @@
 		remark = "0b40a20d6394db665c410bb49d9d5c2b",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -2684,6 +2952,7 @@
 		remark = "953cc9c9b4468a9ded280630c39aed0c",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -2693,6 +2962,7 @@
 		remark = "491c8f7cc0afefd3633567877fdf1e6f",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 145,
 		sub_activity_list = {}
 	},
@@ -2702,6 +2972,7 @@
 		remark = "4f004f196f5751e26dd312ef2369be04",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -2711,6 +2982,7 @@
 		remark = "02172ef5bae731ba8457296fcdfa77be",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -2720,6 +2992,7 @@
 		remark = "c4532615155345ebd072f9c229694235",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 153,
 		sub_activity_list = {}
 	},
@@ -2729,6 +3002,7 @@
 		remark = "5c58ce3cd40cf9fd40d3b405de1788a7",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 154,
 		sub_activity_list = {}
 	},
@@ -2738,6 +3012,7 @@
 		remark = "f3fd23f42c64da090274b862397f9f40",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 155,
 		sub_activity_list = {}
 	},
@@ -2747,6 +3022,7 @@
 		remark = "5a6af985e2db209a3c34fed5b7076eb9",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 156,
 		sub_activity_list = {}
 	},
@@ -2756,6 +3032,7 @@
 		remark = "c6ea389942821047799fbe14d652e969",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -2765,6 +3042,7 @@
 		remark = "5e34e42862a1cb3703e70aabc25aa55a",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -2774,6 +3052,7 @@
 		remark = "10e14ac124709a8d9916f57f7cd7e70f",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {}
 	},
@@ -2783,6 +3062,7 @@
 		remark = "2a58a76a514c50d1e8558aefdaa52aaf",
 		unlock_condition = "",
 		activity_theme = 9,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -2792,6 +3072,7 @@
 		remark = "49f89fbcbb44a01f7d26682dc9144522",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			101021,
@@ -2822,6 +3103,7 @@
 		remark = "7c56d4bff56197d7642ecf038b89801e",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			101022,
@@ -2835,6 +3117,7 @@
 		remark = "32bb1929240e7a0d539f96b5a49c32a9",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 170,
 		sub_activity_list = {}
 	},
@@ -2844,6 +3127,7 @@
 		remark = "121c3e2d6b01d90b68d1430a5f199677",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 170,
 		sub_activity_list = {}
 	},
@@ -2853,6 +3137,7 @@
 		remark = "9507696fc4fa58c8b8d79894c86c3ee4",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 170,
 		sub_activity_list = {}
 	},
@@ -2862,6 +3147,7 @@
 		remark = "f970f082c73a8653db1038054f6630d0",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 170,
 		sub_activity_list = {}
 	},
@@ -2871,6 +3157,7 @@
 		remark = "41d2f43b592ef0aa3c7b9b94d77255c8",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -2880,6 +3167,7 @@
 		remark = "7437923745ea738229a9c3eef913ef74",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -2889,6 +3177,7 @@
 		remark = "7bd1b821bf0dbc8fafda727c4781cc14",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -2898,6 +3187,7 @@
 		remark = "58a23354746785c41761548124ce5bef",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -2907,6 +3197,7 @@
 		remark = "1f56766d8607702e7796b8c24f407f5c",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -2916,6 +3207,7 @@
 		remark = "c7cdbd3fc48ea3a1798f451c369deaa1",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			101111
@@ -2927,6 +3219,7 @@
 		remark = "5a7f463c1dfdc03cebb805c69a5e4412",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			101112,
@@ -2939,6 +3232,7 @@
 		remark = "03718616b90ce7b760cb952be59b9aa5",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -2948,6 +3242,7 @@
 		remark = "4931f690a3b58cbeba9c2666c239ee7a",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -2957,6 +3252,7 @@
 		remark = "9d76c298b38edb7eaa8a94fbcad8a166",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -2966,6 +3262,7 @@
 		remark = "905eb442636010d0396c59859fe6686a",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -2975,6 +3272,7 @@
 		remark = "ec4b9f4c2324a320b1b8388982ce3cfd",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -2984,6 +3282,7 @@
 		remark = "fefde9b0b2c84d0781396869eb6daa3c",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -2993,6 +3292,7 @@
 		remark = "5dacc718fe50d02af229e59335fc0e10",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -3002,6 +3302,7 @@
 		remark = "4edf58ec0b7a5ef842bb9f36f8ee5a85",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 157,
 		sub_activity_list = {
 			101581,
@@ -3020,6 +3321,7 @@
 		remark = "a445e86659ceabcea87c9609b735ce57",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -3029,6 +3331,7 @@
 		remark = "80a9bc757f61cf442978f32ad342cac3",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -3038,6 +3341,7 @@
 		remark = "8da49b0f389f16a63dc2b5f8a1195a56",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -3047,6 +3351,7 @@
 		remark = "88f41ff5001e49df8b54a82ea1b1143b",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -3056,6 +3361,7 @@
 		remark = "4bbce4dfaa998fc611e302d6aee5249d",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -3065,6 +3371,7 @@
 		remark = "2d621183e6d28f11149d897d86ac1b92",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -3074,6 +3381,7 @@
 		remark = "1dfb2eab5a957eb1fae91cea87eb6ead",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -3083,6 +3391,7 @@
 		remark = "02740dcb763feac18dffc117b0400957",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -3092,6 +3401,7 @@
 		remark = "35b1e30edd38049420c8d179dd70b32a",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 1060,
 		sub_activity_list = {
 			101061,
@@ -3104,6 +3414,7 @@
 		remark = "f452d5ad1de6a8353d6a5b9c0549b414",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 106,
 		sub_activity_list = {}
 	},
@@ -3113,6 +3424,7 @@
 		remark = "ead4d500820e87ff500239ab6eb35911",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -3122,6 +3434,7 @@
 		remark = "9923d81f97b1bbe4653a3ab7eb6ae895",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 118,
 		sub_activity_list = {
 			101241,
@@ -3140,6 +3453,7 @@
 		remark = "c1295f00b881bec7816783b775f5c721",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -3149,6 +3463,7 @@
 		remark = "f3276a16326fcedf0ead586ea6a1e035",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -3158,6 +3473,7 @@
 		remark = "ca54f9dd073e15f415246b38422e1833",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -3167,6 +3483,7 @@
 		remark = "fbd14450d9219fc3d61bdc5329fc905e",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -3176,6 +3493,7 @@
 		remark = "836b412c887b13825cb2f430bc684426",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -3185,6 +3503,7 @@
 		remark = "522d4e6a53c81d81ccf12d5c10ea8cde",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -3194,6 +3513,7 @@
 		remark = "e05d1a116ed9187bbd5da2730163e0ef",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -3203,6 +3523,7 @@
 		remark = "c56108d5452c4fee9d22d93f177d0536",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -3212,6 +3533,7 @@
 		remark = "f4f3a28ee4b71c0f1f4e06a55f23a46f",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 159,
 		sub_activity_list = {
 			101601,
@@ -3228,6 +3550,7 @@
 		remark = "c8ca805c6caac486801a9110c6f3eb12",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 160,
 		sub_activity_list = {}
 	},
@@ -3237,6 +3560,7 @@
 		remark = "236d8f4dc369ae99ff3328e826dbdb56",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 160,
 		sub_activity_list = {}
 	},
@@ -3246,6 +3570,7 @@
 		remark = "026e383e560dd149832ecdb6b9a392a6",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 160,
 		sub_activity_list = {}
 	},
@@ -3255,6 +3580,7 @@
 		remark = "1ec623163ec8aae7227b65f2fb2cf78e",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 160,
 		sub_activity_list = {}
 	},
@@ -3264,6 +3590,7 @@
 		remark = "c27724a889fe7f374a89a24967d4483f",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 160,
 		sub_activity_list = {}
 	},
@@ -3273,6 +3600,7 @@
 		remark = "f5b62eb1ce855a8411b1706a6a44ea94",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 160,
 		sub_activity_list = {}
 	},
@@ -3282,6 +3610,7 @@
 		remark = "b8c4a3da56d7832ba29c340682f37345",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 161,
 		sub_activity_list = {
 			101621,
@@ -3301,6 +3630,7 @@
 		remark = "7ffc7d14d4f5d67a8acada5e70a6a00f",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {}
 	},
@@ -3310,6 +3640,7 @@
 		remark = "dca8fe931f789f97d3d567d85a099d6d",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {}
 	},
@@ -3319,6 +3650,7 @@
 		remark = "af3684f5b59265c3b04110f7bb5f1285",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {}
 	},
@@ -3328,6 +3660,7 @@
 		remark = "9838c64b74ad59a1146ec178cf10f8db",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {}
 	},
@@ -3337,6 +3670,7 @@
 		remark = "29b0f18796c36931c0a7b12028d6b4b0",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {}
 	},
@@ -3346,6 +3680,7 @@
 		remark = "5941080d03b292a30f4fb6c5a51d64ff",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {
 			101656
@@ -3357,6 +3692,7 @@
 		remark = "1cc1238b638793e8a492bb38204deb70",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {
 			101657
@@ -3368,6 +3704,7 @@
 		remark = "bcbe23a5f575c37903ed6ce181935941",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {
 			101658
@@ -3379,6 +3716,7 @@
 		remark = "75250b308df3cf8e938bc05817fc42c4",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {
 			101659
@@ -3390,6 +3728,7 @@
 		remark = "425133559f0204af6ee33cf8dd4547c3",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 165,
 		sub_activity_list = {}
 	},
@@ -3399,6 +3738,7 @@
 		remark = "1ab7313ecfb67c84d19d64590de8b5f2",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 166,
 		sub_activity_list = {}
 	},
@@ -3408,6 +3748,7 @@
 		remark = "fc60fcb247282731a0b47fa8afc23c0d",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 167,
 		sub_activity_list = {}
 	},
@@ -3417,6 +3758,7 @@
 		remark = "84c2d8467cdf9c2e58bdfd79ccff8045",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 168,
 		sub_activity_list = {}
 	},
@@ -3426,6 +3768,7 @@
 		remark = "699d56925cdc503409966908d7b5a238",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 163,
 		sub_activity_list = {
 			101641,
@@ -3443,6 +3786,7 @@
 		remark = "d46b8cd6f6cd24864982d52d7a7eecd8",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 164,
 		sub_activity_list = {}
 	},
@@ -3452,6 +3796,7 @@
 		remark = "365ed513a9ab0a9cfae3401c057eda52",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 164,
 		sub_activity_list = {}
 	},
@@ -3461,6 +3806,7 @@
 		remark = "9ff1f3e15ab68dd316aea8076a639449",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 164,
 		sub_activity_list = {}
 	},
@@ -3470,6 +3816,7 @@
 		remark = "55cd20aa38701eeea32ddbbbb86664fc",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 164,
 		sub_activity_list = {}
 	},
@@ -3479,6 +3826,7 @@
 		remark = "c9510fe26fd699f6ff28774e06ee64cc",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 164,
 		sub_activity_list = {}
 	},
@@ -3488,6 +3836,7 @@
 		remark = "5f4722500d11648d9b05d9ad26930628",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 164,
 		sub_activity_list = {}
 	},
@@ -3497,6 +3846,7 @@
 		remark = "86ea40b1ad78449ffda7f5edfa06d0a8",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 164,
 		sub_activity_list = {}
 	},
@@ -3506,6 +3856,7 @@
 		remark = "904e8848afc7e2883efcec180043c96b",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -3515,6 +3866,7 @@
 		remark = "99a5cadd83512dacf00850b76fb0052d",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 145,
 		sub_activity_list = {}
 	},
@@ -3524,6 +3876,7 @@
 		remark = "adcb428cbfc6aa736ea170fbb7f37b32",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -3533,6 +3886,7 @@
 		remark = "829a5f93cabe489c489277f631c30499",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -3542,6 +3896,7 @@
 		remark = "db9ad8927463874abc2779a1c05da639",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -3551,6 +3906,7 @@
 		remark = "e1c340791afdcc6439e862fdc2246685",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			101118,
@@ -3563,6 +3919,7 @@
 		remark = "a297a94e0d2d325dd7269481f775c154",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			101120,
@@ -3575,6 +3932,7 @@
 		remark = "91ecf3fe55c82295653ee5cfe11974ae",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -3584,6 +3942,7 @@
 		remark = "f8323c2f6af584309db100d9c62c627d",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -3593,6 +3952,7 @@
 		remark = "419811b9a8c7713f7559dc980bbb8c6f",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -3602,6 +3962,7 @@
 		remark = "9ea286903f7152296958c71b12f4c4f2",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -3611,6 +3972,7 @@
 		remark = "f0f5e75885e4736a2775f49bbf590d99",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -3620,6 +3982,7 @@
 		remark = "e331a32305c5b0cb64a4548e5d9bc623",
 		unlock_condition = "",
 		activity_theme = 10,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -3629,6 +3992,7 @@
 		remark = "541fd3ad283968865f66ae8a759d2d60",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			111691,
@@ -3646,6 +4010,7 @@
 		remark = "61f11cf72e0a8b5be824ae070364fe37",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -3655,6 +4020,7 @@
 		remark = "d780e15464778a7b33ed5e54cc1d9e37",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -3664,6 +4030,7 @@
 		remark = "23b641cb0e8887dc371f2b54a4eeb30b",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 169,
 		sub_activity_list = {}
 	},
@@ -3673,6 +4040,7 @@
 		remark = "ccbfdee5af85d84ed4c156de5fae1c32",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 183,
 		sub_activity_list = {
 			111711,
@@ -3691,6 +4059,7 @@
 		remark = "3de5bf625e0d39b1af7dab9af4e6ed0c",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 171,
 		sub_activity_list = {}
 	},
@@ -3700,6 +4069,7 @@
 		remark = "05ca4b2808e30b3df8a29abc526cf72b",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 171,
 		sub_activity_list = {}
 	},
@@ -3709,6 +4079,7 @@
 		remark = "1a4d5fbc8a5ba4395a521e5fa100e07f",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 171,
 		sub_activity_list = {}
 	},
@@ -3718,6 +4089,7 @@
 		remark = "e64014e7f4808b6640273897f5b720ba",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 171,
 		sub_activity_list = {}
 	},
@@ -3727,6 +4099,7 @@
 		remark = "dd345d05863094b84ea9e9a219374d8b",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 171,
 		sub_activity_list = {}
 	},
@@ -3736,6 +4109,7 @@
 		remark = "b451cc32be1f05682e61b434b6ecb303",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 171,
 		sub_activity_list = {}
 	},
@@ -3745,6 +4119,7 @@
 		remark = "c6857f8db648a6e7063fdec0bf004e94",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 171,
 		sub_activity_list = {}
 	},
@@ -3754,6 +4129,7 @@
 		remark = "0dfe0e94fdbc82c8fd93c77a4c3bcbf9",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 171,
 		sub_activity_list = {}
 	},
@@ -3763,6 +4139,7 @@
 		remark = "503cb28619c5a3b1b70d39d6b80febcf",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 172,
 		sub_activity_list = {
 			111811,
@@ -3782,6 +4159,7 @@
 		remark = "835983f78dbfc568b291ec3c4e503856",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 173,
 		sub_activity_list = {}
 	},
@@ -3791,6 +4169,7 @@
 		remark = "0ec866e8c369fd8d7b8c36af9c7b889e",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 174,
 		sub_activity_list = {
 			111751,
@@ -3805,6 +4184,7 @@
 		remark = "d4caba26ae90d140e52b8b388e68ab84",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 175,
 		sub_activity_list = {}
 	},
@@ -3814,6 +4194,7 @@
 		remark = "ee64d47ba71926e564e401b4a8d4a1b3",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 175,
 		sub_activity_list = {}
 	},
@@ -3823,6 +4204,7 @@
 		remark = "4accef6ba67c273140bf807b1ccf5dd0",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 175,
 		sub_activity_list = {}
 	},
@@ -3832,6 +4214,7 @@
 		remark = "f81eb2f7096bbb747aec45032b2098aa",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 175,
 		sub_activity_list = {}
 	},
@@ -3841,6 +4224,7 @@
 		remark = "1e47f546096e72fe1cf67bd725418fae",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 176,
 		sub_activity_list = {
 			111771,
@@ -3859,6 +4243,7 @@
 		remark = "e7e5f9e72738204919340343a5e407a8",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 177,
 		sub_activity_list = {}
 	},
@@ -3868,6 +4253,7 @@
 		remark = "f3fcb4efc0b26e095de5f434227fb5f4",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 177,
 		sub_activity_list = {}
 	},
@@ -3877,6 +4263,7 @@
 		remark = "e9c223175dc6fa20e0c15802621951be",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 177,
 		sub_activity_list = {}
 	},
@@ -3886,6 +4273,7 @@
 		remark = "65b3c8e687a9d3e35b786ff37c215e34",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 177,
 		sub_activity_list = {}
 	},
@@ -3895,6 +4283,7 @@
 		remark = "3f5a9a3d3450100a68bbf2a7924f2017",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 177,
 		sub_activity_list = {}
 	},
@@ -3904,6 +4293,7 @@
 		remark = "68b2a48b3d46259bb54cbc3d0f00d900",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 177,
 		sub_activity_list = {}
 	},
@@ -3913,6 +4303,7 @@
 		remark = "44393e43a291d068f9e25e8a33e9d291",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 177,
 		sub_activity_list = {}
 	},
@@ -3922,6 +4313,7 @@
 		remark = "0befdd670471d511e1ee87631c3a422c",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 177,
 		sub_activity_list = {}
 	},
@@ -3931,6 +4323,7 @@
 		remark = "a6b10add4bf44f13f9233807eff4f96f",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 178,
 		sub_activity_list = {}
 	},
@@ -3940,6 +4333,7 @@
 		remark = "b1b95fc3eb1fd423d3910db0dc38d707",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 181,
 		sub_activity_list = {}
 	},
@@ -3949,6 +4343,7 @@
 		remark = "e8f8ac4d88122e3063a7089f7e231543",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 181,
 		sub_activity_list = {}
 	},
@@ -3958,6 +4353,7 @@
 		remark = "d3c6aec5a8840a0ed55041d8435bce94",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 181,
 		sub_activity_list = {}
 	},
@@ -3967,6 +4363,7 @@
 		remark = "34c1572b4a005cb6d3313619c79d212e",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 181,
 		sub_activity_list = {}
 	},
@@ -3976,6 +4373,7 @@
 		remark = "31eadd56a81e9e96201143f99f2935c4",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 181,
 		sub_activity_list = {}
 	},
@@ -3985,6 +4383,7 @@
 		remark = "26a7eb4d10a9369043a5c748cd7f933a",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 181,
 		sub_activity_list = {}
 	},
@@ -3994,6 +4393,7 @@
 		remark = "cf55a7d5fc46bbd9d9064a5f2ac64772",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 181,
 		sub_activity_list = {}
 	},
@@ -4003,6 +4403,7 @@
 		remark = "7bb3b10087dfb2d73053a958e3deb457",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 181,
 		sub_activity_list = {}
 	},
@@ -4012,6 +4413,7 @@
 		remark = "2af61d9763f9cf81dfe815e0ea6c4982",
 		unlock_condition = "",
 		activity_theme = 11,
+		reward_show = "",
 		activity_template = 181,
 		sub_activity_list = {}
 	},
@@ -4021,6 +4423,7 @@
 		remark = "dffecea34da046519b0b15f2841e7874",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			120561,
@@ -4042,6 +4445,7 @@
 		remark = "8cc7a481c1992ea2111c437d7c5b0f52",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -4051,6 +4455,7 @@
 		remark = "00811d2e54218c3538dc32f3ea2cff39",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -4060,6 +4465,7 @@
 		remark = "7a5f9af4d864bafbd869c5c71e398569",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 56,
 		sub_activity_list = {
 			121821,
@@ -4073,6 +4479,7 @@
 		remark = "84075603b92d9970910e2c345e22999f",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 182,
 		sub_activity_list = {}
 	},
@@ -4082,6 +4489,7 @@
 		remark = "46cab628235b10430730b253b69fb158",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 182,
 		sub_activity_list = {}
 	},
@@ -4091,6 +4499,7 @@
 		remark = "bf68102c510b5c8117aee70741dbab99",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 182,
 		sub_activity_list = {}
 	},
@@ -4100,6 +4509,7 @@
 		remark = "44cbd6940698e0121463f28031ed1b27",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 180,
 		sub_activity_list = {}
 	},
@@ -4109,6 +4519,7 @@
 		remark = "26655e1211fc886881485442716faec7",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 145,
 		sub_activity_list = {}
 	},
@@ -4118,6 +4529,7 @@
 		remark = "068c089b2deabea5183571e095860077",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 152,
 		sub_activity_list = {}
 	},
@@ -4127,6 +4539,7 @@
 		remark = "055e7dbd568778f9cd964c9f0d222563",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 152,
 		sub_activity_list = {}
 	},
@@ -4136,6 +4549,7 @@
 		remark = "102b89c360b50a93ddc9618e7f42214b",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 103,
 		sub_activity_list = {
 			121041,
@@ -4154,6 +4568,7 @@
 		remark = "9293bb6e631dcd2e099844328ffee75c",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -4163,6 +4578,7 @@
 		remark = "fa745c2f7e58471c5cdf19e240ad1a54",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -4172,6 +4588,7 @@
 		remark = "ffbf591bf85ce27c388ab3c10a8c2598",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -4181,6 +4598,7 @@
 		remark = "fbdf5ae7c0deff6135fd2be24dd2bb50",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -4190,6 +4608,7 @@
 		remark = "12d87d6df2f5b6d1eb649c4d88078965",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -4199,6 +4618,7 @@
 		remark = "5df8f331279f5ba5542eb51ec2a19a2f",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -4208,6 +4628,7 @@
 		remark = "7130d6bdb24d0a09a9b249cbf2d12141",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -4217,6 +4638,7 @@
 		remark = "a2184607d46f50c28b218d7ef5fe3cc0",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -4226,6 +4648,7 @@
 		remark = "0cb1f2e4987b895ef16b7994c2563524",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -4235,6 +4658,7 @@
 		remark = "dd3bd956fb9dd897f57d34302d0f508c",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -4244,6 +4668,7 @@
 		remark = "e64bb38439c2d61f21bae343ce437779",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -4253,6 +4678,7 @@
 		remark = "e5932d993b039d6db8740e0bb76cf98d",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -4262,6 +4688,7 @@
 		remark = "117a16a94ee4a3ad45aaeeec119f1022",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			121111,
@@ -4274,6 +4701,7 @@
 		remark = "be044551369b86a9a7e9c5d0988caaac",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			121113,
@@ -4287,6 +4715,7 @@
 		remark = "e80852f9d5625bc7f41c511da1ea08ff",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -4296,6 +4725,7 @@
 		remark = "05678ddc16ffc2d281a33a521150bc43",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -4305,6 +4735,7 @@
 		remark = "0d4e75f32d99f76236de049288522057",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -4314,6 +4745,7 @@
 		remark = "c798b98f1f7cd9ac0ff0bdddb8a18d91",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -4323,6 +4755,7 @@
 		remark = "d02c18da5dd0446076be18b4de8b5568",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -4332,6 +4765,7 @@
 		remark = "06a2912abb6aa92bd74a0e6d91935949",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -4341,6 +4775,7 @@
 		remark = "e30ac59c23596e0a130f7a82ee5ce5b9",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -4350,6 +4785,7 @@
 		remark = "fd38538ead03044a52c5b7154da5bde0",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -4359,6 +4795,7 @@
 		remark = "8e9f583a154226cb909f0b72606f0e4a",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -4368,6 +4805,7 @@
 		remark = "bf0a97bb717e71564c21d7058d5e7646",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -4377,6 +4815,7 @@
 		remark = "cf868de3da236519cc0810ee88a38595",
 		unlock_condition = "",
 		activity_theme = 12,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -4386,6 +4825,7 @@
 		remark = "d502046db5eb760ea44dd6a84032503d",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -4395,6 +4835,7 @@
 		remark = "6591a4b989a787ca6c77b8e3103d969d",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			131201,
@@ -4421,6 +4862,7 @@
 		remark = "ebedfe8026cc3e742a55a32a8a5489fe",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			131701
@@ -4432,6 +4874,7 @@
 		remark = "5c6e4e70976aa197ecfddc57a4bdf63f",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 170,
 		sub_activity_list = {}
 	},
@@ -4441,6 +4884,7 @@
 		remark = "605caa4cd2aad297a21d6bcf65ee10c0",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -4450,6 +4894,7 @@
 		remark = "233459b2c5da56bbaf90229fbc60cccf",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -4459,6 +4904,7 @@
 		remark = "b0e9471cf3991fc337f81d1e4c867c18",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -4468,6 +4914,7 @@
 		remark = "5cac721e9f05d1d1d875be1b8813e0ae",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -4477,6 +4924,7 @@
 		remark = "7cf77b08716708eef8cf300c7f50f554",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -4486,6 +4934,7 @@
 		remark = "ac25eba261d95e291909b20c0e5faab3",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -4495,6 +4944,7 @@
 		remark = "d7508a5123304ba6b927947b755453fd",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -4504,6 +4954,7 @@
 		remark = "de6c65188e9158b9684fdcf3302437f6",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 157,
 		sub_activity_list = {
 			131581,
@@ -4522,6 +4973,7 @@
 		remark = "8ebb26bf3f56362142d9189841a533d3",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -4531,6 +4983,7 @@
 		remark = "371c26d3cd17346171ae82dbfdb7fb5c",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -4540,6 +4993,7 @@
 		remark = "f9e5ccddc0721d2ef0934659fe992677",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -4549,6 +5003,7 @@
 		remark = "ca43ed41c36c967e5bc3f9c8e74c283c",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -4558,6 +5013,7 @@
 		remark = "efae9d6b557e710195327098a0eff808",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -4567,6 +5023,7 @@
 		remark = "f12ecce23c9233d01e840144fb8801c7",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -4576,6 +5033,7 @@
 		remark = "aa757fab508d82966ee671fbe41d8c98",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -4585,6 +5043,7 @@
 		remark = "0503ff41c661b7283f9ca030a5e2c747",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -4594,6 +5053,7 @@
 		remark = "ad4fcf3d09c220af6192fcae7dfe992f",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 118,
 		sub_activity_list = {
 			131241,
@@ -4612,6 +5072,7 @@
 		remark = "b0a45c5d1f8c21582e8120cada4343fc",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -4621,6 +5082,7 @@
 		remark = "28d9064ee6d7a6e83a168cd668385c8d",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -4630,6 +5092,7 @@
 		remark = "7ef465ac34acd16c87ac20f2c4c603b0",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -4639,6 +5102,7 @@
 		remark = "796f6e25d763efdb974f2d425dee1bdd",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -4648,6 +5112,7 @@
 		remark = "0590ead5034d4798de2903d51e1286e9",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -4657,6 +5122,7 @@
 		remark = "e109cde0afe1833aceee3c7da0af083f",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -4666,6 +5132,7 @@
 		remark = "a2a896ab91ad59fe1c03ed410a5458ff",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -4675,6 +5142,7 @@
 		remark = "a7e5ef7767ff005a88216f9dcd7dee3b",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 124,
 		sub_activity_list = {}
 	},
@@ -4684,6 +5152,7 @@
 		remark = "7f99ed617fd321a87e324a2131e67dd1",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 128,
 		sub_activity_list = {
 			131301,
@@ -4700,6 +5169,7 @@
 		remark = "8fde46d8f1d8fd5ca328093bb6d60cf5",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 130,
 		sub_activity_list = {}
 	},
@@ -4709,6 +5179,7 @@
 		remark = "807cf5fe5496efb969817609a7dd893d",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 119,
 		sub_activity_list = {}
 	},
@@ -4718,6 +5189,7 @@
 		remark = "64d4a9ed3498adc768003f792d97813c",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 119,
 		sub_activity_list = {}
 	},
@@ -4727,6 +5199,7 @@
 		remark = "c48283851e9d36ba1f22b8678c5147a4",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 119,
 		sub_activity_list = {}
 	},
@@ -4736,6 +5209,7 @@
 		remark = "3c61d6dff880714f5ee3c7ad6ce609d9",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 119,
 		sub_activity_list = {}
 	},
@@ -4745,6 +5219,7 @@
 		remark = "0ade26fa9dc7e261a1b042b3f2497ad6",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 119,
 		sub_activity_list = {}
 	},
@@ -4754,6 +5229,7 @@
 		remark = "82633f183a0ec531219c1f5c10caa06d",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 113,
 		sub_activity_list = {
 			131151,
@@ -4772,6 +5248,7 @@
 		remark = "d6e4727bcdb5d4f2cd665f5282b37772",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -4781,6 +5258,7 @@
 		remark = "9c41504e08c8201621a48b481197cec1",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -4790,6 +5268,7 @@
 		remark = "cba5f0f55927bfbd660d385c0c86d688",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -4799,6 +5278,7 @@
 		remark = "a9507194f1fee04fd486c2a340dd533a",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -4808,6 +5288,7 @@
 		remark = "58dc2c6102714341c35a9b95eec5d038",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -4817,6 +5298,7 @@
 		remark = "24dff84e6e8b35254427d67900cbf9a9",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -4826,6 +5308,7 @@
 		remark = "1544d39dab1b1901fd62d8811d6dfdb5",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -4835,6 +5318,7 @@
 		remark = "2400ac66cfa045248f856c2c9932c382",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -4844,6 +5328,7 @@
 		remark = "2fc3a59820ce52ee2fed2389d50b7ac7",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 184,
 		sub_activity_list = {
 			131851,
@@ -4862,6 +5347,7 @@
 		remark = "a872c96e94c162861f7a40d26858ffe4",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -4871,6 +5357,7 @@
 		remark = "30b4eb85fe1ac013a5aad30b4c8e3319",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -4880,6 +5367,7 @@
 		remark = "3b9361b06a6443af4d35e27a41f255e2",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -4889,6 +5377,7 @@
 		remark = "9da0eff7aadc59e49b85f1514f94d31d",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -4898,6 +5387,7 @@
 		remark = "5c4cccab157f03458bdba984cf614eac",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -4907,6 +5397,7 @@
 		remark = "fb9b5d0cf431828a3ef548221c16665b",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -4916,6 +5407,7 @@
 		remark = "367cc662ea066b7edd0e326c546ea2e2",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -4925,6 +5417,7 @@
 		remark = "b63808cb6b2e3864d236d62881ab29de",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -4934,6 +5427,7 @@
 		remark = "9944c3ae86f1e55f45a32e0a7119387f",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 186,
 		sub_activity_list = {
 			131871,
@@ -4949,6 +5443,7 @@
 		remark = "648dd7a2ea85ba160cf9c9cb3baa6b2e",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 187,
 		sub_activity_list = {}
 	},
@@ -4958,6 +5453,7 @@
 		remark = "1eafb01fb0094d7c0d63b5f6eff7d410",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 187,
 		sub_activity_list = {}
 	},
@@ -4967,6 +5463,7 @@
 		remark = "3b85f952444af931faa879ab63d71120",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 187,
 		sub_activity_list = {}
 	},
@@ -4976,6 +5473,7 @@
 		remark = "804c645922bc1f790bc03592b2f32675",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 187,
 		sub_activity_list = {}
 	},
@@ -4985,6 +5483,7 @@
 		remark = "39d044e1010dcbbeffca9505154ac415",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 187,
 		sub_activity_list = {}
 	},
@@ -4994,6 +5493,7 @@
 		remark = "a82965804516dfffea82e95680a26219",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 145,
 		sub_activity_list = {}
 	},
@@ -5003,6 +5503,7 @@
 		remark = "e9f57b9241f0c21dda987e93209890a2",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -5012,6 +5513,7 @@
 		remark = "486611878fa8f87f2649643065c2af93",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5021,6 +5523,7 @@
 		remark = "eb49416cbc1c7788d5b4b34055205124",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -5030,6 +5533,7 @@
 		remark = "9cf47028ebe6c7897ac8859dd2bbd3b7",
 		unlock_condition = "",
 		activity_theme = 13,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -5039,6 +5543,7 @@
 		remark = "276b232bf5232f127cc8a5d2b1f526a5",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			141201,
@@ -5073,6 +5578,7 @@
 		remark = "fe316a9d7f74702709a3048a491cf7e6",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -5082,6 +5588,7 @@
 		remark = "224f579b84e337e6d07ea8b59a5d2329",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			141201
@@ -5093,6 +5600,7 @@
 		remark = "47f20577ee0b1b9c67c6461f7d8bc48c",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 56,
 		sub_activity_list = {}
 	},
@@ -5102,6 +5610,7 @@
 		remark = "844bb2833074e390e0cecb296e7585fc",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 182,
 		sub_activity_list = {}
 	},
@@ -5111,6 +5620,7 @@
 		remark = "675261f70a37fc9986748678c345420c",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 182,
 		sub_activity_list = {}
 	},
@@ -5120,6 +5630,7 @@
 		remark = "024ff0aa2e309fc4aea4e90b4d57abdd",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			141205
@@ -5131,6 +5642,7 @@
 		remark = "a70873ef48ca4253c01b6bfcb1bc9cae",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 56,
 		sub_activity_list = {
 			141202,
@@ -5143,6 +5655,7 @@
 		remark = "4afc670184a11417a4eba5b1525a906e",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -5152,6 +5665,7 @@
 		remark = "f6fa5f8e993591af7efc99ccee19d79c",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -5161,6 +5675,7 @@
 		remark = "e1acb39bb524764fb2f25819d7576cad",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -5170,6 +5685,7 @@
 		remark = "ad1bf26b082f651ed130bc4cf1881e23",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -5179,6 +5695,7 @@
 		remark = "fcc3f187718adc920cf3217be587af3d",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			141112,
@@ -5192,6 +5709,7 @@
 		remark = "bad83c544c1579cc82f1225490dbd324",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			141116
@@ -5203,6 +5721,7 @@
 		remark = "a4ee465ad9dae31ff902be39e877d43e",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -5212,6 +5731,7 @@
 		remark = "0a2d858d078a37b7c6082be88eccc798",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -5221,6 +5741,7 @@
 		remark = "1d814928c4fe2a07194083338aeb4ec0",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -5230,6 +5751,7 @@
 		remark = "3cab5254c3adb64de62b258065b9f28b",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -5239,6 +5761,7 @@
 		remark = "1b923cee50cffd8cbd986e8e4583ba5d",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -5248,6 +5771,7 @@
 		remark = "4d425d6c4dce56d62222e8a667f8929d",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -5257,6 +5781,7 @@
 		remark = "7e58484ba9614ed0d2bb3c8a68168b9a",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -5266,6 +5791,7 @@
 		remark = "e8cc7865ce90410fa2bf9a59012799fb",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -5275,6 +5801,7 @@
 		remark = "3187ab8db9dc15109a53e2dc0141457b",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -5284,6 +5811,7 @@
 		remark = "f63c323d1ad6e7bc40b318d9125b505f",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -5293,6 +5821,7 @@
 		remark = "3da295731ee46fb0d2cd68821a756f82",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -5302,6 +5831,7 @@
 		remark = "b725c51cdde1e096e6a38fa67bfee383",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -5311,6 +5841,7 @@
 		remark = "65a03ef378c221b607935108b3620b8d",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 190,
 		sub_activity_list = {
 			141901,
@@ -5327,6 +5858,7 @@
 		remark = "18dc27e0a2d9373f83d20db0d478f928",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5336,6 +5868,7 @@
 		remark = "c6badd2f4c54ff233209f6824cf7cc96",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5345,6 +5878,7 @@
 		remark = "b6e6efccc31a95b9a2a9bdccffa46ad7",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5354,6 +5888,7 @@
 		remark = "157cba9c9266b4abf02db73c4844630a",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5363,6 +5898,7 @@
 		remark = "48abe46892c0776daab6dac3043f3a03",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5372,6 +5908,7 @@
 		remark = "7346b07c123abf467bd7e42b23ac7c67",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5381,6 +5918,7 @@
 		remark = "4dc409627b60b343d3fb349ed7331592",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 148,
 		sub_activity_list = {
 			141921,
@@ -5399,6 +5937,7 @@
 		remark = "7d55d6cf36ef8eb74d24ae695b1a5ba4",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -5408,6 +5947,7 @@
 		remark = "364067c6c79c3d618e088f42c2aa94cd",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -5417,6 +5957,7 @@
 		remark = "e7838c837c1651f5193afb854cc82403",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -5426,6 +5967,7 @@
 		remark = "60b029465f2f03901256f3360c42fc03",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -5435,6 +5977,7 @@
 		remark = "f8389579dbfe71e7fdd4c73dd91f8b69",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -5444,6 +5987,7 @@
 		remark = "50f4465635afb04d195ca3c8d407e330",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -5453,6 +5997,7 @@
 		remark = "48c226498f12560d04c710b76c603689",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -5462,6 +6007,7 @@
 		remark = "c2c808a687ee47ffece26aaecca6da30",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -5471,6 +6017,7 @@
 		remark = "6d5e6a829e531605c7a37a7fa285d877",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 193,
 		sub_activity_list = {}
 	},
@@ -5479,6 +6026,7 @@
 		name = "33731347df0559fd1897a95d9fa3af12",
 		remark = "27e0e08219dfe69fc72372e86e285d3e",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 194,
 		sub_activity_list = {
 			141961,
@@ -5500,6 +6048,7 @@
 		remark = "bea5c9b84484af3da785e433029c7807",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 195,
 		sub_activity_list = {}
 	},
@@ -5509,6 +6058,7 @@
 		remark = "38ca27f56425f1541b2fc59b81767154",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 196,
 		sub_activity_list = {}
 	},
@@ -5518,6 +6068,7 @@
 		remark = "8a896459629c2c10eca4697b5f6f23d2",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 197,
 		sub_activity_list = {}
 	},
@@ -5527,6 +6078,7 @@
 		remark = "e7d71598674add3bb78ae2a1d500df23",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 198,
 		sub_activity_list = {}
 	},
@@ -5536,6 +6088,7 @@
 		remark = "b4403e27de92f624c1b89d7cc4cc8baf",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 199,
 		sub_activity_list = {}
 	},
@@ -5545,6 +6098,7 @@
 		remark = "8e08445edbd922b0e6edc1fb02b967ab",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5554,6 +6108,7 @@
 		remark = "6e1914d6a5796a149d764596d56fe375",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5563,6 +6118,7 @@
 		remark = "f43d996321f69ed16c5ae01d6f7f7ea1",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 201,
 		sub_activity_list = {}
 	},
@@ -5572,6 +6128,7 @@
 		remark = "bd5d69fbe5d6a710ec1cf81ccf0e5a0b",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 10,
 		sub_activity_list = {}
 	},
@@ -5581,6 +6138,7 @@
 		remark = "09e0a1885004409895a2ca0aaf7cf6f0",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 190,
 		sub_activity_list = {
 			142062,
@@ -5593,6 +6151,7 @@
 		remark = "a8c15d93efe812f62e9f8e0e2cd795b6",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5602,6 +6161,7 @@
 		remark = "d4ba104ad158b0b33e174975c278bcdc",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -5611,6 +6171,7 @@
 		remark = "36f213c3a4b0ba1d5c585019e96d7a8b",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 207,
 		sub_activity_list = {}
 	},
@@ -5620,6 +6181,7 @@
 		remark = "5ab64d0e29580278ab366e63809e605e",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 10,
 		sub_activity_list = {}
 	},
@@ -5629,6 +6191,7 @@
 		remark = "cf2fa51ceeaa2d610d90ce20f5955e7e",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -5638,6 +6201,7 @@
 		remark = "bc1ea9c7aec23c97fce02085435d19fb",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -5647,6 +6211,7 @@
 		remark = "37e70da2d7f7705595a1e1382d75d47e",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5656,6 +6221,7 @@
 		remark = "232d8cbea75074c4b941a24ca178a8e0",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5665,6 +6231,7 @@
 		remark = "603c827196defd2995813a2041fd6bea",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5674,6 +6241,7 @@
 		remark = "cf990397d7c54fc7ea140406148b67c5",
 		unlock_condition = "",
 		activity_theme = 15,
+		reward_show = "",
 		activity_template = 205,
 		sub_activity_list = {
 			152021,
@@ -5688,6 +6256,7 @@
 		remark = "f26064346c37012002692b6f87edc0b0",
 		unlock_condition = "",
 		activity_theme = 15,
+		reward_show = "",
 		activity_template = 202,
 		sub_activity_list = {}
 	},
@@ -5697,6 +6266,7 @@
 		remark = "ece6027cde31fa1910cb6c7672d05ea9",
 		unlock_condition = "",
 		activity_theme = 15,
+		reward_show = "",
 		activity_template = 208,
 		sub_activity_list = {}
 	},
@@ -5706,6 +6276,7 @@
 		remark = "785d29e1c3d76d48f003d8a649efa169",
 		unlock_condition = "",
 		activity_theme = 15,
+		reward_show = "",
 		activity_template = 203,
 		sub_activity_list = {}
 	},
@@ -5715,6 +6286,7 @@
 		remark = "7b282bbe5121ac3e623b018d4900f436",
 		unlock_condition = "",
 		activity_theme = 15,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5724,6 +6296,7 @@
 		remark = "bcd2e1041416ef755934aa0e4021f6e7",
 		unlock_condition = "",
 		activity_theme = 15,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -5733,6 +6306,7 @@
 		remark = "5d52f9158d28912d01d4971ff45b6f5b",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 73,
 		sub_activity_list = {
 			161102,
@@ -5747,6 +6321,7 @@
 		remark = "3cebdc792bda8993977b56b05d41f679",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5756,6 +6331,7 @@
 		remark = "1adb70b9014278c324a46897bd26353c",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5765,6 +6341,7 @@
 		remark = "b6c42294970c8fe0f36b625eeba68098",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5774,6 +6351,7 @@
 		remark = "4e218758b7eeaa39325ceb5997b0091d",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -5783,6 +6361,7 @@
 		remark = "48706af896b7f2cab5f1930e4986789d",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			141204,
@@ -5818,6 +6397,7 @@
 		remark = "6627a9c18150539ad20802c97fbb7fa1",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -5827,6 +6407,7 @@
 		remark = "018e69b6d5d5c96af51365f639e6578a",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -5836,6 +6417,7 @@
 		remark = "bcf8638eb3b5d29ee6cc890c960e6296",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			170561
@@ -5847,6 +6429,7 @@
 		remark = "f9ba98418ed69854bdbbde1e86a0bb0d",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 56,
 		sub_activity_list = {}
 	},
@@ -5856,6 +6439,7 @@
 		remark = "9d9c56cb24f1f9c41f76719d3a41bb41",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			171701
@@ -5867,6 +6451,7 @@
 		remark = "0691b295e5ea8e4c2b51b8b87759e004",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 170,
 		sub_activity_list = {}
 	},
@@ -5876,6 +6461,7 @@
 		remark = "7dfc228a4f10366cd212193d00eaab5d",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -5885,6 +6471,7 @@
 		remark = "9ce1ddd38450e2ff54742f0579e6686f",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -5894,6 +6481,7 @@
 		remark = "397ca3003f097b93013b6577c77d9943",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -5903,6 +6491,7 @@
 		remark = "11f43c7daaa7469163f10b8e8e1274af",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -5912,6 +6501,7 @@
 		remark = "81b64ed8bf057eba0e661b6eeef504c2",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			171111
@@ -5923,6 +6513,7 @@
 		remark = "31b779e947fe9fea95ccf4b6dcc840ca",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			171112,
@@ -5936,6 +6527,7 @@
 		remark = "6ef3675a7d0e6d808f08200bb1234218",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -5945,6 +6537,7 @@
 		remark = "6c90f6517e9dd59751fb8936a2d497e9",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -5954,6 +6547,7 @@
 		remark = "a24709e0b948ded4d2ecc3279042c851",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -5963,6 +6557,7 @@
 		remark = "04569e72eed8cd1326343110db69e9be",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -5972,6 +6567,7 @@
 		remark = "79e44de0d808f8913e2115d13a545aae",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -5981,6 +6577,7 @@
 		remark = "88dc3bc6ff4c42bce3aec4f4f534f5ae",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -5990,6 +6587,7 @@
 		remark = "30ab4b79e0e4f804695ffcd36b71a940",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -5999,6 +6597,7 @@
 		remark = "45556c8c8ec3ef19dbcd0c4671e2d1ae",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -6008,6 +6607,7 @@
 		remark = "adcefd0fc8bb44f4df005f06df040e3f",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 152,
 		sub_activity_list = {}
 	},
@@ -6017,6 +6617,7 @@
 		remark = "70645e7ede1787b295e33f27b23ec7ef",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 152,
 		sub_activity_list = {
 			170043,
@@ -6029,6 +6630,7 @@
 		remark = "3194363b04ea222f8fed4bebafde420b",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 209,
 		sub_activity_list = {}
 	},
@@ -6038,6 +6640,7 @@
 		remark = "ee56f800a76240e6c6875fce2087898a",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 105,
 		sub_activity_list = {
 			171270,
@@ -6060,6 +6663,7 @@
 		remark = "1828c9480c6093f70d955da50455e6ca",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -6069,6 +6673,7 @@
 		remark = "881da18cfd8684ea5d1a33420b3cfe1d",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -6078,6 +6683,7 @@
 		remark = "80ae3b9bebee3377889248a87b4eeb11",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -6087,6 +6693,7 @@
 		remark = "1190d4f4e0f95f23eff86902183425db",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -6096,6 +6703,7 @@
 		remark = "0b5b6b17ddf876b05dce9d2a7e9d9880",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -6105,6 +6713,7 @@
 		remark = "5b1202c829bbc9b4ea4f159d95ac9671",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -6114,6 +6723,7 @@
 		remark = "63d1159342e84032e4e6e4744c62ec48",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -6123,6 +6733,7 @@
 		remark = "e1f4b4f8a7f16109ccb05a32082ad2ee",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -6132,6 +6743,7 @@
 		remark = "8f988929118a2642240b8abe931dc35f",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -6141,6 +6753,7 @@
 		remark = "4c4f7439a1ecf7c52a24ce893c16fb17",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -6150,6 +6763,7 @@
 		remark = "c1653e25fe90689d702405642661cd50",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -6159,6 +6773,7 @@
 		remark = "6f751cdd66d38398009eddabbb58a3a0",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -6168,6 +6783,7 @@
 		remark = "a50cc3bf12825d8c907f9d4ed5f59d56",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 211,
 		sub_activity_list = {
 			172121,
@@ -6187,6 +6803,7 @@
 		remark = "291c0dd543b24f97c5c3a3bb15189094",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -6196,6 +6813,7 @@
 		remark = "291fc3a7d130f3995c5b055cb8ce85bb",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -6205,6 +6823,7 @@
 		remark = "1f7c5e512850e02e006e75fba55362a5",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -6214,6 +6833,7 @@
 		remark = "6c39b1185f35984604159b7c399b1bf1",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -6223,6 +6843,7 @@
 		remark = "95e7b53629bc73c60edc7285e93d5283",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -6232,6 +6853,7 @@
 		remark = "86e1221b5a2d3759cd570fe6acc80f4d",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -6241,6 +6863,7 @@
 		remark = "0422b59c78fc3667a11e98ab1fc19937",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -6250,6 +6873,7 @@
 		remark = "d4d0419fdf1365156a829823fa17d0f1",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -6259,6 +6883,7 @@
 		remark = "8b8adf7a48ee64bbbf79de036a1333e6",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -6268,6 +6893,7 @@
 		remark = "888ce7a1936e185aeafdd0742245b081",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -6277,6 +6903,7 @@
 		remark = "ecf2ffd15b56901fcc4548d1196836cb",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -6285,6 +6912,7 @@
 		name = "19272c69f430829f1e2d82d69d062394",
 		remark = "691bfd562606f7304c9c9db5e21c9fd7",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 194,
 		sub_activity_list = {
 			171961,
@@ -6306,6 +6934,7 @@
 		remark = "612100dccf404cc51d8fe23219e2cac1",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 195,
 		sub_activity_list = {}
 	},
@@ -6315,6 +6944,7 @@
 		remark = "0ebe2ecac8846a2ea429836b04d0fd04",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 196,
 		sub_activity_list = {}
 	},
@@ -6324,6 +6954,7 @@
 		remark = "db25852b10fd6fd554df4c6cf14075eb",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 197,
 		sub_activity_list = {}
 	},
@@ -6333,6 +6964,7 @@
 		remark = "67ea44211e0f08eed17433bf9d70bdbc",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 198,
 		sub_activity_list = {}
 	},
@@ -6342,6 +6974,7 @@
 		remark = "ccba485105ab7ebd5323029bcd61d510",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 199,
 		sub_activity_list = {}
 	},
@@ -6351,6 +6984,7 @@
 		remark = "93e87431a36514abf89b5f62f1c33c83",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -6360,6 +6994,7 @@
 		remark = "8befa887da7e66ffbc84aecc134662fb",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -6369,6 +7004,7 @@
 		remark = "f6524cd7cfc833156033272d133f7389",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -6378,6 +7014,7 @@
 		remark = "939ebc85d10d828f9b469da517479078",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -6387,6 +7024,7 @@
 		remark = "9a6e62da792e5a97748364c7e8df795f",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -6396,6 +7034,7 @@
 		remark = "43d8dab64a0c9a8ca1da8a70e743516e",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 214,
 		sub_activity_list = {
 			170045
@@ -6407,6 +7046,7 @@
 		remark = "0a4d07189c0bfe01247176093cd9be28",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -6416,6 +7056,7 @@
 		remark = "1a210b4cce4e4a2e4a62df1e4dd9d489",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -6425,6 +7066,7 @@
 		remark = "4562835fbf92b2fd0ca044eda8b8cfd7",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -6434,6 +7076,7 @@
 		remark = "ae1394fcf5f4763c86c9f935b6d42709",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -6443,6 +7086,7 @@
 		remark = "2566f0a9408fd0a7a7457ea84a3d5119",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 10,
 		sub_activity_list = {}
 	},
@@ -6452,6 +7096,7 @@
 		remark = "3f873d8928f3d778b440d2374bb14acc",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 10,
 		sub_activity_list = {}
 	},
@@ -6461,6 +7106,7 @@
 		remark = "f4f8aa50cdc363c038962e34ebfa678e",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -6470,6 +7116,7 @@
 		remark = "427abf49c9f94e3e8b68ba07c78ca098",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -6479,6 +7126,7 @@
 		remark = "20ab80eae81aa29c1db337614c568e7b",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -6488,6 +7136,7 @@
 		remark = "c2795b795ec47e0535899f3bff729b22",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 73,
 		sub_activity_list = {
 			170732,
@@ -6502,6 +7151,7 @@
 		remark = "dba4278efa6dc12f7d17feb28acad164",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -6511,6 +7161,7 @@
 		remark = "7335d643f31f28e0bd85c1e70c8b7e81",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -6520,6 +7171,7 @@
 		remark = "5269e65064b9ffed5f2a75702beb292d",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -6529,6 +7181,7 @@
 		remark = "393d7faff254f783da8bf879331735a5",
 		unlock_condition = "",
 		activity_theme = 17,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -6538,6 +7191,7 @@
 		remark = "c22f793442273eb0b33d16916e46ea01",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			181201,
@@ -6569,6 +7223,7 @@
 		remark = "80d9a3ecd4ee7feed56448e78dea5bc6",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			180561
@@ -6580,6 +7235,7 @@
 		remark = "424eeb2d7925301578a5584a6e2255aa",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 56,
 		sub_activity_list = {
 			180103,
@@ -6593,6 +7249,7 @@
 		remark = "a6fef5ee19410d376bdabfdec1f27014",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 182,
 		sub_activity_list = {}
 	},
@@ -6602,6 +7259,7 @@
 		remark = "6f77aec65daa619a97efb42c67533aa6",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 182,
 		sub_activity_list = {}
 	},
@@ -6611,6 +7269,7 @@
 		remark = "af3efdf25c01cbe509ebd02e671c302d",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 182,
 		sub_activity_list = {}
 	},
@@ -6620,6 +7279,7 @@
 		remark = "36362723bef8d13a994515d707a7e61a",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			180202
@@ -6631,6 +7291,7 @@
 		remark = "113f8935c18d89c5c8e601f445c21864",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 170,
 		sub_activity_list = {}
 	},
@@ -6640,6 +7301,7 @@
 		remark = "722045b71e1819b88af674270c68f546",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 215,
 		sub_activity_list = {}
 	},
@@ -6649,6 +7311,7 @@
 		remark = "723ff8d21581bbb7228b044fc34a3cca",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 216,
 		sub_activity_list = {
 			180041
@@ -6660,6 +7323,7 @@
 		remark = "a8370cc42bcb93d9539781b4cc153b68",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -6669,6 +7333,7 @@
 		remark = "18ebfab49056232e20d8cf430484f576",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 217,
 		sub_activity_list = {
 			181461,
@@ -6687,6 +7352,7 @@
 		remark = "ef19bcbbe63cb83de918df41fdcdd373",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -6696,6 +7362,7 @@
 		remark = "e93e58c06261a7d5268c30def9cc6b3f",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -6705,6 +7372,7 @@
 		remark = "e759ddc83bce460df93f9884777968d2",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -6714,6 +7382,7 @@
 		remark = "f1fa9d8462dbe12b712e8b03e6b6d03e",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -6723,6 +7392,7 @@
 		remark = "57ca4e745810cd739753e6dcfb20ed3c",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -6732,6 +7402,7 @@
 		remark = "99793cea6d6c96b60455ee1abaf4b37c",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -6741,6 +7412,7 @@
 		remark = "bf173d6ef8272e0dfb2d1d9fd0b3712b",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -6750,6 +7422,7 @@
 		remark = "de0d21e7b6f290d106da3f15e7edc54a",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -6759,6 +7432,7 @@
 		remark = "95ce26d7271d04b7c2072370d93e094a",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -6768,6 +7442,7 @@
 		remark = "75bd67cc9a866d02e138e2d3e4fc841a",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -6777,6 +7452,7 @@
 		remark = "f371149b2d6047ab3440d9691aa5e0c9",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -6786,6 +7462,7 @@
 		remark = "2244a5a1edcb2178ec02ff37fe3d8502",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -6795,6 +7472,7 @@
 		remark = "f2bd687372c64b1afcba5f9e0f2b0f2d",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -6804,6 +7482,7 @@
 		remark = "f0bbd736c97468f5df27502ed9d7d36b",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -6813,6 +7492,7 @@
 		remark = "dee51a7dec5fdee885da8c5a5cc3facb",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			181111,
@@ -6826,6 +7506,7 @@
 		remark = "caed913e7f64b5d7c5f33bca0c615c9f",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			181114,
@@ -6839,6 +7520,7 @@
 		remark = "c4aaebf9d68fdf655362c195dd4d017e",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -6848,6 +7530,7 @@
 		remark = "9d07d8f468a3fe084a4fe2cffb7d3e00",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -6857,6 +7540,7 @@
 		remark = "fb1d01c66820225fb991e75b63a7cb27",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -6866,6 +7550,7 @@
 		remark = "f4a52944cfebf317b0bfc9972078f696",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -6875,6 +7560,7 @@
 		remark = "a80088fd1bf2f1632e90f4fc25d813d9",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -6884,6 +7570,7 @@
 		remark = "fa1f421b4c121e8890d0df6654c6fa18",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -6893,6 +7580,7 @@
 		remark = "b2e195d86676b4d4b265a2fc64fd84c7",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -6902,6 +7590,7 @@
 		remark = "6e3270ce2cf3df65bf9ae065c69ee19a",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 103,
 		sub_activity_list = {
 			181041,
@@ -6918,6 +7607,7 @@
 		remark = "d69eb4d8c9046795319502ee6e916fc0",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -6927,6 +7617,7 @@
 		remark = "148c8db3dc6e5a4c3804bcf7470668f4",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -6936,6 +7627,7 @@
 		remark = "fd9eb9cc2bb673e8c21e17adedab8281",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -6945,6 +7637,7 @@
 		remark = "8b86415a744f1f902b9719e31b91837b",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -6954,6 +7647,7 @@
 		remark = "68cc0a1662c3d3da875aa4ef0d6484af",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -6963,6 +7657,7 @@
 		remark = "06a9ebf993cb7b91af6ce06306f97d70",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -6972,6 +7667,7 @@
 		remark = "433cbeeabd9fdb5a0593ccfb94d05161",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -6981,6 +7677,7 @@
 		remark = "23c8b4015eb220fac7bcc422fecfceb1",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -6990,6 +7687,7 @@
 		remark = "f246cb93d53d0fc151f9b1cea79a42e0",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -6999,6 +7697,7 @@
 		remark = "a77fad396e58718a73d73d93b0bbc8d8",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -7007,6 +7706,7 @@
 		name = "1d587665df49409ab4ecba4e3b4283fb",
 		remark = "ca6e876c7b31959befe3d9516c68f800",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 194,
 		sub_activity_list = {
 			181961,
@@ -7028,6 +7728,7 @@
 		remark = "c67e4331f20cdbb918c88cb5c7dc4dea",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 196,
 		sub_activity_list = {}
 	},
@@ -7037,6 +7738,7 @@
 		remark = "3186aa517d3a087cbc82ff55f824e751",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 197,
 		sub_activity_list = {}
 	},
@@ -7046,6 +7748,7 @@
 		remark = "0dfa5c27c2c5c5f7ed2a93e24e2dcd69",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 198,
 		sub_activity_list = {}
 	},
@@ -7055,6 +7758,7 @@
 		remark = "bc561c081b4859e724ac4c5290b1d134",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 199,
 		sub_activity_list = {}
 	},
@@ -7064,6 +7768,7 @@
 		remark = "f2f399b29c0222076a66974160bc220f",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -7073,6 +7778,7 @@
 		remark = "b9f31d58be7bd9f2d68de6572d2f9591",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 195,
 		sub_activity_list = {}
 	},
@@ -7082,6 +7788,7 @@
 		remark = "19bb83d250c5607132cc7348fe462e55",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 161,
 		sub_activity_list = {
 			181620,
@@ -7102,6 +7809,7 @@
 		remark = "8f3181e6d17eadcc92f8e77858a512af",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {}
 	},
@@ -7111,6 +7819,7 @@
 		remark = "4b7b7135f1f991da87a73dfc2ba5dd1e",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {}
 	},
@@ -7120,6 +7829,7 @@
 		remark = "446bb8dee268f009a26a34014c4d26cf",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {}
 	},
@@ -7129,6 +7839,7 @@
 		remark = "20bde3d6ebdd2ae0c3c727a6bc5db7c2",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {}
 	},
@@ -7138,6 +7849,7 @@
 		remark = "26c6c1eeece4d010baae54991b815a4d",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {}
 	},
@@ -7147,6 +7859,7 @@
 		remark = "16053c709f7dec5c148f22698bf1e17a",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {}
 	},
@@ -7156,6 +7869,7 @@
 		remark = "a8a4bfa01865e827156c69262b8b5cf5",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {
 			181656
@@ -7167,6 +7881,7 @@
 		remark = "144e7994b2181759d50326d34bcdc7e8",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {
 			181657
@@ -7178,6 +7893,7 @@
 		remark = "700ef15b703fc04a6fe5eaa6d9bb3cff",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {
 			181658
@@ -7189,6 +7905,7 @@
 		remark = "463a005a9bd9de72741a697a48e53f3a",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 162,
 		sub_activity_list = {
 			181659
@@ -7200,6 +7917,7 @@
 		remark = "e61b2a19b85d09286785ed09df88ac65",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 165,
 		sub_activity_list = {}
 	},
@@ -7209,6 +7927,7 @@
 		remark = "32c46048f59759f5dcf52a091122ce4d",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 166,
 		sub_activity_list = {}
 	},
@@ -7218,6 +7937,7 @@
 		remark = "7e1f15fd27c9f2fa82d4e9669bf3e01b",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 167,
 		sub_activity_list = {}
 	},
@@ -7227,6 +7947,7 @@
 		remark = "73bd69ee448d4c2c64e2ed0e263e1412",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 168,
 		sub_activity_list = {}
 	},
@@ -7236,6 +7957,7 @@
 		remark = "9bcbbed57d41e07426b8236e698c00e4",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 10,
 		sub_activity_list = {}
 	},
@@ -7245,6 +7967,7 @@
 		remark = "39dcccef7a6df8f769bded3bd3accfc7",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 10,
 		sub_activity_list = {}
 	},
@@ -7254,6 +7977,7 @@
 		remark = "f56245de7c8ca1c19741f93932386754",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -7263,6 +7987,7 @@
 		remark = "b26179ec96503e27b8f97c92cdf2a99a",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -7272,6 +7997,7 @@
 		remark = "f595445f61ce081c80b8e579cd5dca41",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -7281,6 +8007,7 @@
 		remark = "148cb4d4c6847a8e1bb2b9b7fece674e",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -7290,6 +8017,7 @@
 		remark = "c69de286c902a2d230d37ac629c6c426",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 219,
 		sub_activity_list = {
 			182201,
@@ -7304,6 +8032,7 @@
 		remark = "ad9cef2c2a59b698605d87c834700947",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 220,
 		sub_activity_list = {}
 	},
@@ -7313,6 +8042,7 @@
 		remark = "bd3a3e9dc75d4853cb350cebb8ca9664",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 220,
 		sub_activity_list = {}
 	},
@@ -7322,6 +8052,7 @@
 		remark = "321756c328b80b1f6dc32dcc9d352e9d",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 220,
 		sub_activity_list = {}
 	},
@@ -7331,6 +8062,7 @@
 		remark = "503a8161a4ce9b639335d9cb31b0ba2d",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -7340,6 +8072,7 @@
 		remark = "9c45b3fdadc81572f38c5fd317224fb4",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -7349,6 +8082,7 @@
 		remark = "069b0b0f2a7ab9a81a81cc162bd72c16",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 221,
 		sub_activity_list = {
 			182221,
@@ -7363,6 +8097,7 @@
 		remark = "b9a78cb5c5e4f1b5189a9773fdbeb0cc",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 222,
 		sub_activity_list = {}
 	},
@@ -7372,6 +8107,7 @@
 		remark = "ae4c0aaa96c1fa5d9eeff55f10b57b1e",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 222,
 		sub_activity_list = {}
 	},
@@ -7381,6 +8117,7 @@
 		remark = "24fdee687ddf31eea63eb4877d98f67e",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 223,
 		sub_activity_list = {}
 	},
@@ -7390,6 +8127,7 @@
 		remark = "7cb9d8a20f41a28fad6461192c59cd4a",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 223,
 		sub_activity_list = {}
 	},
@@ -7399,6 +8137,7 @@
 		remark = "7a261d4c91ea2cd0ee76dbe0fcbfcb91",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -7408,6 +8147,7 @@
 		remark = "9c099165cda6fc9d471c0bd891a0f917",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -7417,6 +8157,7 @@
 		remark = "a691a764e5f7b7c497e2a690bd2e08bc",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 231,
 		sub_activity_list = {}
 	},
@@ -7426,6 +8167,7 @@
 		remark = "0297e04161b736ebb0575401c2ea49b5",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -7435,6 +8177,7 @@
 		remark = "d34d411ec65c560e87516b04924c2a47",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 73,
 		sub_activity_list = {
 			180732,
@@ -7449,6 +8192,7 @@
 		remark = "8ac41f1d80fef7c3c915de2bf567463c",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -7458,6 +8202,7 @@
 		remark = "04f285613281aeec34503c421a8a40db",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -7467,6 +8212,7 @@
 		remark = "2cc7a2a8defa274e7c4460aed23672de",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -7476,6 +8222,7 @@
 		remark = "d06c655453b5f32af4cc3405e08dfb39",
 		unlock_condition = "",
 		activity_theme = 18,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -7485,6 +8232,7 @@
 		remark = "bb09bb7cb469719409b91ec7dc5c7ad4",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			182251,
@@ -7498,6 +8246,7 @@
 		remark = "abd761a6ecfead1bbd60568d505493e4",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -7507,6 +8256,7 @@
 		remark = "ee1be17427fa19a08f71df8364311c50",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -7516,6 +8266,7 @@
 		remark = "436f765812c967897fdd9439d5f4a349",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -7525,6 +8276,7 @@
 		remark = "b178c49956ebfdcc023910cd2c8b4650",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -7534,6 +8286,7 @@
 		remark = "ffc9c8360916311b89d5f81151f16a38",
 		unlock_condition = "",
 		activity_theme = 14,
+		reward_show = "",
 		activity_template = 9003,
 		sub_activity_list = {}
 	},
@@ -7543,6 +8296,7 @@
 		remark = "5e248a1ed2109f7db80d9be7bc0b889c",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			1061020,
@@ -7562,6 +8316,7 @@
 		remark = "89d392045fffb1ebbbaa5d50833ac2dc",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			1061021,
@@ -7574,6 +8329,7 @@
 		remark = "170275468475a446babe9fecc13ef856",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 102,
 		sub_activity_list = {}
 	},
@@ -7582,6 +8338,7 @@
 		name = "04d6d872e42af80b5e33613b4fb20b7b",
 		remark = "772bace7ce3c4c222cb74ff3358737b2",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 102,
 		sub_activity_list = {},
 		unlock_condition = {
@@ -7598,6 +8355,7 @@
 		remark = "771cb5da20a0b8849993680efe81cd98",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 101,
 		sub_activity_list = {}
 	},
@@ -7607,6 +8365,7 @@
 		remark = "02cccbb6ce62aeac46f795cc558b5c85",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -7616,6 +8375,7 @@
 		remark = "dae188af3638c0bd04b637d572607aa9",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 108,
 		sub_activity_list = {
 			1061141,
@@ -7633,6 +8393,7 @@
 		remark = "2bf9bf900a18166413b57b8bf200acb3",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 113,
 		sub_activity_list = {
 			1061091,
@@ -7650,6 +8411,7 @@
 		remark = "aca3134dbe96ca9606b17558a744e514",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 110,
 		sub_activity_list = {
 			1061151,
@@ -7667,6 +8429,7 @@
 		remark = "3b85f70778d4e87a11164a63e0e2594d",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 103,
 		sub_activity_list = {
 			1061041,
@@ -7682,6 +8445,7 @@
 		remark = "2ab08676999caf8b8484ead0179dd33e",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 112,
 		sub_activity_list = {}
 	},
@@ -7691,6 +8455,7 @@
 		remark = "3f094bb63dd14618ba5a8adadbe80744",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -7700,6 +8465,7 @@
 		remark = "5ae3c5bc4ea0580ed326f7d1be5455dc",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 109,
 		sub_activity_list = {}
 	},
@@ -7709,6 +8475,7 @@
 		remark = "d70776cb0a1270c1cfdb80c9b0157cd1",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 109,
 		sub_activity_list = {}
 	},
@@ -7718,6 +8485,7 @@
 		remark = "755d247b4440c723df185976572e9c55",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 109,
 		sub_activity_list = {}
 	},
@@ -7727,6 +8495,7 @@
 		remark = "5a8912a4ca541ccac9608a5506c8b2c1",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 109,
 		sub_activity_list = {}
 	},
@@ -7736,6 +8505,7 @@
 		remark = "927782b0789e2e06f5718d7ec5f5d6e8",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 109,
 		sub_activity_list = {}
 	},
@@ -7745,6 +8515,7 @@
 		remark = "e02355caec18f7cd7ce5fd74769f89f0",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 109,
 		sub_activity_list = {}
 	},
@@ -7754,6 +8525,7 @@
 		remark = "b3fd7dd4675ddda9ead7071d6ed93e6c",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 109,
 		sub_activity_list = {}
 	},
@@ -7763,6 +8535,7 @@
 		remark = "2144bc7a62cdc785a5191a26c0b4cab2",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -7772,6 +8545,7 @@
 		remark = "5a65e97a0f052633321c440a3bf97eeb",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -7781,6 +8555,7 @@
 		remark = "682ba26160d7bba0861eaf9f3234a47a",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -7790,6 +8565,7 @@
 		remark = "66a8567e5e89d3283a7c498d6cbe750e",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -7799,6 +8575,7 @@
 		remark = "0668eb7206db954d41e88f96fc55a991",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 104,
 		sub_activity_list = {}
 	},
@@ -7808,6 +8585,7 @@
 		remark = "c60210c26ab43f7d76a846e9a32e39f8",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 114,
 		sub_activity_list = {}
 	},
@@ -7817,6 +8595,7 @@
 		remark = "d74d5be3f60dc723d56aa3dc3533d5bc",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 114,
 		sub_activity_list = {}
 	},
@@ -7826,6 +8605,7 @@
 		remark = "5817e027fa1492681afd93ae67f2d8cf",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 114,
 		sub_activity_list = {}
 	},
@@ -7835,6 +8615,7 @@
 		remark = "b905b58b626dfdbf4d2f16408e8834df",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 114,
 		sub_activity_list = {}
 	},
@@ -7844,6 +8625,7 @@
 		remark = "643ed1a7468ecf0f68ec6e6f095f8cd5",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 114,
 		sub_activity_list = {}
 	},
@@ -7853,6 +8635,7 @@
 		remark = "e92672e3776873d3dd8a382c41416d50",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 114,
 		sub_activity_list = {}
 	},
@@ -7862,6 +8645,7 @@
 		remark = "0966ae7b7d5ac74d994bc2cec54ad11b",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 114,
 		sub_activity_list = {}
 	},
@@ -7871,6 +8655,7 @@
 		remark = "2e3b8937a74c133d20bf96a194e34d0e",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -7880,6 +8665,7 @@
 		remark = "2ada0b473e5513dbf5293de8bc311fcc",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -7889,6 +8675,7 @@
 		remark = "e7fa2d5ffb9f55c56cfbe4fd6965cbcf",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -7898,6 +8685,7 @@
 		remark = "de777e598070ca5689d13e520b1b1173",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -7907,6 +8695,7 @@
 		remark = "f18034ecf2a995290e24858ffc21b410",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -7916,6 +8705,7 @@
 		remark = "e408b8eb201b508068dd301ef7f25fc1",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -7925,6 +8715,7 @@
 		remark = "dcb6a0bdd021059df7bca3bb1b9d1fa6",
 		unlock_condition = "",
 		activity_theme = 106,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -7934,6 +8725,7 @@
 		remark = "78f14ba7106e73bfbced91c702a8abde",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			191201,
@@ -7971,6 +8763,7 @@
 		remark = "6312b88bbfb0aaada3f800fe265c11ee",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			190561
@@ -7982,6 +8775,7 @@
 		remark = "932e50e50e70720a2e570c5e95348797",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 56,
 		sub_activity_list = {
 			191821,
@@ -7994,6 +8788,7 @@
 		remark = "57f4e87517db1a50bb4af25d13f224d5",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 182,
 		sub_activity_list = {}
 	},
@@ -8003,6 +8798,7 @@
 		remark = "2c0f0b8748f49d490a8ca304b1ab8150",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 182,
 		sub_activity_list = {}
 	},
@@ -8012,6 +8808,7 @@
 		remark = "91f5bcff5518178d3ae78f1ed86596fd",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -8021,6 +8818,7 @@
 		remark = "8219c41188b2935156c2283b3c4c63ad",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -8030,6 +8828,7 @@
 		remark = "fe29274996b25ab71c06328040d91667",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -8039,6 +8838,7 @@
 		remark = "16e090e575879c1dc15fd434718aeb33",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -8048,6 +8848,7 @@
 		remark = "0cbf2328c27576ea47e437104bdc31e8",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			191112
@@ -8059,6 +8860,7 @@
 		remark = "a9055292e7e284287d8e8f72d6156572",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -8068,6 +8870,7 @@
 		remark = "f68d19bbeb6cdd212cafbd7b28f5eacb",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			191113,
@@ -8080,6 +8883,7 @@
 		remark = "daacebca540c5a24e0ecaee78dbabbe6",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -8089,6 +8893,7 @@
 		remark = "49e9a1e420b4da8bf36b61400188d0ba",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -8098,6 +8903,7 @@
 		remark = "9b687960431e27ba35cad76dd07bef21",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -8107,6 +8913,7 @@
 		remark = "65945db22a146f972749c30bba67e619",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -8116,6 +8923,7 @@
 		remark = "aca0afe2eac607c3326fea567bd7b914",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -8125,6 +8933,7 @@
 		remark = "9b7f551d681e7dc1042c790d9fe4ad26",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -8134,6 +8943,7 @@
 		remark = "e726b5b1b8bc8f3ca19a7d0a125671bd",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -8143,6 +8953,7 @@
 		remark = "0337fd97da2fe36e120c8d071196e249",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -8152,6 +8963,7 @@
 		remark = "8ba20df9dee66250881b07a0537154ce",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 235,
 		sub_activity_list = {}
 	},
@@ -8161,6 +8973,7 @@
 		remark = "2c42ebfc6f5415e5d73c631adc5740d3",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -8170,6 +8983,7 @@
 		remark = "c528feafa14be8bcfb48643ae738ce69",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -8179,6 +8993,7 @@
 		remark = "33f0cbeff09fba4a90849aeeba62eb5f",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -8188,6 +9003,7 @@
 		remark = "ea6a7f2978d2e8eb202c586619bd3f1f",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -8197,6 +9013,7 @@
 		remark = "84a3e72d6b3ecd03833bacdaa56b66e8",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -8206,6 +9023,7 @@
 		remark = "dc2c2bab76a602b6bcfdbb33bd2a8754",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -8214,6 +9032,7 @@
 		name = "09b9825c5e87cefb2ac04f49a38ae492",
 		remark = "74a042886f5b7c0f86253d86f83c71f4",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 194,
 		sub_activity_list = {
 			191961,
@@ -8235,6 +9054,7 @@
 		remark = "c4c9875f225a0d90c58f2f9f1add2df2",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -8244,6 +9064,7 @@
 		remark = "9ebe88aac734c3152fb7f046ed4be91a",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 196,
 		sub_activity_list = {}
 	},
@@ -8253,6 +9074,7 @@
 		remark = "3ab3e55306e33a3a342a4ed870bd35a2",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 197,
 		sub_activity_list = {}
 	},
@@ -8262,6 +9084,7 @@
 		remark = "4f2ad32d5e1ae03646b9090fc797d1f2",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 198,
 		sub_activity_list = {}
 	},
@@ -8271,6 +9094,7 @@
 		remark = "7cb3608dc7df50affbf177ab8d4e4dc2",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 199,
 		sub_activity_list = {}
 	},
@@ -8280,6 +9104,7 @@
 		remark = "3d0632d77caeaafc6a151cca707cd8ec",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -8288,6 +9113,7 @@
 		name = "d888a1ebacc0766412f1bab53cbc4b61",
 		remark = "a1ebcbcc2d2dd7a4be07d23903e3b5f2",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 194,
 		sub_activity_list = {
 			191962,
@@ -8309,6 +9135,7 @@
 		remark = "32a657a583ca31f1504dd9c7ecb3de36",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -8318,6 +9145,7 @@
 		remark = "927f3479572ca766a261e54513cae7f2",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 196,
 		sub_activity_list = {}
 	},
@@ -8327,6 +9155,7 @@
 		remark = "6030695b8ce8833e71900bbdd167decc",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 197,
 		sub_activity_list = {}
 	},
@@ -8336,6 +9165,7 @@
 		remark = "d03f401ad8d6863e66a400e348d883d6",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 198,
 		sub_activity_list = {}
 	},
@@ -8345,6 +9175,7 @@
 		remark = "d0e158a8ca2ad7bab59e699b1ad9342c",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 199,
 		sub_activity_list = {}
 	},
@@ -8354,6 +9185,7 @@
 		remark = "6559241e5a9b34eff20c48c0c71bcf5c",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -8363,6 +9195,7 @@
 		remark = "adff904aade8aa65bb32285b0aa5a859",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 184,
 		sub_activity_list = {
 			191851,
@@ -8381,6 +9214,7 @@
 		remark = "446a75da45599ea1eba8c586012c7cf0",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -8390,6 +9224,7 @@
 		remark = "a28392b6191959a94173065af674bbd2",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -8399,6 +9234,7 @@
 		remark = "22ca83094e37d3a9401b856e74f6c104",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -8408,6 +9244,7 @@
 		remark = "c4b1a7e357f8344e749037eb63325f57",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -8417,6 +9254,7 @@
 		remark = "1e95819ea8f3ba9cf17cd5cf41838fe9",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -8426,6 +9264,7 @@
 		remark = "f3457701e725bb5b0b72d46ed1b31142",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -8435,6 +9274,7 @@
 		remark = "405ff2db3ab884f4c2f3fc85eb9efeee",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -8444,6 +9284,7 @@
 		remark = "1cecf725952b8ec3b6a345ffff9cb2b5",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -8453,6 +9294,7 @@
 		remark = "dfe5f6a647d2b9cae901e9eabb714c40",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 113,
 		sub_activity_list = {
 			191151,
@@ -8471,6 +9313,7 @@
 		remark = "8c9bf5200caeda121ff1c876b99fb313",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -8480,6 +9323,7 @@
 		remark = "30ad2bb365f29d985a5ce34b5ed856b7",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -8489,6 +9333,7 @@
 		remark = "128e4fde60a176aeb201a572a89259db",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -8498,6 +9343,7 @@
 		remark = "9f1b9aa10d75bc4020a99f515c3a25e3",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -8507,6 +9353,7 @@
 		remark = "0fadc5ac7fd17262789181c21cb19ce9",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -8516,6 +9363,7 @@
 		remark = "031b40b3082c5dc4e320e08222dfc932",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -8525,6 +9373,7 @@
 		remark = "790c15f80f469007029916450490993a",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -8534,6 +9383,7 @@
 		remark = "f7753b59e4de14bc0cea0648d0b7d712",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -8543,6 +9393,7 @@
 		remark = "30f545a22e31ea939e717621d0542aca",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -8552,6 +9403,7 @@
 		remark = "d9794d688ae287ccf972e448c7229ecd",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -8561,6 +9413,7 @@
 		remark = "bda8757603237de637ef87c72bfa7508",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -8570,6 +9423,7 @@
 		remark = "9e125ba6cd32847cc4ac0f87a99d2bef",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -8579,6 +9433,7 @@
 		remark = "3c43ad0f61a56562e9b13a98c2df9397",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -8588,6 +9443,7 @@
 		remark = "7b933ac6dac4a8777b12fce93de3a48d",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -8597,6 +9453,7 @@
 		remark = "1e88df38aba5796d929d121fa782c13c",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 10,
 		sub_activity_list = {}
 	},
@@ -8606,6 +9463,7 @@
 		remark = "3f06122730c94097d24fcab03ac2582e",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 10,
 		sub_activity_list = {}
 	},
@@ -8615,6 +9473,7 @@
 		remark = "bc073d637da34d65b79748e2a05a43a7",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 136,
 		sub_activity_list = {}
 	},
@@ -8624,6 +9483,7 @@
 		remark = "088d6a055bd14fa1186927ad20f3490b",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 226,
 		sub_activity_list = {
 			190044
@@ -8635,6 +9495,7 @@
 		remark = "a47c5713ca731b187ab63377c89c4471",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -8644,6 +9505,7 @@
 		remark = "a01436310e71cb8688379b8fc04ea754",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 232,
 		sub_activity_list = {
 			190045,
@@ -8656,6 +9518,7 @@
 		remark = "12f58d9a76ce3a53df020b06d317a8ef",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -8665,6 +9528,7 @@
 		remark = "b4545161dcf07f7d77ff182ba2c2d14e",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -8674,6 +9538,7 @@
 		remark = "f29c13c97e9cbd69d8488670c2d26f46",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 233,
 		sub_activity_list = {
 			190047
@@ -8685,6 +9550,7 @@
 		remark = "b7a48563f34467859f7476ad727b73c9",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -8694,6 +9560,7 @@
 		remark = "3224edbad937a4a291cf07cfa9dadbb5",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 227,
 		sub_activity_list = {
 			192271,
@@ -8707,6 +9574,7 @@
 		remark = "f4837c8af19b69fa57fd360beb27b406",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 228,
 		sub_activity_list = {}
 	},
@@ -8716,6 +9584,7 @@
 		remark = "9f72abbc9660dbcd2bc41fc10dba6afc",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 229,
 		sub_activity_list = {}
 	},
@@ -8725,6 +9594,7 @@
 		remark = "840874da054d2101f61077ac74daa222",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 230,
 		sub_activity_list = {
 			192281,
@@ -8737,6 +9607,7 @@
 		remark = "ba62c352cb1a5abab82d40d80acb5cca",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 73,
 		sub_activity_list = {
 			190732,
@@ -8751,6 +9622,7 @@
 		remark = "b32c42f756eb888174066d28436aae28",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -8760,6 +9632,7 @@
 		remark = "2c327a904634ac62f939e0830557667e",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -8769,6 +9642,7 @@
 		remark = "ae7c5c9bb496602fed4f58959c47c6fc",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -8778,6 +9652,7 @@
 		remark = "1e746ff460bbd29d7541e2430174c757",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -8787,6 +9662,7 @@
 		remark = "b09a5add3c4dda61c54074d89b681581",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			192251
@@ -8798,6 +9674,7 @@
 		remark = "3289e49f2ee05df129ebdf3cb61a1448",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			192252
@@ -8809,6 +9686,7 @@
 		remark = "dfc4cb676ff8f5a150060b4a64da988f",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			192253
@@ -8820,6 +9698,7 @@
 		remark = "f6f9935c12416e6ce9c0319f111d0f97",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			192254
@@ -8831,6 +9710,7 @@
 		remark = "31a0c40f14a2fd0d21a0874d8f68654f",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -8840,6 +9720,7 @@
 		remark = "53e7b9d9e3a8f4a4448720f7324e9176",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -8849,6 +9730,7 @@
 		remark = "9aff495461e75a30aefadf55fdbf85ed",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -8858,6 +9740,7 @@
 		remark = "1ddc72d3591d09933a7f50e28b4aac68",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -8867,6 +9750,7 @@
 		remark = "ecc0bcaf4c1882b6664c0d58dc479348",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			191115
@@ -8878,6 +9762,7 @@
 		remark = "ffaaadc98c97ab6cd2189bb2acf6a5c5",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -8887,6 +9772,7 @@
 		remark = "5788c1a96174b4f8afe82afb69e51eb5",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -8896,6 +9782,7 @@
 		remark = "de01799d186fcd6e54838f5a3e61d779",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -8905,6 +9792,7 @@
 		remark = "df7dc8cab65a3a664f1c24011c2ebefa",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -8914,6 +9802,7 @@
 		remark = "212cc22ac6dd04274ec5124700620cf6",
 		unlock_condition = "",
 		activity_theme = 19,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -8923,6 +9812,7 @@
 		remark = "c72afca8b5ffeebed50cde18baa1a9f1",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			201201,
@@ -8978,6 +9868,7 @@
 		remark = "430497f7fd1ab4391f40037ee8397383",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			200561
@@ -8989,6 +9880,7 @@
 		remark = "8a2e6fa8c216565ad8e2d0ebbc9cf16e",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 56,
 		sub_activity_list = {
 			201821,
@@ -9001,6 +9893,7 @@
 		remark = "72b0da78dbc0a9971b99dfc6c26f0ea5",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 182,
 		sub_activity_list = {}
 	},
@@ -9010,6 +9903,7 @@
 		remark = "747560c24be33cb6faff9fc8948601b0",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 182,
 		sub_activity_list = {}
 	},
@@ -9019,6 +9913,7 @@
 		remark = "246963e27b8ce3a392e996d81e4df5bc",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -9028,6 +9923,7 @@
 		remark = "9366fb9dbc5b122d7549ed357b7661e2",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -9037,6 +9933,7 @@
 		remark = "631a2e6cdda1b7ccff50bb3670be3690",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -9046,6 +9943,7 @@
 		remark = "07b5d3e425b20da5c951e818a6c517ed",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -9055,6 +9953,7 @@
 		remark = "565a9d3326fbd6e789d888811008bb7e",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -9064,6 +9963,7 @@
 		remark = "fa627ac9cf39293c9cbff251aa459423",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -9073,6 +9973,7 @@
 		remark = "d4b918845faf51dd8d7589cf4a3f3a19",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -9082,6 +9983,7 @@
 		remark = "e4c9f5433617a0039fb807be35e2e40f",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			201111,
@@ -9095,6 +9997,7 @@
 		remark = "1e0d30882a814cf6c70eba26ed085983",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -9104,6 +10007,7 @@
 		remark = "02023f77501bd8f972df4c6100eb7d24",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -9113,6 +10017,7 @@
 		remark = "17beef40f9d08bdd2e2edf5bfa059aa8",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			201113,
@@ -9126,6 +10031,7 @@
 		remark = "34ec34cb7b2e657f0a2f0f9cbcf058ba",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -9135,6 +10041,7 @@
 		remark = "222aac6408a7af3add5085eac903eeac",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -9144,6 +10051,7 @@
 		remark = "b48f65d5617e3480a0dd60d79aa53600",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -9153,6 +10061,7 @@
 		remark = "e3e10cc4b8ef0429ea3e46d6d70ae0d2",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -9162,6 +10071,7 @@
 		remark = "e489df4f144c9f3d1a0e036784598bb5",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -9171,6 +10081,7 @@
 		remark = "d3d54e11f0edf68e55ff83ec3c616e31",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -9180,6 +10091,7 @@
 		remark = "e0bf2039cdb327a83cf78c1bf67c56e9",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -9189,6 +10101,7 @@
 		remark = "b0adcaa4f2edf732164f3cce1727ed3e",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -9198,6 +10111,7 @@
 		remark = "ef870da40d677cbee90662958931df0a",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -9207,6 +10121,7 @@
 		remark = "78db6690f8e50c4aaeb4560cf3b38bf0",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -9216,6 +10131,7 @@
 		remark = "a7b4309e810d424f2b81afada2f2cdf3",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -9225,6 +10141,7 @@
 		remark = "9fff5f9877d7e6c931516fa3b258dea7",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -9234,6 +10151,7 @@
 		remark = "4865e297440e50ab388db33b0d04659a",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -9243,6 +10161,7 @@
 		remark = "6904984409343b60ace8e098bc3162c5",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -9252,6 +10171,7 @@
 		remark = "d6f31b5349eaaf6a9e12674662601e59",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -9261,6 +10181,7 @@
 		remark = "6eed5ccbfd7c4c23c4ed65e3a618c7fe",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 10,
 		sub_activity_list = {}
 	},
@@ -9270,6 +10191,7 @@
 		remark = "eab4541a665932f1e10f75322497d738",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 10,
 		sub_activity_list = {}
 	},
@@ -9279,6 +10201,7 @@
 		remark = "9c1a72982161819e520d1507cf284e41",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 194,
 		sub_activity_list = {
 			201961,
@@ -9293,6 +10216,7 @@
 		remark = "d70c7c4169c4d4f87fffe01291ad5c5a",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 196,
 		sub_activity_list = {}
 	},
@@ -9302,6 +10226,7 @@
 		remark = "3f89c3bcdc021f333b3d2e4ea861bf66",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 197,
 		sub_activity_list = {}
 	},
@@ -9311,6 +10236,7 @@
 		remark = "a7bd0c60c048df2837f44ea9fe7b7270",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 198,
 		sub_activity_list = {}
 	},
@@ -9320,6 +10246,7 @@
 		remark = "4610b13d81e6b363a0bc064f6b4b23b1",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 199,
 		sub_activity_list = {}
 	},
@@ -9329,6 +10256,7 @@
 		remark = "e29bcafcbf8305f08446315e410377c5",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -9338,6 +10266,7 @@
 		remark = "d86676a6aa2e4f3ded64ffcb0cf824dd",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 243,
 		sub_activity_list = {
 			201462,
@@ -9351,6 +10280,7 @@
 		remark = "10aaa58c5643439d2e94ebdbe4886c6d",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 244,
 		sub_activity_list = {}
 	},
@@ -9360,6 +10290,7 @@
 		remark = "bd5c68f205707530174e5cc89d768ac9",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -9369,6 +10300,7 @@
 		remark = "988d3906e83fd572c9baaecd9c3bd2de",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -9378,6 +10310,7 @@
 		remark = "f2e701d9dc0506e313f60181a844a65c",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -9387,6 +10320,7 @@
 		remark = "05b0ab424f5e9a857a013f5a40cf7648",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -9396,6 +10330,7 @@
 		remark = "38b85d155fa17e1a467de2fd21b4e5a7",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 235,
 		sub_activity_list = {}
 	},
@@ -9405,6 +10340,7 @@
 		remark = "8f3bf45a80f86d2da328560b61bcf3f1",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -9414,6 +10350,7 @@
 		remark = "3be0b697b9c9ef1bd26539462588b150",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -9423,6 +10360,7 @@
 		remark = "6050615ec9b32c8e9a70bf710404f88a",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -9432,6 +10370,7 @@
 		remark = "00f6587d3ccfc9b330e904c1e97eb1a3",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -9441,6 +10380,7 @@
 		remark = "09d23bb16fbfb82779c1ffbef197cec3",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 236,
 		sub_activity_list = {
 			202371,
@@ -9459,6 +10399,7 @@
 		remark = "cc4b994e2e1911f91253fbb02e265c75",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 237,
 		sub_activity_list = {}
 	},
@@ -9468,6 +10409,7 @@
 		remark = "d0e27ec4526f43250f84989b63a0320e",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 237,
 		sub_activity_list = {}
 	},
@@ -9477,6 +10419,7 @@
 		remark = "afbcd1f1c4f40600c15b14ce3240de01",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 237,
 		sub_activity_list = {}
 	},
@@ -9486,6 +10429,7 @@
 		remark = "5670903f9d77ba7ccc5f79c0306725e6",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 237,
 		sub_activity_list = {}
 	},
@@ -9495,6 +10439,7 @@
 		remark = "effc489434322eceff8fa288b3d239dc",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 237,
 		sub_activity_list = {}
 	},
@@ -9504,6 +10449,7 @@
 		remark = "0599e1687fb6b280e568c693ccff8d26",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 237,
 		sub_activity_list = {}
 	},
@@ -9513,6 +10459,7 @@
 		remark = "9cc3245745a1ce562b32703a90a4dfa4",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 237,
 		sub_activity_list = {
 			202381
@@ -9524,6 +10471,7 @@
 		remark = "7cb9a19581197221b580e3dee90b18cf",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 237,
 		sub_activity_list = {
 			202391
@@ -9535,6 +10483,7 @@
 		remark = "e8c4e9acf7b30b1ac10433573415bff9",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 238,
 		sub_activity_list = {}
 	},
@@ -9544,6 +10493,7 @@
 		remark = "93a39ebde90c0b52223f3ba74593ec7d",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 238,
 		sub_activity_list = {}
 	},
@@ -9553,6 +10503,7 @@
 		remark = "b9f3de8bd7d7dbc5886931425f166abe",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 240,
 		sub_activity_list = {
 			202411
@@ -9564,6 +10515,7 @@
 		remark = "2d0201e74559cf1327fc71a690fd670d",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 241,
 		sub_activity_list = {}
 	},
@@ -9573,6 +10525,7 @@
 		remark = "2857a712fcfb92b50e823680b9e154ec",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 242,
 		sub_activity_list = {}
 	},
@@ -9582,6 +10535,7 @@
 		remark = "e03b29faaf30f04c2a9dbd0e14692409",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 243,
 		sub_activity_list = {
 			201461,
@@ -9595,6 +10549,7 @@
 		remark = "8cc4eb3d6fd7c60b99f50b0d09cc97ad",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 152,
 		sub_activity_list = {}
 	},
@@ -9604,6 +10559,7 @@
 		remark = "6419485e423294a6c955dd7284807b82",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 152,
 		sub_activity_list = {
 			202091
@@ -9615,6 +10571,7 @@
 		remark = "c861e50fd95c8721f47160e2a58f21c5",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 209,
 		sub_activity_list = {}
 	},
@@ -9624,6 +10581,7 @@
 		remark = "79df728d09737c97edf3fe31e6538ed7",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -9633,6 +10591,7 @@
 		remark = "c9b32ca7db46daf8ced6c0fa6a8a5b5d",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -9642,6 +10601,7 @@
 		remark = "7c4dfd2294f2e2fc9aa9d4fd701738cf",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 244,
 		sub_activity_list = {}
 	},
@@ -9651,6 +10611,7 @@
 		remark = "1b8879289793b4aea591b1548437dec3",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 245,
 		sub_activity_list = {
 			200047,
@@ -9663,6 +10624,7 @@
 		remark = "b4ad05b7a6a48318a733847201860525",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -9672,6 +10634,7 @@
 		remark = "d5ccbe092514c90260ee3428881ebcca",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -9681,6 +10644,7 @@
 		remark = "54dfd0e208a1fbc1ab557715c1c24811",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 105,
 		sub_activity_list = {
 			201270,
@@ -9703,6 +10667,7 @@
 		remark = "b480eee613e240cdf10ad5c8825c8f4e",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -9712,6 +10677,7 @@
 		remark = "e1feb17f1faced64f6ecac4fd88c60ec",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -9721,6 +10687,7 @@
 		remark = "5c6a824e9d46128eb8cb7b34190d68d4",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -9730,6 +10697,7 @@
 		remark = "3b8777176304454792f3910b95921f75",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -9739,6 +10707,7 @@
 		remark = "5ceaa654a903475e20e78c24de421f52",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -9748,6 +10717,7 @@
 		remark = "2b892e0d8e545cef85220e4a29af0a94",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -9757,6 +10727,7 @@
 		remark = "c271dbfb4172a98a00c4bd40315ff9f1",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -9766,6 +10737,7 @@
 		remark = "a00ff8d32b9220ec9c61a472f50f283e",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -9775,6 +10747,7 @@
 		remark = "6e5a878a32cc750352691f8dbb5de610",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -9784,6 +10757,7 @@
 		remark = "f67afc77c309986ec5328e9179de60de",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -9793,6 +10767,7 @@
 		remark = "e35d037ccc2488e9823f5b7ab3e95c5c",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -9802,6 +10777,7 @@
 		remark = "fbdb11772837ca54aa6e305316872935",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -9811,6 +10787,7 @@
 		remark = "f051263b3e6f50d1459a9c90b84a0a99",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 246,
 		sub_activity_list = {
 			202471,
@@ -9824,6 +10801,7 @@
 		remark = "eed1eda71cb30776f28d4048a325d1be",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 247,
 		sub_activity_list = {}
 	},
@@ -9833,6 +10811,7 @@
 		remark = "4812835462332f10de965dcca0f2bba1",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 247,
 		sub_activity_list = {}
 	},
@@ -9842,6 +10821,7 @@
 		remark = "a262468b66ee2dfef0169603676a6daa",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 247,
 		sub_activity_list = {}
 	},
@@ -9851,6 +10831,7 @@
 		remark = "26de7a750f5b78834465f1b6f33c0753",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -9860,6 +10841,7 @@
 		remark = "dffcf965a3cb8ff010f89e76dbf054f9",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -9869,6 +10851,7 @@
 		remark = "f19357d47882bbc88df000b9296c14c2",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -9878,6 +10861,7 @@
 		remark = "1234965f2af5841877bb2dcd478038b2",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 73,
 		sub_activity_list = {
 			200732,
@@ -9892,6 +10876,7 @@
 		remark = "588c30f7928bf4364f54f136ed464201",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -9901,6 +10886,7 @@
 		remark = "20bab6341945eb52206fdb4b3bbdbd88",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -9910,6 +10896,7 @@
 		remark = "23ca762d084c3117a40368b4e0c6366b",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -9919,6 +10906,7 @@
 		remark = "560e636b24ce3142fd7b65608573e138",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -9928,6 +10916,7 @@
 		remark = "58a91e53b153942888562bf4f996e0a1",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 234,
 		sub_activity_list = {
 			201061,
@@ -9946,6 +10935,7 @@
 		remark = "8657671a1da461c23014ea3ee3e02e4d",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 106,
 		sub_activity_list = {}
 	},
@@ -9955,6 +10945,7 @@
 		remark = "002c4e41b041269387f3d55381918a36",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 248,
 		sub_activity_list = {}
 	},
@@ -9964,6 +10955,7 @@
 		remark = "2f7cf3f907e1ac2fa7338b9dacd16507",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 248,
 		sub_activity_list = {}
 	},
@@ -9973,6 +10965,7 @@
 		remark = "75669f9ec6d958f1a5db8fe4e9699865",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 248,
 		sub_activity_list = {}
 	},
@@ -9982,6 +10975,7 @@
 		remark = "d86bd61040f7708f570ead4a9aeb6651",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 248,
 		sub_activity_list = {}
 	},
@@ -9991,6 +10985,7 @@
 		remark = "f4877d47ca78c97885508637bddff19d",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 248,
 		sub_activity_list = {}
 	},
@@ -10000,6 +10995,7 @@
 		remark = "6c0c90f0a525e13054add2fd16efa600",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 248,
 		sub_activity_list = {}
 	},
@@ -10009,6 +11005,7 @@
 		remark = "67a81b6256f0ec1c562359ab72f07039",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 248,
 		sub_activity_list = {}
 	},
@@ -10018,6 +11015,7 @@
 		remark = "ebf6f6bdf98069617d789a332dfa18b6",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			202251,
@@ -10031,6 +11029,7 @@
 		remark = "13cd5761d437c54999269765111ba83b",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			202251,
@@ -10044,6 +11043,7 @@
 		remark = "13d5691ce98a96a8bb869edbc91d652a",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			202251,
@@ -10057,6 +11057,7 @@
 		remark = "dd71ef77c1e00341dd8080d265dba5e4",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			202251,
@@ -10070,6 +11071,7 @@
 		remark = "c03fb4e0d5aadeb0ebdbef4e47aaaf45",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -10079,6 +11081,7 @@
 		remark = "4247908a1f4ccc6dac3242c99aaa760b",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			202254,
@@ -10092,6 +11095,7 @@
 		remark = "45d510d1f8ec1a26c52fe084b679fd0a",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			202254,
@@ -10105,6 +11109,7 @@
 		remark = "0b52b9cf40ae1d02a1d6a169ce472856",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			202254,
@@ -10118,6 +11123,7 @@
 		remark = "391ebf402f75ef437749841324644aee",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -10127,6 +11133,7 @@
 		remark = "7154b6f9a2b7e9b3f61a8832107a0915",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -10136,6 +11143,7 @@
 		remark = "616c030352849680aae2b047931a2014",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -10145,6 +11153,7 @@
 		remark = "46edc37e1183ac2f63e9a1aca25f1acb",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -10154,6 +11163,7 @@
 		remark = "0571a3a70d18493593e951a9e269205e",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 9003,
 		sub_activity_list = {}
 	},
@@ -10163,6 +11173,7 @@
 		remark = "287f4ca71c4a7cdf76e1c74f58310ea9",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -10172,6 +11183,7 @@
 		remark = "0ee86deb6c93109e1ac106089dcfdbeb",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -10181,6 +11193,7 @@
 		remark = "697a15db9609aa0a239b035dd3a13556",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -10190,6 +11203,7 @@
 		remark = "1399a6a51144b6218834732b584958d2",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -10199,6 +11213,7 @@
 		remark = "4bd5a6e2ba107e3fc0da17e59a53a05b",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -10208,6 +11223,7 @@
 		remark = "2854a276cfa7bbfc92a2352e60f26ae4",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -10217,6 +11233,7 @@
 		remark = "e8b7ee0da1a39e974a2d90719b3b8bfc",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 226,
 		sub_activity_list = {
 			202262
@@ -10228,6 +11245,7 @@
 		remark = "d173202962c32b9d0e27eecedf21bb07",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -10237,6 +11255,7 @@
 		remark = "66e631ad8eb5a559bc0dcbd72e0471ae",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -10246,6 +11265,7 @@
 		remark = "52e2a0b3db5fbd396135e618ce70d3f4",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -10255,6 +11275,7 @@
 		remark = "c8feda9768b2a9d3e08c9230d48f3528",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 9003,
 		sub_activity_list = {}
 	},
@@ -10264,6 +11285,7 @@
 		remark = "99c4a008e659df98e2f72a03f23895ce",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 9003,
 		sub_activity_list = {}
 	},
@@ -10273,6 +11295,7 @@
 		remark = "6a87d03d7087d54c96bd046078209f4c",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 9003,
 		sub_activity_list = {}
 	},
@@ -10282,6 +11305,7 @@
 		remark = "0c661f69a1f4dfea825a326c9e62b121",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 9001,
 		sub_activity_list = {}
 	},
@@ -10291,6 +11315,7 @@
 		remark = "0ab92ee20cd3635eea12ca16cf501fdb",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 73,
 		sub_activity_list = {
 			210732,
@@ -10305,6 +11330,7 @@
 		remark = "fa60e77a9680a7ae501a7b8d9dbff0a6",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -10314,6 +11340,7 @@
 		remark = "93f1f872a7eb5a928d18f738dcaa713b",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -10323,6 +11350,7 @@
 		remark = "dbff72d69ae145ca8c677db5b0e37b66",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -10332,6 +11360,7 @@
 		remark = "ce79d1f98c7abdac86c74d6bd1a04728",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -10341,6 +11370,7 @@
 		remark = "dccdc5632b93ac7600c8c5e90eb71cf4",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -10350,6 +11380,7 @@
 		remark = "9f17b731ab30c4e07d053c5a0a13423e",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -10359,6 +11390,7 @@
 		remark = "1f24e27fd89fc84e89f4852a58a697bb",
 		unlock_condition = "",
 		activity_theme = 20,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -10368,6 +11400,7 @@
 		remark = "2740c03aa29cc68434ad216f4763f543",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -10377,6 +11410,7 @@
 		remark = "be481cf7a7c1fa4535230eb3e85c26c2",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			211201,
@@ -10410,6 +11444,7 @@
 		remark = "4e2ab7fc314ffdfee773db9238f3afbc",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			211701,
@@ -10422,6 +11457,7 @@
 		remark = "8e9f26cd10e6438fcc4979e151abcb4d",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 170,
 		sub_activity_list = {}
 	},
@@ -10431,6 +11467,7 @@
 		remark = "2734cbb913117ff9ff42c1476d94db7f",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 170,
 		sub_activity_list = {}
 	},
@@ -10440,6 +11477,7 @@
 		remark = "d6c8b420cbc823c68f5b7b0d0a7b681f",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -10449,6 +11487,7 @@
 		remark = "0b4d10ec1a20be0fd97243d59ca49346",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -10458,6 +11497,7 @@
 		remark = "b6f67daa407f9200f4453564b18af6a5",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -10467,6 +11507,7 @@
 		remark = "a9e073cbbc29d1d07243d5b702141d59",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -10476,6 +11517,7 @@
 		remark = "c2c42651b6a423a0aab0026c4ce75d3c",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -10485,6 +11527,7 @@
 		remark = "7089b9d32aa5fbcac7a309d8abe00eb7",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -10494,6 +11537,7 @@
 		remark = "fc44947bf6592d4d156c407d5644a3dc",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			211111,
@@ -10506,6 +11550,7 @@
 		remark = "b8e4d86a40d1830fe795191457cc7468",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -10515,6 +11560,7 @@
 		remark = "05414aac89656df58ea84b9f60024be7",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -10524,6 +11570,7 @@
 		remark = "ead70cefa01b5e00f68865a73e937ac7",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			211112,
@@ -10540,6 +11587,7 @@
 		remark = "1ab8ddf026934681d0d312640d07aaf9",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -10549,6 +11597,7 @@
 		remark = "afe644d582703e3481377237f01591e3",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -10558,6 +11607,7 @@
 		remark = "be77653e43e71d81b024a5b8edf6abf2",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -10567,6 +11617,7 @@
 		remark = "c2973c578f9d24dba60e3b57128eab8d",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -10576,6 +11627,7 @@
 		remark = "9fc96154b38ed257defd6b3ea51ba599",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -10585,6 +11637,7 @@
 		remark = "018eeee3946cbd83bbf5fd291242ae11",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -10594,6 +11647,7 @@
 		remark = "dfb733a35f6d22023e3222bd7cc9c12d",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -10603,6 +11657,7 @@
 		remark = "093af98b65583df7b93868562d478075",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -10612,6 +11667,7 @@
 		remark = "ae5d238b91747f42ddcd73e6baa98678",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -10621,6 +11677,7 @@
 		remark = "5147ca0a36687e3efb6f2ae1b45f6f93",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -10630,6 +11687,7 @@
 		remark = "040af29954ece1434f73f326ef8e8029",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -10639,6 +11697,7 @@
 		remark = "c0b6982558c3759d05b7e1ef726f0e92",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -10648,6 +11707,7 @@
 		remark = "5729d2064c5cb4aede6f1c31f421eaf4",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -10657,6 +11717,7 @@
 		remark = "b2aa74675f4b062c316669ae3c104672",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -10666,6 +11727,7 @@
 		remark = "d54c1e48a66afe89d666981791c54c07",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -10675,6 +11737,7 @@
 		remark = "3fac7cf6b805f3fda049a47e56656a77",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -10684,6 +11747,7 @@
 		remark = "6e6fe237a0666b5ac7f0fbdfb2c4290d",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -10693,6 +11757,7 @@
 		remark = "93395f04b594281f7ecaff2fcb0d3b9f",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -10702,6 +11767,7 @@
 		remark = "eeda2e37cac70a599c6d054a17235de6",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -10711,6 +11777,7 @@
 		remark = "8dcd1cbc23fca38f513e42f1bba8cf1e",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -10720,6 +11787,7 @@
 		remark = "6cba7c4e9359d5c5e8a026f91a768b40",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 194,
 		sub_activity_list = {
 			211961,
@@ -10734,6 +11802,7 @@
 		remark = "b60983d2d422543c6cf6ce182c59b125",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 196,
 		sub_activity_list = {}
 	},
@@ -10743,6 +11812,7 @@
 		remark = "60fa42c1fe0a451c59676041c7666017",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 197,
 		sub_activity_list = {}
 	},
@@ -10752,6 +11822,7 @@
 		remark = "78445b7d6b5a376c544fed4bce146d19",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 198,
 		sub_activity_list = {}
 	},
@@ -10761,6 +11832,7 @@
 		remark = "7a4d70430b086442486db13a994061b6",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 199,
 		sub_activity_list = {}
 	},
@@ -10770,6 +11842,7 @@
 		remark = "fbaa143c1b573cd78e6c7ea212ca8086",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -10779,6 +11852,7 @@
 		remark = "77bf898040d35e30ea647aaf3500884c",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 243,
 		sub_activity_list = {
 			212441,
@@ -10792,6 +11866,7 @@
 		remark = "63d7db8f4ae1900918b85df7c8433c62",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 244,
 		sub_activity_list = {}
 	},
@@ -10801,6 +11876,7 @@
 		remark = "09d531a9601079698e17a5522ad00b9f",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -10810,6 +11886,7 @@
 		remark = "3d83704de649a9cb256fe997b0f4dc66",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -10819,6 +11896,7 @@
 		remark = "3b146cd6014b71a02de6b8352f8bb5e7",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 194,
 		sub_activity_list = {
 			211962,
@@ -10833,6 +11911,7 @@
 		remark = "a03a0c702f331b5d4ddd4e580e1f098d",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 196,
 		sub_activity_list = {}
 	},
@@ -10842,6 +11921,7 @@
 		remark = "3dc882369224ca1c6ed0a42f288eef0c",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 197,
 		sub_activity_list = {}
 	},
@@ -10851,6 +11931,7 @@
 		remark = "44f39ab809036921fada3beeace26aca",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 198,
 		sub_activity_list = {}
 	},
@@ -10860,6 +11941,7 @@
 		remark = "89e179b5a70173c45103f38fd88dcdbd",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 199,
 		sub_activity_list = {}
 	},
@@ -10869,6 +11951,7 @@
 		remark = "08ad7f15b13339240d8a5a348e1ddb22",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -10878,6 +11961,7 @@
 		remark = "aa003de381daf4397c2972b15c0af186",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 243,
 		sub_activity_list = {
 			212442,
@@ -10891,6 +11975,7 @@
 		remark = "b227615ad48bd826520f74def63adace",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 244,
 		sub_activity_list = {}
 	},
@@ -10900,6 +11985,7 @@
 		remark = "7cf2df736d30b685d316ec3c27d47f5c",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -10909,6 +11995,7 @@
 		remark = "b6c6055445233789f2da31704c6f638b",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -10918,6 +12005,7 @@
 		remark = "dfe2519a3bb596ca2adf9c2dab1a3977",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -10927,6 +12015,7 @@
 		remark = "d1ce4355a5aefbd2d13ed987f3841950",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -10936,6 +12025,7 @@
 		remark = "2b3e03979540f1e83422cf7321780b28",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 157,
 		sub_activity_list = {
 			211581,
@@ -10954,6 +12044,7 @@
 		remark = "834a840977d0198634f1f905eae540c0",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -10963,6 +12054,7 @@
 		remark = "39142ce1e6fda0c99d7d3364c9aaedd0",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -10972,6 +12064,7 @@
 		remark = "9ff7f1e65c68732a8788997c3b397975",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -10981,6 +12074,7 @@
 		remark = "fa60f503a7664663ea33f4223f80a59c",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -10990,6 +12084,7 @@
 		remark = "6ae7701c32ebdf87d3b2a8c6f3090ec6",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -10999,6 +12094,7 @@
 		remark = "38858620cac505fb0cd45443d680ce83",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -11008,6 +12104,7 @@
 		remark = "c460ecb51960d0eb457765831222f86f",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -11017,6 +12114,7 @@
 		remark = "73a8ed94eaed14320845c49858f3865f",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 158,
 		sub_activity_list = {}
 	},
@@ -11026,6 +12124,7 @@
 		remark = "0ac8304b248f3ac95bf09da30b6ce9da",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 251,
 		sub_activity_list = {
 			212521,
@@ -11041,6 +12140,7 @@
 		remark = "0c9e295be1069d947ad14b6090f39233",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 252,
 		sub_activity_list = {}
 	},
@@ -11050,6 +12150,7 @@
 		remark = "0732fca227511886bb4b8969f5c8d2c6",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 252,
 		sub_activity_list = {}
 	},
@@ -11059,6 +12160,7 @@
 		remark = "ebbb8d18966c7a5b739150cde72fa2ad",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 252,
 		sub_activity_list = {}
 	},
@@ -11068,6 +12170,7 @@
 		remark = "811804453a86f042fdbbd50a4b6b0c6b",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 252,
 		sub_activity_list = {}
 	},
@@ -11077,6 +12180,7 @@
 		remark = "d9745f4825bfca7f1a90651a134fcc13",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 252,
 		sub_activity_list = {}
 	},
@@ -11086,6 +12190,7 @@
 		remark = "0de1f64db0162f56725212183a701c9a",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 255,
 		sub_activity_list = {
 			210043,
@@ -11098,6 +12203,7 @@
 		remark = "5b570a23ef71d86778ac15f2e113bd26",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 256,
 		sub_activity_list = {}
 	},
@@ -11107,6 +12213,7 @@
 		remark = "26f9729a6bdd7225f9b6248c72cfbc51",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -11116,6 +12223,7 @@
 		remark = "7136975b46e66c667a6d6db7dd0e45ec",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 235,
 		sub_activity_list = {}
 	},
@@ -11125,6 +12233,7 @@
 		remark = "8d7eae8e5bfe93f753c697695f29991c",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -11134,6 +12243,7 @@
 		remark = "8809d669d8b5877c04c589f933d567e1",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -11143,6 +12253,7 @@
 		remark = "158bf0ce3c1cd3ea9a11d5d86cd7fb79",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -11152,6 +12263,7 @@
 		remark = "5dc373477a186e194b13e242e868c7c2",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -11161,6 +12273,7 @@
 		remark = "c9859b89ab7e692d8d1cf93d8d060de4",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 273,
 		sub_activity_list = {
 			212531,
@@ -11173,6 +12286,7 @@
 		remark = "ae63d4cd183bd5ed2a18addbf40f5b7a",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 253,
 		sub_activity_list = {}
 	},
@@ -11182,6 +12296,7 @@
 		remark = "8121f3fd84bc0d053ca4546ce7fff9ba",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -11191,6 +12306,7 @@
 		remark = "e694f9ea5dd46d60c58d17297a2ab2d9",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -11200,6 +12316,7 @@
 		remark = "cee698dc7d6a40702409a3fc89e3727d",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -11209,6 +12326,7 @@
 		remark = "b084a7e021d6e288b4e6c9119282753e",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 249,
 		sub_activity_list = {}
 	},
@@ -11218,6 +12336,7 @@
 		remark = "f0a053faa6d5646419441a3a9c4b5c54",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 10,
 		sub_activity_list = {}
 	},
@@ -11227,6 +12346,7 @@
 		remark = "d856ce96da7b90c8ebcc8cce16021263",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 10,
 		sub_activity_list = {}
 	},
@@ -11236,6 +12356,7 @@
 		remark = "ff2332aeb1c94a179e75f1a602138668",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 228,
 		sub_activity_list = {}
 	},
@@ -11245,6 +12366,7 @@
 		remark = "bc6911593220ab443a2b9b021118ce24",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 229,
 		sub_activity_list = {}
 	},
@@ -11254,6 +12376,7 @@
 		remark = "b6f2718938506a8a0f8406b5f15aade1",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 230,
 		sub_activity_list = {
 			212281,
@@ -11266,6 +12389,7 @@
 		remark = "66c3b7dc214afa810849d41e91a08fbb",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -11275,6 +12399,7 @@
 		remark = "a0b274a530aacc6894280248d74a16d8",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			212251,
@@ -11288,6 +12413,7 @@
 		remark = "deec3bada57df68b9367765b5067a55f",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			212251,
@@ -11301,6 +12427,7 @@
 		remark = "9ba72852da04f165fa82e09edcf309be",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			212251,
@@ -11314,6 +12441,7 @@
 		remark = "19c0589f0e305f2a50c81b4786050dad",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -11323,6 +12451,7 @@
 		remark = "601fbd842d54903033229c4e8d602c19",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -11332,6 +12461,7 @@
 		remark = "1e47cc0d5a0515f343df1eb03c150582",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -11341,6 +12471,7 @@
 		remark = "19809b49ae0a0cd2f891574256de0960",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -11350,6 +12481,7 @@
 		remark = "941d701e39bc5409cd950847835ee9ee",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			212254,
@@ -11363,6 +12495,7 @@
 		remark = "93adc2f7214dc7574ff80b91a4770683",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			212254,
@@ -11376,6 +12509,7 @@
 		remark = "9eb2d2cda58b22fc1a4960f1b3f5e260",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			212254,
@@ -11389,6 +12523,7 @@
 		remark = "e438d1bac5a5d5b41d78de1cd193e64a",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -11398,6 +12533,7 @@
 		remark = "70235326675fda22a5d6bb9ae9a95ff4",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -11407,6 +12543,7 @@
 		remark = "f6d5944a826f37161ca32eb3fb58b585",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -11416,6 +12553,7 @@
 		remark = "937a6554adea66b326348bf72b5124eb",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -11425,6 +12563,7 @@
 		remark = "bdba769077a8b94cfc0f9ac9001992e3",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -11434,6 +12573,7 @@
 		remark = "5f9523c705ba91cf205c904f128516ab",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -11443,6 +12583,7 @@
 		remark = "eb6d1c714d8f8a291268808f2ba9b7f8",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -11452,6 +12593,7 @@
 		remark = "bd9d301051580ba46386779d11472e69",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -11461,6 +12603,7 @@
 		remark = "6c405042f7a4053ffdc4afa94d09479b",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			211119,
@@ -11474,6 +12617,7 @@
 		remark = "ad030f4dba9ae55c7b3f660147a9f200",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -11483,6 +12627,7 @@
 		remark = "033087215c6d9e65d61a9be1d70ba6b0",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -11492,6 +12637,7 @@
 		remark = "97ade9fb8353ec50c154e3fbe25cb5ba",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			211121,
@@ -11506,6 +12652,7 @@
 		remark = "9374f3c87a53b71407ebdfbb60859aba",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -11515,6 +12662,7 @@
 		remark = "84b1c1c15dd2b0cc60014d9fcd7f0252",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -11524,6 +12672,7 @@
 		remark = "6376d71cd105f526f0b8c6d3952676d0",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -11533,6 +12682,7 @@
 		remark = "96bdb6d3c83c388e3c78b138c65d4d42",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -11542,6 +12692,7 @@
 		remark = "658f1ca8b03ea1c134c433db175f9081",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -11551,6 +12702,7 @@
 		remark = "764219a6f5cabcf87d06289457c9793b",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -11560,6 +12712,7 @@
 		remark = "8f470dd311f1f5c685fe2a61380a4a23",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -11569,6 +12722,7 @@
 		remark = "eacf2226a80fed64e69b489831546998",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			222501,
@@ -11585,6 +12739,7 @@
 		remark = "00309f848fb9298321ca2d716e0f5c9b",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 250,
 		sub_activity_list = {
 			220050
@@ -11596,6 +12751,7 @@
 		remark = "3b2e750921a9dcd5e8923bde4c8a7ae3",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -11605,6 +12761,7 @@
 		remark = "11a501287b5429eb997f2119b1097344",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 257,
 		sub_activity_list = {
 			220047
@@ -11616,6 +12773,7 @@
 		remark = "666ea61c6e9877ac74ee296a08602f63",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {
 			220048,
@@ -11628,6 +12786,7 @@
 		remark = "b4a2e297d4769346af8e6d863b5d7106",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -11637,6 +12796,7 @@
 		remark = "f3573aa299cbcc0ad0db477c0598f3dd",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -11646,6 +12806,7 @@
 		remark = "8f5bf74f2b09ed133704730cc6144850",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 254,
 		sub_activity_list = {}
 	},
@@ -11655,6 +12816,7 @@
 		remark = "8fe344664eec376438cf64fe4d3de27b",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 266,
 		sub_activity_list = {
 			222411
@@ -11666,6 +12828,7 @@
 		remark = "600675804125b15ba93eb34cbac89cf2",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 241,
 		sub_activity_list = {}
 	},
@@ -11675,6 +12838,7 @@
 		remark = "d30d2e17cc9f80a9ecb7a19152f0444e",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 258,
 		sub_activity_list = {
 			222591,
@@ -11687,6 +12851,7 @@
 		remark = "61f40a2c735fc7fcde63295a35567c9e",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 259,
 		sub_activity_list = {
 			222611,
@@ -11707,6 +12872,7 @@
 		remark = "3961a6b9e29d3c8b22fa9d6ed323a8b6",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 260,
 		sub_activity_list = {
 			222641,
@@ -11722,6 +12888,7 @@
 		remark = "5a08ab6e35debf2e8487adc7c86bdcf5",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 261,
 		sub_activity_list = {}
 	},
@@ -11731,6 +12898,7 @@
 		remark = "22f6ed285629a95ed1f2bdbfe8125e9b",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 261,
 		sub_activity_list = {}
 	},
@@ -11740,6 +12908,7 @@
 		remark = "f87b390f07886200798fcacdf90b71eb",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 262,
 		sub_activity_list = {}
 	},
@@ -11749,6 +12918,7 @@
 		remark = "f46345b3b0d51abc32b4fab7cdfd4cdd",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 262,
 		sub_activity_list = {}
 	},
@@ -11758,6 +12928,7 @@
 		remark = "3271eb802a298da323302641d9a0f72f",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 263,
 		sub_activity_list = {}
 	},
@@ -11767,6 +12938,7 @@
 		remark = "538cfca625c2029d661867bfda40f2bb",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 263,
 		sub_activity_list = {}
 	},
@@ -11776,6 +12948,7 @@
 		remark = "afd9eb2b1e4b7a93f9fa9bb0107d9447",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 264,
 		sub_activity_list = {}
 	},
@@ -11785,6 +12958,7 @@
 		remark = "151e9dfb22e4459c06b3840a63d78bf4",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 265,
 		sub_activity_list = {}
 	},
@@ -11794,6 +12968,7 @@
 		remark = "94c9a34f609fe4564e5d3b44de5c43e1",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -11803,6 +12978,7 @@
 		remark = "fcf42db351192b40081be42b76aafad1",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -11812,6 +12988,7 @@
 		remark = "cd1bb245ffaa7dd2caa0c835523cf59b",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -11821,6 +12998,7 @@
 		remark = "2acd41db75988f64c55044a69fc2a5c6",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -11830,6 +13008,7 @@
 		remark = "a45e434cc99778a6df831a39c529cb01",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -11839,6 +13018,7 @@
 		remark = "1f5198852aa2ff6b91bf3c3477925111",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -11848,6 +13028,7 @@
 		remark = "5569a216d96ddb2508bc03336b5af2eb",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 271,
 		sub_activity_list = {}
 	},
@@ -11857,6 +13038,7 @@
 		remark = "8e9bcd5203a3bc23489e90bf765c97b8",
 		unlock_condition = "",
 		activity_theme = 22,
+		reward_show = "",
 		activity_template = 272,
 		sub_activity_list = {}
 	},
@@ -11866,6 +13048,7 @@
 		remark = "0f5d922867dff211f73df110023442ea",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 214,
 		sub_activity_list = {
 			222142
@@ -11877,6 +13060,7 @@
 		remark = "757003b3823b8f5822f84aec62315248",
 		unlock_condition = "",
 		activity_theme = 21,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -11886,6 +13070,7 @@
 		remark = "ba548366912359316866e856fc0cb1d5",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			231201,
@@ -11936,6 +13121,7 @@
 		remark = "020e09c211dd826f79e41d9742a1f5e4",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			230561
@@ -11947,6 +13133,7 @@
 		remark = "291e3a501fc3172067d4998ce14aa960",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 56,
 		sub_activity_list = {
 			231821,
@@ -11959,6 +13146,7 @@
 		remark = "b049f4143f9cb24d29a3ce65059dd1a5",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 182,
 		sub_activity_list = {}
 	},
@@ -11968,6 +13156,7 @@
 		remark = "42316d8a05f5dc49a56d97d3d351d240",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 182,
 		sub_activity_list = {}
 	},
@@ -11977,6 +13166,7 @@
 		remark = "8adcff45037c37b7273cfebf0253567a",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -11986,6 +13176,7 @@
 		remark = "f661bbe8c210eab39d6793ca4cda56f1",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 243,
 		sub_activity_list = {
 			231461,
@@ -11999,6 +13190,7 @@
 		remark = "a83ec31f2c68d6ba6a25aaafff92f3ae",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -12008,6 +13200,7 @@
 		remark = "0ae147477e826ee5c6d5f69a5050a1a5",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 244,
 		sub_activity_list = {}
 	},
@@ -12017,6 +13210,7 @@
 		remark = "d24a89d20a45b60e0164e28a0fd1cc33",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -12026,6 +13220,7 @@
 		remark = "49f5b376cd6d4376e4b3b994e5ab44a1",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -12035,6 +13230,7 @@
 		remark = "c19c6022dabb63339e3496cf01a61fe3",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			231111
@@ -12046,6 +13242,7 @@
 		remark = "391cec4425d1e88e5c70575b6a43bbda",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -12055,6 +13252,7 @@
 		remark = "c3b862038626c96a1082fa1535d19441",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -12064,6 +13262,7 @@
 		remark = "ba9fdbd87f317ec28aeaab13c21e55e7",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -12073,6 +13272,7 @@
 		remark = "2079eb6ab316e27e5e7f998b2292d257",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -12082,6 +13282,7 @@
 		remark = "e6a8ee4f7d4e0983b96532968ed19285",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -12091,6 +13292,7 @@
 		remark = "3eb00851a69b1d22535444a0c64a0ae1",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -12100,6 +13302,7 @@
 		remark = "7b764148a2a1edf8b8ff6aafd9758c62",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -12109,6 +13312,7 @@
 		remark = "69bc60ded474458b3e79cbab10037342",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -12118,6 +13322,7 @@
 		remark = "19103bc5590367b661f8a348c3379bf9",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -12127,6 +13332,7 @@
 		remark = "3423f5e6739869fd5554f97ac8b0d06f",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -12136,6 +13342,7 @@
 		remark = "73c8f75d2c8f78a1d7af30f70ccb80bb",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -12145,6 +13352,7 @@
 		remark = "85ea77ae4137bab81e02600a6f13f44f",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -12154,6 +13362,7 @@
 		remark = "02dbff54bf4963221cb27a44d63af301",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -12163,6 +13372,7 @@
 		remark = "abb86fd53c4aae567c6f33e4b46fd377",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -12172,6 +13382,7 @@
 		remark = "67d93cf8ffb208b399368edce02444c5",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -12181,6 +13392,7 @@
 		remark = "caaee61aec9e87b1bb57ea88e16dbb5b",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -12190,6 +13402,7 @@
 		remark = "089d2f61cf223f5aae7548936fd5997e",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 105,
 		sub_activity_list = {
 			2312701,
@@ -12212,6 +13425,7 @@
 		remark = "31e60c73ec99c24b56f394b29ada487f",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -12221,6 +13435,7 @@
 		remark = "bcc1d3c17ec7abd918ca25047d539d3b",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -12230,6 +13445,7 @@
 		remark = "2376d96122e23a70428f09ed05026768",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -12239,6 +13455,7 @@
 		remark = "95f552f393a47320b88574151e273763",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -12248,6 +13465,7 @@
 		remark = "4c207d04b868ef304e1a5e7b89bd6787",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -12257,6 +13475,7 @@
 		remark = "a07068b8337d18211dca564751532f29",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -12266,6 +13485,7 @@
 		remark = "f525a1ad5c7cfd0c174ca4c28224f777",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -12275,6 +13495,7 @@
 		remark = "4be51c5b20cc91104845bc24fdc762fa",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -12284,6 +13505,7 @@
 		remark = "5be8d8018dc23bb62657294b216113bb",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -12293,6 +13515,7 @@
 		remark = "98ece9b43bf639a58d7aaac6ba3876e6",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -12302,6 +13525,7 @@
 		remark = "4eee2dfd0699a9abdd7c393ecbe1cf26",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -12311,6 +13535,7 @@
 		remark = "975eab3843a3c00841e81b0d025a1ed3",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -12320,6 +13545,7 @@
 		remark = "de09ab414d069fc2f6ee9e576f194f18",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 128,
 		sub_activity_list = {
 			231301,
@@ -12336,6 +13562,7 @@
 		remark = "f81f4c835aae0a414eabab2c034297c8",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 130,
 		sub_activity_list = {}
 	},
@@ -12345,6 +13572,7 @@
 		remark = "f2543b02fd25d26cdfb7ab42ee3cac21",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 119,
 		sub_activity_list = {}
 	},
@@ -12354,6 +13582,7 @@
 		remark = "39b10fcc6b62bb604f800b20574fd9ce",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 119,
 		sub_activity_list = {}
 	},
@@ -12363,6 +13592,7 @@
 		remark = "e0174244210b03de99b8affbc7413318",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 119,
 		sub_activity_list = {}
 	},
@@ -12372,6 +13602,7 @@
 		remark = "b4b0edd44b9e85a2d2a44e15228c66dd",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 119,
 		sub_activity_list = {}
 	},
@@ -12381,6 +13612,7 @@
 		remark = "8080585fcc0dcfc04f485a2a188bdc7f",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 119,
 		sub_activity_list = {}
 	},
@@ -12390,6 +13622,7 @@
 		remark = "21e0452ddacfe256de5af88d9f8573bd",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 275,
 		sub_activity_list = {}
 	},
@@ -12399,6 +13632,7 @@
 		remark = "7e7cf192c4b1af7eb591ccefaac94e32",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -12408,6 +13642,7 @@
 		remark = "5407ce2dfa67b0cd6b8f414f39d9f38a",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -12417,6 +13652,7 @@
 		remark = "c6575d7c117262c34b2e689d6b4e3ec1",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -12426,6 +13662,7 @@
 		remark = "a1ddb52b5732f9c7b4cdf85724e6880e",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 246,
 		sub_activity_list = {
 			232471,
@@ -12439,6 +13676,7 @@
 		remark = "21462f2e64feb9fac55dc82bcbc2017a",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 247,
 		sub_activity_list = {}
 	},
@@ -12448,6 +13686,7 @@
 		remark = "01369708de99347a9f2a129611dccea9",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 247,
 		sub_activity_list = {}
 	},
@@ -12457,6 +13696,7 @@
 		remark = "195d696aa3ddecd5fa8479bfe766758e",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 247,
 		sub_activity_list = {}
 	},
@@ -12466,6 +13706,7 @@
 		remark = "00db67e31c6bec816a404b3d9ddeb0ca",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 276,
 		sub_activity_list = {
 			232771,
@@ -12484,6 +13725,7 @@
 		remark = "1ee2f877d406c7d655adc87355365fa9",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -12493,6 +13735,7 @@
 		remark = "6aaf83de6d0f6d0ddb025c331458752f",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 277,
 		sub_activity_list = {}
 	},
@@ -12502,6 +13745,7 @@
 		remark = "1fef547d380e1bbfc28135a2dcac3a67",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 277,
 		sub_activity_list = {}
 	},
@@ -12511,6 +13755,7 @@
 		remark = "b1cfa2281cc9955c9a339ae3435a30d3",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 277,
 		sub_activity_list = {}
 	},
@@ -12520,6 +13765,7 @@
 		remark = "b6d905b040186c89145ffa032ba20ce1",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 277,
 		sub_activity_list = {}
 	},
@@ -12529,6 +13775,7 @@
 		remark = "d5b6d5da7f2dc2c3ae7ad1184ab7855a",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 277,
 		sub_activity_list = {}
 	},
@@ -12538,6 +13785,7 @@
 		remark = "13aa8bb00974025bb766d8d7a9350ea1",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 277,
 		sub_activity_list = {}
 	},
@@ -12547,6 +13795,7 @@
 		remark = "45fedd561cf815476c100118071bb609",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 277,
 		sub_activity_list = {}
 	},
@@ -12556,6 +13805,7 @@
 		remark = "acb9137234188cbf9b2cc9557072d192",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 148,
 		sub_activity_list = {
 			231491,
@@ -12574,6 +13824,7 @@
 		remark = "c3d87ce64dabc73990a46b64b5aee280",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -12583,6 +13834,7 @@
 		remark = "f69d92e15963b6b947ebedfd45fd3b27",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -12592,6 +13844,7 @@
 		remark = "65f5ce841f7855959d286e2ffd6c94eb",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -12601,6 +13854,7 @@
 		remark = "c0f7b402062a437fe9732dff61d236c9",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -12610,6 +13864,7 @@
 		remark = "515a10ac0794b8c07a478f6a1058e4d0",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -12619,6 +13874,7 @@
 		remark = "077e90e50034f3fcedfd6e650a26f485",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -12628,6 +13884,7 @@
 		remark = "c8b63d75cc7e73dd5c91fa281a9db308",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -12637,6 +13894,7 @@
 		remark = "d00935f61fe1c9481303910e27dac1d3",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 149,
 		sub_activity_list = {}
 	},
@@ -12646,6 +13904,7 @@
 		remark = "1821c284a847196deaa93ac314f9c6e0",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -12655,6 +13914,7 @@
 		remark = "e8f5a8eb300e976f7f43a1cac9a271be",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -12664,6 +13924,7 @@
 		remark = "9f6337f79690d547eaf72fe1cd48f4b6",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -12673,6 +13934,7 @@
 		remark = "ff2fd1971109e32bef7dea02ddd399a5",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -12682,6 +13944,7 @@
 		remark = "fbf03c0882186e5ec35c41c33ec51599",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -12691,6 +13954,7 @@
 		remark = "bb54a0a699cd9a7f101e2e31fe2b0bcc",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -12700,6 +13964,7 @@
 		remark = "c26751ab57463af79f79a7849f0d14fd",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 10,
 		sub_activity_list = {}
 	},
@@ -12709,6 +13974,7 @@
 		remark = "19ee1cad3c14a7fa3371c947975595ae",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 10,
 		sub_activity_list = {}
 	},
@@ -12718,6 +13984,7 @@
 		remark = "5a1d5884b35ecbb55c47dc25ad99d1bc",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			231112
@@ -12729,6 +13996,7 @@
 		remark = "8e21af34f15a78f7f637d490619073b1",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -12738,6 +14006,7 @@
 		remark = "7939238ab11995248fa967667d9160bd",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -12747,6 +14016,7 @@
 		remark = "fa56de5bc563f958d85c35db6b3706a9",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 243,
 		sub_activity_list = {
 			231462,
@@ -12760,6 +14030,7 @@
 		remark = "36e8758b79e1ccbfb690265ed35c748c",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -12769,6 +14040,7 @@
 		remark = "2fe8980db10284dc3293b8086f3a055a",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 244,
 		sub_activity_list = {}
 	},
@@ -12778,6 +14050,7 @@
 		remark = "c003c59713858f5e8ecefc93542ad27f",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -12787,6 +14060,7 @@
 		remark = "877bea2be09bc48763739115ade4732c",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -12796,6 +14070,7 @@
 		remark = "64c75411cfe5f564a573e0d8ffbc3203",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -12805,6 +14080,7 @@
 		remark = "a444fbd2630e1544edd508ed35b74986",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -12814,6 +14090,7 @@
 		remark = "ba05ab483467034cc53de0c4a9dba484",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -12823,6 +14100,7 @@
 		remark = "e73691ac5e5226514718b8045eb32aa1",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -12832,6 +14110,7 @@
 		remark = "625483a4c3cdb5e46d6f937cc77d941f",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -12841,6 +14120,7 @@
 		remark = "d7b99522a4932c41abd25770bf2125fd",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -12850,6 +14130,7 @@
 		remark = "43d15e85abcbf9a7f13c492d8774d12e",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 73,
 		sub_activity_list = {
 			230732,
@@ -12864,6 +14145,7 @@
 		remark = "a1abb9a94dc92cba67f0053a22c13a0d",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -12873,6 +14155,7 @@
 		remark = "d014356dcecbfd36c5c75c4e48f9b9a6",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -12882,6 +14165,7 @@
 		remark = "56383f00967ad78383028712b9e8d5c2",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -12891,6 +14175,7 @@
 		remark = "420a5446169e8837bcb4afcd97414f2c",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -12900,6 +14185,7 @@
 		remark = "2a105f9246e6adc7cb3171461a8a1681",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			232251,
@@ -12913,6 +14199,7 @@
 		remark = "c88ca9205fa0bf9036a33408cf25a569",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			232251,
@@ -12926,6 +14213,7 @@
 		remark = "7951c6283fe30ce06bc81d5295196f37",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			232251,
@@ -12939,6 +14227,7 @@
 		remark = "93b9f5a3fe387ecb4d95e429340179c9",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -12948,6 +14237,7 @@
 		remark = "4e8b599e3be5840339d88e9a4ac7e595",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -12957,6 +14247,7 @@
 		remark = "8abef4fd2717e9a40701ba4173062964",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -12966,6 +14257,7 @@
 		remark = "17bdba5ecdd8a2aa4c16b86c7e903fc0",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -12975,6 +14267,7 @@
 		remark = "3e7e6571387c1984736f3ef5ec0ab021",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -12984,6 +14277,7 @@
 		remark = "a9b1d0b151e057a4b9c1e2c86e3684c0",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			232254,
@@ -12997,6 +14291,7 @@
 		remark = "4f2ae243f30b889bd9ebcd6e2cd87833",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			232254,
@@ -13010,6 +14305,7 @@
 		remark = "216a17585df515893b7dc1ee89cf22a6",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			232254,
@@ -13023,6 +14319,7 @@
 		remark = "812e8bfe5ae5f114278e00ff2cd00709",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -13032,6 +14329,7 @@
 		remark = "ddd3113c553c795c80c5a879175b4606",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -13041,6 +14339,7 @@
 		remark = "41eeca842ef5f41817859d6b6283cdb2",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -13050,6 +14349,7 @@
 		remark = "3747bdf8c5e4bb3336edd42ac4bca2d7",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -13059,6 +14359,7 @@
 		remark = "e49cf46f8cb61a30b25c0139ee9a9ce3",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -13068,6 +14369,7 @@
 		remark = "177c3dc45cc9ea94ff1709ea33b9a655",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {}
 	},
@@ -13077,6 +14379,7 @@
 		remark = "2ee931cb4045c5116056222d735f3818",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			231113,
@@ -13094,6 +14397,7 @@
 		remark = "86ed0455b2fe57dfeaa017639850f1c5",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -13103,6 +14407,7 @@
 		remark = "b88c9efa89294f818d55e3ae7f6c95cb",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -13112,6 +14417,7 @@
 		remark = "14ca85d183c58bd65f5d3ee774dc6bd1",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -13121,6 +14427,7 @@
 		remark = "016ab28820e0d542d4102840717672e6",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -13130,6 +14437,7 @@
 		remark = "60fe2d63863e8a6bb5d7beab52ff2d53",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -13139,6 +14447,7 @@
 		remark = "739d2079e4debeb32a33fb2266a04ecc",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -13148,6 +14457,7 @@
 		remark = "e3d9b6d189f069648dbd89cef6dc6ebd",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 215,
 		sub_activity_list = {}
 	},
@@ -13157,6 +14467,7 @@
 		remark = "7f02b7924e9f8c3352051b12ef498084",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 217,
 		sub_activity_list = {
 			2314611,
@@ -13175,6 +14486,7 @@
 		remark = "41555e193b6dcd9d264d9c04b6f39b78",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -13184,6 +14496,7 @@
 		remark = "c07df0741be4818c38e5bb0c6395e302",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -13193,6 +14506,7 @@
 		remark = "3c2adec6f1e9f51a812192bcc55d13bb",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -13202,6 +14516,7 @@
 		remark = "fa157a9eb477f5791d208f67bedc0bee",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -13211,6 +14526,7 @@
 		remark = "0604e38f80c54a931a0ef5a19e745936",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -13220,6 +14536,7 @@
 		remark = "8ee672577e57cdba7f45b1065316fdf5",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -13229,6 +14546,7 @@
 		remark = "b4fe8962b92faf2b225aeb04c6f0b079",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -13238,6 +14556,7 @@
 		remark = "9e4dd7c38dd89a8819fa34ad8b965460",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -13247,6 +14566,7 @@
 		remark = "eaf57e134d1ba79512dc60de63d2098c",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -13256,6 +14576,7 @@
 		remark = "146609e21fa14296a122e1d72432d6e5",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -13265,6 +14586,7 @@
 		remark = "3e923e657125ffcccbde074f546ed346",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 221,
 		sub_activity_list = {
 			232221,
@@ -13279,6 +14601,7 @@
 		remark = "928456019e72b7e7b29775c942061f24",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 222,
 		sub_activity_list = {}
 	},
@@ -13288,6 +14611,7 @@
 		remark = "16d0d235471615b0d38f310645c55e48",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 222,
 		sub_activity_list = {}
 	},
@@ -13297,6 +14621,7 @@
 		remark = "f85aabbc9495783c91ba81c283e706e3",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 223,
 		sub_activity_list = {}
 	},
@@ -13306,6 +14631,7 @@
 		remark = "263f52af34b38960ed743296397eea4d",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 223,
 		sub_activity_list = {}
 	},
@@ -13315,6 +14641,7 @@
 		remark = "f12cf5999304bb38ed6050443f95ef28",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -13324,6 +14651,7 @@
 		remark = "af265242df717117db56f8ee93d425a6",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -13333,6 +14661,7 @@
 		remark = "f55cc563f97d4879a2deca53dd53343b",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 231,
 		sub_activity_list = {}
 	},
@@ -13342,6 +14671,7 @@
 		remark = "9ae9e6ae1bd81393dd4f522b77aaafd1",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 245,
 		sub_activity_list = {
 			230053,
@@ -13354,6 +14684,7 @@
 		remark = "44a8d53e1bcbc13f1c58573c8760d048",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -13363,6 +14694,7 @@
 		remark = "0028771591116996b0ec85dad5ae6c57",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -13372,6 +14704,7 @@
 		remark = "c0d7d7307edd81a760fbdeb7b2bb94e6",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 214,
 		sub_activity_list = {
 			232142
@@ -13383,6 +14716,7 @@
 		remark = "1766cac3bd133cdaad9c08bea82ed8ae",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -13392,6 +14726,7 @@
 		remark = "af5fe01377f96021ed79a81b4b62ade4",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 214,
 		sub_activity_list = {
 			232144
@@ -13403,6 +14738,7 @@
 		remark = "36b6a7ce255b3cbf52718ea6df244af2",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -13412,6 +14748,7 @@
 		remark = "cf7ee9175e90ab11727cd3958de8e939",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -13421,6 +14758,7 @@
 		remark = "8a18d01846387f3c986b1fdb94370eeb",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -13430,6 +14768,7 @@
 		remark = "eea9969fa0124eed30c81ab6669fbf0f",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 9003,
 		sub_activity_list = {}
 	},
@@ -13439,6 +14778,7 @@
 		remark = "792478f9c53fdb9d386fef098cf30179",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -13448,6 +14788,7 @@
 		remark = "1071e8b24d3d29a9973f45513429603e",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -13457,6 +14798,7 @@
 		remark = "78e34bb81fba50d7dcf317d70e282234",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 249,
 		sub_activity_list = {}
 	},
@@ -13466,6 +14808,7 @@
 		remark = "c6062975201939c23036ed072a307510",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 9003,
 		sub_activity_list = {}
 	},
@@ -13475,6 +14818,7 @@
 		remark = "b26d488771617dc1d3e90d7fc499236f",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 9003,
 		sub_activity_list = {}
 	},
@@ -13484,6 +14828,7 @@
 		remark = "6c8cf89338cf02805b59f015890516e5",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 9003,
 		sub_activity_list = {}
 	},
@@ -13493,6 +14838,7 @@
 		remark = "0e213364ab628b2e7d81148cb0a5f8cb",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 73,
 		sub_activity_list = {
 			2307312,
@@ -13507,6 +14853,7 @@
 		remark = "6aadce7426f6421554c872df8825c83d",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -13516,6 +14863,7 @@
 		remark = "74ec53d616d9f3889e52b8944a0d94cd",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -13525,6 +14873,7 @@
 		remark = "57b7b47ee621c6538a79161f72200697",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -13534,6 +14883,7 @@
 		remark = "8a7d5471b94990410959c165ec654fb0",
 		unlock_condition = "",
 		activity_theme = 23,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -13543,6 +14893,7 @@
 		remark = "c06a0f1d4ac82e57ea73903f294897f4",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			241201,
@@ -13573,6 +14924,7 @@
 		remark = "b52b65f30b348e00df91d0ae493123e6",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			240561
@@ -13584,6 +14936,7 @@
 		remark = "4c24961d0157ac70050824c5e25745c5",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 56,
 		sub_activity_list = {
 			242781,
@@ -13596,6 +14949,7 @@
 		remark = "60c9c0df0de1a4982c37214034c43713",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 278,
 		sub_activity_list = {}
 	},
@@ -13605,6 +14959,7 @@
 		remark = "f9b819d1312c093b4e2911ad4dff2f73",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 278,
 		sub_activity_list = {}
 	},
@@ -13614,6 +14969,7 @@
 		remark = "31a563bd12e19d094a717a7c2da55524",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			241701,
@@ -13626,6 +14982,7 @@
 		remark = "2702857b0452460e36a69b2c5152b6c1",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 170,
 		sub_activity_list = {}
 	},
@@ -13635,6 +14992,7 @@
 		remark = "cd09b3fb23ac13f894a05e542b21b159",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 170,
 		sub_activity_list = {}
 	},
@@ -13644,6 +15002,7 @@
 		remark = "bff5c63b9486653c3a66d1514e35d89d",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {
 			243221
@@ -13655,6 +15014,7 @@
 		remark = "43a97ce441bb26dc0b4aec9ffb97c8f3",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -13664,6 +15024,7 @@
 		remark = "19baa30e526cf1b9248e113d95a48f55",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -13673,6 +15034,7 @@
 		remark = "2d162e2c511ab5b53ff618d82c08d179",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -13682,6 +15044,7 @@
 		remark = "d0256d70a181257aee71c0bd7e04d435",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			241111,
@@ -13694,6 +15057,7 @@
 		remark = "7116132d76f7569dd2cfb1a31b5e6b72",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -13703,6 +15067,7 @@
 		remark = "c607aeab47b38884ee75f3e85174936f",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -13712,6 +15077,7 @@
 		remark = "47905ad8661a0e736e44566bc9996a43",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -13721,6 +15087,7 @@
 		remark = "ceaa398d280ea882780396b250134e93",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -13730,6 +15097,7 @@
 		remark = "c52b40d8e590add81fa384b2ee638de6",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -13739,6 +15107,7 @@
 		remark = "7de5a84721000a1702655753e22800d0",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 243,
 		sub_activity_list = {
 			241461,
@@ -13752,6 +15121,7 @@
 		remark = "94b7fdb519bae025b4c79a4d0151eb74",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -13761,6 +15131,7 @@
 		remark = "d5c3f35647f6bd7cbe6dc1b9573d51ef",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 244,
 		sub_activity_list = {}
 	},
@@ -13770,6 +15141,7 @@
 		remark = "83a446b33fca693e424f33ee0fdbe7d6",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -13779,6 +15151,7 @@
 		remark = "7ec80f819b39a0f240a4b19a4b6ce9b4",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 243,
 		sub_activity_list = {
 			241462,
@@ -13792,6 +15165,7 @@
 		remark = "41ef810526a38354a016a06ffa5adf5b",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -13801,6 +15175,7 @@
 		remark = "de0ae5288aa7dd686beecd2526ecf982",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 244,
 		sub_activity_list = {}
 	},
@@ -13810,6 +15185,7 @@
 		remark = "7458ae6217dc6fd1901f299520037e74",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -13819,6 +15195,7 @@
 		remark = "d4b98fe78c4d9311999b0472b6c84350",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -13828,6 +15205,7 @@
 		remark = "3312f96bcf6c0fe0bff469a4df31ecc5",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -13837,6 +15215,7 @@
 		remark = "b4cebab8f3fde589dcb17ea2b5e89777",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 279,
 		sub_activity_list = {
 			2428001,
@@ -13863,6 +15242,7 @@
 		remark = "d80f2b3480b0aa2fccc7482f89bb4d20",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 280,
 		sub_activity_list = {}
 	},
@@ -13872,6 +15252,7 @@
 		remark = "446001a0c34f3f9be76a0b4c05046095",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 280,
 		sub_activity_list = {}
 	},
@@ -13881,6 +15262,7 @@
 		remark = "dd7eb37547d9ead671e21e55b1a9f513",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 280,
 		sub_activity_list = {}
 	},
@@ -13890,6 +15272,7 @@
 		remark = "5ccd40330a8243af098d64813dfe0219",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 280,
 		sub_activity_list = {}
 	},
@@ -13899,6 +15282,7 @@
 		remark = "4fa4b8c8991cc820f4220e3644443bac",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 280,
 		sub_activity_list = {}
 	},
@@ -13908,6 +15292,7 @@
 		remark = "25de614395c326cb25089b2c707dbcef",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 280,
 		sub_activity_list = {}
 	},
@@ -13917,6 +15302,7 @@
 		remark = "678e3faf0479b3738f03313228cf87af",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 280,
 		sub_activity_list = {}
 	},
@@ -13926,6 +15312,7 @@
 		remark = "b8b4296212e96b67e51299dc7ff33a35",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 280,
 		sub_activity_list = {}
 	},
@@ -13935,6 +15322,7 @@
 		remark = "a62740d0263092071bcc028cc626260d",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 280,
 		sub_activity_list = {}
 	},
@@ -13944,6 +15332,7 @@
 		remark = "779b03e4bc723361bb39caf2acd07a5b",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 280,
 		sub_activity_list = {}
 	},
@@ -13953,6 +15342,7 @@
 		remark = "28f4fd5b035a5501293d5fed6c3d026c",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 280,
 		sub_activity_list = {}
 	},
@@ -13962,6 +15352,7 @@
 		remark = "c7f680a6bb1fde51e54bcf4c9ee74a1c",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 280,
 		sub_activity_list = {}
 	},
@@ -13971,6 +15362,7 @@
 		remark = "5aa7402e077e5a5b2b541878956880cb",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 280,
 		sub_activity_list = {}
 	},
@@ -13980,6 +15372,7 @@
 		remark = "dc25e865e68b3ca7f5a894089ba2475d",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 280,
 		sub_activity_list = {}
 	},
@@ -13989,6 +15382,7 @@
 		remark = "ac385c2f5e4f0b6eeebaaca3c9f0d2e4",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 280,
 		sub_activity_list = {}
 	},
@@ -13998,6 +15392,7 @@
 		remark = "0024f0b8b0316d2a56ea4d4ef61b1e79",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 288,
 		sub_activity_list = {}
 	},
@@ -14007,6 +15402,7 @@
 		remark = "ddd6304bc30c146a4d3adbab7bf381ed",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 281,
 		sub_activity_list = {
 			242821,
@@ -14024,6 +15420,7 @@
 		remark = "0e085d7d68df5d2fe25238446d277198",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 282,
 		sub_activity_list = {}
 	},
@@ -14033,6 +15430,7 @@
 		remark = "5eab3809f84539ae457fd237e8edb7ad",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 282,
 		sub_activity_list = {}
 	},
@@ -14042,6 +15440,7 @@
 		remark = "aa23e9e71db8425478ab4d4142b46ed7",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 282,
 		sub_activity_list = {}
 	},
@@ -14051,6 +15450,7 @@
 		remark = "432f22d603ae9a25fe68e6629532feb8",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 282,
 		sub_activity_list = {}
 	},
@@ -14060,6 +15460,7 @@
 		remark = "0b5c41ef53f95068ea3525b9b4cccab9",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 282,
 		sub_activity_list = {}
 	},
@@ -14069,6 +15470,7 @@
 		remark = "47c01a43cfbb0bdca67793f3cefa339d",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 282,
 		sub_activity_list = {}
 	},
@@ -14078,6 +15480,7 @@
 		remark = "ddbd285ffb3744e1ccb5450a5165ee1a",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 282,
 		sub_activity_list = {}
 	},
@@ -14087,6 +15490,7 @@
 		remark = "a25b4232e0e10edcbf171ad49a0bb025",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 284,
 		sub_activity_list = {
 			242851,
@@ -14102,6 +15506,7 @@
 		remark = "5347c18313fce4e69ddbaf4ddb7c8773",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 285,
 		sub_activity_list = {}
 	},
@@ -14111,6 +15516,7 @@
 		remark = "56d3137d04168244e94477405bd8d2e1",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 286,
 		sub_activity_list = {}
 	},
@@ -14120,6 +15526,7 @@
 		remark = "2003cb6935275327a65d2aa351603379",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 287,
 		sub_activity_list = {}
 	},
@@ -14129,6 +15536,7 @@
 		remark = "9148b738b6f0331529244158c167eb24",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -14138,6 +15546,7 @@
 		remark = "36cb4a7233f9968b71615454b565ff08",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -14147,6 +15556,7 @@
 		remark = "32c32a62dc6f6934a80c3deb2882c04b",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 289,
 		sub_activity_list = {
 			242901,
@@ -14161,6 +15571,7 @@
 		remark = "736c75d56d6e7d952eca9dd0707782a2",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 290,
 		sub_activity_list = {}
 	},
@@ -14170,6 +15581,7 @@
 		remark = "e03d919b5d4312cd5f9e3d0ad8a25490",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 290,
 		sub_activity_list = {}
 	},
@@ -14179,6 +15591,7 @@
 		remark = "7db868d36c3cf3f361af7845c0a45936",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 290,
 		sub_activity_list = {}
 	},
@@ -14188,6 +15601,7 @@
 		remark = "d706044524c9422c2079bad0a54c01a1",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 290,
 		sub_activity_list = {}
 	},
@@ -14197,6 +15611,7 @@
 		remark = "cea65eae4d3101de795211eabcc0a178",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 255,
 		sub_activity_list = {
 			240041,
@@ -14209,6 +15624,7 @@
 		remark = "710444733441be1b5d56039b182c9997",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 256,
 		sub_activity_list = {}
 	},
@@ -14218,6 +15634,7 @@
 		remark = "f4d7db6d212c82d89a54efa43b38044c",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -14227,6 +15644,7 @@
 		remark = "ac8eb03215fc24c02985bdab67e7d4b6",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 216,
 		sub_activity_list = {
 			240042
@@ -14238,6 +15656,7 @@
 		remark = "bf00da20989432664f3edbd6c6ba55c7",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -14247,6 +15666,7 @@
 		remark = "ec912d8c4c35c500d28bffad227cc781",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 291,
 		sub_activity_list = {}
 	},
@@ -14256,6 +15676,7 @@
 		remark = "d63288acc6e0e956ed40092f649579b8",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -14265,6 +15686,7 @@
 		remark = "b832c85d3d848f84338b58c0ad952554",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 293,
 		sub_activity_list = {}
 	},
@@ -14274,6 +15696,7 @@
 		remark = "51606bac458ff14bf1f8171414a68632",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 292,
 		sub_activity_list = {}
 	},
@@ -14283,6 +15706,7 @@
 		remark = "7edc610c34e3cbf100de12e514cc2c5c",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -14292,6 +15716,7 @@
 		remark = "4d4f5f1e74e5431657e1fa8cfb3d8262",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -14301,6 +15726,7 @@
 		remark = "327dfbb2236bc2c10d6435e9d459dc76",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -14310,6 +15736,7 @@
 		remark = "fea80d87351ec12a13e9f95883de6f1d",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -14319,6 +15746,7 @@
 		remark = "f530aeee9b69a7cd89b7f00813bb8a6f",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -14328,6 +15756,7 @@
 		remark = "3e010c0aa8da0bb4ae23a93a0fd28318",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -14337,6 +15766,7 @@
 		remark = "da2f145cc45db169685208ba5a6c4d5a",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -14346,6 +15776,7 @@
 		remark = "618791d1701be22526f37e0724a4b472",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -14355,6 +15786,7 @@
 		remark = "bfe16c34126ec5a383e42c5b5db98a86",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -14364,6 +15796,7 @@
 		remark = "f60229b63a233cf8ef15b2a54423cd22",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -14373,6 +15806,7 @@
 		remark = "7d84a7a283257ada07965fcbba6596e9",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 73,
 		sub_activity_list = {
 			240732,
@@ -14387,6 +15821,7 @@
 		remark = "b949025615598a33e49ba616b610cad6",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -14396,6 +15831,7 @@
 		remark = "719a82ea83d2332d56a207fe2834b888",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -14405,6 +15841,7 @@
 		remark = "ac466964006c11a84816c0e214c1d010",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -14414,6 +15851,7 @@
 		remark = "1db9f3de7875dee070485cc203b748d3",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -14423,6 +15861,7 @@
 		remark = "ddbedf8d07ddc3da90cd86bcf42a74c7",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			241114,
@@ -14436,6 +15875,7 @@
 		remark = "b037d7352d54b12521e3aad407bdef32",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -14445,6 +15885,7 @@
 		remark = "0bb7993355b805205ed0b458124a1dff",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -14454,6 +15895,7 @@
 		remark = "eb87e54ba0baf47850e2a6fdbdfb7acb",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -14463,6 +15905,7 @@
 		remark = "50f3cfa52fe82d7a6e2f0990b291017a",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {
 			243222,
@@ -14476,6 +15919,7 @@
 		remark = "bb115f09274186f65bbbbd17c55af064",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -14485,6 +15929,7 @@
 		remark = "29454db655881b145e3b5405c7dfacb0",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -14494,6 +15939,7 @@
 		remark = "447c88c0731d7acc040c491d8b302dba",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -14503,6 +15949,7 @@
 		remark = "086a54b114d62fab86367dbeaa0f6fd7",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			242251,
@@ -14516,6 +15963,7 @@
 		remark = "ce2dbc93185fa5b350acc3db9f3f4fc3",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			242251,
@@ -14529,6 +15977,7 @@
 		remark = "5c599dd28a4a093c7846d95e7ca27877",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -14538,6 +15987,7 @@
 		remark = "e78f48cb884639166fa70daff217f8a9",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -14547,6 +15997,7 @@
 		remark = "608c48606d2ea5bfafb519423dd7eeff",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -14556,6 +16007,7 @@
 		remark = "08cea0df7202fa04a93a5504eb58c9fc",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -14565,6 +16017,7 @@
 		remark = "1947de93b1c50f0e7eec371061891787",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -14574,6 +16027,7 @@
 		remark = "aeccb5183eb17f916a525a012779728f",
 		unlock_condition = "",
 		activity_theme = 26,
+		reward_show = "",
 		activity_template = 294,
 		sub_activity_list = {
 			261463
@@ -14585,6 +16039,7 @@
 		remark = "e9c4b8f4a1404d9804700c6e3f03e13e",
 		unlock_condition = "",
 		activity_theme = 26,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -14594,6 +16049,7 @@
 		remark = "56cf46ddaf7ae5851922b9089dc36f4f",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -14603,6 +16059,7 @@
 		remark = "b80bc3e90fe183b42cee64ddc2c8ae2f",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -14612,6 +16069,7 @@
 		remark = "13904c9f6ed2da02dbe20d0289980aee",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -14621,6 +16079,7 @@
 		remark = "e03113de39f3ca3f638f33a50c34ac7e",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			242254,
@@ -14634,6 +16093,7 @@
 		remark = "51b343139aeefa43bc56da21bc794b29",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			242254,
@@ -14647,6 +16107,7 @@
 		remark = "0f84e2e7208aacedb52e42d6b634d088",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			242254,
@@ -14660,6 +16121,7 @@
 		remark = "44e85285f2ac6789fc0fe7a38b93d498",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -14669,6 +16131,7 @@
 		remark = "2d4775f213a8c13fb99c8f2a960df54c",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -14678,6 +16141,7 @@
 		remark = "29989cda6a565a261e03c1cf7ce67d27",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -14687,6 +16151,7 @@
 		remark = "a5a1a25d502df5976dc1a45dc25eddb4",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 73,
 		sub_activity_list = {
 			240737,
@@ -14701,6 +16166,7 @@
 		remark = "0673c7d4b523944fdda89586976b5889",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -14710,6 +16176,7 @@
 		remark = "22bb5f3dc6182b89273cd08bda55262e",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -14719,6 +16186,7 @@
 		remark = "75df411f8349b37aea656136795e51a3",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -14728,6 +16196,7 @@
 		remark = "9b58b2603e3454357c6fa96ed67333d0",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -14737,6 +16206,7 @@
 		remark = "504692c552be32f8faa2c051b65b0280",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -14746,6 +16216,7 @@
 		remark = "cc1633de4346fed971b41e3edfb6b01d",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -14755,6 +16226,7 @@
 		remark = "724d5d2b7d4abb2420121831f4aedd7b",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -14764,6 +16236,7 @@
 		remark = "05a251629e7fb9996954f12f21608a67",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -14773,6 +16246,7 @@
 		remark = "5fba22c42c65a3078cb8bab4f764fff3",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -14782,6 +16256,7 @@
 		remark = "aa1290f985154e76bf126230079377c0",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -14791,6 +16266,7 @@
 		remark = "e6b7ac6ea0265fd97f2ef7f8e6a39721",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -14800,6 +16276,7 @@
 		remark = "cebd621a30683e08a2b17b191af8b884",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -14809,6 +16286,7 @@
 		remark = "dc79b4f19305909576460ed62770468d",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -14818,6 +16296,7 @@
 		remark = "1e66bf4f517fb3ba35de31da3455bd08",
 		unlock_condition = "",
 		activity_theme = 24,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -14827,6 +16306,7 @@
 		remark = "4cda4330b718387c035b0dd9b9668850",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			271201,
@@ -14846,6 +16326,7 @@
 		remark = "028b044a0fcae41ac30f7f35938dd7a9",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			271701
@@ -14857,6 +16338,7 @@
 		remark = "1aa719fbecfd8341c106cd3697cffa99",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 170,
 		sub_activity_list = {}
 	},
@@ -14866,6 +16348,7 @@
 		remark = "bca3163cd8179b25e31091fea3a555b9",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {
 			273221,
@@ -14879,6 +16362,7 @@
 		remark = "d14e674d8f0eedff2800c4b8a0455407",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -14888,6 +16372,7 @@
 		remark = "a0d7fccc5b6afc3540a5c88309235797",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -14897,6 +16382,7 @@
 		remark = "4ae50b1221e0ec84ce1e789ddbec6f2b",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -14906,6 +16392,7 @@
 		remark = "45e994535af8c3be90a3e59cf913ad94",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -14915,6 +16402,7 @@
 		remark = "dbccb9619e921d1cf6f3dbc1b4d98061",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -14924,6 +16412,7 @@
 		remark = "7a6f09f42cba0cd5649ecbf61a6410ff",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			271111,
@@ -14936,6 +16425,7 @@
 		remark = "ee9291f13dd12754ce2f2f5d2bf655fd",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -14945,6 +16435,7 @@
 		remark = "a89d1fb637de6fdcf1538d6872e99240",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -14954,6 +16445,7 @@
 		remark = "56c8f2c1485b30ea5984ccd55f6f85f3",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -14963,6 +16455,7 @@
 		remark = "3fd0cd2dbba4b64daacebce7268a03bd",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -14972,6 +16465,7 @@
 		remark = "4f7201c7fed73009bbceba2be8eac941",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -14981,6 +16475,7 @@
 		remark = "16d07effa6a300eca97b6c98830de06c",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 243,
 		sub_activity_list = {
 			271461,
@@ -14994,6 +16489,7 @@
 		remark = "95abc63b6af96e34182dadcf91bd042c",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -15003,6 +16499,7 @@
 		remark = "99581985aca3505f1766f7da7071667e",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 244,
 		sub_activity_list = {}
 	},
@@ -15012,6 +16509,7 @@
 		remark = "591492398ac5dc59aca63a296cdc9b85",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -15021,6 +16519,7 @@
 		remark = "b43229ac9f9f0ee24237b475a25acc0d",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -15030,6 +16529,7 @@
 		remark = "0ba92dd43e4cf5449136f2ffcf49bfa1",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -15039,6 +16539,7 @@
 		remark = "b465e6965f46c5ea6e6ff35d36623cbb",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -15048,6 +16549,7 @@
 		remark = "8d0b57b883956f2fbf66522092e51937",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -15057,6 +16559,7 @@
 		remark = "1530708c569fd11b2260ff44118afea6",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -15066,6 +16569,7 @@
 		remark = "82287d41b91e098c3cbb487a2318e98c",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -15075,6 +16579,7 @@
 		remark = "c4347980523f81e727278eeb6af9cd88",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -15084,6 +16589,7 @@
 		remark = "8960cffa99be01b74c8deedfc6916633",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -15093,6 +16599,7 @@
 		remark = "f2268808c1373d78dc52848d8b481fe9",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -15102,6 +16609,7 @@
 		remark = "5c69680ab577df81d5423441678fabc7",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -15111,6 +16619,7 @@
 		remark = "9c9c22189392f246f92b1d22c0884525",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 211,
 		sub_activity_list = {
 			272121,
@@ -15131,6 +16640,7 @@
 		remark = "3b62afa62dff285225b62e58ed933a73",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -15140,6 +16650,7 @@
 		remark = "e31651722d0392cf89feda66f99695a2",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -15149,6 +16660,7 @@
 		remark = "cb97761417a7fc3f2188f18ae1a800e2",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -15158,6 +16670,7 @@
 		remark = "c94ab20a331768081c8b35dbcbb4435b",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -15167,6 +16680,7 @@
 		remark = "0dc46d000abd534468fe662635dd3c21",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -15176,6 +16690,7 @@
 		remark = "aa8aecedd6f5aa5de613837a33da553a",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -15185,6 +16700,7 @@
 		remark = "9ccb5ca44816d8656a315ea9569c5194",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -15194,6 +16710,7 @@
 		remark = "17afbb2ebd62e3311ec2136fe25ec2ad",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -15203,6 +16720,7 @@
 		remark = "286663f083991de7903b17952eea0184",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 212,
 		sub_activity_list = {}
 	},
@@ -15212,6 +16730,7 @@
 		remark = "636e496b7aaa1d5d2bacaeb633b60c01",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -15221,6 +16740,7 @@
 		remark = "3fbc165400193afc1d70ce5ea791c228",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 184,
 		sub_activity_list = {
 			271851,
@@ -15239,6 +16759,7 @@
 		remark = "e85d4abdd97f661a6407e8b06dbdbbe0",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -15248,6 +16769,7 @@
 		remark = "8167af37bc46ae828872c4723e04d500",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -15257,6 +16779,7 @@
 		remark = "e5bde0554c6e86283c5926975bff8202",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -15266,6 +16789,7 @@
 		remark = "7a00d442805851cf4ef1c677e50a36d5",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -15275,6 +16799,7 @@
 		remark = "dab99675f56ecabe0e20ff507df998eb",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -15284,6 +16809,7 @@
 		remark = "ef9165005f2a18156677e29c0654bc68",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -15293,6 +16819,7 @@
 		remark = "9d94c1b9ee0db6e450288f1160ea03a9",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -15302,6 +16829,7 @@
 		remark = "8a266556e4108c0d9992587e6915ec76",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -15311,6 +16839,7 @@
 		remark = "ea56486017bc6d68ff47484d5c22396d",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -15320,6 +16849,7 @@
 		remark = "2558ad2cdf8259612d0ad4e229c2d3c0",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 221,
 		sub_activity_list = {
 			272221,
@@ -15334,6 +16864,7 @@
 		remark = "18fe735db1794277a3a89c3f8918635c",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 222,
 		sub_activity_list = {}
 	},
@@ -15343,6 +16874,7 @@
 		remark = "f617c7761dbc66386cbb44503ad0c436",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 222,
 		sub_activity_list = {}
 	},
@@ -15352,6 +16884,7 @@
 		remark = "e7f65eacae3ffd7486c1f10f59c02a89",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 223,
 		sub_activity_list = {}
 	},
@@ -15361,6 +16894,7 @@
 		remark = "af8d79b79c3bb2208734af2a33f09774",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 223,
 		sub_activity_list = {}
 	},
@@ -15370,6 +16904,7 @@
 		remark = "b5564cf1dfd2919c679cd3f1fe25de44",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -15379,6 +16914,7 @@
 		remark = "a946b4ab98c9ff2bcaff1822ec9b54e2",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -15388,6 +16924,7 @@
 		remark = "05cfb543d5e9d7e50725a71b699baa7f",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			272251,
@@ -15401,6 +16938,7 @@
 		remark = "5922ffccccc55337d68169d3f4455b45",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			272251,
@@ -15414,6 +16952,7 @@
 		remark = "0937298b94e4f26c12fc3fc2db30def2",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			272251,
@@ -15427,6 +16966,7 @@
 		remark = "d61e278851934a9b64ca1d4908304028",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -15436,6 +16976,7 @@
 		remark = "269fbf281435f2df3acf72791fb608f9",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -15445,6 +16986,7 @@
 		remark = "5e091671fcbb5f2abc79fefd6c1c719f",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -15454,6 +16996,7 @@
 		remark = "c20789cc09183fd12470f267fb89db0e",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -15463,6 +17006,7 @@
 		remark = "b1883b3c448b366b9ba9dec1c3cfd301",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -15472,6 +17016,7 @@
 		remark = "1f133f1660ddae06bc237dc88690739a",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -15481,6 +17026,7 @@
 		remark = "1cf7c3f773c6ae40cf7dbb8c8b526555",
 		unlock_condition = "",
 		activity_theme = 27,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -15490,6 +17036,7 @@
 		remark = "fa17252a24554ebf5eac3157098c3b91",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			280001,
@@ -15532,6 +17079,7 @@
 		remark = "f1fc65fa7d93c2fd92077b49b729b600",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			281701,
@@ -15544,6 +17092,7 @@
 		remark = "2cd8f3e1cef85b5caefc4864dc4469ca",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 170,
 		sub_activity_list = {}
 	},
@@ -15553,6 +17102,7 @@
 		remark = "a27ce17c87b06d47281b7c63fbd4e9b1",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 170,
 		sub_activity_list = {}
 	},
@@ -15562,6 +17112,7 @@
 		remark = "94fa882805b728b0b1c22adfd344e0f1",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {
 			273226,
@@ -15576,6 +17127,7 @@
 		remark = "b0b2156a44657bac6c003717c427c1a8",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -15585,6 +17137,7 @@
 		remark = "326f5cf1dd187bf5ec59562b9e63358b",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -15594,6 +17147,7 @@
 		remark = "463bb296e66d32847135760c56e8bc4c",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -15603,6 +17157,7 @@
 		remark = "31880ee1548bb8425d791d209e4a1d47",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -15612,6 +17167,7 @@
 		remark = "b1eee72f928a703ea38c93572b9c0ada",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {
 			283231,
@@ -15634,6 +17190,7 @@
 		remark = "098ed7a1f62669d00cfe3c3bda6da7e0",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -15643,6 +17200,7 @@
 		remark = "930c1b346d35a15af3c358a317d97683",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -15652,6 +17210,7 @@
 		remark = "3aad505c2d9a46278005b54d6f1ef999",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -15661,6 +17220,7 @@
 		remark = "5794162b3c269da39c98dbe559f9fc87",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -15670,6 +17230,7 @@
 		remark = "e21e669a1a639ad6631966f7a083eb05",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -15679,6 +17240,7 @@
 		remark = "eefc957097ddfaf5ea15b7e9b91610e1",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -15688,6 +17250,7 @@
 		remark = "56f3433d09a8c349fb87e84b7c8dfa96",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -15697,6 +17260,7 @@
 		remark = "59ef779f00ea05f61aa99aebc2675b62",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -15706,6 +17270,7 @@
 		remark = "3203ea22b4b99c185ae6d1b1b8bdcc6e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -15715,6 +17280,7 @@
 		remark = "5e8567507c1b43cd7835f6c96187b4ee",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -15724,6 +17290,7 @@
 		remark = "1788ac997b90cfec38d3d2afe5394de8",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -15733,6 +17300,7 @@
 		remark = "bc8243a4a8d0ac6d750aa98b6a1262f5",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -15742,6 +17310,7 @@
 		remark = "3e42d614adb19daefe5349144278fe92",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -15751,6 +17320,7 @@
 		remark = "ff473a42720078468760da08000dcfc2",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -15760,6 +17330,7 @@
 		remark = "40745db89b4bf55214a2648f86f68091",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			281111,
@@ -15776,6 +17347,7 @@
 		remark = "479e8162f31eb6f57c46ff740f8bb5cc",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -15785,6 +17357,7 @@
 		remark = "b289c02de4b388f1ced3e09858b09672",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -15794,6 +17367,7 @@
 		remark = "c635df64ea9d4a00ad364686124c1894",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -15803,6 +17377,7 @@
 		remark = "832b3ee635a7a8b08908415e6e019684",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			281115,
@@ -15816,6 +17391,7 @@
 		remark = "c3b45c2baa7215402e1f1a6cdf7ee4be",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -15825,6 +17401,7 @@
 		remark = "746f8b32da78508e9e57785a3c5c5f8f",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -15834,6 +17411,7 @@
 		remark = "0a7c9f94ae8f5344f25985b96eb56100",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -15843,6 +17421,7 @@
 		remark = "e6a5f69c6deedbdef8b3f3031cbf787f",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -15852,6 +17431,7 @@
 		remark = "b41ed8c34ec073c6236f1aa2c477869c",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -15861,6 +17441,7 @@
 		remark = "0927241e17527bc17ff4f575396a1b9e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -15870,6 +17451,7 @@
 		remark = "e08ca6cac8897b2e185284d8eae23ab8",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -15879,6 +17461,7 @@
 		remark = "aa9826b7a76071441ffda698984dc6b1",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 243,
 		sub_activity_list = {
 			281461,
@@ -15892,6 +17475,7 @@
 		remark = "e5ebe4c642c2bf630a6f2a84e430d116",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -15901,6 +17485,7 @@
 		remark = "6240c466e02d111fcf7fefa469aea15e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 244,
 		sub_activity_list = {}
 	},
@@ -15910,6 +17495,7 @@
 		remark = "adeff4e5cb92fe96d6916aa98ba0913f",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -15919,6 +17505,7 @@
 		remark = "a7bd2ec22cea6214daebc90a33517307",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 243,
 		sub_activity_list = {
 			281462,
@@ -15932,6 +17519,7 @@
 		remark = "ec7a553e7c21b36e4e495f500e9de661",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -15941,6 +17529,7 @@
 		remark = "1e91f4ac465dff1632c169ab2f57fde9",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 244,
 		sub_activity_list = {}
 	},
@@ -15950,6 +17539,7 @@
 		remark = "dd0dda48e4b4b51d272652ddd662b05b",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -15959,6 +17549,7 @@
 		remark = "32c0240f7db0add0e74b77859ed2b455",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -15968,6 +17559,7 @@
 		remark = "1e219ad78d0fea6d986d99215c0a9f39",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -15977,6 +17569,7 @@
 		remark = "86b57610fd5963dad5af0b5037a2be9d",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -15986,6 +17579,7 @@
 		remark = "9195c8b6de9ca84bf27195ccbecc980f",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -15995,6 +17589,7 @@
 		remark = "09531c5e4b4ea441fb2f2753f3b35b6e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -16004,6 +17599,7 @@
 		remark = "63fc6270bd2a4d4dbb8caf667c512517",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -16013,6 +17609,7 @@
 		remark = "098468173d512330ca43eab74f4d79bc",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -16022,6 +17619,7 @@
 		remark = "ed91f3fe65dde5aac0072cd1b3f51559",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -16031,6 +17629,7 @@
 		remark = "4ceada10c750bbdb220615e759cd028e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -16040,6 +17639,7 @@
 		remark = "f8b6778affed7e837dc2ef4a1ceeff41",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -16049,6 +17649,7 @@
 		remark = "04598eded7275c4ed0c28bce33839534",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -16058,6 +17659,7 @@
 		remark = "5f71df37e71bec080c06780c2caffa4f",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -16067,6 +17669,7 @@
 		remark = "4cea5547a20faa8d05333e93c0164d2c",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -16076,6 +17679,7 @@
 		remark = "edffe99d1ce29b46103634bbb934bb7c",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -16085,6 +17689,7 @@
 		remark = "52dfc9c295ae8fe73202033d8bbf51a1",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -16094,6 +17699,7 @@
 		remark = "bade9b595f802720b4073a695f35351e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -16103,6 +17709,7 @@
 		remark = "bde4101a60a0c0eedcca754b3cb65bff",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -16112,6 +17719,7 @@
 		remark = "bb74ed72f583e2cfdf0e3ce68d6f88c4",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -16121,6 +17729,7 @@
 		remark = "cdd4bd6eecfad97167f1db7e29f4af51",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -16130,6 +17739,7 @@
 		remark = "e299cd8d18d48a73e025bba4bff6202f",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -16139,6 +17749,7 @@
 		remark = "c874c65cbe85badccfeb39bee0732300",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 249,
 		sub_activity_list = {}
 	},
@@ -16148,6 +17759,7 @@
 		remark = "797a72acb7b09e8a0a7a71c655fd8d56",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			282951,
@@ -16161,6 +17773,7 @@
 		remark = "fb28a245e624b605708c9df3d014025f",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 296,
 		sub_activity_list = {
 			283171,
@@ -16175,6 +17788,7 @@
 		remark = "dcf513dd82106e9a613fbababc1faa64",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 317,
 		sub_activity_list = {}
 	},
@@ -16184,6 +17798,7 @@
 		remark = "fad4ae9f498bbfe9e7aad5ad6c995521",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 317,
 		sub_activity_list = {}
 	},
@@ -16193,6 +17808,7 @@
 		remark = "d90fc2eeda185ea5ac40672902637868",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 317,
 		sub_activity_list = {}
 	},
@@ -16202,6 +17818,7 @@
 		remark = "aefeac408ab77ebb1603856f661e0f04",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 317,
 		sub_activity_list = {}
 	},
@@ -16211,6 +17828,7 @@
 		remark = "b92aeb6fab120e433b79166bc60c3e9b",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 295,
 		sub_activity_list = {
 			283130,
@@ -16228,6 +17846,7 @@
 		remark = "8c247db9b70e3be9c40828a045f4e3c6",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 313,
 		sub_activity_list = {}
 	},
@@ -16237,6 +17856,7 @@
 		remark = "c1d66a867a9d4c2d00ac7fa4488b8cce",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 313,
 		sub_activity_list = {}
 	},
@@ -16246,6 +17866,7 @@
 		remark = "e583efdce86a9227545965137fa88a1e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 313,
 		sub_activity_list = {}
 	},
@@ -16255,6 +17876,7 @@
 		remark = "761cc7e373aea44c16833049cdab1c17",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 313,
 		sub_activity_list = {}
 	},
@@ -16264,6 +17886,7 @@
 		remark = "13f93113d8e08ea33ed85f02fa8dc082",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 313,
 		sub_activity_list = {}
 	},
@@ -16273,6 +17896,7 @@
 		remark = "cd877480516219a5dd48c1e9ac98ced7",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 313,
 		sub_activity_list = {}
 	},
@@ -16282,6 +17906,7 @@
 		remark = "8f496257f8a8dc50d92d11c6e4c9799e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 313,
 		sub_activity_list = {}
 	},
@@ -16291,6 +17916,7 @@
 		remark = "b9249b60c1781fb727d740f1057ccef7",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 217,
 		sub_activity_list = {
 			282181,
@@ -16308,6 +17934,7 @@
 		remark = "5bc3f10042f1e1e345e9e2ab42311143",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -16317,6 +17944,7 @@
 		remark = "9564a9d3faaf8bea5c46ede2a0679d5b",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -16326,6 +17954,7 @@
 		remark = "3a4dda8d237abe7cc71400543ff3e7d5",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -16335,6 +17964,7 @@
 		remark = "eb4a019754a28f4b1cb68f04b38dbec0",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -16344,6 +17974,7 @@
 		remark = "b21616cf5366ee751920183ea073b870",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -16353,6 +17984,7 @@
 		remark = "e1161693d748c9275d6a41f834b39e84",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 218,
 		sub_activity_list = {}
 	},
@@ -16362,6 +17994,7 @@
 		remark = "80ded7e95e156b3b54aac6f06d7b7ea5",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16371,6 +18004,7 @@
 		remark = "1266df6c7c4d1af07484e655a077795e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 298,
 		sub_activity_list = {
 			2831601,
@@ -16387,6 +18021,7 @@
 		remark = "882e22550bda8934209776b08047f089",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 316,
 		sub_activity_list = {}
 	},
@@ -16396,6 +18031,7 @@
 		remark = "8720c39979fc5f8300d1b10a732e4867",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 316,
 		sub_activity_list = {}
 	},
@@ -16405,6 +18041,7 @@
 		remark = "d4e74b597386a612ddc9a471153b35ca",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 316,
 		sub_activity_list = {}
 	},
@@ -16414,6 +18051,7 @@
 		remark = "049b2fe0c061d91b3d0b15960bb7b03e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 316,
 		sub_activity_list = {}
 	},
@@ -16423,6 +18061,7 @@
 		remark = "8bff34b30f649dd1c1ef2e69a2ba8e41",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 316,
 		sub_activity_list = {}
 	},
@@ -16432,6 +18071,7 @@
 		remark = "d918eb3b6b0734a8f4e2e43d8ec39475",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 316,
 		sub_activity_list = {}
 	},
@@ -16441,6 +18081,7 @@
 		remark = "398b8d6a615841d4253d4c6b4ce0e6df",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 73,
 		sub_activity_list = {
 			280732,
@@ -16455,6 +18096,7 @@
 		remark = "88de4a929fc6e6b5579f0731f05c3b15",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16464,6 +18106,7 @@
 		remark = "91f12131c1f4da849ce31788d07eb37e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16473,6 +18116,7 @@
 		remark = "436d030c959fd4d08e0bc701e4fcc4e2",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16482,6 +18126,7 @@
 		remark = "390a14c3d5f8a9426adad131743deb5a",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16491,6 +18136,7 @@
 		remark = "e19e61e5c3d7ef42eb34949b5a065244",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16500,6 +18146,7 @@
 		remark = "88762301e9ef2844a15d4593de9b6935",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 291,
 		sub_activity_list = {}
 	},
@@ -16509,6 +18156,7 @@
 		remark = "21a5b1608331858cbf3e21eb65213d1f",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16518,6 +18166,7 @@
 		remark = "637802d188b5b9887893c5f47104693c",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16527,6 +18176,7 @@
 		remark = "87880e2cf8b9af9e760b0caa1fd1978e",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			282251,
@@ -16540,6 +18190,7 @@
 		remark = "04aeda3855701f6ee021451152074bc4",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			282251,
@@ -16553,6 +18204,7 @@
 		remark = "589c51cbc690137b64e70c74e10e5a2e",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			282251,
@@ -16566,6 +18218,7 @@
 		remark = "79546759d03d09bd83991f1826008c86",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -16575,6 +18228,7 @@
 		remark = "88d8bfec6d88088dae13032eb692da83",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -16584,6 +18238,7 @@
 		remark = "5b327e001bf7fdf53ae1c2a976a4b930",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -16593,6 +18248,7 @@
 		remark = "758be56308399a5144fa2954fbfb63c5",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -16602,6 +18258,7 @@
 		remark = "d722a6868bffb0f47092c5c2368e0960",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -16611,6 +18268,7 @@
 		remark = "fff125b376d2c813e9647ff634c1a317",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			282254,
@@ -16624,6 +18282,7 @@
 		remark = "e2f91824e8a7e787d802904cb7ed0238",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			282254,
@@ -16637,6 +18296,7 @@
 		remark = "c310090f3d0e60b86ddec1dedfe78b3f",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			282254,
@@ -16650,6 +18310,7 @@
 		remark = "b31a4f8c41146891be9d06329a239dfe",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -16659,6 +18320,7 @@
 		remark = "aa25266e302e4f9a4f713e6b41de28ea",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -16668,6 +18330,7 @@
 		remark = "ba06f9e3efd128e1d13ffc72e81a45fd",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -16677,6 +18340,7 @@
 		remark = "9cf758094ba9f09929db93eca3fb6ed5",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 341,
 		sub_activity_list = {}
 	},
@@ -16686,6 +18350,7 @@
 		remark = "93d2413419afe23454c1971d4ed24b73",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 184,
 		sub_activity_list = {
 			281851,
@@ -16704,6 +18369,7 @@
 		remark = "e84452ec9be66cac9dfd6c5456029e50",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -16713,6 +18379,7 @@
 		remark = "f32d0923fb9fbde8de30d7996b452beb",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -16722,6 +18389,7 @@
 		remark = "fa64691b3a43657ab58000fb8961b409",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -16731,6 +18399,7 @@
 		remark = "499c9fe5678a25fa8f00d0e7bc9320aa",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -16740,6 +18409,7 @@
 		remark = "a5685c8ba09481da92161dcb1aa3ea47",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -16749,6 +18419,7 @@
 		remark = "1acfa9aa9f02aac141375ad042b3de1e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -16758,6 +18429,7 @@
 		remark = "e9688c38e9053af84bd929dbfd72b00d",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -16767,6 +18439,7 @@
 		remark = "325eb51979d59dd542a87e5983b34cb1",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 185,
 		sub_activity_list = {}
 	},
@@ -16776,6 +18449,7 @@
 		remark = "a59452b5184064f46206054c0ee183eb",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16785,6 +18459,7 @@
 		remark = "9feb38a07ee5304ede52b9da36039d9d",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 73,
 		sub_activity_list = {
 			280737,
@@ -16799,6 +18474,7 @@
 		remark = "0c34a4fa9213ae071314744222c3de22",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16808,6 +18484,7 @@
 		remark = "35ba0a9cfd2140c7bc97e4396bd8d6d0",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16817,6 +18494,7 @@
 		remark = "470b6d470a56892ebc012fedef113b39",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16826,6 +18504,7 @@
 		remark = "add8f2ce5517177688a73833059647e4",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16835,6 +18514,7 @@
 		remark = "9b347b9884c59ba7f5536d1331029b02",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -16844,6 +18524,7 @@
 		remark = "267dd6032715022e1a679b97080a7a54",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -16853,6 +18534,7 @@
 		remark = "89906dfba252d049cae984c73d0a54e9",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 73,
 		sub_activity_list = {
 			280742,
@@ -16867,6 +18549,7 @@
 		remark = "649e57b3d23e064b055e0d56c4932f06",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16876,6 +18559,7 @@
 		remark = "14de5571f9ed6e7a929410bdc93060a0",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16885,6 +18569,7 @@
 		remark = "24e350747d07d551654ca73188663f2a",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16894,6 +18579,7 @@
 		remark = "88b4e7b31cb11443faa73119e6212822",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -16903,6 +18589,7 @@
 		remark = "e516270e315fbad1a12bd3529f1de674",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 105,
 		sub_activity_list = {
 			2812701,
@@ -16925,6 +18612,7 @@
 		remark = "30443483f26adf685e0c2f0bf4deb307",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -16934,6 +18622,7 @@
 		remark = "48532ae6a998fa24f4486e12fa837de7",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -16943,6 +18632,7 @@
 		remark = "296bd1a20a97cf7b9e5b9c4d8f400002",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -16952,6 +18642,7 @@
 		remark = "36ce9b8ac268359b60975b9cdf7e3a4c",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -16961,6 +18652,7 @@
 		remark = "194333cc9222d98b6d1c2caa8173bb6f",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -16970,6 +18662,7 @@
 		remark = "115a7761e5103e3f12890017425c2ed5",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -16979,6 +18672,7 @@
 		remark = "db155a69d989a5cdc9b461c27209c3c5",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -16988,6 +18682,7 @@
 		remark = "cfd223e20dc94b2cdc39c988b4ba6706",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -16997,6 +18692,7 @@
 		remark = "71194b1c85c9df87fc706624d8ce8398",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -17006,6 +18702,7 @@
 		remark = "13a5537bc0ae992f8287ad1107d77730",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -17015,6 +18712,7 @@
 		remark = "d13e257232237058b96e0acb42109f13",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -17024,6 +18722,7 @@
 		remark = "093edb69acc740029a94e6603cf3af4c",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 127,
 		sub_activity_list = {}
 	},
@@ -17033,6 +18732,7 @@
 		remark = "136a99ccd8782d54d43a2613cc2aaa51",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -17042,6 +18742,7 @@
 		remark = "6625082570d315a1a679c7e942dc12d7",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -17051,6 +18752,7 @@
 		remark = "20a7b93271c057861612d01c55025a13",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			281118
@@ -17062,6 +18764,7 @@
 		remark = "0ffc2476a58540407c8aed85370c429c",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -17071,6 +18774,7 @@
 		remark = "ae2dbb2401acc35fa13f50f41031a5aa",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -17080,6 +18784,7 @@
 		remark = "436cebeb252b60bf641d56a00697a9be",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -17089,6 +18794,7 @@
 		remark = "5d29f4c07bd504f68df696056ceddae9",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -17098,6 +18804,7 @@
 		remark = "0c62a348a8279b0daf06080243ce5f4d",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {
 			283243,
@@ -17113,6 +18820,7 @@
 		remark = "13223ab33a7470f1e6db6b316d8ba6f0",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -17122,6 +18830,7 @@
 		remark = "8331a9535f2f25e3f559579559c32431",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -17131,6 +18840,7 @@
 		remark = "76a906d6933bf345b93e5f730c77e216",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -17140,6 +18850,7 @@
 		remark = "4a130a251c4513e9d2b98ce87f501852",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -17149,6 +18860,7 @@
 		remark = "9abc6f527db2f2be9524fe21e80dded5",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -17158,6 +18870,7 @@
 		remark = "7d69611e2c5fd865c08ebf1dc1683305",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -17167,6 +18880,7 @@
 		remark = "3fb7a066010e1e91991ccd618dfa74fa",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 251,
 		sub_activity_list = {
 			212521,
@@ -17182,6 +18896,7 @@
 		remark = "86bc580d56e25004307c1c43268cae9f",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17191,6 +18906,7 @@
 		remark = "bcb0731ae148e4218372e13e33cbc3c5",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -17200,6 +18916,7 @@
 		remark = "3e0625ba28d156d2227ce2d72ad18b87",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			280002
@@ -17211,6 +18928,7 @@
 		remark = "95c8f911885b21c4d782b544bd02a7f7",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			280021,
@@ -17231,6 +18949,7 @@
 		remark = "29d9c9ae36c1039b5efe7b6d5fdf6ad2",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			283011,
@@ -17244,6 +18963,7 @@
 		remark = "135f4ddad017e4e5c14e90e4f4453bf8",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 301,
 		sub_activity_list = {
 			283021,
@@ -17259,6 +18979,7 @@
 		remark = "e0e8cbaa35bb4637c5bf5f8ae800813c",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 302,
 		sub_activity_list = {}
 	},
@@ -17268,6 +18989,7 @@
 		remark = "5e0877f9d66ca72edd9a34340b17ce11",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 302,
 		sub_activity_list = {}
 	},
@@ -17277,6 +18999,7 @@
 		remark = "572cab79b79506543042040fd78e84ec",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 302,
 		sub_activity_list = {}
 	},
@@ -17286,6 +19009,7 @@
 		remark = "637547eacd896546bf689e4a6c196d84",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 302,
 		sub_activity_list = {}
 	},
@@ -17295,6 +19019,7 @@
 		remark = "ceee49f1b3237792ab446371229a44d4",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 302,
 		sub_activity_list = {}
 	},
@@ -17304,6 +19029,7 @@
 		remark = "d745333b7b269466c54540c1354db833",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			280401,
@@ -17319,6 +19045,7 @@
 		remark = "a138c21d280862bd659eb2dcb05cd056",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17328,6 +19055,7 @@
 		remark = "044a99ae7834d76858620445710dd48b",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17337,6 +19065,7 @@
 		remark = "cd770dd99b678885828e1caab03a2482",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17346,6 +19075,7 @@
 		remark = "8c672edc8996aab9e8801eebf65d7b6e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17355,6 +19085,7 @@
 		remark = "10e393cead0df3272d8f0faabb3a316b",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17364,6 +19095,7 @@
 		remark = "0a0eaba8a386e64e650e3efe573ff4b1",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {}
 	},
@@ -17373,6 +19105,7 @@
 		remark = "bf40b0a1f68a63a9a252ba8db069e3b8",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {}
 	},
@@ -17382,6 +19115,7 @@
 		remark = "6fae5dfbe3c75829ecf13c794019ec24",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {}
 	},
@@ -17391,6 +19125,7 @@
 		remark = "561fc330743cc6787366d9245f7c052d",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			283031,
@@ -17404,6 +19139,7 @@
 		remark = "cb82562b8c7758665e9c9348e27cd726",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 303,
 		sub_activity_list = {
 			283041,
@@ -17416,6 +19152,7 @@
 		remark = "51b66e42c60759eb7ceb91483c41b756",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 304,
 		sub_activity_list = {}
 	},
@@ -17425,6 +19162,7 @@
 		remark = "237ad3545a07ef9322a1e3de61494911",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 304,
 		sub_activity_list = {}
 	},
@@ -17434,6 +19172,7 @@
 		remark = "d9b68c0772fc239d0a916c69177a86fc",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			280406,
@@ -17446,6 +19185,7 @@
 		remark = "d30b8ccbbd7d45a5dcd88ca5e766b77e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17455,6 +19195,7 @@
 		remark = "070a148d212e8d16443c89832d12fccc",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17464,6 +19205,7 @@
 		remark = "dd8e3903c5b9417575e644ae89ec6698",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			280408,
@@ -17476,6 +19218,7 @@
 		remark = "5a3c121363a3b2e3238a69d247b83521",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17485,6 +19228,7 @@
 		remark = "a8b98656c7ca7dbe43f0ff2d1ff2153e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17494,6 +19238,7 @@
 		remark = "192d88fddb6ed7cf441767ecc5ff6c03",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			282991,
@@ -17507,6 +19252,7 @@
 		remark = "58ed4522d661a274c79e3a303a9a1a63",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 299,
 		sub_activity_list = {
 			283051,
@@ -17519,6 +19265,7 @@
 		remark = "10f712aacc42f31491d7bcb34370a2a8",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 305,
 		sub_activity_list = {}
 	},
@@ -17528,6 +19275,7 @@
 		remark = "5d44032c02e52abaca5ae693f6002f4e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 305,
 		sub_activity_list = {}
 	},
@@ -17537,6 +19285,7 @@
 		remark = "89210e0038f58aeb6c93a5d8b69b03b4",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			280410,
@@ -17549,6 +19298,7 @@
 		remark = "4bb0aa0ffad2ec3118f0ce65efa704c9",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17558,6 +19308,7 @@
 		remark = "82275232d994c9abaacaa1f93de679d8",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17567,6 +19318,7 @@
 		remark = "7dab3db49f2e322221574cf119c292ca",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			280412,
@@ -17579,6 +19331,7 @@
 		remark = "77844519aea6cd1ec7ba78145212ce23",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17588,6 +19341,7 @@
 		remark = "dc643477f35eaf167d0edba1ddfe4918",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17597,6 +19351,7 @@
 		remark = "e569d9bb18d1aa31f8cad27d6fc7b50b",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 297,
 		sub_activity_list = {
 			280414
@@ -17608,6 +19363,7 @@
 		remark = "3d62ce8c1664dd9b53fcab16639fc115",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17617,6 +19373,7 @@
 		remark = "60105884095c1a064ceebb2409abbaf0",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 307,
 		sub_activity_list = {
 			280416
@@ -17628,6 +19385,7 @@
 		remark = "69f5fe301d9a2d7a0b70c11bb2eafd0a",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17637,6 +19395,7 @@
 		remark = "80467eb8671d3d44c0be583d71c6e6c6",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			283091,
@@ -17649,6 +19408,7 @@
 		remark = "320bdbf74a3eeafcd54c9cd476282c64",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 309,
 		sub_activity_list = {
 			283101,
@@ -17661,6 +19421,7 @@
 		remark = "fdafde9c657b3b2be37a30e2822e6a14",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 310,
 		sub_activity_list = {}
 	},
@@ -17670,6 +19431,7 @@
 		remark = "acef40514510d2e985b6e0092eec89a9",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 310,
 		sub_activity_list = {}
 	},
@@ -17679,6 +19441,7 @@
 		remark = "b37120d98dced515e50ac1f0594acfd0",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			280418,
@@ -17691,6 +19454,7 @@
 		remark = "9dca99e8ce854f8362e3f3e5a86c6884",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17700,6 +19464,7 @@
 		remark = "2c605b2648c382f6df0f5f014a5e8ff6",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17709,6 +19474,7 @@
 		remark = "2ccf7c02532e5e100609eac86f50f5c5",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			283111,
@@ -17721,6 +19487,7 @@
 		remark = "c1be6b49970fa02e55547bea5b1d3fb0",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 311,
 		sub_activity_list = {
 			283121,
@@ -17733,6 +19500,7 @@
 		remark = "3d901f1fef62ac3f123a1b174136f6e2",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 312,
 		sub_activity_list = {}
 	},
@@ -17742,6 +19510,7 @@
 		remark = "15420b0451c8f685d17b4e1a5637c86d",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 312,
 		sub_activity_list = {}
 	},
@@ -17751,6 +19520,7 @@
 		remark = "cb48ba32cec87653bed066b9511aa7fb",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			280420,
@@ -17763,6 +19533,7 @@
 		remark = "ced78c115a602ecf57c148c7ccaed93d",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17772,6 +19543,7 @@
 		remark = "ad575a9bba11a155a059245f279a8d7b",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -17781,6 +19553,7 @@
 		remark = "fa24263d14213966f08788d38d7f8d1b",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {}
 	},
@@ -17790,6 +19563,7 @@
 		remark = "b7419eb7c3f78dd57f56c22537cc8813",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 321,
 		sub_activity_list = {}
 	},
@@ -17799,6 +19573,7 @@
 		remark = "1d15df1c64df2757dc1d64f27490d0b0",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			283141,
@@ -17811,6 +19586,7 @@
 		remark = "b9a026dfc3cebbd3e2ed1d98112c1b0d",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 320,
 		sub_activity_list = {
 			2831501,
@@ -17835,6 +19611,7 @@
 		remark = "5586a80619fce2fc0a00b8368cbf9e1c",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 315,
 		sub_activity_list = {}
 	},
@@ -17844,6 +19621,7 @@
 		remark = "2860c3590e0d86fc6540f0dfd1696841",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 315,
 		sub_activity_list = {}
 	},
@@ -17853,6 +19631,7 @@
 		remark = "82c27d663166bc19eb4c5ef4632127da",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 315,
 		sub_activity_list = {}
 	},
@@ -17862,6 +19641,7 @@
 		remark = "566a9535e6a59f413e341cc5a9f248cb",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 315,
 		sub_activity_list = {}
 	},
@@ -17871,6 +19651,7 @@
 		remark = "eed6c6416cfefb2a0187d3e901b9d545",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 315,
 		sub_activity_list = {}
 	},
@@ -17880,6 +19661,7 @@
 		remark = "decbb4692ee7dee2e6c4d9ad958a6d8d",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 315,
 		sub_activity_list = {}
 	},
@@ -17889,6 +19671,7 @@
 		remark = "3732b49b859916b2c51cb442c7f71644",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 315,
 		sub_activity_list = {}
 	},
@@ -17898,6 +19681,7 @@
 		remark = "73547e3e6ea355a006ed934ead510ed5",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 315,
 		sub_activity_list = {}
 	},
@@ -17907,6 +19691,7 @@
 		remark = "0f64ba475a65efbc60783fcc6b5cc655",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 315,
 		sub_activity_list = {}
 	},
@@ -17916,6 +19701,7 @@
 		remark = "84995c556939b4873674a6acd09a6152",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 315,
 		sub_activity_list = {}
 	},
@@ -17925,6 +19711,7 @@
 		remark = "02527225e84a52bfb2bc0d004ab13f57",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 315,
 		sub_activity_list = {}
 	},
@@ -17934,6 +19721,7 @@
 		remark = "264967905f1636bb2ad767bd858ab5cf",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 315,
 		sub_activity_list = {}
 	},
@@ -17943,6 +19731,7 @@
 		remark = "23544ab3de095d95d989257705a206d1",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 315,
 		sub_activity_list = {}
 	},
@@ -17952,6 +19741,7 @@
 		remark = "bb0727e496febcfbf2fb803f8e088738",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 315,
 		sub_activity_list = {}
 	},
@@ -17961,6 +19751,7 @@
 		remark = "761729123790884bd13c68a37873b32a",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 315,
 		sub_activity_list = {}
 	},
@@ -17970,6 +19761,7 @@
 		remark = "1087d413ad4ade264c4c254793be0181",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 315,
 		sub_activity_list = {}
 	},
@@ -17979,6 +19771,7 @@
 		remark = "fd2d34dd6654caf17bf47d1b463f0c3e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 318,
 		sub_activity_list = {
 			2831901,
@@ -17991,6 +19784,7 @@
 		remark = "30193da53879b76705e8a90bc4048a48",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 319,
 		sub_activity_list = {}
 	},
@@ -18000,6 +19794,7 @@
 		remark = "4b77da6aed35c91b51ebc277abc7368f",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 319,
 		sub_activity_list = {}
 	},
@@ -18009,6 +19804,7 @@
 		remark = "1e21f897fb873d0cabcc46eec6862028",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			280422,
@@ -18021,6 +19817,7 @@
 		remark = "cc808552a86a54106d5110e95fbf66c8",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 320,
 		sub_activity_list = {}
 	},
@@ -18030,6 +19827,7 @@
 		remark = "8e0550699457c7187c41033a38634409",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 320,
 		sub_activity_list = {}
 	},
@@ -18039,6 +19837,7 @@
 		remark = "eda258c61ed01e0990b4cfd87841f3eb",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 152,
 		sub_activity_list = {}
 	},
@@ -18048,6 +19847,7 @@
 		remark = "636efc1f63e896cdbca21edcfff5dc61",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 152,
 		sub_activity_list = {
 			282091
@@ -18059,6 +19859,7 @@
 		remark = "bc2eea2c3317ba6ee891a7053ebb4389",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 209,
 		sub_activity_list = {}
 	},
@@ -18068,6 +19869,7 @@
 		remark = "a99f4f545521ec392e7830ba32a7f025",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 226,
 		sub_activity_list = {
 			280050
@@ -18079,6 +19881,7 @@
 		remark = "dc9e8a74aa6e75b2d97c8bbef32f189e",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -18088,6 +19891,7 @@
 		remark = "4ad67767a0b766c31f93f64586a2439c",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 100,
 		sub_activity_list = {
 			293231,
@@ -18122,6 +19926,7 @@
 		remark = "ac484c3ebcf849360f336749932759fd",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 323,
 		sub_activity_list = {
 			293251,
@@ -18136,6 +19941,7 @@
 		remark = "31edc0f6429b9338f82de3667243b679",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 325,
 		sub_activity_list = {}
 	},
@@ -18145,6 +19951,7 @@
 		remark = "ffc369057c1508429349fd3bccb0e8ce",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 325,
 		sub_activity_list = {}
 	},
@@ -18154,6 +19961,7 @@
 		remark = "040b603376ab9aa3ca28ba254f4ad8c5",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 324,
 		sub_activity_list = {}
 	},
@@ -18163,6 +19971,7 @@
 		remark = "9114806c7644b5a43407ad43203cf58a",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -18172,6 +19981,7 @@
 		remark = "012be6d5548df260052ea26444ccbd2d",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 340,
 		sub_activity_list = {}
 	},
@@ -18181,6 +19991,7 @@
 		remark = "93c6b808d6568f73dc1c13c489ffad77",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 120,
 		sub_activity_list = {
 			290561
@@ -18192,6 +20003,7 @@
 		remark = "1f797e70cb1e3774adce9d913d2ab0fc",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 56,
 		sub_activity_list = {
 			291821,
@@ -18204,6 +20016,7 @@
 		remark = "46b1278774a21f20f488c5052936fc55",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 182,
 		sub_activity_list = {}
 	},
@@ -18213,6 +20026,7 @@
 		remark = "56710e2c6af2e1755b18355ce249b1a2",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 182,
 		sub_activity_list = {}
 	},
@@ -18222,6 +20036,7 @@
 		remark = "4382fd2a981d1d051da8dcd7e0f19138",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 107,
 		sub_activity_list = {
 			293221,
@@ -18245,6 +20060,7 @@
 		remark = "06545a0a5c040525b77c22688b566311",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -18254,6 +20070,7 @@
 		remark = "7c0f2164c6fc8aeb10e24f949b443a6c",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -18263,6 +20080,7 @@
 		remark = "437670b37f8d86e839b66eb920a7db38",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -18272,6 +20090,7 @@
 		remark = "727cf4553f9587f7ebb5e6fb3b4fa8c2",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -18281,6 +20100,7 @@
 		remark = "9f030e3e64078be6143e1282c18d6736",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -18290,6 +20110,7 @@
 		remark = "688c012475896828b8bbb35f012bc151",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -18299,6 +20120,7 @@
 		remark = "75a4f08596b2b7a84335eac2960ac27a",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -18308,6 +20130,7 @@
 		remark = "44be22f8bcf6246e1007fe942037309b",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -18317,6 +20140,7 @@
 		remark = "0ce1fb16626778235bca3bcccca9d98f",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 116,
 		sub_activity_list = {}
 	},
@@ -18326,6 +20150,7 @@
 		remark = "849dbdab3eecf8416d824df4f5282407",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			291111,
@@ -18339,6 +20164,7 @@
 		remark = "4786687681e701a321a2e99e1443a63e",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -18348,6 +20174,7 @@
 		remark = "e33f7484e619ece507c18e508fe9218a",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -18357,6 +20184,7 @@
 		remark = "563e1e0e061c0573b0e1cac531b359aa",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -18366,6 +20194,7 @@
 		remark = "9db8a795d47b4e2d0f45d3e11b468e08",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -18375,6 +20204,7 @@
 		remark = "2f6188b2372563cf17e4bf4bda5907ba",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 1,
 		sub_activity_list = {}
 	},
@@ -18384,6 +20214,7 @@
 		remark = "a1c841292ae264fc7d3efe2283ff2c7d",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -18393,6 +20224,7 @@
 		remark = "ba45a9b1411a8219c2162c69a894b54a",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 243,
 		sub_activity_list = {
 			291461,
@@ -18406,6 +20238,7 @@
 		remark = "4242b1796619bf2a5390658405d757ac",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -18415,6 +20248,7 @@
 		remark = "403aff658ad54605bee7cc17fafd1ac0",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 244,
 		sub_activity_list = {}
 	},
@@ -18424,6 +20258,7 @@
 		remark = "84b41621d40461e2cfa9d4b7deef47fe",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -18433,6 +20268,7 @@
 		remark = "fb5811ab6e97d24075a95778464ce982",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 243,
 		sub_activity_list = {
 			291462,
@@ -18446,6 +20282,7 @@
 		remark = "996f00166be5f398b0688eb384418cd5",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -18455,6 +20292,7 @@
 		remark = "73a6dab5f28d2f1368594651f705935d",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 244,
 		sub_activity_list = {}
 	},
@@ -18464,6 +20302,7 @@
 		remark = "967a063b71f78e276c483ace8ba72f24",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -18473,6 +20312,7 @@
 		remark = "b0d2653cd88144e00f6689a02911b3e6",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -18482,6 +20322,7 @@
 		remark = "874debbb2b51daed622ad7a74c58d97d",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -18491,6 +20332,7 @@
 		remark = "c8d578a86c403567c5d42c4bde4ae564",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -18500,6 +20342,7 @@
 		remark = "1ed65a265339a3e84a1e60b7c111bd2f",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -18509,6 +20352,7 @@
 		remark = "bd423f565195641fc33a3dafbf4ecc6c",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -18518,6 +20362,7 @@
 		remark = "05fe3f5ce21d27b4e362e494d122e196",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -18527,6 +20372,7 @@
 		remark = "28a9706714517d084ba1b76fcf38a23a",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -18536,6 +20382,7 @@
 		remark = "31005b2ef6fa52c9313dc9fb472d9c22",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -18545,6 +20392,7 @@
 		remark = "8c958d0450615147500c87c35450b796",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -18554,6 +20402,7 @@
 		remark = "16745142672ea3e5a2d19dc2bbf96c1e",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -18563,6 +20412,7 @@
 		remark = "f3f052decf52e945144b97a14ce1b5d8",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -18572,6 +20422,7 @@
 		remark = "f24086d18b55610ca7b4fea106041f1b",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 331,
 		sub_activity_list = {
 			293321,
@@ -18585,6 +20436,7 @@
 		remark = "cb8c5824d5d5613159563af2c422da46",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 332,
 		sub_activity_list = {
 			293331,
@@ -18603,6 +20455,7 @@
 		remark = "9590d9c2d3861d8525c08b8b556f5808",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 333,
 		sub_activity_list = {}
 	},
@@ -18612,6 +20465,7 @@
 		remark = "b95f780f2c47a6f5190ecd6140cacaa1",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 333,
 		sub_activity_list = {}
 	},
@@ -18621,6 +20475,7 @@
 		remark = "a9928aa45220f423d4089bc38974c35b",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 333,
 		sub_activity_list = {}
 	},
@@ -18630,6 +20485,7 @@
 		remark = "1044335b81df27609adc3ac092ee0a29",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 333,
 		sub_activity_list = {}
 	},
@@ -18639,6 +20495,7 @@
 		remark = "c0f41cf8288b98e95e15b767c8b1024d",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 333,
 		sub_activity_list = {}
 	},
@@ -18648,6 +20505,7 @@
 		remark = "f636d5eb316ef76ddce9a3297ad26c70",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 333,
 		sub_activity_list = {}
 	},
@@ -18657,6 +20515,7 @@
 		remark = "41808030c12898027bb397093fd5feff",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 333,
 		sub_activity_list = {}
 	},
@@ -18666,6 +20525,7 @@
 		remark = "1800ee334066f7914a3068b15477d8de",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 333,
 		sub_activity_list = {}
 	},
@@ -18675,6 +20535,7 @@
 		remark = "c3915df6fa95f8427a74b17be9518157",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 334,
 		sub_activity_list = {
 			293351,
@@ -18691,6 +20552,7 @@
 		remark = "d153c605613d820cc0a83460bd5af6b5",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 335,
 		sub_activity_list = {}
 	},
@@ -18700,6 +20562,7 @@
 		remark = "8bfc67089614786faa159bd77a348dfb",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 335,
 		sub_activity_list = {}
 	},
@@ -18709,6 +20572,7 @@
 		remark = "88c1a830124c753daa06d34c1f33c720",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 335,
 		sub_activity_list = {}
 	},
@@ -18718,6 +20582,7 @@
 		remark = "b3cd69950a4a1e913fc7fa6167090f0d",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 335,
 		sub_activity_list = {}
 	},
@@ -18727,6 +20592,7 @@
 		remark = "cd4daf5dd426bcabc1605d1802fc979e",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 335,
 		sub_activity_list = {}
 	},
@@ -18736,6 +20602,7 @@
 		remark = "8bf841183f69d5d43da732fde5f0a4c9",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 335,
 		sub_activity_list = {}
 	},
@@ -18745,6 +20612,7 @@
 		remark = "9d0083a751b7206519e39d92640d9011",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 336,
 		sub_activity_list = {}
 	},
@@ -18754,6 +20622,7 @@
 		remark = "6d597975282f3f69bd2c94b1cb8bb15d",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 326,
 		sub_activity_list = {
 			293271,
@@ -18770,6 +20639,7 @@
 		remark = "30c3a7b301137df82e15fd3750fe38b3",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 327,
 		sub_activity_list = {}
 	},
@@ -18779,6 +20649,7 @@
 		remark = "69241032549c0d8f9e96404a7be38a9f",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 327,
 		sub_activity_list = {}
 	},
@@ -18788,6 +20659,7 @@
 		remark = "fa37dd7a05d2e270516a4a39dbd28be4",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 327,
 		sub_activity_list = {}
 	},
@@ -18797,6 +20669,7 @@
 		remark = "f15e929d2b6aae118974092a6f00586a",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 327,
 		sub_activity_list = {}
 	},
@@ -18806,6 +20679,7 @@
 		remark = "9b0bb7946fd8bbdd97fc48f38a8227ee",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 327,
 		sub_activity_list = {}
 	},
@@ -18815,6 +20689,7 @@
 		remark = "ff69af1ac13e3566c7cb2373515ff232",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 327,
 		sub_activity_list = {}
 	},
@@ -18824,6 +20699,7 @@
 		remark = "a95148f4cf3ff58392b54ecd9fc853a4",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 339,
 		sub_activity_list = {}
 	},
@@ -18833,6 +20709,7 @@
 		remark = "f155bc9fab3f399e9a63c45d5e796ba2",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 113,
 		sub_activity_list = {
 			291151,
@@ -18851,6 +20728,7 @@
 		remark = "86eddb575546f090121540eb25d6c814",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -18860,6 +20738,7 @@
 		remark = "3700f524554c7d4dd64209a7f648b3c9",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -18869,6 +20748,7 @@
 		remark = "afca0632382cda6cd2a0ba8858bd33d3",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -18878,6 +20758,7 @@
 		remark = "83a428ca2197546feb2b8de875cd3801",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -18887,6 +20768,7 @@
 		remark = "f7d98c66fd35bdefc128e9987466ac11",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -18896,6 +20778,7 @@
 		remark = "edeeabf94c5d9b3de5145098ee02e444",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -18905,6 +20788,7 @@
 		remark = "7f9cb9476e67e7b0e3abe14fd849244e",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -18914,6 +20798,7 @@
 		remark = "ab810fc55f30c2f3760d9b038f534e5b",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 115,
 		sub_activity_list = {}
 	},
@@ -18923,6 +20808,7 @@
 		remark = "9a181580d74506418c3fe89941c6f27d",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 338,
 		sub_activity_list = {}
 	},
@@ -18932,6 +20818,7 @@
 		remark = "c07de992772c1ec2bab2f5f71c8a0023",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 90,
 		sub_activity_list = {}
 	},
@@ -18941,6 +20828,7 @@
 		remark = "6df525b84e955f6f0e4327471d210f8a",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 245,
 		sub_activity_list = {
 			290044,
@@ -18953,6 +20841,7 @@
 		remark = "cea4a3f3379ef4190cb2305ac8644d15",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -18962,6 +20851,7 @@
 		remark = "d89fb89c6075a5da245373172a66a415",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -18971,6 +20861,7 @@
 		remark = "2e556e5aeef44198c8bec4f8884b5049",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -18980,6 +20871,7 @@
 		remark = "dac768fa2b7bb3609e5aba5078c7ce1a",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -18989,6 +20881,7 @@
 		remark = "e96c4f99b78ed0e0da2f97fac052f000",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -18998,6 +20891,7 @@
 		remark = "69c9d1fd777e3a1bfd54323f6409f45a",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 73,
 		sub_activity_list = {
 			290732,
@@ -19012,6 +20906,7 @@
 		remark = "f033939e5a4cedc437b1f29ab02b8a24",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -19021,6 +20916,7 @@
 		remark = "bc5e9e72ddc880a4a0164ffad17e206d",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -19030,6 +20926,7 @@
 		remark = "12e59da5d66c5132617cc63c3de625e1",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -19039,6 +20936,7 @@
 		remark = "8ed83a26234810d827206da1580aec44",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -19048,6 +20946,7 @@
 		remark = "419ccfaf98deb6313ff0020da966ec31",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -19057,6 +20956,7 @@
 		remark = "9553aec902405bd070aa6043ce2f7fa7",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -19066,6 +20966,7 @@
 		remark = "727609f757c7abbc4fd9676e6b682d39",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -19075,6 +20976,7 @@
 		remark = "e273899594ea8f39a07c591d38cf265a",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 270,
 		sub_activity_list = {}
 	},
@@ -19084,6 +20986,7 @@
 		remark = "0b8846fd785343031cb135a41e772cbc",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 328,
 		sub_activity_list = {
 			2932901,
@@ -19096,6 +20999,7 @@
 		remark = "5cb877403013917db24ef357988b25b4",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 329,
 		sub_activity_list = {}
 	},
@@ -19105,6 +21009,7 @@
 		remark = "21f9b462e5d013dca1dddac21e29aa1a",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 329,
 		sub_activity_list = {}
 	},
@@ -19114,6 +21019,7 @@
 		remark = "869896d6d5e5d3907bedfb313b884eaf",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 342,
 		sub_activity_list = {
 			293421,
@@ -19128,6 +21034,7 @@
 		remark = "2fa9e1b0bf161a065ad89540e407c479",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			293471
@@ -19139,6 +21046,7 @@
 		remark = "f4be844489b153ddbb8ab63cfd4908d5",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			293472
@@ -19150,6 +21058,7 @@
 		remark = "176b7d0c27c99725139ba2f05bb64ed0",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			293473
@@ -19161,6 +21070,7 @@
 		remark = "c737c9227088cc37eee2b209624aeccb",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 0,
 		sub_activity_list = {
 			293474
@@ -19172,6 +21082,7 @@
 		remark = "8efb931cf634132d843624c6d82df2f5",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 347,
 		sub_activity_list = {}
 	},
@@ -19181,6 +21092,7 @@
 		remark = "6cad4759435018b34012932ba14bad77",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 347,
 		sub_activity_list = {}
 	},
@@ -19190,6 +21102,7 @@
 		remark = "c30d7b8ce5535c0261b096fa6f5ce0b9",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 347,
 		sub_activity_list = {}
 	},
@@ -19199,6 +21112,7 @@
 		remark = "f1f68179014c68a3522e3e7e7dba0036",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 347,
 		sub_activity_list = {}
 	},
@@ -19208,6 +21122,7 @@
 		remark = "c1ed0b074f648c340922892d896ec355",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			292251,
@@ -19221,6 +21136,7 @@
 		remark = "21721547d41276e416d83b3cde885e93",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			292251,
@@ -19234,6 +21150,7 @@
 		remark = "585127301bdac7cb50c2ee30f0a6b7a0",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			292251,
@@ -19247,6 +21164,7 @@
 		remark = "a07234dd224b410b148c4a7b8626b2fc",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -19256,6 +21174,7 @@
 		remark = "9237762d74c1a45a3ef5a097fe1f0ca4",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -19265,6 +21184,7 @@
 		remark = "2cf33735ff4e4df508507f4cdf66a455",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -19274,6 +21194,7 @@
 		remark = "7d3521e7c4e3772fab506b7d2ae438a2",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			292254,
@@ -19287,6 +21208,7 @@
 		remark = "5de7e0596620f086825a8eb6f9fafd64",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			292254,
@@ -19300,6 +21222,7 @@
 		remark = "ce1b6445477d6cf694339a10d64618e7",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			292254,
@@ -19313,6 +21236,7 @@
 		remark = "92e4af3a62eb63ec8b33ce2a8d5d3406",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -19322,6 +21246,7 @@
 		remark = "fc202ad01d9e70c1dfe04ccd0a1948af",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -19331,6 +21256,7 @@
 		remark = "a3eec7240c408e78ee33476a3ccd1fbd",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -19340,6 +21266,7 @@
 		remark = "6651c0fddea4c5ae88cfa2a0099e21fd",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -19349,6 +21276,7 @@
 		remark = "5998f92a24fd1576fb5eb3d2e3938286",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 200,
 		sub_activity_list = {}
 	},
@@ -19358,6 +21286,7 @@
 		remark = "baf9e024a734cab364ea988d43717f40",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 341,
 		sub_activity_list = {}
 	},
@@ -19367,6 +21296,7 @@
 		remark = "b8bd3a25f31f3388318fa30fad880452",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 221,
 		sub_activity_list = {
 			292221,
@@ -19383,6 +21313,7 @@
 		remark = "4352e7cce22c7cf7e52019dfa9ac4636",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 222,
 		sub_activity_list = {}
 	},
@@ -19392,6 +21323,7 @@
 		remark = "404863e8364c4a3277449c4d2dfa31a9",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 222,
 		sub_activity_list = {}
 	},
@@ -19401,6 +21333,7 @@
 		remark = "96748d7305e5bfdc1928e67961652643",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 222,
 		sub_activity_list = {}
 	},
@@ -19410,6 +21343,7 @@
 		remark = "7fb6a7f31f878161ddc20dd45070d6e9",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 223,
 		sub_activity_list = {}
 	},
@@ -19419,6 +21353,7 @@
 		remark = "7172cd825d854a2248642499d051aae1",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -19428,6 +21363,7 @@
 		remark = "3189ba0eddc1c5da66d4bd1dfda850b5",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -19437,6 +21373,7 @@
 		remark = "478315d36093b2a387f3c068b90c1cf1",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -19446,6 +21383,7 @@
 		remark = "1082e603eead9f544914ecf6dd9792f2",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -19455,6 +21393,7 @@
 		remark = "799972e58cb39eee7b343a6dec4773b5",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -19464,6 +21403,7 @@
 		remark = "6f06968a1c1d06b03b2c316dcea2906d",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -19473,6 +21413,7 @@
 		remark = "375dda8888c803e8ba0f1ba841332975",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 3,
 		sub_activity_list = {}
 	},
@@ -19482,6 +21423,7 @@
 		remark = "c200776badd99bc4594ee7631f9539d9",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 189,
 		sub_activity_list = {}
 	},
@@ -19491,6 +21433,7 @@
 		remark = "f39ad6dc61697541464188f3e3a30378",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 213,
 		sub_activity_list = {}
 	},
@@ -19500,6 +21443,7 @@
 		remark = "064321d8d9feec74741f1f822b9c209c",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 131,
 		sub_activity_list = {
 			291114,
@@ -19512,6 +21456,7 @@
 		remark = "45f69ca30df168a0ac7b6dfb35635fcb",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -19521,6 +21466,7 @@
 		remark = "8b8bf6379b5ca35d86d1c3229c22c656",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 111,
 		sub_activity_list = {}
 	},
@@ -19530,6 +21476,7 @@
 		remark = "6361b00669a391d98b7c05f33a90c426",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -19539,6 +21486,7 @@
 		remark = "ca5414641ced35948bb231405e7c6eb6",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -19548,6 +21496,7 @@
 		remark = "cff757c1b725f1cc6d65f0ffd92f0c19",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -19557,6 +21506,7 @@
 		remark = "137222f6eba22d3d945acfe74585211a",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -19566,6 +21516,7 @@
 		remark = "13b83b57e796420a964fad13c6ff96eb",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -19575,6 +21526,7 @@
 		remark = "ac46ba3dfa612da21fa768f90523926c",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 322,
 		sub_activity_list = {}
 	},
@@ -19584,6 +21536,7 @@
 		remark = "99ac1b0ff571edbe0240c6a6e3d444ed",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -19593,6 +21546,7 @@
 		remark = "b10b9c2cd399d3c79b3b00d8af98e34d",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -19602,6 +21556,7 @@
 		remark = "16cb69092142e74a9d4a0d68ca9e7341",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 210,
 		sub_activity_list = {}
 	},
@@ -19611,6 +21566,7 @@
 		remark = "aea376283ff78c0bc83976319a4587ea",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			292257,
@@ -19624,6 +21580,7 @@
 		remark = "1eadd6283a7389f2f03756b5fd466660",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			292257,
@@ -19637,6 +21594,7 @@
 		remark = "d73fae1a88938cab75fbd0b629650390",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 224,
 		sub_activity_list = {
 			292257,
@@ -19650,6 +21608,7 @@
 		remark = "d6ed263fa459cf6c74ea6148411a6754",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -19659,6 +21618,7 @@
 		remark = "f0550457c7d7c2aa4bb2b293dce82fae",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -19668,6 +21628,7 @@
 		remark = "ed9de67dd218ea5f581860c572d4a88f",
 		unlock_condition = "",
 		activity_theme = 0,
+		reward_show = "",
 		activity_template = 225,
 		sub_activity_list = {}
 	},
@@ -19677,6 +21638,7 @@
 		remark = "2c0dea7678775e5c98a00674550349c7",
 		unlock_condition = "",
 		activity_theme = 29,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
@@ -19686,6 +21648,7 @@
 		remark = "062f9220a87c0b40c3ca802cec8715ed",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 243,
 		sub_activity_list = {
 			2814611,
@@ -19699,6 +21662,7 @@
 		remark = "2fbce8c3d55caeb2048637212590cdbc",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 146,
 		sub_activity_list = {}
 	},
@@ -19708,6 +21672,7 @@
 		remark = "f80ef1eeb22371dcc3ec7bd304e74b58",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
 		activity_template = 244,
 		sub_activity_list = {}
 	},
@@ -19717,10 +21682,549 @@
 		remark = "a673fe2e16243b4988787fb48f39eef7",
 		unlock_condition = "",
 		activity_theme = 28,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[3610001] = {
+		id = 3610001,
+		name = "19815733ea37542c7e0292fedc05bd7b",
+		remark = "0f93a744ac453dcc46e925ae4c11af1e",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 100,
+		sub_activity_list = {
+			3600102,
+			3612003,
+			3610206,
+			3618407,
+			3627617,
+			3618926,
+			3613101,
+			3610731,
+			3622637
+		}
+	},
+	[3600102] = {
+		id = 3600102,
+		name = "a2a21e868e8f93af718d7b08ab0a7e09",
+		remark = "7f52d950db20fc81a686f3581b8f69fc",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 1,
+		sub_activity_list = {}
+	},
+	[3612003] = {
+		id = 3612003,
+		name = "0a4a7db746968d3c30a8d2938f3d2e30",
+		remark = "7cbe0cdf1c389a8fa0488fce6a83487f",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 120,
+		sub_activity_list = {
+			3610204,
+			3610205
+		}
+	},
+	[3610204] = {
+		id = 3610204,
+		name = "bbb720664cdbe1e20268c1bf13c314de",
+		remark = "2a1c29d06c2ba28bde3b598468b9b7d1",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 102,
+		sub_activity_list = {}
+	},
+	[3610205] = {
+		id = 3610205,
+		name = "79a719485be1a6b80e96d84107dc5c41",
+		remark = "aab1567282ab42d759f68c1f521c8b78",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 102,
+		sub_activity_list = {},
+		unlock_condition = {
+			100,
+			{
+				14,
+				5010115
+			}
+		}
+	},
+	[3610206] = {
+		id = 3610206,
+		name = "dcb21d26f1357fa4480c06a787ef8d56",
+		remark = "266a9037e8170308e82341de2f8f22e8",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 102,
+		sub_activity_list = {}
+	},
+	[3618407] = {
+		id = 3618407,
+		name = "acd77107e34bf8e72ffc291c01ee8838",
+		remark = "608158765cca1792aa7a2b00af06d302",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 184,
+		sub_activity_list = {
+			3618508,
+			3618509,
+			3618510,
+			3618511,
+			3618512,
+			3618513,
+			3618514,
+			3618515
+		}
+	},
+	[3618508] = {
+		id = 3618508,
+		name = "057e870e179f568696f4c3d79735263f",
+		remark = "98160b2f2fa54a6f42ed9c9463680c57",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 185,
+		sub_activity_list = {}
+	},
+	[3618509] = {
+		id = 3618509,
+		name = "10a50a68fafca0113a4c586caae9730f",
+		remark = "91d762651bd2c6c8043e3370f4b01ba8",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 185,
+		sub_activity_list = {}
+	},
+	[3618510] = {
+		id = 3618510,
+		name = "8b35a7a8fe65b825127a44d0f0d743f0",
+		remark = "367b2b94a8a054be4aa56a28d48b94c1",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 185,
+		sub_activity_list = {}
+	},
+	[3618511] = {
+		id = 3618511,
+		name = "5675098f279573a18586c2376292e3e9",
+		remark = "ec57b51bb4e0d602c8ebb288e51c0a39",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 185,
+		sub_activity_list = {}
+	},
+	[3618512] = {
+		id = 3618512,
+		name = "3f20ed6d989b68b68046efdb24be7220",
+		remark = "ef0dae8602fcd85dc096245043ad6e37",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 185,
+		sub_activity_list = {}
+	},
+	[3618513] = {
+		id = 3618513,
+		name = "9ba5f298f0b494b1a61733e89c80ed28",
+		remark = "91dba14dc1abb4746121dc851e71d432",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 185,
+		sub_activity_list = {}
+	},
+	[3618514] = {
+		id = 3618514,
+		name = "9e23d674a07a8e86e3d4a447aabc1dd6",
+		remark = "44439480a8f49c1479e5f9d685a7fa28",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 185,
+		sub_activity_list = {}
+	},
+	[3618515] = {
+		id = 3618515,
+		name = "c3c472c3701a57fac361851968c814be",
+		remark = "fdd1c594a3bfcb2bd57266d8b139c97f",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 185,
+		sub_activity_list = {}
+	},
+	[3600416] = {
+		id = 3600416,
+		name = "2e807bf78d2be62bcd2846484ea37db9",
+		remark = "a7eebbde2a401bbc4fbc31ea968138aa",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[3627617] = {
+		id = 3627617,
+		name = "db450d6cdc510cfe2725455f1fb5d39a",
+		remark = "5bb8e79b3cdc61c542551cc93b44256e",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 276,
+		sub_activity_list = {
+			3600418,
+			3627719,
+			3627720,
+			3627721,
+			3627722,
+			3627723,
+			3627724,
+			3627725
+		}
+	},
+	[3600418] = {
+		id = 3600418,
+		name = "0714cbe4d4e1819e4930feb2baf615c8",
+		remark = "2cc184aea01e2064d671f08fb3305a7d",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[3627719] = {
+		id = 3627719,
+		name = "6ed6d5786722ea55d678914c9369d16a",
+		remark = "38db662ecf3eb3f7df85f48d7ada4a2d",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 277,
+		sub_activity_list = {}
+	},
+	[3627720] = {
+		id = 3627720,
+		name = "69eca98d46f9c6d32e4f9fb58eb86df5",
+		remark = "4baef6f5bb2b3c1299e5f874c8da8f10",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 277,
+		sub_activity_list = {}
+	},
+	[3627721] = {
+		id = 3627721,
+		name = "2ae21bb4feb57114a8fd037df9b7a57f",
+		remark = "62893c77007b64235bb1806ac0ce8453",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 277,
+		sub_activity_list = {}
+	},
+	[3627722] = {
+		id = 3627722,
+		name = "9eeda9a6fbbb34364056482144d9c03f",
+		remark = "9a242054e372834c88131a15fefdbb79",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 277,
+		sub_activity_list = {}
+	},
+	[3627723] = {
+		id = 3627723,
+		name = "ffb1e4032a500fd109514ea347177cd8",
+		remark = "631ed71801907954742762a6c3cdb637",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 277,
+		sub_activity_list = {}
+	},
+	[3627724] = {
+		id = 3627724,
+		name = "b7b2580585943ee608249c1d501375f2",
+		remark = "296d55fdadaa5b45778c8fef403afb6c",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 277,
+		sub_activity_list = {}
+	},
+	[3627725] = {
+		id = 3627725,
+		name = "505999fa21640235717fe41bce29daae",
+		remark = "7fdbe8b9dd6445b6679388170fa05939",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 277,
+		sub_activity_list = {}
+	},
+	[3618926] = {
+		id = 3618926,
+		name = "203a04d0a4be810ee1fdf261fd554a48",
+		remark = "99a836e1b9e0d40478b9bfc49f6bd8a5",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 189,
+		sub_activity_list = {}
+	},
+	[3600327] = {
+		id = 3600327,
+		name = "dfe45fb62b91ab29e13f0cb5a4091af7",
+		remark = "40d23b0532ebf06fb103ab43954652c6",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[3600328] = {
+		id = 3600328,
+		name = "435d28663ba3048a4c03e8c06596baba",
+		remark = "84118c21c5f87624f3cbf32c8495abcf",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[3613101] = {
+		id = 3613101,
+		name = "8cc4268daf8a179467cd32664c23575d",
+		remark = "f61e8cd602961db484c6601536055bd8",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 131,
+		sub_activity_list = {
+			3611129,
+			3611130
+		}
+	},
+	[3611129] = {
+		id = 3611129,
+		name = "966f339e786cc5254a1fbcfd1bee8dc0",
+		remark = "0497b25c1458a8238626b298bd47cd93",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 111,
+		sub_activity_list = {}
+	},
+	[3611130] = {
+		id = 3611130,
+		name = "7c91fab730d65732a8fe498468221aee",
+		remark = "e5adaf46a5476bed057bda2a5f28ad98",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 111,
+		sub_activity_list = {}
+	},
+	[3610731] = {
+		id = 3610731,
+		name = "bab2d50731c33d7191912e0c9552bddd",
+		remark = "babe54e83bc1b593a6df37625e80e568",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 107,
+		sub_activity_list = {
+			3632232,
+			3632233,
+			3632234,
+			3632235
+		}
+	},
+	[3632232] = {
+		id = 3632232,
+		name = "fae704dd9fc09833a999c911250d0728",
+		remark = "9716790e0d10424d8b5144f8d7556ca3",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[3632233] = {
+		id = 3632233,
+		name = "fc77a45fe0d87fac7e30c76c5826723c",
+		remark = "f15d2577562102a555dd0a6877342f70",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[3632234] = {
+		id = 3632234,
+		name = "c20a7f5b6ecef903a93b5d19734b100d",
+		remark = "448834b55b4c255cf316f62082271c92",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[3632235] = {
+		id = 3632235,
+		name = "2213c7ff9caa354a9ffdb63a645ea8d2",
+		remark = "b5192c018a6260c66108d48abb9f86cd",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[3611636] = {
+		id = 3611636,
+		name = "183a0bc09ef236b2bff05b7f560cbbc7",
+		remark = "97d17e3d6e0c548625bec7540bd04f6d",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 116,
+		sub_activity_list = {}
+	},
+	[3622637] = {
+		id = 3622637,
+		name = "f5dedd78aa271ac5e906c26886d4584a",
+		remark = "f6eb66344acf9ac2f5441f21bb33b5be",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 226,
+		sub_activity_list = {
+			3600438
+		}
+	},
+	[3600438] = {
+		id = 3600438,
+		name = "b6e57806fbfc2921a114489d067d3b89",
+		remark = "2cf72d212cdd030b93b4c66117e83c47",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[3600731] = {
+		id = 3600731,
+		name = "e48cf84637bc73430ab3e3cbed0e6763",
+		remark = "acbb18977c7316f0cf9c75c2037a0cce",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 73,
+		sub_activity_list = {
+			3600732,
+			3600733,
+			3600734,
+			3600735
+		}
+	},
+	[3600732] = {
+		id = 3600732,
+		name = "191eb59a679cd3d203513bac85c8566d",
+		remark = "ddf89164794be134188b51776be4e13f",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[3600733] = {
+		id = 3600733,
+		name = "fccf30c368bb3220b8864e6657ba58fb",
+		remark = "59a511b9f953df01b4d81c62a37749f0",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[3600734] = {
+		id = 3600734,
+		name = "0e8c31f04db8dca473f1af116d84082b",
+		remark = "f487d7cd38054ac13bc0cbab0331f4c4",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[3600735] = {
+		id = 3600735,
+		name = "8300bb92dce0098f62d812de35ac202e",
+		remark = "2c05847df0de2e4f53141ebec35a067a",
+		unlock_condition = "",
+		activity_theme = 36,
+		reward_show = "",
 		activity_template = 4,
 		sub_activity_list = {}
 	},
 	get_id_list_by_activity_theme = {
+		[36] = {
+			3610001,
+			3600102,
+			3612003,
+			3610204,
+			3610205,
+			3610206,
+			3618407,
+			3618508,
+			3618509,
+			3618510,
+			3618511,
+			3618512,
+			3618513,
+			3618514,
+			3618515,
+			3600416,
+			3627617,
+			3600418,
+			3627719,
+			3627720,
+			3627721,
+			3627722,
+			3627723,
+			3627724,
+			3627725,
+			3618926,
+			3600327,
+			3600328,
+			3613101,
+			3611129,
+			3611130,
+			3610731,
+			3632232,
+			3632233,
+			3632234,
+			3632235,
+			3611636,
+			3622637,
+			3600438,
+			3600731,
+			3600732,
+			3600733,
+			3600734,
+			3600735
+		},
 		[29] = {
 			291001,
 			293231,
@@ -22041,7 +24545,11 @@
 			2932210,
 			2932211,
 			2932212,
-			2932213
+			2932213,
+			3632232,
+			3632233,
+			3632234,
+			3632235
 		},
 		[278] = {
 			242781,
@@ -22054,10 +24562,18 @@
 			232774,
 			232775,
 			232776,
-			232777
+			232777,
+			3627719,
+			3627720,
+			3627721,
+			3627722,
+			3627723,
+			3627724,
+			3627725
 		},
 		[276] = {
-			232761
+			232761,
+			3627617
 		},
 		[275] = {
 			232751
@@ -22249,7 +24765,8 @@
 		[226] = {
 			192261,
 			202261,
-			282261
+			282261,
+			3622637
 		},
 		[270] = {
 			192701,
@@ -22547,7 +25064,8 @@
 			280731,
 			280736,
 			280741,
-			290731
+			290731,
+			3600731
 		},
 		[203] = {
 			152031
@@ -22671,7 +25189,8 @@
 			281892,
 			281893,
 			291891,
-			291892
+			291892,
+			3618926
 		},
 		[187] = {
 			131871,
@@ -22715,13 +25234,22 @@
 			281855,
 			281856,
 			281857,
-			281858
+			281858,
+			3618508,
+			3618509,
+			3618510,
+			3618511,
+			3618512,
+			3618513,
+			3618514,
+			3618515
 		},
 		[184] = {
 			131841,
 			191841,
 			271841,
-			281841
+			281841,
+			3618407
 		},
 		[200] = {
 			132001,
@@ -23350,7 +25878,8 @@
 			281162,
 			281163,
 			291161,
-			291162
+			291162,
+			3611636
 		},
 		[110] = {
 			61101,
@@ -23388,7 +25917,8 @@
 			241202,
 			271201,
 			281201,
-			291201
+			291201,
+			3612003
 		},
 		[274] = {
 			600
@@ -23484,7 +26014,9 @@
 			291112,
 			291113,
 			291114,
-			291115
+			291115,
+			3611129,
+			3611130
 		},
 		[131] = {
 			526,
@@ -23524,7 +26056,8 @@
 			281312,
 			281313,
 			291311,
-			291312
+			291312,
+			3613101
 		},
 		[127] = {
 			521,
@@ -23680,7 +26213,8 @@
 			271073,
 			281071,
 			281072,
-			291071
+			291071,
+			3610731
 		},
 		[106] = {
 			505,
@@ -23711,7 +26245,10 @@
 			71022,
 			91021,
 			1061021,
-			1061022
+			1061022,
+			3610204,
+			3610205,
+			3610206
 		},
 		[101] = {
 			501,
@@ -23743,7 +26280,8 @@
 			271001,
 			281001,
 			281002,
-			291001
+			291001,
+			3610001
 		},
 		[5] = {
 			301
@@ -23956,7 +26494,14 @@
 			290049,
 			290046,
 			2900411,
-			2800411
+			2800411,
+			3600416,
+			3600418,
+			3600438,
+			3600732,
+			3600733,
+			3600734,
+			3600735
 		},
 		[72] = {
 			201
@@ -24171,7 +26716,9 @@
 			290038,
 			290039,
 			2900310,
-			2900311
+			2900311,
+			3600327,
+			3600328
 		},
 		{
 			1,
@@ -24209,10 +26756,125 @@
 			280013,
 			280014,
 			290011,
-			290012
+			290012,
+			3600102
 		}
 	},
 	get_id_list_by_sub_activity_list = {
+		[3600735] = {
+			3600731
+		},
+		[3600734] = {
+			3600731
+		},
+		[3600733] = {
+			3600731
+		},
+		[3600732] = {
+			3600731
+		},
+		[3600438] = {
+			3622637
+		},
+		[3632235] = {
+			3610731
+		},
+		[3632234] = {
+			3610731
+		},
+		[3632233] = {
+			3610731
+		},
+		[3632232] = {
+			3610731
+		},
+		[3611130] = {
+			3613101
+		},
+		[3611129] = {
+			3613101
+		},
+		[3627725] = {
+			3627617
+		},
+		[3627724] = {
+			3627617
+		},
+		[3627723] = {
+			3627617
+		},
+		[3627722] = {
+			3627617
+		},
+		[3627721] = {
+			3627617
+		},
+		[3627720] = {
+			3627617
+		},
+		[3627719] = {
+			3627617
+		},
+		[3600418] = {
+			3627617
+		},
+		[3618515] = {
+			3618407
+		},
+		[3618514] = {
+			3618407
+		},
+		[3618513] = {
+			3618407
+		},
+		[3618512] = {
+			3618407
+		},
+		[3618511] = {
+			3618407
+		},
+		[3618510] = {
+			3618407
+		},
+		[3618509] = {
+			3618407
+		},
+		[3618508] = {
+			3618407
+		},
+		[3610205] = {
+			3612003
+		},
+		[3610204] = {
+			3612003
+		},
+		[3622637] = {
+			3610001
+		},
+		[3610731] = {
+			3610001
+		},
+		[3613101] = {
+			3610001
+		},
+		[3618926] = {
+			3610001
+		},
+		[3627617] = {
+			3610001
+		},
+		[3618407] = {
+			3610001
+		},
+		[3610206] = {
+			3610001
+		},
+		[3612003] = {
+			3610001
+		},
+		[3600102] = {
+			3610001
+		},
 		[2800411] = {
 			2824311
 		},
@@ -30823,6 +33485,50 @@
 		2824311,
 		2814611,
 		2824411,
-		2800411
+		2800411,
+		3610001,
+		3600102,
+		3612003,
+		3610204,
+		3610205,
+		3610206,
+		3618407,
+		3618508,
+		3618509,
+		3618510,
+		3618511,
+		3618512,
+		3618513,
+		3618514,
+		3618515,
+		3600416,
+		3627617,
+		3600418,
+		3627719,
+		3627720,
+		3627721,
+		3627722,
+		3627723,
+		3627724,
+		3627725,
+		3618926,
+		3600327,
+		3600328,
+		3613101,
+		3611129,
+		3611130,
+		3610731,
+		3632232,
+		3632233,
+		3632234,
+		3632235,
+		3611636,
+		3622637,
+		3600438,
+		3600731,
+		3600732,
+		3600733,
+		3600734,
+		3600735
 	}
 }

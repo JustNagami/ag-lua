@@ -131,6 +131,9 @@
 	["game.dorm.interacts.luosen_icecream"] = {
 		require("game.dorm.interacts.luosen_icecream")
 	},
+	["game.dorm.interacts.mianyunpaopaochuan"] = {
+		require("game.dorm.interacts.mianyunpaopaochuan")
+	},
 	["game.dorm.interacts.mic_sing"] = {
 		require("game.dorm.interacts.mic_sing")
 	},

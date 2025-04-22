@@ -1174,5 +1174,18 @@
 		value = {
 			1
 		}
+	},
+	multi_heart_demon_bg_pos = {
+		id = "multi_heart_demon_bg_pos",
+		value = {
+			0,
+			0,
+			40
+		},
+		scale = {
+			2,
+			2,
+			2
+		}
 	}
 }

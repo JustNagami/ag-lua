@@ -119,6 +119,10 @@ function var_0_0.UpdateLock(arg_5_0)
 		if var_5_0 == 5 then
 			arg_5_0.nullText_.text = string.format(GetTips("EXPLORE_AREA_DEBLOCKING"), var_5_1)
 		end
+
+		if var_5_0 == 7 then
+			arg_5_0.nullText_.text = string.format(GetTips("GOD_EATER_SHOP_LOCK_DES"), var_5_1)
+		end
 	end
 
 	arg_5_0.isShopLock = not ShopTools.CheckShopIsUnLock(arg_5_0.shopID)

@@ -173,6 +173,18 @@
 		EnergyType = 4,
 		RangeType = 1
 	},
+	[1045] = {
+		ID = 1045,
+		Name = "9b06c7057be8337b80a0089d85dab189",
+		EnergyType = 4,
+		RangeType = 0
+	},
+	[1046] = {
+		ID = 1046,
+		Name = "8d0864974b83a607223d8921fc825ec2",
+		EnergyType = 4,
+		RangeType = 0
+	},
 	[1048] = {
 		ID = 1048,
 		Name = "b9f4c43d4041db5890750e8a1c3b6d4a",
@@ -983,6 +995,12 @@
 		EnergyType = 0,
 		RangeType = 0
 	},
+	[2129] = {
+		ID = 2129,
+		Name = "44b820e972567c0c4480c8450f6a9dd2",
+		EnergyType = 0,
+		RangeType = 0
+	},
 	[3002] = {
 		ID = 3002,
 		Name = "368cedc92ce4d387eddd2a0d9b99c657",
@@ -1229,6 +1247,12 @@
 		EnergyType = 0,
 		RangeType = 0
 	},
+	[3050] = {
+		ID = 3050,
+		Name = "c436ad00a1d094f199d60ca82861bf87",
+		EnergyType = 0,
+		RangeType = 0
+	},
 	[3501] = {
 		ID = 3501,
 		Name = "4c1316a02f047babee921556e358bd31",
@@ -1418,6 +1442,12 @@
 	[4043] = {
 		ID = 4043,
 		Name = "eb23b0c7efa231334355b0330533dc08",
+		EnergyType = 0,
+		RangeType = 0
+	},
+	[4045] = {
+		ID = 4045,
+		Name = "7b86035d82caeeaf299623744609bbfa",
 		EnergyType = 0,
 		RangeType = 0
 	},
@@ -2003,6 +2033,8 @@
 		1139,
 		1041,
 		1042,
+		1045,
+		1046,
 		1048,
 		1049,
 		1148,
@@ -2138,6 +2170,7 @@
 		2123,
 		2124,
 		2125,
+		2129,
 		3002,
 		3004,
 		3005,
@@ -2179,6 +2212,7 @@
 		3047,
 		3048,
 		3049,
+		3050,
 		3501,
 		3517,
 		3528,
@@ -2211,6 +2245,7 @@
 		4041,
 		4042,
 		4043,
+		4045,
 		5011,
 		5013,
 		5015,

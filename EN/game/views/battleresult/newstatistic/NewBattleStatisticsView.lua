@@ -18,6 +18,8 @@ function var_0_0.Init(arg_3_0)
 end
 
 function var_0_0.OnEnter(arg_4_0)
+	SetActive(arg_4_0.shareBtn_.gameObject, not SDKTools.GetIsOverSea())
+
 	arg_4_0.stageData = arg_4_0.params_.stageData
 	arg_4_0.hasSnapshot_ = arg_4_0.params_.hasSnapshot_
 	arg_4_0.statisticsHeroItem_ = {}

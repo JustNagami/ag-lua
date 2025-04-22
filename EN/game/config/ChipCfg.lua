@@ -4694,6 +4694,22 @@
 		id = 104299,
 		story = ""
 	},
+	[104699] = {
+		portrait = "",
+		picture_id = "100015",
+		spec_char = 1046,
+		suit_name = "c5c8d97cbc9f4b262316fdd01fabbe34",
+		new_condition = 5104601,
+		type_id = 3,
+		role_type_id = 4,
+		cost_condition = "",
+		flow_name = "FlowScript/AIChipEffect/AIChipEffect101.asset",
+		desc = "c17b484d7d215f002df89eae7c91ca4e",
+		title = "",
+		profile = "",
+		id = 104699,
+		story = ""
+	},
 	[104899] = {
 		portrait = "",
 		picture_id = "100015",
@@ -5618,6 +5634,7 @@
 			103999,
 			104199,
 			104299,
+			104699,
 			104899,
 			104999,
 			105099,
@@ -5685,6 +5702,9 @@
 		}
 	},
 	get_id_list_by_spec_char = {
+		[1046] = {
+			104699
+		},
 		[1284] = {
 			128401,
 			128402,
@@ -6422,6 +6442,7 @@
 		103999,
 		104199,
 		104299,
+		104699,
 		104899,
 		104999,
 		105099,

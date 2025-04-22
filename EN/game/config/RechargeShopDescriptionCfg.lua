@@ -688,6 +688,32 @@
 			108901
 		}
 	},
+	[104601] = {
+		name = "cc434b374175cf5eb2eb84f59fdd69ce",
+		desc2 = "",
+		type = 8,
+		desc = "4e8e7d8b0ee3ed4dcc1a9c631fb224cd",
+		desc_source = "",
+		sub_type = 0,
+		id = 104601,
+		icon = "104601",
+		param = {
+			104601
+		}
+	},
+	[104501] = {
+		name = "36deb5f4506cd795c22268f3dee636dd",
+		desc2 = "",
+		type = 8,
+		desc = "92141333b55d8ab8b9a5235c2840cdee",
+		desc_source = "",
+		sub_type = 0,
+		id = 104501,
+		icon = "104501",
+		param = {
+			104501
+		}
+	},
 	[6004] = {
 		name = "ff5e1a0c8f8f88ea82d7e441ce31e68d",
 		desc2 = "",
@@ -868,6 +894,32 @@
 		icon = "6021",
 		param = {
 			6021
+		}
+	},
+	[6036] = {
+		name = "93129633db04c37418f6f650a5e07101",
+		desc2 = "",
+		type = 21,
+		desc = "43b0cf658c441f577eafd8198371869c",
+		desc_source = "",
+		sub_type = 0,
+		id = 6036,
+		icon = "6036",
+		param = {
+			6036
+		}
+	},
+	[6037] = {
+		name = "31559d14680cfd47e8b811938346058b",
+		desc2 = "",
+		type = 21,
+		desc = "63bef2e2be81cb8f9c6f99491dd814ae",
+		desc_source = "",
+		sub_type = 0,
+		id = 6037,
+		icon = "6037",
+		param = {
+			6037
 		}
 	},
 	[31105] = {
@@ -9987,6 +10039,215 @@
 			}
 		}
 	},
+	[34609] = {
+		name = "441a7fd144d64a1effd7024639b9ce0a",
+		desc2 = "",
+		type = 5,
+		desc = "9897e680d1ead27498ad7c95516c2df7",
+		desc_source = "",
+		sub_type = 505,
+		id = 34609,
+		icon = "34609",
+		param = {
+			{},
+			{
+				{
+					38,
+					0
+				},
+				{
+					20024,
+					0
+				}
+			},
+			7,
+			1041
+		}
+	},
+	[34610] = {
+		name = "a655706a7a636cfb6cc0e8261c1cff41",
+		desc2 = "",
+		type = 5,
+		desc = "202d9113511b21aea221c340ab0a3c99",
+		desc_source = "",
+		sub_type = 501,
+		id = 34610,
+		icon = "34610",
+		param = {
+			{
+				38,
+				7
+			},
+			{
+				20024,
+				7
+			}
+		}
+	},
+	[34611] = {
+		name = "9b8235d274f465c997651af8b5bf48d9",
+		desc2 = "",
+		type = 5,
+		desc = "64af95e8a9a485341ae7170fb4cb7bd8",
+		desc_source = "",
+		sub_type = 501,
+		id = 34611,
+		icon = "34611",
+		param = {
+			{
+				38,
+				3
+			},
+			{
+				20024,
+				3
+			}
+		}
+	},
+	[34612] = {
+		name = "593d1b7003ba33393a2b8e51e2074548",
+		desc2 = "",
+		type = 5,
+		desc = "8da4dc51dfc83e67ffb7181510dc6b36",
+		desc_source = "",
+		sub_type = 501,
+		id = 34612,
+		icon = "34612",
+		param = {
+			{
+				38,
+				5
+			},
+			{
+				20024,
+				8
+			}
+		}
+	},
+	[34613] = {
+		name = "627e129f79502e6df79b960ebb01eabc",
+		desc2 = "",
+		type = 5,
+		desc = "1c2ff445d6978290aa2d23903cc220d9",
+		desc_source = "",
+		sub_type = 501,
+		id = 34613,
+		icon = "34613",
+		param = {
+			{
+				38,
+				7
+			},
+			{
+				40701,
+				20
+			}
+		}
+	},
+	[34614] = {
+		name = "f6ad3b702a1f0677c236c674192023d7",
+		desc2 = "",
+		type = 5,
+		desc = "b688f4fe8015817b079f0cd4f51e96e9",
+		desc_source = "",
+		sub_type = 501,
+		id = 34614,
+		icon = "34614",
+		param = {
+			{
+				38,
+				10
+			},
+			{
+				40504,
+				24
+			},
+			{
+				20024,
+				8
+			}
+		}
+	},
+	[34615] = {
+		name = "efe5d9fc1eb50c1c100eab5345880617",
+		desc2 = "",
+		type = 5,
+		desc = "ba8f0a4c0d4262ce14b77475a5c5914f",
+		desc_source = "",
+		sub_type = 501,
+		id = 34615,
+		icon = "34615",
+		param = {
+			{
+				19,
+				5
+			},
+			{
+				41301,
+				24
+			}
+		}
+	},
+	[34616] = {
+		name = "808da5dd111b4148e18a24e4f69e80b0",
+		desc2 = "",
+		type = 5,
+		desc = "f3ca6e39be041a2c519374de38594599",
+		desc_source = "",
+		sub_type = 501,
+		id = 34616,
+		icon = "34616",
+		param = {
+			{
+				5,
+				5
+			},
+			{
+				40603,
+				15
+			}
+		}
+	},
+	[34617] = {
+		name = "1e0d49523c56d1ba4d2cc7ca630e4b05",
+		desc2 = "",
+		type = 5,
+		desc = "7f984434dce39945f8e66fd3ce879f98",
+		desc_source = "",
+		sub_type = 501,
+		id = 34617,
+		icon = "34617",
+		param = {
+			{
+				5,
+				10
+			},
+			{
+				40701,
+				20
+			},
+			{
+				20024,
+				8
+			}
+		}
+	},
+	[34618] = {
+		name = "bc50c0f4734a8df0b6c23a09d99d869f",
+		desc2 = "",
+		type = 5,
+		desc = "0d5be2f8dd39f69a782815e460f6fcd5",
+		desc_source = "",
+		sub_type = 501,
+		id = 34618,
+		icon = "34253",
+		param = {
+			{
+				20003,
+				5
+			}
+		}
+	},
 	[30041] = {
 		name = "237b662c2bb460ec6916f0488305b714",
 		desc2 = "",
@@ -16821,6 +17082,186 @@
 			}
 		}
 	},
+	[20311] = {
+		name = "c1e1a4b1bac7f655fe325618d1fdd0fe",
+		desc2 = "",
+		type = 5,
+		desc = "56f278ed5d0ab47336c4b21ac416db1e",
+		desc_source = "",
+		sub_type = 501,
+		id = 20311,
+		icon = "34154",
+		param = {
+			{
+				38,
+				1
+			}
+		}
+	},
+	[20312] = {
+		name = "a07268aa6b0663e8a841db741cbd1507",
+		desc2 = "",
+		type = 5,
+		desc = "0e1556025de496c708eb8894e027e7bd",
+		desc_source = "",
+		sub_type = 501,
+		id = 20312,
+		icon = "34290",
+		param = {
+			{
+				38,
+				3
+			},
+			{
+				20003,
+				3
+			}
+		}
+	},
+	[20313] = {
+		name = "195e0c05c1df8eb5cc6241e38e6e8620",
+		desc2 = "",
+		type = 5,
+		desc = "3fe87e9ab83a14a76b32207b717e5421",
+		desc_source = "",
+		sub_type = 501,
+		id = 20313,
+		icon = "34291",
+		param = {
+			{
+				38,
+				5
+			},
+			{
+				20003,
+				8
+			}
+		}
+	},
+	[20314] = {
+		name = "485f6e5ffaf85939facfffbc0b7b4a2c",
+		desc2 = "",
+		type = 5,
+		desc = "87f1cacfe0317733a07bf3b473c72e3b",
+		desc_source = "",
+		sub_type = 501,
+		id = 20314,
+		icon = "34292",
+		param = {
+			{
+				38,
+				7
+			},
+			{
+				40701,
+				20
+			}
+		}
+	},
+	[20315] = {
+		name = "8b4f28b7859a80a45df8451e45739759",
+		desc2 = "",
+		type = 5,
+		desc = "a76ea6448fb007491607b971c1213c37",
+		desc_source = "",
+		sub_type = 501,
+		id = 20315,
+		icon = "34293",
+		param = {
+			{
+				38,
+				10
+			},
+			{
+				40504,
+				24
+			},
+			{
+				20003,
+				8
+			}
+		}
+	},
+	[20316] = {
+		name = "3d29a2c884a79fe61b78c207932af35b",
+		desc2 = "",
+		type = 5,
+		desc = "307c66f22da64f680d1dff8f5ebb4727",
+		desc_source = "",
+		sub_type = 501,
+		id = 20316,
+		icon = "34294",
+		param = {
+			{
+				19,
+				5
+			},
+			{
+				41301,
+				24
+			}
+		}
+	},
+	[20317] = {
+		name = "df1d56b703a16d884d34fd9815caf831",
+		desc2 = "",
+		type = 5,
+		desc = "008f08ca7ce71f9b105aa59578252f88",
+		desc_source = "",
+		sub_type = 501,
+		id = 20317,
+		icon = "34295",
+		param = {
+			{
+				5,
+				5
+			},
+			{
+				40603,
+				15
+			}
+		}
+	},
+	[20318] = {
+		name = "859ab85393ce0aced269db3fd852d2ad",
+		desc2 = "",
+		type = 5,
+		desc = "32b8a5d2fc8d37284198f14182d43343",
+		desc_source = "",
+		sub_type = 501,
+		id = 20318,
+		icon = "34296",
+		param = {
+			{
+				5,
+				10
+			},
+			{
+				40701,
+				20
+			},
+			{
+				20003,
+				8
+			}
+		}
+	},
+	[20319] = {
+		name = "605cf670594e9c3446b26ee917d7b2d8",
+		desc2 = "",
+		type = 5,
+		desc = "2f60cbb448d0d5fae37f1d4cf808f9ee",
+		desc_source = "",
+		sub_type = 501,
+		id = 20319,
+		icon = "34253",
+		param = {
+			{
+				20003,
+				5
+			}
+		}
+	},
 	all = {
 		1037011,
 		1013011,
@@ -16875,6 +17316,8 @@
 		102001,
 		106001,
 		108901,
+		104601,
+		104501,
 		6004,
 		6005,
 		6006,
@@ -16889,6 +17332,8 @@
 		6015,
 		6016,
 		6021,
+		6036,
+		6037,
 		31105,
 		31110,
 		31115,
@@ -17297,6 +17742,16 @@
 		34438,
 		34439,
 		34440,
+		34609,
+		34610,
+		34611,
+		34612,
+		34613,
+		34614,
+		34615,
+		34616,
+		34617,
+		34618,
 		30041,
 		30042,
 		30043,
@@ -17614,6 +18069,15 @@
 		20307,
 		20308,
 		20309,
-		20310
+		20310,
+		20311,
+		20312,
+		20313,
+		20314,
+		20315,
+		20316,
+		20317,
+		20318,
+		20319
 	}
 }

@@ -42,6 +42,8 @@ function var_0_0.ProduceStep(arg_3_0, arg_3_1)
 			return SetTeamStep.New(arg_3_0, arg_3_1)
 		elseif var_3_1 == "CombineGameStep" then
 			return CombineGameStep.New(arg_3_0, arg_3_1)
+		elseif var_3_1 == "CivilizationGameStep" then
+			return CivilizationGameStep.New(arg_3_0, arg_3_1)
 		end
 	end
 

@@ -329,6 +329,18 @@
 		has_non_native = 0,
 		i18n_video_list = ""
 	},
+	["Hela2.usm"] = {
+		has_tracks = 0,
+		name = "Hela2.usm",
+		has_non_native = 0,
+		i18n_video_list = ""
+	},
+	["Athena_activity.usm"] = {
+		has_tracks = 0,
+		name = "Athena_activity.usm",
+		has_non_native = 0,
+		i18n_video_list = ""
+	},
 	["Farskyyard.usm"] = {
 		has_tracks = 0,
 		name = "Farskyyard.usm",
@@ -359,15 +371,21 @@
 		has_non_native = 0,
 		i18n_video_list = ""
 	},
-	activity_109502_day_loop = {
+	["activity_109502_day_loop.usm"] = {
 		has_tracks = 0,
-		name = "activity_109502_day_loop",
+		name = "activity_109502_day_loop.usm",
 		has_non_native = 0,
 		i18n_video_list = ""
 	},
-	activity_109502_night_loop = {
+	["activity_109502_night_loop.usm"] = {
 		has_tracks = 0,
-		name = "activity_109502_night_loop",
+		name = "activity_109502_night_loop.usm",
+		has_non_native = 0,
+		i18n_video_list = ""
+	},
+	["V4_2_GodEaterUI_PlotUI.usm"] = {
+		has_tracks = 0,
+		name = "V4_2_GodEaterUI_PlotUI.usm",
 		has_non_native = 0,
 		i18n_video_list = ""
 	},

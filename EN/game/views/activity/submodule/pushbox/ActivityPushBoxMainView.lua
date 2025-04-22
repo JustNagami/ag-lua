@@ -2,7 +2,7 @@
 local var_0_1 = 2.25
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/VersionUI/JapanRegionUI_2_10/JapanRegionUI_2_10AnniversaryUI/JapanRegionUI_2_10AnniversaryEntranceUI"
+	return "Widget/Version/V3_5_9_CustomizeUI/V3_5_9_AnniversaryUI/V3_5_9_AnniversaryEntranceUI"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -46,14 +46,16 @@ function var_0_0.InitUI(arg_4_0)
 		"07"
 	}
 	arg_4_0.materialItem_ = {}
-	arg_4_0.rewardItem_ = CommonItem.New(arg_4_0.rewardGo_)
+	arg_4_0.materialItemDataList_ = {}
+	arg_4_0.rewardItem_ = CommonItemView.New(arg_4_0.rewardGo_, true)
+	arg_4_0.rewardItemData_ = clone(ItemTemplateData)
 
-	arg_4_0.rewardItem_:RegistCallBack(function(arg_5_0)
+	function arg_4_0.rewardItemData_.clickFun(arg_5_0)
 		ShowPopItem(POP_ITEM, {
 			arg_5_0.id,
 			arg_5_0.number
 		})
-	end)
+	end
 
 	arg_4_0.rewardCon_ = {}
 
@@ -66,7 +68,7 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.OnMaterialUpdateHandler_ = handler(arg_4_0, arg_4_0.OnMaterialUpdate)
 	arg_4_0.stateCon_ = ControllerUtil.GetController(arg_4_0.transform_, "state")
 	arg_4_0.progressCon_ = ControllerUtil.GetController(arg_4_0.transform_, "progress")
-	arg_4_0.rewardItemCon_ = ControllerUtil.GetController(arg_4_0.rewardItem_.transform_, "completed")
+	arg_4_0.rewardItemCon_ = arg_4_0.rewardItemControllerEx_:GetController("completed")
 end
 
 function var_0_0.AddUIListeners(arg_6_0)
@@ -97,6 +99,7 @@ function var_0_0.OnEnter(arg_11_0)
 	arg_11_0.progressCon_:SetSelectedState(-1)
 
 	arg_11_0.activityID_ = arg_11_0.params_.activityID
+	arg_11_0.taskActivityID_ = PushBoxTool.GetTaskActivityID(arg_11_0.activityID_)
 
 	manager.notify:RegistListener(MATERIAL_MODIFY, arg_11_0.OnMaterialUpdateHandler_)
 	arg_11_0:BindRedPointUI()
@@ -204,7 +207,10 @@ function var_0_0.RefreshState(arg_18_0)
 
 	local var_18_2 = arg_18_0.cfg_.award_list[1]
 
-	arg_18_0.rewardItem_:RefreshData(formatReward(var_18_2))
+	arg_18_0.rewardItemData_.id = var_18_2[1]
+	arg_18_0.rewardItemData_.number = var_18_2[2]
+
+	arg_18_0.rewardItem_:SetData(arg_18_0.rewardItemData_)
 end
 
 function var_0_0.IsComplete(arg_19_0, arg_19_1)
@@ -227,27 +233,35 @@ function var_0_0.RefreshMaterial(arg_20_0)
 
 	for iter_20_0, iter_20_1 in ipairs(var_20_0) do
 		if not arg_20_0.materialItem_[iter_20_0] then
-			arg_20_0.materialItem_[iter_20_0] = RewardItem.New(arg_20_0.materialTemplate_, arg_20_0.materialParent_)
+			local var_20_1 = GameObject.Instantiate(arg_20_0.materialTemplate_, arg_20_0.materialParent_)
+			local var_20_2 = CommonItemView.New(var_20_1, true)
+			local var_20_3 = clone(ItemTemplateData)
 
-			arg_20_0.materialItem_[iter_20_0]:UpdateCommonItemAni()
+			var_20_3.hideBottomRightTextFlag = true
+
+			function var_20_3.clickFun(arg_21_0)
+				ShowPopItem(POP_ITEM, {
+					arg_21_0.id,
+					arg_21_0.number
+				})
+			end
+
+			arg_20_0.materialItem_[iter_20_0] = var_20_2
+			arg_20_0.materialItemDataList_[iter_20_0] = var_20_3
 		end
 
-		arg_20_0.materialItem_[iter_20_0]:SetData(iter_20_1)
+		local var_20_4 = iter_20_1[1]
+		local var_20_5 = iter_20_1[2]
+		local var_20_6 = ItemTools.getItemNum(var_20_4)
 
-		local var_20_1 = iter_20_1[1]
-		local var_20_2 = iter_20_1[2]
-		local var_20_3 = ItemTools.getItemNum(var_20_1)
-		local var_20_4 = var_20_3 .. "/" .. var_20_2
-		local var_20_5 = "<color=#FF0000>%d</color>"
+		arg_20_0.materialItemDataList_[iter_20_0].id = var_20_4
+		arg_20_0.materialItemDataList_[iter_20_0].bottomText = {
+			var_20_6,
+			var_20_5
+		}
 
-		if var_20_3 < var_20_2 then
-			var_20_4 = string.format(var_20_5, var_20_3) .. "/" .. var_20_2
-		end
-
-		arg_20_0.materialItem_[iter_20_0].commonItem_:SetBottomText(var_20_4)
-		arg_20_0.materialItem_[iter_20_0].commonItem_:RegistCallBack(function()
-			ShowPopItem(POP_MERGE_ITEM, iter_20_1)
-		end)
+		arg_20_0.materialItem_[iter_20_0]:SetData(arg_20_0.materialItemDataList_[iter_20_0])
+		arg_20_0.materialItem_[iter_20_0]:Show(true)
 	end
 
 	for iter_20_2 = #var_20_0 + 1, #arg_20_0.materialItem_ do
@@ -308,17 +322,13 @@ function var_0_0.RemoveTween(arg_27_0)
 end
 
 function var_0_0.BindRedPointUI(arg_28_0)
-	local var_28_0 = ActivityConst.ACTIVITY_2_10_PUSH_BOX_TASK
-
-	manager.redPoint:bindUIandKey(arg_28_0.taskBtn_.transform, RedPointConst.ACTIVITY_TASK .. "_" .. var_28_0)
+	manager.redPoint:bindUIandKey(arg_28_0.taskBtn_.transform, RedPointConst.ACTIVITY_TASK .. "_" .. arg_28_0.taskActivityID_)
 	manager.redPoint:bindUIandKey(arg_28_0.makeBtn_.transform, RedPointConst.ACTIVITY_PUSH_BOX_MATERIAL .. "_" .. arg_28_0.activityID_)
 	manager.redPoint:bindUIandKey(arg_28_0.materialBtn_.transform, RedPointConst.ACTIVITY_PUSH_BOX_FATIGUE .. "_" .. arg_28_0.activityID_)
 end
 
 function var_0_0.UnbindRedPointUI(arg_29_0)
-	local var_29_0 = ActivityConst.ACTIVITY_2_10_PUSH_BOX_TASK
-
-	manager.redPoint:unbindUIandKey(arg_29_0.taskBtn_.transform, RedPointConst.ACTIVITY_TASK .. "_" .. var_29_0)
+	manager.redPoint:unbindUIandKey(arg_29_0.taskBtn_.transform, RedPointConst.ACTIVITY_TASK .. "_" .. arg_29_0.taskActivityID_)
 	manager.redPoint:unbindUIandKey(arg_29_0.makeBtn_.transform, RedPointConst.ACTIVITY_PUSH_BOX_MATERIAL .. "_" .. arg_29_0.activityID_)
 	manager.redPoint:unbindUIandKey(arg_29_0.materialBtn_.transform, RedPointConst.ACTIVITY_PUSH_BOX_FATIGUE .. "_" .. arg_29_0.activityID_)
 end

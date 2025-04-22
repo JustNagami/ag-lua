@@ -2300,6 +2300,84 @@
 			0
 		}
 	},
+	[405104501] = {
+		monster_level = 80,
+		name = "507df56101f42c8dbc31e9f3327ac4c8",
+		drop_lib_id = 0,
+		map = "405104501",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "eb4a1dafccffbecc0eed9d02e2e1c09b",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 405104501,
+		attribute_factor = {
+			1000,
+			1000,
+			8000
+		},
+		hero_list = {
+			{
+				1045,
+				10450101
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
+	[405104601] = {
+		monster_level = 80,
+		name = "c054d6ce71d9b3899210d4d5cafc30e2",
+		drop_lib_id = 0,
+		map = "405104601",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "8620b0f48db58e2aa91d9229a9c9e223",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 405104601,
+		attribute_factor = {
+			1000,
+			1000,
+			8000
+		},
+		hero_list = {
+			{
+				1046,
+				10460101
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
 	all = {
 		405101301,
 		405101701,
@@ -2359,6 +2437,8 @@
 		405115001,
 		405101501,
 		405102001,
-		405115601
+		405115601,
+		405104501,
+		405104601
 	}
 }

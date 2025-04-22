@@ -71,11 +71,29 @@
 			601
 		}
 	},
+	assetpend_common_branch_b = {
+		asset_name = "57701630d05964b5d8fa4a2474927fb9",
+		asset_type = 2,
+		asset_id = "assetpend_common_branch_b",
+		asset_desc = "14c39497ade7c2ca2ddc305f054fe788",
+		asset_stage_type = {
+			601
+		}
+	},
 	assetpend_common_branch_c = {
 		asset_name = "6f5254d4e6ac27e0fe2836d79e9f077e",
 		asset_type = 2,
 		asset_id = "assetpend_common_branch_c",
 		asset_desc = "9529acee00bd03d33e37e28ad6f2fc22",
+		asset_stage_type = {
+			601
+		}
+	},
+	assetpend_common_branch_d = {
+		asset_name = "a5a16f8446afea6960d6ace1b1c1df75",
+		asset_type = 2,
+		asset_id = "assetpend_common_branch_d",
+		asset_desc = "e444908b6d20bf8569d7f9cc8c81c502",
 		asset_stage_type = {
 			601
 		}
@@ -249,7 +267,9 @@
 		},
 		[601] = {
 			"assetpend_common_branch_a",
+			"assetpend_common_branch_b",
 			"assetpend_common_branch_c",
+			"assetpend_common_branch_d",
 			"assetpend_common_branch_e",
 			"assetpend_common_branch_f",
 			"assetpend_common_branch_g",

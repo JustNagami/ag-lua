@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("PushBoxView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/VersionUI/JapanRegionUI_2_10/JapanRegionUI_2_10AnniversaryUI/JapanRegionUI_2_10AnniversaryBoxPlayUI"
+	return "Widget/Version/V3_5_9_CustomizeUI/V3_5_9_AnniversaryUI/V3_5_9_AnniversaryBoxPlayUI"
 end
 
 function var_0_0.UIParent(arg_2_0)

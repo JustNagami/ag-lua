@@ -195,6 +195,20 @@
 		play_desc = "ACTIVITY_PT_DESCRIBE_3_1",
 		activity_desc = "ACTIVITY_PT_RULE_3_1"
 	},
+	[20] = {
+		currency_id = 53160,
+		id = 20,
+		shop_activity_id = 341461,
+		task_activity_id = 340041,
+		buff_pop_prefab_path = "Widget/Version/V4_2_GodEaterUI/V4_2_GodEaterUI_PT/PtUpUI/PtUpPopUI",
+		entrace_prefab_path = "Widget/Version/V4_2_GodEaterUI/V4_2_GodEaterUI_PT/PtUpUI/PtMainUpUI",
+		activity_id = 342431,
+		main_prefab_path = "Widget/Version/V4_2_GodEaterUI/V4_2_GodEaterUI_PT/PtUpUI/PtUpUI",
+		cost_id = 54085,
+		stage_activity_id = 342441,
+		play_desc = "ACTIVITY_PT_DESCRIBE_4_2",
+		activity_desc = "ACTIVITY_PT_RULE_4_2"
+	},
 	get_id_list_by_activity_id = {
 		[202431] = {
 			1
@@ -235,6 +249,9 @@
 		[292432] = {
 			13
 		},
+		[342431] = {
+			20
+		},
 		[2824311] = {
 			18
 		}
@@ -253,6 +270,7 @@
 		11,
 		12,
 		13,
-		18
+		18,
+		20
 	}
 }

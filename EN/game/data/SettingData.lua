@@ -26,13 +26,14 @@ function var_0_0.InitSetting(arg_3_0)
 
 	if GameToSDK.Text_Language ~= "" then
 		var_3_4 = GameToSDK.Text_Language
-
-		arg_3_0:SaveData("text_language", GameToSDK.Text_Language)
 	end
 
 	if not table.indexof(var_3_3.language_list, var_3_4) then
 		var_3_4 = var_3_3.language_list[1]
+		GameToSDK.Text_Language = var_3_4
 	end
+
+	arg_3_0:SaveData("text_language", GameToSDK.Text_Language)
 
 	local var_3_5 = var_3_0.voice_language or var_3_3.voice_list[1]
 

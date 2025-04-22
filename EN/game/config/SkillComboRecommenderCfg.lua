@@ -1327,6 +1327,22 @@
 		id = 115601,
 		desc = "bfe10afcb5d0e84a0f96cee95806086a"
 	},
+	[104601] = {
+		list_icon = "",
+		name = "1dc17618a3a83b2d0c8f23210cb0e5d0",
+		list_name = "",
+		combine_char = "",
+		id = 104601,
+		desc = "a16018ba72f083df5445860fcb77cd29"
+	},
+	[104501] = {
+		list_icon = "",
+		name = "bec819241f7b4a934e4bfdcaaaf1f4d5",
+		list_name = "",
+		combine_char = "",
+		id = 104501,
+		desc = "6f32091e4d8336a09657e464450996b2"
+	},
 	all = {
 		101101,
 		101102,
@@ -1433,6 +1449,8 @@
 		906101,
 		109501,
 		102201,
-		115601
+		115601,
+		104601,
+		104501
 	}
 }

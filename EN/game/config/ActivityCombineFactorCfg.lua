@@ -5,6 +5,8 @@
 		score = 0,
 		id = 1001,
 		icon = "1001",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1001
 		}
@@ -15,6 +17,8 @@
 		score = 0,
 		id = 1002,
 		icon = "1002",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1002
 		}
@@ -25,6 +29,8 @@
 		score = 0,
 		id = 1003,
 		icon = "1003",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1003
 		}
@@ -35,6 +41,8 @@
 		score = 0,
 		id = 1004,
 		icon = "1004",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1004
 		}
@@ -45,6 +53,8 @@
 		score = 0,
 		id = 1005,
 		icon = "1005",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1005
 		}
@@ -55,6 +65,8 @@
 		score = 0,
 		id = 1006,
 		icon = "1006",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1006
 		}
@@ -65,6 +77,8 @@
 		score = 0,
 		id = 1007,
 		icon = "1007",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1007
 		}
@@ -75,6 +89,8 @@
 		score = 0,
 		id = 1008,
 		icon = "1008",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1008
 		}
@@ -85,6 +101,8 @@
 		score = 0,
 		id = 1009,
 		icon = "1009",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1009
 		}
@@ -95,6 +113,8 @@
 		score = 0,
 		id = 2001,
 		icon = "2001",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			-1
 		}
@@ -105,6 +125,8 @@
 		score = 0,
 		id = 2002,
 		icon = "2002",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			2,
 			1
@@ -116,6 +138,8 @@
 		score = 0,
 		id = 2003,
 		icon = "2003",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			-1
 		}
@@ -126,6 +150,8 @@
 		score = 0,
 		id = 2004,
 		icon = "2004",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			2,
 			1
@@ -137,6 +163,8 @@
 		score = 0,
 		id = 2005,
 		icon = "2005",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			2,
 			3
@@ -148,6 +176,8 @@
 		score = 0,
 		id = 2006,
 		icon = "2006",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			3,
 			1
@@ -159,6 +189,8 @@
 		score = 0,
 		id = 2007,
 		icon = "2007",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1,
 			1
@@ -170,6 +202,8 @@
 		score = 0,
 		id = 2008,
 		icon = "2008",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1
 		}
@@ -180,6 +214,8 @@
 		score = 0,
 		id = 2009,
 		icon = "2009",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			3,
 			1
@@ -191,6 +227,8 @@
 		score = 0,
 		id = 2010,
 		icon = "2010",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			4
 		}
@@ -201,6 +239,8 @@
 		score = 0,
 		id = 2011,
 		icon = "2011",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			5
 		}
@@ -211,6 +251,8 @@
 		score = 0,
 		id = 2012,
 		icon = "2012",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			3
 		}
@@ -221,6 +263,8 @@
 		score = 0,
 		id = 2013,
 		icon = "2013",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			4
 		}
@@ -231,6 +275,8 @@
 		score = 0,
 		id = 2014,
 		icon = "2014",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			2
 		}
@@ -241,6 +287,8 @@
 		score = 0,
 		id = 2015,
 		icon = "2015",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			3
 		}
@@ -251,6 +299,8 @@
 		score = 0,
 		id = 2016,
 		icon = "2016",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1
 		}
@@ -261,6 +311,8 @@
 		score = 0,
 		id = 2017,
 		icon = "2017",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			3
 		}
@@ -271,6 +323,8 @@
 		score = 0,
 		id = 2018,
 		icon = "2018",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			3
 		}
@@ -281,6 +335,8 @@
 		score = -15,
 		id = 3001,
 		icon = "3001",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			-1
 		}
@@ -291,6 +347,8 @@
 		score = -10,
 		id = 3002,
 		icon = "3002",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			-1
 		}
@@ -301,6 +359,8 @@
 		score = -30,
 		id = 3003,
 		icon = "3003",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1,
 			1
@@ -312,6 +372,8 @@
 		score = -30,
 		id = 3004,
 		icon = "3004",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			2,
 			1
@@ -323,6 +385,8 @@
 		score = -30,
 		id = 3005,
 		icon = "3005",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			3,
 			1
@@ -334,6 +398,8 @@
 		score = -15,
 		id = 3006,
 		icon = "3006",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			-20
 		}
@@ -344,6 +410,8 @@
 		score = -15,
 		id = 3007,
 		icon = "3007",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			4,
 			-1
@@ -355,6 +423,8 @@
 		score = -15,
 		id = 3008,
 		icon = "3008",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			5,
 			-1
@@ -366,6 +436,8 @@
 		score = -30,
 		id = 3009,
 		icon = "3009",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			5
 		}
@@ -376,6 +448,8 @@
 		score = -15,
 		id = 3010,
 		icon = "3010",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1
 		}
@@ -386,6 +460,8 @@
 		score = -15,
 		id = 3011,
 		icon = "2017",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			2
 		}
@@ -396,6 +472,8 @@
 		score = -25,
 		id = 3012,
 		icon = "3007",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			4,
 			-50
@@ -407,6 +485,8 @@
 		score = -25,
 		id = 3013,
 		icon = "3008",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			5,
 			-50
@@ -418,6 +498,8 @@
 		score = -30,
 		id = 3014,
 		icon = "2004",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			2,
 			60
@@ -429,6 +511,8 @@
 		score = -15,
 		id = 3015,
 		icon = "1003",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1003
 		}
@@ -439,6 +523,8 @@
 		score = 15,
 		id = 4001,
 		icon = "4001",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1
 		}
@@ -449,6 +535,8 @@
 		score = 10,
 		id = 4002,
 		icon = "4002",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1
 		}
@@ -459,6 +547,8 @@
 		score = 30,
 		id = 4003,
 		icon = "4003",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1,
 			-1
@@ -470,6 +560,8 @@
 		score = 30,
 		id = 4004,
 		icon = "4004",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			2,
 			-1
@@ -481,6 +573,8 @@
 		score = 30,
 		id = 4005,
 		icon = "4005",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			3,
 			-1
@@ -492,6 +586,8 @@
 		score = 15,
 		id = 4006,
 		icon = "4006",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			20
 		}
@@ -502,6 +598,8 @@
 		score = 15,
 		id = 4007,
 		icon = "4007",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			4,
 			1
@@ -513,6 +611,8 @@
 		score = 15,
 		id = 4008,
 		icon = "4008",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			5,
 			1
@@ -524,6 +624,8 @@
 		score = 20,
 		id = 4009,
 		icon = "4009",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			-20
 		}
@@ -534,6 +636,8 @@
 		score = 10,
 		id = 4010,
 		icon = "4010",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			1,
 			-1
@@ -545,6 +649,8 @@
 		score = 0,
 		id = 5001,
 		icon = "3009",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			2
 		}
@@ -555,6 +661,8 @@
 		score = 0,
 		id = 5002,
 		icon = "3006",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			-40
 		}
@@ -565,6 +673,8 @@
 		score = 0,
 		id = 5003,
 		icon = "3009",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			18
 		}
@@ -575,6 +685,8 @@
 		score = 0,
 		id = 5004,
 		icon = "2004",
+		gain_type = 0,
+		need_cul = 0,
 		effect = {
 			2,
 			90

@@ -1215,4 +1215,125 @@ function var_0_0.SetNewWarChessHeroData(arg_26_0, arg_26_1, arg_26_2, arg_26_3, 
 	return var_26_6
 end
 
+function var_0_0.MultiHeartDemonSetHeroData(arg_27_0, arg_27_1, arg_27_2, arg_27_3, arg_27_4, arg_27_5)
+	local var_27_0
+	local var_27_1
+
+	if arg_27_2 and arg_27_2 ~= 0 then
+		var_27_0, var_27_1 = GetVirtualData(arg_27_2)
+	else
+		var_27_0, var_27_1 = GetPracticalData(arg_27_1)
+	end
+
+	local var_27_2 = GetHeroFinalAttr(var_27_0, var_27_0.servantInfo, var_27_1, arg_27_2)
+	local var_27_3, var_27_4, var_27_5 = HeroTools.CalTransitionSkillAttribute(var_27_0, var_27_1)
+	local var_27_6 = RoleDataForExchange.New()
+
+	var_27_6.UID = arg_27_3
+	var_27_6.playerLevel = arg_27_4
+	var_27_6.ID = var_27_0.using_skin
+	var_27_6.Level = LvTools.CheckHeroExp(1, var_27_0.exp, HeroConst.HERO_LV_MAX)
+
+	local var_27_7 = {}
+	local var_27_8 = {}
+
+	var_27_2[2002] = var_27_2[HeroConst.HERO_ATTRIBUTE.STA] * arg_27_5
+
+	for iter_27_0, iter_27_1 in pairs(var_27_2) do
+		if PublicAttrCfg[iter_27_0] or iter_27_0 == 2002 then
+			table.insert(var_27_7, iter_27_0)
+			table.insert(var_27_8, iter_27_1)
+		end
+	end
+
+	local var_27_9, var_27_10 = BattleTools.FixBattleAttributeListAndWeaponModule(var_27_7, var_27_8, var_27_0.using_skin, var_27_0.weapon_module_level)
+
+	var_27_6.attributeValue, var_27_6.attributeID = var_27_10, var_27_9
+
+	local var_27_11 = {}
+	local var_27_12 = {}
+
+	for iter_27_2, iter_27_3 in pairs(var_27_4) do
+		table.insert(var_27_11, iter_27_2)
+		table.insert(var_27_12, iter_27_3)
+	end
+
+	var_27_6.equipSkillID = var_27_11
+	var_27_6.equipSkillLv = var_27_12
+
+	local var_27_13 = {}
+	local var_27_14 = AstrolabeTools.GetTotalEffect(var_27_0.using_astrolabe)
+
+	for iter_27_4 = 1, 9 do
+		var_27_13[iter_27_4] = var_27_14[iter_27_4] or 0
+	end
+
+	var_27_6.astrolabe = var_27_13
+
+	local var_27_15 = {}
+	local var_27_16 = EquipTools.GetEffectS(var_27_1, var_27_0)
+
+	for iter_27_5, iter_27_6 in pairs(var_27_16) do
+		table.insert(var_27_15, iter_27_5)
+	end
+
+	var_27_6.equipment = var_27_15
+
+	local var_27_17 = {}
+	local var_27_18 = HeroCfg[var_27_0.id]
+	local var_27_19 = {}
+
+	for iter_27_7, iter_27_8 in ipairs(var_27_0.skill) do
+		var_27_19[iter_27_8.skill_id] = iter_27_8.skill_level
+	end
+
+	for iter_27_9, iter_27_10 in pairs(var_27_5) do
+		var_27_19[iter_27_9] = (var_27_19[iter_27_9] or 1) + iter_27_10
+	end
+
+	for iter_27_11, iter_27_12 in ipairs(var_27_18.skills) do
+		var_27_17[iter_27_11] = var_27_19[iter_27_12] or 1
+	end
+
+	var_27_6.skillLevel = var_27_17
+
+	if var_27_0.servantInfo and var_27_0.servantInfo.id ~= 0 then
+		local var_27_20 = HeroTools.GetHeroWeaponAddLevel(var_27_0)
+
+		var_27_6.weaponEffectID = WeaponServantCfg[var_27_0.servantInfo.id].effect[1]
+		var_27_6.weaponEffectLevel = var_27_0.servantInfo.stage + var_27_20
+	end
+
+	local var_27_21 = {}
+	local var_27_22 = var_0_1:GetChipManagerID() or 0
+
+	if var_27_22 ~= 0 then
+		table.insert(var_27_21, var_27_22)
+	end
+
+	if var_0_1:GetChipOfHeroDic()[var_27_6.ID] then
+		if var_27_22 ~= 0 then
+			for iter_27_13, iter_27_14 in ipairs(ChipData:GetCurChipManagerList(var_27_22)) do
+				table.insert(var_27_21, iter_27_14)
+			end
+		end
+
+		for iter_27_15, iter_27_16 in ipairs(var_0_1:GetChipOfHeroDic()[var_27_6.ID]) do
+			table.insert(var_27_21, iter_27_16)
+		end
+	else
+		local var_27_23 = var_0_1:GetChipList()
+
+		if var_27_23 then
+			for iter_27_17, iter_27_18 in ipairs(var_27_23) do
+				table.insert(var_27_21, iter_27_18)
+			end
+		end
+	end
+
+	var_27_6.AIChip = var_27_21
+
+	return var_27_6
+end
+
 return var_0_0

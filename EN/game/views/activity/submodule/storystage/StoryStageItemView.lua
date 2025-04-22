@@ -85,7 +85,7 @@ function var_0_0.OnClick(arg_11_0)
 		local var_11_0 = WarchessLevelCfg[arg_11_0.preStageID_]
 		local var_11_1 = var_11_0.type
 
-		ShowTips(string.format(GetTips("UNLOCK_CONDITION_ACTIVITY_TIPS"), ActivityCfg[var_11_1].remark, var_11_0.name_level))
+		ShowTips(string.format(GetTips("UNLOCK_CONDITION_ACTIVITY_TIPS"), GetI18NText(ActivityCfg[var_11_1].remark), var_11_0.name_level))
 	else
 		StoryStageActivityData:SaveHistoryStage(arg_11_0.selectChapterID_, arg_11_0.stageID_)
 		arg_11_0:Go("storyStageInfoActivity", {

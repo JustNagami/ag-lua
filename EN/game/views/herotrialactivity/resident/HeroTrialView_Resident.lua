@@ -290,6 +290,7 @@ function var_0_0.RefreshHeroUI(arg_31_0)
 	arg_31_0:RefreshAttackType()
 	arg_31_0:RefreshRace()
 	arg_31_0:RefreshRare()
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_31_0.typeTrans_)
 end
 
 function var_0_0.GetHeroCfg(arg_32_0)

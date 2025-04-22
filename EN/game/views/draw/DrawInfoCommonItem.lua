@@ -42,15 +42,23 @@ function var_0_0.RefreshData(arg_4_0, arg_4_1, arg_4_2)
 	arg_4_0.isHero = arg_4_2
 	arg_4_0.itemId = arg_4_1
 
-	local var_4_0 = DrawItemCfg[arg_4_1].item_id or 0
+	local var_4_0 = DrawItemCfg[arg_4_1]
+
+	if var_4_0 == nil then
+		Debug.LogError(string.format("配置表 DrawItemCfg 找不到 id : %s ", arg_4_1))
+
+		return
+	end
+
+	local var_4_1 = var_4_0.item_id or 0
 
 	if arg_4_2 then
 		arg_4_0.item:SetData({
-			id = var_4_0
+			id = var_4_1
 		})
 	else
 		arg_4_0.item:SetData({
-			id = var_4_0
+			id = var_4_1
 		})
 	end
 end

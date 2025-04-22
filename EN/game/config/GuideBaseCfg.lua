@@ -2451,6 +2451,174 @@
 		ignore_group_condition = {},
 		leaps = {}
 	},
+	[121] = {
+		narrator_name = "0c6aa4161545d8aaf43d5aa3ffc6a99d",
+		group = 0,
+		not_skip_guide = 0,
+		id = 121,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			12101,
+			12102,
+			12103,
+			12104,
+			12105,
+			12106,
+			12107
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"ActivityGodEaterGameMainView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[122] = {
+		narrator_name = "e963d1ad966e236dbd80e79c868271ae",
+		group = 0,
+		not_skip_guide = 0,
+		id = 122,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			12201,
+			12202
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"goldMinerSelectLevelView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[123] = {
+		narrator_name = "8c4d4e8b48f4eebc4a0e777320274ea0",
+		group = 0,
+		not_skip_guide = 0,
+		id = 123,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			12301,
+			12302,
+			12303,
+			12304,
+			12305,
+			12306,
+			12307,
+			12308,
+			12309,
+			12310,
+			12311,
+			12312,
+			12313,
+			12314,
+			12315,
+			12316,
+			12317,
+			12318,
+			12319,
+			12320,
+			12321,
+			12322,
+			12323,
+			12324
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"civilizationGameMainView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[124] = {
+		narrator_name = "a08ed4b5f5d6d5f16ac3af6d22902d45",
+		group = 0,
+		not_skip_guide = 0,
+		id = 124,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			12401,
+			12402,
+			12403,
+			12404,
+			12405
+		},
+		open_condition = {
+			{
+				"goldMiner",
+				343701
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[125] = {
+		narrator_name = "d1f4c26c5f011dc514056fb163f520e5",
+		group = 0,
+		not_skip_guide = 0,
+		id = 125,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			12501,
+			12502
+		},
+		open_condition = {
+			{
+				"goldMiner",
+				343706
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[126] = {
+		narrator_name = "998853c6b28a420e46abc91cc9c9d59d",
+		group = 0,
+		not_skip_guide = 0,
+		id = 126,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			12601,
+			12602,
+			12603,
+			12604,
+			12605,
+			12606,
+			12607,
+			12608
+		},
+		open_condition = {
+			{
+				"civilizationGame",
+				2
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
 	get_id_list_by_not_skip_guide = {
 		[0] = {
 			10,
@@ -2524,7 +2692,13 @@
 			100,
 			102,
 			103,
-			104
+			104,
+			121,
+			122,
+			123,
+			124,
+			125,
+			126
 		},
 		{
 			1,
@@ -2617,6 +2791,12 @@
 		100,
 		102,
 		103,
-		104
+		104,
+		121,
+		122,
+		123,
+		124,
+		125,
+		126
 	}
 }

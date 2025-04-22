@@ -2903,6 +2903,94 @@
 		plot_title = {},
 		plot_id = {}
 	},
+	[1045] = {
+		display_model_id = "1045ui_display",
+		name = "eb5d09012f24d1d8bb03a629a510e7e2",
+		portrait = 2110451,
+		video_url = "",
+		hero = 1045,
+		gift = "",
+		desc = "a7998aabd1b787322a997e2b6d7b1e94",
+		skin_level = 0,
+		ui_has_timeline = 0,
+		home_weapon_show = 0,
+		ui_modelId = "1045ui_tpose",
+		picture_id = "1045",
+		weapon_modelId = "1045ui_weapon",
+		display_type = 1,
+		id = 1045,
+		modelId = "1045ui_light",
+		main_model_id = "1045ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
+	[104501] = {
+		display_model_id = "104501ui_display",
+		name = "885284d36a715a8a424f30ac23bab17b",
+		portrait = 2110452,
+		video_url = "",
+		hero = 1045,
+		gift = "",
+		desc = "71963bc4b247045e64ff8d8857d8ad6b",
+		skin_level = 0,
+		ui_has_timeline = 1,
+		home_weapon_show = 0,
+		ui_modelId = "104501ui_tpose",
+		picture_id = "104501",
+		weapon_modelId = "1045ui_weapon",
+		display_type = 2,
+		id = 104501,
+		modelId = "104501ui_light",
+		main_model_id = "104501ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
+	[1046] = {
+		display_model_id = "1046ui_display",
+		name = "732fbe47bfd45b886bfb2f869cfad166",
+		portrait = 2110461,
+		video_url = "",
+		hero = 1046,
+		gift = "",
+		desc = "c0923e6e032951c1bf643308b0981077",
+		skin_level = 0,
+		ui_has_timeline = 0,
+		home_weapon_show = 0,
+		ui_modelId = "1046ui_tpose",
+		picture_id = "1046",
+		weapon_modelId = "1046ui_weapon",
+		display_type = 1,
+		id = 1046,
+		modelId = "1046ui_light",
+		main_model_id = "1046ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
+	[104601] = {
+		display_model_id = "104601ui_display",
+		name = "eb37d9fde1dd5c86ac4f1016f09dc409",
+		portrait = 2110462,
+		video_url = "",
+		hero = 1046,
+		gift = "",
+		desc = "e5873021d8b75f58ade5d3a063408701",
+		skin_level = 0,
+		ui_has_timeline = 1,
+		home_weapon_show = 0,
+		ui_modelId = "104601ui_tpose",
+		picture_id = "104601",
+		weapon_modelId = "1046ui_weapon",
+		display_type = 2,
+		id = 104601,
+		modelId = "104601ui_light",
+		main_model_id = "104601ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
 	[6056] = {
 		display_model_id = "6056ui_display",
 		name = "cdfe151701b2deb3158e44b2ee78973a",
@@ -4223,6 +4311,28 @@
 		modelId = "",
 		main_model_id = ""
 	},
+	[2129] = {
+		display_model_id = "",
+		name = "",
+		portrait = 0,
+		unlock_id_list = "",
+		video_url = "",
+		hero = 2129,
+		gift = "",
+		desc = "",
+		skin_level = 0,
+		ui_has_timeline = 0,
+		home_weapon_show = 0,
+		plot_title = "",
+		ui_modelId = "",
+		picture_id = "",
+		weapon_modelId = "",
+		plot_id = "",
+		display_type = 0,
+		id = 2129,
+		modelId = "",
+		main_model_id = ""
+	},
 	[3004] = {
 		display_model_id = "",
 		name = "",
@@ -4704,6 +4814,28 @@
 		plot_id = "",
 		display_type = 0,
 		id = 3043,
+		modelId = "",
+		main_model_id = ""
+	},
+	[3050] = {
+		display_model_id = "",
+		name = "",
+		portrait = 0,
+		unlock_id_list = "",
+		video_url = "",
+		hero = 3050,
+		gift = "",
+		desc = "",
+		skin_level = 0,
+		ui_has_timeline = 0,
+		home_weapon_show = 0,
+		plot_title = "",
+		ui_modelId = "",
+		picture_id = "",
+		weapon_modelId = "",
+		plot_id = "",
+		display_type = 0,
+		id = 3050,
 		modelId = "",
 		main_model_id = ""
 	},
@@ -5408,6 +5540,9 @@
 		[3501] = {
 			3501
 		},
+		[3050] = {
+			3050
+		},
 		[3043] = {
 			3043
 		},
@@ -5473,6 +5608,9 @@
 		},
 		[3004] = {
 			3004
+		},
+		[2129] = {
+			2129
 		},
 		[2114] = {
 			2114
@@ -5651,6 +5789,14 @@
 		[6056] = {
 			6056,
 			605601
+		},
+		[1046] = {
+			1046,
+			104601
+		},
+		[1045] = {
+			1045,
+			104501
 		},
 		[1089] = {
 			1089,
@@ -6060,6 +6206,10 @@
 		109502,
 		1089,
 		108901,
+		1045,
+		104501,
+		1046,
+		104601,
 		6056,
 		605601,
 		6087,
@@ -6120,6 +6270,7 @@
 		2087,
 		2089,
 		2114,
+		2129,
 		3004,
 		3005,
 		3006,
@@ -6142,6 +6293,7 @@
 		3041,
 		3042,
 		3043,
+		3050,
 		3501,
 		4010,
 		4011,

@@ -1319,6 +1319,66 @@
 		id = 128405,
 		icon = "1284"
 	},
+	[105501] = {
+		note = "e8ba752b295306ed195f86bad5cfb626",
+		name = "3aa44df4adfcbe02c131e78d8a380929",
+		max_level = 1,
+		affix_id = 70216,
+		affix_target = 3,
+		story = "8031260cb895db4bd2e1de30c2a2aa35",
+		sub_type = 3007,
+		exclusive_hero_id = 1055,
+		id = 105501,
+		icon = "1055"
+	},
+	[105502] = {
+		note = "460b471e59056511ed3b00368e35b204",
+		name = "48bfb5156836fe42174c385a213f3761",
+		max_level = 1,
+		affix_id = 70217,
+		affix_target = 3,
+		story = "586097c2865083478384997701851fa1",
+		sub_type = 3007,
+		exclusive_hero_id = 1055,
+		id = 105502,
+		icon = "1055"
+	},
+	[105503] = {
+		note = "3309dc72f7c063be588a9f2c6162fac2",
+		name = "94e3ed748ea0f8aec2556221afc1a64c",
+		max_level = 1,
+		affix_id = 70218,
+		affix_target = 3,
+		story = "5c0e8d3cfa7432fb74761dd431c36e79",
+		sub_type = 3007,
+		exclusive_hero_id = 1055,
+		id = 105503,
+		icon = "1055"
+	},
+	[105504] = {
+		note = "8b09ab62b01d5e3893e430e453ee0775",
+		name = "d5686c6ed1d5d8dc3007067da683973c",
+		max_level = 1,
+		affix_id = 70219,
+		affix_target = 3,
+		story = "3b949631a19c5af1db41ff233026a025",
+		sub_type = 3007,
+		exclusive_hero_id = 1055,
+		id = 105504,
+		icon = "1055"
+	},
+	[105505] = {
+		note = "eaddb71abfc97adcb47d1dfef16e5bf3",
+		name = "6ceff0eb1a5eae7f1a2c13e8ac66c084",
+		max_level = 1,
+		affix_id = 70220,
+		affix_target = 3,
+		story = "fc43ac2600ce782b7f2ce2ecd11ed2c0",
+		sub_type = 3007,
+		exclusive_hero_id = 1055,
+		id = 105505,
+		icon = "1055"
+	},
 	[70501] = {
 		note = "11cc47cf71011fe30c96f89038cd1982",
 		name = "6ca569299a5ab77f9a49441effec184f",
@@ -3045,7 +3105,12 @@
 			128402,
 			128403,
 			128404,
-			128405
+			128405,
+			105501,
+			105502,
+			105503,
+			105504,
+			105505
 		}
 	},
 	get_id_list_by_exclusive_hero_id = {
@@ -3173,6 +3238,13 @@
 			70865,
 			70866,
 			70867
+		},
+		[1055] = {
+			105501,
+			105502,
+			105503,
+			105504,
+			105505
 		},
 		[1284] = {
 			128401,
@@ -3440,6 +3512,11 @@
 		128403,
 		128404,
 		128405,
+		105501,
+		105502,
+		105503,
+		105504,
+		105505,
 		70501,
 		70502,
 		70503,

@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("ActivityPushBoxRewardView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/VersionUI/JapanRegionUI_2_10/JapanRegionUI_2_10AnniversaryUI/JapanRegionUI_2_10AnniversaryQuestPopup"
+	return "Widget/Version/V3_5_9_CustomizeUI/V3_5_9_AnniversaryUI/V3_5_9_AnniversaryQuestPopup"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -46,7 +46,7 @@ end
 
 function var_0_0.OnEnter(arg_9_0)
 	arg_9_0.activityID_ = arg_9_0.params_.activityID
-	arg_9_0.taskActivityID_ = ActivityConst.ACTIVITY_2_10_PUSH_BOX_TASK
+	arg_9_0.taskActivityID_ = PushBoxTool.GetTaskActivityID(arg_9_0.activityID_)
 
 	arg_9_0:RefreshTask()
 	arg_9_0:RegistEventListener(OSIRIS_TASK_UPDATE, handler(arg_9_0, arg_9_0.RefreshTask))
@@ -83,11 +83,6 @@ end
 
 function var_0_0.Dispose(arg_12_0)
 	arg_12_0:RemoveAllListeners()
-
-	for iter_12_0, iter_12_1 in ipairs(arg_12_0.scrollHelper_:GetItemList()) do
-		iter_12_1:Dispose()
-	end
-
 	arg_12_0.scrollHelper_:Dispose()
 	arg_12_0.super.Dispose(arg_12_0)
 end

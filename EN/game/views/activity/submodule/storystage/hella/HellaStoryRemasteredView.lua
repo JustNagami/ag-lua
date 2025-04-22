@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("HellaStoryRemasteredView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/BranchlineUI/HellaSelectStageUI"
+	return "Widget/System/Operation/ChapterSectionUI/HellaSelectStageUI"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -122,7 +122,7 @@ function var_0_0.AddListeners(arg_9_0)
 			if BattleStageData:GetStageData()[var_10_1] == nil then
 				local var_10_2 = ChapterCfg[var_10_0.chapter_list[3]].subhead
 
-				ShowTips(string.format(GetTips("NOTE_TASK_UNLOCK"), var_10_2))
+				ShowTips(string.format(GetTips("NOTE_TASK_UNLOCK"), GetI18NText(var_10_2)))
 
 				return
 			else
@@ -131,16 +131,18 @@ function var_0_0.AddListeners(arg_9_0)
 
 				BattleFieldData:SetStageByClientID(var_10_0.id, var_10_4)
 				BattleFieldData:SetCacheChapterClient(getChapterToggle(var_10_0.id), var_10_0.id)
-				BattleFieldData:SetSecondCacheChapter(getChapterToggle(var_10_0.id), arg_9_0.selectChapterID_)
+				BattleFieldData:SetSecondCacheChapter(getChapterToggle(var_10_0.id), arg_9_0.selectChapterID_, var_10_0.id)
+				BattleFieldData:SetCacheChapter(var_10_0.id, var_10_3)
 				BattleStageAction.ClickSubPlot(var_10_3)
 				JumpTools.Jump2SubPlot(var_10_0.id, true)
 			end
 		else
-			local var_10_5 = BattleFieldData:GetSecondCacheChapter(getChapterToggle(var_10_0.id)) or var_10_0.chapter_list[1]
+			local var_10_5 = BattleFieldData:GetSecondCacheChapter(getChapterToggle(var_10_0.id), var_10_0.id) or var_10_0.chapter_list[1]
 			local var_10_6 = BattleFieldData:GetCacheStage(var_10_5) or ChapterCfg[var_10_5].section_id_list[1]
 
 			BattleFieldData:SetStageByClientID(var_10_0.id, var_10_6)
 			BattleFieldData:SetCacheChapterClient(getChapterToggle(var_10_0.id), var_10_0.id)
+			BattleFieldData:SetCacheChapter(var_10_0.id, var_10_5)
 			JumpTools.Jump2SubPlot(var_10_0.id, true)
 		end
 	end)
@@ -161,7 +163,13 @@ function var_0_0.RefreshData(arg_12_0)
 		arg_12_0.selectChapterID_ = BattleFieldData:GetCacheChapter(var_12_1.id)
 
 		if table.keyof(var_12_1.chapter_list, arg_12_0.selectChapterID_) < 4 then
-			arg_12_0.selectChapterID_ = BattleFieldData:GetSecondCacheChapter(getChapterToggle(var_12_1.id)) or var_12_1.chapter_list[1]
+			local var_12_2 = BattleFieldData:GetSecondCacheChapter(getChapterToggle(var_12_1.id), var_12_0)
+
+			if table.keyof(var_12_1.chapter_list, var_12_2) then
+				arg_12_0.selectChapterID_ = var_12_2
+			else
+				arg_12_0.selectChapterID_ = var_12_1.chapter_list[1]
+			end
 		end
 	else
 		arg_12_0.selectChapterID_ = arg_12_0.params_.chapterID
@@ -195,8 +203,16 @@ function var_0_0.RefreshSwitchBtn(arg_14_0)
 
 	if table.keyof(var_14_0.chapter_list, arg_14_0.selectChapterID_) < 4 then
 		arg_14_0.switchController_:SetSelectedState("1")
+
+		arg_14_0.text_1.text = GetTips("FRONT_CHAPTER")
+		arg_14_0.text_2.text = GetTips("AFTER_CHAPTER")
+		arg_14_0.text_3.text = GetTips("AFTER_CHAPTER")
 	else
 		arg_14_0.switchController_:SetSelectedState("2")
+
+		arg_14_0.text_1.text = GetTips("AFTER_CHAPTER")
+		arg_14_0.text_2.text = GetTips("FRONT_CHAPTER")
+		arg_14_0.text_3.text = GetTips("FRONT_CHAPTER")
 	end
 
 	local var_14_1 = ChapterCfg[var_14_0.chapter_list[4]].section_id_list[1]

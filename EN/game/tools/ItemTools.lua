@@ -465,4 +465,69 @@ function var_0_0.HasOwnAllLimitCardItems(arg_19_0)
 	return false
 end
 
+local function var_0_1(arg_20_0, arg_20_1, arg_20_2)
+	local var_20_0 = arg_20_2.type
+	local var_20_1 = table.indexof(arg_20_0, var_20_0)
+
+	if var_20_1 and arg_20_1[var_20_0] then
+		local var_20_2 = table.indexof(arg_20_1[var_20_0], arg_20_2.id)
+
+		if var_20_2 then
+			return var_20_1, var_20_2
+		else
+			return false
+		end
+	end
+
+	return var_20_1
+end
+
+function var_0_0.SortRewardItemList(arg_21_0)
+	local var_21_0 = {
+		ItemConst.ITEM_TYPE.HERO,
+		ItemConst.ITEM_TYPE.HERO_SKIN,
+		ItemConst.ITEM_TYPE.SCENE,
+		ItemConst.ITEM_TYPE.WEAPON_SERVANT,
+		ItemConst.ITEM_TYPE.GIFT,
+		ItemConst.ITEM_TYPE.CURRENCY,
+		ItemConst.ITEM_TYPE.PORTRAIT,
+		ItemConst.ITEM_TYPE.FRAME,
+		ItemConst.ITEM_TYPE.STICKER,
+		ItemConst.ITEM_TYPE.DORM_FURNITURE
+	}
+	local var_21_1 = {
+		[ItemConst.ITEM_TYPE.CURRENCY] = {
+			1,
+			30,
+			31,
+			32
+		}
+	}
+
+	table.sort(arg_21_0, function(arg_22_0, arg_22_1)
+		local var_22_0 = arg_22_0.id
+		local var_22_1 = arg_22_1.id
+		local var_22_2 = ItemCfg[var_22_0]
+		local var_22_3 = ItemCfg[var_22_1]
+		local var_22_4, var_22_5 = var_0_1(var_21_0, var_21_1, var_22_2)
+		local var_22_6, var_22_7 = var_0_1(var_21_0, var_21_1, var_22_3)
+
+		if var_22_4 and var_22_6 then
+			local var_22_8 = var_22_4 == var_22_6
+
+			if var_22_8 and var_22_5 and var_22_7 then
+				return var_22_5 < var_22_7
+			elseif not var_22_8 then
+				return var_22_4 < var_22_6
+			end
+		elseif var_22_4 ~= var_22_6 then
+			return var_22_6 == false
+		end
+
+		return rewardSortFunc(arg_22_0, arg_22_1)
+	end)
+
+	return arg_21_0
+end
+
 return var_0_0

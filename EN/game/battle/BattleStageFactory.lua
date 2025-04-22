@@ -146,6 +146,8 @@
 			var_1_0 = BattleCatchDuckTemplate.New(arg_1_1)
 		elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_MONSTER_COSPLAY == arg_1_0 then
 			var_1_0 = BattleMonsterCosplayTemplate.New(arg_1_1, arg_1_2)
+		elseif BattleConst.STAGE_TYPE_NEW.MULT_HEART_DEMON == arg_1_0 then
+			var_1_0 = BattleMultHeartDemonTemplate.New(arg_1_1, arg_1_2)
 		elseif BattleConst.STAGE_TYPE_NEW.ADVANCE_MONSTER_TEST == arg_1_0 then
 			var_1_0 = BattleAdvanceMonsterTestTemplate.New(arg_1_1, arg_1_2)
 		elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_SPKALI_CHALLENGE == arg_1_0 then
@@ -156,6 +158,8 @@
 			var_1_0 = BattleAreaBattleTemplate.New(arg_1_1, arg_1_2)
 		elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_DODGE_BARRAGE == arg_1_0 then
 			var_1_0 = BattleDodgeBarrageTemplate.New(arg_1_1, arg_1_2)
+		elseif BattleConst.STAGE_TYPE_NEW.GOD_EATER_BATTLE == arg_1_0 then
+			var_1_0 = BattleGodEaterTemplate.New(arg_1_1, arg_1_2)
 		end
 
 		var_1_0:SetReserveParams(arg_1_3)

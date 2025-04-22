@@ -33,7 +33,7 @@ function var_0_0.Init()
 end
 
 function var_0_0.InitRedPointKey(arg_5_0)
-	local var_5_0 = ActivityConst.ACTIVITY_2_10_PUSH_BOX_TASK
+	local var_5_0 = PushBoxTool.GetTaskActivityID(arg_5_0)
 
 	manager.redPoint:addGroup(RedPointConst.ACTIVITY_PUSH_BOX .. "_" .. arg_5_0, {
 		RedPointConst.ACTIVITY_TASK .. "_" .. var_5_0,
@@ -67,19 +67,12 @@ end
 
 function var_0_0.OnStartMaking(arg_8_0, arg_8_1)
 	if isSuccess(arg_8_0.result) then
-		local var_8_0 = arg_8_1.cake_id
-		local var_8_1 = ActivityCelebrationCakeCfg[var_8_0].cost_list
+		local var_8_0 = {}
 
-		for iter_8_0, iter_8_1 in ipairs(var_8_1) do
-			MaterialData:ModifyNum(iter_8_1[1], -1 * iter_8_1[2])
-		end
-
-		local var_8_2 = {}
-
-		for iter_8_2, iter_8_3 in ipairs(arg_8_0.rewards or {}) do
-			table.insert(var_8_2, {
-				id = iter_8_3.id,
-				num = iter_8_3.num
+		for iter_8_0, iter_8_1 in ipairs(arg_8_0.rewards or {}) do
+			table.insert(var_8_0, {
+				id = iter_8_1.id,
+				num = iter_8_1.num
 			})
 		end
 
@@ -88,9 +81,8 @@ function var_0_0.OnStartMaking(arg_8_0, arg_8_1)
 			activity_id = arg_8_1.activity_id,
 			cake_id = arg_8_1.cake_id
 		})
-		getRewardData(var_8_2)
 		ActivityPushBoxAction.RefreshMaterialRedPoint(arg_8_1.activity_id)
-		manager.notify:CallUpdateFunc(ACTIVITY_PUSH_BOX_MAKE_CAKE, var_8_2)
+		manager.notify:CallUpdateFunc(ACTIVITY_PUSH_BOX_MAKE_CAKE, var_8_0)
 	else
 		ShowTips(arg_8_0.result)
 	end
@@ -168,7 +160,7 @@ end
 
 function var_0_0.RefreshFatigueRedPoint(arg_14_0)
 	local var_14_0 = {}
-	local var_14_1 = ActivityConst.ACTIVITY_2_10_PUSH_BOX_TASK
+	local var_14_1 = PushBoxTool.GetTaskActivityID(arg_14_0)
 	local var_14_2 = TaskTools:GetActivityTaskList(var_14_1) or {}
 
 	for iter_14_0, iter_14_1 in pairs(var_14_2) do

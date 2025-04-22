@@ -75,8 +75,10 @@ function var_0_1.AddUIListener(arg_3_0)
 	if SDKTools.GetIsInputServer("kr") then
 		arg_3_0:AddBtnListener(arg_3_0.refundbtn_, nil, function()
 			JumpTools.OpenPageByJump("gameHelpPro", {
+				hideHomeBtn = 1,
+				isPrefab = true,
 				pages = {
-					"TextureConfig/RechargeUI/RefundPolicy@kr"
+					"Widget/System/Recharge/RefundPolicyKR_01"
 				}
 			})
 		end)
@@ -100,10 +102,26 @@ function var_0_1.AddUIListener(arg_3_0)
 
 	if arg_3_0.fundsettlementmethodBtn_ and arg_3_0.commercialBtn_ then
 		arg_3_0:AddBtnListener(arg_3_0.fundsettlementmethodBtn_, nil, function()
-			GameToSDK.SendMessage(string.format("{\"messageType\" : \"ShowAgreement\" , \"type\" : \"%s\"}", fund_settlement_algorithm))
+			local var_12_0 = "Payment_Services_Act_Url"
+			local var_12_1 = OperationAction.GetOperationUrl(var_12_0)
+			local var_12_2 = EncodeURL(var_12_1)
+
+			print("url : ", var_12_2)
+
+			local var_12_3 = OperationConst.URL_OPEN_WAY.NORMAL
+
+			OperationAction.OpenUrl(var_12_2, var_12_3, nil)
 		end)
 		arg_3_0:AddBtnListener(arg_3_0.commercialBtn_, nil, function()
-			GameToSDK.SendMessage(string.format("{\"messageType\" : \"ShowAgreement\" , \"type\" : \"%s\"}", specific_commercial_transaction_act))
+			local var_13_0 = "Specified_Commercial_Transactions_Url"
+			local var_13_1 = OperationAction.GetOperationUrl(var_13_0)
+			local var_13_2 = EncodeURL(var_13_1)
+
+			print("url : ", var_13_2)
+
+			local var_13_3 = OperationConst.URL_OPEN_WAY.NORMAL
+
+			OperationAction.OpenUrl(var_13_2, var_13_3, nil)
 		end)
 	end
 end

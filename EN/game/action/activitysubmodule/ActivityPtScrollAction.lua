@@ -102,7 +102,8 @@ function var_0_0.InitRedPointKey(arg_7_0)
 	manager.redPoint:addGroup(RedPointConst.ACTIVITY_PT_SCROLL .. "_" .. arg_7_0, {
 		RedPointConst.ACTIVITY_PT_SCROLL_INFINITY_TASK .. "_" .. arg_7_0,
 		RedPointConst.ACTIVITY_PT_SCROLL_OPEN .. "_" .. arg_7_0,
-		RedPointConst.ACTIVITY_TASK .. "_" .. var_7_1
+		RedPointConst.ACTIVITY_TASK .. "_" .. var_7_1,
+		RedPointConst.ACTIVITY_PT_SCROLL_UP_SELECT .. "_" .. arg_7_0
 	})
 end
 

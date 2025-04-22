@@ -6,6 +6,7 @@
 		sub_title_type = 1,
 		activity_theme = 14,
 		icon = "141201",
+		order = 0,
 		class_name = ActivityChapterPageView
 	},
 	{
@@ -15,6 +16,7 @@
 		sub_title_type = 1,
 		activity_theme = 14,
 		icon = "141201",
+		order = 0,
 		class_name = ActivityChapterPageView
 	},
 	{
@@ -24,6 +26,7 @@
 		sub_title_type = 0,
 		activity_theme = 14,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	{
@@ -33,6 +36,7 @@
 		sub_title_type = 0,
 		activity_theme = 14,
 		icon = "141941",
+		order = 0,
 		class_name = ActivityPt2EnterView
 	},
 	{
@@ -42,6 +46,7 @@
 		sub_title_type = 0,
 		activity_theme = 14,
 		icon = "141931",
+		order = 0,
 		class_name = XH1stSealHomeView
 	},
 	{
@@ -51,6 +56,7 @@
 		sub_title_type = 0,
 		activity_theme = 14,
 		icon = "141911",
+		order = 0,
 		class_name = XH1stMusicHomeView
 	},
 	{
@@ -60,6 +66,7 @@
 		sub_title_type = 0,
 		activity_theme = 14,
 		icon = "142011",
+		order = 0,
 		class_name = ActivityChessChineseView
 	},
 	{
@@ -69,6 +76,7 @@
 		sub_title_type = 0,
 		activity_theme = 14,
 		icon = "141901",
+		order = 0,
 		class_name = AnniversaryFirstView
 	},
 	{
@@ -78,6 +86,7 @@
 		sub_title_type = 0,
 		activity_theme = 14,
 		icon = "142061",
+		order = 0,
 		class_name = DrawFeedbackView_2_0
 	},
 	{
@@ -87,6 +96,7 @@
 		sub_title_type = 0,
 		activity_theme = 14,
 		icon = "142071",
+		order = 0,
 		class_name = SkinEncoreView
 	},
 	{
@@ -96,6 +106,7 @@
 		sub_title_type = 0,
 		activity_theme = 14,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	{
@@ -105,6 +116,7 @@
 		sub_title_type = 0,
 		activity_theme = 14,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	{
@@ -114,6 +126,7 @@
 		sub_title_type = 0,
 		activity_theme = 14,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	{
@@ -123,6 +136,7 @@
 		sub_title_type = 0,
 		activity_theme = 14,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	{
@@ -132,6 +146,7 @@
 		sub_title_type = 1,
 		activity_theme = 17,
 		icon = "141201",
+		order = 0,
 		class_name = ActivityChapterPageView
 	},
 	{
@@ -141,6 +156,7 @@
 		sub_title_type = 1,
 		activity_theme = 17,
 		icon = "141201",
+		order = 0,
 		class_name = ActivityChapterPageView
 	},
 	{
@@ -150,6 +166,7 @@
 		sub_title_type = 2,
 		activity_theme = 17,
 		icon = "171202",
+		order = 0,
 		class_name = ActivityChapterPageView
 	},
 	{
@@ -159,6 +176,7 @@
 		sub_title_type = 0,
 		activity_theme = 17,
 		icon = "171521",
+		order = 0,
 		class_name = RoguelikeMainView_2_1
 	},
 	{
@@ -168,6 +186,7 @@
 		sub_title_type = 0,
 		activity_theme = 17,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	{
@@ -177,6 +196,7 @@
 		sub_title_type = 0,
 		activity_theme = 17,
 		icon = "171051",
+		order = 0,
 		class_name = RaceTrialMainView_2_1
 	},
 	{
@@ -186,6 +206,7 @@
 		sub_title_type = 0,
 		activity_theme = 17,
 		icon = "172111",
+		order = 0,
 		class_name = DormLinkGameDailyView
 	},
 	{
@@ -195,6 +216,7 @@
 		sub_title_type = 0,
 		activity_theme = 17,
 		icon = "171941",
+		order = 0,
 		class_name = ActivityPt2EnterView
 	},
 	{
@@ -204,6 +226,7 @@
 		sub_title_type = 0,
 		activity_theme = 17,
 		icon = "172141",
+		order = 0,
 		class_name = PuzzleNewTaskView
 	},
 	{
@@ -213,6 +236,7 @@
 		sub_title_type = 0,
 		activity_theme = 17,
 		icon = "172131",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	{
@@ -222,6 +246,7 @@
 		sub_title_type = 0,
 		activity_theme = 17,
 		icon = "172132",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	{
@@ -231,6 +256,7 @@
 		sub_title_type = 0,
 		activity_theme = 17,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	{
@@ -240,6 +266,7 @@
 		sub_title_type = 0,
 		activity_theme = 17,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	{
@@ -249,6 +276,7 @@
 		sub_title_type = 0,
 		activity_theme = 17,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	{
@@ -258,6 +286,7 @@
 		sub_title_type = 0,
 		activity_theme = 17,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[20201] = {
@@ -267,6 +296,7 @@
 		sub_title_type = 1,
 		activity_theme = 18,
 		icon = "141201",
+		order = 0,
 		class_name = ActivityChapterPageView
 	},
 	[20202] = {
@@ -276,6 +306,7 @@
 		sub_title_type = 2,
 		activity_theme = 18,
 		icon = "171202",
+		order = 0,
 		class_name = ActivityChapterPageView
 	},
 	[20203] = {
@@ -285,6 +316,7 @@
 		sub_title_type = 0,
 		activity_theme = 18,
 		icon = "182171",
+		order = 0,
 		class_name = XH3rdWaterMainView
 	},
 	[20204] = {
@@ -294,6 +326,7 @@
 		sub_title_type = 0,
 		activity_theme = 18,
 		icon = "181941",
+		order = 0,
 		class_name = ActivityPt2EnterView
 	},
 	[20205] = {
@@ -303,6 +336,7 @@
 		sub_title_type = 0,
 		activity_theme = 18,
 		icon = "182311",
+		order = 0,
 		class_name = SevenDaySkinPage
 	},
 	[20206] = {
@@ -312,6 +346,7 @@
 		sub_title_type = 0,
 		activity_theme = 18,
 		icon = "181031",
+		order = 0,
 		class_name = XuHeng3rdDemonHomeView
 	},
 	[20207] = {
@@ -321,6 +356,7 @@
 		sub_title_type = 0,
 		activity_theme = 18,
 		icon = "181611",
+		order = 0,
 		class_name = ActivityToggleSpecialMainView
 	},
 	[20210] = {
@@ -330,6 +366,7 @@
 		sub_title_type = 0,
 		activity_theme = 18,
 		icon = "182191",
+		order = 0,
 		class_name = StrongholdHomeView
 	},
 	[20211] = {
@@ -339,6 +376,7 @@
 		sub_title_type = 0,
 		activity_theme = 18,
 		icon = "182161",
+		order = 0,
 		class_name = XH3rdFlipCardHomeView
 	},
 	[20212] = {
@@ -348,6 +386,7 @@
 		sub_title_type = 0,
 		activity_theme = 18,
 		icon = "182151",
+		order = 0,
 		class_name = SailEnterView
 	},
 	[20213] = {
@@ -357,6 +396,7 @@
 		sub_title_type = 0,
 		activity_theme = 18,
 		icon = "182131",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	[20214] = {
@@ -366,6 +406,7 @@
 		sub_title_type = 0,
 		activity_theme = 18,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[20215] = {
@@ -375,6 +416,7 @@
 		sub_title_type = 0,
 		activity_theme = 18,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[20216] = {
@@ -384,6 +426,7 @@
 		sub_title_type = 0,
 		activity_theme = 18,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[20217] = {
@@ -393,6 +436,7 @@
 		sub_title_type = 0,
 		activity_theme = 18,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[20218] = {
@@ -402,6 +446,7 @@
 		sub_title_type = 0,
 		activity_theme = 18,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[20219] = {
@@ -411,6 +456,7 @@
 		sub_title_type = 0,
 		activity_theme = 18,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[20401] = {
@@ -420,6 +466,7 @@
 		sub_title_type = 1,
 		activity_theme = 19,
 		icon = "191201",
+		order = 0,
 		class_name = ActivityChapterPageView
 	},
 	[20402] = {
@@ -429,6 +476,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "191941",
+		order = 0,
 		class_name = ActivityPt2EnterView
 	},
 	[20403] = {
@@ -438,6 +486,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "192291",
+		order = 0,
 		class_name = GuildActivitySpEnterView
 	},
 	[20404] = {
@@ -447,6 +496,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "192273",
+		order = 0,
 		class_name = MoonCakeEnterView
 	},
 	[20405] = {
@@ -456,6 +506,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "191942",
+		order = 0,
 		class_name = ActivityPt2EnterView
 	},
 	[20406] = {
@@ -465,6 +516,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "191841",
+		order = 0,
 		class_name = AffixSelectHomeView
 	},
 	[20407] = {
@@ -474,6 +526,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "191131",
+		order = 0,
 		class_name = SlayerMainView_2_4
 	},
 	[20408] = {
@@ -483,6 +536,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "192131",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	[20409] = {
@@ -492,6 +546,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[20410] = {
@@ -501,6 +556,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[20411] = {
@@ -510,6 +566,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[20412] = {
@@ -519,6 +576,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[20413] = {
@@ -528,6 +586,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[20414] = {
@@ -537,6 +596,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[20415] = {
@@ -546,6 +606,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "172141",
+		order = 0,
 		class_name = TangramPuzzleTaskView
 	},
 	[20416] = {
@@ -555,6 +616,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[20417] = {
@@ -564,6 +626,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[20418] = {
@@ -573,6 +636,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[20419] = {
@@ -582,6 +646,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[20420] = {
@@ -591,6 +656,7 @@
 		sub_title_type = 0,
 		activity_theme = 19,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[20601] = {
@@ -600,6 +666,7 @@
 		sub_title_type = 1,
 		activity_theme = 20,
 		icon = "141201",
+		order = 0,
 		class_name = ActivityChapterPageView
 	},
 	[20602] = {
@@ -609,6 +676,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "202401",
+		order = 0,
 		class_name = KagutsuchiMainView
 	},
 	[20603] = {
@@ -618,6 +686,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "202461",
+		order = 0,
 		class_name = ActivityNewWarChessMainView
 	},
 	[20604] = {
@@ -627,6 +696,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "202361",
+		order = 0,
 		class_name = ActivityDestroyBoxGamePageView
 	},
 	[20605] = {
@@ -636,6 +706,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "201521",
+		order = 0,
 		class_name = RoguelikeMainView_2_6
 	},
 	[20606] = {
@@ -645,6 +716,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "202341",
+		order = 0,
 		class_name = SnowballGameMainView
 	},
 	[20607] = {
@@ -654,6 +726,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "202421",
+		order = 0,
 		class_name = ActivityInviteEnterView
 	},
 	[20608] = {
@@ -663,6 +736,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "171051",
+		order = 0,
 		class_name = RaceTrialMainView_2_1
 	},
 	[20609] = {
@@ -672,6 +746,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "202431",
+		order = 0,
 		class_name = ActivityPtScrollEnterView
 	},
 	[20610] = {
@@ -681,6 +756,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "201941",
+		order = 0,
 		class_name = ActivityPtScrollEnterView
 	},
 	[20623] = {
@@ -690,6 +766,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "172141",
+		order = 0,
 		class_name = TangramPuzzleTaskView
 	},
 	[20624] = {
@@ -699,6 +776,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[20625] = {
@@ -708,6 +786,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[20626] = {
@@ -717,6 +796,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[20612] = {
@@ -726,6 +806,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "202131",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	[20613] = {
@@ -735,6 +816,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "192131",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	[20614] = {
@@ -744,6 +826,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[20615] = {
@@ -753,6 +836,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[20616] = {
@@ -762,6 +846,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "202451",
+		order = 0,
 		class_name = HeroClueEnterView
 	},
 	[20617] = {
@@ -771,6 +856,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[20618] = {
@@ -780,6 +866,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[20619] = {
@@ -789,6 +876,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[20620] = {
@@ -798,6 +886,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[20621] = {
@@ -807,6 +896,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[20622] = {
@@ -816,6 +906,7 @@
 		sub_title_type = 0,
 		activity_theme = 20,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[20801] = {
@@ -825,6 +916,7 @@
 		sub_title_type = 2,
 		activity_theme = 21,
 		icon = "171202",
+		order = 0,
 		class_name = ActivityChapterPageView
 	},
 	[20802] = {
@@ -834,6 +926,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "211941",
+		order = 0,
 		class_name = ActivityPtScrollEnterView
 	},
 	[20803] = {
@@ -843,6 +936,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "211942",
+		order = 0,
 		class_name = ActivityPtScrollEnterView
 	},
 	[20804] = {
@@ -852,6 +946,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "212131",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	[20805] = {
@@ -861,6 +956,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "212132",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	[20806] = {
@@ -870,6 +966,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "212491",
+		order = 0,
 		class_name = SevenDaySkinPage_2_8
 	},
 	[20807] = {
@@ -879,6 +976,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "192291",
+		order = 0,
 		class_name = GuildActivitySpEnterView
 	},
 	[20808] = {
@@ -888,6 +986,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "212551",
+		order = 0,
 		class_name = ActivityAttributeArenaEnterView
 	},
 	[20809] = {
@@ -897,6 +996,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "211571",
+		order = 0,
 		class_name = SurviveSolo2EnterView
 	},
 	[20810] = {
@@ -906,6 +1006,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[20811] = {
@@ -915,6 +1016,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[20812] = {
@@ -924,6 +1026,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[20813] = {
@@ -933,6 +1036,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[20814] = {
@@ -942,6 +1046,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "212511",
+		order = 0,
 		class_name = ActivityValentineGameV2MainView
 	},
 	[20815] = {
@@ -951,6 +1056,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "212531",
+		order = 0,
 		class_name = SpringPreheatMainView
 	},
 	[20816] = {
@@ -960,6 +1066,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "222141",
+		order = 0,
 		class_name = IndiaPuzzleNewTaskView
 	},
 	[20817] = {
@@ -969,6 +1076,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[20818] = {
@@ -978,6 +1086,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[20825] = {
@@ -987,6 +1096,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[20826] = {
@@ -996,6 +1106,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[20827] = {
@@ -1005,6 +1116,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[20828] = {
@@ -1014,6 +1126,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[20821] = {
@@ -1023,6 +1136,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[20822] = {
@@ -1032,6 +1146,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[20823] = {
@@ -1041,6 +1156,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[20824] = {
@@ -1050,6 +1166,7 @@
 		sub_title_type = 0,
 		activity_theme = 21,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[21001] = {
@@ -1059,6 +1176,7 @@
 		sub_title_type = 1,
 		activity_theme = 23,
 		icon = "141201",
+		order = 0,
 		class_name = ActivityChapterPageView
 	},
 	[21002] = {
@@ -1068,6 +1186,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "232131",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	[21003] = {
@@ -1077,6 +1196,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "232431",
+		order = 0,
 		class_name = ActivityPtScrollEnterView
 	},
 	[21004] = {
@@ -1086,6 +1206,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "232132",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	[21005] = {
@@ -1095,6 +1216,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "232432",
+		order = 0,
 		class_name = ActivityPtScrollEnterView
 	},
 	[21006] = {
@@ -1104,6 +1226,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "141911",
+		order = 0,
 		class_name = V210MusicHomeView
 	},
 	[21007] = {
@@ -1113,6 +1236,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "202461",
+		order = 0,
 		class_name = ActivityNewWarChessMainView
 	},
 	[21008] = {
@@ -1122,6 +1246,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "231281",
+		order = 0,
 		class_name = LimitedCalculationPageView
 	},
 	[21009] = {
@@ -1131,6 +1256,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "171051",
+		order = 0,
 		class_name = RaceTrialMainView_2_1
 	},
 	[21010] = {
@@ -1140,6 +1266,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "232751",
+		order = 0,
 		class_name = SevenDayPage_2_10
 	},
 	[21011] = {
@@ -1149,6 +1276,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "232761",
+		order = 0,
 		class_name = ActivityPushBoxEnterView
 	},
 	[21028] = {
@@ -1158,6 +1286,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "182151",
+		order = 0,
 		class_name = SailEnterView
 	},
 	[21029] = {
@@ -1167,6 +1296,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "182171",
+		order = 0,
 		class_name = XH3rdWaterMainView
 	},
 	[21031] = {
@@ -1176,6 +1306,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "182311",
+		order = 0,
 		class_name = SevenDaySkinPage
 	},
 	[21038] = {
@@ -1185,6 +1316,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "232312",
+		order = 0,
 		class_name = SevenDaySkinPage_3_4
 	},
 	[21012] = {
@@ -1194,6 +1326,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[21013] = {
@@ -1203,6 +1336,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[21014] = {
@@ -1212,6 +1346,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[21036] = {
@@ -1221,6 +1356,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[21033] = {
@@ -1230,6 +1366,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "222141",
+		order = 0,
 		class_name = IndiaPuzzleNewTaskView
 	},
 	[21032] = {
@@ -1239,6 +1376,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "202451",
+		order = 0,
 		class_name = HeroClueEnterView
 	},
 	[21035] = {
@@ -1248,6 +1386,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "172141",
+		order = 0,
 		class_name = PuzzleNewTaskView
 	},
 	[21015] = {
@@ -1257,6 +1396,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[21016] = {
@@ -1266,6 +1406,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[21030] = {
@@ -1275,6 +1416,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[21017] = {
@@ -1284,6 +1426,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[21018] = {
@@ -1293,6 +1436,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[21027] = {
@@ -1302,6 +1446,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[21019] = {
@@ -1311,6 +1456,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[21020] = {
@@ -1320,6 +1466,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[21021] = {
@@ -1329,6 +1476,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[21022] = {
@@ -1338,6 +1486,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[21023] = {
@@ -1347,6 +1496,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[21024] = {
@@ -1356,6 +1506,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[21025] = {
@@ -1365,6 +1516,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[21026] = {
@@ -1374,6 +1526,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[21034] = {
@@ -1383,6 +1536,7 @@
 		sub_title_type = 0,
 		activity_theme = 23,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[30001] = {
@@ -1392,6 +1546,7 @@
 		sub_title_type = 1,
 		activity_theme = 24,
 		icon = "141201",
+		order = 0,
 		class_name = ActivityChapterPageView
 	},
 	[30002] = {
@@ -1401,6 +1556,7 @@
 		sub_title_type = 2,
 		activity_theme = 24,
 		icon = "171202",
+		order = 0,
 		class_name = ActivityChapterPageView
 	},
 	[30003] = {
@@ -1410,6 +1566,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "242131",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	[30004] = {
@@ -1419,6 +1576,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "242132",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	[30005] = {
@@ -1428,6 +1586,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "242431",
+		order = 0,
 		class_name = ActivityPtScrollEnterView
 	},
 	[30006] = {
@@ -1437,6 +1596,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "242432",
+		order = 0,
 		class_name = ActivityPtScrollEnterView
 	},
 	[30008] = {
@@ -1446,6 +1606,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "242811",
+		order = 0,
 		class_name = ActivityHeroLetterEnterView
 	},
 	[30009] = {
@@ -1455,6 +1616,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "242891",
+		order = 0,
 		class_name = ActivityReforgeMainView
 	},
 	[30010] = {
@@ -1464,6 +1626,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "242921",
+		order = 0,
 		class_name = ActivityAccumulativeView
 	},
 	[30011] = {
@@ -1473,6 +1636,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "242791",
+		order = 0,
 		class_name = ZumaHomeView
 	},
 	[30013] = {
@@ -1482,6 +1646,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "242071",
+		order = 0,
 		class_name = ActivityDressUpMainView
 	},
 	[30014] = {
@@ -1491,6 +1656,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "242911",
+		order = 0,
 		class_name = ActivityHeroEnhanceMainView
 	},
 	[30015] = {
@@ -1500,6 +1666,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "212551",
+		order = 0,
 		class_name = ActivityAttributeArenaEnterView
 	},
 	[30016] = {
@@ -1509,6 +1676,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[30017] = {
@@ -1518,6 +1686,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[30018] = {
@@ -1527,6 +1696,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[30019] = {
@@ -1536,6 +1706,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[30020] = {
@@ -1545,6 +1716,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[30021] = {
@@ -1554,6 +1726,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[30022] = {
@@ -1563,6 +1736,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[30023] = {
@@ -1572,6 +1746,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[30024] = {
@@ -1581,6 +1756,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[30025] = {
@@ -1590,6 +1766,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[30026] = {
@@ -1599,6 +1776,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[30027] = {
@@ -1608,6 +1786,7 @@
 		sub_title_type = 0,
 		activity_theme = 24,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[32001] = {
@@ -1617,6 +1796,7 @@
 		sub_title_type = 2,
 		activity_theme = 27,
 		icon = "141201",
+		order = 0,
 		class_name = ActivityChapterPageView
 	},
 	[32002] = {
@@ -1626,6 +1806,7 @@
 		sub_title_type = 0,
 		activity_theme = 27,
 		icon = "272131",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	[32003] = {
@@ -1635,6 +1816,7 @@
 		sub_title_type = 0,
 		activity_theme = 27,
 		icon = "242431",
+		order = 0,
 		class_name = ActivityPtScrollEnterView
 	},
 	[32004] = {
@@ -1644,6 +1826,7 @@
 		sub_title_type = 0,
 		activity_theme = 27,
 		icon = "272111",
+		order = 0,
 		class_name = DormLinkGameDailyView
 	},
 	[32010] = {
@@ -1653,6 +1836,7 @@
 		sub_title_type = 0,
 		activity_theme = 27,
 		icon = "242161",
+		order = 0,
 		class_name = XH3rdFlipCardHomeView
 	},
 	[32005] = {
@@ -1662,6 +1846,7 @@
 		sub_title_type = 0,
 		activity_theme = 27,
 		icon = "191841",
+		order = 0,
 		class_name = AffixSelectHomeView
 	},
 	[32006] = {
@@ -1671,6 +1856,7 @@
 		sub_title_type = 0,
 		activity_theme = 27,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[32007] = {
@@ -1680,6 +1866,7 @@
 		sub_title_type = 0,
 		activity_theme = 27,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[32008] = {
@@ -1689,6 +1876,7 @@
 		sub_title_type = 0,
 		activity_theme = 27,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[32009] = {
@@ -1698,6 +1886,7 @@
 		sub_title_type = 0,
 		activity_theme = 27,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[32011] = {
@@ -1707,6 +1896,7 @@
 		sub_title_type = 0,
 		activity_theme = 27,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[30301] = {
@@ -1716,6 +1906,7 @@
 		sub_title_type = 2,
 		activity_theme = 28,
 		icon = "141201",
+		order = 0,
 		class_name = ActivityChapterPageView
 	},
 	[33001] = {
@@ -1725,6 +1916,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "280001",
+		order = 0,
 		class_name = ActivitySummerChessBoardPageView
 	},
 	[33002] = {
@@ -1734,6 +1926,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "282131",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	[33003] = {
@@ -1743,6 +1936,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "282132",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	[33004] = {
@@ -1752,6 +1946,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "242431",
+		order = 0,
 		class_name = ActivityPtScrollEnterView
 	},
 	[33005] = {
@@ -1761,6 +1956,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "242432",
+		order = 0,
 		class_name = ActivityPtScrollEnterView
 	},
 	[33006] = {
@@ -1770,6 +1966,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "212511",
+		order = 0,
 		class_name = ActivityValentineGameV2MainView
 	},
 	[33007] = {
@@ -1779,6 +1976,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "242432",
+		order = 0,
 		class_name = ActivityPtScrollEnterView
 	},
 	[33008] = {
@@ -1788,6 +1986,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "182171",
+		order = 0,
 		class_name = SwimsuitBattleMenuView
 	},
 	[33009] = {
@@ -1797,6 +1996,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "171051",
+		order = 0,
 		class_name = RaceTrialMainView_3_8
 	},
 	[33010] = {
@@ -1806,6 +2006,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "282491",
+		order = 0,
 		class_name = SevenDaySkinPage_3_4
 	},
 	[33011] = {
@@ -1815,6 +2016,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "242911",
+		order = 0,
 		class_name = ActivityHeroEnhanceMainView
 	},
 	[33012] = {
@@ -1824,6 +2026,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "283181",
+		order = 0,
 		class_name = SimBusinessEnterView
 	},
 	[33013] = {
@@ -1833,6 +2036,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "281521",
+		order = 0,
 		class_name = RoguelikeMainView_3_5
 	},
 	[33014] = {
@@ -1842,6 +2046,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "282981",
+		order = 0,
 		class_name = ActivitySummerSwimsuitPreheatEnterView
 	},
 	[33015] = {
@@ -1851,6 +2056,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "191841",
+		order = 0,
 		class_name = AffixSelectHomeView
 	},
 	[33016] = {
@@ -1860,6 +2066,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[33017] = {
@@ -1869,6 +2076,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[33018] = {
@@ -1878,6 +2086,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[33019] = {
@@ -1887,6 +2096,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[33020] = {
@@ -1896,6 +2106,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[33021] = {
@@ -1905,6 +2116,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[33022] = {
@@ -1914,6 +2126,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[33023] = {
@@ -1923,6 +2136,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[33024] = {
@@ -1932,6 +2146,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "242911",
+		order = 0,
 		class_name = ActivityHeroEnhanceMainView
 	},
 	[33025] = {
@@ -1941,6 +2156,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "281521",
+		order = 0,
 		class_name = RoguelikeMainView_3_5
 	},
 	[33026] = {
@@ -1950,6 +2166,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "172141",
+		order = 0,
 		class_name = TangramPuzzleTaskView
 	},
 	[33027] = {
@@ -1959,6 +2176,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[33028] = {
@@ -1968,6 +2186,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[33029] = {
@@ -1977,6 +2196,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView
 	},
 	[33030] = {
@@ -1986,6 +2206,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[33031] = {
@@ -1995,6 +2216,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_2_0
 	},
 	[33032] = {
@@ -2004,6 +2226,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[33033] = {
@@ -2013,6 +2236,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[33034] = {
@@ -2022,6 +2246,7 @@
 		sub_title_type = 0,
 		activity_theme = 28,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[36001] = {
@@ -2031,6 +2256,7 @@
 		sub_title_type = 1,
 		activity_theme = 29,
 		icon = "141201",
+		order = 0,
 		class_name = ActivityChapterPageView
 	},
 	[36002] = {
@@ -2040,6 +2266,7 @@
 		sub_title_type = 3,
 		activity_theme = 29,
 		icon = "293401",
+		order = 0,
 		class_name = SevenDaySkinPage_3_6
 	},
 	[36003] = {
@@ -2049,6 +2276,7 @@
 		sub_title_type = 3,
 		activity_theme = 29,
 		icon = "293381",
+		order = 0,
 		class_name = ActivityUseDunDunView
 	},
 	[36004] = {
@@ -2058,6 +2286,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "292131",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	[36005] = {
@@ -2067,6 +2296,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "292132",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	[36006] = {
@@ -2076,6 +2306,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "292133",
+		order = 0,
 		class_name = ActivityPromotionalView
 	},
 	[36007] = {
@@ -2085,6 +2316,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "242432",
+		order = 0,
 		class_name = ActivityPtScrollEnterView
 	},
 	[36008] = {
@@ -2094,6 +2326,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "242432",
+		order = 0,
 		class_name = ActivityPtScrollEnterView
 	},
 	[36009] = {
@@ -2103,6 +2336,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "293311",
+		order = 0,
 		class_name = ActivitySPKaliGamePageView
 	},
 	[36010] = {
@@ -2112,6 +2346,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "291131",
+		order = 0,
 		class_name = SlayerMainView_3_6
 	},
 	[36011] = {
@@ -2121,6 +2356,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "293231",
+		order = 0,
 		class_name = TetrisGameHomeView
 	},
 	[36012] = {
@@ -2130,6 +2366,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "292451",
+		order = 0,
 		class_name = HeroClueEnterView_3_6
 	},
 	[36013] = {
@@ -2139,6 +2376,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "293425",
+		order = 0,
 		class_name = AreaBattleEnterView
 	},
 	[36014] = {
@@ -2148,6 +2386,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "293261",
+		order = 0,
 		class_name = DodgeBarrageEnterView
 	},
 	[36015] = {
@@ -2157,6 +2396,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "2932801",
+		order = 0,
 		class_name = IdolCompetitionMenuView
 	},
 	[36016] = {
@@ -2166,6 +2406,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[36017] = {
@@ -2175,6 +2416,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[36018] = {
@@ -2184,6 +2426,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[36019] = {
@@ -2193,6 +2436,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "110",
+		order = 0,
 		class_name = SoloHeartDemonEnterView
 	},
 	[36020] = {
@@ -2202,6 +2446,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView_Resident
 	},
 	[36021] = {
@@ -2211,6 +2456,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "141891",
+		order = 0,
 		class_name = ActivityCultivateHeroMainView_Resident
 	},
 	[36022] = {
@@ -2220,6 +2466,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[36023] = {
@@ -2229,6 +2476,7 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "141311",
+		order = 0,
 		class_name = SkinTrialMainView_2_0
 	},
 	[36024] = {
@@ -2238,9 +2486,231 @@
 		sub_title_type = 0,
 		activity_theme = 29,
 		icon = "141071",
+		order = 0,
 		class_name = HeroTrialView_Resident
 	},
+	[359001] = {
+		activity_id = 3612003,
+		name = "6be2c50b1e2a2f45dad7984eeab4c310",
+		id = 359001,
+		sub_title_type = 2,
+		activity_theme = 36,
+		icon = "141201",
+		order = 0,
+		class_name = ActivityChapterPageView
+	},
+	[359002] = {
+		activity_id = 3610206,
+		name = "f5a8887df05c5907dc2504c2e2eac6c9",
+		id = 359002,
+		sub_title_type = 2,
+		activity_theme = 36,
+		icon = "171202",
+		order = 0,
+		class_name = ActivityChapterPageView
+	},
+	[359003] = {
+		activity_id = 3618407,
+		name = "eee3549d397f8ccc58a9e4ba79556216",
+		id = 359003,
+		sub_title_type = 0,
+		activity_theme = 36,
+		icon = "191841",
+		order = 0,
+		class_name = AffixSelectHomeView
+	},
+	[359004] = {
+		activity_id = 3627617,
+		name = "d0752c55206a9e17e8bbff870da48d16",
+		id = 359004,
+		sub_title_type = 0,
+		activity_theme = 36,
+		icon = "232761",
+		order = 0,
+		class_name = ActivityPushBoxEnterView
+	},
+	[359005] = {
+		activity_id = 3622637,
+		name = "49acf5dc34104cbe249c401916c4dd75",
+		id = 359005,
+		sub_title_type = 0,
+		activity_theme = 36,
+		icon = "172141",
+		order = 0,
+		class_name = TangramPuzzleTaskView
+	},
+	[359006] = {
+		activity_id = 3618926,
+		name = "842c9aba90542bc9c93296e3ce2a9de6",
+		id = 359006,
+		sub_title_type = 0,
+		activity_theme = 36,
+		icon = "141891",
+		order = 0,
+		class_name = ActivityCultivateHeroMainView_Resident
+	},
+	[359007] = {
+		activity_id = 3613101,
+		name = "31f83e80594f5e706c6f2c31e7ef98e9",
+		id = 359007,
+		sub_title_type = 0,
+		activity_theme = 36,
+		icon = "141311",
+		order = 0,
+		class_name = SkinTrialMainView_2_0
+	},
+	[359008] = {
+		activity_id = 3610731,
+		name = "d3becf7ed88c650b545e16a688b0525d",
+		id = 359008,
+		sub_title_type = 0,
+		activity_theme = 36,
+		icon = "141071",
+		order = 0,
+		class_name = HeroTrialView_Resident
+	},
+	[42001] = {
+		activity_id = 340001,
+		name = "557cab81429b5b1e578fa55be4c56119",
+		id = 42001,
+		sub_title_type = 0,
+		activity_theme = 34,
+		icon = "340001",
+		order = 99,
+		class_name = ActivityGodEaterGamePage
+	},
+	[42002] = {
+		activity_id = 342431,
+		name = "f24775cc5cf8907ee797f3c796eaf162",
+		id = 42002,
+		sub_title_type = 0,
+		activity_theme = 34,
+		icon = "242432",
+		order = 93,
+		class_name = ActivityPtScrollEnterView
+	},
+	[42003] = {
+		activity_id = 341021,
+		name = "fc9ffa79f2fa2b757eb747273fe36521",
+		id = 42003,
+		sub_title_type = 2,
+		activity_theme = 34,
+		icon = "341021",
+		order = 100,
+		class_name = ActivityChapterPageView
+	},
+	[42004] = {
+		activity_id = 341891,
+		name = "b26117d562ec68f2610a61624613a3f1",
+		id = 42004,
+		sub_title_type = 0,
+		activity_theme = 34,
+		icon = "141891",
+		order = 89,
+		class_name = ActivityCultivateHeroMainView_Resident
+	},
+	[42005] = {
+		activity_id = 343501,
+		name = "c4409e073180495146459d7a33a4d409",
+		id = 42005,
+		sub_title_type = 0,
+		activity_theme = 34,
+		icon = "110",
+		order = 91,
+		class_name = MultHeartDemonEnterView
+	},
+	[42006] = {
+		activity_id = 341311,
+		name = "9e0e99389d50c062de472413f2001065",
+		id = 42006,
+		sub_title_type = 0,
+		activity_theme = 34,
+		icon = "141311",
+		order = 88,
+		class_name = SkinTrialMainView_2_0
+	},
+	[42007] = {
+		activity_id = 341071,
+		name = "76cd43d7cd9011c6ff805f082e67143e",
+		id = 42007,
+		sub_title_type = 0,
+		activity_theme = 34,
+		icon = "141071",
+		order = 87,
+		class_name = HeroTrialView_Resident
+	},
+	[42008] = {
+		activity_id = 342131,
+		name = "697c0f55ec1bef071d98f66d79a2212b",
+		id = 42008,
+		sub_title_type = 0,
+		activity_theme = 34,
+		icon = "342131",
+		order = 99,
+		class_name = ActivityPromotionalView
+	},
+	[42009] = {
+		activity_id = 342132,
+		name = "4707ca944dded221f8cba272c1ab3f66",
+		id = 42009,
+		sub_title_type = 0,
+		activity_theme = 34,
+		icon = "342132",
+		order = 98,
+		class_name = ActivityPromotionalView
+	},
 	get_id_list_by_activity_id = {
+		[342132] = {
+			42009
+		},
+		[342131] = {
+			42008
+		},
+		[341071] = {
+			42007
+		},
+		[341311] = {
+			42006
+		},
+		[343501] = {
+			42005
+		},
+		[341891] = {
+			42004
+		},
+		[341021] = {
+			42003
+		},
+		[342431] = {
+			42002
+		},
+		[340001] = {
+			42001
+		},
+		[3610731] = {
+			359008
+		},
+		[3613101] = {
+			359007
+		},
+		[3618926] = {
+			359006
+		},
+		[3622637] = {
+			359005
+		},
+		[3627617] = {
+			359004
+		},
+		[3618407] = {
+			359003
+		},
+		[3610206] = {
+			359002
+		},
+		[3612003] = {
+			359001
+		},
 		[291071] = {
 			36024
 		},
@@ -2984,6 +3454,27 @@
 		}
 	},
 	get_id_list_by_activity_theme = {
+		[34] = {
+			42001,
+			42002,
+			42003,
+			42004,
+			42005,
+			42006,
+			42007,
+			42008,
+			42009
+		},
+		[36] = {
+			359001,
+			359002,
+			359003,
+			359004,
+			359005,
+			359006,
+			359007,
+			359008
+		},
 		[29] = {
 			36001,
 			36002,
@@ -3505,6 +3996,23 @@
 		36021,
 		36022,
 		36023,
-		36024
+		36024,
+		359001,
+		359002,
+		359003,
+		359004,
+		359005,
+		359006,
+		359007,
+		359008,
+		42001,
+		42002,
+		42003,
+		42004,
+		42005,
+		42006,
+		42007,
+		42008,
+		42009
 	}
 }

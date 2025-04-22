@@ -2328,6 +2328,35 @@
 		cheap_open_time = {},
 		cheap_close_time = {}
 	},
+	[231] = {
+		operation_stop_id = 0,
+		open_condition = 0,
+		shop_background = "TextureConfig/Shop_activity/Sa_0001",
+		group_name = "a0e79ed5dd6227c0e25c5bf6048d15ef",
+		chain_last_visible = 0,
+		is_limit_buy_discount = 0,
+		show_in_shop = 0,
+		activity_id = 341461,
+		remark = "cc7c58acdb6a9bb74409c76da49c25a6",
+		params = "",
+		is_limit_time_discount = 0,
+		cheap_limit_currency = "",
+		refresh_num_limit = 0,
+		system = "1",
+		display_index = 1,
+		discount = 0,
+		initiative_refresh = 0,
+		id = 231,
+		display_group = 19,
+		shop_label = "",
+		cost_id = {
+			53160,
+			54085,
+			1
+		},
+		cheap_open_time = {},
+		cheap_close_time = {}
+	},
 	[300] = {
 		operation_stop_id = 0,
 		open_condition = 0,
@@ -2449,6 +2478,33 @@
 		cheap_open_time = {},
 		cheap_close_time = {}
 	},
+	[307] = {
+		operation_stop_id = 0,
+		open_condition = 0,
+		shop_background = "TextureConfig/Shop_activity/Sa_0007",
+		group_name = "6144325d65a589b770988ee47d7e63c5",
+		chain_last_visible = 0,
+		is_limit_buy_discount = 0,
+		show_in_shop = 0,
+		activity_id = 340001,
+		remark = "53a2de2eb9ba5cd9bc552e2eba9649e8",
+		params = "",
+		is_limit_time_discount = 0,
+		cheap_limit_currency = "",
+		refresh_num_limit = 0,
+		system = "1",
+		display_index = 1,
+		discount = 0,
+		initiative_refresh = 0,
+		id = 307,
+		display_group = 26,
+		shop_label = "",
+		cost_id = {
+			75
+		},
+		cheap_open_time = {},
+		cheap_close_time = {}
+	},
 	get_id_list_by_system = {
 		[2] = {
 			3,
@@ -2530,10 +2586,12 @@
 			223,
 			224,
 			225,
+			231,
 			300,
 			301,
 			302,
-			303
+			303,
+			307
 		}
 	},
 	all = {
@@ -2614,9 +2672,11 @@
 		223,
 		224,
 		225,
+		231,
 		300,
 		301,
 		302,
-		303
+		303,
+		307
 	}
 }

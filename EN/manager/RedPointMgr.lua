@@ -19,6 +19,10 @@ function var_0_0.Init(arg_2_0)
 		RedPointConst.TASK_WEEK,
 		RedPointConst.EXPLORE_MAIN
 	})
+	arg_2_0:addGroup(RedPointConst.DRAW_HOME, {
+		RedPointConst.DRAW,
+		RedPointConst.DRAW_BONUS
+	})
 	arg_2_0:addGroup(RedPointConst.COMBAT, {
 		RedPointConst.COMBAT_PLOT,
 		RedPointConst.COMBAT_SUB_PLOT,
@@ -1313,6 +1317,10 @@ function var_0_0.Init(arg_2_0)
 	arg_2_0:addGroup(RedPointConst.SOLO_HEART_DEMON, {
 		RedPointConst.SOLO_HEART_DEMON_FIRST_VIEW,
 		RedPointConst.SOLO_HEART_DEMON_REWARD
+	})
+	arg_2_0:addGroup(RedPointConst.MULT_HEART_DEMON, {
+		RedPointConst.MULT_HEART_DEMON_FIRST_VIEW,
+		RedPointConst.MULT_HEART_DEMON_REWARD
 	})
 
 	local var_2_173 = {}

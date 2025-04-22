@@ -381,6 +381,48 @@
 			3070301
 		}
 	},
+	[342131] = {
+		extra_jump_list = "",
+		hero_skin_id = 402001,
+		sy = 342131,
+		prefab_name = "Widget/System/Activity_Resident/Activity_HeroPubliciz/ActivityHeroPublicize1045",
+		hero_trial_id = 334,
+		hero_trial_navigation = {
+			18001,
+			341001,
+			341071
+		},
+		hero_skin_navigation = {
+			18001,
+			341001,
+			341311
+		},
+		hero_draw_navigation = {
+			404,
+			4020301
+		}
+	},
+	[342132] = {
+		extra_jump_list = "",
+		hero_skin_id = 402002,
+		sy = 342132,
+		prefab_name = "Widget/System/Activity_Resident/Activity_HeroPubliciz/ActivityHeroPublicize1046",
+		hero_trial_id = 335,
+		hero_trial_navigation = {
+			18001,
+			341001,
+			341071
+		},
+		hero_skin_navigation = {
+			18001,
+			341001,
+			341312
+		},
+		hero_draw_navigation = {
+			404,
+			4020302
+		}
+	},
 	all = {
 		172131,
 		172132,
@@ -399,6 +441,8 @@
 		282132,
 		292131,
 		292132,
-		292133
+		292133,
+		342131,
+		342132
 	}
 }

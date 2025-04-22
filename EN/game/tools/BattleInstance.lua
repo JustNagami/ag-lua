@@ -738,6 +738,11 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 				activityID = ActivityConst.SUMMER_CHESS_BOARD_ENTRY,
 				subActivityID = var_5_67
 			})
+		elseif var_5_67 == ActivityConst.ACTIVITY_3_5_9_LOCAL_AFFIX_SELECT then
+			OpenPageUntilLoaded("/activityMain_2_8", {
+				activityID = ActivityConst.ACTIVITY_3_5_9_LOCAL_MAIN,
+				subActivityID = var_5_67
+			})
 		else
 			OpenPageUntilLoaded("/affixSelectMain", {
 				activityID = var_5_67
@@ -814,6 +819,12 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 		})
 	elseif BattleConst.STAGE_TYPE_NEW.SOLO_HEART_DEMON == var_5_0 then
 		OpenPageUntilLoaded("/soloHeartDemonMain")
+	elseif BattleConst.STAGE_TYPE_NEW.MULT_HEART_DEMON == var_5_0 then
+		OpenPageUntilLoaded("/MultHeartDemonCombine", {
+			isOver = true,
+			activityID = arg_5_0:GetActivityID(),
+			difficult = arg_5_0:GetDifficult()
+		})
 	elseif BattleConst.STAGE_TYPE_NEW.DESTROY_BOX_GAME == var_5_0 then
 		local var_5_74 = arg_5_0:GetDest()
 		local var_5_75 = DestroyBoxGameCfg[var_5_74].main_activity_id
@@ -824,9 +835,15 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_JJT_MAP_GAME == var_5_0 then
 		OpenPageUntilLoaded("/kagutsuchiWork", {})
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_PT_SCROLL == var_5_0 then
-		OpenPageUntilLoaded("/activityPtScroll", {
-			mainActivityID = arg_5_0:GetActivityID()
-		})
+		if arg_5_0:GetActivityID() == ActivityConst.ACTIVITY_PTSCROLL_4_2 then
+			OpenPageUntilLoaded("/activityPtScroll_4_2", {
+				mainActivityID = arg_5_0:GetActivityID()
+			})
+		else
+			OpenPageUntilLoaded("/activityPtScroll", {
+				mainActivityID = arg_5_0:GetActivityID()
+			})
+		end
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_ATTRIBUTE_ARENA == var_5_0 then
 		OpenPageUntilLoaded("/activityAttributeArena", {
 			activityID = arg_5_0:GetActivityID()
@@ -932,6 +949,14 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 			mainActivityID = var_5_83,
 			stageID = arg_5_0:GetStageId()
 		})
+	elseif BattleConst.STAGE_TYPE_NEW.GOD_EATER_BATTLE then
+		local var_5_84 = arg_5_0:GetViewType()
+
+		if var_5_84 == "dailyMonster" then
+			OpenPageUntilLoaded("/eatGodBattleEnterView")
+		elseif var_5_84 == "weekBoss" then
+			OpenPageUntilLoaded("/weekBossMainView")
+		end
 	end
 end
 

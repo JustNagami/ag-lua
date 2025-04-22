@@ -1,10 +1,10 @@
 ﻿local var_0_0 = {}
 
-function var_0_0.QueryCommonRank(arg_1_0, arg_1_1, arg_1_2)
+function var_0_0.QueryCommonRank(arg_1_0, arg_1_1, arg_1_2, arg_1_3)
 	arg_1_1 = arg_1_1 or 0
 
 	local var_1_0 = 1
-	local var_1_1 = 100
+	local var_1_1 = arg_1_3 or 100
 	local var_1_2 = RankData:GetRankVersion(arg_1_0, arg_1_1)
 	local var_1_3 = {
 		rank_id = arg_1_0,

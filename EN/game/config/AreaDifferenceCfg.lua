@@ -106,7 +106,7 @@
 			"tc"
 		},
 		language_in_list = {
-			"繁体中文"
+			"繁體中文"
 		},
 		voice_list = {
 			2,

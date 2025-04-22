@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("ActivityPushBoxRewardPreView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/VersionUI/JapanRegionUI_2_10/JapanRegionUI_2_10AnniversaryUI/JapanRegionUI_2_10AnniversaryRewardPopup"
+	return "Widget/Version/V3_5_9_CustomizeUI/V3_5_9_AnniversaryUI/V3_5_9_AnniversaryRewardPopup"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -16,21 +16,29 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
-	arg_4_0.scrollHelper_ = LuaList.New(handler(arg_4_0, arg_4_0.IndexItem), arg_4_0.listGo_, CommonItem)
+	arg_4_0.scrollHelper_ = LuaList.New(handler(arg_4_0, arg_4_0.IndexItem), arg_4_0.listGo_, CommonItemView)
+	arg_4_0.itemDataList_ = {}
 end
 
 function var_0_0.IndexItem(arg_5_0, arg_5_1, arg_5_2)
 	local var_5_0 = arg_5_0.list_[arg_5_1]
 	local var_5_1 = ActivityCelebrationCakeCfg[var_5_0].award_list[1]
 
-	arg_5_2:RefreshData({
-		id = var_5_1[1],
-		number = var_5_1[2]
-	})
-	arg_5_2:RegistCallBack(function()
-		ShowPopItem(POP_ITEM, var_5_1)
-	end)
-	ControllerUtil.GetController(arg_5_2.transform_, "completed"):SetSelectedState(arg_5_1 > arg_5_0.curIndex_ and "false" or "true")
+	if not arg_5_0.itemDataList_[arg_5_1] then
+		arg_5_0.itemDataList_[arg_5_1] = clone(ItemTemplateData)
+		arg_5_0.itemDataList_[arg_5_1].clickFun = function(arg_6_0)
+			ShowPopItem(POP_ITEM, {
+				arg_6_0.id,
+				arg_6_0.number
+			})
+		end
+	end
+
+	arg_5_0.itemDataList_[arg_5_1].id = var_5_1[1]
+	arg_5_0.itemDataList_[arg_5_1].number = var_5_1[2]
+	arg_5_0.itemDataList_[arg_5_1].completedFlag = arg_5_1 <= arg_5_0.curIndex_
+
+	arg_5_2:SetData(arg_5_0.itemDataList_[arg_5_1])
 end
 
 function var_0_0.AddUIListeners(arg_7_0)

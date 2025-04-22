@@ -41,14 +41,18 @@ function var_0_0.OnEnter(arg_4_0)
 
 	arg_4_0.activeItemList_ = {}
 
-	for iter_4_2, iter_4_3 in ipairs(ActivityToggleCfg.get_id_list_by_activity_theme[arg_4_0:GetActivityTheme()] or {}) do
-		local var_4_0 = ActivityToggleCfg[iter_4_3]
+	local var_4_0 = ActivityToggleCfg.get_id_list_by_activity_theme[arg_4_0:GetActivityTheme()] or {}
+	local var_4_1 = arg_4_0:GetSortToggle(var_4_0)
 
-		arg_4_0.toggleItemList_[var_4_0.activity_id] = arg_4_0.toggleItemList_[var_4_0.activity_id] or ActivityMainToggleItem.New(arg_4_0.itemGo_, arg_4_0.itemParentGo_, iter_4_3, var_4_0.activity_id)
+	for iter_4_2, iter_4_3 in ipairs(var_4_1) do
+		local var_4_2 = ActivityData:GetActivityData(iter_4_3.activity_id)
+		local var_4_3 = var_4_2.template == ActivityTemplateConst.ACTIVITY_ADVANCE_OPEN and var_4_2.subActivityIdList[1] or iter_4_3.activity_id
 
-		arg_4_0.toggleItemList_[var_4_0.activity_id]:Show(true)
+		arg_4_0.toggleItemList_[iter_4_3.activity_id] = arg_4_0.toggleItemList_[iter_4_3.activity_id] or ActivityMainToggleItem.New(arg_4_0.itemGo_, arg_4_0.itemParentGo_, iter_4_3.id, iter_4_3.activity_id, var_4_3)
 
-		arg_4_0.activeItemList_[var_4_0.activity_id] = true
+		arg_4_0.toggleItemList_[iter_4_3.activity_id]:Show(true)
+
+		arg_4_0.activeItemList_[iter_4_3.activity_id] = true
 	end
 
 	for iter_4_4, iter_4_5 in pairs(arg_4_0.activeItemList_) do
@@ -57,24 +61,24 @@ function var_0_0.OnEnter(arg_4_0)
 
 	arg_4_0.activePanelList_ = {}
 
-	local var_4_1
+	local var_4_4
 
 	if arg_4_0.params_.isBack then
-		var_4_1 = ActivityVersionData:GetSelectActivityID(arg_4_0:GetActivityID())
+		var_4_4 = ActivityVersionData:GetSelectActivityID(arg_4_0:GetActivityID())
 	elseif arg_4_0.params_.subActivityID then
-		var_4_1 = arg_4_0.params_.subActivityID
+		var_4_4 = arg_4_0.params_.subActivityID
 	else
-		var_4_1 = arg_4_0:GetOpenActivityID()
+		var_4_4 = arg_4_0:GetOpenActivityID()
 	end
 
-	if var_4_1 == nil then
+	if var_4_4 == nil then
 		arg_4_0:Go("/home")
 
 		return
 	end
 
-	arg_4_0:ScrollToggle(var_4_1)
-	arg_4_0:ToggleOnClick(var_4_1, true)
+	arg_4_0:ScrollToggle(var_4_4)
+	arg_4_0:ToggleOnClick(var_4_4, true)
 	arg_4_0:UpdateUIArrow()
 end
 
@@ -258,22 +262,24 @@ end
 function var_0_0.GetOpenActivityID(arg_19_0)
 	local var_19_0 = manager.time:GetServerTime()
 	local var_19_1 = ActivityToggleCfg.get_id_list_by_activity_theme[arg_19_0:GetActivityTheme()] or {}
+	local var_19_2 = arg_19_0:GetSortToggle(var_19_1)
 
-	for iter_19_0, iter_19_1 in ipairs(var_19_1) do
-		local var_19_2 = ActivityToggleCfg[iter_19_1].activity_id
-		local var_19_3 = ActivityData:GetActivityData(var_19_2)
-		local var_19_4 = var_19_3.startTime
-		local var_19_5 = var_19_3.stopTime
+	for iter_19_0, iter_19_1 in ipairs(var_19_2) do
+		local var_19_3 = iter_19_1.id
+		local var_19_4 = ActivityToggleCfg[var_19_3].activity_id
+		local var_19_5 = ActivityData:GetActivityData(var_19_4)
+		local var_19_6 = var_19_5.startTime
+		local var_19_7 = var_19_5.stopTime
 
-		if ActivityShopCfg[var_19_2] then
-			local var_19_6 = ActivityShopCfg[var_19_2].shop_id
-			local var_19_7 = ShopListCfg[var_19_6].activity_id
+		if ActivityShopCfg[var_19_4] then
+			local var_19_8 = ActivityShopCfg[var_19_4].shop_id
+			local var_19_9 = ShopListCfg[var_19_8].activity_id
 
-			var_19_5 = ActivityData:GetActivityData(var_19_7).stopTime
+			var_19_7 = ActivityData:GetActivityData(var_19_9).stopTime
 		end
 
-		if var_19_4 <= var_19_0 and var_19_0 < var_19_5 then
-			return var_19_2
+		if var_19_6 <= var_19_0 and var_19_0 < var_19_7 then
+			return var_19_4
 		end
 	end
 end
@@ -281,25 +287,26 @@ end
 function var_0_0.GetActivityIndex(arg_20_0, arg_20_1)
 	local var_20_0 = manager.time:GetServerTime()
 	local var_20_1 = ActivityToggleCfg.get_id_list_by_activity_theme[arg_20_0:GetActivityTheme()] or {}
-	local var_20_2 = {}
+	local var_20_2 = arg_20_0:GetSortToggle(var_20_1)
+	local var_20_3 = {}
 
-	for iter_20_0, iter_20_1 in ipairs(var_20_1) do
-		local var_20_3 = ActivityToggleCfg[iter_20_1].activity_id
-		local var_20_4 = ActivityData:GetActivityData(var_20_3)
+	for iter_20_0, iter_20_1 in ipairs(var_20_2) do
+		local var_20_4 = iter_20_1.activity_id
+		local var_20_5 = ActivityData:GetActivityData(var_20_4)
 
-		if ActivityShopCfg[var_20_3] then
-			local var_20_5 = ActivityShopCfg[var_20_3].shop_id
-			local var_20_6 = ShopListCfg[var_20_5].activity_id
+		if ActivityShopCfg[var_20_4] then
+			local var_20_6 = ActivityShopCfg[var_20_4].shop_id
+			local var_20_7 = ShopListCfg[var_20_6].activity_id
 
-			if ActivityData:GetActivityData(var_20_6):IsActivitying() then
-				table.insert(var_20_2, var_20_3)
+			if ActivityData:GetActivityData(var_20_7):IsActivitying() then
+				table.insert(var_20_3, var_20_4)
 			end
-		elseif var_20_0 >= var_20_4.startTime and var_20_0 < var_20_4.stopTime then
-			table.insert(var_20_2, var_20_3)
+		elseif var_20_0 >= var_20_5.startTime and var_20_0 < var_20_5.stopTime then
+			table.insert(var_20_3, var_20_4)
 		end
 	end
 
-	return table.keyof(var_20_2, arg_20_1), #var_20_2
+	return table.keyof(var_20_3, arg_20_1), #var_20_3
 end
 
 function var_0_0.DestroyCachePanel(arg_21_0)
@@ -322,6 +329,24 @@ function var_0_0.DestroyCachePanel(arg_21_0)
 			end
 		end
 	end
+end
+
+function var_0_0.GetSortToggle(arg_22_0, arg_22_1)
+	local var_22_0 = {}
+
+	for iter_22_0, iter_22_1 in ipairs(arg_22_1) do
+		table.insert(var_22_0, ActivityToggleCfg[iter_22_1])
+	end
+
+	table.sort(var_22_0, function(arg_23_0, arg_23_1)
+		if arg_23_0.order == arg_23_1.order then
+			return arg_23_0.id < arg_23_1.id
+		else
+			return arg_23_0.order > arg_23_1.order
+		end
+	end)
+
+	return var_22_0
 end
 
 return var_0_0

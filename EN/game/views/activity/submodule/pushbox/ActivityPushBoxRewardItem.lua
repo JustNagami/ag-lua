@@ -15,7 +15,8 @@ end
 function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
-	arg_3_0.rewardItems_ = {}
+	arg_3_0.rewardItemList_ = {}
+	arg_3_0.itemDataList_ = {}
 	arg_3_0.stateCon_ = ControllerUtil.GetController(arg_3_0.transform_, "state")
 end
 
@@ -42,49 +43,64 @@ function var_0_0.RefreshReward(arg_8_0)
 	local var_8_0 = arg_8_0.cfg_.reward
 
 	for iter_8_0, iter_8_1 in ipairs(var_8_0) do
-		if not arg_8_0.rewardItems_[iter_8_0] then
-			arg_8_0.rewardItems_[iter_8_0] = RewardItem.New(arg_8_0.rewardItem_, arg_8_0.rewardParent_)
-
-			arg_8_0.rewardItems_[iter_8_0]:UpdateCommonItemAni()
+		if not arg_8_0.rewardItemList_[iter_8_0] then
+			arg_8_0.rewardItemList_[iter_8_0] = CommonItemPool.New(arg_8_0.rewardParent_, nil, true)
 		end
 
-		arg_8_0.rewardItems_[iter_8_0]:SetData(iter_8_1)
+		if not arg_8_0.itemDataList_[iter_8_0] then
+			arg_8_0.itemDataList_[iter_8_0] = clone(ItemTemplateData)
+			arg_8_0.itemDataList_[iter_8_0].clickFun = function(arg_9_0)
+				ShowPopItem(POP_ITEM, {
+					arg_9_0.id,
+					arg_9_0.number
+				})
+			end
+		end
+
+		arg_8_0.itemDataList_[iter_8_0].id = iter_8_1[1]
+		arg_8_0.itemDataList_[iter_8_0].number = iter_8_1[2]
+
+		arg_8_0.rewardItemList_[iter_8_0]:SetData(arg_8_0.itemDataList_[iter_8_0])
+		arg_8_0.rewardItemList_[iter_8_0]:Show(true)
 	end
 
-	for iter_8_2 = #var_8_0 + 1, #arg_8_0.rewardItems_ do
-		arg_8_0.rewardItems_[iter_8_2]:Show(false)
+	for iter_8_2 = #var_8_0 + 1, #arg_8_0.rewardItemList_ do
+		arg_8_0.rewardItemList_[iter_8_2]:Show(false)
 	end
 end
 
-function var_0_0.RefreshTask(arg_9_0)
-	arg_9_0.desc_.text = GetI18NText(arg_9_0.cfg_.desc)
+function var_0_0.RefreshTask(arg_10_0)
+	arg_10_0.desc_.text = GetI18NText(arg_10_0.cfg_.desc)
 
-	local var_9_0 = arg_9_0.info_.progress > arg_9_0.cfg_.need and arg_9_0.cfg_.need or arg_9_0.info_.progress
+	local var_10_0 = arg_10_0.info_.progress > arg_10_0.cfg_.need and arg_10_0.cfg_.need or arg_10_0.info_.progress
 
-	arg_9_0.progress_.text = var_9_0 .. "/" .. arg_9_0.cfg_.need
-	arg_9_0.slider_.value = var_9_0 / arg_9_0.cfg_.need
+	arg_10_0.progress_.text = var_10_0 .. "/" .. arg_10_0.cfg_.need
+	arg_10_0.slider_.value = var_10_0 / arg_10_0.cfg_.need
 
-	if arg_9_0.info_.complete_flag >= 1 then
-		arg_9_0.stateCon_:SetSelectedState("received")
-	elseif arg_9_0.info_.progress >= arg_9_0.cfg_.need then
-		arg_9_0.stateCon_:SetSelectedState("complete")
+	if arg_10_0.info_.complete_flag >= 1 then
+		arg_10_0.stateCon_:SetSelectedState("received")
+	elseif arg_10_0.info_.progress >= arg_10_0.cfg_.need then
+		arg_10_0.stateCon_:SetSelectedState("complete")
 	else
-		arg_9_0.stateCon_:SetSelectedState("unfinish")
+		arg_10_0.stateCon_:SetSelectedState("unfinish")
 	end
 end
 
-function var_0_0.OnExit(arg_10_0)
+function var_0_0.OnExit(arg_11_0)
 	return
 end
 
-function var_0_0.Dispose(arg_11_0)
-	arg_11_0:RemoveAllListeners()
+function var_0_0.Dispose(arg_12_0)
+	arg_12_0:RemoveAllListeners()
 
-	for iter_11_0 = 1, #arg_11_0.rewardItems_ do
-		arg_11_0.rewardItems_[iter_11_0]:Dispose()
+	for iter_12_0, iter_12_1 in ipairs(arg_12_0.rewardItemList_) do
+		iter_12_1:Dispose()
 	end
 
-	arg_11_0.super.Dispose(arg_11_0)
+	arg_12_0.rewardItemList_ = nil
+	arg_12_0.itemDataList_ = nil
+
+	arg_12_0.super.Dispose(arg_12_0)
 end
 
 return var_0_0

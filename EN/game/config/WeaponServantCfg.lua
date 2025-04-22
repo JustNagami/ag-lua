@@ -1742,6 +1742,48 @@
 			108901
 		}
 	},
+	[2550996] = {
+		show_offset_y = "",
+		race = 5,
+		type = 2,
+		story = "40a3427666c3b71f78f489a2fad3ecda",
+		effect_desc = "",
+		show_offset_x = "",
+		desc = "c80bd813c9134e7fb4213c3623aea65e",
+		attrib_addition = 20,
+		display_type = 0,
+		starlevel = 5,
+		show_tiling_scale = "",
+		id = 2550996,
+		attribute = {
+			1,
+			100
+		},
+		effect = {
+			104601
+		}
+	},
+	[2550997] = {
+		show_offset_y = "",
+		race = 5,
+		type = 2,
+		story = "0db4c06f659083facc198231a44a81dc",
+		effect_desc = "",
+		show_offset_x = "",
+		desc = "987bf48aaf74c643ee2aaa78f4fd3711",
+		attrib_addition = 20,
+		display_type = 0,
+		starlevel = 5,
+		show_tiling_scale = "",
+		id = 2550997,
+		attribute = {
+			1,
+			100
+		},
+		effect = {
+			104501
+		}
+	},
 	[2550998] = {
 		show_offset_y = "-0.13",
 		race = 5,
@@ -2026,6 +2068,8 @@
 			2550010,
 			2550011,
 			2550012,
+			2550996,
+			2550997,
 			2550998,
 			2550999
 		},
@@ -2136,6 +2180,12 @@
 		},
 		[421] = {
 			2550998
+		},
+		[104501] = {
+			2550997
+		},
+		[104601] = {
+			2550996
 		},
 		[108901] = {
 			2550012
@@ -2464,6 +2514,8 @@
 		2550010,
 		2550011,
 		2550012,
+		2550996,
+		2550997,
 		2550998,
 		2550999,
 		2590000,

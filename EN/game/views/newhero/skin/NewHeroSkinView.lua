@@ -50,6 +50,8 @@ function var_0_0.Init(arg_7_0)
 	arg_7_0.isCanUnlock_ = false
 	arg_7_0.dlcMovie_ = nil
 	arg_7_0.dlcPlayer_ = nil
+	arg_7_0.dlcBgMovie_ = nil
+	arg_7_0.dlcBgPlayer_ = nil
 
 	arg_7_0:InitUI()
 	arg_7_0:AddUIListener()
@@ -105,16 +107,26 @@ function var_0_0.OnExit(arg_11_0)
 	arg_11_0.eventTriggerListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.BeginDrag)
 	arg_11_0.eventTriggerListener_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.EndDrag)
 
-	if arg_11_0.dlcPlayer_ then
-		arg_11_0.dlcPlayer_.statusChangeCallback = nil
-	end
-
 	if arg_11_0.dlcMovie_ then
 		arg_11_0.dlcMovie_:Stop()
 	end
 
+	if arg_11_0.dlcBgMovie_ then
+		arg_11_0.dlcBgMovie_:Stop()
+	end
+
+	if arg_11_0.dlcPlayer_ then
+		arg_11_0.dlcPlayer_.statusChangeCallback = nil
+	end
+
+	if arg_11_0.dlcBgPlayer_ then
+		arg_11_0.dlcBgPlayer_.statusChangeCallback = nil
+	end
+
 	arg_11_0.dlcPlayer_ = nil
 	arg_11_0.dlcMovie_ = nil
+	arg_11_0.dlcBgMovie_ = nil
+	arg_11_0.dlcBgPlayer_ = nil
 	arg_11_0.movieSkinId_ = 0
 
 	local var_11_0 = {
@@ -800,8 +812,18 @@ function var_0_0.RefreshDlcMovie(arg_55_0)
 		arg_55_0.dlcPlayer_.uiRenderMode = true
 	end
 
-	if tostring(arg_55_0.dlcPlayer_.status) == "Playing" and arg_55_0.dlcPlayer_.IsPaused and arg_55_0.skinID_ == arg_55_0.movieSkinId_ then
+	if isNil(arg_55_0.dlcBgMovie_) or isNil(arg_55_0.dlcBgPlayer_) then
+		arg_55_0.dlcBgMovie_ = arg_55_0.bgMovieGo_:GetComponent("CriManaMovieControllerForUI")
+		arg_55_0.dlcBgPlayer_ = arg_55_0.dlcBgMovie_.player
+
+		arg_55_0.dlcBgPlayer_:SetMaxPictureDataSize(300000)
+
+		arg_55_0.dlcBgPlayer_.uiRenderMode = true
+	end
+
+	if tostring(arg_55_0.dlcPlayer_.status) == "Playing" and arg_55_0.dlcPlayer_.IsPaused and tostring(arg_55_0.dlcBgPlayer_.status) == "Playing" and arg_55_0.dlcBgPlayer_.IsPaused and arg_55_0.skinID_ == arg_55_0.movieSkinId_ then
 		arg_55_0.dlcMovie_:Pause(false)
+		arg_55_0.dlcBgMovie_:Pause(false)
 		arg_55_0.dlcHideMovieController_:SetSelectedIndex(1)
 
 		return
@@ -809,13 +831,15 @@ function var_0_0.RefreshDlcMovie(arg_55_0)
 
 	if arg_55_0.movieSkinId_ and arg_55_0.movieSkinId_ ~= 0 and arg_55_0.skinID_ ~= arg_55_0.movieSkinId_ then
 		arg_55_0.dlcMovie_:Stop()
+		arg_55_0.dlcBgMovie_:Stop()
 
 		arg_55_0.mainMovieRaw_.material = nil
+		arg_55_0.bgMovieRaw_.material = nil
 
 		arg_55_0:StopMovieStopTimer()
 
 		arg_55_0.stopTimer_ = Timer.New(function()
-			if tostring(arg_55_0.dlcPlayer_.status) == "Stop" then
+			if tostring(arg_55_0.dlcPlayer_.status) == "Stop" and tostring(arg_55_0.dlcBgPlayer_.status) == "Stop" then
 				arg_55_0:StartMovie()
 				arg_55_0:StopMovieStopTimer()
 
@@ -871,13 +895,8 @@ function var_0_0.StartMovie(arg_57_0)
 			arg_57_0:StopMovieTimer()
 
 			arg_57_0.timer_ = Timer.New(function()
-				if arg_57_0.dlcMovie_.isMaterialAvailable then
+				if arg_57_0.dlcMovie_.isMaterialAvailable and arg_57_0.dlcBgMovie_.isMaterialAvailable then
 					arg_57_0.dlcHideMovieController_:SetSelectedIndex(1)
-
-					local var_58_0 = arg_57_0.mainMovieRaw_.material
-
-					arg_57_0.bgMovieRaw_.material = var_58_0
-
 					arg_57_0:StopMovieTimer()
 
 					if not arg_57_0:IsTop() then
@@ -896,8 +915,9 @@ function var_0_0.StartMovie(arg_57_0)
 end
 
 function var_0_0.PauseDlcMovie(arg_59_0)
-	if arg_59_0.dlcMovie_ and arg_59_0.dlcPlayer_ then
+	if arg_59_0.dlcMovie_ and arg_59_0.dlcPlayer_ and arg_59_0.dlcBgMovie_ and arg_59_0.dlcBgPlayer_ then
 		arg_59_0.dlcMovie_:Pause(true)
+		arg_59_0.dlcBgMovie_:Pause(true)
 	end
 end
 
@@ -919,15 +939,22 @@ end
 
 function var_0_0.Play(arg_62_0)
 	SetFile(arg_62_0.dlcPlayer_, nil, arg_62_0.start_path, CriMana.Player.SetMode.New)
+	arg_62_0.dlcPlayer_:Prepare()
+	SetFile(arg_62_0.dlcBgPlayer_, nil, arg_62_0.start_path, CriMana.Player.SetMode.New)
+	arg_62_0.dlcBgPlayer_:Prepare()
 
 	local var_62_0 = manager.audio:GetMusicVolume()
 
 	arg_62_0.dlcPlayer_:SetVolume(var_62_0)
+	arg_62_0.dlcBgPlayer_:SetVolume(0)
 	arg_62_0:SetVideoTrack(arg_62_0.dlcPlayer_, arg_62_0.start_path)
+	arg_62_0:SetVideoTrack(arg_62_0.dlcBgPlayer_, arg_62_0.start_path)
 
 	arg_62_0.movieSkinId_ = arg_62_0.skinID_
 
 	arg_62_0.dlcMovie_:Play()
+	arg_62_0.dlcBgMovie_:Play()
+	arg_62_0.dlcHideMovieController_:SetSelectedIndex(1)
 end
 
 function var_0_0.SetVideoTrack(arg_63_0, arg_63_1, arg_63_2)

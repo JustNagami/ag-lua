@@ -347,6 +347,12 @@
 		sub_name = "ec54859dbdc0e0b5dde5481aaf42c34d",
 		faction = ""
 	},
+	[4045] = {
+		ID = 4045,
+		main_name = "435bff1ac30ef20204be1292c763bbad",
+		sub_name = "1c325ca4aa1010080fa793670cf229d4",
+		faction = ""
+	},
 	all = {
 		3004,
 		3005,
@@ -405,6 +411,7 @@
 		4040,
 		4041,
 		4042,
-		4043
+		4043,
+		4045
 	}
 }

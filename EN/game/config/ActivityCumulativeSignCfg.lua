@@ -733,6 +733,23 @@
 			7507
 		}
 	},
+	[340011] = {
+		cost_item_list = "",
+		type = 0,
+		id = 340011,
+		title = "806c2e6e4ce46f2715f8bfbc69822b51",
+		ui_path = "Widget/Version/V4_2_GodEaterUI/V4_2_GodEaterUI_SevenDaySign/V4_2_GodEaterUI_SevenDaySignUI",
+		limit_level = 0,
+		config_list = {
+			7501,
+			7502,
+			7503,
+			7504,
+			7505,
+			7506,
+			7507
+		}
+	},
 	[280013] = {
 		cost_item_list = "",
 		type = 0,
@@ -772,6 +789,23 @@
 			21012,
 			21013,
 			21014
+		}
+	},
+	[3600102] = {
+		cost_item_list = "",
+		type = 0,
+		id = 3600102,
+		title = "567489ea0be83b06b8b1077cde797b9c",
+		ui_path = "Widget/Version/V3_5_9_CustomizeUI/V3_5_9_SevenDaySignUI/V3_5_9_SevenDaySignUI",
+		limit_level = 0,
+		config_list = {
+			7501,
+			7502,
+			7503,
+			7504,
+			7505,
+			7506,
+			7507
 		}
 	},
 	all = {
@@ -815,7 +849,9 @@
 		293401,
 		290011,
 		290012,
+		340011,
 		280013,
-		280014
+		280014,
+		3600102
 	}
 }

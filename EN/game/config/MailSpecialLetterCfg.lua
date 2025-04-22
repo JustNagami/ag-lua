@@ -1931,7 +1931,225 @@
 			}
 		}
 	},
+	[40201] = {
+		letter_send_time_1 = "2025,6,6",
+		mail_id = 640201,
+		letter_title = "a99634707128fe7ca5e01f2804f731ad",
+		letter_belongs = 1066,
+		letter_sender_face = 2110661,
+		letter_sender = "8e6bd57295109b2928f34403e7c08a2c",
+		letter_desc = "9ac6daf11ff7b5a1a03399eea8d20964",
+		id = 40201,
+		reward_item_list = {
+			{
+				50014,
+				10
+			},
+			{
+				40603,
+				2
+			},
+			{
+				20001,
+				1
+			}
+		}
+	},
+	[40202] = {
+		letter_send_time_1 = "2025,6,12",
+		mail_id = 640202,
+		letter_title = "4e46152776c85d8f20d0d92eade61973",
+		letter_belongs = 1127,
+		letter_sender_face = 2111271,
+		letter_sender = "1e2c942a5accf950f08c1fd690d4f5ea",
+		letter_desc = "c034385c81270f3c1977a1ca9264a064",
+		id = 40202,
+		reward_item_list = {
+			{
+				50011,
+				10
+			},
+			{
+				40603,
+				2
+			},
+			{
+				20001,
+				1
+			}
+		}
+	},
+	[40203] = {
+		letter_send_time_1 = "2025,6,12",
+		mail_id = 640203,
+		letter_title = "cca2d8b70443ca2cdd5da158a16b0ce7",
+		letter_belongs = 1050,
+		letter_sender_face = 2110501,
+		letter_sender = "1e711f55aa75295451e222260ae77ecb",
+		letter_desc = "7871bd102c36b4270aef8f1fbb02289c",
+		id = 40203,
+		reward_item_list = {
+			{
+				50018,
+				10
+			},
+			{
+				40603,
+				3
+			},
+			{
+				40301,
+				100
+			}
+		}
+	},
+	[40204] = {
+		letter_send_time_1 = "2025,6,12",
+		mail_id = 640204,
+		letter_title = "3a15ebe26029f35b4d27bf0183dba535",
+		letter_belongs = 1049,
+		letter_sender_face = 2110491,
+		letter_sender = "043d84dbf2e3f14833236fb4c3f6e14b",
+		letter_desc = "ccce7d1312dbae80da796363b7757fde",
+		id = 40204,
+		reward_item_list = {
+			{
+				50045,
+				10
+			},
+			{
+				40603,
+				3
+			},
+			{
+				40301,
+				100
+			}
+		}
+	},
+	[40205] = {
+		letter_send_time_1 = "2025,6,13",
+		mail_id = 640205,
+		letter_title = "a8c68407bddb10de6a5c54c6c3419e78",
+		letter_belongs = 1024,
+		letter_sender_face = 2110241,
+		letter_sender = "52cfb1e0369cce7117425c093073a5e3",
+		letter_desc = "8ac98971c8352b10feb7bc31b48f0b3d",
+		id = 40205,
+		reward_item_list = {
+			{
+				50005,
+				10
+			},
+			{
+				20002,
+				1
+			}
+		}
+	},
+	[40206] = {
+		letter_send_time_1 = "2025,6,19",
+		mail_id = 640206,
+		letter_title = "597459e668237e1dc6e465fe53c58a03",
+		letter_belongs = 1070,
+		letter_sender_face = 2110701,
+		letter_sender = "7df8e7683b650261ea6244f8f89e62bd",
+		letter_desc = "d6838f385d5cd4d4c22d6bbcca8559a6",
+		id = 40206,
+		reward_item_list = {
+			{
+				50040,
+				10
+			},
+			{
+				40603,
+				3
+			},
+			{
+				40301,
+				100
+			}
+		}
+	},
+	[40207] = {
+		letter_send_time_1 = "2025,6,20",
+		mail_id = 640207,
+		letter_title = "9b205722eda68c24042b76049842367f",
+		letter_belongs = 1075,
+		letter_sender_face = 2110751,
+		letter_sender = "0f3c4451dab87b2fb91af3b114a500b5",
+		letter_desc = "0acc294d01f98132026f6353bbabc014",
+		id = 40207,
+		reward_item_list = {
+			{
+				50036,
+				10
+			},
+			{
+				40603,
+				2
+			},
+			{
+				20001,
+				1
+			}
+		}
+	},
+	[40208] = {
+		letter_send_time_1 = "2025,6,23",
+		mail_id = 640208,
+		letter_title = "3c1f08a5e0a679908b730db57864c4a4",
+		letter_belongs = 1056,
+		letter_sender_face = 2110561,
+		letter_sender = "94772356b5ddd3fd14458418ad4daaf9",
+		letter_desc = "f0608a559a00e78aaaf42f9f756768a1",
+		id = 40208,
+		reward_item_list = {
+			{
+				50029,
+				10
+			},
+			{
+				40503,
+				10
+			},
+			{
+				20001,
+				1
+			}
+		}
+	},
+	[40209] = {
+		letter_send_time_1 = "2025,7,3",
+		mail_id = 640209,
+		letter_title = "2fd428051fe00656730b470c52b87ee1",
+		letter_belongs = 1013,
+		letter_sender_face = 2110131,
+		letter_sender = "e4850499853240a219b4a843172dbcdd",
+		letter_desc = "e69f966cbfeec9ca1d54d385a1273fb7",
+		id = 40209,
+		reward_item_list = {
+			{
+				50028,
+				10
+			},
+			{
+				40503,
+				10
+			},
+			{
+				20001,
+				1
+			}
+		}
+	},
 	get_id_list_by_letter_belongs = {
+		[1013] = {
+			40209
+		},
+		[1127] = {
+			40202
+		},
 		[1022] = {
 			31104
 		},
@@ -1951,7 +2169,8 @@
 			1056
 		},
 		[1049] = {
-			1050
+			1050,
+			40204
 		},
 		[1060] = {
 			1047
@@ -2069,23 +2288,28 @@
 		},
 		[1056] = {
 			1012,
-			1054
+			1054,
+			40208
 		},
 		[1075] = {
 			1011,
-			1053
+			1053,
+			40207
 		},
 		[1070] = {
 			1010,
-			1052
+			1052,
+			40206
 		},
 		[1024] = {
 			1009,
-			1051
+			1051,
+			40205
 		},
 		[1050] = {
 			1008,
-			1049
+			1049,
+			40203
 		},
 		[1027] = {
 			1007,
@@ -2093,7 +2317,8 @@
 		},
 		[1066] = {
 			1006,
-			1046
+			1046,
+			40201
 		},
 		[1071] = {
 			1005,
@@ -2203,6 +2428,15 @@
 		31105,
 		31106,
 		31107,
-		31108
+		31108,
+		40201,
+		40202,
+		40203,
+		40204,
+		40205,
+		40206,
+		40207,
+		40208,
+		40209
 	}
 }

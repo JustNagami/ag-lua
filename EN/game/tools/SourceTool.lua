@@ -65,19 +65,20 @@ function var_0_0.GetJumpDataByHeroSpecialType(arg_3_0)
 		if var_3_3 then
 			local var_3_5 = var_3_3.pool_type
 			local var_3_6 = var_3_3.pool_show_type
-			local var_3_7 = DrawSettingCfg[var_3_5]
+			local var_3_7 = var_3_3.pool_draw_range_type
+			local var_3_8 = DrawSettingCfg[var_3_7]
 
-			if var_3_7 then
-				local var_3_8 = var_3_7.pool_id
+			if var_3_8 then
+				local var_3_9 = var_3_8.pool_id
 
-				if var_3_8 ~= "" then
-					for iter_3_2, iter_3_3 in pairs(var_3_8) do
-						local var_3_9 = DrawItemCfg.get_id_list_by_pool_id[iter_3_3] or {}
+				if var_3_9 ~= "" then
+					for iter_3_2, iter_3_3 in pairs(var_3_9) do
+						local var_3_10 = DrawItemCfg.get_id_list_by_pool_id[iter_3_3] or {}
 
-						for iter_3_4, iter_3_5 in ipairs(var_3_9) do
-							local var_3_10 = DrawItemCfg[iter_3_5] and DrawItemCfg[iter_3_5].item_id or 0
+						for iter_3_4, iter_3_5 in ipairs(var_3_10) do
+							local var_3_11 = DrawItemCfg[iter_3_5] and DrawItemCfg[iter_3_5].item_id or 0
 
-							if (ItemCfg[arg_3_0] and ItemCfg[arg_3_0].hero_id or 0) == var_3_10 and not var_3_2[var_3_6] and SystemLinkCfg[var_3_1[var_3_6]] then
+							if (ItemCfg[arg_3_0] and ItemCfg[arg_3_0].hero_id or 0) == var_3_11 and not var_3_2[var_3_6] and SystemLinkCfg[var_3_1[var_3_6]] then
 								if var_3_5 == 8 then
 									if not DrawData:GetNewbieChooseDrawFlag() then
 										var_3_2[var_3_6] = {
@@ -85,7 +86,7 @@ function var_0_0.GetJumpDataByHeroSpecialType(arg_3_0)
 											iter_3_1
 										}
 									end
-								elseif var_3_4[1][1] and var_3_4[1][1] == var_3_10 then
+								elseif var_3_4[1][1] and var_3_4[1][1] == var_3_11 then
 									-- block empty
 								else
 									var_3_2[var_3_6] = {
@@ -101,13 +102,13 @@ function var_0_0.GetJumpDataByHeroSpecialType(arg_3_0)
 		end
 	end
 
-	local var_3_11 = {}
+	local var_3_12 = {}
 
 	for iter_3_6, iter_3_7 in pairs(var_3_2) do
-		table.insert(var_3_11, iter_3_7)
+		table.insert(var_3_12, iter_3_7)
 	end
 
-	return #var_3_11 > 0, var_3_11
+	return #var_3_12 > 0, var_3_12
 end
 
 function var_0_0.GetJumpDataByServantSpecialType(arg_4_0)
@@ -123,16 +124,17 @@ function var_0_0.GetJumpDataByServantSpecialType(arg_4_0)
 		if var_4_3 then
 			local var_4_4 = var_4_3.pool_type
 			local var_4_5 = var_4_3.pool_show_type
-			local var_4_6 = DrawSettingCfg[var_4_4]
+			local var_4_6 = var_4_3.pool_draw_range_type
+			local var_4_7 = DrawSettingCfg[var_4_6]
 
-			if var_4_6 then
-				local var_4_7 = var_4_6.pool_id
+			if var_4_7 then
+				local var_4_8 = var_4_7.pool_id
 
-				if var_4_7 ~= "" then
-					for iter_4_2, iter_4_3 in pairs(var_4_7) do
-						local var_4_8 = DrawItemCfg.get_id_list_by_pool_id[iter_4_3] or {}
+				if var_4_8 ~= "" then
+					for iter_4_2, iter_4_3 in pairs(var_4_8) do
+						local var_4_9 = DrawItemCfg.get_id_list_by_pool_id[iter_4_3] or {}
 
-						for iter_4_4, iter_4_5 in ipairs(var_4_8) do
+						for iter_4_4, iter_4_5 in ipairs(var_4_9) do
 							if DrawItemCfg[iter_4_5] and DrawItemCfg[iter_4_5].item_id == arg_4_0 and not var_4_2[var_4_5] and SystemLinkCfg[var_4_1[var_4_5]] then
 								var_4_2[var_4_5] = {
 									var_4_1[var_4_5],
@@ -146,13 +148,13 @@ function var_0_0.GetJumpDataByServantSpecialType(arg_4_0)
 		end
 	end
 
-	local var_4_9 = {}
+	local var_4_10 = {}
 
 	for iter_4_6, iter_4_7 in pairs(var_4_2) do
-		table.insert(var_4_9, iter_4_7)
+		table.insert(var_4_10, iter_4_7)
 	end
 
-	return #var_4_9 > 0, var_4_9
+	return #var_4_10 > 0, var_4_10
 end
 
 return var_0_0

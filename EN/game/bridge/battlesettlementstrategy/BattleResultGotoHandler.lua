@@ -11,7 +11,7 @@ StageStrategyType = {
 	GotoRaceTrialStage = "GotoRaceTrialStage",
 	GotoSoloSurviveStage = "GotoSoloSurviveStage",
 	GotoStage = "GotoStage",
-	GotoSequentialBattleStage = "GotoSequentialBattleStage",
+	GotoEatGodStage = "GotoEatGodStage",
 	GotoActivitySwimsuitStage = "GotoActivitySwimsuitStage",
 	GotoSlayerStage = "GotoSlayerStage",
 	GotoEquipSeizureScoreStage = "GotoEquipSeizureScoreStage",
@@ -27,7 +27,9 @@ StageStrategyType = {
 	GotoSkadiStage = "GotoSkadiStage",
 	GotoChallengeRogueTeamStage = "GotoChallengeRogueTeamStage",
 	GotoSpKaliStage = "GotoSpKaliStage",
+	GotoMultHeartDemonStage = "GotoMultHeartDemonStage",
 	GotoDodgeBarrageStage = "GotoDodgeBarrageStage",
+	GotoSequentialBattleStage = "GotoSequentialBattleStage",
 	GotoActivityWorldBoss = "GotoActivityWorldBoss",
 	GotoPushSnowBallSingleBattleStage = "GotoPushSnowBallSingleBattleStage",
 	GotoSoloChallengeStage = "GotoSoloChallengeStage",
@@ -98,13 +100,15 @@ var_0_0.CustomStageStrategy = {
 	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_HERO_ENHANCE] = StageStrategyType.GotoActivityHeroEnhanceStage,
 	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_WHACK_MOLE] = StageStrategyType.GotoWhackMoleStage,
 	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_SWIMSUIT_BATTLE] = StageStrategyType.GotoActivitySwimsuitStage,
+	[BattleConst.STAGE_TYPE_NEW.MULT_HEART_DEMON] = StageStrategyType.GotoMultHeartDemonStage,
 	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_RHYTHM_GAME] = StageStrategyType.GotoActivityRhythmGameStage,
 	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_SUMMER_WATER] = StageStrategyType.GotoActivitySummerWaterStage,
 	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_MONSTER_COSPLAY] = StageStrategyType.GotoMonsterCosplayStage,
 	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_CATCH_DUCK] = StageStrategyType.GotoCatchDuckStage,
 	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_SPKALI_CHALLENGE] = StageStrategyType.GotoSpKaliStage,
 	[BattleConst.STAGE_TYPE_NEW.CHALLENGE_ROGUE_TEAM] = StageStrategyType.GotoChallengeRogueTeamStage,
-	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_DODGE_BARRAGE] = StageStrategyType.GotoDodgeBarrageStage
+	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_DODGE_BARRAGE] = StageStrategyType.GotoDodgeBarrageStage,
+	[BattleConst.STAGE_TYPE_NEW.GOD_EATER_BATTLE] = StageStrategyType.GotoEatGodStage
 }
 
 function var_0_0.Init(arg_1_0)

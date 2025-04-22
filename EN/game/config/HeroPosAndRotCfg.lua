@@ -3599,6 +3599,166 @@
 			0
 		}
 	},
+	[1045] = {
+		hero_view_height = 4,
+		offset = -1.24,
+		id = 1045,
+		position_main = {
+			-2.175,
+			0,
+			12.235
+		},
+		rotation_main = {
+			0,
+			0,
+			0
+		},
+		scale_main = {
+			1,
+			1,
+			1
+		},
+		position_chat = {
+			-2.175,
+			0,
+			12.235
+		},
+		position_playerInfo = {
+			-2.175,
+			0,
+			12.235
+		},
+		position_scene_6100 = {
+			-2.767,
+			1.145,
+			14.844
+		},
+		rotation_scene_6100 = {
+			3.811,
+			-11.247,
+			0.877
+		}
+	},
+	[1046] = {
+		hero_view_height = 4,
+		offset = -1.24,
+		id = 1046,
+		position_main = {
+			-2.175,
+			0,
+			12.235
+		},
+		rotation_main = {
+			0,
+			0,
+			0
+		},
+		scale_main = {
+			1,
+			1,
+			1
+		},
+		position_chat = {
+			-2.175,
+			0,
+			12.235
+		},
+		position_playerInfo = {
+			-2.175,
+			0,
+			12.235
+		},
+		position_scene_6100 = {
+			-2.767,
+			1.145,
+			14.844
+		},
+		rotation_scene_6100 = {
+			3.811,
+			-11.247,
+			0.877
+		}
+	},
+	[10460100] = {
+		hero_view_height = 0,
+		offset = 0,
+		id = 10460100,
+		position_main = {
+			0,
+			0,
+			0
+		},
+		rotation_main = {
+			0,
+			0,
+			0
+		},
+		scale_main = {
+			1,
+			1,
+			1
+		},
+		position_chat = {
+			0,
+			0,
+			0
+		},
+		position_playerInfo = {
+			0,
+			0,
+			0
+		},
+		position_scene_6100 = {
+			0,
+			0,
+			0
+		},
+		rotation_scene_6100 = {
+			0,
+			0,
+			0
+		}
+	},
+	[10450100] = {
+		hero_view_height = 0,
+		offset = 0,
+		id = 10450100,
+		position_main = {
+			0,
+			0,
+			0
+		},
+		rotation_main = {
+			0,
+			0,
+			0
+		},
+		scale_main = {
+			1,
+			1,
+			1
+		},
+		position_chat = {
+			0,
+			0,
+			0
+		},
+		position_playerInfo = {
+			0,
+			0,
+			0
+		},
+		position_scene_6100 = {
+			0,
+			0,
+			0
+		},
+		rotation_scene_6100 = {
+			0,
+			0,
+			0
+		}
+	},
 	all = {
 		1011,
 		1013,
@@ -3689,6 +3849,10 @@
 		10950211,
 		10950212,
 		1089,
-		10890100
+		10890100,
+		1045,
+		1046,
+		10460100,
+		10450100
 	}
 }

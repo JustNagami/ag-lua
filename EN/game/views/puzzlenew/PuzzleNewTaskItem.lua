@@ -51,7 +51,7 @@ end
 function var_0_0.RefreshUI(arg_7_0)
 	local var_7_0 = AssignmentCfg[arg_7_0.taskID_]
 
-	arg_7_0.contentText_.text = var_7_0.desc
+	arg_7_0.contentText_.text = GetI18NText(var_7_0.desc)
 
 	arg_7_0:RefreshReward()
 	arg_7_0:RefreshType()

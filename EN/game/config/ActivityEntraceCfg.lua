@@ -347,6 +347,36 @@
 			291001
 		}
 	},
+	[341001] = {
+		story_id = 0,
+		id = 341001,
+		reprint_field = "",
+		prefab_path = "Widget/System/Activity_Resident/Activity_MainUI",
+		theme = 34,
+		day_list = {},
+		icon_list = {
+			"but_Internal_shenyu"
+		},
+		jump_system = {
+			18001,
+			341001
+		}
+	},
+	[3610001] = {
+		story_id = 0,
+		id = 3610001,
+		reprint_field = "",
+		prefab_path = "Widget/System/Activity_Resident/Activity_MainUI",
+		theme = 36,
+		day_list = {},
+		icon_list = {
+			"but_Internal_hella"
+		},
+		jump_system = {
+			359001,
+			3610001
+		}
+	},
 	get_id_list_by_theme = {
 		[5] = {
 			500
@@ -411,6 +441,12 @@
 		[29] = {
 			291001
 		},
+		[34] = {
+			341001
+		},
+		[36] = {
+			3610001
+		},
 		[106] = {
 			1061001
 		}
@@ -437,6 +473,8 @@
 		241001,
 		271001,
 		281001,
-		291001
+		291001,
+		341001,
+		3610001
 	}
 }

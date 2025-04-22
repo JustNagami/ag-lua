@@ -62,7 +62,9 @@ function var_0_0.SetType(arg_9_0, arg_9_1)
 	if table.indexof(arg_9_0.typeSet_, arg_9_1) then
 		arg_9_0.type_ = arg_9_1
 
-		arg_9_0.typeCon_:SetSelectedState(arg_9_0.type_)
+		if arg_9_0.typeCon_ then
+			arg_9_0.typeCon_:SetSelectedState(arg_9_0.type_)
+		end
 	end
 end
 

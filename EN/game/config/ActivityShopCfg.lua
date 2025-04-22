@@ -179,12 +179,20 @@
 		activity_id = 292211,
 		shop_id = 303
 	},
+	[341461] = {
+		activity_theme = 3401,
+		activity_id = 341461,
+		shop_id = 231
+	},
 	[2814611] = {
 		activity_theme = 2801,
 		activity_id = 2814611,
 		shop_id = 230
 	},
 	get_id_list_by_activity_theme = {
+		[3401] = {
+			341461
+		},
 		[2903] = {
 			292211
 		},
@@ -330,6 +338,7 @@
 		291461,
 		291462,
 		292211,
+		341461,
 		2814611
 	}
 }

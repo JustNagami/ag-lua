@@ -18,8 +18,9 @@ function var_0_0.InitUI(arg_4_0)
 
 	arg_4_0.probabilityCfgList = {}
 	arg_4_0.items = {}
-	arg_4_0.stateCon_ = arg_4_0.transform_:GetComponent("ControllerExCollection"):GetController("state")
+	arg_4_0.stateCon_ = arg_4_0.controllerEx_:GetController("state")
 	arg_4_0.recordView = DrawInfoPopRecordView.New(arg_4_0.recordGo_)
+	arg_4_0.bonusController_ = arg_4_0.controllerEx_:GetController("ExtractReturn")
 end
 
 function var_0_0.AddUIListener(arg_5_0)
@@ -53,6 +54,7 @@ function var_0_0.OnEnter(arg_10_0)
 	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_10_0.layout_2)
 	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_10_0.layout_3)
 	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_10_0.layout_4)
+	arg_10_0:RefreshBonus(var_10_0)
 end
 
 function var_0_0.RefreshInfo(arg_12_0, arg_12_1, arg_12_2)
@@ -372,7 +374,7 @@ end
 function var_0_0.SetInfoText(arg_17_0, arg_17_1, arg_17_2)
 	local var_17_0 = arg_17_1.draw_pool_desc
 
-	for iter_17_0 = 1, 15 do
+	for iter_17_0 = 1, 20 do
 		if var_17_0 == "DRAW_POOL_DESC_TEMP_FIXED_" .. iter_17_0 then
 			arg_17_0.infoTxt_.text = GetTips(var_17_0)
 		end
@@ -394,7 +396,7 @@ function var_0_0.SetInfoText(arg_17_0, arg_17_1, arg_17_2)
 		arg_17_0:DescModule(arg_17_1, arg_17_2)
 
 		return
-	elseif var_17_0 == "DRAW_POOL_DESC_TEMP_4" or var_17_0 == "DRAW_POOL_DESC_TEMP_8" then
+	elseif var_17_0 == "DRAW_POOL_DESC_TEMP_4" or var_17_0 == "DRAW_POOL_DESC_TEMP_8" or var_17_0 == "DRAW_POOL_DESC_TEMP_12" then
 		arg_17_0:DescModule(arg_17_1, arg_17_2)
 
 		return
@@ -410,7 +412,7 @@ function var_0_0.SetInfoText(arg_17_0, arg_17_1, arg_17_2)
 		arg_17_0:DescModule(arg_17_1, arg_17_2)
 
 		return
-	elseif var_17_0 == "DRAW_POOL_DESC_TEMP_7" or var_17_0 == "DRAW_POOL_DESC_TEMP_9" then
+	elseif var_17_0 == "DRAW_POOL_DESC_TEMP_7" or var_17_0 == "DRAW_POOL_DESC_TEMP_9" or var_17_0 == "DRAW_POOL_DESC_TEMP_13" then
 		arg_17_0:DescModule(arg_17_1, arg_17_2)
 
 		return
@@ -422,6 +424,13 @@ function var_0_0.DescModule(arg_18_0, arg_18_1, arg_18_2)
 	local var_18_1 = arg_18_1.draw_pool_desc
 	local var_18_2 = GetI18NText(arg_18_1.name)
 	local var_18_3 = arg_18_2.s_up_item[1]
+
+	if DrawItemCfg[var_18_3] == nil then
+		Debug.LogError(string.format("配置表 DrawItemCfg 找不到 id : %s ", var_18_3))
+
+		return
+	end
+
 	local var_18_4 = DrawItemCfg[var_18_3].item_id
 	local var_18_5 = HeroTools.GetHeroFullName(var_18_4)
 
@@ -460,21 +469,37 @@ function var_0_0.DescModule(arg_18_0, arg_18_1, arg_18_2)
 	end
 end
 
-function var_0_0.Dispose(arg_19_0)
-	var_0_0.super.Dispose(arg_19_0)
-	arg_19_0.recordView:Dispose()
+function var_0_0.RefreshBonus(arg_19_0, arg_19_1)
+	local var_19_0 = DrawTools.GetDrawBonusActivityIDList()
+	local var_19_1 = DrawTools.HasDrawBonusPoolID(var_19_0, arg_19_1)
 
-	if arg_19_0.items then
-		for iter_19_0, iter_19_1 in ipairs(arg_19_0.items) do
-			iter_19_1:Dispose()
+	if var_19_1 then
+		arg_19_0.bonusController_:SetSelectedState("on")
+
+		local var_19_2 = ActivityDrawBonusCfg[var_19_1]
+
+		arg_19_0.bonusTitleText_.text = var_19_2.draw_title
+		arg_19_0.bonusInfoText_.text = var_19_2.draw_desc
+	else
+		arg_19_0.bonusController_:SetSelectedState("off")
+	end
+end
+
+function var_0_0.Dispose(arg_20_0)
+	var_0_0.super.Dispose(arg_20_0)
+	arg_20_0.recordView:Dispose()
+
+	if arg_20_0.items then
+		for iter_20_0, iter_20_1 in ipairs(arg_20_0.items) do
+			iter_20_1:Dispose()
 		end
 
-		arg_19_0.items = nil
+		arg_20_0.items = nil
 	end
 
-	if arg_19_0.probabilityCfgList then
-		for iter_19_2, iter_19_3 in ipairs(arg_19_0.probabilityCfgList) do
-			iter_19_3 = nil
+	if arg_20_0.probabilityCfgList then
+		for iter_20_2, iter_20_3 in ipairs(arg_20_0.probabilityCfgList) do
+			iter_20_3 = nil
 		end
 	end
 end

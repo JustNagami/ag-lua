@@ -87,7 +87,7 @@ function var_0_0.AddListeners(arg_7_0)
 
 			BattleFieldData:SetStageByClientID(var_8_6.id, var_8_7)
 			BattleFieldData:SetCacheChapterClient(getChapterToggle(var_8_6.id), var_8_6.id)
-			BattleFieldData:SetSecondCacheChapter(getChapterToggle(var_8_6.id), arg_7_0.chapterID_)
+			BattleFieldData:SetSecondCacheChapter(getChapterToggle(var_8_6.id), arg_7_0.chapterID_, var_8_6.id)
 			BattleStageAction.ClickSubPlot(arg_7_0.chapterID_)
 			JumpTools.Jump2SubPlot(var_8_6.id, true)
 		end

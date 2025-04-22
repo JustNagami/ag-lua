@@ -3,7 +3,7 @@
 local var_0_0 = class("ActivityPushBoxEnterView", ActivityMainBasePanel)
 
 function var_0_0.GetUIName(arg_1_0)
-	return "UI/VersionUI/JapanRegionUI_2_10/JapanRegionUI_2_10AnniversaryUI/JapanRegionUI_2_10AnniversaryMainUI"
+	return "Widget/Version/V3_5_9_CustomizeUI/V3_5_9_AnniversaryUI/V3_5_9_AnniversaryMainUI"
 end
 
 function var_0_0.Init(arg_2_0)
@@ -31,7 +31,9 @@ function var_0_0.AddUIListeners(arg_4_0)
 	end)
 	arg_4_0:AddBtnListener(arg_4_0.goBtn_, nil, function()
 		if arg_4_0.activityData_:IsActivitying() then
-			JumpTools.OpenPageByJump("/summerWaterMain")
+			JumpTools.OpenPageByJump("/activityPushBoxMain", {
+				activityID = arg_4_0.activityID_
+			})
 		end
 	end)
 end

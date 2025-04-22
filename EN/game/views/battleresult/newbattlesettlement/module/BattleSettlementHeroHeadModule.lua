@@ -91,12 +91,20 @@ function var_0_0.SetHeroCfgData(arg_13_0, arg_13_1, arg_13_2, arg_13_3)
 		arg_13_0.rareImg_.sprite = HeroTools.GetRareSprite(math.floor(arg_13_3))
 	end
 
-	arg_13_0.attackType_.sprite = HeroTools.GetHeroSkillAttributeIcon(arg_13_1)
+	local var_13_1 = HeroTools.GetHeroSkillAttributeIcon(arg_13_1)
+
+	if var_13_1 == nil then
+		SetActive(arg_13_0.atkTypeGo_, false)
+	else
+		SetActive(arg_13_0.atkTypeGo_, true)
+
+		arg_13_0.attackType_.sprite = var_13_1
+	end
 
 	if arg_13_2 then
-		local var_13_1 = SkinCfg[arg_13_2]
+		local var_13_2 = SkinCfg[arg_13_2]
 
-		arg_13_0.headIcon_.sprite = HeroTools.GetHeadSprite(var_13_1.picture_id)
+		arg_13_0.headIcon_.sprite = HeroTools.GetHeadSprite(var_13_2.picture_id)
 
 		arg_13_0.headIcon_:SetNativeSize()
 	end

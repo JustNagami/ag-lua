@@ -9250,6 +9250,45 @@
 			3
 		}
 	},
+	[952001] = {
+		material = "",
+		start_up_action = 0,
+		extend_info = 1,
+		type = 23,
+		dorm_exp = 0,
+		sub_type = 0,
+		model = "Dorm/Dormitory/HZ05_zhounian2_dangao",
+		is_give = 0,
+		hero_id = 0,
+		style_type = "",
+		cost = "",
+		extend = "",
+		interact = "",
+		theme = 110,
+		give_max = 0,
+		replace = "",
+		interact_max = 1,
+		illu_position = "",
+		can_rot = 0,
+		display_type = 0,
+		mesh = "",
+		is_hide = 0,
+		id = 952001,
+		is_occupy = 0,
+		scene_id = {
+			2,
+			3
+		},
+		title = {
+			8,
+			4,
+			4
+		},
+		attractive = {},
+		is_storage = {},
+		is_move = {},
+		is_rotate = {}
+	},
 	[952002] = {
 		material = "",
 		start_up_action = 0,
@@ -11937,6 +11976,7 @@
 			951919,
 			951920,
 			951921,
+			952001,
 			952002,
 			952003,
 			952004,
@@ -12202,6 +12242,7 @@
 			951919,
 			951920,
 			951921,
+			952001,
 			952002,
 			952004,
 			952005,
@@ -12333,6 +12374,9 @@
 			952022,
 			952023,
 			952024
+		},
+		[110] = {
+			952001
 		},
 		[109] = {
 			951901,
@@ -12814,6 +12858,7 @@
 		951919,
 		951920,
 		951921,
+		952001,
 		952002,
 		952003,
 		952004,

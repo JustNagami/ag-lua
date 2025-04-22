@@ -232,14 +232,16 @@ function var_0_0.GetSubPlotFinishPercentage(arg_14_0)
 		end
 	end
 
-	local var_14_4 = WarchessLevelCfg.get_id_list_by_chapter_tag[arg_14_0]
+	if arg_14_0 ~= 6010002 then
+		local var_14_4 = WarchessLevelCfg.get_id_list_by_chapter_tag[arg_14_0]
 
-	if var_14_4 ~= nil then
-		for iter_14_4, iter_14_5 in pairs(var_14_4) do
-			var_14_0 = var_14_0 + 1
+		if var_14_4 ~= nil then
+			for iter_14_4, iter_14_5 in pairs(var_14_4) do
+				var_14_0 = var_14_0 + 1
 
-			if ChessTools.GetChapterProgress(iter_14_5) >= 100 then
-				var_14_1 = var_14_1 + 1
+				if ChessTools.GetChapterProgress(iter_14_5) >= 100 then
+					var_14_1 = var_14_1 + 1
+				end
 			end
 		end
 	end
@@ -654,39 +656,43 @@ function var_0_0.GetSubPlotUrl(arg_33_0, arg_33_1)
 			end
 		end
 	else
-		var_33_0 = arg_33_0 == 6010109 and "/subPlotHera" or (arg_33_0 == 6010110 or arg_33_0 == 6010111 or arg_33_0 == 6010112) and "/activityFactoryStoryStage" or arg_33_0 == 6010113 and "/subPlotTyr" or (arg_33_0 == 6010116 or arg_33_0 == 6010117) and "/subPlotLuWuAndZhiMing" or (arg_33_0 == 6010118 or arg_33_0 == 6010119) and (arg_33_1 and "/chapterVariantThoth" or "/subPlotSection") or arg_33_0 == 6010121 and "/summerChessBoardMainEntry" or (arg_33_0 == 6010122 or arg_33_0 == 6010123) and "/subPlotOuMoFeiSi" or "/subPlotSection"
+		var_33_0 = arg_33_0 == 6010109 and "/subPlotHera" or (arg_33_0 == 6010110 or arg_33_0 == 6010111 or arg_33_0 == 6010112) and "/activityFactoryStoryStage" or arg_33_0 == 6010113 and "/subPlotTyr" or (arg_33_0 == 6010116 or arg_33_0 == 6010117) and "/subPlotLuWuAndZhiMing" or (arg_33_0 == 6010118 or arg_33_0 == 6010119) and (arg_33_1 and "/chapterVariantThoth" or "/subPlotSection") or arg_33_0 == 6010121 and "/summerChessBoardMainEntry" or (arg_33_0 == 6010122 or arg_33_0 == 6010123) and "/subPlotOuMoFeiSi" or arg_33_0 == 6010108 and "/athenaStoryStage" or arg_33_0 == 6010129 and "/subPlotLinKage_4_2View" or "/subPlotSection"
 	end
 
 	return var_33_0, var_33_1
 end
 
 function var_0_0.GetOpenSubPlotClient()
-	local var_34_0 = ChapterClientCfg.get_id_list_by_toggle[BattleConst.TOGGLE.SUB_PLOT]
-	local var_34_1
-	local var_34_2
+	local var_34_0
+	local var_34_1 = -1
+	local var_34_2 = ChapterClientCfg.get_id_list_by_toggle[BattleConst.TOGGLE.SUB_PLOT]
 
-	for iter_34_0 = #var_34_0, 1, -1 do
-		local var_34_3 = var_34_0[iter_34_0]
+	for iter_34_0 = #var_34_2, 1, -1 do
+		local var_34_3 = var_34_2[iter_34_0]
+		local var_34_4 = ChapterClientCfg[var_34_3]
+		local var_34_5 = ChapterClientCfg[var_34_3]
 
-		for iter_34_1, iter_34_2 in ipairs(ChapterClientCfg[var_34_3].chapter_list) do
-			if var_0_0.IsOpenSubPlotByTime(iter_34_2) then
-				local var_34_4 = ChapterCfg[iter_34_2].activity_id
-				local var_34_5 = ActivityData:GetActivityData(var_34_4).startTime
+		if var_34_5.show_tag_type == ChapterConst.SHOW_TYPE.LIMIT_TIME then
+			local var_34_6 = ChapterCfg[var_34_5.chapter_list[1]].activity_id
 
-				if not var_34_2 or var_34_2 < var_34_5 then
-					var_34_2 = var_34_5
-					var_34_1 = var_34_3
-				end
+			if ActivityData:GetActivityIsOpen(var_34_6) then
+				return var_34_3
+			end
+		elseif var_34_1 < var_34_4.sort then
+			var_34_1 = var_34_4.sort
+
+			for iter_34_1, iter_34_2 in ipairs(var_34_4.chapter_list) do
+				var_34_0 = var_34_3
 
 				break
 			end
 		end
 	end
 
-	if var_34_1 then
-		return var_34_1
+	if var_34_0 then
+		return var_34_0
 	else
-		return var_34_0[#var_34_0]
+		return var_34_2[#var_34_2]
 	end
 end
 
@@ -1568,10 +1574,21 @@ function var_0_0.GetChapterGroupList(arg_80_0)
 		local var_80_5 = ChapterClientCfg.get_id_list_by_toggle[BattleConst.TOGGLE.SUB_PLOT]
 
 		for iter_80_4, iter_80_5 in ipairs(var_80_5) do
-			table.insert(var_80_1, {
-				2,
-				iter_80_5
-			})
+			local var_80_6 = ChapterClientCfg[iter_80_5]
+
+			if var_80_6.show_tag_type == ChapterConst.SHOW_TYPE.LIMIT_TIME then
+				if ActivityData:GetActivityIsOpen(ChapterCfg[var_80_6.chapter_list[1]].activity_id) then
+					table.insert(var_80_1, {
+						2,
+						iter_80_5
+					})
+				end
+			else
+				table.insert(var_80_1, {
+					2,
+					iter_80_5
+				})
+			end
 		end
 	end
 
@@ -1585,6 +1602,10 @@ function var_0_0.IsChapterSystemLock(arg_81_0)
 		return false
 	end
 
+	if var_81_0.show_tag_type == ChapterConst.SHOW_TYPE.LIMIT_TIME and not ActivityData:GetActivityIsOpen(ChapterCfg[var_81_0.chapter_list[1]].activity_id) then
+		return false
+	end
+
 	local var_81_1 = type(var_81_0.jump_system) == "table" and var_81_0.jump_system[1]
 
 	return var_81_1 and SystemCfg[var_81_1] and SystemCfg[var_81_1].system_hide == 1
@@ -1594,7 +1615,7 @@ function var_0_0.GetChapterShowTypeData(arg_82_0)
 	local var_82_0 = ChapterClientCfg[arg_82_0]
 	local var_82_1
 
-	return var_82_0.show_tag_type == 1 and "activity" or "normal"
+	return var_82_0.show_tag_type == ChapterConst.SHOW_TYPE.ACTIVITY and "activity" or var_82_0.show_tag_type == ChapterConst.SHOW_TYPE.LIMIT_TIME and "limitTime" or "normal"
 end
 
 return var_0_0

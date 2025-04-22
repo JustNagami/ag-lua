@@ -573,6 +573,213 @@
 			0
 		}
 	},
+	[1045101] = {
+		name = "35f0a4b649792d7fa88ac00e79f5be4b",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "87f35f91c28dbec3877dcce12a068c94",
+		MaxUseCount = 0,
+		id = 1045101,
+		EnergyChange = 0,
+		desc = {
+			101045101
+		},
+		element_type = {
+			4
+		},
+		abilities = {
+			1045101
+		}
+	},
+	[1045201] = {
+		name = "e4e4185a156ae0d48e50c4ba8ca7bb11",
+		cd = 6000,
+		strengthen_desc = "",
+		simpleDesc = "05fc7f83084047914fe44ffc2bc45aa3",
+		MaxUseCount = 0,
+		id = 1045201,
+		EnergyChange = 0,
+		desc = {
+			101045201
+		},
+		element_type = {
+			4
+		},
+		abilities = {
+			1045201,
+			1045062
+		}
+	},
+	[1045202] = {
+		name = "dd0d0153fcf8cf1c4c01a5138eb07141",
+		cd = 3000,
+		strengthen_desc = "",
+		simpleDesc = "eb992162affa9e12eb62b07dd7800fa4",
+		MaxUseCount = 0,
+		id = 1045202,
+		EnergyChange = 0,
+		desc = {
+			101045202
+		},
+		element_type = {
+			4
+		},
+		abilities = {
+			1045202
+		}
+	},
+	[1045203] = {
+		name = "81fea2e6dc70fff508fc00435aeab299",
+		cd = 500,
+		strengthen_desc = "",
+		simpleDesc = "5cb58bf1e0542b7257ca1b2a57e0eec0",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1045203,
+		EnergyChange = 0,
+		desc = {
+			101045203
+		},
+		element_type = {
+			4
+		}
+	},
+	[1045209] = {
+		name = "1faed15f753de8807b36541660e36761",
+		cd = 20000,
+		strengthen_desc = "",
+		simpleDesc = "ea3f6db6b242b8a335afba2f4a677de8",
+		MaxUseCount = 0,
+		id = 1045209,
+		EnergyChange = 0,
+		desc = {
+			101045209
+		},
+		element_type = {
+			4
+		},
+		abilities = {
+			1045209
+		}
+	},
+	[1045305] = {
+		name = "2275ac3e0c5339da263dae8ee251bb75",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "37266c68bfdefa9812789afd316b4eb3",
+		MaxUseCount = 2,
+		abilities = "",
+		id = 1045305,
+		EnergyChange = 0,
+		desc = {
+			101045305
+		},
+		element_type = {
+			4
+		}
+	},
+	[1046101] = {
+		name = "042caebd3b6e7a6f5db41bd0ff99cc3f",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "1996d1baf51f05d3da4cdb207c915488",
+		MaxUseCount = 0,
+		id = 1046101,
+		EnergyChange = 0,
+		desc = {
+			101046101
+		},
+		element_type = {
+			6
+		},
+		abilities = {
+			1046101
+		}
+	},
+	[1046201] = {
+		name = "66012dfb4fdeb40bef2aa691d297554b",
+		cd = 6000,
+		strengthen_desc = "",
+		simpleDesc = "551e54a1173ce69b45eb8fb8275c41b3",
+		MaxUseCount = 0,
+		id = 1046201,
+		EnergyChange = 0,
+		desc = {
+			101046201
+		},
+		element_type = {
+			6
+		},
+		abilities = {
+			1046201
+		}
+	},
+	[1046202] = {
+		name = "8a93eedb346f58c6fb6a6e9cb33c57d9",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "1ad0d044a342bbe392697bd0943d775a",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1046202,
+		EnergyChange = 0,
+		desc = {
+			101046202
+		},
+		element_type = {
+			6
+		}
+	},
+	[1046203] = {
+		name = "b837aca5e6be27f5d3838e7bd547b82d",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "a8f79f02950dc006b543243729cfca7f",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1046203,
+		EnergyChange = 0,
+		desc = {
+			101046203
+		},
+		element_type = {
+			6
+		}
+	},
+	[1046209] = {
+		name = "40a0d659577578ef0caeeb4d02cf218a",
+		cd = 20000,
+		strengthen_desc = "",
+		simpleDesc = "a4952ac0134cb579c7a68352ba07c9c4",
+		MaxUseCount = 0,
+		id = 1046209,
+		EnergyChange = 0,
+		desc = {
+			101046209
+		},
+		element_type = {
+			6
+		},
+		abilities = {
+			1046072
+		}
+	},
+	[1046305] = {
+		name = "05939c9c8d22ecfe4edf81ecda303e24",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "963877b5a73da6dfcbc706f64a50305b",
+		MaxUseCount = 2,
+		abilities = "",
+		id = 1046305,
+		EnergyChange = 0,
+		desc = {
+			101046305
+		},
+		element_type = {
+			6
+		}
+	},
 	[1048101] = {
 		name = "0e3fd8458fab0b6be6f66b0401922cfa",
 		cd = 0,
@@ -6669,13 +6876,18 @@
 	[1072101] = {
 		name = "cc681392c90cbe55ab874331e1e51a28",
 		cd = 0,
-		strengthen_desc = "",
 		simpleDesc = "64e92f5369ccb97b85ca8e6e935be613",
 		MaxUseCount = 0,
 		id = 1072101,
 		EnergyChange = 0,
 		desc = {
 			101072101
+		},
+		strengthen_desc = {
+			{
+				107221,
+				21107210121
+			}
 		},
 		element_type = {
 			2
@@ -6687,13 +6899,18 @@
 	[1072201] = {
 		name = "fb9a76f2ee5e8bd9d905744428e82c9a",
 		cd = 8000,
-		strengthen_desc = "",
 		simpleDesc = "4418698d9bb34826a03f655ab3745ed5",
 		MaxUseCount = 0,
 		id = 1072201,
 		EnergyChange = 0,
 		desc = {
 			101072201
+		},
+		strengthen_desc = {
+			{
+				107222,
+				21107220122
+			}
 		},
 		element_type = {
 			2
@@ -6705,13 +6922,18 @@
 	[1072202] = {
 		name = "8cf7167c03bacfda8b7b5bb900774884",
 		cd = 16000,
-		strengthen_desc = "",
 		simpleDesc = "e7827b11b1b8009f658bd4556f83d6e4",
 		MaxUseCount = 0,
 		id = 1072202,
 		EnergyChange = 0,
 		desc = {
 			101072202
+		},
+		strengthen_desc = {
+			{
+				107223,
+				21107220223
+			}
 		},
 		element_type = {
 			2
@@ -6723,13 +6945,18 @@
 	[1072203] = {
 		name = "2ac7fe478a8ab39b61cd90324db4249c",
 		cd = 9000,
-		strengthen_desc = "",
 		simpleDesc = "8d3223281c9d3d56956bd95f1189ae04",
 		MaxUseCount = 0,
 		id = 1072203,
 		EnergyChange = -4,
 		desc = {
 			101072203
+		},
+		strengthen_desc = {
+			{
+				107224,
+				21107220324
+			}
 		},
 		element_type = {
 			2
@@ -9586,6 +9813,34 @@
 			101089208
 		}
 	},
+	[1045208] = {
+		element_type = "",
+		name = "762e896c2877d519f129f625b800bfca",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1045208,
+		EnergyChange = 0,
+		desc = {
+			101045208
+		}
+	},
+	[1089281] = {
+		element_type = "",
+		name = "52c2d9931ff3be4da61b6044c2aa809a",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1089281,
+		EnergyChange = 0,
+		desc = {
+			101089281
+		}
+	},
 	all = {
 		1050101,
 		1050201,
@@ -9615,6 +9870,18 @@
 		1066231,
 		1066209,
 		1066305,
+		1045101,
+		1045201,
+		1045202,
+		1045203,
+		1045209,
+		1045305,
+		1046101,
+		1046201,
+		1046202,
+		1046203,
+		1046209,
+		1046305,
 		1048101,
 		1048201,
 		1048211,
@@ -10104,6 +10371,8 @@
 		1020208,
 		1024281,
 		1095281,
-		1089208
+		1089208,
+		1045208,
+		1089281
 	}
 }

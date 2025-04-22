@@ -53,12 +53,18 @@ function var_0_0.RefreshUI(arg_7_0)
 	arg_7_0.chapterIndexText_.text = var_7_1.desc
 	arg_7_0.chapterNameText_.text = var_7_1.name
 
-	arg_7_0.titleTagController_:SetSelectedState(ChapterTools.GetChapterShowTypeData(var_7_0))
+	local var_7_2 = ChapterTools.GetChapterShowTypeData(var_7_0)
 
-	local var_7_2 = ChapterTools.GetChapterClientFinishPercentage(var_7_0)
+	arg_7_0.titleTagController_:SetSelectedState(var_7_2)
 
-	arg_7_0.percentageImage_.fillAmount = var_7_2
-	arg_7_0.percentageText_.text = string.format("%s<size=28>%%</size>", math.floor(var_7_2 * 100))
+	if var_7_2 == "limitTime" then
+		arg_7_0.timeText_.text = ActivityTools.GetActivityLostTimeStrWith2Unit(ChapterCfg[var_7_1.chapter_list[1]].activity_id)
+	end
+
+	local var_7_3 = ChapterTools.GetChapterClientFinishPercentage(var_7_0)
+
+	arg_7_0.percentageImage_.fillAmount = var_7_3
+	arg_7_0.percentageText_.text = string.format("%s<size=28>%%</size>", math.floor(var_7_3 * 100))
 end
 
 return var_0_0

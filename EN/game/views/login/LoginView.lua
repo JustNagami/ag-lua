@@ -390,7 +390,7 @@ function var_0_0.RefreshState(arg_37_0)
 
 	if arg_37_0.isOverSeas_ then
 		SetActive(arg_37_0.levelBtn_.gameObject, false)
-		SetActive(arg_37_0.forumGo_, true)
+		SetActive(arg_37_0.suggestGo_, false)
 
 		if SDKTools.GetIsThisServer({
 			"tw",
@@ -398,12 +398,8 @@ function var_0_0.RefreshState(arg_37_0)
 			"en"
 		}) then
 			SetActive(arg_37_0.forumGo_, false)
-		end
-
-		if SDKTools.GetIsThisServer({
-			"tw"
-		}) then
-			-- block empty
+		else
+			SetActive(arg_37_0.forumGo_, true)
 		end
 	else
 		SetActive(arg_37_0.levelBtn_.gameObject, true)

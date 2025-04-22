@@ -43,6 +43,10 @@
 		activity_theme = 29,
 		main_ui_path = "Widget/System/Activity_Resident/Activity_HeroTrialUI/Activity_HeroTrialUI"
 	},
+	[34] = {
+		activity_theme = 34,
+		main_ui_path = "Widget/System/Activity_Resident/Activity_HeroTrialUI/Activity_HeroTrialUI"
+	},
 	all = {
 		14,
 		17,
@@ -54,6 +58,7 @@
 		24,
 		27,
 		28,
-		29
+		29,
+		34
 	}
 }

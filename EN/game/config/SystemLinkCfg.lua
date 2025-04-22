@@ -3052,7 +3052,7 @@
 		asset_pend_key = "",
 		link = "/activityPushBoxMaterial",
 		pagename = "",
-		activity_id = 232761,
+		activity_id = 3627617,
 		id = 15302,
 		icon = "icon_access_site_white",
 		system_id = 10301,
@@ -3060,7 +3060,7 @@
 			"activityID"
 		},
 		params = {
-			232761
+			3627617
 		}
 	},
 	[15401] = {
@@ -3259,6 +3259,42 @@
 		system_id = 10301,
 		paramName = {
 			"selectID"
+		}
+	},
+	[18001] = {
+		text_display_1 = "37866238a8879312b0d4eaae4a97c48b",
+		text_display_2 = "0afd36acda1806f4f02196f40e2aeaef",
+		text_invalid = 0,
+		need_hide = 1,
+		asset_pend_key = "",
+		link = "/activityMain_4_2",
+		pagename = "",
+		activity_id = 341001,
+		params = "",
+		id = 18001,
+		icon = "icon_access_site_white",
+		system_id = 10301,
+		paramName = {
+			"activityID",
+			"subActivityID"
+		}
+	},
+	[359001] = {
+		text_display_1 = "",
+		text_display_2 = "",
+		text_invalid = 0,
+		need_hide = 1,
+		asset_pend_key = "",
+		link = "/activityMain_2_8",
+		pagename = "",
+		activity_id = 3610001,
+		params = "",
+		id = 359001,
+		icon = "icon_access_site_white",
+		system_id = 10301,
+		paramName = {
+			"activityID",
+			"subActivityID"
 		}
 	},
 	[2510] = {
@@ -4164,6 +4200,8 @@
 		15801,
 		15706,
 		15707,
+		18001,
+		359001,
 		2510,
 		2511,
 		2512,

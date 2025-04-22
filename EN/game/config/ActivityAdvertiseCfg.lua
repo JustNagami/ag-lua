@@ -326,6 +326,27 @@
 			525
 		}
 	},
+	[45] = {
+		activity_id = 342101,
+		id = 45,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_GodEater_1",
+		order = 100,
+		reward_list = {},
+		jump_system = {
+			18001,
+			341001
+		}
+	},
+	[46] = {
+		activity_id = 342102,
+		id = 46,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_104501_104601",
+		order = 100,
+		reward_list = {},
+		jump_system = {
+			525
+		}
+	},
 	[82101] = {
 		activity_id = 82101,
 		id = 82101,
@@ -391,6 +412,8 @@
 		31,
 		32,
 		33,
+		45,
+		46,
 		82101,
 		92101,
 		102101

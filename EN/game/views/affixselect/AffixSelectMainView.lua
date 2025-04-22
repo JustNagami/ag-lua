@@ -145,7 +145,7 @@ function var_0_0.UpdateView(arg_21_0)
 
 	local var_21_2 = ActivityAffixSelectData:GetRewardStatus(arg_21_0.activityId, var_21_0)
 
-	if var_21_2 == 0 then
+	if var_21_2 == 3 then
 		arg_21_0.reward_btnstateController_:SetSelectedState("received")
 	elseif var_21_2 == 1 then
 		arg_21_0.reward_btnstateController_:SetSelectedState("normal")

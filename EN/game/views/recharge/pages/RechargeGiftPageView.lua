@@ -37,8 +37,10 @@ function var_0_1.AddUIListener(arg_6_0)
 	if SDKTools.GetIsInputServer("kr") then
 		arg_6_0:AddBtnListener(arg_6_0.refundbtn_, nil, function()
 			JumpTools.OpenPageByJump("gameHelpPro", {
+				hideHomeBtn = 1,
+				isPrefab = true,
 				pages = {
-					"TextureConfig/RechargeUI/RefundPolicy@kr"
+					"Widget/System/Recharge/RefundPolicyKR_01"
 				}
 			})
 		end)

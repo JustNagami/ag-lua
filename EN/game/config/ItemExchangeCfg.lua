@@ -271,7 +271,7 @@
 	},
 	[5309501] = {
 		item_id = 53095,
-		activity_id = 232761,
+		activity_id = 3627617,
 		jump_system = "",
 		id = 5309501,
 		num = 1,
@@ -285,7 +285,7 @@
 	},
 	[5309601] = {
 		item_id = 53096,
-		activity_id = 232761,
+		activity_id = 3627617,
 		jump_system = "",
 		id = 5309601,
 		num = 1,
@@ -299,7 +299,7 @@
 	},
 	[5309603] = {
 		item_id = 53096,
-		activity_id = 232761,
+		activity_id = 3627617,
 		jump_system = "",
 		id = 5309603,
 		num = 3,
@@ -313,7 +313,7 @@
 	},
 	[5309703] = {
 		item_id = 53097,
-		activity_id = 232761,
+		activity_id = 3627617,
 		jump_system = "",
 		id = 5309703,
 		num = 3,

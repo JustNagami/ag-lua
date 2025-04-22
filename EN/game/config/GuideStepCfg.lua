@@ -12880,6 +12880,1131 @@
 			-218
 		}
 	},
+	[12101] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12101,
+		talk_content = "86499414ff6a31d5452783af655b473a",
+		params = {},
+		guide_component = {
+			"common",
+			"ActivityGodEaterGameMainView",
+			{
+				"guideComponents",
+				"guide_0"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-367
+		}
+	},
+	[12102] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12102,
+		talk_content = "117c62ce13d142f6197dbf617bd87749",
+		params = {},
+		guide_component = {
+			"common",
+			"ActivityGodEaterGameMainView",
+			{
+				"guideComponents",
+				"guide_5"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			367,
+			322
+		}
+	},
+	[12103] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12103,
+		talk_content = "38178145f0b6fb37a32800021b55c053",
+		params = {},
+		guide_component = {
+			"common",
+			"ActivityGodEaterGameMainView",
+			{
+				"guideComponents",
+				"guide_4"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			544,
+			-181.5
+		}
+	},
+	[12104] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12104,
+		talk_content = "edb405adcdbd6631db78d8c3719ff12e",
+		params = {},
+		guide_component = {
+			"common",
+			"ActivityGodEaterGameMainView",
+			{
+				"guideComponents",
+				"guide_3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			99.3,
+			-70,
+			42
+		}
+	},
+	[12105] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12105,
+		talk_content = "69b47cd64d41c49d335e37d34201e08c",
+		params = {},
+		guide_component = {
+			"common",
+			"ActivityGodEaterGameMainView",
+			{
+				"guideComponents",
+				"guide_2"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			551.08,
+			180.62
+		}
+	},
+	[12106] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12106,
+		talk_content = "8befb2ebd5e97292eb284eb2ecc07b9b",
+		params = {},
+		guide_component = {
+			"common",
+			"ActivityGodEaterGameMainView",
+			{
+				"guideComponents",
+				"guide_1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-134.13,
+			-53.398
+		}
+	},
+	[12107] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12107,
+		talk_content = "945a98efeb42ebe071222854ef9c2400",
+		params = {},
+		guide_component = {
+			"common",
+			"ActivityGodEaterGameMainView",
+			{
+				"giftBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			743,
+			218
+		}
+	},
+	[12201] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12201,
+		talk_content = "427341ed362ed630c904891dc76543d8",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerSelectLevelView",
+			{
+				"changeHeroBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			645,
+			159
+		}
+	},
+	[12202] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12202,
+		talk_content = "b653fa34ed05e7f427758c6e9d7d1d8a",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerSelectLevelView",
+			{
+				"panelBtn1_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			988,
+			489
+		}
+	},
+	[12301] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12301,
+		talk_content = "5eb50bed4658e0f6f7ed17670bd35aaf",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameMainView",
+			{
+				"heroBtn_"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			572.5,
+			369.7
+		}
+	},
+	[12302] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12302,
+		talk_content = "9caa675d9d38e88b0e5eaff276cfa38e",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameMainView",
+			{
+				"select1Btn_"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			1044.7,
+			450.4
+		}
+	},
+	[12303] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12303,
+		talk_content = "6f86de6e191ba3cb3ad963fad08266e0",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameMainView",
+			{
+				"teachBtn_"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			434.85,
+			0
+		}
+	},
+	[12304] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12304,
+		talk_content = "4e3be53bbcf50ff40f11480a3c42b883",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce1"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			-100.59
+		}
+	},
+	[12305] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12305,
+		talk_content = "89e81f3cbb9c1879b4f9622584f48cc5",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce2"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			86.59
+		}
+	},
+	[12306] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12306,
+		talk_content = "d70c12b3608448055cbaadcb415b624c",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce3"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-42.76,
+			86.59
+		}
+	},
+	[12307] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12307,
+		talk_content = "db222299e0a5c7f3107cb38e1892ed3c",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce4"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			75.13,
+			86.59
+		}
+	},
+	[12308] = {
+		talk_anchors = 1,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12308,
+		talk_content = "b3d5b75cd551c4ecc9e9d0e2f3e6c7a6",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce5"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			907.51,
+			-274.1
+		}
+	},
+	[12309] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12309,
+		talk_content = "93be03def6e12a4f3d0da5eda9f3332d",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce1"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			-100.59
+		}
+	},
+	[12310] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12310,
+		talk_content = "f5422a97417a15e0ba38acec11cb7c13",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce1"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			-100.59
+		}
+	},
+	[12311] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12311,
+		talk_content = "1ca3f2939e241e3e5e8059f526d7935d",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce2"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			86.59
+		}
+	},
+	[12312] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12312,
+		talk_content = "7bec3fec98cf2cc7173de2070af5492a",
+		params = {
+			"pointerDown"
+		},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_step1"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			86.59
+		}
+	},
+	[12313] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12313,
+		talk_content = "a97c3844158a5e936d366c3e26b6fe47",
+		params = {
+			"pointerUp"
+		},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_step1"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			86.59
+		}
+	},
+	[12314] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12314,
+		talk_content = "c9fe62cd9cd24a89899d8065c3e019fe",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce6"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			246.1,
+			213.98
+		}
+	},
+	[12315] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12315,
+		talk_content = "8be621ff8b76d1346530c284b6f5a96c",
+		params = {
+			"pointerDown"
+		},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_step2"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			79.9,
+			101.21
+		}
+	},
+	[12316] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12316,
+		talk_content = "903c91c9ed245688595d2562f82b49e5",
+		params = {
+			"pointerUp"
+		},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_step2"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			79.9,
+			101.21
+		}
+	},
+	[12317] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12317,
+		talk_content = "20362d410962fefc954966ad8647a28f",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameChooseSkillView",
+			{
+				"gameObject_"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-611.64,
+			0
+		}
+	},
+	[12318] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12318,
+		talk_content = "4028dc2ed417fd3f684f5ea0116dcc5f",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameChooseSkillView",
+			{
+				"itemList_",
+				1,
+				"chooseBtn_"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-611.64,
+			0
+		}
+	},
+	[12319] = {
+		talk_anchors = 8,
+		type = "ClickButton",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12319,
+		talk_content = "e043cabe5e70a8eb12b1130c260b538f",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameChooseSkillView",
+			{
+				"chooseBtn_"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-611.64,
+			115.98
+		}
+	},
+	[12320] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12320,
+		talk_content = "323e1df2e547cbec2c017970de36e675",
+		params = {
+			"pointerDown"
+		},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_step3"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-45.4,
+			88.65
+		}
+	},
+	[12321] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12321,
+		talk_content = "1e19f3a69e0317567b042c17c59214f3",
+		params = {
+			"pointerUp"
+		},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_step3"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-45.4,
+			88.65
+		}
+	},
+	[12322] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12322,
+		talk_content = "021d19ae6bd9a70ebb3d3016353aa0e8",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce7"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			-251.7
+		}
+	},
+	[12323] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12323,
+		talk_content = "7be7c6c6f4cbc667cc44773579f40575",
+		params = {
+			"skillSelected"
+		},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce8"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-436.5,
+			-232.6
+		}
+	},
+	[12324] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12324,
+		talk_content = "daeb664a08868e9e7c804c0173434d21",
+		params = {
+			"skillRelease"
+		},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce7"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			-251.7
+		}
+	},
+	[12401] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12401,
+		talk_content = "e2e62bc0618c4da4ae94a4d1b24ebd2d",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerGameView",
+			{
+				"guideComponents",
+				"guide_2"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			155.9,
+			-197.4
+		}
+	},
+	[12402] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12402,
+		talk_content = "21d55621538b6be664e150e6ac502fad",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerGameView",
+			{
+				"guideComponents",
+				"guide_1"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-394.65,
+			-174.65
+		}
+	},
+	[12403] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12403,
+		talk_content = "7065ebd41be57d06ee34e7ce9984b6be",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerGameView",
+			{
+				"skillBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			56.3,
+			160
+		}
+	},
+	[12404] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12404,
+		talk_content = "d5337bb1040a786b9e166bd761c2257e",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerGameView",
+			{
+				"boomBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			521,
+			143.24
+		}
+	},
+	[12405] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12405,
+		talk_content = "873eba2b788a336e9f4ac8ee833dde4f",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerGameView",
+			{
+				"guideComponents",
+				"guide_0"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-402,
+			-435
+		}
+	},
+	[12501] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12501,
+		talk_content = "99373aadc7a72cdbeffe88f4ec63d277",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerGameView",
+			{
+				"guideComponents",
+				"guide_3"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			-100.59
+		}
+	},
+	[12502] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12502,
+		talk_content = "bf14ef389cdf0adc0f25211e5a8acf6b",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerGameView",
+			{
+				"guideComponents",
+				"guide_4"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			-100.59
+		}
+	},
+	[12601] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12601,
+		talk_content = "1a0bf814da8944e7a15a5bd9f2001d42",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameLvUpView",
+			{
+				"bgBtn_"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-294.3
+		}
+	},
+	[12602] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12602,
+		talk_content = "86d797e0be85de7fc64993bb18ae55b9",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameChooseSkillView",
+			{
+				"gameObject_"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-651.47,
+			-380.41
+		}
+	},
+	[12603] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12603,
+		talk_content = "02392d110ccd4aa6c483a31a9fa11f0e",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameChooseSkillView",
+			{
+				"itemContentTrs_"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-651.47,
+			-380.41
+		}
+	},
+	[12604] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12604,
+		talk_content = "68a3e7ca5d0e103d47b62eb44ea2fb22",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameChooseSkillView",
+			{
+				"itemList_",
+				1,
+				"chooseBtn_"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-651.47,
+			-380.41
+		}
+	},
+	[12605] = {
+		talk_anchors = 8,
+		type = "ClickButton",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12605,
+		talk_content = "5e553b16efea27696ba7176d1ceeb4ba",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameChooseSkillView",
+			{
+				"chooseBtn_"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-611.64,
+			115.98
+		}
+	},
+	[12606] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12606,
+		talk_content = "ddf456d326ce2774903526c7bc85f091",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce6"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			246.1,
+			213.98
+		}
+	},
+	[12607] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12607,
+		talk_content = "1e7a8839ac4ccef3e3d34d6014c267a3",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce6"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			246.1,
+			213.98
+		}
+	},
+	[12608] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12608,
+		talk_content = "5e536988d4c91a47e02e533afd845d34",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce1"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			-100.59
+		}
+	},
+	[12609] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12609,
+		talk_content = "636f57173b6e9a883fee53449bd241ae",
+		params = {},
+		guide_component = {},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			0
+		}
+	},
 	all = {
 		101,
 		102,
@@ -13428,6 +14553,55 @@
 		10202,
 		10203,
 		10301,
-		10401
+		10401,
+		12101,
+		12102,
+		12103,
+		12104,
+		12105,
+		12106,
+		12107,
+		12201,
+		12202,
+		12301,
+		12302,
+		12303,
+		12304,
+		12305,
+		12306,
+		12307,
+		12308,
+		12309,
+		12310,
+		12311,
+		12312,
+		12313,
+		12314,
+		12315,
+		12316,
+		12317,
+		12318,
+		12319,
+		12320,
+		12321,
+		12322,
+		12323,
+		12324,
+		12401,
+		12402,
+		12403,
+		12404,
+		12405,
+		12501,
+		12502,
+		12601,
+		12602,
+		12603,
+		12604,
+		12605,
+		12606,
+		12607,
+		12608,
+		12609
 	}
 }

@@ -287,6 +287,14 @@
 		mail_desc = "852ac81eb695167fad89f2983ca4b7db",
 		mail_type = 0
 	},
+	[1041] = {
+		mail_title = "d6e6cf7da319d87d40ce82ff50c8f80b",
+		link_type = 0,
+		id = 1041,
+		mail_sender = "b6f7b0301187c1af6ca769bf237f7f81",
+		mail_desc = "359e70afa8b139827913dec75fab28d4",
+		mail_type = 0
+	},
 	[2001] = {
 		mail_title = "b40d5b1c06fadd4d7cc402e5d57a1c91",
 		link_type = 0,
@@ -477,6 +485,14 @@
 		id = 2025,
 		mail_sender = "1944efdbfbafb9114f2e0813ad329148",
 		mail_desc = "371d28089f35ee5ac336f3848cb609aa",
+		mail_type = 0
+	},
+	[2026] = {
+		mail_title = "1007055d05f3fb751c2a627ad089f003",
+		link_type = 0,
+		id = 2026,
+		mail_sender = "a50f829a6788f84c5785044cb69491e0",
+		mail_desc = "8a99f2a96b23964017fe5da09b39baa9",
 		mail_type = 0
 	},
 	[2999] = {
@@ -1487,6 +1503,78 @@
 		mail_desc = "eab4dbedb7a75f9b05e40f6dc972099f",
 		mail_type = 0
 	},
+	[640201] = {
+		mail_title = "e1976dbff7ee0c0cee6bb0c9ffa79843",
+		link_type = 0,
+		id = 640201,
+		mail_sender = "478b229bd8858877148a54a69edbbf57",
+		mail_desc = "990b54fca555065afd92ef3993a94bd2",
+		mail_type = 1
+	},
+	[640202] = {
+		mail_title = "c5f3a075947f87abccb4f78074f11e16",
+		link_type = 0,
+		id = 640202,
+		mail_sender = "271bf1790feda03a171c4f4baf24e222",
+		mail_desc = "43168f091013c6791f9785d321c9bf9d",
+		mail_type = 1
+	},
+	[640203] = {
+		mail_title = "9b03a1425b3d4ee52642e45884911bee",
+		link_type = 0,
+		id = 640203,
+		mail_sender = "48451010cf57b122ece5f1537e11527f",
+		mail_desc = "97f859793a8dc00f38f17e1ab5ff04ea",
+		mail_type = 1
+	},
+	[640204] = {
+		mail_title = "f3d735a2a85af9fa0a3d8d936841c7dc",
+		link_type = 0,
+		id = 640204,
+		mail_sender = "4d0c98855fabb82fc724c92f0efa2777",
+		mail_desc = "24ef44c8e977bba5ff507cb25df8fd09",
+		mail_type = 1
+	},
+	[640205] = {
+		mail_title = "9013dfe4523bdf54b6d30c1186fe94ef",
+		link_type = 0,
+		id = 640205,
+		mail_sender = "d11580c716c04a27126ffed2a732cf4f",
+		mail_desc = "af53719ce7fb6a4d10fac06742776458",
+		mail_type = 1
+	},
+	[640206] = {
+		mail_title = "8852fa590550fed385c17829fc66b8c2",
+		link_type = 0,
+		id = 640206,
+		mail_sender = "e72a19d55f874ae70bad14f08c416e4a",
+		mail_desc = "0a599f3b73a6bedba740fc85fb0f5891",
+		mail_type = 1
+	},
+	[640207] = {
+		mail_title = "27d4275ed8308725be709dcf19119099",
+		link_type = 0,
+		id = 640207,
+		mail_sender = "88613e9d15d17bdf93c1cc69932fa621",
+		mail_desc = "d2c6c76e48348bd4e670dfb277a7e4af",
+		mail_type = 1
+	},
+	[640208] = {
+		mail_title = "11a42dc37b074707a985b90a7909e1a9",
+		link_type = 0,
+		id = 640208,
+		mail_sender = "048ba3b5e86fc44a24a479cc23d9fa07",
+		mail_desc = "adf99ca573b372b4ea173f071cdc822e",
+		mail_type = 1
+	},
+	[640209] = {
+		mail_title = "dada658e3a8ea086437127a99fdfcd05",
+		link_type = 0,
+		id = 640209,
+		mail_sender = "34ad7a632ca0d274772f8569edfcbf98",
+		mail_desc = "09f4996d1a55b77bb17f0f0b2ce97c94",
+		mail_type = 1
+	},
 	[8003] = {
 		mail_title = "9376dab0555232cee79700dae582ce50",
 		link_type = 1,
@@ -1796,6 +1884,7 @@
 		1034,
 		1035,
 		1036,
+		1041,
 		2001,
 		2002,
 		2003,
@@ -1820,6 +1909,7 @@
 		2023,
 		2024,
 		2025,
+		2026,
 		2999,
 		3001,
 		3002,
@@ -1946,6 +2036,15 @@
 		8001,
 		8002,
 		9001,
+		640201,
+		640202,
+		640203,
+		640204,
+		640205,
+		640206,
+		640207,
+		640208,
+		640209,
 		8003,
 		8004,
 		11001,

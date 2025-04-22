@@ -242,5 +242,9 @@
 	TetrisGameSkill = {
 		path = "TextureConfig/BackHouseUI/TetrisGameSkill/",
 		name = "TetrisGameSkill"
+	},
+	CivilizationGame = {
+		path = "TextureConfig/VersionUI/V4_2_GodEaterUI/V4_2_GodEaterUI_Culture/",
+		name = "CivilizationGame"
 	}
 }

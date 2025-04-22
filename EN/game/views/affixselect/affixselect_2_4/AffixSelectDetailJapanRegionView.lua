@@ -2,7 +2,7 @@
 local var_0_1 = class("AffixSelectDetailJapanRegionView", var_0_0)
 
 function var_0_1.UIName(arg_1_0)
-	return "Widget/Version/NorseUI_3_2/NorseUI_3_2_AffixSelect/NorseUI_3_2_StageDetailsUI"
+	return "Widget/Version/V3_5_9_CustomizeUI/V3_5_9_AffixSelect/V3_5_9_StageDetailsUI"
 end
 
 function var_0_1.AddUIListener(arg_2_0)

@@ -5862,7 +5862,7 @@
 		value2 = "",
 		value = {
 			{
-				232761,
+				3627617,
 				4
 			}
 		}
@@ -5872,7 +5872,7 @@
 		value2 = "",
 		value = {
 			{
-				232761,
+				3627617,
 				100
 			}
 		}
@@ -5882,7 +5882,7 @@
 		value2 = "",
 		value = {
 			{
-				232761,
+				3627617,
 				60
 			}
 		}
@@ -5892,7 +5892,7 @@
 		value2 = "",
 		value = {
 			{
-				232761,
+				3627617,
 				100
 			}
 		}
@@ -5902,7 +5902,7 @@
 		value2 = "",
 		value = {
 			{
-				232761,
+				3627617,
 				3
 			}
 		}
@@ -5912,7 +5912,7 @@
 		value2 = "",
 		value = {
 			{
-				232761,
+				3627617,
 				54053
 			}
 		}
@@ -7703,6 +7703,87 @@
 				14,
 				"com_white_icon_group_9_c"
 			}
+		}
+	},
+	activity_god_eater_week_boss = {
+		id = "activity_god_eater_week_boss",
+		value2 = "",
+		value = {
+			{
+				5250211,
+				1000000,
+				5250201,
+				1210201
+			},
+			{
+				5250212,
+				2000000,
+				5250201,
+				1210202
+			},
+			{
+				5250213,
+				3000000,
+				5250201,
+				1210203
+			}
+		}
+	},
+	godeater_goldminer_game_des = {
+		id = "godeater_goldminer_game_des",
+		value2 = "",
+		value = {
+			"Widget/Version/V4_2_GodEaterUI/V4_2_GodEaterUI_GoldenMiner/V4_2_GodEater_GoldenMiner_Description_01",
+			"Widget/Version/V4_2_GodEaterUI/V4_2_GodEaterUI_GoldenMiner/V4_2_GodEater_GoldenMiner_Description_02"
+		}
+	},
+	godeater_subactivity_unlock1 = {
+		id = "godeater_subactivity_unlock1",
+		value2 = "",
+		value = {
+			2
+		}
+	},
+	multi_heart_demon_basescore = {
+		id = "multi_heart_demon_basescore",
+		value2 = "",
+		value = {
+			6000000
+		}
+	},
+	multi_heart_demon_timescore = {
+		id = "multi_heart_demon_timescore",
+		value2 = "",
+		value = {
+			5
+		}
+	},
+	multi_heart_demon_hitscore = {
+		id = "multi_heart_demon_hitscore",
+		value2 = "",
+		value = {
+			10000
+		}
+	},
+	multi_heart_demon_hpscore = {
+		id = "multi_heart_demon_hpscore",
+		value2 = "",
+		value = {
+			1000000
+		}
+	},
+	multi_heart_demon_boss_hp = {
+		id = "multi_heart_demon_boss_hp",
+		value2 = "",
+		value = {
+			1084465
+		}
+	},
+	multi_heart_demon_attribute_factor = {
+		id = "multi_heart_demon_attribute_factor",
+		value2 = "",
+		value = {
+			4000
 		}
 	}
 }

@@ -1009,6 +1009,10 @@
 		component = DrawServantSelectView
 	},
 	{
+		name = "drawGodEaterSelect",
+		component = GodEaterDrawServantSelectView
+	},
+	{
 		name = "drawHeroSelect",
 		component = DrawHeroSelectView
 	},
@@ -2707,16 +2711,52 @@
 		component = SoloHeartDemonEnterView
 	},
 	{
+		name = "MultHeartDemonEnter",
+		component = MultHeartDemonEnterView
+	},
+	{
+		name = "MultHeartDemonRankSquads",
+		component = MultHeartDemonRankSquadsView
+	},
+	{
+		name = "MultHeartDemonOver",
+		component = MultHeartDemonOverView
+	},
+	{
+		name = "MultHeartDemonCombine",
+		component = MultHeartDemonCombineView
+	},
+	{
+		name = "multHeartDemonHeroTeamInfo",
+		component = MultHeartDemonHeroTeam
+	},
+	{
+		name = "multHeartDemonReport",
+		component = MultHeartDemonReportView
+	},
+	{
 		name = "soloHeartDemonMain",
 		component = SoloHeartDemonMainView
+	},
+	{
+		name = "multHeartDemonMain",
+		component = MultHeartDemonMainView
 	},
 	{
 		name = "soloHeartDemonRank",
 		component = SoloHeartDemonRankView
 	},
 	{
+		name = "multHeartDemonRank",
+		component = MultHeartDemonRankView
+	},
+	{
 		name = "soloHeartDemonReward",
 		component = SoloHeartDemonRewardView
+	},
+	{
+		name = "multHeartDemonReward",
+		component = MultHeartDemonRewardView
 	},
 	{
 		name = "soloHeartDemonInfo",
@@ -2725,6 +2765,10 @@
 	{
 		name = "soloHeartDemonResult",
 		component = SoloHeartDemonResultView
+	},
+	{
+		name = "multHeartDemonResult",
+		component = MultHeartDemonResultView
 	},
 	{
 		name = "summerHeroTrialActivity",
@@ -3089,6 +3133,11 @@
 		component = SubPlotOuMoFeiSiView
 	},
 	{
+		name = "subPlotLinKage_4_2View",
+		ignoreMerge = true,
+		component = SubPlotLinKage_4_2View
+	},
+	{
 		name = "volumeMusicMain",
 		component = VolumeMusicMainView
 	},
@@ -3366,6 +3415,10 @@
 		component = ActivityMainToggleBaseView
 	},
 	{
+		name = "activityMain_4_2",
+		component = ActivityMainToggleBaseView
+	},
+	{
 		name = "heroPreviewMain",
 		component = HeroPreviewMain
 	},
@@ -3584,6 +3637,10 @@
 	{
 		name = "activityAthenaStoryStage",
 		component = ActivityAthenaStoryView
+	},
+	{
+		name = "athenaStoryStage",
+		component = AthenaStoryView
 	},
 	{
 		name = "activityFactoryStoryStage",
@@ -4088,6 +4145,10 @@
 	{
 		name = "activityPtScroll",
 		component = ActivityPtScrollView
+	},
+	{
+		name = "activityPtScroll_4_2",
+		component = ActivityPtScrollView_4_2
 	},
 	{
 		name = "activityPtScrollSectionInfo",
@@ -4656,6 +4717,14 @@
 	{
 		name = "newWarChessHeroTeamInfoView",
 		component = HeroTeamInfoNewWarChessView
+	},
+	{
+		name = "MultHeartDemonResultView",
+		component = MultHeartDemonWinView
+	},
+	{
+		name = "MultHeartDemonFailView",
+		component = MultHeartDemonFailView
 	},
 	{
 		name = "snowballGameControlUI",
@@ -5786,6 +5855,14 @@
 		component = CustomStickerCollectPopView
 	},
 	{
+		name = "dailyMonsterMain",
+		component = DailyMonsterMain
+	},
+	{
+		name = "dailyMonsterSectionInfo",
+		component = DailyMonsterSectionInfoView
+	},
+	{
 		name = "challengeRogueTeamEntrace",
 		component = ChallengeRogueTeamEntraceView
 	},
@@ -5956,5 +6033,89 @@
 	{
 		name = "operationRushAniView",
 		component = OperationRushAniView
+	},
+	{
+		name = "civilizationGameView",
+		component = CivilizationGameView
+	},
+	{
+		name = "civilizationGameChooseSkillView",
+		component = CivilizationGameChooseSkillView
+	},
+	{
+		name = "civilizationGameMainView",
+		component = CivilizationGameMainView
+	},
+	{
+		name = "civilizationGameHeroView",
+		component = CivilizationGameHeroView
+	},
+	{
+		name = "civilizationGameIlluView",
+		component = CivilizationGameIlluView
+	},
+	{
+		name = "civilizationGameLvUpView",
+		component = CivilizationGameLvUpView
+	},
+	{
+		name = "civilizationGameOverView",
+		component = CivilizationGameOverView
+	},
+	{
+		name = "ActivityGodEaterGameMainView",
+		component = ActivityGodEaterGameMainView
+	},
+	{
+		name = "ActivityGodEaterMilestoneView",
+		component = ActivityGodEaterMilestoneView
+	},
+	{
+		name = "ActivityGodEaterGameRewardView",
+		component = ActivityGodEaterGameRewardView
+	},
+	{
+		name = "ActivityGodEaterGameTaskView",
+		component = ActivityGodEaterGameTaskView
+	},
+	{
+		name = "ActivityGodEaterLvUpView",
+		component = ActivityGodEaterLvUpView
+	},
+	{
+		name = "goldMinerSelectLevelView",
+		component = GoldMinerSelectLevelView
+	},
+	{
+		name = "goldMinerGameView",
+		component = GoldMinerGameView
+	},
+	{
+		name = "weekBossMainView",
+		component = WeekBossMainView
+	},
+	{
+		name = "weekBossHeroView",
+		component = WeekBossHeroView
+	},
+	{
+		name = "eatGodBattleEnterView",
+		component = EatGodBattleEnterView
+	},
+	{
+		name = "battleEatGodResultView",
+		component = BattleEatGodResultView
+	},
+	{
+		name = "goldMinerStageSectionView",
+		component = GoldMinerStageSectionView
+	},
+	{
+		name = "goldMinerGameEndView",
+		component = GoldMinerGameEndView
+	},
+	{
+		name = "activityGodEaterGiftPopView",
+		component = ActivityGodEaterGiftPopView
 	}
 }

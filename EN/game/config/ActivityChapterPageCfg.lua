@@ -89,6 +89,24 @@
 		prefab_path = "Widget/Version/ShashwatUI_Com/ShashwatUI_3_6_PlotUI",
 		id = 291201
 	},
+	[341021] = {
+		chapter_type = 2,
+		chapter_client_id = 6010029,
+		prefab_path = "Widget/Version/V4_2_GodEaterUI/V4_2_GodEaterUI_Plot/V4_2_GodEaterUI_PlotUI",
+		id = 341021
+	},
+	[3612003] = {
+		chapter_type = 2,
+		chapter_client_id = 6010002,
+		prefab_path = "Widget/Version/V3_5_9_CustomizeUI/V3_5_9_PlotUI/V3_5_9_HelPlotUI",
+		id = 3612003
+	},
+	[3610206] = {
+		chapter_type = 2,
+		chapter_client_id = 6010017,
+		prefab_path = "Widget/Version/V3_5_9_CustomizeUI/V3_5_9_PlotUI/V3_5_9_AthenaPlotUI",
+		id = 3610206
+	},
 	all = {
 		141200,
 		141204,
@@ -104,6 +122,9 @@
 		241202,
 		271201,
 		281201,
-		291201
+		291201,
+		341021,
+		3612003,
+		3610206
 	}
 }

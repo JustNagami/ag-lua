@@ -21,10 +21,10 @@ function var_0_0.Dispose(arg_3_0)
 end
 
 function var_0_0.SetData(arg_4_0, arg_4_1)
+	arg_4_0:SetActive(true)
+
 	arg_4_0.icon_.sprite = getAffixSprite(arg_4_1)
 	arg_4_0.text_.text = GetI18NText(getAffixName(arg_4_1))
-
-	arg_4_0:SetActive(true)
 end
 
 function var_0_0.SetActive(arg_5_0, arg_5_1)

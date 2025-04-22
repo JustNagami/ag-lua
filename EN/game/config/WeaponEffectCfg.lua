@@ -2729,8 +2729,14 @@
 		spec_char = {
 			1072
 		},
-		strengthen_description = {},
-		simple_strength_description = {}
+		strengthen_description = {
+			107241,
+			220107201
+		},
+		simple_strength_description = {
+			107241,
+			"0667b4fddf8d20e52d8fb230caba071d"
+		}
 	},
 	[107401] = {
 		simple_description = "f531310d0c188ea40729ce1015415f19",
@@ -3627,6 +3633,106 @@
 		strengthen_description = {},
 		simple_strength_description = {}
 	},
+	[104501] = {
+		simple_description = "7157a2bd4f3a350ff0f9c550087e2e53",
+		id = 104501,
+		description = {
+			500104501
+		},
+		level_param = {
+			{
+				100,
+				100,
+				100,
+				100,
+				100,
+				100,
+				100
+			},
+			{
+				100,
+				100,
+				100,
+				100,
+				100,
+				100,
+				100
+			},
+			{
+				100,
+				100,
+				100,
+				100,
+				100,
+				100,
+				100
+			},
+			{
+				100,
+				100,
+				100,
+				100,
+				100,
+				100,
+				100
+			},
+			{
+				50,
+				50,
+				50,
+				50,
+				50,
+				50,
+				50
+			}
+		},
+		spec_char = {
+			1045
+		},
+		strengthen_description = {},
+		simple_strength_description = {}
+	},
+	[104601] = {
+		simple_description = "0174cb3c652116e348f6caccea709431",
+		id = 104601,
+		description = {
+			500104601
+		},
+		level_param = {
+			{
+				120,
+				150,
+				180,
+				210,
+				240,
+				270,
+				300
+			},
+			{
+				1000,
+				1000,
+				1000,
+				1000,
+				1000,
+				1000,
+				1000
+			},
+			{
+				120,
+				150,
+				180,
+				210,
+				240,
+				270,
+				300
+			}
+		},
+		spec_char = {
+			1046
+		},
+		strengthen_description = {},
+		simple_strength_description = {}
+	},
 	all = {
 		401,
 		402,
@@ -3717,6 +3823,8 @@
 		102101,
 		102001,
 		115601,
-		108901
+		108901,
+		104501,
+		104601
 	}
 }

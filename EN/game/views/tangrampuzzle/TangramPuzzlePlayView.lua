@@ -144,6 +144,11 @@ function var_0_0.OnEnter(arg_13_0)
 
 	arg_13_0.startTime_ = var_13_0.startTime
 	arg_13_0.stopTime_ = var_13_0.stopTime
+	arg_13_0.refreshTime_ = ActivityData:GetActivityRefreshTime(arg_13_0.params_.activityID)
+
+	if arg_13_0.refreshTimeText_ then
+		arg_13_0.refreshTimeText_.text = GetTipsF("OPEN_SUFFIX", manager.time:FormatTime(arg_13_0.refreshTime_))
+	end
 
 	if arg_13_0.activityID_ ~= arg_13_0.params_.activityID then
 		arg_13_0.activityID_ = arg_13_0.params_.activityID

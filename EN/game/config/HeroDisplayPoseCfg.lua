@@ -2864,6 +2864,86 @@
 		name = "4b82dcc11e99021dd6cbb97bc6aa33e5",
 		poseName = "ui_stand"
 	},
+	[104500] = {
+		id = 104500,
+		name = "313248d0862fa2b165e3fb1bd11e7ab7",
+		poseName = "pose0"
+	},
+	[104501] = {
+		id = 104501,
+		name = "fd1d02602adfa2610da42843423b5947",
+		poseName = "pose1"
+	},
+	[104502] = {
+		id = 104502,
+		name = "3a69f14f9dc44f11fec7bec4de8554dd",
+		poseName = "pose2"
+	},
+	[104503] = {
+		id = 104503,
+		name = "ad8350f26e28d1c0de84657b7968b23a",
+		poseName = "pose3"
+	},
+	[104504] = {
+		id = 104504,
+		name = "431a5ecbea661f06333c5c9b33185777",
+		poseName = "pose4"
+	},
+	[104505] = {
+		id = 104505,
+		name = "b45f3091a7b58f8c82c11bc5af1b36b2",
+		poseName = "pose5"
+	},
+	[104506] = {
+		id = 104506,
+		name = "0d7df46b547c6a9f236f178b9c2583ca",
+		poseName = "pose6"
+	},
+	[104599] = {
+		id = 104599,
+		name = "02979ef941b47c352a60c4509737d7af",
+		poseName = "ui_stand"
+	},
+	[104600] = {
+		id = 104600,
+		name = "db263c79d645d1be6f71d4bfeeda8ef6",
+		poseName = "pose0"
+	},
+	[104601] = {
+		id = 104601,
+		name = "d30f6e40eff094701516d9aee965d5e1",
+		poseName = "pose1"
+	},
+	[104602] = {
+		id = 104602,
+		name = "15cfc8d922c17a658d42ec2de835b5a2",
+		poseName = "pose2"
+	},
+	[104603] = {
+		id = 104603,
+		name = "9fa1ebc123e6a2017529c49be6f52b60",
+		poseName = "pose3"
+	},
+	[104604] = {
+		id = 104604,
+		name = "733fa62f50c25eb3ad8d8f63e7d5161f",
+		poseName = "pose4"
+	},
+	[104605] = {
+		id = 104605,
+		name = "64487b90eb59a13c7d75714004d01d17",
+		poseName = "pose5"
+	},
+	[104606] = {
+		id = 104606,
+		name = "52114761253336c92824cf9f205bb10d",
+		poseName = "pose6"
+	},
+	[104699] = {
+		id = 104699,
+		name = "7ffb29780126741c597ed5dad3c95154",
+		poseName = "ui_stand"
+	},
 	all = {
 		101100,
 		101101,
@@ -3437,6 +3517,22 @@
 		108904,
 		108905,
 		108906,
-		108999
+		108999,
+		104500,
+		104501,
+		104502,
+		104503,
+		104504,
+		104505,
+		104506,
+		104599,
+		104600,
+		104601,
+		104602,
+		104603,
+		104604,
+		104605,
+		104606,
+		104699
 	}
 }

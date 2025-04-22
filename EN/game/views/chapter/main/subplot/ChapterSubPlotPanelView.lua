@@ -37,6 +37,10 @@ function var_0_0.RefreshUI(arg_7_0)
 	local var_7_1 = ChapterClientCfg[var_7_0]
 	local var_7_2 = SpritePathCfg.ChapterPaint.path .. var_7_1.chapter_paint_2
 
+	if var_7_1.show_tag_type == ChapterConst.SHOW_TYPE.LIMIT_TIME then
+		arg_7_0.timeText_.text = ActivityTools.GetActivityLostTimeStrWith2Unit(ChapterCfg[var_7_1.chapter_list[1]].activity_id)
+	end
+
 	getSpriteWithoutAtlasAsync(var_7_2, function(arg_8_0)
 		if arg_7_0.chapterImage_ then
 			arg_7_0.chapterImage_.sprite = arg_8_0
@@ -46,8 +50,6 @@ function var_0_0.RefreshUI(arg_7_0)
 
 	arg_7_0.chapterNameText_.text = var_7_1.name
 	arg_7_0.chapterDescText_.text = var_7_1.desc
-
-	arg_7_0:RefreshLockState()
 
 	local var_7_3 = JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.BATTLE_SUB_PLOT)
 

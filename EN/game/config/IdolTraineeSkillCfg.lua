@@ -443,6 +443,59 @@
 			10890202
 		}
 	},
+	[104501] = {
+		name = "70acb59adc2df3f46054ba25dbac9581",
+		action = "",
+		type = 1,
+		id = 104501,
+		icon = "IdolTrainee_icon_skill_008",
+		counter_action = "",
+		skill_effect = {
+			10450101,
+			10450102,
+			10450103,
+			10450104
+		}
+	},
+	[104502] = {
+		name = "97f59ee729101f380172a430bbd3a043",
+		action = "",
+		type = 0,
+		id = 104502,
+		icon = "IdolTrainee_icon_skill_008",
+		counter_action = "",
+		skill_effect = {
+			10450201,
+			10450202,
+			10450203
+		}
+	},
+	[104601] = {
+		name = "8ab373a3f61555b05a334a44e7f9b7a5",
+		action = "",
+		type = 1,
+		id = 104601,
+		icon = "IdolTrainee_icon_skill_008",
+		counter_action = "",
+		skill_effect = {
+			10460101,
+			10460102,
+			10460103,
+			10460104
+		}
+	},
+	[104602] = {
+		name = "d0cab9e568c339bb7d2dad214387d4f9",
+		action = "",
+		type = 0,
+		id = 104602,
+		icon = "IdolTrainee_icon_skill_008",
+		counter_action = "",
+		skill_effect = {
+			10460201,
+			10460202
+		}
+	},
 	all = {
 		101,
 		108401,
@@ -478,6 +531,10 @@
 		115601,
 		115602,
 		108901,
-		108902
+		108902,
+		104501,
+		104502,
+		104601,
+		104602
 	}
 }

@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("ActivityPushBoxResetView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "UI/VersionUI/JapanRegionUI_2_10/JapanRegionUI_2_10AnniversaryUI/BoxGameResetPopUI"
+	return "Widget/Version/V3_5_9_CustomizeUI/V3_5_9_AnniversaryUI/BoxGameResetPopUI"
 end
 
 function var_0_0.UIParent(arg_2_0)

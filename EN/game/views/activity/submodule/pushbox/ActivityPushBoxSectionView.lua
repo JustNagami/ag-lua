@@ -22,17 +22,25 @@ function var_0_0.InitUI(arg_3_0)
 	arg_3_0.typeCon_ = ControllerUtil.GetController(arg_3_0.transform_, "type")
 	arg_3_0.costCon_ = ControllerUtil.GetController(arg_3_0.transform_, "cost")
 	arg_3_0.boxStateCon_ = ControllerUtil.GetController(arg_3_0.transform_, "boxOrder")
-	arg_3_0.scrollHelper_ = LuaList.New(handler(arg_3_0, arg_3_0.IndexItem), arg_3_0.listGo_, CommonItem)
+	arg_3_0.scrollHelper_ = LuaList.New(handler(arg_3_0, arg_3_0.IndexItem), arg_3_0.listGo_, CommonItemView)
+	arg_3_0.itemDataList_ = {}
 	arg_3_0.boxScrollHelper_ = LuaList.New(handler(arg_3_0, arg_3_0.BoxIndexItem), arg_3_0.boxListGo_, PushBoxReplayItem)
 end
 
 function var_0_0.IndexItem(arg_4_0, arg_4_1, arg_4_2)
-	arg_4_2:RefreshData(formatReward(arg_4_0.list_[arg_4_1]))
-	arg_4_2:RegistCallBack(function(arg_5_0)
-		ShowPopItem(POP_MERGE_ITEM, {
-			arg_5_0.id
-		})
-	end)
+	if not arg_4_0.itemDataList_[arg_4_1] then
+		arg_4_0.itemDataList_[arg_4_1] = clone(ItemTemplateData)
+		arg_4_0.itemDataList_[arg_4_1].clickFun = function(arg_5_0)
+			ShowPopItem(POP_ITEM, {
+				arg_5_0.id
+			})
+		end
+	end
+
+	arg_4_0.itemDataList_[arg_4_1].id = arg_4_0.list_[arg_4_1][1]
+	arg_4_0.itemDataList_[arg_4_1].number = arg_4_0.list_[arg_4_1][2]
+
+	arg_4_2:SetData(arg_4_0.itemDataList_[arg_4_1])
 end
 
 function var_0_0.BoxIndexItem(arg_6_0, arg_6_1, arg_6_2)
@@ -108,8 +116,8 @@ function var_0_0.RefreshUI(arg_14_0)
 end
 
 function var_0_0.RefreshBattle(arg_15_0)
-	arg_15_0.battleDesc_.text = arg_15_0.cfg_.order_desc
-	arg_15_0.battleTitle_.text = arg_15_0.cfg_.order_title
+	arg_15_0.battleDesc_.text = GetI18NText(arg_15_0.cfg_.order_desc)
+	arg_15_0.battleTitle_.text = GetI18NText(arg_15_0.cfg_.order_title)
 
 	local var_15_0 = arg_15_0.cfg_.cost
 
@@ -158,8 +166,8 @@ end
 
 function var_0_0.RefreshBox(arg_16_0)
 	arg_16_0.boxType_ = 1
-	arg_16_0.boxDesc_.text = arg_16_0.cfg_.order_desc
-	arg_16_0.boxTitle_.text = arg_16_0.cfg_.order_title
+	arg_16_0.boxDesc_.text = GetI18NText(arg_16_0.cfg_.order_desc)
+	arg_16_0.boxTitle_.text = GetI18NText(arg_16_0.cfg_.order_title)
 
 	arg_16_0:RefreshTime()
 	arg_16_0:RefreshHistory()

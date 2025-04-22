@@ -6724,7 +6724,229 @@
 		cost = {},
 		formula_condition = {}
 	},
+	[18101] = {
+		affix_user = 3,
+		name = "07efacc05f927405cb2d6467638878e3",
+		type = 2,
+		max_level = 1,
+		affix_id = 18101,
+		desc = "03c194d8b06412cbca149b74f077b8f5",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18101,
+		stage = 1,
+		unlock_condition = {},
+		cost = {},
+		formula_condition = {}
+	},
+	[18102] = {
+		affix_user = 3,
+		name = "0161e2aba1bec8c792911e1624d6b0e6",
+		type = 2,
+		max_level = 1,
+		affix_id = 18102,
+		desc = "76ef7e54f2d08b24ce0c41731ae7c2fe",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18102,
+		stage = 1,
+		unlock_condition = {
+			1210101
+		},
+		cost = {},
+		formula_condition = {}
+	},
+	[18103] = {
+		affix_user = 3,
+		name = "7322798760ecd10f8bf21878b56e1ece",
+		type = 2,
+		max_level = 1,
+		affix_id = 18103,
+		desc = "0d61a7cf254c1b4defeeebf7838f3f17",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18103,
+		stage = 1,
+		unlock_condition = {
+			1210102
+		},
+		cost = {},
+		formula_condition = {}
+	},
+	[18104] = {
+		affix_user = 3,
+		name = "b18234523be587c3bc7335788d251427",
+		type = 2,
+		max_level = 1,
+		affix_id = 18104,
+		desc = "c7949e9f5cf789393de193568d591492",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18104,
+		stage = 1,
+		unlock_condition = {},
+		cost = {},
+		formula_condition = {}
+	},
+	[18105] = {
+		affix_user = 3,
+		name = "28e3a76440cebbc6cb97d3fe7d20eb0c",
+		type = 2,
+		max_level = 1,
+		affix_id = 18105,
+		desc = "ab664c0773c248701fd57e03e334bfdb",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18105,
+		stage = 1,
+		unlock_condition = {
+			1210101
+		},
+		cost = {},
+		formula_condition = {}
+	},
+	[18106] = {
+		affix_user = 3,
+		name = "cb9d65fedde43fda60a294dd5f4ef6b2",
+		type = 2,
+		max_level = 1,
+		affix_id = 18106,
+		desc = "f16a4236aa78f01472c6afd18d1473cb",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18106,
+		stage = 1,
+		unlock_condition = {
+			1210102
+		},
+		cost = {},
+		formula_condition = {}
+	},
+	[18201] = {
+		affix_user = 3,
+		name = "77d8e173f50f54eed8ff6c9a6903170e",
+		type = 2,
+		max_level = 1,
+		affix_id = 18201,
+		desc = "79e9fde398a722218b200840d82e50b7",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18201,
+		stage = 1,
+		unlock_condition = {},
+		cost = {},
+		formula_condition = {}
+	},
+	[18202] = {
+		affix_user = 3,
+		name = "3d7abe6d50b1f0772b0bd1dc7e3351b1",
+		type = 2,
+		max_level = 1,
+		affix_id = 18202,
+		desc = "d5c970c02adeba6c8659a87bf32a5843",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18202,
+		stage = 1,
+		unlock_condition = {
+			1210101
+		},
+		cost = {},
+		formula_condition = {}
+	},
+	[18203] = {
+		affix_user = 3,
+		name = "13b49cb35d3b6abfa56458f3f80f31b1",
+		type = 2,
+		max_level = 1,
+		affix_id = 18203,
+		desc = "743a47a9c9a4bfb9418361fc28dffb58",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18203,
+		stage = 1,
+		unlock_condition = {
+			1210102
+		},
+		cost = {},
+		formula_condition = {}
+	},
+	[18204] = {
+		affix_user = 3,
+		name = "1c878c4a38734f696efe852ee39a6ee2",
+		type = 2,
+		max_level = 1,
+		affix_id = 18204,
+		desc = "27726358aa4c93653bf9c77171cdbbc7",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18204,
+		stage = 1,
+		unlock_condition = {},
+		cost = {},
+		formula_condition = {}
+	},
+	[18205] = {
+		affix_user = 3,
+		name = "8ee939ae82fc3a57a55198d79124edca",
+		type = 2,
+		max_level = 1,
+		affix_id = 18205,
+		desc = "fd675d9871a72df75b519efc2646ac47",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18205,
+		stage = 1,
+		unlock_condition = {
+			1210101
+		},
+		cost = {},
+		formula_condition = {}
+	},
+	[18206] = {
+		affix_user = 3,
+		name = "277c2e808b2814b53f0edc5be855fc3a",
+		type = 2,
+		max_level = 1,
+		affix_id = 18206,
+		desc = "c374ea8897869c8b2c9d2b530266650b",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18206,
+		stage = 1,
+		unlock_condition = {
+			1210102
+		},
+		cost = {},
+		formula_condition = {}
+	},
 	get_id_list_by_activity_id = {
+		[343751] = {
+			18101,
+			18102,
+			18103,
+			18104,
+			18105,
+			18106,
+			18201,
+			18202,
+			18203,
+			18204,
+			18205,
+			18206
+		},
 		[293425] = {
 			17101,
 			17102,
@@ -7292,6 +7514,18 @@
 		17147,
 		17148,
 		17149,
-		17150
+		17150,
+		18101,
+		18102,
+		18103,
+		18104,
+		18105,
+		18106,
+		18201,
+		18202,
+		18203,
+		18204,
+		18205,
+		18206
 	}
 }

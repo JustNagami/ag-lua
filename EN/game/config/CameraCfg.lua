@@ -1804,6 +1804,101 @@
 			0
 		}
 	},
+	multiHeartDemon = {
+		type = "multiHeartDemon",
+		name = "multiHeartDemon",
+		pictureName = "",
+		multiscene = 0,
+		fieldOfView = 30,
+		desc = "3.9多人心魔挑战",
+		sceneName = "",
+		position = {
+			0,
+			2,
+			6
+		},
+		rotate = {
+			5,
+			-180,
+			0
+		}
+	},
+	chat_6036 = {
+		type = "chat",
+		name = "chat_6036",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6036聊天",
+		sceneName = "",
+		position = {
+			-0.622,
+			1.177,
+			4.25
+		},
+		rotate = {
+			-6.721,
+			158.431,
+			0.347
+		}
+	},
+	playerInfo_6036 = {
+		type = "playerInfo",
+		name = "playerInfo_6036",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6036玩家信息界面",
+		sceneName = "",
+		position = {
+			-0.505,
+			1.287,
+			4.311
+		},
+		rotate = {
+			-6.721,
+			158.431,
+			0.347
+		}
+	},
+	chat_6037 = {
+		type = "chat",
+		name = "chat_6037",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6037聊天",
+		sceneName = "",
+		position = {
+			-0.622,
+			1.177,
+			4.25
+		},
+		rotate = {
+			-6.721,
+			158.431,
+			0.347
+		}
+	},
+	playerInfo_6037 = {
+		type = "playerInfo",
+		name = "playerInfo_6037",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6037玩家信息界面",
+		sceneName = "",
+		position = {
+			-0.505,
+			1.287,
+			4.311
+		},
+		rotate = {
+			-6.721,
+			158.431,
+			0.347
+		}
+	},
 	get_id_list_by_fieldOfView = {
 		[26] = {
 			"barbecue"
@@ -1848,7 +1943,8 @@
 			"bossChallenge",
 			"enemyFile",
 			"activityWorldBoss",
-			"soloHeartDemon"
+			"soloHeartDemon",
+			"multiHeartDemon"
 		},
 		[28] = {
 			"battleHeroSelect",
@@ -1924,7 +2020,11 @@
 			"chat_6018_1",
 			"playerInfo_6018_1",
 			"chat_6018_2",
-			"playerInfo_6018_2"
+			"playerInfo_6018_2",
+			"chat_6036",
+			"playerInfo_6036",
+			"chat_6037",
+			"playerInfo_6037"
 		}
 	}
 }

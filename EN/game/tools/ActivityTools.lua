@@ -386,6 +386,8 @@ function var_0_0.JumpToSubmodulePage(arg_7_0)
 		})
 	elseif var_7_0 == ActivityTemplateConst.SPRING_CANTEEN then
 		JumpTools.GoToCanteen()
+	elseif var_7_0 == ActivityTemplateConst.MULT_HEART_DEMON then
+		return RedPointConst.MULT_HEART_DEMON_ACTIVITY .. "_"
 	elseif var_7_0 == ActivityTemplateConst.ACTIVITY_WORLD_BOSS then
 		JumpTools.OpenPageByJump("/nienWorldBoss")
 	elseif var_7_0 == ActivityTemplateConst.PAPER_CUT then
