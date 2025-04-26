@@ -1124,7 +1124,7 @@
 		time = {
 			2,
 			{
-				1745283600
+				1745287200
 			}
 		}
 	},
@@ -2303,27 +2303,6 @@
 		},
 		source = {}
 	},
-	[2901] = {
-		name = "bec231c113a81e06741cebfdf7d96dc1",
-		display_rare = 5,
-		type = 12,
-		compose_id = 0,
-		rare = 5,
-		desc = "dc291b9aac9c3830efe2cef3a6a05e04",
-		desc_source = "3c6ea0110d25ce1125bfb641660dc053",
-		sub_type = 1202,
-		decompose_id = 0,
-		limit = 0,
-		id = 2901,
-		icon = "2901",
-		use = 0,
-		max = 0,
-		param = {
-			2901,
-			0
-		},
-		source = {}
-	},
 	[2910] = {
 		name = "cdc764b72c25896758609e380fbdd5ff",
 		display_rare = 5,
@@ -2682,23 +2661,6 @@
 		limit = 0,
 		display_rare = 5,
 		icon = "3016",
-		use = 0,
-		max = 0,
-		source = {}
-	},
-	[3017] = {
-		decompose_id = 0,
-		name = "c699bf8694b9a79b6f6d84e7fb200aab",
-		compose_id = 0,
-		type = 13,
-		id = 3017,
-		rare = 5,
-		desc = "49c3ebe918d7d6afb07f3c1465dab9d7",
-		desc_source = "ec1554b899eb52babe2ff3aa1431f5df",
-		sub_type = 1302,
-		limit = 0,
-		display_rare = 5,
-		icon = "3017",
 		use = 0,
 		max = 0,
 		source = {}
@@ -6815,7 +6777,7 @@
 		time = {
 			2,
 			{
-				1745283600
+				1745287200
 			}
 		}
 	},
@@ -100979,6 +100941,42 @@
 			}
 		}
 	},
+	[529054] = {
+		decompose_id = 0,
+		name = "4cfd43d0c5b057787a1a7dc1799fc6ef",
+		compose_id = 0,
+		type = 7,
+		id = 529054,
+		rare = 5,
+		desc = "2e1d1a719e278525e931b93b829478eb",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[230054] = {
+		decompose_id = 0,
+		name = "1795761d8587a5370a071f79c22c184b",
+		compose_id = 0,
+		type = 7,
+		id = 230054,
+		rare = 2,
+		desc = "3728fa093d62f09fdc12c65069b093a1",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {}
+	},
 	get_id_list_by_type = {
 		[3] = {
 			11011,
@@ -106685,7 +106683,6 @@
 			3014,
 			3015,
 			3016,
-			3017,
 			3018,
 			3019,
 			3020,
@@ -106753,7 +106750,6 @@
 			2801,
 			2802,
 			2803,
-			2901,
 			2910,
 			2911,
 			2912,
@@ -107966,7 +107962,6 @@
 			4003
 		},
 		[1302] = {
-			3017,
 			3019
 		},
 		[1301] = {
@@ -108032,8 +108027,7 @@
 			2713,
 			2714,
 			2715,
-			2716,
-			2901
+			2716
 		},
 		[1201] = {
 			2001,
@@ -113051,7 +113045,6 @@
 		2801,
 		2802,
 		2803,
-		2901,
 		2910,
 		2911,
 		2912,
@@ -113072,7 +113065,6 @@
 		3014,
 		3015,
 		3016,
-		3017,
 		3018,
 		3019,
 		3020,

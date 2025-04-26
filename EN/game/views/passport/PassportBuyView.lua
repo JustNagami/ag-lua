@@ -69,6 +69,12 @@ end
 
 function var_0_0.AddUIListener(arg_7_0)
 	arg_7_0:AddBtnListener(arg_7_0.cheepBtn_, nil, function()
+		if OperationData:IsFunctionStoped(OperationConst.OPERATION_STOP.PASSPORT_BUY) then
+			ShowTips("ERROR_FUNCTION_STOP")
+
+			return
+		end
+
 		if ShopTools.IsLimitRecharge() then
 			ShowTips("PC_SHOP_TIPS2")
 
@@ -101,6 +107,12 @@ function var_0_0.AddUIListener(arg_7_0)
 		PayAction.RequestGSPay(201, 1)
 	end)
 	arg_7_0:AddBtnListener(arg_7_0.expensiveBtn_, nil, function()
+		if OperationData:IsFunctionStoped(OperationConst.OPERATION_STOP.PASSPORT_BUY) then
+			ShowTips("ERROR_FUNCTION_STOP")
+
+			return
+		end
+
 		if ShopTools.IsLimitRecharge() then
 			ShowTips("PC_SHOP_TIPS2")
 

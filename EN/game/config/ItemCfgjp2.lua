@@ -1,104 +1,4 @@
 ﻿return {
-	[521054] = {
-		decompose_id = 0,
-		name = "e6084e6e219f228f5f2aaa23b3a8e022",
-		compose_id = 0,
-		type = 7,
-		id = 521054,
-		rare = 5,
-		desc = "cc699f25e26803644d5447fbf77a7d08",
-		limit = 0,
-		sub_type = 0,
-		display_rare = 5,
-		icon = "54",
-		use = 0,
-		max = 0,
-		source = {
-			{
-				10001
-			}
-		}
-	},
-	[522054] = {
-		decompose_id = 0,
-		name = "9643bbff9c659f607771e0f1847f7769",
-		compose_id = 0,
-		type = 7,
-		id = 522054,
-		rare = 5,
-		desc = "3e59e198b325b9b65db51e8167e68058",
-		limit = 0,
-		sub_type = 0,
-		display_rare = 5,
-		icon = "54",
-		use = 0,
-		max = 0,
-		source = {
-			{
-				10001
-			}
-		}
-	},
-	[523054] = {
-		decompose_id = 0,
-		name = "6d0715532f791b4a1adb3006af067b63",
-		compose_id = 0,
-		type = 7,
-		id = 523054,
-		rare = 5,
-		desc = "e68e3731be5d9d599ba7cadefc66f43e",
-		limit = 0,
-		sub_type = 0,
-		display_rare = 5,
-		icon = "54",
-		use = 0,
-		max = 0,
-		source = {
-			{
-				10001
-			}
-		}
-	},
-	[524054] = {
-		decompose_id = 0,
-		name = "395e2b69ebab30035fc6ccf6d874cf86",
-		compose_id = 0,
-		type = 7,
-		id = 524054,
-		rare = 5,
-		desc = "1cdfa41082a27072f5f484a4935d0473",
-		limit = 0,
-		sub_type = 0,
-		display_rare = 5,
-		icon = "54",
-		use = 0,
-		max = 0,
-		source = {
-			{
-				10001
-			}
-		}
-	},
-	[525054] = {
-		decompose_id = 0,
-		name = "2ea6d2b0a900c1935dd0923c4c4a3497",
-		compose_id = 0,
-		type = 7,
-		id = 525054,
-		rare = 5,
-		desc = "084e961f20cae0c5d114c9e1934dcb85",
-		limit = 0,
-		sub_type = 0,
-		display_rare = 5,
-		icon = "54",
-		use = 0,
-		max = 0,
-		source = {
-			{
-				10001
-			}
-		}
-	},
 	[529054] = {
 		decompose_id = 0,
 		name = "4cfd43d0c5b057787a1a7dc1799fc6ef",
@@ -41754,9 +41654,7 @@
 			50048,
 			50049,
 			50050,
-			50051,
-			50058,
-			50059
+			50051
 		},
 		[5] = {
 			30002,
@@ -42585,8 +42483,6 @@
 			6013,
 			6014,
 			6015,
-			6036,
-			6037,
 			6100,
 			4600703,
 			4600803,
@@ -43103,8 +42999,6 @@
 			50049,
 			50050,
 			50051,
-			50058,
-			50059,
 			2110841,
 			2110842,
 			2110843,
@@ -43887,8 +43781,6 @@
 			6013,
 			6014,
 			6015,
-			6036,
-			6037,
 			6100,
 			4600703,
 			4600803,
@@ -49061,8 +48953,6 @@
 		6013,
 		6014,
 		6015,
-		6036,
-		6037,
 		6100,
 		7001,
 		7002,
@@ -49525,8 +49415,6 @@
 		50049,
 		50050,
 		50051,
-		50058,
-		50059,
 		51009,
 		51010,
 		51011,

@@ -3455,46 +3455,6 @@
 		},
 		source = {}
 	},
-	[6036] = {
-		name = "09e6e668767278b1138436c58bd15958",
-		display_rare = 5,
-		type = 21,
-		compose_id = 0,
-		rare = 5,
-		desc = "07ec3ee4cde423f9c70f213e9e8ebf80",
-		decompose_id = 0,
-		sub_type = 2101,
-		littleicon = "6036",
-		limit = 0,
-		id = 6036,
-		icon = "6036",
-		use = 0,
-		max = 0,
-		param = {
-			6036
-		},
-		source = {}
-	},
-	[6037] = {
-		name = "04bb26a8b768205976ce7bf2f1422faa",
-		display_rare = 5,
-		type = 21,
-		compose_id = 0,
-		rare = 5,
-		desc = "ddbe33454610bd23f52bd5d4dde3be67",
-		decompose_id = 0,
-		sub_type = 2101,
-		littleicon = "6037",
-		limit = 0,
-		id = 6037,
-		icon = "6037",
-		use = 0,
-		max = 0,
-		param = {
-			6037
-		},
-		source = {}
-	},
 	[6100] = {
 		name = "51a551a2a231ae66ed60aa3656fd64b8",
 		id = 6100,
@@ -16965,38 +16925,6 @@
 		sub_type = 1,
 		display_rare = 4,
 		icon = "50051",
-		use = 0,
-		max = 0,
-		source = {}
-	},
-	[50058] = {
-		decompose_id = 0,
-		name = "21a82796ed7b5af078c4f7c9b14b1c50",
-		compose_id = 0,
-		type = 10,
-		id = 50058,
-		rare = 4,
-		desc = "bb8e7407faa7221dbab5f164b9e4391d",
-		limit = 0,
-		sub_type = 1,
-		display_rare = 4,
-		icon = "50058",
-		use = 0,
-		max = 0,
-		source = {}
-	},
-	[50059] = {
-		decompose_id = 0,
-		name = "3722386ed7bc28931cfdadde67d8d399",
-		compose_id = 0,
-		type = 10,
-		id = 50059,
-		rare = 4,
-		desc = "01fada527663957f014007436723bfc5",
-		limit = 0,
-		sub_type = 1,
-		display_rare = 4,
-		icon = "50059",
 		use = 0,
 		max = 0,
 		source = {}
@@ -100949,6 +100877,106 @@
 		max = 0,
 		source = {}
 	},
+	[420054] = {
+		decompose_id = 0,
+		name = "a0d4b406089360f8079cb2c56d698e4c",
+		compose_id = 0,
+		type = 7,
+		id = 420054,
+		rare = 4,
+		desc = "09b1042df48fc6c82802db090daaa96a",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[520054] = {
+		decompose_id = 0,
+		name = "797267c91c371858486c727d912180c2",
+		compose_id = 0,
+		type = 7,
+		id = 520054,
+		rare = 5,
+		desc = "91d6aa2b330f0808d9d944ddc0b8a54d",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[521054] = {
+		decompose_id = 0,
+		name = "e6084e6e219f228f5f2aaa23b3a8e022",
+		compose_id = 0,
+		type = 7,
+		id = 521054,
+		rare = 5,
+		desc = "cc699f25e26803644d5447fbf77a7d08",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[522054] = {
+		decompose_id = 0,
+		name = "9643bbff9c659f607771e0f1847f7769",
+		compose_id = 0,
+		type = 7,
+		id = 522054,
+		rare = 5,
+		desc = "3e59e198b325b9b65db51e8167e68058",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[523054] = {
+		decompose_id = 0,
+		name = "6d0715532f791b4a1adb3006af067b63",
+		compose_id = 0,
+		type = 7,
+		id = 523054,
+		rare = 5,
+		desc = "e68e3731be5d9d599ba7cadefc66f43e",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "54",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
 	get_id_list_by_type = {
 		[3] = {
 			11011,
@@ -105782,9 +105810,7 @@
 			50048,
 			50049,
 			50050,
-			50051,
-			50058,
-			50059
+			50051
 		},
 		[5] = {
 			30002,
@@ -106613,8 +106639,6 @@
 			6013,
 			6014,
 			6015,
-			6036,
-			6037,
 			6100,
 			4600703,
 			4600803,
@@ -107133,8 +107157,6 @@
 			50049,
 			50050,
 			50051,
-			50058,
-			50059,
 			2110841,
 			2110842,
 			2110843,
@@ -107917,8 +107939,6 @@
 			6013,
 			6014,
 			6015,
-			6036,
-			6037,
 			6100,
 			4600703,
 			4600803,
@@ -113095,8 +113115,6 @@
 		6013,
 		6014,
 		6015,
-		6036,
-		6037,
 		6100,
 		7001,
 		7002,
@@ -113559,8 +113577,6 @@
 		50049,
 		50050,
 		50051,
-		50058,
-		50059,
 		51009,
 		51010,
 		51011,
