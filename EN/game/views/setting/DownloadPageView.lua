@@ -76,8 +76,13 @@ function var_0_0.OnEnter(arg_11_0)
 
 				if var_12_1 ~= "" then
 					local var_12_2 = string.split(var_12_1, ":")
+					local var_12_3 = var_12_2[4]
 
-					arg_11_0:SetProgress(tonumber(var_12_2[2]) / tonumber(var_12_2[3]), var_12_2[4])
+					if #var_12_2 == 5 then
+						var_12_3 = var_12_3 .. var_12_2[5]
+					end
+
+					arg_11_0:SetProgress(tonumber(var_12_2[2]) / tonumber(var_12_2[3]), var_12_3)
 				end
 			end
 
@@ -96,15 +101,15 @@ function var_0_0.OnEnter(arg_11_0)
 			end
 
 			if VoicePackageManager.Instance:IsFailed(var_12_0) then
-				local var_12_3 = VoicePackageManager.Instance:GetDownloadInfo(var_12_0)
+				local var_12_4 = VoicePackageManager.Instance:GetDownloadInfo(var_12_0)
 
 				arg_11_0:SetTitle(GetTips("DOWNLOAD_FAIL"))
 				arg_11_0:SetProgress(0, GetTips("DOWNLOAD_FAIL"))
-				Debug.Log("Language DownLoad Fail:" .. var_12_3)
+				Debug.Log("Language DownLoad Fail:" .. var_12_4)
 			end
 
 			if VoicePackageManager.Instance:IsCanceling(var_12_0) then
-				local var_12_4 = VoicePackageManager.Instance:GetDownloadInfo(var_12_0)
+				local var_12_5 = VoicePackageManager.Instance:GetDownloadInfo(var_12_0)
 
 				arg_11_0:SetProgress(0, GetTips("DOWNLOAD_CANCEL"))
 			end

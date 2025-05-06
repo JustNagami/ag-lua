@@ -2308,6 +2308,201 @@
 		ignore_group_condition = {},
 		leaps = {}
 	},
+	[90] = {
+		narrator_name = "365a4872b04ac826f8ec2eeafabbde7f",
+		group = 0,
+		not_skip_guide = 0,
+		id = 90,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			9002,
+			9003
+		},
+		open_condition = {
+			{
+				"playerLevel",
+				35
+			},
+			{
+				"notGuide",
+				91
+			},
+			{
+				"uiNameList",
+				{
+					"chapterMap"
+				}
+			}
+		},
+		skip_condition = {
+			{
+				"guide",
+				91
+			}
+		},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[91] = {
+		narrator_name = "4fd06c77d972e0b2c6dcfc0c9623e1c8",
+		group = 0,
+		not_skip_guide = 0,
+		id = 91,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			9101,
+			9102,
+			9108
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"challengeRogueTeamEntrace"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[92] = {
+		narrator_name = "d921e34ab397014f6121552a765761ab",
+		group = 0,
+		not_skip_guide = 0,
+		id = 92,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			9201
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"challengeRogueTeamTreasureSelect"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[94] = {
+		narrator_name = "9dba3bcdf0d3cbc9b5b88d6caaf3d148",
+		group = 0,
+		not_skip_guide = 0,
+		id = 94,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			9401
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"challengeRogueTeamSuitSkill"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[95] = {
+		narrator_name = "d537eb5d71134c88979a38755e7ec282",
+		group = 0,
+		not_skip_guide = 0,
+		id = 95,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			9501
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"challengeRogueTeamTreasureSelect"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[96] = {
+		narrator_name = "6d4ababcd63701b5fc165078a45e2792",
+		group = 0,
+		not_skip_guide = 0,
+		id = 96,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			9601,
+			9603,
+			9604
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"challengeRogueTeamTreasureSelect"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[97] = {
+		narrator_name = "34a68e7a5c43ebb5635e8dbf9a626cbc",
+		group = 0,
+		not_skip_guide = 0,
+		id = 97,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			9701
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"challengeRogueTeamTeamInfo"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[98] = {
+		narrator_name = "760d2777665638c972cce2157ff0c8ac",
+		group = 0,
+		not_skip_guide = 0,
+		id = 98,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			9801,
+			9802
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"challengeRogueTeamEntrace"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
 	[99] = {
 		narrator_name = "4c3085da2b1706bcd0f21132c5d45d24",
 		group = 0,
@@ -2688,6 +2883,14 @@
 			83,
 			84,
 			85,
+			90,
+			91,
+			92,
+			94,
+			95,
+			96,
+			97,
+			98,
 			99,
 			100,
 			102,
@@ -2787,6 +2990,14 @@
 		83,
 		84,
 		85,
+		90,
+		91,
+		92,
+		94,
+		95,
+		96,
+		97,
+		98,
 		99,
 		100,
 		102,

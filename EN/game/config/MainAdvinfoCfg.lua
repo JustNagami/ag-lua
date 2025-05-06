@@ -1496,24 +1496,24 @@
 		time = {
 			{
 				{
-					2024,
-					9,
-					26
+					2025,
+					5,
+					6
 				},
 				{
-					5,
+					10,
 					0,
 					0
 				}
 			},
 			{
 				{
-					2024,
-					11,
-					21
+					2025,
+					6,
+					5
 				},
 				{
-					5,
+					12,
 					0,
 					0
 				}
@@ -1648,21 +1648,21 @@
 		time = {
 			{
 				{
-					2024,
-					9,
-					26
+					2025,
+					5,
+					6
 				},
 				{
-					5,
+					10,
 					0,
 					0
 				}
 			},
 			{
 				{
-					2024,
-					11,
-					21
+					2025,
+					6,
+					5
 				},
 				{
 					5,
@@ -1790,7 +1790,7 @@
 	[31003] = {
 		id = 31003,
 		hide_condition = "",
-		type = 3,
+		type = 4,
 		picture = "activity31003",
 		activityId = 144001,
 		order = 100,
@@ -1800,7 +1800,7 @@
 	[31004] = {
 		id = 31004,
 		hide_condition = "",
-		type = 3,
+		type = 4,
 		picture = "activity31003",
 		activityId = 184001,
 		order = 100,
@@ -1835,7 +1835,7 @@
 	[31007] = {
 		id = 31007,
 		hide_condition = "",
-		type = 3,
+		type = 4,
 		picture = "activity31006",
 		activityId = 204001,
 		order = 100,
@@ -1882,7 +1882,7 @@
 	[31011] = {
 		id = 31011,
 		hide_condition = "",
-		type = 3,
+		type = 4,
 		picture = "activity31006",
 		activityId = 204002,
 		order = 100,
@@ -1892,7 +1892,7 @@
 	[31012] = {
 		id = 31012,
 		hide_condition = "",
-		type = 3,
+		type = 4,
 		picture = "activity31006",
 		activityId = 204003,
 		order = 100,
@@ -1902,7 +1902,7 @@
 	[31013] = {
 		id = 31013,
 		hide_condition = "",
-		type = 3,
+		type = 4,
 		picture = "activity31006",
 		activityId = 204004,
 		order = 100,
@@ -1925,7 +1925,7 @@
 	[31015] = {
 		id = 31015,
 		hide_condition = "",
-		type = 3,
+		type = 4,
 		picture = "activity63",
 		activityId = 234001,
 		order = 100,
@@ -1935,7 +1935,7 @@
 	[31016] = {
 		id = 31016,
 		hide_condition = "",
-		type = 3,
+		type = 4,
 		picture = "activity63",
 		activityId = 234002,
 		order = 100,
@@ -1945,7 +1945,7 @@
 	[31017] = {
 		id = 31017,
 		hide_condition = "",
-		type = 3,
+		type = 4,
 		picture = "activity63",
 		activityId = 234003,
 		order = 100,
@@ -1955,7 +1955,7 @@
 	[31018] = {
 		id = 31018,
 		hide_condition = "",
-		type = 3,
+		type = 4,
 		picture = "activity63",
 		activityId = 234004,
 		order = 100,
@@ -2166,6 +2166,43 @@
 		},
 		time = {}
 	},
+	[31035] = {
+		id = 31035,
+		hide_condition = "",
+		type = 3,
+		picture = "activity_1045_1046",
+		activityId = 0,
+		order = 95,
+		parameter = {
+			2938801
+		},
+		time = {
+			{
+				{
+					2025,
+					5,
+					22
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2025,
+					6,
+					21
+				},
+				{
+					12,
+					0,
+					0
+				}
+			}
+		}
+	},
 	all = {
 		1,
 		7,
@@ -2326,6 +2363,7 @@
 		31031,
 		31032,
 		31033,
-		31034
+		31034,
+		31035
 	}
 }

@@ -38,7 +38,10 @@ local var_0_1 = {
 	SC_12101_FIELD_LIST = {},
 	SC_12111_FIELD_LIST = {},
 	CS_12112_FIELD_LIST = {},
-	SC_12113_FIELD_LIST = {}
+	SC_12113_FIELD_LIST = {},
+	SC_12115_FIELD_LIST = {},
+	CS_12116_FIELD_LIST = {},
+	SC_12117_FIELD_LIST = {}
 }
 
 SC_12001 = var_0_0.Descriptor()
@@ -126,6 +129,13 @@ CS_12112 = var_0_0.Descriptor()
 var_0_1.CS_12112_FIELD_LIST.CS_12112_MOD_GUIDE_ID_FIELD = var_0_0.FieldDescriptor()
 SC_12113 = var_0_0.Descriptor()
 var_0_1.SC_12113_FIELD_LIST.SC_12113_RESULT_FIELD = var_0_0.FieldDescriptor()
+SC_12115 = var_0_0.Descriptor()
+var_0_1.SC_12115_FIELD_LIST.SC_12115_ACTIVITY_ID_FIELD = var_0_0.FieldDescriptor()
+var_0_1.SC_12115_FIELD_LIST.SC_12115_SIGN_FIELD = var_0_0.FieldDescriptor()
+CS_12116 = var_0_0.Descriptor()
+var_0_1.CS_12116_FIELD_LIST.CS_12116_ACTIVITY_ID_FIELD = var_0_0.FieldDescriptor()
+SC_12117 = var_0_0.Descriptor()
+var_0_1.SC_12117_FIELD_LIST.SC_12117_RESULT_FIELD = var_0_0.FieldDescriptor()
 var_0_1.SC_12001_FIELD_LIST.SC_12001_STORY_LIST_FIELD.name = "story_list"
 var_0_1.SC_12001_FIELD_LIST.SC_12001_STORY_LIST_FIELD.full_name = ".p12.sc_12001.story_list"
 var_0_1.SC_12001_FIELD_LIST.SC_12001_STORY_LIST_FIELD.number = 1
@@ -911,6 +921,70 @@ SC_12113.fields = {
 }
 SC_12113.is_extendable = false
 SC_12113.extensions = {}
+var_0_1.SC_12115_FIELD_LIST.SC_12115_ACTIVITY_ID_FIELD.name = "activity_id"
+var_0_1.SC_12115_FIELD_LIST.SC_12115_ACTIVITY_ID_FIELD.full_name = ".p12.sc_12115.activity_id"
+var_0_1.SC_12115_FIELD_LIST.SC_12115_ACTIVITY_ID_FIELD.number = 1
+var_0_1.SC_12115_FIELD_LIST.SC_12115_ACTIVITY_ID_FIELD.index = 0
+var_0_1.SC_12115_FIELD_LIST.SC_12115_ACTIVITY_ID_FIELD.label = 2
+var_0_1.SC_12115_FIELD_LIST.SC_12115_ACTIVITY_ID_FIELD.has_default_value = false
+var_0_1.SC_12115_FIELD_LIST.SC_12115_ACTIVITY_ID_FIELD.default_value = 0
+var_0_1.SC_12115_FIELD_LIST.SC_12115_ACTIVITY_ID_FIELD.type = 13
+var_0_1.SC_12115_FIELD_LIST.SC_12115_ACTIVITY_ID_FIELD.cpp_type = 3
+var_0_1.SC_12115_FIELD_LIST.SC_12115_SIGN_FIELD.name = "sign"
+var_0_1.SC_12115_FIELD_LIST.SC_12115_SIGN_FIELD.full_name = ".p12.sc_12115.sign"
+var_0_1.SC_12115_FIELD_LIST.SC_12115_SIGN_FIELD.number = 2
+var_0_1.SC_12115_FIELD_LIST.SC_12115_SIGN_FIELD.index = 1
+var_0_1.SC_12115_FIELD_LIST.SC_12115_SIGN_FIELD.label = 2
+var_0_1.SC_12115_FIELD_LIST.SC_12115_SIGN_FIELD.has_default_value = false
+var_0_1.SC_12115_FIELD_LIST.SC_12115_SIGN_FIELD.default_value = 0
+var_0_1.SC_12115_FIELD_LIST.SC_12115_SIGN_FIELD.type = 13
+var_0_1.SC_12115_FIELD_LIST.SC_12115_SIGN_FIELD.cpp_type = 3
+SC_12115.name = "sc_12115"
+SC_12115.full_name = ".p12.sc_12115"
+SC_12115.nested_types = {}
+SC_12115.enum_types = {}
+SC_12115.fields = {
+	var_0_1.SC_12115_FIELD_LIST.SC_12115_ACTIVITY_ID_FIELD,
+	var_0_1.SC_12115_FIELD_LIST.SC_12115_SIGN_FIELD
+}
+SC_12115.is_extendable = false
+SC_12115.extensions = {}
+var_0_1.CS_12116_FIELD_LIST.CS_12116_ACTIVITY_ID_FIELD.name = "activity_id"
+var_0_1.CS_12116_FIELD_LIST.CS_12116_ACTIVITY_ID_FIELD.full_name = ".p12.cs_12116.activity_id"
+var_0_1.CS_12116_FIELD_LIST.CS_12116_ACTIVITY_ID_FIELD.number = 1
+var_0_1.CS_12116_FIELD_LIST.CS_12116_ACTIVITY_ID_FIELD.index = 0
+var_0_1.CS_12116_FIELD_LIST.CS_12116_ACTIVITY_ID_FIELD.label = 2
+var_0_1.CS_12116_FIELD_LIST.CS_12116_ACTIVITY_ID_FIELD.has_default_value = false
+var_0_1.CS_12116_FIELD_LIST.CS_12116_ACTIVITY_ID_FIELD.default_value = 0
+var_0_1.CS_12116_FIELD_LIST.CS_12116_ACTIVITY_ID_FIELD.type = 13
+var_0_1.CS_12116_FIELD_LIST.CS_12116_ACTIVITY_ID_FIELD.cpp_type = 3
+CS_12116.name = "cs_12116"
+CS_12116.full_name = ".p12.cs_12116"
+CS_12116.nested_types = {}
+CS_12116.enum_types = {}
+CS_12116.fields = {
+	var_0_1.CS_12116_FIELD_LIST.CS_12116_ACTIVITY_ID_FIELD
+}
+CS_12116.is_extendable = false
+CS_12116.extensions = {}
+var_0_1.SC_12117_FIELD_LIST.SC_12117_RESULT_FIELD.name = "result"
+var_0_1.SC_12117_FIELD_LIST.SC_12117_RESULT_FIELD.full_name = ".p12.sc_12117.result"
+var_0_1.SC_12117_FIELD_LIST.SC_12117_RESULT_FIELD.number = 1
+var_0_1.SC_12117_FIELD_LIST.SC_12117_RESULT_FIELD.index = 0
+var_0_1.SC_12117_FIELD_LIST.SC_12117_RESULT_FIELD.label = 2
+var_0_1.SC_12117_FIELD_LIST.SC_12117_RESULT_FIELD.has_default_value = false
+var_0_1.SC_12117_FIELD_LIST.SC_12117_RESULT_FIELD.default_value = 0
+var_0_1.SC_12117_FIELD_LIST.SC_12117_RESULT_FIELD.type = 13
+var_0_1.SC_12117_FIELD_LIST.SC_12117_RESULT_FIELD.cpp_type = 3
+SC_12117.name = "sc_12117"
+SC_12117.full_name = ".p12.sc_12117"
+SC_12117.nested_types = {}
+SC_12117.enum_types = {}
+SC_12117.fields = {
+	var_0_1.SC_12117_FIELD_LIST.SC_12117_RESULT_FIELD
+}
+SC_12117.is_extendable = false
+SC_12117.extensions = {}
 cs_12002 = var_0_0.Message(CS_12002)
 cs_12012 = var_0_0.Message(CS_12012)
 cs_12024 = var_0_0.Message(CS_12024)
@@ -920,6 +994,7 @@ cs_12036 = var_0_0.Message(CS_12036)
 cs_12046 = var_0_0.Message(CS_12046)
 cs_12100 = var_0_0.Message(CS_12100)
 cs_12112 = var_0_0.Message(CS_12112)
+cs_12116 = var_0_0.Message(CS_12116)
 daily_fatigue_dessert_net_rec = var_0_0.Message(DAILY_FATIGUE_DESSERT_NET_REC)
 hide_info_net_rec = var_0_0.Message(HIDE_INFO_NET_REC)
 recommend_hero = var_0_0.Message(RECOMMEND_HERO)
@@ -946,6 +1021,8 @@ sc_12099 = var_0_0.Message(SC_12099)
 sc_12101 = var_0_0.Message(SC_12101)
 sc_12111 = var_0_0.Message(SC_12111)
 sc_12113 = var_0_0.Message(SC_12113)
+sc_12115 = var_0_0.Message(SC_12115)
+sc_12117 = var_0_0.Message(SC_12117)
 unclaimed_info = var_0_0.Message(UNCLAIMED_INFO)
 
 return p12_pb

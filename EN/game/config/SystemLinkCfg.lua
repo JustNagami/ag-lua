@@ -798,6 +798,23 @@
 		system_id = 10301,
 		paramName = ""
 	},
+	[336] = {
+		text_display_1 = "cbea142453c5b8d7b3bb7c9b96d0ca75",
+		text_display_2 = "0520c57a2001c0f907b3640c5dbfc52c",
+		text_invalid = 0,
+		need_hide = 0,
+		asset_pend_key = "",
+		link = "/challengeRogueTeamEntrace",
+		pagename = "",
+		activity_id = 0,
+		params = "",
+		id = 336,
+		icon = "icon_access_site_white",
+		system_id = 336,
+		paramName = {
+			"templateID"
+		}
+	},
 	[341] = {
 		text_display_1 = "293ecbe0e57b2038856e15cf529c63f7",
 		text_display_2 = "1ecf7a091a6a8bb60f60941d3c132d06",
@@ -4063,6 +4080,7 @@
 		333,
 		334,
 		335,
+		336,
 		341,
 		342,
 		343,

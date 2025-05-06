@@ -150,7 +150,7 @@ function var_0_0.GetTalkItem(arg_21_0, arg_21_1, arg_21_2)
 	local var_21_4 = arg_21_0.playedMessageIDList_[arg_21_2 - 1]
 
 	if var_21_4 then
-		var_21_3 = StageArchivesCollecteMomoTalkCfg[var_21_4].speaker_position == var_21_0.speaker_position
+		var_21_3 = StageArchivesCollecteMomoTalkCfg[var_21_4].speaker_name == var_21_0.speaker_name
 	end
 
 	var_21_2.itemView:SetData(arg_21_1, arg_21_2, var_21_3)

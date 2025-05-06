@@ -47,9 +47,9 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1)
 			for iter_4_0, iter_4_1 in ipairs(var_4_3) do
 				if TetrisGameTools:GetStageState(iter_4_1) ~= "finish" then
 					if iter_4_0 == 1 then
-						var_4_4 = string.format("%s%s", var_4_4, ActivityTetrisGameStageCfg[iter_4_1].desc)
+						var_4_4 = string.format("%s%s", var_4_4, GetI18NText(ActivityTetrisGameStageCfg[iter_4_1].desc))
 					else
-						var_4_4 = string.format("%s,%s", var_4_4, ActivityTetrisGameStageCfg[iter_4_1].desc)
+						var_4_4 = string.format("%s,%s", var_4_4, GetI18NText(ActivityTetrisGameStageCfg[iter_4_1].desc))
 					end
 				end
 			end
@@ -62,7 +62,7 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1)
 		if var_4_5 then
 			arg_4_0.notController:SetSelectedState("on")
 
-			arg_4_0.confictText.text = string.format(GetTips("TETRIS_GAME_SKILL_CONFLICT"), ActivityTetrisGameSkillCfg[var_4_6].name)
+			arg_4_0.confictText.text = string.format(GetTips("TETRIS_GAME_SKILL_CONFLICT"), GetI18NText(ActivityTetrisGameSkillCfg[var_4_6].name))
 			arg_4_0.conficID = var_4_6
 			arg_4_0.mutualImg_.sprite = TetrisGameTools:GetSkillIcon(var_4_6)
 		else
@@ -81,7 +81,7 @@ function var_0_0.AddUIListener(arg_5_0)
 
 			ShowMessageBox({
 				title = GetTips("PROMPT"),
-				content = string.format(GetTips(GetTips("TETRIS_GAME_SKILL_CONFLICT_CONFIRM")), var_6_1),
+				content = string.format(GetTips("TETRIS_GAME_SKILL_CONFLICT_CONFIRM"), GetI18NText(var_6_1)),
 				OkCallback = function()
 					TetrisGameTools:AddOrReduceSkill(arg_5_0.skillID, arg_5_0.conficID)
 				end

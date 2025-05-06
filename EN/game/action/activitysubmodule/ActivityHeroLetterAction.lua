@@ -69,4 +69,22 @@ function var_0_0.RefreshRedPoint(arg_6_0)
 	end
 end
 
+manager.net:Bind(12115, function(arg_7_0)
+	ActivityHeroLetterData:InitFirstTips(arg_7_0)
+end)
+
+function var_0_0.SetSign(arg_8_0)
+	manager.net:SendWithLoadingNew(12116, {
+		activity_id = arg_8_0
+	}, 12117, var_0_0.OnSetSign)
+end
+
+function var_0_0.OnSetSign(arg_9_0, arg_9_1)
+	if isSuccess(arg_9_0.result) then
+		ActivityHeroLetterData:SetSign(arg_9_1.activity_id)
+	else
+		ShowTips(arg_9_0.result)
+	end
+end
+
 return var_0_0

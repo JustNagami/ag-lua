@@ -95,7 +95,19 @@ function var_0_0.SetData(arg_5_0, arg_5_1)
 	else
 		arg_5_0.discountController_:SetSelectedState("on")
 
-		arg_5_0.discountText_.text = string.format("%.01f%s", arg_5_1.discount / 10, GetTips("LABEL_DISCOUNT"))
+		if SDKTools.GetIsThisServer({
+			"jp"
+		}) then
+			arg_5_0.discountText_.text = GetTips("LABEL_DISCOUNT_EXTRA")
+		elseif SDKTools.GetIsThisServer({
+			"kr",
+			"en"
+		}) then
+			arg_5_0.discountText_.text = string.format("%d%%%s", 100 - arg_5_1.discount, GetTips("LABEL_DISCOUNT"))
+		else
+			arg_5_0.discountText_.text = string.format("%.01f%s", arg_5_1.discount / 10, GetTips("LABEL_DISCOUNT"))
+		end
+
 		arg_5_0.originPriceText_.text = var_5_3
 	end
 

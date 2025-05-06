@@ -338,9 +338,9 @@ function var_0_0.GetItemPopText(arg_34_0, arg_34_1, arg_34_2, arg_34_3)
 	local var_34_0
 
 	if arg_34_2 == ChallengeRogueTeamConst.ITEM_OPERATE.DELETE then
-		var_34_0 = GetTips("ROGUE_TEAM_LOST")
+		var_34_0 = GetTips("ROGUE_TEAM_LOST_WF")
 	else
-		var_34_0 = GetTips("ROGUE_TEAM_OBTAIN")
+		var_34_0 = GetTips("ROGUE_TEAM_OBTAIN_WF")
 	end
 
 	local var_34_1
@@ -352,9 +352,9 @@ function var_0_0.GetItemPopText(arg_34_0, arg_34_1, arg_34_2, arg_34_3)
 	end
 
 	if arg_34_0 == ChallengeRogueTeamConst.ITEM_SOURCE_TYPE.RELIC then
-		return string.format(GetTips("ROGUE_TEAM_RELIC_EFFECT_ACTIVE"), var_34_0, var_34_1)
+		return string.format(GetTips("ROGUE_TEAM_RELIC_EFFECT_ACTIVE_WF"), var_34_1)
 	else
-		return string.format("%s%s", var_34_0, var_34_1)
+		return string.format(var_34_0, var_34_1)
 	end
 end
 
@@ -834,7 +834,7 @@ function var_0_0.GetItemEffectDesc(arg_67_0)
 	local var_67_2 = RogueTeamEffectCfg[var_67_1]
 
 	if var_67_2.current_desc == "" then
-		return var_67_0.desc
+		return GetI18NText(var_67_0.desc)
 	end
 
 	if type(var_67_0.effect_id_list) == "table" then
@@ -850,13 +850,13 @@ function var_0_0.GetItemEffectDesc(arg_67_0)
 
 				var_67_7 = var_67_7 > var_67_3[4] and var_67_3[4] or var_67_7
 
-				return var_67_0.desc .. string.format(var_67_2.current_desc, var_67_7 * var_67_3[3])
+				return GetI18NText(var_67_0.desc) .. string.format(GetI18NText(var_67_2.current_desc), var_67_7 * var_67_3[3])
 			elseif var_67_4 == 2 then
 				local var_67_8 = var_0_0.GetCollectSuitSkillCnt()
 
 				var_67_8 = var_67_8 > var_67_3[3] and var_67_3[3] or var_67_8
 
-				return var_67_0.desc .. string.format(var_67_2.current_desc, var_67_8 * var_67_3[2])
+				return GetI18NText(var_67_0.desc) .. string.format(GetI18NText(var_67_2.current_desc), var_67_8 * var_67_3[2])
 			end
 		else
 			local var_67_9 = ChallengeRogueTeamData:GetEffectDataByEffectID(var_67_1)
@@ -876,12 +876,12 @@ function var_0_0.GetItemEffectDesc(arg_67_0)
 					var_67_10 = var_67_9.effectValue
 				end
 
-				return var_67_0.desc .. string.format(var_67_2.current_desc, var_67_10)
+				return GetI18NText(var_67_0.desc) .. string.format(GetI18NText(var_67_2.current_desc), var_67_10)
 			end
 		end
 	end
 
-	return var_67_0.desc
+	return GetI18NText(var_67_0.desc)
 end
 
 function var_0_0.GetIDHasEffectExtraText(arg_68_0)
@@ -1068,7 +1068,7 @@ function var_0_0.TextFormat(arg_88_0, arg_88_1, arg_88_2)
 	local var_88_0 = RogueTeamItemCfg[arg_88_0]
 	local var_88_1 = var_88_0.type
 
-	return string.format("<color=%s><material=underline c=#%s h=2 event=%s args=%s>%s</material></color>", arg_88_2, arg_88_2, arg_88_0, arg_88_1, var_88_0.name)
+	return string.format("<color=%s><material=underline c=#%s h=2 event=%s args=%s>%s</material></color>", arg_88_2, arg_88_2, arg_88_0, arg_88_1, GetI18NText(var_88_0.name))
 end
 
 function var_0_0.EventOptionReplaceText(arg_89_0, arg_89_1)

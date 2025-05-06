@@ -435,7 +435,7 @@ function var_0_0.JumpToVideo(arg_38_0, arg_38_1)
 		return
 	end
 
-	Application.OpenURL(var_38_0)
+	OperationAction.OpenNormalUrl(var_38_0)
 end
 
 function var_0_0.DrawCheck(arg_39_0, arg_39_1)

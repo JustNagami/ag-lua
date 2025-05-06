@@ -62,7 +62,79 @@
 		task_id = 202407,
 		desc = "76e41e6e433270bdce7cd9a8257863d0"
 	},
+	[1008] = {
+		main_activity_id = 292811,
+		activity_id = 292821,
+		hero_id = 1184,
+		ans_desc = "651750fa102e876672ab2109dda5d76a",
+		id = 1008,
+		task_id = 202408,
+		desc = "c3201f4d8ab71db4207a830752ce0c00"
+	},
+	[1009] = {
+		main_activity_id = 292811,
+		activity_id = 292822,
+		hero_id = 1011,
+		ans_desc = "6a120e1ba59209484e2880d8a9252075",
+		id = 1009,
+		task_id = 202409,
+		desc = "0a73a797cc66d9360ed6ab84eff4853b"
+	},
+	[1010] = {
+		main_activity_id = 292811,
+		activity_id = 292823,
+		hero_id = 1199,
+		ans_desc = "e50548f563932d39e6a44152664b30a7",
+		id = 1010,
+		task_id = 202410,
+		desc = "c89d5196661c30ab68b808571cd1b543"
+	},
+	[1011] = {
+		main_activity_id = 292811,
+		activity_id = 292824,
+		hero_id = 1041,
+		ans_desc = "ef1ad196e0f7fcf6b631c1598347e278",
+		id = 1011,
+		task_id = 202411,
+		desc = "f07db47586885c94f846cb79393ecb18"
+	},
+	[1012] = {
+		main_activity_id = 292811,
+		activity_id = 292825,
+		hero_id = 1071,
+		ans_desc = "f623734ca468b527a7910be34bb23617",
+		id = 1012,
+		task_id = 202412,
+		desc = "958d591bb40eade1db02675d61d02371"
+	},
+	[1013] = {
+		main_activity_id = 292811,
+		activity_id = 292826,
+		hero_id = 1150,
+		ans_desc = "3c61438d04bb8a33258a0509e8b5a015",
+		id = 1013,
+		task_id = 202413,
+		desc = "e00e477ed9950073947659ff5b8b6e08"
+	},
+	[1014] = {
+		main_activity_id = 292811,
+		activity_id = 292827,
+		hero_id = 1095,
+		ans_desc = "aaad7210bace2f890573d5ccc752f2ab",
+		id = 1014,
+		task_id = 202414,
+		desc = "c5c2118ce230670e26552384376655b9"
+	},
 	get_id_list_by_main_activity_id = {
+		[292811] = {
+			1008,
+			1009,
+			1010,
+			1011,
+			1012,
+			1013,
+			1014
+		},
 		[242811] = {
 			1001,
 			1002,
@@ -80,6 +152,13 @@
 		1004,
 		1005,
 		1006,
-		1007
+		1007,
+		1008,
+		1009,
+		1010,
+		1011,
+		1012,
+		1013,
+		1014
 	}
 }

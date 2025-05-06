@@ -11484,6 +11484,464 @@
 			2512
 		}
 	},
+	[63001] = {
+		name = "51fa397e1c176c561e4f312ba340dd56",
+		system = "",
+		type_id = 3,
+		condition = 300005,
+		desc = "6480e672c1f39a53e4e63e1aa639e6a1",
+		need = 1,
+		is_hide = 0,
+		id = 63001,
+		parameter = {
+			100001,
+			1
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63002] = {
+		name = "d959978e21c031531a71248bd91b0632",
+		system = "",
+		type_id = 3,
+		condition = 300005,
+		desc = "451acfa6b2703e500f8c4bd91c496efe",
+		need = 1,
+		is_hide = 0,
+		id = 63002,
+		parameter = {
+			100001,
+			2
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63003] = {
+		name = "e4f002a198f90161af6eeab691605780",
+		system = "",
+		type_id = 3,
+		condition = 300005,
+		desc = "2200b8a2352e085962b95f925859b081",
+		need = 1,
+		is_hide = 0,
+		id = 63003,
+		parameter = {
+			100001,
+			3
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63006] = {
+		name = "7abada1fb78f1b7f677cf7de24429bfa",
+		system = "",
+		type_id = 3,
+		condition = 300006,
+		desc = "dbabb04a97cebf9d619e6dfc26a3ce2c",
+		need = 1,
+		is_hide = 0,
+		id = 63006,
+		parameter = {
+			100001,
+			1
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63007] = {
+		name = "f798433364e7f1dc7d11779dd57ccbb1",
+		system = "",
+		type_id = 3,
+		condition = 300006,
+		desc = "b128e32b887dc12e7585fa6540445793",
+		need = 1,
+		is_hide = 0,
+		id = 63007,
+		parameter = {
+			100001,
+			2
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63008] = {
+		name = "159ecfc20a975dd3b616f01a6d4ff870",
+		system = "",
+		type_id = 3,
+		condition = 300006,
+		desc = "638c7cdbb8f8c6962abe01cda72ba005",
+		need = 1,
+		is_hide = 0,
+		id = 63008,
+		parameter = {
+			100001,
+			3
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63009] = {
+		name = "a829b346d19f3b0b6dc1211fd3b5c8b5",
+		system = "",
+		type_id = 3,
+		condition = 300013,
+		desc = "6ad9617516c6cc01aaa81599603a70cb",
+		need = 1,
+		is_hide = 0,
+		id = 63009,
+		parameter = {
+			100001,
+			10
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63010] = {
+		name = "26d6cac2fa4c96e0bbb8419e40d1d490",
+		system = "",
+		type_id = 3,
+		condition = 300014,
+		desc = "22cbc4f2b615961a25f51fd00622000a",
+		need = 1,
+		is_hide = 0,
+		id = 63010,
+		parameter = {
+			100001,
+			0,
+			20
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63011] = {
+		name = "8fda0effcba925d7319c3bfcd0a9c66d",
+		system = "",
+		type_id = 3,
+		condition = 300009,
+		desc = "6f2e3ae061e8f344557e49b10c59f54b",
+		need = 3,
+		is_hide = 0,
+		id = 63011,
+		parameter = {
+			100001,
+			1
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63012] = {
+		name = "330f1e04fcb89aac4d99e4bad0aa6ee3",
+		system = "",
+		type_id = 3,
+		condition = 300009,
+		desc = "f12582ab2113107c1d0b4cf9ed2c793e",
+		need = 3,
+		is_hide = 0,
+		id = 63012,
+		parameter = {
+			100001,
+			3
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63013] = {
+		name = "156702137e4ca54aa5cb85335f5f80a1",
+		system = "",
+		type_id = 3,
+		condition = 300009,
+		desc = "c0a786469e7eb6e267a50f146d4464df",
+		need = 3,
+		is_hide = 0,
+		id = 63013,
+		parameter = {
+			100001,
+			4
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63014] = {
+		name = "1f164c11d98b9ede8f0a3b0bd7c9ed45",
+		system = "",
+		type_id = 3,
+		condition = 300009,
+		desc = "beffb2214cc632c40c3f71dfa4643aca",
+		need = 3,
+		is_hide = 0,
+		id = 63014,
+		parameter = {
+			100001,
+			5
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63015] = {
+		name = "1b2fc364dcd1272f3c0a0a0157b713a5",
+		system = "",
+		type_id = 3,
+		condition = 300009,
+		desc = "9e2bc787127bc1144d0d437fbec74285",
+		need = 3,
+		is_hide = 0,
+		id = 63015,
+		parameter = {
+			100001,
+			6
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63016] = {
+		name = "8a44bd8438eb154b2d5a499b36a1cd84",
+		system = "",
+		type_id = 5,
+		condition = 300012,
+		desc = "f359e5b85b715e9e4acbf2335066c05f",
+		need = 1,
+		is_hide = 0,
+		id = 63016,
+		parameter = {
+			0,
+			0,
+			5
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63017] = {
+		name = "e146cff8cc633336fce4c767cbf0f269",
+		system = "",
+		type_id = 5,
+		condition = 300011,
+		desc = "88218439905a0b57db582433e0603b47",
+		need = 500,
+		is_hide = 0,
+		id = 63017,
+		parameter = {
+			0,
+			1
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63018] = {
+		name = "1586afc55c4eab4becae50577dec7618",
+		system = "",
+		type_id = 5,
+		condition = 300011,
+		desc = "43848e76ba0fcc8a5a01d017c96c539d",
+		need = 500,
+		is_hide = 0,
+		id = 63018,
+		parameter = {
+			0,
+			3
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63019] = {
+		name = "ad60ee52b924bb256172a01e7a785d29",
+		system = "",
+		type_id = 5,
+		condition = 300011,
+		desc = "af93ee1c05de99835042454ea92a9708",
+		need = 500,
+		is_hide = 0,
+		id = 63019,
+		parameter = {
+			0,
+			4
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63020] = {
+		name = "38655a77bb5c3b74dc62db35e0819610",
+		system = "",
+		type_id = 5,
+		condition = 300011,
+		desc = "f3ebb02e74bb60002210c9b67c0d0152",
+		need = 500,
+		is_hide = 0,
+		id = 63020,
+		parameter = {
+			0,
+			5
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
+	[63021] = {
+		name = "eee3b96bf3d91ae4ae4430715aae6a90",
+		system = "",
+		type_id = 5,
+		condition = 300011,
+		desc = "483b71d49ad2bc75dab7c6924c75ffb1",
+		need = 500,
+		is_hide = 0,
+		id = 63021,
+		parameter = {
+			0,
+			6
+		},
+		reward = {
+			{
+				1,
+				10
+			}
+		},
+		source = {
+			336,
+			100001
+		}
+	},
 	get_id_list_by_type_id = {
 		[6] = {
 			52101,
@@ -11601,7 +12059,13 @@
 			53202,
 			53301,
 			53401,
-			53501
+			53501,
+			63016,
+			63017,
+			63018,
+			63019,
+			63020,
+			63021
 		},
 		[4] = {
 			14401,
@@ -11732,7 +12196,20 @@
 			62005,
 			62006,
 			62007,
-			62008
+			62008,
+			63001,
+			63002,
+			63003,
+			63006,
+			63007,
+			63008,
+			63009,
+			63010,
+			63011,
+			63012,
+			63013,
+			63014,
+			63015
 		},
 		[2] = {
 			12801,
@@ -12380,6 +12857,25 @@
 		80014,
 		80015,
 		80016,
-		80017
+		80017,
+		63001,
+		63002,
+		63003,
+		63006,
+		63007,
+		63008,
+		63009,
+		63010,
+		63011,
+		63012,
+		63013,
+		63014,
+		63015,
+		63016,
+		63017,
+		63018,
+		63019,
+		63020,
+		63021
 	}
 }

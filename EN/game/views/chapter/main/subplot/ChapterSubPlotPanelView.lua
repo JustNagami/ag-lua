@@ -34,6 +34,9 @@ end
 
 function var_0_0.RefreshUI(arg_7_0)
 	local var_7_0 = ChapterTools.GetOpenSubPlotClient()
+
+	print("clientID", var_7_0)
+
 	local var_7_1 = ChapterClientCfg[var_7_0]
 	local var_7_2 = SpritePathCfg.ChapterPaint.path .. var_7_1.chapter_paint_2
 

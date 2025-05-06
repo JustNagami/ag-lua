@@ -62,7 +62,7 @@ function var_0_0.AddListeners(arg_6_0)
 			if var_8_1 < var_8_2 then
 				local var_8_3 = ItemCfg[var_8_0].name
 
-				ShowTips(string.format(GetTips("ACTIVITY_FLIP_CARD_COIN_NOT_ENOUGH"), var_8_3))
+				ShowTips(string.format(GetTips("ACTIVITY_FLIP_CARD_COIN_NOT_ENOUGH"), GetI18NText(var_8_3)))
 
 				return
 			end

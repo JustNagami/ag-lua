@@ -153,7 +153,7 @@ function var_0_0.OnFollowPlatform(arg_13_0, arg_13_1)
 	if OperationConst.PLATFORM.BILIBILI == arg_13_1.type then
 		local var_13_0 = OperationAction.GetOperationUrl("FOLLOW_BILIBILI")
 
-		Application.OpenURL(var_13_0)
+		OperationAction.OpenNormalUrl(var_13_0)
 		SDKTools.SendMessageToSDK("direction", {
 			direction_type = 53,
 			direction_channel = 4

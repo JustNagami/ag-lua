@@ -107,6 +107,18 @@
 		albumName = "Kid's Initial Courage",
 		verName = "89d4415061508521caf4484eaa52d6a4"
 	},
+	{
+		id = 19,
+		cover = "icon_CD_19",
+		albumName = "Summer Revelry",
+		verName = "34e7b8b2ac04b8e7bea9f5153a073c33"
+	},
+	{
+		id = 20,
+		cover = "icon_CD_20",
+		albumName = "Chords Before Aurora",
+		verName = "49c5178324e8aedf7756992932c197b0"
+	},
 	all = {
 		1,
 		2,
@@ -125,6 +137,8 @@
 		15,
 		16,
 		17,
-		18
+		18,
+		19,
+		20
 	}
 }

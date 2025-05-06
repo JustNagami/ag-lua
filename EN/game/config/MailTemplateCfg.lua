@@ -1167,14 +1167,6 @@
 		mail_desc = "62e22698330d560377bed669c00424ef",
 		mail_type = 1
 	},
-	[6060] = {
-		mail_title = "49a3d8aea1025af13eb383d7f1cd611d",
-		link_type = 0,
-		id = 6060,
-		mail_sender = "6182bea42bd29ca30b36e4e1e511f92f",
-		mail_desc = "d8a23b4c33866fc3310f3b70c9405e12",
-		mail_type = 1
-	},
 	[6061] = {
 		mail_title = "24b373dfdeee71fbe8ce1f53419d781a",
 		link_type = 0,
@@ -1565,14 +1557,6 @@
 		id = 640208,
 		mail_sender = "048ba3b5e86fc44a24a479cc23d9fa07",
 		mail_desc = "adf99ca573b372b4ea173f071cdc822e",
-		mail_type = 1
-	},
-	[640209] = {
-		mail_title = "dada658e3a8ea086437127a99fdfcd05",
-		link_type = 0,
-		id = 640209,
-		mail_sender = "34ad7a632ca0d274772f8569edfcbf98",
-		mail_desc = "09f4996d1a55b77bb17f0f0b2ce97c94",
 		mail_type = 1
 	},
 	[8003] = {
@@ -1994,7 +1978,6 @@
 		6057,
 		6058,
 		6059,
-		6060,
 		6061,
 		6062,
 		6063,
@@ -2044,7 +2027,6 @@
 		640206,
 		640207,
 		640208,
-		640209,
 		8003,
 		8004,
 		11001,

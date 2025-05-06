@@ -15179,6 +15179,1284 @@
 			1031830
 		}
 	},
+	[32300] = {
+		name = "1de7a548328b2016394e73b69ee5b29e",
+		pre_id = 0,
+		type = 3,
+		source = "",
+		condition = 500,
+		desc = "a9f86d105d4494df942d1fc8215b2ad9",
+		need = 17,
+		activity_id = 0,
+		system = "",
+		id = 32300,
+		phase = 29,
+		additional_parameter = {
+			3,
+			29
+		},
+		reward = {
+			{
+				40203,
+				3
+			},
+			{
+				40803,
+				3
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		}
+	},
+	[32301] = {
+		name = "c05003eb67edae5542cfe54ce9a2f09d",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "2159ed6989062e996896c3f624c0b31d",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32301,
+		phase = 29,
+		additional_parameter = {
+			1032001
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032001
+		}
+	},
+	[32302] = {
+		name = "8f3940a06c1d70eb72fde57427944f39",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "8590cae35ec467665387c6ce06808d9d",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32302,
+		phase = 29,
+		additional_parameter = {
+			1032002
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032002
+		}
+	},
+	[32303] = {
+		name = "15eae4baaa6c605567dbf9ef12e2f140",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "60d44dbaf3740e1d8979d81a1f1d0d79",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32303,
+		phase = 29,
+		additional_parameter = {
+			1032003
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032003
+		}
+	},
+	[32304] = {
+		name = "aa8e12b475ee5403c48de2a8b262e66e",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "9cf23fab80de27b4db98fbbb387ef644",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32304,
+		phase = 29,
+		additional_parameter = {
+			1032004
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032004
+		}
+	},
+	[32305] = {
+		name = "373cf52f8a106be9496db4346ec6ca42",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "d0e7dec97eeb442c09653a919d54bcbd",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32305,
+		phase = 29,
+		additional_parameter = {
+			1032005
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032005
+		}
+	},
+	[32306] = {
+		name = "18a13aecd8a010b4a90dce558023696d",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "f31eec087a5b2bbce0da676d25897dba",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32306,
+		phase = 29,
+		additional_parameter = {
+			1032006
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032006
+		}
+	},
+	[32307] = {
+		name = "6525687fd040e2980dd55c303a025841",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "b313f3cfc6f3c64b63015984e05d7da0",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32307,
+		phase = 29,
+		additional_parameter = {
+			1032007
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032007
+		}
+	},
+	[32308] = {
+		name = "2d2d329a26670c8434e9645af530aa12",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "87d889e06f6bb0eaded9b6c4d5d4a080",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32308,
+		phase = 29,
+		additional_parameter = {
+			1032008
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032008
+		}
+	},
+	[32309] = {
+		name = "7edcadc1186d1a675240751153b6eff7",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "067fcb36a4bd251483ffe2cc0e6d8214",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32309,
+		phase = 29,
+		additional_parameter = {
+			1032009
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032009
+		}
+	},
+	[32310] = {
+		name = "6de3b81b0ed21a36f5e9f2624d4cca11",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "ecc70571986572b5b93ed843311a7f67",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32310,
+		phase = 29,
+		additional_parameter = {
+			1032010
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032010
+		}
+	},
+	[32311] = {
+		name = "900531fbb6fd37c358566f3450044ccc",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "0316006932930011c318e7da92a0dd2b",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32311,
+		phase = 29,
+		additional_parameter = {
+			1032011
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032011
+		}
+	},
+	[32312] = {
+		name = "3149d638eaf50987bee1462ad809d3ac",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "c0cbd1bbe429a994ba27148bccf5ddfb",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32312,
+		phase = 29,
+		additional_parameter = {
+			1032012
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032012
+		}
+	},
+	[32313] = {
+		name = "51b087f16adaa7c6f50d6d4389388910",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "c5fb2e5eaa01c36a4be9dd0eb6172ddc",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32313,
+		phase = 29,
+		additional_parameter = {
+			1032013
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032013
+		}
+	},
+	[32314] = {
+		name = "5cfe9be06e5abd2d814cb095dcfb94ea",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "dcae2839b7870eb18e0bd7790c19c0ce",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32314,
+		phase = 29,
+		additional_parameter = {
+			1032014
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032014
+		}
+	},
+	[32315] = {
+		name = "8ec3aeadc8547b61f4d5cf3696019fc9",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "0dc857f5bac32d96090602e5ef053e70",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32315,
+		phase = 29,
+		additional_parameter = {
+			1032015
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032015
+		}
+	},
+	[32316] = {
+		name = "104a82f2c0c20f1f8c9e3ec139666db7",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "06e4097fbe0414348f7e58447e3ce792",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32316,
+		phase = 29,
+		additional_parameter = {
+			1032016
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032016
+		}
+	},
+	[32317] = {
+		name = "9ba58f18d863b300ba36acbb9b307c1f",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "b10a05d551a512de1858cb9f4b3f7064",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32317,
+		phase = 29,
+		additional_parameter = {
+			1032017
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			10120,
+			1032017
+		}
+	},
+	[32318] = {
+		name = "32ae816571f87fe25393906ebf775ec1",
+		pre_id = 0,
+		type = 3,
+		source = "",
+		condition = 500,
+		desc = "9b398e54d3b1a39461bb51235ece4549",
+		need = 15,
+		activity_id = 0,
+		system = "",
+		id = 32318,
+		phase = 30,
+		additional_parameter = {
+			3,
+			30
+		},
+		reward = {
+			{
+				40203,
+				3
+			},
+			{
+				40803,
+				3
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		}
+	},
+	[32319] = {
+		name = "0c5eb1b31e6a50457a8af4750543feec",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "58882f4248f6fc7ef2d48939032a9a14",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32319,
+		phase = 30,
+		additional_parameter = {
+			1032018
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11120,
+			1032018
+		}
+	},
+	[32320] = {
+		name = "e9c4283a07c883b743739739bd0a067d",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "586b8b6fc5fbf4f252b97a6d61a223f8",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32320,
+		phase = 30,
+		additional_parameter = {
+			1032019
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11120,
+			1032019
+		}
+	},
+	[32321] = {
+		name = "f2ec632ee4fbd53aff70b0e2c743de98",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "c952f2c9801307f427bdbf2cab87e811",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32321,
+		phase = 30,
+		additional_parameter = {
+			1032020
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11120,
+			1032020
+		}
+	},
+	[32322] = {
+		name = "0aa7b101e32fa125a91a2401c11f565b",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "3644003772a0ca3e5f12fd2ac3d28868",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32322,
+		phase = 30,
+		additional_parameter = {
+			1032021
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11120,
+			1032021
+		}
+	},
+	[32323] = {
+		name = "7c113ab68a3dc94b0ad8c1ea3718b68b",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "5241ca0b613f68c63a44394d78ee9e1a",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32323,
+		phase = 30,
+		additional_parameter = {
+			1032022
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11120,
+			1032022
+		}
+	},
+	[32324] = {
+		name = "6852c6b396fb5b42acdee3c977b1f067",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "ca7b14c5f562a79c955871ab69babe1a",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32324,
+		phase = 30,
+		additional_parameter = {
+			1032023
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11120,
+			1032023
+		}
+	},
+	[32325] = {
+		name = "f1b2d94f824dcf5e2246ceeb413eb238",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "b84d4d18f4b8d8c00ce37c463de23f4f",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32325,
+		phase = 30,
+		additional_parameter = {
+			1032024
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11120,
+			1032024
+		}
+	},
+	[32326] = {
+		name = "cda381f058012639c1992b78ebb7a941",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "1710bf6e66a20985848611c2db44865d",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32326,
+		phase = 30,
+		additional_parameter = {
+			1032025
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11120,
+			1032025
+		}
+	},
+	[32327] = {
+		name = "6f6c4d5de8d4d1d1e6930d8cf8424782",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "0ea31b8db3ee3df057163efa9443e076",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32327,
+		phase = 30,
+		additional_parameter = {
+			1032026
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11120,
+			1032026
+		}
+	},
+	[32328] = {
+		name = "ac0cbc2c875d8a1f112c99bc64317a23",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "94f064ac6194d17804952ef3985a71ea",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32328,
+		phase = 30,
+		additional_parameter = {
+			1032027
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11120,
+			1032027
+		}
+	},
+	[32329] = {
+		name = "ffed9ee202ce628ee184988dac9c0e60",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "30e1b11d156e48a3a4edfb6e4cc194c9",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32329,
+		phase = 30,
+		additional_parameter = {
+			1032028
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11120,
+			1032028
+		}
+	},
+	[32330] = {
+		name = "a09c7e42ceba37a3aadf187d581f5615",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "8e6a534a8034459ee7fbb5c32f829dd5",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32330,
+		phase = 30,
+		additional_parameter = {
+			1032029
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11120,
+			1032029
+		}
+	},
+	[32331] = {
+		name = "38b6f8620d8b72e9a824c42bc3c97770",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "c7134ad032fa42298293583854ec2a2f",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32331,
+		phase = 30,
+		additional_parameter = {
+			1032030
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11120,
+			1032030
+		}
+	},
+	[32332] = {
+		name = "268e441973a1d8864eeb7fa3149a5363",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "a65daac9d9dd2679ed134be4034dfc28",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32332,
+		phase = 30,
+		additional_parameter = {
+			1032031
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11120,
+			1032031
+		}
+	},
+	[32333] = {
+		name = "dad2b4244beb18995f269134168ded21",
+		pre_id = 0,
+		type = 3,
+		condition = 401,
+		desc = "9ac5071a14f6e6e9299b925c15b88c21",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 32333,
+		phase = 30,
+		additional_parameter = {
+			1032032
+		},
+		reward = {
+			{
+				40103,
+				1
+			},
+			{
+				2,
+				3500
+			},
+			{
+				40803,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			309,
+			11120,
+			1032032
+		}
+	},
 	[40100] = {
 		name = "8ade3edd63d7c5158b6736f98a2e0266",
 		pre_id = 0,
@@ -76222,16 +77500,16 @@
 		},
 		source = {}
 	},
-	[202401] = {
-		name = "655d2accda0742b255c765c5ae4a1fb9",
+	[202408] = {
+		name = "1edd6942b1442ec83f9b0cf915389316",
 		pre_id = 0,
 		type = 3002,
 		condition = 1,
-		desc = "85eccd617561090113a72f5a691fa038",
+		desc = "e9d406271e91a4a57fe80267d533158a",
 		need = 1,
-		activity_id = 242821,
+		activity_id = 292821,
 		system = "",
-		id = 202401,
+		id = 202408,
 		phase = 0,
 		additional_parameter = {},
 		reward = {
@@ -76254,16 +77532,16 @@
 		},
 		source = {}
 	},
-	[202402] = {
-		name = "d33366ecd6cf9decf6e7d230b5977488",
+	[202409] = {
+		name = "4834ae9e6df0405ba6e147cb23fcae0c",
 		pre_id = 0,
 		type = 3002,
 		condition = 350,
-		desc = "d5315655fe4560f7d20dcbd3cb5a5a6c",
+		desc = "a135fc5a064036458628af57e817629e",
 		need = 240,
-		activity_id = 242822,
+		activity_id = 292822,
 		system = "",
-		id = 202402,
+		id = 202409,
 		phase = 0,
 		additional_parameter = {
 			4
@@ -76288,16 +77566,16 @@
 		},
 		source = {}
 	},
-	[202403] = {
-		name = "1cbcf3485a636e731c8035031ab51f6c",
+	[202410] = {
+		name = "7c8edec61af0751537055fc7ca2c3fd0",
 		pre_id = 0,
 		type = 3002,
 		condition = 300,
-		desc = "43be7eef9f67e569fc5bd0d56fa4ffa2",
+		desc = "edd940e0e6c8ca522f42c1ef5d944813",
 		need = 100,
-		activity_id = 242823,
+		activity_id = 292823,
 		system = "",
-		id = 202403,
+		id = 202410,
 		phase = 0,
 		additional_parameter = {
 			22
@@ -76322,16 +77600,16 @@
 		},
 		source = {}
 	},
-	[202404] = {
-		name = "c6268026b1bdd96239d6563ea17fa707",
+	[202411] = {
+		name = "29dcb937a15ee1b07d4f4a2bb2b86e51",
 		pre_id = 0,
 		type = 3002,
 		condition = 472,
-		desc = "745f9ef497a0110252e88fbb5e50eea4",
+		desc = "da15e7391fd88e2c18c9019e59aaf561",
 		need = 1,
-		activity_id = 242824,
+		activity_id = 292824,
 		system = "",
-		id = 202404,
+		id = 202411,
 		phase = 0,
 		additional_parameter = {
 			0,
@@ -76358,16 +77636,16 @@
 		},
 		source = {}
 	},
-	[202405] = {
-		name = "97fb78094f85ed61c7dbb6e1841dfe1b",
+	[202412] = {
+		name = "fdfac608899099b09c374209f391bff0",
 		pre_id = 0,
 		type = 3002,
 		condition = 600,
-		desc = "6dff6336e4a935258b3431398d526058",
+		desc = "97d1b4336ad9f8a89891aa3e66ff4a44",
 		need = 1,
-		activity_id = 242825,
+		activity_id = 292825,
 		system = "",
-		id = 202405,
+		id = 202412,
 		phase = 0,
 		additional_parameter = {
 			0,
@@ -76393,16 +77671,16 @@
 		},
 		source = {}
 	},
-	[202406] = {
-		name = "3998b17ced0f25aa62ff50863c41ea06",
+	[202413] = {
+		name = "ff96fb9f87ad8649c2e8b4ed42fff810",
 		pre_id = 0,
 		type = 3002,
 		condition = 8,
-		desc = "b8207ca7db266fecad1702a3fe2597f9",
+		desc = "3075c3485c6a038d3ef75b89569bf52b",
 		need = 1,
-		activity_id = 242826,
+		activity_id = 292826,
 		system = "",
-		id = 202406,
+		id = 202413,
 		phase = 0,
 		additional_parameter = {
 			0
@@ -76427,16 +77705,16 @@
 		},
 		source = {}
 	},
-	[202407] = {
-		name = "c27c42091b88421562d81926942b4106",
+	[202414] = {
+		name = "f63aff79695b440b5529a5f77126cf99",
 		pre_id = 0,
 		type = 3002,
 		condition = 401,
-		desc = "7554913063fe3278796c70919d8f2b06",
+		desc = "73a68cd6db63e4f2d740b691efac063c",
 		need = 1,
-		activity_id = 242827,
+		activity_id = 292827,
 		system = "",
-		id = 202407,
+		id = 202414,
 		phase = 0,
 		additional_parameter = {
 			1031901
@@ -105226,6 +106504,108 @@
 		},
 		source = {}
 	},
+	[36402001] = {
+		name = "86c916b6011f6d19f8bee0c1015b7aa9",
+		pre_id = 0,
+		type = 3001,
+		condition = 1,
+		desc = "a9f77b5d11936613fcee1390fbf7df2b",
+		need = 1,
+		activity_id = 2900401,
+		system = "",
+		id = 36402001,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				5315901,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[36402002] = {
+		name = "de145c02fbb4b7f664ebe7cd0676215a",
+		pre_id = 0,
+		type = 3001,
+		condition = 350,
+		desc = "55224e7f7f8d0b1c6c9accb5dc940ad6",
+		need = 120,
+		activity_id = 2900401,
+		system = "",
+		id = 36402002,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				5315901,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[36402003] = {
+		name = "e6f903d2298fa46665a8240409c9cceb",
+		pre_id = 0,
+		type = 3001,
+		condition = 402,
+		desc = "24da414b7f1e16dbb1f04d4e9f647653",
+		need = 3,
+		activity_id = 2900401,
+		system = "",
+		id = 36402003,
+		phase = 0,
+		additional_parameter = {
+			0
+		},
+		reward = {
+			{
+				5315901,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[36402004] = {
+		name = "f72dd9c6b3896c631e23f36a1316fff3",
+		pre_id = 0,
+		type = 3002,
+		condition = 350,
+		desc = "537d8fe73adda4ae91f9b3deff5f8c0e",
+		need = 600,
+		activity_id = 2900401,
+		system = "",
+		id = 36402004,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				5315901,
+				3
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
 	[31101601] = {
 		name = "a8cf4552938777cea0084f5e40d11969",
 		pre_id = 0,
@@ -109271,13 +110651,13 @@
 			202316,
 			202317,
 			202318,
-			202401,
-			202402,
-			202403,
-			202404,
-			202405,
-			202406,
-			202407,
+			202408,
+			202409,
+			202410,
+			202411,
+			202412,
+			202413,
+			202414,
 			202601,
 			202602,
 			202603,
@@ -109812,6 +111192,7 @@
 			3590011,
 			3590012,
 			3590016,
+			36402004,
 			31101601,
 			31101602,
 			31101603,
@@ -110029,6 +111410,9 @@
 			3590013,
 			3590014,
 			3590015,
+			36402001,
+			36402002,
+			36402003,
 			40201001,
 			40201002,
 			40201003,
@@ -110723,7 +112107,41 @@
 			32128,
 			32129,
 			32130,
-			32131
+			32131,
+			32300,
+			32301,
+			32302,
+			32303,
+			32304,
+			32305,
+			32306,
+			32307,
+			32308,
+			32309,
+			32310,
+			32311,
+			32312,
+			32313,
+			32314,
+			32315,
+			32316,
+			32317,
+			32318,
+			32319,
+			32320,
+			32321,
+			32322,
+			32323,
+			32324,
+			32325,
+			32326,
+			32327,
+			32328,
+			32329,
+			32330,
+			32331,
+			32332,
+			32333
 		},
 		[903] = {
 			10101,
@@ -110819,6 +112237,12 @@
 			31101614,
 			31101615,
 			31101616
+		},
+		[2900401] = {
+			36402001,
+			36402002,
+			36402003,
+			36402004
 		},
 		[3600438] = {
 			3590013,
@@ -111911,26 +113335,26 @@
 			202644,
 			202645
 		},
-		[242827] = {
-			202407
+		[292827] = {
+			202414
 		},
-		[242826] = {
-			202406
+		[292826] = {
+			202413
 		},
-		[242825] = {
-			202405
+		[292825] = {
+			202412
 		},
-		[242824] = {
-			202404
+		[292824] = {
+			202411
 		},
-		[242823] = {
-			202403
+		[292823] = {
+			202410
 		},
-		[242822] = {
-			202402
+		[292822] = {
+			202409
 		},
-		[242821] = {
-			202401
+		[292821] = {
+			202408
 		},
 		[232002] = {
 			150178,
@@ -113783,6 +115207,40 @@
 			32129,
 			32130,
 			32131,
+			32300,
+			32301,
+			32302,
+			32303,
+			32304,
+			32305,
+			32306,
+			32307,
+			32308,
+			32309,
+			32310,
+			32311,
+			32312,
+			32313,
+			32314,
+			32315,
+			32316,
+			32317,
+			32318,
+			32319,
+			32320,
+			32321,
+			32322,
+			32323,
+			32324,
+			32325,
+			32326,
+			32327,
+			32328,
+			32329,
+			32330,
+			32331,
+			32332,
+			32333,
 			40100,
 			40101,
 			40102,
@@ -115067,6 +116525,40 @@
 		32129,
 		32130,
 		32131,
+		32300,
+		32301,
+		32302,
+		32303,
+		32304,
+		32305,
+		32306,
+		32307,
+		32308,
+		32309,
+		32310,
+		32311,
+		32312,
+		32313,
+		32314,
+		32315,
+		32316,
+		32317,
+		32318,
+		32319,
+		32320,
+		32321,
+		32322,
+		32323,
+		32324,
+		32325,
+		32326,
+		32327,
+		32328,
+		32329,
+		32330,
+		32331,
+		32332,
+		32333,
 		40100,
 		40101,
 		40102,
@@ -116996,13 +118488,13 @@
 		150188,
 		150189,
 		150190,
-		202401,
-		202402,
-		202403,
-		202404,
-		202405,
-		202406,
-		202407,
+		202408,
+		202409,
+		202410,
+		202411,
+		202412,
+		202413,
+		202414,
 		202501,
 		202502,
 		202503,
@@ -117972,6 +119464,10 @@
 		3590014,
 		3590015,
 		3590016,
+		36402001,
+		36402002,
+		36402003,
+		36402004,
 		31101601,
 		31101602,
 		31101603,

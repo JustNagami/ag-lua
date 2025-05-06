@@ -83,10 +83,10 @@ function var_0_1.Refresh(arg_7_0)
 	local var_7_4 = ""
 
 	for iter_7_2, iter_7_3 in ipairs(var_7_3) do
-		var_7_4 = var_7_4 .. iter_7_3 .. "\n"
+		var_7_4 = var_7_4 .. GetI18NText(iter_7_3) .. "\n"
 	end
 
-	arg_7_0.m_buffDes.text = GetI18NText(var_7_4)
+	arg_7_0.m_buffDes.text = var_7_4
 
 	local var_7_5 = var_7_2.stage_id
 	local var_7_6 = BattleSlayerStageCfg[var_7_5]

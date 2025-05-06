@@ -26,7 +26,7 @@ function var_0_0.AddListeners(arg_3_0)
 		local var_5_1 = TeachStageExInfoCfg[var_5_0]
 
 		if not SDKTools.IsSDK() then
-			Application.OpenURL(var_5_1.video_url)
+			OperationAction.OpenNormalUrl(var_5_1.video_url)
 		else
 			LuaForUtil.OpenWebView(var_5_1.video_url, true, function()
 				manager.audio:PauseAll(true)

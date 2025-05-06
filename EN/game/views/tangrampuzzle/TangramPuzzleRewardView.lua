@@ -45,6 +45,8 @@ function var_0_0.RefreshUI(arg_9_0)
 	for iter_9_0, iter_9_1 in pairs(arg_9_0.regionList_) do
 		iter_9_1:SetData(arg_9_0.activityID_, iter_9_0)
 	end
+
+	arg_9_0.completeImg_.sprite = getSpriteWithoutAtlas(var_9_0.path .. var_9_0.album_id)
 end
 
 function var_0_0.SpawnRegion(arg_10_0, arg_10_1)

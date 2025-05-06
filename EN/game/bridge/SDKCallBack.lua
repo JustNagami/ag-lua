@@ -217,7 +217,9 @@ function GetSDKLoginInfo()
 end
 
 function GetSDKLoginToken()
-	return var_0_4.token
+	if var_0_4 then
+		return var_0_4.token
+	end
 end
 
 local var_0_5 = false

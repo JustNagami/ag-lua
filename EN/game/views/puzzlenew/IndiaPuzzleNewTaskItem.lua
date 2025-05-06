@@ -1,5 +1,4 @@
 ﻿local var_0_0 = class("IndiaPuzzleNewTaskItem", ReduxView)
-local var_0_1 = import("game.tools.JumpTools")
 
 function var_0_0.OnCtor(arg_1_0, arg_1_1)
 	arg_1_0.rewardItems_ = {}
@@ -29,77 +28,87 @@ end
 
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
-
-	arg_4_0.controller_ = ControllerUtil.GetController(arg_4_0.transform_, "state")
-	arg_4_0.typeController_ = ControllerUtil.GetController(arg_4_0.transform_, "type")
+	arg_4_0:InitController()
 end
 
-function var_0_0.AddListeners(arg_5_0)
-	arg_5_0:AddBtnListener(arg_5_0.btn_, nil, function()
-		if not ActivityData:GetActivityIsOpen(arg_5_0.activityID_) then
+function var_0_0.InitController(arg_5_0)
+	arg_5_0.controller_ = ControllerUtil.GetController(arg_5_0.transform_, "state")
+	arg_5_0.typeController_ = ControllerUtil.GetController(arg_5_0.transform_, "type")
+end
+
+function var_0_0.AddListeners(arg_6_0)
+	arg_6_0:AddBtnListener(arg_6_0.btn_, nil, function()
+		if not ActivityData:GetActivityIsOpen(arg_6_0.activityID_) then
 			ShowTips("TIME_OVER")
 
 			return
 		end
 
 		TaskAction:SubmitTaskList({
-			arg_5_0.taskID_
+			arg_6_0.taskID_
 		})
 	end)
 end
 
-function var_0_0.RefreshUI(arg_7_0)
-	local var_7_0 = AssignmentCfg[arg_7_0.taskID_]
+function var_0_0.RefreshUI(arg_8_0)
+	local var_8_0 = AssignmentCfg[arg_8_0.taskID_]
 
-	arg_7_0.desc_.text = var_7_0.desc
+	arg_8_0.desc_.text = var_8_0.desc
 
-	arg_7_0:RefreshReward()
-	arg_7_0:RefreshType()
-	arg_7_0:RefreshProgress()
+	arg_8_0:RefreshProgress()
+	arg_8_0:RefreshReward()
+	arg_8_0:RefreshType()
 end
 
-function var_0_0.RefreshReward(arg_8_0)
-	arg_8_0.rewardCfg_ = AssignmentCfg[arg_8_0.taskID_].reward[1]
+function var_0_0.RefreshReward(arg_9_0)
+	arg_9_0.rewardCfg_ = AssignmentCfg[arg_9_0.taskID_].reward[1]
 
-	if arg_8_0.commonItem_ == nil then
-		go = Object.Instantiate(arg_8_0.rewardItem_, arg_8_0.rewardParent_)
-		arg_8_0.commonItem_ = CommonItem.New(go)
+	if arg_9_0.commonItem_ == nil then
+		arg_9_0.commonItem_ = CommonItemView.New(arg_9_0.rewardItem_, true)
+		arg_9_0.itemData_ = clone(ItemTemplateData)
+
+		function arg_9_0.itemData_.clickFun(arg_10_0)
+			ShowPopItem(POP_ITEM, {
+				arg_10_0.id,
+				arg_10_0.number
+			})
+		end
 	end
 
-	arg_8_0.commonItem_:RefreshData(formatReward(arg_8_0.rewardCfg_))
-	arg_8_0.commonItem_:RegistCallBack(function()
-		ShowPopItem(POP_ITEM, arg_8_0.rewardCfg_)
-	end)
-	arg_8_0.commonItem_:Show(true)
+	arg_9_0.itemData_.id = arg_9_0.rewardCfg_[1]
+	arg_9_0.itemData_.number = arg_9_0.rewardCfg_[2]
+
+	arg_9_0.commonItem_:SetData(arg_9_0.itemData_)
+	arg_9_0.commonItem_:RefreshGray(arg_9_0.taskComplete_ == true)
 end
 
-function var_0_0.RefreshProgress(arg_10_0)
-	local var_10_0 = AssignmentCfg[arg_10_0.taskID_]
-	local var_10_1 = arg_10_0.taskProgress
+function var_0_0.RefreshProgress(arg_11_0)
+	local var_11_0 = AssignmentCfg[arg_11_0.taskID_]
+	local var_11_1 = arg_11_0.taskProgress
 
-	if arg_10_0.taskProgress > var_10_0.need then
-		var_10_1 = var_10_0.need
+	if arg_11_0.taskProgress > var_11_0.need then
+		var_11_1 = var_11_0.need
 	end
 
-	arg_10_0.slider_.value = var_10_1 / var_10_0.need
-	arg_10_0.progress_.text = string.format("%s/%s", var_10_1, var_10_0.need)
+	arg_11_0.slider_.value = var_11_1 / var_11_0.need
+	arg_11_0.progress_.text = string.format("%s/%s", var_11_1, var_11_0.need)
 
-	local var_10_2 = arg_10_0.taskProgress >= var_10_0.need
+	local var_11_2 = arg_11_0.taskProgress >= var_11_0.need
 
-	if arg_10_0.taskComplete_ == true then
-		arg_10_0.controller_:SetSelectedState("received")
-	elseif var_10_2 then
-		arg_10_0.controller_:SetSelectedState("complete")
+	if arg_11_0.taskComplete_ == true then
+		arg_11_0.controller_:SetSelectedState("received")
+	elseif var_11_2 then
+		arg_11_0.controller_:SetSelectedState("complete")
 	else
-		arg_10_0.controller_:SetSelectedState("unfinish")
+		arg_11_0.controller_:SetSelectedState("unfinish")
 	end
 end
 
-function var_0_0.RefreshType(arg_11_0)
-	if AssignmentCfg[arg_11_0.taskID_].type == TaskConst.TASK_TYPE.OSIRIS_TASK_DAILY then
-		arg_11_0.typeController_:SetSelectedState("normal")
+function var_0_0.RefreshType(arg_12_0)
+	if AssignmentCfg[arg_12_0.taskID_].type == TaskConst.TASK_TYPE.OSIRIS_TASK_DAILY then
+		arg_12_0.typeController_:SetSelectedState("normal")
 	else
-		arg_11_0.typeController_:SetSelectedState("challenge")
+		arg_12_0.typeController_:SetSelectedState("challenge")
 	end
 end
 

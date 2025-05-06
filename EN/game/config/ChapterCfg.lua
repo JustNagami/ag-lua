@@ -2800,6 +2800,203 @@
 			183
 		}
 	},
+	[10120] = {
+		english = "f2c01edf9368566ba9326632d70bff71",
+		type = 1,
+		group = 2001,
+		level = 1,
+		cost_exchange_id = 0,
+		activity_id = 290561,
+		sub_type = 22,
+		cue_name = "bgm_activity_3_6_ui",
+		drag_follow = 0,
+		line_type = 0,
+		difficulty = 1,
+		unlock_activity_id = 291821,
+		switch_bg_index = 0,
+		max_width = 0,
+		unlock_scroll_rate = "",
+		subhead = "b3e073bf3099e1165556e61f65f95a3b",
+		bg = "TextureBg/Background/ChaptePlot_3_6_0001",
+		cue_sheet = "bgm_activity_3_6_ui",
+		attach_prefab = "",
+		awb = "bgm_activity_3_6_ui",
+		id = 10120,
+		section_id_list = {
+			1032001,
+			1032002,
+			1032003,
+			1032004,
+			1032005,
+			1032006,
+			1032007,
+			1032008,
+			1032009,
+			1032010,
+			1032011,
+			1032012,
+			1032013,
+			1032014,
+			1032015,
+			1032016,
+			1032017
+		},
+		pre_chapter = {
+			10119
+		},
+		star_need = {
+			10,
+			27,
+			41
+		},
+		first_reward = {
+			{
+				1,
+				20
+			},
+			{
+				40301,
+				15
+			},
+			{
+				40802,
+				1
+			}
+		},
+		second_reward = {
+			{
+				1,
+				30
+			},
+			{
+				40301,
+				25
+			},
+			{
+				40802,
+				2
+			}
+		},
+		third_reward = {
+			{
+				1,
+				40
+			},
+			{
+				40301,
+				30
+			},
+			{
+				40802,
+				3
+			}
+		},
+		trial_list = {
+			193,
+			194,
+			195,
+			196,
+			197,
+			198
+		}
+	},
+	[11120] = {
+		english = "0e88fbc98515f0b69ccb0fed52a22aba",
+		type = 1,
+		group = 2002,
+		level = 1,
+		cost_exchange_id = 0,
+		activity_id = 290561,
+		sub_type = 22,
+		cue_name = "bgm_activity_3_6_ui",
+		drag_follow = 0,
+		line_type = 0,
+		difficulty = 1,
+		unlock_activity_id = 291822,
+		switch_bg_index = 0,
+		max_width = 0,
+		unlock_scroll_rate = "",
+		subhead = "43ee0469c59d9eb6463034cbee8a42b4",
+		bg = "TextureBg/Background/ChaptePlot_3_6_0002",
+		cue_sheet = "bgm_activity_3_6_ui",
+		attach_prefab = "",
+		awb = "bgm_activity_3_6_ui",
+		id = 11120,
+		section_id_list = {
+			1032018,
+			1032019,
+			1032020,
+			1032021,
+			1032022,
+			1032023,
+			1032024,
+			1032025,
+			1032026,
+			1032027,
+			1032028,
+			1032029,
+			1032030,
+			1032031,
+			1032032
+		},
+		pre_chapter = {
+			10120
+		},
+		star_need = {
+			10,
+			24,
+			35
+		},
+		first_reward = {
+			{
+				1,
+				20
+			},
+			{
+				40301,
+				15
+			},
+			{
+				40802,
+				1
+			}
+		},
+		second_reward = {
+			{
+				1,
+				30
+			},
+			{
+				40301,
+				25
+			},
+			{
+				40802,
+				2
+			}
+		},
+		third_reward = {
+			{
+				1,
+				40
+			},
+			{
+				40301,
+				30
+			},
+			{
+				40802,
+				3
+			}
+		},
+		trial_list = {
+			194,
+			195,
+			196,
+			198,
+			200
+		}
+	},
 	[10200] = {
 		trial_list = "",
 		english = "017d0a2bb6f047fb8a772601ad11f0c6",
@@ -8454,6 +8651,8 @@
 			10118,
 			11118,
 			10119,
+			10120,
+			11120,
 			10200,
 			10201,
 			10202,
@@ -8498,6 +8697,8 @@
 		10118,
 		11118,
 		10119,
+		10120,
+		11120,
 		10200,
 		10201,
 		10202,

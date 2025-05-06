@@ -60,7 +60,7 @@ function var_0_0.AddUIListener(arg_5_0)
 		local var_9_0 = OperationAction.GetOperationUrl("FOLLOW_TWITTER")
 
 		if var_9_0 then
-			Application.OpenURL(var_9_0)
+			OperationAction.OpenNormalUrl(var_9_0)
 			SurveyAction.FollowPlatform(OperationConst.PLATFORM.TWITTER)
 		else
 			ShowTips("ERROR_NO_TEMPLATE")

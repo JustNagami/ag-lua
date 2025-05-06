@@ -103,7 +103,7 @@ function var_0_0.RefreshText(arg_7_0, arg_7_1)
 
 		local var_7_6 = 0
 
-		for iter_7_2 in string.gmatch(var_7_2.desc, "%%s") do
+		for iter_7_2 in string.gmatch(GetI18NText(var_7_2.desc), "%%s") do
 			var_7_6 = var_7_6 + 1
 		end
 
@@ -111,12 +111,12 @@ function var_0_0.RefreshText(arg_7_0, arg_7_1)
 			table.insert(var_7_5, "")
 		end
 
-		local var_7_7 = string.format(var_7_2.desc, unpack(var_7_5))
+		local var_7_7 = string.format(GetI18NText(var_7_2.desc), unpack(var_7_5))
 		local var_7_8 = ChallengeRogueTeamTools.EventOptionReplaceText(var_7_7, var_7_2.attribute_id_list)
 
 		arg_7_0.descText_.text = var_7_8
 	else
-		arg_7_0.descText_.text = var_7_2.lock_desc
+		arg_7_0.descText_.text = GetI18NText(var_7_2.lock_desc)
 	end
 end
 

@@ -130,7 +130,7 @@ function var_0_0.UpdatePreview(arg_14_0)
 	if ShopTools.IsRMB(arg_14_0.goodId_) then
 		arg_14_0.rmbController_:SetSelectedState("rmb")
 
-		arg_14_0.rmbLabel_.text = "¥" .. var_14_0
+		arg_14_0.rmbLabel_.text = GetTips("MONEY_SYMBOL") .. var_14_0
 	else
 		arg_14_0.rmbController_:SetSelectedState("buy")
 

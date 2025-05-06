@@ -68,15 +68,24 @@ function var_0_0.UpdateView(arg_7_0, arg_7_1, arg_7_2)
 	end
 
 	manager.redPoint:bindUIandKey(arg_7_0.relationBtn_.transform, string.format("%s_%s", RedPointConst.HERO_REALTION, arg_7_0.curHeroID_))
+	arg_7_0:UpdateAdult()
 end
 
-function var_0_0.Hide(arg_8_0)
-	manager.redPoint:unbindUIandKey(arg_8_0.relationBtn_.transform)
-	SetActive(arg_8_0.gameObject_, false)
+function var_0_0.UpdateAdult(arg_8_0)
+	local var_8_0 = HeroTools.IsNeedDisplayAdult(arg_8_0.curRecordID_)
+
+	arg_8_0.adultMarkGo_:SetActive(var_8_0)
+
+	arg_8_0.adultText_.text = var_8_0 and HeroRecordCfg[arg_8_0.curRecordID_].age_en or ""
 end
 
-function var_0_0.Dispose(arg_9_0)
-	var_0_0.super.Dispose(arg_9_0)
+function var_0_0.Hide(arg_9_0)
+	manager.redPoint:unbindUIandKey(arg_9_0.relationBtn_.transform)
+	SetActive(arg_9_0.gameObject_, false)
+end
+
+function var_0_0.Dispose(arg_10_0)
+	var_0_0.super.Dispose(arg_10_0)
 end
 
 return var_0_0

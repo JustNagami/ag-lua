@@ -90,6 +90,7 @@ function var_0_0.Show(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
 	SetActive(arg_8_0.poltBtn_.gameObject, ObtainHeroMovieCfg[arg_8_0.curHeroID_] ~= nil)
 	SetActive(arg_8_0.gameObject_, true)
 	arg_8_0:RefreshRecommend(arg_8_3)
+	arg_8_0:UpdateAdult()
 end
 
 function var_0_0.RefreshRecommend(arg_9_0, arg_9_1)
@@ -138,24 +139,32 @@ function var_0_0.RefreshChargeType(arg_11_0)
 	end
 end
 
-function var_0_0.CameraEnter(arg_12_0)
+function var_0_0.UpdateAdult(arg_12_0)
+	local var_12_0 = HeroTools.IsNeedDisplayAdult(arg_12_0.curRecordID_)
+
+	arg_12_0.adultMarkGo_:SetActive(var_12_0)
+
+	arg_12_0.adultText_.text = var_12_0 and HeroRecordCfg[arg_12_0.curRecordID_].age_en or ""
+end
+
+function var_0_0.CameraEnter(arg_13_0)
 	manager.heroRaiseTrack:SetViewState(HeroRaiseTrackConst.ViewType.heroRaiseCommon, {
 		1,
 		0,
 		1
-	}, arg_12_0.displayGo_)
+	}, arg_13_0.displayGo_)
 end
 
-function var_0_0.Dispose(arg_13_0)
-	if arg_13_0.items then
-		for iter_13_0, iter_13_1 in ipairs(arg_13_0.items) do
-			iter_13_1:Dispose()
+function var_0_0.Dispose(arg_14_0)
+	if arg_14_0.items then
+		for iter_14_0, iter_14_1 in ipairs(arg_14_0.items) do
+			iter_14_1:Dispose()
 		end
 
-		arg_13_0.items = nil
+		arg_14_0.items = nil
 	end
 
-	var_0_0.super.Dispose(arg_13_0)
+	var_0_0.super.Dispose(arg_14_0)
 end
 
 return var_0_0

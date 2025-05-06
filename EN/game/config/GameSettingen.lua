@@ -1048,7 +1048,7 @@
 		id = "monthly_card_num_max",
 		value2 = "",
 		value = {
-			6
+			7
 		}
 	},
 	battlepass_exp_limit_weekly = {
@@ -1420,7 +1420,7 @@
 		value2 = "",
 		value = {
 			{
-				30022,
+				30035,
 				1
 			},
 			{
@@ -1434,7 +1434,7 @@
 		value = {
 			25,
 			{
-				30023,
+				30034,
 				1
 			}
 		}
@@ -3185,8 +3185,8 @@
 			},
 			{
 				3,
-				290037,
-				132
+				290030,
+				30602
 			},
 			{
 				4,
@@ -5150,7 +5150,7 @@
 		id = "admin_mail_title_max_len",
 		value2 = "",
 		value = {
-			40
+			80
 		}
 	},
 	joint_game_kickout_time = {

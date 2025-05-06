@@ -808,6 +808,23 @@
 			7507
 		}
 	},
+	[290013] = {
+		cost_item_list = "",
+		type = 0,
+		id = 290013,
+		title = "267f5aebc727d95e3dfb8aad2c31e0ad",
+		ui_path = "Widget/System/ActivitySign/NianSevenDaySignUI",
+		limit_level = 35,
+		config_list = {
+			20001,
+			20002,
+			20003,
+			20004,
+			20005,
+			20006,
+			20007
+		}
+	},
 	all = {
 		1,
 		60011,
@@ -852,6 +869,7 @@
 		340011,
 		280013,
 		280014,
-		3600102
+		3600102,
+		290013
 	}
 }

@@ -576,7 +576,36 @@
 			-326
 		}
 	},
+	[1701] = {
+		closetime = 5,
+		priority = 1,
+		talk_adapt = 0,
+		talk_anchors = 0,
+		name = "challengeRogueTeamSectionSelectHero",
+		narrator_icon = "mmr",
+		id = 1701,
+		talk_content = "f7fbd8f449aed4006f0cf28760ea127c",
+		narrator_name = "f4043cbbd26a144bca6d037f9e97f917",
+		guide_component = {
+			"conditionBtn_"
+		},
+		mask_component = {},
+		opencondition = {
+			{
+				"uiName",
+				"challengeRogueTeamSectionSelectHero"
+			}
+		},
+		skipcondition = {},
+		talk_position = {
+			320,
+			380
+		}
+	},
 	get_id_list_by_name = {
+		challengeRogueTeamSectionSelectHero = {
+			1701
+		},
 		tetrisGameStageView = {
 			1601
 		},
@@ -632,6 +661,7 @@
 		1402,
 		1501,
 		1502,
-		1601
+		1601,
+		1701
 	}
 }

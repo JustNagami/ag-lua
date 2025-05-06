@@ -427,6 +427,27 @@
 			10119
 		}
 	},
+	[10120] = {
+		sort = 0,
+		name = "e38e49af82e125868dd398d15a62e05d",
+		not_chapter_id = false,
+		id = 10120,
+		show_tag_type = 0,
+		chapter_paint_2 = "bg_mainStory_20",
+		extra_strory_system = "",
+		desc = "be3b0a85f369006b4992fd0505f5593d",
+		extra_story_unlock_condition = "",
+		jump_system = "",
+		chapter_paint = "bg_main_20",
+		drop_icon = "",
+		toggle = 1,
+		asset_pend_key = "assetpend_common_chapter_9",
+		level = 1,
+		chapter_list = {
+			10120,
+			11120
+		}
+	},
 	[10200] = {
 		sort = 0,
 		name = "2574acf600f9eae724cf6545a467c00d",
@@ -1140,6 +1161,29 @@
 		level = 1,
 		chapter_list = {
 			501
+		}
+	},
+	[306] = {
+		sort = 0,
+		name = "998e8f8da81bbf2779d3c2d60a8a9292",
+		not_chapter_id = false,
+		id = 306,
+		show_tag_type = 0,
+		chapter_paint_2 = "map_rogue_team",
+		extra_strory_system = "",
+		desc = "f9c858e879bc9ea6939cd4cbf6f5e3b7",
+		extra_story_unlock_condition = "",
+		chapter_paint = "bg_map_rogue_team",
+		drop_icon = "TextureConfig/Operation/icon_roguelike",
+		toggle = 4,
+		asset_pend_key = "",
+		level = 35,
+		chapter_list = {
+			306
+		},
+		jump_system = {
+			336,
+			100001
 		}
 	},
 	[601] = {
@@ -2735,6 +2779,7 @@
 			402,
 			500,
 			501,
+			306,
 			701
 		},
 		[3] = {
@@ -2773,6 +2818,7 @@
 			10117,
 			10118,
 			10119,
+			10120,
 			10200,
 			10201,
 			10202,
@@ -2809,6 +2855,7 @@
 		10117,
 		10118,
 		10119,
+		10120,
 		10200,
 		10201,
 		10202,
@@ -2841,6 +2888,7 @@
 		402,
 		500,
 		501,
+		306,
 		601,
 		701,
 		4040100,

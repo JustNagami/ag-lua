@@ -41,11 +41,18 @@ function var_0_0.OnEnter(arg_8_0)
 end
 
 function var_0_0.CheckEnter(arg_9_0)
-	local var_9_0 = getData("activityHeroLetter", "enter_" .. arg_9_0.activityID_)
+	if ActivityHeroLetterData:GetActivityUrl() == ActivityConst.ACTIVITY_2_10_HERO_LETTER_H5_WEB then
+		local var_9_0 = ActivityData:GetActivityData(ActivityConst.ACTIVITY_2_10_HERO_LETTER_H5_WEB)
+		local var_9_1 = var_9_0.startTime
+		local var_9_2 = var_9_0.stopTime
+		local var_9_3 = ActivityHeroLetterData:GetSign(ActivityConst.ACTIVITY_2_10_HERO_LETTER_H5_WEB)
 
-	if not var_9_0 or var_9_0 == 0 then
-		arg_9_0:GotoView()
-		saveData("activityHeroLetter", "enter_" .. arg_9_0.activityID_, 1)
+		SetActive(arg_9_0.playBackBtn_.gameObject, var_9_2 > manager.time:GetServerTime())
+
+		if var_9_2 > manager.time:GetServerTime() and var_9_3 == 0 then
+			arg_9_0:GotoView()
+			ActivityHeroLetterAction.SetSign(ActivityConst.ACTIVITY_2_10_HERO_LETTER_H5_WEB)
+		end
 	end
 end
 

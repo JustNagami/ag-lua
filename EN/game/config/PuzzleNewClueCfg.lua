@@ -131,7 +131,104 @@
 		clue_desc = "4b8e5b4da6c534a82bb5270d637afaea",
 		area_type = 1
 	},
+	[3021401] = {
+		main_activity_id = 302141,
+		int = 3021401,
+		clue_desc = "79bb6f412da30dcc406fac832021e176",
+		area_type = 0
+	},
+	[3021402] = {
+		main_activity_id = 302141,
+		int = 3021402,
+		clue_desc = "164120bec0e326d8898c9a34ba17b039",
+		area_type = 0
+	},
+	[3021403] = {
+		main_activity_id = 302141,
+		int = 3021403,
+		clue_desc = "5447a288df61b3b755de1ea8e834e6d3",
+		area_type = 0
+	},
+	[3221411] = {
+		main_activity_id = 322141,
+		int = 3221411,
+		clue_desc = "ceda0f08a780225d096cd0feb190dd2e",
+		area_type = 0
+	},
+	[3221412] = {
+		main_activity_id = 322141,
+		int = 3221412,
+		clue_desc = "5bb04c678faf769d8eb0c3cbe0904491",
+		area_type = 0
+	},
+	[3221413] = {
+		main_activity_id = 322141,
+		int = 3221413,
+		clue_desc = "c768fbda7a7fbda488ad77af33b73860",
+		area_type = 0
+	},
+	[3221414] = {
+		main_activity_id = 322141,
+		int = 3221414,
+		clue_desc = "deab466b2af893466a5efcf69cd84536",
+		area_type = 0
+	},
+	[3221415] = {
+		main_activity_id = 322141,
+		int = 3221415,
+		clue_desc = "3c8df77b0625ae25980502952f2f7c8d",
+		area_type = 0
+	},
+	[2922601] = {
+		main_activity_id = 2922601,
+		int = 2922601,
+		clue_desc = "2d4b2a8cd256cc7beaa1e191c471eee9",
+		area_type = 1
+	},
+	[2922602] = {
+		main_activity_id = 2922601,
+		int = 2922602,
+		clue_desc = "35d68dbbd96fea922e4e6cd52dd8b351",
+		area_type = 1
+	},
+	[2922603] = {
+		main_activity_id = 2922601,
+		int = 2922603,
+		clue_desc = "a1f90f6baab873d00d9f4be3291c9c6f",
+		area_type = 1
+	},
+	[2922604] = {
+		main_activity_id = 2922601,
+		int = 2922604,
+		clue_desc = "043095e52c1b7f72ada01da7bdb73bd3",
+		area_type = 2
+	},
+	[2922605] = {
+		main_activity_id = 2922601,
+		int = 2922605,
+		clue_desc = "c56a4b2ab1acbea816127a021b628fcd",
+		area_type = 2
+	},
 	get_id_list_by_main_activity_id = {
+		[2922601] = {
+			2922601,
+			2922602,
+			2922603,
+			2922604,
+			2922605
+		},
+		[322141] = {
+			3221411,
+			3221412,
+			3221413,
+			3221414,
+			3221415
+		},
+		[302141] = {
+			3021401,
+			3021402,
+			3021403
+		},
 		[3622637] = {
 			3622601,
 			3622602,
@@ -187,6 +284,19 @@
 		3622602,
 		3622603,
 		3622604,
-		3622605
+		3622605,
+		3021401,
+		3021402,
+		3021403,
+		3221411,
+		3221412,
+		3221413,
+		3221414,
+		3221415,
+		2922601,
+		2922602,
+		2922603,
+		2922604,
+		2922605
 	}
 }

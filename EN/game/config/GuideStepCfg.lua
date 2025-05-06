@@ -12457,6 +12457,348 @@
 			150
 		}
 	},
+	[9002] = {
+		talk_anchors = 3,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9002,
+		talk_content = "724b27a6637a1139eb048228ad33d566",
+		params = {},
+		guide_component = {
+			"common",
+			"chapterMap",
+			{
+				"toggleView_",
+				4,
+				"button_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-521,
+			274
+		}
+	},
+	[9003] = {
+		talk_anchors = 3,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9003,
+		talk_content = "0f068f1b2857d9fb42f1a657ca8fbdf3",
+		params = {
+			"chapterMap",
+			4,
+			306
+		},
+		guide_component = {
+			"child_getcom",
+			"chapterMap",
+			{
+				"contentView_",
+				4,
+				"itemParent_"
+			},
+			"306",
+			"Button"
+		},
+		mask_component = {
+			"child",
+			"chapterMap",
+			{
+				"contentView_",
+				4,
+				"itemParent_"
+			},
+			"306/guide_mask"
+		},
+		mask_scale = {},
+		talk_position = {
+			-400,
+			300
+		}
+	},
+	[9101] = {
+		talk_anchors = 3,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9101,
+		talk_content = "11d2a0d3c5ef7361205361b75227643d",
+		params = {},
+		guide_component = {
+			"common",
+			"challengeRogueTeamEntrace",
+			{
+				"startBtn_"
+			}
+		},
+		mask_component = {
+			"common",
+			"challengeRogueTeamEntrace",
+			{
+				"guideComponents",
+				"guide_start"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-900,
+			220
+		}
+	},
+	[9102] = {
+		talk_anchors = 3,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9102,
+		talk_content = "00e27dcdaa43275f5503d57a18de24fc",
+		params = {},
+		guide_component = {
+			"common",
+			"challengeRogueTeamEntraceDifficulty",
+			{
+				"rogueTeamSureBtnView_",
+				"button_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-427,
+			392
+		}
+	},
+	[9108] = {
+		talk_anchors = 3,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9108,
+		talk_content = "6eb8868b385688185f81b4ccf86e4db7",
+		params = {},
+		guide_component = {
+			"common",
+			"challengeRogueTeamSectionSelectHero",
+			{
+				"startBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-427,
+			392
+		}
+	},
+	[9201] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9201,
+		talk_content = "96033448ebdcb181f27b7ef61eae97bb",
+		params = {},
+		guide_component = {
+			"common",
+			"challengeRogueTeamTreasureSelect",
+			{
+				"guideComponents",
+				"guide_itemParent"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-410
+		}
+	},
+	[9401] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9401,
+		talk_content = "7f4964df61daf0c845a4083cb1693316",
+		params = {},
+		guide_component = {
+			"common",
+			"challengeRogueTeamSuitSkill",
+			{
+				"guideComponents",
+				"guide_ult"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-410
+		}
+	},
+	[9501] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9501,
+		talk_content = "371049dd199a8ded7aee165f499478e6",
+		params = {},
+		guide_component = {
+			"common",
+			"challengeRogueTeamTreasureSelect",
+			{
+				"guideComponents",
+				"guide_itemParent"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-410
+		}
+	},
+	[9601] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9601,
+		talk_content = "2b9ccf5c589dc8c0701c6c9cff97de7a",
+		params = {},
+		guide_component = {
+			"rogueTeamMechanismBar",
+			"progressGo_"
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			220
+		}
+	},
+	[9603] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9603,
+		talk_content = "62f7b939e6627dbb1a0a26397a4e5db2",
+		params = {},
+		guide_component = {
+			"common",
+			"challengeRogueTeamTreasureSelect",
+			{
+				"treasureItemList_",
+				1,
+				"commonItem_",
+				"btn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-410
+		}
+	},
+	[9604] = {
+		talk_anchors = 3,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9604,
+		talk_content = "428f2719df44774950a575f2b0fdfae9",
+		params = {},
+		guide_component = {
+			"common",
+			"challengeRogueTeamTreasureSelect",
+			{
+				"rogueTeamSureBtnView_",
+				"button_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-427,
+			392
+		}
+	},
+	[9701] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9701,
+		talk_content = "fc4f739cb430ab69eafb14de72bc40bc",
+		params = {},
+		guide_component = {
+			"common",
+			"challengeRogueTeamTeamInfo",
+			{
+				"guideComponents",
+				"guide_info"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-1070,
+			-196
+		}
+	},
+	[9801] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9801,
+		talk_content = "3b2bd356398b254508a77bb24f3469bf",
+		params = {},
+		guide_component = {
+			"common",
+			"challengeRogueTeamEntrace",
+			{
+				"technologyTreeBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			832,
+			574
+		}
+	},
+	[9802] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 9802,
+		talk_content = "9edf851897fc009e6e86e2a27d94bd5e",
+		params = {},
+		guide_component = {
+			"common",
+			"challengeRogueTeamSkillTree",
+			{
+				"skillItem_",
+				3,
+				"itemBtn_"
+			}
+		},
+		mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-36,
+			195
+		}
+	},
 	[9901] = {
 		talk_anchors = 1,
 		type = "ClickButton",
@@ -14535,6 +14877,20 @@
 		8403,
 		8501,
 		8502,
+		9002,
+		9003,
+		9101,
+		9102,
+		9108,
+		9201,
+		9401,
+		9501,
+		9601,
+		9603,
+		9604,
+		9701,
+		9801,
+		9802,
 		9901,
 		9902,
 		9903,

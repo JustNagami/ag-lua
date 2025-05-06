@@ -167,7 +167,7 @@ function var_0_0.InitItemData(arg_12_0)
 
 		local var_12_7 = GetTips("ROGUE_TEAM_TREASURE_NAME")
 
-		arg_12_0.titleText1_.text = string.format("%s%s", GetTips("ROGUE_TEAM_DISCARD_ITEM"), var_12_7)
+		arg_12_0.titleText1_.text = string.format(GetTips("ROGUE_TEAM_DISCARD_ITEM_WF"), var_12_7)
 		arg_12_0.titleText2_.text = string.format(GetTips("ROGUE_TEAM_SELECT_ITEM"), arg_12_0.canSelectCnt_, var_12_7)
 
 		arg_12_0:RefreshSelectTabItem()
@@ -178,7 +178,7 @@ function var_0_0.InitItemData(arg_12_0)
 
 		local var_12_8 = GetTips("ROGUE_TEAM_RELIC_NAME")
 
-		arg_12_0.titleText1_.text = string.format("%s%s", GetTips("ROGUE_TEAM_DISCARD_ITEM"), var_12_8)
+		arg_12_0.titleText1_.text = string.format(GetTips("ROGUE_TEAM_DISCARD_ITEM_WF"), var_12_8)
 		arg_12_0.titleText2_.text = string.format(GetTips("ROGUE_TEAM_SELECT_ITEM"), arg_12_0.canSelectCnt_, var_12_8)
 	end
 

@@ -47,8 +47,8 @@ function var_0_0.InitMovieData(arg_4_0)
 	arg_4_0.criplayer2_:SetVolume(manager.audio:GetEffectVolume())
 	arg_4_0:SetVideoTrack(arg_4_0.criplayer2_, var_4_0[3])
 	arg_4_0.criplayer2_:SetBufferingTime(0.033)
-	SetFile(arg_4_0.criplayer_, nil, arg_4_0.moviePath_[1], CriMana.Player.SetMode.New)
-	SetFile(arg_4_0.criplayer_, nil, arg_4_0.moviePath_[2], CriMana.Player.SetMode.AppendRepeatedly)
+	SetFile(arg_4_0.criplayer_, nil, manager.video:GetI18NVideoPath(arg_4_0.moviePath_[1]), CriMana.Player.SetMode.New)
+	SetFile(arg_4_0.criplayer_, nil, manager.video:GetI18NVideoPath(arg_4_0.moviePath_[2]), CriMana.Player.SetMode.AppendRepeatedly)
 end
 
 function var_0_0.AddListeners(arg_5_0)
@@ -160,8 +160,8 @@ function var_0_0.StepPlayLoopMovie(arg_18_0, arg_18_1)
 
 		arg_18_0._timer:Start()
 	elseif arg_18_1 == 2 then
-		SetFile(arg_18_0.criplayer2_, nil, arg_18_0.moviePath_[3], CriMana.Player.SetMode.New)
-		SetFile(arg_18_0.criplayer2_, nil, arg_18_0.moviePath_[4], CriMana.Player.SetMode.AppendRepeatedly)
+		SetFile(arg_18_0.criplayer2_, nil, manager.video:GetI18NVideoPath(arg_18_0.moviePath_[3]), CriMana.Player.SetMode.New)
+		SetFile(arg_18_0.criplayer2_, nil, manager.video:GetI18NVideoPath(arg_18_0.moviePath_[4]), CriMana.Player.SetMode.AppendRepeatedly)
 		arg_18_0.criManaMovieController2_:Play()
 
 		arg_18_0._startTimer2 = FrameTimer.New(function()
@@ -193,7 +193,7 @@ end
 
 function var_0_0.StepPlayExitMovie(arg_22_0)
 	LoginBonusAction.EnterState(3)
-	SetFile(arg_22_0.criplayer_, nil, arg_22_0.moviePath_[5], CriMana.Player.SetMode.New)
+	SetFile(arg_22_0.criplayer_, nil, manager.video:GetI18NVideoPath(arg_22_0.moviePath_[5]), CriMana.Player.SetMode.New)
 
 	arg_22_0.criplayer_.statusChangeCallback = handler(arg_22_0, arg_22_0.StatusChangeCallback)
 
@@ -240,30 +240,10 @@ function var_0_0.Cacheable(arg_27_0)
 end
 
 function var_0_0.SetVideoTrack(arg_28_0, arg_28_1, arg_28_2)
-	local var_28_0 = manager.audio:GetLocalizationFlag()
-	local var_28_1 = 0
-	local var_28_2
+	local var_28_0 = manager.video:GetVedioTrackIndex(arg_28_2)
 
-	for iter_28_0 in string.gmatch(arg_28_2, "[^/]+$") do
-		var_28_2 = iter_28_0
-	end
-
-	local var_28_3 = VideoTrackCfg[var_28_2]
-
-	if var_28_3 and var_28_3.has_tracks == 1 then
-		if var_28_0 == "zh" then
-			var_28_1 = 0
-		elseif var_28_0 == "ja" then
-			var_28_1 = 1
-		elseif var_28_0 == "en" then
-			var_28_1 = 2
-		elseif var_28_0 == "kr" then
-			var_28_1 = 3
-		end
-	end
-
-	arg_28_1:SetAudioTrack(var_28_1)
-	arg_28_1:SetSubtitleChannel(var_28_1)
+	arg_28_1:SetAudioTrack(var_28_0)
+	arg_28_1:SetSubtitleChannel(var_28_0)
 end
 
 return var_0_0

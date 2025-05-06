@@ -45,31 +45,56 @@
 		has_tracks = 1,
 		name = "login_activity_3_6_1020caidan_01.usm",
 		has_non_native = 0,
-		i18n_video_list = ""
+		i18n_video_list = {
+			1,
+			2,
+			3,
+			4
+		}
 	},
 	["login_activity_3_6_1020caidan_02.usm"] = {
 		has_tracks = 1,
 		name = "login_activity_3_6_1020caidan_02.usm",
 		has_non_native = 0,
-		i18n_video_list = ""
+		i18n_video_list = {
+			1,
+			2,
+			3,
+			4
+		}
 	},
 	["login_activity_3_6_1020caidan_03.usm"] = {
 		has_tracks = 1,
 		name = "login_activity_3_6_1020caidan_03.usm",
 		has_non_native = 0,
-		i18n_video_list = ""
+		i18n_video_list = {
+			1,
+			2,
+			3,
+			4
+		}
 	},
 	["login_activity_3_6_1020caidan_04.usm"] = {
 		has_tracks = 1,
 		name = "login_activity_3_6_1020caidan_04.usm",
 		has_non_native = 0,
-		i18n_video_list = ""
+		i18n_video_list = {
+			1,
+			2,
+			3,
+			4
+		}
 	},
 	["login_activity_3_6_1020caidan_05.usm"] = {
 		has_tracks = 1,
 		name = "login_activity_3_6_1020caidan_05.usm",
 		has_non_native = 0,
-		i18n_video_list = ""
+		i18n_video_list = {
+			1,
+			2,
+			3,
+			4
+		}
 	},
 	["login_activity_3_7.usm"] = {
 		has_tracks = 0,
@@ -290,6 +315,8 @@
 		name = "story_9106010.usm",
 		has_non_native = 0,
 		i18n_video_list = {
+			1,
+			2,
 			3
 		}
 	},

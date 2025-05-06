@@ -1859,4 +1859,8 @@ function var_0_0.NeedHideInfo(arg_111_0)
 	return false
 end
 
+function var_0_0.IsNeedDisplayAdult(arg_112_0)
+	return SDKTools.GetIsEnglish() and HeroRecordCfg[arg_112_0].age_en ~= ""
+end
+
 return var_0_0

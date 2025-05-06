@@ -23,9 +23,18 @@
 		scene_name = "WT03",
 		stage_picture = "mng_003"
 	},
+	[104] = {
+		scene_show_name = "2a962e00aead4aea765d10e4db382014",
+		diy_scene_prefab = "WT04",
+		cam_director_prefab = "WT04_VCam",
+		id = 104,
+		scene_name = "WT04",
+		stage_picture = "mng_004"
+	},
 	all = {
 		101,
 		102,
-		103
+		103,
+		104
 	}
 }

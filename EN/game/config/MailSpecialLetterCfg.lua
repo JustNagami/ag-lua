@@ -1932,7 +1932,7 @@
 		}
 	},
 	[40201] = {
-		letter_send_time_1 = "2025,6,6",
+		letter_send_time_1 = "2026,6,6",
 		mail_id = 640201,
 		letter_title = "a99634707128fe7ca5e01f2804f731ad",
 		letter_belongs = 1066,
@@ -1956,7 +1956,7 @@
 		}
 	},
 	[40202] = {
-		letter_send_time_1 = "2025,6,12",
+		letter_send_time_1 = "2026,6,12",
 		mail_id = 640202,
 		letter_title = "4e46152776c85d8f20d0d92eade61973",
 		letter_belongs = 1127,
@@ -1980,7 +1980,7 @@
 		}
 	},
 	[40203] = {
-		letter_send_time_1 = "2025,6,12",
+		letter_send_time_1 = "2026,6,12",
 		mail_id = 640203,
 		letter_title = "cca2d8b70443ca2cdd5da158a16b0ce7",
 		letter_belongs = 1050,
@@ -2004,7 +2004,7 @@
 		}
 	},
 	[40204] = {
-		letter_send_time_1 = "2025,6,12",
+		letter_send_time_1 = "2026,6,12",
 		mail_id = 640204,
 		letter_title = "3a15ebe26029f35b4d27bf0183dba535",
 		letter_belongs = 1049,
@@ -2028,7 +2028,7 @@
 		}
 	},
 	[40205] = {
-		letter_send_time_1 = "2025,6,13",
+		letter_send_time_1 = "2026,6,13",
 		mail_id = 640205,
 		letter_title = "a8c68407bddb10de6a5c54c6c3419e78",
 		letter_belongs = 1024,
@@ -2048,7 +2048,7 @@
 		}
 	},
 	[40206] = {
-		letter_send_time_1 = "2025,6,19",
+		letter_send_time_1 = "2026,6,19",
 		mail_id = 640206,
 		letter_title = "597459e668237e1dc6e465fe53c58a03",
 		letter_belongs = 1070,
@@ -2072,7 +2072,7 @@
 		}
 	},
 	[40207] = {
-		letter_send_time_1 = "2025,6,20",
+		letter_send_time_1 = "2026,6,20",
 		mail_id = 640207,
 		letter_title = "9b205722eda68c24042b76049842367f",
 		letter_belongs = 1075,
@@ -2096,7 +2096,7 @@
 		}
 	},
 	[40208] = {
-		letter_send_time_1 = "2025,6,23",
+		letter_send_time_1 = "2026,6,23",
 		mail_id = 640208,
 		letter_title = "3c1f08a5e0a679908b730db57864c4a4",
 		letter_belongs = 1056,
@@ -2119,34 +2119,7 @@
 			}
 		}
 	},
-	[40209] = {
-		letter_send_time_1 = "2025,7,3",
-		mail_id = 640209,
-		letter_title = "2fd428051fe00656730b470c52b87ee1",
-		letter_belongs = 1013,
-		letter_sender_face = 2110131,
-		letter_sender = "e4850499853240a219b4a843172dbcdd",
-		letter_desc = "e69f966cbfeec9ca1d54d385a1273fb7",
-		id = 40209,
-		reward_item_list = {
-			{
-				50028,
-				10
-			},
-			{
-				40503,
-				10
-			},
-			{
-				20001,
-				1
-			}
-		}
-	},
 	get_id_list_by_letter_belongs = {
-		[1013] = {
-			40209
-		},
 		[1127] = {
 			40202
 		},
@@ -2436,7 +2409,6 @@
 		40205,
 		40206,
 		40207,
-		40208,
-		40209
+		40208
 	}
 }

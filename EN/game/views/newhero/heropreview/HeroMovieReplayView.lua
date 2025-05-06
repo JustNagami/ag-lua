@@ -124,7 +124,7 @@ function var_0_0.PlayMovie(arg_14_0, arg_14_1)
 	local var_14_0 = arg_14_0.item.id
 
 	if arg_14_0.start_voice_frames == 0 then
-		manager.audio:PlayVoice(string.format("vo_sys_%d", var_14_0), string.format("v_s_%d_%s", var_14_0, "get"), string.format("vo_sys_%d.awb", var_14_0))
+		manager.audio:PlayVoice(string.format("vo_sys_%d", var_14_0), string.format("v_s_%d_%s", var_14_0, "get_cg"), string.format("vo_sys_%d.awb", var_14_0))
 	end
 
 	arg_14_0.isPlayMovie = true

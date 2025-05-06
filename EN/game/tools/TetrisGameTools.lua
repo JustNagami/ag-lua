@@ -38,7 +38,7 @@ function var_0_0.CheckStageIsUnlock(arg_3_0, arg_3_1)
 		end
 
 		if var_3_0.pre_chapter and var_3_0.pre_chapter > 0 then
-			local var_3_4 = string.format(GetTips("TETRIS_GAME_SKILL_UNLOCK_CONDITION"), ActivityTetrisGameStageCfg[var_3_0.pre_chapter].desc)
+			local var_3_4 = string.format(GetTips("TETRIS_GAME_SKILL_UNLOCK_CONDITION"), GetI18NText(ActivityTetrisGameStageCfg[var_3_0.pre_chapter].desc))
 
 			if not TetrisGameData:GetStageInfoByStageID(var_3_0.pre_chapter).isClear then
 				return false, var_3_4

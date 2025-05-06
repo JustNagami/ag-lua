@@ -134,7 +134,7 @@ function var_0_0.RefreshPlot(arg_14_0, arg_14_1)
 	arg_14_0.selelctPlotIndex_ = arg_14_1
 	arg_14_0.plotID_ = arg_14_0.plotList_[arg_14_0.selelctPlotIndex_]
 	arg_14_0.plotCfg_ = RogueTeamEndingPlotCfg[arg_14_0.plotID_]
-	arg_14_0.titleText_.text = arg_14_0.plotCfg_.name
+	arg_14_0.titleText_.text = ""
 	arg_14_0.descText_.text = arg_14_0.plotCfg_.desc
 	arg_14_0.lockText_.text = arg_14_0.plotCfg_.lock_desc
 	arg_14_0.lineImg_.fillAmount = (#arg_14_0.plotList_ - 1) / 5

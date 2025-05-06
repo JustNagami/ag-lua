@@ -11372,6 +11372,131 @@
 			3
 		}
 	},
+	[952301] = {
+		material = "",
+		start_up_action = 0,
+		extend_info = 1,
+		type = 25,
+		dorm_exp = 0,
+		sub_type = 0,
+		model = "Dorm/Dormitory/HZ05_zhuanshu_YD_tiaowuji",
+		is_give = 0,
+		hero_id = 0,
+		style_type = "",
+		cost = "",
+		extend = "",
+		interact = "",
+		theme = 114,
+		give_max = 0,
+		replace = "",
+		interact_max = 0,
+		illu_position = "",
+		can_rot = 0,
+		display_type = 0,
+		mesh = "",
+		is_hide = 0,
+		id = 952301,
+		is_occupy = 0,
+		scene_id = {
+			2,
+			3
+		},
+		title = {
+			8,
+			10,
+			8
+		},
+		attractive = {},
+		is_storage = {},
+		is_move = {},
+		is_rotate = {}
+	},
+	[952302] = {
+		material = "",
+		start_up_action = 0,
+		extend_info = 1,
+		type = 25,
+		dorm_exp = 0,
+		sub_type = 0,
+		model = "Dorm/Dormitory/HZ05_zhuanshu_YD_wushe",
+		is_give = 0,
+		hero_id = 0,
+		style_type = "",
+		cost = "",
+		extend = "",
+		interact = "",
+		theme = 114,
+		give_max = 0,
+		replace = "",
+		interact_max = 0,
+		illu_position = "",
+		can_rot = 0,
+		display_type = 0,
+		mesh = "",
+		is_hide = 0,
+		id = 952302,
+		is_occupy = 0,
+		scene_id = {
+			2,
+			3
+		},
+		title = {
+			7,
+			7,
+			7
+		},
+		attractive = {},
+		is_storage = {},
+		is_move = {},
+		is_rotate = {}
+	},
+	[952303] = {
+		material = "",
+		start_up_action = 0,
+		extend_info = 1,
+		type = 26,
+		dorm_exp = 0,
+		sub_type = 0,
+		model = "Dorm/Dormitory/HZ05_zhuanshu_YD_guashi",
+		is_give = 0,
+		hero_id = 0,
+		style_type = "",
+		cost = "",
+		extend = "",
+		interact = "",
+		theme = 114,
+		give_max = 0,
+		replace = "",
+		interact_max = 0,
+		can_rot = 1,
+		display_type = 2,
+		mesh = "",
+		is_hide = 0,
+		id = 952303,
+		is_occupy = 0,
+		scene_id = {
+			2,
+			3
+		},
+		title = {
+			6,
+			8,
+			0
+		},
+		attractive = {},
+		is_storage = {},
+		is_move = {},
+		is_rotate = {
+			1,
+			2,
+			3
+		},
+		illu_position = {
+			501,
+			0.6,
+			-2.1
+		}
+	},
 	[961001] = {
 		material = "",
 		start_up_action = 0,
@@ -12027,7 +12152,10 @@
 			952125,
 			952126,
 			952127,
-			952128
+			952128,
+			952301,
+			952302,
+			952303
 		},
 		[2] = {
 			950901,
@@ -12293,6 +12421,9 @@
 			952126,
 			952127,
 			952128,
+			952301,
+			952302,
+			952303,
 			961001,
 			961002,
 			961003,
@@ -12319,6 +12450,11 @@
 			961105,
 			961106,
 			961107
+		},
+		[114] = {
+			952301,
+			952302,
+			952303
 		},
 		[112] = {
 			952101,
@@ -12910,6 +13046,9 @@
 		952126,
 		952127,
 		952128,
+		952301,
+		952302,
+		952303,
 		961001,
 		961002,
 		961003,

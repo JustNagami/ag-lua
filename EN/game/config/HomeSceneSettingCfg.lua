@@ -318,6 +318,25 @@
 		scene_setting = {},
 		obtain_way = {}
 	},
+	[6016] = {
+		action_suffix = "",
+		title = "6a5c500ff74a99c5275aec929ddcc667",
+		desc = "59e6a91c717d4eb5022a071af27054ce",
+		obtain_word = "",
+		scene_trial = 0,
+		limit_display = 0,
+		prefix_dlc = "",
+		light_effect = "",
+		unlock_description = "",
+		prefix = "X313",
+		light_effect_delay = "",
+		id = 6016,
+		default_music = 0,
+		impact = {},
+		scene_tag = {},
+		scene_setting = {},
+		obtain_way = {}
+	},
 	[6100] = {
 		action_suffix = "",
 		title = "41bd3457c81b7885859d844c2272e16a",
@@ -355,6 +374,7 @@
 		6013,
 		6014,
 		6015,
+		6016,
 		6100
 	}
 }
