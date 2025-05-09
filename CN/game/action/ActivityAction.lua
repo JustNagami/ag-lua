@@ -108,8 +108,8 @@ function var_0_0.DealWithActivityData(arg_5_0)
 	elseif ActivityTemplateConst.ACTIVITY_FLIP_CARD == var_5_0 then
 		XH3rdFlipCardAction:InitRedPointKey(arg_5_0.id)
 	elseif ActivityTemplateConst.ACTIVITY_SKIN_DRAW == var_5_0 then
-		ActivitySkinDrawActionOld.Init()
-		ActivitySkinDrawActionOld.InitRedPointKey(arg_5_0.id)
+		ActivitySkinDrawAction.Init()
+		ActivitySkinDrawAction.InitRedPointKey(arg_5_0.id)
 	elseif ActivityTemplateConst.JAPAN_SOLO_HEART_DEMON == var_5_0 then
 		-- block empty
 	elseif ActivityTemplateConst.ACTIVITY_INVITE == var_5_0 then

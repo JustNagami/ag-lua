@@ -43,6 +43,28 @@
 		plot_title = {},
 		plot_id = {}
 	},
+	[121101] = {
+		display_model_id = "121101ui_display",
+		name = "绛羽拾花",
+		portrait = 2112112,
+		video_url = "",
+		hero = 1211,
+		gift = "",
+		desc = "奥西里斯在虚恒游玩时购入的当地特色服装，融入了现代元素的轻盈设计和鲜明颜色与少女的身姿相得益彰。\n「从没尝试过的风格……很适合我？那，也许可以再多穿一会儿。」",
+		skin_level = 1,
+		ui_has_timeline = 1,
+		home_weapon_show = 0,
+		ui_modelId = "121101ui_tpose",
+		picture_id = "121101",
+		weapon_modelId = "121101ui_weapon",
+		display_type = 1,
+		id = 121101,
+		modelId = "121101ui_light",
+		main_model_id = "121101ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
 	[1015] = {
 		display_model_id = "1015ui_display",
 		name = "狂狮·源",
@@ -3001,6 +3023,40 @@
 		plot_title = {},
 		plot_id = {}
 	},
+	[102003] = {
+		display_model_id = "102003ui_display",
+		name = "无间玩伴",
+		portrait = 2110203,
+		hero = 1020,
+		gift = "",
+		desc = "借着权能之便，梵天给自己创造过许多各具特色的衣服，而这件则是她为了与管理员一同游戏而特别制作的。\n「终于来了，找你干什么？当然是一块找点乐子了~」",
+		skin_level = 2,
+		ui_has_timeline = 1,
+		home_weapon_show = 0,
+		ui_modelId = "102003ui_tpose",
+		picture_id = "102003",
+		weapon_modelId = "102003ui_weapon",
+		display_type = 2,
+		id = 102003,
+		modelId = "102003ui_light",
+		main_model_id = "102003ui_main",
+		unlock_id_list = {},
+		plot_title = {
+			"邀约剧情·一",
+			"邀约剧情·二",
+			"邀约剧情·三",
+			"邀约剧情·四"
+		},
+		plot_id = {
+			924011001,
+			924021001,
+			924031001,
+			924041001
+		},
+		video_url = {
+			"https://download.ys4fun.com/video/0003.mp4"
+		}
+	},
 	[1156] = {
 		display_model_id = "1156ui_display",
 		name = "伐灭·源",
@@ -3407,6 +3463,28 @@
 		id = 605601,
 		modelId = "605601ui_light",
 		main_model_id = "605601ui_main",
+		unlock_id_list = {}
+	},
+	[605603] = {
+		display_model_id = "605603ui_display",
+		name = "梵天T0成女",
+		portrait = 0,
+		video_url = "",
+		hero = 6056,
+		gift = "",
+		desc = "借着权能之便，梵天给自己创造过许多各具特色的衣服，而这件则是她为了与管理员一同游戏而特别制作的。\n「终于来了，找你干什么？当然是一块找点乐子了~」",
+		skin_level = 0,
+		ui_has_timeline = 1,
+		home_weapon_show = 0,
+		plot_title = "",
+		ui_modelId = "605603ui_tpose",
+		picture_id = "102003",
+		weapon_modelId = "605603ui_weapon",
+		plot_id = "",
+		display_type = 2,
+		id = 605603,
+		modelId = "605603ui_light",
+		main_model_id = "605603ui_main",
 		unlock_id_list = {}
 	},
 	[6087] = {
@@ -6287,7 +6365,8 @@
 		},
 		[6056] = {
 			6056,
-			605601
+			605601,
+			605603
 		},
 		[1085] = {
 			1085,
@@ -6322,7 +6401,8 @@
 		},
 		[1020] = {
 			1020,
-			102001
+			102001,
+			102003
 		},
 		[1021] = {
 			1021,
@@ -6590,7 +6670,8 @@
 			101502
 		},
 		[1211] = {
-			1211
+			1211,
+			121101
 		},
 		[1011] = {
 			1011
@@ -6599,6 +6680,7 @@
 	all = {
 		1011,
 		1211,
+		121101,
 		1015,
 		101501,
 		101502,
@@ -6733,6 +6815,7 @@
 		102101,
 		1020,
 		102001,
+		102003,
 		1156,
 		115601,
 		109502,
@@ -6751,6 +6834,7 @@
 		101201,
 		6056,
 		605601,
+		605603,
 		6087,
 		6088,
 		6089,

@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("TetrisGameScorePopView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "Widget/BackHouseUI/TetrisGame/TetrisGameResultUI"
+	return "Widget/Version/Alone_TetrisGameUI/TetrisGameResultUI"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -51,64 +51,106 @@ function var_0_0.OnExit(arg_8_0)
 	arg_8_0:RemoveAllEventListener()
 end
 
-function var_0_0.AddUIListener(arg_9_0)
-	arg_9_0:AddBtnListener(arg_9_0.restart, nil, function()
-		if arg_9_0.stageID then
+function var_0_0.GetNextID(arg_9_0)
+	local var_9_0 = ActivityTetrisGameChapterCfg.get_id_list_by_tetris_stage_list[arg_9_0.stageID][1]
+	local var_9_1 = ActivityTetrisGameChapterCfg[var_9_0].tetris_stage_list
+
+	return var_9_1[table.indexof(var_9_1, arg_9_0.stageID) + 1]
+end
+
+function var_0_0.AddUIListener(arg_10_0)
+	arg_10_0:AddBtnListener(arg_10_0.nextBtn_, nil, function()
+		if arg_10_0.stageID then
 			TetrisGameRunTimeManager:ExitGame()
-			arg_9_0:Back()
-			TetrisGameTools:EnterStage(arg_9_0.stageID)
+			arg_10_0:Back()
+
+			local var_11_0 = arg_10_0:GetNextID()
+
+			TetrisGameTools:EnterStage(var_11_0)
 		end
 	end)
-	arg_9_0:AddBtnListener(arg_9_0.confirm, nil, function()
-		local var_11_0 = TetrisGameRunTimeManager:GetBlackBoard()
+	arg_10_0:AddBtnListener(arg_10_0.restart, nil, function()
+		if arg_10_0.stageID then
+			TetrisGameRunTimeManager:ExitGame()
+			arg_10_0:Back()
+			TetrisGameTools:EnterStage(arg_10_0.stageID)
+		end
+	end)
+	arg_10_0:AddBtnListener(arg_10_0.confirm, nil, function()
+		local var_13_0 = TetrisGameRunTimeManager:GetBlackBoard()
 
 		TetrisGameRunTimeManager:ExitGame()
 
-		if ActivityTetrisGameStageCfg[arg_9_0.stageID].type == TetrisGameConst.stageType.endLess then
+		if ActivityTetrisGameStageCfg[arg_10_0.stageID].type == TetrisGameConst.stageType.endLess then
 			JumpTools.OpenPageByJump("/tetrisGameSkillView")
 		else
-			local var_11_1 = arg_9_0.stageID
-			local var_11_2 = ActivityTetrisGameChapterCfg.get_id_list_by_tetris_stage_list[arg_9_0.stageID][1]
+			local var_13_1 = arg_10_0.stageID
+			local var_13_2 = ActivityTetrisGameChapterCfg.get_id_list_by_tetris_stage_list[arg_10_0.stageID][1]
 
-			if var_11_0.resultFlag then
-				local var_11_3 = ActivityTetrisGameChapterCfg[var_11_2].tetris_stage_list
+			if var_13_0.resultFlag then
+				local var_13_3 = ActivityTetrisGameChapterCfg[var_13_2].tetris_stage_list
 
-				for iter_11_0, iter_11_1 in ipairs(var_11_3) do
-					local var_11_4 = TetrisGameData:GetStageInfoByStageID(iter_11_1)
+				for iter_13_0, iter_13_1 in ipairs(var_13_3) do
+					local var_13_4 = TetrisGameData:GetStageInfoByStageID(iter_13_1)
 
-					if var_11_4 and var_11_4.isClear == false then
-						var_11_1 = iter_11_1
+					if var_13_4 and var_13_4.isClear == false then
+						var_13_1 = iter_13_1
 
 						break
 					end
 				end
 			end
 
-			JumpTools.OpenPageByJump("/tetrisGameChooseStageView", {
-				chapterID = var_11_2,
-				stageID = var_11_1
-			})
+			local var_13_5 = arg_10_0:GetNextID()
+			local var_13_6 = arg_10_0.params_ and arg_10_0.params_.first_clear or false
+
+			if not var_13_5 and var_13_6 then
+				JumpTools.OpenPageByJump("/tetrisGameMainView")
+			else
+				JumpTools.OpenPageByJump("/tetrisGameChooseStageView", {
+					chapterID = var_13_2,
+					stageID = var_13_1
+				})
+			end
 		end
 	end)
 end
 
-function var_0_0.RefreshView(arg_12_0)
-	local var_12_0 = TetrisGameRunTimeManager:GetBlackBoard()
+function var_0_0.RefreshView(arg_14_0)
+	local var_14_0 = TetrisGameRunTimeManager:GetBlackBoard()
 
-	arg_12_0.score.text = var_12_0.totalScore
-	arg_12_0.roundNum.text = var_12_0.usedRound
+	arg_14_0.score.text = var_14_0.totalScore
+	arg_14_0.roundNum.text = var_14_0.usedRound
 
-	if ActivityTetrisGameStageCfg[arg_12_0.stageID].type == TetrisGameConst.stageType.endLess then
-		arg_12_0.stateController:SetSelectedState("endLess")
-	elseif var_12_0.resultFlag then
-		arg_12_0.stateController:SetSelectedState("win")
+	if ActivityTetrisGameStageCfg[arg_14_0.stageID].type == TetrisGameConst.stageType.endLess then
+		arg_14_0.stateController:SetSelectedState("endLess")
+		SetActive(arg_14_0.nextBtn_, false)
+		SetActive(arg_14_0.restart, true)
+	elseif var_14_0.resultFlag then
+		SetActive(arg_14_0.restart, false)
+		arg_14_0.stateController:SetSelectedState("win")
+
+		local var_14_1 = arg_14_0:GetNextID()
+		local var_14_2 = false
+
+		if var_14_1 then
+			var_14_2 = TetrisGameTools:CheckStageIsOpen(var_14_1)
+		end
+
+		if var_14_2 then
+			SetActive(arg_14_0.nextBtn_, true)
+		else
+			SetActive(arg_14_0.nextBtn_, false)
+		end
 	else
-		arg_12_0.stateController:SetSelectedState("lose")
+		arg_14_0.stateController:SetSelectedState("lose")
+		SetActive(arg_14_0.nextBtn_, false)
+		SetActive(arg_14_0.restart, true)
 	end
 end
 
-function var_0_0.Dispose(arg_13_0)
-	var_0_0.super.Dispose(arg_13_0)
+function var_0_0.Dispose(arg_15_0)
+	var_0_0.super.Dispose(arg_15_0)
 end
 
 return var_0_0

@@ -13,7 +13,8 @@
 		[ReserveConst.RESERVE_TYPE.WATER] = "ReserveSummerWaterTemplate",
 		[ReserveConst.RESERVE_TYPE.CHALLENGE_ROGUE_TEAM] = "ReserveChallengeRogueTeamTemplate",
 		[ReserveConst.RESERVE_TYPE.SWIMSUIT_BATTLE] = "ReserveSwimsuitBattleTemplate",
-		[ReserveConst.RESERVE_TYPE.AREA_BATTLE] = "ReserveAreaBattleTemplate"
+		[ReserveConst.RESERVE_TYPE.AREA_BATTLE] = "ReserveAreaBattleTemplate",
+		[ReserveConst.RESERVE_TYPE.OSIRIS_PLAY_GAME] = "ReserveOsirisPlayGameBattleTemplate"
 	},
 	contDataClassDic = {
 		[ReserveConst.RESERVE_TYPE.DEFAULT] = "ReserveContDataTemplate",

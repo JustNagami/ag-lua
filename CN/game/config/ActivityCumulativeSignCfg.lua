@@ -905,6 +905,24 @@
 			25003
 		}
 	},
+	[330011] = {
+		cost_item_list = "",
+		gift_item_list = "",
+		type = 0,
+		id = 330011,
+		title = "限时签到",
+		ui_path = "Widget/Version/V4_1_OsirisUI/V4_1_Osiris_SevenDaySignUI/V4_1_Osiris_SevenDaySignUI",
+		limit_level = 0,
+		config_list = {
+			7501,
+			7502,
+			7503,
+			7504,
+			7505,
+			7506,
+			7507
+		}
+	},
 	all = {
 		1,
 		60011,
@@ -952,6 +970,7 @@
 		310012,
 		323401,
 		320012,
-		323861
+		323861,
+		330011
 	}
 }

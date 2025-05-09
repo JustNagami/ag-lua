@@ -96,6 +96,10 @@
 				if var_1_9 == false then
 					return false
 				end
+			elseif iter_1_1[1] == "newbieTaskOpen" then
+				if not ActivityNewbieTools.CheckAdvanceTaskOpen() then
+					return false
+				end
 			elseif iter_1_1[1] == "equip" then
 				local var_1_10, var_1_11 = gameContext:GetLastOpenPageHandler()
 
@@ -224,6 +228,32 @@
 				local var_1_28 = iter_1_1[2]
 
 				if not QWorldQuestTool.IsSubQuestFinish(var_1_28) then
+					return false
+				end
+			elseif iter_1_1[1] == "osirisPlayGame" then
+				local var_1_29 = iter_1_1[2]
+
+				if not OsirisPlayGameData:IsPassStagesByStageId(var_1_29) then
+					return false
+				end
+			elseif iter_1_1[1] == "tetris" then
+				if iter_1_1[2] == "tetrisLock" then
+					if not TetrisGameRunTimeManager:GetLockIsCanUse() then
+						return false
+					end
+				elseif iter_1_1[2] == "tetrisBubble" then
+					if not TetrisGameRunTimeManager:GetBublleIsUse() then
+						return false
+					end
+				elseif iter_1_1[2] == "tetrisLockCube" then
+					if not TetrisGameRunTimeManager:GetIsLockCube() then
+						return false
+					end
+				elseif iter_1_1[2] == "tetrisSkill" then
+					if not TetrisGameRunTimeManager:IsSkillEnough() then
+						return false
+					end
+				elseif iter_1_1[2] == "tetrisStage" and (TetrisGameRunTimeManager:GetBlackBoard() and TetrisGameRunTimeManager:GetBlackBoard().stageID) ~= iter_1_1[3] then
 					return false
 				end
 			else

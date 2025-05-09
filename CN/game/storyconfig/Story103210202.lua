@@ -6864,7 +6864,7 @@
 		arg_153_1.duration_ = 11.27
 
 		local var_153_0 = {
-			zh = 8.166,
+			zh = 8.033,
 			ja = 11.266
 		}
 		local var_153_1 = manager.audio:GetLocalizationFlag()

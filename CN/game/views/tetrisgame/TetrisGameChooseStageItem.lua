@@ -19,6 +19,7 @@ function var_0_0.InitUI(arg_3_0)
 	arg_3_0.statusController = arg_3_0.controller:GetController("state")
 	arg_3_0.selController = arg_3_0.controller:GetController("sel")
 	arg_3_0.chapterController = arg_3_0.controller:GetController("chapter")
+	arg_3_0.skillShowController = arg_3_0.controller:GetController("skill")
 	arg_3_0.animator = arg_3_0.gameObject_:GetComponent("Animator")
 	arg_3_0.skillItemList = {}
 
@@ -74,6 +75,12 @@ function var_0_0.RefreshUI(arg_5_0, arg_5_1, arg_5_2, arg_5_3)
 		else
 			SetActive(var_5_4.gameObject_, false)
 		end
+	end
+
+	if #var_5_2 == 0 then
+		arg_5_0.skillShowController:SetSelectedState("hide")
+	else
+		arg_5_0.skillShowController:SetSelectedState("show")
 	end
 end
 

@@ -93,3 +93,4 @@ BattleDodgeBarrageTemplate = import("game.battle.template.BattleDodgeBarrageTemp
 BattleSkuldTemplate = import("game.battle.template.BattleSkuldTemplate")
 BattleSeaWarfareStageTemplate = import("game.battle.template.BattleSeaWarfareStageTemplate")
 BattleSandPlayStageTemplate = import("game.battle.template.BattleSandPlayStageTemplate")
+BattleOsirisPlayGameStageTemplate = import("game.battle.template.BattleOsirisPlayGameStageTemplate")

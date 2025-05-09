@@ -3815,11 +3815,11 @@
 		ableBGM = 1,
 		album = 24,
 		cuesheet = "bgm_activity_4_0_promotional_citong",
-		musicName = "七桃游逍遥",
+		musicName = "斗阵七桃游逍遥",
 		id = 311,
 		awbName = "bgm_activity_4_0_promotional_citong",
 		initAISAC = "",
-		detail = "远客踏歌来，刺桐正喧嚣，烟火映长夜，欢喜趁今朝。\n\n演唱：Aria子鱼\n作曲：Tony Yan\n作词：林啟得\n混音：Hyoukuro"
+		detail = "远客踏歌来，刺桐正喧嚣，烟火映长夜，欢喜趁今朝。\n\n演唱：Aria子鱼\n作曲：Tony Yan\n作词：刁云逸、林啟得\n混音：Hyoukuro"
 	},
 	{
 		cueName = "bgm_activity_4_0_scene_citong",
@@ -3939,7 +3939,7 @@
 		id = 321,
 		awbName = "bgm_activity_4_0_story_lab",
 		initAISAC = "",
-		detail = "作曲：LousikAEy"
+		detail = "曲名：Seek the origin\n副标题：追溯往世之源\n作曲：LousikAEy"
 	},
 	{
 		cueName = "bgm_activity_4_0_story_daily",
@@ -3999,7 +3999,7 @@
 		id = 326,
 		awbName = "bgm_activity_4_0_story_park_heart",
 		initAISAC = "",
-		detail = "是脑海中依稀存留的背景音，总代表着欢笑与期盼。\n可是，为什么呢……？\n\n作曲：Polymath9"
+		detail = "是脑海中依稀存留的背景音，总代表着欢笑与期盼。\n可是，为什么呢……？\n\n曲名：The place in memories\n副标题：藏于记忆的伴音\n作曲：Polymath9"
 	},
 	{
 		cueName = "bgm_activity_4_0_story_found",
@@ -4169,6 +4169,88 @@
 		initAISAC = "",
 		detail = "熟悉又陌生的房间低语着绝望，再度化身为锁闭的囚笼。\n黑暗正在翻腾，这一次，还会有光明照入吗？\n\n作曲：Polymath9"
 	},
+	{
+		cueName = "bgm_activity_4_0_battle_boss_4048",
+		authorName = "HJLL",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_battle_boss_4048",
+		musicName = "Entangle",
+		id = 341,
+		awbName = "bgm_activity_4_0_battle_boss_4048",
+		detail = "它是无数灵魂囚困，生命堆积。它只有痛苦缠绕，毁灭滋生。天灾伊始，必为人祸。 \n\n作曲：HJLL/Polymath9/LousikAEy\n编曲：HJLL",
+		initAISAC = {
+			{
+				"phase_controller",
+				0
+			}
+		}
+	},
+	{
+		cueName = "bgm_activity_4_0_battle_boss_4048",
+		authorName = "HJLL",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_battle_boss_4048",
+		musicName = "Intereflect",
+		id = 342,
+		awbName = "bgm_activity_4_0_battle_boss_4048",
+		detail = "作曲：HJLL/Polymath9/LousikAEy\n编曲：HJLL",
+		initAISAC = {
+			{
+				"phase_controller",
+				1
+			}
+		}
+	},
+	{
+		cueName = "bgm_activity_4_0_scene_102003_normal",
+		authorName = "LousikAEy",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_scene_102003_normal",
+		musicName = "Private Gaming Room",
+		id = 343,
+		awbName = "bgm_activity_4_0_scene_102003_normal",
+		initAISAC = "",
+		detail = "阿管阿管，有空进来一起玩呀~\n\n作曲：LousikAEy"
+	},
+	{
+		cueName = "bgm_activity_4_0_scene_102003_normal_ingame",
+		authorName = "LousikAEy",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_scene_102003_normal_ingame",
+		musicName = "Private Gaming Room (Background Ver.)",
+		id = 344,
+		awbName = "bgm_activity_4_0_scene_102003_normal_ingame",
+		initAISAC = "",
+		detail = "曲名：Private Gaming Room (Background Ver.)\n作曲：LousikAEy"
+	},
+	{
+		cueName = "bgm_activity_4_0_scene_102003_minigame",
+		authorName = "LousikAEy",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_scene_102003_minigame",
+		musicName = "The King of Shashvat Street",
+		id = 345,
+		awbName = "bgm_activity_4_0_scene_102003_minigame",
+		initAISAC = "",
+		detail = "曲名：The King of Shashvat Street\n作曲：LousikAEy"
+	},
+	{
+		cueName = "bgm_activity_4_0_scene_102003_story",
+		authorName = "LousikAEy",
+		ableBGM = 1,
+		album = 26,
+		cuesheet = "bgm_activity_4_0_scene_102003_story",
+		musicName = "Play the Life Story",
+		id = 346,
+		awbName = "bgm_activity_4_0_scene_102003_story",
+		initAISAC = "",
+		detail = "我们都有属于自己的故事，也将演绎属于我们的故事。\n\n作曲：LousikAEy"
+	},
 	get_id_list_by_album = {
 		[26] = {
 			329,
@@ -4182,7 +4264,13 @@
 			337,
 			338,
 			339,
-			340
+			340,
+			341,
+			342,
+			343,
+			344,
+			345,
+			346
 		},
 		[25] = {
 			316,
@@ -4903,6 +4991,12 @@
 		337,
 		338,
 		339,
-		340
+		340,
+		341,
+		342,
+		343,
+		344,
+		345,
+		346
 	}
 }

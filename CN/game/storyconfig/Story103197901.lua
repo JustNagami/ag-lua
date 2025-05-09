@@ -7243,6 +7243,9 @@
 
 			if var_174_0 < arg_171_1.time_ and arg_171_1.time_ <= var_174_0 + arg_174_0 then
 				local var_174_1 = arg_171_1.fswbg_.transform:Find("textbox/adapt/content") or arg_171_1.fswbg_.transform:Find("textbox/content")
+
+				arg_171_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
+
 				local var_174_2 = var_174_1:GetComponent("Text")
 				local var_174_3 = var_174_1:GetComponent("RectTransform")
 
@@ -7271,6 +7274,7 @@
 				arg_171_1.fswtw_:SetDirty()
 
 				arg_171_1.typewritterCharCountI18N = 0
+				arg_171_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
 				SetActive(arg_171_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_171_1:ShowNextGo(false)
@@ -7280,7 +7284,9 @@
 
 			if var_174_7 < arg_171_1.time_ and arg_171_1.time_ <= var_174_7 + arg_174_0 then
 				arg_171_1.var_.oldValueTypewriter = arg_171_1.fswtw_.percent
+				arg_171_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_171_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_171_1:ShowNextGo(false)
 			end
 
@@ -7533,6 +7539,7 @@
 				arg_175_1.fswtw_:SetDirty()
 
 				arg_175_1.typewritterCharCountI18N = 0
+				arg_175_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
 				SetActive(arg_175_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_175_1:ShowNextGo(false)
@@ -7542,7 +7549,9 @@
 
 			if var_178_3 < arg_175_1.time_ and arg_175_1.time_ <= var_178_3 + arg_178_0 then
 				arg_175_1.var_.oldValueTypewriter = arg_175_1.fswtw_.percent
+				arg_175_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_175_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_175_1:ShowNextGo(false)
 			end
 
@@ -7647,6 +7656,7 @@
 				arg_179_1.fswtw_:SetDirty()
 
 				arg_179_1.typewritterCharCountI18N = 0
+				arg_179_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
 				SetActive(arg_179_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_179_1:ShowNextGo(false)
@@ -7656,7 +7666,9 @@
 
 			if var_182_3 < arg_179_1.time_ and arg_179_1.time_ <= var_182_3 + arg_182_0 then
 				arg_179_1.var_.oldValueTypewriter = arg_179_1.fswtw_.percent
+				arg_179_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_179_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_179_1:ShowNextGo(false)
 			end
 
@@ -7761,6 +7773,7 @@
 				arg_183_1.fswtw_:SetDirty()
 
 				arg_183_1.typewritterCharCountI18N = 0
+				arg_183_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
 				SetActive(arg_183_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_183_1:ShowNextGo(false)
@@ -7770,7 +7783,9 @@
 
 			if var_186_3 < arg_183_1.time_ and arg_183_1.time_ <= var_186_3 + arg_186_0 then
 				arg_183_1.var_.oldValueTypewriter = arg_183_1.fswtw_.percent
+				arg_183_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_183_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_183_1:ShowNextGo(false)
 			end
 
@@ -8057,6 +8072,10 @@
 			if var_190_39 < arg_187_1.time_ and arg_187_1.time_ <= var_190_39 + arg_190_0 then
 				arg_187_1.fswbg_:SetActive(false)
 				arg_187_1.dialog_:SetActive(false)
+
+				arg_187_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
+
+				SetActive(arg_187_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_187_1:ShowNextGo(false)
 			end
 
@@ -8065,6 +8084,10 @@
 			if var_190_40 < arg_187_1.time_ and arg_187_1.time_ <= var_190_40 + arg_190_0 then
 				arg_187_1.fswbg_:SetActive(false)
 				arg_187_1.dialog_:SetActive(false)
+
+				arg_187_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
+
+				SetActive(arg_187_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_187_1:ShowNextGo(false)
 			end
 

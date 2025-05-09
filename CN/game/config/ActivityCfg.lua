@@ -25733,99 +25733,6 @@
 		activity_template = 322,
 		sub_activity_list = {}
 	},
-	[321201] = {
-		id = 321201,
-		name = "诗蔻蒂活动",
-		unlock_condition = "",
-		remark = "溯梦之隙",
-		activity_theme = 32,
-		activity_template = 383,
-		sub_activity_list = {
-			320041
-		},
-		reward_show = {
-			1,
-			2200015,
-			2924,
-			91008,
-			4007,
-			3055,
-			39,
-			41701,
-			30015,
-			40104
-		},
-		reward_show_permanent = {
-			1,
-			2200015,
-			91008,
-			4007,
-			3055,
-			39,
-			41701,
-			40104
-		}
-	},
-	[320041] = {
-		id = 320041,
-		name = "诗蔻蒂限时任务",
-		reward_show_permanent = "",
-		unlock_condition = "",
-		reward_show = "",
-		remark = "溯梦之隙-限时任务",
-		activity_theme = 32,
-		activity_template = 4,
-		sub_activity_list = {
-			320042,
-			320043,
-			320044,
-			320045
-		}
-	},
-	[320042] = {
-		id = 320042,
-		name = "诗蔻蒂-剧情关卡任务",
-		reward_show_permanent = "",
-		unlock_condition = "",
-		reward_show = "",
-		remark = "溯梦之隙-剧情关卡任务",
-		activity_theme = 32,
-		activity_template = 4,
-		sub_activity_list = {}
-	},
-	[320043] = {
-		id = 320043,
-		name = "诗蔻蒂-挑战关卡任务",
-		reward_show_permanent = "",
-		unlock_condition = "",
-		reward_show = "",
-		remark = "溯梦之隙-挑战关卡任务",
-		activity_theme = 32,
-		activity_template = 4,
-		sub_activity_list = {}
-	},
-	[320044] = {
-		id = 320044,
-		name = "诗蔻蒂-照片收集任务",
-		reward_show_permanent = "",
-		unlock_condition = "",
-		reward_show = "",
-		remark = "溯梦之隙-照片收集任务",
-		activity_theme = 32,
-		activity_template = 4,
-		sub_activity_list = {}
-	},
-	[320045] = {
-		id = 320045,
-		name = "诗蔻蒂-当前进度任务",
-		reward_show_permanent = "",
-		unlock_condition = "",
-		reward_show = "",
-		remark = "溯梦之隙-当前进度任务",
-		activity_theme = 32,
-		activity_template = 4,
-		sub_activity_list = {}
-	},
 	[313228] = {
 		id = 313228,
 		name = "角色试用关九司·陆吾",
@@ -25906,124 +25813,6 @@
 			312442,
 			310048
 		}
-	},
-	[323641] = {
-		id = 323641,
-		name = "泉州联动主题活动主入口",
-		unlock_condition = "",
-		remark = "刺桐港埠漫行纪",
-		activity_theme = 32,
-		activity_template = 364,
-		sub_activity_list = {
-			3200411,
-			323841
-		},
-		reward_show = {
-			1,
-			8011,
-			2200016,
-			41701,
-			39,
-			2925,
-			7019,
-			9008,
-			1073,
-			30065
-		},
-		reward_show_permanent = {
-			1,
-			2925,
-			91010,
-			91011,
-			91012,
-			91013,
-			7019,
-			9008,
-			1073
-		}
-	},
-	[3200411] = {
-		id = 3200411,
-		name = "泉州联动阶段任务",
-		reward_show_permanent = "",
-		unlock_condition = "",
-		reward_show = "",
-		remark = "刺桐港埠漫行纪-限时奖励",
-		activity_theme = 32,
-		activity_template = 4,
-		sub_activity_list = {
-			3200412,
-			3200413,
-			3200414,
-			3200415,
-			3200416
-		}
-	},
-	[3200412] = {
-		id = 3200412,
-		name = "泉州联动-剧情任务",
-		reward_show_permanent = "",
-		unlock_condition = "",
-		reward_show = "",
-		remark = "港埠漫行",
-		activity_theme = 32,
-		activity_template = 4,
-		sub_activity_list = {}
-	},
-	[3200413] = {
-		id = 3200413,
-		name = "泉州联动-收集船员",
-		reward_show_permanent = "",
-		unlock_condition = "",
-		reward_show = "",
-		remark = "航行偶得",
-		activity_theme = 32,
-		activity_template = 4,
-		sub_activity_list = {}
-	},
-	[3200414] = {
-		id = 3200414,
-		name = "泉州联动-航行玩法",
-		reward_show_permanent = "",
-		unlock_condition = "",
-		reward_show = "",
-		remark = "渡洋承运",
-		activity_theme = 32,
-		activity_template = 4,
-		sub_activity_list = {}
-	},
-	[3200415] = {
-		id = 3200415,
-		name = "泉州联动-照片收集",
-		reward_show_permanent = "",
-		unlock_condition = "",
-		reward_show = "",
-		remark = "彼时留影",
-		activity_theme = 32,
-		activity_template = 4,
-		sub_activity_list = {}
-	},
-	[3200416] = {
-		id = 3200416,
-		name = "泉州联动-箱庭探索",
-		reward_show_permanent = "",
-		unlock_condition = "",
-		reward_show = "",
-		remark = "寻绎途中",
-		activity_theme = 32,
-		activity_template = 4,
-		sub_activity_list = {}
-	},
-	[323841] = {
-		id = 323841,
-		name = "泉州箱庭航行玩法/见闻等级/正比战斗",
-		reward_show_permanent = "",
-		unlock_condition = "",
-		reward_show = "",
-		remark = "泉州箱庭航行玩法/见闻等级/正比战斗",
-		activity_theme = 32,
-		activity_template = 384,
-		sub_activity_list = {}
 	},
 	[311464] = {
 		id = 311464,
@@ -26571,6 +26360,217 @@
 		remark = "神域模拟-12",
 		activity_theme = 32,
 		activity_template = 127,
+		sub_activity_list = {}
+	},
+	[321201] = {
+		id = 321201,
+		name = "诗蔻蒂活动",
+		unlock_condition = "",
+		remark = "溯梦之隙",
+		activity_theme = 32,
+		activity_template = 383,
+		sub_activity_list = {
+			320041
+		},
+		reward_show = {
+			1,
+			2200015,
+			2924,
+			91008,
+			4007,
+			3055,
+			39,
+			41701,
+			30015,
+			40104
+		},
+		reward_show_permanent = {
+			1,
+			2200015,
+			91008,
+			4007,
+			3055,
+			39,
+			41701,
+			40104
+		}
+	},
+	[320041] = {
+		id = 320041,
+		name = "诗蔻蒂限时任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "溯梦之隙-限时任务",
+		activity_theme = 32,
+		activity_template = 4,
+		sub_activity_list = {
+			320042,
+			320043,
+			320044,
+			320045
+		}
+	},
+	[320042] = {
+		id = 320042,
+		name = "诗蔻蒂-剧情关卡任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "溯梦之隙-剧情关卡任务",
+		activity_theme = 32,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[320043] = {
+		id = 320043,
+		name = "诗蔻蒂-挑战关卡任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "溯梦之隙-挑战关卡任务",
+		activity_theme = 32,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[320044] = {
+		id = 320044,
+		name = "诗蔻蒂-照片收集任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "溯梦之隙-照片收集任务",
+		activity_theme = 32,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[320045] = {
+		id = 320045,
+		name = "诗蔻蒂-当前进度任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "溯梦之隙-当前进度任务",
+		activity_theme = 32,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[323641] = {
+		id = 323641,
+		name = "泉州联动主题活动主入口",
+		unlock_condition = "",
+		remark = "刺桐港埠漫行纪",
+		activity_theme = 32,
+		activity_template = 364,
+		sub_activity_list = {
+			3200411,
+			323841
+		},
+		reward_show = {
+			1,
+			8011,
+			2200016,
+			41701,
+			39,
+			2925,
+			7019,
+			9008,
+			1073,
+			30065
+		},
+		reward_show_permanent = {
+			1,
+			2925,
+			91010,
+			91011,
+			91012,
+			91013,
+			7019,
+			9008,
+			1073
+		}
+	},
+	[3200411] = {
+		id = 3200411,
+		name = "泉州联动阶段任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "刺桐港埠漫行纪-限时奖励",
+		activity_theme = 32,
+		activity_template = 4,
+		sub_activity_list = {
+			3200412,
+			3200413,
+			3200414,
+			3200415,
+			3200416
+		}
+	},
+	[3200412] = {
+		id = 3200412,
+		name = "泉州联动-剧情任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "港埠漫行",
+		activity_theme = 32,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[3200413] = {
+		id = 3200413,
+		name = "泉州联动-收集船员",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "航行偶得",
+		activity_theme = 32,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[3200414] = {
+		id = 3200414,
+		name = "泉州联动-航行玩法",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "渡洋承运",
+		activity_theme = 32,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[3200415] = {
+		id = 3200415,
+		name = "泉州联动-照片收集",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "彼时留影",
+		activity_theme = 32,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[3200416] = {
+		id = 3200416,
+		name = "泉州联动-箱庭探索",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "寻绎途中",
+		activity_theme = 32,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[323841] = {
+		id = 323841,
+		name = "泉州箱庭航行玩法/见闻等级/正比战斗",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "泉州箱庭航行玩法/见闻等级/正比战斗",
+		activity_theme = 32,
+		activity_template = 384,
 		sub_activity_list = {}
 	},
 	[322921] = {
@@ -27159,22 +27159,780 @@
 		activity_template = 225,
 		sub_activity_list = {}
 	},
+	[331001] = {
+		id = 331001,
+		name = "4.1活动",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "苦岸行旅",
+		activity_theme = 33,
+		activity_template = 100,
+		sub_activity_list = {
+			332261,
+			333501,
+			333231,
+			332431,
+			331201,
+			331891,
+			323801,
+			331071,
+			331161,
+			332131,
+			331311
+		}
+	},
+	[331201] = {
+		id = 331201,
+		name = "4.1-苦岸行旅-主线活动",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "苦岸行旅-主线活动",
+		activity_theme = 33,
+		activity_template = 120,
+		sub_activity_list = {
+			320561
+		}
+	},
+	[332211] = {
+		id = 332211,
+		name = "梵天T0皮肤抽取活动",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "咫尺身畔",
+		activity_theme = 33,
+		activity_template = 221,
+		sub_activity_list = {
+			332221,
+			332222,
+			330041,
+			331461,
+			332231
+		}
+	},
+	[332221] = {
+		id = 332221,
+		name = "梵天T0皮肤抽取-卡池",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "咫尺身畔-换装卡池",
+		activity_theme = 33,
+		activity_template = 222,
+		sub_activity_list = {}
+	},
+	[332222] = {
+		id = 332222,
+		name = "梵天T0背景抽取-卡池",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "咫尺身畔-场景卡池",
+		activity_theme = 33,
+		activity_template = 222,
+		sub_activity_list = {}
+	},
+	[332231] = {
+		id = 332231,
+		name = "梵天T0皮肤抽取-背景剧情1",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "咫尺身畔-剧情1",
+		activity_theme = 33,
+		activity_template = 223,
+		sub_activity_list = {}
+	},
+	[330041] = {
+		id = 330041,
+		name = "梵天T0皮肤抽取-皮肤任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "咫尺身畔-见闻任务",
+		activity_theme = 33,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[331461] = {
+		id = 331461,
+		name = "梵天T0皮肤抽取-皮肤商店",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "咫尺身畔-换装商店",
+		activity_theme = 33,
+		activity_template = 146,
+		sub_activity_list = {}
+	},
+	[331891] = {
+		id = 331891,
+		name = "4.1限期委培",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1限期委培",
+		activity_theme = 33,
+		activity_template = 189,
+		sub_activity_list = {}
+	},
+	[330011] = {
+		id = 330011,
+		name = "限时签到",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "限时签到",
+		activity_theme = 33,
+		activity_template = 1,
+		sub_activity_list = {}
+	},
+	[333231] = {
+		id = 333231,
+		name = "4.1-俄罗斯方块玩法-挑战",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		remark = "4.1-俄罗斯方块玩法-挑战",
+		activity_theme = 33,
+		activity_template = 323,
+		sub_activity_list = {
+			333251,
+			333252,
+			333241,
+			330047
+		},
+		reward_show = {
+			1,
+			40103,
+			40602,
+			40803,
+			40203,
+			2035,
+			40414,
+			40104,
+			40504,
+			40603
+		}
+	},
+	[333251] = {
+		id = 333251,
+		name = "4.1-俄罗斯方块玩法-篇章A",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1-俄罗斯方块玩法-篇章A",
+		activity_theme = 33,
+		activity_template = 325,
+		sub_activity_list = {}
+	},
+	[333252] = {
+		id = 333252,
+		name = "4.1-俄罗斯方块玩法-篇章B",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1-俄罗斯方块玩法-篇章B",
+		activity_theme = 33,
+		activity_template = 325,
+		sub_activity_list = {}
+	},
+	[333241] = {
+		id = 333241,
+		name = "4.1-俄罗斯方块玩法-排行榜",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1-俄罗斯方块玩法-排行榜",
+		activity_theme = 33,
+		activity_template = 324,
+		sub_activity_list = {}
+	},
+	[330047] = {
+		id = 330047,
+		name = "4.1-俄罗斯方块玩法-任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1-俄罗斯方块玩法-任务",
+		activity_theme = 33,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[332431] = {
+		id = 332431,
+		name = "联防协议·α",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "联防协议·α",
+		activity_theme = 33,
+		activity_template = 243,
+		sub_activity_list = {
+			331462,
+			332441,
+			330048
+		}
+	},
+	[331462] = {
+		id = 331462,
+		name = "后勤补给点",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "后勤补给点",
+		activity_theme = 33,
+		activity_template = 146,
+		sub_activity_list = {}
+	},
+	[332441] = {
+		id = 332441,
+		name = "联防协议·α-关卡",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "联防协议·α-关卡",
+		activity_theme = 33,
+		activity_template = 244,
+		sub_activity_list = {}
+	},
+	[330048] = {
+		id = 330048,
+		name = "联防协议·α-任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "联防协议·α-任务",
+		activity_theme = 33,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[330031] = {
+		id = 330031,
+		name = "4.1版本-魂羽·奥西里斯必中池",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1版本-魂羽·奥西里斯必中池",
+		activity_theme = 33,
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[330032] = {
+		id = 330032,
+		name = "4.1版本-魂羽·奥西里斯精准池",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1版本-魂羽·奥西里斯精准池",
+		activity_theme = 33,
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[330033] = {
+		id = 330033,
+		name = "4.1版本-三相·梵天精准池",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1版本-三相·梵天精准池",
+		activity_theme = 33,
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[330034] = {
+		id = 330034,
+		name = "4.1版本-焚轮·帕尔瓦蒂精准池",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1版本-焚轮·帕尔瓦蒂精准池",
+		activity_theme = 33,
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[330035] = {
+		id = 330035,
+		name = "4.1版本-早樱·大国主/暗星·海拉/震离·月读常驻池",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1版本-早樱·大国主/暗星·海拉/震离·月读常驻池",
+		activity_theme = 33,
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[331071] = {
+		id = 331071,
+		name = "角色试用",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色试用",
+		activity_theme = 33,
+		activity_template = 107,
+		sub_activity_list = {
+			333221,
+			333222,
+			333223,
+			333224,
+			333225,
+			333226
+		}
+	},
+	[333221] = {
+		id = 333221,
+		name = "角色试用关-S奥魂羽·奥西里斯",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色试用关-S奥",
+		activity_theme = 33,
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[333222] = {
+		id = 333222,
+		name = "角色试用关-梵天三相·梵天",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色试用关-梵天",
+		activity_theme = 33,
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[333223] = {
+		id = 333223,
+		name = "角色试用关-焚轮·帕尔瓦蒂 焚轮·帕尔瓦蒂",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色试用关-焚轮·帕尔瓦蒂",
+		activity_theme = 33,
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[333224] = {
+		id = 333224,
+		name = "角色试用关-早樱·大国主早樱·大国主",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色试用关-早樱·大国主",
+		activity_theme = 33,
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[333225] = {
+		id = 333225,
+		name = "角色试用关-暗星·海拉暗星·海拉",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色试用关-暗星·海拉",
+		activity_theme = 33,
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[333226] = {
+		id = 333226,
+		name = "角色试用关-震离·月读震离·月读",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色试用关-震离·月读",
+		activity_theme = 33,
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[331161] = {
+		id = 331161,
+		name = "4.1版本试用角色",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1版本试用角色",
+		activity_theme = 33,
+		activity_template = 116,
+		sub_activity_list = {}
+	},
+	[331311] = {
+		id = 331311,
+		name = "4.1换装试用",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1换装试用",
+		activity_theme = 33,
+		activity_template = 131,
+		sub_activity_list = {
+			331111,
+			331112
+		}
+	},
+	[331111] = {
+		id = 331111,
+		name = "4.1换装试用关1-魂羽·奥西里斯",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1换装试用关1-魂羽·奥西里斯",
+		activity_theme = 33,
+		activity_template = 111,
+		sub_activity_list = {}
+	},
+	[331112] = {
+		id = 331112,
+		name = "4.1换装试用关2-三相·梵天",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1换装试用关2-三相·梵天",
+		activity_theme = 33,
+		activity_template = 111,
+		sub_activity_list = {}
+	},
+	[332131] = {
+		id = 332131,
+		name = "角色宣传页（魂羽·奥西里斯）",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色宣传页（魂羽·奥西里斯）",
+		activity_theme = 33,
+		activity_template = 213,
+		sub_activity_list = {}
+	},
+	[330049] = {
+		id = 330049,
+		name = "4.1通行证任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1通行证任务",
+		activity_theme = 33,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[330731] = {
+		id = 330731,
+		name = "多维变量4.1-4.2赛季",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "多维变量4.1-4.2赛季",
+		activity_theme = 33,
+		activity_template = 73,
+		sub_activity_list = {}
+	},
+	[323801] = {
+		id = 323801,
+		name = "S奥西里斯活动",
+		unlock_condition = "",
+		remark = "战术研习记录",
+		activity_theme = 33,
+		activity_template = 380,
+		sub_activity_list = {
+			330043
+		},
+		reward_show = {
+			2928,
+			1,
+			40104,
+			40603,
+			40504,
+			7020,
+			40503,
+			40203,
+			40103,
+			22003
+		},
+		reward_show_permanent = {
+			1,
+			7020,
+			40103,
+			2
+		}
+	},
+	[330043] = {
+		id = 330043,
+		name = "奥西里斯玩法-累计完成任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "战术研习记录 -累计完成任务",
+		activity_theme = 33,
+		activity_template = 4,
+		sub_activity_list = {
+			330044,
+			330045,
+			330046
+		}
+	},
+	[330044] = {
+		id = 330044,
+		name = "奥西里斯玩法-章节任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "战术研习记录 -资料研究",
+		activity_theme = 33,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[330045] = {
+		id = 330045,
+		name = "奥西里斯玩法-挑战任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "战术研习记录 -实战验证",
+		activity_theme = 33,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[330046] = {
+		id = 330046,
+		name = "奥西里斯玩法-角色任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "战术研习记录 -战术搭配",
+		activity_theme = 33,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[332261] = {
+		id = 332261,
+		name = "4.1-旋转拼图预热活动",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "未卜阴影",
+		activity_theme = 33,
+		activity_template = 226,
+		sub_activity_list = {
+			330042,
+			333881
+		}
+	},
+	[330042] = {
+		id = 330042,
+		name = "4.1-旋转拼图预热活动-活动任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "未卜阴影-活动任务",
+		activity_theme = 33,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[333881] = {
+		id = 333881,
+		name = "噬神者网页活动-仅作入口时间展示用",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "噬神者网页活动-仅作入口时间展示用",
+		activity_theme = 33,
+		activity_template = 388,
+		sub_activity_list = {}
+	},
+	[333501] = {
+		id = 333501,
+		name = "古远虚影",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		remark = "古远虚影",
+		activity_theme = 33,
+		activity_template = 350,
+		sub_activity_list = {},
+		reward_show = {
+			1,
+			40104,
+			40603,
+			22003,
+			2
+		}
+	},
+	[332101] = {
+		id = 332101,
+		name = "4.1主线拍脸图",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1主线拍脸图",
+		activity_theme = 33,
+		activity_template = 210,
+		sub_activity_list = {}
+	},
+	[332102] = {
+		id = 332102,
+		name = "4.1梵天t0拍脸图",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1梵天t0拍脸图",
+		activity_theme = 33,
+		activity_template = 210,
+		sub_activity_list = {}
+	},
+	[332103] = {
+		id = 332103,
+		name = "4.1皮肤拍脸图",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1皮肤拍脸图",
+		activity_theme = 33,
+		activity_template = 210,
+		sub_activity_list = {}
+	},
+	[332001] = {
+		id = 332001,
+		name = "4.1版本-先遣服任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1版本-先遣服任务",
+		activity_theme = 0,
+		activity_template = 200,
+		sub_activity_list = {}
+	},
+	[332241] = {
+		id = 332241,
+		name = "4.1-先遣服挑战（魂羽·奥西里斯）-第一期",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1-先遣服挑战（魂羽·奥西里斯）-第一期",
+		activity_theme = 0,
+		activity_template = 224,
+		sub_activity_list = {
+			332251,
+			332252,
+			332253
+		}
+	},
+	[332242] = {
+		id = 332242,
+		name = "4.1-先遣服挑战（魂羽·奥西里斯）-第一期",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1-先遣服挑战（魂羽·奥西里斯）-第一期",
+		activity_theme = 0,
+		activity_template = 224,
+		sub_activity_list = {
+			332251,
+			332252,
+			332253
+		}
+	},
+	[332243] = {
+		id = 332243,
+		name = "4.1-先遣服挑战（魂羽·奥西里斯）-第一期",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1-先遣服挑战（魂羽·奥西里斯）-第一期",
+		activity_theme = 0,
+		activity_template = 224,
+		sub_activity_list = {
+			332251,
+			332252,
+			332253
+		}
+	},
+	[332251] = {
+		id = 332251,
+		name = "4.1-先遣服挑战（魂羽·奥西里斯）-排行榜1",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1-先遣服挑战（魂羽·奥西里斯）-排行榜1",
+		activity_theme = 0,
+		activity_template = 225,
+		sub_activity_list = {}
+	},
+	[332252] = {
+		id = 332252,
+		name = "4.1-先遣服挑战（魂羽·奥西里斯）-排行榜2",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1-先遣服挑战（魂羽·奥西里斯）-排行榜2",
+		activity_theme = 0,
+		activity_template = 225,
+		sub_activity_list = {}
+	},
+	[332253] = {
+		id = 332253,
+		name = "4.1-先遣服挑战（魂羽·奥西里斯）-排行榜3",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.1-先遣服挑战（魂羽·奥西里斯）-排行榜3",
+		activity_theme = 0,
+		activity_template = 225,
+		sub_activity_list = {}
+	},
 	get_id_list_by_activity_theme = {
+		[33] = {
+			331001,
+			331201,
+			332211,
+			332221,
+			332222,
+			332231,
+			330041,
+			331461,
+			331891,
+			330011,
+			333231,
+			333251,
+			333252,
+			333241,
+			330047,
+			332431,
+			331462,
+			332441,
+			330048,
+			330031,
+			330032,
+			330033,
+			330034,
+			330035,
+			331071,
+			333221,
+			333222,
+			333223,
+			333224,
+			333225,
+			333226,
+			331161,
+			331311,
+			331111,
+			331112,
+			332131,
+			330049,
+			330731,
+			323801,
+			330043,
+			330044,
+			330045,
+			330046,
+			332261,
+			330042,
+			333881,
+			333501,
+			332101,
+			332102,
+			332103
+		},
 		[32] = {
-			321201,
-			320041,
-			320042,
-			320043,
-			320044,
-			320045,
-			323641,
-			3200411,
-			3200412,
-			3200413,
-			3200414,
-			3200415,
-			3200416,
-			323841,
 			321001,
 			320761,
 			323401,
@@ -27206,6 +27964,20 @@
 			3212710,
 			3212711,
 			3212712,
+			321201,
+			320041,
+			320042,
+			320043,
+			320044,
+			320045,
+			323641,
+			3200411,
+			3200412,
+			3200413,
+			3200414,
+			3200415,
+			3200416,
+			323841,
 			322921,
 			323601,
 			322141,
@@ -29449,10 +30221,23 @@
 			322258,
 			322259,
 			322250,
-			3222510
+			3222510,
+			332001,
+			332241,
+			332242,
+			332243,
+			332251,
+			332252,
+			332253
 		}
 	},
 	get_id_list_by_activity_template = {
+		[388] = {
+			333881
+		},
+		[380] = {
+			323801
+		},
 		[386] = {
 			323861
 		},
@@ -29569,7 +30354,8 @@
 			303501,
 			313501,
 			313502,
-			323501
+			323501,
+			333501
 		},
 		[347] = {
 			293471,
@@ -29647,14 +30433,18 @@
 			323401
 		},
 		[324] = {
-			293241
+			293241,
+			333241
 		},
 		[325] = {
 			293251,
-			293252
+			293252,
+			333251,
+			333252
 		},
 		[323] = {
-			293231
+			293231,
+			333231
 		},
 		[319] = {
 			2831901,
@@ -29829,7 +30619,13 @@
 			3132211,
 			3132212,
 			323221,
-			323222
+			323222,
+			333221,
+			333222,
+			333223,
+			333224,
+			333225,
+			333226
 		},
 		[294] = {
 			262941
@@ -30090,7 +30886,8 @@
 			302442,
 			312441,
 			312442,
-			322441
+			322441,
+			332441
 		},
 		[243] = {
 			202432,
@@ -30110,7 +30907,8 @@
 			302432,
 			312431,
 			312432,
-			322431
+			322431,
+			332431
 		},
 		[230] = {
 			192301,
@@ -30135,7 +30933,8 @@
 		},
 		[226] = {
 			192261,
-			282261
+			282261,
+			332261
 		},
 		[270] = {
 			192701,
@@ -30249,7 +31048,10 @@
 			322258,
 			322259,
 			322250,
-			3222510
+			3222510,
+			332251,
+			332252,
+			332253
 		},
 		[224] = {
 			182241,
@@ -30321,7 +31123,10 @@
 			322248,
 			322249,
 			322240,
-			3222410
+			3222410,
+			332241,
+			332242,
+			332243
 		},
 		[231] = {
 			182311
@@ -30333,7 +31138,8 @@
 			272233,
 			292231,
 			312231,
-			312233
+			312233,
+			332231
 		},
 		[222] = {
 			182221,
@@ -30344,13 +31150,16 @@
 			292222,
 			292223,
 			312221,
-			312222
+			312222,
+			332221,
+			332222
 		},
 		[221] = {
 			182211,
 			272211,
 			292211,
-			312211
+			312211,
+			332211
 		},
 		[220] = {
 			182201,
@@ -30416,7 +31225,8 @@
 			312131,
 			312132,
 			322121,
-			322122
+			322122,
+			332131
 		},
 		[212] = {
 			172121,
@@ -30461,7 +31271,8 @@
 			290731,
 			300731,
 			310731,
-			320731
+			320731,
+			330731
 		},
 		[203] = {
 			152031
@@ -30583,7 +31394,8 @@
 			301892,
 			311891,
 			311892,
-			321891
+			321891,
+			331891
 		},
 		[187] = {
 			131871,
@@ -30651,7 +31463,8 @@
 			302002,
 			312001,
 			312002,
-			322001
+			322001,
+			332001
 		},
 		[180] = {
 			121801
@@ -30964,7 +31777,10 @@
 			302105,
 			312101,
 			312102,
-			312103
+			312103,
+			332101,
+			332102,
+			332103
 		},
 		[144] = {
 			81441
@@ -31064,7 +31880,9 @@
 			311463,
 			311465,
 			311464,
-			321463
+			321463,
+			331461,
+			331462
 		},
 		[145] = {
 			71451,
@@ -31297,7 +32115,8 @@
 			311161,
 			311162,
 			311163,
-			321161
+			321161,
+			331161
 		},
 		[110] = {
 			61101,
@@ -31338,7 +32157,8 @@
 			291201,
 			301201,
 			311201,
-			321202
+			321202,
+			331201
 		},
 		[84] = {
 			1103,
@@ -31461,7 +32281,9 @@
 			311117,
 			321111,
 			321112,
-			321113
+			321113,
+			331111,
+			331112
 		},
 		[131] = {
 			526,
@@ -31501,7 +32323,8 @@
 			301312,
 			311311,
 			311312,
-			321311
+			321311,
+			331311
 		},
 		[127] = {
 			521,
@@ -31669,7 +32492,8 @@
 			291071,
 			301071,
 			311071,
-			321071
+			321071,
+			331071
 		},
 		[106] = {
 			505,
@@ -31736,7 +32560,8 @@
 			291001,
 			301001,
 			311001,
-			321001
+			321001,
+			331001
 		},
 		[5] = {
 			301
@@ -31951,6 +32776,7 @@
 			310044,
 			310042,
 			310046,
+			310048,
 			320041,
 			320042,
 			320043,
@@ -31962,14 +32788,22 @@
 			3200414,
 			3200415,
 			3200416,
-			310048,
 			322142,
 			320047,
 			320048,
 			320732,
 			320733,
 			320734,
-			320735
+			320735,
+			330041,
+			330047,
+			330048,
+			330049,
+			330043,
+			330044,
+			330045,
+			330046,
+			330042
 		},
 		[72] = {
 			201
@@ -32209,7 +33043,12 @@
 			320033,
 			320034,
 			320035,
-			320036
+			320036,
+			330031,
+			330032,
+			330033,
+			330034,
+			330035
 		},
 		{
 			1,
@@ -32250,10 +33089,137 @@
 			300012,
 			310011,
 			310012,
-			320012
+			320012,
+			330011
 		}
 	},
 	get_id_list_by_sub_activity_list = {
+		[332253] = {
+			332241,
+			332242,
+			332243
+		},
+		[332252] = {
+			332241,
+			332242,
+			332243
+		},
+		[332251] = {
+			332241,
+			332242,
+			332243
+		},
+		[333881] = {
+			332261
+		},
+		[330042] = {
+			332261
+		},
+		[330046] = {
+			330043
+		},
+		[330045] = {
+			330043
+		},
+		[330044] = {
+			330043
+		},
+		[330043] = {
+			323801
+		},
+		[331112] = {
+			331311
+		},
+		[331111] = {
+			331311
+		},
+		[333226] = {
+			331071
+		},
+		[333225] = {
+			331071
+		},
+		[333224] = {
+			331071
+		},
+		[333223] = {
+			331071
+		},
+		[333222] = {
+			331071
+		},
+		[333221] = {
+			331071
+		},
+		[330048] = {
+			332431
+		},
+		[332441] = {
+			332431
+		},
+		[331462] = {
+			332431
+		},
+		[330047] = {
+			333231
+		},
+		[333241] = {
+			333231
+		},
+		[333252] = {
+			333231
+		},
+		[333251] = {
+			333231
+		},
+		[332231] = {
+			332211
+		},
+		[331461] = {
+			332211
+		},
+		[330041] = {
+			332211
+		},
+		[332222] = {
+			332211
+		},
+		[332221] = {
+			332211
+		},
+		[331311] = {
+			331001
+		},
+		[332131] = {
+			331001
+		},
+		[331161] = {
+			331001
+		},
+		[331071] = {
+			331001
+		},
+		[323801] = {
+			331001
+		},
+		[331891] = {
+			331001
+		},
+		[331201] = {
+			331001
+		},
+		[332431] = {
+			331001
+		},
+		[333231] = {
+			331001
+		},
+		[333501] = {
+			331001
+		},
+		[332261] = {
+			331001
+		},
 		[3222510] = {
 			3222410
 		},
@@ -32332,6 +33298,42 @@
 		[322142] = {
 			322141
 		},
+		[3200416] = {
+			3200411
+		},
+		[3200415] = {
+			3200411
+		},
+		[3200414] = {
+			3200411
+		},
+		[3200413] = {
+			3200411
+		},
+		[3200412] = {
+			3200411
+		},
+		[323841] = {
+			323641
+		},
+		[3200411] = {
+			323641
+		},
+		[320045] = {
+			320041
+		},
+		[320044] = {
+			320041
+		},
+		[320043] = {
+			320041
+		},
+		[320042] = {
+			320041
+		},
+		[320041] = {
+			321201
+		},
 		[3212712] = {
 			321051
 		},
@@ -32378,7 +33380,8 @@
 			320561
 		},
 		[320561] = {
-			321202
+			321202,
+			331201
 		},
 		[321113] = {
 			321311
@@ -32450,27 +33453,6 @@
 			312245,
 			312246
 		},
-		[3200416] = {
-			3200411
-		},
-		[3200415] = {
-			3200411
-		},
-		[3200414] = {
-			3200411
-		},
-		[3200413] = {
-			3200411
-		},
-		[3200412] = {
-			3200411
-		},
-		[323841] = {
-			323641
-		},
-		[3200411] = {
-			323641
-		},
 		[310048] = {
 			312432
 		},
@@ -32479,21 +33461,6 @@
 		},
 		[311464] = {
 			312432
-		},
-		[320045] = {
-			320041
-		},
-		[320044] = {
-			320041
-		},
-		[320043] = {
-			320041
-		},
-		[320042] = {
-			320041
-		},
-		[320041] = {
-			321201
 		},
 		[311117] = {
 			311312
@@ -39719,12 +40686,6 @@
 		311116,
 		311117,
 		313227,
-		321201,
-		320041,
-		320042,
-		320043,
-		320044,
-		320045,
 		313228,
 		313229,
 		3132210,
@@ -39732,14 +40693,6 @@
 		3132212,
 		310012,
 		312432,
-		323641,
-		3200411,
-		3200412,
-		3200413,
-		3200414,
-		3200415,
-		3200416,
-		323841,
 		311464,
 		312442,
 		310048,
@@ -39784,6 +40737,20 @@
 		3212710,
 		3212711,
 		3212712,
+		321201,
+		320041,
+		320042,
+		320043,
+		320044,
+		320045,
+		323641,
+		3200411,
+		3200412,
+		3200413,
+		3200414,
+		3200415,
+		3200416,
+		323841,
 		322921,
 		323601,
 		322141,
@@ -39831,6 +40798,63 @@
 		322258,
 		322259,
 		322250,
-		3222510
+		3222510,
+		331001,
+		331201,
+		332211,
+		332221,
+		332222,
+		332231,
+		330041,
+		331461,
+		331891,
+		330011,
+		333231,
+		333251,
+		333252,
+		333241,
+		330047,
+		332431,
+		331462,
+		332441,
+		330048,
+		330031,
+		330032,
+		330033,
+		330034,
+		330035,
+		331071,
+		333221,
+		333222,
+		333223,
+		333224,
+		333225,
+		333226,
+		331161,
+		331311,
+		331111,
+		331112,
+		332131,
+		330049,
+		330731,
+		323801,
+		330043,
+		330044,
+		330045,
+		330046,
+		332261,
+		330042,
+		333881,
+		333501,
+		332101,
+		332102,
+		332103,
+		332001,
+		332241,
+		332242,
+		332243,
+		332251,
+		332252,
+		332253
 	}
 }

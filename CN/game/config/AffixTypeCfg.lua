@@ -15317,6 +15317,40 @@
 			0
 		}
 	},
+	[9691] = {
+		name = "神能强化",
+		affix_buff_id = 9691,
+		max_level = 1,
+		extra_description = "AFFIX_9691",
+		id = 9691,
+		description = {
+			700009691
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9692] = {
+		name = "神能强化",
+		affix_buff_id = 9692,
+		max_level = 1,
+		extra_description = "AFFIX_9692",
+		id = 9692,
+		description = {
+			700009692
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
 	[9701] = {
 		name = "小怪血一",
 		affix_buff_id = 9701,
@@ -17811,6 +17845,159 @@
 		buffid = {
 			99481
 		},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9961] = {
+		name = "凝冰",
+		affix_buff_id = 9961,
+		max_level = 1,
+		extra_description = "AFFIX_9961",
+		id = 9961,
+		description = {
+			700009961
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9962] = {
+		name = "奥义增幅",
+		affix_buff_id = 9962,
+		max_level = 1,
+		extra_description = "AFFIX_9962",
+		id = 9962,
+		description = {
+			700009962
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9963] = {
+		name = "壁垒",
+		affix_buff_id = 9963,
+		max_level = 1,
+		extra_description = "AFFIX_9963",
+		id = 9963,
+		description = {
+			700009963
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9964] = {
+		name = "持续伤害",
+		affix_buff_id = 9964,
+		max_level = 1,
+		extra_description = "AFFIX_9964",
+		id = 9964,
+		description = {
+			700009964
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9965] = {
+		name = "血斗",
+		affix_buff_id = 9965,
+		max_level = 1,
+		extra_description = "AFFIX_9965",
+		id = 9965,
+		description = {
+			700009965
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9966] = {
+		name = "零时空间",
+		affix_buff_id = 9966,
+		max_level = 1,
+		extra_description = "AFFIX_9966",
+		id = 9966,
+		description = {
+			700009966
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9967] = {
+		name = "护盾增幅",
+		affix_buff_id = 9967,
+		max_level = 1,
+		extra_description = "AFFIX_9967",
+		id = 9967,
+		description = {
+			700009967
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9968] = {
+		name = "修正增幅",
+		affix_buff_id = 9968,
+		max_level = 1,
+		extra_description = "AFFIX_9968",
+		id = 9968,
+		description = {
+			700009968
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[9969] = {
+		name = "易控增幅",
+		affix_buff_id = 9969,
+		max_level = 1,
+		extra_description = "AFFIX_9969",
+		id = 9969,
+		description = {
+			700009969
+		},
+		buffid = {},
 		base = {
 			0
 		},
@@ -21285,6 +21472,91 @@
 		id = 70235,
 		description = {
 			700070235
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70236] = {
+		name = "审核评估书",
+		affix_buff_id = 70236,
+		max_level = 1,
+		extra_description = "AFFIX_70236",
+		id = 70236,
+		description = {
+			700070236
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70237] = {
+		name = "《夜莺》精装版",
+		affix_buff_id = 70237,
+		max_level = 1,
+		extra_description = "AFFIX_70237",
+		id = 70237,
+		description = {
+			700070237
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70238] = {
+		name = "被珍藏的礼物",
+		affix_buff_id = 70238,
+		max_level = 1,
+		extra_description = "AFFIX_70238",
+		id = 70238,
+		description = {
+			700070238
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70239] = {
+		name = "下午茶精选套餐",
+		affix_buff_id = 70239,
+		max_level = 1,
+		extra_description = "AFFIX_70239",
+		id = 70239,
+		description = {
+			700070239
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[70240] = {
+		name = "野心与礼仪权杖",
+		affix_buff_id = 70240,
+		max_level = 1,
+		extra_description = "AFFIX_70240",
+		id = 70240,
+		description = {
+			700070240
 		},
 		buffid = {},
 		base = {
@@ -28232,6 +28504,8 @@
 		9684,
 		9685,
 		9686,
+		9691,
+		9692,
 		9701,
 		9702,
 		9703,
@@ -28377,6 +28651,15 @@
 		9946,
 		9947,
 		9948,
+		9961,
+		9962,
+		9963,
+		9964,
+		9965,
+		9966,
+		9967,
+		9968,
+		9969,
 		80000,
 		80010,
 		80020,
@@ -28574,6 +28857,11 @@
 		70233,
 		70234,
 		70235,
+		70236,
+		70237,
+		70238,
+		70239,
+		70240,
 		70501,
 		70502,
 		70503,

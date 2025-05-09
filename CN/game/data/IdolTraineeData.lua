@@ -243,12 +243,20 @@ function var_0_1.GetIdolHeroList(arg_18_0, arg_18_1)
 	if arg_18_1 then
 		var_18_1 = BackHomeHeroCfg.all
 	else
-		var_18_1 = DormHeroTools:GetUnLockBackHomeHeroIDList()
+		local var_18_2 = BackHomeHeroCfg.all
+
+		var_18_1 = {}
+
+		for iter_18_0, iter_18_1 in ipairs(var_18_2) do
+			if HeroTools.GetHeroIsUnlock(iter_18_1) and BackHomeHeroCfg[iter_18_1] then
+				table.insert(var_18_1, iter_18_1)
+			end
+		end
 	end
 
-	for iter_18_0, iter_18_1 in ipairs(var_18_1) do
-		if BackHomeHeroCfg[iter_18_1].idol_usable == 1 then
-			table.insert(var_18_0, iter_18_1)
+	for iter_18_2, iter_18_3 in ipairs(var_18_1) do
+		if BackHomeHeroCfg[iter_18_3].idol_usable == 1 then
+			table.insert(var_18_0, iter_18_3)
 		end
 	end
 

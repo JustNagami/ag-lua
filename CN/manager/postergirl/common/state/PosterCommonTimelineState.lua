@@ -11,11 +11,11 @@ end
 local var_0_1 = 0.4
 
 function var_0_0.PlayAni(arg_3_0, arg_3_1)
-	manager.heroUiTimeline:PlayAction(arg_3_1, {
+	arg_3_0:GetHeroTimelineMgr():PlayAction(arg_3_1, {
 		fadeSecond = var_0_1,
 		talking = arg_3_0.talking_
 	})
-	manager.heroUiTimeline:SetCallbackBlendSignal(function(arg_4_0)
+	arg_3_0:GetHeroTimelineMgr():SetCallbackBlendSignal(function(arg_4_0)
 		arg_3_0:TimelineStopCallback()
 	end)
 end
@@ -25,7 +25,7 @@ function var_0_0.TimelineStopCallback(arg_5_0)
 end
 
 function var_0_0.Exit(arg_6_0, arg_6_1)
-	manager.heroUiTimeline:SetCallbackBlendSignal(nil)
+	arg_6_0:GetHeroTimelineMgr():SetCallbackBlendSignal(nil)
 	arg_6_0.actor:ResetBlendShapes()
 	var_0_0.super.Exit(arg_6_0, arg_6_1)
 end

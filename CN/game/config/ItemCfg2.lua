@@ -1,4 +1,1147 @@
 ﻿return {
+	[511050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 511050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000267
+			},
+			{
+				507
+			}
+		}
+	},
+	[512050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 512050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000267
+			},
+			{
+				507
+			}
+		}
+	},
+	[513050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 513050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000267
+			},
+			{
+				507
+			}
+		}
+	},
+	[514050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 514050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000267
+			},
+			{
+				507
+			}
+		}
+	},
+	[515050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 515050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000267
+			},
+			{
+				507
+			}
+		}
+	},
+	[519050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 519050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000267
+			},
+			{
+				507
+			}
+		}
+	},
+	[220050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 220050,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			}
+		}
+	},
+	[320050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 320050,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			}
+		}
+	},
+	[420050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 420050,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				507
+			}
+		}
+	},
+	[520050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 520050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000266
+			},
+			{
+				507
+			}
+		}
+	},
+	[521050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 521050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000266
+			},
+			{
+				507
+			}
+		}
+	},
+	[522050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 522050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000266
+			},
+			{
+				507
+			}
+		}
+	},
+	[523050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 523050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000266
+			},
+			{
+				507
+			}
+		}
+	},
+	[524050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 524050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000266
+			},
+			{
+				507
+			}
+		}
+	},
+	[525050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 525050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000266
+			},
+			{
+				507
+			}
+		}
+	},
+	[529050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 529050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000266
+			},
+			{
+				507
+			}
+		}
+	},
+	[230050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 230050,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			}
+		}
+	},
+	[330050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 330050,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			}
+		}
+	},
+	[430050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 430050,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				507
+			}
+		}
+	},
+	[530050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 530050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000265
+			},
+			{
+				507
+			}
+		}
+	},
+	[531050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 531050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000265
+			},
+			{
+				507
+			}
+		}
+	},
+	[532050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 532050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000265
+			},
+			{
+				507
+			}
+		}
+	},
+	[533050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 533050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000265
+			},
+			{
+				507
+			}
+		}
+	},
+	[534050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 534050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000265
+			},
+			{
+				507
+			}
+		}
+	},
+	[535050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 535050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000265
+			},
+			{
+				507
+			}
+		}
+	},
+	[539050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 539050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000265
+			},
+			{
+				507
+			}
+		}
+	},
+	[240050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 240050,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			}
+		}
+	},
+	[340050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 340050,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			}
+		}
+	},
+	[440050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 440050,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				507
+			}
+		}
+	},
+	[540050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 540050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000264
+			},
+			{
+				507
+			}
+		}
+	},
+	[541050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 541050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000264
+			},
+			{
+				507
+			}
+		}
+	},
+	[542050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 542050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000264
+			},
+			{
+				507
+			}
+		}
+	},
+	[543050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 543050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000264
+			},
+			{
+				507
+			}
+		}
+	},
+	[544050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 544050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000264
+			},
+			{
+				507
+			}
+		}
+	},
+	[545050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 545050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000264
+			},
+			{
+				507
+			}
+		}
+	},
+	[549050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 549050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000264
+			},
+			{
+				507
+			}
+		}
+	},
+	[250050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 250050,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			}
+		}
+	},
+	[350050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 350050,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			}
+		}
+	},
+	[450050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 450050,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				507
+			}
+		}
+	},
+	[550050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 550050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000263
+			},
+			{
+				507
+			}
+		}
+	},
+	[551050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 551050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000263
+			},
+			{
+				507
+			}
+		}
+	},
+	[552050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 552050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000263
+			},
+			{
+				507
+			}
+		}
+	},
+	[553050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 553050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000263
+			},
+			{
+				507
+			}
+		}
+	},
+	[554050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 554050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000263
+			},
+			{
+				507
+			}
+		}
+	},
+	[555050] = {
+		decompose_id = 0,
+		name = "不熄的残烬Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 555050,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——业火焚尽一切，徒留不曾熄灭的残烬宣说过往。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "50",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				317
+			},
+			{
+				510,
+				32000263
+			},
+			{
+				507
+			}
+		}
+	},
 	[559050] = {
 		decompose_id = 0,
 		name = "不熄的残烬Ⅴ",
@@ -12388,7 +13531,11 @@
 		icon = "59",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[310059] = {
 		decompose_id = 0,
@@ -12404,7 +13551,11 @@
 		icon = "59",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[410059] = {
 		decompose_id = 0,
@@ -12422,7 +13573,10 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12442,7 +13596,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000321
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12462,7 +13623,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000321
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12482,7 +13650,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000321
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12502,7 +13677,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000321
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12522,7 +13704,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000321
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12542,7 +13731,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000321
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12562,7 +13758,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000321
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12580,7 +13783,11 @@
 		icon = "59",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[320059] = {
 		decompose_id = 0,
@@ -12596,7 +13803,11 @@
 		icon = "59",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[420059] = {
 		decompose_id = 0,
@@ -12614,7 +13825,10 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12634,7 +13848,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000320
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12654,7 +13875,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000320
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12674,7 +13902,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000320
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12694,7 +13929,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000320
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12714,7 +13956,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000320
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12734,7 +13983,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000320
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12754,7 +14010,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000320
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12772,7 +14035,11 @@
 		icon = "59",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[330059] = {
 		decompose_id = 0,
@@ -12788,7 +14055,11 @@
 		icon = "59",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[430059] = {
 		decompose_id = 0,
@@ -12806,7 +14077,10 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12826,7 +14100,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000319
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12846,7 +14127,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000319
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12866,7 +14154,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000319
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12886,7 +14181,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000319
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12906,7 +14208,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000319
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12926,7 +14235,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000319
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12946,7 +14262,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000319
+			},
+			{
+				507
 			}
 		}
 	},
@@ -12964,7 +14287,11 @@
 		icon = "59",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[340059] = {
 		decompose_id = 0,
@@ -12980,7 +14307,11 @@
 		icon = "59",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[440059] = {
 		decompose_id = 0,
@@ -12998,7 +14329,10 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13018,7 +14352,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000318
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13038,7 +14379,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000318
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13058,7 +14406,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000318
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13078,7 +14433,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000318
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13098,7 +14460,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000318
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13118,7 +14487,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000318
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13138,7 +14514,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000318
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13156,7 +14539,11 @@
 		icon = "59",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[350059] = {
 		decompose_id = 0,
@@ -13172,7 +14559,11 @@
 		icon = "59",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[450059] = {
 		decompose_id = 0,
@@ -13190,7 +14581,10 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13210,7 +14604,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13230,7 +14631,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13250,7 +14658,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13270,7 +14685,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13290,7 +14712,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13310,7 +14739,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13330,7 +14766,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13348,7 +14791,11 @@
 		icon = "59",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[360059] = {
 		decompose_id = 0,
@@ -13364,7 +14811,11 @@
 		icon = "59",
 		use = 0,
 		max = 0,
-		source = {}
+		source = {
+			{
+				317
+			}
+		}
 	},
 	[460059] = {
 		decompose_id = 0,
@@ -13382,7 +14833,10 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13402,7 +14856,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000316
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13422,7 +14883,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000316
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13442,7 +14910,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000316
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13462,7 +14937,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000316
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13482,7 +14964,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000316
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13502,7 +14991,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000316
+			},
+			{
+				507
 			}
 		}
 	},
@@ -13522,7 +15018,14 @@
 		max = 0,
 		source = {
 			{
-				10001
+				317
+			},
+			{
+				510,
+				32000316
+			},
+			{
+				507
 			}
 		}
 	},
@@ -23894,6 +25397,1158 @@
 			}
 		}
 	},
+	[210069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 210069,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[310069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 310069,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[410069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 410069,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[510069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 510069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[511069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 511069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[512069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 512069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[513069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 513069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[514069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 514069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[515069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 515069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[519069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅰ",
+		compose_id = 0,
+		type = 7,
+		id = 519069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[220069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 220069,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[320069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 320069,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[420069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 420069,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[520069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 520069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[521069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 521069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[522069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 522069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[523069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 523069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[524069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 524069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[525069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 525069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[529069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅱ",
+		compose_id = 0,
+		type = 7,
+		id = 529069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[230069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 230069,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[330069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 330069,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[430069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 430069,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[530069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 530069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[531069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 531069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[532069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 532069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[533069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 533069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[534069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 534069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[535069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 535069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[539069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅲ",
+		compose_id = 0,
+		type = 7,
+		id = 539069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[240069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 240069,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[340069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 340069,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[440069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 440069,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[540069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 540069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[541069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 541069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[542069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 542069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[543069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 543069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[544069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 544069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[545069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 545069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[549069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅳ",
+		compose_id = 0,
+		type = 7,
+		id = 549069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[250069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 250069,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[350069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 350069,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[450069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 450069,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[550069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 550069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[551069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 551069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[552069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 552069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[553069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 553069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[554069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 554069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[555069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 555069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[559069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅴ",
+		compose_id = 0,
+		type = 7,
+		id = 559069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[260069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 260069,
+		rare = 2,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 2,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[360069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 360069,
+		rare = 3,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 3,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[460069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 460069,
+		rare = 4,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 4,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[560069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 560069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[561069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 561069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[562069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 562069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[563069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 563069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[564069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 564069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[565069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 565069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
+	[569069] = {
+		decompose_id = 0,
+		name = "重生者的秘仪Ⅵ",
+		compose_id = 0,
+		type = 7,
+		id = 569069,
+		rare = 5,
+		desc = "为修正者提供各种特殊力量的纹章。\n——阴谋似风中之沙，荣耀如仲夏之潮。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "69",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				10001
+			}
+		}
+	},
 	[830001] = {
 		name = "圣女的战旗(3星套装)",
 		id = 830001,
@@ -31959,12 +34614,12 @@
 		source = {}
 	},
 	[830065] = {
-		name = "守护者的低语 (3星套装)",
+		name = "守护者的低语(3星套装)",
 		id = 830065,
 		type = 5,
 		compose_id = 0,
 		rare = 3,
-		desc = "套装包含：守护者的低语 6个不同位置的3星部件。",
+		desc = "套装包含：守护者的低语6个不同位置的3星部件。",
 		decompose_id = 0,
 		sub_type = 501,
 		limit = 0,
@@ -32001,12 +34656,12 @@
 		source = {}
 	},
 	[840065] = {
-		name = "守护者的低语 (4星套装)",
+		name = "守护者的低语(4星套装)",
 		id = 840065,
 		type = 5,
 		compose_id = 0,
 		rare = 4,
-		desc = "套装包含：守护者的低语 6个不同位置的4星部件。",
+		desc = "套装包含：守护者的低语6个不同位置的4星部件。",
 		decompose_id = 0,
 		sub_type = 501,
 		limit = 0,
@@ -32043,12 +34698,12 @@
 		source = {}
 	},
 	[850065] = {
-		name = "守护者的低语 (5星套装)",
+		name = "守护者的低语(5星套装)",
 		id = 850065,
 		type = 5,
 		compose_id = 0,
 		rare = 5,
-		desc = "套装包含：守护者的低语 6个不同位置的5星部件。",
+		desc = "套装包含：守护者的低语6个不同位置的5星部件。",
 		decompose_id = 0,
 		sub_type = 501,
 		limit = 0,
@@ -32457,6 +35112,132 @@
 			},
 			{
 				560068,
+				1
+			}
+		},
+		source = {}
+	},
+	[830069] = {
+		name = "重生者的秘仪(3星套装)",
+		id = 830069,
+		type = 5,
+		compose_id = 0,
+		rare = 3,
+		desc = "套装包含：重生者的秘仪6个不同位置的3星部件。",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 3,
+		icon = "830069",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				310069,
+				1
+			},
+			{
+				320069,
+				1
+			},
+			{
+				330069,
+				1
+			},
+			{
+				340069,
+				1
+			},
+			{
+				350069,
+				1
+			},
+			{
+				360069,
+				1
+			}
+		},
+		source = {}
+	},
+	[840069] = {
+		name = "重生者的秘仪(4星套装)",
+		id = 840069,
+		type = 5,
+		compose_id = 0,
+		rare = 4,
+		desc = "套装包含：重生者的秘仪6个不同位置的4星部件。",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 4,
+		icon = "840069",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				410069,
+				1
+			},
+			{
+				420069,
+				1
+			},
+			{
+				430069,
+				1
+			},
+			{
+				440069,
+				1
+			},
+			{
+				450069,
+				1
+			},
+			{
+				460069,
+				1
+			}
+		},
+		source = {}
+	},
+	[850069] = {
+		name = "重生者的秘仪(5星套装)",
+		id = 850069,
+		type = 5,
+		compose_id = 0,
+		rare = 5,
+		desc = "套装包含：重生者的秘仪6个不同位置的5星部件。",
+		decompose_id = 0,
+		sub_type = 501,
+		limit = 0,
+		display_rare = 5,
+		icon = "850069",
+		use = 1,
+		max = 0,
+		param = {
+			{
+				510069,
+				1
+			},
+			{
+				520069,
+				1
+			},
+			{
+				530069,
+				1
+			},
+			{
+				540069,
+				1
+			},
+			{
+				550069,
+				1
+			},
+			{
+				560069,
 				1
 			}
 		},
@@ -33114,6 +35895,38 @@
 		sub_type = 0,
 		display_rare = 5,
 		icon = "950030",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950035] = {
+		decompose_id = 0,
+		name = "新的高分！",
+		compose_id = 0,
+		type = 15,
+		id = 950035,
+		rare = 5,
+		desc = "嘿嘿，这次我一定要超过阿管的记录！\n（梵天与该家具互动时有特殊动画）",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950035",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[950036] = {
+		decompose_id = 0,
+		name = "龙笛引",
+		compose_id = 0,
+		type = 15,
+		id = 950036,
+		rare = 5,
+		desc = "很久没有吹这首曲子了……唔，这是谁的恶作剧？\n（伊邪那美与该家具互动时有特殊动画）",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "950036",
 		use = 0,
 		max = 0,
 		source = {}
@@ -40341,6 +43154,28 @@
 			}
 		}
 	},
+	[2520011] = {
+		decompose_id = 0,
+		name = "列王·美尼斯",
+		compose_id = 0,
+		type = 9,
+		id = 2520011,
+		rare = 5,
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "2520011",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				1703
+			},
+			{
+				409
+			}
+		}
+	},
 	[2520999] = {
 		decompose_id = 0,
 		name = "列王·乌瑟卡夫",
@@ -43663,6 +46498,22 @@
 		max = 0,
 		source = {}
 	},
+	[2110203] = {
+		decompose_id = 0,
+		name = "三相·无间玩伴",
+		compose_id = 0,
+		type = 11,
+		id = 2110203,
+		rare = 5,
+		limit = 0,
+		desc_source = "获得三相·梵天换装「无间玩伴」",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "102003",
+		use = 0,
+		max = 0,
+		source = {}
+	},
 	[2111561] = {
 		decompose_id = 0,
 		name = "伐灭",
@@ -43867,6 +46718,38 @@
 		sub_type = 1,
 		display_rare = 5,
 		icon = "108501",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2112111] = {
+		decompose_id = 0,
+		name = "魂羽",
+		compose_id = 0,
+		type = 11,
+		id = 2112111,
+		rare = 5,
+		limit = 0,
+		desc_source = "获得魂羽·奥西里斯",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "1211",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[2112112] = {
+		decompose_id = 0,
+		name = "魂羽·绛羽拾花",
+		compose_id = 0,
+		type = 11,
+		id = 2112112,
+		rare = 5,
+		limit = 0,
+		desc_source = "获得魂羽·奥西里斯换装「绛羽拾花」",
+		sub_type = 1,
+		display_rare = 5,
+		icon = "121101",
 		use = 0,
 		max = 0,
 		source = {}
@@ -45449,6 +48332,31 @@
 		},
 		source = {}
 	},
+	[102003] = {
+		id = 102003,
+		compose_id = 0,
+		type = 8,
+		decompose_id = 0,
+		rare = 5,
+		desc = "三相·梵天的换装「无间玩伴」。\n——",
+		desc_source = "参与「咫尺身畔」活动获取",
+		sub_type = 0,
+		limit = 1,
+		display_rare = 5,
+		icon = "102003",
+		use = 0,
+		max = 0,
+		param = {
+			102003
+		},
+		source = {},
+		num_exchange_item = {
+			{
+				1,
+				1000
+			}
+		}
+	},
 	[102802] = {
 		id = 102802,
 		compose_id = 0,
@@ -45522,6 +48430,25 @@
 		max = 0,
 		param = {
 			105502
+		},
+		source = {}
+	},
+	[121101] = {
+		id = 121101,
+		compose_id = 0,
+		type = 8,
+		decompose_id = 0,
+		rare = 5,
+		desc = "魂羽·奥西里斯的换装「绛羽拾花」。\n——",
+		desc_source = "换装商店购买获得",
+		sub_type = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "121101",
+		use = 0,
+		max = 0,
+		param = {
+			121101
 		},
 		source = {}
 	},
@@ -46890,6 +49817,22 @@
 		sub_type = 0,
 		id = 1199,
 		icon = "1199",
+		use = 0,
+		max = 0,
+		source = {}
+	},
+	[1211] = {
+		decompose_id = 0,
+		name = "魂羽·奥西里斯",
+		compose_id = 0,
+		type = 2,
+		id = 1211,
+		rare = 5,
+		desc = "<color=#9A9A9A>修正者介绍</color>\n与冥王分离的奥西里斯，在经历迷惘后，受到管理员的鼓励，向前踏出一步，迈向成为全新自我的道路。\n依旧和以前一样善良而温柔，但却比以前更加坚定勇敢，她决心成为更好的自己，用自己的方式帮上大家。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "1211",
 		use = 0,
 		max = 0,
 		source = {}
@@ -48695,6 +51638,30 @@
 			}
 		}
 	},
+	[11211] = {
+		decompose_id = 0,
+		name = "魂羽情报",
+		compose_id = 0,
+		type = 3,
+		id = 11211,
+		rare = 5,
+		desc = "关于魂羽·奥西里斯的碎片化信息，获得足够多之后即可顺利招募。碎片化信息亦可用于制定进阶培养方案。",
+		limit = 0,
+		sub_type = 0,
+		display_rare = 5,
+		icon = "1211",
+		use = 0,
+		max = 0,
+		source = {
+			{
+				404,
+				10163
+			},
+			{
+				502
+			}
+		}
+	},
 	[11248] = {
 		decompose_id = 0,
 		name = "神威情报",
@@ -50414,6 +53381,78 @@
 			10000
 		}
 	},
+	[1012110103] = {
+		decompose_id = 0,
+		name = "「绛羽拾花」试衣底片（3天）",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "使用后可以限时体验指定修正者皮肤。\n——拉克妮高定为回馈顾客发放的试衣底片，放入换装相机后即可暂时试装。",
+		compose_id = 0,
+		icon = "10121101",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "限时活动获取",
+		id = 1012110103,
+		param = {
+			1112110103,
+			4603403
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
+	[1010200303] = {
+		decompose_id = 0,
+		name = "「无间玩伴」试衣底片（3天）",
+		display_rare = 5,
+		type = 4,
+		sub_type = 407,
+		limit = 0,
+		desc = "使用后可以限时体验指定修正者皮肤。\n——拉克妮高定为回馈顾客发放的试衣底片，放入换装相机后即可暂时试装。",
+		compose_id = 0,
+		icon = "10102003",
+		use = 1,
+		max = 0,
+		rare = 5,
+		desc_source = "限时活动获取",
+		id = 1010200303,
+		param = {
+			1110200303,
+			4603003
+		},
+		source = {},
+		time = {
+			4,
+			{
+				30,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		},
+		time_exchange_item = {
+			2,
+			10000
+		}
+	},
 	[1110950103] = {
 		decompose_id = 0,
 		name = "苍鹭-入暮之诗（3天）",
@@ -51926,6 +54965,66 @@
 			}
 		}
 	},
+	[1112110103] = {
+		name = "魂羽-绛羽拾花（3天）",
+		type = 8,
+		id = 1112110103,
+		rare = 5,
+		desc = "魂羽·奥西里斯的换装「绛羽拾花」。",
+		compose_id = 0,
+		sub_type = 801,
+		decompose_id = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "121101",
+		use = 0,
+		max = 0,
+		param = {
+			121101
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[1110200303] = {
+		name = "三相-无间玩伴（3天）",
+		type = 8,
+		id = 1110200303,
+		rare = 5,
+		desc = "三相·梵天的换装「无间玩伴」。",
+		compose_id = 0,
+		sub_type = 801,
+		decompose_id = 0,
+		limit = 0,
+		display_rare = 5,
+		icon = "102003",
+		use = 0,
+		max = 0,
+		param = {
+			102003
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
 	[4600703] = {
 		decompose_id = 0,
 		name = "花庭余响（3天）",
@@ -52794,6 +55893,68 @@
 			}
 		}
 	},
+	[4603403] = {
+		decompose_id = 0,
+		name = "一枝春（3天）",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "奥西里斯的话总是很少，但是被夕阳染成金色的笑颜，低垂着却仍闪动的睫毛，落入你发间的手指，都在替她说话。",
+		sub_type = 2101,
+		icon = "6034",
+		use = 0,
+		max = 0,
+		rare = 5,
+		littleicon = "6034",
+		id = 4603403,
+		param = {
+			6034
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[4603003] = {
+		decompose_id = 0,
+		name = "喧笑的时光（3天）",
+		display_rare = 5,
+		type = 21,
+		compose_id = 0,
+		limit = 0,
+		desc = "深空之眼为管理员准备的电竞娱乐房，此前由于工作繁忙未经常使用，现如今梵天已成为这里的常客。",
+		sub_type = 2101,
+		icon = "6030",
+		use = 0,
+		max = 0,
+		rare = 5,
+		littleicon = "6030",
+		id = 4603003,
+		param = {
+			6030
+		},
+		source = {},
+		time = {
+			4,
+			{
+				3,
+				{
+					5,
+					0,
+					0
+				}
+			}
+		}
+	},
 	get_id_list_by_type = {
 		[3] = {
 			11011,
@@ -52864,6 +56025,7 @@
 			11184,
 			11197,
 			11199,
+			11211,
 			11248,
 			11284
 		},
@@ -52936,6 +56098,7 @@
 			1184,
 			1197,
 			1199,
+			1211,
 			1248,
 			1284
 		},
@@ -53032,10 +56195,12 @@
 			101502,
 			101201,
 			107503,
+			102003,
 			102802,
 			108501,
 			107301,
 			105502,
+			121101,
 			1110950103,
 			1110720103,
 			1110750203,
@@ -53081,7 +56246,9 @@
 			1110280203,
 			1110550203,
 			1110850103,
-			1110730103
+			1110730103,
+			1112110103,
+			1110200303
 		},
 		[11] = {
 			2110841,
@@ -53212,6 +56379,7 @@
 			2110212,
 			2110201,
 			2110202,
+			2110203,
 			2111561,
 			2111562,
 			2110891,
@@ -53225,6 +56393,8 @@
 			2110122,
 			2110851,
 			2110852,
+			2112111,
+			2112112,
 			2110731,
 			2110732,
 			2200002,
@@ -53286,6 +56456,7 @@
 			2520008,
 			2520009,
 			2520010,
+			2520011,
 			2520999,
 			2530000,
 			2530001,
@@ -53441,6 +56612,8 @@
 			950028,
 			950029,
 			950030,
+			950035,
+			950036,
 			950901,
 			950902,
 			950903,
@@ -57862,7 +61035,67 @@
 			563068,
 			564068,
 			565068,
-			569068
+			569068,
+			210069,
+			310069,
+			410069,
+			510069,
+			511069,
+			512069,
+			513069,
+			514069,
+			515069,
+			519069,
+			220069,
+			320069,
+			420069,
+			520069,
+			521069,
+			522069,
+			523069,
+			524069,
+			525069,
+			529069,
+			230069,
+			330069,
+			430069,
+			530069,
+			531069,
+			532069,
+			533069,
+			534069,
+			535069,
+			539069,
+			240069,
+			340069,
+			440069,
+			540069,
+			541069,
+			542069,
+			543069,
+			544069,
+			545069,
+			549069,
+			250069,
+			350069,
+			450069,
+			550069,
+			551069,
+			552069,
+			553069,
+			554069,
+			555069,
+			559069,
+			260069,
+			360069,
+			460069,
+			560069,
+			561069,
+			562069,
+			563069,
+			564069,
+			565069,
+			569069
 		},
 		[20] = {
 			90001,
@@ -57976,9 +61209,25 @@
 			90109,
 			90110,
 			90111,
+			90112,
+			90113,
+			90114,
+			90115,
+			90116,
+			90117,
+			90118,
+			90119,
 			90120,
 			90121,
 			90122,
+			90123,
+			90124,
+			90125,
+			90126,
+			90127,
+			90128,
+			90129,
+			90130,
 			91001,
 			91002,
 			91003,
@@ -57992,6 +61241,11 @@
 			91011,
 			91012,
 			91013,
+			91014,
+			91015,
+			91016,
+			91017,
+			91018,
 			91020,
 			91021,
 			91022,
@@ -58168,6 +61422,8 @@
 			30093,
 			30094,
 			30095,
+			30096,
+			30097,
 			30100,
 			30101,
 			30102,
@@ -58621,7 +61877,10 @@
 			850067,
 			830068,
 			840068,
-			850068
+			850068,
+			830069,
+			840069,
+			850069
 		},
 		[4] = {
 			20001,
@@ -58705,7 +61964,9 @@
 			1010280203,
 			1010550203,
 			1010850103,
-			1010730103
+			1010730103,
+			1012110103,
+			1010200303
 		},
 		[25] = {
 			11001
@@ -58716,6 +61977,8 @@
 			10003,
 			10004,
 			10005,
+			10006,
+			10007,
 			40101,
 			40102,
 			40103,
@@ -58895,7 +62158,12 @@
 			53153,
 			53154,
 			53155,
+			53156,
+			53157,
+			53158,
+			53159,
 			53161,
+			53163,
 			53999,
 			54006,
 			54049,
@@ -58942,7 +62210,8 @@
 			81026,
 			81017,
 			81132,
-			81138
+			81138,
+			81060
 		},
 		[26] = {
 			9001,
@@ -58986,6 +62255,7 @@
 			7017,
 			7018,
 			7019,
+			7020,
 			7100,
 			7101,
 			7102,
@@ -59000,7 +62270,8 @@
 			7111,
 			7112,
 			7113,
-			7114
+			7114,
+			7115
 		},
 		[21] = {
 			6000,
@@ -59033,9 +62304,11 @@
 			6027,
 			6028,
 			6029,
+			6030,
 			6031,
-			6033,
 			6032,
+			6033,
+			6034,
 			6100,
 			4600703,
 			4600803,
@@ -59064,7 +62337,9 @@
 			4602903,
 			4602603,
 			4603203,
-			4603303
+			4603303,
+			4603403,
+			4603003
 		},
 		[19] = {
 			5000
@@ -59128,7 +62403,8 @@
 			3052,
 			3053,
 			3054,
-			3055
+			3055,
+			3056
 		},
 		[12] = {
 			2001,
@@ -59165,6 +62441,7 @@
 			2032,
 			2033,
 			2034,
+			2035,
 			2401,
 			2701,
 			2702,
@@ -59204,7 +62481,9 @@
 			2922,
 			2924,
 			2925,
-			2926
+			2926,
+			2927,
+			2928
 		},
 		{
 			1,
@@ -59354,12 +62633,14 @@
 			54082,
 			54083,
 			54084,
+			54087,
 			54112,
 			54113,
 			54114,
 			54115,
 			54117,
 			54118,
+			54120,
 			60001,
 			60002,
 			60003,
@@ -59419,7 +62700,9 @@
 			1110280203,
 			1110550203,
 			1110850103,
-			1110730103
+			1110730103,
+			1112110103,
+			1110200303
 		},
 		[407] = {
 			1010950103,
@@ -59468,7 +62751,9 @@
 			1010280203,
 			1010550203,
 			1010850103,
-			1010730103
+			1010730103,
+			1012110103,
+			1010200303
 		},
 		[4] = {
 			941001,
@@ -59527,7 +62812,8 @@
 			81026,
 			81017,
 			81132,
-			81138
+			81138,
+			81060
 		},
 		[408] = {
 			70005,
@@ -59780,6 +63066,7 @@
 			2110212,
 			2110201,
 			2110202,
+			2110203,
 			2111561,
 			2111562,
 			2110891,
@@ -59793,6 +63080,8 @@
 			2110122,
 			2110851,
 			2110852,
+			2112111,
+			2112112,
 			2110731,
 			2110732,
 			2200002,
@@ -59952,7 +63241,9 @@
 			30092,
 			30093,
 			30094,
-			30095
+			30095,
+			30096,
+			30097
 		},
 		[518] = {
 			30065,
@@ -60381,7 +63672,10 @@
 			850067,
 			830068,
 			840068,
-			850068
+			850068,
+			830069,
+			840069,
+			850069
 		},
 		[507] = {
 			30031,
@@ -60526,9 +63820,11 @@
 			6027,
 			6028,
 			6029,
+			6030,
 			6031,
-			6033,
 			6032,
+			6033,
+			6034,
 			6100,
 			4600703,
 			4600803,
@@ -60557,7 +63853,9 @@
 			4602903,
 			4602603,
 			4603203,
-			4603303
+			4603303,
+			4603403,
+			4603003
 		},
 		[1801] = {
 			4001,
@@ -60620,7 +63918,8 @@
 			3052,
 			3053,
 			3054,
-			3055
+			3055,
+			3056
 		},
 		[1204] = {
 			2910,
@@ -60689,6 +63988,7 @@
 			2032,
 			2033,
 			2034,
+			2035,
 			2709,
 			2719,
 			2720,
@@ -60702,7 +64002,9 @@
 			2922,
 			2924,
 			2925,
-			2926
+			2926,
+			2927,
+			2928
 		},
 		[1702] = {
 			49,
@@ -60801,6 +64103,7 @@
 			7017,
 			7018,
 			7019,
+			7020,
 			7100,
 			7101,
 			7102,
@@ -60816,6 +64119,7 @@
 			7112,
 			7113,
 			7114,
+			7115,
 			8001,
 			8002,
 			8003,
@@ -60832,6 +64136,8 @@
 			10003,
 			10004,
 			10005,
+			10006,
+			10007,
 			11001,
 			51009,
 			51010,
@@ -60958,7 +64264,12 @@
 			53153,
 			53154,
 			53155,
+			53156,
+			53157,
+			53158,
+			53159,
 			53161,
+			53163,
 			53999,
 			54001,
 			54002,
@@ -61040,6 +64351,7 @@
 			54082,
 			54083,
 			54084,
+			54087,
 			54112,
 			54113,
 			54114,
@@ -61047,6 +64359,7 @@
 			54116,
 			54117,
 			54118,
+			54120,
 			60001,
 			60002,
 			60003,
@@ -61168,9 +64481,25 @@
 			90109,
 			90110,
 			90111,
+			90112,
+			90113,
+			90114,
+			90115,
+			90116,
+			90117,
+			90118,
+			90119,
 			90120,
 			90121,
 			90122,
+			90123,
+			90124,
+			90125,
+			90126,
+			90127,
+			90128,
+			90129,
+			90130,
 			91001,
 			91002,
 			91003,
@@ -61184,6 +64513,11 @@
 			91011,
 			91012,
 			91013,
+			91014,
+			91015,
+			91016,
+			91017,
+			91018,
 			91020,
 			91021,
 			91022,
@@ -65269,6 +68603,66 @@
 			564068,
 			565068,
 			569068,
+			210069,
+			310069,
+			410069,
+			510069,
+			511069,
+			512069,
+			513069,
+			514069,
+			515069,
+			519069,
+			220069,
+			320069,
+			420069,
+			520069,
+			521069,
+			522069,
+			523069,
+			524069,
+			525069,
+			529069,
+			230069,
+			330069,
+			430069,
+			530069,
+			531069,
+			532069,
+			533069,
+			534069,
+			535069,
+			539069,
+			240069,
+			340069,
+			440069,
+			540069,
+			541069,
+			542069,
+			543069,
+			544069,
+			545069,
+			549069,
+			250069,
+			350069,
+			450069,
+			550069,
+			551069,
+			552069,
+			553069,
+			554069,
+			555069,
+			559069,
+			260069,
+			360069,
+			460069,
+			560069,
+			561069,
+			562069,
+			563069,
+			564069,
+			565069,
+			569069,
 			950001,
 			950002,
 			950003,
@@ -65298,6 +68692,8 @@
 			950028,
 			950029,
 			950030,
+			950035,
+			950036,
 			950901,
 			950902,
 			950903,
@@ -65735,6 +69131,7 @@
 			2520008,
 			2520009,
 			2520010,
+			2520011,
 			2520999,
 			2530000,
 			2530001,
@@ -65861,10 +69258,12 @@
 			101502,
 			101201,
 			107503,
+			102003,
 			102802,
 			108501,
 			107301,
 			105502,
+			121101,
 			1037011,
 			1013011,
 			1094021,
@@ -65954,6 +69353,7 @@
 			1184,
 			1197,
 			1199,
+			1211,
 			1248,
 			1284,
 			11011,
@@ -66024,6 +69424,7 @@
 			11184,
 			11197,
 			11199,
+			11211,
 			11248,
 			11284
 		}
@@ -66131,6 +69532,7 @@
 		2032,
 		2033,
 		2034,
+		2035,
 		2401,
 		2701,
 		2702,
@@ -66171,6 +69573,8 @@
 		2924,
 		2925,
 		2926,
+		2927,
+		2928,
 		3001,
 		3002,
 		3003,
@@ -66222,6 +69626,7 @@
 		3053,
 		3054,
 		3055,
+		3056,
 		4001,
 		4002,
 		4003,
@@ -66259,9 +69664,11 @@
 		6027,
 		6028,
 		6029,
+		6030,
 		6031,
-		6033,
 		6032,
+		6033,
+		6034,
 		6100,
 		7001,
 		7002,
@@ -66282,6 +69689,7 @@
 		7017,
 		7018,
 		7019,
+		7020,
 		7100,
 		7101,
 		7102,
@@ -66297,6 +69705,7 @@
 		7112,
 		7113,
 		7114,
+		7115,
 		8001,
 		8002,
 		8003,
@@ -66320,6 +69729,8 @@
 		10003,
 		10004,
 		10005,
+		10006,
+		10007,
 		11001,
 		20001,
 		20002,
@@ -66417,6 +69828,8 @@
 		30093,
 		30094,
 		30095,
+		30096,
+		30097,
 		30100,
 		30101,
 		30102,
@@ -66939,7 +70352,12 @@
 		53153,
 		53154,
 		53155,
+		53156,
+		53157,
+		53158,
+		53159,
 		53161,
+		53163,
 		53999,
 		54001,
 		54002,
@@ -67021,6 +70439,7 @@
 		54082,
 		54083,
 		54084,
+		54087,
 		54112,
 		54113,
 		54114,
@@ -67028,6 +70447,7 @@
 		54116,
 		54117,
 		54118,
+		54120,
 		60001,
 		60002,
 		60003,
@@ -67089,6 +70509,7 @@
 		81017,
 		81132,
 		81138,
+		81060,
 		90001,
 		90002,
 		90003,
@@ -67200,9 +70621,25 @@
 		90109,
 		90110,
 		90111,
+		90112,
+		90113,
+		90114,
+		90115,
+		90116,
+		90117,
+		90118,
+		90119,
 		90120,
 		90121,
 		90122,
+		90123,
+		90124,
+		90125,
+		90126,
+		90127,
+		90128,
+		90129,
+		90130,
 		91001,
 		91002,
 		91003,
@@ -67216,6 +70653,11 @@
 		91011,
 		91012,
 		91013,
+		91014,
+		91015,
+		91016,
+		91017,
+		91018,
 		91020,
 		91021,
 		91022,
@@ -71301,6 +74743,66 @@
 		564068,
 		565068,
 		569068,
+		210069,
+		310069,
+		410069,
+		510069,
+		511069,
+		512069,
+		513069,
+		514069,
+		515069,
+		519069,
+		220069,
+		320069,
+		420069,
+		520069,
+		521069,
+		522069,
+		523069,
+		524069,
+		525069,
+		529069,
+		230069,
+		330069,
+		430069,
+		530069,
+		531069,
+		532069,
+		533069,
+		534069,
+		535069,
+		539069,
+		240069,
+		340069,
+		440069,
+		540069,
+		541069,
+		542069,
+		543069,
+		544069,
+		545069,
+		549069,
+		250069,
+		350069,
+		450069,
+		550069,
+		551069,
+		552069,
+		553069,
+		554069,
+		555069,
+		559069,
+		260069,
+		360069,
+		460069,
+		560069,
+		561069,
+		562069,
+		563069,
+		564069,
+		565069,
+		569069,
 		830001,
 		840001,
 		850001,
@@ -71505,6 +75007,9 @@
 		830068,
 		840068,
 		850068,
+		830069,
+		840069,
+		850069,
 		941001,
 		941002,
 		941003,
@@ -71546,6 +75051,8 @@
 		950028,
 		950029,
 		950030,
+		950035,
+		950036,
 		950901,
 		950902,
 		950903,
@@ -71983,6 +75490,7 @@
 		2520008,
 		2520009,
 		2520010,
+		2520011,
 		2520999,
 		2530000,
 		2530001,
@@ -72168,6 +75676,7 @@
 		2110212,
 		2110201,
 		2110202,
+		2110203,
 		2111561,
 		2111562,
 		2110891,
@@ -72181,6 +75690,8 @@
 		2110122,
 		2110851,
 		2110852,
+		2112111,
+		2112112,
 		2110731,
 		2110732,
 		2200002,
@@ -72265,10 +75776,12 @@
 		101502,
 		101201,
 		107503,
+		102003,
 		102802,
 		108501,
 		107301,
 		105502,
+		121101,
 		1037011,
 		1013011,
 		1094021,
@@ -72358,6 +75871,7 @@
 		1184,
 		1197,
 		1199,
+		1211,
 		1248,
 		1284,
 		11011,
@@ -72428,6 +75942,7 @@
 		11184,
 		11197,
 		11199,
+		11211,
 		11248,
 		11284,
 		1010950103,
@@ -72477,6 +75992,8 @@
 		1010550203,
 		1010850103,
 		1010730103,
+		1012110103,
+		1010200303,
 		1110950103,
 		1110720103,
 		1110750203,
@@ -72523,6 +76040,8 @@
 		1110550203,
 		1110850103,
 		1110730103,
+		1112110103,
+		1110200303,
 		4600703,
 		4600803,
 		4600903,
@@ -72550,6 +76069,8 @@
 		4602903,
 		4602603,
 		4603203,
-		4603303
+		4603303,
+		4603403,
+		4603003
 	}
 }

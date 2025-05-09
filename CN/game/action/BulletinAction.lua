@@ -96,7 +96,9 @@ function var_0_0.OpenOperationUrl(arg_7_0)
 	local var_7_2 = ""
 	local var_7_3 = string.format(arg_7_0, var_7_0, var_7_1)
 
-	if GameToSDK.PLATFORM_ID == 1 or GameToSDK.IsEditorOrPcPlatform() then
+	if GameToSDK.PLATFORM_ID == 1 then
+		LuaForUtil.LinkThirdApp(var_7_3)
+	elseif GameToSDK.IsEditorOrPcPlatform() then
 		Application.OpenURL(var_7_3)
 	else
 		FrameTimer.New(function()

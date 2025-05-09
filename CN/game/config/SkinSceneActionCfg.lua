@@ -223,7 +223,29 @@
 		start_path = "SofdecAsset/function/dlc/107301_login.usm",
 		skin_id = 107301
 	},
+	[102003] = {
+		special_scene_id_2 = 0,
+		special_action_2 = "",
+		special_scene_id = 6030,
+		special_action = "102003ui_custom",
+		start_path = "SofdecAsset/function/dlc/102001_login.usm",
+		skin_id = 102003
+	},
+	[121101] = {
+		special_scene_id_2 = 0,
+		special_action_2 = "",
+		special_scene_id = 6034,
+		special_action = "121101ui_custom",
+		start_path = "SofdecAsset/function/dlc/121101_login.usm",
+		skin_id = 121101
+	},
 	get_id_list_by_special_scene_id = {
+		[6034] = {
+			121101
+		},
+		[6030] = {
+			102003
+		},
 		[6033] = {
 			107301
 		},
@@ -337,6 +359,8 @@
 		101502,
 		107503,
 		108501,
-		107301
+		107301,
+		102003,
+		121101
 	}
 }

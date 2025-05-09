@@ -114,7 +114,7 @@ function var_0_0.InitUI(arg_4_0)
 	else
 		SetActive(arg_4_0.appDescBtnClickNode_, true)
 		arg_4_0:AddBtnListener(arg_4_0.appDescBtn_, nil, function()
-			Application.OpenURL(GameSetting.record_miit_url.value[1])
+			OperationAction.OpenNormalUrl(GameSetting.record_miit_url.value[1])
 		end)
 	end
 

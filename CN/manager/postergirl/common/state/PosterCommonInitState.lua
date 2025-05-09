@@ -10,7 +10,7 @@ function var_0_0.Enter(arg_2_0)
 
 	if manager.posterGirl:GetViewTag() == PosterGirlConst.ViewTag.home and #arg_2_0.actor:GetInteractionCfg()[PosterGirlConst.InteractionKey.idle] ~= 0 then
 		arg_2_0.idleTimer = Timer.New(function()
-			arg_2_0.actor:ChangeState(PosterGirlConst.StateKay.idle)
+			arg_2_0.actor:DoIdle()
 		end, 60, -1)
 
 		arg_2_0.idleTimer:Start()

@@ -160,6 +160,8 @@ function var_0_0.AddUIListener(arg_5_0)
 end
 
 function var_0_0.OnEnter(arg_16_0)
+	Input.multiTouchEnabled = false
+
 	local var_16_0 = ActivityData:GetActivityData(arg_16_0.params_.activityID)
 
 	arg_16_0.startTime_ = var_16_0.startTime
@@ -180,6 +182,8 @@ function var_0_0.OnEnter(arg_16_0)
 end
 
 function var_0_0.OnExit(arg_17_0)
+	Input.multiTouchEnabled = true
+
 	manager.windowBar:HideBar()
 
 	if arg_17_0.checkAnimtimer_ ~= nil then

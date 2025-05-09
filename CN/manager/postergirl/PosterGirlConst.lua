@@ -25,23 +25,33 @@
 		right = 2
 	},
 	StateKay = {
-		shake = "shake",
+		right2mid = "right2mid",
 		quickclick = "quickclick",
 		idle = "idle",
-		mid2left = "mid2left",
 		init_spec = "init_spec",
-		left2mid = "left2mid",
 		init = "init",
-		debut = "debut",
+		left2mid = "left2mid",
 		greet = "greet",
-		right2mid = "right2mid",
-		mid2right = "mid2right",
+		init_no_blend = "init_no_blend",
 		touch = "touch",
-		show = "show"
+		show = "show",
+		shake = "shake",
+		left2right = "left2right",
+		debut = "debut",
+		mid2left = "mid2left",
+		miniGame = "miniGame",
+		mid2right = "mid2right",
+		right2left = "right2left"
 	},
 	PosterGirlTag = {
 		common = 1,
 		null = 0,
 		t0 = 2
-	}
+	},
+	MiniGameKey = {
+		DrawCardGame = "game2",
+		DanceGame = "game1",
+		GuelGame = "game3"
+	},
+	LogConst = {}
 }

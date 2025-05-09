@@ -44,6 +44,8 @@ function var_0_0.ProduceStep(arg_3_0, arg_3_1)
 			return CombineGameStep.New(arg_3_0, arg_3_1)
 		elseif var_3_1 == "BloodCardGameStep" then
 			return BloodCardGameStep.New(arg_3_0, arg_3_1)
+		elseif var_3_1 == "TetrisGameStep" then
+			return TetrisGameStep.New(arg_3_0, arg_3_1)
 		end
 	end
 

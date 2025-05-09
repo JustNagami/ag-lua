@@ -1012,6 +1012,8 @@ function var_0_0.CloseStoryEventNode_42(arg_226_0)
 end
 
 function var_0_0.DialogueBranchNode_31(arg_227_0)
+	arg_227_0:SetLookAtParamsAction(9073, 0.8, 1, 1)
+	arg_227_0:LookAtRoleAction(false, 9073, "9074")
 	arg_227_0:OnNext(function()
 		arg_227_0:ClearOnNext()
 		arg_227_0:PureActorDialogueNode_32()

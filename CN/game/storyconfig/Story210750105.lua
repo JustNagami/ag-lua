@@ -5494,7 +5494,7 @@
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_165_1.text_)
 
-				local var_168_43 = 29
+				local var_168_43 = 28
 				local var_168_44 = utf8.len(var_168_42)
 				local var_168_45 = var_168_43 <= 0 and var_168_39 or var_168_39 * (var_168_44 / var_168_43)
 

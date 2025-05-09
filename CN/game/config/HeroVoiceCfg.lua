@@ -8,13 +8,265 @@
 		title = "登入问候",
 		tag_id = 4
 	},
+	[101101] = {
+		id = 101101,
+		file = "greet_day",
+		use_skin_id = 109502,
+		type = 1,
+		unlock_condition = 101717,
+		title = "思念的归处·登入问候1",
+		tag_id = 3
+	},
+	[101102] = {
+		id = 101102,
+		file = "greet",
+		use_skin_id = 107602,
+		type = 1,
+		unlock_condition = 101701,
+		title = "暮色珍珠·登入问候1",
+		tag_id = 3
+	},
 	[101103] = {
 		id = 101103,
+		file = "greet",
+		use_skin_id = 109304,
+		type = 1,
+		unlock_condition = 101702,
+		title = "特别看护·登入问候1",
+		tag_id = 3
+	},
+	[101104] = {
+		id = 101104,
+		file = "greet",
+		use_skin_id = 107501,
+		type = 1,
+		unlock_condition = 101703,
+		title = "朱阁幽话·登入问候1",
+		tag_id = 3
+	},
+	[101105] = {
+		id = 101105,
+		file = "greet",
+		use_skin_id = 106101,
+		type = 1,
+		unlock_condition = 101704,
+		title = "相见欢·登入问候1",
+		tag_id = 3
+	},
+	[101106] = {
+		id = 101106,
+		file = "greet",
+		use_skin_id = 111102,
+		type = 1,
+		unlock_condition = 101705,
+		title = "青玉案·登入问候1",
+		tag_id = 3
+	},
+	[101107] = {
+		id = 101107,
+		file = "greet",
+		use_skin_id = 109501,
+		type = 1,
+		unlock_condition = 101706,
+		title = "花庭余响·登入问候1",
+		tag_id = 3
+	},
+	[101108] = {
+		id = 101108,
+		file = "greet",
+		use_skin_id = 107502,
+		type = 1,
+		unlock_condition = 101707,
+		title = "轻舞幽梦·登入问候1",
+		tag_id = 3
+	},
+	[101109] = {
+		id = 101109,
+		file = "greet",
+		use_skin_id = 107601,
+		type = 1,
+		unlock_condition = 101708,
+		title = "休憩时间·登入问候1",
+		tag_id = 3
+	},
+	[101110] = {
+		id = 101110,
+		file = "greet",
+		use_skin_id = 107402,
+		type = 1,
+		unlock_condition = 101709,
+		title = "慌张时刻·登入问候1",
+		tag_id = 3
+	},
+	[101111] = {
+		id = 101111,
+		file = "greet",
+		use_skin_id = 119701,
+		type = 1,
+		unlock_condition = 101710,
+		title = "梦游奇境·登入问候1",
+		tag_id = 3
+	},
+	[101112] = {
+		id = 101112,
+		file = "greet",
+		use_skin_id = 104902,
+		type = 1,
+		unlock_condition = 101711,
+		title = "浮光的初景·登入问候1",
+		tag_id = 3
+	},
+	[101113] = {
+		id = 101113,
+		file = "greet",
+		use_skin_id = 113907,
+		type = 1,
+		unlock_condition = 101712,
+		title = "温柔的回响·登入问候1",
+		tag_id = 3
+	},
+	[101114] = {
+		id = 101114,
+		file = "greet",
+		use_skin_id = 102201,
+		type = 1,
+		unlock_condition = 101713,
+		title = "于月色中·登入问候1",
+		tag_id = 3
+	},
+	[101115] = {
+		id = 101115,
+		file = "greet",
+		use_skin_id = 102101,
+		type = 1,
+		unlock_condition = 101714,
+		title = "少女的绮想·登入问候1",
+		tag_id = 3
+	},
+	[101116] = {
+		id = 101116,
+		file = "greet",
+		use_skin_id = 102001,
+		type = 1,
+		unlock_condition = 101715,
+		title = "嬉闹午后·登入问候1",
+		tag_id = 3
+	},
+	[101117] = {
+		id = 101117,
+		file = "greet",
+		use_skin_id = 108901,
+		type = 1,
+		unlock_condition = 101716,
+		title = "倦梦夜华·登入问候1",
+		tag_id = 3
+	},
+	[101118] = {
+		id = 101118,
+		file = "greet",
+		use_skin_id = 128402,
+		type = 1,
+		unlock_condition = 101719,
+		title = "纯白之誓·登入问候1",
+		tag_id = 3
+	},
+	[101119] = {
+		id = 101119,
+		file = "greet",
+		use_skin_id = 115002,
+		type = 1,
+		unlock_condition = 101720,
+		title = "诚挚心意·登入问候1",
+		tag_id = 3
+	},
+	[101120] = {
+		id = 101120,
+		file = "greet",
+		use_skin_id = 106102,
+		type = 1,
+		unlock_condition = 101721,
+		title = "烘焙甜蜜·登入问候1",
+		tag_id = 3
+	},
+	[101121] = {
+		id = 101121,
+		file = "greet",
+		use_skin_id = 113301,
+		type = 1,
+		unlock_condition = 101722,
+		title = "星灯下的梦·登入问候1",
+		tag_id = 3
+	},
+	[101122] = {
+		id = 101122,
+		file = "greet",
+		use_skin_id = 107002,
+		type = 1,
+		unlock_condition = 101723,
+		title = "知我意·登入问候1",
+		tag_id = 3
+	},
+	[101123] = {
+		id = 101123,
+		file = "greet",
+		use_skin_id = 103401,
+		type = 1,
+		unlock_condition = 101724,
+		title = "预设中的意外·登入问候1",
+		tag_id = 3
+	},
+	[101124] = {
+		id = 101124,
+		file = "greet",
+		use_skin_id = 102202,
+		type = 1,
+		unlock_condition = 101725,
+		title = "杯光摇曳时·登入问候1",
+		tag_id = 3
+	},
+	[101125] = {
+		id = 101125,
+		file = "greet",
+		use_skin_id = 101502,
+		type = 1,
+		unlock_condition = 101726,
+		title = "指名服务·登入问候1",
+		tag_id = 3
+	},
+	[101126] = {
+		id = 101126,
+		file = "greet",
+		use_skin_id = 107503,
+		type = 1,
+		unlock_condition = 101727,
+		title = "不思量·登入问候1",
+		tag_id = 3
+	},
+	[101127] = {
+		id = 101127,
 		file = "greet",
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始登录问候1",
+		title = "少女的思绪·登入问候1",
+		tag_id = 3
+	},
+	[101128] = {
+		id = 101128,
+		file = "greet",
+		use_skin_id = 107301,
+		type = 1,
+		unlock_condition = 101729,
+		title = "清平乐·登入问候1",
+		tag_id = 3
+	},
+	[101131] = {
+		id = 101131,
+		file = "greet",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·登入问候1",
 		tag_id = 3
 	},
 	[1012] = {
@@ -32,7 +284,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始登录问候2",
+		title = "少女的思绪·登入问候2",
 		tag_id = 3
 	},
 	[1013] = {
@@ -50,7 +302,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始登录问候3",
+		title = "少女的思绪·登入问候3",
 		tag_id = 3
 	},
 	[1014] = {
@@ -62,22 +314,13 @@
 		title = "登入问候2_2",
 		tag_id = 4
 	},
-	[101101] = {
-		id = 101101,
-		file = "greet_day",
-		use_skin_id = 109502,
-		type = 1,
-		unlock_condition = 101717,
-		title = "绘夜之诗登录问候1",
-		tag_id = 3
-	},
-	[101102] = {
-		id = 101102,
+	[101202] = {
+		id = 101202,
 		file = "greet_night",
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗登录问候2",
+		title = "思念的归处·登入问候2",
 		tag_id = 3
 	},
 	[1021] = {
@@ -95,7 +338,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始选择角色1",
+		title = "少女的思绪·选择角色1",
 		tag_id = 3
 	},
 	[1022] = {
@@ -113,7 +356,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始选择角色2",
+		title = "少女的思绪·选择角色2",
 		tag_id = 3
 	},
 	[1031] = {
@@ -140,7 +383,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始编入队伍",
+		title = "少女的思绪·编入队伍",
 		tag_id = 3
 	},
 	[1051] = {
@@ -158,7 +401,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始设为队长",
+		title = "少女的思绪·设为队长",
 		tag_id = 3
 	},
 	[1061] = {
@@ -176,7 +419,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始经验增长",
+		title = "少女的思绪·经验增长",
 		tag_id = 3
 	},
 	[1071] = {
@@ -194,7 +437,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始神识超越1",
+		title = "少女的思绪·神识超越1",
 		tag_id = 3
 	},
 	[1081] = {
@@ -212,7 +455,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始神识超越2",
+		title = "少女的思绪·神识超越2",
 		tag_id = 3
 	},
 	[1091] = {
@@ -230,7 +473,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始神识超越3",
+		title = "少女的思绪·神识超越3",
 		tag_id = 3
 	},
 	[1101] = {
@@ -248,7 +491,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始技能升级",
+		title = "少女的思绪·技能升级",
 		tag_id = 3
 	},
 	[1111] = {
@@ -266,7 +509,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始钥从装备",
+		title = "少女的思绪·钥从装备",
 		tag_id = 3
 	},
 	[1121] = {
@@ -284,7 +527,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始神格共鸣",
+		title = "少女的思绪·神格共鸣",
 		tag_id = 3
 	},
 	[1131] = {
@@ -302,7 +545,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始任命助理",
+		title = "少女的思绪·任命助理",
 		tag_id = 3
 	},
 	[1141] = {
@@ -320,7 +563,7 @@
 		use_skin_id = 107602,
 		type = 1,
 		unlock_condition = 101701,
-		title = "海上的私语交谈1",
+		title = "暮色珍珠·交谈1",
 		tag_id = 3
 	},
 	[114103] = {
@@ -329,7 +572,7 @@
 		use_skin_id = 109304,
 		type = 1,
 		unlock_condition = 101702,
-		title = "护理时间交谈1",
+		title = "特别看护·交谈1",
 		tag_id = 3
 	},
 	[114104] = {
@@ -338,7 +581,7 @@
 		use_skin_id = 107501,
 		type = 1,
 		unlock_condition = 101703,
-		title = "古墓来客交谈1",
+		title = "朱阁幽话·交谈1",
 		tag_id = 3
 	},
 	[114105] = {
@@ -347,7 +590,7 @@
 		use_skin_id = 106101,
 		type = 1,
 		unlock_condition = 101704,
-		title = "云雾敛交谈1",
+		title = "相见欢·交谈1",
 		tag_id = 3
 	},
 	[114106] = {
@@ -356,7 +599,7 @@
 		use_skin_id = 111102,
 		type = 1,
 		unlock_condition = 101705,
-		title = "瑞龙吟交谈1",
+		title = "青玉案·交谈1",
 		tag_id = 3
 	},
 	[114107] = {
@@ -365,7 +608,7 @@
 		use_skin_id = 109501,
 		type = 1,
 		unlock_condition = 101706,
-		title = "入暮之诗交谈1",
+		title = "花庭余响·交谈1",
 		tag_id = 3
 	},
 	[114108] = {
@@ -374,7 +617,7 @@
 		use_skin_id = 107502,
 		type = 1,
 		unlock_condition = 101707,
-		title = "霞语相思交谈1",
+		title = "轻舞幽梦·交谈1",
 		tag_id = 3
 	},
 	[114109] = {
@@ -383,7 +626,7 @@
 		use_skin_id = 107601,
 		type = 1,
 		unlock_condition = 101708,
-		title = "代班董事交谈1",
+		title = "休憩时间·交谈1",
 		tag_id = 3
 	},
 	[114110] = {
@@ -392,7 +635,7 @@
 		use_skin_id = 107402,
 		type = 1,
 		unlock_condition = 101709,
-		title = "效率至上交谈1",
+		title = "慌张时刻·交谈1",
 		tag_id = 3
 	},
 	[114111] = {
@@ -401,7 +644,7 @@
 		use_skin_id = 119701,
 		type = 1,
 		unlock_condition = 101710,
-		title = "梦游奇境交谈1",
+		title = "梦游奇境·交谈1",
 		tag_id = 3
 	},
 	[114112] = {
@@ -410,7 +653,7 @@
 		use_skin_id = 104902,
 		type = 1,
 		unlock_condition = 101711,
-		title = "浮光的初景交谈1",
+		title = "浮光的初景·交谈1",
 		tag_id = 3
 	},
 	[114113] = {
@@ -419,7 +662,7 @@
 		use_skin_id = 113907,
 		type = 1,
 		unlock_condition = 101712,
-		title = "温柔的回响换装交谈1",
+		title = "温柔的回响·交谈1",
 		tag_id = 3
 	},
 	[114114] = {
@@ -428,7 +671,7 @@
 		use_skin_id = 102201,
 		type = 1,
 		unlock_condition = 101713,
-		title = "于月色中换装交谈1",
+		title = "于月色中·交谈1",
 		tag_id = 3
 	},
 	[114115] = {
@@ -437,7 +680,7 @@
 		use_skin_id = 102101,
 		type = 1,
 		unlock_condition = 101714,
-		title = "少女的绮想换装交谈1",
+		title = "少女的绮想·交谈1",
 		tag_id = 3
 	},
 	[114116] = {
@@ -446,7 +689,7 @@
 		use_skin_id = 102001,
 		type = 1,
 		unlock_condition = 101715,
-		title = "轻纱梦华换装交谈1",
+		title = "嬉闹午后·交谈1",
 		tag_id = 3
 	},
 	[114117] = {
@@ -455,7 +698,7 @@
 		use_skin_id = 108901,
 		type = 1,
 		unlock_condition = 101716,
-		title = "倦梦夜华换装交谈1",
+		title = "倦梦夜华·交谈1",
 		tag_id = 3
 	},
 	[114118] = {
@@ -464,7 +707,7 @@
 		use_skin_id = 128402,
 		type = 1,
 		unlock_condition = 101719,
-		title = "纯白之誓换装交谈1",
+		title = "纯白之誓·交谈1",
 		tag_id = 3
 	},
 	[114119] = {
@@ -473,7 +716,7 @@
 		use_skin_id = 115002,
 		type = 1,
 		unlock_condition = 101720,
-		title = "诚挚心意换装交谈1",
+		title = "诚挚心意·交谈1",
 		tag_id = 3
 	},
 	[114120] = {
@@ -482,7 +725,7 @@
 		use_skin_id = 106102,
 		type = 1,
 		unlock_condition = 101721,
-		title = "烘焙甜蜜换装交谈1",
+		title = "烘焙甜蜜·交谈1",
 		tag_id = 3
 	},
 	[114121] = {
@@ -491,7 +734,7 @@
 		use_skin_id = 113301,
 		type = 1,
 		unlock_condition = 101722,
-		title = "星灯下的梦换装交谈1",
+		title = "星灯下的梦·交谈1",
 		tag_id = 3
 	},
 	[114122] = {
@@ -500,7 +743,7 @@
 		use_skin_id = 107002,
 		type = 1,
 		unlock_condition = 101723,
-		title = "知我意换装交谈1",
+		title = "知我意·交谈1",
 		tag_id = 3
 	},
 	[114123] = {
@@ -509,7 +752,7 @@
 		use_skin_id = 103401,
 		type = 1,
 		unlock_condition = 101724,
-		title = "预设中的意外换装交谈1",
+		title = "预设中的意外·交谈1",
 		tag_id = 3
 	},
 	[114124] = {
@@ -518,7 +761,7 @@
 		use_skin_id = 102202,
 		type = 1,
 		unlock_condition = 101725,
-		title = "杯光摇曳时换装交谈1",
+		title = "杯光摇曳时·交谈1",
 		tag_id = 3
 	},
 	[114125] = {
@@ -527,7 +770,7 @@
 		use_skin_id = 101502,
 		type = 1,
 		unlock_condition = 101726,
-		title = "指名服务换装交谈1",
+		title = "指名服务·交谈1",
 		tag_id = 3
 	},
 	[114126] = {
@@ -536,7 +779,7 @@
 		use_skin_id = 107503,
 		type = 1,
 		unlock_condition = 101727,
-		title = "不思量换装交谈1",
+		title = "不思量·交谈1",
 		tag_id = 3
 	},
 	[114127] = {
@@ -545,7 +788,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101728,
-		title = "梦的伊始换装交谈1",
+		title = "少女的思绪·交谈1",
 		tag_id = 3
 	},
 	[114128] = {
@@ -554,7 +797,16 @@
 		use_skin_id = 107301,
 		type = 1,
 		unlock_condition = 101729,
-		title = "清平乐换装交谈1",
+		title = "清平乐·交谈1",
+		tag_id = 3
+	},
+	[114131] = {
+		id = 114131,
+		file = "talk1",
+		use_skin_id = 121101,
+		type = 1,
+		unlock_condition = 101733,
+		title = "一枝春换装交谈1",
 		tag_id = 3
 	},
 	[1151] = {
@@ -572,7 +824,7 @@
 		use_skin_id = 107602,
 		type = 1,
 		unlock_condition = 101701,
-		title = "海上的私语交谈2",
+		title = "暮色珍珠·交谈2",
 		tag_id = 3
 	},
 	[115103] = {
@@ -581,7 +833,7 @@
 		use_skin_id = 109304,
 		type = 1,
 		unlock_condition = 101702,
-		title = "护理时间交谈2",
+		title = "特别看护·交谈2",
 		tag_id = 3
 	},
 	[115104] = {
@@ -590,7 +842,7 @@
 		use_skin_id = 107501,
 		type = 1,
 		unlock_condition = 101703,
-		title = "古墓来客交谈2",
+		title = "朱阁幽话·交谈2",
 		tag_id = 3
 	},
 	[115105] = {
@@ -599,7 +851,7 @@
 		use_skin_id = 106101,
 		type = 1,
 		unlock_condition = 101704,
-		title = "云雾敛交谈2",
+		title = "相见欢·交谈2",
 		tag_id = 3
 	},
 	[115106] = {
@@ -608,7 +860,7 @@
 		use_skin_id = 111102,
 		type = 1,
 		unlock_condition = 101705,
-		title = "瑞龙吟交谈2",
+		title = "青玉案·交谈2",
 		tag_id = 3
 	},
 	[115107] = {
@@ -617,7 +869,7 @@
 		use_skin_id = 109501,
 		type = 1,
 		unlock_condition = 101706,
-		title = "入暮之诗交谈2",
+		title = "花庭余响·交谈2",
 		tag_id = 3
 	},
 	[115108] = {
@@ -626,7 +878,7 @@
 		use_skin_id = 107502,
 		type = 1,
 		unlock_condition = 101707,
-		title = "霞语相思交谈2",
+		title = "轻舞幽梦·交谈2",
 		tag_id = 3
 	},
 	[115109] = {
@@ -635,7 +887,7 @@
 		use_skin_id = 107601,
 		type = 1,
 		unlock_condition = 101708,
-		title = "代班董事交谈2",
+		title = "休憩时间·交谈2",
 		tag_id = 3
 	},
 	[115110] = {
@@ -644,7 +896,7 @@
 		use_skin_id = 107402,
 		type = 1,
 		unlock_condition = 101709,
-		title = "效率至上交谈2",
+		title = "慌张时刻·交谈2",
 		tag_id = 3
 	},
 	[115111] = {
@@ -653,7 +905,7 @@
 		use_skin_id = 119701,
 		type = 1,
 		unlock_condition = 101710,
-		title = "梦游奇境换装交谈2",
+		title = "梦游奇境·交谈2",
 		tag_id = 3
 	},
 	[115112] = {
@@ -662,7 +914,7 @@
 		use_skin_id = 104902,
 		type = 1,
 		unlock_condition = 101711,
-		title = "浮光的初景交谈2",
+		title = "浮光的初景·交谈2",
 		tag_id = 3
 	},
 	[115113] = {
@@ -671,7 +923,7 @@
 		use_skin_id = 113907,
 		type = 1,
 		unlock_condition = 101712,
-		title = "温柔的回响换装交谈2",
+		title = "温柔的回响·交谈2",
 		tag_id = 3
 	},
 	[115114] = {
@@ -680,7 +932,7 @@
 		use_skin_id = 102201,
 		type = 1,
 		unlock_condition = 101713,
-		title = "于月色中换装交谈2",
+		title = "于月色中·交谈2",
 		tag_id = 3
 	},
 	[115115] = {
@@ -689,7 +941,7 @@
 		use_skin_id = 102101,
 		type = 1,
 		unlock_condition = 101714,
-		title = "少女的绮想换装交谈2",
+		title = "少女的绮想·交谈2",
 		tag_id = 3
 	},
 	[115116] = {
@@ -698,7 +950,7 @@
 		use_skin_id = 102001,
 		type = 1,
 		unlock_condition = 101715,
-		title = "轻纱梦华换装交谈2",
+		title = "嬉闹午后·交谈2",
 		tag_id = 3
 	},
 	[115117] = {
@@ -707,7 +959,7 @@
 		use_skin_id = 108901,
 		type = 1,
 		unlock_condition = 101716,
-		title = "倦梦夜华换装交谈2",
+		title = "倦梦夜华·交谈2",
 		tag_id = 3
 	},
 	[115118] = {
@@ -716,7 +968,7 @@
 		use_skin_id = 128402,
 		type = 1,
 		unlock_condition = 101719,
-		title = "纯白之誓换装交谈2",
+		title = "纯白之誓·交谈2",
 		tag_id = 3
 	},
 	[115119] = {
@@ -725,7 +977,7 @@
 		use_skin_id = 115002,
 		type = 1,
 		unlock_condition = 101720,
-		title = "诚挚心意换装交谈2",
+		title = "诚挚心意·交谈2",
 		tag_id = 3
 	},
 	[115120] = {
@@ -734,7 +986,7 @@
 		use_skin_id = 106102,
 		type = 1,
 		unlock_condition = 101721,
-		title = "烘焙甜蜜换装交谈2",
+		title = "烘焙甜蜜·交谈2",
 		tag_id = 3
 	},
 	[115121] = {
@@ -743,7 +995,7 @@
 		use_skin_id = 113301,
 		type = 1,
 		unlock_condition = 101722,
-		title = "星灯下的梦换装交谈2",
+		title = "星灯下的梦·交谈2",
 		tag_id = 3
 	},
 	[115122] = {
@@ -752,7 +1004,7 @@
 		use_skin_id = 107002,
 		type = 1,
 		unlock_condition = 101723,
-		title = "知我意换装交谈2",
+		title = "知我意·交谈2",
 		tag_id = 3
 	},
 	[115123] = {
@@ -761,7 +1013,7 @@
 		use_skin_id = 103401,
 		type = 1,
 		unlock_condition = 101724,
-		title = "预设中的意外换装交谈2",
+		title = "预设中的意外·交谈2",
 		tag_id = 3
 	},
 	[115124] = {
@@ -770,7 +1022,7 @@
 		use_skin_id = 102202,
 		type = 1,
 		unlock_condition = 101725,
-		title = "杯光摇曳时换装交谈2",
+		title = "杯光摇曳时·交谈2",
 		tag_id = 3
 	},
 	[115125] = {
@@ -779,7 +1031,7 @@
 		use_skin_id = 101502,
 		type = 1,
 		unlock_condition = 101726,
-		title = "指名服务换装交谈2",
+		title = "指名服务·交谈2",
 		tag_id = 3
 	},
 	[115126] = {
@@ -788,7 +1040,7 @@
 		use_skin_id = 107503,
 		type = 1,
 		unlock_condition = 101727,
-		title = "不思量换装交谈2",
+		title = "不思量·交谈2",
 		tag_id = 3
 	},
 	[115127] = {
@@ -797,7 +1049,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101728,
-		title = "梦的伊始换装交谈2",
+		title = "少女的思绪·交谈2",
 		tag_id = 3
 	},
 	[115128] = {
@@ -806,7 +1058,16 @@
 		use_skin_id = 107301,
 		type = 1,
 		unlock_condition = 101729,
-		title = "清平乐换装交谈2",
+		title = "清平乐·交谈2",
+		tag_id = 3
+	},
+	[115131] = {
+		id = 115131,
+		file = "talk2",
+		use_skin_id = 121101,
+		type = 1,
+		unlock_condition = 101733,
+		title = "一枝春换装交谈2",
 		tag_id = 3
 	},
 	[1161] = {
@@ -824,7 +1085,7 @@
 		use_skin_id = 107602,
 		type = 1,
 		unlock_condition = 101701,
-		title = "海上的私语交谈3",
+		title = "暮色珍珠·交谈3",
 		tag_id = 3
 	},
 	[116102] = {
@@ -833,7 +1094,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始换装交谈3",
+		title = "少女的思绪·交谈3",
 		tag_id = 3
 	},
 	[1162] = {
@@ -851,7 +1112,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始换装交谈4",
+		title = "少女的思绪·交谈4",
 		tag_id = 3
 	},
 	[1163] = {
@@ -869,7 +1130,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始换装交谈5",
+		title = "少女的思绪·交谈5",
 		tag_id = 3
 	},
 	[1164] = {
@@ -905,7 +1166,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始换装交谈6",
+		title = "少女的思绪·交谈6",
 		tag_id = 3
 	},
 	[1167] = {
@@ -923,7 +1184,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始换装交谈7",
+		title = "少女的思绪·交谈7",
 		tag_id = 3
 	},
 	[1171] = {
@@ -941,7 +1202,7 @@
 		use_skin_id = 107602,
 		type = 1,
 		unlock_condition = 101701,
-		title = "海上的私语闲置",
+		title = "暮色珍珠·闲置",
 		tag_id = 3
 	},
 	[117103] = {
@@ -950,7 +1211,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗闲置1",
+		title = "思念的归处·闲置1",
 		tag_id = 3
 	},
 	[117104] = {
@@ -959,7 +1220,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗闲置2",
+		title = "思念的归处·闲置2",
 		tag_id = 3
 	},
 	[117105] = {
@@ -968,7 +1229,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗闲置3",
+		title = "思念的归处·闲置3",
 		tag_id = 3
 	},
 	[117106] = {
@@ -977,7 +1238,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗闲置4",
+		title = "思念的归处·闲置4",
 		tag_id = 3
 	},
 	[117107] = {
@@ -986,7 +1247,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗闲置5",
+		title = "思念的归处·闲置5",
 		tag_id = 3
 	},
 	[117108] = {
@@ -995,7 +1256,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗闲置6",
+		title = "思念的归处·闲置6",
 		tag_id = 3
 	},
 	[117109] = {
@@ -1004,7 +1265,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗闲置7",
+		title = "思念的归处·闲置7",
 		tag_id = 3
 	},
 	[117110] = {
@@ -1013,7 +1274,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗闲置8",
+		title = "思念的归处·闲置8",
 		tag_id = 3
 	},
 	[117111] = {
@@ -1022,7 +1283,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗闲置9",
+		title = "思念的归处·闲置9",
 		tag_id = 3
 	},
 	[117112] = {
@@ -1031,7 +1292,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗闲置10",
+		title = "思念的归处·闲置10",
 		tag_id = 3
 	},
 	[117113] = {
@@ -1040,7 +1301,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗闲置11",
+		title = "思念的归处·闲置11",
 		tag_id = 3
 	},
 	[117114] = {
@@ -1049,7 +1310,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗闲置12",
+		title = "思念的归处·闲置12",
 		tag_id = 3
 	},
 	[117115] = {
@@ -1058,7 +1319,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗闲置13",
+		title = "思念的归处·闲置13",
 		tag_id = 3
 	},
 	[117116] = {
@@ -1067,7 +1328,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗闲置14",
+		title = "思念的归处·闲置14",
 		tag_id = 3
 	},
 	[117117] = {
@@ -1076,7 +1337,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗闲置15",
+		title = "思念的归处·闲置15",
 		tag_id = 3
 	},
 	[117118] = {
@@ -1085,7 +1346,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗闲置16",
+		title = "思念的归处·闲置16",
 		tag_id = 3
 	},
 	[117119] = {
@@ -1094,7 +1355,34 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始闲置1",
+		title = "少女的思绪·闲置1",
+		tag_id = 3
+	},
+	[117120] = {
+		id = 117120,
+		file = "chair_idle_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·闲置1",
+		tag_id = 3
+	},
+	[117121] = {
+		id = 117121,
+		file = "sofa_idle_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·闲置2",
+		tag_id = 3
+	},
+	[117122] = {
+		id = 117122,
+		file = "tv_idle_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·闲置3",
 		tag_id = 3
 	},
 	[1172] = {
@@ -1112,7 +1400,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始闲置2",
+		title = "少女的思绪·闲置2",
 		tag_id = 3
 	},
 	[1173] = {
@@ -1130,7 +1418,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始闲置3",
+		title = "少女的思绪·闲置3",
 		tag_id = 3
 	},
 	[1174] = {
@@ -1157,7 +1445,7 @@
 		use_skin_id = 107602,
 		type = 1,
 		unlock_condition = 101701,
-		title = "海上的私语连点",
+		title = "暮色珍珠·连点",
 		tag_id = 3
 	},
 	[118103] = {
@@ -1166,7 +1454,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始连点",
+		title = "少女的思绪·连点",
 		tag_id = 3
 	},
 	[1191] = {
@@ -1184,7 +1472,7 @@
 		use_skin_id = 107602,
 		type = 1,
 		unlock_condition = 101701,
-		title = "海上的私语晃动",
+		title = "暮色珍珠·晃动",
 		tag_id = 3
 	},
 	[119103] = {
@@ -1193,7 +1481,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始晃动",
+		title = "少女的思绪·晃动",
 		tag_id = 3
 	},
 	[1201] = {
@@ -1211,7 +1499,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始赠送礼物",
+		title = "少女的思绪·赠送礼物",
 		tag_id = 3
 	},
 	[1211] = {
@@ -1229,7 +1517,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始心链对话1",
+		title = "少女的思绪·心链对话1",
 		tag_id = 3
 	},
 	[1221] = {
@@ -1247,7 +1535,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始心链对话2",
+		title = "少女的思绪·心链对话2",
 		tag_id = 3
 	},
 	[1231] = {
@@ -1265,7 +1553,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始心链对话3",
+		title = "少女的思绪·心链对话3",
 		tag_id = 3
 	},
 	[1241] = {
@@ -1283,7 +1571,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始心链对话4",
+		title = "少女的思绪·心链对话4",
 		tag_id = 3
 	},
 	[1251] = {
@@ -1301,7 +1589,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始心链对话5",
+		title = "少女的思绪·心链对话5",
 		tag_id = 3
 	},
 	[1261] = {
@@ -1319,7 +1607,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗触摸交谈1",
+		title = "思念的归处·触摸交谈1",
 		tag_id = 3
 	},
 	[126103] = {
@@ -1328,7 +1616,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗触摸交谈2",
+		title = "思念的归处·触摸交谈2",
 		tag_id = 3
 	},
 	[126104] = {
@@ -1337,7 +1625,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗触摸交谈3",
+		title = "思念的归处·触摸交谈3",
 		tag_id = 3
 	},
 	[126105] = {
@@ -1346,7 +1634,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗触摸交谈4",
+		title = "思念的归处·触摸交谈4",
 		tag_id = 3
 	},
 	[126106] = {
@@ -1355,7 +1643,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗触摸交谈5",
+		title = "思念的归处·触摸交谈5",
 		tag_id = 3
 	},
 	[126107] = {
@@ -1364,7 +1652,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗触摸交谈6",
+		title = "思念的归处·触摸交谈6",
 		tag_id = 3
 	},
 	[126108] = {
@@ -1373,7 +1661,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗触摸交谈7",
+		title = "思念的归处·触摸交谈7",
 		tag_id = 3
 	},
 	[126109] = {
@@ -1382,7 +1670,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗触摸交谈8",
+		title = "思念的归处·触摸交谈8",
 		tag_id = 3
 	},
 	[126110] = {
@@ -1391,7 +1679,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗触摸交谈9",
+		title = "思念的归处·触摸交谈9",
 		tag_id = 3
 	},
 	[126111] = {
@@ -1400,7 +1688,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗触摸交谈10",
+		title = "思念的归处·触摸交谈10",
 		tag_id = 3
 	},
 	[126112] = {
@@ -1409,7 +1697,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗触摸交谈11",
+		title = "思念的归处·触摸交谈11",
 		tag_id = 3
 	},
 	[126113] = {
@@ -1418,7 +1706,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗触摸交谈12",
+		title = "思念的归处·触摸交谈12",
 		tag_id = 3
 	},
 	[126114] = {
@@ -1427,7 +1715,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗触摸交谈13",
+		title = "思念的归处·触摸交谈13",
 		tag_id = 3
 	},
 	[126115] = {
@@ -1436,7 +1724,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗触摸交谈14",
+		title = "思念的归处·触摸交谈14",
 		tag_id = 3
 	},
 	[126116] = {
@@ -1445,7 +1733,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗触摸交谈15",
+		title = "思念的归处·触摸交谈15",
 		tag_id = 3
 	},
 	[126117] = {
@@ -1454,7 +1742,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗触摸交谈16",
+		title = "思念的归处·触摸交谈16",
 		tag_id = 3
 	},
 	[126118] = {
@@ -1463,7 +1751,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗触摸交谈17",
+		title = "思念的归处·触摸交谈17",
 		tag_id = 3
 	},
 	[126119] = {
@@ -1472,7 +1760,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101717,
-		title = "绘夜之诗触摸交谈18",
+		title = "思念的归处·触摸交谈18",
 		tag_id = 3
 	},
 	[126120] = {
@@ -1481,7 +1769,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗触摸交谈19",
+		title = "思念的归处·触摸交谈19",
 		tag_id = 3
 	},
 	[126121] = {
@@ -1490,7 +1778,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗触摸交谈20",
+		title = "思念的归处·触摸交谈20",
 		tag_id = 3
 	},
 	[126122] = {
@@ -1499,7 +1787,7 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗触摸交谈21",
+		title = "思念的归处·触摸交谈21",
 		tag_id = 3
 	},
 	[126123] = {
@@ -1508,7 +1796,61 @@
 		use_skin_id = 109502,
 		type = 1,
 		unlock_condition = 101718,
-		title = "绘夜之诗触摸交谈22",
+		title = "思念的归处·触摸交谈22",
+		tag_id = 3
+	},
+	[126124] = {
+		id = 126124,
+		file = "chair_touch_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·触摸交谈1",
+		tag_id = 3
+	},
+	[126125] = {
+		id = 126125,
+		file = "chair_touch_102",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·触摸交谈2",
+		tag_id = 3
+	},
+	[126126] = {
+		id = 126126,
+		file = "sofa_touch_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·触摸交谈3",
+		tag_id = 3
+	},
+	[126127] = {
+		id = 126127,
+		file = "sofa_touch_102",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·触摸交谈4",
+		tag_id = 3
+	},
+	[126128] = {
+		id = 126128,
+		file = "tv_touch_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·触摸交谈5",
+		tag_id = 3
+	},
+	[126129] = {
+		id = 126129,
+		file = "tv_touch_102",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·触摸交谈6",
 		tag_id = 3
 	},
 	[1301] = {
@@ -1526,7 +1868,7 @@
 		use_skin_id = 108501,
 		type = 1,
 		unlock_condition = 101802,
-		title = "梦的伊始更换服装",
+		title = "少女的思绪·更换服装",
 		tag_id = 3
 	},
 	[1401] = {
@@ -1581,6 +1923,294 @@
 		type = 1,
 		unlock_condition = 101718,
 		title = "前往右侧",
+		tag_id = 3
+	},
+	[140301] = {
+		id = 140301,
+		file = "chair_game_enter_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈1",
+		tag_id = 3
+	},
+	[140307] = {
+		id = 140307,
+		file = "chair_game_draw_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈2",
+		tag_id = 3
+	},
+	[140308] = {
+		id = 140308,
+		file = "chair_game_draw_102",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈3",
+		tag_id = 3
+	},
+	[140309] = {
+		id = 140309,
+		file = "chair_game_draw_103",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈4",
+		tag_id = 3
+	},
+	[140310] = {
+		id = 140310,
+		file = "chair_game_draw_104",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈5",
+		tag_id = 3
+	},
+	[140311] = {
+		id = 140311,
+		file = "chair_game_lose_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈6",
+		tag_id = 3
+	},
+	[140312] = {
+		id = 140312,
+		file = "chair_game_lose_102",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈7",
+		tag_id = 3
+	},
+	[140313] = {
+		id = 140313,
+		file = "chair_game_henshin_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈8",
+		tag_id = 3
+	},
+	[140314] = {
+		id = 140314,
+		file = "chair_game_win_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈9",
+		tag_id = 3
+	},
+	[140315] = {
+		id = 140315,
+		file = "chair_game_win_102",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈10",
+		tag_id = 3
+	},
+	[140316] = {
+		id = 140316,
+		file = "chair_game_end_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈11",
+		tag_id = 3
+	},
+	[140317] = {
+		id = 140317,
+		file = "chair_game_end_102",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈12",
+		tag_id = 3
+	},
+	[140318] = {
+		id = 140318,
+		file = "sofa_game_return_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈13",
+		tag_id = 3
+	},
+	[140320] = {
+		id = 140320,
+		file = "sofa_game_touch_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈14",
+		tag_id = 3
+	},
+	[140321] = {
+		id = 140321,
+		file = "sofa_game_touch_102",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈15",
+		tag_id = 3
+	},
+	[140322] = {
+		id = 140322,
+		file = "sofa_game_touch_103",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈16",
+		tag_id = 3
+	},
+	[140323] = {
+		id = 140323,
+		file = "sofa_game_touch_104",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈17",
+		tag_id = 3
+	},
+	[140324] = {
+		id = 140324,
+		file = "sofa_game_touch_105",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈18",
+		tag_id = 3
+	},
+	[140325] = {
+		id = 140325,
+		file = "sofa_game_touch_106",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈19",
+		tag_id = 3
+	},
+	[140326] = {
+		id = 140326,
+		file = "sofa_game_touch_107",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈20",
+		tag_id = 3
+	},
+	[140327] = {
+		id = 140327,
+		file = "sofa_game_touch_108",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈21",
+		tag_id = 3
+	},
+	[140328] = {
+		id = 140328,
+		file = "sofa_game_touch_109",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈22",
+		tag_id = 3
+	},
+	[140331] = {
+		id = 140331,
+		file = "tv_game_enter_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈23",
+		tag_id = 3
+	},
+	[140332] = {
+		id = 140332,
+		file = "tv_game_win_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈24",
+		tag_id = 3
+	},
+	[140333] = {
+		id = 140333,
+		file = "tv_game_lose_101",
+		use_skin_id = 102003,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈25",
+		tag_id = 3
+	},
+	[140334] = {
+		id = 140334,
+		file = "chair_game_draw_201",
+		use_skin_id = 605603,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈1",
+		tag_id = 3
+	},
+	[140335] = {
+		id = 140335,
+		file = "chair_game_draw_202",
+		use_skin_id = 605603,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈2",
+		tag_id = 3
+	},
+	[140336] = {
+		id = 140336,
+		file = "chair_game_lose_201",
+		use_skin_id = 605603,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈3",
+		tag_id = 3
+	},
+	[140337] = {
+		id = 140337,
+		file = "chair_game_lose_201_loopover",
+		use_skin_id = 605603,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈4",
+		tag_id = 3
+	},
+	[140338] = {
+		id = 140338,
+		file = "chair_game_win_201",
+		use_skin_id = 605603,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈5",
+		tag_id = 3
+	},
+	[140339] = {
+		id = 140339,
+		file = "chair_game_win_202",
+		use_skin_id = 605603,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈6",
+		tag_id = 3
+	},
+	[140340] = {
+		id = 140340,
+		file = "chair_game_end_201",
+		use_skin_id = 605603,
+		type = 1,
+		unlock_condition = 101732,
+		title = "喧笑的时光·互动游戏交谈7",
 		tag_id = 3
 	},
 	[2011] = {
@@ -1916,7 +2546,67 @@
 		title = "对其他人的看法·执明",
 		tag_id = 7
 	},
+	[226105] = {
+		id = 226105,
+		file = "evaluate_1084",
+		use_skin_id = 0,
+		type = 1,
+		unlock_condition = 0,
+		title = "对其他人的看法·薇儿丹蒂",
+		tag_id = 7
+	},
+	[226106] = {
+		id = 226106,
+		file = "evaluate_1111",
+		use_skin_id = 0,
+		type = 1,
+		unlock_condition = 0,
+		title = "对其他人的看法·冥王",
+		tag_id = 7
+	},
+	[226107] = {
+		id = 226107,
+		file = "evaluate_1019",
+		use_skin_id = 0,
+		type = 1,
+		unlock_condition = 0,
+		title = "对其他人的看法·休",
+		tag_id = 7
+	},
+	[226108] = {
+		id = 226108,
+		file = "evaluate_1056",
+		use_skin_id = 0,
+		type = 1,
+		unlock_condition = 0,
+		title = "对其他人的看法·伽梨",
+		tag_id = 7
+	},
+	[226109] = {
+		id = 226109,
+		file = "evaluate_1089",
+		use_skin_id = 0,
+		type = 1,
+		unlock_condition = 0,
+		title = "对其他人的看法·帕尔瓦蒂",
+		tag_id = 7
+	},
 	get_id_list_by_file = {
+		evaluate_1089 = {
+			226109
+		},
+		evaluate_1056 = {
+			226108
+		},
+		evaluate_1019 = {
+			226107
+		},
+		evaluate_1111 = {
+			226106
+		},
+		evaluate_1084 = {
+			226105
+		},
 		evaluate_1061 = {
 			226104
 		},
@@ -2028,6 +2718,102 @@
 		appear = {
 			2011
 		},
+		chair_game_end_201 = {
+			140340
+		},
+		chair_game_win_202 = {
+			140339
+		},
+		chair_game_win_201 = {
+			140338
+		},
+		chair_game_lose_201_loopover = {
+			140337
+		},
+		chair_game_lose_201 = {
+			140336
+		},
+		chair_game_draw_202 = {
+			140335
+		},
+		chair_game_draw_201 = {
+			140334
+		},
+		tv_game_lose_101 = {
+			140333
+		},
+		tv_game_win_101 = {
+			140332
+		},
+		tv_game_enter_101 = {
+			140331
+		},
+		sofa_game_touch_109 = {
+			140328
+		},
+		sofa_game_touch_108 = {
+			140327
+		},
+		sofa_game_touch_107 = {
+			140326
+		},
+		sofa_game_touch_106 = {
+			140325
+		},
+		sofa_game_touch_105 = {
+			140324
+		},
+		sofa_game_touch_104 = {
+			140323
+		},
+		sofa_game_touch_103 = {
+			140322
+		},
+		sofa_game_touch_102 = {
+			140321
+		},
+		sofa_game_touch_101 = {
+			140320
+		},
+		sofa_game_return_101 = {
+			140318
+		},
+		chair_game_end_102 = {
+			140317
+		},
+		chair_game_end_101 = {
+			140316
+		},
+		chair_game_win_102 = {
+			140315
+		},
+		chair_game_win_101 = {
+			140314
+		},
+		chair_game_henshin_101 = {
+			140313
+		},
+		chair_game_lose_102 = {
+			140312
+		},
+		chair_game_lose_101 = {
+			140311
+		},
+		chair_game_draw_104 = {
+			140310
+		},
+		chair_game_draw_103 = {
+			140309
+		},
+		chair_game_draw_102 = {
+			140308
+		},
+		chair_game_draw_101 = {
+			140307
+		},
+		chair_game_enter_101 = {
+			140301
+		},
 		enter4 = {
 			140202
 		},
@@ -2045,6 +2831,24 @@
 		cloth = {
 			1301,
 			130101
+		},
+		tv_touch_102 = {
+			126129
+		},
+		tv_touch_101 = {
+			126128
+		},
+		sofa_touch_102 = {
+			126127
+		},
+		sofa_touch_101 = {
+			126126
+		},
+		chair_touch_102 = {
+			126125
+		},
+		chair_touch_101 = {
+			126124
 		},
 		touch_window02_2_night = {
 			126123
@@ -2160,6 +2964,15 @@
 			1172,
 			117201
 		},
+		tv_idle_101 = {
+			117122
+		},
+		sofa_idle_101 = {
+			117121
+		},
+		chair_idle_101 = {
+			117120
+		},
 		idle_window_night = {
 			117118
 		},
@@ -2266,6 +3079,7 @@
 			115125,
 			115126,
 			115128,
+			115131,
 			116202
 		},
 		talk6 = {
@@ -2300,6 +3114,7 @@
 			114125,
 			114126,
 			114128,
+			114131,
 			116102
 		},
 		assistant = {
@@ -2354,10 +3169,7 @@
 			102101
 		},
 		greet_night = {
-			101102
-		},
-		greet_day = {
-			101101
+			101202
 		},
 		greet202 = {
 			1014
@@ -2370,9 +3182,39 @@
 			1012,
 			101201
 		},
+		greet_day = {
+			101101
+		},
 		greet = {
 			1011,
-			101103
+			101102,
+			101103,
+			101104,
+			101105,
+			101106,
+			101107,
+			101108,
+			101109,
+			101110,
+			101111,
+			101112,
+			101113,
+			101114,
+			101115,
+			101116,
+			101117,
+			101118,
+			101119,
+			101120,
+			101121,
+			101122,
+			101123,
+			101124,
+			101125,
+			101126,
+			101127,
+			101128,
+			101131
 		}
 	},
 	get_id_list_by_tag_id = {
@@ -2381,7 +3223,12 @@
 			226101,
 			226102,
 			226103,
-			226104
+			226104,
+			226105,
+			226106,
+			226107,
+			226108,
+			226109
 		},
 		[6] = {
 			2011,
@@ -2444,11 +3291,38 @@
 			1167
 		},
 		[3] = {
-			101103,
-			101201,
-			101301,
 			101101,
 			101102,
+			101103,
+			101104,
+			101105,
+			101106,
+			101107,
+			101108,
+			101109,
+			101110,
+			101111,
+			101112,
+			101113,
+			101114,
+			101115,
+			101116,
+			101117,
+			101118,
+			101119,
+			101120,
+			101121,
+			101122,
+			101123,
+			101124,
+			101125,
+			101126,
+			101127,
+			101128,
+			101131,
+			101201,
+			101301,
+			101202,
 			102101,
 			102201,
 			104101,
@@ -2488,6 +3362,7 @@
 			114126,
 			114127,
 			114128,
+			114131,
 			115102,
 			115103,
 			115104,
@@ -2515,6 +3390,7 @@
 			115126,
 			115127,
 			115128,
+			115131,
 			116101,
 			116102,
 			116202,
@@ -2539,6 +3415,9 @@
 			117117,
 			117118,
 			117119,
+			117120,
+			117121,
+			117122,
 			117201,
 			117301,
 			118102,
@@ -2574,6 +3453,12 @@
 			126121,
 			126122,
 			126123,
+			126124,
+			126125,
+			126126,
+			126127,
+			126128,
+			126129,
 			1301,
 			130101,
 			1401,
@@ -2581,7 +3466,39 @@
 			140101,
 			140201,
 			140102,
-			140202
+			140202,
+			140301,
+			140307,
+			140308,
+			140309,
+			140310,
+			140311,
+			140312,
+			140313,
+			140314,
+			140315,
+			140316,
+			140317,
+			140318,
+			140320,
+			140321,
+			140322,
+			140323,
+			140324,
+			140325,
+			140326,
+			140327,
+			140328,
+			140331,
+			140332,
+			140333,
+			140334,
+			140335,
+			140336,
+			140337,
+			140338,
+			140339,
+			140340
 		},
 		[4] = {
 			1011,
@@ -2606,14 +3523,41 @@
 	},
 	all = {
 		1011,
+		101101,
+		101102,
 		101103,
+		101104,
+		101105,
+		101106,
+		101107,
+		101108,
+		101109,
+		101110,
+		101111,
+		101112,
+		101113,
+		101114,
+		101115,
+		101116,
+		101117,
+		101118,
+		101119,
+		101120,
+		101121,
+		101122,
+		101123,
+		101124,
+		101125,
+		101126,
+		101127,
+		101128,
+		101131,
 		1012,
 		101201,
 		1013,
 		101301,
 		1014,
-		101101,
-		101102,
+		101202,
 		1021,
 		102101,
 		1022,
@@ -2667,6 +3611,7 @@
 		114126,
 		114127,
 		114128,
+		114131,
 		1151,
 		115102,
 		115103,
@@ -2695,6 +3640,7 @@
 		115126,
 		115127,
 		115128,
+		115131,
 		1161,
 		116101,
 		116102,
@@ -2727,6 +3673,9 @@
 		117117,
 		117118,
 		117119,
+		117120,
+		117121,
+		117122,
 		1172,
 		117201,
 		1173,
@@ -2773,6 +3722,12 @@
 		126121,
 		126122,
 		126123,
+		126124,
+		126125,
+		126126,
+		126127,
+		126128,
+		126129,
 		1301,
 		130101,
 		1401,
@@ -2781,6 +3736,38 @@
 		140201,
 		140102,
 		140202,
+		140301,
+		140307,
+		140308,
+		140309,
+		140310,
+		140311,
+		140312,
+		140313,
+		140314,
+		140315,
+		140316,
+		140317,
+		140318,
+		140320,
+		140321,
+		140322,
+		140323,
+		140324,
+		140325,
+		140326,
+		140327,
+		140328,
+		140331,
+		140332,
+		140333,
+		140334,
+		140335,
+		140336,
+		140337,
+		140338,
+		140339,
+		140340,
 		2011,
 		2012,
 		2021,
@@ -2817,6 +3804,11 @@
 		226101,
 		226102,
 		226103,
-		226104
+		226104,
+		226105,
+		226106,
+		226107,
+		226108,
+		226109
 	}
 }

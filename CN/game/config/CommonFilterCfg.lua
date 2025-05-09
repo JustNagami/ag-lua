@@ -281,6 +281,42 @@
 		atlasName = "Atlas/Hero_arrtAtlas",
 		spriteName = "icon_white_random"
 	},
+	{
+		id = 48,
+		name = "血斗",
+		atlasName = "",
+		spriteName = ""
+	},
+	{
+		id = 49,
+		name = "壁垒",
+		atlasName = "",
+		spriteName = ""
+	},
+	{
+		id = 50,
+		name = "凝冰",
+		atlasName = "",
+		spriteName = ""
+	},
+	{
+		id = 51,
+		name = "奥义增幅",
+		atlasName = "",
+		spriteName = ""
+	},
+	{
+		id = 52,
+		name = "零时空间",
+		atlasName = "",
+		spriteName = ""
+	},
+	{
+		id = 53,
+		name = "持续伤害",
+		atlasName = "",
+		spriteName = ""
+	},
 	all = {
 		1,
 		2,
@@ -328,6 +364,12 @@
 		44,
 		45,
 		46,
-		47
+		47,
+		48,
+		49,
+		50,
+		51,
+		52,
+		53
 	}
 }

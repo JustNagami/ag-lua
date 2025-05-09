@@ -248,6 +248,9 @@
 	["game.dorm.interacts.1019.1119_kafeizhuo"] = {
 		require("game.dorm.interacts.1019.1119_kafeizhuo")
 	},
+	["game.dorm.interacts.1020.HZ05_zhuanshu_fantian"] = {
+		require("game.dorm.interacts.1020.HZ05_zhuanshu_fantian1")
+	},
 	["game.dorm.interacts.1024.1024_weight_lifting"] = {
 		require("game.dorm.interacts.1024.1024_weight_lifting")
 	},
@@ -284,6 +287,9 @@
 	},
 	["game.dorm.interacts.1049.1049_jingzi"] = {
 		require("game.dorm.interacts.1049.1049_jingzi")
+	},
+	["game.dorm.interacts.1049.fx_9049_yixienamei"] = {
+		require("game.dorm.interacts.1049.fx_9049_yixienamei1")
 	},
 	["game.dorm.interacts.1050.1050_read"] = {
 		require("game.dorm.interacts.1050.1050_read")

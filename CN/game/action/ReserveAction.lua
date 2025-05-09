@@ -59,7 +59,8 @@ function var_0_0.SaveReserveProposal(arg_7_0, arg_7_1, arg_7_2)
 	local var_7_2 = var_7_1:ConverAllTeamToSendData()
 	local var_7_3 = {
 		cont_id = arg_7_0,
-		name = var_7_1:GetName()
+		name = var_7_1:GetName(),
+		tags = var_7_1:GetAttributeTagList()
 	}
 	local var_7_4 = {
 		team_type = var_7_0,
@@ -86,14 +87,17 @@ function var_0_0.SaveReserveProposal(arg_7_0, arg_7_1, arg_7_2)
 	end)
 end
 
-function var_0_0.RenameReserveProposal(arg_9_0, arg_9_1, arg_9_2)
+function var_0_0.RenameReserveProposal(arg_9_0, arg_9_1, arg_9_2, arg_9_3)
 	local var_9_0 = ReserveConst.RESERVE_TYPE.PROPOSAL
 	local var_9_1 = ReserveTools.GetReserveTemplateByReserveType(var_9_0):GetContDataTemplateById(arg_9_0)
 	local var_9_2 = var_9_1:GetName()
+	local var_9_3 = var_9_1:GetAttributeTagList()
 
 	var_9_1:SetName(arg_9_1)
-	var_0_0.SaveReserveProposal(arg_9_0, arg_9_2, function()
+	var_9_1:SetAttributeTagList(arg_9_2)
+	var_0_0.SaveReserveProposal(arg_9_0, arg_9_3, function()
 		var_9_1:SetName(var_9_2)
+		var_9_1:SetAttributeTagList(var_9_3)
 	end)
 end
 

@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("TetrisGameMainView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "Widget/BackHouseUI/TetrisGame/TetrisGameMainUI"
+	return "Widget/Version/Alone_TetrisGameUI/TetrisGameMainUI"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -21,12 +21,14 @@ function var_0_0.InitUI(arg_5_0)
 	arg_5_0:BindCfgUI()
 
 	arg_5_0.lockController = arg_5_0.chapterController:GetController("lock")
+	arg_5_0.endlessLockController = arg_5_0.endlessController_:GetController("lock")
 end
 
 function var_0_0.OnEnter(arg_6_0)
 	arg_6_0.activityID = TetrisGameData:GetCurActivityID()
 
 	manager.redPoint:bindUIandKey(arg_6_0.taskBtn_.transform, string.format("%s_%s", RedPointConst.ACTIVITY_TASK, TetrisGameData:GetCurTaskActivityID()))
+	manager.redPoint:bindUIandKey(arg_6_0.specialBtn_.transform, string.format("%s_%s", RedPointConst.ACTIVITY_TETIRS_GAME_CHAPTER, TetrisGameTools:GetEndLessStageIDByActivityID(TetrisGameData:GetCurActivityID())))
 	arg_6_0:RefreshBar()
 end
 
@@ -55,6 +57,7 @@ end
 function var_0_0.OnExit(arg_10_0)
 	manager.windowBar:HideBar()
 	manager.redPoint:unbindUIandKey(arg_10_0.taskBtn_.transform, string.format("%s_%s", RedPointConst.ACTIVITY_TASK, TetrisGameData:GetCurTaskActivityID()))
+	manager.redPoint:unbindUIandKey(arg_10_0.specialBtn_.transform, string.format("%s_%s", RedPointConst.ACTIVITY_TETIRS_GAME_CHAPTER, TetrisGameTools:GetEndLessStageIDByActivityID(TetrisGameData:GetCurActivityID())))
 	arg_10_0:RemoveAllEventListener()
 end
 
@@ -62,7 +65,7 @@ function var_0_0.AddUIListener(arg_11_0)
 	arg_11_0:AddBtnListener(arg_11_0.rankBtn_, nil, function()
 		if arg_11_0.activityID then
 			JumpTools.OpenPageByJump("/tetrisGameRankView", {
-				rankActivityID = ActivityConst.ACTIVITY_TETRIS_GAME_RANK
+				rankActivityID = TetrisGameData:GetCurRankActivityID()
 			})
 		end
 	end)
@@ -76,14 +79,23 @@ function var_0_0.AddUIListener(arg_11_0)
 		end
 	end)
 	arg_11_0:AddBtnListener(arg_11_0.specialBtn_, nil, function()
+		local var_14_0 = TetrisGameTools:GetEndLessStageIDByActivityID(arg_11_0.activityID)
+		local var_14_1, var_14_2 = TetrisGameTools:CheckChapterIsOpen(var_14_0)
+
+		if not var_14_1 then
+			ShowTips(GetI18NText(var_14_2))
+
+			return
+		end
+
 		JumpTools.OpenPageByJump("/tetrisGameSkillView")
 	end)
 	arg_11_0:AddBtnListener(arg_11_0.chapter1Btn_, nil, function()
 		local var_15_0 = TetrisGameTools:GetSimpleChapterIDListByActivityID(arg_11_0.activityID)[1]
-		local var_15_1, var_15_2 = TetrisGameTools:GetChapterState(var_15_0)
+		local var_15_1, var_15_2 = TetrisGameTools:CheckChapterIsOpen(var_15_0)
 
-		if var_15_1 == "lock" then
-			ShowTips(var_15_2)
+		if not var_15_1 then
+			ShowTips(GetI18NText(var_15_2))
 
 			return
 		end
@@ -94,10 +106,10 @@ function var_0_0.AddUIListener(arg_11_0)
 	end)
 	arg_11_0:AddBtnListener(arg_11_0.chapter2Btn_, nil, function()
 		local var_16_0 = TetrisGameTools:GetSimpleChapterIDListByActivityID(arg_11_0.activityID)[2]
-		local var_16_1, var_16_2 = TetrisGameTools:GetChapterState(var_16_0)
+		local var_16_1, var_16_2 = TetrisGameTools:CheckChapterIsOpen(var_16_0)
 
-		if var_16_1 == "lock" then
-			ShowTips(var_16_2)
+		if not var_16_1 then
+			ShowTips(GetI18NText(var_16_2))
 
 			return
 		end
@@ -127,20 +139,32 @@ function var_0_0.RefreshChapterState(arg_18_0)
 		end
 
 		local var_18_2 = TetrisGameTools:GetSimpleChapterIDListByActivityID(arg_18_0.activityID)
+		local var_18_3 = TetrisGameTools:GetEndLessStageIDByActivityID(arg_18_0.activityID)
 
 		if #var_18_2 > 0 then
 			arg_18_0.chapter1Name_.text = ActivityTetrisGameChapterCfg[var_18_2[1]].name
 			arg_18_0.chapter2Name_.text = ActivityTetrisGameChapterCfg[var_18_2[2]].name
-			arg_18_0.chapter3Name_.text = ActivityTetrisGameChapterCfg[1].name
 
-			local var_18_3, var_18_4 = TetrisGameTools:GetChapterState(var_18_2[2])
+			local var_18_4, var_18_5 = TetrisGameTools:CheckChapterIsOpen(var_18_2[2])
 
-			if var_18_3 == "lock" then
+			if not var_18_4 then
 				arg_18_0.lockController:SetSelectedState("state1")
 
-				arg_18_0.lockDesc.text = GetTips(var_18_4)
+				arg_18_0.lockDesc.text = GetI18NText(var_18_5)
 			else
 				arg_18_0.lockController:SetSelectedState("state0")
+			end
+
+			local var_18_6, var_18_7 = TetrisGameTools:CheckChapterIsOpen(var_18_3)
+
+			arg_18_0.chapter3Name_.text = ActivityTetrisGameChapterCfg[var_18_3].name
+
+			if not var_18_6 then
+				arg_18_0.endlessLockController:SetSelectedState("state1")
+
+				arg_18_0.endlessLockDesc_.text = GetI18NText(var_18_7)
+			else
+				arg_18_0.endlessLockController:SetSelectedState("state0")
 			end
 		end
 

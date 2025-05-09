@@ -555,6 +555,29 @@
 			4000602
 		}
 	},
+	[332131] = {
+		prefab_name = "Widget/System/Activity_Resident/Activity_HeroPubliciz/ActivityHeroPublicize1211",
+		sy = 332131,
+		hero_skin_id = 401001,
+		extra_jump_list = "",
+		background = "Widget/System/Activity_Resident/Activity_HeroPubliciz/ActivityHeroPublicize1211",
+		hero_trial_id = 340,
+		hero_id = 1211,
+		hero_trial_navigation = {
+			16121,
+			331001,
+			331071
+		},
+		hero_skin_navigation = {
+			16121,
+			331001,
+			331311
+		},
+		hero_draw_navigation = {
+			404,
+			4010301
+		}
+	},
 	all = {
 		172131,
 		172132,
@@ -579,6 +602,7 @@
 		312131,
 		312132,
 		322121,
-		322122
+		322122,
+		332131
 	}
 }

@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("TetrisGameRankView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "Widget/BackHouseUI/TetrisGame/TetrisGameRankUI"
+	return "Widget/Version/Alone_TetrisGameUI/TetrisGameRankUI"
 end
 
 function var_0_0.UIParent(arg_2_0)

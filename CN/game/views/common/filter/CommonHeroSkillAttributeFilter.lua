@@ -1,4 +1,4 @@
-﻿local var_0_0 = class("CommonFilterView", ReduxView)
+﻿local var_0_0 = class("CommonHeroSkillAttributeFilter", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
 	return "Widget/Common/Com_Prefab/Com_Paging"

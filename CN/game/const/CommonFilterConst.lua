@@ -31,20 +31,26 @@ Filter_Tags_Define = {
 	IdolDanceStyle3 = 41,
 	IdolDanceBeat32 = 46,
 	Star3 = 10,
-	IdolDanceBeatReserve3 = 48,
+	IdolDanceBeatReserve3 = 1002,
 	MECHAINISM1 = 25,
 	Race5 = 5,
+	OsirisPlayGameTag1 = 48,
+	OsirisPlayGameTag3 = 50,
+	OsirisPlayGameTag2 = 49,
 	ARRT12 = 23,
+	OsirisPlayGameTag4 = 51,
+	OsirisPlayGameTag6 = 53,
 	IdolDanceStyle5 = 43,
 	Race1 = 1,
 	FURNITURETYPE2 = 30,
 	MECHAINISM2 = 26,
+	OsirisPlayGameTag5 = 52,
 	FURNITURETYPE4 = 32,
 	IdolDanceStyle2 = 40,
 	Equip = 8,
 	MECHAINISM3 = 27,
 	StarLevel = 14,
-	IdolDanceBeatReserve2 = 47,
+	IdolDanceBeatReserve2 = 1001,
 	Train = 13,
 	Star5 = 12,
 	ARRT6 = 20,
@@ -189,6 +195,19 @@ Filter_Group_Define = {
 			Filter_Tags_Define.IdolDanceBeat16,
 			Filter_Tags_Define.IdolDanceBeat32
 		}
+	},
+	OSIRIS_PLAY_GAME_TAG = {
+		title = "FILTER_OSIRIS_PLAY_GAME_TAG",
+		groupID = 13,
+		mode = Filter_Group_Mode.MultiMode,
+		tags = {
+			Filter_Tags_Define.OsirisPlayGameTag1,
+			Filter_Tags_Define.OsirisPlayGameTag2,
+			Filter_Tags_Define.OsirisPlayGameTag3,
+			Filter_Tags_Define.OsirisPlayGameTag4,
+			Filter_Tags_Define.OsirisPlayGameTag5,
+			Filter_Tags_Define.OsirisPlayGameTag6
+		}
 	}
 }
 Filter_Root_Define = {
@@ -247,6 +266,15 @@ Filter_Root_Define = {
 		groupList = {
 			Filter_Group_Define.IDOL_DANCE_ACTION_STYLE.groupID,
 			Filter_Group_Define.IDOL_DANCE_ACTION_BEAT.groupID
+		}
+	},
+	Osiris_Hero_Filter_List = {
+		filter_id = 9,
+		groupList = {
+			Filter_Group_Define.RACE.groupID,
+			Filter_Group_Define.ARRT.groupID,
+			Filter_Group_Define.MECHAINISMTYPE.groupID,
+			Filter_Group_Define.OSIRIS_PLAY_GAME_TAG.groupID
 		}
 	}
 }

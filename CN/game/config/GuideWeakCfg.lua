@@ -143,16 +143,10 @@
 		mask_component = {},
 		opencondition = {
 			{
-				"playerLevel",
-				41
+				"newbieTaskOpen"
 			}
 		},
-		skipcondition = {
-			{
-				"playerLevel",
-				45
-			}
-		},
+		skipcondition = {},
 		talk_position = {
 			568,
 			-267
@@ -575,38 +569,6 @@
 			-151
 		}
 	},
-	[1601] = {
-		closetime = 5,
-		priority = 1,
-		talk_adapt = 1,
-		talk_anchors = 0,
-		name = "tetrisGameStageView",
-		narrator_icon = "mmr",
-		id = 1601,
-		talk_content = "点击这里也可以查看技能的效果",
-		narrator_name = "弥弥尔",
-		guide_component = {
-			"guideComponents",
-			"guide_mask"
-		},
-		mask_component = {},
-		opencondition = {
-			{
-				"uiName",
-				"tetrisGameStageView"
-			}
-		},
-		skipcondition = {
-			{
-				"uiName",
-				"tetrisGameScorePopView"
-			}
-		},
-		talk_position = {
-			-309,
-			-326
-		}
-	},
 	[1701] = {
 		closetime = 5,
 		priority = 1,
@@ -778,7 +740,79 @@
 			133
 		}
 	},
+	[2201] = {
+		closetime = 5,
+		priority = 1,
+		talk_adapt = 0,
+		talk_anchors = 7,
+		name = "tetrisGameStageView",
+		narrator_icon = "mmr",
+		id = 2201,
+		talk_content = "携带新技能「更替重置」会每回合放置一个方块后，将<color=#F48800>直接进入下一个回合</color>，即右侧方块刷新。",
+		narrator_name = "弥弥尔",
+		guide_component = {
+			"guideComponents",
+			"guide_s1_2"
+		},
+		mask_component = {},
+		opencondition = {
+			{
+				"uiNameList",
+				{
+					"tetrisGameStageView"
+				}
+			},
+			{
+				"tetris",
+				"tetrisStage",
+				40104
+			}
+		},
+		skipcondition = {},
+		talk_position = {
+			-880,
+			283
+		}
+	},
+	[2202] = {
+		closetime = 5,
+		priority = 1,
+		talk_adapt = 0,
+		talk_anchors = 0,
+		name = "tetrisGameStageView",
+		narrator_icon = "mmr",
+		id = 2202,
+		talk_content = "如果坚持<color=#F48800>放入9个方块也不消除</color>就可以<color=#F48800>锁定</color>特殊方块了。",
+		narrator_name = "弥弥尔",
+		guide_component = {
+			"guideComponents",
+			"guide_s3_1"
+		},
+		mask_component = {},
+		opencondition = {
+			{
+				"uiNameList",
+				{
+					"tetrisGameStageView"
+				}
+			},
+			{
+				"tetris",
+				"tetrisStage",
+				40107
+			}
+		},
+		skipcondition = {},
+		talk_position = {
+			-531,
+			-133
+		}
+	},
 	get_id_list_by_name = {
+		tetrisGameStageView = {
+			2201,
+			2202
+		},
 		qWorldBookletMain = {
 			2103
 		},
@@ -796,9 +830,6 @@
 		},
 		challengeRogueTeamSectionSelectHero = {
 			1701
-		},
-		tetrisGameStageView = {
-			1601
 		},
 		polyhedronLobby = {
 			1501,
@@ -854,12 +885,13 @@
 		1402,
 		1501,
 		1502,
-		1601,
 		1701,
 		1804,
 		1805,
 		1901,
 		2102,
-		2103
+		2103,
+		2201,
+		2202
 	}
 }

@@ -83,6 +83,12 @@
 		script_version = "",
 		main_ui_path = "Widget/System/Activity_Resident/Acitvity_OutfitTrial/Acitvity_SkinTrialMainUI"
 	},
+	[33] = {
+		activity_theme = 33,
+		select_ui_path = "Widget/System/Activity_Resident/Acitvity_OutfitTrial/Acitvity_SkinTrialUI",
+		script_version = "",
+		main_ui_path = "Widget/System/Activity_Resident/Acitvity_OutfitTrial/Acitvity_SkinTrialMainUI"
+	},
 	all = {
 		14,
 		17,
@@ -97,6 +103,7 @@
 		29,
 		30,
 		31,
-		32
+		32,
+		33
 	}
 }

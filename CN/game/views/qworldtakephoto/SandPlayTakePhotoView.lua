@@ -139,7 +139,7 @@ function var_0_0.PlayAni(arg_10_0, arg_10_1)
 	arg_10_0.mainAnimator_:Play(var_10_0)
 
 	arg_10_0.aniTimer_ = FrameTimer.New(function()
-		if arg_10_0.mainAnimator_:GetCurrentAnimatorStateInfo(0).normalizedTime >= 1 then
+		if arg_10_0.mainAnimator_:GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.8 then
 			arg_10_0:StopPhotoTimer()
 
 			arg_10_0.canClose_ = true

@@ -361,7 +361,7 @@ function var_0_1.AddUIListener(arg_30_0)
 			end
 
 			ForeignInfoAction:TryToCheckForeignHeroInfo(arg_30_0.selectedAssistHeroData_.member_id, arg_30_0.selectedAssistHeroID_, 2, function()
-				JumpTools.OpenPageByJump("/newHero", {
+				JumpTools.OpenPageByJump("/foreignHero", {
 					isForeign = true,
 					isEnter = true,
 					notShowBar = true,

@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("TetrisGameTaskView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "Widget/BackHouseUI/TetrisGame/TetrisGameRewardPopup"
+	return "Widget/Version/Alone_TetrisGameUI/TetrisGameRewardPopup"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -17,7 +17,7 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
 	arg_4_0.taskList_ = {}
-	arg_4_0.taskListModule = CommonTaskListModule.New(arg_4_0.comTaskList_)
+	arg_4_0.taskListModule = LimitTaskListModule.New(arg_4_0.comTaskList_)
 	arg_4_0.awardController = arg_4_0.controller:GetController("oneClick")
 end
 
@@ -36,30 +36,41 @@ function var_0_0.OnEnter(arg_8_0)
 	local var_8_0 = arg_8_0.params_.activityID
 
 	if var_8_0 then
-		arg_8_0.taskListModule:RenderActivityTaskList(var_8_0)
+		arg_8_0.taskListModule:RenderView(var_8_0)
 	end
+
+	arg_8_0:RefreshReciveBtn()
+	arg_8_0:RegistEventListener(ON_TASK_SUBMIT_RESPONSE, function()
+		arg_8_0:RefreshReciveBtn()
+		arg_8_0.taskListModule:RenderView(var_8_0)
+	end)
+	arg_8_0:RegistEventListener(ON_TASK_SUBMIT_LIST_RESPONSE, function()
+		arg_8_0:RefreshReciveBtn()
+		arg_8_0.taskListModule:RenderView(var_8_0)
+	end)
 end
 
-function var_0_0.OnTop(arg_9_0)
-	arg_9_0:RefreshReciveBtn()
+function var_0_0.OnTop(arg_11_0)
+	return
 end
 
-function var_0_0.RefreshReciveBtn(arg_10_0)
-	if #TaskTools:GetCanGetActivityTaskList(arg_10_0.params_.activityID) > 0 then
-		arg_10_0.awardController:SetSelectedState("on")
+function var_0_0.RefreshReciveBtn(arg_12_0)
+	if #TaskTools:GetCanGetActivityTaskList(arg_12_0.params_.activityID) > 0 then
+		arg_12_0.awardController:SetSelectedState("on")
 	else
-		arg_10_0.awardController:SetSelectedState("off")
+		arg_12_0.awardController:SetSelectedState("off")
 	end
 end
 
-function var_0_0.OnExit(arg_11_0)
-	arg_11_0.taskListModule:OnExit()
+function var_0_0.OnExit(arg_13_0)
+	arg_13_0.taskListModule:OnExit()
 end
 
-function var_0_0.Dispose(arg_12_0)
-	arg_12_0.taskListModule:Dispose()
-	arg_12_0:RemoveAllListeners()
-	var_0_0.super.Dispose(arg_12_0)
+function var_0_0.Dispose(arg_14_0)
+	arg_14_0.taskListModule:Dispose()
+	arg_14_0:RemoveAllListeners()
+	arg_14_0:RemoveAllEventListener()
+	var_0_0.super.Dispose(arg_14_0)
 end
 
 return var_0_0

@@ -262,7 +262,6 @@ function var_0_0.OnExitOldRoutes(arg_11_0)
 	local var_11_1 = arg_11_0.recordMap_[arg_11_0.oldRoutes_[#arg_11_0.oldRoutes_]]
 
 	if var_11_1 then
-		print(string.format("ReduxView OnBehind(%s) idx:%d", arg_11_0.oldRoutes_[#arg_11_0.oldRoutes_], #arg_11_0.oldRoutes_))
 		var_11_1:HideWeakGuide()
 		var_11_1:OnBehind()
 	end
@@ -411,7 +410,6 @@ function var_0_0.OnEnterNewRoutes(arg_17_0)
 	local var_17_8 = arg_17_0.recordMap_[arg_17_0.routes_[#arg_17_0.routes_]]
 
 	if var_17_8 then
-		print(string.format("ReduxView OnTop(%s) idx: %d", arg_17_0.routes_[#arg_17_0.routes_], #arg_17_0.routes_))
 		var_17_8:OnTop()
 		var_17_8:CheckWeakGuide()
 		arg_17_0:SendToUITimeMgr(var_17_8, arg_17_0.routes_[#arg_17_0.routes_], true)

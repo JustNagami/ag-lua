@@ -51,16 +51,21 @@ function var_0_0.PlayCombineSkill(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
 	end
 
 	local var_8_0
-	local var_8_1, var_8_2 = CooperateSkillBridge.PlayCooperateUniqueSkill(arg_8_2, arg_8_3, var_8_0)
-	local var_8_3 = arg_8_0.gameObject_.transform.position
+	local var_8_1 = "CooperateUniqueSkillTimeline/" .. arg_8_3
+	local var_8_2, var_8_3 = CooperateSkillBridge.PlayCooperateUniqueSkill(arg_8_2, arg_8_3, var_8_0)
+	local var_8_4 = arg_8_0.gameObject_.transform.position
 
 	manager.windowBar:SwitchBar({})
-	table.insert(arg_8_0.poolList, var_8_1)
+	table.insert(arg_8_0.poolList, var_8_2)
 
 	arg_8_0.gameObject_.transform.position = Vector3(1000, 1000, 1000)
 	arg_8_0.list = arg_8_1
 
-	table.insert(arg_8_0.list, var_8_1)
+	table.insert(arg_8_0.list, {
+		fromCSharp = true,
+		obj = var_8_2,
+		path = var_8_1
+	})
 	manager.audio:StopEffect()
 	manager.audio:StopVoice()
 
@@ -68,15 +73,16 @@ function var_0_0.PlayCombineSkill(arg_8_0, arg_8_1, arg_8_2, arg_8_3)
 		return
 	end
 
-	arg_8_0.timer = TimeTools.StartAfterSeconds(var_8_2, function()
+	arg_8_0.timer = TimeTools.StartAfterSeconds(var_8_3, function()
 		if arg_8_0.timer == nil then
 			return
 		end
 
-		arg_8_0.gameObject_.transform.position = var_8_3
+		arg_8_0.gameObject_.transform.position = var_8_4
 
 		for iter_9_0, iter_9_1 in pairs(arg_8_1) do
-			Object.DestroyImmediate(iter_9_1)
+			Object.DestroyImmediate(iter_9_1.obj)
+			Asset.Unload(iter_9_1.path)
 		end
 
 		arg_8_0.list = {}
@@ -314,7 +320,7 @@ function var_0_0.OnExit(arg_22_0)
 	end
 
 	for iter_22_0, iter_22_1 in pairs(arg_22_0.list) do
-		Object.DestroyImmediate(iter_22_1)
+		Object.DestroyImmediate(iter_22_1.obj)
 	end
 
 	arg_22_0.list = {}
@@ -329,7 +335,7 @@ function var_0_0.Dispose(arg_23_0)
 	arg_23_0:RemoveAllListeners()
 
 	for iter_23_0, iter_23_1 in pairs(arg_23_0.list) do
-		Object.DestroyImmediate(iter_23_1)
+		Object.DestroyImmediate(iter_23_1.obj)
 	end
 
 	if arg_23_0.timer then

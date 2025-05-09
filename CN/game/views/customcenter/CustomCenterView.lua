@@ -87,7 +87,7 @@ function var_0_0.OnEnter(arg_4_0)
 
 		HomeSceneSettingData:SetCacheSceneID(HomeSceneSettingData:GetCurSceneID())
 
-		arg_4_0.selectSceneID_ = CustomCenterTools.GetMatchScene(arg_4_0.skinID_, HomeSceneSettingData:GetCurScene())
+		arg_4_0.selectSceneID_ = arg_4_0.params_.sceneID or CustomCenterTools.GetMatchScene(arg_4_0.skinID_, HomeSceneSettingData:GetCurScene())
 	end
 
 	if arg_4_0.sceneTransitionView_ then
@@ -277,9 +277,16 @@ function var_0_0.OnSelectHero(arg_22_0, arg_22_1)
 
 	arg_22_0.heroUIList_:Refresh()
 
-	arg_22_0.selectSceneID_ = CustomCenterTools.GetMatchScene(arg_22_0.skinID_, arg_22_0.selectSceneID_)
+	local var_22_0 = CustomCenterTools.GetMatchScene(arg_22_0.skinID_, arg_22_0.selectSceneID_)
 
-	arg_22_0:UpdateAvatarView(arg_22_0.skinID_)
+	if arg_22_0.lastSkinID_ ~= arg_22_0.skinID_ or arg_22_0.selectSceneID_ ~= var_22_0 then
+		arg_22_0.selectSceneID_ = var_22_0
+
+		arg_22_0:UpdateAvatarView(arg_22_0.skinID_)
+	else
+		arg_22_0.selectSceneID_ = var_22_0
+	end
+
 	arg_22_0.customCenterHeroView_:Show(true, arg_22_0.selectHeroID_)
 end
 
@@ -297,10 +304,16 @@ function var_0_0.OnChangeHero(arg_25_0, arg_25_1)
 end
 
 function var_0_0.OnSelectScene(arg_26_0, arg_26_1)
+	local var_26_0 = arg_26_0.selectSceneID_
+
 	arg_26_0.selectSceneID_ = arg_26_1
 
 	arg_26_0.sceneUIList_:Refresh()
-	arg_26_0:UpdateAvatarView(arg_26_0.skinID_)
+
+	if var_26_0 ~= arg_26_1 then
+		arg_26_0:UpdateAvatarView(arg_26_0.skinID_)
+	end
+
 	arg_26_0.customCenterSceneView_:Show(true, arg_26_0.selectSceneID_)
 end
 
@@ -366,6 +379,7 @@ function var_0_0.UpdateAvatarView(arg_33_0, arg_33_1)
 		arg_33_0.lastSkinID_ = arg_33_0.skinID_
 
 		manager.loadScene:SetHomeSceneSoundEffect()
+		arg_33_0:PlayBGM()
 	end)
 end
 
@@ -384,74 +398,86 @@ function var_0_0.SetCamera(arg_36_0)
 	end
 end
 
-function var_0_0.IndexHeroItem(arg_37_0, arg_37_1, arg_37_2)
-	arg_37_2:SetHeroData(arg_37_0.heroIDList_[arg_37_1], arg_37_0.selectHeroID_)
+function var_0_0.PlayBGM(arg_37_0)
+	local var_37_0 = HomeSceneSettingCfg[arg_37_0.selectSceneID_]
+	local var_37_1 = var_37_0.scene_setting
+	local var_37_2 = var_37_0.default_music
+
+	if var_37_2 ~= 0 and table.indexof(var_37_1, HomeSceneSettingConst.SETTING.SCENE_BGM) then
+		PlayGameBGMID(var_37_2)
+	else
+		PlayGameSetBGM()
+	end
 end
 
-function var_0_0.IndexSceneItem(arg_38_0, arg_38_1, arg_38_2)
-	arg_38_2:SetSceneData(arg_38_0.sceneIDList_[arg_38_1], arg_38_0.selectSceneID_)
+function var_0_0.IndexHeroItem(arg_38_0, arg_38_1, arg_38_2)
+	arg_38_2:SetHeroData(arg_38_0.heroIDList_[arg_38_1], arg_38_0.selectHeroID_)
 end
 
-function var_0_0.OnClearHero(arg_39_0)
+function var_0_0.IndexSceneItem(arg_39_0, arg_39_1, arg_39_2)
+	arg_39_2:SetSceneData(arg_39_0.sceneIDList_[arg_39_1], arg_39_0.selectSceneID_)
+end
+
+function var_0_0.OnClearHero(arg_40_0)
 	CustomCenterTools.SetCacheRandomHeroSkinList({})
 	PlayerData:SetClearHeroFlag(true)
 end
 
-function var_0_0.OnClearScene(arg_40_0)
+function var_0_0.OnClearScene(arg_41_0)
 	CustomCenterTools.SetCacheRandomSceneList({})
 	HomeSceneSettingData:SetClearSceneFlag(true)
 end
 
-function var_0_0.OnChangeScene(arg_41_0)
-	arg_41_0.sceneUIList_:Refresh()
+function var_0_0.OnChangeScene(arg_42_0)
+	arg_42_0.sceneUIList_:Refresh()
 end
 
-function var_0_0.ExitFunc(arg_42_0, arg_42_1)
-	local var_42_0 = not CustomCenterTools.IsRandomHero() and arg_42_0.skinID_ ~= PlayerData:GetPosterGirlHeroSkinId()
-	local var_42_1 = not CustomCenterTools.IsRandomScene() and arg_42_0.selectSceneID_ ~= HomeSceneSettingData:GetCurSceneID() and (SkinSceneActionCfg.get_id_list_by_special_scene_id[arg_42_0.selectSceneID_] and not CustomCenterTools.IsRandomHero() or not SkinSceneActionCfg.get_id_list_by_special_scene_id[arg_42_0.selectSceneID_])
-	local var_42_2 = HomeSceneSettingData:GetCurSceneID()
+function var_0_0.ExitFunc(arg_43_0, arg_43_1)
+	local var_43_0 = not CustomCenterTools.IsRandomHero() and arg_43_0.skinID_ ~= PlayerData:GetPosterGirlHeroSkinId()
+	local var_43_1 = not CustomCenterTools.IsRandomScene() and arg_43_0.selectSceneID_ ~= HomeSceneSettingData:GetCurSceneID() and (SkinSceneActionCfg.get_id_list_by_special_scene_id[arg_43_0.selectSceneID_] and not CustomCenterTools.IsRandomHero() or not SkinSceneActionCfg.get_id_list_by_special_scene_id[arg_43_0.selectSceneID_])
+	local var_43_2 = HomeSceneSettingData:GetCurSceneID()
 
-	if var_42_0 or var_42_1 then
+	if var_43_0 or var_43_1 then
 		ShowMessageBox({
 			title = GetTips("PROMPT"),
 			content = GetTips("CUSTOM_CENTER_SWITCH_SCENE_WARING"),
 			OkCallback = function()
-				if var_42_0 then
-					local var_43_0 = SkinCfg[arg_42_0.skinID_].hero
+				if var_43_0 then
+					local var_44_0 = SkinCfg[arg_43_0.skinID_].hero
 
-					HeroAction.SelectSkinWithCallback(var_43_0, arg_42_0.skinID_, function()
-						PlayerAction.ChangePosterGirlWithCallback(var_43_0, function()
-							if var_42_1 then
-								HomeSceneSettingAction.SetHomeScene(arg_42_0.selectSceneID_, true)
+					HeroAction.SelectSkinWithCallback(var_44_0, arg_43_0.skinID_, function()
+						PlayerAction.ChangePosterGirlWithCallback(var_44_0, function()
+							if var_43_1 then
+								HomeSceneSettingAction.SetHomeScene(arg_43_0.selectSceneID_, true)
 							elseif not CustomCenterTools.IsRandomScene() then
-								if CustomCenterTools.IsDLCScene(arg_42_0.selectSceneID_) and not CustomCenterTools.IsDLCScene(var_42_2) then
-									HomeSceneSettingAction.SetHomeScene(var_42_2, true)
+								if CustomCenterTools.IsDLCScene(arg_43_0.selectSceneID_) and not CustomCenterTools.IsDLCScene(var_43_2) then
+									HomeSceneSettingAction.SetHomeScene(var_43_2, true)
 								else
-									HomeSceneSettingAction.SetHomeScene(arg_42_0.selectSceneID_, true)
+									HomeSceneSettingAction.SetHomeScene(arg_43_0.selectSceneID_, true)
 								end
 							end
 
-							arg_42_0:ExitOverFunc(arg_42_1)
+							arg_43_0:ExitOverFunc(arg_43_1)
 						end)
 					end)
 
 					return
 				end
 
-				if var_42_1 then
-					HomeSceneSettingAction.SetHomeScene(arg_42_0.selectSceneID_, true)
+				if var_43_1 then
+					HomeSceneSettingAction.SetHomeScene(arg_43_0.selectSceneID_, true)
 				elseif not CustomCenterTools.IsRandomScene() then
-					if CustomCenterTools.IsDLCScene(arg_42_0.selectSceneID_) and not CustomCenterTools.IsDLCScene(var_42_2) then
-						HomeSceneSettingAction.SetHomeScene(var_42_2, true)
+					if CustomCenterTools.IsDLCScene(arg_43_0.selectSceneID_) and not CustomCenterTools.IsDLCScene(var_43_2) then
+						HomeSceneSettingAction.SetHomeScene(var_43_2, true)
 					else
-						HomeSceneSettingAction.SetHomeScene(arg_42_0.selectSceneID_, true)
+						HomeSceneSettingAction.SetHomeScene(arg_43_0.selectSceneID_, true)
 					end
 				end
 
-				arg_42_0:ExitOverFunc(arg_42_1)
+				arg_43_0:ExitOverFunc(arg_43_1)
 			end,
 			CancelCallback = function()
-				arg_42_0:ExitOverFunc(arg_42_1)
+				arg_43_0:ExitOverFunc(arg_43_1)
 			end,
 			MaskCallback = function()
 				return
@@ -459,7 +485,7 @@ function var_0_0.ExitFunc(arg_42_0, arg_42_1)
 		})
 
 		if not CustomCenterTools.IsRandomScene() then
-			HomeSceneSettingAction.SetHomeScene(var_42_2, true)
+			HomeSceneSettingAction.SetHomeScene(var_43_2, true)
 		end
 
 		HomeSceneSettingData:SetCacheSceneID()
@@ -467,31 +493,33 @@ function var_0_0.ExitFunc(arg_42_0, arg_42_1)
 		return
 	end
 
-	arg_42_0:ExitOverFunc(arg_42_1)
+	arg_43_0:ExitOverFunc(arg_43_1)
 end
 
-function var_0_0.ExitOverFunc(arg_48_0, arg_48_1)
+function var_0_0.ExitOverFunc(arg_49_0, arg_49_1)
 	HomeSceneSettingData:SetCacheSceneID()
 	manager.posterGirl:SetViewTag(PosterGirlConst.ViewTag.null)
 
-	local var_48_0 = CustomCenterTools.IsRandomHero()
-	local var_48_1 = PlayerData:GetRandomHeroMode()
-	local var_48_2 = CustomCenterTools.IsRandomScene()
-	local var_48_3 = HomeSceneSettingData:GetRandomMode()
+	local var_49_0 = CustomCenterTools.IsRandomHero()
+	local var_49_1 = PlayerData:GetRandomHeroMode()
+	local var_49_2 = CustomCenterTools.IsRandomScene()
+	local var_49_3 = HomeSceneSettingData:GetRandomMode()
 
 	PlayerData:SetForceRandomHeroID(nil)
 
-	if var_48_0 then
-		PlayerData:SetForceRandomHeroID(CustomCenterTools.GetLastPreviewHero())
+	if var_49_0 then
+		local var_49_4 = CustomCenterTools.GetLastPreviewHero()
+
+		PlayerData:SetForceRandomHeroID(var_49_4)
 	end
 
 	HomeSceneSettingData:SetForceRandomSceneID(nil)
 
-	if var_48_2 then
+	if var_49_2 then
 		HomeSceneSettingData:SetForceRandomSceneID(CustomCenterTools.GetLastPreviewScene())
 	end
 
-	arg_48_1()
+	arg_49_1()
 end
 
 return var_0_0

@@ -3159,6 +3159,9 @@
 
 			if var_87_42 < arg_84_1.time_ and arg_84_1.time_ <= var_87_42 + arg_87_0 then
 				local var_87_43 = arg_84_1.fswbg_.transform:Find("textbox/adapt/content") or arg_84_1.fswbg_.transform:Find("textbox/content")
+
+				arg_84_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
+
 				local var_87_44 = var_87_43:GetComponent("Text")
 				local var_87_45 = var_87_43:GetComponent("RectTransform")
 
@@ -3187,6 +3190,7 @@
 				arg_84_1.fswtw_:SetDirty()
 
 				arg_84_1.typewritterCharCountI18N = 0
+				arg_84_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
 				SetActive(arg_84_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_84_1:ShowNextGo(false)
@@ -3196,7 +3200,9 @@
 
 			if var_87_49 < arg_84_1.time_ and arg_84_1.time_ <= var_87_49 + arg_87_0 then
 				arg_84_1.var_.oldValueTypewriter = arg_84_1.fswtw_.percent
+				arg_84_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_84_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_84_1:ShowNextGo(false)
 			end
 
@@ -3245,7 +3251,9 @@
 
 			if var_87_60 < arg_84_1.time_ and arg_84_1.time_ <= var_87_60 + arg_87_0 then
 				arg_84_1.var_.oldValueTypewriter = arg_84_1.fswtw_.percent
+				arg_84_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_84_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_84_1:ShowNextGo(false)
 			end
 
@@ -3443,6 +3451,7 @@
 				arg_88_1.fswtw_:SetDirty()
 
 				arg_88_1.typewritterCharCountI18N = 0
+				arg_88_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
 				SetActive(arg_88_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_88_1:ShowNextGo(false)
@@ -3452,7 +3461,9 @@
 
 			if var_91_28 < arg_88_1.time_ and arg_88_1.time_ <= var_91_28 + arg_91_0 then
 				arg_88_1.var_.oldValueTypewriter = arg_88_1.fswtw_.percent
+				arg_88_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_88_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_88_1:ShowNextGo(false)
 			end
 
@@ -3502,6 +3513,10 @@
 			if var_91_39 < arg_88_1.time_ and arg_88_1.time_ <= var_91_39 + arg_91_0 then
 				arg_88_1.fswbg_:SetActive(false)
 				arg_88_1.dialog_:SetActive(false)
+
+				arg_88_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
+
+				SetActive(arg_88_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_88_1:ShowNextGo(false)
 			end
 
@@ -3796,6 +3811,9 @@
 
 			if var_105_6 < arg_102_1.time_ and arg_102_1.time_ <= var_105_6 + arg_105_0 then
 				local var_105_7 = arg_102_1.fswbg_.transform:Find("textbox/adapt/content") or arg_102_1.fswbg_.transform:Find("textbox/content")
+
+				arg_102_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
+
 				local var_105_8 = var_105_7:GetComponent("Text")
 				local var_105_9 = var_105_7:GetComponent("RectTransform")
 
@@ -3824,6 +3842,7 @@
 				arg_102_1.fswtw_:SetDirty()
 
 				arg_102_1.typewritterCharCountI18N = 0
+				arg_102_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
 				SetActive(arg_102_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_102_1:ShowNextGo(false)
@@ -3833,7 +3852,9 @@
 
 			if var_105_13 < arg_102_1.time_ and arg_102_1.time_ <= var_105_13 + arg_105_0 then
 				arg_102_1.var_.oldValueTypewriter = arg_102_1.fswtw_.percent
+				arg_102_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_102_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_102_1:ShowNextGo(false)
 			end
 
@@ -3882,7 +3903,9 @@
 
 			if var_105_24 < arg_102_1.time_ and arg_102_1.time_ <= var_105_24 + arg_105_0 then
 				arg_102_1.var_.oldValueTypewriter = arg_102_1.fswtw_.percent
+				arg_102_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_102_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_102_1:ShowNextGo(false)
 			end
 
@@ -3978,6 +4001,10 @@
 			if var_109_0 < arg_106_1.time_ and arg_106_1.time_ <= var_109_0 + arg_109_0 then
 				arg_106_1.fswbg_:SetActive(false)
 				arg_106_1.dialog_:SetActive(false)
+
+				arg_106_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
+
+				SetActive(arg_106_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_106_1:ShowNextGo(false)
 			end
 
@@ -3986,6 +4013,10 @@
 			if var_109_1 < arg_106_1.time_ and arg_106_1.time_ <= var_109_1 + arg_109_0 then
 				arg_106_1.fswbg_:SetActive(false)
 				arg_106_1.dialog_:SetActive(false)
+
+				arg_106_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
+
+				SetActive(arg_106_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_106_1:ShowNextGo(false)
 			end
 
@@ -3993,7 +4024,9 @@
 
 			if var_109_2 < arg_106_1.time_ and arg_106_1.time_ <= var_109_2 + arg_109_0 then
 				arg_106_1.var_.oldValueTypewriter = arg_106_1.fswtw_.percent
+				arg_106_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_106_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_106_1:ShowNextGo(false)
 			end
 
@@ -9851,6 +9884,9 @@
 
 			if var_272_14 < arg_269_1.time_ and arg_269_1.time_ <= var_272_14 + arg_272_0 then
 				local var_272_15 = arg_269_1.fswbg_.transform:Find("textbox/adapt/content") or arg_269_1.fswbg_.transform:Find("textbox/content")
+
+				arg_269_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
+
 				local var_272_16 = var_272_15:GetComponent("Text")
 				local var_272_17 = var_272_15:GetComponent("RectTransform")
 
@@ -9879,6 +9915,7 @@
 				arg_269_1.fswtw_:SetDirty()
 
 				arg_269_1.typewritterCharCountI18N = 0
+				arg_269_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
 				SetActive(arg_269_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_269_1:ShowNextGo(false)
@@ -9888,7 +9925,9 @@
 
 			if var_272_21 < arg_269_1.time_ and arg_269_1.time_ <= var_272_21 + arg_272_0 then
 				arg_269_1.var_.oldValueTypewriter = arg_269_1.fswtw_.percent
+				arg_269_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_269_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_269_1:ShowNextGo(false)
 			end
 
@@ -9937,7 +9976,9 @@
 
 			if var_272_32 < arg_269_1.time_ and arg_269_1.time_ <= var_272_32 + arg_272_0 then
 				arg_269_1.var_.oldValueTypewriter = arg_269_1.fswtw_.percent
+				arg_269_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_269_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_269_1:ShowNextGo(false)
 			end
 
@@ -10121,6 +10162,7 @@
 				arg_273_1.fswtw_:SetDirty()
 
 				arg_273_1.typewritterCharCountI18N = 0
+				arg_273_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
 				SetActive(arg_273_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_273_1:ShowNextGo(false)
@@ -10130,7 +10172,9 @@
 
 			if var_276_25 < arg_273_1.time_ and arg_273_1.time_ <= var_276_25 + arg_276_0 then
 				arg_273_1.var_.oldValueTypewriter = arg_273_1.fswtw_.percent
+				arg_273_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_273_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_273_1:ShowNextGo(false)
 			end
 
@@ -10180,6 +10224,10 @@
 			if var_276_36 < arg_273_1.time_ and arg_273_1.time_ <= var_276_36 + arg_276_0 then
 				arg_273_1.fswbg_:SetActive(false)
 				arg_273_1.dialog_:SetActive(false)
+
+				arg_273_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
+
+				SetActive(arg_273_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_273_1:ShowNextGo(false)
 			end
 

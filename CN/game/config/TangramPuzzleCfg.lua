@@ -1,6 +1,7 @@
 ﻿return {
 	[192261] = {
 		reward_ui_path = "UI/VersionUI/JapanRegionUI_2_4/JapanRegionJigsawUI/JapanRegionJigsawPuzzlePopUI",
+		task_bg_path = "",
 		task_ui_path = "UI/VersionUI/JapanRegionUI_2_4/JapanRegionJigsawUI/JapanRegionJigsawUI",
 		album_id = "JapanRegionUI_00023",
 		play_ui_path = "UI/VersionUI/JapanRegionUI_2_4/JapanRegionJigsawUI/JapanRegionJigsawPuzzleUI",
@@ -249,6 +250,7 @@
 	},
 	[282261] = {
 		reward_ui_path = "Widget/System/Activity_Resident/ActivityJigsawUI/ActivityJigsawPuzzleRewardUI",
+		task_bg_path = "",
 		task_ui_path = "Widget/System/Activity_Resident/ActivityJigsawUI/ActivityJigsawTaskUI",
 		album_id = "ActivityJigsaw_00001",
 		play_ui_path = "Widget/System/Activity_Resident/ActivityJigsawUI/ActivityJigsawPuzzlePlayUI",
@@ -495,8 +497,258 @@
 			}
 		}
 	},
+	[332261] = {
+		reward_ui_path = "Widget/System/Activity_Resident/ActivityJigsawUI/ActivityJigsawPuzzleRewardUI",
+		task_bg_path = "TextureBg/Version/V4_1_OsirisUI/V4_1_Osiris_JigsawUI/V4_1_Osiris_JigsawUI_00301",
+		task_ui_path = "Widget/Version/V4_1_OsirisUI/V4_1_Osiris_JigsawUI/V4_1_Osiris_JigsawTaskUI",
+		album_id = "ActivityJigsaw_00001",
+		play_ui_path = "Widget/System/Activity_Resident/ActivityJigsawUI/ActivityJigsawPuzzlePlayUI",
+		path = "TextureConfig/VersionUI/V4_1_OsirisUI/V4_1_Osiris_JigsawUI/",
+		activity_id = 332261,
+		main_activity_id = 332261,
+		puzzle_distance = 250,
+		default_array = {
+			{
+				1,
+				{
+					1012,
+					1005,
+					1004,
+					1008
+				}
+			},
+			{
+				2,
+				{
+					1001,
+					1011,
+					1007,
+					1010
+				}
+			},
+			{
+				3,
+				{
+					1003,
+					1002,
+					1009,
+					1006
+				}
+			},
+			{
+				4,
+				{
+					1014,
+					1016
+				}
+			},
+			{
+				5,
+				{
+					1018,
+					1013
+				}
+			},
+			{
+				6,
+				{
+					1017,
+					1015
+				}
+			}
+		},
+		picture_fragment_id = {
+			{
+				1,
+				{
+					1001,
+					1002,
+					1003,
+					1004
+				}
+			},
+			{
+				2,
+				{
+					1005,
+					1006,
+					1007,
+					1008
+				}
+			},
+			{
+				3,
+				{
+					1009,
+					1010,
+					1011,
+					1012
+				}
+			},
+			{
+				4,
+				{
+					1013,
+					1014
+				}
+			},
+			{
+				5,
+				{
+					1015,
+					1016
+				}
+			},
+			{
+				6,
+				{
+					1017,
+					1018
+				}
+			}
+		},
+		correct_array = {
+			{
+				1,
+				{
+					1001,
+					1002,
+					1003,
+					1004
+				}
+			},
+			{
+				2,
+				{
+					1005,
+					1006,
+					1007,
+					1008
+				}
+			},
+			{
+				3,
+				{
+					1009,
+					1010,
+					1011,
+					1012
+				}
+			},
+			{
+				4,
+				{
+					1013,
+					1014
+				}
+			},
+			{
+				5,
+				{
+					1015,
+					1016
+				}
+			},
+			{
+				6,
+				{
+					1017,
+					1018
+				}
+			}
+		},
+		reward_area_list = {
+			{
+				1,
+				{
+					{
+						1,
+						100
+					}
+				}
+			},
+			{
+				2,
+				{
+					{
+						40504,
+						24
+					}
+				}
+			},
+			{
+				3,
+				{
+					{
+						40701,
+						6
+					}
+				}
+			},
+			{
+				4,
+				{
+					{
+						40603,
+						5
+					}
+				}
+			},
+			{
+				5,
+				{
+					{
+						40803,
+						10
+					}
+				}
+			},
+			{
+				6,
+				{
+					{
+						40103,
+						6
+					}
+				}
+			}
+		},
+		area_type_list = {
+			{
+				1,
+				{
+					1,
+					2,
+					3
+				},
+				90
+			},
+			{
+				2,
+				{
+					4,
+					5,
+					6
+				},
+				180
+			}
+		},
+		final_reward = {
+			{
+				1,
+				100
+			}
+		},
+		coin_id = {
+			{
+				53159,
+				12
+			}
+		}
+	},
 	all = {
 		192261,
-		282261
+		282261,
+		332261
 	}
 }

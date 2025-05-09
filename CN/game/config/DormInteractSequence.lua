@@ -1033,6 +1033,16 @@
 		name = "1075_shuihua",
 		next_action = {}
 	},
+	[95003601] = {
+		id = 95003601,
+		name = "fx_9049_yixienamei1",
+		next_action = {}
+	},
+	[95003501] = {
+		id = 95003501,
+		name = "HZ05_zhuanshu_fantian1",
+		next_action = {}
+	},
 	[20100101] = {
 		id = 20100101,
 		name = "props_small_chair_sit",
@@ -1721,6 +1731,8 @@
 		11500101,
 		11330101,
 		10750101,
+		95003601,
+		95003501,
 		20100101,
 		20100102,
 		20100103,

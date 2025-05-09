@@ -655,6 +655,37 @@
 		},
 		obtain_way = {}
 	},
+	[6030] = {
+		action_suffix = "",
+		title = "喧笑的时光",
+		desc = "深空之眼为管理员准备的电竞娱乐房，此前由于工作繁忙未经常使用，现如今梵天已成为这里的常客。",
+		obtain_word = "",
+		scene_trial = 0,
+		limit_display = 1,
+		prefix_dlc = "X204",
+		can_interrupt_current_anim_switch_camera = 1,
+		light_effect = "",
+		unlock_description = "参与「咫尺身畔」活动获取",
+		prefix = "X204a",
+		light_effect_delay = "",
+		id = 6030,
+		default_music = 344,
+		can_loop_switch_camera = 1,
+		impact = {},
+		scene_tag = {
+			109,
+			110,
+			111
+		},
+		scene_setting = {
+			1,
+			3
+		},
+		obtain_way = {
+			2901,
+			332211
+		}
+	},
 	[6031] = {
 		action_suffix = "",
 		title = "不思量",
@@ -725,6 +756,29 @@
 		},
 		obtain_way = {}
 	},
+	[6034] = {
+		action_suffix = "",
+		title = "一枝春",
+		desc = "奥西里斯的话总是很少，但是被夕阳染成金色的笑颜，低垂着却仍闪动的睫毛，落入你发间的手指，都在替她说话。",
+		obtain_word = "",
+		scene_trial = 0,
+		limit_display = 0,
+		prefix_dlc = "",
+		can_interrupt_current_anim_switch_camera = 0,
+		light_effect = "",
+		unlock_description = "",
+		prefix = "X328",
+		light_effect_delay = "",
+		id = 6034,
+		default_music = 0,
+		can_loop_switch_camera = 0,
+		impact = {},
+		scene_tag = {},
+		scene_setting = {
+			1
+		},
+		obtain_way = {}
+	},
 	[6100] = {
 		action_suffix = "",
 		title = "作战中心大厅",
@@ -775,13 +829,15 @@
 			6029,
 			6031,
 			6032,
-			6033
+			6033,
+			6034
 		},
 		{
 			6000,
 			6001,
 			6017,
 			6018,
+			6030,
 			6100
 		}
 	},
@@ -813,9 +869,11 @@
 		6027,
 		6028,
 		6029,
+		6030,
 		6031,
 		6032,
 		6033,
+		6034,
 		6100
 	}
 }

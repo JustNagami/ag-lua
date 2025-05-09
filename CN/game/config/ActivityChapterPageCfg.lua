@@ -107,6 +107,12 @@
 		prefab_path = "Widget/Version/V4_0_1_SkuldUI_Com/V4_0_SkuldUI_PlotUI",
 		id = 321202
 	},
+	[331201] = {
+		chapter_type = 1,
+		chapter_client_id = 10121,
+		prefab_path = "Widget/Version/V4_0_1_SkuldUI_Com/V4_0_SkuldUI_PlotUI",
+		id = 331201
+	},
 	all = {
 		141200,
 		141204,
@@ -125,6 +131,7 @@
 		291201,
 		301201,
 		311201,
-		321202
+		321202,
+		331201
 	}
 }

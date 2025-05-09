@@ -2534,6 +2534,45 @@
 			0
 		}
 	},
+	[405102003] = {
+		monster_level = 80,
+		name = "三相·无间玩伴",
+		drop_lib_id = 0,
+		map = "405102003",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "三相·无间玩伴",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 405102003,
+		attribute_factor = {
+			1000,
+			1000,
+			7500
+		},
+		hero_list = {
+			{
+				1020,
+				10200301
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
 	[405115601] = {
 		monster_level = 80,
 		name = "伐灭·静谧时光",
@@ -2559,6 +2598,45 @@
 			{
 				1156,
 				11560101
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
+	[405121101] = {
+		monster_level = 80,
+		name = "魂羽·绛羽拾花",
+		drop_lib_id = 0,
+		map = "405121101",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "魂羽·绛羽拾花",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 405121101,
+		attribute_factor = {
+			1000,
+			1000,
+			7500
+		},
+		hero_list = {
+			{
+				1211,
+				12110101
 			},
 			{
 				0,
@@ -2912,7 +2990,9 @@
 		405101501,
 		405101502,
 		405102001,
+		405102003,
 		405115601,
+		405121101,
 		405128402,
 		405115002,
 		405113301,

@@ -69,7 +69,8 @@ function var_0_0.AddUIListeners(arg_5_0)
 		Application.OpenURL(var_10_0)
 	end)
 	arg_5_0:AddBtnListener(arg_5_0.sceneTrailBtn_, nil, function()
-		JumpTools.OpenPageByJump("/scenePreview", {
+		JumpTools.OpenPageByJump("/customCenter", {
+			selectType = CustomCenterView.SELECT_SCENE,
 			sceneID = arg_5_0.sceneID_
 		})
 	end)
@@ -404,7 +405,8 @@ function var_0_0.CheckSceneDrawed(arg_37_0)
 			title = GetTips("PROMPT"),
 			content = string.format(GetTips("GENGCHEN_SWIMWEAR_CHANGE_SCENE"), ItemTools.getItemName(arg_37_0.sceneID_)),
 			OkCallback = function()
-				JumpTools.OpenPageByJump("/scenePreview", {
+				JumpTools.OpenPageByJump("/customCenter", {
+					selectType = CustomCenterView.SELECT_SCENE,
 					sceneID = arg_37_0.sceneID_
 				})
 			end

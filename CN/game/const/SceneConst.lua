@@ -61,6 +61,8 @@
 		challengeRogueTeamHeroSelect = true,
 		heroTeamInfoAttributeArena = true,
 		guildBossTeamInfo = true,
+		osirisPlayGameSectionSelectHeroView = true,
+		osirisPlayGameHeroTeamInfoView = true,
 		heroTeamInfoChessView = true,
 		summerWaterTeamInfo = true,
 		xH3rdWaterTeamInfo = true

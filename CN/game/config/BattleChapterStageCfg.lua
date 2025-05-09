@@ -18180,7 +18180,6 @@
 		tips = "",
 		line_text = "",
 		background_1 = "K01",
-		hero_list = "",
 		combo_skill_id = 0,
 		drop_lib_id = 1011300,
 		monster_level = 80,
@@ -18228,6 +18227,20 @@
 		is_revive = {
 			2,
 			100
+		},
+		hero_list = {
+			{
+				1093,
+				160
+			},
+			{
+				1050,
+				161
+			},
+			{
+				1055,
+				162
+			}
 		},
 		team_type = {
 			1,
@@ -33811,6 +33824,970 @@
 			-1
 		}
 	},
+	[1032126] = {
+		ai_level = 3,
+		name = "逆水行舟",
+		tag = 0,
+		custom_lock_line = "",
+		tips = "",
+		line_text = "",
+		background_1 = "I07a",
+		combo_skill_id = 0,
+		drop_lib_id = 1011700,
+		monster_level = 80,
+		level = 60,
+		line_text_position = "",
+		user_exp = 40,
+		id = 1032126,
+		map = "1032126",
+		chip_list = "",
+		auto_next_stage_group = 0,
+		custom_line = "",
+		next_stage_id = 0,
+		hero_exp = 80,
+		cost = 40,
+		recommend_level = 0,
+		need_default_team = 0,
+		stage_num = "21-3-1",
+		next_show_id_list = {
+			1032127
+		},
+		next_unlock_id_list = {
+			1032127
+		},
+		attribute_factor = {
+			1000,
+			1000,
+			15000
+		},
+		three_star_need = {
+			{
+				8
+			},
+			{
+				13
+			},
+			{
+				14,
+				1
+			}
+		},
+		position = {
+			250,
+			-48
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1061,
+				222
+			},
+			{
+				1052,
+				223
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			1,
+			0
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[1032127] = {
+		ai_level = 3,
+		name = "时日无多",
+		tag = 2,
+		can_switch_restrict_hero_list = "",
+		custom_lock_line = "",
+		tips = "",
+		line_text = "",
+		background_1 = "L12f",
+		hero_list = "",
+		combo_skill_id = 0,
+		drop_lib_id = 1019999,
+		monster_level = 80,
+		level = 60,
+		line_text_position = "",
+		user_exp = 0,
+		id = 1032127,
+		map = "",
+		chip_list = "",
+		auto_next_stage_group = 0,
+		custom_line = "",
+		next_stage_id = 0,
+		hero_exp = 0,
+		cost = 0,
+		recommend_level = 0,
+		need_default_team = 0,
+		attribute_factor = "",
+		stage_num = "21-3-2",
+		next_show_id_list = {
+			1032128
+		},
+		next_unlock_id_list = {
+			1032128
+		},
+		three_star_need = {
+			{
+				8
+			}
+		},
+		position = {
+			680,
+			-48
+		},
+		is_revive = {
+			2,
+			100
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[1032128] = {
+		ai_level = 3,
+		name = "「调停大师」",
+		tag = 2,
+		can_switch_restrict_hero_list = "",
+		custom_lock_line = "",
+		tips = "",
+		line_text = "",
+		background_1 = "L09f",
+		hero_list = "",
+		combo_skill_id = 0,
+		drop_lib_id = 1019999,
+		monster_level = 80,
+		level = 60,
+		line_text_position = "",
+		user_exp = 0,
+		id = 1032128,
+		map = "",
+		chip_list = "",
+		auto_next_stage_group = 0,
+		custom_line = "",
+		next_stage_id = 0,
+		hero_exp = 0,
+		cost = 0,
+		recommend_level = 0,
+		need_default_team = 0,
+		attribute_factor = "",
+		stage_num = "21-3-3",
+		next_show_id_list = {
+			1032129
+		},
+		next_unlock_id_list = {
+			1032129
+		},
+		three_star_need = {
+			{
+				8
+			}
+		},
+		position = {
+			1120,
+			-224
+		},
+		is_revive = {
+			2,
+			100
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[1032129] = {
+		ai_level = 3,
+		name = "与蛇共舞",
+		tag = 1,
+		can_switch_restrict_hero_list = "",
+		custom_lock_line = "",
+		tips = "",
+		line_text = "",
+		background_1 = "L09h",
+		combo_skill_id = 0,
+		drop_lib_id = 1011700,
+		monster_level = 80,
+		level = 60,
+		line_text_position = "",
+		user_exp = 40,
+		id = 1032129,
+		map = "1032129",
+		chip_list = "",
+		auto_next_stage_group = 0,
+		custom_line = "",
+		next_stage_id = 0,
+		hero_exp = 80,
+		cost = 40,
+		recommend_level = 0,
+		need_default_team = 0,
+		stage_num = "21-3-4",
+		next_show_id_list = {
+			1032130
+		},
+		next_unlock_id_list = {
+			1032130
+		},
+		attribute_factor = {
+			800,
+			1000,
+			60000
+		},
+		three_star_need = {
+			{
+				8
+			},
+			{
+				13
+			},
+			{
+				14,
+				1
+			}
+		},
+		position = {
+			1600,
+			-224
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				10142,
+				219
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[1032130] = {
+		ai_level = 3,
+		name = "等价交换",
+		tag = 0,
+		can_switch_restrict_hero_list = "",
+		custom_lock_line = "",
+		tips = "",
+		line_text = "",
+		background_1 = "L09g",
+		combo_skill_id = 0,
+		drop_lib_id = 1011700,
+		monster_level = 80,
+		level = 60,
+		line_text_position = "",
+		user_exp = 40,
+		id = 1032130,
+		map = "1032130",
+		chip_list = "",
+		auto_next_stage_group = 0,
+		custom_line = "",
+		next_stage_id = 0,
+		hero_exp = 80,
+		cost = 40,
+		recommend_level = 0,
+		need_default_team = 0,
+		stage_num = "21-3-5",
+		next_show_id_list = {
+			1032131
+		},
+		next_unlock_id_list = {
+			1032131
+		},
+		attribute_factor = {
+			1000,
+			1000,
+			10000
+		},
+		three_star_need = {
+			{
+				8
+			},
+			{
+				13
+			},
+			{
+				14,
+				1
+			}
+		},
+		position = {
+			2100,
+			-224
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				10142,
+				219
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[1032131] = {
+		ai_level = 3,
+		name = "弃子争先",
+		tag = 2,
+		can_switch_restrict_hero_list = "",
+		custom_lock_line = "",
+		tips = "",
+		line_text = "",
+		background_1 = "L15f",
+		hero_list = "",
+		combo_skill_id = 0,
+		drop_lib_id = 1019999,
+		monster_level = 80,
+		level = 60,
+		line_text_position = "",
+		user_exp = 0,
+		id = 1032131,
+		map = "",
+		chip_list = "",
+		auto_next_stage_group = 0,
+		custom_line = "",
+		next_stage_id = 0,
+		hero_exp = 0,
+		cost = 0,
+		recommend_level = 0,
+		need_default_team = 0,
+		attribute_factor = "",
+		stage_num = "21-3-6",
+		next_show_id_list = {
+			1032132
+		},
+		next_unlock_id_list = {
+			1032132
+		},
+		three_star_need = {
+			{
+				8
+			}
+		},
+		position = {
+			2514,
+			35
+		},
+		is_revive = {
+			2,
+			100
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[1032132] = {
+		ai_level = 3,
+		name = "狭路相逢",
+		tag = 0,
+		custom_lock_line = "",
+		tips = "",
+		line_text = "",
+		background_1 = "L08g",
+		combo_skill_id = 0,
+		drop_lib_id = 1011700,
+		monster_level = 80,
+		level = 60,
+		line_text_position = "",
+		user_exp = 40,
+		id = 1032132,
+		map = "1032132",
+		chip_list = "",
+		auto_next_stage_group = 0,
+		custom_line = "",
+		next_stage_id = 0,
+		hero_exp = 80,
+		cost = 40,
+		recommend_level = 0,
+		need_default_team = 0,
+		stage_num = "21-3-7",
+		next_show_id_list = {
+			1032133
+		},
+		next_unlock_id_list = {
+			1032133
+		},
+		attribute_factor = {
+			1000,
+			1000,
+			15000
+		},
+		three_star_need = {
+			{
+				8
+			},
+			{
+				13
+			},
+			{
+				14,
+				1
+			}
+		},
+		position = {
+			2916,
+			35
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1211,
+				224
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[1032133] = {
+		ai_level = 3,
+		name = "命定的擂台",
+		tag = 1,
+		custom_lock_line = "",
+		tips = "",
+		line_text = "",
+		background_1 = "L11f",
+		combo_skill_id = 0,
+		drop_lib_id = 1011700,
+		monster_level = 80,
+		level = 60,
+		line_text_position = "",
+		user_exp = 40,
+		id = 1032133,
+		map = "1032133",
+		chip_list = "",
+		auto_next_stage_group = 0,
+		custom_line = "",
+		next_stage_id = 0,
+		hero_exp = 80,
+		cost = 40,
+		recommend_level = 0,
+		need_default_team = 0,
+		stage_num = "21-3-8",
+		next_show_id_list = {
+			1032134
+		},
+		next_unlock_id_list = {
+			1032134
+		},
+		attribute_factor = {
+			600,
+			1000,
+			70000
+		},
+		three_star_need = {
+			{
+				8
+			},
+			{
+				13
+			},
+			{
+				14,
+				1
+			}
+		},
+		position = {
+			3309,
+			-24
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1211,
+				224
+			},
+			{
+				1061,
+				222
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			1,
+			0
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[1032134] = {
+		ai_level = 3,
+		name = "安然无恙好奇猫",
+		tag = 0,
+		custom_lock_line = "",
+		tips = "",
+		line_text = "",
+		background_1 = "L15f",
+		combo_skill_id = 0,
+		drop_lib_id = 1011700,
+		monster_level = 80,
+		level = 60,
+		line_text_position = "",
+		user_exp = 40,
+		id = 1032134,
+		map = "1032134",
+		chip_list = "",
+		auto_next_stage_group = 0,
+		custom_line = "",
+		next_stage_id = 0,
+		hero_exp = 80,
+		cost = 40,
+		recommend_level = 0,
+		need_default_team = 0,
+		stage_num = "21-3-9",
+		next_show_id_list = {
+			1032135
+		},
+		next_unlock_id_list = {
+			1032135
+		},
+		attribute_factor = {
+			1000,
+			1000,
+			16000
+		},
+		three_star_need = {
+			{
+				8
+			},
+			{
+				13
+			},
+			{
+				14,
+				1
+			}
+		},
+		position = {
+			3651,
+			35
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1085,
+				220
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			0,
+			0
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[1032135] = {
+		ai_level = 3,
+		name = "阴阳相汇",
+		tag = 2,
+		can_switch_restrict_hero_list = "",
+		custom_lock_line = "",
+		tips = "",
+		line_text = "",
+		background_1 = "L13",
+		hero_list = "",
+		combo_skill_id = 0,
+		drop_lib_id = 1019999,
+		monster_level = 80,
+		level = 60,
+		line_text_position = "",
+		user_exp = 0,
+		id = 1032135,
+		map = "",
+		chip_list = "",
+		auto_next_stage_group = 0,
+		custom_line = "",
+		next_stage_id = 0,
+		hero_exp = 0,
+		cost = 0,
+		recommend_level = 0,
+		need_default_team = 0,
+		attribute_factor = "",
+		stage_num = "21-3-10",
+		next_show_id_list = {
+			1032136
+		},
+		next_unlock_id_list = {
+			1032136
+		},
+		three_star_need = {
+			{
+				8
+			}
+		},
+		position = {
+			4044,
+			35
+		},
+		is_revive = {
+			2,
+			100
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[1032136] = {
+		ai_level = 3,
+		name = "烛下影",
+		tag = 2,
+		can_switch_restrict_hero_list = "",
+		custom_lock_line = "",
+		tips = "",
+		line_text = "",
+		background_1 = "L13",
+		hero_list = "",
+		combo_skill_id = 0,
+		drop_lib_id = 1019999,
+		monster_level = 80,
+		level = 60,
+		line_text_position = "",
+		user_exp = 0,
+		id = 1032136,
+		map = "",
+		chip_list = "",
+		auto_next_stage_group = 0,
+		custom_line = "",
+		next_stage_id = 0,
+		hero_exp = 0,
+		cost = 0,
+		recommend_level = 0,
+		need_default_team = 0,
+		attribute_factor = "",
+		stage_num = "21-3-11",
+		next_show_id_list = {
+			1032137
+		},
+		next_unlock_id_list = {
+			1032137
+		},
+		three_star_need = {
+			{
+				8
+			}
+		},
+		position = {
+			4444,
+			-48
+		},
+		is_revive = {
+			2,
+			100
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[1032137] = {
+		ai_level = 3,
+		name = "极限燃烧",
+		tag = 2,
+		can_switch_restrict_hero_list = "",
+		custom_lock_line = "",
+		tips = "",
+		line_text = "",
+		background_1 = "L09h",
+		hero_list = "",
+		combo_skill_id = 0,
+		drop_lib_id = 1019999,
+		monster_level = 80,
+		level = 60,
+		line_text_position = "",
+		user_exp = 0,
+		id = 1032137,
+		map = "",
+		chip_list = "",
+		auto_next_stage_group = 0,
+		custom_line = "",
+		next_stage_id = 0,
+		hero_exp = 0,
+		cost = 0,
+		recommend_level = 0,
+		need_default_team = 0,
+		attribute_factor = "",
+		stage_num = "21-3-12",
+		next_show_id_list = {
+			1032138
+		},
+		next_unlock_id_list = {
+			1032138
+		},
+		three_star_need = {
+			{
+				8
+			}
+		},
+		position = {
+			4944,
+			-224
+		},
+		is_revive = {
+			2,
+			100
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[1032138] = {
+		ai_level = 3,
+		name = "斩断蛇首",
+		tag = 1,
+		custom_lock_line = "",
+		tips = "",
+		line_text = "",
+		background_1 = "L10h",
+		combo_skill_id = 0,
+		drop_lib_id = 1011700,
+		monster_level = 80,
+		level = 60,
+		line_text_position = "",
+		user_exp = 40,
+		id = 1032138,
+		map = "1032138",
+		chip_list = "",
+		auto_next_stage_group = 0,
+		custom_line = "",
+		next_stage_id = 0,
+		hero_exp = 80,
+		cost = 40,
+		recommend_level = 0,
+		need_default_team = 0,
+		stage_num = "21-3-13",
+		next_show_id_list = {
+			1032139
+		},
+		next_unlock_id_list = {
+			1032139
+		},
+		attribute_factor = {
+			500,
+			1000,
+			35000
+		},
+		three_star_need = {
+			{
+				8
+			},
+			{
+				13
+			},
+			{
+				14,
+				1
+			}
+		},
+		position = {
+			5404,
+			35
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1284,
+				211
+			},
+			{
+				1085,
+				220
+			},
+			{
+				0,
+				1
+			}
+		},
+		can_switch_restrict_hero_list = {
+			1,
+			1,
+			0
+		},
+		team_type = {
+			1,
+			-1
+		}
+	},
+	[1032139] = {
+		ai_level = 3,
+		name = "揭开帷幕",
+		tag = 2,
+		can_switch_restrict_hero_list = "",
+		custom_lock_line = "",
+		tips = "",
+		line_text = "",
+		background_1 = "ST0502",
+		hero_list = "",
+		combo_skill_id = 0,
+		drop_lib_id = 1019999,
+		monster_level = 80,
+		level = 60,
+		line_text_position = "",
+		user_exp = 0,
+		id = 1032139,
+		map = "",
+		chip_list = "",
+		auto_next_stage_group = 0,
+		custom_line = "",
+		next_stage_id = 0,
+		hero_exp = 0,
+		cost = 0,
+		recommend_level = 0,
+		need_default_team = 0,
+		attribute_factor = "",
+		stage_num = "21-3-14",
+		next_show_id_list = {
+			1032140
+		},
+		next_unlock_id_list = {
+			1032140
+		},
+		three_star_need = {
+			{
+				8
+			}
+		},
+		position = {
+			5854,
+			-224
+		},
+		is_revive = {
+			2,
+			100
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[1032140] = {
+		ai_level = 3,
+		name = "冥河重关",
+		tag = 2,
+		can_switch_restrict_hero_list = "",
+		custom_lock_line = "",
+		tips = "",
+		line_text = "",
+		background_1 = "L09h",
+		hero_list = "",
+		combo_skill_id = 0,
+		drop_lib_id = 1019999,
+		monster_level = 80,
+		level = 60,
+		line_text_position = "",
+		user_exp = 0,
+		id = 1032140,
+		map = "",
+		chip_list = "",
+		auto_next_stage_group = 0,
+		custom_line = "",
+		next_stage_id = 0,
+		hero_exp = 0,
+		cost = 0,
+		recommend_level = 0,
+		need_default_team = 0,
+		attribute_factor = "",
+		stage_num = "21-3-15",
+		next_show_id_list = {},
+		next_unlock_id_list = {},
+		three_star_need = {
+			{
+				8
+			}
+		},
+		position = {
+			6337,
+			-24
+		},
+		is_revive = {
+			2,
+			100
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
 	[1020101] = {
 		ai_level = 3,
 		name = "神经聚会",
@@ -39177,6 +40154,21 @@
 		1032123,
 		1032124,
 		1032125,
+		1032126,
+		1032127,
+		1032128,
+		1032129,
+		1032130,
+		1032131,
+		1032132,
+		1032133,
+		1032134,
+		1032135,
+		1032136,
+		1032137,
+		1032138,
+		1032139,
+		1032140,
 		1020101,
 		1020102,
 		1020103,

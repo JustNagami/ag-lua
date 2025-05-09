@@ -6,6 +6,7 @@ end
 
 function var_0_0.Enter(arg_2_0)
 	var_0_0.super.Enter(arg_2_0)
+	manager.audio:StopVoice()
 	arg_2_0.actor:EnableEyeController(true)
 
 	local var_2_0 = arg_2_0.actor:GetViewDirect()
@@ -27,7 +28,7 @@ function var_0_0.Enter(arg_2_0)
 
 	if type(var_2_4) == "table" and #var_2_4 > 0 then
 		arg_2_0.idleTimer = Timer.New(function()
-			arg_2_0.actor:ChangeState(PosterGirlConst.StateKay.idle)
+			arg_2_0.actor:DoIdle()
 		end, 60, -1)
 
 		arg_2_0.idleTimer:Start()

@@ -30,6 +30,7 @@ StageStrategyType = {
 	GotoMultHeartDemonStage = "GotoMultHeartDemonStage",
 	GotoDodgeBarrageStage = "GotoDodgeBarrageStage",
 	GotoAbyssStage = "GotoAbyssStage",
+	GotoOsirisPlayGameStage = "GotoOsirisPlayGameStage",
 	GotoActivityWorldBoss = "GotoActivityWorldBoss",
 	GotoPushSnowBallSingleBattleStage = "GotoPushSnowBallSingleBattleStage",
 	GotoSoloChallengeStage = "GotoSoloChallengeStage",
@@ -112,7 +113,8 @@ var_0_0.CustomStageStrategy = {
 	[BattleConst.STAGE_TYPE_NEW.ACTIVITY_DODGE_BARRAGE] = StageStrategyType.GotoDodgeBarrageStage,
 	[BattleConst.STAGE_TYPE_NEW.SKULD] = StageStrategyType.GotoSkuldStage,
 	[BattleConst.STAGE_TYPE_NEW.SEA_WARFARE] = StageStrategyType.GotoSeaWarfareStage,
-	[BattleConst.STAGE_TYPE_NEW.SAND_PLAY] = StageStrategyType.GotoSandPlayStage
+	[BattleConst.STAGE_TYPE_NEW.SAND_PLAY] = StageStrategyType.GotoSandPlayStage,
+	[BattleConst.STAGE_TYPE_NEW.OSIRIS_PLAY_GAME] = StageStrategyType.GotoOsirisPlayGameStage
 }
 
 function var_0_0.Init(arg_1_0)

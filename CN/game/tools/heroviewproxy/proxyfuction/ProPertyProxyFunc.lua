@@ -18,6 +18,8 @@
 			var_1_3 = GetMatrixtHeroPracticalAttr(var_1_0, var_1_1, var_1_4, var_1_5, StrategyMatrixData:GetHeroDataNew(arg_1_1))
 		elseif arg_1_0:GetViewDataType() == HeroConst.HERO_DATA_TYPE.CHALLENGEROUGETEAM or arg_1_0.isChallengeRogue then
 			var_1_3 = ChallengeRogueTeamData:GetHeroFinalAttr(var_1_0, var_1_0:GetServantInfo(), var_1_1, var_1_4, false)
+		elseif arg_1_0:GetViewDataType() == HeroConst.HERO_DATA_TYPE.OSIRISPLAYGAME then
+			var_1_3 = OsirisPlayGameTempHeroData:GetHeroFinalAttr(var_1_0, var_1_0:GetServantInfo(), var_1_1, var_1_4, true)
 		else
 			var_1_3 = GetHeroFinalAttr(var_1_0, var_1_0:GetServantInfo(), var_1_1, var_1_4, true)
 		end
@@ -50,6 +52,8 @@
 			var_2_3 = GetMatrixtHeroPracticalAttr(var_2_1, var_2_2, var_2_0, var_2_4, StrategyMatrixData:GetHeroDataNew(arg_2_1))
 		elseif arg_2_0:GetViewDataType() == HeroConst.HERO_DATA_TYPE.CHALLENGEROUGETEAM or arg_2_0.isChallengeRogue then
 			var_2_3 = ChallengeRogueTeamData:GetHeroFinalAttr(var_2_1, var_2_1:GetServantInfo(), var_2_2, var_2_0, false)
+		elseif arg_2_0:GetViewDataType() == HeroConst.HERO_DATA_TYPE.OSIRISPLAYGAME then
+			var_2_3 = OsirisPlayGameTempHeroData:GetHeroFinalAttr(var_2_1, var_2_1:GetServantInfo(), var_2_2, var_2_0, false)
 		else
 			var_2_3 = GetHeroFinalAttr(var_2_1, var_2_1:GetServantInfo(), var_2_2, var_2_0, false)
 		end

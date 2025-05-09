@@ -16,10 +16,10 @@
 	},
 	[51990] = {
 		stage_id = 60551990,
-		type = 1,
+		type = 0,
 		base_point = 1000,
 		activity_id = 51990,
-		order = 4,
+		order = 51990,
 		boss_list = {
 			5199
 		},
@@ -261,10 +261,10 @@
 	},
 	[1032123] = {
 		stage_id = 60500004,
-		type = 1,
+		type = 0,
 		base_point = 1000,
 		activity_id = 1032123,
-		order = 1,
+		order = 1032123,
 		boss_list = {
 			4047
 		},
@@ -276,10 +276,10 @@
 	},
 	[1032125] = {
 		stage_id = 60500005,
-		type = 1,
+		type = 0,
 		base_point = 1000,
 		activity_id = 1032125,
-		order = 2,
+		order = 1032125,
 		boss_list = {
 			4047
 		},
@@ -291,10 +291,10 @@
 	},
 	[1032113] = {
 		stage_id = 60500006,
-		type = 1,
+		type = 0,
 		base_point = 1000,
 		activity_id = 1032113,
-		order = 3,
+		order = 1032113,
 		boss_list = {
 			1032113
 		},
@@ -304,15 +304,54 @@
 			"Widget/System/BossTestUI/popUI/60500006"
 		}
 	},
+	[1032129] = {
+		level_describe = "",
+		stage_id = 60500007,
+		type = 1,
+		base_point = 1000,
+		activity_id = 1032129,
+		order = 1032129,
+		boss_list = {
+			1032113
+		},
+		pool = {},
+		multiple_affix = {}
+	},
+	[1032133] = {
+		level_describe = "",
+		stage_id = 60500008,
+		type = 1,
+		base_point = 1000,
+		activity_id = 1032133,
+		order = 1032133,
+		boss_list = {
+			1032113
+		},
+		pool = {},
+		multiple_affix = {}
+	},
+	[1032138] = {
+		level_describe = "",
+		stage_id = 60500009,
+		type = 1,
+		base_point = 1000,
+		activity_id = 1032138,
+		order = 1032138,
+		boss_list = {
+			1032113
+		},
+		pool = {},
+		multiple_affix = {}
+	},
 	get_id_list_by_type = {
 		{
-			51990,
-			1032123,
-			1032125,
-			1032113
+			1032129,
+			1032133,
+			1032138
 		},
 		[0] = {
 			50950,
+			51990,
 			51380,
 			2,
 			40200,
@@ -328,7 +367,10 @@
 			30510,
 			1032012,
 			5230111,
-			5230124
+			5230124,
+			1032123,
+			1032125,
+			1032113
 		}
 	},
 	all = {
@@ -352,6 +394,9 @@
 		5230124,
 		1032123,
 		1032125,
-		1032113
+		1032113,
+		1032129,
+		1032133,
+		1032138
 	}
 }

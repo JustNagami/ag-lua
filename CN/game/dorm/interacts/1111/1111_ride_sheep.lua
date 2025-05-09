@@ -96,7 +96,7 @@
 	},
 	[13.5666666666667] = {
 		{
-			attachPoint = "root",
+			attachPoint = "gua_root",
 			efxPath = "Dorm/Effect/houzhai/fx_9111_shuaidao",
 			action = "playEfx",
 			entity = 0,
@@ -121,7 +121,7 @@
 	},
 	[13.6333333333333] = {
 		{
-			attachPoint = "root",
+			attachPoint = "gua_root",
 			efxPath = "Dorm/Effect/houzhai/fx_9111_shengqi",
 			action = "playEfx",
 			entity = 0,
@@ -196,7 +196,7 @@
 	},
 	[18.8] = {
 		{
-			attachPoint = "root",
+			attachPoint = "gua_root",
 			efxPath = "Dorm/Effect/houzhai/fx_9111_shengqi1",
 			action = "playEfx",
 			entity = 0,

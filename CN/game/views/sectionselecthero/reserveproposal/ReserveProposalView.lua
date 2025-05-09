@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("ReserveProposalView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "Widget/System/Formation/FormationReserveView"
+	return "Widget/System/Formation/FormationProposalUI"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -276,8 +276,8 @@ function var_0_0.SaveProposal(arg_37_0)
 	ReserveAction.SaveReserveProposal(arg_37_0.saveContID_, handler(arg_37_0, arg_37_0.OnSaveProposal))
 end
 
-function var_0_0.SaveName(arg_38_0, arg_38_1)
-	ReserveAction.RenameReserveProposal(arg_38_0.saveContID_, arg_38_1, handler(arg_38_0, arg_38_0.OnSaveProposal))
+function var_0_0.SaveName(arg_38_0, arg_38_1, arg_38_2)
+	ReserveAction.RenameReserveProposal(arg_38_0.saveContID_, arg_38_1, arg_38_2, handler(arg_38_0, arg_38_0.OnSaveProposal))
 end
 
 function var_0_0.OnSaveProposal(arg_39_0)
@@ -318,7 +318,7 @@ function var_0_0.OnReserveProposalClickSave(arg_40_0)
 	arg_40_0.saveContID_ = arg_40_0.editContID_
 
 	if var_40_0:GetName() == "" then
-		JumpTools.OpenPageByJump("ProposalPopup")
+		arg_40_0:GotoRenameView(arg_40_0.saveContID_)
 	else
 		arg_40_0:SaveProposal()
 	end
@@ -384,69 +384,36 @@ end
 function var_0_0.OnReserveProposalClickRename(arg_47_0, arg_47_1)
 	arg_47_0.saveContID_ = arg_47_1
 
-	JumpTools.OpenPageByJump("ProposalPopup")
+	arg_47_0:GotoRenameView(arg_47_0.saveContID_)
 end
 
-function var_0_0.OnSectionClickHero(arg_48_0, arg_48_1)
-	arg_48_0.sectionProxy_:GotoHeroInfoUI(arg_48_1)
+function var_0_0.GotoRenameView(arg_48_0, arg_48_1)
+	local var_48_0 = arg_48_0.reserveTemplate_:GetAttributeTagList(arg_48_1)
+
+	JumpTools.OpenPageByJump("reserveProposalRename", {
+		selectAttributeList = var_48_0
+	})
 end
 
-function var_0_0.OnChangeHeroTeam(arg_49_0, arg_49_1, arg_49_2)
-	arg_49_0.editHeroList_ = clone(arg_49_1)
-
-	arg_49_0:RefreshSwitchList()
-	arg_49_0:RefreshBtnPanel()
+function var_0_0.OnSectionClickHero(arg_49_0, arg_49_1)
+	arg_49_0.sectionProxy_:GotoHeroInfoUI(arg_49_1)
 end
 
-function var_0_0.OnChangeComboSkill(arg_50_0, arg_50_1)
-	arg_50_0.editComboSkillID_ = arg_50_1
+function var_0_0.OnChangeHeroTeam(arg_50_0, arg_50_1, arg_50_2)
+	arg_50_0.editHeroList_ = clone(arg_50_1)
 
+	arg_50_0:RefreshSwitchList()
 	arg_50_0:RefreshBtnPanel()
 end
 
-function var_0_0.OnInput(arg_51_0, arg_51_1, arg_51_2)
-	if arg_51_1 == "" then
-		ShowTips("INPUT_EQUIP_PROPOSAL_NAME")
+function var_0_0.OnChangeComboSkill(arg_51_0, arg_51_1)
+	arg_51_0.editComboSkillID_ = arg_51_1
 
-		return
-	end
+	arg_51_0:RefreshBtnPanel()
+end
 
-	if IsAllSpace(arg_51_1) then
-		ShowTips("INPUT_CHAT_CONTENT")
-
-		arg_51_2.text = ""
-
-		return
-	end
-
-	local var_51_0, var_51_1 = textLimit(arg_51_1, GameSetting.user_name_max.value[1])
-
-	arg_51_2.text = var_51_0
-	arg_51_1 = var_51_0
-
-	if not nameRule(arg_51_1) then
-		ShowTips("ERROR_USER_NAME_SYMBOL_WORD")
-
-		arg_51_2.text = ""
-
-		return
-	end
-
-	WordVerifyBySDK(arg_51_1, function(arg_52_0)
-		if not arg_52_0 then
-			ShowTips("SENSITIVE_WORD")
-
-			arg_51_2.text = ""
-
-			return
-		else
-			if not var_51_1 then
-				return
-			end
-
-			arg_51_0:SaveName(arg_51_1)
-		end
-	end, JUDGE_MESSAGE_TYPE.OTHER)
+function var_0_0.OnInput(arg_52_0, arg_52_1, arg_52_2)
+	arg_52_0:SaveName(arg_52_1, arg_52_2)
 end
 
 function var_0_0.OnDeleteProposal(arg_53_0, arg_53_1, arg_53_2)

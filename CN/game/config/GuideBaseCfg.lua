@@ -3107,6 +3107,325 @@
 		ignore_group_condition = {},
 		leaps = {}
 	},
+	[127] = {
+		narrator_name = "奥西里斯",
+		group = 0,
+		not_skip_guide = 0,
+		id = 127,
+		narrator_icon = "1211",
+		is_no_home = false,
+		steps = {
+			12701,
+			12702,
+			12703,
+			12704,
+			12705
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"osirisPlayGameEnterView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[128] = {
+		narrator_name = "奥西里斯",
+		group = 0,
+		not_skip_guide = 0,
+		id = 128,
+		narrator_icon = "1211",
+		is_no_home = false,
+		steps = {
+			12801,
+			12802
+		},
+		open_condition = {
+			{
+				"guide",
+				127
+			},
+			{
+				"uiNameList",
+				{
+					"osirisPlayGameSectionSelectHeroView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[129] = {
+		narrator_name = "奥西里斯",
+		group = 0,
+		not_skip_guide = 0,
+		id = 129,
+		narrator_icon = "1211",
+		is_no_home = false,
+		steps = {
+			12901,
+			12902,
+			12903,
+			12904
+		},
+		open_condition = {
+			{
+				"osirisPlayGame",
+				5260163
+			},
+			{
+				"uiNameList",
+				{
+					"osirisPlayGameEnterView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[130] = {
+		narrator_name = "梵天",
+		group = 0,
+		not_skip_guide = 0,
+		id = 130,
+		narrator_icon = "102003",
+		is_no_home = false,
+		steps = {
+			13001,
+			13002
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"GuelGameView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[131] = {
+		narrator_name = "弥弥尔",
+		group = 0,
+		not_skip_guide = 0,
+		id = 131,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			13101,
+			13102,
+			13103,
+			13104,
+			13105
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"tetrisGameStageView"
+				}
+			},
+			{
+				"tetris",
+				"tetrisStage",
+				40103
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[132] = {
+		narrator_name = "弥弥尔",
+		group = 0,
+		not_skip_guide = 0,
+		id = 132,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			13201
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"tetrisGameStageView"
+				}
+			},
+			{
+				"tetris",
+				"tetrisSkill"
+			},
+			{
+				"tetris",
+				"tetrisStage",
+				40101
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[133] = {
+		narrator_name = "弥弥尔",
+		group = 0,
+		not_skip_guide = 0,
+		id = 133,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			13301,
+			13302
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"tetrisGameStageView"
+				}
+			},
+			{
+				"tetris",
+				"tetrisLock"
+			},
+			{
+				"tetris",
+				"tetrisStage",
+				40105
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[135] = {
+		narrator_name = "弥弥尔",
+		group = 0,
+		not_skip_guide = 0,
+		id = 135,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			13501,
+			13502
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"tetrisGameStageView"
+				}
+			},
+			{
+				"tetris",
+				"tetrisBubble"
+			},
+			{
+				"tetris",
+				"tetrisStage",
+				40106
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[136] = {
+		narrator_name = "弥弥尔",
+		group = 0,
+		not_skip_guide = 0,
+		id = 136,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			13601,
+			13602
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"tetrisGameStageView"
+				}
+			},
+			{
+				"tetris",
+				"tetrisStage",
+				40108
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[137] = {
+		narrator_name = "弥弥尔",
+		group = 0,
+		not_skip_guide = 0,
+		id = 137,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			13701,
+			13702,
+			13703
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"tetrisGameStageView"
+				}
+			},
+			{
+				"tetris",
+				"tetrisStage",
+				40102
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[138] = {
+		narrator_name = "弥弥尔",
+		group = 0,
+		not_skip_guide = 0,
+		id = 138,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			13801
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"tetrisGameStageView"
+				}
+			},
+			{
+				"tetris",
+				"tetrisLock"
+			},
+			{
+				"tetris",
+				"tetrisStage",
+				40109
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
 	get_id_list_by_not_skip_guide = {
 		[0] = {
 			10,
@@ -3204,7 +3523,18 @@
 			116,
 			117,
 			119,
-			120
+			120,
+			127,
+			128,
+			129,
+			130,
+			131,
+			132,
+			133,
+			135,
+			136,
+			137,
+			138
 		},
 		{
 			1,
@@ -3323,6 +3653,17 @@
 		116,
 		117,
 		119,
-		120
+		120,
+		127,
+		128,
+		129,
+		130,
+		131,
+		132,
+		133,
+		135,
+		136,
+		137,
+		138
 	}
 }

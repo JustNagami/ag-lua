@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("TetrisGameGetSkillView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "Widget/BackHouseUI/TetrisGame/TetrisGameexplainPopUI"
+	return "Widget/Version/Alone_TetrisGameUI/TetrisGameexplainPopUI"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -30,10 +30,14 @@ function var_0_0.EnterSelect(arg_6_0)
 	arg_6_0.stageID = arg_6_0.params_.stageID
 	arg_6_0.skillList = {}
 
-	if ActivityTetrisGameStageCfg[arg_6_0.stageID].type == TetrisGameConst.stageType.endLess then
-		arg_6_0.skillList = TetrisGameData:GetSkillList()
+	if arg_6_0.stageID and arg_6_0.stageID > 0 then
+		if ActivityTetrisGameStageCfg[arg_6_0.stageID].type == TetrisGameConst.stageType.endLess then
+			arg_6_0.skillList = TetrisGameData:GetEndlessSkillList()
+		else
+			arg_6_0.skillList = ActivityTetrisGameStageCfg[arg_6_0.stageID].skill_list
+		end
 	else
-		arg_6_0.skillList = ActivityTetrisGameStageCfg[arg_6_0.stageID].skill_list
+		arg_6_0.skillList = arg_6_0.params_.skillList
 	end
 
 	if #arg_6_0.skillList <= 1 then
@@ -41,6 +45,8 @@ function var_0_0.EnterSelect(arg_6_0)
 	else
 		arg_6_0.stateController:SetSelectedState("full")
 	end
+
+	arg_6_0.index = 1
 
 	for iter_6_0, iter_6_1 in ipairs(arg_6_0.skillList or {}) do
 		if arg_6_0.params_.skillID == iter_6_1 then
@@ -58,6 +64,12 @@ end
 function var_0_0.AddUIListener(arg_8_0)
 	arg_8_0:AddBtnListener(arg_8_0.maskBtn, nil, function()
 		arg_8_0:Back()
+
+		if arg_8_0.params_.closeCallBack then
+			arg_8_0.params_.closeCallBack()
+
+			arg_8_0.params_.closeCallBack = nil
+		end
 	end)
 	arg_8_0:AddBtnListener(arg_8_0.btnleftBtn_, nil, function()
 		if arg_8_0.index > 1 then

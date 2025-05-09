@@ -7,6 +7,7 @@ end
 function var_0_0.Init(arg_2_0)
 	arg_2_0.cameraTemplateDic = {}
 	arg_2_0.cameraSwitchEndHandler = handler(arg_2_0, arg_2_0.OnCameraSwitchEnd)
+	arg_2_0.switchingCameraName = nil
 end
 
 function var_0_0.Dispose(arg_3_0)
@@ -105,7 +106,8 @@ function var_0_0.SwitchTargetCamera(arg_11_0, arg_11_1, arg_11_2, arg_11_3)
 	arg_11_0.curCameraType = arg_11_1
 
 	arg_11_0.cameraTemplateDic[arg_11_0.curCameraType]:SetActive(true)
-	arg_11_0.cameraTemplateDic[arg_11_1]:SwitchCamera(arg_11_2, arg_11_3)
+
+	arg_11_0.switchingCameraName = arg_11_0.cameraTemplateDic[arg_11_1]:SwitchCamera(arg_11_2, arg_11_3)
 end
 
 function var_0_0.CheckLoadCameraTemplate(arg_12_0, arg_12_1)
@@ -136,15 +138,29 @@ function var_0_0.SwitchCameraEnd(arg_15_0)
 		end
 
 		if arg_15_0.isSwitchingCamera then
-			arg_15_0:OnCameraSwitchEnd()
+			arg_15_0:OnCameraSwitchEnd(arg_15_0.switchingCameraName)
 		end
 	end, 2, 1):Start()
 end
 
 function var_0_0.OnCameraSwitchEnd(arg_17_0, arg_17_1)
-	arg_17_0.isSwitchingCamera = false
+	if arg_17_0.isSwitchingCamera and arg_17_0.switchingCameraName == arg_17_1 then
+		arg_17_0.isSwitchingCamera = false
 
-	manager.notify:Invoke(RESERVE_CAMERA_SWITCH_END)
+		manager.notify:Invoke(RESERVE_CAMERA_SWITCH_END)
+	end
+end
+
+function var_0_0.CulculateRuntimeCameraFov(arg_18_0, arg_18_1)
+	local var_18_0 = SectionSelectHeroConst.STANDARD_SCREEN_WIDTH / SectionSelectHeroConst.STANDARD_SCREEN_HEIGHT / (_G.SCREEN_WIDTH / _G.SCREEN_HEIGHT)
+
+	if var_18_0 > 1 then
+		arg_18_0.runtimeCameraFov = arg_18_1 * var_18_0
+	else
+		arg_18_0.runtimeCameraFov = arg_18_1
+	end
+
+	return arg_18_0.runtimeCameraFov
 end
 
 return var_0_0

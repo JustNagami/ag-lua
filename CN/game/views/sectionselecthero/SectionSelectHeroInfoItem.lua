@@ -135,6 +135,7 @@ function var_0_0.OnExit(arg_22_0)
 	arg_22_0.randomAttributeTipsView_:OnExit()
 	arg_22_0:UnBindRedPoint()
 	arg_22_0:RemoveAllEventListener()
+	arg_22_0:StopAdaptPositionTimer()
 end
 
 function var_0_0.AddEventListener(arg_23_0)
@@ -330,11 +331,12 @@ end
 function var_0_0.Show(arg_49_0, arg_49_1)
 	SetActive(arg_49_0.gameObject_, arg_49_1)
 
-	if not arg_49_1 then
+	if arg_49_1 then
+		arg_49_0.enterAnim_:Update(0)
+		arg_49_0:AdaptPosition()
+	else
 		arg_49_0.randomAttributeTipsView_:Show(false)
 	end
-
-	arg_49_0.enterAnim_:Update(0)
 end
 
 function var_0_0.OnSectionBeginDragHero(arg_50_0)
@@ -361,7 +363,7 @@ function var_0_0.UpdateLocalPosition(arg_52_0)
 
 		if var_52_1 then
 			if var_52_1.x < 0 or var_52_1.x > _G.SCREEN_WIDTH then
-				Debug.LogError("HeroInfoItem position is out of range, powerPoitnScreenPosX: " .. var_52_1.x)
+				Debug.Log("HeroInfoItem position is out of range, powerPoitnScreenPosX: " .. var_52_1.x)
 
 				return false
 			end
@@ -375,7 +377,7 @@ function var_0_0.UpdateLocalPosition(arg_52_0)
 
 		if var_52_4 then
 			if var_52_4.x < 0 or var_52_4.x > _G.SCREEN_WIDTH then
-				Debug.LogError("HeroInfoItem position is out of range, sceneStateGoScreenPos: " .. var_52_4.x)
+				Debug.Log("HeroInfoItem position is out of range, sceneStateGoScreenPos: " .. var_52_4.x)
 
 				return false
 			end
@@ -386,14 +388,45 @@ function var_0_0.UpdateLocalPosition(arg_52_0)
 		end
 	end
 
+	arg_52_0:AdaptPosition()
+
 	return true
 end
 
-function var_0_0.UpdateDragPosition(arg_53_0)
-	local var_53_0 = arg_53_0.dragEventListener_.transform
+function var_0_0.AdaptPosition(arg_53_0)
+	arg_53_0:StopAdaptPositionTimer()
+	arg_53_0:StartAdaptPositionTimer()
+end
 
-	arg_53_0.originalDragPosition_ = var_53_0:GetLocalPosition()
-	arg_53_0.originalDragScreenPos_ = manager.ui.uiCamera:WorldToScreenPoint(var_53_0.position)
+function var_0_0.StartAdaptPositionTimer(arg_54_0)
+	arg_54_0.adaptTimer = FrameTimer.New(function()
+		Debug.Log("HeroInfoItem adapt position")
+
+		local var_55_0 = manager.ui.uiCamera:WorldToScreenPoint(arg_54_0.topPointTrans_.position).y
+
+		if var_55_0 > _G.SCREEN_HEIGHT then
+			local var_55_1 = (_G.SCREEN_HEIGHT - var_55_0) * manager.ui.canvasRate
+
+			arg_54_0.transform_:SetLocalPositionY(arg_54_0.transform_:GetLocalPositionY() + var_55_1)
+		end
+	end, 1, 1)
+
+	arg_54_0.adaptTimer:Start()
+end
+
+function var_0_0.StopAdaptPositionTimer(arg_56_0)
+	if arg_56_0.adaptTimer then
+		arg_56_0.adaptTimer:Stop()
+
+		arg_56_0.adaptTimer = nil
+	end
+end
+
+function var_0_0.UpdateDragPosition(arg_57_0)
+	local var_57_0 = arg_57_0.dragEventListener_.transform
+
+	arg_57_0.originalDragPosition_ = var_57_0:GetLocalPosition()
+	arg_57_0.originalDragScreenPos_ = manager.ui.uiCamera:WorldToScreenPoint(var_57_0.position)
 end
 
 return var_0_0

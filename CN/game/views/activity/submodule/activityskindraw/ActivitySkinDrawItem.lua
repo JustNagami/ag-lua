@@ -16,7 +16,6 @@ function var_0_0.InitUI(arg_3_0)
 	arg_3_0:BindCfgUI()
 
 	arg_3_0.getCon_ = arg_3_0.controllerEx_:GetController("get")
-	arg_3_0.timeCon_ = arg_3_0.controllerEx_:GetController("time")
 end
 
 function var_0_0.AddUIListeners(arg_4_0)
@@ -37,14 +36,17 @@ function var_0_0.RefreshData(arg_7_0, arg_7_1, arg_7_2)
 
 	arg_7_0.getCon_:SetSelectedState(tostring(arg_7_0.count <= 0))
 
-	if arg_7_2 then
-		if ItemCfg[arg_7_0.itemId_].type == ItemConst.ITEM_TYPE.HERO_SKIN then
-			arg_7_0.imgReward_.sprite = getSprite("Atlas/T0_109502Atlas", "T0_109502_01212_6")
-		else
-			arg_7_0.imgReward_.sprite = ItemTools.getItemSprite(arg_7_0.itemId_)
-		end
+	local var_7_0 = ActivitySkinDrawTools.GetSkinIconPath(arg_7_0.itemId_)
+	local var_7_1 = ActivitySkinDrawTools.GetSceneIconPath(arg_7_0.itemId_)
+
+	if var_7_0 then
+		arg_7_0.imgReward_.sprite = getSprite(var_7_0[1], var_7_0[2])
+	elseif var_7_1 then
+		arg_7_0.imgReward_.sprite = pureGetSpriteWithoutAtlas(var_7_1[1])
 	else
-		arg_7_0.timeCon_:SetSelectedState(HomeSceneSettingCfg[arg_7_0.itemId_].action_suffix)
+		local var_7_2 = ItemCfg[arg_7_0.itemId_]
+
+		arg_7_0.imgReward_.sprite = ItemTools.getItemSprite(arg_7_0.itemId_)
 	end
 end
 

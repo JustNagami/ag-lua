@@ -7,3 +7,4 @@ PreviewHeroDataTemplate = import("game.data.heroDataTemplate.PreviewHeroDataTemp
 CooperationHeroDataTemplate = import("game.data.heroDataTemplate.CooperationHeroDataTemplate")
 StrategyMatrixHeroDataTemplate = import("game.data.heroDataTemplate.StrategyMatrixHeroDataTemplate")
 ChallengeRogueTeamHeroDataTemplate = import("game.data.heroDataTemplate.ChallengeRogueTeamHeroDataTemplate")
+OsirisPlayGameDataTemplate = import("game.data.heroDataTemplate.OsirisPlayGameDataTemplate")

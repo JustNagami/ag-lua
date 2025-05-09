@@ -42,7 +42,7 @@ function var_0_0.SetData(arg_5_0, arg_5_1, arg_5_2, arg_5_3, arg_5_4)
 	end
 
 	if not nullable(arg_5_4, "ignoreDefender") then
-		var_5_1 = IdolTraineeTools:CheckHeroIsDefine(arg_5_1)
+		var_5_2 = IdolTraineeTools:CheckHeroIsDefine(arg_5_1)
 	end
 
 	arg_5_0:RefreshDanceGameRole(var_5_2, var_5_1)

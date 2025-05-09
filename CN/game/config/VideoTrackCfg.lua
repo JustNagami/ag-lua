@@ -409,6 +409,16 @@
 		name = "V4_0_SkuldUI_PlotUI.usm",
 		has_non_native = 0
 	},
+	["activity_102003_idle_loop01.usm"] = {
+		has_tracks = 0,
+		name = "activity_102003_idle_loop01.usm",
+		has_non_native = 0
+	},
+	["activity_102003_idle_loop02.usm"] = {
+		has_tracks = 0,
+		name = "activity_102003_idle_loop02.usm",
+		has_non_native = 0
+	},
 	["blue.usm"] = {
 		has_tracks = 0,
 		name = "blue.usm",
@@ -472,6 +482,11 @@
 	["pool_1085.usm"] = {
 		has_tracks = 0,
 		name = "pool_1085.usm",
+		has_non_native = 0
+	},
+	["pool_1211.usm"] = {
+		has_tracks = 0,
+		name = "pool_1211.usm",
 		has_non_native = 0
 	},
 	["1070_start.usm"] = {
@@ -879,6 +894,21 @@
 		name = "1085_loop.usm",
 		has_non_native = 0
 	},
+	["1211_start.usm"] = {
+		has_tracks = 0,
+		name = "1211_start.usm",
+		has_non_native = 0
+	},
+	["1211_loop.usm"] = {
+		has_tracks = 0,
+		name = "1211_loop.usm",
+		has_non_native = 0
+	},
+	["102003_start.usm"] = {
+		has_tracks = 1,
+		name = "102003_start.usm",
+		has_non_native = 0
+	},
 	["1076_skin02_start.usm"] = {
 		has_tracks = 0,
 		name = "1076_skin02_start.usm",
@@ -1022,6 +1052,11 @@
 	["108501_login.usm"] = {
 		has_tracks = 1,
 		name = "108501_login.usm",
+		has_non_native = 0
+	},
+	["121101_login.usm"] = {
+		has_tracks = 1,
+		name = "121101_login.usm",
 		has_non_native = 0
 	}
 }

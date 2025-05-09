@@ -20,233 +20,272 @@ function var_0_0.RegistCanEndFunc(arg_2_0, arg_2_1)
 	arg_2_0.canEndFunc_ = arg_2_1
 end
 
-function var_0_0.Show(arg_3_0, arg_3_1, arg_3_2, arg_3_3)
-	local var_3_0
-	local var_3_1
-	local var_3_2
+local var_0_1 = {
+	menuPop = true,
+	GuelGameSeclectView = true,
+	DanceGameView = true,
+	TZeroGameChangeView = true,
+	DrawCardT0GameView = true,
+	GuelGameView = true,
+	setting = true
+}
 
-	if arg_3_3 then
-		local var_3_3 = gameContext:GetAllOpenRoute()
+function var_0_0.CheckGoHome(arg_3_0, arg_3_1, arg_3_2)
+	return arg_3_2 and gameContext:IsOpenRoute("home")
+end
 
-		if var_3_3[1] == "home" then
-			local var_3_4 = gameContext.oldRoutes_[1]
+function var_0_0.OverrideIgnoreTrainsition(arg_4_0, arg_4_1)
+	if gameContext:IsRouteBack() and arg_4_1 == "menuPop" then
+		return false
+	end
 
-			if var_3_4 ~= "chat" and var_3_4 ~= "userinfo" and var_3_4 ~= "clubBoss" then
+	return var_0_1[arg_4_1]
+end
+
+function var_0_0.Show(arg_5_0, arg_5_1, arg_5_2, arg_5_3)
+	local var_5_0
+	local var_5_1
+	local var_5_2
+
+	if arg_5_3 then
+		local var_5_3 = gameContext:GetAllOpenRoute()
+
+		if var_5_3[1] == "home" then
+			local var_5_4 = gameContext.oldRoutes_[1]
+			local var_5_5 = gameContext.oldRoutes_
+
+			if var_5_4 ~= "chat" and var_5_4 ~= "clubBoss" and not table.indexof(var_5_5, "DrawCardT0GameView") then
 				PlayerTools.UpdateRandomData(HomeSceneSettingConst.RANDOM_MODE.EACH_ENTER)
 			end
 		end
 
-		local var_3_5
+		local var_5_6
 
-		var_3_1, var_3_5 = manager.loadScene:GetNeedLoadSceneName(var_3_3)
+		var_5_1, var_5_6 = manager.loadScene:GetNeedLoadSceneName(var_5_3)
 
-		if not var_3_5 then
+		if not var_5_6 then
 			manager.loadScene:StopSceneSoundEffect()
 		else
-			manager.loadScene:TryStopSceneSoundEffect(var_3_5)
+			manager.loadScene:TryStopSceneSoundEffect(var_5_6)
 		end
 	end
 
 	manager.loadScene:HideLastSceneList()
-	arg_3_0:DoCallBack()
-	arg_3_0:ClearTimer()
-
-	arg_3_0.callBackFun_ = arg_3_1
-
-	if gameContext ~= nil then
-		var_3_0 = gameContext:GetLastOpenPage()
-
-		if ViewConst.PLAY_TRANSITION_URL_LIST[var_3_0] and arg_3_2 or arg_3_3 and var_3_1 or arg_3_3 and gameContext:IsOpenRoute("home") then
-			-- block empty
-		else
-			arg_3_0:ClearTimer()
-			arg_3_0:DoCallBack()
-
-			return
-		end
-	end
-
-	SetActive(arg_3_0.gameObject_, true)
-	arg_3_0:PlayAnimator("enter")
-
-	if arg_3_3 and var_3_1 then
-		var_3_0 = var_3_1
-	end
-
-	if var_3_0 and var_3_0 ~= "home" then
-		manager.loadScene:SetShouldLoadSceneName(var_3_0)
-	end
-
-	arg_3_0.waitNextFrameToCallback = false
-
-	local var_3_6 = false
-
-	arg_3_0.timer_ = FrameTimer.New(function()
-		local var_4_0 = true
-
-		if arg_3_0.canEndFunc_ then
-			var_4_0 = arg_3_0.canEndFunc_() and manager.loadScene:CanEnd()
-		end
-
-		local var_4_1 = arg_3_0.animator_:GetCurrentAnimatorStateInfo(0)
-
-		if not var_4_1:IsName("enter") then
-			arg_3_0:PlayAnimator("enter")
-		end
-
-		if var_4_1.normalizedTime > 1 and var_4_1:IsName("enter") and var_4_0 then
-			if not arg_3_0.waitNextFrameToCallback then
-				arg_3_0.waitNextFrameToCallback = true
-			else
-				LoadingUIManager.inst:CloseLoadUI()
-				arg_3_0:ClearTimer()
-				arg_3_0:DoCallBack()
-
-				arg_3_0.waitNextFrameToCallback = false
-			end
-		end
-
-		if var_4_1.normalizedTime > 0.5 and var_4_1:IsName("enter") and not var_3_6 then
-			if var_3_0 and var_3_0 == "home" then
-				manager.loadScene:SetShouldLoadSceneName(var_3_0)
-			end
-
-			var_3_6 = true
-		end
-	end, 1, -1)
-
-	arg_3_0.timer_:Start()
-end
-
-function var_0_0.Hide(arg_5_0, arg_5_1, arg_5_2)
-	if gameContext ~= nil then
-		local var_5_0 = gameContext:GetLastOpenPage()
-
-		if (not ViewConst.PLAY_TRANSITION_URL_LIST[var_5_0] or not arg_5_2) and (not gameContext:IsOpenRoute("home") or var_5_0 == "menuPop" and not gameContext:IsRouteBack()) then
-			arg_5_0:DoCallBack()
-			arg_5_0:ClearTimer()
-			SetActive(arg_5_0.gameObject_, false)
-
-			if arg_5_1 then
-				arg_5_1()
-			end
-
-			return
-		end
-	end
-
 	arg_5_0:DoCallBack()
 	arg_5_0:ClearTimer()
 
 	arg_5_0.callBackFun_ = arg_5_1
-	arg_5_0.waitNextFrameToHide = false
-	arg_5_0.timer_ = FrameTimer.New(function()
-		if not arg_5_0.waitNextFrameToHide then
-			arg_5_0:PlayAnimator("out")
 
-			arg_5_0.waitNextFrameToHide = true
+	if gameContext ~= nil then
+		var_5_0 = gameContext:GetLastOpenPage()
 
-			return
-		end
-
-		local var_6_0 = arg_5_0.animator_:GetCurrentAnimatorStateInfo(0)
-
-		if not var_6_0:IsName("out") then
-			arg_5_0:PlayAnimator("out")
-		end
-
-		if var_6_0.normalizedTime > 1 and var_6_0:IsName("out") then
+		if (not ViewConst.PLAY_TRANSITION_URL_LIST[var_5_0] or not arg_5_2) and (not arg_5_3 or not var_5_1) and (arg_5_0:OverrideIgnoreTrainsition(var_5_0) or not arg_5_0:CheckGoHome(var_5_0, arg_5_3)) then
 			arg_5_0:ClearTimer()
 			arg_5_0:DoCallBack()
 
-			arg_5_0.waitNextFrameToHide = false
+			return
+		end
+	end
+
+	SetActive(arg_5_0.gameObject_, true)
+	arg_5_0:PlayAnimator("enter")
+
+	if arg_5_3 and var_5_1 then
+		var_5_0 = var_5_1
+	end
+
+	if var_5_0 and var_5_0 ~= "home" then
+		manager.loadScene:SetShouldLoadSceneName(var_5_0)
+	end
+
+	arg_5_0.waitNextFrameToCallback = false
+
+	local var_5_7 = false
+
+	arg_5_0.timer_ = FrameTimer.New(function()
+		local var_6_0 = true
+
+		if arg_5_0.canEndFunc_ then
+			var_6_0 = arg_5_0.canEndFunc_() and manager.loadScene:CanEnd()
+		end
+
+		local var_6_1 = arg_5_0.animator_:GetCurrentAnimatorStateInfo(0)
+
+		if not var_6_1:IsName("enter") then
+			arg_5_0:PlayAnimator("enter")
+		end
+
+		if var_6_1.normalizedTime > 1 and var_6_1:IsName("enter") and var_6_0 then
+			if not arg_5_0.waitNextFrameToCallback then
+				arg_5_0.waitNextFrameToCallback = true
+			else
+				LoadingUIManager.inst:CloseLoadUI()
+				arg_5_0:ClearTimer()
+				arg_5_0:DoCallBack()
+
+				arg_5_0.waitNextFrameToCallback = false
+			end
+		end
+
+		if var_6_1.normalizedTime > 0.5 and var_6_1:IsName("enter") and not var_5_7 then
+			if var_5_0 and var_5_0 == "home" then
+				manager.loadScene:SetShouldLoadSceneName(var_5_0)
+			end
+
+			var_5_7 = true
 		end
 	end, 1, -1)
 
 	arg_5_0.timer_:Start()
 end
 
-function var_0_0.OnlyShowEffect(arg_7_0, arg_7_1, arg_7_2)
-	if isNil(arg_7_0.animator_) then
-		return
+function var_0_0.Hide(arg_7_0, arg_7_1, arg_7_2, arg_7_3)
+	if gameContext ~= nil then
+		local var_7_0 = gameContext:GetLastOpenPage()
+
+		if (not ViewConst.PLAY_TRANSITION_URL_LIST[var_7_0] or not arg_7_2) and (arg_7_0:OverrideIgnoreTrainsition(var_7_0) or not arg_7_0:CheckGoHome(var_7_0, arg_7_3)) then
+			arg_7_0:DoCallBack()
+			arg_7_0:ClearTimer()
+			SetActive(arg_7_0.gameObject_, false)
+
+			if arg_7_1 then
+				arg_7_1()
+			end
+
+			return
+		end
 	end
 
 	arg_7_0:DoCallBack()
 	arg_7_0:ClearTimer()
 
-	arg_7_0.callBackFun_ = arg_7_2
-
-	if arg_7_1 then
-		arg_7_0.color_.a = 0
-		arg_7_0.image_.color = arg_7_0.color_
-	else
-		arg_7_0.color_.a = 1
-		arg_7_0.image_.color = arg_7_0.color_
-	end
+	arg_7_0.callBackFun_ = arg_7_1
 
 	SetActive(arg_7_0.gameObject_, true)
 
-	local var_7_0 = arg_7_1 and "enter" or "out"
-
-	if not arg_7_0.animator_:GetCurrentAnimatorStateInfo(0):IsName(var_7_0) then
-		arg_7_0:PlayAnimator(var_7_0)
-	end
-
+	arg_7_0.waitNextFrameToHide = false
 	arg_7_0.timer_ = FrameTimer.New(function()
-		local var_8_0 = arg_7_0.animator_:GetCurrentAnimatorStateInfo(0)
+		if not arg_7_0.waitNextFrameToHide then
+			arg_7_0:PlayAnimator("out")
 
-		if not var_8_0:IsName(var_7_0) then
-			arg_7_0:PlayAnimator(var_7_0)
+			arg_7_0.waitNextFrameToHide = true
+
+			return
 		end
 
-		if var_8_0.normalizedTime > 1 and var_8_0:IsName(var_7_0) then
+		local var_8_0 = arg_7_0.animator_:GetCurrentAnimatorStateInfo(0)
+
+		if not var_8_0:IsName("out") then
+			arg_7_0:PlayAnimator("out", true)
+		end
+
+		if var_8_0.normalizedTime > 1 and var_8_0:IsName("out") then
 			arg_7_0:ClearTimer()
+			SetActive(arg_7_0.gameObject_, false)
 			arg_7_0:DoCallBack()
+
+			arg_7_0.waitNextFrameToHide = false
 		end
 	end, 1, -1)
 
 	arg_7_0.timer_:Start()
 end
 
-function var_0_0.Dispose(arg_9_0)
-	gameContext:SetActions(nil, nil)
-
-	if arg_9_0.gameObject_ ~= nil then
-		Object.Destroy(arg_9_0.gameObject_)
-
-		arg_9_0.gameObject_ = nil
+function var_0_0.OnlyShowEffect(arg_9_0, arg_9_1, arg_9_2)
+	if isNil(arg_9_0.animator_) then
+		return
 	end
 
+	arg_9_0:DoCallBack()
 	arg_9_0:ClearTimer()
 
-	arg_9_0.image_ = nil
-	arg_9_0.canEndFunc_ = nil
-	arg_9_0.animator_ = nil
+	arg_9_0.callBackFun_ = arg_9_2
 
-	var_0_0.super.Dispose(arg_9_0)
+	if arg_9_1 then
+		arg_9_0.color_.a = 0
+		arg_9_0.image_.color = arg_9_0.color_
+	else
+		arg_9_0.color_.a = 1
+		arg_9_0.image_.color = arg_9_0.color_
+	end
+
+	SetActive(arg_9_0.gameObject_, true)
+
+	local var_9_0 = arg_9_1 and "enter" or "out"
+
+	if not arg_9_0.animator_:GetCurrentAnimatorStateInfo(0):IsName(var_9_0) then
+		arg_9_0:PlayAnimator(var_9_0)
+	end
+
+	arg_9_0.timer_ = FrameTimer.New(function()
+		local var_10_0 = arg_9_0.animator_:GetCurrentAnimatorStateInfo(0)
+
+		if not var_10_0:IsName(var_9_0) then
+			arg_9_0:PlayAnimator(var_9_0)
+		end
+
+		if var_10_0.normalizedTime > 1 and var_10_0:IsName(var_9_0) then
+			arg_9_0:ClearTimer()
+			arg_9_0:DoCallBack()
+		end
+	end, 1, -1)
+
+	arg_9_0.timer_:Start()
 end
 
-function var_0_0.ClearTimer(arg_10_0)
-	if arg_10_0.timer_ then
+function var_0_0.Dispose(arg_11_0)
+	gameContext:SetActions(nil, nil)
+
+	if arg_11_0.gameObject_ ~= nil then
+		Object.Destroy(arg_11_0.gameObject_)
+
+		arg_11_0.gameObject_ = nil
+	end
+
+	arg_11_0:ClearTimer()
+
+	arg_11_0.image_ = nil
+	arg_11_0.canEndFunc_ = nil
+	arg_11_0.animator_ = nil
+
+	var_0_0.super.Dispose(arg_11_0)
+end
+
+function var_0_0.ClearTimer(arg_12_0)
+	if arg_12_0.timer_ then
 		manager.loadScene:AddCachePage()
-		arg_10_0.timer_:Stop()
+		arg_12_0.timer_:Stop()
 
-		arg_10_0.timer_ = nil
+		arg_12_0.timer_ = nil
 	end
 end
 
-function var_0_0.DoCallBack(arg_11_0)
-	if arg_11_0.callBackFun_ then
-		arg_11_0.callBackFun_()
+function var_0_0.DoCallBack(arg_13_0)
+	if arg_13_0.callBackFun_ then
+		local var_13_0 = arg_13_0.callBackFun_
 
-		arg_11_0.callBackFun_ = nil
+		arg_13_0.callBackFun_ = nil
+
+		var_13_0()
 	end
 end
 
-function var_0_0.PlayAnimator(arg_12_0, arg_12_1)
-	if arg_12_0.gameObject_.activeSelf then
-		arg_12_0.animator_:Play(arg_12_1, -1, 0)
-		arg_12_0.animator_:Update(0)
+function var_0_0.AnimatorWillPlay(arg_14_0)
+	return gameContext ~= nil and not var_0_1[gameContext:GetLastOpenPage()]
+end
+
+function var_0_0.PlayAnimator(arg_15_0, arg_15_1, arg_15_2)
+	local var_15_0 = arg_15_0:AnimatorWillPlay() and arg_15_0.animator_.isActiveAndEnabled
+
+	if arg_15_2 then
+		var_15_0 = true
+
+		SetActive(arg_15_0.gameObject_, true)
+	end
+
+	if var_15_0 then
+		arg_15_0.animator_:Play(arg_15_1, -1, 0)
+		arg_15_0.animator_:Update(0)
 	end
 end
 

@@ -51,7 +51,7 @@ end
 
 function var_0_0.RefreshDialog(arg_8_0, arg_8_1)
 	if arg_8_0.formID_ then
-		arg_8_0.dialogText_.text = HeroVoiceDescCfg.GetByFormID(arg_8_0.formID_, arg_8_1)
+		arg_8_0.dialogText_.text = HeroVoiceDescCfg.Get(arg_8_0.formID_, arg_8_1)
 	else
 		arg_8_0.dialogText_.text = HeroVoiceDescCfg.Get(arg_8_0.curHeroID_, arg_8_1)
 	end

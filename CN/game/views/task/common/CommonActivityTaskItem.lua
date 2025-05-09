@@ -68,7 +68,7 @@ function var_0_0.InitUI(arg_6_0)
 	arg_6_0.buttonController = arg_6_0.allBtnController_:GetController("all")
 	arg_6_0.progressBar_ = arg_6_0.progressBar_ or arg_6_0.slider_
 	arg_6_0.progress_ = arg_6_0.progress_ or arg_6_0.progressText_
-	arg_6_0.desc_ = arg_6_0.desc_ or arg_6_0.titleText_
+	arg_6_0.desc_ = arg_6_0.desc_ or arg_6_0.titleText_ or arg_6_0.descText_
 	arg_6_0.receiveBtn_ = arg_6_0.receiveBtn_ or arg_6_0.btn_
 	arg_6_0.typeController = var_0_2(arg_6_0.controllers_, arg_6_0.transform_, "type")
 	arg_6_0.timeController = var_0_2(arg_6_0.controllers_, arg_6_0.transform_, "time")

@@ -12,7 +12,7 @@ function var_0_1.RefreshTeamTag(arg_1_0, arg_1_1, arg_1_2)
 	local var_1_0 = var_0_2.None
 
 	for iter_1_0 = 1, arg_1_2 do
-		local var_1_1 = ReserveParams.New(ReserveConst.RESERVE_TYPE.MYTHIC_FINAL, ReserveConst.MYTHIC_CONT_ID.FINAL_MULTI, iter_1_0)
+		local var_1_1 = ReserveParams.New(ReserveConst.RESERVE_TYPE.MYTHIC_FINAL_CACHE, ReserveConst.MYTHIC_CONT_ID.FINAL_MULTI, iter_1_0)
 		local var_1_2 = ReserveTools.GetHeroList(var_1_1)
 
 		for iter_1_1, iter_1_2 in ipairs(var_1_2) do

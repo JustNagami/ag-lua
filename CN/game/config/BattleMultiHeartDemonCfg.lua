@@ -541,7 +541,7 @@
 		id = 3100961,
 		level = 1,
 		attribute_factor = {
-			1000,
+			500,
 			1000,
 			800
 		},
@@ -560,9 +560,9 @@
 		id = 3100962,
 		level = 1,
 		attribute_factor = {
-			1600,
+			800,
 			1000,
-			3500
+			2000
 		},
 		team_type = {
 			220,
@@ -579,9 +579,9 @@
 		id = 3100941,
 		level = 1,
 		attribute_factor = {
-			700,
+			500,
 			1000,
-			4000
+			800
 		},
 		team_type = {
 			220,
@@ -598,7 +598,7 @@
 		id = 3100942,
 		level = 1,
 		attribute_factor = {
-			1000,
+			600,
 			1000,
 			2000
 		},
@@ -845,9 +845,9 @@
 		id = 3101841,
 		level = 1,
 		attribute_factor = {
-			800,
+			400,
 			1000,
-			2500
+			700
 		},
 		team_type = {
 			220,
@@ -864,9 +864,9 @@
 		id = 3101842,
 		level = 1,
 		attribute_factor = {
-			1500,
+			700,
 			1000,
-			6000
+			1800
 		},
 		team_type = {
 			220,

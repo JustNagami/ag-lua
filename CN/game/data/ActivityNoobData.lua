@@ -242,6 +242,10 @@ function var_0_0.GetRechargeStatus(arg_35_0)
 end
 
 function var_0_0.GetBpNewRecharge(arg_36_0)
+	if PassportData:GetPayLevel() > 0 then
+		return false
+	end
+
 	local var_36_0 = arg_36_0.firstBattlePassStatus_.bpRewardStatus
 
 	return var_36_0 == nil or var_36_0 == 0

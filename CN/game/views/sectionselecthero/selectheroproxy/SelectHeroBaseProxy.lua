@@ -44,6 +44,7 @@ function var_0_0.InitUIParams(arg_5_0, arg_5_1)
 		HOME_BAR,
 		NAVI_BAR
 	}
+	arg_5_0.canHeroDrag = true
 	arg_5_0.canChangeTeam = true
 	arg_5_0.needDisplayFilterLocalHero = true
 	arg_5_0.needHeroPower = true

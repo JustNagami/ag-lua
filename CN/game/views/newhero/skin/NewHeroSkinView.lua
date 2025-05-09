@@ -653,14 +653,20 @@ function var_0_0.HideMessage(arg_36_0)
 end
 
 function var_0_0.ShowMessage(arg_37_0)
-	if #arg_37_0.descInfoList_ == 0 then
-		for iter_37_0, iter_37_1 in pairs(arg_37_0.typeDes_) do
-			local var_37_0 = Object.Instantiate(arg_37_0.descContent_, arg_37_0.descTipsContent_)
+	local var_37_0 = 0
 
-			arg_37_0.descInfoList_[iter_37_0] = SkinDescInfoItem.New(var_37_0, iter_37_1, iter_37_0)
+	for iter_37_0, iter_37_1 in pairs(arg_37_0.descInfoList_) do
+		var_37_0 = var_37_0 + 1
+	end
 
-			arg_37_0.descInfoList_[iter_37_0]:RefreshUI()
-			arg_37_0.descInfoList_[iter_37_0]:Show(true)
+	if var_37_0 == 0 then
+		for iter_37_2, iter_37_3 in pairs(arg_37_0.typeDes_) do
+			local var_37_1 = Object.Instantiate(arg_37_0.descContent_, arg_37_0.descTipsContent_)
+
+			arg_37_0.descInfoList_[iter_37_2] = SkinDescInfoItem.New(var_37_1, iter_37_3, iter_37_2)
+
+			arg_37_0.descInfoList_[iter_37_2]:RefreshUI()
+			arg_37_0.descInfoList_[iter_37_2]:Show(true)
 			LayoutRebuilder.ForceRebuildLayoutImmediate(arg_37_0.descPanelRect_)
 		end
 	end

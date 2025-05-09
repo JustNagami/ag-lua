@@ -3430,6 +3430,42 @@
 			"subActivityID"
 		}
 	},
+	[16121] = {
+		text_display_1 = "获取",
+		text_display_2 = "限时活动",
+		text_invalid = 0,
+		need_hide = 1,
+		asset_pend_key = "",
+		link = "/activityMain_2_8",
+		pagename = "",
+		activity_id = 331001,
+		params = "",
+		id = 16121,
+		icon = "icon_access_site_white",
+		system_id = 10301,
+		paramName = {
+			"activityID",
+			"subActivityID"
+		}
+	},
+	[16122] = {
+		text_display_1 = "",
+		text_display_2 = "",
+		text_invalid = 0,
+		need_hide = 0,
+		asset_pend_key = "",
+		link = "gameHelpPro",
+		pagename = "",
+		activity_id = 0,
+		params = "",
+		id = 16122,
+		icon = "icon_access_site_white",
+		system_id = 0,
+		paramName = {
+			"pages",
+			"isPrefab"
+		}
+	},
 	[2510] = {
 		text_display_1 = "",
 		text_display_2 = "",
@@ -4372,6 +4408,8 @@
 		16001,
 		16002,
 		16101,
+		16121,
+		16122,
 		2510,
 		2511,
 		2512,

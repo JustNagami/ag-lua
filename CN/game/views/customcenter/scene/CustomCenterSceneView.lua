@@ -17,7 +17,6 @@ function var_0_0.Ctor(arg_1_0, arg_1_1)
 		local var_2_0 = 1 - SettingData:GetHomeSceneSettingData().home_scene_scene_bgm
 
 		SettingAction.ChangeHomeSceneSetting("home_scene_scene_bgm", var_2_0)
-		arg_1_0:CheckPlayBgm()
 		arg_1_0:RefreshSceneMusicPanel()
 	end)
 
@@ -303,18 +302,6 @@ end
 
 function var_0_0.OnChangeScene(arg_35_0)
 	arg_35_0:RefreshUseBtn()
-end
-
-function var_0_0.CheckPlayBgm(arg_36_0)
-	local var_36_0 = HomeSceneSettingData:GetRealScene()
-	local var_36_1 = HomeSceneSettingCfg[var_36_0]
-	local var_36_2 = var_36_1.scene_setting
-	local var_36_3 = var_36_1.default_music
-	local var_36_4 = SettingData:GetHomeSceneSettingData()
-
-	if var_36_3 ~= 0 and var_36_4.home_scene_scene_bgm == 1 and table.indexof(var_36_2, HomeSceneSettingConst.SETTING.SCENE_BGM) then
-		IllustratedAction.QuerySetBgm(var_36_3)
-	end
 end
 
 return var_0_0

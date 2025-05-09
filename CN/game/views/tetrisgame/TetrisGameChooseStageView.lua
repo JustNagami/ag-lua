@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("TetrisGameChooseStageView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "Widget/BackHouseUI/TetrisGame/TetrisGameORDChapterUI"
+	return "Widget/Version/Alone_TetrisGameUI/TetrisGameORDChapterUI"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -36,190 +36,207 @@ function var_0_0.OnEnter(arg_6_0)
 
 	arg_6_0:InitStageInfo()
 
-	local var_6_0 = arg_6_0.params_.stageID or arg_6_0.stageIDList[1]
+	local var_6_0 = arg_6_0.params_.stageID or arg_6_0:GetTargetSelectStageID()
 
 	arg_6_0.params_.stageID = nil
 
 	arg_6_0:ChooseStage(var_6_0)
 end
 
-function var_0_0.OnTop(arg_7_0)
-	arg_7_0:RefreshStageState()
-	arg_7_0:RefreshStageInfo()
-	arg_7_0:RefreshBar()
+function var_0_0.GetTargetSelectStageID(arg_7_0)
+	local var_7_0 = 0
+
+	for iter_7_0 = 1, #arg_7_0.stageIDList do
+		local var_7_1 = arg_7_0.stageIDList[iter_7_0]
+		local var_7_2 = TetrisGameData:GetStageInfoByStageID(var_7_1)
+
+		if var_7_2 and var_7_2.isClear then
+			var_7_0 = iter_7_0
+		end
+	end
+
+	if var_7_0 + 1 <= #arg_7_0.stageIDList then
+		var_7_0 = var_7_0 + 1
+	end
+
+	return arg_7_0.stageIDList[var_7_0]
 end
 
-function var_0_0.RefreshBar(arg_8_0)
+function var_0_0.OnTop(arg_8_0)
+	arg_8_0:RefreshStageState()
+	arg_8_0:RefreshStageInfo()
+	arg_8_0:RefreshBar()
+end
+
+function var_0_0.RefreshBar(arg_9_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR,
 		HOME_BAR,
 		INFO_BAR
 	})
 
-	local var_8_0 = GameSetting.tetris_game_describe1 and GameSetting.tetris_game_describe1.value or {}
+	local var_9_0 = GameSetting.tetris_game_describe1 and GameSetting.tetris_game_describe1.value or {}
 
 	manager.windowBar:RegistInfoCallBack(function()
 		JumpTools.OpenPageByJump("gameHelpPro", {
 			isPrefab = true,
-			pages = var_8_0
+			pages = var_9_0
 		})
 	end)
 end
 
-function var_0_0.OnExit(arg_10_0)
+function var_0_0.OnExit(arg_11_0)
 	manager.windowBar:HideBar()
-	arg_10_0.scrollMoveView_.scrollViewEvent_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.BeginDrag)
-	arg_10_0.scrollMoveView_.scrollViewEvent_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.EndDrag)
-	arg_10_0:RemoveAllEventListener()
-	arg_10_0.scrollMoveView_:OnExit()
-	arg_10_0:DisposeStageInfo()
+	arg_11_0.scrollMoveView_.scrollViewEvent_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.BeginDrag)
+	arg_11_0.scrollMoveView_.scrollViewEvent_:RemoveListenerType(UnityEngine.EventSystems.EventTriggerType.EndDrag)
+	arg_11_0:RemoveAllEventListener()
+	arg_11_0.scrollMoveView_:OnExit()
+	arg_11_0:DisposeStageInfo()
 
-	arg_10_0.selStageID = nil
-	arg_10_0.stageID = nil
+	arg_11_0.selStageID = nil
+	arg_11_0.stageID = nil
 end
 
-function var_0_0.AddUIListener(arg_11_0)
-	arg_11_0:AddBtnListener(arg_11_0.skillBtn, nil, function()
-		if #arg_11_0.skillList > 0 then
+function var_0_0.AddUIListener(arg_12_0)
+	arg_12_0:AddBtnListener(arg_12_0.skillBtn, nil, function()
+		if #arg_12_0.skillList > 0 then
 			JumpTools.OpenPageByJump("tetrisGameGetSkillView", {
-				stageID = arg_11_0.stageID
+				stageID = arg_12_0.stageID
 			})
 		end
 	end)
 end
 
-function var_0_0.BeginDragFun(arg_13_0, arg_13_1, arg_13_2)
-	arg_13_0.beginMousePos = Input.mousePosition
+function var_0_0.BeginDragFun(arg_14_0, arg_14_1, arg_14_2)
+	arg_14_0.beginMousePos = Input.mousePosition
 end
 
-function var_0_0.EndDragFun(arg_14_0, arg_14_1, arg_14_2)
-	local var_14_0 = Input.mousePosition
-	local var_14_1 = 0
+function var_0_0.EndDragFun(arg_15_0, arg_15_1, arg_15_2)
+	local var_15_0 = Input.mousePosition
+	local var_15_1 = 0
 
-	if arg_14_0.beginMousePos.x - var_14_0.x > 0 then
-		var_14_1 = 1
-	elseif arg_14_0.beginMousePos.x - var_14_0.x < 0 then
-		var_14_1 = -1
+	if arg_15_0.beginMousePos.x - var_15_0.x > 0 then
+		var_15_1 = 1
+	elseif arg_15_0.beginMousePos.x - var_15_0.x < 0 then
+		var_15_1 = -1
 	end
 
-	local var_14_2
+	local var_15_2
 
-	for iter_14_0, iter_14_1 in pairs(arg_14_0.stageIDList) do
-		if iter_14_1 == arg_14_0.selStageID then
-			var_14_2 = iter_14_0 + var_14_1
+	for iter_15_0, iter_15_1 in pairs(arg_15_0.stageIDList) do
+		if iter_15_1 == arg_15_0.selStageID then
+			var_15_2 = iter_15_0 + var_15_1
 		end
 	end
 
-	local var_14_3 = arg_14_0.stageIDList[var_14_2]
+	local var_15_3 = arg_15_0.stageIDList[var_15_2]
 
-	if var_14_3 then
-		arg_14_0:ChooseStage(var_14_3)
+	if var_15_3 then
+		arg_15_0:ChooseStage(var_15_3)
 	end
 end
 
-function var_0_0.Dispose(arg_15_0)
-	var_0_0.super.Dispose(arg_15_0)
-	arg_15_0.scrollMoveView_:Dispose()
+function var_0_0.Dispose(arg_16_0)
+	var_0_0.super.Dispose(arg_16_0)
+	arg_16_0.scrollMoveView_:Dispose()
 
-	arg_15_0.scrollMoveView_ = nil
+	arg_16_0.scrollMoveView_ = nil
 
-	arg_15_0:DisposeStageInfo()
+	arg_16_0:DisposeStageInfo()
 end
 
-function var_0_0.RefreshStageState(arg_16_0)
-	arg_16_0.chapterName.text = ActivityTetrisGameChapterCfg[arg_16_0.chapterID].name
+function var_0_0.RefreshStageState(arg_17_0)
+	arg_17_0.chapterName.text = ActivityTetrisGameChapterCfg[arg_17_0.chapterID].name
 end
 
-function var_0_0.ChooseStage(arg_17_0, arg_17_1)
-	manager.redPoint:setTip(string.format("%s_%s", RedPointConst.ACTIVITY_TETIRS_GAME_STAGE, arg_17_1), 0)
+function var_0_0.ChooseStage(arg_18_0, arg_18_1)
+	if TetrisGameTools.GetChapterState(arg_18_1) ~= "lock" then
+		manager.redPoint:setTip(string.format("%s_%s", RedPointConst.ACTIVITY_TETIRS_GAME_STAGE, arg_18_1), 0)
+	end
 
-	arg_17_0.stageID = arg_17_1
+	arg_18_0.stageID = arg_18_1
 
-	if arg_17_1 == arg_17_0.selStageID then
-		TetrisGameTools:EnterStage(arg_17_1)
+	if arg_18_1 == arg_18_0.selStageID then
+		TetrisGameTools:EnterStage(arg_18_1)
 
 		return
 	end
 
-	local var_17_0 = arg_17_0.selStageID
+	local var_18_0 = arg_18_0.selStageID
 
-	arg_17_0.selStageID = arg_17_1
+	arg_18_0.selStageID = arg_18_1
 
-	if var_17_0 then
-		arg_17_0.stageItemList[var_17_0]:PlayAni(false)
+	if var_18_0 then
+		arg_18_0.stageItemList[var_18_0]:PlayAni(false)
 	end
 
-	local var_17_1 = arg_17_0.stageItemList[arg_17_1]
+	local var_18_1 = arg_18_0.stageItemList[arg_18_1]
 
-	var_17_1:PlayAni(true)
-	var_17_1:UpdataRedPoint()
-	arg_17_0:ScrollList(arg_17_0.selStageID)
+	var_18_1:PlayAni(true)
+	var_18_1:UpdataRedPoint()
+	arg_18_0:ScrollList(arg_18_0.selStageID)
 
-	arg_17_0.skillList = ActivityTetrisGameStageCfg[arg_17_1].skill_list
+	arg_18_0.skillList = ActivityTetrisGameStageCfg[arg_18_1].skill_list
 
-	if arg_17_0.skillList and #arg_17_0.skillList > 0 then
-		arg_17_0.skillController:SetSelectedState("true")
-	else
-		arg_17_0.skillController:SetSelectedState("false")
-	end
+	arg_18_0.skillController:SetSelectedState("false")
 
-	if arg_17_0.chapterIndex == 1 then
+	if arg_18_0.chapterIndex == 1 then
 		manager.audio:PlayEffect("minigame_activity_3_6", "minigame_activity_3_6_block_ui_a", "")
 	else
 		manager.audio:PlayEffect("minigame_activity_3_6", "minigame_activity_3_6_block_ui_b", "")
 	end
 
-	arg_17_0:RefreshStageInfo()
+	arg_18_0:RefreshStageInfo()
 end
 
-function var_0_0.InitStageInfo(arg_18_0)
-	if not arg_18_0.stageItemList then
-		arg_18_0.stageItemList = {}
+function var_0_0.InitStageInfo(arg_19_0)
+	if not arg_19_0.stageItemList then
+		arg_19_0.stageItemList = {}
 	end
 
-	for iter_18_0, iter_18_1 in ipairs(arg_18_0.stageIDList) do
-		local var_18_0 = Object.Instantiate(arg_18_0.stageGo, arg_18_0.scrollMoveView_.content_.transform)
-		local var_18_1 = TetrisGameChooseStageItem.New(var_18_0)
+	for iter_19_0, iter_19_1 in ipairs(arg_19_0.stageIDList) do
+		local var_19_0 = Object.Instantiate(arg_19_0.stageGo, arg_19_0.scrollMoveView_.content_.transform)
+		local var_19_1 = TetrisGameChooseStageItem.New(var_19_0)
 
-		var_18_1:RegisterClick(handler(arg_18_0, arg_18_0.ChooseStage))
+		var_19_1:RegisterClick(handler(arg_19_0, arg_19_0.ChooseStage))
 
-		arg_18_0.stageItemList[iter_18_1] = var_18_1
+		arg_19_0.stageItemList[iter_19_1] = var_19_1
 	end
 
-	LayoutRebuilder.ForceRebuildLayoutImmediate(arg_18_0.scrollMoveView_.content_.transform)
+	LayoutRebuilder.ForceRebuildLayoutImmediate(arg_19_0.scrollMoveView_.content_.transform)
 end
 
-function var_0_0.RefreshStageInfo(arg_19_0)
-	if arg_19_0.stageItemList then
-		for iter_19_0, iter_19_1 in pairs(arg_19_0.stageItemList) do
-			iter_19_1:RefreshUI(iter_19_0, arg_19_0.selStageID, arg_19_0.chapterIndex)
-		end
-	end
-end
-
-function var_0_0.DisposeStageInfo(arg_20_0)
+function var_0_0.RefreshStageInfo(arg_20_0)
 	if arg_20_0.stageItemList then
 		for iter_20_0, iter_20_1 in pairs(arg_20_0.stageItemList) do
-			iter_20_1:Dispose()
+			iter_20_1:RefreshUI(iter_20_0, arg_20_0.selStageID, arg_20_0.chapterIndex)
 		end
-
-		arg_20_0.stageItemList = nil
 	end
 end
 
-function var_0_0.ScrollList(arg_21_0, arg_21_1)
-	local var_21_0 = arg_21_0:GetScrollPos(arg_21_1)
+function var_0_0.DisposeStageInfo(arg_21_0)
+	if arg_21_0.stageItemList then
+		for iter_21_0, iter_21_1 in pairs(arg_21_0.stageItemList) do
+			iter_21_1:Dispose()
+		end
 
-	arg_21_0.scrollMoveView_.needInitScroll_ = false
-
-	arg_21_0.scrollMoveView_:ScrollPosition(var_21_0, false, -200)
+		arg_21_0.stageItemList = nil
+	end
 end
 
-function var_0_0.GetScrollPos(arg_22_0, arg_22_1)
-	return arg_22_0.stageItemList[arg_22_1].rectTransform.anchoredPosition.x
+function var_0_0.ScrollList(arg_22_0, arg_22_1)
+	local var_22_0 = arg_22_0:GetScrollPos(arg_22_1)
+
+	arg_22_0.scrollMoveView_.needInitScroll_ = false
+
+	arg_22_0.scrollMoveView_:ScrollPosition(var_22_0, false, -200)
 end
 
-function var_0_0.IsOpenSectionInfo(arg_23_0)
+function var_0_0.GetScrollPos(arg_23_0, arg_23_1)
+	return arg_23_0.stageItemList[arg_23_1].rectTransform.anchoredPosition.x
+end
+
+function var_0_0.IsOpenSectionInfo(arg_24_0)
 	return true
 end
 

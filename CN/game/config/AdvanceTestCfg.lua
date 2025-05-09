@@ -6458,7 +6458,409 @@
 			}
 		}
 	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1211,
+		activity_id = 332241,
+		character = 400,
+		id = 189,
+		stage_name = "魂羽·奥西里斯",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2209
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1211,
+					1012,
+					1048,
+					1059,
+					1097,
+					1138,
+					1032,
+					1033,
+					1060,
+					1284
+				}
+			},
+			{
+				3,
+				{
+					1211
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1211,
+		activity_id = 332241,
+		character = 500,
+		id = 190,
+		stage_name = "魂羽·奥西里斯",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2209
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1211,
+					1012,
+					1048,
+					1059,
+					1097,
+					1138,
+					1032,
+					1033,
+					1060,
+					1284
+				}
+			},
+			{
+				3,
+				{
+					1211
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1211,
+		activity_id = 332241,
+		character = 600,
+		id = 191,
+		stage_name = "魂羽·奥西里斯",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2209
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1211,
+					1012,
+					1048,
+					1059,
+					1097,
+					1138,
+					1032,
+					1033,
+					1060,
+					1284
+				}
+			},
+			{
+				3,
+				{
+					1211
+				}
+			}
+		}
+	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1211,
+		activity_id = 332242,
+		character = 400,
+		id = 192,
+		stage_name = "魂羽·奥西里斯",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2209
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1211,
+					1012,
+					1048,
+					1059,
+					1097,
+					1138,
+					1032,
+					1033,
+					1060,
+					1284
+				}
+			},
+			{
+				3,
+				{
+					1211
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1211,
+		activity_id = 332242,
+		character = 500,
+		id = 193,
+		stage_name = "魂羽·奥西里斯",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2209
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1211,
+					1012,
+					1048,
+					1059,
+					1097,
+					1138,
+					1032,
+					1033,
+					1060,
+					1284
+				}
+			},
+			{
+				3,
+				{
+					1211
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1211,
+		activity_id = 332242,
+		character = 600,
+		id = 194,
+		stage_name = "魂羽·奥西里斯",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2209
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1211,
+					1012,
+					1048,
+					1059,
+					1097,
+					1138,
+					1032,
+					1033,
+					1060,
+					1284
+				}
+			},
+			{
+				3,
+				{
+					1211
+				}
+			}
+		}
+	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1211,
+		activity_id = 332243,
+		character = 400,
+		id = 195,
+		stage_name = "魂羽·奥西里斯",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2209
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1211,
+					1012,
+					1048,
+					1059,
+					1097,
+					1138,
+					1032,
+					1033,
+					1060,
+					1284
+				}
+			},
+			{
+				3,
+				{
+					1211
+				}
+			}
+		}
+	},
+	{
+		weapon = 3,
+		stage_id = 6040125,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 2,
+		hero = 1211,
+		activity_id = 332243,
+		character = 500,
+		id = 196,
+		stage_name = "魂羽·奥西里斯",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2209
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1211,
+					1012,
+					1048,
+					1059,
+					1097,
+					1138,
+					1032,
+					1033,
+					1060,
+					1284
+				}
+			},
+			{
+				3,
+				{
+					1211
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1211,
+		activity_id = 332243,
+		character = 600,
+		id = 197,
+		stage_name = "魂羽·奥西里斯",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2209
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1211,
+					1012,
+					1048,
+					1059,
+					1097,
+					1138,
+					1032,
+					1033,
+					1060,
+					1284
+				}
+			},
+			{
+				3,
+				{
+					1211
+				}
+			}
+		}
+	},
 	get_id_list_by_activity_id = {
+		[332243] = {
+			195,
+			196,
+			197
+		},
+		[332242] = {
+			192,
+			193,
+			194
+		},
+		[332241] = {
+			189,
+			190,
+			191
+		},
 		[3222410] = {
 			188
 		},
@@ -6976,6 +7378,15 @@
 		185,
 		186,
 		187,
-		188
+		188,
+		189,
+		190,
+		191,
+		192,
+		193,
+		194,
+		195,
+		196,
+		197
 	}
 }

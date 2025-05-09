@@ -90,7 +90,41 @@
 		pre_story_id = 0,
 		main_activity_id = 312211
 	},
+	{
+		story_id = 924011001,
+		activity_id = 332231,
+		id = 14,
+		pre_story_id = 0,
+		main_activity_id = 332211
+	},
+	{
+		story_id = 924021001,
+		activity_id = 332231,
+		id = 15,
+		pre_story_id = 924011001,
+		main_activity_id = 332211
+	},
+	{
+		story_id = 924031001,
+		activity_id = 332231,
+		id = 16,
+		pre_story_id = 924021001,
+		main_activity_id = 332211
+	},
+	{
+		story_id = 924041001,
+		activity_id = 332231,
+		id = 17,
+		pre_story_id = 924031001,
+		main_activity_id = 332211
+	},
 	get_id_list_by_activity_id = {
+		[332231] = {
+			14,
+			15,
+			16,
+			17
+		},
 		[312233] = {
 			13
 		},
@@ -122,6 +156,12 @@
 		}
 	},
 	get_id_list_by_main_activity_id = {
+		[332211] = {
+			14,
+			15,
+			16,
+			17
+		},
 		[312211] = {
 			11,
 			12,
@@ -157,6 +197,10 @@
 		10,
 		11,
 		12,
-		13
+		13,
+		14,
+		15,
+		16,
+		17
 	}
 }

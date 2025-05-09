@@ -10121,6 +10121,269 @@
 		idle3_talk = {},
 		idle3_delay = {}
 	},
+	[102003] = {
+		skinId = 102003,
+		greeting = {},
+		greeting_talk = {},
+		greeting_delay = {},
+		greeting_weight = {},
+		mainTouch = {
+			"touch1_action1_1",
+			"touch2_action1_1"
+		},
+		mainTouch_talk = {
+			"102003_chair_touch_101",
+			"102003_chair_touch_102"
+		},
+		mainTouch_delay = {
+			0,
+			0
+		},
+		mainTouch_weight = {
+			1,
+			1
+		},
+		mainQuickTouch = {},
+		mainQuickTouch_talk = {},
+		mainQuickTouch_delay = {},
+		shaking = {},
+		shaking_talk = {},
+		shaking_delay = {},
+		showing = {},
+		showing_talk = {},
+		showing_delay = {},
+		idle = {
+			"idle1_action1_1"
+		},
+		idle_talk = {
+			"102003_chair_idle_101"
+		},
+		idle_delay = {
+			0
+		},
+		idle_weight = {
+			1
+		},
+		roleChange = {},
+		roleChange_talk = {},
+		roleChange_delay = {},
+		roleIdle = {},
+		roleIdle_talk = {},
+		touch2 = {
+			"touch1_action1_2",
+			"touch2_action1_2"
+		},
+		touch2_talk = {
+			"102003_sofa_touch_101",
+			"102003_sofa_touch_102"
+		},
+		touch2_delay = {
+			0,
+			0
+		},
+		touch3 = {
+			"touch1_action1_3",
+			"touch2_action1_3"
+		},
+		touch3_talk = {
+			"102003_tv_touch_101",
+			"102003_tv_touch_102"
+		},
+		touch3_delay = {
+			0,
+			0
+		},
+		idle2 = {
+			"idle1_action1_2"
+		},
+		idle2_talk = {
+			"102003_sofa_idle_101"
+		},
+		idle2_delay = {
+			0
+		},
+		idle3 = {
+			"idle1_action1_3"
+		},
+		idle3_talk = {
+			"102003_tv_idle_101"
+		},
+		idle3_delay = {
+			0
+		}
+	},
+	[1211] = {
+		skinId = 1211,
+		greeting = {
+			"login",
+			"login",
+			"login"
+		},
+		greeting_talk = {
+			"1211_greet",
+			"1211_greet2",
+			"1211_greet3"
+		},
+		greeting_delay = {
+			0,
+			0,
+			495
+		},
+		greeting_weight = {
+			1,
+			1,
+			1
+		},
+		mainTouch = {
+			"touch1",
+			"touch2",
+			"touch3",
+			"touch4",
+			"emotion"
+		},
+		mainTouch_talk = {
+			"1211_talk1",
+			"1211_talk2",
+			"1211_talk3",
+			"1211_talk4",
+			"1211_talk5"
+		},
+		mainTouch_delay = {
+			594,
+			990,
+			990,
+			1023,
+			1188
+		},
+		mainTouch_weight = {
+			1,
+			1,
+			1,
+			1,
+			1
+		},
+		mainQuickTouch = {
+			"quickclick"
+		},
+		mainQuickTouch_talk = {
+			"1211_qc"
+		},
+		mainQuickTouch_delay = {
+			330
+		},
+		shaking = {
+			"shake"
+		},
+		shaking_talk = {
+			"1211_shake"
+		},
+		shaking_delay = {
+			165
+		},
+		showing = {
+			"assistant"
+		},
+		showing_talk = {
+			"1211_assistant"
+		},
+		showing_delay = {
+			495
+		},
+		idle = {
+			"idle",
+			"idle",
+			"idle"
+		},
+		idle_talk = {
+			"1211_idle",
+			"1211_idle2",
+			"1211_idle3"
+		},
+		idle_delay = {
+			990,
+			1452,
+			1320
+		},
+		idle_weight = {
+			1,
+			1,
+			1
+		},
+		roleChange = {},
+		roleChange_talk = {
+			"1211_choose"
+		},
+		roleChange_delay = {
+			0
+		},
+		roleIdle = {},
+		roleIdle_talk = {},
+		touch2 = {},
+		touch2_talk = {},
+		touch2_delay = {},
+		touch3 = {},
+		touch3_talk = {},
+		touch3_delay = {},
+		idle2 = {},
+		idle2_talk = {},
+		idle2_delay = {},
+		idle3 = {},
+		idle3_talk = {},
+		idle3_delay = {}
+	},
+	[121101] = {
+		skinId = 121101,
+		greeting = {},
+		greeting_talk = {},
+		greeting_delay = {},
+		greeting_weight = {},
+		mainTouch = {
+			"touch1",
+			"touch2"
+		},
+		mainTouch_talk = {
+			"121101_talk1",
+			"121101_talk2"
+		},
+		mainTouch_delay = {
+			0,
+			0
+		},
+		mainTouch_weight = {
+			1,
+			1
+		},
+		mainQuickTouch = {},
+		mainQuickTouch_talk = {},
+		mainQuickTouch_delay = {},
+		shaking = {},
+		shaking_talk = {},
+		shaking_delay = {},
+		showing = {},
+		showing_talk = {},
+		showing_delay = {},
+		idle = {},
+		idle_talk = {},
+		idle_delay = {},
+		idle_weight = {},
+		roleChange = {},
+		roleChange_talk = {},
+		roleChange_delay = {},
+		roleIdle = {},
+		roleIdle_talk = {},
+		touch2 = {},
+		touch2_talk = {},
+		touch2_delay = {},
+		touch3 = {},
+		touch3_talk = {},
+		touch3_delay = {},
+		idle2 = {},
+		idle2_talk = {},
+		idle2_delay = {},
+		idle3 = {},
+		idle3_talk = {},
+		idle3_delay = {}
+	},
 	all = {
 		1012,
 		1039,
@@ -10220,6 +10483,9 @@
 		107503,
 		108501,
 		107301,
-		99108501
+		99108501,
+		102003,
+		1211,
+		121101
 	}
 }

@@ -52,16 +52,20 @@ function var_0_0.AddMiddlePanelUILisener(arg_1_0)
 		arg_1_0.isPureMode_ = true
 
 		arg_1_0:RecordPureModeLog(true, PureModeConst.EnterMode.mode1)
+
+		arg_1_0.params_.isPureMode = true
 	end)
 	arg_1_0:AddBtnListener(arg_1_0.showAniSkipBtn_, nil, function()
 		manager.posterGirl:SkipDebut()
 		HomeSceneSettingData:SetIsPlay(arg_1_0.skinId_)
 	end)
-	arg_1_0:AddBtnListener(arg_1_0.bgmaskBtn_, nil, function()
-		arg_1_0:OnClickBg()
+	arg_1_0.bgmaskBtn_:AddListenerType1(UnityEngine.EventSystems.EventTriggerType.PointerDown, function(arg_9_0, arg_9_1)
+		arg_1_0:RecordOperation(arg_1_0.bgmaskBtn_)
+		arg_1_0:OnClickBg(arg_9_1)
 	end)
+	arg_1_0:SetListener(arg_1_0.bgmaskBtn_)
 	arg_1_0:AddBtnListener(arg_1_0.btn_arrow_hide2Btn_, nil, function()
-		arg_1_0:SetPureModeBtnActive(false)
+		arg_1_0:SetPureModeBtnActive(false, true)
 		arg_1_0:RecordPureModeLog(false)
 		arg_1_0:StopAllTimers()
 
@@ -274,8 +278,8 @@ function var_0_0.AddUIListenersHome(arg_42_0)
 		manager.posterGirl:EndDrag()
 	end
 
-	function arg_42_0.mutiTouchHelper_.OnClick()
-		arg_42_0:DelayToPlayMultiTouchInteraction()
+	function arg_42_0.mutiTouchHelper_.OnClick(arg_47_0, arg_47_1)
+		arg_42_0:OnTouchInteract(arg_47_1)
 	end
 
 	arg_42_0:AddBtnListener(arg_42_0.timeSwitchBtn_, nil, function()
@@ -311,19 +315,21 @@ function var_0_0.AddUIListenersHome(arg_42_0)
 		JumpTools.OpenPageByJump("/customCenter")
 	end)
 	arg_42_0:AddBtnListener(arg_42_0.btn_zuo01Btn_, nil, function()
-		if PosterGirlTools.CanInterruptCurAni() then
+		if not PosterGirlTools.CanInterruptCurAni() and not PosterGirlTools.IsTZeroViewPointCanLoopSwitch() then
 			return
 		end
 
 		manager.posterGirl:SwipeToLeft()
+		manager.posterGirl:EndDrag()
 		arg_42_0:UpdatePosterGirlBtn()
 	end)
 	arg_42_0:AddBtnListener(arg_42_0.btn_youBtn_, nil, function()
-		if PosterGirlTools.CanInterruptCurAni() then
+		if not PosterGirlTools.CanInterruptCurAni() and not PosterGirlTools.IsTZeroViewPointCanLoopSwitch() then
 			return
 		end
 
 		manager.posterGirl:SwipeToRight()
+		manager.posterGirl:EndDrag()
 		arg_42_0:UpdatePosterGirlBtn()
 	end)
 end

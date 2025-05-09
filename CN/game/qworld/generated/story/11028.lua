@@ -469,7 +469,7 @@ function var_0_0.PureActorDialogueNode_28(arg_80_0)
 end
 
 function var_0_0.DialogueNode_29(arg_84_0)
-	arg_84_0:PlaySoundsAction(2, "minigame_activity_3_5_catch_crown", "minigame_activity_3_5_catch_crown", "", "")
+	arg_84_0:PlaySoundsAction(2, "minigame_activity_3_5", "minigame_activity_3_5_catch_crown", "", "")
 	arg_84_0:ShowTalkView()
 	arg_84_0:SetTalkContent(11028030, "", 9073)
 

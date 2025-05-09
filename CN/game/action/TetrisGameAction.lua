@@ -13,11 +13,12 @@ local var_0_1
 function var_0_0.AskClearStage(arg_3_0, arg_3_1, arg_3_2, arg_3_3, arg_3_4)
 	var_0_1 = arg_3_3
 
-	if arg_3_2.result == 1 then
+	if ActivityTetrisGameStageCfg[arg_3_2.stageID].type == TetrisGameConst.stageType.endLess or arg_3_2.result == 1 then
 		local var_3_0 = {
 			activity_id = arg_3_1,
 			id = arg_3_2.stageID,
-			score = arg_3_2.score
+			score = arg_3_2.score,
+			is_success = arg_3_2.result == 1 and true or false
 		}
 
 		manager.net:SendWithLoadingNew(79102, var_3_0, 79103, var_0_0.AskClearStageCallBack)
@@ -31,11 +32,14 @@ function var_0_0.AskClearStage(arg_3_0, arg_3_1, arg_3_2, arg_3_3, arg_3_4)
 		var_0_0:UpdataRedPoint()
 	end
 
-	local var_3_1 = TetrisGameRunTimeManager:GetSkillBlackBoard()
+	local var_3_1 = TetrisGameRunTimeManager:GetBlackBoard()
 	local var_3_2 = {}
 
-	for iter_3_0, iter_3_1 in pairs(var_3_1 or {}) do
-		table.insert(var_3_2, iter_3_0)
+	for iter_3_0, iter_3_1 in pairs(var_3_1.skillUseTimes or {}) do
+		table.insert(var_3_2, {
+			iter_3_0,
+			iter_3_1
+		})
 	end
 
 	local var_3_3 = arg_3_2.result
@@ -57,8 +61,7 @@ end
 
 function var_0_0.AskClearStageCallBack(arg_4_0, arg_4_1)
 	if isSuccess(arg_4_0.result) then
-		TetrisGameData:InitClearStageList(arg_4_0.finish_mission)
-		TetrisGameData:InitEndLessScore(arg_4_0.endless_max_score)
+		TetrisGameData:InitClearStageList(arg_4_0.mission_list)
 
 		if var_0_1 then
 			var_0_1()
@@ -66,6 +69,7 @@ function var_0_0.AskClearStageCallBack(arg_4_0, arg_4_1)
 
 		var_0_1 = nil
 
+		TetrisGameData:InitSpecialUnlockIDList(arg_4_0.special_unlock_id_list)
 		var_0_0:UpdataRedPoint()
 	else
 		ShowTips(arg_4_0.result)
@@ -121,17 +125,28 @@ function var_0_0.InitRedPointTree(arg_9_0)
 			end
 
 			manager.redPoint:addGroup(string.format("%s_%s", RedPointConst.ACTIVITY_TETIRS_GAME_CHAPTER, iter_9_1), var_9_1)
+		elseif ActivityTetrisGameChapterCfg[iter_9_1].type == TetrisGameConst.stageType.endLess then
+			table.insert(var_9_0, string.format("%s_%s", RedPointConst.ACTIVITY_TETIRS_GAME_CHAPTER, iter_9_1))
+
+			local var_9_2 = ActivityTetrisGameStageCfg[iter_9_1].skill_list
+			local var_9_3 = {}
+
+			for iter_9_4, iter_9_5 in pairs(var_9_2 or {}) do
+				table.insert(var_9_3, string.format("%s_%s", RedPointConst.ACTIVITY_TETIRS_GAME_NEW_SKILL, iter_9_5))
+			end
+
+			manager.redPoint:addGroup(string.format("%s_%s", RedPointConst.ACTIVITY_TETIRS_GAME_CHAPTER, iter_9_1), var_9_3)
 		end
 	end
 
-	local var_9_2 = TetrisGameData:GetCurTaskActivityID()
+	local var_9_4 = TetrisGameData:GetCurTaskActivityID()
 
-	table.insert(var_9_0, string.format("%s_%s", RedPointConst.ACTIVITY_TASK, var_9_2))
+	table.insert(var_9_0, string.format("%s_%s", RedPointConst.ACTIVITY_TASK, var_9_4))
 
-	local var_9_3 = TetrisGameData:GetCurActivityID()
-	local var_9_4 = string.format("%s%s", ActivityTools.GetRedPointKey(var_9_3), var_9_3)
+	local var_9_5 = TetrisGameData:GetCurActivityID()
+	local var_9_6 = string.format("%s%s", ActivityTools.GetRedPointKey(var_9_5), var_9_5)
 
-	manager.redPoint:addGroup(var_9_4, var_9_0)
+	manager.redPoint:addGroup(var_9_6, var_9_0)
 end
 
 function var_0_0.UpdataStageRedPoint(arg_10_0)

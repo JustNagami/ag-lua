@@ -2033,6 +2033,7 @@
 				arg_51_1.fswtw_:SetDirty()
 
 				arg_51_1.typewritterCharCountI18N = 0
+				arg_51_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
 				SetActive(arg_51_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_51_1:ShowNextGo(false)
@@ -2042,7 +2043,9 @@
 
 			if var_54_45 < arg_51_1.time_ and arg_51_1.time_ <= var_54_45 + arg_54_0 then
 				arg_51_1.var_.oldValueTypewriter = arg_51_1.fswtw_.percent
+				arg_51_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_51_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, true)
 				arg_51_1:ShowNextGo(false)
 			end
 
@@ -2091,6 +2094,9 @@
 
 			if var_54_56 < arg_51_1.time_ and arg_51_1.time_ <= var_54_56 + arg_54_0 then
 				local var_54_57 = arg_51_1.fswbg_.transform:Find("textbox/adapt/content") or arg_51_1.fswbg_.transform:Find("textbox/content")
+
+				arg_51_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
+
 				local var_54_58 = var_54_57:GetComponent("Text")
 				local var_54_59 = var_54_57:GetComponent("RectTransform")
 
@@ -2142,6 +2148,7 @@
 				arg_55_1.fswtw_:SetDirty()
 
 				arg_55_1.typewritterCharCountI18N = 0
+				arg_55_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
 				SetActive(arg_55_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, false)
 				arg_55_1:ShowNextGo(false)
@@ -2151,7 +2158,9 @@
 
 			if var_58_3 < arg_55_1.time_ and arg_55_1.time_ <= var_58_3 + arg_58_0 then
 				arg_55_1.var_.oldValueTypewriter = arg_55_1.fswtw_.percent
+				arg_55_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_55_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, true)
 				arg_55_1:ShowNextGo(false)
 			end
 
@@ -2200,6 +2209,9 @@
 
 			if var_58_14 < arg_55_1.time_ and arg_55_1.time_ <= var_58_14 + arg_58_0 then
 				local var_58_15 = arg_55_1.fswbg_.transform:Find("textbox/adapt/content") or arg_55_1.fswbg_.transform:Find("textbox/content")
+
+				arg_55_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
+
 				local var_58_16 = var_58_15:GetComponent("Text")
 				local var_58_17 = var_58_15:GetComponent("RectTransform")
 
@@ -2381,6 +2393,10 @@
 			if var_62_35 < arg_59_1.time_ and arg_59_1.time_ <= var_62_35 + arg_62_0 then
 				arg_59_1.fswbg_:SetActive(false)
 				arg_59_1.dialog_:SetActive(false)
+
+				arg_59_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
+
+				SetActive(arg_59_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, true)
 				arg_59_1:ShowNextGo(false)
 			end
 

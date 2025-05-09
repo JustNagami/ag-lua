@@ -887,4 +887,11 @@ function var_0_0.SetIsRandomHeroShowEachDebutAnim(arg_109_0, arg_109_1)
 	end)
 end
 
+function var_0_0.SaveHeroSkinIDAndSceneID(arg_111_0, arg_111_1)
+	manager.net:Push(32132, {
+		hero_id = arg_111_0,
+		background_id = arg_111_1
+	})
+end
+
 return var_0_0

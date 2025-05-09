@@ -8,7 +8,6 @@ function var_0_0.Ctor(arg_1_0, arg_1_1, arg_1_2)
 
 	arg_1_0:Init()
 	arg_1_0:InitSceneEffect()
-	arg_1_0:UpdateCameraParams()
 	arg_1_0:InitCameraParams()
 end
 
@@ -44,7 +43,8 @@ function var_0_0.LoadModel(arg_5_0)
 		arg_5_0.cameraManager_ = nil
 	end
 
-	manager.heroUiTimeline:BindHero(arg_5_0:GetSkinId(), arg_5_0:GetModelId(), arg_5_0.tpose)
+	arg_5_0:UpdateCameraParams()
+	arg_5_0:GetHeroTimelineMgr():BindHero(arg_5_0:GetSkinId(), arg_5_0:GetModelId(), arg_5_0.tpose)
 end
 
 function var_0_0.GetHeroPosAndRotCfg(arg_6_0)
@@ -84,163 +84,231 @@ function var_0_0.SkipDebut(arg_9_0)
 	return true
 end
 
-function var_0_0.CheckInitState(arg_10_0)
-	local var_10_0 = arg_10_0:GetCurrentState()
-
-	return var_10_0 and var_10_0:GetStateKey() == PosterGirlConst.StateKay.init or false
-end
-
-function var_0_0.InitTouchHelp(arg_11_0, arg_11_1)
-	arg_11_0.cameraManager_.touchHelper = arg_11_1
-end
-
-function var_0_0.TouchHelpIdle(arg_12_0)
-	arg_12_0.cameraManager_:TweenToDefaultCameraPos()
-end
-
-function var_0_0.TouchHelpSingleDrag(arg_13_0, arg_13_1, arg_13_2)
-	if not arg_13_0:CheckInitState() then
-		return
-	end
-
-	arg_13_0.cameraManager_:RotateCamera(arg_13_1, arg_13_2)
-end
-
-function var_0_0.TouchHelpMutiDrag(arg_14_0, arg_14_1)
-	local var_14_0 = GameSetting.delta_to_zoom and GameSetting.delta_to_zoom.value[1] or 10
-
-	if var_14_0 < arg_14_1 then
-		arg_14_0.cameraManager_:SetActiveCamera(1)
-	elseif arg_14_1 < -1 * var_14_0 then
-		arg_14_0.cameraManager_:SetActiveCamera(0)
-	end
-end
-
-function var_0_0.SetSelfCamera(arg_15_0, arg_15_1)
-	if arg_15_1 == -1 then
-		arg_15_0.cameraManager_:RemoveActiveCamera()
-	else
-		arg_15_0.cameraManager_:SetActiveCamera(arg_15_1)
-	end
-
-	arg_15_0:ResetCameraPos()
-end
-
-function var_0_0.ResetCameraPos(arg_16_0)
-	arg_16_0.cameraManager_:ResetCameraDefaultCfg()
-end
-
-function var_0_0.UpdateCameraParams(arg_17_0)
-	arg_17_0.cameraManager_:SetCameraParams(0)
-	arg_17_0:SetSelfCamera(0)
-end
-
-function var_0_0.MuteCamera(arg_18_0, arg_18_1)
-	SetActive(arg_18_0.cameraManager_.gameObject, not arg_18_1)
-end
-
-function var_0_0.GetState(arg_19_0, arg_19_1)
-	if arg_19_0._states[arg_19_1] then
-		return arg_19_0._states[arg_19_1]
-	end
-
-	local var_19_0 = PosterGirlTools.ProduceDlcState(arg_19_1, arg_19_0)
-
-	if var_19_0 ~= nil then
-		var_19_0:SetStateKey(arg_19_1)
-
-		arg_19_0._states[arg_19_1] = var_19_0
-
-		return var_19_0
-	end
-end
-
-function var_0_0.DoShacking(arg_20_0)
-	if not arg_20_0:CheckInitState() or PosterGirlConst.ViewDirect.center ~= arg_20_0.view_direct then
-		return
-	end
-
-	arg_20_0:ChangeState(PosterGirlConst.StateKay.shake)
-	var_0_0.super.DoShacking(arg_20_0)
-end
-
-function var_0_0.DoTouch(arg_21_0)
-	local var_21_0 = arg_21_0:GetCurrentState()
-
-	if var_21_0 and var_21_0:CanPlayNextAni() then
-		var_21_0:PlayNextAni()
-
-		return
-	end
-
-	if not arg_21_0:CheckInitState() then
-		return
-	end
-
-	arg_21_0:ChangeState(PosterGirlConst.StateKay.touch)
-	var_0_0.super.DoTouch(arg_21_0)
-end
-
-function var_0_0.DoQuickTouch(arg_22_0)
-	local var_22_0 = arg_22_0:GetCurrentState()
-
-	if var_22_0 and var_22_0:CanPlayNextAni() then
-		var_22_0:PlayNextAni()
-
-		return
-	end
-
-	if not arg_22_0:CheckInitState() or PosterGirlConst.ViewDirect.center ~= arg_22_0.view_direct then
-		return
-	end
-
-	arg_22_0:ChangeState(PosterGirlConst.StateKay.quickclick)
-	var_0_0.super.DoQuickTouch(arg_22_0)
-end
-
-function var_0_0.DoShowing(arg_23_0)
-	if not arg_23_0:CheckInitState() or PosterGirlConst.ViewDirect.center ~= arg_23_0.view_direct then
-		return
-	end
-
-	arg_23_0:ChangeState(PosterGirlConst.StateKay.show)
-	var_0_0.super.DoShowing(arg_23_0)
-end
-
-function var_0_0.DoInit(arg_24_0, arg_24_1)
-	if arg_24_1 == PosterGirlConst.ViewTag.home then
-		arg_24_0:ChangeState(PosterGirlConst.StateKay.init)
-	else
-		arg_24_0:ChangeState(PosterGirlConst.StateKay.init_spec, true)
-	end
-end
-
-function var_0_0.DoIdle(arg_25_0)
-	if not arg_25_0:CheckInitState() then
-		return
-	end
-
-	arg_25_0:ChangeState(PosterGirlConst.StateKay.idle)
-end
-
-function var_0_0.Dispose(arg_26_0)
-	if arg_26_0._currentState then
-		arg_26_0._currentState:Exit(true)
-	end
-
-	arg_26_0._currentState = nil
-
-	manager.heroUiTimeline:Unbind()
-	arg_26_0:RevertCameraParams()
-	var_0_0.super.Dispose(arg_26_0)
-end
-
-function var_0_0.ResetBlendShapes(arg_27_0)
+function var_0_0.AfterDebut(arg_10_0)
 	return
 end
 
-function var_0_0.DOEndDrag(arg_28_0)
-	arg_28_0:AddInteractionsTimes()
+local var_0_1 = {
+	[PosterGirlConst.StateKay.init] = true,
+	[PosterGirlConst.StateKay.init_spec] = true,
+	[PosterGirlConst.StateKay.init_no_blend] = true
+}
+
+function var_0_0.CheckInitState(arg_11_0)
+	local var_11_0 = arg_11_0:GetCurrentState()
+
+	return var_11_0 and var_0_1[var_11_0:GetStateKey()]
+end
+
+function var_0_0.InitTouchHelp(arg_12_0, arg_12_1)
+	arg_12_0.cameraManager_.touchHelper = arg_12_1
+end
+
+function var_0_0.TouchHelpIdle(arg_13_0)
+	if arg_13_0:CheckInitState() or arg_13_0:CheckOpenDrag() then
+		arg_13_0.cameraManager_:TweenToDefaultCameraPos()
+	end
+end
+
+function var_0_0.CheckOpenDrag(arg_14_0)
+	local var_14_0 = arg_14_0:GetCurrentState()
+
+	return var_14_0 and PosterGirlTools.IsStateOpenDrag(var_14_0:GetStateKey()) or false
+end
+
+function var_0_0.TouchHelpSingleDrag(arg_15_0, arg_15_1, arg_15_2)
+	if arg_15_0:CheckInitState() or arg_15_0:CheckOpenDrag() then
+		arg_15_0.cameraManager_:RotateCamera(arg_15_1, arg_15_2)
+	end
+end
+
+function var_0_0.TouchHelpMutiDrag(arg_16_0, arg_16_1)
+	local var_16_0 = GameSetting.delta_to_zoom and GameSetting.delta_to_zoom.value[1] or 10
+
+	if var_16_0 < arg_16_1 then
+		arg_16_0.cameraManager_:SetActiveCamera(1)
+	elseif arg_16_1 < -1 * var_16_0 then
+		arg_16_0.cameraManager_:SetActiveCamera(0)
+	end
+end
+
+function var_0_0.SetSelfCamera(arg_17_0, arg_17_1, arg_17_2)
+	if arg_17_1 == -1 then
+		arg_17_0.cameraManager_:RemoveActiveCamera()
+	else
+		arg_17_0.cameraManager_:SetActiveCamera(arg_17_1, arg_17_2 or false)
+	end
+
+	arg_17_0:ResetCameraPos()
+end
+
+function var_0_0.SetCameraInputMode(arg_18_0, arg_18_1)
+	if arg_18_0.cameraManager_ then
+		arg_18_0.cameraManager_:SwitchCamearInputmode(arg_18_1)
+	end
+end
+
+function var_0_0.ResetCameraPos(arg_19_0)
+	arg_19_0.cameraManager_:ResetCameraDefaultCfg()
+end
+
+function var_0_0.UpdateCameraParams(arg_20_0)
+	if not arg_20_0.cameraManager_ then
+		return
+	end
+
+	arg_20_0.cameraManager_:SetCameraParams(0)
+	arg_20_0:SetSelfCamera(0)
+end
+
+function var_0_0.MuteCamera(arg_21_0, arg_21_1)
+	SetActive(arg_21_0.cameraManager_.gameObject, not arg_21_1)
+end
+
+function var_0_0.SetCameraParams(arg_22_0, arg_22_1)
+	if arg_22_0.cameraManager_ then
+		arg_22_0.cameraManager_:SetCameraParams(arg_22_1)
+	end
+end
+
+function var_0_0.GetState(arg_23_0, arg_23_1)
+	local var_23_0 = PosterGirlTools.DlcStateShouldCache(arg_23_1)
+	local var_23_1 = nullable(arg_23_0._states, var_23_0)
+
+	;({}).isViewPointChange = PosterGirlTools.IsTZeroViewPointCanLoopSwitch()
+
+	if var_23_1 == nil then
+		var_23_1 = PosterGirlTools.ProduceDlcState(arg_23_1, arg_23_0)
+
+		if var_23_1 ~= nil and var_23_0 then
+			arg_23_0._states[var_23_0] = var_23_1
+		end
+	end
+
+	if arg_23_1.key ~= nil then
+		var_23_1:SetStateKey(arg_23_1.key)
+	else
+		var_23_1:SetStateKey(arg_23_1)
+	end
+
+	return var_23_1
+end
+
+function var_0_0.DoShacking(arg_24_0)
+	if not arg_24_0:CheckInitState() or PosterGirlConst.ViewDirect.center ~= arg_24_0.view_direct then
+		return
+	end
+
+	arg_24_0:ChangeState(PosterGirlConst.StateKay.shake)
+	var_0_0.super.DoShacking(arg_24_0)
+end
+
+function var_0_0.AcceptTouch(arg_25_0)
+	local var_25_0 = arg_25_0:GetCurrentState()
+
+	if var_25_0 and var_25_0:AcceptTouch() then
+		return true
+	end
+
+	return var_0_0.super.AcceptTouch(arg_25_0)
+end
+
+function var_0_0.DoTouch(arg_26_0)
+	local var_26_0 = arg_26_0:GetCurrentState()
+
+	if var_26_0 and var_26_0:CanPlayNextAni() then
+		var_26_0:PlayNextAni()
+
+		return
+	end
+
+	if not arg_26_0:CheckInitState() then
+		return
+	end
+
+	arg_26_0:ChangeState(PosterGirlConst.StateKay.touch)
+	var_0_0.super.DoTouch(arg_26_0)
+end
+
+function var_0_0.DoQuickTouch(arg_27_0)
+	local var_27_0 = arg_27_0:GetCurrentState()
+
+	if var_27_0 and var_27_0:CanPlayNextAni() then
+		var_27_0:PlayNextAni()
+
+		return
+	end
+
+	if not arg_27_0:CheckInitState() or PosterGirlConst.ViewDirect.center ~= arg_27_0.view_direct then
+		return
+	end
+
+	arg_27_0:ChangeState(PosterGirlConst.StateKay.quickclick)
+	var_0_0.super.DoQuickTouch(arg_27_0)
+end
+
+function var_0_0.DoShowing(arg_28_0)
+	if not arg_28_0:CheckInitState() or PosterGirlConst.ViewDirect.center ~= arg_28_0.view_direct then
+		return
+	end
+
+	arg_28_0:ChangeState(PosterGirlConst.StateKay.show)
+	var_0_0.super.DoShowing(arg_28_0)
+end
+
+function var_0_0.DoInit(arg_29_0, arg_29_1)
+	if arg_29_1 == PosterGirlConst.ViewTag.home then
+		arg_29_0:ChangeState(PosterGirlConst.StateKay.init)
+	else
+		arg_29_0:ChangeState(PosterGirlConst.StateKay.init_spec, true)
+	end
+end
+
+function var_0_0.DoIdle(arg_30_0)
+	if not arg_30_0:CheckIdle() then
+		return
+	end
+
+	arg_30_0:ChangeState(PosterGirlConst.StateKay.idle)
+end
+
+function var_0_0.GetMiniGameKey(arg_31_0, arg_31_1)
+	return PosterGirlTools.GetMiniGameAction(arg_31_1, arg_31_0)
+end
+
+function var_0_0.Dispose(arg_32_0)
+	local var_32_0 = arg_32_0:GetHeroTimelineMgr()
+
+	if var_32_0 then
+		var_32_0:Unbind()
+	end
+
+	arg_32_0:RevertCameraParams()
+	var_0_0.super.Dispose(arg_32_0)
+end
+
+function var_0_0.ResetBlendShapes(arg_33_0)
+	return
+end
+
+function var_0_0.PlayEffect(arg_34_0, arg_34_1, arg_34_2, arg_34_3)
+	return arg_34_0:GetHeroTimelineMgr():_GetTimeline():GetTimelineBrain():PlayEffect(arg_34_1, arg_34_2, arg_34_3)
+end
+
+function var_0_0.StopEffect(arg_35_0, arg_35_1)
+	arg_35_0:GetHeroTimelineMgr():_GetTimeline():GetTimelineBrain():StopEffect(arg_35_1)
+end
+
+function var_0_0.SwipeToLeft(arg_36_0)
+	return
+end
+
+function var_0_0.SwipeToRight(arg_37_0)
+	return
+end
+
+function var_0_0.DOEndDrag(arg_38_0)
+	arg_38_0:AddInteractionsTimes()
 end
 
 return var_0_0

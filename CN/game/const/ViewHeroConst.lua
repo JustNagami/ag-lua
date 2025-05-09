@@ -22,7 +22,8 @@
 			[HeroConst.HERO_DATA_TYPE.DEFAULT] = "NewHeroAstrolabePage"
 		},
 		{
-			[HeroConst.HERO_DATA_TYPE.DEFAULT] = "HeroChipPage"
+			[HeroConst.HERO_DATA_TYPE.DEFAULT] = "HeroChipPage",
+			[HeroConst.HERO_DATA_TYPE.FOREIGN] = "ForeignHeroChipPage"
 		},
 		{
 			[HeroConst.HERO_DATA_TYPE.DEFAULT] = "StrategyMatrixTreasurePage"

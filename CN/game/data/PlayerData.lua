@@ -55,6 +55,7 @@ function var_0_0.Init(arg_1_0)
 	arg_1_0:SetIsDeskMode(false)
 
 	arg_1_0.selectSkinList_ = {}
+	arg_1_0.heroAssistantVoice_ = nil
 end
 
 local var_0_2 = {}
@@ -1569,7 +1570,7 @@ function var_0_0.SetIsRandomHeroUseDlcScene(arg_121_0, arg_121_1)
 end
 
 function var_0_0.IsRandomHeroShowEachDebutAnim(arg_122_0)
-	return var_0_23
+	return true
 end
 
 function var_0_0.SetIsRandomHeroShowEachDebutAnim(arg_123_0, arg_123_1)

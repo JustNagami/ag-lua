@@ -11,6 +11,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -30,6 +32,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -50,6 +54,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {}
 	},
 	[104] = {
@@ -78,6 +84,8 @@
 				"buttonImage_"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -97,6 +105,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -104,7 +114,6 @@
 		talk_anchors = 4,
 		type = "ClickButton",
 		talk_adapt = 0,
-		mask_scale = "ARRAY",
 		is_finish = false,
 		id = 106,
 		talk_content = "",
@@ -120,6 +129,9 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
 		talk_position = {}
 	},
 	[107] = {
@@ -140,6 +152,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -155,6 +169,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -173,6 +189,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -202,6 +220,8 @@
 				"buttonImage_"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -221,6 +241,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -243,6 +265,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -262,6 +286,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -277,6 +303,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -296,6 +324,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-918,
@@ -321,6 +351,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -343,6 +375,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -365,6 +399,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -381,6 +417,8 @@
 			"backBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -400,6 +438,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -419,6 +459,8 @@
 			"homeBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			581,
@@ -442,6 +484,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {}
 	},
 	[406] = {
@@ -460,6 +504,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -494,6 +540,8 @@
 				"guide_addBtn2"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			109.4,
@@ -528,6 +576,8 @@
 			},
 			"1148/heroinfo"
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -547,6 +597,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -569,6 +621,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -587,6 +641,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -606,6 +662,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -635,6 +693,8 @@
 				"buttonImage_"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -654,6 +714,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -676,6 +738,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -696,6 +760,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {}
 	},
 	[502] = {
@@ -714,6 +780,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -748,6 +816,8 @@
 				"guide_addBtn3"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -782,6 +852,8 @@
 			},
 			"1039/heroinfo"
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -804,6 +876,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -826,6 +900,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -846,6 +922,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -865,6 +943,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -894,6 +974,8 @@
 				"buttonImage_"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -913,6 +995,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -935,6 +1019,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -950,6 +1036,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -976,6 +1064,8 @@
 				"guide_combat"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-380.8,
@@ -1008,6 +1098,8 @@
 				"guide_combat"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1039,6 +1131,8 @@
 				"guide_combat"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1068,6 +1162,8 @@
 				"gameObject_"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1087,6 +1183,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1107,6 +1205,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {}
 	},
 	[608] = {
@@ -1128,6 +1228,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1146,6 +1248,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1165,6 +1269,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1180,6 +1286,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1199,6 +1307,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-910,
@@ -1221,6 +1331,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			840,
@@ -1245,6 +1357,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-940,
@@ -1277,6 +1391,8 @@
 			"EventTriggerListener"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {
 			0.7,
 			0.7
@@ -1305,6 +1421,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-940,
@@ -1327,6 +1445,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1343,6 +1463,8 @@
 			"backBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			378,
@@ -1376,6 +1498,8 @@
 				"guide_notequipped"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-940,
@@ -1399,6 +1523,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-940,
@@ -1422,6 +1548,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-940,
@@ -1445,6 +1573,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-940,
@@ -1476,6 +1606,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			700,
@@ -1500,6 +1632,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-320,
@@ -1519,6 +1653,8 @@
 			"homeBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			581,
@@ -1548,6 +1684,8 @@
 				"guide_combat"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-380.8,
@@ -1580,6 +1718,8 @@
 				"guide_combat"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1606,6 +1746,8 @@
 				"guide_combat"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-380.8,
@@ -1626,6 +1768,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1641,6 +1785,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1662,6 +1808,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-521,
@@ -1701,6 +1849,8 @@
 			},
 			"401/guide_mask"
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -1738,6 +1888,8 @@
 				"guide_conent"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1754,6 +1906,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -1772,6 +1926,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1793,6 +1949,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-521,
@@ -1832,6 +1990,8 @@
 			},
 			"302/guide_mask"
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1851,6 +2011,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			83,
@@ -1870,6 +2032,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -1888,6 +2052,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1909,6 +2075,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-521,
@@ -1948,6 +2116,8 @@
 			},
 			"404/guide_mask"
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1977,6 +2147,8 @@
 			"4040101",
 			"Button"
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -1992,6 +2164,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -2013,6 +2187,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-521,
@@ -2052,6 +2228,8 @@
 			},
 			"301/guide_mask"
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -2076,6 +2254,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			318,
@@ -2095,6 +2275,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -2118,6 +2300,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-1423,
@@ -2140,6 +2324,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			486,
@@ -2158,6 +2344,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -2177,6 +2365,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-1000,
@@ -2211,6 +2401,8 @@
 			5,
 			"title/Background"
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			790,
@@ -2229,6 +2421,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -2248,6 +2442,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-970,
@@ -2270,6 +2466,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			840,
@@ -2294,6 +2492,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-310,
@@ -2317,6 +2517,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-940,
@@ -2340,6 +2542,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			382,
@@ -2362,6 +2566,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-310,
@@ -2380,6 +2586,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -2399,6 +2607,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-377,
@@ -2425,6 +2635,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -2454,6 +2666,8 @@
 				"guide_chip"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-386,
@@ -2477,6 +2691,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -2500,6 +2716,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -2522,6 +2740,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -2548,6 +2768,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-386,
@@ -2571,6 +2793,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -2594,6 +2818,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -2613,6 +2839,8 @@
 			"homeBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			581,
@@ -2642,6 +2870,8 @@
 				"guide_combat"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-380.8,
@@ -2674,6 +2904,8 @@
 				"guide_combat"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -2705,6 +2937,8 @@
 				"guide_combat"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -2734,6 +2968,8 @@
 				"gameObject_"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -2753,6 +2989,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -2778,6 +3016,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -2801,6 +3041,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -2822,6 +3064,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -2844,6 +3088,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -2863,6 +3109,8 @@
 			"backBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			378,
@@ -2882,6 +3130,8 @@
 			"backBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			378,
@@ -2907,6 +3157,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -2922,6 +3174,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -2943,6 +3197,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-760,
@@ -2973,6 +3229,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -2996,6 +3254,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			366,
@@ -3015,6 +3275,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -3038,6 +3300,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-740,
@@ -3063,6 +3327,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-740,
@@ -3087,6 +3353,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-760,
@@ -3117,6 +3385,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -3136,6 +3406,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -3158,6 +3430,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			1424,
@@ -3180,6 +3454,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			295,
@@ -3203,6 +3479,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-150,
@@ -3226,6 +3504,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			460,
@@ -3251,6 +3531,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			100,
@@ -3274,6 +3556,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			490,
@@ -3297,6 +3581,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			520,
@@ -3319,6 +3605,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-150,
@@ -3341,6 +3629,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			460,
@@ -3363,6 +3653,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			200,
@@ -3388,6 +3680,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			450,
@@ -3411,6 +3705,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			420,
@@ -3433,6 +3729,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			300,
@@ -3458,6 +3756,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			200,
@@ -3480,6 +3780,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			300,
@@ -3502,6 +3804,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			295,
@@ -3527,6 +3831,8 @@
 			"RectTransform"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			150,
@@ -3552,6 +3858,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -3577,6 +3885,8 @@
 			"RectTransform"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			115,
@@ -3599,6 +3909,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			250,
@@ -3621,6 +3933,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			100,
@@ -3643,6 +3957,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			320,
@@ -3666,6 +3982,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -3688,6 +4006,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			164,
@@ -3711,6 +4031,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -3733,6 +4055,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			96,
@@ -3762,6 +4086,8 @@
 				"guide_item_btn1"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -3787,6 +4113,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -3809,6 +4137,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -3829,6 +4159,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -3852,6 +4184,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -3874,6 +4208,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -3903,6 +4239,8 @@
 				"guide_bg"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -3925,6 +4263,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-396,
@@ -3947,6 +4287,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-396,
@@ -3984,6 +4326,8 @@
 				"guide_opt"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-386,
@@ -4003,6 +4347,8 @@
 			"backBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			378,
@@ -4025,6 +4371,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-396,
@@ -4044,6 +4392,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -4066,6 +4416,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			164,
@@ -4088,6 +4440,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-396,
@@ -4118,6 +4472,8 @@
 				"guide_canteen"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -4145,6 +4501,8 @@
 				"guide_btn5"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -4172,6 +4530,8 @@
 				"guide_btn4"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -4192,6 +4552,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-386,
@@ -4210,6 +4572,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -4231,6 +4595,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-760,
@@ -4261,6 +4627,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -4280,6 +4648,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -4309,6 +4679,8 @@
 				"guide_combat"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-380.8,
@@ -4333,6 +4705,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -4369,6 +4743,8 @@
 			},
 			"402/guide_mask"
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -4388,6 +4764,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			1086,
@@ -4410,6 +4788,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			1086,
@@ -4432,6 +4812,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			700,
@@ -4456,6 +4838,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-960,
@@ -4480,6 +4864,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-960,
@@ -4499,6 +4885,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -4517,6 +4905,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -4538,6 +4928,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-760,
@@ -4568,6 +4960,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -4590,6 +4984,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -4614,6 +5010,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -4632,6 +5030,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -4658,6 +5058,8 @@
 				"btn_goddess"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-970,
@@ -4680,6 +5082,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			840,
@@ -4707,6 +5111,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			401,
@@ -4734,6 +5140,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -4753,6 +5161,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			1200,
@@ -4776,6 +5186,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-386,
@@ -4799,6 +5211,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-940,
@@ -4822,6 +5236,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-390,
@@ -4845,6 +5261,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -4867,6 +5285,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -4890,6 +5310,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			518,
@@ -4912,6 +5334,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			700,
@@ -4936,6 +5360,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-960,
@@ -4960,6 +5386,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-960,
@@ -4979,6 +5407,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -5001,6 +5431,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -5025,6 +5457,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -5049,6 +5483,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -5071,6 +5507,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -5090,6 +5528,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -5112,6 +5552,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-970,
@@ -5137,6 +5579,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -5157,6 +5601,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-386,
@@ -5179,6 +5625,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -5199,6 +5647,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -5222,6 +5672,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-1120,
@@ -5245,6 +5697,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-1120,
@@ -5264,6 +5718,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -5294,6 +5750,8 @@
 				"guide_1"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			768,
@@ -5339,6 +5797,8 @@
 				"guide_item"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			37,
@@ -5361,6 +5821,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -5389,6 +5851,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			226,
@@ -5419,6 +5883,8 @@
 				"guide_2"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			768,
@@ -5444,6 +5910,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-372,
@@ -5469,6 +5937,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-1392,
@@ -5499,6 +5969,8 @@
 				"guide_3"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			768,
@@ -5524,6 +5996,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			74,
@@ -5554,6 +6028,8 @@
 				"guide_4"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			768,
@@ -5595,6 +6071,8 @@
 				"guide_infoitem"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-300,
@@ -5620,6 +6098,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			450,
@@ -5649,6 +6129,8 @@
 				"guide_newbie_task"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			678,
@@ -5667,6 +6149,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -5693,6 +6177,8 @@
 				"guide_combat"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-380.8,
@@ -5717,6 +6203,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -5753,6 +6241,8 @@
 			},
 			"303/guide_mask"
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -5775,6 +6265,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			600,
@@ -5812,6 +6304,8 @@
 				"guide_beaconitem"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			950,
@@ -5849,6 +6343,8 @@
 				"guide_beaconitemunlock"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			950,
@@ -5868,6 +6364,8 @@
 			"backBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			378,
@@ -5890,6 +6388,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			600,
@@ -5912,6 +6412,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -5935,6 +6437,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			400,
@@ -5954,6 +6458,8 @@
 			"backBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			378,
@@ -5976,6 +6482,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-240,
@@ -6013,6 +6521,8 @@
 				"guide_hero"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-386,
@@ -6038,6 +6548,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-870,
@@ -6060,6 +6572,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-676,
@@ -6079,6 +6593,8 @@
 			"backBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			378,
@@ -6101,6 +6617,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-240,
@@ -6130,6 +6648,8 @@
 				"guide_score"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-180,
@@ -6152,6 +6672,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-240,
@@ -6171,6 +6693,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -6190,6 +6714,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -6209,6 +6735,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -6228,6 +6756,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -6246,6 +6776,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -6265,6 +6797,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -6296,6 +6830,8 @@
 				"guide_step1"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			400,
@@ -6327,6 +6863,8 @@
 				"guide_item4"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			420,
@@ -6358,6 +6896,8 @@
 				"guide_item3"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-55,
@@ -6389,6 +6929,8 @@
 				"guide_item3"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-55,
@@ -6411,6 +6953,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-580,
@@ -6433,6 +6977,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-710,
@@ -6464,6 +7010,8 @@
 				"guide_lobby"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			200,
@@ -6486,6 +7034,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-416,
@@ -6508,6 +7058,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			762,
@@ -6533,6 +7085,8 @@
 			"RectTransform"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-1052,
@@ -6556,6 +7110,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-427,
@@ -6580,6 +7136,8 @@
 			"RectTransform"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			631,
@@ -6602,6 +7160,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-416,
@@ -6624,6 +7184,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-609,
@@ -6649,6 +7211,8 @@
 			"RectTransform"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			797,
@@ -6672,6 +7236,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-886,
@@ -6694,6 +7260,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-369,
@@ -6716,6 +7284,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-388,
@@ -6738,6 +7308,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-388,
@@ -6760,6 +7332,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-528,
@@ -6782,6 +7356,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			572.5,
@@ -6804,6 +7380,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-515.6,
@@ -6826,6 +7404,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			330,
@@ -6850,6 +7430,8 @@
 			"RectTransform"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-246,
@@ -6876,6 +7458,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			109,
@@ -6899,6 +7483,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			312.4,
@@ -6931,6 +7517,8 @@
 				"guide_mask"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			349,
@@ -6953,6 +7541,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			57,
@@ -6975,6 +7565,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			835,
@@ -7000,6 +7592,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			455,
@@ -7023,6 +7617,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-131.1,
@@ -7046,6 +7642,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			256.89,
@@ -7069,6 +7667,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			306,
@@ -7091,6 +7691,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			330,
@@ -7116,6 +7718,8 @@
 			"RectTransform"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			37,
@@ -7141,6 +7745,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-49,
@@ -7166,6 +7772,8 @@
 			"RectTransform"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			115,
@@ -7188,6 +7796,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			357.52,
@@ -7210,6 +7820,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-3.7,
@@ -7233,6 +7845,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			266,
@@ -7255,6 +7869,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			367,
@@ -7277,6 +7893,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			330,
@@ -7306,6 +7924,8 @@
 				"guide1_mask"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			110,
@@ -7329,6 +7949,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			84.511,
@@ -7359,6 +7981,8 @@
 				"guide2_mask"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			77.29,
@@ -7389,6 +8013,8 @@
 				"guide3_mask"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-150,
@@ -7413,6 +8039,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			309,
@@ -7436,6 +8064,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			220,
@@ -7462,6 +8092,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			220,
@@ -7485,6 +8117,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			309,
@@ -7504,6 +8138,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -7526,6 +8162,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -7548,6 +8186,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			200,
@@ -7570,6 +8210,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -7592,6 +8234,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-200,
@@ -7615,6 +8259,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-200,
@@ -7637,6 +8283,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-200,
@@ -7659,6 +8307,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-200,
@@ -7681,6 +8331,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-200,
@@ -7710,6 +8362,8 @@
 				"guide_combat"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-360,
@@ -7742,6 +8396,8 @@
 				"guide_combat"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -7761,6 +8417,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-34,
@@ -7783,6 +8441,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-34,
@@ -7805,6 +8465,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-34,
@@ -7827,6 +8489,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-34,
@@ -7849,6 +8513,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-15,
@@ -7872,6 +8538,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -7895,6 +8563,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -7918,6 +8588,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -7941,6 +8613,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -7964,6 +8638,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -7987,6 +8663,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8010,6 +8688,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8033,6 +8713,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8056,6 +8738,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8079,6 +8763,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8102,6 +8788,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8125,6 +8813,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8150,6 +8840,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8175,6 +8867,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8198,6 +8892,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8221,6 +8917,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8244,6 +8942,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8269,6 +8969,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8294,6 +8996,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8317,6 +9021,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-573,
@@ -8340,6 +9046,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -8363,6 +9071,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8386,6 +9096,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8411,6 +9123,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8436,6 +9150,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8459,6 +9175,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8482,6 +9200,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8505,6 +9225,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8530,6 +9252,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-626,
@@ -8555,6 +9279,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-626,
@@ -8578,6 +9304,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8601,6 +9329,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8626,6 +9356,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-626,
@@ -8651,6 +9383,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-626,
@@ -8674,6 +9408,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8697,6 +9433,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8720,6 +9458,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			380,
@@ -8736,6 +9476,8 @@
 		params = {},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -8754,6 +9496,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -8773,6 +9517,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-970,
@@ -8795,6 +9541,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			840,
@@ -8822,6 +9570,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			321,
@@ -8847,6 +9597,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-384,
@@ -8874,6 +9626,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			418,
@@ -8897,6 +9651,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-802,
@@ -8916,6 +9672,8 @@
 			"okBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -8936,6 +9694,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-1000,
@@ -8959,6 +9719,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-418,
@@ -8983,6 +9745,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-900,
@@ -9007,6 +9771,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-384,
@@ -9029,6 +9795,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			572.5,
@@ -9051,6 +9819,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			552.22,
@@ -9073,6 +9843,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-70,
@@ -9096,6 +9868,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-265,
@@ -9119,6 +9893,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-265,
@@ -9145,6 +9921,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-265,
@@ -9167,6 +9945,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-220,
@@ -9189,6 +9969,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-220,
@@ -9212,6 +9994,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-220,
@@ -9235,6 +10019,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			500,
@@ -9258,6 +10044,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			500,
@@ -9281,6 +10069,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			500,
@@ -9310,6 +10100,8 @@
 				"train1Btn_"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			500,
@@ -9339,6 +10131,8 @@
 				"train1Btn_"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			500,
@@ -9361,6 +10155,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-180,
@@ -9383,6 +10179,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-250,
@@ -9408,6 +10206,8 @@
 			"RectTransform"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-250,
@@ -9430,6 +10230,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			500,
@@ -9453,6 +10255,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-200,
@@ -9475,6 +10279,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-380,
@@ -9500,6 +10306,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -9522,6 +10330,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			450,
@@ -9545,6 +10355,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -9568,6 +10380,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -9591,6 +10405,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -9613,6 +10429,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-200,
@@ -9636,6 +10454,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-150,
@@ -9659,6 +10479,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-150,
@@ -9681,6 +10503,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			135,
@@ -9704,6 +10528,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			135,
@@ -9728,6 +10554,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-521,
@@ -9767,6 +10595,8 @@
 			},
 			"305/guide_mask"
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -9790,6 +10620,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-360,
@@ -9816,6 +10648,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-40,
@@ -9839,6 +10673,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-1039,
@@ -9858,6 +10694,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -9880,6 +10718,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -9904,6 +10744,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			139,
@@ -9926,6 +10768,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-367,
@@ -9949,6 +10793,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-940,
@@ -9971,6 +10817,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-541,
@@ -9997,6 +10845,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-541,
@@ -10023,6 +10873,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-940,
@@ -10045,6 +10897,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-541,
@@ -10071,6 +10925,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-541,
@@ -10094,6 +10950,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			384,
@@ -10117,6 +10975,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			384,
@@ -10136,6 +10996,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -10161,6 +11023,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-360,
@@ -10185,6 +11049,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-307,
@@ -10213,6 +11079,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-307,
@@ -10241,6 +11109,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-307,
@@ -10264,6 +11134,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-307,
@@ -10286,6 +11158,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			300,
@@ -10322,6 +11196,8 @@
 				"pic_"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			500,
@@ -10348,6 +11224,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			300,
@@ -10370,6 +11248,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-210,
@@ -10396,6 +11276,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			300,
@@ -10420,6 +11302,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -10442,6 +11326,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-918,
@@ -10464,6 +11350,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			386,
@@ -10489,6 +11377,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-775,
@@ -10511,6 +11401,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			678,
@@ -10534,6 +11426,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-317,
@@ -10556,6 +11450,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {
 			0.8,
 			0.8
@@ -10581,6 +11477,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			73,
@@ -10605,6 +11503,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-596,
@@ -10627,6 +11527,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			556,
@@ -10649,6 +11551,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-323,
@@ -10671,6 +11575,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			556,
@@ -10693,6 +11599,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {
 			0.8,
 			0.8
@@ -10719,6 +11627,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-28,
@@ -10741,6 +11651,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {
 			0.8,
 			0.8
@@ -10763,6 +11675,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -10786,6 +11700,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -10809,6 +11725,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -10835,6 +11753,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			600,
@@ -10858,6 +11778,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			600,
@@ -10881,6 +11803,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -10904,6 +11828,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-440,
@@ -10926,6 +11852,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-552,
@@ -10948,6 +11876,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-552,
@@ -10973,6 +11903,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			623,
@@ -10995,6 +11927,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -11014,6 +11948,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -11043,6 +11979,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			623,
@@ -11065,6 +12003,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -11086,6 +12026,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			623,
@@ -11108,6 +12050,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {}
 	},
@@ -11128,6 +12072,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			14,
@@ -11151,6 +12097,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-743,
@@ -11177,6 +12125,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {
 			0.96,
 			0.96
@@ -11203,6 +12153,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-1263,
@@ -11226,6 +12178,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-1263,
@@ -11249,6 +12203,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			623,
@@ -11272,6 +12228,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			465,
@@ -11295,6 +12253,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			465,
@@ -11318,6 +12278,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-552,
@@ -11341,6 +12303,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-552,
@@ -11364,6 +12328,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			14,
@@ -11388,6 +12354,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			623,
@@ -11411,6 +12379,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			457,
@@ -11434,6 +12404,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			457,
@@ -11457,6 +12429,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			457,
@@ -11480,6 +12454,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			465,
@@ -11503,6 +12479,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			457,
@@ -11526,6 +12504,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			623,
@@ -11549,6 +12529,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			854,
@@ -11572,6 +12554,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-206,
@@ -11600,6 +12584,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			600,
@@ -11623,6 +12609,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-206,
@@ -11646,6 +12634,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-206,
@@ -11669,6 +12659,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-1118,
@@ -11692,6 +12684,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-502,
@@ -11715,6 +12709,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-743,
@@ -11738,6 +12734,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-743,
@@ -11761,6 +12759,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			623,
@@ -11784,6 +12784,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			854,
@@ -11807,6 +12809,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-206,
@@ -11830,6 +12834,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-1118,
@@ -11853,6 +12859,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-502,
@@ -11876,6 +12884,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-743,
@@ -11899,6 +12909,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-743,
@@ -11922,6 +12934,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			14,
@@ -11946,6 +12960,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			623,
@@ -11969,6 +12985,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			457,
@@ -11992,6 +13010,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			457,
@@ -12015,6 +13035,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			457,
@@ -12038,6 +13060,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			457,
@@ -12064,6 +13088,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {
 			0.96,
 			0.96
@@ -12090,6 +13116,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-206,
@@ -12113,6 +13141,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-206,
@@ -12136,6 +13166,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-206,
@@ -12159,6 +13191,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-206,
@@ -12181,6 +13215,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			308.999725,
@@ -12206,6 +13242,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {
 			0.85,
 			0.85
@@ -12232,6 +13270,8 @@
 			"Button"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			623,
@@ -12251,6 +13291,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -12274,6 +13316,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			298,
@@ -12297,6 +13341,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			363,
@@ -12320,6 +13366,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			511,
@@ -12339,6 +13387,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			612,
@@ -12362,6 +13412,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -12385,6 +13437,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			950,
@@ -12408,6 +13462,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-960,
@@ -12431,6 +13487,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			600,
@@ -12454,6 +13512,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-1000,
@@ -12478,6 +13538,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-521,
@@ -12517,6 +13579,8 @@
 			},
 			"306/guide_mask"
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -12546,6 +13610,8 @@
 				"guide_start"
 			}
 		},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-900,
@@ -12569,6 +13635,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-427,
@@ -12591,6 +13659,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-427,
@@ -12614,6 +13684,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -12637,6 +13709,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -12660,6 +13734,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -12679,6 +13755,8 @@
 			"progressGo_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -12704,6 +13782,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -12727,6 +13807,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-427,
@@ -12750,6 +13832,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-1070,
@@ -12772,6 +13856,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			832,
@@ -12796,6 +13882,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-36,
@@ -12818,6 +13906,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			831,
@@ -12844,6 +13934,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-1080,
@@ -12866,6 +13958,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			1012,
@@ -12889,6 +13983,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			938.5,
@@ -12911,6 +14007,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-634,
@@ -12933,6 +14031,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-634,
@@ -12956,6 +14056,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			236,
@@ -12979,6 +14081,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			236,
@@ -13002,6 +14106,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			236,
@@ -13024,6 +14130,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			836,
@@ -13047,6 +14155,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-36,
@@ -13069,6 +14179,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-701,
@@ -13092,6 +14204,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			836,
@@ -13115,6 +14229,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			727,
@@ -13137,6 +14253,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			836,
@@ -13160,6 +14278,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			742.2,
@@ -13183,6 +14303,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -13202,6 +14324,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -13224,6 +14348,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			572.5,
@@ -13246,6 +14372,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			572.5,
@@ -13268,6 +14396,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-589,
@@ -13287,6 +14417,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -13306,6 +14438,8 @@
 			"infoBtn_"
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			692,
@@ -13329,6 +14463,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-500,
@@ -13351,6 +14487,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-400,
@@ -13374,6 +14512,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-380,
@@ -13396,6 +14536,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-670,
@@ -13419,6 +14561,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			280,
@@ -13442,6 +14586,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-670,
@@ -13465,6 +14611,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-100,
@@ -13488,6 +14636,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -13511,6 +14661,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -13533,6 +14685,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			280,
@@ -13555,6 +14709,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			574,
@@ -13578,6 +14734,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			280,
@@ -13601,6 +14759,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -13624,6 +14784,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -13647,6 +14809,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -13670,6 +14834,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -13692,6 +14858,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -13714,6 +14882,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			574,
@@ -13736,6 +14906,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -13759,6 +14931,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			574,
@@ -13782,6 +14956,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			574,
@@ -13808,6 +14984,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-200,
@@ -13830,6 +15008,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			575,
@@ -13852,6 +15032,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-199,
@@ -13878,6 +15060,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-668,
@@ -13900,6 +15084,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			604,
@@ -13922,6 +15108,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			109,
@@ -13944,6 +15132,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			180,
@@ -13966,6 +15156,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			280,
@@ -13988,6 +15180,8 @@
 		},
 		guide_component = {},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -14010,6 +15204,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			574,
@@ -14033,6 +15229,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			414,
@@ -14056,6 +15254,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			280,
@@ -14078,6 +15278,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			400,
@@ -14100,6 +15302,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-100,
@@ -14126,6 +15330,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-993,
@@ -14149,6 +15355,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-993,
@@ -14172,6 +15380,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			0,
@@ -14195,6 +15405,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-887,
@@ -14218,6 +15430,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-887,
@@ -14245,6 +15459,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			247,
@@ -14267,6 +15483,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			520,
@@ -14290,6 +15508,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			444,
@@ -14317,6 +15537,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			247,
@@ -14339,6 +15561,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-230,
@@ -14363,6 +15587,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-83,
@@ -14386,6 +15612,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-308,
@@ -14409,6 +15637,8 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-180,
@@ -14431,10 +15661,818 @@
 			}
 		},
 		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
 		mask_scale = {},
 		talk_position = {
 			-903,
 			125
+		}
+	},
+	[12701] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12701,
+		talk_content = "管理员让我找的作战记录都找到了，先从「环境利用」战术开始学习吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"osirisPlayGameEnterView",
+			{
+				"items_",
+				1,
+				"btn_"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {}
+	},
+	[12702] = {
+		talk_anchors = 7,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12702,
+		talk_content = "我记得管理员说过每种战术的侧重点不同，可以对特定的作战方式产生增益。",
+		params = {},
+		guide_component = {
+			"common",
+			"osirisPlayGameStageView",
+			{
+				"guideComponents",
+				"textskill"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-276
+		}
+	},
+	[12703] = {
+		talk_anchors = 7,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12703,
+		talk_content = "作战记录除了能播放录像之外，还能复制基础战场数据展开推演，先从第一条记录开始吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"osirisPlayGameStageView",
+			{
+				"items_",
+				1,
+				"btn_"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			480,
+			-29
+		}
+	},
+	[12704] = {
+		talk_anchors = 7,
+		type = "EventTrigger",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12704,
+		talk_content = "点击这里可以查看预存的作战队员数据。",
+		params = {
+			"pointerDown"
+		},
+		guide_component = {
+			"common",
+			"osirisPlayGameSectionSelectHeroView",
+			{
+				"subViewDic_",
+				"selectHeroView",
+				"instance",
+				"heroInfoItemList_",
+				1,
+				"dragEventListener_"
+			},
+			"EventTriggerListener"
+		},
+		mask_component = {
+			"common",
+			"osirisPlayGameSectionSelectHeroView",
+			{
+				"guideComponents",
+				"guide_addBtn1"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			450,
+			0
+		}
+	},
+	[12705] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12705,
+		talk_content = "管理员说过选对合适的战术执行人也很重要，正好这名队员的作战方式就很适合这次任务，来试试看吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"osirisPlayGameHeroTeamInfoView",
+			{
+				"guideComponents",
+				"yindao"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-56.78,
+			-288.34
+		}
+	},
+	[12801] = {
+		talk_anchors = 7,
+		type = "EventTrigger",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12801,
+		talk_content = "我记得管理员讲过，战术的成功实施和小队的搭配密切相关，看看这次任务的支援成员是谁吧。",
+		params = {
+			"pointerDown"
+		},
+		guide_component = {
+			"common",
+			"osirisPlayGameSectionSelectHeroView",
+			{
+				"subViewDic_",
+				"selectHeroView",
+				"instance",
+				"heroInfoItemList_",
+				2,
+				"dragEventListener_"
+			},
+			"EventTriggerListener"
+		},
+		mask_component = {
+			"common",
+			"osirisPlayGameSectionSelectHeroView",
+			{
+				"guideComponents",
+				"guide_addBtn2"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-45,
+			0
+		}
+	},
+	[12802] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12802,
+		talk_content = "在模拟环境中支援成员不会与队长同场作战，但会释放技能协助完成任务。接下来就去试试吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"osirisPlayGameHeroTeamInfoView",
+			{
+				"osirisGo_"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-56.78,
+			-288.34
+		}
+	},
+	[12901] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12901,
+		talk_content = "好像有些思路了，再试试沙盘模拟吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"osirisPlayGameEnterView",
+			{
+				"challengeBtn_"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-175
+		}
+	},
+	[12902] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12902,
+		talk_content = "唔，这次生成的战场环境是这样啊，再仔细观察一下吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"osirisPlayGameChallegeStageView",
+			{
+				"items_",
+				3,
+				"btn_"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-130
+		}
+	},
+	[12903] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12903,
+		talk_content = "按照刚刚学到的内容，我想这种战术应该会比较适合这个战场环境。",
+		params = {},
+		guide_component = {
+			"common",
+			"osirisPlayGameSectionInfoView",
+			{
+				"guideComponents",
+				"yindao"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-35,
+			65
+		}
+	},
+	[12904] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12904,
+		talk_content = "越快通关关卡结算分数就会越高，我一定会完成这次模拟的。",
+		params = {},
+		guide_component = {
+			"common",
+			"osirisPlayGameSectionInfoView",
+			{
+				"guideComponents",
+				"points"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-35,
+			-357
+		}
+	},
+	[13001] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 13001,
+		talk_content = "阿管听好咯，点击消除这些方块就可以攻击啦~",
+		params = {},
+		guide_component = {
+			"common",
+			"GuelGameView",
+			{
+				"guideComponents",
+				"guide_0"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			560,
+			289
+		}
+	},
+	[13002] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 13002,
+		talk_content = "积累一定能量后还能释放大招。哼哼，待会儿就用这招把阿管打败吧~",
+		params = {},
+		guide_component = {
+			"common",
+			"GuelGameView",
+			{
+				"guideComponents",
+				"guide_1"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			402,
+			312
+		}
+	},
+	[13101] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 13101,
+		talk_content = "看起来这三行马上就能凑成多行消除了。",
+		params = {},
+		guide_component = {
+			"common",
+			"tetrisGameStageView",
+			{
+				"guideComponents",
+				"guide_s2_3"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-17,
+			-46
+		}
+	},
+	[13102] = {
+		talk_anchors = 0,
+		type = "TetrisGameStep",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 13102,
+		talk_content = "这三列也要凑成消除了。\n将这块放入吧。",
+		params = {
+			5,
+			5
+		},
+		guide_component = {
+			"common",
+			"tetrisGameStageView",
+			{
+				"guideComponents",
+				"guide_end_s2_2"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {
+			"child_getcom",
+			"tetrisGameStageView",
+			{
+				"guideComponents",
+				"guide_chip_s2_1"
+			},
+			"baseChip(Clone)",
+			"TetrisGameChipEvent"
+		},
+		drag_mask_component = {
+			"common",
+			"tetrisGameStageView",
+			{
+				"guideComponents",
+				"guide_start_1"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-290,
+			-13
+		}
+	},
+	[13103] = {
+		talk_anchors = 8,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 13103,
+		talk_content = "同时消除越多行和列分数会越高。",
+		params = {},
+		guide_component = {
+			"common",
+			"tetrisGameStageView",
+			{
+				"guideComponents",
+				"guide_s2_1"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-117,
+			104
+		}
+	},
+	[13104] = {
+		talk_anchors = 0,
+		type = "JumpTo",
+		talk_adapt = 0,
+		is_finish = true,
+		id = 13104,
+		talk_content = "弹出图文说明2",
+		params = {
+			16122,
+			{
+				"Widget/Version/Alone_TetrisGameUI/TetrisDescription_5"
+			},
+			true
+		},
+		guide_component = {},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-254
+		}
+	},
+	[13105] = {
+		talk_anchors = 0,
+		type = "ClickButtonNoMask",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 13105,
+		talk_content = "关闭图文说明2",
+		params = {},
+		guide_component = {
+			"common",
+			"gameHelpPro",
+			{
+				"m_closeBtn"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			574,
+			-303
+		}
+	},
+	[13201] = {
+		talk_anchors = 8,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 13201,
+		talk_content = "现在奥义完成充能了！使用后积分倍率<color=#F48800>突破原本的上限</color>，增长到25。\n点击使用吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"tetrisGameStageView",
+			{
+				"ultimateBtn_"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-140,
+			-170
+		}
+	},
+	[13301] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 13301,
+		talk_content = "现在触发了另一个技能「锁定投放」的效果：每<color=#F48800>3</color>回合后可以<color=#F48800>锁定</color>一个方块。",
+		params = {},
+		guide_component = {
+			"common",
+			"tetrisGameStageView",
+			{
+				"guideComponents",
+				"guide_s3_3"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-831,
+			-251
+		}
+	},
+	[13302] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 13302,
+		talk_content = "锁定这个方块吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"tetrisGameStageView",
+			{
+				"blockSpaceList",
+				1,
+				"lockBtn_"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			535,
+			80
+		}
+	},
+	[13501] = {
+		talk_anchors = 7,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 13501,
+		talk_content = "现在生成了这个特殊方块。这个方块可以放到盘面的任何位置。",
+		params = {},
+		guide_component = {
+			"common",
+			"tetrisGameStageView",
+			{
+				"guideComponents",
+				"guide_start_1"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			119,
+			277
+		}
+	},
+	[13502] = {
+		talk_anchors = 0,
+		type = "TetrisGameStep",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 13502,
+		talk_content = "现在将方块放到这个位置。",
+		params = {
+			0,
+			0
+		},
+		guide_component = {
+			"common",
+			"tetrisGameStageView",
+			{
+				"guideComponents",
+				"guide_end_s4_1"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {
+			"child_getcom",
+			"tetrisGameStageView",
+			{
+				"guideComponents",
+				"guide_chip_s4_1"
+			},
+			"baseChip(Clone)",
+			"TetrisGameChipEvent"
+		},
+		drag_mask_component = {
+			"common",
+			"tetrisGameStageView",
+			{
+				"guideComponents",
+				"guide_start_1"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			23,
+			139
+		}
+	},
+	[13601] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 13601,
+		talk_content = "本关获得了新技能「同色相消」：当消除一行<color=#F48800>同色方块</color>时，该颜色的其他方块<color=#F48800>连同所在行的所有方块</color>一起消除（列同理）。",
+		params = {},
+		guide_component = {
+			"common",
+			"tetrisGameStageView",
+			{
+				"guideComponents",
+				"guide_s5_1"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-15,
+			52
+		}
+	},
+	[13602] = {
+		talk_anchors = 0,
+		type = "TetrisGameStep",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 13602,
+		talk_content = "现在将这个方块放到这个位置后，就会触发<color=#F48800>有黄色方块的行</color>一起消除的效果。",
+		params = {
+			5,
+			6
+		},
+		guide_component = {
+			"common",
+			"tetrisGameStageView",
+			{
+				"guideComponents",
+				"guide_end_s5_1"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {
+			"child_getcom",
+			"tetrisGameStageView",
+			{
+				"guideComponents",
+				"guide_chip_s5_1"
+			},
+			"baseChip(Clone)",
+			"TetrisGameChipEvent"
+		},
+		drag_mask_component = {
+			"common",
+			"tetrisGameStageView",
+			{
+				"guideComponents",
+				"guide_start_1"
+			}
+		},
+		mask_scale = {},
+		talk_position = {
+			-15,
+			52
+		}
+	},
+	[13701] = {
+		talk_anchors = 0,
+		type = "JumpTo",
+		talk_adapt = 0,
+		is_finish = true,
+		id = 13701,
+		talk_content = "弹出图文说明1",
+		params = {
+			16122,
+			{
+				"Widget/Version/Alone_TetrisGameUI/TetrisDescription_1",
+				"Widget/Version/Alone_TetrisGameUI/TetrisDescription_2"
+			},
+			true
+		},
+		guide_component = {},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-254
+		}
+	},
+	[13702] = {
+		talk_anchors = 0,
+		type = "ClickButtonNoMask",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 13702,
+		talk_content = "关闭图文说明1",
+		params = {},
+		guide_component = {
+			"common",
+			"gameHelpPro",
+			{
+				"m_closeBtn"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			574,
+			-303
+		}
+	},
+	[13703] = {
+		talk_anchors = 7,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 13703,
+		talk_content = "点击方块即可<color=#F48800>旋转</color>。\n试着放入方块达成消除吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"tetrisGameStageView",
+			{
+				"guideComponents",
+				"guide_start_1"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			100,
+			287
+		}
+	},
+	[13801] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 13801,
+		talk_content = "如果有<color=#F48800>很多绿色方块</color>就可以触发技能<color=#F48800>「同色相消」</color>的效果了。",
+		params = {},
+		guide_component = {
+			"common",
+			"tetrisGameStageView",
+			{
+				"blockSpaceList",
+				1,
+				"lockBtn_"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			535,
+			80
 		}
 	},
 	all = {
@@ -15053,6 +17091,35 @@
 		12001,
 		12002,
 		12003,
-		12004
+		12004,
+		12701,
+		12702,
+		12703,
+		12704,
+		12705,
+		12801,
+		12802,
+		12901,
+		12902,
+		12903,
+		12904,
+		13001,
+		13002,
+		13101,
+		13102,
+		13103,
+		13104,
+		13105,
+		13201,
+		13301,
+		13302,
+		13501,
+		13502,
+		13601,
+		13602,
+		13701,
+		13702,
+		13703,
+		13801
 	}
 }

@@ -251,6 +251,20 @@
 		play_desc = "ACTIVITY_PT_DESCRIBE_3_0",
 		activity_desc = "ACTIVITY_PT_RULE_3_0"
 	},
+	[21] = {
+		currency_id = 53163,
+		id = 21,
+		shop_activity_id = 331462,
+		task_activity_id = 330048,
+		buff_pop_prefab_path = "Widget/System/Activity_PT/PtUpUI/PtUpPopUI",
+		entrace_prefab_path = "Widget/System/Activity_PT/PtUpUI/PtMainUpUI",
+		activity_id = 332431,
+		main_prefab_path = "Widget/System/Activity_PT/PtUpUI/PtUpUI",
+		cost_id = 54120,
+		stage_activity_id = 332441,
+		play_desc = "ACTIVITY_PT_DESCRIBE_3_1",
+		activity_desc = "ACTIVITY_PT_RULE_3_1"
+	},
 	get_id_list_by_activity_id = {
 		[202431] = {
 			1
@@ -305,6 +319,9 @@
 		},
 		[322431] = {
 			19
+		},
+		[332431] = {
+			21
 		}
 	},
 	all = {
@@ -325,6 +342,7 @@
 		15,
 		16,
 		17,
-		19
+		19,
+		21
 	}
 }

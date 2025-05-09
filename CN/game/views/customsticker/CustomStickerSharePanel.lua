@@ -8,8 +8,6 @@ function var_0_1.Ctor(arg_1_0, arg_1_1, arg_1_2)
 
 	arg_1_0:BindCfgUI()
 	arg_1_0:AddListeners()
-
-	arg_1_0.screenSnapPath_ = Application.persistentDataPath .. "/screen_snap/picture_for_share.jpg"
 end
 
 function var_0_1.OnSnape(arg_2_0, arg_2_1)
@@ -20,6 +18,7 @@ function var_0_1.OnSnape(arg_2_0, arg_2_1)
 		var_2_1, var_2_2 = _G.SCREEN_WIDTH, _G.SCREEN_HEIGHT
 	end
 
+	arg_2_0.screenSnapPath_ = manager.share:SaveTexture()
 	arg_2_0.screenSnap_ = ScreenSnap.New(var_2_1, var_2_2)
 
 	arg_2_0.screenSnap_:Take()
@@ -88,10 +87,13 @@ function var_0_1.AddListeners(arg_6_0)
 		arg_6_0:Share(nil)
 	end)
 	arg_6_0:AddBtnListener(arg_6_0.buttonSave_, nil, function()
-		if GameToSDK.PLATFORM_ID == 2 then
-			ReceiveSavePhotoMessage(true)
+		if GameToSDK.IsEditorOrPcPlatform() then
+			LuaForUtil.SaveScreenShot(arg_6_0.screenSnapPath_)
 		else
-			LuaForUtil.SavePhotoToAlbum(arg_6_0.screenSnapPath_)
+			local var_14_0 = manager.share:SaveTexture()
+
+			arg_6_0.screenSnap_:SaveSnap(var_14_0)
+			LuaForUtil.SavePhotoToAlbum(var_14_0)
 		end
 	end)
 end

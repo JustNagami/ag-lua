@@ -193,7 +193,7 @@ end
 
 function var_0_0.RefreshTimeText(arg_18_0)
 	if arg_18_0.timeText_ then
-		if arg_18_0:isHasLeftTimeDes() then
+		if not arg_18_0:isHasLeftTimeDes() then
 			local var_18_0, var_18_1 = arg_18_0:CheckAdvanceOpenTime()
 
 			arg_18_0.timeText_.text = var_18_1

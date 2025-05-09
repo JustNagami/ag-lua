@@ -1727,6 +1727,102 @@
 			0
 		}
 	},
+	[5260201] = {
+		monster_level = 80,
+		name = "震动",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024576,
+		background_1 = "L15",
+		tips = "轻微震感，监测到的骸能阈值较低，无人员伤亡及财产损失。额外协助：受到环境影响，<color=#E78300>敌人受到光属性伤害提升</color>",
+		map = "5260201",
+		need_default_team = 1,
+		user_exp = 30,
+		id = 5260201,
+		hero_exp = 60,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			50000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5260202] = {
+		monster_level = 80,
+		name = "裂缝",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024577,
+		background_1 = "L15",
+		tips = "表层与源层间的缝隙，范围为6.33*2.09，需优先处理。额外协助：<color=#E78300>受到环境影响，修正者神能获取率增加</color>",
+		map = "5260202",
+		need_default_team = 1,
+		user_exp = 30,
+		id = 5260202,
+		hero_exp = 60,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			25000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5260203] = {
+		monster_level = 80,
+		name = "塌陷",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024580,
+		background_1 = "L15",
+		tips = "部分区域拟态构成失效，已有人员伤亡，需优先处理。额外协助：<color=#E78300>受到环境影响，尼罗阵营修正者伤害提升，攻击额外造成一次伤害</color>",
+		map = "5260203",
+		need_default_team = 1,
+		user_exp = 30,
+		id = 5260203,
+		hero_exp = 60,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			27000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5260204] = {
+		monster_level = 80,
+		name = "未知",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024581,
+		background_1 = "A07",
+		tips = "错误的信息所导致的结果就是——前路皆为迷途。",
+		map = "5260204",
+		need_default_team = 1,
+		user_exp = 0,
+		id = 5260204,
+		hero_exp = 0,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			14500
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
 	all = {
 		5130201,
 		5130202,
@@ -1799,6 +1895,10 @@
 		5240301,
 		5240302,
 		5240303,
-		5240304
+		5240304,
+		5260201,
+		5260202,
+		5260203,
+		5260204
 	}
 }

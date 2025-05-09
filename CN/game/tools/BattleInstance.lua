@@ -1089,6 +1089,25 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 				curLevel = var_5_100
 			})
 		end
+	elseif BattleConst.STAGE_TYPE_NEW.OSIRIS_PLAY_GAME == var_5_0 then
+		local var_5_110 = arg_5_0.id
+		local var_5_111 = ActivityGeneralityStageCfg.get_id_list_by_stage_id[var_5_110][1]
+		local var_5_112 = ActivityGeneralityStageCfg[var_5_111].chapter_id
+
+		if ActivityGeneralityChapterCfg[var_5_112].type == 2 then
+			OpenPageUntilLoaded("/osirisPlayGameChallegeStageView", {
+				activityID_ = arg_5_0:GetActivityID(),
+				chapterID = var_5_112
+			})
+		else
+			OpenPageUntilLoaded("/osirisPlayGameStageView", {
+				isShowTips = 1,
+				activityID_ = arg_5_0:GetActivityID(),
+				chapterID = var_5_112,
+				stage_id = var_5_110,
+				isFailed = arg_5_1
+			})
+		end
 	end
 end
 

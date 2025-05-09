@@ -2146,6 +2146,120 @@
 			5
 		}
 	},
+	chat_6030_1 = {
+		type = "chat",
+		name = "chat_6030_1",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6030聊天左侧",
+		sceneName = "X204",
+		position = {
+			-2.241,
+			0.859,
+			0.492
+		},
+		rotate = {
+			-5.744,
+			55.248,
+			-5.628
+		}
+	},
+	playerInfo_6030_1 = {
+		type = "playerInfo",
+		name = "playerInfo_6030_1",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6030玩家信息界面左侧",
+		sceneName = "X204",
+		position = {
+			-2.241,
+			0.859,
+			0.492
+		},
+		rotate = {
+			-5.744,
+			55.248,
+			-5.628
+		}
+	},
+	chat_6030_2 = {
+		type = "chat",
+		name = "chat_6030_2",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6030聊天右侧",
+		sceneName = "X204",
+		position = {
+			1.944,
+			0.751,
+			-11.911
+		},
+		rotate = {
+			-1.249,
+			-35.748,
+			-9.915
+		}
+	},
+	playerInfo_6030_2 = {
+		type = "playerInfo",
+		name = "playerInfo_6030_2",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6030玩家信息界面右侧",
+		sceneName = "X204",
+		position = {
+			1.944,
+			0.751,
+			-11.911
+		},
+		rotate = {
+			-1.249,
+			-35.748,
+			-9.915
+		}
+	},
+	t0_chat_6030 = {
+		type = "chat",
+		name = "t0_chat_6030",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6030聊天中间",
+		sceneName = "X204",
+		position = {
+			-1.237,
+			1.748,
+			-9.576
+		},
+		rotate = {
+			14.403,
+			-68.701,
+			-3.671
+		}
+	},
+	t0_playerInfo_6030 = {
+		type = "playerInfo",
+		name = "t0_playerInfo_6030",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6030玩家信息界面中间",
+		sceneName = "X204",
+		position = {
+			-1.178,
+			2.048,
+			-9.489
+		},
+		rotate = {
+			12.19,
+			-69.375,
+			-38.463
+		}
+	},
 	chat_6031 = {
 		type = "chat",
 		name = "chat_6031",
@@ -2258,6 +2372,44 @@
 			-0.9855,
 			200.105,
 			-4.541
+		}
+	},
+	chat_6034 = {
+		type = "chat",
+		name = "chat_6034",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6034聊天",
+		sceneName = "",
+		position = {
+			2.152,
+			2.303,
+			1.416
+		},
+		rotate = {
+			16.353,
+			-134.874,
+			-0.14
+		}
+	},
+	playerInfo_6034 = {
+		type = "playerInfo",
+		name = "playerInfo_6034",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6034玩家信息界面",
+		sceneName = "",
+		position = {
+			1.338,
+			1.649,
+			1.125
+		},
+		rotate = {
+			-5.738,
+			-139.856,
+			-4.542
 		}
 	},
 	get_id_list_by_fieldOfView = {
@@ -2399,12 +2551,20 @@
 			"playerInfo_6028",
 			"chat_6029",
 			"playerInfo_6029",
+			"chat_6030_1",
+			"playerInfo_6030_1",
+			"chat_6030_2",
+			"playerInfo_6030_2",
+			"t0_chat_6030",
+			"t0_playerInfo_6030",
 			"chat_6031",
 			"playerInfo_6031",
 			"chat_6032",
 			"playerInfo_6032",
 			"chat_6033",
-			"playerInfo_6033"
+			"playerInfo_6033",
+			"chat_6034",
+			"playerInfo_6034"
 		}
 	}
 }

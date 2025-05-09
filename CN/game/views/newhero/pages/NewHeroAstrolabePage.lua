@@ -28,7 +28,7 @@ function var_0_1.AddUIListener(arg_4_0)
 		arg_4_0.astrolabeInfoView_:SetClickAnimaton(true)
 	end
 
-	arg_4_0:AddBtnListenerScale(arg_4_0.adjustBtn_, nil, function()
+	arg_4_0:AddBtnListener(arg_4_0.adjustBtn_, nil, function()
 		JumpTools.OpenPageByJump("/astrolabeAdjust", {
 			heroId = arg_4_0.heroInfo_.id,
 			selectPos = {

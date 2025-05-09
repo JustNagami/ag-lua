@@ -449,166 +449,178 @@ end
 
 function var_0_0.UpdateHeroModel(arg_38_0)
 	local var_38_0 = arg_38_0.selectHeroData_.id
-	local var_38_1 = arg_38_0.selectHeroData_.heroViewProxy:GetHeroUsingSkinInfo(var_38_0, {
-		arg_38_0.selectHeroData_.trialID
-	}).id
+	local var_38_1 = arg_38_0:GetHeroUsingSkinId()
 
 	arg_38_0:LoadHeroModel(var_38_1)
 	arg_38_0:ProcessCamera(var_38_1)
 end
 
-function var_0_0.LoadHeroModel(arg_39_0, arg_39_1)
-	print("LoadHeroModel: " .. arg_39_1)
+function var_0_0.GetHeroUsingSkinId(arg_39_0)
+	local var_39_0 = arg_39_0.selectHeroData_.id
 
-	local var_39_0 = arg_39_0.params_.selectHeroPos or 1
-
-	SectionSelectHeroScene.GetInstance():OnlyDisplayModel(var_39_0)
-	SectionSelectHeroScene.GetInstance():LoadTargetModel(var_39_0, arg_39_1)
+	return arg_39_0.selectHeroData_.heroViewProxy:GetHeroUsingSkinInfo(var_39_0, {
+		arg_39_0.selectHeroData_.trialID
+	}).id
 end
 
-function var_0_0.UpdateHeroInfoView(arg_40_0)
-	local var_40_0 = arg_40_0.selectHeroData_.id
-	local var_40_1 = arg_40_0.selectHeroData_.heroViewProxy:GetHeroData(var_40_0, {
-		arg_40_0.selectHeroData_.trialID
-	})
+function var_0_0.LoadHeroModel(arg_40_0, arg_40_1)
+	print("LoadHeroModel: " .. arg_40_1)
 
-	arg_40_0.heroInfoView_:SetProxy(arg_40_0.selectHeroData_.heroViewProxy)
-	arg_40_0.heroInfoView_:SetHeroInfo(var_40_1)
-	arg_40_0.heroInfoView_:UpdateView()
+	local var_40_0 = arg_40_0.params_.selectHeroPos or 1
+
+	SectionSelectHeroScene.GetInstance():OnlyDisplayModel(var_40_0)
+	SectionSelectHeroScene.GetInstance():LoadTargetModel(var_40_0, arg_40_1)
 end
 
-function var_0_0.RefreshMultiModeUI(arg_41_0)
-	arg_41_0:RefreshMultiModeHeadItem()
-	arg_41_0:UpdateHeroView()
-	arg_41_0:RefreshMultiJoinBtn()
+function var_0_0.UpdateHeroInfoView(arg_41_0)
+	local var_41_0 = arg_41_0.selectHeroData_.id
+	local var_41_1 = arg_41_0:GetHeroViewProxyData()
+
+	arg_41_0.heroInfoView_:SetProxy(arg_41_0.selectHeroData_.heroViewProxy)
+	arg_41_0.heroInfoView_:SetHeroInfo(var_41_1)
+	arg_41_0.heroInfoView_:UpdateView()
 end
 
-function var_0_0.RefreshMultiModeHeadItem(arg_42_0)
-	for iter_42_0, iter_42_1 in pairs(arg_42_0.heroHeadList_:GetItemList()) do
-		iter_42_1:SetSelected(iter_42_1.heroId_ == arg_42_0.selectHeroData_.id and iter_42_1.trialID_ == arg_42_0.selectHeroData_.trialID)
-		iter_42_1:SetMultiPos(arg_42_0:IsInTeam(iter_42_1.heroId_, iter_42_1.trialID_))
+function var_0_0.GetHeroViewProxyData(arg_42_0)
+	local var_42_0 = arg_42_0.selectHeroData_.id
+
+	return (arg_42_0.selectHeroData_.heroViewProxy:GetHeroData(var_42_0, {
+		arg_42_0.selectHeroData_.trialID
+	}))
+end
+
+function var_0_0.RefreshMultiModeUI(arg_43_0)
+	arg_43_0:RefreshMultiModeHeadItem()
+	arg_43_0:UpdateHeroView()
+	arg_43_0:RefreshMultiJoinBtn()
+end
+
+function var_0_0.RefreshMultiModeHeadItem(arg_44_0)
+	for iter_44_0, iter_44_1 in pairs(arg_44_0.heroHeadList_:GetItemList()) do
+		iter_44_1:SetSelected(iter_44_1.heroId_ == arg_44_0.selectHeroData_.id and iter_44_1.trialID_ == arg_44_0.selectHeroData_.trialID)
+		iter_44_1:SetMultiPos(arg_44_0:IsInTeam(iter_44_1.heroId_, iter_44_1.trialID_))
 	end
 end
 
-function var_0_0.RefreshMultiJoinBtn(arg_43_0)
-	arg_43_0.joinBtn_.interactable = true
+function var_0_0.RefreshMultiJoinBtn(arg_45_0)
+	arg_45_0.joinBtn_.interactable = true
 
-	arg_43_0.joinBtnController_:SetSelectedState("add")
+	arg_45_0.joinBtnController_:SetSelectedState("add")
 end
 
-function var_0_0.RefreshInfoBtn(arg_44_0)
-	if arg_44_0.hideInfoBtn_ or HeroTools.NeedHideInfo(arg_44_0.selectHeroData_.id) or HeroTools.IsNPC(arg_44_0.selectHeroData_.id) then
-		arg_44_0.infoBtnController_:SetSelectedState("off")
+function var_0_0.RefreshInfoBtn(arg_46_0)
+	if arg_46_0.hideInfoBtn_ or HeroTools.NeedHideInfo(arg_46_0.selectHeroData_.id) or HeroTools.IsNPC(arg_46_0.selectHeroData_.id) then
+		arg_46_0.infoBtnController_:SetSelectedState("off")
 	else
-		arg_44_0.infoBtnController_:SetSelectedState("on")
+		arg_46_0.infoBtnController_:SetSelectedState("on")
 	end
 end
 
-function var_0_0.RefreshMultiModeBtn(arg_45_0)
-	if arg_45_0.multiModeActiveController_ then
-		arg_45_0.multiModeActiveController_:SetSelectedState(arg_45_0.canUseMultiMode_ and "on" or "off")
+function var_0_0.RefreshMultiModeBtn(arg_47_0)
+	if arg_47_0.multiModeActiveController_ then
+		arg_47_0.multiModeActiveController_:SetSelectedState(arg_47_0.canUseMultiMode_ and "on" or "off")
 	end
 
-	if arg_45_0.selectModeController_ then
-		arg_45_0.selectModeController_:SetSelectedState(arg_45_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE and "single" or "multi")
+	if arg_47_0.selectModeController_ then
+		arg_47_0.selectModeController_:SetSelectedState(arg_47_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE and "single" or "multi")
 	end
 end
 
-function var_0_0.OnChangeMultiMode(arg_46_0)
-	if arg_46_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE then
-		arg_46_0:SwitchSelectMode(SectionSelectHeroConst.SELECT_HERO_MODE.MULTI)
+function var_0_0.OnChangeMultiMode(arg_48_0)
+	if arg_48_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE then
+		arg_48_0:SwitchSelectMode(SectionSelectHeroConst.SELECT_HERO_MODE.MULTI)
 	else
-		arg_46_0:SwitchSelectMode(SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE)
+		arg_48_0:SwitchSelectMode(SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE)
 	end
 
-	arg_46_0:RecordMultiButtonTouch()
+	arg_48_0:RecordMultiButtonTouch()
 end
 
-function var_0_0.SwitchSelectMode(arg_47_0, arg_47_1)
-	arg_47_0.selectHeroMode_ = arg_47_1
+function var_0_0.SwitchSelectMode(arg_49_0, arg_49_1)
+	arg_49_0.selectHeroMode_ = arg_49_1
 
-	if arg_47_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE then
-		arg_47_0:SwitchToSingleMode()
+	if arg_49_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE then
+		arg_49_0:SwitchToSingleMode()
 	else
-		arg_47_0:SwitchToMultiMode()
+		arg_49_0:SwitchToMultiMode()
 	end
 
-	arg_47_0:RefreshSelectModeUI()
+	arg_49_0:RefreshSelectModeUI()
 end
 
-function var_0_0.SwitchToMultiMode(arg_48_0)
-	arg_48_0:ResetMultiModeTeam()
-	arg_48_0.heroHeadList_:Refresh()
-end
-
-function var_0_0.ResetMultiModeTeam(arg_49_0)
-	arg_49_0.multiModeHeroList_ = deepClone(arg_49_0.heroTeam_)
-	arg_49_0.multiModeTrialList_ = deepClone(arg_49_0.heroTrialList_)
-end
-
-function var_0_0.SwitchToSingleMode(arg_50_0)
+function var_0_0.SwitchToMultiMode(arg_50_0)
+	arg_50_0:ResetMultiModeTeam()
 	arg_50_0.heroHeadList_:Refresh()
 end
 
-function var_0_0.RefreshMultiModeTeam(arg_51_0, arg_51_1)
-	local var_51_0 = arg_51_1.id
-	local var_51_1 = arg_51_1.trialID
-	local var_51_2, var_51_3, var_51_4 = arg_51_0:IsInTeam(var_51_0, var_51_1)
+function var_0_0.ResetMultiModeTeam(arg_51_0)
+	arg_51_0.multiModeHeroList_ = deepClone(arg_51_0.heroTeam_)
+	arg_51_0.multiModeTrialList_ = deepClone(arg_51_0.heroTrialList_)
+end
 
-	if var_51_2 then
-		arg_51_0.multiModeHeroList_[var_51_4] = 0
-		arg_51_0.multiModeTrialList_[var_51_4] = 0
+function var_0_0.SwitchToSingleMode(arg_52_0)
+	arg_52_0.heroHeadList_:Refresh()
+end
+
+function var_0_0.RefreshMultiModeTeam(arg_53_0, arg_53_1)
+	local var_53_0 = arg_53_1.id
+	local var_53_1 = arg_53_1.trialID
+	local var_53_2, var_53_3, var_53_4 = arg_53_0:IsInTeam(var_53_0, var_53_1)
+
+	if var_53_2 then
+		arg_53_0.multiModeHeroList_[var_53_4] = 0
+		arg_53_0.multiModeTrialList_[var_53_4] = 0
 	else
-		local var_51_5, var_51_6 = arg_51_0:CheckMultiModeCanAddHero(arg_51_1)
+		local var_53_5, var_53_6 = arg_53_0:CheckMultiModeCanAddHero(arg_53_1)
 
-		if not var_51_5 then
-			if var_51_6 then
-				ShowTips(var_51_6)
+		if not var_53_5 then
+			if var_53_6 then
+				ShowTips(var_53_6)
 			end
 
 			return
 		end
 
-		local var_51_7 = arg_51_0:FindMultiModeNextValidTeamPos()
+		local var_53_7 = arg_53_0:FindMultiModeNextValidTeamPos()
 
-		if var_51_7 then
-			arg_51_0.multiModeHeroList_[var_51_7] = var_51_0
-			arg_51_0.multiModeTrialList_[var_51_7] = var_51_1
+		if var_53_7 then
+			arg_53_0.multiModeHeroList_[var_53_7] = var_53_0
+			arg_53_0.multiModeTrialList_[var_53_7] = var_53_1
 		end
 	end
 end
 
-function var_0_0.CheckMultiModeCanAddHero(arg_52_0, arg_52_1)
-	local var_52_0 = true
-	local var_52_1 = ""
+function var_0_0.CheckMultiModeCanAddHero(arg_54_0, arg_54_1)
+	local var_54_0 = true
+	local var_54_1 = ""
 
-	if arg_52_0:IsHeroLock(arg_52_1.id, arg_52_1.trialID) then
-		var_52_0 = false
-		var_52_1 = nil
-	elseif arg_52_0:IsMultiModeTeamFull() then
-		var_52_0 = false
-		var_52_1 = "THE_TEAM_IS_FULL"
-	elseif arg_52_0:IsSameHeroInTeam(arg_52_1.id) then
-		var_52_0 = false
-		var_52_1 = "SELECT_SAME_HERO"
+	if arg_54_0:IsHeroLock(arg_54_1.id, arg_54_1.trialID) then
+		var_54_0 = false
+		var_54_1 = nil
+	elseif arg_54_0:IsMultiModeTeamFull() then
+		var_54_0 = false
+		var_54_1 = "THE_TEAM_IS_FULL"
+	elseif arg_54_0:IsSameHeroInTeam(arg_54_1.id) then
+		var_54_0 = false
+		var_54_1 = "SELECT_SAME_HERO"
 	end
 
-	return var_52_0, var_52_1
+	return var_54_0, var_54_1
 end
 
-function var_0_0.FindMultiModeNextValidTeamPos(arg_53_0)
-	for iter_53_0, iter_53_1 in ipairs(arg_53_0.multiModeHeroList_) do
-		if iter_53_1 == 0 and not arg_53_0.lockStateList_[iter_53_0] then
-			return iter_53_0
+function var_0_0.FindMultiModeNextValidTeamPos(arg_55_0)
+	for iter_55_0, iter_55_1 in ipairs(arg_55_0.multiModeHeroList_) do
+		if iter_55_1 == 0 and not arg_55_0.lockStateList_[iter_55_0] then
+			return iter_55_0
 		end
 	end
 
 	return nil
 end
 
-function var_0_0.IsMultiModeTeamFull(arg_54_0)
-	for iter_54_0, iter_54_1 in ipairs(arg_54_0.multiModeHeroList_) do
-		if iter_54_1 == 0 and not arg_54_0.lockStateList_[iter_54_0] then
+function var_0_0.IsMultiModeTeamFull(arg_56_0)
+	for iter_56_0, iter_56_1 in ipairs(arg_56_0.multiModeHeroList_) do
+		if iter_56_1 == 0 and not arg_56_0.lockStateList_[iter_56_0] then
 			return false
 		end
 	end
@@ -616,366 +628,366 @@ function var_0_0.IsMultiModeTeamFull(arg_54_0)
 	return true
 end
 
-function var_0_0.ResetSelectMode(arg_55_0)
-	arg_55_0.selectHeroMode_ = SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE
+function var_0_0.ResetSelectMode(arg_57_0)
+	arg_57_0.selectHeroMode_ = SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE
 
-	arg_55_0:RefreshMultiModeBtn()
+	arg_57_0:RefreshMultiModeBtn()
 end
 
-function var_0_0.GetTargetScrollIndex(arg_56_0)
-	local var_56_0 = 1
+function var_0_0.GetTargetScrollIndex(arg_58_0)
+	local var_58_0 = 1
 
-	for iter_56_0, iter_56_1 in ipairs(arg_56_0.heroDataList_) do
-		if iter_56_1.id == arg_56_0.selectHeroData_.id and iter_56_1.trialID == arg_56_0.selectHeroData_.trialID then
-			var_56_0 = iter_56_0
+	for iter_58_0, iter_58_1 in ipairs(arg_58_0.heroDataList_) do
+		if iter_58_1.id == arg_58_0.selectHeroData_.id and iter_58_1.trialID == arg_58_0.selectHeroData_.trialID then
+			var_58_0 = iter_58_0
 
 			break
 		end
 	end
 
-	return var_56_0
+	return var_58_0
 end
 
-function var_0_0.SelectHero(arg_57_0, arg_57_1)
-	if arg_57_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE then
-		arg_57_0:SingleModeSelectHero(arg_57_1)
+function var_0_0.SelectHero(arg_59_0, arg_59_1)
+	if arg_59_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE then
+		arg_59_0:SingleModeSelectHero(arg_59_1)
 	else
-		arg_57_0:MultiModeSelectHero(arg_57_1)
+		arg_59_0:MultiModeSelectHero(arg_59_1)
 	end
 end
 
-function var_0_0.SingleModeSelectHero(arg_58_0, arg_58_1)
-	arg_58_0.selectHeroData_ = arg_58_1
+function var_0_0.SingleModeSelectHero(arg_60_0, arg_60_1)
+	arg_60_0.selectHeroData_ = arg_60_1
 
-	arg_58_0:RefreshSingleModeUI()
-	arg_58_0:RefreshInfoBtn()
+	arg_60_0:RefreshSingleModeUI()
+	arg_60_0:RefreshInfoBtn()
 end
 
-function var_0_0.MultiModeSelectHero(arg_59_0, arg_59_1)
-	arg_59_0.selectHeroData_ = arg_59_1
+function var_0_0.MultiModeSelectHero(arg_61_0, arg_61_1)
+	arg_61_0.selectHeroData_ = arg_61_1
 
-	arg_59_0:RefreshMultiModeUI()
-	arg_59_0:RefreshInfoBtn()
+	arg_61_0:RefreshMultiModeUI()
+	arg_61_0:RefreshInfoBtn()
 end
 
-function var_0_0.MultiModeChangeTeam(arg_60_0, arg_60_1)
-	arg_60_0:RefreshMultiModeTeam(arg_60_1)
-	arg_60_0:MultiModeSelectHero(arg_60_1)
+function var_0_0.MultiModeChangeTeam(arg_62_0, arg_62_1)
+	arg_62_0:RefreshMultiModeTeam(arg_62_1)
+	arg_62_0:MultiModeSelectHero(arg_62_1)
 end
 
-function var_0_0.GetHeroTeam(arg_61_0)
-	arg_61_0.heroTeam_, arg_61_0.lockStateList_, arg_61_0.lockHeroList_, arg_61_0.heroTrialList_ = arg_61_0.sectionProxy_:CustomGetTeamData()
+function var_0_0.GetHeroTeam(arg_63_0)
+	arg_63_0.heroTeam_, arg_63_0.lockStateList_, arg_63_0.lockHeroList_, arg_63_0.heroTrialList_ = arg_63_0.sectionProxy_:CustomGetTeamData()
 end
 
-function var_0_0.GetHeroList(arg_62_0)
-	local var_62_0 = {}
-
-	if arg_62_0.canUseOwnHero_ ~= false then
-		var_62_0 = HeroTools.Sort(HeroData:GetHeroList())
-	end
-
-	return var_62_0
-end
-
-function var_0_0.OnInfoBtnClick(arg_63_0)
-	arg_63_0:Go("/newHero", {
-		isEnter = true,
-		hid = arg_63_0.selectHeroData_.trialID ~= 0 and arg_63_0.selectHeroData_.trialID or arg_63_0.selectHeroData_.id,
-		type = arg_63_0.selectHeroData_.trialID ~= 0 and HeroConst.HERO_DATA_TYPE.TRIAL or arg_63_0.heroDataType_,
-		tempHeroList = arg_63_0:GetValidTrailList()
-	})
-end
-
-function var_0_0.GetValidTrailList(arg_64_0)
+function var_0_0.GetHeroList(arg_64_0)
 	local var_64_0 = {}
 
-	if arg_64_0.selectHeroData_.trialID ~= 0 then
-		for iter_64_0, iter_64_1 in pairs(arg_64_0.allTrialIDList_) do
-			local var_64_1 = HeroStandardSystemCfg[iter_64_1]
-
-			if not HeroTools.IsNPC(var_64_1.hero_id) and not HeroTools.NeedHideInfo(var_64_1.hero_id) then
-				table.insert(var_64_0, iter_64_1)
-			end
-		end
+	if arg_64_0.canUseOwnHero_ ~= false then
+		var_64_0 = HeroTools.Sort(HeroData:GetHeroList())
 	end
 
 	return var_64_0
 end
 
-function var_0_0.OnJoinClick(arg_65_0)
-	local var_65_0
-	local var_65_1
-	local var_65_2
+function var_0_0.OnInfoBtnClick(arg_65_0)
+	arg_65_0:Go("/newHero", {
+		isEnter = true,
+		hid = arg_65_0.selectHeroData_.trialID ~= 0 and arg_65_0.selectHeroData_.trialID or arg_65_0.selectHeroData_.id,
+		type = arg_65_0.selectHeroData_.trialID ~= 0 and HeroConst.HERO_DATA_TYPE.TRIAL or arg_65_0.heroDataType_,
+		tempHeroList = arg_65_0:GetValidTrailList()
+	})
+end
 
-	if arg_65_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE then
-		var_65_0, var_65_1, var_65_2 = arg_65_0:TryToChangeSingleHero(arg_65_0.selectHeroData_.id, arg_65_0.selectHeroData_.trialID, arg_65_0.params_.selectHeroPos)
-	else
-		var_65_0, var_65_1, var_65_2 = arg_65_0:TryToChangeMultiHero()
+function var_0_0.GetValidTrailList(arg_66_0)
+	local var_66_0 = {}
+
+	if arg_66_0.selectHeroData_.trialID ~= 0 then
+		for iter_66_0, iter_66_1 in pairs(arg_66_0.allTrialIDList_) do
+			local var_66_1 = HeroStandardSystemCfg[iter_66_1]
+
+			if not HeroTools.IsNPC(var_66_1.hero_id) and not HeroTools.NeedHideInfo(var_66_1.hero_id) then
+				table.insert(var_66_0, iter_66_1)
+			end
+		end
 	end
 
-	if var_65_0 then
-		arg_65_0:TryToReoerderTeam(var_65_1, var_65_2)
-		arg_65_0:TryToChangeTeam(var_65_1, var_65_2)
+	return var_66_0
+end
+
+function var_0_0.OnJoinClick(arg_67_0)
+	local var_67_0
+	local var_67_1
+	local var_67_2
+
+	if arg_67_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE then
+		var_67_0, var_67_1, var_67_2 = arg_67_0:TryToChangeSingleHero(arg_67_0.selectHeroData_.id, arg_67_0.selectHeroData_.trialID, arg_67_0.params_.selectHeroPos)
+	else
+		var_67_0, var_67_1, var_67_2 = arg_67_0:TryToChangeMultiHero()
+	end
+
+	if var_67_0 then
+		arg_67_0:TryToReoerderTeam(var_67_1, var_67_2)
+		arg_67_0:TryToChangeTeam(var_67_1, var_67_2)
 	end
 end
 
-function var_0_0.TryToChangeSingleHero(arg_66_0, arg_66_1, arg_66_2, arg_66_3)
-	local var_66_0 = true
-	local var_66_1, var_66_2 = arg_66_0:IsSameHeroInTeam(arg_66_1)
-	local var_66_3 = deepClone(arg_66_0.heroTeam_)
-	local var_66_4 = deepClone(arg_66_0.heroTrialList_)
+function var_0_0.TryToChangeSingleHero(arg_68_0, arg_68_1, arg_68_2, arg_68_3)
+	local var_68_0 = true
+	local var_68_1, var_68_2 = arg_68_0:IsSameHeroInTeam(arg_68_1)
+	local var_68_3 = deepClone(arg_68_0.heroTeam_)
+	local var_68_4 = deepClone(arg_68_0.heroTrialList_)
 
-	if var_66_1 then
-		if var_66_2 == arg_66_3 then
-			if arg_66_1 == var_66_3[var_66_2] then
-				if arg_66_2 == var_66_4[var_66_2] then
-					arg_66_0:RemoveHero(var_66_2, var_66_3, var_66_4)
+	if var_68_1 then
+		if var_68_2 == arg_68_3 then
+			if arg_68_1 == var_68_3[var_68_2] then
+				if arg_68_2 == var_68_4[var_68_2] then
+					arg_68_0:RemoveHero(var_68_2, var_68_3, var_68_4)
 				else
-					var_66_0 = arg_66_0:AddHero(arg_66_3, arg_66_1, arg_66_2, var_66_3, var_66_4)
+					var_68_0 = arg_68_0:AddHero(arg_68_3, arg_68_1, arg_68_2, var_68_3, var_68_4)
 
-					if not var_66_0 then
-						return var_66_0
+					if not var_68_0 then
+						return var_68_0
 					end
 
-					SectionSelectHeroVoiceManager.GetInstance():SetNeedApperanceVoiceHeroId(arg_66_1)
+					SectionSelectHeroVoiceManager.GetInstance():SetNeedApperanceVoiceHeroId(arg_68_1)
 				end
 			end
 		else
-			arg_66_0:Swap(var_66_2, arg_66_3, var_66_3)
-			arg_66_0:Swap(var_66_2, arg_66_3, var_66_4)
-			SectionSelectHeroVoiceManager.GetInstance():SetNeedApperanceVoiceHeroId(arg_66_1)
+			arg_68_0:Swap(var_68_2, arg_68_3, var_68_3)
+			arg_68_0:Swap(var_68_2, arg_68_3, var_68_4)
+			SectionSelectHeroVoiceManager.GetInstance():SetNeedApperanceVoiceHeroId(arg_68_1)
 		end
 	else
-		var_66_0 = arg_66_0:AddHero(arg_66_3, arg_66_1, arg_66_2, var_66_3, var_66_4)
+		var_68_0 = arg_68_0:AddHero(arg_68_3, arg_68_1, arg_68_2, var_68_3, var_68_4)
 
-		if not var_66_0 then
-			return var_66_0
+		if not var_68_0 then
+			return var_68_0
 		end
 
-		SectionSelectHeroVoiceManager.GetInstance():SetNeedApperanceVoiceHeroId(arg_66_1)
+		SectionSelectHeroVoiceManager.GetInstance():SetNeedApperanceVoiceHeroId(arg_68_1)
 	end
 
-	return var_66_0, var_66_3, var_66_4
+	return var_68_0, var_68_3, var_68_4
 end
 
-function var_0_0.RemoveHero(arg_67_0, arg_67_1, arg_67_2, arg_67_3)
-	arg_67_2[arg_67_1] = 0
-	arg_67_3[arg_67_1] = 0
+function var_0_0.RemoveHero(arg_69_0, arg_69_1, arg_69_2, arg_69_3)
+	arg_69_2[arg_69_1] = 0
+	arg_69_3[arg_69_1] = 0
 end
 
-function var_0_0.AddHero(arg_68_0, arg_68_1, arg_68_2, arg_68_3, arg_68_4, arg_68_5)
-	local var_68_0 = true
+function var_0_0.AddHero(arg_70_0, arg_70_1, arg_70_2, arg_70_3, arg_70_4, arg_70_5)
+	local var_70_0 = true
 
-	arg_68_4[arg_68_1] = arg_68_2
-	arg_68_5[arg_68_1] = arg_68_3
+	arg_70_4[arg_70_1] = arg_70_2
+	arg_70_5[arg_70_1] = arg_70_3
 
-	return var_68_0
+	return var_70_0
 end
 
-function var_0_0.Swap(arg_69_0, arg_69_1, arg_69_2, arg_69_3)
-	arg_69_3[arg_69_2], arg_69_3[arg_69_1] = arg_69_3[arg_69_1], arg_69_3[arg_69_2]
+function var_0_0.Swap(arg_71_0, arg_71_1, arg_71_2, arg_71_3)
+	arg_71_3[arg_71_2], arg_71_3[arg_71_1] = arg_71_3[arg_71_1], arg_71_3[arg_71_2]
 end
 
-function var_0_0.TryToReoerderTeam(arg_70_0, arg_70_1, arg_70_2)
-	if arg_70_0:IsNeedReorder() then
-		arg_70_0:ReorderHeroTeam(arg_70_1, arg_70_2, arg_70_0.canSwitchResctrictHeroList_)
+function var_0_0.TryToReoerderTeam(arg_72_0, arg_72_1, arg_72_2)
+	if arg_72_0:IsNeedReorder() then
+		arg_72_0:ReorderHeroTeam(arg_72_1, arg_72_2, arg_72_0.canSwitchResctrictHeroList_)
 	end
 end
 
-function var_0_0.IsNeedReorder(arg_71_0)
-	return arg_71_0.canSwitchResctrictHeroList_[arg_71_0.params_.selectHeroPos] == ReserveConst.RESTRICT_HERO_SWITCH_MODE.FORBID and arg_71_0.reorder_ == true
+function var_0_0.IsNeedReorder(arg_73_0)
+	return arg_73_0.canSwitchResctrictHeroList_[arg_73_0.params_.selectHeroPos] == ReserveConst.RESTRICT_HERO_SWITCH_MODE.FORBID and arg_73_0.reorder_ == true
 end
 
-function var_0_0.TryToChangeMultiHero(arg_72_0)
-	local var_72_0 = true
-	local var_72_1 = {}
-	local var_72_2 = {}
+function var_0_0.TryToChangeMultiHero(arg_74_0)
+	local var_74_0 = true
+	local var_74_1 = {}
+	local var_74_2 = {}
 
-	for iter_72_0, iter_72_1 in ipairs(arg_72_0.multiModeHeroList_) do
-		var_72_0 = arg_72_0:AddHero(iter_72_0, iter_72_1, arg_72_0.multiModeTrialList_[iter_72_0], var_72_1, var_72_2)
+	for iter_74_0, iter_74_1 in ipairs(arg_74_0.multiModeHeroList_) do
+		var_74_0 = arg_74_0:AddHero(iter_74_0, iter_74_1, arg_74_0.multiModeTrialList_[iter_74_0], var_74_1, var_74_2)
 
-		if not var_72_0 then
-			return var_72_0
+		if not var_74_0 then
+			return var_74_0
 		end
 	end
 
-	return var_72_0, var_72_1, var_72_2
+	return var_74_0, var_74_1, var_74_2
 end
 
-function var_0_0.TryToChangeTeam(arg_73_0, arg_73_1, arg_73_2)
-	arg_73_0:ChangeTeam(arg_73_1, arg_73_2)
-	arg_73_0:OnChangeTeamSuccess()
+function var_0_0.TryToChangeTeam(arg_75_0, arg_75_1, arg_75_2)
+	arg_75_0:ChangeTeam(arg_75_1, arg_75_2)
+	arg_75_0:OnChangeTeamSuccess()
 end
 
-function var_0_0.ChangeTeam(arg_74_0, arg_74_1, arg_74_2)
-	arg_74_0.sectionProxy_:ChangeHeroTeam(arg_74_1, arg_74_2)
+function var_0_0.ChangeTeam(arg_76_0, arg_76_1, arg_76_2)
+	arg_76_0.sectionProxy_:ChangeHeroTeam(arg_76_1, arg_76_2)
 end
 
-function var_0_0.OnChangeTeamSuccess(arg_75_0)
-	arg_75_0:Back(1, {
+function var_0_0.OnChangeTeamSuccess(arg_77_0)
+	arg_77_0:Back(1, {
 		isSorted = true
 	})
 end
 
-function var_0_0.IsInTeam(arg_76_0, arg_76_1, arg_76_2)
-	local var_76_0 = {}
-	local var_76_1 = {}
+function var_0_0.IsInTeam(arg_78_0, arg_78_1, arg_78_2)
+	local var_78_0 = {}
+	local var_78_1 = {}
 
-	if arg_76_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE then
-		var_76_0 = arg_76_0.heroTeam_
-		var_76_1 = arg_76_0.heroTrialList_
+	if arg_78_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE then
+		var_78_0 = arg_78_0.heroTeam_
+		var_78_1 = arg_78_0.heroTrialList_
 	else
-		var_76_0 = arg_76_0.multiModeHeroList_
-		var_76_1 = arg_76_0.multiModeTrialList_
+		var_78_0 = arg_78_0.multiModeHeroList_
+		var_78_1 = arg_78_0.multiModeTrialList_
 	end
 
-	return SectionSelectHeroTools.IsInTeam(arg_76_1, arg_76_2, var_76_0, var_76_1)
+	return SectionSelectHeroTools.IsInTeam(arg_78_1, arg_78_2, var_78_0, var_78_1)
 end
 
-function var_0_0.IsSameHeroInTeam(arg_77_0, arg_77_1)
-	local var_77_0 = {}
+function var_0_0.IsSameHeroInTeam(arg_79_0, arg_79_1)
+	local var_79_0 = {}
 
-	if arg_77_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE then
-		var_77_0 = arg_77_0.heroTeam_
+	if arg_79_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE then
+		var_79_0 = arg_79_0.heroTeam_
 	else
-		var_77_0 = arg_77_0.multiModeHeroList_
+		var_79_0 = arg_79_0.multiModeHeroList_
 	end
 
-	return SectionSelectHeroTools.IsSameHeroInTeam(arg_77_1, var_77_0)
+	return SectionSelectHeroTools.IsSameHeroInTeam(arg_79_1, var_79_0)
 end
 
-function var_0_0.ReorderHeroTeam(arg_78_0, arg_78_1, arg_78_2, arg_78_3)
-	SectionSelectHeroTools.ReorderHeroTeam(arg_78_1, arg_78_2, arg_78_3)
+function var_0_0.ReorderHeroTeam(arg_80_0, arg_80_1, arg_80_2, arg_80_3)
+	SectionSelectHeroTools.ReorderHeroTeam(arg_80_1, arg_80_2, arg_80_3)
 end
 
-function var_0_0.IsPosLocked(arg_79_0, arg_79_1)
-	return arg_79_0.lockStateList_[arg_79_1] == true
+function var_0_0.IsPosLocked(arg_81_0, arg_81_1)
+	return arg_81_0.lockStateList_[arg_81_1] == true
 end
 
-function var_0_0.IsHeroLock(arg_80_0, arg_80_1, arg_80_2)
-	return table.keyof(arg_80_0.lockHeroList_, arg_80_1) ~= nil or table.keyof(arg_80_0.lockHeroList_, arg_80_2) ~= nil
+function var_0_0.IsHeroLock(arg_82_0, arg_82_1, arg_82_2)
+	return table.keyof(arg_82_0.lockHeroList_, arg_82_1) ~= nil or table.keyof(arg_82_0.lockHeroList_, arg_82_2) ~= nil
 end
 
-function var_0_0.GetHeroHeadClass(arg_81_0)
+function var_0_0.GetHeroHeadClass(arg_83_0)
 	return SectionHeroTeamHeadItem
 end
 
-function var_0_0.HeadRenderer(arg_82_0, arg_82_1, arg_82_2)
-	local var_82_0 = arg_82_0.heroDataList_[arg_82_1].id
-	local var_82_1 = arg_82_0.heroDataList_[arg_82_1].trialID
+function var_0_0.HeadRenderer(arg_84_0, arg_84_1, arg_84_2)
+	local var_84_0 = arg_84_0.heroDataList_[arg_84_1].id
+	local var_84_1 = arg_84_0.heroDataList_[arg_84_1].trialID
 
-	arg_82_2:SetSectionHeroData(arg_82_0.heroDataList_[arg_82_1])
-	arg_82_2:RegisterClickListener(function()
-		if arg_82_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE then
-			arg_82_0:SingleModeSelectHero(arg_82_0.heroDataList_[arg_82_1])
+	arg_84_2:SetSectionHeroData(arg_84_0.heroDataList_[arg_84_1])
+	arg_84_2:RegisterClickListener(function()
+		if arg_84_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE then
+			arg_84_0:SingleModeSelectHero(arg_84_0.heroDataList_[arg_84_1])
 		else
-			arg_82_0:MultiModeChangeTeam(arg_82_0.heroDataList_[arg_82_1])
+			arg_84_0:MultiModeChangeTeam(arg_84_0.heroDataList_[arg_84_1])
 		end
 	end)
-	arg_82_2:SetHeroLock(arg_82_0:IsHeroLock(var_82_0, var_82_1))
-	arg_82_2:SetSelected(arg_82_2.heroId_ == arg_82_0.selectHeroData_.id and arg_82_2.trialID_ == arg_82_0.selectHeroData_.trialID)
+	arg_84_2:SetHeroLock(arg_84_0:IsHeroLock(var_84_0, var_84_1))
+	arg_84_2:SetSelected(arg_84_2.heroId_ == arg_84_0.selectHeroData_.id and arg_84_2.trialID_ == arg_84_0.selectHeroData_.trialID)
 
-	if arg_82_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE then
-		arg_82_2:SetInTeamFlag(arg_82_0:IsInTeam(var_82_0, var_82_1))
-		arg_82_2:SetMultiPos(false)
+	if arg_84_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE then
+		arg_84_2:SetInTeamFlag(arg_84_0:IsInTeam(var_84_0, var_84_1))
+		arg_84_2:SetMultiPos(false)
 	else
-		arg_82_2:SetInTeamFlag(false)
-		arg_82_2:SetMultiPos(arg_82_0:IsInTeam(var_82_0, var_82_1))
+		arg_84_2:SetInTeamFlag(false)
+		arg_84_2:SetMultiPos(arg_84_0:IsInTeam(var_84_0, var_84_1))
 	end
 end
 
-function var_0_0.GetHeroViewProxy(arg_84_0, arg_84_1)
-	if not arg_84_0.heroViewProxyDic_[arg_84_1] then
-		arg_84_0.heroViewProxyDic_[arg_84_1] = HeroViewDataProxy.New(arg_84_1)
+function var_0_0.GetHeroViewProxy(arg_86_0, arg_86_1)
+	if not arg_86_0.heroViewProxyDic_[arg_86_1] then
+		arg_86_0.heroViewProxyDic_[arg_86_1] = HeroViewDataProxy.New(arg_86_1)
 	end
 
-	return arg_84_0.heroViewProxyDic_[arg_84_1]
+	return arg_86_0.heroViewProxyDic_[arg_86_1]
 end
 
-function var_0_0.GetFilterClass(arg_85_0)
+function var_0_0.GetFilterClass(arg_87_0)
 	return NewHeroListFilterView
 end
 
-function var_0_0.ExtraSorter(arg_86_0, arg_86_1, arg_86_2, arg_86_3, arg_86_4)
-	local var_86_0, var_86_1, var_86_2 = SectionSelectHeroTools.IsInTeam(arg_86_1.id, arg_86_1.trialID, arg_86_0.heroTeam_, arg_86_0.heroTrialList_)
-	local var_86_3, var_86_4, var_86_5 = SectionSelectHeroTools.IsInTeam(arg_86_2.id, arg_86_2.trialID, arg_86_0.heroTeam_, arg_86_0.heroTrialList_)
+function var_0_0.ExtraSorter(arg_88_0, arg_88_1, arg_88_2, arg_88_3, arg_88_4)
+	local var_88_0, var_88_1, var_88_2 = SectionSelectHeroTools.IsInTeam(arg_88_1.id, arg_88_1.trialID, arg_88_0.heroTeam_, arg_88_0.heroTrialList_)
+	local var_88_3, var_88_4, var_88_5 = SectionSelectHeroTools.IsInTeam(arg_88_2.id, arg_88_2.trialID, arg_88_0.heroTeam_, arg_88_0.heroTrialList_)
 
-	if var_86_0 ~= var_86_3 then
-		if var_86_0 and not var_86_3 then
+	if var_88_0 ~= var_88_3 then
+		if var_88_0 and not var_88_3 then
 			return true, true
-		elseif not var_86_0 and var_86_3 then
+		elseif not var_88_0 and var_88_3 then
 			return true, false
 		else
-			return true, var_86_2 < var_86_5
+			return true, var_88_2 < var_88_5
 		end
 	end
 
-	if arg_86_1.trialID ~= 0 or arg_86_2.trialID ~= 0 then
-		if arg_86_1.trialID ~= 0 and arg_86_2.trialID ~= 0 then
-			if arg_86_3 == 0 and arg_86_1.star ~= arg_86_2.star then
-				if arg_86_0.curOrder_ == "desc" then
-					return true, arg_86_1.star > arg_86_2.star
+	if arg_88_1.trialID ~= 0 or arg_88_2.trialID ~= 0 then
+		if arg_88_1.trialID ~= 0 and arg_88_2.trialID ~= 0 then
+			if arg_88_3 == 0 and arg_88_1.star ~= arg_88_2.star then
+				if arg_88_0.curOrder_ == "desc" then
+					return true, arg_88_1.star > arg_88_2.star
 				else
-					return true, arg_86_1.star < arg_86_2.star
+					return true, arg_88_1.star < arg_88_2.star
 				end
 			end
 
-			local var_86_6 = getHeroPower(arg_86_1.trialID, true)
-			local var_86_7 = getHeroPower(arg_86_2.trialID, true)
+			local var_88_6 = getHeroPower(arg_88_1.trialID, true)
+			local var_88_7 = getHeroPower(arg_88_2.trialID, true)
 
-			if var_86_6 ~= var_86_7 then
-				if arg_86_4 == "desc" then
-					return true, var_86_7 < var_86_6
+			if var_88_6 ~= var_88_7 then
+				if arg_88_4 == "desc" then
+					return true, var_88_7 < var_88_6
 				else
-					return true, var_86_6 < var_86_7
+					return true, var_88_6 < var_88_7
 				end
 			else
-				return true, arg_86_1.trialID > arg_86_2.trialID
+				return true, arg_88_1.trialID > arg_88_2.trialID
 			end
 		else
-			return true, arg_86_1.trialID > arg_86_2.trialID
+			return true, arg_88_1.trialID > arg_88_2.trialID
 		end
 	end
 
 	return false, false
 end
 
-function var_0_0.OnListChange(arg_87_0, arg_87_1, arg_87_2)
-	arg_87_0.heroDataList_ = arg_87_2
-	arg_87_0.selectHeroData_, scrollIndex = arg_87_0:GetSelectHeroData()
+function var_0_0.OnListChange(arg_89_0, arg_89_1, arg_89_2)
+	arg_89_0.heroDataList_ = arg_89_2
+	arg_89_0.selectHeroData_, scrollIndex = arg_89_0:GetSelectHeroData()
 
-	arg_87_0.heroHeadList_:StartScroll(#arg_87_0.heroDataList_, scrollIndex)
+	arg_89_0.heroHeadList_:StartScroll(#arg_89_0.heroDataList_, scrollIndex)
 
-	if #arg_87_0.heroDataList_ == 0 then
-		arg_87_0.emptyController_:SetSelectedState("true")
+	if #arg_89_0.heroDataList_ == 0 then
+		arg_89_0.emptyController_:SetSelectedState("true")
 	else
-		arg_87_0.emptyController_:SetSelectedState("false")
+		arg_89_0.emptyController_:SetSelectedState("false")
 
-		if arg_87_0.selectHeroData_ then
-			arg_87_0:SelectHero(arg_87_0.selectHeroData_)
+		if arg_89_0.selectHeroData_ then
+			arg_89_0:SelectHero(arg_89_0.selectHeroData_)
 		end
 	end
 end
 
-function var_0_0.OnHeroSort(arg_88_0, arg_88_1, arg_88_2, arg_88_3, arg_88_4, arg_88_5)
-	arg_88_0.filterView_:RefreshSort(arg_88_1, arg_88_2, arg_88_3, arg_88_4, arg_88_5)
-	HeroData:SaveSortValue(arg_88_1, arg_88_2, arg_88_3, arg_88_4, arg_88_5)
+function var_0_0.OnHeroSort(arg_90_0, arg_90_1, arg_90_2, arg_90_3, arg_90_4, arg_90_5)
+	arg_90_0.filterView_:RefreshSort(arg_90_1, arg_90_2, arg_90_3, arg_90_4, arg_90_5)
+	HeroData:SaveSortValue(arg_90_1, arg_90_2, arg_90_3, arg_90_4, arg_90_5)
 end
 
-function var_0_0.GetTrialHeroList(arg_89_0)
-	return GetTrialHeroList(arg_89_0.stageType_, arg_89_0.stageID_, arg_89_0.activityID_)
+function var_0_0.GetTrialHeroList(arg_91_0)
+	return GetTrialHeroList(arg_91_0.stageType_, arg_91_0.stageID_, arg_91_0.activityID_)
 end
 
-function var_0_0.GetHeroInfoViewClass(arg_90_0)
+function var_0_0.GetHeroInfoViewClass(arg_92_0)
 	return SectionHeroInfoView
 end
 
-function var_0_0.RecordMultiButtonTouch(arg_91_0)
-	local var_91_0 = arg_91_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE and "combat_team_edit_morehero_close" or "combat_team_edit_morehero_open"
+function var_0_0.RecordMultiButtonTouch(arg_93_0)
+	local var_93_0 = arg_93_0.selectHeroMode_ == SectionSelectHeroConst.SELECT_HERO_MODE.SINGLE and "combat_team_edit_morehero_close" or "combat_team_edit_morehero_open"
 
 	OperationRecorder.RecordButtonTouch({
-		button_name = var_91_0,
-		stage_id = arg_91_0.stageID_
+		button_name = var_93_0,
+		stage_id = arg_93_0.stageID_
 	})
 end
 

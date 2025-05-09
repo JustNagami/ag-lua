@@ -92,6 +92,29 @@ end
 function var_0_0.RefreshUI(arg_12_0)
 	arg_12_0.heroList_ = IdolTraineeData:GetIdolHeroList() or {}
 
+	table.sort(arg_12_0.heroList_, function(arg_13_0, arg_13_1)
+		if HeroTools.GetHeroIsUnlock(arg_13_0) and HeroTools.GetHeroIsUnlock(arg_13_1) then
+			local var_13_0 = 0
+			local var_13_1 = 0
+
+			for iter_13_0, iter_13_1 in ipairs(IdolTraineeData:GetIdolHeroData(arg_13_0)) do
+				var_13_0 = var_13_0 + iter_13_1
+			end
+
+			for iter_13_2, iter_13_3 in ipairs(IdolTraineeData:GetIdolHeroData(arg_13_1)) do
+				var_13_1 = var_13_1 + iter_13_3
+			end
+
+			return var_13_1 < var_13_0
+		elseif HeroTools.GetHeroIsUnlock(arg_13_0) then
+			return true
+		elseif HeroTools.GetHeroIsUnlock(arg_13_1) then
+			return false
+		else
+			return arg_13_0 < arg_13_1
+		end
+	end)
+
 	local var_12_0 = IdolTraineeData:GetCurAttackHero()
 
 	if not arg_12_0.curHeroID_ or arg_12_0.curHeroID_ == 0 then
@@ -112,47 +135,47 @@ function var_0_0.RefreshUI(arg_12_0)
 	arg_12_0.heroUIList_:StartScroll(#arg_12_0.heroList_)
 end
 
-function var_0_0.UpdateView(arg_13_0, arg_13_1)
-	arg_13_0.curHeroID_ = arg_13_1
+function var_0_0.UpdateView(arg_14_0, arg_14_1)
+	arg_14_0.curHeroID_ = arg_14_1
 
-	local var_13_0 = IdolTraineeTools:GetHeroBattleInfoTemplate(arg_13_0.curHeroID_)
+	local var_14_0 = IdolTraineeTools:GetHeroBattleInfoTemplate(arg_14_0.curHeroID_)
 
-	arg_13_0.curDefController_:SetSelectedState(IdolTraineeTools:CheckHeroIsDefine(arg_13_0.curHeroID_) and "true" or "false")
-	arg_13_0.curAtkController_:SetSelectedState(IdolTraineeTools:CheckHeroIsAttack(arg_13_0.curHeroID_) and "true" or "false")
-	arg_13_0.infoPage_:RefreshUI(var_13_0)
+	arg_14_0.curDefController_:SetSelectedState(IdolTraineeTools:CheckHeroIsDefine(arg_14_0.curHeroID_) and "true" or "false")
+	arg_14_0.curAtkController_:SetSelectedState(IdolTraineeTools:CheckHeroIsAttack(arg_14_0.curHeroID_) and "true" or "false")
+	arg_14_0.infoPage_:RefreshUI(var_14_0)
 end
 
-function var_0_0.IndexItem(arg_14_0, arg_14_1, arg_14_2)
-	arg_14_2:SetData(arg_14_0.heroList_[arg_14_1], arg_14_0.curHeroID_, function()
-		if arg_14_0.curHeroID_ ~= 0 and arg_14_0.curHeroIndex_ ~= 0 then
-			local var_15_0 = arg_14_0.heroUIList_:GetItemByIndex(arg_14_0.curHeroIndex_)
+function var_0_0.IndexItem(arg_15_0, arg_15_1, arg_15_2)
+	arg_15_2:SetData(arg_15_0.heroList_[arg_15_1], arg_15_0.curHeroID_, function()
+		if arg_15_0.curHeroID_ ~= 0 and arg_15_0.curHeroIndex_ ~= 0 then
+			local var_16_0 = arg_15_0.heroUIList_:GetItemByIndex(arg_15_0.curHeroIndex_)
 
-			if var_15_0 then
-				var_15_0:SelectOff()
+			if var_16_0 then
+				var_16_0:SelectOff()
 			end
 		end
 
-		arg_14_0.curHeroIndex_ = arg_14_1
+		arg_15_0.curHeroIndex_ = arg_15_1
 
-		arg_14_2:SelectOn()
-		arg_14_0:UpdateView(arg_14_0.heroList_[arg_14_1])
+		arg_15_2:SelectOn()
+		arg_15_0:UpdateView(arg_15_0.heroList_[arg_15_1])
 	end)
 end
 
-function var_0_0.Dispose(arg_16_0)
-	if arg_16_0.heroUIList_ then
-		arg_16_0.heroUIList_:Dispose()
+function var_0_0.Dispose(arg_17_0)
+	if arg_17_0.heroUIList_ then
+		arg_17_0.heroUIList_:Dispose()
 
-		arg_16_0.heroUIList_ = nil
+		arg_17_0.heroUIList_ = nil
 	end
 
-	if arg_16_0.infoPage_ then
-		arg_16_0.infoPage_:Dispose()
+	if arg_17_0.infoPage_ then
+		arg_17_0.infoPage_:Dispose()
 
-		arg_16_0.infoPage_ = nil
+		arg_17_0.infoPage_ = nil
 	end
 
-	var_0_0.super.Dispose(arg_16_0)
+	var_0_0.super.Dispose(arg_17_0)
 end
 
 return var_0_0

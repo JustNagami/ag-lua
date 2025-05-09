@@ -4279,6 +4279,206 @@
 			0
 		}
 	},
+	[10200300] = {
+		hero_view_height = 0,
+		offset = 0,
+		id = 10200300,
+		position_main = {
+			0,
+			0,
+			0
+		},
+		rotation_main = {
+			0,
+			0,
+			0
+		},
+		scale_main = {
+			1,
+			1,
+			1
+		},
+		position_chat = {
+			0,
+			0,
+			0
+		},
+		position_playerInfo = {
+			0,
+			0,
+			0
+		},
+		position_scene_6100 = {
+			0,
+			0,
+			0
+		},
+		rotation_scene_6100 = {
+			0,
+			0,
+			0
+		}
+	},
+	[10200301] = {
+		hero_view_height = 0,
+		offset = 0,
+		id = 10200301,
+		position_main = {
+			0,
+			0,
+			0
+		},
+		rotation_main = {
+			0,
+			0,
+			0
+		},
+		scale_main = {
+			1,
+			1,
+			1
+		},
+		position_chat = {
+			0,
+			0,
+			0
+		},
+		position_playerInfo = {
+			0,
+			0,
+			0
+		},
+		position_scene_6100 = {
+			0,
+			0,
+			0
+		},
+		rotation_scene_6100 = {
+			0,
+			0,
+			0
+		}
+	},
+	[10200302] = {
+		hero_view_height = 0,
+		offset = 0,
+		id = 10200302,
+		position_main = {
+			0,
+			0,
+			0
+		},
+		rotation_main = {
+			0,
+			0,
+			0
+		},
+		scale_main = {
+			1,
+			1,
+			1
+		},
+		position_chat = {
+			0,
+			0,
+			0
+		},
+		position_playerInfo = {
+			0,
+			0,
+			0
+		},
+		position_scene_6100 = {
+			0,
+			0,
+			0
+		},
+		rotation_scene_6100 = {
+			0,
+			0,
+			0
+		}
+	},
+	[1211] = {
+		hero_view_height = 2,
+		offset = -1.24,
+		id = 1211,
+		position_main = {
+			-2.185,
+			0.2,
+			12.865
+		},
+		rotation_main = {
+			0,
+			0,
+			0
+		},
+		scale_main = {
+			1,
+			1,
+			1
+		},
+		position_chat = {
+			-2.185,
+			0.2,
+			12.865
+		},
+		position_playerInfo = {
+			-2.185,
+			0.2,
+			12.865
+		},
+		position_scene_6100 = {
+			-2.769,
+			1.309,
+			15.216
+		},
+		rotation_scene_6100 = {
+			2,
+			-14.678,
+			0
+		}
+	},
+	[12110100] = {
+		hero_view_height = 0,
+		offset = 0,
+		id = 12110100,
+		position_main = {
+			0,
+			0,
+			0
+		},
+		rotation_main = {
+			0,
+			0,
+			0
+		},
+		scale_main = {
+			1,
+			1,
+			1
+		},
+		position_chat = {
+			0,
+			0,
+			0
+		},
+		position_playerInfo = {
+			0,
+			0,
+			0
+		},
+		position_scene_6100 = {
+			0,
+			0,
+			0
+		},
+		rotation_scene_6100 = {
+			0,
+			0,
+			0
+		}
+	},
 	all = {
 		1011,
 		1012,
@@ -4386,6 +4586,11 @@
 		10150200,
 		10750300,
 		10850100,
-		10730100
+		10730100,
+		10200300,
+		10200301,
+		10200302,
+		1211,
+		12110100
 	}
 }

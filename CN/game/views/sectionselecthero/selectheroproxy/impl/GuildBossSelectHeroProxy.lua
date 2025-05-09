@@ -174,7 +174,6 @@ function var_0_1.GetStageData(arg_12_0)
 	var_12_0:SetGuildBossTeam(var_12_1, var_12_2)
 	var_12_0:SetMultiple(arg_12_0.multiple)
 	var_12_0:SetDest(arg_12_0.dest)
-	var_12_0:InitChipData()
 
 	return var_12_0
 end
@@ -206,6 +205,7 @@ function var_0_1.LaunchBattle(arg_13_0, arg_13_1)
 					end
 
 					arg_13_1:SetChipDic(var_14_0)
+					arg_13_1:InitChipData()
 					BattleController.GetInstance():LaunchBattle(arg_13_1)
 				end
 			end)

@@ -209,7 +209,9 @@
 				arg_6_1.fswtw_:SetDirty()
 
 				arg_6_1.typewritterCharCountI18N = 0
+				arg_6_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_6_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, true)
 				arg_6_1:ShowNextGo(false)
 			end
 
@@ -217,7 +219,9 @@
 
 			if var_9_3 < arg_6_1.time_ and arg_6_1.time_ <= var_9_3 + arg_9_0 then
 				arg_6_1.var_.oldValueTypewriter = arg_6_1.fswtw_.percent
+				arg_6_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_6_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, true)
 				arg_6_1:ShowNextGo(false)
 			end
 
@@ -266,6 +270,9 @@
 
 			if var_9_14 < arg_6_1.time_ and arg_6_1.time_ <= var_9_14 + arg_9_0 then
 				local var_9_15 = arg_6_1.fswbg_.transform:Find("textbox/adapt/content") or arg_6_1.fswbg_.transform:Find("textbox/content")
+
+				arg_6_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
+
 				local var_9_16 = var_9_15:GetComponent("Text")
 				local var_9_17 = var_9_15:GetComponent("RectTransform")
 
@@ -329,7 +336,9 @@
 				arg_10_1.fswtw_:SetDirty()
 
 				arg_10_1.typewritterCharCountI18N = 0
+				arg_10_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_10_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, true)
 				arg_10_1:ShowNextGo(false)
 			end
 
@@ -337,7 +346,9 @@
 
 			if var_13_3 < arg_10_1.time_ and arg_10_1.time_ <= var_13_3 + arg_13_0 then
 				arg_10_1.var_.oldValueTypewriter = arg_10_1.fswtw_.percent
+				arg_10_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
 
+				SetActive(arg_10_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, true)
 				arg_10_1:ShowNextGo(false)
 			end
 
@@ -602,6 +613,10 @@
 			if var_17_46 < arg_14_1.time_ and arg_14_1.time_ <= var_17_46 + arg_17_0 then
 				arg_14_1.fswbg_:SetActive(false)
 				arg_14_1.dialog_:SetActive(false)
+
+				arg_14_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
+
+				SetActive(arg_14_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, true)
 				arg_14_1:ShowNextGo(false)
 			end
 
@@ -966,7 +981,7 @@
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_24_1.text_)
 
-				local var_27_17 = 23
+				local var_27_17 = 22
 				local var_27_18 = utf8.len(var_27_16)
 				local var_27_19 = var_27_17 <= 0 and var_27_14 or var_27_14 * (var_27_18 / var_27_17)
 

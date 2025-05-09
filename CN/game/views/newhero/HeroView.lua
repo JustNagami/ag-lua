@@ -750,6 +750,7 @@ function var_0_0.OnExit(arg_42_0)
 
 	HeroTools.StopTalk()
 	arg_42_0:ExitSendMgr(arg_42_0.curPageIndex_)
+	manager.heroRaiseTrack:CancelAllAsyncLoadModelOp()
 end
 
 function var_0_0.Dispose(arg_43_0)

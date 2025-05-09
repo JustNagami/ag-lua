@@ -5516,26 +5516,26 @@
 		param = {
 			{
 				1000,
-				0,
-				false,
+				50,
+				true,
 				"%"
 			},
 			{
 				25.641,
-				0,
-				false,
+				1.282,
+				true,
 				"%"
 			},
 			{
 				1200,
-				0,
-				false,
+				60,
+				true,
 				"%"
 			},
 			{
 				30.769,
-				0,
-				false,
+				1.538,
+				true,
 				"%"
 			},
 			{
@@ -10344,7 +10344,7 @@
 		}
 	},
 	[101094203] = {
-		description = "迟钝转变为炮垒形态，可持续对瞄准方向进行炮击，每次炮击消耗<color=#E78300>20</color>点神能，造成共计<color=#E78300>{1}</color>攻击力的暗属性伤害，炮击神能消耗不受其他属性影响。\n在炮垒形态下免疫控制效果，禁用移动、技能和自身奥义，仅可进行左右旋转瞄准；自身受到的伤害降低<color=#E78300>20%</color>，每受到生命值上限<color=#E78300>1%</color>的伤害时会消耗<color=#E78300>1</color>点神能；当神能不足或点击取消时会退出炮垒形态。",
+		description = "迟钝转变为炮垒形态，可持续对瞄准方向进行炮击，每次炮击消耗<color=#E78300>20</color>点神能，造成共计<color=#E78300>{1}</color>攻击力的暗属性伤害，炮击神能消耗不受其他属性影响。\n在炮垒形态下免疫控制效果，禁用移动、技能和自身奥义，仅可进行左右旋转瞄准；自身受到的伤害降低<color=#E78300>20%</color>，每受到生命值上限<color=#E78300>1%</color>的伤害时会消耗<color=#E78300>1</color>点神能吸收伤害；当神能不足或点击取消时会退出炮垒形态。",
 		maxLv = 60,
 		type = 1,
 		id = 101094203,
@@ -13569,52 +13569,247 @@
 		}
 	},
 	[101211101] = {
-		description = "完整描述文案预留",
+		description = "进行三段攻击，造成共计<color=#E78300>{1}</color>攻击力的光属性伤害，施放普通攻击第三段时，获得<material=underline c=#FFFFFF h=2 event=terminology args=(121101)>「裁罪之心」</material>，持续<color=#E78300>10</color>秒。拥有<material=underline c=#FFFFFF h=2 event=terminology args=(121101)>「裁罪之心」</material>时，可以点击普通攻击，消耗<material=underline c=#FFFFFF h=2 event=terminology args=(121101)>「裁罪之心」</material>施放「刈舞·审命者」。\n「刈舞·审命者」：进行三段攻击，造成共计<color=#E78300>{2}</color>攻击力的光属性伤害。\n\n<color=#297DE0>神能：</color>普通攻击每次命中后会获得神能。",
 		maxLv = 60,
 		type = 1,
 		id = 101211101,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				185,
+				3.603,
+				true,
+				"%"
+			},
+			{
+				624,
+				12.817,
+				true,
+				"%"
+			}
+		}
 	},
 	[101211201] = {
-		description = "完整描述文案预留",
+		description = "不可直接施放，该技能替换为「幽刃·轮破」、「幽刃·连铩」时才可施放。\n施放「刈舞·审命者」第二段时，该技能替换为「幽刃·轮破」，持续<color=#E78300>3</color>秒；施放「刈舞·审命者」第三段时，该技能替换为「幽刃·连铩」，持续<color=#E78300>3</color>秒。\n「幽刃·轮破」：可连续衔接施放<color=#E78300>2</color>段攻击，分别造成共计<color=#E78300>{1}</color>、<color=#E78300>{2}</color>攻击力的光属性伤害；施放第二段时，获得<material=underline c=#FFFFFF h=2 event=terminology args=(121102)>「渡厄」</material>状态，持续<color=#E78300>10</color>秒；施放第二段后衔接普通攻击，会从普通攻击第二段开始攻击。\n「幽刃·连铩」：可连续衔接施放<color=#E78300>3</color>段攻击，分别造成共计<color=#E78300>{3}</color>、<color=#E78300>{4}</color>、<color=#E78300>{5}</color>攻击力的光属性伤害；自身处于<material=underline c=#FFFFFF h=2 event=terminology args=(121102)>「渡厄」</material>状态时，该技能攻击命中瞬间基础伤害提高<color=#E78300>{6}</color>；施放第三段后衔接普通攻击，会从普通攻击第二段开始攻击。\n\n<color=#297DE0>神能：</color>「幽刃·轮破」每次命中后会获得神能。",
 		maxLv = 60,
 		type = 1,
 		id = 101211201,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				700,
+				17.948,
+				true,
+				"%"
+			},
+			{
+				900,
+				23.075,
+				true,
+				"%"
+			},
+			{
+				800,
+				20.512,
+				true,
+				"%"
+			},
+			{
+				1000,
+				25.64,
+				true,
+				"%"
+			},
+			{
+				1200,
+				30.765,
+				true,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			}
+		}
 	},
 	[101211202] = {
-		description = "完整描述文案预留",
+		description = "造成共计<color=#E78300>{1}</color>攻击力的光属性伤害，施放时获得<material=underline c=#FFFFFF h=2 event=terminology args=(121101)>「裁罪之心」</material>，持续<color=#E78300>10</color>秒。神能为满时，该技能替换为「死生极罚」。\n「死生极罚」：消耗全部神能，造成共计<color=#E78300>{2}</color>攻击力的光属性伤害，对命中的敌人附加虚弱状态，攻击力降低<color=#E78300>{3}</color>，持续<color=#E78300>{4}</color>秒，施放时获得<material=underline c=#FFFFFF h=2 event=terminology args=(121101)>「裁罪之心」</material>，持续<color=#E78300>10</color>秒。\n\n<color=#297DE0>神能：</color>「死生断罚」每次命中后会获得神能。",
 		maxLv = 60,
 		type = 1,
 		id = 101211202,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				600,
+				15.38,
+				true,
+				"%"
+			},
+			{
+				900,
+				23.073,
+				true,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101211203] = {
-		description = "完整描述文案预留",
+		description = "飞到空中，最多持续<color=#E78300>5</color>秒，可以点按或长按普通攻击进行攻击，每次造成<color=#E78300>{1}</color>攻击力的光属性伤害、全队伍获得<color=#E78300>0.5%</color>的奥义值，最多进行<color=#E78300>48</color>次攻击，持续时间达到上限或者继续点击该技能时，会进行下落攻击，造成<color=#E78300>{2}</color>攻击力的光属性伤害，施放下落攻击时，全队伍获得<color=#E78300>12%</color>的奥义值。",
 		maxLv = 60,
 		type = 1,
 		id = 101211203,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				120,
+				3.076,
+				true,
+				"%"
+			},
+			{
+				2000,
+				51.282,
+				true,
+				"%"
+			}
+		}
+	},
+	[101211208] = {
+		description = "魂羽·奥西里斯与黯耀·薇儿丹蒂的连携奥义。\n魂羽·奥西里斯造成<color=#E78300>{1}+{2}</color>×<color=#297DE0>自身奥义等级</color>攻击力的光属性伤害；施放时全队伍攻击力提高<color=#E78300>{5}</color>、会心伤害提高<color=#E78300>{6}</color>，持续<color=#E78300>{7}</color>秒。\n黯耀·薇儿丹蒂造成<color=#E78300>{3}+{4}</color>×<color=#297DE0>自身奥义等级</color>攻击力的光属性伤害；施放时全队伍光属性伤害提高<color=#E78300>{8}</color>，持续<color=#E78300>{9}</color>秒，自身该次奥义攻击修正系数提高<color=#E78300>{10}</color>。",
+		maxLv = 60,
+		type = 1,
+		id = 101211208,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				0,
+				false,
+				"%"
+			},
+			{
+				30.769,
+				0,
+				false,
+				"%"
+			},
+			{
+				1200,
+				0,
+				false,
+				"%"
+			},
+			{
+				30.769,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				40,
+				0,
+				false,
+				"%"
+			},
+			{
+				25,
+				0,
+				false,
+				""
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				25,
+				0,
+				false,
+				""
+			},
+			{
+				120,
+				0,
+				false,
+				"%"
+			}
+		}
 	},
 	[101211209] = {
-		description = "完整描述文案预留",
+		description = "造成共计<color=#E78300>{1}</color>攻击力的光属性伤害；施放时对锁定的敌人附加动作迟缓至<color=#E78300>50%</color>，持续<color=#E78300>{2}</color>秒，全队伍攻击力提高<color=#E78300>{3}</color>、会心伤害提高<color=#E78300>{4}</color>，持续<color=#E78300>{5}</color>秒。\n\n每秒自动获得<color=#E78300>2%</color>的奥义值。自身或者队友攻击造成会心后，获得<color=#E78300>3%</color>的奥义值，该效果每<color=#E78300>2</color>秒最多触发一次。",
 		maxLv = 60,
 		type = 1,
 		id = 101211209,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				1200,
+				30.764,
+				true,
+				"%"
+			},
+			{
+				3,
+				0,
+				false,
+				""
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				35,
+				0,
+				false,
+				"%"
+			},
+			{
+				25,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101211305] = {
-		description = "完整描述文案预留",
+		description = "快速闪避敌人攻击，极限闪避会触发闪避效果。极限闪避时，获得<material=underline c=#FFFFFF h=2 event=terminology args=(121101)>「裁罪之心」</material>，持续<color=#E78300>10</color>秒。\n闪避效果：进入零时空间使全场敌人动作大幅减速，持续<color=#E78300>3</color>秒；闪避效果每<color=#E78300>{1}</color>秒最多触发一次。",
 		maxLv = 60,
 		type = 1,
 		id = 101211305,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[101248101] = {
 		description = "处于<material=underline c=#FFFFFF h=2 event=terminology args=(124801)>「束刃模式」</material>：\n前四段攻击造成共计<color=#E78300>{1}</color>攻击力的雷属性伤害；施放第四段普通攻击后，点击普通攻击会施放技能攻击「跃电斩」，在<color=#E78300>2.5</color>秒内可以连点普通攻击，每次造成<color=#E78300>{2}</color>攻击力的雷属性伤害；继续点击普通攻击会衔接普通攻击最后一段，造成共计<color=#E78300>{3}</color>攻击力的雷属性伤害，最后一段普通攻击施放后的短暂时间内，「必杀·掠雷轰击」替换为「必杀·掠雷闪袭」。\n处于<material=underline c=#FFFFFF h=2 event=terminology args=(124802)>「磁炮模式」</material>：\n造成<color=#E78300>{4}</color>攻击力的雷属性伤害，可通过长按进行最多<color=#E78300>3</color>段蓄力技能攻击，分别造成<color=#E78300>{5}、{6}、{7}</color>攻击力的雷属性伤害，施放蓄力攻击后的短暂时间内，「必杀·掠雷横扫」替换为「必杀·掠雷重击」。\n\n被动：\n出场时，恢复满怒气。\n处于<material=underline c=#FFFFFF h=2 event=terminology args=(124801)>「束刃模式」</material>时，技能伤害提高<color=#E78300>{8}</color>；处于<material=underline c=#FFFFFF h=2 event=terminology args=(124802)>「磁炮模式」</material>时，修正系数提高<color=#E78300>{9}</color>；切换形态时，技能伤害提高效果和修正系数提高效果会额外延长<color=#E78300>7</color>秒；出场时，从<material=underline c=#FFFFFF h=2 event=terminology args=(124802)>「磁炮模式」</material>切换为<material=underline c=#FFFFFF h=2 event=terminology args=(124801)>「束刃模式」</material>。\n<material=underline c=#FFFFFF h=2 event=terminology args=(124804)>「脉冲」</material>：处于<material=underline c=#FFFFFF h=2 event=terminology args=(124801)>「束刃模式」</material>时，点击普通攻击时会消耗该状态从「跃电斩」开始攻击；处于<material=underline c=#FFFFFF h=2 event=terminology args=(124802)>「磁炮模式」</material>时，下一次蓄力攻击会消耗该状态，从第<color=#E78300>3</color>段开始蓄力；切换形态时，<material=underline c=#FFFFFF h=2 event=terminology args=(124804)>「脉冲」</material>状态移除。\n普通攻击最后一段、满蓄力的蓄力攻击命中时，获得<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(124803)>「神威」</material>标记，<material=underline c=#FFFFFF h=2 event=terminology args=(124803)>「神威」</material>标记最多拥有<color=#E78300>5</color>个。\n\n<color=#297DE0>怒气：</color>普通攻击、「跃电斩」、蓄力攻击命中后会获得怒气。",
@@ -17052,7 +17247,7 @@
 		}
 	},
 	[110340032] = {
-		description = "「百裂游踪」固定替换为「千刃伏杀」，<material=underline c=#FFFFFF h=2 event=terminology args=(103403)>「潜影」</material>标记为满时，「千刃伏杀」才可施放。\n施放<material=underline c=#FFFFFF h=2 event=terminology args=(103401)>「隐牙」</material>的普通攻击第三段时，不继续衔接普通攻击第四段的短暂时间后，可以继续点击普通攻击，会切换为<material=underline c=#FFFFFF h=2 event=terminology args=(103402)>「游刃」</material>并衔接施放<material=underline c=#FFFFFF h=2 event=terminology args=(103402)>「游刃」</material>的普通攻击第二段，成功衔接施放时，修正等级改变为<color=#E78300>Ω</color>级。\n施放<material=underline c=#FFFFFF h=2 event=terminology args=(103402)>「游刃」</material>的普通攻击第三段时，可以长按普通攻击持续施放特殊的普通攻击「蛇舞」。\n「蛇舞」：造成共计<color=#E78300>{1}</color>（普通攻击每提升一级<color=#E78300>+{2}</color>）攻击力的物理属性伤害；施放时可以缓慢移动，每施放<color=#E78300>8</color>段后获得<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(103403)>「潜影」</material>标记，最多可施放<color=#E78300>24</color>段；施放后或提前松开长按会自动衔接施放<material=underline c=#FFFFFF h=2 event=terminology args=(103402)>「游刃」</material>的普通攻击第四段。\n施放<material=underline c=#FFFFFF h=2 event=terminology args=(103402)>「游刃」</material>的普通攻击第五段时，获得获得<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(103403)>「潜影」</material>标记。",
+		description = "「百裂游踪」固定替换为「千刃伏杀」，<material=underline c=#FFFFFF h=2 event=terminology args=(103403)>「潜影」</material>标记为满时，「千刃伏杀」才可施放。\n施放<material=underline c=#FFFFFF h=2 event=terminology args=(103401)>「隐牙」</material>的普通攻击第三段时，不继续衔接普通攻击第四段的短暂时间后，可以继续点击普通攻击，会切换为<material=underline c=#FFFFFF h=2 event=terminology args=(103402)>「游刃」</material>并衔接施放<material=underline c=#FFFFFF h=2 event=terminology args=(103402)>「游刃」</material>的普通攻击第二段，成功衔接施放时，修正等级改变为<color=#E78300>Ω</color>级。\n施放<material=underline c=#FFFFFF h=2 event=terminology args=(103402)>「游刃」</material>的普通攻击第三段时，可以长按普通攻击持续施放特殊的普通攻击「蛇舞」。\n「蛇舞」：造成共计<color=#E78300>{1}</color>（普通攻击每提升一级<color=#E78300>+{2}</color>）攻击力的物理属性伤害；施放时可以缓慢移动，每施放<color=#E78300>8</color>段后获得<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(103403)>「潜影」</material>标记，最多可施放<color=#E78300>24</color>段；施放后或提前松开长按会自动衔接施放<material=underline c=#FFFFFF h=2 event=terminology args=(103402)>「游刃」</material>的普通攻击第四段。\n施放<material=underline c=#FFFFFF h=2 event=terminology args=(103402)>「游刃」</material>的普通攻击第五段时，获得<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(103403)>「潜影」</material>标记。",
 		maxLv = 1,
 		type = 1,
 		id = 110340032,
@@ -24218,31 +24413,100 @@
 		}
 	},
 	[112110011] = {
-		description = "文案预留",
+		description = "奥西里斯解除连携奥义时，全队伍全属性伤害提高<color=#E78300>{1}</color>，恢复连携奥义时移除该效果。\n奥西里斯恢复连携奥义时，奥西里斯和与其预组合连携奥义的修正者重置连携奥义的冷却时间、恢复满奥义值，该效果每<color=#E78300>20</color>秒最多触发一次。",
 		maxLv = 1,
 		type = 1,
 		id = 112110011,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				15,
+				0,
+				false,
+				"%"
+			}
+		}
 	},
 	[112110012] = {
-		description = "文案预留",
+		description = "<material=underline c=#FFFFFF h=2 event=terminology args=(111101)>「冥府审判模式」</material>的生命移除状态不会使生命值降低至<color=#E78300>1</color>以下。\n施放奥义或连携奥义后，自身每有<color=#E78300>1%</color>的会心率提高，生命值不为满的队友会心率提高<color=#E78300>{1}</color>，持续<color=#E78300>{2}</color>秒，该效果提供的会心率提高最高为<color=#E78300>{3}</color>。",
 		maxLv = 1,
 		type = 1,
 		id = 112110012,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				0.4,
+				0.4,
+				true,
+				"%"
+			},
+			{
+				25,
+				0,
+				false,
+				""
+			},
+			{
+				30,
+				30,
+				true,
+				"%"
+			}
+		}
 	},
 	[112110013] = {
-		description = "文案预留",
+		description = "全队伍三位修正者且仅有奥西里斯时，才可触发。\n生命值最高的修正者的生命值百分比每比生命值次高的修正者的生命值百分比多<color=#E78300>1%</color>计入<color=#E78300>1</color>，生命值次高的修正者的生命值百分比每比生命值最低的修正者的生命值百分比多<color=#E78300>1%</color>计入<color=#E78300>1</color>，队长获得二次计入数值的乘积的层数的<material=underline c=#FFFFFF h=2 event=terminology args=(121103)>「宰界赋权」</material>状态，<material=underline c=#FFFFFF h=2 event=terminology args=(121103)>「宰界赋权」</material>最多<color=#E78300>2500</color>层。\n队长的生命值百分比最高时：普通攻击命中时，恢复<color=#E78300>{1}</color>的生命值，该效果每<color=#E78300>3</color>秒最多触发一次；<material=underline c=#FFFFFF h=2 event=terminology args=(121103)>「宰界赋权」</material>每有<color=#E78300>25</color>层，全队伍攻击命中瞬间攻击力提高<color=#E78300>{2}</color>。\n队长的生命值百分比次高时：获得霸体效果，会心伤害提高<color=#E78300>{3}</color>，治疗效果提高<color=#E78300>{4}</color>；<material=underline c=#FFFFFF h=2 event=terminology args=(121103)>「宰界赋权」</material>每有<color=#E78300>25</color>层，队长攻击命中瞬间独立伤害提高<color=#E78300>{5}</color>。\n队长的生命值百分比最低时：会心率提高<color=#E78300>{6}</color>，普通攻击命中后，恢复对应的机制值（<color=#E78300>15</color>点怒气，<color=#E78300>15</color>点能量，<color=#E78300>1</color>个印记，<color=#E78300>15</color>点神能），该效果每<color=#E78300>3</color>秒最多触发一次；<material=underline c=#FFFFFF h=2 event=terminology args=(121103)>「宰界赋权」</material>每有<color=#E78300>25</color>层，队长攻击命中瞬间独立伤害提高<color=#E78300>{7}</color>。",
 		maxLv = 1,
 		type = 1,
 		id = 112110013,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				5,
+				0,
+				false,
+				"%"
+			},
+			{
+				0.4,
+				0.4,
+				true,
+				"%"
+			},
+			{
+				50,
+				0,
+				false,
+				"%"
+			},
+			{
+				100,
+				0,
+				false,
+				"%"
+			},
+			{
+				4,
+				4,
+				true,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				2.5,
+				2.5,
+				true,
+				"%"
+			}
+		}
 	},
 	[112110021] = {
-		description = "文案预留",
+		description = "<material=underline c=#FFFFFF h=2 event=terminology args=(121102)>「渡厄」</material>状态持续时间改变为<color=#E78300>20</color>秒；处于<material=underline c=#FFFFFF h=2 event=terminology args=(121102)>「渡厄」</material>状态时，获得硬直效果，攻击命中生命值低于<color=#E78300>25%</color>的普通敌人时，会直接击败敌人。",
 		maxLv = 1,
 		type = 1,
 		id = 112110021,
@@ -24250,44 +24514,133 @@
 		param = {}
 	},
 	[112110022] = {
-		description = "文案预留",
+		description = "施放「冥华幽刃」时，对自身造成<color=#E78300>{1}</color>生命值上限的伤害，根据对自身的伤害量，获得相同点数的<material=underline c=#FFFFFF h=2 event=terminology args=(121104)>「境天庇佑」</material>。\n<material=underline c=#FFFFFF h=2 event=terminology args=(121104)>「境天庇佑」</material>点数上限等同于自身出场时的生命值上限。受到非自身的伤害时，<material=underline c=#FFFFFF h=2 event=terminology args=(121104)>「境天庇佑」</material>会消耗等同于伤害的点数吸收伤害。",
 		maxLv = 1,
 		type = 1,
 		id = 112110022,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				15,
+				0,
+				false,
+				"%"
+			}
+		}
 	},
 	[112110023] = {
-		description = "文案预留",
+		description = "生命值不高于<color=#E78300>75%</color>时，攻击命中瞬间光属性伤害提高<color=#E78300>{1}</color>；\n生命值不高于<color=#E78300>50%</color>时，攻击命中瞬间会心伤害提高<color=#E78300>{2}</color>；\n生命值不高于<color=#E78300>25%</color>时，攻击命中瞬间独立伤害提高<color=#E78300>{3}</color>。",
 		maxLv = 1,
 		type = 1,
 		id = 112110023,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			}
+		}
 	},
 	[112110031] = {
-		description = "文案预留",
+		description = "出场时，根据自身队友的数量，获得对应层数的<material=underline c=#FFFFFF h=2 event=terminology args=(121105)>「归复之潮」</material>状态。\n<material=underline c=#FFFFFF h=2 event=terminology args=(121105)>「归复之潮」</material>：当自身损失生命值后且低于<color=#E78300>20%</color>时，消耗<color=#E78300>1</color>层，恢复<color=#E78300>{1}</color>的生命值。",
 		maxLv = 1,
 		type = 1,
 		id = 112110031,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				"%"
+			}
+		}
 	},
 	[112110032] = {
-		description = "文案预留",
+		description = "出场时，队友获得以下效果：\n硬直效果；\n受到致命伤时，规避该伤害并获得<material=underline c=#FFFFFF h=2 event=terminology args=(121107)>「冥契」</material>状态；\n若队友为光属性，则获得<material=underline c=#FFFFFF h=2 event=terminology args=(121106)>「羽日」</material>状态。\n<material=underline c=#FFFFFF h=2 event=terminology args=(121107)>「冥契」</material>：处于该状态的队友受到敌人的伤害时，魂羽·奥西里斯会代替队友承受该伤害；魂羽·奥西里斯受到致命伤时，移除队友该状态。\n<material=underline c=#FFFFFF h=2 event=terminology args=(121106)>「羽日」</material>：光属性伤害提高<color=#E78300>{1}</color>、技能伤害提高<color=#E78300>{2}</color>。",
 		maxLv = 1,
 		type = 1,
 		id = 112110032,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				5,
+				0,
+				false,
+				"%"
+			}
+		}
 	},
 	[112110033] = {
-		description = "文案预留",
+		description = "生命值上限提高<color=#E78300>{1}</color>。\n自身出场时每有<color=#E78300>2700</color>点生命值上限，拥有<material=underline c=#FFFFFF h=2 event=terminology args=(121106)>「羽日」</material>状态的队友，光属性伤害额外提高<color=#E78300>{2}</color>、技能伤害额外提高<color=#E78300>{3}</color>，该效果提供的光属性伤害额外提高最高为<color=#E78300>{4}</color>、技能伤害额外提高最高为<color=#E78300>{5}</color>。\n「幽刃·轮破」第二段命中时，会对命中的敌人附加光属性抗性降低<color=#E78300>{6}</color>，持续<color=#E78300>{7}</color>秒。",
 		maxLv = 1,
 		type = 1,
 		id = 112110033,
 		extra_param = "",
-		param = {}
+		param = {
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				1.2,
+				1.2,
+				true,
+				"%"
+			},
+			{
+				0.4,
+				0.4,
+				true,
+				"%"
+			},
+			{
+				30,
+				30,
+				true,
+				"%"
+			},
+			{
+				10,
+				10,
+				true,
+				"%"
+			},
+			{
+				15,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
 	},
 	[112480011] = {
 		description = "获得<material=underline c=#FFFFFF h=2 event=terminology args=(124804)>「脉冲」</material>状态时，队友获得<material=underline c=#FFFFFF h=2 event=terminology args=(124807)>「电荷激荡」</material>状态，持续<color=#E78300>7</color>秒。\n<material=underline c=#FFFFFF h=2 event=terminology args=(124807)>「电荷激荡」</material>：获得硬直效果，雷属性伤害提高<color=#E78300>{1}</color>。",
@@ -27643,6 +27996,87 @@
 			}
 		}
 	},
+	[200001138] = {
+		description = "「破军枪阵·六」、「破军枪阵·九」对命中的敌人、触发反击时对攻击者，都会附加近战伤害抗性降低<color=#E78300>{1}</color>，持续<color=#E78300>{2}</color>秒。",
+		maxLv = 1,
+		type = 1,
+		id = 200001138,
+		extra_param = "",
+		param = {
+			{
+				12,
+				0,
+				false,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[200001139] = {
+		description = "施放技能时获得<color=#E78300>1</color>层攻击力加成、施放反击技能时获得<color=#E78300>3</color>层攻击力加成，每层自身攻击力提高<color=#E78300>{1}</color>，持续<color=#E78300>{2}</color>秒，最多可叠加<color=#E78300>9</color>层，自身处于<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>范围内时，会持续刷新持续时间。\n普通攻击每次命中时，额外获得<color=#E78300>6</color>点怒气。",
+		maxLv = 1,
+		type = 1,
+		id = 200001139,
+		extra_param = "",
+		param = {
+			{
+				3,
+				3,
+				false,
+				"%"
+			},
+			{
+				6,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[200001140] = {
+		description = "每回收<color=#E78300>1</color>把<material=underline c=#FFFFFF h=2 event=terminology args=(106002)>「枪」</material>，会心伤害提高<color=#E78300>{1}</color>，持续<color=#E78300>{2}</color>秒，最多可叠加<color=#E78300>9</color>层。\n施放「破军枪阵·三」、「破军枪阵·六」、「破军枪阵·九」后，下一次施放反击、「反戈一击」、「游虎啸岩」、「破军枪舞」时，会根据施放的「破军枪阵」的类型，分别造成共计<color=#E78300>{3}、{4}、{5}</color>攻击力的光属性伤害，并且分别获得<color=#E78300>12、16、20</color>点怒气。",
+		maxLv = 1,
+		type = 1,
+		id = 200001140,
+		extra_param = "",
+		param = {
+			{
+				9,
+				9,
+				false,
+				"%"
+			},
+			{
+				18,
+				0,
+				false,
+				""
+			},
+			{
+				600,
+				15.382,
+				false,
+				"%"
+			},
+			{
+				800,
+				20.512,
+				false,
+				"%"
+			},
+			{
+				1000,
+				25.636,
+				false,
+				"%"
+			}
+		}
+	},
 	[220101101] = {
 		description = "当雏心·奥西里斯装备时，获得以下效果。\n获得所有神格的第三层效果。\n技能一基础伤害提高<color=#E78300>{1}%</color>。\n技能三基础伤害提高<color=#E78300>{2}%</color>。",
 		maxLv = 0,
@@ -29121,6 +29555,70 @@
 			"10%/12.5%/15%/17.5%/20%/22.5%/25",
 			"24",
 			"15"
+		}
+	},
+	[220106001] = {
+		description = "当九司·陆吾装备时，获得以下效果。\n开启<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material></color>时，独立伤害提高<color=#E78300>{1}%</color>，持续<color=#E78300>{2}</color>秒。\n技能三基础伤害提高<color=#E78300>{3}%</color>。\n处于<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material></color>范围内时，<color=#297DE0>「崩枪式」</color>改变为<color=#297DE0>「崩山式」</color>。\n当自身不处于<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material></color>范围内，施放<color=#297DE0>「反戈一击」</color>、<color=#297DE0>「游虎啸岩」</color>时，<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material></color>会移动到身边。\n<color=#297DE0>「破军枪阵·九」</color>命中瞬间会心伤害提高<color=#E78300>{4}%</color>。\n出场时，怒气恢复至满值。第一次<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material></color>关闭时，恢复<color=#E78300>60</color>点怒气。",
+		maxLv = 0,
+		type = 0,
+		id = 220106001,
+		param = {
+			{
+				"0",
+				"8",
+				"18",
+				"32",
+				"20"
+			},
+			{
+				"0",
+				"10",
+				"18",
+				"40",
+				"25"
+			},
+			{
+				"0",
+				"12",
+				"18",
+				"48",
+				"30"
+			},
+			{
+				"0",
+				"14",
+				"18",
+				"56",
+				"35"
+			},
+			{
+				"0",
+				"16",
+				"18",
+				"64",
+				"40"
+			},
+			{
+				"0",
+				"18",
+				"18",
+				"72",
+				"45"
+			},
+			{
+				"0",
+				"20",
+				"18",
+				"80",
+				"50"
+			}
+		},
+		extra_param = {
+			"0",
+			"8%/10%/12%/14%/16%/18%/20",
+			"18",
+			"32%/40%/48%/56%/64%/72%/80",
+			"20%/25%/30%/35%/40%/45%/50"
 		}
 	},
 	[220106601] = {
@@ -33364,74 +33862,74 @@
 		}
 	},
 	[500106001] = {
-		description = "当九司·陆吾装备时，获得以下效果。\n技能三基础伤害提高<color=#E78300>{1}%</color>。\n处于<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(106001)>「枪阵」</material></color>范围内时，<color=#297DE0>「崩枪式」</color>改变为<color=#297DE0>「崩山式」</color>。\n当自身不处于<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(106001)>「枪阵」</material></color>范围内，施放<color=#297DE0>「反戈一击」</color>、<color=#297DE0>「游虎啸岩」</color>时，<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(106001)>「枪阵」</material></color>会移动到身边。\n第一次<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(106001)>「枪阵」</material></color>关闭时，恢复<color=#E78300>{5}</color>点怒气。\n<color=#297DE0>「破军枪阵·九」</color>对精英和首领敌人命中瞬间会心伤害提高<color=#E78300>{2}%</color>。\n开启<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(106001)>「枪阵」</material></color>时，独立伤害提高<color=#E78300>{3}%</color>，持续<color=#E78300>{4}</color>秒。",
+		description = "当九司·陆吾装备时，获得以下效果。\n开启<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(106001)>「枪阵」</material></color>时，独立伤害提高<color=#E78300>{1}%</color>，持续<color=#E78300>{2}</color>秒。\n技能三基础伤害提高<color=#E78300>{3}%</color>。\n处于<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(106001)>「枪阵」</material></color>范围内时，<color=#297DE0>「崩枪式」</color>改变为<color=#297DE0>「崩山式」</color>。\n当自身不处于<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(106001)>「枪阵」</material></color>范围内，施放<color=#297DE0>「反戈一击」</color>、<color=#297DE0>「游虎啸岩」</color>时，<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(106001)>「枪阵」</material></color>会移动到身边。\n<color=#297DE0>「破军枪阵·九」</color>对精英和首领敌人命中瞬间会心伤害提高<color=#E78300>{4}%</color>。\n第一次<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(106001)>「枪阵」</material></color>关闭时，恢复<color=#E78300>{5}</color>点怒气。",
 		maxLv = 0,
 		type = 0,
 		id = 500106001,
 		param = {
 			{
 				"0",
-				"18",
-				"12",
 				"5",
+				"12",
+				"18",
 				"12",
 				"24"
 			},
 			{
 				"0",
-				"27",
-				"18",
 				"7.5",
 				"12",
+				"27",
+				"18",
 				"30"
 			},
 			{
 				"0",
-				"36",
-				"24",
 				"10",
 				"12",
+				"36",
+				"24",
 				"36"
 			},
 			{
 				"0",
-				"45",
-				"30",
 				"12.5",
 				"12",
+				"45",
+				"30",
 				"42"
 			},
 			{
 				"0",
-				"54",
-				"36",
 				"15",
 				"12",
+				"54",
+				"36",
 				"48"
 			},
 			{
 				"0",
-				"63",
-				"42",
 				"17.5",
 				"12",
+				"63",
+				"42",
 				"54"
 			},
 			{
 				"0",
-				"72",
-				"48",
 				"20",
 				"12",
+				"72",
+				"48",
 				"60"
 			}
 		},
 		extra_param = {
 			"0",
-			"18%/27%/36%/45%/54%/63%/72",
-			"12%/18%/24%/30%/36%/42%/48",
 			"5%/7.5%/10%/12.5%/15%/17.5%/20",
 			"12",
+			"18%/27%/36%/45%/54%/63%/72",
+			"12%/18%/24%/30%/36%/42%/48",
 			"24/30/36/42/48/54/60"
 		}
 	},
@@ -33892,7 +34390,7 @@
 		}
 	},
 	[500107301] = {
-		description = "当巧构·麟钰装备时，获得以下效果。\n出场时，自身能量上限每比<color=#E78300>90</color>点高<color=#E78300>1</color>点，全队伍伤害提高<color=#E78300>{1}%</color>，该效果提供的伤害提高最高为<color=#E78300>{2}%</color>。\n施放「绝影阵」时，全队伍风属性修正者会心率提高<color=#E78300>{3}%</color>，持续<color=#E78300>{4}</color>秒。\n璇玑裁风刃会对命中的敌人附加风属性抗性降低<color=#E78300>{5}%</color>，持续<color=#E78300>{6}</color>秒。\n神格<color=#297DE0>「显圣昭灵·瑞应」</color>获得额外的效果：获得<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(107307)>「含仁」</material></color>状态时，对全队伍附加<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(107308)>「行矩」</material></color>状态。\n神格<color=#297DE0>「明王吉征·振公」</color>获得额外的效果：获得<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(107308)>「行矩」</material></color>状态时，对全队伍附加<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(107307)>「含仁」</material></color>状态。\n神格<color=#297DE0>「中土兽伯·定方」</color>获得额外的效果：<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(107307)>「含仁」</material></color>状态改变为风属性伤害提高<color=#E78300>{7}%</color>，持续<color=#E78300>{8}</color>秒；<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(107308)>「行矩」</material></color>状态改变为独立伤害提高<color=#E78300>{9}%</color>，持续<color=#E78300>{10}</color>秒。",
+		description = "当巧构·麟钰装备时，获得以下效果。\n出场时，自身能量上限每比<color=#E78300>90</color>点高<color=#E78300>1</color>点，全队伍伤害提高<color=#E78300>{1}%</color>，该效果提供的伤害提高最高为<color=#E78300>{2}%</color>。\n施放<color=#297DE0>「绝影阵」</color>时，全队伍风属性修正者会心率提高<color=#E78300>{3}%</color>，持续<color=#E78300>{4}</color>秒。\n璇玑裁风刃会对命中的敌人附加风属性抗性降低<color=#E78300>{5}%</color>，持续<color=#E78300>{6}</color>秒。\n神格<color=#297DE0>「显圣昭灵·瑞应」</color>获得额外的效果：获得<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(107307)>「含仁」</material></color>状态时，对全队伍附加<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(107308)>「行矩」</material></color>状态。\n神格<color=#297DE0>「明王吉征·振公」</color>获得额外的效果：获得<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(107308)>「行矩」</material></color>状态时，对全队伍附加<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(107307)>「含仁」</material></color>状态。\n神格<color=#297DE0>「中土兽伯·定方」</color>获得额外的效果：<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(107307)>「含仁」</material></color>状态改变为风属性伤害提高<color=#E78300>{7}%</color>，持续<color=#E78300>{8}</color>秒；<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(107308)>「行矩」</material></color>状态改变为独立伤害提高<color=#E78300>{9}%</color>，持续<color=#E78300>{10}</color>秒。",
 		maxLv = 0,
 		type = 0,
 		id = 500107301,
@@ -35585,6 +36083,102 @@
 			"6%/7.5%/9%/10.5%/12%/13.5%/15",
 			"9",
 			"1.5"
+		}
+	},
+	[500121101] = {
+		description = "当魂羽·奥西里斯装备，获得以下效果。\n生命值上限提高<color=#E78300>{1}%</color>。\n施放奥义或连携奥义时，全队伍光属性修正者会心率提高<color=#E78300>{2}%</color>，持续<color=#E78300>{3}</color>秒。\n神格<color=#297DE0>「众象归心·同航」</color>获得额外的效果：出场时，全队伍生命值上限加和不低于<color=#E78300>120000</color>时，全队伍全属性伤害提高<color=#E78300>{4}%</color>。\n神格<color=#297DE0>「圣煌伐恶·不朽」</color>获得额外的效果：出场时，自身生命值上限每比<color=#E78300>50000</color>多<color=#E78300>1600</color>，独立伤害提高<color=#E78300>{5}%</color>，该效果提供的独立伤害提高最高为<color=#E78300>{6}%</color>。\n神格<color=#297DE0>「丰饶穰祝·繁世」</color>获得额外的效果：自身出场时每有<color=#E78300>2700</color>点生命值上限，处于<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(121106)>「羽日」</material></color>状态的队友伤害上升<color=#E78300>{7}%</color>，该效果提供的伤害上升最高为<color=#E78300>{8}%</color>。",
+		maxLv = 0,
+		type = 0,
+		id = 500121101,
+		param = {
+			{
+				"0",
+				"20",
+				"10",
+				"25",
+				"25",
+				"1.6",
+				"40",
+				"0.4",
+				"10"
+			},
+			{
+				"0",
+				"25",
+				"12.5",
+				"25",
+				"25",
+				"1.6",
+				"40",
+				"0.5",
+				"12.5"
+			},
+			{
+				"0",
+				"30",
+				"15",
+				"25",
+				"25",
+				"1.6",
+				"40",
+				"0.6",
+				"15"
+			},
+			{
+				"0",
+				"35",
+				"17.5",
+				"25",
+				"25",
+				"1.6",
+				"40",
+				"0.7",
+				"17.5"
+			},
+			{
+				"0",
+				"40",
+				"20",
+				"25",
+				"25",
+				"1.6",
+				"40",
+				"0.8",
+				"20"
+			},
+			{
+				"0",
+				"45",
+				"22.5",
+				"25",
+				"25",
+				"1.6",
+				"40",
+				"0.9",
+				"22.5"
+			},
+			{
+				"0",
+				"50",
+				"25",
+				"25",
+				"25",
+				"1.6",
+				"40",
+				"1",
+				"25"
+			}
+		},
+		extra_param = {
+			"0",
+			"20%/25%/30%/35%/40%/45%/50",
+			"10%/12.5%/15%/17.5%/20%/22.5%/25",
+			"25",
+			"25",
+			"1.6",
+			"40",
+			"0.4%/0.5%/0.6%/0.7%/0.8%/0.9%/1",
+			"10%/12.5%/15%/17.5%/20%/22.5%/25"
 		}
 	},
 	[500124801] = {
@@ -37565,6 +38159,39 @@
 				0,
 				false,
 				"%"
+			}
+		}
+	},
+	[600000069] = {
+		description = "光属性攻击命中时，全队伍光属性伤害提高{1}，持续{2}秒，多个刻印效果不可叠加。\n当给敌人附加光属性抗性降低时，全队伍光属性攻击命中瞬间会心率提高{3}，持续12秒，该效果每{4}秒最多触发一次，多个刻印效果不可叠加。",
+		maxLv = 1,
+		type = 1,
+		id = 600000069,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				8,
+				0,
+				false,
+				""
+			},
+			{
+				8,
+				0,
+				false,
+				"%"
+			},
+			{
+				16,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -48234,6 +48861,22 @@
 		extra_param = "",
 		param = {}
 	},
+	[700009691] = {
+		description = "每过20秒，修正者回复全部神能",
+		maxLv = 1,
+		type = 1,
+		id = 700009691,
+		extra_param = "",
+		param = {}
+	},
+	[700009692] = {
+		description = "每过20秒，修正者回复全部神能",
+		maxLv = 1,
+		type = 1,
+		id = 700009692,
+		extra_param = "",
+		param = {}
+	},
 	[700009701] = {
 		description = "普通敌人的生命值上限提高25%",
 		maxLv = 1,
@@ -49449,6 +50092,78 @@
 				"%"
 			}
 		}
+	},
+	[700009961] = {
+		description = "处于冰冻状态的敌人，持续受到大量冰属性伤害",
+		maxLv = 1,
+		type = 1,
+		id = 700009961,
+		extra_param = "",
+		param = {}
+	},
+	[700009962] = {
+		description = "奥义伤害提高4000%",
+		maxLv = 1,
+		type = 1,
+		id = 700009962,
+		extra_param = "",
+		param = {}
+	},
+	[700009963] = {
+		description = "持有护盾时，修正值系数提高3000%",
+		maxLv = 1,
+		type = 1,
+		id = 700009963,
+		extra_param = "",
+		param = {}
+	},
+	[700009964] = {
+		description = "处于持续伤害状态的敌人，受到的伤害提高300%\n该效果可叠加",
+		maxLv = 1,
+		type = 1,
+		id = 700009964,
+		extra_param = "",
+		param = {}
+	},
+	[700009965] = {
+		description = "自身损失生命值后，获得「血斗」状态，持续5秒\n「血斗」：对拥有护盾的敌人伤害提高1000%\n生命值为1时将持续激活「血斗」状态",
+		maxLv = 1,
+		type = 1,
+		id = 700009965,
+		extra_param = "",
+		param = {}
+	},
+	[700009966] = {
+		description = "处于零时空间时，技能三伤害提高500%",
+		maxLv = 1,
+		type = 1,
+		id = 700009966,
+		extra_param = "",
+		param = {}
+	},
+	[700009967] = {
+		description = "敌人施加100%生命值上限的护盾\n血量到达80%、60%、40%、20%时，重复触发本效果",
+		maxLv = 1,
+		type = 1,
+		id = 700009967,
+		extra_param = "",
+		param = {}
+	},
+	[700009968] = {
+		description = "修正空间外，怪物的防御提高500%\n在修正空间内，怪物的防御降低至0",
+		maxLv = 1,
+		type = 1,
+		id = 700009968,
+		extra_param = "",
+		param = {}
+	},
+	[700009969] = {
+		description = "敌人的控制抗性点数上限增加4点，控制抗性时间减少",
+		maxLv = 1,
+		type = 1,
+		id = 700009969,
+		extra_param = "",
+		param = {}
 	},
 	[700070001] = {
 		description = "该敌方单位在5米范围有如果有敌方单位存在则范围内所有单位防御力减少{1}",
@@ -50679,6 +51394,46 @@
 		maxLv = 1,
 		type = 1,
 		id = 700070235,
+		extra_param = "",
+		param = {}
+	},
+	[700070236] = {
+		description = "普通攻击命中时：闪避效果剩余冷却时间缩短3秒，对锁定的敌人追加3次「昏星」，附加1层「晨星」标记，闪避效果剩余冷却时间缩减和附加「晨星」标记的效果每2秒最多触发一次。\n「晨星」：每1层敌人受到的伤害提高2%，最多20层。\n「昏星」：造成600%攻击力的光属性伤害。",
+		maxLv = 1,
+		type = 1,
+		id = 700070236,
+		extra_param = "",
+		param = {}
+	},
+	[700070237] = {
+		description = "技能一「陨落晨星」每次命中时，对命中敌人附加「晨星」标记，自身恢复8%的奥义值，施放该技能期间免疫受到的伤害。\n「晨星」：每1层敌人受到的伤害提高2%，最多20层。",
+		maxLv = 1,
+		type = 1,
+		id = 700070237,
+		extra_param = "",
+		param = {}
+	},
+	[700070238] = {
+		description = "技能二「曙光祈愿」生效期间，附加「晨星」标记数量加倍，并在技能生效时对全队伍施加围绕旋转的「惑星」状态。\n「晨星」：每1层敌人受到的伤害提高2%，最多20层。\n「惑星」：对命中的敌人造成20000%攻击力的光属性伤害，并附加减速状态，持续3秒。",
+		maxLv = 1,
+		type = 1,
+		id = 700070238,
+		extra_param = "",
+		param = {}
+	},
+	[700070239] = {
+		description = "技能三「黄道天枢」会对全部处于「晨星」标记的敌人追加释放「昏星」，根据每个敌人的「晨星」标记，「昏星」额外造成伤害，并移除所有「晨星」标记；该技能攻击最后一段攻击会对不处于「晨星」标记的敌人附加10层「晨星」标记。\n「晨星」：每1层敌人受到的伤害提高2%，最多20层。",
+		maxLv = 1,
+		type = 1,
+		id = 700070239,
+		extra_param = "",
+		param = {}
+	},
+	[700070240] = {
+		description = "进入零时空间时，对全场敌人附加10层「晨星」标记，全队伍恢复40%的生命值和40%的机制值。\n「晨星」：每1层敌人受到的伤害提高2%，最多20层。",
+		maxLv = 1,
+		type = 1,
+		id = 700070240,
 		extra_param = "",
 		param = {}
 	},
@@ -58327,6 +59082,177 @@
 			}
 		}
 	},
+	[21106010121] = {
+		description = "自过往除暴安良的经历中领悟的武技，使用开明连续攻击敌人，造成共计<color=#E78300>{1}</color>攻击力的光属性伤害。\n\n被动：\n每段普通攻击的起手阶段、第四段普通攻击期间获得短暂的格挡效果，受击时会格挡攻击并施放反击技能攻击「崩枪式」。\n「崩枪式」：造成共计<color=#E78300>{2}</color>攻击力的光属性伤害，施放期间获得无敌效果。\n「破军枪舞」：造成共计<color=#E78300>{3}</color>攻击力的光属性伤害，施放期间获得霸体效果，受到的伤害降低<color=#E78300>{4}</color>。\n\n<color=#297DE0>怒气：</color>普通攻击命中后会获得怒气；触发「崩枪式」时获得<color=#E78300>20</color>点怒气。",
+		maxLv = 60,
+		type = 1,
+		id = 21106010121,
+		extra_param = "",
+		param = {
+			{
+				723,
+				13.934,
+				true,
+				"%"
+			},
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			},
+			{
+				800,
+				20.511,
+				true,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[21106011125] = {
+		description = "自过往除暴安良的经历中领悟的武技，使用开明连续攻击敌人，造成共计<color=#E78300>{1}</color>攻击力的光属性伤害。\n\n被动：\n每段普通攻击的起手阶段、第四段普通攻击期间获得短暂的格挡效果，受击时会格挡攻击并施放反击技能攻击，当自身不处于「枪阵」范围内时会施放反击技能攻击「崩枪式」、处于「枪阵」范围内时会施放反击技能攻击「崩山式」。\n「崩枪式」：造成共计<color=#E78300>{2}</color>攻击力的光属性伤害，施放期间获得无敌效果。\n「崩山式」：回收<color=#E78300>3</color>把「枪」，造成共计<color=#E78300>{3}</color>攻击力的光属性伤害，施放期间获得无敌效果。\n「破军枪舞」：造成共计<color=#E78300>{4}</color>攻击力的光属性伤害，施放期间获得霸体效果，受到的伤害降低<color=#E78300>{5}</color>。\n\n<color=#297DE0>怒气：</color>普通攻击命中后会获得怒气；触发「崩枪式」时获得<color=#E78300>20</color>点怒气，触发「崩山式」时获得<color=#E78300>30</color>点怒气。",
+		maxLv = 60,
+		type = 1,
+		id = 21106011125,
+		extra_param = "",
+		param = {
+			{
+				723,
+				13.934,
+				true,
+				"%"
+			},
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			},
+			{
+				450,
+				11.537,
+				true,
+				"%"
+			},
+			{
+				800,
+				20.511,
+				true,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[21106020122] = {
+		description = "脱胎于昆仑枪法的武技其一。\n向前冲刺后，回头对背后敌人刺出一枪，聚集敌人，造成共计<color=#E78300>{1}</color>攻击力的光属性伤害。",
+		maxLv = 60,
+		type = 1,
+		id = 21106020122,
+		extra_param = "",
+		param = {
+			{
+				700,
+				17.946,
+				true,
+				"%"
+			}
+		}
+	},
+	[21106020223] = {
+		description = "脱胎于昆仑枪法的武技其二。\n快速挥舞开明，造成共计<color=#E78300>{1}</color>攻击力的光属性伤害。",
+		maxLv = 60,
+		type = 1,
+		id = 21106020223,
+		extra_param = "",
+		param = {
+			{
+				800,
+				20.512,
+				true,
+				"%"
+			}
+		}
+	},
+	[21106020324] = {
+		description = "脱胎于昆仑枪法的武技其三。\n怒气为满时才可施放，消耗全部怒气，舞动开明对周围造成共计<color=#E78300>{1}</color>攻击力的光属性伤害，开启「枪阵」，施放时自身获得短暂的无敌效果。「枪阵」最多存在一个，最多持续<color=#E78300>27</color>秒，「枪阵」存在时禁用「破军枪阵」。\n「枪阵」：每<color=#E78300>3</color>秒会聚集「枪阵」范围内的敌人；自身处于「枪阵」范围内时获得硬直效果、受到的伤害降低<color=#E78300>{2}</color>。开启「枪阵」时，会召唤出<color=#E78300>9</color>把「枪」；自身处于「枪阵」范围内施放「反戈一击」、「游虎啸岩」时，会回收<color=#E78300>3</color>把「枪」，并且该技能的剩余冷却时间缩短<color=#E78300>90%</color>；回收「枪」时会对锁定的敌人触发技能攻击「枪落」，造成共计<color=#E78300>{3}</color>攻击力的光属性伤害。\n每回收<color=#E78300>1</color>把「枪」，自身获得<color=#E78300>1</color>个「枪魂」标记。自身拥有<color=#E78300>3、6、9</color>个「枪魂」标记时，该技能会依次替换为「破军枪阵·三」、「破军枪阵·六」、「破军枪阵·九」。\n「破军枪阵·三」：消耗<color=#E78300>3</color>个「枪魂」标记，造成共计<color=#E78300>{4}</color>攻击力的光属性伤害，命中后下一次施放的「破军枪阵·三」命中瞬间攻击力提高<color=#E78300>9%</color>，持续<color=#E78300>9</color>秒，最多可叠加<color=#E78300>2</color>层。\n「破军枪阵·六」：消耗<color=#E78300>6</color>个「枪魂」标记，造成共计<color=#E78300>{5}</color>攻击力的光属性伤害，施放期间获得霸体效果，受到的伤害降低<color=#E78300>{7}</color>，施放「破军枪阵·六」过程受击时，该技能命中瞬间攻击力提高<color=#E78300>{8}</color>。\n「破军枪阵·九」：消耗<color=#E78300>9</color>个「枪魂」标记，造成共计<color=#E78300>{6}</color>攻击力的光属性伤害，「破军枪阵·九」的前段有短暂的闪避判定，对生命值低于<color=#E78300>50%</color>的敌人命中瞬间基础伤害提高<color=#E78300>{9}</color>，处于零时空间或修正模式时，该技能命中瞬间攻击力提高<color=#E78300>{10}</color>。\n<color=#E78300>9</color>把「枪」全部回收时，会关闭「枪阵」，下一次普通攻击替换为技能攻击「破军枪舞」。当「枪阵」关闭并且未回收的「枪」剩余<color=#E78300>3、6、9</color>时，会恢复<color=#E78300>33、66、100</color>点怒气。",
+		maxLv = 60,
+		type = 1,
+		id = 21106020324,
+		extra_param = "",
+		param = {
+			{
+				400,
+				10.255,
+				true,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			},
+			{
+				150,
+				3.844,
+				true,
+				"%"
+			},
+			{
+				900,
+				23.074,
+				true,
+				"%"
+			},
+			{
+				1200,
+				30.765,
+				true,
+				"%"
+			},
+			{
+				1500,
+				38.461,
+				true,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			},
+			{
+				18,
+				0,
+				false,
+				"%"
+			},
+			{
+				18,
+				0,
+				false,
+				"%"
+			},
+			{
+				18,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
 	[21106610121] = {
 		description = "召唤兔兔铁拳打击敌人，造成共计<color=#E78300>{1}</color>攻击力的物理属性伤害。\n\n<color=#297DE0>怒气：</color>普通攻击命中后会获得怒气。",
 		maxLv = 60,
@@ -60652,6 +61578,7 @@
 		101211201,
 		101211202,
 		101211203,
+		101211208,
 		101211209,
 		101211305,
 		101248101,
@@ -61519,6 +62446,9 @@
 		200001135,
 		200001136,
 		200001137,
+		200001138,
+		200001139,
+		200001140,
 		220101101,
 		220101301,
 		220101601,
@@ -61542,6 +62472,7 @@
 		220105601,
 		220105801,
 		220105901,
+		220106001,
 		220106601,
 		220106701,
 		220106801,
@@ -61656,6 +62587,7 @@
 		500118401,
 		500119701,
 		500119901,
+		500121101,
 		500124801,
 		500128401,
 		600000001,
@@ -61726,6 +62658,7 @@
 		600000066,
 		600000067,
 		600000068,
+		600000069,
 		700000001,
 		700000101,
 		700000102,
@@ -62554,6 +63487,8 @@
 		700009684,
 		700009685,
 		700009686,
+		700009691,
+		700009692,
 		700009701,
 		700009702,
 		700009703,
@@ -62699,6 +63634,15 @@
 		700009946,
 		700009947,
 		700009948,
+		700009961,
+		700009962,
+		700009963,
+		700009964,
+		700009965,
+		700009966,
+		700009967,
+		700009968,
+		700009969,
 		700070001,
 		700070002,
 		700070003,
@@ -62839,6 +63783,11 @@
 		700070233,
 		700070234,
 		700070235,
+		700070236,
+		700070237,
+		700070238,
+		700070239,
+		700070240,
 		700070501,
 		700070502,
 		700070503,
@@ -63336,6 +64285,11 @@
 		21105920122,
 		21105920223,
 		21105920324,
+		21106010121,
+		21106011125,
+		21106020122,
+		21106020223,
+		21106020324,
 		21106610121,
 		21106620222,
 		21106620323,

@@ -134,6 +134,8 @@ function ShowStory(arg_10_0, arg_10_1, arg_10_2)
 		gameContext:DestroyCurRoutes()
 		LuaExchangeHelper.ActionInvoke(arg_10_2)
 		manager.gc:Collect()
+		DestroyLua()
+		gameContext:SetSystemLayer("battle")
 		Resources.UnloadUnusedAssets()
 	end, arg_10_1)
 end

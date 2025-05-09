@@ -30,6 +30,10 @@ function var_0_0.AddUIListeners(arg_5_0)
 		arg_5_0.list_:SwitchToPage(arg_5_0.pageIndex_ + 1)
 	end)
 	arg_5_0:AddBtnListener(arg_5_0.m_closeBtn, nil, function()
+		if arg_5_0.exitCallback then
+			arg_5_0.exitCallback()
+		end
+
 		arg_5_0:Back()
 	end)
 end
@@ -49,6 +53,7 @@ function var_0_0.OnEnter(arg_10_0)
 	arg_10_0.isPrefab_ = arg_10_0.params_.isPrefab or false
 	arg_10_0.hideBg_ = arg_10_0.params_.hideBg or false
 	arg_10_0.hideHomeBtn = arg_10_0.params_.hideHomeBtn or nil
+	arg_10_0.exitCallback = arg_10_0.params_.exitCallback or nil
 
 	local var_10_0 = arg_10_0.params_.startIndex or 1
 

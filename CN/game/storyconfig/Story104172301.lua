@@ -20553,6 +20553,10 @@
 			if var_481_31 < arg_478_1.time_ and arg_478_1.time_ <= var_481_31 + arg_481_0 then
 				arg_478_1.fswbg_:SetActive(false)
 				arg_478_1.dialog_:SetActive(false)
+
+				arg_478_1.fswbg_.transform:Find("textbox/bg"):GetComponent("Image").enabled = true
+
+				SetActive(arg_478_1.fswtw_.transform.parent.parent:Find("bg/line").gameObject, true)
 				arg_478_1:ShowNextGo(false)
 			end
 

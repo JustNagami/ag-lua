@@ -720,6 +720,25 @@ function IsConditionAchieved(arg_23_0, arg_23_1)
 		else
 			return false, 0, 1
 		end
+	elseif var_23_0.type == 11901 then
+		local var_23_41 = var_23_0.params
+
+		if TetrisGameTools:CheckIsFinishChapter(var_23_41[2][1]) then
+			return true
+		else
+			return false
+		end
+	elseif var_23_0.type == 11902 then
+		local var_23_42 = var_23_0.params
+		local var_23_43 = var_23_42[2][1][1]
+		local var_23_44 = var_23_42[2][1][2]
+		local var_23_45 = TetrisGameData:GetStageInfoByStageID(var_23_43)
+
+		if var_23_45 and var_23_45.isClear == true and var_23_44 <= var_23_45.topScore then
+			return true
+		else
+			return false
+		end
 	end
 
 	return var_23_1, var_23_2, var_23_3
@@ -1116,6 +1135,10 @@ function GetTrialHeroList(arg_51_0, arg_51_1, arg_51_2)
 
 	if arg_51_0 == BattleConst.STAGE_TYPE_NEW.CHALLENGE_ROGUE_TEAM then
 		return ChallengeRogueTeamData:GetTrialHeroList()
+	end
+
+	if arg_51_0 == BattleConst.STAGE_TYPE_NEW.OSIRIS_PLAY_GAME then
+		return OsirisPlayGameTempHeroData:GetTrialHeroList()
 	end
 
 	local var_51_11 = GetHeroTeamActivityID(arg_51_0, arg_51_2, true)

@@ -478,216 +478,213 @@ function DormHeroTemplate.BackToDorm(arg_31_0)
 	arg_31_0:ResetHeroSkill()
 end
 
-function DormHeroTemplate.EnsureNotInPublicHall(arg_32_0)
-	local var_32_0 = DormitoryData:GetDormSceneData(DormConst.PUBLIC_DORM_ID)
+function DormHeroTemplate.OutDorm(arg_32_0)
+	arg_32_0.jobType = nil
+	arg_32_0.dancePos = nil
 
-	if var_32_0 then
-		local var_32_1 = var_32_0.archiveIDList
+	arg_32_0:ResetHeroSkill()
+end
 
-		if var_32_1 then
-			table.removebyvalue(var_32_1, arg_32_0.archives_id)
+function DormHeroTemplate.EnsureNotInPublicHall(arg_33_0)
+	local var_33_0 = DormitoryData:GetDormSceneData(DormConst.PUBLIC_DORM_ID)
+
+	if var_33_0 then
+		local var_33_1 = var_33_0.archiveIDList
+
+		if var_33_1 then
+			table.removebyvalue(var_33_1, arg_33_0.archives_id)
 		end
 	end
 end
 
-function DormHeroTemplate.GoToCanteen(arg_33_0)
-	arg_33_0.dancePos = nil
+function DormHeroTemplate.GoToCanteen(arg_34_0)
+	arg_34_0.dancePos = nil
 
-	local var_33_0 = DormitoryData:GetDormSceneData(DormConst.PUBLIC_DORM_ID).archiveIDList
+	local var_34_0 = DormitoryData:GetDormSceneData(DormConst.PUBLIC_DORM_ID).archiveIDList
 
-	if #var_33_0 > 0 then
-		for iter_33_0 = 1, #var_33_0 do
-			if var_33_0[iter_33_0] == arg_33_0.archives_id then
-				table.remove(var_33_0, iter_33_0)
+	if #var_34_0 > 0 then
+		for iter_34_0 = 1, #var_34_0 do
+			if var_34_0[iter_34_0] == arg_34_0.archives_id then
+				table.remove(var_34_0, iter_34_0)
 
 				break
 			end
 		end
 	end
 
-	arg_33_0:ResetHeroSkill()
-end
-
-function DormHeroTemplate.GoToDance(arg_34_0, arg_34_1)
-	local var_34_0 = arg_34_0:GetHeroState()
-
-	if var_34_0 == DormEnum.DormHeroState.InCanteenEntrust or var_34_0 == DormEnum.DormHeroState.InCanteenJob then
-		return
-	end
-
-	if arg_34_1 and var_34_0 == DormEnum.DormHeroState.InPublicDorm then
-		local var_34_1 = DormitoryData:GetDormSceneData(DormConst.PUBLIC_DORM_ID).archiveIDList
-
-		if #var_34_1 > 0 then
-			for iter_34_0 = 1, #var_34_1 do
-				if var_34_1[iter_34_0] == arg_34_0.archives_id then
-					table.remove(var_34_1, iter_34_0)
-
-					break
-				end
-			end
-		end
-	end
-
-	arg_34_0.dancePos = arg_34_1
-
-	if not arg_34_0.dancePos then
-		arg_34_0:BackToDorm()
-	end
-
 	arg_34_0:ResetHeroSkill()
 end
 
-function DormHeroTemplate.DisposeRunSkill(arg_35_0)
-	if arg_35_0.hero_id then
-		if not BackHomeHeroCfg[arg_35_0.hero_id] then
+function DormHeroTemplate.GoToDance(arg_35_0, arg_35_1)
+	local var_35_0 = arg_35_0:GetHeroState()
+
+	if var_35_0 == DormEnum.DormHeroState.InCanteenEntrust or var_35_0 == DormEnum.DormHeroState.InCanteenJob then
+		return
+	end
+
+	if arg_35_1 and var_35_0 == DormEnum.DormHeroState.InPublicDorm then
+		arg_35_0:EnsureNotInPublicHall()
+	end
+
+	arg_35_0.dancePos = arg_35_1
+
+	if not arg_35_0.dancePos then
+		arg_35_0:BackToDorm()
+	end
+
+	arg_35_0:ResetHeroSkill()
+end
+
+function DormHeroTemplate.DisposeRunSkill(arg_36_0)
+	if arg_36_0.hero_id then
+		if not BackHomeHeroCfg[arg_36_0.hero_id] then
 			return
 		end
 
-		local var_35_0 = BackHomeHeroCfg[arg_35_0.hero_id].skill_list
-
-		for iter_35_0, iter_35_1 in ipairs(var_35_0) do
-			if DormSkillData:CheckSkillIsRun(arg_35_0.hero_id, iter_35_1, DormEnum.EntityType.Character) then
-				DormSkillData:DisposeSkillComponent(arg_35_0.hero_id, iter_35_1, DormEnum.EntityType.Character)
-			end
-		end
-	end
-end
-
-function DormHeroTemplate.OpenHeroSkill(arg_36_0)
-	if arg_36_0.hero_id then
 		local var_36_0 = BackHomeHeroCfg[arg_36_0.hero_id].skill_list
-		local var_36_1 = GameSetting.dorm_hero_skill_unlock.value
-		local var_36_2 = {}
-		local var_36_3 = HeroData:GetHeroData(arg_36_0.hero_id).level
 
-		for iter_36_0 = 1, #var_36_0 do
-			if var_36_3 >= var_36_1[iter_36_0] then
-				table.insert(var_36_2, var_36_0[iter_36_0])
-			end
-		end
-
-		for iter_36_1, iter_36_2 in ipairs(var_36_2) do
-			if DormSkillData:CheckSkillIsOpen(arg_36_0.hero_id, iter_36_2, DormEnum.EntityType.Character) then
-				DormSkillData:AddSkillComponent(arg_36_0.hero_id, iter_36_2, DormEnum.EntityType.Character)
+		for iter_36_0, iter_36_1 in ipairs(var_36_0) do
+			if DormSkillData:CheckSkillIsRun(arg_36_0.hero_id, iter_36_1, DormEnum.EntityType.Character) then
+				DormSkillData:DisposeSkillComponent(arg_36_0.hero_id, iter_36_1, DormEnum.EntityType.Character)
 			end
 		end
 	end
 end
 
-function DormHeroTemplate.ResetHeroSkill(arg_37_0)
-	arg_37_0:DisposeRunSkill()
-	arg_37_0:OpenHeroSkill()
+function DormHeroTemplate.OpenHeroSkill(arg_37_0)
+	if arg_37_0.hero_id then
+		local var_37_0 = BackHomeHeroCfg[arg_37_0.hero_id].skill_list
+		local var_37_1 = GameSetting.dorm_hero_skill_unlock.value
+		local var_37_2 = {}
+		local var_37_3 = HeroData:GetHeroData(arg_37_0.hero_id).level
+
+		for iter_37_0 = 1, #var_37_0 do
+			if var_37_3 >= var_37_1[iter_37_0] then
+				table.insert(var_37_2, var_37_0[iter_37_0])
+			end
+		end
+
+		for iter_37_1, iter_37_2 in ipairs(var_37_2) do
+			if DormSkillData:CheckSkillIsOpen(arg_37_0.hero_id, iter_37_2, DormEnum.EntityType.Character) then
+				DormSkillData:AddSkillComponent(arg_37_0.hero_id, iter_37_2, DormEnum.EntityType.Character)
+			end
+		end
+	end
 end
 
-function DormHeroTemplate.SetJob(arg_38_0, arg_38_1)
-	arg_38_0.jobType = arg_38_1
+function DormHeroTemplate.ResetHeroSkill(arg_38_0)
+	arg_38_0:DisposeRunSkill()
+	arg_38_0:OpenHeroSkill()
 end
 
-function DormHeroTemplate.InitDanceTrainData(arg_39_0, arg_39_1)
-	if not arg_39_0.property then
-		arg_39_0.property = {}
+function DormHeroTemplate.SetJob(arg_39_0, arg_39_1)
+	arg_39_0.jobType = arg_39_1
+end
+
+function DormHeroTemplate.InitDanceTrainData(arg_40_0, arg_40_1)
+	if not arg_40_0.property then
+		arg_40_0.property = {}
 	end
 
-	arg_39_0.property[arg_39_1.hero_id] = IdolTraineeData.ParseIdolProperty(arg_39_1.attribute_list, arg_39_1.hero_id)
+	arg_40_0.property[arg_40_1.hero_id] = IdolTraineeData.ParseIdolProperty(arg_40_1.attribute_list, arg_40_1.hero_id)
 end
 
-function DormHeroTemplate.UpdataDanceTrainData(arg_40_0, arg_40_1, arg_40_2)
-	local var_40_0 = arg_40_2.hero_id
+function DormHeroTemplate.UpdataDanceTrainData(arg_41_0, arg_41_1, arg_41_2)
+	local var_41_0 = arg_41_2.hero_id
 
-	if not arg_40_0.property and BackHomeHeroCfg[var_40_0].idol_usable == 1 then
-		arg_40_0:InitDanceTrainData({
-			hero_id = var_40_0
+	if not arg_41_0.property and BackHomeHeroCfg[var_41_0].idol_usable == 1 then
+		arg_41_0:InitDanceTrainData({
+			hero_id = var_41_0
 		})
 	end
 
-	arg_40_0.property[var_40_0][arg_40_2.attribute_index] = arg_40_1.attribute_value
+	arg_41_0.property[var_41_0][arg_41_2.attribute_index] = arg_41_1.attribute_value
 end
 
-function DormHeroTemplate.GetDanceProperty(arg_41_0, arg_41_1)
-	if arg_41_1 then
-		local var_41_0 = arg_41_1 or arg_41_0.hero_id
+function DormHeroTemplate.GetDanceProperty(arg_42_0, arg_42_1)
+	if arg_42_1 then
+		local var_42_0 = arg_42_1 or arg_42_0.hero_id
 
-		if not arg_41_0.property then
-			arg_41_0:InitDanceTrainData({
-				hero_id = var_41_0
+		if not arg_42_0.property then
+			arg_42_0:InitDanceTrainData({
+				hero_id = var_42_0
 			})
 		end
 
-		return arg_41_0.property[var_41_0]
+		return arg_42_0.property[var_42_0]
 	end
 end
 
 DormRoomTemplate = class("DormRoomTemplate")
 
-function DormRoomTemplate.Ctor(arg_42_0, arg_42_1)
-	arg_42_0.id = arg_42_1.id
-	arg_42_0.type = arg_42_1.type
-	arg_42_0.name = arg_42_1.name
-	arg_42_0.posID = arg_42_1.pos
-	arg_42_0.furnitureInfoS = arg_42_1.furnitureInfoS
-	arg_42_0.specialFur = arg_42_1.specialFur
+function DormRoomTemplate.Ctor(arg_43_0, arg_43_1)
+	arg_43_0.id = arg_43_1.id
+	arg_43_0.type = arg_43_1.type
+	arg_43_0.name = arg_43_1.name
+	arg_43_0.posID = arg_43_1.pos
+	arg_43_0.furnitureInfoS = arg_43_1.furnitureInfoS
+	arg_43_0.specialFur = arg_43_1.specialFur
 end
 
-function DormRoomTemplate.GetDormTemplateFurList(arg_43_0)
-	if arg_43_0.furnitureInfoS then
-		return arg_43_0.furnitureInfoS
+function DormRoomTemplate.GetDormTemplateFurList(arg_44_0)
+	if arg_44_0.furnitureInfoS then
+		return arg_44_0.furnitureInfoS
 	else
 		print("模板家具列表为空")
 	end
 end
 
-function DormRoomTemplate.GetDormTemplateType(arg_44_0)
-	if arg_44_0.type then
-		return arg_44_0.type
+function DormRoomTemplate.GetDormTemplateType(arg_45_0)
+	if arg_45_0.type then
+		return arg_45_0.type
 	end
 
 	print("模板家具类型为空")
 end
 
-function DormRoomTemplate.GetDormTemplateFurNumInfo(arg_45_0)
-	local var_45_0 = 0
-	local var_45_1 = {}
+function DormRoomTemplate.GetDormTemplateFurNumInfo(arg_46_0)
+	local var_46_0 = 0
+	local var_46_1 = {}
 
-	if arg_45_0.furnitureInfoS then
-		for iter_45_0 = 0, arg_45_0.furnitureInfoS.Length - 1 do
-			var_45_0 = var_45_0 + 1
+	if arg_46_0.furnitureInfoS then
+		for iter_46_0 = 0, arg_46_0.furnitureInfoS.Length - 1 do
+			var_46_0 = var_46_0 + 1
 
-			local var_45_2 = arg_45_0.furnitureInfoS[iter_45_0]
+			local var_46_2 = arg_46_0.furnitureInfoS[iter_46_0]
 
-			if not var_45_1[var_45_2.id] then
-				var_45_1[var_45_2.id] = 0
+			if not var_46_1[var_46_2.id] then
+				var_46_1[var_46_2.id] = 0
 			end
 
-			var_45_1[var_45_2.id] = var_45_1[var_45_2.id] + 1
+			var_46_1[var_46_2.id] = var_46_1[var_46_2.id] + 1
 		end
 	end
 
-	for iter_45_1, iter_45_2 in pairs(arg_45_0.specialFur) do
-		var_45_1[iter_45_2] = 1
+	for iter_46_1, iter_46_2 in pairs(arg_46_0.specialFur) do
+		var_46_1[iter_46_2] = 1
 	end
 
-	return var_45_0 + DormConst.DORM_SPECIAL_FURNITURE_NUM, var_45_1
+	return var_46_0 + DormConst.DORM_SPECIAL_FURNITURE_NUM, var_46_1
 end
 
-function DormRoomTemplate.ReviseFurTemplateNameInfo(arg_46_0, arg_46_1)
-	arg_46_0.name = arg_46_1
+function DormRoomTemplate.ReviseFurTemplateNameInfo(arg_47_0, arg_47_1)
+	arg_47_0.name = arg_47_1
 end
 
-function DormRoomTemplate.GetTemplateName(arg_47_0)
-	return arg_47_0.name
+function DormRoomTemplate.GetTemplateName(arg_48_0)
+	return arg_48_0.name
 end
 
-function DormRoomTemplate.GetTemplateWallAndFloorInfo(arg_48_0)
-	return arg_48_0.specialFur
+function DormRoomTemplate.GetTemplateWallAndFloorInfo(arg_49_0)
+	return arg_49_0.specialFur
 end
 
-function DormRoomTemplate.Dispose(arg_49_0)
-	arg_49_0.id = nil
-	arg_49_0.type = nil
-	arg_49_0.name = nil
-	arg_49_0.posID = nil
-	arg_49_0.furnitureInfoS = nil
-	arg_49_0.specialFur = nil
-	arg_49_0.hasHit = false
+function DormRoomTemplate.Dispose(arg_50_0)
+	arg_50_0.id = nil
+	arg_50_0.type = nil
+	arg_50_0.name = nil
+	arg_50_0.posID = nil
+	arg_50_0.furnitureInfoS = nil
+	arg_50_0.specialFur = nil
+	arg_50_0.hasHit = false
 end

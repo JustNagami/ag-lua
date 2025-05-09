@@ -9,8 +9,14 @@
 		id = 109502,
 		end_movie_frames = 567
 	},
+	[102003] = {
+		start_path = "SofdecAsset/function/draw/102003_start.usm",
+		id = 102003,
+		end_movie_frames = 369
+	},
 	all = {
 		107602,
-		109502
+		109502,
+		102003
 	}
 }

@@ -175,7 +175,7 @@ function var_0_0.InitRedPoint(arg_12_0)
 		var_12_3[#var_12_3 + 1] = var_12_6
 	end
 
-	manager.redPoint:addGroup(var_12_1, var_12_3, true)
+	manager.redPoint:addGroup(var_12_1, var_12_3, false)
 end
 
 function var_0_0.RefreshClueRedPoint(arg_13_0)

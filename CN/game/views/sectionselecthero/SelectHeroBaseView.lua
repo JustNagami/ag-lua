@@ -146,6 +146,12 @@ function var_0_0.BeginDragHero(arg_17_0, arg_17_1, arg_17_2, arg_17_3)
 		return
 	end
 
+	if arg_17_0.lockStateList_[arg_17_1] or arg_17_0.sectionProxy_.canHeroDrag ~= nil and arg_17_0.sectionProxy_.canHeroDrag == false then
+		ShowTips("NOT_DRAG_CHANGE_HERO")
+
+		return
+	end
+
 	if arg_17_0.canSwitchResctrictHeroList_[arg_17_1] ~= ReserveConst.RESTRICT_HERO_SWITCH_MODE.FORBID then
 		ShowTips("TEAM_ERROR_CHANGE")
 

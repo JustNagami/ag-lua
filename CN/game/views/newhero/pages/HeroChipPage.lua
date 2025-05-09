@@ -47,7 +47,7 @@ end
 function var_0_1.UpdateView(arg_7_0)
 	if ChipCfg.get_id_list_by_spec_char[arg_7_0.heroInfo_.id] then
 		local var_7_0
-		local var_7_1 = ChipData:GetEnableHeroChipIdByHeroId(arg_7_0.heroInfo_.id)
+		local var_7_1 = arg_7_0:GetChipIDList()
 
 		if not var_7_1 then
 			return
@@ -75,34 +75,38 @@ function var_0_1.UpdateView(arg_7_0)
 	end
 end
 
-function var_0_1.CheckLocked(arg_8_0)
-	arg_8_0.isSelfController_:SetSelectedState(arg_8_0.heroViewProxy_.isSelf and "true" or "false")
+function var_0_1.GetChipIDList(arg_8_0)
+	return ChipData:GetEnableHeroChipIdByHeroId(arg_8_0.heroInfo_.id)
 end
 
-function var_0_1.OnExit(arg_9_0)
-	for iter_9_0 = 1, 4 do
-		arg_9_0.chipItem_[iter_9_0]:UnBindRedPoint()
+function var_0_1.CheckLocked(arg_9_0)
+	arg_9_0.isSelfController_:SetSelectedState(arg_9_0.heroViewProxy_.isSelf and "true" or "false")
+end
+
+function var_0_1.OnExit(arg_10_0)
+	for iter_10_0 = 1, 4 do
+		arg_10_0.chipItem_[iter_10_0]:UnBindRedPoint()
 	end
 end
 
-function var_0_1.SetHeroInfo(arg_10_0, arg_10_1)
-	arg_10_0.heroInfo_ = arg_10_1
+function var_0_1.SetHeroInfo(arg_11_0, arg_11_1)
+	arg_11_0.heroInfo_ = arg_11_1
 end
 
-function var_0_1.Show(arg_11_0)
-	var_0_1.super.Show(arg_11_0)
-	arg_11_0:UpdateView()
+function var_0_1.Show(arg_12_0)
+	var_0_1.super.Show(arg_12_0)
+	arg_12_0:UpdateView()
 end
 
-function var_0_1.Dispose(arg_12_0)
-	var_0_1.super.Dispose(arg_12_0)
+function var_0_1.Dispose(arg_13_0)
+	var_0_1.super.Dispose(arg_13_0)
 
-	for iter_12_0, iter_12_1 in pairs(arg_12_0.chipItem_) do
-		iter_12_1:UnBindRedPoint()
-		iter_12_1:Dispose()
+	for iter_13_0, iter_13_1 in pairs(arg_13_0.chipItem_) do
+		iter_13_1:UnBindRedPoint()
+		iter_13_1:Dispose()
 	end
 
-	arg_12_0.chipItem_ = nil
+	arg_13_0.chipItem_ = nil
 end
 
 return var_0_1

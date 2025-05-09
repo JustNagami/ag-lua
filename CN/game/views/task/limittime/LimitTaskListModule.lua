@@ -1,4 +1,4 @@
-﻿local var_0_0 = class("LimitTaskListModule", CommonActivityTaskListModule)
+﻿local var_0_0 = class("LimitTaskListModule", ReduxView)
 
 function var_0_0.OnCtor(arg_1_0, arg_1_1)
 	arg_1_0.gameObject_ = arg_1_1

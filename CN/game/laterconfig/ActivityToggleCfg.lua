@@ -2958,7 +2958,147 @@
 		order = 88,
 		class_name = SkinTrialMainView_2_0
 	},
+	[40101] = {
+		id = 40101,
+		name = "未 卜 阴 影",
+		sub_title_type = 0,
+		desc = "一次看似寻常的行动，一种从未见过的能量体系，两位来自他乡的少女。\n在平原的风沙中，庞大的阴影正在暗处等待时机。",
+		activity_id = 332261,
+		activity_theme = 33,
+		icon = "172141",
+		order = 80,
+		class_name = TangramPuzzleTaskView
+	},
+	[40102] = {
+		id = 40102,
+		name = "战术研习记录",
+		sub_title_type = 0,
+		desc = "为了能独当一面，为了能够保护大家，她似乎还有许多想要学习的事。",
+		activity_id = 323801,
+		activity_theme = 33,
+		icon = "323801",
+		order = 90,
+		class_name = OsirisPlayGameMainView
+	},
+	[40103] = {
+		id = 40103,
+		name = "古 远 虚 影",
+		sub_title_type = 0,
+		desc = "源层深处，视骸们的乐园，平时不会有人踏足于此，深空之眼的外勤行动专员们为了寻找断断续续的神能波动而来。在他们即将前往的那片区域中，有些熟悉的模糊人影不知疲倦地与周围的敌人战斗着，像是一段没有暂停键的播片。",
+		activity_id = 333501,
+		activity_theme = 33,
+		icon = "110",
+		order = 79,
+		class_name = MultHeartDemonEnterView
+	},
+	[40104] = {
+		id = 40104,
+		name = "限 期 委 培",
+		sub_title_type = 0,
+		desc = "完成养成任务和达成每日任务评分要求可以获得「锤炼之证」，累计「锤炼之证」可以领取丰厚奖励。",
+		activity_id = 331891,
+		activity_theme = 33,
+		icon = "141891",
+		order = 60,
+		class_name = ActivityCultivateHeroMainView_Resident
+	},
+	[40105] = {
+		id = 40105,
+		name = "《代号：方块》",
+		sub_title_type = 0,
+		desc = "由超感互娱研发的益智游戏，现正面向全深空之眼开放测试中。",
+		activity_id = 333231,
+		activity_theme = 33,
+		icon = "293231",
+		order = 88,
+		class_name = TetrisGameHomeView
+	},
+	[40106] = {
+		id = 40106,
+		name = "联防协议·α",
+		sub_title_type = 0,
+		desc = "",
+		activity_id = 332431,
+		activity_theme = 33,
+		icon = "242432",
+		order = 89,
+		class_name = ActivityPtScrollEnterView
+	},
+	[40107] = {
+		id = 40107,
+		name = "苦 岸 行 旅",
+		sub_title_type = 1,
+		desc = "阴谋在暗影中蔓延，将众生拖入生灭轮转的苦海中。但即使前路布满荆棘，即使我们被迫分隔，我们仍旧会继续前行，只为在各自的终点再度重逢。",
+		activity_id = 331201,
+		activity_theme = 33,
+		icon = "141201",
+		order = 100,
+		class_name = ActivityChapterPageView
+	},
+	[40108] = {
+		id = 40108,
+		name = "角 色 试 用",
+		sub_title_type = 0,
+		desc = "",
+		activity_id = 331071,
+		activity_theme = 33,
+		icon = "141071",
+		order = 50,
+		class_name = HeroTrialView_Resident
+	},
+	[40109] = {
+		id = 40109,
+		name = "换 装 试 用",
+		sub_title_type = 0,
+		desc = "",
+		activity_id = 331311,
+		activity_theme = 33,
+		icon = "141311",
+		order = 51,
+		class_name = SkinTrialMainView_2_0
+	},
+	[40110] = {
+		id = 40110,
+		name = "圣翼的微光",
+		sub_title_type = 0,
+		desc = "",
+		activity_id = 332131,
+		activity_theme = 33,
+		icon = "332131",
+		order = 99,
+		class_name = ActivityPromotionalView
+	},
 	get_id_list_by_activity_id = {
+		[332131] = {
+			40110
+		},
+		[331311] = {
+			40109
+		},
+		[331071] = {
+			40108
+		},
+		[331201] = {
+			40107
+		},
+		[332431] = {
+			40106
+		},
+		[333231] = {
+			40105
+		},
+		[331891] = {
+			40104
+		},
+		[333501] = {
+			40103
+		},
+		[323801] = {
+			40102
+		},
+		[332261] = {
+			40101
+		},
 		[321311] = {
 			40014
 		},
@@ -3762,6 +3902,18 @@
 		}
 	},
 	get_id_list_by_activity_theme = {
+		[33] = {
+			40101,
+			40102,
+			40103,
+			40104,
+			40105,
+			40106,
+			40107,
+			40108,
+			40109,
+			40110
+		},
 		[32] = {
 			40001,
 			40002,
@@ -4329,6 +4481,16 @@
 		40011,
 		40012,
 		40013,
-		40014
+		40014,
+		40101,
+		40102,
+		40103,
+		40104,
+		40105,
+		40106,
+		40107,
+		40108,
+		40109,
+		40110
 	}
 }

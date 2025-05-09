@@ -150,6 +150,7 @@ function var_0_0.OnExit(arg_14_0)
 	arg_14_0.curPageIndex_ = nil
 
 	HeroTools.StopTalk()
+	manager.heroRaiseTrack:CancelAllAsyncLoadModelOp()
 end
 
 function var_0_0.IndexTipsItem(arg_15_0, arg_15_1, arg_15_2)

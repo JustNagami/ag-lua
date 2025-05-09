@@ -790,7 +790,7 @@ function var_0_0.GetEffectAffix(arg_66_0)
 
 		if var_66_2 == 1 then
 			local var_66_3 = var_66_1[2]
-			local var_66_4 = var_0_0.GetWindowBarText(ChallengeRogueTeamConst.ATTRIBUTE_ENUM.GOLD)
+			local var_66_4 = ChallengeRogueTeamData:AttributeGetValue(ChallengeRogueTeamConst.ATTRIBUTE_ENUM.GOLD)
 			local var_66_5 = math.floor(var_66_4 / var_66_3)
 
 			var_66_5 = var_66_5 > var_66_1[4] and var_66_1[4] or var_66_5

@@ -9791,6 +9791,150 @@
 			}
 		}
 	},
+	[12110011] = {
+		name = "分灵",
+		suit_name = "众象归心",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1211001,
+		id = 12110011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[12110012] = {
+		name = "布泽",
+		suit_name = "众象归心",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 12110011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1211001,
+		id = 12110012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[12110013] = {
+		name = "同航",
+		suit_name = "众象归心",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 12110012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1211001,
+		id = 12110013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[12110021] = {
+		name = "威赫",
+		suit_name = "圣煌伐恶",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1211002,
+		id = 12110021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[12110022] = {
+		name = "命主",
+		suit_name = "圣煌伐恶",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 12110021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1211002,
+		id = 12110022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[12110023] = {
+		name = "不朽",
+		suit_name = "圣煌伐恶",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 12110022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1211002,
+		id = 12110023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[12110031] = {
+		name = "苏生",
+		suit_name = "丰饶穰祝",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1211003,
+		id = 12110031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[12110032] = {
+		name = "照临",
+		suit_name = "丰饶穰祝",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 12110031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1211003,
+		id = 12110032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[12110033] = {
+		name = "繁世",
+		suit_name = "丰饶穰祝",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 12110032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1211003,
+		id = 12110033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
 	[12480011] = {
 		name = "友情",
 		suit_name = "爱与和平",
@@ -10109,6 +10253,21 @@
 			12480011,
 			12480012,
 			12480013
+		},
+		[1211003] = {
+			12110031,
+			12110032,
+			12110033
+		},
+		[1211002] = {
+			12110021,
+			12110022,
+			12110023
+		},
+		[1211001] = {
+			12110011,
+			12110012,
+			12110013
 		},
 		[1199003] = {
 			11990031,
@@ -11167,6 +11326,24 @@
 		},
 		[12480011] = {
 			12480012
+		},
+		[12110032] = {
+			12110033
+		},
+		[12110031] = {
+			12110032
+		},
+		[12110022] = {
+			12110023
+		},
+		[12110021] = {
+			12110022
+		},
+		[12110012] = {
+			12110013
+		},
+		[12110011] = {
+			12110012
 		},
 		[11990032] = {
 			11990033
@@ -12597,6 +12774,9 @@
 			11990011,
 			11990021,
 			11990031,
+			12110011,
+			12110021,
+			12110031,
 			12480011,
 			12480021,
 			12480031,
@@ -13218,6 +13398,15 @@
 		11990031,
 		11990032,
 		11990033,
+		12110011,
+		12110012,
+		12110013,
+		12110021,
+		12110022,
+		12110023,
+		12110031,
+		12110032,
+		12110033,
 		12480011,
 		12480012,
 		12480013,

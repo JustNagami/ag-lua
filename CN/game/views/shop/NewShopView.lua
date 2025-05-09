@@ -1170,17 +1170,18 @@ function var_0_0.GetSelectList(arg_74_0)
 		end
 	end
 
-	local var_74_3 = {
-		{}
-	}
+	local var_74_3 = {}
 	local var_74_4 = 1
 
 	for iter_74_4, iter_74_5 in ipairs(var_74_0) do
+		if var_74_3[var_74_4] == nil then
+			var_74_3[var_74_4] = {}
+		end
+
 		table.insert(var_74_3[var_74_4], iter_74_5)
 
 		if #var_74_3[var_74_4] >= 5 then
 			var_74_4 = var_74_4 + 1
-			var_74_3[var_74_4] = {}
 		end
 	end
 

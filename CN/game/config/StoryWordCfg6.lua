@@ -181,7 +181,7 @@
 	},
 	[320061118] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "管、管理员……那是什么……",
 		id = 320061118
 	},
@@ -205,7 +205,7 @@
 	},
 	[320061122] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "这样啊……也太像真正的眼睛了……",
 		id = 320061122
 	},
@@ -265,7 +265,7 @@
 	},
 	[320061132] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "好熟悉的感觉……",
 		id = 320061132
 	},
@@ -307,7 +307,7 @@
 	},
 	[320061139] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "嗯，和我的……好像……",
 		id = 320061139
 	},
@@ -2815,7 +2815,7 @@
 	},
 	[320101032] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "薇儿姐姐……",
 		id = 320101032
 	},
@@ -2827,7 +2827,7 @@
 	},
 	[320101034] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "谢谢。那个……薇儿姐姐，你嘴角的是苹果渣吗？",
 		id = 320101034
 	},
@@ -2845,13 +2845,13 @@
 	},
 	[320101037] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "管理员！我……我那时候……",
 		id = 320101037
 	},
 	[320101038] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "呜……你没事，太好了，你没事……",
 		id = 320101038
 	},
@@ -2863,7 +2863,7 @@
 	},
 	[320101040] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "嗯……",
 		id = 320101040
 	},
@@ -2875,7 +2875,7 @@
 	},
 	[320101042] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "好不容易有了出勤的机会，说服了休老师……结果，还是搞砸了……对不起……",
 		id = 320101042
 	},
@@ -2893,7 +2893,7 @@
 	},
 	[320101045] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "谢谢你……管理员……",
 		id = 320101045
 	},
@@ -2905,7 +2905,7 @@
 	},
 	[320101047] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "她、她说想自己来和你聊……",
 		id = 320101047
 	},
@@ -3037,13 +3037,13 @@
 	},
 	[320101069] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "……对不起啊，管理员，冥王又没礼貌了。",
 		id = 320101069
 	},
 	[320101070] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "她的意思是，她不知道那个「叛徒」是谁，只是忽然想起了这个名字。",
 		id = 320101070
 	},
@@ -3649,7 +3649,7 @@
 	},
 	[320121040] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "薇儿姐姐，管……顾问那边可能还要好久，我们玩会儿游戏吧？",
 		id = 320121040
 	},
@@ -3679,13 +3679,13 @@
 	},
 	[320121045] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "呼……好紧张，刚才差点说错。",
 		id = 320121045
 	},
 	[320121046] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "薇儿姐姐，那边的终端就可以骇入。我们开始吧。",
 		id = 320121046
 	},
@@ -3793,7 +3793,7 @@
 	},
 	[320131006] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "诶？原来是提前安排好的吗？",
 		id = 320131006
 	},
@@ -3805,7 +3805,7 @@
 	},
 	[320131008] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "管理员真坏啊，就光和薇儿姐姐通了气，是因为我的反应比较有说服力吗？",
 		id = 320131008
 	},
@@ -3847,13 +3847,13 @@
 	},
 	[320131015] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "意思就是，100层以上的地方，那部电梯上不去吗？",
 		id = 320131015
 	},
 	[320131016] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "但有没有可能有些楼层不止四米呢？设计的时候有人想造得高一些，也会有这种事吧？",
 		id = 320131016
 	},
@@ -4225,7 +4225,7 @@
 	},
 	[320131078] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "管理员？！",
 		id = 320131078
 	},
@@ -4249,7 +4249,7 @@
 	},
 	[320131082] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "又有好多视骸冒出来了。",
 		id = 320131082
 	},
@@ -4417,7 +4417,7 @@
 	},
 	[320142005] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "咳……",
 		id = 320142005
 	},
@@ -4429,7 +4429,7 @@
 	},
 	[320142007] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "（等一等！冥王，让我再试一试……）",
 		id = 320142007
 	},
@@ -4447,7 +4447,7 @@
 	},
 	[320142010] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "（分开……吗？做不到吧……）",
 		id = 320142010
 	},
@@ -4465,7 +4465,7 @@
 	},
 	[320142013] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "（好……）",
 		id = 320142013
 	},
@@ -4483,7 +4483,7 @@
 	},
 	[320142016] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "一点点痛，没事……管理员，我让冥王——",
 		id = 320142016
 	},
@@ -4681,7 +4681,7 @@
 	},
 	[320142049] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "管理员，你和薇儿姐姐之前面对的智骸，都是罗波那这样的敌人吗……好强……",
 		id = 320142049
 	},
@@ -4693,7 +4693,7 @@
 	},
 	[320142051] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "我没有……",
 		id = 320142051
 	},
@@ -4711,13 +4711,13 @@
 	},
 	[320142054] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "毕竟平时和薇儿姐姐一起训练过很多次了嘛。",
 		id = 320142054
 	},
 	[320142055] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "……管理员，薇儿姐姐，谢谢。",
 		id = 320142055
 	},
@@ -4729,7 +4729,7 @@
 	},
 	[320142057] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "嗯，只是些擦伤，已经没事了……",
 		id = 320142057
 	},
@@ -4747,7 +4747,7 @@
 	},
 	[320142060] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "薇儿姐姐居然——薇儿姐姐被视骸附身了吗？！",
 		id = 320142060
 	},
@@ -4759,7 +4759,7 @@
 	},
 	[320142062] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "太奇怪了……管理员，薇儿姐姐会说不吃晚饭了，很奇怪吧……",
 		id = 320142062
 	},
@@ -16237,7 +16237,7 @@
 	},
 	[320182083] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "洗脑控制什么的……管理员，难道内心其实很阴暗？",
 		id = 320182083
 	},
@@ -16249,7 +16249,7 @@
 	},
 	[320182085] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "唔呃……",
 		id = 320182085
 	},
@@ -16951,7 +16951,7 @@
 	},
 	[320201004] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "看起来没什么变化，算力异常也是。",
 		id = 320201004
 	},
@@ -17197,7 +17197,7 @@
 	},
 	[320201045] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "好像带着人去上次薇儿姐姐和我找到的那个试验场了。",
 		id = 320201045
 	},
@@ -17287,7 +17287,7 @@
 	},
 	[320202002] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "（冥王，这是在检查有没有使用违禁技术。）",
 		id = 320202002
 	},
@@ -17299,7 +17299,7 @@
 	},
 	[320202004] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "（罗波那在这里吗？）",
 		id = 320202004
 	},
@@ -17491,7 +17491,7 @@
 	},
 	[320202036] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "吉维卡女士真的很喜欢瑜伽呢。讲得出那么多道理，还专门盖了三层高的道馆。",
 		id = 320202036
 	},
@@ -17515,7 +17515,7 @@
 	},
 	[320202040] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "唔，好像是普通人理解不了的烦恼。",
 		id = 320202040
 	},
@@ -17647,7 +17647,7 @@
 	},
 	[320202062] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "算力分配？是指什么呢？",
 		id = 320202062
 	},
@@ -17671,7 +17671,7 @@
 	},
 	[320202066] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "意思就是给一个人用的东西被另一个人拿走了？盖亚还会犯这种错误吗？",
 		id = 320202066
 	},
@@ -18295,7 +18295,7 @@
 	},
 	[320221002] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "那时候的战斗……原来这么危险……",
 		id = 320221002
 	},
@@ -18307,13 +18307,13 @@
 	},
 	[320221004] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "薇儿姐姐好勇敢。如果是我的话……",
 		id = 320221004
 	},
 	[320221005] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "唔，是我的话也总要试一试。加油啊，奥西里斯！",
 		id = 320221005
 	},
@@ -18331,7 +18331,7 @@
 	},
 	[320221008] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "（你不要这么说。我也是作战科的队员，怎么可以想着逃避战斗呢？）",
 		id = 320221008
 	},
@@ -18349,7 +18349,7 @@
 	},
 	[320221011] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "（……但我不想再拖管理员的后腿了。）",
 		id = 320221011
 	},
@@ -18367,7 +18367,7 @@
 	},
 	[320221014] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "唔……管理员！",
 		id = 320221014
 	},
@@ -18379,7 +18379,7 @@
 	},
 	[320221016] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "是冥王……",
 		id = 320221016
 	},
@@ -18397,7 +18397,7 @@
 	},
 	[320221019] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "有的，我和薇儿姐姐都很早就睡了。",
 		id = 320221019
 	},
@@ -22843,7 +22843,7 @@
 	},
 	[320281007] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "唔，好多人死了……",
 		id = 320281007
 	},
@@ -23449,7 +23449,7 @@
 	},
 	[320281108] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "涅赫贝特主任，原来也这么厉害吗？",
 		id = 320281108
 	},
@@ -23593,7 +23593,7 @@
 	},
 	[320282011] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "诶？那你和薇儿姐姐呢？",
 		id = 320282011
 	},
@@ -23605,7 +23605,7 @@
 	},
 	[320282013] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "好吧……那你们小心。",
 		id = 320282013
 	},
@@ -23617,13 +23617,13 @@
 	},
 	[320282015] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "请大家跟我一起下楼吧！下面的怪物我们在上来的时候已经解决掉了，不会有危险。",
 		id = 320282015
 	},
 	[320282016] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "就算再遇到危险，我也会保护大家的，请相信我。",
 		id = 320282016
 	},
@@ -23647,7 +23647,7 @@
 	},
 	[320282020] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "哦……她说没问题。",
 		id = 320282020
 	},
@@ -23665,7 +23665,7 @@
 	},
 	[320282023] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "……他们就拜托给你们了。",
 		id = 320282023
 	},
@@ -23683,7 +23683,7 @@
 	},
 	[320282026] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "管理员，还没联系我呢……",
 		id = 320282026
 	},
@@ -23695,7 +23695,7 @@
 	},
 	[320282028] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "（不去帮忙真的好吗？）",
 		id = 320282028
 	},
@@ -23713,7 +23713,7 @@
 	},
 	[320282031] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "（好吧……）",
 		id = 320282031
 	},
@@ -23725,7 +23725,7 @@
 	},
 	[320282033] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "……冥王，刚才的声音，你听到了吗？",
 		id = 320282033
 	},
@@ -23737,13 +23737,13 @@
 	},
 	[320282035] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "没有，肯定没听错，好像是有人在求救？",
 		id = 320282035
 	},
 	[320282036] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "你看，终端上还有信号记录，是从地下传上来的！",
 		id = 320282036
 	},
@@ -23755,7 +23755,7 @@
 	},
 	[320282038] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "有人遇到危险了怎么可以不管？",
 		id = 320282038
 	},
@@ -24889,7 +24889,7 @@
 	},
 	[320311041] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "我们去下一层吧。没看到科尔盖的特工们，他们可能已经到最下面了。",
 		id = 320311041
 	},
@@ -24913,7 +24913,7 @@
 	},
 	[320311045] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "冥王……前面是不是有什么东西？",
 		id = 320311045
 	},
@@ -24925,7 +24925,7 @@
 	},
 	[320311047] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "诶？",
 		id = 320311047
 	},
@@ -24961,7 +24961,7 @@
 	},
 	[320311053] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "（冥王！）",
 		id = 320311053
 	},
@@ -24985,7 +24985,7 @@
 	},
 	[320311057] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "（不要紧吧，冥王？）",
 		id = 320311057
 	},
@@ -25117,7 +25117,7 @@
 	},
 	[320311079] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "（冥王，不用担心我的……）",
 		id = 320311079
 	},
@@ -25135,7 +25135,7 @@
 	},
 	[320311082] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "（送我出去……是什么意思？）",
 		id = 320311082
 	},
@@ -25165,7 +25165,7 @@
 	},
 	[320311087] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "（唔呃——）",
 		id = 320311087
 	},
@@ -25177,7 +25177,7 @@
 	},
 	[320311089] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "（冥王……你这是……）",
 		id = 320311089
 	},
@@ -25891,7 +25891,7 @@
 	},
 	[320321052] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "管、管理员……",
 		id = 320321052
 	},
@@ -25903,7 +25903,7 @@
 	},
 	[320321054] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "我们在地下遇到了情报里的智骸巴钦……冥王出来和他战斗……等我醒来的时候……",
 		id = 320321054
 	},
@@ -25915,13 +25915,13 @@
 	},
 	[320321056] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "冥王不见了！管理员，冥王不见了！",
 		id = 320321056
 	},
 	[320321057] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "我找不到她，心象房间里没有，生魂也召唤不出来……",
 		id = 320321057
 	},
@@ -25957,13 +25957,13 @@
 	},
 	[320321063] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "是、是啊，一定是这样的，管理员，一定是这样的！",
 		id = 320321063
 	},
 	[320321064] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "……我还能见到她吗？",
 		id = 320321064
 	},
@@ -44545,7 +44545,7 @@
 	},
 	[922031232] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "啊，管理员来了。",
 		id = 922031232
 	},
@@ -68857,7 +68857,7 @@
 	},
 	[1102201015] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "管理员你来了，一路上辛苦了。",
 		id = 1102201015
 	},
@@ -68869,7 +68869,7 @@
 	},
 	[1102201017] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "小心些，坐这边吧。\n喝杯热可可？",
 		id = 1102201017
 	},
@@ -68887,7 +68887,7 @@
 	},
 	[1102201020] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "和以往差不多，每天都有忙不完的事。这是明天新作月赏的活动时间表，你看一下有没有问题？",
 		id = 1102201020
 	},
@@ -68899,7 +68899,7 @@
 	},
 	[1102201022] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "那就好，多谢你特地来一趟。",
 		id = 1102201022
 	},
@@ -68911,13 +68911,13 @@
 	},
 	[1102201024] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "装修？\n哦，你说屋里。这些家具都是我的，确实有点乱了。",
 		id = 1102201024
 	},
 	[1102201025] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "我最近暂住在这里，习惯之后就忘记收拾，让你见笑了。",
 		id = 1102201025
 	},
@@ -68929,7 +68929,7 @@
 	},
 	[1102201027] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "对你我就直说了。除了担任嘉宾，我请你来主要是想让你帮另一个忙。",
 		id = 1102201027
 	},
@@ -68947,7 +68947,7 @@
 	},
 	[1102201030] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "你进来的时候，协会外仍然有很多人吧？",
 		id = 1102201030
 	},
@@ -68959,13 +68959,13 @@
 	},
 	[1102201032] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "虽然月赏确实会吸引游客，但外面的人多数不是因此而来的。",
 		id = 1102201032
 	},
 	[1102201033] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "这种程度的人群聚集现象，已经持续一个月了。",
 		id = 1102201033
 	},
@@ -68989,7 +68989,7 @@
 	},
 	[1102201037] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "……如果只是随时能取消的活动就好了，来。",
 		id = 1102201037
 	},
@@ -69013,7 +69013,7 @@
 	},
 	[1102201041] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "都是慕名来凑热闹的。",
 		id = 1102201041
 	},
@@ -69025,7 +69025,7 @@
 	},
 	[1102201043] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "当然会，过量的游客不仅挤占了业务办理的资源，也让接待的成员们疲于应对。",
 		id = 1102201043
 	},
@@ -69037,13 +69037,13 @@
 	},
 	[1102201045] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "想象下你的全部生活就是在白天接待各式各样的游客，晚上还要值班巡逻，避免有人非法闯入。",
 		id = 1102201045
 	},
 	[1102201046] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "或者你只要一露面，就会被闪光灯追着拍，每个小举动都会登上头条供人解读。",
 		id = 1102201046
 	},
@@ -69055,7 +69055,7 @@
 	},
 	[1102201048] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "被「堵」在了协会里。我请你过来，就是想知道你有没有更好的应对方法。",
 		id = 1102201048
 	},
@@ -69067,13 +69067,13 @@
 	},
 	[1102201050] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "和现在一样，闭门谢客。保持自己的生活，不对外界的提问作出任何回应。",
 		id = 1102201050
 	},
 	[1102201051] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "这次情况还更特殊些，所以我才难以继续原本的生活。",
 		id = 1102201051
 	},
@@ -69085,7 +69085,7 @@
 	},
 	[1102201053] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "修正者的身份。我上次登台已经是几十年前了，当时的录像还被翻出来刊登在了专栏上。",
 		id = 1102201053
 	},
@@ -69097,7 +69097,7 @@
 	},
 	[1102201055] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "是的，最近已经能看到一些对我年龄和身份的猜测了。虽然我以官方身份进行澄清，但效果甚微。",
 		id = 1102201055
 	},
@@ -69109,7 +69109,7 @@
 	},
 	[1102201057] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "声乐协会是公共机构，评议员也是公职，受民众的监督属于正常职责要求，不能动用权力。",
 		id = 1102201057
 	},
@@ -69121,7 +69121,7 @@
 	},
 	[1102201059] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "嗯。不过你也别有压力，如果你没有想法，维持现状也应当有效。",
 		id = 1102201059
 	},
@@ -69133,19 +69133,19 @@
 	},
 	[1102201061] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "谢谢，我就知道能依靠你。",
 		id = 1102201061
 	},
 	[1102201062] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "相较于几位老友，我觉得你应该对现在的生活更了解，也熟悉网络环境。",
 		id = 1102201062
 	},
 	[1102201063] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "因此我认为你或许能带来解决眼下问题的新想法，于是就找你求助一下。",
 		id = 1102201063
 	},
@@ -69163,7 +69163,7 @@
 	},
 	[1102201066] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "我给你看下专栏的后续报道，你就明白了。",
 		id = 1102201066
 	},
@@ -69181,7 +69181,7 @@
 	},
 	[1102201069] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "常规方式不行……意思是你有不常规的办法？",
 		id = 1102201069
 	},
@@ -69205,7 +69205,7 @@
 	},
 	[1102201073] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "能远程处理。不错的主意，但现在合适吗？",
 		id = 1102201073
 	},
@@ -69217,7 +69217,7 @@
 	},
 	[1102201075] = {
 		speaker = "塞勒涅",
-		prefab_name = "1022ui_story",
+		prefab_name = "10104ui_story",
 		content = "你误会了，我只是在关心计划的可行性。",
 		id = 1102201075
 	},
@@ -72386,7 +72386,7 @@
 	[1107505041] = {
 		speaker = "",
 		prefab_name = "",
-		content = "前一日终究被被陵光敷衍了过去，但我想了想还是觉得有些挂心。",
+		content = "前一日终究被陵光敷衍了过去，但我想了想还是觉得有些挂心。",
 		id = 1107505041
 	},
 	[1107505042] = {
@@ -76175,6 +76175,8742 @@
 		content = "我倒觉得无妨，阴差阳错也帮我们——尤其是你把前些日子的心情传达给她了不是吗？",
 		id = 710750320
 	},
+	[1104905001] = {
+		speaker = "",
+		prefab_name = "",
+		content = "双脚站在鸦家门口时，我还稍微有点恍惚。",
+		id = 1104905001
+	},
+	[1104905002] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "还真是说走就走。",
+		id = 1104905002
+	},
+	[1104905003] = {
+		speaker = "",
+		prefab_name = "",
+		content = "鸦家不似往日的安静，从门口也能看到有人来来往往，不知是发生了什么。",
+		id = 1104905003
+	},
+	[1104905004] = {
+		speaker = "信鸦",
+		prefab_name = "",
+		content = "呀，管理员阁下？",
+		id = 1104905004
+	},
+	[1104905005] = {
+		speaker = "",
+		prefab_name = "",
+		content = "曾见过的鸦家侍从好像正在等待着我一般，没等我随便选一个人开口，便忽然插到我面前。",
+		id = 1104905005
+	},
+	[1104905006] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "信鸦小姐？你知道……",
+		id = 1104905006
+	},
+	[1104905007] = {
+		speaker = "信鸦",
+		prefab_name = "",
+		content = "我知道我知道，就是小姐让我在这等您，您请进吧。",
+		id = 1104905007
+	},
+	[1104905008] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那，千羽现在哪儿？",
+		id = 1104905008
+	},
+	[1104905009] = {
+		speaker = "",
+		prefab_name = "",
+		content = "四个小时前，正无所事事地在办公室随意回顾任务资料的我，忽然收到了工作人员帮忙递进来的一封手写信。",
+		id = 1104905009
+	},
+	[1104905010] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "鸦家的信戳？",
+		id = 1104905010
+	},
+	[1104905011] = {
+		speaker = "",
+		prefab_name = "",
+		content = "信上只有简单的一行话，字迹我不认识，并不是千羽的。看清内容之后，我不由地皱起了眉头。",
+		id = 1104905011
+	},
+	[1104905012] = {
+		speaker = "",
+		prefab_name = "",
+		content = "「有要事相商，速来。」",
+		id = 1104905012
+	},
+	[1104905013] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "奇怪，为什么不用终端来商量？特地寄手写信过来的仪式感，到底是多重要的事……",
+		id = 1104905013
+	},
+	[1104905014] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "但是……",
+		id = 1104905014
+	},
+	[1104905015] = {
+		speaker = "",
+		prefab_name = "",
+		content = "脑海中浮现千羽的身影，我不自觉捏紧了手里厚实的信纸。",
+		id = 1104905015
+	},
+	[1104905016] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "大概，还是自己想来吧……想见她。",
+		id = 1104905016
+	},
+	[1104905017] = {
+		speaker = "",
+		prefab_name = "",
+		content = "耳边是来去匆匆的忙碌声和交谈声，不同的人影从眼底穿过。而我已经不愿多分神去判断思考鸦家到底在准备什么，只是顺着信鸦指的方向走去。",
+		id = 1104905017
+	},
+	[1104905018] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一旦在视野中勾勒起少女的身影，周围的其他一切便沦为模糊的背景。千羽本在跟身边的人商量事情，却忽然如感应到什么一般转头看向了我的方向。",
+		id = 1104905018
+	},
+	[1104905019] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "……问号！",
+		id = 1104905019
+	},
+	[1104905020] = {
+		speaker = "",
+		prefab_name = "",
+		content = "脚步加快，又渐渐放慢。少女停在我的面前，仰头仔仔细细地盯着我，片刻之后，露出浅浅的一笑。",
+		id = 1104905020
+	},
+	[1104905021] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "怎么现在就来了？",
+		id = 1104905021
+	},
+	[1104905022] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "有什么事要商量？",
+		id = 1104905022
+	},
+	[1104905023] = {
+		speaker = "千羽&我",
+		prefab_name = "",
+		content = "咦？",
+		id = 1104905023
+	},
+	[1104905024] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不是你让我「速来」吗？",
+		id = 1104905024
+	},
+	[1104905025] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我拿出那份携带在身上的信件。千羽只看了一眼，温柔的笑意便收敛为了看不出波澜的平淡，金瞳冷淡地轻瞥身侧。",
+		id = 1104905025
+	},
+	[1104905026] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "……信鸦。",
+		id = 1104905026
+	},
+	[1104905027] = {
+		speaker = "信鸦",
+		prefab_name = "",
+		content = "属下、咳，是属下在小姐手写的邀请函外面又覆了一层纸。",
+		id = 1104905027
+	},
+	[1104905028] = {
+		speaker = "信鸦",
+		prefab_name = "",
+		content = "小姐最近这些日子明明一直盼着这位阁下前来，属下觉得，能早些见到想念的人，小姐应该会开心……",
+		id = 1104905028
+	},
+	[1104905029] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "信鸦！",
+		id = 1104905029
+	},
+	[1104905030] = {
+		speaker = "信鸦",
+		prefab_name = "",
+		content = "……属下错了，属下愿意领罚。",
+		id = 1104905030
+	},
+	[1104905031] = {
+		speaker = "",
+		prefab_name = "",
+		content = "似乎是畏惧于小姐的威严，那位性格颇为活泼的侍从老老实实地低下了头。",
+		id = 1104905031
+	},
+	[1104905032] = {
+		speaker = "",
+		prefab_name = "",
+		content = "而千羽像是被道破了心事一般飞快地撇开视线，下一瞬又转回，双眸幽幽地盯着我。",
+		id = 1104905032
+	},
+	[1104905033] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号今天也变得不聪明了。",
+		id = 1104905033
+	},
+	[1104905034] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我倒觉得是个「聪明」的决定。\n偶尔不聪明一下也好。",
+		id = 1104905034
+	},
+	[1104905035] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "……问号自己有答案就好。",
+		id = 1104905035
+	},
+	[1104905036] = {
+		speaker = "",
+		prefab_name = "",
+		content = "话是这样说，千羽一副对我的回答很满意的样子，重新露出了微笑。她抽走我手中的信，撕开外面的伪装后又递回了我手里。",
+		id = 1104905036
+	},
+	[1104905037] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我看看，近日鸦家祭典……",
+		id = 1104905037
+	},
+	[1104905038] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "我来说吧，管理员。",
+		id = 1104905038
+	},
+	[1104905039] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "怎么突然……",
+		id = 1104905039
+	},
+	[1104905040] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "恶神盘踞笹波百年，阴影也笼罩了鸦家百年。好在如今，鸦家的夙愿已然终结。",
+		id = 1104905040
+	},
+	[1104905041] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "这次家族祭典，对鸦家来说是个重要的日子。管理员对鸦家……对我来说，也是非常重要的人。所以，我想邀请你来参加祭典。",
+		id = 1104905041
+	},
+	[1104905042] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "邀请函上的日期本来是祭典当日，没想到……给你添麻烦了。",
+		id = 1104905042
+	},
+	[1104905043] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "没关系，恰好我最近也没什么事。只是现在提前来了好几天，可以的话，让我在这里住下吧？",
+		id = 1104905043
+	},
+	[1104905044] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "原来你是这么打算的。",
+		id = 1104905044
+	},
+	[1104905045] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "咦？明明是我先被骗……",
+		id = 1104905045
+	},
+	[1104905046] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "反正问号的胆子一直很大，就把你安排到鸦家最阴森的房间。要走过很黑很黑的走廊，晚上还会听到外面滴水的声音。",
+		id = 1104905046
+	},
+	[1104905047] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "喂喂，对我也不用这么残酷吧。",
+		id = 1104905047
+	},
+	[1104905048] = {
+		speaker = "",
+		prefab_name = "",
+		content = "不知道我说的哪句话惹到了千羽，少女闷闷地抬眸瞪了我一眼。",
+		id = 1104905048
+	},
+	[1104905049] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我还有些摸不着头脑，一直在不远处等着她继续谈话的人终于忍不住走了上来，凑到她身边轻声说了些什么。",
+		id = 1104905049
+	},
+	[1104905050] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "抱歉，我还有些事情要立刻处理。让信鸦先带你去休息的地方吧。",
+		id = 1104905050
+	},
+	[1104905051] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那，待会儿见？",
+		id = 1104905051
+	},
+	[1104905052] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽抬手帮我理了理似乎也没歪的领口，有些不舍地后退了半步。",
+		id = 1104905052
+	},
+	[1104905053] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "嗯。还有……见到问号，我是很开心。",
+		id = 1104905053
+	},
+	[1104905054] = {
+		speaker = "",
+		prefab_name = "",
+		content = "在信鸦的带领下，我穿过庭院中长长的走廊，向休息的客房前进。",
+		id = 1104905054
+	},
+	[1104905055] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "周围每个房间都有人在进进出出，这是在干什么？",
+		id = 1104905055
+	},
+	[1104905056] = {
+		speaker = "信鸦",
+		prefab_name = "",
+		content = "按鸦家的风俗，在祭典开始前要清扫屋室，除旧迎新。这次祭典的意义特别重要，鸦家上下每个房间都要打扫干净才行。",
+		id = 1104905056
+	},
+	[1104905057] = {
+		speaker = "",
+		prefab_name = "",
+		content = "似乎是因为刚被千羽训过，年轻侍从显得老实了不少。我点点头，正想再问房间的情况，忽然看见她又扭过头，冲我挤了挤眼睛。",
+		id = 1104905057
+	},
+	[1104905058] = {
+		speaker = "信鸦",
+		prefab_name = "",
+		content = "不过有个房间例外，小姐特别叮嘱，不准别人随便进去。",
+		id = 1104905058
+	},
+	[1104905059] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "什么房间？",
+		id = 1104905059
+	},
+	[1104905060] = {
+		speaker = "",
+		prefab_name = "",
+		content = "意识到信鸦又在暗示某种和千羽有关的重要东西，我颇为好奇地追问。这次对方却没有露出什么嬉笑的表情。",
+		id = 1104905060
+	},
+	[1104905061] = {
+		speaker = "信鸦",
+		prefab_name = "",
+		content = "是小姐以前还被称为「妖女」的时候居住的房间。",
+		id = 1104905061
+	},
+	[1104905062] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那里？",
+		id = 1104905062
+	},
+	[1104905063] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "对了……是那间密室。我在常世里见过。",
+		id = 1104905063
+	},
+	[1104905064] = {
+		speaker = "",
+		prefab_name = "",
+		content = "询问过信鸦，得到「小姐说您可以在鸦家随意进出」的回答后，我请她带我找到了密室。",
+		id = 1104905064
+	},
+	[1104905065] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "「要走过很黑很黑的走廊，晚上还会听到外面滴水的声音。」",
+		id = 1104905065
+	},
+	[1104905066] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "千羽刚刚说的话难道是……",
+		id = 1104905066
+	},
+	[1104905067] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "果然是这里。",
+		id = 1104905067
+	},
+	[1104905068] = {
+		speaker = "",
+		prefab_name = "",
+		content = "密室其实打扫得很干净，但对这里的空荡阴沉并没有什么改善，空气中还弥漫着一股陈旧的木质味道。",
+		id = 1104905068
+	},
+	[1104905069] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我徘徊片刻，心中不由得因为这压抑的环境生出几分阴郁来。吐了口气，一回头忽然看到门旁的阴影里露出了少女的面庞。",
+		id = 1104905069
+	},
+	[1104905070] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "千羽……",
+		id = 1104905070
+	},
+	[1104905071] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她不知何时来到了这里，举步走近，静静凝视着我。",
+		id = 1104905071
+	},
+	[1104905072] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号对我的秘密很感兴趣？",
+		id = 1104905072
+	},
+	[1104905073] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "呃、信鸦跟我说可以进……",
+		id = 1104905073
+	},
+	[1104905074] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "那问号是不想知道，只是巧合进了密室？",
+		id = 1104905074
+	},
+	[1104905075] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "在鸦家，敢于窥探我的秘密的人，都已经没机会说话了。",
+		id = 1104905075
+	},
+	[1104905076] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "所以，是想知道，还是不想知道？",
+		id = 1104905076
+	},
+	[1104905077] = {
+		speaker = "",
+		prefab_name = "",
+		content = "女孩微微踮起脚尖，柔美的面庞靠近了我，平静的面容里读不出一丝多余的情绪波澜。",
+		id = 1104905077
+	},
+	[1104905078] = {
+		speaker = "",
+		prefab_name = "",
+		content = "……但离得这么近，又这么可爱，我实在是没忍住，抬手碰了碰她的脸颊。",
+		id = 1104905078
+	},
+	[1104905079] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号！",
+		id = 1104905079
+	},
+	[1104905080] = {
+		speaker = "",
+		prefab_name = "",
+		content = "像一只主动来撩拨又被吓到的猫一样，千羽飞快地后退了两步，带着几分生气和埋怨盯着我，好像要看我还能说出什么话来。",
+		id = 1104905080
+	},
+	[1104905081] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我的错，刚才我不该提什么别人。想进这个密室，是我自己的决定。",
+		id = 1104905081
+	},
+	[1104905082] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "是我想知道你的秘密——为什么不让别人进这里？",
+		id = 1104905082
+	},
+	[1104905083] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "你觉得呢？",
+		id = 1104905083
+	},
+	[1104905084] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我担心是你对这里还有阴影，毕竟……",
+		id = 1104905084
+	},
+	[1104905085] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "毕竟我曾顶着「妖女」的称呼，一个人在这里生活了许久。",
+		id = 1104905085
+	},
+	[1104905086] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "但当初问号为了消灭鸦神来到鸦家，不是已经在幻觉里看到了过去，也参与了后来的故事么？",
+		id = 1104905086
+	},
+	[1104905087] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽已经全然从门旁的黑暗走进入了灯光带来的昏黄之中。光亮映照下的面容如此从容，看不出一丝的阴影与悲伤。",
+		id = 1104905087
+	},
+	[1104905088] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我明白了——我应该早点想明白的。",
+		id = 1104905088
+	},
+	[1104905089] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "复仇已成，你不是那种会停留在阴影中的人，你早就不在意这些了。",
+		id = 1104905089
+	},
+	[1104905090] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号好像觉得自己很了解我。",
+		id = 1104905090
+	},
+	[1104905091] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "至少我一直在试图理解你。",
+		id = 1104905091
+	},
+	[1104905092] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "那你说，为什么我不让别人进来呢？",
+		id = 1104905092
+	},
+	[1104905093] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "呃，这个……",
+		id = 1104905093
+	},
+	[1104905094] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽再次步步逼近，而我只能想不出来地空挠头。直到我们的距离已经极近，千羽终于轻笑了一声。",
+		id = 1104905094
+	},
+	[1104905095] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号对玩笑的反应很可爱。",
+		id = 1104905095
+	},
+	[1104905096] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "其实，这么做一部分是因为你。",
+		id = 1104905096
+	},
+	[1104905097] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我？",
+		id = 1104905097
+	},
+	[1104905098] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "如果不是你，或许我孤独地一个人在密室里，或许我已经……",
+		id = 1104905098
+	},
+	[1104905099] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "如你所说，我已不再把它视为阴影。这次祭典除旧迎新，我也想给它做些装饰，然后，邀你一同见证。",
+		id = 1104905099
+	},
+	[1104905100] = {
+		speaker = "",
+		prefab_name = "",
+		content = "少女伸出一根手指轻点了点我身后，笑盈盈的目光带着期待看向我，没有半分转移。",
+		id = 1104905100
+	},
+	[1104905101] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "只是还没来得及布置，你就来了……所以，要和我一起吗？",
+		id = 1104905101
+	},
+	[1104905102] = {
+		speaker = "",
+		prefab_name = "",
+		content = "好啊。",
+		id = 1104905102
+	},
+	[1104905103] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "毕竟是我闯进去了，也应该参与一下。",
+		id = 1104905103
+	},
+	[1104905104] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "嗯，有你在的话，另一个目的也能达成了。",
+		id = 1104905104
+	},
+	[1104905105] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "啊，什么？",
+		id = 1104905105
+	},
+	[1104905106] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽好像没说过刚刚那句话，也没看到我的反应一样，带着笑姿态从容地转过身。",
+		id = 1104905106
+	},
+	[1104905107] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号，先跟我走吧。",
+		id = 1104905107
+	},
+	[1104905108] = {
+		speaker = "",
+		prefab_name = "",
+		content = "带着我离开密室，走出曲折的回廊，来到一处庭院。千羽抬手指向一处，我也顺着她的目光看去。",
+		id = 1104905108
+	},
+	[1104905109] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这个花藤是……？",
+		id = 1104905109
+	},
+	[1104905110] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "我布置房间的想法，一部分就来源于它。",
+		id = 1104905110
+	},
+	[1104905111] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "那些花藤，在我小的时候就这么茂盛了。这片空地在夏天总是很阴凉，我和妹妹会跑来这里玩耍。",
+		id = 1104905111
+	},
+	[1104905112] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "有次我被花藤绊倒了，狠狠摔了一跤，从此再也不敢来了。妈妈听说了，却特意带着我来这里。",
+		id = 1104905112
+	},
+	[1104905113] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "因为她说，「千羽的记忆里不该有阴影，让我们用美好的记忆来覆盖掉阴影吧」。",
+		id = 1104905113
+	},
+	[1104905114] = {
+		speaker = "",
+		prefab_name = "",
+		content = "模仿着母亲的语气，千羽的目光里流露出一丝伤感，但更多是温暖的柔情。",
+		id = 1104905114
+	},
+	[1104905115] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "所以，我想放一些和美好回忆有关的东西在密室里。",
+		id = 1104905115
+	},
+	[1104905116] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你的美好回忆？",
+		id = 1104905116
+	},
+	[1104905117] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "是啊……你是在这里长大的。说起来，我只知道你开始和鸦神对抗之后的事，之前的经历，我还一无所知。",
+		id = 1104905117
+	},
+	[1104905118] = {
+		speaker = "",
+		prefab_name = "",
+		content = "放眼宅院，一时我似乎能想象出不同年龄的千羽在四处玩耍、漫步、休息的样子，却又模糊不清。",
+		id = 1104905118
+	},
+	[1104905119] = {
+		speaker = "",
+		prefab_name = "",
+		content = "收回视线，我才发觉少女正目光灼灼地看着我，好像在热切地期待着什么。",
+		id = 1104905119
+	},
+	[1104905120] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……我明白了。",
+		id = 1104905120
+	},
+	[1104905121] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "能不能带我去看看和你回忆有关的地方？",
+		id = 1104905121
+	},
+	[1104905122] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽于是露出了满意的表情，以一种无可挑剔的礼仪矜持地迎上我伸出的手。",
+		id = 1104905122
+	},
+	[1104905123] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "既然是你的要求……那就走吧。",
+		id = 1104905123
+	},
+	[1104905124] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "怎么走回门口来了？",
+		id = 1104905124
+	},
+	[1104905125] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "当年，妈妈就是在这里捡到我的。",
+		id = 1104905125
+	},
+	[1104905126] = {
+		speaker = "",
+		prefab_name = "",
+		content = "没有放开牵着我的手，千羽停下脚步，为我指向前方。",
+		id = 1104905126
+	},
+	[1104905127] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "那时父亲病重，妈妈向神明祈祷父亲可以痊愈。第二天她看到我昏倒在这里，便收留了我。",
+		id = 1104905127
+	},
+	[1104905128] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "不久后父亲的病开始好转，妈妈认为这是神明显灵，就将我认为养女，取名「鸦越千羽」。",
+		id = 1104905128
+	},
+	[1104905129] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "原来你是这么来到鸦家的。",
+		id = 1104905129
+	},
+	[1104905130] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "虽然我是养女，但妈妈对我，和对哥哥妹妹从未有什么区别。",
+		id = 1104905130
+	},
+	[1104905131] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "我几乎不记得被收养之前的事情，只知道睁开眼睛见到妈妈的那一刻，我的人生从此就不同了。",
+		id = 1104905131
+	},
+	[1104905132] = {
+		speaker = "",
+		prefab_name = "",
+		content = "听着千羽的描述，我好像看到了一个幼小的女孩，蜷缩着睡在眼前高高低低的野花间，等待着未来母亲温暖的怀抱。",
+		id = 1104905132
+	},
+	[1104905133] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "门前有这么多野花，要不然我们移栽一株到花盆里，放进房间里？",
+		id = 1104905133
+	},
+	[1104905134] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "好，听你的。",
+		id = 1104905134
+	},
+	[1104905135] = {
+		speaker = "",
+		prefab_name = "",
+		content = "离开大门，千羽带着我七拐八绕来到了一个隐蔽的房间。房门推开，门上的风铃发出清脆的声响。",
+		id = 1104905135
+	},
+	[1104905136] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "嘘——",
+		id = 1104905136
+	},
+	[1104905137] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽忽然转过身，将手指轻轻抵在我的唇边。受她眼中的郑重影响，我也跟着屏住了呼吸。",
+		id = 1104905137
+	},
+	[1104905138] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "这是父亲以前的书房，长期被鸦家的掌管者封存，不许任何人进来。",
+		id = 1104905138
+	},
+	[1104905139] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "原来是……不对，千堂先生现在还在丽天市，掌管鸦家的不就是你么？",
+		id = 1104905139
+	},
+	[1104905140] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "呵呵，你很容易被骗。",
+		id = 1104905140
+	},
+	[1104905141] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽轻笑了一声，拉着身体还停留在谨慎状态的我往里走了两步，又小心地放缓脚步。",
+		id = 1104905141
+	},
+	[1104905142] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "但在从前，妈妈确实不许我们随便进这里。",
+		id = 1104905142
+	},
+	[1104905143] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "是怕损坏了什么机要文件吗？",
+		id = 1104905143
+	},
+	[1104905144] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "不，这个方面妈妈并不避着我们。她怕我们碰坏了的，是这里的摆设。",
+		id = 1104905144
+	},
+	[1104905145] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "摆设有什么特殊的？",
+		id = 1104905145
+	},
+	[1104905146] = {
+		speaker = "",
+		prefab_name = "",
+		content = "放眼看去，屋里的装饰用品、桌椅软垫，都是些常见的东西，有的甚至显得有些过于普通和陈旧了，不及其他房间里那么气派。",
+		id = 1104905146
+	},
+	[1104905147] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "因为，这些都是妈妈送给父亲的东西。",
+		id = 1104905147
+	},
+	[1104905148] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "妈妈平时对自己的儿女非常温柔，从不发火。唯独有次遥带着我溜进了这个房间，还碰倒了东西，妈妈有些生气地训斥了我们。",
+		id = 1104905148
+	},
+	[1104905149] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "这屋里的东西，都是只属于我父母的特殊的礼物，代表他们的相伴和爱，所以即使是孩子们也不能乱动。",
+		id = 1104905149
+	},
+	[1104905150] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号，你看门上的风铃。",
+		id = 1104905150
+	},
+	[1104905151] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "说起来，刚刚进门的时候我还奇怪，既然是封存的房间，为什么要挂风铃。",
+		id = 1104905151
+	},
+	[1104905152] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "这件风铃是妈妈还没来到鸦家时，送给父亲的……只能送给重要之人的东西。",
+		id = 1104905152
+	},
+	[1104905153] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "原来如此。但，为什么是风铃？",
+		id = 1104905153
+	},
+	[1104905154] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "我也这么问过妈妈。她说，这种风铃是挂在门前的。收下礼物的人只要挂上了它，每一次出行都会听到铃音。也就意味着未来要走的每一条路，都有彼此相伴。",
+		id = 1104905154
+	},
+	[1104905155] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "风铃上还有这样的愿望。",
+		id = 1104905155
+	},
+	[1104905156] = {
+		speaker = "",
+		prefab_name = "",
+		content = "凝视着风铃片刻，我忽有所感，侧目发现千羽的目光并未落在风铃上，而是落在我的脸上。",
+		id = 1104905156
+	},
+	[1104905157] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这个房间比起你的回忆更多是你父母的回忆吧，为什么要带我……",
+		id = 1104905157
+	},
+	[1104905158] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "不好在这里待太久，该走了。",
+		id = 1104905158
+	},
+	[1104905159] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "还没挑用来装饰的东西……千羽小姐，逃跑的速度也很快嘛。",
+		id = 1104905159
+	},
+	[1104905160] = {
+		speaker = "",
+		prefab_name = "",
+		content = "就这样走走停停，千羽带着我去了看了鸦家的很多地方。",
+		id = 1104905160
+	},
+	[1104905161] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她和妹妹做游戏的空地。鸦越遥年龄比她小许多，摔了跤还会哭，赖在姐姐怀里要姐姐安慰许久才能好。",
+		id = 1104905161
+	},
+	[1104905162] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我们也用羽子板打球吧？",
+		id = 1104905162
+	},
+	[1104905163] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号比我想象得还要幼稚。",
+		id = 1104905163
+	},
+	[1104905164] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "试一试嘛，我还只在影像里看到过。",
+		id = 1104905164
+	},
+	[1104905165] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "来，看球！",
+		id = 1104905165
+	},
+	[1104905166] = {
+		speaker = "",
+		prefab_name = "",
+		content = "后山的小潭。她说千堂还是个孩子时背不下去书就会跑来这里。她和妹妹跟在后面，故意制造奇怪的动静吓唬哥哥。",
+		id = 1104905166
+	},
+	[1104905167] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号、住手！",
+		id = 1104905167
+	},
+	[1104905168] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我出其不意地进攻，清凉的水花落在千羽的手臂上，她气鼓鼓地瞪了我一眼。",
+		id = 1104905168
+	},
+	[1104905169] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "这么喜欢玩水的话，说不定会被水鬼拖走。",
+		id = 1104905169
+	},
+	[1104905170] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我才不信……呃啊要滑倒……啊，谢谢。",
+		id = 1104905170
+	},
+	[1104905171] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号，我就说有水鬼哦。",
+		id = 1104905171
+	},
+	[1104905172] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她小时候和现在用的书房。外面摆满了各类文书和办公用品，柜子里却藏了些女孩子的小玩意。",
+		id = 1104905172
+	},
+	[1104905173] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "这个是我小时候的发饰，原来放在这里了么。",
+		id = 1104905173
+	},
+	[1104905174] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "要不要戴起来试试？",
+		id = 1104905174
+	},
+	[1104905175] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号还有这种兴趣？好呀，我来帮你。",
+		id = 1104905175
+	},
+	[1104905176] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "啊？不对吧……",
+		id = 1104905176
+	},
+	[1104905177] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一番打闹之后，千羽终于留下了令她满意的影像记录，在保证不外传后重新收起了她的发饰。",
+		id = 1104905177
+	},
+	[1104905178] = {
+		speaker = "",
+		prefab_name = "",
+		content = "日光渐斜，我也有些懒洋洋地坐下，千羽也同样坐在了桌边。",
+		id = 1104905178
+	},
+	[1104905179] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "今天一下子听了好多故事……",
+		id = 1104905179
+	},
+	[1104905180] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不过祭典还有很多事要忙吧？千羽陪了我一天，没关系吗？",
+		id = 1104905180
+	},
+	[1104905181] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号实在关心鸦家的事务，可以考虑加入鸦家。",
+		id = 1104905181
+	},
+	[1104905182] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我们一起坐在桌边，千羽矜持地挪了挪位置，却挪得离我更近了。我笑着把手支在桌上，越过投着事务公文的显示屏看向她。",
+		id = 1104905182
+	},
+	[1104905183] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "今天讲了这么多你的趣事，我确实有点向往了。",
+		id = 1104905183
+	},
+	[1104905184] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "以前大概知道，伯母还在的时候千羽应该过得很幸福。现在听了这些，才觉得我想象的幸福有了实感，你过去拥有的爱比别人一点都不少。",
+		id = 1104905184
+	},
+	[1104905185] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "那问号觉得，现在对我的了解足够多了吗？",
+		id = 1104905185
+	},
+	[1104905186] = {
+		speaker = "",
+		prefab_name = "",
+		content = "终端投影被无声熄灭，室内只剩下窗外洒入的落日余晖。千羽仍端端正正地坐着，垂落在身后的黑发安静得分毫不动，唯独一双眼睛仿佛要穿透什么般盯着我。",
+		id = 1104905186
+	},
+	[1104905187] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "这座宅院里，有我的很多回忆。有作为女儿的，也有作为妖女的，作为鸦家幕后家主的，作为修正者伊邪那美的。",
+		id = 1104905187
+	},
+	[1104905188] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "有些记忆让我快乐，有些记忆让我痛苦。那段悲伤的、仇恨的、咬牙坚持的时间，你已经见过了。",
+		id = 1104905188
+	},
+	[1104905189] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "而那些轻松的、天真的、快乐的时光，今天，我也想尽力讲给你听。",
+		id = 1104905189
+	},
+	[1104905190] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "千羽是不是早就这样想了？难道……这次让我来祭典，一开始就打算把这些讲给我听？",
+		id = 1104905190
+	},
+	[1104905191] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "你没猜错。",
+		id = 1104905191
+	},
+	[1104905192] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "因为……因为是问号。",
+		id = 1104905192
+	},
+	[1104905193] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽微微垂下眼睛，似乎习惯性地想要遮掩什么。随即再次抬头，认认真真地看向我。",
+		id = 1104905193
+	},
+	[1104905194] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "从前那段日子里，躲在密室里的不只是我本人，还有我的心。",
+		id = 1104905194
+	},
+	[1104905195] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "我强迫自己接手家族事务成为幕后家主，我为自己戴上重重的假面，我用冷漠的态度拒绝一切关心，哪怕对哥哥也不例外。",
+		id = 1104905195
+	},
+	[1104905196] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "但是，有一个人说，想要理解我。",
+		id = 1104905196
+	},
+	[1104905197] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "即使被我一次又一次拒绝，即使要承受很大的风险，那个人还是努力走到了我面前。",
+		id = 1104905197
+	},
+	[1104905198] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "管理员……问号……唯独对你，我希望你能看到全面的、真实的、彻彻底底的我。",
+		id = 1104905198
+	},
+	[1104905199] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "好的一面、坏的一面；快乐的一面、悲伤的一面、脆弱的一面……唯独是你，唯独想被你全部看到。",
+		id = 1104905199
+	},
+	[1104905200] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "……问号说了，要理解我的，对吧？",
+		id = 1104905200
+	},
+	[1104905201] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽看着我，微微睁大的眼睛里满是期待，又带着一丝似有若无的忐忑。",
+		id = 1104905201
+	},
+	[1104905202] = {
+		speaker = "",
+		prefab_name = "",
+		content = "上次她像这样对一个人坦诚自己的所有，是什么时候呢？",
+		id = 1104905202
+	},
+	[1104905203] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我忍不住伸出双手，握住她规规矩矩放在膝上的、似乎有些微凉的手。",
+		id = 1104905203
+	},
+	[1104905204] = {
+		speaker = "",
+		prefab_name = "",
+		content = "嗯，我看到了。/谢谢你愿意让我看见。",
+		id = 1104905204
+	},
+	[1104905205] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "千羽的过去和现在，我全都认认真真地看到了。",
+		id = 1104905205
+	},
+	[1104905206] = {
+		speaker = "",
+		prefab_name = "",
+		content = "掌心的触感柔软，千羽反握住了我的手，放松地轻笑了一声。",
+		id = 1104905206
+	},
+	[1104905207] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "也谢谢你，问号。",
+		id = 1104905207
+	},
+	[1104905208] = {
+		speaker = "",
+		prefab_name = "",
+		content = "日光昏暗得柔和，千羽的笑容也柔软得像是要我陷入其中。她将我的手握得越来越紧，最后笑叹般地自语了一句。",
+		id = 1104905208
+	},
+	[1104905209] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "要是能把你一直留在这里就好了……",
+		id = 1104905209
+	},
+	[1104905210] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "千羽？",
+		id = 1104905210
+	},
+	[1104905211] = {
+		speaker = "",
+		prefab_name = "",
+		content = "只是这一瞬的黯淡而已，千羽已经重新露出了笑容。",
+		id = 1104905211
+	},
+	[1104905212] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她摇摇头，若无其事地重新点亮了终端显示屏，上面的待处理事项仍然堆积着。",
+		id = 1104905212
+	},
+	[1104905213] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "说起来，今天只是挑了一些能摆进密室的东西。想让那里焕然一新，还是要想想怎么装修。",
+		id = 1104905213
+	},
+	[1104905214] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "你今天也陪我看过了，要一起想想吗？",
+		id = 1104905214
+	},
+	[1104905215] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "嗯，好。",
+		id = 1104905215
+	},
+	[1104905216] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽一边调出几张密室的照片和平面图，侧身靠在了我肩上。身体的温度隔着衣料相触，好像要让我只关注近在咫尺的她，忘记其他不愉快的一切。",
+		id = 1104905216
+	},
+	[1104905217] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "我只要问号现在陪着我……就好啦。",
+		id = 1104905217
+	},
+	[1104906001] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "好，最后的摆设方案确定了，密室那边的装修进度也很顺利。",
+		id = 1104906001
+	},
+	[1104906002] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我们的方案对密室的改动那么大，要不是鸦家的人力，根本不可能在这几天装……唔唔……",
+		id = 1104906002
+	},
+	[1104906003] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽把一颗小点心塞进我的嘴里，托起下巴，笑盈盈地看着我。",
+		id = 1104906003
+	},
+	[1104906004] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号对装修很上心。",
+		id = 1104906004
+	},
+	[1104906005] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "当然啦，说好了要一起好好准备的。",
+		id = 1104906005
+	},
+	[1104906006] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "对施工的人力也很满意。",
+		id = 1104906006
+	},
+	[1104906007] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "唔……你们的组织能力确实非常强。",
+		id = 1104906007
+	},
+	[1104906008] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "那对鸦家和我呢？",
+		id = 1104906008
+	},
+	[1104906009] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "（唔啊……）",
+		id = 1104906009
+	},
+	[1104906010] = {
+		speaker = "",
+		prefab_name = "",
+		content = "这样的问句在最近两天似乎出现过很多次了。是因为缺乏安全感？不，感觉更多是小小的捉弄。",
+		id = 1104906010
+	},
+	[1104906011] = {
+		speaker = "",
+		prefab_name = "",
+		content = "往常几次，千羽都会自顾自地紧接着转移话题。但此刻她的眼睛如此望着我，我觉得自己不该再回避。",
+		id = 1104906011
+	},
+	[1104906012] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我很喜欢鸦家，也……",
+		id = 1104906012
+	},
+	[1104906013] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "但等祭典结束，毕竟还是要回艾因索菲，还有很多事情要处理。",
+		id = 1104906013
+	},
+	[1104906014] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "明白了。等问号下次来做客，就把你安排到鸦家最阴森的房间。要走过很黑很黑的走廊……",
+		id = 1104906014
+	},
+	[1104906015] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……下次来可就不黑了！",
+		id = 1104906015
+	},
+	[1104906016] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "别忘了，咱们规划了要开一扇窗的。虽然把光引到密室有点困难，不过昨天施工队就把方案定下来了，今天就开始动工了。",
+		id = 1104906016
+	},
+	[1104906017] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "下次来真住进去也不是不行。还是觉得阴森的话，我们可以一起在里面玩点什么，打牌，或者……",
+		id = 1104906017
+	},
+	[1104906018] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "这个不要。",
+		id = 1104906018
+	},
+	[1104906019] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "难道……你不会玩？",
+		id = 1104906019
+	},
+	[1104906020] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "喝茶、吃茶点、看书，这些都可以。",
+		id = 1104906020
+	},
+	[1104906021] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "果然是不会么……又出现了，大家闺秀的神秘知识盲区……",
+		id = 1104906021
+	},
+	[1104906022] = {
+		speaker = "",
+		prefab_name = "",
+		content = "跪坐在地上的大腿好像被人捏了一下，而千羽还若无其事地笑着。",
+		id = 1104906022
+	},
+	[1104906023] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号这么喜欢猜的话，要不要我来出几道题？",
+		id = 1104906023
+	},
+	[1104906024] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……我错了。",
+		id = 1104906024
+	},
+	[1104906025] = {
+		speaker = "",
+		prefab_name = "",
+		content = "闲聊了片刻，午休小憩的时间便要结束了。我和千羽各自起身，她要去忙祭典的事，我则打算继续去密室现场监督装修的进度。",
+		id = 1104906025
+	},
+	[1104906026] = {
+		speaker = "",
+		prefab_name = "",
+		content = "刚刚准备出门，忽然一位侍从敲了敲门走进来。她看到我们两人都在，有些惊讶，最后还是附在千羽耳边说了句什么。",
+		id = 1104906026
+	},
+	[1104906027] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽面容上残余的笑意收敛，微微皱起了眉头。",
+		id = 1104906027
+	},
+	[1104906028] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "怎么？",
+		id = 1104906028
+	},
+	[1104906029] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号，那间密室……可能装不成了。",
+		id = 1104906029
+	},
+	[1104906030] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "怎么会突然……",
+		id = 1104906030
+	},
+	[1104906031] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一迈进密室，我疑惑的问句就堵在了喉咙里。",
+		id = 1104906031
+	},
+	[1104906032] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一股陈旧、潮湿的木质味道弥漫在房间里，上次来看时也闻到过，但远不如现在这么强烈。",
+		id = 1104906032
+	},
+	[1104906033] = {
+		speaker = "施工负责人",
+		prefab_name = "",
+		content = "这座楼是木质的老宅子，有上百岁了。整体结构仍然很结实，但部分区域还是需要经常维护。",
+		id = 1104906033
+	},
+	[1104906034] = {
+		speaker = "施工负责人",
+		prefab_name = "",
+		content = "可能是因为这个房间比较阴冷潮湿，我们按原计划拆开一部分墙壁修成窗户，没想到发现有条柱子裂了。",
+		id = 1104906034
+	},
+	[1104906035] = {
+		speaker = "施工负责人",
+		prefab_name = "",
+		content = "维修之后倒是不影响房屋的正常使用，但现在没办法继续装修……基本不可能按原计划在祭典前装好。",
+		id = 1104906035
+	},
+	[1104906036] = {
+		speaker = "",
+		prefab_name = "",
+		content = "负责人每说一句话，失望的尘灰便落在心上，重了一分。",
+		id = 1104906036
+	},
+	[1104906037] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "就没其他办法了吗？",
+		id = 1104906037
+	},
+	[1104906038] = {
+		speaker = "施工负责人",
+		prefab_name = "",
+		content = "这……",
+		id = 1104906038
+	},
+	[1104906039] = {
+		speaker = "",
+		prefab_name = "",
+		content = "负责人看头看了眼千羽和我的表情，有些尴尬地笑笑，局促地搓了搓手，还是什么话都没说出来。",
+		id = 1104906039
+	},
+	[1104906040] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽幽幽扫了一眼密室，对负责人挥了挥手，对方如蒙大赦般从房间里走了出去。",
+		id = 1104906040
+	},
+	[1104906041] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号在担心我吗，还是担心装修的情况？",
+		id = 1104906041
+	},
+	[1104906042] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "我以为，问号对这个问题应该是有答案的。",
+		id = 1104906042
+	},
+	[1104906043] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我知道你已经不在意了，也知道这次装修只是一个象征而已，不是真正的重点。想一起去看的东西，也已经看过了。",
+		id = 1104906043
+	},
+	[1104906044] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "但就算只是一个象征性的小仪式，当然还是希望能圆满……",
+		id = 1104906044
+	},
+	[1104906045] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号是希望仪式能圆满，还是希望我的期待能圆满？",
+		id = 1104906045
+	},
+	[1104906046] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "当然是你。",
+		id = 1104906046
+	},
+	[1104906047] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "「世间不如意十有八九，人生原本似水流」。父亲离世，妹妹远走，这个道理，我很小的时候就明白了。",
+		id = 1104906047
+	},
+	[1104906048] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "我不期盼圆满，需要的也不是圆满。我要的，只有……",
+		id = 1104906048
+	},
+	[1104906049] = {
+		speaker = "",
+		prefab_name = "",
+		content = "方才千羽随着坏消息冷下的表情犹在眼前。可眼前的她止住了话语，只是将切切的目光投向我。",
+		id = 1104906049
+	},
+	[1104906050] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我怎么会不明白她的心意，又怎么会忍心不满足。",
+		id = 1104906050
+	},
+	[1104906051] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我会陪你。/下次一起。",
+		id = 1104906051
+	},
+	[1104906052] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那剩下的这两天，继续一起多做些事情吧。你喜欢的东西，或者我喜欢的东西，都可以。",
+		id = 1104906052
+	},
+	[1104906053] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "又不是修不好了，只是需要时间。等下次我来鸦家，我们再一起去完成之前说好的事吧。",
+		id = 1104906053
+	},
+	[1104906054] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "这是承诺，违背的人……问号不会违背的，对吧？",
+		id = 1104906054
+	},
+	[1104906055] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽离开去忙祭典的事后，密室里只剩下我一个人。",
+		id = 1104906055
+	},
+	[1104906056] = {
+		speaker = "",
+		prefab_name = "",
+		content = "那股陈旧潮湿的味道仍然萦绕在周身，我出神地看着破了一块的墙壁，脑袋里闪过许多不同的回忆。",
+		id = 1104906056
+	},
+	[1104906057] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不期盼圆满，也不沉溺阴影；怀念过往，仍对现在感到满足……经历过那么多事情，还能这么想，应该说千羽已经做到最好了吗？",
+		id = 1104906057
+	},
+	[1104906058] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "但是……",
+		id = 1104906058
+	},
+	[1104906059] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我环顾四周。",
+		id = 1104906059
+	},
+	[1104906060] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "但是……",
+		id = 1104906060
+	},
+	[1104906061] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我攥紧了手。",
+		id = 1104906061
+	},
+	[1104906062] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "对了，之前我和千羽挑出来的那些东西，现在放哪儿了？",
+		id = 1104906062
+	},
+	[1104906063] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "在想什么？",
+		id = 1104906063
+	},
+	[1104906064] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "咦？我？我没有……",
+		id = 1104906064
+	},
+	[1104906065] = {
+		speaker = "",
+		prefab_name = "",
+		content = "庭院的月色之中，我和千羽坐在铺好的垫子上。此刻少女已经欺身向我，脸颊靠得极近，好像要看清我的每个微表情。",
+		id = 1104906065
+	},
+	[1104906066] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "你撒谎的样子，还不够熟练。",
+		id = 1104906066
+	},
+	[1104906067] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我只是在看月亮。/我只是在看你。",
+		id = 1104906067
+	},
+	[1104906068] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "说好了今晚是来观月嘛。没想到今晚的月亮恰巧这么圆，天气也很好。",
+		id = 1104906068
+	},
+	[1104906069] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "虽然说好了今天来观月，千羽会这么高兴，我是没想到的。",
+		id = 1104906069
+	},
+	[1104906070] = {
+		speaker = "",
+		prefab_name = "",
+		content = "大脑飞快转动，千羽凝视的目光里，我脸不红心不跳地挑了一个回答。",
+		id = 1104906070
+	},
+	[1104906071] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "……圆谎的水平也需要提升。",
+		id = 1104906071
+	},
+	[1104906072] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "不过，月亮和问号都很好。",
+		id = 1104906072
+	},
+	[1104906073] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽收回了动作，我以为她要乖乖坐好，却见她忽然倾身，自行枕在了我身上。黑发铺开，如缎般在月光下微微闪光，她的面容也笼上一层神秘的柔情。",
+		id = 1104906073
+	},
+	[1104906074] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "千羽？",
+		id = 1104906074
+	},
+	[1104906075] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "上次和家人一起观月，已是许久之前。",
+		id = 1104906075
+	},
+	[1104906076] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "父亲、母亲、哥哥、妹妹……我。",
+		id = 1104906076
+	},
+	[1104906077] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "会想他们吗？",
+		id = 1104906077
+	},
+	[1104906078] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "思念于我而言，是早就习惯的事情。不过……",
+		id = 1104906078
+	},
+	[1104906079] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽轻笑了一声，她抬手握住我垂落的手。月光连同我的倒影一起落在她的眼睛里。",
+		id = 1104906079
+	},
+	[1104906080] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "月亮虽然会在不觉之间由圆至缺，也会再度由缺至圆。",
+		id = 1104906080
+	},
+	[1104906081] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "你发现了么，这些天你陪我回忆的过往里，少了和一个人相关的。",
+		id = 1104906081
+	},
+	[1104906082] = {
+		speaker = "",
+		prefab_name = "",
+		content = "……是我？",
+		id = 1104906082
+	},
+	[1104906083] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "因为是我们都知道的事情，没必要再讲一遍。",
+		id = 1104906083
+	},
+	[1104906084] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "你还记得那些事情。",
+		id = 1104906084
+	},
+	[1104906085] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号，这座宅院里，有属于我们的记忆，也有属于我们的圆月了。",
+		id = 1104906085
+	},
+	[1104906086] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "同时属于我和你的……",
+		id = 1104906086
+	},
+	[1104906087] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "是啊，属于你和我的。",
+		id = 1104906087
+	},
+	[1104906088] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽歪过脑袋，倚我倚得更紧。像一只守在饲主身边的小猫一般，澄净的眼睛毫无杂念地看着我。",
+		id = 1104906088
+	},
+	[1104906089] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "当初和你相遇的时候，我也只是想帮助一个陌生的女孩，从未想过我们之间能有这样的联结。",
+		id = 1104906089
+	},
+	[1104906090] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我们了解彼此的过去，我们创造了美好的回忆，还有……",
+		id = 1104906090
+	},
+	[1104906091] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "虽然不能永远留在鸦家，但我们可以一起创造更多的回忆。",
+		id = 1104906091
+	},
+	[1104906092] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "创造更多——这是你想要的么。",
+		id = 1104906092
+	},
+	[1104906093] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽的声音压低了一瞬，似乎在想着什么。接着她忽然直起身，双目灼灼地看着我。",
+		id = 1104906093
+	},
+	[1104906094] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号，我明白了。",
+		id = 1104906094
+	},
+	[1104906095] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "我知道该在密室里装饰些什么了。",
+		id = 1104906095
+	},
+	[1104906096] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "咦？密室？",
+		id = 1104906096
+	},
+	[1104906097] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "一定要现在就去吗？都这么晚了，也该休息了吧。",
+		id = 1104906097
+	},
+	[1104906098] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "哦？问号明天有其他事情要忙吗？",
+		id = 1104906098
+	},
+	[1104906099] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "大概……也许……可能有……",
+		id = 1104906099
+	},
+	[1104906100] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "那是密室有什么不能看的东西吗？",
+		id = 1104906100
+	},
+	[1104906101] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "呃……",
+		id = 1104906101
+	},
+	[1104906102] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽轻笑一声，收回了审视的目光，站起身来，牵住了我的手。",
+		id = 1104906102
+	},
+	[1104906103] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "既然没什么问题，问号就陪我去吧。",
+		id = 1104906103
+	},
+	[1104906104] = {
+		speaker = "",
+		prefab_name = "",
+		content = "抢先我一步，千羽走进了密室。",
+		id = 1104906104
+	},
+	[1104906105] = {
+		speaker = "",
+		prefab_name = "",
+		content = "房间依旧是那个房间。装修暂停，有人清扫过，已经看不到施工的痕迹，那股潮湿的味道也淡了许多，只有那一小片被拆开的墙还光秃秃地留在原地。",
+		id = 1104906105
+	},
+	[1104906106] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽环视了一周，目光自然落在房间一角多出来的东西上——是那些我们挑选出来的装饰品，原定要在装修完成后再摆进来的。",
+		id = 1104906106
+	},
+	[1104906107] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "是你搬进来的吗？",
+		id = 1104906107
+	},
+	[1104906108] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "原来，你和我一样，还记挂着这里。",
+		id = 1104906108
+	},
+	[1104906109] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "嗯……在意不在意是一回事，该做什么是另一回事。说好了要一起见证这个房间除旧迎新的样子。",
+		id = 1104906109
+	},
+	[1104906110] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "就像你说的，这里有属于我们的记忆，我不想随随便便就放弃掉这件事。就算不能焕然一新，至少要有点变化。",
+		id = 1104906110
+	},
+	[1104906111] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "原本定下的摆设方案是装修后的，今天我只来得及搬进来，还想着明天慢慢琢磨怎么摆你会喜欢……",
+		id = 1104906111
+	},
+	[1104906112] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "你的心意，怎样我都会喜欢的。",
+		id = 1104906112
+	},
+	[1104906113] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她拿起一只羽子板，是我们一起从她幼时的玩具里挑选的。",
+		id = 1104906113
+	},
+	[1104906114] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "这个，摆在那边的桌子上怎么样？",
+		id = 1104906114
+	},
+	[1104906115] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "还有这盆花就放在门旁吧……问号？",
+		id = 1104906115
+	},
+	[1104906116] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我觉得放在那块被拆开的墙旁边比较好。能遮一遮痕迹，而且，白天的时候那里还能漏下来一点光呢。",
+		id = 1104906116
+	},
+	[1104906117] = {
+		speaker = "",
+		prefab_name = "",
+		content = "和千羽一起动手，我们一件一件地摆下不同的东西，把整个房间布置了起来。",
+		id = 1104906117
+	},
+	[1104906118] = {
+		speaker = "",
+		prefab_name = "",
+		content = "柔软的坐毯、小巧的镇纸、仿后山的盆景。",
+		id = 1104906118
+	},
+	[1104906119] = {
+		speaker = "",
+		prefab_name = "",
+		content = "相撞的手臂、愉快的讨论、小小的争吵，走来走去的身影……",
+		id = 1104906119
+	},
+	[1104906120] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "好像也没什么太大变化，不过……",
+		id = 1104906120
+	},
+	[1104906121] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "至少不一样了。",
+		id = 1104906121
+	},
+	[1104906122] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "就算不求圆满，至少，也是新的篇章。",
+		id = 1104906122
+	},
+	[1104906123] = {
+		speaker = "",
+		prefab_name = "",
+		content = "满意地看着眼前的一切，我甩了甩下午和晚上都在搬东西以至于有些酸胀的手臂。千羽见了，拉着我在桌边坐下。",
+		id = 1104906123
+	},
+	[1104906124] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她也懒散地伸展了下身体，侧倚在桌边，目光落在我身上。",
+		id = 1104906124
+	},
+	[1104906125] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号，你是不是忘了什么？",
+		id = 1104906125
+	},
+	[1104906126] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "应该没漏啊，所有的东西都在这……",
+		id = 1104906126
+	},
+	[1104906127] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "啊，对了，一开始明明是你说想到了装饰什么才回密室来的。",
+		id = 1104906127
+	},
+	[1104906128] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不过，这里好像也没什么别的东西了。你说的装饰是……",
+		id = 1104906128
+	},
+	[1104906129] = {
+		speaker = "",
+		prefab_name = "",
+		content = "见我有些疑惑地环顾四周，千羽轻笑了一声，露出有些怀念的神色。",
+		id = 1104906129
+	},
+	[1104906130] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "你还记得，我说过关于妈妈和花藤的事吗？",
+		id = 1104906130
+	},
+	[1104906131] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "是伯母告诉你要用美好的回忆覆盖阴影，所以，你才带我去看那些美好的回忆。",
+		id = 1104906131
+	},
+	[1104906132] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "这几日我们看了许多，也做了许多。和问号在一起，我很快乐。",
+		id = 1104906132
+	},
+	[1104906133] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "但，妈妈的话是我理解错了。",
+		id = 1104906133
+	},
+	[1104906134] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不对吗？",
+		id = 1104906134
+	},
+	[1104906135] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "是你提醒了我……我们还能创造更多回忆。",
+		id = 1104906135
+	},
+	[1104906136] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "现在回想起来，在我摔倒之后，妈妈从未说过要动那株花藤。她只是陪着我，一次又一次在那里玩耍。",
+		id = 1104906136
+	},
+	[1104906137] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "重要的不是装饰。重要的是妈妈……是你。",
+		id = 1104906137
+	},
+	[1104906138] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "是家人陪伴了我，是你带我走出去。是你们给了我面对的力量，给了我创造新的回忆的力量。",
+		id = 1104906138
+	},
+	[1104906139] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我明白了……拂去过去的尘埃，最重要的事，是要有新的「过去」，也就是「现在和未来」。",
+		id = 1104906139
+	},
+	[1104906140] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "最好的装饰，就是共同创造的现在和未来。",
+		id = 1104906140
+	},
+	[1104906141] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "而我的现在和未来……都与你有关。",
+		id = 1104906141
+	},
+	[1104906142] = {
+		speaker = "",
+		prefab_name = "",
+		content = "夜深人静，外界仅余的风声也传不到这里，只有彼此的呼吸在我们之间起伏。",
+		id = 1104906142
+	},
+	[1104906143] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽轻轻笑着，抬手捧起了我的脸。",
+		id = 1104906143
+	},
+	[1104906144] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "现在的情景，有点像过去我在常世空间见到你的时候……但是，不一样了。",
+		id = 1104906144
+	},
+	[1104906145] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "早就不一样了。",
+		id = 1104906145
+	},
+	[1104906146] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她稍稍用力，将我揽得更近。落在肌肤上的指尖几乎在发烫，像要把什么东西永远烙在我的身上。",
+		id = 1104906146
+	},
+	[1104906147] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号……要不要，现在就一起留下一些新的回忆？",
+		id = 1104906147
+	},
+	[1104906148] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "只属于你和我的……",
+		id = 1104906148
+	},
+	[1104906149] = {
+		speaker = "",
+		prefab_name = "",
+		content = "灯光昏黄，拉长的人影拖在地上，渐渐交错。",
+		id = 1104906149
+	},
+	[1104906150] = {
+		speaker = "",
+		prefab_name = "",
+		content = "祭典在三日后正式举行。",
+		id = 1104906150
+	},
+	[1104906151] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千羽和从丽天市赶回来的鸦越千堂一起主持了整场活动，我也作为嘉宾参与。祭典从清晨持续到下午，终于结束时不由地松了一口气。",
+		id = 1104906151
+	},
+	[1104906152] = {
+		speaker = "",
+		prefab_name = "",
+		content = "人流来来往往，我一时找不到千羽。正打算先走回去，忽然觉得有人拉住了我的手，回头一看，正是熟悉的面容。",
+		id = 1104906152
+	},
+	[1104906153] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "这么脚步匆匆，是要去哪里？",
+		id = 1104906153
+	},
+	[1104906154] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "当然是找你。",
+		id = 1104906154
+	},
+	[1104906155] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "正好，我也在找你。",
+		id = 1104906155
+	},
+	[1104906156] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "祭典正式的部分结束了，但还有一件事，我希望你也来参加。",
+		id = 1104906156
+	},
+	[1104906157] = {
+		speaker = "",
+		prefab_name = "",
+		content = "由千羽领路，我们绕过鸦家的主宅，走过弯弯曲曲的小路，走到了后山的墓地。",
+		id = 1104906157
+	},
+	[1104906158] = {
+		speaker = "",
+		prefab_name = "",
+		content = "和宅院中的热闹不同，这里静悄悄的，只有簌簌的林声，也只站了一个人。",
+		id = 1104906158
+	},
+	[1104906159] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "哥哥，我带管理员来了。",
+		id = 1104906159
+	},
+	[1104906160] = {
+		speaker = "",
+		prefab_name = "",
+		content = "鸦越千堂站在其中一座墓前。他好像早知道千羽会带着我来到这里，只是平静地向我们点了点头，便继续看着眼前的墓碑，似乎在低声说着什么。",
+		id = 1104906160
+	},
+	[1104906161] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "那座，是父亲的墓碑。这里，是妈妈和妹妹的。",
+		id = 1104906161
+	},
+	[1104906162] = {
+		speaker = "",
+		prefab_name = "",
+		content = "面容上没有太多悲伤，千羽大大方方地挽起了我的手，站在了墓碑之前。",
+		id = 1104906162
+	},
+	[1104906163] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "妈妈，遥……算是见过了吗？总之，这次正式向你们介绍一下。",
+		id = 1104906163
+	},
+	[1104906164] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "这是#{nickname}#，是我的重要之人。现在是，未来也是。",
+		id = 1104906164
+	},
+	[1104906165] = {
+		speaker = "",
+		prefab_name = "",
+		content = "从后山离开，已经差不多到了要分别的时候。",
+		id = 1104906165
+	},
+	[1104906166] = {
+		speaker = "",
+		prefab_name = "",
+		content = "光轨发车的时间已经将近，我和千羽站在门前，谁都没有先挪动脚步。",
+		id = 1104906166
+	},
+	[1104906167] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "下次来的时候，密室应该按原计划装修好了吧。",
+		id = 1104906167
+	},
+	[1104906168] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "下次是什么时候？",
+		id = 1104906168
+	},
+	[1104906169] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这个，得看之后的时间安排……",
+		id = 1104906169
+	},
+	[1104906170] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "哦？我想见问号，还需要等安排？",
+		id = 1104906170
+	},
+	[1104906171] = {
+		speaker = "",
+		prefab_name = "",
+		content = "三言两句便让我哑口无言，千羽似乎对我接不上话的样子颇为满意，从身后拿出了一样东西。",
+		id = 1104906171
+	},
+	[1104906172] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "给我的礼物？",
+		id = 1104906172
+	},
+	[1104906173] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "你收下，就是礼物。",
+		id = 1104906173
+	},
+	[1104906174] = {
+		speaker = "",
+		prefab_name = "",
+		content = "在千羽鼓励的目光里，我打开了外面的包装，看到了一只风铃。",
+		id = 1104906174
+	},
+	[1104906175] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "风铃……风铃？",
+		id = 1104906175
+	},
+	[1104906176] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "这件风铃是妈妈还没来到鸦家时，送给父亲的……只能送给重要之人的东西。",
+		id = 1104906176
+	},
+	[1104906177] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "她说，这种风铃是挂在门前的。收下礼物的人只要挂上了它，每一次出行都会听到铃音。也就意味着未来要走的每一条路，都有彼此相伴。",
+		id = 1104906177
+	},
+	[1104906178] = {
+		speaker = "",
+		prefab_name = "",
+		content = "回忆起千羽说过的话，我将目光从礼物上收回。少女正期待地看着我，好像畅想着什么。",
+		id = 1104906178
+	},
+	[1104906179] = {
+		speaker = "千羽",
+		prefab_name = "1049ui_story",
+		content = "问号，未来的每一条路，我们都要彼此相伴。",
+		id = 1104906179
+	},
+	[1102001001] = {
+		speaker = "伽梨",
+		prefab_name = "1056ui_story",
+		content = "来来，尝尝这盘咖喱，我最近新研究出来的口味。还有这杯，你之前最喜欢的奶茶，我记着呢。",
+		id = 1102001001
+	},
+	[1102001002] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "谢谢谢谢，够了，够了！",
+		id = 1102001002
+	},
+	[1102001003] = {
+		speaker = "",
+		prefab_name = "",
+		content = "原本只是趁着到夏什瓦特公干，想顺路来弥楼衍坐坐，没想到硬是被喂了个大饱。",
+		id = 1102001003
+	},
+	[1102001004] = {
+		speaker = "",
+		prefab_name = "",
+		content = "伽梨一如既往热情大方，帕尔瓦蒂一如既往没骨头般窝在沙发里，俱毗罗一如既往不着家地在外面谈生意。至于还有一个人……",
+		id = 1102001004
+	},
+	[1102001005] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "对了，那个，那位在还是不在？",
+		id = 1102001005
+	},
+	[1102001006] = {
+		speaker = "伽梨",
+		prefab_name = "1056ui_story",
+		content = "是说梵天老大？她一天都没出房间，我也等着呢。",
+		id = 1102001006
+	},
+	[1102001007] = {
+		speaker = "帕尔瓦蒂",
+		prefab_name = "1089ui_story",
+		content = "也是……客人说，要不要喊她？",
+		id = 1102001007
+	},
+	[1102001008] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这问题直接拿来问客人合适吗？",
+		id = 1102001008
+	},
+	[1102001009] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "咳，按理说是该见见，不过……",
+		id = 1102001009
+	},
+	[1102001010] = {
+		speaker = "",
+		prefab_name = "",
+		content = "想来我下意识皱起眉头的表情有点好笑，至少帕尔瓦蒂没有忍住嘴角的笑意。",
+		id = 1102001010
+	},
+	[1102001011] = {
+		speaker = "帕尔瓦蒂",
+		prefab_name = "1089ui_story",
+		content = "哈……我们老大的威力真是……",
+		id = 1102001011
+	},
+	[1102001012] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "别笑啦……太久不见了，我是有点怕她又黏身上不下来，你们懂的吧。",
+		id = 1102001012
+	},
+	[1102001013] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我有些夸张地叹息，这次一旁的伽梨都忍俊不禁，帕尔瓦蒂也无奈地晃晃脑袋。",
+		id = 1102001013
+	},
+	[1102001014] = {
+		speaker = "帕尔瓦蒂",
+		prefab_name = "1089ui_story",
+		content = "老大这个人，不靠谱的地方是真不靠谱。不过……",
+		id = 1102001014
+	},
+	[1102001015] = {
+		speaker = "？？？",
+		prefab_name = "",
+		content = "阿管！",
+		id = 1102001015
+	},
+	[1102001016] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一声活泼的呼唤打断了帕尔瓦蒂的话，同时到来的是直扑向我的身影。小小的身体竟能迸发出如此惊人的力量，瞬间就将我锁在原地动弹不得。",
+		id = 1102001016
+	},
+	[1102001017] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "好久不见了~脸蛋的手感还是没变嘛。哦……腰上也没长肉，你该多吃点了。",
+		id = 1102001017
+	},
+	[1102001018] = {
+		speaker = "",
+		prefab_name = "",
+		content = "唔唔……；唔唔唔……",
+		id = 1102001018
+	},
+	[1102001019] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "见到我你也很高兴嘛！这么热情，让我跟你好好亲热亲热~",
+		id = 1102001019
+	},
+	[1102001020] = {
+		speaker = "",
+		prefab_name = "",
+		content = "娇小的身体毫不客气地跨越了人与人之间该保持的距离，那只可怕的手也戳在我的腰间，对我可怜的肉肆意蹂躏。",
+		id = 1102001020
+	},
+	[1102001021] = {
+		speaker = "",
+		prefab_name = "",
+		content = "唔唔唔！",
+		id = 1102001021
+	},
+	[1102001022] = {
+		speaker = "",
+		prefab_name = "",
+		content = "唯一还能活动的左手在身侧拼命挥动了几下，我用余光绝望地看到帕尔瓦蒂毫无义气地躲开了视线，倒是伽梨不忍心地清了清嗓子。",
+		id = 1102001022
+	},
+	[1102001023] = {
+		speaker = "伽梨",
+		prefab_name = "1056ui_story",
+		content = "咳，那个，老大你先停一下啦，我有点事要问你。",
+		id = 1102001023
+	},
+	[1102001024] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "欸……什么事？",
+		id = 1102001024
+	},
+	[1102001025] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天的热情瞬间低了八度，好歹松开了手，顺势在我身边一坐，指尖无聊地敲打着沙发的布料。",
+		id = 1102001025
+	},
+	[1102001026] = {
+		speaker = "伽梨",
+		prefab_name = "1056ui_story",
+		content = "上次你说捞东西进加尔的时候顺便弄一批海上的货，这事俱毗罗那边办好了，但最后没成。",
+		id = 1102001026
+	},
+	[1102001027] = {
+		speaker = "伽梨",
+		prefab_name = "1056ui_story",
+		content = "东西运回来中途，撞上「赤羽帮」和「沙帮」又闹起来了。",
+		id = 1102001027
+	},
+	[1102001028] = {
+		speaker = "伽梨",
+		prefab_name = "1056ui_story",
+		content = "这两家结仇十几年了，双方都早杀红了眼，就算有咱们压着，这种事还是时不时发生……",
+		id = 1102001028
+	},
+	[1102001029] = {
+		speaker = "",
+		prefab_name = "",
+		content = "说起正事，伽梨神色严肃起来，眉宇间也带上了些微忧虑。帕瓦没说话，坐在我旁边的梵天换了一侧拖着脑袋，忽然轻拍了拍我的腿。",
+		id = 1102001029
+	},
+	[1102001030] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "阿管出个主意？",
+		id = 1102001030
+	},
+	[1102001031] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我？呃……伽梨，你觉得，这两个帮派之间存在的最大问题是什么？",
+		id = 1102001031
+	},
+	[1102001032] = {
+		speaker = "伽梨",
+		prefab_name = "1056ui_story",
+		content = "是他们的世仇？",
+		id = 1102001032
+	},
+	[1102001033] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那怎么才能解决这个问题？",
+		id = 1102001033
+	},
+	[1102001034] = {
+		speaker = "伽梨",
+		prefab_name = "1056ui_story",
+		content = "我是在想办法化解他们的仇恨，但这也太难了。就算理性上认同继续争斗只能相互消耗，感情上根本停不下来。唔……",
+		id = 1102001034
+	},
+	[1102001035] = {
+		speaker = "",
+		prefab_name = "",
+		content = "大概是看到我的微笑，伽梨有些不自信地停下了分析。似乎是见伽梨有些不开窍，脆生生的声音介入了我们的对话。",
+		id = 1102001035
+	},
+	[1102001036] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "小伽梨呀，其实你在意的东西根本不重要。",
+		id = 1102001036
+	},
+	[1102001037] = {
+		speaker = "伽梨",
+		prefab_name = "1056ui_story",
+		content = "重要的不是世仇，那是什么？",
+		id = 1102001037
+	},
+	[1102001038] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "无论是世仇，还是别的什么，应该说——过去的一切都不重要。",
+		id = 1102001038
+	},
+	[1102001039] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "他们被过去蒙蔽了眼睛，看不到未来。那就给出让他们舍不得移开眼睛的东西。",
+		id = 1102001039
+	},
+	[1102001040] = {
+		speaker = "伽梨",
+		prefab_name = "1056ui_story",
+		content = "对……是我陷进去了。",
+		id = 1102001040
+	},
+	[1102001041] = {
+		speaker = "伽梨",
+		prefab_name = "1056ui_story",
+		content = "未来的利益才是加尔最重要的东西。只要有一笔利益足够大的生意，找个中间人，让双方的温和派先合作……回头得让俱毗罗看看……",
+		id = 1102001041
+	},
+	[1102001042] = {
+		speaker = "伽梨",
+		prefab_name = "1056ui_story",
+		content = "不过，未来的事归未来，老大你要的货呢？",
+		id = 1102001042
+	},
+	[1102001043] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "没了就算啦，也不是很重要的东西，让它过去吧。",
+		id = 1102001043
+	},
+	[1102001044] = {
+		speaker = "",
+		prefab_name = "",
+		content = "看梵天无所谓地挥挥手，忽然有一股不祥的预感钻上我的脑袋。我不动声色地准备挪动脚步。但已经晚了。",
+		id = 1102001044
+	},
+	[1102001045] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "转移话题的部分结束了。阿管，刚刚我可还没来得及跟你好好叙旧呢。嘿嘿~跑不掉的呦~",
+		id = 1102001045
+	},
+	[1102001046] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……那也先跑再说！",
+		id = 1102001046
+	},
+	[1102001047] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我身形一动，干脆直接从沙发椅背上翻过去，可梵天的动作根本不比我慢半分。",
+		id = 1102001047
+	},
+	[1102001048] = {
+		speaker = "",
+		prefab_name = "",
+		content = "少女的身形娇小，却好像一张天罗地网。我慌不择路地后退几步，忽然觉得后背碰到了什么，继而听到一声物品坠落声。",
+		id = 1102001048
+	},
+	[1102001049] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "……",
+		id = 1102001049
+	},
+	[1102001050] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天带着笑的面容似乎静下来一瞬，但也只有一瞬。我停下动作，回身看到一只目镜模样的东西躺在地上，已经明显有了裂痕。",
+		id = 1102001050
+	},
+	[1102001051] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "抱歉……",
+		id = 1102001051
+	},
+	[1102001052] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "道什么歉，这又不是你的责任。",
+		id = 1102001052
+	},
+	[1102001053] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "本来也是个半成品，不然我做出来的东西，哪会这么容易摔坏。",
+		id = 1102001053
+	},
+	[1102001054] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你做的？",
+		id = 1102001054
+	},
+	[1102001055] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我俯身捡起来那只目镜，看起来似乎是种战术装备。还是个空壳，外表做得十分精细，蓝色的镜框设计得还算好看，只是如今已经被裂痕分为了两半。",
+		id = 1102001055
+	},
+	[1102001056] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不管过程怎么说，至少从结果看是我把它碰坏了。我会想办法修好的。",
+		id = 1102001056
+	},
+	[1102001057] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "哎呀，怎么突然木头脑袋起来了，我的东西，还需要你修？",
+		id = 1102001057
+	},
+	[1102001058] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "我说没关系，当然是因为它不重要。",
+		id = 1102001058
+	},
+	[1102001059] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不重要吗？可刚刚你的表情……",
+		id = 1102001059
+	},
+	[1102001060] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "那是吓唬你的~",
+		id = 1102001060
+	},
+	[1102001061] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天凑近了些许，青绿的眼睛在我的视线里放大，眼底透彻得捉不出一丝阴霾，眼角弯弯，笑意看起来没有半分作假。",
+		id = 1102001061
+	},
+	[1102001062] = {
+		speaker = "",
+		prefab_name = "",
+		content = "纤细的指尖抬起我的下颌，调皮地点了点我的嘴唇。我只觉得喉间一滞，顿时说不出话来。",
+		id = 1102001062
+	},
+	[1102001063] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "再这么说下去，看起来就不聪明了哦。",
+		id = 1102001063
+	},
+	[1102001064] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "你今天是客人，没有主人为难客人的道理，也没有客人纠缠主人的道理~",
+		id = 1102001064
+	},
+	[1102001065] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "这样吧，阿管来了我高兴，这东西送给你了。既然是你的东西，也就不用赔偿啦。",
+		id = 1102001065
+	},
+	[1102001066] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天拍了拍我的手心，漫不经心般按着我的手指让我攥住了手心里的东西。自己退了半步，已经飞快地溜回了桌椅边。",
+		id = 1102001066
+	},
+	[1102001067] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "小伽梨的新口味咖喱！前天我说要吃都没给我做。",
+		id = 1102001067
+	},
+	[1102001068] = {
+		speaker = "伽梨",
+		prefab_name = "1056ui_story",
+		content = "前天太忙了嘛……今天有准备老大你的份。",
+		id = 1102001068
+	},
+	[1102001069] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "看来心里还是有我的~阿管，快过来，趁热。",
+		id = 1102001069
+	},
+	[1102001070] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "诶……好。",
+		id = 1102001070
+	},
+	[1102001071] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这东西到底是干什么的？",
+		id = 1102001071
+	},
+	[1102001072] = {
+		speaker = "",
+		prefab_name = "",
+		content = "结束夏什瓦特的公务后我自然回到了艾因索菲，那只被我带回来的战术目镜就摆在我的办公桌上。",
+		id = 1102001072
+	},
+	[1102001073] = {
+		speaker = "",
+		prefab_name = "",
+		content = "这几天，工作的间隙抬头看到它，好奇心总会促使着我反复生出疑惑。",
+		id = 1102001073
+	},
+	[1102001074] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "在弥楼衍的时候没注意，内侧其实有科尔盖的徽章。昨天去资料库里搜了一下，科尔盖确实有这款目镜，现在还在投入使用。",
+		id = 1102001074
+	},
+	[1102001075] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "但弥楼衍和科尔盖的关系不算好，没必要留科尔盖的装备；再说了，这也不是科尔盖的东西，是梵天自己做出来的。",
+		id = 1102001075
+	},
+	[1102001076] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "为什么要制作这么个东西出来；既然是自己做的东西，又为什么要说不重要……梵天……",
+		id = 1102001076
+	},
+	[1102001077] = {
+		speaker = "",
+		prefab_name = "",
+		content = "喃喃着梵天的名字，思路便在这里断开了。虽然相识有一段时间，我却不敢说对梵天的了解有她本人的十分之一。",
+		id = 1102001077
+	},
+	[1102001078] = {
+		speaker = "",
+		prefab_name = "",
+		content = "摇摇头准备继续工作时，办公间的门被人推开了。蓝银色头发的女性从容地走了进来，坐在了办公桌对面。",
+		id = 1102001078
+	},
+	[1102001079] = {
+		speaker = "奥丁",
+		prefab_name = "1029ui_story",
+		content = "昨天说的事情怎么样了？",
+		id = 1102001079
+	},
+	[1102001080] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "有结果了。",
+		id = 1102001080
+	},
+	[1102001081] = {
+		speaker = "",
+		prefab_name = "",
+		content = "商讨完正事，奥丁的目光状似随意地从我的办公桌上扫过，却精准地拿起来那只有裂纹的目镜。",
+		id = 1102001081
+	},
+	[1102001082] = {
+		speaker = "奥丁",
+		prefab_name = "1029ui_story",
+		content = "梵天做的？",
+		id = 1102001082
+	},
+	[1102001083] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "对……我前段时间去了趟夏什瓦特。",
+		id = 1102001083
+	},
+	[1102001084] = {
+		speaker = "",
+		prefab_name = "",
+		content = "下意识地回答了问题，我蓦然意识到，同为原初修正者，眼前正是一位或许能搞明白梵天在想什么的人。",
+		id = 1102001084
+	},
+	[1102001085] = {
+		speaker = "",
+		prefab_name = "",
+		content = "也许她会知道……那双清澈的眼睛、那些嬉闹和玩笑背后，到底藏着什么？",
+		id = 1102001085
+	},
+	[1102001086] = {
+		speaker = "奥丁",
+		prefab_name = "1029ui_story",
+		content = "你看起来有很多问题，正好，我有时间。",
+		id = 1102001086
+	},
+	[1102002001] = {
+		speaker = "奥丁",
+		prefab_name = "1029ui_story",
+		content = "所以，你想知道梵天在想什么。",
+		id = 1102002001
+	},
+	[1102002002] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "嗯，毕竟东西在我手里。",
+		id = 1102002002
+	},
+	[1102002003] = {
+		speaker = "奥丁",
+		prefab_name = "1029ui_story",
+		content = "好奇心一直是你身上很难忽略的品质。",
+		id = 1102002003
+	},
+	[1102002004] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我把手心摊开，但奥丁并没有试图接过目镜查看。像是瞬间已经明白了什么一样，她的双眸透出一丝幽深。",
+		id = 1102002004
+	},
+	[1102002005] = {
+		speaker = "奥丁",
+		prefab_name = "1029ui_story",
+		content = "先回答一个问题吧：一个人出于什么原因，会放弃自己一直在意的东西？",
+		id = 1102002005
+	},
+	[1102002006] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "常规来说的答案，就是「现在不在意了」，她也说过「不重要」这种话。但既然是梵天……",
+		id = 1102002006
+	},
+	[1102002007] = {
+		speaker = "奥丁",
+		prefab_name = "1029ui_story",
+		content = "看来你对她的执着也有了解。",
+		id = 1102002007
+	},
+	[1102002008] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "或许是有了更重要的事情？或许是遇到的阻力太大、根本不可能实现？或许……或许是这个东西本身已经损坏了……",
+		id = 1102002008
+	},
+	[1102002009] = {
+		speaker = "",
+		prefab_name = "",
+		content = "抓住这个问题，我飞快地思索了起来。每个答案都像是碰到了什么，却又无法串联起来。",
+		id = 1102002009
+	},
+	[1102002010] = {
+		speaker = "奥丁",
+		prefab_name = "1029ui_story",
+		content = "提示一下。你有过什么无法找回来的东西，或者人吗？",
+		id = 1102002010
+	},
+	[1102002011] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "找不回来的……人？",
+		id = 1102002011
+	},
+	[1102002012] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……",
+		id = 1102002012
+	},
+	[1102002013] = {
+		speaker = "？？？",
+		prefab_name = "",
+		content = "来了？",
+		id = 1102002013
+	},
+	[1102002014] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "来了。",
+		id = 1102002014
+	},
+	[1102002015] = {
+		speaker = "",
+		prefab_name = "",
+		content = "不同于上次正大光明地前来拜访，这次来弥楼衍，我如同做贼一般，偷偷从侧门溜进了大楼。",
+		id = 1102002015
+	},
+	[1102002016] = {
+		speaker = "",
+		prefab_name = "",
+		content = "左右观察无人，我才在帕尔瓦蒂身边松了一口气，转头对上她常年都显得提不起精神的面庞。",
+		id = 1102002016
+	},
+	[1102002017] = {
+		speaker = "帕尔瓦蒂",
+		prefab_name = "1089ui_story",
+		content = "行，又是找我……走吧。",
+		id = 1102002017
+	},
+	[1102002018] = {
+		speaker = "帕尔瓦蒂",
+		prefab_name = "1089ui_story",
+		content = "别怕，老大不在，也不会……哈，突然黏你身上。",
+		id = 1102002018
+	},
+	[1102002019] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你知道我不是在担心这个……",
+		id = 1102002019
+	},
+	[1102002020] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "话说回来，虽然明白梵天喜欢和大家多接触是因为在乎大家，她那个方式确实有点难接受啦……",
+		id = 1102002020
+	},
+	[1102002021] = {
+		speaker = "",
+		prefab_name = "",
+		content = "回忆着梵天的样子，我忽然注意到帕尔瓦蒂脚步在前停下，我也跟着停下。抬头一看，眼前是扇半掩的房门。",
+		id = 1102002021
+	},
+	[1102002022] = {
+		speaker = "帕尔瓦蒂",
+		prefab_name = "1089ui_story",
+		content = "老大的房间。你要的东西，就在里面。",
+		id = 1102002022
+	},
+	[1102002023] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这、能进吗？",
+		id = 1102002023
+	},
+	[1102002024] = {
+		speaker = "帕尔瓦蒂",
+		prefab_name = "1089ui_story",
+		content = "进不进的，她不在乎，在你。",
+		id = 1102002024
+	},
+	[1102002025] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我有些疑惑地看向帕尔瓦蒂，她仰头看了一眼门板，微微摇了摇头。",
+		id = 1102002025
+	},
+	[1102002026] = {
+		speaker = "帕尔瓦蒂",
+		prefab_name = "1089ui_story",
+		content = "那东西能打开一个模拟的空间，里面放了些……大概是，记忆吧。",
+		id = 1102002026
+	},
+	[1102002027] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你们没看过吗？",
+		id = 1102002027
+	},
+	[1102002028] = {
+		speaker = "帕尔瓦蒂",
+		prefab_name = "1089ui_story",
+		content = "没。",
+		id = 1102002028
+	},
+	[1102002029] = {
+		speaker = "帕尔瓦蒂",
+		prefab_name = "1089ui_story",
+		content = "不跟你打哑谜了。既然咱们都知道盖亚有过更迭，老大的过去这种事，多少能猜到一点。",
+		id = 1102002029
+	},
+	[1102002030] = {
+		speaker = "帕尔瓦蒂",
+		prefab_name = "1089ui_story",
+		content = "可猜到一点，和真正明白她在想什么，乃至于真正体会她的感受……相差太多了。多看点这个那个，于事无补。",
+		id = 1102002030
+	},
+	[1102002031] = {
+		speaker = "帕尔瓦蒂",
+		prefab_name = "1089ui_story",
+		content = "我不知道你为什么突然问这些，也懒得事事都关心，但既然你自己决定去看……",
+		id = 1102002031
+	},
+	[1102002032] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "既然我自己做好了决定，当然是想明白了。",
+		id = 1102002032
+	},
+	[1102002033] = {
+		speaker = "",
+		prefab_name = "",
+		content = "攥紧了手里的东西——特意找隐科组帮忙修好的目镜——觉得目镜的边缘勒进手心，我反而笑了一下。",
+		id = 1102002033
+	},
+	[1102002034] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "至少让我多去了解她一下吧……反正也没什么害处，对吧？",
+		id = 1102002034
+	},
+	[1102002035] = {
+		speaker = "",
+		prefab_name = "",
+		content = "帕尔瓦蒂默然一瞬，替我推开了门。",
+		id = 1102002035
+	},
+	[1102002036] = {
+		speaker = "帕尔瓦蒂",
+		prefab_name = "1089ui_story",
+		content = "好……但愿你，有些不一样吧。",
+		id = 1102002036
+	},
+	[1102002037] = {
+		speaker = "帕尔瓦蒂",
+		prefab_name = "1089ui_story",
+		content = "在柜子第二层，是个白色的圆片片。你攥在手里，按下中间按钮就行。",
+		id = 1102002037
+	},
+	[1102002038] = {
+		speaker = "",
+		prefab_name = "",
+		content = "回想着帕尔瓦蒂的嘱咐，我四下扫视，很轻松就注意到了柜子的位置。柜子上摆着各种各样的东西，有武器，有书本，也有的像是装饰品，看不出什么联系。",
+		id = 1102002038
+	},
+	[1102002039] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我很快找到了那个圆润的小东西，入手觉得有几分温润。我闭上眼睛，做了三秒心理建设，按下了按钮。",
+		id = 1102002039
+	},
+	[1102002040] = {
+		speaker = "",
+		prefab_name = "",
+		content = "平静……无尽的平静。",
+		id = 1102002040
+	},
+	[1102002041] = {
+		speaker = "",
+		prefab_name = "",
+		content = "没有想象中的天崩地裂，眼前只有一片黑暗。某种难以言喻的压抑情绪从四面八方的黑暗中扑来，争相吞食着我。",
+		id = 1102002041
+	},
+	[1102002042] = {
+		speaker = "",
+		prefab_name = "",
+		content = "然后，一丝光照了进来。",
+		id = 1102002042
+	},
+	[1102002043] = {
+		speaker = "？？？",
+		prefab_name = "",
+		content = "喂喂，怎么还在发呆啊？",
+		id = 1102002043
+	},
+	[1102002044] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "这么喜欢这个新发的目镜，还不舍得摘下来？",
+		id = 1102002044
+	},
+	[1102002045] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "（梵天？目镜？）",
+		id = 1102002045
+	},
+	[1102002046] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "不过你们科尔盖的品味是差了点，难得有一个漂亮的……",
+		id = 1102002046
+	},
+	[1102002047] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天微微晃着脑袋，忽然一眨眼睛，抬手摘走了「我」脸上的东西，发出一串轻快的笑声。",
+		id = 1102002047
+	},
+	[1102002048] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "别在意这个了，大家都要到了，快走吧。",
+		id = 1102002048
+	},
+	[1102002049] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "还有你——",
+		id = 1102002049
+	},
+	[1102002050] = {
+		speaker = "",
+		prefab_name = "",
+		content = "眼前的场景氤氲变换，不变的是眼前人带着笑的眼睛。",
+		id = 1102002050
+	},
+	[1102002051] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "怎么出任务还抱着你那本书呀！我说，整天说什么梦想啊，拯救啊，好歹自己先笑一笑吧？",
+		id = 1102002051
+	},
+	[1102002052] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "（好像又换了一个人……我进入了梵天记录的记忆，但因为我不是梵天，所以扮演了她记忆中其他不同的人？）",
+		id = 1102002052
+	},
+	[1102002053] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天支起两根食指，柔软的触感落在我的脸颊，把嘴角向上拉去。",
+		id = 1102002053
+	},
+	[1102002054] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "这才对嘛！",
+		id = 1102002054
+	},
+	[1102002055] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "来来，你们都过来看！",
+		id = 1102002055
+	},
+	[1102002056] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "海上的风，闻起来还是这个味道。",
+		id = 1102002056
+	},
+	[1102002057] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "欸，你们看她，以前一直在虚恒的山里清修，不会是第一次见到海吧？",
+		id = 1102002057
+	},
+	[1102002058] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "挡什么呀，戴着面具又看不到你脸红！哈哈……",
+		id = 1102002058
+	},
+	[1102002059] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "（这时候的梵天，好像……比现在轻松很多……）",
+		id = 1102002059
+	},
+	[1102002060] = {
+		speaker = "",
+		prefab_name = "",
+		content = "轻快的笑声串成一条明亮的丝线，我跟着它在过往的迷雾里穿梭，身边不时闪过明亮温暖的光芒。",
+		id = 1102002060
+	},
+	[1102002061] = {
+		speaker = "",
+		prefab_name = "",
+		content = "灿烂的日光下，所有人或坐或躺地依靠在一起，享受着这瞬息的宁静。",
+		id = 1102002061
+	},
+	[1102002062] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "我在想，我们会不会太懈怠了……",
+		id = 1102002062
+	},
+	[1102002063] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "嗯，也是，如果我们这样都算懈怠，也没什么人算努力了。",
+		id = 1102002063
+	},
+	[1102002064] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "明明大家都已经尽力了，我只是觉得……",
+		id = 1102002064
+	},
+	[1102002065] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她眨了眨眼睛，好像天空上最纯净的蓝坠入了她的眼底。",
+		id = 1102002065
+	},
+	[1102002066] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "不是因为已经经历了几次。",
+		id = 1102002066
+	},
+	[1102002067] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "只是……现在局势已经这么危急，可大家在一起的时候，我还是觉得很幸福。欸……总觉得这样不好。",
+		id = 1102002067
+	},
+	[1102002068] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "算啦，明天的事情明天再说。先假装现在就是永久吧。",
+		id = 1102002068
+	},
+	[1102002069] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "（可瞬息永远也不会变成永久，更何况是……已经过去的瞬息。）",
+		id = 1102002069
+	},
+	[1102002070] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "（无论是从故事还是从历史来看，接下来……）",
+		id = 1102002070
+	},
+	[1102002071] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "（……）",
+		id = 1102002071
+	},
+	[1102002072] = {
+		speaker = "",
+		prefab_name = "",
+		content = "日光破碎，眼前的一切都慢慢远去了。",
+		id = 1102002072
+	},
+	[1102002073] = {
+		speaker = "",
+		prefab_name = "",
+		content = "呼吸间黑暗中浓稠的压抑又从每个角落挤压向我。原来从一开始，这股情绪就从未远离。",
+		id = 1102002073
+	},
+	[1102002074] = {
+		speaker = "",
+		prefab_name = "",
+		content = "于是，我继续看见……",
+		id = 1102002074
+	},
+	[1102002075] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她背着身，面无表情。",
+		id = 1102002075
+	},
+	[1102002076] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "你要跟科尔盖撤回艾因索菲了吗？直接去前线啊……",
+		id = 1102002076
+	},
+	[1102002077] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "我不怪你，不是你做的决定。我只是在想，下次，我们还有机会见面吗？",
+		id = 1102002077
+	},
+	[1102002078] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "看来，没有回答就是你的回答了。",
+		id = 1102002078
+	},
+	[1102002079] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她垂下视线，静如沉冰。",
+		id = 1102002079
+	},
+	[1102002080] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "你们现在就要去约库尔？不行，我都说了，上次你们就……",
+		id = 1102002080
+	},
+	[1102002081] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "……总之，先听我的，停下来吧。",
+		id = 1102002081
+	},
+	[1102002082] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "别担心，放心交给我。",
+		id = 1102002082
+	},
+	[1102002083] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她……",
+		id = 1102002083
+	},
+	[1102002084] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "你别笑……你的书都掉了，别再笑了……每一次都……",
+		id = 1102002084
+	},
+	[1102002085] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "没事，你不会……这一次不会……",
+		id = 1102002085
+	},
+	[1102002086] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "怎么才能救下你呢……怎么才能救下你们……",
+		id = 1102002086
+	},
+	[1102002087] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "（梵天……）",
+		id = 1102002087
+	},
+	[1102002088] = {
+		speaker = "",
+		prefab_name = "",
+		content = "光亮和阴影循环往复，构成如同日升月落般仿佛永恒的轮回，没有尽头，也没有出口。",
+		id = 1102002088
+	},
+	[1102002089] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她经历了多少次这样的往复？",
+		id = 1102002089
+	},
+	[1102002090] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "「创造」完毕，看起来很完美。呼……",
+		id = 1102002090
+	},
+	[1102002091] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "（这次我是什么？她在观察我，刚刚被创造出来的是我……）",
+		id = 1102002091
+	},
+	[1102002092] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "（梵天试图创造过……逝去的战友？）",
+		id = 1102002092
+	},
+	[1102002093] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "咳咳，你应该还记得我吧，虽然我们已经很久没见了……很久很久。",
+		id = 1102002093
+	},
+	[1102002094] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "（梵天……）",
+		id = 1102002094
+	},
+	[1102002095] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我下意识呼喊她的名字，然而我终究只是借了过往记忆的视角，改变不了眼前的一分一毫。",
+		id = 1102002095
+	},
+	[1102002096] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "你能听到我的声音吗？说句话吧，随便说点什么……我都快忘记你说话的声音了。",
+		id = 1102002096
+	},
+	[1102002097] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "（梵天……）",
+		id = 1102002097
+	},
+	[1102002098] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我努力地想要回应，我奋力试图抬手触碰她，可我什么都做不到。",
+		id = 1102002098
+	},
+	[1102002099] = {
+		speaker = "",
+		prefab_name = "",
+		content = "就像她也……做不到。",
+		id = 1102002099
+	},
+	[1102002100] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "……其实我也明白，我没办法带你们回来。",
+		id = 1102002100
+	},
+	[1102002101] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "但是……",
+		id = 1102002101
+	},
+	[1102002102] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "……回来啊。",
+		id = 1102002102
+	},
+	[1102002103] = {
+		speaker = "",
+		prefab_name = "",
+		content = "（梵天！）",
+		id = 1102002103
+	},
+	[1102002104] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "你们……回来啊……",
+		id = 1102002104
+	},
+	[1102002105] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "！！！",
+		id = 1102002105
+	},
+	[1102002106] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我揉了揉眼睛，午间的日光透过窗户重新落在我的脸上。",
+		id = 1102002106
+	},
+	[1102002107] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "录制的回忆结束了啊。",
+		id = 1102002107
+	},
+	[1102002108] = {
+		speaker = "",
+		prefab_name = "",
+		content = "手心里的圆片已经被我攥得温热，对现实温度的感知也渐渐回到微微发冷的躯体上。",
+		id = 1102002108
+	},
+	[1102002109] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我低头看了看自己带回来的目镜，又抬头看到了柜子上的书本、面具、武器……它们代表着梵天同过去战友们经历的无数故事，才会被梵天创造出来。",
+		id = 1102002109
+	},
+	[1102002110] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "但，能创造出来的，也只有这些和过去形貌相似的物件了。",
+		id = 1102002110
+	},
+	[1102002111] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "怪不得，之前奥丁要这么问我……",
+		id = 1102002111
+	},
+	[1102002112] = {
+		speaker = "奥丁",
+		prefab_name = "1029ui_story",
+		content = "提示一下。你有过什么无法找回来的东西，或者人吗？",
+		id = 1102002112
+	},
+	[1102002113] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "找不回来的……人？",
+		id = 1102002113
+	},
+	[1102002114] = {
+		speaker = "",
+		prefab_name = "",
+		content = "数个模糊的身影从脑海的角落里站起来，带着悲伤的笑容看向我。下一个瞬间，我意识到悲伤的不是她们，而是我。",
+		id = 1102002114
+	},
+	[1102002115] = {
+		speaker = "",
+		prefab_name = "",
+		content = "不……我还有机会找到她们。但对梵天来说呢？在不知多少个纪元的尺度下，一次又一次地同过往告别……",
+		id = 1102002115
+	},
+	[1102002116] = {
+		speaker = "",
+		prefab_name = "",
+		content = "可想而知地，一次又一次期待，然后失望。",
+		id = 1102002116
+	},
+	[1102002117] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "所以她才会说……",
+		id = 1102002117
+	},
+	[1102002118] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "应该说——过去的一切都不重要。",
+		id = 1102002118
+	},
+	[1102002119] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "并不是不重要。只是……已经一次次地尝试过了。",
+		id = 1102002119
+	},
+	[1102002120] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "一次次尝试，一次次失望，然后终于发现……终于发现，世事无论如何都会把在意的东西带走，而她使用何种办法都无能为力。",
+		id = 1102002120
+	},
+	[1102002121] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "所以，只能向未来看。只能告诉自己，过去不重要……",
+		id = 1102002121
+	},
+	[1102002122] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "真的不重要么……",
+		id = 1102002122
+	},
+	[1102002123] = {
+		speaker = "",
+		prefab_name = "",
+		content = "在原地呆站了片刻，我缓过神来，才放下圆片，准备离开房间。",
+		id = 1102002123
+	},
+	[1102002124] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "帕瓦，我这里结束……",
+		id = 1102002124
+	},
+	[1102002125] = {
+		speaker = "",
+		prefab_name = "",
+		content = "房门被推开，走进来的却是另一个人。",
+		id = 1102002125
+	},
+	[1102002126] = {
+		speaker = "",
+		prefab_name = "",
+		content = "娇小的身形，清澈的眼睛，满溢的笑容。",
+		id = 1102002126
+	},
+	[1102002127] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "阿管，想不到你胆子这么大，居然偷偷闯进我的房间。",
+		id = 1102002127
+	},
+	[1102002128] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "该怎么「惩罚」你好呢？",
+		id = 1102002128
+	},
+	[1102003001] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……梵天？",
+		id = 1102003001
+	},
+	[1102003002] = {
+		speaker = "",
+		prefab_name = "",
+		content = "经历了漫长的回忆，我一时还有些恍惚。眨了眨眼睛，确定我看到的是属于现在的梵天。",
+		id = 1102003002
+	},
+	[1102003003] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "现在想着求饶？那可晚了。你这么聪明，别装傻呀。",
+		id = 1102003003
+	},
+	[1102003004] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一根手指挑起我的下巴，梵天笑盈盈地观察着我，顺便揉了揉我的脸颊。",
+		id = 1102003004
+	},
+	[1102003005] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "果然阿管哪里看起来我都喜欢。那，先摸摸这里~",
+		id = 1102003005
+	},
+	[1102003006] = {
+		speaker = "",
+		prefab_name = "",
+		content = "灵活的手悄悄溜过来，可我只是凝视着她，没有动作。梵天摇了摇头，也收回了手指。",
+		id = 1102003006
+	},
+	[1102003007] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "装木头倒是装得挺像。",
+		id = 1102003007
+	},
+	[1102003008] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我刚刚看了你的回忆。；我带了礼物。",
+		id = 1102003008
+	},
+	[1102003009] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "嗨呀，偷跑进别人房间，还这么理直气壮。",
+		id = 1102003009
+	},
+	[1102003010] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我还带了礼物。",
+		id = 1102003010
+	},
+	[1102003011] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "阿管呀~把别人送的东西还回来，可不能算是礼物。",
+		id = 1102003011
+	},
+	[1102003012] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我把它修复了。",
+		id = 1102003012
+	},
+	[1102003013] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我抬手，递出了那只战术目镜。经过隐科组的帮忙，它现在已经完整如新，连内部结构也同资料库中无异。",
+		id = 1102003013
+	},
+	[1102003014] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "不错嘛。你说是礼物，那我就收下啦~",
+		id = 1102003014
+	},
+	[1102003015] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天看了眼目镜，又看了看我的表情，笑眯眯地顺手从我手上接过，自己也轻快地从我身边走过，随意地坐在了床沿。",
+		id = 1102003015
+	},
+	[1102003016] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你觉得修复得怎么样？",
+		id = 1102003016
+	},
+	[1102003017] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "修得很好呀。阿管的心意我明白，不过，它和我的记忆中还是不一样。",
+		id = 1102003017
+	},
+	[1102003018] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不一样？可是科尔盖资料库里就是……",
+		id = 1102003018
+	},
+	[1102003019] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "或者说，就是我记不清啦。",
+		id = 1102003019
+	},
+	[1102003020] = {
+		speaker = "",
+		prefab_name = "",
+		content = "嘴角仍带着微微的笑容，梵天拿着目镜的手指向柜子，我的目光也跟着移到了柜子上。",
+		id = 1102003020
+	},
+	[1102003021] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "这张面具——你刚刚在我的回忆里见过吧——它摔过一次，但我不记得裂痕是在左边还是右边了。",
+		id = 1102003021
+	},
+	[1102003022] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "还有这本书，有段时间我几乎每天都能见到，无聊也拿过来翻看过好几次，可里面写了什么东西，我还是记不清了。",
+		id = 1102003022
+	},
+	[1102003023] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "这把目镜也是一样。我明明记得它是紫色的，大家还一起评价过科尔盖的品味……可如你所见，资料库里的图片清清楚楚，是蓝色的。",
+		id = 1102003023
+	},
+	[1102003024] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……明明想把过去的东西做成纪念，可连纪念品也不准确了么。",
+		id = 1102003024
+	},
+	[1102003025] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "这也是没办法的事嘛……世事无常，记忆也逃不过。留不下什么，也是应该的。",
+		id = 1102003025
+	},
+	[1102003026] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "已经流逝的过去不再重要，所以你选择看向未来？",
+		id = 1102003026
+	},
+	[1102003027] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "当然啦。",
+		id = 1102003027
+	},
+	[1102003028] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "但是……",
+		id = 1102003028
+	},
+	[1102003029] = {
+		speaker = "",
+		prefab_name = "",
+		content = "看着梵天想把目镜也收进柜子里，和其它东西一般沉寂下去；我忍不住往前迈了一步，拦住了她的手。",
+		id = 1102003029
+	},
+	[1102003030] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "唔，阿管有想法？",
+		id = 1102003030
+	},
+	[1102003031] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她轻笑了一声，歪歪脑袋，澄澈的眼睛直直看向我，似是考验，也似是期许。",
+		id = 1102003031
+	},
+	[1102003032] = {
+		speaker = "帕尔瓦蒂",
+		prefab_name = "1089ui_story",
+		content = "可猜到一点，和真正明白她在想什么，乃至于真正体会她的感受……相差太多了。",
+		id = 1102003032
+	},
+	[1102003033] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一瞬间想起帕瓦的话语。我无法明了梵天带着笑意的眼睛下装着什么，可至少，我该说出我想说的话。",
+		id = 1102003033
+	},
+	[1102003034] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "过去无可挽回，未来尚待筹谋。我没有什么挥手就能改变盖亚的本事，这些，只能等以后慢慢说。",
+		id = 1102003034
+	},
+	[1102003035] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "但我眼前看到的，是现在的你。",
+		id = 1102003035
+	},
+	[1102003036] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "在定格的过去和未知的未来之间，明明还有一个现在的你。背着过去未来所有重量的、在乎着大家的、现在的你……",
+		id = 1102003036
+	},
+	[1102003037] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……我想为现在的梵天做点什么，也请你为现在的梵天做点什么吧。",
+		id = 1102003037
+	},
+	[1102003038] = {
+		speaker = "",
+		prefab_name = "",
+		content = "话语落下后的安静里，我定定地看着梵天。看着她眨眨眼睛，然后突然抬起手，捏了捏我的脸颊。",
+		id = 1102003038
+	},
+	[1102003039] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "唔唔，我可是在认真……",
+		id = 1102003039
+	},
+	[1102003040] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "我知道我知道，阿管认真的表情好可爱。",
+		id = 1102003040
+	},
+	[1102003041] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "所以，你想做点什么，我听你安排。",
+		id = 1102003041
+	},
+	[1102003042] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "真的？我想……虽然总会变化，连记忆也会流逝，但趁现在还记得，就好好做个纪念吧。",
+		id = 1102003042
+	},
+	[1102003043] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "也许可以像过去一样……",
+		id = 1102003043
+	},
+	[1102003044] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "那就像过去一样，我们一起去空地上聚会吧。",
+		id = 1102003044
+	},
+	[1102003045] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天向我挥了挥手中的目镜，指向身后一柜的东西。",
+		id = 1102003045
+	},
+	[1102003046] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "和你，还有，带着「大家」一起。",
+		id = 1102003046
+	},
+	[1102003047] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "所以现在，是要买些「大家」从前喜欢的东西？",
+		id = 1102003047
+	},
+	[1102003048] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "聚会啦，当然要好吃好玩，不然还要两手空空地去吗？",
+		id = 1102003048
+	},
+	[1102003049] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我哪有两手空空，倒是你……",
+		id = 1102003049
+	},
+	[1102003050] = {
+		speaker = "",
+		prefab_name = "",
+		content = "出门时我们把梵天柜子上的东西连带那个目镜都收成了一个大包，看着跟梵天小小的身形也不相称，我就拎在了手里。",
+		id = 1102003050
+	},
+	[1102003051] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "等会儿买了东西，就轮到我来拿啦。",
+		id = 1102003051
+	},
+	[1102003052] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "好好，梵天老大辛苦。",
+		id = 1102003052
+	},
+	[1102003053] = {
+		speaker = "",
+		prefab_name = "",
+		content = "现在刚过了中午，天气正热，好在加尔的集市在几点都很热闹。这块算是弥楼衍的地盘，周围也安定，我们就在集市上溜达起来。",
+		id = 1102003053
+	},
+	[1102003054] = {
+		speaker = "摊贩A",
+		prefab_name = "",
+		content = "梵天老大，有空出来逛啊！",
+		id = 1102003054
+	},
+	[1102003055] = {
+		speaker = "摊贩B",
+		prefab_name = "",
+		content = "梵天老大，看看我家的腌鱼！",
+		id = 1102003055
+	},
+	[1102003056] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "腌鱼？有海鱼吗？",
+		id = 1102003056
+	},
+	[1102003057] = {
+		speaker = "摊贩B",
+		prefab_name = "",
+		content = "咱们这块又不是萨蒂港，不临海，这……",
+		id = 1102003057
+	},
+	[1102003058] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "那也凑合吧，给我挑条好的。",
+		id = 1102003058
+	},
+	[1102003059] = {
+		speaker = "摊贩B",
+		prefab_name = "",
+		content = "欸！放心吧梵天老大，受了弥楼衍这么多恩惠，一定给您拿最好的。",
+		id = 1102003059
+	},
+	[1102003060] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你们聚会还吃腌鱼？",
+		id = 1102003060
+	},
+	[1102003061] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "是以前有段时间，整天吃来吃去只有不同的鱼，见不到第二样菜。大家都吃烦了，吵起来就互相说对方是「鱼」……",
+		id = 1102003061
+	},
+	[1102003062] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "比如说，阿管你这个大笨鱼——",
+		id = 1102003062
+	},
+	[1102003063] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "喂喂，你再这么说我可要跑了。",
+		id = 1102003063
+	},
+	[1102003064] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "嗨呀，别生气嘛，那你是大聪明鱼好啦。",
+		id = 1102003064
+	},
+	[1102003065] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我无奈摇头，梵天轻笑起来，从摊贩手里接过打包好的腌鱼。",
+		id = 1102003065
+	},
+	[1102003066] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "那些鱼的味道，当时早就腻了，现在又想尝尝了。",
+		id = 1102003066
+	},
+	[1102003067] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "看，那边那家，整个集市最好的奶茶摊！",
+		id = 1102003067
+	},
+	[1102003068] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天对这里熟门熟路，跟着她走了一圈，果然她手里的东西也多了起来。",
+		id = 1102003068
+	},
+	[1102003069] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她停下来，点了点数，忽然若有所思地转头看向我。",
+		id = 1102003069
+	},
+	[1102003070] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "那你呢？",
+		id = 1102003070
+	},
+	[1102003071] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我什么？我想吃的东西你也买了。",
+		id = 1102003071
+	},
+	[1102003072] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "我是问，你要不要也买点「纪念」？",
+		id = 1102003072
+	},
+	[1102003073] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "「纪念」……是说我想找回来的人相关的东西么……",
+		id = 1102003073
+	},
+	[1102003074] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我仰头望了望天空远方的云朵，轻轻摇头。",
+		id = 1102003074
+	},
+	[1102003075] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "没事……先不用了。",
+		id = 1102003075
+	},
+	[1102003076] = {
+		speaker = "",
+		prefab_name = "",
+		content = "从集市里出来，我和梵天都已经拎着大包小包。",
+		id = 1102003076
+	},
+	[1102003077] = {
+		speaker = "",
+		prefab_name = "",
+		content = "夏日灿烂的阳光下，我们哼着歌，踏着轻快的步伐，往加尔边缘无人打扰的空地走去。",
+		id = 1102003077
+	},
+	[1102003078] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "就在这？",
+		id = 1102003078
+	},
+	[1102003079] = {
+		speaker = "",
+		prefab_name = "",
+		content = "停下脚步，我和梵天铺上野餐垫，各自把包里的东西逐一拿出，摆在垫子上。",
+		id = 1102003079
+	},
+	[1102003080] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "买了这么多东西，怎么吃得完。",
+		id = 1102003080
+	},
+	[1102003081] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "简单，趁着弥楼衍还没准备晚饭，我们再带回去——带回去就不是老大要管的事了。",
+		id = 1102003081
+	},
+	[1102003082] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "总之，你就陪我一起当两个甩手掌柜，尽情吃吃喝喝……",
+		id = 1102003082
+	},
+	[1102003083] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一声惊雷声打断了梵天的话。",
+		id = 1102003083
+	},
+	[1102003084] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我和梵天不约而同地抬头看向天空。黑云突兀涌起，瞬间就掩盖了所有的晴朗，集结成一片庞然的阴翳。",
+		id = 1102003084
+	},
+	[1102003085] = {
+		speaker = "",
+		prefab_name = "",
+		content = "暴雨从天而降。",
+		id = 1102003085
+	},
+	[1102003086] = {
+		speaker = "",
+		prefab_name = "",
+		content = "虽是炎热的天气，暴雨仍冷冽如刃。打湿了整个天地，浸透了天地中的我和梵天，当然也包括我们眼前各式各样的「纪念」。",
+		id = 1102003086
+	},
+	[1102003087] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "梵天……",
+		id = 1102003087
+	},
+	[1102003088] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她娇小的身影站在雨中，一动未动。",
+		id = 1102003088
+	},
+	[1102003089] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "这也留不住呀。",
+		id = 1102003089
+	},
+	[1102004001] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "咳……「梵天智勇双全，梵天主宰一切。」",
+		id = 1102004001
+	},
+	[1102004002] = {
+		speaker = "",
+		prefab_name = "",
+		content = "仓库离得近，我们便过来躲雨。从深处取了些梵天以往留下的用品，我重新关好了门，拿着东西往回走。",
+		id = 1102004002
+	},
+	[1102004003] = {
+		speaker = "",
+		prefab_name = "",
+		content = "暴雨仍然无穷无尽般地落着，刷刷砸在头顶的玻璃上，投下微微晃动的昏黄光晕。",
+		id = 1102004003
+	},
+	[1102004004] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天坐在仓库旁的货物堆上，撑着脸，用脚踢了踢地上还躺在水渍里的袋子们。",
+		id = 1102004004
+	},
+	[1102004005] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "好歹是逛了半天才买齐的。",
+		id = 1102004005
+	},
+	[1102004006] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我沉默地走过去，把一大块毛巾扔在了梵天头上。她晃了晃，湿漉漉的脑袋从毛巾下钻了出来。",
+		id = 1102004006
+	},
+	[1102004007] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "我没事，你别着凉了。",
+		id = 1102004007
+	},
+	[1102004008] = {
+		speaker = "",
+		prefab_name = "",
+		content = "像一只摇晃羽毛的小孔雀一样，梵天抖了抖脑袋，用毛巾擦掉多余的雨水，三步并两步地走到了坐在地上的我面前。",
+		id = 1102004008
+	},
+	[1102004009] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "看起来不开心？",
+		id = 1102004009
+	},
+	[1102004010] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "好好准备的聚会泡汤了，有点不开心不是很正常么。哪能像你……",
+		id = 1102004010
+	},
+	[1102004011] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我上上下下打量着眼前的人。刚才雨中流露出一瞬的遗憾好像已经消失不见，梵天依然眼睛亮晶晶地笑着，还有心情理开我湿润打结的头发。",
+		id = 1102004011
+	},
+	[1102004012] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "因为这种事情，多经历几次就习惯了呀。",
+		id = 1102004012
+	},
+	[1102004013] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "经历了很多次么……",
+		id = 1102004013
+	},
+	[1102004014] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "嗨呀，怎么又自己感慨起来了。",
+		id = 1102004014
+	},
+	[1102004015] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "这样吧，我告诉阿管一件事。",
+		id = 1102004015
+	},
+	[1102004016] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "什么？",
+		id = 1102004016
+	},
+	[1102004017] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "我努力过很多次，也失败过很多次。但我并不觉得失败的努力就是可笑的，它一样值得被记住。",
+		id = 1102004017
+	},
+	[1102004018] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "所以，像是今天这样的纪念，我也尝试过很多次了。",
+		id = 1102004018
+	},
+	[1102004019] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "原来……",
+		id = 1102004019
+	},
+	[1102004020] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "也是，毕竟这也不是什么很难想到的事情。",
+		id = 1102004020
+	},
+	[1102004021] = {
+		speaker = "",
+		prefab_name = "",
+		content = "喉中涌起一阵苦涩，不待我细想更多，梵天无奈般地摇摇头，伸手点了点我的脑袋。",
+		id = 1102004021
+	},
+	[1102004022] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "但是，阿管这么跟我说的时候，我还是很高兴。",
+		id = 1102004022
+	},
+	[1102004023] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "你知道为什么吗？",
+		id = 1102004023
+	},
+	[1102004024] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她凝视着我，在近在咫尺的距离。咫尺的空气间隔着我和她，更联结着我和她。",
+		id = 1102004024
+	},
+	[1102004025] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "因为……我在你身边。",
+		id = 1102004025
+	},
+	[1102004026] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "因为你在我身边，在「现在的我」身边呀。",
+		id = 1102004026
+	},
+	[1102004027] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "但还有一个原因。",
+		id = 1102004027
+	},
+	[1102004028] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "因为，你是从前的纪元里从来没有出现过的人。",
+		id = 1102004028
+	},
+	[1102004029] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……",
+		id = 1102004029
+	},
+	[1102004030] = {
+		speaker = "",
+		prefab_name = "",
+		content = "心跳猛然漏了一拍，一瞬间我忽然错觉眼前的人同我相隔千里。她的目光中透出满满的审视和探究，好像要拼成交错的网，将我笼罩，将我剖析。",
+		id = 1102004030
+	},
+	[1102004031] = {
+		speaker = "",
+		prefab_name = "",
+		content = "但她眨了眨眼，转瞬间那股探究又烟消云散，眼前只剩下同我站在一起的、同我从弥楼衍和集市走到这里的梵天。",
+		id = 1102004031
+	},
+	[1102004032] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "有时，我期待着某种「特殊」的出现；可我又希望这种「期待」从不出现，这样也不必失望。",
+		id = 1102004032
+	},
+	[1102004033] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "那么，特殊的阿管同学，你怎么想呢？你也会像过去那些人一样离开吗？",
+		id = 1102004033
+	},
+	[1102004034] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "让我听听吧……你的答案。",
+		id = 1102004034
+	},
+	[1102004035] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我……",
+		id = 1102004035
+	},
+	[1102004036] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我慢慢吐了一口气，吐掉胸腔里积郁的雨水。",
+		id = 1102004036
+	},
+	[1102004037] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我不知道。；我们都明白。",
+		id = 1102004037
+	},
+	[1102004038] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这个问题的答案本来就是确定的。时间对所有人平等地残酷，无论是对离开的，还是留下的。",
+		id = 1102004038
+	},
+	[1102004039] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "但是……",
+		id = 1102004039
+	},
+	[1102004040] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我抬手触碰梵天的手，见她没有反对，便将她的双手握在了手心。",
+		id = 1102004040
+	},
+	[1102004041] = {
+		speaker = "",
+		prefab_name = "",
+		content = "触碰，是我们的珍视。",
+		id = 1102004041
+	},
+	[1102004042] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "至少现在，我正在陪着你。未来，我也愿意在你身边。",
+		id = 1102004042
+	},
+	[1102004043] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "至于更远的未来，至于我无法到达的那一天……",
+		id = 1102004043
+	},
+	[1102004044] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "如果真有那一天，那只能拜托你好好记住我了。",
+		id = 1102004044
+	},
+	[1102004045] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "像过去的那些人一样，让我在记忆里继续陪伴你吧。",
+		id = 1102004045
+	},
+	[1102004046] = {
+		speaker = "",
+		prefab_name = "",
+		content = "手心传来温暖的温度，似乎还有冷静的坚定。梵天赞赏般地笑叹了一声，没有挣开我的手。",
+		id = 1102004046
+	},
+	[1102004047] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "不愧是#{nickname}#能说出的话呀。",
+		id = 1102004047
+	},
+	[1102004048] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "既然都已经想通了，就不用只是叹着气听雨声了——",
+		id = 1102004048
+	},
+	[1102004049] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "我们等雨停吧。",
+		id = 1102004049
+	},
+	[1102004050] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "好漂亮啊……",
+		id = 1102004050
+	},
+	[1102004051] = {
+		speaker = "",
+		prefab_name = "",
+		content = "雨过天晴之后已是傍晚。或许是因为随着暴雨而来的层云，此刻远处亮起了美丽的霞光，点染了逐渐暗淡的天空。",
+		id = 1102004051
+	},
+	[1102004052] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "阿管，这边！",
+		id = 1102004052
+	},
+	[1102004053] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天挥了挥手，我也赶紧跟上。停在一处干净的空地，我们各自把自己手中包里的东西拿出来。",
+		id = 1102004053
+	},
+	[1102004054] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "我看看，面包是不能吃了，奶茶也漏了，腌鱼倒是还好好的……",
+		id = 1102004054
+	},
+	[1102004055] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "好在梵天做的这些东西都封好了，不怕水，有的还湿漉漉的，吹吹干好了。",
+		id = 1102004055
+	},
+	[1102004056] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "面具、书、手枪……这是什么，糖果盒？收拾的时候都没注意到……还有……",
+		id = 1102004056
+	},
+	[1102004057] = {
+		speaker = "",
+		prefab_name = "",
+		content = "从袋子的最底部，我拿出了最先放进去的目镜，然后微微怔住。",
+		id = 1102004057
+	},
+	[1102004058] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "超级聪明鱼，要不要尝尝你的同胞？",
+		id = 1102004058
+	},
+	[1102004059] = {
+		speaker = "",
+		prefab_name = "",
+		content = "半条腌鱼横在我眼前，我却一动不动。梵天好奇地凑过去，盯着我的脸。",
+		id = 1102004059
+	},
+	[1102004060] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "被雨腌傻了？",
+		id = 1102004060
+	},
+	[1102004061] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "梵天，你看，目镜。",
+		id = 1102004061
+	},
+	[1102004062] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "它的颜色……",
+		id = 1102004062
+	},
+	[1102004063] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天怔了一下，从我手里接过了目镜。",
+		id = 1102004063
+	},
+	[1102004064] = {
+		speaker = "",
+		prefab_name = "",
+		content = "橙红色的天幕下，她举起目镜，对上瑰丽的霞光。",
+		id = 1102004064
+	},
+	[1102004065] = {
+		speaker = "",
+		prefab_name = "",
+		content = "原本蓝色的目镜，此刻霞光的映衬下，倒影在眼中，已经变成了更为美丽的紫色。",
+		id = 1102004065
+	},
+	[1102004066] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "我都忘啦，当时，我们总是在黄昏时聚会。",
+		id = 1102004066
+	},
+	[1102004067] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "那时候大家都忙，每次忙里偷闲见面，总说谁最后一个来，下次就要负责所有吃喝。",
+		id = 1102004067
+	},
+	[1102004068] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "……",
+		id = 1102004068
+	},
+	[1102004069] = {
+		speaker = "",
+		prefab_name = "",
+		content = "风轻轻从她的身上吹过，天空下伫立的身影在这一瞬间好像不在属于眼前。",
+		id = 1102004069
+	},
+	[1102004070] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她穿越过往的风，踏入时间的河流，同无数的记忆相会，同无数的遗失相会。",
+		id = 1102004070
+	},
+	[1102004071] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "原来，忘掉的记忆也能找回来。",
+		id = 1102004071
+	},
+	[1102004072] = {
+		speaker = "",
+		prefab_name = "",
+		content = "层云涌动，似乎天穹之上也上演着无数记忆中的故事。我微微屏息，不想打破这份属于她的片刻安宁。",
+		id = 1102004072
+	},
+	[1102004073] = {
+		speaker = "",
+		prefab_name = "",
+		content = "但她回过头来。",
+		id = 1102004073
+	},
+	[1102004074] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "站这么远干什么？",
+		id = 1102004074
+	},
+	[1102004075] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我不想打扰你。",
+		id = 1102004075
+	},
+	[1102004076] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "都说是了聚会——一个人也能叫聚会吗？过来啦。",
+		id = 1102004076
+	},
+	[1102004077] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我顺从地走上前去，看见梵天露出了轻轻的笑容，像是在记忆空间中看到的、无数时光前的曾经。",
+		id = 1102004077
+	},
+	[1102004078] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "刚刚，我又想起了一些过去的事情。",
+		id = 1102004078
+	},
+	[1102004079] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "脑袋里那些过去的东西呀，很珍贵，可放久了，就变得沉甸甸的。现在能拿出来晒一晒，吹吹风，好像轻了一些。",
+		id = 1102004079
+	},
+	[1102004080] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "总之，多谢啦。",
+		id = 1102004080
+	},
+	[1102004081] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那些真正压在你身上的东西，我一时还做不了什么……",
+		id = 1102004081
+	},
+	[1102004082] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "那些东西，我本来也不会交给任何人——",
+		id = 1102004082
+	},
+	[1102004083] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "但至少，到达终点之前，还有人一直在我身边。",
+		id = 1102004083
+	},
+	[1102004084] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我承诺过，就会尽力的。",
+		id = 1102004084
+	},
+	[1102004085] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "那就不说这些了，陪我一起好好玩吧~",
+		id = 1102004085
+	},
+	[1102004086] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "晚霞的时间这么短，不抓紧时间，怎么创造新的回忆？",
+		id = 1102004086
+	},
+	[1102004087] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "也是，还有些没被泡坏的食物，现在拿回去当晚饭也来不及了，把它们消灭掉吧。",
+		id = 1102004087
+	},
+	[1102004088] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "对了，刚刚你给我的那半条鱼，我好像随手一放，放哪儿去了来着……",
+		id = 1102004088
+	},
+	[1102004089] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我低头，试图在大包小包和垫子中找到随手放下的食品袋，忽然觉得一阵不祥的预感自脊椎窜向脑袋。",
+		id = 1102004089
+	},
+	[1102004090] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "说起来，这次见面，我还没摸过你腰上长没长肉呢……阿管？",
+		id = 1102004090
+	},
+	[1102004091] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不是，别……",
+		id = 1102004091
+	},
+	[1102004092] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我惊恐地后退半步，只觉得那娇小的身影骤然靠近，身前身后已再无半条生路。",
+		id = 1102004092
+	},
+	[1102004093] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "唔唔唔！",
+		id = 1102004093
+	},
+	[1102004094] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "早就说了，跑不掉的呦~",
+		id = 1102004094
+	},
+	[1102004095] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这份文件……是夏什瓦特那次出差的后续反馈啊……没什么问题，那这件事就彻底结束了。",
+		id = 1102004095
+	},
+	[1102004096] = {
+		speaker = "",
+		prefab_name = "",
+		content = "在文件上签上自己的署名，今天的工作就算是做完了。我站起来活动了一下身体，注意到桌面上不知何时多出来一个包裹。",
+		id = 1102004096
+	},
+	[1102004097] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我的？刚刚工作太专心没注意有人进来么……",
+		id = 1102004097
+	},
+	[1102004098] = {
+		speaker = "",
+		prefab_name = "",
+		content = "拆开包裹，里面掉出来两样东西。",
+		id = 1102004098
+	},
+	[1102004099] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这是……",
+		id = 1102004099
+	},
+	[1102004100] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一个温润的圆片片，还有一张写了字的卡片。",
+		id = 1102004100
+	},
+	[1102004101] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "此处存储了梵天和#{nickname}#在黄昏时的聚会。",
+		id = 1102004101
+	},
+	[1102004102] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "说好了，和阿管创造的记忆，用心珍藏哦~",
+		id = 1102004102
+	},
+	[924011001] = {
+		speaker = "",
+		prefab_name = "",
+		content = "所谓「未来」，总是一个让人忍不住遐思的概念。\n\n它像一道湍流，跟随着时间向前奔涌，不断撞击在一道又一道名为「契机」的石头上，流散开来——\n\n不同的径流交织向前，绘出瑰丽的、牵绊着所有人的网，推动着迷茫的人前往未知的方向……\n\n未来可以被改变吗？\n\n或许我们可以在某个契机做出抉择，改变了某种未明的流向。\n\n但谁又能确定，自己到底是改变了未来，还是因为新的选择，而来到了一个全新的未来呢？\n\n……",
+		id = 924011001
+	},
+	[924011002] = {
+		speaker = "",
+		prefab_name = "",
+		content = "信纸字文本",
+		id = 924011002
+	},
+	[924011003] = {
+		speaker = "",
+		prefab_name = "",
+		content = "信纸字文本",
+		id = 924011003
+	},
+	[924011004] = {
+		speaker = "",
+		prefab_name = "",
+		content = "信纸字文本",
+		id = 924011004
+	},
+	[924011005] = {
+		speaker = "",
+		prefab_name = "",
+		content = "信纸字文本",
+		id = 924011005
+	},
+	[924011006] = {
+		speaker = "",
+		prefab_name = "",
+		content = "信纸字文本",
+		id = 924011006
+	},
+	[924011007] = {
+		speaker = "",
+		prefab_name = "",
+		content = "信纸字文本",
+		id = 924011007
+	},
+	[924011008] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "又开始发呆了，这次是因为什么？",
+		id = 924011008
+	},
+	[924011009] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "啊？你什么时候来的？",
+		id = 924011009
+	},
+	[924011010] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "大概是开始播放制作成员名单的时候。",
+		id = 924011010
+	},
+	[924011011] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "嗯……倒是没特别在思考什么，只是一些闪过的念头罢了。",
+		id = 924011011
+	},
+	[924011012] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "评价怎么样？我推荐的「近二十年最佳作品」。",
+		id = 924011012
+	},
+	[924011013] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "真别说，确实非常精彩，每个角色的情感历程都完整丰富，最后这段欺骗世界换来真爱活下来的剧情，不论是画面表现还是情感张力都很让人感动。",
+		id = 924011013
+	},
+	[924011014] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "你不考虑兼职一下游戏杂志的撰稿人吗？",
+		id = 924011014
+	},
+	[924011015] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "只是实话实说……我还是第一次见到这种类型的，明明是个恋爱游戏，居然能写出这么完整复杂的逻辑和故事结构。",
+		id = 924011015
+	},
+	[924011016] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "如果是什么没头脑的作品，我也不会推荐给你了。",
+		id = 924011016
+	},
+	[924011017] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "也对，毕竟在恋爱故事之前，它首先应该是一个好故事。",
+		id = 924011017
+	},
+	[924011018] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "只是……不知道怎么说，这个结局打完，我还是有种怅然若失的感觉。",
+		id = 924011018
+	},
+	[924011019] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "为什么？",
+		id = 924011019
+	},
+	[924011020] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "毕竟即使救回了真爱，故事也只是重新回到了最开始啊，其他那些角色怎么样了之类的……还是很让人担心。",
+		id = 924011020
+	},
+	[924011021] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "嗯？",
+		id = 924011021
+	},
+	[924011022] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你怎么一副见了鬼的表情？",
+		id = 924011022
+	},
+	[924011023] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "一般来说，会关心故事中其他的角色变得如何吗？",
+		id = 924011023
+	},
+	[924011024] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不会吗？",
+		id = 924011024
+	},
+	[924011025] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "可是主角已经完成他的旅途，故事圆满落幕了。",
+		id = 924011025
+	},
+	[924011026] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我知道，但总觉得少了点什么。",
+		id = 924011026
+	},
+	[924011027] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "就像「铃」一样，明明这么努力地把和平带回了世界，最后的笑容却很勉强。",
+		id = 924011027
+	},
+	[924011028] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "她都已经拯救世界了，会觉得累也很正常吧。",
+		id = 924011028
+	},
+	[924011029] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "长久为之努力的目标突然消失……我还挺想知道她会何去何从的。",
+		id = 924011029
+	},
+	[924011030] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我们两人同时响起的终端通讯，打断了我向她继续提问的动作。",
+		id = 924011030
+	},
+	[924011031] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "噢，聊太久了，我们走吧。移转观测准备好了，别让海姆达尔久等。",
+		id = 924011031
+	},
+	[924011032] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这是……一只猫？",
+		id = 924011032
+	},
+	[924011033] = {
+		speaker = "海姆达尔",
+		prefab_name = "1033ui_story",
+		content = "「外置型定向锚点连接器」，把它当成猫也无所谓。不用紧张，使用的对象不是你。",
+		id = 924011033
+	},
+	[924011034] = {
+		speaker = "",
+		prefab_name = "",
+		content = "海姆达尔忙碌地操作着屏幕。我则是看着大国主将这个神秘的连接器「噗叽」一下按在自己的腿上。",
+		id = 924011034
+	},
+	[924011035] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……倒是挺方便。",
+		id = 924011035
+	},
+	[924011036] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "先躺进观测舱里吧。你用里面那个。",
+		id = 924011036
+	},
+	[924011037] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你不说我都没注意……为什么移转观测舱现在变成两个了？",
+		id = 924011037
+	},
+	[924011038] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "隐科组的最新成果，简单说的话，我们尝试把原本不定向的「锚」做成定向的。",
+		id = 924011038
+	},
+	[924011039] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "有什么作用？",
+		id = 924011039
+	},
+	[924011040] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "之前的实验已经证实过，更加稳定的观测，可以带来更加丰厚的算力结晶打捞收益。",
+		id = 924011040
+	},
+	[924011041] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "单位时间内从大漩涡提取出的「移转结晶」越多，能给弥弥尔核心带来的提高就越多，稳赚不赔。",
+		id = 924011041
+	},
+	[924011042] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这我大概知道。所以这和观测舱变成两个有什么关系？",
+		id = 924011042
+	},
+	[924011043] = {
+		speaker = "海姆达尔",
+		prefab_name = "1033ui_story",
+		content = "简单来说，两个方面。一方面是，定向锚点可以稳固一段世界线的时间更久，你可以在里面潜行的时间有巨幅地增加，体验会好不少。",
+		id = 924011043
+	},
+	[924011044] = {
+		speaker = "海姆达尔",
+		prefab_name = "1033ui_story",
+		content = "另一方面，定向锚点本身也是一个世界线筛选机制，弥弥尔系统会辅助你筛选出最持久可控的世界线，你的任务难度降低了。",
+		id = 924011044
+	},
+	[924011045] = {
+		speaker = "",
+		prefab_name = "",
+		content = "说到这里，海姆达尔指了指我身边的大国主，又补充了一句。",
+		id = 924011045
+	},
+	[924011046] = {
+		speaker = "海姆达尔",
+		prefab_name = "1033ui_story",
+		content = "还有，所谓的「定向」，就是帮你直接确定了观测对象。这次实验成功后，理论上你想看谁的未来都可以，只要能邀请到本人过来。",
+		id = 924011046
+	},
+	[924011047] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "简单易懂，我明白了。",
+		id = 924011047
+	},
+	[924011048] = {
+		speaker = "",
+		prefab_name = "",
+		content = "十分钟后。",
+		id = 924011048
+	},
+	[924011049] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我顶着一连串的报警声，用力推开了观测舱的顶盖，从大量蒸腾的雾气中坐起身来。",
+		id = 924011049
+	},
+	[924011050] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "什么情况？过去多久了？",
+		id = 924011050
+	},
+	[924011051] = {
+		speaker = "海姆达尔",
+		prefab_name = "1033ui_story",
+		content = "1分12秒。压力负荷超出预期了，看下大国主情况怎么样？",
+		id = 924011051
+	},
+	[924011052] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "大国主，你还好吗？看看这是几？",
+		id = 924011052
+	},
+	[924011053] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "……咪。",
+		id = 924011053
+	},
+	[924011054] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "救命！海姆达尔，我听到兔子发出了猫叫，大国主坏掉了！",
+		id = 924011054
+	},
+	[924011055] = {
+		speaker = "海姆达尔",
+		prefab_name = "1033ui_story",
+		content = "……可能还在恍惚状态。有反应就算正常。",
+		id = 924011055
+	},
+	[924011056] = {
+		speaker = "海姆达尔",
+		prefab_name = "1033ui_story",
+		content = "今天的实验中止，我要重新评估一下定向锚点的负荷程度……",
+		id = 924011056
+	},
+	[924011057] = {
+		speaker = "",
+		prefab_name = "",
+		content = "并没来得及问清楚情况，我就被海姆达尔推出了隐科组的实验室。从那个不开心的样子来看，研发失败对她的打击不小。",
+		id = 924011057
+	},
+	[924011058] = {
+		speaker = "",
+		prefab_name = "",
+		content = "只是我没想到，刚打开办公室的门，就见到了意料之外的人——",
+		id = 924011058
+	},
+	[924011059] = {
+		speaker = "？？？",
+		prefab_name = "",
+		content = "阿管！",
+		id = 924011059
+	},
+	[924011060] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我去！",
+		id = 924011060
+	},
+	[924011061] = {
+		speaker = "",
+		prefab_name = "",
+		content = "小小的白色人影像是鼯鼠一般，从半空中扑在我的身上，然后结结实实地挂在了我的腰上。",
+		id = 924011061
+	},
+	[924011062] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "嗯嗯，味道还蛮清爽的，是我喜欢的款~",
+		id = 924011062
+	},
+	[924011063] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不是，你先下来！",
+		id = 924011063
+	},
+	[924011064] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "哎？——",
+		id = 924011064
+	},
+	[924011065] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我费力地将她扯下来，按在办公室的沙发上，然后以迅雷不及掩耳之势，从办公桌的抽屉里，拽出一包薯片，塞进梵天的手中。",
+		id = 924011065
+	},
+	[924011066] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "哇，阿管，你好熟练，感觉你越来越熟练了。",
+		id = 924011066
+	},
+	[924011067] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "老被你偷袭，怎么说也有点习惯了。",
+		id = 924011067
+	},
+	[924011068] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "先不说那个，你怎么来了？",
+		id = 924011068
+	},
+	[924011069] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "当然是来找奥丁呀。她去哪啦？",
+		id = 924011069
+	},
+	[924011070] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我肯定不知道……或者说，如果连你都找不到她，我岂不是更没可能。",
+		id = 924011070
+	},
+	[924011071] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "有道理。唉，那就无聊喽——",
+		id = 924011071
+	},
+	[924011072] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我没接她的话茬，而是照例坐在桌前，打开了弥弥尔系统，熟练地开始办公。",
+		id = 924011072
+	},
+	[924011073] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "阿管，你有没有闻到一股味道，好难闻。",
+		id = 924011073
+	},
+	[924011074] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "什么？",
+		id = 924011074
+	},
+	[924011075] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "班味，呜哇，班味要飘过来了，我要窒息了。",
+		id = 924011075
+	},
+	[924011076] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……",
+		id = 924011076
+	},
+	[924011077] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "现在不是周末吗？为什么你还在上班？原来深空之眼是无良公司？",
+		id = 924011077
+	},
+	[924011078] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我还想问，你怎么知道我会来办公室？",
+		id = 924011078
+	},
+	[924011079] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "随便抓你们部门的孩子问问，就知道了呀？她们都说你会在这里。",
+		id = 924011079
+	},
+	[924011080] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "没想到是真的，我刚来了没两分钟，你就出现啦。",
+		id = 924011080
+	},
+	[924011081] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……真该赖在隐科组不走啊。",
+		id = 924011081
+	},
+	[924011082] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "什么什么？",
+		id = 924011082
+	},
+	[924011083] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "没什么……今天本来也没计划。至于过来办公这个……你就当我是形成了肌肉记忆吧。",
+		id = 924011083
+	},
+	[924011084] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "原本的计划，只是顺道把这个东西放回来……",
+		id = 924011084
+	},
+	[924011085] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我一边说着，一边从兜里掏出了刚刚打通结局的游戏机，简单擦拭之后放回到了置物架上。",
+		id = 924011085
+	},
+	[924011086] = {
+		speaker = "",
+		prefab_name = "",
+		content = "瞥见这一幕的梵天倒是突然来了兴趣，小跑到我身边，然后观察起架子上的东西。",
+		id = 924011086
+	},
+	[924011087] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "想不到你还有这种爱好？",
+		id = 924011087
+	},
+	[924011088] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "咦？这个，《街角王者》的联名手柄？你还蛮识货的。",
+		id = 924011088
+	},
+	[924011089] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你还懂这个？我是《街角王者》的八十年老粉，限量款当然得拿下。",
+		id = 924011089
+	},
+	[924011090] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "看不出来啊，明明班味那么重，我还以为你早就把生命奉献给工作了呢~",
+		id = 924011090
+	},
+	[924011091] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "总不能整天忙着工作，没点业余爱好吧？顺便一提，现在站在你面前的是第十九届「街王格斗赛」的冠军。",
+		id = 924011091
+	},
+	[924011092] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "阿管你，冠军？",
+		id = 924011092
+	},
+	[924011093] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "奖杯都在这摆着，还能有假？",
+		id = 924011093
+	},
+	[924011094] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "既然如此——冠军阿管敢不敢和我打个赌呀？",
+		id = 924011094
+	},
+	[924011095] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你这次又想要啥？",
+		id = 924011095
+	},
+	[924011096] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "我看上这个手柄了。我们比一场，要是我赢了，你就把它送我。",
+		id = 924011096
+	},
+	[924011097] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "没可能的，你不如先想想输了该怎么办。",
+		id = 924011097
+	},
+	[924011098] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "这么狂妄？哼哼……那，要是我输了，我就满足你一个愿望好了。",
+		id = 924011098
+	},
+	[924011099] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "任何愿望都可以？",
+		id = 924011099
+	},
+	[924011100] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "当然咯，原初修正者说话算话。",
+		id = 924011100
+	},
+	[924011101] = {
+		speaker = "",
+		prefab_name = "",
+		content = "「那种」愿望也可以？",
+		id = 924011101
+	},
+	[924011102] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "哪种？你的想法似乎有些危险耶。",
+		id = 924011102
+	},
+	[924011103] = {
+		speaker = "",
+		prefab_name = "",
+		content = "让你痛不欲生那种/2.让你原地求饶那种",
+		id = 924011103
+	},
+	[924011104] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "……比如？",
+		id = 924011104
+	},
+	[924011105] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "哈哈哈哈哈哈哈，比如！",
+		id = 924011105
+	},
+	[924011106] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "拉着你陪我一起！狠狠！加！班！",
+		id = 924011106
+	},
+	[924011107] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "哈哈哈哈——呕，咳咳！喂，放手，别再揉了！",
+		id = 924011107
+	},
+	[924011108] = {
+		speaker = "",
+		prefab_name = "",
+		content = "趁我不注意的时候，这家伙已经坐在了我身上，用强劲的力道握住我的脸胡乱揉搓起来。",
+		id = 924011108
+	},
+	[924011109] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "好好好，错了！老大，错了！不让你陪我加班，行了吧？",
+		id = 924011109
+	},
+	[924011110] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "哼哼，这还差不多。",
+		id = 924011110
+	},
+	[924011111] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "所以呢，赌不赌？",
+		id = 924011111
+	},
+	[924011112] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "赌就赌，谁怕谁。但话说在前头，这回你可别耍赖啊。",
+		id = 924011112
+	},
+	[924011113] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "阿管，我们之间的信任呢？我有在你面前耍赖过吗？",
+		id = 924011113
+	},
+	[924011114] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……上次是谁说要带我去加尔逛逛，最后懒癌发作赖掉了？",
+		id = 924011114
+	},
+	[924011115] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "有吗有吗？人家不记得了。",
+		id = 924011115
+	},
+	[924011116] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天一脸无辜的歪着头，但动作却不停歇，熟练地从架子上取下游戏机。",
+		id = 924011116
+	},
+	[924011117] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……连说的词儿都和上次差不多。",
+		id = 924011117
+	},
+	[924011118] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "走吧，去你的房间，我要躺着玩。",
+		id = 924011118
+	},
+	[924011119] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我接过梵天递过来的手柄，坐在她的身边。《街角王者32》熟悉的音乐响起，我不再说话，只是专注在操作上。",
+		id = 924011119
+	},
+	[924011120] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天远比想象中厉害，但我还是抓住了她那一时的松懈，将梵天操纵的角色斩于马下。",
+		id = 924011120
+	},
+	[924011121] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "阿管，都怪你乱动，三局两胜。",
+		id = 924011121
+	},
+	[924011122] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "好好好，都依你的。",
+		id = 924011122
+	},
+	[924011123] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我已经基本了解了她的水平和思路，所以虽然再战一回，但局势还是一开始就在我的掌控之下。",
+		id = 924011123
+	},
+	[924011124] = {
+		speaker = "",
+		prefab_name = "",
+		content = "不过比起全神贯注的我，梵天则显得有些心不在焉，场面的劣势稍有扩大，她便按下了暂停键。",
+		id = 924011124
+	},
+	[924011125] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "唉……没意思。",
+		id = 924011125
+	},
+	[924011126] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天随意地把手柄扔到一边，浑身脱力呈大字型倒在床上。",
+		id = 924011126
+	},
+	[924011127] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不认真玩哪能有意思。",
+		id = 924011127
+	},
+	[924011128] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "就是打个游戏而已，有什么好认真的……你许愿吧。",
+		id = 924011128
+	},
+	[924011129] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天像是只在雪地里打滚的松鼠似的，一脸不满地在我的床上滚来滚去。",
+		id = 924011129
+	},
+	[924011130] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "算了吧……你都没认真和我比，我不占人便宜。",
+		id = 924011130
+	},
+	[924011131] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "回答我一个问题好了。",
+		id = 924011131
+	},
+	[924011132] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "想知道什么？帕瓦的三围，还是小伽梨的？",
+		id = 924011132
+	},
+	[924011133] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "如果拯救世界之后你想做什么？",
+		id = 924011133
+	},
+	[924011134] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "你每天脑子里都在想些什么东西？",
+		id = 924011134
+	},
+	[924011135] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "啊……就是在想假如有一个人一直都在为世界和平默默战斗，那么世界和平之后要去做什么比较好呢？",
+		id = 924011135
+	},
+	[924011136] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "而且偶尔畅想一下，也没什么不好的吧。",
+		id = 924011136
+	},
+	[924011137] = {
+		speaker = "",
+		prefab_name = "",
+		content = "床上的「大」字翻腾了几下，好像在认真思考的样子，但随后就没了动静。",
+		id = 924011137
+	},
+	[924011138] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "你想的还挺远的。",
+		id = 924011138
+	},
+	[924011139] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我觉得你们应该也曾经思考过。",
+		id = 924011139
+	},
+	[924011140] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "是啊，想过。身为修正者，我们的使命就是维系盖亚的运转。",
+		id = 924011140
+	},
+	[924011141] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "如果有一天，盖亚不需要我们了，或许像现在这样躺在你的床上也做不到了吧。",
+		id = 924011141
+	},
+	[924011142] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "所以，我不知道……",
+		id = 924011142
+	},
+	[924011143] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你可是原初修正者诶，如果连你也不知道的话，其他修正者岂不是更让人担忧……",
+		id = 924011143
+	},
+	[924011144] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "……",
+		id = 924011144
+	},
+	[924011145] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "比如，你们的身份要公之于众吗？或者你们会选择从人类社会中彻底隐身吗？可修正者的生命又几乎是无限的……",
+		id = 924011145
+	},
+	[924011146] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "……",
+		id = 924011146
+	},
+	[924011147] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天翻了个身，将头埋进了我的枕头里。",
+		id = 924011147
+	},
+	[924011148] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "梵天……？",
+		id = 924011148
+	},
+	[924011149] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "……",
+		id = 924011149
+	},
+	[924011150] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天一言不发，始终保持着把脸埋进枕头里的姿势，时间仿佛凝固了一般。",
+		id = 924011150
+	},
+	[924011151] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "阿管~你用的什么牌子的洗发水？真好闻~",
+		id = 924011151
+	},
+	[924011152] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我还以为你在干嘛，原来是在闻味道！？",
+		id = 924011152
+	},
+	[924011153] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "那不然呢？",
+		id = 924011153
+	},
+	[924011154] = {
+		speaker = "",
+		prefab_name = "",
+		content = "突如其来的铃声将我想说的话语都压回了喉咙，我叹了口气，从口袋里拿出了终端。",
+		id = 924011154
+	},
+	[924011155] = {
+		speaker = "海姆达尔",
+		prefab_name = "1033ui_story",
+		content = "管理员，我们定位到问题原因了，是双端口的算力分配策略有问题。",
+		id = 924011155
+	},
+	[924011156] = {
+		speaker = "海姆达尔",
+		prefab_name = "1033ui_story",
+		content = "我临时调整了一下算法，现在虽然减轻了一些锚定对象的负载压力，但还是远超出普通修正者能承载的极限了。除非……",
+		id = 924011156
+	},
+	[924011157] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "什么什么？你们在聊什么？",
+		id = 924011157
+	},
+	[924011158] = {
+		speaker = "海姆达尔",
+		prefab_name = "1033ui_story",
+		content = "我们在聊……你……",
+		id = 924011158
+	},
+	[924011159] = {
+		speaker = "",
+		prefab_name = "",
+		content = "观测枢的楼梯上，海姆达尔一脸见了鬼的表情，目光在我和梵天之间来回游荡。",
+		id = 924011159
+	},
+	[924011160] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "咳……她来找奥丁的，不过没找到。",
+		id = 924011160
+	},
+	[924011161] = {
+		speaker = "海姆达尔",
+		prefab_name = "1033ui_story",
+		content = "姑且当做合理。只是太巧了些。",
+		id = 924011161
+	},
+	[924011162] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "大国主呢？",
+		id = 924011162
+	},
+	[924011163] = {
+		speaker = "海姆达尔",
+		prefab_name = "1033ui_story",
+		content = "躲起来了，建议你不要尝试找她。",
+		id = 924011163
+	},
+	[924011164] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……好吧。没事就行。",
+		id = 924011164
+	},
+	[924011165] = {
+		speaker = "海姆达尔",
+		prefab_name = "1033ui_story",
+		content = "梵天前辈之前和往世书有过直接交互，对于盖亚的算力流负载情况应该有所了解，这是很大的优势。",
+		id = 924011165
+	},
+	[924011166] = {
+		speaker = "海姆达尔",
+		prefab_name = "1033ui_story",
+		content = "刚刚说，现在的定向锚点必须要由原初修正者级别的对象承担，或许梵天前辈，是我们目前最可靠的选择。",
+		id = 924011166
+	},
+	[924011167] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "需要我做什么？先说好哦，我可是听说什么「能看见未来」，才愿意过来试试的。",
+		id = 924011167
+	},
+	[924011168] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "阿管，你可别忽悠我。",
+		id = 924011168
+	},
+	[924011169] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你得问海姆达尔，这个我真不懂。",
+		id = 924011169
+	},
+	[924011170] = {
+		speaker = "海姆达尔",
+		prefab_name = "1033ui_story",
+		content = "简单来说，移转观测装置会从大漩涡里打捞起一段盖亚演算出的世界线，并将其回收的「移转结晶」作为弥弥尔核心的供能。",
+		id = 924011170
+	},
+	[924011171] = {
+		speaker = "海姆达尔",
+		prefab_name = "1033ui_story",
+		content = "而观测者要做的实际上是寻找一段较为完整的世界线碎片，并且将「锚」固定在上面。从你们的视角来看，就像是体验了一段未来。",
+		id = 924011171
+	},
+	[924011172] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "有些微妙耶……我的未来吗？",
+		id = 924011172
+	},
+	[924011173] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "怎么了？",
+		id = 924011173
+	},
+	[924011174] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "总觉得，我的未来会比现在更无聊。",
+		id = 924011174
+	},
+	[924011175] = {
+		speaker = "",
+		prefab_name = "",
+		content = "在观测舱里躺下去之前，看着梵天若有所思，又有些淡漠的青绿色眼眸，我不由产生了一些担忧。",
+		id = 924011175
+	},
+	[924011176] = {
+		speaker = "",
+		prefab_name = "",
+		content = "仿佛坠入深海一般，我的意识被某种力量牵引着飞向另一端。",
+		id = 924011176
+	},
+	[924021001] = {
+		speaker = "",
+		prefab_name = "",
+		content = "睁开眼睛，映入眼帘的是熟悉的终端与熟悉的办公桌。",
+		id = 924021001
+	},
+	[924021002] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这里是……我的办公室？「冰雪节庆典企划案审批」、「百花节仪式流程核对」……都是些什么玩意儿？",
+		id = 924021002
+	},
+	[924021003] = {
+		speaker = "",
+		prefab_name = "",
+		content = "虽然依旧有些疑惑，但光是这种程度，也不至于让我的大脑停转。视线左右一扫，办公室里除了我以外似乎没有别人。",
+		id = 924021003
+	},
+	[924021004] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……人呢？",
+		id = 924021004
+	},
+	[924021005] = {
+		speaker = "",
+		prefab_name = "",
+		content = "根据海姆达尔的说法，移转观测中的梵天，并非与我一同进行实验的梵天，而是「未来的梵天」。",
+		id = 924021005
+	},
+	[924021006] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我站起身来环顾四周，希望找到更多线索。紧接着——我便看见了某个裹成团的蓝灰色物体，盘踞在办公室的沙发上。",
+		id = 924021006
+	},
+	[924021007] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "？",
+		id = 924021007
+	},
+	[924021008] = {
+		speaker = "？？？",
+		prefab_name = "",
+		content = "阿管——还有薯片吗？",
+		id = 924021008
+	},
+	[924021009] = {
+		speaker = "",
+		prefab_name = "",
+		content = "熟悉的声音将我的思绪打断，梵天保持着盘成团的姿势转过身来。",
+		id = 924021009
+	},
+	[924021010] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "喂我，啊——",
+		id = 924021010
+	},
+	[924021011] = {
+		speaker = "",
+		prefab_name = "",
+		content = "尽管在经历了这么多次移转观测之后，我有自信无论看到怎样的情景，都能淡然处之，但眼前的画面还是有些超乎我的想象。",
+		id = 924021011
+	},
+	[924021012] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "呃……你生病了？",
+		id = 924021012
+	},
+	[924021013] = {
+		speaker = "",
+		prefab_name = "",
+		content = "虽说梵天不像是会生病的样子，但我更难想象，那个仿佛出场自带吵闹力场的人，会变成这副无精打采的样子。",
+		id = 924021013
+	},
+	[924021014] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "没有啊……只是不想动而已。",
+		id = 924021014
+	},
+	[924021015] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我叹了口气，拿起桌角的黄色包装袋，来到长沙发边坐下，取出薯片塞进她的嘴里。",
+		id = 924021015
+	},
+	[924021016] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "薯片，豪哧。",
+		id = 924021016
+	},
+	[924021017] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她嚼着，一边用力扭动着身体，将头枕在了我的腿上。",
+		id = 924021017
+	},
+	[924021018] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "再来一片，啊——",
+		id = 924021018
+	},
+	[924021019] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我看看……辣条茄子味？你喜欢这种？",
+		id = 924021019
+	},
+	[924021020] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "都吃腻了嘛……",
+		id = 924021020
+	},
+	[924021021] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我就像在投喂小动物一样，将薯片不断递进梵天嘴里，而她则保持着仰头看着我的姿势，嘎吱嘎吱啃食着薯片。",
+		id = 924021021
+	},
+	[924021022] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "像只仓鼠……啊！",
+		id = 924021022
+	},
+	[924021023] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天有些不满地咬上我的手指，从手指传来的轻微刺痛不知是由于她的慵懒，还是她姑且有在收力。",
+		id = 924021023
+	},
+	[924021024] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "我听到了。",
+		id = 924021024
+	},
+	[924021025] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那是在夸你可爱……能把我的手指放开吗？",
+		id = 924021025
+	},
+	[924021026] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "……我讨厌毛茸茸的东西。",
+		id = 924021026
+	},
+	[924021027] = {
+		speaker = "",
+		prefab_name = "",
+		content = "话虽如此，梵天依旧松开了嘴，但比起消气了，倒更让人感觉她是对一切都提不起劲。",
+		id = 924021027
+	},
+	[924021028] = {
+		speaker = "",
+		prefab_name = "",
+		content = "眼前的一切都让我感到疑惑，但我还是决定从最基础的部分问起。",
+		id = 924021028
+	},
+	[924021029] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "既然没生病，那你这是怎么了？",
+		id = 924021029
+	},
+	[924021030] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "提不起劲嘛——",
+		id = 924021030
+	},
+	[924021031] = {
+		speaker = "",
+		prefab_name = "",
+		content = "经过了一段简短的问话后，我唯一知晓的事情便是，这似乎是未来梵天的常态。",
+		id = 924021031
+	},
+	[924021032] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "怎么了？今天突然变成问题宝宝。",
+		id = 924021032
+	},
+	[924021033] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "呃……只是稍微有点担心。",
+		id = 924021033
+	},
+	[924021034] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "这样哦……我不是和平时一样嘛，没什么好担心的。",
+		id = 924021034
+	},
+	[924021035] = {
+		speaker = "",
+		prefab_name = "",
+		content = "眼看从梵天嘴里问不出什么情报，我选择先暂时放她在一边瘫着，自己回到办公桌前。",
+		id = 924021035
+	},
+	[924021036] = {
+		speaker = "",
+		prefab_name = "",
+		content = "为了进一步了解「这个未来」的情况，我翻找着终端内一切可阅览的资料，试图找到更多关于未来的线索。",
+		id = 924021036
+	},
+	[924021037] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "除了节庆活动和娱乐公关……就没有别的了吗？",
+		id = 924021037
+	},
+	[924021038] = {
+		speaker = "",
+		prefab_name = "",
+		content = "短暂的一段时间过去，无论哪个资料都在告诉我一件事——第九部门的主要业务已经不再是与视骸战斗。",
+		id = 924021038
+	},
+	[924021039] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "大家都不需要再拼命战斗，世界和平的未来……早上好像还聊过类似的话题。",
+		id = 924021039
+	},
+	[924021040] = {
+		speaker = "",
+		prefab_name = "",
+		content = "这时我才发现，梵天依旧缩在办公室的沙发角落，像是一小团被揉起来，扔在路边的口香糖纸。",
+		id = 924021040
+	},
+	[924021041] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "嗯……今天的计划是……躺一下午？",
+		id = 924021041
+	},
+	[924021042] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "没事可做嘛……",
+		id = 924021042
+	},
+	[924021043] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "既然你无聊成这样，不如找点事情做？",
+		id = 924021043
+	},
+	[924021044] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "比如？",
+		id = 924021044
+	},
+	[924021045] = {
+		speaker = "",
+		prefab_name = "",
+		content = "那和平日大相径庭的样子实在是让人难以忽视，我开始回忆起刚才在终端里看见的内容。",
+		id = 924021045
+	},
+	[924021046] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "比如说出去玩？最近核心城这边好像在举办各种庆典活动。",
+		id = 924021046
+	},
+	[924021047] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "人多，无聊。不想去……",
+		id = 924021047
+	},
+	[924021048] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那要不去爬山？最近露营好像很流行。",
+		id = 924021048
+	},
+	[924021049] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "累，无聊。不想去……",
+		id = 924021049
+	},
+	[924021050] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "要不去千星海冲浪？正好下一辆光轨会在8点发车。",
+		id = 924021050
+	},
+	[924021051] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "远，热，无聊。不想去……",
+		id = 924021051
+	},
+	[924021052] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "就没什么想干的事情吗？",
+		id = 924021052
+	},
+	[924021053] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "哈啊……阿管，你是不是想偷懒了？",
+		id = 924021053
+	},
+	[924021054] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "都快下班了，总得找点事干？不然班味真的要熏死人了。",
+		id = 924021054
+	},
+	[924021055] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "噗，你还记得这个梗啊。",
+		id = 924021055
+	},
+	[924021056] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "……那就玩会游戏吧？",
+		id = 924021056
+	},
+	[924021057] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天坐起身来，招了招手，让一个游戏机凭空出现在她的手掌上。",
+		id = 924021057
+	},
+	[924021058] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这不还是有事可做吗。",
+		id = 924021058
+	},
+	[924021059] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "阿管？",
+		id = 924021059
+	},
+	[924021060] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "咳咳，要玩的话不如咱们就放开了玩？我知道个好地方，跟我来。",
+		id = 924021060
+	},
+	[924021061] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "哟？这么好的地方，金屋藏娇用的？",
+		id = 924021061
+	},
+	[924021062] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "噗，说什么呢！这是员工福利，公司分配给我的，之前一直没用而已！",
+		id = 924021062
+	},
+	[924021063] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "诶——谁知道呢？拿去拿去。",
+		id = 924021063
+	},
+	[924021064] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天慵懒地在游戏终端前盘腿坐下，将一旁的2P手柄递给我。",
+		id = 924021064
+	},
+	[924021065] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "今天玩点传统名作怎么样，比如《勇者斗山神》之类的。",
+		id = 924021065
+	},
+	[924021066] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "好啊，刚好我从没打过最终BOSS。",
+		id = 924021066
+	},
+	[924021067] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你只是懒吧？靠着最多维持三分钟的热度可见不了最终山神的面。",
+		id = 924021067
+	},
+	[924021068] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "才没有——",
+		id = 924021068
+	},
+	[924021069] = {
+		speaker = "",
+		prefab_name = "",
+		content = "伴随着熟悉的音乐声响起，我轻车熟路地和梵天配合起来。或许是因为手感火热，我们并没有花多大工夫，就将山神一一击败。",
+		id = 924021069
+	},
+	[924021070] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "呼……差点翻车了。",
+		id = 924021070
+	},
+	[924021071] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "不是还有个猿神嘛？快点快点~",
+		id = 924021071
+	},
+	[924021072] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "好好好，我这就把它找出来。",
+		id = 924021072
+	},
+	[924021073] = {
+		speaker = "",
+		prefab_name = "",
+		content = "又是一个小时过去，我们结束了与猿神的激战，静静望着屏幕上跳出的字幕。",
+		id = 924021073
+	},
+	[924021074] = {
+		speaker = "",
+		prefab_name = "",
+		content = "「妖神已逝，名门倾覆。接下来的世泼，将会迎来和平的新时代，可喜可贺，可喜可贺……」",
+		id = 924021074
+	},
+	[924021075] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不愧是传统名作。",
+		id = 924021075
+	},
+	[924021076] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "我还是第一次完成五山神击败的成就……阿管，厉害啊。",
+		id = 924021076
+	},
+	[924021077] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我看向梵天。她语气虽然轻松，脸上却并没有击败强敌的成就感，也没有通关游戏的喜悦。",
+		id = 924021077
+	},
+	[924021078] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "阿管，你说啊……勇者打败山神之后，该去做什么呢？",
+		id = 924021078
+	},
+	[924021079] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "做什么……山神全部打败之后，勇者也没法干什么吧，游戏没有别的内容了。",
+		id = 924021079
+	},
+	[924021080] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "是啊，什么都没法干。",
+		id = 924021080
+	},
+	[924021081] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天坐直身子，将注意力转回了屏幕上，只留下一个藏在阴影中的侧脸。",
+		id = 924021081
+	},
+	[924021082] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "修正者的使命是消灭视骸，那如果有一天，视骸危机解除了呢？你们作为修正者会怎样呢？",
+		id = 924021082
+	},
+	[924021083] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "阿管，你想得可真远啊。",
+		id = 924021083
+	},
+	[924021084] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "想想又不犯法。或者我换个问题，假如世界和平了，你准备做什么？",
+		id = 924021084
+	},
+	[924021085] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "……我不知道。",
+		id = 924021085
+	},
+	[924021086] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "梵天，你……",
+		id = 924021086
+	},
+	[924021087] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "啊啊……明明是我自己叫你来玩的，却说这些扫兴的话，对不起啦——",
+		id = 924021087
+	},
+	[924021088] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "等等。就算这款游戏打完了，我们也可以试着换别的游戏不是吗？",
+		id = 924021088
+	},
+	[924021089] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "哪有那么简单……就能找到想玩的游戏呢。",
+		id = 924021089
+	},
+	[924021090] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "世界这么大，总会找到合适的游戏，今天我们才玩了这一款呢。",
+		id = 924021090
+	},
+	[924021091] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她埋在腿弯后的脑袋抬起来，朝我眨巴了两下眼睛。",
+		id = 924021091
+	},
+	[924021092] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "阿管，怎么突然这么关心我？",
+		id = 924021092
+	},
+	[924021093] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "倒也没什么特别的原因。",
+		id = 924021093
+	},
+	[924021094] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "说实话，比起那个总是吵吵闹闹的梵天，现在的你反而会让人觉得清净不少，但是……",
+		id = 924021094
+	},
+	[924021095] = {
+		speaker = "",
+		prefab_name = "",
+		content = "你还是笑起来比较好看。",
+		id = 924021095
+	},
+	[924021096] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "噗……哈哈哈哈！阿管，装帅装过头了~！",
+		id = 924021096
+	},
+	[924021097] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她矫健地飞扑过来，跨坐在我的腿上，用双手在我的脸上用力胡乱揉搓着。",
+		id = 924021097
+	},
+	[924021098] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "喂，住手，噗——",
+		id = 924021098
+	},
+	[924021099] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "你可真是个奇怪的人。",
+		id = 924021099
+	},
+	[924021100] = {
+		speaker = "",
+		prefab_name = "",
+		content = "这么说着，她停下了手上的动作，静静地捧着我的脸，嘴角微微上扬，浮现出一个柔和的笑容。",
+		id = 924021100
+	},
+	[924021101] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "哈？我明明是好心，你这是什么话。",
+		id = 924021101
+	},
+	[924021102] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "是在夸你。",
+		id = 924021102
+	},
+	[924021103] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "完全没看出来。",
+		id = 924021103
+	},
+	[924021104] = {
+		speaker = "",
+		prefab_name = "",
+		content = "就像早前逃避了我的问题的笑容一样，两张面容重叠在了一起。这让我陷入了某种暧昧难明的既视感之中。",
+		id = 924021104
+	},
+	[924021105] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "阿管，你想好要换什么玩了吗？我要主角养眼的那种。",
+		id = 924021105
+	},
+	[924021106] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那《勇者战魔王》怎么样？女主角很可爱。",
+		id = 924021106
+	},
+	[924021107] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "那还等什么，赶紧换！我早就看这些山神不爽了……",
+		id = 924021107
+	},
+	[924021108] = {
+		speaker = "",
+		prefab_name = "",
+		content = "或许是我的话语真的起到了些许作用，又或许是别的什么原因，那之后的梵天看起来比之前开心了不少。",
+		id = 924021108
+	},
+	[924021109] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "阿管你别乱动，这样我怎么操作？",
+		id = 924021109
+	},
+	[924021110] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "又不是我想乱动，谁叫你老挡住屏幕？",
+		id = 924021110
+	},
+	[924021111] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "看屏幕，它要放大招了！",
+		id = 924021111
+	},
+	[924021112] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "先下手为强！",
+		id = 924021112
+	},
+	[924021113] = {
+		speaker = "",
+		prefab_name = "",
+		content = "千钧一发之际，我的招式后发先至，将魔王的血量清空。伴随着胜利的音效，魔王轰然倒地。",
+		id = 924021113
+	},
+	[924021114] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "舒服咯~！",
+		id = 924021114
+	},
+	[924021115] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "呼……",
+		id = 924021115
+	},
+	[924021116] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "感觉和你在一起，心情总能变轻松不少，谢啦。",
+		id = 924021116
+	},
+	[924021117] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这有什么好谢——不对！梵天，还有隐藏BOSS！把手柄拿起来！",
+		id = 924021117
+	},
+	[924021118] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "啊？话才说一半呢，它跑出来干嘛！",
+		id = 924021118
+	},
+	[924021119] = {
+		speaker = "",
+		prefab_name = "",
+		content = "待到天边泛起鱼肚白时，我们终于结束了与隐藏BOSS的激战。",
+		id = 924021119
+	},
+	[924021120] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "要死了……终于赢了。",
+		id = 924021120
+	},
+	[924021121] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "好困，睡觉！",
+		id = 924021121
+	},
+	[924021122] = {
+		speaker = "",
+		prefab_name = "",
+		content = "比起胜利的喜悦，更先找上我的，是难以抵抗的睡意，我向后一仰，就这样昏昏沉沉地睡去。",
+		id = 924021122
+	},
+	[924021123] = {
+		speaker = "",
+		prefab_name = "",
+		content = "等到再次睁开双眼，我看见的却并非是观测舱的顶盖。熟悉的房间陈设昭示着——移转观测远未结束。",
+		id = 924021123
+	},
+	[924021124] = {
+		speaker = "",
+		prefab_name = "",
+		content = "但最重要的——叫醒我的是一根戳在脸上的脚丫子。",
+		id = 924021124
+	},
+	[924021125] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "？！噗……",
+		id = 924021125
+	},
+	[924021126] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这是还在……嘶……不愧是你。",
+		id = 924021126
+	},
+	[924021127] = {
+		speaker = "",
+		prefab_name = "",
+		content = "此时此刻，我深刻理解到了一件事——梵天的睡相差到难以置信。",
+		id = 924021127
+	},
+	[924021128] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这睡相差的，少说得有八百年功力了吧？",
+		id = 924021128
+	},
+	[924021129] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "阿管……我怎么啦？是不是又说人坏话……",
+		id = 924021129
+	},
+	[924021130] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "如果你能先把脚收回去再说话就好了。",
+		id = 924021130
+	},
+	[924021131] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "唔……",
+		id = 924021131
+	},
+	[924021132] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "……再睡会。",
+		id = 924021132
+	},
+	[924021133] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "喂！别闭眼！把脚拿开，从我身上下去！",
+		id = 924021133
+	},
+	[924021134] = {
+		speaker = "",
+		prefab_name = "",
+		content = "等到梵天再次醒过来，已经是半个小时后的事情了。",
+		id = 924021134
+	},
+	[924021135] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "好累，身体被管理员掏空了。",
+		id = 924021135
+	},
+	[924021136] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "说话越来越不讲究了哈？",
+		id = 924021136
+	},
+	[924021137] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "是真的嘛，昨晚已经那么虚弱了，你还拉着不让人家睡。",
+		id = 924021137
+	},
+	[924021138] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "语气挺像那回事的，别一边说一边挠屁股就更能迷惑人了。",
+		id = 924021138
+	},
+	[924021139] = {
+		speaker = "",
+		prefab_name = "",
+		content = "嘴上吐槽着，手上动作没停。我快速洗漱之后，在终端里搜索了一圈，简单定下了今后的计划。",
+		id = 924021139
+	},
+	[924021140] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "也不是打一晚上游戏就能解决的问题……",
+		id = 924021140
+	},
+	[924021141] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "稍微准备一下，我们该出门了。",
+		id = 924021141
+	},
+	[924021142] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "唔……出门？去哪？",
+		id = 924021142
+	},
+	[924021143] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "容我先保密。",
+		id = 924021143
+	},
+	[924031001] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "怎么样，以前没来过吧？",
+		id = 924031001
+	},
+	[924031002] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "阿管……光是看泳装美少女，有必要跑到这里来吗？",
+		id = 924031002
+	},
+	[924031003] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "别急别急，好看的还在后面呢。",
+		id = 924031003
+	},
+	[924031004] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我拍了拍身旁的空位，示意梵天和我一起坐在观众席上，没过多久，一只乐队登上舞台开始演奏起了夏什瓦特风格的音乐。",
+		id = 924031004
+	},
+	[924031005] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "「白金乐队」！？",
+		id = 924031005
+	},
+	[924031006] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "有线人告诉我……这是某个爱摸鱼的黑帮老大最喜欢的乐队。",
+		id = 924031006
+	},
+	[924031007] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我扬起了手中的终端，其上的画面还停留在我和伽梨的聊天框上。",
+		id = 924031007
+	},
+	[924031008] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "……伽梨这孩子，这么快就把老大卖给别人了。",
+		id = 924031008
+	},
+	[924031009] = {
+		speaker = "",
+		prefab_name = "",
+		content = "象征性地插科打诨之后，梵天再次将视线看回舞台，娇小的身躯伴随着音乐轻轻摇摆着。",
+		id = 924031009
+	},
+	[924031010] = {
+		speaker = "",
+		prefab_name = "",
+		content = "而我也沉浸在音乐的氛围里，直到演奏结束为止都并未说话。",
+		id = 924031010
+	},
+	[924031011] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "哼哼，「白金乐队」的歌还是和以前一样……真好。",
+		id = 924031011
+	},
+	[924031012] = {
+		speaker = "",
+		prefab_name = "",
+		content = "你喜欢就行。",
+		id = 924031012
+	},
+	[924031013] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "你是怎么把隐退几年的乐队请过来的？",
+		id = 924031013
+	},
+	[924031014] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "稍微——动用了点人脉，毕竟我也算这里的产权人之一。",
+		id = 924031014
+	},
+	[924031015] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "哈？什么时候的事……你也太夸张了。",
+		id = 924031015
+	},
+	[924031016] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不夸张吧。总之我的目的是让你打起精神来，得请最合适的人才行。",
+		id = 924031016
+	},
+	[924031017] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "哼哼，想不到你还是个直球选手。",
+		id = 924031017
+	},
+	[924031018] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "那……既然你都做到这份上了，我也不能没点表示。",
+		id = 924031018
+	},
+	[924031019] = {
+		speaker = "",
+		prefab_name = "",
+		content = "与梵天的话语一同出现的，是从天际线映出的、横跨整个岛屿的巨大彩虹。这未曾预料的景象让我几乎失语，周围的人群也开始沸腾起来。",
+		id = 924031019
+	},
+	[924031020] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "原初权能，还能这么用？",
+		id = 924031020
+	},
+	[924031021] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "烟花表演之类的咯？",
+		id = 924031021
+	},
+	[924031022] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那这表演的规模，可真大啊。",
+		id = 924031022
+	},
+	[924031023] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "嗯？重点是，你到底喜欢不喜欢。",
+		id = 924031023
+	},
+	[924031024] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天朝我走近了两步，从下方注视着我的面颊。",
+		id = 924031024
+	},
+	[924031025] = {
+		speaker = "",
+		prefab_name = "",
+		content = "点头",
+		id = 924031025
+	},
+	[924031026] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "这下我们就公平了~",
+		id = 924031026
+	},
+	[924031027] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "刚刚你的原话，「你喜欢就行」，嘿嘿。",
+		id = 924031027
+	},
+	[924031028] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她绕到我的身边，很自然地抱起我的胳膊，还很无耻地捏了一把我的臀部。",
+		id = 924031028
+	},
+	[924031029] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "怎么样，你的计划达到了？",
+		id = 924031029
+	},
+	[924031030] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我先说好，别仗着你看起来像小孩子就耍流氓。",
+		id = 924031030
+	},
+	[924031031] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "怎么了嘛，意外的手感还挺不错咧？",
+		id = 924031031
+	},
+	[924031032] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……那可真是谢谢。",
+		id = 924031032
+	},
+	[924031033] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "所以呢，计划达到了没？我今天还挺满意的，晚上就勉为其难再和你挤一挤好了。",
+		id = 924031033
+	},
+	[924031034] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "实际上我的计划才刚开始。",
+		id = 924031034
+	},
+	[924031035] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "哎？明天还要出门？要去哪？",
+		id = 924031035
+	},
+	[924031036] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "千星海。",
+		id = 924031036
+	},
+	[924031037] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我与梵天一同站在沙滩上。大海如同一块无垠的宝石，阳光洒下温柔的金辉，点亮了波光粼粼的水面。",
+		id = 924031037
+	},
+	[924031038] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天站在海边，蓝灰色的长发被海风吹起，让她的侧脸看起来像是置身在画卷中一般。",
+		id = 924031038
+	},
+	[924031039] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "哇啊！？阿管你干嘛！",
+		id = 924031039
+	},
+	[924031040] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我掏出了大国主开发的兔兔水枪，伴随着兔耳的跳动，数发水弹精准的击中了梵天。",
+		id = 924031040
+	},
+	[924031041] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "当然是报昨天的一记之仇，哈哈！我只是换了件更趁手的兵器而已。",
+		id = 924031041
+	},
+	[924031042] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "阿——管——！是你先用武器的哦？",
+		id = 924031042
+	},
+	[924031043] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天轻踮脚尖浮上空中，从身后的虚空中开始构筑出比人还要高大、足以被称为「大炮」的水枪。",
+		id = 924031043
+	},
+	[924031044] = {
+		speaker = "",
+		prefab_name = "",
+		content = "有人要开始耍赖了",
+		id = 924031044
+	},
+	[924031045] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "呵，我可不怕你……别小看了深空之眼射击水平最强的人类啊！",
+		id = 924031045
+	},
+	[924031046] = {
+		speaker = "",
+		prefab_name = "",
+		content = "半小时后。",
+		id = 924031046
+	},
+	[924031047] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我喘着粗气倒在沙地里，湿透了的外套和衬衫被扔在一边。身边并排躺着梵天，时不时会抬起手，有气无力地往我身上抛沙子。",
+		id = 924031047
+	},
+	[924031048] = {
+		speaker = "",
+		prefab_name = "",
+		content = "刚刚经历过一场艰苦卓绝的战斗，现在的地面上，到处都是我们战斗时留下的水弹坑。",
+		id = 924031048
+	},
+	[924031049] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "别扔沙子了，你就算把我埋起来，我也只会说，我是让着你的。",
+		id = 924031049
+	},
+	[924031050] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "哼，我不管！我赢了就是我赢了。",
+		id = 924031050
+	},
+	[924031051] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "行行行好好好嗯嗯嗯对对……",
+		id = 924031051
+	},
+	[924031052] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "怎么，你不服气？",
+		id = 924031052
+	},
+	[924031053] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "您都用上神能了，我哪还敢不服气。",
+		id = 924031053
+	},
+	[924031054] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "哦？让我看看你有没有说谎~",
+		id = 924031054
+	},
+	[924031055] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天一个翻身跨坐在我身上，将手抚上我的双颊，保持着几乎脸贴脸的距离，就这么静静地看着我。",
+		id = 924031055
+	},
+	[924031056] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "当然没有，骗我你是小狗。",
+		id = 924031056
+	},
+	[924031057] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "没说谎……嗯，那我就当成是这样好了。",
+		id = 924031057
+	},
+	[924031058] = {
+		speaker = "",
+		prefab_name = "",
+		content = "背对着夕阳，梵天向我露出了柔和的笑容，但不知为何……那笑容却总让我觉得空虚和忧伤。",
+		id = 924031058
+	},
+	[924031059] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我尝试读懂她眸子后蕴藏的复杂情感，但直到黄昏的余晖沉入大海，我只记住了从她发梢滴落的水滴的冰凉触感。",
+		id = 924031059
+	},
+	[924031060] = {
+		speaker = "",
+		prefab_name = "",
+		content = "你在追求的是什么？或者你在隐藏怎样的思绪？",
+		id = 924031060
+	},
+	[924031061] = {
+		speaker = "",
+		prefab_name = "",
+		content = "——她的眼神最终错开了与我的接触，这些疑问也最终沉入心底。",
+		id = 924031061
+	},
+	[924031062] = {
+		speaker = "",
+		prefab_name = "",
+		content = "在那之后的数日，我带着梵天四处游玩，把之前想到的地方几乎全去了一次。",
+		id = 924031062
+	},
+	[924031063] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "那些穿黑色紧身衣的家伙也变了啊……随便两句话就让我们上来。",
+		id = 924031063
+	},
+	[924031064] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "危机已经解除了，就算是科尔盖，也没必要一直搞得那么紧绷。",
+		id = 924031064
+	},
+	[924031065] = {
+		speaker = "",
+		prefab_name = "",
+		content = "冷风吹过，呼出的浊气在接触到空气的瞬间便化为白色的雾气，随之而来的寒意让我忍不住打了个哆嗦。",
+		id = 924031065
+	},
+	[924031066] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "拿去，虽然味道怎么样说不准，但至少能暖和点。",
+		id = 924031066
+	},
+	[924031067] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天只是轻轻挥了挥手，一杯热腾腾的咖啡就出现在我的手中。",
+		id = 924031067
+	},
+	[924031068] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "真羡慕你……怎么穿都不会觉得冷。",
+		id = 924031068
+	},
+	[924031069] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "这就叫体质好。",
+		id = 924031069
+	},
+	[924031070] = {
+		speaker = "",
+		prefab_name = "",
+		content = "谈话间，黎明的微光悄然染上夜空的边缘，冰晶在晨光中轻轻坠落，带着光芒的余韵，如星辰碎裂，漫天飞舞。",
+		id = 924031070
+	},
+	[924031071] = {
+		speaker = "",
+		prefab_name = "",
+		content = "从一线微芒到满天霞光，直至天光大亮，我们两人都默契地没有再说话，只是静静地看着天空的变幻。",
+		id = 924031071
+	},
+	[924031072] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这就是银松山特产「价值百万的日出」，客官作何感想。",
+		id = 924031072
+	},
+	[924031073] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "呵呵……谁估的价？",
+		id = 924031073
+	},
+	[924031074] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "反正不是我。",
+		id = 924031074
+	},
+	[924031075] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "值不值百万说不清楚……但确实很美。",
+		id = 924031075
+	},
+	[924031076] = {
+		speaker = "",
+		prefab_name = "",
+		content = "冰晶缓缓落在梵天长长的睫毛上，我刚想伸手去摘，手掌却先一步被她握住。",
+		id = 924031076
+	},
+	[924031077] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "真的很漂亮……一切都才刚刚开始，未来的一切也还无人知晓。",
+		id = 924031077
+	},
+	[924031078] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她说的每一个字都很轻柔，仿佛是沉醉在梦醒时分的怠惰中一般。",
+		id = 924031078
+	},
+	[924031079] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "梵天……",
+		id = 924031079
+	},
+	[924031080] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "最近真的很开心……每一天像是在过节一样。",
+		id = 924031080
+	},
+	[924031081] = {
+		speaker = "",
+		prefab_name = "",
+		content = "那有什么不好吗？/2.这不是蛮好吗？",
+		id = 924031081
+	},
+	[924031082] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "不管怎样的节日，总有结束的一天……",
+		id = 924031082
+	},
+	[924031083] = {
+		speaker = "",
+		prefab_name = "",
+		content = "太阳缓缓越过雪峰，刚才那梦幻般的画面早已在最初的恍惚之后，悄然离我们而去。",
+		id = 924031083
+	},
+	[924031084] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "你看。",
+		id = 924031084
+	},
+	[924031085] = {
+		speaker = "",
+		prefab_name = "",
+		content = "冰凉的触感从指间传来，不知不觉间，梵天的手掌又握紧了几分。",
+		id = 924031085
+	},
+	[924031086] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……",
+		id = 924031086
+	},
+	[924031087] = {
+		speaker = "",
+		prefab_name = "",
+		content = "两人相顾无言，冷风的呼啸成了山峦间唯一剩下的声响。",
+		id = 924031087
+	},
+	[924031088] = {
+		speaker = "",
+		prefab_name = "",
+		content = "不知坐了多久，我们很有默契的站起身来，在冷风彻底将身体冻僵之前离开了银松山。",
+		id = 924031088
+	},
+	[924031089] = {
+		speaker = "",
+		prefab_name = "",
+		content = "时至今日，我们都没了继续外出游玩的兴致。兜兜转转后，还是回到了那间小小的游戏房。",
+		id = 924031089
+	},
+	[924031090] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "哈——还是家里舒服……",
+		id = 924031090
+	},
+	[924031091] = {
+		speaker = "",
+		prefab_name = "",
+		content = "坐在电竞椅上的梵天伸了个懒腰，不知不觉间，房间已经变得昏暗起来，唯一的光源便是眼前的终端屏幕。",
+		id = 924031091
+	},
+	[924031092] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "等等，我记得，这里好像是我的房子？",
+		id = 924031092
+	},
+	[924031093] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "阿管的东西，就是我的东西~我的东西，还是我的东西~",
+		id = 924031093
+	},
+	[924031094] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我可不记得签过那种不平等条约。",
+		id = 924031094
+	},
+	[924031095] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一如既往的插科打诨，一如既往的房间，但沉默的空气却在不知不觉间将整间屋子填满。",
+		id = 924031095
+	},
+	[924031096] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "阿管。",
+		id = 924031096
+	},
+	[924031097] = {
+		speaker = "",
+		prefab_name = "",
+		content = "不知隔了多久，梵天再次开口了。",
+		id = 924031097
+	},
+	[924031098] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "怎么了？",
+		id = 924031098
+	},
+	[924031099] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "口渴了~我们出去买点喝的吧？",
+		id = 924031099
+	},
+	[924031100] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我望向角落，被涂成红色的饮料柜里满载着各式各样的饮料。",
+		id = 924031100
+	},
+	[924031101] = {
+		speaker = "",
+		prefab_name = "",
+		content = "点了点头。/2.默不作声。",
+		id = 924031101
+	},
+	[924031102] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "出发~",
+		id = 924031102
+	},
+	[924031103] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "意思是默认咯？那就走吧。",
+		id = 924031103
+	},
+	[924031104] = {
+		speaker = "",
+		prefab_name = "",
+		content = "夜色深沉，偌大的城市在这一刻仿佛沉睡，只有脚步声回响在空荡荡的街道上。",
+		id = 924031104
+	},
+	[924031105] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我们换乘了一段空轨，走了很远很远，直到远离核心城城区很久，谁都没有说话。",
+		id = 924031105
+	},
+	[924031106] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "都走这么久了，你想说些什么？",
+		id = 924031106
+	},
+	[924031107] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "倒不是什么特别的事情，想对你说声谢谢。",
+		id = 924031107
+	},
+	[924031108] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "就像我在银松山上说过的一样……这些日子真的很开心。要是没有你在的话，我肯定还是每天瘫在沙发上无所事事。",
+		id = 924031108
+	},
+	[924031109] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "只是想道谢的话，没必要特意跑到暮下区来吧。",
+		id = 924031109
+	},
+	[924031110] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天并未回答我的问题，而是趴在一旁的栏杆上，看向身侧那一盏有些破旧的街灯。",
+		id = 924031110
+	},
+	[924031111] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "只是觉得这里比较适合我而已。",
+		id = 924031111
+	},
+	[924031112] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "是吗？我没看出来。",
+		id = 924031112
+	},
+	[924031113] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "终结于过去，停滞在现在，失去了未来……就和我一样。",
+		id = 924031113
+	},
+	[924031114] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "为什么是「失去」未来？",
+		id = 924031114
+	},
+	[924031115] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "你很久很久以前好像问过的，修正者该如何自处呢？",
+		id = 924031115
+	},
+	[924031116] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "我们没有「寿命」这种概念，现在也没有必须要去做的事情。这种状态会一直持续下去。",
+		id = 924031116
+	},
+	[924031117] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "其他人我不知道，但对我来说，我所看到的现在，也是往后永续不变的「未来」，不是么。",
+		id = 924031117
+	},
+	[924031118] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "说不定还会有其他路？",
+		id = 924031118
+	},
+	[924031119] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "都已经走到终点了，哪里还会有路呢。",
+		id = 924031119
+	},
+	[924031120] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她勉强扯起一丝笑容，跳到路边的栏杆上坐下，居高临下地揉了揉我的头发。",
+		id = 924031120
+	},
+	[924031121] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "阿管，我知道你在为我着想，就像我在银松山上说过的一样……这些日子真的很开心，会在乎我这么一个空壳的……说不定也只有你了。",
+		id = 924031121
+	},
+	[924031122] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你怎么就成空壳了，没那回事……",
+		id = 924031122
+	},
+	[924031123] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "只要我想的话，就算把银松山整个搬到这来也不是难事。就算是游戏机里的敌人跑到现实里来了，我也有信心能挨个捏碎。",
+		id = 924031123
+	},
+	[924031124] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "但是啊……世界并不需要这样的力量，没有存在意义的东西，只不过是空壳而已。",
+		id = 924031124
+	},
+	[924031125] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "阿管，也差不多够了吧？说到底~视骸的危机都解除了，还要原初修正者来干嘛？",
+		id = 924031125
+	},
+	[924031126] = {
+		speaker = "",
+		prefab_name = "",
+		content = "或许是年久失修的缘故，路灯的光芒变得忽明忽暗，让梵天的身影几乎被淹没在阴影中。",
+		id = 924031126
+	},
+	[924031127] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "呼……走了这么远口更渴了。",
+		id = 924031127
+	},
+	[924031128] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "阿管，我去买瓶水喝~",
+		id = 924031128
+	},
+	[924031129] = {
+		speaker = "",
+		prefab_name = "",
+		content = "返程之后，梵天那张寂寥的侧脸一直在脑海内挥之不去。",
+		id = 924031129
+	},
+	[924031130] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "不管怎样的节日，总有结束的一天……",
+		id = 924031130
+	},
+	[924031131] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "都已经走到终点了，哪里还会有路呢。",
+		id = 924031131
+	},
+	[924031132] = {
+		speaker = "",
+		prefab_name = "",
+		content = "再次醒来时，房间里陈设如故，但却显得空荡荡的。",
+		id = 924031132
+	},
+	[924031133] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "梵天……？",
+		id = 924031133
+	},
+	[924031134] = {
+		speaker = "",
+		prefab_name = "",
+		content = "不好的预感如涟漪般，在心中扩散开来。环顾四周，那个慵懒的身影此时却不知所踪。",
+		id = 924031134
+	},
+	[924041001] = {
+		speaker = "",
+		prefab_name = "",
+		content = "已经完全丧失了自己是如何回来的记忆，只感觉到意识从海面下浮起。",
+		id = 924041001
+	},
+	[924041002] = {
+		speaker = "",
+		prefab_name = "",
+		content = "再睁眼的时候，能捕捉到的景物，就只剩下了熟悉的天花板，以及蓝灰色的长发。",
+		id = 924041002
+	},
+	[924041003] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这是……我的房间？",
+		id = 924041003
+	},
+	[924041004] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "终于睡醒了？瞌睡虫~",
+		id = 924041004
+	},
+	[924041005] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我睡了多久？",
+		id = 924041005
+	},
+	[924041006] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "差不多一个小时？那两个人还有事，我就先把你搬过来了。",
+		id = 924041006
+	},
+	[924041007] = {
+		speaker = "",
+		prefab_name = "",
+		content = "记忆中的身影，逐渐与眼前的梵天重叠。",
+		id = 924041007
+	},
+	[924041008] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "怎么啦？一直盯着我看。",
+		id = 924041008
+	},
+	[924041009] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "该怎么说呢……",
+		id = 924041009
+	},
+	[924041010] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "还在想移转观测的事情？",
+		id = 924041010
+	},
+	[924041011] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "最后看见的画面是那个……怎么可能会不想……",
+		id = 924041011
+	},
+	[924041012] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "我觉得你不用太在意。不管怎样漫长的道路也总会有终点，如果这就是「理想未来」，那就再好不过。",
+		id = 924041012
+	},
+	[924041013] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一点都不好。",
+		id = 924041013
+	},
+	[924041014] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "有什么不好？你看~多亏有你在，我过得不是蛮开心吗。",
+		id = 924041014
+	},
+	[924041015] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "但是最后你跑得人影都不见了。",
+		id = 924041015
+	},
+	[924041016] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "我总不能在深空之眼待一辈子嘛。",
+		id = 924041016
+	},
+	[924041017] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "再说，你不会真的觉得，我还能放下重担享受生活吧？说出来我自己都不信。",
+		id = 924041017
+	},
+	[924041018] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "所以……到这结束刚刚好。",
+		id = 924041018
+	},
+	[924041019] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天望向窗外哼着不知所谓的调子，她的侧脸就和那夜一模一样。",
+		id = 924041019
+	},
+	[924041020] = {
+		speaker = "",
+		prefab_name = "",
+		content = "如果我说……我要改变这个结局呢？",
+		id = 924041020
+	},
+	[924041021] = {
+		speaker = "",
+		prefab_name = "",
+		content = "在这么多次的移转观测中，我深切认知到了一件事——未来是由过去的选择堆砌而成的结果。",
+		id = 924041021
+	},
+	[924041022] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "又不是玩游戏，哪有结局不结局的说法。",
+		id = 924041022
+	},
+	[924041023] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "就当是我恋爱游戏玩多了……来打个赌吧。",
+		id = 924041023
+	},
+	[924041024] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "打赌？",
+		id = 924041024
+	},
+	[924041025] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "和我再打一场。",
+		id = 924041025
+	},
+	[924041026] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "和之前一样，输的人满足赢的人一个愿望。",
+		id = 924041026
+	},
+	[924041027] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "诶？可我现在没心情……",
+		id = 924041027
+	},
+	[924041028] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我翻身起床，然后从床底的柜子里，掏出了《街角王者》的联名手柄。",
+		id = 924041028
+	},
+	[924041029] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "哈？居然还有一个？",
+		id = 924041029
+	},
+	[924041030] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "当然了，联机对战游戏，本来就应该是两个人一起的。",
+		id = 924041030
+	},
+	[924041031] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "来吧，这个全新的联名手柄，就当成你的出场费好了。",
+		id = 924041031
+	},
+	[924041032] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "你认真的？",
+		id = 924041032
+	},
+	[924041033] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我一直都很认真。",
+		id = 924041033
+	},
+	[924041034] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "唉……没想到阿管这么喜欢强迫别人。上次可是被你折腾到天亮呢……",
+		id = 924041034
+	},
+	[924041035] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "别说那些奇怪的话，公平对局，明码标价。",
+		id = 924041035
+	},
+	[924041036] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "就算输了也不准耍赖哦？",
+		id = 924041036
+	},
+	[924041037] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "当然了。倒不如说一直耍赖的人是你吧……",
+		id = 924041037
+	},
+	[924041038] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我熟练地打开终端，拿起了原本的联名手柄，熟悉的标题画面随即出现在眼前。",
+		id = 924041038
+	},
+	[924041039] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "……",
+		id = 924041039
+	},
+	[924041040] = {
+		speaker = "",
+		prefab_name = "",
+		content = "与上次不同，梵天全程一言不发，只是比任何时候都认真的抓着掌中的手柄。",
+		id = 924041040
+	},
+	[924041041] = {
+		speaker = "",
+		prefab_name = "",
+		content = "时间一分一秒过去，激烈的攻防战仍在持续着，我穷尽了自己所能想到的一切进攻手段，但却只是和梵天打了个不相上下。",
+		id = 924041041
+	},
+	[924041042] = {
+		speaker = "",
+		prefab_name = "",
+		content = "双方角色的生命值都已经来到了最低点，但我们互相都无法攻破对方的防守。",
+		id = 924041042
+	},
+	[924041043] = {
+		speaker = "",
+		prefab_name = "",
+		content = "放手一搏/2.全力防守",
+		id = 924041043
+	},
+	[924041044] = {
+		speaker = "",
+		prefab_name = "",
+		content = "手柄已经被按到快要冒烟，我的角色却还是被一点点逼到墙角。这家伙认真起来的时候，果然强得可怕。",
+		id = 924041044
+	},
+	[924041045] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "必须下定决心了。",
+		id = 924041045
+	},
+	[924041046] = {
+		speaker = "",
+		prefab_name = "",
+		content = "不再犹豫，我按出了在脑海里闪过数次的指令，伴随着奇特的动作，我操作的格斗家射出了火箭飞拳。",
+		id = 924041046
+	},
+	[924041047] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "哈……？",
+		id = 924041047
+	},
+	[924041048] = {
+		speaker = "",
+		prefab_name = "",
+		content = "与梵天疑惑的声音一同传来的是胜利的报幕声，我以毫厘之差赢下了这场比赛。",
+		id = 924041048
+	},
+	[924041049] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "隐藏招式，大部分人叫它「初见杀飞拳」。",
+		id = 924041049
+	},
+	[924041050] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "太狡猾了！这不是作弊嘛！",
+		id = 924041050
+	},
+	[924041051] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "兵不厌诈！这就是打的游戏不够多，哼哼。",
+		id = 924041051
+	},
+	[924041052] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "哎呀，阿管欺负人！我要去找奥丁告状了，你欺负小孩子——",
+		id = 924041052
+	},
+	[924041053] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "少来，赢了就是赢了，你该不会还想耍赖吧？",
+		id = 924041053
+	},
+	[924041054] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "我不管我不管我不管。你才是耍赖！哼哼哼……",
+		id = 924041054
+	},
+	[924041055] = {
+		speaker = "",
+		prefab_name = "",
+		content = "这家伙像是仓鼠一样，一头钻进我的怀里用头来回顶着我的胸口，不过很快又安静下来。",
+		id = 924041055
+	},
+	[924041056] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "……就耍赖一分钟。",
+		id = 924041056
+	},
+	[924041057] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "好。",
+		id = 924041057
+	},
+	[924041058] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我静静地等着她从炸毛的状态恢复过来，重新在面前坐好。",
+		id = 924041058
+	},
+	[924041059] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "你到底想要我做什么？",
+		id = 924041059
+	},
+	[924041060] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "陪我再做一次移转观测。",
+		id = 924041060
+	},
+	[924041061] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "噫……不换点别的？我能做的事情可比你想象得要多得多。",
+		id = 924041061
+	},
+	[924041062] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我不是说了吗，我要改变那个结……哦，是「未来」。",
+		id = 924041062
+	},
+	[924041063] = {
+		speaker = "梵天",
+		prefab_name = "1020ui_story",
+		content = "唉……好喽，随你。虽然我觉得多半没什么用。",
+		id = 924041063
+	},
+	[924041064] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "好，我和大国主她们说一声。",
+		id = 924041064
+	},
+	[924041065] = {
+		speaker = "",
+		prefab_name = "",
+		content = "这次通讯意外的顺利——对隐科组来说，难得有原初修正者愿意配合他们，多次进行实验。数据越多，掌握的情报就越多。",
+		id = 924041065
+	},
+	[924041066] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "真亏你能说服那两个人啊……",
+		id = 924041066
+	},
+	[924041067] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "双赢的事情，聪明人从来不会拒绝。",
+		id = 924041067
+	},
+	[924041068] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "但是海姆达尔说，重复锚定可能存在一定风险喔？",
+		id = 924041068
+	},
+	[924041069] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "反正就算真的出什么问题，不也还有你在？",
+		id = 924041069
+	},
+	[924041070] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "怎么以前没感觉你有这么信任我？",
+		id = 924041070
+	},
+	[924041071] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我一直都超信任你的。",
+		id = 924041071
+	},
+	[924041072] = {
+		speaker = "",
+		prefab_name = "",
+		content = "接下来隐科组还要重新调试观测设备，我则是和梵天重新拿起了手柄。似乎因为被激发了认真劲，她直接换上了宽松的小睡衣，正襟危坐在屏幕前。",
+		id = 924041072
+	},
+	[924041073] = {
+		speaker = "",
+		prefab_name = "",
+		content = "不得不说，当她知道了有「隐藏招式」这种东西以后，我已经几乎完全没有了战胜她的可能性。",
+		id = 924041073
+	},
+	[924041074] = {
+		speaker = "",
+		prefab_name = "",
+		content = "仅仅是一下午的时间，我和她的对战态势，已经从「堪堪打平」，完全变成了「一败涂地」。",
+		id = 924041074
+	},
+	[924041075] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "投降，投降了……果然原初级别的脑力，就是不讲道理啊……",
+		id = 924041075
+	},
+	[924041076] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "哼哼，这下知道实力的差距了吧？",
+		id = 924041076
+	},
+	[924041077] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……好好好，你是最强的。",
+		id = 924041077
+	},
+	[924041078] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "所以，我们还要等多久？你带我在这里待了一整天，她们也该准备好了。",
+		id = 924041078
+	},
+	[924041079] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "也差不多是时候了。",
+		id = 924041079
+	},
+	[924041080] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我走到阳台旁，招呼着梵天靠过来。",
+		id = 924041080
+	},
+	[924041081] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "又怎么了？",
+		id = 924041081
+	},
+	[924041082] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我按下了一旁的开关，房间暗了下来，随后整个墙体开始变得透明。",
+		id = 924041082
+	},
+	[924041083] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你还记不记得，昨天打赌的时候，我最初问你的问题？",
+		id = 924041083
+	},
+	[924041084] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "「如果拯救世界之后你想做什么？」",
+		id = 924041084
+	},
+	[924041085] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "嗯……？",
+		id = 924041085
+	},
+	[924041086] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这个问题是问你，但更早以前，是我问自己的问题。",
+		id = 924041086
+	},
+	[924041087] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "可能会让你觉得迷惑吧，但，我还是想自私地表达一些自己的想法。",
+		id = 924041087
+	},
+	[924041088] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "也想让你看看，我所看到的，「这个世界」。",
+		id = 924041088
+	},
+	[924041089] = {
+		speaker = "",
+		prefab_name = "",
+		content = "夜色如绸缎般铺展，将整座城市包裹，园区的街灯也陷入了沉寂，让视野中的一切都笼罩在黑暗之中。",
+		id = 924041089
+	},
+	[924041090] = {
+		speaker = "",
+		prefab_name = "",
+		content = "下方的街灯如星星点点般亮起，温暖的光辉在黑暗中跳跃，形成一幅璀璨的图景，汽车的车灯交错如流星，划破夜空的宁静。",
+		id = 924041090
+	},
+	[924041091] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你所俯瞰的世界总是无比巨大，盖亚的存续，与视骸的战斗，这一切就是世界的全部。",
+		id = 924041091
+	},
+	[924041092] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "但是对于这个世界里的人们来说，快乐的回忆、爱过的人、好吃的东西、故乡的气息……这些东西就足以构筑出一个「世界」了。",
+		id = 924041092
+	},
+	[924041093] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "或者，不如说，这些平凡的人和事，才构成了真实的世界的样貌。",
+		id = 924041093
+	},
+	[924041094] = {
+		speaker = "",
+		prefab_name = "",
+		content = "绚烂的光华将夜空照亮，烟花一朵接着一朵，像是要为唤醒睡梦而奏的乐章，安静的城市随之开始运转。",
+		id = 924041094
+	},
+	[924041095] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "构成世界的是「人」，每个人都有着自己的故事……他们怀着不同的思念，踏上各自的旅程。",
+		id = 924041095
+	},
+	[924041096] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那——你和我，还有其他所有修正者，就没有自己的故事吗？或者大家就只能是，被某个名叫「世界」的意志所安排的，守护和平的工具？",
+		id = 924041096
+	},
+	[924041097] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我想，不应该是这样。",
+		id = 924041097
+	},
+	[924041098] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "就像你，你也有自己的故事，不是么？而且，你比一般人有更多更多故事，跨越了很多个纪元的，能讲几天几夜也讲不完的故事。",
+		id = 924041098
+	},
+	[924041099] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "所以，你也是这世界的一部分，也是个值得被关注的女孩儿，不是么？",
+		id = 924041099
+	},
+	[924041100] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天的视线随着那些四处奔走的人们向下移动，直至彻底停在地面。",
+		id = 924041100
+	},
+	[924041101] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "为什么……要对我说这些？",
+		id = 924041101
+	},
+	[924041102] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "姑且就当我在分享自己的心得吧。而且——",
+		id = 924041102
+	},
+	[924041103] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "有个钻牛角尖的女孩子站在我面前……总不能坐视不管吧。",
+		id = 924041103
+	},
+	[924041104] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "……",
+		id = 924041104
+	},
+	[924041105] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "怎么样？要说服整个园区都关灯，我可是拜托了各方人员好久呢。",
+		id = 924041105
+	},
+	[924041106] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "……",
+		id = 924041106
+	},
+	[924041107] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "呃……你说句话啊？",
+		id = 924041107
+	},
+	[924041108] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "太狡猾了……",
+		id = 924041108
+	},
+	[924041109] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你说什么？我没听清楚。",
+		id = 924041109
+	},
+	[924041110] = {
+		speaker = "",
+		prefab_name = "",
+		content = "下一刻，从胸口传来的冲击让我身形不稳，梵天扎进了我的怀里，用我的外套遮住了脸，只从里面发出闷闷的声音。",
+		id = 924041110
+	},
+	[924041111] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "我说……你是个奇怪的家伙。",
+		id = 924041111
+	},
+	[924041112] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "奇怪吗……奇怪在哪？",
+		id = 924041112
+	},
+	[924041113] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "谁会把一个活了好几个纪元的原初修正者，叫做「女孩子」啊。真是搞不懂。",
+		id = 924041113
+	},
+	[924041114] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "实话罢了。不管你是弥楼衍的老大，还是什么原初修正者……抛开那些高高在上的身份之后，你就是个普通的女孩子。",
+		id = 924041114
+	},
+	[924041115] = {
+		speaker = "",
+		prefab_name = "",
+		content = "少女手上的力道又加重几分。",
+		id = 924041115
+	},
+	[924041116] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "阿管，你果然很奇怪。就该叫你怪人。",
+		id = 924041116
+	},
+	[924041117] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你也没好到哪去，明明是个坚持不懈的人……但在自己的事情上反倒是放弃得很快。",
+		id = 924041117
+	},
+	[924041118] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "我哪有。",
+		id = 924041118
+	},
+	[924041119] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这时候耍赖也晚了，反正我已经知道你的脾性了。",
+		id = 924041119
+	},
+	[924041120] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "好喽，你说有就有吧。",
+		id = 924041120
+	},
+	[924041121] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她叹了一口气，放开手后，面对着墙外的夜景坐下来。",
+		id = 924041121
+	},
+	[924041122] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "只是，一直都在看着终点……早就忘记该怎么回头了。",
+		id = 924041122
+	},
+	[924041123] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我会陪你想起来的。",
+		id = 924041123
+	},
+	[924041124] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "这可是你说的……不准耍赖哦。",
+		id = 924041124
+	},
+	[924041125] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "一言为定。",
+		id = 924041125
+	},
+	[924041126] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我朝她伸出手。",
+		id = 924041126
+	},
+	[924041127] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "……那这次就算我输好了。",
+		id = 924041127
+	},
+	[924041128] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "啊！你说归说，咬人干什么？！",
+		id = 924041128
+	},
+	[924041129] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "……被你用隐藏招式阴了一把，很不爽。",
+		id = 924041129
+	},
+	[924041130] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你后面不是打回来了嘛！现在我看到那个游戏已经要有心理阴影了。",
+		id = 924041130
+	},
+	[924041131] = {
+		speaker = "",
+		prefab_name = "",
+		content = "刚刚要开始的打闹，被来自隐科组的通讯打断。海姆达尔简短地告诉我们，设备调试已经完成。",
+		id = 924041131
+	},
+	[924041132] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "该出发了。",
+		id = 924041132
+	},
+	[924041133] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "去改变未来？",
+		id = 924041133
+	},
+	[924041134] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "嗯。",
+		id = 924041134
+	},
+	[924041135] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "好吧，那就勉为其难再陪你一次。",
+		id = 924041135
+	},
+	[924041136] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她这么说着，将手放在了我的手心里。",
+		id = 924041136
+	},
+	[924041137] = {
+		speaker = "",
+		prefab_name = "",
+		content = "又一次仿佛坠入深海般的体验，我支起身子看向四周，还是熟悉的游戏室，就和我脱离观测时一模一样。",
+		id = 924041137
+	},
+	[924041138] = {
+		speaker = "",
+		prefab_name = "",
+		content = "没时间犹豫，我在各个楼层都绕了一圈，但那个娇小的身影依旧不见影踪。",
+		id = 924041138
+	},
+	[924041139] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "还是不在……人去哪了？",
+		id = 924041139
+	},
+	[924041140] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我拖着疲惫的身躯回到游戏室，一头栽倒在沙发上。",
+		id = 924041140
+	},
+	[924041141] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "弥弥尔，能调出从昨晚到今早的监控吗？",
+		id = 924041141
+	},
+	[924041142] = {
+		speaker = "弥弥尔",
+		prefab_name = "",
+		content = "好麻烦……进小偷了？",
+		id = 924041142
+	},
+	[924041143] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不是，我想看看梵天去了哪。",
+		id = 924041143
+	},
+	[924041144] = {
+		speaker = "弥弥尔",
+		prefab_name = "",
+		content = "吨吨吨……那就没什么好看的了，你去门口瞧瞧。",
+		id = 924041144
+	},
+	[924041145] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "门口？——喂，等等！喂？",
+		id = 924041145
+	},
+	[924041146] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "有人吗~？歪歪歪~",
+		id = 924041146
+	},
+	[924041147] = {
+		speaker = "",
+		prefab_name = "",
+		content = "熟悉的声音从门外传来，声音悠闲得像是她只是出去散步了而已。",
+		id = 924041147
+	},
+	[924041148] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "怎么半天才开？不会是一直在睡觉吧，小瞌睡虫。",
+		id = 924041148
+	},
+	[924041149] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你……你去哪了？",
+		id = 924041149
+	},
+	[924041150] = {
+		speaker = "",
+		prefab_name = "",
+		content = "看着面前神态慵懒的少女，有些复杂的心情让我一时失去言语，憋了好久之后，才从嘴里蹦出这几个字。",
+		id = 924041150
+	},
+	[924041151] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "去把这东西拿回来呀。",
+		id = 924041151
+	},
+	[924041152] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天扬起手中的《街角王者》联名款手柄，朝我露出一如既往的微笑。",
+		id = 924041152
+	},
+	[924041153] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "要战斗的话，果然得有趁手的兵器才行。",
+		id = 924041153
+	},
+	[924041154] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "哦？来兴趣了？",
+		id = 924041154
+	},
+	[924041155] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "哼哼，或许吧？",
+		id = 924041155
+	},
+	[924041156] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天坐到了游戏终端面前，拍了拍身侧的空位。",
+		id = 924041156
+	},
+	[924041157] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我坐到梵天身旁，从终端里找出了那款与其他未来游戏比起来，略显落时的游戏——《街角王者35》。",
+		id = 924041157
+	},
+	[924041158] = {
+		speaker = "",
+		prefab_name = "",
+		content = "比起现实要往后三代的新作，为了不露馅，我不得不拿出120%的精力边打边学。当然结果自然惨不忍睹。",
+		id = 924041158
+	},
+	[924041159] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "轻轻松松~阿管你是不是太久没玩变弱了呀？",
+		id = 924041159
+	},
+	[924041160] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "说起来……",
+		id = 924041160
+	},
+	[924041161] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "找借口的话我可不想听——",
+		id = 924041161
+	},
+	[924041162] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不是那个。昨天晚上，有句话我一直想说。",
+		id = 924041162
+	},
+	[924041163] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "嗯，你说吧。",
+		id = 924041163
+	},
+	[924041164] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "虽然你总是一副对什么事情都不在意游戏人生的样子，还老在我面前耍赖……啊，最近还懒得要死。",
+		id = 924041164
+	},
+	[924041165] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "到底是要夸人还是损人？",
+		id = 924041165
+	},
+	[924041166] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我想说的是……和平的世界里或许的确不需要原初修正者做些什么，但这不代表，没人需要「梵天」吧？",
+		id = 924041166
+	},
+	[924041167] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "如果你真的这么想，那至少……",
+		id = 924041167
+	},
+	[924041168] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我需要你。",
+		id = 924041168
+	},
+	[924041169] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天眨了眨眼，那双慵懒的眼眸也随之睁大。",
+		id = 924041169
+	},
+	[924041170] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "没听清楚？那我再说一次。",
+		id = 924041170
+	},
+	[924041171] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "不用了……",
+		id = 924041171
+	},
+	[924041172] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天垂下头，避开与我相撞的视线，但却依然藏不住脸颊上的那抹绯红。",
+		id = 924041172
+	},
+	[924041173] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "你真狡猾……",
+		id = 924041173
+	},
+	[924041174] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "嗯？你说什么？",
+		id = 924041174
+	},
+	[924041175] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "我说……你就知道用同一招，没新意。",
+		id = 924041175
+	},
+	[924041176] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "原来你还记得。",
+		id = 924041176
+	},
+	[924041177] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "当然记得……这种事情，不可能忘的。",
+		id = 924041177
+	},
+	[924041178] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那真是太好了。",
+		id = 924041178
+	},
+	[924041179] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "有什么好的……",
+		id = 924041179
+	},
+	[924041180] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这样，哪怕一觉醒来之后你发现自己是一个人，在某条已经走到终点的路上……",
+		id = 924041180
+	},
+	[924041181] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "只要你还能记得这片夜景，就一定不会再迷路了，我会在这里等着你。",
+		id = 924041181
+	},
+	[924041182] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "……把话说得这么满，你已经做好觉悟了吧？",
+		id = 924041182
+	},
+	[924041183] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那当然。",
+		id = 924041183
+	},
+	[924041184] = {
+		speaker = "",
+		prefab_name = "",
+		content = "下一刻，从胸口传来的强大冲击让我再也无法支撑自己的身体，和她一起跌倒在地。",
+		id = 924041184
+	},
+	[924041185] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "这下，算我扳回一城~",
+		id = 924041185
+	},
+	[924041186] = {
+		speaker = "",
+		prefab_name = "",
+		content = "娇小身躯的温软触感与那份切实的重量，成为了刻在这片记忆中最后一笔。",
+		id = 924041186
+	},
+	[924041187] = {
+		speaker = "",
+		prefab_name = "",
+		content = "睁开双眼时，映入眼帘的是那张熟悉的脸。",
+		id = 924041187
+	},
+	[924041188] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "别这样……对心脏不好。",
+		id = 924041188
+	},
+	[924041189] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天静静注视着我，随之而来的是一股无形的力量，替正在与床铺斗争的我坐起身。",
+		id = 924041189
+	},
+	[924041190] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "原来那段话还有后续啊？",
+		id = 924041190
+	},
+	[924041191] = {
+		speaker = "",
+		prefab_name = "",
+		content = "梵天和我的视线再度相撞，故作不满的语调，但却盖不住她嘴角向上的幅度。",
+		id = 924041191
+	},
+	[924041192] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "毕竟我是个狡猾的人。",
+		id = 924041192
+	},
+	[924041193] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "要是在遥远的未来，一切都结束之后，我不知道路的前方该延伸到什么地方……",
+		id = 924041193
+	},
+	[924041194] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那个时候，我一定会在这个地方等你的。",
+		id = 924041194
+	},
+	[924041195] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "那就这么定咯~",
+		id = 924041195
+	},
+	[924041196] = {
+		speaker = "",
+		prefab_name = "",
+		content = "在熟悉的冲击到来之前，我伸出双手，将扑过来的梵天稳稳接住。",
+		id = 924041196
+	},
+	[924041197] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "管理员不会被同样的招式打败三次。",
+		id = 924041197
+	},
+	[924041198] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "真记仇……唉，阿管什么时候变成这样了？",
+		id = 924041198
+	},
+	[924041199] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "恐怕都怪某个串门过来的帮派老大吧？",
+		id = 924041199
+	},
+	[924041200] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "诶~？是谁呀？竟然带坏阿管，我要她好看——！",
+		id = 924041200
+	},
+	[924041201] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "恐怕都怪某个串门过来的帮派老大吧？",
+		id = 924041201
+	},
+	[924041202] = {
+		speaker = "梵天",
+		prefab_name = "102003ui_story",
+		content = "诶~？是谁呀？竟然带坏阿管，我要她好看——！",
+		id = 924041202
+	},
 	[420011001] = {
 		speaker = "我",
 		prefab_name = "",
@@ -78787,7 +87523,7 @@
 	},
 	[420042020] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "你好，洛肯前辈。",
 		id = 420042020
 	},
@@ -79183,7 +87919,7 @@
 	},
 	[420042086] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "哇哇哇哇！……薇儿姐姐快躲……呃呜……",
 		id = 420042086
 	},
@@ -81262,8741 +89998,5 @@
 		prefab_name = "",
 		content = "这……",
 		id = 420071012
-	},
-	[420071013] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "他那里下的雨，会变成糖果，是因为跳舞的缘故吗？",
-		id = 420071013
-	},
-	[420071014] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "如果我们也在下雨的时候跳舞，是不是冷冷的雨也会变成糖？",
-		id = 420071014
-	},
-	[420071015] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "哈哈，那肯定不可以。这只是电影的设定而已。",
-		id = 420071015
-	},
-	[420071016] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "设定？",
-		id = 420071016
-	},
-	[420071017] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "设定就是人们为了讲好一个故事编出来的东西，是假的。",
-		id = 420071017
-	},
-	[420071018] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "故事……伊里伽尔和奈奈也会给我讲故事，那些都是假的吗？",
-		id = 420071018
-	},
-	[420071019] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "奈奈又是谁……也不都是假的，但这部电影讲的东西是不存在的。",
-		id = 420071019
-	},
-	[420071020] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "为什么要讲假的故事？",
-		id = 420071020
-	},
-	[420071021] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "因为现实总是……呃……",
-		id = 420071021
-	},
-	[420071022] = {
-		speaker = "",
-		prefab_name = "",
-		content = "电影突然卡住，画面也闪动起来，场地内传出低低的骚动声。",
-		id = 420071022
-	},
-	[420071023] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "电影不动了。",
-		id = 420071023
-	},
-	[420071024] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "播放故障吧，还真是货真价实的老放映机。",
-		id = 420071024
-	},
-	[420071025] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "又开始动了……不过有点奇怪，人倒着走，雨飞回天上。",
-		id = 420071025
-	},
-	[420071026] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "在倒带吧，有时候可能是带子卡住了，倒回去理顺，重放一边，就会好。",
-		id = 420071026
-	},
-	[420071027] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "又是没听过的词……",
-		id = 420071027
-	},
-	[420071028] = {
-		speaker = "",
-		prefab_name = "",
-		content = "趁着放映员调试机子，我拿出终端，打出「倒带」两个字给她看。",
-		id = 420071028
-	},
-	[420071029] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "发现哪里出了问题，或者想重看哪一段的时候，把带子倒回去，就可以重来。",
-		id = 420071029
-	},
-	[420071030] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "倒带……重新开始。",
-		id = 420071030
-	},
-	[420071031] = {
-		speaker = "",
-		prefab_name = "",
-		content = "厅内再次骚动起来。我抬起头，发现影片在同一个地方卡住了。",
-		id = 420071031
-	},
-	[420071032] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "恐怕是胶片或者机器本身出了状况，看上去一时半会儿修不好，你想等等还是……",
-		id = 420071032
-	},
-	[420071033] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我回过头，看见诗蔻蒂凝望着身后，投影的光束打在她脸上，让她的轮廓若隐若现。",
-		id = 420071033
-	},
-	[420071034] = {
-		speaker = "",
-		prefab_name = "",
-		content = "她伸出手，模仿着放映机运行的姿态，在光芒中轻轻转动着。",
-		id = 420071034
-	},
-	[420071035] = {
-		speaker = "选项",
-		prefab_name = "",
-		content = "按下快门",
-		id = 420071035
-	},
-	[420071036] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "#{nickname}#，在拍照吗？",
-		id = 420071036
-	},
-	[420071037] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "感觉刚刚氛围很好，你对放映机似乎很有兴趣？",
-		id = 420071037
-	},
-	[420071038] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "可以放出电影，而且还可以倒带。喜欢倒带。",
-		id = 420071038
-	},
-	[420071039] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "喜欢倒带？一般都会希望电影能顺利放完吧？",
-		id = 420071039
-	},
-	[420071040] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "遇到错误的时候，就重来一遍，总能看到结局。",
-		id = 420071040
-	},
-	[420071041] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "话虽如此，还是最好能一开始就一切顺利。",
-		id = 420071041
-	},
-	[420071042] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "嗯，一切顺利。",
-		id = 420071042
-	},
-	[420071043] = {
-		speaker = "",
-		prefab_name = "",
-		content = "交错的光影里，映出她玻璃般精致的笑意。",
-		id = 420071043
-	},
-	[420091001] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "喇叭，好大一个。",
-		id = 420091001
-	},
-	[420091002] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "是留声机，加尔相对封闭，反而留下了不少旧时代的东西啊。",
-		id = 420091002
-	},
-	[420091003] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "留声机是……留下声音……的机器？",
-		id = 420091003
-	},
-	[420091004] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这一次猜得还蛮准的，就是这个意思。",
-		id = 420091004
-	},
-	[420091005] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "但是没有听到声音……",
-		id = 420091005
-	},
-	[420091006] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "不是这样直接凑上去听的，要放唱片才行。",
-		id = 420091006
-	},
-	[420091007] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "唱片我听说过，在阿卡德帮，听别人聊天的时候说起过。",
-		id = 420091007
-	},
-	[420091008] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "现在只有搞收藏的人才会买唱片，不过据说在留声机还不是展品的年代，唱片是听音乐不可或缺的东西。",
-		id = 420091008
-	},
-	[420091009] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "想试试看吗，这里正好有试听用的唱片。",
-		id = 420091009
-	},
-	[420091010] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂用力点点头，却在看到架子上陈列的十几张唱片时犯了难。",
-		id = 420091010
-	},
-	[420091011] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "选哪一张？",
-		id = 420091011
-	},
-	[420091012] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你来决定，都没听过就选一个包装顺眼的。",
-		id = 420091012
-	},
-	[420091013] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "那我选这个，封面是帽子，像你。",
-		id = 420091013
-	},
-	[420091014] = {
-		speaker = "",
-		prefab_name = "",
-		content = "哪有用帽子比人的——我笑着摇摇头，抬起唱针，诗蔻蒂小心翼翼地把唱片放到转机上，启动留声机。",
-		id = 420091014
-	},
-	[420091015] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "真的开始唱歌了……",
-		id = 420091015
-	},
-	[420091016] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "好听吗？",
-		id = 420091016
-	},
-	[420091017] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂点点头，认真地看着唱片转过一圈又一圈。",
-		id = 420091017
-	},
-	[420091018] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "像旋转木马，转起来，就会有音乐。",
-		id = 420091018
-	},
-	[420091019] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "真是跳跃性的联想……喜欢的话给你买一个回去怎么样？",
-		id = 420091019
-	},
-	[420091020] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "好，不……会消失的。",
-		id = 420091020
-	},
-	[420091021] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "会消失？你是说会弄丢吗，这个应该很难丢吧。",
-		id = 420091021
-	},
-	[420091022] = {
-		speaker = "",
-		prefab_name = "",
-		content = "但诗蔻蒂还是摇了摇头。",
-		id = 420091022
-	},
-	[420091023] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "给我拍一张照片吧，有留下照片就够了，看到照片就会想起今天听到的歌。",
-		id = 420091023
-	},
-	[420091024] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "也好，想要怎么拍？",
-		id = 420091024
-	},
-	[420091025] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂还没开口，唱片转到了下一首歌，留声机里突然传出大声量的说唱声。",
-		id = 420091025
-	},
-	[420091026] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "这也是歌吗……好像在对我喊什么一样。",
-		id = 420091026
-	},
-	[420091027] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂微张着嘴吃惊地看着面前的留声机，好像能从那个扩音器里看到演唱者的姿态。",
-		id = 420091027
-	},
-	[420091028] = {
-		speaker = "选项",
-		prefab_name = "",
-		content = "按下快门",
-		id = 420091028
-	},
-	[420091029] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "已经拍了吗？可是我还没有想好姿势……",
-		id = 420091029
-	},
-	[420091030] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我看这个姿势就不错，很可爱哦。",
-		id = 420091030
-	},
-	[420091031] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "那……要给你也拍一张一样的。",
-		id = 420091031
-	},
-	[420091032] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "啊？咳……在这里逗留挺久了，我们该去下一个地方了~",
-		id = 420091032
-	},
-	[420111001] = {
-		speaker = "店员",
-		prefab_name = "",
-		content = "我们双人套餐的份量很大，一个人的话，我建议一人份就好~",
-		id = 420111001
-	},
-	[420111002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "穿着巨大茄子毛绒装的店员一边说着，一边有些吃力地摆弄着手上的点菜终端。",
-		id = 420111002
-	},
-	[420111003] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "嗯？我当然没打算一个人吃完，这是我们两个人的。",
-		id = 420111003
-	},
-	[420111004] = {
-		speaker = "店员",
-		prefab_name = "",
-		content = "抱歉，我以为是您一个人，所以餐是等另一位客人来了再上吗？",
-		id = 420111004
-	},
-	[420111005] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……",
-		id = 420111005
-	},
-	[420111006] = {
-		speaker = "店员",
-		prefab_name = "",
-		content = "怎、怎么了？",
-		id = 420111006
-	},
-	[420111007] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这也是你们餐厅主题服务的一部分吗？",
-		id = 420111007
-	},
-	[420111008] = {
-		speaker = "店员",
-		prefab_name = "",
-		content = "我没太明白您的意思……",
-		id = 420111008
-	},
-	[420111009] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "另一位客人一直在我对面坐着呢。",
-		id = 420111009
-	},
-	[420111010] = {
-		speaker = "店员",
-		prefab_name = "",
-		content = "客人别开玩笑了，您对面的座位明明是空……",
-		id = 420111010
-	},
-	[420111011] = {
-		speaker = "",
-		prefab_name = "",
-		content = "店员低下头，正对上诗蔻蒂的视线。",
-		id = 420111011
-	},
-	[420111012] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "你好。",
-		id = 420111012
-	},
-	[420111013] = {
-		speaker = "店员",
-		prefab_name = "",
-		content = "咦？？这……可我记得刚刚……实在抱歉，可能是我没注意！双人套餐对吗，还有什么要添的？",
-		id = 420111013
-	},
-	[420111014] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我看向诗蔻蒂，诗蔻蒂摇了摇头。",
-		id = 420111014
-	},
-	[420111015] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "暂时没什么了，谢谢。",
-		id = 420111015
-	},
-	[420111016] = {
-		speaker = "",
-		prefab_name = "",
-		content = "茄子店员脚步有些慌乱地远去，我偏过头，挑了挑眉毛。",
-		id = 420111016
-	},
-	[420111017] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这眼神也太差了，这么大一个人，居然能全程看不见？",
-		id = 420111017
-	},
-	[420111018] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "可能被挡住了吧，她的衣服看起来不太容易看清东西。",
-		id = 420111018
-	},
-	[420111019] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "是吗……总之你不介意就行。",
-		id = 420111019
-	},
-	[420111020] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "我很开心，这里很可爱，像我们之前看的电影。",
-		id = 420111020
-	},
-	[420111021] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "电影？我们什么时候看电影了。",
-		id = 420111021
-	},
-	[420111022] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "……忘记了，是我看过。一个人住在到处都是甜点的地方，天上下的雨会变成糖。",
-		id = 420111022
-	},
-	[420111023] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我大概知道是哪部电影了，你居然还看过这么老的片子，这么说来确实有些像。",
-		id = 420111023
-	},
-	[420111024] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "不过电影里没有这个：长脸的茶杯，看起来像小人。",
-		id = 420111024
-	},
-	[420111025] = {
-		speaker = "",
-		prefab_name = "",
-		content = "她指了指桌上做了拟人化设计的茶杯。",
-		id = 420111025
-	},
-	[420111026] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "想跟它们合张照吗？把脑袋贴在桌子上，就像和这些茶杯是一套。",
-		id = 420111026
-	},
-	[420111027] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "我们也会变成茶杯？",
-		id = 420111027
-	},
-	[420111028] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "当然不是，只是看起来像而已。来，相机给我。",
-		id = 420111028
-	},
-	[420111029] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "靠近一点，就在这，看镜头——",
-		id = 420111029
-	},
-	[420111030] = {
-		speaker = "选项",
-		prefab_name = "",
-		content = "按下快门",
-		id = 420111030
-	},
-	[420111031] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我手抖了吗，怎么拍得有些模糊。",
-		id = 420111031
-	},
-	[420111032] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "没关系，我很喜欢。#{nickname}#也一起吧。",
-		id = 420111032
-	},
-	[420111033] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "要这样拍两个人不大好操作，走的时候请服务员过来帮忙好了。",
-		id = 420111033
-	},
-	[420121001] = {
-		speaker = "",
-		prefab_name = "",
-		content = "时间就这样停下，每一天都是9月16日。",
-		id = 420121001
-	},
-	[420121002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "恢复意识的时间也开始变得不一样。有几次洛肯还没来做检查，我偷偷溜下楼，听到她在打电话，好像是一位老主顾生病死掉了。",
-		id = 420121002
-	},
-	[420121003] = {
-		speaker = "",
-		prefab_name = "",
-		content = "伊里伽尔每天都会来，告诉我#{nickname}#来了。看到我出门，她每次都很吃惊。我确实待在房间里太久了。",
-		id = 420121003
-	},
-	[420121004] = {
-		speaker = "",
-		prefab_name = "",
-		content = "不是每天都去游乐园，但每天都会想办法告诉大家有坏人在欺负卡皮尔先生。",
-		id = 420121004
-	},
-	[420121005] = {
-		speaker = "",
-		prefab_name = "",
-		content = "去了很多地方，做了很多事：他想做的，和我想做的。",
-		id = 420121005
-	},
-	[420121006] = {
-		speaker = "",
-		prefab_name = "",
-		content = "有时候会做错，但是没有关系，只要等第二天就好了，第二天醒来，还会是9月16日。",
-		id = 420121006
-	},
-	[420121007] = {
-		speaker = "",
-		prefab_name = "",
-		content = "每一次都会和他变得更熟悉，愿望或许就要实现了……",
-		id = 420121007
-	},
-	[420121008] = {
-		speaker = "",
-		prefab_name = "",
-		content = "忘了具体从几十次开始，诗蔻蒂留意到阿卡德公会附近的树上栖息着几只鸟。",
-		id = 420121008
-	},
-	[420121009] = {
-		speaker = "",
-		prefab_name = "",
-		content = "每当洛肯发动她的车，破风箱般的轰鸣声总会把它们惊起，扑棱着翅膀飞向天空。",
-		id = 420121009
-	},
-	[420121010] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "有一只总是飞得很慢，其他小鸟都飞走了，它还待在巢里。",
-		id = 420121010
-	},
-	[420121011] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "如果遇到危险怎么办呢，其他鸟会教它飞快一点吗……洛肯？",
-		id = 420121011
-	},
-	[420121012] = {
-		speaker = "",
-		prefab_name = "",
-		content = "洛肯像是没听到一样闷头往前开着。洛肯不理人是常事，诗蔻蒂没有太在意。",
-		id = 420121012
-	},
-	[420121013] = {
-		speaker = "",
-		prefab_name = "",
-		content = "直到车子开过了那个去往商店街的路口，诗蔻蒂才一下坐直了身子。",
-		id = 420121013
-	},
-	[420121014] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "洛肯，开过头了，要先去买礼物。",
-		id = 420121014
-	},
-	[420121015] = {
-		speaker = "",
-		prefab_name = "",
-		content = "但是洛肯没有反应，车一刻不停地向前疾驰，诗蔻蒂只好碰了碰她的背。",
-		id = 420121015
-	},
-	[420121016] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "谁！",
-		id = 420121016
-	},
-	[420121017] = {
-		speaker = "",
-		prefab_name = "",
-		content = "踩下刹车的瞬间，洛肯猛地回过身，一把攥住了诗蔻蒂的手腕。",
-		id = 420121017
-	},
-	[420121018] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "怎么了？好痛。",
-		id = 420121018
-	},
-	[420121019] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "诗……蔻蒂？不好意思啊，刚刚是……",
-		id = 420121019
-	},
-	[420121020] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "洛肯你怎么了？",
-		id = 420121020
-	},
-	[420121021] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "嘶……怎么回事？我怎么……",
-		id = 420121021
-	},
-	[420121022] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "我们开过商店街了，但是我叫你，你都没有反应。",
-		id = 420121022
-	},
-	[420121023] = {
-		speaker = "",
-		prefab_name = "",
-		content = "洛肯收回手，皱着眉头打量自己的掌心。",
-		id = 420121023
-	},
-	[420121024] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "你一直在车上吗，没有中途下过车？",
-		id = 420121024
-	},
-	[420121025] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "刚刚想要下车，但是你没有停。",
-		id = 420121025
-	},
-	[420121026] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "我怎么记得……算了，可能和你待久了我也变迟钝了。商店街是吧，我带你回去。",
-		id = 420121026
-	},
-	[420121027] = {
-		speaker = "",
-		prefab_name = "",
-		content = "这样说着，洛肯在重新启动车子的同时还是皱眉打量着自己的手。",
-		id = 420121027
-	},
-	[420121028] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "我记错了？不应该啊……",
-		id = 420121028
-	},
-	[420121029] = {
-		speaker = "",
-		prefab_name = "",
-		content = "洛肯最近有些奇怪，好像经常走神的样子，还会忘记事情。",
-		id = 420121029
-	},
-	[420121030] = {
-		speaker = "",
-		prefab_name = "",
-		content = "但也不只洛肯，刚刚上摩天轮的时候，我们有两个人，但是售票员却只给了一张票。",
-		id = 420121030
-	},
-	[420121031] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "在想什么？",
-		id = 420121031
-	},
-	[420121032] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "……没什么，只是在想今天又要结束了，还有想去的地方。",
-		id = 420121032
-	},
-	[420121033] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "等下次吧，下次总还有机会的。",
-		id = 420121033
-	},
-	[420121034] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "嗯，下次。",
-		id = 420121034
-	},
-	[420121035] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "真干脆，你和我想象中有一点不一样……虽然是好的不一样。",
-		id = 420121035
-	},
-	[420121036] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "#{nickname}#想象中的我，是什么样的？",
-		id = 420121036
-	},
-	[420121037] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "该怎么说呢，托特他们时不时会向我同步你的近况。",
-		id = 420121037
-	},
-	[420121038] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "加尔和你之前生活的环境完全不一样，我原本担心你会适应得有些吃力。",
-		id = 420121038
-	},
-	[420121039] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "但今天见过面就放心多了。虽然和外面的世界接触不多，但你看上去并不拘束。",
-		id = 420121039
-	},
-	[420121040] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "甚至于……今天听你说话，几乎有种我们不是第一次见面的错觉。",
-		id = 420121040
-	},
-	[420121041] = {
-		speaker = "",
-		prefab_name = "",
-		content = "座舱转过最高点，开始缓缓下行，逐渐远离还蒙着最后一层薄薄夕照的云彩，向游乐园初上的彩灯落去。",
-		id = 420121041
-	},
-	[420121042] = {
-		speaker = "",
-		prefab_name = "",
-		content = "回到摩天轮底端，我和诗蔻蒂从舱门内走出来，夏什瓦特黄昏的微风扑到我们脸上，还带着一丝白昼的余温。",
-		id = 420121042
-	},
-	[420121043] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "第一次见到你，我也有熟悉的感觉。",
-		id = 420121043
-	},
-	[420121044] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我说的不光是那种似曾相识的熟悉，还有自然……虽然可能也差不多。",
-		id = 420121044
-	},
-	[420121045] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我们走到附近的冷饮摊，一人买了一杯颜色鲜艳，但一看就不太健康的饮料，坐在附近的长椅上。",
-		id = 420121045
-	},
-	[420121046] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "如果能多几天空闲就好了，可惜今晚又要开始忙，后面都是麻烦的事。",
-		id = 420121046
-	},
-	[420121047] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "没关系，还会有时间的，下次再来就好。",
-		id = 420121047
-	},
-	[420121048] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "下一次啊，下一次有空的时候，大概夏什瓦特这边的事也快结束了吧。到时候我争取找个机会，带你回艾因索菲。",
-		id = 420121048
-	},
-	[420121049] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "艾因索菲？",
-		id = 420121049
-	},
-	[420121050] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "就是我找到你的地方，也算你的家乡吧。",
-		id = 420121050
-	},
-	[420121051] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "艾因索菲的核心城里，有一座超大的游乐园。我们可以一起去坐那里的摩天轮，坐到顶的时候房子会变得像蚂蚁一样小。",
-		id = 420121051
-	},
-	[420121052] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "到了晚上，游乐园会放烟花，如果那时候坐在摩天轮里，会觉得好像有很多星星从窗外滑落……",
-		id = 420121052
-	},
-	[420121053] = {
-		speaker = "",
-		prefab_name = "",
-		content = "不知道为什么，心脏突然跳得很快。",
-		id = 420121053
-	},
-	[420121054] = {
-		speaker = "",
-		prefab_name = "",
-		content = "对他来说，我们才第一天认识，谁都没有想起谁。",
-		id = 420121054
-	},
-	[420121055] = {
-		speaker = "",
-		prefab_name = "",
-		content = "但是他说着很久以后的计划，好像其他的一切都不重要一样。",
-		id = 420121055
-	},
-	[420121056] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "可是，如果去了艾因索菲，还是什么都想不起来呢？",
-		id = 420121056
-	},
-	[420121057] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "要我说的话，想不起来也没关系吧。",
-		id = 420121057
-	},
-	[420121058] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我也失去过很多记忆。但重新开始以后，又和身边的人们创造了很多新的回忆。对现在的我来说，这些回忆才是最重要的。",
-		id = 420121058
-	},
-	[420121059] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "过去的事当然重要，但回头看不见它们的时候，往前走就行了。",
-		id = 420121059
-	},
-	[420121060] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "往前走……",
-		id = 420121060
-	},
-	[420121061] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "是的，就像纸飞机那样。",
-		id = 420121061
-	},
-	[420121062] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我摸出之前不知从谁手里收的游乐园传单，三两下折成一只纸飞机。",
-		id = 420121062
-	},
-	[420121063] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "有事情想不通的时候，就吹一口气，然后——",
-		id = 420121063
-	},
-	[420121064] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我抬起手，地平线处漫射的光晕与游乐园道路两旁的灯火交相闪烁，在昏黄的天空下洇成迷离的一片。",
-		id = 420121064
-	},
-	[420121065] = {
-		speaker = "",
-		prefab_name = "",
-		content = "朝着那片霞霭般的迷离，我将手里的纸飞机轻轻一抛。",
-		id = 420121065
-	},
-	[420121066] = {
-		speaker = "（选项）",
-		prefab_name = "",
-		content = "先飞出去再说。",
-		id = 420121066
-	},
-	[420121067] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我转过头，看见诗蔻蒂在望着我，睫毛像风中的花瓣那样颤动着。",
-		id = 420121067
-	},
-	[420121068] = {
-		speaker = "",
-		prefab_name = "",
-		content = "她的嘴唇动了动，好像小声说了一句什么，但声音很快与花瓣颜色的风互相攀缠着飞远，从我耳边漏过。",
-		id = 420121068
-	},
-	[420121069] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你说什么？",
-		id = 420121069
-	},
-	[420121070] = {
-		speaker = "",
-		prefab_name = "",
-		content = "于是诗蔻蒂再次开口，稍稍提高了音量，这次我终于听见她说——",
-		id = 420121070
-	},
-	[420121071] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "小昙。",
-		id = 420121071
-	},
-	[420131001] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "你是不是不喜欢这个地板？想换可以跟我说，这样走来走去是踩不坏的。",
-		id = 420131001
-	},
-	[420131002] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "#{nickname}#就是小昙。",
-		id = 420131002
-	},
-	[420131003] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "我知道，从游乐园回来，你的语言功能就已经退化到只剩这一句话了。",
-		id = 420131003
-	},
-	[420131004] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "我说什么来着？要是那样救你的人都不是小昙，那你的小昙可能真的，就只在梦里有了。",
-		id = 420131004
-	},
-	[420131005] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "但我现在能确定。",
-		id = 420131005
-	},
-	[420131006] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "「确定」的感觉，是不同的。",
-		id = 420131006
-	},
-	[420131007] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "怎么确定的，你想起来了？",
-		id = 420131007
-	},
-	[420131008] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "没有想起来，但我能感觉到。",
-		id = 420131008
-	},
-	[420131009] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "感觉……你要说感觉也没错，毕竟第一天见面就黏在一起一下午，感觉不像陌生人。",
-		id = 420131009
-	},
-	[420131010] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "小昙还说，以后要一起回艾因索菲。",
-		id = 420131010
-	},
-	[420131011] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "回艾因索菲，不要命啦？听听就得了。",
-		id = 420131011
-	},
-	[420131012] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "我知道，不方便。会遇到好多问题，要先解决那些问题才行。",
-		id = 420131012
-	},
-	[420131013] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "小昙说他会想办法，我不想只有他一个人想办法。我也想帮忙，想一起创造新的回忆，但我不懂的事情太多了……",
-		id = 420131013
-	},
-	[420131014] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "我想变得有用。洛肯，可以把你知道的东西、会做的事情，再多教我一些吗？",
-		id = 420131014
-	},
-	[420131015] = {
-		speaker = "",
-		prefab_name = "",
-		content = "深夜，雨又落了下来。但这次诗蔻蒂没有关上两层窗户。",
-		id = 420131015
-	},
-	[420131016] = {
-		speaker = "",
-		prefab_name = "",
-		content = "积累了一整天的闷热气息在此刻终于被吹散，雨丝将高空中的凉意带到地表，透过窗户传入室内。",
-		id = 420131016
-	},
-	[420131017] = {
-		speaker = "",
-		prefab_name = "",
-		content = "戴帽子的小熊放在枕边，诗蔻蒂轻轻捏住它的一只手，睡意昏沉。",
-		id = 420131017
-	},
-	[420131018] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "明天……",
-		id = 420131018
-	},
-	[420131019] = {
-		speaker = "",
-		prefab_name = "",
-		content = "雷声在云层深处撞击翻涌，是场暴雨。",
-		id = 420131019
-	},
-	[420131020] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "这里是……啊，又回来了，这个梦里。",
-		id = 420131020
-	},
-	[420131021] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "最近都没有做这个梦，还以为已经不会做了。",
-		id = 420131021
-	},
-	[420131022] = {
-		speaker = "",
-		prefab_name = "",
-		content = "游乐园变了很多，掉漆的旋转木马在云中若隐若现，激流勇进的源头是两杯色彩鲜艳的饮料。",
-		id = 420131022
-	},
-	[420131023] = {
-		speaker = "",
-		prefab_name = "",
-		content = "散落在园区里大大小小的相机有了具体的形状，照片如雪花般从空中飘落。",
-		id = 420131023
-	},
-	[420131024] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "好漂亮，是游乐园。",
-		id = 420131024
-	},
-	[420131025] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "可是，小昙呢？",
-		id = 420131025
-	},
-	[420131026] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂左顾右盼，却没看到那个往常牵着自己游园的玩偶熊。",
-		id = 420131026
-	},
-	[420131027] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "因为已经找到真的小昙了，所以小熊就不在了吗？",
-		id = 420131027
-	},
-	[420131028] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂若有所失地往前踏出一步，突然地面像饼干那样被整个踩碎，诗蔻蒂惊呼着落了下去。",
-		id = 420131028
-	},
-	[420131029] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "小昙？这是怎么回事？",
-		id = 420131029
-	},
-	[420131030] = {
-		speaker = "",
-		prefab_name = "",
-		content = "在全身落入地底之前，一股力量拉住了诗蔻蒂，诗蔻蒂抬起头，看见了那只熟悉的，戴着帽子的玩偶熊。",
-		id = 420131030
-	},
-	[420131031] = {
-		speaker = "",
-		prefab_name = "",
-		content = "而在它的身影之后，原本灿烂的天空已完全变成了灰黑色。积雨云低垂，预示着暴雨将至。",
-		id = 420131031
-	},
-	[420131032] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "小昙，你知道发生了什么吗？",
-		id = 420131032
-	},
-	[420131033] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂借着力被拉出坑陷，但还没等来回答，就被拉着奔跑起来。",
-		id = 420131033
-	},
-	[420131034] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "为什么要跑……",
-		id = 420131034
-	},
-	[420131035] = {
-		speaker = "",
-		prefab_name = "",
-		content = "话未问完，诗蔻蒂就听见身后传来了令人心悸的轰隆声。",
-		id = 420131035
-	},
-	[420131036] = {
-		speaker = "",
-		prefab_name = "",
-		content = "她回过头，天空好像裂开了缺口，雨水如大河般倾泻而下，游乐园的一切都在接触到的瞬间被冲垮。",
-		id = 420131036
-	},
-	[420131037] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "游乐园被毁掉了，怎么会……",
-		id = 420131037
-	},
-	[420131038] = {
-		speaker = "",
-		prefab_name = "",
-		content = "飞舞的照片像是被淋湿翅膀的蝴蝶那样纷纷坠落，有一张落在诗蔻蒂的肩头，她侧过头，却看见上面只有一片空白。",
-		id = 420131038
-	},
-	[420131039] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "是空的？可是刚刚还……",
-		id = 420131039
-	},
-	[420131040] = {
-		speaker = "",
-		prefab_name = "",
-		content = "来不及多思考，诗蔻蒂跌跌撞撞地跟着往前跑，但是身后的洪水紧追不放。",
-		id = 420131040
-	},
-	[420131041] = {
-		speaker = "",
-		prefab_name = "",
-		content = "终于在临近大门的时候，洪水如天幕拍落。最后时刻，玩偶熊转过身，把诗蔻蒂护在怀里。",
-		id = 420131041
-	},
-	[420131042] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "不要！——",
-		id = 420131042
-	},
-	[420131043] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂猛地睁开眼，却被眼前骤增的光亮晃得往后缩了缩。",
-		id = 420131043
-	},
-	[420131044] = {
-		speaker = "",
-		prefab_name = "",
-		content = "身子下面依然是床褥熟悉的触感，被芯散发出的淡香让她逐渐安定下来。",
-		id = 420131044
-	},
-	[420131045] = {
-		speaker = "",
-		prefab_name = "",
-		content = "她放下遮住眼睛的胳膊。从窗外落进房间的阳光混着加尔特有的尘土色泽，缓慢搅动着飘浮在房间里的细小颗粒。",
-		id = 420131045
-	},
-	[420131046] = {
-		speaker = "",
-		prefab_name = "",
-		content = "洛肯不在。",
-		id = 420131046
-	},
-	[420131047] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "？！",
-		id = 420131047
-	},
-	[420131048] = {
-		speaker = "",
-		prefab_name = "",
-		content = "这不是洛肯第一次不在，但时钟上的时间是「9月16日8:20」。",
-		id = 420131048
-	},
-	[420131049] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "结束了吗……但还是9月16日。",
-		id = 420131049
-	},
-	[420131050] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂跳下床，拉开房门。洛肯和伊里伽尔交谈的声音绕着楼梯攀上二楼，内容却让她忍不住停了下来。",
-		id = 420131050
-	},
-	[420131051] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "你还要想多久？我一会儿还有笔生意要谈。",
-		id = 420131051
-	},
-	[420131052] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1042ui_story",
-		content = "等一下，已经到嘴边了……不是什么很麻烦的事，就是……呃……",
-		id = 420131052
-	},
-	[420131053] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "你说你……特意绕两条街过来，进门又说不出找我什么事，一点不像你啊，伊里伽尔。",
-		id = 420131053
-	},
-	[420131054] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1042ui_story",
-		content = "确实很奇怪。这一路上我都没有忘事的感觉，就是刚才进门那一下，好像有什么想不起来了……",
-		id = 420131054
-	},
-	[420131055] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "伊里伽尔姐姐。",
-		id = 420131055
-	},
-	[420131056] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂拄着楼梯护栏喊了伊里伽尔一声，对方却置若罔闻。就连洛肯也一样，还是背对着楼梯。",
-		id = 420131056
-	},
-	[420131057] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "……还有这份早饭，袋装面包，盒装牛奶。哦，妈妈咪的圣河在上，你对我品味的了解直接倒退一整年。",
-		id = 420131057
-	},
-	[420131058] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1042ui_story",
-		content = "我来夏什瓦特还不到半年，你这「一整年」是怎么算的？",
-		id = 420131058
-	},
-	[420131059] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "意思就是还不认识，完全不了解。",
-		id = 420131059
-	},
-	[420131060] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1042ui_story",
-		content = "我也觉得不像是带给你的。",
-		id = 420131060
-	},
-	[420131061] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "那还有谁——",
-		id = 420131061
-	},
-	[420131062] = {
-		speaker = "",
-		prefab_name = "",
-		content = "一只手伸进纸袋子，拨弄出的声音打断了两人的对话。伊里伽尔微微偏过头，像是感受到了某种不可思议的变化。",
-		id = 420131062
-	},
-	[420131063] = {
-		speaker = "",
-		prefab_name = "",
-		content = "洛肯的反应更是直接，先是一副见了鬼的表情，然后愣在原处，进而慢慢变得惊愕，甚至有些悚然。",
-		id = 420131063
-	},
-	[420131064] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "怎么了，洛肯？",
-		id = 420131064
-	},
-	[420131065] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "……伊里伽尔，你想说的是带给她吗？",
-		id = 420131065
-	},
-	[420131066] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1042ui_story",
-		content = "是的，但为什么刚才一直没想到……",
-		id = 420131066
-	},
-	[420131067] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "你们怎么了？说话和表情都好奇怪。",
-		id = 420131067
-	},
-	[420131068] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "你一直在楼上吗？今天是不是还没做检查？",
-		id = 420131068
-	},
-	[420131069] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "还没，你一直没上来，我以为你忘记了。",
-		id = 420131069
-	},
-	[420131070] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "是么？……是、是啊……忘记了。",
-		id = 420131070
-	},
-	[420131071] = {
-		speaker = "",
-		prefab_name = "",
-		content = "洛肯皱起眉头，微微偏过头，如同被刺痛了那样按了按太阳穴。",
-		id = 420131071
-	},
-	[420131072] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "可能不止是「忘记了」……总觉得到你拿起这盒牛奶之前，我脑子里根本没有「诗蔻蒂」这个名字。",
-		id = 420131072
-	},
-	[420131073] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "……不对，我在说什么，这太奇怪了……",
-		id = 420131073
-	},
-	[420131074] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1042ui_story",
-		content = "我也是。",
-		id = 420131074
-	},
-	[420131075] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "……什么？",
-		id = 420131075
-	},
-	[420131076] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1042ui_story",
-		content = "刚才我也完全不记得你了，诗蔻蒂……我甚至没有感应到你的灵魂数据。",
-		id = 420131076
-	},
-	[420131077] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1042ui_story",
-		content = "这种情况，恐怕不是「忘记」这么简单。",
-		id = 420131077
-	},
-	[420132001] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "出什么事了？忽然把我叫过来……",
-		id = 420132001
-	},
-	[420132002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "一头雾水地走进弥楼衍大厅，除了把我喊过来的帕尔瓦蒂，还有一位只在影像上见过的人。",
-		id = 420132002
-	},
-	[420132003] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你是……洛肯？",
-		id = 420132003
-	},
-	[420132004] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "虽说是第一次见面，但不得不跳过闲聊环节了。",
-		id = 420132004
-	},
-	[420132005] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "你记不记得你是来干什么的？",
-		id = 420132005
-	},
-	[420132006] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "干什么……我就住在这儿。为什么这么问？",
-		id = 420132006
-	},
-	[420132007] = {
-		speaker = "帕尔瓦蒂",
-		prefab_name = "1089ui_story",
-		content = "完了。",
-		id = 420132007
-	},
-	[420132008] = {
-		speaker = "",
-		prefab_name = "",
-		content = "听到帕瓦小声嘀咕了一句，我莫名其妙地回头看着她，却发现她正见鬼似地盯着我，又好像没在看我，而是在看着我身边的什么东西。",
-		id = 420132008
-	},
-	[420132009] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "你真的没有感觉到一点点不对劲的地方？少了什么东西之类的？",
-		id = 420132009
-	},
-	[420132010] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我有些不明所以地笑了两声，但洛肯和帕尔瓦蒂的表情都越来越沉重，如果是开玩笑的话未免有些过头了。",
-		id = 420132010
-	},
-	[420132011] = {
-		speaker = "帕尔瓦蒂",
-		prefab_name = "1089ui_story",
-		content = "算了，看来没有例外，他也忘了。",
-		id = 420132011
-	},
-	[420132012] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你们倒是把话说——",
-		id = 420132012
-	},
-	[420132013] = {
-		speaker = "",
-		prefab_name = "",
-		content = "袖口被轻轻扯了一下，我下意识地转过头，眼前晃过那抹曾在雨夜久别的粉色。",
-		id = 420132013
-	},
-	[420132014] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "#{nickname}#……也忘记我了吗？",
-		id = 420132014
-	},
-	[420132015] = {
-		speaker = "",
-		prefab_name = "",
-		content = "少女的脸庞泫然欲泣。我只感觉记忆在空白处如漩涡翻涌，堵着喉头，久久说不出话。",
-		id = 420132015
-	},
-	[420132016] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "唔，确实是很不正常的现象，有趣。",
-		id = 420132016
-	},
-	[420132017] = {
-		speaker = "",
-		prefab_name = "",
-		content = "或许是因为原先就不认识诗蔻蒂，当执明和我一样「确认」了诗蔻蒂的存在后，她的反应比我预想中要小很多。",
-		id = 420132017
-	},
-	[420132018] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "虽然我知道天才遇到复杂的问题都会有挑战欲，但可以不要当着人家的面露出这种神秘微笑吗……",
-		id = 420132018
-	},
-	[420132019] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "帕尔瓦蒂和那个洛肯没来？",
-		id = 420132019
-	},
-	[420132020] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我感觉你不喜欢实验室里有太多人，又是这种需要保密的地方，就让她们在弥楼衍等消息了。",
-		id = 420132020
-	},
-	[420132021] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "唉，改天就该招个你这样懂事的助手。",
-		id = 420132021
-	},
-	[420132022] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "说正事吧。其实只要明白「盖亚中的一切都是数据」，这种现象就没那么难理解了。",
-		id = 420132022
-	},
-	[420132023] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "数据可以被移除、篡改、销毁，也可以被屏蔽。你们都知道科尔盖的闪照枪吧？那东西就是个很不错的小型化应用。",
-		id = 420132023
-	},
-	[420132024] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "但闪照枪的屏蔽很强，不存在像这样看到人以后还能想起来的情况。",
-		id = 420132024
-	},
-	[420132025] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "诗蔻蒂，你说的这种「被忽视」的情况，是第一次发生吗？",
-		id = 420132025
-	},
-	[420132026] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "……有时候别人不太能听见我说什么，要很大声提醒算吗？",
-		id = 420132026
-	},
-	[420132027] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "只要是你觉得不正常的，都算。",
-		id = 420132027
-	},
-	[420132028] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "那……大概从第十几次开始，好像大家偶尔会对我说的话没有反应。",
-		id = 420132028
-	},
-	[420132029] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "嗯，那么可以认为，每次循环以后，他人对你的认知都在减弱，看起来只是在针对你一个人。",
-		id = 420132029
-	},
-	[420132030] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "等等，第十几次？",
-		id = 420132030
-	},
-	[420132031] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "嗯。",
-		id = 420132031
-	},
-	[420132032] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "那现在是……第几次？",
-		id = 420132032
-	},
-	[420132033] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "没数错的话……应该是486次了。",
-		id = 420132033
-	},
-	[420132034] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……多少？",
-		id = 420132034
-	},
-	[420132035] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "托一下自己的下巴，我不是医生，脱臼了可没法治疗。",
-		id = 420132035
-	},
-	[420132036] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我从震惊中回过神来，甩了甩脑袋后，才逐渐压下心中的波澜。",
-		id = 420132036
-	},
-	[420132037] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你刚说每次循环认知都会减弱……要是一直这样下去，会怎么样？",
-		id = 420132037
-	},
-	[420132038] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "如果一个人在盖亚的记录和所有人的感知中都不存在，那就算彻底消失了。",
-		id = 420132038
-	},
-	[420132039] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "消失……不是为了让我找回记忆，而是让大家忘记我……",
-		id = 420132039
-	},
-	[420132040] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……我不明白，这种针对有什么意义吗？",
-		id = 420132040
-	},
-	[420132041] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "先搞清楚原因再问意义吧。",
-		id = 420132041
-	},
-	[420132042] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "一个生命个体的数据量是相当庞大的。如果要抹除她的存在，这完全是费力不讨好，且不可控的低效行为，所以基本可以排除有预谋的人为。",
-		id = 420132042
-	},
-	[420132043] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "但要说自然现象——盖亚现在这副样子，那可能性就多了。",
-		id = 420132043
-	},
-	[420132044] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "那么，开始吧，诗蔻蒂。先把你所有的经历说一遍，我看看有没有可以入手的地方。",
-		id = 420132044
-	},
-	[420132045] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂用力捏着手指，征求意见似地看向我，见我带着鼓励的目光朝她点了点头，她这才开口回答。",
-		id = 420132045
-	},
-	[420132046] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "最近……都是同一天。",
-		id = 420132046
-	},
-	[420132047] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "嗯。具体是指什么意思？每天过得差不多？",
-		id = 420132047
-	},
-	[420132048] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "不是的，就是同一天，9月16日，结束了又回到早上，一遍又一遍。",
-		id = 420132048
-	},
-	[420132049] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "……这可不是开玩笑的事。回答几个问题，我需要确认你说的是真的。",
-		id = 420132049
-	},
-	[420132050] = {
-		speaker = "",
-		prefab_name = "",
-		content = "在执明条理清晰的追问下，诗蔻蒂把她经历过的「9月16日」大致说了一遍。虽然中间有很多细节不很清晰，但从她滔滔不绝的叙述来看，她真的已经经历过很多次循环。",
-		id = 420132050
-	},
-	[420132051] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "逻辑上没问题，至少没有说谎的痕迹。",
-		id = 420132051
-	},
-	[420132052] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "我没有说谎。",
-		id = 420132052
-	},
-	[420132053] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "保持基本的严谨而已。而且就你现在的记忆状况，还不能保证一定是时间在循环。",
-		id = 420132053
-	},
-	[420132054] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "有可能是其他临时分支中「同位体」的记忆并入，也有可能是盖亚对未来预行演算的结果输出到了你的记忆里……",
-		id = 420132054
-	},
-	[420132055] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "什么意思？平行时空？",
-		id = 420132055
-	},
-	[420132056] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "嗯，虽然按照盖亚的机制，分支通常会立刻被盖亚回收并进入销毁流程，但不排除会有什么意外。",
-		id = 420132056
-	},
-	[420132057] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "别觉得这些解释很离谱，再离谱也离谱不过「时间循环」。",
-		id = 420132057
-	},
-	[420132058] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明随手在一张纸上画了个长长的箭头，然后将纸塞进了透明的文件袋里，隔着封皮用笔端敲了敲箭头。",
-		id = 420132058
-	},
-	[420132059] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "首先，主轴世界的时间系统，受到盖亚的直接控制，只有极少数高级权限可以调用。但没有东西能越过盖亚本身操作时间。",
-		id = 420132059
-	},
-	[420132060] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "其次，调整时间意味着大量的数据变动，尤其是涉及一些不可逆过程的演算。如果强行进行「还原」很容易出问题，对盖亚来说属于「非必要不执行」的行为。",
-		id = 420132060
-	},
-	[420132061] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "而且……要还原就还原干净，一次性删除。偏偏保留你的记忆，有什么意义吗？",
-		id = 420132061
-	},
-	[420132062] = {
-		speaker = "",
-		prefab_name = "",
-		content = "最后这句解释好像给执明自己提了个醒，她盯着诗蔻蒂看了好一会儿，像是心中有了什么猜测。",
-		id = 420132062
-	},
-	[420132063] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "诗蔻蒂，在你说的「循环」还没开始，也就是第一次9月16日，还有更早的时候，你有没有接触过什么以前从来没听说过也没见过的东西？",
-		id = 420132063
-	},
-	[420132064] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "第一次……没听说过，也没见过……",
-		id = 420132064
-	},
-	[420132065] = {
-		speaker = "",
-		prefab_name = "",
-		content = "记忆顺着那天的时间一刻刻滑动，直到接近最末的位置，眼前的景象和记忆中的画面重合，诗蔻蒂看向房间内侧的实验舱。",
-		id = 420132065
-	},
-	[420132066] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "那个。",
-		id = 420132066
-	},
-	[420132067] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你知道那是什么东西？",
-		id = 420132067
-	},
-	[420132068] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "嗯。第一次晚上，听到声音，你带我来找执明姐姐看病。然后你躺进那里面，执明姐姐把一个叫「密钥」的东西插进去。",
-		id = 420132068
-	},
-	[420132069] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "以前没听说过，也没见过。",
-		id = 420132069
-	},
-	[420132070] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "等等，你是说，第一次9月16日晚上，我就帮他做认证了？",
-		id = 420132070
-	},
-	[420132071] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "是，最开始每天晚上都会做，有时候不让我待在这里。但最近不做了。",
-		id = 420132071
-	},
-	[420132072] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "最后一轮完整性验证和算法验证至少要到明天凌晨才能跑完，怎么可能今天就开始……",
-		id = 420132072
-	},
-	[420132073] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "那次认证成功了吗？",
-		id = 420132073
-	},
-	[420132074] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "没有。出问题以后，你把那根管子砸烂了。",
-		id = 420132074
-	},
-	[420132075] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明顺着诗蔻蒂手指的方向望去，来回确认了两遍那是印着「主供能线路」标识的线管，头疼地揉了揉眉心。",
-		id = 420132075
-	},
-	[420132076] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "为什么失败了？你记不记得我说过什么？",
-		id = 420132076
-	},
-	[420132077] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "不记得了。那时候我……",
-		id = 420132077
-	},
-	[420132078] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂张了张嘴，神情却逐渐变得茫然，愣在原地想了很久，才不太确定地继续说。",
-		id = 420132078
-	},
-	[420132079] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "好像有东西在很高的地方看着我，但是我看不到它。只是感觉它很讨厌我，要赶我走。",
-		id = 420132079
-	},
-	[420132080] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "我很害怕，就躲在墙角，不知道发生了什么。一直到你们叫我，然后就没事了。",
-		id = 420132080
-	},
-	[420132081] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明慢慢转过头盯着我，我也忍不住看向她。",
-		id = 420132081
-	},
-	[420132082] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "所以躺在里面的感觉就是走马灯？",
-		id = 420132082
-	},
-	[420132083] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "有点像，但不全是……一边回忆一边还能感觉到有什么东西在盯着我，虽然好像无害，但就是很不舒服。",
-		id = 420132083
-	},
-	[420132084] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我不信我们说的不是同一个东西。",
-		id = 420132084
-	},
-	[420132085] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "盖亚……返回请求，数据波动……是这样吗？",
-		id = 420132085
-	},
-	[420132086] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明低头沉吟了一会儿，忽然把我拉到一边，不太熟练地朝诗蔻蒂笑了笑示意和我有话要说。",
-		id = 420132086
-	},
-	[420132087] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "关于这个「人造修正者」的项目，你还知道多少？修正者权限的认证原理之类的。",
-		id = 420132087
-	},
-	[420132088] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这是帕拉凯瑟的项目，别说我了，托特知道的都很少。",
-		id = 420132088
-	},
-	[420132089] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……要不把洛肯喊过来问问？",
-		id = 420132089
-	},
-	[420132090] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "到时候再看看有没有必要吧。我有个猜想……",
-		id = 420132090
-	},
-	[420132091] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明目光闪烁，回到工作台边，看着屏幕上缓慢推动的进度条，抽了张便笺，记下进度条右上角的「预计完成时间」。",
-		id = 420132091
-	},
-	[420132092] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "这个时间，你记住。明天如果再循环，来找我，把你今天说过的所有事情重复一遍。",
-		id = 420132092
-	},
-	[420132093] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "然后告诉我这个时间，这是「验证预计完成时间」。重复一遍。",
-		id = 420132093
-	},
-	[420132094] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "凌晨2:35:54，这是验证预计完成时间。",
-		id = 420132094
-	},
-	[420132095] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "很好，然后再告诉我，你是「伪认证权限」。",
-		id = 420132095
-	},
-	[420132096] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "你是伪认证权限。",
-		id = 420132096
-	},
-	[420132097] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "不是……是让你说，「我，诗蔻蒂，我是伪认证权限。」明白了吗？",
-		id = 420132097
-	},
-	[420132098] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "明白了。",
-		id = 420132098
-	},
-	[420132099] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "那接下来就各回各家吧。",
-		id = 420132099
-	},
-	[420132100] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "你也别太担心，#{nickname}#。循环不可能无限重复，既然会重置我们的记忆，那吃饭睡觉等它结束就行。",
-		id = 420132100
-	},
-	[420132101] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "……哦，对了，诗蔻蒂，等我回复完你的上一句话，你要说「我就知道你是这个反应」。",
-		id = 420132101
-	},
-	[420141001] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂猛地睁开眼，却被眼前骤增的光亮晃得往后缩了缩。",
-		id = 420141001
-	},
-	[420141002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "身子下面依然是床褥熟悉的触感，时钟上的时间依然是「9月16日8:20」，洛肯依然不在房间里。",
-		id = 420141002
-	},
-	[420141003] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "还是一样……",
-		id = 420141003
-	},
-	[420141004] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "得赶紧去找执明姐姐才行。",
-		id = 420141004
-	},
-	[420141005] = {
-		speaker = "",
-		prefab_name = "",
-		content = "推开门，楼下依然传来伊里伽尔和洛肯的声音。",
-		id = 420141005
-	},
-	[420141006] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "你还要想多久？我一会儿还有笔生意要谈。",
-		id = 420141006
-	},
-	[420141007] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1042ui_story",
-		content = "等一下，已经到嘴边了……不是什么很麻烦的事，就是……呃……",
-		id = 420141007
-	},
-	[420141008] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂走到她们旁边，将手伸向桌上的纸袋，但碰到袋子前又收回了手。",
-		id = 420141008
-	},
-	[420141009] = {
-		speaker = "",
-		prefab_name = "",
-		content = "坐在桌边的两人依然有一搭没一搭地说着话，仿佛站在桌边的诗蔻蒂只是空气而已。",
-		id = 420141009
-	},
-	[420141010] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "……",
-		id = 420141010
-	},
-	[420141011] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1042ui_story",
-		content = "我也觉得不像是带给你的。",
-		id = 420141011
-	},
-	[420141012] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "那还有谁？",
-		id = 420141012
-	},
-	[420141013] = {
-		speaker = "",
-		prefab_name = "",
-		content = "洛肯伸了个懒腰，余光注意到临街的大门摇摇晃晃地漏开一条缝，以为是自己用力轻了没关紧，有些困惑地摇了摇头，起身去关门时，却习惯性地抬了一下头。",
-		id = 420141013
-	},
-	[420141014] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "……我看二楼干什么？",
-		id = 420141014
-	},
-	[420142001] = {
-		speaker = "帕尔瓦蒂",
-		prefab_name = "1089ui_story",
-		content = "唔……",
-		id = 420142001
-	},
-	[420142002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "听到身后的声音，我回过头，看到帕尔瓦蒂歪着脑袋看着我，身体却还是一副路过的姿势。",
-		id = 420142002
-	},
-	[420142003] = {
-		speaker = "帕尔瓦蒂",
-		prefab_name = "1089ui_story",
-		content = "怎么一大早坐在露台上发呆？",
-		id = 420142003
-	},
-	[420142004] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "刚从执明那儿回来，有种忽然闲下来的感觉。",
-		id = 420142004
-	},
-	[420142005] = {
-		speaker = "帕尔瓦蒂",
-		prefab_name = "1089ui_story",
-		content = "闲下来好啊，我的人生只要能躺着什么都不想就很幸福啦。",
-		id = 420142005
-	},
-	[420142006] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这话也就私底下抱怨抱怨了。",
-		id = 420142006
-	},
-	[420142007] = {
-		speaker = "帕尔瓦蒂",
-		prefab_name = "1089ui_story",
-		content = "那心里有话总不能一直憋着。",
-		id = 420142007
-	},
-	[420142008] = {
-		speaker = "帕尔瓦蒂",
-		prefab_name = "1089ui_story",
-		content = "说真的，遇到什么麻烦了吗？该帮的忙我还是不会逃的。",
-		id = 420142008
-	},
-	[420142009] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……不好说，只是有种……有什么原本专门留给这段时间的事还没做的感觉。",
-		id = 420142009
-	},
-	[420142010] = {
-		speaker = "帕尔瓦蒂",
-		prefab_name = "1089ui_story",
-		content = "完了，你不会是忙习惯了开始没事找事了吧？",
-		id = 420142010
-	},
-	[420142011] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "哪有……我说真的。到底少了什么……",
-		id = 420142011
-	},
-	[420142012] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "小昙，还没有忘记！",
-		id = 420142012
-	},
-	[420142013] = {
-		speaker = "",
-		prefab_name = "",
-		content = "像是幻听的模糊声音在耳边倏忽飘远。对面的帕尔瓦蒂也是一副好像听到什么声音的古怪表情。",
-		id = 420142013
-	},
-	[420142014] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "小昙，能听到我说话吗？我在这里。",
-		id = 420142014
-	},
-	[420142015] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我警觉地起身，可刚刚站稳就被什么东西撞了个满怀。温暖的气息像是一朵奋然盛开的小花，轻轻环住了我。",
-		id = 420142015
-	},
-	[420142016] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我低下头，看到粉头发少女惊喜的表情，还没来得及说什么，就被她拉着往楼下跑去，留下像是看了一场魔术演出的帕尔瓦蒂呆呆留在原地。",
-		id = 420142016
-	},
-	[420142017] = {
-		speaker = "帕尔瓦蒂",
-		prefab_name = "1089ui_story",
-		content = "……哇哦。",
-		id = 420142017
-	},
-	[420142018] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "伪认证权限？哈？理论不存在的东西冒出来了，现在跟我说这个？",
-		id = 420142018
-	},
-	[420142019] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "所以这些循环什么的……你昨天也跟我们说了一遍？我还说什么了？",
-		id = 420142019
-	},
-	[420142020] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "你让我说：「我就知道你是这个反应。」",
-		id = 420142020
-	},
-	[420142021] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明愣了几秒，我很少在她脸上见到如此困惑的表情。最后她只是苦笑着摇了摇头，喝了口好像有提神作用的自制饮品缓和了一下情绪。",
-		id = 420142021
-	},
-	[420142022] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "被自己开玩笑的感觉，这可真是独一份……算了，说正事吧。",
-		id = 420142022
-	},
-	[420142023] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "伪认证权限，事实上我也没想到真有这种东西。只是在开发这套往世书使用权限认证程序的过程中，预测过理论上存在的情况。",
-		id = 420142023
-	},
-	[420142024] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "首先要知道，盖亚中所有东西都要具备一定的权限才能在表层稳定存在。否则，要么成为垃圾数据被抹除，要么通过未知原理变成BUG，或者被污染成为视骸……",
-		id = 420142024
-	},
-	[420142025] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "但权限有高有低，能够「存在」，并不代表有「权力」接触盖亚中的所有东西。比如一个人使用往世书就必须绑定密钥，否则就会被判定为「非法访问」。",
-		id = 420142025
-	},
-	[420142026] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "我手里这把密钥就是拟造出来的。虽然实体本身不会被盖亚直接锁定破坏，但要想用它开启往世书，就必须让盖亚认为它是真的。",
-		id = 420142026
-	},
-	[420142027] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "所以在将密钥的权限绑定到使用者身上之前，认证程序先要做的是将这把拟造密钥尽可能伪装成真品。",
-		id = 420142027
-	},
-	[420142028] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "那么，同样的原理，对别的东西适用吗？",
-		id = 420142028
-	},
-	[420142029] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明停顿了一下，按着诗蔻蒂坐在椅子上。",
-		id = 420142029
-	},
-	[420142030] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "人造修正者的权能，必定不是来自「盖亚修正者系统」的直接授权，否则帕拉凯瑟根本不用藏着掖着。最有可能的解释，就是她的修正者权限也是拟造的。",
-		id = 420142030
-	},
-	[420142031] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "拥有拟造权限的修正者，吃饭睡觉逛游乐园都没问题，可一旦受到高于拟造权限许可范围的系统审查，非法性就会暴露。",
-		id = 420142031
-	},
-	[420142032] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "我记得你问过我，假如不用这套保护装置，直接将拟造密钥接入往世书会发生什么，我说这没法知道……现在看起来好像有答案了。",
-		id = 420142032
-	},
-	[420142033] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你是说……循环？",
-		id = 420142033
-	},
-	[420142034] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "循环只是现象，就像是终端执行了错误的启动程式，会反复进行报错重启。实际目的其实是将错误排除，保证系统功能的正常运行。",
-		id = 420142034
-	},
-	[420142035] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "但帕拉凯瑟这套「拟造权限」，既然能瞒住盖亚，就肯定不是随便就能抹掉的玩具。",
-		id = 420142035
-	},
-	[420142036] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "所以我们最后观察到的现象，就是诗蔻蒂的存在感随着循环一次次被削弱。如果换成密钥这种死物的话，应该就直接消失了吧。",
-		id = 420142036
-	},
-	[420142037] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "可躺在实验舱里的人是我，为什么她也会被系统审查？",
-		id = 420142037
-	},
-	[420142038] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "这就要说到一个一直被我忽视的问题了……",
-		id = 420142038
-	},
-	[420142039] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "密钥权限被激活的时候要向盖亚返回请求，会引发区域性的数据波动，这其实是在验证密钥的工作环境。",
-		id = 420142039
-	},
-	[420142040] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "但因为验证很宽松，只要验证范围内的东西都具备存在的合法权限就没问题，我就没管。",
-		id = 420142040
-	},
-	[420142041] = {
-		speaker = "",
-		prefab_name = "",
-		content = "说到这里，执明忍不住叹了口气。单说原因是她考虑不周全，但从效率的角度来说，她当时确实没有理由去顾虑一种可能根本不存在的情况。",
-		id = 420142041
-	},
-	[420142042] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "执明姐姐有办法吗？我不想被大家忘记……",
-		id = 420142042
-	},
-	[420142043] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "密钥的数据完整性验证，现在预计完成时间是凌晨2:37:33。",
-		id = 420142043
-	},
-	[420142044] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "比起上次循环晚了快两分多钟，说明往世书在持续记录每次循环的内容，对诗蔻蒂的抹除也是在历次循环中连续的过程。",
-		id = 420142044
-	},
-	[420142045] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "……准确地说并不是循环，而是盖亚在时间轴上正序排列的一次次重复。",
-		id = 420142045
-	},
-	[420142046] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "一个不达目的，就永不终止的循环指令？",
-		id = 420142046
-	},
-	[420142047] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "嗯，可以这么理解。所以即便终止重复，恐怕诗蔻蒂也只能维持现在的状态。",
-		id = 420142047
-	},
-	[420142048] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……总比就这么下去彻底消失好吧。办法是什么？",
-		id = 420142048
-	},
-	[420142049] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明犹豫了好一会儿，看向桌脚边的一只储物盒。",
-		id = 420142049
-	},
-	[420142050] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "最保险的办法是等我修复认证程序问题，想办法为诗蔻蒂合法授权。",
-		id = 420142050
-	},
-	[420142051] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "但循环的间隔时间太短了，只有一天。别说在这里，就算让我回天理阁都不一定能做到。",
-		id = 420142051
-	},
-	[420142052] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你刚才说这是「保险的办法」。什么是不保险的。",
-		id = 420142052
-	},
-	[420142053] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "摧毁密钥。",
-		id = 420142053
-	},
-	[420142054] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "现在看来，密钥是判定诗蔻蒂非法、执行时间重复的媒介。密钥的效力不分时空，但效力发生需要密钥存在。",
-		id = 420142054
-	},
-	[420142055] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "所以摧毁密钥大概率可以阻止时间继续重复……但问题在于连带的后果——诗蔻蒂……准确地说是你们两个。往世书的安全我倒是能保证。",
-		id = 420142055
-	},
-	[420142056] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "你倒还好，毕竟模拟认证看上去没什么问题。但诗蔻蒂的情况没法预测，往更好或更坏的方向发展都有可能。",
-		id = 420142056
-	},
-	[420142057] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明拉着我的胳膊，把我摆到诗蔻蒂边上，让出我们和桌脚边那只储物盒之间的空间。",
-		id = 420142057
-	},
-	[420142058] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "更坏的方向……是指什么？",
-		id = 420142058
-	},
-	[420142059] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "悲观情况下，诗蔻蒂会因为密钥被毁而连带消失。",
-		id = 420142059
-	},
-	[420142060] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "当然，理论上时间重复也会因此而结束，这对我来说没有任何损失。",
-		id = 420142060
-	},
-	[420142061] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明的眼神在我和诗蔻蒂之间来回扫了扫，而后叹了口气。",
-		id = 420142061
-	},
-	[420142062] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "所以要怎么选我都无所谓，就看你们两个，愿不愿意冒这个险了。",
-		id = 420142062
-	},
-	[420151001] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "……人是你要救的。要怎么选，看她和你的想法。",
-		id = 420151001
-	},
-	[420151002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "在桌上排开几瓶饮料几袋零食，洛肯在我对面坐下，抬头看了眼房门紧闭的二楼卧室，若无其事地开了一罐饮品。",
-		id = 420151002
-	},
-	[420151003] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "要不是你提醒，我大概就像你说的，从今天开始忘记还有这么个小鬼，也就不用再当保姆了。",
-		id = 420151003
-	},
-	[420151004] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "总之，不管结果怎么样，我都没意见。你没必要因为这种事来找我。",
-		id = 420151004
-	},
-	[420151005] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "是她让我来的。我也不希望我想救的人因为这种莫名其妙的原因消失。",
-		id = 420151005
-	},
-	[420151006] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "你听她的？",
-		id = 420151006
-	},
-	[420151007] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "因为她说，如果洛肯想起她的时候却找不到她，肯定会很着急，很生气。",
-		id = 420151007
-	},
-	[420151008] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "她不想让你生气，所以不管要去哪儿，要做什么，都得先告诉你。",
-		id = 420151008
-	},
-	[420151009] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "呵，早上还不是一个人跑出去了……",
-		id = 420151009
-	},
-	[420151010] = {
-		speaker = "",
-		prefab_name = "",
-		content = "手边的铝罐终究是没举起来。洛肯一只手托着下巴，另一只手的中指有一下没一下地叩着桌面，直到听不见罐子里的气泡声，才把它推到我面前。",
-		id = 420151010
-	},
-	[420151011] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "你知道科学家能说出的最可怕的话是什么吗？",
-		id = 420151011
-	},
-	[420151012] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "大概是……用「我不知道」来结尾的话？",
-		id = 420151012
-	},
-	[420151013] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "你是懂的。",
-		id = 420151013
-	},
-	[420151014] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "既然那位执明代理都没招了，那就该做好最坏的打算，然后用我们可能全是白忙活的努力，让它尽可能变好一点。",
-		id = 420151014
-	},
-	[420151015] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "但现在实在没有更稳妥的办法能救她了。",
-		id = 420151015
-	},
-	[420151016] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "稳不稳妥，结果怎么样，很重要吗？",
-		id = 420151016
-	},
-	[420151017] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我们在讨论的是一个人的生命。",
-		id = 420151017
-	},
-	[420151018] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "不要随便把你们人类的想法套到我们身上啊……",
-		id = 420151018
-	},
-	[420151019] = {
-		speaker = "",
-		prefab_name = "",
-		content = "见我没有喝的意思，洛肯摇了摇头，又把铝罐拿了回去，仰头灌了一大口。",
-		id = 420151019
-	},
-	[420151020] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "生命是你们人类的概念。我们只是「有生命的工具」，至少被制造出来的时候，就只是这样而已。",
-		id = 420151020
-	},
-	[420151021] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "我踩着同伴的命活到现在，原本不该是我……「生命」是他们留给我的东西，对我来说只是个随时还回去都没关系的赠品。",
-		id = 420151021
-	},
-	[420151022] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "但他们跟我说过，我应该有个名字，我应该去消灭视骸，我应该走出那个该死的实验室，应该和人类一样，抬头就能看到天上的星星……",
-		id = 420151022
-	},
-	[420151023] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "所以我活下来了……所以「我」活下来了。",
-		id = 420151023
-	},
-	[420151024] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "我做过最坏的打算，就是失去他们托付给我的这些……",
-		id = 420151024
-	},
-	[420151025] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "就算顶着千分之一万分之一的机会，我也要在那些该死的星星下面，想喝的时候喝上一杯。",
-		id = 420151025
-	},
-	[420151026] = {
-		speaker = "",
-		prefab_name = "",
-		content = "洛肯晃了晃罐子，听了会儿罐子里液体翻涌的声音，朝我举起示意。",
-		id = 420151026
-	},
-	[420151027] = {
-		speaker = "（选项一）",
-		prefab_name = "",
-		content = "碰杯",
-		id = 420151027
-	},
-	[420151028] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "就像这样。",
-		id = 420151028
-	},
-	[420151029] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "不想喝的时候也可以像你这样。",
-		id = 420151029
-	},
-	[420151030] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "这和你们常说的什么「自由」什么「价值」都没关系，还没到要讨论那些精致包装的地步。",
-		id = 420151030
-	},
-	[420151031] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "这只是很简单的……人类从出生就明白的「渴望」而已。",
-		id = 420151031
-	},
-	[420151032] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "小粉毛是我唯一的同类，所以我不会讲好话去哄她，也不会哄想要救她的你。",
-		id = 420151032
-	},
-	[420151033] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "稳不稳妥，结果怎么样，不重要。重要的是，你敢为了明天而舍弃过去的一切吗？",
-		id = 420151033
-	},
-	[420151034] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "我不觉得这是难事……毕竟我们最讨厌的、哭着喊着伤痕累累也想挣脱的，就是自己的过去啊。",
-		id = 420151034
-	},
-	[420151035] = {
-		speaker = "",
-		prefab_name = "",
-		content = "洛肯将铝罐送到嘴边，准备喝掉里面剩下的最后一口，屋外却忽然响起一声像是重物坠地的响动。她手一抖，罐子里的液体差点洒出来。",
-		id = 420151035
-	},
-	[420151036] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "又在闹什么？",
-		id = 420151036
-	},
-	[420151037] = {
-		speaker = "",
-		prefab_name = "",
-		content = "不悦地将罐子扣在桌上，洛肯大步走过去开门，半个身子探出屋外，却没看到街上有什么砸坏的东西。",
-		id = 420151037
-	},
-	[420151038] = {
-		speaker = "",
-		prefab_name = "",
-		content = "更奇怪的是，附近所有行人都在忙着手头的事，好像根本没人听到那声异响。",
-		id = 420151038
-	},
-	[420151039] = {
-		speaker = "",
-		prefab_name = "",
-		content = "洛肯刚想抱怨两句，脸色忽然一变，退回屋内抬头看向二楼。",
-		id = 420151039
-	},
-	[420151040] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "……没有吗？",
-		id = 420151040
-	},
-	[420151041] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我站在二楼卧室门外，神情僵硬地朝洛肯摇了摇头。",
-		id = 420151041
-	},
-	[420151042] = {
-		speaker = "",
-		prefab_name = "",
-		content = "房门半开着，窗帘在扫过街道的微风中鼓荡。被子叠得整整齐齐，屋内已经没有了诗蔻蒂的身影。",
-		id = 420151042
-	},
-	[420152001] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "加尔这么小一个地方，怎么能冒出这么多事来……得找梵天聊聊了。",
-		id = 420152001
-	},
-	[420152002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "最后看了眼屏幕上缓慢滚动的验证进度，执明短暂地从机械理性的研究状态中脱离出来，长长吐了口气，收拾好随身的物件，熄灯离开实验室。",
-		id = 420152002
-	},
-	[420152003] = {
-		speaker = "",
-		prefab_name = "",
-		content = "十分钟后，一只手拨下照明系统的开关。灯光重新亮起，并没有触发任何警报，伸手的人才终于松了口气。",
-		id = 420152003
-	},
-	[420152004] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "还好没有被发现。",
-		id = 420152004
-	},
-	[420152005] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "但是，真的一个人都没看见我……",
-		id = 420152005
-	},
-	[420152006] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂抿着嘴唇，小心地走到办公桌边，将桌脚边的储物盒搬起来放到桌上，依然没有触发警报。",
-		id = 420152006
-	},
-	[420152007] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "执明姐姐说过，只要弄坏它，就不会再回到早上了。",
-		id = 420152007
-	},
-	[420152008] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂打开盒子，碰了一下盛放在里面的密钥。未被激活的密钥对诗蔻蒂的触碰毫无反应，就像是在加尔集市的小摊上随处可见的金属工艺品。",
-		id = 420152008
-	},
-	[420152009] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "想要在明天见到小昙，想要不消失，就只能这么做。",
-		id = 420152009
-	},
-	[420152010] = {
-		speaker = "",
-		prefab_name = "",
-		content = "两只手握住密钥两端，诗蔻蒂刚想用力，身后的大门忽然被粗暴地推开。",
-		id = 420152010
-	},
-	[420152011] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "别——",
-		id = 420152011
-	},
-	[420152012] = {
-		speaker = "",
-		prefab_name = "",
-		content = "刚推开门就看到密钥被诗蔻蒂拿在手里，我连忙冲上去，趁着诗蔻蒂看到我还在愣神的时候，一把将密钥按回到盒子里。",
-		id = 420152012
-	},
-	[420152013] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你干什么？",
-		id = 420152013
-	},
-	[420152014] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "我、我想试试，如果成功了，我就不会消失，明天还可以一起——",
-		id = 420152014
-	},
-	[420152015] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "那要是失败了呢？！你有没有想过失败了会怎么样？",
-		id = 420152015
-	},
-	[420152016] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "洛肯说，如果只有这个办法，就不要害怕会失败。",
-		id = 420152016
-	},
-	[420152017] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "洛肯遇到过的事比我遇到的事可怕得多，但洛肯从来没有害怕过，我想像她一样。",
-		id = 420152017
-	},
-	[420152018] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你听到我们说话了？",
-		id = 420152018
-	},
-	[420152019] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "我不是故意偷听的。我就在楼梯上面，但你们都没发现我……",
-		id = 420152019
-	},
-	[420152020] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我立刻明白了过来——即便没有忘记诗蔻蒂，我和洛肯对她的感知也还是受到了影响。",
-		id = 420152020
-	},
-	[420152021] = {
-		speaker = "",
-		prefab_name = "",
-		content = "洛肯那些话说得很直白，也许对洛肯来说只是习以为常的处事方式，但放在诗蔻蒂身上显然有些太残酷了——即便，也正因为她对此毫无知觉。",
-		id = 420152021
-	},
-	[420152022] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "还没尝试过别的办法，你为什么就觉得只能这么做呢？",
-		id = 420152022
-	},
-	[420152023] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "洛肯、托特、执明、伊里伽尔、帕瓦、梵天、我……还有很多人都愿意帮你，为什么不让我们试试呢？",
-		id = 420152023
-	},
-	[420152024] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "因为……都试过了。",
-		id = 420152024
-	},
-	[420152025] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "试过什么了？",
-		id = 420152025
-	},
-	[420152026] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "都试过了，这次循环以前，大家想过各种各样的办法。",
-		id = 420152026
-	},
-	[420152027] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "但大家还是越来越容易忘记我。很多人，就算我大声喊，也不会理我了。",
-		id = 420152027
-	},
-	[420152028] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……你……到底已经循环多少次了？",
-		id = 420152028
-	},
-	[420152029] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "不记得了，但是没关系。",
-		id = 420152029
-	},
-	[420152030] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "小昙还是一直记得我。虽然是第一次见到，还是能想起我，我很高兴。",
-		id = 420152030
-	},
-	[420152031] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "我想在你还没忘记我的时候试一试。就算其他人不会重新想起我，只要你还记得，我就不是一个人。",
-		id = 420152031
-	},
-	[420152032] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "因为每个9月16日，你都会陪我。不管我想玩什么，不管我想去哪里，你都会同意，和我一起。",
-		id = 420152032
-	},
-	[420152033] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "和你在一起，很温暖，想要永远这样……",
-		id = 420152033
-	},
-	[420152034] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂握住了我按着密钥的右手，想要让我松开，我却依旧茫然无措地握着密钥。",
-		id = 420152034
-	},
-	[420152035] = {
-		speaker = "",
-		prefab_name = "",
-		content = "她没有强行把我的手掰开，只是抬起头，用像是模仿洛肯的眼神认真地看着我。",
-		id = 420152035
-	},
-	[420152036] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "小昙，可以再陪我做一次我想做的事吗？",
-		id = 420152036
-	},
-	[420152037] = {
-		speaker = "",
-		prefab_name = "",
-		content = "普渡制药园区一角，执明靠在一座弃用建筑的墙边，低头看着手里的平板终端。",
-		id = 420152037
-	},
-	[420152038] = {
-		speaker = "",
-		prefab_name = "",
-		content = "屏幕上的画面是实验室里的安全监控，右上角显示着再也到达不了的，密钥验证预计完成时间——凌晨3:32。",
-		id = 420152038
-	},
-	[420152039] = {
-		speaker = "",
-		prefab_name = "",
-		content = "当看到少女放开拥抱的手，回到密钥旁边召唤出她的权钥，执明关掉屏幕，深深叹了口气。",
-		id = 420152039
-	},
-	[420152040] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "……希望一切都能弥补吧。",
-		id = 420152040
-	},
-	[420161001] = {
-		speaker = "",
-		prefab_name = "",
-		content = "文本置空",
-		id = 420161001
-	},
-	[420161002] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "……",
-		id = 420161002
-	},
-	[420161003] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "是……坏掉了吗？",
-		id = 420161003
-	},
-	[420161004] = {
-		speaker = "",
-		prefab_name = "",
-		content = "床头时钟上的数字随着诗蔻蒂瞳孔的焦距变化时而模糊时而清晰，她呆呆地伸出手想要把时钟拿过来，可并没有抓到任何东西。",
-		id = 420161004
-	},
-	[420161005] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "？",
-		id = 420161005
-	},
-	[420161006] = {
-		speaker = "",
-		prefab_name = "",
-		content = "以为是自己判断错了距离，诗蔻蒂要又尝试了一次。",
-		id = 420161006
-	},
-	[420161007] = {
-		speaker = "",
-		prefab_name = "",
-		content = "这回她看清了，她的手仿佛只是一团全息投影，直接穿过了时钟。手上没有痛感或触感，时钟也没有一丝一毫的晃动。",
-		id = 420161007
-	},
-	[420161008] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "……失败了吗？可是，为什么还是今天？",
-		id = 420161008
-	},
-	[420161009] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂跳下床，只感觉身体比平时轻了无数倍，脚底没有站立的实感，甚至没办法踩出脚步声。",
-		id = 420161009
-	},
-	[420161010] = {
-		speaker = "",
-		prefab_name = "",
-		content = "房门和时钟一样无法接触，诗蔻蒂一个趔趄，身体穿过房门跌出了房间，差点从楼梯上摔下去。",
-		id = 420161010
-	},
-	[420161011] = {
-		speaker = "",
-		prefab_name = "",
-		content = "她木然走下楼，脑海抗拒着对刚才发生的任何事的思考，顾不上洛肯还在打电话，径直跑到她边上。",
-		id = 420161011
-	},
-	[420161012] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "洛肯，不好了，我有事情……洛肯！",
-		id = 420161012
-	},
-	[420161013] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "……也不是什么客气不客气的。老头儿活得不容易，现在死了，没法再惦记活着时候的那点恩怨了。",
-		id = 420161013
-	},
-	[420161014] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "我这点委托费还是省省吧，加点钱弄口好棺盖座好墓，最后一程就别节省了。",
-		id = 420161014
-	},
-	[420161015] = {
-		speaker = "",
-		prefab_name = "",
-		content = "洛肯一边说着，一边转过身，换了个方向慢慢踱步，毫无阻碍地穿过诗蔻蒂的身体，脚步和神情没有一丝一毫的变化。",
-		id = 420161015
-	},
-	[420161016] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "洛肯也不记得我了。",
-		id = 420161016
-	},
-	[420161017] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "那小昙……",
-		id = 420161017
-	},
-	[420161018] = {
-		speaker = "",
-		prefab_name = "",
-		content = "从弥楼衍一楼开始一层层往上找，穿过闹腾的帮派成员，穿过福利院成群的孩子们，终于在高层露台找到了目标。",
-		id = 420161018
-	},
-	[420161019] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "小昙，还有帕尔瓦蒂姐姐。",
-		id = 420161019
-	},
-	[420161020] = {
-		speaker = "帕尔瓦蒂",
-		prefab_name = "1089ui_story",
-		content = "说真的，遇到什么麻烦了吗？该帮的忙我还是不会逃的。",
-		id = 420161020
-	},
-	[420161021] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "不好说，只是感觉今天有点不对劲，不该闲在这里的……",
-		id = 420161021
-	},
-	[420161022] = {
-		speaker = "帕尔瓦蒂",
-		prefab_name = "1089ui_story",
-		content = "完了，你不会是忙习惯了开始没事找事了吧？",
-		id = 420161022
-	},
-	[420161023] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "能感觉到不对，是不是还记得……",
-		id = 420161023
-	},
-	[420161024] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂往前跑了两步，忽然又有些害怕地缩回去一下，犹豫了好久，眼看两人都要离开了，才慌忙赶上来。",
-		id = 420161024
-	},
-	[420161025] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "小昙！",
-		id = 420161025
-	},
-	[420161026] = {
-		speaker = "",
-		prefab_name = "",
-		content = "无法触碰，努力伸出的手依然只是徒劳。",
-		id = 420161026
-	},
-	[420161027] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "能听到我说话吗？随便什么声音都好。",
-		id = 420161027
-	},
-	[420161028] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "只要听到一点点，就能慢慢想起来的，一点点就可以了……",
-		id = 420161028
-	},
-	[420161029] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "不应该这样的，为什么连小昙都没有反应。连小昙都……",
-		id = 420161029
-	},
-	[420161030] = {
-		speaker = "",
-		prefab_name = "",
-		content = "两人的背影消失在露台去往楼梯的拐角。诗蔻蒂愣在原地，过了好久，才发现泪水已经盈满眼眶。",
-		id = 420161030
-	},
-	[420161031] = {
-		speaker = "",
-		prefab_name = "",
-		content = "她低了低头，一滴眼泪落下，却并没能触碰到地面，而是在半空中就散作一团晶莹的数据碎片，消失在了这「合法」的世界之中。",
-		id = 420161031
-	},
-	[420161032] = {
-		speaker = "",
-		prefab_name = "",
-		content = "老式轿车在路口急转弯，车子抓地不稳，正面撞上路边的拦车柱。",
-		id = 420161032
-	},
-	[420161033] = {
-		speaker = "",
-		prefab_name = "",
-		content = "几辆高档轿车追出路口，围住老式轿车。十几个全副武装的人鱼贯而出，将卡皮尔拖出驾驶座。",
-		id = 420161033
-	},
-	[420161034] = {
-		speaker = "",
-		prefab_name = "",
-		content = "眼看卡皮尔的手指要被按到签字板上，伽梨的越野车也追到了现场。",
-		id = 420161034
-	},
-	[420161035] = {
-		speaker = "武装安保",
-		prefab_name = "",
-		content = "又是你们？存心找事是吧？！",
-		id = 420161035
-	},
-	[420161036] = {
-		speaker = "伽梨",
-		prefab_name = "1056ui_story",
-		content = "放人，这里是加尔。",
-		id = 420161036
-	},
-	[420161037] = {
-		speaker = "武装安保",
-		prefab_name = "",
-		content = "拿钱办事，打起来可别怪我们手重。",
-		id = 420161037
-	},
-	[420161038] = {
-		speaker = "伽梨",
-		prefab_name = "1056ui_story",
-		content = "找雇你们的人去讨医药费吧。",
-		id = 420161038
-	},
-	[420171001] = {
-		speaker = "",
-		prefab_name = "",
-		content = "铅灰色的天空落下一滴雨，我抬起头，没落下第二滴。",
-		id = 420171001
-	},
-	[420171002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "小巷很深，看不见人迹，耳膜却能感受到置身人群当中的鼓噪。",
-		id = 420171002
-	},
-	[420171003] = {
-		speaker = "",
-		prefab_name = "",
-		content = "没人向我而来，没人离我远去，我仿佛已经在这里站了许久，徒劳地等待着时光的日晒雨淋。",
-		id = 420171003
-	},
-	[420171004] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我在这里多久了？",
-		id = 420171004
-	},
-	[420171005] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "久到该醒醒了。",
-		id = 420171005
-	},
-	[420171006] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这是哪儿？",
-		id = 420171006
-	},
-	[420171007] = {
-		speaker = "",
-		prefab_name = "",
-		content = "没有应答。四周的景象仿佛镜中倒影，从身后开始随着破碎的镜面一块块剥离。",
-		id = 420171007
-	},
-	[420171008] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我望着飞散的碎片，它们很快被拉伸成细长的流光，如雨丝般向后飞远。",
-		id = 420171008
-	},
-	[420171009] = {
-		speaker = "",
-		prefab_name = "",
-		content = "当我立足的地面也被剥离时，我终于感受到了那股向后牵引的力量。重力方向由脚下变为身后，拉着我与那些流光一同下坠。",
-		id = 420171009
-	},
-	[420171010] = {
-		speaker = "",
-		prefab_name = "",
-		content = "破碎的小巷就像一块逐渐缩小的画框，在距离中逐渐变得不真切。我注视着它，它也注视着我……",
-		id = 420171010
-	},
-	[420171011] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "你在哭吗？",
-		id = 420171011
-	},
-	[420171012] = {
-		speaker = "",
-		prefab_name = "",
-		content = "一包纸巾砸在我脑袋上。我捂着额头从实验舱里坐起来，抹了一下眼睛，食指侧面留下一道湿润的痕迹。",
-		id = 420171012
-	},
-	[420171013] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "不会是结膜炎吧？",
-		id = 420171013
-	},
-	[420171014] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "炎个鬼啊……",
-		id = 420171014
-	},
-	[420171015] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "那就是情绪波动。梦到你「以前」的事了？",
-		id = 420171015
-	},
-	[420171016] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我……我不好说。",
-		id = 420171016
-	},
-	[420171017] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明的神情一下子变得慎重起来，搬了条椅子坐到我边上。",
-		id = 420171017
-	},
-	[420171018] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "你还记得我怎么跟你说的吗？",
-		id = 420171018
-	},
-	[420171019] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "记得，密钥会遍历所有和我相关的数据，有可能在这个过程中让我看到我丢失的那部分记忆……",
-		id = 420171019
-	},
-	[420171020] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "但我看到的不是那些，是……一条小巷。给我一种非常熟悉的感觉，但想不起来在哪里。",
-		id = 420171020
-	},
-	[420171021] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "艾因索菲？",
-		id = 420171021
-	},
-	[420171022] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "夏什瓦特。",
-		id = 420171022
-	},
-	[420171023] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "最有可能的解释是，认证结束但你还在睡眠状态，所以开始做梦了。",
-		id = 420171023
-	},
-	[420171024] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "不，我看到那条小巷以后认证才结束。我能看到「它」。",
-		id = 420171024
-	},
-	[420171025] = {
-		speaker = "",
-		prefab_name = "",
-		content = "连我自己也不知道，为什么我可以把这个单凭感觉得出来的结论说得如此笃信，以至于执明似乎都相信了，或者只是单纯觉得有蹊跷。",
-		id = 420171025
-	},
-	[420171026] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "……那地方长什么样，我帮你定位。你去调查一下，如果发现有什么不对的地方，回来告诉我。",
-		id = 420171026
-	},
-	[420171027] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "对，我说的是「调查」，因为这可能关系到认证结果。我可不希望你被盖亚判成非法，再来告诉我这段时间全是白忙活。",
-		id = 420171027
-	},
-	[420171028] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这……有这么多人吗？",
-		id = 420171028
-	},
-	[420171029] = {
-		speaker = "",
-		prefab_name = "",
-		content = "行人和摊位完全遮住了街道原本的样子，我只能通过建筑的布局确认这里就是我在模拟认证最后看见的地方。",
-		id = 420171029
-	},
-	[420171030] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我硬着头皮挤进这个鱼龙混杂的集市，寻找着记忆中画面确切的方位。",
-		id = 420171030
-	},
-	[420171031] = {
-		speaker = "",
-		prefab_name = "",
-		content = "路过一处杂货摊时，有位顾客似乎与嬉皮士打扮的摊主就价格发生了分歧。我用物联系统识别了一下价格，暗中感叹摊主的黑心，上前把那位顾客劝开。",
-		id = 420171031
-	},
-	[420171032] = {
-		speaker = "",
-		prefab_name = "",
-		content = "摊主见我懂行，便放弃了继续忽悠，但也没有道歉的打算，只是扫兴地戴上了耳机。客人也没问摊主要个说法，嘀咕了两句就走了。",
-		id = 420171032
-	},
-	[420171033] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我无奈地摇摇头，正要离开，不经意间瞥到小摊角落的一朵玻璃花上，脚步顿时停了下来。",
-		id = 420171033
-	},
-	[420171034] = {
-		speaker = "杂货摊主",
-		prefab_name = "",
-		content = "哎哎哎，差不多得了啊，你一直站在这儿我怎么做生意？",
-		id = 420171034
-	},
-	[420171035] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我拿起那朵玻璃花，递给他两张钞票。",
-		id = 420171035
-	},
-	[420171036] = {
-		speaker = "杂货摊主",
-		prefab_name = "",
-		content = "好的老板，谢谢老板，老板看看还有没有喜欢的？",
-		id = 420171036
-	},
-	[420171037] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这种花，还有没有别的？",
-		id = 420171037
-	},
-	[420171038] = {
-		speaker = "杂货摊主",
-		prefab_name = "",
-		content = "没了。这种工艺品摆件，在加尔买的人少，我也就随便收一点。",
-		id = 420171038
-	},
-	[420171039] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我点点头，把玩着手里的玻璃花。半边是玻璃原本的透明，另半边则染上了幽邃的冰蓝，颜色过渡做得很有层次感，但总让我感觉有种设计上微妙的失衡。",
-		id = 420171039
-	},
-	[420171040] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……我为什么要买这个？",
-		id = 420171040
-	},
-	[420171041] = {
-		speaker = "杂货摊主",
-		prefab_name = "",
-		content = "……因为好看？小本生意，不退不换的啊，老板。",
-		id = 420171041
-	},
-	[420171042] = {
-		speaker = "",
-		prefab_name = "",
-		content = "实际上也没有退款的想法。我把玻璃花放进背包中，肩膀上增加的一点重量莫名让我感觉安心了一些。",
-		id = 420171042
-	},
-	[420171043] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "还差一点……差了什么？",
-		id = 420171043
-	},
-	[420171044] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我继续在集市中穿行，可都快走到集市另一头的出口了，还是没找到模拟认证中那种熟悉的感觉。",
-		id = 420171044
-	},
-	[420171045] = {
-		speaker = "",
-		prefab_name = "",
-		content = "往前一步就算离开集市，我停了下来，左右看了看。街角的两片摊位规模都比较大，毕竟能占住这种好地方的摊主多少是有点门路的。",
-		id = 420171045
-	},
-	[420171046] = {
-		speaker = "",
-		prefab_name = "",
-		content = "一边是个小吃摊，闻着很香，旁边围满了拿着零钱的小孩儿。相比起来另一边就冷清不少，摊位上摆满了音像制品，颇有种怀旧的年代感。",
-		id = 420171046
-	},
-	[420171047] = {
-		speaker = "音像摊主",
-		prefab_name = "",
-		content = "年轻人，要看看吗？",
-		id = 420171047
-	},
-	[420171048] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你这儿的货倒是都有些年头了。",
-		id = 420171048
-	},
-	[420171049] = {
-		speaker = "音像摊主",
-		prefab_name = "",
-		content = "呵呵，是啊，上了年纪才发现家里堆了不少以前的东西。",
-		id = 420171049
-	},
-	[420171050] = {
-		speaker = "音像摊主",
-		prefab_name = "",
-		content = "与其跟着我入土，不如拿出来，看看还有没有人感兴趣。",
-		id = 420171050
-	},
-	[420171051] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "年轻人总是更喜欢新潮。",
-		id = 420171051
-	},
-	[420171052] = {
-		speaker = "音像摊主",
-		prefab_name = "",
-		content = "谁说不是呢？我这些东西，在我年轻的时候也都潮得很，那会儿还没加尔呢，整个基维塔巴都好这些。",
-		id = 420171052
-	},
-	[420171053] = {
-		speaker = "音像摊主",
-		prefab_name = "",
-		content = "人嘛，总觉得自己喜欢的就是最好的。喜欢上一样东西就很难丢下，没精力留给新玩意儿了。",
-		id = 420171053
-	},
-	[420171054] = {
-		speaker = "音像摊主",
-		prefab_name = "",
-		content = "年纪越大越能明白这个道理，有时候就会逼着自己放一放，呵呵，我可不是什么老顽固。",
-		id = 420171054
-	},
-	[420171055] = {
-		speaker = "音像摊主",
-		prefab_name = "",
-		content = "但新鲜玩意儿满大街都是，老东西也有老东西的好，谁都没错。",
-		id = 420171055
-	},
-	[420171056] = {
-		speaker = "",
-		prefab_name = "",
-		content = "能够实体售卖的无疑都是典藏级的制品，但包装经过年岁摩挲也难免失去原本的精致，只留下一个「曾经美满」的印象。",
-		id = 420171056
-	},
-	[420171057] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我的目光只在它们上面停留了片刻，就被另外一堆东西吸引。",
-		id = 420171057
-	},
-	[420171058] = {
-		speaker = "音像摊主",
-		prefab_name = "",
-		content = "这些相机、音箱、麦克风什么的，都是老型号，很多已经停产了，想要还得找人定做还原。",
-		id = 420171058
-	},
-	[420171059] = {
-		speaker = "音像摊主",
-		prefab_name = "",
-		content = "功能肯定比不上现在的高科技，但都还算能用。",
-		id = 420171059
-	},
-	[420171060] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我点点头，捡起其中一台相机。",
-		id = 420171060
-	},
-	[420171061] = {
-		speaker = "音像摊主",
-		prefab_name = "",
-		content = "看上这台了吗？可以拍张照试试看。得先打开上面的……",
-		id = 420171061
-	},
-	[420171062] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……",
-		id = 420171062
-	},
-	[420171063] = {
-		speaker = "音像摊主",
-		prefab_name = "",
-		content = "哦，你以前用过这种相机？",
-		id = 420171063
-	},
-	[420171064] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "没有……但拿在手里很熟悉。",
-		id = 420171064
-	},
-	[420171065] = {
-		speaker = "",
-		prefab_name = "",
-		content = "很熟悉。天上没有下雨，街景没有破碎，但按下快门的一瞬间，我便笃信自己已经回到了那条不存在的巷子里。",
-		id = 420171065
-	},
-	[420171066] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我点开存储空间，想看看刚才拍的那张照片，里面却显示一片空白。",
-		id = 420171066
-	},
-	[420171067] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我皱起眉头，又试着按了一下快门，果不其然又弹出了「储存已满」。",
-		id = 420171067
-	},
-	[420171068] = {
-		speaker = "音像摊主",
-		prefab_name = "",
-		content = "怎么，有故障吗？",
-		id = 420171068
-	},
-	[420171069] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "不……不是……",
-		id = 420171069
-	},
-	[420171070] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我又按了一下快门，在提示弹出前的瞬间，似乎有什么东西一闪而逝。",
-		id = 420171070
-	},
-	[420171071] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我好像，看到有什么东西……",
-		id = 420171071
-	},
-	[420171072] = {
-		speaker = "音像摊主",
-		prefab_name = "",
-		content = "如果有故障，可以退换，我也不是贪这点钱才开这家店。",
-		id = 420171072
-	},
-	[420171073] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "不用了，这个就行。",
-		id = 420171073
-	},
-	[420171074] = {
-		speaker = "",
-		prefab_name = "",
-		content = "像是害怕失去什么似地，我退后了两步，将相机塞进背包里。这才意识到自己的行为不太礼貌，又向摊主道了个歉，心不在焉地离开了集市。",
-		id = 420171074
-	},
-	[420171075] = {
-		speaker = "",
-		prefab_name = "",
-		content = "背包的重量终于被调整到了让我感觉舒适的程度，我吐了口气，回头看了眼集市，却已经失去了初来时的那种好奇。",
-		id = 420171075
-	},
-	[420171076] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "时间还早，要不去别的地方也看看吧。",
-		id = 420171076
-	},
-	[420172001] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "有什么东西？",
-		id = 420172001
-	},
-	[420172002] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你没看见吗？闪了一下的这个。",
-		id = 420172002
-	},
-	[420172003] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我一遍遍按着快门，不停调整相机屏幕的角度，希望她能看到那一闪而过的模糊影像。",
-		id = 420172003
-	},
-	[420172004] = {
-		speaker = "",
-		prefab_name = "",
-		content = "但从执明越来越怪的眼神来看，如果我再多按几遍，她就要把我丢到精神病院去了。",
-		id = 420172004
-	},
-	[420172005] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "我让你去调查，你从早上逛到下午，最后就买了两个不知道有什么用的东西回来？",
-		id = 420172005
-	},
-	[420172006] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这不是……发现有不对的地方，就回来告诉你了吗？",
-		id = 420172006
-	},
-	[420172007] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "嗯，不对的地方。相机有故障，算你说得通。",
-		id = 420172007
-	},
-	[420172008] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "那个呢？那个有什么不对的？",
-		id = 420172008
-	},
-	[420172009] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我顺着执明的目光看向摆在桌上的玻璃花，张了张嘴，在执明即将用眼神将我彻底判为骗子之前，终于发出了声音。",
-		id = 420172009
-	},
-	[420172010] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "颜色不对。",
-		id = 420172010
-	},
-	[420172011] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "……",
-		id = 420172011
-	},
-	[420172012] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "蓝色那半边没问题。另外半边，不对，不该是透明的。",
-		id = 420172012
-	},
-	[420172013] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "你编个理由，信念感还挺强。",
-		id = 420172013
-	},
-	[420172014] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "真不是编的啊……",
-		id = 420172014
-	},
-	[420172015] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我欲哭无泪，实在不知道该说些什么。用我有限的科学知识确实解释不通，而跟执明讲玄学又大概只会被她用玄机叉出去。",
-		id = 420172015
-	},
-	[420172016] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "……我知道你不是喜欢在正事上乱开玩笑的人。",
-		id = 420172016
-	},
-	[420172017] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "再给你一次机会，好好想想，你买这两个东西的时候到底是怎么想的。",
-		id = 420172017
-	},
-	[420172018] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我是怎么想的……",
-		id = 420172018
-	},
-	[420172019] = {
-		speaker = "",
-		prefab_name = "",
-		content = "是啊，我是怎么想的？",
-		id = 420172019
-	},
-	[420172020] = {
-		speaker = "",
-		prefab_name = "",
-		content = "如果看到不对劲的东西就要买下来，那在集市里我一路上不知看到过多少有问题的残次品，但事实上最后都无动于衷。",
-		id = 420172020
-	},
-	[420172021] = {
-		speaker = "",
-		prefab_name = "",
-		content = "唯独买下了这两件，是因为它们……",
-		id = 420172021
-	},
-	[420172022] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……它们，我拿到它们的时候，我感觉到了。",
-		id = 420172022
-	},
-	[420172023] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "就像模拟认证最后，那条巷子，从来没去过，但是很熟悉。",
-		id = 420172023
-	},
-	[420172024] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这两个东西，感觉是一样的。它们是我的……对，它们是我的……不止是我的。",
-		id = 420172024
-	},
-	[420172025] = {
-		speaker = "",
-		prefab_name = "",
-		content = "仿佛在自言自语中逐渐捕捉到了深藏于脑海中的画面轮廓，我的注意力逐渐被它吸引，本能地尝试用零碎的语言将它描摹清晰。",
-		id = 420172025
-	},
-	[420172026] = {
-		speaker = "",
-		prefab_name = "",
-		content = "记不清自己说了什么、这样的状态又持续了多久，我的脑海中似乎有一个模糊的身影浮现出来。",
-		id = 420172026
-	},
-	[420172027] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……是谁？我想不起来了……",
-		id = 420172027
-	},
-	[420172028] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "谁？",
-		id = 420172028
-	},
-	[420172029] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我不知道，大概是跟这两个东西有什么关联的人。",
-		id = 420172029
-	},
-	[420172030] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "你失忆以前认识的人？",
-		id = 420172030
-	},
-	[420172031] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "不知道啊……你为什么总问我失忆以前的事？",
-		id = 420172031
-	},
-	[420172032] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "未知的东西最危险。科尔盖、深空之眼、四方院、弥楼衍……这么多组织都恢复不了的记忆，天知道是怎么回事？",
-		id = 420172032
-	},
-	[420172033] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "相机给我吧，我拆开检查一遍。",
-		id = 420172033
-	},
-	[420172034] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "拜托你了。",
-		id = 420172034
-	},
-	[420172035] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "真是的……为什么要把时间花在这种莫名其妙的事上。",
-		id = 420172035
-	},
-	[420172036] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "好像比想象中复杂一点。",
-		id = 420172036
-	},
-	[420172037] = {
-		speaker = "",
-		prefab_name = "",
-		content = "跟着执明换到楼上的实验室。短短一会儿，执明已经换了三种不同的仪器，设备肉眼可见的越来越复杂，执明的神色也逐渐变得凝重起来。",
-		id = 420172037
-	},
-	[420172038] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "这台相机真是地摊货？",
-		id = 420172038
-	},
-	[420172039] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "停产了，仿制的，地摊货。",
-		id = 420172039
-	},
-	[420172040] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "这如果是人造的现象，你得让科尔盖查一下这货的来路了。",
-		id = 420172040
-	},
-	[420172041] = {
-		speaker = "",
-		prefab_name = "",
-		content = "相机的存储单元被单独拆了下来，几根看不出材质的细线连接着它，另一端连着一台显示屏。",
-		id = 420172041
-	},
-	[420172042] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明在设备上输入了一串指令，紧接着屏幕上便映出了密密麻麻雪花般的噪点。",
-		id = 420172042
-	},
-	[420172043] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "这大概就是你看到的东西了。",
-		id = 420172043
-	},
-	[420172044] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明走到屏幕前，开始伸手放大屏幕里的内容，直到整个屏幕基本聚焦于一个小小的点。",
-		id = 420172044
-	},
-	[420172045] = {
-		speaker = "",
-		prefab_name = "",
-		content = "画面上的那一点，宛若被撕裂的照片碎屑，虽然很模糊，但依稀可以辨认出是墙壁的一角。",
-		id = 420172045
-	},
-	[420172046] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "可以再清晰一点吗？",
-		id = 420172046
-	},
-	[420172047] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "我试试。但效果不会像你希望得那么好。这些都是异常数据，没有特殊手段保护，应该早就被盖亚清除了。",
-		id = 420172047
-	},
-	[420172048] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "也就是说，存在某种盖亚都无法直接干涉的情况，我能做的也很有限……大概这种程度。",
-		id = 420172048
-	},
-	[420172049] = {
-		speaker = "",
-		prefab_name = "",
-		content = "随着执明的操作，屏幕上那些瀑布般倾泻的数据流开始被旋涡吸引一样旋转起来。",
-		id = 420172049
-	},
-	[420172050] = {
-		speaker = "",
-		prefab_name = "",
-		content = "如尘沙在风中散去，一张像是照片的图像浮现在屏幕上。说是像，因为它模糊而残缺，只能看出大概的轮廓。",
-		id = 420172050
-	},
-	[420172051] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这是……",
-		id = 420172051
-	},
-	[420172052] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "游乐园？上面这个人，体型跟你很像啊。",
-		id = 420172052
-	},
-	[420172053] = {
-		speaker = "",
-		prefab_name = "",
-		content = "图片里我的右侧缺了一块，像被撕掉了。我凑近屏幕，终于在那破损的边缘找到了一点什么。",
-		id = 420172053
-	},
-	[420172054] = {
-		speaker = "",
-		prefab_name = "",
-		content = "那是一缕粉色的发丝，被风吹得飘扬起来，拂过我的肩头。",
-		id = 420172054
-	},
-	[420172055] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我旁边的人是……",
-		id = 420172055
-	},
-	[420172056] = {
-		speaker = "",
-		prefab_name = "",
-		content = "照片一张接一张地滑过，无一例外都是缺损的，但是几乎每一张的角落，都残留着一点身影。",
-		id = 420172056
-	},
-	[420172057] = {
-		speaker = "",
-		prefab_name = "",
-		content = "一缕发丝、一片衣角、一段指尖。几度出现在我脑海中的影像也随之越发分明，那是一个小小的，有着粉红色头发的少女。",
-		id = 420172057
-	},
-	[420172058] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我忘了……她是……",
-		id = 420172058
-	},
-	[420172059] = {
-		speaker = "",
-		prefab_name = "",
-		content = "这一瞬间，仿佛那无数个已在我记忆中被抹除的今天堆叠在一起，在我心中撑开一座巨大的空洞。",
-		id = 420172059
-	},
-	[420172060] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我茫然地环顾四周。照片里、现实中，看不到那位少女的身影，我就像个握不住沙粒的孩子，再怎么用力也无法将空洞填满。",
-		id = 420172060
-	},
-	[420172061] = {
-		speaker = "",
-		prefab_name = "",
-		content = "就像是电影结束一样，演员的声音、音乐全都消失了，但是没有人开灯。",
-		id = 420172061
-	},
-	[420172062] = {
-		speaker = "",
-		prefab_name = "",
-		content = "画面暗下来，剧院走空了，小昙也走掉了，我一个人坐在椅子上，没有人开灯。",
-		id = 420172062
-	},
-	[420172063] = {
-		speaker = "",
-		prefab_name = "",
-		content = "没有下一场电影，只有我一个人坐在那里，黑色好像水一样涨起来，慢慢地连自己都看不见了。",
-		id = 420172063
-	},
-	[420172064] = {
-		speaker = "",
-		prefab_name = "",
-		content = "然后我就回到了梦里，梦里没有那么暗，也没有那么冷。",
-		id = 420172064
-	},
-	[420172065] = {
-		speaker = "",
-		prefab_name = "",
-		content = "但是……",
-		id = 420172065
-	},
-	[420172066] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "小昙，可以再陪我做一次我想做的事吗？",
-		id = 420172066
-	},
-	[420172067] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "想要有一天，你从早上到晚上都认识我，起床以后可以说早安，睡觉以前可以说晚安。",
-		id = 420172067
-	},
-	[420172068] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "起床和睡觉中间，可以做各种各样的事，不会被忘记，花上好几天也没关系……",
-		id = 420172068
-	},
-	[420172069] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "可以听你说你的事情，想要知道你更多的事情，我也会陪你做你想做的事，复杂的事我也会努力学，只要有你在……",
-		id = 420172069
-	},
-	[420172070] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "所以，可不可以……可不可以……",
-		id = 420172070
-	},
-	[420172071] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "如果我们也在下雨的时候跳舞，是不是冷冷的雨也会变成糖？",
-		id = 420172071
-	},
-	[420172072] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "哈哈，那肯定不可以。这只是电影的设定而已。",
-		id = 420172072
-	},
-	[420172073] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "设定？",
-		id = 420172073
-	},
-	[420172074] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "设定就是人们为了讲好一个故事编出来的东西，是假的。",
-		id = 420172074
-	},
-	[420172075] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "故事……伊里伽尔和奈奈也会给我讲故事，那些都是假的吗？",
-		id = 420172075
-	},
-	[420172076] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "奈奈又是谁……也不都是假的，但这部电影讲的东西是不存在的。",
-		id = 420172076
-	},
-	[420172077] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "为什么要讲假的故事？",
-		id = 420172077
-	},
-	[420172078] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "选哪一张？",
-		id = 420172078
-	},
-	[420172079] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你来决定，都没听过就选一个包装顺眼的。",
-		id = 420172079
-	},
-	[420172080] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "那我选这个，封面是帽子，像你。",
-		id = 420172080
-	},
-	[420172081] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "我很开心，这里很可爱，像我们之前看的电影。",
-		id = 420172081
-	},
-	[420172082] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "（可不可以……不要忘记我……）",
-		id = 420172082
-	},
-	[420172083] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "为什么现在才……",
-		id = 420172083
-	},
-	[420172084] = {
-		speaker = "",
-		prefab_name = "",
-		content = "身体仿佛已经不受自己控制，我麻木地将存储单元装回相机内，将它放进口袋。",
-		id = 420172084
-	},
-	[420172085] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我得去找她……我出去一趟。",
-		id = 420172085
-	},
-	[420172086] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "等等。",
-		id = 420172086
-	},
-	[420172087] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明递给我一张纸巾，我接过来，胡乱地抹了把眼睛，朝她感谢地点点头，转身跑出了实验室。",
-		id = 420172087
-	},
-	[420181001] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "是这里吗……",
-		id = 420181001
-	},
-	[420181002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "在来的路上看到了这座游乐园要被拆除的新闻。虽然是白天，但园区里别说客人，连工作人员都已经见不到了。",
-		id = 420181002
-	},
-	[420181003] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我走进游乐园，一座座已经许久没有启动的设施勾勒出寂寥的天际线，锈痕如杂草般荒芜，和照片里一模一样。",
-		id = 420181003
-	},
-	[420181004] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "诗蔻蒂……你能听到吗？",
-		id = 420181004
-	},
-	[420181005] = {
-		speaker = "",
-		prefab_name = "",
-		content = "风声并不是她的回答。",
-		id = 420181005
-	},
-	[420181006] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我不知道该怎样寻找诗蔻蒂，甚至不知道她在不在这里，只能沿着导览图的路线行走，希望能发现一点痕迹。",
-		id = 420181006
-	},
-	[420181007] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "对不起，答应过不会忘记你的……这么久才想起来。",
-		id = 420181007
-	},
-	[420181008] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "现在变成这样，也就是说摧毁密钥并没有用。",
-		id = 420181008
-	},
-	[420181009] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我不会说「后悔没有拦住你」之类的话，因为我能听出来，那时候你已经做好觉悟了。",
-		id = 420181009
-	},
-	[420181010] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "而且我也没有更好的办法……你跟我说过的，那些我们一起尝试过的办法，我也都想起来了，没有更好的办法。",
-		id = 420181010
-	},
-	[420181011] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "所以，我不知道现在想起你还有没有用。为什么偏偏是这个时候，已经找不到你的时候，才想起来。",
-		id = 420181011
-	},
-	[420181012] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……我还能做什么呢？如果你能告诉我……如果任何人能告诉我，我至少能相信，这不是一个没什么用的意外。",
-		id = 420181012
-	},
-	[420181013] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "它不能，只是一个，没用的，意外！",
-		id = 420181013
-	},
-	[420181014] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我压抑着歇斯底里的冲动，在一座花坛边蹲下，用力捶打着它的水泥边沿。",
-		id = 420181014
-	},
-	[420181015] = {
-		speaker = "",
-		prefab_name = "",
-		content = "花坛里的桔梗摇晃着。大概是听不懂我在说什么，我也无从得知它们会不会被我的声音影响。",
-		id = 420181015
-	},
-	[420181016] = {
-		speaker = "",
-		prefab_name = "",
-		content = "就是如此细微的一个情景，我忽然感觉自己被这种荒诞的、来自不可知的迷茫击溃了。",
-		id = 420181016
-	},
-	[420181017] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我该怎么知道你到底还在不在这里？我又能不能救你？我连这个都不知道……",
-		id = 420181017
-	},
-	[420181018] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "哪怕只是你能听见我说话也好，哪怕只有这几个字——",
-		id = 420181018
-	},
-	[420181019] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我不想再让你一个人承受这些了。",
-		id = 420181019
-	},
-	[420181020] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我想要你活着。",
-		id = 420181020
-	},
-	[420181021] = {
-		speaker = "",
-		prefab_name = "",
-		content = "……",
-		id = 420181021
-	},
-	[420181022] = {
-		speaker = "",
-		prefab_name = "",
-		content = "以为世上有奇迹的人们，总会在无能为力时选择祈求。",
-		id = 420181022
-	},
-	[420181023] = {
-		speaker = "",
-		prefab_name = "",
-		content = "但能被祈求的，多半本就是因为它们不存在。",
-		id = 420181023
-	},
-	[420181024] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奋力的挣扎，隐蔽的因果……太多不属于奇迹的事情被冠以奇迹的名号，让人予它希望，一直等到它未能降临。",
-		id = 420181024
-	},
-	[420181025] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……",
-		id = 420181025
-	},
-	[420181026] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我走向游乐园外，摩天轮的座舱沿着弯曲的小路铺砌着一格格明暗。",
-		id = 420181026
-	},
-	[420181027] = {
-		speaker = "",
-		prefab_name = "",
-		content = "在其中一片阴影中站住，我抬起头，望向被座舱的窗户框在中间的太阳。",
-		id = 420181027
-	},
-	[420181028] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……摩天轮，要天黑了才会去坐吧？",
-		id = 420181028
-	},
-	[420181029] = {
-		speaker = "",
-		prefab_name = "",
-		content = "也许在曾经的某个将来，我就坐在那个座舱里面吧——我这么想着，将相机对准了它。",
-		id = 420181029
-	},
-	[420181030] = {
-		speaker = "选项",
-		prefab_name = "",
-		content = "按下快门",
-		id = 420181030
-	},
-	[420181031] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我愣愣地看着自己的手指，有种音画不同步的感觉。",
-		id = 420181031
-	},
-	[420181032] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "刚才是不是还没按下去，就听到快门声了？",
-		id = 420181032
-	},
-	[420181033] = {
-		speaker = "",
-		prefab_name = "",
-		content = "像是在回答我的疑问，快门声又响了一下。",
-		id = 420181033
-	},
-	[420181034] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这是……？",
-		id = 420181034
-	},
-	[420181035] = {
-		speaker = "",
-		prefab_name = "",
-		content = "惊喜的笑意很快被患得患失的紧张屏退，我用力抓紧了相机，生怕它因为离开现在的位置而不再回应。",
-		id = 420181035
-	},
-	[420181036] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "是你吗，诗蔻蒂？",
-		id = 420181036
-	},
-	[420181037] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我……我看不见你，只能听到快门声。是你在按快门吗？",
-		id = 420181037
-	},
-	[420181038] = {
-		speaker = "",
-		prefab_name = "",
-		content = "快门声又响了一下。我张大了嘴，面对这失而复得的微弱希望，一时间连自己应该做出什么表情都分不清了。",
-		id = 420181038
-	},
-	[420181039] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "好的……好的……所以现在你还能用别的方式让我知道你在做什么吗？",
-		id = 420181039
-	},
-	[420181040] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "写字、用我的终端、脚步声、用石头在地面上划……或者，写字，不管怎么写……可以吗？",
-		id = 420181040
-	},
-	[420181041] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你可以试一试，成功的话我会知道，不用按快门。",
-		id = 420181041
-	},
-	[420181042] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……",
-		id = 420181042
-	},
-	[420181043] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "所以意思就是不行，只有相机快门可以？",
-		id = 420181043
-	},
-	[420181044] = {
-		speaker = "",
-		prefab_name = "",
-		content = "文本置空",
-		id = 420181044
-	},
-	[420181045] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "好的，没问题，只有相机也行……让我想一想……",
-		id = 420181045
-	},
-	[420181046] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "呃，我可以动吗？动了以后你还可以按到快门吗？",
-		id = 420181046
-	},
-	[420181047] = {
-		speaker = "",
-		prefab_name = "",
-		content = "文本置空",
-		id = 420181047
-	},
-	[420181048] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "那就好，我们去找执明。你可以跟我一起走吗？",
-		id = 420181048
-	},
-	[420181049] = {
-		speaker = "",
-		prefab_name = "",
-		content = "这次我并没有听到快门声，这让我稍微冷静下来一点，不能因为回应方式的简单就把她的肯定答复想成理所应当的事。",
-		id = 420181049
-	},
-	[420181050] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "不要紧，一样的。你不能去她那儿，我请她过来就行了。",
-		id = 420181050
-	},
-	[420181051] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "……我什么都没听见。",
-		id = 420181051
-	},
-	[420181052] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我能肯定是这里，没有弄错。就是这个地方，朝着摩天轮，那个座舱……",
-		id = 420181052
-	},
-	[420181053] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我一只手举着相机，另一只手四处指指点点，尝试尽可能详尽地向执明解释刚才发生的事，希望她能发现一些端倪。",
-		id = 420181053
-	},
-	[420181054] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "她说了，她就在这里，只是不能离开这里……",
-		id = 420181054
-	},
-	[420181055] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "为什么现在我也听不见了。",
-		id = 420181055
-	},
-	[420181056] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "最坏的情况，刚才就是她最后的——",
-		id = 420181056
-	},
-	[420181057] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我们先不考虑这种情况。",
-		id = 420181057
-	},
-	[420181058] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "那么，如果我没理解错，她现在被盖亚隔绝在表层世界外，没办法干涉表层世界的任何东西，除了你那台相机的快门。",
-		id = 420181058
-	},
-	[420181059] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "但这里面牵扯到几个问题。第一，她为什么不能离开这座游乐园？",
-		id = 420181059
-	},
-	[420181060] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "这不合理，因为这座游乐园在空间属性上和其他地方没有任何差异。如果她能从洛肯那里过来，就自然能去其他地方。",
-		id = 420181060
-	},
-	[420181061] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "这就牵扯到第二个问题，为什么她现在才来找你？",
-		id = 420181061
-	},
-	[420181062] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "这个问题有很多种可能的解释，但既然刚才是她主动按下快门，那可以先排除掉所有基于「主观不想」的选项。",
-		id = 420181062
-	},
-	[420181063] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "没有主观不想，那就是客观不能。为什么她按了快门，我还要说是「客观不能」呢？",
-		id = 420181063
-	},
-	[420181064] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "因为在你说的时间段里，这台相机根本没有拍摄记录……",
-		id = 420181064
-	},
-	[420181065] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "你再回忆一下，每次你听到快门声的时候，快门到底有没有动过？",
-		id = 420181065
-	},
-	[420181066] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我愣了愣，发现脑海中确实没有快门运动的图像记忆，只是因为听到了声音，就以为是她按下了快门。",
-		id = 420181066
-	},
-	[420181067] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "看来答案是「没有」。那么连带着第三个问题也可以大胆猜测了。",
-		id = 420181067
-	},
-	[420181068] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "那就是，刚才和你互动的不是「诗蔻蒂」，或者说至少不是「她本人像个隐形人一样，站在你面前一边听你说话一边按快门」。",
-		id = 420181068
-	},
-	[420181069] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "现在我们听不到你说的快门声，也是因为那并不是真正的快门声，而是以她现在的存在形式对你言行产生的条件反射的某种具象化。",
-		id = 420181069
-	},
-	[420181070] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "什么叫她现在的「存在形式」？",
-		id = 420181070
-	},
-	[420181071] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "简单来说就是：她与表层世界以什么样的形式互相关联。对我们来说，这个问题很简单，就是我们理解当中的「自己」，人类，修正者，独立的实体。",
-		id = 420181071
-	},
-	[420181072] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "她不一样，表层已经没有一个叫做「诗蔻蒂」的独立实体了。但她依然与表层存在着某种数据层面的关联，可能是权限，灵魂数据，或者一些更底层的东西……",
-		id = 420181072
-	},
-	[420181073] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "更具体的，我不知道，除非你也被盖亚判成非法，亲自体验一下，然后回来告诉我。",
-		id = 420181073
-	},
-	[420181074] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "或者可以从她每次循环的状态演变大致做一些猜想……但我并不知道从她破坏密钥开始到现在都发生了什么，中间又经过了几次循环。",
-		id = 420181074
-	},
-	[420181075] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "单说判断循环次数还是有办法的。密钥验证的预计完成时间，她记得每次循环都在推迟。",
-		id = 420181075
-	},
-	[420181076] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "在时间轴上的正方向重复，我知道。",
-		id = 420181076
-	},
-	[420181077] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "那一次我记得是凌晨3:32，现在是多少？",
-		id = 420181077
-	},
-	[420181078] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "……你确定你没记错？",
-		id = 420181078
-	},
-	[420181079] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "没有，除非记忆出错了，或者中间又忘了什么……和现在差得很多吗？",
-		id = 420181079
-	},
-	[420181080] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "不……",
-		id = 420181080
-	},
-	[420181081] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明停顿了一下，从她饶有兴味的表情来看，应该不完全是坏事。",
-		id = 420181081
-	},
-	[420181082] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "现在也是凌晨3:32。",
-		id = 420181082
-	},
-	[420181083] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "也就是说……",
-		id = 420181083
-	},
-	[420181084] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "是的。也就是说，诗蔻蒂破坏密钥以后，盖亚并没有继续重置时间，而是将时间一次次还原到那天早上。",
-		id = 420181084
-	},
-	[420181085] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明一边在电脑中快速检索着各种资料，一边尝试向我解释最易懂的结论。",
-		id = 420181085
-	},
-	[420181086] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "这个行为很有意思——这很像是一种纠正神经网络的流程。",
-		id = 420181086
-	},
-	[420181087] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "神经网络？你是说诗蔻蒂还是盖亚？",
-		id = 420181087
-	},
-	[420181088] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "当然是盖亚。不过盖亚并不是什么神经网络，我接下来说的内容，当成帮助理解的例子就好。",
-		id = 420181088
-	},
-	[420181089] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "首先，从直观的结果而言，我们现在所了解到的基本历程是：诗蔻蒂的「存在」，在一次次时间循环中淡化，并最终消失。",
-		id = 420181089
-	},
-	[420181090] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "「包含错误定位的微调‌」，一种修补神经网络的手法——找出错误的输入，然后假设它不存在，再进行迭代。",
-		id = 420181090
-	},
-	[420181091] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "当「错误」能做出的一切可能性都被否定，全网络「认同」它不存在，错误就真正消失了，很平滑。",
-		id = 420181091
-	},
-	[420181092] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "纠正式迭代？盖亚可真费神啊。",
-		id = 420181092
-	},
-	[420181093] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "总不能跟小网络一样掀桌子重练，手术式微调是理论上可行的最优解……",
-		id = 420181093
-	},
-	[420181094] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "这种方法可以精确地修复特定错误：只需要在输入时慢慢把加权倍率从1挪到0——",
-		id = 420181094
-	},
-	[420181095] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "「不重置，但还原」，就像是在抚平衣服上的褶皱，让一切「重新合理」并且「稳定下来」。",
-		id = 420181095
-	},
-	[420181096] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……好的。知道这些有什么用？",
-		id = 420181096
-	},
-	[420181097] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "作用在于，我已经理解盖亚这一套从「判定非法」到「精确剔除」的逻辑了。",
-		id = 420181097
-	},
-	[420181098] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明终于从光学屏幕后抬起头来，用认真的目光确认我是否理解了她刚说的话。",
-		id = 420181098
-	},
-	[420181099] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "那我想，我已经基本理解了。但我现在更需要的，是一套可执行的方案。",
-		id = 420181099
-	},
-	[420181100] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "原理搞明白了，但实际执行起来问题还是多多。因为这个「抚平褶皱」的过程，基本是不可逆的。",
-		id = 420181100
-	},
-	[420181101] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "哈？白聊了？",
-		id = 420181101
-	},
-	[420181102] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我看着执明盯住自己，若有所思但欲言又止的表情，脑海中隐约闪过一种可能性。",
-		id = 420181102
-	},
-	[420181103] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "所以你已经有办法了。",
-		id = 420181103
-	},
-	[420181104] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "条件不明确，风险太高，这不能被认为是什么「办法」。",
-		id = 420181104
-	},
-	[420181105] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "「我」就是那个办法。",
-		id = 420181105
-	},
-	[420181106] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "我再强调一次，不可控的计划不能被称为办法。",
-		id = 420181106
-	},
-	[420181107] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "据我所知，我的权限很高。",
-		id = 420181107
-	},
-	[420181108] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "……",
-		id = 420181108
-	},
-	[420181109] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "最早接入实验舱的时候，你的错误代码，你不想知道原因是什么？",
-		id = 420181109
-	},
-	[420181110] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "少骗我，时间会重置，就算真的看到也不会记得。",
-		id = 420181110
-	},
-	[420181111] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你知道这句虚恒本地话的，「朝闻道，夕死可矣」。",
-		id = 420181111
-	},
-	[420181112] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "……少掉书袋。让我想想。",
-		id = 420181112
-	},
-	[420181113] = {
-		speaker = "",
-		prefab_name = "",
-		content = "半小时后。",
-		id = 420181113
-	},
-	[420181114] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "作为合作者，我还是得再提醒你一次。风险太大了。",
-		id = 420181114
-	},
-	[420181115] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我相信你，也相信我自己。",
-		id = 420181115
-	},
-	[420181116] = {
-		speaker = "",
-		prefab_name = "",
-		content = "躺在实验舱里，我朝执明竖了个大拇指。但嬉皮笑脸的样子并没能让她放松，她反而用一种劝不住傻子的、又像是有些担忧的眼神看着我。",
-		id = 420181116
-	},
-	[420181117] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "要是在天理阁，谁敢把这种没有经过验证的办法投放到实用场景，我第一个把他开了。",
-		id = 420181117
-	},
-	[420181118] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "验证是为了保险，但很多时候我们只能冒险。",
-		id = 420181118
-	},
-	[420181119] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "……我绑定在你身上的非法数据包肯定会被上传验证，你也肯定会被密钥排斥。",
-		id = 420181119
-	},
-	[420181120] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "但盖亚会不会对你执行和诗蔻蒂一样的处理，让你变成和她同样的存在状态——以及你的「情况」能不能解决这个问题，我没办法保证。",
-		id = 420181120
-	},
-	[420181121] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "所以，没有预案。你知道要怎么做，随机应变吧。",
-		id = 420181121
-	},
-	[420181122] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你知道的，我就擅长这个。",
-		id = 420181122
-	},
-	[420181123] = {
-		speaker = "",
-		prefab_name = "",
-		content = "实验舱闭合，往世书密钥开始工作。巨大的洪流托举着意识，向上汇入某种恒久的空间中。",
-		id = 420181123
-	},
-	[420181124] = {
-		speaker = "",
-		prefab_name = "",
-		content = "警惕、否决、排斥、抹除……",
-		id = 420181124
-	},
-	[420181125] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我能清晰地感受到「它」在看着我。我坦然地笑了笑，慢慢闭上眼睛。",
-		id = 420181125
-	},
-	[420181126] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "……",
-		id = 420181126
-	},
-	[420181127] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "带我去……她在的地方吧。",
-		id = 420181127
-	},
-	[420181128] = {
-		speaker = "",
-		prefab_name = "",
-		content = "路灯守卫开始只醒来一盏，然后一整排全都亮起来，从游乐园的里面到外面，挺直身子跳起踢踏舞。",
-		id = 420181128
-	},
-	[420181129] = {
-		speaker = "",
-		prefab_name = "",
-		content = "先来找我的是小茶杯。小茶壶在的时候，它们会结伴跳舞。如果不在，就乱哄哄的，不喜欢乱哄哄。",
-		id = 420181129
-	},
-	[420181130] = {
-		speaker = "",
-		prefab_name = "",
-		content = "负责伴奏的是提琴先生，提琴先生都很有礼貌。我告诉大家要和提琴先生一样礼貌，但大家玩的太开心就会忘记。",
-		id = 420181130
-	},
-	[420181131] = {
-		speaker = "",
-		prefab_name = "",
-		content = "白色的幽灵宝宝最调皮，听到伴奏就会跟着声音飞起来，一会儿高一会儿低。",
-		id = 420181131
-	},
-	[420181132] = {
-		speaker = "",
-		prefab_name = "",
-		content = "幽灵宝宝很轻，但气球比它们更轻，会被它们撞得摇来摇去，就像彩色的波浪。",
-		id = 420181132
-	},
-	[420181133] = {
-		speaker = "",
-		prefab_name = "",
-		content = "还有好多好多的玩伴，在这里陪我一起。游乐园里的一切都很熟悉，大家也都很快乐，我也会很快乐。",
-		id = 420181133
-	},
-	[420181134] = {
-		speaker = "",
-		prefab_name = "",
-		content = "游乐园每天都会开门，一遍又一遍，是钟表爷爷在帮忙。钟表爷爷虽然严厉，但也从不苛责我。",
-		id = 420181134
-	},
-	[420181135] = {
-		speaker = "",
-		prefab_name = "",
-		content = "还有，我最喜欢的是小熊骑士，小熊骑士会牵着我的手。它的手掌比我厚实很多，很暖和。",
-		id = 420181135
-	},
-	[420181136] = {
-		speaker = "",
-		prefab_name = "",
-		content = "小熊骑士保护着游乐园。只要小熊骑士在，游乐园就不会消失……",
-		id = 420181136
-	},
-	[420191001] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……",
-		id = 420191001
-	},
-	[420191002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "慢慢放下照片，我眨了眨眼睛，确认眼前看到的是真实的景象。",
-		id = 420191002
-	},
-	[420191003] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂站在我面前，用力抹着眼泪，一边努力维持着脸上的笑容，像是要把她内心的所有喜悦都展示给我看。",
-		id = 420191003
-	},
-	[420191004] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "对不起，我……",
-		id = 420191004
-	},
-	[420191005] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "小昙，不要说对不起。是我以为小昙找不到我，所以躲起来了。",
-		id = 420191005
-	},
-	[420191006] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我确实差点就……",
-		id = 420191006
-	},
-	[420191007] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "答应过不会忘记你的，却让你一个人待了这么久。",
-		id = 420191007
-	},
-	[420191008] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "我没关系。游乐园里有好多玩具，还有小熊骑士，一点都不孤单。",
-		id = 420191008
-	},
-	[420191009] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "是嘛？你从哪里找到它们的？",
-		id = 420191009
-	},
-	[420191010] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "它们就在游乐园里。我想念大家的时候，玩具们就会陪我玩；想念小昙的时候，小熊骑士就会和我跳舞。",
-		id = 420191010
-	},
-	[420191011] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "它们知道我要走了，好像都舍不得我，我也舍不得它们，待在游乐园里很开心。",
-		id = 420191011
-	},
-	[420191012] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "你看，这些都是我在游乐园里拍的照片。",
-		id = 420191012
-	},
-	[420191013] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我这才注意到诗蔻蒂胸前挂着我「曾经」送给她的相机，好像明白了我听到的快门声来自哪里。",
-		id = 420191013
-	},
-	[420191014] = {
-		speaker = "",
-		prefab_name = "",
-		content = "打开相机的存储空间，里面显示着794条存储记录，可我却看不见任何一张照片。",
-		id = 420191014
-	},
-	[420191015] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "是不是不小心删掉了？",
-		id = 420191015
-	},
-	[420191016] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "啊，可能照片也不让带出来吧……",
-		id = 420191016
-	},
-	[420191017] = {
-		speaker = "",
-		prefab_name = "",
-		content = "沮丧的神情只在诗蔻蒂脸上持续了短暂的一瞬，很快就恢复了似曾相识的温柔微笑。",
-		id = 420191017
-	},
-	[420191018] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "游乐园里的东西就只能留在游乐园里，要走的话，就得把它们留下来。",
-		id = 420191018
-	},
-	[420191019] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "但我不能永远待在游乐园里。既然小昙还记得我，我就要出发了。",
-		id = 420191019
-	},
-	[420191020] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "我们说过的，明天还有很多要和小昙一起做的事，明天以后还会有数不完的明天。",
-		id = 420191020
-	},
-	[420191021] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "是啊……该出发了。",
-		id = 420191021
-	},
-	[420191022] = {
-		speaker = "选项",
-		prefab_name = "",
-		content = "牵起她的手",
-		id = 420191022
-	},
-	[420191023] = {
-		speaker = "",
-		prefab_name = "",
-		content = "生命体征监测：正常。算力负载：正常。",
-		id = 420191023
-	},
-	[420191024] = {
-		speaker = "",
-		prefab_name = "",
-		content = "认证进度：95%……97%……",
-		id = 420191024
-	},
-	[420191025] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明站在实验舱旁，用牙齿轻轻咬着自己的指甲，眼睛死死盯住屏幕上的进度。",
-		id = 420191025
-	},
-	[420191026] = {
-		speaker = "",
-		prefab_name = "",
-		content = "认证程序……未完成，发生不可预知的错误，错误代码0x0521，请检查执行权限……",
-		id = 420191026
-	},
-	[420191027] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "「不可预知的错误」……",
-		id = 420191027
-	},
-	[420191028] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "和上次一样，0521错误代码，还有被剥夺的控制权……",
-		id = 420191028
-	},
-	[420191029] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "到底是什么级别，才可以越过数据沙箱级别的封锁？",
-		id = 420191029
-	},
-	[420191030] = {
-		speaker = "",
-		prefab_name = "",
-		content = "她飞快地操作着终端，想要尝试捕捉到一些蛛丝马迹。但几乎一瞬间铺满视线的黄色警示框，让她不由地瞪大了眼睛。",
-		id = 420191030
-	},
-	[420191031] = {
-		speaker = "",
-		prefab_name = "",
-		content = "未知的权限已完成接管，权限查询请求被强制终止……",
-		id = 420191031
-	},
-	[420191032] = {
-		speaker = "",
-		prefab_name = "",
-		content = ">>>>>检测到特殊操作指令请求>>>>>\n\n>>>>>权限已识别，等级：未知。>>>>>\n\n>>>>>信道已开启，正在接入盖亚主服务器……>>>>>\n\n>>>>>观测状态变更>>>>>\n\n>>>>>执行人工指令：对象有效性还原……>>>>>\n\n>>>>>协议权限……核验有效>>>>>\n\n>>>>>权限：未知，越过认证程序。>>>>>\n\n>>>>>正在更新还原设置>>>>>",
-		id = 420191032
-	},
-	[420191033] = {
-		speaker = "",
-		prefab_name = "",
-		content = "",
-		id = 420191033
-	},
-	[420191034] = {
-		speaker = "",
-		prefab_name = "",
-		content = "",
-		id = 420191034
-	},
-	[420191035] = {
-		speaker = "",
-		prefab_name = "",
-		content = "",
-		id = 420191035
-	},
-	[420191036] = {
-		speaker = "",
-		prefab_name = "",
-		content = "",
-		id = 420191036
-	},
-	[420191037] = {
-		speaker = "",
-		prefab_name = "",
-		content = "",
-		id = 420191037
-	},
-	[420191038] = {
-		speaker = "",
-		prefab_name = "",
-		content = "",
-		id = 420191038
-	},
-	[420191039] = {
-		speaker = "",
-		prefab_name = "",
-		content = ">>>>>软模式还原失败，正在追溯至对象最后的有效节点……>>>>>\n\n>>>>>节点已截取，验证中……>>>>>\n\n>>>>>验证完成，还原至最后有效节点>>>>>\n\n>>>>>还原结束，数据校准完成，记录已同步>>>>>\n\n>>>>>重演算开始……>>>>>\n\n>>>>>演算帧已校准，计时器恢复工作>>>>>\n\n>>>>>流程结束>>>>>",
-		id = 420191039
-	},
-	[420191040] = {
-		speaker = "",
-		prefab_name = "",
-		content = "",
-		id = 420191040
-	},
-	[420191041] = {
-		speaker = "",
-		prefab_name = "",
-		content = "",
-		id = 420191041
-	},
-	[420191042] = {
-		speaker = "",
-		prefab_name = "",
-		content = "",
-		id = 420191042
-	},
-	[420191043] = {
-		speaker = "",
-		prefab_name = "",
-		content = "",
-		id = 420191043
-	},
-	[420191044] = {
-		speaker = "",
-		prefab_name = "",
-		content = "",
-		id = 420191044
-	},
-	[420191045] = {
-		speaker = "",
-		prefab_name = "",
-		content = "",
-		id = 420191045
-	},
-	[420191046] = {
-		speaker = "",
-		prefab_name = "",
-		content = "",
-		id = 420191046
-	},
-	[420191047] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "访问被拒绝了……也就是说读取和写入都不能做任何干涉……",
-		id = 420191047
-	},
-	[420191048] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……那个时候执行的，并不是这个程式。",
-		id = 420191048
-	},
-	[420191049] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "看来我也算是幸运，能够利用一些盖亚的固有机制，达到类似的效果……",
-		id = 420191049
-	},
-	[420191050] = {
-		speaker = "",
-		prefab_name = "",
-		content = "该出发了。",
-		id = 420191050
-	},
-	[420191051] = {
-		speaker = "伽梨",
-		prefab_name = "1056ui_story",
-		content = "管理员，你们在哪？游乐园停电了。",
-		id = 420191051
-	},
-	[420191052] = {
-		speaker = "",
-		prefab_name = "",
-		content = "没过多久，伽梨她们和游乐园的工作人员带着手电筒和应急灯，勉强照亮了搭到我们脚下的伸缩梯。",
-		id = 420191052
-	},
-	[420191053] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂和我一前一后落到地上。",
-		id = 420191053
-	},
-	[420191054] = {
-		speaker = "卡皮尔",
-		prefab_name = "",
-		content = "实在不好意思，这忽然停电也没个通知，那位洛肯女士帮忙排查了一下，可能是地下线路出问题了。",
-		id = 420191054
-	},
-	[420191055] = {
-		speaker = "卡皮尔",
-		prefab_name = "",
-		content = "唉，今晚弄不好了，最多定位一下故障的区段。",
-		id = 420191055
-	},
-	[420191056] = {
-		speaker = "伽梨",
-		prefab_name = "1056ui_story",
-		content = "地下网道管制很严，线路检修要走行政审批。富人区的老爷们早下班了。",
-		id = 420191056
-	},
-	[420191057] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10102ui_story",
-		content = "没事没事，今天已经玩得很尽兴了。游乐园包场，谁还能遇到这种好事啊。",
-		id = 420191057
-	},
-	[420191058] = {
-		speaker = "卡皮尔",
-		prefab_name = "",
-		content = "都是该做的。看你们玩得这么开心，我那车撞了也值了。",
-		id = 420191058
-	},
-	[420191059] = {
-		speaker = "卡皮尔",
-		prefab_name = "",
-		content = "这段时间随时欢迎你们过来，只要还没关门，你们想玩什么，我就让它跑起来。",
-		id = 420191059
-	},
-	[420191060] = {
-		speaker = "卡皮尔",
-		prefab_name = "",
-		content = "对了，今天下午做的点心还有些多的，要不你们一块儿打包带走吧。",
-		id = 420191060
-	},
-	[420191061] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10102ui_story",
-		content = "可以吗？好耶！",
-		id = 420191061
-	},
-	[420191062] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……那你们跟卡皮尔先生去吧，顺便把洛肯喊回来。别逛得太晚，时间也不早了。",
-		id = 420191062
-	},
-	[420191063] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "！！",
-		id = 420191063
-	},
-	[420191064] = {
-		speaker = "",
-		prefab_name = "",
-		content = "诗蔻蒂猛然睁大了眼睛，有些迷茫地往后退了两步。",
-		id = 420191064
-	},
-	[420191065] = {
-		speaker = "",
-		prefab_name = "",
-		content = "就在她忍不住想要回头的时候，我扶住了她的后背，温柔地牵住了她的手。",
-		id = 420191065
-	},
-	[420191066] = {
-		speaker = "",
-		prefab_name = "",
-		content = "她像是从睡梦中惊醒似的，身体颤抖了一下，抬起头，呆呆地看着我。",
-		id = 420191066
-	},
-	[420191067] = {
-		speaker = "",
-		prefab_name = "",
-		content = "她的眼中饱含着难以置信的喜悦，我知道她眼中的我一定也是这样。\n于是我朝她笑了笑，就像我「曾经」无数次做过的那样。",
-		id = 420191067
-	},
-	[420191068] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我俩一起去门口等她们？",
-		id = 420191068
-	},
-	[420191069] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "一起去，好……",
-		id = 420191069
-	},
-	[420191070] = {
-		speaker = "",
-		prefab_name = "",
-		content = "两束手电筒的灯光打在回游乐园正门的道路上。诗蔻蒂像是有什么执念似的，不管我怎么晃动手电筒，她都一定要让两束光落在同一个地方。",
-		id = 420191070
-	},
-	[420191071] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这是什么你自己发明的小游戏吗？",
-		id = 420191071
-	},
-	[420191072] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "嗯。想到了我和小昙。",
-		id = 420191072
-	},
-	[420191073] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这是怎么联想过去的？",
-		id = 420191073
-	},
-	[420191074] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "因为总是遇到一下就分开了，有时候也会遇不到。不想这样，想到最后也能在一起……",
-		id = 420191074
-	},
-	[420191075] = {
-		speaker = "",
-		prefab_name = "",
-		content = "掌心中的小手紧张地用力握了一下，像是确认了我不是幻象，才慢慢放松下来。",
-		id = 420191075
-	},
-	[420191076] = {
-		speaker = "",
-		prefab_name = "",
-		content = "脚步不约而同地停了下来，两束光落在我们旁边，照亮了花坛里的一丛桔梗，互相依偎摇曳。",
-		id = 420191076
-	},
-	[420191077] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "我……我有点害怕。万一又把这些弄丢了该怎么办。",
-		id = 420191077
-	},
-	[420191078] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "喜欢小昙，所以每次见到小昙，下次小昙不见的时候，就会很难过。",
-		id = 420191078
-	},
-	[420191079] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "因为不能再和小昙一起做喜欢的事了……",
-		id = 420191079
-	},
-	[420191080] = {
-		speaker = "选项",
-		prefab_name = "",
-		content = "喜欢一起做什么？",
-		id = 420191080
-	},
-	[420191081] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "喜欢……和小昙一起逛游乐园，喜欢和小昙一起坐摩天轮，喜欢每天都能和小昙说早安……",
-		id = 420191081
-	},
-	[420191082] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "小昙说的事，也都喜欢，小昙去过各种各样的地方，都想和小昙一起去。",
-		id = 420191082
-	},
-	[420191083] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "所以，想让小昙永远不要忘记我。",
-		id = 420191083
-	},
-	[420191084] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "想让小昙永远不要离开我……",
-		id = 420191084
-	},
-	[420191085] = {
-		speaker = "选项",
-		prefab_name = "",
-		content = "不会的",
-		id = 420191085
-	},
-	[420191086] = {
-		speaker = "",
-		prefab_name = "",
-		content = "伸出手将她揽入怀中。她的眸子颤抖了一下，像只小猫似地贴近了些。",
-		id = 420191086
-	},
-	[420191087] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我抚摸着她的头发，认真地给出了我的答复。",
-		id = 420191087
-	},
-	[420191088] = {
-		speaker = "选项",
-		prefab_name = "",
-		content = "你喜欢的一切都不会离开",
-		id = 420191088
-	},
-	[420191089] = {
-		speaker = "选项",
-		prefab_name = "",
-		content = "下一个明天",
-		id = 420191089
-	},
-	[420191090] = {
-		speaker = "选项",
-		prefab_name = "",
-		content = "未来所有的明天",
-		id = 420191090
-	},
-	[420191091] = {
-		speaker = "选项",
-		prefab_name = "",
-		content = "我们都会再见面",
-		id = 420191091
-	},
-	[420191092] = {
-		speaker = "",
-		prefab_name = "",
-		content = "安静但浓厚的感情，氤氲在无人知晓的夜色中。",
-		id = 420191092
-	},
-	[420191093] = {
-		speaker = "",
-		prefab_name = "",
-		content = "交错的光影里，我看到她如玻璃般精致的唇，勾勒出灿烂的微笑。",
-		id = 420191093
-	},
-	[420191094] = {
-		speaker = "",
-		prefab_name = "",
-		content = "文本置空",
-		id = 420191094
-	},
-	[420191095] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "嗯……明天见。",
-		id = 420191095
-	},
-	[420191096] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "素体机能正常……意识反应、智力水平……昨天晚上没睡觉？",
-		id = 420191096
-	},
-	[420191097] = {
-		speaker = "",
-		prefab_name = "",
-		content = "粉色头发的少女平躺在床上，双手扒着被子边缘，安静地点了点头。",
-		id = 420191097
-	},
-	[420191098] = {
-		speaker = "",
-		prefab_name = "",
-		content = "洛肯神情古怪地看了看她，举起手中的终端面板，低头继续检查起上面的数据。",
-		id = 420191098
-	},
-	[420191099] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "……还是没问题，每天都没问题。",
-		id = 420191099
-	},
-	[420191100] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "最后一项，有没有「预知」到什么东西？",
-		id = 420191100
-	},
-	[420191101] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "没有，什么都没有。",
-		id = 420191101
-	},
-	[420191102] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "要是别人问你呢？",
-		id = 420191102
-	},
-	[420191103] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "什么都不告诉。",
-		id = 420191103
-	},
-	[420191104] = {
-		speaker = "",
-		prefab_name = "",
-		content = "洛肯点点头，记录下最后一条「保密意识正常」，登记好时间「9月17日8:00」。",
-		id = 420191104
-	},
-	[420191105] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "洛肯，今天要做生意吗？",
-		id = 420191105
-	},
-	[420191106] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "今天是真放假了，人和店一起放假。",
-		id = 420191106
-	},
-	[420191107] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "**，歇这一段时间，生意可被别人抢走了……",
-		id = 420191107
-	},
-	[420191108] = {
-		speaker = "",
-		prefab_name = "",
-		content = "一楼传来门铃声。洛肯懒懒地叹了口气，收起面板，按下床头处的按钮，立在床铺两边的检测仪器自动折叠回床底。",
-		id = 420191108
-	},
-	[420191109] = {
-		speaker = "",
-		prefab_name = "",
-		content = "洛肯给诗蔻蒂打了个「别乱跑」的眼色，帮她盖上被子，才下楼去开门。",
-		id = 420191109
-	},
-	[420191110] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "还真是你。来这么早？不是说下午吗？",
-		id = 420191110
-	},
-	[420191111] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "担心你们搬家有什么不方便的地方，也顺便来看看诗蔻蒂。",
-		id = 420191111
-	},
-	[420191112] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "又不是什么大户人家，阿卡德总部也近。屋里有用的东西一后备箱就拖走了。",
-		id = 420191112
-	},
-	[420191113] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "不过说起这个，为什么忽然又不让我们去弥楼衍了？",
-		id = 420191113
-	},
-	[420191114] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "弥楼衍里有一些……「东西」，可能不方便让诗蔻蒂接触。多的不能说了。",
-		id = 420191114
-	},
-	[420191115] = {
-		speaker = "洛肯",
-		prefab_name = "404001ui_story",
-		content = "懂，秘密加一。诗蔻蒂的话在楼上，刚做完检查，你自己上楼吧。",
-		id = 420191115
-	},
-	[420191116] = {
-		speaker = "",
-		prefab_name = "",
-		content = "走上楼梯时，尽可能不发出脚步声——有些孩子气的惊喜感，此时却有种「对我们来说刚刚好」的感觉。",
-		id = 420191116
-	},
-	[420191117] = {
-		speaker = "",
-		prefab_name = "",
-		content = "几秒钟后，我平复呼吸，深吸一口气，推开房门。",
-		id = 420191117
-	},
-	[420191118] = {
-		speaker = "",
-		prefab_name = "",
-		content = "窗帘借着对流的空气高高扬起，早晨柔和的阳光贴着窗帘的边沿落进房间，明暗的分界线在床上如波浪般起伏。",
-		id = 420191118
-	},
-	[420191119] = {
-		speaker = "",
-		prefab_name = "",
-		content = "各式各样的玩偶在床上堆起少女入梦的城堡，少女躺在靠枕上消磨着起床前的慵懒，一切都安静得让人不忍打扰。",
-		id = 420191119
-	},
-	[420191120] = {
-		speaker = "",
-		prefab_name = "",
-		content = "看到我，她稍稍把身体支起来一点，眨了眨眼睛，有些羞怯地望着我。",
-		id = 420191120
-	},
-	[420191121] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "……小昙？",
-		id = 420191121
-	},
-	[420191122] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "是我。",
-		id = 420191122
-	},
-	[420191123] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我征求式地朝屋里走了一步，见她没有拒绝，于是来到床边，帮她拉开窗帘。",
-		id = 420191123
-	},
-	[420191124] = {
-		speaker = "",
-		prefab_name = "",
-		content = "光亮霎时填满了整个房间。我看到了她眼中越发动人的神采，鲜明得像是将这现实都染得梦幻。",
-		id = 420191124
-	},
-	[420191125] = {
-		speaker = "",
-		prefab_name = "",
-		content = "床头的时钟一秒一秒记述着我们之间沉默的温情，任由我们短暂地流连于那些跨越时空而来的回忆。",
-		id = 420191125
-	},
-	[420191126] = {
-		speaker = "",
-		prefab_name = "",
-		content = "直到心中那汹涌如潮水般的释怀感渐渐退去，我们终于赶上了时钟的轨迹。",
-		id = 420191126
-	},
-	[420191127] = {
-		speaker = "选项",
-		prefab_name = "",
-		content = "早安，诗蔻蒂",
-		id = 420191127
-	},
-	[420191128] = {
-		speaker = "诗蔻蒂",
-		prefab_name = "1085ui_story",
-		content = "……早安，小昙。",
-		id = 420191128
-	},
-	[420191129] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我从未感觉自己的笑容如此轻松，从背包里拿出那朵玻璃花，放在桌上的相机旁边。",
-		id = 420191129
-	},
-	[420191130] = {
-		speaker = "",
-		prefab_name = "",
-		content = "半边是剔透的淡粉，半边是幽邃的冰蓝，两种颜色在透明的世界中交融，浑然如一。",
-		id = 420191130
-	},
-	[420191131] = {
-		speaker = "",
-		prefab_name = "",
-		content = "梦想很简单。",
-		id = 420191131
-	},
-	[420191132] = {
-		speaker = "",
-		prefab_name = "",
-		content = "想要有一天，从早上到晚上都认识，起床以后可以说早安，睡觉以前可以说晚安。",
-		id = 420191132
-	},
-	[420191133] = {
-		speaker = "",
-		prefab_name = "",
-		content = "想要用尽全力寻回彼此，去往或许并不美满，但有你在身边的明天。",
-		id = 420191133
-	},
-	[420191134] = {
-		speaker = "",
-		prefab_name = "",
-		content = "因为我曾与她重逢，在数千个昨日。\n\n一如她曾与我相遇，在数千个梦中。",
-		id = 420191134
-	},
-	[321011001] = {
-		speaker = "衣着精致的女人",
-		prefab_name = "",
-		content = "我丈夫死了……就在那一天。",
-		id = 321011001
-	},
-	[321011002] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "……",
-		id = 321011002
-	},
-	[321011003] = {
-		speaker = "",
-		prefab_name = "",
-		content = "柏树林将小屋与富人区车来车往的街道隔开，鸟鸣声在枝叶间此起彼伏，安静得像是新城以东的郊区。",
-		id = 321011003
-	},
-	[321011004] = {
-		speaker = "",
-		prefab_name = "",
-		content = "站在椅子扶手上的机械鸟仰起脖子，却并没有回应那些「同类」，而是与屋里的人们一起看向圆桌一侧的发言者。",
-		id = 321011004
-	},
-	[321011005] = {
-		speaker = "",
-		prefab_name = "",
-		content = "女人一时间不太适应从听众到发言者的身份转换，即便桌边其他人投向她的目光都带着真诚的鼓励意味，她还是酝酿了很久才让情绪平静下来。",
-		id = 321011005
-	},
-	[321011006] = {
-		speaker = "衣着精致的女人",
-		prefab_name = "",
-		content = "他的工作不干净，我承认……但他从来没有杀过人，也不该被从四十楼扔下来。",
-		id = 321011006
-	},
-	[321011007] = {
-		speaker = "衣着精致的女人",
-		prefab_name = "",
-		content = "这就是联合仲裁。那些坐在顶层办公室里的人，为了自己的跑车和别墅，可以随随便便让人去送命。",
-		id = 321011007
-	},
-	[321011008] = {
-		speaker = "衣着精致的女人",
-		prefab_name = "",
-		content = "……这几天，我经常会在梦里听到他的声音，他尖叫着，问我为什么劝他去给无限力量卖命。",
-		id = 321011008
-	},
-	[321011009] = {
-		speaker = "衣着精致的女人",
-		prefab_name = "",
-		content = "我睁开眼睛，就看见他躺在我边上，全身是血……然后被吓得惊醒，整晚睡不着觉。",
-		id = 321011009
-	},
-	[321011010] = {
-		speaker = "衣着精致的女人",
-		prefab_name = "",
-		content = "我受够这些了。我只是想说，永远不要相信不受控制的权力，它们是没有同情心的……",
-		id = 321011010
-	},
-	[321011011] = {
-		speaker = "衣着精致的女人",
-		prefab_name = "",
-		content = "我打算搬去马拉塔市，我姐夫的事务所有一份采购的工作给我……就这么多了，医生。",
-		id = 321011011
-	},
-	[321011012] = {
-		speaker = "",
-		prefab_name = "",
-		content = "围坐在圆桌边的人们纷纷表示同情与理解地点头。",
-		id = 321011012
-	},
-	[321011013] = {
-		speaker = "",
-		prefab_name = "",
-		content = "这位发言者和其中一些人的目光落在一位穿着白大褂的年轻医生身上。她双手都放在桌面上，身体微微前倾，做出非常积极的倾听与沟通的姿态。",
-		id = 321011013
-	},
-	[321011014] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "你已经和你那位姐夫联系过，确定好过去以后的安排了吗？",
-		id = 321011014
-	},
-	[321011015] = {
-		speaker = "衣着精致的女人",
-		prefab_name = "",
-		content = "是的……下周就过去。",
-		id = 321011015
-	},
-	[321011016] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "明白了。感谢分享，希望你能在新环境里有一个全新的开始。",
-		id = 321011016
-	},
-	[321011017] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "我们都会在苦难里失去一些重要的东西。但生活不会停下来等我们，我们最终要为自己找到出路，就像我们曾经无数次做过的那样。",
-		id = 321011017
-	},
-	[321011018] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "所以，还是要学会宽恕自己。每条路都有得有失，太多事情我们没法控制。这位小姐应该会有感触吧……",
-		id = 321011018
-	},
-	[321011019] = {
-		speaker = "",
-		prefab_name = "",
-		content = "医生朝伊里伽尔礼貌地笑了笑。后者微垂的眼瞳毫无波澜，只有手边的机械鸟看向了医生。",
-		id = 321011019
-	},
-	[321011020] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "这应该是你第一次坐在这里。来参加互助小组，有什么想和大家分享吗？",
-		id = 321011020
-	},
-	[321011021] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "……第一次来，一般从哪里开始讲？",
-		id = 321011021
-	},
-	[321011022] = {
-		speaker = "衣着精致的女人",
-		prefab_name = "",
-		content = "你是加尔人吗？",
-		id = 321011022
-	},
-	[321011023] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "是。",
-		id = 321011023
-	},
-	[321011024] = {
-		speaker = "衣着精致的女人",
-		prefab_name = "",
-		content = "那为什么不从这里开始呢？",
-		id = 321011024
-	},
-	[321011025] = {
-		speaker = "衣着精致的女人",
-		prefab_name = "",
-		content = "不用紧张，小妹妹。联合仲裁在贫民窟做过的事都被曝光了，现在各行各业都很关注你们的遭遇。",
-		id = 321011025
-	},
-	[321011026] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "我想说的不是加尔的事，也和联合仲裁没关系。",
-		id = 321011026
-	},
-	[321011027] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "这里对个人问题也很开放，你可以说出任何事情。",
-		id = 321011027
-	},
-	[321011028] = {
-		speaker = "",
-		prefab_name = "",
-		content = "伊里伽尔摸了摸机械鸟的脑袋，像是酝酿了一会儿情绪，才慢慢抬起头。",
-		id = 321011028
-	},
-	[321011029] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "我天生就看不见。",
-		id = 321011029
-	},
-	[321011030] = {
-		speaker = "",
-		prefab_name = "",
-		content = "桌边的人们纷纷坐直身子，一些人这才注意到她奇异的双眼，露出尝试与伊里伽尔感同身受的关切表情。",
-		id = 321011030
-	},
-	[321011031] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "小时候有一次，我在一间屋子里，地面忽然开始抖个不停。",
-		id = 321011031
-	},
-	[321011032] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "我听到外面有人在大声喊叫，但因为地下震动的声音也很响，我没听清他们在喊什么。",
-		id = 321011032
-	},
-	[321011033] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "然后我听到，就在很近的地方，非常干硬的、挤压开裂的声音，四面八方到处都是……",
-		id = 321011033
-	},
-	[321011034] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "我姐姐在废墟里找到了我。好歹捡回一条命，我才知道，那时候发生的事叫做「地震」。",
-		id = 321011034
-	},
-	[321011035] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "我花了好几年才适应其他人用「看见」描述的世界，尝试去想象我触摸的、听说的各种东西的形状。",
-		id = 321011035
-	},
-	[321011036] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "但想象出来的东西说到底只是脆弱的幻象——「世界」对我来说就是这样，反过来也一样。",
-		id = 321011036
-	},
-	[321011037] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "我姐姐从不让我帮她做事，因为在所有人眼里，我都是个可悲的病人……",
-		id = 321011037
-	},
-	[321011038] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "我受够这些了。我只是想说……",
-		id = 321011038
-	},
-	[321011039] = {
-		speaker = "",
-		prefab_name = "",
-		content = "说到这里，伊里伽尔停顿了一下，像是情绪有点起伏。她抬手扶正挂在耳边的装置，那大概是某种辅助失明者生活的用具。",
-		id = 321011039
-	},
-	[321011040] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "就像医生说的，很多时候我们没法控制自己的命运，但我们不能顺从。",
-		id = 321011040
-	},
-	[321011041] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "只要活着，我们就不该放弃去成为自己想要成为的样子。",
-		id = 321011041
-	},
-	[321011042] = {
-		speaker = "",
-		prefab_name = "",
-		content = "分享了一圈各自的故事后，互助小组在医生鼓励性的结语中结束。",
-		id = 321011042
-	},
-	[321011043] = {
-		speaker = "",
-		prefab_name = "",
-		content = "像是听到人们三两成群离场的脚步声才反应过来，伊里伽尔也打算起身离开，一道脚步声却停在了她面前。",
-		id = 321011043
-	},
-	[321011044] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "第一次参加，感觉怎么样？",
-		id = 321011044
-	},
-	[321011045] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "把心里话说出来，很有帮助。",
-		id = 321011045
-	},
-	[321011046] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "倾诉是语言的本能，也是精神的释放，平时如果感觉精神上有压力，也可以找身边的人多聊聊。",
-		id = 321011046
-	},
-	[321011047] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "在加尔，这只会被当作示弱的诉苦。",
-		id = 321011047
-	},
-	[321011048] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "是吗……不好意思，我确实不太了解加尔的环境。",
-		id = 321011048
-	},
-	[321011049] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "刚才你说你还有一位姐姐，一般这种话题在亲人之间会比较合适。你和你姐姐的关系不好吗？",
-		id = 321011049
-	},
-	[321011050] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "不。我也很想找她说清楚，证明我可以和正常人一样做事。",
-		id = 321011050
-	},
-	[321011051] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "但她几年前就离开了……我联系不上她。",
-		id = 321011051
-	},
-	[321011052] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "是这样……",
-		id = 321011052
-	},
-	[321011053] = {
-		speaker = "",
-		prefab_name = "",
-		content = "医生略有些同情地叹了口气。屋里只剩下她和伊里伽尔两人，空置的座椅一下让房间显得空旷起来。",
-		id = 321011053
-	},
-	[321011054] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "我明白你的想法。不过现在没有别人，作为医生，我得说些可能会冒犯的话。",
-		id = 321011054
-	},
-	[321011055] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "很多时候，身体缺陷对精神的影响比你想象的更复杂，表层意识的自主接受不能代表你完全规避了它带来的负面影响。",
-		id = 321011055
-	},
-	[321011056] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "所以，如果你有这方面诊疗的需要，我可以给你介绍一位专家。",
-		id = 321011056
-	},
-	[321011057] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "我没那么多钱请专家。",
-		id = 321011057
-	},
-	[321011058] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "不用担心钱的问题。互助小组最早就是那位医生牵头的，你就知道他有多热心了。",
-		id = 321011058
-	},
-	[321011059] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "说起来，他今天好像就在门诊坐班，如果你有时间，我可以带你去看看。",
-		id = 321011059
-	},
-	[321011060] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "今天吗？",
-		id = 321011060
-	},
-	[321011061] = {
-		speaker = "（选项）",
-		prefab_name = "",
-		content = "去吧，我们就位了",
-		id = 321011061
-	},
-	[321011062] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "没事，如果时间不方便的话——",
-		id = 321011062
-	},
-	[321011063] = {
-		speaker = "伊里伽尔",
-		prefab_name = "",
-		content = "不……只是以为「专家」不会有当天的号。",
-		id = 321011063
-	},
-	[321011064] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "他刚来基维塔巴不久，认识他的人不多，所以预约没那么紧张。",
-		id = 321011064
-	},
-	[321011065] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "正好我也要回诊所，开车带你过去吧。",
-		id = 321011065
-	},
-	[321011066] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "",
-		content = "管理员，涅赫贝特主任，是不是那个？",
-		id = 321011066
-	},
-	[321011067] = {
-		speaker = "",
-		prefab_name = "",
-		content = "停在柏树林外路边的一辆SUV轻微晃了晃。",
-		id = 321011067
-	},
-	[321011068] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我和驾驶座上的科尔盖特工手忙脚乱地放下各自吃到一半的汉堡，坐在我旁边的涅赫贝特也关掉了终端上某部最近大火的科幻题材电视剧。",
-		id = 321011068
-	},
-	[321011069] = {
-		speaker = "",
-		prefab_name = "",
-		content = "在薇儿指示的方向上，一辆轿车从柏树林间的小路拐出来。涅赫贝特敲了一下驾驶座的椅背，特工连忙发动车子跟了上去。",
-		id = 321011069
-	},
-	[321011070] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "指挥部，锁定牌号「KV23TA97326」的车辆。",
-		id = 321011070
-	},
-	[321011071] = {
-		speaker = "指挥部",
-		prefab_name = "",
-		content = "收到。在查它的自动驾驶路线了。",
-		id = 321011071
-	},
-	[321011072] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "萨穆雅部长？",
-		id = 321011072
-	},
-	[321011073] = {
-		speaker = "（选项一）",
-		prefab_name = "",
-		content = "萨穆雅什么？",
-		id = 321011073
-	},
-	[321011074] = {
-		speaker = "指挥部",
-		prefab_name = "",
-		content = "跨区执法，又是这么重要的目标，我当然得亲自盯着。",
-		id = 321011074
-	},
-	[321011075] = {
-		speaker = "指挥部",
-		prefab_name = "",
-		content = "你们有什么需要只管说，分部这边一定第一时间响应。",
-		id = 321011075
-	},
-	[321011076] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "明白了，辛苦。",
-		id = 321011076
-	},
-	[321011077] = {
-		speaker = "",
-		prefab_name = "",
-		content = "挂断通讯，涅赫贝特一边将后方传来的监控数据导入地图一边向我解释。",
-		id = 321011077
-	},
-	[321011078] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "我们在夏什瓦特的分部就设在基维塔巴，萨穆雅是这座分部的部长。",
-		id = 321011078
-	},
-	[321011079] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "我从总部带过来的人不多。搜捕奥蒂斯，包括前几天在生命科技的行动，都是她在后方调度。",
-		id = 321011079
-	},
-	[321011080] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "难怪知道我们这边的动向。",
-		id = 321011080
-	},
-	[321011081] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "要不是她同意，我也不会让你雇个来路不明的修正者替我们当侦探。",
-		id = 321011081
-	},
-	[321011082] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "她帮我这个外人说话？",
-		id = 321011082
-	},
-	[321011083] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "因为她就是这么做事的……查到那辆车自动驾驶的路线了，换条路去目的地等着。",
-		id = 321011083
-	},
-	[321011084] = {
-		speaker = "",
-		prefab_name = "",
-		content = "开车的特工扫了眼更新完毕的车载地图，朝涅赫贝特比了一个收到的手势。",
-		id = 321011084
-	},
-	[321011085] = {
-		speaker = "",
-		prefab_name = "",
-		content = "主城区的街道并不拥挤。车辆在下个路口前慢慢换到右转车道，消失在前车的后视镜中。",
-		id = 321011085
-	},
-	[321011086] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "请坐吧。格林医生一会儿就到。",
-		id = 321011086
-	},
-	[321011087] = {
-		speaker = "",
-		prefab_name = "",
-		content = "漫长的车程后，伊里伽尔被带进另一座建筑中。",
-		id = 321011087
-	},
-	[321011088] = {
-		speaker = "",
-		prefab_name = "",
-		content = "与互助小组所在的地方一样，这里十分僻静，但木质地板的音色在夏什瓦特并不常能听到，室内香氛也不是夏什瓦特人习惯的气味。",
-		id = 321011088
-	},
-	[321011089] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "……这里是诊所吗？",
-		id = 321011089
-	},
-	[321011090] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "是的，这是格林医生的私人诊所，我们现在就在其中一间诊室里。",
-		id = 321011090
-	},
-	[321011091] = {
-		speaker = "「医生」",
-		prefab_name = "",
-		content = "房间里有他的私人藏品，所以尽量不要随便走动……这台导盲智械也是。",
-		id = 321011091
-	},
-	[321011092] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "嗯，请放心。",
-		id = 321011092
-	},
-	[321011093] = {
-		speaker = "",
-		prefab_name = "",
-		content = "见伊里伽尔点头答应，医生才从房间尽头的出口离开。",
-		id = 321011093
-	},
-	[321011094] = {
-		speaker = "",
-		prefab_name = "",
-		content = "随着脚步声远去，一直不声不响待在伊里伽尔身边的机械鸟立刻张开了翅膀，却被少女轻轻敲了一下脑壳，又把翅膀缩了回去。",
-		id = 321011094
-	},
-	[321011095] = {
-		speaker = "奈提",
-		prefab_name = "",
-		content = "骗子，骗子，不是诊所。",
-		id = 321011095
-	},
-	[321011096] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "我知道。别乱动，奈提。",
-		id = 321011096
-	},
-	[321011097] = {
-		speaker = "奈提",
-		prefab_name = "",
-		content = "伊里伊里，没有信号了。",
-		id = 321011097
-	},
-	[321011098] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "是吗？",
-		id = 321011098
-	},
-	[321011099] = {
-		speaker = "",
-		prefab_name = "",
-		content = "指尖轻轻敲了两下耳边的「知觉辅助装置」，没有听到回应，伊里伽尔歪了一下脑袋，朝奈提笑了笑。",
-		id = 321011099
-	},
-	[321011100] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "那就说明我们来对地方了。",
-		id = 321011100
-	},
-	[321011101] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "真是个白痴，带了个修正者过来……",
-		id = 321011101
-	},
-	[321011102] = {
-		speaker = "",
-		prefab_name = "",
-		content = "房门被人粗暴地推开，一名端着步枪的男人气势汹汹地闯进来，毫无专业性可言的持枪姿势看上去有些滑稽。",
-		id = 321011102
-	},
-	[321011103] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "你到底是谁？在和谁联系？！",
-		id = 321011103
-	},
-	[321011104] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "奥蒂斯？",
-		id = 321011104
-	},
-	[321011105] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "很好，看来我没猜错。",
-		id = 321011105
-	},
-	[321011106] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "深空之眼还是科尔盖？谁派你来的？怎么找到我的？！",
-		id = 321011106
-	},
-	[321011107] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "……很难想象，像你这么沉不住气的人，会有胆子做那些事。",
-		id = 321011107
-	},
-	[321011108] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "那些被你从互助小组骗到这里来的人，现在在哪儿？",
-		id = 321011108
-	},
-	[321011109] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "白痴，白痴……全暴露了……",
-		id = 321011109
-	},
-	[321011110] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奥蒂斯用力搓着头发，手臂颤抖着像是用力到要把头皮扯下来。在疼痛的刺激下，他脸上的笑容逐渐疯狂。",
-		id = 321011110
-	},
-	[321011111] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "那些被痛苦折磨的人，献上灵魂反而是解脱……我会记住他们的名字，非常感谢他们的帮助。",
-		id = 321011111
-	},
-	[321011112] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "为什么要杀他们？",
-		id = 321011112
-	},
-	[321011113] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "杀？不不不，他们没有死，他们的灵魂还在，只是换了一种形式……",
-		id = 321011113
-	},
-	[321011114] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "不，不，不……为什么要告诉你？你应该告诉我！",
-		id = 321011114
-	},
-	[321011115] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "现在要抓你的人都是在救你。你知道自己在和什么东西合作吗？",
-		id = 321011115
-	},
-	[321011116] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "知道，我当然知道。",
-		id = 321011116
-	},
-	[321011117] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奥蒂斯又神经质地低笑了两声，拍了拍手，阴森的气息从他背后的走廊涌进房间，伊里伽尔听到了那些令人战栗不安的熟悉响动。",
-		id = 321011117
-	},
-	[321011118] = {
-		speaker = "奈提",
-		prefab_name = "",
-		content = "伊里伊里，视骸！",
-		id = 321011118
-	},
-	[321011119] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "这些东西很糟糕，很可怕，但它们现在站在我这边，所以你不要有侥幸——",
-		id = 321011119
-	},
-	[321011120] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "……那你就该知道，你现在的对手，比它们更不好惹。",
-		id = 321011120
-	},
-	[321011121] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奥蒂斯恼怒地扣下扳机，泼洒出的子弹全部被神能招引在伊里伽尔面前的长剑弹开。",
-		id = 321011121
-	},
-	[321011122] = {
-		speaker = "",
-		prefab_name = "",
-		content = "就在奥蒂斯匆忙换弹的时候，伊里伽尔将剑斜插到一旁，另一只手里又出现了一把弓弩。",
-		id = 321011122
-	},
-	[321011123] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "你的「灵魂」，还属于你吗？",
-		id = 321011123
-	},
-	[321011124] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "……",
-		id = 321011124
-	},
-	[321011125] = {
-		speaker = "",
-		prefab_name = "",
-		content = "对少女娇小体型来说显得有些沉重的武器在她手中轻巧地切换，紫黑色的神能在弩臂上凝聚成箭，直指奥蒂斯。",
-		id = 321011125
-	},
-	[321011126] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "给我拦住她！",
-		id = 321011126
-	},
-	[321011127] = {
-		speaker = "",
-		prefab_name = "",
-		content = "弩箭离弦，贯穿两只视骸后依然击碎了奥蒂斯手中的步枪。",
-		id = 321011127
-	},
-	[321011128] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奥蒂斯吓得急忙逃向门外，视骸也听从他的命令，疯狂扑向伊里伽尔。",
-		id = 321011128
-	},
-	[321011129] = {
-		speaker = "奈提",
-		prefab_name = "",
-		content = "伊里伊里，小心背后！",
-		id = 321011129
-	},
-	[321011130] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "1284ui_story",
-		content = "找到信号了，就在下面！",
-		id = 321011130
-	},
-	[321011131] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "……这支援速度，确实不错。",
-		id = 321011131
-	},
-	[321021001] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "什么？奥蒂斯跑了？",
-		id = 321021001
-	},
-	[321021002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "驾驶座上的特工刚拆开剩下半个汉堡的包装，被我忍不住拔高的声音吓了一跳，半块面包掉到了地上。",
-		id = 321021002
-	},
-	[321021003] = {
-		speaker = "",
-		prefab_name = "",
-		content = "于是他转过头与涅赫贝特一起盯着我。我一边嘱咐薇儿她们小心，一边朝特工扬了扬我那半个汉堡。他翻着白眼躺了回去。",
-		id = 321021003
-	},
-	[321021004] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "能确定是奥蒂斯吗？",
-		id = 321021004
-	},
-	[321021005] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我找伊里伽尔帮忙，一方面是因为她脸生不容易被怀疑，另一方面就是怕认错。",
-		id = 321021005
-	},
-	[321021006] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "她对灵魂数据特别敏感。不管智骸怎么帮奥蒂斯隐藏身份，灵魂数据八成做不了假。伊里伽尔说是他，那就是他没错了。",
-		id = 321021006
-	},
-	[321021007] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我解开安全带准备下车，却被涅赫贝特一把拉住。",
-		id = 321021007
-	},
-	[321021008] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "你要去哪儿？",
-		id = 321021008
-	},
-	[321021009] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "奥蒂斯跑了，我们的布防有问题……不是说有疏漏，大概是情报不全，地下还有别的出口。",
-		id = 321021009
-	},
-	[321021010] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "那也用不着你去。当我们是空气吗？",
-		id = 321021010
-	},
-	[321021011] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……这是现在最有可能找到冥王的线索，通过奥蒂斯找到巴钦或者罗波那。我只想尽我的一份力。",
-		id = 321021011
-	},
-	[321021012] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "已经72小时——",
-		id = 321021012
-	},
-	[321021013] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "她还活着。",
-		id = 321021013
-	},
-	[321021014] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我尽可能礼貌地拨开涅赫贝特的手，推开车门。她无可奈何地叹了口气，和我一起下了车。",
-		id = 321021014
-	},
-	[321021015] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "一起。",
-		id = 321021015
-	},
-	[321021016] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "谢谢。",
-		id = 321021016
-	},
-	[321021017] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "没什么好谢的，各取所需而已。",
-		id = 321021017
-	},
-	[321021018] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "你去和监视小组会合，地面上有动静随时通知我。",
-		id = 321021018
-	},
-	[321021019] = {
-		speaker = "开车的特工",
-		prefab_name = "",
-		content = "是，主任。",
-		id = 321021019
-	},
-	[321021020] = {
-		speaker = "",
-		prefab_name = "",
-		content = "建筑一楼看上去像是普通的民居，房产归在一名叫做「格林」的人手下，按伊里伽尔的说法，大概是奥蒂斯的私宅。",
-		id = 321021020
-	},
-	[321021021] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我和涅赫贝特没有在楼上停留太久，追着薇儿三人的信号来到地下，帮忙收拾掉一些零星的视骸后顺利会合。",
-		id = 321021021
-	},
-	[321021022] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "科尔盖科研中心防卫科主任，涅赫贝特。",
-		id = 321021022
-	},
-	[321021023] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "伊里伽尔。",
-		id = 321021023
-	},
-	[321021024] = {
-		speaker = "",
-		prefab_name = "",
-		content = "聊胜于无的寒暄听得我捏了把汗，好在话题没有往敏感的方向发散。比起伊里伽尔的身份，还是奈提刚拍到的奥蒂斯的照片更让涅赫贝特感兴趣。",
-		id = 321021024
-	},
-	[321021025] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "帮他在寸土寸金的主城区挖出这么大一座地下实验室，生命科技倒是舍得。",
-		id = 321021025
-	},
-	[321021026] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "知道奥蒂斯往哪儿逃了吗？",
-		id = 321021026
-	},
-	[321021027] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "实验室里的监控录像全部被销毁，开车带我过来的医生也被他灭口了，所以，不知道。",
-		id = 321021027
-	},
-	[321021028] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "奈提，出口。",
-		id = 321021028
-	},
-	[321021029] = {
-		speaker = "奈提",
-		prefab_name = "",
-		content = "奈提找到了，两个出口，一个连着密室，一个连着下水道。",
-		id = 321021029
-	},
-	[321021030] = {
-		speaker = "（选项一）",
-		prefab_name = "",
-		content = "密室？",
-		id = 321021030
-	},
-	[321021031] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "是这样……",
-		id = 321021031
-	},
-	[321021032] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奈提将扫描绘制出的三维地图传到涅赫贝特的终端上。她对照着地图研究了一会儿，了然地点点头。",
-		id = 321021032
-	},
-	[321021033] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "分头行动吧。#{nickname}#，我们去下水道。",
-		id = 321021033
-	},
-	[321021034] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "你们三个就留在这里，保护好现场，我让科尔盖的技术专家下来看看那个密室。",
-		id = 321021034
-	},
-	[321021035] = {
-		speaker = "",
-		prefab_name = "",
-		content = "涅赫贝特的任务分配有些奇怪，但这几天接触下来，我不认为帕拉凯瑟派她过来只是因为她作为修正者的强大实力。",
-		id = 321021035
-	},
-	[321021036] = {
-		speaker = "",
-		prefab_name = "",
-		content = "薇儿和奥西里斯显然想跟着我，被我眼神制止。只有伊里伽尔一副无所谓的样子，抱着弓弩，与奈提一同蹲到房间的角落里。",
-		id = 321021036
-	},
-	[321021037] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "人找到了，委托结束。有视骸再叫我。",
-		id = 321021037
-	},
-	[321021038] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "那个伊里伽尔，你从哪儿找来的？",
-		id = 321021038
-	},
-	[321021039] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "弥楼衍介绍的。",
-		id = 321021039
-	},
-	[321021040] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "梵天没把她拉进弥楼衍？",
-		id = 321021040
-	},
-	[321021041] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "艾因索菲不也有很多哪扇门都不想进的修正者么？",
-		id = 321021041
-	},
-	[321021042] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我们以一副完全没有紧迫感的架势沿着下水道的维护通道往前走。就这里错综复杂的环境来说，我们的搜索可以说只是做做样子。",
-		id = 321021042
-	},
-	[321021043] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "真大啊，这个下水道。",
-		id = 321021043
-	},
-	[321021044] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "基维塔巴建在圣河两侧，需要这种规模的排水系统预防洪涝灾害，连我们分部地下都建了一段。",
-		id = 321021044
-	},
-	[321021045] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "加尔作为新区扩建的时候，排水系统也准备跟着扩建过去，后来联合仲裁放弃加尔，地下工程也跟着一起停了。",
-		id = 321021045
-	},
-	[321021046] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我听说过，联合仲裁为了防止加尔人跑到主城区和新城，对整个地下网道严格管制。",
-		id = 321021046
-	},
-	[321021047] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "道理我都懂，可还是真大啊，这个下水道。",
-		id = 321021047
-	},
-	[321021048] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "……现在怎么又有心情开玩笑了？",
-		id = 321021048
-	},
-	[321021049] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "绷着脸也没法让我一眼看到奥蒂斯藏在哪里。",
-		id = 321021049
-	},
-	[321021050] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "不过，说是「严格管制」，却一个监控都没装啊……",
-		id = 321021050
-	},
-	[321021051] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "我刚才问了克洛尔，她说是因为联合仲裁有不少灰产藏在地下，为了防止「恶性竞争」，所以干脆不要监控了。",
-		id = 321021051
-	},
-	[321021052] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "哦……她倒是配合，这种事都告诉你了。",
-		id = 321021052
-	},
-	[321021053] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "知道科尔盖不会查这些生意。她能拿着奥蒂斯的情报还没被干掉，比看上去的要精明得多。",
-		id = 321021053
-	},
-	[321021054] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "吉维卡的情况你告诉她了吗？",
-		id = 321021054
-	},
-	[321021055] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "没有……",
-		id = 321021055
-	},
-	[321021056] = {
-		speaker = "",
-		prefab_name = "",
-		content = "涅赫贝特低头看了眼终端，忽然抬手横在我面前示意我停下，听了一会儿耳机里的汇报，不太放心地看了我一眼。",
-		id = 321021056
-	},
-	[321021057] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "又有视骸袭击实验室了，我回去帮忙。你一个人没问题吗？",
-		id = 321021057
-	},
-	[321021058] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "他连把枪都拿不稳。",
-		id = 321021058
-	},
-	[321021059] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "智骸呢？",
-		id = 321021059
-	},
-	[321021060] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "一时半会儿弄不死我。剩下的就得看你们了。",
-		id = 321021060
-	},
-	[321022001] = {
-		speaker = "",
-		prefab_name = "",
-		content = "镰刀带着碧绿色的神能劈在地缚种坚硬的体表，连同奥西里斯都被震退了几步，却只在视骸身上留下了一道无关痛痒的创痕。",
-		id = 321022001
-	},
-	[321022002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "还没等奥西里斯站稳，视骸已经挥出了它硕大的石拳。猩风扑面，奥西里斯只来得及提起权钥抵挡。",
-		id = 321022002
-	},
-	[321022003] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "1284ui_story",
-		content = "好机会！",
-		id = 321022003
-	},
-	[321022004] = {
-		speaker = "",
-		prefab_name = "",
-		content = "太阳般耀眼的金色光芒在视骸身后绽放，感受到危险的视骸想要转过身，却被三支弩箭的冲击力压得动作停滞。",
-		id = 321022004
-	},
-	[321022005] = {
-		speaker = "",
-		prefab_name = "",
-		content = "神能在半空中凝聚出两道交叉的剑影，在视骸恢复行动能力的瞬间，剑影交错落下，将这只地缚种斩成一滩碎石。",
-		id = 321022005
-	},
-	[321022006] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "1284ui_story",
-		content = "小奥西里斯，没事吧？",
-		id = 321022006
-	},
-	[321022007] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奥西里斯摇了摇头，怔怔地看着一脸关切的薇儿丹蒂，忽然感应到身后又有骸能逼近，刚握紧武器，骸能就在一连串短促尖锐的切削声中消失了。",
-		id = 321022007
-	},
-	[321022008] = {
-		speaker = "",
-		prefab_name = "",
-		content = "伊里伽尔朝来路的方向稍稍偏过头，没说话，抱着双臂退到一边，显然不想与来者过多接触。",
-		id = 321022008
-	},
-	[321022009] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "1284ui_story",
-		content = "涅赫贝特主任。",
-		id = 321022009
-	},
-	[321022010] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "嗯，有什么发现吗？",
-		id = 321022010
-	},
-	[321022011] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "1284ui_story",
-		content = "这后面好像有东西。",
-		id = 321022011
-	},
-	[321022012] = {
-		speaker = "",
-		prefab_name = "",
-		content = "涅赫贝特抬了抬下巴。几名特工迅速开始检查走廊尽头的墙壁，暗门的缝隙在激光扫描下无所遁形。",
-		id = 321022012
-	},
-	[321022013] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "走吧，一起进去看看。",
-		id = 321022013
-	},
-	[321022014] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "我就留在这里看门好了。",
-		id = 321022014
-	},
-	[321022015] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "不习惯和科尔盖一起行动吗？",
-		id = 321022015
-	},
-	[321022016] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "只是不习惯人多的地方，独来独往惯了。",
-		id = 321022016
-	},
-	[321022017] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "诺伊汉萨的智械？",
-		id = 321022017
-	},
-	[321022018] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "是，定制的，只有诺伊汉萨有这技术。",
-		id = 321022018
-	},
-	[321022019] = {
-		speaker = "奈提",
-		prefab_name = "",
-		content = "伊里伊里~",
-		id = 321022019
-	},
-	[321022020] = {
-		speaker = "",
-		prefab_name = "",
-		content = "涅赫贝特意味不明地笑了笑，默许伊里伽尔留在这里，带着薇儿和奥西里斯推开暗门。",
-		id = 321022020
-	},
-	[321022021] = {
-		speaker = "",
-		prefab_name = "",
-		content = "暗门后面是一部电梯。按下内壁上唯一的按钮后，电梯载着三人升到二楼的一间客厅。",
-		id = 321022021
-	},
-	[321022022] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "1284ui_story",
-		content = "诶？居然连着这里？",
-		id = 321022022
-	},
-	[321022023] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "你来过？",
-		id = 321022023
-	},
-	[321022024] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "1284ui_story",
-		content = "刚才我们来找伊里伽尔的时候上来过，但很快就走了，没发现暗门和电梯。",
-		id = 321022024
-	},
-	[321022025] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "好像和上次来的时候不一样了……门口的花瓶是我们追出去的时候碰倒的，但电梯边上的垃圾桶本来是贴墙放的。还有这张照片……",
-		id = 321022025
-	},
-	[321022026] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奥西里斯在房间里张望了一圈，慢慢走向一座书架，端详着旁边墙上装裱精致的合照。",
-		id = 321022026
-	},
-	[321022027] = {
-		speaker = "",
-		prefab_name = "",
-		content = "照片中的奥蒂斯比现在年轻许多，温情脉脉地挽着身旁女性的手，与现在狂热偏执的样子判若两人。",
-		id = 321022027
-	},
-	[321022028] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "1284ui_story",
-		content = "差别好大，要不是放在这个房间里，我都认不出这是奥蒂斯了。",
-		id = 321022028
-	},
-	[321022029] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "年纪轻轻就从艾因索菲工学院博士毕业，又被科尔盖请来参加尖端AI技术的研究，当然有过人模狗样的时候。",
-		id = 321022029
-	},
-	[321022030] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "1284ui_story",
-		content = "这么说是不是有点刻薄啦……本来他还是有机会做好人的。",
-		id = 321022030
-	},
-	[321022031] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "好人？连日子都过不明白的人，算什么好人？",
-		id = 321022031
-	},
-	[321022032] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "他被开除的那场实验事故，还有他老婆的死，都跟他脱不了干系。科尔盖最不缺的就是天才，他太把自己当回事了。",
-		id = 321022032
-	},
-	[321022033] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "照片有什么问题吗，奥西里斯？为什么一直盯着看？",
-		id = 321022033
-	},
-	[321022034] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "……这张照片被挪动过，我记得原来离书柜没这么近。",
-		id = 321022034
-	},
-	[321022035] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奥西里斯想要把相框拿下来，却发现它被固定在墙上，只能左右平移。奥西里斯一下子明白过来，将相框朝书柜推过去。",
-		id = 321022035
-	},
-	[321022036] = {
-		speaker = "",
-		prefab_name = "",
-		content = "墙体中传出某种像是解锁的声音，身旁的书架缓缓向一旁划开，露出后方压抑窄小的密室。",
-		id = 321022036
-	},
-	[321022037] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "这里还藏着一个小房间……里面那台机器，那是「莫纳德节点」吗？",
-		id = 321022037
-	},
-	[321022038] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "呵，战斗水平一般，见识倒是不浅。",
-		id = 321022038
-	},
-	[321022039] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "1284ui_story",
-		content = "莫纳德节点是什么，课上有教过吗？",
-		id = 321022039
-	},
-	[321022040] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "作战科的课程里没有讲，我是在情报科的图书室里看到的。",
-		id = 321022040
-	},
-	[321022041] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "好像是说，光轨运输要靠一个叫作「莫纳德架构」的东西，它连接着盖亚不同的地方，用「节点」可以通过它发送和接收数据。",
-		id = 321022041
-	},
-	[321022042] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "每个光轨站都有一个超大型节点，一次可以跨越原质区运送几百吨的东西。",
-		id = 321022042
-	},
-	[321022043] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "1284ui_story",
-		content = "那这也是个传送装置吗？",
-		id = 321022043
-	},
-	[321022044] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "算是。",
-		id = 321022044
-	},
-	[321022045] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "1284ui_story",
-		content = "奥蒂斯用它逃跑了吗？那我们得赶紧追上去——",
-		id = 321022045
-	},
-	[321022046] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "没法追。这台机器载量很小，又没有其他配套设施保护，传送距离近而且不稳定。",
-		id = 321022046
-	},
-	[321022047] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "在其他情境下完全靠不住，但对逃跑来说，这些缺点反倒成了优点了。",
-		id = 321022047
-	},
-	[321022048] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "现在机器过载，供能被切断，我先把技术员叫过来评估一下多久能修好。",
-		id = 321022048
-	},
-	[321022049] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "1284ui_story",
-		content = "太狡猾了……",
-		id = 321022049
-	},
-	[321022050] = {
-		speaker = "",
-		prefab_name = "",
-		content = "在低语中，薇儿悄悄地向一旁沉默不语的奥西里斯投去担忧的眼神。涅赫贝特却是一副无所谓的样子，自顾自安排起人手。",
-		id = 321022050
-	},
-	[321022051] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "啊……哈……",
-		id = 321022051
-	},
-	[321022052] = {
-		speaker = "",
-		prefab_name = "",
-		content = "水滴声在窄小的维修间里来回冲撞，吓得奥蒂斯全身抖了抖。他扶着墙壁慢慢站起来，盯着终端上在密室中忙碌的科尔盖技术员，关掉了监控画面。",
-		id = 321022052
-	},
-	[321022053] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "……还好没从传送装置逃走。",
-		id = 321022053
-	},
-	[321022054] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "该死的科尔盖，连这种地方都要追过来，就没别的事可做了吗？！",
-		id = 321022054
-	},
-	[321022055] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "可惜实验室里的那么多样本，这样就做不了三期实验了……",
-		id = 321022055
-	},
-	[321022056] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "但是没关系，会成功的，伊丽莎白，我的伊丽莎白……我会成功的……",
-		id = 321022056
-	},
-	[321022057] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奥蒂斯从口袋里掏出一块怀表，呆滞地抚摸着藏在翻盖内侧的照片，表情却渐渐变得愤怒，将怀表塞回口袋，又掏出一块圆形徽章。",
-		id = 321022057
-	},
-	[321022058] = {
-		speaker = "",
-		prefab_name = "",
-		content = "徽章闪烁着墨蓝色的光芒，他擦拭了几下，将徽记贴到耳边。",
-		id = 321022058
-	},
-	[321022059] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "你们到底能不能听到？之前派过来的杂碎全死完了，根本拦不住修正者！",
-		id = 321022059
-	},
-	[321022060] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "我要是被抓了，能有你们的好果子吃？老地方，赶紧过来帮我！",
-		id = 321022060
-	},
-	[321022061] = {
-		speaker = "",
-		prefab_name = "",
-		content = "徽章上的光芒稳定得让人绝望，奥蒂斯等了一分钟还是没听到回应，他悻悻地将徽章塞回兜里，踉跄着打开维修间的门。",
-		id = 321022061
-	},
-	[321022062] = {
-		speaker = "",
-		prefab_name = "",
-		content = "小心地往维护通道里探了一眼，没看到人，奥蒂斯轻手轻脚地关上门，可刚转过身，耳边就传来一阵锐利的风声。",
-		id = 321022062
-	},
-	[321022063] = {
-		speaker = "（选项一）",
-		prefab_name = "",
-		content = "风水轮流转！",
-		id = 321022063
-	},
-	[321022064] = {
-		speaker = "",
-		prefab_name = "",
-		content = "邦——",
-		id = 321022064
-	},
-	[321031001] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "唔……唔？唔！！！",
-		id = 321031001
-	},
-	[321031002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奥蒂斯睁开眼，仿佛从一片黑暗来到另一片黑暗。将自己捆在椅子上的绳索以及封口的胶带让他第一时间意识到了眼下的处境，开始疯狂挣扎起来。",
-		id = 321031002
-	},
-	[321031003] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "奥蒂斯。",
-		id = 321031003
-	},
-	[321031004] = {
-		speaker = "",
-		prefab_name = "",
-		content = "听到黑暗中的声音，奥蒂斯愣住了，喉咙中发出的含混叫声也停了下来。",
-		id = 321031004
-	},
-	[321031005] = {
-		speaker = "",
-		prefab_name = "",
-		content = "嘴上的胶带被一股无形的力量扯下，奥蒂斯的身体抖了抖，心中仅存的疑虑也被打消，毕竟他对这种阴森扭曲的气息再熟悉不过了。",
-		id = 321031005
-	},
-	[321031006] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "巴钦……我这是在哪儿？",
-		id = 321031006
-	},
-	[321031007] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "你向科尔盖透露了什么？",
-		id = 321031007
-	},
-	[321031008] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "什么……我能透露什么？我跟科尔盖有什么可说的？",
-		id = 321031008
-	},
-	[321031009] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "难说。你以前为科尔盖工作，他们了解你，知道该怎么撬开你的嘴。",
-		id = 321031009
-	},
-	[321031010] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "科尔盖还没抓到我，要怎么撬开……",
-		id = 321031010
-	},
-	[321031011] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奥蒂斯嗤笑一声，可后脑勺的隐痛又很快让他意识到了问题所在。",
-		id = 321031011
-	},
-	[321031012] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "等等，我只记得我从下水道的维修间出来，然后被人敲晕了……",
-		id = 321031012
-	},
-	[321031013] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "是科尔盖的埋伏。在我把你救回来之前，你和他们一起待了五个小时。",
-		id = 321031013
-	},
-	[321031014] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "五个小时，足够你把所有事情向他们坦白了。",
-		id = 321031014
-	},
-	[321031015] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "不不不，我什么都不记得……我就没醒过。一个昏迷的人要怎么说话……",
-		id = 321031015
-	},
-	[321031016] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "我是说……想想吧，背叛你们对我有什么好处？他们会帮我复活伊丽莎白吗？！",
-		id = 321031016
-	},
-	[321031017] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "科尔盖已经开始针对我们的计划了，我该怎么相信你？",
-		id = 321031017
-	},
-	[321031018] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "计划？哪个计划？",
-		id = 321031018
-	},
-	[321031019] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "……听说你和一位名叫「伊里伽尔」的修正者有过接触。你再想想，她有没有可能从你这里知道什么。",
-		id = 321031019
-	},
-	[321031020] = {
-		speaker = "",
-		prefab_name = "",
-		content = "被这么一问，奥蒂斯也变得犹疑起来，眼神闪烁着，仔细想了很久，才慢慢摇了摇头。",
-		id = 321031020
-	},
-	[321031021] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "不可能，绝对不可能。",
-		id = 321031021
-	},
-	[321031022] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "那间实验室里只有灵魂补完的资料。天灾种那些事，他们一个字都不可能查到。",
-		id = 321031022
-	},
-	[321031023] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "天灾种……",
-		id = 321031023
-	},
-	[321031024] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "天灾种，怎么了？",
-		id = 321031024
-	},
-	[321031025] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "开灯。",
-		id = 321031025
-	},
-	[321031026] = {
-		speaker = "",
-		prefab_name = "",
-		content = "在奥蒂斯呆滞的目光中，审讯室四周的灯带依次亮起，门窗边的遮光屏障也被撤去，一群人涌入屋内，不怀好意地将他围在中间。",
-		id = 321031026
-	},
-	[321031027] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "你们……刚才不是……",
-		id = 321031027
-	},
-	[321031028] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "变声器加上模拟的骸能环境而已。",
-		id = 321031028
-	},
-	[321031029] = {
-		speaker = "",
-		prefab_name = "",
-		content = "涅赫贝特摘掉领口佩戴的麦克风，递给看守审讯室的科尔盖特工，那副漫不经心的样子看得奥蒂斯咬牙切齿。",
-		id = 321031029
-	},
-	[321031030] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "手段还是这么下作。我就是死也不会再替你们做事了，科尔盖！",
-		id = 321031030
-	},
-	[321031031] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "就算不谈你在这里的罪行，光凭暮下区那场骸震，你就活不了。",
-		id = 321031031
-	},
-	[321031032] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "哈哈哈，我该偿命，那你们呢？科尔盖弄出的人命还少吗？",
-		id = 321031032
-	},
-	[321031033] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "害死伊丽莎白，你们有一个人为我难过了一秒吗？",
-		id = 321031033
-	},
-	[321031034] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "没有！你们只知道那个该死的审查流程，计较每个人该为实验室的事故负多少责任。",
-		id = 321031034
-	},
-	[321031035] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "你妻子死于意外车祸，事故追责是必要流程。我不想和你扯那些陈年旧事。",
-		id = 321031035
-	},
-	[321031036] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "不要觉得这样就能——",
-		id = 321031036
-	},
-	[321031037] = {
-		speaker = "",
-		prefab_name = "",
-		content = "涅赫贝特劈手夺过我手中的甩棍，如同刺剑般精准地戳在奥蒂斯胸腹交界处的膈肌上。",
-		id = 321031037
-	},
-	[321031038] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奥蒂斯只觉得呼吸一滞，痛苦地想要蜷起身子，可身体又被困在椅子上动弹不得，脸色憋得发青。",
-		id = 321031038
-	},
-	[321031039] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "你是打算用实话换一个蹲进监狱的机会，还是等我「帮」你说，然后看看智骸会怎么处置你这个泄密的叛徒。",
-		id = 321031039
-	},
-	[321031040] = {
-		speaker = "奥蒂斯",
-		prefab_name = "",
-		content = "……",
-		id = 321031040
-	},
-	[321031041] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "帮你起个头，「天灾种」。",
-		id = 321031041
-	},
-	[321031042] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10102ui_story",
-		content = "……涅赫贝特主任，他说的都是真的吗？",
-		id = 321031042
-	},
-	[321031043] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "等人到齐再一起聊。",
-		id = 321031043
-	},
-	[321031044] = {
-		speaker = "",
-		prefab_name = "",
-		content = "涅赫贝特摆了摆手，将甩棍还给我，一边走向办公桌。",
-		id = 321031044
-	},
-	[321031045] = {
-		speaker = "",
-		prefab_name = "",
-		content = "这间办公室是科尔盖分部临时安排给涅赫贝特的，看得出来她没有待人接客的习惯，让我们在沙发上落座以后，就自顾自地忙碌起来。",
-		id = 321031045
-	},
-	[321031046] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我把甩棍放回背包里，抬起头时发现薇儿和奥西里斯正好奇地盯着我。",
-		id = 321031046
-	},
-	[321031047] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "怎么了？",
-		id = 321031047
-	},
-	[321031048] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10102ui_story",
-		content = "你就是用这个把奥蒂斯敲晕的吗？",
-		id = 321031048
-	},
-	[321031049] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "是啊，照着后脑勺，打准包晕的。",
-		id = 321031049
-	},
-	[321031050] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "可是太用力会出人命的吧……虽然管理员的格斗技术很好……",
-		id = 321031050
-	},
-	[321031051] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "唔，我是想说，为什么不用电击枪或者麻醉针之类的东西呢？",
-		id = 321031051
-	},
-	[321031052] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……是啊，哈哈，为什么呢？可能一下子没想到就随便拿点趁手的东西将就了吧。",
-		id = 321031052
-	},
-	[321031053] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我抬手擦了擦冷汗，心想着总不能说「因为以前被人敲过闷棍所以想找个人敲回去」吧，肯定会被嫌弃的吧……",
-		id = 321031053
-	},
-	[321031054] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10102ui_story",
-		content = "说起来，你和涅赫贝特主任为什么知道他藏在下水道里？还不告诉我们。",
-		id = 321031054
-	},
-	[321031055] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "因为进门之前我们就发现，房间里的监控系统有一条向外传输的信道正在工作，信号末端就在下水道范围内。",
-		id = 321031055
-	},
-	[321031056] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "奥蒂斯的电脑里没留下任何东西，无论是带走了还是销毁了，显然是不想让我们抓到尾巴。那为什么还要留一条可能暴露自己的监控呢？",
-		id = 321031056
-	},
-	[321031057] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "唯一的解释就是有人需要盯着我们的动向，而且这个人不知道或者不在乎我们会顺着监控反追踪。",
-		id = 321031057
-	},
-	[321031058] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "就智骸的藏匿水平，我们不认为它们会犯这种低级错误，而换成奥蒂斯就合理很多了。",
-		id = 321031058
-	},
-	[321031059] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "所以最有可能的情况，就是奥蒂斯并没有跑远，凭他两条腿也跑不了多远就是了……附近能藏身的地方只有那条下水道。",
-		id = 321031059
-	},
-	[321031060] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10102ui_story",
-		content = "那为什么不直接一起去下水道找他呢？我们这么多人，很快就能把他找出来吧？",
-		id = 321031060
-	},
-	[321031061] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "狗急跳墙。他和智骸合作，没人知道他有没有后手。",
-		id = 321031061
-	},
-	[321031062] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "他在实验室里留了一些视骸，就是为了混淆我们的视听，想趁我们把注意力放在实验室上的时候逃跑。",
-		id = 321031062
-	},
-	[321031063] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "所以你们的管理员要求独自留下，让我和其他特工都在实验室的监控里露面。对奥蒂斯来说，这肯定是个千载难逢的好机会。",
-		id = 321031063
-	},
-	[321031064] = {
-		speaker = "？？？",
-		prefab_name = "",
-		content = "哈哈哈，瞧瞧我错过了什么？",
-		id = 321031064
-	},
-	[321031065] = {
-		speaker = "",
-		prefab_name = "",
-		content = "就在薇儿和奥西里斯终于有些明白过来的时候，房门忽然被人推开，一道身影大步流星走进来坐到我对面，朝我伸出手。",
-		id = 321031065
-	},
-	[321031066] = {
-		speaker = "萨穆雅",
-		prefab_name = "",
-		content = "这座分部的负责人，萨穆雅。这段时间经常听到你的大名啊，#{nickname}#。",
-		id = 321031066
-	},
-	[321031067] = {
-		speaker = "（选项）",
-		prefab_name = "",
-		content = "幸会",
-		id = 321031067
-	},
-	[321031068] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "闲聊以后有的是机会，说正事吧。",
-		id = 321031068
-	},
-	[321031069] = {
-		speaker = "",
-		prefab_name = "",
-		content = "涅赫贝特走到我们边上，打开茶几自带的全息投影仪，几十份文档在我们面前平铺开来。",
-		id = 321031069
-	},
-	[321031070] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "深空之眼手里有天灾种的情报吗？",
-		id = 321031070
-	},
-	[321031071] = {
-		speaker = "（选项一）",
-		prefab_name = "",
-		content = "没听说过",
-		id = 321031071
-	},
-	[321031072] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "那我简单说明一下。",
-		id = 321031072
-	},
-	[321031073] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "天灾种也算视骸的一种，出现必然伴随着各种自然灾祸，个体实力也非常强大，单说破坏力，比起一些智骸更强。",
-		id = 321031073
-	},
-	[321031074] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "比智种还强吗？可为什么……",
-		id = 321031074
-	},
-	[321031075] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "如果你想问的是为什么你从来没听说过。没事，这对你们不算机密，单纯只是因为天灾种在这个纪元还没出现过。",
-		id = 321031075
-	},
-	[321031076] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "第一例天灾种的记录是在上个纪元末，之后的五十年里它们频繁出现直到盖亚重启。",
-		id = 321031076
-	},
-	[321031077] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "每次讨伐天灾种的行动都是几十名修正者和上万人部队参与的重大战役。但即便消灭了目标，剩下的也只是废墟了……",
-		id = 321031077
-	},
-	[321031078] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "你们应该都听说过约库尔的冰原，那就是上个纪元重启前的最后一年，在约库尔和「尼德霍格」会战留下的遗迹。",
-		id = 321031078
-	},
-	[321031079] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "详情可以去问问你们老板，最后是她杀了尼德霍格，一个人走出了冰原。没人知道发生了什么，她从来没提起这件事。",
-		id = 321031079
-	},
-	[321031080] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10102ui_story",
-		content = "奥丁前辈也没和我们说过……",
-		id = 321031080
-	},
-	[321031081] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "如果她有她的顾虑，我想我们也不方便去问。",
-		id = 321031081
-	},
-	[321031082] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "抱歉，我没有打探的意思。",
-		id = 321031082
-	},
-	[321031083] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "公正地说，如果没有奥丁，恐怕这个纪元就不存在了。她值得所有人的尊重。",
-		id = 321031083
-	},
-	[321031084] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "什么叫「这个纪元就不存在了」？",
-		id = 321031084
-	},
-	[321031085] = {
-		speaker = "萨穆雅",
-		prefab_name = "",
-		content = "这就和天灾种的特性有关了。每次天灾种出现，必然伴随着盖亚某个系统的失效。",
-		id = 321031085
-	},
-	[321031086] = {
-		speaker = "萨穆雅",
-		prefab_name = "",
-		content = "这些系统有些很重要，比如虚拟恒星系统、原质区地质系统。有的影响相对比较小，比如极端天气限制系统、生物变异限制系统。",
-		id = 321031086
-	},
-	[321031087] = {
-		speaker = "萨穆雅",
-		prefab_name = "",
-		content = "天灾种被消灭后，这些失效的系统有时会自主修复，有的不会，需要动用一些我们掌握的特殊权限想办法人为修复。",
-		id = 321031087
-	},
-	[321031088] = {
-		speaker = "萨穆雅",
-		prefab_name = "",
-		content = "虽然不知道确切原因，但尼德霍格出现后，盖亚的重启功能连同依托比尔轴的测算一起失效了……直到尼德霍格死亡才恢复正常。",
-		id = 321031088
-	},
-	[321031089] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我与两位同伴相顾骇然。其实一直以来我们对深空之眼第九部门几乎与科尔盖平行的地位都有些疑惑，毕竟科尔盖名义上对修正者组织是有管辖权的。",
-		id = 321031089
-	},
-	[321031090] = {
-		speaker = "",
-		prefab_name = "",
-		content = "原本以为只是因为我们和四方院、弥楼衍一样有原初修正者坐镇，现在却有了一个更具备说服力的解释。",
-		id = 321031090
-	},
-	[321031091] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "关于天灾种的严重性，说到这里感觉已经够多了。",
-		id = 321031091
-	},
-	[321031092] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "按奥蒂斯的说法，智骸是想让某只天灾种重新现世，他的灵魂补完技术就是「复活」天灾种的步骤之一。",
-		id = 321031092
-	},
-	[321031093] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "「重新」。",
-		id = 321031093
-	},
-	[321031094] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "是的，你抓住了重点。",
-		id = 321031094
-	},
-	[321031095] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "虽然奥蒂斯不知道智骸具体的计划，但至少帮我们把目标锁定在了曾经出现过的天灾种上。",
-		id = 321031095
-	},
-	[321031096] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "这段时间科研中心会详细研究所有关于天灾种的记录，找出最有可能被复活的个体。萨穆雅分部长会对夏什瓦特所有城市展开大规模排查。",
-		id = 321031096
-	},
-	[321031097] = {
-		speaker = "萨穆雅",
-		prefab_name = "",
-		content = "大海捞针也总比什么都不做强。",
-		id = 321031097
-	},
-	[321031098] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "情况就是这么不乐观，同时我们也要做好正面迎战的准备……",
-		id = 321031098
-	},
-	[321031099] = {
-		speaker = "",
-		prefab_name = "",
-		content = "涅赫贝特在萨穆雅旁边坐下，一脸严肃地看着我。",
-		id = 321031099
-	},
-	[321031100] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "所以，哪怕和弥楼衍有过互不干涉的协议，现在也不是互相使绊子的时候了。",
-		id = 321031100
-	},
-	[321031101] = {
-		speaker = "涅赫贝特",
-		prefab_name = "10104ui_story",
-		content = "告诉我，梵天去哪儿了？",
-		id = 321031101
-	},
-	[321041001] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "……再来一次。",
-		id = 321041001
-	},
-	[321041002] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奥西里斯抹了把额前细密的汗珠，舔湿有些发干的嘴唇，重新握紧手中的镰刀，开始引导神能注入其中。",
-		id = 321041002
-	},
-	[321041003] = {
-		speaker = "",
-		prefab_name = "",
-		content = "然而镰刀就像一座无底的深潭，奥西里斯注入的所有神能如同石沉大海，没能让它产生丝毫反应。",
-		id = 321041003
-	},
-	[321041004] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "拜托了……能不能……",
-		id = 321041004
-	},
-	[321041005] = {
-		speaker = "",
-		prefab_name = "",
-		content = "最后一点神能离开身体，房间里一片死寂。",
-		id = 321041005
-	},
-	[321041006] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奥西里斯的眼神渐渐变得绝望，她想转过身和我们说些什么，却胳膊一软，镰刀脱手重重砸在地上。",
-		id = 321041006
-	},
-	[321041007] = {
-		speaker = "",
-		prefab_name = "",
-		content = "薇儿连忙上去扶住她，才发现她全身都已经被汗水打湿了。连续将神能逼到临近枯竭的地步，对修正者的消耗无疑是巨大的。",
-		id = 321041007
-	},
-	[321041008] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10102ui_story",
-		content = "小奥西里斯……",
-		id = 321041008
-	},
-	[321041009] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "我没事，薇儿姐姐。",
-		id = 321041009
-	},
-	[321041010] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "感觉我现在可以使用的神能要比以前多了，还在慢慢变多，休息一会儿再试试。",
-		id = 321041010
-	},
-	[321041011] = {
-		speaker = "（选项一）",
-		prefab_name = "",
-		content = "你已经尽力了",
-		id = 321041011
-	},
-	[321041012] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我在她旁边坐下，握住她的手，轻轻拍了拍她的手背，然后神情凝重地看着地上的权钥。",
-		id = 321041012
-	},
-	[321041013] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "本来就只是我的猜测，觉得这是现在为数不多和冥王有关联的东西，也许可以通过它感应到冥王的位置。",
-		id = 321041013
-	},
-	[321041014] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "但说到底没有根据，世上也很难有这么理所当然的事。",
-		id = 321041014
-	},
-	[321041015] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我从背包里取出一只印有科尔盖标志的盒子，放在奥西里斯面前。",
-		id = 321041015
-	},
-	[321041016] = {
-		speaker = "",
-		prefab_name = "",
-		content = "打开盒子，奥西里斯看到里面的东西，眼神渐渐变得清澈，但很快又自责地黯了下去。",
-		id = 321041016
-	},
-	[321041017] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "冥王的剑翼，为了保护我才被打碎的……",
-		id = 321041017
-	},
-	[321041018] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……科尔盖打扫生命科技大楼的时候只找到了这几片，你拿着吧。",
-		id = 321041018
-	},
-	[321041019] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "至少算个念想，说不定还是找到冥王的契机呢？",
-		id = 321041019
-	},
-	[321041020] = {
-		speaker = "",
-		prefab_name = "",
-		content = "奥西里斯点点头，小心地捧起盒子。那曾经在冥王背后耀武扬威的剑翼，如今却成了一滩破碎黯淡的碎片。",
-		id = 321041020
-	},
-	[321041021] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我能感觉到奥西里斯有些害怕，三天前和巴钦的那一战给她留下的阴影实在太重，虽然我相信她不是会就此消沉下去的性格，但再坚强的人也需要时间。",
-		id = 321041021
-	},
-	[321041022] = {
-		speaker = "",
-		prefab_name = "",
-		content = "她从盒子里取出一枚碎片，然后收好盒子。我以为她要把这枚碎片带在身上，没想到她伸手递给了我。",
-		id = 321041022
-	},
-	[321041023] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "管理员，你也拿一个吧。",
-		id = 321041023
-	},
-	[321041024] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "你认识很多人，也总能想出各种各样的办法。如果这是找到冥王的线索，你随身带一个会比较方便。",
-		id = 321041024
-	},
-	[321041025] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "……而且，我猜，你应该和我一样很想念冥王吧……",
-		id = 321041025
-	},
-	[321041026] = {
-		speaker = "",
-		prefab_name = "",
-		content = "对奥西里斯的说法实在无从反驳，我接过碎片，忍不住怜爱地摸了摸她的脑袋。",
-		id = 321041026
-	},
-	[321041027] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "不用太着急，各方都在想办法了。",
-		id = 321041027
-	},
-	[321041028] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "生命科技的克洛尔女士说了一些关于奥蒂斯的线索，弥楼衍帮忙找了个「侦探」，过两天整理好线索去调查。",
-		id = 321041028
-	},
-	[321041029] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "侦探？",
-		id = 321041029
-	},
-	[321041030] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "还记得陪洛肯和诗蔻蒂出去玩那天，最后来接她们的人吗？",
-		id = 321041030
-	},
-	[321041031] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "哦，那位酷酷的伊里伽尔姐姐。",
-		id = 321041031
-	},
-	[321041032] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "嗯。只要找到奥蒂斯，顺藤摸瓜把智骸揪出来的机会就很大了，到时候自然会知道冥王的去向。",
-		id = 321041032
-	},
-	[321041033] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "可以和我们一起行动吗，奥西里斯？",
-		id = 321041033
-	},
-	[321041034] = {
-		speaker = "",
-		prefab_name = "",
-		content = "接到命令后下意识地挺直了身体，奥西里斯看着我，眼神中慢慢有了拾回目标的神采。",
-		id = 321041034
-	},
-	[321041035] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "我会继续努力的。",
-		id = 321041035
-	},
-	[321041036] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "这才对嘛~遇到麻烦就要笑着应付，不然笑容就要转移到那些找你麻烦的人脸上啦。",
-		id = 321041036
-	},
-	[321041037] = {
-		speaker = "",
-		prefab_name = "",
-		content = "念叨完这么一长串，梵天才装模作样地敲了敲门，也没等我们说「请进」，就跳进来像只树懒一样挂到我背上。",
-		id = 321041037
-	},
-	[321041038] = {
-		speaker = "薇儿丹蒂&奥西里斯",
-		prefab_name = "",
-		content = "……",
-		id = 321041038
-	},
-	[321041039] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "喂……",
-		id = 321041039
-	},
-	[321041040] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "嘻嘻，害羞啦~害羞就换个地方呗。",
-		id = 321041040
-	},
-	[321041041] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我知道她这是有事要和我私下商量，如果拿不出合理的拒绝理由，越抗拒只会被戏弄得越狼狈，只好举手投降。",
-		id = 321041041
-	},
-	[321041042] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "哪里方便？",
-		id = 321041042
-	},
-	[321041043] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "不是什么要紧事，天台就行了。",
-		id = 321041043
-	},
-	[321041044] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "小红小绿，人我借走啦，一会儿就还给你们~",
-		id = 321041044
-	},
-	[321041045] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我翻了个白眼，背着梵天站起来，走向门外。",
-		id = 321041045
-	},
-	[321041046] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "那个……你们看看晚上想吃什么，一起去吧，放松一下。",
-		id = 321041046
-	},
-	[321041047] = {
-		speaker = "",
-		prefab_name = "",
-		content = "回头看到薇儿和奥西里斯无奈的眼神，我尴尬地笑了笑，闷头加快了脚步。",
-		id = 321041047
-	},
-	[321041048] = {
-		speaker = "薇儿丹蒂",
-		prefab_name = "10102ui_story",
-		content = "梵天前辈这几天找管理员是不是有点频繁？到底有什么事啊？",
-		id = 321041048
-	},
-	[321041049] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "应该不能随便说吧，管理员还让我们不要告诉科尔盖，应该是公事。",
-		id = 321041049
-	},
-	[321041050] = {
-		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
-		content = "但我也感觉梵天前辈太热情了，就好像……这要怎么说……",
-		id = 321041050
-	},
-	[321041051] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "我抗议。",
-		id = 321041051
-	},
-	[321041052] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "抗议什么？",
-		id = 321041052
-	},
-	[321041053] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我半蹲下来把梵天放到地上，她依然笑嘻嘻地抬头看着我。",
-		id = 321041053
-	},
-	[321041054] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "就算这是你的地盘，你也不能随便跑进来做一些会让人误会的事啊。",
-		id = 321041054
-	},
-	[321041055] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "那种情况，我还要干巴巴地敲门然后跟你说有事找你嘛？那我不成了找人聊工作都不看气氛的无良上司了？",
-		id = 321041055
-	},
-	[321041056] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "所以你觉得从「难过」变成「尴尬」算是调节气氛。",
-		id = 321041056
-	},
-	[321041057] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "啊呀，和我亲热原来会让你觉得尴尬吗？",
-		id = 321041057
-	},
-	[321041058] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我知道我的表情肯定要抓狂了，却被她伸出手一顿狂搓，愣是没把对她蛮不讲理的愤怒表达出来。而她接下来的话也让我收起了和她开玩笑的心态。",
-		id = 321041058
-	},
-	[321041059] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "再说，道别的时候热情一点也没什么吧？",
-		id = 321041059
-	},
-	[321041060] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你……你要「出发」了？",
-		id = 321041060
-	},
-	[321041061] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "小龟龟帮我做完了认证，趁着现在还算风平浪静，干等着也是浪费时间。",
-		id = 321041061
-	},
-	[321041062] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "放心，我帮你留了一次机会，不会让你白跑一趟。",
-		id = 321041062
-	},
-	[321041063] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "留了一次？那你的权能——",
-		id = 321041063
-	},
-	[321041064] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "一丁点损耗而已。都是「共犯」了，我会跟你计较这个吗？还是说你心疼我了？",
-		id = 321041064
-	},
-	[321041065] = {
-		speaker = "",
-		prefab_name = "",
-		content = "梵天侧过身，闪电般地在我的额头上轻弹一下，随后笑眯眯地缩回去，用眼神不断确认我的表情。",
-		id = 321041065
-	},
-	[321041066] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……就算有一些风险评估上的分歧，但你毕竟为「净土」准备了这么多年，我确实不想看到你因为和我相关的原因失败。",
-		id = 321041066
-	},
-	[321041067] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "又开始假正经……担心我就早点回去陪我嘛。",
-		id = 321041067
-	},
-	[321041068] = {
-		speaker = "",
-		prefab_name = "",
-		content = "梵天不轻不重地捶了我一下，丢给我一个长得和她权钥差不多的小物件，然后踮着脚趴到旁边的栏杆上。",
-		id = 321041068
-	},
-	[321041069] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "你和我一样，都很清楚自己想要什么，不会被身边的人影响。",
-		id = 321041069
-	},
-	[321041070] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "如果换成其他人，伽梨啊，俱毗罗啊，肯定已经开始唠叨了吧……帕瓦除外，她就是懒。",
-		id = 321041070
-	},
-	[321041071] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "所以我很喜欢跟你待在一块儿，就算知道对方的秘密也不会越界，可以不用摆着臭架子，可以不用担心说漏嘴……",
-		id = 321041071
-	},
-	[321041072] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "所以，也希望你能成功，还有机会陪我一起聊天啊，#{nickname}#。",
-		id = 321041072
-	},
-	[321041073] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这可真是一段就算把录音拿出去给别人听都不知道在说什么的心里话。",
-		id = 321041073
-	},
-	[321041074] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "嘻嘻，这不就是我们之间的默契嘛。",
-		id = 321041074
-	},
-	[321041075] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "你不打算解释一下这是什么吗？",
-		id = 321041075
-	},
-	[321041076] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我晃了晃手里的「微型权钥」，金色的球体表面还画着梵天做鬼脸的笑容。",
-		id = 321041076
-	},
-	[321041077] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "我好歹是弥楼衍的老大好吧？总不能真把你们丢在这儿不管。",
-		id = 321041077
-	},
-	[321041078] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "虽然现在一大帮人围在基维塔巴打牌，很难想象能出什么乱子，但如果真遇上什么搞不定的事，我又还没回来，就拿这个联系我。",
-		id = 321041078
-	},
-	[321041079] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "……怎么用啊？",
-		id = 321041079
-	},
-	[321041080] = {
-		speaker = "梵天",
-		prefab_name = "1020ui_story",
-		content = "问执明咯。",
-		id = 321041080
-	},
-	[321051001] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "今天几月几号。",
-		id = 321051001
-	},
-	[321051002] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "十月三号。",
-		id = 321051002
-	},
-	[321051003] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "梵天哪天走的？",
-		id = 321051003
-	},
-	[321051004] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "九……九月三十。",
-		id = 321051004
-	},
-	[321051005] = {
-		speaker = "",
-		prefab_name = "",
-		content = "执明伸出三根手指在我面前晃了晃，像是要把我催眠似的，然后又低头翻起了终端上冗长的报告。",
-		id = 321051005
-	},
-	[321051006] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "她回去才三天，你就问我该怎么把她叫回来？第一纪元的情况没有任何参考，三天够她干什么？",
-		id = 321051006
-	},
-	[321051007] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "天灾种可能确实属于我们「搞不定的事」了……我没说现在就叫她回来，就问问这东西怎么用。",
-		id = 321051007
-	},
-	[321051008] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "说明书发你了。",
-		id = 321051008
-	},
-	[321051009] = {
-		speaker = "",
-		prefab_name = "",
-		content = "她飞快地切了一下屏幕，我的终端弹出一条消息通知。我倒没急着看，执明出品的可读性还是有保证的。",
-		id = 321051009
-	},
-	[321051010] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "用不着大惊小怪，天灾种的情况庚辰跟我说过。科尔盖在这上面吃了大亏，对天灾种的研究现在一直是他们的重点课题。",
-		id = 321051010
-	},
-	[321051011] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "别看他们一个个紧张兮兮的，如果科研中心拿不出一点应付的办法，我去把他们实验室拆了算了。",
-		id = 321051011
-	},
-	[321051012] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "怎么你连这都知道？",
-		id = 321051012
-	},
-	[321051013] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "这又不是什么……哦，明白了。",
-		id = 321051013
-	},
-	[321051014] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "奥丁把你们保护得太好了，不想让你们惦记这种远在天边的麻烦。",
-		id = 321051014
-	},
-	[321051015] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "但现在麻烦到眼前了，你要是问她，我想她也会说的。",
-		id = 321051015
-	},
-	[321051016] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "问题就是她去约库尔了，联系不上啊……",
-		id = 321051016
-	},
-	[321051017] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "这么对比，梵天倒还算贴心了，至少知道留个联系方式。",
-		id = 321051017
-	},
-	[321051018] = {
-		speaker = "",
-		prefab_name = "",
-		content = "把玩了一会儿梵天留给我的联络装置，我还是收起了使用它的打算，毕竟单看执明的反应就能知道，这不是像终端通讯那样可以随便使用的东西。",
-		id = 321051018
-	},
-	[321051019] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "如果我理解的没错，你和梵天的合作应该已经结束了？还在忙什么呢？",
-		id = 321051019
-	},
-	[321051020] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "我已经一整个月没看四方院和天理阁的报告了。",
-		id = 321051020
-	},
-	[321051021] = {
-		speaker = "执明",
-		prefab_name = "1061ui_story",
-		content = "你呢？现在也不用每天早上跑过来探班了，今天又有什么安排？",
-		id = 321051021
-	},
-	[321051022] = {
-		speaker = "",
-		prefab_name = "",
-		content = "琥珀色的液体从瓶口落进杯中，沿着杯壁一圈圈摇晃，散发出醇厚的麦香。",
-		id = 321051022
-	},
-	[321051023] = {
-		speaker = "",
-		prefab_name = "",
-		content = "坐在我对面的人微微欠身，将其中一只杯子推到我面前，饶有兴味地打量着我的表情。",
-		id = 321051023
-	},
-	[321051024] = {
-		speaker = "马尔杜克",
-		prefab_name = "1052ui_story",
-		content = "知道我在这里的人说起来不算少，但主动约我见面的，你还是第一个。",
-		id = 321051024
-	},
-	[321051025] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "不管是出于好奇还是公事，难得来一趟，不认识一下就太可惜了。",
-		id = 321051025
-	},
-	[321051026] = {
-		speaker = "马尔杜克",
-		prefab_name = "1052ui_story",
-		content = "是这个道理，出门在外，朋友不嫌多。",
-		id = 321051026
-	},
-	[321051027] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "所以这家珍酿馆算是……把你的帮会丢给伊里伽尔，自己过上退休生活了？",
-		id = 321051027
-	},
-	[321051028] = {
-		speaker = "马尔杜克",
-		prefab_name = "1052ui_story",
-		content = "我要说「是」呢。",
-		id = 321051028
-	},
-	[321051029] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "那你就不会见我。我还挺能惹麻烦的。",
-		id = 321051029
-	},
-	[321051030] = {
-		speaker = "",
-		prefab_name = "",
-		content = "马尔杜克大笑着和我碰了个杯，互相举起空杯致意。小馆里的其他人，无论客人还是店员，都对我们视若无睹。",
-		id = 321051030
-	},
-	[321051031] = {
-		speaker = "马尔杜克",
-		prefab_name = "1052ui_story",
-		content = "修正者哪有什么退休的日子？不老不死意味着肩上的责任也会永远跟着你。",
-		id = 321051031
-	},
-	[321051032] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "方便说吗？",
-		id = 321051032
-	},
-	[321051033] = {
-		speaker = "马尔杜克",
-		prefab_name = "1052ui_story",
-		content = "说实话，不方便。但既然你没带着科尔盖的人过来，以后总会有方便的时候。",
-		id = 321051033
-	},
-	[321051034] = {
-		speaker = "马尔杜克",
-		prefab_name = "1052ui_story",
-		content = "所以，说吧，你的「公事」是什么？",
-		id = 321051034
-	},
-	[321051035] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "只是提供一条情报。要怎么做，我相信你有你的判断。",
-		id = 321051035
-	},
-	[321051036] = {
-		speaker = "",
-		prefab_name = "",
-		content = "我把天灾种以及科尔盖开展调查的情况大致说了一遍，这位科尔盖前高官显然对我谈及的内容并非全无了解。",
-		id = 321051036
-	},
-	[321051037] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "作为深空之眼第九部门的管理员，我希望能联合足够多的力量应对可能到来的危机。但作为朋友，我支持你作出对自己更有利的选择。",
-		id = 321051037
-	},
-	[321051038] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "而且我并不清楚以科尔盖的标准来说，你们的矛盾有多严重。如果可能导致内部声音不一致，我想人数也不是越多越好。",
-		id = 321051038
-	},
-	[321051039] = {
-		speaker = "",
-		prefab_name = "",
-		content = "马尔杜克点点头，沉默着给我们续了一杯。我也不着急听他的口头答复，怎么说怎么做，没人能强迫他。",
-		id = 321051039
-	},
-	[321051040] = {
-		speaker = "马尔杜克",
-		prefab_name = "1052ui_story",
-		content = "这算一件事。还有吗？",
-		id = 321051040
-	},
-	[321051041] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "还有，就是私人委托了。",
-		id = 321051041
-	},
-	[321051042] = {
-		speaker = "奈提",
-		prefab_name = "",
-		content = "马克马克，马克马克~",
-		id = 321051042
-	},
-	[321051043] = {
-		speaker = "",
-		prefab_name = "",
-		content = "当我跟着马尔杜克走进阿卡德公会的会客室时，桌上已经摆好了三杯奶茶。",
-		id = 321051043
-	},
-	[321051044] = {
-		speaker = "",
-		prefab_name = "",
-		content = "伊里伽尔放下怀中抱着的长毛猫，任它缩进沙发下面，向我比出一个请坐的手势。奈提站在伊里伽尔的肩头，歪着小脑袋好奇地打量着我。",
-		id = 321051044
-	},
-	[321051045] = {
-		speaker = "我",
-		prefab_name = "",
-		content = "光听脚步声就知道是我了？",
-		id = 321051045
-	},
-	[321051046] = {
-		speaker = "伊里伽尔",
-		prefab_name = "1043ui_story",
-		content = "不止，风带来了你的气息。还有你思考时灵魂火光闪烁的样子，很特别。",
-		id = 321051046
 	}
 }

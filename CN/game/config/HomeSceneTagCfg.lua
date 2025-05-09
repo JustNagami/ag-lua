@@ -47,6 +47,24 @@
 		tag_icon = "scenechange_icon_03",
 		tag_desc = "昼夜变化"
 	},
+	[109] = {
+		id = 109,
+		tag_detail = "深空之眼为管理员准备的电竞娱乐房，此前由于工作繁忙未经常使用，现如今梵天已成为这里的常客。",
+		tag_icon = "scenechange_icon_04",
+		tag_desc = "全新景观"
+	},
+	[110] = {
+		id = 110,
+		tag_detail = "换装「无间玩伴」在场景中拥有特殊的语音和交互动作。",
+		tag_icon = "scenechange_icon_02",
+		tag_desc = "特殊交互"
+	},
+	[111] = {
+		id = 111,
+		tag_detail = "换装「无间玩伴」在场景中可开启互动对战游戏。",
+		tag_icon = "scenechange_icon_05",
+		tag_desc = "互动游戏"
+	},
 	all = {
 		101,
 		102,
@@ -55,6 +73,9 @@
 		105,
 		106,
 		107,
-		108
+		108,
+		109,
+		110,
+		111
 	}
 }

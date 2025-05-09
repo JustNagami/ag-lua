@@ -149,6 +149,7 @@ function var_0_0.OnExit(arg_17_0)
 	arg_17_0.pos_ = arg_17_0.heroHeadList_:GetScrolledPosition()
 
 	arg_17_0.heroInfoView_:OnExit()
+	manager.heroRaiseTrack:CancelAllAsyncLoadModelOp()
 end
 
 function var_0_0.Dispose(arg_18_0)

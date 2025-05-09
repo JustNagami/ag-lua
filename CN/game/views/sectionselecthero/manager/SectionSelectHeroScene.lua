@@ -222,7 +222,7 @@ function var_0_0.GetModelPowerPointScreenPos(arg_25_0, arg_25_1)
 		if var_25_0 then
 			local var_25_1 = UnityEngine.Camera.main:WorldToScreenPoint(var_25_0.position)
 
-			var_25_1.y = var_25_1.y + SectionSelectHeroConst.SCREEN_OFFSET_OF_HERO_INFO_ITEM
+			var_25_1.y = var_25_1.y + SectionSelectHeroTools.GetRuntimeScreenOffsetOfHeroInfoItem()
 
 			return var_25_1
 		end

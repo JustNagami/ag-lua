@@ -100,15 +100,17 @@ function var_0_0.UpdateVoiceData(arg_13_0)
 	local var_13_1 = {}
 
 	if arg_13_0.formID_ then
-		for iter_13_0, iter_13_1 in ipairs(HeroVoiceCfg.get_id_list_by_tag_id[arg_13_0.typeID_]) do
-			local var_13_2 = HeroVoiceDescCfg.get_id_list_by_chara_id_subtitle_id[arg_13_0.curHeroID_][iter_13_1]
-			local var_13_3
+		local var_13_2 = HeroVoiceDescCfg.get_id_list_by_chara_id_subtitle_id[arg_13_0.curHeroID_]
 
-			if var_13_2 then
-				var_13_3 = var_13_2[2]
-			end
+		for iter_13_0, iter_13_1 in ipairs(HeroVoiceCfg.get_id_list_by_tag_id[arg_13_0.typeID_]) do
+			local var_13_3 = var_13_2[iter_13_1]
+			local var_13_4
 
 			if var_13_3 then
+				var_13_4 = var_13_3[2]
+			end
+
+			if var_13_4 then
 				table.insert(var_13_1, iter_13_1)
 			end
 		end
@@ -117,13 +119,13 @@ function var_0_0.UpdateVoiceData(arg_13_0)
 	end
 
 	for iter_13_2, iter_13_3 in ipairs(var_13_1) do
-		local var_13_4 = HeroTools:IsUnlockVoice(arg_13_0.curHeroID_, iter_13_3)
-		local var_13_5 = HeroVoiceDescCfg.Get(arg_13_0.curHeroID_, iter_13_3)
+		local var_13_5 = HeroTools:IsUnlockVoice(arg_13_0.curHeroID_, iter_13_3)
+		local var_13_6 = HeroVoiceDescCfg.Get(arg_13_0.curHeroID_, iter_13_3)
 
-		if var_13_5 ~= nil and var_13_5 ~= "" then
+		if var_13_6 ~= nil and var_13_6 ~= "" then
 			arg_13_0.voiceList_[var_13_0] = {
 				id = iter_13_3,
-				unlock = var_13_4
+				unlock = var_13_5
 			}
 			var_13_0 = var_13_0 + 1
 		end

@@ -42,12 +42,26 @@
 			"SofdecAsset/activity/1076_skin02_activity_loop03.usm"
 		}
 	},
+	[332221] = {
+		id = 332221,
+		start_path = {
+			"SofdecAsset/activity/activity_102003_idle_loop01.usm"
+		}
+	},
+	[332222] = {
+		id = 332222,
+		start_path = {
+			"SofdecAsset/activity/activity_102003_idle_loop02.usm"
+		}
+	},
 	all = {
 		182211,
 		272211,
 		292221,
 		292222,
 		292223,
-		312211
+		312211,
+		332221,
+		332222
 	}
 }

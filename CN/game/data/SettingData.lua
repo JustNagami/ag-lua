@@ -193,25 +193,31 @@ end
 
 function var_0_0.ModifyPicSetting(arg_4_0, arg_4_1, arg_4_2)
 	if arg_4_1 == "picOptionId" and arg_4_2 ~= SettingConst.GRAPHIC_CUSTOM_ID or arg_4_1 == "allData" then
-		local var_4_0 = arg_4_1 == "picOptionId" and PictureQualitySettingCfg[arg_4_2] or arg_4_2
-
-		var_0_1.pic.picOptionId = var_4_0.picOptionId or var_4_0.id
-		var_0_1.pic.resolution = var_4_0.resolution
-		var_0_1.pic.frame = var_4_0.frame
-		var_0_1.pic.anti_aliasing = var_4_0.anti_aliasing
-		var_0_1.pic.reflection_effect = var_4_0.reflection_effect
-		var_0_1.pic.teammate_effect = var_4_0.teammate_effect
-		var_0_1.pic.user_effect = var_4_0.user_effect
-		var_0_1.pic.super_resolution_enable = var_4_0.super_resolution_enable
-
 		if GameToSDK.IsPCPlatform() then
+			local var_4_0 = arg_4_1 == "picOptionId" and PictureQualitySettingPcCfg[arg_4_2] or arg_4_2
+
+			var_0_1.pic.picOptionId = var_4_0.picOptionId or var_4_0.id
+			var_0_1.pic.anti_aliasing = var_4_0.anti_aliasing
+			var_0_1.pic.frame = var_4_0.frame
+			var_0_1.pic.post_process = var_4_0.post_process
 			var_0_1.pic.shadow = var_4_0.shadow
 			var_0_1.pic.vertical_sync = var_4_0.vertical_sync
-			var_0_1.pic.window = var_4_0.window
-			var_0_1.pic.pc_resolution = var_4_0.pc_resolution
-			var_0_1.pic.render_scale = var_4_0.render_scale
+			var_0_1.pic.render_scale = var_4_0.super_resolution_setting / 100
+			var_0_1.pic.teammate_effect = var_4_0.teammate_effect
+			var_0_1.pic.user_effect = var_4_0.user_effect
 			var_0_1.pic.hdr = var_4_0.hdr
 			var_0_1.pic.depth_of_field_enable = var_4_0.depth_of_field_enable
+		else
+			local var_4_1 = arg_4_1 == "picOptionId" and PictureQualitySettingCfg[arg_4_2] or arg_4_2
+
+			var_0_1.pic.picOptionId = var_4_1.picOptionId or var_4_1.id
+			var_0_1.pic.resolution = var_4_1.resolution
+			var_0_1.pic.frame = var_4_1.frame
+			var_0_1.pic.anti_aliasing = var_4_1.anti_aliasing
+			var_0_1.pic.reflection_effect = var_4_1.reflection_effect
+			var_0_1.pic.teammate_effect = var_4_1.teammate_effect
+			var_0_1.pic.user_effect = var_4_1.user_effect
+			var_0_1.pic.super_resolution_enable = var_4_1.super_resolution_enable
 		end
 
 		arg_4_0:SaveData("pic", var_0_1.pic)
@@ -302,15 +308,29 @@ end
 
 function var_0_0.SaveData(arg_11_0, arg_11_1, arg_11_2)
 	if arg_11_1 == "pic" then
-		GameLocalData:SaveToCommonModule("userSetting", "picOptionId", arg_11_2.picOptionId)
-		GameLocalData:SaveToCommonModule("userSetting", "resolution", arg_11_2.resolution)
-		GameLocalData:SaveToCommonModule("userSetting", "frame", arg_11_2.frame)
-		GameLocalData:SaveToCommonModule("userSetting", "anti_aliasing", arg_11_2.anti_aliasing)
-		GameLocalData:SaveToCommonModule("userSetting", "reflection_effect", arg_11_2.reflection_effect)
-		GameLocalData:SaveToCommonModule("userSetting", "teammate_effect", arg_11_2.teammate_effect)
-		GameLocalData:SaveToCommonModule("userSetting", "user_effect", arg_11_2.user_effect)
-		GameLocalData:SaveToCommonModule("userSetting", "depth_of_field_enable", arg_11_2.depth_of_field_enable)
-		GameLocalData:SaveToCommonModule("userSetting", "super_resolution_enable", arg_11_2.super_resolution_enable)
+		if GameToSDK.IsPCPlatform() then
+			GameLocalData:SaveToCommonModule("userSetting", "picOptionId", arg_11_2.picOptionId)
+			GameLocalData:SaveToCommonModule("userSetting", "user_effect", arg_11_2.user_effect)
+			GameLocalData:SaveToCommonModule("userSetting", "teammate_effect", arg_11_2.teammate_effect)
+			GameLocalData:SaveToCommonModule("userSetting", "frame", arg_11_2.frame)
+			GameLocalData:SaveToCommonModule("userSetting", "shadow", arg_11_2.shadow)
+			GameLocalData:SaveToCommonModule("userSetting", "post_process", arg_11_2.post_process)
+			GameLocalData:SaveToCommonModule("userSetting", "anti_aliasing", arg_11_2.anti_aliasing)
+			GameLocalData:SaveToCommonModule("userSetting", "vertical_sync", arg_11_2.vertical_sync)
+			GameLocalData:SaveToCommonModule("userSetting", "window", arg_11_2.window)
+			GameLocalData:SaveToCommonModule("userSetting", "pc_resolution", arg_11_2.pc_resolution)
+			GameLocalData:SaveToCommonModule("userSetting", "render_scale", arg_11_2.render_scale)
+		else
+			GameLocalData:SaveToCommonModule("userSetting", "picOptionId", arg_11_2.picOptionId)
+			GameLocalData:SaveToCommonModule("userSetting", "resolution", arg_11_2.resolution)
+			GameLocalData:SaveToCommonModule("userSetting", "frame", arg_11_2.frame)
+			GameLocalData:SaveToCommonModule("userSetting", "anti_aliasing", arg_11_2.anti_aliasing)
+			GameLocalData:SaveToCommonModule("userSetting", "reflection_effect", arg_11_2.reflection_effect)
+			GameLocalData:SaveToCommonModule("userSetting", "teammate_effect", arg_11_2.teammate_effect)
+			GameLocalData:SaveToCommonModule("userSetting", "user_effect", arg_11_2.user_effect)
+			GameLocalData:SaveToCommonModule("userSetting", "depth_of_field_enable", arg_11_2.depth_of_field_enable)
+			GameLocalData:SaveToCommonModule("userSetting", "super_resolution_enable", arg_11_2.super_resolution_enable)
+		end
 	else
 		GameLocalData:SaveToCommonModule("userSetting", arg_11_1, arg_11_2)
 	end

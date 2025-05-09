@@ -3,7 +3,7 @@
 local var_0_0 = class("TetrisGameHomeView", ActivityMainBasePanel)
 
 function var_0_0.GetUIName(arg_1_0)
-	return "Widget/BackHouseUI/TetrisGame/TetrisGameEntranceUI"
+	return "Widget/Version/Alone_TetrisGameUI/TetrisGameEntranceUI"
 end
 
 function var_0_0.AddListeners(arg_2_0)

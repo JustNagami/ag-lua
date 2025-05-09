@@ -80,7 +80,9 @@ function var_0_0.ClickAdv(arg_4_0)
 	if var_4_0.type == 1 then
 		JumpTools.JumpToPage2(var_4_0.parameter)
 	elseif var_4_0.type == 2 then
-		Application.OpenURL(var_4_0.parameter[1])
+		OperationAction.OpenNormalUrl(var_4_0.parameter[1])
+	elseif var_4_0.type == 3 then
+		ActivityWebTools.OpenUrl(var_4_0.parameter[1])
 	end
 end
 
@@ -626,6 +628,8 @@ function var_0_0.GetRedPointKey(arg_8_0)
 		return RedPointConst.ACTIVITY_BLOOD_CARD .. "_"
 	elseif var_8_0 == ActivityTemplateConst.ACTIVITY_SKULD_MAIN then
 		return RedPointConst.ACTIVITY_STORY_STAGE
+	elseif var_8_0 == ActivityTemplateConst.ACTIVITY_OSIRIS_PLAY_GAME then
+		return RedPointConst.OSIRIS_PLAY_GAME_MAIN
 	else
 		return RedPointConst.ACTIVITY_COMMON .. "_"
 	end

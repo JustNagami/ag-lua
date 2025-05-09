@@ -36,9 +36,11 @@ function var_0_0.AddUIListener(arg_4_0)
 			if TangramPuzzleData:GetSelecteClue(arg_4_0.activityID_, arg_4_0.id_) == true then
 				TangramPuzzleData:SetSelecteClue(arg_4_0.activityID_, arg_4_0.id_, false)
 				arg_4_0.tipsController_:SetSelectedState("off")
+				arg_4_0.statusController_:SetSelectedState("on")
 			else
 				TangramPuzzleData:SetSelecteClue(arg_4_0.activityID_, arg_4_0.id_, true)
 				arg_4_0.tipsController_:SetSelectedState("on")
+				arg_4_0.statusController_:SetSelectedState("normal")
 				arg_4_0.animator_:Play("puzzleClueTemplate", -1, 0)
 				arg_4_0.animator_:Update(0)
 			end
@@ -46,7 +48,7 @@ function var_0_0.AddUIListener(arg_4_0)
 			TangramPuzzleAction.Operation(arg_4_0.activityID_, TangramPuzzleAction.OPERATION_TYPE.CLUE, {
 				clueID = arg_4_0.id_
 			}, function()
-				arg_4_0.statusController_:SetSelectedState("on")
+				arg_4_0.statusController_:SetSelectedState("normal")
 				TangramPuzzleData:SetSelecteClue(arg_4_0.activityID_, arg_4_0.id_, true)
 				arg_4_0.tipsController_:SetSelectedState("on")
 				arg_4_0.animator_:Play("puzzleClueTemplate", -1, 0)
@@ -94,10 +96,12 @@ function var_0_0.RefreshStatus(arg_11_0)
 
 	if arg_11_0.unlock_ == true then
 		if TangramPuzzleData:GetCurClueDic(arg_11_0.activityID_)[arg_11_0.id_] == true then
+			arg_11_0.statusController_:SetSelectedState("off")
 			arg_11_0.statusController_:SetSelectedState("on")
 
 			if TangramPuzzleData:GetSelecteClue(arg_11_0.activityID_, arg_11_0.id_) == true then
 				arg_11_0.tipsController_:SetSelectedState("on")
+				arg_11_0.statusController_:SetSelectedState("normal")
 				arg_11_0:RebuildDescLayout()
 				arg_11_0.animator_:Play("puzzleClueTemplate", -1, 99999)
 			else
@@ -111,8 +115,9 @@ function var_0_0.RefreshStatus(arg_11_0)
 end
 
 function var_0_0.SetTipsController(arg_12_0, arg_12_1)
-	if arg_12_0.unlock_ == true then
+	if arg_12_0.unlock_ == true and arg_12_0.tipsController_:GetSelectedState() == "on" then
 		arg_12_0.tipsController_:SetSelectedState(arg_12_1 == true and "on" or "off")
+		arg_12_0.statusController_:SetSelectedState(arg_12_1 == true and "normal" or "on")
 		TangramPuzzleData:SetSelecteClue(arg_12_0.activityID_, arg_12_0.id_, arg_12_1)
 		arg_12_0:RebuildDescLayout()
 	end

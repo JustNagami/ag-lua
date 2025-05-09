@@ -11,12 +11,6 @@
 		EnergyType = 1,
 		RangeType = 0
 	},
-	[1211] = {
-		ID = 1211,
-		Name = "魂羽·奥西里斯",
-		EnergyType = 4,
-		RangeType = 0
-	},
 	[1013] = {
 		ID = 1013,
 		Name = "障月·阿修罗",
@@ -49,7 +43,7 @@
 	},
 	[1020] = {
 		ID = 1020,
-		Name = "梵天",
+		Name = "三相·梵天",
 		EnergyType = 4,
 		RangeType = 0
 	},
@@ -65,6 +59,12 @@
 		EnergyType = 1,
 		RangeType = 0
 	},
+	[1211] = {
+		ID = 1211,
+		Name = "魂羽·奥西里斯",
+		EnergyType = 4,
+		RangeType = 0
+	},
 	[1021] = {
 		ID = 1021,
 		Name = "曦光·阿尔忒弥斯",
@@ -73,7 +73,7 @@
 	},
 	[1022] = {
 		ID = 1022,
-		Name = "塞勒涅",
+		Name = "幽月·塞勒涅",
 		EnergyType = 4,
 		RangeType = 0
 	},
@@ -127,7 +127,7 @@
 	},
 	[1033] = {
 		ID = 1033,
-		Name = "海姆达尔",
+		Name = "启明·海姆达尔",
 		EnergyType = 2,
 		RangeType = 1
 	},
@@ -283,7 +283,7 @@
 	},
 	[1060] = {
 		ID = 1060,
-		Name = "陆吾",
+		Name = "九司·陆吾",
 		EnergyType = 1,
 		RangeType = 0
 	},
@@ -325,7 +325,7 @@
 	},
 	[1072] = {
 		ID = 1072,
-		Name = "禄良",
+		Name = "百解·禄良",
 		EnergyType = 3,
 		RangeType = 0
 	},
@@ -337,7 +337,7 @@
 	},
 	[1074] = {
 		ID = 1074,
-		Name = "英招",
+		Name = "巡天·英招",
 		EnergyType = 4,
 		RangeType = 0
 	},
@@ -349,7 +349,7 @@
 	},
 	[1076] = {
 		ID = 1076,
-		Name = "庚辰",
+		Name = "太一·庚辰",
 		EnergyType = 1,
 		RangeType = 1
 	},
@@ -373,7 +373,7 @@
 	},
 	[1085] = {
 		ID = 1085,
-		Name = "诗蔻蒂",
+		Name = "绮望·诗蔻蒂",
 		EnergyType = 4,
 		RangeType = 0
 	},
@@ -2192,7 +2192,6 @@
 	all = {
 		1011,
 		1012,
-		1211,
 		1013,
 		1015,
 		1016,
@@ -2201,6 +2200,7 @@
 		1020,
 		1111,
 		1119,
+		1211,
 		1021,
 		1022,
 		1024,

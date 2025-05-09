@@ -1439,7 +1439,86 @@
 		condition_list = {},
 		reward_item_list = {}
 	},
+	[104901] = {
+		hero_id = 1049,
+		trust_level = 1,
+		id = 104901,
+		reward_des = "",
+		condition_list = {
+			2101,
+			5108
+		},
+		reward_item_list = {
+			{
+				1,
+				50
+			}
+		}
+	},
+	[104902] = {
+		hero_id = 1049,
+		trust_level = 2,
+		id = 104902,
+		reward_des = "",
+		condition_list = {
+			5101,
+			5109
+		},
+		reward_item_list = {
+			{
+				1,
+				80
+			}
+		}
+	},
+	[104903] = {
+		hero_id = 1049,
+		trust_level = 3,
+		id = 104903,
+		reward_des = "",
+		condition_list = {
+			5102,
+			5110
+		},
+		reward_item_list = {
+			{
+				1,
+				100
+			}
+		}
+	},
+	[104904] = {
+		hero_id = 1049,
+		trust_level = 4,
+		id = 104904,
+		reward_des = "",
+		condition_list = {
+			5103,
+			5111
+		},
+		reward_item_list = {
+			{
+				950036,
+				1
+			}
+		}
+	},
+	[104905] = {
+		hero_id = 1049,
+		trust_level = 5,
+		id = 104905,
+		reward_des = "",
+		condition_list = {},
+		reward_item_list = {}
+	},
 	get_id_list_by_hero_id = {
+		[1049] = {
+			104901,
+			104902,
+			104903,
+			104904,
+			104905
+		},
 		[1075] = {
 			107501,
 			107502,
@@ -1681,6 +1760,11 @@
 		107502,
 		107503,
 		107504,
-		107505
+		107505,
+		104901,
+		104902,
+		104903,
+		104904,
+		104905
 	}
 }

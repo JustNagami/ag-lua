@@ -5796,8 +5796,8 @@
 		},
 		attribute_factor = {
 			1300,
-			1000,
-			4100
+			500,
+			2000
 		},
 		drop_lib_id_list = {
 			2000005,

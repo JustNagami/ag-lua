@@ -18,6 +18,7 @@ function var_0_0.Exit(arg_3_0, arg_3_1)
 	HomeSceneSettingData:SetIsPlay(var_3_0)
 	manager.notify:CallUpdateFunc(HOME_DEBUT_OVER)
 	arg_3_0.actor:SetSelfCamera(0)
+	arg_3_0.actor:AfterDebut()
 end
 
 return var_0_0

@@ -2651,6 +2651,45 @@
 			0
 		}
 	},
+	[4091211] = {
+		monster_level = 80,
+		name = "魂羽·奥西里斯",
+		drop_lib_id = 0,
+		map = "4051211",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "魂羽·奥西里斯",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 4091211,
+		attribute_factor = {
+			1000,
+			1000,
+			7500
+		},
+		hero_list = {
+			{
+				1211,
+				121103
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
 	[4091248] = {
 		monster_level = 80,
 		name = "神威·前鬼坊天狗",
@@ -2798,6 +2837,7 @@
 		4091184,
 		4091197,
 		4091199,
+		4091211,
 		4091248,
 		4091284
 	}

@@ -140,6 +140,7 @@ function var_0_1.OnEnter(arg_6_0)
 	arg_6_0:GetHeroTeam()
 	arg_6_0:RefreshHeroDataList()
 	arg_6_0:RefreshHeroList()
+	arg_6_0:RefreshUI()
 end
 
 function var_0_1.GetHeroTeam(arg_7_0)
@@ -214,31 +215,35 @@ function var_0_1.GetDefaultHeroData(arg_13_0)
 	return nil
 end
 
-function var_0_1.RefreshHeroList(arg_14_0)
-	if #arg_14_0.heroDataList_ <= 0 then
+function var_0_1.RefreshUI(arg_14_0)
+	arg_14_0.filterView_:SetHeroIdList(arg_14_0.heroDataList_)
+end
+
+function var_0_1.RefreshHeroList(arg_15_0)
+	if #arg_15_0.heroDataList_ <= 0 then
 		return
 	end
 
-	arg_14_0.selectHeroData_ = arg_14_0:GetDefaultHeroData()
+	arg_15_0.selectHeroData_ = arg_15_0:GetDefaultHeroData()
 
-	local var_14_0 = 1
+	local var_15_0 = 1
 
-	for iter_14_0, iter_14_1 in ipairs(arg_14_0.heroDataList_) do
-		if iter_14_1.id == arg_14_0.selectHeroData_.id and iter_14_1.trialID == arg_14_0.selectHeroData_.trialID then
-			var_14_0 = iter_14_0
+	for iter_15_0, iter_15_1 in ipairs(arg_15_0.heroDataList_) do
+		if iter_15_1.id == arg_15_0.selectHeroData_.id and iter_15_1.trialID == arg_15_0.selectHeroData_.trialID then
+			var_15_0 = iter_15_0
 
 			break
 		end
 	end
 
-	arg_14_0.heroHeadList_:StartScroll(#arg_14_0.heroDataList_, var_14_0)
-	arg_14_0:SelectHero(arg_14_0.selectHeroData_, true)
+	arg_15_0.heroHeadList_:StartScroll(#arg_15_0.heroDataList_, var_15_0)
+	arg_15_0:SelectHero(arg_15_0.selectHeroData_, true)
 end
 
-function var_0_1.IsSameHeroInTeam(arg_15_0, arg_15_1)
-	for iter_15_0, iter_15_1 in pairs(arg_15_0.heroTeam_) do
-		if arg_15_1 == iter_15_1.id then
-			arg_15_0.swapIndex = iter_15_0
+function var_0_1.IsSameHeroInTeam(arg_16_0, arg_16_1)
+	for iter_16_0, iter_16_1 in pairs(arg_16_0.heroTeam_) do
+		if arg_16_1 == iter_16_1.id then
+			arg_16_0.swapIndex = iter_16_0
 
 			return true
 		end
@@ -247,138 +252,138 @@ function var_0_1.IsSameHeroInTeam(arg_15_0, arg_15_1)
 	return false
 end
 
-function var_0_1.IsInTeam(arg_16_0, arg_16_1, arg_16_2)
-	for iter_16_0, iter_16_1 in pairs(arg_16_0.heroTeam_ or {}) do
-		if iter_16_1.id == arg_16_1 and iter_16_1.trialID == arg_16_2 then
-			return true, nil, iter_16_0
+function var_0_1.IsInTeam(arg_17_0, arg_17_1, arg_17_2)
+	for iter_17_0, iter_17_1 in pairs(arg_17_0.heroTeam_ or {}) do
+		if iter_17_1.id == arg_17_1 and iter_17_1.trialID == arg_17_2 then
+			return true, nil, iter_17_0
 		end
 	end
 
 	return false
 end
 
-function var_0_1.IsClickInTeam(arg_17_0, arg_17_1, arg_17_2)
-	if arg_17_0.heroTeam_[arg_17_0.clickIndex] == nil then
+function var_0_1.IsClickInTeam(arg_18_0, arg_18_1, arg_18_2)
+	if arg_18_0.heroTeam_[arg_18_0.clickIndex] == nil then
 		return false
 	end
 
-	if arg_17_1 == arg_17_0.heroTeam_[arg_17_0.clickIndex].id and arg_17_2 == arg_17_0.heroTeam_[arg_17_0.clickIndex].trialID then
+	if arg_18_1 == arg_18_0.heroTeam_[arg_18_0.clickIndex].id and arg_18_2 == arg_18_0.heroTeam_[arg_18_0.clickIndex].trialID then
 		return true
 	end
 
 	return false
 end
 
-function var_0_1.RefreshJoinBtn(arg_18_0)
-	arg_18_0.joinBtn_.interactable = true
+function var_0_1.RefreshJoinBtn(arg_19_0)
+	arg_19_0.joinBtn_.interactable = true
 
-	if arg_18_0.isMult then
-		arg_18_0.joinBtnController_:SetSelectedState("add")
+	if arg_19_0.isMult then
+		arg_19_0.joinBtnController_:SetSelectedState("add")
 
 		return
 	end
 
-	if arg_18_0.difficult == 2 then
-		if arg_18_0:IsSameHeroInTeam(arg_18_0.selectHeroData_.id) then
-			if arg_18_0:IsClickInTeam(arg_18_0.selectHeroData_.id, arg_18_0.selectHeroData_.trialID) then
-				arg_18_0.joinBtn_.interactable = false
+	if arg_19_0.difficult == 2 then
+		if arg_19_0:IsSameHeroInTeam(arg_19_0.selectHeroData_.id) then
+			if arg_19_0:IsClickInTeam(arg_19_0.selectHeroData_.id, arg_19_0.selectHeroData_.trialID) then
+				arg_19_0.joinBtn_.interactable = false
 
-				arg_18_0.joinBtnController_:SetSelectedState("cantRemove")
+				arg_19_0.joinBtnController_:SetSelectedState("cantRemove")
 			else
-				arg_18_0.joinBtnController_:SetSelectedState("change")
+				arg_19_0.joinBtnController_:SetSelectedState("change")
 			end
 		else
-			arg_18_0.joinBtn_.interactable = false
+			arg_19_0.joinBtn_.interactable = false
 
-			arg_18_0.joinBtnController_:SetSelectedState("cantAdd")
+			arg_19_0.joinBtnController_:SetSelectedState("cantAdd")
 		end
-	elseif arg_18_0:IsSameHeroInTeam(arg_18_0.selectHeroData_.id) then
-		if arg_18_0:IsClickInTeam(arg_18_0.selectHeroData_.id, arg_18_0.selectHeroData_.trialID) then
-			arg_18_0.joinBtnController_:SetSelectedState("out")
-		elseif arg_18_0:IsInTeam(arg_18_0.selectHeroData_.id, arg_18_0.selectHeroData_.trialID) then
-			arg_18_0.joinBtnController_:SetSelectedState("change")
+	elseif arg_19_0:IsSameHeroInTeam(arg_19_0.selectHeroData_.id) then
+		if arg_19_0:IsClickInTeam(arg_19_0.selectHeroData_.id, arg_19_0.selectHeroData_.trialID) then
+			arg_19_0.joinBtnController_:SetSelectedState("out")
+		elseif arg_19_0:IsInTeam(arg_19_0.selectHeroData_.id, arg_19_0.selectHeroData_.trialID) then
+			arg_19_0.joinBtnController_:SetSelectedState("change")
 		else
-			arg_18_0.joinBtn_.interactable = false
+			arg_19_0.joinBtn_.interactable = false
 
-			arg_18_0.joinBtnController_:SetSelectedState("lock")
+			arg_19_0.joinBtnController_:SetSelectedState("lock")
 		end
 	else
-		arg_18_0.joinBtnController_:SetSelectedState("add")
+		arg_19_0.joinBtnController_:SetSelectedState("add")
 	end
 end
 
-function var_0_1.ExtraSorter(arg_19_0, arg_19_1, arg_19_2, arg_19_3, arg_19_4)
-	local var_19_0, var_19_1, var_19_2 = arg_19_0:IsInTeam(arg_19_1.id, arg_19_1.trialID, arg_19_0.heroTeam_, arg_19_0.heroTrialList_)
-	local var_19_3, var_19_4, var_19_5 = arg_19_0:IsInTeam(arg_19_2.id, arg_19_2.trialID, arg_19_0.heroTeam_, arg_19_0.heroTrialList_)
+function var_0_1.ExtraSorter(arg_20_0, arg_20_1, arg_20_2, arg_20_3, arg_20_4)
+	local var_20_0, var_20_1, var_20_2 = arg_20_0:IsInTeam(arg_20_1.id, arg_20_1.trialID, arg_20_0.heroTeam_, arg_20_0.heroTrialList_)
+	local var_20_3, var_20_4, var_20_5 = arg_20_0:IsInTeam(arg_20_2.id, arg_20_2.trialID, arg_20_0.heroTeam_, arg_20_0.heroTrialList_)
 
-	if var_19_0 ~= var_19_3 then
-		if var_19_0 and not var_19_3 then
+	if var_20_0 ~= var_20_3 then
+		if var_20_0 and not var_20_3 then
 			return true, true
-		elseif not var_19_0 and var_19_3 then
+		elseif not var_20_0 and var_20_3 then
 			return true, false
 		else
-			return true, var_19_5 < var_19_2
+			return true, var_20_5 < var_20_2
 		end
 	end
 
-	if arg_19_1.trialID ~= 0 or arg_19_2.trialID ~= 0 then
-		if arg_19_1.trialID ~= 0 and arg_19_2.trialID ~= 0 then
-			if arg_19_3 == 0 and arg_19_1.star ~= arg_19_2.star then
-				if arg_19_0.curOrder_ == "desc" then
-					return true, arg_19_1.star > arg_19_2.star
+	if arg_20_1.trialID ~= 0 or arg_20_2.trialID ~= 0 then
+		if arg_20_1.trialID ~= 0 and arg_20_2.trialID ~= 0 then
+			if arg_20_3 == 0 and arg_20_1.star ~= arg_20_2.star then
+				if arg_20_0.curOrder_ == "desc" then
+					return true, arg_20_1.star > arg_20_2.star
 				else
-					return true, arg_19_1.star < arg_19_2.star
+					return true, arg_20_1.star < arg_20_2.star
 				end
 			end
 
-			local var_19_6 = getHeroPower(arg_19_1.trialID, true)
-			local var_19_7 = getHeroPower(arg_19_2.trialID, true)
+			local var_20_6 = getHeroPower(arg_20_1.trialID, true)
+			local var_20_7 = getHeroPower(arg_20_2.trialID, true)
 
-			if var_19_6 ~= var_19_7 then
-				if arg_19_4 == "desc" then
-					return true, var_19_7 < var_19_6
+			if var_20_6 ~= var_20_7 then
+				if arg_20_4 == "desc" then
+					return true, var_20_7 < var_20_6
 				else
-					return true, var_19_6 < var_19_7
+					return true, var_20_6 < var_20_7
 				end
 			else
-				return true, arg_19_1.trialID > arg_19_2.trialID
+				return true, arg_20_1.trialID > arg_20_2.trialID
 			end
 		else
-			return true, arg_19_1.trialID > arg_19_2.trialID
+			return true, arg_20_1.trialID > arg_20_2.trialID
 		end
 	end
 
 	return false, false
 end
 
-function var_0_1.OnListChange(arg_20_0, arg_20_1, arg_20_2)
-	arg_20_0.heroDataList_ = arg_20_2
-	arg_20_0.selectHeroData_ = arg_20_0.heroDataList_[1]
+function var_0_1.OnListChange(arg_21_0, arg_21_1, arg_21_2)
+	arg_21_0.heroDataList_ = arg_21_2
+	arg_21_0.selectHeroData_ = arg_21_0.heroDataList_[1]
 
-	arg_20_0.heroHeadList_:StartScroll(#arg_20_0.heroDataList_)
+	arg_21_0.heroHeadList_:StartScroll(#arg_21_0.heroDataList_)
 
-	if #arg_20_0.heroDataList_ == 0 then
-		arg_20_0.emptyController_:SetSelectedState("true")
+	if #arg_21_0.heroDataList_ == 0 then
+		arg_21_0.emptyController_:SetSelectedState("true")
 	else
-		arg_20_0.emptyController_:SetSelectedState("false")
+		arg_21_0.emptyController_:SetSelectedState("false")
 
-		if not arg_20_0.params_.isEnter then
-			arg_20_0:SelectHero(arg_20_0.heroDataList_[1])
+		if not arg_21_0.params_.isEnter then
+			arg_21_0:SelectHero(arg_21_0.heroDataList_[1])
 		else
-			arg_20_0.params_.isEnter = false
+			arg_21_0.params_.isEnter = false
 		end
 	end
 end
 
-function var_0_1.ProcessHeroDataList(arg_21_0, arg_21_1, arg_21_2, arg_21_3)
-	if arg_21_0.customHeroList_[arg_21_0.params_.selectHeroPos][1] then
-		arg_21_0:ProcessCustomHeroData(arg_21_1, arg_21_2)
+function var_0_1.ProcessHeroDataList(arg_22_0, arg_22_1, arg_22_2, arg_22_3)
+	if arg_22_0.customHeroList_[arg_22_0.params_.selectHeroPos][1] then
+		arg_22_0:ProcessCustomHeroData(arg_22_1, arg_22_2)
 	else
-		if arg_21_0.difficult ~= 2 then
-			arg_21_0:ProcessOwnHeroData(arg_21_1, arg_21_3)
+		if arg_22_0.difficult ~= 2 then
+			arg_22_0:ProcessOwnHeroData(arg_22_1, arg_22_3)
 		end
 
-		arg_21_0:ProcessTrialHeroData(arg_21_1, arg_21_2)
+		arg_22_0:ProcessTrialHeroData(arg_22_1, arg_22_2)
 	end
 end
 

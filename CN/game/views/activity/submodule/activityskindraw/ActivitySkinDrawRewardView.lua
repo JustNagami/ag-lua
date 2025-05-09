@@ -16,12 +16,7 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
-	arg_4_0.soundEffect_ = {
-		"search_scene_03_blue",
-		"search_scene_03_purple",
-		"search_scene_03_gold",
-		special = "search_scene_03_special"
-	}
+	arg_4_0.soundEffect_ = ActivitySkinDrawTools.GetSoundEffect()
 	arg_4_0.typeGo_ = {}
 	arg_4_0.typeItem_ = {}
 end
@@ -104,6 +99,8 @@ function var_0_0.NextCode(arg_11_0)
 		elseif var_11_6.type == ItemConst.ITEM_TYPE.HERO_SKIN then
 			var_11_5 = 4
 
+			manager.audio:StopEffect()
+			manager.audio:PlayEffect("ui_system_search", arg_11_0.soundEffect_[var_11_5], "")
 			arg_11_0:ShowAni(var_11_5, var_11_0, arg_11_0.isReplaceSkin_)
 		elseif var_11_6.type == ItemConst.ITEM_TYPE.SCENE then
 			arg_11_0.isScene_ = not arg_11_0.isReplaceScene_

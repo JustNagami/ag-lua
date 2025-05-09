@@ -38,7 +38,7 @@ function var_0_0.OnEnter(arg_4_0)
 end
 
 function var_0_0.OnExit(arg_5_0)
-	return
+	arg_5_0.params_.callBack = nil
 end
 
 function var_0_0.Dispose(arg_6_0)

@@ -20,8 +20,8 @@ function var_0_0.Ctor(arg_2_0, arg_2_1)
 end
 
 function var_0_0.Enter(arg_3_0)
-	var_0_0.super.Enter(arg_3_0)
 	manager.ui:SetMainCameraCom("CinemachineBrain", true)
+	var_0_0.super.Enter(arg_3_0)
 end
 
 function var_0_0.PlayAni(arg_4_0, arg_4_1)
@@ -33,13 +33,14 @@ function var_0_0.PlayAni(arg_4_0, arg_4_1)
 		arg_4_0:PlaySequence(1)
 	else
 		local var_4_1 = var_4_0.embed_list[1] or arg_4_1
+		local var_4_2 = arg_4_0:GetHeroTimelineMgr()
 
-		manager.heroUiTimeline:PlayAction(var_4_1, {
+		var_4_2:PlayAction(var_4_1, {
 			fadeSecond = 0,
 			talking = arg_4_0.talking_,
 			isLoop = string.find(arg_4_1, "^action1_") ~= nil and true or nil
 		})
-		manager.heroUiTimeline:SetCallbackStopped(function(arg_5_0)
+		var_4_2:SetCallbackStopped(function(arg_5_0)
 			if arg_4_0.forceExiting_ then
 				arg_4_0.forceExiting_ = nil
 				arg_5_0.time = arg_5_0.duration
@@ -59,17 +60,15 @@ end
 function var_0_0.Exit(arg_7_0, arg_7_1)
 	arg_7_0.playingSeq_ = nil
 	arg_7_0.playingSeqIdx_ = nil
-
-	manager.ui:SetMainCameraCom("CinemachineBrain", false)
-
 	arg_7_0.forceExiting_ = arg_7_1
 
 	var_0_0.super.Exit(arg_7_0, arg_7_1)
+	manager.ui:SetMainCameraCom("CinemachineBrain", false)
 end
 
 function var_0_0.PlayNextAni(arg_8_0)
 	if arg_8_0.playingSeq_ and #arg_8_0.playingSeq_ > arg_8_0.playingSeqIdx_ then
-		manager.heroUiTimeline:SetCallbackStopped(nil)
+		arg_8_0:GetHeroTimelineMgr():SetCallbackStopped(nil)
 		arg_8_0:PlaySequence(arg_8_0.playingSeqIdx_ + 1)
 
 		return

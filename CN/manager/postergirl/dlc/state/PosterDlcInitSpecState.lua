@@ -7,6 +7,7 @@ end
 function var_0_0.Enter(arg_2_0)
 	var_0_0.super.Enter(arg_2_0)
 	arg_2_0.actor:EnableEyeController(true)
+	manager.audio:StopVoice()
 	arg_2_0.actor:MuteCamera(manager.posterGirl:GetViewTag() ~= PosterGirlConst.ViewTag.preview)
 
 	local var_2_0 = "action1_1"

@@ -39,19 +39,18 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
 
 	local var_6_1 = ItemCfg[arg_6_0.itemID_]
 	local var_6_2 = var_6_1.type == ItemConst.ITEM_TYPE.HERO_SKIN
-	local var_6_3 = var_6_2 or var_6_1.type == ItemConst.ITEM_TYPE.SCENE
 
-	if var_6_3 then
+	if var_6_2 or var_6_1.type == ItemConst.ITEM_TYPE.SCENE then
 		arg_6_0.typeCon_:SetSelectedState("special")
 	else
 		arg_6_0.typeCon_:SetSelectedState(arg_6_0.cfg_.minimum_guarantee == 2 and 3 or 2)
 	end
 
-	local var_6_4 = GetI18NText("x" .. var_6_0[2])
-	local var_6_5 = GetI18NText(ItemTools.getItemName(arg_6_0.itemID_))
+	local var_6_3 = GetI18NText("x" .. var_6_0[2])
+	local var_6_4 = GetI18NText(ItemTools.getItemName(arg_6_0.itemID_))
 
-	arg_6_0.num_.text = var_6_3 and string.format("<color=#6A40CF>%s</color>", var_6_4) or var_6_4
-	arg_6_0.name_.text = var_6_3 and string.format("<color=#302A41>%s</color>", var_6_5) or var_6_5
+	arg_6_0.num_.text = var_6_3
+	arg_6_0.name_.text = var_6_4
 
 	SetActive(arg_6_0.role_.gameObject, var_6_2)
 	SetActive(arg_6_0.icon_.gameObject, not var_6_2)
@@ -62,9 +61,9 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
 		arg_6_0.icon_.sprite = ItemTools.getItemSprite(arg_6_0.itemID_)
 	end
 
-	local var_6_6 = ActivitySkinDrawAction.GetIsCanReplace(arg_6_1)
+	local var_6_5 = ActivitySkinDrawAction.GetIsCanReplace(arg_6_1)
 
-	arg_6_0.numCon_:SetSelectedState(tostring(not var_6_6))
+	arg_6_0.numCon_:SetSelectedState(tostring(not var_6_5))
 
 	if not arg_6_3 then
 		arg_6_0.switchCon_:SetSelectedState("off")
@@ -72,13 +71,13 @@ function var_0_0.SetData(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
 		arg_6_0.switchCon_:SetSelectedState("on")
 		arg_6_0.numCon_:SetSelectedState("false")
 
-		local var_6_7 = ItemCfg[arg_6_0.itemID_].num_exchange_item[1]
-		local var_6_8 = clone(ItemTemplateData)
+		local var_6_6 = ItemCfg[arg_6_0.itemID_].num_exchange_item[1]
+		local var_6_7 = clone(ItemTemplateData)
 
-		var_6_8.id = var_6_7[1]
-		var_6_8.number = var_6_7[2]
+		var_6_7.id = var_6_6[1]
+		var_6_7.number = var_6_6[2]
 
-		arg_6_0.commonItem_:SetData(var_6_8)
+		arg_6_0.commonItem_:SetData(var_6_7)
 	end
 end
 

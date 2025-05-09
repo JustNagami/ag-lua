@@ -1559,7 +1559,403 @@
 			}
 		}
 	},
+	[1001] = {
+		minimum_guarantee = 1,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 6,
+		id = 1001,
+		reward = {
+			{
+				40504,
+				6
+			}
+		}
+	},
+	[1002] = {
+		minimum_guarantee = 1,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 10,
+		id = 1002,
+		reward = {
+			{
+				41301,
+				4
+			}
+		}
+	},
+	[1003] = {
+		minimum_guarantee = 1,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 10,
+		id = 1003,
+		reward = {
+			{
+				41302,
+				2
+			}
+		}
+	},
+	[1004] = {
+		minimum_guarantee = 1,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 5,
+		id = 1004,
+		reward = {
+			{
+				40603,
+				2
+			}
+		}
+	},
+	[1005] = {
+		minimum_guarantee = 1,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 6,
+		id = 1005,
+		reward = {
+			{
+				60,
+				100
+			}
+		}
+	},
+	[1006] = {
+		minimum_guarantee = 1,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 15,
+		id = 1006,
+		reward = {
+			{
+				41301,
+				2
+			}
+		}
+	},
+	[1007] = {
+		minimum_guarantee = 1,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 15,
+		id = 1007,
+		reward = {
+			{
+				41302,
+				1
+			}
+		}
+	},
+	[1008] = {
+		minimum_guarantee = 1,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 1,
+		id = 1008,
+		reward = {
+			{
+				91014,
+				1
+			}
+		}
+	},
+	[1009] = {
+		minimum_guarantee = 1,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 1,
+		id = 1009,
+		reward = {
+			{
+				91015,
+				1
+			}
+		}
+	},
+	[1010] = {
+		minimum_guarantee = 1,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 1,
+		id = 1010,
+		reward = {
+			{
+				91016,
+				1
+			}
+		}
+	},
+	[1011] = {
+		minimum_guarantee = 1,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 1,
+		id = 1011,
+		reward = {
+			{
+				91017,
+				1
+			}
+		}
+	},
+	[1012] = {
+		minimum_guarantee = 1,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 1,
+		id = 1012,
+		reward = {
+			{
+				91018,
+				1
+			}
+		}
+	},
+	[1013] = {
+		minimum_guarantee = 2,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 1,
+		id = 1013,
+		reward = {
+			{
+				2927,
+				1
+			}
+		}
+	},
+	[1014] = {
+		minimum_guarantee = 2,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 1,
+		id = 1014,
+		reward = {
+			{
+				40603,
+				40
+			}
+		}
+	},
+	[1015] = {
+		minimum_guarantee = 2,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 1,
+		id = 1015,
+		reward = {
+			{
+				30096,
+				1
+			}
+		}
+	},
+	[1016] = {
+		minimum_guarantee = 2,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 1,
+		id = 1016,
+		reward = {
+			{
+				41201,
+				10
+			}
+		}
+	},
+	[1017] = {
+		minimum_guarantee = 2,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 1,
+		id = 1017,
+		reward = {
+			{
+				19,
+				5
+			}
+		}
+	},
+	[1018] = {
+		minimum_guarantee = 2,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 1,
+		id = 1018,
+		reward = {
+			{
+				19,
+				5
+			}
+		}
+	},
+	[1019] = {
+		minimum_guarantee = 2,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 1,
+		id = 1019,
+		reward = {
+			{
+				38,
+				10
+			}
+		}
+	},
+	[1020] = {
+		minimum_guarantee = 2,
+		pool_stage = 1,
+		pool_id = 1010,
+		total = 1,
+		id = 1020,
+		reward = {
+			{
+				102003,
+				1
+			}
+		}
+	},
+	[1101] = {
+		minimum_guarantee = 1,
+		pool_stage = 1,
+		pool_id = 1011,
+		total = 6,
+		id = 1101,
+		reward = {
+			{
+				40603,
+				5
+			}
+		}
+	},
+	[1102] = {
+		minimum_guarantee = 1,
+		pool_stage = 1,
+		pool_id = 1011,
+		total = 10,
+		id = 1102,
+		reward = {
+			{
+				40415,
+				3
+			}
+		}
+	},
+	[1103] = {
+		minimum_guarantee = 1,
+		pool_stage = 1,
+		pool_id = 1011,
+		total = 10,
+		id = 1103,
+		reward = {
+			{
+				20003,
+				1
+			}
+		}
+	},
+	[1104] = {
+		minimum_guarantee = 1,
+		pool_stage = 1,
+		pool_id = 1011,
+		total = 10,
+		id = 1104,
+		reward = {
+			{
+				20002,
+				1
+			}
+		}
+	},
+	[1105] = {
+		minimum_guarantee = 2,
+		pool_stage = 1,
+		pool_id = 1011,
+		total = 1,
+		id = 1105,
+		reward = {
+			{
+				30097,
+				1
+			}
+		}
+	},
+	[1106] = {
+		minimum_guarantee = 2,
+		pool_stage = 1,
+		pool_id = 1011,
+		total = 1,
+		id = 1106,
+		reward = {
+			{
+				41303,
+				24
+			}
+		}
+	},
+	[1107] = {
+		minimum_guarantee = 2,
+		pool_stage = 1,
+		pool_id = 1011,
+		total = 1,
+		id = 1107,
+		reward = {
+			{
+				38,
+				6
+			}
+		}
+	},
+	[1108] = {
+		minimum_guarantee = 2,
+		pool_stage = 1,
+		pool_id = 1011,
+		total = 1,
+		id = 1108,
+		reward = {
+			{
+				6030,
+				1
+			}
+		}
+	},
 	get_id_list_by_pool_id = {
+		[1011] = {
+			1101,
+			1102,
+			1103,
+			1104,
+			1105,
+			1106,
+			1107,
+			1108
+		},
+		[1010] = {
+			1001,
+			1002,
+			1003,
+			1004,
+			1005,
+			1006,
+			1007,
+			1008,
+			1009,
+			1010,
+			1011,
+			1012,
+			1013,
+			1014,
+			1015,
+			1016,
+			1017,
+			1018,
+			1019,
+			1020
+		},
 		[1009] = {
 			901,
 			902,
@@ -1819,6 +2215,34 @@
 		905,
 		906,
 		907,
-		908
+		908,
+		1001,
+		1002,
+		1003,
+		1004,
+		1005,
+		1006,
+		1007,
+		1008,
+		1009,
+		1010,
+		1011,
+		1012,
+		1013,
+		1014,
+		1015,
+		1016,
+		1017,
+		1018,
+		1019,
+		1020,
+		1101,
+		1102,
+		1103,
+		1104,
+		1105,
+		1106,
+		1107,
+		1108
 	}
 }

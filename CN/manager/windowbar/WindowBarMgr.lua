@@ -405,206 +405,250 @@ function var_0_0.GetLastCanClickBarList(arg_36_0)
 	return arg_36_0.lastCanClickBarList_
 end
 
-function var_0_0.UnBindListener(arg_37_0)
-	for iter_37_0, iter_37_1 in pairs(arg_37_0.barGo_ or {}) do
-		if iter_37_0 == BACK_BAR or iter_37_0 == HOME_BAR or iter_37_0 == NAVI_BAR or iter_37_0 == INFO_BAR or iter_37_0 == EXTRA_BAR then
-			-- block empty
+function var_0_0.PushWindowBar(arg_37_0, ...)
+	arg_37_0.history = arg_37_0.history or {}
+
+	local var_37_0 = {
+		show = arg_37_0:GetIsShow(),
+		barList = arg_37_0:GetLastBarList(),
+		addList = arg_37_0:GetLastAddBarList(),
+		clickList = arg_37_0:GetLastCanClickBarList(),
+		styleInfo = arg_37_0.lastStyleInfo_,
+		back = arg_37_0:GetLastBackFunc(),
+		home = arg_37_0:GetLastHomeFunc(),
+		info = arg_37_0:GetLastInfoFunc(),
+		gameHelpKey = arg_37_0.gameHelpKey
+	}
+
+	table.insert(arg_37_0.history, var_37_0)
+	arg_37_0:SwitchBar(...)
+end
+
+function var_0_0.PopWindowBar(arg_38_0)
+	if arg_38_0.history and #arg_38_0.history > 0 then
+		local var_38_0 = table.remove(arg_38_0.history)
+
+		if var_38_0.show then
+			arg_38_0:SwitchBar(var_38_0.barList, true, var_38_0.styleInfo)
+
+			for iter_38_0, iter_38_1 in pairs(var_38_0.addList) do
+				arg_38_0:SetBarCanAdd(iter_38_1, true)
+			end
+
+			for iter_38_2, iter_38_3 in pairs(var_38_0.clickList) do
+				arg_38_0:SetBarCanClick(iter_38_3, true)
+			end
+
+			arg_38_0:RegistBackCallBack(var_38_0.back)
+			arg_38_0:RegistHomeCallBack(var_38_0.home)
+			arg_38_0:RegistInfoCallBack(var_38_0.info)
+			arg_38_0:SetGameHelpKey(var_38_0.gameHelpKey)
 		else
-			iter_37_1:UnBindListener()
+			arg_38_0:HideBar()
 		end
 	end
 end
 
-function var_0_0.IsInited(arg_38_0)
-	return not isNil(arg_38_0.gameObject_)
+function var_0_0.UnBindListener(arg_39_0)
+	for iter_39_0, iter_39_1 in pairs(arg_39_0.barGo_ or {}) do
+		if iter_39_0 == BACK_BAR or iter_39_0 == HOME_BAR or iter_39_0 == NAVI_BAR or iter_39_0 == INFO_BAR or iter_39_0 == EXTRA_BAR then
+			-- block empty
+		else
+			iter_39_1:UnBindListener()
+		end
+	end
 end
 
-function var_0_0.OnClickCurrencyBar(arg_39_0)
-	if arg_39_0.countdownGo_.activeInHierarchy then
+function var_0_0.IsInited(arg_40_0)
+	return not isNil(arg_40_0.gameObject_)
+end
+
+function var_0_0.OnClickCurrencyBar(arg_41_0)
+	if arg_41_0.countdownGo_.activeInHierarchy then
 		return
 	end
 
-	local var_39_0 = ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_VITALITY)
-	local var_39_1 = var_39_0
-	local var_39_2 = PlayerData:GetPlayerInfo().userLevel
-	local var_39_3 = GameLevelSetting[var_39_2].fatigue_max
-
-	arg_39_0:StopTimer()
-
-	if var_39_0 < var_39_3 then
-		local var_39_4 = GameSetting.fatigue_recovery.value[1] * 60
-		local var_39_5 = CurrencyData:GetLastFatigueRecoverTime() == 0 and var_39_4 or var_39_4 - (manager.time:GetServerTime() - CurrencyData:GetLastFatigueRecoverTime()) % var_39_4
-		local var_39_6 = (var_39_3 - var_39_0 - 1) * var_39_4 + (var_39_5 == var_39_4 and var_39_0 == var_39_1 and 0 or var_39_5)
-
-		arg_39_0.time_.text = string.format("%02d:%02d:%02d", math.floor(var_39_5 / 3600), math.floor(var_39_5 % 3600 / 60), var_39_5 % 60)
-		arg_39_0.allTime_.text = string.format("%02d:%02d:%02d", math.floor(var_39_6 / 3600), math.floor(var_39_6 % 3600 / 60), var_39_6 % 60)
-		arg_39_0.timer_ = Timer.New(function()
-			var_39_5 = CurrencyData:GetLastFatigueRecoverTime() == 0 and var_39_4 or var_39_4 - (manager.time:GetServerTime() - CurrencyData:GetLastFatigueRecoverTime()) % var_39_4
-			var_39_0 = ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_VITALITY)
-			var_39_6 = (var_39_3 - var_39_0 - 1) * var_39_4 + (var_39_5 == var_39_4 and var_39_0 == var_39_1 and 0 or var_39_5)
-
-			if var_39_5 <= 0 then
-				var_39_5 = 0
-			end
-
-			if var_39_6 <= 0 then
-				var_39_6 = 0
-			end
-
-			arg_39_0.time_.text = string.format("%02d:%02d:%02d", math.floor(var_39_5 / 3600), math.floor(var_39_5 % 3600 / 60), var_39_5 % 60)
-			arg_39_0.allTime_.text = string.format("%02d:%02d:%02d", math.floor(var_39_6 / 3600), math.floor(var_39_6 % 3600 / 60), var_39_6 % 60)
-			var_39_1 = var_39_0
-		end, 1, -1)
-
-		arg_39_0.timer_:Start()
-	else
-		arg_39_0.time_.text = "00:00:00"
-		arg_39_0.allTime_.text = "00:00:00"
-	end
-
-	SetActive(arg_39_0.countdownGo_, true)
-	SetActive(arg_39_0.bgBtn_.gameObject, true)
-end
-
-function var_0_0.OnStopTimer(arg_41_0)
-	arg_41_0.time_.text = "00:00:00"
-	arg_41_0.allTime_.text = "00:00:00"
+	local var_41_0 = ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_VITALITY)
+	local var_41_1 = var_41_0
+	local var_41_2 = PlayerData:GetPlayerInfo().userLevel
+	local var_41_3 = GameLevelSetting[var_41_2].fatigue_max
 
 	arg_41_0:StopTimer()
-	SetActive(arg_41_0.countdownGo_, false)
-	SetActive(arg_41_0.bgBtn_.gameObject, false)
+
+	if var_41_0 < var_41_3 then
+		local var_41_4 = GameSetting.fatigue_recovery.value[1] * 60
+		local var_41_5 = CurrencyData:GetLastFatigueRecoverTime() == 0 and var_41_4 or var_41_4 - (manager.time:GetServerTime() - CurrencyData:GetLastFatigueRecoverTime()) % var_41_4
+		local var_41_6 = (var_41_3 - var_41_0 - 1) * var_41_4 + (var_41_5 == var_41_4 and var_41_0 == var_41_1 and 0 or var_41_5)
+
+		arg_41_0.time_.text = string.format("%02d:%02d:%02d", math.floor(var_41_5 / 3600), math.floor(var_41_5 % 3600 / 60), var_41_5 % 60)
+		arg_41_0.allTime_.text = string.format("%02d:%02d:%02d", math.floor(var_41_6 / 3600), math.floor(var_41_6 % 3600 / 60), var_41_6 % 60)
+		arg_41_0.timer_ = Timer.New(function()
+			var_41_5 = CurrencyData:GetLastFatigueRecoverTime() == 0 and var_41_4 or var_41_4 - (manager.time:GetServerTime() - CurrencyData:GetLastFatigueRecoverTime()) % var_41_4
+			var_41_0 = ItemTools.getItemNum(CurrencyConst.CURRENCY_TYPE_VITALITY)
+			var_41_6 = (var_41_3 - var_41_0 - 1) * var_41_4 + (var_41_5 == var_41_4 and var_41_0 == var_41_1 and 0 or var_41_5)
+
+			if var_41_5 <= 0 then
+				var_41_5 = 0
+			end
+
+			if var_41_6 <= 0 then
+				var_41_6 = 0
+			end
+
+			arg_41_0.time_.text = string.format("%02d:%02d:%02d", math.floor(var_41_5 / 3600), math.floor(var_41_5 % 3600 / 60), var_41_5 % 60)
+			arg_41_0.allTime_.text = string.format("%02d:%02d:%02d", math.floor(var_41_6 / 3600), math.floor(var_41_6 % 3600 / 60), var_41_6 % 60)
+			var_41_1 = var_41_0
+		end, 1, -1)
+
+		arg_41_0.timer_:Start()
+	else
+		arg_41_0.time_.text = "00:00:00"
+		arg_41_0.allTime_.text = "00:00:00"
+	end
+
+	SetActive(arg_41_0.countdownGo_, true)
+	SetActive(arg_41_0.bgBtn_.gameObject, true)
 end
 
-function var_0_0.StopTimer(arg_42_0)
-	if arg_42_0.timer_ then
-		arg_42_0.timer_:Stop()
+function var_0_0.OnStopTimer(arg_43_0)
+	arg_43_0.time_.text = "00:00:00"
+	arg_43_0.allTime_.text = "00:00:00"
 
-		arg_42_0.timer_ = nil
+	arg_43_0:StopTimer()
+	SetActive(arg_43_0.countdownGo_, false)
+	SetActive(arg_43_0.bgBtn_.gameObject, false)
+end
+
+function var_0_0.StopTimer(arg_44_0)
+	if arg_44_0.timer_ then
+		arg_44_0.timer_:Stop()
+
+		arg_44_0.timer_ = nil
 	end
 end
 
-function var_0_0.Dispose(arg_43_0)
-	var_0_0.super.Dispose(arg_43_0)
-	arg_43_0:StopTimer()
+function var_0_0.Dispose(arg_45_0)
+	var_0_0.super.Dispose(arg_45_0)
+	arg_45_0:StopTimer()
 
-	for iter_43_0, iter_43_1 in pairs(arg_43_0.barGo_ or {}) do
-		if iter_43_0 == BACK_BAR or iter_43_0 == HOME_BAR or iter_43_0 == NAVI_BAR or iter_43_0 == INFO_BAR or iter_43_0 == EXTRA_BAR then
+	for iter_45_0, iter_45_1 in pairs(arg_45_0.barGo_ or {}) do
+		if iter_45_0 == BACK_BAR or iter_45_0 == HOME_BAR or iter_45_0 == NAVI_BAR or iter_45_0 == INFO_BAR or iter_45_0 == EXTRA_BAR then
 			-- block empty
 		else
-			local var_43_0 = iter_43_1.gameObject_
+			local var_45_0 = iter_45_1.gameObject_
 
-			iter_43_1:Dispose()
-			Object.Destroy(var_43_0)
+			iter_45_1:Dispose()
+			Object.Destroy(var_45_0)
 		end
 	end
 
-	arg_43_0.barGo_ = nil
+	arg_45_0.barGo_ = nil
 
-	if arg_43_0.windowPopTipsItemView_ then
-		arg_43_0.windowPopTipsItemView_:Dispose()
+	if arg_45_0.windowPopTipsItemView_ then
+		arg_45_0.windowPopTipsItemView_:Dispose()
 
-		arg_43_0.windowPopTipsItemView_ = nil
+		arg_45_0.windowPopTipsItemView_ = nil
 	end
 
-	if arg_43_0.cooperationInviteTip_ then
-		arg_43_0.cooperationInviteTip_:Dispose()
+	if arg_45_0.cooperationInviteTip_ then
+		arg_45_0.cooperationInviteTip_:Dispose()
 
-		arg_43_0.cooperationInviteTip_ = nil
+		arg_45_0.cooperationInviteTip_ = nil
 	end
 
-	if not isNil(arg_43_0.gameObject_) then
-		var_0_0.super.Dispose(arg_43_0)
-		Object.Destroy(arg_43_0.gameObject_)
+	if not isNil(arg_45_0.gameObject_) then
+		var_0_0.super.Dispose(arg_45_0)
+		Object.Destroy(arg_45_0.gameObject_)
 
-		arg_43_0.gameObject_ = nil
-		arg_43_0.transform_ = nil
+		arg_45_0.gameObject_ = nil
+		arg_45_0.transform_ = nil
 	end
 
-	arg_43_0.currencyItem_ = nil
-	arg_43_0.backBtn_ = nil
-	arg_43_0.homeBtn_ = nil
-	arg_43_0.infoBtn_ = nil
-	arg_43_0.currencyList_ = nil
-	arg_43_0.isShow_ = false
+	arg_45_0.currencyItem_ = nil
+	arg_45_0.backBtn_ = nil
+	arg_45_0.homeBtn_ = nil
+	arg_45_0.infoBtn_ = nil
+	arg_45_0.currencyList_ = nil
+	arg_45_0.isShow_ = false
 end
 
-function var_0_0.SetActive(arg_44_0, arg_44_1, arg_44_2)
-	if type(arg_44_1) == "table" then
-		arg_44_1:SetActive(arg_44_2)
-	elseif arg_44_1 then
-		SetActive(arg_44_1, arg_44_2)
+function var_0_0.SetActive(arg_46_0, arg_46_1, arg_46_2)
+	if type(arg_46_1) == "table" then
+		arg_46_1:SetActive(arg_46_2)
+	elseif arg_46_1 then
+		SetActive(arg_46_1, arg_46_2)
 	end
 end
 
-function var_0_0.getMappedKey_(arg_45_0, arg_45_1, arg_45_2)
-	if arg_45_2 and arg_45_2.prefix then
-		return arg_45_2.prefix .. arg_45_1
+function var_0_0.getMappedKey_(arg_47_0, arg_47_1, arg_47_2)
+	if arg_47_2 and arg_47_2.prefix then
+		return arg_47_2.prefix .. arg_47_1
 	else
-		return arg_45_1
+		return arg_47_1
 	end
 end
 
-function var_0_0.getOrAddBarGo_(arg_46_0, arg_46_1, arg_46_2)
-	local var_46_0 = arg_46_0:getMappedKey_(arg_46_1, arg_46_2)
-	local var_46_1 = arg_46_0.barGo_[var_46_0]
+function var_0_0.getOrAddBarGo_(arg_48_0, arg_48_1, arg_48_2)
+	local var_48_0 = arg_48_0:getMappedKey_(arg_48_1, arg_48_2)
+	local var_48_1 = arg_48_0.barGo_[var_48_0]
 
-	if not var_46_1 then
-		local var_46_2 = arg_46_0:getBarTemplate_(arg_46_2)
-		local var_46_3 = arg_46_0:getBarClass_(arg_46_1, arg_46_2)
-		local var_46_4 = Object.Instantiate(var_46_2, arg_46_0.currencyList_.transform)
+	if not var_48_1 then
+		local var_48_2 = arg_48_0:getBarTemplate_(arg_48_2)
+		local var_48_3 = arg_48_0:getBarClass_(arg_48_1, arg_48_2)
+		local var_48_4 = Object.Instantiate(var_48_2, arg_48_0.currencyList_.transform)
 
-		var_46_1 = var_46_3.New(var_46_4, arg_46_1)
-		arg_46_0.barGo_[var_46_0] = var_46_1
+		var_48_1 = var_48_3.New(var_48_4, arg_48_1)
+		arg_48_0.barGo_[var_48_0] = var_48_1
 
-		if arg_46_1 == CurrencyConst.CURRENCY_TYPE_VITALITY then
-			arg_46_0.countdownGo_.transform:SetParent(var_46_4.transform)
+		if arg_48_1 == CurrencyConst.CURRENCY_TYPE_VITALITY then
+			arg_48_0.countdownGo_.transform:SetParent(var_48_4.transform)
 
-			arg_46_0.countdownGo_.transform:GetComponent("RectTransform").anchoredPosition = Vector2(0, -50)
+			arg_48_0.countdownGo_.transform:GetComponent("RectTransform").anchoredPosition = Vector2(0, -50)
 
-			var_46_1:RegistClickFunc(handler(arg_46_0, arg_46_0.OnClickCurrencyBar))
-			var_46_1:RegistTimeFunc(handler(arg_46_0, arg_46_0.OnStopTimer))
+			var_48_1:RegistClickFunc(handler(arg_48_0, arg_48_0.OnClickCurrencyBar))
+			var_48_1:RegistTimeFunc(handler(arg_48_0, arg_48_0.OnStopTimer))
 		end
 	end
 
-	return var_46_1
+	return var_48_1
 end
 
-function var_0_0.getBarTemplate_(arg_47_0, arg_47_1)
-	if arg_47_1 and arg_47_1.prefix and arg_47_1.prefix == "HOME:" then
-		return arg_47_0.currencyItemMainHome_ or arg_47_0.currencyItem_
+function var_0_0.getBarTemplate_(arg_49_0, arg_49_1)
+	if arg_49_1 and arg_49_1.prefix and arg_49_1.prefix == "HOME:" then
+		return arg_49_0.currencyItemMainHome_ or arg_49_0.currencyItem_
 	end
 
-	return arg_47_0.currencyItem_
+	return arg_49_0.currencyItem_
 end
 
-function var_0_0.getBarClass_(arg_48_0, arg_48_1, arg_48_2)
-	if arg_48_1 == ACTIVITY_MATRIX_COIN then
+function var_0_0.getBarClass_(arg_50_0, arg_50_1, arg_50_2)
+	if arg_50_1 == ACTIVITY_MATRIX_COIN then
 		return var_0_3
-	elseif arg_48_1 == ACTIVITY_COIN then
+	elseif arg_50_1 == ACTIVITY_COIN then
 		return var_0_4
-	elseif ItemCfg[arg_48_1] then
-		if ItemCfg[arg_48_1].type == ItemConst.ITEM_TYPE.MATERIAL then
+	elseif ItemCfg[arg_50_1] then
+		if ItemCfg[arg_50_1].type == ItemConst.ITEM_TYPE.MATERIAL then
 			return var_0_2
 		else
 			return var_0_1
 		end
-	elseif type(arg_48_1) == "table" and arg_48_1.GetBarClass then
-		return arg_48_1:GetBarClass(arg_48_2)
+	elseif type(arg_50_1) == "table" and arg_50_1.GetBarClass then
+		return arg_50_1:GetBarClass(arg_50_2)
 	end
 end
 
-function var_0_0.getMappedBarList_(arg_49_0, arg_49_1, arg_49_2)
-	if arg_49_2 == nil or arg_49_2.prefix == nil then
-		return arg_49_1
+function var_0_0.getMappedBarList_(arg_51_0, arg_51_1, arg_51_2)
+	if arg_51_2 == nil or arg_51_2.prefix == nil then
+		return arg_51_1
 	end
 
-	local var_49_0 = {}
+	local var_51_0 = {}
 
-	for iter_49_0, iter_49_1 in ipairs(arg_49_1) do
-		table.insert(var_49_0, arg_49_0:getMappedKey_(iter_49_1, arg_49_2))
+	for iter_51_0, iter_51_1 in ipairs(arg_51_1) do
+		table.insert(var_51_0, arg_51_0:getMappedKey_(iter_51_1, arg_51_2))
 	end
 
-	return var_49_0
+	return var_51_0
 end
 
 return var_0_0

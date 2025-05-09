@@ -17,15 +17,27 @@ end
 
 function var_0_0.AddUIListeners(arg_4_0)
 	arg_4_0:AddBtnListener(arg_4_0.tabOnBtn_, nil, function()
+		if SkuldPuzzleBrige.CheckIsHaveDragging() then
+			return
+		end
+
 		arg_4_0:OnClickChangeStoryMode(true)
 	end)
 	arg_4_0:AddBtnListener(arg_4_0.tabOffBtn_, nil, function()
+		if SkuldPuzzleBrige.CheckIsHaveDragging() then
+			return
+		end
+
 		arg_4_0:OnClickChangeStoryMode(false)
 	end)
 	arg_4_0:AddBtnListener(arg_4_0.talkbubbleclickareaBtn_, nil, function()
 		arg_4_0:SkuldTalkBubble()
 	end)
 	arg_4_0:AddBtnListener(arg_4_0.resetbtnBtn_, nil, function()
+		if SkuldPuzzleBrige.CheckIsHaveDragging() then
+			return
+		end
+
 		arg_4_0.battle_times = arg_4_0.battle_times + 1
 
 		SkuldPuzzleBrige.ResetGame()

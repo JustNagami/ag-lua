@@ -41,10 +41,6 @@ end
 function var_0_0.RefreshUI(arg_8_0)
 	arg_8_0.textPoolName_.text = arg_8_0.info_.pool_name
 
-	if arg_8_0.info_.pool_sign ~= "" then
-		arg_8_0.imgSign_.sprite = getSprite("Atlas/T0_109502Atlas", arg_8_0.info_.pool_sign)
-	end
-
 	if arg_8_0.info_.poll_picture_select ~= "" then
 		arg_8_0.imgSelect_.sprite = pureGetSpriteWithoutAtlas(arg_8_0.info_.poll_picture_select)
 	end
@@ -60,7 +56,6 @@ end
 
 function var_0_0.SelectItem(arg_10_0, arg_10_1)
 	arg_10_0.selectCon_:SetSelectedState(arg_10_1 and "select" or "unselect")
-	SetActive(arg_10_0.imgSign_.gameObject, arg_10_1 and arg_10_0.info_.pool_sign ~= "")
 end
 
 function var_0_0.GetItemIndex(arg_11_0)

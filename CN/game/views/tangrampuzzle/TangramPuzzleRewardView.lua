@@ -45,6 +45,8 @@ function var_0_0.RefreshUI(arg_9_0)
 	for iter_9_0, iter_9_1 in pairs(arg_9_0.regionList_) do
 		iter_9_1:SetData(arg_9_0.activityID_, iter_9_0)
 	end
+
+	arg_9_0.completeImg_.sprite = pureGetSpriteWithoutAtlas(var_9_0.path .. var_9_0.album_id)
 end
 
 function var_0_0.SpawnRegion(arg_10_0, arg_10_1)
@@ -74,6 +76,12 @@ function var_0_0.DispawnRegion(arg_11_0)
 	end
 
 	arg_11_0.maskList_ = nil
+end
+
+function var_0_0.OnExitInput(arg_12_0)
+	arg_12_0:Back()
+
+	return true
 end
 
 return var_0_0

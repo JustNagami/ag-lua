@@ -33,40 +33,52 @@ function var_0_0.AddUIListeners(arg_3_0)
 	arg_3_0:AddBtnListener(arg_3_0.playBtn_, nil, function()
 		local var_4_0 = {}
 		local var_4_1 = HeroCfg[arg_3_0.selectHeroId]
-		local var_4_2 = Asset.Instantiate(var_0_1[var_4_1.race])
+		local var_4_2 = Asset.Load(var_0_1[var_4_1.race])
+		local var_4_3 = GameObject.Instantiate(var_4_2)
 
-		var_4_2.layer = LayerMask.NameToLayer("Default")
+		var_4_3:GetComponent(typeof(PooledAsset)):SetActive(true)
 
-		local var_4_3 = var_4_2:GetComponentsInChildren(typeof(Transform), true)
+		var_4_3.layer = LayerMask.NameToLayer("Default")
 
-		for iter_4_0, iter_4_1 in pairs(var_4_3:ToTable()) do
+		local var_4_4 = var_4_3:GetComponentsInChildren(typeof(Transform), true)
+
+		for iter_4_0, iter_4_1 in pairs(var_4_4:ToTable()) do
 			iter_4_1.gameObject.layer = LayerMask.NameToLayer("Default")
 		end
 
-		SceneManager.MoveGameObjectToScene(var_4_2, SceneManager.GetSceneByName("X109"))
-		table.insert(var_4_0, var_4_2)
+		SceneManager.MoveGameObjectToScene(var_4_3, SceneManager.GetSceneByName("X109"))
+		table.insert(var_4_0, {
+			obj = var_4_3,
+			path = var_0_1[var_4_1.race]
+		})
 
 		for iter_4_2, iter_4_3 in ipairs(arg_3_0.heroIDList) do
 			SetActive(arg_3_0[string.format("head%sGo_", iter_4_2)], true)
 
-			local var_4_4 = arg_3_0.heroViewProxy_:GetHeroUsingSkinInfo(iter_4_3).id
+			local var_4_5 = arg_3_0.heroViewProxy_:GetHeroUsingSkinInfo(iter_4_3).id
 
-			if var_4_4 < 10000 then
-				var_4_4 = var_4_4 * 100
+			if var_4_5 < 10000 then
+				var_4_5 = var_4_5 * 100
 			end
 
-			local var_4_5 = Asset.Instantiate("CooperateUniqueSkillTimeline/" .. var_4_4 .. "/" .. arg_3_0.cfg.prefab_path)
+			local var_4_6 = "CooperateUniqueSkillTimeline/" .. var_4_5 .. "/" .. arg_3_0.cfg.prefab_path
+			local var_4_7 = Asset.Load(var_4_6)
+			local var_4_8 = GameObject.Instantiate(var_4_7)
 
-			table.insert(var_4_0, var_4_5)
+			var_4_8:GetComponent(typeof(PooledAsset)):SetActive(true)
+			table.insert(var_4_0, {
+				obj = var_4_8,
+				path = var_4_6
+			})
 		end
 
-		local var_4_6 = arg_3_0.heroIDList[1]
+		local var_4_9 = arg_3_0.heroIDList[1]
 
-		if var_4_6 < 10000 then
-			var_4_6 = var_4_6 * 100
+		if var_4_9 < 10000 then
+			var_4_9 = var_4_9 * 100
 		end
 
-		arg_3_0.callBack(var_4_0, var_4_6, arg_3_0.cfg.prefab_path)
+		arg_3_0.callBack(var_4_0, var_4_9, arg_3_0.cfg.prefab_path)
 	end)
 end
 

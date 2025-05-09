@@ -18,7 +18,7 @@ function var_0_0.InitDrawData(arg_2_0, arg_2_1)
 
 	var_0_1[var_2_0] = {}
 	arg_2_0.mainActivityId_ = ActivityCfg.get_id_list_by_sub_activity_list[var_2_0][1]
-	arg_2_0.sceneList_ = ActivitySkinDrawTools.GetAllReward(arg_2_0.mainActivityId_)
+	arg_2_0.sceneList_, arg_2_0.skinId_ = ActivitySkinDrawTools.GetAllReward(arg_2_0.mainActivityId_)
 
 	for iter_2_0, iter_2_1 in ipairs(arg_2_1.info) do
 		local var_2_1 = iter_2_1.drop_id
@@ -121,18 +121,22 @@ function var_0_0.GetSceneId(arg_14_0, arg_14_1)
 	return arg_14_0.sceneList_[arg_14_1]
 end
 
-function var_0_0.GetStoryActivityId(arg_15_0)
-	return arg_15_0.nowStoryActivityId_
+function var_0_0.GetSkinId(arg_15_0)
+	return arg_15_0.skinId_
 end
 
-function var_0_0.FinishedStory(arg_16_0, arg_16_1)
-	if not table.indexof(arg_16_0.finishedStory_, arg_16_1) then
-		table.insert(arg_16_0.finishedStory_, arg_16_1)
+function var_0_0.GetStoryActivityId(arg_16_0)
+	return arg_16_0.nowStoryActivityId_
+end
+
+function var_0_0.FinishedStory(arg_17_0, arg_17_1)
+	if not table.indexof(arg_17_0.finishedStory_, arg_17_1) then
+		table.insert(arg_17_0.finishedStory_, arg_17_1)
 	end
 end
 
-function var_0_0.GetFinishedStory(arg_17_0)
-	return arg_17_0.finishedStory_
+function var_0_0.GetFinishedStory(arg_18_0)
+	return arg_18_0.finishedStory_
 end
 
 return var_0_0

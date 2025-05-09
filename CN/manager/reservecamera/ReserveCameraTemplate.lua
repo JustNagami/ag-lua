@@ -30,7 +30,8 @@ function var_0_0.SwitchCamera(arg_3_0, arg_3_1, arg_3_2)
 	arg_3_0.curGroupID = arg_3_0:GetTargetCameraGroupID(arg_3_1, arg_3_2)
 
 	arg_3_0.cameraGroupList[arg_3_0.curGroupID]:SetActive(true)
-	arg_3_0.cameraGroupList[arg_3_0.curGroupID]:SwitchCamera(arg_3_1, arg_3_2)
+
+	return arg_3_0.cameraGroupList[arg_3_0.curGroupID]:SwitchCamera(arg_3_1, arg_3_2)
 end
 
 function var_0_0.GetTargetCameraGroupID(arg_4_0, arg_4_1, arg_4_2)

@@ -371,7 +371,7 @@ function var_0_0.RefreshSelect(arg_24_0)
 end
 
 function var_0_0.RefreshSlider(arg_25_0)
-	local var_25_0 = arg_25_0.itemCfg_.sub_type == ItemConst.ITEM_SUB_TYPE.OPTIONAL_ITEM
+	local var_25_0 = arg_25_0.itemCfg_.sub_type == ItemConst.ITEM_SUB_TYPE.OPTIONAL_ITEM or ItemTools.getItemNum(arg_25_0.itemInfo_[1]) == 1
 
 	arg_25_0.slider_.minValue = var_25_0 and 0 or arg_25_0.useNum_
 	arg_25_0.slider_.maxValue = var_25_0 and 1 or ItemTools.getItemNum(arg_25_0.itemInfo_[1])
@@ -381,8 +381,8 @@ function var_0_0.RefreshSlider(arg_25_0)
 	arg_25_0.addBtn_.interactable = not var_25_0 and arg_25_0.useNum_ < ItemTools.getItemNum(arg_25_0.itemInfo_[1]) or false
 
 	arg_25_0.slider_.onValueChanged:AddListener(function(arg_26_0)
-		arg_25_0.subBtn_.interactable = not var_25_0 and arg_25_0.useNum_ > 1 or false
-		arg_25_0.addBtn_.interactable = not var_25_0 and arg_25_0.useNum_ < ItemTools.getItemNum(arg_25_0.itemInfo_[1]) or false
+		arg_25_0.subBtn_.interactable = not var_25_0 and arg_26_0 > 1 or false
+		arg_25_0.addBtn_.interactable = not var_25_0 and arg_26_0 < ItemTools.getItemNum(arg_25_0.itemInfo_[1]) or false
 
 		if arg_26_0 < 1 then
 			arg_25_0.slider_.value = 1

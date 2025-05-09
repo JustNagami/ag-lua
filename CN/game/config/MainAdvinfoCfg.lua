@@ -1921,6 +1921,68 @@
 		},
 		time = {}
 	},
+	[40101] = {
+		id = 40101,
+		hide_condition = "",
+		type = 3,
+		picture = "activity_1045_1046",
+		activityId = 0,
+		order = 95,
+		parameter = {
+			333881
+		},
+		time = {
+			{
+				{
+					2025,
+					5,
+					22
+				},
+				{
+					5,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2025,
+					6,
+					21
+				},
+				{
+					12,
+					0,
+					0
+				}
+			}
+		}
+	},
+	[40102] = {
+		id = 40102,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_1211",
+		activityId = 330031,
+		order = 80,
+		parameter = {
+			404,
+			4010601
+		},
+		time = {}
+	},
+	[40103] = {
+		id = 40103,
+		hide_condition = "",
+		type = 1,
+		picture = "activity_121101",
+		activityId = 331111,
+		order = 86,
+		parameter = {
+			525
+		},
+		time = {}
+	},
 	[31000] = {
 		id = 31000,
 		hide_condition = "",
@@ -2085,6 +2147,9 @@
 		148,
 		149,
 		150,
+		40101,
+		40102,
+		40103,
 		31000,
 		31001
 	}

@@ -6,7 +6,7 @@ function var_0_0.Ctor(arg_1_0, arg_1_1, arg_1_2)
 end
 
 function var_0_0.GetModelPath(arg_2_0)
-	return manager.heroUiTimeline:GetModelPath(arg_2_0:GetSkinId(), arg_2_0:GetModelId())
+	return HeroUITimelineMgr.GetModelPath(arg_2_0:GetSkinId(), arg_2_0:GetModelId())
 end
 
 function var_0_0.LoadModel(arg_3_0)
@@ -14,7 +14,7 @@ function var_0_0.LoadModel(arg_3_0)
 
 	arg_3_0.animator = arg_3_0.ui_topse:GetComponent(typeof(Animator))
 
-	manager.heroUiTimeline:BindHero(arg_3_0:GetSkinId(), arg_3_0:GetModelId(), arg_3_0.tpose)
+	arg_3_0:GetHeroTimelineMgr():BindHero(arg_3_0:GetSkinId(), arg_3_0:GetModelId(), arg_3_0.tpose)
 end
 
 function var_0_0.GetTag(arg_4_0)
@@ -105,7 +105,6 @@ function var_0_0.DoIdle(arg_13_0)
 	end
 
 	arg_13_0:ChangeState(PosterGirlConst.StateKay.idle)
-	arg_13_0.super.DoIdle(arg_13_0)
 end
 
 function var_0_0.DoInit(arg_14_0, arg_14_1)
@@ -113,7 +112,7 @@ function var_0_0.DoInit(arg_14_0, arg_14_1)
 end
 
 function var_0_0.Dispose(arg_15_0)
-	manager.heroUiTimeline:Unbind()
+	arg_15_0:GetHeroTimelineMgr():Unbind()
 	var_0_0.super.Dispose(arg_15_0)
 end
 

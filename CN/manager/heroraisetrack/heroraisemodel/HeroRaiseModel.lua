@@ -118,7 +118,7 @@ function var_0_0.LoadHeroModel(arg_13_0)
 
 	arg_13_0:UnloadHeroModel()
 
-	arg_13_0.tpose = manager.resourcePool:Get(manager.heroUiTimeline:GetModelPath(arg_13_0.skinID, arg_13_0.modelID), ASSET_TYPE.TPOSE)
+	arg_13_0.tpose = manager.resourcePool:Get(HeroUITimelineMgr.GetModelPath(arg_13_0.skinID, arg_13_0.modelID), ASSET_TYPE.TPOSE)
 	arg_13_0.ui_tpose = arg_13_0.tpose.transform:Find(string.format("%dui/%dui_tpose", arg_13_0.skinID, arg_13_0.skinID)).gameObject
 	arg_13_0.rotateGo_ = arg_13_0.tpose.transform:Find(string.format("%dui", arg_13_0.skinID)).gameObject
 	arg_13_0.animator_ = arg_13_0.ui_tpose:GetComponent(typeof(Animator))

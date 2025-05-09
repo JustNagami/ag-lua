@@ -1274,7 +1274,74 @@
 			}
 		}
 	},
+	[104901] = {
+		story_id = 710490103,
+		id = 104901,
+		story_condtion_id = 0,
+		relate_hero_id = 1150,
+		relation_des = "相识",
+		main_hero_id = 1049,
+		story_reward = {
+			{
+				1,
+				30
+			}
+		}
+	},
+	[104902] = {
+		story_id = 0,
+		id = 104902,
+		story_reward = "",
+		story_condtion_id = 0,
+		relate_hero_id = 1055,
+		relation_des = "相识",
+		main_hero_id = 1049
+	},
+	[104903] = {
+		story_id = 710490102,
+		id = 104903,
+		story_condtion_id = 0,
+		relate_hero_id = 1093,
+		relation_des = "合作伙伴",
+		main_hero_id = 1049,
+		story_reward = {
+			{
+				1,
+				30
+			}
+		}
+	},
+	[104904] = {
+		story_id = 0,
+		id = 104904,
+		story_reward = "",
+		story_condtion_id = 0,
+		relate_hero_id = 1099,
+		relation_des = "合作伙伴",
+		main_hero_id = 1049
+	},
+	[104905] = {
+		story_id = 710490101,
+		id = 104905,
+		story_condtion_id = 0,
+		relate_hero_id = 1015,
+		relation_des = "同伴",
+		main_hero_id = 1049,
+		story_reward = {
+			{
+				1,
+				30
+			}
+		}
+	},
 	get_id_list_by_main_hero_id = {
+		[1049] = {
+			104901,
+			104902,
+			104903,
+			104904,
+			104905
+		},
 		[1075] = {
 			107501,
 			107502,
@@ -1536,6 +1603,11 @@
 		107502,
 		107503,
 		107504,
-		107505
+		107505,
+		104901,
+		104902,
+		104903,
+		104904,
+		104905
 	}
 }

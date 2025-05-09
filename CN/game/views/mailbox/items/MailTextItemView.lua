@@ -26,7 +26,7 @@ end
 function var_0_0.AddListeners(arg_4_0)
 	arg_4_0.richText_:AddListener(function(arg_5_0, arg_5_1)
 		if arg_5_0 == "1" then
-			Application.OpenURL(arg_5_1)
+			OperationAction.OpenNormalUrl(arg_5_1)
 		elseif arg_5_0 == "2" then
 			local var_5_0 = string.split(arg_5_1, ",")
 			local var_5_1 = {}

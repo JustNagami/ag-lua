@@ -169,6 +169,10 @@
 		component = HeroView
 	},
 	{
+		name = "foreignHero",
+		component = ForeignHeroView
+	},
+	{
 		name = "heroUpgrade",
 		component = HeroUpgradeView
 	},
@@ -3128,6 +3132,10 @@
 		component = ReserveProposalView
 	},
 	{
+		name = "reserveProposalRename",
+		component = ReserveProposalRenameView
+	},
+	{
 		name = "activityRaceHeroTeamInfo",
 		component = ActivityRaceHeroTeamInfoView
 	},
@@ -5813,7 +5821,7 @@
 	},
 	{
 		name = "tetrisGameGetSkillView",
-		component = TetrisGameGetSkillView
+		component = TetrisGameGetSkillViewNew
 	},
 	{
 		name = "tetrisGameChooseStageView",
@@ -6434,5 +6442,77 @@
 	{
 		name = "PureModeView",
 		component = PureModeView
+	},
+	{
+		name = "GuelGameSeclectView",
+		component = GuelGameSeclectView
+	},
+	{
+		name = "GuelGameView",
+		component = GuelGameView
+	},
+	{
+		name = "DrawCardT0GameView",
+		component = DrawCardT0GameView
+	},
+	{
+		name = "DanceGameView",
+		component = DanceGameView
+	},
+	{
+		name = "TZeroGameChangeView",
+		component = TZeroGameChangeView
+	},
+	{
+		name = "osirisPlayGameEnterView",
+		component = OsirisPlayGameEnterView
+	},
+	{
+		name = "osirisPlayGameLimitRewardView",
+		component = OsirisPlayGameLimitRewardView
+	},
+	{
+		name = "osirisPlayGameBattleRecordView",
+		component = OsirisPlayGameBattleRecordView
+	},
+	{
+		name = "osirisPlayGameStageView",
+		component = OsirisPlayGameStageView
+	},
+	{
+		name = "osirisPlayGameChallegeStageView",
+		component = OsirisPlayGameChallegeStageView
+	},
+	{
+		name = "osirisPlayGameRankView",
+		component = OsirisPlayGameRankView
+	},
+	{
+		name = "osirisPlayGameSectionSelectHeroView",
+		component = OsirisPlayGameSectionSelectHeroView
+	},
+	{
+		name = "osirisPlayGameSectionInfoView",
+		component = OsirisPlayGameSectionInfoView
+	},
+	{
+		name = "osirisPlayGameHeroTeamInfoView",
+		component = OsirisPlayGameHeroTeamInfoView
+	},
+	{
+		name = "osirisPlayGameUnlockPopView",
+		component = OsirisPlayGameUnlockPopView
+	},
+	{
+		name = "limitTimeTaskBaseView",
+		component = LimitTimeTaskBaseView
+	},
+	{
+		name = "osirisPlayGameSettlementWinView",
+		component = OsirisPlayGameSettlementWinView
+	},
+	{
+		name = "osirisPlayGameTipsView",
+		component = OsirisPlayGameTipsView
 	}
 }

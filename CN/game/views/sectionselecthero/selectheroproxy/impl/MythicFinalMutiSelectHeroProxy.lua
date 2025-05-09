@@ -34,7 +34,6 @@ end
 function var_0_1.GetCustomeTeamInfoParams(arg_6_0, arg_6_1)
 	return {
 		canCleanTeam = true,
-		isEnter = false,
 		selectHeroPos = arg_6_1,
 		section = arg_6_0.stageID,
 		sectionType = arg_6_0.stageType,

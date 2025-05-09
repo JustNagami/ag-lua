@@ -370,18 +370,24 @@ function var_0_0.UpdateUnlockedView(arg_23_0)
 		arg_23_0.topLevelText_.text = "/" .. var_23_4
 
 		if var_23_0 < var_23_4 then
+			var_23_5 = arg_23_0.type_ == HeroConst.HERO_DATA_TYPE.OSIRISPLAYGAME and var_23_5 < 0 and 0 or var_23_5
+
 			local var_23_9 = GameLevelSetting[var_23_0].hero_level_exp1
 
 			arg_23_0.expProgressBar_.value = math.floor(var_23_5 / var_23_9 * 1000) / 1000
 			arg_23_0.expText_.text = string.format("%d/%d", var_23_5, var_23_9)
-		elseif LvTools.GetIsMaxLv(var_23_0, "hero") then
-			arg_23_0.expProgressBar_.value = 1
-			arg_23_0.expText_.text = "-/-"
 		else
-			local var_23_10 = GameLevelSetting[var_23_0].hero_level_exp1
+			var_23_5 = arg_23_0.type_ == HeroConst.HERO_DATA_TYPE.OSIRISPLAYGAME and var_23_5 < 0 and 0 or var_23_5
 
-			arg_23_0.expProgressBar_.value = math.floor(var_23_5 / var_23_10 * 1000) / 1000
-			arg_23_0.expText_.text = string.format("%d/%d", var_23_5, var_23_10)
+			if LvTools.GetIsMaxLv(var_23_0, "hero") then
+				arg_23_0.expProgressBar_.value = 1
+				arg_23_0.expText_.text = "-/-"
+			else
+				local var_23_10 = GameLevelSetting[var_23_0].hero_level_exp1
+
+				arg_23_0.expProgressBar_.value = math.floor(var_23_5 / var_23_10 * 1000) / 1000
+				arg_23_0.expText_.text = string.format("%d/%d", var_23_5, var_23_10)
+			end
 		end
 	end
 

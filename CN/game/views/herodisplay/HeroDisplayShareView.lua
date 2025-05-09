@@ -8,7 +8,6 @@ function var_0_1.Ctor(arg_1_0, arg_1_1)
 	arg_1_0:BindCfgUI()
 	arg_1_0:AddListeners()
 
-	arg_1_0.screenSnapPath_ = Application.persistentDataPath .. "/screen_snap/picture_for_share.jpg"
 	arg_1_0.shareCallbackHandler_ = handler(arg_1_0, arg_1_0.ShareCallback)
 end
 
@@ -56,6 +55,7 @@ function var_0_1.OnSnape(arg_3_0, arg_3_1)
 	end
 
 	arg_3_0.imageBg_.sprite = var_3_3
+	arg_3_0.screenSnapPath_ = manager.share:SaveTexture()
 
 	arg_3_0.screenSnap_:SaveSnap(arg_3_0.screenSnapPath_)
 	SetActive(arg_3_0.gameObject_, true)
@@ -93,116 +93,123 @@ function var_0_1.OnExit(arg_5_0)
 	arg_5_0.screenSnap_ = nil
 end
 
-function var_0_1.Dispose(arg_6_0)
-	var_0_1.super.Dispose(arg_6_0)
+function var_0_1.ExitPanel(arg_6_0)
+	if arg_6_0.exitViewFunc then
+		arg_6_0.exitViewFunc()
+	end
 
-	arg_6_0.shareCallbackHandler_ = nil
+	SetActive(arg_6_0.gameObject_, false)
 end
 
-function var_0_1.AddListeners(arg_7_0)
-	arg_7_0:AddBtnListener(arg_7_0.buttonCancel_, nil, function()
-		if arg_7_0.exitViewFunc then
-			arg_7_0.exitViewFunc()
-		end
+function var_0_1.Dispose(arg_7_0)
+	var_0_1.super.Dispose(arg_7_0)
 
-		SetActive(arg_7_0.gameObject_, false)
+	arg_7_0.shareCallbackHandler_ = nil
+end
+
+function var_0_1.AddListeners(arg_8_0)
+	arg_8_0:AddBtnListener(arg_8_0.buttonCancel_, nil, function()
+		arg_8_0:ExitPanel()
 	end)
-	arg_7_0:AddBtnListener(arg_7_0.buttonQQ_, nil, function()
-		arg_7_0:Share("QQ")
+	arg_8_0:AddBtnListener(arg_8_0.buttonQQ_, nil, function()
+		arg_8_0:Share("QQ")
 	end)
-	arg_7_0:AddBtnListener(arg_7_0.buttonQQZone_, nil, function()
-		arg_7_0:Share("QZone")
+	arg_8_0:AddBtnListener(arg_8_0.buttonQQZone_, nil, function()
+		arg_8_0:Share("QZone")
 	end)
-	arg_7_0:AddBtnListener(arg_7_0.buttonWechat_, nil, function()
-		arg_7_0:Share("Wechat")
+	arg_8_0:AddBtnListener(arg_8_0.buttonWechat_, nil, function()
+		arg_8_0:Share("Wechat")
 	end)
-	arg_7_0:AddBtnListener(arg_7_0.buttonWechatMoments_, nil, function()
-		arg_7_0:Share("WechatMoments")
+	arg_8_0:AddBtnListener(arg_8_0.buttonWechatMoments_, nil, function()
+		arg_8_0:Share("WechatMoments")
 	end)
-	arg_7_0:AddBtnListener(arg_7_0.buttonWeibo_, nil, function()
-		arg_7_0:Share("SinaWeibo")
+	arg_8_0:AddBtnListener(arg_8_0.buttonWeibo_, nil, function()
+		arg_8_0:Share("SinaWeibo")
 	end)
-	arg_7_0:AddBtnListener(arg_7_0.buttonTwiiter_, nil, function()
-		arg_7_0:Share(nil)
+	arg_8_0:AddBtnListener(arg_8_0.buttonTwiiter_, nil, function()
+		arg_8_0:Share(nil)
 	end)
-	arg_7_0:AddBtnListener(arg_7_0.buttonSave_, nil, function()
+	arg_8_0:AddBtnListener(arg_8_0.buttonSave_, nil, function()
 		if GameToSDK.IsEditorOrPcPlatform() then
-			LuaForUtil.SaveScreenShot(arg_7_0.screenSnapPath_)
+			LuaForUtil.SaveScreenShot(arg_8_0.screenSnapPath_)
 		else
-			LuaForUtil.SavePhotoToAlbum(arg_7_0.screenSnapPath_)
+			local var_16_0 = manager.share:SaveTexture()
+
+			arg_8_0.screenSnap_:SaveSnap(var_16_0)
+			LuaForUtil.SavePhotoToAlbum(var_16_0)
 		end
 	end)
-	arg_7_0:AddBtnListener(arg_7_0.buttonPath_, nil, function()
+	arg_8_0:AddBtnListener(arg_8_0.buttonPath_, nil, function()
 		if GameToSDK.IsEditorOrPcPlatform() then
 			LuaForUtil.OpenScreenShotFolder()
 		end
 	end)
 end
 
-function var_0_1.Share(arg_17_0, arg_17_1)
+function var_0_1.Share(arg_18_0, arg_18_1)
 	if GameToSDK.IsEditorOrPcPlatform() then
 		ShowTips("SHARE_PLATFORM")
 
 		return
 	end
 
-	local var_17_0 = GetTips("SHARE_TITLE")
-	local var_17_1 = GetTips("SHARE_CONTENT")
-	local var_17_2 = GetTips("SHARE_URL")
-	local var_17_3
-	local var_17_4 = arg_17_1 == nil and "Share" or "ShareWithPlatform"
-	local var_17_5 = {
+	local var_18_0 = GetTips("SHARE_TITLE")
+	local var_18_1 = GetTips("SHARE_CONTENT")
+	local var_18_2 = GetTips("SHARE_URL")
+	local var_18_3
+	local var_18_4 = arg_18_1 == nil and "Share" or "ShareWithPlatform"
+	local var_18_5 = {
 		imageUrl = "",
-		messageType = var_17_4,
-		url = var_17_2,
-		title = var_17_0,
-		content = var_17_1,
-		imagePath = arg_17_0.screenSnapPath_,
-		platform = arg_17_1
+		messageType = var_18_4,
+		url = var_18_2,
+		title = var_18_0,
+		content = var_18_1,
+		imagePath = arg_18_0.screenSnapPath_,
+		platform = arg_18_1
 	}
 
-	arg_17_0.paltform_ = arg_17_1
+	arg_18_0.paltform_ = arg_18_1
 
-	local var_17_6 = var_0_0.encode(var_17_5)
+	local var_18_6 = var_0_0.encode(var_18_5)
 
-	SendMessageToSDK(var_17_6)
+	SendMessageToSDK(var_18_6)
 end
 
-function var_0_1.ShareCallback(arg_18_0, arg_18_1)
-	if arg_18_1 == 0 then
-		arg_18_0:SendToSDK(arg_18_0.paltform_)
-	elseif arg_18_1 == 2 then
+function var_0_1.ShareCallback(arg_19_0, arg_19_1)
+	if arg_19_1 == 0 then
+		arg_19_0:SendToSDK(arg_19_0.paltform_)
+	elseif arg_19_1 == 2 then
 		-- block empty
 	end
 end
 
-function var_0_1.SendToSDK(arg_19_0, arg_19_1)
-	if arg_19_0.heroId_ then
-		local var_19_0 = HeroDisplayData:GetHeroPoseList(arg_19_0.heroId_)[arg_19_0.posIndex_]
-		local var_19_1 = 0
+function var_0_1.SendToSDK(arg_20_0, arg_20_1)
+	if arg_20_0.heroId_ then
+		local var_20_0 = HeroDisplayData:GetHeroPoseList(arg_20_0.heroId_)[arg_20_0.posIndex_]
+		local var_20_1 = 0
 
-		if arg_19_0.showWeapon_ and var_19_0.weaponState ~= HeroDisplayConst.WEAPON_STATE.HIDE_WEAPON then
-			var_19_1 = 1
+		if arg_20_0.showWeapon_ and var_20_0.weaponState ~= HeroDisplayConst.WEAPON_STATE.HIDE_WEAPON then
+			var_20_1 = 1
 		end
 
 		SDKTools.SendMessageToSDK("screenshot", {
 			screenshot_oper = 2,
-			hero_id = arg_19_0.heroId_,
-			weapon_on = var_19_1,
-			posture_id = arg_19_0.posIndex_,
+			hero_id = arg_20_0.heroId_,
+			weapon_on = var_20_1,
+			posture_id = arg_20_0.posIndex_,
 			logo_location = HeroDisplayData.settingProfile_.logoPos == 0 and 2 or HeroDisplayData.settingProfile_.logoPos,
 			card_show = HeroDisplayData.settingProfile_.cardShow and 1 or 0,
 			card_location = HeroDisplayData.settingProfile_.cardPos == 0 and 1 or HeroDisplayData.settingProfile_.cardPos,
 			lv_show = HeroDisplayData.settingProfile_.cardShowLv and 1 or 0,
 			uid_show = HeroDisplayData.settingProfile_.cardShowUID and 1 or 0,
-			share_channel = SDKTools.PlatformStrToId(arg_19_1)
+			share_channel = SDKTools.PlatformStrToId(arg_20_1)
 		})
 	end
 end
 
-function var_0_1.ExitViewCallBack(arg_20_0, arg_20_1)
-	if arg_20_1 then
-		arg_20_0.exitViewFunc = arg_20_1
+function var_0_1.ExitViewCallBack(arg_21_0, arg_21_1)
+	if arg_21_1 then
+		arg_21_0.exitViewFunc = arg_21_1
 	end
 end
 

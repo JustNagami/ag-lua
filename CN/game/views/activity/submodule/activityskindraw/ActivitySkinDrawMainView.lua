@@ -96,7 +96,7 @@ function var_0_0.AddUIListeners(arg_5_0)
 	end)
 	arg_5_0:AddBtnListener(arg_5_0.previewBtn_, nil, function()
 		local var_12_0 = arg_5_0.sceneIDList_[arg_5_0.curPoolID_]
-		local var_12_1 = HomeSceneSettingData:SetPreviewScene(var_12_0)
+		local var_12_1 = HomeSceneSettingData:SetPreviewScene(var_12_0, 1084)
 
 		HomeSceneSettingData:SetPreviewSceneParams(var_12_1)
 		OpenPageUntilLoaded("/homePreview", var_12_1)
@@ -299,7 +299,7 @@ function var_0_0.RefreshCurPool(arg_27_0)
 
 	arg_27_0.drawIcon_1.sprite = ItemTools.getItemSprite(var_27_2)
 	arg_27_0.drawIcon_2.sprite = ItemTools.getItemSprite(var_27_2)
-	arg_27_0.curIndex_ = arg_27_0.selectItem_ and arg_27_0.selectItem_:GetItemIndex() or 1
+	arg_27_0.curIndex_ = table.indexof(arg_27_0.poolIdList_, arg_27_0.curPoolID_) or 1
 
 	arg_27_0.rewardCon_:SetSelectedIndex(arg_27_0.curIndex_ - 1)
 	arg_27_0:RefreshMainReward()
@@ -417,7 +417,8 @@ function var_0_0.CheckSceneDrawed(arg_36_0)
 			title = GetTips("PROMPT"),
 			content = string.format(GetTips("GENGCHEN_SWIMWEAR_CHANGE_SCENE"), ItemTools.getItemName(var_36_0)),
 			OkCallback = function()
-				JumpTools.OpenPageByJump("/scenePreview", {
+				JumpTools.OpenPageByJump("/customCenter", {
+					selectType = CustomCenterView.SELECT_SCENE,
 					sceneID = var_36_0
 				})
 			end
@@ -435,7 +436,7 @@ function var_0_0.JumpToVideo(arg_38_0, arg_38_1)
 		return
 	end
 
-	Application.OpenURL(var_38_0)
+	OperationAction.OpenNormalUrl(var_38_0)
 end
 
 function var_0_0.DrawCheck(arg_39_0, arg_39_1)

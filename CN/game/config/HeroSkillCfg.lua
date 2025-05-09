@@ -2960,13 +2960,18 @@
 	[1060101] = {
 		name = "昆仑枪法",
 		cd = 0,
-		strengthen_desc = "",
 		simpleDesc = "造成光属性伤害。\n\n被动：\n每段普通攻击的起手阶段、第四段普通攻击期间获得短暂的格挡效果，受击时会格挡攻击并施放反击技能攻击「崩枪式」。\n「崩枪式」：造成光属性伤害，施放期间获得无敌效果。\n「破军枪舞」：造成光属性伤害，施放期间获得霸体效果，受到的伤害降低。\n\n<color=#297DE0>怒气：</color>普通攻击命中后、触发反击时会获得怒气。",
 		MaxUseCount = 0,
 		id = 1060101,
 		EnergyChange = 2,
 		desc = {
 			101060101
+		},
+		strengthen_desc = {
+			{
+				106021,
+				21106010121
+			}
 		},
 		element_type = {
 			12
@@ -2978,7 +2983,6 @@
 	[1060111] = {
 		name = "昆仑枪法",
 		cd = 0,
-		strengthen_desc = "",
 		simpleDesc = "造成光属性伤害。\n\n被动：\n每段普通攻击的起手阶段、第四段普通攻击期间获得短暂的格挡效果，受击时会格挡攻击并施放反击技能攻击，不处于<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>范围内会施放反击技能攻击「崩枪式」、处于<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>范围内会施放反击技能攻击「崩山式」。\n「崩枪式」：造成光属性伤害，施放期间获得无敌效果。\n「崩山式」：回收<material=underline c=#FFFFFF h=2 event=terminology args=(106002)>「枪」</material>，造成光属性伤害，施放期间获得无敌效果。\n「破军枪舞」：造成光属性伤害，施放期间获得霸体效果，受到的伤害降低。\n\n<color=#297DE0>怒气：</color>普通攻击命中后、触发反击时会获得怒气。",
 		MaxUseCount = 0,
 		abilities = "",
@@ -2987,6 +2991,12 @@
 		desc = {
 			101060111
 		},
+		strengthen_desc = {
+			{
+				106025,
+				21106011125
+			}
+		},
 		element_type = {
 			12
 		}
@@ -2994,13 +3004,18 @@
 	[1060201] = {
 		name = "反戈一击",
 		cd = 9000,
-		strengthen_desc = "",
 		simpleDesc = "聚集敌人，造成光属性伤害。",
 		MaxUseCount = 0,
 		id = 1060201,
 		EnergyChange = 0,
 		desc = {
 			101060201
+		},
+		strengthen_desc = {
+			{
+				106022,
+				21106020122
+			}
 		},
 		element_type = {
 			12
@@ -3012,13 +3027,18 @@
 	[1060202] = {
 		name = "游虎啸岩",
 		cd = 9000,
-		strengthen_desc = "",
 		simpleDesc = "造成光属性伤害。",
 		MaxUseCount = 0,
 		id = 1060202,
 		EnergyChange = 0,
 		desc = {
 			101060202
+		},
+		strengthen_desc = {
+			{
+				106023,
+				21106020223
+			}
 		},
 		element_type = {
 			12
@@ -3030,13 +3050,18 @@
 	[1060203] = {
 		name = "破军枪阵",
 		cd = 4500,
-		strengthen_desc = "",
 		simpleDesc = "怒气为满时才可施放，消耗全部怒气，对周围造成光属性伤害，开启<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>。\n<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>：每间隔一段时间会聚集范围内的敌人；自身处于<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>范围内时获得硬直效果、受到的伤害降低。开启<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>时，会召唤出数把<material=underline c=#FFFFFF h=2 event=terminology args=(106002)>「枪」</material>；自身处于<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>范围内施放「反戈一击」、「游虎啸岩」时，会回收数把<material=underline c=#FFFFFF h=2 event=terminology args=(106002)>「枪」</material>，并且该技能的剩余冷却时间缩短，并触发技能攻击「枪落」，造成光属性伤害。\n每回收一把<material=underline c=#FFFFFF h=2 event=terminology args=(106002)>「枪」</material>，自身获得<material=underline c=#FFFFFF h=2 event=terminology args=(106003)>「枪魂」</material>标记。自身拥有一定数量<material=underline c=#FFFFFF h=2 event=terminology args=(106003)>「枪魂」</material>标记时，该技能会依次替换为「破军枪阵·三」、「破军枪阵·六」、「破军枪阵·九」。\n「破军枪阵·三」：消耗<material=underline c=#FFFFFF h=2 event=terminology args=(106003)>「枪魂」</material>标记，造成光属性伤害，命中后下一次施放的「破军枪阵·三」攻击力提高。\n「破军枪阵·六」：消耗<material=underline c=#FFFFFF h=2 event=terminology args=(106003)>「枪魂」</material>标记，造成光属性伤害，施放期间获得霸体效果，受到的伤害降低，施放「破军枪阵·六」过程受击时，该技能攻击力提高。\n「破军枪阵·九」：消耗<material=underline c=#FFFFFF h=2 event=terminology args=(106003)>「枪魂」</material>标记，造成光属性伤害，「破军枪阵·九」的前段有短暂的闪避判定，对生命值低于一定值的敌人基础伤害提高，处于零时空间或修正模式时，该技能攻击力提高。\n<material=underline c=#FFFFFF h=2 event=terminology args=(106002)>「枪」</material>全部回收时，会关闭<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>，下一次普通攻击替换为技能攻击「破军枪舞」。当<material=underline c=#FFFFFF h=2 event=terminology args=(106001)>「枪阵」</material>关闭并且未回收的<material=underline c=#FFFFFF h=2 event=terminology args=(106002)>「枪」</material>有剩余时，会恢复一定的怒气。",
 		MaxUseCount = 0,
 		id = 1060203,
 		EnergyChange = 0,
 		desc = {
 			101060203
+		},
+		strengthen_desc = {
+			{
+				106024,
+				21106020324
+			}
 		},
 		element_type = {
 			12
@@ -4324,7 +4349,7 @@
 	[1094203] = {
 		name = "归灭裁定",
 		cd = 5000,
-		simpleDesc = "迟钝转变为炮垒形态，可持续对瞄准方向进行炮击，每次炮击消耗神能，造成暗属性伤害，炮击神能消耗不受其他属性影响。\n在炮垒形态下免疫控制效果，禁用移动、技能和自身奥义，仅可进行左右旋转瞄准；自身受到的伤害减低，每受到一定生命值上限的伤害时会消耗一定的神能；当神能不足或点击取消时会退出炮垒形态。",
+		simpleDesc = "迟钝转变为炮垒形态，可持续对瞄准方向进行炮击，每次炮击消耗神能，造成暗属性伤害，炮击神能消耗不受其他属性影响。\n在炮垒形态下免疫控制效果，禁用移动、技能和自身奥义，仅可进行左右旋转瞄准；自身受到的伤害减低，每受到一定生命值上限的伤害时会消耗一定的神能吸收伤害；当神能不足或点击取消时会退出炮垒形态。",
 		MaxUseCount = 0,
 		id = 1094203,
 		EnergyChange = 0,
@@ -8702,7 +8727,7 @@
 		name = "雁留痕",
 		cd = 0,
 		strengthen_desc = "",
-		simpleDesc = "快速闪避敌人攻击，极限闪避会触发闪避效果，非移动闪避必定触发闪避效果。非移动闪避会后撤并发动攻击，造成风属性伤害，并进入<material=underline c=#FFFFFF h=2 event=terminology args=(107303)>「驻瑶台」</material>状态。\n闪避效果：一定时间内下一次点击普通攻击，会瞬移到锁定敌人的位置施放追击，造成风属性伤害，获得获得<material=underline c=#FFFFFF h=2 event=terminology args=(107301)>「璇玑振」</material>点数。",
+		simpleDesc = "快速闪避敌人攻击，极限闪避会触发闪避效果，非移动闪避必定触发闪避效果。非移动闪避会后撤并发动攻击，造成风属性伤害，并进入<material=underline c=#FFFFFF h=2 event=terminology args=(107303)>「驻瑶台」</material>状态。\n闪避效果：一定时间内下一次点击普通攻击，会瞬移到锁定敌人的位置施放追击，造成风属性伤害，获得<material=underline c=#FFFFFF h=2 event=terminology args=(107301)>「璇玑振」</material>点数。",
 		MaxUseCount = 0,
 		abilities = "",
 		id = 1073305,
@@ -8790,7 +8815,7 @@
 		name = "羽乱刈舞",
 		cd = 0,
 		strengthen_desc = "",
-		simpleDesc = "简易描述文案预留",
+		simpleDesc = "进行三段攻击，造成光属性伤害，施放普通攻击第三段时，获得<material=underline c=#FFFFFF h=2 event=terminology args=(121101)>「裁罪之心」</material>。拥有<material=underline c=#FFFFFF h=2 event=terminology args=(121101)>「裁罪之心」</material>时，可以点击普通攻击，消耗<material=underline c=#FFFFFF h=2 event=terminology args=(121101)>「裁罪之心」</material>施放「刈舞·审命者」。\n「刈舞·审命者」：进行三段攻击，造成光属性伤害。\n\n<color=#297DE0>神能：</color>普通攻击每次命中后会获得神能。",
 		MaxUseCount = 0,
 		id = 1211101,
 		EnergyChange = 0,
@@ -8808,8 +8833,9 @@
 		name = "冥华幽刃",
 		cd = 0,
 		strengthen_desc = "",
-		simpleDesc = "简易描述文案预留",
+		simpleDesc = "不可直接施放，该技能替换为「幽刃·轮破」、「幽刃·连铩」时才可施放。\n施放「刈舞·审命者」第二段时，该技能替换为「幽刃·轮破」；施放「刈舞·审命者」第三段时，该技能替换为「幽刃·连铩」。\n「幽刃·轮破」：造成光属性伤害；施放第二段时，获得<material=underline c=#FFFFFF h=2 event=terminology args=(121102)>「渡厄」</material>状态；施放第二段后衔接普通攻击，会从普通攻击第二段开始攻击。\n「幽刃·连铩」：造成光属性伤害；自身处于<material=underline c=#FFFFFF h=2 event=terminology args=(121102)>「渡厄」</material>状态时，该技能攻击命中瞬间基础伤害提高；施放第三段后衔接普通攻击，会从普通攻击第二段开始攻击。\n\n<color=#297DE0>神能：</color>「幽刃·轮破」每次命中后会获得神能。",
 		MaxUseCount = 0,
+		abilities = "",
 		id = 1211201,
 		EnergyChange = 0,
 		desc = {
@@ -8817,16 +8843,13 @@
 		},
 		element_type = {
 			12
-		},
-		abilities = {
-			1211201
 		}
 	},
 	[1211202] = {
 		name = "死生断罚",
 		cd = 10000,
 		strengthen_desc = "",
-		simpleDesc = "简易描述文案预留",
+		simpleDesc = "造成光属性伤害，施放时获得<material=underline c=#FFFFFF h=2 event=terminology args=(121101)>「裁罪之心」</material>。神能为满时，该技能替换为「死生极罚」。\n「死生极罚」：消耗全部神能，造成光属性伤害，对命中的敌人附加虚弱状态，施放时获得<material=underline c=#FFFFFF h=2 event=terminology args=(121101)>「裁罪之心」</material>。\n\n<color=#297DE0>神能：</color>「死生断罚」每次命中后会获得神能。",
 		MaxUseCount = 0,
 		id = 1211202,
 		EnergyChange = 0,
@@ -8844,8 +8867,9 @@
 		name = "神晖赐葬",
 		cd = 20000,
 		strengthen_desc = "",
-		simpleDesc = "简易描述文案预留",
+		simpleDesc = "飞到空中，点按或长按普通攻击进行攻击，造成光属性伤害、全队伍获得奥义值，持续时间达到上限或者继续点击该技能时，会进行下落攻击，造成光属性伤害，施放下落攻击时，全队伍获得奥义值。",
 		MaxUseCount = 0,
+		abilities = "",
 		id = 1211203,
 		EnergyChange = 0,
 		desc = {
@@ -8853,16 +8877,13 @@
 		},
 		element_type = {
 			12
-		},
-		abilities = {
-			1211203
 		}
 	},
 	[1211209] = {
 		name = "亡域敕灭",
 		cd = 20000,
 		strengthen_desc = "",
-		simpleDesc = "简易描述文案预留",
+		simpleDesc = "造成光属性伤害；施放时对锁定的敌人附加动作迟缓，全队伍攻击力、会心伤害提高。\n\n自身或者队友攻击造成会心后，获得奥义值。",
 		MaxUseCount = 0,
 		id = 1211209,
 		EnergyChange = 0,
@@ -8880,7 +8901,7 @@
 		name = "虚界巡弋",
 		cd = 0,
 		strengthen_desc = "",
-		simpleDesc = "简易描述文案预留",
+		simpleDesc = "极限闪避时，获得<material=underline c=#FFFFFF h=2 event=terminology args=(121101)>「裁罪之心」</material>。\n闪避效果：零时空间。",
 		MaxUseCount = 2,
 		abilities = "",
 		id = 1211305,
@@ -10556,6 +10577,20 @@
 			101248281
 		}
 	},
+	[1211208] = {
+		element_type = "",
+		name = "炽羽破晓",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1211208,
+		EnergyChange = 0,
+		desc = {
+			101211208
+		}
+	},
 	all = {
 		1050101,
 		1050201,
@@ -11123,6 +11158,7 @@
 		1034208,
 		1012208,
 		1073208,
-		1248281
+		1248281,
+		1211208
 	}
 }

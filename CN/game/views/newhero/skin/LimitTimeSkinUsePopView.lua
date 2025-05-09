@@ -79,6 +79,7 @@ function var_0_0.UseItemSuccess(arg_12_0, arg_12_1)
 
 	if arg_12_0.showSkin_ then
 		PlayerAction.ChangePosterGirl(SkinCfg[arg_12_0.skinId_].hero)
+		HomeSceneSettingData:SetCacheSceneID(arg_12_0.dlcId_)
 	end
 end
 

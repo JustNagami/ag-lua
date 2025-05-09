@@ -118,10 +118,6 @@ function var_0_0.UpdateRandomDataAfterLogin()
 end
 
 function var_0_0.UpdateRandomData(arg_9_0)
-	if manager and manager.posterGirl and manager.posterGirl:GetTag() ~= PosterGirlConst.PosterGirlTag.null then
-		return
-	end
-
 	if arg_9_0 == HomeSceneSettingConst.RANDOM_MODE.EACH_ENTER then
 		HomeSceneSettingData:SetIsUseDlcScene(PlayerData:IsRandomHeroUseDlcScene())
 		HomeSceneSettingData:SetIsSwitchTime(false)

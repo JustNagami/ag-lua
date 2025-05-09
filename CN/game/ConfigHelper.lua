@@ -872,20 +872,28 @@ for iter_0_78, iter_0_79 in pairs(HeroStarUpTemplateCfg.get_id_list_by_template)
 	HeroStarUpTemplateCfg.template_dic[iter_0_78] = var_0_46
 end
 
-function HeroVoiceDescCfg.Get(arg_26_0, arg_26_1)
-	return nullable(HeroVoiceDescCfg, nullable(HeroVoiceDescCfg.get_id_list_by_chara_id_subtitle_id, arg_26_0, arg_26_1, 1), "content")
+local function var_0_52(arg_26_0, arg_26_1)
+	return nullable(HeroVoiceDescCfg.get_id_list_by_chara_id_subtitle_id, arg_26_0, arg_26_1, 1)
 end
 
-function HeroVoiceDescCfg.GetByFormID(arg_27_0, arg_27_1)
-	for iter_27_0, iter_27_1 in ipairs(HeroVoiceDescCfg.get_id_list_by_form_id[arg_27_0]) do
-		if HeroVoiceDescCfg[iter_27_1].subtitle_id == arg_27_1 then
-			return HeroVoiceDescCfg[iter_27_1].content
+function HeroVoiceDescCfg.Get(arg_27_0, arg_27_1)
+	local var_27_0 = var_0_52(arg_27_0, arg_27_1)
+
+	return nullable(HeroVoiceDescCfg, var_27_0, "content") or HeroVoiceDescCfg.GetByFormID(arg_27_0, arg_27_1)
+end
+
+function HeroVoiceDescCfg.GetByFormID(arg_28_0, arg_28_1)
+	local var_28_0 = HeroVoiceDescCfg.get_id_list_by_form_id[arg_28_0]
+
+	if var_28_0 then
+		for iter_28_0, iter_28_1 in ipairs(var_28_0) do
+			if HeroVoiceDescCfg[iter_28_1].subtitle_id == arg_28_1 then
+				return HeroVoiceDescCfg[iter_28_1].content
+			end
 		end
 	end
-
-	return nil
 end
 
-function ConfigHelper_GetCfg(arg_28_0, arg_28_1, arg_28_2)
-	return _G[arg_28_0][arg_28_1][arg_28_2]
+function ConfigHelper_GetCfg(arg_29_0, arg_29_1, arg_29_2)
+	return _G[arg_29_0][arg_29_1][arg_29_2]
 end

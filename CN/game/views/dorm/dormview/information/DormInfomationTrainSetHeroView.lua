@@ -103,10 +103,21 @@ function var_0_0.RecordOriginalDataIndex(arg_15_0)
 			arg_15_0.originalDataIdx[DormData:GetHeroArchiveID(var_15_0)] = iter_15_0
 		end
 	end
+
+	arg_15_0.originalStatus = {}
+
+	for iter_15_2, iter_15_3 in pairs(arg_15_0.dataList) do
+		local var_15_1 = DormData:GetHeroArchiveID(iter_15_3)
+		local var_15_2 = DormData:GetHeroInfo(var_15_1):GetHeroState()
+
+		arg_15_0.originalStatus[var_15_1] = var_15_2
+	end
 end
 
 function var_0_0.RecordTempRemove(arg_16_0, arg_16_1)
-	arg_16_0.editTempRemoveList[DormData:GetHeroArchiveID(arg_16_1)] = arg_16_1
+	local var_16_0 = DormData:GetHeroArchiveID(arg_16_1)
+
+	arg_16_0.editTempRemoveList[var_16_0] = arg_16_1
 
 	arg_16_0:RefreshAllRemovedFromTrainingHeroState()
 end
@@ -333,83 +344,102 @@ local function var_0_3(arg_32_0)
 		table.insert(var_32_2, var_32_3)
 	end
 
-	table.sort(var_32_2, var_32_1)
+	CommonTools.UniversalSortEx(var_32_2, {
+		map = function(arg_33_0)
+			local var_33_0 = arg_33_0.archives_id
+
+			if arg_32_0.originalStatus[var_33_0] ~= DormEnum.DormHeroState.InIdolTraineeCamp then
+				return 1
+			end
+
+			return 0
+		end
+	}, {
+		ascend = true,
+		lessOp = var_32_1
+	})
 
 	return var_32_2
 end
 
-function var_0_0.RefreshAllRemovedFromTrainingHeroState(arg_33_0)
-	local var_33_0 = var_0_3(arg_33_0)
+function var_0_0.RefreshAllRemovedFromTrainingHeroState(arg_34_0)
+	local var_34_0 = var_0_3(arg_34_0)
 
-	for iter_33_0, iter_33_1 in ipairs(var_33_0) do
-		iter_33_1:EnsureNotInPublicHall()
+	for iter_34_0, iter_34_1 in ipairs(var_34_0) do
+		iter_34_1:EnsureNotInPublicHall()
 	end
 
-	for iter_33_2, iter_33_3 in ipairs(var_33_0) do
-		iter_33_3:BackToDorm()
+	for iter_34_2, iter_34_3 in ipairs(var_34_0) do
+		local var_34_1 = arg_34_0.originalStatus[iter_34_3.archives_id]
+
+		if var_34_1 == DormEnum.DormHeroState.OutDorm or var_34_1 == DormEnum.DormHeroState.InPrivateDorm then
+			iter_34_3:OutDorm()
+		else
+			iter_34_3:BackToDorm()
+		end
 	end
 
 	manager.notify:Invoke(DORM_REFRESH_HERO_DEPLOY_LIST)
 end
 
-function var_0_0.OnHolderHeroItemClick(arg_34_0, arg_34_1, arg_34_2)
-	if arg_34_1 == nil then
+function var_0_0.OnHolderHeroItemClick(arg_35_0, arg_35_1, arg_35_2)
+	if arg_35_1 == nil then
 		return
 	end
 
-	if arg_34_0.state == "train" then
-		arg_34_0:RecordTempRemove(arg_34_1)
-		arg_34_0:SetHeroInPos(arg_34_2, nil)
-	elseif arg_34_0.state == "dorm" then
-		local var_34_0 = DormData:GetHeroInfoList()
-		local var_34_1 = {}
+	if arg_35_0.state == "train" then
+		arg_35_0:RecordTempRemove(arg_35_1)
+		arg_35_0:SetHeroInPos(arg_35_2, nil)
+	elseif arg_35_0.state == "dorm" then
+		local var_35_0 = DormData:GetHeroInfoList()
+		local var_35_1 = {}
 
-		for iter_34_0, iter_34_1 in pairs(var_34_0) do
-			if iter_34_1:GetHeroState() == DormEnum.DormHeroState.InPublicDorm and iter_34_1.hero_id ~= arg_34_1 then
-				table.insert(var_34_1, iter_34_1.hero_id)
+		for iter_35_0, iter_35_1 in pairs(var_35_0) do
+			if iter_35_1:GetHeroState() == DormEnum.DormHeroState.InPublicDorm and iter_35_1.hero_id ~= arg_35_1 then
+				table.insert(var_35_1, iter_35_1.hero_id)
 			end
 		end
 
-		DormAction:DeployHeroInRoom(DormConst.PUBLIC_DORM_ID, var_34_1, DormEnum.DormDeployType.Place)
+		DormAction:DeployHeroInRoom(DormConst.PUBLIC_DORM_ID, var_35_1, DormEnum.DormDeployType.Place)
 	end
 
-	arg_34_0:Refresh()
+	arg_35_0:Refresh()
 end
 
-function var_0_0.Refresh(arg_35_0)
-	if arg_35_0.state == "train" then
-		arg_35_0:RenderTrainHero()
-	elseif arg_35_0.state == "dorm" then
-		arg_35_0:RenderDormHero()
-	end
-
-	arg_35_0.characterScroll:Refresh()
-end
-
-function var_0_0.Save(arg_36_0)
+function var_0_0.Refresh(arg_36_0)
 	if arg_36_0.state == "train" then
-		arg_36_0:SaveTrainList()
+		arg_36_0:RenderTrainHero()
 	elseif arg_36_0.state == "dorm" then
-		arg_36_0:SaveDormList()
+		arg_36_0:RenderDormHero()
+	end
+
+	arg_36_0.characterScroll:Refresh()
+end
+
+function var_0_0.Save(arg_37_0)
+	if arg_37_0.state == "train" then
+		arg_37_0:SaveTrainList()
+	elseif arg_37_0.state == "dorm" then
+		arg_37_0:SaveDormList()
 	end
 end
 
-function var_0_0.SaveDormList(arg_37_0)
+function var_0_0.SaveDormList(arg_38_0)
 	manager.notify:Invoke(DORM_REGENERATE_HERO)
 	JumpTools.Back()
 end
 
-function var_0_0.SaveTrainList(arg_38_0)
-	local var_38_0 = {}
+function var_0_0.SaveTrainList(arg_39_0)
+	local var_39_0 = {}
 
-	for iter_38_0, iter_38_1 in pairs(arg_38_0.tempPosStore) do
-		table.insert(var_38_0, {
-			hero_id = iter_38_1,
-			pos = iter_38_0
+	for iter_39_0, iter_39_1 in pairs(arg_39_0.tempPosStore) do
+		table.insert(var_39_0, {
+			hero_id = iter_39_1,
+			pos = iter_39_0
 		})
 	end
 
-	IdolTraineeAction.RequestSetHeroPos(var_38_0, function()
+	IdolTraineeAction.RequestSetHeroPos(var_39_0, function()
 		BackHomeAction:GetAllDetailInfo(function()
 			return
 		end)
@@ -418,68 +448,68 @@ function var_0_0.SaveTrainList(arg_38_0)
 	end)
 end
 
-function var_0_0.OnExit(arg_41_0)
-	arg_41_0.editTempRemoveList = nil
+function var_0_0.OnExit(arg_42_0)
+	arg_42_0.editTempRemoveList = nil
 end
 
 function var_0_0.GetDormHeroList()
-	local var_42_0 = DormHeroTools:GetBackHomeCanUseHeroList(DormConst.PUBLIC_DORM_ID)
+	local var_43_0 = DormHeroTools:GetBackHomeCanUseHeroList(DormConst.PUBLIC_DORM_ID)
 
-	CommonTools.UniversalSortEx(var_42_0, {
+	CommonTools.UniversalSortEx(var_43_0, {
 		ascend = true,
-		map = function(arg_43_0)
-			local var_43_0 = DormData:GetHeroTemplateInfo(arg_43_0):GetHeroState()
+		map = function(arg_44_0)
+			local var_44_0 = DormData:GetHeroTemplateInfo(arg_44_0):GetHeroState()
 
-			if var_43_0 == DormEnum.DormHeroState.InPublicDorm then
+			if var_44_0 == DormEnum.DormHeroState.InPublicDorm then
 				return 1
-			elseif var_43_0 == DormEnum.DormHeroState.OutDorm then
+			elseif var_44_0 == DormEnum.DormHeroState.OutDorm then
 				return 2
-			elseif var_43_0 == DormEnum.DormHeroState.InPrivateDorm then
+			elseif var_44_0 == DormEnum.DormHeroState.InPrivateDorm then
 				return 3
-			elseif var_43_0 == DormEnum.DormHeroState.InCanteenJob then
-				local var_43_1 = DormData:GetHeroTemplateInfo(arg_43_0).jobType
+			elseif var_44_0 == DormEnum.DormHeroState.InCanteenJob then
+				local var_44_1 = DormData:GetHeroTemplateInfo(arg_44_0).jobType
 
-				if var_43_1 == DormNpcTools.BackHomeNpcType.cook then
+				if var_44_1 == DormNpcTools.BackHomeNpcType.cook then
 					return 4
-				elseif var_43_1 == DormNpcTools.BackHomeNpcType.waiter then
+				elseif var_44_1 == DormNpcTools.BackHomeNpcType.waiter then
 					return 5
-				elseif var_43_1 == DormNpcTools.BackHomeNpcType.cashier then
+				elseif var_44_1 == DormNpcTools.BackHomeNpcType.cashier then
 					return 6
 				end
-			elseif var_43_0 == DormEnum.DormHeroState.InCanteenEntrust then
+			elseif var_44_0 == DormEnum.DormHeroState.InCanteenEntrust then
 				return 7
-			elseif var_43_0 == DormEnum.DormHeroState.InIdolTraineeCamp then
+			elseif var_44_0 == DormEnum.DormHeroState.InIdolTraineeCamp then
 				return 8
 			end
 		end
 	}, {
 		ascend = true,
-		map = function(arg_44_0)
-			return (DormData:GetHeroTemplateInfo(arg_44_0):GetFatigue())
-		end
-	}, {
 		map = function(arg_45_0)
-			return (DormData:GetHeroArchiveID(arg_45_0))
+			return (DormData:GetHeroTemplateInfo(arg_45_0):GetFatigue())
 		end
 	}, {
 		map = function(arg_46_0)
-			return arg_46_0
+			return (DormData:GetHeroArchiveID(arg_46_0))
+		end
+	}, {
+		map = function(arg_47_0)
+			return arg_47_0
 		end
 	})
 
-	return var_42_0
+	return var_43_0
 end
 
-function var_0_0.Dispose(arg_47_0)
-	arg_47_0.characterScroll:Dispose()
+function var_0_0.Dispose(arg_48_0)
+	arg_48_0.characterScroll:Dispose()
 
-	for iter_47_0 = 1, 5 do
-		arg_47_0.holder[iter_47_0]:Dispose()
+	for iter_48_0 = 1, 5 do
+		arg_48_0.holder[iter_48_0]:Dispose()
 	end
 
-	arg_47_0.holder = nil
+	arg_48_0.holder = nil
 
-	var_0_0.super.Dispose(arg_47_0)
+	var_0_0.super.Dispose(arg_48_0)
 end
 
 return var_0_0

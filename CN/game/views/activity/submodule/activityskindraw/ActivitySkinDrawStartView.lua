@@ -16,12 +16,7 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
-	arg_4_0.soundEffect_ = {
-		"search_scene_02_blue",
-		"search_scene_02_purple",
-		"search_scene_02_gold",
-		special = "search_scene_02_special"
-	}
+	arg_4_0.soundEffect_ = ActivitySkinDrawTools.GetOpenBoxEffect()
 	arg_4_0.typeCon_ = ControllerUtil.GetController(arg_4_0.transform_, "type")
 end
 
@@ -101,7 +96,7 @@ function var_0_0.RefreshAni(arg_12_0)
 		arg_12_0.typeCon_:SetSelectedState("special")
 
 		arg_12_0.animator_ = arg_12_0.animator_special
-		arg_12_0.effect_ = arg_12_0.soundEffect_.special
+		arg_12_0.effect_ = arg_12_0.soundEffect_[4]
 	else
 		arg_12_0.typeCon_:SetSelectedState(arg_12_0.maxRare_)
 

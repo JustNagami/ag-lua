@@ -3073,30 +3073,12 @@
 		simple_strength_description = {}
 	},
 	[106001] = {
-		simple_description = "当九司·陆吾装备时，获得以下效果。\n技能三基础伤害提高。\n处于<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(106001)>「枪阵」</material></color>范围内时，<color=#297DE0>「崩枪式」</color>改变为<color=#297DE0>「崩山式」</color>。\n当自身不处于<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(106001)>「枪阵」</material></color>范围内，施放<color=#297DE0>「反戈一击」</color>、<color=#297DE0>「游虎啸岩」</color>时，<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(106001)>「枪阵」</material></color>会移动到身边。\n第一次<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(106001)>「枪阵」</material></color>关闭时，恢复怒气。\n<color=#297DE0>「破军枪阵·九」</color>对精英和首领敌人命中瞬间会心伤害提高。\n开启<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(106001)>「枪阵」</material></color>时，独立伤害提高。",
+		simple_description = "当九司·陆吾装备时，获得以下效果。\n开启<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(106001)>「枪阵」</material></color>时，独立伤害提高。\n技能三基础伤害提高。\n处于<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(106001)>「枪阵」</material></color>范围内时，<color=#297DE0>「崩枪式」</color>改变为<color=#297DE0>「崩山式」</color>。\n当自身不处于<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(106001)>「枪阵」</material></color>范围内，施放<color=#297DE0>「反戈一击」</color>、<color=#297DE0>「游虎啸岩」</color>时，<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(106001)>「枪阵」</material></color>会移动到身边。\n<color=#297DE0>「破军枪阵·九」</color>对精英和首领敌人命中瞬间会心伤害提高。\n第一次<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(106001)>「枪阵」</material></color>关闭时，恢复怒气。",
 		id = 106001,
 		description = {
 			500106001
 		},
 		level_param = {
-			{
-				180,
-				270,
-				360,
-				450,
-				540,
-				630,
-				720
-			},
-			{
-				120,
-				180,
-				240,
-				300,
-				360,
-				420,
-				480
-			},
 			{
 				50,
 				75,
@@ -3116,6 +3098,24 @@
 				120
 			},
 			{
+				180,
+				270,
+				360,
+				450,
+				540,
+				630,
+				720
+			},
+			{
+				120,
+				180,
+				240,
+				300,
+				360,
+				420,
+				480
+			},
+			{
 				240,
 				300,
 				360,
@@ -3128,8 +3128,14 @@
 		spec_char = {
 			1060
 		},
-		strengthen_description = {},
-		simple_strength_description = {}
+		strengthen_description = {
+			106041,
+			220106001
+		},
+		simple_strength_description = {
+			106041,
+			"当九司·陆吾装备时，获得以下效果。\n开启<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(106001)>「枪阵」</material></color>时，独立伤害提高。\n技能三基础伤害提高。\n处于<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(106001)>「枪阵」</material></color>范围内时，<color=#297DE0>「崩枪式」</color>改变为<color=#297DE0>「崩山式」</color>。\n当自身不处于<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(106001)>「枪阵」</material></color>范围内，施放<color=#297DE0>「反戈一击」</color>、<color=#297DE0>「游虎啸岩」</color>时，<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(106001)>「枪阵」</material></color>会移动到身边。\n<color=#297DE0>「破军枪阵·九」</color>命中瞬间会心伤害提高。\n出场时，怒气恢复至满值。第一次<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(106001)>「枪阵」</material></color>关闭时，恢复怒气。"
+		}
 	},
 	[106101] = {
 		simple_description = "当玄机·执明装备时，获得以下效果。\n独立伤害提高。\n技能三基础伤害提高。\n第一次施放奥义或连携奥义时，<color=#297DE0>「真武参悟」</color>替换为<color=#297DE0>「超阶演算」</color>；之后每施放二次奥义或连携奥义，<color=#297DE0>「真武参悟」</color>替换为<color=#297DE0>「超阶演算」</color>。\n神能上限增加，自动恢复神能；开启<color=#297DE0>「演算」</color>、<color=#297DE0>「超阶演算」</color>时，恢复神能。",
@@ -4094,7 +4100,7 @@
 		simple_strength_description = {}
 	},
 	[107301] = {
-		simple_description = "当巧构·麟钰装备时，获得以下效果。\n出场时，根据自身能量上限，全队伍伤害提高。\n施放「绝影阵」时，全队伍风属性修正者会心率提高。\n璇玑裁风刃会对命中的敌人附加风属性抗性降低。\n神格<color=#297DE0>「显圣昭灵·瑞应」</color>获得额外的效果：获得<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107307)>「含仁」</material></color>状态时，对全队伍附加<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107308)>「行矩」</material></color>状态。\n神格<color=#297DE0>「明王吉征·振公」</color>获得额外的效果：获得<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107308)>「行矩」</material></color>状态时，对全队伍附加<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107307)>「含仁」</material></color>状态。\n神格<color=#297DE0>「中土兽伯·定方」</color>获得额外的效果：<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107307)>「含仁」</material></color>状态改变为风属性伤害提高；<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107308)>「行矩」</material></color>状态改变为独立伤害提高。",
+		simple_description = "当巧构·麟钰装备时，获得以下效果。\n出场时，根据自身能量上限，全队伍伤害提高。\n施放<color=#297DE0>「绝影阵」</color>时，全队伍风属性修正者会心率提高。\n璇玑裁风刃会对命中的敌人附加风属性抗性降低。\n神格<color=#297DE0>「显圣昭灵·瑞应」</color>获得额外的效果：获得<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107307)>「含仁」</material></color>状态时，对全队伍附加<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107308)>「行矩」</material></color>状态。\n神格<color=#297DE0>「明王吉征·振公」</color>获得额外的效果：获得<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107308)>「行矩」</material></color>状态时，对全队伍附加<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107307)>「含仁」</material></color>状态。\n神格<color=#297DE0>「中土兽伯·定方」</color>获得额外的效果：<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107307)>「含仁」</material></color>状态改变为风属性伤害提高；<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107308)>「行矩」</material></color>状态改变为独立伤害提高。",
 		id = 107301,
 		description = {
 			500107301
@@ -4197,6 +4203,92 @@
 		strengthen_description = {},
 		simple_strength_description = {}
 	},
+	[121101] = {
+		simple_description = "当魂羽·奥西里斯装备，获得以下效果。\n生命值上限提高。\n施放奥义或连携奥义时，全队伍光属性修正者会心率提高。\n神格<color=#297DE0>「众象归心·同航」</color>获得额外的效果：出场时，全队伍生命值上限加和不低于一定值时，全队伍全属性伤害提高。\n神格<color=#297DE0>「圣煌伐恶·不朽」</color>获得额外的效果：出场时，自身生命值上限高于一定值时，生命值上限越高，独立伤害提高越高。\n神格<color=#297DE0>「丰饶穰祝·繁世」</color>获得额外的效果：处于<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(121106)>「羽日」</material></color>状态的队友伤害上升。",
+		id = 121101,
+		description = {
+			500121101
+		},
+		level_param = {
+			{
+				200,
+				250,
+				300,
+				350,
+				400,
+				450,
+				500
+			},
+			{
+				100,
+				125,
+				150,
+				175,
+				200,
+				225,
+				250
+			},
+			{
+				250,
+				250,
+				250,
+				250,
+				250,
+				250,
+				250
+			},
+			{
+				250,
+				250,
+				250,
+				250,
+				250,
+				250,
+				250
+			},
+			{
+				16,
+				16,
+				16,
+				16,
+				16,
+				16,
+				16
+			},
+			{
+				400,
+				400,
+				400,
+				400,
+				400,
+				400,
+				400
+			},
+			{
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
+			},
+			{
+				100,
+				125,
+				150,
+				175,
+				200,
+				225,
+				250
+			}
+		},
+		spec_char = {
+			1211
+		},
+		strengthen_description = {},
+		simple_strength_description = {}
+	},
 	all = {
 		401,
 		402,
@@ -4293,6 +4385,7 @@
 		103401,
 		101201,
 		108501,
-		107301
+		107301,
+		121101
 	}
 }

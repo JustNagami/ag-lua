@@ -3536,6 +3536,8 @@
 			1032113,
 			1032118,
 			1032125,
+			1032129,
+			1032130,
 			60500005
 		}
 	},
@@ -3699,6 +3701,13 @@
 		value2 = "",
 		value = {
 			20
+		}
+	},
+	max_num_of_reserve_proposal_tag = {
+		id = "max_num_of_reserve_proposal_tag",
+		value2 = "",
+		value = {
+			2
 		}
 	},
 	equip_crossroads_healing = {
@@ -7314,37 +7323,53 @@
 		id = "tetris_game_skill_max",
 		value2 = "",
 		value = {
-			3
+			2
+		}
+	},
+	tetris_game_chip_remain_count = {
+		id = "tetris_game_chip_remain_count",
+		value2 = "",
+		value = {
+			10
+		}
+	},
+	tetris_game_grade_rate = {
+		id = "tetris_game_grade_rate",
+		value2 = "",
+		value = {
+			1,
+			1,
+			0,
+			1
 		}
 	},
 	tetris_game_describe1 = {
 		id = "tetris_game_describe1",
 		value2 = "",
 		value = {
-			"Widget/BackHouseUI/TetrisGame/TetrisDescription_1",
-			"Widget/BackHouseUI/TetrisGame/TetrisDescription_2",
-			"Widget/BackHouseUI/TetrisGame/TetrisDescription_3",
-			"Widget/BackHouseUI/TetrisGame/TetrisDescription_4"
+			"Widget/Version/Alone_TetrisGameUI/TetrisDescription_1",
+			"Widget/Version/Alone_TetrisGameUI/TetrisDescription_2",
+			"Widget/Version/Alone_TetrisGameUI/TetrisDescription_5",
+			"Widget/Version/Alone_TetrisGameUI/TetrisDescription_3",
+			"Widget/Version/Alone_TetrisGameUI/TetrisDescription_4"
 		}
 	},
 	tetris_game_describe2 = {
 		id = "tetris_game_describe2",
 		value2 = "",
 		value = {
-			"Widget/BackHouseUI/TetrisGame/TetrisDescription_1",
-			"Widget/BackHouseUI/TetrisGame/TetrisDescription_2",
-			"Widget/BackHouseUI/TetrisGame/TetrisDescription_3",
-			"Widget/BackHouseUI/TetrisGame/TetrisDescription_4"
+			"Widget/Version/Alone_TetrisGameUI/TetrisDescription_1",
+			"Widget/Version/Alone_TetrisGameUI/TetrisDescription_2",
+			"Widget/Version/Alone_TetrisGameUI/TetrisDescription_5"
 		}
 	},
 	tetris_game_describe3 = {
 		id = "tetris_game_describe3",
 		value2 = "",
 		value = {
-			"Widget/BackHouseUI/TetrisGame/TetrisDescription_1",
-			"Widget/BackHouseUI/TetrisGame/TetrisDescription_2",
-			"Widget/BackHouseUI/TetrisGame/TetrisDescription_3",
-			"Widget/BackHouseUI/TetrisGame/TetrisDescription_4"
+			"Widget/Version/Alone_TetrisGameUI/TetrisDescription_3",
+			"Widget/Version/Alone_TetrisGameUI/TetrisDescription_4",
+			"Widget/Version/Alone_TetrisGameUI/TetrisDescription_5"
 		}
 	},
 	activity_kali_cost_item = {
@@ -8013,6 +8038,83 @@
 		value2 = "",
 		value = {
 			574
+		}
+	},
+	activity_generality_start_story = {
+		id = "activity_generality_start_story",
+		value2 = "",
+		value = {
+			927011001
+		}
+	},
+	activity_generality_end_story = {
+		id = "activity_generality_end_story",
+		value2 = "",
+		value = {
+			927021001
+		}
+	},
+	activity_generality_base_point = {
+		id = "activity_generality_base_point",
+		value2 = "",
+		value = {
+			800000
+		}
+	},
+	activity_generality_base_time = {
+		id = "activity_generality_base_time",
+		value2 = "",
+		value = {
+			120000
+		}
+	},
+	activity_generality_base_factor = {
+		id = "activity_generality_base_factor",
+		value2 = "",
+		value = {
+			5
+		}
+	},
+	guelgame_hp_trigger = {
+		id = "guelgame_hp_trigger",
+		value2 = "",
+		value = {
+			40
+		}
+	},
+	guelgame_sad_trigger = {
+		id = "guelgame_sad_trigger",
+		value2 = "",
+		value = {
+			30
+		}
+	},
+	guelgame_aitrigger_time = {
+		id = "guelgame_aitrigger_time",
+		value2 = "",
+		value = {
+			0.95
+		}
+	},
+	brahma_t0_desc1 = {
+		id = "brahma_t0_desc1",
+		value2 = "",
+		value = {
+			"Widget/System/Main_T0SceneGame/102003/102003_Description_01"
+		}
+	},
+	brahma_t0_desc2 = {
+		id = "brahma_t0_desc2",
+		value2 = "",
+		value = {
+			"Widget/System/Main_T0SceneGame/102003/102003_Description_02"
+		}
+	},
+	brahma_t0_desc3 = {
+		id = "brahma_t0_desc3",
+		value2 = "",
+		value = {
+			"Widget/System/Main_T0SceneGame/102003/102003_Description_03"
 		}
 	}
 }

@@ -12255,7 +12255,9 @@
 		arg_379_1.curTalkId_ = 1104805095
 		arg_379_1.duration_ = 0.5
 
-		SetActive(arg_379_1.tipsGo_, false)
+		SetActive(arg_379_1.tipsGo_, true)
+
+		arg_379_1.tipsText_.text = StoryTipsCfg[114801].name
 
 		function arg_379_1.onSingleLineFinish_()
 			arg_379_1.onSingleLineUpdate_ = nil

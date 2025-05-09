@@ -398,6 +398,21 @@
 			321001
 		}
 	},
+	[331001] = {
+		story_id = 0,
+		id = 331001,
+		reprint_field = "",
+		prefab_path = "Widget/System/Activity_Resident/Activity_MainUI",
+		theme = 33,
+		day_list = {},
+		icon_list = {
+			"but_Internal_KuAn"
+		},
+		jump_system = {
+			16121,
+			331001
+		}
+	},
 	get_id_list_by_theme = {
 		[5] = {
 			500
@@ -471,6 +486,9 @@
 		[32] = {
 			321001
 		},
+		[33] = {
+			331001
+		},
 		[106] = {
 			1061001
 		}
@@ -500,6 +518,7 @@
 		291001,
 		301001,
 		311001,
-		321001
+		321001,
+		331001
 	}
 }

@@ -1207,6 +1207,34 @@
 			}
 		}
 	},
+	[62] = {
+		operation_stop_id = 835,
+		open_condition = 0,
+		shop_background = "",
+		group_name = "主题家具",
+		chain_last_visible = 0,
+		is_limit_buy_discount = 1,
+		show_in_shop = 0,
+		activity_id = 0,
+		remark = "刺桐朝暮",
+		params = "",
+		is_limit_time_discount = 0,
+		cheap_limit_currency = "",
+		refresh_num_limit = 0,
+		system = "1",
+		display_index = 10,
+		discount = 0,
+		initiative_refresh = 0,
+		id = 62,
+		display_group = 8,
+		shop_label = "",
+		cost_id = {
+			"CURRENCY_TYPE_DORM_GOLD",
+			"CURRENCY_TYPE_DIAMOND"
+		},
+		cheap_open_time = {},
+		cheap_close_time = {}
+	},
 	[90] = {
 		operation_stop_id = 822,
 		open_condition = 0,
@@ -2494,6 +2522,35 @@
 		cheap_open_time = {},
 		cheap_close_time = {}
 	},
+	[232] = {
+		operation_stop_id = 0,
+		open_condition = 0,
+		shop_background = "TextureConfig/Shop_activity/Sa_0001",
+		group_name = "置换中心",
+		chain_last_visible = 0,
+		is_limit_buy_discount = 0,
+		show_in_shop = 0,
+		activity_id = 331462,
+		remark = "后勤补给点",
+		params = "",
+		is_limit_time_discount = 0,
+		cheap_limit_currency = "",
+		refresh_num_limit = 0,
+		system = "1",
+		display_index = 1,
+		discount = 0,
+		initiative_refresh = 0,
+		id = 232,
+		display_group = 19,
+		shop_label = "",
+		cost_id = {
+			53163,
+			54120,
+			1
+		},
+		cheap_open_time = {},
+		cheap_close_time = {}
+	},
 	[300] = {
 		operation_stop_id = 0,
 		open_condition = 0,
@@ -2727,6 +2784,37 @@
 		cheap_open_time = {},
 		cheap_close_time = {}
 	},
+	[309] = {
+		operation_stop_id = 0,
+		open_condition = 0,
+		shop_background = "TextureConfig/Shop_activity/Sa_0006",
+		group_name = "咫尺身畔",
+		chain_last_visible = 0,
+		is_limit_buy_discount = 0,
+		show_in_shop = 0,
+		activity_id = 331461,
+		remark = "咫尺身畔",
+		params = "",
+		is_limit_time_discount = 0,
+		cheap_limit_currency = "",
+		refresh_num_limit = 0,
+		system = "1",
+		display_index = 1,
+		discount = 0,
+		initiative_refresh = 0,
+		id = 309,
+		display_group = 26,
+		shop_label = "",
+		cost_id = {
+			53156,
+			53157,
+			53158,
+			1,
+			32
+		},
+		cheap_open_time = {},
+		cheap_close_time = {}
+	},
 	get_id_list_by_system = {
 		[3] = {
 			308
@@ -2771,6 +2859,7 @@
 			58,
 			59,
 			61,
+			62,
 			90,
 			91,
 			92,
@@ -2816,13 +2905,15 @@
 			228,
 			229,
 			231,
+			232,
 			300,
 			301,
 			302,
 			303,
 			304,
 			305,
-			306
+			306,
+			309
 		}
 	},
 	all = {
@@ -2862,6 +2953,7 @@
 		58,
 		59,
 		61,
+		62,
 		90,
 		91,
 		92,
@@ -2908,6 +3000,7 @@
 		228,
 		229,
 		231,
+		232,
 		300,
 		301,
 		302,
@@ -2915,6 +3008,7 @@
 		304,
 		305,
 		306,
-		308
+		308,
+		309
 	}
 }

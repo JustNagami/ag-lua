@@ -24,6 +24,16 @@ function var_0_0.InitUI(arg_3_0)
 
 		arg_3_0.headItemList_[iter_3_0] = SectionSmallHeroItem.New(var_3_0)
 	end
+
+	arg_3_0.tagItemList_ = {}
+
+	local var_3_1 = arg_3_0.tagContentTrans_.childCount
+
+	for iter_3_1 = 1, var_3_1 do
+		local var_3_2 = arg_3_0.tagContentTrans_:GetChild(iter_3_1 - 1).gameObject
+
+		arg_3_0.tagItemList_[iter_3_1] = ReserveProposalAttributeTagItem.New(var_3_2)
+	end
 end
 
 function var_0_0.AddUIListeners(arg_4_0)
@@ -42,6 +52,12 @@ function var_0_0.Dispose(arg_7_0)
 
 	arg_7_0.headItemList_ = nil
 
+	for iter_7_2, iter_7_3 in ipairs(arg_7_0.tagItemList_) do
+		iter_7_3:Dispose()
+	end
+
+	arg_7_0.tagItemList_ = nil
+
 	var_0_0.super.Dispose(arg_7_0)
 end
 
@@ -56,34 +72,60 @@ function var_0_0.SetData(arg_9_0, arg_9_1)
 
 	arg_9_0.reserveParams_.contID = arg_9_1
 	arg_9_0.contID_ = arg_9_1
+	arg_9_0.reserveTemplate_ = ReserveTools.GetReserveTemplateByReserveType(ReserveConst.RESERVE_TYPE.PROPOSAL)
+	arg_9_0.contData_ = arg_9_0.reserveTemplate_:GetContDataTemplateById(arg_9_0.contID_)
 
 	arg_9_0:RefreshUI()
 end
 
 function var_0_0.RefreshUI(arg_10_0)
-	local var_10_0 = ReserveTools.GetReserveTemplateByReserveType(ReserveConst.RESERVE_TYPE.PROPOSAL):GetContDataTemplateById(arg_10_0.contID_)
-	local var_10_1 = var_10_0:GetIsTemp()
+	arg_10_0:RefreshName()
+	arg_10_0:RefreshHeroItemList()
+	arg_10_0:RefreshTagItemList()
+end
 
-	arg_10_0.tempController_:SetSelectedState(tostring(var_10_1))
+function var_0_0.RefreshName(arg_11_0)
+	local var_11_0 = arg_11_0.contData_:GetIsTemp()
 
-	if not var_10_1 then
-		arg_10_0.nameText_.text = var_10_0:GetName()
-	end
+	arg_11_0.tempController_:SetSelectedState(tostring(var_11_0))
 
-	local var_10_2 = arg_10_0.sectionProxy_:GetOuterLockHeroList()
-
-	arg_10_0.heroDataList_ = var_10_0:GetHeroList()
-
-	for iter_10_0, iter_10_1 in ipairs(arg_10_0.heroDataList_) do
-		local var_10_3 = iter_10_1:GetHeroID()
-
-		arg_10_0.headItemList_[iter_10_0]:SetData(var_10_3)
-		arg_10_0.headItemList_[iter_10_0]:RefreshLock(table.indexof(var_10_2, var_10_3) ~= false)
+	if not var_11_0 then
+		arg_11_0.nameText_.text = arg_11_0.contData_:GetName()
 	end
 end
 
-function var_0_0.SetSelect(arg_11_0, arg_11_1)
-	arg_11_0.selectController_:SetSelectedState(tostring(arg_11_0.contID_ == arg_11_1))
+function var_0_0.RefreshHeroItemList(arg_12_0)
+	local var_12_0 = arg_12_0.sectionProxy_:GetOuterLockHeroList()
+
+	arg_12_0.heroDataList_ = arg_12_0.contData_:GetHeroList()
+
+	for iter_12_0, iter_12_1 in ipairs(arg_12_0.heroDataList_) do
+		local var_12_1 = iter_12_1:GetHeroID()
+
+		arg_12_0.headItemList_[iter_12_0]:SetData(var_12_1)
+		arg_12_0.headItemList_[iter_12_0]:RefreshLock(table.indexof(var_12_0, var_12_1) ~= false)
+	end
+end
+
+function var_0_0.RefreshTagItemList(arg_13_0)
+	local var_13_0 = arg_13_0.reserveTemplate_:GetAttributeTagList(arg_13_0.contID_)
+
+	for iter_13_0, iter_13_1 in ipairs(var_13_0) do
+		arg_13_0.tagItemList_[iter_13_0]:SetData(iter_13_1)
+		arg_13_0.tagItemList_[iter_13_0]:Show(true)
+	end
+
+	for iter_13_2 = #var_13_0 + 1, #arg_13_0.tagItemList_ do
+		arg_13_0.tagItemList_[iter_13_2]:Show(false)
+	end
+end
+
+function var_0_0.SetSelect(arg_14_0, arg_14_1)
+	arg_14_0.selectController_:SetSelectedState(tostring(arg_14_0.contID_ == arg_14_1))
+
+	for iter_14_0, iter_14_1 in ipairs(arg_14_0.tagItemList_) do
+		iter_14_1:SetColor(arg_14_0.contID_ == arg_14_1)
+	end
 end
 
 return var_0_0

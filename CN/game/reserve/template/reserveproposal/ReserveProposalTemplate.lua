@@ -8,7 +8,10 @@ function var_0_1.UpdateServerData(arg_1_0, arg_1_1)
 		local var_1_0 = iter_1_1.cont_id
 
 		if arg_1_0.cont_dic[var_1_0] then
-			arg_1_0:GetContDataTemplateById(var_1_0):SetName(iter_1_1.name)
+			local var_1_1 = arg_1_0:GetContDataTemplateById(var_1_0)
+
+			var_1_1:SetName(iter_1_1.name)
+			var_1_1:SetAttributeTagList(iter_1_1.tags)
 		end
 	end
 end
@@ -88,6 +91,10 @@ function var_0_1.DeleteProposal(arg_7_0, arg_7_1)
 	table.remove(arg_7_0.cont_teams, var_7_1)
 
 	arg_7_0.cont_teams[#arg_7_0.cont_teams + 1] = var_7_0
+end
+
+function var_0_1.GetAttributeTagList(arg_8_0, arg_8_1)
+	return arg_8_0:GetContDataTemplateById(arg_8_1):GetAttributeTagList()
 end
 
 return var_0_1

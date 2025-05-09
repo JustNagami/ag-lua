@@ -2,6 +2,7 @@
 
 manager.net:Bind(60201, function(arg_1_0)
 	ActivityAccumulativeData:InitData(arg_1_0)
+	OsirisPlayGameData:InitActivityPointData(arg_1_0)
 	manager.notify:Invoke(ACCUMULATIVEGACHA_UPDATE)
 end)
 

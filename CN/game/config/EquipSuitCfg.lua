@@ -930,7 +930,7 @@
 	{
 		name = "林间的秘语",
 		equip_skill_icon = "59",
-		stage_up_list = 0,
+		stage_up_list = 1,
 		power_score = 10,
 		desc = "「女神张弓搭箭，射落彷徨的猎物。」",
 		need = 3,
@@ -1087,7 +1087,26 @@
 			68
 		}
 	},
+	{
+		name = "重生者的秘仪",
+		equip_skill_icon = "69",
+		stage_up_list = 0,
+		power_score = 10,
+		desc = "「阴谋似风中之沙，荣耀如仲夏之潮。」",
+		need = 3,
+		inherit_cost_type = 1,
+		equip_type = 1,
+		id = 69,
+		icon = "69",
+		suit = 69,
+		suit_effect = {
+			69
+		}
+	},
 	get_id_list_by_suit = {
+		[69] = {
+			69
+		},
 		[68] = {
 			68
 		},
@@ -1340,7 +1359,8 @@
 			59,
 			61,
 			62,
-			64
+			64,
+			69
 		},
 		[0] = {
 			1,
@@ -1437,6 +1457,7 @@
 		65,
 		66,
 		67,
-		68
+		68,
+		69
 	}
 }

@@ -10,7 +10,6 @@ function var_0_0.Init(arg_2_0)
 	end
 
 	arg_2_0.inited_ = true
-	arg_2_0.pool = HeroUITimelinePool.New()
 	arg_2_0.timelineStopped_ = handler(arg_2_0, arg_2_0._OnHeroTimelineStopped)
 	arg_2_0.timelineBlendSignal_ = handler(arg_2_0, arg_2_0._OnTimelineBlendSignal)
 	arg_2_0.timeline_ = HeroUITimeline.New()
@@ -18,14 +17,14 @@ function var_0_0.Init(arg_2_0)
 	arg_2_0.timeline_:AddCallback(arg_2_0.timelineStopped_, arg_2_0.timelineBlendSignal_)
 end
 
-function var_0_0.GetModelPath(arg_3_0, arg_3_1, arg_3_2)
-	local var_3_0 = SkinCfg[arg_3_1]
+function var_0_0.GetModelPath(arg_3_0, arg_3_1)
+	local var_3_0 = SkinCfg[arg_3_0]
 
-	if string.sub(arg_3_2, 1, 1) ~= "1" and var_3_0.ui_has_timeline ~= 1 then
-		return string.format("Char/%s", arg_3_2)
+	if string.sub(arg_3_1, 1, 1) ~= "1" and var_3_0.ui_has_timeline ~= 1 then
+		return string.format("Char/%s", arg_3_1)
 	end
 
-	return string.format("UICharTimeline/%s/%s", arg_3_2, arg_3_2)
+	return string.format("UICharTimeline/%s/%s", arg_3_1, arg_3_1)
 end
 
 function var_0_0.BindHero(arg_4_0, arg_4_1, arg_4_2, arg_4_3)
@@ -40,62 +39,67 @@ function var_0_0.Unbind(arg_5_0)
 	end
 end
 
-function var_0_0.PlayAction(arg_6_0, arg_6_1, arg_6_2)
-	arg_6_0:_GetTimeline():PlayAction(arg_6_1, arg_6_2)
+function var_0_0.TryJumpToEnd(arg_6_0)
+	arg_6_0:_GetTimeline():TryJumpToEnd()
 end
 
-function var_0_0.PrepareAction(arg_7_0, arg_7_1)
-	arg_7_0:_GetTimeline():PrepareAction(arg_7_1)
+function var_0_0.PlayAction(arg_7_0, arg_7_1, arg_7_2)
+	arg_7_0:_GetTimeline():PlayAction(arg_7_1, arg_7_2)
 end
 
-function var_0_0.SetCallbackStopped(arg_8_0, arg_8_1)
-	arg_8_0.curStoppedCallback_ = arg_8_1
+function var_0_0.PrepareAction(arg_8_0, arg_8_1)
+	arg_8_0:_GetTimeline():PrepareAction(arg_8_1)
 end
 
-function var_0_0.SetCallbackBlendSignal(arg_9_0, arg_9_1)
-	arg_9_0.curBlendSignalCallback_ = arg_9_1
+function var_0_0.SetCallbackStopped(arg_9_0, arg_9_1)
+	arg_9_0.curStoppedCallback_ = arg_9_1
 end
 
-function var_0_0._OnHeroTimelineStopped(arg_10_0, arg_10_1)
-	if arg_10_0.curStoppedCallback_ then
-		arg_10_0.curStoppedCallback_(arg_10_1)
+function var_0_0.SetCallbackBlendSignal(arg_10_0, arg_10_1)
+	arg_10_0.curBlendSignalCallback_ = arg_10_1
+end
+
+function var_0_0.SetCallbackByTime(arg_11_0, arg_11_1, arg_11_2, arg_11_3)
+	arg_11_0.timeline_:AddTimeCallback(arg_11_1, arg_11_2, arg_11_3)
+end
+
+function var_0_0._OnHeroTimelineStopped(arg_12_0, arg_12_1)
+	if arg_12_0.curStoppedCallback_ then
+		arg_12_0.curStoppedCallback_(arg_12_1)
 	end
 end
 
-function var_0_0._OnTimelineBlendSignal(arg_11_0)
-	if arg_11_0.curBlendSignalCallback_ then
-		arg_11_0.curBlendSignalCallback_()
+function var_0_0._OnTimelineBlendSignal(arg_13_0)
+	if arg_13_0.curBlendSignalCallback_ then
+		arg_13_0.curBlendSignalCallback_()
 	end
 end
 
-function var_0_0._GetTimeline(arg_12_0)
-	if not arg_12_0.timeline_ then
-		arg_12_0:Init()
+function var_0_0._GetTimeline(arg_14_0)
+	if not arg_14_0.timeline_ then
+		arg_14_0:Init()
 	end
 
-	return arg_12_0.timeline_
+	return arg_14_0.timeline_
 end
 
-function var_0_0.Dispose(arg_13_0)
-	if arg_13_0.timeline_ then
-		arg_13_0.timeline_:RemoveCallback(arg_13_0.timelineStopped_, arg_13_0.timelineBlendSignal_)
-		arg_13_0.timeline_:Dispose()
+function var_0_0.JumpToTime(arg_15_0, arg_15_1, arg_15_2)
+	arg_15_0:_GetTimeline():JumpToTime(arg_15_1, arg_15_2)
+end
 
-		arg_13_0.timeline_ = nil
+function var_0_0.Dispose(arg_16_0)
+	if arg_16_0.timeline_ then
+		arg_16_0.timeline_:RemoveCallback(arg_16_0.timelineStopped_, arg_16_0.timelineBlendSignal_)
+		arg_16_0.timeline_:Dispose()
+
+		arg_16_0.timeline_ = nil
 	end
 
-	arg_13_0.curStoppedCallback_ = nil
-	arg_13_0.curBlendSignalCallback_ = nil
-	arg_13_0.timelineStopped_ = nil
-	arg_13_0.timelineBlendSignal_ = nil
-
-	if arg_13_0.pool then
-		arg_13_0.pool:Dispose()
-
-		arg_13_0.pool = nil
-	end
-
-	arg_13_0.inited_ = false
+	arg_16_0.curStoppedCallback_ = nil
+	arg_16_0.curBlendSignalCallback_ = nil
+	arg_16_0.timelineStopped_ = nil
+	arg_16_0.timelineBlendSignal_ = nil
+	arg_16_0.inited_ = false
 end
 
 return var_0_0

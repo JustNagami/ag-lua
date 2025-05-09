@@ -30,7 +30,7 @@ function var_0_0.AddListeners(arg_4_0)
 			local var_5_0 = arg_4_0.data_.event_type
 
 			if var_5_0 == 1 and arg_4_0.data_.event_arg ~= "" then
-				Application.OpenURL(arg_4_0.data_.event_arg)
+				OperationAction.OpenNormalUrl(arg_4_0.data_.event_arg)
 			elseif var_5_0 == 2 and arg_4_0.data_.event_arg ~= "" then
 				local var_5_1 = string.split(arg_4_0.data_.event_arg, ",")
 				local var_5_2 = {}
@@ -45,7 +45,7 @@ function var_0_0.AddListeners(arg_4_0)
 	end)
 	arg_4_0.richText_:AddListener(function(arg_6_0, arg_6_1)
 		if arg_6_0 == 1 then
-			Application.OpenURL(arg_6_1)
+			OperationAction.OpenNormalUrl(arg_6_1)
 		elseif arg_6_0 == 2 then
 			local var_6_0 = string.split(arg_6_1, ",")
 			local var_6_1 = {}

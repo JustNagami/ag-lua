@@ -162,6 +162,7 @@ function var_0_0.RefreshItem(arg_11_0, arg_11_1, arg_11_2)
 	end
 
 	arg_11_2:SetData(var_11_2)
+	arg_11_2:RefreshGray(var_11_1 == 0)
 end
 
 function var_0_0.GetSelectTotalValue(arg_13_0)

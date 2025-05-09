@@ -147,16 +147,7 @@ function var_0_0.AddListeners(arg_10_0)
 		HeroTools.SetHeroModelWeaponActivity(arg_10_0.uiTpose_, arg_10_0.showWeapon_)
 	end)
 	arg_10_0:AddBtnListener(arg_10_0.buttonPose_, nil, function()
-		arg_10_0.isShowPosePanel_ = not arg_10_0.isShowPosePanel_
-
-		arg_10_0.heroPoseView_:Show(arg_10_0.isShowPosePanel_)
-		SetActive(arg_10_0.goSelect_, arg_10_0.isShowPosePanel_)
-
-		if arg_10_0.isShowPosePanel_ then
-			arg_10_0.touchView_:HideUI()
-		end
-
-		arg_10_0:HideScalePanel()
+		arg_10_0:ChangePosePanelState()
 	end)
 	arg_10_0:AddBtnListener(arg_10_0.buttonSnap_, nil, function()
 		if arg_10_0.isShowPosePanel_ then
@@ -457,13 +448,58 @@ function var_0_0.ScreenAdapt(arg_37_0)
 	end
 end
 
-function var_0_0.OnExitInput(arg_38_0)
-	arg_38_0.expressionView_:TryExitSaveData()
+function var_0_0.ChangePosePanelState(arg_38_0)
+	arg_38_0.isShowPosePanel_ = not arg_38_0.isShowPosePanel_
+
+	arg_38_0.heroPoseView_:Show(arg_38_0.isShowPosePanel_)
+	SetActive(arg_38_0.goSelect_, arg_38_0.isShowPosePanel_)
+
+	if arg_38_0.isShowPosePanel_ then
+		arg_38_0.touchView_:HideUI()
+	end
+
+	arg_38_0:HideScalePanel()
+end
+
+function var_0_0.CheckNeedBackToPanel(arg_39_0)
+	local var_39_0 = false
+
+	if arg_39_0.goClickTips_.activeInHierarchy then
+		arg_39_0:ClickTrigger()
+
+		var_39_0 = true
+	end
+
+	if arg_39_0.goSettingPanel_.activeInHierarchy then
+		SetActive(arg_39_0.goSettingPanel_, false)
+
+		var_39_0 = true
+	end
+
+	if arg_39_0.goSharePanel_.activeInHierarchy then
+		arg_39_0.shareView_:ExitPanel()
+
+		var_39_0 = true
+	end
+
+	if arg_39_0.goSelectPose_.activeInHierarchy then
+		arg_39_0:ChangePosePanelState()
+
+		var_39_0 = true
+	end
+
+	return var_39_0
+end
+
+function var_0_0.OnExitInput(arg_40_0)
+	if not arg_40_0:CheckNeedBackToPanel() then
+		arg_40_0.expressionView_:TryExitSaveData()
+	end
 
 	return true
 end
 
-function var_0_0.CameraEnter(arg_39_0)
+function var_0_0.CameraEnter(arg_41_0)
 	manager.heroRaiseTrack:SetViewState(HeroRaiseTrackConst.ViewType.null)
 end
 

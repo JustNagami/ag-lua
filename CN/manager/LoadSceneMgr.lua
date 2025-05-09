@@ -313,7 +313,7 @@ function var_0_0.GetPreviewHomeShouldLoadSceneName(arg_20_0)
 	local var_20_0, var_20_1 = HomeSceneSettingData:GetPreviewScene()
 	local var_20_2 = HomeSceneSettingCfg[var_20_0]
 
-	if not id and HomeSceneSettingData:GetUsedState(var_20_0) == SceneConst.HOME_SCENE_TYPE.LOCK then
+	if not var_20_0 and HomeSceneSettingData:GetUsedState(var_20_0) == SceneConst.HOME_SCENE_TYPE.LOCK then
 		var_20_0 = GameSetting.home_sence_default.value[1]
 		var_20_2 = HomeSceneSettingCfg[var_20_0]
 
@@ -436,23 +436,34 @@ function var_0_0.HideLastSceneList(arg_29_0)
 	end
 end
 
-function var_0_0.AddCachePage(arg_30_0)
-	if not arg_30_0:CanEnd() then
-		local var_30_0 = gameContext:GetFirstRoutePage()
+function var_0_0.SetCurSceneActive(arg_30_0, arg_30_1)
+	local var_30_0 = HomeSceneSettingCfg[HomeSceneSettingData:GetCurScene()].prefix
+	local var_30_1 = SceneManager.GetSceneByName(var_30_0)
 
-		table.insert(arg_30_0.cacheSceneNameList_, var_30_0)
+	if var_30_1 and var_30_1.rootCount > 0 then
+		local var_30_2 = var_30_1:GetRootGameObjects()
+
+		arg_30_0:ActiveScene(var_30_2, var_30_0, arg_30_1)
 	end
 end
 
-function var_0_0.SetSceneDisableAutoChange(arg_31_0, arg_31_1)
-	arg_31_0.sceneDisableAutoChange_ = arg_31_1
+function var_0_0.AddCachePage(arg_31_0)
+	if not arg_31_0:CanEnd() then
+		local var_31_0 = gameContext:GetFirstRoutePage()
+
+		table.insert(arg_31_0.cacheSceneNameList_, var_31_0)
+	end
 end
 
-function var_0_0.SetSceneActive(arg_32_0, arg_32_1, arg_32_2)
-	local var_32_0 = manager.ui:GetSceneByName(arg_32_1)
+function var_0_0.SetSceneDisableAutoChange(arg_32_0, arg_32_1)
+	arg_32_0.sceneDisableAutoChange_ = arg_32_1
+end
 
-	LuaForUtil.SetSceneSetting(var_32_0, arg_32_2)
-	SetActive(var_32_0, arg_32_2)
+function var_0_0.SetSceneActive(arg_33_0, arg_33_1, arg_33_2)
+	local var_33_0 = manager.ui:GetSceneByName(arg_33_1)
+
+	LuaForUtil.SetSceneSetting(var_33_0, arg_33_2)
+	SetActive(var_33_0, arg_33_2)
 end
 
 return var_0_0

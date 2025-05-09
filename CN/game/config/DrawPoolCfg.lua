@@ -172,7 +172,8 @@
 			3001338,
 			3001344,
 			3001353,
-			3001366
+			3001366,
+			3001375
 		},
 		cost_once = {
 			19,
@@ -3586,7 +3587,9 @@
 			3001345,
 			3001346,
 			3001367,
-			3001368
+			3001368,
+			3001376,
+			3001377
 		},
 		cost_once = {
 			5,
@@ -6802,7 +6805,12 @@
 			3001362,
 			3001363,
 			3001364,
-			3001365
+			3001365,
+			3001370,
+			3001371,
+			3001372,
+			3001373,
+			3001374
 		},
 		cost_once = {
 			38,
@@ -7266,6 +7274,262 @@
 		cost_once_activity_material = {},
 		cost_ten_times_activity_material = {}
 	},
+	[4010601] = {
+		pool_change = 0,
+		optional_lists = "",
+		pool_type = 6,
+		optional_detail = "",
+		is_grid_select = 0,
+		optional_lists_a = "",
+		name = "圣翼的微光",
+		draw_pool_desc = "DRAW_POOL_DESC_TEMP_9",
+		detail_note = "",
+		pool_show_type = 6,
+		order = 1,
+		pool_selected_type = 3,
+		exchange_id = 6000003,
+		optional_lists_poolId = "",
+		discount = 100,
+		id = 4010601,
+		unoption_up_items = {
+			{
+				1211
+			},
+			{}
+		},
+		excluded_group = {
+			{},
+			{}
+		},
+		recharge_shop_list = {
+			3001370,
+			3001371,
+			3001372,
+			3001373,
+			3001374
+		},
+		cost_once = {
+			38,
+			1
+		},
+		cost_ten_times = {
+			38,
+			10
+		},
+		cost_once_activity_material = {
+			62,
+			1
+		},
+		cost_ten_times_activity_material = {
+			62,
+			10
+		}
+	},
+	[4010301] = {
+		pool_change = 0,
+		optional_lists = "",
+		pool_type = 3,
+		optional_detail = "",
+		is_grid_select = 0,
+		optional_lists_a = "",
+		name = "圣翼的微光",
+		draw_pool_desc = "DRAW_POOL_DESC_TEMP_8",
+		detail_note = "",
+		pool_show_type = 3,
+		order = 1,
+		pool_selected_type = 1,
+		exchange_id = 6000003,
+		optional_lists_poolId = "",
+		discount = 100,
+		id = 4010301,
+		unoption_up_items = {
+			{
+				1211
+			},
+			{}
+		},
+		excluded_group = {
+			{},
+			{}
+		},
+		recharge_shop_list = {
+			3001370,
+			3001371,
+			3001372,
+			3001373,
+			3001374
+		},
+		cost_once = {
+			38,
+			1
+		},
+		cost_ten_times = {
+			38,
+			10
+		},
+		cost_once_activity_material = {
+			62,
+			1
+		},
+		cost_ten_times_activity_material = {
+			62,
+			10
+		}
+	},
+	[4010302] = {
+		pool_change = 0,
+		optional_lists = "",
+		pool_type = 3,
+		optional_detail = "",
+		is_grid_select = 0,
+		optional_lists_a = "",
+		name = "梵我一如",
+		draw_pool_desc = "DRAW_POOL_DESC_TEMP_8",
+		detail_note = "",
+		pool_show_type = 3,
+		order = 2,
+		pool_selected_type = 1,
+		exchange_id = 6000003,
+		optional_lists_poolId = "",
+		discount = 100,
+		id = 4010302,
+		unoption_up_items = {
+			{
+				1020
+			},
+			{}
+		},
+		excluded_group = {
+			{},
+			{}
+		},
+		recharge_shop_list = {
+			3001370,
+			3001371,
+			3001372,
+			3001373,
+			3001374
+		},
+		cost_once = {
+			38,
+			1
+		},
+		cost_ten_times = {
+			38,
+			10
+		},
+		cost_once_activity_material = {
+			62,
+			1
+		},
+		cost_ten_times_activity_material = {
+			62,
+			10
+		}
+	},
+	[4010303] = {
+		pool_change = 0,
+		optional_lists = "",
+		pool_type = 3,
+		optional_detail = "",
+		is_grid_select = 0,
+		optional_lists_a = "",
+		name = "曼陀罗轻语",
+		draw_pool_desc = "DRAW_POOL_DESC_TEMP_8",
+		detail_note = "",
+		pool_show_type = 3,
+		order = 2,
+		pool_selected_type = 1,
+		exchange_id = 6000003,
+		optional_lists_poolId = "",
+		discount = 100,
+		id = 4010303,
+		unoption_up_items = {
+			{
+				1089
+			},
+			{}
+		},
+		excluded_group = {
+			{},
+			{}
+		},
+		recharge_shop_list = {
+			3001370,
+			3001371,
+			3001372,
+			3001373,
+			3001374
+		},
+		cost_once = {
+			38,
+			1
+		},
+		cost_ten_times = {
+			38,
+			10
+		},
+		cost_once_activity_material = {
+			62,
+			1
+		},
+		cost_ten_times_activity_material = {
+			62,
+			10
+		}
+	},
+	[4010101] = {
+		pool_change = 0,
+		pool_type = 1,
+		is_grid_select = 0,
+		optional_lists_a = "",
+		name = "选择修正者",
+		draw_pool_desc = "DRAW_POOL_DESC_TEMP_11",
+		detail_note = "",
+		pool_show_type = 1,
+		order = 1,
+		pool_selected_type = 2,
+		exchange_id = 6000001,
+		discount = 100,
+		id = 4010101,
+		unoption_up_items = {
+			{},
+			{}
+		},
+		optional_detail = {
+			1066,
+			1094,
+			1199
+		},
+		optional_lists_poolId = {
+			1066,
+			1094,
+			1199
+		},
+		optional_lists = {
+			1066,
+			1094,
+			1199
+		},
+		excluded_group = {
+			{},
+			{}
+		},
+		recharge_shop_list = {
+			3001376,
+			3001377
+		},
+		cost_once = {
+			5,
+			1
+		},
+		cost_ten_times = {
+			5,
+			10
+		},
+		cost_once_activity_material = {},
+		cost_ten_times_activity_material = {}
+	},
 	all = {
 		10000,
 		2060604,
@@ -7311,6 +7575,9 @@
 		4000601,
 		4000301,
 		4000101,
+		4010601,
+		4010301,
+		4010101,
 		10003,
 		10013,
 		10023,
@@ -7352,6 +7619,8 @@
 		3110302,
 		4000602,
 		4000302,
+		4010302,
+		4010303,
 		10001,
 		10011,
 		10021,

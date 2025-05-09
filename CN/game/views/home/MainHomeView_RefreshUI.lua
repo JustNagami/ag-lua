@@ -325,10 +325,12 @@ function var_0_0.RecordPureModeLog(arg_23_0, arg_23_1, arg_23_2)
 end
 
 function var_0_0.SetPureModeBtnActive(arg_24_0, arg_24_1, arg_24_2)
-	if arg_24_1 then
-		arg_24_0:ShowPureModeBar()
-	else
-		manager.windowBar:SwitchBar({})
+	if arg_24_2 then
+		if arg_24_1 then
+			arg_24_0:ShowPureModeBar()
+		else
+			manager.windowBar:HideBar()
+		end
 	end
 
 	SetActive(arg_24_0.appearViewBtn_.gameObject, false)
@@ -359,16 +361,37 @@ function var_0_0.AdaptRight(arg_26_0)
 	var_0_0.super.AdaptRight(arg_26_0)
 end
 
-function var_0_0.ShowPureModeBar(arg_27_0)
+function var_0_0.InitBar(arg_27_0)
+	manager.windowBar:SwitchBar({
+		BACK_BAR,
+		HOME_BAR,
+		INFO_BAR
+	})
+	manager.windowBar:SwitchBar({
+		CurrencyConst.CURRENCY_TYPE_VITALITY,
+		CurrencyConst.CURRENCY_TYPE_GOLD,
+		CurrencyConst.CURRENCY_TYPE_DIAMOND,
+		CurrencyConst.GetPlatformDiamondId()
+	})
+	manager.windowBar:SetBarCanAdd(CurrencyConst.CURRENCY_TYPE_VITALITY, true)
+	manager.windowBar:SetBarCanAdd(CurrencyConst.CURRENCY_TYPE_GOLD, true)
+	manager.windowBar:SetBarCanAdd(CurrencyConst.CURRENCY_TYPE_DIAMOND, true)
+	manager.windowBar:SetBarCanAdd(CurrencyConst.GetPlatformDiamondId(), true)
+end
+
+function var_0_0.ShowPureModeBar(arg_28_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR
 	})
 	manager.windowBar:RegistBackCallBack(function()
-		arg_27_0.isPureMode_ = false
+		arg_28_0.isPureMode_ = false
 
-		arg_27_0:SetPureMode(true)
-		arg_27_0:RecordPureModeLog(false)
-		arg_27_0:InitBar()
+		arg_28_0:SetPureMode(true)
+
+		arg_28_0.params_.isPureMode = false
+
+		arg_28_0:RecordPureModeLog(false)
+		arg_28_0:InitBar()
 		PlayerData:SetIsDeskMode(false)
 	end)
 end

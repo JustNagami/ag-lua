@@ -104,4 +104,38 @@ function var_0_0.GetChipOfHeroDic(arg_20_0)
 	return arg_20_0.chipOfHeroDic_ or {}
 end
 
+function var_0_0.GetHeroChipData(arg_21_0, arg_21_1)
+	local var_21_0, var_21_1 = arg_21_0:GetHeroTeam()
+
+	for iter_21_0, iter_21_1 in ipairs(var_21_0) do
+		if iter_21_1 ~= 0 then
+			local var_21_2 = var_21_1[iter_21_0]
+
+			if var_21_2 and var_21_2 ~= 0 then
+				local var_21_3 = HeroStandardSystemCfg[var_21_2]
+
+				table.insertto(arg_21_1, var_21_3.using_hero_chip)
+			else
+				local var_21_4 = arg_21_0:GetChipOfHeroDic()[iter_21_1]
+
+				if var_21_4 then
+					for iter_21_2, iter_21_3 in pairs(var_21_4) do
+						if iter_21_3 > 0 then
+							table.insert(arg_21_1, iter_21_3)
+						end
+					end
+				else
+					for iter_21_4, iter_21_5 in pairs(ChipData:GetEnableHeroChipIdByHeroId(iter_21_1) or {}) do
+						if iter_21_5 > 0 then
+							table.insert(arg_21_1, iter_21_5)
+						end
+					end
+				end
+			end
+		end
+	end
+
+	return arg_21_1
+end
+
 return var_0_0

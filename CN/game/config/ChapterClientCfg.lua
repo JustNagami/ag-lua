@@ -479,7 +479,7 @@
 		name = "苦岸行旅",
 		sort = 0,
 		desc = "第二十一章",
-		asset_pend_key = "",
+		asset_pend_key = "assetpend_common_chapter_9",
 		activity_id = 0,
 		level = 1,
 		extra_strory_system = "",
@@ -2583,6 +2583,25 @@
 		toggle = 8,
 		chapter_list = {}
 	},
+	[5050004] = {
+		jump_system = "",
+		chapter_paint = "Theme_323801",
+		chapter_paint_2 = "",
+		not_chapter_id = false,
+		show_tag_type = 0,
+		name = "",
+		sort = 0,
+		desc = "",
+		asset_pend_key = "",
+		activity_id = 323801,
+		level = 0,
+		extra_strory_system = "",
+		extra_story_unlock_condition = "",
+		drop_icon = "",
+		id = 5050004,
+		toggle = 8,
+		chapter_list = {}
+	},
 	[6010001] = {
 		jump_system = "",
 		chapter_paint = "bg_activity_00",
@@ -2937,7 +2956,8 @@
 		[8] = {
 			5050001,
 			5050002,
-			5050003
+			5050003,
+			5050004
 		},
 		[504] = {
 			5040000
@@ -3192,6 +3212,7 @@
 		5050001,
 		5050002,
 		5050003,
+		5050004,
 		6010001,
 		6010002,
 		6010003,

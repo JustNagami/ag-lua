@@ -156,6 +156,10 @@ function var_0_0.GotoResidentActView(arg_11_0)
 				LaunchQWorld(false, arg_11_0)
 			end)
 		end
+	elseif arg_11_0 == ActivityConst.ACTIVITY_OSIRIS_PLAY_GAME then
+		JumpTools.OpenPageByJump("/osirisPlayGameEnterView", {
+			activityID_ = arg_11_0
+		})
 	end
 end
 
@@ -168,6 +172,8 @@ function var_0_0.GetResidentActDescTips(arg_13_0)
 		var_13_0 = GetTips("SKULD_SYSTEM_TIPS_1")
 	elseif arg_13_0 == ActivityConst.ACTIVITY_QUANZHOU_ENTRY then
 		var_13_0 = GetTips("QUANZHOU_DESC")
+	elseif arg_13_0 == ActivityConst.ACTIVITY_OSIRIS_PLAY_GAME then
+		var_13_0 = GetTips("ACTIVITY_GENERALITY_DESC")
 	end
 
 	return var_13_0
@@ -178,6 +184,8 @@ function var_0_0.GetResidentActViewClass(arg_14_0)
 		return ChapterResidentActSkuldView
 	elseif arg_14_0 == ActivityConst.ACTIVITY_QUANZHOU_ENTRY then
 		return ChapterResidentActQuanZhouView
+	elseif arg_14_0 == ActivityConst.ACTIVITY_OSIRIS_PLAY_GAME then
+		return ChapterResidentActOsirisView
 	else
 		return ChapterResidentActBaseView
 	end

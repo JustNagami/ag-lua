@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("TetrisGameSkillView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "Widget/BackHouseUI/TetrisGame/TetrisGamechapterUI"
+	return "Widget/Version/Alone_TetrisGameUI/TetrisGamechapterUI"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -17,6 +17,7 @@ function var_0_0.Init(arg_4_0)
 	arg_4_0:AddUIListener()
 
 	arg_4_0.skillScroll = LuaList.New(handler(arg_4_0, arg_4_0.indexskillItem), arg_4_0.skillListGo_, TetrisGameSkillItem)
+	arg_4_0.skillCountShowController = arg_4_0.controller_:GetController("skillCountShow")
 end
 
 function var_0_0.InitUI(arg_5_0)
@@ -33,7 +34,7 @@ function var_0_0.OnEnter(arg_6_0)
 
 	arg_6_0.texttittleText_.text = ActivityTetrisGameChapterCfg[1].name
 
-	RankAction.QueryActivityRank(ActivityConst.ACTIVITY_TETRIS_GAME_RANK, nil, function()
+	RankAction.QueryActivityRank(TetrisGameData:GetCurRankActivityID(), nil, function()
 		arg_6_0:RefreshViewInfo()
 	end)
 end
@@ -65,68 +66,154 @@ function var_0_0.OnExit(arg_11_0)
 	arg_11_0:RemoveAllEventListener()
 end
 
-function var_0_0.AddUIListener(arg_12_0)
-	arg_12_0:AddBtnListener(arg_12_0.startBtn_, nil, function()
-		local var_13_0 = TetrisGameTools:GetEndLessStageIDByActivityID(arg_12_0.activityID)
+function var_0_0.GetCanUseSkillCount(arg_12_0)
+	local var_12_0 = 0
 
-		if var_13_0 then
-			TetrisGameTools:EnterStage(var_13_0)
+	for iter_12_0, iter_12_1 in ipairs(arg_12_0.skillList) do
+		if TetrisGameTools:CheckSkillIsUnlock(iter_12_1) then
+			var_12_0 = var_12_0 + 1
+		end
+	end
+
+	return var_12_0
+end
+
+function var_0_0.CheckIsNumLimit(arg_13_0)
+	local var_13_0 = true
+	local var_13_1 = arg_13_0:GetCanUseSkillCount()
+	local var_13_2 = #TetrisGameData:GetSkillList()
+	local var_13_3 = GameSetting.tetris_game_skill_max.value[1]
+
+	if var_13_3 <= var_13_1 and var_13_2 < var_13_3 then
+		ShowTips("TETRIS_GAME_SKILL_NUM_TIPS")
+
+		var_13_0 = false
+	end
+
+	return var_13_0
+end
+
+function var_0_0.AddUIListener(arg_14_0)
+	arg_14_0:AddBtnListener(arg_14_0.startBtn_, nil, function()
+		if not arg_14_0:CheckIsNumLimit() then
+			return
+		end
+
+		local var_15_0 = TetrisGameTools:GetEndLessStageIDByActivityID(arg_14_0.activityID)
+
+		if var_15_0 then
+			TetrisGameTools:EnterStage(var_15_0)
 		end
 	end)
-	arg_12_0:AddBtnListener(arg_12_0.btnrankBtn_, nil, function()
+	arg_14_0:AddBtnListener(arg_14_0.btnrankBtn_, nil, function()
 		JumpTools.OpenPageByJump("/tetrisGameRankView", {
-			rankActivityID = ActivityConst.ACTIVITY_TETRIS_GAME_RANK
+			rankActivityID = TetrisGameData:GetCurRankActivityID()
 		})
 	end)
 end
 
-function var_0_0.RegisterEvents(arg_15_0)
+function var_0_0.RegisterEvents(arg_17_0)
 	return
 end
 
-function var_0_0.OnSkillUpdate(arg_16_0)
-	arg_16_0.skillScroll:Refresh()
-	arg_16_0:RefreshViewInfo()
+function var_0_0.OnSkillUpdate(arg_18_0)
+	arg_18_0.skillScroll:Refresh()
+	arg_18_0:RefreshViewInfo()
 end
 
-function var_0_0.Dispose(arg_17_0)
-	if arg_17_0.skillScroll then
-		arg_17_0.skillScroll:Dispose()
+function var_0_0.Dispose(arg_19_0)
+	if arg_19_0.skillScroll then
+		arg_19_0.skillScroll:Dispose()
 
-		arg_17_0.skillScroll = nil
+		arg_19_0.skillScroll = nil
 	end
 
-	var_0_0.super.Dispose(arg_17_0)
+	var_0_0.super.Dispose(arg_19_0)
 end
 
-function var_0_0.RefreshSkillList(arg_18_0)
-	arg_18_0.skillList = ActivityTetrisGameSkillCfg.all
+function var_0_0.GetTargetMoveIndex(arg_20_0)
+	local var_20_0 = -1
 
-	arg_18_0.skillScroll:StartScroll(#arg_18_0.skillList)
+	for iter_20_0 = 1, #arg_20_0.skillList do
+		local var_20_1 = arg_20_0.skillList[iter_20_0]
+
+		if manager.redPoint:getTipBoolean(string.format("%s_%s", RedPointConst.ACTIVITY_TETIRS_GAME_NEW_SKILL, var_20_1)) then
+			var_20_0 = iter_20_0
+
+			break
+		end
+	end
+
+	if var_20_0 < 0 then
+		for iter_20_1 = 1, #arg_20_0.skillList do
+			local var_20_2 = arg_20_0.skillList[iter_20_1]
+
+			if TetrisGameTools:CheckSkillInList(var_20_2) then
+				var_20_0 = iter_20_1
+
+				break
+			end
+		end
+	end
+
+	return var_20_0
 end
 
-function var_0_0.indexskillItem(arg_19_0, arg_19_1, arg_19_2)
-	arg_19_2:RefreshUI(arg_19_0.skillList[arg_19_1])
-end
+function var_0_0.RefreshSkillList(arg_21_0)
+	local var_21_0 = TetrisGameTools:GetEndLessStageIDByActivityID(arg_21_0.activityID)
 
-function var_0_0.RefreshViewInfo(arg_20_0)
-	local var_20_0 = #TetrisGameData:GetSkillList()
+	arg_21_0.skillList = ActivityTetrisGameStageCfg[var_21_0].skill_list
 
-	arg_20_0.skillNum.text = string.format("%s/%s", tostring(var_20_0 or 0), tostring(GameSetting.tetris_game_skill_max.value[1]))
+	local var_21_1 = arg_21_0:GetTargetMoveIndex()
 
-	local var_20_1 = RankData:GetActivityRank(ActivityConst.ACTIVITY_TETRIS_GAME_RANK)
-	local var_20_2
-	local var_20_3
-
-	if var_20_1 then
-		local var_20_4
-
-		var_20_4, var_20_3 = var_20_1:GetCurRankDes()
+	if var_21_1 > 0 then
+		arg_21_0.skillScroll:StartScroll(#arg_21_0.skillList, var_21_1)
 	else
-		var_20_3 = GetTips("MATRIX_RANK_NO_INFO")
+		arg_21_0.skillScroll:StartScroll(#arg_21_0.skillList)
 	end
 
-	arg_20_0.rankScore.text = var_20_3
+	local var_21_2 = TetrisGameConst.ultimateID
+	local var_21_3 = ActivityTetrisGameSkillCfg[var_21_2]
+
+	if var_21_2 and var_21_3 then
+		arg_21_0.ultimateNameTxt_.text = var_21_3.name
+		arg_21_0.ultimateDescTxt_.text = var_21_3.desc
+		arg_21_0.ultimateIcon_.sprite = TetrisGameTools:GetSkillIcon(var_21_2)
+	end
+end
+
+function var_0_0.indexskillItem(arg_22_0, arg_22_1, arg_22_2)
+	arg_22_2:RefreshUI(arg_22_0.skillList[arg_22_1])
+end
+
+function var_0_0.RefreshViewInfo(arg_23_0)
+	local var_23_0 = arg_23_0:GetCanUseSkillCount()
+
+	if var_23_0 > 0 then
+		arg_23_0.skillCountShowController:SetSelectedState("show")
+	else
+		arg_23_0.skillCountShowController:SetSelectedState("hide")
+	end
+
+	local var_23_1 = GameSetting.tetris_game_skill_max.value[1]
+	local var_23_2 = math.min(var_23_1, var_23_0)
+	local var_23_3 = #TetrisGameData:GetSkillList()
+
+	arg_23_0.skillNum.text = string.format("%s/%s", tostring(var_23_3 or 0), var_23_2)
+
+	local var_23_4 = RankData:GetActivityRank(TetrisGameData:GetCurRankActivityID())
+	local var_23_5
+	local var_23_6
+
+	if var_23_4 then
+		local var_23_7
+
+		var_23_7, var_23_6 = var_23_4:GetCurRankDes()
+	else
+		var_23_6 = GetTips("MATRIX_RANK_NO_INFO")
+	end
+
+	arg_23_0.rankScore.text = var_23_6
 end
 
 return var_0_0
