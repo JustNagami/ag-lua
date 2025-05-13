@@ -964,7 +964,7 @@ function var_0_0.IsPC()
 end
 
 function var_0_0.IsLimitRecharge()
-	return var_0_0.IsPC() and false
+	return var_0_0.IsPC() and SDKTools.GetIsKorea()
 end
 
 function var_0_0.CheckDlcCanBuy(arg_54_0)

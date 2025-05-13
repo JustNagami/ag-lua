@@ -166,6 +166,16 @@ var_0_0.typeToFunction = {
 				subType = 0
 			})
 		end
+	end,
+	purchase_ys = function(arg_15_0)
+		var_0_1 = {
+			af_customer_user_id = PlayerData:GetPlayerInfo().userID,
+			time = manager.time:GetServerTime(),
+			af_currency = arg_15_0.currency_type,
+			af_revenue = arg_15_0.value
+		}
+
+		SDKTools.SetParamsAttribute("af_purchase", var_0_1)
 	end
 }
 
