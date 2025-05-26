@@ -1,0 +1,24 @@
+﻿return {
+	HOME_SCENE_TYPE = {
+		LOCK = 0,
+		TRIAL = 1,
+		UNLOCK = 2
+	},
+	HOME_SCENE_IMPACT = {
+		WEATHER = 1,
+		DATA = 2,
+		TIME = 3
+	},
+	HOME_SCENE_TIME = {
+		DAY = "X10",
+		NIGHT = "X10a"
+	},
+	HOME_SCENE_WEATHER = {
+		SUNNY = 1,
+		RAINY = 2
+	},
+	HOME_SCENE_SETTING = {
+		SCENE_SOUND_EFFECT = 1,
+		CAMERA_FOLLOW = 2
+	}
+}
