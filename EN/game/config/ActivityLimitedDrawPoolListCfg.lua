@@ -245,8 +245,8 @@
 		pool_name = "ca601be825f23ab44f668fb14747c3ca",
 		pool_sign = "T0_109502_banner_3",
 		detail_note = "0c7ce446a63835c9a8ccc617fc1fa10d",
-		poll_picture_select = "I18NImage/T0_Banner/T0_109502_banner_1_skin",
-		poll_picture = "I18NImage/T0_Banner/T0_109502_banner_2_skin",
+		poll_picture_select = "I18NImg/T0_Banner/T0_109502_banner_1_skin",
+		poll_picture = "I18NImg/T0_Banner/T0_109502_banner_2_skin",
 		activity_id = {
 			292221
 		},
@@ -313,8 +313,8 @@
 		pool_name = "7acfa3bd425c3e42f4ee85889a632fb8",
 		pool_sign = "T0_109502_banner_4",
 		detail_note = "fdc6faef09cc95b541403eedbf4c547f",
-		poll_picture_select = "I18NImage/T0_Banner/T0_109502_banner_1_morning",
-		poll_picture = "I18NImage/T0_Banner/T0_109502_banner_2_morning",
+		poll_picture_select = "I18NImg/T0_Banner/T0_109502_banner_1_morning",
+		poll_picture = "I18NImg/T0_Banner/T0_109502_banner_2_morning",
 		activity_id = {
 			292222
 		},
@@ -365,8 +365,8 @@
 		pool_name = "a5ee95d9291931e207b57e6288796eab",
 		pool_sign = "T0_109502_banner_5",
 		detail_note = "eab330480806aef43458f499988e97ee",
-		poll_picture_select = "I18NImage/T0_Banner/T0_109502_banner_1_night",
-		poll_picture = "I18NImage/T0_Banner/T0_109502_banner_2_night",
+		poll_picture_select = "I18NImg/T0_Banner/T0_109502_banner_1_night",
+		poll_picture = "I18NImg/T0_Banner/T0_109502_banner_2_night",
 		activity_id = {
 			292223
 		},

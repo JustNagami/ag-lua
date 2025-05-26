@@ -111,7 +111,7 @@ function var_0_0.RefreshDrawUI(arg_12_0)
 
 		local var_12_1 = MainAdvinfoCfg[arg_12_0.drawCfg_[3]].picture
 
-		arg_12_0.drawIcon_.sprite = getSpriteWithoutAtlas("I18NImage/Banner/" .. var_12_1 .. SettingData:GetCurrentLanguageKey())
+		arg_12_0.drawIcon_.sprite = getSpriteWithoutAtlas("I18NImg/Banner/" .. var_12_1 .. SettingData:GetCurrentLanguageKey())
 	else
 		SetActive(arg_12_0.drawItemGo_, false)
 	end

@@ -10,7 +10,7 @@ function var_0_0.GetCurrentAdvInfo()
 		if ActivityTools.IsValidAdv(var_1_1.id) then
 			table.insert(var_1_0, {
 				id = var_1_1.id,
-				image = getSpriteWithoutAtlas("I18NImage/Banner/" .. (var_1_1.picture or "activity1"))
+				image = getSpriteWithoutAtlas("I18NImg/Banner/" .. (var_1_1.picture or "activity1"))
 			})
 		end
 	end

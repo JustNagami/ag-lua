@@ -3529,8 +3529,8 @@
 		id = "enternal_music_describe",
 		value2 = "",
 		value = {
-			"I18NImage/TextureConfig/VersionUI/XuHeng1stUI/music_01",
-			"I18NImage/TextureConfig/VersionUI/XuHeng1stUI/music_02"
+			"I18NImg/TextureConfig/VersionUI/XuHeng1stUI/music_01",
+			"I18NImg/TextureConfig/VersionUI/XuHeng1stUI/music_02"
 		}
 	},
 	attach_music_longnote = {
@@ -3839,8 +3839,8 @@
 		id = "activity_firework_describe",
 		value2 = "",
 		value = {
-			"I18NImage/TextureConfig/EmptyDream/firework_courses_01",
-			"I18NImage/TextureConfig/EmptyDream/firework_courses_02"
+			"I18NImg/TextureConfig/EmptyDream/firework_courses_01",
+			"I18NImg/TextureConfig/EmptyDream/firework_courses_02"
 		}
 	},
 	time_remaining_show = {
@@ -4940,15 +4940,15 @@
 		id = "activity_club_sp_describe",
 		value2 = "",
 		value = {
-			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_01",
-			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_02",
-			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_03",
-			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_04",
-			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_05",
-			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_06",
-			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_07",
-			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_08",
-			"I18NImage/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_09"
+			"I18NImg/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_01",
+			"I18NImg/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_02",
+			"I18NImg/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_03",
+			"I18NImg/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_04",
+			"I18NImg/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_05",
+			"I18NImg/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_06",
+			"I18NImg/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_07",
+			"I18NImg/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_08",
+			"I18NImg/TextureConfig/GuildActivitiesSPUI/note/activity_club_courses_09"
 		}
 	},
 	solo_heart_demon_basescore = {

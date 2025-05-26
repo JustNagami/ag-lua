@@ -128,8 +128,10 @@ function var_0_0.OpenInternalUrl(arg_15_0, arg_15_1, arg_15_2)
 	FrameTimer.New(function()
 		LuaForUtil.OpenWebView(arg_15_0, arg_15_2, function()
 			print("--->> open webView to portrait")
+			LuaForUtil.EnableAudioSessionRestoration_IOS(false)
 		end, function()
 			print("====>>> close webView recover")
+			LuaForUtil.EnableAudioSessionRestoration_IOS(true)
 		end, arg_15_1)
 	end, 6, 1):Start()
 end
@@ -299,6 +301,18 @@ function var_0_0.GetDiscordAuthUrl()
 	local var_39_1 = GameToSDK.IsPCPlatform() and "Discord_AuthUrl_PC" or "Discord_AuthUrl"
 
 	return OperationAction.GetOperationUrl(var_39_1)
+end
+
+function var_0_0.OpenTransferCode()
+	var_0_0.GetCurServerTimestampAndSign(function()
+		local var_41_0 = var_0_0.GetOperationUrl("ACCOUNT_TRANSFER_URL")
+		local var_41_1 = PlayerData:GetPlayerInfo().userID
+		local var_41_2 = _G.TMP_CHANNELID
+		local var_41_3 = GetSDKLoginToken()
+		local var_41_4 = string.format(var_41_0, var_41_1, var_41_2, var_41_3, _G.SERVER_TIMESTAMP, _G.SERVER_TIMESTAMP_SIGN)
+
+		var_0_0.OpenUrl(var_41_4, OperationConst.URL_OPEN_WAY.NORMAL)
+	end)
 end
 
 return var_0_0

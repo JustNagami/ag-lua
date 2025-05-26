@@ -41,18 +41,22 @@ function var_0_0.OnEnter(arg_8_0)
 end
 
 function var_0_0.CheckEnter(arg_9_0)
-	if ActivityHeroLetterData:GetActivityUrl() == ActivityConst.ACTIVITY_2_10_HERO_LETTER_H5_WEB then
+	if ActivityHeroLetterData:GetActivityUrl() == ActivityConst.ACTIVITY_2_10_HERO_LETTER_ and ActivityData:GetActivityIsOpen(ActivityConst.ACTIVITY_2_10_HERO_LETTER_) then
 		local var_9_0 = ActivityData:GetActivityData(ActivityConst.ACTIVITY_2_10_HERO_LETTER_H5_WEB)
 		local var_9_1 = var_9_0.startTime
 		local var_9_2 = var_9_0.stopTime
 		local var_9_3 = ActivityHeroLetterData:GetSign(ActivityConst.ACTIVITY_2_10_HERO_LETTER_H5_WEB)
 
+		print("stopTime_", var_9_2)
+		print("manager.time:GetServerTime()", manager.time:GetServerTime())
 		SetActive(arg_9_0.playBackBtn_.gameObject, var_9_2 > manager.time:GetServerTime())
 
 		if var_9_2 > manager.time:GetServerTime() and var_9_3 == 0 then
 			arg_9_0:GotoView()
 			ActivityHeroLetterAction.SetSign(ActivityConst.ACTIVITY_2_10_HERO_LETTER_H5_WEB)
 		end
+	else
+		SetActive(arg_9_0.playBackBtn_.gameObject, false)
 	end
 end
 
@@ -157,11 +161,15 @@ function var_0_0.RefreshRewardType(arg_20_0)
 end
 
 function var_0_0.BindRedPointUI(arg_21_0)
-	manager.redPoint:bindUIandKey(arg_21_0.playBackBtn_.transform, RedPointConst.ACTIVITY_HERO_LETTER_REPORT .. "_" .. arg_21_0.activityID_)
+	if ActivityHeroLetterData:GetActivityUrl() == ActivityConst.ACTIVITY_2_10_HERO_LETTER_ and ActivityData:GetActivityIsOpen(ActivityConst.ACTIVITY_2_10_HERO_LETTER_) then
+		manager.redPoint:bindUIandKey(arg_21_0.playBackBtn_.transform, RedPointConst.ACTIVITY_HERO_LETTER_REPORT .. "_" .. arg_21_0.activityID_)
+	end
 end
 
 function var_0_0.UnbindRedPointUI(arg_22_0)
-	manager.redPoint:unbindUIandKey(arg_22_0.playBackBtn_.transform, RedPointConst.ACTIVITY_HERO_LETTER_REPORT .. "_" .. arg_22_0.activityID_)
+	if ActivityHeroLetterData:GetActivityUrl() == ActivityConst.ACTIVITY_2_10_HERO_LETTER_ and ActivityData:GetActivityIsOpen(ActivityConst.ACTIVITY_2_10_HERO_LETTER_) then
+		manager.redPoint:unbindUIandKey(arg_22_0.playBackBtn_.transform, RedPointConst.ACTIVITY_HERO_LETTER_REPORT .. "_" .. arg_22_0.activityID_)
+	end
 end
 
 function var_0_0.OnTop(arg_23_0)

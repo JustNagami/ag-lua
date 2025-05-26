@@ -49,7 +49,10 @@ function var_0_0.InitRedPointKey(arg_5_0)
 		table.insert(var_5_0, RedPointConst.ACTIVITY_HERO_LETTER_ITEM .. "_" .. var_5_2)
 	end
 
-	table.insert(var_5_0, RedPointConst.ACTIVITY_HERO_LETTER_REPORT .. "_" .. arg_5_0)
+	if ActivityData:GetActivityIsOpen(ActivityConst.ACTIVITY_2_10_HERO_LETTER_) then
+		table.insert(var_5_0, RedPointConst.ACTIVITY_HERO_LETTER_REPORT .. "_" .. arg_5_0)
+	end
+
 	manager.redPoint:addGroup(RedPointConst.ACTIVITY_HERO_LETTER .. "_" .. arg_5_0, var_5_0)
 end
 
