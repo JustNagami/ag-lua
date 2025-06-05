@@ -29,7 +29,9 @@ function var_0_0.AddUIListener(arg_5_0)
 		arg_5_0.selectController_:SetSelectedState("off")
 	end)
 	arg_5_0:AddBtnListener(arg_5_0.taskBtn_, nil, function()
-		GodEaterTool.GotoMilestone(ActivityConst.ACTIVITY_CIVILIZATION)
+		JumpTools.OpenPageByJump("ActivityGodEaterCivilizationTaskView", {
+			activityId = ActivityConst.ACTIVITY_CIVILIZATION
+		})
 	end)
 	arg_5_0:AddBtnListener(arg_5_0.illuBtn_, nil, function()
 		JumpTools.OpenPageByJump("/civilizationGameIlluView")
@@ -71,101 +73,75 @@ function var_0_0.AddUIListener(arg_5_0)
 end
 
 function var_0_0.OnEnter(arg_14_0)
-	arg_14_0.activityID_ = ActivityConst.ACTIVITY_CIVILIZATION
+	arg_14_0.activityID_ = arg_14_0.params_.activityID
 
-	local var_14_0 = ActivityData:GetActivityData(arg_14_0.activityID_)
-
-	if not var_14_0 then
+	if not ActivityData:GetActivityData(arg_14_0.activityID_) then
 		JumpTools.Back()
 		ShowTips("TIME_OVER")
 
 		return
 	end
 
-	arg_14_0.startTime_ = var_14_0.startTime
-	arg_14_0.stopTime_ = var_14_0.stopTime
-
-	arg_14_0:StopTimer()
-	arg_14_0:RefreshTimeText()
-
-	arg_14_0.timer = Timer.New(function()
-		if manager.time:GetServerTime() > arg_14_0.stopTime_ then
-			return
-		end
-
-		arg_14_0:RefreshTimeText()
-	end, 1)
-
-	arg_14_0.timer:Start()
 	arg_14_0:UpdateView()
 	arg_14_0:BindRedPoint()
+	GodEaterAction.UpdateRedPoint()
 end
 
-function var_0_0.UpdateView(arg_16_0)
-	local var_16_0 = arg_16_0:GetHeroID()
+function var_0_0.UpdateView(arg_15_0)
+	local var_15_0 = arg_15_0:GetHeroID()
 
-	if var_16_0 == 0 then
-		arg_16_0.heroEmptyController_:SetSelectedState("empty")
-		arg_16_0.heroController_:SetSelectedIndex(2)
+	if var_15_0 == 0 then
+		arg_15_0.heroEmptyController_:SetSelectedState("empty")
+		arg_15_0.heroController_:SetSelectedIndex(2)
 
-		arg_16_0.heroNameText_.text = GetTips("GODEATER_CIVILIZATION_GAME_NOT_SELECTED_HERO_TIPS")
-		arg_16_0.descText_.text = ""
+		arg_15_0.heroNameText_.text = GetTips("GODEATER_CIVILIZATION_GAME_NOT_SELECTED_HERO_TIPS")
+		arg_15_0.descText_.text = ""
 	else
-		arg_16_0.heroEmptyController_:SetSelectedIndex(var_16_0)
-		arg_16_0.heroController_:SetSelectedIndex(var_16_0 == 1 and 0 or 1)
+		arg_15_0.heroEmptyController_:SetSelectedIndex(var_15_0)
+		arg_15_0.heroController_:SetSelectedIndex(var_15_0 == 1 and 0 or 1)
 
-		local var_16_1 = ActivityCivilizationHeroCfg[var_16_0]
+		local var_15_1 = ActivityCivilizationHeroCfg[var_15_0]
 
-		arg_16_0.descText_.text = var_16_1.description
+		arg_15_0.descText_.text = var_15_1.description
 	end
 
-	for iter_16_0 = 1, 2 do
-		local var_16_2 = ActivityCivilizationHeroCfg[iter_16_0]
+	for iter_15_0 = 1, 2 do
+		local var_15_2 = ActivityCivilizationHeroCfg[iter_15_0]
 
-		arg_16_0["hero" .. iter_16_0 .. "NameText_"].text = var_16_2.name
-		arg_16_0["hero" .. iter_16_0 .. "DescText_"].text = var_16_2.description
+		arg_15_0["hero" .. iter_15_0 .. "NameText_"].text = var_15_2.name
+		arg_15_0["hero" .. iter_15_0 .. "DescText_"].text = var_15_2.description
 
-		if var_16_0 == iter_16_0 then
-			arg_16_0.heroNameText_.text = var_16_2.name
+		if var_15_0 == iter_15_0 then
+			arg_15_0.heroNameText_.text = var_15_2.name
 		end
 	end
+
+	arg_15_0.timeText_.text = GetTips("GOD_EATER_GAME_DESC_3")
 end
 
-function var_0_0.GetHeroID(arg_17_0)
+function var_0_0.GetHeroID(arg_16_0)
 	return getData("civilizationGame", "heroID") or 0
 end
 
-function var_0_0.SetHeroID(arg_18_0, arg_18_1)
-	saveData("civilizationGame", "heroID", arg_18_1)
+function var_0_0.SetHeroID(arg_17_0, arg_17_1)
+	arg_17_0.selectController_:SetSelectedState("off")
+	saveData("civilizationGame", "heroID", arg_17_1)
 end
 
-function var_0_0.RefreshTimeText(arg_19_0)
-	arg_19_0.timeText_.text = string.format(GetTips("GODEATER_CIVILIZATION_TIME"), manager.time:GetLostTimeStrWith2Unit(arg_19_0.stopTime_))
+function var_0_0.BindRedPoint(arg_18_0)
+	manager.redPoint:bindUIandKey(arg_18_0.taskBtn_.transform, RedPointConst.ACTIVITY_CODEATER_CIVILIZATION)
 end
 
-function var_0_0.BindRedPoint(arg_20_0)
-	return
+function var_0_0.UnbindRedPoint(arg_19_0)
+	manager.redPoint:unbindUIandKey(arg_19_0.taskBtn_.transform, RedPointConst.ACTIVITY_CODEATER_CIVILIZATION)
 end
 
-function var_0_0.UnbindRedPoint(arg_21_0)
-	return
-end
-
-function var_0_0.StopTimer(arg_22_0)
-	if arg_22_0.timer_ then
-		arg_22_0.timer_:Stop()
-
-		arg_22_0.timer_ = nil
-	end
-end
-
-function var_0_0.OnExit(arg_23_0)
-	arg_23_0:StopTimer()
-	arg_23_0:UnbindRedPoint()
+function var_0_0.OnExit(arg_20_0)
+	arg_20_0:UnbindRedPoint()
 	manager.windowBar:HideBar()
 end
 
-function var_0_0.OnTop(arg_24_0)
+function var_0_0.OnTop(arg_21_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR,
 		HOME_BAR,
@@ -174,9 +150,9 @@ function var_0_0.OnTop(arg_24_0)
 	manager.windowBar:SetGameHelpKey("GODEATER_CIVILIZATION_GAME_DESC")
 end
 
-function var_0_0.Dispose(arg_25_0)
-	var_0_0.super.Dispose(arg_25_0)
-	Object.Destroy(arg_25_0.gameObject_)
+function var_0_0.Dispose(arg_22_0)
+	var_0_0.super.Dispose(arg_22_0)
+	Object.Destroy(arg_22_0.gameObject_)
 end
 
 return var_0_0

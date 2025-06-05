@@ -9064,12 +9064,12 @@
 		break_lv = 6,
 		using_hero_chip = "",
 		equip_list = {
-			515043,
-			525034,
-			535043,
-			545034,
-			555043,
-			565034
+			515070,
+			525071,
+			535070,
+			545071,
+			555070,
+			565071
 		},
 		equip_pool_list = {
 			{
@@ -9232,12 +9232,12 @@
 		break_lv = 6,
 		using_hero_chip = "",
 		equip_list = {
-			515049,
-			525034,
-			535049,
-			545034,
-			555049,
-			565034
+			515070,
+			525071,
+			535070,
+			545071,
+			555070,
+			565071
 		},
 		equip_pool_list = {
 			{
@@ -26922,19 +26922,19 @@
 		weapon_module_level = 0,
 		equip_exclusive_lv_list = "",
 		astrolabe_suit_id = 1045001,
-		weapon_key = 0,
+		weapon_key = 2550997,
 		hero_break = 6,
 		hero_attrib = "",
 		hero_lv = 80,
 		break_lv = 6,
 		using_hero_chip = "",
 		equip_list = {
-			512055,
-			522027,
-			532055,
-			542027,
-			552055,
-			562027
+			515070,
+			525071,
+			535070,
+			545071,
+			555070,
+			565071
 		},
 		equip_pool_list = {
 			{
@@ -26990,19 +26990,19 @@
 		weapon_module_level = 0,
 		equip_exclusive_lv_list = "",
 		astrolabe_suit_id = 1046001,
-		weapon_key = 0,
+		weapon_key = 2550996,
 		hero_break = 6,
 		hero_attrib = "",
 		hero_lv = 80,
 		break_lv = 6,
 		using_hero_chip = "",
 		equip_list = {
-			514051,
-			524056,
-			534051,
-			544056,
-			554051,
-			564056
+			515070,
+			525071,
+			535070,
+			545071,
+			555070,
+			565071
 		},
 		equip_pool_list = {
 			{
@@ -32394,12 +32394,12 @@
 		break_lv = 6,
 		using_hero_chip = "",
 		equip_list = {
-			515043,
-			525034,
-			535043,
-			545034,
-			555043,
-			565034
+			515070,
+			525071,
+			535070,
+			545071,
+			555070,
+			565071
 		},
 		equip_pool_list = {
 			{
@@ -32462,12 +32462,12 @@
 		break_lv = 6,
 		using_hero_chip = "",
 		equip_list = {
-			515049,
-			525034,
-			535049,
-			545034,
-			555049,
-			565034
+			515070,
+			525071,
+			535070,
+			545071,
+			555070,
+			565071
 		},
 		equip_pool_list = {
 			{

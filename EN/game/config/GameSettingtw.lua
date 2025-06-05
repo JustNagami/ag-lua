@@ -7705,45 +7705,6 @@
 			}
 		}
 	},
-	activity_god_eater_week_boss = {
-		id = "activity_god_eater_week_boss",
-		value2 = "",
-		value = {
-			{
-				5250211,
-				1000000,
-				5250201,
-				1210201
-			},
-			{
-				5250212,
-				2000000,
-				5250201,
-				1210202
-			},
-			{
-				5250213,
-				3000000,
-				5250201,
-				1210203
-			}
-		}
-	},
-	godeater_goldminer_game_des = {
-		id = "godeater_goldminer_game_des",
-		value2 = "",
-		value = {
-			"Widget/Version/V4_2_GodEaterUI/V4_2_GodEaterUI_GoldenMiner/V4_2_GodEater_GoldenMiner_Description_01",
-			"Widget/Version/V4_2_GodEaterUI/V4_2_GodEaterUI_GoldenMiner/V4_2_GodEater_GoldenMiner_Description_02"
-		}
-	},
-	godeater_subactivity_unlock1 = {
-		id = "godeater_subactivity_unlock1",
-		value2 = "",
-		value = {
-			2
-		}
-	},
 	multi_heart_demon_basescore = {
 		id = "multi_heart_demon_basescore",
 		value2 = "",
@@ -7784,6 +7745,45 @@
 		value2 = "",
 		value = {
 			4000
+		}
+	},
+	activity_god_eater_week_boss = {
+		id = "activity_god_eater_week_boss",
+		value2 = "",
+		value = {
+			{
+				5250211,
+				20000000,
+				5250201,
+				1210201
+			},
+			{
+				5250212,
+				30000000,
+				5250201,
+				1210202
+			},
+			{
+				5250213,
+				40000000,
+				5250201,
+				1210203
+			}
+		}
+	},
+	godeater_goldminer_game_des = {
+		id = "godeater_goldminer_game_des",
+		value2 = "",
+		value = {
+			"Widget/Version/V4_2_GodEaterUI/V4_2_GodEaterUI_GoldenMiner/V4_2_GodEater_GoldenMiner_Description_01",
+			"Widget/Version/V4_2_GodEaterUI/V4_2_GodEaterUI_GoldenMiner/V4_2_GodEater_GoldenMiner_Description_02"
+		}
+	},
+	godeater_subactivity_unlock1 = {
+		id = "godeater_subactivity_unlock1",
+		value2 = "",
+		value = {
+			2
 		}
 	}
 }

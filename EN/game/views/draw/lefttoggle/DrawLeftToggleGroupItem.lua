@@ -6,9 +6,17 @@ function var_0_0.Ctor(arg_1_0, arg_1_1)
 
 	arg_1_0:BindCfgUI()
 	arg_1_0:AddListeners()
+
+	arg_1_0.switchHandler_ = handler(arg_1_0, arg_1_0.OnSwitch)
+
+	manager.notify:RegistListener(DRAW_SELECT_GROUP, arg_1_0.switchHandler_)
 end
 
 function var_0_0.Dispose(arg_2_0)
+	manager.notify:RemoveListener(DRAW_SELECT_GROUP, arg_2_0.switchHandler_)
+
+	arg_2_0.switchHandler_ = nil
+
 	if arg_2_0.rewardItemView_ then
 		arg_2_0.rewardItemView_:Dispose()
 
@@ -22,7 +30,7 @@ function var_0_0.AddListeners(arg_3_0)
 	return
 end
 
-function var_0_0.SetData(arg_4_0, arg_4_1)
+function var_0_0.SetData(arg_4_0, arg_4_1, arg_4_2)
 	arg_4_0.activityID_ = DrawTools.HasDrawBonusPoolList(arg_4_1)
 
 	if arg_4_0.activityID_ then
@@ -32,6 +40,12 @@ function var_0_0.SetData(arg_4_0, arg_4_1)
 	elseif arg_4_0.rewardItemView_ then
 		arg_4_0.rewardItemView_:Show(false)
 	end
+
+	arg_4_0.index_ = arg_4_2
+end
+
+function var_0_0.OnSwitch(arg_5_0, arg_5_1)
+	return
 end
 
 return var_0_0

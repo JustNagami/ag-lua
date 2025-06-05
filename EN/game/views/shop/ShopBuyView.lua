@@ -76,7 +76,7 @@ function var_0_0.AddUIListener(arg_6_0)
 			})
 		else
 			JumpTools.OpenPageByJump("/furniturePreviewWithEntity", {
-				furID = arg_6_0.shopCfg.give_i
+				furID = arg_6_0.shopCfg.give_id
 			})
 		end
 	end)

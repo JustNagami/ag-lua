@@ -1728,11 +1728,11 @@
 		hide_condition = "",
 		type = 1,
 		picture = "activity_1045",
-		activityId = 340033,
+		activityId = 340032,
 		order = 1,
 		parameter = {
 			404,
-			4020601
+			4020301
 		},
 		time = {}
 	},
@@ -1741,11 +1741,11 @@
 		hide_condition = "",
 		type = 1,
 		picture = "activity_1046",
-		activityId = 340035,
+		activityId = 340034,
 		order = 2,
 		parameter = {
 			404,
-			4020602
+			4020302
 		},
 		time = {}
 	},

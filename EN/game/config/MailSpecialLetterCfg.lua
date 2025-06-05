@@ -271,8 +271,8 @@
 		letter_send_time_1 = "2024,7,21",
 		mail_id = 6015,
 		letter_title = "5269238f66a0a25eb83673f1b4c3ffc9",
-		letter_belongs = 1138,
-		letter_sender_face = 2111381,
+		letter_belongs = 1038,
+		letter_sender_face = 2110381,
 		letter_sender = "eeadf04e6536d3e433e20329d6f4b55f",
 		letter_desc = "7c78728d6fff50d49529354b9729173b",
 		id = 1013,
@@ -387,8 +387,8 @@
 		letter_send_time_1 = "2023,9,10",
 		mail_id = 6020,
 		letter_title = "b7b38ffae44848e70ac641be45b916d8",
-		letter_belongs = 1199,
-		letter_sender_face = 2111991,
+		letter_belongs = 1099,
+		letter_sender_face = 2110991,
 		letter_sender = "7ed9889c5f5497d49ee529b0ddb770b4",
 		letter_desc = "99779b7a35cd644e2e58c1164cfbb476",
 		id = 1018,
@@ -1363,8 +1363,8 @@
 		letter_send_time_1 = "2024,9,10",
 		mail_id = 630504,
 		letter_title = "a0401691b1d5c41736d4fc5162806ec5",
-		letter_belongs = 1199,
-		letter_sender_face = 2111991,
+		letter_belongs = 1099,
+		letter_sender_face = 2110991,
 		letter_sender = "7ee9682ea4a89159407a5d92148d3edc",
 		letter_desc = "705f3592bd1888454955e69f2bd87279",
 		id = 30504,
@@ -1959,8 +1959,8 @@
 		letter_send_time_1 = "2026,6,12",
 		mail_id = 640202,
 		letter_title = "4e46152776c85d8f20d0d92eade61973",
-		letter_belongs = 1127,
-		letter_sender_face = 2111271,
+		letter_belongs = 1027,
+		letter_sender_face = 2110271,
 		letter_sender = "1e2c942a5accf950f08c1fd690d4f5ea",
 		letter_desc = "c034385c81270f3c1977a1ca9264a064",
 		id = 40202,
@@ -2004,7 +2004,7 @@
 		}
 	},
 	[40204] = {
-		letter_send_time_1 = "2026,6,12",
+		letter_send_time_1 = "2025,6,12",
 		mail_id = 640204,
 		letter_title = "3a15ebe26029f35b4d27bf0183dba535",
 		letter_belongs = 1049,
@@ -2119,9 +2119,33 @@
 			}
 		}
 	},
+	[40209] = {
+		letter_send_time_1 = "2026,7,3",
+		mail_id = 640209,
+		letter_title = "2fd428051fe00656730b470c52b87ee1",
+		letter_belongs = 1013,
+		letter_sender_face = 2110131,
+		letter_sender = "e4850499853240a219b4a843172dbcdd",
+		letter_desc = "e69f966cbfeec9ca1d54d385a1273fb7",
+		id = 40209,
+		reward_item_list = {
+			{
+				50028,
+				10
+			},
+			{
+				40503,
+				10
+			},
+			{
+				20001,
+				1
+			}
+		}
+	},
 	get_id_list_by_letter_belongs = {
-		[1127] = {
-			40202
+		[1013] = {
+			40209
 		},
 		[1022] = {
 			31104
@@ -2137,9 +2161,6 @@
 		},
 		[1055] = {
 			1058
-		},
-		[1038] = {
-			1056
 		},
 		[1049] = {
 			1050,
@@ -2236,7 +2257,7 @@
 			1019,
 			30505
 		},
-		[1199] = {
+		[1099] = {
 			1018,
 			30504
 		},
@@ -2256,8 +2277,9 @@
 			1014,
 			1057
 		},
-		[1138] = {
-			1013
+		[1038] = {
+			1013,
+			1056
 		},
 		[1056] = {
 			1012,
@@ -2286,7 +2308,8 @@
 		},
 		[1027] = {
 			1007,
-			1048
+			1048,
+			40202
 		},
 		[1066] = {
 			1006,
@@ -2409,6 +2432,7 @@
 		40205,
 		40206,
 		40207,
-		40208
+		40208,
+		40209
 	}
 }

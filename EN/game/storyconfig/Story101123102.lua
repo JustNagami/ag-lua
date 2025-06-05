@@ -44,7 +44,7 @@
 
 				local var_4_2 = var_4_1:GetComponent(typeof(Image))
 
-				var_4_2.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_4_0)
+				var_4_2.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. "1148")
 
 				var_4_2:SetNativeSize()
 
@@ -76,7 +76,7 @@
 			local var_4_8 = arg_1_1.actors_["1148"]
 			local var_4_9 = 0
 
-			if var_4_9 < arg_1_1.time_ and arg_1_1.time_ <= var_4_9 + arg_4_0 then
+			if var_4_9 < arg_1_1.time_ and arg_1_1.time_ <= var_4_9 + arg_4_0 and not isNil(var_4_8) then
 				local var_4_10 = var_4_8:GetComponent("Image")
 
 				if var_4_10 then
@@ -86,7 +86,7 @@
 
 			local var_4_11 = 0.2
 
-			if var_4_9 <= arg_1_1.time_ and arg_1_1.time_ < var_4_9 + var_4_11 then
+			if var_4_9 <= arg_1_1.time_ and arg_1_1.time_ < var_4_9 + var_4_11 and not isNil(var_4_8) then
 				local var_4_12 = (arg_1_1.time_ - var_4_9) / var_4_11
 
 				if arg_1_1.var_.highlightMatValue1148 then
@@ -101,7 +101,7 @@
 				end
 			end
 
-			if arg_1_1.time_ >= var_4_9 + var_4_11 and arg_1_1.time_ < var_4_9 + var_4_11 + arg_4_0 and arg_1_1.var_.highlightMatValue1148 then
+			if arg_1_1.time_ >= var_4_9 + var_4_11 and arg_1_1.time_ < var_4_9 + var_4_11 + arg_4_0 and not isNil(var_4_8) and arg_1_1.var_.highlightMatValue1148 then
 				local var_4_16 = 1
 
 				var_4_8.transform:SetSiblingIndex(1)
@@ -300,7 +300,7 @@
 
 				local var_10_2 = var_10_1:GetComponent(typeof(Image))
 
-				var_10_2.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_10_0)
+				var_10_2.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. "1084")
 
 				var_10_2:SetNativeSize()
 
@@ -353,7 +353,7 @@
 			local var_10_13 = arg_7_1.actors_["1084"]
 			local var_10_14 = 0
 
-			if var_10_14 < arg_7_1.time_ and arg_7_1.time_ <= var_10_14 + arg_10_0 then
+			if var_10_14 < arg_7_1.time_ and arg_7_1.time_ <= var_10_14 + arg_10_0 and not isNil(var_10_13) then
 				local var_10_15 = var_10_13:GetComponent("Image")
 
 				if var_10_15 then
@@ -363,7 +363,7 @@
 
 			local var_10_16 = 0.2
 
-			if var_10_14 <= arg_7_1.time_ and arg_7_1.time_ < var_10_14 + var_10_16 then
+			if var_10_14 <= arg_7_1.time_ and arg_7_1.time_ < var_10_14 + var_10_16 and not isNil(var_10_13) then
 				local var_10_17 = (arg_7_1.time_ - var_10_14) / var_10_16
 
 				if arg_7_1.var_.highlightMatValue1084 then
@@ -378,7 +378,7 @@
 				end
 			end
 
-			if arg_7_1.time_ >= var_10_14 + var_10_16 and arg_7_1.time_ < var_10_14 + var_10_16 + arg_10_0 and arg_7_1.var_.highlightMatValue1084 then
+			if arg_7_1.time_ >= var_10_14 + var_10_16 and arg_7_1.time_ < var_10_14 + var_10_16 + arg_10_0 and not isNil(var_10_13) and arg_7_1.var_.highlightMatValue1084 then
 				local var_10_21 = 1
 
 				var_10_13.transform:SetSiblingIndex(1)
@@ -395,7 +395,7 @@
 			local var_10_24 = arg_7_1.actors_["1148"]
 			local var_10_25 = 0
 
-			if var_10_25 < arg_7_1.time_ and arg_7_1.time_ <= var_10_25 + arg_10_0 then
+			if var_10_25 < arg_7_1.time_ and arg_7_1.time_ <= var_10_25 + arg_10_0 and not isNil(var_10_24) then
 				local var_10_26 = var_10_24:GetComponent("Image")
 
 				if var_10_26 then
@@ -405,7 +405,7 @@
 
 			local var_10_27 = 0.2
 
-			if var_10_25 <= arg_7_1.time_ and arg_7_1.time_ < var_10_25 + var_10_27 then
+			if var_10_25 <= arg_7_1.time_ and arg_7_1.time_ < var_10_25 + var_10_27 and not isNil(var_10_24) then
 				local var_10_28 = (arg_7_1.time_ - var_10_25) / var_10_27
 
 				if arg_7_1.var_.highlightMatValue1148 then
@@ -420,7 +420,7 @@
 				end
 			end
 
-			if arg_7_1.time_ >= var_10_25 + var_10_27 and arg_7_1.time_ < var_10_25 + var_10_27 + arg_10_0 and arg_7_1.var_.highlightMatValue1148 then
+			if arg_7_1.time_ >= var_10_25 + var_10_27 and arg_7_1.time_ < var_10_25 + var_10_27 + arg_10_0 and not isNil(var_10_24) and arg_7_1.var_.highlightMatValue1148 then
 				local var_10_32 = 0.5
 				local var_10_33 = arg_7_1.var_.highlightMatValue1148
 				local var_10_34 = var_10_33.color
@@ -590,7 +590,7 @@
 			local var_14_0 = arg_11_1.actors_["1148"]
 			local var_14_1 = 0
 
-			if var_14_1 < arg_11_1.time_ and arg_11_1.time_ <= var_14_1 + arg_14_0 then
+			if var_14_1 < arg_11_1.time_ and arg_11_1.time_ <= var_14_1 + arg_14_0 and not isNil(var_14_0) then
 				local var_14_2 = var_14_0:GetComponent("Image")
 
 				if var_14_2 then
@@ -600,7 +600,7 @@
 
 			local var_14_3 = 0.2
 
-			if var_14_1 <= arg_11_1.time_ and arg_11_1.time_ < var_14_1 + var_14_3 then
+			if var_14_1 <= arg_11_1.time_ and arg_11_1.time_ < var_14_1 + var_14_3 and not isNil(var_14_0) then
 				local var_14_4 = (arg_11_1.time_ - var_14_1) / var_14_3
 
 				if arg_11_1.var_.highlightMatValue1148 then
@@ -615,7 +615,7 @@
 				end
 			end
 
-			if arg_11_1.time_ >= var_14_1 + var_14_3 and arg_11_1.time_ < var_14_1 + var_14_3 + arg_14_0 and arg_11_1.var_.highlightMatValue1148 then
+			if arg_11_1.time_ >= var_14_1 + var_14_3 and arg_11_1.time_ < var_14_1 + var_14_3 + arg_14_0 and not isNil(var_14_0) and arg_11_1.var_.highlightMatValue1148 then
 				local var_14_8 = 1
 
 				var_14_0.transform:SetSiblingIndex(1)
@@ -632,7 +632,7 @@
 			local var_14_11 = arg_11_1.actors_["1084"]
 			local var_14_12 = 0
 
-			if var_14_12 < arg_11_1.time_ and arg_11_1.time_ <= var_14_12 + arg_14_0 then
+			if var_14_12 < arg_11_1.time_ and arg_11_1.time_ <= var_14_12 + arg_14_0 and not isNil(var_14_11) then
 				local var_14_13 = var_14_11:GetComponent("Image")
 
 				if var_14_13 then
@@ -642,7 +642,7 @@
 
 			local var_14_14 = 0.2
 
-			if var_14_12 <= arg_11_1.time_ and arg_11_1.time_ < var_14_12 + var_14_14 then
+			if var_14_12 <= arg_11_1.time_ and arg_11_1.time_ < var_14_12 + var_14_14 and not isNil(var_14_11) then
 				local var_14_15 = (arg_11_1.time_ - var_14_12) / var_14_14
 
 				if arg_11_1.var_.highlightMatValue1084 then
@@ -657,7 +657,7 @@
 				end
 			end
 
-			if arg_11_1.time_ >= var_14_12 + var_14_14 and arg_11_1.time_ < var_14_12 + var_14_14 + arg_14_0 and arg_11_1.var_.highlightMatValue1084 then
+			if arg_11_1.time_ >= var_14_12 + var_14_14 and arg_11_1.time_ < var_14_12 + var_14_14 + arg_14_0 and not isNil(var_14_11) and arg_11_1.var_.highlightMatValue1084 then
 				local var_14_19 = 0.5
 				local var_14_20 = arg_11_1.var_.highlightMatValue1084
 				local var_14_21 = var_14_20.color
@@ -899,7 +899,7 @@
 			local var_22_0 = arg_19_1.actors_["1148"]
 			local var_22_1 = 0
 
-			if var_22_1 < arg_19_1.time_ and arg_19_1.time_ <= var_22_1 + arg_22_0 then
+			if var_22_1 < arg_19_1.time_ and arg_19_1.time_ <= var_22_1 + arg_22_0 and not isNil(var_22_0) then
 				local var_22_2 = var_22_0:GetComponent("Image")
 
 				if var_22_2 then
@@ -909,7 +909,7 @@
 
 			local var_22_3 = 0.2
 
-			if var_22_1 <= arg_19_1.time_ and arg_19_1.time_ < var_22_1 + var_22_3 then
+			if var_22_1 <= arg_19_1.time_ and arg_19_1.time_ < var_22_1 + var_22_3 and not isNil(var_22_0) then
 				local var_22_4 = (arg_19_1.time_ - var_22_1) / var_22_3
 
 				if arg_19_1.var_.highlightMatValue1148 then
@@ -924,7 +924,7 @@
 				end
 			end
 
-			if arg_19_1.time_ >= var_22_1 + var_22_3 and arg_19_1.time_ < var_22_1 + var_22_3 + arg_22_0 and arg_19_1.var_.highlightMatValue1148 then
+			if arg_19_1.time_ >= var_22_1 + var_22_3 and arg_19_1.time_ < var_22_1 + var_22_3 + arg_22_0 and not isNil(var_22_0) and arg_19_1.var_.highlightMatValue1148 then
 				local var_22_8 = 0.5
 				local var_22_9 = arg_19_1.var_.highlightMatValue1148
 				local var_22_10 = var_22_9.color
@@ -1032,7 +1032,7 @@
 			local var_26_0 = arg_23_1.actors_["1148"]
 			local var_26_1 = 0
 
-			if var_26_1 < arg_23_1.time_ and arg_23_1.time_ <= var_26_1 + arg_26_0 then
+			if var_26_1 < arg_23_1.time_ and arg_23_1.time_ <= var_26_1 + arg_26_0 and not isNil(var_26_0) then
 				local var_26_2 = var_26_0:GetComponent("Image")
 
 				if var_26_2 then
@@ -1042,7 +1042,7 @@
 
 			local var_26_3 = 0.2
 
-			if var_26_1 <= arg_23_1.time_ and arg_23_1.time_ < var_26_1 + var_26_3 then
+			if var_26_1 <= arg_23_1.time_ and arg_23_1.time_ < var_26_1 + var_26_3 and not isNil(var_26_0) then
 				local var_26_4 = (arg_23_1.time_ - var_26_1) / var_26_3
 
 				if arg_23_1.var_.highlightMatValue1148 then
@@ -1057,7 +1057,7 @@
 				end
 			end
 
-			if arg_23_1.time_ >= var_26_1 + var_26_3 and arg_23_1.time_ < var_26_1 + var_26_3 + arg_26_0 and arg_23_1.var_.highlightMatValue1148 then
+			if arg_23_1.time_ >= var_26_1 + var_26_3 and arg_23_1.time_ < var_26_1 + var_26_3 + arg_26_0 and not isNil(var_26_0) and arg_23_1.var_.highlightMatValue1148 then
 				local var_26_8 = 1
 
 				var_26_0.transform:SetSiblingIndex(1)
@@ -1194,7 +1194,7 @@
 			local var_30_0 = arg_27_1.actors_["1084"]
 			local var_30_1 = 0
 
-			if var_30_1 < arg_27_1.time_ and arg_27_1.time_ <= var_30_1 + arg_30_0 then
+			if var_30_1 < arg_27_1.time_ and arg_27_1.time_ <= var_30_1 + arg_30_0 and not isNil(var_30_0) then
 				local var_30_2 = var_30_0:GetComponent("Image")
 
 				if var_30_2 then
@@ -1204,7 +1204,7 @@
 
 			local var_30_3 = 0.2
 
-			if var_30_1 <= arg_27_1.time_ and arg_27_1.time_ < var_30_1 + var_30_3 then
+			if var_30_1 <= arg_27_1.time_ and arg_27_1.time_ < var_30_1 + var_30_3 and not isNil(var_30_0) then
 				local var_30_4 = (arg_27_1.time_ - var_30_1) / var_30_3
 
 				if arg_27_1.var_.highlightMatValue1084 then
@@ -1219,7 +1219,7 @@
 				end
 			end
 
-			if arg_27_1.time_ >= var_30_1 + var_30_3 and arg_27_1.time_ < var_30_1 + var_30_3 + arg_30_0 and arg_27_1.var_.highlightMatValue1084 then
+			if arg_27_1.time_ >= var_30_1 + var_30_3 and arg_27_1.time_ < var_30_1 + var_30_3 + arg_30_0 and not isNil(var_30_0) and arg_27_1.var_.highlightMatValue1084 then
 				local var_30_8 = 1
 
 				var_30_0.transform:SetSiblingIndex(1)
@@ -1236,7 +1236,7 @@
 			local var_30_11 = arg_27_1.actors_["1148"]
 			local var_30_12 = 0
 
-			if var_30_12 < arg_27_1.time_ and arg_27_1.time_ <= var_30_12 + arg_30_0 then
+			if var_30_12 < arg_27_1.time_ and arg_27_1.time_ <= var_30_12 + arg_30_0 and not isNil(var_30_11) then
 				local var_30_13 = var_30_11:GetComponent("Image")
 
 				if var_30_13 then
@@ -1246,7 +1246,7 @@
 
 			local var_30_14 = 0.2
 
-			if var_30_12 <= arg_27_1.time_ and arg_27_1.time_ < var_30_12 + var_30_14 then
+			if var_30_12 <= arg_27_1.time_ and arg_27_1.time_ < var_30_12 + var_30_14 and not isNil(var_30_11) then
 				local var_30_15 = (arg_27_1.time_ - var_30_12) / var_30_14
 
 				if arg_27_1.var_.highlightMatValue1148 then
@@ -1261,7 +1261,7 @@
 				end
 			end
 
-			if arg_27_1.time_ >= var_30_12 + var_30_14 and arg_27_1.time_ < var_30_12 + var_30_14 + arg_30_0 and arg_27_1.var_.highlightMatValue1148 then
+			if arg_27_1.time_ >= var_30_12 + var_30_14 and arg_27_1.time_ < var_30_12 + var_30_14 + arg_30_0 and not isNil(var_30_11) and arg_27_1.var_.highlightMatValue1148 then
 				local var_30_19 = 0.5
 				local var_30_20 = arg_27_1.var_.highlightMatValue1148
 				local var_30_21 = var_30_20.color
@@ -1395,7 +1395,7 @@
 			local var_34_0 = arg_31_1.actors_["1084"]
 			local var_34_1 = 0
 
-			if var_34_1 < arg_31_1.time_ and arg_31_1.time_ <= var_34_1 + arg_34_0 then
+			if var_34_1 < arg_31_1.time_ and arg_31_1.time_ <= var_34_1 + arg_34_0 and not isNil(var_34_0) then
 				local var_34_2 = var_34_0:GetComponent("Image")
 
 				if var_34_2 then
@@ -1405,7 +1405,7 @@
 
 			local var_34_3 = 0.2
 
-			if var_34_1 <= arg_31_1.time_ and arg_31_1.time_ < var_34_1 + var_34_3 then
+			if var_34_1 <= arg_31_1.time_ and arg_31_1.time_ < var_34_1 + var_34_3 and not isNil(var_34_0) then
 				local var_34_4 = (arg_31_1.time_ - var_34_1) / var_34_3
 
 				if arg_31_1.var_.highlightMatValue1084 then
@@ -1420,7 +1420,7 @@
 				end
 			end
 
-			if arg_31_1.time_ >= var_34_1 + var_34_3 and arg_31_1.time_ < var_34_1 + var_34_3 + arg_34_0 and arg_31_1.var_.highlightMatValue1084 then
+			if arg_31_1.time_ >= var_34_1 + var_34_3 and arg_31_1.time_ < var_34_1 + var_34_3 + arg_34_0 and not isNil(var_34_0) and arg_31_1.var_.highlightMatValue1084 then
 				local var_34_8 = 0.5
 				local var_34_9 = arg_31_1.var_.highlightMatValue1084
 				local var_34_10 = var_34_9.color
@@ -1434,7 +1434,7 @@
 			local var_34_11 = arg_31_1.actors_["1148"]
 			local var_34_12 = 0
 
-			if var_34_12 < arg_31_1.time_ and arg_31_1.time_ <= var_34_12 + arg_34_0 then
+			if var_34_12 < arg_31_1.time_ and arg_31_1.time_ <= var_34_12 + arg_34_0 and not isNil(var_34_11) then
 				local var_34_13 = var_34_11:GetComponent("Image")
 
 				if var_34_13 then
@@ -1444,7 +1444,7 @@
 
 			local var_34_14 = 0.2
 
-			if var_34_12 <= arg_31_1.time_ and arg_31_1.time_ < var_34_12 + var_34_14 then
+			if var_34_12 <= arg_31_1.time_ and arg_31_1.time_ < var_34_12 + var_34_14 and not isNil(var_34_11) then
 				local var_34_15 = (arg_31_1.time_ - var_34_12) / var_34_14
 
 				if arg_31_1.var_.highlightMatValue1148 then
@@ -1459,7 +1459,7 @@
 				end
 			end
 
-			if arg_31_1.time_ >= var_34_12 + var_34_14 and arg_31_1.time_ < var_34_12 + var_34_14 + arg_34_0 and arg_31_1.var_.highlightMatValue1148 then
+			if arg_31_1.time_ >= var_34_12 + var_34_14 and arg_31_1.time_ < var_34_12 + var_34_14 + arg_34_0 and not isNil(var_34_11) and arg_31_1.var_.highlightMatValue1148 then
 				local var_34_19 = 1
 
 				var_34_11.transform:SetSiblingIndex(1)
@@ -1596,7 +1596,7 @@
 			local var_38_0 = arg_35_1.actors_["1084"]
 			local var_38_1 = 0
 
-			if var_38_1 < arg_35_1.time_ and arg_35_1.time_ <= var_38_1 + arg_38_0 then
+			if var_38_1 < arg_35_1.time_ and arg_35_1.time_ <= var_38_1 + arg_38_0 and not isNil(var_38_0) then
 				local var_38_2 = var_38_0:GetComponent("Image")
 
 				if var_38_2 then
@@ -1606,7 +1606,7 @@
 
 			local var_38_3 = 0.2
 
-			if var_38_1 <= arg_35_1.time_ and arg_35_1.time_ < var_38_1 + var_38_3 then
+			if var_38_1 <= arg_35_1.time_ and arg_35_1.time_ < var_38_1 + var_38_3 and not isNil(var_38_0) then
 				local var_38_4 = (arg_35_1.time_ - var_38_1) / var_38_3
 
 				if arg_35_1.var_.highlightMatValue1084 then
@@ -1621,7 +1621,7 @@
 				end
 			end
 
-			if arg_35_1.time_ >= var_38_1 + var_38_3 and arg_35_1.time_ < var_38_1 + var_38_3 + arg_38_0 and arg_35_1.var_.highlightMatValue1084 then
+			if arg_35_1.time_ >= var_38_1 + var_38_3 and arg_35_1.time_ < var_38_1 + var_38_3 + arg_38_0 and not isNil(var_38_0) and arg_35_1.var_.highlightMatValue1084 then
 				local var_38_8 = 1
 
 				var_38_0.transform:SetSiblingIndex(1)
@@ -1638,7 +1638,7 @@
 			local var_38_11 = arg_35_1.actors_["1148"]
 			local var_38_12 = 0
 
-			if var_38_12 < arg_35_1.time_ and arg_35_1.time_ <= var_38_12 + arg_38_0 then
+			if var_38_12 < arg_35_1.time_ and arg_35_1.time_ <= var_38_12 + arg_38_0 and not isNil(var_38_11) then
 				local var_38_13 = var_38_11:GetComponent("Image")
 
 				if var_38_13 then
@@ -1648,7 +1648,7 @@
 
 			local var_38_14 = 0.2
 
-			if var_38_12 <= arg_35_1.time_ and arg_35_1.time_ < var_38_12 + var_38_14 then
+			if var_38_12 <= arg_35_1.time_ and arg_35_1.time_ < var_38_12 + var_38_14 and not isNil(var_38_11) then
 				local var_38_15 = (arg_35_1.time_ - var_38_12) / var_38_14
 
 				if arg_35_1.var_.highlightMatValue1148 then
@@ -1663,7 +1663,7 @@
 				end
 			end
 
-			if arg_35_1.time_ >= var_38_12 + var_38_14 and arg_35_1.time_ < var_38_12 + var_38_14 + arg_38_0 and arg_35_1.var_.highlightMatValue1148 then
+			if arg_35_1.time_ >= var_38_12 + var_38_14 and arg_35_1.time_ < var_38_12 + var_38_14 + arg_38_0 and not isNil(var_38_11) and arg_35_1.var_.highlightMatValue1148 then
 				local var_38_19 = 0.5
 				local var_38_20 = arg_35_1.var_.highlightMatValue1148
 				local var_38_21 = var_38_20.color
@@ -1797,7 +1797,7 @@
 			local var_42_0 = arg_39_1.actors_["1084"]
 			local var_42_1 = 0
 
-			if var_42_1 < arg_39_1.time_ and arg_39_1.time_ <= var_42_1 + arg_42_0 then
+			if var_42_1 < arg_39_1.time_ and arg_39_1.time_ <= var_42_1 + arg_42_0 and not isNil(var_42_0) then
 				local var_42_2 = var_42_0:GetComponent("Image")
 
 				if var_42_2 then
@@ -1807,7 +1807,7 @@
 
 			local var_42_3 = 0.2
 
-			if var_42_1 <= arg_39_1.time_ and arg_39_1.time_ < var_42_1 + var_42_3 then
+			if var_42_1 <= arg_39_1.time_ and arg_39_1.time_ < var_42_1 + var_42_3 and not isNil(var_42_0) then
 				local var_42_4 = (arg_39_1.time_ - var_42_1) / var_42_3
 
 				if arg_39_1.var_.highlightMatValue1084 then
@@ -1822,7 +1822,7 @@
 				end
 			end
 
-			if arg_39_1.time_ >= var_42_1 + var_42_3 and arg_39_1.time_ < var_42_1 + var_42_3 + arg_42_0 and arg_39_1.var_.highlightMatValue1084 then
+			if arg_39_1.time_ >= var_42_1 + var_42_3 and arg_39_1.time_ < var_42_1 + var_42_3 + arg_42_0 and not isNil(var_42_0) and arg_39_1.var_.highlightMatValue1084 then
 				local var_42_8 = 0.5
 				local var_42_9 = arg_39_1.var_.highlightMatValue1084
 				local var_42_10 = var_42_9.color
@@ -1836,7 +1836,7 @@
 			local var_42_11 = arg_39_1.actors_["1148"]
 			local var_42_12 = 0
 
-			if var_42_12 < arg_39_1.time_ and arg_39_1.time_ <= var_42_12 + arg_42_0 then
+			if var_42_12 < arg_39_1.time_ and arg_39_1.time_ <= var_42_12 + arg_42_0 and not isNil(var_42_11) then
 				local var_42_13 = var_42_11:GetComponent("Image")
 
 				if var_42_13 then
@@ -1846,7 +1846,7 @@
 
 			local var_42_14 = 0.2
 
-			if var_42_12 <= arg_39_1.time_ and arg_39_1.time_ < var_42_12 + var_42_14 then
+			if var_42_12 <= arg_39_1.time_ and arg_39_1.time_ < var_42_12 + var_42_14 and not isNil(var_42_11) then
 				local var_42_15 = (arg_39_1.time_ - var_42_12) / var_42_14
 
 				if arg_39_1.var_.highlightMatValue1148 then
@@ -1861,7 +1861,7 @@
 				end
 			end
 
-			if arg_39_1.time_ >= var_42_12 + var_42_14 and arg_39_1.time_ < var_42_12 + var_42_14 + arg_42_0 and arg_39_1.var_.highlightMatValue1148 then
+			if arg_39_1.time_ >= var_42_12 + var_42_14 and arg_39_1.time_ < var_42_12 + var_42_14 + arg_42_0 and not isNil(var_42_11) and arg_39_1.var_.highlightMatValue1148 then
 				local var_42_19 = 1
 
 				var_42_11.transform:SetSiblingIndex(1)
@@ -2106,7 +2106,7 @@
 			local var_50_0 = arg_47_1.actors_["1148"]
 			local var_50_1 = 0
 
-			if var_50_1 < arg_47_1.time_ and arg_47_1.time_ <= var_50_1 + arg_50_0 then
+			if var_50_1 < arg_47_1.time_ and arg_47_1.time_ <= var_50_1 + arg_50_0 and not isNil(var_50_0) then
 				local var_50_2 = var_50_0:GetComponent("Image")
 
 				if var_50_2 then
@@ -2116,7 +2116,7 @@
 
 			local var_50_3 = 0.2
 
-			if var_50_1 <= arg_47_1.time_ and arg_47_1.time_ < var_50_1 + var_50_3 then
+			if var_50_1 <= arg_47_1.time_ and arg_47_1.time_ < var_50_1 + var_50_3 and not isNil(var_50_0) then
 				local var_50_4 = (arg_47_1.time_ - var_50_1) / var_50_3
 
 				if arg_47_1.var_.highlightMatValue1148 then
@@ -2131,7 +2131,7 @@
 				end
 			end
 
-			if arg_47_1.time_ >= var_50_1 + var_50_3 and arg_47_1.time_ < var_50_1 + var_50_3 + arg_50_0 and arg_47_1.var_.highlightMatValue1148 then
+			if arg_47_1.time_ >= var_50_1 + var_50_3 and arg_47_1.time_ < var_50_1 + var_50_3 + arg_50_0 and not isNil(var_50_0) and arg_47_1.var_.highlightMatValue1148 then
 				local var_50_8 = 0.5
 				local var_50_9 = arg_47_1.var_.highlightMatValue1148
 				local var_50_10 = var_50_9.color
@@ -2239,7 +2239,7 @@
 			local var_54_0 = arg_51_1.actors_["1148"]
 			local var_54_1 = 0
 
-			if var_54_1 < arg_51_1.time_ and arg_51_1.time_ <= var_54_1 + arg_54_0 then
+			if var_54_1 < arg_51_1.time_ and arg_51_1.time_ <= var_54_1 + arg_54_0 and not isNil(var_54_0) then
 				local var_54_2 = var_54_0:GetComponent("Image")
 
 				if var_54_2 then
@@ -2249,7 +2249,7 @@
 
 			local var_54_3 = 0.2
 
-			if var_54_1 <= arg_51_1.time_ and arg_51_1.time_ < var_54_1 + var_54_3 then
+			if var_54_1 <= arg_51_1.time_ and arg_51_1.time_ < var_54_1 + var_54_3 and not isNil(var_54_0) then
 				local var_54_4 = (arg_51_1.time_ - var_54_1) / var_54_3
 
 				if arg_51_1.var_.highlightMatValue1148 then
@@ -2264,7 +2264,7 @@
 				end
 			end
 
-			if arg_51_1.time_ >= var_54_1 + var_54_3 and arg_51_1.time_ < var_54_1 + var_54_3 + arg_54_0 and arg_51_1.var_.highlightMatValue1148 then
+			if arg_51_1.time_ >= var_54_1 + var_54_3 and arg_51_1.time_ < var_54_1 + var_54_3 + arg_54_0 and not isNil(var_54_0) and arg_51_1.var_.highlightMatValue1148 then
 				local var_54_8 = 1
 
 				var_54_0.transform:SetSiblingIndex(1)
@@ -2509,7 +2509,7 @@
 			local var_62_0 = arg_59_1.actors_["1148"]
 			local var_62_1 = 0
 
-			if var_62_1 < arg_59_1.time_ and arg_59_1.time_ <= var_62_1 + arg_62_0 then
+			if var_62_1 < arg_59_1.time_ and arg_59_1.time_ <= var_62_1 + arg_62_0 and not isNil(var_62_0) then
 				local var_62_2 = var_62_0:GetComponent("Image")
 
 				if var_62_2 then
@@ -2519,7 +2519,7 @@
 
 			local var_62_3 = 0.2
 
-			if var_62_1 <= arg_59_1.time_ and arg_59_1.time_ < var_62_1 + var_62_3 then
+			if var_62_1 <= arg_59_1.time_ and arg_59_1.time_ < var_62_1 + var_62_3 and not isNil(var_62_0) then
 				local var_62_4 = (arg_59_1.time_ - var_62_1) / var_62_3
 
 				if arg_59_1.var_.highlightMatValue1148 then
@@ -2534,7 +2534,7 @@
 				end
 			end
 
-			if arg_59_1.time_ >= var_62_1 + var_62_3 and arg_59_1.time_ < var_62_1 + var_62_3 + arg_62_0 and arg_59_1.var_.highlightMatValue1148 then
+			if arg_59_1.time_ >= var_62_1 + var_62_3 and arg_59_1.time_ < var_62_1 + var_62_3 + arg_62_0 and not isNil(var_62_0) and arg_59_1.var_.highlightMatValue1148 then
 				local var_62_8 = 0.5
 				local var_62_9 = arg_59_1.var_.highlightMatValue1148
 				local var_62_10 = var_62_9.color
@@ -2724,7 +2724,7 @@
 			local var_70_0 = arg_67_1.actors_["1084"]
 			local var_70_1 = 0
 
-			if var_70_1 < arg_67_1.time_ and arg_67_1.time_ <= var_70_1 + arg_70_0 then
+			if var_70_1 < arg_67_1.time_ and arg_67_1.time_ <= var_70_1 + arg_70_0 and not isNil(var_70_0) then
 				local var_70_2 = var_70_0:GetComponent("Image")
 
 				if var_70_2 then
@@ -2734,7 +2734,7 @@
 
 			local var_70_3 = 0.2
 
-			if var_70_1 <= arg_67_1.time_ and arg_67_1.time_ < var_70_1 + var_70_3 then
+			if var_70_1 <= arg_67_1.time_ and arg_67_1.time_ < var_70_1 + var_70_3 and not isNil(var_70_0) then
 				local var_70_4 = (arg_67_1.time_ - var_70_1) / var_70_3
 
 				if arg_67_1.var_.highlightMatValue1084 then
@@ -2749,7 +2749,7 @@
 				end
 			end
 
-			if arg_67_1.time_ >= var_70_1 + var_70_3 and arg_67_1.time_ < var_70_1 + var_70_3 + arg_70_0 and arg_67_1.var_.highlightMatValue1084 then
+			if arg_67_1.time_ >= var_70_1 + var_70_3 and arg_67_1.time_ < var_70_1 + var_70_3 + arg_70_0 and not isNil(var_70_0) and arg_67_1.var_.highlightMatValue1084 then
 				local var_70_8 = 1
 
 				var_70_0.transform:SetSiblingIndex(1)
@@ -2994,7 +2994,7 @@
 			local var_78_0 = arg_75_1.actors_["1084"]
 			local var_78_1 = 0
 
-			if var_78_1 < arg_75_1.time_ and arg_75_1.time_ <= var_78_1 + arg_78_0 then
+			if var_78_1 < arg_75_1.time_ and arg_75_1.time_ <= var_78_1 + arg_78_0 and not isNil(var_78_0) then
 				local var_78_2 = var_78_0:GetComponent("Image")
 
 				if var_78_2 then
@@ -3004,7 +3004,7 @@
 
 			local var_78_3 = 0.2
 
-			if var_78_1 <= arg_75_1.time_ and arg_75_1.time_ < var_78_1 + var_78_3 then
+			if var_78_1 <= arg_75_1.time_ and arg_75_1.time_ < var_78_1 + var_78_3 and not isNil(var_78_0) then
 				local var_78_4 = (arg_75_1.time_ - var_78_1) / var_78_3
 
 				if arg_75_1.var_.highlightMatValue1084 then
@@ -3019,7 +3019,7 @@
 				end
 			end
 
-			if arg_75_1.time_ >= var_78_1 + var_78_3 and arg_75_1.time_ < var_78_1 + var_78_3 + arg_78_0 and arg_75_1.var_.highlightMatValue1084 then
+			if arg_75_1.time_ >= var_78_1 + var_78_3 and arg_75_1.time_ < var_78_1 + var_78_3 + arg_78_0 and not isNil(var_78_0) and arg_75_1.var_.highlightMatValue1084 then
 				local var_78_8 = 0.5
 				local var_78_9 = arg_75_1.var_.highlightMatValue1084
 				local var_78_10 = var_78_9.color
@@ -3127,7 +3127,7 @@
 			local var_82_0 = arg_79_1.actors_["1148"]
 			local var_82_1 = 0
 
-			if var_82_1 < arg_79_1.time_ and arg_79_1.time_ <= var_82_1 + arg_82_0 then
+			if var_82_1 < arg_79_1.time_ and arg_79_1.time_ <= var_82_1 + arg_82_0 and not isNil(var_82_0) then
 				local var_82_2 = var_82_0:GetComponent("Image")
 
 				if var_82_2 then
@@ -3137,7 +3137,7 @@
 
 			local var_82_3 = 0.2
 
-			if var_82_1 <= arg_79_1.time_ and arg_79_1.time_ < var_82_1 + var_82_3 then
+			if var_82_1 <= arg_79_1.time_ and arg_79_1.time_ < var_82_1 + var_82_3 and not isNil(var_82_0) then
 				local var_82_4 = (arg_79_1.time_ - var_82_1) / var_82_3
 
 				if arg_79_1.var_.highlightMatValue1148 then
@@ -3152,7 +3152,7 @@
 				end
 			end
 
-			if arg_79_1.time_ >= var_82_1 + var_82_3 and arg_79_1.time_ < var_82_1 + var_82_3 + arg_82_0 and arg_79_1.var_.highlightMatValue1148 then
+			if arg_79_1.time_ >= var_82_1 + var_82_3 and arg_79_1.time_ < var_82_1 + var_82_3 + arg_82_0 and not isNil(var_82_0) and arg_79_1.var_.highlightMatValue1148 then
 				local var_82_8 = 1
 
 				var_82_0.transform:SetSiblingIndex(1)
@@ -3396,7 +3396,7 @@
 			local var_90_0 = arg_87_1.actors_["1148"]
 			local var_90_1 = 0
 
-			if var_90_1 < arg_87_1.time_ and arg_87_1.time_ <= var_90_1 + arg_90_0 then
+			if var_90_1 < arg_87_1.time_ and arg_87_1.time_ <= var_90_1 + arg_90_0 and not isNil(var_90_0) then
 				local var_90_2 = var_90_0:GetComponent("Image")
 
 				if var_90_2 then
@@ -3406,7 +3406,7 @@
 
 			local var_90_3 = 0.2
 
-			if var_90_1 <= arg_87_1.time_ and arg_87_1.time_ < var_90_1 + var_90_3 then
+			if var_90_1 <= arg_87_1.time_ and arg_87_1.time_ < var_90_1 + var_90_3 and not isNil(var_90_0) then
 				local var_90_4 = (arg_87_1.time_ - var_90_1) / var_90_3
 
 				if arg_87_1.var_.highlightMatValue1148 then
@@ -3421,7 +3421,7 @@
 				end
 			end
 
-			if arg_87_1.time_ >= var_90_1 + var_90_3 and arg_87_1.time_ < var_90_1 + var_90_3 + arg_90_0 and arg_87_1.var_.highlightMatValue1148 then
+			if arg_87_1.time_ >= var_90_1 + var_90_3 and arg_87_1.time_ < var_90_1 + var_90_3 + arg_90_0 and not isNil(var_90_0) and arg_87_1.var_.highlightMatValue1148 then
 				local var_90_8 = 0.5
 				local var_90_9 = arg_87_1.var_.highlightMatValue1148
 				local var_90_10 = var_90_9.color

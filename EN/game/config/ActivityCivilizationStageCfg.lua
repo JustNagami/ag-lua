@@ -1,6 +1,7 @@
 ﻿return {
 	{
 		type = 1,
+		victory_desc = "669b92102f05ba58ccf1eedac344b9fd",
 		activity_id = 343741,
 		id = 1,
 		init_cells_list = {
@@ -37,6 +38,7 @@
 	},
 	{
 		type = 2,
+		victory_desc = "49e3bef8270fc43624a5bd74284747d2",
 		activity_id = 343741,
 		id = 2,
 		init_cells_list = {

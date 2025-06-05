@@ -1,19 +1,10 @@
 ﻿local var_0_0 = class("GodEaterDrawServantPool", DrawBasePool)
-local var_0_1 = {
-	[2520000] = 2550997,
-	[2510000] = 2550996
-}
 
 function var_0_0.OnCtor(arg_1_0, arg_1_1, arg_1_2, arg_1_3)
 	local var_1_0
+	local var_1_1 = Asset.Load("Widget/System/Pool/pool_" .. arg_1_3)
 
-	if var_0_1[arg_1_3] then
-		var_1_0 = Asset.Load("Widget/System/Pool/pool_" .. tostring(var_0_1[arg_1_3]))
-	else
-		var_1_0 = Asset.Load("Widget/System/Pool/pool_" .. arg_1_3)
-	end
-
-	arg_1_0.gameObject_ = Object.Instantiate(var_1_0, arg_1_1)
+	arg_1_0.gameObject_ = Object.Instantiate(var_1_1, arg_1_1)
 	arg_1_0.transform_ = arg_1_0.gameObject_.transform
 	arg_1_0.poolId = arg_1_2
 	arg_1_0.showId = arg_1_3

@@ -12,6 +12,7 @@
 		starlevel = 3,
 		show_tiling_scale = "2",
 		id = 2310001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			30
@@ -33,6 +34,7 @@
 		starlevel = 3,
 		show_tiling_scale = "1.3",
 		id = 2320001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			30
@@ -54,6 +56,7 @@
 		starlevel = 3,
 		show_tiling_scale = "1.5",
 		id = 2330001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			30
@@ -75,6 +78,7 @@
 		starlevel = 3,
 		show_tiling_scale = "2",
 		id = 2340001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			30
@@ -96,6 +100,7 @@
 		starlevel = 3,
 		show_tiling_scale = "2",
 		id = 2350001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			30
@@ -117,6 +122,7 @@
 		starlevel = 3,
 		show_tiling_scale = "1.7",
 		id = 2390001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			30
@@ -138,6 +144,7 @@
 		starlevel = 4,
 		show_tiling_scale = "1.5",
 		id = 2410001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			60
@@ -159,6 +166,7 @@
 		starlevel = 4,
 		show_tiling_scale = "1.6",
 		id = 2410002,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			60
@@ -180,6 +188,7 @@
 		starlevel = 4,
 		show_tiling_scale = "1.5",
 		id = 2420001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			60
@@ -201,6 +210,7 @@
 		starlevel = 4,
 		show_tiling_scale = "1.6",
 		id = 2420002,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			60
@@ -222,6 +232,7 @@
 		starlevel = 4,
 		show_tiling_scale = "1.2",
 		id = 2430001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			60
@@ -243,6 +254,7 @@
 		starlevel = 4,
 		show_tiling_scale = "1.8",
 		id = 2430002,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			60
@@ -264,6 +276,7 @@
 		starlevel = 4,
 		show_tiling_scale = "1.7",
 		id = 2440001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			60
@@ -285,6 +298,7 @@
 		starlevel = 4,
 		show_tiling_scale = "1.7",
 		id = 2440002,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			60
@@ -306,6 +320,7 @@
 		starlevel = 4,
 		show_tiling_scale = "1",
 		id = 2450001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			60
@@ -327,6 +342,7 @@
 		starlevel = 4,
 		show_tiling_scale = "1.4",
 		id = 2450002,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			60
@@ -348,6 +364,7 @@
 		starlevel = 4,
 		show_tiling_scale = "1.9",
 		id = 2490001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			60
@@ -369,6 +386,7 @@
 		starlevel = 4,
 		show_tiling_scale = "1.3",
 		id = 2490002,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			60
@@ -390,6 +408,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2510000,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -411,6 +430,7 @@
 		starlevel = 5,
 		show_tiling_scale = "0.9",
 		id = 2510001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -432,6 +452,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.1",
 		id = 2510002,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -453,6 +474,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1",
 		id = 2510003,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -474,6 +496,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.2",
 		id = 2510004,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -495,6 +518,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1",
 		id = 2510005,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -516,6 +540,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.2",
 		id = 2510006,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -537,6 +562,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.2",
 		id = 2510007,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -558,6 +584,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1",
 		id = 2510008,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -579,6 +606,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.2",
 		id = 2510009,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -600,6 +628,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.2",
 		id = 2510010,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -621,6 +650,7 @@
 		starlevel = 5,
 		show_tiling_scale = "",
 		id = 2510012,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -642,6 +672,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1",
 		id = 2510013,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -663,6 +694,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.2",
 		id = 2510014,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -684,6 +716,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.3",
 		id = 2510999,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -705,6 +738,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2520000,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -726,6 +760,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.1",
 		id = 2520001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -747,6 +782,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.3",
 		id = 2520002,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -768,6 +804,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.3",
 		id = 2520003,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -789,6 +826,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.3",
 		id = 2520004,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -810,6 +848,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2520005,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -831,6 +870,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.5",
 		id = 2520006,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -852,6 +892,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2520007,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -873,6 +914,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.3",
 		id = 2520008,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -894,6 +936,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.1",
 		id = 2520009,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -915,6 +958,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.1",
 		id = 2520999,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -936,6 +980,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2530000,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -957,6 +1002,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.2",
 		id = 2530001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -978,6 +1024,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2530002,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -999,6 +1046,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.5",
 		id = 2530003,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1020,6 +1068,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.2",
 		id = 2530004,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1041,6 +1090,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.2",
 		id = 2530005,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1062,6 +1112,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.3",
 		id = 2530006,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1083,6 +1134,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1",
 		id = 2530007,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1104,6 +1156,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2530008,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1125,6 +1178,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.3",
 		id = 2530009,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1146,6 +1200,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1",
 		id = 2530010,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1167,6 +1222,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.3",
 		id = 2530011,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1188,6 +1244,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1",
 		id = 2530012,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1209,6 +1266,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1",
 		id = 2530999,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1230,6 +1288,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2540000,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1251,6 +1310,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.2",
 		id = 2540001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1272,6 +1332,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2540002,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1293,6 +1354,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.32",
 		id = 2540003,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1314,6 +1376,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.2",
 		id = 2540004,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1335,6 +1398,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2540005,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1356,6 +1420,7 @@
 		starlevel = 5,
 		show_tiling_scale = "0.9",
 		id = 2540006,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1377,6 +1442,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.07",
 		id = 2540008,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1398,6 +1464,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.08",
 		id = 2540009,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1419,6 +1486,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1",
 		id = 2540010,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1440,6 +1508,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.16",
 		id = 2540011,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1461,6 +1530,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.26",
 		id = 2540012,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1482,6 +1552,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.5",
 		id = 2540999,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1503,6 +1574,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2550000,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1524,6 +1596,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2550001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1545,6 +1618,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1",
 		id = 2550002,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1566,6 +1640,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2550004,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1587,6 +1662,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.6",
 		id = 2550005,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1608,6 +1684,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1",
 		id = 2550006,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1629,6 +1706,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1",
 		id = 2550007,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1650,6 +1728,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2550008,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1671,6 +1750,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.5",
 		id = 2550009,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1692,6 +1772,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2550010,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1713,6 +1794,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2550011,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1734,6 +1816,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2550012,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1755,6 +1838,7 @@
 		starlevel = 5,
 		show_tiling_scale = "",
 		id = 2550996,
+		summon_blocked = 1,
 		attribute = {
 			1,
 			100
@@ -1776,6 +1860,7 @@
 		starlevel = 5,
 		show_tiling_scale = "",
 		id = 2550997,
+		summon_blocked = 1,
 		attribute = {
 			1,
 			100
@@ -1797,6 +1882,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2550998,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1818,6 +1904,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.2",
 		id = 2550999,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1839,6 +1926,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2590000,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1860,6 +1948,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2590001,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1881,6 +1970,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.1",
 		id = 2590003,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1902,6 +1992,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.3",
 		id = 2590004,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1923,6 +2014,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.2",
 		id = 2590005,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1944,6 +2036,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1",
 		id = 2590006,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1965,6 +2058,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1",
 		id = 2590007,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -1986,6 +2080,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.4",
 		id = 2590008,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -2007,6 +2102,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.3",
 		id = 2590009,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100
@@ -2028,6 +2124,7 @@
 		starlevel = 5,
 		show_tiling_scale = "1.2",
 		id = 2590999,
+		summon_blocked = 0,
 		attribute = {
 			1,
 			100

@@ -107,7 +107,7 @@ function var_0_0.UpdateDescShow(arg_7_0, arg_7_1, arg_7_2)
 	local var_7_1, var_7_2 = SurpassTools.GetStarUpAttrShowDesc(arg_7_1, arg_7_2.id)
 
 	for iter_7_0, iter_7_1 in pairs(var_7_1) do
-		var_7_0 = string.format("%s%s\n", var_7_0, iter_7_1)
+		var_7_0 = string.format("%s%s", var_7_0, iter_7_1)
 	end
 
 	return var_7_0, var_7_2

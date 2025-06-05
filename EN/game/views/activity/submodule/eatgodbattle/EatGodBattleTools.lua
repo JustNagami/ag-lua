@@ -16,16 +16,19 @@ local var_0_3 = {
 }
 
 function var_0_0.SetBackGroundStatus(arg_1_0, arg_1_1)
-	var_0_0.backGround = GameObject.Find("I19(Clone)1") or manager.resourcePool:Get("UI/Common/I19", ASSET_TYPE.SCENE)
+	if var_0_0.backGround == nil then
+		var_0_0.backGround = GameObject.Instantiate(Asset.Load("UI/Common/I19"))
 
-	local var_1_0 = var_0_0.backGround.transform
+		local var_1_0 = var_0_0.backGround.transform
 
-	var_1_0.localPosition = WeekBossConst.BackGroundTransform.position
-	var_1_0.localEulerAngles = WeekBossConst.BackGroundTransform.rotation
-	var_1_0.localScale = WeekBossConst.BackGroundTransform.scale
-	var_0_0.backMaterials = var_0_0.backMaterials or var_1_0:Find("I19_bg01"):GetComponent(typeof(MeshRenderer)).materials
-	var_0_0.pillarMaterials = var_0_0.pillarMaterials or var_1_0:Find("I19_bg02"):GetComponent(typeof(MeshRenderer)).materials
-	var_0_0.backController = var_0_0.backController or var_1_0:GetComponent("ControllerExCollection"):GetController("pillar")
+		var_1_0.localPosition = WeekBossConst.BackGroundTransform.position
+		var_1_0.localEulerAngles = WeekBossConst.BackGroundTransform.rotation
+		var_1_0.localScale = WeekBossConst.BackGroundTransform.scale
+		var_0_0.backMaterials = var_0_0.backMaterials or var_1_0:Find("I19_bg01"):GetComponent(typeof(MeshRenderer)).materials
+		var_0_0.pillarMaterials = var_0_0.pillarMaterials or var_1_0:Find("I19_bg02"):GetComponent(typeof(MeshRenderer)).materials
+		var_0_0.backController = var_0_0.backController or var_1_0:GetComponent("ControllerExCollection"):GetController("pillar")
+	end
+
 	var_0_0.backMaterials[0].color = var_0_1[arg_1_1]
 	var_0_0.pillarMaterials[0].color = var_0_3[arg_1_1]
 
@@ -33,13 +36,12 @@ function var_0_0.SetBackGroundStatus(arg_1_0, arg_1_1)
 end
 
 function var_0_0.UnloadBackScene()
-	local var_2_0 = var_0_0.backGround or GameObject.Find("I19(Clone)1")
+	if var_0_0.backGround then
+		GameObject.Destroy(var_0_0.backGround)
 
-	if var_2_0 then
-		manager.resourcePool:DestroyOrReturn(var_2_0, ASSET_TYPE.SCENE)
+		var_0_0.backGround = nil
 	end
 
-	var_0_0.backGround = nil
 	var_0_0.backMaterials = nil
 	var_0_0.pillarMaterials = nil
 	var_0_0.backController = nil
@@ -47,7 +49,7 @@ end
 
 function var_0_0.GetVirtualCameras()
 	if var_0_0.trackGo == nil or var_0_0.virtualCameraList == nil then
-		var_0_0.trackGo = GameObject.Find("I19_Virtual_Camera(Clone)") or Object.Instantiate(Asset.Load("UI/HeroCamera/I19_Virtual_Camera.prefab"))
+		var_0_0.trackGo = Object.Instantiate(Asset.Load("UI/HeroCamera/I19_Virtual_Camera.prefab"))
 
 		local var_3_0 = var_0_0.trackGo.transform:GetComponentsInChildren(typeof(Cinemachine.CinemachineVirtualCamera), true):ToTable()
 
@@ -76,7 +78,12 @@ function var_0_0.ResetCamera()
 
 	manager.ui:ResetMainCamera()
 
-	var_0_0.trackGo = nil
+	if var_0_0.trackGo then
+		Object.Destroy(var_0_0.trackGo)
+
+		var_0_0.trackGo = nil
+	end
+
 	var_0_0.virtualCameraList = nil
 end
 

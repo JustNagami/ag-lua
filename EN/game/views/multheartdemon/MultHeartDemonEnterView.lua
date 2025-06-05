@@ -8,6 +8,8 @@ end
 function var_0_1.Init(arg_2_0)
 	arg_2_0:InitUI()
 	arg_2_0:AddUIListener()
+
+	arg_2_0.preRewardList_ = LuaList.New(handler(arg_2_0, arg_2_0.IndexPreviewItem), arg_2_0.rewardListGo_, CommonItemView)
 end
 
 function var_0_1.InitUI(arg_3_0)
@@ -22,6 +24,7 @@ function var_0_1.OnEnter(arg_4_0)
 	arg_4_0:UpdateView()
 	arg_4_0:HideRedPoint()
 	arg_4_0:AddTimer()
+	arg_4_0:OnUpdateView()
 end
 
 function var_0_1.HideRedPoint(arg_5_0)
@@ -89,6 +92,28 @@ function var_0_1.CheckAdvanceOpenTime(arg_13_0)
 	local var_13_4 = var_13_3 and string.format(GetTips("AFTER_TIME"), manager.time:GetLostTimeStrWith2Unit(var_13_1)) or manager.time:GetLostTimeStrWith2UnitWithPrefix(var_13_2.stopTime)
 
 	return var_13_3, var_13_4
+end
+
+function var_0_1.OnUpdateView(arg_14_0)
+	local var_14_0 = ActivityCfg[arg_14_0.activityID_]
+
+	if var_14_0 and var_14_0.reward_show and var_14_0.reward_show ~= "" then
+		local var_14_1 = {}
+
+		for iter_14_0, iter_14_1 in ipairs(var_14_0.reward_show) do
+			table.insert(var_14_1, rewardToItemTemplate({
+				id = iter_14_1
+			}, nil, true))
+		end
+
+		arg_14_0.preRewards_ = ItemTools.SortRewardItemList(var_14_1)
+
+		arg_14_0.preRewardList_:StartScroll(#arg_14_0.preRewards_)
+	end
+end
+
+function var_0_1.IndexPreviewItem(arg_15_0, arg_15_1, arg_15_2)
+	arg_15_2:SetData(arg_15_0.preRewards_[arg_15_1])
 end
 
 return var_0_1

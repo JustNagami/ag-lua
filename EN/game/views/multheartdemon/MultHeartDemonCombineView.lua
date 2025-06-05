@@ -18,6 +18,7 @@ function var_0_0.InitUI(arg_4_0)
 
 	arg_4_0.controller = arg_4_0.controller_:GetController("defen")
 	arg_4_0.difficultController = arg_4_0.controller_:GetController("difficult")
+	arg_4_0.completeController = arg_4_0.controller_:GetController("complete")
 	arg_4_0.itemList = {}
 	arg_4_0.leftBtnList_ = {}
 
@@ -59,7 +60,7 @@ function var_0_0.AddUIListener(arg_7_0)
 			return
 		end
 
-		if #arg_7_0.heroList ~= 3 then
+		if not arg_7_0.heroList[1] or not arg_7_0.heroList[2] or not arg_7_0.heroList[3] then
 			ShowTips("MULTI_HEART_DEMON_HERO_NOT_ENOUGH")
 
 			return
@@ -208,9 +209,9 @@ function var_0_0.UpdateView(arg_17_0)
 
 	if var_17_0 then
 		SetActive(arg_17_0.giveUpBtn_, false)
-		SetActive(arg_17_0.fightBtn_.gameObject, false)
-		SetActive(arg_17_0.fight2Btn_.gameObject, false)
 	end
+
+	arg_17_0.completeController:SetSelectedState(tostring(var_17_0))
 end
 
 local function var_0_1(arg_18_0, arg_18_1)

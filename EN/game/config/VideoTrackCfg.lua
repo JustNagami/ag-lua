@@ -458,6 +458,28 @@
 		has_non_native = 0,
 		i18n_video_list = ""
 	},
+	["pool_1045.usm"] = {
+		has_tracks = 0,
+		name = "pool_1045.usm",
+		has_non_native = 0,
+		i18n_video_list = {
+			1,
+			2,
+			3,
+			4
+		}
+	},
+	["pool_1046.usm"] = {
+		has_tracks = 0,
+		name = "pool_1046.usm",
+		has_non_native = 0,
+		i18n_video_list = {
+			1,
+			2,
+			3,
+			4
+		}
+	},
 	["1070_start.usm"] = {
 		has_tracks = 0,
 		name = "1070_start.usm",
@@ -872,6 +894,30 @@
 		has_non_native = 0,
 		i18n_video_list = ""
 	},
+	["1046_start.usm"] = {
+		has_tracks = 0,
+		name = "1046_start.usm",
+		has_non_native = 0,
+		i18n_video_list = ""
+	},
+	["1046_loop.usm"] = {
+		has_tracks = 0,
+		name = "1046_loop.usm",
+		has_non_native = 0,
+		i18n_video_list = ""
+	},
+	["1045_start.usm"] = {
+		has_tracks = 0,
+		name = "1045_start.usm",
+		has_non_native = 0,
+		i18n_video_list = ""
+	},
+	["1045_loop.usm"] = {
+		has_tracks = 0,
+		name = "1045_loop.usm",
+		has_non_native = 0,
+		i18n_video_list = ""
+	},
 	["1076_skin02_start.usm"] = {
 		has_tracks = 0,
 		name = "1076_skin02_start.usm",
@@ -977,6 +1023,18 @@
 	["108901_login.usm"] = {
 		has_tracks = 1,
 		name = "108901_login.usm",
+		has_non_native = 0,
+		i18n_video_list = ""
+	},
+	["104501_login.usm"] = {
+		has_tracks = 0,
+		name = "104501_login.usm",
+		has_non_native = 0,
+		i18n_video_list = ""
+	},
+	["104601_login.usm"] = {
+		has_tracks = 0,
+		name = "104601_login.usm",
 		has_non_native = 0,
 		i18n_video_list = ""
 	}

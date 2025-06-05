@@ -32,7 +32,7 @@
 
 				local var_4_2 = var_4_1:GetComponent(typeof(Image))
 
-				var_4_2.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_4_0)
+				var_4_2.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. "1094")
 
 				var_4_2:SetNativeSize()
 
@@ -64,7 +64,7 @@
 			local var_4_8 = arg_1_1.actors_["1094"]
 			local var_4_9 = 0.333333333333333
 
-			if var_4_9 < arg_1_1.time_ and arg_1_1.time_ <= var_4_9 + arg_4_0 then
+			if var_4_9 < arg_1_1.time_ and arg_1_1.time_ <= var_4_9 + arg_4_0 and not isNil(var_4_8) then
 				local var_4_10 = var_4_8:GetComponent("Image")
 
 				if var_4_10 then
@@ -74,7 +74,7 @@
 
 			local var_4_11 = 0.2
 
-			if var_4_9 <= arg_1_1.time_ and arg_1_1.time_ < var_4_9 + var_4_11 then
+			if var_4_9 <= arg_1_1.time_ and arg_1_1.time_ < var_4_9 + var_4_11 and not isNil(var_4_8) then
 				local var_4_12 = (arg_1_1.time_ - var_4_9) / var_4_11
 
 				if arg_1_1.var_.highlightMatValue1094 then
@@ -89,7 +89,7 @@
 				end
 			end
 
-			if arg_1_1.time_ >= var_4_9 + var_4_11 and arg_1_1.time_ < var_4_9 + var_4_11 + arg_4_0 and arg_1_1.var_.highlightMatValue1094 then
+			if arg_1_1.time_ >= var_4_9 + var_4_11 and arg_1_1.time_ < var_4_9 + var_4_11 + arg_4_0 and not isNil(var_4_8) and arg_1_1.var_.highlightMatValue1094 then
 				local var_4_16 = 1
 
 				var_4_8.transform:SetSiblingIndex(1)
@@ -212,7 +212,7 @@
 			local var_10_0 = arg_7_1.actors_["1094"]
 			local var_10_1 = 0
 
-			if var_10_1 < arg_7_1.time_ and arg_7_1.time_ <= var_10_1 + arg_10_0 then
+			if var_10_1 < arg_7_1.time_ and arg_7_1.time_ <= var_10_1 + arg_10_0 and not isNil(var_10_0) then
 				local var_10_2 = var_10_0:GetComponent("Image")
 
 				if var_10_2 then
@@ -222,7 +222,7 @@
 
 			local var_10_3 = 0.2
 
-			if var_10_1 <= arg_7_1.time_ and arg_7_1.time_ < var_10_1 + var_10_3 then
+			if var_10_1 <= arg_7_1.time_ and arg_7_1.time_ < var_10_1 + var_10_3 and not isNil(var_10_0) then
 				local var_10_4 = (arg_7_1.time_ - var_10_1) / var_10_3
 
 				if arg_7_1.var_.highlightMatValue1094 then
@@ -237,7 +237,7 @@
 				end
 			end
 
-			if arg_7_1.time_ >= var_10_1 + var_10_3 and arg_7_1.time_ < var_10_1 + var_10_3 + arg_10_0 and arg_7_1.var_.highlightMatValue1094 then
+			if arg_7_1.time_ >= var_10_1 + var_10_3 and arg_7_1.time_ < var_10_1 + var_10_3 + arg_10_0 and not isNil(var_10_0) and arg_7_1.var_.highlightMatValue1094 then
 				local var_10_8 = 0.5
 				local var_10_9 = arg_7_1.var_.highlightMatValue1094
 				local var_10_10 = var_10_9.color
@@ -527,8 +527,15 @@
 				arg_19_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_19_1:RecordName(arg_19_1.leftNameTxt_.text)
-				SetActive(arg_19_1.iconTrs_.gameObject, false)
+				SetActive(arg_19_1.iconTrs_.gameObject, true)
+				arg_19_1.iconController_:SetSelectedState("hero")
+
+				arg_19_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_19_1.callingController_:SetSelectedState("normal")
+
+				arg_19_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_19_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_22_3 = arg_19_1:GetWordFromCfg(603104005)
 				local var_22_4 = arg_19_1:FormatText(var_22_3.content)
@@ -597,7 +604,7 @@
 			local var_26_0 = arg_23_1.actors_["1094"]
 			local var_26_1 = 0
 
-			if var_26_1 < arg_23_1.time_ and arg_23_1.time_ <= var_26_1 + arg_26_0 then
+			if var_26_1 < arg_23_1.time_ and arg_23_1.time_ <= var_26_1 + arg_26_0 and not isNil(var_26_0) then
 				local var_26_2 = var_26_0:GetComponent("Image")
 
 				if var_26_2 then
@@ -607,7 +614,7 @@
 
 			local var_26_3 = 0.2
 
-			if var_26_1 <= arg_23_1.time_ and arg_23_1.time_ < var_26_1 + var_26_3 then
+			if var_26_1 <= arg_23_1.time_ and arg_23_1.time_ < var_26_1 + var_26_3 and not isNil(var_26_0) then
 				local var_26_4 = (arg_23_1.time_ - var_26_1) / var_26_3
 
 				if arg_23_1.var_.highlightMatValue1094 then
@@ -622,7 +629,7 @@
 				end
 			end
 
-			if arg_23_1.time_ >= var_26_1 + var_26_3 and arg_23_1.time_ < var_26_1 + var_26_3 + arg_26_0 and arg_23_1.var_.highlightMatValue1094 then
+			if arg_23_1.time_ >= var_26_1 + var_26_3 and arg_23_1.time_ < var_26_1 + var_26_3 + arg_26_0 and not isNil(var_26_0) and arg_23_1.var_.highlightMatValue1094 then
 				local var_26_8 = 1
 
 				var_26_0.transform:SetSiblingIndex(1)

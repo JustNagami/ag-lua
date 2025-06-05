@@ -15,8 +15,6 @@ function var_0_0.InitOpenStage(arg_2_0, arg_2_1)
 			firstPass = iter_2_1.first_pass
 		}
 	end
-
-	trace("openStage%o", arg_2_0.openStage_)
 end
 
 function var_0_0.GetActivityId(arg_3_0)
@@ -31,18 +29,22 @@ function var_0_0.GetOpenStage(arg_5_0)
 	return arg_5_0.openStage_
 end
 
-function var_0_0.UpdateStagePass(arg_6_0, arg_6_1)
-	if arg_6_0.openStage_[arg_6_1] then
-		arg_6_0.openStage_[arg_6_1].firstPass = 1
+function var_0_0.GetOpenStageById(arg_6_0, arg_6_1)
+	return arg_6_0.openStage_[arg_6_1]
+end
+
+function var_0_0.UpdateStagePass(arg_7_0, arg_7_1)
+	if arg_7_0.openStage_[arg_7_1] then
+		arg_7_0.openStage_[arg_7_1].firstPass = 1
 	end
 end
 
-function var_0_0.SetBattleType(arg_7_0, arg_7_1)
-	arg_7_0.battleType_ = arg_7_1
+function var_0_0.SetBattleType(arg_8_0, arg_8_1)
+	arg_8_0.battleType_ = arg_8_1
 end
 
-function var_0_0.GetBattleType(arg_8_0)
-	return arg_8_0.battleType_
+function var_0_0.GetBattleType(arg_9_0)
+	return arg_9_0.battleType_
 end
 
 return var_0_0

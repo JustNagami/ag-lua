@@ -6753,7 +6753,7 @@
 		id = 18102,
 		stage = 1,
 		unlock_condition = {
-			1210101
+			1210301
 		},
 		cost = {},
 		formula_condition = {}
@@ -6771,7 +6771,7 @@
 		id = 18103,
 		stage = 1,
 		unlock_condition = {
-			1210102
+			1210302
 		},
 		cost = {},
 		formula_condition = {}
@@ -6805,7 +6805,7 @@
 		id = 18105,
 		stage = 1,
 		unlock_condition = {
-			1210101
+			1210301
 		},
 		cost = {},
 		formula_condition = {}
@@ -6823,7 +6823,7 @@
 		id = 18106,
 		stage = 1,
 		unlock_condition = {
-			1210102
+			1210302
 		},
 		cost = {},
 		formula_condition = {}
@@ -6857,7 +6857,7 @@
 		id = 18202,
 		stage = 1,
 		unlock_condition = {
-			1210101
+			1210301
 		},
 		cost = {},
 		formula_condition = {}
@@ -6875,7 +6875,7 @@
 		id = 18203,
 		stage = 1,
 		unlock_condition = {
-			1210102
+			1210302
 		},
 		cost = {},
 		formula_condition = {}
@@ -6909,7 +6909,7 @@
 		id = 18205,
 		stage = 1,
 		unlock_condition = {
-			1210101
+			1210301
 		},
 		cost = {},
 		formula_condition = {}
@@ -6927,7 +6927,7 @@
 		id = 18206,
 		stage = 1,
 		unlock_condition = {
-			1210102
+			1210302
 		},
 		cost = {},
 		formula_condition = {}

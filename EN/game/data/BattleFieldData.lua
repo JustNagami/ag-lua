@@ -46,18 +46,23 @@ function var_0_0.GetCacheChapterClient(arg_5_0, arg_5_1)
 	end
 
 	local var_5_1 = getData("BattleField", "toggle_" .. arg_5_1)
+	local var_5_2 = true
 
-	if var_5_1 and ChapterTools.IsChapterSystemLock(var_5_1) then
+	if var_5_1 and ChapterClientCfg[var_5_1].show_tag_type == ChapterConst.SHOW_TYPE.LIMIT_TIME then
+		var_5_2 = ActivityData:GetActivityIsOpen(ChapterCfg[ChapterClientCfg[var_5_1].chapter_list[1]].activity_id)
+	end
+
+	if var_5_1 and (ChapterTools.IsChapterSystemLock(var_5_1) or not var_5_2) then
 		saveData("BattleField", "toggle_" .. arg_5_1, nil)
 	end
 
-	local var_5_2 = arg_5_0.cacheToggle_[arg_5_1] or getData("BattleField", "toggle_" .. arg_5_1) or arg_5_1 == BattleConst.TOGGLE.PLOT and ChapterTools.GetOptimalChapterClientID(true) or arg_5_1 == BattleConst.TOGGLE.SUB_PLOT and ChapterTools.GetOpenSubPlotClient() or var_5_0
+	local var_5_3 = arg_5_0.cacheToggle_[arg_5_1] or getData("BattleField", "toggle_" .. arg_5_1) or arg_5_1 == BattleConst.TOGGLE.PLOT and ChapterTools.GetOptimalChapterClientID(true) or arg_5_1 == BattleConst.TOGGLE.SUB_PLOT and ChapterTools.GetOpenSubPlotClient() or var_5_0
 
-	if ChapterClientCfg[var_5_2] == nil then
-		var_5_2 = var_5_0
+	if ChapterClientCfg[var_5_3] == nil then
+		var_5_3 = var_5_0
 	end
 
-	return var_5_2
+	return var_5_3
 end
 
 function var_0_0.SetCacheChapter(arg_6_0, arg_6_1, arg_6_2)

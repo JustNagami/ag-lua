@@ -182,7 +182,7 @@
 	[341461] = {
 		activity_theme = 3401,
 		activity_id = 341461,
-		shop_id = 231
+		shop_id = 233
 	},
 	[2814611] = {
 		activity_theme = 2801,

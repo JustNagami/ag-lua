@@ -2,7 +2,7 @@
 	{
 		description = "203d28a8249ccd953579b014976dfcec",
 		name = "578194143adfc76301e67fd175fa352e",
-		image = "TextureBg/Version/V4_2_3_GodEaterUI_Com/com/V4_2_GodEaterUI_hero_01",
+		image = "TextureConfig/Character/Portrait/1045",
 		id = 1,
 		icon = "combinegame_hero_1",
 		starting_skill = {
@@ -24,7 +24,7 @@
 	{
 		description = "728bc213e9a445feab1f23b020ca414b",
 		name = "61bbf63ad3c517da604a1b566ee385d2",
-		image = "TextureBg/Version/V4_2_3_GodEaterUI_Com/com/V4_2_GodEaterUI_hero_02",
+		image = "TextureConfig/Character/Portrait/1046",
 		id = 2,
 		icon = "combinegame_hero_2",
 		starting_skill = {

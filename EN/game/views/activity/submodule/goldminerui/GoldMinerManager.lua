@@ -12,18 +12,23 @@ function var_0_0.Init(arg_1_0, arg_1_1, arg_1_2, arg_1_3)
 	arg_1_0.isEnd_ = true
 	arg_1_0.remainTime_ = 0
 	arg_1_0.pausing_ = false
+	arg_1_0.thiefThing_ = {}
+	arg_1_0.returnThiefThing_ = {}
 	arg_1_0.gameView_ = arg_1_1
 	arg_1_0.gameRootContainer_ = arg_1_2
 	arg_1_0.hook_ = arg_1_3
 end
 
 function var_0_0.StartGame(arg_2_0, arg_2_1)
+	arg_2_0.score_ = 0
 	arg_2_0.isEnd_ = false
 	arg_2_0.fullTime_ = arg_2_1
 	arg_2_0.remainTime_ = arg_2_1
 	arg_2_0.propList_ = {}
 	arg_2_0.startServerTime_ = manager.time:GetServerTime()
 	arg_2_0.pausing_ = false
+	arg_2_0.thiefThing_ = {}
+	arg_2_0.returnThiefThing_ = {}
 
 	if not arg_2_0.frameTimer_ then
 		arg_2_0.frameTimer_ = FrameTimer.New(handler(arg_2_0, arg_2_0.Update), 1, -1)
@@ -187,25 +192,75 @@ function var_0_0.StopTimer(arg_26_0)
 	end
 end
 
-function var_0_0.ClearStage(arg_27_0)
-	arg_27_0:DisposeAllThing()
-	arg_27_0:DisposeAllThief()
-	arg_27_0:DestoryNoDataGos()
+function var_0_0.AddThiefThing(arg_27_0, arg_27_1)
+	table.insert(arg_27_0.thiefThing_, arg_27_1)
 end
 
-function var_0_0.Dispose(arg_28_0)
-	arg_28_0:StopTimer()
+function var_0_0.AddReturnThiefThing(arg_28_0, arg_28_1)
+	table.insert(arg_28_0.returnThiefThing_, arg_28_1)
+end
 
-	if arg_28_0.hook_ then
-		arg_28_0.hook_:Dispose()
+function var_0_0.GetThiefThing(arg_29_0)
+	return arg_29_0.thiefThing_
+end
 
-		arg_28_0.hook_ = nil
+function var_0_0.GetReturnThiefThing(arg_30_0)
+	return arg_30_0.returnThiefThing_
+end
+
+function var_0_0.SendMessageToSDK(arg_31_0, arg_31_1, arg_31_2, arg_31_3, arg_31_4, arg_31_5)
+	local var_31_0 = ActivityGodEaterGoldminerStageCfg[arg_31_1]
+	local var_31_1 = arg_31_0.score_
+	local var_31_2 = 0
+
+	for iter_31_0, iter_31_1 in pairs(var_31_0.score) do
+		if iter_31_1 < var_31_1 then
+			var_31_2 = iter_31_0
+		end
 	end
 
-	arg_28_0.gameView_ = nil
-	arg_28_0.gameRootContainer_ = nil
+	local var_31_3 = arg_31_0.propList_
+	local var_31_4
+	local var_31_5 = var_31_2 > 0 and 1 or 2
+	local var_31_6 = var_0_0._singletonInstance:GetUseSeconds()
+	local var_31_7 = string.format("[%s]", table.concat(var_31_3, ","))
+	local var_31_8 = string.format("[[%s],[%s]]", table.concat(arg_31_0.thiefThing_, ","), table.concat(arg_31_0.returnThiefThing_, ","))
 
-	arg_28_0:ClearStage()
+	SDKTools.SendMessageToSDK("activity_combat_over", {
+		activity_id = ActivityConst.ACTIVITY_GOLDMINER,
+		stage_id = arg_31_1,
+		result = var_31_5,
+		hero_id = arg_31_2,
+		score = var_31_1,
+		use_seconds = var_31_6,
+		combat_star = var_31_2,
+		hit_num = arg_31_3,
+		skill_num = arg_31_5,
+		cell_num = arg_31_4,
+		params_list = var_31_7,
+		other_data = var_31_8
+	})
+end
+
+function var_0_0.ClearStage(arg_32_0)
+	arg_32_0:DisposeAllThing()
+	arg_32_0:DisposeAllThief()
+	arg_32_0:DestoryNoDataGos()
+end
+
+function var_0_0.Dispose(arg_33_0)
+	arg_33_0:StopTimer()
+
+	if arg_33_0.hook_ then
+		arg_33_0.hook_:Dispose()
+
+		arg_33_0.hook_ = nil
+	end
+
+	arg_33_0.gameView_ = nil
+	arg_33_0.gameRootContainer_ = nil
+
+	arg_33_0:ClearStage()
 end
 
 return var_0_0

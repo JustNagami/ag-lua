@@ -43,7 +43,14 @@ function var_0_0.EventTrigger(arg_2_0, arg_2_1, arg_2_2)
 		return
 	end
 
-	if arg_2_0._stepId == 12608 then
+	if arg_2_0._stepId == 12603 then
+		civilization.CivilizationLuaBridge.SetGameCanDrag(false, false)
+		arg_2_0:OnStepEnd()
+
+		return
+	end
+
+	if arg_2_0._stepId == 12609 then
 		civilization.CivilizationLuaBridge.SetGameCanDrag(true, false)
 		arg_2_0:OnStepEnd()
 

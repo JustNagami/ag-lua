@@ -337,6 +337,48 @@
 		scene_setting = {},
 		obtain_way = {}
 	},
+	[6036] = {
+		action_suffix = "",
+		title = "37ba862f40a67288dbac1b02127a6cdf",
+		desc = "4a1cacab77f649a7456932ad4b769559",
+		obtain_word = "",
+		scene_trial = 0,
+		limit_display = 0,
+		prefix_dlc = "",
+		light_effect = "",
+		unlock_description = "",
+		prefix = "X330",
+		light_effect_delay = "",
+		id = 6036,
+		default_music = 0,
+		impact = {},
+		scene_tag = {},
+		scene_setting = {
+			1
+		},
+		obtain_way = {}
+	},
+	[6037] = {
+		action_suffix = "",
+		title = "d6f45e253c87417f7e5400cda2730fbc",
+		desc = "f6b6f9bae01de8030478fe2a26afd0b1",
+		obtain_word = "",
+		scene_trial = 0,
+		limit_display = 0,
+		prefix_dlc = "",
+		light_effect = "",
+		unlock_description = "",
+		prefix = "X329",
+		light_effect_delay = "",
+		id = 6037,
+		default_music = 0,
+		impact = {},
+		scene_tag = {},
+		scene_setting = {
+			1
+		},
+		obtain_way = {}
+	},
 	[6100] = {
 		action_suffix = "",
 		title = "41bd3457c81b7885859d844c2272e16a",
@@ -375,6 +417,8 @@
 		6014,
 		6015,
 		6016,
+		6036,
+		6037,
 		6100
 	}
 }

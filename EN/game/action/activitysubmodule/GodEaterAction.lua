@@ -99,4 +99,8 @@ manager.net:Bind(87013, function(arg_9_0)
 	GodEaterData:SetHeroGiftData(arg_9_0)
 end)
 
+function var_0_0.UpdateRedPoint()
+	GodEaterData:UpdateRedPoint(GodEaterData.activityID)
+end
+
 return var_0_0

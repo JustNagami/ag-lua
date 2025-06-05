@@ -32,11 +32,14 @@
 	ClickSkill = function(arg_8_0, arg_8_1)
 		manager.notify:CallUpdateFunc(CIVILIZATION_ON_CLICK_SKILL, arg_8_0, arg_8_1)
 	end,
-	ChangeControllerState = function(arg_9_0, arg_9_1, arg_9_2)
-		local var_9_0 = arg_9_0:GetComponent("ControllerExCollection"):GetController(arg_9_1)
+	ShowFoodShort = function(arg_9_0)
+		manager.notify:CallUpdateFunc(CIVILIZATION_SHOW_FOOD_SHORTAGE, arg_9_0)
+	end,
+	ChangeControllerState = function(arg_10_0, arg_10_1, arg_10_2)
+		local var_10_0 = arg_10_0:GetComponent("ControllerExCollection"):GetController(arg_10_1)
 
-		if var_9_0 then
-			var_9_0:SetSelectedState(arg_9_2)
+		if var_10_0 then
+			var_10_0:SetSelectedState(arg_10_2)
 		end
 	end
 }

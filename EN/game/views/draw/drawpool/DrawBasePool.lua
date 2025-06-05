@@ -87,6 +87,18 @@ function var_0_0.UpdateView(arg_8_0)
 		SetActive(arg_8_0.maskGo_, true)
 
 		arg_8_0.criMovie = arg_8_0.movie:GetComponent("CriManaMovieControllerForUI")
+
+		local var_8_1 = arg_8_0.movie:GetComponent("CriManaExMultipleVedio")
+		local var_8_2 = var_8_1.m_paths
+
+		if var_8_2.Count > 0 then
+			local var_8_3 = var_8_2[0]
+			local var_8_4 = string.gsub(var_8_3, "SofdecAsset/function/pool/", "")
+			local var_8_5 = manager.video:GetI18NVideoPath(var_8_4)
+
+			var_8_1:SetPath(0, "SofdecAsset/function/pool/" .. var_8_5)
+		end
+
 		arg_8_0.criPlay = arg_8_0.criMovie.player
 
 		if tostring(arg_8_0.criPlay.status) == "Playing" and arg_8_0.criPlay:IsPaused() then
@@ -114,27 +126,27 @@ function var_0_0.UpdateView(arg_8_0)
 		return
 	end
 
-	local var_8_1 = var_8_0.unoption_up_items[1][1]
-	local var_8_2 = arg_8_0.detailBtnPanelTrans_S_.transform:Find(tostring(var_8_1))
+	local var_8_6 = var_8_0.unoption_up_items[1][1]
+	local var_8_7 = arg_8_0.detailBtnPanelTrans_S_.transform:Find(tostring(var_8_6))
 
-	if var_8_2 == nil then
+	if var_8_7 == nil then
 		return
 	end
 
-	local var_8_3 = {}
-	local var_8_4 = HeroCfg[var_8_1]
+	local var_8_8 = {}
+	local var_8_9 = HeroCfg[var_8_6]
 
-	arg_8_0:BindCfgUI(var_8_2, var_8_3)
+	arg_8_0:BindCfgUI(var_8_7, var_8_8)
 
-	var_8_3.nameText_.text = GetI18NText(var_8_4.name)
+	var_8_8.nameText_.text = GetI18NText(var_8_9.name)
 
-	if var_8_3.suffixText_ then
-		var_8_3.suffixText_.text = GetI18NText(var_8_4.suffix)
+	if var_8_8.suffixText_ then
+		var_8_8.suffixText_.text = GetI18NText(var_8_9.suffix)
 	else
-		var_8_3.nameText_.text = HeroTools.GetHeroFullName(var_8_1)
+		var_8_8.nameText_.text = HeroTools.GetHeroFullName(var_8_6)
 	end
 
-	var_8_3.campIcon_.sprite = HeroTools.GetHeroRaceIcon(var_8_1)
+	var_8_8.campIcon_.sprite = HeroTools.GetHeroRaceIcon(var_8_6)
 end
 
 function var_0_0.SetVideoTrack(arg_9_0, arg_9_1, arg_9_2)

@@ -157,4 +157,50 @@ function var_0_0.GetJumpDataByServantSpecialType(arg_4_0)
 	return #var_4_10 > 0, var_4_10
 end
 
+function var_0_0.GetGodEaterSourece(arg_5_0)
+	if not ActivityData:GetActivityIsOpen(ActivityConst.ACTIVITY_GODEATER_SERVANT) then
+		return false, {}
+	end
+
+	local var_5_0 = DrawTools.GetNowAllServantPool()
+	local var_5_1 = {
+		[9] = ViewConst.JUMP_SPECIAL_ID.GODEATER_SPECIAL_SERVANT
+	}
+	local var_5_2 = {}
+
+	for iter_5_0, iter_5_1 in pairs(var_5_0) do
+		local var_5_3 = DrawPoolCfg[iter_5_1]
+
+		if var_5_3 then
+			local var_5_4 = var_5_3.pool_type
+			local var_5_5 = var_5_3.pool_show_type
+			local var_5_6 = var_5_3.pool_draw_range_type
+			local var_5_7 = var_5_3.pool_selected_type
+			local var_5_8 = DrawSettingCfg[var_5_6]
+
+			if var_5_4 == 2 and var_5_7 == 9 and iter_5_1 ~= 10002 and not var_5_2[var_5_7] and SystemLinkCfg[var_5_1[var_5_7]] then
+				var_5_2[var_5_7] = {
+					var_5_1[var_5_7],
+					iter_5_1
+				}
+			end
+		end
+	end
+
+	if not var_5_2[9] then
+		var_5_2[9] = {
+			var_5_1[9],
+			1001
+		}
+	end
+
+	local var_5_9 = {}
+
+	for iter_5_2, iter_5_3 in pairs(var_5_2) do
+		table.insert(var_5_9, iter_5_3)
+	end
+
+	return #var_5_9 > 0, var_5_9
+end
+
 return var_0_0

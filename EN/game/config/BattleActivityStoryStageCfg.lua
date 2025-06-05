@@ -12397,9 +12397,9 @@
 			5250102
 		},
 		attribute_factor = {
-			800,
+			200,
 			1000,
-			5000
+			20000
 		},
 		drop_lib_id_list = {
 			2000004,
@@ -12464,9 +12464,9 @@
 			5250103
 		},
 		attribute_factor = {
-			800,
+			300,
 			1000,
-			5000
+			20000
 		},
 		drop_lib_id_list = {
 			2000004,
@@ -12531,9 +12531,9 @@
 			5250104
 		},
 		attribute_factor = {
-			800,
+			500,
 			1000,
-			5000
+			12000
 		},
 		drop_lib_id_list = {
 			2000004,
@@ -12572,7 +12572,7 @@
 		ai_level = 1,
 		hero_list = "",
 		map = "",
-		background_1 = "",
+		background_1 = "ST03",
 		custom_lock_line = "",
 		line_text = "",
 		tips = "2c0ebdc9a680cf0da8a3d0fc1040f1ed",
@@ -12648,9 +12648,9 @@
 			5250106
 		},
 		attribute_factor = {
-			800,
+			500,
 			1000,
-			7000
+			15000
 		},
 		drop_lib_id_list = {
 			2000004,
@@ -12715,9 +12715,9 @@
 			5250107
 		},
 		attribute_factor = {
-			800,
+			400,
 			1000,
-			7000
+			15000
 		},
 		drop_lib_id_list = {
 			2000004,
@@ -12782,9 +12782,9 @@
 			5250108
 		},
 		attribute_factor = {
-			800,
+			200,
 			1000,
-			7000
+			17000
 		},
 		drop_lib_id_list = {
 			2000004,
@@ -12849,9 +12849,9 @@
 			5250109
 		},
 		attribute_factor = {
-			800,
+			500,
 			1000,
-			5000
+			80000
 		},
 		drop_lib_id_list = {
 			2000004,
@@ -12903,7 +12903,6 @@
 		recommend_level = 0,
 		can_switch_restrict_hero_list = "",
 		combo_skill_id = 0,
-		chip_list = "",
 		auto_next_stage_group = 0,
 		line_text_position = "",
 		user_exp = 10,
@@ -12916,9 +12915,9 @@
 			5250110
 		},
 		attribute_factor = {
-			800,
+			50,
 			1000,
-			7000
+			35000
 		},
 		drop_lib_id_list = {
 			2000004,
@@ -12946,6 +12945,11 @@
 				1
 			}
 		},
+		chip_list = {
+			6,
+			104,
+			105
+		},
 		team_type = {
 			1,
 			0
@@ -12957,7 +12961,7 @@
 		ai_level = 1,
 		hero_list = "",
 		map = "",
-		background_1 = "",
+		background_1 = "I03",
 		custom_lock_line = "",
 		line_text = "",
 		tips = "e288e8d7edfc4837e19b50523eb182b0",

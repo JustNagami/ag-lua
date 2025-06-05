@@ -275,37 +275,61 @@ function var_0_0.GetDrawBonusActivityIDList()
 	return var_18_0
 end
 
-function var_0_0.HasDrawBonusPoolList(arg_19_0)
-	local var_19_0 = var_0_0.GetDrawBonusActivityIDList()
+function var_0_0.GetDrawPieceActivityIDList()
+	local var_19_0 = {}
 
-	for iter_19_0, iter_19_1 in ipairs(arg_19_0) do
-		local var_19_1 = var_0_0.HasDrawBonusPoolID(var_19_0, iter_19_1)
+	for iter_19_0, iter_19_1 in ipairs(ActivityDrawPieceCfg.all) do
+		if ActivityData:GetActivityIsOpen(iter_19_1) then
+			table.insert(var_19_0, iter_19_1)
+		end
+	end
 
-		if var_19_1 then
-			return var_19_1
+	return var_19_0
+end
+
+function var_0_0.HasDrawBonusPoolList(arg_20_0)
+	local var_20_0 = var_0_0.GetDrawBonusActivityIDList()
+
+	for iter_20_0, iter_20_1 in ipairs(arg_20_0) do
+		local var_20_1 = var_0_0.HasDrawBonusPoolID(var_20_0, iter_20_1)
+
+		if var_20_1 then
+			return var_20_1
 		end
 	end
 end
 
-function var_0_0.HasDrawBonusPoolID(arg_20_0, arg_20_1)
-	for iter_20_0, iter_20_1 in ipairs(arg_20_0) do
-		local var_20_0 = ActivityDrawBonusCfg[iter_20_1]
+function var_0_0.HasDrawBonusPoolID(arg_21_0, arg_21_1)
+	for iter_21_0, iter_21_1 in ipairs(arg_21_0) do
+		local var_21_0 = ActivityDrawBonusCfg[iter_21_1]
 
-		if table.keyof(var_20_0.draw_pool_id, arg_20_1) then
-			return iter_20_1
+		if table.keyof(var_21_0.draw_pool_id, arg_21_1) then
+			return iter_21_1
 		end
 	end
 
 	return nil
 end
 
-function var_0_0.GetBonusCnt(arg_21_0)
-	local var_21_0 = ActivityDrawBonusCfg[arg_21_0]
-	local var_21_1 = var_21_0.reward
-	local var_21_2 = var_21_0.need
-	local var_21_3 = DrawData:GetPoolBonus(arg_21_0)
+function var_0_0.HasDrawPiecePoolID(arg_22_0, arg_22_1)
+	for iter_22_0, iter_22_1 in ipairs(arg_22_0) do
+		local var_22_0 = ActivityDrawPieceCfg[iter_22_1]
 
-	return math.floor(var_21_3 / var_21_2) * var_21_1[1][2]
+		if table.keyof(var_22_0.draw_pool_id, arg_22_1) then
+			return iter_22_1
+		end
+	end
+
+	return nil
+end
+
+function var_0_0.GetBonusCnt(arg_23_0)
+	local var_23_0 = ActivityDrawBonusCfg[arg_23_0]
+	local var_23_1 = var_23_0.reward
+	local var_23_2 = var_23_0.need
+	local var_23_3 = DrawData:GetPoolBonus(arg_23_0)
+
+	return math.floor(var_23_3 / var_23_2) * var_23_1[1][2]
 end
 
 return var_0_0

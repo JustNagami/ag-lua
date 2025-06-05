@@ -209,7 +209,7 @@ function var_0_1.UpdateName(arg_14_0)
 	arg_14_0.nameTable = {}
 
 	local var_14_0 = MultHeartDemonCfg[MultHeartDemonCfg.get_id_list_by_activity_id[var_0_1.activityId][1]]
-	local var_14_1 = string.split(var_14_0.heart_damon_name, ",")
+	local var_14_1 = string.split(GetI18NText(var_14_0.heart_damon_name), ",")
 
 	for iter_14_0, iter_14_1 in ipairs(var_14_0.heart_damon_id) do
 		arg_14_0.nameTable[iter_14_1] = var_14_1[iter_14_0]

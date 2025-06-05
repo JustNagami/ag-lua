@@ -575,14 +575,18 @@
 	[104601] = {
 		id = 104601,
 		trial_stage = 405104601,
-		trial_activity = "",
-		tag = {}
+		tag = {},
+		trial_activity = {
+			402002
+		}
 	},
 	[104501] = {
 		id = 104501,
 		trial_stage = 405104501,
-		trial_activity = "",
-		tag = {}
+		tag = {},
+		trial_activity = {
+			402001
+		}
 	},
 	all = {
 		101301,

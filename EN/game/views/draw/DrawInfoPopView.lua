@@ -21,6 +21,7 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.stateCon_ = arg_4_0.controllerEx_:GetController("state")
 	arg_4_0.recordView = DrawInfoPopRecordView.New(arg_4_0.recordGo_)
 	arg_4_0.bonusController_ = arg_4_0.controllerEx_:GetController("ExtractReturn")
+	arg_4_0.pieceController_ = arg_4_0.controllerEx_:GetController("ExtractPiece")
 end
 
 function var_0_0.AddUIListener(arg_5_0)
@@ -43,18 +44,22 @@ function var_0_0.OnEnter(arg_10_0)
 	local var_10_0 = arg_10_0.params_.poolId
 	local var_10_1 = DrawData:GetPoolData(var_10_0)
 
+	arg_10_0.ani_:Update(0)
 	arg_10_0:RefreshInfo(var_10_0, var_10_1)
 	arg_10_0:RefreshMessage(var_10_0, var_10_1)
 	arg_10_0:RefreshRecord(var_10_0, var_10_1)
-	TimeTools.StartAfterSeconds(0.033, function()
-		arg_10_0.contentTrs_.localPosition = Vector3.New(0, 0, 0)
-	end, {})
+	arg_10_0:RefreshBonus(var_10_0)
+	arg_10_0:RefreshPiece(var_10_0)
 	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_10_0.contentTrs_)
 	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_10_0.layout_1)
+	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_10_0.infoContent_)
 	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_10_0.layout_2)
 	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_10_0.layout_3)
 	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_10_0.layout_4)
-	arg_10_0:RefreshBonus(var_10_0)
+	TimeTools.StartAfterSeconds(0.033, function()
+		arg_10_0.contentTrs_.localPosition = Vector3.New(0, 0, 0)
+		arg_10_0.infoContent_.localPosition = Vector3.New(0, 0, 0)
+	end, {})
 end
 
 function var_0_0.RefreshInfo(arg_12_0, arg_12_1, arg_12_2)
@@ -485,21 +490,37 @@ function var_0_0.RefreshBonus(arg_19_0, arg_19_1)
 	end
 end
 
-function var_0_0.Dispose(arg_20_0)
-	var_0_0.super.Dispose(arg_20_0)
-	arg_20_0.recordView:Dispose()
+function var_0_0.RefreshPiece(arg_20_0, arg_20_1)
+	local var_20_0 = DrawTools.GetDrawPieceActivityIDList()
+	local var_20_1 = DrawTools.HasDrawPiecePoolID(var_20_0, arg_20_1)
 
-	if arg_20_0.items then
-		for iter_20_0, iter_20_1 in ipairs(arg_20_0.items) do
-			iter_20_1:Dispose()
+	if var_20_1 then
+		arg_20_0.pieceController_:SetSelectedState("on")
+
+		local var_20_2 = ActivityDrawPieceCfg[var_20_1]
+
+		arg_20_0.pieceTitleText_.text = var_20_2.draw_title
+		arg_20_0.pieceInfoText_.text = var_20_2.draw_desc
+	else
+		arg_20_0.pieceController_:SetSelectedState("off")
+	end
+end
+
+function var_0_0.Dispose(arg_21_0)
+	var_0_0.super.Dispose(arg_21_0)
+	arg_21_0.recordView:Dispose()
+
+	if arg_21_0.items then
+		for iter_21_0, iter_21_1 in ipairs(arg_21_0.items) do
+			iter_21_1:Dispose()
 		end
 
-		arg_20_0.items = nil
+		arg_21_0.items = nil
 	end
 
-	if arg_20_0.probabilityCfgList then
-		for iter_20_2, iter_20_3 in ipairs(arg_20_0.probabilityCfgList) do
-			iter_20_3 = nil
+	if arg_21_0.probabilityCfgList then
+		for iter_21_2, iter_21_3 in ipairs(arg_21_0.probabilityCfgList) do
+			iter_21_3 = nil
 		end
 	end
 end

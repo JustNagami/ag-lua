@@ -16,13 +16,11 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
-	arg_4_0.surpassScrollHelper_ = LuaList.New(handler(arg_4_0, arg_4_0.SurpassNodeItem), arg_4_0.messagescrollGo_, HeroSurpassPreviewNodeItem)
+	arg_4_0.starStageList = {}
 end
 
 function var_0_0.AddUIListener(arg_5_0)
 	arg_5_0:AddBtnListener(arg_5_0.btnbgBtn_, nil, function()
-		arg_5_0.messagescrollSr_.enabled = true
-
 		arg_5_0.tipsnodeGo_:SetActive(false)
 	end)
 	arg_5_0:AddBtnListener(arg_5_0.closeBtn_, nil, function()
@@ -35,8 +33,6 @@ end
 function var_0_0.ClickCheckBtn(arg_8_0, arg_8_1, arg_8_2)
 	arg_8_0:RefreshTipsShow(arg_8_2)
 	arg_8_0:SetTipsPosAndShow(arg_8_1)
-
-	arg_8_0.messagescrollSr_.enabled = false
 end
 
 function var_0_0.RefreshTipsShow(arg_9_0, arg_9_1)
@@ -54,7 +50,7 @@ function var_0_0.RefreshTipsShow(arg_9_0, arg_9_1)
 end
 
 function var_0_0.SetTipsPosAndShow(arg_10_0, arg_10_1)
-	local var_10_0 = arg_10_1.transform_.parent
+	local var_10_0 = arg_10_1.transform.parent
 
 	if arg_10_0.tipsnodeTrs_.parent ~= var_10_0 then
 		arg_10_0.tipsnodeTrs_:SetParent(var_10_0)
@@ -63,7 +59,7 @@ function var_0_0.SetTipsPosAndShow(arg_10_0, arg_10_1)
 	arg_10_0.tipsnodeTrs_:SetAsLastSibling()
 	arg_10_0.tipsnodeGo_:SetActive(true)
 
-	local var_10_1 = arg_10_1.transform_.localPosition
+	local var_10_1 = arg_10_1.transform.localPosition
 
 	arg_10_0.tipsnodeTrs_.localPosition = Vector2(arg_10_0.tipsnodeTrs_.localPosition.x, var_10_1.y - 200)
 end
@@ -135,45 +131,67 @@ function var_0_0.InitHeroStarData(arg_15_0)
 	arg_15_0.starNodeList = var_15_0
 	arg_15_0.starStageNum = var_15_3 - var_15_1
 
-	arg_15_0.surpassScrollHelper_:StartScroll(arg_15_0.starStageNum, var_15_5 - var_15_1)
-end
+	for iter_15_1 = 1, arg_15_0.starStageNum do
+		if not arg_15_0.starStageList[iter_15_1] then
+			local var_15_13 = Object.Instantiate(arg_15_0.nodeItem_, arg_15_0.content_)
 
-function var_0_0.OnExit(arg_16_0)
-	if arg_16_0.backGround_ then
-		manager.resourcePool:DestroyOrReturn(arg_16_0.backGround_, ASSET_TYPE.SCENE)
+			arg_15_0.starStageList[iter_15_1] = HeroSurpassPreviewNodeItem.New(var_15_13)
+		end
+
+		local var_15_14 = arg_15_0.starNodeList[iter_15_1 + arg_15_0.beginStarStage - 1]
+
+		arg_15_0.starStageList[iter_15_1]:RefreshUI(var_15_14)
+		arg_15_0.starStageList[iter_15_1]:SetClickCheckCallback(function()
+			arg_15_0:ClickCheckBtn(arg_15_0.starStageList[iter_15_1].gameObject_, var_15_14[1].cfg.star)
+		end)
+	end
+
+	for iter_15_2 = arg_15_0.starStageNum + 1, #arg_15_0.starStageList do
+		arg_15_0.starStageList[iter_15_2]:Show(false)
 	end
 end
 
-function var_0_0.Dispose(arg_17_0)
-	if arg_17_0.surpassScrollHelper_ then
-		arg_17_0.surpassScrollHelper_:Dispose()
-
-		arg_17_0.surpassScrollHelper_ = nil
+function var_0_0.OnExit(arg_17_0)
+	if arg_17_0.backGround_ then
+		manager.resourcePool:DestroyOrReturn(arg_17_0.backGround_, ASSET_TYPE.SCENE)
 	end
-
-	var_0_0.super.Dispose(arg_17_0)
 end
 
-function var_0_0.InitBackScene(arg_18_0)
-	local var_18_0 = "UI/Common/BackgroundQuad"
+function var_0_0.Dispose(arg_18_0)
+	if arg_18_0.starStageList then
+		for iter_18_0 = 1, #arg_18_0.starStageList do
+			arg_18_0.starStageList[iter_18_0]:Dispose()
+			Object.Destroy(arg_18_0.starStageList[iter_18_0].gameObject_)
 
-	arg_18_0.backGround_ = manager.resourcePool:Get(var_18_0, ASSET_TYPE.SCENE)
-	arg_18_0.backGroundTrs_ = arg_18_0.backGround_.transform
+			arg_18_0.starStageList[iter_18_0] = nil
+		end
 
-	arg_18_0.backGroundTrs_:SetParent(manager.ui.mainCamera.transform)
+		arg_18_0.starStageList = {}
+	end
 
-	local var_18_1
-	local var_18_2
-	local var_18_3 = GameDisplayCfg.collect_monster_background_pos.value
-	local var_18_4 = CameraCfg.enemyFile.pictureName
+	var_0_0.super.Dispose(arg_18_0)
+end
 
-	arg_18_0.backGroundTrs_.localPosition = Vector3(var_18_3[1], var_18_3[2], 10)
-	arg_18_0.backGroundTrs_.localEulerAngles = Vector3(0, 0, 0)
+function var_0_0.InitBackScene(arg_19_0)
+	local var_19_0 = "UI/Common/BackgroundQuad"
 
-	local var_18_5 = GameDisplayCfg.collect_monster_background_pos.scale
+	arg_19_0.backGround_ = manager.resourcePool:Get(var_19_0, ASSET_TYPE.SCENE)
+	arg_19_0.backGroundTrs_ = arg_19_0.backGround_.transform
 
-	arg_18_0.backGroundTrs_.localScale = Vector3(var_18_5[1], var_18_5[2], var_18_5[3])
-	arg_18_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas(SpritePathCfg.Bg.path .. var_18_4)
+	arg_19_0.backGroundTrs_:SetParent(manager.ui.mainCamera.transform)
+
+	local var_19_1
+	local var_19_2
+	local var_19_3 = GameDisplayCfg.collect_monster_background_pos.value
+	local var_19_4 = CameraCfg.enemyFile.pictureName
+
+	arg_19_0.backGroundTrs_.localPosition = Vector3(var_19_3[1], var_19_3[2], 10)
+	arg_19_0.backGroundTrs_.localEulerAngles = Vector3(0, 0, 0)
+
+	local var_19_5 = GameDisplayCfg.collect_monster_background_pos.scale
+
+	arg_19_0.backGroundTrs_.localScale = Vector3(var_19_5[1], var_19_5[2], var_19_5[3])
+	arg_19_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas(SpritePathCfg.Bg.path .. var_19_4)
 end
 
 return var_0_0

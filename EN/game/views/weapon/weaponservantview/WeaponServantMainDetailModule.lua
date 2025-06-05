@@ -688,6 +688,11 @@ end
 
 function var_0_0.CheckCanCallName(arg_47_0)
 	local var_47_0 = arg_47_0.data.info
+
+	if WeaponServantCfg[var_47_0.id].summon_blocked == 1 then
+		return false
+	end
+
 	local var_47_1, var_47_2 = arg_47_0:MaterialEnough(var_47_0.id)
 
 	return var_47_1

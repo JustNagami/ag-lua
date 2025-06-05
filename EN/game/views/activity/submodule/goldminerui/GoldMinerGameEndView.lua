@@ -32,44 +32,42 @@ function var_0_0.AddUIListener(arg_5_0)
 		})
 	end)
 	arg_5_0:AddBtnListener(arg_5_0.continueBtn_, nil, function()
-		if arg_5_0.params_.reward_list[1] then
-			getReward(mergeReward(arg_5_0.params_.reward_list), nil, function()
-				JumpTools.OpenPageByJump("/goldMinerSelectLevelView", {
-					activityID = ActivityConst.ACTIVITY_GOLDMINER
-				})
-			end)
-		else
-			JumpTools.OpenPageByJump("/goldMinerSelectLevelView", {
-				activityID = ActivityConst.ACTIVITY_GOLDMINER
-			})
-		end
+		JumpTools.OpenPageByJump("/goldMinerSelectLevelView", {
+			activityID = ActivityConst.ACTIVITY_GOLDMINER
+		})
 	end)
 end
 
-function var_0_0.OnEnter(arg_9_0)
-	arg_9_0.stageID_ = arg_9_0.params_.stageID
-	arg_9_0.star_ = arg_9_0.params_.star
-	arg_9_0.cfg_ = ActivityGodEaterGoldminerStageCfg[arg_9_0.stageID_]
+function var_0_0.OnEnter(arg_8_0)
+	arg_8_0.stageID_ = arg_8_0.params_.stageID
+	arg_8_0.star_ = arg_8_0.params_.star
+	arg_8_0.cfg_ = ActivityGodEaterGoldminerStageCfg[arg_8_0.stageID_]
 
-	for iter_9_0 = 1, 3 do
-		arg_9_0["text" .. iter_9_0 .. "_"].text = string.format(GetTips("GOLDMINER_STAGE_POINT_NEED"), arg_9_0.cfg_.score[iter_9_0])
+	for iter_8_0 = 1, 3 do
+		arg_8_0["text" .. iter_8_0 .. "_"].text = string.format(GetTips("GOLDMINER_STAGE_POINT_NEED"), arg_8_0.cfg_.score[iter_8_0])
 
-		if iter_9_0 <= arg_9_0.star_ then
-			arg_9_0["starController" .. iter_9_0 .. "_"]:SetSelectedState("true")
+		if iter_8_0 <= arg_8_0.star_ then
+			arg_8_0["starController" .. iter_8_0 .. "_"]:SetSelectedState("true")
 		else
-			arg_9_0["starController" .. iter_9_0 .. "_"]:SetSelectedState("false")
+			arg_8_0["starController" .. iter_8_0 .. "_"]:SetSelectedState("false")
 		end
 	end
 
-	if arg_9_0.star_ <= 0 then
-		arg_9_0.stateController_:SetSelectedState("lose")
+	if arg_8_0.star_ <= 0 then
+		manager.audio:PlayEffect("minigame_activity_3_9", "minigame_activity_3_9_xinmo_lose", "")
+		arg_8_0.stateController_:SetSelectedState("lose")
 	else
-		arg_9_0.stateController_:SetSelectedState("win")
+		manager.audio:PlayEffect("minigame_activity_3_9", "minigame_activity_3_9_xinmo_win", "")
+		arg_8_0.stateController_:SetSelectedState("win")
+	end
+
+	if arg_8_0.params_.reward_list[1] then
+		getReward(mergeReward(arg_8_0.params_.reward_list))
 	end
 end
 
-function var_0_0.Dispose(arg_10_0)
-	arg_10_0.super.Dispose(arg_10_0)
+function var_0_0.Dispose(arg_9_0)
+	arg_9_0.super.Dispose(arg_9_0)
 end
 
 return var_0_0

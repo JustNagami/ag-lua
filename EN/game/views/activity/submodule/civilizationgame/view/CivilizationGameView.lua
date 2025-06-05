@@ -20,6 +20,7 @@ function var_0_0.InitUI(arg_4_0)
 	arg_4_0.mapController_ = arg_4_0.mainControllerEx_:GetController("Base")
 	arg_4_0.infoController_ = arg_4_0.mainControllerEx_:GetController("infoTips")
 	arg_4_0.sourceController_ = arg_4_0.mainControllerEx_:GetController("sourceTips")
+	arg_4_0.foodController_ = arg_4_0.foodControllerEx_:GetController("state")
 end
 
 function var_0_0.AddUIListener(arg_5_0)
@@ -65,6 +66,8 @@ function var_0_0.OnEnter(arg_12_0)
 
 	CivilizationGameTools.PreLoadCfg(arg_12_0.gameType_)
 	arg_12_0:RefreshUI()
+	SetActive(arg_12_0.foodTipsGo_, false)
+	arg_12_0.foodController_:SetSelectedIndex(0)
 
 	local var_12_0 = false
 
@@ -84,7 +87,10 @@ function var_0_0.RefreshUI(arg_13_0)
 	local var_13_2 = ActivityCivilizationSettingCfg[var_13_1]
 
 	arg_13_0.titleText_.text = var_13_2.note
-	arg_13_0.winText_.text = GetTips("GODEATER_CIVILIZATION_GAME_VICTORY_DESC")
+
+	local var_13_3 = ActivityCivilizationStageCfg[arg_13_0.stageID_]
+
+	arg_13_0.winText_.text = var_13_3.victory_desc
 end
 
 function var_0_0.OnTop(arg_14_0)
@@ -99,6 +105,7 @@ function var_0_0.OnTop(arg_14_0)
 			end
 		})
 	end)
+	arg_14_0.infoController_:SetSelectedState("off")
 end
 
 function var_0_0.OnExit(arg_17_0)
@@ -181,9 +188,14 @@ function var_0_0.OnCivilizationAgeChange(arg_23_0, arg_23_1, arg_23_2)
 	arg_23_0.titleText_.text = var_23_1.note
 end
 
-function var_0_0.Dispose(arg_24_0)
-	var_0_0.super.Dispose(arg_24_0)
-	Object.Destroy(arg_24_0.gameObject_)
+function var_0_0.OnCivilizationFoodShortage(arg_24_0, arg_24_1)
+	SetActive(arg_24_0.foodTipsGo_, arg_24_1)
+	arg_24_0.foodController_:SetSelectedIndex(arg_24_1 and 1 or 0)
+end
+
+function var_0_0.Dispose(arg_25_0)
+	var_0_0.super.Dispose(arg_25_0)
+	Object.Destroy(arg_25_0.gameObject_)
 end
 
 return var_0_0

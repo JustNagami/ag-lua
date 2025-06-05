@@ -8719,7 +8719,7 @@
 		},
 		greeting_delay = {
 			0,
-			0,
+			330,
 			0
 		},
 		greeting_weight = {
@@ -8743,10 +8743,10 @@
 		},
 		mainTouch_delay = {
 			0,
-			0,
-			0,
-			0,
-			0
+			165,
+			165,
+			495,
+			165
 		},
 		mainTouch_weight = {
 			1,
@@ -8762,7 +8762,7 @@
 			"1045_qc"
 		},
 		mainQuickTouch_delay = {
-			0
+			330
 		},
 		shaking = {
 			"shake"
@@ -8771,7 +8771,7 @@
 			"1045_shake"
 		},
 		shaking_delay = {
-			0
+			330
 		},
 		showing = {
 			"assistant"
@@ -8780,7 +8780,7 @@
 			"1045_assistant"
 		},
 		showing_delay = {
-			0
+			660
 		},
 		idle = {
 			"idle",
@@ -8793,8 +8793,8 @@
 			"1045_idle3"
 		},
 		idle_delay = {
-			0,
-			0,
+			165,
+			2640,
 			0
 		},
 		idle_weight = {
@@ -8837,9 +8837,9 @@
 			"1046_greet3"
 		},
 		greeting_delay = {
-			0,
-			0,
-			0
+			4950,
+			4950,
+			4950
 		},
 		greeting_weight = {
 			1,
@@ -8861,10 +8861,10 @@
 			"1046_talk5"
 		},
 		mainTouch_delay = {
-			0,
-			0,
-			0,
-			0,
+			330,
+			660,
+			1254,
+			330,
 			0
 		},
 		mainTouch_weight = {
@@ -8881,7 +8881,7 @@
 			"1046_qc"
 		},
 		mainQuickTouch_delay = {
-			0
+			330
 		},
 		shaking = {
 			"shake"
@@ -8890,7 +8890,7 @@
 			"1046_shake"
 		},
 		shaking_delay = {
-			0
+			330
 		},
 		showing = {
 			"assistant"
@@ -8899,7 +8899,7 @@
 			"1046_assistant"
 		},
 		showing_delay = {
-			0
+			990
 		},
 		idle = {
 			"idle",
@@ -8912,9 +8912,9 @@
 			"1046_idle3"
 		},
 		idle_delay = {
-			0,
-			0,
-			0
+			990,
+			495,
+			660
 		},
 		idle_weight = {
 			1,

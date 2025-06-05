@@ -1348,19 +1348,19 @@
 		name = "913148ca5ab3e0f520bcc1198bb5202c",
 		ai_level = 4,
 		hero_list = "",
-		drop_lib_id = 0,
+		drop_lib_id = 12024582,
 		background_1 = "I18c",
 		tips = "e7b421a41f9bd5d10ccb827b870c28f8",
 		map = "5250301",
 		need_default_team = 1,
-		user_exp = 0,
+		user_exp = 30,
 		id = 5250301,
-		hero_exp = 0,
+		hero_exp = 60,
 		level = 1,
 		attribute_factor = {
 			1000,
 			1000,
-			50000
+			30000
 		},
 		team_type = {
 			201,
@@ -1372,19 +1372,19 @@
 		name = "377d4b482cee79c6ae468664c36ee5cb",
 		ai_level = 4,
 		hero_list = "",
-		drop_lib_id = 0,
+		drop_lib_id = 12024583,
 		background_1 = "I18c",
 		tips = "151c08c6d3afaa8ac72e849d2f4c38f8",
 		map = "5250302",
 		need_default_team = 1,
-		user_exp = 0,
+		user_exp = 30,
 		id = 5250302,
-		hero_exp = 0,
+		hero_exp = 60,
 		level = 1,
 		attribute_factor = {
 			1000,
 			1000,
-			25000
+			15000
 		},
 		team_type = {
 			201,
@@ -1396,19 +1396,19 @@
 		name = "0ef5078c79aaab7b29ed98ee7ecf3407",
 		ai_level = 4,
 		hero_list = "",
-		drop_lib_id = 0,
+		drop_lib_id = 12024578,
 		background_1 = "I18c",
 		tips = "cc5f0e356cd03ea0eecd396dac07353a",
 		map = "5250303",
 		need_default_team = 1,
-		user_exp = 0,
+		user_exp = 30,
 		id = 5250303,
-		hero_exp = 0,
+		hero_exp = 60,
 		level = 1,
 		attribute_factor = {
 			1000,
 			1000,
-			27000
+			17000
 		},
 		team_type = {
 			201,
@@ -1420,7 +1420,7 @@
 		name = "22293f9db0428ba2cbe17e30c5d9b9f7",
 		ai_level = 4,
 		hero_list = "",
-		drop_lib_id = 0,
+		drop_lib_id = 12024579,
 		background_1 = "A07",
 		tips = "dfbaa09192176ab1cf904e12a80d6949",
 		map = "5250304",
@@ -1432,7 +1432,7 @@
 		attribute_factor = {
 			1000,
 			1000,
-			14500
+			8000
 		},
 		team_type = {
 			201,

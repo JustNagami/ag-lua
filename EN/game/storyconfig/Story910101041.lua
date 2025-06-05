@@ -105,7 +105,7 @@
 
 				local var_4_24 = var_4_23:GetComponent(typeof(Image))
 
-				var_4_24.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_4_22)
+				var_4_24.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. "1011_split_1")
 
 				var_4_24:SetNativeSize()
 
@@ -289,7 +289,7 @@
 
 				local var_10_2 = var_10_1:GetComponent(typeof(Image))
 
-				var_10_2.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_10_0)
+				var_10_2.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. "1011_split_5")
 
 				var_10_2:SetNativeSize()
 
@@ -419,7 +419,7 @@
 
 				local var_14_2 = var_14_1:GetComponent(typeof(Image))
 
-				var_14_2.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_14_0)
+				var_14_2.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. "1011_split_2")
 
 				var_14_2:SetNativeSize()
 

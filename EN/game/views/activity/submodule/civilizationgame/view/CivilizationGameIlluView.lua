@@ -11,6 +11,8 @@ end
 function var_0_0.Init(arg_3_0)
 	arg_3_0:InitUI()
 
+	arg_3_0.selectID_ = 1
+	arg_3_0.selectType = 1
 	arg_3_0.allItems = {}
 	arg_3_0.gridItemList_ = {}
 	arg_3_0.hexItemList_1 = {}
@@ -25,7 +27,6 @@ function var_0_0.InitUI(arg_4_0)
 end
 
 function var_0_0.OnEnter(arg_5_0)
-	arg_5_0.selectID = 0
 	arg_5_0.gridIlluIDList_ = {}
 	arg_5_0.hexIlluIDList_1 = {}
 	arg_5_0.hexIlluIDList_2 = {}
@@ -34,7 +35,8 @@ function var_0_0.OnEnter(arg_5_0)
 
 	arg_5_0:ParseData()
 	arg_5_0:RefreshItem()
-	arg_5_0:ChooseItem(1, 1)
+	arg_5_0:ChooseItem(arg_5_0.selectType, arg_5_0.selectID_)
+	arg_5_0:RefreshUI(arg_5_0.selectType)
 end
 
 function var_0_0.ParseData(arg_6_0)
@@ -128,6 +130,7 @@ function var_0_0.ChooseItem(arg_14_0, arg_14_1, arg_14_2)
 	arg_14_0.rightAnimator_:Play("UI_GodEaterUI_Com_rightbg01_cx", 0, 0)
 
 	arg_14_0.selectID_ = arg_14_2
+	arg_14_0.selectType = arg_14_1
 
 	for iter_14_0, iter_14_1 in ipairs(arg_14_0.allItems) do
 		if iter_14_1:GetID() == arg_14_0.selectID_ then
@@ -159,9 +162,9 @@ function var_0_0.RefreshUI(arg_15_0, arg_15_1)
 		arg_15_0.hexImg_.sprite = getSpriteViaConfig("CivilizationGame", var_15_0.picture)
 
 		if arg_15_1 == 2 then
-			arg_15_0.tagText_.text = GetTips("GODEATER_CIVILIZATION_FACTOR_TYPE_3")
-		else
 			arg_15_0.tagText_.text = GetTips("GODEATER_CIVILIZATION_FACTOR_TYPE_4")
+		else
+			arg_15_0.tagText_.text = GetTips("GODEATER_CIVILIZATION_FACTOR_TYPE_3")
 		end
 	end
 
@@ -174,9 +177,9 @@ function var_0_0.RefreshUI(arg_15_0, arg_15_1)
 	arg_15_0.titleText_.text = var_15_0.name
 	arg_15_0.descText_.text = var_15_0.desc
 	arg_15_0.gridTitleText_.text = GetTips("GODEATER_CIVILIZATION_FACTOR_TYPE_1")
-	arg_15_0.hex1TitleText_.text = GetTips("GODEATER_CIVILIZATION_FACTOR_TYPE_2")
+	arg_15_0.hex1TitleText_.text = GetTips("GODEATER_CIVILIZATION_FACTOR_TYPE_4")
 	arg_15_0.hex2TitleText_.text = GetTips("GODEATER_CIVILIZATION_FACTOR_TYPE_3")
-	arg_15_0.techTitleText_.text = GetTips("GODEATER_CIVILIZATION_FACTOR_TYPE_4")
+	arg_15_0.techTitleText_.text = GetTips("GODEATER_CIVILIZATION_FACTOR_TYPE_2")
 end
 
 function var_0_0.OnTop(arg_16_0)

@@ -256,6 +256,16 @@
 	["game.dorm.interacts.1041.1041_caliburn"] = {
 		require("game.dorm.interacts.1041.1041_caliburn")
 	},
+	["game.dorm.interacts.1045.fx_HZ05_zhuanshu_yalisha"] = {
+		require("game.dorm.interacts.1045.fx_HZ05_zhuanshu_yalisha")
+	},
+	["game.dorm.interacts.1046.fx_HZ05_9046_xueer_result"] = {
+		require("game.dorm.interacts.1046.fx_HZ05_9046_xueer_result1"),
+		require("game.dorm.interacts.1046.fx_HZ05_9046_xueer_result2")
+	},
+	["game.dorm.interacts.1046.fx_HZ05_9046_xueer_stand"] = {
+		require("game.dorm.interacts.1046.fx_HZ05_9046_xueer_stand")
+	},
 	["game.dorm.interacts.1048.1048_jibanjianceyi"] = {
 		require("game.dorm.interacts.1048.1048_jibanjianceyi")
 	},

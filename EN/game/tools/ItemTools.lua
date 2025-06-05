@@ -378,6 +378,10 @@ function var_0_0.GetItemSourceList(arg_18_0)
 			table.remove(var_18_0, iter_18_4)
 
 			_, var_18_4 = SourceTool.GetJumpDataByServantSpecialType(arg_18_0)
+		elseif var_18_0[iter_18_4] and var_18_0[iter_18_4][1] == ViewConst.JUMP_SPECIAL_ID.GODEATER_SPECIAL_SERVANT then
+			table.remove(var_18_0, iter_18_4)
+
+			_, var_18_4 = SourceTool.GetGodEaterSourece(arg_18_0)
 		elseif var_18_0[iter_18_4] and var_18_0[iter_18_4][1] == ViewConst.JUMP_SPECIAL_ID.EQUIP_SPECIAL_SOURCE then
 			local var_18_6 = SourceTool.GetJumpDataByEquipSpecialType(var_18_0, arg_18_0)
 

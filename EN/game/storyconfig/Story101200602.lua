@@ -232,8 +232,15 @@
 				arg_1_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_1_1:RecordName(arg_1_1.leftNameTxt_.text)
-				SetActive(arg_1_1.iconTrs_.gameObject, false)
+				SetActive(arg_1_1.iconTrs_.gameObject, true)
+				arg_1_1.iconController_:SetSelectedState("hero")
+
+				arg_1_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_1_1.callingController_:SetSelectedState("normal")
+
+				arg_1_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_1_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_4_43 = arg_1_1:GetWordFromCfg(120062001)
 				local var_4_44 = arg_1_1:FormatText(var_4_43.content)
@@ -547,8 +554,15 @@
 				arg_15_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_15_1:RecordName(arg_15_1.leftNameTxt_.text)
-				SetActive(arg_15_1.iconTrs_.gameObject, false)
+				SetActive(arg_15_1.iconTrs_.gameObject, true)
+				arg_15_1.iconController_:SetSelectedState("hero")
+
+				arg_15_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_15_1.callingController_:SetSelectedState("normal")
+
+				arg_15_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_15_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_18_3 = arg_15_1:GetWordFromCfg(120062004)
 				local var_18_4 = arg_15_1:FormatText(var_18_3.content)
@@ -635,8 +649,15 @@
 				arg_19_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_19_1:RecordName(arg_19_1.leftNameTxt_.text)
-				SetActive(arg_19_1.iconTrs_.gameObject, false)
+				SetActive(arg_19_1.iconTrs_.gameObject, true)
+				arg_19_1.iconController_:SetSelectedState("hero")
+
+				arg_19_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_19_1.callingController_:SetSelectedState("normal")
+
+				arg_19_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_19_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_22_3 = arg_19_1:GetWordFromCfg(120062005)
 				local var_22_4 = arg_19_1:FormatText(var_22_3.content)
@@ -887,8 +908,15 @@
 				arg_31_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_31_1:RecordName(arg_31_1.leftNameTxt_.text)
-				SetActive(arg_31_1.iconTrs_.gameObject, false)
+				SetActive(arg_31_1.iconTrs_.gameObject, true)
+				arg_31_1.iconController_:SetSelectedState("hero")
+
+				arg_31_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_31_1.callingController_:SetSelectedState("normal")
+
+				arg_31_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_31_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_34_3 = arg_31_1:GetWordFromCfg(120062008)
 				local var_34_4 = arg_31_1:FormatText(var_34_3.content)
@@ -975,8 +1003,15 @@
 				arg_35_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_35_1:RecordName(arg_35_1.leftNameTxt_.text)
-				SetActive(arg_35_1.iconTrs_.gameObject, false)
+				SetActive(arg_35_1.iconTrs_.gameObject, true)
+				arg_35_1.iconController_:SetSelectedState("hero")
+
+				arg_35_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_35_1.callingController_:SetSelectedState("normal")
+
+				arg_35_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_35_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_38_3 = arg_35_1:GetWordFromCfg(120062009)
 				local var_38_4 = arg_35_1:FormatText(var_38_3.content)
@@ -1332,8 +1367,15 @@
 				arg_51_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_51_1:RecordName(arg_51_1.leftNameTxt_.text)
-				SetActive(arg_51_1.iconTrs_.gameObject, false)
+				SetActive(arg_51_1.iconTrs_.gameObject, true)
+				arg_51_1.iconController_:SetSelectedState("hero")
+
+				arg_51_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_51_1.callingController_:SetSelectedState("normal")
+
+				arg_51_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_51_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_54_3 = arg_51_1:GetWordFromCfg(120062013)
 				local var_54_4 = arg_51_1:FormatText(var_54_3.content)
@@ -1789,8 +1831,15 @@
 				arg_67_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_67_1:RecordName(arg_67_1.leftNameTxt_.text)
-				SetActive(arg_67_1.iconTrs_.gameObject, false)
+				SetActive(arg_67_1.iconTrs_.gameObject, true)
+				arg_67_1.iconController_:SetSelectedState("hero")
+
+				arg_67_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_67_1.callingController_:SetSelectedState("normal")
+
+				arg_67_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_67_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_70_15 = arg_67_1:GetWordFromCfg(120062017)
 				local var_70_16 = arg_67_1:FormatText(var_70_15.content)
@@ -1959,8 +2008,15 @@
 				arg_75_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_75_1:RecordName(arg_75_1.leftNameTxt_.text)
-				SetActive(arg_75_1.iconTrs_.gameObject, false)
+				SetActive(arg_75_1.iconTrs_.gameObject, true)
+				arg_75_1.iconController_:SetSelectedState("hero")
+
+				arg_75_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_75_1.callingController_:SetSelectedState("normal")
+
+				arg_75_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_75_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_78_3 = arg_75_1:GetWordFromCfg(120062019)
 				local var_78_4 = arg_75_1:FormatText(var_78_3.content)
@@ -2253,8 +2309,15 @@
 				arg_87_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_87_1:RecordName(arg_87_1.leftNameTxt_.text)
-				SetActive(arg_87_1.iconTrs_.gameObject, false)
+				SetActive(arg_87_1.iconTrs_.gameObject, true)
+				arg_87_1.iconController_:SetSelectedState("hero")
+
+				arg_87_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_87_1.callingController_:SetSelectedState("normal")
+
+				arg_87_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_87_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_90_3 = arg_87_1:GetWordFromCfg(120062022)
 				local var_90_4 = arg_87_1:FormatText(var_90_3.content)
@@ -2868,8 +2931,15 @@
 				arg_113_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_113_1:RecordName(arg_113_1.leftNameTxt_.text)
-				SetActive(arg_113_1.iconTrs_.gameObject, false)
+				SetActive(arg_113_1.iconTrs_.gameObject, true)
+				arg_113_1.iconController_:SetSelectedState("hero")
+
+				arg_113_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_113_1.callingController_:SetSelectedState("normal")
+
+				arg_113_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_113_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_116_3 = arg_113_1:GetWordFromCfg(120062028)
 				local var_116_4 = arg_113_1:FormatText(var_116_3.content)
@@ -3775,8 +3845,15 @@
 				arg_147_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_147_1:RecordName(arg_147_1.leftNameTxt_.text)
-				SetActive(arg_147_1.iconTrs_.gameObject, false)
+				SetActive(arg_147_1.iconTrs_.gameObject, true)
+				arg_147_1.iconController_:SetSelectedState("hero")
+
+				arg_147_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_147_1.callingController_:SetSelectedState("normal")
+
+				arg_147_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_147_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_150_3 = arg_147_1:GetWordFromCfg(120062036)
 				local var_150_4 = arg_147_1:FormatText(var_150_3.content)
@@ -4132,8 +4209,15 @@
 				arg_163_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_163_1:RecordName(arg_163_1.leftNameTxt_.text)
-				SetActive(arg_163_1.iconTrs_.gameObject, false)
+				SetActive(arg_163_1.iconTrs_.gameObject, true)
+				arg_163_1.iconController_:SetSelectedState("hero")
+
+				arg_163_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_163_1.callingController_:SetSelectedState("normal")
+
+				arg_163_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_163_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_166_3 = arg_163_1:GetWordFromCfg(120062040)
 				local var_166_4 = arg_163_1:FormatText(var_166_3.content)
@@ -4464,71 +4548,75 @@
 			local var_178_24 = "1071ui_story"
 
 			if arg_175_1.actors_[var_178_24] == nil then
-				local var_178_25 = Object.Instantiate(Asset.Load("Char/" .. var_178_24), arg_175_1.stage_.transform)
+				local var_178_25 = Asset.Load("Char/" .. "1071ui_story")
 
-				var_178_25.name = var_178_24
-				var_178_25.transform.localPosition = Vector3.New(0, 100, 0)
-				arg_175_1.actors_[var_178_24] = var_178_25
+				if not isNil(var_178_25) then
+					local var_178_26 = Object.Instantiate(Asset.Load("Char/" .. "1071ui_story"), arg_175_1.stage_.transform)
 
-				local var_178_26 = var_178_25:GetComponentInChildren(typeof(CharacterEffect))
+					var_178_26.name = var_178_24
+					var_178_26.transform.localPosition = Vector3.New(0, 100, 0)
+					arg_175_1.actors_[var_178_24] = var_178_26
 
-				var_178_26.enabled = true
+					local var_178_27 = var_178_26:GetComponentInChildren(typeof(CharacterEffect))
 
-				local var_178_27 = GameObjectTools.GetOrAddComponent(var_178_25, typeof(DynamicBoneHelper))
+					var_178_27.enabled = true
 
-				if var_178_27 then
-					var_178_27:EnableDynamicBone(false)
+					local var_178_28 = GameObjectTools.GetOrAddComponent(var_178_26, typeof(DynamicBoneHelper))
+
+					if var_178_28 then
+						var_178_28:EnableDynamicBone(false)
+					end
+
+					arg_175_1:ShowWeapon(var_178_27.transform, false)
+
+					arg_175_1.var_[var_178_24 .. "Animator"] = var_178_27.gameObject:GetComponent(typeof(UnityEngine.Animator))
+					arg_175_1.var_[var_178_24 .. "Animator"].applyRootMotion = true
+					arg_175_1.var_[var_178_24 .. "LipSync"] = var_178_27.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
 				end
-
-				arg_175_1:ShowWeapon(var_178_26.transform, false)
-
-				arg_175_1.var_[var_178_24 .. "Animator"] = var_178_26.gameObject:GetComponent(typeof(UnityEngine.Animator))
-				arg_175_1.var_[var_178_24 .. "Animator"].applyRootMotion = true
-				arg_175_1.var_[var_178_24 .. "LipSync"] = var_178_26.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
 			end
 
-			local var_178_28 = 0
+			local var_178_29 = 0
 
-			if var_178_28 < arg_175_1.time_ and arg_175_1.time_ <= var_178_28 + arg_178_0 then
+			if var_178_29 < arg_175_1.time_ and arg_175_1.time_ <= var_178_29 + arg_178_0 then
 				arg_175_1:PlayTimeline("1071ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface1201cva")
 			end
 
-			local var_178_29 = manager.ui.mainCamera.transform
-			local var_178_30 = 0
+			local var_178_30 = manager.ui.mainCamera.transform
+			local var_178_31 = 0
 
-			if var_178_30 < arg_175_1.time_ and arg_175_1.time_ <= var_178_30 + arg_178_0 then
-				arg_175_1.var_.shakeOldPos = var_178_29.localPosition
+			if var_178_31 < arg_175_1.time_ and arg_175_1.time_ <= var_178_31 + arg_178_0 then
+				arg_175_1.var_.shakeOldPos = var_178_30.localPosition
 			end
 
-			local var_178_31 = 0.6
+			local var_178_32 = 0.6
 
-			if var_178_30 <= arg_175_1.time_ and arg_175_1.time_ < var_178_30 + var_178_31 then
-				local var_178_32 = (arg_175_1.time_ - var_178_30) / 0.066
-				local var_178_33, var_178_34 = math.modf(var_178_32)
+			if var_178_31 <= arg_175_1.time_ and arg_175_1.time_ < var_178_31 + var_178_32 then
+				local var_178_33 = (arg_175_1.time_ - var_178_31) / 0.066
+				local var_178_34, var_178_35 = math.modf(var_178_33)
 
-				var_178_29.localPosition = Vector3.New(var_178_34 * 0.13, var_178_34 * 0.13, var_178_34 * 0.13) + arg_175_1.var_.shakeOldPos
+				var_178_30.localPosition = Vector3.New(var_178_35 * 0.13, var_178_35 * 0.13, var_178_35 * 0.13) + arg_175_1.var_.shakeOldPos
 			end
 
-			if arg_175_1.time_ >= var_178_30 + var_178_31 and arg_175_1.time_ < var_178_30 + var_178_31 + arg_178_0 then
-				var_178_29.localPosition = arg_175_1.var_.shakeOldPos
+			if arg_175_1.time_ >= var_178_31 + var_178_32 and arg_175_1.time_ < var_178_31 + var_178_32 + arg_178_0 then
+				var_178_30.localPosition = arg_175_1.var_.shakeOldPos
 			end
 
-			local var_178_35 = 0
+			local var_178_36 = 0
 
-			if var_178_35 < arg_175_1.time_ and arg_175_1.time_ <= var_178_35 + arg_178_0 then
+			if var_178_36 < arg_175_1.time_ and arg_175_1.time_ <= var_178_36 + arg_178_0 then
 				arg_175_1.allBtn_.enabled = false
 			end
 
-			local var_178_36 = 0.6
+			local var_178_37 = 0.6
 
-			if arg_175_1.time_ >= var_178_35 + var_178_36 and arg_175_1.time_ < var_178_35 + var_178_36 + arg_178_0 then
+			if arg_175_1.time_ >= var_178_36 + var_178_37 and arg_175_1.time_ < var_178_36 + var_178_37 + arg_178_0 then
 				arg_175_1.allBtn_.enabled = true
 			end
 
-			local var_178_37 = 0
-			local var_178_38 = 0.75
+			local var_178_38 = 0
+			local var_178_39 = 0.75
 
-			if var_178_37 < arg_175_1.time_ and arg_175_1.time_ <= var_178_37 + arg_178_0 then
+			if var_178_38 < arg_175_1.time_ and arg_175_1.time_ <= var_178_38 + arg_178_0 then
 				arg_175_1.talkMaxDuration = 0
 				arg_175_1.dialogCg_.alpha = 1
 
@@ -4542,26 +4630,26 @@
 				SetActive(arg_175_1.iconTrs_.gameObject, false)
 				arg_175_1.callingController_:SetSelectedState("normal")
 
-				local var_178_39 = arg_175_1:GetWordFromCfg(120062043)
-				local var_178_40 = arg_175_1:FormatText(var_178_39.content)
+				local var_178_40 = arg_175_1:GetWordFromCfg(120062043)
+				local var_178_41 = arg_175_1:FormatText(var_178_40.content)
 
-				arg_175_1.text_.text = var_178_40
+				arg_175_1.text_.text = var_178_41
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_175_1.text_)
 
-				local var_178_41 = 30
-				local var_178_42 = utf8.len(var_178_40)
-				local var_178_43 = var_178_41 <= 0 and var_178_38 or var_178_38 * (var_178_42 / var_178_41)
+				local var_178_42 = 30
+				local var_178_43 = utf8.len(var_178_41)
+				local var_178_44 = var_178_42 <= 0 and var_178_39 or var_178_39 * (var_178_43 / var_178_42)
 
-				if var_178_43 > 0 and var_178_38 < var_178_43 then
-					arg_175_1.talkMaxDuration = var_178_43
+				if var_178_44 > 0 and var_178_39 < var_178_44 then
+					arg_175_1.talkMaxDuration = var_178_44
 
-					if var_178_43 + var_178_37 > arg_175_1.duration_ then
-						arg_175_1.duration_ = var_178_43 + var_178_37
+					if var_178_44 + var_178_38 > arg_175_1.duration_ then
+						arg_175_1.duration_ = var_178_44 + var_178_38
 					end
 				end
 
-				arg_175_1.text_.text = var_178_40
+				arg_175_1.text_.text = var_178_41
 				arg_175_1.typewritter.percent = 0
 
 				arg_175_1.typewritter:SetDirty()
@@ -4569,15 +4657,15 @@
 				arg_175_1:RecordContent(arg_175_1.text_.text)
 			end
 
-			local var_178_44 = math.max(var_178_38, arg_175_1.talkMaxDuration)
+			local var_178_45 = math.max(var_178_39, arg_175_1.talkMaxDuration)
 
-			if var_178_37 <= arg_175_1.time_ and arg_175_1.time_ < var_178_37 + var_178_44 then
-				arg_175_1.typewritter.percent = (arg_175_1.time_ - var_178_37) / var_178_44
+			if var_178_38 <= arg_175_1.time_ and arg_175_1.time_ < var_178_38 + var_178_45 then
+				arg_175_1.typewritter.percent = (arg_175_1.time_ - var_178_38) / var_178_45
 
 				arg_175_1.typewritter:SetDirty()
 			end
 
-			if arg_175_1.time_ >= var_178_37 + var_178_44 and arg_175_1.time_ < var_178_37 + var_178_44 + arg_178_0 then
+			if arg_175_1.time_ >= var_178_38 + var_178_45 and arg_175_1.time_ < var_178_38 + var_178_45 + arg_178_0 then
 				arg_175_1.typewritter.percent = 1
 
 				arg_175_1.typewritter:SetDirty()
@@ -4666,21 +4754,21 @@
 			local var_182_10 = arg_179_1.actors_["1071ui_story"]
 			local var_182_11 = 0
 
-			if var_182_11 < arg_179_1.time_ and arg_179_1.time_ <= var_182_11 + arg_182_0 and arg_179_1.var_.characterEffect1071ui_story == nil then
+			if var_182_11 < arg_179_1.time_ and arg_179_1.time_ <= var_182_11 + arg_182_0 and not isNil(var_182_10) and arg_179_1.var_.characterEffect1071ui_story == nil then
 				arg_179_1.var_.characterEffect1071ui_story = var_182_10:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_182_12 = 0.2
 
-			if var_182_11 <= arg_179_1.time_ and arg_179_1.time_ < var_182_11 + var_182_12 then
+			if var_182_11 <= arg_179_1.time_ and arg_179_1.time_ < var_182_11 + var_182_12 and not isNil(var_182_10) then
 				local var_182_13 = (arg_179_1.time_ - var_182_11) / var_182_12
 
-				if arg_179_1.var_.characterEffect1071ui_story then
+				if arg_179_1.var_.characterEffect1071ui_story and not isNil(var_182_10) then
 					arg_179_1.var_.characterEffect1071ui_story.fillFlat = false
 				end
 			end
 
-			if arg_179_1.time_ >= var_182_11 + var_182_12 and arg_179_1.time_ < var_182_11 + var_182_12 + arg_182_0 and arg_179_1.var_.characterEffect1071ui_story then
+			if arg_179_1.time_ >= var_182_11 + var_182_12 and arg_179_1.time_ < var_182_11 + var_182_12 + arg_182_0 and not isNil(var_182_10) and arg_179_1.var_.characterEffect1071ui_story then
 				arg_179_1.var_.characterEffect1071ui_story.fillFlat = false
 			end
 
@@ -4805,16 +4893,16 @@
 			local var_186_4 = arg_183_1.actors_["1071ui_story"]
 			local var_186_5 = 0
 
-			if var_186_5 < arg_183_1.time_ and arg_183_1.time_ <= var_186_5 + arg_186_0 and arg_183_1.var_.characterEffect1071ui_story == nil then
+			if var_186_5 < arg_183_1.time_ and arg_183_1.time_ <= var_186_5 + arg_186_0 and not isNil(var_186_4) and arg_183_1.var_.characterEffect1071ui_story == nil then
 				arg_183_1.var_.characterEffect1071ui_story = var_186_4:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_186_6 = 0.2
 
-			if var_186_5 <= arg_183_1.time_ and arg_183_1.time_ < var_186_5 + var_186_6 then
+			if var_186_5 <= arg_183_1.time_ and arg_183_1.time_ < var_186_5 + var_186_6 and not isNil(var_186_4) then
 				local var_186_7 = (arg_183_1.time_ - var_186_5) / var_186_6
 
-				if arg_183_1.var_.characterEffect1071ui_story then
+				if arg_183_1.var_.characterEffect1071ui_story and not isNil(var_186_4) then
 					local var_186_8 = Mathf.Lerp(0, 0.5, var_186_7)
 
 					arg_183_1.var_.characterEffect1071ui_story.fillFlat = true
@@ -4822,7 +4910,7 @@
 				end
 			end
 
-			if arg_183_1.time_ >= var_186_5 + var_186_6 and arg_183_1.time_ < var_186_5 + var_186_6 + arg_186_0 and arg_183_1.var_.characterEffect1071ui_story then
+			if arg_183_1.time_ >= var_186_5 + var_186_6 and arg_183_1.time_ < var_186_5 + var_186_6 + arg_186_0 and not isNil(var_186_4) and arg_183_1.var_.characterEffect1071ui_story then
 				local var_186_9 = 0.5
 
 				arg_183_1.var_.characterEffect1071ui_story.fillFlat = true
@@ -4930,8 +5018,15 @@
 				arg_187_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_187_1:RecordName(arg_187_1.leftNameTxt_.text)
-				SetActive(arg_187_1.iconTrs_.gameObject, false)
+				SetActive(arg_187_1.iconTrs_.gameObject, true)
+				arg_187_1.iconController_:SetSelectedState("hero")
+
+				arg_187_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_187_1.callingController_:SetSelectedState("normal")
+
+				arg_187_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_187_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_190_3 = arg_187_1:GetWordFromCfg(120062046)
 				local var_190_4 = arg_187_1:FormatText(var_190_3.content)

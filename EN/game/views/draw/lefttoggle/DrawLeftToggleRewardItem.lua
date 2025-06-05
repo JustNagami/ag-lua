@@ -10,6 +10,8 @@ function var_0_0.Ctor(arg_2_0, arg_2_1)
 
 	arg_2_0:BindCfgUI()
 	arg_2_0:AddListeners()
+
+	arg_2_0.selectController_ = arg_2_0.controllerEx_:GetController("sel")
 end
 
 function var_0_0.Dispose(arg_3_0)
@@ -25,19 +27,19 @@ function var_0_0.AddListeners(arg_4_0)
 end
 
 function var_0_0.SetData(arg_5_0, arg_5_1)
-	local var_5_0 = ActivityDrawBonusCfg[arg_5_1].reward[1][1]
+	local var_5_0 = ActivityDrawBonusCfg[arg_5_1]
 
-	ItemTools.GetItemSpriteAsync(var_5_0, function(arg_6_0, arg_6_1)
-		if arg_5_0.gameObject_ == nil then
-			return
-		end
+	arg_5_0.icon_.sprite = getSprite("Atlas/PoolAtlas", var_5_0.pool_tag_img)
 
-		if arg_6_0 == var_5_0 then
-			arg_5_0.icon_.sprite = arg_6_1
-		end
+	arg_5_0:Show(true)
+end
 
-		arg_5_0:Show(true)
-	end, nil, true)
+function var_0_0.RefreshSelectState(arg_6_0, arg_6_1)
+	if arg_6_1 then
+		arg_6_0.selectController_:SetSelectedState("on")
+	else
+		arg_6_0.selectController_:SetSelectedState("off")
+	end
 end
 
 function var_0_0.Show(arg_7_0, arg_7_1)

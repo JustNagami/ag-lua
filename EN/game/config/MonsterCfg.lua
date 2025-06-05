@@ -1407,6 +1407,28 @@
 		id = 2125,
 		information2 = "3c3f8a0863b6a4c7eb40aac0bbb99592"
 	},
+	[2129] = {
+		skill3 = "",
+		skill2 = "8240ec5d1a26dd7f0267c9cf05f03740",
+		information3 = "6aba040c03af5ecd96cb602e40f3ee28",
+		type = 0,
+		model_name = "2129_tpose",
+		skill_desc6 = "",
+		desc = "869c78bf0ad19c93b0cd11161080be5f",
+		race = 10,
+		skill_desc2 = "21aa7ad552f60d1db1b567f5e19cbf09",
+		skill4 = "",
+		skill_desc5 = "",
+		skill_desc3 = "",
+		skill5 = "",
+		information1 = "5136aca63b4c45767c7decf522f06756",
+		skill_desc1 = "d97c03e321274b09f978e7c541cba8f3",
+		skill_desc4 = "",
+		skill6 = "",
+		skill1 = "6f164f4b0d0a31dd61892ddf7447f8a6",
+		id = 2129,
+		information2 = "c4f08e24265e38952ff02cc647c7d822"
+	},
 	[3004] = {
 		skill3 = "3c4fa7faa01065eeeff6583d04978494",
 		skill2 = "6eae79e00d86b5816946bdc67540ae21",
@@ -2199,6 +2221,28 @@
 		id = 3049,
 		information2 = "bb230d1b9ce6f61527791feb1bb4762c"
 	},
+	[3050] = {
+		skill3 = "",
+		skill2 = "5e0703c6ba4b36687d94ec6449291707",
+		information3 = "f08fd0ca285ff7d55d59589de1ed4386",
+		type = 1,
+		model_name = "3050_tpose",
+		skill_desc6 = "",
+		desc = "f359fedff217e591b596c93749d00b67",
+		race = 10,
+		skill_desc2 = "26bf312931236d8e364db88011e52b53",
+		skill4 = "",
+		skill_desc5 = "",
+		skill_desc3 = "",
+		skill5 = "",
+		information1 = "def222868144df2acb56fe40fbeec5e7",
+		skill_desc1 = "d67ca3f41128f3153b1f162fa1fe9284",
+		skill_desc4 = "",
+		skill6 = "",
+		skill1 = "64f9d6cc0fce7bce380979050eac20c9",
+		id = 3050,
+		information2 = "0ddd2a33ce6590d16b2faca1232ee8a9"
+	},
 	[3044] = {
 		skill3 = "fa4c5d17b4d2aec685ee56a8021d8fc5",
 		skill2 = "b17edffc54648feece635f1ed9600df7",
@@ -2815,14 +2859,39 @@
 		id = 4043,
 		information2 = "7361195e5cca4bcb4700e1e51b8ccdfa"
 	},
+	[4045] = {
+		skill3 = "ae079f0ec2c71b1e7b220720734db6d5",
+		skill2 = "f5d320a7c078e2f6127c82d7f252e55e",
+		information3 = "5496ef65cee4f6577fe7a98882684669",
+		type = 2,
+		model_name = "4045_tpose",
+		skill_desc6 = "",
+		desc = "4457a487eeec4191a47d3a32918196f6",
+		race = 10,
+		skill_desc2 = "097fa150647aa64384e846f2eb6d17e6",
+		skill4 = "",
+		skill_desc5 = "",
+		skill_desc3 = "333c3bc6fa7b841c83cb45f495aee9ce",
+		skill5 = "",
+		information1 = "8e5dda328f5e67c25c7e4bc5da3e4fff",
+		skill_desc1 = "ed7293bcd964542ad6307590a1ef0c11",
+		skill_desc4 = "",
+		skill6 = "",
+		skill1 = "068caff8c387d3a8a0d0f95c293d645c",
+		id = 4045,
+		information2 = "583057aab608fdb243e7df307129ac18"
+	},
 	get_id_list_by_race = {
 		[10] = {
 			2114,
 			2123,
+			2129,
 			3047,
 			3048,
+			3050,
 			4041,
-			4042
+			4042,
+			4045
 		},
 		[6] = {
 			2020,
@@ -3018,6 +3087,7 @@
 		2123,
 		2124,
 		2125,
+		2129,
 		3004,
 		3005,
 		3006,
@@ -3054,6 +3124,7 @@
 		3047,
 		3048,
 		3049,
+		3050,
 		3044,
 		4010,
 		4012,
@@ -3081,6 +3152,7 @@
 		4040,
 		4041,
 		4042,
-		4043
+		4043,
+		4045
 	}
 }

@@ -75,6 +75,7 @@ function var_0_0.TryToGetThing(arg_9_0)
 		local var_9_1 = arg_9_0.catchThingList_[var_9_0]
 		local var_9_2 = arg_9_0.catchThingItemList_[var_9_0]
 
+		GoldMinerManager.GetInstance():AddReturnThiefThing(var_9_1)
 		table.remove(arg_9_0.catchThingList_, var_9_0)
 		table.remove(arg_9_0.catchThingItemList_, var_9_0)
 		SetActive(arg_9_0.talkGo_, true)
@@ -248,6 +249,7 @@ function var_0_0.Update(arg_12_0, arg_12_1)
 			if var_12_18.y <= arg_12_0.oriHeight_ then
 				var_12_18.y = arg_12_0.oriHeight_
 
+				GoldMinerManager.GetInstance():AddThiefThing(var_12_19.id)
 				table.insert(arg_12_0.catchThingList_, var_12_19.id)
 				table.insert(arg_12_0.catchThingItemList_, arg_12_0.catchingThing_)
 				arg_12_0:UpdateThingView()

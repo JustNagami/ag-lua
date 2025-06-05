@@ -68,6 +68,9 @@ function var_0_0.InitUI(arg_4_0)
 end
 
 function var_0_0.AddUIListener(arg_7_0)
+	local var_7_0 = PassportData:GetPassportType()
+	local var_7_1 = PassportConst.PASSPORT_ALL_PAY_ID[var_7_0][PassportConst.PASSPORT_USER_TYPE.NORMAL]
+
 	arg_7_0:AddBtnListener(arg_7_0.cheepBtn_, nil, function()
 		if OperationData:IsFunctionStoped(OperationConst.OPERATION_STOP.PASSPORT_BUY) then
 			ShowTips("ERROR_FUNCTION_STOP")
@@ -92,7 +95,7 @@ function var_0_0.AddUIListener(arg_7_0)
 			return
 		end
 
-		if PassportData:GetPayLevel() == 201 then
+		if PassportData:GetPayLevel() == PassportConst.PASSPORT_USER_LEVEL.BASE_LEVEL then
 			ShowTips("BATTLEPASS_HAS_BUYED")
 
 			return
@@ -104,7 +107,7 @@ function var_0_0.AddUIListener(arg_7_0)
 			return
 		end
 
-		PayAction.RequestGSPay(201, 1)
+		PayAction.RequestGSPay(var_7_1[1], 1)
 	end)
 	arg_7_0:AddBtnListener(arg_7_0.expensiveBtn_, nil, function()
 		if OperationData:IsFunctionStoped(OperationConst.OPERATION_STOP.PASSPORT_BUY) then
@@ -127,7 +130,7 @@ function var_0_0.AddUIListener(arg_7_0)
 			return
 		end
 
-		if PassportData:GetPayLevel() == 202 then
+		if PassportData:GetPayLevel() == PassportConst.PASSPORT_USER_LEVEL.FULL_LEVEL then
 			ShowTips("BATTLEPASS_HAS_BUYED")
 
 			return
@@ -139,10 +142,10 @@ function var_0_0.AddUIListener(arg_7_0)
 			return
 		end
 
-		if PassportData:GetPayLevel() == 201 then
-			PayAction.RequestGSPay(203, 1)
+		if PassportData:GetPayLevel() == PassportConst.PASSPORT_USER_LEVEL.BASE_LEVEL then
+			PayAction.RequestGSPay(var_7_1[3], 1)
 		else
-			PayAction.RequestGSPay(202, 1)
+			PayAction.RequestGSPay(var_7_1[2], 1)
 		end
 	end)
 
@@ -223,109 +226,127 @@ function var_0_0.RegisterEventListeners(arg_17_0)
 	end)
 end
 
-function var_0_0.UpdateView(arg_19_0)
-	if ShopTools.IsLimitRecharge() then
-		arg_19_0.image68_.material = arg_19_0.grey
-		arg_19_0.image128_.material = arg_19_0.grey
+function var_0_0.UpdateDiscountInfo(arg_19_0)
+	local var_19_0, var_19_1 = PassportData:HasDiscount()
+
+	if var_19_0 and var_19_1 then
+		SetActive(arg_19_0.discountInfoObj_, true)
+
+		arg_19_0.discountInfoText_.text = GetTips(var_19_1)
 	else
-		arg_19_0.image68_.material = nil
-		arg_19_0.image128_.material = nil
+		SetActive(arg_19_0.discountInfoObj_, false)
+
+		arg_19_0.discountInfoText_.text = ""
 	end
-
-	SetActive(arg_19_0.cheapBuy_, false)
-	SetActive(arg_19_0.cheapNot_, false)
-	SetActive(arg_19_0.heavyBuy_, false)
-	SetActive(arg_19_0.heavyNot_, false)
-
-	if PassportData:GetPayLevel() >= 202 then
-		SetActive(arg_19_0.heavyNot_, true)
-		SetActive(arg_19_0.cheapNot_, true)
-	elseif PassportData:GetPayLevel() >= 201 then
-		SetActive(arg_19_0.cheapNot_, true)
-		SetActive(arg_19_0.heavyBuy_, true)
-
-		arg_19_0.priceLabel2_.text = arg_19_0:GetPriceText(203)
-	else
-		SetActive(arg_19_0.heavyBuy_, true)
-		SetActive(arg_19_0.cheapBuy_, true)
-
-		arg_19_0.priceLabel1_.text = arg_19_0:GetPriceText(201)
-		arg_19_0.priceLabel2_.text = arg_19_0:GetPriceText(202)
-	end
-
-	for iter_19_0, iter_19_1 in ipairs(arg_19_0.item68_) do
-		CommonTools.SetCommonData(iter_19_1.item, {
-			id = arg_19_0.dataList1_[iter_19_0][1],
-			number = arg_19_0.dataList1_[iter_19_0][2]
-		}, iter_19_1.data)
-	end
-
-	for iter_19_2, iter_19_3 in ipairs(arg_19_0.item128_) do
-		CommonTools.SetCommonData(iter_19_3.item, {
-			id = arg_19_0.dataList2_[iter_19_2][1],
-			number = arg_19_0.dataList2_[iter_19_2][2]
-		}, iter_19_3.data)
-	end
-
-	local var_19_0 = PassportData:GetId()
-	local var_19_1 = BattlePassListCfg[var_19_0].battlepass_type
-
-	if var_19_1 >= 17 then
-		arg_19_0.rewardTxt_.text = GetTips("BATTLEPASS_REWARD_TIPS_MAIN")
-	end
-
-	SetActive(arg_19_0.viewBtn_.gameObject, var_19_1 >= 17)
 end
 
-function var_0_0.GetPriceText(arg_20_0, arg_20_1)
-	local var_20_0 = PaymentCfg[arg_20_1].cost / 100
+function var_0_0.UpdateView(arg_20_0)
+	local var_20_0 = PassportData:GetPassportType()
+	local var_20_1 = PassportConst.PASSPORT_ALL_PAY_ID[var_20_0][PassportConst.PASSPORT_USER_TYPE.NORMAL]
+
+	if ShopTools.IsLimitRecharge() then
+		arg_20_0.image68_.material = arg_20_0.grey
+		arg_20_0.image128_.material = arg_20_0.grey
+	else
+		arg_20_0.image68_.material = nil
+		arg_20_0.image128_.material = nil
+	end
+
+	SetActive(arg_20_0.cheapBuy_, false)
+	SetActive(arg_20_0.cheapNot_, false)
+	SetActive(arg_20_0.heavyBuy_, false)
+	SetActive(arg_20_0.heavyNot_, false)
+
+	if PassportData:GetPayLevel() == PassportConst.PASSPORT_USER_LEVEL.FULL_LEVEL then
+		SetActive(arg_20_0.heavyNot_, true)
+		SetActive(arg_20_0.cheapNot_, true)
+	elseif PassportData:GetPayLevel() == PassportConst.PASSPORT_USER_LEVEL.BASE_LEVEL then
+		SetActive(arg_20_0.cheapNot_, true)
+		SetActive(arg_20_0.heavyBuy_, true)
+
+		arg_20_0.priceLabel2_.text = arg_20_0:GetPriceText(var_20_1[3])
+	else
+		SetActive(arg_20_0.heavyBuy_, true)
+		SetActive(arg_20_0.cheapBuy_, true)
+
+		arg_20_0.priceLabel1_.text = arg_20_0:GetPriceText(var_20_1[1])
+		arg_20_0.priceLabel2_.text = arg_20_0:GetPriceText(var_20_1[2])
+	end
+
+	for iter_20_0, iter_20_1 in ipairs(arg_20_0.item68_) do
+		CommonTools.SetCommonData(iter_20_1.item, {
+			id = arg_20_0.dataList1_[iter_20_0][1],
+			number = arg_20_0.dataList1_[iter_20_0][2]
+		}, iter_20_1.data)
+	end
+
+	for iter_20_2, iter_20_3 in ipairs(arg_20_0.item128_) do
+		CommonTools.SetCommonData(iter_20_3.item, {
+			id = arg_20_0.dataList2_[iter_20_2][1],
+			number = arg_20_0.dataList2_[iter_20_2][2]
+		}, iter_20_3.data)
+	end
+
+	local var_20_2 = PassportData:GetId()
+	local var_20_3 = BattlePassListCfg[var_20_2].battlepass_type
+
+	if var_20_3 >= 17 then
+		arg_20_0.rewardTxt_.text = GetTips("BATTLEPASS_REWARD_TIPS_MAIN")
+	end
+
+	SetActive(arg_20_0.viewBtn_.gameObject, var_20_3 >= 17)
+	arg_20_0:UpdateDiscountInfo()
+end
+
+function var_0_0.GetPriceText(arg_21_0, arg_21_1)
+	local var_21_0 = PaymentCfg[arg_21_1].cost / 100
 
 	if SDKTools.GetIsKorea() then
-		return var_20_0 .. GetTips("CURRENCY_TEXT")
+		return var_21_0 .. GetTips("CURRENCY_TEXT")
 	else
-		return string.format(GetTips("PASSPORT_BUY_BUTTON_1"), PaymentCfg[arg_20_1].currency_symbol, var_20_0)
+		return string.format(GetTips("PASSPORT_BUY_BUTTON_1"), PaymentCfg[arg_21_1].currency_symbol, var_21_0)
 	end
 end
 
-function var_0_0.UpdateTimer(arg_21_0)
-	local var_21_0 = PassportData:GetEndTimestamp() - 1200
-	local var_21_1 = PassportData:GetStartTimestamp()
+function var_0_0.UpdateTimer(arg_22_0)
+	local var_22_0 = PassportData:GetEndTimestamp() - 1200
+	local var_22_1 = PassportData:GetStartTimestamp()
 
-	arg_21_0.timeLabel_.text = manager.time:STimeDescS(var_21_1, "!%Y/%m/%d %H:%M") .. "  -  " .. manager.time:STimeDescS(var_21_0, "!%Y/%m/%d %H:%M")
+	arg_22_0.timeLabel_.text = manager.time:STimeDescS(var_22_1, "!%Y/%m/%d %H:%M") .. "  -  " .. manager.time:STimeDescS(var_22_0, "!%Y/%m/%d %H:%M")
 end
 
-function var_0_0.OnExit(arg_22_0)
-	arg_22_0:RemoveAllEventListener()
+function var_0_0.OnExit(arg_23_0)
+	arg_23_0:RemoveAllEventListener()
 
-	if arg_22_0.timer_ then
-		arg_22_0.timer_:Stop()
+	if arg_23_0.timer_ then
+		arg_23_0.timer_:Stop()
 
-		arg_22_0.timer_ = nil
+		arg_23_0.timer_ = nil
 	end
 end
 
-function var_0_0.OnTop(arg_23_0)
-	arg_23_0:UpdateBar()
+function var_0_0.OnTop(arg_24_0)
+	arg_24_0:UpdateBar()
 end
 
-function var_0_0.Dispose(arg_24_0)
-	if arg_24_0.item68_ then
-		for iter_24_0, iter_24_1 in pairs(arg_24_0.item68_) do
-			iter_24_1.item:Dispose()
+function var_0_0.Dispose(arg_25_0)
+	if arg_25_0.item68_ then
+		for iter_25_0, iter_25_1 in pairs(arg_25_0.item68_) do
+			iter_25_1.item:Dispose()
 		end
 
-		arg_24_0.item68_ = nil
+		arg_25_0.item68_ = nil
 	end
 
-	if arg_24_0.item128_ then
-		for iter_24_2, iter_24_3 in pairs(arg_24_0.item128_) do
-			iter_24_3.item:Dispose()
+	if arg_25_0.item128_ then
+		for iter_25_2, iter_25_3 in pairs(arg_25_0.item128_) do
+			iter_25_3.item:Dispose()
 		end
 
-		arg_24_0.item128_ = nil
+		arg_25_0.item128_ = nil
 	end
 
-	var_0_0.super.Dispose(arg_24_0)
+	var_0_0.super.Dispose(arg_25_0)
 end
 
 return var_0_0

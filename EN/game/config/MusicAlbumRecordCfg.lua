@@ -119,6 +119,18 @@
 		albumName = "Chords Before Aurora",
 		verName = "49c5178324e8aedf7756992932c197b0"
 	},
+	{
+		id = 21,
+		cover = "icon_CD_21",
+		albumName = "Sarvaloka",
+		verName = "172a1a3333342c09c7c82cf91044019c"
+	},
+	[27] = {
+		id = 27,
+		cover = "icon_CD_27",
+		albumName = "Ender Oracle",
+		verName = "dc560f05970cfde3b897c5a07328d82f"
+	},
 	all = {
 		1,
 		2,
@@ -139,6 +151,8 @@
 		17,
 		18,
 		19,
-		20
+		20,
+		21,
+		27
 	}
 }

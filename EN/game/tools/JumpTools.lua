@@ -585,6 +585,15 @@ function var_0_0.JumpToPage2(arg_5_0)
 		var_0_0.OpenPageByJump(var_5_78, var_5_79, var_5_80)
 
 		return
+	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.GODEATER_SPECIAL_SERVANT then
+		if ActivityTools.GetActivityIsOpenWithTip(ActivityConst.ACTIVITY_GODEATER_SERVANT) then
+			JumpTools.OpenPageByJump("/draw", {
+				poolType = 2,
+				poolId = arg_5_0[2]
+			}, var_0_3.SYSTEM_ID.DRAW)
+		end
+
+		return
 	elseif var_0_0.GetLinkIsLocked(arg_5_0) then
 		local var_5_81, var_5_82 = JumpTools.GetSystemLockedText(arg_5_0)
 

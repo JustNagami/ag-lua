@@ -1063,7 +1063,6 @@
 		skill_id = 1089281,
 		end_prefab_path = "",
 		id = 71,
-		hit_damage_percent_grp = "",
 		prefab_path = "comboskill_1089_1111",
 		cooperate_role_ids = {
 			1111,
@@ -1072,6 +1071,10 @@
 		cooperate_thrown_ids = {
 			1111063,
 			1089057
+		},
+		hit_damage_percent_grp = {
+			50,
+			70
 		}
 	},
 	all = {

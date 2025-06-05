@@ -114,6 +114,10 @@ function var_0_0.RefreshUI(arg_11_0)
 	arg_11_0:RefreshActivityData()
 	arg_11_0:RefreshTime()
 	arg_11_0:RefreshTask()
+
+	local var_11_0 = ActivityToggleCfg.get_id_list_by_activity_id[arg_11_0.activityID_][1]
+
+	arg_11_0.titileText_.text = ActivityToggleCfg[var_11_0].name
 end
 
 function var_0_0.RefreshActivityData(arg_12_0)
@@ -318,18 +322,23 @@ function var_0_0.RefreshShop(arg_22_0)
 	local var_22_0 = ActivityPtScrollTools.GetShopActivityID(arg_22_0.activityID_)
 	local var_22_1 = ActivityShopCfg[var_22_0].shop_id
 
-	arg_22_0.shopName_.text = ShopListCfg[var_22_1].remark
+	if ShopListCfg[var_22_1] then
+		arg_22_0.shopName_.text = ShopListCfg[var_22_1].remark
+	end
 end
 
 function var_0_0.UpdateBar(arg_23_0)
 	local var_23_0 = ActivityPtScrollTools.GetCurrencyID(arg_23_0.activityID_)
+	local var_23_1 = ActivityPtScrollTools.GetChallengeCurrencyID(arg_23_0.activityID_)
 
 	manager.windowBar:SwitchBar({
 		BACK_BAR,
 		HOME_BAR,
+		var_23_1,
 		var_23_0
 	})
 	manager.windowBar:SetBarCanClick(var_23_0, true)
+	manager.windowBar:SetBarCanClick(var_23_1, true)
 end
 
 function var_0_0.BindRedPointUI(arg_24_0)

@@ -32,7 +32,7 @@
 
 				local var_4_2 = var_4_1:GetComponent(typeof(Image))
 
-				var_4_2.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/Portrait/" .. var_4_0)
+				var_4_2.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/Portrait/" .. "2510999")
 
 				var_4_2:SetNativeSize()
 
@@ -65,7 +65,7 @@
 			local var_4_8 = arg_1_1.actors_["2510999"]
 			local var_4_9 = 0.333333333333333
 
-			if var_4_9 < arg_1_1.time_ and arg_1_1.time_ <= var_4_9 + arg_4_0 then
+			if var_4_9 < arg_1_1.time_ and arg_1_1.time_ <= var_4_9 + arg_4_0 and not isNil(var_4_8) then
 				local var_4_10 = var_4_8:GetComponent("Image")
 
 				if var_4_10 then
@@ -75,7 +75,7 @@
 
 			local var_4_11 = 0.2
 
-			if var_4_9 <= arg_1_1.time_ and arg_1_1.time_ < var_4_9 + var_4_11 then
+			if var_4_9 <= arg_1_1.time_ and arg_1_1.time_ < var_4_9 + var_4_11 and not isNil(var_4_8) then
 				local var_4_12 = (arg_1_1.time_ - var_4_9) / var_4_11
 
 				if arg_1_1.var_.highlightMatValue2510999 then
@@ -90,7 +90,7 @@
 				end
 			end
 
-			if arg_1_1.time_ >= var_4_9 + var_4_11 and arg_1_1.time_ < var_4_9 + var_4_11 + arg_4_0 and arg_1_1.var_.highlightMatValue2510999 then
+			if arg_1_1.time_ >= var_4_9 + var_4_11 and arg_1_1.time_ < var_4_9 + var_4_11 + arg_4_0 and not isNil(var_4_8) and arg_1_1.var_.highlightMatValue2510999 then
 				local var_4_16 = 1
 
 				var_4_8.transform:SetSiblingIndex(1)

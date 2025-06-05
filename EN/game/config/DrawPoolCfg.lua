@@ -152,7 +152,8 @@
 		},
 		recharge_shop_list = {
 			3001342,
-			3001351
+			3001351,
+			3001385
 		},
 		cost_once = {
 			19,
@@ -5612,21 +5613,7 @@
 			{}
 		},
 		recharge_shop_list = {
-			3001183,
-			3001193,
-			3001202,
-			3001212,
-			3001221,
-			3001233,
-			3009001,
-			3001247,
-			3001256,
-			3001270,
-			3001263,
-			3001283,
-			3001293,
-			3001302,
-			3001311
+			3001385
 		},
 		cost_once = {
 			19,
@@ -5656,7 +5643,6 @@
 		draw_pool_desc = "DRAW_POOL_DESC_TEMP_12",
 		detail_note = "",
 		pool_show_type = 3,
-		recharge_shop_list = "",
 		order = 1,
 		pool_selected_type = 1,
 		exchange_id = 6000003,
@@ -5672,6 +5658,14 @@
 		excluded_group = {
 			{},
 			{}
+		},
+		recharge_shop_list = {
+			3001379,
+			3001380,
+			3001381,
+			3001382,
+			3001383,
+			3001384
 		},
 		cost_once = {
 			38,
@@ -5701,7 +5695,6 @@
 		draw_pool_desc = "DRAW_POOL_DESC_TEMP_13",
 		detail_note = "",
 		pool_show_type = 6,
-		recharge_shop_list = "",
 		order = 1,
 		pool_selected_type = 3,
 		exchange_id = 6000003,
@@ -5717,6 +5710,14 @@
 		excluded_group = {
 			{},
 			{}
+		},
+		recharge_shop_list = {
+			3001379,
+			3001380,
+			3001381,
+			3001382,
+			3001383,
+			3001384
 		},
 		cost_once = {
 			38,
@@ -5746,7 +5747,6 @@
 		draw_pool_desc = "DRAW_POOL_DESC_TEMP_12",
 		detail_note = "",
 		pool_show_type = 3,
-		recharge_shop_list = "",
 		order = 2,
 		pool_selected_type = 1,
 		exchange_id = 6000003,
@@ -5762,6 +5762,14 @@
 		excluded_group = {
 			{},
 			{}
+		},
+		recharge_shop_list = {
+			3001379,
+			3001380,
+			3001381,
+			3001382,
+			3001383,
+			3001384
 		},
 		cost_once = {
 			38,
@@ -5791,7 +5799,6 @@
 		draw_pool_desc = "DRAW_POOL_DESC_TEMP_13",
 		detail_note = "",
 		pool_show_type = 6,
-		recharge_shop_list = "",
 		order = 2,
 		pool_selected_type = 3,
 		exchange_id = 6000003,
@@ -5807,6 +5814,14 @@
 		excluded_group = {
 			{},
 			{}
+		},
+		recharge_shop_list = {
+			3001379,
+			3001380,
+			3001381,
+			3001382,
+			3001383,
+			3001384
 		},
 		cost_once = {
 			38,
@@ -5836,7 +5851,6 @@
 		draw_pool_desc = "DRAW_POOL_DESC_TEMP_8",
 		detail_note = "",
 		pool_show_type = 3,
-		recharge_shop_list = "",
 		order = 4,
 		pool_selected_type = 1,
 		exchange_id = 6000003,
@@ -5852,6 +5866,14 @@
 		excluded_group = {
 			{},
 			{}
+		},
+		recharge_shop_list = {
+			3001379,
+			3001380,
+			3001381,
+			3001382,
+			3001383,
+			3001384
 		},
 		cost_once = {
 			38,
@@ -5879,7 +5901,6 @@
 		draw_pool_desc = "DRAW_POOL_DESC_TEMP_11",
 		detail_note = "",
 		pool_show_type = 1,
-		recharge_shop_list = "",
 		order = 1,
 		pool_selected_type = 2,
 		exchange_id = 6000001,
@@ -5907,6 +5928,10 @@
 		excluded_group = {
 			{},
 			{}
+		},
+		recharge_shop_list = {
+			3001386,
+			3001387
 		},
 		cost_once = {
 			5,
@@ -7391,6 +7416,110 @@
 			10
 		}
 	},
+	[31025] = {
+		pool_change = 0,
+		optional_lists = "",
+		pool_type = 3,
+		optional_detail = "",
+		pool_draw_range_type = 40203,
+		optional_lists_a = "",
+		name = "871da643d6757361021c8168e94efdc4",
+		draw_pool_desc = "DRAW_POOL_DESC_TEMP_8",
+		detail_note = "",
+		pool_show_type = 3,
+		order = 3,
+		pool_selected_type = 1,
+		exchange_id = 6000003,
+		optional_lists_poolId = "",
+		discount = 100,
+		id = 31025,
+		unoption_up_items = {
+			{
+				1061
+			},
+			{}
+		},
+		excluded_group = {
+			{},
+			{}
+		},
+		recharge_shop_list = {
+			3001379,
+			3001380,
+			3001381,
+			3001382,
+			3001383,
+			3001384
+		},
+		cost_once = {
+			38,
+			1
+		},
+		cost_ten_times = {
+			38,
+			10
+		},
+		cost_once_activity_material = {
+			62,
+			1
+		},
+		cost_ten_times_activity_material = {
+			62,
+			10
+		}
+	},
+	[31026] = {
+		pool_change = 0,
+		pool_type = 1,
+		pool_draw_range_type = 1,
+		optional_lists_a = "",
+		name = "af1cdce039fa8f94db38fd6c4ac863b9",
+		draw_pool_desc = "DRAW_POOL_DESC_TEMP_11",
+		detail_note = "",
+		pool_show_type = 1,
+		order = 1,
+		pool_selected_type = 2,
+		exchange_id = 6000001,
+		discount = 100,
+		id = 31026,
+		unoption_up_items = {
+			{},
+			{}
+		},
+		optional_detail = {
+			1070,
+			1139,
+			1081
+		},
+		optional_lists_poolId = {
+			1070,
+			1139,
+			1081
+		},
+		optional_lists = {
+			1070,
+			1139,
+			1081
+		},
+		excluded_group = {
+			{},
+			{}
+		},
+		recharge_shop_list = {
+			3001386,
+			3001387
+		},
+		cost_once = {
+			5,
+			1
+		},
+		cost_ten_times = {
+			5,
+			10
+		},
+		cost_once_activity_material = {},
+		cost_ten_times_activity_material = {}
+	},
 	all = {
 		10000,
 		2060604,
@@ -7431,6 +7560,7 @@
 		31021,
 		31023,
 		31024,
+		31026,
 		10003,
 		10013,
 		10023,
@@ -7513,6 +7643,7 @@
 		31019,
 		31020,
 		31022,
+		31025,
 		10121,
 		10131,
 		10181,

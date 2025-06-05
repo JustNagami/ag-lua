@@ -416,7 +416,7 @@
 		hero_skin_navigation = {
 			18001,
 			341001,
-			341312
+			341311
 		},
 		hero_draw_navigation = {
 			404,

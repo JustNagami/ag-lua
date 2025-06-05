@@ -105,7 +105,7 @@
 
 				local var_4_24 = var_4_23:GetComponent(typeof(Image))
 
-				var_4_24.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. var_4_22)
+				var_4_24.sprite = getSpriteWithoutAtlas("TextureConfig/Character/Portrait/" .. "1039")
 
 				var_4_24:SetNativeSize()
 

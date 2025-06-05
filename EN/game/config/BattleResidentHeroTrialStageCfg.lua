@@ -837,7 +837,7 @@
 		attribute_factor = {
 			1000,
 			1000,
-			8000
+			5000
 		},
 		hero_list = {
 			{
@@ -876,7 +876,7 @@
 		attribute_factor = {
 			1000,
 			1000,
-			8000
+			5000
 		},
 		hero_list = {
 			{

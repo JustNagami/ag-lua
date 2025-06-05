@@ -21,51 +21,43 @@ end
 
 function var_0_0.AddUIListener(arg_5_0)
 	arg_5_0:AddBtnListener(arg_5_0.bgBtn_, nil, function()
-		if arg_5_0.params_.isWin and CivilizationGameTools.getIsFirst(arg_5_0.params_.stageID) then
-			getReward(mergeReward(arg_5_0.params_.reward_list), nil, function()
-				JumpTools.OpenPageByJump("/civilizationGameMainView", {
-					activityID = ActivityConst.ACTIVITY_GOLDMINER
-				})
-			end)
-		else
-			JumpTools.OpenPageByJump("/civilizationGameMainView", {
-				activityID = ActivityConst.ACTIVITY_GOLDMINER
-			})
-		end
+		JumpTools.OpenPageByJump("/civilizationGameMainView", {
+			activityID = ActivityConst.ACTIVITY_CIVILIZATION
+		})
 	end)
 end
 
-function var_0_0.OnEnter(arg_8_0)
-	arg_8_0:RefreshUI()
+function var_0_0.OnEnter(arg_7_0)
+	arg_7_0:RefreshUI()
 end
 
-function var_0_0.RefreshUI(arg_9_0)
-	if arg_9_0.params_.isWin then
-		arg_9_0.winTitleText_.text = GetTips("GODEATER_CIVILIZATION_GAME_WIN_TITLE")
-		arg_9_0.descText_.text = GetTips("GODEATER_CIVILIZATION_GAME_WIN_TIPS")
+function var_0_0.RefreshUI(arg_8_0)
+	if arg_8_0.params_.isWin then
+		arg_8_0.winTitleText_.text = GetTips("GODEATER_CIVILIZATION_GAME_WIN_TITLE")
+		arg_8_0.descText_.text = GetTips("GODEATER_CIVILIZATION_GAME_WIN_TIPS")
 
-		arg_9_0.stateController_:SetSelectedState("win")
+		arg_8_0.stateController_:SetSelectedState("win")
 	else
-		arg_9_0.loseTitleText_.text = GetTips("GODEATER_CIVILIZATION_GAME_FAIL_TITLE")
-		arg_9_0.descText_.text = GetTips("GODEATER_CIVILIZATION_GAME_FAIL_TIPS")
+		arg_8_0.loseTitleText_.text = GetTips("GODEATER_CIVILIZATION_GAME_FAIL_TITLE")
+		arg_8_0.descText_.text = GetTips("GODEATER_CIVILIZATION_GAME_FAIL_TIPS")
 
-		arg_9_0.stateController_:SetSelectedState("lose")
+		arg_8_0.stateController_:SetSelectedState("lose")
 	end
 end
 
-function var_0_0.OnTop(arg_10_0)
+function var_0_0.OnTop(arg_9_0)
 	manager.windowBar:SwitchBar({
 		BACK_BAR
 	})
 end
 
-function var_0_0.OnExit(arg_11_0)
+function var_0_0.OnExit(arg_10_0)
 	manager.windowBar:HideBar()
 end
 
-function var_0_0.Dispose(arg_12_0)
-	var_0_0.super.Dispose(arg_12_0)
-	Object.Destroy(arg_12_0.gameObject_)
+function var_0_0.Dispose(arg_11_0)
+	var_0_0.super.Dispose(arg_11_0)
+	Object.Destroy(arg_11_0.gameObject_)
 end
 
 return var_0_0

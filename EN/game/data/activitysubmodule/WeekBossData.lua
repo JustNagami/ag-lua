@@ -25,6 +25,7 @@ function var_0_0.InitData(arg_1_0, arg_1_1)
 	end
 
 	arg_1_0.heroInfoList_ = arg_1_1.hero_info_list
+	arg_1_0.lastSelectHeroId_ = arg_1_1.hero_id
 	arg_1_0.bossSetting_ = GameSetting.activity_god_eater_week_boss.value
 
 	arg_1_0:InitHeroList()
@@ -128,47 +129,55 @@ function var_0_0.GetStageId(arg_13_0, arg_13_1)
 	return arg_13_0.bossSetting_[var_13_0][1]
 end
 
-function var_0_0.GetHeroList(arg_14_0)
-	return arg_14_0.heroList_
+function var_0_0.GetSelectTalent(arg_14_0, arg_14_1)
+	return arg_14_0.selectTalentList_[arg_14_1]
 end
 
-function var_0_0.GetSelectTalent(arg_15_0, arg_15_1)
-	return arg_15_0.selectTalentList_[arg_15_1]
+function var_0_0.GetTalentUnlock(arg_15_0, arg_15_1)
+	return arg_15_0.talentUnlock_[arg_15_1]
 end
 
-function var_0_0.GetTalentUnlock(arg_16_0, arg_16_1)
-	return arg_16_0.talentUnlock_[arg_16_1]
+function var_0_0.GetTalentLockDesc(arg_16_0, arg_16_1)
+	local var_16_0 = ConditionCfg[TalentTreeCfg[arg_16_1].unlock_condition[1]]
+
+	return string.format(GetI18NText(var_16_0.desc), var_16_0.params[1])
 end
 
-function var_0_0.GetTalentLockDesc(arg_17_0, arg_17_1)
-	local var_17_0 = ConditionCfg[TalentTreeCfg[arg_17_1].unlock_condition[1]]
+function var_0_0.GetDefaultDiff(arg_17_0)
+	local var_17_0 = 1
+	local var_17_1 = false
+	local var_17_2 = false
 
-	return string.format(var_17_0.desc, var_17_0.params[1])
-end
+	for iter_17_0 = 2, #arg_17_0.bossInfoList_ do
+		local var_17_3 = arg_17_0.bossInfoList_[iter_17_0 - 1].boss_hp >= arg_17_0.bossSetting_[iter_17_0 - 1][2]
+		local var_17_4 = IsConditionAchieved(arg_17_0.bossSetting_[iter_17_0][4])
 
-function var_0_0.GetDefaultDiff(arg_18_0)
-	local var_18_0 = 1
-	local var_18_1 = false
-	local var_18_2 = false
-
-	for iter_18_0 = 2, #arg_18_0.bossInfoList_ do
-		local var_18_3 = arg_18_0.bossInfoList_[iter_18_0 - 1].boss_hp >= arg_18_0.bossSetting_[iter_18_0 - 1][2]
-		local var_18_4 = IsConditionAchieved(arg_18_0.bossSetting_[iter_18_0][4])
-
-		if var_18_3 and var_18_4 then
-			var_18_0 = math.max(var_18_0, iter_18_0)
+		if var_17_3 and var_17_4 then
+			var_17_0 = math.max(var_17_0, iter_17_0)
 		end
 	end
 
-	return var_18_0
+	return var_17_0
 end
 
-function var_0_0.SetCameras(arg_19_0, arg_19_1)
-	arg_19_0.virtualCameras_ = arg_19_1
+function var_0_0.SetCameras(arg_18_0, arg_18_1)
+	arg_18_0.virtualCameras_ = arg_18_1
 end
 
-function var_0_0.GetCameras(arg_20_0)
-	return arg_20_0.virtualCameras_
+function var_0_0.GetCameras(arg_19_0)
+	return arg_19_0.virtualCameras_
+end
+
+function var_0_0.GetIsPassDiff(arg_20_0, arg_20_1)
+	return arg_20_0.bossInfoList_[arg_20_1].boss_hp >= arg_20_0.bossSetting_[arg_20_1][2]
+end
+
+function var_0_0.GetLastSelectHero(arg_21_0)
+	return arg_21_0.lastSelectHeroId_
+end
+
+function var_0_0.SetLastSelectHero(arg_22_0, arg_22_1)
+	arg_22_0.lastSelectHeroId_ = arg_22_1
 end
 
 return var_0_0

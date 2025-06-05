@@ -25,6 +25,8 @@ function var_0_0.SetClickCheckCallback(arg_3_0, arg_3_1)
 end
 
 function var_0_0.RefreshUI(arg_4_0, arg_4_1)
+	SetActive(arg_4_0.gameObject_, true)
+
 	for iter_4_0, iter_4_1 in pairs(arg_4_0.surpassItemList) do
 		local var_4_0 = arg_4_1[iter_4_0]
 
@@ -37,12 +39,16 @@ function var_0_0.RefreshUI(arg_4_0, arg_4_1)
 	end
 end
 
-function var_0_0.Dispose(arg_5_0)
-	for iter_5_0, iter_5_1 in pairs(arg_5_0.surpassItemList) do
-		iter_5_1:Dispose()
+function var_0_0.Show(arg_5_0, arg_5_1)
+	SetActive(arg_5_0.gameObject_, arg_5_1)
+end
+
+function var_0_0.Dispose(arg_6_0)
+	for iter_6_0, iter_6_1 in pairs(arg_6_0.surpassItemList) do
+		iter_6_1:Dispose()
 	end
 
-	var_0_0.super.Dispose(arg_5_0)
+	var_0_0.super.Dispose(arg_6_0)
 end
 
 return var_0_0

@@ -309,4 +309,24 @@ function var_0_0.GetNextRefreshTimestamp(arg_25_0)
 	return var_0_1.nextRefreshTimestamp
 end
 
+function var_0_0.GetPassportType(arg_26_0)
+	if arg_26_0:GetId() == PassportConst.VSN_42_PASSPORT_ID then
+		return PassportConst.PASSPORT_ALL_TYPE.VSN_42
+	end
+
+	return PassportConst.PASSPORT_ALL_TYPE.DEFAULT
+end
+
+function var_0_0.HasDiscount(arg_27_0)
+	if PassportData:GetPayLevel() >= PassportConst.PASSPORT_USER_LEVEL.FULL_LEVEL then
+		return false, nil
+	end
+
+	if arg_27_0:GetPassportType() == PassportConst.PASSPORT_ALL_TYPE.VSN_42 then
+		return true, "ACTIVITY_COLLAB_BP_DISCOUNT_TIPS"
+	end
+
+	return false, nil
+end
+
 return var_0_0

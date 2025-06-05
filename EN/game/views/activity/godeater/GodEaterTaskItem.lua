@@ -10,6 +10,7 @@ function var_0_0.Ctor(arg_1_0, arg_1_1)
 	arg_1_0.btnControlller = arg_1_0.btn_one_s_allControllerexcollection_:GetController("all")
 	arg_1_0.lockControlller = arg_1_0.bountyitemControllerexcollection_:GetController("lock")
 	arg_1_0.gradeControlller = arg_1_0.bountyitemControllerexcollection_:GetController("grade")
+	arg_1_0.completeControlller = arg_1_0.bountyitemControllerexcollection_:GetController("complete")
 
 	arg_1_0:AddUIListeners()
 
@@ -18,7 +19,9 @@ end
 
 function var_0_0.AddUIListeners(arg_2_0)
 	arg_2_0:AddBtnListener(arg_2_0.btngoBtn_, nil, function()
-		return
+		local var_3_0 = AssignmentCfg[arg_2_0.id]
+
+		JumpTools.JumpToPage2(var_3_0.source)
 	end)
 	arg_2_0:AddBtnListener(arg_2_0.btnreceiveBtn_, nil, function()
 		if arg_2_0.isCanReceive then
@@ -26,7 +29,7 @@ function var_0_0.AddUIListeners(arg_2_0)
 		end
 	end)
 	arg_2_0:AddBtnListener(arg_2_0.btncomplete01Btn_, nil, function()
-		ShowTips("INVESTIGATE_TIPS_2")
+		return
 	end)
 	arg_2_0:AddBtnListener(arg_2_0.btnunlockedBtn_, nil, function()
 		return
@@ -50,7 +53,7 @@ function var_0_0.SetData(arg_7_0, arg_7_1)
 	if var_7_0 then
 		arg_7_0.desctextText_.text = var_7_0.desc
 		arg_7_0.fillImg_.transform.localScale = Vector3.New(Mathf.Clamp(TaskData2:GetTaskProgress(arg_7_1) / var_7_0.need, 0, 1), 1, 1)
-		arg_7_0.processtextText_.text = TaskData2:GetTaskProgress(arg_7_1) .. "/" .. var_7_0.need
+		arg_7_0.processtextText_.text = math.min(TaskData2:GetTaskProgress(arg_7_1), var_7_0.need) .. "/" .. var_7_0.need
 
 		local var_7_1 = GodEaterTool.GetTaskType(arg_7_1)
 
@@ -64,12 +67,17 @@ function var_0_0.SetData(arg_7_0, arg_7_1)
 
 		if arg_7_0.complete_flag then
 			arg_7_0.btnControlller:SetSelectedState("complete")
+			arg_7_0.completeControlller:SetSelectedState("true")
 
 			arg_7_0.isDraw = true
-		elseif arg_7_0.isCanReceive then
-			arg_7_0.btnControlller:SetSelectedState("receive")
 		else
-			arg_7_0.btnControlller:SetSelectedState("lock")
+			if arg_7_0.isCanReceive then
+				arg_7_0.btnControlller:SetSelectedState("receive")
+			else
+				arg_7_0.btnControlller:SetSelectedState("lock")
+			end
+
+			arg_7_0.completeControlller:SetSelectedState("false")
 		end
 
 		arg_7_0.uiList_:StartScroll(#arg_7_0.reward)

@@ -650,6 +650,68 @@
 			0
 		}
 	},
+	[4031045] = {
+		monster_level = 80,
+		name = "22fa12d78a2ef868e43621119b8ba6d5",
+		map = "4031045",
+		ai_level = 0,
+		tips = "f8b4c29f51130abe64ed5d0f950fcbba",
+		id = 4031045,
+		drop_lib_id = 250002,
+		background_1 = "D02",
+		position = {
+			250,
+			-134
+		},
+		hero_list = {
+			{
+				1045,
+				104501
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
+	[4031046] = {
+		monster_level = 80,
+		name = "95e91f94dff86145dbba8ae848dca560",
+		map = "4031046",
+		ai_level = 0,
+		tips = "cad3fd57b7280465191c1f9324cf2448",
+		id = 4031046,
+		drop_lib_id = 250002,
+		background_1 = "D02",
+		position = {
+			250,
+			-134
+		},
+		hero_list = {
+			{
+				1046,
+				104601
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
 	[4031048] = {
 		monster_level = 80,
 		name = "32e41d2cd6fbd23c8cb8bd1c74bb10ab",
@@ -2005,6 +2067,8 @@
 		4031039,
 		4031041,
 		4031042,
+		4031045,
+		4031046,
 		4031048,
 		4031049,
 		4031050,

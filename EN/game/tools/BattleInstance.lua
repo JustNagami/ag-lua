@@ -949,7 +949,7 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 			mainActivityID = var_5_83,
 			stageID = arg_5_0:GetStageId()
 		})
-	elseif BattleConst.STAGE_TYPE_NEW.GOD_EATER_BATTLE then
+	elseif BattleConst.STAGE_TYPE_NEW.GOD_EATER_BATTLE == var_5_0 then
 		local var_5_84 = arg_5_0:GetViewType()
 
 		if var_5_84 == "dailyMonster" then

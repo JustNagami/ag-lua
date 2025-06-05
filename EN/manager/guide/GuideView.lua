@@ -25,6 +25,10 @@ function var_0_0.InitUI(arg_3_0)
 	ComponentBinder.GetInstance():BindCfgUI(arg_3_0, arg_3_0.gameObject_)
 
 	arg_3_0.breakGuideTrs_ = arg_3_0.btnBreakGuide_.gameObject:GetComponent(typeof(RectTransform))
+
+	if arg_3_0.btnSkipGo_.activeSelf then
+		SetActive(arg_3_0.btnSkipGo_, false)
+	end
 end
 
 function var_0_0.AddUIListener(arg_4_0)
@@ -119,8 +123,6 @@ function var_0_0.ShowHoldMask(arg_16_0, arg_16_1, arg_16_2, arg_16_3)
 	else
 		local var_16_1 = manager.ui.mainCameraCom_
 		local var_16_2 = manager.ui.canvas:GetComponent(typeof(Canvas)).worldCamera
-
-		trace("pos%o", arg_16_1.transform.position)
 
 		if arg_16_0.timer2_ then
 			arg_16_0.timer2_:Stop()

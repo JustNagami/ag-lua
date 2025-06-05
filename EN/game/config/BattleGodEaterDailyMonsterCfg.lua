@@ -14,9 +14,9 @@
 		id = 5250211,
 		need_default_team = 0,
 		attribute_factor = {
+			800,
 			1000,
-			1000,
-			1000
+			20000
 		},
 		team_type = {
 			221,
@@ -38,9 +38,9 @@
 		id = 5250212,
 		need_default_team = 0,
 		attribute_factor = {
+			800,
 			1000,
-			1000,
-			2000
+			30000
 		},
 		team_type = {
 			221,
@@ -62,9 +62,9 @@
 		id = 5250213,
 		need_default_team = 0,
 		attribute_factor = {
+			800,
 			1000,
-			1000,
-			3000
+			40000
 		},
 		team_type = {
 			221,
@@ -86,9 +86,9 @@
 		id = 5250202,
 		need_default_team = 0,
 		attribute_factor = {
+			500,
 			1000,
-			1000,
-			1000
+			10000
 		},
 		team_type = {
 			221,
@@ -110,9 +110,9 @@
 		id = 5250203,
 		need_default_team = 0,
 		attribute_factor = {
+			500,
 			1000,
-			1000,
-			1000
+			3200
 		},
 		team_type = {
 			221,
@@ -134,9 +134,9 @@
 		id = 5250204,
 		need_default_team = 0,
 		attribute_factor = {
+			500,
 			1000,
-			1000,
-			1000
+			3200
 		},
 		team_type = {
 			221,
@@ -158,9 +158,9 @@
 		id = 5250205,
 		need_default_team = 0,
 		attribute_factor = {
+			500,
 			1000,
-			1000,
-			1000
+			3200
 		},
 		team_type = {
 			221,

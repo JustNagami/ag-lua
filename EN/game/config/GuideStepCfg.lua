@@ -13376,7 +13376,14 @@
 				"giftBtn_"
 			}
 		},
-		mask_component = {},
+		mask_component = {
+			"common",
+			"ActivityGodEaterGameMainView",
+			{
+				"guideComponents",
+				"guide_6"
+			}
+		},
 		mask_scale = {},
 		talk_position = {
 			743,
@@ -13493,29 +13500,6 @@
 			0
 		}
 	},
-	[12304] = {
-		talk_anchors = 0,
-		type = "HighLight",
-		talk_adapt = 0,
-		mask_component = "",
-		is_finish = false,
-		id = 12304,
-		talk_content = "4e3be53bbcf50ff40f11480a3c42b883",
-		params = {},
-		guide_component = {
-			"common",
-			"civilizationGameView",
-			{
-				"guideComponents",
-				"guide_introduce1"
-			}
-		},
-		mask_scale = {},
-		talk_position = {
-			-442.1,
-			-100.59
-		}
-	},
 	[12305] = {
 		talk_anchors = 0,
 		type = "HighLight",
@@ -13583,52 +13567,6 @@
 		talk_position = {
 			75.13,
 			86.59
-		}
-	},
-	[12308] = {
-		talk_anchors = 1,
-		type = "HighLight",
-		talk_adapt = 0,
-		mask_component = "",
-		is_finish = false,
-		id = 12308,
-		talk_content = "b3d5b75cd551c4ecc9e9d0e2f3e6c7a6",
-		params = {},
-		guide_component = {
-			"common",
-			"civilizationGameView",
-			{
-				"guideComponents",
-				"guide_introduce5"
-			}
-		},
-		mask_scale = {},
-		talk_position = {
-			907.51,
-			-274.1
-		}
-	},
-	[12309] = {
-		talk_anchors = 0,
-		type = "HighLight",
-		talk_adapt = 0,
-		mask_component = "",
-		is_finish = false,
-		id = 12309,
-		talk_content = "93be03def6e12a4f3d0da5eda9f3332d",
-		params = {},
-		guide_component = {
-			"common",
-			"civilizationGameView",
-			{
-				"guideComponents",
-				"guide_introduce1"
-			}
-		},
-		mask_scale = {},
-		talk_position = {
-			-442.1,
-			-100.59
 		}
 	},
 	[12310] = {
@@ -13800,28 +13738,6 @@
 			101.21
 		}
 	},
-	[12317] = {
-		talk_anchors = 0,
-		type = "HighLight",
-		talk_adapt = 0,
-		mask_component = "",
-		is_finish = false,
-		id = 12317,
-		talk_content = "20362d410962fefc954966ad8647a28f",
-		params = {},
-		guide_component = {
-			"common",
-			"civilizationGameChooseSkillView",
-			{
-				"gameObject_"
-			}
-		},
-		mask_scale = {},
-		talk_position = {
-			-611.64,
-			0
-		}
-	},
 	[12318] = {
 		talk_anchors = 0,
 		type = "ClickButton",
@@ -13865,7 +13781,7 @@
 		mask_scale = {},
 		talk_position = {
 			-611.64,
-			115.98
+			-400
 		}
 	},
 	[12320] = {
@@ -14033,8 +13949,8 @@
 		mask_component = {},
 		mask_scale = {},
 		talk_position = {
-			-394.65,
-			-174.65
+			-480,
+			-175
 		}
 	},
 	[12403] = {
@@ -14056,7 +13972,7 @@
 		mask_scale = {},
 		talk_position = {
 			56.3,
-			160
+			205
 		}
 	},
 	[12404] = {
@@ -14077,8 +13993,8 @@
 		mask_component = {},
 		mask_scale = {},
 		talk_position = {
-			521,
-			143.24
+			515,
+			167
 		}
 	},
 	[12405] = {
@@ -14123,8 +14039,8 @@
 		mask_component = {},
 		mask_scale = {},
 		talk_position = {
-			-442.1,
-			-100.59
+			-484,
+			158
 		}
 	},
 	[12502] = {
@@ -14146,8 +14062,8 @@
 		mask_component = {},
 		mask_scale = {},
 		talk_position = {
-			-442.1,
-			-100.59
+			106,
+			117
 		}
 	},
 	[12601] = {
@@ -14196,24 +14112,18 @@
 	},
 	[12603] = {
 		talk_anchors = 0,
-		type = "HighLight",
+		type = "CivilizationGameStep",
 		talk_adapt = 0,
-		mask_component = "",
 		is_finish = false,
 		id = 12603,
 		talk_content = "02392d110ccd4aa6c483a31a9fa11f0e",
 		params = {},
-		guide_component = {
-			"common",
-			"civilizationGameChooseSkillView",
-			{
-				"itemContentTrs_"
-			}
-		},
+		guide_component = {},
+		mask_component = {},
 		mask_scale = {},
 		talk_position = {
-			-651.47,
-			-380.41
+			0,
+			0
 		}
 	},
 	[12604] = {
@@ -14259,7 +14169,7 @@
 		mask_scale = {},
 		talk_position = {
 			-611.64,
-			115.98
+			-400
 		}
 	},
 	[12606] = {
@@ -14309,7 +14219,7 @@
 		}
 	},
 	[12608] = {
-		talk_anchors = 0,
+		talk_anchors = 1,
 		type = "HighLight",
 		talk_adapt = 0,
 		mask_component = "",
@@ -14322,13 +14232,13 @@
 			"civilizationGameView",
 			{
 				"guideComponents",
-				"guide_introduce1"
+				"guide_introduce10"
 			}
 		},
 		mask_scale = {},
 		talk_position = {
-			-442.1,
-			-100.59
+			899.37,
+			-640.59
 		}
 	},
 	[12609] = {
@@ -14922,12 +14832,9 @@
 		12301,
 		12302,
 		12303,
-		12304,
 		12305,
 		12306,
 		12307,
-		12308,
-		12309,
 		12310,
 		12311,
 		12312,
@@ -14935,7 +14842,6 @@
 		12314,
 		12315,
 		12316,
-		12317,
 		12318,
 		12319,
 		12320,

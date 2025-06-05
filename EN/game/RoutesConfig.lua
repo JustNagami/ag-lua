@@ -6071,6 +6071,10 @@
 		component = ActivityGodEaterMilestoneView
 	},
 	{
+		name = "ActivityGodEaterCivilizationTaskView",
+		component = ActivityGodEaterCivilizationTaskView
+	},
+	{
 		name = "ActivityGodEaterGameRewardView",
 		component = ActivityGodEaterGameRewardView
 	},

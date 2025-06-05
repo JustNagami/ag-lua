@@ -1871,7 +1871,49 @@
 		icon = "10283",
 		type = 1
 	},
+	[304] = {
+		desc_source = "5cb4c7e03f9df2db3e5b9f9b5c58747e",
+		name = "d1b3d76db969bfe04463cb2493408b90",
+		free = 0,
+		category = 23,
+		id = 304,
+		icon = "10304",
+		type = 1
+	},
+	[305] = {
+		desc_source = "c8bd024e20c7475947e6e3bd3f571b7b",
+		name = "654f62390e8a4671a300d57bfc270d3b",
+		free = 0,
+		category = 23,
+		id = 305,
+		icon = "10305",
+		type = 1
+	},
+	[306] = {
+		desc_source = "8652e44f24731ad30d8f212a2482cd5d",
+		name = "36271d05462acbb967a97725f3905233",
+		free = 0,
+		category = 23,
+		id = 306,
+		icon = "10306",
+		type = 1
+	},
+	[307] = {
+		desc_source = "d86afacfcb70dc35cf7b14dd1b714b30",
+		name = "ecb8d21e75fa8971d3ba2ded6d3c9cbc",
+		free = 0,
+		category = 23,
+		id = 307,
+		icon = "10307",
+		type = 1
+	},
 	get_id_list_by_category = {
+		[23] = {
+			304,
+			305,
+			306,
+			307
+		},
 		[22] = {
 			281,
 			282,
@@ -2325,6 +2367,10 @@
 		211,
 		281,
 		282,
-		283
+		283,
+		304,
+		305,
+		306,
+		307
 	}
 }

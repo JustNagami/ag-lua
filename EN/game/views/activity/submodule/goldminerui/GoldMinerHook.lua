@@ -32,6 +32,7 @@ function var_0_0.Init(arg_2_0)
 	arg_2_0.boomShowTime_ = 0
 	arg_2_0.addPointSkillEnable_ = false
 	arg_2_0.addSpeedSkillEnable_ = false
+	arg_2_0.playBackAudio_ = false
 	arg_2_0.heroID_ = 0
 
 	arg_2_0:GetTmpCorners()
@@ -117,6 +118,7 @@ function var_0_0.Update(arg_8_0, arg_8_1)
 
 	if not arg_8_0.hooking_ then
 		arg_8_0.isCallBackFunc_ = false
+		arg_8_0.playBackAudio_ = false
 
 		local var_8_0 = arg_8_0.rotaryTransform_.eulerAngles
 		local var_8_1 = arg_8_1 * arg_8_0.angleSpeed_ * var_0_2 + var_8_0.z
@@ -199,8 +201,11 @@ function var_0_0.Update(arg_8_0, arg_8_1)
 
 				if var_8_7.y <= arg_8_0.oriHeight_ + var_8_16 then
 					arg_8_0.gameView_:PlayRoleSpine("eat", 1.5)
+					arg_8_0.gameView_:PlayAudio("kill")
 				end
 			elseif var_8_7.y <= arg_8_0.oriHeight_ then
+				arg_8_0.gameView_:PlayAudio("back4")
+
 				var_8_7.y = arg_8_0.oriHeight_
 
 				if arg_8_0.addPointSkillEnable_ then
@@ -257,6 +262,8 @@ function var_0_0.Update(arg_8_0, arg_8_1)
 				var_8_18.y = var_8_21
 			end
 		elseif var_8_18.y <= arg_8_0.oriHeight_ then
+			arg_8_0.gameView_:PlayAudio("back4")
+
 			var_8_18.y = arg_8_0.oriHeight_
 			arg_8_0.catchingEmpty_ = false
 			arg_8_0.hooking_ = false
@@ -285,9 +292,11 @@ function var_0_0.Update(arg_8_0, arg_8_1)
 
 			if var_8_28.fishId == 7 then
 				if var_8_25 ~= arg_8_0.curTransThing_ then
+					arg_8_0.gameView_:PlayAudio("spring")
+
 					arg_8_0.curTransThing_ = var_8_25
 
-					local var_8_29 = Vector2.New(arg_8_0.curTransThing_.transform_.localPosition.x, arg_8_0.curTransThing_.transform_.localPosition.y)
+					local var_8_29 = Vector2.New(arg_8_0.curTransThing_.transform_.localPosition.x, arg_8_0.curTransThing_.transform_.localPosition.y + 64)
 
 					table.insert(arg_8_0.movePointList_, var_8_29)
 
@@ -328,6 +337,8 @@ function var_0_0.Update(arg_8_0, arg_8_1)
 					arg_8_0.hookTransform_.up = -Vector3.New(var_8_37.x, var_8_37.y, 0)
 				end
 			else
+				arg_8_0.gameView_:PlayAudio("catch")
+
 				arg_8_0.catchingThingIndex_ = var_8_24
 				arg_8_0.catching_ = true
 
@@ -465,6 +476,18 @@ end
 
 function var_0_0.OnHookReturn(arg_15_0)
 	arg_15_0:SetSpine("clue_take", true)
+
+	if not arg_15_0.playBackAudio_ then
+		if arg_15_0.addSpeedSkillEnable_ then
+			arg_15_0.gameView_:PlayAudio("back1")
+			arg_15_0.gameView_:PlayAudio("back2")
+		else
+			arg_15_0.gameView_:PlayAudio("back1")
+			arg_15_0.gameView_:PlayAudio("back3")
+		end
+
+		arg_15_0.playBackAudio_ = true
+	end
 
 	if not arg_15_0.isCallBackFunc_ and arg_15_0.backFunc_ then
 		arg_15_0.backFunc_()

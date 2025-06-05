@@ -21,6 +21,8 @@ function var_0_0.InitUI(arg_4_0)
 	for iter_4_0 = 1, 6 do
 		arg_4_0.itemList_[iter_4_0] = CivilizationHeroHexItem.New(arg_4_0["hex" .. iter_4_0 .. "Go_"])
 	end
+
+	arg_4_0.heroController_ = arg_4_0.heroControllerEx_:GetController("iconhero")
 end
 
 function var_0_0.AddUIListener(arg_5_0)
@@ -40,7 +42,12 @@ function var_0_0.RefreshUI(arg_8_0)
 
 	arg_8_0.nameText_.text = var_8_0.name
 	arg_8_0.descText_.text = var_8_0.description
-	arg_8_0.heroImg_.sprite = getSpriteWithoutAtlas(var_8_0.image)
+
+	if arg_8_0.heroID_ == 1 then
+		arg_8_0.heroController_:SetSelectedIndex(1)
+	else
+		arg_8_0.heroController_:SetSelectedIndex(0)
+	end
 
 	local var_8_1 = {}
 
@@ -78,6 +85,12 @@ function var_0_0.Dispose(arg_11_0)
 
 	var_0_0.super.Dispose(arg_11_0)
 	Object.Destroy(arg_11_0.gameObject_)
+end
+
+function var_0_0.OnExitInput(arg_12_0)
+	JumpTools.Back()
+
+	return true
 end
 
 return var_0_0

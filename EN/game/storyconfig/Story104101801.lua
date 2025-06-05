@@ -388,145 +388,153 @@
 			local var_16_0 = "10059"
 
 			if arg_13_1.actors_[var_16_0] == nil then
-				local var_16_1 = Object.Instantiate(Asset.Load("Widget/System/Story/StoryExpression/" .. var_16_0), arg_13_1.canvasGo_.transform)
+				local var_16_1 = Asset.Load("Widget/System/Story/StoryExpression/" .. "10059")
 
-				var_16_1.transform:SetSiblingIndex(1)
+				if not isNil(var_16_1) then
+					local var_16_2 = Object.Instantiate(var_16_1, arg_13_1.canvasGo_.transform)
 
-				var_16_1.name = var_16_0
-				var_16_1.transform.localPosition = Vector3.New(0, 100000, 0)
-				arg_13_1.actors_[var_16_0] = var_16_1
+					var_16_2.transform:SetSiblingIndex(1)
 
-				local var_16_2 = var_16_1:GetComponentsInChildren(typeof(Image), true):ToTable()
+					var_16_2.name = var_16_0
+					var_16_2.transform.localPosition = Vector3.New(0, 100000, 0)
+					arg_13_1.actors_[var_16_0] = var_16_2
 
-				if arg_13_1.isInRecall_ then
-					for iter_16_0, iter_16_1 in ipairs(var_16_2) do
-						iter_16_1.color = Color.New(0.82, 0.77, 0.62)
+					local var_16_3 = var_16_2:GetComponentsInChildren(typeof(Image), true):ToTable()
+
+					if arg_13_1.isInRecall_ then
+						for iter_16_0, iter_16_1 in ipairs(var_16_3) do
+							iter_16_1.color = Color.New(0.82, 0.77, 0.62)
+						end
 					end
 				end
 			end
 
-			local var_16_3 = arg_13_1.actors_["10059"].transform
-			local var_16_4 = 0
+			local var_16_4 = arg_13_1.actors_["10059"].transform
+			local var_16_5 = 0
 
-			if var_16_4 < arg_13_1.time_ and arg_13_1.time_ <= var_16_4 + arg_16_0 then
-				arg_13_1.var_.moveOldPos10059 = var_16_3.localPosition
-				var_16_3.localScale = Vector3.New(1, 1, 1)
+			if var_16_5 < arg_13_1.time_ and arg_13_1.time_ <= var_16_5 + arg_16_0 then
+				arg_13_1.var_.moveOldPos10059 = var_16_4.localPosition
+				var_16_4.localScale = Vector3.New(1, 1, 1)
 
 				arg_13_1:CheckSpriteTmpPos("10059", 2)
 
-				local var_16_5 = var_16_3.childCount
+				local var_16_6 = var_16_4.childCount
 
-				for iter_16_2 = 0, var_16_5 - 1 do
-					local var_16_6 = var_16_3:GetChild(iter_16_2)
+				for iter_16_2 = 0, var_16_6 - 1 do
+					local var_16_7 = var_16_4:GetChild(iter_16_2)
 
-					if var_16_6.name == "" or not string.find(var_16_6.name, "split") then
-						var_16_6.gameObject:SetActive(true)
+					if var_16_7.name == "" or not string.find(var_16_7.name, "split") then
+						var_16_7.gameObject:SetActive(true)
 					else
-						var_16_6.gameObject:SetActive(false)
+						var_16_7.gameObject:SetActive(false)
 					end
 				end
 			end
 
-			local var_16_7 = 0.001
+			local var_16_8 = 0.001
 
-			if var_16_4 <= arg_13_1.time_ and arg_13_1.time_ < var_16_4 + var_16_7 then
-				local var_16_8 = (arg_13_1.time_ - var_16_4) / var_16_7
-				local var_16_9 = Vector3.New(-390, -530, 35)
+			if var_16_5 <= arg_13_1.time_ and arg_13_1.time_ < var_16_5 + var_16_8 then
+				local var_16_9 = (arg_13_1.time_ - var_16_5) / var_16_8
+				local var_16_10 = Vector3.New(-390, -530, 35)
 
-				var_16_3.localPosition = Vector3.Lerp(arg_13_1.var_.moveOldPos10059, var_16_9, var_16_8)
+				var_16_4.localPosition = Vector3.Lerp(arg_13_1.var_.moveOldPos10059, var_16_10, var_16_9)
 			end
 
-			if arg_13_1.time_ >= var_16_4 + var_16_7 and arg_13_1.time_ < var_16_4 + var_16_7 + arg_16_0 then
-				var_16_3.localPosition = Vector3.New(-390, -530, 35)
+			if arg_13_1.time_ >= var_16_5 + var_16_8 and arg_13_1.time_ < var_16_5 + var_16_8 + arg_16_0 then
+				var_16_4.localPosition = Vector3.New(-390, -530, 35)
 			end
 
-			local var_16_10 = "1061"
+			local var_16_11 = "1061"
 
-			if arg_13_1.actors_[var_16_10] == nil then
-				local var_16_11 = Object.Instantiate(Asset.Load("Widget/System/Story/StoryExpression/" .. var_16_10), arg_13_1.canvasGo_.transform)
+			if arg_13_1.actors_[var_16_11] == nil then
+				local var_16_12 = Asset.Load("Widget/System/Story/StoryExpression/" .. "1061")
 
-				var_16_11.transform:SetSiblingIndex(1)
+				if not isNil(var_16_12) then
+					local var_16_13 = Object.Instantiate(var_16_12, arg_13_1.canvasGo_.transform)
 
-				var_16_11.name = var_16_10
-				var_16_11.transform.localPosition = Vector3.New(0, 100000, 0)
-				arg_13_1.actors_[var_16_10] = var_16_11
+					var_16_13.transform:SetSiblingIndex(1)
 
-				local var_16_12 = var_16_11:GetComponentsInChildren(typeof(Image), true):ToTable()
+					var_16_13.name = var_16_11
+					var_16_13.transform.localPosition = Vector3.New(0, 100000, 0)
+					arg_13_1.actors_[var_16_11] = var_16_13
 
-				if arg_13_1.isInRecall_ then
-					for iter_16_3, iter_16_4 in ipairs(var_16_12) do
-						iter_16_4.color = Color.New(0.82, 0.77, 0.62)
+					local var_16_14 = var_16_13:GetComponentsInChildren(typeof(Image), true):ToTable()
+
+					if arg_13_1.isInRecall_ then
+						for iter_16_3, iter_16_4 in ipairs(var_16_14) do
+							iter_16_4.color = Color.New(0.82, 0.77, 0.62)
+						end
 					end
 				end
 			end
 
-			local var_16_13 = arg_13_1.actors_["1061"].transform
-			local var_16_14 = 0
+			local var_16_15 = arg_13_1.actors_["1061"].transform
+			local var_16_16 = 0
 
-			if var_16_14 < arg_13_1.time_ and arg_13_1.time_ <= var_16_14 + arg_16_0 then
-				arg_13_1.var_.moveOldPos1061 = var_16_13.localPosition
-				var_16_13.localScale = Vector3.New(1, 1, 1)
+			if var_16_16 < arg_13_1.time_ and arg_13_1.time_ <= var_16_16 + arg_16_0 then
+				arg_13_1.var_.moveOldPos1061 = var_16_15.localPosition
+				var_16_15.localScale = Vector3.New(1, 1, 1)
 
 				arg_13_1:CheckSpriteTmpPos("1061", 4)
 
-				local var_16_15 = var_16_13.childCount
+				local var_16_17 = var_16_15.childCount
 
-				for iter_16_5 = 0, var_16_15 - 1 do
-					local var_16_16 = var_16_13:GetChild(iter_16_5)
+				for iter_16_5 = 0, var_16_17 - 1 do
+					local var_16_18 = var_16_15:GetChild(iter_16_5)
 
-					if var_16_16.name == "" or not string.find(var_16_16.name, "split") then
-						var_16_16.gameObject:SetActive(true)
+					if var_16_18.name == "" or not string.find(var_16_18.name, "split") then
+						var_16_18.gameObject:SetActive(true)
 					else
-						var_16_16.gameObject:SetActive(false)
+						var_16_18.gameObject:SetActive(false)
 					end
 				end
 			end
 
-			local var_16_17 = 0.001
+			local var_16_19 = 0.001
 
-			if var_16_14 <= arg_13_1.time_ and arg_13_1.time_ < var_16_14 + var_16_17 then
-				local var_16_18 = (arg_13_1.time_ - var_16_14) / var_16_17
-				local var_16_19 = Vector3.New(390, -490, 18)
+			if var_16_16 <= arg_13_1.time_ and arg_13_1.time_ < var_16_16 + var_16_19 then
+				local var_16_20 = (arg_13_1.time_ - var_16_16) / var_16_19
+				local var_16_21 = Vector3.New(390, -490, 18)
 
-				var_16_13.localPosition = Vector3.Lerp(arg_13_1.var_.moveOldPos1061, var_16_19, var_16_18)
+				var_16_15.localPosition = Vector3.Lerp(arg_13_1.var_.moveOldPos1061, var_16_21, var_16_20)
 			end
 
-			if arg_13_1.time_ >= var_16_14 + var_16_17 and arg_13_1.time_ < var_16_14 + var_16_17 + arg_16_0 then
-				var_16_13.localPosition = Vector3.New(390, -490, 18)
+			if arg_13_1.time_ >= var_16_16 + var_16_19 and arg_13_1.time_ < var_16_16 + var_16_19 + arg_16_0 then
+				var_16_15.localPosition = Vector3.New(390, -490, 18)
 			end
 
-			local var_16_20 = arg_13_1.actors_["10059"]
-			local var_16_21 = 0
+			local var_16_22 = arg_13_1.actors_["10059"]
+			local var_16_23 = 0
 
-			if var_16_21 < arg_13_1.time_ and arg_13_1.time_ <= var_16_21 + arg_16_0 and arg_13_1.var_.actorSpriteComps10059 == nil then
-				arg_13_1.var_.actorSpriteComps10059 = var_16_20:GetComponentsInChildren(typeof(Image), true)
+			if var_16_23 < arg_13_1.time_ and arg_13_1.time_ <= var_16_23 + arg_16_0 and not isNil(var_16_22) and arg_13_1.var_.actorSpriteComps10059 == nil then
+				arg_13_1.var_.actorSpriteComps10059 = var_16_22:GetComponentsInChildren(typeof(Image), true)
 			end
 
-			local var_16_22 = 0.034
+			local var_16_24 = 0.034
 
-			if var_16_21 <= arg_13_1.time_ and arg_13_1.time_ < var_16_21 + var_16_22 then
-				local var_16_23 = (arg_13_1.time_ - var_16_21) / var_16_22
+			if var_16_23 <= arg_13_1.time_ and arg_13_1.time_ < var_16_23 + var_16_24 and not isNil(var_16_22) then
+				local var_16_25 = (arg_13_1.time_ - var_16_23) / var_16_24
 
 				if arg_13_1.var_.actorSpriteComps10059 then
 					for iter_16_6, iter_16_7 in pairs(arg_13_1.var_.actorSpriteComps10059:ToTable()) do
 						if iter_16_7 then
 							if arg_13_1.isInRecall_ then
-								local var_16_24 = Mathf.Lerp(iter_16_7.color.r, 0.82, var_16_23)
-								local var_16_25 = Mathf.Lerp(iter_16_7.color.g, 0.77, var_16_23)
-								local var_16_26 = Mathf.Lerp(iter_16_7.color.b, 0.62, var_16_23)
+								local var_16_26 = Mathf.Lerp(iter_16_7.color.r, 0.82, var_16_25)
+								local var_16_27 = Mathf.Lerp(iter_16_7.color.g, 0.77, var_16_25)
+								local var_16_28 = Mathf.Lerp(iter_16_7.color.b, 0.62, var_16_25)
 
-								iter_16_7.color = Color.New(var_16_24, var_16_25, var_16_26)
+								iter_16_7.color = Color.New(var_16_26, var_16_27, var_16_28)
 							else
-								local var_16_27 = Mathf.Lerp(iter_16_7.color.r, 1, var_16_23)
+								local var_16_29 = Mathf.Lerp(iter_16_7.color.r, 1, var_16_25)
 
-								iter_16_7.color = Color.New(var_16_27, var_16_27, var_16_27)
+								iter_16_7.color = Color.New(var_16_29, var_16_29, var_16_29)
 							end
 						end
 					end
 				end
 			end
 
-			if arg_13_1.time_ >= var_16_21 + var_16_22 and arg_13_1.time_ < var_16_21 + var_16_22 + arg_16_0 and arg_13_1.var_.actorSpriteComps10059 then
+			if arg_13_1.time_ >= var_16_23 + var_16_24 and arg_13_1.time_ < var_16_23 + var_16_24 + arg_16_0 and not isNil(var_16_22) and arg_13_1.var_.actorSpriteComps10059 then
 				for iter_16_8, iter_16_9 in pairs(arg_13_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_16_9 then
 						if arg_13_1.isInRecall_ then
@@ -540,38 +548,38 @@
 				arg_13_1.var_.actorSpriteComps10059 = nil
 			end
 
-			local var_16_28 = arg_13_1.actors_["1061"]
-			local var_16_29 = 0
+			local var_16_30 = arg_13_1.actors_["1061"]
+			local var_16_31 = 0
 
-			if var_16_29 < arg_13_1.time_ and arg_13_1.time_ <= var_16_29 + arg_16_0 and arg_13_1.var_.actorSpriteComps1061 == nil then
-				arg_13_1.var_.actorSpriteComps1061 = var_16_28:GetComponentsInChildren(typeof(Image), true)
+			if var_16_31 < arg_13_1.time_ and arg_13_1.time_ <= var_16_31 + arg_16_0 and not isNil(var_16_30) and arg_13_1.var_.actorSpriteComps1061 == nil then
+				arg_13_1.var_.actorSpriteComps1061 = var_16_30:GetComponentsInChildren(typeof(Image), true)
 			end
 
-			local var_16_30 = 0.034
+			local var_16_32 = 0.034
 
-			if var_16_29 <= arg_13_1.time_ and arg_13_1.time_ < var_16_29 + var_16_30 then
-				local var_16_31 = (arg_13_1.time_ - var_16_29) / var_16_30
+			if var_16_31 <= arg_13_1.time_ and arg_13_1.time_ < var_16_31 + var_16_32 and not isNil(var_16_30) then
+				local var_16_33 = (arg_13_1.time_ - var_16_31) / var_16_32
 
 				if arg_13_1.var_.actorSpriteComps1061 then
 					for iter_16_10, iter_16_11 in pairs(arg_13_1.var_.actorSpriteComps1061:ToTable()) do
 						if iter_16_11 then
 							if arg_13_1.isInRecall_ then
-								local var_16_32 = Mathf.Lerp(iter_16_11.color.r, 0.46, var_16_31)
-								local var_16_33 = Mathf.Lerp(iter_16_11.color.g, 0.43, var_16_31)
-								local var_16_34 = Mathf.Lerp(iter_16_11.color.b, 0.35, var_16_31)
+								local var_16_34 = Mathf.Lerp(iter_16_11.color.r, 0.46, var_16_33)
+								local var_16_35 = Mathf.Lerp(iter_16_11.color.g, 0.43, var_16_33)
+								local var_16_36 = Mathf.Lerp(iter_16_11.color.b, 0.35, var_16_33)
 
-								iter_16_11.color = Color.New(var_16_32, var_16_33, var_16_34)
+								iter_16_11.color = Color.New(var_16_34, var_16_35, var_16_36)
 							else
-								local var_16_35 = Mathf.Lerp(iter_16_11.color.r, 0.5, var_16_31)
+								local var_16_37 = Mathf.Lerp(iter_16_11.color.r, 0.5, var_16_33)
 
-								iter_16_11.color = Color.New(var_16_35, var_16_35, var_16_35)
+								iter_16_11.color = Color.New(var_16_37, var_16_37, var_16_37)
 							end
 						end
 					end
 				end
 			end
 
-			if arg_13_1.time_ >= var_16_29 + var_16_30 and arg_13_1.time_ < var_16_29 + var_16_30 + arg_16_0 and arg_13_1.var_.actorSpriteComps1061 then
+			if arg_13_1.time_ >= var_16_31 + var_16_32 and arg_13_1.time_ < var_16_31 + var_16_32 + arg_16_0 and not isNil(var_16_30) and arg_13_1.var_.actorSpriteComps1061 then
 				for iter_16_12, iter_16_13 in pairs(arg_13_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_16_13 then
 						if arg_13_1.isInRecall_ then
@@ -585,19 +593,19 @@
 				arg_13_1.var_.actorSpriteComps1061 = nil
 			end
 
-			local var_16_36 = 0
-			local var_16_37 = 0.15
+			local var_16_38 = 0
+			local var_16_39 = 0.15
 
-			if var_16_36 < arg_13_1.time_ and arg_13_1.time_ <= var_16_36 + arg_16_0 then
+			if var_16_38 < arg_13_1.time_ and arg_13_1.time_ <= var_16_38 + arg_16_0 then
 				arg_13_1.talkMaxDuration = 0
 				arg_13_1.dialogCg_.alpha = 1
 
 				arg_13_1.dialog_:SetActive(true)
 				SetActive(arg_13_1.leftNameGo_, true)
 
-				local var_16_38 = arg_13_1:FormatText(StoryNameCfg[596].name)
+				local var_16_40 = arg_13_1:FormatText(StoryNameCfg[596].name)
 
-				arg_13_1.leftNameTxt_.text = var_16_38
+				arg_13_1.leftNameTxt_.text = var_16_40
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_13_1.leftNameTxt_.transform)
 
@@ -608,43 +616,43 @@
 				SetActive(arg_13_1.iconTrs_.gameObject, false)
 				arg_13_1.callingController_:SetSelectedState("normal")
 
-				local var_16_39 = arg_13_1:GetWordFromCfg(410181003)
-				local var_16_40 = arg_13_1:FormatText(var_16_39.content)
+				local var_16_41 = arg_13_1:GetWordFromCfg(410181003)
+				local var_16_42 = arg_13_1:FormatText(var_16_41.content)
 
-				arg_13_1.text_.text = var_16_40
+				arg_13_1.text_.text = var_16_42
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_13_1.text_)
 
-				local var_16_41 = 6
-				local var_16_42 = utf8.len(var_16_40)
-				local var_16_43 = var_16_41 <= 0 and var_16_37 or var_16_37 * (var_16_42 / var_16_41)
+				local var_16_43 = 6
+				local var_16_44 = utf8.len(var_16_42)
+				local var_16_45 = var_16_43 <= 0 and var_16_39 or var_16_39 * (var_16_44 / var_16_43)
 
-				if var_16_43 > 0 and var_16_37 < var_16_43 then
-					arg_13_1.talkMaxDuration = var_16_43
+				if var_16_45 > 0 and var_16_39 < var_16_45 then
+					arg_13_1.talkMaxDuration = var_16_45
 
-					if var_16_43 + var_16_36 > arg_13_1.duration_ then
-						arg_13_1.duration_ = var_16_43 + var_16_36
+					if var_16_45 + var_16_38 > arg_13_1.duration_ then
+						arg_13_1.duration_ = var_16_45 + var_16_38
 					end
 				end
 
-				arg_13_1.text_.text = var_16_40
+				arg_13_1.text_.text = var_16_42
 				arg_13_1.typewritter.percent = 0
 
 				arg_13_1.typewritter:SetDirty()
 				arg_13_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_410181", "410181003", "story_v_out_410181.awb") ~= 0 then
-					local var_16_44 = manager.audio:GetVoiceLength("story_v_out_410181", "410181003", "story_v_out_410181.awb") / 1000
+					local var_16_46 = manager.audio:GetVoiceLength("story_v_out_410181", "410181003", "story_v_out_410181.awb") / 1000
 
-					if var_16_44 + var_16_36 > arg_13_1.duration_ then
-						arg_13_1.duration_ = var_16_44 + var_16_36
+					if var_16_46 + var_16_38 > arg_13_1.duration_ then
+						arg_13_1.duration_ = var_16_46 + var_16_38
 					end
 
-					if var_16_39.prefab_name ~= "" and arg_13_1.actors_[var_16_39.prefab_name] ~= nil then
-						local var_16_45 = LuaForUtil.PlayVoiceWithCriLipsync(arg_13_1.actors_[var_16_39.prefab_name].transform, "story_v_out_410181", "410181003", "story_v_out_410181.awb")
+					if var_16_41.prefab_name ~= "" and arg_13_1.actors_[var_16_41.prefab_name] ~= nil then
+						local var_16_47 = LuaForUtil.PlayVoiceWithCriLipsync(arg_13_1.actors_[var_16_41.prefab_name].transform, "story_v_out_410181", "410181003", "story_v_out_410181.awb")
 
-						arg_13_1:RecordAudio("410181003", var_16_45)
-						arg_13_1:RecordAudio("410181003", var_16_45)
+						arg_13_1:RecordAudio("410181003", var_16_47)
+						arg_13_1:RecordAudio("410181003", var_16_47)
 					else
 						arg_13_1:AudioAction("play", "voice", "story_v_out_410181", "410181003", "story_v_out_410181.awb")
 					end
@@ -655,15 +663,15 @@
 				arg_13_1:RecordContent(arg_13_1.text_.text)
 			end
 
-			local var_16_46 = math.max(var_16_37, arg_13_1.talkMaxDuration)
+			local var_16_48 = math.max(var_16_39, arg_13_1.talkMaxDuration)
 
-			if var_16_36 <= arg_13_1.time_ and arg_13_1.time_ < var_16_36 + var_16_46 then
-				arg_13_1.typewritter.percent = (arg_13_1.time_ - var_16_36) / var_16_46
+			if var_16_38 <= arg_13_1.time_ and arg_13_1.time_ < var_16_38 + var_16_48 then
+				arg_13_1.typewritter.percent = (arg_13_1.time_ - var_16_38) / var_16_48
 
 				arg_13_1.typewritter:SetDirty()
 			end
 
-			if arg_13_1.time_ >= var_16_36 + var_16_46 and arg_13_1.time_ < var_16_36 + var_16_46 + arg_16_0 then
+			if arg_13_1.time_ >= var_16_38 + var_16_48 and arg_13_1.time_ < var_16_38 + var_16_48 + arg_16_0 then
 				arg_13_1.typewritter.percent = 1
 
 				arg_13_1.typewritter:SetDirty()
@@ -742,13 +750,13 @@
 			local var_20_7 = arg_17_1.actors_["1061"]
 			local var_20_8 = 0
 
-			if var_20_8 < arg_17_1.time_ and arg_17_1.time_ <= var_20_8 + arg_20_0 and arg_17_1.var_.actorSpriteComps1061 == nil then
+			if var_20_8 < arg_17_1.time_ and arg_17_1.time_ <= var_20_8 + arg_20_0 and not isNil(var_20_7) and arg_17_1.var_.actorSpriteComps1061 == nil then
 				arg_17_1.var_.actorSpriteComps1061 = var_20_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_20_9 = 0.034
 
-			if var_20_8 <= arg_17_1.time_ and arg_17_1.time_ < var_20_8 + var_20_9 then
+			if var_20_8 <= arg_17_1.time_ and arg_17_1.time_ < var_20_8 + var_20_9 and not isNil(var_20_7) then
 				local var_20_10 = (arg_17_1.time_ - var_20_8) / var_20_9
 
 				if arg_17_1.var_.actorSpriteComps1061 then
@@ -770,7 +778,7 @@
 				end
 			end
 
-			if arg_17_1.time_ >= var_20_8 + var_20_9 and arg_17_1.time_ < var_20_8 + var_20_9 + arg_20_0 and arg_17_1.var_.actorSpriteComps1061 then
+			if arg_17_1.time_ >= var_20_8 + var_20_9 and arg_17_1.time_ < var_20_8 + var_20_9 + arg_20_0 and not isNil(var_20_7) and arg_17_1.var_.actorSpriteComps1061 then
 				for iter_20_3, iter_20_4 in pairs(arg_17_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_20_4 then
 						if arg_17_1.isInRecall_ then
@@ -787,13 +795,13 @@
 			local var_20_15 = arg_17_1.actors_["10059"]
 			local var_20_16 = 0
 
-			if var_20_16 < arg_17_1.time_ and arg_17_1.time_ <= var_20_16 + arg_20_0 and arg_17_1.var_.actorSpriteComps10059 == nil then
+			if var_20_16 < arg_17_1.time_ and arg_17_1.time_ <= var_20_16 + arg_20_0 and not isNil(var_20_15) and arg_17_1.var_.actorSpriteComps10059 == nil then
 				arg_17_1.var_.actorSpriteComps10059 = var_20_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_20_17 = 0.034
 
-			if var_20_16 <= arg_17_1.time_ and arg_17_1.time_ < var_20_16 + var_20_17 then
+			if var_20_16 <= arg_17_1.time_ and arg_17_1.time_ < var_20_16 + var_20_17 and not isNil(var_20_15) then
 				local var_20_18 = (arg_17_1.time_ - var_20_16) / var_20_17
 
 				if arg_17_1.var_.actorSpriteComps10059 then
@@ -815,7 +823,7 @@
 				end
 			end
 
-			if arg_17_1.time_ >= var_20_16 + var_20_17 and arg_17_1.time_ < var_20_16 + var_20_17 + arg_20_0 and arg_17_1.var_.actorSpriteComps10059 then
+			if arg_17_1.time_ >= var_20_16 + var_20_17 and arg_17_1.time_ < var_20_16 + var_20_17 + arg_20_0 and not isNil(var_20_15) and arg_17_1.var_.actorSpriteComps10059 then
 				for iter_20_7, iter_20_8 in pairs(arg_17_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_20_8 then
 						if arg_17_1.isInRecall_ then
@@ -986,13 +994,13 @@
 			local var_24_7 = arg_21_1.actors_["10059"]
 			local var_24_8 = 0
 
-			if var_24_8 < arg_21_1.time_ and arg_21_1.time_ <= var_24_8 + arg_24_0 and arg_21_1.var_.actorSpriteComps10059 == nil then
+			if var_24_8 < arg_21_1.time_ and arg_21_1.time_ <= var_24_8 + arg_24_0 and not isNil(var_24_7) and arg_21_1.var_.actorSpriteComps10059 == nil then
 				arg_21_1.var_.actorSpriteComps10059 = var_24_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_24_9 = 0.034
 
-			if var_24_8 <= arg_21_1.time_ and arg_21_1.time_ < var_24_8 + var_24_9 then
+			if var_24_8 <= arg_21_1.time_ and arg_21_1.time_ < var_24_8 + var_24_9 and not isNil(var_24_7) then
 				local var_24_10 = (arg_21_1.time_ - var_24_8) / var_24_9
 
 				if arg_21_1.var_.actorSpriteComps10059 then
@@ -1014,7 +1022,7 @@
 				end
 			end
 
-			if arg_21_1.time_ >= var_24_8 + var_24_9 and arg_21_1.time_ < var_24_8 + var_24_9 + arg_24_0 and arg_21_1.var_.actorSpriteComps10059 then
+			if arg_21_1.time_ >= var_24_8 + var_24_9 and arg_21_1.time_ < var_24_8 + var_24_9 + arg_24_0 and not isNil(var_24_7) and arg_21_1.var_.actorSpriteComps10059 then
 				for iter_24_3, iter_24_4 in pairs(arg_21_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_24_4 then
 						if arg_21_1.isInRecall_ then
@@ -1031,13 +1039,13 @@
 			local var_24_15 = arg_21_1.actors_["1061"]
 			local var_24_16 = 0
 
-			if var_24_16 < arg_21_1.time_ and arg_21_1.time_ <= var_24_16 + arg_24_0 and arg_21_1.var_.actorSpriteComps1061 == nil then
+			if var_24_16 < arg_21_1.time_ and arg_21_1.time_ <= var_24_16 + arg_24_0 and not isNil(var_24_15) and arg_21_1.var_.actorSpriteComps1061 == nil then
 				arg_21_1.var_.actorSpriteComps1061 = var_24_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_24_17 = 0.034
 
-			if var_24_16 <= arg_21_1.time_ and arg_21_1.time_ < var_24_16 + var_24_17 then
+			if var_24_16 <= arg_21_1.time_ and arg_21_1.time_ < var_24_16 + var_24_17 and not isNil(var_24_15) then
 				local var_24_18 = (arg_21_1.time_ - var_24_16) / var_24_17
 
 				if arg_21_1.var_.actorSpriteComps1061 then
@@ -1059,7 +1067,7 @@
 				end
 			end
 
-			if arg_21_1.time_ >= var_24_16 + var_24_17 and arg_21_1.time_ < var_24_16 + var_24_17 + arg_24_0 and arg_21_1.var_.actorSpriteComps1061 then
+			if arg_21_1.time_ >= var_24_16 + var_24_17 and arg_21_1.time_ < var_24_16 + var_24_17 + arg_24_0 and not isNil(var_24_15) and arg_21_1.var_.actorSpriteComps1061 then
 				for iter_24_7, iter_24_8 in pairs(arg_21_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_24_8 then
 						if arg_21_1.isInRecall_ then
@@ -1184,13 +1192,13 @@
 			local var_28_0 = arg_25_1.actors_["10059"]
 			local var_28_1 = 0
 
-			if var_28_1 < arg_25_1.time_ and arg_25_1.time_ <= var_28_1 + arg_28_0 and arg_25_1.var_.actorSpriteComps10059 == nil then
+			if var_28_1 < arg_25_1.time_ and arg_25_1.time_ <= var_28_1 + arg_28_0 and not isNil(var_28_0) and arg_25_1.var_.actorSpriteComps10059 == nil then
 				arg_25_1.var_.actorSpriteComps10059 = var_28_0:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_28_2 = 0.034
 
-			if var_28_1 <= arg_25_1.time_ and arg_25_1.time_ < var_28_1 + var_28_2 then
+			if var_28_1 <= arg_25_1.time_ and arg_25_1.time_ < var_28_1 + var_28_2 and not isNil(var_28_0) then
 				local var_28_3 = (arg_25_1.time_ - var_28_1) / var_28_2
 
 				if arg_25_1.var_.actorSpriteComps10059 then
@@ -1212,7 +1220,7 @@
 				end
 			end
 
-			if arg_25_1.time_ >= var_28_1 + var_28_2 and arg_25_1.time_ < var_28_1 + var_28_2 + arg_28_0 and arg_25_1.var_.actorSpriteComps10059 then
+			if arg_25_1.time_ >= var_28_1 + var_28_2 and arg_25_1.time_ < var_28_1 + var_28_2 + arg_28_0 and not isNil(var_28_0) and arg_25_1.var_.actorSpriteComps10059 then
 				for iter_28_2, iter_28_3 in pairs(arg_25_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_28_3 then
 						if arg_25_1.isInRecall_ then
@@ -1229,13 +1237,13 @@
 			local var_28_8 = arg_25_1.actors_["1061"]
 			local var_28_9 = 0
 
-			if var_28_9 < arg_25_1.time_ and arg_25_1.time_ <= var_28_9 + arg_28_0 and arg_25_1.var_.actorSpriteComps1061 == nil then
+			if var_28_9 < arg_25_1.time_ and arg_25_1.time_ <= var_28_9 + arg_28_0 and not isNil(var_28_8) and arg_25_1.var_.actorSpriteComps1061 == nil then
 				arg_25_1.var_.actorSpriteComps1061 = var_28_8:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_28_10 = 0.034
 
-			if var_28_9 <= arg_25_1.time_ and arg_25_1.time_ < var_28_9 + var_28_10 then
+			if var_28_9 <= arg_25_1.time_ and arg_25_1.time_ < var_28_9 + var_28_10 and not isNil(var_28_8) then
 				local var_28_11 = (arg_25_1.time_ - var_28_9) / var_28_10
 
 				if arg_25_1.var_.actorSpriteComps1061 then
@@ -1257,7 +1265,7 @@
 				end
 			end
 
-			if arg_25_1.time_ >= var_28_9 + var_28_10 and arg_25_1.time_ < var_28_9 + var_28_10 + arg_28_0 and arg_25_1.var_.actorSpriteComps1061 then
+			if arg_25_1.time_ >= var_28_9 + var_28_10 and arg_25_1.time_ < var_28_9 + var_28_10 + arg_28_0 and not isNil(var_28_8) and arg_25_1.var_.actorSpriteComps1061 then
 				for iter_28_6, iter_28_7 in pairs(arg_25_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_28_7 then
 						if arg_25_1.isInRecall_ then
@@ -1402,13 +1410,13 @@
 			local var_32_7 = arg_29_1.actors_["1061"]
 			local var_32_8 = 0
 
-			if var_32_8 < arg_29_1.time_ and arg_29_1.time_ <= var_32_8 + arg_32_0 and arg_29_1.var_.actorSpriteComps1061 == nil then
+			if var_32_8 < arg_29_1.time_ and arg_29_1.time_ <= var_32_8 + arg_32_0 and not isNil(var_32_7) and arg_29_1.var_.actorSpriteComps1061 == nil then
 				arg_29_1.var_.actorSpriteComps1061 = var_32_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_32_9 = 0.034
 
-			if var_32_8 <= arg_29_1.time_ and arg_29_1.time_ < var_32_8 + var_32_9 then
+			if var_32_8 <= arg_29_1.time_ and arg_29_1.time_ < var_32_8 + var_32_9 and not isNil(var_32_7) then
 				local var_32_10 = (arg_29_1.time_ - var_32_8) / var_32_9
 
 				if arg_29_1.var_.actorSpriteComps1061 then
@@ -1430,7 +1438,7 @@
 				end
 			end
 
-			if arg_29_1.time_ >= var_32_8 + var_32_9 and arg_29_1.time_ < var_32_8 + var_32_9 + arg_32_0 and arg_29_1.var_.actorSpriteComps1061 then
+			if arg_29_1.time_ >= var_32_8 + var_32_9 and arg_29_1.time_ < var_32_8 + var_32_9 + arg_32_0 and not isNil(var_32_7) and arg_29_1.var_.actorSpriteComps1061 then
 				for iter_32_3, iter_32_4 in pairs(arg_29_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_32_4 then
 						if arg_29_1.isInRecall_ then
@@ -1601,13 +1609,13 @@
 			local var_36_7 = arg_33_1.actors_["1061"]
 			local var_36_8 = 0
 
-			if var_36_8 < arg_33_1.time_ and arg_33_1.time_ <= var_36_8 + arg_36_0 and arg_33_1.var_.actorSpriteComps1061 == nil then
+			if var_36_8 < arg_33_1.time_ and arg_33_1.time_ <= var_36_8 + arg_36_0 and not isNil(var_36_7) and arg_33_1.var_.actorSpriteComps1061 == nil then
 				arg_33_1.var_.actorSpriteComps1061 = var_36_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_36_9 = 0.034
 
-			if var_36_8 <= arg_33_1.time_ and arg_33_1.time_ < var_36_8 + var_36_9 then
+			if var_36_8 <= arg_33_1.time_ and arg_33_1.time_ < var_36_8 + var_36_9 and not isNil(var_36_7) then
 				local var_36_10 = (arg_33_1.time_ - var_36_8) / var_36_9
 
 				if arg_33_1.var_.actorSpriteComps1061 then
@@ -1629,7 +1637,7 @@
 				end
 			end
 
-			if arg_33_1.time_ >= var_36_8 + var_36_9 and arg_33_1.time_ < var_36_8 + var_36_9 + arg_36_0 and arg_33_1.var_.actorSpriteComps1061 then
+			if arg_33_1.time_ >= var_36_8 + var_36_9 and arg_33_1.time_ < var_36_8 + var_36_9 + arg_36_0 and not isNil(var_36_7) and arg_33_1.var_.actorSpriteComps1061 then
 				for iter_36_3, iter_36_4 in pairs(arg_33_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_36_4 then
 						if arg_33_1.isInRecall_ then
@@ -1800,13 +1808,13 @@
 			local var_40_7 = arg_37_1.actors_["10059"]
 			local var_40_8 = 0
 
-			if var_40_8 < arg_37_1.time_ and arg_37_1.time_ <= var_40_8 + arg_40_0 and arg_37_1.var_.actorSpriteComps10059 == nil then
+			if var_40_8 < arg_37_1.time_ and arg_37_1.time_ <= var_40_8 + arg_40_0 and not isNil(var_40_7) and arg_37_1.var_.actorSpriteComps10059 == nil then
 				arg_37_1.var_.actorSpriteComps10059 = var_40_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_40_9 = 0.034
 
-			if var_40_8 <= arg_37_1.time_ and arg_37_1.time_ < var_40_8 + var_40_9 then
+			if var_40_8 <= arg_37_1.time_ and arg_37_1.time_ < var_40_8 + var_40_9 and not isNil(var_40_7) then
 				local var_40_10 = (arg_37_1.time_ - var_40_8) / var_40_9
 
 				if arg_37_1.var_.actorSpriteComps10059 then
@@ -1828,7 +1836,7 @@
 				end
 			end
 
-			if arg_37_1.time_ >= var_40_8 + var_40_9 and arg_37_1.time_ < var_40_8 + var_40_9 + arg_40_0 and arg_37_1.var_.actorSpriteComps10059 then
+			if arg_37_1.time_ >= var_40_8 + var_40_9 and arg_37_1.time_ < var_40_8 + var_40_9 + arg_40_0 and not isNil(var_40_7) and arg_37_1.var_.actorSpriteComps10059 then
 				for iter_40_3, iter_40_4 in pairs(arg_37_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_40_4 then
 						if arg_37_1.isInRecall_ then
@@ -1845,13 +1853,13 @@
 			local var_40_15 = arg_37_1.actors_["1061"]
 			local var_40_16 = 0
 
-			if var_40_16 < arg_37_1.time_ and arg_37_1.time_ <= var_40_16 + arg_40_0 and arg_37_1.var_.actorSpriteComps1061 == nil then
+			if var_40_16 < arg_37_1.time_ and arg_37_1.time_ <= var_40_16 + arg_40_0 and not isNil(var_40_15) and arg_37_1.var_.actorSpriteComps1061 == nil then
 				arg_37_1.var_.actorSpriteComps1061 = var_40_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_40_17 = 0.034
 
-			if var_40_16 <= arg_37_1.time_ and arg_37_1.time_ < var_40_16 + var_40_17 then
+			if var_40_16 <= arg_37_1.time_ and arg_37_1.time_ < var_40_16 + var_40_17 and not isNil(var_40_15) then
 				local var_40_18 = (arg_37_1.time_ - var_40_16) / var_40_17
 
 				if arg_37_1.var_.actorSpriteComps1061 then
@@ -1873,7 +1881,7 @@
 				end
 			end
 
-			if arg_37_1.time_ >= var_40_16 + var_40_17 and arg_37_1.time_ < var_40_16 + var_40_17 + arg_40_0 and arg_37_1.var_.actorSpriteComps1061 then
+			if arg_37_1.time_ >= var_40_16 + var_40_17 and arg_37_1.time_ < var_40_16 + var_40_17 + arg_40_0 and not isNil(var_40_15) and arg_37_1.var_.actorSpriteComps1061 then
 				for iter_40_7, iter_40_8 in pairs(arg_37_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_40_8 then
 						if arg_37_1.isInRecall_ then
@@ -2044,13 +2052,13 @@
 			local var_44_7 = arg_41_1.actors_["1061"]
 			local var_44_8 = 0
 
-			if var_44_8 < arg_41_1.time_ and arg_41_1.time_ <= var_44_8 + arg_44_0 and arg_41_1.var_.actorSpriteComps1061 == nil then
+			if var_44_8 < arg_41_1.time_ and arg_41_1.time_ <= var_44_8 + arg_44_0 and not isNil(var_44_7) and arg_41_1.var_.actorSpriteComps1061 == nil then
 				arg_41_1.var_.actorSpriteComps1061 = var_44_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_44_9 = 0.034
 
-			if var_44_8 <= arg_41_1.time_ and arg_41_1.time_ < var_44_8 + var_44_9 then
+			if var_44_8 <= arg_41_1.time_ and arg_41_1.time_ < var_44_8 + var_44_9 and not isNil(var_44_7) then
 				local var_44_10 = (arg_41_1.time_ - var_44_8) / var_44_9
 
 				if arg_41_1.var_.actorSpriteComps1061 then
@@ -2072,7 +2080,7 @@
 				end
 			end
 
-			if arg_41_1.time_ >= var_44_8 + var_44_9 and arg_41_1.time_ < var_44_8 + var_44_9 + arg_44_0 and arg_41_1.var_.actorSpriteComps1061 then
+			if arg_41_1.time_ >= var_44_8 + var_44_9 and arg_41_1.time_ < var_44_8 + var_44_9 + arg_44_0 and not isNil(var_44_7) and arg_41_1.var_.actorSpriteComps1061 then
 				for iter_44_3, iter_44_4 in pairs(arg_41_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_44_4 then
 						if arg_41_1.isInRecall_ then
@@ -2089,13 +2097,13 @@
 			local var_44_15 = arg_41_1.actors_["10059"]
 			local var_44_16 = 0
 
-			if var_44_16 < arg_41_1.time_ and arg_41_1.time_ <= var_44_16 + arg_44_0 and arg_41_1.var_.actorSpriteComps10059 == nil then
+			if var_44_16 < arg_41_1.time_ and arg_41_1.time_ <= var_44_16 + arg_44_0 and not isNil(var_44_15) and arg_41_1.var_.actorSpriteComps10059 == nil then
 				arg_41_1.var_.actorSpriteComps10059 = var_44_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_44_17 = 0.034
 
-			if var_44_16 <= arg_41_1.time_ and arg_41_1.time_ < var_44_16 + var_44_17 then
+			if var_44_16 <= arg_41_1.time_ and arg_41_1.time_ < var_44_16 + var_44_17 and not isNil(var_44_15) then
 				local var_44_18 = (arg_41_1.time_ - var_44_16) / var_44_17
 
 				if arg_41_1.var_.actorSpriteComps10059 then
@@ -2117,7 +2125,7 @@
 				end
 			end
 
-			if arg_41_1.time_ >= var_44_16 + var_44_17 and arg_41_1.time_ < var_44_16 + var_44_17 + arg_44_0 and arg_41_1.var_.actorSpriteComps10059 then
+			if arg_41_1.time_ >= var_44_16 + var_44_17 and arg_41_1.time_ < var_44_16 + var_44_17 + arg_44_0 and not isNil(var_44_15) and arg_41_1.var_.actorSpriteComps10059 then
 				for iter_44_7, iter_44_8 in pairs(arg_41_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_44_8 then
 						if arg_41_1.isInRecall_ then
@@ -2288,13 +2296,13 @@
 			local var_48_7 = arg_45_1.actors_["1061"]
 			local var_48_8 = 0
 
-			if var_48_8 < arg_45_1.time_ and arg_45_1.time_ <= var_48_8 + arg_48_0 and arg_45_1.var_.actorSpriteComps1061 == nil then
+			if var_48_8 < arg_45_1.time_ and arg_45_1.time_ <= var_48_8 + arg_48_0 and not isNil(var_48_7) and arg_45_1.var_.actorSpriteComps1061 == nil then
 				arg_45_1.var_.actorSpriteComps1061 = var_48_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_48_9 = 0.034
 
-			if var_48_8 <= arg_45_1.time_ and arg_45_1.time_ < var_48_8 + var_48_9 then
+			if var_48_8 <= arg_45_1.time_ and arg_45_1.time_ < var_48_8 + var_48_9 and not isNil(var_48_7) then
 				local var_48_10 = (arg_45_1.time_ - var_48_8) / var_48_9
 
 				if arg_45_1.var_.actorSpriteComps1061 then
@@ -2316,7 +2324,7 @@
 				end
 			end
 
-			if arg_45_1.time_ >= var_48_8 + var_48_9 and arg_45_1.time_ < var_48_8 + var_48_9 + arg_48_0 and arg_45_1.var_.actorSpriteComps1061 then
+			if arg_45_1.time_ >= var_48_8 + var_48_9 and arg_45_1.time_ < var_48_8 + var_48_9 + arg_48_0 and not isNil(var_48_7) and arg_45_1.var_.actorSpriteComps1061 then
 				for iter_48_3, iter_48_4 in pairs(arg_45_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_48_4 then
 						if arg_45_1.isInRecall_ then
@@ -2487,13 +2495,13 @@
 			local var_52_7 = arg_49_1.actors_["10059"]
 			local var_52_8 = 0
 
-			if var_52_8 < arg_49_1.time_ and arg_49_1.time_ <= var_52_8 + arg_52_0 and arg_49_1.var_.actorSpriteComps10059 == nil then
+			if var_52_8 < arg_49_1.time_ and arg_49_1.time_ <= var_52_8 + arg_52_0 and not isNil(var_52_7) and arg_49_1.var_.actorSpriteComps10059 == nil then
 				arg_49_1.var_.actorSpriteComps10059 = var_52_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_52_9 = 0.034
 
-			if var_52_8 <= arg_49_1.time_ and arg_49_1.time_ < var_52_8 + var_52_9 then
+			if var_52_8 <= arg_49_1.time_ and arg_49_1.time_ < var_52_8 + var_52_9 and not isNil(var_52_7) then
 				local var_52_10 = (arg_49_1.time_ - var_52_8) / var_52_9
 
 				if arg_49_1.var_.actorSpriteComps10059 then
@@ -2515,7 +2523,7 @@
 				end
 			end
 
-			if arg_49_1.time_ >= var_52_8 + var_52_9 and arg_49_1.time_ < var_52_8 + var_52_9 + arg_52_0 and arg_49_1.var_.actorSpriteComps10059 then
+			if arg_49_1.time_ >= var_52_8 + var_52_9 and arg_49_1.time_ < var_52_8 + var_52_9 + arg_52_0 and not isNil(var_52_7) and arg_49_1.var_.actorSpriteComps10059 then
 				for iter_52_3, iter_52_4 in pairs(arg_49_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_52_4 then
 						if arg_49_1.isInRecall_ then
@@ -2532,13 +2540,13 @@
 			local var_52_15 = arg_49_1.actors_["1061"]
 			local var_52_16 = 0
 
-			if var_52_16 < arg_49_1.time_ and arg_49_1.time_ <= var_52_16 + arg_52_0 and arg_49_1.var_.actorSpriteComps1061 == nil then
+			if var_52_16 < arg_49_1.time_ and arg_49_1.time_ <= var_52_16 + arg_52_0 and not isNil(var_52_15) and arg_49_1.var_.actorSpriteComps1061 == nil then
 				arg_49_1.var_.actorSpriteComps1061 = var_52_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_52_17 = 0.034
 
-			if var_52_16 <= arg_49_1.time_ and arg_49_1.time_ < var_52_16 + var_52_17 then
+			if var_52_16 <= arg_49_1.time_ and arg_49_1.time_ < var_52_16 + var_52_17 and not isNil(var_52_15) then
 				local var_52_18 = (arg_49_1.time_ - var_52_16) / var_52_17
 
 				if arg_49_1.var_.actorSpriteComps1061 then
@@ -2560,7 +2568,7 @@
 				end
 			end
 
-			if arg_49_1.time_ >= var_52_16 + var_52_17 and arg_49_1.time_ < var_52_16 + var_52_17 + arg_52_0 and arg_49_1.var_.actorSpriteComps1061 then
+			if arg_49_1.time_ >= var_52_16 + var_52_17 and arg_49_1.time_ < var_52_16 + var_52_17 + arg_52_0 and not isNil(var_52_15) and arg_49_1.var_.actorSpriteComps1061 then
 				for iter_52_7, iter_52_8 in pairs(arg_49_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_52_8 then
 						if arg_49_1.isInRecall_ then
@@ -2731,13 +2739,13 @@
 			local var_56_7 = arg_53_1.actors_["10059"]
 			local var_56_8 = 0
 
-			if var_56_8 < arg_53_1.time_ and arg_53_1.time_ <= var_56_8 + arg_56_0 and arg_53_1.var_.actorSpriteComps10059 == nil then
+			if var_56_8 < arg_53_1.time_ and arg_53_1.time_ <= var_56_8 + arg_56_0 and not isNil(var_56_7) and arg_53_1.var_.actorSpriteComps10059 == nil then
 				arg_53_1.var_.actorSpriteComps10059 = var_56_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_56_9 = 0.034
 
-			if var_56_8 <= arg_53_1.time_ and arg_53_1.time_ < var_56_8 + var_56_9 then
+			if var_56_8 <= arg_53_1.time_ and arg_53_1.time_ < var_56_8 + var_56_9 and not isNil(var_56_7) then
 				local var_56_10 = (arg_53_1.time_ - var_56_8) / var_56_9
 
 				if arg_53_1.var_.actorSpriteComps10059 then
@@ -2759,7 +2767,7 @@
 				end
 			end
 
-			if arg_53_1.time_ >= var_56_8 + var_56_9 and arg_53_1.time_ < var_56_8 + var_56_9 + arg_56_0 and arg_53_1.var_.actorSpriteComps10059 then
+			if arg_53_1.time_ >= var_56_8 + var_56_9 and arg_53_1.time_ < var_56_8 + var_56_9 + arg_56_0 and not isNil(var_56_7) and arg_53_1.var_.actorSpriteComps10059 then
 				for iter_56_3, iter_56_4 in pairs(arg_53_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_56_4 then
 						if arg_53_1.isInRecall_ then
@@ -2930,13 +2938,13 @@
 			local var_60_7 = arg_57_1.actors_["1061"]
 			local var_60_8 = 0
 
-			if var_60_8 < arg_57_1.time_ and arg_57_1.time_ <= var_60_8 + arg_60_0 and arg_57_1.var_.actorSpriteComps1061 == nil then
+			if var_60_8 < arg_57_1.time_ and arg_57_1.time_ <= var_60_8 + arg_60_0 and not isNil(var_60_7) and arg_57_1.var_.actorSpriteComps1061 == nil then
 				arg_57_1.var_.actorSpriteComps1061 = var_60_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_60_9 = 0.034
 
-			if var_60_8 <= arg_57_1.time_ and arg_57_1.time_ < var_60_8 + var_60_9 then
+			if var_60_8 <= arg_57_1.time_ and arg_57_1.time_ < var_60_8 + var_60_9 and not isNil(var_60_7) then
 				local var_60_10 = (arg_57_1.time_ - var_60_8) / var_60_9
 
 				if arg_57_1.var_.actorSpriteComps1061 then
@@ -2958,7 +2966,7 @@
 				end
 			end
 
-			if arg_57_1.time_ >= var_60_8 + var_60_9 and arg_57_1.time_ < var_60_8 + var_60_9 + arg_60_0 and arg_57_1.var_.actorSpriteComps1061 then
+			if arg_57_1.time_ >= var_60_8 + var_60_9 and arg_57_1.time_ < var_60_8 + var_60_9 + arg_60_0 and not isNil(var_60_7) and arg_57_1.var_.actorSpriteComps1061 then
 				for iter_60_3, iter_60_4 in pairs(arg_57_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_60_4 then
 						if arg_57_1.isInRecall_ then
@@ -2975,13 +2983,13 @@
 			local var_60_15 = arg_57_1.actors_["10059"]
 			local var_60_16 = 0
 
-			if var_60_16 < arg_57_1.time_ and arg_57_1.time_ <= var_60_16 + arg_60_0 and arg_57_1.var_.actorSpriteComps10059 == nil then
+			if var_60_16 < arg_57_1.time_ and arg_57_1.time_ <= var_60_16 + arg_60_0 and not isNil(var_60_15) and arg_57_1.var_.actorSpriteComps10059 == nil then
 				arg_57_1.var_.actorSpriteComps10059 = var_60_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_60_17 = 0.034
 
-			if var_60_16 <= arg_57_1.time_ and arg_57_1.time_ < var_60_16 + var_60_17 then
+			if var_60_16 <= arg_57_1.time_ and arg_57_1.time_ < var_60_16 + var_60_17 and not isNil(var_60_15) then
 				local var_60_18 = (arg_57_1.time_ - var_60_16) / var_60_17
 
 				if arg_57_1.var_.actorSpriteComps10059 then
@@ -3003,7 +3011,7 @@
 				end
 			end
 
-			if arg_57_1.time_ >= var_60_16 + var_60_17 and arg_57_1.time_ < var_60_16 + var_60_17 + arg_60_0 and arg_57_1.var_.actorSpriteComps10059 then
+			if arg_57_1.time_ >= var_60_16 + var_60_17 and arg_57_1.time_ < var_60_16 + var_60_17 + arg_60_0 and not isNil(var_60_15) and arg_57_1.var_.actorSpriteComps10059 then
 				for iter_60_7, iter_60_8 in pairs(arg_57_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_60_8 then
 						if arg_57_1.isInRecall_ then
@@ -3174,13 +3182,13 @@
 			local var_64_7 = arg_61_1.actors_["10059"]
 			local var_64_8 = 0
 
-			if var_64_8 < arg_61_1.time_ and arg_61_1.time_ <= var_64_8 + arg_64_0 and arg_61_1.var_.actorSpriteComps10059 == nil then
+			if var_64_8 < arg_61_1.time_ and arg_61_1.time_ <= var_64_8 + arg_64_0 and not isNil(var_64_7) and arg_61_1.var_.actorSpriteComps10059 == nil then
 				arg_61_1.var_.actorSpriteComps10059 = var_64_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_64_9 = 0.034
 
-			if var_64_8 <= arg_61_1.time_ and arg_61_1.time_ < var_64_8 + var_64_9 then
+			if var_64_8 <= arg_61_1.time_ and arg_61_1.time_ < var_64_8 + var_64_9 and not isNil(var_64_7) then
 				local var_64_10 = (arg_61_1.time_ - var_64_8) / var_64_9
 
 				if arg_61_1.var_.actorSpriteComps10059 then
@@ -3202,7 +3210,7 @@
 				end
 			end
 
-			if arg_61_1.time_ >= var_64_8 + var_64_9 and arg_61_1.time_ < var_64_8 + var_64_9 + arg_64_0 and arg_61_1.var_.actorSpriteComps10059 then
+			if arg_61_1.time_ >= var_64_8 + var_64_9 and arg_61_1.time_ < var_64_8 + var_64_9 + arg_64_0 and not isNil(var_64_7) and arg_61_1.var_.actorSpriteComps10059 then
 				for iter_64_3, iter_64_4 in pairs(arg_61_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_64_4 then
 						if arg_61_1.isInRecall_ then
@@ -3219,13 +3227,13 @@
 			local var_64_15 = arg_61_1.actors_["1061"]
 			local var_64_16 = 0
 
-			if var_64_16 < arg_61_1.time_ and arg_61_1.time_ <= var_64_16 + arg_64_0 and arg_61_1.var_.actorSpriteComps1061 == nil then
+			if var_64_16 < arg_61_1.time_ and arg_61_1.time_ <= var_64_16 + arg_64_0 and not isNil(var_64_15) and arg_61_1.var_.actorSpriteComps1061 == nil then
 				arg_61_1.var_.actorSpriteComps1061 = var_64_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_64_17 = 0.034
 
-			if var_64_16 <= arg_61_1.time_ and arg_61_1.time_ < var_64_16 + var_64_17 then
+			if var_64_16 <= arg_61_1.time_ and arg_61_1.time_ < var_64_16 + var_64_17 and not isNil(var_64_15) then
 				local var_64_18 = (arg_61_1.time_ - var_64_16) / var_64_17
 
 				if arg_61_1.var_.actorSpriteComps1061 then
@@ -3247,7 +3255,7 @@
 				end
 			end
 
-			if arg_61_1.time_ >= var_64_16 + var_64_17 and arg_61_1.time_ < var_64_16 + var_64_17 + arg_64_0 and arg_61_1.var_.actorSpriteComps1061 then
+			if arg_61_1.time_ >= var_64_16 + var_64_17 and arg_61_1.time_ < var_64_16 + var_64_17 + arg_64_0 and not isNil(var_64_15) and arg_61_1.var_.actorSpriteComps1061 then
 				for iter_64_7, iter_64_8 in pairs(arg_61_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_64_8 then
 						if arg_61_1.isInRecall_ then
@@ -3418,13 +3426,13 @@
 			local var_68_7 = arg_65_1.actors_["1061"]
 			local var_68_8 = 0
 
-			if var_68_8 < arg_65_1.time_ and arg_65_1.time_ <= var_68_8 + arg_68_0 and arg_65_1.var_.actorSpriteComps1061 == nil then
+			if var_68_8 < arg_65_1.time_ and arg_65_1.time_ <= var_68_8 + arg_68_0 and not isNil(var_68_7) and arg_65_1.var_.actorSpriteComps1061 == nil then
 				arg_65_1.var_.actorSpriteComps1061 = var_68_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_68_9 = 0.034
 
-			if var_68_8 <= arg_65_1.time_ and arg_65_1.time_ < var_68_8 + var_68_9 then
+			if var_68_8 <= arg_65_1.time_ and arg_65_1.time_ < var_68_8 + var_68_9 and not isNil(var_68_7) then
 				local var_68_10 = (arg_65_1.time_ - var_68_8) / var_68_9
 
 				if arg_65_1.var_.actorSpriteComps1061 then
@@ -3446,7 +3454,7 @@
 				end
 			end
 
-			if arg_65_1.time_ >= var_68_8 + var_68_9 and arg_65_1.time_ < var_68_8 + var_68_9 + arg_68_0 and arg_65_1.var_.actorSpriteComps1061 then
+			if arg_65_1.time_ >= var_68_8 + var_68_9 and arg_65_1.time_ < var_68_8 + var_68_9 + arg_68_0 and not isNil(var_68_7) and arg_65_1.var_.actorSpriteComps1061 then
 				for iter_68_3, iter_68_4 in pairs(arg_65_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_68_4 then
 						if arg_65_1.isInRecall_ then
@@ -3463,13 +3471,13 @@
 			local var_68_15 = arg_65_1.actors_["10059"]
 			local var_68_16 = 0
 
-			if var_68_16 < arg_65_1.time_ and arg_65_1.time_ <= var_68_16 + arg_68_0 and arg_65_1.var_.actorSpriteComps10059 == nil then
+			if var_68_16 < arg_65_1.time_ and arg_65_1.time_ <= var_68_16 + arg_68_0 and not isNil(var_68_15) and arg_65_1.var_.actorSpriteComps10059 == nil then
 				arg_65_1.var_.actorSpriteComps10059 = var_68_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_68_17 = 0.034
 
-			if var_68_16 <= arg_65_1.time_ and arg_65_1.time_ < var_68_16 + var_68_17 then
+			if var_68_16 <= arg_65_1.time_ and arg_65_1.time_ < var_68_16 + var_68_17 and not isNil(var_68_15) then
 				local var_68_18 = (arg_65_1.time_ - var_68_16) / var_68_17
 
 				if arg_65_1.var_.actorSpriteComps10059 then
@@ -3491,7 +3499,7 @@
 				end
 			end
 
-			if arg_65_1.time_ >= var_68_16 + var_68_17 and arg_65_1.time_ < var_68_16 + var_68_17 + arg_68_0 and arg_65_1.var_.actorSpriteComps10059 then
+			if arg_65_1.time_ >= var_68_16 + var_68_17 and arg_65_1.time_ < var_68_16 + var_68_17 + arg_68_0 and not isNil(var_68_15) and arg_65_1.var_.actorSpriteComps10059 then
 				for iter_68_7, iter_68_8 in pairs(arg_65_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_68_8 then
 						if arg_65_1.isInRecall_ then
@@ -3662,13 +3670,13 @@
 			local var_72_7 = arg_69_1.actors_["10059"]
 			local var_72_8 = 0
 
-			if var_72_8 < arg_69_1.time_ and arg_69_1.time_ <= var_72_8 + arg_72_0 and arg_69_1.var_.actorSpriteComps10059 == nil then
+			if var_72_8 < arg_69_1.time_ and arg_69_1.time_ <= var_72_8 + arg_72_0 and not isNil(var_72_7) and arg_69_1.var_.actorSpriteComps10059 == nil then
 				arg_69_1.var_.actorSpriteComps10059 = var_72_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_72_9 = 0.034
 
-			if var_72_8 <= arg_69_1.time_ and arg_69_1.time_ < var_72_8 + var_72_9 then
+			if var_72_8 <= arg_69_1.time_ and arg_69_1.time_ < var_72_8 + var_72_9 and not isNil(var_72_7) then
 				local var_72_10 = (arg_69_1.time_ - var_72_8) / var_72_9
 
 				if arg_69_1.var_.actorSpriteComps10059 then
@@ -3690,7 +3698,7 @@
 				end
 			end
 
-			if arg_69_1.time_ >= var_72_8 + var_72_9 and arg_69_1.time_ < var_72_8 + var_72_9 + arg_72_0 and arg_69_1.var_.actorSpriteComps10059 then
+			if arg_69_1.time_ >= var_72_8 + var_72_9 and arg_69_1.time_ < var_72_8 + var_72_9 + arg_72_0 and not isNil(var_72_7) and arg_69_1.var_.actorSpriteComps10059 then
 				for iter_72_3, iter_72_4 in pairs(arg_69_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_72_4 then
 						if arg_69_1.isInRecall_ then
@@ -3707,13 +3715,13 @@
 			local var_72_15 = arg_69_1.actors_["1061"]
 			local var_72_16 = 0
 
-			if var_72_16 < arg_69_1.time_ and arg_69_1.time_ <= var_72_16 + arg_72_0 and arg_69_1.var_.actorSpriteComps1061 == nil then
+			if var_72_16 < arg_69_1.time_ and arg_69_1.time_ <= var_72_16 + arg_72_0 and not isNil(var_72_15) and arg_69_1.var_.actorSpriteComps1061 == nil then
 				arg_69_1.var_.actorSpriteComps1061 = var_72_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_72_17 = 0.034
 
-			if var_72_16 <= arg_69_1.time_ and arg_69_1.time_ < var_72_16 + var_72_17 then
+			if var_72_16 <= arg_69_1.time_ and arg_69_1.time_ < var_72_16 + var_72_17 and not isNil(var_72_15) then
 				local var_72_18 = (arg_69_1.time_ - var_72_16) / var_72_17
 
 				if arg_69_1.var_.actorSpriteComps1061 then
@@ -3735,7 +3743,7 @@
 				end
 			end
 
-			if arg_69_1.time_ >= var_72_16 + var_72_17 and arg_69_1.time_ < var_72_16 + var_72_17 + arg_72_0 and arg_69_1.var_.actorSpriteComps1061 then
+			if arg_69_1.time_ >= var_72_16 + var_72_17 and arg_69_1.time_ < var_72_16 + var_72_17 + arg_72_0 and not isNil(var_72_15) and arg_69_1.var_.actorSpriteComps1061 then
 				for iter_72_7, iter_72_8 in pairs(arg_69_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_72_8 then
 						if arg_69_1.isInRecall_ then
@@ -3906,13 +3914,13 @@
 			local var_76_7 = arg_73_1.actors_["1061"]
 			local var_76_8 = 0
 
-			if var_76_8 < arg_73_1.time_ and arg_73_1.time_ <= var_76_8 + arg_76_0 and arg_73_1.var_.actorSpriteComps1061 == nil then
+			if var_76_8 < arg_73_1.time_ and arg_73_1.time_ <= var_76_8 + arg_76_0 and not isNil(var_76_7) and arg_73_1.var_.actorSpriteComps1061 == nil then
 				arg_73_1.var_.actorSpriteComps1061 = var_76_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_76_9 = 0.034
 
-			if var_76_8 <= arg_73_1.time_ and arg_73_1.time_ < var_76_8 + var_76_9 then
+			if var_76_8 <= arg_73_1.time_ and arg_73_1.time_ < var_76_8 + var_76_9 and not isNil(var_76_7) then
 				local var_76_10 = (arg_73_1.time_ - var_76_8) / var_76_9
 
 				if arg_73_1.var_.actorSpriteComps1061 then
@@ -3934,7 +3942,7 @@
 				end
 			end
 
-			if arg_73_1.time_ >= var_76_8 + var_76_9 and arg_73_1.time_ < var_76_8 + var_76_9 + arg_76_0 and arg_73_1.var_.actorSpriteComps1061 then
+			if arg_73_1.time_ >= var_76_8 + var_76_9 and arg_73_1.time_ < var_76_8 + var_76_9 + arg_76_0 and not isNil(var_76_7) and arg_73_1.var_.actorSpriteComps1061 then
 				for iter_76_3, iter_76_4 in pairs(arg_73_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_76_4 then
 						if arg_73_1.isInRecall_ then
@@ -3951,13 +3959,13 @@
 			local var_76_15 = arg_73_1.actors_["10059"]
 			local var_76_16 = 0
 
-			if var_76_16 < arg_73_1.time_ and arg_73_1.time_ <= var_76_16 + arg_76_0 and arg_73_1.var_.actorSpriteComps10059 == nil then
+			if var_76_16 < arg_73_1.time_ and arg_73_1.time_ <= var_76_16 + arg_76_0 and not isNil(var_76_15) and arg_73_1.var_.actorSpriteComps10059 == nil then
 				arg_73_1.var_.actorSpriteComps10059 = var_76_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_76_17 = 0.034
 
-			if var_76_16 <= arg_73_1.time_ and arg_73_1.time_ < var_76_16 + var_76_17 then
+			if var_76_16 <= arg_73_1.time_ and arg_73_1.time_ < var_76_16 + var_76_17 and not isNil(var_76_15) then
 				local var_76_18 = (arg_73_1.time_ - var_76_16) / var_76_17
 
 				if arg_73_1.var_.actorSpriteComps10059 then
@@ -3979,7 +3987,7 @@
 				end
 			end
 
-			if arg_73_1.time_ >= var_76_16 + var_76_17 and arg_73_1.time_ < var_76_16 + var_76_17 + arg_76_0 and arg_73_1.var_.actorSpriteComps10059 then
+			if arg_73_1.time_ >= var_76_16 + var_76_17 and arg_73_1.time_ < var_76_16 + var_76_17 + arg_76_0 and not isNil(var_76_15) and arg_73_1.var_.actorSpriteComps10059 then
 				for iter_76_7, iter_76_8 in pairs(arg_73_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_76_8 then
 						if arg_73_1.isInRecall_ then
@@ -4150,13 +4158,13 @@
 			local var_80_7 = arg_77_1.actors_["10059"]
 			local var_80_8 = 0
 
-			if var_80_8 < arg_77_1.time_ and arg_77_1.time_ <= var_80_8 + arg_80_0 and arg_77_1.var_.actorSpriteComps10059 == nil then
+			if var_80_8 < arg_77_1.time_ and arg_77_1.time_ <= var_80_8 + arg_80_0 and not isNil(var_80_7) and arg_77_1.var_.actorSpriteComps10059 == nil then
 				arg_77_1.var_.actorSpriteComps10059 = var_80_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_80_9 = 0.034
 
-			if var_80_8 <= arg_77_1.time_ and arg_77_1.time_ < var_80_8 + var_80_9 then
+			if var_80_8 <= arg_77_1.time_ and arg_77_1.time_ < var_80_8 + var_80_9 and not isNil(var_80_7) then
 				local var_80_10 = (arg_77_1.time_ - var_80_8) / var_80_9
 
 				if arg_77_1.var_.actorSpriteComps10059 then
@@ -4178,7 +4186,7 @@
 				end
 			end
 
-			if arg_77_1.time_ >= var_80_8 + var_80_9 and arg_77_1.time_ < var_80_8 + var_80_9 + arg_80_0 and arg_77_1.var_.actorSpriteComps10059 then
+			if arg_77_1.time_ >= var_80_8 + var_80_9 and arg_77_1.time_ < var_80_8 + var_80_9 + arg_80_0 and not isNil(var_80_7) and arg_77_1.var_.actorSpriteComps10059 then
 				for iter_80_3, iter_80_4 in pairs(arg_77_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_80_4 then
 						if arg_77_1.isInRecall_ then
@@ -4195,13 +4203,13 @@
 			local var_80_15 = arg_77_1.actors_["1061"]
 			local var_80_16 = 0
 
-			if var_80_16 < arg_77_1.time_ and arg_77_1.time_ <= var_80_16 + arg_80_0 and arg_77_1.var_.actorSpriteComps1061 == nil then
+			if var_80_16 < arg_77_1.time_ and arg_77_1.time_ <= var_80_16 + arg_80_0 and not isNil(var_80_15) and arg_77_1.var_.actorSpriteComps1061 == nil then
 				arg_77_1.var_.actorSpriteComps1061 = var_80_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_80_17 = 0.034
 
-			if var_80_16 <= arg_77_1.time_ and arg_77_1.time_ < var_80_16 + var_80_17 then
+			if var_80_16 <= arg_77_1.time_ and arg_77_1.time_ < var_80_16 + var_80_17 and not isNil(var_80_15) then
 				local var_80_18 = (arg_77_1.time_ - var_80_16) / var_80_17
 
 				if arg_77_1.var_.actorSpriteComps1061 then
@@ -4223,7 +4231,7 @@
 				end
 			end
 
-			if arg_77_1.time_ >= var_80_16 + var_80_17 and arg_77_1.time_ < var_80_16 + var_80_17 + arg_80_0 and arg_77_1.var_.actorSpriteComps1061 then
+			if arg_77_1.time_ >= var_80_16 + var_80_17 and arg_77_1.time_ < var_80_16 + var_80_17 + arg_80_0 and not isNil(var_80_15) and arg_77_1.var_.actorSpriteComps1061 then
 				for iter_80_7, iter_80_8 in pairs(arg_77_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_80_8 then
 						if arg_77_1.isInRecall_ then
@@ -4394,13 +4402,13 @@
 			local var_84_7 = arg_81_1.actors_["10059"]
 			local var_84_8 = 0
 
-			if var_84_8 < arg_81_1.time_ and arg_81_1.time_ <= var_84_8 + arg_84_0 and arg_81_1.var_.actorSpriteComps10059 == nil then
+			if var_84_8 < arg_81_1.time_ and arg_81_1.time_ <= var_84_8 + arg_84_0 and not isNil(var_84_7) and arg_81_1.var_.actorSpriteComps10059 == nil then
 				arg_81_1.var_.actorSpriteComps10059 = var_84_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_84_9 = 0.034
 
-			if var_84_8 <= arg_81_1.time_ and arg_81_1.time_ < var_84_8 + var_84_9 then
+			if var_84_8 <= arg_81_1.time_ and arg_81_1.time_ < var_84_8 + var_84_9 and not isNil(var_84_7) then
 				local var_84_10 = (arg_81_1.time_ - var_84_8) / var_84_9
 
 				if arg_81_1.var_.actorSpriteComps10059 then
@@ -4422,7 +4430,7 @@
 				end
 			end
 
-			if arg_81_1.time_ >= var_84_8 + var_84_9 and arg_81_1.time_ < var_84_8 + var_84_9 + arg_84_0 and arg_81_1.var_.actorSpriteComps10059 then
+			if arg_81_1.time_ >= var_84_8 + var_84_9 and arg_81_1.time_ < var_84_8 + var_84_9 + arg_84_0 and not isNil(var_84_7) and arg_81_1.var_.actorSpriteComps10059 then
 				for iter_84_3, iter_84_4 in pairs(arg_81_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_84_4 then
 						if arg_81_1.isInRecall_ then
@@ -4593,13 +4601,13 @@
 			local var_88_7 = arg_85_1.actors_["1061"]
 			local var_88_8 = 0
 
-			if var_88_8 < arg_85_1.time_ and arg_85_1.time_ <= var_88_8 + arg_88_0 and arg_85_1.var_.actorSpriteComps1061 == nil then
+			if var_88_8 < arg_85_1.time_ and arg_85_1.time_ <= var_88_8 + arg_88_0 and not isNil(var_88_7) and arg_85_1.var_.actorSpriteComps1061 == nil then
 				arg_85_1.var_.actorSpriteComps1061 = var_88_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_88_9 = 0.034
 
-			if var_88_8 <= arg_85_1.time_ and arg_85_1.time_ < var_88_8 + var_88_9 then
+			if var_88_8 <= arg_85_1.time_ and arg_85_1.time_ < var_88_8 + var_88_9 and not isNil(var_88_7) then
 				local var_88_10 = (arg_85_1.time_ - var_88_8) / var_88_9
 
 				if arg_85_1.var_.actorSpriteComps1061 then
@@ -4621,7 +4629,7 @@
 				end
 			end
 
-			if arg_85_1.time_ >= var_88_8 + var_88_9 and arg_85_1.time_ < var_88_8 + var_88_9 + arg_88_0 and arg_85_1.var_.actorSpriteComps1061 then
+			if arg_85_1.time_ >= var_88_8 + var_88_9 and arg_85_1.time_ < var_88_8 + var_88_9 + arg_88_0 and not isNil(var_88_7) and arg_85_1.var_.actorSpriteComps1061 then
 				for iter_88_3, iter_88_4 in pairs(arg_85_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_88_4 then
 						if arg_85_1.isInRecall_ then
@@ -4638,13 +4646,13 @@
 			local var_88_15 = arg_85_1.actors_["10059"]
 			local var_88_16 = 0
 
-			if var_88_16 < arg_85_1.time_ and arg_85_1.time_ <= var_88_16 + arg_88_0 and arg_85_1.var_.actorSpriteComps10059 == nil then
+			if var_88_16 < arg_85_1.time_ and arg_85_1.time_ <= var_88_16 + arg_88_0 and not isNil(var_88_15) and arg_85_1.var_.actorSpriteComps10059 == nil then
 				arg_85_1.var_.actorSpriteComps10059 = var_88_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_88_17 = 0.034
 
-			if var_88_16 <= arg_85_1.time_ and arg_85_1.time_ < var_88_16 + var_88_17 then
+			if var_88_16 <= arg_85_1.time_ and arg_85_1.time_ < var_88_16 + var_88_17 and not isNil(var_88_15) then
 				local var_88_18 = (arg_85_1.time_ - var_88_16) / var_88_17
 
 				if arg_85_1.var_.actorSpriteComps10059 then
@@ -4666,7 +4674,7 @@
 				end
 			end
 
-			if arg_85_1.time_ >= var_88_16 + var_88_17 and arg_85_1.time_ < var_88_16 + var_88_17 + arg_88_0 and arg_85_1.var_.actorSpriteComps10059 then
+			if arg_85_1.time_ >= var_88_16 + var_88_17 and arg_85_1.time_ < var_88_16 + var_88_17 + arg_88_0 and not isNil(var_88_15) and arg_85_1.var_.actorSpriteComps10059 then
 				for iter_88_7, iter_88_8 in pairs(arg_85_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_88_8 then
 						if arg_85_1.isInRecall_ then
@@ -4837,13 +4845,13 @@
 			local var_92_7 = arg_89_1.actors_["10059"]
 			local var_92_8 = 0
 
-			if var_92_8 < arg_89_1.time_ and arg_89_1.time_ <= var_92_8 + arg_92_0 and arg_89_1.var_.actorSpriteComps10059 == nil then
+			if var_92_8 < arg_89_1.time_ and arg_89_1.time_ <= var_92_8 + arg_92_0 and not isNil(var_92_7) and arg_89_1.var_.actorSpriteComps10059 == nil then
 				arg_89_1.var_.actorSpriteComps10059 = var_92_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_92_9 = 0.034
 
-			if var_92_8 <= arg_89_1.time_ and arg_89_1.time_ < var_92_8 + var_92_9 then
+			if var_92_8 <= arg_89_1.time_ and arg_89_1.time_ < var_92_8 + var_92_9 and not isNil(var_92_7) then
 				local var_92_10 = (arg_89_1.time_ - var_92_8) / var_92_9
 
 				if arg_89_1.var_.actorSpriteComps10059 then
@@ -4865,7 +4873,7 @@
 				end
 			end
 
-			if arg_89_1.time_ >= var_92_8 + var_92_9 and arg_89_1.time_ < var_92_8 + var_92_9 + arg_92_0 and arg_89_1.var_.actorSpriteComps10059 then
+			if arg_89_1.time_ >= var_92_8 + var_92_9 and arg_89_1.time_ < var_92_8 + var_92_9 + arg_92_0 and not isNil(var_92_7) and arg_89_1.var_.actorSpriteComps10059 then
 				for iter_92_3, iter_92_4 in pairs(arg_89_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_92_4 then
 						if arg_89_1.isInRecall_ then
@@ -4882,13 +4890,13 @@
 			local var_92_15 = arg_89_1.actors_["1061"]
 			local var_92_16 = 0
 
-			if var_92_16 < arg_89_1.time_ and arg_89_1.time_ <= var_92_16 + arg_92_0 and arg_89_1.var_.actorSpriteComps1061 == nil then
+			if var_92_16 < arg_89_1.time_ and arg_89_1.time_ <= var_92_16 + arg_92_0 and not isNil(var_92_15) and arg_89_1.var_.actorSpriteComps1061 == nil then
 				arg_89_1.var_.actorSpriteComps1061 = var_92_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_92_17 = 0.034
 
-			if var_92_16 <= arg_89_1.time_ and arg_89_1.time_ < var_92_16 + var_92_17 then
+			if var_92_16 <= arg_89_1.time_ and arg_89_1.time_ < var_92_16 + var_92_17 and not isNil(var_92_15) then
 				local var_92_18 = (arg_89_1.time_ - var_92_16) / var_92_17
 
 				if arg_89_1.var_.actorSpriteComps1061 then
@@ -4910,7 +4918,7 @@
 				end
 			end
 
-			if arg_89_1.time_ >= var_92_16 + var_92_17 and arg_89_1.time_ < var_92_16 + var_92_17 + arg_92_0 and arg_89_1.var_.actorSpriteComps1061 then
+			if arg_89_1.time_ >= var_92_16 + var_92_17 and arg_89_1.time_ < var_92_16 + var_92_17 + arg_92_0 and not isNil(var_92_15) and arg_89_1.var_.actorSpriteComps1061 then
 				for iter_92_7, iter_92_8 in pairs(arg_89_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_92_8 then
 						if arg_89_1.isInRecall_ then
@@ -5081,13 +5089,13 @@
 			local var_96_7 = arg_93_1.actors_["1061"]
 			local var_96_8 = 0
 
-			if var_96_8 < arg_93_1.time_ and arg_93_1.time_ <= var_96_8 + arg_96_0 and arg_93_1.var_.actorSpriteComps1061 == nil then
+			if var_96_8 < arg_93_1.time_ and arg_93_1.time_ <= var_96_8 + arg_96_0 and not isNil(var_96_7) and arg_93_1.var_.actorSpriteComps1061 == nil then
 				arg_93_1.var_.actorSpriteComps1061 = var_96_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_96_9 = 0.034
 
-			if var_96_8 <= arg_93_1.time_ and arg_93_1.time_ < var_96_8 + var_96_9 then
+			if var_96_8 <= arg_93_1.time_ and arg_93_1.time_ < var_96_8 + var_96_9 and not isNil(var_96_7) then
 				local var_96_10 = (arg_93_1.time_ - var_96_8) / var_96_9
 
 				if arg_93_1.var_.actorSpriteComps1061 then
@@ -5109,7 +5117,7 @@
 				end
 			end
 
-			if arg_93_1.time_ >= var_96_8 + var_96_9 and arg_93_1.time_ < var_96_8 + var_96_9 + arg_96_0 and arg_93_1.var_.actorSpriteComps1061 then
+			if arg_93_1.time_ >= var_96_8 + var_96_9 and arg_93_1.time_ < var_96_8 + var_96_9 + arg_96_0 and not isNil(var_96_7) and arg_93_1.var_.actorSpriteComps1061 then
 				for iter_96_3, iter_96_4 in pairs(arg_93_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_96_4 then
 						if arg_93_1.isInRecall_ then
@@ -5126,13 +5134,13 @@
 			local var_96_15 = arg_93_1.actors_["10059"]
 			local var_96_16 = 0
 
-			if var_96_16 < arg_93_1.time_ and arg_93_1.time_ <= var_96_16 + arg_96_0 and arg_93_1.var_.actorSpriteComps10059 == nil then
+			if var_96_16 < arg_93_1.time_ and arg_93_1.time_ <= var_96_16 + arg_96_0 and not isNil(var_96_15) and arg_93_1.var_.actorSpriteComps10059 == nil then
 				arg_93_1.var_.actorSpriteComps10059 = var_96_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_96_17 = 0.034
 
-			if var_96_16 <= arg_93_1.time_ and arg_93_1.time_ < var_96_16 + var_96_17 then
+			if var_96_16 <= arg_93_1.time_ and arg_93_1.time_ < var_96_16 + var_96_17 and not isNil(var_96_15) then
 				local var_96_18 = (arg_93_1.time_ - var_96_16) / var_96_17
 
 				if arg_93_1.var_.actorSpriteComps10059 then
@@ -5154,7 +5162,7 @@
 				end
 			end
 
-			if arg_93_1.time_ >= var_96_16 + var_96_17 and arg_93_1.time_ < var_96_16 + var_96_17 + arg_96_0 and arg_93_1.var_.actorSpriteComps10059 then
+			if arg_93_1.time_ >= var_96_16 + var_96_17 and arg_93_1.time_ < var_96_16 + var_96_17 + arg_96_0 and not isNil(var_96_15) and arg_93_1.var_.actorSpriteComps10059 then
 				for iter_96_7, iter_96_8 in pairs(arg_93_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_96_8 then
 						if arg_93_1.isInRecall_ then
@@ -5325,13 +5333,13 @@
 			local var_100_7 = arg_97_1.actors_["10059"]
 			local var_100_8 = 0
 
-			if var_100_8 < arg_97_1.time_ and arg_97_1.time_ <= var_100_8 + arg_100_0 and arg_97_1.var_.actorSpriteComps10059 == nil then
+			if var_100_8 < arg_97_1.time_ and arg_97_1.time_ <= var_100_8 + arg_100_0 and not isNil(var_100_7) and arg_97_1.var_.actorSpriteComps10059 == nil then
 				arg_97_1.var_.actorSpriteComps10059 = var_100_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_100_9 = 0.034
 
-			if var_100_8 <= arg_97_1.time_ and arg_97_1.time_ < var_100_8 + var_100_9 then
+			if var_100_8 <= arg_97_1.time_ and arg_97_1.time_ < var_100_8 + var_100_9 and not isNil(var_100_7) then
 				local var_100_10 = (arg_97_1.time_ - var_100_8) / var_100_9
 
 				if arg_97_1.var_.actorSpriteComps10059 then
@@ -5353,7 +5361,7 @@
 				end
 			end
 
-			if arg_97_1.time_ >= var_100_8 + var_100_9 and arg_97_1.time_ < var_100_8 + var_100_9 + arg_100_0 and arg_97_1.var_.actorSpriteComps10059 then
+			if arg_97_1.time_ >= var_100_8 + var_100_9 and arg_97_1.time_ < var_100_8 + var_100_9 + arg_100_0 and not isNil(var_100_7) and arg_97_1.var_.actorSpriteComps10059 then
 				for iter_100_3, iter_100_4 in pairs(arg_97_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_100_4 then
 						if arg_97_1.isInRecall_ then
@@ -5370,13 +5378,13 @@
 			local var_100_15 = arg_97_1.actors_["1061"]
 			local var_100_16 = 0
 
-			if var_100_16 < arg_97_1.time_ and arg_97_1.time_ <= var_100_16 + arg_100_0 and arg_97_1.var_.actorSpriteComps1061 == nil then
+			if var_100_16 < arg_97_1.time_ and arg_97_1.time_ <= var_100_16 + arg_100_0 and not isNil(var_100_15) and arg_97_1.var_.actorSpriteComps1061 == nil then
 				arg_97_1.var_.actorSpriteComps1061 = var_100_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_100_17 = 0.034
 
-			if var_100_16 <= arg_97_1.time_ and arg_97_1.time_ < var_100_16 + var_100_17 then
+			if var_100_16 <= arg_97_1.time_ and arg_97_1.time_ < var_100_16 + var_100_17 and not isNil(var_100_15) then
 				local var_100_18 = (arg_97_1.time_ - var_100_16) / var_100_17
 
 				if arg_97_1.var_.actorSpriteComps1061 then
@@ -5398,7 +5406,7 @@
 				end
 			end
 
-			if arg_97_1.time_ >= var_100_16 + var_100_17 and arg_97_1.time_ < var_100_16 + var_100_17 + arg_100_0 and arg_97_1.var_.actorSpriteComps1061 then
+			if arg_97_1.time_ >= var_100_16 + var_100_17 and arg_97_1.time_ < var_100_16 + var_100_17 + arg_100_0 and not isNil(var_100_15) and arg_97_1.var_.actorSpriteComps1061 then
 				for iter_100_7, iter_100_8 in pairs(arg_97_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_100_8 then
 						if arg_97_1.isInRecall_ then
@@ -5569,13 +5577,13 @@
 			local var_104_7 = arg_101_1.actors_["1061"]
 			local var_104_8 = 0
 
-			if var_104_8 < arg_101_1.time_ and arg_101_1.time_ <= var_104_8 + arg_104_0 and arg_101_1.var_.actorSpriteComps1061 == nil then
+			if var_104_8 < arg_101_1.time_ and arg_101_1.time_ <= var_104_8 + arg_104_0 and not isNil(var_104_7) and arg_101_1.var_.actorSpriteComps1061 == nil then
 				arg_101_1.var_.actorSpriteComps1061 = var_104_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_104_9 = 0.034
 
-			if var_104_8 <= arg_101_1.time_ and arg_101_1.time_ < var_104_8 + var_104_9 then
+			if var_104_8 <= arg_101_1.time_ and arg_101_1.time_ < var_104_8 + var_104_9 and not isNil(var_104_7) then
 				local var_104_10 = (arg_101_1.time_ - var_104_8) / var_104_9
 
 				if arg_101_1.var_.actorSpriteComps1061 then
@@ -5597,7 +5605,7 @@
 				end
 			end
 
-			if arg_101_1.time_ >= var_104_8 + var_104_9 and arg_101_1.time_ < var_104_8 + var_104_9 + arg_104_0 and arg_101_1.var_.actorSpriteComps1061 then
+			if arg_101_1.time_ >= var_104_8 + var_104_9 and arg_101_1.time_ < var_104_8 + var_104_9 + arg_104_0 and not isNil(var_104_7) and arg_101_1.var_.actorSpriteComps1061 then
 				for iter_104_3, iter_104_4 in pairs(arg_101_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_104_4 then
 						if arg_101_1.isInRecall_ then
@@ -5614,13 +5622,13 @@
 			local var_104_15 = arg_101_1.actors_["10059"]
 			local var_104_16 = 0
 
-			if var_104_16 < arg_101_1.time_ and arg_101_1.time_ <= var_104_16 + arg_104_0 and arg_101_1.var_.actorSpriteComps10059 == nil then
+			if var_104_16 < arg_101_1.time_ and arg_101_1.time_ <= var_104_16 + arg_104_0 and not isNil(var_104_15) and arg_101_1.var_.actorSpriteComps10059 == nil then
 				arg_101_1.var_.actorSpriteComps10059 = var_104_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_104_17 = 0.034
 
-			if var_104_16 <= arg_101_1.time_ and arg_101_1.time_ < var_104_16 + var_104_17 then
+			if var_104_16 <= arg_101_1.time_ and arg_101_1.time_ < var_104_16 + var_104_17 and not isNil(var_104_15) then
 				local var_104_18 = (arg_101_1.time_ - var_104_16) / var_104_17
 
 				if arg_101_1.var_.actorSpriteComps10059 then
@@ -5642,7 +5650,7 @@
 				end
 			end
 
-			if arg_101_1.time_ >= var_104_16 + var_104_17 and arg_101_1.time_ < var_104_16 + var_104_17 + arg_104_0 and arg_101_1.var_.actorSpriteComps10059 then
+			if arg_101_1.time_ >= var_104_16 + var_104_17 and arg_101_1.time_ < var_104_16 + var_104_17 + arg_104_0 and not isNil(var_104_15) and arg_101_1.var_.actorSpriteComps10059 then
 				for iter_104_7, iter_104_8 in pairs(arg_101_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_104_8 then
 						if arg_101_1.isInRecall_ then
@@ -5813,13 +5821,13 @@
 			local var_108_7 = arg_105_1.actors_["1061"]
 			local var_108_8 = 0
 
-			if var_108_8 < arg_105_1.time_ and arg_105_1.time_ <= var_108_8 + arg_108_0 and arg_105_1.var_.actorSpriteComps1061 == nil then
+			if var_108_8 < arg_105_1.time_ and arg_105_1.time_ <= var_108_8 + arg_108_0 and not isNil(var_108_7) and arg_105_1.var_.actorSpriteComps1061 == nil then
 				arg_105_1.var_.actorSpriteComps1061 = var_108_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_108_9 = 0.034
 
-			if var_108_8 <= arg_105_1.time_ and arg_105_1.time_ < var_108_8 + var_108_9 then
+			if var_108_8 <= arg_105_1.time_ and arg_105_1.time_ < var_108_8 + var_108_9 and not isNil(var_108_7) then
 				local var_108_10 = (arg_105_1.time_ - var_108_8) / var_108_9
 
 				if arg_105_1.var_.actorSpriteComps1061 then
@@ -5841,7 +5849,7 @@
 				end
 			end
 
-			if arg_105_1.time_ >= var_108_8 + var_108_9 and arg_105_1.time_ < var_108_8 + var_108_9 + arg_108_0 and arg_105_1.var_.actorSpriteComps1061 then
+			if arg_105_1.time_ >= var_108_8 + var_108_9 and arg_105_1.time_ < var_108_8 + var_108_9 + arg_108_0 and not isNil(var_108_7) and arg_105_1.var_.actorSpriteComps1061 then
 				for iter_108_3, iter_108_4 in pairs(arg_105_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_108_4 then
 						if arg_105_1.isInRecall_ then
@@ -6135,13 +6143,13 @@
 			local var_112_41 = arg_109_1.actors_["10059"]
 			local var_112_42 = 2
 
-			if var_112_42 < arg_109_1.time_ and arg_109_1.time_ <= var_112_42 + arg_112_0 and arg_109_1.var_.actorSpriteComps10059 == nil then
+			if var_112_42 < arg_109_1.time_ and arg_109_1.time_ <= var_112_42 + arg_112_0 and not isNil(var_112_41) and arg_109_1.var_.actorSpriteComps10059 == nil then
 				arg_109_1.var_.actorSpriteComps10059 = var_112_41:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_112_43 = 0.034
 
-			if var_112_42 <= arg_109_1.time_ and arg_109_1.time_ < var_112_42 + var_112_43 then
+			if var_112_42 <= arg_109_1.time_ and arg_109_1.time_ < var_112_42 + var_112_43 and not isNil(var_112_41) then
 				local var_112_44 = (arg_109_1.time_ - var_112_42) / var_112_43
 
 				if arg_109_1.var_.actorSpriteComps10059 then
@@ -6163,7 +6171,7 @@
 				end
 			end
 
-			if arg_109_1.time_ >= var_112_42 + var_112_43 and arg_109_1.time_ < var_112_42 + var_112_43 + arg_112_0 and arg_109_1.var_.actorSpriteComps10059 then
+			if arg_109_1.time_ >= var_112_42 + var_112_43 and arg_109_1.time_ < var_112_42 + var_112_43 + arg_112_0 and not isNil(var_112_41) and arg_109_1.var_.actorSpriteComps10059 then
 				for iter_112_6, iter_112_7 in pairs(arg_109_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_112_7 then
 						if arg_109_1.isInRecall_ then
@@ -6180,13 +6188,13 @@
 			local var_112_49 = arg_109_1.actors_["1061"]
 			local var_112_50 = 2
 
-			if var_112_50 < arg_109_1.time_ and arg_109_1.time_ <= var_112_50 + arg_112_0 and arg_109_1.var_.actorSpriteComps1061 == nil then
+			if var_112_50 < arg_109_1.time_ and arg_109_1.time_ <= var_112_50 + arg_112_0 and not isNil(var_112_49) and arg_109_1.var_.actorSpriteComps1061 == nil then
 				arg_109_1.var_.actorSpriteComps1061 = var_112_49:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_112_51 = 0.034
 
-			if var_112_50 <= arg_109_1.time_ and arg_109_1.time_ < var_112_50 + var_112_51 then
+			if var_112_50 <= arg_109_1.time_ and arg_109_1.time_ < var_112_50 + var_112_51 and not isNil(var_112_49) then
 				local var_112_52 = (arg_109_1.time_ - var_112_50) / var_112_51
 
 				if arg_109_1.var_.actorSpriteComps1061 then
@@ -6208,7 +6216,7 @@
 				end
 			end
 
-			if arg_109_1.time_ >= var_112_50 + var_112_51 and arg_109_1.time_ < var_112_50 + var_112_51 + arg_112_0 and arg_109_1.var_.actorSpriteComps1061 then
+			if arg_109_1.time_ >= var_112_50 + var_112_51 and arg_109_1.time_ < var_112_50 + var_112_51 + arg_112_0 and not isNil(var_112_49) and arg_109_1.var_.actorSpriteComps1061 then
 				for iter_112_10, iter_112_11 in pairs(arg_109_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_112_11 then
 						if arg_109_1.isInRecall_ then
@@ -6453,90 +6461,94 @@
 			local var_122_7 = "10063"
 
 			if arg_119_1.actors_[var_122_7] == nil then
-				local var_122_8 = Object.Instantiate(Asset.Load("Widget/System/Story/StoryExpression/" .. var_122_7), arg_119_1.canvasGo_.transform)
+				local var_122_8 = Asset.Load("Widget/System/Story/StoryExpression/" .. "10063")
 
-				var_122_8.transform:SetSiblingIndex(1)
+				if not isNil(var_122_8) then
+					local var_122_9 = Object.Instantiate(var_122_8, arg_119_1.canvasGo_.transform)
 
-				var_122_8.name = var_122_7
-				var_122_8.transform.localPosition = Vector3.New(0, 100000, 0)
-				arg_119_1.actors_[var_122_7] = var_122_8
+					var_122_9.transform:SetSiblingIndex(1)
 
-				local var_122_9 = var_122_8:GetComponentsInChildren(typeof(Image), true):ToTable()
+					var_122_9.name = var_122_7
+					var_122_9.transform.localPosition = Vector3.New(0, 100000, 0)
+					arg_119_1.actors_[var_122_7] = var_122_9
 
-				if arg_119_1.isInRecall_ then
-					for iter_122_1, iter_122_2 in ipairs(var_122_9) do
-						iter_122_2.color = Color.New(0.82, 0.77, 0.62)
+					local var_122_10 = var_122_9:GetComponentsInChildren(typeof(Image), true):ToTable()
+
+					if arg_119_1.isInRecall_ then
+						for iter_122_1, iter_122_2 in ipairs(var_122_10) do
+							iter_122_2.color = Color.New(0.82, 0.77, 0.62)
+						end
 					end
 				end
 			end
 
-			local var_122_10 = arg_119_1.actors_["10063"].transform
-			local var_122_11 = 0
+			local var_122_11 = arg_119_1.actors_["10063"].transform
+			local var_122_12 = 0
 
-			if var_122_11 < arg_119_1.time_ and arg_119_1.time_ <= var_122_11 + arg_122_0 then
-				arg_119_1.var_.moveOldPos10063 = var_122_10.localPosition
-				var_122_10.localScale = Vector3.New(1, 1, 1)
+			if var_122_12 < arg_119_1.time_ and arg_119_1.time_ <= var_122_12 + arg_122_0 then
+				arg_119_1.var_.moveOldPos10063 = var_122_11.localPosition
+				var_122_11.localScale = Vector3.New(1, 1, 1)
 
 				arg_119_1:CheckSpriteTmpPos("10063", 2)
 
-				local var_122_12 = var_122_10.childCount
+				local var_122_13 = var_122_11.childCount
 
-				for iter_122_3 = 0, var_122_12 - 1 do
-					local var_122_13 = var_122_10:GetChild(iter_122_3)
+				for iter_122_3 = 0, var_122_13 - 1 do
+					local var_122_14 = var_122_11:GetChild(iter_122_3)
 
-					if var_122_13.name == "split_5" or not string.find(var_122_13.name, "split") then
-						var_122_13.gameObject:SetActive(true)
+					if var_122_14.name == "split_5" or not string.find(var_122_14.name, "split") then
+						var_122_14.gameObject:SetActive(true)
 					else
-						var_122_13.gameObject:SetActive(false)
+						var_122_14.gameObject:SetActive(false)
 					end
 				end
 			end
 
-			local var_122_14 = 0.001
+			local var_122_15 = 0.001
 
-			if var_122_11 <= arg_119_1.time_ and arg_119_1.time_ < var_122_11 + var_122_14 then
-				local var_122_15 = (arg_119_1.time_ - var_122_11) / var_122_14
-				local var_122_16 = Vector3.New(-390, -535, -105)
+			if var_122_12 <= arg_119_1.time_ and arg_119_1.time_ < var_122_12 + var_122_15 then
+				local var_122_16 = (arg_119_1.time_ - var_122_12) / var_122_15
+				local var_122_17 = Vector3.New(-390, -535, -105)
 
-				var_122_10.localPosition = Vector3.Lerp(arg_119_1.var_.moveOldPos10063, var_122_16, var_122_15)
+				var_122_11.localPosition = Vector3.Lerp(arg_119_1.var_.moveOldPos10063, var_122_17, var_122_16)
 			end
 
-			if arg_119_1.time_ >= var_122_11 + var_122_14 and arg_119_1.time_ < var_122_11 + var_122_14 + arg_122_0 then
-				var_122_10.localPosition = Vector3.New(-390, -535, -105)
+			if arg_119_1.time_ >= var_122_12 + var_122_15 and arg_119_1.time_ < var_122_12 + var_122_15 + arg_122_0 then
+				var_122_11.localPosition = Vector3.New(-390, -535, -105)
 			end
 
-			local var_122_17 = arg_119_1.actors_["1061"]
-			local var_122_18 = 0
+			local var_122_18 = arg_119_1.actors_["1061"]
+			local var_122_19 = 0
 
-			if var_122_18 < arg_119_1.time_ and arg_119_1.time_ <= var_122_18 + arg_122_0 and arg_119_1.var_.actorSpriteComps1061 == nil then
-				arg_119_1.var_.actorSpriteComps1061 = var_122_17:GetComponentsInChildren(typeof(Image), true)
+			if var_122_19 < arg_119_1.time_ and arg_119_1.time_ <= var_122_19 + arg_122_0 and not isNil(var_122_18) and arg_119_1.var_.actorSpriteComps1061 == nil then
+				arg_119_1.var_.actorSpriteComps1061 = var_122_18:GetComponentsInChildren(typeof(Image), true)
 			end
 
-			local var_122_19 = 0.034
+			local var_122_20 = 0.034
 
-			if var_122_18 <= arg_119_1.time_ and arg_119_1.time_ < var_122_18 + var_122_19 then
-				local var_122_20 = (arg_119_1.time_ - var_122_18) / var_122_19
+			if var_122_19 <= arg_119_1.time_ and arg_119_1.time_ < var_122_19 + var_122_20 and not isNil(var_122_18) then
+				local var_122_21 = (arg_119_1.time_ - var_122_19) / var_122_20
 
 				if arg_119_1.var_.actorSpriteComps1061 then
 					for iter_122_4, iter_122_5 in pairs(arg_119_1.var_.actorSpriteComps1061:ToTable()) do
 						if iter_122_5 then
 							if arg_119_1.isInRecall_ then
-								local var_122_21 = Mathf.Lerp(iter_122_5.color.r, 0.46, var_122_20)
-								local var_122_22 = Mathf.Lerp(iter_122_5.color.g, 0.43, var_122_20)
-								local var_122_23 = Mathf.Lerp(iter_122_5.color.b, 0.35, var_122_20)
+								local var_122_22 = Mathf.Lerp(iter_122_5.color.r, 0.46, var_122_21)
+								local var_122_23 = Mathf.Lerp(iter_122_5.color.g, 0.43, var_122_21)
+								local var_122_24 = Mathf.Lerp(iter_122_5.color.b, 0.35, var_122_21)
 
-								iter_122_5.color = Color.New(var_122_21, var_122_22, var_122_23)
+								iter_122_5.color = Color.New(var_122_22, var_122_23, var_122_24)
 							else
-								local var_122_24 = Mathf.Lerp(iter_122_5.color.r, 0.5, var_122_20)
+								local var_122_25 = Mathf.Lerp(iter_122_5.color.r, 0.5, var_122_21)
 
-								iter_122_5.color = Color.New(var_122_24, var_122_24, var_122_24)
+								iter_122_5.color = Color.New(var_122_25, var_122_25, var_122_25)
 							end
 						end
 					end
 				end
 			end
 
-			if arg_119_1.time_ >= var_122_18 + var_122_19 and arg_119_1.time_ < var_122_18 + var_122_19 + arg_122_0 and arg_119_1.var_.actorSpriteComps1061 then
+			if arg_119_1.time_ >= var_122_19 + var_122_20 and arg_119_1.time_ < var_122_19 + var_122_20 + arg_122_0 and not isNil(var_122_18) and arg_119_1.var_.actorSpriteComps1061 then
 				for iter_122_6, iter_122_7 in pairs(arg_119_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_122_7 then
 						if arg_119_1.isInRecall_ then
@@ -6550,38 +6562,38 @@
 				arg_119_1.var_.actorSpriteComps1061 = nil
 			end
 
-			local var_122_25 = arg_119_1.actors_["10063"]
-			local var_122_26 = 0
+			local var_122_26 = arg_119_1.actors_["10063"]
+			local var_122_27 = 0
 
-			if var_122_26 < arg_119_1.time_ and arg_119_1.time_ <= var_122_26 + arg_122_0 and arg_119_1.var_.actorSpriteComps10063 == nil then
-				arg_119_1.var_.actorSpriteComps10063 = var_122_25:GetComponentsInChildren(typeof(Image), true)
+			if var_122_27 < arg_119_1.time_ and arg_119_1.time_ <= var_122_27 + arg_122_0 and not isNil(var_122_26) and arg_119_1.var_.actorSpriteComps10063 == nil then
+				arg_119_1.var_.actorSpriteComps10063 = var_122_26:GetComponentsInChildren(typeof(Image), true)
 			end
 
-			local var_122_27 = 0.034
+			local var_122_28 = 0.034
 
-			if var_122_26 <= arg_119_1.time_ and arg_119_1.time_ < var_122_26 + var_122_27 then
-				local var_122_28 = (arg_119_1.time_ - var_122_26) / var_122_27
+			if var_122_27 <= arg_119_1.time_ and arg_119_1.time_ < var_122_27 + var_122_28 and not isNil(var_122_26) then
+				local var_122_29 = (arg_119_1.time_ - var_122_27) / var_122_28
 
 				if arg_119_1.var_.actorSpriteComps10063 then
 					for iter_122_8, iter_122_9 in pairs(arg_119_1.var_.actorSpriteComps10063:ToTable()) do
 						if iter_122_9 then
 							if arg_119_1.isInRecall_ then
-								local var_122_29 = Mathf.Lerp(iter_122_9.color.r, 0.82, var_122_28)
-								local var_122_30 = Mathf.Lerp(iter_122_9.color.g, 0.77, var_122_28)
-								local var_122_31 = Mathf.Lerp(iter_122_9.color.b, 0.62, var_122_28)
+								local var_122_30 = Mathf.Lerp(iter_122_9.color.r, 0.82, var_122_29)
+								local var_122_31 = Mathf.Lerp(iter_122_9.color.g, 0.77, var_122_29)
+								local var_122_32 = Mathf.Lerp(iter_122_9.color.b, 0.62, var_122_29)
 
-								iter_122_9.color = Color.New(var_122_29, var_122_30, var_122_31)
+								iter_122_9.color = Color.New(var_122_30, var_122_31, var_122_32)
 							else
-								local var_122_32 = Mathf.Lerp(iter_122_9.color.r, 1, var_122_28)
+								local var_122_33 = Mathf.Lerp(iter_122_9.color.r, 1, var_122_29)
 
-								iter_122_9.color = Color.New(var_122_32, var_122_32, var_122_32)
+								iter_122_9.color = Color.New(var_122_33, var_122_33, var_122_33)
 							end
 						end
 					end
 				end
 			end
 
-			if arg_119_1.time_ >= var_122_26 + var_122_27 and arg_119_1.time_ < var_122_26 + var_122_27 + arg_122_0 and arg_119_1.var_.actorSpriteComps10063 then
+			if arg_119_1.time_ >= var_122_27 + var_122_28 and arg_119_1.time_ < var_122_27 + var_122_28 + arg_122_0 and not isNil(var_122_26) and arg_119_1.var_.actorSpriteComps10063 then
 				for iter_122_10, iter_122_11 in pairs(arg_119_1.var_.actorSpriteComps10063:ToTable()) do
 					if iter_122_11 then
 						if arg_119_1.isInRecall_ then
@@ -6595,19 +6607,19 @@
 				arg_119_1.var_.actorSpriteComps10063 = nil
 			end
 
-			local var_122_33 = 0
-			local var_122_34 = 0.15
+			local var_122_34 = 0
+			local var_122_35 = 0.15
 
-			if var_122_33 < arg_119_1.time_ and arg_119_1.time_ <= var_122_33 + arg_122_0 then
+			if var_122_34 < arg_119_1.time_ and arg_119_1.time_ <= var_122_34 + arg_122_0 then
 				arg_119_1.talkMaxDuration = 0
 				arg_119_1.dialogCg_.alpha = 1
 
 				arg_119_1.dialog_:SetActive(true)
 				SetActive(arg_119_1.leftNameGo_, true)
 
-				local var_122_35 = arg_119_1:FormatText(StoryNameCfg[591].name)
+				local var_122_36 = arg_119_1:FormatText(StoryNameCfg[591].name)
 
-				arg_119_1.leftNameTxt_.text = var_122_35
+				arg_119_1.leftNameTxt_.text = var_122_36
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_119_1.leftNameTxt_.transform)
 
@@ -6618,43 +6630,43 @@
 				SetActive(arg_119_1.iconTrs_.gameObject, false)
 				arg_119_1.callingController_:SetSelectedState("normal")
 
-				local var_122_36 = arg_119_1:GetWordFromCfg(410181029)
-				local var_122_37 = arg_119_1:FormatText(var_122_36.content)
+				local var_122_37 = arg_119_1:GetWordFromCfg(410181029)
+				local var_122_38 = arg_119_1:FormatText(var_122_37.content)
 
-				arg_119_1.text_.text = var_122_37
+				arg_119_1.text_.text = var_122_38
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_119_1.text_)
 
-				local var_122_38 = 6
-				local var_122_39 = utf8.len(var_122_37)
-				local var_122_40 = var_122_38 <= 0 and var_122_34 or var_122_34 * (var_122_39 / var_122_38)
+				local var_122_39 = 6
+				local var_122_40 = utf8.len(var_122_38)
+				local var_122_41 = var_122_39 <= 0 and var_122_35 or var_122_35 * (var_122_40 / var_122_39)
 
-				if var_122_40 > 0 and var_122_34 < var_122_40 then
-					arg_119_1.talkMaxDuration = var_122_40
+				if var_122_41 > 0 and var_122_35 < var_122_41 then
+					arg_119_1.talkMaxDuration = var_122_41
 
-					if var_122_40 + var_122_33 > arg_119_1.duration_ then
-						arg_119_1.duration_ = var_122_40 + var_122_33
+					if var_122_41 + var_122_34 > arg_119_1.duration_ then
+						arg_119_1.duration_ = var_122_41 + var_122_34
 					end
 				end
 
-				arg_119_1.text_.text = var_122_37
+				arg_119_1.text_.text = var_122_38
 				arg_119_1.typewritter.percent = 0
 
 				arg_119_1.typewritter:SetDirty()
 				arg_119_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_410181", "410181029", "story_v_out_410181.awb") ~= 0 then
-					local var_122_41 = manager.audio:GetVoiceLength("story_v_out_410181", "410181029", "story_v_out_410181.awb") / 1000
+					local var_122_42 = manager.audio:GetVoiceLength("story_v_out_410181", "410181029", "story_v_out_410181.awb") / 1000
 
-					if var_122_41 + var_122_33 > arg_119_1.duration_ then
-						arg_119_1.duration_ = var_122_41 + var_122_33
+					if var_122_42 + var_122_34 > arg_119_1.duration_ then
+						arg_119_1.duration_ = var_122_42 + var_122_34
 					end
 
-					if var_122_36.prefab_name ~= "" and arg_119_1.actors_[var_122_36.prefab_name] ~= nil then
-						local var_122_42 = LuaForUtil.PlayVoiceWithCriLipsync(arg_119_1.actors_[var_122_36.prefab_name].transform, "story_v_out_410181", "410181029", "story_v_out_410181.awb")
+					if var_122_37.prefab_name ~= "" and arg_119_1.actors_[var_122_37.prefab_name] ~= nil then
+						local var_122_43 = LuaForUtil.PlayVoiceWithCriLipsync(arg_119_1.actors_[var_122_37.prefab_name].transform, "story_v_out_410181", "410181029", "story_v_out_410181.awb")
 
-						arg_119_1:RecordAudio("410181029", var_122_42)
-						arg_119_1:RecordAudio("410181029", var_122_42)
+						arg_119_1:RecordAudio("410181029", var_122_43)
+						arg_119_1:RecordAudio("410181029", var_122_43)
 					else
 						arg_119_1:AudioAction("play", "voice", "story_v_out_410181", "410181029", "story_v_out_410181.awb")
 					end
@@ -6665,15 +6677,15 @@
 				arg_119_1:RecordContent(arg_119_1.text_.text)
 			end
 
-			local var_122_43 = math.max(var_122_34, arg_119_1.talkMaxDuration)
+			local var_122_44 = math.max(var_122_35, arg_119_1.talkMaxDuration)
 
-			if var_122_33 <= arg_119_1.time_ and arg_119_1.time_ < var_122_33 + var_122_43 then
-				arg_119_1.typewritter.percent = (arg_119_1.time_ - var_122_33) / var_122_43
+			if var_122_34 <= arg_119_1.time_ and arg_119_1.time_ < var_122_34 + var_122_44 then
+				arg_119_1.typewritter.percent = (arg_119_1.time_ - var_122_34) / var_122_44
 
 				arg_119_1.typewritter:SetDirty()
 			end
 
-			if arg_119_1.time_ >= var_122_33 + var_122_43 and arg_119_1.time_ < var_122_33 + var_122_43 + arg_122_0 then
+			if arg_119_1.time_ >= var_122_34 + var_122_44 and arg_119_1.time_ < var_122_34 + var_122_44 + arg_122_0 then
 				arg_119_1.typewritter.percent = 1
 
 				arg_119_1.typewritter:SetDirty()
@@ -6752,13 +6764,13 @@
 			local var_126_7 = arg_123_1.actors_["1061"]
 			local var_126_8 = 0
 
-			if var_126_8 < arg_123_1.time_ and arg_123_1.time_ <= var_126_8 + arg_126_0 and arg_123_1.var_.actorSpriteComps1061 == nil then
+			if var_126_8 < arg_123_1.time_ and arg_123_1.time_ <= var_126_8 + arg_126_0 and not isNil(var_126_7) and arg_123_1.var_.actorSpriteComps1061 == nil then
 				arg_123_1.var_.actorSpriteComps1061 = var_126_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_126_9 = 0.034
 
-			if var_126_8 <= arg_123_1.time_ and arg_123_1.time_ < var_126_8 + var_126_9 then
+			if var_126_8 <= arg_123_1.time_ and arg_123_1.time_ < var_126_8 + var_126_9 and not isNil(var_126_7) then
 				local var_126_10 = (arg_123_1.time_ - var_126_8) / var_126_9
 
 				if arg_123_1.var_.actorSpriteComps1061 then
@@ -6780,7 +6792,7 @@
 				end
 			end
 
-			if arg_123_1.time_ >= var_126_8 + var_126_9 and arg_123_1.time_ < var_126_8 + var_126_9 + arg_126_0 and arg_123_1.var_.actorSpriteComps1061 then
+			if arg_123_1.time_ >= var_126_8 + var_126_9 and arg_123_1.time_ < var_126_8 + var_126_9 + arg_126_0 and not isNil(var_126_7) and arg_123_1.var_.actorSpriteComps1061 then
 				for iter_126_3, iter_126_4 in pairs(arg_123_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_126_4 then
 						if arg_123_1.isInRecall_ then
@@ -6797,13 +6809,13 @@
 			local var_126_15 = arg_123_1.actors_["10063"]
 			local var_126_16 = 0
 
-			if var_126_16 < arg_123_1.time_ and arg_123_1.time_ <= var_126_16 + arg_126_0 and arg_123_1.var_.actorSpriteComps10063 == nil then
+			if var_126_16 < arg_123_1.time_ and arg_123_1.time_ <= var_126_16 + arg_126_0 and not isNil(var_126_15) and arg_123_1.var_.actorSpriteComps10063 == nil then
 				arg_123_1.var_.actorSpriteComps10063 = var_126_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_126_17 = 0.034
 
-			if var_126_16 <= arg_123_1.time_ and arg_123_1.time_ < var_126_16 + var_126_17 then
+			if var_126_16 <= arg_123_1.time_ and arg_123_1.time_ < var_126_16 + var_126_17 and not isNil(var_126_15) then
 				local var_126_18 = (arg_123_1.time_ - var_126_16) / var_126_17
 
 				if arg_123_1.var_.actorSpriteComps10063 then
@@ -6825,7 +6837,7 @@
 				end
 			end
 
-			if arg_123_1.time_ >= var_126_16 + var_126_17 and arg_123_1.time_ < var_126_16 + var_126_17 + arg_126_0 and arg_123_1.var_.actorSpriteComps10063 then
+			if arg_123_1.time_ >= var_126_16 + var_126_17 and arg_123_1.time_ < var_126_16 + var_126_17 + arg_126_0 and not isNil(var_126_15) and arg_123_1.var_.actorSpriteComps10063 then
 				for iter_126_7, iter_126_8 in pairs(arg_123_1.var_.actorSpriteComps10063:ToTable()) do
 					if iter_126_8 then
 						if arg_123_1.isInRecall_ then
@@ -6996,13 +7008,13 @@
 			local var_130_7 = arg_127_1.actors_["1061"]
 			local var_130_8 = 0
 
-			if var_130_8 < arg_127_1.time_ and arg_127_1.time_ <= var_130_8 + arg_130_0 and arg_127_1.var_.actorSpriteComps1061 == nil then
+			if var_130_8 < arg_127_1.time_ and arg_127_1.time_ <= var_130_8 + arg_130_0 and not isNil(var_130_7) and arg_127_1.var_.actorSpriteComps1061 == nil then
 				arg_127_1.var_.actorSpriteComps1061 = var_130_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_130_9 = 0.034
 
-			if var_130_8 <= arg_127_1.time_ and arg_127_1.time_ < var_130_8 + var_130_9 then
+			if var_130_8 <= arg_127_1.time_ and arg_127_1.time_ < var_130_8 + var_130_9 and not isNil(var_130_7) then
 				local var_130_10 = (arg_127_1.time_ - var_130_8) / var_130_9
 
 				if arg_127_1.var_.actorSpriteComps1061 then
@@ -7024,7 +7036,7 @@
 				end
 			end
 
-			if arg_127_1.time_ >= var_130_8 + var_130_9 and arg_127_1.time_ < var_130_8 + var_130_9 + arg_130_0 and arg_127_1.var_.actorSpriteComps1061 then
+			if arg_127_1.time_ >= var_130_8 + var_130_9 and arg_127_1.time_ < var_130_8 + var_130_9 + arg_130_0 and not isNil(var_130_7) and arg_127_1.var_.actorSpriteComps1061 then
 				for iter_130_3, iter_130_4 in pairs(arg_127_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_130_4 then
 						if arg_127_1.isInRecall_ then
@@ -7041,13 +7053,13 @@
 			local var_130_15 = arg_127_1.actors_["10063"]
 			local var_130_16 = 0
 
-			if var_130_16 < arg_127_1.time_ and arg_127_1.time_ <= var_130_16 + arg_130_0 and arg_127_1.var_.actorSpriteComps10063 == nil then
+			if var_130_16 < arg_127_1.time_ and arg_127_1.time_ <= var_130_16 + arg_130_0 and not isNil(var_130_15) and arg_127_1.var_.actorSpriteComps10063 == nil then
 				arg_127_1.var_.actorSpriteComps10063 = var_130_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_130_17 = 0.034
 
-			if var_130_16 <= arg_127_1.time_ and arg_127_1.time_ < var_130_16 + var_130_17 then
+			if var_130_16 <= arg_127_1.time_ and arg_127_1.time_ < var_130_16 + var_130_17 and not isNil(var_130_15) then
 				local var_130_18 = (arg_127_1.time_ - var_130_16) / var_130_17
 
 				if arg_127_1.var_.actorSpriteComps10063 then
@@ -7069,7 +7081,7 @@
 				end
 			end
 
-			if arg_127_1.time_ >= var_130_16 + var_130_17 and arg_127_1.time_ < var_130_16 + var_130_17 + arg_130_0 and arg_127_1.var_.actorSpriteComps10063 then
+			if arg_127_1.time_ >= var_130_16 + var_130_17 and arg_127_1.time_ < var_130_16 + var_130_17 + arg_130_0 and not isNil(var_130_15) and arg_127_1.var_.actorSpriteComps10063 then
 				for iter_130_7, iter_130_8 in pairs(arg_127_1.var_.actorSpriteComps10063:ToTable()) do
 					if iter_130_8 then
 						if arg_127_1.isInRecall_ then
@@ -7240,13 +7252,13 @@
 			local var_134_7 = arg_131_1.actors_["10063"]
 			local var_134_8 = 0
 
-			if var_134_8 < arg_131_1.time_ and arg_131_1.time_ <= var_134_8 + arg_134_0 and arg_131_1.var_.actorSpriteComps10063 == nil then
+			if var_134_8 < arg_131_1.time_ and arg_131_1.time_ <= var_134_8 + arg_134_0 and not isNil(var_134_7) and arg_131_1.var_.actorSpriteComps10063 == nil then
 				arg_131_1.var_.actorSpriteComps10063 = var_134_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_134_9 = 0.034
 
-			if var_134_8 <= arg_131_1.time_ and arg_131_1.time_ < var_134_8 + var_134_9 then
+			if var_134_8 <= arg_131_1.time_ and arg_131_1.time_ < var_134_8 + var_134_9 and not isNil(var_134_7) then
 				local var_134_10 = (arg_131_1.time_ - var_134_8) / var_134_9
 
 				if arg_131_1.var_.actorSpriteComps10063 then
@@ -7268,7 +7280,7 @@
 				end
 			end
 
-			if arg_131_1.time_ >= var_134_8 + var_134_9 and arg_131_1.time_ < var_134_8 + var_134_9 + arg_134_0 and arg_131_1.var_.actorSpriteComps10063 then
+			if arg_131_1.time_ >= var_134_8 + var_134_9 and arg_131_1.time_ < var_134_8 + var_134_9 + arg_134_0 and not isNil(var_134_7) and arg_131_1.var_.actorSpriteComps10063 then
 				for iter_134_3, iter_134_4 in pairs(arg_131_1.var_.actorSpriteComps10063:ToTable()) do
 					if iter_134_4 then
 						if arg_131_1.isInRecall_ then
@@ -7404,13 +7416,13 @@
 			local var_138_0 = arg_135_1.actors_["1061"]
 			local var_138_1 = 0
 
-			if var_138_1 < arg_135_1.time_ and arg_135_1.time_ <= var_138_1 + arg_138_0 and arg_135_1.var_.actorSpriteComps1061 == nil then
+			if var_138_1 < arg_135_1.time_ and arg_135_1.time_ <= var_138_1 + arg_138_0 and not isNil(var_138_0) and arg_135_1.var_.actorSpriteComps1061 == nil then
 				arg_135_1.var_.actorSpriteComps1061 = var_138_0:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_138_2 = 0.034
 
-			if var_138_1 <= arg_135_1.time_ and arg_135_1.time_ < var_138_1 + var_138_2 then
+			if var_138_1 <= arg_135_1.time_ and arg_135_1.time_ < var_138_1 + var_138_2 and not isNil(var_138_0) then
 				local var_138_3 = (arg_135_1.time_ - var_138_1) / var_138_2
 
 				if arg_135_1.var_.actorSpriteComps1061 then
@@ -7432,7 +7444,7 @@
 				end
 			end
 
-			if arg_135_1.time_ >= var_138_1 + var_138_2 and arg_135_1.time_ < var_138_1 + var_138_2 + arg_138_0 and arg_135_1.var_.actorSpriteComps1061 then
+			if arg_135_1.time_ >= var_138_1 + var_138_2 and arg_135_1.time_ < var_138_1 + var_138_2 + arg_138_0 and not isNil(var_138_0) and arg_135_1.var_.actorSpriteComps1061 then
 				for iter_138_2, iter_138_3 in pairs(arg_135_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_138_3 then
 						if arg_135_1.isInRecall_ then
@@ -7449,13 +7461,13 @@
 			local var_138_8 = arg_135_1.actors_["10063"]
 			local var_138_9 = 0
 
-			if var_138_9 < arg_135_1.time_ and arg_135_1.time_ <= var_138_9 + arg_138_0 and arg_135_1.var_.actorSpriteComps10063 == nil then
+			if var_138_9 < arg_135_1.time_ and arg_135_1.time_ <= var_138_9 + arg_138_0 and not isNil(var_138_8) and arg_135_1.var_.actorSpriteComps10063 == nil then
 				arg_135_1.var_.actorSpriteComps10063 = var_138_8:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_138_10 = 0.034
 
-			if var_138_9 <= arg_135_1.time_ and arg_135_1.time_ < var_138_9 + var_138_10 then
+			if var_138_9 <= arg_135_1.time_ and arg_135_1.time_ < var_138_9 + var_138_10 and not isNil(var_138_8) then
 				local var_138_11 = (arg_135_1.time_ - var_138_9) / var_138_10
 
 				if arg_135_1.var_.actorSpriteComps10063 then
@@ -7477,7 +7489,7 @@
 				end
 			end
 
-			if arg_135_1.time_ >= var_138_9 + var_138_10 and arg_135_1.time_ < var_138_9 + var_138_10 + arg_138_0 and arg_135_1.var_.actorSpriteComps10063 then
+			if arg_135_1.time_ >= var_138_9 + var_138_10 and arg_135_1.time_ < var_138_9 + var_138_10 + arg_138_0 and not isNil(var_138_8) and arg_135_1.var_.actorSpriteComps10063 then
 				for iter_138_6, iter_138_7 in pairs(arg_135_1.var_.actorSpriteComps10063:ToTable()) do
 					if iter_138_7 then
 						if arg_135_1.isInRecall_ then
@@ -8024,90 +8036,94 @@
 			local var_154_14 = "10061"
 
 			if arg_151_1.actors_[var_154_14] == nil then
-				local var_154_15 = Object.Instantiate(Asset.Load("Widget/System/Story/StoryExpression/" .. var_154_14), arg_151_1.canvasGo_.transform)
+				local var_154_15 = Asset.Load("Widget/System/Story/StoryExpression/" .. "10061")
 
-				var_154_15.transform:SetSiblingIndex(1)
+				if not isNil(var_154_15) then
+					local var_154_16 = Object.Instantiate(var_154_15, arg_151_1.canvasGo_.transform)
 
-				var_154_15.name = var_154_14
-				var_154_15.transform.localPosition = Vector3.New(0, 100000, 0)
-				arg_151_1.actors_[var_154_14] = var_154_15
+					var_154_16.transform:SetSiblingIndex(1)
 
-				local var_154_16 = var_154_15:GetComponentsInChildren(typeof(Image), true):ToTable()
+					var_154_16.name = var_154_14
+					var_154_16.transform.localPosition = Vector3.New(0, 100000, 0)
+					arg_151_1.actors_[var_154_14] = var_154_16
 
-				if arg_151_1.isInRecall_ then
-					for iter_154_2, iter_154_3 in ipairs(var_154_16) do
-						iter_154_3.color = Color.New(0.82, 0.77, 0.62)
+					local var_154_17 = var_154_16:GetComponentsInChildren(typeof(Image), true):ToTable()
+
+					if arg_151_1.isInRecall_ then
+						for iter_154_2, iter_154_3 in ipairs(var_154_17) do
+							iter_154_3.color = Color.New(0.82, 0.77, 0.62)
+						end
 					end
 				end
 			end
 
-			local var_154_17 = arg_151_1.actors_["10061"].transform
-			local var_154_18 = 0
+			local var_154_18 = arg_151_1.actors_["10061"].transform
+			local var_154_19 = 0
 
-			if var_154_18 < arg_151_1.time_ and arg_151_1.time_ <= var_154_18 + arg_154_0 then
-				arg_151_1.var_.moveOldPos10061 = var_154_17.localPosition
-				var_154_17.localScale = Vector3.New(1, 1, 1)
+			if var_154_19 < arg_151_1.time_ and arg_151_1.time_ <= var_154_19 + arg_154_0 then
+				arg_151_1.var_.moveOldPos10061 = var_154_18.localPosition
+				var_154_18.localScale = Vector3.New(1, 1, 1)
 
 				arg_151_1:CheckSpriteTmpPos("10061", 7)
 
-				local var_154_19 = var_154_17.childCount
+				local var_154_20 = var_154_18.childCount
 
-				for iter_154_4 = 0, var_154_19 - 1 do
-					local var_154_20 = var_154_17:GetChild(iter_154_4)
+				for iter_154_4 = 0, var_154_20 - 1 do
+					local var_154_21 = var_154_18:GetChild(iter_154_4)
 
-					if var_154_20.name == "" or not string.find(var_154_20.name, "split") then
-						var_154_20.gameObject:SetActive(true)
+					if var_154_21.name == "" or not string.find(var_154_21.name, "split") then
+						var_154_21.gameObject:SetActive(true)
 					else
-						var_154_20.gameObject:SetActive(false)
+						var_154_21.gameObject:SetActive(false)
 					end
 				end
 			end
 
-			local var_154_21 = 0.001
+			local var_154_22 = 0.001
 
-			if var_154_18 <= arg_151_1.time_ and arg_151_1.time_ < var_154_18 + var_154_21 then
-				local var_154_22 = (arg_151_1.time_ - var_154_18) / var_154_21
-				local var_154_23 = Vector3.New(0, -2000, -100)
+			if var_154_19 <= arg_151_1.time_ and arg_151_1.time_ < var_154_19 + var_154_22 then
+				local var_154_23 = (arg_151_1.time_ - var_154_19) / var_154_22
+				local var_154_24 = Vector3.New(0, -2000, -100)
 
-				var_154_17.localPosition = Vector3.Lerp(arg_151_1.var_.moveOldPos10061, var_154_23, var_154_22)
+				var_154_18.localPosition = Vector3.Lerp(arg_151_1.var_.moveOldPos10061, var_154_24, var_154_23)
 			end
 
-			if arg_151_1.time_ >= var_154_18 + var_154_21 and arg_151_1.time_ < var_154_18 + var_154_21 + arg_154_0 then
-				var_154_17.localPosition = Vector3.New(0, -2000, -100)
+			if arg_151_1.time_ >= var_154_19 + var_154_22 and arg_151_1.time_ < var_154_19 + var_154_22 + arg_154_0 then
+				var_154_18.localPosition = Vector3.New(0, -2000, -100)
 			end
 
-			local var_154_24 = arg_151_1.actors_["1061"]
-			local var_154_25 = 0
+			local var_154_25 = arg_151_1.actors_["1061"]
+			local var_154_26 = 0
 
-			if var_154_25 < arg_151_1.time_ and arg_151_1.time_ <= var_154_25 + arg_154_0 and arg_151_1.var_.actorSpriteComps1061 == nil then
-				arg_151_1.var_.actorSpriteComps1061 = var_154_24:GetComponentsInChildren(typeof(Image), true)
+			if var_154_26 < arg_151_1.time_ and arg_151_1.time_ <= var_154_26 + arg_154_0 and not isNil(var_154_25) and arg_151_1.var_.actorSpriteComps1061 == nil then
+				arg_151_1.var_.actorSpriteComps1061 = var_154_25:GetComponentsInChildren(typeof(Image), true)
 			end
 
-			local var_154_26 = 0.034
+			local var_154_27 = 0.034
 
-			if var_154_25 <= arg_151_1.time_ and arg_151_1.time_ < var_154_25 + var_154_26 then
-				local var_154_27 = (arg_151_1.time_ - var_154_25) / var_154_26
+			if var_154_26 <= arg_151_1.time_ and arg_151_1.time_ < var_154_26 + var_154_27 and not isNil(var_154_25) then
+				local var_154_28 = (arg_151_1.time_ - var_154_26) / var_154_27
 
 				if arg_151_1.var_.actorSpriteComps1061 then
 					for iter_154_5, iter_154_6 in pairs(arg_151_1.var_.actorSpriteComps1061:ToTable()) do
 						if iter_154_6 then
 							if arg_151_1.isInRecall_ then
-								local var_154_28 = Mathf.Lerp(iter_154_6.color.r, 0.82, var_154_27)
-								local var_154_29 = Mathf.Lerp(iter_154_6.color.g, 0.77, var_154_27)
-								local var_154_30 = Mathf.Lerp(iter_154_6.color.b, 0.62, var_154_27)
+								local var_154_29 = Mathf.Lerp(iter_154_6.color.r, 0.82, var_154_28)
+								local var_154_30 = Mathf.Lerp(iter_154_6.color.g, 0.77, var_154_28)
+								local var_154_31 = Mathf.Lerp(iter_154_6.color.b, 0.62, var_154_28)
 
-								iter_154_6.color = Color.New(var_154_28, var_154_29, var_154_30)
+								iter_154_6.color = Color.New(var_154_29, var_154_30, var_154_31)
 							else
-								local var_154_31 = Mathf.Lerp(iter_154_6.color.r, 1, var_154_27)
+								local var_154_32 = Mathf.Lerp(iter_154_6.color.r, 1, var_154_28)
 
-								iter_154_6.color = Color.New(var_154_31, var_154_31, var_154_31)
+								iter_154_6.color = Color.New(var_154_32, var_154_32, var_154_32)
 							end
 						end
 					end
 				end
 			end
 
-			if arg_151_1.time_ >= var_154_25 + var_154_26 and arg_151_1.time_ < var_154_25 + var_154_26 + arg_154_0 and arg_151_1.var_.actorSpriteComps1061 then
+			if arg_151_1.time_ >= var_154_26 + var_154_27 and arg_151_1.time_ < var_154_26 + var_154_27 + arg_154_0 and not isNil(var_154_25) and arg_151_1.var_.actorSpriteComps1061 then
 				for iter_154_7, iter_154_8 in pairs(arg_151_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_154_8 then
 						if arg_151_1.isInRecall_ then
@@ -8121,38 +8137,38 @@
 				arg_151_1.var_.actorSpriteComps1061 = nil
 			end
 
-			local var_154_32 = arg_151_1.actors_["10059"]
-			local var_154_33 = 0
+			local var_154_33 = arg_151_1.actors_["10059"]
+			local var_154_34 = 0
 
-			if var_154_33 < arg_151_1.time_ and arg_151_1.time_ <= var_154_33 + arg_154_0 and arg_151_1.var_.actorSpriteComps10059 == nil then
-				arg_151_1.var_.actorSpriteComps10059 = var_154_32:GetComponentsInChildren(typeof(Image), true)
+			if var_154_34 < arg_151_1.time_ and arg_151_1.time_ <= var_154_34 + arg_154_0 and not isNil(var_154_33) and arg_151_1.var_.actorSpriteComps10059 == nil then
+				arg_151_1.var_.actorSpriteComps10059 = var_154_33:GetComponentsInChildren(typeof(Image), true)
 			end
 
-			local var_154_34 = 0.034
+			local var_154_35 = 0.034
 
-			if var_154_33 <= arg_151_1.time_ and arg_151_1.time_ < var_154_33 + var_154_34 then
-				local var_154_35 = (arg_151_1.time_ - var_154_33) / var_154_34
+			if var_154_34 <= arg_151_1.time_ and arg_151_1.time_ < var_154_34 + var_154_35 and not isNil(var_154_33) then
+				local var_154_36 = (arg_151_1.time_ - var_154_34) / var_154_35
 
 				if arg_151_1.var_.actorSpriteComps10059 then
 					for iter_154_9, iter_154_10 in pairs(arg_151_1.var_.actorSpriteComps10059:ToTable()) do
 						if iter_154_10 then
 							if arg_151_1.isInRecall_ then
-								local var_154_36 = Mathf.Lerp(iter_154_10.color.r, 0.46, var_154_35)
-								local var_154_37 = Mathf.Lerp(iter_154_10.color.g, 0.43, var_154_35)
-								local var_154_38 = Mathf.Lerp(iter_154_10.color.b, 0.35, var_154_35)
+								local var_154_37 = Mathf.Lerp(iter_154_10.color.r, 0.46, var_154_36)
+								local var_154_38 = Mathf.Lerp(iter_154_10.color.g, 0.43, var_154_36)
+								local var_154_39 = Mathf.Lerp(iter_154_10.color.b, 0.35, var_154_36)
 
-								iter_154_10.color = Color.New(var_154_36, var_154_37, var_154_38)
+								iter_154_10.color = Color.New(var_154_37, var_154_38, var_154_39)
 							else
-								local var_154_39 = Mathf.Lerp(iter_154_10.color.r, 0.5, var_154_35)
+								local var_154_40 = Mathf.Lerp(iter_154_10.color.r, 0.5, var_154_36)
 
-								iter_154_10.color = Color.New(var_154_39, var_154_39, var_154_39)
+								iter_154_10.color = Color.New(var_154_40, var_154_40, var_154_40)
 							end
 						end
 					end
 				end
 			end
 
-			if arg_151_1.time_ >= var_154_33 + var_154_34 and arg_151_1.time_ < var_154_33 + var_154_34 + arg_154_0 and arg_151_1.var_.actorSpriteComps10059 then
+			if arg_151_1.time_ >= var_154_34 + var_154_35 and arg_151_1.time_ < var_154_34 + var_154_35 + arg_154_0 and not isNil(var_154_33) and arg_151_1.var_.actorSpriteComps10059 then
 				for iter_154_11, iter_154_12 in pairs(arg_151_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_154_12 then
 						if arg_151_1.isInRecall_ then
@@ -8166,38 +8182,38 @@
 				arg_151_1.var_.actorSpriteComps10059 = nil
 			end
 
-			local var_154_40 = arg_151_1.actors_["10061"]
-			local var_154_41 = 0
+			local var_154_41 = arg_151_1.actors_["10061"]
+			local var_154_42 = 0
 
-			if var_154_41 < arg_151_1.time_ and arg_151_1.time_ <= var_154_41 + arg_154_0 and arg_151_1.var_.actorSpriteComps10061 == nil then
-				arg_151_1.var_.actorSpriteComps10061 = var_154_40:GetComponentsInChildren(typeof(Image), true)
+			if var_154_42 < arg_151_1.time_ and arg_151_1.time_ <= var_154_42 + arg_154_0 and not isNil(var_154_41) and arg_151_1.var_.actorSpriteComps10061 == nil then
+				arg_151_1.var_.actorSpriteComps10061 = var_154_41:GetComponentsInChildren(typeof(Image), true)
 			end
 
-			local var_154_42 = 0.034
+			local var_154_43 = 0.034
 
-			if var_154_41 <= arg_151_1.time_ and arg_151_1.time_ < var_154_41 + var_154_42 then
-				local var_154_43 = (arg_151_1.time_ - var_154_41) / var_154_42
+			if var_154_42 <= arg_151_1.time_ and arg_151_1.time_ < var_154_42 + var_154_43 and not isNil(var_154_41) then
+				local var_154_44 = (arg_151_1.time_ - var_154_42) / var_154_43
 
 				if arg_151_1.var_.actorSpriteComps10061 then
 					for iter_154_13, iter_154_14 in pairs(arg_151_1.var_.actorSpriteComps10061:ToTable()) do
 						if iter_154_14 then
 							if arg_151_1.isInRecall_ then
-								local var_154_44 = Mathf.Lerp(iter_154_14.color.r, 0.46, var_154_43)
-								local var_154_45 = Mathf.Lerp(iter_154_14.color.g, 0.43, var_154_43)
-								local var_154_46 = Mathf.Lerp(iter_154_14.color.b, 0.35, var_154_43)
+								local var_154_45 = Mathf.Lerp(iter_154_14.color.r, 0.46, var_154_44)
+								local var_154_46 = Mathf.Lerp(iter_154_14.color.g, 0.43, var_154_44)
+								local var_154_47 = Mathf.Lerp(iter_154_14.color.b, 0.35, var_154_44)
 
-								iter_154_14.color = Color.New(var_154_44, var_154_45, var_154_46)
+								iter_154_14.color = Color.New(var_154_45, var_154_46, var_154_47)
 							else
-								local var_154_47 = Mathf.Lerp(iter_154_14.color.r, 0.5, var_154_43)
+								local var_154_48 = Mathf.Lerp(iter_154_14.color.r, 0.5, var_154_44)
 
-								iter_154_14.color = Color.New(var_154_47, var_154_47, var_154_47)
+								iter_154_14.color = Color.New(var_154_48, var_154_48, var_154_48)
 							end
 						end
 					end
 				end
 			end
 
-			if arg_151_1.time_ >= var_154_41 + var_154_42 and arg_151_1.time_ < var_154_41 + var_154_42 + arg_154_0 and arg_151_1.var_.actorSpriteComps10061 then
+			if arg_151_1.time_ >= var_154_42 + var_154_43 and arg_151_1.time_ < var_154_42 + var_154_43 + arg_154_0 and not isNil(var_154_41) and arg_151_1.var_.actorSpriteComps10061 then
 				for iter_154_15, iter_154_16 in pairs(arg_151_1.var_.actorSpriteComps10061:ToTable()) do
 					if iter_154_16 then
 						if arg_151_1.isInRecall_ then
@@ -8211,19 +8227,19 @@
 				arg_151_1.var_.actorSpriteComps10061 = nil
 			end
 
-			local var_154_48 = 0
-			local var_154_49 = 0.8
+			local var_154_49 = 0
+			local var_154_50 = 0.8
 
-			if var_154_48 < arg_151_1.time_ and arg_151_1.time_ <= var_154_48 + arg_154_0 then
+			if var_154_49 < arg_151_1.time_ and arg_151_1.time_ <= var_154_49 + arg_154_0 then
 				arg_151_1.talkMaxDuration = 0
 				arg_151_1.dialogCg_.alpha = 1
 
 				arg_151_1.dialog_:SetActive(true)
 				SetActive(arg_151_1.leftNameGo_, true)
 
-				local var_154_50 = arg_151_1:FormatText(StoryNameCfg[612].name)
+				local var_154_51 = arg_151_1:FormatText(StoryNameCfg[612].name)
 
-				arg_151_1.leftNameTxt_.text = var_154_50
+				arg_151_1.leftNameTxt_.text = var_154_51
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_151_1.leftNameTxt_.transform)
 
@@ -8234,43 +8250,43 @@
 				SetActive(arg_151_1.iconTrs_.gameObject, false)
 				arg_151_1.callingController_:SetSelectedState("normal")
 
-				local var_154_51 = arg_151_1:GetWordFromCfg(410181037)
-				local var_154_52 = arg_151_1:FormatText(var_154_51.content)
+				local var_154_52 = arg_151_1:GetWordFromCfg(410181037)
+				local var_154_53 = arg_151_1:FormatText(var_154_52.content)
 
-				arg_151_1.text_.text = var_154_52
+				arg_151_1.text_.text = var_154_53
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_151_1.text_)
 
-				local var_154_53 = 32
-				local var_154_54 = utf8.len(var_154_52)
-				local var_154_55 = var_154_53 <= 0 and var_154_49 or var_154_49 * (var_154_54 / var_154_53)
+				local var_154_54 = 32
+				local var_154_55 = utf8.len(var_154_53)
+				local var_154_56 = var_154_54 <= 0 and var_154_50 or var_154_50 * (var_154_55 / var_154_54)
 
-				if var_154_55 > 0 and var_154_49 < var_154_55 then
-					arg_151_1.talkMaxDuration = var_154_55
+				if var_154_56 > 0 and var_154_50 < var_154_56 then
+					arg_151_1.talkMaxDuration = var_154_56
 
-					if var_154_55 + var_154_48 > arg_151_1.duration_ then
-						arg_151_1.duration_ = var_154_55 + var_154_48
+					if var_154_56 + var_154_49 > arg_151_1.duration_ then
+						arg_151_1.duration_ = var_154_56 + var_154_49
 					end
 				end
 
-				arg_151_1.text_.text = var_154_52
+				arg_151_1.text_.text = var_154_53
 				arg_151_1.typewritter.percent = 0
 
 				arg_151_1.typewritter:SetDirty()
 				arg_151_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_410181", "410181037", "story_v_out_410181.awb") ~= 0 then
-					local var_154_56 = manager.audio:GetVoiceLength("story_v_out_410181", "410181037", "story_v_out_410181.awb") / 1000
+					local var_154_57 = manager.audio:GetVoiceLength("story_v_out_410181", "410181037", "story_v_out_410181.awb") / 1000
 
-					if var_154_56 + var_154_48 > arg_151_1.duration_ then
-						arg_151_1.duration_ = var_154_56 + var_154_48
+					if var_154_57 + var_154_49 > arg_151_1.duration_ then
+						arg_151_1.duration_ = var_154_57 + var_154_49
 					end
 
-					if var_154_51.prefab_name ~= "" and arg_151_1.actors_[var_154_51.prefab_name] ~= nil then
-						local var_154_57 = LuaForUtil.PlayVoiceWithCriLipsync(arg_151_1.actors_[var_154_51.prefab_name].transform, "story_v_out_410181", "410181037", "story_v_out_410181.awb")
+					if var_154_52.prefab_name ~= "" and arg_151_1.actors_[var_154_52.prefab_name] ~= nil then
+						local var_154_58 = LuaForUtil.PlayVoiceWithCriLipsync(arg_151_1.actors_[var_154_52.prefab_name].transform, "story_v_out_410181", "410181037", "story_v_out_410181.awb")
 
-						arg_151_1:RecordAudio("410181037", var_154_57)
-						arg_151_1:RecordAudio("410181037", var_154_57)
+						arg_151_1:RecordAudio("410181037", var_154_58)
+						arg_151_1:RecordAudio("410181037", var_154_58)
 					else
 						arg_151_1:AudioAction("play", "voice", "story_v_out_410181", "410181037", "story_v_out_410181.awb")
 					end
@@ -8281,15 +8297,15 @@
 				arg_151_1:RecordContent(arg_151_1.text_.text)
 			end
 
-			local var_154_58 = math.max(var_154_49, arg_151_1.talkMaxDuration)
+			local var_154_59 = math.max(var_154_50, arg_151_1.talkMaxDuration)
 
-			if var_154_48 <= arg_151_1.time_ and arg_151_1.time_ < var_154_48 + var_154_58 then
-				arg_151_1.typewritter.percent = (arg_151_1.time_ - var_154_48) / var_154_58
+			if var_154_49 <= arg_151_1.time_ and arg_151_1.time_ < var_154_49 + var_154_59 then
+				arg_151_1.typewritter.percent = (arg_151_1.time_ - var_154_49) / var_154_59
 
 				arg_151_1.typewritter:SetDirty()
 			end
 
-			if arg_151_1.time_ >= var_154_48 + var_154_58 and arg_151_1.time_ < var_154_48 + var_154_58 + arg_154_0 then
+			if arg_151_1.time_ >= var_154_49 + var_154_59 and arg_151_1.time_ < var_154_49 + var_154_59 + arg_154_0 then
 				arg_151_1.typewritter.percent = 1
 
 				arg_151_1.typewritter:SetDirty()
@@ -8368,13 +8384,13 @@
 			local var_158_7 = arg_155_1.actors_["10059"]
 			local var_158_8 = 0
 
-			if var_158_8 < arg_155_1.time_ and arg_155_1.time_ <= var_158_8 + arg_158_0 and arg_155_1.var_.actorSpriteComps10059 == nil then
+			if var_158_8 < arg_155_1.time_ and arg_155_1.time_ <= var_158_8 + arg_158_0 and not isNil(var_158_7) and arg_155_1.var_.actorSpriteComps10059 == nil then
 				arg_155_1.var_.actorSpriteComps10059 = var_158_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_158_9 = 0.034
 
-			if var_158_8 <= arg_155_1.time_ and arg_155_1.time_ < var_158_8 + var_158_9 then
+			if var_158_8 <= arg_155_1.time_ and arg_155_1.time_ < var_158_8 + var_158_9 and not isNil(var_158_7) then
 				local var_158_10 = (arg_155_1.time_ - var_158_8) / var_158_9
 
 				if arg_155_1.var_.actorSpriteComps10059 then
@@ -8396,7 +8412,7 @@
 				end
 			end
 
-			if arg_155_1.time_ >= var_158_8 + var_158_9 and arg_155_1.time_ < var_158_8 + var_158_9 + arg_158_0 and arg_155_1.var_.actorSpriteComps10059 then
+			if arg_155_1.time_ >= var_158_8 + var_158_9 and arg_155_1.time_ < var_158_8 + var_158_9 + arg_158_0 and not isNil(var_158_7) and arg_155_1.var_.actorSpriteComps10059 then
 				for iter_158_3, iter_158_4 in pairs(arg_155_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_158_4 then
 						if arg_155_1.isInRecall_ then
@@ -8413,13 +8429,13 @@
 			local var_158_15 = arg_155_1.actors_["1061"]
 			local var_158_16 = 0
 
-			if var_158_16 < arg_155_1.time_ and arg_155_1.time_ <= var_158_16 + arg_158_0 and arg_155_1.var_.actorSpriteComps1061 == nil then
+			if var_158_16 < arg_155_1.time_ and arg_155_1.time_ <= var_158_16 + arg_158_0 and not isNil(var_158_15) and arg_155_1.var_.actorSpriteComps1061 == nil then
 				arg_155_1.var_.actorSpriteComps1061 = var_158_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_158_17 = 0.034
 
-			if var_158_16 <= arg_155_1.time_ and arg_155_1.time_ < var_158_16 + var_158_17 then
+			if var_158_16 <= arg_155_1.time_ and arg_155_1.time_ < var_158_16 + var_158_17 and not isNil(var_158_15) then
 				local var_158_18 = (arg_155_1.time_ - var_158_16) / var_158_17
 
 				if arg_155_1.var_.actorSpriteComps1061 then
@@ -8441,7 +8457,7 @@
 				end
 			end
 
-			if arg_155_1.time_ >= var_158_16 + var_158_17 and arg_155_1.time_ < var_158_16 + var_158_17 + arg_158_0 and arg_155_1.var_.actorSpriteComps1061 then
+			if arg_155_1.time_ >= var_158_16 + var_158_17 and arg_155_1.time_ < var_158_16 + var_158_17 + arg_158_0 and not isNil(var_158_15) and arg_155_1.var_.actorSpriteComps1061 then
 				for iter_158_7, iter_158_8 in pairs(arg_155_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_158_8 then
 						if arg_155_1.isInRecall_ then
@@ -8612,13 +8628,13 @@
 			local var_162_7 = arg_159_1.actors_["1061"]
 			local var_162_8 = 0
 
-			if var_162_8 < arg_159_1.time_ and arg_159_1.time_ <= var_162_8 + arg_162_0 and arg_159_1.var_.actorSpriteComps1061 == nil then
+			if var_162_8 < arg_159_1.time_ and arg_159_1.time_ <= var_162_8 + arg_162_0 and not isNil(var_162_7) and arg_159_1.var_.actorSpriteComps1061 == nil then
 				arg_159_1.var_.actorSpriteComps1061 = var_162_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_162_9 = 0.034
 
-			if var_162_8 <= arg_159_1.time_ and arg_159_1.time_ < var_162_8 + var_162_9 then
+			if var_162_8 <= arg_159_1.time_ and arg_159_1.time_ < var_162_8 + var_162_9 and not isNil(var_162_7) then
 				local var_162_10 = (arg_159_1.time_ - var_162_8) / var_162_9
 
 				if arg_159_1.var_.actorSpriteComps1061 then
@@ -8640,7 +8656,7 @@
 				end
 			end
 
-			if arg_159_1.time_ >= var_162_8 + var_162_9 and arg_159_1.time_ < var_162_8 + var_162_9 + arg_162_0 and arg_159_1.var_.actorSpriteComps1061 then
+			if arg_159_1.time_ >= var_162_8 + var_162_9 and arg_159_1.time_ < var_162_8 + var_162_9 + arg_162_0 and not isNil(var_162_7) and arg_159_1.var_.actorSpriteComps1061 then
 				for iter_162_3, iter_162_4 in pairs(arg_159_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_162_4 then
 						if arg_159_1.isInRecall_ then
@@ -8657,13 +8673,13 @@
 			local var_162_15 = arg_159_1.actors_["10059"]
 			local var_162_16 = 0
 
-			if var_162_16 < arg_159_1.time_ and arg_159_1.time_ <= var_162_16 + arg_162_0 and arg_159_1.var_.actorSpriteComps10059 == nil then
+			if var_162_16 < arg_159_1.time_ and arg_159_1.time_ <= var_162_16 + arg_162_0 and not isNil(var_162_15) and arg_159_1.var_.actorSpriteComps10059 == nil then
 				arg_159_1.var_.actorSpriteComps10059 = var_162_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_162_17 = 0.034
 
-			if var_162_16 <= arg_159_1.time_ and arg_159_1.time_ < var_162_16 + var_162_17 then
+			if var_162_16 <= arg_159_1.time_ and arg_159_1.time_ < var_162_16 + var_162_17 and not isNil(var_162_15) then
 				local var_162_18 = (arg_159_1.time_ - var_162_16) / var_162_17
 
 				if arg_159_1.var_.actorSpriteComps10059 then
@@ -8685,7 +8701,7 @@
 				end
 			end
 
-			if arg_159_1.time_ >= var_162_16 + var_162_17 and arg_159_1.time_ < var_162_16 + var_162_17 + arg_162_0 and arg_159_1.var_.actorSpriteComps10059 then
+			if arg_159_1.time_ >= var_162_16 + var_162_17 and arg_159_1.time_ < var_162_16 + var_162_17 + arg_162_0 and not isNil(var_162_15) and arg_159_1.var_.actorSpriteComps10059 then
 				for iter_162_7, iter_162_8 in pairs(arg_159_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_162_8 then
 						if arg_159_1.isInRecall_ then
@@ -8856,13 +8872,13 @@
 			local var_166_7 = arg_163_1.actors_["1061"]
 			local var_166_8 = 0
 
-			if var_166_8 < arg_163_1.time_ and arg_163_1.time_ <= var_166_8 + arg_166_0 and arg_163_1.var_.actorSpriteComps1061 == nil then
+			if var_166_8 < arg_163_1.time_ and arg_163_1.time_ <= var_166_8 + arg_166_0 and not isNil(var_166_7) and arg_163_1.var_.actorSpriteComps1061 == nil then
 				arg_163_1.var_.actorSpriteComps1061 = var_166_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_166_9 = 0.034
 
-			if var_166_8 <= arg_163_1.time_ and arg_163_1.time_ < var_166_8 + var_166_9 then
+			if var_166_8 <= arg_163_1.time_ and arg_163_1.time_ < var_166_8 + var_166_9 and not isNil(var_166_7) then
 				local var_166_10 = (arg_163_1.time_ - var_166_8) / var_166_9
 
 				if arg_163_1.var_.actorSpriteComps1061 then
@@ -8884,7 +8900,7 @@
 				end
 			end
 
-			if arg_163_1.time_ >= var_166_8 + var_166_9 and arg_163_1.time_ < var_166_8 + var_166_9 + arg_166_0 and arg_163_1.var_.actorSpriteComps1061 then
+			if arg_163_1.time_ >= var_166_8 + var_166_9 and arg_163_1.time_ < var_166_8 + var_166_9 + arg_166_0 and not isNil(var_166_7) and arg_163_1.var_.actorSpriteComps1061 then
 				for iter_166_3, iter_166_4 in pairs(arg_163_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_166_4 then
 						if arg_163_1.isInRecall_ then
@@ -9055,13 +9071,13 @@
 			local var_170_7 = arg_167_1.actors_["10059"]
 			local var_170_8 = 0
 
-			if var_170_8 < arg_167_1.time_ and arg_167_1.time_ <= var_170_8 + arg_170_0 and arg_167_1.var_.actorSpriteComps10059 == nil then
+			if var_170_8 < arg_167_1.time_ and arg_167_1.time_ <= var_170_8 + arg_170_0 and not isNil(var_170_7) and arg_167_1.var_.actorSpriteComps10059 == nil then
 				arg_167_1.var_.actorSpriteComps10059 = var_170_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_170_9 = 0.034
 
-			if var_170_8 <= arg_167_1.time_ and arg_167_1.time_ < var_170_8 + var_170_9 then
+			if var_170_8 <= arg_167_1.time_ and arg_167_1.time_ < var_170_8 + var_170_9 and not isNil(var_170_7) then
 				local var_170_10 = (arg_167_1.time_ - var_170_8) / var_170_9
 
 				if arg_167_1.var_.actorSpriteComps10059 then
@@ -9083,7 +9099,7 @@
 				end
 			end
 
-			if arg_167_1.time_ >= var_170_8 + var_170_9 and arg_167_1.time_ < var_170_8 + var_170_9 + arg_170_0 and arg_167_1.var_.actorSpriteComps10059 then
+			if arg_167_1.time_ >= var_170_8 + var_170_9 and arg_167_1.time_ < var_170_8 + var_170_9 + arg_170_0 and not isNil(var_170_7) and arg_167_1.var_.actorSpriteComps10059 then
 				for iter_170_3, iter_170_4 in pairs(arg_167_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_170_4 then
 						if arg_167_1.isInRecall_ then
@@ -9100,13 +9116,13 @@
 			local var_170_15 = arg_167_1.actors_["1061"]
 			local var_170_16 = 0
 
-			if var_170_16 < arg_167_1.time_ and arg_167_1.time_ <= var_170_16 + arg_170_0 and arg_167_1.var_.actorSpriteComps1061 == nil then
+			if var_170_16 < arg_167_1.time_ and arg_167_1.time_ <= var_170_16 + arg_170_0 and not isNil(var_170_15) and arg_167_1.var_.actorSpriteComps1061 == nil then
 				arg_167_1.var_.actorSpriteComps1061 = var_170_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_170_17 = 0.034
 
-			if var_170_16 <= arg_167_1.time_ and arg_167_1.time_ < var_170_16 + var_170_17 then
+			if var_170_16 <= arg_167_1.time_ and arg_167_1.time_ < var_170_16 + var_170_17 and not isNil(var_170_15) then
 				local var_170_18 = (arg_167_1.time_ - var_170_16) / var_170_17
 
 				if arg_167_1.var_.actorSpriteComps1061 then
@@ -9128,7 +9144,7 @@
 				end
 			end
 
-			if arg_167_1.time_ >= var_170_16 + var_170_17 and arg_167_1.time_ < var_170_16 + var_170_17 + arg_170_0 and arg_167_1.var_.actorSpriteComps1061 then
+			if arg_167_1.time_ >= var_170_16 + var_170_17 and arg_167_1.time_ < var_170_16 + var_170_17 + arg_170_0 and not isNil(var_170_15) and arg_167_1.var_.actorSpriteComps1061 then
 				for iter_170_7, iter_170_8 in pairs(arg_167_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_170_8 then
 						if arg_167_1.isInRecall_ then
@@ -9299,13 +9315,13 @@
 			local var_174_7 = arg_171_1.actors_["10059"]
 			local var_174_8 = 0
 
-			if var_174_8 < arg_171_1.time_ and arg_171_1.time_ <= var_174_8 + arg_174_0 and arg_171_1.var_.actorSpriteComps10059 == nil then
+			if var_174_8 < arg_171_1.time_ and arg_171_1.time_ <= var_174_8 + arg_174_0 and not isNil(var_174_7) and arg_171_1.var_.actorSpriteComps10059 == nil then
 				arg_171_1.var_.actorSpriteComps10059 = var_174_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_174_9 = 0.034
 
-			if var_174_8 <= arg_171_1.time_ and arg_171_1.time_ < var_174_8 + var_174_9 then
+			if var_174_8 <= arg_171_1.time_ and arg_171_1.time_ < var_174_8 + var_174_9 and not isNil(var_174_7) then
 				local var_174_10 = (arg_171_1.time_ - var_174_8) / var_174_9
 
 				if arg_171_1.var_.actorSpriteComps10059 then
@@ -9327,7 +9343,7 @@
 				end
 			end
 
-			if arg_171_1.time_ >= var_174_8 + var_174_9 and arg_171_1.time_ < var_174_8 + var_174_9 + arg_174_0 and arg_171_1.var_.actorSpriteComps10059 then
+			if arg_171_1.time_ >= var_174_8 + var_174_9 and arg_171_1.time_ < var_174_8 + var_174_9 + arg_174_0 and not isNil(var_174_7) and arg_171_1.var_.actorSpriteComps10059 then
 				for iter_174_3, iter_174_4 in pairs(arg_171_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_174_4 then
 						if arg_171_1.isInRecall_ then
@@ -9498,13 +9514,13 @@
 			local var_178_7 = arg_175_1.actors_["10059"]
 			local var_178_8 = 0
 
-			if var_178_8 < arg_175_1.time_ and arg_175_1.time_ <= var_178_8 + arg_178_0 and arg_175_1.var_.actorSpriteComps10059 == nil then
+			if var_178_8 < arg_175_1.time_ and arg_175_1.time_ <= var_178_8 + arg_178_0 and not isNil(var_178_7) and arg_175_1.var_.actorSpriteComps10059 == nil then
 				arg_175_1.var_.actorSpriteComps10059 = var_178_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_178_9 = 0.034
 
-			if var_178_8 <= arg_175_1.time_ and arg_175_1.time_ < var_178_8 + var_178_9 then
+			if var_178_8 <= arg_175_1.time_ and arg_175_1.time_ < var_178_8 + var_178_9 and not isNil(var_178_7) then
 				local var_178_10 = (arg_175_1.time_ - var_178_8) / var_178_9
 
 				if arg_175_1.var_.actorSpriteComps10059 then
@@ -9526,7 +9542,7 @@
 				end
 			end
 
-			if arg_175_1.time_ >= var_178_8 + var_178_9 and arg_175_1.time_ < var_178_8 + var_178_9 + arg_178_0 and arg_175_1.var_.actorSpriteComps10059 then
+			if arg_175_1.time_ >= var_178_8 + var_178_9 and arg_175_1.time_ < var_178_8 + var_178_9 + arg_178_0 and not isNil(var_178_7) and arg_175_1.var_.actorSpriteComps10059 then
 				for iter_178_3, iter_178_4 in pairs(arg_175_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_178_4 then
 						if arg_175_1.isInRecall_ then
@@ -9697,13 +9713,13 @@
 			local var_182_7 = arg_179_1.actors_["1061"]
 			local var_182_8 = 0
 
-			if var_182_8 < arg_179_1.time_ and arg_179_1.time_ <= var_182_8 + arg_182_0 and arg_179_1.var_.actorSpriteComps1061 == nil then
+			if var_182_8 < arg_179_1.time_ and arg_179_1.time_ <= var_182_8 + arg_182_0 and not isNil(var_182_7) and arg_179_1.var_.actorSpriteComps1061 == nil then
 				arg_179_1.var_.actorSpriteComps1061 = var_182_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_182_9 = 0.034
 
-			if var_182_8 <= arg_179_1.time_ and arg_179_1.time_ < var_182_8 + var_182_9 then
+			if var_182_8 <= arg_179_1.time_ and arg_179_1.time_ < var_182_8 + var_182_9 and not isNil(var_182_7) then
 				local var_182_10 = (arg_179_1.time_ - var_182_8) / var_182_9
 
 				if arg_179_1.var_.actorSpriteComps1061 then
@@ -9725,7 +9741,7 @@
 				end
 			end
 
-			if arg_179_1.time_ >= var_182_8 + var_182_9 and arg_179_1.time_ < var_182_8 + var_182_9 + arg_182_0 and arg_179_1.var_.actorSpriteComps1061 then
+			if arg_179_1.time_ >= var_182_8 + var_182_9 and arg_179_1.time_ < var_182_8 + var_182_9 + arg_182_0 and not isNil(var_182_7) and arg_179_1.var_.actorSpriteComps1061 then
 				for iter_182_3, iter_182_4 in pairs(arg_179_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_182_4 then
 						if arg_179_1.isInRecall_ then
@@ -9742,13 +9758,13 @@
 			local var_182_15 = arg_179_1.actors_["10059"]
 			local var_182_16 = 0
 
-			if var_182_16 < arg_179_1.time_ and arg_179_1.time_ <= var_182_16 + arg_182_0 and arg_179_1.var_.actorSpriteComps10059 == nil then
+			if var_182_16 < arg_179_1.time_ and arg_179_1.time_ <= var_182_16 + arg_182_0 and not isNil(var_182_15) and arg_179_1.var_.actorSpriteComps10059 == nil then
 				arg_179_1.var_.actorSpriteComps10059 = var_182_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_182_17 = 0.034
 
-			if var_182_16 <= arg_179_1.time_ and arg_179_1.time_ < var_182_16 + var_182_17 then
+			if var_182_16 <= arg_179_1.time_ and arg_179_1.time_ < var_182_16 + var_182_17 and not isNil(var_182_15) then
 				local var_182_18 = (arg_179_1.time_ - var_182_16) / var_182_17
 
 				if arg_179_1.var_.actorSpriteComps10059 then
@@ -9770,7 +9786,7 @@
 				end
 			end
 
-			if arg_179_1.time_ >= var_182_16 + var_182_17 and arg_179_1.time_ < var_182_16 + var_182_17 + arg_182_0 and arg_179_1.var_.actorSpriteComps10059 then
+			if arg_179_1.time_ >= var_182_16 + var_182_17 and arg_179_1.time_ < var_182_16 + var_182_17 + arg_182_0 and not isNil(var_182_15) and arg_179_1.var_.actorSpriteComps10059 then
 				for iter_182_7, iter_182_8 in pairs(arg_179_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_182_8 then
 						if arg_179_1.isInRecall_ then
@@ -9941,13 +9957,13 @@
 			local var_186_7 = arg_183_1.actors_["10059"]
 			local var_186_8 = 0
 
-			if var_186_8 < arg_183_1.time_ and arg_183_1.time_ <= var_186_8 + arg_186_0 and arg_183_1.var_.actorSpriteComps10059 == nil then
+			if var_186_8 < arg_183_1.time_ and arg_183_1.time_ <= var_186_8 + arg_186_0 and not isNil(var_186_7) and arg_183_1.var_.actorSpriteComps10059 == nil then
 				arg_183_1.var_.actorSpriteComps10059 = var_186_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_186_9 = 0.034
 
-			if var_186_8 <= arg_183_1.time_ and arg_183_1.time_ < var_186_8 + var_186_9 then
+			if var_186_8 <= arg_183_1.time_ and arg_183_1.time_ < var_186_8 + var_186_9 and not isNil(var_186_7) then
 				local var_186_10 = (arg_183_1.time_ - var_186_8) / var_186_9
 
 				if arg_183_1.var_.actorSpriteComps10059 then
@@ -9969,7 +9985,7 @@
 				end
 			end
 
-			if arg_183_1.time_ >= var_186_8 + var_186_9 and arg_183_1.time_ < var_186_8 + var_186_9 + arg_186_0 and arg_183_1.var_.actorSpriteComps10059 then
+			if arg_183_1.time_ >= var_186_8 + var_186_9 and arg_183_1.time_ < var_186_8 + var_186_9 + arg_186_0 and not isNil(var_186_7) and arg_183_1.var_.actorSpriteComps10059 then
 				for iter_186_3, iter_186_4 in pairs(arg_183_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_186_4 then
 						if arg_183_1.isInRecall_ then
@@ -9986,13 +10002,13 @@
 			local var_186_15 = arg_183_1.actors_["1061"]
 			local var_186_16 = 0
 
-			if var_186_16 < arg_183_1.time_ and arg_183_1.time_ <= var_186_16 + arg_186_0 and arg_183_1.var_.actorSpriteComps1061 == nil then
+			if var_186_16 < arg_183_1.time_ and arg_183_1.time_ <= var_186_16 + arg_186_0 and not isNil(var_186_15) and arg_183_1.var_.actorSpriteComps1061 == nil then
 				arg_183_1.var_.actorSpriteComps1061 = var_186_15:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_186_17 = 0.034
 
-			if var_186_16 <= arg_183_1.time_ and arg_183_1.time_ < var_186_16 + var_186_17 then
+			if var_186_16 <= arg_183_1.time_ and arg_183_1.time_ < var_186_16 + var_186_17 and not isNil(var_186_15) then
 				local var_186_18 = (arg_183_1.time_ - var_186_16) / var_186_17
 
 				if arg_183_1.var_.actorSpriteComps1061 then
@@ -10014,7 +10030,7 @@
 				end
 			end
 
-			if arg_183_1.time_ >= var_186_16 + var_186_17 and arg_183_1.time_ < var_186_16 + var_186_17 + arg_186_0 and arg_183_1.var_.actorSpriteComps1061 then
+			if arg_183_1.time_ >= var_186_16 + var_186_17 and arg_183_1.time_ < var_186_16 + var_186_17 + arg_186_0 and not isNil(var_186_15) and arg_183_1.var_.actorSpriteComps1061 then
 				for iter_186_7, iter_186_8 in pairs(arg_183_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_186_8 then
 						if arg_183_1.isInRecall_ then
@@ -10185,13 +10201,13 @@
 			local var_190_7 = arg_187_1.actors_["10059"]
 			local var_190_8 = 0
 
-			if var_190_8 < arg_187_1.time_ and arg_187_1.time_ <= var_190_8 + arg_190_0 and arg_187_1.var_.actorSpriteComps10059 == nil then
+			if var_190_8 < arg_187_1.time_ and arg_187_1.time_ <= var_190_8 + arg_190_0 and not isNil(var_190_7) and arg_187_1.var_.actorSpriteComps10059 == nil then
 				arg_187_1.var_.actorSpriteComps10059 = var_190_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_190_9 = 0.034
 
-			if var_190_8 <= arg_187_1.time_ and arg_187_1.time_ < var_190_8 + var_190_9 then
+			if var_190_8 <= arg_187_1.time_ and arg_187_1.time_ < var_190_8 + var_190_9 and not isNil(var_190_7) then
 				local var_190_10 = (arg_187_1.time_ - var_190_8) / var_190_9
 
 				if arg_187_1.var_.actorSpriteComps10059 then
@@ -10213,7 +10229,7 @@
 				end
 			end
 
-			if arg_187_1.time_ >= var_190_8 + var_190_9 and arg_187_1.time_ < var_190_8 + var_190_9 + arg_190_0 and arg_187_1.var_.actorSpriteComps10059 then
+			if arg_187_1.time_ >= var_190_8 + var_190_9 and arg_187_1.time_ < var_190_8 + var_190_9 + arg_190_0 and not isNil(var_190_7) and arg_187_1.var_.actorSpriteComps10059 then
 				for iter_190_3, iter_190_4 in pairs(arg_187_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_190_4 then
 						if arg_187_1.isInRecall_ then
@@ -10408,13 +10424,13 @@
 			local var_194_14 = arg_191_1.actors_["10059"]
 			local var_194_15 = 0
 
-			if var_194_15 < arg_191_1.time_ and arg_191_1.time_ <= var_194_15 + arg_194_0 and arg_191_1.var_.actorSpriteComps10059 == nil then
+			if var_194_15 < arg_191_1.time_ and arg_191_1.time_ <= var_194_15 + arg_194_0 and not isNil(var_194_14) and arg_191_1.var_.actorSpriteComps10059 == nil then
 				arg_191_1.var_.actorSpriteComps10059 = var_194_14:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_194_16 = 0.034
 
-			if var_194_15 <= arg_191_1.time_ and arg_191_1.time_ < var_194_15 + var_194_16 then
+			if var_194_15 <= arg_191_1.time_ and arg_191_1.time_ < var_194_15 + var_194_16 and not isNil(var_194_14) then
 				local var_194_17 = (arg_191_1.time_ - var_194_15) / var_194_16
 
 				if arg_191_1.var_.actorSpriteComps10059 then
@@ -10436,7 +10452,7 @@
 				end
 			end
 
-			if arg_191_1.time_ >= var_194_15 + var_194_16 and arg_191_1.time_ < var_194_15 + var_194_16 + arg_194_0 and arg_191_1.var_.actorSpriteComps10059 then
+			if arg_191_1.time_ >= var_194_15 + var_194_16 and arg_191_1.time_ < var_194_15 + var_194_16 + arg_194_0 and not isNil(var_194_14) and arg_191_1.var_.actorSpriteComps10059 then
 				for iter_194_4, iter_194_5 in pairs(arg_191_1.var_.actorSpriteComps10059:ToTable()) do
 					if iter_194_5 then
 						if arg_191_1.isInRecall_ then
@@ -10453,13 +10469,13 @@
 			local var_194_22 = arg_191_1.actors_["1061"]
 			local var_194_23 = 0
 
-			if var_194_23 < arg_191_1.time_ and arg_191_1.time_ <= var_194_23 + arg_194_0 and arg_191_1.var_.actorSpriteComps1061 == nil then
+			if var_194_23 < arg_191_1.time_ and arg_191_1.time_ <= var_194_23 + arg_194_0 and not isNil(var_194_22) and arg_191_1.var_.actorSpriteComps1061 == nil then
 				arg_191_1.var_.actorSpriteComps1061 = var_194_22:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_194_24 = 0.034
 
-			if var_194_23 <= arg_191_1.time_ and arg_191_1.time_ < var_194_23 + var_194_24 then
+			if var_194_23 <= arg_191_1.time_ and arg_191_1.time_ < var_194_23 + var_194_24 and not isNil(var_194_22) then
 				local var_194_25 = (arg_191_1.time_ - var_194_23) / var_194_24
 
 				if arg_191_1.var_.actorSpriteComps1061 then
@@ -10481,7 +10497,7 @@
 				end
 			end
 
-			if arg_191_1.time_ >= var_194_23 + var_194_24 and arg_191_1.time_ < var_194_23 + var_194_24 + arg_194_0 and arg_191_1.var_.actorSpriteComps1061 then
+			if arg_191_1.time_ >= var_194_23 + var_194_24 and arg_191_1.time_ < var_194_23 + var_194_24 + arg_194_0 and not isNil(var_194_22) and arg_191_1.var_.actorSpriteComps1061 then
 				for iter_194_8, iter_194_9 in pairs(arg_191_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_194_9 then
 						if arg_191_1.isInRecall_ then
@@ -10708,13 +10724,13 @@
 			local var_202_7 = arg_199_1.actors_["1061"]
 			local var_202_8 = 0
 
-			if var_202_8 < arg_199_1.time_ and arg_199_1.time_ <= var_202_8 + arg_202_0 and arg_199_1.var_.actorSpriteComps1061 == nil then
+			if var_202_8 < arg_199_1.time_ and arg_199_1.time_ <= var_202_8 + arg_202_0 and not isNil(var_202_7) and arg_199_1.var_.actorSpriteComps1061 == nil then
 				arg_199_1.var_.actorSpriteComps1061 = var_202_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_202_9 = 0.034
 
-			if var_202_8 <= arg_199_1.time_ and arg_199_1.time_ < var_202_8 + var_202_9 then
+			if var_202_8 <= arg_199_1.time_ and arg_199_1.time_ < var_202_8 + var_202_9 and not isNil(var_202_7) then
 				local var_202_10 = (arg_199_1.time_ - var_202_8) / var_202_9
 
 				if arg_199_1.var_.actorSpriteComps1061 then
@@ -10736,7 +10752,7 @@
 				end
 			end
 
-			if arg_199_1.time_ >= var_202_8 + var_202_9 and arg_199_1.time_ < var_202_8 + var_202_9 + arg_202_0 and arg_199_1.var_.actorSpriteComps1061 then
+			if arg_199_1.time_ >= var_202_8 + var_202_9 and arg_199_1.time_ < var_202_8 + var_202_9 + arg_202_0 and not isNil(var_202_7) and arg_199_1.var_.actorSpriteComps1061 then
 				for iter_202_3, iter_202_4 in pairs(arg_199_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_202_4 then
 						if arg_199_1.isInRecall_ then
@@ -10861,13 +10877,13 @@
 			local var_206_0 = arg_203_1.actors_["1061"]
 			local var_206_1 = 0
 
-			if var_206_1 < arg_203_1.time_ and arg_203_1.time_ <= var_206_1 + arg_206_0 and arg_203_1.var_.actorSpriteComps1061 == nil then
+			if var_206_1 < arg_203_1.time_ and arg_203_1.time_ <= var_206_1 + arg_206_0 and not isNil(var_206_0) and arg_203_1.var_.actorSpriteComps1061 == nil then
 				arg_203_1.var_.actorSpriteComps1061 = var_206_0:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_206_2 = 0.034
 
-			if var_206_1 <= arg_203_1.time_ and arg_203_1.time_ < var_206_1 + var_206_2 then
+			if var_206_1 <= arg_203_1.time_ and arg_203_1.time_ < var_206_1 + var_206_2 and not isNil(var_206_0) then
 				local var_206_3 = (arg_203_1.time_ - var_206_1) / var_206_2
 
 				if arg_203_1.var_.actorSpriteComps1061 then
@@ -10889,7 +10905,7 @@
 				end
 			end
 
-			if arg_203_1.time_ >= var_206_1 + var_206_2 and arg_203_1.time_ < var_206_1 + var_206_2 + arg_206_0 and arg_203_1.var_.actorSpriteComps1061 then
+			if arg_203_1.time_ >= var_206_1 + var_206_2 and arg_203_1.time_ < var_206_1 + var_206_2 + arg_206_0 and not isNil(var_206_0) and arg_203_1.var_.actorSpriteComps1061 then
 				for iter_206_2, iter_206_3 in pairs(arg_203_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_206_3 then
 						if arg_203_1.isInRecall_ then
@@ -11033,13 +11049,13 @@
 			local var_210_7 = arg_207_1.actors_["1061"]
 			local var_210_8 = 0
 
-			if var_210_8 < arg_207_1.time_ and arg_207_1.time_ <= var_210_8 + arg_210_0 and arg_207_1.var_.actorSpriteComps1061 == nil then
+			if var_210_8 < arg_207_1.time_ and arg_207_1.time_ <= var_210_8 + arg_210_0 and not isNil(var_210_7) and arg_207_1.var_.actorSpriteComps1061 == nil then
 				arg_207_1.var_.actorSpriteComps1061 = var_210_7:GetComponentsInChildren(typeof(Image), true)
 			end
 
 			local var_210_9 = 0.034
 
-			if var_210_8 <= arg_207_1.time_ and arg_207_1.time_ < var_210_8 + var_210_9 then
+			if var_210_8 <= arg_207_1.time_ and arg_207_1.time_ < var_210_8 + var_210_9 and not isNil(var_210_7) then
 				local var_210_10 = (arg_207_1.time_ - var_210_8) / var_210_9
 
 				if arg_207_1.var_.actorSpriteComps1061 then
@@ -11061,7 +11077,7 @@
 				end
 			end
 
-			if arg_207_1.time_ >= var_210_8 + var_210_9 and arg_207_1.time_ < var_210_8 + var_210_9 + arg_210_0 and arg_207_1.var_.actorSpriteComps1061 then
+			if arg_207_1.time_ >= var_210_8 + var_210_9 and arg_207_1.time_ < var_210_8 + var_210_9 + arg_210_0 and not isNil(var_210_7) and arg_207_1.var_.actorSpriteComps1061 then
 				for iter_210_3, iter_210_4 in pairs(arg_207_1.var_.actorSpriteComps1061:ToTable()) do
 					if iter_210_4 then
 						if arg_207_1.isInRecall_ then

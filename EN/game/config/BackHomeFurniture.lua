@@ -2259,6 +2259,94 @@
 			}
 		}
 	},
+	[950032] = {
+		material = "",
+		start_up_action = 0,
+		extend_info = 1,
+		type = 25,
+		dorm_exp = 12000,
+		sub_type = 0,
+		model = "Dorm/Dormitory/HZ05_zhuanshu_shishenzhe_yalisha",
+		is_give = 3,
+		hero_id = 1045,
+		style_type = "",
+		extend = "",
+		theme = 99,
+		give_max = 0,
+		replace = "",
+		interact_max = 1,
+		illu_position = "",
+		can_rot = 0,
+		display_type = 0,
+		mesh = "",
+		is_hide = 0,
+		id = 950032,
+		is_occupy = 0,
+		scene_id = {
+			2,
+			3
+		},
+		title = {
+			6,
+			7,
+			3
+		},
+		cost = {},
+		attractive = {},
+		is_storage = {},
+		is_move = {},
+		is_rotate = {},
+		interact = {
+			{
+				1045,
+				95003201
+			}
+		}
+	},
+	[950033] = {
+		material = "",
+		start_up_action = 0,
+		extend_info = 1,
+		type = 25,
+		dorm_exp = 12000,
+		sub_type = 0,
+		model = "Dorm/Dormitory/HZ05_zhuanshu_xueer",
+		is_give = 3,
+		hero_id = 1046,
+		style_type = "",
+		extend = "",
+		theme = 99,
+		give_max = 0,
+		replace = "",
+		interact_max = 1,
+		illu_position = "",
+		can_rot = 0,
+		display_type = 0,
+		mesh = "",
+		is_hide = 0,
+		id = 950033,
+		is_occupy = 0,
+		scene_id = {
+			2,
+			3
+		},
+		title = {
+			5,
+			5,
+			3
+		},
+		cost = {},
+		attractive = {},
+		is_storage = {},
+		is_move = {},
+		is_rotate = {},
+		interact = {
+			{
+				1046,
+				95003301
+			}
+		}
+	},
 	[951001] = {
 		material = "",
 		start_up_action = 0,
@@ -11932,6 +12020,8 @@
 			950022,
 			950023,
 			950025,
+			950032,
+			950033,
 			951001,
 			951002,
 			951003,
@@ -12204,6 +12294,8 @@
 			950022,
 			950023,
 			950025,
+			950032,
+			950033,
 			951001,
 			951002,
 			951003,
@@ -12731,7 +12823,9 @@
 			950021,
 			950022,
 			950023,
-			950025
+			950025,
+			950032,
+			950033
 		},
 		[213] = {
 			950922
@@ -12825,6 +12919,8 @@
 		950022,
 		950023,
 		950025,
+		950032,
+		950033,
 		951001,
 		951002,
 		951003,

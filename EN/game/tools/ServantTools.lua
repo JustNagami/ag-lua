@@ -578,7 +578,7 @@ function var_0_0.GetAwakeServantList(arg_22_0, arg_22_1)
 	local var_22_1 = {}
 
 	for iter_22_0, iter_22_1 in ipairs(var_22_0) do
-		if not ServantTools.GetIsHide(iter_22_1) and WeaponServantCfg[iter_22_1].race == arg_22_1 then
+		if not ServantTools.GetIsHide(iter_22_1) and WeaponServantCfg[iter_22_1].race == arg_22_1 and WeaponServantCfg[iter_22_1].summon_blocked == 0 then
 			table.insert(var_22_1, {
 				locked = 0,
 				stage = 1,

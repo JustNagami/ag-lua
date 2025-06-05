@@ -405,119 +405,123 @@
 			local var_16_0 = "1148ui_story"
 
 			if arg_13_1.actors_[var_16_0] == nil then
-				local var_16_1 = Object.Instantiate(Asset.Load("Char/" .. var_16_0), arg_13_1.stage_.transform)
+				local var_16_1 = Asset.Load("Char/" .. "1148ui_story")
 
-				var_16_1.name = var_16_0
-				var_16_1.transform.localPosition = Vector3.New(0, 100, 0)
-				arg_13_1.actors_[var_16_0] = var_16_1
+				if not isNil(var_16_1) then
+					local var_16_2 = Object.Instantiate(Asset.Load("Char/" .. "1148ui_story"), arg_13_1.stage_.transform)
 
-				local var_16_2 = var_16_1:GetComponentInChildren(typeof(CharacterEffect))
+					var_16_2.name = var_16_0
+					var_16_2.transform.localPosition = Vector3.New(0, 100, 0)
+					arg_13_1.actors_[var_16_0] = var_16_2
 
-				var_16_2.enabled = true
+					local var_16_3 = var_16_2:GetComponentInChildren(typeof(CharacterEffect))
 
-				local var_16_3 = GameObjectTools.GetOrAddComponent(var_16_1, typeof(DynamicBoneHelper))
+					var_16_3.enabled = true
 
-				if var_16_3 then
-					var_16_3:EnableDynamicBone(false)
+					local var_16_4 = GameObjectTools.GetOrAddComponent(var_16_2, typeof(DynamicBoneHelper))
+
+					if var_16_4 then
+						var_16_4:EnableDynamicBone(false)
+					end
+
+					arg_13_1:ShowWeapon(var_16_3.transform, false)
+
+					arg_13_1.var_[var_16_0 .. "Animator"] = var_16_3.gameObject:GetComponent(typeof(UnityEngine.Animator))
+					arg_13_1.var_[var_16_0 .. "Animator"].applyRootMotion = true
+					arg_13_1.var_[var_16_0 .. "LipSync"] = var_16_3.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
 				end
-
-				arg_13_1:ShowWeapon(var_16_2.transform, false)
-
-				arg_13_1.var_[var_16_0 .. "Animator"] = var_16_2.gameObject:GetComponent(typeof(UnityEngine.Animator))
-				arg_13_1.var_[var_16_0 .. "Animator"].applyRootMotion = true
-				arg_13_1.var_[var_16_0 .. "LipSync"] = var_16_2.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
 			end
 
-			local var_16_4 = arg_13_1.actors_["1148ui_story"].transform
-			local var_16_5 = 0
+			local var_16_5 = arg_13_1.actors_["1148ui_story"].transform
+			local var_16_6 = 0
 
-			if var_16_5 < arg_13_1.time_ and arg_13_1.time_ <= var_16_5 + arg_16_0 then
-				arg_13_1.var_.moveOldPos1148ui_story = var_16_4.localPosition
+			if var_16_6 < arg_13_1.time_ and arg_13_1.time_ <= var_16_6 + arg_16_0 then
+				arg_13_1.var_.moveOldPos1148ui_story = var_16_5.localPosition
 
-				local var_16_6 = "1148ui_story"
+				local var_16_7 = "1148ui_story"
 
-				arg_13_1:ShowWeapon(arg_13_1.var_[var_16_6 .. "Animator"].transform, false)
+				arg_13_1:ShowWeapon(arg_13_1.var_[var_16_7 .. "Animator"].transform, false)
 			end
 
-			local var_16_7 = 0.001
+			local var_16_8 = 0.001
 
-			if var_16_5 <= arg_13_1.time_ and arg_13_1.time_ < var_16_5 + var_16_7 then
-				local var_16_8 = (arg_13_1.time_ - var_16_5) / var_16_7
-				local var_16_9 = Vector3.New(0, -0.8, -6.2)
+			if var_16_6 <= arg_13_1.time_ and arg_13_1.time_ < var_16_6 + var_16_8 then
+				local var_16_9 = (arg_13_1.time_ - var_16_6) / var_16_8
+				local var_16_10 = Vector3.New(0, -0.8, -6.2)
 
-				var_16_4.localPosition = Vector3.Lerp(arg_13_1.var_.moveOldPos1148ui_story, var_16_9, var_16_8)
+				var_16_5.localPosition = Vector3.Lerp(arg_13_1.var_.moveOldPos1148ui_story, var_16_10, var_16_9)
 
-				local var_16_10 = manager.ui.mainCamera.transform.position - var_16_4.position
+				local var_16_11 = manager.ui.mainCamera.transform.position - var_16_5.position
 
-				var_16_4.forward = Vector3.New(var_16_10.x, var_16_10.y, var_16_10.z)
+				var_16_5.forward = Vector3.New(var_16_11.x, var_16_11.y, var_16_11.z)
 
-				local var_16_11 = var_16_4.localEulerAngles
+				local var_16_12 = var_16_5.localEulerAngles
 
-				var_16_11.z = 0
-				var_16_11.x = 0
-				var_16_4.localEulerAngles = var_16_11
+				var_16_12.z = 0
+				var_16_12.x = 0
+				var_16_5.localEulerAngles = var_16_12
 			end
 
-			if arg_13_1.time_ >= var_16_5 + var_16_7 and arg_13_1.time_ < var_16_5 + var_16_7 + arg_16_0 then
-				var_16_4.localPosition = Vector3.New(0, -0.8, -6.2)
+			if arg_13_1.time_ >= var_16_6 + var_16_8 and arg_13_1.time_ < var_16_6 + var_16_8 + arg_16_0 then
+				var_16_5.localPosition = Vector3.New(0, -0.8, -6.2)
 
-				local var_16_12 = manager.ui.mainCamera.transform.position - var_16_4.position
+				local var_16_13 = manager.ui.mainCamera.transform.position - var_16_5.position
 
-				var_16_4.forward = Vector3.New(var_16_12.x, var_16_12.y, var_16_12.z)
+				var_16_5.forward = Vector3.New(var_16_13.x, var_16_13.y, var_16_13.z)
 
-				local var_16_13 = var_16_4.localEulerAngles
+				local var_16_14 = var_16_5.localEulerAngles
 
-				var_16_13.z = 0
-				var_16_13.x = 0
-				var_16_4.localEulerAngles = var_16_13
+				var_16_14.z = 0
+				var_16_14.x = 0
+				var_16_5.localEulerAngles = var_16_14
 			end
 
-			local var_16_14 = arg_13_1.actors_["1148ui_story"]
-			local var_16_15 = 0.0166666666666667
+			local var_16_15 = arg_13_1.actors_["1148ui_story"]
+			local var_16_16 = 0.0166666666666667
 
-			if var_16_15 < arg_13_1.time_ and arg_13_1.time_ <= var_16_15 + arg_16_0 and arg_13_1.var_.characterEffect1148ui_story == nil then
-				arg_13_1.var_.characterEffect1148ui_story = var_16_14:GetComponentInChildren(typeof(CharacterEffect))
+			if var_16_16 < arg_13_1.time_ and arg_13_1.time_ <= var_16_16 + arg_16_0 and not isNil(var_16_15) and arg_13_1.var_.characterEffect1148ui_story == nil then
+				arg_13_1.var_.characterEffect1148ui_story = var_16_15:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_16_16 = 0.2
+			local var_16_17 = 0.2
 
-			if var_16_15 <= arg_13_1.time_ and arg_13_1.time_ < var_16_15 + var_16_16 then
-				local var_16_17 = (arg_13_1.time_ - var_16_15) / var_16_16
+			if var_16_16 <= arg_13_1.time_ and arg_13_1.time_ < var_16_16 + var_16_17 and not isNil(var_16_15) then
+				local var_16_18 = (arg_13_1.time_ - var_16_16) / var_16_17
 
-				if arg_13_1.var_.characterEffect1148ui_story then
+				if arg_13_1.var_.characterEffect1148ui_story and not isNil(var_16_15) then
 					arg_13_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_13_1.time_ >= var_16_15 + var_16_16 and arg_13_1.time_ < var_16_15 + var_16_16 + arg_16_0 and arg_13_1.var_.characterEffect1148ui_story then
+			if arg_13_1.time_ >= var_16_16 + var_16_17 and arg_13_1.time_ < var_16_16 + var_16_17 + arg_16_0 and not isNil(var_16_15) and arg_13_1.var_.characterEffect1148ui_story then
 				arg_13_1.var_.characterEffect1148ui_story.fillFlat = false
-			end
-
-			local var_16_18 = 0.0166666666666667
-
-			if var_16_18 < arg_13_1.time_ and arg_13_1.time_ <= var_16_18 + arg_16_0 then
-				arg_13_1:PlayTimeline("1148ui_story", "StoryTimeline/CharAction/1148/1148action/1148action3_1")
 			end
 
 			local var_16_19 = 0.0166666666666667
 
 			if var_16_19 < arg_13_1.time_ and arg_13_1.time_ <= var_16_19 + arg_16_0 then
+				arg_13_1:PlayTimeline("1148ui_story", "StoryTimeline/CharAction/1148/1148action/1148action3_1")
+			end
+
+			local var_16_20 = 0.0166666666666667
+
+			if var_16_20 < arg_13_1.time_ and arg_13_1.time_ <= var_16_20 + arg_16_0 then
 				arg_13_1:PlayTimeline("1148ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface1204cva")
 			end
 
-			local var_16_20 = 0
-			local var_16_21 = 0.625
+			local var_16_21 = 0
+			local var_16_22 = 0.625
 
-			if var_16_20 < arg_13_1.time_ and arg_13_1.time_ <= var_16_20 + arg_16_0 then
+			if var_16_21 < arg_13_1.time_ and arg_13_1.time_ <= var_16_21 + arg_16_0 then
 				arg_13_1.talkMaxDuration = 0
 				arg_13_1.dialogCg_.alpha = 1
 
 				arg_13_1.dialog_:SetActive(true)
 				SetActive(arg_13_1.leftNameGo_, true)
 
-				local var_16_22 = arg_13_1:FormatText(StoryNameCfg[8].name)
+				local var_16_23 = arg_13_1:FormatText(StoryNameCfg[8].name)
 
-				arg_13_1.leftNameTxt_.text = var_16_22
+				arg_13_1.leftNameTxt_.text = var_16_23
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_13_1.leftNameTxt_.transform)
 
@@ -528,43 +532,43 @@
 				SetActive(arg_13_1.iconTrs_.gameObject, false)
 				arg_13_1.callingController_:SetSelectedState("normal")
 
-				local var_16_23 = arg_13_1:GetWordFromCfg(114803003)
-				local var_16_24 = arg_13_1:FormatText(var_16_23.content)
+				local var_16_24 = arg_13_1:GetWordFromCfg(114803003)
+				local var_16_25 = arg_13_1:FormatText(var_16_24.content)
 
-				arg_13_1.text_.text = var_16_24
+				arg_13_1.text_.text = var_16_25
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_13_1.text_)
 
-				local var_16_25 = 25
-				local var_16_26 = utf8.len(var_16_24)
-				local var_16_27 = var_16_25 <= 0 and var_16_21 or var_16_21 * (var_16_26 / var_16_25)
+				local var_16_26 = 25
+				local var_16_27 = utf8.len(var_16_25)
+				local var_16_28 = var_16_26 <= 0 and var_16_22 or var_16_22 * (var_16_27 / var_16_26)
 
-				if var_16_27 > 0 and var_16_21 < var_16_27 then
-					arg_13_1.talkMaxDuration = var_16_27
+				if var_16_28 > 0 and var_16_22 < var_16_28 then
+					arg_13_1.talkMaxDuration = var_16_28
 
-					if var_16_27 + var_16_20 > arg_13_1.duration_ then
-						arg_13_1.duration_ = var_16_27 + var_16_20
+					if var_16_28 + var_16_21 > arg_13_1.duration_ then
+						arg_13_1.duration_ = var_16_28 + var_16_21
 					end
 				end
 
-				arg_13_1.text_.text = var_16_24
+				arg_13_1.text_.text = var_16_25
 				arg_13_1.typewritter.percent = 0
 
 				arg_13_1.typewritter:SetDirty()
 				arg_13_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_side_old_114803", "114803003", "story_v_side_old_114803.awb") ~= 0 then
-					local var_16_28 = manager.audio:GetVoiceLength("story_v_side_old_114803", "114803003", "story_v_side_old_114803.awb") / 1000
+					local var_16_29 = manager.audio:GetVoiceLength("story_v_side_old_114803", "114803003", "story_v_side_old_114803.awb") / 1000
 
-					if var_16_28 + var_16_20 > arg_13_1.duration_ then
-						arg_13_1.duration_ = var_16_28 + var_16_20
+					if var_16_29 + var_16_21 > arg_13_1.duration_ then
+						arg_13_1.duration_ = var_16_29 + var_16_21
 					end
 
-					if var_16_23.prefab_name ~= "" and arg_13_1.actors_[var_16_23.prefab_name] ~= nil then
-						local var_16_29 = LuaForUtil.PlayVoiceWithCriLipsync(arg_13_1.actors_[var_16_23.prefab_name].transform, "story_v_side_old_114803", "114803003", "story_v_side_old_114803.awb")
+					if var_16_24.prefab_name ~= "" and arg_13_1.actors_[var_16_24.prefab_name] ~= nil then
+						local var_16_30 = LuaForUtil.PlayVoiceWithCriLipsync(arg_13_1.actors_[var_16_24.prefab_name].transform, "story_v_side_old_114803", "114803003", "story_v_side_old_114803.awb")
 
-						arg_13_1:RecordAudio("114803003", var_16_29)
-						arg_13_1:RecordAudio("114803003", var_16_29)
+						arg_13_1:RecordAudio("114803003", var_16_30)
+						arg_13_1:RecordAudio("114803003", var_16_30)
 					else
 						arg_13_1:AudioAction("play", "voice", "story_v_side_old_114803", "114803003", "story_v_side_old_114803.awb")
 					end
@@ -575,15 +579,15 @@
 				arg_13_1:RecordContent(arg_13_1.text_.text)
 			end
 
-			local var_16_30 = math.max(var_16_21, arg_13_1.talkMaxDuration)
+			local var_16_31 = math.max(var_16_22, arg_13_1.talkMaxDuration)
 
-			if var_16_20 <= arg_13_1.time_ and arg_13_1.time_ < var_16_20 + var_16_30 then
-				arg_13_1.typewritter.percent = (arg_13_1.time_ - var_16_20) / var_16_30
+			if var_16_21 <= arg_13_1.time_ and arg_13_1.time_ < var_16_21 + var_16_31 then
+				arg_13_1.typewritter.percent = (arg_13_1.time_ - var_16_21) / var_16_31
 
 				arg_13_1.typewritter:SetDirty()
 			end
 
-			if arg_13_1.time_ >= var_16_20 + var_16_30 and arg_13_1.time_ < var_16_20 + var_16_30 + arg_16_0 then
+			if arg_13_1.time_ >= var_16_21 + var_16_31 and arg_13_1.time_ < var_16_21 + var_16_31 + arg_16_0 then
 				arg_13_1.typewritter.percent = 1
 
 				arg_13_1.typewritter:SetDirty()
@@ -616,16 +620,16 @@
 			local var_20_0 = arg_17_1.actors_["1148ui_story"]
 			local var_20_1 = 0
 
-			if var_20_1 < arg_17_1.time_ and arg_17_1.time_ <= var_20_1 + arg_20_0 and arg_17_1.var_.characterEffect1148ui_story == nil then
+			if var_20_1 < arg_17_1.time_ and arg_17_1.time_ <= var_20_1 + arg_20_0 and not isNil(var_20_0) and arg_17_1.var_.characterEffect1148ui_story == nil then
 				arg_17_1.var_.characterEffect1148ui_story = var_20_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_20_2 = 0.2
 
-			if var_20_1 <= arg_17_1.time_ and arg_17_1.time_ < var_20_1 + var_20_2 then
+			if var_20_1 <= arg_17_1.time_ and arg_17_1.time_ < var_20_1 + var_20_2 and not isNil(var_20_0) then
 				local var_20_3 = (arg_17_1.time_ - var_20_1) / var_20_2
 
-				if arg_17_1.var_.characterEffect1148ui_story then
+				if arg_17_1.var_.characterEffect1148ui_story and not isNil(var_20_0) then
 					local var_20_4 = Mathf.Lerp(0, 0.5, var_20_3)
 
 					arg_17_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -633,7 +637,7 @@
 				end
 			end
 
-			if arg_17_1.time_ >= var_20_1 + var_20_2 and arg_17_1.time_ < var_20_1 + var_20_2 + arg_20_0 and arg_17_1.var_.characterEffect1148ui_story then
+			if arg_17_1.time_ >= var_20_1 + var_20_2 and arg_17_1.time_ < var_20_1 + var_20_2 + arg_20_0 and not isNil(var_20_0) and arg_17_1.var_.characterEffect1148ui_story then
 				local var_20_5 = 0.5
 
 				arg_17_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -666,8 +670,15 @@
 				arg_17_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_17_1:RecordName(arg_17_1.leftNameTxt_.text)
-				SetActive(arg_17_1.iconTrs_.gameObject, false)
+				SetActive(arg_17_1.iconTrs_.gameObject, true)
+				arg_17_1.iconController_:SetSelectedState("hero")
+
+				arg_17_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_17_1.callingController_:SetSelectedState("normal")
+
+				arg_17_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_17_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_20_10 = arg_17_1:GetWordFromCfg(114803004)
 				local var_20_11 = arg_17_1:FormatText(var_20_10.content)
@@ -749,21 +760,21 @@
 			local var_24_0 = arg_21_1.actors_["1148ui_story"]
 			local var_24_1 = 0
 
-			if var_24_1 < arg_21_1.time_ and arg_21_1.time_ <= var_24_1 + arg_24_0 and arg_21_1.var_.characterEffect1148ui_story == nil then
+			if var_24_1 < arg_21_1.time_ and arg_21_1.time_ <= var_24_1 + arg_24_0 and not isNil(var_24_0) and arg_21_1.var_.characterEffect1148ui_story == nil then
 				arg_21_1.var_.characterEffect1148ui_story = var_24_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_24_2 = 0.2
 
-			if var_24_1 <= arg_21_1.time_ and arg_21_1.time_ < var_24_1 + var_24_2 then
+			if var_24_1 <= arg_21_1.time_ and arg_21_1.time_ < var_24_1 + var_24_2 and not isNil(var_24_0) then
 				local var_24_3 = (arg_21_1.time_ - var_24_1) / var_24_2
 
-				if arg_21_1.var_.characterEffect1148ui_story then
+				if arg_21_1.var_.characterEffect1148ui_story and not isNil(var_24_0) then
 					arg_21_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_21_1.time_ >= var_24_1 + var_24_2 and arg_21_1.time_ < var_24_1 + var_24_2 + arg_24_0 and arg_21_1.var_.characterEffect1148ui_story then
+			if arg_21_1.time_ >= var_24_1 + var_24_2 and arg_21_1.time_ < var_24_1 + var_24_2 + arg_24_0 and not isNil(var_24_0) and arg_21_1.var_.characterEffect1148ui_story then
 				arg_21_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -890,16 +901,16 @@
 			local var_28_0 = arg_25_1.actors_["1148ui_story"]
 			local var_28_1 = 0
 
-			if var_28_1 < arg_25_1.time_ and arg_25_1.time_ <= var_28_1 + arg_28_0 and arg_25_1.var_.characterEffect1148ui_story == nil then
+			if var_28_1 < arg_25_1.time_ and arg_25_1.time_ <= var_28_1 + arg_28_0 and not isNil(var_28_0) and arg_25_1.var_.characterEffect1148ui_story == nil then
 				arg_25_1.var_.characterEffect1148ui_story = var_28_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_28_2 = 0.2
 
-			if var_28_1 <= arg_25_1.time_ and arg_25_1.time_ < var_28_1 + var_28_2 then
+			if var_28_1 <= arg_25_1.time_ and arg_25_1.time_ < var_28_1 + var_28_2 and not isNil(var_28_0) then
 				local var_28_3 = (arg_25_1.time_ - var_28_1) / var_28_2
 
-				if arg_25_1.var_.characterEffect1148ui_story then
+				if arg_25_1.var_.characterEffect1148ui_story and not isNil(var_28_0) then
 					local var_28_4 = Mathf.Lerp(0, 0.5, var_28_3)
 
 					arg_25_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -907,7 +918,7 @@
 				end
 			end
 
-			if arg_25_1.time_ >= var_28_1 + var_28_2 and arg_25_1.time_ < var_28_1 + var_28_2 + arg_28_0 and arg_25_1.var_.characterEffect1148ui_story then
+			if arg_25_1.time_ >= var_28_1 + var_28_2 and arg_25_1.time_ < var_28_1 + var_28_2 + arg_28_0 and not isNil(var_28_0) and arg_25_1.var_.characterEffect1148ui_story then
 				local var_28_5 = 0.5
 
 				arg_25_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -940,8 +951,15 @@
 				arg_25_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_25_1:RecordName(arg_25_1.leftNameTxt_.text)
-				SetActive(arg_25_1.iconTrs_.gameObject, false)
+				SetActive(arg_25_1.iconTrs_.gameObject, true)
+				arg_25_1.iconController_:SetSelectedState("hero")
+
+				arg_25_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_25_1.callingController_:SetSelectedState("normal")
+
+				arg_25_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_25_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_28_10 = arg_25_1:GetWordFromCfg(114803006)
 				local var_28_11 = arg_25_1:FormatText(var_28_10.content)
@@ -1023,21 +1041,21 @@
 			local var_32_0 = arg_29_1.actors_["1148ui_story"]
 			local var_32_1 = 0
 
-			if var_32_1 < arg_29_1.time_ and arg_29_1.time_ <= var_32_1 + arg_32_0 and arg_29_1.var_.characterEffect1148ui_story == nil then
+			if var_32_1 < arg_29_1.time_ and arg_29_1.time_ <= var_32_1 + arg_32_0 and not isNil(var_32_0) and arg_29_1.var_.characterEffect1148ui_story == nil then
 				arg_29_1.var_.characterEffect1148ui_story = var_32_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_32_2 = 0.2
 
-			if var_32_1 <= arg_29_1.time_ and arg_29_1.time_ < var_32_1 + var_32_2 then
+			if var_32_1 <= arg_29_1.time_ and arg_29_1.time_ < var_32_1 + var_32_2 and not isNil(var_32_0) then
 				local var_32_3 = (arg_29_1.time_ - var_32_1) / var_32_2
 
-				if arg_29_1.var_.characterEffect1148ui_story then
+				if arg_29_1.var_.characterEffect1148ui_story and not isNil(var_32_0) then
 					arg_29_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_29_1.time_ >= var_32_1 + var_32_2 and arg_29_1.time_ < var_32_1 + var_32_2 + arg_32_0 and arg_29_1.var_.characterEffect1148ui_story then
+			if arg_29_1.time_ >= var_32_1 + var_32_2 and arg_29_1.time_ < var_32_1 + var_32_2 + arg_32_0 and not isNil(var_32_0) and arg_29_1.var_.characterEffect1148ui_story then
 				arg_29_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -1428,16 +1446,16 @@
 			local var_44_0 = arg_41_1.actors_["1148ui_story"]
 			local var_44_1 = 0
 
-			if var_44_1 < arg_41_1.time_ and arg_41_1.time_ <= var_44_1 + arg_44_0 and arg_41_1.var_.characterEffect1148ui_story == nil then
+			if var_44_1 < arg_41_1.time_ and arg_41_1.time_ <= var_44_1 + arg_44_0 and not isNil(var_44_0) and arg_41_1.var_.characterEffect1148ui_story == nil then
 				arg_41_1.var_.characterEffect1148ui_story = var_44_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_44_2 = 0.2
 
-			if var_44_1 <= arg_41_1.time_ and arg_41_1.time_ < var_44_1 + var_44_2 then
+			if var_44_1 <= arg_41_1.time_ and arg_41_1.time_ < var_44_1 + var_44_2 and not isNil(var_44_0) then
 				local var_44_3 = (arg_41_1.time_ - var_44_1) / var_44_2
 
-				if arg_41_1.var_.characterEffect1148ui_story then
+				if arg_41_1.var_.characterEffect1148ui_story and not isNil(var_44_0) then
 					local var_44_4 = Mathf.Lerp(0, 0.5, var_44_3)
 
 					arg_41_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -1445,7 +1463,7 @@
 				end
 			end
 
-			if arg_41_1.time_ >= var_44_1 + var_44_2 and arg_41_1.time_ < var_44_1 + var_44_2 + arg_44_0 and arg_41_1.var_.characterEffect1148ui_story then
+			if arg_41_1.time_ >= var_44_1 + var_44_2 and arg_41_1.time_ < var_44_1 + var_44_2 + arg_44_0 and not isNil(var_44_0) and arg_41_1.var_.characterEffect1148ui_story then
 				local var_44_5 = 0.5
 
 				arg_41_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -1472,8 +1490,15 @@
 				arg_41_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_41_1:RecordName(arg_41_1.leftNameTxt_.text)
-				SetActive(arg_41_1.iconTrs_.gameObject, false)
+				SetActive(arg_41_1.iconTrs_.gameObject, true)
+				arg_41_1.iconController_:SetSelectedState("hero")
+
+				arg_41_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_41_1.callingController_:SetSelectedState("normal")
+
+				arg_41_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_41_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_44_9 = arg_41_1:GetWordFromCfg(114803010)
 				local var_44_10 = arg_41_1:FormatText(var_44_9.content)
@@ -1555,21 +1580,21 @@
 			local var_48_0 = arg_45_1.actors_["1148ui_story"]
 			local var_48_1 = 0
 
-			if var_48_1 < arg_45_1.time_ and arg_45_1.time_ <= var_48_1 + arg_48_0 and arg_45_1.var_.characterEffect1148ui_story == nil then
+			if var_48_1 < arg_45_1.time_ and arg_45_1.time_ <= var_48_1 + arg_48_0 and not isNil(var_48_0) and arg_45_1.var_.characterEffect1148ui_story == nil then
 				arg_45_1.var_.characterEffect1148ui_story = var_48_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_48_2 = 0.2
 
-			if var_48_1 <= arg_45_1.time_ and arg_45_1.time_ < var_48_1 + var_48_2 then
+			if var_48_1 <= arg_45_1.time_ and arg_45_1.time_ < var_48_1 + var_48_2 and not isNil(var_48_0) then
 				local var_48_3 = (arg_45_1.time_ - var_48_1) / var_48_2
 
-				if arg_45_1.var_.characterEffect1148ui_story then
+				if arg_45_1.var_.characterEffect1148ui_story and not isNil(var_48_0) then
 					arg_45_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_45_1.time_ >= var_48_1 + var_48_2 and arg_45_1.time_ < var_48_1 + var_48_2 + arg_48_0 and arg_45_1.var_.characterEffect1148ui_story then
+			if arg_45_1.time_ >= var_48_1 + var_48_2 and arg_45_1.time_ < var_48_1 + var_48_2 + arg_48_0 and not isNil(var_48_0) and arg_45_1.var_.characterEffect1148ui_story then
 				arg_45_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -1696,16 +1721,16 @@
 			local var_52_0 = arg_49_1.actors_["1148ui_story"]
 			local var_52_1 = 0
 
-			if var_52_1 < arg_49_1.time_ and arg_49_1.time_ <= var_52_1 + arg_52_0 and arg_49_1.var_.characterEffect1148ui_story == nil then
+			if var_52_1 < arg_49_1.time_ and arg_49_1.time_ <= var_52_1 + arg_52_0 and not isNil(var_52_0) and arg_49_1.var_.characterEffect1148ui_story == nil then
 				arg_49_1.var_.characterEffect1148ui_story = var_52_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_52_2 = 0.2
 
-			if var_52_1 <= arg_49_1.time_ and arg_49_1.time_ < var_52_1 + var_52_2 then
+			if var_52_1 <= arg_49_1.time_ and arg_49_1.time_ < var_52_1 + var_52_2 and not isNil(var_52_0) then
 				local var_52_3 = (arg_49_1.time_ - var_52_1) / var_52_2
 
-				if arg_49_1.var_.characterEffect1148ui_story then
+				if arg_49_1.var_.characterEffect1148ui_story and not isNil(var_52_0) then
 					local var_52_4 = Mathf.Lerp(0, 0.5, var_52_3)
 
 					arg_49_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -1713,7 +1738,7 @@
 				end
 			end
 
-			if arg_49_1.time_ >= var_52_1 + var_52_2 and arg_49_1.time_ < var_52_1 + var_52_2 + arg_52_0 and arg_49_1.var_.characterEffect1148ui_story then
+			if arg_49_1.time_ >= var_52_1 + var_52_2 and arg_49_1.time_ < var_52_1 + var_52_2 + arg_52_0 and not isNil(var_52_0) and arg_49_1.var_.characterEffect1148ui_story then
 				local var_52_5 = 0.5
 
 				arg_49_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -1746,8 +1771,15 @@
 				arg_49_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_49_1:RecordName(arg_49_1.leftNameTxt_.text)
-				SetActive(arg_49_1.iconTrs_.gameObject, false)
+				SetActive(arg_49_1.iconTrs_.gameObject, true)
+				arg_49_1.iconController_:SetSelectedState("hero")
+
+				arg_49_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_49_1.callingController_:SetSelectedState("normal")
+
+				arg_49_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_49_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_52_10 = arg_49_1:GetWordFromCfg(114803012)
 				local var_52_11 = arg_49_1:FormatText(var_52_10.content)
@@ -1829,21 +1861,21 @@
 			local var_56_0 = arg_53_1.actors_["1148ui_story"]
 			local var_56_1 = 0
 
-			if var_56_1 < arg_53_1.time_ and arg_53_1.time_ <= var_56_1 + arg_56_0 and arg_53_1.var_.characterEffect1148ui_story == nil then
+			if var_56_1 < arg_53_1.time_ and arg_53_1.time_ <= var_56_1 + arg_56_0 and not isNil(var_56_0) and arg_53_1.var_.characterEffect1148ui_story == nil then
 				arg_53_1.var_.characterEffect1148ui_story = var_56_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_56_2 = 0.2
 
-			if var_56_1 <= arg_53_1.time_ and arg_53_1.time_ < var_56_1 + var_56_2 then
+			if var_56_1 <= arg_53_1.time_ and arg_53_1.time_ < var_56_1 + var_56_2 and not isNil(var_56_0) then
 				local var_56_3 = (arg_53_1.time_ - var_56_1) / var_56_2
 
-				if arg_53_1.var_.characterEffect1148ui_story then
+				if arg_53_1.var_.characterEffect1148ui_story and not isNil(var_56_0) then
 					arg_53_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_53_1.time_ >= var_56_1 + var_56_2 and arg_53_1.time_ < var_56_1 + var_56_2 + arg_56_0 and arg_53_1.var_.characterEffect1148ui_story then
+			if arg_53_1.time_ >= var_56_1 + var_56_2 and arg_53_1.time_ < var_56_1 + var_56_2 + arg_56_0 and not isNil(var_56_0) and arg_53_1.var_.characterEffect1148ui_story then
 				arg_53_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -1970,16 +2002,16 @@
 			local var_60_0 = arg_57_1.actors_["1148ui_story"]
 			local var_60_1 = 0
 
-			if var_60_1 < arg_57_1.time_ and arg_57_1.time_ <= var_60_1 + arg_60_0 and arg_57_1.var_.characterEffect1148ui_story == nil then
+			if var_60_1 < arg_57_1.time_ and arg_57_1.time_ <= var_60_1 + arg_60_0 and not isNil(var_60_0) and arg_57_1.var_.characterEffect1148ui_story == nil then
 				arg_57_1.var_.characterEffect1148ui_story = var_60_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_60_2 = 0.2
 
-			if var_60_1 <= arg_57_1.time_ and arg_57_1.time_ < var_60_1 + var_60_2 then
+			if var_60_1 <= arg_57_1.time_ and arg_57_1.time_ < var_60_1 + var_60_2 and not isNil(var_60_0) then
 				local var_60_3 = (arg_57_1.time_ - var_60_1) / var_60_2
 
-				if arg_57_1.var_.characterEffect1148ui_story then
+				if arg_57_1.var_.characterEffect1148ui_story and not isNil(var_60_0) then
 					local var_60_4 = Mathf.Lerp(0, 0.5, var_60_3)
 
 					arg_57_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -1987,7 +2019,7 @@
 				end
 			end
 
-			if arg_57_1.time_ >= var_60_1 + var_60_2 and arg_57_1.time_ < var_60_1 + var_60_2 + arg_60_0 and arg_57_1.var_.characterEffect1148ui_story then
+			if arg_57_1.time_ >= var_60_1 + var_60_2 and arg_57_1.time_ < var_60_1 + var_60_2 + arg_60_0 and not isNil(var_60_0) and arg_57_1.var_.characterEffect1148ui_story then
 				local var_60_5 = 0.5
 
 				arg_57_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -2020,8 +2052,15 @@
 				arg_57_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_57_1:RecordName(arg_57_1.leftNameTxt_.text)
-				SetActive(arg_57_1.iconTrs_.gameObject, false)
+				SetActive(arg_57_1.iconTrs_.gameObject, true)
+				arg_57_1.iconController_:SetSelectedState("hero")
+
+				arg_57_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_57_1.callingController_:SetSelectedState("normal")
+
+				arg_57_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_57_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_60_10 = arg_57_1:GetWordFromCfg(114803014)
 				local var_60_11 = arg_57_1:FormatText(var_60_10.content)
@@ -2103,21 +2142,21 @@
 			local var_64_0 = arg_61_1.actors_["1148ui_story"]
 			local var_64_1 = 0
 
-			if var_64_1 < arg_61_1.time_ and arg_61_1.time_ <= var_64_1 + arg_64_0 and arg_61_1.var_.characterEffect1148ui_story == nil then
+			if var_64_1 < arg_61_1.time_ and arg_61_1.time_ <= var_64_1 + arg_64_0 and not isNil(var_64_0) and arg_61_1.var_.characterEffect1148ui_story == nil then
 				arg_61_1.var_.characterEffect1148ui_story = var_64_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_64_2 = 0.2
 
-			if var_64_1 <= arg_61_1.time_ and arg_61_1.time_ < var_64_1 + var_64_2 then
+			if var_64_1 <= arg_61_1.time_ and arg_61_1.time_ < var_64_1 + var_64_2 and not isNil(var_64_0) then
 				local var_64_3 = (arg_61_1.time_ - var_64_1) / var_64_2
 
-				if arg_61_1.var_.characterEffect1148ui_story then
+				if arg_61_1.var_.characterEffect1148ui_story and not isNil(var_64_0) then
 					arg_61_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_61_1.time_ >= var_64_1 + var_64_2 and arg_61_1.time_ < var_64_1 + var_64_2 + arg_64_0 and arg_61_1.var_.characterEffect1148ui_story then
+			if arg_61_1.time_ >= var_64_1 + var_64_2 and arg_61_1.time_ < var_64_1 + var_64_2 + arg_64_0 and not isNil(var_64_0) and arg_61_1.var_.characterEffect1148ui_story then
 				arg_61_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -2605,77 +2644,81 @@
 			local var_78_0 = "1080ui_story"
 
 			if arg_75_1.actors_[var_78_0] == nil then
-				local var_78_1 = Object.Instantiate(Asset.Load("Char/" .. var_78_0), arg_75_1.stage_.transform)
+				local var_78_1 = Asset.Load("Char/" .. "1080ui_story")
 
-				var_78_1.name = var_78_0
-				var_78_1.transform.localPosition = Vector3.New(0, 100, 0)
-				arg_75_1.actors_[var_78_0] = var_78_1
+				if not isNil(var_78_1) then
+					local var_78_2 = Object.Instantiate(Asset.Load("Char/" .. "1080ui_story"), arg_75_1.stage_.transform)
 
-				local var_78_2 = var_78_1:GetComponentInChildren(typeof(CharacterEffect))
+					var_78_2.name = var_78_0
+					var_78_2.transform.localPosition = Vector3.New(0, 100, 0)
+					arg_75_1.actors_[var_78_0] = var_78_2
 
-				var_78_2.enabled = true
+					local var_78_3 = var_78_2:GetComponentInChildren(typeof(CharacterEffect))
 
-				local var_78_3 = GameObjectTools.GetOrAddComponent(var_78_1, typeof(DynamicBoneHelper))
+					var_78_3.enabled = true
 
-				if var_78_3 then
-					var_78_3:EnableDynamicBone(false)
+					local var_78_4 = GameObjectTools.GetOrAddComponent(var_78_2, typeof(DynamicBoneHelper))
+
+					if var_78_4 then
+						var_78_4:EnableDynamicBone(false)
+					end
+
+					arg_75_1:ShowWeapon(var_78_3.transform, false)
+
+					arg_75_1.var_[var_78_0 .. "Animator"] = var_78_3.gameObject:GetComponent(typeof(UnityEngine.Animator))
+					arg_75_1.var_[var_78_0 .. "Animator"].applyRootMotion = true
+					arg_75_1.var_[var_78_0 .. "LipSync"] = var_78_3.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
 				end
-
-				arg_75_1:ShowWeapon(var_78_2.transform, false)
-
-				arg_75_1.var_[var_78_0 .. "Animator"] = var_78_2.gameObject:GetComponent(typeof(UnityEngine.Animator))
-				arg_75_1.var_[var_78_0 .. "Animator"].applyRootMotion = true
-				arg_75_1.var_[var_78_0 .. "LipSync"] = var_78_2.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
 			end
 
-			local var_78_4 = arg_75_1.actors_["1080ui_story"].transform
-			local var_78_5 = 0
+			local var_78_5 = arg_75_1.actors_["1080ui_story"].transform
+			local var_78_6 = 0
 
-			if var_78_5 < arg_75_1.time_ and arg_75_1.time_ <= var_78_5 + arg_78_0 then
-				arg_75_1.var_.moveOldPos1080ui_story = var_78_4.localPosition
+			if var_78_6 < arg_75_1.time_ and arg_75_1.time_ <= var_78_6 + arg_78_0 then
+				arg_75_1.var_.moveOldPos1080ui_story = var_78_5.localPosition
 
-				local var_78_6 = "1080ui_story"
+				local var_78_7 = "1080ui_story"
 
-				arg_75_1:ShowWeapon(arg_75_1.var_[var_78_6 .. "Animator"].transform, false)
+				arg_75_1:ShowWeapon(arg_75_1.var_[var_78_7 .. "Animator"].transform, false)
 			end
 
-			local var_78_7 = 0.001
+			local var_78_8 = 0.001
 
-			if var_78_5 <= arg_75_1.time_ and arg_75_1.time_ < var_78_5 + var_78_7 then
-				local var_78_8 = (arg_75_1.time_ - var_78_5) / var_78_7
-				local var_78_9 = Vector3.New(0, -1.01, -6.05)
+			if var_78_6 <= arg_75_1.time_ and arg_75_1.time_ < var_78_6 + var_78_8 then
+				local var_78_9 = (arg_75_1.time_ - var_78_6) / var_78_8
+				local var_78_10 = Vector3.New(0, -1.01, -6.05)
 
-				var_78_4.localPosition = Vector3.Lerp(arg_75_1.var_.moveOldPos1080ui_story, var_78_9, var_78_8)
+				var_78_5.localPosition = Vector3.Lerp(arg_75_1.var_.moveOldPos1080ui_story, var_78_10, var_78_9)
 
-				local var_78_10 = manager.ui.mainCamera.transform.position - var_78_4.position
+				local var_78_11 = manager.ui.mainCamera.transform.position - var_78_5.position
 
-				var_78_4.forward = Vector3.New(var_78_10.x, var_78_10.y, var_78_10.z)
+				var_78_5.forward = Vector3.New(var_78_11.x, var_78_11.y, var_78_11.z)
 
-				local var_78_11 = var_78_4.localEulerAngles
+				local var_78_12 = var_78_5.localEulerAngles
 
-				var_78_11.z = 0
-				var_78_11.x = 0
-				var_78_4.localEulerAngles = var_78_11
+				var_78_12.z = 0
+				var_78_12.x = 0
+				var_78_5.localEulerAngles = var_78_12
 			end
 
-			if arg_75_1.time_ >= var_78_5 + var_78_7 and arg_75_1.time_ < var_78_5 + var_78_7 + arg_78_0 then
-				var_78_4.localPosition = Vector3.New(0, -1.01, -6.05)
+			if arg_75_1.time_ >= var_78_6 + var_78_8 and arg_75_1.time_ < var_78_6 + var_78_8 + arg_78_0 then
+				var_78_5.localPosition = Vector3.New(0, -1.01, -6.05)
 
-				local var_78_12 = manager.ui.mainCamera.transform.position - var_78_4.position
+				local var_78_13 = manager.ui.mainCamera.transform.position - var_78_5.position
 
-				var_78_4.forward = Vector3.New(var_78_12.x, var_78_12.y, var_78_12.z)
+				var_78_5.forward = Vector3.New(var_78_13.x, var_78_13.y, var_78_13.z)
 
-				local var_78_13 = var_78_4.localEulerAngles
+				local var_78_14 = var_78_5.localEulerAngles
 
-				var_78_13.z = 0
-				var_78_13.x = 0
-				var_78_4.localEulerAngles = var_78_13
+				var_78_14.z = 0
+				var_78_14.x = 0
+				var_78_5.localEulerAngles = var_78_14
 			end
 
-			local var_78_14 = 0
-			local var_78_15 = 1.375
+			local var_78_15 = 0
+			local var_78_16 = 1.375
 
-			if var_78_14 < arg_75_1.time_ and arg_75_1.time_ <= var_78_14 + arg_78_0 then
+			if var_78_15 < arg_75_1.time_ and arg_75_1.time_ <= var_78_15 + arg_78_0 then
 				arg_75_1.talkMaxDuration = 0
 				arg_75_1.dialogCg_.alpha = 1
 
@@ -2689,26 +2732,26 @@
 				SetActive(arg_75_1.iconTrs_.gameObject, false)
 				arg_75_1.callingController_:SetSelectedState("normal")
 
-				local var_78_16 = arg_75_1:GetWordFromCfg(114803018)
-				local var_78_17 = arg_75_1:FormatText(var_78_16.content)
+				local var_78_17 = arg_75_1:GetWordFromCfg(114803018)
+				local var_78_18 = arg_75_1:FormatText(var_78_17.content)
 
-				arg_75_1.text_.text = var_78_17
+				arg_75_1.text_.text = var_78_18
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_75_1.text_)
 
-				local var_78_18 = 55
-				local var_78_19 = utf8.len(var_78_17)
-				local var_78_20 = var_78_18 <= 0 and var_78_15 or var_78_15 * (var_78_19 / var_78_18)
+				local var_78_19 = 55
+				local var_78_20 = utf8.len(var_78_18)
+				local var_78_21 = var_78_19 <= 0 and var_78_16 or var_78_16 * (var_78_20 / var_78_19)
 
-				if var_78_20 > 0 and var_78_15 < var_78_20 then
-					arg_75_1.talkMaxDuration = var_78_20
+				if var_78_21 > 0 and var_78_16 < var_78_21 then
+					arg_75_1.talkMaxDuration = var_78_21
 
-					if var_78_20 + var_78_14 > arg_75_1.duration_ then
-						arg_75_1.duration_ = var_78_20 + var_78_14
+					if var_78_21 + var_78_15 > arg_75_1.duration_ then
+						arg_75_1.duration_ = var_78_21 + var_78_15
 					end
 				end
 
-				arg_75_1.text_.text = var_78_17
+				arg_75_1.text_.text = var_78_18
 				arg_75_1.typewritter.percent = 0
 
 				arg_75_1.typewritter:SetDirty()
@@ -2716,15 +2759,15 @@
 				arg_75_1:RecordContent(arg_75_1.text_.text)
 			end
 
-			local var_78_21 = math.max(var_78_15, arg_75_1.talkMaxDuration)
+			local var_78_22 = math.max(var_78_16, arg_75_1.talkMaxDuration)
 
-			if var_78_14 <= arg_75_1.time_ and arg_75_1.time_ < var_78_14 + var_78_21 then
-				arg_75_1.typewritter.percent = (arg_75_1.time_ - var_78_14) / var_78_21
+			if var_78_15 <= arg_75_1.time_ and arg_75_1.time_ < var_78_15 + var_78_22 then
+				arg_75_1.typewritter.percent = (arg_75_1.time_ - var_78_15) / var_78_22
 
 				arg_75_1.typewritter:SetDirty()
 			end
 
-			if arg_75_1.time_ >= var_78_14 + var_78_21 and arg_75_1.time_ < var_78_14 + var_78_21 + arg_78_0 then
+			if arg_75_1.time_ >= var_78_15 + var_78_22 and arg_75_1.time_ < var_78_15 + var_78_22 + arg_78_0 then
 				arg_75_1.typewritter.percent = 1
 
 				arg_75_1.typewritter:SetDirty()
@@ -2769,21 +2812,21 @@
 			local var_82_0 = arg_79_1.actors_["1080ui_story"]
 			local var_82_1 = 0
 
-			if var_82_1 < arg_79_1.time_ and arg_79_1.time_ <= var_82_1 + arg_82_0 and arg_79_1.var_.characterEffect1080ui_story == nil then
+			if var_82_1 < arg_79_1.time_ and arg_79_1.time_ <= var_82_1 + arg_82_0 and not isNil(var_82_0) and arg_79_1.var_.characterEffect1080ui_story == nil then
 				arg_79_1.var_.characterEffect1080ui_story = var_82_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_82_2 = 0.2
 
-			if var_82_1 <= arg_79_1.time_ and arg_79_1.time_ < var_82_1 + var_82_2 then
+			if var_82_1 <= arg_79_1.time_ and arg_79_1.time_ < var_82_1 + var_82_2 and not isNil(var_82_0) then
 				local var_82_3 = (arg_79_1.time_ - var_82_1) / var_82_2
 
-				if arg_79_1.var_.characterEffect1080ui_story then
+				if arg_79_1.var_.characterEffect1080ui_story and not isNil(var_82_0) then
 					arg_79_1.var_.characterEffect1080ui_story.fillFlat = false
 				end
 			end
 
-			if arg_79_1.time_ >= var_82_1 + var_82_2 and arg_79_1.time_ < var_82_1 + var_82_2 + arg_82_0 and arg_79_1.var_.characterEffect1080ui_story then
+			if arg_79_1.time_ >= var_82_1 + var_82_2 and arg_79_1.time_ < var_82_1 + var_82_2 + arg_82_0 and not isNil(var_82_0) and arg_79_1.var_.characterEffect1080ui_story then
 				arg_79_1.var_.characterEffect1080ui_story.fillFlat = false
 			end
 
@@ -2910,16 +2953,16 @@
 			local var_86_0 = arg_83_1.actors_["1080ui_story"]
 			local var_86_1 = 0
 
-			if var_86_1 < arg_83_1.time_ and arg_83_1.time_ <= var_86_1 + arg_86_0 and arg_83_1.var_.characterEffect1080ui_story == nil then
+			if var_86_1 < arg_83_1.time_ and arg_83_1.time_ <= var_86_1 + arg_86_0 and not isNil(var_86_0) and arg_83_1.var_.characterEffect1080ui_story == nil then
 				arg_83_1.var_.characterEffect1080ui_story = var_86_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_86_2 = 0.2
 
-			if var_86_1 <= arg_83_1.time_ and arg_83_1.time_ < var_86_1 + var_86_2 then
+			if var_86_1 <= arg_83_1.time_ and arg_83_1.time_ < var_86_1 + var_86_2 and not isNil(var_86_0) then
 				local var_86_3 = (arg_83_1.time_ - var_86_1) / var_86_2
 
-				if arg_83_1.var_.characterEffect1080ui_story then
+				if arg_83_1.var_.characterEffect1080ui_story and not isNil(var_86_0) then
 					local var_86_4 = Mathf.Lerp(0, 0.5, var_86_3)
 
 					arg_83_1.var_.characterEffect1080ui_story.fillFlat = true
@@ -2927,7 +2970,7 @@
 				end
 			end
 
-			if arg_83_1.time_ >= var_86_1 + var_86_2 and arg_83_1.time_ < var_86_1 + var_86_2 + arg_86_0 and arg_83_1.var_.characterEffect1080ui_story then
+			if arg_83_1.time_ >= var_86_1 + var_86_2 and arg_83_1.time_ < var_86_1 + var_86_2 + arg_86_0 and not isNil(var_86_0) and arg_83_1.var_.characterEffect1080ui_story then
 				local var_86_5 = 0.5
 
 				arg_83_1.var_.characterEffect1080ui_story.fillFlat = true
@@ -2954,8 +2997,15 @@
 				arg_83_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_83_1:RecordName(arg_83_1.leftNameTxt_.text)
-				SetActive(arg_83_1.iconTrs_.gameObject, false)
+				SetActive(arg_83_1.iconTrs_.gameObject, true)
+				arg_83_1.iconController_:SetSelectedState("hero")
+
+				arg_83_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_83_1.callingController_:SetSelectedState("normal")
+
+				arg_83_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_83_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_86_9 = arg_83_1:GetWordFromCfg(114803020)
 				local var_86_10 = arg_83_1:FormatText(var_86_9.content)
@@ -3131,37 +3181,37 @@
 			local var_90_21 = arg_87_1.actors_["1148ui_story"]
 			local var_90_22 = 0.0166666666666667
 
-			if var_90_22 < arg_87_1.time_ and arg_87_1.time_ <= var_90_22 + arg_90_0 and arg_87_1.var_.characterEffect1148ui_story == nil then
+			if var_90_22 < arg_87_1.time_ and arg_87_1.time_ <= var_90_22 + arg_90_0 and not isNil(var_90_21) and arg_87_1.var_.characterEffect1148ui_story == nil then
 				arg_87_1.var_.characterEffect1148ui_story = var_90_21:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_90_23 = 0.2
 
-			if var_90_22 <= arg_87_1.time_ and arg_87_1.time_ < var_90_22 + var_90_23 then
+			if var_90_22 <= arg_87_1.time_ and arg_87_1.time_ < var_90_22 + var_90_23 and not isNil(var_90_21) then
 				local var_90_24 = (arg_87_1.time_ - var_90_22) / var_90_23
 
-				if arg_87_1.var_.characterEffect1148ui_story then
+				if arg_87_1.var_.characterEffect1148ui_story and not isNil(var_90_21) then
 					arg_87_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_87_1.time_ >= var_90_22 + var_90_23 and arg_87_1.time_ < var_90_22 + var_90_23 + arg_90_0 and arg_87_1.var_.characterEffect1148ui_story then
+			if arg_87_1.time_ >= var_90_22 + var_90_23 and arg_87_1.time_ < var_90_22 + var_90_23 + arg_90_0 and not isNil(var_90_21) and arg_87_1.var_.characterEffect1148ui_story then
 				arg_87_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
 			local var_90_25 = arg_87_1.actors_["1080ui_story"]
 			local var_90_26 = 0.0166666666666667
 
-			if var_90_26 < arg_87_1.time_ and arg_87_1.time_ <= var_90_26 + arg_90_0 and arg_87_1.var_.characterEffect1080ui_story == nil then
+			if var_90_26 < arg_87_1.time_ and arg_87_1.time_ <= var_90_26 + arg_90_0 and not isNil(var_90_25) and arg_87_1.var_.characterEffect1080ui_story == nil then
 				arg_87_1.var_.characterEffect1080ui_story = var_90_25:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_90_27 = 0.183333333333333
 
-			if var_90_26 <= arg_87_1.time_ and arg_87_1.time_ < var_90_26 + var_90_27 then
+			if var_90_26 <= arg_87_1.time_ and arg_87_1.time_ < var_90_26 + var_90_27 and not isNil(var_90_25) then
 				local var_90_28 = (arg_87_1.time_ - var_90_26) / var_90_27
 
-				if arg_87_1.var_.characterEffect1080ui_story then
+				if arg_87_1.var_.characterEffect1080ui_story and not isNil(var_90_25) then
 					local var_90_29 = Mathf.Lerp(0, 0.5, var_90_28)
 
 					arg_87_1.var_.characterEffect1080ui_story.fillFlat = true
@@ -3169,7 +3219,7 @@
 				end
 			end
 
-			if arg_87_1.time_ >= var_90_26 + var_90_27 and arg_87_1.time_ < var_90_26 + var_90_27 + arg_90_0 and arg_87_1.var_.characterEffect1080ui_story then
+			if arg_87_1.time_ >= var_90_26 + var_90_27 and arg_87_1.time_ < var_90_26 + var_90_27 + arg_90_0 and not isNil(var_90_25) and arg_87_1.var_.characterEffect1080ui_story then
 				local var_90_30 = 0.5
 
 				arg_87_1.var_.characterEffect1080ui_story.fillFlat = true
@@ -3299,16 +3349,16 @@
 			local var_94_0 = arg_91_1.actors_["1148ui_story"]
 			local var_94_1 = 0
 
-			if var_94_1 < arg_91_1.time_ and arg_91_1.time_ <= var_94_1 + arg_94_0 and arg_91_1.var_.characterEffect1148ui_story == nil then
+			if var_94_1 < arg_91_1.time_ and arg_91_1.time_ <= var_94_1 + arg_94_0 and not isNil(var_94_0) and arg_91_1.var_.characterEffect1148ui_story == nil then
 				arg_91_1.var_.characterEffect1148ui_story = var_94_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_94_2 = 0.2
 
-			if var_94_1 <= arg_91_1.time_ and arg_91_1.time_ < var_94_1 + var_94_2 then
+			if var_94_1 <= arg_91_1.time_ and arg_91_1.time_ < var_94_1 + var_94_2 and not isNil(var_94_0) then
 				local var_94_3 = (arg_91_1.time_ - var_94_1) / var_94_2
 
-				if arg_91_1.var_.characterEffect1148ui_story then
+				if arg_91_1.var_.characterEffect1148ui_story and not isNil(var_94_0) then
 					local var_94_4 = Mathf.Lerp(0, 0.5, var_94_3)
 
 					arg_91_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -3316,7 +3366,7 @@
 				end
 			end
 
-			if arg_91_1.time_ >= var_94_1 + var_94_2 and arg_91_1.time_ < var_94_1 + var_94_2 + arg_94_0 and arg_91_1.var_.characterEffect1148ui_story then
+			if arg_91_1.time_ >= var_94_1 + var_94_2 and arg_91_1.time_ < var_94_1 + var_94_2 + arg_94_0 and not isNil(var_94_0) and arg_91_1.var_.characterEffect1148ui_story then
 				local var_94_5 = 0.5
 
 				arg_91_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -3432,21 +3482,21 @@
 			local var_98_0 = arg_95_1.actors_["1148ui_story"]
 			local var_98_1 = 0
 
-			if var_98_1 < arg_95_1.time_ and arg_95_1.time_ <= var_98_1 + arg_98_0 and arg_95_1.var_.characterEffect1148ui_story == nil then
+			if var_98_1 < arg_95_1.time_ and arg_95_1.time_ <= var_98_1 + arg_98_0 and not isNil(var_98_0) and arg_95_1.var_.characterEffect1148ui_story == nil then
 				arg_95_1.var_.characterEffect1148ui_story = var_98_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_98_2 = 0.2
 
-			if var_98_1 <= arg_95_1.time_ and arg_95_1.time_ < var_98_1 + var_98_2 then
+			if var_98_1 <= arg_95_1.time_ and arg_95_1.time_ < var_98_1 + var_98_2 and not isNil(var_98_0) then
 				local var_98_3 = (arg_95_1.time_ - var_98_1) / var_98_2
 
-				if arg_95_1.var_.characterEffect1148ui_story then
+				if arg_95_1.var_.characterEffect1148ui_story and not isNil(var_98_0) then
 					arg_95_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_95_1.time_ >= var_98_1 + var_98_2 and arg_95_1.time_ < var_98_1 + var_98_2 + arg_98_0 and arg_95_1.var_.characterEffect1148ui_story then
+			if arg_95_1.time_ >= var_98_1 + var_98_2 and arg_95_1.time_ < var_98_1 + var_98_2 + arg_98_0 and not isNil(var_98_0) and arg_95_1.var_.characterEffect1148ui_story then
 				arg_95_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -3723,21 +3773,21 @@
 			local var_106_0 = arg_103_1.actors_["1080ui_story"]
 			local var_106_1 = 0
 
-			if var_106_1 < arg_103_1.time_ and arg_103_1.time_ <= var_106_1 + arg_106_0 and arg_103_1.var_.characterEffect1080ui_story == nil then
+			if var_106_1 < arg_103_1.time_ and arg_103_1.time_ <= var_106_1 + arg_106_0 and not isNil(var_106_0) and arg_103_1.var_.characterEffect1080ui_story == nil then
 				arg_103_1.var_.characterEffect1080ui_story = var_106_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_106_2 = 0.2
 
-			if var_106_1 <= arg_103_1.time_ and arg_103_1.time_ < var_106_1 + var_106_2 then
+			if var_106_1 <= arg_103_1.time_ and arg_103_1.time_ < var_106_1 + var_106_2 and not isNil(var_106_0) then
 				local var_106_3 = (arg_103_1.time_ - var_106_1) / var_106_2
 
-				if arg_103_1.var_.characterEffect1080ui_story then
+				if arg_103_1.var_.characterEffect1080ui_story and not isNil(var_106_0) then
 					arg_103_1.var_.characterEffect1080ui_story.fillFlat = false
 				end
 			end
 
-			if arg_103_1.time_ >= var_106_1 + var_106_2 and arg_103_1.time_ < var_106_1 + var_106_2 + arg_106_0 and arg_103_1.var_.characterEffect1080ui_story then
+			if arg_103_1.time_ >= var_106_1 + var_106_2 and arg_103_1.time_ < var_106_1 + var_106_2 + arg_106_0 and not isNil(var_106_0) and arg_103_1.var_.characterEffect1080ui_story then
 				arg_103_1.var_.characterEffect1080ui_story.fillFlat = false
 			end
 
@@ -3762,16 +3812,16 @@
 			local var_106_7 = arg_103_1.actors_["1148ui_story"]
 			local var_106_8 = 0
 
-			if var_106_8 < arg_103_1.time_ and arg_103_1.time_ <= var_106_8 + arg_106_0 and arg_103_1.var_.characterEffect1148ui_story == nil then
+			if var_106_8 < arg_103_1.time_ and arg_103_1.time_ <= var_106_8 + arg_106_0 and not isNil(var_106_7) and arg_103_1.var_.characterEffect1148ui_story == nil then
 				arg_103_1.var_.characterEffect1148ui_story = var_106_7:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_106_9 = 0.2
 
-			if var_106_8 <= arg_103_1.time_ and arg_103_1.time_ < var_106_8 + var_106_9 then
+			if var_106_8 <= arg_103_1.time_ and arg_103_1.time_ < var_106_8 + var_106_9 and not isNil(var_106_7) then
 				local var_106_10 = (arg_103_1.time_ - var_106_8) / var_106_9
 
-				if arg_103_1.var_.characterEffect1148ui_story then
+				if arg_103_1.var_.characterEffect1148ui_story and not isNil(var_106_7) then
 					local var_106_11 = Mathf.Lerp(0, 0.5, var_106_10)
 
 					arg_103_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -3779,7 +3829,7 @@
 				end
 			end
 
-			if arg_103_1.time_ >= var_106_8 + var_106_9 and arg_103_1.time_ < var_106_8 + var_106_9 + arg_106_0 and arg_103_1.var_.characterEffect1148ui_story then
+			if arg_103_1.time_ >= var_106_8 + var_106_9 and arg_103_1.time_ < var_106_8 + var_106_9 + arg_106_0 and not isNil(var_106_7) and arg_103_1.var_.characterEffect1148ui_story then
 				local var_106_12 = 0.5
 
 				arg_103_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -3909,21 +3959,21 @@
 			local var_110_0 = arg_107_1.actors_["1148ui_story"]
 			local var_110_1 = 0
 
-			if var_110_1 < arg_107_1.time_ and arg_107_1.time_ <= var_110_1 + arg_110_0 and arg_107_1.var_.characterEffect1148ui_story == nil then
+			if var_110_1 < arg_107_1.time_ and arg_107_1.time_ <= var_110_1 + arg_110_0 and not isNil(var_110_0) and arg_107_1.var_.characterEffect1148ui_story == nil then
 				arg_107_1.var_.characterEffect1148ui_story = var_110_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_110_2 = 0.2
 
-			if var_110_1 <= arg_107_1.time_ and arg_107_1.time_ < var_110_1 + var_110_2 then
+			if var_110_1 <= arg_107_1.time_ and arg_107_1.time_ < var_110_1 + var_110_2 and not isNil(var_110_0) then
 				local var_110_3 = (arg_107_1.time_ - var_110_1) / var_110_2
 
-				if arg_107_1.var_.characterEffect1148ui_story then
+				if arg_107_1.var_.characterEffect1148ui_story and not isNil(var_110_0) then
 					arg_107_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_107_1.time_ >= var_110_1 + var_110_2 and arg_107_1.time_ < var_110_1 + var_110_2 + arg_110_0 and arg_107_1.var_.characterEffect1148ui_story then
+			if arg_107_1.time_ >= var_110_1 + var_110_2 and arg_107_1.time_ < var_110_1 + var_110_2 + arg_110_0 and not isNil(var_110_0) and arg_107_1.var_.characterEffect1148ui_story then
 				arg_107_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -4200,21 +4250,21 @@
 			local var_118_0 = arg_115_1.actors_["1080ui_story"]
 			local var_118_1 = 0
 
-			if var_118_1 < arg_115_1.time_ and arg_115_1.time_ <= var_118_1 + arg_118_0 and arg_115_1.var_.characterEffect1080ui_story == nil then
+			if var_118_1 < arg_115_1.time_ and arg_115_1.time_ <= var_118_1 + arg_118_0 and not isNil(var_118_0) and arg_115_1.var_.characterEffect1080ui_story == nil then
 				arg_115_1.var_.characterEffect1080ui_story = var_118_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_118_2 = 0.2
 
-			if var_118_1 <= arg_115_1.time_ and arg_115_1.time_ < var_118_1 + var_118_2 then
+			if var_118_1 <= arg_115_1.time_ and arg_115_1.time_ < var_118_1 + var_118_2 and not isNil(var_118_0) then
 				local var_118_3 = (arg_115_1.time_ - var_118_1) / var_118_2
 
-				if arg_115_1.var_.characterEffect1080ui_story then
+				if arg_115_1.var_.characterEffect1080ui_story and not isNil(var_118_0) then
 					arg_115_1.var_.characterEffect1080ui_story.fillFlat = false
 				end
 			end
 
-			if arg_115_1.time_ >= var_118_1 + var_118_2 and arg_115_1.time_ < var_118_1 + var_118_2 + arg_118_0 and arg_115_1.var_.characterEffect1080ui_story then
+			if arg_115_1.time_ >= var_118_1 + var_118_2 and arg_115_1.time_ < var_118_1 + var_118_2 + arg_118_0 and not isNil(var_118_0) and arg_115_1.var_.characterEffect1080ui_story then
 				arg_115_1.var_.characterEffect1080ui_story.fillFlat = false
 			end
 
@@ -4233,16 +4283,16 @@
 			local var_118_6 = arg_115_1.actors_["1148ui_story"]
 			local var_118_7 = 0
 
-			if var_118_7 < arg_115_1.time_ and arg_115_1.time_ <= var_118_7 + arg_118_0 and arg_115_1.var_.characterEffect1148ui_story == nil then
+			if var_118_7 < arg_115_1.time_ and arg_115_1.time_ <= var_118_7 + arg_118_0 and not isNil(var_118_6) and arg_115_1.var_.characterEffect1148ui_story == nil then
 				arg_115_1.var_.characterEffect1148ui_story = var_118_6:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_118_8 = 0.2
 
-			if var_118_7 <= arg_115_1.time_ and arg_115_1.time_ < var_118_7 + var_118_8 then
+			if var_118_7 <= arg_115_1.time_ and arg_115_1.time_ < var_118_7 + var_118_8 and not isNil(var_118_6) then
 				local var_118_9 = (arg_115_1.time_ - var_118_7) / var_118_8
 
-				if arg_115_1.var_.characterEffect1148ui_story then
+				if arg_115_1.var_.characterEffect1148ui_story and not isNil(var_118_6) then
 					local var_118_10 = Mathf.Lerp(0, 0.5, var_118_9)
 
 					arg_115_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -4250,7 +4300,7 @@
 				end
 			end
 
-			if arg_115_1.time_ >= var_118_7 + var_118_8 and arg_115_1.time_ < var_118_7 + var_118_8 + arg_118_0 and arg_115_1.var_.characterEffect1148ui_story then
+			if arg_115_1.time_ >= var_118_7 + var_118_8 and arg_115_1.time_ < var_118_7 + var_118_8 + arg_118_0 and not isNil(var_118_6) and arg_115_1.var_.characterEffect1148ui_story then
 				local var_118_11 = 0.5
 
 				arg_115_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -4564,21 +4614,21 @@
 			local var_126_0 = arg_123_1.actors_["1148ui_story"]
 			local var_126_1 = 0
 
-			if var_126_1 < arg_123_1.time_ and arg_123_1.time_ <= var_126_1 + arg_126_0 and arg_123_1.var_.characterEffect1148ui_story == nil then
+			if var_126_1 < arg_123_1.time_ and arg_123_1.time_ <= var_126_1 + arg_126_0 and not isNil(var_126_0) and arg_123_1.var_.characterEffect1148ui_story == nil then
 				arg_123_1.var_.characterEffect1148ui_story = var_126_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_126_2 = 0.2
 
-			if var_126_1 <= arg_123_1.time_ and arg_123_1.time_ < var_126_1 + var_126_2 then
+			if var_126_1 <= arg_123_1.time_ and arg_123_1.time_ < var_126_1 + var_126_2 and not isNil(var_126_0) then
 				local var_126_3 = (arg_123_1.time_ - var_126_1) / var_126_2
 
-				if arg_123_1.var_.characterEffect1148ui_story then
+				if arg_123_1.var_.characterEffect1148ui_story and not isNil(var_126_0) then
 					arg_123_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_123_1.time_ >= var_126_1 + var_126_2 and arg_123_1.time_ < var_126_1 + var_126_2 + arg_126_0 and arg_123_1.var_.characterEffect1148ui_story then
+			if arg_123_1.time_ >= var_126_1 + var_126_2 and arg_123_1.time_ < var_126_1 + var_126_2 + arg_126_0 and not isNil(var_126_0) and arg_123_1.var_.characterEffect1148ui_story then
 				arg_123_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -4705,16 +4755,16 @@
 			local var_130_0 = arg_127_1.actors_["1148ui_story"]
 			local var_130_1 = 0
 
-			if var_130_1 < arg_127_1.time_ and arg_127_1.time_ <= var_130_1 + arg_130_0 and arg_127_1.var_.characterEffect1148ui_story == nil then
+			if var_130_1 < arg_127_1.time_ and arg_127_1.time_ <= var_130_1 + arg_130_0 and not isNil(var_130_0) and arg_127_1.var_.characterEffect1148ui_story == nil then
 				arg_127_1.var_.characterEffect1148ui_story = var_130_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_130_2 = 0.2
 
-			if var_130_1 <= arg_127_1.time_ and arg_127_1.time_ < var_130_1 + var_130_2 then
+			if var_130_1 <= arg_127_1.time_ and arg_127_1.time_ < var_130_1 + var_130_2 and not isNil(var_130_0) then
 				local var_130_3 = (arg_127_1.time_ - var_130_1) / var_130_2
 
-				if arg_127_1.var_.characterEffect1148ui_story then
+				if arg_127_1.var_.characterEffect1148ui_story and not isNil(var_130_0) then
 					local var_130_4 = Mathf.Lerp(0, 0.5, var_130_3)
 
 					arg_127_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -4722,7 +4772,7 @@
 				end
 			end
 
-			if arg_127_1.time_ >= var_130_1 + var_130_2 and arg_127_1.time_ < var_130_1 + var_130_2 + arg_130_0 and arg_127_1.var_.characterEffect1148ui_story then
+			if arg_127_1.time_ >= var_130_1 + var_130_2 and arg_127_1.time_ < var_130_1 + var_130_2 + arg_130_0 and not isNil(var_130_0) and arg_127_1.var_.characterEffect1148ui_story then
 				local var_130_5 = 0.5
 
 				arg_127_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -4755,8 +4805,15 @@
 				arg_127_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_127_1:RecordName(arg_127_1.leftNameTxt_.text)
-				SetActive(arg_127_1.iconTrs_.gameObject, false)
+				SetActive(arg_127_1.iconTrs_.gameObject, true)
+				arg_127_1.iconController_:SetSelectedState("hero")
+
+				arg_127_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_127_1.callingController_:SetSelectedState("normal")
+
+				arg_127_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_127_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_130_10 = arg_127_1:GetWordFromCfg(114803031)
 				local var_130_11 = arg_127_1:FormatText(var_130_10.content)
@@ -4838,21 +4895,21 @@
 			local var_134_0 = arg_131_1.actors_["1148ui_story"]
 			local var_134_1 = 0
 
-			if var_134_1 < arg_131_1.time_ and arg_131_1.time_ <= var_134_1 + arg_134_0 and arg_131_1.var_.characterEffect1148ui_story == nil then
+			if var_134_1 < arg_131_1.time_ and arg_131_1.time_ <= var_134_1 + arg_134_0 and not isNil(var_134_0) and arg_131_1.var_.characterEffect1148ui_story == nil then
 				arg_131_1.var_.characterEffect1148ui_story = var_134_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_134_2 = 0.2
 
-			if var_134_1 <= arg_131_1.time_ and arg_131_1.time_ < var_134_1 + var_134_2 then
+			if var_134_1 <= arg_131_1.time_ and arg_131_1.time_ < var_134_1 + var_134_2 and not isNil(var_134_0) then
 				local var_134_3 = (arg_131_1.time_ - var_134_1) / var_134_2
 
-				if arg_131_1.var_.characterEffect1148ui_story then
+				if arg_131_1.var_.characterEffect1148ui_story and not isNil(var_134_0) then
 					arg_131_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_131_1.time_ >= var_134_1 + var_134_2 and arg_131_1.time_ < var_134_1 + var_134_2 + arg_134_0 and arg_131_1.var_.characterEffect1148ui_story then
+			if arg_131_1.time_ >= var_134_1 + var_134_2 and arg_131_1.time_ < var_134_1 + var_134_2 + arg_134_0 and not isNil(var_134_0) and arg_131_1.var_.characterEffect1148ui_story then
 				arg_131_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -4979,16 +5036,16 @@
 			local var_138_0 = arg_135_1.actors_["1148ui_story"]
 			local var_138_1 = 0
 
-			if var_138_1 < arg_135_1.time_ and arg_135_1.time_ <= var_138_1 + arg_138_0 and arg_135_1.var_.characterEffect1148ui_story == nil then
+			if var_138_1 < arg_135_1.time_ and arg_135_1.time_ <= var_138_1 + arg_138_0 and not isNil(var_138_0) and arg_135_1.var_.characterEffect1148ui_story == nil then
 				arg_135_1.var_.characterEffect1148ui_story = var_138_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_138_2 = 0.2
 
-			if var_138_1 <= arg_135_1.time_ and arg_135_1.time_ < var_138_1 + var_138_2 then
+			if var_138_1 <= arg_135_1.time_ and arg_135_1.time_ < var_138_1 + var_138_2 and not isNil(var_138_0) then
 				local var_138_3 = (arg_135_1.time_ - var_138_1) / var_138_2
 
-				if arg_135_1.var_.characterEffect1148ui_story then
+				if arg_135_1.var_.characterEffect1148ui_story and not isNil(var_138_0) then
 					local var_138_4 = Mathf.Lerp(0, 0.5, var_138_3)
 
 					arg_135_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -4996,7 +5053,7 @@
 				end
 			end
 
-			if arg_135_1.time_ >= var_138_1 + var_138_2 and arg_135_1.time_ < var_138_1 + var_138_2 + arg_138_0 and arg_135_1.var_.characterEffect1148ui_story then
+			if arg_135_1.time_ >= var_138_1 + var_138_2 and arg_135_1.time_ < var_138_1 + var_138_2 + arg_138_0 and not isNil(var_138_0) and arg_135_1.var_.characterEffect1148ui_story then
 				local var_138_5 = 0.5
 
 				arg_135_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -5029,8 +5086,15 @@
 				arg_135_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_135_1:RecordName(arg_135_1.leftNameTxt_.text)
-				SetActive(arg_135_1.iconTrs_.gameObject, false)
+				SetActive(arg_135_1.iconTrs_.gameObject, true)
+				arg_135_1.iconController_:SetSelectedState("hero")
+
+				arg_135_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_135_1.callingController_:SetSelectedState("normal")
+
+				arg_135_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_135_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_138_10 = arg_135_1:GetWordFromCfg(114803033)
 				local var_138_11 = arg_135_1:FormatText(var_138_10.content)
@@ -5112,21 +5176,21 @@
 			local var_142_0 = arg_139_1.actors_["1148ui_story"]
 			local var_142_1 = 0
 
-			if var_142_1 < arg_139_1.time_ and arg_139_1.time_ <= var_142_1 + arg_142_0 and arg_139_1.var_.characterEffect1148ui_story == nil then
+			if var_142_1 < arg_139_1.time_ and arg_139_1.time_ <= var_142_1 + arg_142_0 and not isNil(var_142_0) and arg_139_1.var_.characterEffect1148ui_story == nil then
 				arg_139_1.var_.characterEffect1148ui_story = var_142_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_142_2 = 0.2
 
-			if var_142_1 <= arg_139_1.time_ and arg_139_1.time_ < var_142_1 + var_142_2 then
+			if var_142_1 <= arg_139_1.time_ and arg_139_1.time_ < var_142_1 + var_142_2 and not isNil(var_142_0) then
 				local var_142_3 = (arg_139_1.time_ - var_142_1) / var_142_2
 
-				if arg_139_1.var_.characterEffect1148ui_story then
+				if arg_139_1.var_.characterEffect1148ui_story and not isNil(var_142_0) then
 					arg_139_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_139_1.time_ >= var_142_1 + var_142_2 and arg_139_1.time_ < var_142_1 + var_142_2 + arg_142_0 and arg_139_1.var_.characterEffect1148ui_story then
+			if arg_139_1.time_ >= var_142_1 + var_142_2 and arg_139_1.time_ < var_142_1 + var_142_2 + arg_142_0 and not isNil(var_142_0) and arg_139_1.var_.characterEffect1148ui_story then
 				arg_139_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -5379,16 +5443,16 @@
 			local var_150_0 = arg_147_1.actors_["1148ui_story"]
 			local var_150_1 = 0
 
-			if var_150_1 < arg_147_1.time_ and arg_147_1.time_ <= var_150_1 + arg_150_0 and arg_147_1.var_.characterEffect1148ui_story == nil then
+			if var_150_1 < arg_147_1.time_ and arg_147_1.time_ <= var_150_1 + arg_150_0 and not isNil(var_150_0) and arg_147_1.var_.characterEffect1148ui_story == nil then
 				arg_147_1.var_.characterEffect1148ui_story = var_150_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_150_2 = 0.2
 
-			if var_150_1 <= arg_147_1.time_ and arg_147_1.time_ < var_150_1 + var_150_2 then
+			if var_150_1 <= arg_147_1.time_ and arg_147_1.time_ < var_150_1 + var_150_2 and not isNil(var_150_0) then
 				local var_150_3 = (arg_147_1.time_ - var_150_1) / var_150_2
 
-				if arg_147_1.var_.characterEffect1148ui_story then
+				if arg_147_1.var_.characterEffect1148ui_story and not isNil(var_150_0) then
 					local var_150_4 = Mathf.Lerp(0, 0.5, var_150_3)
 
 					arg_147_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -5396,7 +5460,7 @@
 				end
 			end
 
-			if arg_147_1.time_ >= var_150_1 + var_150_2 and arg_147_1.time_ < var_150_1 + var_150_2 + arg_150_0 and arg_147_1.var_.characterEffect1148ui_story then
+			if arg_147_1.time_ >= var_150_1 + var_150_2 and arg_147_1.time_ < var_150_1 + var_150_2 + arg_150_0 and not isNil(var_150_0) and arg_147_1.var_.characterEffect1148ui_story then
 				local var_150_5 = 0.5
 
 				arg_147_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -5429,8 +5493,15 @@
 				arg_147_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_147_1:RecordName(arg_147_1.leftNameTxt_.text)
-				SetActive(arg_147_1.iconTrs_.gameObject, false)
+				SetActive(arg_147_1.iconTrs_.gameObject, true)
+				arg_147_1.iconController_:SetSelectedState("hero")
+
+				arg_147_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_147_1.callingController_:SetSelectedState("normal")
+
+				arg_147_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_147_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_150_10 = arg_147_1:GetWordFromCfg(114803036)
 				local var_150_11 = arg_147_1:FormatText(var_150_10.content)
@@ -5512,21 +5583,21 @@
 			local var_154_0 = arg_151_1.actors_["1148ui_story"]
 			local var_154_1 = 0
 
-			if var_154_1 < arg_151_1.time_ and arg_151_1.time_ <= var_154_1 + arg_154_0 and arg_151_1.var_.characterEffect1148ui_story == nil then
+			if var_154_1 < arg_151_1.time_ and arg_151_1.time_ <= var_154_1 + arg_154_0 and not isNil(var_154_0) and arg_151_1.var_.characterEffect1148ui_story == nil then
 				arg_151_1.var_.characterEffect1148ui_story = var_154_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_154_2 = 0.2
 
-			if var_154_1 <= arg_151_1.time_ and arg_151_1.time_ < var_154_1 + var_154_2 then
+			if var_154_1 <= arg_151_1.time_ and arg_151_1.time_ < var_154_1 + var_154_2 and not isNil(var_154_0) then
 				local var_154_3 = (arg_151_1.time_ - var_154_1) / var_154_2
 
-				if arg_151_1.var_.characterEffect1148ui_story then
+				if arg_151_1.var_.characterEffect1148ui_story and not isNil(var_154_0) then
 					arg_151_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_151_1.time_ >= var_154_1 + var_154_2 and arg_151_1.time_ < var_154_1 + var_154_2 + arg_154_0 and arg_151_1.var_.characterEffect1148ui_story then
+			if arg_151_1.time_ >= var_154_1 + var_154_2 and arg_151_1.time_ < var_154_1 + var_154_2 + arg_154_0 and not isNil(var_154_0) and arg_151_1.var_.characterEffect1148ui_story then
 				arg_151_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -5779,16 +5850,16 @@
 			local var_162_0 = arg_159_1.actors_["1148ui_story"]
 			local var_162_1 = 0
 
-			if var_162_1 < arg_159_1.time_ and arg_159_1.time_ <= var_162_1 + arg_162_0 and arg_159_1.var_.characterEffect1148ui_story == nil then
+			if var_162_1 < arg_159_1.time_ and arg_159_1.time_ <= var_162_1 + arg_162_0 and not isNil(var_162_0) and arg_159_1.var_.characterEffect1148ui_story == nil then
 				arg_159_1.var_.characterEffect1148ui_story = var_162_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_162_2 = 0.2
 
-			if var_162_1 <= arg_159_1.time_ and arg_159_1.time_ < var_162_1 + var_162_2 then
+			if var_162_1 <= arg_159_1.time_ and arg_159_1.time_ < var_162_1 + var_162_2 and not isNil(var_162_0) then
 				local var_162_3 = (arg_159_1.time_ - var_162_1) / var_162_2
 
-				if arg_159_1.var_.characterEffect1148ui_story then
+				if arg_159_1.var_.characterEffect1148ui_story and not isNil(var_162_0) then
 					local var_162_4 = Mathf.Lerp(0, 0.5, var_162_3)
 
 					arg_159_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -5796,7 +5867,7 @@
 				end
 			end
 
-			if arg_159_1.time_ >= var_162_1 + var_162_2 and arg_159_1.time_ < var_162_1 + var_162_2 + arg_162_0 and arg_159_1.var_.characterEffect1148ui_story then
+			if arg_159_1.time_ >= var_162_1 + var_162_2 and arg_159_1.time_ < var_162_1 + var_162_2 + arg_162_0 and not isNil(var_162_0) and arg_159_1.var_.characterEffect1148ui_story then
 				local var_162_5 = 0.5
 
 				arg_159_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -5829,8 +5900,15 @@
 				arg_159_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_159_1:RecordName(arg_159_1.leftNameTxt_.text)
-				SetActive(arg_159_1.iconTrs_.gameObject, false)
+				SetActive(arg_159_1.iconTrs_.gameObject, true)
+				arg_159_1.iconController_:SetSelectedState("hero")
+
+				arg_159_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_159_1.callingController_:SetSelectedState("normal")
+
+				arg_159_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_159_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_162_10 = arg_159_1:GetWordFromCfg(114803039)
 				local var_162_11 = arg_159_1:FormatText(var_162_10.content)
@@ -5912,21 +5990,21 @@
 			local var_166_0 = arg_163_1.actors_["1148ui_story"]
 			local var_166_1 = 0
 
-			if var_166_1 < arg_163_1.time_ and arg_163_1.time_ <= var_166_1 + arg_166_0 and arg_163_1.var_.characterEffect1148ui_story == nil then
+			if var_166_1 < arg_163_1.time_ and arg_163_1.time_ <= var_166_1 + arg_166_0 and not isNil(var_166_0) and arg_163_1.var_.characterEffect1148ui_story == nil then
 				arg_163_1.var_.characterEffect1148ui_story = var_166_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_166_2 = 0.2
 
-			if var_166_1 <= arg_163_1.time_ and arg_163_1.time_ < var_166_1 + var_166_2 then
+			if var_166_1 <= arg_163_1.time_ and arg_163_1.time_ < var_166_1 + var_166_2 and not isNil(var_166_0) then
 				local var_166_3 = (arg_163_1.time_ - var_166_1) / var_166_2
 
-				if arg_163_1.var_.characterEffect1148ui_story then
+				if arg_163_1.var_.characterEffect1148ui_story and not isNil(var_166_0) then
 					arg_163_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_163_1.time_ >= var_166_1 + var_166_2 and arg_163_1.time_ < var_166_1 + var_166_2 + arg_166_0 and arg_163_1.var_.characterEffect1148ui_story then
+			if arg_163_1.time_ >= var_166_1 + var_166_2 and arg_163_1.time_ < var_166_1 + var_166_2 + arg_166_0 and not isNil(var_166_0) and arg_163_1.var_.characterEffect1148ui_story then
 				arg_163_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -6235,16 +6313,16 @@
 			local var_178_0 = arg_175_1.actors_["1148ui_story"]
 			local var_178_1 = 0
 
-			if var_178_1 < arg_175_1.time_ and arg_175_1.time_ <= var_178_1 + arg_178_0 and arg_175_1.var_.characterEffect1148ui_story == nil then
+			if var_178_1 < arg_175_1.time_ and arg_175_1.time_ <= var_178_1 + arg_178_0 and not isNil(var_178_0) and arg_175_1.var_.characterEffect1148ui_story == nil then
 				arg_175_1.var_.characterEffect1148ui_story = var_178_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_178_2 = 0.2
 
-			if var_178_1 <= arg_175_1.time_ and arg_175_1.time_ < var_178_1 + var_178_2 then
+			if var_178_1 <= arg_175_1.time_ and arg_175_1.time_ < var_178_1 + var_178_2 and not isNil(var_178_0) then
 				local var_178_3 = (arg_175_1.time_ - var_178_1) / var_178_2
 
-				if arg_175_1.var_.characterEffect1148ui_story then
+				if arg_175_1.var_.characterEffect1148ui_story and not isNil(var_178_0) then
 					local var_178_4 = Mathf.Lerp(0, 0.5, var_178_3)
 
 					arg_175_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -6252,7 +6330,7 @@
 				end
 			end
 
-			if arg_175_1.time_ >= var_178_1 + var_178_2 and arg_175_1.time_ < var_178_1 + var_178_2 + arg_178_0 and arg_175_1.var_.characterEffect1148ui_story then
+			if arg_175_1.time_ >= var_178_1 + var_178_2 and arg_175_1.time_ < var_178_1 + var_178_2 + arg_178_0 and not isNil(var_178_0) and arg_175_1.var_.characterEffect1148ui_story then
 				local var_178_5 = 0.5
 
 				arg_175_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -6279,8 +6357,15 @@
 				arg_175_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_175_1:RecordName(arg_175_1.leftNameTxt_.text)
-				SetActive(arg_175_1.iconTrs_.gameObject, false)
+				SetActive(arg_175_1.iconTrs_.gameObject, true)
+				arg_175_1.iconController_:SetSelectedState("hero")
+
+				arg_175_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_175_1.callingController_:SetSelectedState("normal")
+
+				arg_175_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_175_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_178_9 = arg_175_1:GetWordFromCfg(114803043)
 				local var_178_10 = arg_175_1:FormatText(var_178_9.content)
@@ -6362,21 +6447,21 @@
 			local var_182_0 = arg_179_1.actors_["1148ui_story"]
 			local var_182_1 = 0
 
-			if var_182_1 < arg_179_1.time_ and arg_179_1.time_ <= var_182_1 + arg_182_0 and arg_179_1.var_.characterEffect1148ui_story == nil then
+			if var_182_1 < arg_179_1.time_ and arg_179_1.time_ <= var_182_1 + arg_182_0 and not isNil(var_182_0) and arg_179_1.var_.characterEffect1148ui_story == nil then
 				arg_179_1.var_.characterEffect1148ui_story = var_182_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_182_2 = 0.2
 
-			if var_182_1 <= arg_179_1.time_ and arg_179_1.time_ < var_182_1 + var_182_2 then
+			if var_182_1 <= arg_179_1.time_ and arg_179_1.time_ < var_182_1 + var_182_2 and not isNil(var_182_0) then
 				local var_182_3 = (arg_179_1.time_ - var_182_1) / var_182_2
 
-				if arg_179_1.var_.characterEffect1148ui_story then
+				if arg_179_1.var_.characterEffect1148ui_story and not isNil(var_182_0) then
 					arg_179_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_179_1.time_ >= var_182_1 + var_182_2 and arg_179_1.time_ < var_182_1 + var_182_2 + arg_182_0 and arg_179_1.var_.characterEffect1148ui_story then
+			if arg_179_1.time_ >= var_182_1 + var_182_2 and arg_179_1.time_ < var_182_1 + var_182_2 + arg_182_0 and not isNil(var_182_0) and arg_179_1.var_.characterEffect1148ui_story then
 				arg_179_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -6635,16 +6720,16 @@
 			local var_190_0 = arg_187_1.actors_["1148ui_story"]
 			local var_190_1 = 0
 
-			if var_190_1 < arg_187_1.time_ and arg_187_1.time_ <= var_190_1 + arg_190_0 and arg_187_1.var_.characterEffect1148ui_story == nil then
+			if var_190_1 < arg_187_1.time_ and arg_187_1.time_ <= var_190_1 + arg_190_0 and not isNil(var_190_0) and arg_187_1.var_.characterEffect1148ui_story == nil then
 				arg_187_1.var_.characterEffect1148ui_story = var_190_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_190_2 = 0.2
 
-			if var_190_1 <= arg_187_1.time_ and arg_187_1.time_ < var_190_1 + var_190_2 then
+			if var_190_1 <= arg_187_1.time_ and arg_187_1.time_ < var_190_1 + var_190_2 and not isNil(var_190_0) then
 				local var_190_3 = (arg_187_1.time_ - var_190_1) / var_190_2
 
-				if arg_187_1.var_.characterEffect1148ui_story then
+				if arg_187_1.var_.characterEffect1148ui_story and not isNil(var_190_0) then
 					local var_190_4 = Mathf.Lerp(0, 0.5, var_190_3)
 
 					arg_187_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -6652,7 +6737,7 @@
 				end
 			end
 
-			if arg_187_1.time_ >= var_190_1 + var_190_2 and arg_187_1.time_ < var_190_1 + var_190_2 + arg_190_0 and arg_187_1.var_.characterEffect1148ui_story then
+			if arg_187_1.time_ >= var_190_1 + var_190_2 and arg_187_1.time_ < var_190_1 + var_190_2 + arg_190_0 and not isNil(var_190_0) and arg_187_1.var_.characterEffect1148ui_story then
 				local var_190_5 = 0.5
 
 				arg_187_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -6685,8 +6770,15 @@
 				arg_187_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_187_1:RecordName(arg_187_1.leftNameTxt_.text)
-				SetActive(arg_187_1.iconTrs_.gameObject, false)
+				SetActive(arg_187_1.iconTrs_.gameObject, true)
+				arg_187_1.iconController_:SetSelectedState("hero")
+
+				arg_187_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_187_1.callingController_:SetSelectedState("normal")
+
+				arg_187_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_187_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_190_10 = arg_187_1:GetWordFromCfg(114803046)
 				local var_190_11 = arg_187_1:FormatText(var_190_10.content)
@@ -6768,21 +6860,21 @@
 			local var_194_0 = arg_191_1.actors_["1148ui_story"]
 			local var_194_1 = 0
 
-			if var_194_1 < arg_191_1.time_ and arg_191_1.time_ <= var_194_1 + arg_194_0 and arg_191_1.var_.characterEffect1148ui_story == nil then
+			if var_194_1 < arg_191_1.time_ and arg_191_1.time_ <= var_194_1 + arg_194_0 and not isNil(var_194_0) and arg_191_1.var_.characterEffect1148ui_story == nil then
 				arg_191_1.var_.characterEffect1148ui_story = var_194_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_194_2 = 0.2
 
-			if var_194_1 <= arg_191_1.time_ and arg_191_1.time_ < var_194_1 + var_194_2 then
+			if var_194_1 <= arg_191_1.time_ and arg_191_1.time_ < var_194_1 + var_194_2 and not isNil(var_194_0) then
 				local var_194_3 = (arg_191_1.time_ - var_194_1) / var_194_2
 
-				if arg_191_1.var_.characterEffect1148ui_story then
+				if arg_191_1.var_.characterEffect1148ui_story and not isNil(var_194_0) then
 					arg_191_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_191_1.time_ >= var_194_1 + var_194_2 and arg_191_1.time_ < var_194_1 + var_194_2 + arg_194_0 and arg_191_1.var_.characterEffect1148ui_story then
+			if arg_191_1.time_ >= var_194_1 + var_194_2 and arg_191_1.time_ < var_194_1 + var_194_2 + arg_194_0 and not isNil(var_194_0) and arg_191_1.var_.characterEffect1148ui_story then
 				arg_191_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -7320,21 +7412,21 @@
 			local var_208_10 = arg_205_1.actors_["1148ui_story"]
 			local var_208_11 = 0.0166666666666667
 
-			if var_208_11 < arg_205_1.time_ and arg_205_1.time_ <= var_208_11 + arg_208_0 and arg_205_1.var_.characterEffect1148ui_story == nil then
+			if var_208_11 < arg_205_1.time_ and arg_205_1.time_ <= var_208_11 + arg_208_0 and not isNil(var_208_10) and arg_205_1.var_.characterEffect1148ui_story == nil then
 				arg_205_1.var_.characterEffect1148ui_story = var_208_10:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_208_12 = 0.2
 
-			if var_208_11 <= arg_205_1.time_ and arg_205_1.time_ < var_208_11 + var_208_12 then
+			if var_208_11 <= arg_205_1.time_ and arg_205_1.time_ < var_208_11 + var_208_12 and not isNil(var_208_10) then
 				local var_208_13 = (arg_205_1.time_ - var_208_11) / var_208_12
 
-				if arg_205_1.var_.characterEffect1148ui_story then
+				if arg_205_1.var_.characterEffect1148ui_story and not isNil(var_208_10) then
 					arg_205_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_205_1.time_ >= var_208_11 + var_208_12 and arg_205_1.time_ < var_208_11 + var_208_12 + arg_208_0 and arg_205_1.var_.characterEffect1148ui_story then
+			if arg_205_1.time_ >= var_208_11 + var_208_12 and arg_205_1.time_ < var_208_11 + var_208_12 + arg_208_0 and not isNil(var_208_10) and arg_205_1.var_.characterEffect1148ui_story then
 				arg_205_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -7461,16 +7553,16 @@
 			local var_212_0 = arg_209_1.actors_["1148ui_story"]
 			local var_212_1 = 0
 
-			if var_212_1 < arg_209_1.time_ and arg_209_1.time_ <= var_212_1 + arg_212_0 and arg_209_1.var_.characterEffect1148ui_story == nil then
+			if var_212_1 < arg_209_1.time_ and arg_209_1.time_ <= var_212_1 + arg_212_0 and not isNil(var_212_0) and arg_209_1.var_.characterEffect1148ui_story == nil then
 				arg_209_1.var_.characterEffect1148ui_story = var_212_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_212_2 = 0.2
 
-			if var_212_1 <= arg_209_1.time_ and arg_209_1.time_ < var_212_1 + var_212_2 then
+			if var_212_1 <= arg_209_1.time_ and arg_209_1.time_ < var_212_1 + var_212_2 and not isNil(var_212_0) then
 				local var_212_3 = (arg_209_1.time_ - var_212_1) / var_212_2
 
-				if arg_209_1.var_.characterEffect1148ui_story then
+				if arg_209_1.var_.characterEffect1148ui_story and not isNil(var_212_0) then
 					local var_212_4 = Mathf.Lerp(0, 0.5, var_212_3)
 
 					arg_209_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -7478,7 +7570,7 @@
 				end
 			end
 
-			if arg_209_1.time_ >= var_212_1 + var_212_2 and arg_209_1.time_ < var_212_1 + var_212_2 + arg_212_0 and arg_209_1.var_.characterEffect1148ui_story then
+			if arg_209_1.time_ >= var_212_1 + var_212_2 and arg_209_1.time_ < var_212_1 + var_212_2 + arg_212_0 and not isNil(var_212_0) and arg_209_1.var_.characterEffect1148ui_story then
 				local var_212_5 = 0.5
 
 				arg_209_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -7511,8 +7603,15 @@
 				arg_209_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_209_1:RecordName(arg_209_1.leftNameTxt_.text)
-				SetActive(arg_209_1.iconTrs_.gameObject, false)
+				SetActive(arg_209_1.iconTrs_.gameObject, true)
+				arg_209_1.iconController_:SetSelectedState("hero")
+
+				arg_209_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_209_1.callingController_:SetSelectedState("normal")
+
+				arg_209_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_209_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_212_10 = arg_209_1:GetWordFromCfg(114803051)
 				local var_212_11 = arg_209_1:FormatText(var_212_10.content)
@@ -7594,21 +7693,21 @@
 			local var_216_0 = arg_213_1.actors_["1148ui_story"]
 			local var_216_1 = 0
 
-			if var_216_1 < arg_213_1.time_ and arg_213_1.time_ <= var_216_1 + arg_216_0 and arg_213_1.var_.characterEffect1148ui_story == nil then
+			if var_216_1 < arg_213_1.time_ and arg_213_1.time_ <= var_216_1 + arg_216_0 and not isNil(var_216_0) and arg_213_1.var_.characterEffect1148ui_story == nil then
 				arg_213_1.var_.characterEffect1148ui_story = var_216_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_216_2 = 0.2
 
-			if var_216_1 <= arg_213_1.time_ and arg_213_1.time_ < var_216_1 + var_216_2 then
+			if var_216_1 <= arg_213_1.time_ and arg_213_1.time_ < var_216_1 + var_216_2 and not isNil(var_216_0) then
 				local var_216_3 = (arg_213_1.time_ - var_216_1) / var_216_2
 
-				if arg_213_1.var_.characterEffect1148ui_story then
+				if arg_213_1.var_.characterEffect1148ui_story and not isNil(var_216_0) then
 					arg_213_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_213_1.time_ >= var_216_1 + var_216_2 and arg_213_1.time_ < var_216_1 + var_216_2 + arg_216_0 and arg_213_1.var_.characterEffect1148ui_story then
+			if arg_213_1.time_ >= var_216_1 + var_216_2 and arg_213_1.time_ < var_216_1 + var_216_2 + arg_216_0 and not isNil(var_216_0) and arg_213_1.var_.characterEffect1148ui_story then
 				arg_213_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -7985,152 +8084,156 @@
 			local var_228_11 = "1027ui_story"
 
 			if arg_225_1.actors_[var_228_11] == nil then
-				local var_228_12 = Object.Instantiate(Asset.Load("Char/" .. var_228_11), arg_225_1.stage_.transform)
+				local var_228_12 = Asset.Load("Char/" .. "1027ui_story")
 
-				var_228_12.name = var_228_11
-				var_228_12.transform.localPosition = Vector3.New(0, 100, 0)
-				arg_225_1.actors_[var_228_11] = var_228_12
+				if not isNil(var_228_12) then
+					local var_228_13 = Object.Instantiate(Asset.Load("Char/" .. "1027ui_story"), arg_225_1.stage_.transform)
 
-				local var_228_13 = var_228_12:GetComponentInChildren(typeof(CharacterEffect))
+					var_228_13.name = var_228_11
+					var_228_13.transform.localPosition = Vector3.New(0, 100, 0)
+					arg_225_1.actors_[var_228_11] = var_228_13
 
-				var_228_13.enabled = true
+					local var_228_14 = var_228_13:GetComponentInChildren(typeof(CharacterEffect))
 
-				local var_228_14 = GameObjectTools.GetOrAddComponent(var_228_12, typeof(DynamicBoneHelper))
+					var_228_14.enabled = true
 
-				if var_228_14 then
-					var_228_14:EnableDynamicBone(false)
+					local var_228_15 = GameObjectTools.GetOrAddComponent(var_228_13, typeof(DynamicBoneHelper))
+
+					if var_228_15 then
+						var_228_15:EnableDynamicBone(false)
+					end
+
+					arg_225_1:ShowWeapon(var_228_14.transform, false)
+
+					arg_225_1.var_[var_228_11 .. "Animator"] = var_228_14.gameObject:GetComponent(typeof(UnityEngine.Animator))
+					arg_225_1.var_[var_228_11 .. "Animator"].applyRootMotion = true
+					arg_225_1.var_[var_228_11 .. "LipSync"] = var_228_14.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
 				end
-
-				arg_225_1:ShowWeapon(var_228_13.transform, false)
-
-				arg_225_1.var_[var_228_11 .. "Animator"] = var_228_13.gameObject:GetComponent(typeof(UnityEngine.Animator))
-				arg_225_1.var_[var_228_11 .. "Animator"].applyRootMotion = true
-				arg_225_1.var_[var_228_11 .. "LipSync"] = var_228_13.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
 			end
 
-			local var_228_15 = arg_225_1.actors_["1027ui_story"].transform
-			local var_228_16 = 0
+			local var_228_16 = arg_225_1.actors_["1027ui_story"].transform
+			local var_228_17 = 0
 
-			if var_228_16 < arg_225_1.time_ and arg_225_1.time_ <= var_228_16 + arg_228_0 then
-				arg_225_1.var_.moveOldPos1027ui_story = var_228_15.localPosition
+			if var_228_17 < arg_225_1.time_ and arg_225_1.time_ <= var_228_17 + arg_228_0 then
+				arg_225_1.var_.moveOldPos1027ui_story = var_228_16.localPosition
 
-				local var_228_17 = "1027ui_story"
+				local var_228_18 = "1027ui_story"
 
-				arg_225_1:ShowWeapon(arg_225_1.var_[var_228_17 .. "Animator"].transform, false)
+				arg_225_1:ShowWeapon(arg_225_1.var_[var_228_18 .. "Animator"].transform, false)
 			end
 
-			local var_228_18 = 0.001
+			local var_228_19 = 0.001
 
-			if var_228_16 <= arg_225_1.time_ and arg_225_1.time_ < var_228_16 + var_228_18 then
-				local var_228_19 = (arg_225_1.time_ - var_228_16) / var_228_18
-				local var_228_20 = Vector3.New(0.7, -0.81, -5.8)
+			if var_228_17 <= arg_225_1.time_ and arg_225_1.time_ < var_228_17 + var_228_19 then
+				local var_228_20 = (arg_225_1.time_ - var_228_17) / var_228_19
+				local var_228_21 = Vector3.New(0.7, -0.81, -5.8)
 
-				var_228_15.localPosition = Vector3.Lerp(arg_225_1.var_.moveOldPos1027ui_story, var_228_20, var_228_19)
+				var_228_16.localPosition = Vector3.Lerp(arg_225_1.var_.moveOldPos1027ui_story, var_228_21, var_228_20)
 
-				local var_228_21 = manager.ui.mainCamera.transform.position - var_228_15.position
+				local var_228_22 = manager.ui.mainCamera.transform.position - var_228_16.position
 
-				var_228_15.forward = Vector3.New(var_228_21.x, var_228_21.y, var_228_21.z)
+				var_228_16.forward = Vector3.New(var_228_22.x, var_228_22.y, var_228_22.z)
 
-				local var_228_22 = var_228_15.localEulerAngles
+				local var_228_23 = var_228_16.localEulerAngles
 
-				var_228_22.z = 0
-				var_228_22.x = 0
-				var_228_15.localEulerAngles = var_228_22
+				var_228_23.z = 0
+				var_228_23.x = 0
+				var_228_16.localEulerAngles = var_228_23
 			end
 
-			if arg_225_1.time_ >= var_228_16 + var_228_18 and arg_225_1.time_ < var_228_16 + var_228_18 + arg_228_0 then
-				var_228_15.localPosition = Vector3.New(0.7, -0.81, -5.8)
+			if arg_225_1.time_ >= var_228_17 + var_228_19 and arg_225_1.time_ < var_228_17 + var_228_19 + arg_228_0 then
+				var_228_16.localPosition = Vector3.New(0.7, -0.81, -5.8)
 
-				local var_228_23 = manager.ui.mainCamera.transform.position - var_228_15.position
+				local var_228_24 = manager.ui.mainCamera.transform.position - var_228_16.position
 
-				var_228_15.forward = Vector3.New(var_228_23.x, var_228_23.y, var_228_23.z)
+				var_228_16.forward = Vector3.New(var_228_24.x, var_228_24.y, var_228_24.z)
 
-				local var_228_24 = var_228_15.localEulerAngles
+				local var_228_25 = var_228_16.localEulerAngles
 
-				var_228_24.z = 0
-				var_228_24.x = 0
-				var_228_15.localEulerAngles = var_228_24
+				var_228_25.z = 0
+				var_228_25.x = 0
+				var_228_16.localEulerAngles = var_228_25
 			end
 
-			local var_228_25 = 0.0166666666666667
+			local var_228_26 = 0.0166666666666667
 
-			if var_228_25 < arg_225_1.time_ and arg_225_1.time_ <= var_228_25 + arg_228_0 then
+			if var_228_26 < arg_225_1.time_ and arg_225_1.time_ <= var_228_26 + arg_228_0 then
 				arg_225_1:PlayTimeline("1027ui_story", "StoryTimeline/CharAction/1027/1027action/1027action5_1")
 			end
 
-			local var_228_26 = arg_225_1.actors_["1027ui_story"]
-			local var_228_27 = 0
+			local var_228_27 = arg_225_1.actors_["1027ui_story"]
+			local var_228_28 = 0
 
-			if var_228_27 < arg_225_1.time_ and arg_225_1.time_ <= var_228_27 + arg_228_0 and arg_225_1.var_.characterEffect1027ui_story == nil then
-				arg_225_1.var_.characterEffect1027ui_story = var_228_26:GetComponentInChildren(typeof(CharacterEffect))
+			if var_228_28 < arg_225_1.time_ and arg_225_1.time_ <= var_228_28 + arg_228_0 and not isNil(var_228_27) and arg_225_1.var_.characterEffect1027ui_story == nil then
+				arg_225_1.var_.characterEffect1027ui_story = var_228_27:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_228_28 = 0.2
+			local var_228_29 = 0.2
 
-			if var_228_27 <= arg_225_1.time_ and arg_225_1.time_ < var_228_27 + var_228_28 then
-				local var_228_29 = (arg_225_1.time_ - var_228_27) / var_228_28
+			if var_228_28 <= arg_225_1.time_ and arg_225_1.time_ < var_228_28 + var_228_29 and not isNil(var_228_27) then
+				local var_228_30 = (arg_225_1.time_ - var_228_28) / var_228_29
 
-				if arg_225_1.var_.characterEffect1027ui_story then
+				if arg_225_1.var_.characterEffect1027ui_story and not isNil(var_228_27) then
 					arg_225_1.var_.characterEffect1027ui_story.fillFlat = false
 				end
 			end
 
-			if arg_225_1.time_ >= var_228_27 + var_228_28 and arg_225_1.time_ < var_228_27 + var_228_28 + arg_228_0 and arg_225_1.var_.characterEffect1027ui_story then
+			if arg_225_1.time_ >= var_228_28 + var_228_29 and arg_225_1.time_ < var_228_28 + var_228_29 + arg_228_0 and not isNil(var_228_27) and arg_225_1.var_.characterEffect1027ui_story then
 				arg_225_1.var_.characterEffect1027ui_story.fillFlat = false
 			end
 
-			local var_228_30 = 0.0166666666666667
+			local var_228_31 = 0.0166666666666667
 
-			if var_228_30 < arg_225_1.time_ and arg_225_1.time_ <= var_228_30 + arg_228_0 then
+			if var_228_31 < arg_225_1.time_ and arg_225_1.time_ <= var_228_31 + arg_228_0 then
 				arg_225_1:PlayTimeline("1148ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface3201cva")
 			end
 
-			local var_228_31 = arg_225_1.actors_["1148ui_story"]
-			local var_228_32 = 0
+			local var_228_32 = arg_225_1.actors_["1148ui_story"]
+			local var_228_33 = 0
 
-			if var_228_32 < arg_225_1.time_ and arg_225_1.time_ <= var_228_32 + arg_228_0 and arg_225_1.var_.characterEffect1148ui_story == nil then
-				arg_225_1.var_.characterEffect1148ui_story = var_228_31:GetComponentInChildren(typeof(CharacterEffect))
+			if var_228_33 < arg_225_1.time_ and arg_225_1.time_ <= var_228_33 + arg_228_0 and not isNil(var_228_32) and arg_225_1.var_.characterEffect1148ui_story == nil then
+				arg_225_1.var_.characterEffect1148ui_story = var_228_32:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
-			local var_228_33 = 0.2
+			local var_228_34 = 0.2
 
-			if var_228_32 <= arg_225_1.time_ and arg_225_1.time_ < var_228_32 + var_228_33 then
-				local var_228_34 = (arg_225_1.time_ - var_228_32) / var_228_33
+			if var_228_33 <= arg_225_1.time_ and arg_225_1.time_ < var_228_33 + var_228_34 and not isNil(var_228_32) then
+				local var_228_35 = (arg_225_1.time_ - var_228_33) / var_228_34
 
-				if arg_225_1.var_.characterEffect1148ui_story then
-					local var_228_35 = Mathf.Lerp(0, 0.5, var_228_34)
+				if arg_225_1.var_.characterEffect1148ui_story and not isNil(var_228_32) then
+					local var_228_36 = Mathf.Lerp(0, 0.5, var_228_35)
 
 					arg_225_1.var_.characterEffect1148ui_story.fillFlat = true
-					arg_225_1.var_.characterEffect1148ui_story.fillRatio = var_228_35
+					arg_225_1.var_.characterEffect1148ui_story.fillRatio = var_228_36
 				end
 			end
 
-			if arg_225_1.time_ >= var_228_32 + var_228_33 and arg_225_1.time_ < var_228_32 + var_228_33 + arg_228_0 and arg_225_1.var_.characterEffect1148ui_story then
-				local var_228_36 = 0.5
+			if arg_225_1.time_ >= var_228_33 + var_228_34 and arg_225_1.time_ < var_228_33 + var_228_34 + arg_228_0 and not isNil(var_228_32) and arg_225_1.var_.characterEffect1148ui_story then
+				local var_228_37 = 0.5
 
 				arg_225_1.var_.characterEffect1148ui_story.fillFlat = true
-				arg_225_1.var_.characterEffect1148ui_story.fillRatio = var_228_36
+				arg_225_1.var_.characterEffect1148ui_story.fillRatio = var_228_37
 			end
 
-			local var_228_37 = 0.0166666666666667
+			local var_228_38 = 0.0166666666666667
 
-			if var_228_37 < arg_225_1.time_ and arg_225_1.time_ <= var_228_37 + arg_228_0 then
+			if var_228_38 < arg_225_1.time_ and arg_225_1.time_ <= var_228_38 + arg_228_0 then
 				arg_225_1:PlayTimeline("1027ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface1102cva")
 			end
 
-			local var_228_38 = 0
-			local var_228_39 = 0.175
+			local var_228_39 = 0
+			local var_228_40 = 0.175
 
-			if var_228_38 < arg_225_1.time_ and arg_225_1.time_ <= var_228_38 + arg_228_0 then
+			if var_228_39 < arg_225_1.time_ and arg_225_1.time_ <= var_228_39 + arg_228_0 then
 				arg_225_1.talkMaxDuration = 0
 				arg_225_1.dialogCg_.alpha = 1
 
 				arg_225_1.dialog_:SetActive(true)
 				SetActive(arg_225_1.leftNameGo_, true)
 
-				local var_228_40 = arg_225_1:FormatText(StoryNameCfg[56].name)
+				local var_228_41 = arg_225_1:FormatText(StoryNameCfg[56].name)
 
-				arg_225_1.leftNameTxt_.text = var_228_40
+				arg_225_1.leftNameTxt_.text = var_228_41
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_225_1.leftNameTxt_.transform)
 
@@ -8141,43 +8244,43 @@
 				SetActive(arg_225_1.iconTrs_.gameObject, false)
 				arg_225_1.callingController_:SetSelectedState("normal")
 
-				local var_228_41 = arg_225_1:GetWordFromCfg(114803055)
-				local var_228_42 = arg_225_1:FormatText(var_228_41.content)
+				local var_228_42 = arg_225_1:GetWordFromCfg(114803055)
+				local var_228_43 = arg_225_1:FormatText(var_228_42.content)
 
-				arg_225_1.text_.text = var_228_42
+				arg_225_1.text_.text = var_228_43
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_225_1.text_)
 
-				local var_228_43 = 7
-				local var_228_44 = utf8.len(var_228_42)
-				local var_228_45 = var_228_43 <= 0 and var_228_39 or var_228_39 * (var_228_44 / var_228_43)
+				local var_228_44 = 7
+				local var_228_45 = utf8.len(var_228_43)
+				local var_228_46 = var_228_44 <= 0 and var_228_40 or var_228_40 * (var_228_45 / var_228_44)
 
-				if var_228_45 > 0 and var_228_39 < var_228_45 then
-					arg_225_1.talkMaxDuration = var_228_45
+				if var_228_46 > 0 and var_228_40 < var_228_46 then
+					arg_225_1.talkMaxDuration = var_228_46
 
-					if var_228_45 + var_228_38 > arg_225_1.duration_ then
-						arg_225_1.duration_ = var_228_45 + var_228_38
+					if var_228_46 + var_228_39 > arg_225_1.duration_ then
+						arg_225_1.duration_ = var_228_46 + var_228_39
 					end
 				end
 
-				arg_225_1.text_.text = var_228_42
+				arg_225_1.text_.text = var_228_43
 				arg_225_1.typewritter.percent = 0
 
 				arg_225_1.typewritter:SetDirty()
 				arg_225_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_side_old_114803", "114803055", "story_v_side_old_114803.awb") ~= 0 then
-					local var_228_46 = manager.audio:GetVoiceLength("story_v_side_old_114803", "114803055", "story_v_side_old_114803.awb") / 1000
+					local var_228_47 = manager.audio:GetVoiceLength("story_v_side_old_114803", "114803055", "story_v_side_old_114803.awb") / 1000
 
-					if var_228_46 + var_228_38 > arg_225_1.duration_ then
-						arg_225_1.duration_ = var_228_46 + var_228_38
+					if var_228_47 + var_228_39 > arg_225_1.duration_ then
+						arg_225_1.duration_ = var_228_47 + var_228_39
 					end
 
-					if var_228_41.prefab_name ~= "" and arg_225_1.actors_[var_228_41.prefab_name] ~= nil then
-						local var_228_47 = LuaForUtil.PlayVoiceWithCriLipsync(arg_225_1.actors_[var_228_41.prefab_name].transform, "story_v_side_old_114803", "114803055", "story_v_side_old_114803.awb")
+					if var_228_42.prefab_name ~= "" and arg_225_1.actors_[var_228_42.prefab_name] ~= nil then
+						local var_228_48 = LuaForUtil.PlayVoiceWithCriLipsync(arg_225_1.actors_[var_228_42.prefab_name].transform, "story_v_side_old_114803", "114803055", "story_v_side_old_114803.awb")
 
-						arg_225_1:RecordAudio("114803055", var_228_47)
-						arg_225_1:RecordAudio("114803055", var_228_47)
+						arg_225_1:RecordAudio("114803055", var_228_48)
+						arg_225_1:RecordAudio("114803055", var_228_48)
 					else
 						arg_225_1:AudioAction("play", "voice", "story_v_side_old_114803", "114803055", "story_v_side_old_114803.awb")
 					end
@@ -8188,15 +8291,15 @@
 				arg_225_1:RecordContent(arg_225_1.text_.text)
 			end
 
-			local var_228_48 = math.max(var_228_39, arg_225_1.talkMaxDuration)
+			local var_228_49 = math.max(var_228_40, arg_225_1.talkMaxDuration)
 
-			if var_228_38 <= arg_225_1.time_ and arg_225_1.time_ < var_228_38 + var_228_48 then
-				arg_225_1.typewritter.percent = (arg_225_1.time_ - var_228_38) / var_228_48
+			if var_228_39 <= arg_225_1.time_ and arg_225_1.time_ < var_228_39 + var_228_49 then
+				arg_225_1.typewritter.percent = (arg_225_1.time_ - var_228_39) / var_228_49
 
 				arg_225_1.typewritter:SetDirty()
 			end
 
-			if arg_225_1.time_ >= var_228_38 + var_228_48 and arg_225_1.time_ < var_228_38 + var_228_48 + arg_228_0 then
+			if arg_225_1.time_ >= var_228_39 + var_228_49 and arg_225_1.time_ < var_228_39 + var_228_49 + arg_228_0 then
 				arg_225_1.typewritter.percent = 1
 
 				arg_225_1.typewritter:SetDirty()
@@ -8235,16 +8338,16 @@
 			local var_232_1 = arg_229_1.actors_["1027ui_story"]
 			local var_232_2 = 0
 
-			if var_232_2 < arg_229_1.time_ and arg_229_1.time_ <= var_232_2 + arg_232_0 and arg_229_1.var_.characterEffect1027ui_story == nil then
+			if var_232_2 < arg_229_1.time_ and arg_229_1.time_ <= var_232_2 + arg_232_0 and not isNil(var_232_1) and arg_229_1.var_.characterEffect1027ui_story == nil then
 				arg_229_1.var_.characterEffect1027ui_story = var_232_1:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_232_3 = 0.2
 
-			if var_232_2 <= arg_229_1.time_ and arg_229_1.time_ < var_232_2 + var_232_3 then
+			if var_232_2 <= arg_229_1.time_ and arg_229_1.time_ < var_232_2 + var_232_3 and not isNil(var_232_1) then
 				local var_232_4 = (arg_229_1.time_ - var_232_2) / var_232_3
 
-				if arg_229_1.var_.characterEffect1027ui_story then
+				if arg_229_1.var_.characterEffect1027ui_story and not isNil(var_232_1) then
 					local var_232_5 = Mathf.Lerp(0, 0.5, var_232_4)
 
 					arg_229_1.var_.characterEffect1027ui_story.fillFlat = true
@@ -8252,7 +8355,7 @@
 				end
 			end
 
-			if arg_229_1.time_ >= var_232_2 + var_232_3 and arg_229_1.time_ < var_232_2 + var_232_3 + arg_232_0 and arg_229_1.var_.characterEffect1027ui_story then
+			if arg_229_1.time_ >= var_232_2 + var_232_3 and arg_229_1.time_ < var_232_2 + var_232_3 + arg_232_0 and not isNil(var_232_1) and arg_229_1.var_.characterEffect1027ui_story then
 				local var_232_6 = 0.5
 
 				arg_229_1.var_.characterEffect1027ui_story.fillFlat = true
@@ -8368,21 +8471,21 @@
 			local var_236_0 = arg_233_1.actors_["1027ui_story"]
 			local var_236_1 = 0
 
-			if var_236_1 < arg_233_1.time_ and arg_233_1.time_ <= var_236_1 + arg_236_0 and arg_233_1.var_.characterEffect1027ui_story == nil then
+			if var_236_1 < arg_233_1.time_ and arg_233_1.time_ <= var_236_1 + arg_236_0 and not isNil(var_236_0) and arg_233_1.var_.characterEffect1027ui_story == nil then
 				arg_233_1.var_.characterEffect1027ui_story = var_236_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_236_2 = 0.2
 
-			if var_236_1 <= arg_233_1.time_ and arg_233_1.time_ < var_236_1 + var_236_2 then
+			if var_236_1 <= arg_233_1.time_ and arg_233_1.time_ < var_236_1 + var_236_2 and not isNil(var_236_0) then
 				local var_236_3 = (arg_233_1.time_ - var_236_1) / var_236_2
 
-				if arg_233_1.var_.characterEffect1027ui_story then
+				if arg_233_1.var_.characterEffect1027ui_story and not isNil(var_236_0) then
 					arg_233_1.var_.characterEffect1027ui_story.fillFlat = false
 				end
 			end
 
-			if arg_233_1.time_ >= var_236_1 + var_236_2 and arg_233_1.time_ < var_236_1 + var_236_2 + arg_236_0 and arg_233_1.var_.characterEffect1027ui_story then
+			if arg_233_1.time_ >= var_236_1 + var_236_2 and arg_233_1.time_ < var_236_1 + var_236_2 + arg_236_0 and not isNil(var_236_0) and arg_233_1.var_.characterEffect1027ui_story then
 				arg_233_1.var_.characterEffect1027ui_story.fillFlat = false
 			end
 
@@ -8515,16 +8618,16 @@
 			local var_240_0 = arg_237_1.actors_["1027ui_story"]
 			local var_240_1 = 0
 
-			if var_240_1 < arg_237_1.time_ and arg_237_1.time_ <= var_240_1 + arg_240_0 and arg_237_1.var_.characterEffect1027ui_story == nil then
+			if var_240_1 < arg_237_1.time_ and arg_237_1.time_ <= var_240_1 + arg_240_0 and not isNil(var_240_0) and arg_237_1.var_.characterEffect1027ui_story == nil then
 				arg_237_1.var_.characterEffect1027ui_story = var_240_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_240_2 = 0.2
 
-			if var_240_1 <= arg_237_1.time_ and arg_237_1.time_ < var_240_1 + var_240_2 then
+			if var_240_1 <= arg_237_1.time_ and arg_237_1.time_ < var_240_1 + var_240_2 and not isNil(var_240_0) then
 				local var_240_3 = (arg_237_1.time_ - var_240_1) / var_240_2
 
-				if arg_237_1.var_.characterEffect1027ui_story then
+				if arg_237_1.var_.characterEffect1027ui_story and not isNil(var_240_0) then
 					local var_240_4 = Mathf.Lerp(0, 0.5, var_240_3)
 
 					arg_237_1.var_.characterEffect1027ui_story.fillFlat = true
@@ -8532,7 +8635,7 @@
 				end
 			end
 
-			if arg_237_1.time_ >= var_240_1 + var_240_2 and arg_237_1.time_ < var_240_1 + var_240_2 + arg_240_0 and arg_237_1.var_.characterEffect1027ui_story then
+			if arg_237_1.time_ >= var_240_1 + var_240_2 and arg_237_1.time_ < var_240_1 + var_240_2 + arg_240_0 and not isNil(var_240_0) and arg_237_1.var_.characterEffect1027ui_story then
 				local var_240_5 = 0.5
 
 				arg_237_1.var_.characterEffect1027ui_story.fillFlat = true
@@ -8658,21 +8761,21 @@
 			local var_244_0 = arg_241_1.actors_["1148ui_story"]
 			local var_244_1 = 0
 
-			if var_244_1 < arg_241_1.time_ and arg_241_1.time_ <= var_244_1 + arg_244_0 and arg_241_1.var_.characterEffect1148ui_story == nil then
+			if var_244_1 < arg_241_1.time_ and arg_241_1.time_ <= var_244_1 + arg_244_0 and not isNil(var_244_0) and arg_241_1.var_.characterEffect1148ui_story == nil then
 				arg_241_1.var_.characterEffect1148ui_story = var_244_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_244_2 = 0.2
 
-			if var_244_1 <= arg_241_1.time_ and arg_241_1.time_ < var_244_1 + var_244_2 then
+			if var_244_1 <= arg_241_1.time_ and arg_241_1.time_ < var_244_1 + var_244_2 and not isNil(var_244_0) then
 				local var_244_3 = (arg_241_1.time_ - var_244_1) / var_244_2
 
-				if arg_241_1.var_.characterEffect1148ui_story then
+				if arg_241_1.var_.characterEffect1148ui_story and not isNil(var_244_0) then
 					arg_241_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_241_1.time_ >= var_244_1 + var_244_2 and arg_241_1.time_ < var_244_1 + var_244_2 + arg_244_0 and arg_241_1.var_.characterEffect1148ui_story then
+			if arg_241_1.time_ >= var_244_1 + var_244_2 and arg_241_1.time_ < var_244_1 + var_244_2 + arg_244_0 and not isNil(var_244_0) and arg_241_1.var_.characterEffect1148ui_story then
 				arg_241_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -8955,21 +9058,21 @@
 			local var_252_0 = arg_249_1.actors_["1027ui_story"]
 			local var_252_1 = 0
 
-			if var_252_1 < arg_249_1.time_ and arg_249_1.time_ <= var_252_1 + arg_252_0 and arg_249_1.var_.characterEffect1027ui_story == nil then
+			if var_252_1 < arg_249_1.time_ and arg_249_1.time_ <= var_252_1 + arg_252_0 and not isNil(var_252_0) and arg_249_1.var_.characterEffect1027ui_story == nil then
 				arg_249_1.var_.characterEffect1027ui_story = var_252_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_252_2 = 0.2
 
-			if var_252_1 <= arg_249_1.time_ and arg_249_1.time_ < var_252_1 + var_252_2 then
+			if var_252_1 <= arg_249_1.time_ and arg_249_1.time_ < var_252_1 + var_252_2 and not isNil(var_252_0) then
 				local var_252_3 = (arg_249_1.time_ - var_252_1) / var_252_2
 
-				if arg_249_1.var_.characterEffect1027ui_story then
+				if arg_249_1.var_.characterEffect1027ui_story and not isNil(var_252_0) then
 					arg_249_1.var_.characterEffect1027ui_story.fillFlat = false
 				end
 			end
 
-			if arg_249_1.time_ >= var_252_1 + var_252_2 and arg_249_1.time_ < var_252_1 + var_252_2 + arg_252_0 and arg_249_1.var_.characterEffect1027ui_story then
+			if arg_249_1.time_ >= var_252_1 + var_252_2 and arg_249_1.time_ < var_252_1 + var_252_2 + arg_252_0 and not isNil(var_252_0) and arg_249_1.var_.characterEffect1027ui_story then
 				arg_249_1.var_.characterEffect1027ui_story.fillFlat = false
 			end
 
@@ -8982,16 +9085,16 @@
 			local var_252_5 = arg_249_1.actors_["1148ui_story"]
 			local var_252_6 = 0
 
-			if var_252_6 < arg_249_1.time_ and arg_249_1.time_ <= var_252_6 + arg_252_0 and arg_249_1.var_.characterEffect1148ui_story == nil then
+			if var_252_6 < arg_249_1.time_ and arg_249_1.time_ <= var_252_6 + arg_252_0 and not isNil(var_252_5) and arg_249_1.var_.characterEffect1148ui_story == nil then
 				arg_249_1.var_.characterEffect1148ui_story = var_252_5:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_252_7 = 0.2
 
-			if var_252_6 <= arg_249_1.time_ and arg_249_1.time_ < var_252_6 + var_252_7 then
+			if var_252_6 <= arg_249_1.time_ and arg_249_1.time_ < var_252_6 + var_252_7 and not isNil(var_252_5) then
 				local var_252_8 = (arg_249_1.time_ - var_252_6) / var_252_7
 
-				if arg_249_1.var_.characterEffect1148ui_story then
+				if arg_249_1.var_.characterEffect1148ui_story and not isNil(var_252_5) then
 					local var_252_9 = Mathf.Lerp(0, 0.5, var_252_8)
 
 					arg_249_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -8999,7 +9102,7 @@
 				end
 			end
 
-			if arg_249_1.time_ >= var_252_6 + var_252_7 and arg_249_1.time_ < var_252_6 + var_252_7 + arg_252_0 and arg_249_1.var_.characterEffect1148ui_story then
+			if arg_249_1.time_ >= var_252_6 + var_252_7 and arg_249_1.time_ < var_252_6 + var_252_7 + arg_252_0 and not isNil(var_252_5) and arg_249_1.var_.characterEffect1148ui_story then
 				local var_252_10 = 0.5
 
 				arg_249_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -9331,21 +9434,21 @@
 			local var_260_0 = arg_257_1.actors_["1148ui_story"]
 			local var_260_1 = 0
 
-			if var_260_1 < arg_257_1.time_ and arg_257_1.time_ <= var_260_1 + arg_260_0 and arg_257_1.var_.characterEffect1148ui_story == nil then
+			if var_260_1 < arg_257_1.time_ and arg_257_1.time_ <= var_260_1 + arg_260_0 and not isNil(var_260_0) and arg_257_1.var_.characterEffect1148ui_story == nil then
 				arg_257_1.var_.characterEffect1148ui_story = var_260_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_260_2 = 0.2
 
-			if var_260_1 <= arg_257_1.time_ and arg_257_1.time_ < var_260_1 + var_260_2 then
+			if var_260_1 <= arg_257_1.time_ and arg_257_1.time_ < var_260_1 + var_260_2 and not isNil(var_260_0) then
 				local var_260_3 = (arg_257_1.time_ - var_260_1) / var_260_2
 
-				if arg_257_1.var_.characterEffect1148ui_story then
+				if arg_257_1.var_.characterEffect1148ui_story and not isNil(var_260_0) then
 					arg_257_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_257_1.time_ >= var_260_1 + var_260_2 and arg_257_1.time_ < var_260_1 + var_260_2 + arg_260_0 and arg_257_1.var_.characterEffect1148ui_story then
+			if arg_257_1.time_ >= var_260_1 + var_260_2 and arg_257_1.time_ < var_260_1 + var_260_2 + arg_260_0 and not isNil(var_260_0) and arg_257_1.var_.characterEffect1148ui_story then
 				arg_257_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -9478,21 +9581,21 @@
 			local var_264_0 = arg_261_1.actors_["1080ui_story"]
 			local var_264_1 = 0
 
-			if var_264_1 < arg_261_1.time_ and arg_261_1.time_ <= var_264_1 + arg_264_0 and arg_261_1.var_.characterEffect1080ui_story == nil then
+			if var_264_1 < arg_261_1.time_ and arg_261_1.time_ <= var_264_1 + arg_264_0 and not isNil(var_264_0) and arg_261_1.var_.characterEffect1080ui_story == nil then
 				arg_261_1.var_.characterEffect1080ui_story = var_264_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_264_2 = 0.2
 
-			if var_264_1 <= arg_261_1.time_ and arg_261_1.time_ < var_264_1 + var_264_2 then
+			if var_264_1 <= arg_261_1.time_ and arg_261_1.time_ < var_264_1 + var_264_2 and not isNil(var_264_0) then
 				local var_264_3 = (arg_261_1.time_ - var_264_1) / var_264_2
 
-				if arg_261_1.var_.characterEffect1080ui_story then
+				if arg_261_1.var_.characterEffect1080ui_story and not isNil(var_264_0) then
 					arg_261_1.var_.characterEffect1080ui_story.fillFlat = false
 				end
 			end
 
-			if arg_261_1.time_ >= var_264_1 + var_264_2 and arg_261_1.time_ < var_264_1 + var_264_2 + arg_264_0 and arg_261_1.var_.characterEffect1080ui_story then
+			if arg_261_1.time_ >= var_264_1 + var_264_2 and arg_261_1.time_ < var_264_1 + var_264_2 + arg_264_0 and not isNil(var_264_0) and arg_261_1.var_.characterEffect1080ui_story then
 				arg_261_1.var_.characterEffect1080ui_story.fillFlat = false
 			end
 
@@ -9511,16 +9614,16 @@
 			local var_264_6 = arg_261_1.actors_["1148ui_story"]
 			local var_264_7 = 0
 
-			if var_264_7 < arg_261_1.time_ and arg_261_1.time_ <= var_264_7 + arg_264_0 and arg_261_1.var_.characterEffect1148ui_story == nil then
+			if var_264_7 < arg_261_1.time_ and arg_261_1.time_ <= var_264_7 + arg_264_0 and not isNil(var_264_6) and arg_261_1.var_.characterEffect1148ui_story == nil then
 				arg_261_1.var_.characterEffect1148ui_story = var_264_6:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_264_8 = 0.2
 
-			if var_264_7 <= arg_261_1.time_ and arg_261_1.time_ < var_264_7 + var_264_8 then
+			if var_264_7 <= arg_261_1.time_ and arg_261_1.time_ < var_264_7 + var_264_8 and not isNil(var_264_6) then
 				local var_264_9 = (arg_261_1.time_ - var_264_7) / var_264_8
 
-				if arg_261_1.var_.characterEffect1148ui_story then
+				if arg_261_1.var_.characterEffect1148ui_story and not isNil(var_264_6) then
 					local var_264_10 = Mathf.Lerp(0, 0.5, var_264_9)
 
 					arg_261_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -9528,7 +9631,7 @@
 				end
 			end
 
-			if arg_261_1.time_ >= var_264_7 + var_264_8 and arg_261_1.time_ < var_264_7 + var_264_8 + arg_264_0 and arg_261_1.var_.characterEffect1148ui_story then
+			if arg_261_1.time_ >= var_264_7 + var_264_8 and arg_261_1.time_ < var_264_7 + var_264_8 + arg_264_0 and not isNil(var_264_6) and arg_261_1.var_.characterEffect1148ui_story then
 				local var_264_11 = 0.5
 
 				arg_261_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -9664,21 +9767,21 @@
 			local var_268_1 = arg_265_1.actors_["1148ui_story"]
 			local var_268_2 = 0
 
-			if var_268_2 < arg_265_1.time_ and arg_265_1.time_ <= var_268_2 + arg_268_0 and arg_265_1.var_.characterEffect1148ui_story == nil then
+			if var_268_2 < arg_265_1.time_ and arg_265_1.time_ <= var_268_2 + arg_268_0 and not isNil(var_268_1) and arg_265_1.var_.characterEffect1148ui_story == nil then
 				arg_265_1.var_.characterEffect1148ui_story = var_268_1:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_268_3 = 0.2
 
-			if var_268_2 <= arg_265_1.time_ and arg_265_1.time_ < var_268_2 + var_268_3 then
+			if var_268_2 <= arg_265_1.time_ and arg_265_1.time_ < var_268_2 + var_268_3 and not isNil(var_268_1) then
 				local var_268_4 = (arg_265_1.time_ - var_268_2) / var_268_3
 
-				if arg_265_1.var_.characterEffect1148ui_story then
+				if arg_265_1.var_.characterEffect1148ui_story and not isNil(var_268_1) then
 					arg_265_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_265_1.time_ >= var_268_2 + var_268_3 and arg_265_1.time_ < var_268_2 + var_268_3 + arg_268_0 and arg_265_1.var_.characterEffect1148ui_story then
+			if arg_265_1.time_ >= var_268_2 + var_268_3 and arg_265_1.time_ < var_268_2 + var_268_3 + arg_268_0 and not isNil(var_268_1) and arg_265_1.var_.characterEffect1148ui_story then
 				arg_265_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -9697,16 +9800,16 @@
 			local var_268_7 = arg_265_1.actors_["1080ui_story"]
 			local var_268_8 = 0
 
-			if var_268_8 < arg_265_1.time_ and arg_265_1.time_ <= var_268_8 + arg_268_0 and arg_265_1.var_.characterEffect1080ui_story == nil then
+			if var_268_8 < arg_265_1.time_ and arg_265_1.time_ <= var_268_8 + arg_268_0 and not isNil(var_268_7) and arg_265_1.var_.characterEffect1080ui_story == nil then
 				arg_265_1.var_.characterEffect1080ui_story = var_268_7:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_268_9 = 0.2
 
-			if var_268_8 <= arg_265_1.time_ and arg_265_1.time_ < var_268_8 + var_268_9 then
+			if var_268_8 <= arg_265_1.time_ and arg_265_1.time_ < var_268_8 + var_268_9 and not isNil(var_268_7) then
 				local var_268_10 = (arg_265_1.time_ - var_268_8) / var_268_9
 
-				if arg_265_1.var_.characterEffect1080ui_story then
+				if arg_265_1.var_.characterEffect1080ui_story and not isNil(var_268_7) then
 					local var_268_11 = Mathf.Lerp(0, 0.5, var_268_10)
 
 					arg_265_1.var_.characterEffect1080ui_story.fillFlat = true
@@ -9714,7 +9817,7 @@
 				end
 			end
 
-			if arg_265_1.time_ >= var_268_8 + var_268_9 and arg_265_1.time_ < var_268_8 + var_268_9 + arg_268_0 and arg_265_1.var_.characterEffect1080ui_story then
+			if arg_265_1.time_ >= var_268_8 + var_268_9 and arg_265_1.time_ < var_268_8 + var_268_9 + arg_268_0 and not isNil(var_268_7) and arg_265_1.var_.characterEffect1080ui_story then
 				local var_268_12 = 0.5
 
 				arg_265_1.var_.characterEffect1080ui_story.fillFlat = true
@@ -9844,21 +9947,21 @@
 			local var_272_0 = arg_269_1.actors_["1080ui_story"]
 			local var_272_1 = 0
 
-			if var_272_1 < arg_269_1.time_ and arg_269_1.time_ <= var_272_1 + arg_272_0 and arg_269_1.var_.characterEffect1080ui_story == nil then
+			if var_272_1 < arg_269_1.time_ and arg_269_1.time_ <= var_272_1 + arg_272_0 and not isNil(var_272_0) and arg_269_1.var_.characterEffect1080ui_story == nil then
 				arg_269_1.var_.characterEffect1080ui_story = var_272_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_272_2 = 0.2
 
-			if var_272_1 <= arg_269_1.time_ and arg_269_1.time_ < var_272_1 + var_272_2 then
+			if var_272_1 <= arg_269_1.time_ and arg_269_1.time_ < var_272_1 + var_272_2 and not isNil(var_272_0) then
 				local var_272_3 = (arg_269_1.time_ - var_272_1) / var_272_2
 
-				if arg_269_1.var_.characterEffect1080ui_story then
+				if arg_269_1.var_.characterEffect1080ui_story and not isNil(var_272_0) then
 					arg_269_1.var_.characterEffect1080ui_story.fillFlat = false
 				end
 			end
 
-			if arg_269_1.time_ >= var_272_1 + var_272_2 and arg_269_1.time_ < var_272_1 + var_272_2 + arg_272_0 and arg_269_1.var_.characterEffect1080ui_story then
+			if arg_269_1.time_ >= var_272_1 + var_272_2 and arg_269_1.time_ < var_272_1 + var_272_2 + arg_272_0 and not isNil(var_272_0) and arg_269_1.var_.characterEffect1080ui_story then
 				arg_269_1.var_.characterEffect1080ui_story.fillFlat = false
 			end
 
@@ -9871,16 +9974,16 @@
 			local var_272_5 = arg_269_1.actors_["1148ui_story"]
 			local var_272_6 = 0
 
-			if var_272_6 < arg_269_1.time_ and arg_269_1.time_ <= var_272_6 + arg_272_0 and arg_269_1.var_.characterEffect1148ui_story == nil then
+			if var_272_6 < arg_269_1.time_ and arg_269_1.time_ <= var_272_6 + arg_272_0 and not isNil(var_272_5) and arg_269_1.var_.characterEffect1148ui_story == nil then
 				arg_269_1.var_.characterEffect1148ui_story = var_272_5:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_272_7 = 0.2
 
-			if var_272_6 <= arg_269_1.time_ and arg_269_1.time_ < var_272_6 + var_272_7 then
+			if var_272_6 <= arg_269_1.time_ and arg_269_1.time_ < var_272_6 + var_272_7 and not isNil(var_272_5) then
 				local var_272_8 = (arg_269_1.time_ - var_272_6) / var_272_7
 
-				if arg_269_1.var_.characterEffect1148ui_story then
+				if arg_269_1.var_.characterEffect1148ui_story and not isNil(var_272_5) then
 					local var_272_9 = Mathf.Lerp(0, 0.5, var_272_8)
 
 					arg_269_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -9888,7 +9991,7 @@
 				end
 			end
 
-			if arg_269_1.time_ >= var_272_6 + var_272_7 and arg_269_1.time_ < var_272_6 + var_272_7 + arg_272_0 and arg_269_1.var_.characterEffect1148ui_story then
+			if arg_269_1.time_ >= var_272_6 + var_272_7 and arg_269_1.time_ < var_272_6 + var_272_7 + arg_272_0 and not isNil(var_272_5) and arg_269_1.var_.characterEffect1148ui_story then
 				local var_272_10 = 0.5
 
 				arg_269_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -10030,21 +10133,21 @@
 			local var_276_0 = arg_273_1.actors_["1148ui_story"]
 			local var_276_1 = 0
 
-			if var_276_1 < arg_273_1.time_ and arg_273_1.time_ <= var_276_1 + arg_276_0 and arg_273_1.var_.characterEffect1148ui_story == nil then
+			if var_276_1 < arg_273_1.time_ and arg_273_1.time_ <= var_276_1 + arg_276_0 and not isNil(var_276_0) and arg_273_1.var_.characterEffect1148ui_story == nil then
 				arg_273_1.var_.characterEffect1148ui_story = var_276_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_276_2 = 0.2
 
-			if var_276_1 <= arg_273_1.time_ and arg_273_1.time_ < var_276_1 + var_276_2 then
+			if var_276_1 <= arg_273_1.time_ and arg_273_1.time_ < var_276_1 + var_276_2 and not isNil(var_276_0) then
 				local var_276_3 = (arg_273_1.time_ - var_276_1) / var_276_2
 
-				if arg_273_1.var_.characterEffect1148ui_story then
+				if arg_273_1.var_.characterEffect1148ui_story and not isNil(var_276_0) then
 					arg_273_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_273_1.time_ >= var_276_1 + var_276_2 and arg_273_1.time_ < var_276_1 + var_276_2 + arg_276_0 and arg_273_1.var_.characterEffect1148ui_story then
+			if arg_273_1.time_ >= var_276_1 + var_276_2 and arg_273_1.time_ < var_276_1 + var_276_2 + arg_276_0 and not isNil(var_276_0) and arg_273_1.var_.characterEffect1148ui_story then
 				arg_273_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -10057,16 +10160,16 @@
 			local var_276_5 = arg_273_1.actors_["1080ui_story"]
 			local var_276_6 = 0
 
-			if var_276_6 < arg_273_1.time_ and arg_273_1.time_ <= var_276_6 + arg_276_0 and arg_273_1.var_.characterEffect1080ui_story == nil then
+			if var_276_6 < arg_273_1.time_ and arg_273_1.time_ <= var_276_6 + arg_276_0 and not isNil(var_276_5) and arg_273_1.var_.characterEffect1080ui_story == nil then
 				arg_273_1.var_.characterEffect1080ui_story = var_276_5:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_276_7 = 0.2
 
-			if var_276_6 <= arg_273_1.time_ and arg_273_1.time_ < var_276_6 + var_276_7 then
+			if var_276_6 <= arg_273_1.time_ and arg_273_1.time_ < var_276_6 + var_276_7 and not isNil(var_276_5) then
 				local var_276_8 = (arg_273_1.time_ - var_276_6) / var_276_7
 
-				if arg_273_1.var_.characterEffect1080ui_story then
+				if arg_273_1.var_.characterEffect1080ui_story and not isNil(var_276_5) then
 					local var_276_9 = Mathf.Lerp(0, 0.5, var_276_8)
 
 					arg_273_1.var_.characterEffect1080ui_story.fillFlat = true
@@ -10074,7 +10177,7 @@
 				end
 			end
 
-			if arg_273_1.time_ >= var_276_6 + var_276_7 and arg_273_1.time_ < var_276_6 + var_276_7 + arg_276_0 and arg_273_1.var_.characterEffect1080ui_story then
+			if arg_273_1.time_ >= var_276_6 + var_276_7 and arg_273_1.time_ < var_276_6 + var_276_7 + arg_276_0 and not isNil(var_276_5) and arg_273_1.var_.characterEffect1080ui_story then
 				local var_276_10 = 0.5
 
 				arg_273_1.var_.characterEffect1080ui_story.fillFlat = true
@@ -10693,21 +10796,21 @@
 			local var_290_10 = arg_287_1.actors_["1148ui_story"]
 			local var_290_11 = 0
 
-			if var_290_11 < arg_287_1.time_ and arg_287_1.time_ <= var_290_11 + arg_290_0 and arg_287_1.var_.characterEffect1148ui_story == nil then
+			if var_290_11 < arg_287_1.time_ and arg_287_1.time_ <= var_290_11 + arg_290_0 and not isNil(var_290_10) and arg_287_1.var_.characterEffect1148ui_story == nil then
 				arg_287_1.var_.characterEffect1148ui_story = var_290_10:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_290_12 = 0.2
 
-			if var_290_11 <= arg_287_1.time_ and arg_287_1.time_ < var_290_11 + var_290_12 then
+			if var_290_11 <= arg_287_1.time_ and arg_287_1.time_ < var_290_11 + var_290_12 and not isNil(var_290_10) then
 				local var_290_13 = (arg_287_1.time_ - var_290_11) / var_290_12
 
-				if arg_287_1.var_.characterEffect1148ui_story then
+				if arg_287_1.var_.characterEffect1148ui_story and not isNil(var_290_10) then
 					arg_287_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_287_1.time_ >= var_290_11 + var_290_12 and arg_287_1.time_ < var_290_11 + var_290_12 + arg_290_0 and arg_287_1.var_.characterEffect1148ui_story then
+			if arg_287_1.time_ >= var_290_11 + var_290_12 and arg_287_1.time_ < var_290_11 + var_290_12 + arg_290_0 and not isNil(var_290_10) and arg_287_1.var_.characterEffect1148ui_story then
 				arg_287_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -11016,16 +11119,16 @@
 			local var_302_0 = arg_299_1.actors_["1148ui_story"]
 			local var_302_1 = 0
 
-			if var_302_1 < arg_299_1.time_ and arg_299_1.time_ <= var_302_1 + arg_302_0 and arg_299_1.var_.characterEffect1148ui_story == nil then
+			if var_302_1 < arg_299_1.time_ and arg_299_1.time_ <= var_302_1 + arg_302_0 and not isNil(var_302_0) and arg_299_1.var_.characterEffect1148ui_story == nil then
 				arg_299_1.var_.characterEffect1148ui_story = var_302_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_302_2 = 0.2
 
-			if var_302_1 <= arg_299_1.time_ and arg_299_1.time_ < var_302_1 + var_302_2 then
+			if var_302_1 <= arg_299_1.time_ and arg_299_1.time_ < var_302_1 + var_302_2 and not isNil(var_302_0) then
 				local var_302_3 = (arg_299_1.time_ - var_302_1) / var_302_2
 
-				if arg_299_1.var_.characterEffect1148ui_story then
+				if arg_299_1.var_.characterEffect1148ui_story and not isNil(var_302_0) then
 					local var_302_4 = Mathf.Lerp(0, 0.5, var_302_3)
 
 					arg_299_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -11033,7 +11136,7 @@
 				end
 			end
 
-			if arg_299_1.time_ >= var_302_1 + var_302_2 and arg_299_1.time_ < var_302_1 + var_302_2 + arg_302_0 and arg_299_1.var_.characterEffect1148ui_story then
+			if arg_299_1.time_ >= var_302_1 + var_302_2 and arg_299_1.time_ < var_302_1 + var_302_2 + arg_302_0 and not isNil(var_302_0) and arg_299_1.var_.characterEffect1148ui_story then
 				local var_302_5 = 0.5
 
 				arg_299_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -11066,8 +11169,15 @@
 				arg_299_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_299_1:RecordName(arg_299_1.leftNameTxt_.text)
-				SetActive(arg_299_1.iconTrs_.gameObject, false)
+				SetActive(arg_299_1.iconTrs_.gameObject, true)
+				arg_299_1.iconController_:SetSelectedState("hero")
+
+				arg_299_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_299_1.callingController_:SetSelectedState("normal")
+
+				arg_299_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_299_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_302_10 = arg_299_1:GetWordFromCfg(114803073)
 				local var_302_11 = arg_299_1:FormatText(var_302_10.content)
@@ -11149,21 +11259,21 @@
 			local var_306_0 = arg_303_1.actors_["1148ui_story"]
 			local var_306_1 = 0
 
-			if var_306_1 < arg_303_1.time_ and arg_303_1.time_ <= var_306_1 + arg_306_0 and arg_303_1.var_.characterEffect1148ui_story == nil then
+			if var_306_1 < arg_303_1.time_ and arg_303_1.time_ <= var_306_1 + arg_306_0 and not isNil(var_306_0) and arg_303_1.var_.characterEffect1148ui_story == nil then
 				arg_303_1.var_.characterEffect1148ui_story = var_306_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_306_2 = 0.2
 
-			if var_306_1 <= arg_303_1.time_ and arg_303_1.time_ < var_306_1 + var_306_2 then
+			if var_306_1 <= arg_303_1.time_ and arg_303_1.time_ < var_306_1 + var_306_2 and not isNil(var_306_0) then
 				local var_306_3 = (arg_303_1.time_ - var_306_1) / var_306_2
 
-				if arg_303_1.var_.characterEffect1148ui_story then
+				if arg_303_1.var_.characterEffect1148ui_story and not isNil(var_306_0) then
 					arg_303_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_303_1.time_ >= var_306_1 + var_306_2 and arg_303_1.time_ < var_306_1 + var_306_2 + arg_306_0 and arg_303_1.var_.characterEffect1148ui_story then
+			if arg_303_1.time_ >= var_306_1 + var_306_2 and arg_303_1.time_ < var_306_1 + var_306_2 + arg_306_0 and not isNil(var_306_0) and arg_303_1.var_.characterEffect1148ui_story then
 				arg_303_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -11416,16 +11526,16 @@
 			local var_314_0 = arg_311_1.actors_["1148ui_story"]
 			local var_314_1 = 0
 
-			if var_314_1 < arg_311_1.time_ and arg_311_1.time_ <= var_314_1 + arg_314_0 and arg_311_1.var_.characterEffect1148ui_story == nil then
+			if var_314_1 < arg_311_1.time_ and arg_311_1.time_ <= var_314_1 + arg_314_0 and not isNil(var_314_0) and arg_311_1.var_.characterEffect1148ui_story == nil then
 				arg_311_1.var_.characterEffect1148ui_story = var_314_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_314_2 = 0.2
 
-			if var_314_1 <= arg_311_1.time_ and arg_311_1.time_ < var_314_1 + var_314_2 then
+			if var_314_1 <= arg_311_1.time_ and arg_311_1.time_ < var_314_1 + var_314_2 and not isNil(var_314_0) then
 				local var_314_3 = (arg_311_1.time_ - var_314_1) / var_314_2
 
-				if arg_311_1.var_.characterEffect1148ui_story then
+				if arg_311_1.var_.characterEffect1148ui_story and not isNil(var_314_0) then
 					local var_314_4 = Mathf.Lerp(0, 0.5, var_314_3)
 
 					arg_311_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -11433,7 +11543,7 @@
 				end
 			end
 
-			if arg_311_1.time_ >= var_314_1 + var_314_2 and arg_311_1.time_ < var_314_1 + var_314_2 + arg_314_0 and arg_311_1.var_.characterEffect1148ui_story then
+			if arg_311_1.time_ >= var_314_1 + var_314_2 and arg_311_1.time_ < var_314_1 + var_314_2 + arg_314_0 and not isNil(var_314_0) and arg_311_1.var_.characterEffect1148ui_story then
 				local var_314_5 = 0.5
 
 				arg_311_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -11466,8 +11576,15 @@
 				arg_311_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_311_1:RecordName(arg_311_1.leftNameTxt_.text)
-				SetActive(arg_311_1.iconTrs_.gameObject, false)
+				SetActive(arg_311_1.iconTrs_.gameObject, true)
+				arg_311_1.iconController_:SetSelectedState("hero")
+
+				arg_311_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_311_1.callingController_:SetSelectedState("normal")
+
+				arg_311_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_311_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_314_10 = arg_311_1:GetWordFromCfg(114803076)
 				local var_314_11 = arg_311_1:FormatText(var_314_10.content)
@@ -11549,21 +11666,21 @@
 			local var_318_0 = arg_315_1.actors_["1148ui_story"]
 			local var_318_1 = 0
 
-			if var_318_1 < arg_315_1.time_ and arg_315_1.time_ <= var_318_1 + arg_318_0 and arg_315_1.var_.characterEffect1148ui_story == nil then
+			if var_318_1 < arg_315_1.time_ and arg_315_1.time_ <= var_318_1 + arg_318_0 and not isNil(var_318_0) and arg_315_1.var_.characterEffect1148ui_story == nil then
 				arg_315_1.var_.characterEffect1148ui_story = var_318_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_318_2 = 0.2
 
-			if var_318_1 <= arg_315_1.time_ and arg_315_1.time_ < var_318_1 + var_318_2 then
+			if var_318_1 <= arg_315_1.time_ and arg_315_1.time_ < var_318_1 + var_318_2 and not isNil(var_318_0) then
 				local var_318_3 = (arg_315_1.time_ - var_318_1) / var_318_2
 
-				if arg_315_1.var_.characterEffect1148ui_story then
+				if arg_315_1.var_.characterEffect1148ui_story and not isNil(var_318_0) then
 					arg_315_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_315_1.time_ >= var_318_1 + var_318_2 and arg_315_1.time_ < var_318_1 + var_318_2 + arg_318_0 and arg_315_1.var_.characterEffect1148ui_story then
+			if arg_315_1.time_ >= var_318_1 + var_318_2 and arg_315_1.time_ < var_318_1 + var_318_2 + arg_318_0 and not isNil(var_318_0) and arg_315_1.var_.characterEffect1148ui_story then
 				arg_315_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -11690,16 +11807,16 @@
 			local var_322_0 = arg_319_1.actors_["1148ui_story"]
 			local var_322_1 = 0
 
-			if var_322_1 < arg_319_1.time_ and arg_319_1.time_ <= var_322_1 + arg_322_0 and arg_319_1.var_.characterEffect1148ui_story == nil then
+			if var_322_1 < arg_319_1.time_ and arg_319_1.time_ <= var_322_1 + arg_322_0 and not isNil(var_322_0) and arg_319_1.var_.characterEffect1148ui_story == nil then
 				arg_319_1.var_.characterEffect1148ui_story = var_322_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_322_2 = 0.2
 
-			if var_322_1 <= arg_319_1.time_ and arg_319_1.time_ < var_322_1 + var_322_2 then
+			if var_322_1 <= arg_319_1.time_ and arg_319_1.time_ < var_322_1 + var_322_2 and not isNil(var_322_0) then
 				local var_322_3 = (arg_319_1.time_ - var_322_1) / var_322_2
 
-				if arg_319_1.var_.characterEffect1148ui_story then
+				if arg_319_1.var_.characterEffect1148ui_story and not isNil(var_322_0) then
 					local var_322_4 = Mathf.Lerp(0, 0.5, var_322_3)
 
 					arg_319_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -11707,7 +11824,7 @@
 				end
 			end
 
-			if arg_319_1.time_ >= var_322_1 + var_322_2 and arg_319_1.time_ < var_322_1 + var_322_2 + arg_322_0 and arg_319_1.var_.characterEffect1148ui_story then
+			if arg_319_1.time_ >= var_322_1 + var_322_2 and arg_319_1.time_ < var_322_1 + var_322_2 + arg_322_0 and not isNil(var_322_0) and arg_319_1.var_.characterEffect1148ui_story then
 				local var_322_5 = 0.5
 
 				arg_319_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -11740,8 +11857,15 @@
 				arg_319_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_319_1:RecordName(arg_319_1.leftNameTxt_.text)
-				SetActive(arg_319_1.iconTrs_.gameObject, false)
+				SetActive(arg_319_1.iconTrs_.gameObject, true)
+				arg_319_1.iconController_:SetSelectedState("hero")
+
+				arg_319_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_319_1.callingController_:SetSelectedState("normal")
+
+				arg_319_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_319_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_322_10 = arg_319_1:GetWordFromCfg(114803078)
 				local var_322_11 = arg_319_1:FormatText(var_322_10.content)
@@ -11823,21 +11947,21 @@
 			local var_326_0 = arg_323_1.actors_["1148ui_story"]
 			local var_326_1 = 0
 
-			if var_326_1 < arg_323_1.time_ and arg_323_1.time_ <= var_326_1 + arg_326_0 and arg_323_1.var_.characterEffect1148ui_story == nil then
+			if var_326_1 < arg_323_1.time_ and arg_323_1.time_ <= var_326_1 + arg_326_0 and not isNil(var_326_0) and arg_323_1.var_.characterEffect1148ui_story == nil then
 				arg_323_1.var_.characterEffect1148ui_story = var_326_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_326_2 = 0.2
 
-			if var_326_1 <= arg_323_1.time_ and arg_323_1.time_ < var_326_1 + var_326_2 then
+			if var_326_1 <= arg_323_1.time_ and arg_323_1.time_ < var_326_1 + var_326_2 and not isNil(var_326_0) then
 				local var_326_3 = (arg_323_1.time_ - var_326_1) / var_326_2
 
-				if arg_323_1.var_.characterEffect1148ui_story then
+				if arg_323_1.var_.characterEffect1148ui_story and not isNil(var_326_0) then
 					arg_323_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_323_1.time_ >= var_326_1 + var_326_2 and arg_323_1.time_ < var_326_1 + var_326_2 + arg_326_0 and arg_323_1.var_.characterEffect1148ui_story then
+			if arg_323_1.time_ >= var_326_1 + var_326_2 and arg_323_1.time_ < var_326_1 + var_326_2 + arg_326_0 and not isNil(var_326_0) and arg_323_1.var_.characterEffect1148ui_story then
 				arg_323_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -12536,16 +12660,16 @@
 			local var_350_0 = arg_347_1.actors_["1148ui_story"]
 			local var_350_1 = 0
 
-			if var_350_1 < arg_347_1.time_ and arg_347_1.time_ <= var_350_1 + arg_350_0 and arg_347_1.var_.characterEffect1148ui_story == nil then
+			if var_350_1 < arg_347_1.time_ and arg_347_1.time_ <= var_350_1 + arg_350_0 and not isNil(var_350_0) and arg_347_1.var_.characterEffect1148ui_story == nil then
 				arg_347_1.var_.characterEffect1148ui_story = var_350_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_350_2 = 0.2
 
-			if var_350_1 <= arg_347_1.time_ and arg_347_1.time_ < var_350_1 + var_350_2 then
+			if var_350_1 <= arg_347_1.time_ and arg_347_1.time_ < var_350_1 + var_350_2 and not isNil(var_350_0) then
 				local var_350_3 = (arg_347_1.time_ - var_350_1) / var_350_2
 
-				if arg_347_1.var_.characterEffect1148ui_story then
+				if arg_347_1.var_.characterEffect1148ui_story and not isNil(var_350_0) then
 					local var_350_4 = Mathf.Lerp(0, 0.5, var_350_3)
 
 					arg_347_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -12553,7 +12677,7 @@
 				end
 			end
 
-			if arg_347_1.time_ >= var_350_1 + var_350_2 and arg_347_1.time_ < var_350_1 + var_350_2 + arg_350_0 and arg_347_1.var_.characterEffect1148ui_story then
+			if arg_347_1.time_ >= var_350_1 + var_350_2 and arg_347_1.time_ < var_350_1 + var_350_2 + arg_350_0 and not isNil(var_350_0) and arg_347_1.var_.characterEffect1148ui_story then
 				local var_350_5 = 0.5
 
 				arg_347_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -12586,8 +12710,15 @@
 				arg_347_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_347_1:RecordName(arg_347_1.leftNameTxt_.text)
-				SetActive(arg_347_1.iconTrs_.gameObject, false)
+				SetActive(arg_347_1.iconTrs_.gameObject, true)
+				arg_347_1.iconController_:SetSelectedState("hero")
+
+				arg_347_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_347_1.callingController_:SetSelectedState("normal")
+
+				arg_347_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_347_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_350_10 = arg_347_1:GetWordFromCfg(114803085)
 				local var_350_11 = arg_347_1:FormatText(var_350_10.content)
@@ -12669,21 +12800,21 @@
 			local var_354_0 = arg_351_1.actors_["1148ui_story"]
 			local var_354_1 = 0
 
-			if var_354_1 < arg_351_1.time_ and arg_351_1.time_ <= var_354_1 + arg_354_0 and arg_351_1.var_.characterEffect1148ui_story == nil then
+			if var_354_1 < arg_351_1.time_ and arg_351_1.time_ <= var_354_1 + arg_354_0 and not isNil(var_354_0) and arg_351_1.var_.characterEffect1148ui_story == nil then
 				arg_351_1.var_.characterEffect1148ui_story = var_354_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_354_2 = 0.2
 
-			if var_354_1 <= arg_351_1.time_ and arg_351_1.time_ < var_354_1 + var_354_2 then
+			if var_354_1 <= arg_351_1.time_ and arg_351_1.time_ < var_354_1 + var_354_2 and not isNil(var_354_0) then
 				local var_354_3 = (arg_351_1.time_ - var_354_1) / var_354_2
 
-				if arg_351_1.var_.characterEffect1148ui_story then
+				if arg_351_1.var_.characterEffect1148ui_story and not isNil(var_354_0) then
 					arg_351_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_351_1.time_ >= var_354_1 + var_354_2 and arg_351_1.time_ < var_354_1 + var_354_2 + arg_354_0 and arg_351_1.var_.characterEffect1148ui_story then
+			if arg_351_1.time_ >= var_354_1 + var_354_2 and arg_351_1.time_ < var_354_1 + var_354_2 + arg_354_0 and not isNil(var_354_0) and arg_351_1.var_.characterEffect1148ui_story then
 				arg_351_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -12810,16 +12941,16 @@
 			local var_358_0 = arg_355_1.actors_["1148ui_story"]
 			local var_358_1 = 0
 
-			if var_358_1 < arg_355_1.time_ and arg_355_1.time_ <= var_358_1 + arg_358_0 and arg_355_1.var_.characterEffect1148ui_story == nil then
+			if var_358_1 < arg_355_1.time_ and arg_355_1.time_ <= var_358_1 + arg_358_0 and not isNil(var_358_0) and arg_355_1.var_.characterEffect1148ui_story == nil then
 				arg_355_1.var_.characterEffect1148ui_story = var_358_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_358_2 = 0.2
 
-			if var_358_1 <= arg_355_1.time_ and arg_355_1.time_ < var_358_1 + var_358_2 then
+			if var_358_1 <= arg_355_1.time_ and arg_355_1.time_ < var_358_1 + var_358_2 and not isNil(var_358_0) then
 				local var_358_3 = (arg_355_1.time_ - var_358_1) / var_358_2
 
-				if arg_355_1.var_.characterEffect1148ui_story then
+				if arg_355_1.var_.characterEffect1148ui_story and not isNil(var_358_0) then
 					local var_358_4 = Mathf.Lerp(0, 0.5, var_358_3)
 
 					arg_355_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -12827,7 +12958,7 @@
 				end
 			end
 
-			if arg_355_1.time_ >= var_358_1 + var_358_2 and arg_355_1.time_ < var_358_1 + var_358_2 + arg_358_0 and arg_355_1.var_.characterEffect1148ui_story then
+			if arg_355_1.time_ >= var_358_1 + var_358_2 and arg_355_1.time_ < var_358_1 + var_358_2 + arg_358_0 and not isNil(var_358_0) and arg_355_1.var_.characterEffect1148ui_story then
 				local var_358_5 = 0.5
 
 				arg_355_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -12860,8 +12991,15 @@
 				arg_355_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_355_1:RecordName(arg_355_1.leftNameTxt_.text)
-				SetActive(arg_355_1.iconTrs_.gameObject, false)
+				SetActive(arg_355_1.iconTrs_.gameObject, true)
+				arg_355_1.iconController_:SetSelectedState("hero")
+
+				arg_355_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_355_1.callingController_:SetSelectedState("normal")
+
+				arg_355_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_355_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_358_10 = arg_355_1:GetWordFromCfg(114803087)
 				local var_358_11 = arg_355_1:FormatText(var_358_10.content)
@@ -12943,21 +13081,21 @@
 			local var_362_0 = arg_359_1.actors_["1148ui_story"]
 			local var_362_1 = 0
 
-			if var_362_1 < arg_359_1.time_ and arg_359_1.time_ <= var_362_1 + arg_362_0 and arg_359_1.var_.characterEffect1148ui_story == nil then
+			if var_362_1 < arg_359_1.time_ and arg_359_1.time_ <= var_362_1 + arg_362_0 and not isNil(var_362_0) and arg_359_1.var_.characterEffect1148ui_story == nil then
 				arg_359_1.var_.characterEffect1148ui_story = var_362_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_362_2 = 0.2
 
-			if var_362_1 <= arg_359_1.time_ and arg_359_1.time_ < var_362_1 + var_362_2 then
+			if var_362_1 <= arg_359_1.time_ and arg_359_1.time_ < var_362_1 + var_362_2 and not isNil(var_362_0) then
 				local var_362_3 = (arg_359_1.time_ - var_362_1) / var_362_2
 
-				if arg_359_1.var_.characterEffect1148ui_story then
+				if arg_359_1.var_.characterEffect1148ui_story and not isNil(var_362_0) then
 					arg_359_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_359_1.time_ >= var_362_1 + var_362_2 and arg_359_1.time_ < var_362_1 + var_362_2 + arg_362_0 and arg_359_1.var_.characterEffect1148ui_story then
+			if arg_359_1.time_ >= var_362_1 + var_362_2 and arg_359_1.time_ < var_362_1 + var_362_2 + arg_362_0 and not isNil(var_362_0) and arg_359_1.var_.characterEffect1148ui_story then
 				arg_359_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -13084,16 +13222,16 @@
 			local var_366_0 = arg_363_1.actors_["1148ui_story"]
 			local var_366_1 = 0
 
-			if var_366_1 < arg_363_1.time_ and arg_363_1.time_ <= var_366_1 + arg_366_0 and arg_363_1.var_.characterEffect1148ui_story == nil then
+			if var_366_1 < arg_363_1.time_ and arg_363_1.time_ <= var_366_1 + arg_366_0 and not isNil(var_366_0) and arg_363_1.var_.characterEffect1148ui_story == nil then
 				arg_363_1.var_.characterEffect1148ui_story = var_366_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_366_2 = 0.2
 
-			if var_366_1 <= arg_363_1.time_ and arg_363_1.time_ < var_366_1 + var_366_2 then
+			if var_366_1 <= arg_363_1.time_ and arg_363_1.time_ < var_366_1 + var_366_2 and not isNil(var_366_0) then
 				local var_366_3 = (arg_363_1.time_ - var_366_1) / var_366_2
 
-				if arg_363_1.var_.characterEffect1148ui_story then
+				if arg_363_1.var_.characterEffect1148ui_story and not isNil(var_366_0) then
 					local var_366_4 = Mathf.Lerp(0, 0.5, var_366_3)
 
 					arg_363_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -13101,7 +13239,7 @@
 				end
 			end
 
-			if arg_363_1.time_ >= var_366_1 + var_366_2 and arg_363_1.time_ < var_366_1 + var_366_2 + arg_366_0 and arg_363_1.var_.characterEffect1148ui_story then
+			if arg_363_1.time_ >= var_366_1 + var_366_2 and arg_363_1.time_ < var_366_1 + var_366_2 + arg_366_0 and not isNil(var_366_0) and arg_363_1.var_.characterEffect1148ui_story then
 				local var_366_5 = 0.5
 
 				arg_363_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -13398,8 +13536,15 @@
 				arg_375_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_375_1:RecordName(arg_375_1.leftNameTxt_.text)
-				SetActive(arg_375_1.iconTrs_.gameObject, false)
+				SetActive(arg_375_1.iconTrs_.gameObject, true)
+				arg_375_1.iconController_:SetSelectedState("hero")
+
+				arg_375_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_375_1.callingController_:SetSelectedState("normal")
+
+				arg_375_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_375_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_378_4 = arg_375_1:GetWordFromCfg(114803092)
 				local var_378_5 = arg_375_1:FormatText(var_378_4.content)
@@ -13481,21 +13626,21 @@
 			local var_382_0 = arg_379_1.actors_["1148ui_story"]
 			local var_382_1 = 0
 
-			if var_382_1 < arg_379_1.time_ and arg_379_1.time_ <= var_382_1 + arg_382_0 and arg_379_1.var_.characterEffect1148ui_story == nil then
+			if var_382_1 < arg_379_1.time_ and arg_379_1.time_ <= var_382_1 + arg_382_0 and not isNil(var_382_0) and arg_379_1.var_.characterEffect1148ui_story == nil then
 				arg_379_1.var_.characterEffect1148ui_story = var_382_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_382_2 = 0.2
 
-			if var_382_1 <= arg_379_1.time_ and arg_379_1.time_ < var_382_1 + var_382_2 then
+			if var_382_1 <= arg_379_1.time_ and arg_379_1.time_ < var_382_1 + var_382_2 and not isNil(var_382_0) then
 				local var_382_3 = (arg_379_1.time_ - var_382_1) / var_382_2
 
-				if arg_379_1.var_.characterEffect1148ui_story then
+				if arg_379_1.var_.characterEffect1148ui_story and not isNil(var_382_0) then
 					arg_379_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_379_1.time_ >= var_382_1 + var_382_2 and arg_379_1.time_ < var_382_1 + var_382_2 + arg_382_0 and arg_379_1.var_.characterEffect1148ui_story then
+			if arg_379_1.time_ >= var_382_1 + var_382_2 and arg_379_1.time_ < var_382_1 + var_382_2 + arg_382_0 and not isNil(var_382_0) and arg_379_1.var_.characterEffect1148ui_story then
 				arg_379_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -13622,16 +13767,16 @@
 			local var_386_0 = arg_383_1.actors_["1148ui_story"]
 			local var_386_1 = 0
 
-			if var_386_1 < arg_383_1.time_ and arg_383_1.time_ <= var_386_1 + arg_386_0 and arg_383_1.var_.characterEffect1148ui_story == nil then
+			if var_386_1 < arg_383_1.time_ and arg_383_1.time_ <= var_386_1 + arg_386_0 and not isNil(var_386_0) and arg_383_1.var_.characterEffect1148ui_story == nil then
 				arg_383_1.var_.characterEffect1148ui_story = var_386_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_386_2 = 0.2
 
-			if var_386_1 <= arg_383_1.time_ and arg_383_1.time_ < var_386_1 + var_386_2 then
+			if var_386_1 <= arg_383_1.time_ and arg_383_1.time_ < var_386_1 + var_386_2 and not isNil(var_386_0) then
 				local var_386_3 = (arg_383_1.time_ - var_386_1) / var_386_2
 
-				if arg_383_1.var_.characterEffect1148ui_story then
+				if arg_383_1.var_.characterEffect1148ui_story and not isNil(var_386_0) then
 					local var_386_4 = Mathf.Lerp(0, 0.5, var_386_3)
 
 					arg_383_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -13639,7 +13784,7 @@
 				end
 			end
 
-			if arg_383_1.time_ >= var_386_1 + var_386_2 and arg_383_1.time_ < var_386_1 + var_386_2 + arg_386_0 and arg_383_1.var_.characterEffect1148ui_story then
+			if arg_383_1.time_ >= var_386_1 + var_386_2 and arg_383_1.time_ < var_386_1 + var_386_2 + arg_386_0 and not isNil(var_386_0) and arg_383_1.var_.characterEffect1148ui_story then
 				local var_386_5 = 0.5
 
 				arg_383_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -13932,21 +14077,21 @@
 			local var_398_0 = arg_395_1.actors_["1148ui_story"]
 			local var_398_1 = 0
 
-			if var_398_1 < arg_395_1.time_ and arg_395_1.time_ <= var_398_1 + arg_398_0 and arg_395_1.var_.characterEffect1148ui_story == nil then
+			if var_398_1 < arg_395_1.time_ and arg_395_1.time_ <= var_398_1 + arg_398_0 and not isNil(var_398_0) and arg_395_1.var_.characterEffect1148ui_story == nil then
 				arg_395_1.var_.characterEffect1148ui_story = var_398_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_398_2 = 0.2
 
-			if var_398_1 <= arg_395_1.time_ and arg_395_1.time_ < var_398_1 + var_398_2 then
+			if var_398_1 <= arg_395_1.time_ and arg_395_1.time_ < var_398_1 + var_398_2 and not isNil(var_398_0) then
 				local var_398_3 = (arg_395_1.time_ - var_398_1) / var_398_2
 
-				if arg_395_1.var_.characterEffect1148ui_story then
+				if arg_395_1.var_.characterEffect1148ui_story and not isNil(var_398_0) then
 					arg_395_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_395_1.time_ >= var_398_1 + var_398_2 and arg_395_1.time_ < var_398_1 + var_398_2 + arg_398_0 and arg_395_1.var_.characterEffect1148ui_story then
+			if arg_395_1.time_ >= var_398_1 + var_398_2 and arg_395_1.time_ < var_398_1 + var_398_2 + arg_398_0 and not isNil(var_398_0) and arg_395_1.var_.characterEffect1148ui_story then
 				arg_395_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -14073,16 +14218,16 @@
 			local var_402_0 = arg_399_1.actors_["1148ui_story"]
 			local var_402_1 = 0
 
-			if var_402_1 < arg_399_1.time_ and arg_399_1.time_ <= var_402_1 + arg_402_0 and arg_399_1.var_.characterEffect1148ui_story == nil then
+			if var_402_1 < arg_399_1.time_ and arg_399_1.time_ <= var_402_1 + arg_402_0 and not isNil(var_402_0) and arg_399_1.var_.characterEffect1148ui_story == nil then
 				arg_399_1.var_.characterEffect1148ui_story = var_402_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_402_2 = 0.2
 
-			if var_402_1 <= arg_399_1.time_ and arg_399_1.time_ < var_402_1 + var_402_2 then
+			if var_402_1 <= arg_399_1.time_ and arg_399_1.time_ < var_402_1 + var_402_2 and not isNil(var_402_0) then
 				local var_402_3 = (arg_399_1.time_ - var_402_1) / var_402_2
 
-				if arg_399_1.var_.characterEffect1148ui_story then
+				if arg_399_1.var_.characterEffect1148ui_story and not isNil(var_402_0) then
 					local var_402_4 = Mathf.Lerp(0, 0.5, var_402_3)
 
 					arg_399_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -14090,7 +14235,7 @@
 				end
 			end
 
-			if arg_399_1.time_ >= var_402_1 + var_402_2 and arg_399_1.time_ < var_402_1 + var_402_2 + arg_402_0 and arg_399_1.var_.characterEffect1148ui_story then
+			if arg_399_1.time_ >= var_402_1 + var_402_2 and arg_399_1.time_ < var_402_1 + var_402_2 + arg_402_0 and not isNil(var_402_0) and arg_399_1.var_.characterEffect1148ui_story then
 				local var_402_5 = 0.5
 
 				arg_399_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -14123,8 +14268,15 @@
 				arg_399_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_399_1:RecordName(arg_399_1.leftNameTxt_.text)
-				SetActive(arg_399_1.iconTrs_.gameObject, false)
+				SetActive(arg_399_1.iconTrs_.gameObject, true)
+				arg_399_1.iconController_:SetSelectedState("hero")
+
+				arg_399_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_399_1.callingController_:SetSelectedState("normal")
+
+				arg_399_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_399_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_402_10 = arg_399_1:GetWordFromCfg(114803099)
 				local var_402_11 = arg_399_1:FormatText(var_402_10.content)
@@ -14206,21 +14358,21 @@
 			local var_406_0 = arg_403_1.actors_["1148ui_story"]
 			local var_406_1 = 0
 
-			if var_406_1 < arg_403_1.time_ and arg_403_1.time_ <= var_406_1 + arg_406_0 and arg_403_1.var_.characterEffect1148ui_story == nil then
+			if var_406_1 < arg_403_1.time_ and arg_403_1.time_ <= var_406_1 + arg_406_0 and not isNil(var_406_0) and arg_403_1.var_.characterEffect1148ui_story == nil then
 				arg_403_1.var_.characterEffect1148ui_story = var_406_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_406_2 = 0.2
 
-			if var_406_1 <= arg_403_1.time_ and arg_403_1.time_ < var_406_1 + var_406_2 then
+			if var_406_1 <= arg_403_1.time_ and arg_403_1.time_ < var_406_1 + var_406_2 and not isNil(var_406_0) then
 				local var_406_3 = (arg_403_1.time_ - var_406_1) / var_406_2
 
-				if arg_403_1.var_.characterEffect1148ui_story then
+				if arg_403_1.var_.characterEffect1148ui_story and not isNil(var_406_0) then
 					arg_403_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_403_1.time_ >= var_406_1 + var_406_2 and arg_403_1.time_ < var_406_1 + var_406_2 + arg_406_0 and arg_403_1.var_.characterEffect1148ui_story then
+			if arg_403_1.time_ >= var_406_1 + var_406_2 and arg_403_1.time_ < var_406_1 + var_406_2 + arg_406_0 and not isNil(var_406_0) and arg_403_1.var_.characterEffect1148ui_story then
 				arg_403_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -14473,16 +14625,16 @@
 			local var_414_0 = arg_411_1.actors_["1148ui_story"]
 			local var_414_1 = 0
 
-			if var_414_1 < arg_411_1.time_ and arg_411_1.time_ <= var_414_1 + arg_414_0 and arg_411_1.var_.characterEffect1148ui_story == nil then
+			if var_414_1 < arg_411_1.time_ and arg_411_1.time_ <= var_414_1 + arg_414_0 and not isNil(var_414_0) and arg_411_1.var_.characterEffect1148ui_story == nil then
 				arg_411_1.var_.characterEffect1148ui_story = var_414_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_414_2 = 0.2
 
-			if var_414_1 <= arg_411_1.time_ and arg_411_1.time_ < var_414_1 + var_414_2 then
+			if var_414_1 <= arg_411_1.time_ and arg_411_1.time_ < var_414_1 + var_414_2 and not isNil(var_414_0) then
 				local var_414_3 = (arg_411_1.time_ - var_414_1) / var_414_2
 
-				if arg_411_1.var_.characterEffect1148ui_story then
+				if arg_411_1.var_.characterEffect1148ui_story and not isNil(var_414_0) then
 					local var_414_4 = Mathf.Lerp(0, 0.5, var_414_3)
 
 					arg_411_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -14490,7 +14642,7 @@
 				end
 			end
 
-			if arg_411_1.time_ >= var_414_1 + var_414_2 and arg_411_1.time_ < var_414_1 + var_414_2 + arg_414_0 and arg_411_1.var_.characterEffect1148ui_story then
+			if arg_411_1.time_ >= var_414_1 + var_414_2 and arg_411_1.time_ < var_414_1 + var_414_2 + arg_414_0 and not isNil(var_414_0) and arg_411_1.var_.characterEffect1148ui_story then
 				local var_414_5 = 0.5
 
 				arg_411_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -14523,8 +14675,15 @@
 				arg_411_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_411_1:RecordName(arg_411_1.leftNameTxt_.text)
-				SetActive(arg_411_1.iconTrs_.gameObject, false)
+				SetActive(arg_411_1.iconTrs_.gameObject, true)
+				arg_411_1.iconController_:SetSelectedState("hero")
+
+				arg_411_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_411_1.callingController_:SetSelectedState("normal")
+
+				arg_411_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_411_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_414_10 = arg_411_1:GetWordFromCfg(114803102)
 				local var_414_11 = arg_411_1:FormatText(var_414_10.content)
@@ -14606,21 +14765,21 @@
 			local var_418_0 = arg_415_1.actors_["1148ui_story"]
 			local var_418_1 = 0
 
-			if var_418_1 < arg_415_1.time_ and arg_415_1.time_ <= var_418_1 + arg_418_0 and arg_415_1.var_.characterEffect1148ui_story == nil then
+			if var_418_1 < arg_415_1.time_ and arg_415_1.time_ <= var_418_1 + arg_418_0 and not isNil(var_418_0) and arg_415_1.var_.characterEffect1148ui_story == nil then
 				arg_415_1.var_.characterEffect1148ui_story = var_418_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_418_2 = 0.2
 
-			if var_418_1 <= arg_415_1.time_ and arg_415_1.time_ < var_418_1 + var_418_2 then
+			if var_418_1 <= arg_415_1.time_ and arg_415_1.time_ < var_418_1 + var_418_2 and not isNil(var_418_0) then
 				local var_418_3 = (arg_415_1.time_ - var_418_1) / var_418_2
 
-				if arg_415_1.var_.characterEffect1148ui_story then
+				if arg_415_1.var_.characterEffect1148ui_story and not isNil(var_418_0) then
 					arg_415_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_415_1.time_ >= var_418_1 + var_418_2 and arg_415_1.time_ < var_418_1 + var_418_2 + arg_418_0 and arg_415_1.var_.characterEffect1148ui_story then
+			if arg_415_1.time_ >= var_418_1 + var_418_2 and arg_415_1.time_ < var_418_1 + var_418_2 + arg_418_0 and not isNil(var_418_0) and arg_415_1.var_.characterEffect1148ui_story then
 				arg_415_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -14747,16 +14906,16 @@
 			local var_422_0 = arg_419_1.actors_["1148ui_story"]
 			local var_422_1 = 0
 
-			if var_422_1 < arg_419_1.time_ and arg_419_1.time_ <= var_422_1 + arg_422_0 and arg_419_1.var_.characterEffect1148ui_story == nil then
+			if var_422_1 < arg_419_1.time_ and arg_419_1.time_ <= var_422_1 + arg_422_0 and not isNil(var_422_0) and arg_419_1.var_.characterEffect1148ui_story == nil then
 				arg_419_1.var_.characterEffect1148ui_story = var_422_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_422_2 = 0.2
 
-			if var_422_1 <= arg_419_1.time_ and arg_419_1.time_ < var_422_1 + var_422_2 then
+			if var_422_1 <= arg_419_1.time_ and arg_419_1.time_ < var_422_1 + var_422_2 and not isNil(var_422_0) then
 				local var_422_3 = (arg_419_1.time_ - var_422_1) / var_422_2
 
-				if arg_419_1.var_.characterEffect1148ui_story then
+				if arg_419_1.var_.characterEffect1148ui_story and not isNil(var_422_0) then
 					local var_422_4 = Mathf.Lerp(0, 0.5, var_422_3)
 
 					arg_419_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -14764,7 +14923,7 @@
 				end
 			end
 
-			if arg_419_1.time_ >= var_422_1 + var_422_2 and arg_419_1.time_ < var_422_1 + var_422_2 + arg_422_0 and arg_419_1.var_.characterEffect1148ui_story then
+			if arg_419_1.time_ >= var_422_1 + var_422_2 and arg_419_1.time_ < var_422_1 + var_422_2 + arg_422_0 and not isNil(var_422_0) and arg_419_1.var_.characterEffect1148ui_story then
 				local var_422_5 = 0.5
 
 				arg_419_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -14885,8 +15044,15 @@
 				arg_423_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_423_1:RecordName(arg_423_1.leftNameTxt_.text)
-				SetActive(arg_423_1.iconTrs_.gameObject, false)
+				SetActive(arg_423_1.iconTrs_.gameObject, true)
+				arg_423_1.iconController_:SetSelectedState("hero")
+
+				arg_423_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_423_1.callingController_:SetSelectedState("normal")
+
+				arg_423_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_423_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_426_4 = arg_423_1:GetWordFromCfg(114803105)
 				local var_426_5 = arg_423_1:FormatText(var_426_4.content)
@@ -14968,21 +15134,21 @@
 			local var_430_0 = arg_427_1.actors_["1148ui_story"]
 			local var_430_1 = 0
 
-			if var_430_1 < arg_427_1.time_ and arg_427_1.time_ <= var_430_1 + arg_430_0 and arg_427_1.var_.characterEffect1148ui_story == nil then
+			if var_430_1 < arg_427_1.time_ and arg_427_1.time_ <= var_430_1 + arg_430_0 and not isNil(var_430_0) and arg_427_1.var_.characterEffect1148ui_story == nil then
 				arg_427_1.var_.characterEffect1148ui_story = var_430_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_430_2 = 0.2
 
-			if var_430_1 <= arg_427_1.time_ and arg_427_1.time_ < var_430_1 + var_430_2 then
+			if var_430_1 <= arg_427_1.time_ and arg_427_1.time_ < var_430_1 + var_430_2 and not isNil(var_430_0) then
 				local var_430_3 = (arg_427_1.time_ - var_430_1) / var_430_2
 
-				if arg_427_1.var_.characterEffect1148ui_story then
+				if arg_427_1.var_.characterEffect1148ui_story and not isNil(var_430_0) then
 					arg_427_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_427_1.time_ >= var_430_1 + var_430_2 and arg_427_1.time_ < var_430_1 + var_430_2 + arg_430_0 and arg_427_1.var_.characterEffect1148ui_story then
+			if arg_427_1.time_ >= var_430_1 + var_430_2 and arg_427_1.time_ < var_430_1 + var_430_2 + arg_430_0 and not isNil(var_430_0) and arg_427_1.var_.characterEffect1148ui_story then
 				arg_427_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -15109,16 +15275,16 @@
 			local var_434_0 = arg_431_1.actors_["1148ui_story"]
 			local var_434_1 = 0
 
-			if var_434_1 < arg_431_1.time_ and arg_431_1.time_ <= var_434_1 + arg_434_0 and arg_431_1.var_.characterEffect1148ui_story == nil then
+			if var_434_1 < arg_431_1.time_ and arg_431_1.time_ <= var_434_1 + arg_434_0 and not isNil(var_434_0) and arg_431_1.var_.characterEffect1148ui_story == nil then
 				arg_431_1.var_.characterEffect1148ui_story = var_434_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_434_2 = 0.2
 
-			if var_434_1 <= arg_431_1.time_ and arg_431_1.time_ < var_434_1 + var_434_2 then
+			if var_434_1 <= arg_431_1.time_ and arg_431_1.time_ < var_434_1 + var_434_2 and not isNil(var_434_0) then
 				local var_434_3 = (arg_431_1.time_ - var_434_1) / var_434_2
 
-				if arg_431_1.var_.characterEffect1148ui_story then
+				if arg_431_1.var_.characterEffect1148ui_story and not isNil(var_434_0) then
 					local var_434_4 = Mathf.Lerp(0, 0.5, var_434_3)
 
 					arg_431_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -15126,7 +15292,7 @@
 				end
 			end
 
-			if arg_431_1.time_ >= var_434_1 + var_434_2 and arg_431_1.time_ < var_434_1 + var_434_2 + arg_434_0 and arg_431_1.var_.characterEffect1148ui_story then
+			if arg_431_1.time_ >= var_434_1 + var_434_2 and arg_431_1.time_ < var_434_1 + var_434_2 + arg_434_0 and not isNil(var_434_0) and arg_431_1.var_.characterEffect1148ui_story then
 				local var_434_5 = 0.5
 
 				arg_431_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -15159,8 +15325,15 @@
 				arg_431_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_431_1:RecordName(arg_431_1.leftNameTxt_.text)
-				SetActive(arg_431_1.iconTrs_.gameObject, false)
+				SetActive(arg_431_1.iconTrs_.gameObject, true)
+				arg_431_1.iconController_:SetSelectedState("hero")
+
+				arg_431_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_431_1.callingController_:SetSelectedState("normal")
+
+				arg_431_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_431_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_434_10 = arg_431_1:GetWordFromCfg(114803116)
 				local var_434_11 = arg_431_1:FormatText(var_434_10.content)
@@ -15242,21 +15415,21 @@
 			local var_438_0 = arg_435_1.actors_["1148ui_story"]
 			local var_438_1 = 0
 
-			if var_438_1 < arg_435_1.time_ and arg_435_1.time_ <= var_438_1 + arg_438_0 and arg_435_1.var_.characterEffect1148ui_story == nil then
+			if var_438_1 < arg_435_1.time_ and arg_435_1.time_ <= var_438_1 + arg_438_0 and not isNil(var_438_0) and arg_435_1.var_.characterEffect1148ui_story == nil then
 				arg_435_1.var_.characterEffect1148ui_story = var_438_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_438_2 = 0.2
 
-			if var_438_1 <= arg_435_1.time_ and arg_435_1.time_ < var_438_1 + var_438_2 then
+			if var_438_1 <= arg_435_1.time_ and arg_435_1.time_ < var_438_1 + var_438_2 and not isNil(var_438_0) then
 				local var_438_3 = (arg_435_1.time_ - var_438_1) / var_438_2
 
-				if arg_435_1.var_.characterEffect1148ui_story then
+				if arg_435_1.var_.characterEffect1148ui_story and not isNil(var_438_0) then
 					arg_435_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_435_1.time_ >= var_438_1 + var_438_2 and arg_435_1.time_ < var_438_1 + var_438_2 + arg_438_0 and arg_435_1.var_.characterEffect1148ui_story then
+			if arg_435_1.time_ >= var_438_1 + var_438_2 and arg_435_1.time_ < var_438_1 + var_438_2 + arg_438_0 and not isNil(var_438_0) and arg_435_1.var_.characterEffect1148ui_story then
 				arg_435_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -15515,16 +15688,16 @@
 			local var_446_0 = arg_443_1.actors_["1148ui_story"]
 			local var_446_1 = 0
 
-			if var_446_1 < arg_443_1.time_ and arg_443_1.time_ <= var_446_1 + arg_446_0 and arg_443_1.var_.characterEffect1148ui_story == nil then
+			if var_446_1 < arg_443_1.time_ and arg_443_1.time_ <= var_446_1 + arg_446_0 and not isNil(var_446_0) and arg_443_1.var_.characterEffect1148ui_story == nil then
 				arg_443_1.var_.characterEffect1148ui_story = var_446_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_446_2 = 0.2
 
-			if var_446_1 <= arg_443_1.time_ and arg_443_1.time_ < var_446_1 + var_446_2 then
+			if var_446_1 <= arg_443_1.time_ and arg_443_1.time_ < var_446_1 + var_446_2 and not isNil(var_446_0) then
 				local var_446_3 = (arg_443_1.time_ - var_446_1) / var_446_2
 
-				if arg_443_1.var_.characterEffect1148ui_story then
+				if arg_443_1.var_.characterEffect1148ui_story and not isNil(var_446_0) then
 					local var_446_4 = Mathf.Lerp(0, 0.5, var_446_3)
 
 					arg_443_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -15532,7 +15705,7 @@
 				end
 			end
 
-			if arg_443_1.time_ >= var_446_1 + var_446_2 and arg_443_1.time_ < var_446_1 + var_446_2 + arg_446_0 and arg_443_1.var_.characterEffect1148ui_story then
+			if arg_443_1.time_ >= var_446_1 + var_446_2 and arg_443_1.time_ < var_446_1 + var_446_2 + arg_446_0 and not isNil(var_446_0) and arg_443_1.var_.characterEffect1148ui_story then
 				local var_446_5 = 0.5
 
 				arg_443_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -15565,8 +15738,15 @@
 				arg_443_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_443_1:RecordName(arg_443_1.leftNameTxt_.text)
-				SetActive(arg_443_1.iconTrs_.gameObject, false)
+				SetActive(arg_443_1.iconTrs_.gameObject, true)
+				arg_443_1.iconController_:SetSelectedState("hero")
+
+				arg_443_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_443_1.callingController_:SetSelectedState("normal")
+
+				arg_443_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_443_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_446_10 = arg_443_1:GetWordFromCfg(114803119)
 				local var_446_11 = arg_443_1:FormatText(var_446_10.content)
@@ -15648,21 +15828,21 @@
 			local var_450_0 = arg_447_1.actors_["1148ui_story"]
 			local var_450_1 = 0
 
-			if var_450_1 < arg_447_1.time_ and arg_447_1.time_ <= var_450_1 + arg_450_0 and arg_447_1.var_.characterEffect1148ui_story == nil then
+			if var_450_1 < arg_447_1.time_ and arg_447_1.time_ <= var_450_1 + arg_450_0 and not isNil(var_450_0) and arg_447_1.var_.characterEffect1148ui_story == nil then
 				arg_447_1.var_.characterEffect1148ui_story = var_450_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_450_2 = 0.2
 
-			if var_450_1 <= arg_447_1.time_ and arg_447_1.time_ < var_450_1 + var_450_2 then
+			if var_450_1 <= arg_447_1.time_ and arg_447_1.time_ < var_450_1 + var_450_2 and not isNil(var_450_0) then
 				local var_450_3 = (arg_447_1.time_ - var_450_1) / var_450_2
 
-				if arg_447_1.var_.characterEffect1148ui_story then
+				if arg_447_1.var_.characterEffect1148ui_story and not isNil(var_450_0) then
 					arg_447_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_447_1.time_ >= var_450_1 + var_450_2 and arg_447_1.time_ < var_450_1 + var_450_2 + arg_450_0 and arg_447_1.var_.characterEffect1148ui_story then
+			if arg_447_1.time_ >= var_450_1 + var_450_2 and arg_447_1.time_ < var_450_1 + var_450_2 + arg_450_0 and not isNil(var_450_0) and arg_447_1.var_.characterEffect1148ui_story then
 				arg_447_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -15794,16 +15974,16 @@
 			local var_454_1 = arg_451_1.actors_["1148ui_story"]
 			local var_454_2 = 0
 
-			if var_454_2 < arg_451_1.time_ and arg_451_1.time_ <= var_454_2 + arg_454_0 and arg_451_1.var_.characterEffect1148ui_story == nil then
+			if var_454_2 < arg_451_1.time_ and arg_451_1.time_ <= var_454_2 + arg_454_0 and not isNil(var_454_1) and arg_451_1.var_.characterEffect1148ui_story == nil then
 				arg_451_1.var_.characterEffect1148ui_story = var_454_1:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_454_3 = 0.2
 
-			if var_454_2 <= arg_451_1.time_ and arg_451_1.time_ < var_454_2 + var_454_3 then
+			if var_454_2 <= arg_451_1.time_ and arg_451_1.time_ < var_454_2 + var_454_3 and not isNil(var_454_1) then
 				local var_454_4 = (arg_451_1.time_ - var_454_2) / var_454_3
 
-				if arg_451_1.var_.characterEffect1148ui_story then
+				if arg_451_1.var_.characterEffect1148ui_story and not isNil(var_454_1) then
 					local var_454_5 = Mathf.Lerp(0, 0.5, var_454_4)
 
 					arg_451_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -15811,7 +15991,7 @@
 				end
 			end
 
-			if arg_451_1.time_ >= var_454_2 + var_454_3 and arg_451_1.time_ < var_454_2 + var_454_3 + arg_454_0 and arg_451_1.var_.characterEffect1148ui_story then
+			if arg_451_1.time_ >= var_454_2 + var_454_3 and arg_451_1.time_ < var_454_2 + var_454_3 + arg_454_0 and not isNil(var_454_1) and arg_451_1.var_.characterEffect1148ui_story then
 				local var_454_6 = 0.5
 
 				arg_451_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -15838,8 +16018,15 @@
 				arg_451_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_451_1:RecordName(arg_451_1.leftNameTxt_.text)
-				SetActive(arg_451_1.iconTrs_.gameObject, false)
+				SetActive(arg_451_1.iconTrs_.gameObject, true)
+				arg_451_1.iconController_:SetSelectedState("hero")
+
+				arg_451_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_451_1.callingController_:SetSelectedState("normal")
+
+				arg_451_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_451_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_454_10 = arg_451_1:GetWordFromCfg(114803121)
 				local var_454_11 = arg_451_1:FormatText(var_454_10.content)
@@ -15921,101 +16108,109 @@
 			local var_458_0 = arg_455_1.actors_["1148ui_story"]
 			local var_458_1 = 0
 
-			if var_458_1 < arg_455_1.time_ and arg_455_1.time_ <= var_458_1 + arg_458_0 and arg_455_1.var_.characterEffect1148ui_story == nil then
+			if var_458_1 < arg_455_1.time_ and arg_455_1.time_ <= var_458_1 + arg_458_0 and not isNil(var_458_0) and arg_455_1.var_.characterEffect1148ui_story == nil then
 				arg_455_1.var_.characterEffect1148ui_story = var_458_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_458_2 = 0.2
 
-			if var_458_1 <= arg_455_1.time_ and arg_455_1.time_ < var_458_1 + var_458_2 then
+			if var_458_1 <= arg_455_1.time_ and arg_455_1.time_ < var_458_1 + var_458_2 and not isNil(var_458_0) then
 				local var_458_3 = (arg_455_1.time_ - var_458_1) / var_458_2
 
-				if arg_455_1.var_.characterEffect1148ui_story then
+				if arg_455_1.var_.characterEffect1148ui_story and not isNil(var_458_0) then
 					arg_455_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_455_1.time_ >= var_458_1 + var_458_2 and arg_455_1.time_ < var_458_1 + var_458_2 + arg_458_0 and arg_455_1.var_.characterEffect1148ui_story then
+			if arg_455_1.time_ >= var_458_1 + var_458_2 and arg_455_1.time_ < var_458_1 + var_458_2 + arg_458_0 and not isNil(var_458_0) and arg_455_1.var_.characterEffect1148ui_story then
 				arg_455_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
 			local var_458_4 = "1148ui_story"
 
 			if arg_455_1.actors_[var_458_4] == nil then
-				local var_458_5 = Object.Instantiate(Asset.Load("Char/" .. var_458_4), arg_455_1.stage_.transform)
+				local var_458_5 = Asset.Load("Char/" .. "1148ui_story")
 
-				var_458_5.name = var_458_4
-				var_458_5.transform.localPosition = Vector3.New(0, 100, 0)
-				arg_455_1.actors_[var_458_4] = var_458_5
+				if not isNil(var_458_5) then
+					local var_458_6 = Object.Instantiate(Asset.Load("Char/" .. "1148ui_story"), arg_455_1.stage_.transform)
 
-				local var_458_6 = var_458_5:GetComponentInChildren(typeof(CharacterEffect))
+					var_458_6.name = var_458_4
+					var_458_6.transform.localPosition = Vector3.New(0, 100, 0)
+					arg_455_1.actors_[var_458_4] = var_458_6
 
-				var_458_6.enabled = true
+					local var_458_7 = var_458_6:GetComponentInChildren(typeof(CharacterEffect))
 
-				local var_458_7 = GameObjectTools.GetOrAddComponent(var_458_5, typeof(DynamicBoneHelper))
+					var_458_7.enabled = true
 
-				if var_458_7 then
-					var_458_7:EnableDynamicBone(false)
+					local var_458_8 = GameObjectTools.GetOrAddComponent(var_458_6, typeof(DynamicBoneHelper))
+
+					if var_458_8 then
+						var_458_8:EnableDynamicBone(false)
+					end
+
+					arg_455_1:ShowWeapon(var_458_7.transform, false)
+
+					arg_455_1.var_[var_458_4 .. "Animator"] = var_458_7.gameObject:GetComponent(typeof(UnityEngine.Animator))
+					arg_455_1.var_[var_458_4 .. "Animator"].applyRootMotion = true
+					arg_455_1.var_[var_458_4 .. "LipSync"] = var_458_7.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
 				end
-
-				arg_455_1:ShowWeapon(var_458_6.transform, false)
-
-				arg_455_1.var_[var_458_4 .. "Animator"] = var_458_6.gameObject:GetComponent(typeof(UnityEngine.Animator))
-				arg_455_1.var_[var_458_4 .. "Animator"].applyRootMotion = true
-				arg_455_1.var_[var_458_4 .. "LipSync"] = var_458_6.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
 			end
 
-			local var_458_8 = 0
+			local var_458_9 = 0
 
-			if var_458_8 < arg_455_1.time_ and arg_455_1.time_ <= var_458_8 + arg_458_0 then
+			if var_458_9 < arg_455_1.time_ and arg_455_1.time_ <= var_458_9 + arg_458_0 then
 				arg_455_1:PlayTimeline("1148ui_story", "StoryTimeline/CharAction/1148/1148actionlink/1148action457")
 			end
 
-			local var_458_9 = "1148ui_story"
+			local var_458_10 = "1148ui_story"
 
-			if arg_455_1.actors_[var_458_9] == nil then
-				local var_458_10 = Object.Instantiate(Asset.Load("Char/" .. var_458_9), arg_455_1.stage_.transform)
+			if arg_455_1.actors_[var_458_10] == nil then
+				local var_458_11 = Asset.Load("Char/" .. "1148ui_story")
 
-				var_458_10.name = var_458_9
-				var_458_10.transform.localPosition = Vector3.New(0, 100, 0)
-				arg_455_1.actors_[var_458_9] = var_458_10
+				if not isNil(var_458_11) then
+					local var_458_12 = Object.Instantiate(Asset.Load("Char/" .. "1148ui_story"), arg_455_1.stage_.transform)
 
-				local var_458_11 = var_458_10:GetComponentInChildren(typeof(CharacterEffect))
+					var_458_12.name = var_458_10
+					var_458_12.transform.localPosition = Vector3.New(0, 100, 0)
+					arg_455_1.actors_[var_458_10] = var_458_12
 
-				var_458_11.enabled = true
+					local var_458_13 = var_458_12:GetComponentInChildren(typeof(CharacterEffect))
 
-				local var_458_12 = GameObjectTools.GetOrAddComponent(var_458_10, typeof(DynamicBoneHelper))
+					var_458_13.enabled = true
 
-				if var_458_12 then
-					var_458_12:EnableDynamicBone(false)
+					local var_458_14 = GameObjectTools.GetOrAddComponent(var_458_12, typeof(DynamicBoneHelper))
+
+					if var_458_14 then
+						var_458_14:EnableDynamicBone(false)
+					end
+
+					arg_455_1:ShowWeapon(var_458_13.transform, false)
+
+					arg_455_1.var_[var_458_10 .. "Animator"] = var_458_13.gameObject:GetComponent(typeof(UnityEngine.Animator))
+					arg_455_1.var_[var_458_10 .. "Animator"].applyRootMotion = true
+					arg_455_1.var_[var_458_10 .. "LipSync"] = var_458_13.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
 				end
-
-				arg_455_1:ShowWeapon(var_458_11.transform, false)
-
-				arg_455_1.var_[var_458_9 .. "Animator"] = var_458_11.gameObject:GetComponent(typeof(UnityEngine.Animator))
-				arg_455_1.var_[var_458_9 .. "Animator"].applyRootMotion = true
-				arg_455_1.var_[var_458_9 .. "LipSync"] = var_458_11.gameObject:GetComponentInChildren(typeof(RogoDigital.Lipsync.LipSync))
 			end
 
-			local var_458_13 = 0
+			local var_458_15 = 0
 
-			if var_458_13 < arg_455_1.time_ and arg_455_1.time_ <= var_458_13 + arg_458_0 then
+			if var_458_15 < arg_455_1.time_ and arg_455_1.time_ <= var_458_15 + arg_458_0 then
 				arg_455_1:PlayTimeline("1148ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface2102cva")
 			end
 
-			local var_458_14 = 0
-			local var_458_15 = 0.375
+			local var_458_16 = 0
+			local var_458_17 = 0.375
 
-			if var_458_14 < arg_455_1.time_ and arg_455_1.time_ <= var_458_14 + arg_458_0 then
+			if var_458_16 < arg_455_1.time_ and arg_455_1.time_ <= var_458_16 + arg_458_0 then
 				arg_455_1.talkMaxDuration = 0
 				arg_455_1.dialogCg_.alpha = 1
 
 				arg_455_1.dialog_:SetActive(true)
 				SetActive(arg_455_1.leftNameGo_, true)
 
-				local var_458_16 = arg_455_1:FormatText(StoryNameCfg[8].name)
+				local var_458_18 = arg_455_1:FormatText(StoryNameCfg[8].name)
 
-				arg_455_1.leftNameTxt_.text = var_458_16
+				arg_455_1.leftNameTxt_.text = var_458_18
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_455_1.leftNameTxt_.transform)
 
@@ -16026,43 +16221,43 @@
 				SetActive(arg_455_1.iconTrs_.gameObject, false)
 				arg_455_1.callingController_:SetSelectedState("normal")
 
-				local var_458_17 = arg_455_1:GetWordFromCfg(114803107)
-				local var_458_18 = arg_455_1:FormatText(var_458_17.content)
+				local var_458_19 = arg_455_1:GetWordFromCfg(114803107)
+				local var_458_20 = arg_455_1:FormatText(var_458_19.content)
 
-				arg_455_1.text_.text = var_458_18
+				arg_455_1.text_.text = var_458_20
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_455_1.text_)
 
-				local var_458_19 = 21
-				local var_458_20 = utf8.len(var_458_18)
-				local var_458_21 = var_458_19 <= 0 and var_458_15 or var_458_15 * (var_458_20 / var_458_19)
+				local var_458_21 = 21
+				local var_458_22 = utf8.len(var_458_20)
+				local var_458_23 = var_458_21 <= 0 and var_458_17 or var_458_17 * (var_458_22 / var_458_21)
 
-				if var_458_21 > 0 and var_458_15 < var_458_21 then
-					arg_455_1.talkMaxDuration = var_458_21
+				if var_458_23 > 0 and var_458_17 < var_458_23 then
+					arg_455_1.talkMaxDuration = var_458_23
 
-					if var_458_21 + var_458_14 > arg_455_1.duration_ then
-						arg_455_1.duration_ = var_458_21 + var_458_14
+					if var_458_23 + var_458_16 > arg_455_1.duration_ then
+						arg_455_1.duration_ = var_458_23 + var_458_16
 					end
 				end
 
-				arg_455_1.text_.text = var_458_18
+				arg_455_1.text_.text = var_458_20
 				arg_455_1.typewritter.percent = 0
 
 				arg_455_1.typewritter:SetDirty()
 				arg_455_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_side_old_114803", "114803107", "story_v_side_old_114803.awb") ~= 0 then
-					local var_458_22 = manager.audio:GetVoiceLength("story_v_side_old_114803", "114803107", "story_v_side_old_114803.awb") / 1000
+					local var_458_24 = manager.audio:GetVoiceLength("story_v_side_old_114803", "114803107", "story_v_side_old_114803.awb") / 1000
 
-					if var_458_22 + var_458_14 > arg_455_1.duration_ then
-						arg_455_1.duration_ = var_458_22 + var_458_14
+					if var_458_24 + var_458_16 > arg_455_1.duration_ then
+						arg_455_1.duration_ = var_458_24 + var_458_16
 					end
 
-					if var_458_17.prefab_name ~= "" and arg_455_1.actors_[var_458_17.prefab_name] ~= nil then
-						local var_458_23 = LuaForUtil.PlayVoiceWithCriLipsync(arg_455_1.actors_[var_458_17.prefab_name].transform, "story_v_side_old_114803", "114803107", "story_v_side_old_114803.awb")
+					if var_458_19.prefab_name ~= "" and arg_455_1.actors_[var_458_19.prefab_name] ~= nil then
+						local var_458_25 = LuaForUtil.PlayVoiceWithCriLipsync(arg_455_1.actors_[var_458_19.prefab_name].transform, "story_v_side_old_114803", "114803107", "story_v_side_old_114803.awb")
 
-						arg_455_1:RecordAudio("114803107", var_458_23)
-						arg_455_1:RecordAudio("114803107", var_458_23)
+						arg_455_1:RecordAudio("114803107", var_458_25)
+						arg_455_1:RecordAudio("114803107", var_458_25)
 					else
 						arg_455_1:AudioAction("play", "voice", "story_v_side_old_114803", "114803107", "story_v_side_old_114803.awb")
 					end
@@ -16073,15 +16268,15 @@
 				arg_455_1:RecordContent(arg_455_1.text_.text)
 			end
 
-			local var_458_24 = math.max(var_458_15, arg_455_1.talkMaxDuration)
+			local var_458_26 = math.max(var_458_17, arg_455_1.talkMaxDuration)
 
-			if var_458_14 <= arg_455_1.time_ and arg_455_1.time_ < var_458_14 + var_458_24 then
-				arg_455_1.typewritter.percent = (arg_455_1.time_ - var_458_14) / var_458_24
+			if var_458_16 <= arg_455_1.time_ and arg_455_1.time_ < var_458_16 + var_458_26 then
+				arg_455_1.typewritter.percent = (arg_455_1.time_ - var_458_16) / var_458_26
 
 				arg_455_1.typewritter:SetDirty()
 			end
 
-			if arg_455_1.time_ >= var_458_14 + var_458_24 and arg_455_1.time_ < var_458_14 + var_458_24 + arg_458_0 then
+			if arg_455_1.time_ >= var_458_16 + var_458_26 and arg_455_1.time_ < var_458_16 + var_458_26 + arg_458_0 then
 				arg_455_1.typewritter.percent = 1
 
 				arg_455_1.typewritter:SetDirty()
@@ -16114,16 +16309,16 @@
 			local var_462_0 = arg_459_1.actors_["1148ui_story"]
 			local var_462_1 = 0
 
-			if var_462_1 < arg_459_1.time_ and arg_459_1.time_ <= var_462_1 + arg_462_0 and arg_459_1.var_.characterEffect1148ui_story == nil then
+			if var_462_1 < arg_459_1.time_ and arg_459_1.time_ <= var_462_1 + arg_462_0 and not isNil(var_462_0) and arg_459_1.var_.characterEffect1148ui_story == nil then
 				arg_459_1.var_.characterEffect1148ui_story = var_462_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_462_2 = 0.2
 
-			if var_462_1 <= arg_459_1.time_ and arg_459_1.time_ < var_462_1 + var_462_2 then
+			if var_462_1 <= arg_459_1.time_ and arg_459_1.time_ < var_462_1 + var_462_2 and not isNil(var_462_0) then
 				local var_462_3 = (arg_459_1.time_ - var_462_1) / var_462_2
 
-				if arg_459_1.var_.characterEffect1148ui_story then
+				if arg_459_1.var_.characterEffect1148ui_story and not isNil(var_462_0) then
 					local var_462_4 = Mathf.Lerp(0, 0.5, var_462_3)
 
 					arg_459_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -16131,7 +16326,7 @@
 				end
 			end
 
-			if arg_459_1.time_ >= var_462_1 + var_462_2 and arg_459_1.time_ < var_462_1 + var_462_2 + arg_462_0 and arg_459_1.var_.characterEffect1148ui_story then
+			if arg_459_1.time_ >= var_462_1 + var_462_2 and arg_459_1.time_ < var_462_1 + var_462_2 + arg_462_0 and not isNil(var_462_0) and arg_459_1.var_.characterEffect1148ui_story then
 				local var_462_5 = 0.5
 
 				arg_459_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -16164,8 +16359,15 @@
 				arg_459_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_459_1:RecordName(arg_459_1.leftNameTxt_.text)
-				SetActive(arg_459_1.iconTrs_.gameObject, false)
+				SetActive(arg_459_1.iconTrs_.gameObject, true)
+				arg_459_1.iconController_:SetSelectedState("hero")
+
+				arg_459_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_459_1.callingController_:SetSelectedState("normal")
+
+				arg_459_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_459_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_462_10 = arg_459_1:GetWordFromCfg(114803108)
 				local var_462_11 = arg_459_1:FormatText(var_462_10.content)
@@ -16247,21 +16449,21 @@
 			local var_466_0 = arg_463_1.actors_["1148ui_story"]
 			local var_466_1 = 0
 
-			if var_466_1 < arg_463_1.time_ and arg_463_1.time_ <= var_466_1 + arg_466_0 and arg_463_1.var_.characterEffect1148ui_story == nil then
+			if var_466_1 < arg_463_1.time_ and arg_463_1.time_ <= var_466_1 + arg_466_0 and not isNil(var_466_0) and arg_463_1.var_.characterEffect1148ui_story == nil then
 				arg_463_1.var_.characterEffect1148ui_story = var_466_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_466_2 = 0.2
 
-			if var_466_1 <= arg_463_1.time_ and arg_463_1.time_ < var_466_1 + var_466_2 then
+			if var_466_1 <= arg_463_1.time_ and arg_463_1.time_ < var_466_1 + var_466_2 and not isNil(var_466_0) then
 				local var_466_3 = (arg_463_1.time_ - var_466_1) / var_466_2
 
-				if arg_463_1.var_.characterEffect1148ui_story then
+				if arg_463_1.var_.characterEffect1148ui_story and not isNil(var_466_0) then
 					arg_463_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_463_1.time_ >= var_466_1 + var_466_2 and arg_463_1.time_ < var_466_1 + var_466_2 + arg_466_0 and arg_463_1.var_.characterEffect1148ui_story then
+			if arg_463_1.time_ >= var_466_1 + var_466_2 and arg_463_1.time_ < var_466_1 + var_466_2 + arg_466_0 and not isNil(var_466_0) and arg_463_1.var_.characterEffect1148ui_story then
 				arg_463_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -16625,8 +16827,15 @@
 				arg_475_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_475_1:RecordName(arg_475_1.leftNameTxt_.text)
-				SetActive(arg_475_1.iconTrs_.gameObject, false)
+				SetActive(arg_475_1.iconTrs_.gameObject, true)
+				arg_475_1.iconController_:SetSelectedState("hero")
+
+				arg_475_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_475_1.callingController_:SetSelectedState("normal")
+
+				arg_475_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_475_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_478_4 = arg_475_1:GetWordFromCfg(114803112)
 				local var_478_5 = arg_475_1:FormatText(var_478_4.content)
@@ -16696,21 +16905,21 @@
 			local var_482_0 = arg_479_1.actors_["1148ui_story"]
 			local var_482_1 = 0
 
-			if var_482_1 < arg_479_1.time_ and arg_479_1.time_ <= var_482_1 + arg_482_0 and arg_479_1.var_.characterEffect1148ui_story == nil then
+			if var_482_1 < arg_479_1.time_ and arg_479_1.time_ <= var_482_1 + arg_482_0 and not isNil(var_482_0) and arg_479_1.var_.characterEffect1148ui_story == nil then
 				arg_479_1.var_.characterEffect1148ui_story = var_482_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_482_2 = 0.2
 
-			if var_482_1 <= arg_479_1.time_ and arg_479_1.time_ < var_482_1 + var_482_2 then
+			if var_482_1 <= arg_479_1.time_ and arg_479_1.time_ < var_482_1 + var_482_2 and not isNil(var_482_0) then
 				local var_482_3 = (arg_479_1.time_ - var_482_1) / var_482_2
 
-				if arg_479_1.var_.characterEffect1148ui_story then
+				if arg_479_1.var_.characterEffect1148ui_story and not isNil(var_482_0) then
 					arg_479_1.var_.characterEffect1148ui_story.fillFlat = false
 				end
 			end
 
-			if arg_479_1.time_ >= var_482_1 + var_482_2 and arg_479_1.time_ < var_482_1 + var_482_2 + arg_482_0 and arg_479_1.var_.characterEffect1148ui_story then
+			if arg_479_1.time_ >= var_482_1 + var_482_2 and arg_479_1.time_ < var_482_1 + var_482_2 + arg_482_0 and not isNil(var_482_0) and arg_479_1.var_.characterEffect1148ui_story then
 				arg_479_1.var_.characterEffect1148ui_story.fillFlat = false
 			end
 
@@ -16837,16 +17046,16 @@
 			local var_486_0 = arg_483_1.actors_["1148ui_story"]
 			local var_486_1 = 0
 
-			if var_486_1 < arg_483_1.time_ and arg_483_1.time_ <= var_486_1 + arg_486_0 and arg_483_1.var_.characterEffect1148ui_story == nil then
+			if var_486_1 < arg_483_1.time_ and arg_483_1.time_ <= var_486_1 + arg_486_0 and not isNil(var_486_0) and arg_483_1.var_.characterEffect1148ui_story == nil then
 				arg_483_1.var_.characterEffect1148ui_story = var_486_0:GetComponentInChildren(typeof(CharacterEffect))
 			end
 
 			local var_486_2 = 0.2
 
-			if var_486_1 <= arg_483_1.time_ and arg_483_1.time_ < var_486_1 + var_486_2 then
+			if var_486_1 <= arg_483_1.time_ and arg_483_1.time_ < var_486_1 + var_486_2 and not isNil(var_486_0) then
 				local var_486_3 = (arg_483_1.time_ - var_486_1) / var_486_2
 
-				if arg_483_1.var_.characterEffect1148ui_story then
+				if arg_483_1.var_.characterEffect1148ui_story and not isNil(var_486_0) then
 					local var_486_4 = Mathf.Lerp(0, 0.5, var_486_3)
 
 					arg_483_1.var_.characterEffect1148ui_story.fillFlat = true
@@ -16854,7 +17063,7 @@
 				end
 			end
 
-			if arg_483_1.time_ >= var_486_1 + var_486_2 and arg_483_1.time_ < var_486_1 + var_486_2 + arg_486_0 and arg_483_1.var_.characterEffect1148ui_story then
+			if arg_483_1.time_ >= var_486_1 + var_486_2 and arg_483_1.time_ < var_486_1 + var_486_2 + arg_486_0 and not isNil(var_486_0) and arg_483_1.var_.characterEffect1148ui_story then
 				local var_486_5 = 0.5
 
 				arg_483_1.var_.characterEffect1148ui_story.fillFlat = true

@@ -19,7 +19,7 @@
 		organization = "8a0c7ec85966c8ef0bb118cb6b54777a",
 		heart_chain4 = "b58d063406f389226c16d28c90148153",
 		heart_chain3 = "05189dabefff7b4a481dd5c171f9c64a",
-		weight = "39kg",
+		weight = "6cbae06ac5f02ce64e0030ec6c09e833",
 		hero_id = {
 			1011,
 			1111
@@ -64,7 +64,7 @@
 		organization = "7e39dd11753256cf7514c0ffd7c87185",
 		heart_chain4 = "0a47fd8454172617ff1f3441edad8b41",
 		heart_chain3 = "30bd36909cb87646af463a9bb577bea2",
-		weight = "42kg",
+		weight = "7bfa89490d1e81418726d3ad131135df",
 		hero_id = {
 			1013
 		},
@@ -100,7 +100,7 @@
 		organization = "954c80ab1ceb0631a4f94d1ed42929d0",
 		heart_chain4 = "32d3fdfa14cdb58af5f9c6db818cc865",
 		heart_chain3 = "0539c734ce144ad6493621243128da4f",
-		weight = "56kg",
+		weight = "3f6be5753ac0f4f1b166dfcefb685d0b",
 		hero_id = {
 			1015
 		},
@@ -136,7 +136,7 @@
 		organization = "dc2b98f4b45ebcc03f2aa21a252f9996",
 		heart_chain4 = "0bf1af45847bcf33603e2f9012b40665",
 		heart_chain3 = "509f06dfcc801b88a163207e4b6c5278",
-		weight = "55kg",
+		weight = "4c93f2e642fba217ccbb50c53b3086b2",
 		hero_id = {
 			1016
 		},
@@ -172,7 +172,7 @@
 		organization = "0a237de81499367939ff0b38f675a5e4",
 		heart_chain4 = "e50a0039ce3cb82a8efb01adc7e0a682",
 		heart_chain3 = "880059d1f700ee1618ad78dee7357deb",
-		weight = "51kg",
+		weight = "ad94da621e7b045e11a94d36a891a498",
 		hero_id = {
 			1017
 		},
@@ -208,7 +208,7 @@
 		organization = "649a4c10f86c94c913f2d2055023567f",
 		heart_chain4 = "863b17edc49c44e7782982f7fbdf1b76",
 		heart_chain3 = "d44a734fd16f495903d3303209565d62",
-		weight = "56kg",
+		weight = "535a407f03ecbc6364b202174b80add9",
 		hero_id = {
 			1019,
 			1119
@@ -253,7 +253,7 @@
 		organization = "46bd2c623f69d528f9e2a43f8d244fe4",
 		heart_chain4 = "cdb6e1eba623cecd9ed2e41ceca7fd80",
 		heart_chain3 = "84bde7f7f7825a07b28a961df0c3f6a8",
-		weight = "40kg",
+		weight = "a2f028f4d465b028c55bcc443e07b97f",
 		hero_id = {
 			1020
 		},
@@ -289,7 +289,7 @@
 		organization = "c98651b2fe0564ff44a5480c21fa37c4",
 		heart_chain4 = "9c81d4bea96d68c951c8d01f98687b91",
 		heart_chain3 = "4630bd59adf377ee8241c13e3de3f181",
-		weight = "48kg",
+		weight = "7bd0dd8b2252b6c6311288f2b35c1131",
 		hero_id = {
 			1021
 		},
@@ -325,7 +325,7 @@
 		organization = "2d156f884099069ae0e6f5afbe2713d6",
 		heart_chain4 = "48485550c7e551afdabdbdeca59caa03",
 		heart_chain3 = "f2369b0da69b198cadb8f8b59dc1edff",
-		weight = "57kg",
+		weight = "89bc91ef3e90b64eb0f01d13f2c4cf78",
 		hero_id = {
 			1022
 		},
@@ -361,7 +361,7 @@
 		organization = "3a259d5bb8e88cd8216493dec903f475",
 		heart_chain4 = "c42f89b4ed1fe8d6a2be99713f7856ef",
 		heart_chain3 = "258e6f7bdc7b8dc69713ba1d3cc05a75",
-		weight = "65kg",
+		weight = "fa6002205b5a94dcca3f8a32eae01885",
 		hero_id = {
 			1024
 		},
@@ -402,7 +402,7 @@
 		organization = "d64d168dbdae95abdbe510e13ef0a1ec",
 		heart_chain4 = "db5172e012dae32c2661433a950aadc1",
 		heart_chain3 = "de270108501a22ee5b627fe842946031",
-		weight = "76kg",
+		weight = "3d1d280ec0695a879b4d62537f522a77",
 		hero_id = {
 			1026
 		},
@@ -443,7 +443,7 @@
 		organization = "f82e4ff00f33c231e564c8b0e748b290",
 		heart_chain4 = "7335c6c88655271b28b0946e511d10bd",
 		heart_chain3 = "651aede271a964dbc77360648c587cc1",
-		weight = "44kg",
+		weight = "873a67105899bfd88acda6f3eb03cd23",
 		hero_id = {
 			1027,
 			1127
@@ -488,7 +488,7 @@
 		organization = "2a52d0a52b63f4a878f1a0f942a57d16",
 		heart_chain4 = "5c28d1e03a01b409c9644ffab5f16a59",
 		heart_chain3 = "83f6634904051b839fa10b8ca9f3e60a",
-		weight = "55kg",
+		weight = "b7fd8c7252bfba46ffeb3bfe344dd699",
 		hero_id = {
 			1028
 		},
@@ -529,7 +529,7 @@
 		organization = "4a581d8796b39c21dc3cf215dabdf7eb",
 		heart_chain4 = "04913b6e43c282f53ff7a0228a51c525",
 		heart_chain3 = "6506b337a97f6498319b49cfa86fa866",
-		weight = "78kg",
+		weight = "a45015ab9091ee1a7847508bc821b895",
 		hero_id = {
 			1032,
 			1132
@@ -566,7 +566,7 @@
 		organization = "dec389ac1584212bec9b4994dc84744d",
 		heart_chain4 = "6aa864e217746a04508fba10acf7c5c5",
 		heart_chain3 = "5771b24f8e74130142c9d68e0ca2426a",
-		weight = "42kg",
+		weight = "c19358e84f8334b57453e474d73068f2",
 		hero_id = {
 			1033
 		},
@@ -607,7 +607,7 @@
 		organization = "8217bfbeece8affe5455b2950637319e",
 		heart_chain4 = "b6e52fb4e435a8a1ee5c7bddb268d085",
 		heart_chain3 = "104e019078d3d3dfab5497b555c9d0d5",
-		weight = "66kg",
+		weight = "0db16cbc6b80b4a87d7942da5293409b",
 		hero_id = {
 			1035
 		},
@@ -643,7 +643,7 @@
 		organization = "973d9d78147577143e931da20bed4e35",
 		heart_chain4 = "03ddbc44fbdd9ccf281af93eab0998b1",
 		heart_chain3 = "cd72aed8db4936c858f76f161060f9cb",
-		weight = "58kg",
+		weight = "8b25c53e667e406ad9204317824a9bfa",
 		hero_id = {
 			1037
 		},
@@ -684,7 +684,7 @@
 		organization = "27131fa333a924eb4d77530f0a519c68",
 		heart_chain4 = "6d85aae3f354e75cb8171da6d5d07e93",
 		heart_chain3 = "fc12fc88dd19e4b0b4bb6282ea5ef0ff",
-		weight = "52kg",
+		weight = "a91a2cae6494d026da34356a0a66a24d",
 		hero_id = {
 			1038,
 			1138
@@ -726,7 +726,7 @@
 		organization = "f30c0cef3124ef7fdf61437032e8acf6",
 		heart_chain4 = "b105bb522e1f73b04bbdb537c64373b7",
 		heart_chain3 = "e77997c177b442eefbe0f5053bc6e17f",
-		weight = "55kg",
+		weight = "ff93fb2c3c95494fb25b4bae29df0d32",
 		hero_id = {
 			1039,
 			1139
@@ -771,7 +771,7 @@
 		organization = "e3163063c730b7d2d47e2e7ad652eed2",
 		heart_chain4 = "7f91f3dfd7cab983d55fe05a0e1d348d",
 		heart_chain3 = "f9f926e33f3212221d5172f2adeb9280",
-		weight = "54kg",
+		weight = "b748bd9e1f376e203749ac45a9a7456c",
 		hero_id = {
 			1041
 		},
@@ -815,7 +815,7 @@
 		organization = "98325be8b32108beef029c1b40d73749",
 		heart_chain4 = "9c32ad2a8d844c6a042fc0fd2b48ea27",
 		heart_chain3 = "794547471a56310e90c45e034aea6277",
-		weight = "58kg",
+		weight = "042a77f621249d91291477a8b2f0ad98",
 		hero_id = {
 			1042
 		},
@@ -850,13 +850,13 @@
 		plot_tip_picture = "1045",
 		cv_en = "",
 		age_en = "",
-		cv_zh = "",
+		cv_zh = "27b3c9907139f537c98f8097ee261a15",
 		cv_ja = "645ccfb20cdfc3b03570e93cce4048a5",
 		heart_chain2 = "104fc8228b226c1283f9d38e87b9a0f0",
 		organization = "bf400ab93447b795c4be652cf42c4400",
 		heart_chain4 = "d0a021a2019702c3ef91c83038b4577e",
 		heart_chain3 = "8eab6a77d5ad4b1be581d34bb3dcbde4",
-		weight = "未知",
+		weight = "c91de00479dc4921595e49447151814c",
 		hero_id = {
 			1045
 		},
@@ -886,13 +886,13 @@
 		plot_tip_picture = "1046",
 		cv_en = "",
 		age_en = "",
-		cv_zh = "",
+		cv_zh = "c6e18f1cd06efb8015ce864b004817e8",
 		cv_ja = "bc25309b92719cf61e4f14e313ddb3b5",
 		heart_chain2 = "048f779d23c0a7d8613f063a4755d53c",
 		organization = "74fe7f57d4921e7cf37498f9dbf00d80",
 		heart_chain4 = "f851244e58a982e9458fe94074544e46",
 		heart_chain3 = "c351ce45cc3859d2142790fa40382143",
-		weight = "未知",
+		weight = "c3ee4d867287dc26ce537b97372d2390",
 		hero_id = {
 			1046
 		},
@@ -928,7 +928,7 @@
 		organization = "dbe4a866faedc177c09f5219fb58471d",
 		heart_chain4 = "3a83a310af28ab45b5cf9da93544ff5d",
 		heart_chain3 = "5aff08eaa269f2af019cabba5af34283",
-		weight = "41kg",
+		weight = "5764f48e649d3ab2515e0dd95358932c",
 		hero_id = {
 			1148,
 			1048
@@ -973,7 +973,7 @@
 		organization = "c8431b2785c3220f537550d01e671880",
 		heart_chain4 = "42207ced920976e17f8d1687fa6f4862",
 		heart_chain3 = "74eef35fe5d3a776c9d7f14290dc68d0",
-		weight = "47kg",
+		weight = "7e9c1a6418d65c64217d871c4a154c40",
 		hero_id = {
 			1049
 		},
@@ -1014,7 +1014,7 @@
 		organization = "30ad58d049ae8c8331027fdefc8b4a47",
 		heart_chain4 = "e49860b914073a0a78272bb532e29558",
 		heart_chain3 = "e7e88f22effa8b6ee6487c4abb591b5d",
-		weight = "53kg",
+		weight = "de98815ffdde1d383b60cc74e596ffbe",
 		hero_id = {
 			1050,
 			1150
@@ -1056,7 +1056,7 @@
 		organization = "b6de85c85b8905ca854dfae703391a5d",
 		heart_chain4 = "3c9ad6c9f092195cfe17af04159c84be",
 		heart_chain3 = "3ff33b637df7a42dcd9bf25d740eefb3",
-		weight = "85kg",
+		weight = "5442542237175b2feceaf87ca0da2c2f",
 		hero_id = {
 			1052
 		},
@@ -1092,7 +1092,7 @@
 		organization = "d652558fc1f0c432ed6495df050b6124",
 		heart_chain4 = "2d2227f929c6513316a2131acb35c701",
 		heart_chain3 = "30f4360e4e93a14c42b491055f40a0f3",
-		weight = "48kg",
+		weight = "07f3fe0538f72f0daad698fa0774d321",
 		hero_id = {
 			1055
 		},
@@ -1133,7 +1133,7 @@
 		organization = "099d75eb49e7a446def7f4977075234d",
 		heart_chain4 = "8be98cf16601b1a93aca4f65a649d719",
 		heart_chain3 = "6bcb106ff5337a44f0af6f1363027e61",
-		weight = "50kg",
+		weight = "d27e31d6d12ff1f5548141261ba06196",
 		hero_id = {
 			1056,
 			1156
@@ -1170,7 +1170,7 @@
 		organization = "8a34230baee342fede79ca6906117a25",
 		heart_chain4 = "ca0bb65907009dc41d613303ab83d127",
 		heart_chain3 = "9f3c99d2978b0da29ef3cbc669a1a84b",
-		weight = "53kg",
+		weight = "1f7f13ec58ff93aa6964e0ee84c2465b",
 		hero_id = {
 			1058,
 			1158
@@ -1212,7 +1212,7 @@
 		organization = "71d6ca9d55509a6aa1fc381e26f052e4",
 		heart_chain4 = "c45d96bbb57d8f94b96b297bcfd7f4c7",
 		heart_chain3 = "7721843d68a4a9fa089fb3f9306c775c",
-		weight = "73kg",
+		weight = "4f4afee67991714c1edf7b71da915cca",
 		hero_id = {
 			1059
 		},
@@ -1253,7 +1253,7 @@
 		organization = "5322a3b8384384eaaca5485e39f17c7d",
 		heart_chain4 = "cc50de6db370d62ebd1d9dcf1e2c2172",
 		heart_chain3 = "bbda4df36dd31359035d179035322923",
-		weight = "56kg",
+		weight = "c27a4cfe32977b12483256611b1da4f1",
 		hero_id = {
 			1060
 		},
@@ -1289,7 +1289,7 @@
 		organization = "2c8a10effd5ee4700f40a23fadff8e60",
 		heart_chain4 = "8adbdddaa89e790a6abc954edd3d4a65",
 		heart_chain3 = "6d43cb242547f08bbe6f3095127e3568",
-		weight = "45kg",
+		weight = "9fa710296b18eddb7f268179ed77a3b3",
 		hero_id = {
 			1061
 		},
@@ -1325,7 +1325,7 @@
 		organization = "efa15a3c1e57f7e0e1c7e67c9cfe62ed",
 		heart_chain4 = "4a3329291c72c05b5846f2108a31841c",
 		heart_chain3 = "143ef17e636b62bf8077a02a763e72e4",
-		weight = "41kg",
+		weight = "b65115dbb288348d9ad5e1fe8bea11f3",
 		hero_id = {
 			1066
 		},
@@ -1369,7 +1369,7 @@
 		organization = "bb7e7da49312b531337e8eecc25c53fa",
 		heart_chain4 = "5b4b0d34e449789cc63c05cd51086694",
 		heart_chain3 = "b0298ff86e262595692a344df5637def",
-		weight = "70kg",
+		weight = "ae0ce625172432f9cb4e8ceda97155e2",
 		hero_id = {
 			1067
 		},
@@ -1410,7 +1410,7 @@
 		organization = "9618534601364e6ee11a27f6f28e397b",
 		heart_chain4 = "c7d31da78c95364a516d8cc537359d4c",
 		heart_chain3 = "d655c2e5a695f4a5e2ab446914c6b9d5",
-		weight = "47kg",
+		weight = "7ab0c3dd77e02004d929c415af11f824",
 		hero_id = {
 			1068
 		},
@@ -1451,7 +1451,7 @@
 		organization = "d09dc2fa8e0ac88fd303e594e930ee19",
 		heart_chain4 = "b19827b9ce9513e16f98a900e995f72c",
 		heart_chain3 = "99d7312d532ef44c6215bfa5b8893981",
-		weight = "54kg",
+		weight = "b2b77211ca168d044348cba3df3f8aa1",
 		hero_id = {
 			1070
 		},
@@ -1492,7 +1492,7 @@
 		organization = "a12e1b215145ab5b02340ae29111bdbf",
 		heart_chain4 = "a19aa71a1b22cc97acb2c8b8e1a1ce40",
 		heart_chain3 = "5ed268eaee327efd76f812b565fa978a",
-		weight = "75kg",
+		weight = "83f0352c2e5d5df2eb9a8835a44a48c7",
 		hero_id = {
 			1071
 		},
@@ -1528,7 +1528,7 @@
 		organization = "3982f250d03d6dd6b96749fbe3086a23",
 		heart_chain4 = "89b4e8bfe37b4cac1ba443cd5e615b9c",
 		heart_chain3 = "07a100d2f6b62985fedd199565c7d2bf",
-		weight = "39kg",
+		weight = "a4a7c647f1591745348258f58ad5c86c",
 		hero_id = {
 			1072
 		},
@@ -1564,7 +1564,7 @@
 		organization = "0c0fb90272fc9933f41abfa884ff4efc",
 		heart_chain4 = "0b295a502410e3a54ad4b3cea40ea46c",
 		heart_chain3 = "201acde42f0b7b7f611480306d57b040",
-		weight = "58kg",
+		weight = "7e368856da342de246eab3c4b59cff2b",
 		hero_id = {
 			1074
 		},
@@ -1605,7 +1605,7 @@
 		organization = "3a4ecffd97117613c04bf3109993c576",
 		heart_chain4 = "acec6db93c0fad799bd29f6e8f291e12",
 		heart_chain3 = "16734e38fc2f0a927f6d50bd1d7319d3",
-		weight = "60kg",
+		weight = "8ea602bffc63b9d256cc43f4c3c8069e",
 		hero_id = {
 			1075
 		},
@@ -1646,7 +1646,7 @@
 		organization = "b463faef9008474a462293c03b52f11c",
 		heart_chain4 = "7414003d8da8638dbc4f99499cb788af",
 		heart_chain3 = "59a4aa52f5a05f53c7d0727a93ee7a56",
-		weight = "62kg",
+		weight = "31dd2275e928dd515a5331b65d208832",
 		hero_id = {
 			1076
 		},
@@ -1682,7 +1682,7 @@
 		organization = "16163bf80b893f6552669f24fac421b1",
 		heart_chain4 = "7796232c58ff372676b8e655bb5a5e33",
 		heart_chain3 = "8d71d989b9b01e63c4a2560f6b4a86c3",
-		weight = "53kg",
+		weight = "8157d5a1cb1f5a04d8a4aeddd9dd0150",
 		hero_id = {
 			1080
 		},
@@ -1723,7 +1723,7 @@
 		organization = "0353358d8d85921220bdf920d45bb95f",
 		heart_chain4 = "944b0baa20d8553fc9d3843c21c644a8",
 		heart_chain3 = "220819f9b90b19026ae4c6b9c1d5c0c6",
-		weight = "53kg",
+		weight = "0fb439d46e0d3f7fff1763288e1075b6",
 		hero_id = {
 			1081
 		},
@@ -1767,7 +1767,7 @@
 		organization = "c40132d5a350ac0506c8cb899e9ad642",
 		heart_chain4 = "dcf8863477d065747fb00e8a8beb5a40",
 		heart_chain3 = "15bd44745eff4229cf7e58948152d102",
-		weight = "55kg",
+		weight = "9fce1291f055be464eae986e7c221b25",
 		hero_id = {
 			1084,
 			1184,
@@ -1810,7 +1810,7 @@
 		organization = "882d0808ca359a96821cbd5e34ca2d23",
 		heart_chain4 = "7c165ef1b431a2f409df41b7b9bcd72a",
 		heart_chain3 = "20c04d7eacd367cfbbfdafdeddbe538f",
-		weight = "58kg",
+		weight = "34888e3e43d56c46d1f5c0a11c0e2a50",
 		hero_id = {
 			1089
 		},
@@ -1846,7 +1846,7 @@
 		organization = "e9358834b5a0f5fdd7767e1c10fbd6ba",
 		heart_chain4 = "8a5e791d367edf4da978ac3b35b02883",
 		heart_chain3 = "216606ce9f7bb760ba0a6f4ca37b45b6",
-		weight = "57kg",
+		weight = "f2258696dee4e5e7fdfe36f01645268b",
 		hero_id = {
 			1093
 		},
@@ -1887,7 +1887,7 @@
 		organization = "dfc74c2cf94ee2707fcd0da7d10e99c4",
 		heart_chain4 = "f3d1efa70fb8cb7fc09ad2b7efb2f478",
 		heart_chain3 = "5a861e16dcfc300a760d418c7e124bfa",
-		weight = "40kg",
+		weight = "e29c8fb67f19dfb8a8daf81697bc6b23",
 		hero_id = {
 			1094
 		},
@@ -1928,7 +1928,7 @@
 		organization = "c21c50b1cecc03975df6417e27c34808",
 		heart_chain4 = "d4af44f1f471dc330f3ee5d8d2a6820d",
 		heart_chain3 = "7bd553c116b1804d92094a557c324e8f",
-		weight = "49kg",
+		weight = "a477a8c3f7a92364d99eda9c7877a181",
 		hero_id = {
 			1095
 		},
@@ -1969,7 +1969,7 @@
 		organization = "aae797e12d7173a4282eebf533696652",
 		heart_chain4 = "0de5b8639e497a537dd5830367c57066",
 		heart_chain3 = "4a4d4704cf24b43bfe624d26f7066de9",
-		weight = "56kg",
+		weight = "df1d30d1ca267a20d741a826bd2ae880",
 		hero_id = {
 			1096
 		},
@@ -2010,7 +2010,7 @@
 		organization = "503059d4bb680d1670e62582b22649ea",
 		heart_chain4 = "9fcb1864473719606c6429e99d25f23a",
 		heart_chain3 = "6d2aa57b9b2d7d490fb2c84d68c42131",
-		weight = "39kg",
+		weight = "efc7f4ed3984040fff7f1b2309e7788e",
 		hero_id = {
 			1097,
 			1197
@@ -2052,7 +2052,7 @@
 		organization = "c54a96f9bd65a67253639bb2709e821a",
 		heart_chain4 = "a00de05fcb39302d28778b326a6248e1",
 		heart_chain3 = "152a229fbd18f7e503ea78b4087d8849",
-		weight = "58kg",
+		weight = "38afccac74b0d0af097ff3de93f37562",
 		hero_id = {
 			1099,
 			1199

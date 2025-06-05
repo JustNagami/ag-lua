@@ -716,7 +716,7 @@
 	},
 	[1046202] = {
 		name = "8a93eedb346f58c6fb6a6e9cb33c57d9",
-		cd = 0,
+		cd = 2000,
 		strengthen_desc = "",
 		simpleDesc = "1ad0d044a342bbe392697bd0943d775a",
 		MaxUseCount = 0,

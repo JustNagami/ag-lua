@@ -18,6 +18,7 @@ function var_0_0.InitUI(arg_3_0)
 	arg_3_0.selectController_ = arg_3_0.mainControllerEx_:GetController("select")
 	arg_3_0.cardController_ = arg_3_0.mainControllerEx_:GetController("card")
 	arg_3_0.skillController_ = arg_3_0.mainControllerEx_:GetController("bg02")
+	arg_3_0.newController_ = arg_3_0.mainControllerEx_:GetController("new")
 end
 
 function var_0_0.AddUIListener(arg_4_0)
@@ -43,8 +44,8 @@ function var_0_0.UpdateView(arg_7_0)
 		arg_7_0.cardController_:SetSelectedState("skill")
 
 		arg_7_0.skillTypeText_.text = GetTips("GODEATER_CIVILIZATION_FACTOR_TYPE_2")
-		arg_7_0.skillTitleText_.text = var_7_0.name
-		arg_7_0.skillDescText_.text = var_7_0.description
+		arg_7_0.skillTitleText_.text = GetI18NText(var_7_0.name)
+		arg_7_0.skillDescText_.text = GetI18NText(var_7_0.description)
 		arg_7_0.skillImg_.sprite = getSpriteViaConfig("CivilizationGame", var_7_0.icon)
 	else
 		arg_7_0.cardController_:SetSelectedState("hex")
@@ -65,8 +66,8 @@ function var_0_0.UpdateView(arg_7_0)
 			arg_7_0.hexTypeText_.text = GetTips("GODEATER_CIVILIZATION_FACTOR_TYPE_3")
 		end
 
-		arg_7_0.hexTitleText_.text = var_7_0.name
-		arg_7_0.hexDescText_.text = var_7_0.description
+		arg_7_0.hexTitleText_.text = GetI18NText(var_7_0.name)
+		arg_7_0.hexDescText_.text = GetI18NText(var_7_0.description)
 		arg_7_0.hexImg_.sprite = getSpriteViaConfig("CivilizationGame", var_7_0.icon)
 	end
 
@@ -78,7 +79,19 @@ function var_0_0.UpdateView(arg_7_0)
 		local var_7_3 = ActivityCivilizationIlluCfg[var_7_0.associated_illustrations]
 
 		arg_7_0.skillIcon_.sprite = getSpriteViaConfig("CivilizationGame", var_7_3.picture)
-		arg_7_0.skillText_.text = var_7_3.name
+		arg_7_0.skillText_.text = GetI18NText(var_7_3.name)
+	end
+
+	local var_7_4 = ActivityCivilizationIlluCfg.get_id_list_by_target_id[arg_7_0.skillID_]
+
+	if var_7_4 and var_7_4[1] then
+		local var_7_5 = CivilizationGameData:GetDataByPara("illu_list")
+
+		if table.indexof(var_7_5, var_7_4[1]) then
+			arg_7_0.newController_:SetSelectedState("off")
+		else
+			arg_7_0.newController_:SetSelectedState("on")
+		end
 	end
 end
 

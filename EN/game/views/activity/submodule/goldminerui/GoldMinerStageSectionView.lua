@@ -127,11 +127,23 @@ function var_0_0.OnUpdate(arg_12_0)
 	end
 
 	arg_12_0.activityID_ = arg_12_0.params_.activityID
+	arg_12_0.isActivityOpen_ = arg_12_0.params_.isActivityOpen
+	arg_12_0.isUnLock_ = arg_12_0.params_.isUnLock
 	arg_12_0.systemCfg_ = ActivityGodEaterGoldminerStageCfg[arg_12_0.activityID_]
 
 	arg_12_0:RefreshData()
 
 	arg_12_0.sectionName_.text = arg_12_0.systemCfg_.name
+
+	if not arg_12_0.isActivityOpen_ then
+		local var_12_0 = manager.time:GetLostTimeStr(ActivityData:GetActivityData(arg_12_0.activityID_).startTime)
+
+		arg_12_0.btnLockText_.text = string.format(GetTips("GOLDMINER_ENTER_TIPS_1"), var_12_0)
+	elseif not arg_12_0.isUnLock_ then
+		arg_12_0.btnLockText_.text = GetTips("GOLDMINER_ENTER_TIPS_2")
+	end
+
+	arg_12_0.btnController_:SetSelectedState(tostring(not arg_12_0.isActivityOpen_ or not arg_12_0.isUnLock_))
 
 	if arg_12_0.isFirstClear_ then
 		arg_12_0.hideDropPanelController_:SetSelectedState("false")
@@ -152,11 +164,11 @@ function var_0_0.OnUpdate(arg_12_0)
 
 	arg_12_0.threeStarDataList_ = {}
 
-	local var_12_0 = GodEaterData:GetStageStar(arg_12_0.activityID_)
+	local var_12_1 = GodEaterData:GetStageStar(arg_12_0.activityID_)
 
 	for iter_12_2 = 1, 3 do
 		arg_12_0.threeStarDataList_[iter_12_2] = {
-			iter_12_2 <= var_12_0,
+			iter_12_2 <= var_12_1,
 			arg_12_0.systemCfg_.score[iter_12_2],
 			arg_12_0.systemCfg_.reward[iter_12_2][1][2]
 		}

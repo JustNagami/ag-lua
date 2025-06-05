@@ -18,7 +18,7 @@ end
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
 
-	arg_4_0.scrollHelper = LuaList.New(handler(arg_4_0, arg_4_0.indexItem), arg_4_0.uilistGo_, DrawServantSelectItem)
+	arg_4_0.scrollHelper = LuaList.New(handler(arg_4_0, arg_4_0.indexItem), arg_4_0.uilistGo_, DrawServantSelectGodEaterItem)
 	arg_4_0.btnController = arg_4_0.controller_:GetController("btn")
 end
 

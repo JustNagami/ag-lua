@@ -31,7 +31,7 @@
 
 				local var_4_2 = var_4_1:GetComponent(typeof(Image))
 
-				var_4_2.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/Portrait/" .. var_4_0)
+				var_4_2.sprite = getSpriteWithoutAtlas("TextureConfig/WeaponServant/Portrait/" .. "2540001")
 
 				var_4_2:SetNativeSize()
 

@@ -23,6 +23,12 @@ end
 function var_0_0.OnExit(arg_3_0)
 	arg_3_0:UnBindRedPoint()
 
+	if arg_3_0.timer_ then
+		arg_3_0.timer_:Stop()
+
+		arg_3_0.timer_ = nil
+	end
+
 	arg_3_0.chapterClientID_ = nil
 end
 
@@ -58,13 +64,26 @@ function var_0_0.RefreshUI(arg_7_0)
 	arg_7_0.titleTagController_:SetSelectedState(var_7_2)
 
 	if var_7_2 == "limitTime" then
-		arg_7_0.timeText_.text = ActivityTools.GetActivityLostTimeStrWith2Unit(ChapterCfg[var_7_1.chapter_list[1]].activity_id)
+		if arg_7_0.timer_ then
+			arg_7_0.timer_:Stop()
+
+			arg_7_0.timer_ = nil
+		end
+
+		local var_7_3, var_7_4 = ActivityData:GetActivityTime(ChapterCfg[var_7_1.chapter_list[1]].activity_id)
+
+		arg_7_0.timeText_.text = manager.time:GetLostTimeStr2(var_7_4)
+		arg_7_0.timer_ = Timer.New(function()
+			arg_7_0.timeText_.text = manager.time:GetLostTimeStr2(var_7_4)
+		end, 1, -1)
+
+		arg_7_0.timer_:Start()
 	end
 
-	local var_7_3 = ChapterTools.GetChapterClientFinishPercentage(var_7_0)
+	local var_7_5 = ChapterTools.GetChapterClientFinishPercentage(var_7_0)
 
-	arg_7_0.percentageImage_.fillAmount = var_7_3
-	arg_7_0.percentageText_.text = string.format("%s<size=28>%%</size>", math.floor(var_7_3 * 100))
+	arg_7_0.percentageImage_.fillAmount = var_7_5
+	arg_7_0.percentageText_.text = string.format("%s<size=28>%%</size>", math.floor(var_7_5 * 100))
 end
 
 return var_0_0

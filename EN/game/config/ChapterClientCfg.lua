@@ -2684,6 +2684,26 @@
 			6010108
 		}
 	},
+	[6010029] = {
+		sort = 0,
+		name = "6cc97abf50b671ed980fe4c4cc8736bc",
+		not_chapter_id = false,
+		id = 6010029,
+		show_tag_type = 2,
+		chapter_paint_2 = "bg_sideStory_19",
+		extra_strory_system = "",
+		desc = "bc131c8d16d1ad351bfd6a2bcc38ed6f",
+		extra_story_unlock_condition = "",
+		jump_system = "",
+		chapter_paint = "bg_activity_19",
+		drop_icon = "",
+		toggle = 5,
+		asset_pend_key = "",
+		level = 1,
+		chapter_list = {
+			6010129
+		}
+	},
 	get_id_list_by_toggle = {
 		[5] = {
 			6010001,
@@ -2699,7 +2719,8 @@
 			6010011,
 			6010012,
 			6010013,
-			6010017
+			6010017,
+			6010029
 		},
 		[504] = {
 			5040000
@@ -2962,6 +2983,7 @@
 		6010011,
 		6010012,
 		6010013,
-		6010017
+		6010017,
+		6010029
 	}
 }

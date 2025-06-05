@@ -4978,6 +4978,8 @@
 			4031039,
 			4031041,
 			4031042,
+			4031045,
+			4031046,
 			4031048,
 			4031049,
 			4031050,
@@ -8355,6 +8357,52 @@
 			188
 		}
 	},
+	[6010129] = {
+		english = "",
+		type = 601,
+		group = 29,
+		level = 1,
+		cost_exchange_id = 0,
+		activity_id = 341021,
+		second_reward = "",
+		sub_type = 1,
+		first_reward = "",
+		cue_name = "bgm_activity_4_2_god_eater_ui",
+		drag_follow = 0,
+		line_type = 0,
+		difficulty = 0,
+		star_need = "",
+		unlock_activity_id = 0,
+		switch_bg_index = 0,
+		max_width = 0,
+		unlock_scroll_rate = "",
+		subhead = "c484707b64b4cdcfd0a2e06a5ea4068c",
+		bg = "TextureBg/Version/V4_2_GodEaterUI/V4_2_GodEaterUI_Culture/V4_2_GodEaterUI_Culture_00001",
+		cue_sheet = "bgm_activity_4_2_god_eater_ui",
+		third_reward = "",
+		attach_prefab = "",
+		awb = "bgm_activity_4_2_god_eater_ui",
+		id = 6010129,
+		section_id_list = {
+			5250101,
+			5250102,
+			5250103,
+			5250104,
+			5250105,
+			5250106,
+			5250107,
+			5250108,
+			5250109,
+			5250110
+		},
+		pre_chapter = {},
+		trial_list = {
+			214,
+			215,
+			216,
+			217
+		}
+	},
 	[701] = {
 		trial_list = "",
 		english = "",
@@ -8496,7 +8544,8 @@
 			6010120,
 			6010121,
 			6010122,
-			6010123
+			6010123,
+			6010129
 		},
 		[20] = {
 			505
@@ -8819,6 +8868,7 @@
 		6010121,
 		6010122,
 		6010123,
+		6010129,
 		701,
 		702,
 		703

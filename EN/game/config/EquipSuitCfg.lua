@@ -818,7 +818,7 @@
 	{
 		name = "4290753da521a231fa3bf347be6fb820",
 		equip_skill_icon = "52",
-		stage_up_list = 0,
+		stage_up_list = 1,
 		power_score = 10,
 		desc = "96c499e16c4a3946c7e1e72a0862d850",
 		need = 3,
@@ -834,7 +834,7 @@
 	{
 		name = "d5bbc9acc8b1fe3c49e8f1993bb2deed",
 		equip_skill_icon = "53",
-		stage_up_list = 0,
+		stage_up_list = 1,
 		power_score = 10,
 		desc = "33a4b9a98e039268447d64ab682dfcb2",
 		need = 3,

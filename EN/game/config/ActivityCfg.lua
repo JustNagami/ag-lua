@@ -22335,7 +22335,745 @@
 		activity_template = 4,
 		sub_activity_list = {}
 	},
+	[340001] = {
+		id = 340001,
+		name = "6f0f1df6f60acf705b9de08d674bbe04",
+		remark = "9eb20bb6c983bec52666072638e0d962",
+		unlock_condition = "",
+		activity_theme = 34,
+		activity_template = 367,
+		sub_activity_list = {
+			343691,
+			343731,
+			343751,
+			343821
+		},
+		reward_show = {
+			1,
+			8010,
+			9007,
+			3049,
+			40603,
+			1046,
+			40701,
+			41401,
+			41303,
+			950033
+		}
+	},
+	[343691] = {
+		id = 343691,
+		name = "bbe41d8ab74666b378b3ad38189e2913",
+		remark = "7c0ed944911d3a88a5c1f77ca0aba29f",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 369,
+		sub_activity_list = {
+			343701,
+			343702,
+			343703,
+			343704,
+			343705,
+			343706,
+			343707,
+			343708
+		}
+	},
+	[343701] = {
+		id = 343701,
+		name = "d9b6afc59eba89c0fd48a04de7802155",
+		remark = "16c1bcac28b35805be1fbfd49e4c9613",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 370,
+		sub_activity_list = {}
+	},
+	[343702] = {
+		id = 343702,
+		name = "b175adb1e4bb766d494b1da9b8649517",
+		remark = "db8051711d3e3e044592136c57975793",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 370,
+		sub_activity_list = {}
+	},
+	[343703] = {
+		id = 343703,
+		name = "1ce0a729402e1dcb3e6d9af5f8e8814a",
+		remark = "f5fd5e7ef512fe054f08c63f2ea67093",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 370,
+		sub_activity_list = {}
+	},
+	[343704] = {
+		id = 343704,
+		name = "6331a3dbf1af3128b47887ecf9062b7a",
+		remark = "4f7576780143757c0f60420a9c13a590",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 370,
+		sub_activity_list = {}
+	},
+	[343705] = {
+		id = 343705,
+		name = "60bc6b81d94d550c61c00aa013c55bf3",
+		remark = "2dce28d3db5a4ff2ce2e81ad4d659ec4",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 370,
+		sub_activity_list = {}
+	},
+	[343706] = {
+		id = 343706,
+		name = "4ac04dfa0252a1f6c76c6298c2fc75c8",
+		remark = "92ef97c0043de4ccbbc9c50be6ded697",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 370,
+		sub_activity_list = {}
+	},
+	[343707] = {
+		id = 343707,
+		name = "e9ad2d116adb644ccd142fb098787e22",
+		remark = "c7fdf7a839b55d6e45bb084f83c91854",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 370,
+		sub_activity_list = {}
+	},
+	[343708] = {
+		id = 343708,
+		name = "1a663feba47ceb4bb8b7b0e10dcfb261",
+		remark = "e464de2cc04f6bb334573bc1662be457",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 370,
+		sub_activity_list = {}
+	},
+	[343731] = {
+		id = 343731,
+		name = "55d80fe5c741613213302d6e199c4409",
+		remark = "1bfb5bd20e9234c783515f9fcb0a179c",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 373,
+		sub_activity_list = {
+			343741
+		}
+	},
+	[343741] = {
+		id = 343741,
+		name = "305baa0d1357a2b2f116c1e0c4f9bcfa",
+		remark = "dc8685acd20f7eb11bcb92ae4c260959",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 374,
+		sub_activity_list = {}
+	},
+	[343751] = {
+		id = 343751,
+		name = "4deae2e75c94d2b961646502cc78b1df",
+		remark = "5eaf6d4b49d929559f9f7c0eae4577cf",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 375,
+		sub_activity_list = {
+			343761,
+			343762,
+			343721,
+			343722,
+			343723,
+			343724
+		}
+	},
+	[343761] = {
+		id = 343761,
+		name = "215c9f8afd298e11e0712d7a0cce5cc8",
+		remark = "ba62addfb8e2910d8ef2d7e701c4cb1a",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 376,
+		sub_activity_list = {}
+	},
+	[343762] = {
+		id = 343762,
+		name = "4e66781d969d0c5731f3ebeea2f7374b",
+		remark = "cf05e0f4d775efe4b5f2b6332919bf86",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 376,
+		sub_activity_list = {}
+	},
+	[343721] = {
+		id = 343721,
+		name = "edee9a1445a59670ee7d2cf7da2c452c",
+		remark = "05052d35a998724ec8a61a3e70ce1bcc",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 372,
+		sub_activity_list = {}
+	},
+	[343722] = {
+		id = 343722,
+		name = "528c6ee850095cddc038a2bf0259bd0a",
+		remark = "897406052cd03501c014c80984b4eb79",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 372,
+		sub_activity_list = {}
+	},
+	[343723] = {
+		id = 343723,
+		name = "2089366381a7653f0cbdbfe983fb4ab5",
+		remark = "6e57e4572a3c4cd9d5db3904adc290f8",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 372,
+		sub_activity_list = {}
+	},
+	[343724] = {
+		id = 343724,
+		name = "947671fc0f4a46aa265fe9aaf9d08280",
+		remark = "e534be0eb02d358d97a8b4ccab9bda12",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 372,
+		sub_activity_list = {}
+	},
+	[341001] = {
+		id = 341001,
+		name = "e05781be7acddaed1e2b95fad45afc58",
+		remark = "f68fec535543ac2a1183cca639c17f67",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 100,
+		sub_activity_list = {
+			340001,
+			342431,
+			341021,
+			342131,
+			342132,
+			341891,
+			341311,
+			341071,
+			343821
+		}
+	},
+	[343821] = {
+		id = 343821,
+		name = "2bc336c9030897d8d3fc2a7a96dcacc3",
+		remark = "aef38dcf364ee9328904a93284de5ca6",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 382,
+		sub_activity_list = {}
+	},
+	[340031] = {
+		id = 340031,
+		name = "3249b0f017b7dc45c5efd72334f0dc62",
+		remark = "8d4e2fed26f09baf86e37494bf944c17",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[342431] = {
+		id = 342431,
+		name = "c5cd848e11f04a7696ff5a376cf2aa97",
+		remark = "ac8b6f7625dbd558dc048065204d2ffd",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 243,
+		sub_activity_list = {
+			341461,
+			342441,
+			340041
+		}
+	},
+	[341461] = {
+		id = 341461,
+		name = "6725f965a22ed10f40264c6bb4773889",
+		remark = "b0ae7148d90ca0ae4e3d49debe2f312a",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 146,
+		sub_activity_list = {}
+	},
+	[342441] = {
+		id = 342441,
+		name = "4164dc4a0bbd89b9ad5539504e71fe48",
+		remark = "cd688b93ccd5570ffe09404f00fac97f",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 244,
+		sub_activity_list = {}
+	},
+	[340041] = {
+		id = 340041,
+		name = "89ca5429453dbd1060c813de90f6d332",
+		remark = "ce54e6c2d01139346ce14b0cec415987",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[341021] = {
+		id = 341021,
+		name = "0df691ee0dc5a4e319094080238c736d",
+		remark = "b833dae16a249ee8e0b643fca2f52e53",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 170,
+		sub_activity_list = {}
+	},
+	[341891] = {
+		id = 341891,
+		name = "23f0eacca82bf164ea80df2fc62a666b",
+		remark = "3c8231b9eac250ec27193962a4d8306b",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 189,
+		sub_activity_list = {}
+	},
+	[343501] = {
+		id = 343501,
+		name = "ada6c1b3644d83666881b058b1b30292",
+		remark = "01fcf275780797bea99eeb2242d6a3cd",
+		unlock_condition = "",
+		activity_theme = 34,
+		activity_template = 350,
+		sub_activity_list = {},
+		reward_show = {
+			1,
+			40104,
+			40603,
+			22003,
+			2
+		}
+	},
+	[340011] = {
+		id = 340011,
+		name = "a625548666620536824559aa9c8c1fd4",
+		remark = "6eddd7320b436399126b827292f8abbe",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 1,
+		sub_activity_list = {}
+	},
+	[340032] = {
+		id = 340032,
+		name = "908e1707ae9eba9703fce7b6314c0c8d",
+		remark = "b485d12948ae6ba2c446906afdf20a7a",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[340033] = {
+		id = 340033,
+		name = "ce146294e0d52572e1ebca26321f3717",
+		remark = "77531a6398795615dc96fec7d769f219",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[340034] = {
+		id = 340034,
+		name = "820ee44e9042d817f3b47ddfe4af1bda",
+		remark = "d7c3f412f0f616481d80ef88856c59f8",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[340035] = {
+		id = 340035,
+		name = "cc933c44cc0a70bc905594d8ca125987",
+		remark = "ccc57c9fd49d7305882cd1b1a10126f1",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[340037] = {
+		id = 340037,
+		name = "816992b6382dd7a16daed0b593a4ee07",
+		remark = "79a6bec60873c21206c2008a9682f3da",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[340039] = {
+		id = 340039,
+		name = "88cadc38611b2765cfa61382e1c64a66",
+		remark = "6e23886e35519eb38c9a139333979423",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[340040] = {
+		id = 340040,
+		name = "57fc725242f9a47f12388a0a634e1482",
+		remark = "c9d26fd572cd1623316b82e0352e33bb",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[342101] = {
+		id = 342101,
+		name = "f24f618f6eb6e019e921387cf6d2f925",
+		remark = "5ebce5df3fb854f3de5fcac2e337fdc9",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 210,
+		sub_activity_list = {}
+	},
+	[342102] = {
+		id = 342102,
+		name = "f3a41e336576e97dc6bb3172291df31e",
+		remark = "2042170380687cfcbcf345aed00d913e",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 210,
+		sub_activity_list = {}
+	},
+	[341311] = {
+		id = 341311,
+		name = "e530c8a7ceaf96afb8c60d20b2c9fe2f",
+		remark = "daec36d7f89e3a2984daa4c56e571202",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 131,
+		sub_activity_list = {
+			341111,
+			341112
+		}
+	},
+	[341111] = {
+		id = 341111,
+		name = "6e9ec612ae0378e9c54d9f063cbb80da",
+		remark = "54b939ef4e02033487e5e4a579c77a4e",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 111,
+		sub_activity_list = {}
+	},
+	[341112] = {
+		id = 341112,
+		name = "ec0b827d5c463ef93a5aa897e762d857",
+		remark = "de6d993e025c9544aed195e55a7921f5",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 111,
+		sub_activity_list = {}
+	},
+	[341071] = {
+		id = 341071,
+		name = "67fe9a7455c086c56db3ff1cd8356c97",
+		remark = "0014bc4daf3419e953bb1f0fed36eda1",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 107,
+		sub_activity_list = {
+			343221,
+			343222,
+			343223,
+			343228,
+			343229,
+			343230,
+			343231
+		}
+	},
+	[343221] = {
+		id = 343221,
+		name = "ba2d9d7fd74e64b51d5b359ba19ba447",
+		remark = "729f0cd9bf46a98c8843ac50fafef58f",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[343222] = {
+		id = 343222,
+		name = "8204ea1c56b647d51ac1909bbfbcfd52",
+		remark = "d93dce4aa13ef332c32af0e7d7076175",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[343223] = {
+		id = 343223,
+		name = "7d5931ee6e2b280237c02c15e4e11c2e",
+		remark = "cb96197b308b28fd0cafd09d02ffe35c",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[343228] = {
+		id = 343228,
+		name = "909d856f25e38f99db34855a8584d9a2",
+		remark = "5eea56bbfff6a85b510ab9c356449bb7",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[343229] = {
+		id = 343229,
+		name = "9744accd5ffd2891b779fb42415ac017",
+		remark = "c486db7d8848533b947bf265ce7349b3",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[343230] = {
+		id = 343230,
+		name = "ad34b284ddff06dd33409de626dc9ea7",
+		remark = "95795778feb0e1df8ff834284ab1d680",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[343231] = {
+		id = 343231,
+		name = "f34ac0676a1f0f2c3283fe295fbc46c2",
+		remark = "17c17173b014e7df7adff58d55d771b0",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[343891] = {
+		id = 343891,
+		name = "368d2dec36f92560fdc00484619b7709",
+		remark = "76954c425c5440942fdfce4d368eda69",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 389,
+		sub_activity_list = {}
+	},
+	[342131] = {
+		id = 342131,
+		name = "679bcaa1c016bff10f0579755ee2aa48",
+		remark = "854cb7a0b1b6bb05f5690c3d0941a92c",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 213,
+		sub_activity_list = {}
+	},
+	[342132] = {
+		id = 342132,
+		name = "cca6b6c865d263afcd79c485b71e4a38",
+		remark = "727254bcf408ea0e62269fce6436c894",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 213,
+		sub_activity_list = {}
+	},
+	[340042] = {
+		id = 340042,
+		name = "7e0e37b452599da61d8e1b2d84cac61d",
+		remark = "2403596b2010e36b2b6edcce6492bf9e",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[340043] = {
+		id = 340043,
+		name = "7d3f3019f7243b394ab3124016f4e70c",
+		remark = "c3109eaea8b2d9974d3600e3bad13bf1",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[340044] = {
+		id = 340044,
+		name = "bb6d5ae876295e5de2537cb13a11cde2",
+		remark = "a059faba2c9dfd0b473cf46321ad3fc8",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[340045] = {
+		id = 340045,
+		name = "873ae0aa97f3916718ddcbf6f86a6b53",
+		remark = "5a29ff0b8cf386efde022d2c087535ad",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[340046] = {
+		id = 340046,
+		name = "d9903234c1c8761fd9a5c0110c8ee8ca",
+		remark = "ab0b3fe3888facde247fd20042aa47e8",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[341161] = {
+		id = 341161,
+		name = "d01f446243ffd005dedddd95f591daf6",
+		remark = "bda07fb879e04d796f7960ec47166022",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 116,
+		sub_activity_list = {}
+	},
+	[344011] = {
+		id = 344011,
+		name = "fa63babf65382dfaddeb12eb0f42c986",
+		remark = "3b315e64812318afdb3e2892cdb82a1d",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 401,
+		sub_activity_list = {}
+	},
+	[340047] = {
+		id = 340047,
+		name = "efd622d5e70a35148d25592e48553d04",
+		remark = "98870ca5419118fe9fbcbd5d586fabcb",
+		unlock_condition = "",
+		activity_theme = 34,
+		reward_show = "",
+		activity_template = 4,
+		sub_activity_list = {}
+	},
 	get_id_list_by_activity_theme = {
+		[34] = {
+			340001,
+			343691,
+			343701,
+			343702,
+			343703,
+			343704,
+			343705,
+			343706,
+			343707,
+			343708,
+			343731,
+			343741,
+			343751,
+			343761,
+			343762,
+			343721,
+			343722,
+			343723,
+			343724,
+			341001,
+			343821,
+			340031,
+			342431,
+			341461,
+			342441,
+			340041,
+			341021,
+			341891,
+			343501,
+			340011,
+			340032,
+			340033,
+			340034,
+			340035,
+			340037,
+			340039,
+			340040,
+			342101,
+			342102,
+			341311,
+			341111,
+			341112,
+			341071,
+			343221,
+			343222,
+			343223,
+			343228,
+			343229,
+			343230,
+			343231,
+			343891,
+			342131,
+			342132,
+			340042,
+			340043,
+			340044,
+			340045,
+			340046,
+			341161,
+			344011,
+			340047
+		},
 		[36] = {
 			3610001,
 			3600102,
@@ -24415,6 +25153,53 @@
 		}
 	},
 	get_id_list_by_activity_template = {
+		[401] = {
+			344011
+		},
+		[389] = {
+			343891
+		},
+		[350] = {
+			343501
+		},
+		[382] = {
+			343821
+		},
+		[372] = {
+			343721,
+			343722,
+			343723,
+			343724
+		},
+		[376] = {
+			343761,
+			343762
+		},
+		[375] = {
+			343751
+		},
+		[374] = {
+			343741
+		},
+		[373] = {
+			343731
+		},
+		[370] = {
+			343701,
+			343702,
+			343703,
+			343704,
+			343705,
+			343706,
+			343707,
+			343708
+		},
+		[369] = {
+			343691
+		},
+		[367] = {
+			340001
+		},
 		[388] = {
 			2938801
 		},
@@ -24734,7 +25519,14 @@
 			3632232,
 			3632233,
 			3632234,
-			3632235
+			3632235,
+			343221,
+			343222,
+			343223,
+			343228,
+			343229,
+			343230,
+			343231
 		},
 		[278] = {
 			242781,
@@ -24908,7 +25700,8 @@
 			282442,
 			292441,
 			292442,
-			2824411
+			2824411,
+			342441
 		},
 		[243] = {
 			202432,
@@ -24924,7 +25717,8 @@
 			282432,
 			292431,
 			292432,
-			2824311
+			2824311,
+			342431
 		},
 		[230] = {
 			192301,
@@ -25193,7 +25987,9 @@
 			282132,
 			292131,
 			292132,
-			292133
+			292133,
+			342131,
+			342132
 		},
 		[212] = {
 			172121,
@@ -25364,7 +26160,8 @@
 			281893,
 			291891,
 			291892,
-			3618926
+			3618926,
+			341891
 		},
 		[187] = {
 			131871,
@@ -25636,7 +26433,8 @@
 			241702,
 			271701,
 			281701,
-			281702
+			281702,
+			341021
 		},
 		[156] = {
 			91561
@@ -25727,7 +26525,9 @@
 			292102,
 			292103,
 			292104,
-			292105
+			292105,
+			342101,
+			342102
 		},
 		[144] = {
 			81441
@@ -25821,7 +26621,8 @@
 			291461,
 			291462,
 			291463,
-			2814611
+			2814611,
+			341461
 		},
 		[145] = {
 			71451,
@@ -26051,7 +26852,8 @@
 			281163,
 			291161,
 			291162,
-			3611636
+			3611636,
+			341161
 		},
 		[110] = {
 			61101,
@@ -26212,7 +27014,9 @@
 			291114,
 			291115,
 			3611129,
-			3611130
+			3611130,
+			341111,
+			341112
 		},
 		[131] = {
 			526,
@@ -26253,7 +27057,8 @@
 			281313,
 			291311,
 			291312,
-			3613101
+			3613101,
+			341311
 		},
 		[127] = {
 			521,
@@ -26410,7 +27215,8 @@
 			281071,
 			281072,
 			291071,
-			3610731
+			3610731,
+			341071
 		},
 		[106] = {
 			505,
@@ -26477,7 +27283,8 @@
 			281001,
 			281002,
 			291001,
-			3610001
+			3610001,
+			341001
 		},
 		[5] = {
 			301
@@ -26699,7 +27506,14 @@
 			3600732,
 			3600733,
 			3600734,
-			3600735
+			3600735,
+			340041,
+			340042,
+			340043,
+			340044,
+			340045,
+			340046,
+			340047
 		},
 		[72] = {
 			201
@@ -26916,7 +27730,15 @@
 			2900310,
 			2900311,
 			3600327,
-			3600328
+			3600328,
+			340031,
+			340032,
+			340033,
+			340034,
+			340035,
+			340037,
+			340039,
+			340040
 		},
 		{
 			1,
@@ -26956,10 +27778,129 @@
 			290011,
 			290012,
 			290013,
-			3600102
+			3600102,
+			340011
 		}
 	},
 	get_id_list_by_sub_activity_list = {
+		[343231] = {
+			341071
+		},
+		[343230] = {
+			341071
+		},
+		[343229] = {
+			341071
+		},
+		[343228] = {
+			341071
+		},
+		[343223] = {
+			341071
+		},
+		[343222] = {
+			341071
+		},
+		[343221] = {
+			341071
+		},
+		[341112] = {
+			341311
+		},
+		[341111] = {
+			341311
+		},
+		[340041] = {
+			342431
+		},
+		[342441] = {
+			342431
+		},
+		[341461] = {
+			342431
+		},
+		[341071] = {
+			341001
+		},
+		[341311] = {
+			341001
+		},
+		[341891] = {
+			341001
+		},
+		[342132] = {
+			341001
+		},
+		[342131] = {
+			341001
+		},
+		[341021] = {
+			341001
+		},
+		[342431] = {
+			341001
+		},
+		[340001] = {
+			341001
+		},
+		[343724] = {
+			343751
+		},
+		[343723] = {
+			343751
+		},
+		[343722] = {
+			343751
+		},
+		[343721] = {
+			343751
+		},
+		[343762] = {
+			343751
+		},
+		[343761] = {
+			343751
+		},
+		[343741] = {
+			343731
+		},
+		[343708] = {
+			343691
+		},
+		[343707] = {
+			343691
+		},
+		[343706] = {
+			343691
+		},
+		[343705] = {
+			343691
+		},
+		[343704] = {
+			343691
+		},
+		[343703] = {
+			343691
+		},
+		[343702] = {
+			343691
+		},
+		[343701] = {
+			343691
+		},
+		[343821] = {
+			340001,
+			341001
+		},
+		[343751] = {
+			340001
+		},
+		[343731] = {
+			340001
+		},
+		[343691] = {
+			340001
+		},
 		[3600735] = {
 			3600731
 		},
@@ -33791,6 +34732,67 @@
 		3600732,
 		3600733,
 		3600734,
-		3600735
+		3600735,
+		340001,
+		343691,
+		343701,
+		343702,
+		343703,
+		343704,
+		343705,
+		343706,
+		343707,
+		343708,
+		343731,
+		343741,
+		343751,
+		343761,
+		343762,
+		343721,
+		343722,
+		343723,
+		343724,
+		341001,
+		343821,
+		340031,
+		342431,
+		341461,
+		342441,
+		340041,
+		341021,
+		341891,
+		343501,
+		340011,
+		340032,
+		340033,
+		340034,
+		340035,
+		340037,
+		340039,
+		340040,
+		342101,
+		342102,
+		341311,
+		341111,
+		341112,
+		341071,
+		343221,
+		343222,
+		343223,
+		343228,
+		343229,
+		343230,
+		343231,
+		343891,
+		342131,
+		342132,
+		340042,
+		340043,
+		340044,
+		340045,
+		340046,
+		341161,
+		344011,
+		340047
 	}
 }
