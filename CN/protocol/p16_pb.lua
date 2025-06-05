@@ -17,7 +17,10 @@ local var_0_2 = {
 	SC_16019_FIELD_LIST = {},
 	POOL_DETAILS_NET_REC_FIELD_LIST = {},
 	CS_16020_FIELD_LIST = {},
-	SC_16021_FIELD_LIST = {}
+	SC_16021_FIELD_LIST = {},
+	CS_16022_FIELD_LIST = {},
+	SC_16023_FIELD_LIST = {},
+	SC_16025_FIELD_LIST = {}
 }
 
 CS_16010 = var_0_0.Descriptor()
@@ -72,6 +75,14 @@ CS_16020 = var_0_0.Descriptor()
 var_0_2.CS_16020_FIELD_LIST.CS_16020_POOL_ID_FIELD = var_0_0.FieldDescriptor()
 SC_16021 = var_0_0.Descriptor()
 var_0_2.SC_16021_FIELD_LIST.SC_16021_RESULT_FIELD = var_0_0.FieldDescriptor()
+CS_16022 = var_0_0.Descriptor()
+var_0_2.CS_16022_FIELD_LIST.CS_16022_ACTIVITY_ID_FIELD = var_0_0.FieldDescriptor()
+SC_16023 = var_0_0.Descriptor()
+var_0_2.SC_16023_FIELD_LIST.SC_16023_RESULT_FIELD = var_0_0.FieldDescriptor()
+var_0_2.SC_16023_FIELD_LIST.SC_16023_REWARDS_FIELD = var_0_0.FieldDescriptor()
+SC_16025 = var_0_0.Descriptor()
+var_0_2.SC_16025_FIELD_LIST.SC_16025_ACTIVITY_ID_FIELD = var_0_0.FieldDescriptor()
+var_0_2.SC_16025_FIELD_LIST.SC_16025_VALUE_FIELD = var_0_0.FieldDescriptor()
 var_0_2.CS_16010_FIELD_LIST.CS_16010_TYPE_FIELD.name = "type"
 var_0_2.CS_16010_FIELD_LIST.CS_16010_TYPE_FIELD.full_name = ".common.cs_16010.type"
 var_0_2.CS_16010_FIELD_LIST.CS_16010_TYPE_FIELD.number = 1
@@ -570,11 +581,87 @@ SC_16021.fields = {
 }
 SC_16021.is_extendable = false
 SC_16021.extensions = {}
+var_0_2.CS_16022_FIELD_LIST.CS_16022_ACTIVITY_ID_FIELD.name = "activity_id"
+var_0_2.CS_16022_FIELD_LIST.CS_16022_ACTIVITY_ID_FIELD.full_name = ".common.cs_16022.activity_id"
+var_0_2.CS_16022_FIELD_LIST.CS_16022_ACTIVITY_ID_FIELD.number = 1
+var_0_2.CS_16022_FIELD_LIST.CS_16022_ACTIVITY_ID_FIELD.index = 0
+var_0_2.CS_16022_FIELD_LIST.CS_16022_ACTIVITY_ID_FIELD.label = 2
+var_0_2.CS_16022_FIELD_LIST.CS_16022_ACTIVITY_ID_FIELD.has_default_value = false
+var_0_2.CS_16022_FIELD_LIST.CS_16022_ACTIVITY_ID_FIELD.default_value = 0
+var_0_2.CS_16022_FIELD_LIST.CS_16022_ACTIVITY_ID_FIELD.type = 13
+var_0_2.CS_16022_FIELD_LIST.CS_16022_ACTIVITY_ID_FIELD.cpp_type = 3
+CS_16022.name = "cs_16022"
+CS_16022.full_name = ".common.cs_16022"
+CS_16022.nested_types = {}
+CS_16022.enum_types = {}
+CS_16022.fields = {
+	var_0_2.CS_16022_FIELD_LIST.CS_16022_ACTIVITY_ID_FIELD
+}
+CS_16022.is_extendable = false
+CS_16022.extensions = {}
+var_0_2.SC_16023_FIELD_LIST.SC_16023_RESULT_FIELD.name = "result"
+var_0_2.SC_16023_FIELD_LIST.SC_16023_RESULT_FIELD.full_name = ".common.sc_16023.result"
+var_0_2.SC_16023_FIELD_LIST.SC_16023_RESULT_FIELD.number = 1
+var_0_2.SC_16023_FIELD_LIST.SC_16023_RESULT_FIELD.index = 0
+var_0_2.SC_16023_FIELD_LIST.SC_16023_RESULT_FIELD.label = 2
+var_0_2.SC_16023_FIELD_LIST.SC_16023_RESULT_FIELD.has_default_value = false
+var_0_2.SC_16023_FIELD_LIST.SC_16023_RESULT_FIELD.default_value = 0
+var_0_2.SC_16023_FIELD_LIST.SC_16023_RESULT_FIELD.type = 13
+var_0_2.SC_16023_FIELD_LIST.SC_16023_RESULT_FIELD.cpp_type = 3
+var_0_2.SC_16023_FIELD_LIST.SC_16023_REWARDS_FIELD.name = "rewards"
+var_0_2.SC_16023_FIELD_LIST.SC_16023_REWARDS_FIELD.full_name = ".common.sc_16023.rewards"
+var_0_2.SC_16023_FIELD_LIST.SC_16023_REWARDS_FIELD.number = 2
+var_0_2.SC_16023_FIELD_LIST.SC_16023_REWARDS_FIELD.index = 1
+var_0_2.SC_16023_FIELD_LIST.SC_16023_REWARDS_FIELD.label = 3
+var_0_2.SC_16023_FIELD_LIST.SC_16023_REWARDS_FIELD.has_default_value = false
+var_0_2.SC_16023_FIELD_LIST.SC_16023_REWARDS_FIELD.default_value = {}
+var_0_2.SC_16023_FIELD_LIST.SC_16023_REWARDS_FIELD.message_type = var_0_1.ITEM_NET_REC
+var_0_2.SC_16023_FIELD_LIST.SC_16023_REWARDS_FIELD.type = 11
+var_0_2.SC_16023_FIELD_LIST.SC_16023_REWARDS_FIELD.cpp_type = 10
+SC_16023.name = "sc_16023"
+SC_16023.full_name = ".common.sc_16023"
+SC_16023.nested_types = {}
+SC_16023.enum_types = {}
+SC_16023.fields = {
+	var_0_2.SC_16023_FIELD_LIST.SC_16023_RESULT_FIELD,
+	var_0_2.SC_16023_FIELD_LIST.SC_16023_REWARDS_FIELD
+}
+SC_16023.is_extendable = false
+SC_16023.extensions = {}
+var_0_2.SC_16025_FIELD_LIST.SC_16025_ACTIVITY_ID_FIELD.name = "activity_id"
+var_0_2.SC_16025_FIELD_LIST.SC_16025_ACTIVITY_ID_FIELD.full_name = ".common.sc_16025.activity_id"
+var_0_2.SC_16025_FIELD_LIST.SC_16025_ACTIVITY_ID_FIELD.number = 1
+var_0_2.SC_16025_FIELD_LIST.SC_16025_ACTIVITY_ID_FIELD.index = 0
+var_0_2.SC_16025_FIELD_LIST.SC_16025_ACTIVITY_ID_FIELD.label = 2
+var_0_2.SC_16025_FIELD_LIST.SC_16025_ACTIVITY_ID_FIELD.has_default_value = false
+var_0_2.SC_16025_FIELD_LIST.SC_16025_ACTIVITY_ID_FIELD.default_value = 0
+var_0_2.SC_16025_FIELD_LIST.SC_16025_ACTIVITY_ID_FIELD.type = 13
+var_0_2.SC_16025_FIELD_LIST.SC_16025_ACTIVITY_ID_FIELD.cpp_type = 3
+var_0_2.SC_16025_FIELD_LIST.SC_16025_VALUE_FIELD.name = "value"
+var_0_2.SC_16025_FIELD_LIST.SC_16025_VALUE_FIELD.full_name = ".common.sc_16025.value"
+var_0_2.SC_16025_FIELD_LIST.SC_16025_VALUE_FIELD.number = 2
+var_0_2.SC_16025_FIELD_LIST.SC_16025_VALUE_FIELD.index = 1
+var_0_2.SC_16025_FIELD_LIST.SC_16025_VALUE_FIELD.label = 2
+var_0_2.SC_16025_FIELD_LIST.SC_16025_VALUE_FIELD.has_default_value = false
+var_0_2.SC_16025_FIELD_LIST.SC_16025_VALUE_FIELD.default_value = 0
+var_0_2.SC_16025_FIELD_LIST.SC_16025_VALUE_FIELD.type = 13
+var_0_2.SC_16025_FIELD_LIST.SC_16025_VALUE_FIELD.cpp_type = 3
+SC_16025.name = "sc_16025"
+SC_16025.full_name = ".common.sc_16025"
+SC_16025.nested_types = {}
+SC_16025.enum_types = {}
+SC_16025.fields = {
+	var_0_2.SC_16025_FIELD_LIST.SC_16025_ACTIVITY_ID_FIELD,
+	var_0_2.SC_16025_FIELD_LIST.SC_16025_VALUE_FIELD
+}
+SC_16025.is_extendable = false
+SC_16025.extensions = {}
 cs_16010 = var_0_0.Message(CS_16010)
 cs_16012 = var_0_0.Message(CS_16012)
 cs_16016 = var_0_0.Message(CS_16016)
 cs_16018 = var_0_0.Message(CS_16018)
 cs_16020 = var_0_0.Message(CS_16020)
+cs_16022 = var_0_0.Message(CS_16022)
 draw_info_send = var_0_0.Message(DRAW_INFO_SEND)
 draw_record = var_0_0.Message(DRAW_RECORD)
 pool_details_net_rec = var_0_0.Message(POOL_DETAILS_NET_REC)
@@ -584,5 +671,7 @@ sc_16015 = var_0_0.Message(SC_16015)
 sc_16017 = var_0_0.Message(SC_16017)
 sc_16019 = var_0_0.Message(SC_16019)
 sc_16021 = var_0_0.Message(SC_16021)
+sc_16023 = var_0_0.Message(SC_16023)
+sc_16025 = var_0_0.Message(SC_16025)
 
 return p16_pb

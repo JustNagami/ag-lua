@@ -312,8 +312,15 @@
 				arg_9_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_9_1:RecordName(arg_9_1.leftNameTxt_.text)
-				SetActive(arg_9_1.iconTrs_.gameObject, false)
+				SetActive(arg_9_1.iconTrs_.gameObject, true)
+				arg_9_1.iconController_:SetSelectedState("hero")
+
+				arg_9_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_9_1.callingController_:SetSelectedState("normal")
+
+				arg_9_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_9_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_12_3 = arg_9_1:GetWordFromCfg(1109504002)
 				local var_12_4 = arg_9_1:FormatText(var_12_3.content)
@@ -648,8 +655,15 @@
 				arg_17_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_17_1:RecordName(arg_17_1.leftNameTxt_.text)
-				SetActive(arg_17_1.iconTrs_.gameObject, false)
+				SetActive(arg_17_1.iconTrs_.gameObject, true)
+				arg_17_1.iconController_:SetSelectedState("hero")
+
+				arg_17_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_17_1.callingController_:SetSelectedState("normal")
+
+				arg_17_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_17_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_20_9 = arg_17_1:GetWordFromCfg(1109504004)
 				local var_20_10 = arg_17_1:FormatText(var_20_9.content)
@@ -908,8 +922,15 @@
 				arg_25_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_25_1:RecordName(arg_25_1.leftNameTxt_.text)
-				SetActive(arg_25_1.iconTrs_.gameObject, false)
+				SetActive(arg_25_1.iconTrs_.gameObject, true)
+				arg_25_1.iconController_:SetSelectedState("hero")
+
+				arg_25_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_25_1.callingController_:SetSelectedState("normal")
+
+				arg_25_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_25_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_28_9 = arg_25_1:GetWordFromCfg(1109504006)
 				local var_28_10 = arg_25_1:FormatText(var_28_9.content)
@@ -1262,8 +1283,15 @@
 				arg_37_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_37_1:RecordName(arg_37_1.leftNameTxt_.text)
-				SetActive(arg_37_1.iconTrs_.gameObject, false)
+				SetActive(arg_37_1.iconTrs_.gameObject, true)
+				arg_37_1.iconController_:SetSelectedState("hero")
+
+				arg_37_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_37_1.callingController_:SetSelectedState("normal")
+
+				arg_37_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_37_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_40_3 = arg_37_1:GetWordFromCfg(1109504009)
 				local var_40_4 = arg_37_1:FormatText(var_40_3.content)
@@ -1522,8 +1550,15 @@
 				arg_45_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_45_1:RecordName(arg_45_1.leftNameTxt_.text)
-				SetActive(arg_45_1.iconTrs_.gameObject, false)
+				SetActive(arg_45_1.iconTrs_.gameObject, true)
+				arg_45_1.iconController_:SetSelectedState("hero")
+
+				arg_45_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_45_1.callingController_:SetSelectedState("normal")
+
+				arg_45_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_45_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_48_9 = arg_45_1:GetWordFromCfg(1109504011)
 				local var_48_10 = arg_45_1:FormatText(var_48_9.content)
@@ -1996,8 +2031,15 @@
 				arg_61_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_61_1:RecordName(arg_61_1.leftNameTxt_.text)
-				SetActive(arg_61_1.iconTrs_.gameObject, false)
+				SetActive(arg_61_1.iconTrs_.gameObject, true)
+				arg_61_1.iconController_:SetSelectedState("hero")
+
+				arg_61_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_61_1.callingController_:SetSelectedState("normal")
+
+				arg_61_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_61_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_64_9 = arg_61_1:GetWordFromCfg(1109504015)
 				local var_64_10 = arg_61_1:FormatText(var_64_9.content)
@@ -2262,8 +2304,15 @@
 				arg_69_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_69_1:RecordName(arg_69_1.leftNameTxt_.text)
-				SetActive(arg_69_1.iconTrs_.gameObject, false)
+				SetActive(arg_69_1.iconTrs_.gameObject, true)
+				arg_69_1.iconController_:SetSelectedState("hero")
+
+				arg_69_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_69_1.callingController_:SetSelectedState("normal")
+
+				arg_69_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_69_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_72_9 = arg_69_1:GetWordFromCfg(1109504018)
 				local var_72_10 = arg_69_1:FormatText(var_72_9.content)
@@ -2554,8 +2603,15 @@
 				arg_81_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_81_1:RecordName(arg_81_1.leftNameTxt_.text)
-				SetActive(arg_81_1.iconTrs_.gameObject, false)
+				SetActive(arg_81_1.iconTrs_.gameObject, true)
+				arg_81_1.iconController_:SetSelectedState("hero")
+
+				arg_81_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_81_1.callingController_:SetSelectedState("normal")
+
+				arg_81_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_81_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_84_3 = arg_81_1:GetWordFromCfg(1109504021)
 				local var_84_4 = arg_81_1:FormatText(var_84_3.content)
@@ -2860,8 +2916,15 @@
 				arg_89_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_89_1:RecordName(arg_89_1.leftNameTxt_.text)
-				SetActive(arg_89_1.iconTrs_.gameObject, false)
+				SetActive(arg_89_1.iconTrs_.gameObject, true)
+				arg_89_1.iconController_:SetSelectedState("hero")
+
+				arg_89_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_89_1.callingController_:SetSelectedState("normal")
+
+				arg_89_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_89_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_92_9 = arg_89_1:GetWordFromCfg(1109504023)
 				local var_92_10 = arg_89_1:FormatText(var_92_9.content)
@@ -3345,8 +3408,15 @@
 				arg_105_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_105_1:RecordName(arg_105_1.leftNameTxt_.text)
-				SetActive(arg_105_1.iconTrs_.gameObject, false)
+				SetActive(arg_105_1.iconTrs_.gameObject, true)
+				arg_105_1.iconController_:SetSelectedState("hero")
+
+				arg_105_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_105_1.callingController_:SetSelectedState("normal")
+
+				arg_105_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_105_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_108_9 = arg_105_1:GetWordFromCfg(1109504027)
 				local var_108_10 = arg_105_1:FormatText(var_108_9.content)
@@ -3927,8 +3997,15 @@
 				arg_119_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_119_1:RecordName(arg_119_1.leftNameTxt_.text)
-				SetActive(arg_119_1.iconTrs_.gameObject, false)
+				SetActive(arg_119_1.iconTrs_.gameObject, true)
+				arg_119_1.iconController_:SetSelectedState("hero")
+
+				arg_119_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_119_1.callingController_:SetSelectedState("normal")
+
+				arg_119_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_119_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_122_24 = arg_119_1:GetWordFromCfg(1109504030)
 				local var_122_25 = arg_119_1:FormatText(var_122_24.content)
@@ -4489,8 +4566,15 @@
 				arg_137_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_137_1:RecordName(arg_137_1.leftNameTxt_.text)
-				SetActive(arg_137_1.iconTrs_.gameObject, false)
+				SetActive(arg_137_1.iconTrs_.gameObject, true)
+				arg_137_1.iconController_:SetSelectedState("hero")
+
+				arg_137_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_137_1.callingController_:SetSelectedState("normal")
+
+				arg_137_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_137_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_140_9 = arg_137_1:GetWordFromCfg(1109504034)
 				local var_140_10 = arg_137_1:FormatText(var_140_9.content)
@@ -4743,8 +4827,15 @@
 				arg_145_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_145_1:RecordName(arg_145_1.leftNameTxt_.text)
-				SetActive(arg_145_1.iconTrs_.gameObject, false)
+				SetActive(arg_145_1.iconTrs_.gameObject, true)
+				arg_145_1.iconController_:SetSelectedState("hero")
+
+				arg_145_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_145_1.callingController_:SetSelectedState("normal")
+
+				arg_145_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_145_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_148_9 = arg_145_1:GetWordFromCfg(1109504036)
 				local var_148_10 = arg_145_1:FormatText(var_148_9.content)
@@ -4953,8 +5044,15 @@
 				arg_153_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_153_1:RecordName(arg_153_1.leftNameTxt_.text)
-				SetActive(arg_153_1.iconTrs_.gameObject, false)
+				SetActive(arg_153_1.iconTrs_.gameObject, true)
+				arg_153_1.iconController_:SetSelectedState("hero")
+
+				arg_153_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_153_1.callingController_:SetSelectedState("normal")
+
+				arg_153_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_153_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_156_3 = arg_153_1:GetWordFromCfg(1109504038)
 				local var_156_4 = arg_153_1:FormatText(var_156_3.content)
@@ -5243,8 +5341,15 @@
 				arg_161_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_161_1:RecordName(arg_161_1.leftNameTxt_.text)
-				SetActive(arg_161_1.iconTrs_.gameObject, false)
+				SetActive(arg_161_1.iconTrs_.gameObject, true)
+				arg_161_1.iconController_:SetSelectedState("hero")
+
+				arg_161_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_161_1.callingController_:SetSelectedState("normal")
+
+				arg_161_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_161_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_164_9 = arg_161_1:GetWordFromCfg(1109504040)
 				local var_164_10 = arg_161_1:FormatText(var_164_9.content)
@@ -5745,8 +5850,15 @@
 				arg_177_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_177_1:RecordName(arg_177_1.leftNameTxt_.text)
-				SetActive(arg_177_1.iconTrs_.gameObject, false)
+				SetActive(arg_177_1.iconTrs_.gameObject, true)
+				arg_177_1.iconController_:SetSelectedState("hero")
+
+				arg_177_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_177_1.callingController_:SetSelectedState("normal")
+
+				arg_177_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_177_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_180_9 = arg_177_1:GetWordFromCfg(1109504044)
 				local var_180_10 = arg_177_1:FormatText(var_180_9.content)
@@ -6181,8 +6293,15 @@
 				arg_189_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_189_1:RecordName(arg_189_1.leftNameTxt_.text)
-				SetActive(arg_189_1.iconTrs_.gameObject, false)
+				SetActive(arg_189_1.iconTrs_.gameObject, true)
+				arg_189_1.iconController_:SetSelectedState("hero")
+
+				arg_189_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_189_1.callingController_:SetSelectedState("normal")
+
+				arg_189_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_189_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_192_3 = arg_189_1:GetWordFromCfg(1109504047)
 				local var_192_4 = arg_189_1:FormatText(var_192_3.content)
@@ -6535,8 +6654,15 @@
 				arg_201_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_201_1:RecordName(arg_201_1.leftNameTxt_.text)
-				SetActive(arg_201_1.iconTrs_.gameObject, false)
+				SetActive(arg_201_1.iconTrs_.gameObject, true)
+				arg_201_1.iconController_:SetSelectedState("hero")
+
+				arg_201_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_201_1.callingController_:SetSelectedState("normal")
+
+				arg_201_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_201_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_204_9 = arg_201_1:GetWordFromCfg(1109504050)
 				local var_204_10 = arg_201_1:FormatText(var_204_9.content)
@@ -7055,8 +7181,15 @@
 				arg_217_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_217_1:RecordName(arg_217_1.leftNameTxt_.text)
-				SetActive(arg_217_1.iconTrs_.gameObject, false)
+				SetActive(arg_217_1.iconTrs_.gameObject, true)
+				arg_217_1.iconController_:SetSelectedState("hero")
+
+				arg_217_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_217_1.callingController_:SetSelectedState("normal")
+
+				arg_217_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_217_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_220_9 = arg_217_1:GetWordFromCfg(1109504054)
 				local var_220_10 = arg_217_1:FormatText(var_220_9.content)
@@ -7309,8 +7442,15 @@
 				arg_225_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_225_1:RecordName(arg_225_1.leftNameTxt_.text)
-				SetActive(arg_225_1.iconTrs_.gameObject, false)
+				SetActive(arg_225_1.iconTrs_.gameObject, true)
+				arg_225_1.iconController_:SetSelectedState("hero")
+
+				arg_225_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_225_1.callingController_:SetSelectedState("normal")
+
+				arg_225_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_225_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_228_9 = arg_225_1:GetWordFromCfg(1109504056)
 				local var_228_10 = arg_225_1:FormatText(var_228_9.content)
@@ -7651,8 +7791,15 @@
 				arg_237_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_237_1:RecordName(arg_237_1.leftNameTxt_.text)
-				SetActive(arg_237_1.iconTrs_.gameObject, false)
+				SetActive(arg_237_1.iconTrs_.gameObject, true)
+				arg_237_1.iconController_:SetSelectedState("hero")
+
+				arg_237_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_237_1.callingController_:SetSelectedState("normal")
+
+				arg_237_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_237_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_240_3 = arg_237_1:GetWordFromCfg(1109504059)
 				local var_240_4 = arg_237_1:FormatText(var_240_3.content)
@@ -7917,8 +8064,15 @@
 				arg_245_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_245_1:RecordName(arg_245_1.leftNameTxt_.text)
-				SetActive(arg_245_1.iconTrs_.gameObject, false)
+				SetActive(arg_245_1.iconTrs_.gameObject, true)
+				arg_245_1.iconController_:SetSelectedState("hero")
+
+				arg_245_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_245_1.callingController_:SetSelectedState("normal")
+
+				arg_245_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_245_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_248_9 = arg_245_1:GetWordFromCfg(1109504061)
 				local var_248_10 = arg_245_1:FormatText(var_248_9.content)
@@ -8183,8 +8337,15 @@
 				arg_253_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_253_1:RecordName(arg_253_1.leftNameTxt_.text)
-				SetActive(arg_253_1.iconTrs_.gameObject, false)
+				SetActive(arg_253_1.iconTrs_.gameObject, true)
+				arg_253_1.iconController_:SetSelectedState("hero")
+
+				arg_253_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_253_1.callingController_:SetSelectedState("normal")
+
+				arg_253_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_253_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_256_9 = arg_253_1:GetWordFromCfg(1109504063)
 				local var_256_10 = arg_253_1:FormatText(var_256_9.content)
@@ -8665,8 +8826,15 @@
 				arg_265_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_265_1:RecordName(arg_265_1.leftNameTxt_.text)
-				SetActive(arg_265_1.iconTrs_.gameObject, false)
+				SetActive(arg_265_1.iconTrs_.gameObject, true)
+				arg_265_1.iconController_:SetSelectedState("hero")
+
+				arg_265_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_265_1.callingController_:SetSelectedState("normal")
+
+				arg_265_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_265_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_268_9 = arg_265_1:GetWordFromCfg(1109504066)
 				local var_268_10 = arg_265_1:FormatText(var_268_9.content)
@@ -8925,8 +9093,15 @@
 				arg_273_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_273_1:RecordName(arg_273_1.leftNameTxt_.text)
-				SetActive(arg_273_1.iconTrs_.gameObject, false)
+				SetActive(arg_273_1.iconTrs_.gameObject, true)
+				arg_273_1.iconController_:SetSelectedState("hero")
+
+				arg_273_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_273_1.callingController_:SetSelectedState("normal")
+
+				arg_273_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_273_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_276_9 = arg_273_1:GetWordFromCfg(1109504068)
 				local var_276_10 = arg_273_1:FormatText(var_276_9.content)
@@ -9355,8 +9530,15 @@
 				arg_289_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_289_1:RecordName(arg_289_1.leftNameTxt_.text)
-				SetActive(arg_289_1.iconTrs_.gameObject, false)
+				SetActive(arg_289_1.iconTrs_.gameObject, true)
+				arg_289_1.iconController_:SetSelectedState("hero")
+
+				arg_289_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_289_1.callingController_:SetSelectedState("normal")
+
+				arg_289_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_289_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_292_9 = arg_289_1:GetWordFromCfg(1109504072)
 				local var_292_10 = arg_289_1:FormatText(var_292_9.content)
@@ -9621,8 +9803,15 @@
 				arg_297_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_297_1:RecordName(arg_297_1.leftNameTxt_.text)
-				SetActive(arg_297_1.iconTrs_.gameObject, false)
+				SetActive(arg_297_1.iconTrs_.gameObject, true)
+				arg_297_1.iconController_:SetSelectedState("hero")
+
+				arg_297_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_297_1.callingController_:SetSelectedState("normal")
+
+				arg_297_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_297_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_300_9 = arg_297_1:GetWordFromCfg(1109504074)
 				local var_300_10 = arg_297_1:FormatText(var_300_9.content)
@@ -10009,8 +10198,15 @@
 				arg_309_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_309_1:RecordName(arg_309_1.leftNameTxt_.text)
-				SetActive(arg_309_1.iconTrs_.gameObject, false)
+				SetActive(arg_309_1.iconTrs_.gameObject, true)
+				arg_309_1.iconController_:SetSelectedState("hero")
+
+				arg_309_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_309_1.callingController_:SetSelectedState("normal")
+
+				arg_309_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_309_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_312_9 = arg_309_1:GetWordFromCfg(1109504077)
 				local var_312_10 = arg_309_1:FormatText(var_312_9.content)
@@ -10097,8 +10293,15 @@
 				arg_313_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_313_1:RecordName(arg_313_1.leftNameTxt_.text)
-				SetActive(arg_313_1.iconTrs_.gameObject, false)
+				SetActive(arg_313_1.iconTrs_.gameObject, true)
+				arg_313_1.iconController_:SetSelectedState("hero")
+
+				arg_313_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_313_1.callingController_:SetSelectedState("normal")
+
+				arg_313_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_313_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_316_3 = arg_313_1:GetWordFromCfg(1109504078)
 				local var_316_4 = arg_313_1:FormatText(var_316_3.content)
@@ -10727,8 +10930,15 @@
 				arg_335_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_335_1:RecordName(arg_335_1.leftNameTxt_.text)
-				SetActive(arg_335_1.iconTrs_.gameObject, false)
+				SetActive(arg_335_1.iconTrs_.gameObject, true)
+				arg_335_1.iconController_:SetSelectedState("hero")
+
+				arg_335_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_335_1.callingController_:SetSelectedState("normal")
+
+				arg_335_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_335_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_338_3 = arg_335_1:GetWordFromCfg(1109504083)
 				local var_338_4 = arg_335_1:FormatText(var_338_3.content)
@@ -11388,8 +11598,15 @@
 				arg_355_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_355_1:RecordName(arg_355_1.leftNameTxt_.text)
-				SetActive(arg_355_1.iconTrs_.gameObject, false)
+				SetActive(arg_355_1.iconTrs_.gameObject, true)
+				arg_355_1.iconController_:SetSelectedState("hero")
+
+				arg_355_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_355_1.callingController_:SetSelectedState("normal")
+
+				arg_355_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_355_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_358_11 = arg_355_1:GetWordFromCfg(1109504088)
 				local var_358_12 = arg_355_1:FormatText(var_358_11.content)
@@ -12356,8 +12573,15 @@
 				arg_391_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_391_1:RecordName(arg_391_1.leftNameTxt_.text)
-				SetActive(arg_391_1.iconTrs_.gameObject, false)
+				SetActive(arg_391_1.iconTrs_.gameObject, true)
+				arg_391_1.iconController_:SetSelectedState("hero")
+
+				arg_391_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_391_1.callingController_:SetSelectedState("normal")
+
+				arg_391_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_391_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_394_9 = arg_391_1:GetWordFromCfg(1109504097)
 				local var_394_10 = arg_391_1:FormatText(var_394_9.content)
@@ -12444,8 +12668,15 @@
 				arg_395_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_395_1:RecordName(arg_395_1.leftNameTxt_.text)
-				SetActive(arg_395_1.iconTrs_.gameObject, false)
+				SetActive(arg_395_1.iconTrs_.gameObject, true)
+				arg_395_1.iconController_:SetSelectedState("hero")
+
+				arg_395_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_395_1.callingController_:SetSelectedState("normal")
+
+				arg_395_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_395_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_398_3 = arg_395_1:GetWordFromCfg(1109504098)
 				local var_398_4 = arg_395_1:FormatText(var_398_3.content)
@@ -13659,8 +13890,15 @@
 				arg_426_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_426_1:RecordName(arg_426_1.leftNameTxt_.text)
-				SetActive(arg_426_1.iconTrs_.gameObject, false)
+				SetActive(arg_426_1.iconTrs_.gameObject, true)
+				arg_426_1.iconController_:SetSelectedState("hero")
+
+				arg_426_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_426_1.callingController_:SetSelectedState("normal")
+
+				arg_426_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_426_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_429_3 = arg_426_1:GetWordFromCfg(1109504104)
 				local var_429_4 = arg_426_1:FormatText(var_429_3.content)
@@ -13865,8 +14103,15 @@
 				arg_434_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_434_1:RecordName(arg_434_1.leftNameTxt_.text)
-				SetActive(arg_434_1.iconTrs_.gameObject, false)
+				SetActive(arg_434_1.iconTrs_.gameObject, true)
+				arg_434_1.iconController_:SetSelectedState("hero")
+
+				arg_434_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_434_1.callingController_:SetSelectedState("normal")
+
+				arg_434_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_434_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_437_3 = arg_434_1:GetWordFromCfg(1109504106)
 				local var_437_4 = arg_434_1:FormatText(var_437_3.content)
@@ -14295,8 +14540,15 @@
 				arg_446_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_446_1:RecordName(arg_446_1.leftNameTxt_.text)
-				SetActive(arg_446_1.iconTrs_.gameObject, false)
+				SetActive(arg_446_1.iconTrs_.gameObject, true)
+				arg_446_1.iconController_:SetSelectedState("hero")
+
+				arg_446_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_446_1.callingController_:SetSelectedState("normal")
+
+				arg_446_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_446_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_449_3 = arg_446_1:GetWordFromCfg(1109504109)
 				local var_449_4 = arg_446_1:FormatText(var_449_3.content)
@@ -14383,8 +14635,15 @@
 				arg_450_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_450_1:RecordName(arg_450_1.leftNameTxt_.text)
-				SetActive(arg_450_1.iconTrs_.gameObject, false)
+				SetActive(arg_450_1.iconTrs_.gameObject, true)
+				arg_450_1.iconController_:SetSelectedState("hero")
+
+				arg_450_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_450_1.callingController_:SetSelectedState("normal")
+
+				arg_450_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_450_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_453_3 = arg_450_1:GetWordFromCfg(1109504110)
 				local var_453_4 = arg_450_1:FormatText(var_453_3.content)
@@ -14871,8 +15130,15 @@
 				arg_470_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_470_1:RecordName(arg_470_1.leftNameTxt_.text)
-				SetActive(arg_470_1.iconTrs_.gameObject, false)
+				SetActive(arg_470_1.iconTrs_.gameObject, true)
+				arg_470_1.iconController_:SetSelectedState("hero")
+
+				arg_470_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_470_1.callingController_:SetSelectedState("normal")
+
+				arg_470_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_470_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_473_3 = arg_470_1:GetWordFromCfg(1109504115)
 				local var_473_4 = arg_470_1:FormatText(var_473_3.content)
@@ -14959,8 +15225,15 @@
 				arg_474_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_474_1:RecordName(arg_474_1.leftNameTxt_.text)
-				SetActive(arg_474_1.iconTrs_.gameObject, false)
+				SetActive(arg_474_1.iconTrs_.gameObject, true)
+				arg_474_1.iconController_:SetSelectedState("hero")
+
+				arg_474_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_474_1.callingController_:SetSelectedState("normal")
+
+				arg_474_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_474_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_477_3 = arg_474_1:GetWordFromCfg(1109504116)
 				local var_477_4 = arg_474_1:FormatText(var_477_3.content)
@@ -15719,8 +15992,15 @@
 				arg_502_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_502_1:RecordName(arg_502_1.leftNameTxt_.text)
-				SetActive(arg_502_1.iconTrs_.gameObject, false)
+				SetActive(arg_502_1.iconTrs_.gameObject, true)
+				arg_502_1.iconController_:SetSelectedState("hero")
+
+				arg_502_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_502_1.callingController_:SetSelectedState("normal")
+
+				arg_502_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_502_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_505_3 = arg_502_1:GetWordFromCfg(1109504123)
 				local var_505_4 = arg_502_1:FormatText(var_505_3.content)
@@ -16600,8 +16880,15 @@
 				arg_532_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_532_1:RecordName(arg_532_1.leftNameTxt_.text)
-				SetActive(arg_532_1.iconTrs_.gameObject, false)
+				SetActive(arg_532_1.iconTrs_.gameObject, true)
+				arg_532_1.iconController_:SetSelectedState("hero")
+
+				arg_532_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_532_1.callingController_:SetSelectedState("normal")
+
+				arg_532_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_532_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_535_3 = arg_532_1:GetWordFromCfg(1109504130)
 				local var_535_4 = arg_532_1:FormatText(var_535_3.content)
@@ -17202,8 +17489,15 @@
 				arg_556_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_556_1:RecordName(arg_556_1.leftNameTxt_.text)
-				SetActive(arg_556_1.iconTrs_.gameObject, false)
+				SetActive(arg_556_1.iconTrs_.gameObject, true)
+				arg_556_1.iconController_:SetSelectedState("hero")
+
+				arg_556_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_556_1.callingController_:SetSelectedState("normal")
+
+				arg_556_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_556_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_559_3 = arg_556_1:GetWordFromCfg(1109504136)
 				local var_559_4 = arg_556_1:FormatText(var_559_3.content)
@@ -17290,8 +17584,15 @@
 				arg_560_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_560_1:RecordName(arg_560_1.leftNameTxt_.text)
-				SetActive(arg_560_1.iconTrs_.gameObject, false)
+				SetActive(arg_560_1.iconTrs_.gameObject, true)
+				arg_560_1.iconController_:SetSelectedState("hero")
+
+				arg_560_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_560_1.callingController_:SetSelectedState("normal")
+
+				arg_560_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_560_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_563_3 = arg_560_1:GetWordFromCfg(1109504137)
 				local var_563_4 = arg_560_1:FormatText(var_563_3.content)
@@ -17614,8 +17915,15 @@
 				arg_572_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_572_1:RecordName(arg_572_1.leftNameTxt_.text)
-				SetActive(arg_572_1.iconTrs_.gameObject, false)
+				SetActive(arg_572_1.iconTrs_.gameObject, true)
+				arg_572_1.iconController_:SetSelectedState("hero")
+
+				arg_572_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_572_1.callingController_:SetSelectedState("normal")
+
+				arg_572_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_572_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_575_3 = arg_572_1:GetWordFromCfg(1109504140)
 				local var_575_4 = arg_572_1:FormatText(var_575_3.content)
@@ -17820,8 +18128,15 @@
 				arg_580_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_580_1:RecordName(arg_580_1.leftNameTxt_.text)
-				SetActive(arg_580_1.iconTrs_.gameObject, false)
+				SetActive(arg_580_1.iconTrs_.gameObject, true)
+				arg_580_1.iconController_:SetSelectedState("hero")
+
+				arg_580_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_580_1.callingController_:SetSelectedState("normal")
+
+				arg_580_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_580_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_583_3 = arg_580_1:GetWordFromCfg(1109504142)
 				local var_583_4 = arg_580_1:FormatText(var_583_3.content)
@@ -18359,8 +18674,15 @@
 				arg_598_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_598_1:RecordName(arg_598_1.leftNameTxt_.text)
-				SetActive(arg_598_1.iconTrs_.gameObject, false)
+				SetActive(arg_598_1.iconTrs_.gameObject, true)
+				arg_598_1.iconController_:SetSelectedState("hero")
+
+				arg_598_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_598_1.callingController_:SetSelectedState("normal")
+
+				arg_598_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_598_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_601_30 = arg_598_1:GetWordFromCfg(1109504146)
 				local var_601_31 = arg_598_1:FormatText(var_601_30.content)
@@ -18667,8 +18989,15 @@
 				arg_608_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_608_1:RecordName(arg_608_1.leftNameTxt_.text)
-				SetActive(arg_608_1.iconTrs_.gameObject, false)
+				SetActive(arg_608_1.iconTrs_.gameObject, true)
+				arg_608_1.iconController_:SetSelectedState("hero")
+
+				arg_608_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_608_1.callingController_:SetSelectedState("normal")
+
+				arg_608_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_608_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_611_9 = arg_608_1:GetWordFromCfg(1109504148)
 				local var_611_10 = arg_608_1:FormatText(var_611_9.content)
@@ -18927,8 +19256,15 @@
 				arg_616_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_616_1:RecordName(arg_616_1.leftNameTxt_.text)
-				SetActive(arg_616_1.iconTrs_.gameObject, false)
+				SetActive(arg_616_1.iconTrs_.gameObject, true)
+				arg_616_1.iconController_:SetSelectedState("hero")
+
+				arg_616_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_616_1.callingController_:SetSelectedState("normal")
+
+				arg_616_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_616_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_619_9 = arg_616_1:GetWordFromCfg(1109504150)
 				local var_619_10 = arg_616_1:FormatText(var_619_9.content)
@@ -19275,8 +19611,15 @@
 				arg_628_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_628_1:RecordName(arg_628_1.leftNameTxt_.text)
-				SetActive(arg_628_1.iconTrs_.gameObject, false)
+				SetActive(arg_628_1.iconTrs_.gameObject, true)
+				arg_628_1.iconController_:SetSelectedState("hero")
+
+				arg_628_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_628_1.callingController_:SetSelectedState("normal")
+
+				arg_628_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_628_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_631_3 = arg_628_1:GetWordFromCfg(1109504153)
 				local var_631_4 = arg_628_1:FormatText(var_631_3.content)
@@ -19541,8 +19884,15 @@
 				arg_636_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_636_1:RecordName(arg_636_1.leftNameTxt_.text)
-				SetActive(arg_636_1.iconTrs_.gameObject, false)
+				SetActive(arg_636_1.iconTrs_.gameObject, true)
+				arg_636_1.iconController_:SetSelectedState("hero")
+
+				arg_636_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_636_1.callingController_:SetSelectedState("normal")
+
+				arg_636_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_636_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_639_9 = arg_636_1:GetWordFromCfg(1109504155)
 				local var_639_10 = arg_636_1:FormatText(var_639_9.content)
@@ -19793,8 +20143,15 @@
 				arg_648_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_648_1:RecordName(arg_648_1.leftNameTxt_.text)
-				SetActive(arg_648_1.iconTrs_.gameObject, false)
+				SetActive(arg_648_1.iconTrs_.gameObject, true)
+				arg_648_1.iconController_:SetSelectedState("hero")
+
+				arg_648_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_648_1.callingController_:SetSelectedState("normal")
+
+				arg_648_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_648_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_651_3 = arg_648_1:GetWordFromCfg(1109504158)
 				local var_651_4 = arg_648_1:FormatText(var_651_3.content)
@@ -20059,8 +20416,15 @@
 				arg_656_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_656_1:RecordName(arg_656_1.leftNameTxt_.text)
-				SetActive(arg_656_1.iconTrs_.gameObject, false)
+				SetActive(arg_656_1.iconTrs_.gameObject, true)
+				arg_656_1.iconController_:SetSelectedState("hero")
+
+				arg_656_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_656_1.callingController_:SetSelectedState("normal")
+
+				arg_656_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_656_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_659_9 = arg_656_1:GetWordFromCfg(1109504160)
 				local var_659_10 = arg_656_1:FormatText(var_659_9.content)
@@ -20319,8 +20683,15 @@
 				arg_664_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_664_1:RecordName(arg_664_1.leftNameTxt_.text)
-				SetActive(arg_664_1.iconTrs_.gameObject, false)
+				SetActive(arg_664_1.iconTrs_.gameObject, true)
+				arg_664_1.iconController_:SetSelectedState("hero")
+
+				arg_664_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_664_1.callingController_:SetSelectedState("normal")
+
+				arg_664_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_664_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_667_9 = arg_664_1:GetWordFromCfg(1109504162)
 				local var_667_10 = arg_664_1:FormatText(var_667_9.content)

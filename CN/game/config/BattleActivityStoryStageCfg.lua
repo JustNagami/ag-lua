@@ -15395,6 +15395,642 @@
 			-1
 		}
 	},
+	[5250101] = {
+		monster_level = 80,
+		name = "长野黯影",
+		ai_level = 1,
+		map = "5250101",
+		background_1 = "I18",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "陌生的来客与渐起的阴翳，原野的风似乎不再宁静。",
+		sub_type = 1,
+		custom_line = "",
+		tag = 0,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5250101,
+		need_default_team = 1,
+		next_show_id_list = {
+			5250102
+		},
+		next_unlock_id_list = {
+			5250102
+		},
+		attribute_factor = {
+			200,
+			1000,
+			20000
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			258,
+			-132
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1045,
+				214
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[5250102] = {
+		monster_level = 80,
+		name = "异踪迷迹",
+		ai_level = 1,
+		map = "5250102",
+		background_1 = "I18",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "本不应被污染的新世界，却出现了恶魔的足迹。",
+		sub_type = 1,
+		custom_line = "",
+		tag = 0,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5250102,
+		need_default_team = 1,
+		next_show_id_list = {
+			5250103
+		},
+		next_unlock_id_list = {
+			5250103
+		},
+		attribute_factor = {
+			300,
+			1000,
+			20000
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			866,
+			-39
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1045,
+				214
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[5250103] = {
+		monster_level = 80,
+		name = "蔽日移云",
+		ai_level = 1,
+		map = "5250103",
+		background_1 = "I18a",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "以神为名者蚕食世界，噬神之人坚守未来。",
+		sub_type = 1,
+		custom_line = "",
+		tag = 0,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5250103,
+		need_default_team = 1,
+		next_show_id_list = {
+			5250104
+		},
+		next_unlock_id_list = {
+			5250104
+		},
+		attribute_factor = {
+			500,
+			1000,
+			12000
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			1474,
+			-132
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1045,
+				214
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[5250104] = {
+		monster_level = 80,
+		name = "虹霓流星",
+		ai_level = 1,
+		hero_list = "",
+		map = "",
+		background_1 = "ST03",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "少女如流星降落在霓虹灿烂的城市，两个世界的命运如齿轮咬合。",
+		sub_type = 1,
+		custom_line = "",
+		tag = 2,
+		hero_exp = 0,
+		level = 1,
+		cost = 0,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 0,
+		id = 5250104,
+		attribute_factor = "",
+		need_default_team = 1,
+		next_show_id_list = {
+			5250105
+		},
+		next_unlock_id_list = {
+			5250105
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			2082,
+			-39
+		},
+		is_revive = {
+			2,
+			100
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[5250105] = {
+		monster_level = 80,
+		name = "爝火风动",
+		ai_level = 1,
+		map = "5250105",
+		background_1 = "I05",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "将后背向你托付，将使命与你共担。",
+		sub_type = 1,
+		custom_line = "",
+		tag = 0,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5250105,
+		need_default_team = 1,
+		next_show_id_list = {
+			5250106
+		},
+		next_unlock_id_list = {
+			5250106
+		},
+		attribute_factor = {
+			500,
+			1000,
+			15000
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			2690,
+			-132
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1046,
+				215
+			},
+			{
+				1284,
+				217
+			},
+			{
+				0,
+				1
+			}
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[5250106] = {
+		monster_level = 80,
+		name = "扬汤止沸",
+		ai_level = 1,
+		map = "5250106",
+		background_1 = "I18b",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "暂熄的余烬不是胜利的前奏，风中的硝烟昭示着压抑的狱火。",
+		sub_type = 1,
+		custom_line = "",
+		tag = 0,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5250106,
+		need_default_team = 1,
+		next_show_id_list = {
+			5250107
+		},
+		next_unlock_id_list = {
+			5250107
+		},
+		attribute_factor = {
+			400,
+			1000,
+			15000
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			3298,
+			-39
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1046,
+				215
+			},
+			{
+				1045,
+				214
+			},
+			{
+				0,
+				1
+			}
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[5250107] = {
+		monster_level = 80,
+		name = "暮日围城",
+		ai_level = 1,
+		map = "5250107",
+		background_1 = "I18c",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "城池可以倾颓，人的希望却不会消失，这个世界或将走上不同的轨迹。",
+		sub_type = 1,
+		custom_line = "",
+		tag = 0,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5250107,
+		need_default_team = 1,
+		next_show_id_list = {
+			5250108
+		},
+		next_unlock_id_list = {
+			5250108
+		},
+		attribute_factor = {
+			200,
+			1000,
+			17000
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			3906,
+			-132
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1045,
+				214
+			},
+			{
+				1046,
+				215
+			},
+			{
+				0,
+				1
+			}
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[5250108] = {
+		monster_level = 80,
+		name = "覆世燎原",
+		ai_level = 1,
+		map = "5250108",
+		background_1 = "I18d",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "人面的恶神降临世间，家园的边界立起不退之剑。",
+		sub_type = 1,
+		custom_line = "",
+		tag = 1,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5250108,
+		need_default_team = 1,
+		next_show_id_list = {
+			5250109
+		},
+		next_unlock_id_list = {
+			5250109
+		},
+		attribute_factor = {
+			500,
+			1000,
+			80000
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			4514,
+			-39
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1045,
+				214
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[5250109] = {
+		monster_level = 80,
+		name = "溯夜追光",
+		ai_level = 1,
+		map = "5250109",
+		background_1 = "I18d",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "不屈的意志屏退暗夜，携手的战士抓住希望的微光。",
+		sub_type = 1,
+		custom_line = "",
+		tag = 1,
+		hero_exp = 20,
+		level = 1,
+		cost = 10,
+		extra_cost = "",
+		recommend_level = 0,
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		user_exp = 10,
+		id = 5250109,
+		need_default_team = 1,
+		next_show_id_list = {
+			5250110
+		},
+		next_unlock_id_list = {
+			5250110
+		},
+		attribute_factor = {
+			50,
+			1000,
+			35000
+		},
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			5122,
+			-132
+		},
+		is_revive = {
+			2,
+			100
+		},
+		hero_list = {
+			{
+				1045,
+				214
+			},
+			{
+				1046,
+				215
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			6,
+			104,
+			105
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
+	[5250110] = {
+		monster_level = 80,
+		name = "来日新晴",
+		ai_level = 1,
+		hero_list = "",
+		map = "",
+		background_1 = "I03",
+		custom_lock_line = "",
+		line_text = "",
+		tips = "相似的悲剧未再重演，被拯救的世界迎来新的明天。",
+		sub_type = 1,
+		custom_line = "",
+		tag = 2,
+		hero_exp = 0,
+		level = 1,
+		cost = 0,
+		extra_cost = "",
+		recommend_level = 0,
+		next_show_id_list = "",
+		can_switch_restrict_hero_list = "",
+		combo_skill_id = 0,
+		chip_list = "",
+		auto_next_stage_group = 0,
+		line_text_position = "",
+		next_unlock_id_list = "",
+		user_exp = 0,
+		id = 5250110,
+		attribute_factor = "",
+		need_default_team = 1,
+		drop_lib_id_list = {
+			2000004,
+			2000004
+		},
+		position = {
+			5730,
+			-39
+		},
+		is_revive = {
+			2,
+			100
+		},
+		team_type = {
+			1,
+			0
+		}
+	},
 	all = {
 		5010101,
 		5010102,
@@ -15667,6 +16303,16 @@
 		5230123,
 		5230124,
 		5230125,
-		5230126
+		5230126,
+		5250101,
+		5250102,
+		5250103,
+		5250104,
+		5250105,
+		5250106,
+		5250107,
+		5250108,
+		5250109,
+		5250110
 	}
 }

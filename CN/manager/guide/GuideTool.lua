@@ -256,6 +256,20 @@
 				elseif iter_1_1[2] == "tetrisStage" and (TetrisGameRunTimeManager:GetBlackBoard() and TetrisGameRunTimeManager:GetBlackBoard().stageID) ~= iter_1_1[3] then
 					return false
 				end
+			elseif iter_1_1[1] == "goldMiner" then
+				if iter_1_1[2] ~= GodEaterData:GetGoldActivityId() then
+					return false
+				end
+			elseif iter_1_1[1] == "civilizationGame" then
+				if gameContext:GetOpenPageHandler("civilizationGameView") == nil then
+					return false
+				end
+
+				local var_1_30 = civilization.CivilizationLuaBridge.CheckStage()
+
+				if civilization.CivilizationLuaBridge.CheckStage() < iter_1_1[2] then
+					return false
+				end
 			else
 				print("未实现的条件类型:", iter_1_1[1])
 			end

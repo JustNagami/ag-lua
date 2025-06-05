@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("ActivitySummerSwimsuitPreheatStageView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "Widget/Version/SummerUI_3_3/SummerUI_3_3_PreheatUI/SummerUI_3_3_PreheatPopUI"
+	return "Widget/Version/Alone_SummerUI_PreheatUI/Alone_SummerUI_PreheatPopUI"
 end
 
 function var_0_0.UIParent(arg_2_0)

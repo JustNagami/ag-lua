@@ -10,7 +10,10 @@ function var_0_0.Ctor(arg_1_0, arg_1_1, arg_1_2, arg_1_3, arg_1_4, arg_1_5)
 	arg_1_0:BindCfgUI()
 	arg_1_0:AddListeners()
 
-	arg_1_0.controller_ = arg_1_0.itemCon_:GetController("lock")
+	if arg_1_0.itemCon_ then
+		arg_1_0.controller_ = arg_1_0.itemCon_:GetController("lock")
+	end
+
 	arg_1_0.selectController_ = ControllerUtil.GetController(arg_1_0.transform_, "select")
 	arg_1_0.subTitleController_ = ControllerUtil.GetController(arg_1_0.transform_, "subTitle")
 	arg_1_0.updateHandler_ = handler(arg_1_0, arg_1_0.UpdateActivity)

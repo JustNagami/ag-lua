@@ -336,8 +336,15 @@
 				arg_8_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_8_1:RecordName(arg_8_1.leftNameTxt_.text)
-				SetActive(arg_8_1.iconTrs_.gameObject, false)
+				SetActive(arg_8_1.iconTrs_.gameObject, true)
+				arg_8_1.iconController_:SetSelectedState("hero")
+
+				arg_8_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_8_1.callingController_:SetSelectedState("normal")
+
+				arg_8_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_8_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_11_3 = arg_8_1:GetWordFromCfg(104102002)
 				local var_11_4 = arg_8_1:FormatText(var_11_3.content)
@@ -1209,8 +1216,15 @@
 				arg_34_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_34_1:RecordName(arg_34_1.leftNameTxt_.text)
-				SetActive(arg_34_1.iconTrs_.gameObject, false)
+				SetActive(arg_34_1.iconTrs_.gameObject, true)
+				arg_34_1.iconController_:SetSelectedState("hero")
+
+				arg_34_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_34_1.callingController_:SetSelectedState("normal")
+
+				arg_34_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_34_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_37_9 = arg_34_1:GetWordFromCfg(104102008)
 				local var_37_10 = arg_34_1:FormatText(var_37_9.content)
@@ -2120,8 +2134,15 @@
 				arg_58_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_58_1:RecordName(arg_58_1.leftNameTxt_.text)
-				SetActive(arg_58_1.iconTrs_.gameObject, false)
+				SetActive(arg_58_1.iconTrs_.gameObject, true)
+				arg_58_1.iconController_:SetSelectedState("hero")
+
+				arg_58_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_58_1.callingController_:SetSelectedState("normal")
+
+				arg_58_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_58_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_61_9 = arg_58_1:GetWordFromCfg(104102018)
 				local var_61_10 = arg_58_1:FormatText(var_61_9.content)
@@ -2688,8 +2709,15 @@
 				arg_74_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_74_1:RecordName(arg_74_1.leftNameTxt_.text)
-				SetActive(arg_74_1.iconTrs_.gameObject, false)
+				SetActive(arg_74_1.iconTrs_.gameObject, true)
+				arg_74_1.iconController_:SetSelectedState("hero")
+
+				arg_74_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_74_1.callingController_:SetSelectedState("normal")
+
+				arg_74_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_74_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_77_9 = arg_74_1:GetWordFromCfg(104102022)
 				local var_77_10 = arg_74_1:FormatText(var_77_9.content)
@@ -4395,8 +4423,15 @@
 				arg_112_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_112_1:RecordName(arg_112_1.leftNameTxt_.text)
-				SetActive(arg_112_1.iconTrs_.gameObject, false)
+				SetActive(arg_112_1.iconTrs_.gameObject, true)
+				arg_112_1.iconController_:SetSelectedState("hero")
+
+				arg_112_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_112_1.callingController_:SetSelectedState("normal")
+
+				arg_112_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_112_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_115_3 = arg_112_1:GetWordFromCfg(104102031)
 				local var_115_4 = arg_112_1:FormatText(var_115_3.content)
@@ -4956,8 +4991,15 @@
 				arg_128_1.contentRectCom_.sizeDelta = Vector2(1644, 265)
 
 				arg_128_1:RecordName(arg_128_1.leftNameTxt_.text)
-				SetActive(arg_128_1.iconTrs_.gameObject, false)
+				SetActive(arg_128_1.iconTrs_.gameObject, true)
+				arg_128_1.iconController_:SetSelectedState("hero")
+
+				arg_128_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_admin")
+
 				arg_128_1.callingController_:SetSelectedState("normal")
+
+				arg_128_1.keyicon_.color = Color.New(1, 1, 1)
+				arg_128_1.icon_.color = Color.New(1, 1, 1)
 
 				local var_131_9 = arg_128_1:GetWordFromCfg(104102035)
 				local var_131_10 = arg_128_1:FormatText(var_131_9.content)

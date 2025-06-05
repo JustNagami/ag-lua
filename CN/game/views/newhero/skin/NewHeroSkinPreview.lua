@@ -48,6 +48,8 @@ function var_0_1.OnEnter(arg_4_0)
 	arg_4_0:RefreshUI()
 
 	if arg_4_0.params_.isDlc then
+		arg_4_0.params_.isDlc = false
+
 		arg_4_0:ChangeShowDlcState(1)
 	elseif not arg_4_0.params_.isBack then
 		arg_4_0:ChangeShowDlcState(0)

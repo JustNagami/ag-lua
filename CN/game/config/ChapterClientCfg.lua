@@ -2935,6 +2935,27 @@
 			6010108
 		}
 	},
+	[6010029] = {
+		jump_system = "",
+		chapter_paint = "bg_activity_19",
+		chapter_paint_2 = "bg_sideStory_19",
+		not_chapter_id = false,
+		show_tag_type = 2,
+		name = "神谕绝响",
+		sort = 18,
+		desc = "限时支线",
+		asset_pend_key = "",
+		activity_id = 0,
+		level = 1,
+		extra_strory_system = "",
+		extra_story_unlock_condition = "",
+		drop_icon = "",
+		id = 6010029,
+		toggle = 5,
+		chapter_list = {
+			6010129
+		}
+	},
 	get_id_list_by_toggle = {
 		[5] = {
 			6010001,
@@ -2951,7 +2972,8 @@
 			6010013,
 			6010014,
 			6010015,
-			6010017
+			6010017,
+			6010029
 		},
 		[8] = {
 			5050001,
@@ -3227,6 +3249,7 @@
 		6010013,
 		6010014,
 		6010015,
-		6010017
+		6010017,
+		6010029
 	}
 }

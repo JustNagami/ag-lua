@@ -1374,7 +1374,79 @@
 			16
 		}
 	},
+	[103301] = {
+		id = 103301,
+		hero_id = 1033,
+		index = 1,
+		intimate = {
+			1061
+		},
+		relation_upgrade_group = {
+			1,
+			13,
+			9
+		}
+	},
+	[103302] = {
+		id = 103302,
+		hero_id = 1033,
+		index = 2,
+		intimate = {
+			1028
+		},
+		relation_upgrade_group = {
+			2,
+			6,
+			10
+		}
+	},
+	[103303] = {
+		id = 103303,
+		hero_id = 1033,
+		index = 3,
+		intimate = {
+			1248
+		},
+		relation_upgrade_group = {
+			3,
+			7,
+			14
+		}
+	},
+	[103304] = {
+		id = 103304,
+		hero_id = 1033,
+		index = 4,
+		intimate = {
+			1019
+		},
+		relation_upgrade_group = {
+			4,
+			11,
+			15
+		}
+	},
+	[103305] = {
+		id = 103305,
+		hero_id = 1033,
+		index = 5,
+		intimate = {
+			1066
+		},
+		relation_upgrade_group = {
+			8,
+			18,
+			16
+		}
+	},
 	get_id_list_by_hero_id = {
+		[1033] = {
+			103301,
+			103302,
+			103303,
+			103304,
+			103305
+		},
 		[1049] = {
 			104901,
 			104902,
@@ -1628,6 +1700,11 @@
 		104902,
 		104903,
 		104904,
-		104905
+		104905,
+		103301,
+		103302,
+		103303,
+		103304,
+		103305
 	}
 }

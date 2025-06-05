@@ -205,8 +205,10 @@ function var_0_0.IsRegressionOpen(arg_24_0)
 end
 
 function var_0_0.CheckIsBuyPayID(arg_25_0, arg_25_1)
-	if var_0_18 and var_0_18[arg_25_1] then
-		return var_0_18[arg_25_1].times > 0
+	local var_25_0 = PassportConst:GetReturnDiscountTransPayID(arg_25_1)
+
+	if var_0_18 and var_0_18[var_25_0] then
+		return var_0_18[var_25_0].times > 0
 	else
 		return false
 	end

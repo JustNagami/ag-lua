@@ -2551,6 +2551,35 @@
 		cheap_open_time = {},
 		cheap_close_time = {}
 	},
+	[233] = {
+		operation_stop_id = 0,
+		open_condition = 0,
+		shop_background = "TextureConfig/Shop_activity/Sa_0008",
+		group_name = "置换中心",
+		chain_last_visible = 0,
+		is_limit_buy_discount = 0,
+		show_in_shop = 0,
+		activity_id = 341461,
+		remark = "隐科组研究室",
+		params = "",
+		is_limit_time_discount = 0,
+		cheap_limit_currency = "",
+		refresh_num_limit = 0,
+		system = "1",
+		display_index = 1,
+		discount = 0,
+		initiative_refresh = 0,
+		id = 233,
+		display_group = 19,
+		shop_label = "",
+		cost_id = {
+			53160,
+			54085,
+			1
+		},
+		cheap_open_time = {},
+		cheap_close_time = {}
+	},
 	[300] = {
 		operation_stop_id = 0,
 		open_condition = 0,
@@ -2757,6 +2786,33 @@
 		cheap_open_time = {},
 		cheap_close_time = {}
 	},
+	[307] = {
+		operation_stop_id = 0,
+		open_condition = 0,
+		shop_background = "TextureConfig/Shop_activity/Sa_0007",
+		group_name = "战略后勤仓",
+		chain_last_visible = 0,
+		is_limit_buy_discount = 0,
+		show_in_shop = 0,
+		activity_id = 340001,
+		remark = "战略后勤仓",
+		params = "",
+		is_limit_time_discount = 0,
+		cheap_limit_currency = "",
+		refresh_num_limit = 0,
+		system = "1",
+		display_index = 1,
+		discount = 0,
+		initiative_refresh = 0,
+		id = 307,
+		display_group = 26,
+		shop_label = "",
+		cost_id = {
+			75
+		},
+		cheap_open_time = {},
+		cheap_close_time = {}
+	},
 	[308] = {
 		operation_stop_id = 0,
 		open_condition = 0,
@@ -2906,6 +2962,7 @@
 			229,
 			231,
 			232,
+			233,
 			300,
 			301,
 			302,
@@ -2913,6 +2970,7 @@
 			304,
 			305,
 			306,
+			307,
 			309
 		}
 	},
@@ -3001,6 +3059,7 @@
 		229,
 		231,
 		232,
+		233,
 		300,
 		301,
 		302,
@@ -3008,6 +3067,7 @@
 		304,
 		305,
 		306,
+		307,
 		308,
 		309
 	}

@@ -3068,7 +3068,147 @@
 		order = 99,
 		class_name = ActivityPromotionalView
 	},
+	[42001] = {
+		id = 42001,
+		name = "荒原的防卫战",
+		sub_title_type = 0,
+		desc = "",
+		activity_id = 340001,
+		activity_theme = 34,
+		icon = "340001",
+		order = 99,
+		class_name = ActivityGodEaterGamePage
+	},
+	[42002] = {
+		id = 42002,
+		name = "困 兽 行 动",
+		sub_title_type = 0,
+		desc = "",
+		activity_id = 342431,
+		activity_theme = 34,
+		icon = "242432",
+		order = 93,
+		class_name = ActivityPtScrollEnterView
+	},
+	[42003] = {
+		id = 42003,
+		name = "神 谕 绝 响",
+		sub_title_type = 2,
+		desc = "",
+		activity_id = 341021,
+		activity_theme = 34,
+		icon = "341021",
+		order = 100,
+		class_name = ActivityChapterPageView
+	},
+	[42004] = {
+		id = 42004,
+		name = "限 期 委 培",
+		sub_title_type = 0,
+		desc = "",
+		activity_id = 341891,
+		activity_theme = 34,
+		icon = "141891",
+		order = 89,
+		class_name = ActivityCultivateHeroMainView_Resident
+	},
+	[42005] = {
+		id = 42005,
+		name = "古 远 虚 影",
+		sub_title_type = 0,
+		desc = "",
+		activity_id = 343501,
+		activity_theme = 34,
+		icon = "110",
+		order = 91,
+		class_name = MultHeartDemonEnterView
+	},
+	[42006] = {
+		id = 42006,
+		name = "换 装 试 用",
+		sub_title_type = 0,
+		desc = "",
+		activity_id = 341311,
+		activity_theme = 34,
+		icon = "141311",
+		order = 88,
+		class_name = SkinTrialMainView_2_0
+	},
+	[42007] = {
+		id = 42007,
+		name = "角 色 试 用",
+		sub_title_type = 0,
+		desc = "",
+		activity_id = 341071,
+		activity_theme = 34,
+		icon = "141071",
+		order = 87,
+		class_name = HeroTrialView_Resident
+	},
+	[42008] = {
+		id = 42008,
+		name = "神 机 咆 哮",
+		sub_title_type = 0,
+		desc = "",
+		activity_id = 342131,
+		activity_theme = 34,
+		icon = "342131",
+		order = 99,
+		class_name = ActivityPromotionalView
+	},
+	[42009] = {
+		id = 42009,
+		name = "血 色 回 响",
+		sub_title_type = 0,
+		desc = "",
+		activity_id = 342132,
+		activity_theme = 34,
+		icon = "342132",
+		order = 98,
+		class_name = ActivityPromotionalView
+	},
+	[42010] = {
+		id = 42010,
+		name = "海 岸 风 味",
+		sub_title_type = 0,
+		desc = "荒岛、丛林、失散的伙伴、熟悉的既视感，难以预料的遭遇……等等，哪里传来的食物香味？",
+		activity_id = 342981,
+		activity_theme = 34,
+		icon = "282981",
+		order = 90,
+		class_name = ActivitySummerSwimsuitPreheatEnterView
+	},
 	get_id_list_by_activity_id = {
+		[342981] = {
+			42010
+		},
+		[342132] = {
+			42009
+		},
+		[342131] = {
+			42008
+		},
+		[341071] = {
+			42007
+		},
+		[341311] = {
+			42006
+		},
+		[343501] = {
+			42005
+		},
+		[341891] = {
+			42004
+		},
+		[341021] = {
+			42003
+		},
+		[342431] = {
+			42002
+		},
+		[340001] = {
+			42001
+		},
 		[332131] = {
 			40110
 		},
@@ -3902,6 +4042,18 @@
 		}
 	},
 	get_id_list_by_activity_theme = {
+		[34] = {
+			42001,
+			42002,
+			42003,
+			42004,
+			42005,
+			42006,
+			42007,
+			42008,
+			42009,
+			42010
+		},
 		[33] = {
 			40101,
 			40102,
@@ -4491,6 +4643,16 @@
 		40107,
 		40108,
 		40109,
-		40110
+		40110,
+		42001,
+		42002,
+		42003,
+		42004,
+		42005,
+		42006,
+		42007,
+		42008,
+		42009,
+		42010
 	}
 }

@@ -86,6 +86,16 @@ function var_0_1.UpdateView(arg_10_0)
 		end
 	end
 
+	if var_10_1 <= 0 then
+		for iter_10_4, iter_10_5 in ipairs(arg_10_0.showIdList_) do
+			if iter_10_5.state == "lock" then
+				var_10_1 = iter_10_4
+
+				break
+			end
+		end
+	end
+
 	arg_10_0.levelLuaList_:StartScroll(#arg_10_0.showIdList_, var_10_1)
 	arg_10_0.onekeyController_:SetSelectedState(#arg_10_0.receiveList_ > 0 and "true" or "false")
 end

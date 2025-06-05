@@ -20869,6 +20869,178 @@
 			}
 		}
 	},
+	[34382101] = {
+		need = 0,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 343821,
+		id = 34382101,
+		special_level = "",
+		reward_item_list = {
+			{
+				1046,
+				1
+			},
+			{
+				11046,
+				30
+			}
+		}
+	},
+	[34189101] = {
+		need = 20,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 341891,
+		id = 34189101,
+		special_level = "",
+		reward_item_list = {
+			{
+				40803,
+				20
+			},
+			{
+				40202,
+				20
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[34189102] = {
+		need = 50,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 341891,
+		id = 34189102,
+		special_level = "",
+		reward_item_list = {
+			{
+				41501,
+				20
+			},
+			{
+				40202,
+				30
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[34189103] = {
+		need = 80,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 341891,
+		id = 34189103,
+		special_level = "",
+		reward_item_list = {
+			{
+				41301,
+				30
+			},
+			{
+				40102,
+				20
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[34189104] = {
+		need = 110,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 341891,
+		id = 34189104,
+		special_level = "",
+		reward_item_list = {
+			{
+				40603,
+				20
+			},
+			{
+				40102,
+				30
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[34189105] = {
+		need = 140,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 341891,
+		id = 34189105,
+		special_level = "",
+		reward_item_list = {
+			{
+				40701,
+				20
+			},
+			{
+				40301,
+				60
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[34189106] = {
+		need = 160,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 341891,
+		id = 34189106,
+		special_level = "",
+		reward_item_list = {
+			{
+				41302,
+				20
+			},
+			{
+				40301,
+				80
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
+	[34189107] = {
+		need = 180,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 341891,
+		id = 34189107,
+		special_level = "",
+		reward_item_list = {
+			{
+				41303,
+				10
+			},
+			{
+				40301,
+				100
+			},
+			{
+				2,
+				2000
+			}
+		}
+	},
 	[32225801] = {
 		need = 5,
 		system_key = 0,
@@ -21163,7 +21335,430 @@
 			}
 		}
 	},
+	[34225101] = {
+		need = 1,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342251,
+		id = 34225101,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				750
+			}
+		}
+	},
+	[34225102] = {
+		need = 3,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342251,
+		id = 34225102,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				600
+			}
+		}
+	},
+	[34225103] = {
+		need = 999,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342251,
+		id = 34225103,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				500
+			}
+		}
+	},
+	[34225201] = {
+		need = 1,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342252,
+		id = 34225201,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				750
+			}
+		}
+	},
+	[34225202] = {
+		need = 3,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342252,
+		id = 34225202,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				600
+			}
+		}
+	},
+	[34225203] = {
+		need = 999,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342252,
+		id = 34225203,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				500
+			}
+		}
+	},
+	[34225301] = {
+		need = 1,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342253,
+		id = 34225301,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				750
+			}
+		}
+	},
+	[34225302] = {
+		need = 3,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342253,
+		id = 34225302,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				600
+			}
+		}
+	},
+	[34225303] = {
+		need = 999,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342253,
+		id = 34225303,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				500
+			}
+		}
+	},
+	[34225401] = {
+		need = 1,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342254,
+		id = 34225401,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				750
+			}
+		}
+	},
+	[34225402] = {
+		need = 3,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342254,
+		id = 34225402,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				600
+			}
+		}
+	},
+	[34225403] = {
+		need = 999,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342254,
+		id = 34225403,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				500
+			}
+		}
+	},
+	[34225501] = {
+		need = 1,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342255,
+		id = 34225501,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				750
+			}
+		}
+	},
+	[34225502] = {
+		need = 3,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342255,
+		id = 34225502,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				600
+			}
+		}
+	},
+	[34225503] = {
+		need = 999,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342255,
+		id = 34225503,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				500
+			}
+		}
+	},
+	[34225601] = {
+		need = 1,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342256,
+		id = 34225601,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				750
+			}
+		}
+	},
+	[34225602] = {
+		need = 3,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342256,
+		id = 34225602,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				600
+			}
+		}
+	},
+	[34225603] = {
+		need = 999,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342256,
+		id = 34225603,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				500
+			}
+		}
+	},
+	[34225701] = {
+		need = 1,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342257,
+		id = 34225701,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				750
+			}
+		}
+	},
+	[34225702] = {
+		need = 3,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342257,
+		id = 34225702,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				600
+			}
+		}
+	},
+	[34225703] = {
+		need = 999,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342257,
+		id = 34225703,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				500
+			}
+		}
+	},
+	[34225801] = {
+		need = 1,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342258,
+		id = 34225801,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				750
+			}
+		}
+	},
+	[34225802] = {
+		need = 3,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342258,
+		id = 34225802,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				600
+			}
+		}
+	},
+	[34225803] = {
+		need = 999,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342258,
+		id = 34225803,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				500
+			}
+		}
+	},
+	[34225901] = {
+		need = 1,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342259,
+		id = 34225901,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				750
+			}
+		}
+	},
+	[34225902] = {
+		need = 3,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342259,
+		id = 34225902,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				600
+			}
+		}
+	},
+	[34225903] = {
+		need = 999,
+		system_key = 0,
+		need_item_id = 0,
+		activity_id = 342259,
+		id = 34225903,
+		special_level = "",
+		reward_item_list = {
+			{
+				53999,
+				500
+			}
+		}
+	},
 	get_id_list_by_activity_id = {
+		[342259] = {
+			34225901,
+			34225902,
+			34225903
+		},
+		[342258] = {
+			34225801,
+			34225802,
+			34225803
+		},
+		[342257] = {
+			34225701,
+			34225702,
+			34225703
+		},
+		[342256] = {
+			34225601,
+			34225602,
+			34225603
+		},
+		[342255] = {
+			34225501,
+			34225502,
+			34225503
+		},
+		[342254] = {
+			34225401,
+			34225402,
+			34225403
+		},
+		[342253] = {
+			34225301,
+			34225302,
+			34225303
+		},
+		[342252] = {
+			34225201,
+			34225202,
+			34225203
+		},
+		[342251] = {
+			34225101,
+			34225102,
+			34225103
+		},
 		[332253] = {
 			33225301,
 			33225302,
@@ -21198,6 +21793,18 @@
 			32225801,
 			32225802,
 			32225803
+		},
+		[341891] = {
+			34189101,
+			34189102,
+			34189103,
+			34189104,
+			34189105,
+			34189106,
+			34189107
+		},
+		[343821] = {
+			34382101
 		},
 		[331891] = {
 			33189101,
@@ -23796,6 +24403,14 @@
 			33189105,
 			33189106,
 			33189107,
+			34382101,
+			34189101,
+			34189102,
+			34189103,
+			34189104,
+			34189105,
+			34189106,
+			34189107,
 			32225801,
 			32225802,
 			32225803,
@@ -23816,7 +24431,34 @@
 			33225203,
 			33225301,
 			33225302,
-			33225303
+			33225303,
+			34225101,
+			34225102,
+			34225103,
+			34225201,
+			34225202,
+			34225203,
+			34225301,
+			34225302,
+			34225303,
+			34225401,
+			34225402,
+			34225403,
+			34225501,
+			34225502,
+			34225503,
+			34225601,
+			34225602,
+			34225603,
+			34225701,
+			34225702,
+			34225703,
+			34225801,
+			34225802,
+			34225803,
+			34225901,
+			34225902,
+			34225903
 		}
 	},
 	all = {
@@ -24933,6 +25575,14 @@
 		33189105,
 		33189106,
 		33189107,
+		34382101,
+		34189101,
+		34189102,
+		34189103,
+		34189104,
+		34189105,
+		34189106,
+		34189107,
 		32225801,
 		32225802,
 		32225803,
@@ -24953,6 +25603,33 @@
 		33225203,
 		33225301,
 		33225302,
-		33225303
+		33225303,
+		34225101,
+		34225102,
+		34225103,
+		34225201,
+		34225202,
+		34225203,
+		34225301,
+		34225302,
+		34225303,
+		34225401,
+		34225402,
+		34225403,
+		34225501,
+		34225502,
+		34225503,
+		34225601,
+		34225602,
+		34225603,
+		34225701,
+		34225702,
+		34225703,
+		34225801,
+		34225802,
+		34225803,
+		34225901,
+		34225902,
+		34225903
 	}
 }

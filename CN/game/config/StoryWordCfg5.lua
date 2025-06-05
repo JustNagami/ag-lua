@@ -1,7 +1,7 @@
 ﻿return {
 	[319111003] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "口袋里带着什么？准备去哪儿？",
 		id = 319111003
 	},
@@ -13,13 +13,13 @@
 	},
 	[319111005] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "「奥贝里克」……说谎太久，连你自己都信了？实验借给你的身份而已。",
 		id = 319111005
 	},
 	[319111006] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "真是不明白，这么重要的事，让深空之眼的人来凑什么热闹。",
 		id = 319111006
 	},
@@ -31,19 +31,19 @@
 	},
 	[319111008] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "很奇怪么？所以才说外行不该扯上关系啊……",
 		id = 319111008
 	},
 	[319111009] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "托特组长没告诉你吧？在科尔盖，有这样一条律令：时刻做好准备，为「依托比尔轴」牺牲。",
 		id = 319111009
 	},
 	[319111010] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "就算知道大家都是最终要被回收的复制品，还是会忠心耿耿地扮演自己啊……就算知道了真相，科尔盖的白痴们也不会说出来。",
 		id = 319111010
 	},
@@ -55,7 +55,7 @@
 	},
 	[319111012] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "当然。可对我来说有什么区别呢？工具就要有工具的自觉，用什么方式被毁掉都不奇怪。",
 		id = 319111012
 	},
@@ -67,7 +67,7 @@
 	},
 	[319111014] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "怎么又开始说任务了？",
 		id = 319111014
 	},
@@ -85,7 +85,7 @@
 	},
 	[319111017] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "到我家里偷东西，还这么没礼貌……你觉得，什么样的惩罚游戏比较好呢？",
 		id = 319111017
 	},
@@ -1045,13 +1045,13 @@
 	},
 	[319311006] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "诶——这么快吗？好不容易来一次源层，我还没玩儿尽兴呢。",
 		id = 319311006
 	},
 	[319311007] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "现在才刚找到「玩具」——",
 		id = 319311007
 	},
@@ -1063,13 +1063,13 @@
 	},
 	[319311009] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……嘁，扫兴。",
 		id = 319311009
 	},
 	[319311010] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "「那玩意儿」出现的原因找到了？",
 		id = 319311010
 	},
@@ -1081,7 +1081,7 @@
 	},
 	[319311012] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "这也怪我是不是太不公平了？找东西这种事怎么想都是分散开更快吧？",
 		id = 319311012
 	},
@@ -1093,7 +1093,7 @@
 	},
 	[319311014] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "当然是——",
 		id = 319311014
 	},
@@ -1105,25 +1105,25 @@
 	},
 	[319311016] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "哦。我以为修正者之间没有什么秘密呢。",
 		id = 319311016
 	},
 	[319311017] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "要守这么多规矩真的很无聊啊，托特组长。无聊的人才能当组长吗？",
 		id = 319311017
 	},
 	[319311018] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "这里还有这么多视骸，为什么不把它们杀光了再回去？",
 		id = 319311018
 	},
 	[319311019] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "还有，什么东西一直在响啊？吵死了。",
 		id = 319311019
 	},
@@ -1135,7 +1135,7 @@
 	},
 	[319311021] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "是你定的闹钟？",
 		id = 319311021
 	},
@@ -1177,7 +1177,7 @@
 	},
 	[319311028] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你怎么连自己的东西都不会用？是不是偷来的？",
 		id = 319311028
 	},
@@ -1189,7 +1189,7 @@
 	},
 	[319311030] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "很可疑啊……托特组长，偷东西的事，科尔盖能管吗？",
 		id = 319311030
 	},
@@ -1255,7 +1255,7 @@
 	},
 	[319311041] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "喂喂喂，你说「奥贝里克」是认真的吗？她是奥贝里克？",
 		id = 319311041
 	},
@@ -1273,7 +1273,7 @@
 	},
 	[319311044] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "是啊，你不会在说她吧？会长的近卫军怎么会收这种笨蛋？我看像是冒充的。",
 		id = 319311044
 	},
@@ -1297,7 +1297,7 @@
 	},
 	[319311048] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "啧，特权。",
 		id = 319311048
 	},
@@ -1345,7 +1345,7 @@
 	},
 	[319311056] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "了解。",
 		id = 319311056
 	},
@@ -1357,7 +1357,7 @@
 	},
 	[319321002] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "很开心吧？今天消灭了这么多视骸。不用感谢我。",
 		id = 319321002
 	},
@@ -1369,13 +1369,13 @@
 	},
 	[319321004] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "都不想说话吗？和托特组长一样无聊啊。",
 		id = 319321004
 	},
 	[319321005] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "喂，你呢？「士官长」。你一看就比较有趣，战斗的时候还有闲心保护这些士兵……",
 		id = 319321005
 	},
@@ -1399,7 +1399,7 @@
 	},
 	[319321009] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……又怎么了？才打了一会儿就累成这样？",
 		id = 319321009
 	},
@@ -1423,13 +1423,13 @@
 	},
 	[319321013] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "没事？那我们再去源层逛逛？",
 		id = 319321013
 	},
 	[319321014] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "现在溜掉的话，组长肯定又会来找我们，多有趣。",
 		id = 319321014
 	},
@@ -1459,7 +1459,7 @@
 	},
 	[319321019] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "哪里有危险？不是一个人都没死吗？",
 		id = 319321019
 	},
@@ -1471,19 +1471,19 @@
 	},
 	[319321021] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "放心啦，科尔盖的大家都是我的伙伴，我怎么会看着他们被视骸杀掉呢？",
 		id = 319321021
 	},
 	[319321022] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "虽然他们很弱，但视骸也很弱，所以有我在就不会有事。",
 		id = 319321022
 	},
 	[319321023] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我和你一样，也在保护他们啊。",
 		id = 319321023
 	},
@@ -1495,7 +1495,7 @@
 	},
 	[319321025] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "不想去源层的话，你想去哪儿？带我一起怎么样？",
 		id = 319321025
 	},
@@ -1507,7 +1507,7 @@
 	},
 	[319321027] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "什么管理员？不认识，没兴趣。",
 		id = 319321027
 	},
@@ -1519,13 +1519,13 @@
 	},
 	[319321029] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "当然是离开这个鬼地方。",
 		id = 319321029
 	},
 	[319321030] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "托特组长相信你是奥贝里克，你把我带走，她不敢追上来，这样我就能去外面玩了。",
 		id = 319321030
 	},
@@ -1537,7 +1537,7 @@
 	},
 	[319321032] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "嘘——",
 		id = 319321032
 	},
@@ -1561,7 +1561,7 @@
 	},
 	[319321036] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "不用送了。",
 		id = 319321036
 	},
@@ -1633,7 +1633,7 @@
 	},
 	[319321048] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "真好啊。",
 		id = 319321048
 	},
@@ -1645,7 +1645,7 @@
 	},
 	[319321050] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "毕竟除了你们这些科尔盖的无聊家伙，我见过的人都凑不够一局「棱镜三号」。",
 		id = 319321050
 	},
@@ -1657,13 +1657,13 @@
 	},
 	[319321052] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "一看你就没玩过。所以才跟你说不上话啊。",
 		id = 319321052
 	},
 	[319321053] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "不过你没说「她也是科尔盖的人」……果然你也不相信她是奥贝里克呢。",
 		id = 319321053
 	},
@@ -1675,7 +1675,7 @@
 	},
 	[319321055] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "认证是真的有什么用？你就不担心她冒名顶替？",
 		id = 319321055
 	},
@@ -1687,7 +1687,7 @@
 	},
 	[319321057] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "这么肯定？",
 		id = 319321057
 	},
@@ -1705,7 +1705,7 @@
 	},
 	[319321060] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……那些连张照片都没有的老大们啊。",
 		id = 319321060
 	},
@@ -1729,7 +1729,7 @@
 	},
 	[319321064] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "可不可以少问点要动脑子的问题？懒得想了。",
 		id = 319321064
 	},
@@ -1741,7 +1741,7 @@
 	},
 	[319321066] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "都有。",
 		id = 319321066
 	},
@@ -1753,19 +1753,19 @@
 	},
 	[319321068] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "可以，毕竟我是天才。",
 		id = 319321068
 	},
 	[319321069] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……有些东西本就不该活着，死不足惜。",
 		id = 319321069
 	},
 	[319321070] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "比如视骸之类的……",
 		id = 319321070
 	},
@@ -1783,13 +1783,13 @@
 	},
 	[319321073] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "怎么会？",
 		id = 319321073
 	},
 	[319321074] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我开玩笑的。",
 		id = 319321074
 	},
@@ -10153,19 +10153,19 @@
 	},
 	[319521030] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "当然是休假。就算科尔盖再不喜欢讲道理，也要考虑营地的安全。",
 		id = 319521030
 	},
 	[319521031] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "毕竟如果一直把人关在一个地方，不管是谁都会发疯的。",
 		id = 319521031
 	},
 	[319521032] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我听见你刚才说了组长的书店，带我过去。",
 		id = 319521032
 	},
@@ -10177,7 +10177,7 @@
 	},
 	[319521034] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我没有那玩意儿。",
 		id = 319521034
 	},
@@ -10189,7 +10189,7 @@
 	},
 	[319521036] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "通讯终端。科尔盖不让我用。",
 		id = 319521036
 	},
@@ -10201,13 +10201,13 @@
 	},
 	[319521038] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "假期没有行动授权，也看不了战术地图，啊啊啊真麻烦。",
 		id = 319521038
 	},
 	[319521039] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "总之，带我过去，我找托特组长。",
 		id = 319521039
 	},
@@ -10219,13 +10219,13 @@
 	},
 	[319521041] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "可能她也放假？谁知道。营地看门的罐头跟我说她到南城来了。",
 		id = 319521041
 	},
 	[319521042] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "南城除了那家书店，她还能去哪儿？",
 		id = 319521042
 	},
@@ -10243,7 +10243,7 @@
 	},
 	[319521045] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我在问你话呢，士官长，能不能不要装作没听到？",
 		id = 319521045
 	},
@@ -10255,7 +10255,7 @@
 	},
 	[319521047] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……我可不想听这个。",
 		id = 319521047
 	},
@@ -10267,7 +10267,7 @@
 	},
 	[319521049] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我的任务？什么任务？",
 		id = 319521049
 	},
@@ -10279,7 +10279,7 @@
 	},
 	[319521051] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "谁规定只能有任务的时候才能找她了？我找她玩。",
 		id = 319521051
 	},
@@ -10291,7 +10291,7 @@
 	},
 	[319521053] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "她好不容易来一趟墨兰德，要是现在不找她玩，等解决掉北城那个大口袋，她就该走了。",
 		id = 319521053
 	},
@@ -10303,13 +10303,13 @@
 	},
 	[319521055] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "没有。那些东西跟我有什么关系。胆小鬼在我面前别吓得尿裤子就不错了……",
 		id = 319521055
 	},
 	[319521056] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "要不你陪我吧，你好像不怕我？想玩什么都行，我都会，你不会的我教你就好了。",
 		id = 319521056
 	},
@@ -10327,7 +10327,7 @@
 	},
 	[319521059] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "算了，像你这种三好学生，跟你讲了你也不明白。",
 		id = 319521059
 	},
@@ -10339,7 +10339,7 @@
 	},
 	[319521061] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "会自己停下来的武器就不叫武器了。",
 		id = 319521061
 	},
@@ -10351,13 +10351,13 @@
 	},
 	[319521063] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "所以才说，跟你讲了你也不明白啊……",
 		id = 319521063
 	},
 	[319521064] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我不知道你是怎么混进奥贝里克的，也不感兴趣，但是……不要教我做事。",
 		id = 319521064
 	},
@@ -10369,7 +10369,7 @@
 	},
 	[319521066] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "下次我可要认真了，士官长。别躲在托特组长后面了。",
 		id = 319521066
 	},
@@ -11743,13 +11743,13 @@
 	},
 	[319581002] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "游戏也要有胜负才行啊……想当好学生所以不肯认输吗？明明已经气喘吁吁了。",
 		id = 319581002
 	},
 	[319581003] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "再嘴硬下去，说不定真的会死掉哦。",
 		id = 319581003
 	},
@@ -11785,7 +11785,7 @@
 	},
 	[319581009] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "认输的时候态度倒是好一点啊……",
 		id = 319581009
 	},
@@ -11803,7 +11803,7 @@
 	},
 	[319581012] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "喂，把声音放出来。",
 		id = 319581012
 	},
@@ -11821,7 +11821,7 @@
 	},
 	[319581015] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我不喜欢秘密。把声音放出来，我也要听。不然我就继续了。",
 		id = 319581015
 	},
@@ -11851,7 +11851,7 @@
 	},
 	[319581020] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "图灵是谁？",
 		id = 319581020
 	},
@@ -11881,7 +11881,7 @@
 	},
 	[319581025] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "那不是正好吗？",
 		id = 319581025
 	},
@@ -11899,13 +11899,13 @@
 	},
 	[319581028] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你们不是遇到视骸，还缺人吗？看来又到了该使用我的时候了。",
 		id = 319581028
 	},
 	[319581029] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "让托特组长等一等，我很快就到。",
 		id = 319581029
 	},
@@ -11935,7 +11935,7 @@
 	},
 	[319591003] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "就是那个吗……",
 		id = 319591003
 	},
@@ -11953,7 +11953,7 @@
 	},
 	[319591006] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "喂，怎么进去？",
 		id = 319591006
 	},
@@ -11965,7 +11965,7 @@
 	},
 	[319591008] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "还挺刺激。进去就能见到那个什么智种视骸了？",
 		id = 319591008
 	},
@@ -11983,13 +11983,13 @@
 	},
 	[319591011] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "如果确定打得过才能动手，那还要我们干什么？",
 		id = 319591011
 	},
 	[319591012] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "走，一起去玩玩。",
 		id = 319591012
 	},
@@ -12025,7 +12025,7 @@
 	},
 	[319591018] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "呦！托特组长，打得这么吃力，看来我来得真是时候啊。",
 		id = 319591018
 	},
@@ -12061,7 +12061,7 @@
 	},
 	[319591024] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "当然是凯瑟让我来的。",
 		id = 319591024
 	},
@@ -12073,7 +12073,7 @@
 	},
 	[319591026] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "薇儿丹蒂，你也别光看着了。",
 		id = 319591026
 	},
@@ -12103,13 +12103,13 @@
 	},
 	[319591031] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "谈？和那边那两个家伙？",
 		id = 319591031
 	},
 	[319591032] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你疯了吧，托特组长？那可是敌人。",
 		id = 319591032
 	},
@@ -12121,7 +12121,7 @@
 	},
 	[319591034] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "是是是，你是指挥官。\n但我对你们的行动可没有兴趣。",
 		id = 319591034
 	},
@@ -12133,7 +12133,7 @@
 	},
 	[319591036] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "男的是图灵，女的是格莫瑞？",
 		id = 319591036
 	},
@@ -12193,7 +12193,7 @@
 	},
 	[319591046] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我看上去虚弱到要人来扶了吗？",
 		id = 319591046
 	},
@@ -12205,7 +12205,7 @@
 	},
 	[319591048] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……你怎么比科尔盖还关心我？",
 		id = 319591048
 	},
@@ -12217,7 +12217,7 @@
 	},
 	[319591050] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "修正者……呵呵呵呵，修正者……咳咳！",
 		id = 319591050
 	},
@@ -12349,7 +12349,7 @@
 	},
 	[319591072] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……什么？离开？",
 		id = 319591072
 	},
@@ -12379,7 +12379,7 @@
 	},
 	[319591077] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "托特组长……你确定，你们的任务结束了？",
 		id = 319591077
 	},
@@ -12391,7 +12391,7 @@
 	},
 	[319591079] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "哦……那你们是该回去了。",
 		id = 319591079
 	},
@@ -12613,7 +12613,7 @@
 	},
 	[319601033] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "是啊，浪费的时间够多了……你怎么还不动手？",
 		id = 319601033
 	},
@@ -12625,7 +12625,7 @@
 	},
 	[319601035] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……我不管你有多强，最好不要乱说话。\n我就是修正者，杀视骸也不需要理由。",
 		id = 319601035
 	},
@@ -12643,7 +12643,7 @@
 	},
 	[319601038] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我在害怕——杀掉你的人不是我啊！",
 		id = 319601038
 	},
@@ -12691,7 +12691,7 @@
 	},
 	[319601046] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……你是白痴吗？",
 		id = 319601046
 	},
@@ -12703,7 +12703,7 @@
 	},
 	[319601048] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "呵呵呵……还真的是……",
 		id = 319601048
 	},
@@ -12751,7 +12751,7 @@
 	},
 	[319601056] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……喂，你怎么回事？",
 		id = 319601056
 	},
@@ -12823,7 +12823,7 @@
 	},
 	[319601068] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你怎么了？",
 		id = 319601068
 	},
@@ -12859,7 +12859,7 @@
 	},
 	[319601074] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "躲什么？",
 		id = 319601074
 	},
@@ -12919,7 +12919,7 @@
 	},
 	[319601084] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "那到底是什么东西？",
 		id = 319601084
 	},
@@ -12979,7 +12979,7 @@
 	},
 	[319611007] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……不是挺好的吗？",
 		id = 319611007
 	},
@@ -12991,7 +12991,7 @@
 	},
 	[319611009] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "只有我们两个，不是挺好的吗？",
 		id = 319611009
 	},
@@ -13003,7 +13003,7 @@
 	},
 	[319611011] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你知道图灵不会杀你？",
 		id = 319611011
 	},
@@ -13015,7 +13015,7 @@
 	},
 	[319611013] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "因为你和他是同类？",
 		id = 319611013
 	},
@@ -13027,19 +13027,19 @@
 	},
 	[319611015] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……我不相信他，也不相信你。",
 		id = 319611015
 	},
 	[319611016] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "刚才从你身体里散发出来的，绝对是骸能，很纯净，不会有错。",
 		id = 319611016
 	},
 	[319611017] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你和图灵一样，身体里同时有神能和骸能。你已经被「污染」了。",
 		id = 319611017
 	},
@@ -13057,7 +13057,7 @@
 	},
 	[319611020] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "所以为什么他们对你这么宽容啊？！",
 		id = 319611020
 	},
@@ -13069,13 +13069,13 @@
 	},
 	[319611022] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你不觉得很不公平吗？你可以像个人类一样生活，可以无数次地犯错，会有无数人理解你，原谅你，支持你……",
 		id = 319611022
 	},
 	[319611023] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我从来没有过这些，我也不在乎。我想要的只有一样东西，就是去做一个修正者该做的事，杀掉世界上所有的视骸。",
 		id = 319611023
 	},
@@ -13087,19 +13087,19 @@
 	},
 	[319611025] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "还没到你发言的时候啊，优等生！\n你被人叫过「残次品」吗？一辈子都满足不了别人的期待，派不上用场。",
 		id = 319611025
 	},
 	[319611026] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我知道凯瑟部长为什么会那么说了。她一定是觉得，遇到图灵那样的东西，现在的我根本打不过。",
 		id = 319611026
 	},
 	[319611027] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "但事情不是那样的啊，不是那样的……呵呵……",
 		id = 319611027
 	},
@@ -13117,19 +13117,19 @@
 	},
 	[319611030] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "像你这样的家伙，明明开始跟我是一样的，为什么会差这么多？和我比起来，明明你才是残次品啊，薇儿丹蒂。",
 		id = 319611030
 	},
 	[319611031] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "最后能派上用场的、能杀死图灵的武器，有我一个就够了，其他都是我的陪衬，都是我的养分……",
 		id = 319611031
 	},
 	[319611032] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "就从这里开始吧，没有人会管东管西，就算你死了也不会有人知道……",
 		id = 319611032
 	},
@@ -13141,7 +13141,7 @@
 	},
 	[319611034] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "还记得吗？我早就警告过你，赝品，下次见面，我可要认真了。",
 		id = 319611034
 	},
@@ -17371,7 +17371,7 @@
 	},
 	[411141033] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "还以为是来抓我去地下享福的使者呢。",
 		id = 411141033
 	},
@@ -17395,7 +17395,7 @@
 	},
 	[411141037] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "能弃权吗？",
 		id = 411141037
 	},
@@ -17419,7 +17419,7 @@
 	},
 	[411141041] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "想赢我让你就是了。",
 		id = 411141041
 	},
@@ -17431,7 +17431,7 @@
 	},
 	[411141043] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "嘁，要打就好好打。",
 		id = 411141043
 	},
@@ -17473,7 +17473,7 @@
 	},
 	[411141050] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "哄小孩儿呢？",
 		id = 411141050
 	},
@@ -17491,7 +17491,7 @@
 	},
 	[411141053] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "别开玩笑……",
 		id = 411141053
 	},
@@ -17503,7 +17503,7 @@
 	},
 	[411141055] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "别开玩笑……那个女人……怎么可能还把委托交给我。",
 		id = 411141055
 	},
@@ -17515,7 +17515,7 @@
 	},
 	[411141057] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "还打什么，我早就输了。",
 		id = 411141057
 	},
@@ -17527,19 +17527,19 @@
 	},
 	[411141059] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你手上那张不是另一张鬼牌？",
 		id = 411141059
 	},
 	[411141060] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "也就是薇儿丹蒂。",
 		id = 411141060
 	},
 	[411141061] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "现在最让那个女人头大的是她吧。",
 		id = 411141061
 	},
@@ -17581,13 +17581,13 @@
 	},
 	[411141068] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……所以呢？",
 		id = 411141068
 	},
 	[411141069] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "有区别吗？说得好像我以前生活的世界有多真实似的。",
 		id = 411141069
 	},
@@ -17599,13 +17599,13 @@
 	},
 	[411141071] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "**，那个女人真是彻底疯了……",
 		id = 411141071
 	},
 	[411141072] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "她还说什么了？",
 		id = 411141072
 	},
@@ -17647,13 +17647,13 @@
 	},
 	[411141079] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "别呀。我只是突然有点……怀念？",
 		id = 411141079
 	},
 	[411141080] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你想问什么？",
 		id = 411141080
 	},
@@ -17677,13 +17677,13 @@
 	},
 	[411141084] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你要问我原理那我可就搞不懂了，不过……",
 		id = 411141084
 	},
 	[411141085] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我们的命都被这个东西控制着，它可以随时致我们于死地。",
 		id = 411141085
 	},
@@ -17695,25 +17695,25 @@
 	},
 	[411141087] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "没人成功过。",
 		id = 411141087
 	},
 	[411141088] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "但是当时那些研究员都像疯子一样，什么都在我们身上搞实验，肯定也想过这个问题。",
 		id = 411141088
 	},
 	[411141089] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "最早的07系列素体……量大，瑕疵也很明显。",
 		id = 411141089
 	},
 	[411141090] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "当然，我和他们是不同的……",
 		id = 411141090
 	},
@@ -17737,7 +17737,7 @@
 	},
 	[411141094] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "搞的什么东西……以为自己是魔法师啊。",
 		id = 411141094
 	},
@@ -17749,13 +17749,13 @@
 	},
 	[411141096] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你真是……",
 		id = 411141096
 	},
 	[411141097] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "刚才你的脸……对不起。",
 		id = 411141097
 	},
@@ -22819,7 +22819,7 @@
 	},
 	[411251030] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "呸——什么怪味。",
 		id = 411251030
 	},
@@ -22837,7 +22837,7 @@
 	},
 	[411251033] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "超时一分钟了。",
 		id = 411251033
 	},
@@ -22849,7 +22849,7 @@
 	},
 	[411251035] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "啧，不就是瞒着科尔盖么？这么多年了，凯瑟那帮人还有几个记得我的？",
 		id = 411251035
 	},
@@ -22861,7 +22861,7 @@
 	},
 	[411251037] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "是是，三天两头被您提醒还怎么放松……\n到底什么事？我忙着呢。",
 		id = 411251037
 	},
@@ -22873,7 +22873,7 @@
 	},
 	[411251039] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "「看管」？你把我这儿当成监狱还是托儿所了？",
 		id = 411251039
 	},
@@ -22891,7 +22891,7 @@
 	},
 	[411251042] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你最好别拿这种事消遣我。",
 		id = 411251042
 	},
@@ -22909,7 +22909,7 @@
 	},
 	[411251045] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "真的是……我这辈子的乐子还得指望你啊，托特组长。",
 		id = 411251045
 	},
@@ -23071,7 +23071,7 @@
 	},
 	[319151002] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你才看完录像，居然还问我有没有事？\n这可是我受伤最重的一次，换个人来早就死了。",
 		id = 319151002
 	},
@@ -23083,7 +23083,7 @@
 	},
 	[319151004] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "别看了，我跟你们不一样，一点小伤，修修补补就好了。",
 		id = 319151004
 	},
@@ -23095,13 +23095,13 @@
 	},
 	[319151006] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "什么叫我为什么也来了？没人告诉过你，我就住在这里吗？",
 		id = 319151006
 	},
 	[319151007] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "昨天你闯进来的时候，不会连这里还有人住都不知道吧？",
 		id = 319151007
 	},
@@ -23119,13 +23119,13 @@
 	},
 	[319151010] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "上次邀请你来玩，你不愿意。\n很遗憾，现在只能在这种场合见到你。",
 		id = 319151010
 	},
 	[319151011] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "现在我再问你一遍，你能保证同样的事情不会发生第二次？",
 		id = 319151011
 	},
@@ -23137,13 +23137,13 @@
 	},
 	[319151013] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我？放心，我对你这样的怪物可没兴趣，昨天差点被你的骸能侵蚀，我可不想再来一次。",
 		id = 319151013
 	},
 	[319151014] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "再说，部长已经把实验的事告诉我了，不管我变成什么样都没有意义了，不是吗？",
 		id = 319151014
 	},
@@ -23179,7 +23179,7 @@
 	},
 	[319151020] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "又看我干什么？我无所谓。",
 		id = 319151020
 	},
@@ -23491,7 +23491,7 @@
 	},
 	[319171005] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "啧。",
 		id = 319171005
 	},
@@ -23551,7 +23551,7 @@
 	},
 	[319171015] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "可以啊，从小品味就不错。",
 		id = 319171015
 	},
@@ -23563,7 +23563,7 @@
 	},
 	[319171017] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "那你觉得我应该喜欢玩什么？",
 		id = 319171017
 	},
@@ -23575,7 +23575,7 @@
 	},
 	[319171019] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "鬼才喜欢玩恐怖游戏。",
 		id = 319171019
 	},
@@ -23593,7 +23593,7 @@
 	},
 	[319171022] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "原来真的是笨蛋啊。",
 		id = 319171022
 	},
@@ -23611,7 +23611,7 @@
 	},
 	[319171025] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "怕我把客人吓走了？",
 		id = 319171025
 	},
@@ -23629,13 +23629,13 @@
 	},
 	[319171028] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "为什么不行？",
 		id = 319171028
 	},
 	[319171029] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你自己都猜到了，我的任务就是监视你，待在能看到你的地方就够了。",
 		id = 319171029
 	},
@@ -23653,7 +23653,7 @@
 	},
 	[319171032] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你在搞笑吗？",
 		id = 319171032
 	},
@@ -23665,7 +23665,7 @@
 	},
 	[319171034] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……昨天跟你说了半天，你是一句都没听明白。",
 		id = 319171034
 	},
@@ -23677,13 +23677,13 @@
 	},
 	[319171036] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "是是是，你说的对。\n有权力选择的家伙，不管怎么选都对……",
 		id = 319171036
 	},
 	[319171037] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我问你，假如盖亚有一天让你消灭掉所有人类，你会不会照做？",
 		id = 319171037
 	},
@@ -23695,7 +23695,7 @@
 	},
 	[319171039] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你确定你能违抗盖亚的命令？",
 		id = 319171039
 	},
@@ -23707,19 +23707,19 @@
 	},
 	[319171041] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "别把事情想得那么理所当然行不行？\n盖亚可不是神造的东西，监察者说到底也是普通人类。",
 		id = 319171041
 	},
 	[319171042] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你知道人类是什么东西吗？就是一群早晚会忘记自己的悔恨有多虔诚，然后不停重复错误的家伙。",
 		id = 319171042
 	},
 	[319171043] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "所以他们才需要我们这些修正者啊。想想吧，我们是在为谁「修正」什么？",
 		id = 319171043
 	},
@@ -23815,7 +23815,7 @@
 	},
 	[319181014] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你挡住门了，进不进去？",
 		id = 319181014
 	},
@@ -23833,7 +23833,7 @@
 	},
 	[319181017] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "不行吗？那儿又没人。居高临下视野也好，我找不到更好的地方了。",
 		id = 319181017
 	},
@@ -23845,7 +23845,7 @@
 	},
 	[319181019] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "这个？玩游戏玩的。第一次没有作息要求，忘记时间了。",
 		id = 319181019
 	},
@@ -23857,7 +23857,7 @@
 	},
 	[319181021] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "所以，这个就是你们说的「复健」？",
 		id = 319181021
 	},
@@ -23869,7 +23869,7 @@
 	},
 	[319181023] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我没伤没病的，复健什么？",
 		id = 319181023
 	},
@@ -23881,7 +23881,7 @@
 	},
 	[319181025] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "不用管我，你们继续。",
 		id = 319181025
 	},
@@ -23899,7 +23899,7 @@
 	},
 	[319181028] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "喂，那个，小绿毛？",
 		id = 319181028
 	},
@@ -23911,7 +23911,7 @@
 	},
 	[319181030] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "薇……诺伦这是怎么了？",
 		id = 319181030
 	},
@@ -23923,7 +23923,7 @@
 	},
 	[319181032] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "哦……这个我熟啊。",
 		id = 319181032
 	},
@@ -23947,13 +23947,13 @@
 	},
 	[319181036] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我才用不上这种过家家的办法……实在是看不下去了。",
 		id = 319181036
 	},
 	[319181037] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "要消耗你的力量，还用得着这么麻烦？别忘了我最擅长什么。",
 		id = 319181037
 	},
@@ -23965,13 +23965,13 @@
 	},
 	[319181039] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "看来你印象挺深的。\n小绿毛，你看好神力抑制装置就行，剩下的交给我。",
 		id = 319181039
 	},
 	[319181040] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "闲着也是闲着，我当你的陪练好了。",
 		id = 319181040
 	},
@@ -24739,7 +24739,7 @@
 	},
 	[319251024] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "重要的东西可别再弄丢了。下次找不到，我可不管了。",
 		id = 319251024
 	},
@@ -25081,13 +25081,13 @@
 	},
 	[319271015] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "回去吧，回去吧！哈哈哈，正好把BOSS留给我，独享经验！",
 		id = 319271015
 	},
 	[319271016] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "贝洛妮，你也快回去，托特组长都下命令了。",
 		id = 319271016
 	},
@@ -25099,7 +25099,7 @@
 	},
 	[319271018] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我什么我？别搞错了，人类。乖乖被我保护就行了！",
 		id = 319271018
 	},
@@ -25117,7 +25117,7 @@
 	},
 	[319271021] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "呜呼！!",
 		id = 319271021
 	},
@@ -25129,7 +25129,7 @@
 	},
 	[319271023] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "原来是个高攻低防。",
 		id = 319271023
 	},
@@ -25165,7 +25165,7 @@
 	},
 	[319271029] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "赶紧滚！",
 		id = 319271029
 	},
@@ -25219,7 +25219,7 @@
 	},
 	[319271038] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "原来还会在这种时候出来耍帅……果然是准备好了。",
 		id = 319271038
 	},
@@ -27175,7 +27175,7 @@
 	},
 	[319671075] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "部长也许会信，但可惜，今天你得说服我才行。",
 		id = 319671075
 	},
@@ -28489,7 +28489,7 @@
 	},
 	[319721029] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你们在这里干什么？",
 		id = 319721029
 	},
@@ -28501,7 +28501,7 @@
 	},
 	[319721031] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "那个怪物？谁知道呢，好像跟托特一起走了。",
 		id = 319721031
 	},
@@ -28513,7 +28513,7 @@
 	},
 	[319721033] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "是是是，你们就捧着她吧，我没兴趣，走了。",
 		id = 319721033
 	},
@@ -28525,7 +28525,7 @@
 	},
 	[319721035] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "关你什么事？",
 		id = 319721035
 	},
@@ -28543,19 +28543,19 @@
 	},
 	[319721038] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "会是基于科尔盖初级职员的身份进行处罚，没有豁免，没有代偿，巴拉巴拉……我都听腻了。",
 		id = 319721038
 	},
 	[319721039] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "别误会了，我可没有惹麻烦的幼稚兴趣。这回出来，只是因为有人许诺了自由而已。",
 		id = 319721039
 	},
 	[319721040] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你们忙你们的，不关我的事。",
 		id = 319721040
 	},
@@ -28669,7 +28669,7 @@
 	},
 	[319731010] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "看看时间啊，托特组长带你离开都是两个小时以前的事了。",
 		id = 319731010
 	},
@@ -28693,13 +28693,13 @@
 	},
 	[319731014] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你以为让我协助实验是协助什么？\n听说科尔盖要找的东西已经找到了，剩下的任务就是拖时间。",
 		id = 319731014
 	},
 	[319731015] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "本来拖时间的苦力是你，现在又多了一个我。打同一份工，就不用闹得这么紧张了。",
 		id = 319731015
 	},
@@ -28711,7 +28711,7 @@
 	},
 	[319731017] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你觉得是就是咯。",
 		id = 319731017
 	},
@@ -28723,7 +28723,7 @@
 	},
 	[319731019] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "里面是给我住的？",
 		id = 319731019
 	},
@@ -28735,7 +28735,7 @@
 	},
 	[319731021] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "哦……那我住哪儿？",
 		id = 319731021
 	},
@@ -28747,7 +28747,7 @@
 	},
 	[319731023] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "没有。这种小事，她们知道我自己能解决。",
 		id = 319731023
 	},
@@ -28759,7 +28759,7 @@
 	},
 	[319731025] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "正在想。",
 		id = 319731025
 	},
@@ -28771,7 +28771,7 @@
 	},
 	[319731027] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "遇到什么解决不了的要紧事，叫我一声。鸡毛蒜皮的小事就别来烦我了。",
 		id = 319731027
 	},
@@ -28933,13 +28933,13 @@
 	},
 	[319741011] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "有什么好担心的？封锁消息可是科尔盖最熟练的业务。该头疼的是我们这边。",
 		id = 319741011
 	},
 	[319741012] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "有人告诉过我，清除者只会出现在「数据平层」。你们谁想替她补充几句？",
 		id = 319741012
 	},
@@ -28969,7 +28969,7 @@
 	},
 	[319741017] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "什么复健？她不是好好的么？",
 		id = 319741017
 	},
@@ -29017,7 +29017,7 @@
 	},
 	[319741025] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……对不起。",
 		id = 319741025
 	},
@@ -29035,7 +29035,7 @@
 	},
 	[319741028] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我是在说，不该叫你笨蛋的。她才是。",
 		id = 319741028
 	},
@@ -29047,7 +29047,7 @@
 	},
 	[319741030] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "要不是有人不想让你死，我可懒得管你，更懒得管这种无聊的事情。",
 		id = 319741030
 	},
@@ -29059,7 +29059,7 @@
 	},
 	[319741032] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你又懂了，大聪明？",
 		id = 319741032
 	},
@@ -29077,7 +29077,7 @@
 	},
 	[319741035] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "呵，你觉得我不敢再来一次？",
 		id = 319741035
 	},
@@ -29089,7 +29089,7 @@
 	},
 	[319741037] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你在说什么？",
 		id = 319741037
 	},
@@ -29107,13 +29107,13 @@
 	},
 	[319741040] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "行了，你已经证明了自己不是个笨蛋，别再抖机灵了。",
 		id = 319741040
 	},
 	[319741041] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "不过刚才那句话，我是认真的，你们来找东西也就算了，继续和盖亚打来打去，真觉得有意义？",
 		id = 319741041
 	},
@@ -29125,7 +29125,7 @@
 	},
 	[319741043] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "噗。行，相信谁是你的自由。",
 		id = 319741043
 	},
@@ -29137,7 +29137,7 @@
 	},
 	[319741045] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "任务就是任务，不需要「为什么」。",
 		id = 319741045
 	},
@@ -29149,37 +29149,37 @@
 	},
 	[319741047] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "托特说的是她自己，你可别套在我身上。",
 		id = 319741047
 	},
 	[319741048] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "首先，你把我当成「科尔盖的人」就错了。\n再说，信念这种东西，可不是谁都配有的。",
 		id = 319741048
 	},
 	[319741049] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "还是刚才的问题，如果盖亚让我消灭人类，我会照做，或者说我没有别的选择。",
 		id = 319741049
 	},
 	[319741050] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "有些东西在你诞生之初就伴随着你，没法摆脱，也没法抗拒。一旦接受了这样的事实，就能过得轻松很多。",
 		id = 319741050
 	},
 	[319741051] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你们跟我说什么世界毁灭，什么复制体……对我来说没有区别。工具要做的，就是在被需要的时候起到自己的作用，这样就够了。",
 		id = 319741051
 	},
 	[319741052] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "就算凯瑟部长现在告诉我，我是视骸，自杀吧。只要那是真的，照做就是了。",
 		id = 319741052
 	},
@@ -30079,7 +30079,7 @@
 	},
 	[319771001] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……我昨天睡得早。",
 		id = 319771001
 	},
@@ -30091,7 +30091,7 @@
 	},
 	[319771003] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "没事，你们在训练场那点动静，可比研究所安静多了。",
 		id = 319771003
 	},
@@ -30103,13 +30103,13 @@
 	},
 	[319771005] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "玩久了也会腻的。不只是游戏。",
 		id = 319771005
 	},
 	[319771006] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你们没感觉吗？这样一天天的，根本紧张不起来，像是在等死一样。",
 		id = 319771006
 	},
@@ -30121,7 +30121,7 @@
 	},
 	[319771008] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我就是知道你们听得懂才这么说。换成其他没有紧迫感的人，我还懒得解释呢。",
 		id = 319771008
 	},
@@ -30133,7 +30133,7 @@
 	},
 	[319771010] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "问题就是没事可做了。",
 		id = 319771010
 	},
@@ -30145,13 +30145,13 @@
 	},
 	[319771012] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "不觉得可笑吗？还有那么多脏东西藏在角落里，我们却在这里度假，一点办法都没有。",
 		id = 319771012
 	},
 	[319771013] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "做不到自己该做的事，那不就是等死么？",
 		id = 319771013
 	},
@@ -30169,13 +30169,13 @@
 	},
 	[319771016] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "帮助人类……行吧，这么说倒也没错。",
 		id = 319771016
 	},
 	[319771017] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "就等托特回来了，说不定她能帮我们找点乐子。",
 		id = 319771017
 	},
@@ -30187,13 +30187,13 @@
 	},
 	[319771019] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "外面的。快一个星期没回来了吧？",
 		id = 319771019
 	},
 	[319771020] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……你们真打算那么叫她？我可提醒你们，她虽然看上去好说话，可不是多单纯的人。",
 		id = 319771020
 	},
@@ -30235,7 +30235,7 @@
 	},
 	[319771027] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……乐子还真要来了。",
 		id = 319771027
 	},
@@ -30259,7 +30259,7 @@
 	},
 	[319771031] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你在逗我。才八点。",
 		id = 319771031
 	},
@@ -30271,7 +30271,7 @@
 	},
 	[319771033] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "找我有事？",
 		id = 319771033
 	},
@@ -30517,7 +30517,7 @@
 	},
 	[319781006] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "想说感谢的话就算了。\n监视任务结束，我是不是该撤了？",
 		id = 319781006
 	},
@@ -30529,7 +30529,7 @@
 	},
 	[319781008] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "要是不问，谁猜得到上面什么意思呢？",
 		id = 319781008
 	},
@@ -30547,7 +30547,7 @@
 	},
 	[319781011] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "一个任务完成，回去待机等下一个，常识。",
 		id = 319781011
 	},
@@ -30577,7 +30577,7 @@
 	},
 	[319781016] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "换着理由继续雇我当保镖？",
 		id = 319781016
 	},
@@ -32533,7 +32533,7 @@
 	},
 	[319831007] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你们这一趟去得可够久的。都够我做一遍大扫除了。",
 		id = 319831007
 	},
@@ -32545,7 +32545,7 @@
 	},
 	[319831009] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "她们两个呢？什么时候吃晚饭？",
 		id = 319831009
 	},
@@ -32569,7 +32569,7 @@
 	},
 	[319831013] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "视骸？清除者？",
 		id = 319831013
 	},
@@ -32581,7 +32581,7 @@
 	},
 	[319831015] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "要救的人呢？",
 		id = 319831015
 	},
@@ -32593,7 +32593,7 @@
 	},
 	[319831017] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "哦，那就行了。",
 		id = 319831017
 	},
@@ -32605,7 +32605,7 @@
 	},
 	[319831019] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "意思就是，虽然再也看不到小绿毛了很可惜，但也用不着难过，她做了她该做的事，足够了。",
 		id = 319831019
 	},
@@ -32617,19 +32617,19 @@
 	},
 	[319831021] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我记得我说过，工具要有工具的觉悟，别去想着改变那些必定发生的事，会轻松很多。",
 		id = 319831021
 	},
 	[319831022] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "换个说法，你是觉得自己永远不会死，还是希望你死了以后身边的人都是一副受了打击要死要活的样子？",
 		id = 319831022
 	},
 	[319831023] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "不肯听我的，你要不问问托特？",
 		id = 319831023
 	},
@@ -32653,7 +32653,7 @@
 	},
 	[319831027] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你说那半块木头？我收拾掉了。",
 		id = 319831027
 	},
@@ -32665,13 +32665,13 @@
 	},
 	[319831029] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "扔掉了啊，没发现我把这里打扫了一遍么？早上被你那一剑弄坏的东西，我都扔掉了。",
 		id = 319831029
 	},
 	[319831030] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "有些看着还能用的设备我没动，问问托特或者她带过来的特工有没有懂的……",
 		id = 319831030
 	},
@@ -32683,7 +32683,7 @@
 	},
 	[319831032] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "当然是外面的垃圾回收点。\n干什么？你要那玩意儿有用？",
 		id = 319831032
 	},
@@ -32725,7 +32725,7 @@
 	},
 	[319831039] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "宁希达不在了，你一个人怎么训练？",
 		id = 319831039
 	},
@@ -32737,7 +32737,7 @@
 	},
 	[319831041] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "哈？我说……你忽然闹什么情绪？不就是块破木头……",
 		id = 319831041
 	},
@@ -32761,13 +32761,13 @@
 	},
 	[319831045] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……行，行。",
 		id = 319831045
 	},
 	[319831046] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "「最重要的人」，现在丢下你跑到哪里去了？",
 		id = 319831046
 	},
@@ -33367,7 +33367,7 @@
 	},
 	[319861001] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "真慢。",
 		id = 319861001
 	},
@@ -33391,7 +33391,7 @@
 	},
 	[319861005] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我把训练场里的一个，不，半块木牌子扔了。诺伦说那是她朋友送给她的东西。",
 		id = 319861005
 	},
@@ -33421,7 +33421,7 @@
 	},
 	[319861010] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "哈？又拐到我身上了？",
 		id = 319861010
 	},
@@ -33439,7 +33439,7 @@
 	},
 	[319861013] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……啧，不要突然道歉啊。",
 		id = 319861013
 	},
@@ -33451,13 +33451,13 @@
 	},
 	[319861015] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "那一下也就是挠痒痒的程度，你要是精力这么好，打着玩都没事。",
 		id = 319861015
 	},
 	[319861016] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我不知道你这么在意那个什么绘马。训练场里的东西，我不会再乱碰了。",
 		id = 319861016
 	},
@@ -33469,7 +33469,7 @@
 	},
 	[319861018] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "过家家上瘾了吧你……今天还有什么安排吗？",
 		id = 319861018
 	},
@@ -33493,7 +33493,7 @@
 	},
 	[319861022] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "这家伙怎么忽然又精神了？",
 		id = 319861022
 	},
@@ -33505,7 +33505,7 @@
 	},
 	[319861024] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "是吗？你在十年前好像不是这么想的。",
 		id = 319861024
 	},
@@ -33517,7 +33517,7 @@
 	},
 	[319861026] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "这话你跟那边的我说过吗？",
 		id = 319861026
 	},
@@ -33529,7 +33529,7 @@
 	},
 	[319861028] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我想也是……活下去的洛肯才是洛肯，不然就是一辈子「0700·10」。她好歹算个人了。",
 		id = 319861028
 	},
@@ -33553,7 +33553,7 @@
 	},
 	[319861032] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "噗哈哈哈——这是什么鬼地方，怎么混成这副样子？喂喂喂，能不能稍微干点有出息的事……",
 		id = 319861032
 	},
@@ -33565,13 +33565,13 @@
 	},
 	[319861034] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……是啊，满脸写着「开心」。",
 		id = 319861034
 	},
 	[319861035] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "这段时间和诺伦还有小绿毛住在一起，两个菜鸟，一天到晚傻笑个不停，大概就是这种「开心」吧。",
 		id = 319861035
 	},
@@ -33583,7 +33583,7 @@
 	},
 	[319861037] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "那也不能算一路人。\n与生俱来的东西，再用力想要抹去，抹到浑身是血，还是抹不掉的。它们在骨头里。",
 		id = 319861037
 	},
@@ -33595,7 +33595,7 @@
 	},
 	[319861039] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "幸运的家伙。",
 		id = 319861039
 	},
@@ -33607,7 +33607,7 @@
 	},
 	[319861041] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "还有没有？",
 		id = 319861041
 	},
@@ -33619,13 +33619,13 @@
 	},
 	[319861043] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "看攻略和自己实操肯定有区别啊。今天去平层玩了一把，细节可比资料里那些「分析」多太多了。",
 		id = 319861043
 	},
 	[319861044] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你们要是不知道……行吧，自己开荒，也算有点乐趣。",
 		id = 319861044
 	},
@@ -34855,7 +34855,7 @@
 	},
 	[319891061] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "怎么又只有你一个？托特呢？",
 		id = 319891061
 	},
@@ -34867,13 +34867,13 @@
 	},
 	[319891063] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "又遇到什么事了？怎么每次回来都是这副表情？",
 		id = 319891063
 	},
 	[319891064] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "别告诉我托特也死了。",
 		id = 319891064
 	},
@@ -35743,7 +35743,7 @@
 	},
 	[319921002] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你没回去？",
 		id = 319921002
 	},
@@ -35755,7 +35755,7 @@
 	},
 	[319921004] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "你？她也真敢同意啊。你现在还能干什么？在场外当啦啦队吗？",
 		id = 319921004
 	},
@@ -35767,7 +35767,7 @@
 	},
 	[319921006] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "啧。",
 		id = 319921006
 	},
@@ -35779,7 +35779,7 @@
 	},
 	[319921008] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "本来是找她的。你在这里，找你也一样。",
 		id = 319921008
 	},
@@ -35797,13 +35797,13 @@
 	},
 	[319921011] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "还好混在一堆破铜烂铁里，无人机在回收站里转了一圈，很快就找到了。",
 		id = 319921011
 	},
 	[319921012] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "重要的东西可别再弄丢了。下次找不到，我可不管了。",
 		id = 319921012
 	},
@@ -35815,7 +35815,7 @@
 	},
 	[319921014] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "又不是被盖亚抹掉了。",
 		id = 319921014
 	},
@@ -35827,7 +35827,7 @@
 	},
 	[319921016] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "喂。",
 		id = 319921016
 	},
@@ -35839,13 +35839,13 @@
 	},
 	[319921018] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "虽然看不到什么希望……要去打支配者，好好准备一下。",
 		id = 319921018
 	},
 	[319921019] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "好歹是赢过我的人，偶尔消沉一下原谅你了。决战可别输得太难看。",
 		id = 319921019
 	},
@@ -37177,7 +37177,7 @@
 	},
 	[319951003] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "呦，全来了。",
 		id = 319951003
 	},
@@ -37189,13 +37189,13 @@
 	},
 	[319951005] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "本来就是替补，当然要先到现场找把凳子坐着。",
 		id = 319951005
 	},
 	[319951006] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "我们的首发明星情况怎么样？",
 		id = 319951006
 	},
@@ -37213,7 +37213,7 @@
 	},
 	[319951009] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "看来没我上场的机会了。",
 		id = 319951009
 	},
@@ -37225,7 +37225,7 @@
 	},
 	[319951011] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "明白。刷怪点上摆陷阱，老套的小聪明。",
 		id = 319951011
 	},
@@ -44557,13 +44557,13 @@
 	},
 	[1109703057] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "感谢管理员和管理员的小助手！小助手如果不嫌弃的话……可以收下我折的小狐狸吗？就当是来深空之眼的伴手礼了……",
 		id = 1109703057
 	},
 	[1109703058] = {
 		speaker = "霍德尔",
-		prefab_name = "1043ui_story",
+		prefab_name = "1037ui_story",
 		content = "谢，谢谢两位！呜……这次也出现了这么多失误……我会好好看录像总结经验的！",
 		id = 1109703058
 	},
@@ -65983,7 +65983,7 @@
 	},
 	[1104901005] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "深空之眼的办事效率还真是高，这样的天气劳烦您来这儿跑一趟……我都不知道怎么感谢才好了。",
 		id = 1104901005
 	},
@@ -66001,7 +66001,7 @@
 	},
 	[1104901008] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "不碍事。进屋内坐吧，#{nickname}#。信鸦，去帮我准备一下。",
 		id = 1104901008
 	},
@@ -66085,7 +66085,7 @@
 	},
 	[1104901022] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "当着客人的面说这些很失礼。",
 		id = 1104901022
 	},
@@ -66097,7 +66097,7 @@
 	},
 	[1104901024] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "咳咳……别见怪，#{nickname}#。千羽今天有事出去了，一会儿我派人带你过去找她。",
 		id = 1104901024
 	},
@@ -66115,7 +66115,7 @@
 	},
 	[1104901027] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "好，我先过一遍吧。信鸦，你带#{nickname}#去找千羽。",
 		id = 1104901027
 	},
@@ -66127,7 +66127,7 @@
 	},
 	[1104901029] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "千羽那边也要处理不少事务，想来更需要你的协助。",
 		id = 1104901029
 	},
@@ -87241,13 +87241,13 @@
 	},
 	[320021028] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我没事的管理员。也许那位帕尔瓦蒂姐姐有事要忙，她毕竟是弥楼衍的主管，就像休老师每天都很忙一样。",
 		id = 320021028
 	},
 	[320021029] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "现在正好有空，还可以复习一下任务资料。罗波那、巴钦、普渡制药、生物兵器和违禁药品……好多……哈欠……",
 		id = 320021029
 	},
@@ -87259,7 +87259,7 @@
 	},
 	[320021031] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "休老师好不容易才同意的机会，我……我得好好努力才行。",
 		id = 320021031
 	},
@@ -87271,7 +87271,7 @@
 	},
 	[320021033] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "好吧。喝什么好呢？",
 		id = 320021033
 	},
@@ -87559,7 +87559,7 @@
 	},
 	[320021081] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "帕尔瓦蒂姐姐，看上去很累的样子。",
 		id = 320021081
 	},
@@ -87577,7 +87577,7 @@
 	},
 	[320021084] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "是饿了吗？这里有些小蛋糕。我和薇儿姐姐刚买的，味道很好。",
 		id = 320021084
 	},
@@ -87823,7 +87823,7 @@
 	},
 	[320022035] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "复杂。",
 		id = 320022035
 	},
@@ -87847,7 +87847,7 @@
 	},
 	[320022039] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "啊，要开始说正事了吗？帕尔瓦蒂姐姐，我们是不是应该先核对一下情报……",
 		id = 320022039
 	},
@@ -87859,7 +87859,7 @@
 	},
 	[320022041] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "是很难没错，还有诺维赫、格莫瑞、图灵……一直都没发现他们藏到哪里去了。但该收集的情报还是要收集的。",
 		id = 320022041
 	},
@@ -87901,7 +87901,7 @@
 	},
 	[320022048] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "可是……您的名字好像也不短。",
 		id = 320022048
 	},
@@ -87955,7 +87955,7 @@
 	},
 	[320022057] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "俱毗罗先生。我记得是弥楼衍负责黑市生意的……也是修正者吧？",
 		id = 320022057
 	},
@@ -88099,7 +88099,7 @@
 	},
 	[320031020] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我在！对不起，忽然走神了。",
 		id = 320031020
 	},
@@ -88111,7 +88111,7 @@
 	},
 	[320031022] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "没、没什么，就是给我打打气。",
 		id = 320031022
 	},
@@ -88129,7 +88129,7 @@
 	},
 	[320031025] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "真的不用担心，管理员，冥王不会那样的。而且我也……",
 		id = 320031025
 	},
@@ -88183,7 +88183,7 @@
 	},
 	[320032008] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "出了好多血，这得赶紧治疗才行吧？！",
 		id = 320032008
 	},
@@ -88297,7 +88297,7 @@
 	},
 	[320041002] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "您好。",
 		id = 320041002
 	},
@@ -88735,13 +88735,13 @@
 	},
 	[320042031] = {
 		speaker = "薇儿丹蒂",
-		prefab_name = "1284ui_story",
+		prefab_name = "10102ui_story",
 		content = "刚才在路上问了一圈，大家都说「伽梨姐出门了」。可能她还有事吧。",
 		id = 320042031
 	},
 	[320042032] = {
 		speaker = "薇儿丹蒂",
-		prefab_name = "1284ui_story",
+		prefab_name = "10102ui_story",
 		content = "要不我们先进去，晚点再打声招呼？",
 		id = 320042032
 	},
@@ -88777,7 +88777,7 @@
 	},
 	[320042038] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "伽梨姐，初次见面，早上好。",
 		id = 320042038
 	},
@@ -88819,7 +88819,7 @@
 	},
 	[320042045] = {
 		speaker = "薇儿丹蒂",
-		prefab_name = "1284ui_story",
+		prefab_name = "10102ui_story",
 		content = "伽梨姐是我们的前辈，这样称呼挺合适的。",
 		id = 320042045
 	},
@@ -89293,7 +89293,7 @@
 	},
 	[320051055] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "是「管理员」才对哦~",
 		id = 320051055
 	},

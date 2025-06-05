@@ -57,23 +57,44 @@ function var_0_1.RefreshUI(arg_4_0)
 	local var_4_1 = ActivityToggleCfg[var_4_0]
 
 	arg_4_0.nameTxt_.text = GetI18NText(var_4_1.name)
-	arg_4_0.descTxt_.text = GetI18NText(var_4_1.desc)
 
-	local var_4_2 = var_4_1.class_name:GetUIName()
+	local var_4_2 = RegressionDataNew:GetReturnRecommendCfgData()
+
+	if var_4_2.recommend_tip ~= "" then
+		arg_4_0.descTxt_.text = GetTips(var_4_2.recommend_tip)
+	else
+		arg_4_0.descTxt_.text = GetTips("NEW_REGRESSION_DEFAULT_RECOMMEND_TIPS")
+	end
+
+	local var_4_3 = var_4_1.class_name:GetUIName()
 
 	if not arg_4_0.activityViewGo_ then
-		local var_4_3 = Asset.Load(var_4_2)
+		local var_4_4 = Asset.Load(var_4_3)
 
-		if var_4_3 then
-			local var_4_4 = var_4_3.transform:Find("Bg")
+		if var_4_4 then
+			local var_4_5 = var_4_4.transform:Find("Bg")
 
-			if var_4_4 == nil then
-				var_4_4 = var_4_3.transform:Find("bg")
+			if var_4_5 == nil then
+				var_4_5 = var_4_4.transform:Find("bg")
 			end
 
-			arg_4_0.activityViewGo_ = Object.Instantiate(var_4_4, arg_4_0.maskNode_).gameObject
-			arg_4_0.activityViewGo_.transform.localScale = Vector3.one * 0.3
+			if var_4_5 == nil then
+				var_4_5 = var_4_4.transform:Find("BG")
+			end
+
+			arg_4_0.activityViewGo_ = Object.Instantiate(var_4_5, arg_4_0.maskNode_).gameObject
+
+			local var_4_6 = arg_4_0.activityViewGo_.transform
+
+			var_4_6.localScale = Vector3.one * 0.3
+			var_4_6.localPosition = Vector3.zero
 		end
+	end
+
+	if ChapterResidentTools.GetResidentActMainID(arg_4_0.recommendActID) then
+		SetActive(arg_4_0.timeObj_, false)
+	else
+		SetActive(arg_4_0.timeObj_, true)
 	end
 
 	arg_4_0:RefreshTime()
@@ -81,6 +102,7 @@ end
 
 function var_0_1.RefreshTime(arg_5_0)
 	arg_5_0.countDownTxt_.text = string.format(GetTips("LEFT_TIME"), ActivityTools.GetActivityLostTimeStrWith2Unit(arg_5_0.recommendActID))
+	arg_5_0.timeTxt_.text = string.format(GetTips("LEFT_TIME"), ActivityTools.GetActivityLostTimeStrWith2Unit(arg_5_0.recommendActID))
 end
 
 function var_0_1.Dispose(arg_6_0)

@@ -30,10 +30,10 @@ function var_0_0.OnSendStageClear(arg_5_0, arg_5_1, arg_5_2)
 end
 
 function var_0_0.GetStageReward(arg_6_0, arg_6_1, arg_6_2)
-	manager.net:SendWithLoadingNew(65509, {
+	manager.net:SendWithLoadingNew(65508, {
 		activity_id = arg_6_0,
 		stage_id = arg_6_1
-	}, 65510, function(arg_7_0, arg_7_1)
+	}, 65509, function(arg_7_0, arg_7_1)
 		var_0_0.OnGetStageReward(arg_7_0, arg_7_1, arg_6_2)
 	end)
 end
@@ -122,34 +122,33 @@ function var_0_0.UpdateRedPoint(arg_13_0)
 
 	var_0_1[arg_13_0] = var_0_1[arg_13_0] or {}
 
-	local var_13_5 = ActivitySummerSwimsuitPreheatData.GetDay(arg_13_0)
-	local var_13_6 = {}
+	local var_13_5 = {}
 
 	for iter_13_0, iter_13_1 in ipairs(var_13_4) do
-		local var_13_7 = ActivitySummerSwimsuitPreheatCfg[iter_13_1]
-		local var_13_8 = string.format("%s_%d_%s", RedPointConst.ACTIVITY_SUMMER_SWIMSUIT_PREHEAT_STAGE, var_13_7.id, var_13_0)
-		local var_13_9 = string.format("%s_%d_%s", RedPointConst.ACTIVITY_SUMMER_SWIMSUIT_PREHEAT_REWARD, var_13_7.id, var_13_0)
-		local var_13_10 = iter_13_0 <= var_13_5
-		local var_13_11 = ActivitySummerSwimsuitPreheatData.IsStageClear(arg_13_0, var_13_7.id)
-		local var_13_12 = ActivitySummerSwimsuitPreheatData.IsGotStageReward(arg_13_0, var_13_7.id)
+		local var_13_6 = ActivitySummerSwimsuitPreheatCfg[iter_13_1]
+		local var_13_7 = string.format("%s_%d_%s", RedPointConst.ACTIVITY_SUMMER_SWIMSUIT_PREHEAT_STAGE, var_13_6.id, var_13_0)
+		local var_13_8 = string.format("%s_%d_%s", RedPointConst.ACTIVITY_SUMMER_SWIMSUIT_PREHEAT_REWARD, var_13_6.id, var_13_0)
+		local var_13_9 = ActivityData:GetActivityIsOpen(var_13_6.activity_id)
+		local var_13_10 = ActivitySummerSwimsuitPreheatData.IsStageClear(arg_13_0, var_13_6.id)
+		local var_13_11 = ActivitySummerSwimsuitPreheatData.IsGotStageReward(arg_13_0, var_13_6.id)
 
-		if var_0_1[arg_13_0][var_13_8] or var_13_3 then
-			manager.redPoint:setTip(var_13_8, 0)
+		if var_0_1[arg_13_0][var_13_7] or var_13_3 then
+			manager.redPoint:setTip(var_13_7, 0)
 		else
-			manager.redPoint:setTip(var_13_8, var_13_10 and not var_13_11 and 1 or 0)
+			manager.redPoint:setTip(var_13_7, var_13_9 and not var_13_10 and 1 or 0)
 		end
 
 		if var_13_3 then
-			manager.redPoint:setTip(var_13_9, 0)
+			manager.redPoint:setTip(var_13_8, 0)
 		else
-			manager.redPoint:setTip(var_13_9, var_13_10 and var_13_11 and not var_13_12 and 1 or 0)
+			manager.redPoint:setTip(var_13_8, var_13_9 and var_13_10 and not var_13_11 and 1 or 0)
 		end
 
-		table.insert(var_13_6, var_13_8)
-		table.insert(var_13_6, var_13_9)
+		table.insert(var_13_5, var_13_7)
+		table.insert(var_13_5, var_13_8)
 	end
 
-	manager.redPoint:addGroup(var_13_2, var_13_6)
+	manager.redPoint:addGroup(var_13_2, var_13_5)
 end
 
 function var_0_0.BanRedPoint(arg_14_0, arg_14_1)

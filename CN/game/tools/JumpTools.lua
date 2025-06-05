@@ -602,6 +602,15 @@ function var_0_0.JumpToPage2(arg_5_0)
 		var_0_0.OpenPageByJump(var_5_80, var_5_81, var_5_82)
 
 		return
+	elseif arg_5_0[1] == var_0_3.JUMP_SPECIAL_ID.GODEATER_SPECIAL_SERVANT then
+		if ActivityTools.GetActivityIsOpenWithTip(ActivityConst.ACTIVITY_GODEATER_SERVANT) then
+			JumpTools.OpenPageByJump("/draw", {
+				poolType = 2,
+				poolId = arg_5_0[2]
+			}, var_0_3.SYSTEM_ID.DRAW)
+		end
+
+		return
 	elseif var_5_0.system_id == var_0_3.SYSTEM_ID.PASSPORT_MAIN or var_5_0.system_id == var_0_3.SYSTEM_ID.PASSPORT_BUY then
 		if not PassportData:IsOpen() then
 			ShowTips("BATTLEPASS_EXPIRED")

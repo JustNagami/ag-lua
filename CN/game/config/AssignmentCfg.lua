@@ -23673,6 +23673,107 @@
 			100
 		}
 	},
+	[60509] = {
+		name = "4.2-当期推荐",
+		pre_id = 0,
+		type = 211,
+		source = "",
+		condition = 320007,
+		desc = "在「骤然涌现的骚动」中击杀初级「天父·狄阿乌斯」",
+		need = 1,
+		activity_id = 0,
+		system = "",
+		id = 60509,
+		phase = 0,
+		additional_parameter = {
+			343751,
+			5250211
+		},
+		reward = {
+			{
+				41302,
+				50
+			}
+		},
+		unlock_condition = {
+			30,
+			100
+		}
+	},
+	[60510] = {
+		name = "4.2-当期推荐",
+		pre_id = 0,
+		type = 211,
+		source = "",
+		condition = 320002,
+		desc = "在「荒野裂谷的捕食者」中通过4个关卡",
+		need = 4,
+		activity_id = 0,
+		system = "",
+		id = 60510,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				40603,
+				100
+			}
+		},
+		unlock_condition = {
+			30,
+			100
+		}
+	},
+	[60511] = {
+		name = "4.2-当期推荐",
+		pre_id = 0,
+		type = 211,
+		source = "",
+		condition = 350,
+		desc = "在「战略后勤仓」中使用800个神谕细胞序列",
+		need = 800,
+		activity_id = 0,
+		system = "",
+		id = 60511,
+		phase = 0,
+		additional_parameter = {
+			75
+		},
+		reward = {
+			{
+				40104,
+				80
+			}
+		},
+		unlock_condition = {
+			30,
+			100
+		}
+	},
+	[60512] = {
+		name = "4.2-当期推荐",
+		pre_id = 0,
+		type = 211,
+		source = "",
+		condition = 2305,
+		desc = "在「来自未知的阴霾」中收集10种不同的通用强化",
+		need = 10,
+		activity_id = 0,
+		system = "",
+		id = 60512,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				1,
+				300
+			}
+		},
+		unlock_condition = {
+			30,
+			100
+		}
+	},
 	[71001] = {
 		name = "每日",
 		pre_id = 0,
@@ -99332,6 +99433,70 @@
 		},
 		source = {}
 	},
+	[227015] = {
+		name = "收集任务",
+		pre_id = 0,
+		type = 905,
+		condition = 2013,
+		desc = "收集70个修正者",
+		need = 70,
+		activity_id = 0,
+		system = "",
+		id = 227015,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				39,
+				25000
+			},
+			{
+				22003,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[227016] = {
+		name = "收集任务",
+		pre_id = 0,
+		type = 905,
+		condition = 2015,
+		desc = "收集350种家具",
+		need = 350,
+		activity_id = 0,
+		system = "",
+		id = 227016,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				41701,
+				100
+			},
+			{
+				39,
+				25000
+			},
+			{
+				22003,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
 	[228001] = {
 		name = "挑战",
 		pre_id = 0,
@@ -120678,7 +120843,2407 @@
 		},
 		source = {}
 	},
+	[31101601] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 2304,
+		desc = "使用亚莉莎通关1次「模拟演算」",
+		need = 1,
+		activity_id = 343731,
+		system = "",
+		id = 31101601,
+		phase = 0,
+		additional_parameter = {
+			1,
+			1
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				75,
+				50
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101602] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 2304,
+		desc = "使用雪儿通关1次「模拟演算」",
+		need = 1,
+		activity_id = 343731,
+		system = "",
+		id = 31101602,
+		phase = 0,
+		additional_parameter = {
+			2,
+			1
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				75,
+				50
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101603] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 2305,
+		desc = "收集3种不同的通用强化",
+		need = 3,
+		activity_id = 343731,
+		system = "",
+		id = 31101603,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				1,
+				10
+			},
+			{
+				75,
+				200
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101604] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 2305,
+		desc = "收集6种不同的通用强化",
+		need = 6,
+		activity_id = 343731,
+		system = "",
+		id = 31101604,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				1,
+				10
+			},
+			{
+				75,
+				200
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101605] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 2305,
+		desc = "收集10种不同的通用强化",
+		need = 10,
+		activity_id = 343731,
+		system = "",
+		id = 31101605,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				1,
+				10
+			},
+			{
+				75,
+				200
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101606] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 2305,
+		desc = "收集15种不同的通用强化",
+		need = 15,
+		activity_id = 343731,
+		system = "",
+		id = 31101606,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				1,
+				10
+			},
+			{
+				75,
+				200
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101607] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 2305,
+		desc = "收集20种不同的通用强化",
+		need = 20,
+		activity_id = 343731,
+		system = "",
+		id = 31101607,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				1,
+				10
+			},
+			{
+				75,
+				200
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101608] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 2305,
+		desc = "收集25种不同的通用强化",
+		need = 25,
+		activity_id = 343731,
+		system = "",
+		id = 31101608,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				1,
+				10
+			},
+			{
+				75,
+				200
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101609] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 2305,
+		desc = "收集30种不同的通用强化",
+		need = 30,
+		activity_id = 343731,
+		system = "",
+		id = 31101609,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				1,
+				10
+			},
+			{
+				75,
+				200
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101610] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 2305,
+		desc = "收集33种不同的通用强化",
+		need = 33,
+		activity_id = 343731,
+		system = "",
+		id = 31101610,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				1,
+				10
+			},
+			{
+				75,
+				200
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101611] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 2306,
+		desc = "收集2种亚莉莎的专属强化",
+		need = 2,
+		activity_id = 343731,
+		system = "",
+		id = 31101611,
+		phase = 0,
+		additional_parameter = {
+			1
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				75,
+				100
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101612] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 2306,
+		desc = "收集4种亚莉莎的专属强化",
+		need = 4,
+		activity_id = 343731,
+		system = "",
+		id = 31101612,
+		phase = 0,
+		additional_parameter = {
+			1
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				75,
+				100
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101613] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 2306,
+		desc = "收集6种亚莉莎的专属强化",
+		need = 6,
+		activity_id = 343731,
+		system = "",
+		id = 31101613,
+		phase = 0,
+		additional_parameter = {
+			1
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				75,
+				100
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101614] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 2306,
+		desc = "收集2种雪儿的专属强化",
+		need = 2,
+		activity_id = 343731,
+		system = "",
+		id = 31101614,
+		phase = 0,
+		additional_parameter = {
+			2
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				75,
+				100
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101615] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 2306,
+		desc = "收集4种雪儿的专属强化",
+		need = 4,
+		activity_id = 343731,
+		system = "",
+		id = 31101615,
+		phase = 0,
+		additional_parameter = {
+			2
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				75,
+				100
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101616] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 2306,
+		desc = "收集6种雪儿的专属强化",
+		need = 6,
+		activity_id = 343731,
+		system = "",
+		id = 31101616,
+		phase = 0,
+		additional_parameter = {
+			2
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				75,
+				100
+			},
+			{
+				22003,
+				2
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101801] = {
+		name = "第一阶段任务",
+		pre_id = 0,
+		type = 3005,
+		condition = 320006,
+		desc = "在「骤然涌现的骚动」中通关2次普通关卡",
+		need = 2,
+		activity_id = 340001,
+		system = "",
+		id = 31101801,
+		phase = 1,
+		additional_parameter = {
+			0
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				74,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18005
+		}
+	},
+	[31101802] = {
+		name = "第一阶段任务",
+		pre_id = 0,
+		type = 3005,
+		condition = 320001,
+		desc = "在「荒野裂谷的捕食者」中累计抓取有效物资15次",
+		need = 15,
+		activity_id = 340001,
+		system = "",
+		id = 31101802,
+		phase = 1,
+		additional_parameter = {
+			8,
+			9,
+			12,
+			13,
+			14,
+			16,
+			17
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				74,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18004
+		}
+	},
+	[31101803] = {
+		name = "第一阶段任务",
+		pre_id = 0,
+		type = 3005,
+		condition = 320001,
+		desc = "在「荒野裂谷的捕食者」中累计抓取怪物3次",
+		need = 3,
+		activity_id = 340001,
+		system = "",
+		id = 31101803,
+		phase = 1,
+		additional_parameter = {
+			10,
+			11
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				74,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18004
+		}
+	},
+	[31101804] = {
+		name = "第一阶段任务",
+		pre_id = 0,
+		type = 3005,
+		condition = 320002,
+		desc = "在「荒野裂谷的捕食者」中通关4个关卡",
+		need = 4,
+		activity_id = 340001,
+		system = "",
+		id = 31101804,
+		phase = 1,
+		additional_parameter = {},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				74,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18004
+		}
+	},
+	[31101805] = {
+		name = "第一阶段任务",
+		pre_id = 0,
+		type = 3006,
+		condition = 350,
+		desc = "在「战略后勤仓」中使用800个神谕细胞序列",
+		need = 800,
+		activity_id = 340001,
+		system = "",
+		id = 31101805,
+		phase = 1,
+		additional_parameter = {
+			75
+		},
+		reward = {
+			{
+				1,
+				60
+			},
+			{
+				74,
+				30
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18002,
+			307,
+			{
+				307
+			}
+		}
+	},
+	[31101806] = {
+		name = "第一阶段任务",
+		pre_id = 0,
+		type = 3006,
+		condition = 320007,
+		desc = "在「骤然涌现的骚动」中击杀初级「天父」",
+		need = 1,
+		activity_id = 340001,
+		system = "",
+		id = 31101806,
+		phase = 1,
+		additional_parameter = {
+			343751,
+			5250211
+		},
+		reward = {
+			{
+				1,
+				60
+			},
+			{
+				74,
+				30
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18005
+		}
+	},
+	[31101807] = {
+		name = "第二阶段任务",
+		pre_id = 0,
+		type = 3005,
+		condition = 2306,
+		desc = "在「来自未知的阴霾」中收集1种角色专属强化",
+		need = 1,
+		activity_id = 340001,
+		system = "",
+		id = 31101807,
+		phase = 2,
+		additional_parameter = {
+			1,
+			2
+		},
+		reward = {
+			{
+				1,
+				60
+			},
+			{
+				74,
+				30
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18003
+		}
+	},
+	[31101808] = {
+		name = "第二阶段任务",
+		pre_id = 0,
+		type = 3005,
+		condition = 2305,
+		desc = "在「来自未知的阴霾」中收集10种不同的通用强化",
+		need = 10,
+		activity_id = 340001,
+		system = "",
+		id = 31101808,
+		phase = 2,
+		additional_parameter = {},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				74,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18003
+		}
+	},
+	[31101809] = {
+		name = "第二阶段任务",
+		pre_id = 0,
+		type = 3005,
+		condition = 320006,
+		desc = "在「骤然涌现的骚动」中通关4次普通关卡",
+		need = 4,
+		activity_id = 340001,
+		system = "",
+		id = 31101809,
+		phase = 2,
+		additional_parameter = {
+			0
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				74,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18005
+		}
+	},
+	[31101810] = {
+		name = "第二阶段任务",
+		pre_id = 0,
+		type = 3005,
+		condition = 320001,
+		desc = "在「荒野裂谷的捕食者」中累计抓取怪物8次",
+		need = 8,
+		activity_id = 340001,
+		system = "",
+		id = 31101810,
+		phase = 2,
+		additional_parameter = {
+			10,
+			11
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				74,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18004
+		}
+	},
+	[31101811] = {
+		name = "第二阶段任务",
+		pre_id = 0,
+		type = 3006,
+		condition = 320007,
+		desc = "在「骤然涌现的骚动」中击杀中级「天父」",
+		need = 1,
+		activity_id = 340001,
+		system = "",
+		id = 31101811,
+		phase = 2,
+		additional_parameter = {
+			343751,
+			5250212
+		},
+		reward = {
+			{
+				1,
+				60
+			},
+			{
+				74,
+				30
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18005
+		}
+	},
+	[31101812] = {
+		name = "第二阶段任务",
+		pre_id = 0,
+		type = 3006,
+		condition = 2304,
+		desc = "在「来自未知的阴霾」中使用亚莉莎通关1次「基础演算」",
+		need = 1,
+		activity_id = 340001,
+		system = "",
+		id = 31101812,
+		phase = 2,
+		additional_parameter = {
+			1,
+			2
+		},
+		reward = {
+			{
+				1,
+				30
+			},
+			{
+				74,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18003
+		}
+	},
+	[31101813] = {
+		name = "最终阶段任务",
+		pre_id = 0,
+		type = 3005,
+		condition = 350,
+		desc = "在「战略后勤仓」中使用4000个神谕细胞序列",
+		need = 4000,
+		activity_id = 340001,
+		system = "",
+		id = 31101813,
+		phase = 3,
+		additional_parameter = {
+			75
+		},
+		reward = {
+			{
+				1,
+				30
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18002,
+			307,
+			{
+				307
+			}
+		}
+	},
+	[31101814] = {
+		name = "最终阶段任务",
+		pre_id = 0,
+		type = 3005,
+		condition = 320007,
+		desc = "在「骤然涌现的骚动」中击杀高级「天父」",
+		need = 1,
+		activity_id = 340001,
+		system = "",
+		id = 31101814,
+		phase = 3,
+		additional_parameter = {
+			343751,
+			5250213
+		},
+		reward = {
+			{
+				1,
+				30
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18005
+		}
+	},
+	[31101815] = {
+		name = "最终阶段任务",
+		pre_id = 0,
+		type = 3005,
+		condition = 2305,
+		desc = "在「来自未知的阴霾」中收集20种不同的通用强化",
+		need = 20,
+		activity_id = 340001,
+		system = "",
+		id = 31101815,
+		phase = 3,
+		additional_parameter = {},
+		reward = {
+			{
+				1,
+				30
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18003
+		}
+	},
+	[31101816] = {
+		name = "最终阶段任务",
+		pre_id = 0,
+		type = 3005,
+		condition = 2305,
+		desc = "在「来自未知的阴霾」中收集30种不同的通用强化",
+		need = 30,
+		activity_id = 340001,
+		system = "",
+		id = 31101816,
+		phase = 3,
+		additional_parameter = {},
+		reward = {
+			{
+				1,
+				30
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18003
+		}
+	},
+	[31101817] = {
+		name = "最终阶段任务",
+		pre_id = 0,
+		type = 3006,
+		condition = 320002,
+		desc = "在「荒野裂谷的捕食者」中通关8个关卡",
+		need = 8,
+		activity_id = 340001,
+		system = "",
+		id = 31101817,
+		phase = 3,
+		additional_parameter = {},
+		reward = {
+			{
+				1,
+				60
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18004
+		}
+	},
+	[31101818] = {
+		name = "最终阶段任务",
+		pre_id = 0,
+		type = 3006,
+		condition = 2304,
+		desc = "在「来自未知的阴霾」中使用亚莉莎通关1次「模拟演算」",
+		need = 1,
+		activity_id = 340001,
+		system = "",
+		id = 31101818,
+		phase = 3,
+		additional_parameter = {
+			1,
+			1
+		},
+		reward = {
+			{
+				1,
+				60
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			18003
+		}
+	},
+	[31101901] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "累计完成2个任务",
+		need = 2,
+		activity_id = 340001,
+		system = "",
+		id = 31101901,
+		phase = 0,
+		additional_parameter = {
+			31101801,
+			31101802,
+			31101803,
+			31101804,
+			31101805,
+			31101806,
+			31101807,
+			31101808,
+			31101809,
+			31101810,
+			31101811,
+			31101812,
+			31101813,
+			31101814,
+			31101815,
+			31101816,
+			31101817,
+			31101818
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				75,
+				200
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101902] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "累计完成4个任务",
+		need = 4,
+		activity_id = 340001,
+		system = "",
+		id = 31101902,
+		phase = 0,
+		additional_parameter = {
+			31101801,
+			31101802,
+			31101803,
+			31101804,
+			31101805,
+			31101806,
+			31101807,
+			31101808,
+			31101809,
+			31101810,
+			31101811,
+			31101812,
+			31101813,
+			31101814,
+			31101815,
+			31101816,
+			31101817,
+			31101818
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				75,
+				200
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101903] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "累计完成6个任务",
+		need = 6,
+		activity_id = 340001,
+		system = "",
+		id = 31101903,
+		phase = 0,
+		additional_parameter = {
+			31101801,
+			31101802,
+			31101803,
+			31101804,
+			31101805,
+			31101806,
+			31101807,
+			31101808,
+			31101809,
+			31101810,
+			31101811,
+			31101812,
+			31101813,
+			31101814,
+			31101815,
+			31101816,
+			31101817,
+			31101818
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				75,
+				200
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101904] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "累计完成8个任务",
+		need = 8,
+		activity_id = 340001,
+		system = "",
+		id = 31101904,
+		phase = 0,
+		additional_parameter = {
+			31101801,
+			31101802,
+			31101803,
+			31101804,
+			31101805,
+			31101806,
+			31101807,
+			31101808,
+			31101809,
+			31101810,
+			31101811,
+			31101812,
+			31101813,
+			31101814,
+			31101815,
+			31101816,
+			31101817,
+			31101818
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				75,
+				200
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101905] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "累计完成10个任务",
+		need = 10,
+		activity_id = 340001,
+		system = "",
+		id = 31101905,
+		phase = 0,
+		additional_parameter = {
+			31101801,
+			31101802,
+			31101803,
+			31101804,
+			31101805,
+			31101806,
+			31101807,
+			31101808,
+			31101809,
+			31101810,
+			31101811,
+			31101812,
+			31101813,
+			31101814,
+			31101815,
+			31101816,
+			31101817,
+			31101818
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				75,
+				200
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101906] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "累计完成12个任务",
+		need = 12,
+		activity_id = 340001,
+		system = "",
+		id = 31101906,
+		phase = 0,
+		additional_parameter = {
+			31101801,
+			31101802,
+			31101803,
+			31101804,
+			31101805,
+			31101806,
+			31101807,
+			31101808,
+			31101809,
+			31101810,
+			31101811,
+			31101812,
+			31101813,
+			31101814,
+			31101815,
+			31101816,
+			31101817,
+			31101818
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				75,
+				200
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101907] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "累计完成14个任务",
+		need = 14,
+		activity_id = 340001,
+		system = "",
+		id = 31101907,
+		phase = 0,
+		additional_parameter = {
+			31101801,
+			31101802,
+			31101803,
+			31101804,
+			31101805,
+			31101806,
+			31101807,
+			31101808,
+			31101809,
+			31101810,
+			31101811,
+			31101812,
+			31101813,
+			31101814,
+			31101815,
+			31101816,
+			31101817,
+			31101818
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				75,
+				300
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101908] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "累计完成16个任务",
+		need = 16,
+		activity_id = 340001,
+		system = "",
+		id = 31101908,
+		phase = 0,
+		additional_parameter = {
+			31101801,
+			31101802,
+			31101803,
+			31101804,
+			31101805,
+			31101806,
+			31101807,
+			31101808,
+			31101809,
+			31101810,
+			31101811,
+			31101812,
+			31101813,
+			31101814,
+			31101815,
+			31101816,
+			31101817,
+			31101818
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				75,
+				300
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[31101909] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 501,
+		desc = "累计完成18个任务",
+		need = 18,
+		activity_id = 340001,
+		system = "",
+		id = 31101909,
+		phase = 0,
+		additional_parameter = {
+			31101801,
+			31101802,
+			31101803,
+			31101804,
+			31101805,
+			31101806,
+			31101807,
+			31101808,
+			31101809,
+			31101810,
+			31101811,
+			31101812,
+			31101813,
+			31101814,
+			31101815,
+			31101816,
+			31101817,
+			31101818
+		},
+		reward = {
+			{
+				1,
+				50
+			},
+			{
+				75,
+				300
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201001] = {
+		name = "每日",
+		pre_id = 0,
+		type = 3001,
+		condition = 1,
+		desc = "每日首次登录",
+		need = 1,
+		activity_id = 340041,
+		system = "",
+		id = 40201001,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				54085,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201002] = {
+		name = "每日",
+		pre_id = 0,
+		type = 3001,
+		condition = 350,
+		desc = "累计消耗60点吨吨值",
+		need = 60,
+		activity_id = 340041,
+		system = "",
+		id = 40201002,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				54085,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201003] = {
+		name = "每日",
+		pre_id = 0,
+		type = 3001,
+		condition = 350,
+		desc = "累计消耗120点吨吨值",
+		need = 120,
+		activity_id = 340041,
+		system = "",
+		id = 40201003,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				54085,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201004] = {
+		name = "每日",
+		pre_id = 0,
+		type = 3001,
+		condition = 350,
+		desc = "累计消耗180点吨吨值",
+		need = 180,
+		activity_id = 340041,
+		system = "",
+		id = 40201004,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				54085,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201005] = {
+		name = "每日",
+		pre_id = 0,
+		type = 3001,
+		condition = 350,
+		desc = "累计消耗240点吨吨值",
+		need = 240,
+		activity_id = 340041,
+		system = "",
+		id = 40201005,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				54085,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201006] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得900凝合材料",
+		need = 900,
+		activity_id = 340041,
+		system = "",
+		id = 40201006,
+		phase = 0,
+		additional_parameter = {
+			53160
+		},
+		reward = {
+			{
+				54085,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201007] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得1000凝合材料",
+		need = 1000,
+		activity_id = 340041,
+		system = "",
+		id = 40201007,
+		phase = 0,
+		additional_parameter = {
+			53160
+		},
+		reward = {
+			{
+				54085,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201008] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得1500凝合材料",
+		need = 1500,
+		activity_id = 340041,
+		system = "",
+		id = 40201008,
+		phase = 0,
+		additional_parameter = {
+			53160
+		},
+		reward = {
+			{
+				54085,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201009] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得2000凝合材料",
+		need = 2000,
+		activity_id = 340041,
+		system = "",
+		id = 40201009,
+		phase = 0,
+		additional_parameter = {
+			53160
+		},
+		reward = {
+			{
+				54085,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201010] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得2500凝合材料",
+		need = 2500,
+		activity_id = 340041,
+		system = "",
+		id = 40201010,
+		phase = 0,
+		additional_parameter = {
+			53160
+		},
+		reward = {
+			{
+				54085,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201011] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得3000凝合材料",
+		need = 3000,
+		activity_id = 340041,
+		system = "",
+		id = 40201011,
+		phase = 0,
+		additional_parameter = {
+			53160
+		},
+		reward = {
+			{
+				54085,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201012] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得3500凝合材料",
+		need = 3500,
+		activity_id = 340041,
+		system = "",
+		id = 40201012,
+		phase = 0,
+		additional_parameter = {
+			53160
+		},
+		reward = {
+			{
+				54085,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201013] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得4000凝合材料",
+		need = 4000,
+		activity_id = 340041,
+		system = "",
+		id = 40201013,
+		phase = 0,
+		additional_parameter = {
+			53160
+		},
+		reward = {
+			{
+				54085,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201014] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得4500凝合材料",
+		need = 4500,
+		activity_id = 340041,
+		system = "",
+		id = 40201014,
+		phase = 0,
+		additional_parameter = {
+			53160
+		},
+		reward = {
+			{
+				54085,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201015] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 302,
+		desc = "累计获得7000凝合材料",
+		need = 7000,
+		activity_id = 340041,
+		system = "",
+		id = 40201015,
+		phase = 0,
+		additional_parameter = {
+			53160
+		},
+		reward = {
+			{
+				54085,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201016] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 410,
+		desc = "通关支线「神谕绝响」– 长野黯影",
+		need = 1,
+		activity_id = 340041,
+		system = "",
+		id = 40201016,
+		phase = 0,
+		additional_parameter = {
+			5250101
+		},
+		reward = {
+			{
+				54085,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201017] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 410,
+		desc = "通关支线「神谕绝响」– 爝火风动",
+		need = 1,
+		activity_id = 340041,
+		system = "",
+		id = 40201017,
+		phase = 0,
+		additional_parameter = {
+			5250105
+		},
+		reward = {
+			{
+				54085,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201018] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 410,
+		desc = "通关支线「神谕绝响」– 来日新晴",
+		need = 1,
+		activity_id = 340041,
+		system = "",
+		id = 40201018,
+		phase = 0,
+		additional_parameter = {
+			5250110
+		},
+		reward = {
+			{
+				54085,
+				10
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201101] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 11006,
+		desc = "在任意难度下，完成挑战1次",
+		need = 1,
+		activity_id = 343501,
+		system = "",
+		id = 40201101,
+		phase = 0,
+		additional_parameter = {
+			1
+		},
+		reward = {
+			{
+				1,
+				200
+			},
+			{
+				40104,
+				5
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201102] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 11008,
+		desc = "在任意难度下，达到1000000分完成挑战1次",
+		need = 1,
+		activity_id = 343501,
+		system = "",
+		id = 40201102,
+		phase = 0,
+		additional_parameter = {
+			1000000
+		},
+		reward = {
+			{
+				1,
+				200
+			},
+			{
+				40104,
+				5
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201103] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 11007,
+		desc = "参与凝实难度挑战1次",
+		need = 1,
+		activity_id = 343501,
+		system = "",
+		id = 40201103,
+		phase = 0,
+		additional_parameter = {
+			2
+		},
+		reward = {
+			{
+				40603,
+				10
+			},
+			{
+				22003,
+				6
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40201104] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 11006,
+		desc = "完成凝实难度挑战1次",
+		need = 1,
+		activity_id = 343501,
+		system = "",
+		id = 40201104,
+		phase = 0,
+		additional_parameter = {
+			2
+		},
+		reward = {
+			{
+				2,
+				20000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40202001] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 9,
+		condition = 302,
+		desc = "在「困兽行动」中累计获得10000「凝合材料」",
+		need = 10000,
+		activity_id = 340043,
+		system = "",
+		id = 40202001,
+		phase = 0,
+		additional_parameter = {
+			53160
+		},
+		reward = {
+			{
+				14,
+				2500
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			15801,
+			341001,
+			342431
+		}
+	},
+	[40202002] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 9,
+		condition = 350,
+		desc = "在「战略后勤仓」中使用800个神谕细胞序列",
+		need = 800,
+		activity_id = 340044,
+		system = "",
+		id = 40202002,
+		phase = 0,
+		additional_parameter = {
+			75
+		},
+		reward = {
+			{
+				14,
+				1500
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			15801,
+			341001,
+			340001
+		}
+	},
+	[40202003] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 9,
+		condition = 2305,
+		desc = "在「来自未知的阴霾」中收集10种不同的通用强化",
+		need = 10,
+		activity_id = 340045,
+		system = "",
+		id = 40202003,
+		phase = 0,
+		additional_parameter = {},
+		reward = {
+			{
+				14,
+				2000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			15801,
+			341001,
+			340001
+		}
+	},
+	[40202004] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 9,
+		condition = 320007,
+		desc = "在「骤然涌现的骚动」中击杀中级「天父·狄阿乌斯」",
+		need = 1,
+		activity_id = 340046,
+		system = "",
+		id = 40202004,
+		phase = 0,
+		additional_parameter = {
+			343751,
+			5250212
+		},
+		reward = {
+			{
+				14,
+				2500
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			15801,
+			341001,
+			340001
+		}
+	},
+	[40202005] = {
+		name = "每周",
+		pre_id = 0,
+		type = 8,
+		condition = 350,
+		desc = "累计消耗1200吨吨值",
+		need = 1200,
+		activity_id = 0,
+		system = "",
+		id = 40202005,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				14,
+				1200
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			332
+		}
+	},
+	[40202006] = {
+		name = "每周",
+		pre_id = 0,
+		type = 8,
+		condition = 350,
+		desc = "累计消耗800吨吨值",
+		need = 800,
+		activity_id = 0,
+		system = "",
+		id = 40202006,
+		phase = 0,
+		additional_parameter = {
+			4
+		},
+		reward = {
+			{
+				14,
+				1000
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {
+			332
+		}
+	},
+	[40203001] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 360001,
+		desc = "从探测中获得1个亚莉莎",
+		need = 1,
+		activity_id = 340047,
+		system = "",
+		id = 40203001,
+		phase = 0,
+		additional_parameter = {
+			1045
+		},
+		reward = {
+			{
+				30049,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40203002] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 360001,
+		desc = "从探测中获得2个亚莉莎",
+		need = 2,
+		activity_id = 340047,
+		system = "",
+		id = 40203002,
+		phase = 0,
+		additional_parameter = {
+			1045
+		},
+		reward = {
+			{
+				30049,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40203003] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 360001,
+		desc = "从探测中获得1个雪儿",
+		need = 1,
+		activity_id = 340047,
+		system = "",
+		id = 40203003,
+		phase = 0,
+		additional_parameter = {
+			1046
+		},
+		reward = {
+			{
+				30049,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
+	[40203004] = {
+		name = "挑战",
+		pre_id = 0,
+		type = 3002,
+		condition = 360001,
+		desc = "从探测中获得2个雪儿",
+		need = 2,
+		activity_id = 340047,
+		system = "",
+		id = 40203004,
+		phase = 0,
+		additional_parameter = {
+			1046
+		},
+		reward = {
+			{
+				30049,
+				1
+			}
+		},
+		unlock_condition = {
+			1,
+			100
+		},
+		source = {}
+	},
 	get_id_list_by_type = {
+		[3006] = {
+			31101805,
+			31101806,
+			31101811,
+			31101812,
+			31101817,
+			31101818
+		},
+		[3005] = {
+			31101801,
+			31101802,
+			31101803,
+			31101804,
+			31101807,
+			31101808,
+			31101809,
+			31101810,
+			31101813,
+			31101814,
+			31101815,
+			31101816
+		},
 		[1101] = {
 			30701001,
 			30701002,
@@ -120770,7 +123335,9 @@
 			227011,
 			227012,
 			227013,
-			227014
+			227014,
+			227015,
+			227016
 		},
 		[503] = {
 			226001,
@@ -123569,7 +126136,53 @@
 			40107001,
 			40107002,
 			40107003,
-			40107004
+			40107004,
+			31101601,
+			31101602,
+			31101603,
+			31101604,
+			31101605,
+			31101606,
+			31101607,
+			31101608,
+			31101609,
+			31101610,
+			31101611,
+			31101612,
+			31101613,
+			31101614,
+			31101615,
+			31101616,
+			31101901,
+			31101902,
+			31101903,
+			31101904,
+			31101905,
+			31101906,
+			31101907,
+			31101908,
+			31101909,
+			40201006,
+			40201007,
+			40201008,
+			40201009,
+			40201010,
+			40201011,
+			40201012,
+			40201013,
+			40201014,
+			40201015,
+			40201016,
+			40201017,
+			40201018,
+			40201101,
+			40201102,
+			40201103,
+			40201104,
+			40203001,
+			40203002,
+			40203003,
+			40203004
 		},
 		[3001] = {
 			130001,
@@ -123782,7 +126395,12 @@
 			40104002,
 			40104003,
 			40104004,
-			40104005
+			40104005,
+			40201001,
+			40201002,
+			40201003,
+			40201004,
+			40201005
 		},
 		[11] = {
 			120001,
@@ -123904,7 +126522,11 @@
 			40005002,
 			40005003,
 			40108001,
-			40108002
+			40108002,
+			40202001,
+			40202002,
+			40202003,
+			40202004
 		},
 		[8] = {
 			81001,
@@ -123915,7 +126537,9 @@
 			81006,
 			81007,
 			81008,
-			81009
+			81009,
+			40202005,
+			40202006
 		},
 		[7] = {
 			71001,
@@ -123930,7 +126554,11 @@
 			60505,
 			60506,
 			60507,
-			60508
+			60508,
+			60509,
+			60510,
+			60511,
+			60512
 		},
 		[210] = {
 			60401
@@ -124597,6 +127225,97 @@
 		}
 	},
 	get_id_list_by_activity_id = {
+		[340047] = {
+			40203001,
+			40203002,
+			40203003,
+			40203004
+		},
+		[340046] = {
+			40202004
+		},
+		[340045] = {
+			40202003
+		},
+		[340044] = {
+			40202002
+		},
+		[340043] = {
+			40202001
+		},
+		[343501] = {
+			40201101,
+			40201102,
+			40201103,
+			40201104
+		},
+		[340041] = {
+			40201001,
+			40201002,
+			40201003,
+			40201004,
+			40201005,
+			40201006,
+			40201007,
+			40201008,
+			40201009,
+			40201010,
+			40201011,
+			40201012,
+			40201013,
+			40201014,
+			40201015,
+			40201016,
+			40201017,
+			40201018
+		},
+		[340001] = {
+			31101801,
+			31101802,
+			31101803,
+			31101804,
+			31101805,
+			31101806,
+			31101807,
+			31101808,
+			31101809,
+			31101810,
+			31101811,
+			31101812,
+			31101813,
+			31101814,
+			31101815,
+			31101816,
+			31101817,
+			31101818,
+			31101901,
+			31101902,
+			31101903,
+			31101904,
+			31101905,
+			31101906,
+			31101907,
+			31101908,
+			31101909
+		},
+		[343731] = {
+			31101601,
+			31101602,
+			31101603,
+			31101604,
+			31101605,
+			31101606,
+			31101607,
+			31101608,
+			31101609,
+			31101610,
+			31101611,
+			31101612,
+			31101613,
+			31101614,
+			31101615,
+			31101616
+		},
 		[332001] = {
 			150389,
 			150390,
@@ -128236,6 +130955,10 @@
 			60506,
 			60507,
 			60508,
+			60509,
+			60510,
+			60511,
+			60512,
 			71001,
 			71002,
 			71003,
@@ -128979,7 +131702,11 @@
 			227011,
 			227012,
 			227013,
-			227014
+			227014,
+			227015,
+			227016,
+			40202005,
+			40202006
 		}
 	},
 	all = {
@@ -129630,6 +132357,10 @@
 		60506,
 		60507,
 		60508,
+		60509,
+		60510,
+		60511,
+		60512,
 		71001,
 		71002,
 		71003,
@@ -132070,6 +134801,8 @@
 		227012,
 		227013,
 		227014,
+		227015,
+		227016,
 		228001,
 		228002,
 		228003,
@@ -132788,6 +135521,81 @@
 		150398,
 		150399,
 		150400,
-		150401
+		150401,
+		31101601,
+		31101602,
+		31101603,
+		31101604,
+		31101605,
+		31101606,
+		31101607,
+		31101608,
+		31101609,
+		31101610,
+		31101611,
+		31101612,
+		31101613,
+		31101614,
+		31101615,
+		31101616,
+		31101801,
+		31101802,
+		31101803,
+		31101804,
+		31101805,
+		31101806,
+		31101807,
+		31101808,
+		31101809,
+		31101810,
+		31101811,
+		31101812,
+		31101813,
+		31101814,
+		31101815,
+		31101816,
+		31101817,
+		31101818,
+		31101901,
+		31101902,
+		31101903,
+		31101904,
+		31101905,
+		31101906,
+		31101907,
+		31101908,
+		31101909,
+		40201001,
+		40201002,
+		40201003,
+		40201004,
+		40201005,
+		40201006,
+		40201007,
+		40201008,
+		40201009,
+		40201010,
+		40201011,
+		40201012,
+		40201013,
+		40201014,
+		40201015,
+		40201016,
+		40201017,
+		40201018,
+		40201101,
+		40201102,
+		40201103,
+		40201104,
+		40202001,
+		40202002,
+		40202003,
+		40202004,
+		40202005,
+		40202006,
+		40203001,
+		40203002,
+		40203003,
+		40203004
 	}
 }

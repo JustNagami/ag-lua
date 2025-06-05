@@ -16475,6 +16475,1131 @@
 			80
 		}
 	},
+	[12101] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12101,
+		talk_content = "管理员，相信你已经了解了关于荒神的情况，这里是应对荒神的临时指挥中心。",
+		params = {},
+		guide_component = {
+			"common",
+			"ActivityGodEaterGameMainView",
+			{
+				"guideComponents",
+				"guide_0"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-367
+		}
+	},
+	[12102] = {
+		talk_anchors = 4,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12102,
+		talk_content = "这里可以观测到行动的实时进展，推进行动进程可以解锁更多的悬赏任务。",
+		params = {},
+		guide_component = {
+			"common",
+			"ActivityGodEaterGameMainView",
+			{
+				"guideComponents",
+				"guide_5"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			367,
+			322
+		}
+	},
+	[12103] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12103,
+		talk_content = "请时刻关注终端，以应对新增的悬赏任务。",
+		params = {},
+		guide_component = {
+			"common",
+			"ActivityGodEaterGameMainView",
+			{
+				"guideComponents",
+				"guide_4"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			544,
+			-181.5
+		}
+	},
+	[12104] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12104,
+		talk_content = "目前我们已经锁定了一些荒神的坐标，管理员可以随时对它们发起进攻。",
+		params = {},
+		guide_component = {
+			"common",
+			"ActivityGodEaterGameMainView",
+			{
+				"guideComponents",
+				"guide_3"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			99.3,
+			-70,
+			42
+		}
+	},
+	[12105] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12105,
+		talk_content = "荒原中有一些散落的物资可以收集，但是要注意周围或许会有游荡的荒神。",
+		params = {},
+		guide_component = {
+			"common",
+			"ActivityGodEaterGameMainView",
+			{
+				"guideComponents",
+				"guide_2"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			551.08,
+			180.62
+		}
+	},
+	[12106] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12106,
+		talk_content = "联合总部对于荒神的破解还在持续进行中，等达到一定进程的时候再来吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"ActivityGodEaterGameMainView",
+			{
+				"guideComponents",
+				"guide_1"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-134.13,
+			-53.398
+		}
+	},
+	[12107] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12107,
+		talk_content = "有一位神机使也前来支援了，快去与她会面吧！",
+		params = {},
+		guide_component = {
+			"common",
+			"ActivityGodEaterGameMainView",
+			{
+				"giftBtn_"
+			}
+		},
+		mask_component = {
+			"common",
+			"ActivityGodEaterGameMainView",
+			{
+				"guideComponents",
+				"guide_6"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			743,
+			218
+		}
+	},
+	[12201] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12201,
+		talk_content = "荒野中充满危机，请先选择一位神机使同行吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerSelectLevelView",
+			{
+				"changeHeroBtn_"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			645,
+			159
+		}
+	},
+	[12202] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12202,
+		talk_content = "看样子亚莉莎很想与你一起执行本次任务，我们就先选择她吧！",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerSelectLevelView",
+			{
+				"panelBtn1_"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			988,
+			489
+		}
+	},
+	[12301] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12301,
+		talk_content = "开始游戏前需要先选择出战的修正者。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameMainView",
+			{
+				"heroBtn_"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			572.5,
+			369.7
+		}
+	},
+	[12302] = {
+		talk_anchors = 4,
+		type = "ClickButton",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12302,
+		talk_content = "选择一名修正者看看吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameMainView",
+			{
+				"select1Btn_"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			1044.7,
+			450.4
+		}
+	},
+	[12303] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12303,
+		talk_content = "在开始正式模拟演算前，先进行一次基础演算吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameMainView",
+			{
+				"teachBtn_"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			434.85,
+			0
+		}
+	},
+	[12305] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12305,
+		talk_content = "绿色的是<color=#E78300>物资</color>单元格，物资是演算的重要资源，<color=#E78300>每次行动时都会消耗物资</color>。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce2"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			86.59
+		}
+	},
+	[12306] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12306,
+		talk_content = "黄色的是<color=#E78300>人力</color>单元格，<color=#E78300>释放技能时需要消耗人力</color>。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce3"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-42.76,
+			86.59
+		}
+	},
+	[12307] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12307,
+		talk_content = "蓝色的是<color=#E78300>神谕因子</color>单元格，<color=#E78300>收集神谕因子可以提升处理进程</color>，获得强化效果。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce4"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			75.13,
+			86.59
+		}
+	},
+	[12310] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12310,
+		talk_content = "拖动单元格改变位置，当3个及以上相同单元格相邻时，会触发消除效果并获得相应资源。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce1"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			-100.59
+		}
+	},
+	[12311] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12311,
+		talk_content = "先来尝试下完成1次物资合成吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce2"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			86.59
+		}
+	},
+	[12312] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12312,
+		talk_content = "按住单元格，把它拖到相邻的位置上试试。",
+		params = {
+			"pointerDown"
+		},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_step1"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			86.59
+		}
+	},
+	[12313] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12313,
+		talk_content = "按住单元格，把它拖到相邻的位置上试试。",
+		params = {
+			"pointerUp"
+		},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_step1"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			86.59
+		}
+	},
+	[12314] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12314,
+		talk_content = "<color=#E78300>每次行动都会消耗时间</color>，随着演算时间的推进，面临的挑战也会越发艰难。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce6"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			246.1,
+			213.98
+		}
+	},
+	[12315] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12315,
+		talk_content = "再来尝试完成1次合成吧。",
+		params = {
+			"pointerDown"
+		},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_step2"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			79.9,
+			101.21
+		}
+	},
+	[12316] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12316,
+		talk_content = "再来尝试完成1次合成吧。",
+		params = {
+			"pointerUp"
+		},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_step2"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			79.9,
+			101.21
+		}
+	},
+	[12318] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12318,
+		talk_content = "积累了足够的处理进程，可以一项强化效果，先选择「初级交涉」吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameChooseSkillView",
+			{
+				"itemList_",
+				1,
+				"chooseBtn_"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-611.64,
+			0
+		}
+	},
+	[12319] = {
+		talk_anchors = 8,
+		type = "ClickButton",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12319,
+		talk_content = "点击这里确认选择。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameChooseSkillView",
+			{
+				"chooseBtn_"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-611.64,
+			-400
+		}
+	},
+	[12320] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12320,
+		talk_content = "使用技能需要消耗一定数量的人力，尝试完成1次人力合成吧。",
+		params = {
+			"pointerDown"
+		},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_step3"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-45.4,
+			88.65
+		}
+	},
+	[12321] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12321,
+		talk_content = "使用技能需要消耗一定数量的人力，尝试完成1次人力合成吧。",
+		params = {
+			"pointerUp"
+		},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_step3"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-45.4,
+			88.65
+		}
+	},
+	[12322] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12322,
+		talk_content = "这里出现了一处「交涉僵持」，它会占据单元格位置且无法被移动。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce7"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			-251.7
+		}
+	},
+	[12323] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12323,
+		talk_content = "使用「初级交涉」解除「交涉僵持」吧。",
+		params = {
+			"skillSelected"
+		},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce8"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-436.5,
+			-232.6
+		}
+	},
+	[12324] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12324,
+		talk_content = "拖动技能到对应的单元格上就可以使用了。",
+		params = {
+			"skillRelease"
+		},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce7"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-442.1,
+			-251.7
+		}
+	},
+	[12401] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12401,
+		talk_content = "这些装载着物资的箱子具有较高的价值。",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerGameView",
+			{
+				"guideComponents",
+				"guide_2"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			155.9,
+			-197.4
+		}
+	},
+	[12402] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12402,
+		talk_content = "在荒野中游荡着一些荒神，抓取后也会获得不低的分数。",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerGameView",
+			{
+				"guideComponents",
+				"guide_1"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-480,
+			-175
+		}
+	},
+	[12403] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12403,
+		talk_content = "获取足够分数就可以使用神机使的技能了。",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerGameView",
+			{
+				"skillBtn_"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			56.3,
+			205
+		}
+	},
+	[12404] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12404,
+		talk_content = "抓到不想要的东西时，可以用炸药炸掉，快速收回勾爪。",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerGameView",
+			{
+				"boomBtn_"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			515,
+			167
+		}
+	},
+	[12405] = {
+		talk_anchors = 2,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12405,
+		talk_content = "在限定时间内达成全部目标吧！",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerGameView",
+			{
+				"guideComponents",
+				"guide_0"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-402,
+			-435
+		}
+	},
+	[12501] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12501,
+		talk_content = "荒野中部分地区存在一些游荡者在觊觎你收集的物资。",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerGameView",
+			{
+				"guideComponents",
+				"guide_3"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-484,
+			158
+		}
+	},
+	[12502] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12502,
+		talk_content = "当物资被游荡者偷走时，可以通过反射板夺回物资。",
+		params = {},
+		guide_component = {
+			"common",
+			"goldMinerGameView",
+			{
+				"guideComponents",
+				"guide_4"
+			}
+		},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			106,
+			117
+		}
+	},
+	[12601] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12601,
+		talk_content = "进入新的阶段后，演算环境会发生一定改变。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameLvUpView",
+			{
+				"bgBtn_"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			-294.3
+		}
+	},
+	[12602] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12602,
+		talk_content = "演算达到第2、4、7天时，可以解锁修正者的专属强化。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameChooseSkillView",
+			{
+				"gameObject_"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-651.47,
+			-380.41
+		}
+	},
+	[12603] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12603,
+		talk_content = "\t",
+		params = {},
+		guide_component = {},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			0
+		}
+	},
+	[12604] = {
+		talk_anchors = 0,
+		type = "ClickButton",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12604,
+		talk_content = "每个阶段的专属强化可以从两个方向选择一个，先选择这个试试吧。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameChooseSkillView",
+			{
+				"itemList_",
+				1,
+				"chooseBtn_"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-651.47,
+			-380.41
+		}
+	},
+	[12605] = {
+		talk_anchors = 8,
+		type = "ClickButton",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12605,
+		talk_content = "点击这里确认选择。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameChooseSkillView",
+			{
+				"chooseBtn_"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			-611.64,
+			-400
+		}
+	},
+	[12606] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12606,
+		talk_content = "演算的胜利条件是<color=#E78300>消灭最终boss「天父」</color>，「天父」将在第8天出现。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce6"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			246.1,
+			213.98
+		}
+	},
+	[12607] = {
+		talk_anchors = 0,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12607,
+		talk_content = "基础演算中，做出了临时调整，「天父」将在第3天出现。",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce6"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			246.1,
+			213.98
+		}
+	},
+	[12608] = {
+		talk_anchors = 1,
+		type = "HighLight",
+		talk_adapt = 0,
+		mask_component = "",
+		is_finish = false,
+		id = 12608,
+		talk_content = "请继续<color=#E78300>提升处理进程</color>，解锁技能<color=#E78300>「尘埃落定」</color>后，就可以战胜「天父」了！",
+		params = {},
+		guide_component = {
+			"common",
+			"civilizationGameView",
+			{
+				"guideComponents",
+				"guide_introduce10"
+			}
+		},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			899.37,
+			-640.59
+		}
+	},
+	[12609] = {
+		talk_anchors = 0,
+		type = "CivilizationGameStep",
+		talk_adapt = 0,
+		is_finish = false,
+		id = 12609,
+		talk_content = "\t",
+		params = {},
+		guide_component = {},
+		mask_component = {},
+		drag_guide_component = {},
+		drag_mask_component = {},
+		mask_scale = {},
+		talk_position = {
+			0,
+			0
+		}
+	},
 	all = {
 		101,
 		102,
@@ -17120,6 +18245,51 @@
 		13701,
 		13702,
 		13703,
-		13801
+		13801,
+		12101,
+		12102,
+		12103,
+		12104,
+		12105,
+		12106,
+		12107,
+		12201,
+		12202,
+		12301,
+		12302,
+		12303,
+		12305,
+		12306,
+		12307,
+		12310,
+		12311,
+		12312,
+		12313,
+		12314,
+		12315,
+		12316,
+		12318,
+		12319,
+		12320,
+		12321,
+		12322,
+		12323,
+		12324,
+		12401,
+		12402,
+		12403,
+		12404,
+		12405,
+		12501,
+		12502,
+		12601,
+		12602,
+		12603,
+		12604,
+		12605,
+		12606,
+		12607,
+		12608,
+		12609
 	}
 }

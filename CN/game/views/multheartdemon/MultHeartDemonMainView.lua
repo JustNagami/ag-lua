@@ -125,7 +125,7 @@ function var_0_0.UpdateView(arg_17_0)
 
 	local var_17_0 = arg_17_0.selectDifficulty == 2 and "SoloHeartDemonUI_00026x" or "SoloHeartDemonUI_00012x"
 
-	arg_17_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = pureGetSpriteWithoutAtlas("TextureBg/Activity_Resident/Acitvity_SoloHeartDemon/" .. var_17_0)
+	arg_17_0.backGroundTrs_:Find("pic_background1"):GetComponent("SpriteRenderer").sprite = getSpriteWithoutAtlas("TextureBg/Activity_Resident/Acitvity_SoloHeartDemon/" .. var_17_0)
 	arg_17_0.easyTxt_.text = GetTips("MULTI_HEART_DEMON_EASY_NAME")
 	arg_17_0.hardTxt_.text = GetTips("MULTI_HEART_DEMON_HARD_NAME")
 

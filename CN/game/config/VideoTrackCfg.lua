@@ -409,6 +409,11 @@
 		name = "V4_0_SkuldUI_PlotUI.usm",
 		has_non_native = 0
 	},
+	["V4_2_GodEaterUI_PlotUI.usm"] = {
+		has_tracks = 0,
+		name = "V4_2_GodEaterUI_PlotUI.usm",
+		has_non_native = 0
+	},
 	["activity_102003_idle_loop01.usm"] = {
 		has_tracks = 0,
 		name = "activity_102003_idle_loop01.usm",
@@ -452,6 +457,16 @@
 	["pool_1089.usm"] = {
 		has_tracks = 0,
 		name = "pool_1089.usm",
+		has_non_native = 0
+	},
+	["pool_1045.usm"] = {
+		has_tracks = 0,
+		name = "pool_1045.usm",
+		has_non_native = 0
+	},
+	["pool_1046.usm"] = {
+		has_tracks = 0,
+		name = "pool_1046.usm",
 		has_non_native = 0
 	},
 	["pool_1248.usm"] = {
@@ -834,6 +849,26 @@
 		name = "109502_start.usm",
 		has_non_native = 0
 	},
+	["1046_start.usm"] = {
+		has_tracks = 0,
+		name = "1046_start.usm",
+		has_non_native = 0
+	},
+	["1046_loop.usm"] = {
+		has_tracks = 0,
+		name = "1046_loop.usm",
+		has_non_native = 0
+	},
+	["1045_start.usm"] = {
+		has_tracks = 0,
+		name = "1045_start.usm",
+		has_non_native = 0
+	},
+	["1045_loop.usm"] = {
+		has_tracks = 0,
+		name = "1045_loop.usm",
+		has_non_native = 0
+	},
 	["1248_start.usm"] = {
 		has_tracks = 0,
 		name = "1248_start.usm",
@@ -997,6 +1032,16 @@
 	["108901_login.usm"] = {
 		has_tracks = 1,
 		name = "108901_login.usm",
+		has_non_native = 0
+	},
+	["104501_login.usm"] = {
+		has_tracks = 1,
+		name = "104501_login.usm",
+		has_non_native = 0
+	},
+	["104601_login.usm"] = {
+		has_tracks = 1,
+		name = "104601_login.usm",
 		has_non_native = 0
 	},
 	["128402_login.usm"] = {

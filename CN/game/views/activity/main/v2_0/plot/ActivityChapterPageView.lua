@@ -15,6 +15,7 @@ function var_0_0.Init(arg_2_0)
 end
 
 function var_0_0.OnEnter(arg_3_0)
+	arg_3_0:CheckLimitTimeChapter()
 	var_0_0.super.OnEnter(arg_3_0)
 	manager.redPoint:bindUIandKey(arg_3_0.chapterBtn_.transform, ActivityTools.GetRedPointKey(arg_3_0.activityID_) .. arg_3_0.activityID_)
 
@@ -36,23 +37,34 @@ function var_0_0.AddListeners(arg_5_0)
 			return
 		end
 
-		local var_6_0 = ActivityChapterPageCfg[arg_5_0.activityID_]
-		local var_6_1 = var_6_0.chapter_client_id
+		if ActivityChapterPageCfg[arg_5_0.activityID_].chapter_type == 1 then
+			local var_6_0 = ChapterTools.GetChapterIDByClient(arg_5_0.chapterClientID_)
 
-		if var_6_0.chapter_type == 1 then
-			local var_6_2 = ChapterTools.GetChapterIDByClient(var_6_1)
-
-			if ChapterTools.IsFinishPreChapter(var_6_2) then
-				ChapterTools.GotoChapterSection(var_6_2)
+			if ChapterTools.IsFinishPreChapter(var_6_0) then
+				ChapterTools.GotoChapterSection(var_6_0)
 
 				return
 			end
 
 			ShowTips("TIME_OVER")
 		else
-			JumpTools.Jump2SubPlot(var_6_1, nil, true)
+			JumpTools.Jump2SubPlot(arg_5_0.chapterClientID_, nil, true)
 		end
 	end)
+end
+
+function var_0_0.CheckLimitTimeChapter(arg_7_0)
+	arg_7_0.chapterClientID_ = ActivityChapterPageCfg[arg_7_0.activityID_].chapter_client_id
+
+	if arg_7_0.timeGo_ then
+		if ChapterTools.GetChapterShowTypeData(arg_7_0.chapterClientID_) == "limitTime" then
+			arg_7_0.timeText_ = arg_7_0.timeGo_.transform:Find("iconbg/texttime"):GetComponent("Text")
+
+			arg_7_0.timeGo_:SetActive(true)
+		else
+			arg_7_0.timeGo_:SetActive(false)
+		end
+	end
 end
 
 return var_0_0

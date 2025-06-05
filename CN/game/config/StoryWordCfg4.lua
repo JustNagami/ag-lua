@@ -67,7 +67,7 @@
 	},
 	[317252063] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "他竟然能够击破那种特制的玻璃幕墙……务必留活口，任何能够承受惑火的人都是家族未来的希望。",
 		id = 317252063
 	},
@@ -85,13 +85,13 @@
 	},
 	[317252066] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "处决妖女，消灭鸦神的化身，完成家族的夙愿……",
 		id = 317252066
 	},
 	[317252067] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "是的，是必须做的事……",
 		id = 317252067
 	},
@@ -103,7 +103,7 @@
 	},
 	[317252069] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "你是谁？",
 		id = 317252069
 	},
@@ -115,7 +115,7 @@
 	},
 	[317252071] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "来人！",
 		id = 317252071
 	},
@@ -3355,7 +3355,7 @@
 	},
 	[317292006] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我只是把记忆还给了他们，他们最珍视的记忆。",
 		id = 317292006
 	},
@@ -3367,7 +3367,7 @@
 	},
 	[317292008] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "才不是什么帮助，我只不过是再次与那个恶神进行了交易。",
 		id = 317292008
 	},
@@ -3379,7 +3379,7 @@
 	},
 	[317292010] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "这样的话，千羽就不用死了。",
 		id = 317292010
 	},
@@ -3529,7 +3529,7 @@
 	},
 	[317292035] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "但是这样可以救下千羽！",
 		id = 317292035
 	},
@@ -3571,7 +3571,7 @@
 	},
 	[317292042] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "那就想办法把千羽救回来，想办法阻止鸦神！这不是你们科尔盖的职责吗？",
 		id = 317292042
 	},
@@ -3601,7 +3601,7 @@
 	},
 	[317292047] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "哈哈哈……",
 		id = 317292047
 	},
@@ -3613,37 +3613,37 @@
 	},
 	[317292049] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我知道现在的我很自私，我尝试过不那么自私。",
 		id = 317292049
 	},
 	[317292050] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "鸦家的祖训一直要求历代家主以对抗恶神为己任，我们没有像猿家那样懦弱地逃离，没有像蛇家那样不甘地堕落，更没有像秋鹿家那样卑微地侍奉。",
 		id = 317292050
 	},
 	[317292051] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我们选择了在阴影中反抗。",
 		id = 317292051
 	},
 	[317292052] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "无论是为了笹波也好，为了世界也罢，上百年来的历代家主没有犹豫过，即便他们都很清楚自己会早早死于非命。",
 		id = 317292052
 	},
 	[317292053] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "接过父亲的衣钵后，我也曾相信自己必须践行这种使命，直到四年前，先失去了母亲，又险些亲手害死妹妹……",
 		id = 317292053
 	},
 	[317292054] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我必须自私一些，为了我人生中仅剩的那些值得留恋的东西。",
 		id = 317292054
 	},
@@ -3679,19 +3679,19 @@
 	},
 	[317292060] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "千羽嘴上总是说着为了复仇可以不在乎笹波，最后还是选择了保护人类，用最自私的名义做着最无私的事。",
 		id = 317292060
 	},
 	[317292061] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我口口声声为了鸦家，为了笹波，让御刀众去送死，却只不过是想保护家人，用最无私的名义做了最自私的事。",
 		id = 317292061
 	},
 	[317292062] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我终究没能当好这个家主，但我至少想当好这个哥哥。",
 		id = 317292062
 	},
@@ -5527,7 +5527,7 @@
 	},
 	[317321029] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "你终于来了，准备好逮捕我了吗？",
 		id = 317321029
 	},
@@ -5545,19 +5545,19 @@
 	},
 	[317321032] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "……我的祖先可能在很早之前就猜到了鸦神的本质，于是制定了严苛的祖训。",
 		id = 317321032
 	},
 	[317321033] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "鸦家内部没有普通的仆人，只有从幼年就招募进来的孤儿死士。",
 		id = 317321033
 	},
 	[317321034] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "鸦家以救命之恩换取他们的以死相报，鸦家制定的家规中规定了他们在什么时候必须献出生命。这一切，都是为了对抗鸦神。",
 		id = 317321034
 	},
@@ -5569,7 +5569,7 @@
 	},
 	[317321036] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "……我能先问个问题吗？",
 		id = 317321036
 	},
@@ -5587,7 +5587,7 @@
 	},
 	[317321039] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "她还活着，如此就好……我承认我有私心，用这么多人的死去换一个，如果你想把所有人的牺牲都算到我头上，我不辩解。",
 		id = 317321039
 	},
@@ -5623,7 +5623,7 @@
 	},
 	[317321045] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "鸦家扮演的角色？如你所见，我们是抗争者，孤独的抗争者。",
 		id = 317321045
 	},
@@ -5635,7 +5635,7 @@
 	},
 	[317321047] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "调查官女士，你还没察觉到吗？整个笹波与科尔盖之间的接触，都已经被鹤家完全掌控了。",
 		id = 317321047
 	},
@@ -5647,19 +5647,19 @@
 	},
 	[317321049] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我们不是没有尝试过，但被派往科尔盖分部的传信人总是会离奇失踪，鸦家宅邸本身也被严密监视着。",
 		id = 317321049
 	},
 	[317321050] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "笹波五大家都承受着山神带来的苦难，但哪些适合让你们知道，完全是由鹤家来决定的。",
 		id = 317321050
 	},
 	[317321051] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "外界对笹波的每一次介入，都是鹤家主导的，包括这次你们对鸦家的调查。",
 		id = 317321051
 	},
@@ -5677,7 +5677,7 @@
 	},
 	[317321054] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "……你们果然已经察觉到了。",
 		id = 317321054
 	},
@@ -5689,13 +5689,13 @@
 	},
 	[317321056] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我也想过，她是不是被鹤家架空，成为了傀儡。但是，四年前偏偏发生了那种事……",
 		id = 317321056
 	},
 	[317321057] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "那已经不是我的三妹了。",
 		id = 317321057
 	},
@@ -5719,25 +5719,25 @@
 	},
 	[317321061] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "……不，我拒绝。",
 		id = 317321061
 	},
 	[317321062] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "虽然我手里的情报也有限，但我知道天之子也是和五山神类似的怪物，并且凌驾于五山神之上。",
 		id = 317321062
 	},
 	[317321063] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "为了对抗鸦神，就已经付出了这么多牺牲，如果敌人是天之子的话……",
 		id = 317321063
 	},
 	[317321064] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我想通了，能保护住最亲近的人，就足够了。",
 		id = 317321064
 	},
@@ -5755,7 +5755,7 @@
 	},
 	[317321067] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "面对神明，人类终究是弱小的，不能奢求太多。",
 		id = 317321067
 	},
@@ -5803,7 +5803,7 @@
 	},
 	[317321075] = {
 		speaker = "",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "……嗯。",
 		id = 317321075
 	},
@@ -10993,7 +10993,7 @@
 	},
 	[1101101015] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "来，让我看一下。",
 		id = 1101101015
 	},
@@ -11011,7 +11011,7 @@
 	},
 	[1101101018] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员是在做作战能力训练啊……",
 		id = 1101101018
 	},
@@ -11023,7 +11023,7 @@
 	},
 	[1101101020] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "为什么要把难度调整成修正者级别呢?",
 		id = 1101101020
 	},
@@ -11035,7 +11035,7 @@
 	},
 	[1101101022] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "可是，管理员在队伍里有自己的定位，也有着自己战斗的方式，不用勉强自己接受这个强度的训练……",
 		id = 1101101022
 	},
@@ -11059,7 +11059,7 @@
 	},
 	[1101101026] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯，因为新一轮训练考核的时间也快到了……\n对不起，我也同样无法通过考试，不应该说教管理员……",
 		id = 1101101026
 	},
@@ -11077,19 +11077,19 @@
 	},
 	[1101101029] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "没关系没关系，我知道自己还差得远呢。所以啊，我比管理员强什么的，完全不是这样哦。",
 		id = 1101101029
 	},
 	[1101101030] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "虽然这么说有点过分，想到#{nickname}#也做不到，反而会有些安心的感觉，嘿嘿……",
 		id = 1101101030
 	},
 	[1101101031] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "倒不如说，如果是连管理员都做不到的事情的话，我一定也……",
 		id = 1101101031
 	},
@@ -11107,7 +11107,7 @@
 	},
 	[1101101034] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员……",
 		id = 1101101034
 	},
@@ -11119,7 +11119,7 @@
 	},
 	[1101101036] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员……",
 		id = 1101101036
 	},
@@ -11137,7 +11137,7 @@
 	},
 	[1101101039] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员……",
 		id = 1101101039
 	},
@@ -11149,7 +11149,7 @@
 	},
 	[1101101041] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯！请多指教了，管理员！",
 		id = 1101101041
 	},
@@ -11167,7 +11167,7 @@
 	},
 	[1101101044] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员，你刚才受伤了，去高处移动吧，更安全！我来消灭这些视骸！",
 		id = 1101101044
 	},
@@ -11185,7 +11185,7 @@
 	},
 	[1101101047] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "好，我相信管理员的判断……那管理员也不要突破的太快，注意控制射击的精准度！",
 		id = 1101101047
 	},
@@ -11209,7 +11209,7 @@
 	},
 	[1101101051] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "明白！",
 		id = 1101101051
 	},
@@ -11263,7 +11263,7 @@
 	},
 	[1101101060] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "交给我吧……管理员！",
 		id = 1101101060
 	},
@@ -11293,7 +11293,7 @@
 	},
 	[1101101065] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "欸……？！好！",
 		id = 1101101065
 	},
@@ -11335,7 +11335,7 @@
 	},
 	[1101101072] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "成功了！",
 		id = 1101101072
 	},
@@ -11353,7 +11353,7 @@
 	},
 	[1101101075] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "即使不借助弥弥尔大人的力量，管理员的分析还是那么可靠。",
 		id = 1101101075
 	},
@@ -11365,7 +11365,7 @@
 	},
 	[1101101077] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "总之，非常感谢！管理员！",
 		id = 1101101077
 	},
@@ -11389,7 +11389,7 @@
 	},
 	[1101101081] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "欸嘿嘿……",
 		id = 1101101081
 	},
@@ -11413,7 +11413,7 @@
 	},
 	[1101101085] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯，好久没有喝咖啡牛奶了，管理员想喝什么呢？我帮你买。",
 		id = 1101101085
 	},
@@ -11425,7 +11425,7 @@
 	},
 	[1101101087] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "那，我请管理员喝荣光橙汁，管理员请我喝咖啡牛奶吧！",
 		id = 1101101087
 	},
@@ -11467,7 +11467,7 @@
 	},
 	[1101101094] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "哈~呜……",
 		id = 1101101094
 	},
@@ -11503,7 +11503,7 @@
 	},
 	[1101101100] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "因为……管理员知道的吧，关于我身体的事……",
 		id = 1101101100
 	},
@@ -11515,7 +11515,7 @@
 	},
 	[1101101102] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "欸？所以……",
 		id = 1101101102
 	},
@@ -11533,7 +11533,7 @@
 	},
 	[1101101107] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "可以的话，让我做管理员的助手，好吗？",
 		id = 1101101107
 	},
@@ -11545,7 +11545,7 @@
 	},
 	[1101101109] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "谢谢你，管理员！",
 		id = 1101101109
 	},
@@ -11563,7 +11563,7 @@
 	},
 	[1101101112] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "欸嘿嘿……嗯。",
 		id = 1101101112
 	},
@@ -11575,7 +11575,7 @@
 	},
 	[1101101114] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯！",
 		id = 1101101114
 	},
@@ -11683,7 +11683,7 @@
 	},
 	[1101102014] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "呜哇……好重，谢谢你，管理员。",
 		id = 1101102014
 	},
@@ -11731,7 +11731,7 @@
 	},
 	[1101102022] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "其实还是有的……弥弥尔大人也辛苦了，给你。",
 		id = 1101102022
 	},
@@ -11773,7 +11773,7 @@
 	},
 	[1101102029] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "参照休老师给的处理办法，这些东西应该交给科尔盖才对吧……",
 		id = 1101102029
 	},
@@ -11809,7 +11809,7 @@
 	},
 	[1101102035] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "喵啊啊啊这是什么啊！",
 		id = 1101102035
 	},
@@ -11845,7 +11845,7 @@
 	},
 	[1101102041] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "呜……吨吨吨吨吨……来、来吧！",
 		id = 1101102041
 	},
@@ -11875,7 +11875,7 @@
 	},
 	[1101102046] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "啊，啊啊啊，哈哇哇哇……",
 		id = 1101102046
 	},
@@ -11899,7 +11899,7 @@
 	},
 	[1101102050] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我在，#{nickname}#！呜，好疼……",
 		id = 1101102050
 	},
@@ -11917,7 +11917,7 @@
 	},
 	[1101102053] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "好……呀！！！",
 		id = 1101102053
 	},
@@ -11989,7 +11989,7 @@
 	},
 	[1101102065] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "是！好！我、我知道了！",
 		id = 1101102065
 	},
@@ -12001,7 +12001,7 @@
 	},
 	[1101102067] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我我我会加油的！",
 		id = 1101102067
 	},
@@ -12013,7 +12013,7 @@
 	},
 	[1101102069] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "啊啊啊！呜呜……救命啊……",
 		id = 1101102069
 	},
@@ -12043,7 +12043,7 @@
 	},
 	[1101102074] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "呜呜……",
 		id = 1101102074
 	},
@@ -12055,13 +12055,13 @@
 	},
 	[1101102076] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "才才才不会呢！我、我是#{nickname}#……的助手……训练的时候还是你的拍档，我能克服的！",
 		id = 1101102076
 	},
 	[1101102077] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "只是把它当成一份工作、只是协助管理员完成工作！",
 		id = 1101102077
 	},
@@ -12109,7 +12109,7 @@
 	},
 	[1101102085] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "对不起……没能帮上忙。",
 		id = 1101102085
 	},
@@ -12127,7 +12127,7 @@
 	},
 	[1101102088] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯，交给我吧……谢谢你，#{nickname}#。",
 		id = 1101102088
 	},
@@ -12151,19 +12151,19 @@
 	},
 	[1101102092] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "唔……上次利维坦请我吃冰淇淋，给她准备了雪糕趴趴……",
 		id = 1101102092
 	},
 	[1101102093] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "这个泡泡枪是给小前鬼的，要是她能不那么闹腾，总是给大家添麻烦就好啦……",
 		id = 1101102093
 	},
 	[1101102094] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "上次看到海拉很喜欢我养的小猫的样子……送她一个猫咪包包吧~",
 		id = 1101102094
 	},
@@ -12187,7 +12187,7 @@
 	},
 	[1101102098] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员，你忙完啦，这些是要送给大家的礼物哦。",
 		id = 1101102098
 	},
@@ -12217,13 +12217,13 @@
 	},
 	[1101102103] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "在你工作的时候，我都整理好啦，刚才弥弥尔大人已经拿走了一部分了。",
 		id = 1101102103
 	},
 	[1101102104] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "当然，#{nickname}#也有哦！给你。",
 		id = 1101102104
 	},
@@ -12265,7 +12265,7 @@
 	},
 	[1101102111] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "欸嘿嘿，嗯！",
 		id = 1101102111
 	},
@@ -12301,7 +12301,7 @@
 	},
 	[1101102117] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "是哦！我和管理员都尽力去收集了。",
 		id = 1101102117
 	},
@@ -12319,7 +12319,7 @@
 	},
 	[1101102120] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "哎？",
 		id = 1101102120
 	},
@@ -12349,7 +12349,7 @@
 	},
 	[1101102125] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "没关系。如果可以的话，下次让迟钝帮帮弥弥尔大人吧。",
 		id = 1101102125
 	},
@@ -12391,7 +12391,7 @@
 	},
 	[1101102132] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯。",
 		id = 1101102132
 	},
@@ -12403,13 +12403,13 @@
 	},
 	[1101102134] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "没有啦，不是它的错哦。是之前冥王出来的时候把它吓坏了。",
 		id = 1101102134
 	},
 	[1101102135] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我也不能一直陪在冥王和小猫的身边。有时候在想，要是它能进入心象房间就好啦。",
 		id = 1101102135
 	},
@@ -12445,7 +12445,7 @@
 	},
 	[1101102141] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "不对啦！",
 		id = 1101102141
 	},
@@ -12457,7 +12457,7 @@
 	},
 	[1101102143] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "哈哈……管理员说得对，暂时可能很难吧。",
 		id = 1101102143
 	},
@@ -12469,13 +12469,13 @@
 	},
 	[1101102145] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "还是老样子啦……把自己一个人关在房间里。",
 		id = 1101102145
 	},
 	[1101102146] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "不过，最近，她好像对童话绘本的故事感兴趣了呢，会和我讨论一些关于童话故事的内容。",
 		id = 1101102146
 	},
@@ -12487,7 +12487,7 @@
 	},
 	[1101102148] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯，像是「狼吃小女孩就好了干嘛吃苹果」「狮子是王就不该那么仁慈」……",
 		id = 1101102148
 	},
@@ -12505,7 +12505,7 @@
 	},
 	[1101102151] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "没有啦……欸嘿嘿……",
 		id = 1101102151
 	},
@@ -12517,7 +12517,7 @@
 	},
 	[1101102153] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "不过……之前因为考试的事情，我一连好几天没有去给冥王讲故事……她好像还挺不高兴的。",
 		id = 1101102153
 	},
@@ -12529,13 +12529,13 @@
 	},
 	[1101102155] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "没有啦……为考试做准备也是应该的。",
 		id = 1101102155
 	},
 	[1101102156] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员，有空的话，我们一起去找一次冥王吧？",
 		id = 1101102156
 	},
@@ -12583,7 +12583,7 @@
 	},
 	[1101103008] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "唔……感觉脚有点麻……可以扶我一下吗，管理员？",
 		id = 1101103008
 	},
@@ -12601,7 +12601,7 @@
 	},
 	[1101103011] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "谢谢你，管理员。",
 		id = 1101103011
 	},
@@ -12679,7 +12679,7 @@
 	},
 	[1101103024] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "先观察一下吧，管理员。",
 		id = 1101103024
 	},
@@ -12691,7 +12691,7 @@
 	},
 	[1101103026] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "好像是跟我的意识有关系吧……有一个房间，每隔一段时间会存放我和冥王最想要的东西。",
 		id = 1101103026
 	},
@@ -12703,7 +12703,7 @@
 	},
 	[1101103028] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "就是这里和那个放着东西的房间啦……",
 		id = 1101103028
 	},
@@ -12715,7 +12715,7 @@
 	},
 	[1101103030] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "欸嘿嘿，要是管理员想在我的心象房间住的话，我也很欢迎的……",
 		id = 1101103030
 	},
@@ -12751,7 +12751,7 @@
 	},
 	[1101103036] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "一个人在表演……童话剧……吧？明明那本《狮与鹫的勇气之堡》没有这段内容的……",
 		id = 1101103036
 	},
@@ -12769,7 +12769,7 @@
 	},
 	[1101103039] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "小狮子不会这样说话的啦……",
 		id = 1101103039
 	},
@@ -12793,7 +12793,7 @@
 	},
 	[1101103043] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "诶？呜……",
 		id = 1101103043
 	},
@@ -12853,7 +12853,7 @@
 	},
 	[1101103053] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "呜……冥王表演的小狮子真的很棒……",
 		id = 1101103053
 	},
@@ -12871,7 +12871,7 @@
 	},
 	[1101103056] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "深呼吸冥王……深呼吸。",
 		id = 1101103056
 	},
@@ -12925,7 +12925,7 @@
 	},
 	[1101103065] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "冥王……没和你打招呼就来找你是我不对，但你这样好没礼貌啦……",
 		id = 1101103065
 	},
@@ -12937,7 +12937,7 @@
 	},
 	[1101103067] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "对不起……",
 		id = 1101103067
 	},
@@ -12949,7 +12949,7 @@
 	},
 	[1101103069] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "#{nickname}#和大家听说了你最近在看童话绘本的事情，给你准备了礼物哦。",
 		id = 1101103069
 	},
@@ -13099,7 +13099,7 @@
 	},
 	[1101103094] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "作弊是不行的啦，冥王……不过，还是谢谢你考试那几天和管理员一起指点我。",
 		id = 1101103094
 	},
@@ -13147,7 +13147,7 @@
 	},
 	[1101103102] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "冥王……",
 		id = 1101103102
 	},
@@ -13159,7 +13159,7 @@
 	},
 	[1101103104] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "#{nickname}#只是不想你太辛苦啦。",
 		id = 1101103104
 	},
@@ -13189,7 +13189,7 @@
 	},
 	[1101103109] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "唔……我倒是有个建议——冥王，要不要试着做一次管理员的助手？",
 		id = 1101103109
 	},
@@ -13207,7 +13207,7 @@
 	},
 	[1101103112] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "只要冥王不再像之前那样破坏东西的话，没有人会觉得奇怪的。",
 		id = 1101103112
 	},
@@ -13219,7 +13219,7 @@
 	},
 	[1101103114] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "因为不擅长，所以才有尝试的价值吧？",
 		id = 1101103114
 	},
@@ -13255,7 +13255,7 @@
 	},
 	[1101103120] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "要像故事里的小动物一样加油哦，冥王！",
 		id = 1101103120
 	},
@@ -13975,7 +13975,7 @@
 	},
 	[1101104113] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "冥王，等一下啦，这个门不是这样开的……",
 		id = 1101104113
 	},
@@ -13999,7 +13999,7 @@
 	},
 	[1101104117] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "欸嘿嘿……",
 		id = 1101104117
 	},
@@ -14011,7 +14011,7 @@
 	},
 	[1101104119] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "冥王的新衣服啊……有点羡慕，管理员……",
 		id = 1101104119
 	},
@@ -14029,7 +14029,7 @@
 	},
 	[1101104122] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员……在和冥王牵手呢。",
 		id = 1101104122
 	},
@@ -14047,7 +14047,7 @@
 	},
 	[1101104125] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嘻嘻……你们也是一样哦。",
 		id = 1101104125
 	},
@@ -14089,7 +14089,7 @@
 	},
 	[1101104132] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "不行，做不到……可是……好羡慕……",
 		id = 1101104132
 	},
@@ -14131,7 +14131,7 @@
 	},
 	[1101104139] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "哎？#{nickname}#、冥王？你们怎么……",
 		id = 1101104139
 	},
@@ -14173,7 +14173,7 @@
 	},
 	[1101104146] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "哎？原来是这样……",
 		id = 1101104146
 	},
@@ -14185,7 +14185,7 @@
 	},
 	[1101104148] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嘻嘻……谢谢你，冥王。",
 		id = 1101104148
 	},
@@ -14197,7 +14197,7 @@
 	},
 	[1101104150] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "哈哈……",
 		id = 1101104150
 	},
@@ -14431,7 +14431,7 @@
 	},
 	[1101105014] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "非常抱歉，管理员，我迟到了！",
 		id = 1101105014
 	},
@@ -14443,7 +14443,7 @@
 	},
 	[1101105016] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "昨天不应该和冥王一起聊的那么晚的……",
 		id = 1101105016
 	},
@@ -14461,7 +14461,7 @@
 	},
 	[1101105019] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "看来要和管理员一起写出勤异常备录了……这个箱子是？",
 		id = 1101105019
 	},
@@ -14473,7 +14473,7 @@
 	},
 	[1101105021] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "《重生之我在异世界做冥神》、《冥界少女是我的新娘》……",
 		id = 1101105021
 	},
@@ -14503,13 +14503,13 @@
 	},
 	[1101105026] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "弥弥尔大人，管理员也很辛苦的，不要对#{nickname}#那么苛刻啦……",
 		id = 1101105026
 	},
 	[1101105027] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员也还没吃早饭吧？我给你带了，给。",
 		id = 1101105027
 	},
@@ -14551,7 +14551,7 @@
 	},
 	[1101105034] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "呜、管理员，让你破费了……用掉的金额，还是从我的补贴里扣吧？",
 		id = 1101105034
 	},
@@ -14563,7 +14563,7 @@
 	},
 	[1101105036] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员……谢谢……",
 		id = 1101105036
 	},
@@ -14587,7 +14587,7 @@
 	},
 	[1101105040] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "欸欸！",
 		id = 1101105040
 	},
@@ -14599,7 +14599,7 @@
 	},
 	[1101105042] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "对不起，总之今天真的很需要弥弥尔大人的帮助……我再拿出一部分补贴给弥弥尔大人买冷却剂，好不好？",
 		id = 1101105042
 	},
@@ -14629,7 +14629,7 @@
 	},
 	[1101105047] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "唔……",
 		id = 1101105047
 	},
@@ -14659,7 +14659,7 @@
 	},
 	[1101105052] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "欸嘿嘿……管理员能和我……还有大家能交上朋友真是太好了！",
 		id = 1101105052
 	},
@@ -14671,7 +14671,7 @@
 	},
 	[1101105054] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯！",
 		id = 1101105054
 	},
@@ -14731,7 +14731,7 @@
 	},
 	[1101105064] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "隐科组的前辈们平时也喜欢看漫画啊……",
 		id = 1101105064
 	},
@@ -14803,7 +14803,7 @@
 	},
 	[1101105076] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "海姆达尔姐姐……？",
 		id = 1101105076
 	},
@@ -14833,7 +14833,7 @@
 	},
 	[1101105081] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "冥王？怎么了？",
 		id = 1101105081
 	},
@@ -14851,7 +14851,7 @@
 	},
 	[1101105084] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "欸……去动物园？",
 		id = 1101105084
 	},
@@ -14863,7 +14863,7 @@
 	},
 	[1101105086] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "可是，大国主姐姐的工作还需要时间……要不你用我的身体——",
 		id = 1101105086
 	},
@@ -14887,7 +14887,7 @@
 	},
 	[1101105090] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嘻嘻，知道啦。我会把冥王的愿望转达给管理员的。",
 		id = 1101105090
 	},
@@ -14905,7 +14905,7 @@
 	},
 	[1101105093] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "呜……",
 		id = 1101105093
 	},
@@ -14935,7 +14935,7 @@
 	},
 	[1101105098] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员，辛苦了，我给你做了小蛋糕哦，来吃点吧。",
 		id = 1101105098
 	},
@@ -14947,7 +14947,7 @@
 	},
 	[1101105100] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "那个……管理员……味道怎么样？",
 		id = 1101105100
 	},
@@ -14959,7 +14959,7 @@
 	},
 	[1101105102] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "诶嘿嘿……你喜欢就好。",
 		id = 1101105102
 	},
@@ -14977,7 +14977,7 @@
 	},
 	[1101105105] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "哎？",
 		id = 1101105105
 	},
@@ -14995,7 +14995,7 @@
 	},
 	[1101105108] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "哇啊啊啊啊啊管理员不许看！",
 		id = 1101105108
 	},
@@ -15043,7 +15043,7 @@
 	},
 	[1101105116] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "因为管理员经常在休息的时候加班，所以我才……",
 		id = 1101105116
 	},
@@ -15061,7 +15061,7 @@
 	},
 	[1101105119] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "又摸我的头……这样久坐可不好哦，#{nickname}#，你要是病倒了的话，我会……",
 		id = 1101105119
 	},
@@ -15073,7 +15073,7 @@
 	},
 	[1101105121] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "呜……我会来照顾你的！",
 		id = 1101105121
 	},
@@ -15085,7 +15085,7 @@
 	},
 	[1101105123] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "不可以啦……要爱惜自己的身体，#{nickname}#。",
 		id = 1101105123
 	},
@@ -15103,7 +15103,7 @@
 	},
 	[1101105126] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "那……如果管理员喜欢的话，我就继续给你做点心。下次……还能再夸夸我吗？",
 		id = 1101105126
 	},
@@ -15115,7 +15115,7 @@
 	},
 	[1101105128] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "如果我也像故事书里写那样，在深空之眼举办故事茶会，管理员会来听我讲故事吗？",
 		id = 1101105128
 	},
@@ -15133,19 +15133,19 @@
 	},
 	[1101105131] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "不用担心这个哦，我会准备好蛋糕，给管理员预留好离我最近的座位……",
 		id = 1101105131
 	},
 	[1101105132] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "不……可以的话，还是想和你一起捧着故事书，读给大家听。",
 		id = 1101105132
 	},
 	[1101105133] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我可以现在就……试试吗？",
 		id = 1101105133
 	},
@@ -15163,7 +15163,7 @@
 	},
 	[1101105136] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯……",
 		id = 1101105136
 	},
@@ -15181,7 +15181,7 @@
 	},
 	[1101105139] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯！",
 		id = 1101105139
 	},
@@ -15217,7 +15217,7 @@
 	},
 	[1101106006] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "冥王，只是不满意款式的话……让海姆达尔姐姐给你换一个吧？",
 		id = 1101106006
 	},
@@ -15247,7 +15247,7 @@
 	},
 	[1101106011] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "噗……",
 		id = 1101106011
 	},
@@ -15355,7 +15355,7 @@
 	},
 	[1101106029] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "对不起，之后我会给冥王你多讲几篇的……",
 		id = 1101106029
 	},
@@ -15367,7 +15367,7 @@
 	},
 	[1101106031] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "什么都没有！是是是写报告啦！",
 		id = 1101106031
 	},
@@ -15391,7 +15391,7 @@
 	},
 	[1101106035] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "不行！绝对不能汇报给休老师！",
 		id = 1101106035
 	},
@@ -15409,7 +15409,7 @@
 	},
 	[1101106038] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯……一会儿再说。",
 		id = 1101106038
 	},
@@ -15433,7 +15433,7 @@
 	},
 	[1101106042] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "冥王，你要去哪里？",
 		id = 1101106042
 	},
@@ -15499,7 +15499,7 @@
 	},
 	[1101106053] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "白色小团子，冥王也开始用这么可爱的称呼形容它啦。",
 		id = 1101106053
 	},
@@ -15511,7 +15511,7 @@
 	},
 	[1101106055] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯。因为一直想不到合适的名字……管理员有什么建议吗？",
 		id = 1101106055
 	},
@@ -15523,7 +15523,7 @@
 	},
 	[1101106057] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "「小白团子」吗……",
 		id = 1101106057
 	},
@@ -15547,13 +15547,13 @@
 	},
 	[1101106061] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "没关系的，我也很喜欢小动物……",
 		id = 1101106061
 	},
 	[1101106062] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员……是这样看待我的吗……",
 		id = 1101106062
 	},
@@ -15571,7 +15571,7 @@
 	},
 	[1101106065] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "啊？！",
 		id = 1101106065
 	},
@@ -15589,7 +15589,7 @@
 	},
 	[1101106068] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "明白了！管理员我们走吧！",
 		id = 1101106068
 	},
@@ -15631,7 +15631,7 @@
 	},
 	[1101106075] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "对不起……我反应慢了一拍……",
 		id = 1101106075
 	},
@@ -15685,7 +15685,7 @@
 	},
 	[1101106084] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "等、等一下啦冥王，还要排队哦……",
 		id = 1101106084
 	},
@@ -15709,7 +15709,7 @@
 	},
 	[1101106088] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "没有啦……我是在想#{nickname}#的事情。",
 		id = 1101106088
 	},
@@ -15721,7 +15721,7 @@
 	},
 	[1101106090] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员……怎么看待我？",
 		id = 1101106090
 	},
@@ -15745,7 +15745,7 @@
 	},
 	[1101106094] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯……还有吗？",
 		id = 1101106094
 	},
@@ -15757,7 +15757,7 @@
 	},
 	[1101106096] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯……还有吗？管理员……",
 		id = 1101106096
 	},
@@ -15775,7 +15775,7 @@
 	},
 	[1101106099] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员……",
 		id = 1101106099
 	},
@@ -15805,7 +15805,7 @@
 	},
 	[1101106104] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "时间过的好快啊……不过，和管理员一起看了很多东西……简直就像……",
 		id = 1101106104
 	},
@@ -15817,7 +15817,7 @@
 	},
 	[1101106106] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "不，什么都没有……",
 		id = 1101106106
 	},
@@ -15877,7 +15877,7 @@
 	},
 	[1101106116] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "欸……管理员……",
 		id = 1101106116
 	},
@@ -15889,7 +15889,7 @@
 	},
 	[1101106118] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员……怎么看待我？",
 		id = 1101106118
 	},
@@ -15901,13 +15901,13 @@
 	},
 	[1101106120] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员是、是……",
 		id = 1101106120
 	},
 	[1101106121] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "是我的……狐狸……",
 		id = 1101106121
 	},
@@ -15919,7 +15919,7 @@
 	},
 	[1101106123] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯……对我来说，那是很珍贵的回忆。",
 		id = 1101106123
 	},
@@ -15955,7 +15955,7 @@
 	},
 	[1101106129] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "欸嘿嘿……",
 		id = 1101106129
 	},
@@ -16249,31 +16249,31 @@
 	},
 	[1101106178] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "",
 		content = "",
 		id = 1101106178
 	},
 	[1101106179] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "",
 		content = "",
 		id = 1101106179
 	},
 	[1101106180] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "",
 		content = "",
 		id = 1101106180
 	},
 	[1101106181] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "",
 		content = "",
 		id = 1101106181
 	},
 	[1101106182] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "",
 		content = "",
 		id = 1101106182
 	},
@@ -16285,37 +16285,37 @@
 	},
 	[1101106184] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "",
 		content = "",
 		id = 1101106184
 	},
 	[1101106185] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "",
 		content = "",
 		id = 1101106185
 	},
 	[1101106186] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "",
 		content = "",
 		id = 1101106186
 	},
 	[1101106187] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "",
 		content = "",
 		id = 1101106187
 	},
 	[1101106188] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "",
 		content = "",
 		id = 1101106188
 	},
 	[1101106189] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "",
 		content = "",
 		id = 1101106189
 	},
@@ -16333,7 +16333,7 @@
 	},
 	[1101106192] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "#{nickname}#……",
 		id = 1101106192
 	},
@@ -52063,13 +52063,13 @@
 	},
 	[318011026] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "人员和物资的状况都已经清点好了，唯独没见着你们，就过来看看。",
 		id = 318011026
 	},
 	[318011027] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "#{nickname}#，休息得还好吗？",
 		id = 318011027
 	},
@@ -52099,7 +52099,7 @@
 	},
 	[318011032] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "千羽，我是来道歉的，我……",
 		id = 318011032
 	},
@@ -52111,7 +52111,7 @@
 	},
 	[318011034] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "千羽？",
 		id = 318011034
 	},
@@ -52201,7 +52201,7 @@
 	},
 	[318011049] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "千羽，你想好了吗？",
 		id = 318011049
 	},
@@ -52249,13 +52249,13 @@
 	},
 	[318011057] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "如果不是亲眼见识过鸦神的可怕，恐怕我也不会质疑天之子。",
 		id = 318011057
 	},
 	[318011058] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "「带领人类封印五山神」……呵，有哪个「山神」是省油的灯吗？",
 		id = 318011058
 	},
@@ -52345,13 +52345,13 @@
 	},
 	[318011073] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "如今三猿家远遁，宫蛇家覆灭，秋鹿家群龙无首，我们同样损失惨重。还剩一个助纣为虐的伊鹤正芳……",
 		id = 318011073
 	},
 	[318011074] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "五山神几乎死绝，笹波五家名存实亡。无论天之子打算做什么，恐怕就快成功了。",
 		id = 318011074
 	},
@@ -52363,7 +52363,7 @@
 	},
 	[318011076] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "月读小姐为什么这么问？",
 		id = 318011076
 	},
@@ -52405,7 +52405,7 @@
 	},
 	[318011083] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "等等，还是我去见他吧……",
 		id = 318011083
 	},
@@ -52429,13 +52429,13 @@
 	},
 	[318011087] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "总比你们用强要好……\n我现在姑且还算鸦家的家主，约见大家主的权利还是有的。",
 		id = 318011087
 	},
 	[318011088] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "这本来就是五大家对笹波的责任，我义不容辞。",
 		id = 318011088
 	},
@@ -52513,7 +52513,7 @@
 	},
 	[318011101] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "这……五家向来各自独立，要是秋鹿家主健在倒还能谈。现在我们这么做，不是趁虚而入吗？",
 		id = 318011101
 	},
@@ -52999,7 +52999,7 @@
 	},
 	[318011182] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "又出什么事了？",
 		id = 318011182
 	},
@@ -53011,7 +53011,7 @@
 	},
 	[318011184] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "皇城禁军？他们怎么会到下京区来？你确定看清楚了吗？",
 		id = 318011184
 	},
@@ -53155,7 +53155,7 @@
 	},
 	[318021003] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "就算是禁军也要按规矩办事，要是能理论，还是避免冲突。",
 		id = 318021003
 	},
@@ -53167,7 +53167,7 @@
 	},
 	[318021005] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "各位是奉天之子的命令而来？鸦越家向来忠心不二，没有叛党。",
 		id = 318021005
 	},
@@ -53179,7 +53179,7 @@
 	},
 	[318021007] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我鸦越千堂愿以鸦家基业为质，请往皇城，面见天之子！",
 		id = 318021007
 	},
@@ -53209,7 +53209,7 @@
 	},
 	[318021012] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "千羽！",
 		id = 318021012
 	},
@@ -53317,7 +53317,7 @@
 	},
 	[318021030] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "咳咳……千羽……你没事吧？",
 		id = 318021030
 	},
@@ -53347,7 +53347,7 @@
 	},
 	[318021035] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "哥哥保护妹妹，哪有那么多为什么？就算我不是修正者，也……咳咳……",
 		id = 318021035
 	},
@@ -53365,7 +53365,7 @@
 	},
 	[318021038] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "千羽……",
 		id = 318021038
 	},
@@ -53389,7 +53389,7 @@
 	},
 	[318021042] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "院里有先祖修建的地下密室，能抵御炮火。",
 		id = 318021042
 	},
@@ -53425,7 +53425,7 @@
 	},
 	[318021048] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "小伤，不碍事。接下来怎么办？",
 		id = 318021048
 	},
@@ -53707,7 +53707,7 @@
 	},
 	[318031003] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "千羽……",
 		id = 318031003
 	},
@@ -53719,7 +53719,7 @@
 	},
 	[318031005] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "其他人呢？鸦伏众他们……",
 		id = 318031005
 	},
@@ -53737,7 +53737,7 @@
 	},
 	[318031008] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "看来顺利把追兵甩掉了。",
 		id = 318031008
 	},
@@ -53749,7 +53749,7 @@
 	},
 	[318031010] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "没事了。深空之眼的医疗包疗效惊人，你看——",
 		id = 318031010
 	},
@@ -53779,19 +53779,19 @@
 	},
 	[318031015] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "其实……我只是想为鸦家做点什么。",
 		id = 318031015
 	},
 	[318031016] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "明明我是鸦家的家主，是哥哥。可对抗鸦神、为母亲复仇这些事，都压在了你身上。",
 		id = 318031016
 	},
 	[318031017] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "甚至，我还嫉妒你，嫉妒你躲在幕后也能掌控整个鸦家……",
 		id = 318031017
 	},
@@ -53809,19 +53809,19 @@
 	},
 	[318031020] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "就算你这么说……可我是你的哥哥啊。",
 		id = 318031020
 	},
 	[318031021] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "这次我不冷静，上次也……已经被塞赫麦特教训过了。但看到你还活着，看到你没有受伤，我至少会觉得自己不至于那么没用。",
 		id = 318031021
 	},
 	[318031022] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我能为你做的，只有这种冲动的荒唐事了。",
 		id = 318031022
 	},
@@ -53839,7 +53839,7 @@
 	},
 	[318031025] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "呃，千羽？",
 		id = 318031025
 	},
@@ -64873,19 +64873,19 @@
 	},
 	[318181016] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "嗯……居民听说我是鸦家的人，转身就走，至于鹿家的人，你也知道，根本没找到。这么大的地方，他们想躲起来，一点痕迹都没有。",
 		id = 318181016
 	},
 	[318181017] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "别说让他们疏散了，就是让他们在禁军过来以前在家藏好，恐怕都没人会听。",
 		id = 318181017
 	},
 	[318181018] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "本来想让鸦伏众先拦住一些居民，可他们拿武器出来，我们也不能真打。至于跟他们讲道理，更是……",
 		id = 318181018
 	},
@@ -64903,7 +64903,7 @@
 	},
 	[318181021] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "好，那我们至少还有拖延的机会，辛苦你们了。",
 		id = 318181021
 	},
@@ -64915,7 +64915,7 @@
 	},
 	[318181023] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "地上都是灰，不擦一擦再坐吗？",
 		id = 318181023
 	},
@@ -64927,13 +64927,13 @@
 	},
 	[318181025] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "……说的也是，都到这儿了，还在乎什么身上脏不脏？",
 		id = 318181025
 	},
 	[318181026] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "要怪就怪自己有心无力，保不住一身干净。",
 		id = 318181026
 	},
@@ -64945,25 +64945,25 @@
 	},
 	[318181028] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "够多了吗？做那些事的到底是我鸦越千堂，还是鸦越家主这个名号？",
 		id = 318181028
 	},
 	[318181029] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "……我啊，一出生就是鸦家的继承人，十几岁就接任了家主的位置，一挥手一点头，就有数不清的人愿意听我的命令。",
 		id = 318181029
 	},
 	[318181030] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "当初培养你们斩杀鸦神，我还真以为，自己做了什么先辈都做不成的伟大事业……",
 		id = 318181030
 	},
 	[318181031] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "迦具土，你说，是不是没了鸦家家主这个位置，我就什么都不是？",
 		id = 318181031
 	},
@@ -65005,7 +65005,7 @@
 	},
 	[318181038] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "迦具土那时……是怎么走出去的？是因为觉醒了吗？",
 		id = 318181038
 	},
@@ -65041,7 +65041,7 @@
 	},
 	[318181044] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我也去前线。",
 		id = 318181044
 	},
@@ -65053,7 +65053,7 @@
 	},
 	[318181046] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "解决了先遣部队，还能再争取一段疏散时间。",
 		id = 318181046
 	},
@@ -65065,7 +65065,7 @@
 	},
 	[318181048] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "没关系……我是该往前走了。",
 		id = 318181048
 	},
@@ -65143,7 +65143,7 @@
 	},
 	[318182005] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "得在大部队赶来前完成疏散，建好防御工事……至少又争取了一段时间。",
 		id = 318182005
 	},
@@ -65155,7 +65155,7 @@
 	},
 	[318182007] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "城里出事了？",
 		id = 318182007
 	},
@@ -65167,7 +65167,7 @@
 	},
 	[318182009] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "什么？！我不是在城里布置了人手吗？",
 		id = 318182009
 	},
@@ -65185,7 +65185,7 @@
 	},
 	[318182012] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "城里现在情况怎么样？在哪个位置？快带我们过去！",
 		id = 318182012
 	},
@@ -65197,7 +65197,7 @@
 	},
 	[318182014] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "全体鸦伏众，戴好护具，别吸入粉尘，向城内回援！",
 		id = 318182014
 	},
@@ -65221,7 +65221,7 @@
 	},
 	[318182018] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "那些禁军……就像是传染源一样……",
 		id = 318182018
 	},
@@ -65269,7 +65269,7 @@
 	},
 	[318182026] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "睁开眼睛看看！是谁在保护你们，谁在为你们流血！",
 		id = 318182026
 	},
@@ -65299,7 +65299,7 @@
 	},
 	[318182031] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "唉！",
 		id = 318182031
 	},
@@ -65311,7 +65311,7 @@
 	},
 	[318182033] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "有什么事？",
 		id = 318182033
 	},
@@ -65377,7 +65377,7 @@
 	},
 	[318191010] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我们……",
 		id = 318191010
 	},
@@ -65419,7 +65419,7 @@
 	},
 	[318191017] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "别担心，妈妈只是去梦里见天之子了……妈妈一定会回来的。",
 		id = 318191017
 	},
@@ -65431,13 +65431,13 @@
 	},
 	[318191019] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "……把这些人，还有城里的人，尽量叫出来。",
 		id = 318191019
 	},
 	[318191020] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "这群人不是最爱看热闹吗？告诉他们，鸦家叛党来了，那个最没用的鸦家家主，现在有话要跟他们说。",
 		id = 318191020
 	},
@@ -65455,13 +65455,13 @@
 	},
 	[318191023] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "鸦家祖训，历代家主以对抗恶神为己任……",
 		id = 318191023
 	},
 	[318191024] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我——不能再动摇了。",
 		id = 318191024
 	},
@@ -65479,7 +65479,7 @@
 	},
 	[318191027] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "……鸦越家不是什么大家族，我也不像伊鹤正芳那样经常抛头露面。你们有的人认识我，有的不认识——无所谓，至少今天认识了。",
 		id = 318191027
 	},
@@ -65497,19 +65497,19 @@
 	},
 	[318191030] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "你认识我，好，认识好啊。",
 		id = 318191030
 	},
 	[318191031] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "就怕有人不认识我，不知道笹波五家代表了什么，把我说的话当放屁！",
 		id = 318191031
 	},
 	[318191032] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "知道我是叛党，就给我记好了，现在天之子管不着我，我想做什么就做什么！",
 		id = 318191032
 	},
@@ -65521,7 +65521,7 @@
 	},
 	[318191034] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "那现在我问你们，你们知不知道我想做什么？",
 		id = 318191034
 	},
@@ -65533,7 +65533,7 @@
 	},
 	[318191036] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "说出来的，赏一千块！",
 		id = 318191036
 	},
@@ -65545,7 +65545,7 @@
 	},
 	[318191038] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "给钱。",
 		id = 318191038
 	},
@@ -65557,19 +65557,19 @@
 	},
 	[318191040] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我知道你们心里都在想什么，也知道你们为什么不肯走。",
 		id = 318191040
 	},
 	[318191041] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "什么叛党？什么忤逆？你们真的在乎这些东西？就算今天来的是伊鹤正芳，是天之子，不带着卫队，你们会听话？",
 		id = 318191041
 	},
 	[318191042] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "你，在这条街做了二十年的走私生意。\n你，上个月刚混成堂口的老大。\n你，爸妈在这里给你留了房子，养着你这个无业游民……",
 		id = 318191042
 	},
@@ -65581,43 +65581,43 @@
 	},
 	[318191044] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我当然懂！因为我鸦越千堂，也是这样的人！",
 		id = 318191044
 	},
 	[318191045] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "自私、短视、愚蠢，盯着眼前的一点蝇头小利，自以为能靠它做成什么大事，其实只是在安慰自己……",
 		id = 318191045
 	},
 	[318191046] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "但现在是考虑这些的时候吗？你们可以不信我。去看看鸦越家的老宅，变成什么样了？看看这些人，你们都认识的人，变成什么样了？",
 		id = 318191046
 	},
 	[318191047] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "你们可能不知道发生过什么。可能觉得日子过得好端端的，是我疯了。可能不知道我为什么敢在这里说，皇宫里的天之子，她就是个怪物。",
 		id = 318191047
 	},
 	[318191048] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "但那不重要。重要的是，以前的我也像现在的你们一样，不相信事情有多严重。",
 		id = 318191048
 	},
 	[318191049] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "直到我的母亲，我的妹妹，她们死在了这场阴谋里，我才明白过来，我，跟你们一样，都是知道痛了才会躲的蠢货！",
 		id = 318191049
 	},
 	[318191050] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我今天来下京，要做的就一件事。我不想再有人，跟我犯一样的错了！",
 		id = 318191050
 	},
@@ -65671,13 +65671,13 @@
 	},
 	[318191059] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我没事……是我给不了他们想要的，也强迫不了他们。",
 		id = 318191059
 	},
 	[318191060] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "收拾准备一下吧。",
 		id = 318191060
 	},
@@ -65689,13 +65689,13 @@
 	},
 	[318191062] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我是强迫不了他们，但我也不能放弃他们。愿意撤离的人给他们安排通往外海的行程，不愿意的便随了他们。",
 		id = 318191062
 	},
 	[318191063] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "禁军快要到城下了，准备迎敌。",
 		id = 318191063
 	},
@@ -65713,7 +65713,7 @@
 	},
 	[318191066] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "嗯，走吧。",
 		id = 318191066
 	},
@@ -65785,7 +65785,7 @@
 	},
 	[318192002] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "这些家伙……根本砍不完啊。",
 		id = 318192002
 	},
@@ -65797,13 +65797,13 @@
 	},
 	[318192004] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "不知道这些禁军踩过我的尸体的时候，里面的居民能不能多逃几个。",
 		id = 318192004
 	},
 	[318192005] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "刚刚那个小丫头……有没有人把她一起带走。",
 		id = 318192005
 	},
@@ -65815,7 +65815,7 @@
 	},
 	[318192007] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "再来！",
 		id = 318192007
 	},
@@ -65845,7 +65845,7 @@
 	},
 	[318192012] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "什么……？",
 		id = 318192012
 	},
@@ -65857,7 +65857,7 @@
 	},
 	[318192014] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "撤了……",
 		id = 318192014
 	},
@@ -65869,13 +65869,13 @@
 	},
 	[318192016] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "好、好，终于撤了。",
 		id = 318192016
 	},
 	[318192017] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "在这里拦住禁军，给后方争取时间！",
 		id = 318192017
 	},
@@ -66037,7 +66037,7 @@
 	},
 	[318201017] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "你……你不是个商人吗，你不是要跟货物待一起吗？怎么来城外了？",
 		id = 318201017
 	},
@@ -66049,7 +66049,7 @@
 	},
 	[318201019] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "你父亲也安顿好了？",
 		id = 318201019
 	},
@@ -66073,13 +66073,13 @@
 	},
 	[318201023] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "人类啊……",
 		id = 318201023
 	},
 	[318201024] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "快，分发护具，大家掩住口鼻，不要吸入粉尘。",
 		id = 318201024
 	},
@@ -66103,7 +66103,7 @@
 	},
 	[318201028] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "人类，从来都不弱小啊……",
 		id = 318201028
 	},
@@ -66115,7 +66115,7 @@
 	},
 	[318201030] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "你是说……退到城里去？",
 		id = 318201030
 	},
@@ -66127,7 +66127,7 @@
 	},
 	[318201032] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "打巷战？好主意……",
 		id = 318201032
 	},
@@ -66283,7 +66283,7 @@
 	},
 	[318202022] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "总算是结束了……我这也勉强算是对得起鸦家先祖了吧。",
 		id = 318202022
 	},
@@ -66307,19 +66307,19 @@
 	},
 	[318202026] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "你说秋鹿家主？是……她为下京区献身，击败鹿神，从最开始就没有动摇过，我确实比不上她。",
 		id = 318202026
 	},
 	[318202027] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "只是，我现在也不想跟谁比了，哪怕是历代家主里最差的那个。就像你说的，能对自己无愧，也就够了。",
 		id = 318202027
 	},
 	[318202028] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "怪侠阁下，是管理员邀请你来的？",
 		id = 318202028
 	},
@@ -66475,7 +66475,7 @@
 	},
 	[318202054] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "不知道千羽怎么样了。",
 		id = 318202054
 	},
@@ -70243,13 +70243,13 @@
 	},
 	[318281019] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "如果是以前的我，也许会相信你，但现在不一样了。",
 		id = 318281019
 	},
 	[318281020] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我们要的不是活命，而是不用再提心吊胆的生活，我们要的，是笹波人的笹波。",
 		id = 318281020
 	},
@@ -70261,7 +70261,7 @@
 	},
 	[318281022] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "五家……呵呵，哪里还有什么五家？！我可不会陪你继续欺世盗名！",
 		id = 318281022
 	},
@@ -71545,7 +71545,7 @@
 	},
 	[318292042] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "朗香，这次真的死了？",
 		id = 318292042
 	},
@@ -71563,13 +71563,13 @@
 	},
 	[318292045] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "我们战胜了伪神！",
 		id = 318292045
 	},
 	[318292046] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "笹波——是我们的笹波！",
 		id = 318292046
 	},
@@ -72361,7 +72361,7 @@
 	},
 	[318301084] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "毕竟是继任大家主的仪式……",
 		id = 318301084
 	},
@@ -72397,7 +72397,7 @@
 	},
 	[318301090] = {
 		speaker = "鸦越千堂",
-		prefab_name = "10130ui_story",
+		prefab_name = "10053ui_story",
 		content = "……我明白，非常感谢。",
 		id = 318301090
 	},
@@ -72691,7 +72691,7 @@
 	},
 	[910601003] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "「管理员的办公室，我每周都会打扫……不会放过任何灰尘的！」",
 		id = 910601003
 	},
@@ -72745,7 +72745,7 @@
 	},
 	[910601012] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "真的发生了很多事情呢……",
 		id = 910601012
 	},
@@ -72901,7 +72901,7 @@
 	},
 	[910601038] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我虽然不太会唱歌……但会尽力帮大家制作演出服的。",
 		id = 910601038
 	},
@@ -72967,7 +72967,7 @@
 	},
 	[910601049] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "但我们还是希望能继续陪伴在管理员身边。",
 		id = 910601049
 	},
@@ -73159,7 +73159,7 @@
 	},
 	[910601081] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "不要把管理员当成跑腿工具人呀……还有送礼物和打call什么的不应该是粉丝吗……？",
 		id = 910601081
 	},
@@ -73243,7 +73243,7 @@
 	},
 	[910601095] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员转移话题的能力真的很差呢……",
 		id = 910601095
 	},
@@ -73333,7 +73333,7 @@
 	},
 	[910601110] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我们的第一首歌……",
 		id = 910601110
 	},
@@ -73429,7 +73429,7 @@
 	},
 	[910601126] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "该说管理员是太迟钝了吗……",
 		id = 910601126
 	},
@@ -73543,7 +73543,7 @@
 	},
 	[910601145] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "啊……！薇儿姐姐好狡猾！",
 		id = 910601145
 	},
@@ -73555,7 +73555,7 @@
 	},
 	[910601147] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "对了管理员，其实冥王也……在心象房间问过我管理员去哪里了什么时候回来这样的问题。虽然当着管理员的面她一定不会承认……嘿嘿。",
 		id = 910601147
 	},
@@ -80383,7 +80383,7 @@
 	},
 	[411011003] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "还在写那些无聊的小故事？真的有人会看吗？",
 		id = 411011003
 	},
@@ -80395,7 +80395,7 @@
 	},
 	[411011005] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "一本能卖多少钱？",
 		id = 411011005
 	},
@@ -80419,13 +80419,13 @@
 	},
 	[411011009] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "拿我和「正常人」比，你没事吧？再怎么适应他们的生活，本质还是不一样的……",
 		id = 411011009
 	},
 	[411011010] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……啧，这儿的菜是黄金做的吗，这么贵？\n怎么不去你那个书店见面？",
 		id = 411011010
 	},
@@ -80449,7 +80449,7 @@
 	},
 	[411011014] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "这就是你说的，另一个「幽灵」？",
 		id = 411011014
 	},
@@ -80719,7 +80719,7 @@
 	},
 	[411011059] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "……真好啊，高雅的爱好。",
 		id = 411011059
 	},
@@ -80731,7 +80731,7 @@
 	},
 	[411011061] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "但我听说……你被科尔盖从小培养到大。",
 		id = 411011061
 	},
@@ -80743,7 +80743,7 @@
 	},
 	[411011063] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "别这么见外嘛。我只是有点好奇，因为在那个鬼地方长大的家伙，一般不会有什么「像个人」的爱好。",
 		id = 411011063
 	},
@@ -80755,7 +80755,7 @@
 	},
 	[411011065] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "呵呵，作家要开始讲故事了。",
 		id = 411011065
 	},
@@ -88735,13 +88735,13 @@
 	},
 	[319031010] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "诶？可是看见了却不打招呼不是很不礼貌吗？",
 		id = 319031010
 	},
 	[319031011] = {
 		speaker = "洛肯",
-		prefab_name = "404001ui_story",
+		prefab_name = "4040ui_story",
 		content = "组长要是觉得麻烦的话，在旁边看着就行。对付这些家伙，我一个人就够了。",
 		id = 319031011
 	},

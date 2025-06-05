@@ -230,17 +230,16 @@ end
 
 local function var_0_1(arg_14_0, arg_14_1)
 	local var_14_0 = HomeSceneSettingCfg[arg_14_0]
-	local var_14_1 = arg_14_1 or PlayerData:GetPosterGirlHeroSkinId()
-	local var_14_2 = SkinSceneActionCfg[var_14_1]
+	local var_14_1 = SkinSceneActionCfg[arg_14_1]
 
-	if var_14_2 and (arg_14_0 == var_14_2.special_scene_id or arg_14_0 == var_14_2.special_scene_id_2) and not string.isNullOrEmpty(var_14_0.prefix_dlc) then
+	if var_14_1 and (arg_14_0 == var_14_1.special_scene_id or arg_14_0 == var_14_1.special_scene_id_2) and not string.isNullOrEmpty(var_14_0.prefix_dlc) then
 		return var_14_0.prefix_dlc
 	end
 
 	return var_14_0.prefix
 end
 
-function var_0_0.GetHomeShouldLoadSceneName(arg_15_0, arg_15_1)
+function var_0_0.GetHomeShouldLoadSceneName(arg_15_0, arg_15_1, arg_15_2)
 	local var_15_0 = arg_15_1 or HomeSceneSettingData:GetCurScene()
 	local var_15_1 = HomeSceneSettingCfg[var_15_0]
 
@@ -271,7 +270,10 @@ function var_0_0.GetHomeShouldLoadSceneName(arg_15_0, arg_15_1)
 		end
 	end
 
-	return var_0_1(var_15_4) .. var_15_6 .. var_15_7 .. var_15_8
+	local var_15_10
+	local var_15_11 = (not arg_15_2 or nil) and PlayerData:GetPosterGirlHeroSkinId()
+
+	return var_0_1(var_15_4, var_15_11) .. var_15_6 .. var_15_7 .. var_15_8
 end
 
 function var_0_0.GetTimeSceneID(arg_16_0, arg_16_1)

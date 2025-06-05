@@ -4757,6 +4757,84 @@
 			0
 		}
 	},
+	[4051045] = {
+		monster_level = 80,
+		name = "赤音·亚莉莎",
+		drop_lib_id = 0,
+		map = "4051045",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "亚莉莎·阿米耶拉",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 4051045,
+		attribute_factor = {
+			1000,
+			1000,
+			5000
+		},
+		hero_list = {
+			{
+				1045,
+				104503
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
+	[4051046] = {
+		monster_level = 80,
+		name = "血弹·雪儿",
+		drop_lib_id = 0,
+		map = "4051046",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "雪儿·阿朗松",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 4051046,
+		attribute_factor = {
+			1000,
+			1000,
+			5000
+		},
+		hero_list = {
+			{
+				1046,
+				104603
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
 	[4051048] = {
 		monster_level = 80,
 		name = "彗光·前鬼坊天狗",
@@ -6752,6 +6830,8 @@
 		4051039,
 		4051041,
 		4051042,
+		4051045,
+		4051046,
 		4051048,
 		4051049,
 		4051050,

@@ -238,7 +238,11 @@ function var_0_0.IsGoodUnlock(arg_13_0)
 				if HeroData:GetHeroList()[var_13_2].unlock ~= 1 then
 					return 0
 				end
-			elseif var_13_1 == 5 and var_13_2 > AdminCatExploreData:GetDataByPara("level") then
+			elseif var_13_1 == 5 then
+				if var_13_2 > AdminCatExploreData:GetDataByPara("level") then
+					return 0
+				end
+			elseif var_13_1 == 7 and var_13_2 > GodEaterData.hubLv then
 				return 0
 			end
 		end

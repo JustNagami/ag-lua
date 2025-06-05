@@ -1033,6 +1033,40 @@
 		name = "1075_shuihua",
 		next_action = {}
 	},
+	[95003201] = {
+		id = 95003201,
+		name = "fx_HZ05_zhuanshu_yalisha",
+		next_action = {}
+	},
+	[95003301] = {
+		id = 95003301,
+		name = "fx_HZ05_9046_xueer_stand",
+		next_action = {
+			{
+				95003302,
+				0
+			},
+			{
+				95003303,
+				0
+			}
+		}
+	},
+	[95003302] = {
+		id = 95003302,
+		name = "fx_HZ05_9046_xueer_result1",
+		next_action = {
+			{
+				95003301,
+				0
+			}
+		}
+	},
+	[95003303] = {
+		id = 95003303,
+		name = "fx_HZ05_9046_xueer_result2",
+		next_action = {}
+	},
 	[95003601] = {
 		id = 95003601,
 		name = "fx_9049_yixienamei1",
@@ -1041,6 +1075,11 @@
 	[95003501] = {
 		id = 95003501,
 		name = "HZ05_zhuanshu_fantian1",
+		next_action = {}
+	},
+	[95003401] = {
+		id = 95003401,
+		name = "HZ05_zhuanshu_haimudaer1_jingzi",
 		next_action = {}
 	},
 	[20100101] = {
@@ -1731,8 +1770,13 @@
 		11500101,
 		11330101,
 		10750101,
+		95003201,
+		95003301,
+		95003302,
+		95003303,
 		95003601,
 		95003501,
+		95003401,
 		20100101,
 		20100102,
 		20100103,

@@ -80,6 +80,9 @@ function var_0_0.OnUnSelect(arg_8_0)
 end
 
 function var_0_0.Refresh(arg_9_0)
+	arg_9_0.status_morning = DailyFatigueData:GetStatus(arg_9_0.hour_a)
+	arg_9_0.status_afternoon = DailyFatigueData:GetStatus(arg_9_0.hour_b)
+
 	arg_9_0.CtrlMorning:SetSelectedIndex(arg_9_0.status_morning - 1)
 	arg_9_0.CtrlAfternoon:SetSelectedIndex(arg_9_0.status_afternoon - 1)
 

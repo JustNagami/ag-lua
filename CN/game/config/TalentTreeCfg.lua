@@ -7588,7 +7588,229 @@
 		cost = {},
 		formula_condition = {}
 	},
+	[18101] = {
+		affix_user = 3,
+		name = "重火咆哮",
+		type = 2,
+		max_level = 1,
+		affix_id = 18101,
+		desc = "火属性伤害提高20%",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18101,
+		stage = 1,
+		unlock_condition = {},
+		cost = {},
+		formula_condition = {}
+	},
+	[18102] = {
+		affix_user = 3,
+		name = "神谕增幅",
+		type = 2,
+		max_level = 1,
+		affix_id = 18102,
+		desc = "神能获得率提高100%",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18102,
+		stage = 1,
+		unlock_condition = {
+			1210301
+		},
+		cost = {},
+		formula_condition = {}
+	},
+	[18103] = {
+		affix_user = 3,
+		name = "受选者",
+		type = 2,
+		max_level = 1,
+		affix_id = 18103,
+		desc = "每次施放「IE刃炮连爆」时，获得10点「爆发指数」",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18103,
+		stage = 1,
+		unlock_condition = {
+			1210302
+		},
+		cost = {},
+		formula_condition = {}
+	},
+	[18104] = {
+		affix_user = 3,
+		name = "闪避反击",
+		type = 2,
+		max_level = 1,
+		affix_id = 18104,
+		desc = "成功触发「归零架势」或非移动闪避的格挡效果时，会自动触发反击并重置所有技能的剩余冷却时间",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18104,
+		stage = 1,
+		unlock_condition = {},
+		cost = {},
+		formula_condition = {}
+	},
+	[18105] = {
+		affix_user = 3,
+		name = "坚韧之心",
+		type = 2,
+		max_level = 1,
+		affix_id = 18105,
+		desc = "「斩击模式」的普通攻击仅保留后三段，施放空中技能和下落攻击时，会触发额外攻击",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18105,
+		stage = 1,
+		unlock_condition = {
+			1210301
+		},
+		cost = {},
+		formula_condition = {}
+	},
+	[18106] = {
+		affix_user = 3,
+		name = "战术收割",
+		type = 2,
+		max_level = 1,
+		affix_id = 18106,
+		desc = "施放「归零架势」时，获得霸体效果，持续5秒；「IE刃炮连爆」、「IE炼狱劫火」有2条额外攻击弹道",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18106,
+		stage = 1,
+		unlock_condition = {
+			1210302
+		},
+		cost = {},
+		formula_condition = {}
+	},
+	[18201] = {
+		affix_user = 3,
+		name = "冰华共鸣",
+		type = 2,
+		max_level = 1,
+		affix_id = 18201,
+		desc = "冰属性伤害提高20%",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18201,
+		stage = 1,
+		unlock_condition = {},
+		cost = {},
+		formula_condition = {}
+	},
+	[18202] = {
+		affix_user = 3,
+		name = "神谕祝福",
+		type = 2,
+		max_level = 1,
+		affix_id = 18202,
+		desc = "每8秒自动获得1个「血点」标记",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18202,
+		stage = 1,
+		unlock_condition = {
+			1210301
+		},
+		cost = {},
+		formula_condition = {}
+	},
+	[18203] = {
+		affix_user = 3,
+		name = "重火力",
+		type = 2,
+		max_level = 1,
+		affix_id = 18203,
+		desc = "施放任意下落攻击时，伤害提高1000%，持续2秒",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18203,
+		stage = 1,
+		unlock_condition = {
+			1210302
+		},
+		cost = {},
+		formula_condition = {}
+	},
+	[18204] = {
+		affix_user = 3,
+		name = "全力攻击",
+		type = 2,
+		max_level = 1,
+		affix_id = 18204,
+		desc = "非「枪械模式」施放普通攻击和技能时，触发额外攻击",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18204,
+		stage = 1,
+		unlock_condition = {},
+		cost = {},
+		formula_condition = {}
+	},
+	[18205] = {
+		affix_user = 3,
+		name = "复仇捕食",
+		type = 2,
+		max_level = 1,
+		affix_id = 18205,
+		desc = "「血怒吞噬」会触发额外攻击，施放时会持续聚集周围的敌人并获得等同于自身生命值上限300%的护盾",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18205,
+		stage = 1,
+		unlock_condition = {
+			1210301
+		},
+		cost = {},
+		formula_condition = {}
+	},
+	[18206] = {
+		affix_user = 3,
+		name = "灵活调度",
+		type = 2,
+		max_level = 1,
+		affix_id = 18206,
+		desc = "施放「血之迅击」跃向空中后，若施放的下落攻击和前一个不同，则重置所有技能的剩余冷却时间",
+		race = 0,
+		activity_id = 343751,
+		index = 0,
+		id = 18206,
+		stage = 1,
+		unlock_condition = {
+			1210302
+		},
+		cost = {},
+		formula_condition = {}
+	},
 	get_id_list_by_activity_id = {
+		[343751] = {
+			18101,
+			18102,
+			18103,
+			18104,
+			18105,
+			18106,
+			18201,
+			18202,
+			18203,
+			18204,
+			18205,
+			18206
+		},
 		[313425] = {
 			17201,
 			17202,
@@ -8266,6 +8488,18 @@
 		17251,
 		17252,
 		17253,
-		17254
+		17254,
+		18101,
+		18102,
+		18103,
+		18104,
+		18105,
+		18106,
+		18201,
+		18202,
+		18203,
+		18204,
+		18205,
+		18206
 	}
 }

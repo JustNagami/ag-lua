@@ -27879,7 +27879,1124 @@
 		activity_template = 225,
 		sub_activity_list = {}
 	},
+	[340001] = {
+		id = 340001,
+		name = "4.2噬神者联动主活动",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		remark = "荒原的防卫战",
+		activity_theme = 34,
+		activity_template = 367,
+		sub_activity_list = {
+			343691,
+			343731,
+			343751,
+			343821
+		},
+		reward_show = {
+			1,
+			8010,
+			9007,
+			3049,
+			40603,
+			1046,
+			40701,
+			41401,
+			41303,
+			950033
+		}
+	},
+	[343691] = {
+		id = 343691,
+		name = "4.2黄金矿工主活动",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "荒野裂谷的捕食者",
+		activity_theme = 34,
+		activity_template = 369,
+		sub_activity_list = {
+			343701,
+			343702,
+			343703,
+			343704,
+			343705,
+			343706,
+			343707,
+			343708
+		}
+	},
+	[343701] = {
+		id = 343701,
+		name = "4.2黄金矿工关卡子活动1",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "荒野裂谷的捕食者关卡1",
+		activity_theme = 34,
+		activity_template = 370,
+		sub_activity_list = {}
+	},
+	[343702] = {
+		id = 343702,
+		name = "4.2黄金矿工关卡子活动2",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "荒野裂谷的捕食者关卡2",
+		activity_theme = 34,
+		activity_template = 370,
+		sub_activity_list = {}
+	},
+	[343703] = {
+		id = 343703,
+		name = "4.2黄金矿工关卡子活动3",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "荒野裂谷的捕食者关卡3",
+		activity_theme = 34,
+		activity_template = 370,
+		sub_activity_list = {}
+	},
+	[343704] = {
+		id = 343704,
+		name = "4.2黄金矿工关卡子活动4",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "荒野裂谷的捕食者关卡4",
+		activity_theme = 34,
+		activity_template = 370,
+		sub_activity_list = {}
+	},
+	[343705] = {
+		id = 343705,
+		name = "4.2黄金矿工关卡子活动5",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "荒野裂谷的捕食者关卡5",
+		activity_theme = 34,
+		activity_template = 370,
+		sub_activity_list = {}
+	},
+	[343706] = {
+		id = 343706,
+		name = "4.2黄金矿工关卡子活动6",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "荒野裂谷的捕食者关卡6",
+		activity_theme = 34,
+		activity_template = 370,
+		sub_activity_list = {}
+	},
+	[343707] = {
+		id = 343707,
+		name = "4.2黄金矿工关卡子活动7",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "荒野裂谷的捕食者关卡7",
+		activity_theme = 34,
+		activity_template = 370,
+		sub_activity_list = {}
+	},
+	[343708] = {
+		id = 343708,
+		name = "4.2黄金矿工关卡子活动8",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "荒野裂谷的捕食者关卡8",
+		activity_theme = 34,
+		activity_template = 370,
+		sub_activity_list = {}
+	},
+	[343731] = {
+		id = 343731,
+		name = "4.2方寸文明主活动",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "来自未知的阴霾",
+		activity_theme = 34,
+		activity_template = 373,
+		sub_activity_list = {
+			343741
+		}
+	},
+	[343741] = {
+		id = 343741,
+		name = "4.2方寸文明关卡子活动1",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "来自未知的阴霾-关卡",
+		activity_theme = 34,
+		activity_template = 374,
+		sub_activity_list = {}
+	},
+	[343751] = {
+		id = 343751,
+		name = "4.2周boss主活动",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "骤然涌现的骚动",
+		activity_theme = 34,
+		activity_template = 375,
+		sub_activity_list = {
+			343761,
+			343762,
+			343721,
+			343722,
+			343723,
+			343724
+		}
+	},
+	[343761] = {
+		id = 343761,
+		name = "4.2周boss关卡子活动1",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "骤然涌现的骚动亚莉莎",
+		activity_theme = 34,
+		activity_template = 376,
+		sub_activity_list = {}
+	},
+	[343762] = {
+		id = 343762,
+		name = "4.2周boss关卡子活动2",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "骤然涌现的骚动雪儿",
+		activity_theme = 34,
+		activity_template = 376,
+		sub_activity_list = {}
+	},
+	[343721] = {
+		id = 343721,
+		name = "4.2每日小怪关卡子活动1",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "骤然涌现的骚动普通关1",
+		activity_theme = 34,
+		activity_template = 372,
+		sub_activity_list = {}
+	},
+	[343722] = {
+		id = 343722,
+		name = "4.2每日小怪关卡子活动2",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "骤然涌现的骚动普通关2",
+		activity_theme = 34,
+		activity_template = 372,
+		sub_activity_list = {}
+	},
+	[343723] = {
+		id = 343723,
+		name = "4.2每日小怪关卡子活动3",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "骤然涌现的骚动普通关3",
+		activity_theme = 34,
+		activity_template = 372,
+		sub_activity_list = {}
+	},
+	[343724] = {
+		id = 343724,
+		name = "4.2每日小怪关卡子活动4",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "骤然涌现的骚动普通关4",
+		activity_theme = 34,
+		activity_template = 372,
+		sub_activity_list = {}
+	},
+	[341001] = {
+		id = 341001,
+		name = "4.2版本活动入口",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2版本活动入口",
+		activity_theme = 34,
+		activity_template = 100,
+		sub_activity_list = {
+			340001,
+			342431,
+			341021,
+			342131,
+			342132,
+			341891,
+			343501,
+			341311,
+			341071,
+			343821,
+			342981
+		}
+	},
+	[343821] = {
+		id = 343821,
+		name = "登录送雪儿入口",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "在此倾听",
+		activity_theme = 34,
+		activity_template = 382,
+		sub_activity_list = {}
+	},
+	[340031] = {
+		id = 340031,
+		name = "4.2联动限定钥从探测",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "特殊协作者探测",
+		activity_theme = 34,
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[342431] = {
+		id = 342431,
+		name = "困兽行动",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "困兽行动",
+		activity_theme = 34,
+		activity_template = 243,
+		sub_activity_list = {
+			341461,
+			342441,
+			340041
+		}
+	},
+	[341461] = {
+		id = 341461,
+		name = "隐科组研究室",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "隐科组研究室",
+		activity_theme = 34,
+		activity_template = 146,
+		sub_activity_list = {}
+	},
+	[342441] = {
+		id = 342441,
+		name = "困兽行动-关卡",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "困兽行动-关卡",
+		activity_theme = 34,
+		activity_template = 244,
+		sub_activity_list = {}
+	},
+	[340041] = {
+		id = 340041,
+		name = "困兽行动-任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "困兽行动-任务",
+		activity_theme = 34,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[341021] = {
+		id = 341021,
+		name = "神谕绝响",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "神谕绝响",
+		activity_theme = 34,
+		activity_template = 170,
+		sub_activity_list = {}
+	},
+	[341891] = {
+		id = 341891,
+		name = "限期委培",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "限期委培",
+		activity_theme = 34,
+		activity_template = 189,
+		sub_activity_list = {}
+	},
+	[343501] = {
+		id = 343501,
+		name = "古远虚影",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		remark = "古远虚影",
+		activity_theme = 34,
+		activity_template = 350,
+		sub_activity_list = {},
+		reward_show = {
+			1,
+			40104,
+			40603,
+			22003,
+			2
+		}
+	},
+	[340011] = {
+		id = 340011,
+		name = "限时签到",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "限时签到",
+		activity_theme = 34,
+		activity_template = 1,
+		sub_activity_list = {}
+	},
+	[340032] = {
+		id = 340032,
+		name = "4.2版本-亚莉莎精准池",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2版本-亚莉莎精准池",
+		activity_theme = 34,
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[340033] = {
+		id = 340033,
+		name = "4.2版本-亚莉莎必中池",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2版本-亚莉莎必中池",
+		activity_theme = 34,
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[340034] = {
+		id = 340034,
+		name = "4.2版本-雪儿精准池",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2版本-雪儿精准池",
+		activity_theme = 34,
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[340035] = {
+		id = 340035,
+		name = "4.2版本-雪儿必中池",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2版本-雪儿必中池",
+		activity_theme = 34,
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[340036] = {
+		id = 340036,
+		name = "4.2版本-神威精准池",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2版本-神威精准池",
+		activity_theme = 34,
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[340037] = {
+		id = 340037,
+		name = "4.2版本-黄泉镜花精准池",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2版本-黄泉镜花精准池",
+		activity_theme = 34,
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[340038] = {
+		id = 340038,
+		name = "4.2版本-托尔/奥西里斯/禄良常驻池",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2版本-托尔/奥西里斯/禄良常驻池",
+		activity_theme = 34,
+		activity_template = 3,
+		sub_activity_list = {}
+	},
+	[342101] = {
+		id = 342101,
+		name = "4.2支线拍脸图",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2支线拍脸图",
+		activity_theme = 34,
+		activity_template = 210,
+		sub_activity_list = {}
+	},
+	[342102] = {
+		id = 342102,
+		name = "4.2皮肤拍脸图",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2皮肤拍脸图",
+		activity_theme = 34,
+		activity_template = 210,
+		sub_activity_list = {}
+	},
+	[341311] = {
+		id = 341311,
+		name = "换装试用",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "换装试用",
+		activity_theme = 34,
+		activity_template = 131,
+		sub_activity_list = {
+			341111,
+			341112
+		}
+	},
+	[341111] = {
+		id = 341111,
+		name = "换装试用关1",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "换装试用关1",
+		activity_theme = 34,
+		activity_template = 111,
+		sub_activity_list = {}
+	},
+	[341112] = {
+		id = 341112,
+		name = "换装试用关2",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "换装试用关2",
+		activity_theme = 34,
+		activity_template = 111,
+		sub_activity_list = {}
+	},
+	[341071] = {
+		id = 341071,
+		name = "角色试用",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色试用",
+		activity_theme = 34,
+		activity_template = 107,
+		sub_activity_list = {
+			343221,
+			343222,
+			343223,
+			343224,
+			343225,
+			343226,
+			343227
+		}
+	},
+	[343221] = {
+		id = 343221,
+		name = "角色试用关赤音·亚莉莎",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色试用关",
+		activity_theme = 34,
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[343222] = {
+		id = 343222,
+		name = "角色试用关血弹·雪儿",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色试用关",
+		activity_theme = 34,
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[343223] = {
+		id = 343223,
+		name = "角色试用关镜花黄泉·伊邪那美",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色试用关",
+		activity_theme = 34,
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[343224] = {
+		id = 343224,
+		name = "角色试用关神威·前鬼坊天狗",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色试用关",
+		activity_theme = 34,
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[343225] = {
+		id = 343225,
+		name = "角色试用关轰雷·托尔",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色试用关",
+		activity_theme = 34,
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[343226] = {
+		id = 343226,
+		name = "角色试用关生魂·奥西里斯",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色试用关",
+		activity_theme = 34,
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[343227] = {
+		id = 343227,
+		name = "角色试用关百解·禄良",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色试用关",
+		activity_theme = 34,
+		activity_template = 322,
+		sub_activity_list = {}
+	},
+	[342981] = {
+		id = 342981,
+		name = "海岸风味-4.3夏活泳装预热",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		remark = "海岸风味",
+		activity_theme = 34,
+		activity_template = 298,
+		sub_activity_list = {
+			3431601,
+			3431602,
+			3431603,
+			3431604,
+			3431605,
+			3431606
+		},
+		reward_show = {
+			1,
+			40103,
+			40203,
+			40803,
+			40701,
+			40503,
+			40603,
+			2
+		}
+	},
+	[3431601] = {
+		id = 3431601,
+		name = "海岸风味-关卡1",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "海岸风味-关卡1",
+		activity_theme = 34,
+		activity_template = 316,
+		sub_activity_list = {}
+	},
+	[3431602] = {
+		id = 3431602,
+		name = "海岸风味-关卡2",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "海岸风味-关卡2",
+		activity_theme = 34,
+		activity_template = 316,
+		sub_activity_list = {}
+	},
+	[3431603] = {
+		id = 3431603,
+		name = "海岸风味-关卡3",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "海岸风味-关卡3",
+		activity_theme = 34,
+		activity_template = 316,
+		sub_activity_list = {}
+	},
+	[3431604] = {
+		id = 3431604,
+		name = "海岸风味-关卡4",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "海岸风味-关卡4",
+		activity_theme = 34,
+		activity_template = 316,
+		sub_activity_list = {}
+	},
+	[3431605] = {
+		id = 3431605,
+		name = "海岸风味-关卡5",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "海岸风味-关卡5",
+		activity_theme = 34,
+		activity_template = 316,
+		sub_activity_list = {}
+	},
+	[3431606] = {
+		id = 3431606,
+		name = "海岸风味-关卡6",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "海岸风味-关卡6",
+		activity_theme = 34,
+		activity_template = 316,
+		sub_activity_list = {}
+	},
+	[343891] = {
+		id = 343891,
+		name = "抽卡返还活动",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "抽卡返还活动",
+		activity_theme = 34,
+		activity_template = 389,
+		sub_activity_list = {}
+	},
+	[342131] = {
+		id = 342131,
+		name = "角色宣传页（亚莉莎）",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色宣传页（亚莉莎）",
+		activity_theme = 34,
+		activity_template = 213,
+		sub_activity_list = {}
+	},
+	[342132] = {
+		id = 342132,
+		name = "角色宣传页（雪儿）",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "角色宣传页（雪儿）",
+		activity_theme = 34,
+		activity_template = 213,
+		sub_activity_list = {}
+	},
+	[340042] = {
+		id = 340042,
+		name = "通行证任务常规",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "联动通行证（23期）任务常规",
+		activity_theme = 34,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[340043] = {
+		id = 340043,
+		name = "通行证任务挑战1",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "联动通行证（23期）任务挑战1",
+		activity_theme = 34,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[340044] = {
+		id = 340044,
+		name = "通行证任务挑战2",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "联动通行证（23期）任务挑战2",
+		activity_theme = 34,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[340045] = {
+		id = 340045,
+		name = "通行证任务挑战3",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "联动通行证（23期）任务挑战3",
+		activity_theme = 34,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[340046] = {
+		id = 340046,
+		name = "通行证任务挑战4",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "联动通行证（23期）任务挑战4",
+		activity_theme = 34,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[341161] = {
+		id = 341161,
+		name = "试用角色1",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "试用角色1",
+		activity_theme = 34,
+		activity_template = 116,
+		sub_activity_list = {}
+	},
+	[344011] = {
+		id = 344011,
+		name = "抽角色送角色",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "抽角色送角色",
+		activity_theme = 34,
+		activity_template = 401,
+		sub_activity_list = {}
+	},
+	[340047] = {
+		id = 340047,
+		name = "抽角色送角色任务",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "抽角色送角色任务",
+		activity_theme = 34,
+		activity_template = 4,
+		sub_activity_list = {}
+	},
+	[342241] = {
+		id = 342241,
+		name = "4.2-先遣服挑战（赤音·亚莉莎）-第一期",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（赤音·亚莉莎）-第一期",
+		activity_theme = 0,
+		activity_template = 224,
+		sub_activity_list = {
+			342251
+		}
+	},
+	[342242] = {
+		id = 342242,
+		name = "4.2-先遣服挑战（赤音·亚莉莎）-第二期",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（赤音·亚莉莎）-第二期",
+		activity_theme = 0,
+		activity_template = 224,
+		sub_activity_list = {
+			342252
+		}
+	},
+	[342243] = {
+		id = 342243,
+		name = "4.2-先遣服挑战（赤音·亚莉莎）-第三期",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（赤音·亚莉莎）-第三期",
+		activity_theme = 0,
+		activity_template = 224,
+		sub_activity_list = {
+			342253
+		}
+	},
+	[342244] = {
+		id = 342244,
+		name = "4.2-先遣服挑战（血弹·雪儿）-第一期",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（血弹·雪儿）-第一期",
+		activity_theme = 0,
+		activity_template = 224,
+		sub_activity_list = {
+			342254
+		}
+	},
+	[342245] = {
+		id = 342245,
+		name = "4.2-先遣服挑战（血弹·雪儿）-第二期",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（血弹·雪儿）-第二期",
+		activity_theme = 0,
+		activity_template = 224,
+		sub_activity_list = {
+			342255
+		}
+	},
+	[342246] = {
+		id = 342246,
+		name = "4.2-先遣服挑战（血弹·雪儿）-第三期",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（血弹·雪儿）-第三期",
+		activity_theme = 0,
+		activity_template = 224,
+		sub_activity_list = {
+			342256
+		}
+	},
+	[342247] = {
+		id = 342247,
+		name = "4.2-先遣服挑战（赤音·亚莉莎&血弹·雪儿）-第一期",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（赤音·亚莉莎&血弹·雪儿）-第一期",
+		activity_theme = 0,
+		activity_template = 224,
+		sub_activity_list = {
+			342257
+		}
+	},
+	[342248] = {
+		id = 342248,
+		name = "4.2-先遣服挑战（赤音·亚莉莎&血弹·雪儿）-第二期",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（赤音·亚莉莎&血弹·雪儿）-第二期",
+		activity_theme = 0,
+		activity_template = 224,
+		sub_activity_list = {
+			342258
+		}
+	},
+	[342249] = {
+		id = 342249,
+		name = "4.2-先遣服挑战（赤音·亚莉莎&血弹·雪儿）-第三期",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（赤音·亚莉莎&血弹·雪儿）-第三期",
+		activity_theme = 0,
+		activity_template = 224,
+		sub_activity_list = {
+			342259
+		}
+	},
+	[342251] = {
+		id = 342251,
+		name = "4.2-先遣服挑战（赤音·亚莉莎）-排行榜1",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（赤音·亚莉莎）-排行榜1",
+		activity_theme = 0,
+		activity_template = 225,
+		sub_activity_list = {}
+	},
+	[342252] = {
+		id = 342252,
+		name = "4.2-先遣服挑战（赤音·亚莉莎）-排行榜2",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（赤音·亚莉莎）-排行榜2",
+		activity_theme = 0,
+		activity_template = 225,
+		sub_activity_list = {}
+	},
+	[342253] = {
+		id = 342253,
+		name = "4.2-先遣服挑战（赤音·亚莉莎）-排行榜3",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（赤音·亚莉莎）-排行榜3",
+		activity_theme = 0,
+		activity_template = 225,
+		sub_activity_list = {}
+	},
+	[342254] = {
+		id = 342254,
+		name = "4.2-先遣服挑战（血弹·雪儿）-排行榜1",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（血弹·雪儿）-排行榜1",
+		activity_theme = 0,
+		activity_template = 225,
+		sub_activity_list = {}
+	},
+	[342255] = {
+		id = 342255,
+		name = "4.2-先遣服挑战（血弹·雪儿）-排行榜2",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（血弹·雪儿）-排行榜2",
+		activity_theme = 0,
+		activity_template = 225,
+		sub_activity_list = {}
+	},
+	[342256] = {
+		id = 342256,
+		name = "4.2-先遣服挑战（血弹·雪儿）-排行榜3",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（血弹·雪儿）-排行榜3",
+		activity_theme = 0,
+		activity_template = 225,
+		sub_activity_list = {}
+	},
+	[342257] = {
+		id = 342257,
+		name = "4.2-先遣服挑战（赤音·亚莉莎&血弹·雪儿）-排行榜1",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（赤音·亚莉莎&血弹·雪儿）-排行榜1",
+		activity_theme = 0,
+		activity_template = 225,
+		sub_activity_list = {}
+	},
+	[342258] = {
+		id = 342258,
+		name = "4.2-先遣服挑战（赤音·亚莉莎&血弹·雪儿）-排行榜2",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（赤音·亚莉莎&血弹·雪儿）-排行榜2",
+		activity_theme = 0,
+		activity_template = 225,
+		sub_activity_list = {}
+	},
+	[342259] = {
+		id = 342259,
+		name = "4.2-先遣服挑战（赤音·亚莉莎&血弹·雪儿）-排行榜3",
+		reward_show_permanent = "",
+		unlock_condition = "",
+		reward_show = "",
+		remark = "4.2-先遣服挑战（赤音·亚莉莎&血弹·雪儿）-排行榜3",
+		activity_theme = 0,
+		activity_template = 225,
+		sub_activity_list = {}
+	},
 	get_id_list_by_activity_theme = {
+		[34] = {
+			340001,
+			343691,
+			343701,
+			343702,
+			343703,
+			343704,
+			343705,
+			343706,
+			343707,
+			343708,
+			343731,
+			343741,
+			343751,
+			343761,
+			343762,
+			343721,
+			343722,
+			343723,
+			343724,
+			341001,
+			343821,
+			340031,
+			342431,
+			341461,
+			342441,
+			340041,
+			341021,
+			341891,
+			343501,
+			340011,
+			340032,
+			340033,
+			340034,
+			340035,
+			340036,
+			340037,
+			340038,
+			342101,
+			342102,
+			341311,
+			341111,
+			341112,
+			341071,
+			343221,
+			343222,
+			343223,
+			343224,
+			343225,
+			343226,
+			343227,
+			342981,
+			3431601,
+			3431602,
+			3431603,
+			3431604,
+			3431605,
+			3431606,
+			343891,
+			342131,
+			342132,
+			340042,
+			340043,
+			340044,
+			340045,
+			340046,
+			341161,
+			344011,
+			340047
+		},
 		[33] = {
 			331001,
 			331201,
@@ -30228,10 +31345,72 @@
 			332243,
 			332251,
 			332252,
-			332253
+			332253,
+			342241,
+			342242,
+			342243,
+			342244,
+			342245,
+			342246,
+			342247,
+			342248,
+			342249,
+			342251,
+			342252,
+			342253,
+			342254,
+			342255,
+			342256,
+			342257,
+			342258,
+			342259
 		}
 	},
 	get_id_list_by_activity_template = {
+		[401] = {
+			344011
+		},
+		[389] = {
+			343891
+		},
+		[382] = {
+			343821
+		},
+		[372] = {
+			343721,
+			343722,
+			343723,
+			343724
+		},
+		[376] = {
+			343761,
+			343762
+		},
+		[375] = {
+			343751
+		},
+		[374] = {
+			343741
+		},
+		[373] = {
+			343731
+		},
+		[370] = {
+			343701,
+			343702,
+			343703,
+			343704,
+			343705,
+			343706,
+			343707,
+			343708
+		},
+		[369] = {
+			343691
+		},
+		[367] = {
+			340001
+		},
 		[388] = {
 			333881
 		},
@@ -30355,7 +31534,8 @@
 			313501,
 			313502,
 			323501,
-			333501
+			333501,
+			343501
 		},
 		[347] = {
 			293471,
@@ -30533,10 +31713,17 @@
 			2831603,
 			2831604,
 			2831605,
-			2831606
+			2831606,
+			3431601,
+			3431602,
+			3431603,
+			3431604,
+			3431605,
+			3431606
 		},
 		[298] = {
-			282981
+			282981,
+			342981
 		},
 		[313] = {
 			283130,
@@ -30625,7 +31812,14 @@
 			333223,
 			333224,
 			333225,
-			333226
+			333226,
+			343221,
+			343222,
+			343223,
+			343224,
+			343225,
+			343226,
+			343227
 		},
 		[294] = {
 			262941
@@ -30887,7 +32081,8 @@
 			312441,
 			312442,
 			322441,
-			332441
+			332441,
+			342441
 		},
 		[243] = {
 			202432,
@@ -30908,7 +32103,8 @@
 			312431,
 			312432,
 			322431,
-			332431
+			332431,
+			342431
 		},
 		[230] = {
 			192301,
@@ -31051,7 +32247,16 @@
 			3222510,
 			332251,
 			332252,
-			332253
+			332253,
+			342251,
+			342252,
+			342253,
+			342254,
+			342255,
+			342256,
+			342257,
+			342258,
+			342259
 		},
 		[224] = {
 			182241,
@@ -31126,7 +32331,16 @@
 			3222410,
 			332241,
 			332242,
-			332243
+			332243,
+			342241,
+			342242,
+			342243,
+			342244,
+			342245,
+			342246,
+			342247,
+			342248,
+			342249
 		},
 		[231] = {
 			182311
@@ -31226,7 +32440,9 @@
 			312132,
 			322121,
 			322122,
-			332131
+			332131,
+			342131,
+			342132
 		},
 		[212] = {
 			172121,
@@ -31395,7 +32611,8 @@
 			311891,
 			311892,
 			321891,
-			331891
+			331891,
+			341891
 		},
 		[187] = {
 			131871,
@@ -31672,7 +32889,8 @@
 			301701,
 			301702,
 			311701,
-			311702
+			311702,
+			341021
 		},
 		[156] = {
 			91561
@@ -31780,7 +32998,9 @@
 			312103,
 			332101,
 			332102,
-			332103
+			332103,
+			342101,
+			342102
 		},
 		[144] = {
 			81441
@@ -31882,7 +33102,8 @@
 			311464,
 			321463,
 			331461,
-			331462
+			331462,
+			341461
 		},
 		[145] = {
 			71451,
@@ -32116,7 +33337,8 @@
 			311162,
 			311163,
 			321161,
-			331161
+			331161,
+			341161
 		},
 		[110] = {
 			61101,
@@ -32283,7 +33505,9 @@
 			321112,
 			321113,
 			331111,
-			331112
+			331112,
+			341111,
+			341112
 		},
 		[131] = {
 			526,
@@ -32324,7 +33548,8 @@
 			311311,
 			311312,
 			321311,
-			331311
+			331311,
+			341311
 		},
 		[127] = {
 			521,
@@ -32493,7 +33718,8 @@
 			301071,
 			311071,
 			321071,
-			331071
+			331071,
+			341071
 		},
 		[106] = {
 			505,
@@ -32561,7 +33787,8 @@
 			301001,
 			311001,
 			321001,
-			331001
+			331001,
+			341001
 		},
 		[5] = {
 			301
@@ -32803,7 +34030,14 @@
 			330044,
 			330045,
 			330046,
-			330042
+			330042,
+			340041,
+			340042,
+			340043,
+			340044,
+			340045,
+			340046,
+			340047
 		},
 		[72] = {
 			201
@@ -33048,7 +34282,15 @@
 			330032,
 			330033,
 			330034,
-			330035
+			330035,
+			340031,
+			340032,
+			340033,
+			340034,
+			340035,
+			340036,
+			340037,
+			340038
 		},
 		{
 			1,
@@ -33090,10 +34332,180 @@
 			310011,
 			310012,
 			320012,
-			330011
+			330011,
+			340011
 		}
 	},
 	get_id_list_by_sub_activity_list = {
+		[342259] = {
+			342249
+		},
+		[342258] = {
+			342248
+		},
+		[342257] = {
+			342247
+		},
+		[342256] = {
+			342246
+		},
+		[342255] = {
+			342245
+		},
+		[342254] = {
+			342244
+		},
+		[342253] = {
+			342243
+		},
+		[342252] = {
+			342242
+		},
+		[342251] = {
+			342241
+		},
+		[3431606] = {
+			342981
+		},
+		[3431605] = {
+			342981
+		},
+		[3431604] = {
+			342981
+		},
+		[3431603] = {
+			342981
+		},
+		[3431602] = {
+			342981
+		},
+		[3431601] = {
+			342981
+		},
+		[343227] = {
+			341071
+		},
+		[343226] = {
+			341071
+		},
+		[343225] = {
+			341071
+		},
+		[343224] = {
+			341071
+		},
+		[343223] = {
+			341071
+		},
+		[343222] = {
+			341071
+		},
+		[343221] = {
+			341071
+		},
+		[341112] = {
+			341311
+		},
+		[341111] = {
+			341311
+		},
+		[340041] = {
+			342431
+		},
+		[342441] = {
+			342431
+		},
+		[341461] = {
+			342431
+		},
+		[342981] = {
+			341001
+		},
+		[341071] = {
+			341001
+		},
+		[341311] = {
+			341001
+		},
+		[343501] = {
+			341001
+		},
+		[341891] = {
+			341001
+		},
+		[342132] = {
+			341001
+		},
+		[342131] = {
+			341001
+		},
+		[341021] = {
+			341001
+		},
+		[342431] = {
+			341001
+		},
+		[340001] = {
+			341001
+		},
+		[343724] = {
+			343751
+		},
+		[343723] = {
+			343751
+		},
+		[343722] = {
+			343751
+		},
+		[343721] = {
+			343751
+		},
+		[343762] = {
+			343751
+		},
+		[343761] = {
+			343751
+		},
+		[343741] = {
+			343731
+		},
+		[343708] = {
+			343691
+		},
+		[343707] = {
+			343691
+		},
+		[343706] = {
+			343691
+		},
+		[343705] = {
+			343691
+		},
+		[343704] = {
+			343691
+		},
+		[343703] = {
+			343691
+		},
+		[343702] = {
+			343691
+		},
+		[343701] = {
+			343691
+		},
+		[343821] = {
+			340001,
+			341001
+		},
+		[343751] = {
+			340001
+		},
+		[343731] = {
+			340001
+		},
+		[343691] = {
+			340001
+		},
 		[332253] = {
 			332241,
 			332242,
@@ -40855,6 +42267,92 @@
 		332243,
 		332251,
 		332252,
-		332253
+		332253,
+		340001,
+		343691,
+		343701,
+		343702,
+		343703,
+		343704,
+		343705,
+		343706,
+		343707,
+		343708,
+		343731,
+		343741,
+		343751,
+		343761,
+		343762,
+		343721,
+		343722,
+		343723,
+		343724,
+		341001,
+		343821,
+		340031,
+		342431,
+		341461,
+		342441,
+		340041,
+		341021,
+		341891,
+		343501,
+		340011,
+		340032,
+		340033,
+		340034,
+		340035,
+		340036,
+		340037,
+		340038,
+		342101,
+		342102,
+		341311,
+		341111,
+		341112,
+		341071,
+		343221,
+		343222,
+		343223,
+		343224,
+		343225,
+		343226,
+		343227,
+		342981,
+		3431601,
+		3431602,
+		3431603,
+		3431604,
+		3431605,
+		3431606,
+		343891,
+		342131,
+		342132,
+		340042,
+		340043,
+		340044,
+		340045,
+		340046,
+		341161,
+		344011,
+		340047,
+		342241,
+		342242,
+		342243,
+		342244,
+		342245,
+		342246,
+		342247,
+		342248,
+		342249,
+		342251,
+		342252,
+		342253,
+		342254,
+		342255,
+		342256,
+		342257,
+		342258,
+		342259
 	}
 }

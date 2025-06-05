@@ -56,9 +56,15 @@ function var_0_0.AddUIListeners(arg_5_0)
 		end
 	end)
 	arg_5_0:AddBtnListener(arg_5_0.goBtn_, nil, function()
-		JumpTools.OpenPageByJump("/activityPtScroll", {
-			mainActivityID = arg_5_0.activityID_
-		})
+		if ActivityTools.GetActivityTheme(arg_5_0.activityID_) == ActivityConst.THEME.ACTIVITY_4_2 then
+			JumpTools.OpenPageByJump("/activityPtScroll_4_2", {
+				mainActivityID = arg_5_0.activityID_
+			})
+		else
+			JumpTools.OpenPageByJump("/activityPtScroll", {
+				mainActivityID = arg_5_0.activityID_
+			})
+		end
 	end)
 	arg_5_0:AddBtnListener(arg_5_0.allReceiveBtn_, nil, function()
 		local var_8_0 = {}
@@ -312,7 +318,9 @@ function var_0_0.RefreshShop(arg_22_0)
 	local var_22_0 = ActivityPtScrollTools.GetShopActivityID(arg_22_0.activityID_)
 	local var_22_1 = ActivityShopCfg[var_22_0].shop_id
 
-	arg_22_0.shopName_.text = ShopListCfg[var_22_1].remark
+	if ShopListCfg[var_22_1] then
+		arg_22_0.shopName_.text = ShopListCfg[var_22_1].remark
+	end
 end
 
 function var_0_0.UpdateBar(arg_23_0)

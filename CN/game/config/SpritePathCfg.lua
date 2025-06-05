@@ -250,5 +250,9 @@
 	SandplayIlluGroup = {
 		path = "TextureConfig/VersionUI/CORGUI_SandPlay_Com/SandPlay_Com_BookUI/",
 		name = "SandplayIlluGroup"
+	},
+	CivilizationGame = {
+		path = "TextureConfig/VersionUI/V4_2_GodEaterUI/V4_2_GodEaterUI_Culture/",
+		name = "CivilizationGame"
 	}
 }

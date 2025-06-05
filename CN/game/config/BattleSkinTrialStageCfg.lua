@@ -2924,6 +2924,84 @@
 			0
 		}
 	},
+	[405104501] = {
+		monster_level = 80,
+		name = "赤音·瑰色倾情",
+		drop_lib_id = 0,
+		map = "405104501",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "赤音·瑰色倾情",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 405104501,
+		attribute_factor = {
+			1000,
+			1000,
+			5000
+		},
+		hero_list = {
+			{
+				1045,
+				10450101
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
+	[405104601] = {
+		monster_level = 80,
+		name = "血弹·浮光织雪",
+		drop_lib_id = 0,
+		map = "405104601",
+		background_1 = "",
+		ai_level = 0,
+		tag = 0,
+		position = "",
+		hero_exp = 0,
+		level = 1,
+		tips = "血弹·浮光织雪",
+		recommend_level = 0,
+		combo_skill_id = 0,
+		user_exp = 0,
+		id = 405104601,
+		attribute_factor = {
+			1000,
+			1000,
+			5000
+		},
+		hero_list = {
+			{
+				1046,
+				10460101
+			},
+			{
+				0,
+				1
+			},
+			{
+				0,
+				1
+			}
+		},
+		chip_list = {
+			0
+		}
+	},
 	all = {
 		405101301,
 		405101701,
@@ -2999,6 +3077,8 @@
 		405106102,
 		405101201,
 		405107301,
-		405108501
+		405108501,
+		405104501,
+		405104601
 	}
 }

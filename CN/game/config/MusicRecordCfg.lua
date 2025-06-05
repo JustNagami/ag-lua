@@ -4251,7 +4251,48 @@
 		initAISAC = "",
 		detail = "我们都有属于自己的故事，也将演绎属于我们的故事。\n\n作曲：LousikAEy"
 	},
+	{
+		cueName = "bgm_activity_4_2_battle",
+		authorName = "HJLL",
+		ableBGM = 1,
+		album = 27,
+		cuesheet = "bgm_activity_4_2_battle",
+		musicName = "Recapture the Barren",
+		id = 347,
+		awbName = "bgm_activity_4_2_battle",
+		initAISAC = "",
+		detail = "我们将夺回荒芜蔓延之地，恢复繁荣与生机。我们将紧握武器，守护身后的文明，无论前方是天灾，亦或是神谕。\n\n作曲：HJLL"
+	},
+	{
+		cueName = "bgm_activity_4_2_story_daily",
+		authorName = "LousikAEy",
+		ableBGM = 1,
+		album = 27,
+		cuesheet = "bgm_activity_4_2_story_daily",
+		musicName = "For Those Living Behind",
+		id = 348,
+		awbName = "bgm_activity_4_2_story_daily",
+		initAISAC = "",
+		detail = "作曲：LousikAEy"
+	},
+	{
+		cueName = "bgm_activity_4_2_story_battle",
+		authorName = "LousikAEy",
+		ableBGM = 1,
+		album = 27,
+		cuesheet = "bgm_activity_4_2_story_battle",
+		musicName = "Hold My Blade",
+		id = 349,
+		awbName = "bgm_activity_4_2_story_battle",
+		initAISAC = "",
+		detail = "作曲：LousikAEy"
+	},
 	get_id_list_by_album = {
+		[27] = {
+			347,
+			348,
+			349
+		},
 		[26] = {
 			329,
 			330,
@@ -4997,6 +5038,9 @@
 		343,
 		344,
 		345,
-		346
+		346,
+		347,
+		348,
+		349
 	}
 }

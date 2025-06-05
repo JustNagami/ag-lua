@@ -304,9 +304,19 @@ end
 function var_0_0.OnServantDetailClick(arg_26_0)
 	if arg_26_0.data.info then
 		if arg_26_0.constVar.curBtnStyle == 3 then
-			local var_26_0 = {
+			local var_26_0 = false
+
+			if arg_26_0.data.info.isCustom then
+				var_26_0 = true
+			elseif not arg_26_0.data.info.uid then
+				var_26_0 = true
+			elseif ServantTools.IsSleepServant(arg_26_0.data.info.id) then
+				var_26_0 = true
+			end
+
+			local var_26_1 = {
 				disableTabList = {
-					[2] = true
+					[2] = var_26_0
 				},
 				disableOrigin = arg_26_0.data.info.isCustom or false
 			}
@@ -314,7 +324,7 @@ function var_0_0.OnServantDetailClick(arg_26_0)
 			JumpTools.OpenPageByJump("/showServantDetailsView", {
 				servantData = arg_26_0.data.info,
 				heroId = arg_26_0.data.heroId,
-				openContext = var_26_0
+				openContext = var_26_1
 			})
 		elseif arg_26_0:CheckCanCallName() then
 			arg_26_0:OnCallNameBtnClick()
@@ -676,6 +686,11 @@ end
 
 function var_0_0.CheckCanCallName(arg_44_0)
 	local var_44_0 = arg_44_0.data.info
+
+	if WeaponServantCfg[var_44_0.id].summon_blocked == 1 then
+		return false
+	end
+
 	local var_44_1, var_44_2 = arg_44_0:MaterialEnough(var_44_0.id)
 
 	return var_44_1

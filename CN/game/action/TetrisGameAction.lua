@@ -174,12 +174,14 @@ function var_0_0.UpdataNewSkill(arg_11_0)
 		var_11_1[iter_11_1] = true
 	end
 
-	local var_11_2 = ActivityTetrisGameSkillCfg.all
+	local var_11_2 = TetrisGameTools:GetEndLessStageIDByActivityID(TetrisGameData:GetCurActivityID())
+	local var_11_3 = TetrisGameTools:CheckChapterIsOpen(var_11_2)
+	local var_11_4 = ActivityTetrisGameSkillCfg.all
 
-	for iter_11_2, iter_11_3 in pairs(var_11_2) do
-		local var_11_3, var_11_4 = TetrisGameTools:CheckSkillIsUnlock(iter_11_3)
+	for iter_11_2, iter_11_3 in pairs(var_11_4) do
+		local var_11_5, var_11_6 = TetrisGameTools:CheckSkillIsUnlock(iter_11_3)
 
-		if var_11_3 and not var_11_1[iter_11_3] then
+		if var_11_3 and var_11_5 and not var_11_1[iter_11_3] then
 			manager.redPoint:setTip(string.format("%s_%s", RedPointConst.ACTIVITY_TETIRS_GAME_NEW_SKILL, iter_11_3), 1)
 		else
 			manager.redPoint:setTip(string.format("%s_%s", RedPointConst.ACTIVITY_TETIRS_GAME_NEW_SKILL, iter_11_3), 0)

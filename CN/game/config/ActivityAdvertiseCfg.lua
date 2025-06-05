@@ -486,6 +486,29 @@
 			525
 		}
 	},
+	[45] = {
+		activity_id = 342101,
+		free_dlc_icon = "",
+		id = 45,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_GodEater_1",
+		order = 100,
+		reward_list = {},
+		jump_system = {
+			18001,
+			341001
+		}
+	},
+	[46] = {
+		activity_id = 342102,
+		free_dlc_icon = "",
+		id = 46,
+		prefab_path = "Widget/System/Activity/ActivityAdvertiseUI_104501_104601",
+		order = 100,
+		reward_list = {},
+		jump_system = {
+			525
+		}
+	},
 	[47] = {
 		activity_id = 332101,
 		free_dlc_icon = "",
@@ -612,6 +635,8 @@
 		42,
 		43,
 		44,
+		45,
+		46,
 		47,
 		48,
 		49,

@@ -166,6 +166,8 @@
 			var_1_0 = BattleSandPlayStageTemplate.New(arg_1_1, arg_1_2)
 		elseif BattleConst.STAGE_TYPE_NEW.OSIRIS_PLAY_GAME == arg_1_0 then
 			var_1_0 = BattleOsirisPlayGameStageTemplate.New(arg_1_1, arg_1_2)
+		elseif BattleConst.STAGE_TYPE_NEW.GOD_EATER_BATTLE == arg_1_0 then
+			var_1_0 = BattleGodEaterTemplate.New(arg_1_1, arg_1_2)
 		end
 
 		var_1_0:SetReserveParams(arg_1_3)

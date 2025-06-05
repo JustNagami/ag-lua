@@ -107,6 +107,10 @@ function var_0_0.SetCurrencyValue(arg_6_0, arg_6_1, arg_6_2, arg_6_3)
 		SkuldSystemData:UpdateSkuldPointRewardRedPoint()
 	end
 
+	if arg_6_1 == CurrencyConst.ACTIVITY_GOD_EATER_HUB_EXP then
+		GodEaterData:UpdateHudLevel()
+	end
+
 	manager.notify:Invoke(CURRENCY_UPDATE, arg_6_1, arg_6_3, arg_6_2)
 
 	if arg_6_1 == CurrencyConst.CURRENCY_TYPE_RECHARGE_DIAMOND_FREE or arg_6_1 == CurrencyConst.GetPlatformDiamondId() then

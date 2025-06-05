@@ -2536,6 +2536,141 @@
 			}
 		}
 	},
+	[950032] = {
+		material = "",
+		start_up_action = 0,
+		extend_info = 1,
+		type = 25,
+		dorm_exp = 12000,
+		sub_type = 0,
+		model = "Dorm/Dormitory/HZ05_zhuanshu_shishenzhe_yalisha",
+		is_give = 3,
+		hero_id = 1045,
+		style_type = "",
+		extend = "",
+		theme = 99,
+		give_max = 0,
+		replace = "",
+		interact_max = 1,
+		illu_position = "",
+		can_rot = 0,
+		display_type = 0,
+		mesh = "",
+		is_hide = 0,
+		id = 950032,
+		ignore_zoom = 0,
+		is_occupy = 0,
+		scene_id = {
+			2,
+			3
+		},
+		title = {
+			6,
+			7,
+			3
+		},
+		cost = {},
+		attractive = {},
+		is_storage = {},
+		is_move = {},
+		is_rotate = {},
+		interact = {
+			{
+				1045,
+				95003201
+			}
+		}
+	},
+	[950033] = {
+		material = "",
+		start_up_action = 0,
+		extend_info = 1,
+		type = 25,
+		dorm_exp = 12000,
+		sub_type = 0,
+		model = "Dorm/Dormitory/HZ05_zhuanshu_xueer",
+		is_give = 3,
+		hero_id = 1046,
+		style_type = "",
+		extend = "",
+		theme = 99,
+		give_max = 0,
+		replace = "",
+		interact_max = 1,
+		illu_position = "",
+		can_rot = 0,
+		display_type = 0,
+		mesh = "",
+		is_hide = 0,
+		id = 950033,
+		ignore_zoom = 0,
+		is_occupy = 0,
+		scene_id = {
+			2,
+			3
+		},
+		title = {
+			5,
+			5,
+			3
+		},
+		cost = {},
+		attractive = {},
+		is_storage = {},
+		is_move = {},
+		is_rotate = {},
+		interact = {
+			{
+				1046,
+				95003301
+			}
+		}
+	},
+	[950034] = {
+		material = "",
+		start_up_action = 0,
+		extend_info = 1,
+		type = 25,
+		dorm_exp = 12000,
+		sub_type = 0,
+		model = "Dorm/Dormitory/HZ05_zhuanshu_haimudaer1",
+		is_give = 3,
+		hero_id = 1033,
+		style_type = "",
+		extend = "",
+		theme = 99,
+		give_max = 0,
+		replace = "",
+		interact_max = 1,
+		illu_position = "",
+		can_rot = 0,
+		display_type = 0,
+		mesh = "",
+		is_hide = 0,
+		id = 950034,
+		ignore_zoom = 0,
+		is_occupy = 0,
+		scene_id = {
+			2,
+			3
+		},
+		title = {
+			4,
+			4,
+			6
+		},
+		cost = {},
+		attractive = {},
+		is_storage = {},
+		is_move = {},
+		is_rotate = {},
+		interact = {
+			{
+				1033,
+				95003401
+			}
+		}
+	},
 	[950035] = {
 		material = "",
 		start_up_action = 0,
@@ -16173,6 +16308,9 @@
 			950028,
 			950029,
 			950030,
+			950032,
+			950033,
+			950034,
 			950035,
 			950036,
 			951001,
@@ -16537,6 +16675,9 @@
 			950028,
 			950029,
 			950030,
+			950032,
+			950033,
+			950034,
 			950035,
 			950036,
 			951001,
@@ -17248,6 +17389,9 @@
 			950028,
 			950029,
 			950030,
+			950032,
+			950033,
+			950034,
 			950035,
 			950036
 		},
@@ -17348,6 +17492,9 @@
 		950028,
 		950029,
 		950030,
+		950032,
+		950033,
+		950034,
 		950035,
 		950036,
 		951001,

@@ -93,9 +93,23 @@ function var_0_0.JumpToPool(arg_9_0, arg_9_1)
 end
 
 function var_0_0.GetPoolData(arg_10_0)
-	local var_10_0 = DrawData:GetPollUpID(arg_10_0)
+	local var_10_0 = DrawPoolCfg[arg_10_0]
 
-	if DrawData:GetPoolData(arg_10_0) and not var_10_0 then
+	if (var_10_0.pool_selected_type == 2 or var_10_0.pool_selected_type == 8) and DrawData:GetPollUpID(arg_10_0) == 0 then
+		ShowTips("DRAW_NOT_SELECT_TIPS")
+
+		return
+	end
+
+	if var_10_0.pool_selected_type == 9 and DrawData:GetPollUpID(arg_10_0) == 0 then
+		ShowTips("DRAW_NOT_SELECT_WEAPON_TIPS")
+
+		return
+	end
+
+	local var_10_1 = DrawData:GetPollUpID(arg_10_0)
+
+	if DrawData:GetPoolData(arg_10_0) and not var_10_1 then
 		JumpTools.OpenPageByJump("drawInfoPopView", {
 			poolId = arg_10_0
 		})
@@ -138,6 +152,44 @@ function var_0_0.OnHidePoolNewTag(arg_13_0, arg_13_1)
 
 		DrawData:SetPoolIsNew(var_13_0, 0)
 		var_0_0.redPointCallback_(false, var_13_0)
+	end
+end
+
+manager.net:Bind(16025, function(arg_14_0)
+	DrawData:InitPoolBonus(arg_14_0)
+	manager.notify:Invoke(UPDATE_ACTIVITY_POOL_BONUS)
+end)
+
+function var_0_0.ReceivePoolBonus(arg_15_0, arg_15_1)
+	manager.net:SendWithLoadingNew(16022, {
+		activity_id = arg_15_0
+	}, 16023, function(arg_16_0)
+		if isSuccess(arg_16_0.result) then
+			getReward2(mergeReward2(arg_16_0.rewards))
+			DrawData:SetBonusRedPointFlag(false)
+
+			local var_16_0 = ActivityDrawBonusCfg[arg_15_0]
+
+			DrawData:UpdatePoolBonus(arg_15_0, DrawData:GetPoolBonus(arg_15_0) % var_16_0.need)
+			arg_15_1()
+		else
+			ShowTips(arg_16_0.result)
+		end
+	end)
+end
+
+function var_0_0.UpdateRedPoint(arg_17_0)
+	local var_17_0 = ActivityData:GetActivityData(arg_17_0)
+
+	if manager.time:GetServerTime() + 1 >= var_17_0.stopTime then
+		DrawData:UpdatePoolBonus(arg_17_0, 0)
+	end
+end
+
+function var_0_0.ClickDrawBonusRedPoint()
+	if manager.redPoint:getTipValue(RedPointConst.DRAW_BONUS) > 0 then
+		DrawData:SetBonusRedPointFlag(true)
+		manager.redPoint:setTip(RedPointConst.DRAW_BONUS, 0)
 	end
 end
 

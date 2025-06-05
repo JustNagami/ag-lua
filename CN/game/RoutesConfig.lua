@@ -1034,6 +1034,10 @@
 		component = DrawServantSelectView
 	},
 	{
+		name = "drawGodEaterSelect",
+		component = GodEaterDrawServantSelectView
+	},
+	{
 		name = "drawHeroSelect",
 		component = DrawHeroSelectView
 	},
@@ -3206,6 +3210,11 @@
 		component = SubPlotKeErGaiView
 	},
 	{
+		name = "subPlotLinKage_4_2View",
+		ignoreMerge = true,
+		component = SubPlotLinKage_4_2View
+	},
+	{
 		name = "volumeMusicMain",
 		component = VolumeMusicMainView
 	},
@@ -3520,6 +3529,10 @@
 	},
 	{
 		name = "activityMain_3_3",
+		component = ActivityMainToggleBaseView
+	},
+	{
+		name = "activityMain_4_2",
 		component = ActivityMainToggleBaseView
 	},
 	{
@@ -4249,6 +4262,10 @@
 	{
 		name = "activityPtScroll",
 		component = ActivityPtScrollView
+	},
+	{
+		name = "activityPtScroll_4_2",
+		component = ActivityPtScrollView_4_2
 	},
 	{
 		name = "activityPtScrollSectionInfo",
@@ -5992,6 +6009,14 @@
 		component = CustomStickerCollectPopView
 	},
 	{
+		name = "dailyMonsterMain",
+		component = DailyMonsterMain
+	},
+	{
+		name = "dailyMonsterSectionInfo",
+		component = DailyMonsterSectionInfoView
+	},
+	{
 		name = "challengeRogueTeamEntrace",
 		component = ChallengeRogueTeamEntraceView
 	},
@@ -6506,6 +6531,94 @@
 	{
 		name = "limitTimeTaskBaseView",
 		component = LimitTimeTaskBaseView
+	},
+	{
+		name = "civilizationGameView",
+		component = CivilizationGameView
+	},
+	{
+		name = "civilizationGameChooseSkillView",
+		component = CivilizationGameChooseSkillView
+	},
+	{
+		name = "civilizationGameMainView",
+		component = CivilizationGameMainView
+	},
+	{
+		name = "civilizationGameHeroView",
+		component = CivilizationGameHeroView
+	},
+	{
+		name = "civilizationGameIlluView",
+		component = CivilizationGameIlluView
+	},
+	{
+		name = "civilizationGameLvUpView",
+		component = CivilizationGameLvUpView
+	},
+	{
+		name = "civilizationGameOverView",
+		component = CivilizationGameOverView
+	},
+	{
+		name = "ActivityGodEaterGameMainView",
+		component = ActivityGodEaterGameMainView
+	},
+	{
+		name = "ActivityGodEaterMilestoneView",
+		component = ActivityGodEaterMilestoneView
+	},
+	{
+		name = "ActivityGodEaterCivilizationTaskView",
+		component = ActivityGodEaterCivilizationTaskView
+	},
+	{
+		name = "ActivityGodEaterGameRewardView",
+		component = ActivityGodEaterGameRewardView
+	},
+	{
+		name = "ActivityGodEaterGameTaskView",
+		component = ActivityGodEaterGameTaskView
+	},
+	{
+		name = "ActivityGodEaterLvUpView",
+		component = ActivityGodEaterLvUpView
+	},
+	{
+		name = "goldMinerSelectLevelView",
+		component = GoldMinerSelectLevelView
+	},
+	{
+		name = "goldMinerGameView",
+		component = GoldMinerGameView
+	},
+	{
+		name = "weekBossMainView",
+		component = WeekBossMainView
+	},
+	{
+		name = "weekBossHeroView",
+		component = WeekBossHeroView
+	},
+	{
+		name = "eatGodBattleEnterView",
+		component = EatGodBattleEnterView
+	},
+	{
+		name = "battleEatGodResultView",
+		component = BattleEatGodResultView
+	},
+	{
+		name = "goldMinerStageSectionView",
+		component = GoldMinerStageSectionView
+	},
+	{
+		name = "goldMinerGameEndView",
+		component = GoldMinerGameEndView
+	},
+	{
+		name = "activityGodEaterGiftPopView",
+		component = ActivityGodEaterGiftPopView
 	},
 	{
 		name = "osirisPlayGameSettlementWinView",

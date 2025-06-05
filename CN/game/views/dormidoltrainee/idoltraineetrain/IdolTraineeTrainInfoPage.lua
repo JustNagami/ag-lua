@@ -61,6 +61,10 @@ function var_0_0.AddUIListener(arg_3_0)
 		if var_6_0 then
 			BackHomeAction.SetLockBackHomeHero(arg_3_0.curHeroID_, DormConst.LOCK_HERO_FOR_FEATURE.NONE)
 		else
+			if not HeroTools.GetHeroIsUnlock(arg_3_0.curHeroID_) then
+				return
+			end
+
 			ShowMessageBox({
 				content = GetTips("IDOL_DANCE_HERO_LOCK_CONFIRM"),
 				OkCallback = function()
@@ -94,10 +98,14 @@ function var_0_0.GetDisplayLockState(arg_11_0)
 		local var_11_0 = arg_11_0.curHeroID_
 		local var_11_1, var_11_2 = BackHomeTools.CheckHeroIsLockForAnyFeatureByHeroID(var_11_0)
 
-		return var_11_1 and "lock" or "unlock"
-	else
-		return "hide"
+		if var_11_1 then
+			return "lock"
+		elseif HeroTools.GetHeroIsUnlock(arg_11_0.curHeroID_) then
+			return "unlock"
+		end
 	end
+
+	return "hide"
 end
 
 function var_0_0.IndexStyleItem(arg_12_0, arg_12_1, arg_12_2)

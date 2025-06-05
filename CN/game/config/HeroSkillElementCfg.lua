@@ -93914,6 +93914,2636 @@
 			}
 		}
 	},
+	[104500] = {
+		hero_id = 1045,
+		id = 104500,
+		level = 0,
+		skill_element_cost1 = {},
+		skill_element_attr1 = {
+			{
+				330,
+				0
+			}
+		},
+		skill_element_cost2 = {},
+		skill_element_attr2 = {
+			{
+				331,
+				0
+			}
+		},
+		skill_element_cost3 = {},
+		skill_element_attr3 = {
+			{
+				332,
+				0
+			}
+		},
+		skill_element_cost4 = {},
+		skill_element_attr4 = {
+			{
+				333,
+				0
+			}
+		},
+		skill_element_cost5 = {},
+		skill_element_attr5 = {
+			{
+				334,
+				0
+			}
+		}
+	},
+	[104501] = {
+		hero_id = 1045,
+		id = 104501,
+		level = 1,
+		skill_element_cost1 = {
+			{
+				40304,
+				10
+			},
+			{
+				40301,
+				50
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				8
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40304,
+				10
+			},
+			{
+				40301,
+				50
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				8
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40304,
+				10
+			},
+			{
+				40301,
+				50
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				8
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40304,
+				10
+			},
+			{
+				40301,
+				50
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				8
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40304,
+				10
+			},
+			{
+				40301,
+				50
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				8
+			}
+		}
+	},
+	[104502] = {
+		hero_id = 1045,
+		id = 104502,
+		level = 2,
+		skill_element_cost1 = {
+			{
+				40304,
+				10
+			},
+			{
+				40301,
+				60
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				16
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40304,
+				10
+			},
+			{
+				40301,
+				60
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				16
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40304,
+				10
+			},
+			{
+				40301,
+				60
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				16
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40304,
+				10
+			},
+			{
+				40301,
+				60
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				16
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40304,
+				10
+			},
+			{
+				40301,
+				60
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				16
+			}
+		}
+	},
+	[104503] = {
+		hero_id = 1045,
+		id = 104503,
+		level = 3,
+		skill_element_cost1 = {
+			{
+				40304,
+				12
+			},
+			{
+				40301,
+				70
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				24
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40304,
+				12
+			},
+			{
+				40301,
+				70
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				24
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40304,
+				12
+			},
+			{
+				40301,
+				70
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				24
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40304,
+				12
+			},
+			{
+				40301,
+				70
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				24
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40304,
+				12
+			},
+			{
+				40301,
+				70
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				24
+			}
+		}
+	},
+	[104504] = {
+		hero_id = 1045,
+		id = 104504,
+		level = 4,
+		skill_element_cost1 = {
+			{
+				40304,
+				12
+			},
+			{
+				40301,
+				80
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				32
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40304,
+				12
+			},
+			{
+				40301,
+				80
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				32
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40304,
+				12
+			},
+			{
+				40301,
+				80
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				32
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40304,
+				12
+			},
+			{
+				40301,
+				80
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				32
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40304,
+				12
+			},
+			{
+				40301,
+				80
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				32
+			}
+		}
+	},
+	[104505] = {
+		hero_id = 1045,
+		id = 104505,
+		level = 5,
+		skill_element_cost1 = {
+			{
+				40304,
+				14
+			},
+			{
+				40301,
+				90
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				40
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40304,
+				14
+			},
+			{
+				40301,
+				90
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				40
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40304,
+				14
+			},
+			{
+				40301,
+				90
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				40
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40304,
+				14
+			},
+			{
+				40301,
+				90
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				40
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40304,
+				14
+			},
+			{
+				40301,
+				90
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				40
+			}
+		}
+	},
+	[104506] = {
+		hero_id = 1045,
+		id = 104506,
+		level = 6,
+		skill_element_cost1 = {
+			{
+				40304,
+				18
+			},
+			{
+				40301,
+				100
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				48
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40304,
+				18
+			},
+			{
+				40301,
+				100
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				48
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40304,
+				18
+			},
+			{
+				40301,
+				100
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				48
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40304,
+				18
+			},
+			{
+				40301,
+				100
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				48
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40304,
+				18
+			},
+			{
+				40301,
+				100
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				48
+			}
+		}
+	},
+	[104507] = {
+		hero_id = 1045,
+		id = 104507,
+		level = 7,
+		skill_element_cost1 = {
+			{
+				40304,
+				18
+			},
+			{
+				40301,
+				110
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				56
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40304,
+				18
+			},
+			{
+				40301,
+				110
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				56
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40304,
+				18
+			},
+			{
+				40301,
+				110
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				56
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40304,
+				18
+			},
+			{
+				40301,
+				110
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				56
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40304,
+				18
+			},
+			{
+				40301,
+				110
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				56
+			}
+		}
+	},
+	[104508] = {
+		hero_id = 1045,
+		id = 104508,
+		level = 8,
+		skill_element_cost1 = {
+			{
+				40304,
+				20
+			},
+			{
+				40301,
+				120
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				64
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40304,
+				20
+			},
+			{
+				40301,
+				120
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				64
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40304,
+				20
+			},
+			{
+				40301,
+				120
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				64
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40304,
+				20
+			},
+			{
+				40301,
+				120
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				64
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40304,
+				20
+			},
+			{
+				40301,
+				120
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				64
+			}
+		}
+	},
+	[104509] = {
+		hero_id = 1045,
+		id = 104509,
+		level = 9,
+		skill_element_cost1 = {
+			{
+				40304,
+				20
+			},
+			{
+				40301,
+				130
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				72
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40304,
+				20
+			},
+			{
+				40301,
+				130
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				72
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40304,
+				20
+			},
+			{
+				40301,
+				130
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				72
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40304,
+				20
+			},
+			{
+				40301,
+				130
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				72
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40304,
+				20
+			},
+			{
+				40301,
+				130
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				72
+			}
+		}
+	},
+	[104510] = {
+		hero_id = 1045,
+		id = 104510,
+		level = 10,
+		skill_element_cost1 = {
+			{
+				40304,
+				26
+			},
+			{
+				40301,
+				150
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				80
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40304,
+				26
+			},
+			{
+				40301,
+				150
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				80
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40304,
+				26
+			},
+			{
+				40301,
+				150
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				80
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40304,
+				26
+			},
+			{
+				40301,
+				150
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				80
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40304,
+				26
+			},
+			{
+				40301,
+				150
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				80
+			}
+		}
+	},
+	[104511] = {
+		hero_id = 1045,
+		id = 104511,
+		level = 11,
+		skill_element_cost1 = {
+			{
+				40304,
+				30
+			},
+			{
+				40301,
+				170
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				88
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40304,
+				30
+			},
+			{
+				40301,
+				170
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				88
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40304,
+				30
+			},
+			{
+				40301,
+				170
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				88
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40304,
+				30
+			},
+			{
+				40301,
+				170
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				88
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40304,
+				30
+			},
+			{
+				40301,
+				170
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				88
+			}
+		}
+	},
+	[104512] = {
+		hero_id = 1045,
+		id = 104512,
+		level = 12,
+		skill_element_cost1 = {
+			{
+				40304,
+				30
+			},
+			{
+				40301,
+				190
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				96
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40304,
+				30
+			},
+			{
+				40301,
+				190
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				96
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40304,
+				30
+			},
+			{
+				40301,
+				190
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				96
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40304,
+				30
+			},
+			{
+				40301,
+				190
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				96
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40304,
+				30
+			},
+			{
+				40301,
+				190
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				96
+			}
+		}
+	},
+	[104513] = {
+		hero_id = 1045,
+		id = 104513,
+		level = 13,
+		skill_element_cost1 = {
+			{
+				40304,
+				32
+			},
+			{
+				40301,
+				210
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				104
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40304,
+				32
+			},
+			{
+				40301,
+				210
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				104
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40304,
+				32
+			},
+			{
+				40301,
+				210
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				104
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40304,
+				32
+			},
+			{
+				40301,
+				210
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				104
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40304,
+				32
+			},
+			{
+				40301,
+				210
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				104
+			}
+		}
+	},
+	[104514] = {
+		hero_id = 1045,
+		id = 104514,
+		level = 14,
+		skill_element_cost1 = {
+			{
+				40304,
+				32
+			},
+			{
+				40301,
+				230
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				112
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40304,
+				32
+			},
+			{
+				40301,
+				230
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				112
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40304,
+				32
+			},
+			{
+				40301,
+				230
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				112
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40304,
+				32
+			},
+			{
+				40301,
+				230
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				112
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40304,
+				32
+			},
+			{
+				40301,
+				230
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				112
+			}
+		}
+	},
+	[104515] = {
+		hero_id = 1045,
+		id = 104515,
+		level = 15,
+		skill_element_cost1 = {
+			{
+				40304,
+				38
+			},
+			{
+				40301,
+				250
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				120
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40304,
+				38
+			},
+			{
+				40301,
+				250
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				120
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40304,
+				38
+			},
+			{
+				40301,
+				250
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				120
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40304,
+				38
+			},
+			{
+				40301,
+				250
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				120
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40304,
+				38
+			},
+			{
+				40301,
+				250
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				120
+			}
+		}
+	},
+	[104600] = {
+		hero_id = 1046,
+		id = 104600,
+		level = 0,
+		skill_element_cost1 = {},
+		skill_element_attr1 = {
+			{
+				330,
+				0
+			}
+		},
+		skill_element_cost2 = {},
+		skill_element_attr2 = {
+			{
+				331,
+				0
+			}
+		},
+		skill_element_cost3 = {},
+		skill_element_attr3 = {
+			{
+				332,
+				0
+			}
+		},
+		skill_element_cost4 = {},
+		skill_element_attr4 = {
+			{
+				333,
+				0
+			}
+		},
+		skill_element_cost5 = {},
+		skill_element_attr5 = {
+			{
+				334,
+				0
+			}
+		}
+	},
+	[104601] = {
+		hero_id = 1046,
+		id = 104601,
+		level = 1,
+		skill_element_cost1 = {
+			{
+				40305,
+				10
+			},
+			{
+				40301,
+				50
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				8
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40305,
+				10
+			},
+			{
+				40301,
+				50
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				8
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40305,
+				10
+			},
+			{
+				40301,
+				50
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				8
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40305,
+				10
+			},
+			{
+				40301,
+				50
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				8
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40305,
+				10
+			},
+			{
+				40301,
+				50
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				8
+			}
+		}
+	},
+	[104602] = {
+		hero_id = 1046,
+		id = 104602,
+		level = 2,
+		skill_element_cost1 = {
+			{
+				40305,
+				10
+			},
+			{
+				40301,
+				60
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				16
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40305,
+				10
+			},
+			{
+				40301,
+				60
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				16
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40305,
+				10
+			},
+			{
+				40301,
+				60
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				16
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40305,
+				10
+			},
+			{
+				40301,
+				60
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				16
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40305,
+				10
+			},
+			{
+				40301,
+				60
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				16
+			}
+		}
+	},
+	[104603] = {
+		hero_id = 1046,
+		id = 104603,
+		level = 3,
+		skill_element_cost1 = {
+			{
+				40305,
+				12
+			},
+			{
+				40301,
+				70
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				24
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40305,
+				12
+			},
+			{
+				40301,
+				70
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				24
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40305,
+				12
+			},
+			{
+				40301,
+				70
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				24
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40305,
+				12
+			},
+			{
+				40301,
+				70
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				24
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40305,
+				12
+			},
+			{
+				40301,
+				70
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				24
+			}
+		}
+	},
+	[104604] = {
+		hero_id = 1046,
+		id = 104604,
+		level = 4,
+		skill_element_cost1 = {
+			{
+				40305,
+				12
+			},
+			{
+				40301,
+				80
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				32
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40305,
+				12
+			},
+			{
+				40301,
+				80
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				32
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40305,
+				12
+			},
+			{
+				40301,
+				80
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				32
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40305,
+				12
+			},
+			{
+				40301,
+				80
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				32
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40305,
+				12
+			},
+			{
+				40301,
+				80
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				32
+			}
+		}
+	},
+	[104605] = {
+		hero_id = 1046,
+		id = 104605,
+		level = 5,
+		skill_element_cost1 = {
+			{
+				40305,
+				14
+			},
+			{
+				40301,
+				90
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				40
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40305,
+				14
+			},
+			{
+				40301,
+				90
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				40
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40305,
+				14
+			},
+			{
+				40301,
+				90
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				40
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40305,
+				14
+			},
+			{
+				40301,
+				90
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				40
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40305,
+				14
+			},
+			{
+				40301,
+				90
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				40
+			}
+		}
+	},
+	[104606] = {
+		hero_id = 1046,
+		id = 104606,
+		level = 6,
+		skill_element_cost1 = {
+			{
+				40305,
+				18
+			},
+			{
+				40301,
+				100
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				48
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40305,
+				18
+			},
+			{
+				40301,
+				100
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				48
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40305,
+				18
+			},
+			{
+				40301,
+				100
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				48
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40305,
+				18
+			},
+			{
+				40301,
+				100
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				48
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40305,
+				18
+			},
+			{
+				40301,
+				100
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				48
+			}
+		}
+	},
+	[104607] = {
+		hero_id = 1046,
+		id = 104607,
+		level = 7,
+		skill_element_cost1 = {
+			{
+				40305,
+				18
+			},
+			{
+				40301,
+				110
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				56
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40305,
+				18
+			},
+			{
+				40301,
+				110
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				56
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40305,
+				18
+			},
+			{
+				40301,
+				110
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				56
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40305,
+				18
+			},
+			{
+				40301,
+				110
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				56
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40305,
+				18
+			},
+			{
+				40301,
+				110
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				56
+			}
+		}
+	},
+	[104608] = {
+		hero_id = 1046,
+		id = 104608,
+		level = 8,
+		skill_element_cost1 = {
+			{
+				40305,
+				20
+			},
+			{
+				40301,
+				120
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				64
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40305,
+				20
+			},
+			{
+				40301,
+				120
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				64
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40305,
+				20
+			},
+			{
+				40301,
+				120
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				64
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40305,
+				20
+			},
+			{
+				40301,
+				120
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				64
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40305,
+				20
+			},
+			{
+				40301,
+				120
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				64
+			}
+		}
+	},
+	[104609] = {
+		hero_id = 1046,
+		id = 104609,
+		level = 9,
+		skill_element_cost1 = {
+			{
+				40305,
+				20
+			},
+			{
+				40301,
+				130
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				72
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40305,
+				20
+			},
+			{
+				40301,
+				130
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				72
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40305,
+				20
+			},
+			{
+				40301,
+				130
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				72
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40305,
+				20
+			},
+			{
+				40301,
+				130
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				72
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40305,
+				20
+			},
+			{
+				40301,
+				130
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				72
+			}
+		}
+	},
+	[104610] = {
+		hero_id = 1046,
+		id = 104610,
+		level = 10,
+		skill_element_cost1 = {
+			{
+				40305,
+				26
+			},
+			{
+				40301,
+				150
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				80
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40305,
+				26
+			},
+			{
+				40301,
+				150
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				80
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40305,
+				26
+			},
+			{
+				40301,
+				150
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				80
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40305,
+				26
+			},
+			{
+				40301,
+				150
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				80
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40305,
+				26
+			},
+			{
+				40301,
+				150
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				80
+			}
+		}
+	},
+	[104611] = {
+		hero_id = 1046,
+		id = 104611,
+		level = 11,
+		skill_element_cost1 = {
+			{
+				40305,
+				30
+			},
+			{
+				40301,
+				170
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				88
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40305,
+				30
+			},
+			{
+				40301,
+				170
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				88
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40305,
+				30
+			},
+			{
+				40301,
+				170
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				88
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40305,
+				30
+			},
+			{
+				40301,
+				170
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				88
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40305,
+				30
+			},
+			{
+				40301,
+				170
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				88
+			}
+		}
+	},
+	[104612] = {
+		hero_id = 1046,
+		id = 104612,
+		level = 12,
+		skill_element_cost1 = {
+			{
+				40305,
+				30
+			},
+			{
+				40301,
+				190
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				96
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40305,
+				30
+			},
+			{
+				40301,
+				190
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				96
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40305,
+				30
+			},
+			{
+				40301,
+				190
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				96
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40305,
+				30
+			},
+			{
+				40301,
+				190
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				96
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40305,
+				30
+			},
+			{
+				40301,
+				190
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				96
+			}
+		}
+	},
+	[104613] = {
+		hero_id = 1046,
+		id = 104613,
+		level = 13,
+		skill_element_cost1 = {
+			{
+				40305,
+				32
+			},
+			{
+				40301,
+				210
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				104
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40305,
+				32
+			},
+			{
+				40301,
+				210
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				104
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40305,
+				32
+			},
+			{
+				40301,
+				210
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				104
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40305,
+				32
+			},
+			{
+				40301,
+				210
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				104
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40305,
+				32
+			},
+			{
+				40301,
+				210
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				104
+			}
+		}
+	},
+	[104614] = {
+		hero_id = 1046,
+		id = 104614,
+		level = 14,
+		skill_element_cost1 = {
+			{
+				40305,
+				32
+			},
+			{
+				40301,
+				230
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				112
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40305,
+				32
+			},
+			{
+				40301,
+				230
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				112
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40305,
+				32
+			},
+			{
+				40301,
+				230
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				112
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40305,
+				32
+			},
+			{
+				40301,
+				230
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				112
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40305,
+				32
+			},
+			{
+				40301,
+				230
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				112
+			}
+		}
+	},
+	[104615] = {
+		hero_id = 1046,
+		id = 104615,
+		level = 15,
+		skill_element_cost1 = {
+			{
+				40305,
+				38
+			},
+			{
+				40301,
+				250
+			}
+		},
+		skill_element_attr1 = {
+			{
+				330,
+				120
+			}
+		},
+		skill_element_cost2 = {
+			{
+				40305,
+				38
+			},
+			{
+				40301,
+				250
+			}
+		},
+		skill_element_attr2 = {
+			{
+				331,
+				120
+			}
+		},
+		skill_element_cost3 = {
+			{
+				40305,
+				38
+			},
+			{
+				40301,
+				250
+			}
+		},
+		skill_element_attr3 = {
+			{
+				332,
+				120
+			}
+		},
+		skill_element_cost4 = {
+			{
+				40305,
+				38
+			},
+			{
+				40301,
+				250
+			}
+		},
+		skill_element_attr4 = {
+			{
+				333,
+				120
+			}
+		},
+		skill_element_cost5 = {
+			{
+				40305,
+				38
+			},
+			{
+				40301,
+				250
+			}
+		},
+		skill_element_attr5 = {
+			{
+				334,
+				120
+			}
+		}
+	},
 	all = {
 		103900,
 		103901,
@@ -95066,6 +97696,38 @@
 		121112,
 		121113,
 		121114,
-		121115
+		121115,
+		104500,
+		104501,
+		104502,
+		104503,
+		104504,
+		104505,
+		104506,
+		104507,
+		104508,
+		104509,
+		104510,
+		104511,
+		104512,
+		104513,
+		104514,
+		104515,
+		104600,
+		104601,
+		104602,
+		104603,
+		104604,
+		104605,
+		104606,
+		104607,
+		104608,
+		104609,
+		104610,
+		104611,
+		104612,
+		104613,
+		104614,
+		104615
 	}
 }

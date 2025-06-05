@@ -492,6 +492,10 @@ function NeedAddExpWithoutBlack(arg_30_0)
 		return BattleInstance.NeedAddExp(arg_30_0)
 	end
 
+	if var_30_0 == BattleConst.STAGE_TYPE_NEW.OSIRIS_PLAY_GAME then
+		return false
+	end
+
 	return true
 end
 

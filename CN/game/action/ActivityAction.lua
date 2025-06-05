@@ -143,6 +143,8 @@ function var_0_0.DealWithActivityData(arg_5_0)
 		QWorldAction.InitRedPoint(arg_5_0.id)
 	elseif var_5_0 == ActivityTemplateConst.SKIN_DISCOUNT_GIFT then
 		SkinDiscountGiftAction.InitRedPoint(arg_5_0.id)
+	elseif ActivityTemplateConst.ACTIVITY_GOD_BOSS == var_5_0 then
+		WeekBossAction.InitRedPointKey(arg_5_0.id)
 	elseif var_5_0 == ActivityTemplateConst.ACTIVITY_SKULD_MAIN then
 		SkuldSystemAction.InitRedPoint()
 	end
@@ -308,6 +310,8 @@ function var_0_0.UpdateRedPoint(arg_8_0)
 		WhackMoleAction.UpdateRedPoint(arg_8_0)
 	elseif ActivityTemplateConst.ACTIVITY_AUTO_COOK == var_8_0 then
 		ActivityAutoCookAction.UpdateRedPoint(arg_8_0)
+	elseif ActivityTemplateConst.ACTIVITY_DRAW_BONUS == var_8_0 then
+		DrawAction.UpdateRedPoint(arg_8_0)
 	end
 
 	if SpringPreheatAction then

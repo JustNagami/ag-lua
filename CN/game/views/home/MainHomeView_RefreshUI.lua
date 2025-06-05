@@ -196,6 +196,10 @@ end
 
 function var_0_0.CheckPassportBtn(arg_15_0)
 	SetActive(arg_15_0.btn_passport.gameObject, PassportData:IsOpen() and not JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.PASSPORT_MAIN))
+
+	local var_15_0 = PassportData:HasDiscount()
+
+	SetActive(arg_15_0.passportDiscountHighlight_, var_15_0)
 end
 
 function var_0_0.CheckLocked(arg_16_0)

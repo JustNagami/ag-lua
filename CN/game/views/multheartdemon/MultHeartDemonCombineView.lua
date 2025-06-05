@@ -59,7 +59,7 @@ function var_0_0.AddUIListener(arg_7_0)
 			return
 		end
 
-		if #arg_7_0.heroList ~= 3 then
+		if not arg_7_0.heroList[1] or not arg_7_0.heroList[2] or not arg_7_0.heroList[3] then
 			ShowTips("MULTI_HEART_DEMON_HERO_NOT_ENOUGH")
 
 			return

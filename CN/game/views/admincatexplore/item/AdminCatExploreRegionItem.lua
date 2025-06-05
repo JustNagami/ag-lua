@@ -74,12 +74,12 @@ function var_0_0.UpdateView(arg_8_0)
 		arg_8_0.lockTxt_.text = string.format(GetTips("EXPLORE_DEBLOCKING_LEVEL"), var_0_1[arg_8_0.regionUnlockLevel[arg_8_0.regionId]])
 	elseif arg_8_0.regionData then
 		if arg_8_0.regionData.stopTime > manager.time:GetServerTime() then
-			local var_8_1 = arg_8_0.regionData.stopTime - manager.time:GetServerTime()
+			local var_8_1 = math.max(0, arg_8_0.regionData.stopTime - manager.time:GetServerTime())
 
 			arg_8_0.remainTxt_.text = manager.time:DescCDTime(var_8_1)
 			arg_8_0.fillImg_.fillAmount = 1 - var_8_1 / (arg_8_0.regionData.stopTime - arg_8_0.regionData.startTime)
 			arg_8_0.updateTimer_ = Timer.New(function()
-				var_8_1 = arg_8_0.regionData.stopTime - manager.time:GetServerTime()
+				var_8_1 = math.max(0, arg_8_0.regionData.stopTime - manager.time:GetServerTime())
 				arg_8_0.remainTxt_.text = manager.time:DescCDTime(var_8_1)
 				arg_8_0.fillImg_.fillAmount = 1 - var_8_1 / (arg_8_0.regionData.stopTime - arg_8_0.regionData.startTime)
 

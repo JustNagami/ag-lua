@@ -3311,6 +3311,294 @@
 			}
 		}
 	},
+	[10450011] = {
+		name = "支配",
+		suit_name = "神机驭者",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1045001,
+		id = 10450011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10450012] = {
+		name = "报复",
+		suit_name = "神机驭者",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10450011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1045001,
+		id = 10450012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10450013] = {
+		name = "侵攻",
+		suit_name = "神机驭者",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10450012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1045001,
+		id = 10450013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10450021] = {
+		name = "旋击",
+		suit_name = "千变战技",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1045002,
+		id = 10450021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10450022] = {
+		name = "追袭",
+		suit_name = "千变战技",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10450021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1045002,
+		id = 10450022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10450023] = {
+		name = "蓄势",
+		suit_name = "千变战技",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10450022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1045002,
+		id = 10450023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10450031] = {
+		name = "级联",
+		suit_name = "肃命轰爆",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1045003,
+		id = 10450031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10450032] = {
+		name = "临界",
+		suit_name = "肃命轰爆",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10450031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1045003,
+		id = 10450032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10450033] = {
+		name = "裂变",
+		suit_name = "肃命轰爆",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10450032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1045003,
+		id = 10450033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10460011] = {
+		name = "坚持",
+		suit_name = "守护的决心",
+		unlock_condition = 2101,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1046001,
+		id = 10460011,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10460012] = {
+		name = "驰援",
+		suit_name = "守护的决心",
+		unlock_condition = 2102,
+		pre_astrolabe_id = 10460011,
+		pos = 2,
+		hero_astrolabe_suit_id = 1046001,
+		id = 10460012,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10460013] = {
+		name = "觉悟",
+		suit_name = "守护的决心",
+		unlock_condition = 2103,
+		pre_astrolabe_id = 10460012,
+		pos = 3,
+		hero_astrolabe_suit_id = 1046001,
+		id = 10460013,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10460021] = {
+		name = "契约",
+		suit_name = "自我的理性",
+		unlock_condition = 2201,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1046002,
+		id = 10460021,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10460022] = {
+		name = "精熟",
+		suit_name = "自我的理性",
+		unlock_condition = 2202,
+		pre_astrolabe_id = 10460021,
+		pos = 2,
+		hero_astrolabe_suit_id = 1046002,
+		id = 10460022,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10460023] = {
+		name = "贯穿",
+		suit_name = "自我的理性",
+		unlock_condition = 2203,
+		pre_astrolabe_id = 10460022,
+		pos = 3,
+		hero_astrolabe_suit_id = 1046002,
+		id = 10460023,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
+	[10460031] = {
+		name = "伏击",
+		suit_name = "娴熟的技巧",
+		unlock_condition = 2301,
+		pre_astrolabe_id = 0,
+		pos = 1,
+		hero_astrolabe_suit_id = 1046003,
+		id = 10460031,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				1000
+			}
+		}
+	},
+	[10460032] = {
+		name = "连击",
+		suit_name = "娴熟的技巧",
+		unlock_condition = 2302,
+		pre_astrolabe_id = 10460031,
+		pos = 2,
+		hero_astrolabe_suit_id = 1046003,
+		id = 10460032,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				5000
+			}
+		}
+	},
+	[10460033] = {
+		name = "收割",
+		suit_name = "娴熟的技巧",
+		unlock_condition = 2303,
+		pre_astrolabe_id = 10460032,
+		pos = 3,
+		hero_astrolabe_suit_id = 1046003,
+		id = 10460033,
+		astrolabe_type = 0,
+		unlock = {
+			{
+				2,
+				10000
+			}
+		}
+	},
 	[10480011] = {
 		name = "残弹",
 		suit_name = "大峰山之护",
@@ -10944,6 +11232,36 @@
 			10480012,
 			10480013
 		},
+		[1046003] = {
+			10460031,
+			10460032,
+			10460033
+		},
+		[1046002] = {
+			10460021,
+			10460022,
+			10460023
+		},
+		[1046001] = {
+			10460011,
+			10460012,
+			10460013
+		},
+		[1045003] = {
+			10450031,
+			10450032,
+			10450033
+		},
+		[1045002] = {
+			10450021,
+			10450022,
+			10450023
+		},
+		[1045001] = {
+			10450011,
+			10450012,
+			10450013
+		},
 		[1042003] = {
 			10420031,
 			10420032,
@@ -12155,6 +12473,42 @@
 		[10480011] = {
 			10480012
 		},
+		[10460032] = {
+			10460033
+		},
+		[10460031] = {
+			10460032
+		},
+		[10460022] = {
+			10460023
+		},
+		[10460021] = {
+			10460022
+		},
+		[10460012] = {
+			10460013
+		},
+		[10460011] = {
+			10460012
+		},
+		[10450032] = {
+			10450033
+		},
+		[10450031] = {
+			10450032
+		},
+		[10450022] = {
+			10450023
+		},
+		[10450021] = {
+			10450022
+		},
+		[10450012] = {
+			10450013
+		},
+		[10450011] = {
+			10450012
+		},
 		[10420032] = {
 			10420033
 		},
@@ -12639,6 +12993,12 @@
 			10420011,
 			10420021,
 			10420031,
+			10450011,
+			10450021,
+			10450031,
+			10460011,
+			10460021,
+			10460031,
 			10480011,
 			10480021,
 			10480031,
@@ -12993,6 +13353,24 @@
 		10420031,
 		10420032,
 		10420033,
+		10450011,
+		10450012,
+		10450013,
+		10450021,
+		10450022,
+		10450023,
+		10450031,
+		10450032,
+		10450033,
+		10460011,
+		10460012,
+		10460013,
+		10460021,
+		10460022,
+		10460023,
+		10460031,
+		10460032,
+		10460033,
 		10480011,
 		10480012,
 		10480013,

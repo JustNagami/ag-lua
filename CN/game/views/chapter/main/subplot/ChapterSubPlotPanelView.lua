@@ -20,6 +20,12 @@ end
 
 function var_0_0.OnExit(arg_3_0)
 	manager.redPoint:unbindUIandKey(arg_3_0.transform_, RedPointConst.COMBAT_SUB_PLOT)
+
+	if arg_3_0.timer_ then
+		arg_3_0.timer_:Stop()
+
+		arg_3_0.timer_ = nil
+	end
 end
 
 function var_0_0.Dispose(arg_4_0)
@@ -37,26 +43,41 @@ function var_0_0.RefreshUI(arg_7_0)
 	local var_7_1 = ChapterClientCfg[var_7_0]
 	local var_7_2 = SpritePathCfg.ChapterPaint.path .. var_7_1.chapter_paint_2
 
+	if var_7_1.show_tag_type == ChapterConst.SHOW_TYPE.LIMIT_TIME then
+		if arg_7_0.timer_ then
+			arg_7_0.timer_:Stop()
+
+			arg_7_0.timer_ = nil
+		end
+
+		local var_7_3, var_7_4 = ActivityData:GetActivityTime(ChapterCfg[var_7_1.chapter_list[1]].activity_id)
+
+		arg_7_0.timeText_.text = manager.time:GetLostTimeStr2(var_7_4)
+		arg_7_0.timer_ = Timer.New(function()
+			arg_7_0.timeText_.text = manager.time:GetLostTimeStr2(var_7_4)
+		end, 1, -1)
+
+		arg_7_0.timer_:Start()
+	end
+
 	SetSpriteWithoutAtlasAsync(arg_7_0.chapterImage_, var_7_2)
 	arg_7_0.titleTagController_:SetSelectedState(ChapterTools.GetChapterShowTypeData(var_7_0))
 
 	arg_7_0.chapterNameText_.text = var_7_1.name
 	arg_7_0.chapterDescText_.text = var_7_1.desc
 
-	arg_7_0:RefreshLockState()
+	local var_7_5 = JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.BATTLE_SUB_PLOT)
 
-	local var_7_3 = JumpTools.IsSystemLocked(ViewConst.SYSTEM_ID.BATTLE_SUB_PLOT)
-
-	if var_7_3 then
-		arg_7_0.lockText_.text = JumpTools.GetSystemLockedTip(ViewConst.SYSTEM_ID.BATTLE_SUB_PLOT, var_7_3)
+	if var_7_5 then
+		arg_7_0.lockText_.text = JumpTools.GetSystemLockedTip(ViewConst.SYSTEM_ID.BATTLE_SUB_PLOT, var_7_5)
 	end
 end
 
-function var_0_0.RefreshLockState(arg_8_0)
-	if arg_8_0.isLock_ then
-		arg_8_0.controller_:SetSelectedState("true")
+function var_0_0.RefreshLockState(arg_9_0)
+	if arg_9_0.isLock_ then
+		arg_9_0.controller_:SetSelectedState("true")
 	else
-		arg_8_0.controller_:SetSelectedState("false")
+		arg_9_0.controller_:SetSelectedState("false")
 	end
 end
 

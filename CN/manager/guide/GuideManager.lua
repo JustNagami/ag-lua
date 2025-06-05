@@ -176,6 +176,12 @@ function var_0_0.Process(arg_7_0)
 
 	for iter_7_2, iter_7_3 in ipairs(arg_7_0._guides) do
 		if iter_7_3:Check() and manager.story.player_ == nil and not manager.posterGirl:IsPlayingDebut() and not gameContext:GetOpenPageHandler("assetPendPop") then
+			if gameContext:GetLastOpenPage() == "PureModeView" then
+				gameContext:Go("/home", {
+					isHomeBack = true
+				}, nil, true)
+			end
+
 			iter_7_3:InitSteps()
 			GuideTool.Log("GuideBase Start id :" .. iter_7_3:GetId())
 

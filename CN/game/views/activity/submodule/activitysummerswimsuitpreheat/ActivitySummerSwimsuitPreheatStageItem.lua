@@ -37,23 +37,25 @@ function var_0_0.RefreshUI(arg_7_0)
 	local var_7_0 = ActivitySummerSwimsuitPreheatCfg[arg_7_0.cfgId_]
 	local var_7_1 = ActivitySummerSwimsuitPreheatTools.GetCfgMainActivityId(var_7_0)
 	local var_7_2 = var_7_0.activity_id
-	local var_7_3 = ActivitySummerSwimsuitPreheatData.GetDay(var_7_1)
+	local var_7_3 = ActivityData:GetActivityData(var_7_2)
 
-	if var_7_3 < arg_7_0.index_ then
+	if not var_7_3:IsActivitying() then
 		arg_7_0.stateController_:SetSelectedState("lock")
 
-		arg_7_0.lockText_.text = GetTipsF("ACTIVITY_SUMMER_SWIMSUIT_PREHEAT_LOCK_DAY", arg_7_0.index_ - var_7_3)
-	elseif ActivitySummerSwimsuitPreheatData.IsStageClear(var_7_1, var_7_0.id) then
-		local var_7_4 = ActivitySummerSwimsuitPreheatData.IsGotStageReward(var_7_1, var_7_0.id)
+		local var_7_4 = manager.time:DiffDay2(manager.time:GetServerTime(), var_7_3.startTime) + 1
 
-		arg_7_0.stateController_:SetSelectedState(var_7_4 and "finished" or "finished&award")
+		arg_7_0.lockText_.text = GetTipsF("ACTIVITY_SUMMER_SWIMSUIT_PREHEAT_LOCK_DAY", var_7_4)
+	elseif ActivitySummerSwimsuitPreheatData.IsStageClear(var_7_1, var_7_0.id) then
+		local var_7_5 = ActivitySummerSwimsuitPreheatData.IsGotStageReward(var_7_1, var_7_0.id)
+
+		arg_7_0.stateController_:SetSelectedState(var_7_5 and "finished" or "finished&award")
 	else
 		arg_7_0.stateController_:SetSelectedState("unfinished")
 	end
 
-	local var_7_5 = ActivitySummerSwimsuitPreheatTools.GetCfgStageImage(var_7_0)
+	local var_7_6 = ActivitySummerSwimsuitPreheatTools.GetCfgStageImage(var_7_0)
 
-	arg_7_0.img_.sprite = var_7_5
+	arg_7_0.img_.sprite = var_7_6
 end
 
 function var_0_0.BindRedPoint(arg_8_0, arg_8_1)

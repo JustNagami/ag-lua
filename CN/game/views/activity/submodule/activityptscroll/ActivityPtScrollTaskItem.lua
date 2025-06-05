@@ -48,7 +48,11 @@ function var_0_0.RefreshInfinityTask(arg_7_0)
 	local var_7_0 = GameSetting.activity_pt_roulette_task_times.value[1]
 	local var_7_1 = ActivityPtScrollData:GetClearTime(arg_7_0.activityID_)
 
-	arg_7_0.desc_.text = string.format(GetTips("ACTIVITY_ROULETTE_TASK_DESC"), var_7_0)
+	if ActivityConst.ACTIVITY_PTSCROLL_4_2 == arg_7_0.activityID_ then
+		arg_7_0.desc_.text = string.format(GetTips("ACTIVITY_GODEATER_ROULETTE_TASK_DESC"), var_7_0)
+	else
+		arg_7_0.desc_.text = string.format(GetTips("ACTIVITY_ROULETTE_TASK_DESC"), var_7_0)
+	end
 
 	arg_7_0.typeCon_:SetSelectedState("infinity")
 

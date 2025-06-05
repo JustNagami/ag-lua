@@ -1823,6 +1823,102 @@
 			0
 		}
 	},
+	[5250301] = {
+		monster_level = 80,
+		name = "异样",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024582,
+		background_1 = "I18c",
+		tips = "检测到生命能量残留，异常读数较低。额外协助：受到环境影响， <color=#E78300>敌人受到火属性伤害提升</color>",
+		map = "5250301",
+		need_default_team = 1,
+		user_exp = 30,
+		id = 5250301,
+		hero_exp = 60,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			30000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5250302] = {
+		monster_level = 80,
+		name = "警示",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024583,
+		background_1 = "I18c",
+		tips = "前方因事故塌陷，请附近居民不要前往。额外协助：受到环境影响， <color=#E78300>修正者神能获取率增加</color>",
+		map = "5250302",
+		need_default_team = 1,
+		user_exp = 30,
+		id = 5250302,
+		hero_exp = 60,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			15000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5250303] = {
+		monster_level = 80,
+		name = "封锁",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024578,
+		background_1 = "I18c",
+		tips = "居民驱散完毕，封锁线已布置完成。额外协助：受到环境影响， <color=#E78300>众星阵营修正者伤害提升，攻击额外造成一次伤害</color>",
+		map = "5250303",
+		need_default_team = 1,
+		user_exp = 30,
+		id = 5250303,
+		hero_exp = 60,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			17000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
+	[5250304] = {
+		monster_level = 80,
+		name = "陷落",
+		ai_level = 4,
+		hero_list = "",
+		drop_lib_id = 12024579,
+		background_1 = "A07",
+		tips = "巨大的阴影从山丘跃进而来，地面在嘶哑的悲鸣中裂开了蛛网般的纹路。",
+		map = "5250304",
+		need_default_team = 1,
+		user_exp = 0,
+		id = 5250304,
+		hero_exp = 0,
+		level = 1,
+		attribute_factor = {
+			1000,
+			1000,
+			8000
+		},
+		team_type = {
+			201,
+			0
+		}
+	},
 	all = {
 		5130201,
 		5130202,
@@ -1899,6 +1995,10 @@
 		5260201,
 		5260202,
 		5260203,
-		5260204
+		5260204,
+		5250301,
+		5250302,
+		5250303,
+		5250304
 	}
 }

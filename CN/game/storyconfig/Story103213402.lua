@@ -7422,7 +7422,7 @@
 
 				arg_205_1.icon_.sprite = getSpriteWithoutAtlas("TextureConfig/Story/Character/" .. "story_1043")
 
-				arg_205_1.callingController_:SetSelectedState("calling")
+				arg_205_1.callingController_:SetSelectedState("normal")
 
 				arg_205_1.keyicon_.color = Color.New(1, 1, 1)
 				arg_205_1.icon_.color = Color.New(1, 1, 1)

@@ -14,6 +14,9 @@ function var_0_0.Init(arg_1_0)
 	var_0_4 = {}
 	var_0_5 = {}
 	arg_1_0.newHeroFlag_ = false
+	arg_1_0.poolBonusList_ = {}
+	arg_1_0.oldPoolBonusList_ = {}
+	arg_1_0.bonusRedPointFlag_ = false
 end
 
 function var_0_0.InitPool(arg_2_0, arg_2_1)
@@ -274,6 +277,40 @@ function var_0_0.SetPoolData(arg_26_0, arg_26_1, arg_26_2)
 		a_other_item = arg_26_2.a_other_item,
 		b_item = arg_26_2.b_item
 	}
+end
+
+function var_0_0.InitPoolBonus(arg_27_0, arg_27_1)
+	arg_27_0:UpdatePoolBonus(arg_27_1.activity_id, arg_27_1.value)
+end
+
+function var_0_0.UpdatePoolBonus(arg_28_0, arg_28_1, arg_28_2)
+	arg_28_0.poolBonusList_[arg_28_1] = arg_28_2
+
+	if arg_28_2 >= ActivityDrawBonusCfg[arg_28_1].need and arg_28_0.bonusRedPointFlag_ == false then
+		arg_28_0.bonusRedPointFlag_ = true
+
+		manager.redPoint:setTip(RedPointConst.DRAW_BONUS, 1)
+	else
+		manager.redPoint:setTip(RedPointConst.DRAW_BONUS, 0)
+	end
+end
+
+function var_0_0.GetPoolBonus(arg_29_0, arg_29_1)
+	return arg_29_0.poolBonusList_[arg_29_1] or 0
+end
+
+function var_0_0.SetBonusRedPointFlag(arg_30_0, arg_30_1)
+	arg_30_0.bonusRedPointFlag_ = arg_30_1
+end
+
+function var_0_0.GetOldPoolBonus(arg_31_0, arg_31_1)
+	arg_31_0.oldPoolBonusList_[arg_31_1] = arg_31_0.oldPoolBonusList_[arg_31_1] or arg_31_0:GetPoolBonus(arg_31_1)
+
+	return arg_31_0.oldPoolBonusList_[arg_31_1]
+end
+
+function var_0_0.SetOldPoolBonus(arg_32_0, arg_32_1, arg_32_2)
+	arg_32_0.oldPoolBonusList_[arg_32_1] = arg_32_2
 end
 
 return var_0_0

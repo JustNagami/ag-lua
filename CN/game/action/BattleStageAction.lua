@@ -510,7 +510,7 @@ function var_0_0.OperationRush(arg_29_0, arg_29_1, arg_29_2, arg_29_3, arg_29_4,
 			JumpTools.OpenPageByJump("operationRushAniView", {
 				callBack = function()
 					JumpTools.Back()
-					JumpTools.OpenPageByJump("operationRushResultView", {
+					JumpTools.OpenPageByJump("/operationRushResultView", {
 						chapterID = arg_29_0,
 						destID = var_29_2,
 						stageID = arg_29_1,

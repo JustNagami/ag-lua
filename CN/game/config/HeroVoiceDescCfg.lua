@@ -455,6 +455,486 @@
 		team_hero_id_list = "",
 		chara_id = 1011
 	},
+	[10121011] = {
+		id = 10121011,
+		form_id = 0,
+		content = "终于来了？需要我提醒你……现在几点吗？",
+		subtitle_id = 1011,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121012] = {
+		id = 10121012,
+		form_id = 0,
+		content = "你缓过来了？正好有些困乏……来陪我练练？",
+		subtitle_id = 1012,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121013] = {
+		id = 10121013,
+		form_id = 0,
+		content = "外面的事不少？休息下吧……你是真不怕累？",
+		subtitle_id = 1013,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121021] = {
+		id = 10121021,
+		form_id = 0,
+		content = "随时待命。",
+		subtitle_id = 1021,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121031] = {
+		id = 10121031,
+		form_id = 0,
+		content = "科尔盖重大犯罪对策部，白泽。闲话就免了，希望我们合作愉快。",
+		subtitle_id = 1031,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121041] = {
+		id = 10121041,
+		form_id = 0,
+		content = "嗯，出发吧。",
+		subtitle_id = 1041,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121051] = {
+		id = 10121051,
+		form_id = 0,
+		content = "战术决策仍以你为准，我不会越界。",
+		subtitle_id = 1051,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121061] = {
+		id = 10121061,
+		form_id = 0,
+		content = "训练的意义在于掠夺他人的经验，然后变成自己的本能。",
+		subtitle_id = 1061,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121071] = {
+		id = 10121071,
+		form_id = 0,
+		content = "没想到……会以这样的方式踏出全新的一步。谢谢你，管理员。",
+		subtitle_id = 1071,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121081] = {
+		id = 10121081,
+		form_id = 0,
+		content = "之前我就觉得，好像你总能做出超出想象的事。为了我，值得你付出这么多吗？总之……谢谢。",
+		subtitle_id = 1081,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121091] = {
+		id = 10121091,
+		form_id = 0,
+		content = "或许真的如你所说，我把自己禁锢得太久了，小心翼翼到已经忘了下一步要走向哪里。但好在之后的路有你和我一起，不是吗？",
+		subtitle_id = 1091,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121101] = {
+		id = 10121101,
+		form_id = 0,
+		content = "实战中，能否一击制敌才是关键。",
+		subtitle_id = 1101,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121111] = {
+		id = 10121111,
+		form_id = 0,
+		content = "新成员？别拖后腿就行。",
+		subtitle_id = 1111,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121121] = {
+		id = 10121121,
+		form_id = 0,
+		content = "天诫十恶，为时除害……我知道自己的职责。",
+		subtitle_id = 1121,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121131] = {
+		id = 10121131,
+		form_id = 0,
+		content = "有需要帮忙的事就直接叫我，只是有些时候我不一定顾得上你。",
+		subtitle_id = 1131,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121141] = {
+		id = 10121141,
+		form_id = 0,
+		content = "我经手的案件大多只有血淋淋的罪恶，至少不会是你想听的话题。",
+		subtitle_id = 1141,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121151] = {
+		id = 10121151,
+		form_id = 0,
+		content = "接着……怎么？不喜欢吃果冻的话就扔掉吧。",
+		subtitle_id = 1151,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121161] = {
+		id = 10121161,
+		form_id = 0,
+		content = "微笑打卡？我可没听过这样的规定？呵……哈哈……这样算成功了吗？",
+		subtitle_id = 1161,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121162] = {
+		id = 10121162,
+		form_id = 0,
+		content = "没什么不能摘给你看的，前提是掌上压一百下得比我快，现在开始？",
+		subtitle_id = 1162,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121163] = {
+		id = 10121163,
+		form_id = 0,
+		content = "看终端十八次，打哈欠七次……看得出来你和科尔盖的报告不太对付，我来吧。",
+		subtitle_id = 1163,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121171] = {
+		id = 10121171,
+		form_id = 0,
+		content = "别发呆了，你还嫌要做的事情不够多？",
+		subtitle_id = 1171,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121172] = {
+		id = 10121172,
+		form_id = 0,
+		content = "这就睡着了，你们不会偷懒也有津贴吧？",
+		subtitle_id = 1172,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121173] = {
+		id = 10121173,
+		form_id = 0,
+		content = "困了就休息，你也不想被我扛出办公室吧？",
+		subtitle_id = 1173,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121181] = {
+		id = 10121181,
+		form_id = 0,
+		content = "唔……有话直说，没必要来这套。",
+		subtitle_id = 1181,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121191] = {
+		id = 10121191,
+		form_id = 0,
+		content = "啧……看来，你现在缺乏的不只是语言上的管教。",
+		subtitle_id = 1191,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121201] = {
+		id = 10121201,
+		form_id = 0,
+		content = "没必要那么顾及我……谢了。",
+		subtitle_id = 1201,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121211] = {
+		id = 10121211,
+		form_id = 0,
+		content = "「恶魔」和「鬼神」？是我的部下告诉你的吧。很恰当的外号不是吗？舍弃所有人都能遵守规则的妄想，成为恶人之上的极恶。对于那些违规者与不法之徒来说，我的确就是恶鬼的化身。",
+		subtitle_id = 1211,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121221] = {
+		id = 10121221,
+		form_id = 0,
+		content = "过目不忘很方便？是啊……我以前也这么想，直到加入重大犯罪对策部之后，我才发觉世上有太多让人想忘掉的事情。有时候我挺羡慕那些木头脑袋们，至少他们不用每晚跋涉在赎罪的回梦之中。",
+		subtitle_id = 1221,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121231] = {
+		id = 10121231,
+		form_id = 0,
+		content = "这世上有太多复杂的问题，每个人都有不同的答案，又有谁能够保证自己的想法是绝对正确的？所以我只追求当下能依靠的最优解——公允的规则，它们经历过漫长时间的考验，是我已知的各种准则中最值得信任的东西。",
+		subtitle_id = 1231,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121241] = {
+		id = 10121241,
+		form_id = 0,
+		content = "不听命令的士兵、违反规定的操作、质疑意义的人……我平等地厌恶所有试图挑战规则的蠢货，并不是因为他们的行为所造成的恶劣后果，而在于他们潜意识中对于自我性命的漠视。我本不需要为任何人的生命负责，但我希望所有人都能好好地活下去。管理员，包括你在内。",
+		subtitle_id = 1241,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121251] = {
+		id = 10121251,
+		form_id = 0,
+		content = "我不是什么讨人喜欢的家伙，受不了我而退出科尔盖的家伙也不在少数。像你这样能一直待在我身边的人，简直称得上是异类……「鬼神」的身侧可不是什么安稳的好地方。但不管怎样，既然你已经选择了与我同行这条路，那无论发生什么，我都会负起对你的责任。",
+		subtitle_id = 1251,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10121301] = {
+		id = 10121301,
+		form_id = 0,
+		content = "这算是为了工作，对……吗？",
+		subtitle_id = 1301,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122011] = {
+		id = 10122011,
+		form_id = 0,
+		content = "各就各位，全组行动。",
+		subtitle_id = 2011,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122012] = {
+		id = 10122012,
+		form_id = 0,
+		content = "我已到达现场，目标确认。",
+		subtitle_id = 2012,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122021] = {
+		id = 10122021,
+		form_id = 0,
+		content = "站着别动！",
+		subtitle_id = 2021,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122031] = {
+		id = 10122031,
+		form_id = 0,
+		content = "会给你个痛快的！",
+		subtitle_id = 2031,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122041] = {
+		id = 10122041,
+		form_id = 0,
+		content = "你们玩得很开心啊？",
+		subtitle_id = 2041,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122051] = {
+		id = 10122051,
+		form_id = 0,
+		content = "优先执行任务！",
+		subtitle_id = 2051,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122061] = {
+		id = 10122061,
+		form_id = 0,
+		content = "……我从未……对我的选择后悔……",
+		subtitle_id = 2061,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122071] = {
+		id = 10122071,
+		form_id = 0,
+		content = "停滞不前的时候，先试着理清自己的想法吧。",
+		subtitle_id = 2071,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122081] = {
+		id = 10122081,
+		form_id = 0,
+		content = "……你们应得的。",
+		subtitle_id = 2081,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122091] = {
+		id = 10122091,
+		form_id = 0,
+		content = "啧，无趣。",
+		subtitle_id = 2091,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122101] = {
+		id = 10122101,
+		form_id = 0,
+		content = "作战判断很准，我没看错你。",
+		subtitle_id = 2101,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122102] = {
+		id = 10122102,
+		form_id = 0,
+		content = "审判它们的人不是我，是规则。",
+		subtitle_id = 2102,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122111] = {
+		id = 10122111,
+		form_id = 0,
+		content = "说什么都晚了！",
+		subtitle_id = 2111,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122112] = {
+		id = 10122112,
+		form_id = 0,
+		content = "想好遗言了吧？",
+		subtitle_id = 2112,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122121] = {
+		id = 10122121,
+		form_id = 0,
+		content = "兵无常形！",
+		subtitle_id = 2121,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122131] = {
+		id = 10122131,
+		form_id = 0,
+		content = "没人能逃掉……",
+		subtitle_id = 2131,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122141] = {
+		id = 10122141,
+		form_id = 0,
+		content = "万千邪祟，鉴照洞明！",
+		subtitle_id = 2141,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122142] = {
+		id = 10122142,
+		form_id = 0,
+		content = "始祸者，罪无可赦！",
+		subtitle_id = 2142,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122151] = {
+		id = 10122151,
+		form_id = 0,
+		content = "根本不够看啊！",
+		subtitle_id = 2151,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122161] = {
+		id = 10122161,
+		form_id = 0,
+		content = "别挣扎，叫破喉咙也不会有人来的。",
+		subtitle_id = 2161,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122171] = {
+		id = 10122171,
+		form_id = 0,
+		content = "退后！由我接手！",
+		subtitle_id = 2171,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122181] = {
+		id = 10122181,
+		form_id = 0,
+		content = "让我来做个了结吧。",
+		subtitle_id = 2181,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122191] = {
+		id = 10122191,
+		form_id = 0,
+		content = "真想看看它们能坚持多久。",
+		subtitle_id = 2191,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122201] = {
+		id = 10122201,
+		form_id = 0,
+		content = "再多也不过是蝼蚁罢了。",
+		subtitle_id = 2201,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122202] = {
+		id = 10122202,
+		form_id = 0,
+		content = "我会，砍了它！",
+		subtitle_id = 2202,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122211] = {
+		id = 10122211,
+		form_id = 0,
+		content = "多谢。",
+		subtitle_id = 2211,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122221] = {
+		id = 10122221,
+		form_id = 0,
+		content = "该去讨债了！",
+		subtitle_id = 2221,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
+	[10122231] = {
+		id = 10122231,
+		form_id = 0,
+		content = "啧……不会再有下次。",
+		subtitle_id = 2231,
+		team_hero_id_list = "",
+		chara_id = 1012
+	},
 	[10131011] = {
 		id = 10131011,
 		form_id = 0,
@@ -946,7 +1426,7 @@
 	[1015101125] = {
 		id = 1015101125,
 		form_id = 0,
-		content = "我还好好地待在这里呢——或许这事儿也挺值得惊讶的。",
+		content = "哦，欢迎光临—— 等你很久了，自己拿把椅子坐下吧。",
 		subtitle_id = 101125,
 		team_hero_id_list = "",
 		chara_id = 1015
@@ -1442,7 +1922,7 @@
 	[1015021011] = {
 		id = 1015021011,
 		form_id = 0,
-		content = "我还好好地待在这里呢——或许这事儿也挺值得惊讶的。",
+		content = "哦，欢迎光临—— 等你很久了，自己拿把椅子坐下吧。",
 		subtitle_id = 1011,
 		team_hero_id_list = "",
 		chara_id = 101502
@@ -11375,6 +11855,1078 @@
 		team_hero_id_list = "",
 		chara_id = 1042
 	},
+	[10451011] = {
+		id = 10451011,
+		form_id = 0,
+		content = "昨天又通宵了？真拿你没办法……今天的工作换我来吧。",
+		subtitle_id = 1011,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451012] = {
+		id = 10451012,
+		form_id = 0,
+		content = "怎么跑得这么急？用不着担心，今天的日程没那么紧张。",
+		subtitle_id = 1012,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451013] = {
+		id = 10451013,
+		form_id = 0,
+		content = "管理员会迟到还真少见…走错大楼？（轻笑声）你也会睡昏头嘛。",
+		subtitle_id = 1013,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[1045101130] = {
+		id = 1045101130,
+		form_id = 0,
+		content = "管理员，你总是这么准时。",
+		subtitle_id = 101130,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451021] = {
+		id = 10451021,
+		form_id = 0,
+		content = "随时都能出发。",
+		subtitle_id = 1021,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451022] = {
+		id = 10451022,
+		form_id = 0,
+		content = "在找我吗？",
+		subtitle_id = 1022,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451031] = {
+		id = 10451031,
+		form_id = 0,
+		content = "我是隶属于芬里尔极东支部第一部队的亚莉莎·伊莉妮提娜·阿米耶拉，叫我亚莉莎就好。",
+		subtitle_id = 1031,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451041] = {
+		id = 10451041,
+		form_id = 0,
+		content = "榴弹、回复弹、陷阱……还是全都带上吧。",
+		subtitle_id = 1041,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451051] = {
+		id = 10451051,
+		form_id = 0,
+		content = "出发之前，我还想和你讨论一下这次的战术安排。",
+		subtitle_id = 1051,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451061] = {
+		id = 10451061,
+		form_id = 0,
+		content = "学习的目的，是为了理解自己究竟能做到什么。",
+		subtitle_id = 1061,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451071] = {
+		id = 10451071,
+		form_id = 0,
+		content = "神机还有这样的运用方式……谢谢你的建议，我受益良多。",
+		subtitle_id = 1071,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451081] = {
+		id = 10451081,
+		form_id = 0,
+		content = "不管在哪个世界里，我要做的事情都不会变，为了解决他人的问题而做自己力所能及的事情，有什么需要帮忙的请都告诉我吧。",
+		subtitle_id = 1081,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451091] = {
+		id = 10451091,
+		form_id = 0,
+		content = "比起感慨前路的艰难险阻，不如为了解决问题而迈出第一步，这份力量正是为此而存在的，管理员，你愿意陪我一起踏出这一步吗？",
+		subtitle_id = 1091,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451101] = {
+		id = 10451101,
+		form_id = 0,
+		content = "不论怎样的战术，都要运用在实战中才能予以检验。",
+		subtitle_id = 1101,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451111] = {
+		id = 10451111,
+		form_id = 0,
+		content = "新的同伴……以后还请多多指教。",
+		subtitle_id = 1111,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451121] = {
+		id = 10451121,
+		form_id = 0,
+		content = "以前……好像也有过类似的体验，没想到在这边也会发生感应现象。",
+		subtitle_id = 1121,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451131] = {
+		id = 10451131,
+		form_id = 0,
+		content = "说起来……我还是第一次担任这样的工作，助理究竟是要做什么呢？",
+		subtitle_id = 1131,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451141] = {
+		id = 10451141,
+		form_id = 0,
+		content = "奇装异服？才不是！这只是尺寸不对，所以拉链拉不上来而已……",
+		subtitle_id = 1141,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[1045114130] = {
+		id = 1045114130,
+		form_id = 0,
+		content = "呼……我已经很久没有这样放松过了。要说的话……可能是因为有你在身边吧。",
+		subtitle_id = 114130,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451151] = {
+		id = 10451151,
+		form_id = 0,
+		content = "管理员真是个奇妙的人……我能感觉得到，这里的大家都信赖着你。",
+		subtitle_id = 1151,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[1045115130] = {
+		id = 1045115130,
+		form_id = 0,
+		content = "说起来……每次和你见面……你都会让我发现全新的一面。我想，我还是需要更多了解你才行。就从现在开始怎么样？",
+		subtitle_id = 115130,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451161] = {
+		id = 10451161,
+		form_id = 0,
+		content = "神机能不能捕食视骸？嗯……我也不知道诶，毕竟它们不是荒神。",
+		subtitle_id = 1161,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451162] = {
+		id = 10451162,
+		form_id = 0,
+		content = "之前说的联欢会，选好在哪办了吗？「我的房间」？呃……可以给我一点时间吗？",
+		subtitle_id = 1162,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451163] = {
+		id = 10451163,
+		form_id = 0,
+		content = "我学着做了一份艾因索菲料理，要尝尝……等等，你干嘛一副害怕的表情？",
+		subtitle_id = 1163,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451171] = {
+		id = 10451171,
+		form_id = 0,
+		content = "唉……在这种地方睡着会着凉的，回房间去吧。",
+		subtitle_id = 1171,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451172] = {
+		id = 10451172,
+		form_id = 0,
+		content = "诶？原来只是在发呆，我还以为你睡着了……",
+		subtitle_id = 1172,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451173] = {
+		id = 10451173,
+		form_id = 0,
+		content = "嗯？别再硬撑了，要是累倒了不是适得其反吗？",
+		subtitle_id = 1173,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451181] = {
+		id = 10451181,
+		form_id = 0,
+		content = "唔……冷静一点，别这么着急。",
+		subtitle_id = 1181,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451191] = {
+		id = 10451191,
+		form_id = 0,
+		content = "呀啊！管理员……恶作剧可不是大人该做的行为。",
+		subtitle_id = 1191,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451201] = {
+		id = 10451201,
+		form_id = 0,
+		content = "谢谢，我会好好准备回礼的。",
+		subtitle_id = 1201,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451211] = {
+		id = 10451211,
+		form_id = 0,
+		content = "这里的一切都让人觉得陌生，未曾见过的风景，洋溢着笑容的城市……如果能让芬里尔的大家也看见这样美好的景象就好了。",
+		subtitle_id = 1211,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451221] = {
+		id = 10451221,
+		form_id = 0,
+		content = "我的目标，就是面对他人束手无策的问题时，首先踏出解决问题的第一步，即便没法立刻解决问题，我也要做自己力所能及的事情。",
+		subtitle_id = 1221,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451231] = {
+		id = 10451231,
+		form_id = 0,
+		content = "重要的东西就像堆在房间里的书一样，总会在不知不觉间变多，所以我才要加倍努力……才能守护这一切。咳咳……那只是个比喻而已，不是说我的房间真的很乱！总之，下次你来之前我会好好整理的……",
+		subtitle_id = 1231,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451241] = {
+		id = 10451241,
+		form_id = 0,
+		content = "管理员也会有耿耿于怀的事情吗？在我生活的那个世界发生了许多事情……有开心的过去，也有悲伤的回忆，正是那一切构成了现在的我，所以我想，不管遇到怎样的事情，都要鼓起勇气去面对。",
+		subtitle_id = 1241,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451251] = {
+		id = 10451251,
+		form_id = 0,
+		content = "明明我一直想要成为能够帮助他人的人……但其实我一直在接受他人的好意，就像这里的大家，以及你在帮助我一样，在不断与他人相遇的过程中，我也得到了许多。但是我不能总是只接受你的帮助，我也想成为你的助力，在你有需要的时候，我也一定会帮助你的。",
+		subtitle_id = 1251,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10451301] = {
+		id = 10451301,
+		form_id = 0,
+		content = "偶尔换一件衣服也不错，谢谢。",
+		subtitle_id = 1301,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452011] = {
+		id = 10452011,
+		form_id = 0,
+		content = "任务开始，做好战斗准备！",
+		subtitle_id = 2011,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452012] = {
+		id = 10452012,
+		form_id = 0,
+		content = "作战要领第一条，绝对要活着回去。",
+		subtitle_id = 2012,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452021] = {
+		id = 10452021,
+		form_id = 0,
+		content = "我绝不会打偏。",
+		subtitle_id = 2021,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452031] = {
+		id = 10452031,
+		form_id = 0,
+		content = "我来做你的对手！",
+		subtitle_id = 2031,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452041] = {
+		id = 10452041,
+		form_id = 0,
+		content = "我对你们无话可说。",
+		subtitle_id = 2041,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452051] = {
+		id = 10452051,
+		form_id = 0,
+		content = "咳……我没事，别担心。",
+		subtitle_id = 2051,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452061] = {
+		id = 10452061,
+		form_id = 0,
+		content = "大家……对不起……",
+		subtitle_id = 2061,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452071] = {
+		id = 10452071,
+		form_id = 0,
+		content = "以逸待劳……说的就是这回事吧。",
+		subtitle_id = 2071,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452081] = {
+		id = 10452081,
+		form_id = 0,
+		content = "不管来多少只都一样。",
+		subtitle_id = 2081,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452091] = {
+		id = 10452091,
+		form_id = 0,
+		content = "不好意思，到此为止了。",
+		subtitle_id = 2091,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452101] = {
+		id = 10452101,
+		form_id = 0,
+		content = "大家似乎都没事，真是太好了。",
+		subtitle_id = 2101,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452102] = {
+		id = 10452102,
+		form_id = 0,
+		content = "比预想中要轻松不少，多亏了你。",
+		subtitle_id = 2102,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452111] = {
+		id = 10452111,
+		form_id = 0,
+		content = "捕食！",
+		subtitle_id = 2111,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452112] = {
+		id = 10452112,
+		form_id = 0,
+		content = "一口气消灭它们！",
+		subtitle_id = 2112,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452121] = {
+		id = 10452121,
+		form_id = 0,
+		content = "现在就是机会！",
+		subtitle_id = 2121,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452131] = {
+		id = 10452131,
+		form_id = 0,
+		content = "就这样一口气解决它们！",
+		subtitle_id = 2131,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452141] = {
+		id = 10452141,
+		form_id = 0,
+		content = "神机解放！",
+		subtitle_id = 2141,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452142] = {
+		id = 10452142,
+		form_id = 0,
+		content = "这就是……神机使的力量！",
+		subtitle_id = 2142,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452151] = {
+		id = 10452151,
+		form_id = 0,
+		content = "太慢了！",
+		subtitle_id = 2151,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452161] = {
+		id = 10452161,
+		form_id = 0,
+		content = "我不会让这个机会白白溜走 ！",
+		subtitle_id = 2161,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452171] = {
+		id = 10452171,
+		form_id = 0,
+		content = "别太勉强自己，接下来交给我吧。",
+		subtitle_id = 2171,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452181] = {
+		id = 10452181,
+		form_id = 0,
+		content = "让我来终结这一切吧。",
+		subtitle_id = 2181,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452191] = {
+		id = 10452191,
+		form_id = 0,
+		content = "我来负责掩护，请放手去干吧！",
+		subtitle_id = 2191,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452201] = {
+		id = 10452201,
+		form_id = 0,
+		content = "目标出现，别掉以轻心。",
+		subtitle_id = 2201,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452202] = {
+		id = 10452202,
+		form_id = 0,
+		content = "要对付它的话……恐怕得换一种战斗方式。",
+		subtitle_id = 2202,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452211] = {
+		id = 10452211,
+		form_id = 0,
+		content = "力量涌上来了……",
+		subtitle_id = 2211,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452221] = {
+		id = 10452221,
+		form_id = 0,
+		content = "谢谢，这样就能继续战斗了。",
+		subtitle_id = 2221,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[10452231] = {
+		id = 10452231,
+		form_id = 0,
+		content = "还没完呢！",
+		subtitle_id = 2231,
+		team_hero_id_list = "",
+		chara_id = 1045
+	},
+	[1045011011] = {
+		id = 1045011011,
+		form_id = 0,
+		content = "管理员，你总是这么准时。",
+		subtitle_id = 1011,
+		team_hero_id_list = "",
+		chara_id = 104501
+	},
+	[1045011141] = {
+		id = 1045011141,
+		form_id = 0,
+		content = "呼……我已经很久没有这样放松过了。要说的话……可能是因为有你在身边吧。",
+		subtitle_id = 1141,
+		team_hero_id_list = "",
+		chara_id = 104501
+	},
+	[1045011151] = {
+		id = 1045011151,
+		form_id = 0,
+		content = "说起来……每次和你见面……你都会让我发现全新的一面。我想，我还是需要更多了解你才行。就从现在开始怎么样？",
+		subtitle_id = 1151,
+		team_hero_id_list = "",
+		chara_id = 104501
+	},
+	[10461011] = {
+		id = 10461011,
+		form_id = 0,
+		content = "啊……欢迎回归，你比预定时间来的要晚，发生什么事了么？",
+		subtitle_id = 1011,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461012] = {
+		id = 10461012,
+		form_id = 0,
+		content = "啊……你走之后，我试着处理了些文件，你需要确认一下吗？",
+		subtitle_id = 1012,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461013] = {
+		id = 10461013,
+		form_id = 0,
+		content = "啊……不用担心，你需要外出工作的时候，我都会在这待命。",
+		subtitle_id = 1013,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[1046101129] = {
+		id = 1046101129,
+		form_id = 0,
+		content = "晚上好，管理员。",
+		subtitle_id = 101129,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461021] = {
+		id = 10461021,
+		form_id = 0,
+		content = "雪儿·阿朗松，正在待命。",
+		subtitle_id = 1021,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461022] = {
+		id = 10461022,
+		form_id = 0,
+		content = "有什么我能为你做的？",
+		subtitle_id = 1022,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461031] = {
+		id = 10461031,
+		form_id = 0,
+		content = "重新自我介绍一下，芬里尔极致化技术开发局所属，雪儿·阿朗松，之后的时间还请多关照。",
+		subtitle_id = 1031,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461041] = {
+		id = 10461041,
+		form_id = 0,
+		content = "了解，现在加入作战。",
+		subtitle_id = 1041,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461051] = {
+		id = 10461051,
+		form_id = 0,
+		content = "唔……要由我来带队吗？",
+		subtitle_id = 1051,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461061] = {
+		id = 10461061,
+		form_id = 0,
+		content = "虽然是完全不同的战斗方式，但从战术理论的角度来说也确实具有更多的可能性……谢谢，我受益良多。",
+		subtitle_id = 1061,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461071] = {
+		id = 10461071,
+		form_id = 0,
+		content = "有那么一瞬间，血液像是在沸腾……我应该算是，变强了吧？",
+		subtitle_id = 1071,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461081] = {
+		id = 10461081,
+		form_id = 0,
+		content = "训练方式很有成效，谢谢，管理员。现在的我，应该也能够帮上你们的忙了。",
+		subtitle_id = 1081,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461091] = {
+		id = 10461091,
+		form_id = 0,
+		content = "虽然我也曾想过，盖亚世界中的这份力量或许不属于我，但现在也必须向前迈进……为了不论在哪个世界，都能更好地活下去。",
+		subtitle_id = 1091,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461101] = {
+		id = 10461101,
+		form_id = 0,
+		content = "嗯，之后立刻安排实战训练来巩固吧。",
+		subtitle_id = 1101,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461111] = {
+		id = 10461111,
+		form_id = 0,
+		content = "战斗支援就麻烦你了。",
+		subtitle_id = 1111,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461121] = {
+		id = 10461121,
+		form_id = 0,
+		content = "这是……感应现象？",
+		subtitle_id = 1121,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461131] = {
+		id = 10461131,
+		form_id = 0,
+		content = "那么从现在开始，还请严格遵守我为你制定的日程。",
+		subtitle_id = 1131,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461141] = {
+		id = 10461141,
+		form_id = 0,
+		content = "管理员是对日程安排有什么问题吗？不用担心，我有确实为你留出8小时整的睡眠时间。",
+		subtitle_id = 1141,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[1046114129] = {
+		id = 1046114129,
+		form_id = 0,
+		content = "很抱歉这个时间叫你来。 有些事……我还是想当面说。那个，虽然我可能没有这样的资格……但，请让我成为你的伙伴。我也想试着……融入这里。可以吗？",
+		subtitle_id = 114129,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461151] = {
+		id = 10461151,
+		form_id = 0,
+		content = "散步休息？谢谢你的邀请，不过现在仍是工作时间，先专注处理眼前的事吧。",
+		subtitle_id = 1151,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[1046115129] = {
+		id = 1046115129,
+		form_id = 0,
+		content = "你说……有事想请我帮忙？曲谱？好棒的旋律……这是管理员编写的吗？不可思议，只是这样就觉得能让人平静下来。谢谢你，管理员，期待你完成后，能和你一起演奏。",
+		subtitle_id = 115129,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461161] = {
+		id = 10461161,
+		form_id = 0,
+		content = "对不起，我实在不是很擅长社交辞令，如果之后我说了什么奇怪的话，还请多包涵。",
+		subtitle_id = 1161,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461162] = {
+		id = 10461162,
+		form_id = 0,
+		content = "嗯？你的配枪……能借我看看吗？九毫米口径、双排弹匣……啊，抱歉！我好像太投入了，谢谢。",
+		subtitle_id = 1162,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461163] = {
+		id = 10461163,
+		form_id = 0,
+		content = "虽然你这么问我，但关于我生活的那个世界，没有什么能被称作故事，希望你……不要介意。",
+		subtitle_id = 1163,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461171] = {
+		id = 10461171,
+		form_id = 0,
+		content = "醒醒，现在还没有到睡眠的时间。",
+		subtitle_id = 1171,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461172] = {
+		id = 10461172,
+		form_id = 0,
+		content = "容我提醒，你尚有未完成的文书工作。",
+		subtitle_id = 1172,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461173] = {
+		id = 10461173,
+		form_id = 0,
+		content = "管理员，现在需要医疗支援介入么？",
+		subtitle_id = 1173,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461181] = {
+		id = 10461181,
+		form_id = 0,
+		content = "噫！等等，好痒……咳，请不要浪费时间在无聊的玩笑上了。",
+		subtitle_id = 1181,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461191] = {
+		id = 10461191,
+		form_id = 0,
+		content = "嗯？这个震动……是荒神吗？",
+		subtitle_id = 1191,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461201] = {
+		id = 10461201,
+		form_id = 0,
+		content = "给我的礼物？……谢谢。",
+		subtitle_id = 1201,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461211] = {
+		id = 10461211,
+		form_id = 0,
+		content = "规划日程只是我的习惯，遵守「纪律」的行动才可被称之为有效。何况空闲的时间我也没有其他的活动可以安排，索性就不要让自己有空下来的时间。",
+		subtitle_id = 1211,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461221] = {
+		id = 10461221,
+		form_id = 0,
+		content = "来到这里后，我才第一次见到记载中那样繁华的人类文明，「曾经」竟是如此辉煌的代名词……管理员，你们还有更多的可能性。为了不失去这个美丽世界的未来，请将它继续守护下去。",
+		subtitle_id = 1221,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461231] = {
+		id = 10461231,
+		form_id = 0,
+		content = "机会难得，我能问一个问题吗？为什么当时会那样不遗余力地帮助我，即便我们素不相识……只是因为我露出了困扰的表情？你的行为……总是会超出我的预料。",
+		subtitle_id = 1231,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461241] = {
+		id = 10461241,
+		form_id = 0,
+		content = "其实我知道自己对外面的世界了解太少，或许很多人对我会有不谙世事的评价吧……所以我想，如果和你、和深空之眼的大家成为朋友的话，或许就能知道该怎么去做了。万事拜托，管理员……是这么说吧？",
+		subtitle_id = 1241,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461251] = {
+		id = 10461251,
+		form_id = 0,
+		content = "我之前完全没有想过有一天会像今夜这样……可以暂时放下斗争和戒备，平和就像星星一样近在眼前，仿佛唾手可得。可能这么说会有点奇怪吧，现在的我已经搞不明白自己的心情了……但是，可以确定的是，我非常感谢、感谢和你的相遇。",
+		subtitle_id = 1251,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10461301] = {
+		id = 10461301,
+		form_id = 0,
+		content = "好、好可爱……咳咳，我知道了，我会换上的。",
+		subtitle_id = 1301,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462011] = {
+		id = 10462011,
+		form_id = 0,
+		content = "已经到达任务地点，开始清除作战。",
+		subtitle_id = 2011,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462012] = {
+		id = 10462012,
+		form_id = 0,
+		content = "全员，作战准备！",
+		subtitle_id = 2012,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462021] = {
+		id = 10462021,
+		form_id = 0,
+		content = "执行战术！",
+		subtitle_id = 2021,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462031] = {
+		id = 10462031,
+		form_id = 0,
+		content = "速战速决！",
+		subtitle_id = 2031,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462041] = {
+		id = 10462041,
+		form_id = 0,
+		content = "不要冒进。",
+		subtitle_id = 2041,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462051] = {
+		id = 10462051,
+		form_id = 0,
+		content = "我没事，不会影响到战术的施行。",
+		subtitle_id = 2051,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462061] = {
+		id = 10462061,
+		form_id = 0,
+		content = "抱歉……让你失望了。",
+		subtitle_id = 2061,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462071] = {
+		id = 10462071,
+		form_id = 0,
+		content = "不要有顾虑，请下令吧。",
+		subtitle_id = 2071,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462081] = {
+		id = 10462081,
+		form_id = 0,
+		content = "目标排除！",
+		subtitle_id = 2081,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462091] = {
+		id = 10462091,
+		form_id = 0,
+		content = "好，下一个！",
+		subtitle_id = 2091,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462101] = {
+		id = 10462101,
+		form_id = 0,
+		content = "胜利了，多亏有你的指挥。",
+		subtitle_id = 2101,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462102] = {
+		id = 10462102,
+		form_id = 0,
+		content = "看来我们的战术思考很相似。",
+		subtitle_id = 2102,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462111] = {
+		id = 10462111,
+		form_id = 0,
+		content = "形态转变！",
+		subtitle_id = 2111,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462112] = {
+		id = 10462112,
+		form_id = 0,
+		content = "捕食，开始！",
+		subtitle_id = 2112,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462121] = {
+		id = 10462121,
+		form_id = 0,
+		content = "一口气收拾干净吧。",
+		subtitle_id = 2121,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462131] = {
+		id = 10462131,
+		form_id = 0,
+		content = "目标，锁定！",
+		subtitle_id = 2131,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462141] = {
+		id = 10462141,
+		form_id = 0,
+		content = "结束了！",
+		subtitle_id = 2141,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462142] = {
+		id = 10462142,
+		form_id = 0,
+		content = "神机解放！",
+		subtitle_id = 2142,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462151] = {
+		id = 10462151,
+		form_id = 0,
+		content = "避开了。",
+		subtitle_id = 2151,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462161] = {
+		id = 10462161,
+		form_id = 0,
+		content = "目标，拘束成功。",
+		subtitle_id = 2161,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462171] = {
+		id = 10462171,
+		form_id = 0,
+		content = "先退后，回复一下状态。",
+		subtitle_id = 2171,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462181] = {
+		id = 10462181,
+		form_id = 0,
+		content = "我来配合。",
+		subtitle_id = 2181,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462191] = {
+		id = 10462191,
+		form_id = 0,
+		content = "不会让你逃掉的。",
+		subtitle_id = 2191,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462201] = {
+		id = 10462201,
+		form_id = 0,
+		content = "目标出现，迎击准备。",
+		subtitle_id = 2201,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462202] = {
+		id = 10462202,
+		form_id = 0,
+		content = "看来，会稍微有些麻烦。",
+		subtitle_id = 2202,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462211] = {
+		id = 10462211,
+		form_id = 0,
+		content = "感谢支援！",
+		subtitle_id = 2211,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462221] = {
+		id = 10462221,
+		form_id = 0,
+		content = "这样就没问题了，我还能继续战斗。",
+		subtitle_id = 2221,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[10462231] = {
+		id = 10462231,
+		form_id = 0,
+		content = "还没有结束！",
+		subtitle_id = 2231,
+		team_hero_id_list = "",
+		chara_id = 1046
+	},
+	[1046011011] = {
+		id = 1046011011,
+		form_id = 0,
+		content = "晚上好，管理员。",
+		subtitle_id = 1011,
+		team_hero_id_list = "",
+		chara_id = 104601
+	},
+	[1046011141] = {
+		id = 1046011141,
+		form_id = 0,
+		content = "很抱歉这个时间叫你来。 有些事……我还是想当面说。那个，虽然我可能没有这样的资格……但，请让我成为你的伙伴。我也想试着……融入这里。可以吗？",
+		subtitle_id = 1141,
+		team_hero_id_list = "",
+		chara_id = 104601
+	},
+	[1046011151] = {
+		id = 1046011151,
+		form_id = 0,
+		content = "你说……有事想请我帮忙？曲谱？好棒的旋律……这是管理员编写的吗？不可思议，只是这样就觉得能让人平静下来。谢谢你，管理员，期待你完成后，能和你一起演奏。",
+		subtitle_id = 1151,
+		team_hero_id_list = "",
+		chara_id = 104601
+	},
 	[10481011] = {
 		id = 10481011,
 		form_id = 0,
@@ -19135,6 +20687,594 @@
 		team_hero_id_list = "",
 		chara_id = 1072
 	},
+	[10732241] = {
+		id = 10732241,
+		form_id = 0,
+		content = "姐姐放心，一切准备妥当！",
+		subtitle_id = 2241,
+		chara_id = 1073,
+		team_hero_id_list = {
+			1074
+		}
+	},
+	[10732242] = {
+		id = 10732242,
+		form_id = 0,
+		content = "老师，你要的资料都在这里了！",
+		subtitle_id = 2242,
+		chara_id = 1073,
+		team_hero_id_list = {
+			1061
+		}
+	},
+	[10731011] = {
+		id = 10731011,
+		form_id = 0,
+		content = "管理员，我带了新作品来。对了，记得要告诉我使用感受！",
+		subtitle_id = 1011,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[1073101128] = {
+		id = 1073101128,
+		form_id = 0,
+		content = "欢迎欢迎！走过路过不要错过，刺桐港特色小吃，要尝试一下吗？",
+		subtitle_id = 101128,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731012] = {
+		id = 10731012,
+		form_id = 0,
+		content = "真巧，文书资料刚整理好！嘿嘿，举手之劳而已啦~",
+		subtitle_id = 1012,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731013] = {
+		id = 10731013,
+		form_id = 0,
+		content = "别慌，早猜到你可能会睡过头。给，你落下的会议资料！",
+		subtitle_id = 1013,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731021] = {
+		id = 10731021,
+		form_id = 0,
+		content = "找我吗？",
+		subtitle_id = 1021,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731022] = {
+		id = 10731022,
+		form_id = 0,
+		content = "我就在这呀。",
+		subtitle_id = 1022,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731031] = {
+		id = 10731031,
+		form_id = 0,
+		content = "管理员，又见面啦。是我，麟钰！之后的时间，就麻烦管理员多多指教咯！",
+		subtitle_id = 1031,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731041] = {
+		id = 10731041,
+		form_id = 0,
+		content = "好，算我一个！",
+		subtitle_id = 1041,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731051] = {
+		id = 10731051,
+		form_id = 0,
+		content = "我来带队？机会难得，我会努力的！",
+		subtitle_id = 1051,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731061] = {
+		id = 10731061,
+		form_id = 0,
+		content = "唔，要如何把书中的理论运用到实战中，看起来并没有那么简单……",
+		subtitle_id = 1061,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731071] = {
+		id = 10731071,
+		form_id = 0,
+		content = "「不可因为一时的进步而骄傲自满」，这句话我会谨记的！不过，被管理员夸奖确实挺开心的，诶嘿。",
+		subtitle_id = 1071,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731081] = {
+		id = 10731081,
+		form_id = 0,
+		content = "知识不是只能从书上得来，管理员一步一步带我见识到的新世界，是最好的教材。",
+		subtitle_id = 1081,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731091] = {
+		id = 10731091,
+		form_id = 0,
+		content = "想要让机关活动自如，光靠零件是不够的，最重要的是找到合适的动力源。而现在，想要回报管理员给予我的帮助的想法，就是让我不断向前的力量。",
+		subtitle_id = 1091,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731101] = {
+		id = 10731101,
+		form_id = 0,
+		content = "装置调试好了，真想现在就去试试！",
+		subtitle_id = 1101,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731111] = {
+		id = 10731111,
+		form_id = 0,
+		content = "……诶，我来做老师吗？",
+		subtitle_id = 1111,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731121] = {
+		id = 10731121,
+		form_id = 0,
+		content = "技无大小，贵在能精。",
+		subtitle_id = 1121,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731131] = {
+		id = 10731131,
+		form_id = 0,
+		content = "能用学到的知识帮上管理员，真是太好了。",
+		subtitle_id = 1131,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731141] = {
+		id = 10731141,
+		form_id = 0,
+		content = "机关术讲究「牵一发而动全身」，所以……管理员相信我，那台设备我真的只碰了一下。",
+		subtitle_id = 1141,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[1073114128] = {
+		id = 1073114128,
+		form_id = 0,
+		content = "呼……总算告一段落了。啊，管理员是来拿说好的特产的吧~等我一下哦~嘿咻……喏，都在这~！好吃再来哦~",
+		subtitle_id = 114128,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731151] = {
+		id = 10731151,
+		form_id = 0,
+		content = "啊，管理员再等等！我快要明白怎么修理那台古董……诶？你拍了拍就好了？",
+		subtitle_id = 1151,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[1073115128] = {
+		id = 1073115128,
+		form_id = 0,
+		content = "管理员，这里这里！诶？原来你对它有兴趣啊。嘿嘿，常说站如东西塔~是这里的地标建筑呢！等我有空的时候，一起去逛逛吧~",
+		subtitle_id = 115128,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731161] = {
+		id = 10731161,
+		form_id = 0,
+		content = "要出门吗？那我得把锥子扳手千斤顶都带上……我是机关师，带上这些也很正常吧？",
+		subtitle_id = 1161,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731162] = {
+		id = 10731162,
+		form_id = 0,
+		content = "诶，管理员你刚才叫我吗？我没事，老师的课题快要解出来了……只要再一晚就好！",
+		subtitle_id = 1162,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731163] = {
+		id = 10731163,
+		form_id = 0,
+		content = "啊——诶，管理员？嘘！糖葫芦可以分你一半，你能替我保密……啊，管理员！",
+		subtitle_id = 1163,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731171] = {
+		id = 10731171,
+		form_id = 0,
+		content = "管理员，你知道……啊，已经休息了吗，那我一会儿再来~",
+		subtitle_id = 1171,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731172] = {
+		id = 10731172,
+		form_id = 0,
+		content = "管理员，管理员？诶，睡着了呀，那就好好休息吧~",
+		subtitle_id = 1172,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731173] = {
+		id = 10731173,
+		form_id = 0,
+		content = "管理员吃点心吗？唔，不在的话，我可就全吃掉咯。",
+		subtitle_id = 1173,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731181] = {
+		id = 10731181,
+		form_id = 0,
+		content = "哎哎痒痒痒……！别想躲，让我也挠回去！",
+		subtitle_id = 1181,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731191] = {
+		id = 10731191,
+		form_id = 0,
+		content = "诶？装置故障了吗？呼……原来是管理员啊。",
+		subtitle_id = 1191,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731201] = {
+		id = 10731201,
+		form_id = 0,
+		content = "谢谢管理员！我会把它放进最安全的盒子里的！",
+		subtitle_id = 1201,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731211] = {
+		id = 10731211,
+		form_id = 0,
+		content = "缝纫、烹饪、打理家务……大家总是在担心我会太累，但这些都只是小事情而已，我没有在勉强自己！反倒是我还有很多要学习的地方，为此才要更有效率地利用时间。好了管理员，等我做完最后这个课题就能开饭了。",
+		subtitle_id = 1211,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731221] = {
+		id = 10731221,
+		form_id = 0,
+		content = "管理员，你喜欢听嘀嗒嘀嗒的声音吗？每次按下机关启动键，装置顺利运作的声音总是让我感到开心，这就证明我的创造能够发挥作用，也许在未来的某个时刻，就能成为帮助别人的力量。",
+		subtitle_id = 1221,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731231] = {
+		id = 10731231,
+		form_id = 0,
+		content = "帮执明老师打理天理阁事务时，我大部分时间都呆在实验室里，整天与各种装置打交道……有人说，成长的一部分就是经历这样的孤独。但我并没有这种感觉，可能因为机关术真的很有趣吧。而且，我也因此才能认识大家，才能和大家站在一起，不是吗？",
+		subtitle_id = 1231,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731241] = {
+		id = 10731241,
+		form_id = 0,
+		content = "对我来说，「独当一面」原本是个那么遥远的词，但是管理员的行动无时无刻都在告诉我，最关键的是那颗想要帮助人的心……我想，我知道要怎么做了。",
+		subtitle_id = 1241,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731251] = {
+		id = 10731251,
+		form_id = 0,
+		content = "「成长」是比解开机关更难的过程，在迷茫的时候，总是管理员为我指出最关键的要点。我知道，之后的路上还会有很多困难和阻碍，但是只要有管理员陪伴在身边，我永远能找到解法。",
+		subtitle_id = 1251,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10731301] = {
+		id = 10731301,
+		form_id = 0,
+		content = "诶诶，我穿这个会合适吗？",
+		subtitle_id = 1301,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732011] = {
+		id = 10732011,
+		form_id = 0,
+		content = "准备好了！",
+		subtitle_id = 2011,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732012] = {
+		id = 10732012,
+		form_id = 0,
+		content = "需要我做什么？",
+		subtitle_id = 2012,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732021] = {
+		id = 10732021,
+		form_id = 0,
+		content = "飞燕入云！",
+		subtitle_id = 2021,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732031] = {
+		id = 10732031,
+		form_id = 0,
+		content = "直上青云！",
+		subtitle_id = 2031,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732041] = {
+		id = 10732041,
+		form_id = 0,
+		content = "这可不是「小玩意儿」！",
+		subtitle_id = 2041,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732051] = {
+		id = 10732051,
+		form_id = 0,
+		content = "没事没事，别担心我……",
+		subtitle_id = 2051,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732061] = {
+		id = 10732061,
+		form_id = 0,
+		content = "给大家添麻烦了……",
+		subtitle_id = 2061,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732071] = {
+		id = 10732071,
+		form_id = 0,
+		content = "诶，哪里卡住了吗？",
+		subtitle_id = 2071,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732081] = {
+		id = 10732081,
+		form_id = 0,
+		content = "说过不要乱碰东西了！",
+		subtitle_id = 2081,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732091] = {
+		id = 10732091,
+		form_id = 0,
+		content = "中计了吧！",
+		subtitle_id = 2091,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732101] = {
+		id = 10732101,
+		form_id = 0,
+		content = "我没说假话吧，我能帮上忙的~",
+		subtitle_id = 2101,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732102] = {
+		id = 10732102,
+		form_id = 0,
+		content = "战斗方面的进步，多亏了管理员的指挥~",
+		subtitle_id = 2102,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732111] = {
+		id = 10732111,
+		form_id = 0,
+		content = "利器无眼，小心闪避~",
+		subtitle_id = 2111,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732112] = {
+		id = 10732112,
+		form_id = 0,
+		content = "响雷来袭，捂紧耳朵！",
+		subtitle_id = 2112,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732121] = {
+		id = 10732121,
+		form_id = 0,
+		content = "机关调试完毕！",
+		subtitle_id = 2121,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732131] = {
+		id = 10732131,
+		form_id = 0,
+		content = "飞刃蓄势待发！",
+		subtitle_id = 2131,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732141] = {
+		id = 10732141,
+		form_id = 0,
+		content = "舞风铃声作，飞刃化雨落！",
+		subtitle_id = 2141,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732142] = {
+		id = 10732142,
+		form_id = 0,
+		content = "巧机已成阵，牵丝定输赢！",
+		subtitle_id = 2142,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732151] = {
+		id = 10732151,
+		form_id = 0,
+		content = "呼，差点中招了。",
+		subtitle_id = 2151,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732161] = {
+		id = 10732161,
+		form_id = 0,
+		content = "这天罗地网，等的就是你！",
+		subtitle_id = 2161,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732171] = {
+		id = 10732171,
+		form_id = 0,
+		content = "你先休息，这里交给我！",
+		subtitle_id = 2171,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732181] = {
+		id = 10732181,
+		form_id = 0,
+		content = "让我来帮忙吧！",
+		subtitle_id = 2181,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732191] = {
+		id = 10732191,
+		form_id = 0,
+		content = "这就是瓮中捉鳖~",
+		subtitle_id = 2191,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732201] = {
+		id = 10732201,
+		form_id = 0,
+		content = "我可不会怕你们！",
+		subtitle_id = 2201,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732202] = {
+		id = 10732202,
+		form_id = 0,
+		content = "冷静冷静，不能退缩！",
+		subtitle_id = 2202,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732211] = {
+		id = 10732211,
+		form_id = 0,
+		content = "不会辜负大家！",
+		subtitle_id = 2211,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732221] = {
+		id = 10732221,
+		form_id = 0,
+		content = "又受大家照顾了。",
+		subtitle_id = 2221,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732231] = {
+		id = 10732231,
+		form_id = 0,
+		content = "……可不能拖后腿。",
+		subtitle_id = 2231,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[10732251] = {
+		id = 10732251,
+		form_id = 0,
+		content = "管理员并不是修正者，但却能为了保护人们挺身而出。虚恒那时也多亏有管理员的帮助，不然的话……嗯，还是不提这些了。总之有机会的话，要好好招待管理员一顿大餐作为报答呢。",
+		subtitle_id = 2251,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[1073226102] = {
+		id = 1073226102,
+		form_id = 0,
+		content = "从小到大都是姐姐在保护我。无论什么样的坏人和麻烦的事情，姐姐都有办法对付……可她本不需这么坚强，一定是因为太勉强自己才变得不爱笑的，要是我能早点帮上姐姐的忙就好了。",
+		subtitle_id = 226102,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[1073226103] = {
+		id = 1073226103,
+		form_id = 0,
+		content = "孟章前辈虽然看起来散漫，实际上想得可细了，不愧是四方院代理。以前我在习题中出了点小错，都是他提前给我指出来。嘿嘿，要不然肯定会被老师说一顿。",
+		subtitle_id = 226103,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[1073226104] = {
+		id = 1073226104,
+		form_id = 0,
+		content = "在外界看来老师是一个冷漠理智的掌权者，是知识渊博科研技术高超的学者。但实际上老师的性格并没有他们所说的那样锋芒，她会给不小心在实验室睡着的我盖毯子，会给不小心出了错的实验员耐心的讲解错误，会蹲下来平视和小孩子对话……如果他们能够更加了解老师就好了。",
+		subtitle_id = 226104,
+		team_hero_id_list = "",
+		chara_id = 1073
+	},
+	[1073011011] = {
+		id = 1073011011,
+		form_id = 0,
+		content = "欢迎欢迎！走过路过不要错过，刺桐港特色小吃，要尝试一下吗？",
+		subtitle_id = 1011,
+		team_hero_id_list = "",
+		chara_id = 107301
+	},
+	[1073011141] = {
+		id = 1073011141,
+		form_id = 0,
+		content = "呼……总算告一段落了。啊，管理员是来拿说好的特产的吧~等我一下哦~嘿咻……喏，都在这~！好吃再来哦~",
+		subtitle_id = 1141,
+		team_hero_id_list = "",
+		chara_id = 107301
+	},
+	[1073011151] = {
+		id = 1073011151,
+		form_id = 0,
+		content = "管理员，这里这里！诶？原来你对它有兴趣啊。嘿嘿，常说站如东西塔~是这里的地标建筑呢！等我有空的时候，一起去逛逛吧~",
+		subtitle_id = 1151,
+		team_hero_id_list = "",
+		chara_id = 107301
+	},
 	[10741011] = {
 		id = 10741011,
 		form_id = 0,
@@ -22390,6 +24530,990 @@
 		subtitle_id = 2221,
 		team_hero_id_list = "",
 		chara_id = 1084
+	},
+	[10851011] = {
+		id = 10851011,
+		form_id = 0,
+		content = "小昙……头发乱糟糟，我有在好好等你，不用着急的。",
+		subtitle_id = 1011,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851012] = {
+		id = 10851012,
+		form_id = 0,
+		content = "小昙……你一直在笑，今天发生了什么有趣的事情吗？",
+		subtitle_id = 1012,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851013] = {
+		id = 10851013,
+		form_id = 0,
+		content = "下次我想和你一起出门，和小昙一起，去哪都会很开心。",
+		subtitle_id = 1013,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085101127] = {
+		id = 1085101127,
+		form_id = 0,
+		content = "小昙，你离开了好久，我很担心你……",
+		subtitle_id = 101127,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085101201] = {
+		id = 1085101201,
+		form_id = 0,
+		content = "下次，如果你要走，可以带上我吗……",
+		subtitle_id = 101201,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085101301] = {
+		id = 1085101301,
+		form_id = 0,
+		content = "太好了……你来了，我正在想你……",
+		subtitle_id = 101301,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851021] = {
+		id = 10851021,
+		form_id = 0,
+		content = "在叫我吗……？",
+		subtitle_id = 1021,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085102101] = {
+		id = 1085102101,
+		form_id = 0,
+		content = "嗯……小昙？",
+		subtitle_id = 102101,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851022] = {
+		id = 10851022,
+		form_id = 0,
+		content = "小昙，怎么了？",
+		subtitle_id = 1022,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085102201] = {
+		id = 1085102201,
+		form_id = 0,
+		content = "你在找我吗？",
+		subtitle_id = 102201,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851031] = {
+		id = 10851031,
+		form_id = 0,
+		content = "我想把这一切都好好记录下来……小昙的笑脸，还有那些珍贵的回忆……",
+		subtitle_id = 1031,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851041] = {
+		id = 10851041,
+		form_id = 0,
+		content = "我们要去哪里？",
+		subtitle_id = 1041,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085104101] = {
+		id = 1085104101,
+		form_id = 0,
+		content = "如果这是你希望的话，我会做好的。",
+		subtitle_id = 104101,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851051] = {
+		id = 10851051,
+		form_id = 0,
+		content = "「队长」就是指挥大家的人。",
+		subtitle_id = 1051,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085105101] = {
+		id = 1085105101,
+		form_id = 0,
+		content = "小昙，如果你相信我的话，那我也相信你……",
+		subtitle_id = 105101,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851061] = {
+		id = 10851061,
+		form_id = 0,
+		content = "嗯，我还想学更多的知识。",
+		subtitle_id = 1061,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085106101] = {
+		id = 1085106101,
+		form_id = 0,
+		content = "我会努力的……我不想忘记……",
+		subtitle_id = 106101,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851071] = {
+		id = 10851071,
+		form_id = 0,
+		content = "小昙教给我的东西，我都会好好记住。",
+		subtitle_id = 1071,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085107101] = {
+		id = 1085107101,
+		form_id = 0,
+		content = "小昙，我会保护好你的……不用担心。",
+		subtitle_id = 107101,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851081] = {
+		id = 10851081,
+		form_id = 0,
+		content = "以前我常常会在梦里见到小昙，有些时候是兔子，有些时候是小鸟，但现在小昙就在我的面前……我已经不用再去幻想小昙的样子了。",
+		subtitle_id = 1081,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085107102] = {
+		id = 1085107102,
+		form_id = 0,
+		content = "如果帮不上小昙的忙，我会被讨厌吗……我不想要那样。",
+		subtitle_id = 107102,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851091] = {
+		id = 10851091,
+		form_id = 0,
+		content = "我在想……要是能永远和小昙在一起就好了，我想和你一起，去到很远很远的地方，见识那些未曾知晓的风景，然后把它们全部刻在记忆里。",
+		subtitle_id = 1091,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085107103] = {
+		id = 1085107103,
+		form_id = 0,
+		content = "我不能想象……没有小昙在身边的景象。小昙是最重要的人，如果真的可以的话……我想要和小昙永远这样下去。",
+		subtitle_id = 107103,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851101] = {
+		id = 10851101,
+		form_id = 0,
+		content = "嗯，我也做得到。",
+		subtitle_id = 1101,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085110101] = {
+		id = 1085110101,
+		form_id = 0,
+		content = "小昙你看，我做到了！",
+		subtitle_id = 110101,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851111] = {
+		id = 10851111,
+		form_id = 0,
+		content = "新朋友？那……现在是不是该开「迎新会」了？",
+		subtitle_id = 1111,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085111101] = {
+		id = 1085111101,
+		form_id = 0,
+		content = "新的朋友？嗯，我知道了……小昙的朋友也是我的朋友。",
+		subtitle_id = 111101,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851121] = {
+		id = 10851121,
+		form_id = 0,
+		content = "总觉得好像看见了些什么……这些是，过去的记忆？还是……未来的样子？",
+		subtitle_id = 1121,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085112101] = {
+		id = 1085112101,
+		form_id = 0,
+		content = "我能看见，时间的尽头……有你，有我。",
+		subtitle_id = 112101,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851131] = {
+		id = 10851131,
+		form_id = 0,
+		content = "虽然不知道该怎么做……但为了小昙，我会努力的。",
+		subtitle_id = 1131,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085113101] = {
+		id = 1085113101,
+		form_id = 0,
+		content = "我一定会帮上小昙的，无论你希望我做什么。",
+		subtitle_id = 113101,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851141] = {
+		id = 10851141,
+		form_id = 0,
+		content = "小昙，你也忘记了很多事吗……如果会难受的话就让它们过去吧。",
+		subtitle_id = 1141,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085114127] = {
+		id = 1085114127,
+		form_id = 0,
+		content = "小昙，你快来看~这样的景色，我在梦里见过好几次……但这次……终于能再和你一起来看了~",
+		subtitle_id = 114127,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851151] = {
+		id = 10851151,
+		form_id = 0,
+		content = "我把文件收拾了一下，看店的时候也会这样……有帮上你的忙吗？",
+		subtitle_id = 1151,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085115127] = {
+		id = 1085115127,
+		form_id = 0,
+		content = "好漂亮。欸？你想看的话……虽然大部分都是小昙帮我拍的，今天……真的玩得很开心。等一下，那张是！只是觉得，小昙笑起来，很好看……",
+		subtitle_id = 115127,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851161] = {
+		id = 10851161,
+		form_id = 0,
+		content = "想不想养猫？嗯……奈奈是很可爱。但是没关系，因为有你在，我已经足够开心了。",
+		subtitle_id = 1161,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085116102] = {
+		id = 1085116102,
+		form_id = 0,
+		content = "小昙说过，如果怕自己忘掉重要的事，就用这个拍下来。就像现在，小昙笑起来的样子……",
+		subtitle_id = 116102,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851162] = {
+		id = 10851162,
+		form_id = 0,
+		content = "再多和我讲一些这里的故事吧，你总是懂得好多我不知道的事情，好厉害。",
+		subtitle_id = 1162,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085116202] = {
+		id = 1085116202,
+		form_id = 0,
+		content = "这个……送给小昙。这次也折了很久……对不起，没法像小昙一样那么厉害……",
+		subtitle_id = 116202,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851163] = {
+		id = 10851163,
+		form_id = 0,
+		content = "呼……嗯……我睡着了？在你身边，总会觉得心里暖洋洋的……不知不觉就困起来了。",
+		subtitle_id = 1163,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085116302] = {
+		id = 1085116302,
+		form_id = 0,
+		content = "庆祝活动？唔……我只想和小昙一起玩。今天我们可以去海边逛逛吗？就像那天一样……",
+		subtitle_id = 116302,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085116602] = {
+		id = 1085116602,
+		form_id = 0,
+		content = "感觉……只要和小昙在一起，就可以分享烦恼，我们就可以去任何想去的地方。",
+		subtitle_id = 116602,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085116702] = {
+		id = 1085116702,
+		form_id = 0,
+		content = "小昙，不论我们去做什么，只要能和你一起，我就很开心了。",
+		subtitle_id = 116702,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851171] = {
+		id = 10851171,
+		form_id = 0,
+		content = "小昙的睡脸……（轻笑）。",
+		subtitle_id = 1171,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085117119] = {
+		id = 1085117119,
+		form_id = 0,
+		content = "小昙，睡着了吗……",
+		subtitle_id = 117119,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851172] = {
+		id = 10851172,
+		form_id = 0,
+		content = "再稍微看一会……",
+		subtitle_id = 1172,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085117201] = {
+		id = 1085117201,
+		form_id = 0,
+		content = "睡觉的样子，有点可爱……",
+		subtitle_id = 117201,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851173] = {
+		id = 10851173,
+		form_id = 0,
+		content = "累了就休息吧……",
+		subtitle_id = 1173,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085117301] = {
+		id = 1085117301,
+		form_id = 0,
+		content = "我会，在你身边……",
+		subtitle_id = 117301,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851181] = {
+		id = 10851181,
+		form_id = 0,
+		content = "……这样很有趣吗？那我也要玩~",
+		subtitle_id = 1181,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085118103] = {
+		id = 1085118103,
+		form_id = 0,
+		content = "唔……小昙，怎么了吗？我就在这里，哪也不去。",
+		subtitle_id = 118103,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851191] = {
+		id = 10851191,
+		form_id = 0,
+		content = "呀……小昙，这个是「地震」了吗？",
+		subtitle_id = 1191,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085119103] = {
+		id = 1085119103,
+		form_id = 0,
+		content = "呀……别担心，小昙，我没事的。",
+		subtitle_id = 119103,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851201] = {
+		id = 10851201,
+		form_id = 0,
+		content = "只要是你送给我的礼物，我都会好好珍惜。",
+		subtitle_id = 1201,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085120101] = {
+		id = 1085120101,
+		form_id = 0,
+		content = "这是小昙送我的礼物，我不会再弄丢了。",
+		subtitle_id = 120101,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851211] = {
+		id = 10851211,
+		form_id = 0,
+		content = "这个世界上有好多好多我不知道的事情，不管是书里看到的，还是朋友们告诉我的……我想要和你一起，一点点去了解它们。",
+		subtitle_id = 1211,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851221] = {
+		id = 10851221,
+		form_id = 0,
+		content = "以前我很喜欢做梦，在梦里就能见到小昙，小昙会陪我一起玩，会带着我去到很远很远的地方……但现在，我已经不用再做梦了，小昙就在这里。",
+		subtitle_id = 1221,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851231] = {
+		id = 10851231,
+		form_id = 0,
+		content = "我现在知道，每个人都是与众不同的，并不能只用「好人」和「坏人」去区分他们，每个人都是特别的……但是，小昙一定是这些所有人当中，最特别的那个。",
+		subtitle_id = 1231,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851241] = {
+		id = 10851241,
+		form_id = 0,
+		content = "我曾经想过，如果大家能够好好活下去的话，那就算我消失了也无所谓，是小昙教会了我，世界上没有「消失了也无所谓的人」……所以我才能站在这里，我还想要和大家在一起，和小昙在一起。",
+		subtitle_id = 1241,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851251] = {
+		id = 10851251,
+		form_id = 0,
+		content = "我常常会想自己究竟是谁，未来又要去到哪里，却没有任何人能告诉我答案，到后来「明天」甚至会让我觉得有些害怕……直到我又遇到了小昙，和小昙说话的时候，总会觉得很安心，牵住小昙的手，我就能鼓起勇气，虽然不知道究竟要花多久，但只要和你在一起，我就能找出那份答案……所以，我想要一直待在小昙身边，可以吗？",
+		subtitle_id = 1251,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10851301] = {
+		id = 10851301,
+		form_id = 0,
+		content = "小昙，你喜欢这件衣服吗？",
+		subtitle_id = 1301,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085130101] = {
+		id = 1085130101,
+		form_id = 0,
+		content = "小昙，我穿这件衣服，好看吗？",
+		subtitle_id = 130101,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852011] = {
+		id = 10852011,
+		form_id = 0,
+		content = "如果是为了保护小昙的话……",
+		subtitle_id = 2011,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852012] = {
+		id = 10852012,
+		form_id = 0,
+		content = "它们……为什么要干坏事呢？",
+		subtitle_id = 2012,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852021] = {
+		id = 10852021,
+		form_id = 0,
+		content = "我要和小昙并肩作战。",
+		subtitle_id = 2021,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852031] = {
+		id = 10852031,
+		form_id = 0,
+		content = "危险的东西，得赶走……",
+		subtitle_id = 2031,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852041] = {
+		id = 10852041,
+		form_id = 0,
+		content = "不想拖后腿……",
+		subtitle_id = 2041,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852051] = {
+		id = 10852051,
+		form_id = 0,
+		content = "呜……好痛……",
+		subtitle_id = 2051,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852061] = {
+		id = 10852061,
+		form_id = 0,
+		content = "小昙……我好想再见你一面……",
+		subtitle_id = 2061,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852071] = {
+		id = 10852071,
+		form_id = 0,
+		content = "要先休息一会吗？",
+		subtitle_id = 2071,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852081] = {
+		id = 10852081,
+		form_id = 0,
+		content = "小昙的背后……由我来守护。",
+		subtitle_id = 2081,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852091] = {
+		id = 10852091,
+		form_id = 0,
+		content = "我也能……保护别人。",
+		subtitle_id = 2091,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852101] = {
+		id = 10852101,
+		form_id = 0,
+		content = "小昙，你没事吧？（轻笑声）太好了。",
+		subtitle_id = 2101,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852102] = {
+		id = 10852102,
+		form_id = 0,
+		content = "我们……赢了？还好有小昙在。",
+		subtitle_id = 2102,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852111] = {
+		id = 10852111,
+		form_id = 0,
+		content = "不要过来……！",
+		subtitle_id = 2111,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852112] = {
+		id = 10852112,
+		form_id = 0,
+		content = "请把力量，借给我。",
+		subtitle_id = 2112,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852121] = {
+		id = 10852121,
+		form_id = 0,
+		content = "我也是……能战斗的。",
+		subtitle_id = 2121,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852131] = {
+		id = 10852131,
+		form_id = 0,
+		content = "我会结束这一切的。",
+		subtitle_id = 2131,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852141] = {
+		id = 10852141,
+		form_id = 0,
+		content = "为了那些……不能被遗忘的东西。",
+		subtitle_id = 2141,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852142] = {
+		id = 10852142,
+		form_id = 0,
+		content = "我还想要……创造更多新的回忆。",
+		subtitle_id = 2142,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852151] = {
+		id = 10852151,
+		form_id = 0,
+		content = "躲开了……",
+		subtitle_id = 2151,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852161] = {
+		id = 10852161,
+		form_id = 0,
+		content = "嗯？它不动了……",
+		subtitle_id = 2161,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852171] = {
+		id = 10852171,
+		form_id = 0,
+		content = "……你没事吗？",
+		subtitle_id = 2171,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852181] = {
+		id = 10852181,
+		form_id = 0,
+		content = "小昙，我准备好了。",
+		subtitle_id = 2181,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852191] = {
+		id = 10852191,
+		form_id = 0,
+		content = "这样算是……「好机会」？",
+		subtitle_id = 2191,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852201] = {
+		id = 10852201,
+		form_id = 0,
+		content = "这些是……「坏人」？",
+		subtitle_id = 2201,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852202] = {
+		id = 10852202,
+		form_id = 0,
+		content = "小心一点……",
+		subtitle_id = 2202,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852211] = {
+		id = 10852211,
+		form_id = 0,
+		content = "有种，好温暖的感觉。",
+		subtitle_id = 2211,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852221] = {
+		id = 10852221,
+		form_id = 0,
+		content = "谢谢……",
+		subtitle_id = 2221,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852231] = {
+		id = 10852231,
+		form_id = 0,
+		content = "呜……",
+		subtitle_id = 2231,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852241] = {
+		id = 10852241,
+		form_id = 0,
+		content = "伊里伽尔姐姐，我会加油的。",
+		subtitle_id = 2241,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[10852251] = {
+		id = 10852251,
+		form_id = 0,
+		content = "小昙是我最重要的人……虽然我已经不记得那些过去的回忆，但我还想和他一起，创造更多更多新的回忆。",
+		subtitle_id = 2251,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085226101] = {
+		id = 1085226101,
+		form_id = 0,
+		content = "伊里伽尔姐姐，虽然看起来有些冷漠……但其实她是个很温柔的人，我还想和她多说说话。",
+		subtitle_id = 226101,
+		team_hero_id_list = "",
+		chara_id = 1085
+	},
+	[1085011011] = {
+		id = 1085011011,
+		form_id = 0,
+		content = "小昙，你离开了好久，我很担心你……",
+		subtitle_id = 1011,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011012] = {
+		id = 1085011012,
+		form_id = 0,
+		content = "下次，如果你要走，可以带上我吗……",
+		subtitle_id = 1012,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011013] = {
+		id = 1085011013,
+		form_id = 0,
+		content = "太好了……你来了，我正在想你……",
+		subtitle_id = 1013,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011021] = {
+		id = 1085011021,
+		form_id = 0,
+		content = "嗯……小昙？",
+		subtitle_id = 1021,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011022] = {
+		id = 1085011022,
+		form_id = 0,
+		content = "你在找我吗？",
+		subtitle_id = 1022,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011031] = {
+		id = 1085011031,
+		form_id = 0,
+		content = "小昙……你是不是等了我很久？没关系，我已经找到回到你身边的路了。",
+		subtitle_id = 1031,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011041] = {
+		id = 1085011041,
+		form_id = 0,
+		content = "如果这是你希望的话，我会做好的。",
+		subtitle_id = 1041,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011051] = {
+		id = 1085011051,
+		form_id = 0,
+		content = "小昙，如果你相信我的话，那我也相信你……",
+		subtitle_id = 1051,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011061] = {
+		id = 1085011061,
+		form_id = 0,
+		content = "我会努力的……我不想忘记……",
+		subtitle_id = 1061,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011071] = {
+		id = 1085011071,
+		form_id = 0,
+		content = "小昙，我会保护好你的……不用担心。",
+		subtitle_id = 1071,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011081] = {
+		id = 1085011081,
+		form_id = 0,
+		content = "如果帮不上小昙的忙，我会被讨厌吗……我不想要那样。",
+		subtitle_id = 1081,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011091] = {
+		id = 1085011091,
+		form_id = 0,
+		content = "我不能想象……没有小昙在身边的景象。小昙是最重要的人，如果真的可以的话……我想要和小昙永远这样下去。",
+		subtitle_id = 1091,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011101] = {
+		id = 1085011101,
+		form_id = 0,
+		content = "小昙你看，我做到了！",
+		subtitle_id = 1101,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011111] = {
+		id = 1085011111,
+		form_id = 0,
+		content = "新的朋友？嗯，我知道了……小昙的朋友也是我的朋友。",
+		subtitle_id = 1111,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011121] = {
+		id = 1085011121,
+		form_id = 0,
+		content = "我能看见，时间的尽头……有你，有我。",
+		subtitle_id = 1121,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011131] = {
+		id = 1085011131,
+		form_id = 0,
+		content = "我一定会帮上小昙的，无论你希望我做什么。",
+		subtitle_id = 1131,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011141] = {
+		id = 1085011141,
+		form_id = 0,
+		content = "小昙，你快来看~这样的景色，我在梦里见过好几次……但这次……终于能再和你一起来看了~",
+		subtitle_id = 114127,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011151] = {
+		id = 1085011151,
+		form_id = 0,
+		content = "好漂亮。欸？你想看的话……虽然大部分都是小昙帮我拍的，今天……真的玩得很开心。等一下，那张是！只是觉得，小昙笑起来，很好看……",
+		subtitle_id = 115127,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011161] = {
+		id = 1085011161,
+		form_id = 0,
+		content = "小昙说过，如果怕自己忘掉重要的事，就用这个拍下来。就像现在，小昙笑起来的样子……",
+		subtitle_id = 1141,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011162] = {
+		id = 1085011162,
+		form_id = 0,
+		content = "这个……送给小昙。这次也折了很久……对不起，没法像小昙一样那么厉害……",
+		subtitle_id = 1151,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011163] = {
+		id = 1085011163,
+		form_id = 0,
+		content = "庆祝活动？唔……我只想和小昙一起玩。今天我们可以去海边逛逛吗？就像那天一样……",
+		subtitle_id = 1161,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011166] = {
+		id = 1085011166,
+		form_id = 0,
+		content = "感觉……只要和小昙在一起，就可以分享烦恼，我们就可以去任何想去的地方。",
+		subtitle_id = 1162,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011167] = {
+		id = 1085011167,
+		form_id = 0,
+		content = "小昙，不论我们去做什么，只要能和你一起，我就很开心了。",
+		subtitle_id = 1163,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011171] = {
+		id = 1085011171,
+		form_id = 0,
+		content = "小昙，睡着了吗……",
+		subtitle_id = 1171,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011172] = {
+		id = 1085011172,
+		form_id = 0,
+		content = "睡觉的样子，有点可爱……",
+		subtitle_id = 1172,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011173] = {
+		id = 1085011173,
+		form_id = 0,
+		content = "我会，在你身边……",
+		subtitle_id = 1173,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011181] = {
+		id = 1085011181,
+		form_id = 0,
+		content = "唔……小昙，怎么了吗？我就在这里，哪也不去。",
+		subtitle_id = 1181,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011191] = {
+		id = 1085011191,
+		form_id = 0,
+		content = "呀……别担心，小昙，我没事的。",
+		subtitle_id = 1191,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011201] = {
+		id = 1085011201,
+		form_id = 0,
+		content = "这是小昙送我的礼物，我不会再弄丢了。",
+		subtitle_id = 1201,
+		team_hero_id_list = "",
+		chara_id = 108501
+	},
+	[1085011301] = {
+		id = 1085011301,
+		form_id = 0,
+		content = "小昙，我穿这件衣服，好看吗？",
+		subtitle_id = 1301,
+		team_hero_id_list = "",
+		chara_id = 108501
 	},
 	[10891011] = {
 		id = 10891011,
@@ -33239,6 +36363,630 @@
 		team_hero_id_list = "",
 		chara_id = 1199
 	},
+	[12112241] = {
+		id = 12112241,
+		form_id = 0,
+		content = "薇儿姐姐，让我们一起加油吧。",
+		subtitle_id = 2241,
+		chara_id = 1211,
+		team_hero_id_list = {
+			1284
+		}
+	},
+	[12112242] = {
+		id = 12112242,
+		form_id = 0,
+		content = "现在的我，可以不再躲在你的身后了。",
+		subtitle_id = 2242,
+		chara_id = 1211,
+		team_hero_id_list = {
+			1111
+		}
+	},
+	[12112243] = {
+		id = 12112243,
+		form_id = 0,
+		content = "休老师，请见证我训练的成果。",
+		subtitle_id = 2243,
+		chara_id = 1211,
+		team_hero_id_list = {
+			1019
+		}
+	},
+	[12112244] = {
+		id = 12112244,
+		form_id = 0,
+		content = "休老师，请见证我训练的成果。",
+		subtitle_id = 2244,
+		chara_id = 1211,
+		team_hero_id_list = {
+			1119
+		}
+	},
+	[12111011] = {
+		id = 12111011,
+		form_id = 0,
+		content = "啊，你回来啦。外勤工作辛苦了，管理员这次的表现也很精彩哦~",
+		subtitle_id = 1011,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[1211101133] = {
+		id = 1211101133,
+		form_id = 0,
+		content = "管理员，要不要过来这边？今天的夕风很舒服哦。",
+		subtitle_id = 101133,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111012] = {
+		id = 12111012,
+		form_id = 0,
+		content = "管理员？别那么着急，你看连头发都乱糟糟的，我有一直等你。",
+		subtitle_id = 1012,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111013] = {
+		id = 12111013,
+		form_id = 0,
+		content = "怎么啦？连出门都急急忙忙的，不过没关系，工作我已经都帮你完成咯。",
+		subtitle_id = 1013,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111021] = {
+		id = 12111021,
+		form_id = 0,
+		content = "让大家等太久可不好。",
+		subtitle_id = 1021,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111022] = {
+		id = 12111022,
+		form_id = 0,
+		content = "嗯，我准备好了。",
+		subtitle_id = 1022,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111031] = {
+		id = 12111031,
+		form_id = 0,
+		content = "就算只有一点点也好，我也想逐步向前走……管理员，我已经不是那只害怕飞翔的雏鸟了。",
+		subtitle_id = 1031,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111041] = {
+		id = 12111041,
+		form_id = 0,
+		content = "不管是什么任务，都请交给我吧。",
+		subtitle_id = 1041,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111051] = {
+		id = 12111051,
+		form_id = 0,
+		content = "别担心，我会保护好大家的。",
+		subtitle_id = 1051,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111061] = {
+		id = 12111061,
+		form_id = 0,
+		content = "就算是重复过成百上千次的训练，也能学到些新东西。",
+		subtitle_id = 1061,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111071] = {
+		id = 12111071,
+		form_id = 0,
+		content = "又想起第一次和管理员一起训练的时候了，从那时起你就一直在帮助我……谢谢。",
+		subtitle_id = 1071,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111081] = {
+		id = 12111081,
+		form_id = 0,
+		content = "总觉得自己好像又变强了一些，这都是管理员的功劳……为了成为能回应你期待的人，我还要继续努力才行。",
+		subtitle_id = 1081,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111091] = {
+		id = 12111091,
+		form_id = 0,
+		content = "要怎样才能成为更好的自己，要怎样才能帮上大家……不管怎么去想，问题的答案总是会显得有些模糊，但只要两个人一起的话，我们一定能找出自己的答案，所以……今后也请一直陪着我吧。",
+		subtitle_id = 1091,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111101] = {
+		id = 12111101,
+		form_id = 0,
+		content = "我会好好使用这份力量。",
+		subtitle_id = 1101,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111111] = {
+		id = 12111111,
+		form_id = 0,
+		content = "新成员？那从今天起我就是前辈了，得给这孩子做个好榜样。",
+		subtitle_id = 1111,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111121] = {
+		id = 12111121,
+		form_id = 0,
+		content = "我已经决定了，再也不会停滞不前。",
+		subtitle_id = 1121,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111131] = {
+		id = 12111131,
+		form_id = 0,
+		content = "不管需要帮什么忙，都可以告诉我哦。",
+		subtitle_id = 1131,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111141] = {
+		id = 12111141,
+		form_id = 0,
+		content = "如果累了的话就先休息吧，剩下的事情都交给我就好。",
+		subtitle_id = 1141,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[1211114131] = {
+		id = 1211114131,
+		form_id = 0,
+		content = "管理员你看，听说那是虚恒最高的石塔诶。夕阳下的东西塔……真漂亮……诶？我也是……？呜……",
+		subtitle_id = 114131,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111151] = {
+		id = 12111151,
+		form_id = 0,
+		content = "重要的不是做「好孩子」，而是成为更好的自己……管理员你说呢？",
+		subtitle_id = 1151,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[1211115131] = {
+		id = 1211115131,
+		form_id = 0,
+		content = "管理员……先就这样别动。嗯……嘿嘿……意外的合适诶。",
+		subtitle_id = 115131,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111161] = {
+		id = 12111161,
+		form_id = 0,
+		content = "管理员，你的纽扣松了……（轻笑声）下次出门之前，还是让我来帮忙吧？",
+		subtitle_id = 1161,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111162] = {
+		id = 12111162,
+		form_id = 0,
+		content = "有什么烦心事都请告诉我，比起一个人烦恼，还是两个人一起想办法比较好。",
+		subtitle_id = 1162,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111163] = {
+		id = 12111163,
+		form_id = 0,
+		content = "我变得成熟了不少？真的？（轻笑声）那就好。",
+		subtitle_id = 1163,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111171] = {
+		id = 12111171,
+		form_id = 0,
+		content = "管理员睡着了？嗯……稍微靠近一点……呼……应该没有被发现。",
+		subtitle_id = 1171,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111172] = {
+		id = 12111172,
+		form_id = 0,
+		content = "看起来累坏了……管理员的心跳声……呼……啊，差点连我也睡着了。",
+		subtitle_id = 1172,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111173] = {
+		id = 12111173,
+		form_id = 0,
+		content = "有悄悄话想给我说？嗯嗯……原来是这样……放心，我会保密的。",
+		subtitle_id = 1173,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111181] = {
+		id = 12111181,
+		form_id = 0,
+		content = "唔……？管理员是有事找我吗？",
+		subtitle_id = 1181,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111191] = {
+		id = 12111191,
+		form_id = 0,
+		content = "啊……！管理员……整天恶作剧可是要受惩罚的哦。",
+		subtitle_id = 1191,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111201] = {
+		id = 12111201,
+		form_id = 0,
+		content = "送给我的？谢谢管理员！",
+		subtitle_id = 1201,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111211] = {
+		id = 12111211,
+		form_id = 0,
+		content = "最近新加入的修正者都在叫我「奥西里斯前辈」……虽然以前都没想过会有这种事，但既然当上前辈了，我就得照顾好新人们才行……唔？管理员，为什么摸我的头？",
+		subtitle_id = 1211,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111221] = {
+		id = 12111221,
+		form_id = 0,
+		content = "管理员最近有什么特别想吃的吗？问这个倒没什么特别的原因，你最近总是很忙，连饭都没时间好好吃，但如果有便当的话，就可以带到任务地点吃了，请尽管说吧，不管什么菜式我都会准备好的。",
+		subtitle_id = 1221,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111231] = {
+		id = 12111231,
+		form_id = 0,
+		content = "以前的我总是担心会给大家添麻烦，所以什么都不敢去做……但要是一直躲在他人身后的话，我就永远是那个长不大的「小奥西里斯」。现在的我，已经拥有了可以和大家一起翱翔蓝天的翅膀，所以不管是任务亦或其他事情，都请来依靠我吧。",
+		subtitle_id = 1231,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111241] = {
+		id = 12111241,
+		form_id = 0,
+		content = "要是一味害怕「失去」的话，只会被恐惧束缚，什么都做不了，我见过了许多失去家园后依旧努力活着的人，也有身陷困境仍然拼命证明自己的人，大家都在努力向前迈进……我想成为那些人的助力，成为能够站在大家身前……能够站在管理员身前的那个人。",
+		subtitle_id = 1241,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111251] = {
+		id = 12111251,
+		form_id = 0,
+		content = "管理员一直相信我、鼓励我，给了我太多勇气……就是因为有你在，我才能向前踏出一步，和你在一起的时候，我就总会觉得自己什么都做得到，不论世界怎样变化，不管未来会发生什么，我都想要待在你的身边……可以的吧，管理员？",
+		subtitle_id = 1251,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12111301] = {
+		id = 12111301,
+		form_id = 0,
+		content = "好漂亮的衣服……管理员，我可以穿上看看吗？",
+		subtitle_id = 1301,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112011] = {
+		id = 12112011,
+		form_id = 0,
+		content = "放心吧，我知道自己该做什么。",
+		subtitle_id = 2011,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112012] = {
+		id = 12112012,
+		form_id = 0,
+		content = "要让所有人都能平安回去。",
+		subtitle_id = 2012,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112021] = {
+		id = 12112021,
+		form_id = 0,
+		content = "我，会站在最前方。",
+		subtitle_id = 2021,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112031] = {
+		id = 12112031,
+		form_id = 0,
+		content = "这样就能帮上大家的忙。",
+		subtitle_id = 2031,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112041] = {
+		id = 12112041,
+		form_id = 0,
+		content = "我会用自己的方式战斗。",
+		subtitle_id = 2041,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112051] = {
+		id = 12112051,
+		form_id = 0,
+		content = "别担心，我没关系的……",
+		subtitle_id = 2051,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112061] = {
+		id = 12112061,
+		form_id = 0,
+		content = "明明还有……好多要做的事情……",
+		subtitle_id = 2061,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112071] = {
+		id = 12112071,
+		form_id = 0,
+		content = "管理员，接下来的指示是……休息？好的，我明白了。",
+		subtitle_id = 2071,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112081] = {
+		id = 12112081,
+		form_id = 0,
+		content = "这是我能为你做的最后一件事。",
+		subtitle_id = 2081,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112091] = {
+		id = 12112091,
+		form_id = 0,
+		content = "不会让你们伤害任何人。",
+		subtitle_id = 2091,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112101] = {
+		id = 12112101,
+		form_id = 0,
+		content = "任务结束了？呼……只要有管理员在，一切总是很顺利。",
+		subtitle_id = 2101,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112102] = {
+		id = 12112102,
+		form_id = 0,
+		content = "一切顺利？嘿嘿……这都是大家一起努力的结果，太好了。",
+		subtitle_id = 2102,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112111] = {
+		id = 12112111,
+		form_id = 0,
+		content = "愿你能就此安息……",
+		subtitle_id = 2111,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112112] = {
+		id = 12112112,
+		form_id = 0,
+		content = "让我来结束你的痛苦。",
+		subtitle_id = 2112,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112121] = {
+		id = 12112121,
+		form_id = 0,
+		content = "这是为了大家而存在的翅膀。",
+		subtitle_id = 2121,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112131] = {
+		id = 12112131,
+		form_id = 0,
+		content = "现在的我……做得到。",
+		subtitle_id = 2131,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112141] = {
+		id = 12112141,
+		form_id = 0,
+		content = "抱歉……但我不能手下留情。",
+		subtitle_id = 2141,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112142] = {
+		id = 12112142,
+		form_id = 0,
+		content = "这一次，就由我来保护大家。",
+		subtitle_id = 2142,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112151] = {
+		id = 12112151,
+		form_id = 0,
+		content = "下次还要更快一些。",
+		subtitle_id = 2151,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112161] = {
+		id = 12112161,
+		form_id = 0,
+		content = "就这样……别再动了。",
+		subtitle_id = 2161,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112171] = {
+		id = 12112171,
+		form_id = 0,
+		content = "你没事吧？先退后，这里请交给我。",
+		subtitle_id = 2171,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112181] = {
+		id = 12112181,
+		form_id = 0,
+		content = "我准备好了，随时都可以！",
+		subtitle_id = 2181,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112191] = {
+		id = 12112191,
+		form_id = 0,
+		content = "大家创造出来的机会……不能错过。",
+		subtitle_id = 2191,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112201] = {
+		id = 12112201,
+		form_id = 0,
+		content = "敌人又来了，先逐个击破吧。",
+		subtitle_id = 2201,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112202] = {
+		id = 12112202,
+		form_id = 0,
+		content = "看起来很强的样子……大家小心。",
+		subtitle_id = 2202,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112211] = {
+		id = 12112211,
+		form_id = 0,
+		content = "谢谢。",
+		subtitle_id = 2211,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112221] = {
+		id = 12112221,
+		form_id = 0,
+		content = "这样就能继续战斗了……谢谢。",
+		subtitle_id = 2221,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112231] = {
+		id = 12112231,
+		form_id = 0,
+		content = "得快点站起来……",
+		subtitle_id = 2231,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[12112251] = {
+		id = 12112251,
+		form_id = 0,
+		content = "管理员总是在我最需要的时候出现，鼓励我、安慰我，如果没有管理员的话……我说不定在当时就放弃了。但我不能总是这样依赖管理员的温柔，从今以后，我也要成为那个能够回应大家期待的人。",
+		subtitle_id = 2251,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[1211226105] = {
+		id = 1211226105,
+		form_id = 0,
+		content = "薇儿姐姐总是能够用开朗的笑容带给大家活力，一直是我追赶的方向……但她是她，我是我，我会用我的方式变强的。",
+		subtitle_id = 226105,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[1211226106] = {
+		id = 1211226106,
+		form_id = 0,
+		content = "冥王是我重要的伙伴，一直以来都是她在保护我，现在轮到我来帮助冥王了。",
+		subtitle_id = 226106,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[1211226107] = {
+		id = 1211226107,
+		form_id = 0,
+		content = "休老师一直都很辛苦……我一直在想，要是能帮上她的忙就好了，现在正是付诸行动的时候。",
+		subtitle_id = 226107,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[1211226108] = {
+		id = 1211226108,
+		form_id = 0,
+		content = "伽梨姐姐就像是所有人的大姐头一样，爽朗又爱照顾人。不过她偶尔会露出一副忧心忡忡的样子……要是我能帮得上她就好了。",
+		subtitle_id = 226108,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[1211226109] = {
+		id = 1211226109,
+		form_id = 0,
+		content = "虽然嘴上总说着「不想干」、「想偷懒」之类的，但帕尔瓦蒂姐姐实际上是个很负责的人，所以大家才会这么信赖她吧。",
+		subtitle_id = 226109,
+		team_hero_id_list = "",
+		chara_id = 1211
+	},
+	[1211011011] = {
+		id = 1211011011,
+		form_id = 0,
+		content = "管理员，要不要过来这边？今天的夕风很舒服哦。",
+		subtitle_id = 1011,
+		team_hero_id_list = "",
+		chara_id = 121101
+	},
+	[1211011141] = {
+		id = 1211011141,
+		form_id = 0,
+		content = "管理员你看，听说那是虚恒最高的石塔诶。夕阳下的东西塔……真漂亮……诶？我也是……？呜……",
+		subtitle_id = 1141,
+		team_hero_id_list = "",
+		chara_id = 121101
+	},
+	[1211011151] = {
+		id = 1211011151,
+		form_id = 0,
+		content = "管理员……先就这样别动。嗯……嘿嘿……意外的合适诶。",
+		subtitle_id = 1151,
+		team_hero_id_list = "",
+		chara_id = 121101
+	},
 	[12481011] = {
 		id = 12481011,
 		form_id = 0,
@@ -34247,3597 +37995,7 @@
 		team_hero_id_list = "",
 		chara_id = 128402
 	},
-	[10121011] = {
-		id = 10121011,
-		form_id = 0,
-		content = "终于来了？需要我提醒你……现在几点吗？",
-		subtitle_id = 1011,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121012] = {
-		id = 10121012,
-		form_id = 0,
-		content = "你缓过来了？正好有些困乏……来陪我练练？",
-		subtitle_id = 1012,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121013] = {
-		id = 10121013,
-		form_id = 0,
-		content = "外面的事不少？休息下吧……你是真不怕累？",
-		subtitle_id = 1013,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121021] = {
-		id = 10121021,
-		form_id = 0,
-		content = "随时待命。",
-		subtitle_id = 1021,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121031] = {
-		id = 10121031,
-		form_id = 0,
-		content = "科尔盖重大犯罪对策部，白泽。闲话就免了，希望我们合作愉快。",
-		subtitle_id = 1031,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121041] = {
-		id = 10121041,
-		form_id = 0,
-		content = "嗯，出发吧。",
-		subtitle_id = 1041,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121051] = {
-		id = 10121051,
-		form_id = 0,
-		content = "战术决策仍以你为准，我不会越界。",
-		subtitle_id = 1051,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121061] = {
-		id = 10121061,
-		form_id = 0,
-		content = "训练的意义在于掠夺他人的经验，然后变成自己的本能。",
-		subtitle_id = 1061,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121071] = {
-		id = 10121071,
-		form_id = 0,
-		content = "没想到……会以这样的方式踏出全新的一步。谢谢你，管理员。",
-		subtitle_id = 1071,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121081] = {
-		id = 10121081,
-		form_id = 0,
-		content = "之前我就觉得，好像你总能做出超出想象的事。为了我，值得你付出这么多吗？总之……谢谢。",
-		subtitle_id = 1081,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121091] = {
-		id = 10121091,
-		form_id = 0,
-		content = "或许真的如你所说，我把自己禁锢得太久了，小心翼翼到已经忘了下一步要走向哪里。但好在之后的路有你和我一起，不是吗？",
-		subtitle_id = 1091,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121101] = {
-		id = 10121101,
-		form_id = 0,
-		content = "实战中，能否一击制敌才是关键。",
-		subtitle_id = 1101,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121111] = {
-		id = 10121111,
-		form_id = 0,
-		content = "新成员？别拖后腿就行。",
-		subtitle_id = 1111,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121121] = {
-		id = 10121121,
-		form_id = 0,
-		content = "天诫十恶，为时除害……我知道自己的职责。",
-		subtitle_id = 1121,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121131] = {
-		id = 10121131,
-		form_id = 0,
-		content = "有需要帮忙的事就直接叫我，只是有些时候我不一定顾得上你。",
-		subtitle_id = 1131,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121141] = {
-		id = 10121141,
-		form_id = 0,
-		content = "我经手的案件大多只有血淋淋的罪恶，至少不会是你想听的话题。",
-		subtitle_id = 1141,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121151] = {
-		id = 10121151,
-		form_id = 0,
-		content = "接着……怎么？不喜欢吃果冻的话就扔掉吧。",
-		subtitle_id = 1151,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121161] = {
-		id = 10121161,
-		form_id = 0,
-		content = "微笑打卡？我可没听过这样的规定？呵……哈哈……这样算成功了吗？",
-		subtitle_id = 1161,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121162] = {
-		id = 10121162,
-		form_id = 0,
-		content = "没什么不能摘给你看的，前提是掌上压一百下得比我快，现在开始？",
-		subtitle_id = 1162,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121163] = {
-		id = 10121163,
-		form_id = 0,
-		content = "看终端十八次，打哈欠七次……看得出来你和科尔盖的报告不太对付，我来吧。",
-		subtitle_id = 1163,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121171] = {
-		id = 10121171,
-		form_id = 0,
-		content = "别发呆了，你还嫌要做的事情不够多？",
-		subtitle_id = 1171,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121172] = {
-		id = 10121172,
-		form_id = 0,
-		content = "这就睡着了，你们不会偷懒也有津贴吧？",
-		subtitle_id = 1172,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121173] = {
-		id = 10121173,
-		form_id = 0,
-		content = "困了就休息，你也不想被我扛出办公室吧？",
-		subtitle_id = 1173,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121181] = {
-		id = 10121181,
-		form_id = 0,
-		content = "唔……有话直说，没必要来这套。",
-		subtitle_id = 1181,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121191] = {
-		id = 10121191,
-		form_id = 0,
-		content = "啧……看来，你现在缺乏的不只是语言上的管教。",
-		subtitle_id = 1191,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121201] = {
-		id = 10121201,
-		form_id = 0,
-		content = "没必要那么顾及我……谢了。",
-		subtitle_id = 1201,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121211] = {
-		id = 10121211,
-		form_id = 0,
-		content = "「恶魔」和「鬼神」？是我的部下告诉你的吧。很恰当的外号不是吗？舍弃所有人都能遵守规则的妄想，成为恶人之上的极恶。对于那些违规者与不法之徒来说，我的确就是恶鬼的化身。",
-		subtitle_id = 1211,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121221] = {
-		id = 10121221,
-		form_id = 0,
-		content = "过目不忘很方便？是啊……我以前也这么想，直到加入重大犯罪对策部之后，我才发觉世上有太多让人想忘掉的事情。有时候我挺羡慕那些木头脑袋们，至少他们不用每晚跋涉在赎罪的回梦之中。",
-		subtitle_id = 1221,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121231] = {
-		id = 10121231,
-		form_id = 0,
-		content = "这世上有太多复杂的问题，每个人都有不同的答案，又有谁能够保证自己的想法是绝对正确的？所以我只追求当下能依靠的最优解——公允的规则，它们经历过漫长时间的考验，是我已知的各种准则中最值得信任的东西。",
-		subtitle_id = 1231,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121241] = {
-		id = 10121241,
-		form_id = 0,
-		content = "不听命令的士兵、违反规定的操作、质疑意义的人……我平等地厌恶所有试图挑战规则的蠢货，并不是因为他们的行为所造成的恶劣后果，而在于他们潜意识中对于自我性命的漠视。我本不需要为任何人的生命负责，但我希望所有人都能好好地活下去。管理员，包括你在内。",
-		subtitle_id = 1241,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121251] = {
-		id = 10121251,
-		form_id = 0,
-		content = "我不是什么讨人喜欢的家伙，受不了我而退出科尔盖的家伙也不在少数。像你这样能一直待在我身边的人，简直称得上是异类……「鬼神」的身侧可不是什么安稳的好地方。但不管怎样，既然你已经选择了与我同行这条路，那无论发生什么，我都会负起对你的责任。",
-		subtitle_id = 1251,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10121301] = {
-		id = 10121301,
-		form_id = 0,
-		content = "这算是为了工作，对……吗？",
-		subtitle_id = 1301,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122011] = {
-		id = 10122011,
-		form_id = 0,
-		content = "各就各位，全组行动。",
-		subtitle_id = 2011,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122012] = {
-		id = 10122012,
-		form_id = 0,
-		content = "我已到达现场，目标确认。",
-		subtitle_id = 2012,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122021] = {
-		id = 10122021,
-		form_id = 0,
-		content = "站着别动！",
-		subtitle_id = 2021,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122031] = {
-		id = 10122031,
-		form_id = 0,
-		content = "会给你个痛快的！",
-		subtitle_id = 2031,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122041] = {
-		id = 10122041,
-		form_id = 0,
-		content = "你们玩得很开心啊？",
-		subtitle_id = 2041,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122051] = {
-		id = 10122051,
-		form_id = 0,
-		content = "优先执行任务！",
-		subtitle_id = 2051,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122061] = {
-		id = 10122061,
-		form_id = 0,
-		content = "……我从未……对我的选择后悔……",
-		subtitle_id = 2061,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122071] = {
-		id = 10122071,
-		form_id = 0,
-		content = "停滞不前的时候，先试着理清自己的想法吧。",
-		subtitle_id = 2071,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122081] = {
-		id = 10122081,
-		form_id = 0,
-		content = "……你们应得的。",
-		subtitle_id = 2081,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122091] = {
-		id = 10122091,
-		form_id = 0,
-		content = "啧，无趣。",
-		subtitle_id = 2091,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122101] = {
-		id = 10122101,
-		form_id = 0,
-		content = "作战判断很准，我没看错你。",
-		subtitle_id = 2101,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122102] = {
-		id = 10122102,
-		form_id = 0,
-		content = "审判它们的人不是我，是规则。",
-		subtitle_id = 2102,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122111] = {
-		id = 10122111,
-		form_id = 0,
-		content = "说什么都晚了！",
-		subtitle_id = 2111,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122112] = {
-		id = 10122112,
-		form_id = 0,
-		content = "想好遗言了吧？",
-		subtitle_id = 2112,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122121] = {
-		id = 10122121,
-		form_id = 0,
-		content = "兵无常形！",
-		subtitle_id = 2121,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122131] = {
-		id = 10122131,
-		form_id = 0,
-		content = "没人能逃掉……",
-		subtitle_id = 2131,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122141] = {
-		id = 10122141,
-		form_id = 0,
-		content = "万千邪祟，鉴照洞明！",
-		subtitle_id = 2141,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122142] = {
-		id = 10122142,
-		form_id = 0,
-		content = "始祸者，罪无可赦！",
-		subtitle_id = 2142,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122151] = {
-		id = 10122151,
-		form_id = 0,
-		content = "根本不够看啊！",
-		subtitle_id = 2151,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122161] = {
-		id = 10122161,
-		form_id = 0,
-		content = "别挣扎，叫破喉咙也不会有人来的。",
-		subtitle_id = 2161,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122171] = {
-		id = 10122171,
-		form_id = 0,
-		content = "退后！由我接手！",
-		subtitle_id = 2171,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122181] = {
-		id = 10122181,
-		form_id = 0,
-		content = "让我来做个了结吧。",
-		subtitle_id = 2181,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122191] = {
-		id = 10122191,
-		form_id = 0,
-		content = "真想看看它们能坚持多久。",
-		subtitle_id = 2191,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122201] = {
-		id = 10122201,
-		form_id = 0,
-		content = "再多也不过是蝼蚁罢了。",
-		subtitle_id = 2201,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122202] = {
-		id = 10122202,
-		form_id = 0,
-		content = "我会，砍了它！",
-		subtitle_id = 2202,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122211] = {
-		id = 10122211,
-		form_id = 0,
-		content = "多谢。",
-		subtitle_id = 2211,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122221] = {
-		id = 10122221,
-		form_id = 0,
-		content = "该去讨债了！",
-		subtitle_id = 2221,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10122231] = {
-		id = 10122231,
-		form_id = 0,
-		content = "啧……不会再有下次。",
-		subtitle_id = 2231,
-		team_hero_id_list = "",
-		chara_id = 1012
-	},
-	[10732241] = {
-		id = 10732241,
-		form_id = 0,
-		content = "姐姐放心，一切准备妥当！",
-		subtitle_id = 2241,
-		chara_id = 1073,
-		team_hero_id_list = {
-			1074
-		}
-	},
-	[10732242] = {
-		id = 10732242,
-		form_id = 0,
-		content = "老师，你要的资料都在这里了！",
-		subtitle_id = 2242,
-		chara_id = 1073,
-		team_hero_id_list = {
-			1061
-		}
-	},
-	[10731011] = {
-		id = 10731011,
-		form_id = 0,
-		content = "管理员，我带了新作品来。对了，记得要告诉我使用感受！",
-		subtitle_id = 1011,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[1073101128] = {
-		id = 1073101128,
-		form_id = 0,
-		content = "欢迎欢迎！走过路过不要错过，刺桐港特色小吃，要尝试一下吗？",
-		subtitle_id = 101128,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731012] = {
-		id = 10731012,
-		form_id = 0,
-		content = "真巧，文书资料刚整理好！嘿嘿，举手之劳而已啦~",
-		subtitle_id = 1012,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731013] = {
-		id = 10731013,
-		form_id = 0,
-		content = "别慌，早猜到你可能会睡过头。给，你落下的会议资料！",
-		subtitle_id = 1013,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731021] = {
-		id = 10731021,
-		form_id = 0,
-		content = "找我吗？",
-		subtitle_id = 1021,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731022] = {
-		id = 10731022,
-		form_id = 0,
-		content = "我就在这呀。",
-		subtitle_id = 1022,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731031] = {
-		id = 10731031,
-		form_id = 0,
-		content = "管理员，又见面啦。是我，麟钰！之后的时间，就麻烦管理员多多指教咯！",
-		subtitle_id = 1031,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731041] = {
-		id = 10731041,
-		form_id = 0,
-		content = "好，算我一个！",
-		subtitle_id = 1041,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731051] = {
-		id = 10731051,
-		form_id = 0,
-		content = "我来带队？机会难得，我会努力的！",
-		subtitle_id = 1051,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731061] = {
-		id = 10731061,
-		form_id = 0,
-		content = "唔，要如何把书中的理论运用到实战中，看起来并没有那么简单……",
-		subtitle_id = 1061,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731071] = {
-		id = 10731071,
-		form_id = 0,
-		content = "「不可因为一时的进步而骄傲自满」，这句话我会谨记的！不过，被管理员夸奖确实挺开心的，诶嘿。",
-		subtitle_id = 1071,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731081] = {
-		id = 10731081,
-		form_id = 0,
-		content = "知识不是只能从书上得来，管理员一步一步带我见识到的新世界，是最好的教材。",
-		subtitle_id = 1081,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731091] = {
-		id = 10731091,
-		form_id = 0,
-		content = "想要让机关活动自如，光靠零件是不够的，最重要的是找到合适的动力源。而现在，想要回报管理员给予我的帮助的想法，就是让我不断向前的力量。",
-		subtitle_id = 1091,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731101] = {
-		id = 10731101,
-		form_id = 0,
-		content = "装置调试好了，真想现在就去试试！",
-		subtitle_id = 1101,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731111] = {
-		id = 10731111,
-		form_id = 0,
-		content = "……诶，我来做老师吗？",
-		subtitle_id = 1111,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731121] = {
-		id = 10731121,
-		form_id = 0,
-		content = "技无大小，贵在能精。",
-		subtitle_id = 1121,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731131] = {
-		id = 10731131,
-		form_id = 0,
-		content = "能用学到的知识帮上管理员，真是太好了。",
-		subtitle_id = 1131,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731141] = {
-		id = 10731141,
-		form_id = 0,
-		content = "机关术讲究「牵一发而动全身」，所以……管理员相信我，那台设备我真的只碰了一下。",
-		subtitle_id = 1141,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[1073114128] = {
-		id = 1073114128,
-		form_id = 0,
-		content = "呼……总算告一段落了。啊，管理员是来拿说好的特产的吧~等我一下哦~嘿咻……喏，都在这~！好吃再来哦~",
-		subtitle_id = 114128,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731151] = {
-		id = 10731151,
-		form_id = 0,
-		content = "啊，管理员再等等！我快要明白怎么修理那台古董……诶？你拍了拍就好了？",
-		subtitle_id = 1151,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[1073115128] = {
-		id = 1073115128,
-		form_id = 0,
-		content = "管理员，这里这里！诶？原来你对它有兴趣啊。嘿嘿，常说站如东西塔~是这里的地标建筑呢！等我有空的时候，一起去逛逛吧~",
-		subtitle_id = 115128,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731161] = {
-		id = 10731161,
-		form_id = 0,
-		content = "要出门吗？那我得把锥子扳手千斤顶都带上……我是机关师，带上这些也很正常吧？",
-		subtitle_id = 1161,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731162] = {
-		id = 10731162,
-		form_id = 0,
-		content = "诶，管理员你刚才叫我吗？我没事，老师的课题快要解出来了……只要再一晚就好！",
-		subtitle_id = 1162,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731163] = {
-		id = 10731163,
-		form_id = 0,
-		content = "啊——诶，管理员？嘘！糖葫芦可以分你一半，你能替我保密……啊，管理员！",
-		subtitle_id = 1163,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731171] = {
-		id = 10731171,
-		form_id = 0,
-		content = "管理员，你知道……啊，已经休息了吗，那我一会儿再来~",
-		subtitle_id = 1171,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731172] = {
-		id = 10731172,
-		form_id = 0,
-		content = "管理员，管理员？诶，睡着了呀，那就好好休息吧~",
-		subtitle_id = 1172,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731173] = {
-		id = 10731173,
-		form_id = 0,
-		content = "管理员吃点心吗？唔，不在的话，我可就全吃掉咯。",
-		subtitle_id = 1173,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731181] = {
-		id = 10731181,
-		form_id = 0,
-		content = "哎哎痒痒痒……！别想躲，让我也挠回去！",
-		subtitle_id = 1181,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731191] = {
-		id = 10731191,
-		form_id = 0,
-		content = "诶？装置故障了吗？呼……原来是管理员啊。",
-		subtitle_id = 1191,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731201] = {
-		id = 10731201,
-		form_id = 0,
-		content = "谢谢管理员！我会把它放进最安全的盒子里的！",
-		subtitle_id = 1201,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731211] = {
-		id = 10731211,
-		form_id = 0,
-		content = "缝纫、烹饪、打理家务……大家总是在担心我会太累，但这些都只是小事情而已，我没有在勉强自己！反倒是我还有很多要学习的地方，为此才要更有效率地利用时间。好了管理员，等我做完最后这个课题就能开饭了。",
-		subtitle_id = 1211,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731221] = {
-		id = 10731221,
-		form_id = 0,
-		content = "管理员，你喜欢听嘀嗒嘀嗒的声音吗？每次按下机关启动键，装置顺利运作的声音总是让我感到开心，这就证明我的创造能够发挥作用，也许在未来的某个时刻，就能成为帮助别人的力量。",
-		subtitle_id = 1221,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731231] = {
-		id = 10731231,
-		form_id = 0,
-		content = "帮执明老师打理天理阁事务时，我大部分时间都呆在实验室里，整天与各种装置打交道……有人说，成长的一部分就是经历这样的孤独。但我并没有这种感觉，可能因为机关术真的很有趣吧。而且，我也因此才能认识大家，才能和大家站在一起，不是吗？",
-		subtitle_id = 1231,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731241] = {
-		id = 10731241,
-		form_id = 0,
-		content = "对我来说，「独当一面」原本是个那么遥远的词，但是管理员的行动无时无刻都在告诉我，最关键的是那颗想要帮助人的心……我想，我知道要怎么做了。",
-		subtitle_id = 1241,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731251] = {
-		id = 10731251,
-		form_id = 0,
-		content = "「成长」是比解开机关更难的过程，在迷茫的时候，总是管理员为我指出最关键的要点。我知道，之后的路上还会有很多困难和阻碍，但是只要有管理员陪伴在身边，我永远能找到解法。",
-		subtitle_id = 1251,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10731301] = {
-		id = 10731301,
-		form_id = 0,
-		content = "诶诶，我穿这个会合适吗？",
-		subtitle_id = 1301,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732011] = {
-		id = 10732011,
-		form_id = 0,
-		content = "准备好了！",
-		subtitle_id = 2011,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732012] = {
-		id = 10732012,
-		form_id = 0,
-		content = "需要我做什么？",
-		subtitle_id = 2012,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732021] = {
-		id = 10732021,
-		form_id = 0,
-		content = "飞燕入云！",
-		subtitle_id = 2021,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732031] = {
-		id = 10732031,
-		form_id = 0,
-		content = "直上青云！",
-		subtitle_id = 2031,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732041] = {
-		id = 10732041,
-		form_id = 0,
-		content = "这可不是「小玩意儿」！",
-		subtitle_id = 2041,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732051] = {
-		id = 10732051,
-		form_id = 0,
-		content = "没事没事，别担心我……",
-		subtitle_id = 2051,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732061] = {
-		id = 10732061,
-		form_id = 0,
-		content = "给大家添麻烦了……",
-		subtitle_id = 2061,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732071] = {
-		id = 10732071,
-		form_id = 0,
-		content = "诶，哪里卡住了吗？",
-		subtitle_id = 2071,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732081] = {
-		id = 10732081,
-		form_id = 0,
-		content = "说过不要乱碰东西了！",
-		subtitle_id = 2081,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732091] = {
-		id = 10732091,
-		form_id = 0,
-		content = "中计了吧！",
-		subtitle_id = 2091,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732101] = {
-		id = 10732101,
-		form_id = 0,
-		content = "我没说假话吧，我能帮上忙的~",
-		subtitle_id = 2101,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732102] = {
-		id = 10732102,
-		form_id = 0,
-		content = "战斗方面的进步，多亏了管理员的指挥~",
-		subtitle_id = 2102,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732111] = {
-		id = 10732111,
-		form_id = 0,
-		content = "利器无眼，小心闪避~",
-		subtitle_id = 2111,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732112] = {
-		id = 10732112,
-		form_id = 0,
-		content = "响雷来袭，捂紧耳朵！",
-		subtitle_id = 2112,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732121] = {
-		id = 10732121,
-		form_id = 0,
-		content = "机关调试完毕！",
-		subtitle_id = 2121,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732131] = {
-		id = 10732131,
-		form_id = 0,
-		content = "飞刃蓄势待发！",
-		subtitle_id = 2131,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732141] = {
-		id = 10732141,
-		form_id = 0,
-		content = "舞风铃声作，飞刃化雨落！",
-		subtitle_id = 2141,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732142] = {
-		id = 10732142,
-		form_id = 0,
-		content = "巧机已成阵，牵丝定输赢！",
-		subtitle_id = 2142,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732151] = {
-		id = 10732151,
-		form_id = 0,
-		content = "呼，差点中招了。",
-		subtitle_id = 2151,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732161] = {
-		id = 10732161,
-		form_id = 0,
-		content = "这天罗地网，等的就是你！",
-		subtitle_id = 2161,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732171] = {
-		id = 10732171,
-		form_id = 0,
-		content = "你先休息，这里交给我！",
-		subtitle_id = 2171,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732181] = {
-		id = 10732181,
-		form_id = 0,
-		content = "让我来帮忙吧！",
-		subtitle_id = 2181,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732191] = {
-		id = 10732191,
-		form_id = 0,
-		content = "这就是瓮中捉鳖~",
-		subtitle_id = 2191,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732201] = {
-		id = 10732201,
-		form_id = 0,
-		content = "我可不会怕你们！",
-		subtitle_id = 2201,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732202] = {
-		id = 10732202,
-		form_id = 0,
-		content = "冷静冷静，不能退缩！",
-		subtitle_id = 2202,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732211] = {
-		id = 10732211,
-		form_id = 0,
-		content = "不会辜负大家！",
-		subtitle_id = 2211,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732221] = {
-		id = 10732221,
-		form_id = 0,
-		content = "又受大家照顾了。",
-		subtitle_id = 2221,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732231] = {
-		id = 10732231,
-		form_id = 0,
-		content = "……可不能拖后腿。",
-		subtitle_id = 2231,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[10732251] = {
-		id = 10732251,
-		form_id = 0,
-		content = "管理员并不是修正者，但却能为了保护人们挺身而出。虚恒那时也多亏有管理员的帮助，不然的话……嗯，还是不提这些了。总之有机会的话，要好好招待管理员一顿大餐作为报答呢。",
-		subtitle_id = 2251,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[1073226102] = {
-		id = 1073226102,
-		form_id = 0,
-		content = "从小到大都是姐姐在保护我。无论什么样的坏人和麻烦的事情，姐姐都有办法对付……可她本不需这么坚强，一定是因为太勉强自己才变得不爱笑的，要是我能早点帮上姐姐的忙就好了。",
-		subtitle_id = 226102,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[1073226103] = {
-		id = 1073226103,
-		form_id = 0,
-		content = "孟章前辈虽然看起来散漫，实际上想得可细了，不愧是四方院代理。以前我在习题中出了点小错，都是他提前给我指出来。嘿嘿，要不然肯定会被老师说一顿。",
-		subtitle_id = 226103,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[1073226104] = {
-		id = 1073226104,
-		form_id = 0,
-		content = "在外界看来老师是一个冷漠理智的掌权者，是知识渊博科研技术高超的学者。但实际上老师的性格并没有他们所说的那样锋芒，她会给不小心在实验室睡着的我盖毯子，会给不小心出了错的实验员耐心的讲解错误，会蹲下来平视和小孩子对话……如果他们能够更加了解老师就好了。",
-		subtitle_id = 226104,
-		team_hero_id_list = "",
-		chara_id = 1073
-	},
-	[1073011011] = {
-		id = 1073011011,
-		form_id = 0,
-		content = "欢迎欢迎！走过路过不要错过，刺桐港特色小吃，要尝试一下吗？",
-		subtitle_id = 1011,
-		team_hero_id_list = "",
-		chara_id = 107301
-	},
-	[1073011141] = {
-		id = 1073011141,
-		form_id = 0,
-		content = "呼……总算告一段落了。啊，管理员是来拿说好的特产的吧~等我一下哦~嘿咻……喏，都在这~！好吃再来哦~",
-		subtitle_id = 1141,
-		team_hero_id_list = "",
-		chara_id = 107301
-	},
-	[1073011151] = {
-		id = 1073011151,
-		form_id = 0,
-		content = "管理员，这里这里！诶？原来你对它有兴趣啊。嘿嘿，常说站如东西塔~是这里的地标建筑呢！等我有空的时候，一起去逛逛吧~",
-		subtitle_id = 1151,
-		team_hero_id_list = "",
-		chara_id = 107301
-	},
-	[10851011] = {
-		id = 10851011,
-		form_id = 0,
-		content = "小昙……头发乱糟糟，我有在好好等你，不用着急的。",
-		subtitle_id = 1011,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085101100] = {
-		id = 1085101100,
-		form_id = 0,
-		content = "小昙，你离开了好久，我很担心你……",
-		subtitle_id = 101100,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851012] = {
-		id = 10851012,
-		form_id = 0,
-		content = "小昙……你一直在笑，今天发生了什么有趣的事情吗？",
-		subtitle_id = 1012,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851013] = {
-		id = 10851013,
-		form_id = 0,
-		content = "下次我想和你一起出门，和小昙一起，去哪都会很开心。",
-		subtitle_id = 1013,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085101103] = {
-		id = 1085101103,
-		form_id = 0,
-		content = "小昙，你离开了好久，我很担心你……",
-		subtitle_id = 101103,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085101201] = {
-		id = 1085101201,
-		form_id = 0,
-		content = "下次，如果你要走，可以带上我吗……",
-		subtitle_id = 101201,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085101301] = {
-		id = 1085101301,
-		form_id = 0,
-		content = "太好了……你来了，我正在想你……",
-		subtitle_id = 101301,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851021] = {
-		id = 10851021,
-		form_id = 0,
-		content = "在叫我吗……？",
-		subtitle_id = 1021,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085102101] = {
-		id = 1085102101,
-		form_id = 0,
-		content = "嗯……小昙？",
-		subtitle_id = 102101,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851022] = {
-		id = 10851022,
-		form_id = 0,
-		content = "小昙，怎么了？",
-		subtitle_id = 1022,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085102201] = {
-		id = 1085102201,
-		form_id = 0,
-		content = "你在找我吗？",
-		subtitle_id = 102201,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851031] = {
-		id = 10851031,
-		form_id = 0,
-		content = "我想把这一切都好好记录下来……小昙的笑脸，还有那些珍贵的回忆……",
-		subtitle_id = 1031,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851041] = {
-		id = 10851041,
-		form_id = 0,
-		content = "我们要去哪里？",
-		subtitle_id = 1041,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085104101] = {
-		id = 1085104101,
-		form_id = 0,
-		content = "如果这是你希望的话，我会做好的。",
-		subtitle_id = 104101,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851051] = {
-		id = 10851051,
-		form_id = 0,
-		content = "「队长」就是指挥大家的人。",
-		subtitle_id = 1051,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085105101] = {
-		id = 1085105101,
-		form_id = 0,
-		content = "小昙，如果你相信我的话，那我也相信你……",
-		subtitle_id = 105101,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851061] = {
-		id = 10851061,
-		form_id = 0,
-		content = "嗯，我还想学更多的知识。",
-		subtitle_id = 1061,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085106101] = {
-		id = 1085106101,
-		form_id = 0,
-		content = "我会努力的……我不想忘记……",
-		subtitle_id = 106101,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851071] = {
-		id = 10851071,
-		form_id = 0,
-		content = "小昙教给我的东西，我都会好好记住。",
-		subtitle_id = 1071,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085107101] = {
-		id = 1085107101,
-		form_id = 0,
-		content = "小昙，我会保护好你的……不用担心。",
-		subtitle_id = 107101,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851081] = {
-		id = 10851081,
-		form_id = 0,
-		content = "以前我常常会在梦里见到小昙，有些时候是兔子，有些时候是小鸟，但现在小昙就在我的面前……我已经不用再去幻想小昙的样子了。",
-		subtitle_id = 1081,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085107102] = {
-		id = 1085107102,
-		form_id = 0,
-		content = "如果帮不上小昙的忙，我会被讨厌吗……我不想要那样。",
-		subtitle_id = 107102,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851091] = {
-		id = 10851091,
-		form_id = 0,
-		content = "我在想……要是能永远和小昙在一起就好了，我想和你一起，去到很远很远的地方，见识那些未曾知晓的风景，然后把它们全部刻在记忆里。",
-		subtitle_id = 1091,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085107103] = {
-		id = 1085107103,
-		form_id = 0,
-		content = "我不能想象……没有小昙在身边的景象。小昙是最重要的人，如果真的可以的话……我想要和小昙永远这样下去。",
-		subtitle_id = 107103,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851101] = {
-		id = 10851101,
-		form_id = 0,
-		content = "嗯，我也做得到。",
-		subtitle_id = 1101,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085110101] = {
-		id = 1085110101,
-		form_id = 0,
-		content = "小昙你看，我做到了！",
-		subtitle_id = 110101,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851111] = {
-		id = 10851111,
-		form_id = 0,
-		content = "新朋友？那……现在是不是该开「迎新会」了？",
-		subtitle_id = 1111,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085111101] = {
-		id = 1085111101,
-		form_id = 0,
-		content = "新的朋友？嗯，我知道了……小昙的朋友也是我的朋友。",
-		subtitle_id = 111101,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851121] = {
-		id = 10851121,
-		form_id = 0,
-		content = "总觉得好像看见了些什么……这些是，过去的记忆？还是……未来的样子？",
-		subtitle_id = 1121,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085112101] = {
-		id = 1085112101,
-		form_id = 0,
-		content = "我能看见，时间的尽头……有你，有我。",
-		subtitle_id = 112101,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851131] = {
-		id = 10851131,
-		form_id = 0,
-		content = "虽然不知道该怎么做……但为了小昙，我会努力的。",
-		subtitle_id = 1131,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085113101] = {
-		id = 1085113101,
-		form_id = 0,
-		content = "我一定会帮上小昙的，无论你希望我做什么。",
-		subtitle_id = 113101,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851141] = {
-		id = 10851141,
-		form_id = 0,
-		content = "小昙，你也忘记了很多事吗……如果会难受的话就让它们过去吧。",
-		subtitle_id = 1141,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085114127] = {
-		id = 1085114127,
-		form_id = 0,
-		content = "小昙，你快来看~这样的景色，我在梦里见过好几次……但这次……终于能再和你一起来看了~",
-		subtitle_id = 114127,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851151] = {
-		id = 10851151,
-		form_id = 0,
-		content = "我把文件收拾了一下，看店的时候也会这样……有帮上你的忙吗？",
-		subtitle_id = 1151,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085115127] = {
-		id = 1085115127,
-		form_id = 0,
-		content = "好漂亮。欸？你想看的话……虽然大部分都是小昙帮我拍的，今天……真的玩得很开心。等一下，那张是！只是觉得，小昙笑起来，很好看……",
-		subtitle_id = 115127,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851161] = {
-		id = 10851161,
-		form_id = 0,
-		content = "想不想养猫？嗯……奈奈是很可爱。但是没关系，因为有你在，我已经足够开心了。",
-		subtitle_id = 1161,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085116102] = {
-		id = 1085116102,
-		form_id = 0,
-		content = "小昙说过，如果怕自己忘掉重要的事，就用这个拍下来。就像现在，小昙笑起来的样子……",
-		subtitle_id = 116102,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851162] = {
-		id = 10851162,
-		form_id = 0,
-		content = "再多和我讲一些这里的故事吧，你总是懂得好多我不知道的事情，好厉害。",
-		subtitle_id = 1162,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085116202] = {
-		id = 1085116202,
-		form_id = 0,
-		content = "这个……送给小昙。这次也折了很久……对不起，没法像小昙一样那么厉害……",
-		subtitle_id = 116202,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851163] = {
-		id = 10851163,
-		form_id = 0,
-		content = "呼……嗯……我睡着了？在你身边，总会觉得心里暖洋洋的……不知不觉就困起来了。",
-		subtitle_id = 1163,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085116302] = {
-		id = 1085116302,
-		form_id = 0,
-		content = "庆祝活动？唔……我只想和小昙一起玩。今天我们可以去海边逛逛吗？就像那天一样……",
-		subtitle_id = 116302,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085116602] = {
-		id = 1085116602,
-		form_id = 0,
-		content = "感觉……只要和小昙在一起，就可以分享烦恼，我们就可以去任何想去的地方。",
-		subtitle_id = 116602,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085116702] = {
-		id = 1085116702,
-		form_id = 0,
-		content = "小昙，不论我们去做什么，只要能和你一起，我就很开心了。",
-		subtitle_id = 116702,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851171] = {
-		id = 10851171,
-		form_id = 0,
-		content = "小昙的睡脸……（轻笑）。",
-		subtitle_id = 1171,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085117119] = {
-		id = 1085117119,
-		form_id = 0,
-		content = "小昙，睡着了吗……",
-		subtitle_id = 117119,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851172] = {
-		id = 10851172,
-		form_id = 0,
-		content = "再稍微看一会……",
-		subtitle_id = 1172,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085117201] = {
-		id = 1085117201,
-		form_id = 0,
-		content = "睡觉的样子，有点可爱……",
-		subtitle_id = 117201,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851173] = {
-		id = 10851173,
-		form_id = 0,
-		content = "累了就休息吧……",
-		subtitle_id = 1173,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085117301] = {
-		id = 1085117301,
-		form_id = 0,
-		content = "我会，在你身边……",
-		subtitle_id = 117301,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851181] = {
-		id = 10851181,
-		form_id = 0,
-		content = "……这样很有趣吗？那我也要玩~",
-		subtitle_id = 1181,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085118103] = {
-		id = 1085118103,
-		form_id = 0,
-		content = "唔……小昙，怎么了吗？我就在这里，哪也不去。",
-		subtitle_id = 118103,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851191] = {
-		id = 10851191,
-		form_id = 0,
-		content = "呀……小昙，这个是「地震」了吗？",
-		subtitle_id = 1191,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085119103] = {
-		id = 1085119103,
-		form_id = 0,
-		content = "呀……别担心，小昙，我没事的。",
-		subtitle_id = 119103,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851201] = {
-		id = 10851201,
-		form_id = 0,
-		content = "只要是你送给我的礼物，我都会好好珍惜。",
-		subtitle_id = 1201,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085120101] = {
-		id = 1085120101,
-		form_id = 0,
-		content = "这是小昙送我的礼物，我不会再弄丢了。",
-		subtitle_id = 120101,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851211] = {
-		id = 10851211,
-		form_id = 0,
-		content = "这个世界上有好多好多我不知道的事情，不管是书里看到的，还是朋友们告诉我的……我想要和你一起，一点点去了解它们。",
-		subtitle_id = 1211,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851221] = {
-		id = 10851221,
-		form_id = 0,
-		content = "以前我很喜欢做梦，在梦里就能见到小昙，小昙会陪我一起玩，会带着我去到很远很远的地方……但现在，我已经不用再做梦了，小昙就在这里。",
-		subtitle_id = 1221,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851231] = {
-		id = 10851231,
-		form_id = 0,
-		content = "我现在知道，每个人都是与众不同的，并不能只用「好人」和「坏人」去区分他们，每个人都是特别的……但是，小昙一定是这些所有人当中，最特别的那个。",
-		subtitle_id = 1231,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851241] = {
-		id = 10851241,
-		form_id = 0,
-		content = "我曾经想过，如果大家能够好好活下去的话，那就算我消失了也无所谓，是小昙教会了我，世界上没有「消失了也无所谓的人」……所以我才能站在这里，我还想要和大家在一起，和小昙在一起。",
-		subtitle_id = 1241,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851251] = {
-		id = 10851251,
-		form_id = 0,
-		content = "我常常会想自己究竟是谁，未来又要去到哪里，却没有任何人能告诉我答案，到后来「明天」甚至会让我觉得有些害怕……直到我又遇到了小昙，和小昙说话的时候，总会觉得很安心，牵住小昙的手，我就能鼓起勇气，虽然不知道究竟要花多久，但只要和你在一起，我就能找出那份答案……所以，我想要一直待在小昙身边，可以吗？",
-		subtitle_id = 1251,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10851301] = {
-		id = 10851301,
-		form_id = 0,
-		content = "小昙，你喜欢这件衣服吗？",
-		subtitle_id = 1301,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085130101] = {
-		id = 1085130101,
-		form_id = 0,
-		content = "小昙，我穿这件衣服，好看吗？",
-		subtitle_id = 130101,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852011] = {
-		id = 10852011,
-		form_id = 0,
-		content = "如果是为了保护小昙的话……",
-		subtitle_id = 2011,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852012] = {
-		id = 10852012,
-		form_id = 0,
-		content = "它们……为什么要干坏事呢？",
-		subtitle_id = 2012,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852021] = {
-		id = 10852021,
-		form_id = 0,
-		content = "我要和小昙并肩作战。",
-		subtitle_id = 2021,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852031] = {
-		id = 10852031,
-		form_id = 0,
-		content = "危险的东西，得赶走……",
-		subtitle_id = 2031,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852041] = {
-		id = 10852041,
-		form_id = 0,
-		content = "不想拖后腿……",
-		subtitle_id = 2041,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852051] = {
-		id = 10852051,
-		form_id = 0,
-		content = "呜……好痛……",
-		subtitle_id = 2051,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852061] = {
-		id = 10852061,
-		form_id = 0,
-		content = "小昙……我好想再见你一面……",
-		subtitle_id = 2061,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852071] = {
-		id = 10852071,
-		form_id = 0,
-		content = "要先休息一会吗？",
-		subtitle_id = 2071,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852081] = {
-		id = 10852081,
-		form_id = 0,
-		content = "小昙的背后……由我来守护。",
-		subtitle_id = 2081,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852091] = {
-		id = 10852091,
-		form_id = 0,
-		content = "我也能……保护别人。",
-		subtitle_id = 2091,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852101] = {
-		id = 10852101,
-		form_id = 0,
-		content = "小昙，你没事吧？（轻笑声）太好了。",
-		subtitle_id = 2101,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852102] = {
-		id = 10852102,
-		form_id = 0,
-		content = "我们……赢了？还好有小昙在。",
-		subtitle_id = 2102,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852111] = {
-		id = 10852111,
-		form_id = 0,
-		content = "不要过来……！",
-		subtitle_id = 2111,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852112] = {
-		id = 10852112,
-		form_id = 0,
-		content = "请把力量，借给我。",
-		subtitle_id = 2112,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852121] = {
-		id = 10852121,
-		form_id = 0,
-		content = "我也是……能战斗的。",
-		subtitle_id = 2121,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852131] = {
-		id = 10852131,
-		form_id = 0,
-		content = "我会结束这一切的。",
-		subtitle_id = 2131,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852141] = {
-		id = 10852141,
-		form_id = 0,
-		content = "为了那些……不能被遗忘的东西。",
-		subtitle_id = 2141,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852142] = {
-		id = 10852142,
-		form_id = 0,
-		content = "我还想要……创造更多新的回忆。",
-		subtitle_id = 2142,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852151] = {
-		id = 10852151,
-		form_id = 0,
-		content = "躲开了……",
-		subtitle_id = 2151,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852161] = {
-		id = 10852161,
-		form_id = 0,
-		content = "嗯？它不动了……",
-		subtitle_id = 2161,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852171] = {
-		id = 10852171,
-		form_id = 0,
-		content = "……你没事吗？",
-		subtitle_id = 2171,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852181] = {
-		id = 10852181,
-		form_id = 0,
-		content = "小昙，我准备好了。",
-		subtitle_id = 2181,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852191] = {
-		id = 10852191,
-		form_id = 0,
-		content = "这样算是……「好机会」？",
-		subtitle_id = 2191,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852201] = {
-		id = 10852201,
-		form_id = 0,
-		content = "这些是……「坏人」？",
-		subtitle_id = 2201,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852202] = {
-		id = 10852202,
-		form_id = 0,
-		content = "小心一点……",
-		subtitle_id = 2202,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852211] = {
-		id = 10852211,
-		form_id = 0,
-		content = "有种，好温暖的感觉。",
-		subtitle_id = 2211,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852221] = {
-		id = 10852221,
-		form_id = 0,
-		content = "谢谢……",
-		subtitle_id = 2221,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852231] = {
-		id = 10852231,
-		form_id = 0,
-		content = "呜……",
-		subtitle_id = 2231,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852241] = {
-		id = 10852241,
-		form_id = 0,
-		content = "伊里伽尔姐姐，我会加油的。",
-		subtitle_id = 2241,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[10852251] = {
-		id = 10852251,
-		form_id = 0,
-		content = "小昙是我最重要的人……虽然我已经不记得那些过去的回忆，但我还想和他一起，创造更多更多新的回忆。",
-		subtitle_id = 2251,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085226101] = {
-		id = 1085226101,
-		form_id = 0,
-		content = "伊里伽尔姐姐，虽然看起来有些冷漠……但其实她是个很温柔的人，我还想和她多说说话。",
-		subtitle_id = 226101,
-		team_hero_id_list = "",
-		chara_id = 1085
-	},
-	[1085011011] = {
-		id = 1085011011,
-		form_id = 0,
-		content = "小昙，你离开了好久，我很担心你……",
-		subtitle_id = 1011,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011012] = {
-		id = 1085011012,
-		form_id = 0,
-		content = "下次，如果你要走，可以带上我吗……",
-		subtitle_id = 1012,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011013] = {
-		id = 1085011013,
-		form_id = 0,
-		content = "太好了……你来了，我正在想你……",
-		subtitle_id = 1013,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011021] = {
-		id = 1085011021,
-		form_id = 0,
-		content = "嗯……小昙？",
-		subtitle_id = 1021,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011022] = {
-		id = 1085011022,
-		form_id = 0,
-		content = "你在找我吗？",
-		subtitle_id = 1022,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011031] = {
-		id = 1085011031,
-		form_id = 0,
-		content = "小昙……你是不是等了我很久？没关系，我已经找到回到你身边的路了。",
-		subtitle_id = 1031,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011041] = {
-		id = 1085011041,
-		form_id = 0,
-		content = "如果这是你希望的话，我会做好的。",
-		subtitle_id = 1041,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011051] = {
-		id = 1085011051,
-		form_id = 0,
-		content = "小昙，如果你相信我的话，那我也相信你……",
-		subtitle_id = 1051,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011061] = {
-		id = 1085011061,
-		form_id = 0,
-		content = "我会努力的……我不想忘记……",
-		subtitle_id = 1061,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011071] = {
-		id = 1085011071,
-		form_id = 0,
-		content = "小昙，我会保护好你的……不用担心。",
-		subtitle_id = 1071,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011081] = {
-		id = 1085011081,
-		form_id = 0,
-		content = "如果帮不上小昙的忙，我会被讨厌吗……我不想要那样。",
-		subtitle_id = 1081,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011091] = {
-		id = 1085011091,
-		form_id = 0,
-		content = "我不能想象……没有小昙在身边的景象。小昙是最重要的人，如果真的可以的话……我想要和小昙永远这样下去。",
-		subtitle_id = 1091,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011101] = {
-		id = 1085011101,
-		form_id = 0,
-		content = "小昙你看，我做到了！",
-		subtitle_id = 1101,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011111] = {
-		id = 1085011111,
-		form_id = 0,
-		content = "新的朋友？嗯，我知道了……小昙的朋友也是我的朋友。",
-		subtitle_id = 1111,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011121] = {
-		id = 1085011121,
-		form_id = 0,
-		content = "我能看见，时间的尽头……有你，有我。",
-		subtitle_id = 1121,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011131] = {
-		id = 1085011131,
-		form_id = 0,
-		content = "我一定会帮上小昙的，无论你希望我做什么。",
-		subtitle_id = 1131,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011141] = {
-		id = 1085011141,
-		form_id = 0,
-		content = "小昙，你快来看~这样的景色，我在梦里见过好几次……但这次……终于能再和你一起来看了~",
-		subtitle_id = 114127,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011151] = {
-		id = 1085011151,
-		form_id = 0,
-		content = "好漂亮。欸？你想看的话……虽然大部分都是小昙帮我拍的，今天……真的玩得很开心。等一下，那张是！只是觉得，小昙笑起来，很好看……",
-		subtitle_id = 115127,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011161] = {
-		id = 1085011161,
-		form_id = 0,
-		content = "小昙说过，如果怕自己忘掉重要的事，就用这个拍下来。就像现在，小昙笑起来的样子……",
-		subtitle_id = 1141,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011162] = {
-		id = 1085011162,
-		form_id = 0,
-		content = "这个……送给小昙。这次也折了很久……对不起，没法像小昙一样那么厉害……",
-		subtitle_id = 1151,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011163] = {
-		id = 1085011163,
-		form_id = 0,
-		content = "庆祝活动？唔……我只想和小昙一起玩。今天我们可以去海边逛逛吗？就像那天一样……",
-		subtitle_id = 1161,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011166] = {
-		id = 1085011166,
-		form_id = 0,
-		content = "感觉……只要和小昙在一起，就可以分享烦恼，我们就可以去任何想去的地方。",
-		subtitle_id = 1162,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011167] = {
-		id = 1085011167,
-		form_id = 0,
-		content = "小昙，不论我们去做什么，只要能和你一起，我就很开心了。",
-		subtitle_id = 1163,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011171] = {
-		id = 1085011171,
-		form_id = 0,
-		content = "小昙，睡着了吗……",
-		subtitle_id = 1171,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011172] = {
-		id = 1085011172,
-		form_id = 0,
-		content = "睡觉的样子，有点可爱……",
-		subtitle_id = 1172,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011173] = {
-		id = 1085011173,
-		form_id = 0,
-		content = "我会，在你身边……",
-		subtitle_id = 1173,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011181] = {
-		id = 1085011181,
-		form_id = 0,
-		content = "唔……小昙，怎么了吗？我就在这里，哪也不去。",
-		subtitle_id = 1181,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011191] = {
-		id = 1085011191,
-		form_id = 0,
-		content = "呀……别担心，小昙，我没事的。",
-		subtitle_id = 1191,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011201] = {
-		id = 1085011201,
-		form_id = 0,
-		content = "这是小昙送我的礼物，我不会再弄丢了。",
-		subtitle_id = 1201,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[1085011301] = {
-		id = 1085011301,
-		form_id = 0,
-		content = "小昙，我穿这件衣服，好看吗？",
-		subtitle_id = 1301,
-		team_hero_id_list = "",
-		chara_id = 108501
-	},
-	[12112241] = {
-		id = 12112241,
-		form_id = 0,
-		content = "薇儿姐姐，让我们一起加油吧。",
-		subtitle_id = 2241,
-		chara_id = 1211,
-		team_hero_id_list = {
-			1284
-		}
-	},
-	[12112242] = {
-		id = 12112242,
-		form_id = 0,
-		content = "现在的我，可以不再躲在你的身后了。",
-		subtitle_id = 2242,
-		chara_id = 1211,
-		team_hero_id_list = {
-			1111
-		}
-	},
-	[12112243] = {
-		id = 12112243,
-		form_id = 0,
-		content = "休老师，请见证我训练的成果。",
-		subtitle_id = 2243,
-		chara_id = 1211,
-		team_hero_id_list = {
-			1019
-		}
-	},
-	[12112244] = {
-		id = 12112244,
-		form_id = 0,
-		content = "休老师，请见证我训练的成果。",
-		subtitle_id = 2244,
-		chara_id = 1211,
-		team_hero_id_list = {
-			1119
-		}
-	},
-	[12111011] = {
-		id = 12111011,
-		form_id = 0,
-		content = "啊，你回来啦。外勤工作辛苦了，管理员这次的表现也很精彩哦~",
-		subtitle_id = 1011,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111012] = {
-		id = 12111012,
-		form_id = 0,
-		content = "管理员？别那么着急，你看连头发都乱糟糟的，我有一直等你。",
-		subtitle_id = 1012,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111013] = {
-		id = 12111013,
-		form_id = 0,
-		content = "怎么啦？连出门都急急忙忙的，不过没关系，工作我已经都帮你完成咯。",
-		subtitle_id = 1013,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111021] = {
-		id = 12111021,
-		form_id = 0,
-		content = "让大家等太久可不好。",
-		subtitle_id = 1021,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111022] = {
-		id = 12111022,
-		form_id = 0,
-		content = "嗯，我准备好了。",
-		subtitle_id = 1022,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111031] = {
-		id = 12111031,
-		form_id = 0,
-		content = "就算只有一点点也好，我也想逐步向前走……管理员，我已经不是那只害怕飞翔的雏鸟了。",
-		subtitle_id = 1031,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111041] = {
-		id = 12111041,
-		form_id = 0,
-		content = "不管是什么任务，都请交给我吧。",
-		subtitle_id = 1041,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111051] = {
-		id = 12111051,
-		form_id = 0,
-		content = "别担心，我会保护好大家的。",
-		subtitle_id = 1051,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111061] = {
-		id = 12111061,
-		form_id = 0,
-		content = "就算是重复过成百上千次的训练，也能学到些新东西。",
-		subtitle_id = 1061,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111071] = {
-		id = 12111071,
-		form_id = 0,
-		content = "又想起第一次和管理员一起训练的时候了，从那时起你就一直在帮助我……谢谢。",
-		subtitle_id = 1071,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111081] = {
-		id = 12111081,
-		form_id = 0,
-		content = "总觉得自己好像又变强了一些，这都是管理员的功劳……为了成为能回应你期待的人，我还要继续努力才行。",
-		subtitle_id = 1081,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111091] = {
-		id = 12111091,
-		form_id = 0,
-		content = "要怎样才能成为更好的自己，要怎样才能帮上大家……不管怎么去想，问题的答案总是会显得有些模糊，但只要两个人一起的话，我们一定能找出自己的答案，所以……今后也请一直陪着我吧。",
-		subtitle_id = 1091,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111101] = {
-		id = 12111101,
-		form_id = 0,
-		content = "我会好好使用这份力量。",
-		subtitle_id = 1101,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111111] = {
-		id = 12111111,
-		form_id = 0,
-		content = "新成员？那从今天起我就是前辈了，得给这孩子做个好榜样。",
-		subtitle_id = 1111,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111121] = {
-		id = 12111121,
-		form_id = 0,
-		content = "我已经决定了，再也不会停滞不前。",
-		subtitle_id = 1121,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111131] = {
-		id = 12111131,
-		form_id = 0,
-		content = "不管需要帮什么忙，都可以告诉我哦。",
-		subtitle_id = 1131,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111141] = {
-		id = 12111141,
-		form_id = 0,
-		content = "如果累了的话就先休息吧，剩下的事情都交给我就好。",
-		subtitle_id = 1141,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[1211114131] = {
-		id = 1211114131,
-		form_id = 0,
-		content = "管理员你看，听说那是虚恒最高的石塔诶。夕阳下的东西塔……真漂亮……诶？我也是……？呜……",
-		subtitle_id = 114131,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111151] = {
-		id = 12111151,
-		form_id = 0,
-		content = "重要的不是做「好孩子」，而是成为更好的自己……管理员你说呢？",
-		subtitle_id = 1151,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[1211115131] = {
-		id = 1211115131,
-		form_id = 0,
-		content = "管理员……先就这样别动。嗯……嘿嘿……意外的合适诶。",
-		subtitle_id = 115131,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111161] = {
-		id = 12111161,
-		form_id = 0,
-		content = "管理员，你的纽扣松了……（轻笑声）下次出门之前，还是让我来帮忙吧？",
-		subtitle_id = 1161,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111162] = {
-		id = 12111162,
-		form_id = 0,
-		content = "有什么烦心事都请告诉我，比起一个人烦恼，还是两个人一起想办法比较好。",
-		subtitle_id = 1162,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111163] = {
-		id = 12111163,
-		form_id = 0,
-		content = "我变得成熟了不少？真的？（轻笑声）那就好。",
-		subtitle_id = 1163,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111171] = {
-		id = 12111171,
-		form_id = 0,
-		content = "管理员睡着了？嗯……稍微靠近一点……呼……应该没有被发现。",
-		subtitle_id = 1171,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111172] = {
-		id = 12111172,
-		form_id = 0,
-		content = "看起来累坏了……管理员的心跳声……呼……啊，差点连我也睡着了。",
-		subtitle_id = 1172,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111173] = {
-		id = 12111173,
-		form_id = 0,
-		content = "有悄悄话想给我说？嗯嗯……原来是这样……放心，我会保密的。",
-		subtitle_id = 1173,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111181] = {
-		id = 12111181,
-		form_id = 0,
-		content = "唔……？管理员是有事找我吗？",
-		subtitle_id = 1181,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111191] = {
-		id = 12111191,
-		form_id = 0,
-		content = "啊……！管理员……整天恶作剧可是要受惩罚的哦。",
-		subtitle_id = 1191,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111201] = {
-		id = 12111201,
-		form_id = 0,
-		content = "送给我的？谢谢管理员！",
-		subtitle_id = 1201,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111211] = {
-		id = 12111211,
-		form_id = 0,
-		content = "最近新加入的修正者都在叫我「奥西里斯前辈」……虽然以前都没想过会有这种事，但既然当上前辈了，我就得照顾好新人们才行……唔？管理员，为什么摸我的头？",
-		subtitle_id = 1211,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111221] = {
-		id = 12111221,
-		form_id = 0,
-		content = "管理员最近有什么特别想吃的吗？问这个倒没什么特别的原因，你最近总是很忙，连饭都没时间好好吃，但如果有便当的话，就可以带到任务地点吃了，请尽管说吧，不管什么菜式我都会准备好的。",
-		subtitle_id = 1221,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111231] = {
-		id = 12111231,
-		form_id = 0,
-		content = "以前的我总是担心会给大家添麻烦，所以什么都不敢去做……但要是一直躲在他人身后的话，我就永远是那个长不大的「小奥西里斯」。现在的我，已经拥有了可以和大家一起翱翔蓝天的翅膀，所以不管是任务亦或其他事情，都请来依靠我吧。",
-		subtitle_id = 1231,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111241] = {
-		id = 12111241,
-		form_id = 0,
-		content = "要是一味害怕「失去」的话，只会被恐惧束缚，什么都做不了，我见过了许多失去家园后依旧努力活着的人，也有身陷困境仍然拼命证明自己的人，大家都在努力向前迈进……我想成为那些人的助力，成为能够站在大家身前……能够站在管理员身前的那个人。",
-		subtitle_id = 1241,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111251] = {
-		id = 12111251,
-		form_id = 0,
-		content = "管理员一直相信我、鼓励我，给了我太多勇气……就是因为有你在，我才能向前踏出一步，和你在一起的时候，我就总会觉得自己什么都做得到，不论世界怎样变化，不管未来会发生什么，我都想要待在你的身边……可以的吧，管理员？",
-		subtitle_id = 1251,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12111301] = {
-		id = 12111301,
-		form_id = 0,
-		content = "好漂亮的衣服……管理员，我可以穿上看看吗？",
-		subtitle_id = 1301,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112011] = {
-		id = 12112011,
-		form_id = 0,
-		content = "放心吧，我知道自己该做什么。",
-		subtitle_id = 2011,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112012] = {
-		id = 12112012,
-		form_id = 0,
-		content = "要让所有人都能平安回去。",
-		subtitle_id = 2012,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112021] = {
-		id = 12112021,
-		form_id = 0,
-		content = "我，会站在最前方。",
-		subtitle_id = 2021,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112031] = {
-		id = 12112031,
-		form_id = 0,
-		content = "这样就能帮上大家的忙。",
-		subtitle_id = 2031,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112041] = {
-		id = 12112041,
-		form_id = 0,
-		content = "我会用自己的方式战斗。",
-		subtitle_id = 2041,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112051] = {
-		id = 12112051,
-		form_id = 0,
-		content = "别担心，我没关系的……",
-		subtitle_id = 2051,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112061] = {
-		id = 12112061,
-		form_id = 0,
-		content = "明明还有……好多要做的事情……",
-		subtitle_id = 2061,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112071] = {
-		id = 12112071,
-		form_id = 0,
-		content = "管理员，接下来的指示是……休息？好的，我明白了。",
-		subtitle_id = 2071,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112081] = {
-		id = 12112081,
-		form_id = 0,
-		content = "这是我能为你做的最后一件事。",
-		subtitle_id = 2081,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112091] = {
-		id = 12112091,
-		form_id = 0,
-		content = "不会让你们伤害任何人。",
-		subtitle_id = 2091,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112101] = {
-		id = 12112101,
-		form_id = 0,
-		content = "任务结束了？呼……只要有管理员在，一切总是很顺利。",
-		subtitle_id = 2101,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112102] = {
-		id = 12112102,
-		form_id = 0,
-		content = "一切顺利？嘿嘿……这都是大家一起努力的结果，太好了。",
-		subtitle_id = 2102,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112111] = {
-		id = 12112111,
-		form_id = 0,
-		content = "愿你能就此安息……",
-		subtitle_id = 2111,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112112] = {
-		id = 12112112,
-		form_id = 0,
-		content = "让我来结束你的痛苦。",
-		subtitle_id = 2112,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112121] = {
-		id = 12112121,
-		form_id = 0,
-		content = "这是为了大家而存在的翅膀。",
-		subtitle_id = 2121,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112131] = {
-		id = 12112131,
-		form_id = 0,
-		content = "现在的我……做得到。",
-		subtitle_id = 2131,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112141] = {
-		id = 12112141,
-		form_id = 0,
-		content = "抱歉……但我不能手下留情。",
-		subtitle_id = 2141,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112142] = {
-		id = 12112142,
-		form_id = 0,
-		content = "这一次，就由我来保护大家。",
-		subtitle_id = 2142,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112151] = {
-		id = 12112151,
-		form_id = 0,
-		content = "下次还要更快一些。",
-		subtitle_id = 2151,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112161] = {
-		id = 12112161,
-		form_id = 0,
-		content = "就这样……别再动了。",
-		subtitle_id = 2161,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112171] = {
-		id = 12112171,
-		form_id = 0,
-		content = "你没事吧？先退后，这里请交给我。",
-		subtitle_id = 2171,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112181] = {
-		id = 12112181,
-		form_id = 0,
-		content = "我准备好了，随时都可以！",
-		subtitle_id = 2181,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112191] = {
-		id = 12112191,
-		form_id = 0,
-		content = "大家创造出来的机会……不能错过。",
-		subtitle_id = 2191,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112201] = {
-		id = 12112201,
-		form_id = 0,
-		content = "敌人又来了，先逐个击破吧。",
-		subtitle_id = 2201,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112202] = {
-		id = 12112202,
-		form_id = 0,
-		content = "看起来很强的样子……大家小心。",
-		subtitle_id = 2202,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112211] = {
-		id = 12112211,
-		form_id = 0,
-		content = "谢谢。",
-		subtitle_id = 2211,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112221] = {
-		id = 12112221,
-		form_id = 0,
-		content = "这样就能继续战斗了……谢谢。",
-		subtitle_id = 2221,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112231] = {
-		id = 12112231,
-		form_id = 0,
-		content = "得快点站起来……",
-		subtitle_id = 2231,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[12112251] = {
-		id = 12112251,
-		form_id = 0,
-		content = "管理员总是在我最需要的时候出现，鼓励我、安慰我，如果没有管理员的话……我说不定在当时就放弃了。但我不能总是这样依赖管理员的温柔，从今以后，我也要成为那个能够回应大家期待的人。",
-		subtitle_id = 2251,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[1211226105] = {
-		id = 1211226105,
-		form_id = 0,
-		content = "薇儿姐姐总是能够用开朗的笑容带给大家活力，一直是我追赶的方向……但她是她，我是我，我会用我的方式变强的。",
-		subtitle_id = 226105,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[1211226106] = {
-		id = 1211226106,
-		form_id = 0,
-		content = "冥王是我重要的伙伴，一直以来都是她在保护我，现在轮到我来帮助冥王了。",
-		subtitle_id = 226106,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[1211226107] = {
-		id = 1211226107,
-		form_id = 0,
-		content = "休老师一直都很辛苦……我一直在想，要是能帮上她的忙就好了，现在正是付诸行动的时候。",
-		subtitle_id = 226107,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[1211226108] = {
-		id = 1211226108,
-		form_id = 0,
-		content = "伽梨姐姐就像是所有人的大姐头一样，爽朗又爱照顾人。不过她偶尔会露出一副忧心忡忡的样子……要是我能帮得上她就好了。",
-		subtitle_id = 226108,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[1211226109] = {
-		id = 1211226109,
-		form_id = 0,
-		content = "虽然嘴上总说着「不想干」、「想偷懒」之类的，但帕尔瓦蒂姐姐实际上是个很负责的人，所以大家才会这么信赖她吧。",
-		subtitle_id = 226109,
-		team_hero_id_list = "",
-		chara_id = 1211
-	},
-	[1211012241] = {
-		id = 1211012241,
-		form_id = 0,
-		content = "薇儿姐姐，让我们一起加油吧。",
-		subtitle_id = 2241,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012242] = {
-		id = 1211012242,
-		form_id = 0,
-		content = "现在的我，可以不再躲在你的身后了。",
-		subtitle_id = 2242,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012243] = {
-		id = 1211012243,
-		form_id = 0,
-		content = "休老师，请见证我训练的成果。",
-		subtitle_id = 2243,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012244] = {
-		id = 1211012244,
-		form_id = 0,
-		content = "休老师，请见证我训练的成果。",
-		subtitle_id = 2244,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011011] = {
-		id = 1211011011,
-		form_id = 0,
-		content = "管理员，要不要过来这边？今天的夕风很舒服哦。",
-		subtitle_id = 1011,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011012] = {
-		id = 1211011012,
-		form_id = 0,
-		content = "管理员？别那么着急，你看连头发都乱糟糟的，我有一直等你。",
-		subtitle_id = 1012,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011013] = {
-		id = 1211011013,
-		form_id = 0,
-		content = "怎么啦？连出门都急急忙忙的，不过没关系，工作我已经都帮你完成咯。",
-		subtitle_id = 1013,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011021] = {
-		id = 1211011021,
-		form_id = 0,
-		content = "让大家等太久可不好。",
-		subtitle_id = 1021,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011022] = {
-		id = 1211011022,
-		form_id = 0,
-		content = "嗯，我准备好了。",
-		subtitle_id = 1022,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011031] = {
-		id = 1211011031,
-		form_id = 0,
-		content = "就算只有一点点也好，我也想逐步向前走……管理员，我已经不是那只害怕飞翔的雏鸟了。",
-		subtitle_id = 1031,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011041] = {
-		id = 1211011041,
-		form_id = 0,
-		content = "不管是什么任务，都请交给我吧。",
-		subtitle_id = 1041,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011051] = {
-		id = 1211011051,
-		form_id = 0,
-		content = "别担心，我会保护好大家的。",
-		subtitle_id = 1051,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011061] = {
-		id = 1211011061,
-		form_id = 0,
-		content = "就算是重复过成百上千次的训练，也能学到些新东西。",
-		subtitle_id = 1061,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011071] = {
-		id = 1211011071,
-		form_id = 0,
-		content = "又想起第一次和管理员一起训练的时候了，从那时起你就一直在帮助我……谢谢。",
-		subtitle_id = 1071,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011081] = {
-		id = 1211011081,
-		form_id = 0,
-		content = "总觉得自己好像又变强了一些，这都是管理员的功劳……为了成为能回应你期待的人，我还要继续努力才行。",
-		subtitle_id = 1081,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011091] = {
-		id = 1211011091,
-		form_id = 0,
-		content = "要怎样才能成为更好的自己，要怎样才能帮上大家……不管怎么去想，问题的答案总是会显得有些模糊，但只要两个人一起的话，我们一定能找出自己的答案，所以……今后也请一直陪着我吧。",
-		subtitle_id = 1091,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011101] = {
-		id = 1211011101,
-		form_id = 0,
-		content = "我会好好使用这份力量。",
-		subtitle_id = 1101,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011111] = {
-		id = 1211011111,
-		form_id = 0,
-		content = "新成员？那从今天起我就是前辈了，得给这孩子做个好榜样。",
-		subtitle_id = 1111,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011121] = {
-		id = 1211011121,
-		form_id = 0,
-		content = "我已经决定了，再也不会停滞不前。",
-		subtitle_id = 1121,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011131] = {
-		id = 1211011131,
-		form_id = 0,
-		content = "不管需要帮什么忙，都可以告诉我哦。",
-		subtitle_id = 1131,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011141] = {
-		id = 1211011141,
-		form_id = 0,
-		content = "管理员你看，听说那是虚恒最高的石塔诶。夕阳下的东西塔……真漂亮……诶？我也是……？呜……",
-		subtitle_id = 1141,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011151] = {
-		id = 1211011151,
-		form_id = 0,
-		content = "管理员……先就这样别动。嗯……嘿嘿……意外的合适诶。",
-		subtitle_id = 1151,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011161] = {
-		id = 1211011161,
-		form_id = 0,
-		content = "管理员，你的纽扣松了……（轻笑声）下次出门之前，还是让我来帮忙吧？",
-		subtitle_id = 1161,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011162] = {
-		id = 1211011162,
-		form_id = 0,
-		content = "有什么烦心事都请告诉我，比起一个人烦恼，还是两个人一起想办法比较好。",
-		subtitle_id = 1162,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011163] = {
-		id = 1211011163,
-		form_id = 0,
-		content = "我变得成熟了不少？真的？（轻笑声）那就好。",
-		subtitle_id = 1163,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011171] = {
-		id = 1211011171,
-		form_id = 0,
-		content = "管理员睡着了？嗯……稍微靠近一点……呼……应该没有被发现。",
-		subtitle_id = 1171,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011172] = {
-		id = 1211011172,
-		form_id = 0,
-		content = "看起来累坏了……管理员的心跳声……呼……啊，差点连我也睡着了。",
-		subtitle_id = 1172,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011173] = {
-		id = 1211011173,
-		form_id = 0,
-		content = "有悄悄话想给我说？嗯嗯……原来是这样……放心，我会保密的。",
-		subtitle_id = 1173,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011181] = {
-		id = 1211011181,
-		form_id = 0,
-		content = "唔……？管理员是有事找我吗？",
-		subtitle_id = 1181,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011191] = {
-		id = 1211011191,
-		form_id = 0,
-		content = "啊……！管理员……整天恶作剧可是要受惩罚的哦。",
-		subtitle_id = 1191,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011201] = {
-		id = 1211011201,
-		form_id = 0,
-		content = "送给我的？谢谢管理员！",
-		subtitle_id = 1201,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011211] = {
-		id = 1211011211,
-		form_id = 0,
-		content = "最近新加入的修正者都在叫我「奥西里斯前辈」……虽然以前都没想过会有这种事，但既然当上前辈了，我就得照顾好新人们才行……唔？管理员，为什么摸我的头？",
-		subtitle_id = 1211,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011221] = {
-		id = 1211011221,
-		form_id = 0,
-		content = "管理员最近有什么特别想吃的吗？问这个倒没什么特别的原因，你最近总是很忙，连饭都没时间好好吃，但如果有便当的话，就可以带到任务地点吃了，请尽管说吧，不管什么菜式我都会准备好的。",
-		subtitle_id = 1221,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011231] = {
-		id = 1211011231,
-		form_id = 0,
-		content = "以前的我总是担心会给大家添麻烦，所以什么都不敢去做……但要是一直躲在他人身后的话，我就永远是那个长不大的「小奥西里斯」。现在的我，已经拥有了可以和大家一起翱翔蓝天的翅膀，所以不管是任务亦或其他事情，都请来依靠我吧。",
-		subtitle_id = 1231,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011241] = {
-		id = 1211011241,
-		form_id = 0,
-		content = "要是一味害怕「失去」的话，只会被恐惧束缚，什么都做不了，我见过了许多失去家园后依旧努力活着的人，也有身陷困境仍然拼命证明自己的人，大家都在努力向前迈进……我想成为那些人的助力，成为能够站在大家身前……能够站在管理员身前的那个人。",
-		subtitle_id = 1241,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011251] = {
-		id = 1211011251,
-		form_id = 0,
-		content = "管理员一直相信我、鼓励我，给了我太多勇气……就是因为有你在，我才能向前踏出一步，和你在一起的时候，我就总会觉得自己什么都做得到，不论世界怎样变化，不管未来会发生什么，我都想要待在你的身边……可以的吧，管理员？",
-		subtitle_id = 1251,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211011301] = {
-		id = 1211011301,
-		form_id = 0,
-		content = "好漂亮的衣服……管理员，我可以穿上看看吗？",
-		subtitle_id = 1301,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012011] = {
-		id = 1211012011,
-		form_id = 0,
-		content = "放心吧，我知道自己该做什么。",
-		subtitle_id = 2011,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012012] = {
-		id = 1211012012,
-		form_id = 0,
-		content = "要让所有人都能平安回去。",
-		subtitle_id = 2012,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012021] = {
-		id = 1211012021,
-		form_id = 0,
-		content = "我，会站在最前方。",
-		subtitle_id = 2021,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012031] = {
-		id = 1211012031,
-		form_id = 0,
-		content = "这样就能帮上大家的忙。",
-		subtitle_id = 2031,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012041] = {
-		id = 1211012041,
-		form_id = 0,
-		content = "我会用自己的方式战斗。",
-		subtitle_id = 2041,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012051] = {
-		id = 1211012051,
-		form_id = 0,
-		content = "别担心，我没关系的……",
-		subtitle_id = 2051,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012061] = {
-		id = 1211012061,
-		form_id = 0,
-		content = "明明还有……好多要做的事情……",
-		subtitle_id = 2061,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012071] = {
-		id = 1211012071,
-		form_id = 0,
-		content = "管理员，接下来的指示是……休息？好的，我明白了。",
-		subtitle_id = 2071,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012081] = {
-		id = 1211012081,
-		form_id = 0,
-		content = "这是我能为你做的最后一件事。",
-		subtitle_id = 2081,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012091] = {
-		id = 1211012091,
-		form_id = 0,
-		content = "不会让你们伤害任何人。",
-		subtitle_id = 2091,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012101] = {
-		id = 1211012101,
-		form_id = 0,
-		content = "任务结束了？呼……只要有管理员在，一切总是很顺利。",
-		subtitle_id = 2101,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012102] = {
-		id = 1211012102,
-		form_id = 0,
-		content = "一切顺利？嘿嘿……这都是大家一起努力的结果，太好了。",
-		subtitle_id = 2102,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012111] = {
-		id = 1211012111,
-		form_id = 0,
-		content = "愿你能就此安息……",
-		subtitle_id = 2111,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012112] = {
-		id = 1211012112,
-		form_id = 0,
-		content = "让我来结束你的痛苦。",
-		subtitle_id = 2112,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012121] = {
-		id = 1211012121,
-		form_id = 0,
-		content = "这是为了大家而存在的翅膀。",
-		subtitle_id = 2121,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012131] = {
-		id = 1211012131,
-		form_id = 0,
-		content = "现在的我……做得到。",
-		subtitle_id = 2131,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012141] = {
-		id = 1211012141,
-		form_id = 0,
-		content = "抱歉……但我不能手下留情。",
-		subtitle_id = 2141,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012142] = {
-		id = 1211012142,
-		form_id = 0,
-		content = "这一次，就由我来保护大家。",
-		subtitle_id = 2142,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012151] = {
-		id = 1211012151,
-		form_id = 0,
-		content = "下次还要更快一些。",
-		subtitle_id = 2151,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012161] = {
-		id = 1211012161,
-		form_id = 0,
-		content = "就这样……别再动了。",
-		subtitle_id = 2161,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012171] = {
-		id = 1211012171,
-		form_id = 0,
-		content = "你没事吧？先退后，这里请交给我。",
-		subtitle_id = 2171,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012181] = {
-		id = 1211012181,
-		form_id = 0,
-		content = "我准备好了，随时都可以！",
-		subtitle_id = 2181,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012191] = {
-		id = 1211012191,
-		form_id = 0,
-		content = "大家创造出来的机会……不能错过。",
-		subtitle_id = 2191,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012201] = {
-		id = 1211012201,
-		form_id = 0,
-		content = "敌人又来了，先逐个击破吧。",
-		subtitle_id = 2201,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012202] = {
-		id = 1211012202,
-		form_id = 0,
-		content = "看起来很强的样子……大家小心。",
-		subtitle_id = 2202,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012211] = {
-		id = 1211012211,
-		form_id = 0,
-		content = "谢谢。",
-		subtitle_id = 2211,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012221] = {
-		id = 1211012221,
-		form_id = 0,
-		content = "这样就能继续战斗了……谢谢。",
-		subtitle_id = 2221,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012231] = {
-		id = 1211012231,
-		form_id = 0,
-		content = "得快点站起来……",
-		subtitle_id = 2231,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
-	[1211012251] = {
-		id = 1211012251,
-		form_id = 0,
-		content = "管理员总是在我最需要的时候出现，鼓励我、安慰我，如果没有管理员的话……我说不定在当时就放弃了。但我不能总是这样依赖管理员的温柔，从今以后，我也要成为那个能够回应大家期待的人。",
-		subtitle_id = 2251,
-		team_hero_id_list = "",
-		chara_id = 121101
-	},
 	get_id_list_by_chara_id = {
-		[121101] = {
-			1211012241,
-			1211012242,
-			1211012243,
-			1211012244,
-			1211011011,
-			1211011012,
-			1211011013,
-			1211011021,
-			1211011022,
-			1211011031,
-			1211011041,
-			1211011051,
-			1211011061,
-			1211011071,
-			1211011081,
-			1211011091,
-			1211011101,
-			1211011111,
-			1211011121,
-			1211011131,
-			1211011141,
-			1211011151,
-			1211011161,
-			1211011162,
-			1211011163,
-			1211011171,
-			1211011172,
-			1211011173,
-			1211011181,
-			1211011191,
-			1211011201,
-			1211011211,
-			1211011221,
-			1211011231,
-			1211011241,
-			1211011251,
-			1211011301,
-			1211012011,
-			1211012012,
-			1211012021,
-			1211012031,
-			1211012041,
-			1211012051,
-			1211012061,
-			1211012071,
-			1211012081,
-			1211012091,
-			1211012101,
-			1211012102,
-			1211012111,
-			1211012112,
-			1211012121,
-			1211012131,
-			1211012141,
-			1211012142,
-			1211012151,
-			1211012161,
-			1211012171,
-			1211012181,
-			1211012191,
-			1211012201,
-			1211012202,
-			1211012211,
-			1211012221,
-			1211012231,
-			1211012251
-		},
-		[1211] = {
-			12112241,
-			12112242,
-			12112243,
-			12112244,
-			12111011,
-			12111012,
-			12111013,
-			12111021,
-			12111022,
-			12111031,
-			12111041,
-			12111051,
-			12111061,
-			12111071,
-			12111081,
-			12111091,
-			12111101,
-			12111111,
-			12111121,
-			12111131,
-			12111141,
-			1211114131,
-			12111151,
-			1211115131,
-			12111161,
-			12111162,
-			12111163,
-			12111171,
-			12111172,
-			12111173,
-			12111181,
-			12111191,
-			12111201,
-			12111211,
-			12111221,
-			12111231,
-			12111241,
-			12111251,
-			12111301,
-			12112011,
-			12112012,
-			12112021,
-			12112031,
-			12112041,
-			12112051,
-			12112061,
-			12112071,
-			12112081,
-			12112091,
-			12112101,
-			12112102,
-			12112111,
-			12112112,
-			12112121,
-			12112131,
-			12112141,
-			12112142,
-			12112151,
-			12112161,
-			12112171,
-			12112181,
-			12112191,
-			12112201,
-			12112202,
-			12112211,
-			12112221,
-			12112231,
-			12112251,
-			1211226105,
-			1211226106,
-			1211226107,
-			1211226108,
-			1211226109
-		},
-		[108501] = {
-			1085011011,
-			1085011012,
-			1085011013,
-			1085011021,
-			1085011022,
-			1085011031,
-			1085011041,
-			1085011051,
-			1085011061,
-			1085011071,
-			1085011081,
-			1085011091,
-			1085011101,
-			1085011111,
-			1085011121,
-			1085011131,
-			1085011141,
-			1085011151,
-			1085011161,
-			1085011162,
-			1085011163,
-			1085011166,
-			1085011167,
-			1085011171,
-			1085011172,
-			1085011173,
-			1085011181,
-			1085011191,
-			1085011201,
-			1085011301
-		},
-		[1085] = {
-			10851011,
-			1085101100,
-			10851012,
-			10851013,
-			1085101103,
-			1085101201,
-			1085101301,
-			10851021,
-			1085102101,
-			10851022,
-			1085102201,
-			10851031,
-			10851041,
-			1085104101,
-			10851051,
-			1085105101,
-			10851061,
-			1085106101,
-			10851071,
-			1085107101,
-			10851081,
-			1085107102,
-			10851091,
-			1085107103,
-			10851101,
-			1085110101,
-			10851111,
-			1085111101,
-			10851121,
-			1085112101,
-			10851131,
-			1085113101,
-			10851141,
-			1085114127,
-			10851151,
-			1085115127,
-			10851161,
-			1085116102,
-			10851162,
-			1085116202,
-			10851163,
-			1085116302,
-			1085116602,
-			1085116702,
-			10851171,
-			1085117119,
-			10851172,
-			1085117201,
-			10851173,
-			1085117301,
-			10851181,
-			1085118103,
-			10851191,
-			1085119103,
-			10851201,
-			1085120101,
-			10851211,
-			10851221,
-			10851231,
-			10851241,
-			10851251,
-			10851301,
-			1085130101,
-			10852011,
-			10852012,
-			10852021,
-			10852031,
-			10852041,
-			10852051,
-			10852061,
-			10852071,
-			10852081,
-			10852091,
-			10852101,
-			10852102,
-			10852111,
-			10852112,
-			10852121,
-			10852131,
-			10852141,
-			10852142,
-			10852151,
-			10852161,
-			10852171,
-			10852181,
-			10852191,
-			10852201,
-			10852202,
-			10852211,
-			10852221,
-			10852231,
-			10852241,
-			10852251,
-			1085226101
-		},
-		[107301] = {
-			1073011011,
-			1073011141,
-			1073011151
-		},
-		[1073] = {
-			10732241,
-			10732242,
-			10731011,
-			1073101128,
-			10731012,
-			10731013,
-			10731021,
-			10731022,
-			10731031,
-			10731041,
-			10731051,
-			10731061,
-			10731071,
-			10731081,
-			10731091,
-			10731101,
-			10731111,
-			10731121,
-			10731131,
-			10731141,
-			1073114128,
-			10731151,
-			1073115128,
-			10731161,
-			10731162,
-			10731163,
-			10731171,
-			10731172,
-			10731173,
-			10731181,
-			10731191,
-			10731201,
-			10731211,
-			10731221,
-			10731231,
-			10731241,
-			10731251,
-			10731301,
-			10732011,
-			10732012,
-			10732021,
-			10732031,
-			10732041,
-			10732051,
-			10732061,
-			10732071,
-			10732081,
-			10732091,
-			10732101,
-			10732102,
-			10732111,
-			10732112,
-			10732121,
-			10732131,
-			10732141,
-			10732142,
-			10732151,
-			10732161,
-			10732171,
-			10732181,
-			10732191,
-			10732201,
-			10732202,
-			10732211,
-			10732221,
-			10732231,
-			10732251,
-			1073226102,
-			1073226103,
-			1073226104
-		},
-		[1012] = {
-			10121011,
-			10121012,
-			10121013,
-			10121021,
-			10121031,
-			10121041,
-			10121051,
-			10121061,
-			10121071,
-			10121081,
-			10121091,
-			10121101,
-			10121111,
-			10121121,
-			10121131,
-			10121141,
-			10121151,
-			10121161,
-			10121162,
-			10121163,
-			10121171,
-			10121172,
-			10121173,
-			10121181,
-			10121191,
-			10121201,
-			10121211,
-			10121221,
-			10121231,
-			10121241,
-			10121251,
-			10121301,
-			10122011,
-			10122012,
-			10122021,
-			10122031,
-			10122041,
-			10122051,
-			10122061,
-			10122071,
-			10122081,
-			10122091,
-			10122101,
-			10122102,
-			10122111,
-			10122112,
-			10122121,
-			10122131,
-			10122141,
-			10122142,
-			10122151,
-			10122161,
-			10122171,
-			10122181,
-			10122191,
-			10122201,
-			10122202,
-			10122211,
-			10122221,
-			10122231
-		},
 		[128402] = {
 			1284021011,
 			1284021141,
@@ -37969,6 +38127,87 @@
 			12482211,
 			12482221,
 			12482231
+		},
+		[121101] = {
+			1211011011,
+			1211011141,
+			1211011151
+		},
+		[1211] = {
+			12112241,
+			12112242,
+			12112243,
+			12112244,
+			12111011,
+			1211101133,
+			12111012,
+			12111013,
+			12111021,
+			12111022,
+			12111031,
+			12111041,
+			12111051,
+			12111061,
+			12111071,
+			12111081,
+			12111091,
+			12111101,
+			12111111,
+			12111121,
+			12111131,
+			12111141,
+			1211114131,
+			12111151,
+			1211115131,
+			12111161,
+			12111162,
+			12111163,
+			12111171,
+			12111172,
+			12111173,
+			12111181,
+			12111191,
+			12111201,
+			12111211,
+			12111221,
+			12111231,
+			12111241,
+			12111251,
+			12111301,
+			12112011,
+			12112012,
+			12112021,
+			12112031,
+			12112041,
+			12112051,
+			12112061,
+			12112071,
+			12112081,
+			12112091,
+			12112101,
+			12112102,
+			12112111,
+			12112112,
+			12112121,
+			12112131,
+			12112141,
+			12112142,
+			12112151,
+			12112161,
+			12112171,
+			12112181,
+			12112191,
+			12112201,
+			12112202,
+			12112211,
+			12112221,
+			12112231,
+			12112251,
+			1211226105,
+			1211226106,
+			1211226107,
+			1211226108,
+			1211226109
 		},
 		[1199] = {
 			11991011,
@@ -39386,6 +39625,133 @@
 			10892221,
 			10892231
 		},
+		[108501] = {
+			1085011011,
+			1085011012,
+			1085011013,
+			1085011021,
+			1085011022,
+			1085011031,
+			1085011041,
+			1085011051,
+			1085011061,
+			1085011071,
+			1085011081,
+			1085011091,
+			1085011101,
+			1085011111,
+			1085011121,
+			1085011131,
+			1085011141,
+			1085011151,
+			1085011161,
+			1085011162,
+			1085011163,
+			1085011166,
+			1085011167,
+			1085011171,
+			1085011172,
+			1085011173,
+			1085011181,
+			1085011191,
+			1085011201,
+			1085011301
+		},
+		[1085] = {
+			10851011,
+			10851012,
+			10851013,
+			1085101127,
+			1085101201,
+			1085101301,
+			10851021,
+			1085102101,
+			10851022,
+			1085102201,
+			10851031,
+			10851041,
+			1085104101,
+			10851051,
+			1085105101,
+			10851061,
+			1085106101,
+			10851071,
+			1085107101,
+			10851081,
+			1085107102,
+			10851091,
+			1085107103,
+			10851101,
+			1085110101,
+			10851111,
+			1085111101,
+			10851121,
+			1085112101,
+			10851131,
+			1085113101,
+			10851141,
+			1085114127,
+			10851151,
+			1085115127,
+			10851161,
+			1085116102,
+			10851162,
+			1085116202,
+			10851163,
+			1085116302,
+			1085116602,
+			1085116702,
+			10851171,
+			1085117119,
+			10851172,
+			1085117201,
+			10851173,
+			1085117301,
+			10851181,
+			1085118103,
+			10851191,
+			1085119103,
+			10851201,
+			1085120101,
+			10851211,
+			10851221,
+			10851231,
+			10851241,
+			10851251,
+			10851301,
+			1085130101,
+			10852011,
+			10852012,
+			10852021,
+			10852031,
+			10852041,
+			10852051,
+			10852061,
+			10852071,
+			10852081,
+			10852091,
+			10852101,
+			10852102,
+			10852111,
+			10852112,
+			10852121,
+			10852131,
+			10852141,
+			10852142,
+			10852151,
+			10852161,
+			10852171,
+			10852181,
+			10852191,
+			10852201,
+			10852202,
+			10852211,
+			10852221,
+			10852231,
+			10852241,
+			10852251,
+			1085226101
+		},
 		[1084] = {
 			10841011,
 			10841012,
@@ -39816,6 +40182,83 @@
 			10742211,
 			10742221,
 			10742231
+		},
+		[107301] = {
+			1073011011,
+			1073011141,
+			1073011151
+		},
+		[1073] = {
+			10732241,
+			10732242,
+			10731011,
+			1073101128,
+			10731012,
+			10731013,
+			10731021,
+			10731022,
+			10731031,
+			10731041,
+			10731051,
+			10731061,
+			10731071,
+			10731081,
+			10731091,
+			10731101,
+			10731111,
+			10731121,
+			10731131,
+			10731141,
+			1073114128,
+			10731151,
+			1073115128,
+			10731161,
+			10731162,
+			10731163,
+			10731171,
+			10731172,
+			10731173,
+			10731181,
+			10731191,
+			10731201,
+			10731211,
+			10731221,
+			10731231,
+			10731241,
+			10731251,
+			10731301,
+			10732011,
+			10732012,
+			10732021,
+			10732031,
+			10732041,
+			10732051,
+			10732061,
+			10732071,
+			10732081,
+			10732091,
+			10732101,
+			10732102,
+			10732111,
+			10732112,
+			10732121,
+			10732131,
+			10732141,
+			10732142,
+			10732151,
+			10732161,
+			10732171,
+			10732181,
+			10732191,
+			10732201,
+			10732202,
+			10732211,
+			10732221,
+			10732231,
+			10732251,
+			1073226102,
+			1073226103,
+			1073226104
 		},
 		[1072] = {
 			10721011,
@@ -40826,6 +41269,148 @@
 			10482191,
 			10482201,
 			10482221
+		},
+		[104601] = {
+			1046011011,
+			1046011141,
+			1046011151
+		},
+		[1046] = {
+			10461011,
+			10461012,
+			10461013,
+			1046101129,
+			10461021,
+			10461022,
+			10461031,
+			10461041,
+			10461051,
+			10461061,
+			10461071,
+			10461081,
+			10461091,
+			10461101,
+			10461111,
+			10461121,
+			10461131,
+			10461141,
+			1046114129,
+			10461151,
+			1046115129,
+			10461161,
+			10461162,
+			10461163,
+			10461171,
+			10461172,
+			10461173,
+			10461181,
+			10461191,
+			10461201,
+			10461211,
+			10461221,
+			10461231,
+			10461241,
+			10461251,
+			10461301,
+			10462011,
+			10462012,
+			10462021,
+			10462031,
+			10462041,
+			10462051,
+			10462061,
+			10462071,
+			10462081,
+			10462091,
+			10462101,
+			10462102,
+			10462111,
+			10462112,
+			10462121,
+			10462131,
+			10462141,
+			10462142,
+			10462151,
+			10462161,
+			10462171,
+			10462181,
+			10462191,
+			10462201,
+			10462202,
+			10462211,
+			10462221,
+			10462231
+		},
+		[104501] = {
+			1045011011,
+			1045011141,
+			1045011151
+		},
+		[1045] = {
+			10451011,
+			10451012,
+			10451013,
+			1045101130,
+			10451021,
+			10451022,
+			10451031,
+			10451041,
+			10451051,
+			10451061,
+			10451071,
+			10451081,
+			10451091,
+			10451101,
+			10451111,
+			10451121,
+			10451131,
+			10451141,
+			1045114130,
+			10451151,
+			1045115130,
+			10451161,
+			10451162,
+			10451163,
+			10451171,
+			10451172,
+			10451173,
+			10451181,
+			10451191,
+			10451201,
+			10451211,
+			10451221,
+			10451231,
+			10451241,
+			10451251,
+			10451301,
+			10452011,
+			10452012,
+			10452021,
+			10452031,
+			10452041,
+			10452051,
+			10452061,
+			10452071,
+			10452081,
+			10452091,
+			10452101,
+			10452102,
+			10452111,
+			10452112,
+			10452121,
+			10452131,
+			10452141,
+			10452142,
+			10452151,
+			10452161,
+			10452171,
+			10452181,
+			10452191,
+			10452201,
+			10452202,
+			10452211,
+			10452221,
+			10452231
 		},
 		[1042] = {
 			10421011,
@@ -42248,6 +42833,68 @@
 			10132221,
 			10132231
 		},
+		[1012] = {
+			10121011,
+			10121012,
+			10121013,
+			10121021,
+			10121031,
+			10121041,
+			10121051,
+			10121061,
+			10121071,
+			10121081,
+			10121091,
+			10121101,
+			10121111,
+			10121121,
+			10121131,
+			10121141,
+			10121151,
+			10121161,
+			10121162,
+			10121163,
+			10121171,
+			10121172,
+			10121173,
+			10121181,
+			10121191,
+			10121201,
+			10121211,
+			10121221,
+			10121231,
+			10121241,
+			10121251,
+			10121301,
+			10122011,
+			10122012,
+			10122021,
+			10122031,
+			10122041,
+			10122051,
+			10122061,
+			10122071,
+			10122081,
+			10122091,
+			10122101,
+			10122102,
+			10122111,
+			10122112,
+			10122121,
+			10122131,
+			10122141,
+			10122142,
+			10122151,
+			10122161,
+			10122171,
+			10122181,
+			10122191,
+			10122201,
+			10122202,
+			10122211,
+			10122221,
+			10122231
+		},
 		[1011] = {
 			10111011,
 			10111012,
@@ -42407,6 +43054,66 @@
 			10112191,
 			10112201,
 			10112221,
+			10121011,
+			10121012,
+			10121013,
+			10121021,
+			10121031,
+			10121041,
+			10121051,
+			10121061,
+			10121071,
+			10121081,
+			10121091,
+			10121101,
+			10121111,
+			10121121,
+			10121131,
+			10121141,
+			10121151,
+			10121161,
+			10121162,
+			10121163,
+			10121171,
+			10121172,
+			10121173,
+			10121181,
+			10121191,
+			10121201,
+			10121211,
+			10121221,
+			10121231,
+			10121241,
+			10121251,
+			10121301,
+			10122011,
+			10122012,
+			10122021,
+			10122031,
+			10122041,
+			10122051,
+			10122061,
+			10122071,
+			10122081,
+			10122091,
+			10122101,
+			10122102,
+			10122111,
+			10122112,
+			10122121,
+			10122131,
+			10122141,
+			10122142,
+			10122151,
+			10122161,
+			10122171,
+			10122181,
+			10122191,
+			10122201,
+			10122202,
+			10122211,
+			10122221,
+			10122231,
 			10131011,
 			10131012,
 			10131013,
@@ -43736,6 +44443,140 @@
 			10422211,
 			10422221,
 			10422231,
+			10451011,
+			10451012,
+			10451013,
+			1045101130,
+			10451021,
+			10451022,
+			10451031,
+			10451041,
+			10451051,
+			10451061,
+			10451071,
+			10451081,
+			10451091,
+			10451101,
+			10451111,
+			10451121,
+			10451131,
+			10451141,
+			1045114130,
+			10451151,
+			1045115130,
+			10451161,
+			10451162,
+			10451163,
+			10451171,
+			10451172,
+			10451173,
+			10451181,
+			10451191,
+			10451201,
+			10451211,
+			10451221,
+			10451231,
+			10451241,
+			10451251,
+			10451301,
+			10452011,
+			10452012,
+			10452021,
+			10452031,
+			10452041,
+			10452051,
+			10452061,
+			10452071,
+			10452081,
+			10452091,
+			10452101,
+			10452102,
+			10452111,
+			10452112,
+			10452121,
+			10452131,
+			10452141,
+			10452142,
+			10452151,
+			10452161,
+			10452171,
+			10452181,
+			10452191,
+			10452201,
+			10452202,
+			10452211,
+			10452221,
+			10452231,
+			1045011011,
+			1045011141,
+			1045011151,
+			10461011,
+			10461012,
+			10461013,
+			1046101129,
+			10461021,
+			10461022,
+			10461031,
+			10461041,
+			10461051,
+			10461061,
+			10461071,
+			10461081,
+			10461091,
+			10461101,
+			10461111,
+			10461121,
+			10461131,
+			10461141,
+			1046114129,
+			10461151,
+			1046115129,
+			10461161,
+			10461162,
+			10461163,
+			10461171,
+			10461172,
+			10461173,
+			10461181,
+			10461191,
+			10461201,
+			10461211,
+			10461221,
+			10461231,
+			10461241,
+			10461251,
+			10461301,
+			10462011,
+			10462012,
+			10462021,
+			10462031,
+			10462041,
+			10462051,
+			10462061,
+			10462071,
+			10462081,
+			10462091,
+			10462101,
+			10462102,
+			10462111,
+			10462112,
+			10462121,
+			10462131,
+			10462141,
+			10462142,
+			10462151,
+			10462161,
+			10462171,
+			10462181,
+			10462191,
+			10462201,
+			10462202,
+			10462211,
+			10462221,
+			10462231,
+			1046011011,
+			1046011141,
+			1046011151,
 			10481011,
 			10481012,
 			10481013,
@@ -44706,6 +45547,79 @@
 			10722211,
 			10722221,
 			10722231,
+			10732241,
+			10732242,
+			10731011,
+			1073101128,
+			10731012,
+			10731013,
+			10731021,
+			10731022,
+			10731031,
+			10731041,
+			10731051,
+			10731061,
+			10731071,
+			10731081,
+			10731091,
+			10731101,
+			10731111,
+			10731121,
+			10731131,
+			10731141,
+			1073114128,
+			10731151,
+			1073115128,
+			10731161,
+			10731162,
+			10731163,
+			10731171,
+			10731172,
+			10731173,
+			10731181,
+			10731191,
+			10731201,
+			10731211,
+			10731221,
+			10731231,
+			10731241,
+			10731251,
+			10731301,
+			10732011,
+			10732012,
+			10732021,
+			10732031,
+			10732041,
+			10732051,
+			10732061,
+			10732071,
+			10732081,
+			10732091,
+			10732101,
+			10732102,
+			10732111,
+			10732112,
+			10732121,
+			10732131,
+			10732141,
+			10732142,
+			10732151,
+			10732161,
+			10732171,
+			10732181,
+			10732191,
+			10732201,
+			10732202,
+			10732211,
+			10732221,
+			10732231,
+			10732251,
+			1073226102,
+			1073226103,
+			1073226104,
+			1073011011,
+			1073011141,
+			1073011151,
 			10741011,
 			1074101110,
 			10741012,
@@ -45113,6 +46027,129 @@
 			10842191,
 			10842201,
 			10842221,
+			10851011,
+			10851012,
+			10851013,
+			1085101127,
+			1085101201,
+			1085101301,
+			10851021,
+			1085102101,
+			10851022,
+			1085102201,
+			10851031,
+			10851041,
+			1085104101,
+			10851051,
+			1085105101,
+			10851061,
+			1085106101,
+			10851071,
+			1085107101,
+			10851081,
+			1085107102,
+			10851091,
+			1085107103,
+			10851101,
+			1085110101,
+			10851111,
+			1085111101,
+			10851121,
+			1085112101,
+			10851131,
+			1085113101,
+			10851141,
+			1085114127,
+			10851151,
+			1085115127,
+			10851161,
+			1085116102,
+			10851162,
+			1085116202,
+			10851163,
+			1085116302,
+			1085116602,
+			1085116702,
+			10851171,
+			1085117119,
+			10851172,
+			1085117201,
+			10851173,
+			1085117301,
+			10851181,
+			1085118103,
+			10851191,
+			1085119103,
+			10851201,
+			1085120101,
+			10851211,
+			10851221,
+			10851231,
+			10851241,
+			10851251,
+			10851301,
+			1085130101,
+			10852011,
+			10852012,
+			10852021,
+			10852031,
+			10852041,
+			10852051,
+			10852061,
+			10852071,
+			10852081,
+			10852091,
+			10852101,
+			10852102,
+			10852111,
+			10852112,
+			10852121,
+			10852131,
+			10852141,
+			10852142,
+			10852151,
+			10852161,
+			10852171,
+			10852181,
+			10852191,
+			10852201,
+			10852202,
+			10852211,
+			10852221,
+			10852231,
+			10852241,
+			10852251,
+			1085226101,
+			1085011011,
+			1085011012,
+			1085011013,
+			1085011021,
+			1085011022,
+			1085011031,
+			1085011041,
+			1085011051,
+			1085011061,
+			1085011071,
+			1085011081,
+			1085011091,
+			1085011101,
+			1085011111,
+			1085011121,
+			1085011131,
+			1085011141,
+			1085011151,
+			1085011161,
+			1085011162,
+			1085011163,
+			1085011166,
+			1085011167,
+			1085011171,
+			1085011172,
+			1085011173,
+			1085011181,
+			1085011191,
+			1085011201,
+			1085011301,
 			10891011,
 			1089101117,
 			10891012,
@@ -46469,6 +47506,83 @@
 			11992211,
 			11992221,
 			11992231,
+			12112241,
+			12112242,
+			12112243,
+			12112244,
+			12111011,
+			1211101133,
+			12111012,
+			12111013,
+			12111021,
+			12111022,
+			12111031,
+			12111041,
+			12111051,
+			12111061,
+			12111071,
+			12111081,
+			12111091,
+			12111101,
+			12111111,
+			12111121,
+			12111131,
+			12111141,
+			1211114131,
+			12111151,
+			1211115131,
+			12111161,
+			12111162,
+			12111163,
+			12111171,
+			12111172,
+			12111173,
+			12111181,
+			12111191,
+			12111201,
+			12111211,
+			12111221,
+			12111231,
+			12111241,
+			12111251,
+			12111301,
+			12112011,
+			12112012,
+			12112021,
+			12112031,
+			12112041,
+			12112051,
+			12112061,
+			12112071,
+			12112081,
+			12112091,
+			12112101,
+			12112102,
+			12112111,
+			12112112,
+			12112121,
+			12112131,
+			12112141,
+			12112142,
+			12112151,
+			12112161,
+			12112171,
+			12112181,
+			12112191,
+			12112201,
+			12112202,
+			12112211,
+			12112221,
+			12112231,
+			12112251,
+			1211226105,
+			1211226106,
+			1211226107,
+			1211226108,
+			1211226109,
+			1211011011,
+			1211011141,
+			1211011151,
 			12481011,
 			12481012,
 			12481013,
@@ -46594,403 +47708,7 @@
 			12842231,
 			1284021011,
 			1284021141,
-			1284021151,
-			10121011,
-			10121012,
-			10121013,
-			10121021,
-			10121031,
-			10121041,
-			10121051,
-			10121061,
-			10121071,
-			10121081,
-			10121091,
-			10121101,
-			10121111,
-			10121121,
-			10121131,
-			10121141,
-			10121151,
-			10121161,
-			10121162,
-			10121163,
-			10121171,
-			10121172,
-			10121173,
-			10121181,
-			10121191,
-			10121201,
-			10121211,
-			10121221,
-			10121231,
-			10121241,
-			10121251,
-			10121301,
-			10122011,
-			10122012,
-			10122021,
-			10122031,
-			10122041,
-			10122051,
-			10122061,
-			10122071,
-			10122081,
-			10122091,
-			10122101,
-			10122102,
-			10122111,
-			10122112,
-			10122121,
-			10122131,
-			10122141,
-			10122142,
-			10122151,
-			10122161,
-			10122171,
-			10122181,
-			10122191,
-			10122201,
-			10122202,
-			10122211,
-			10122221,
-			10122231,
-			10732241,
-			10732242,
-			10731011,
-			1073101128,
-			10731012,
-			10731013,
-			10731021,
-			10731022,
-			10731031,
-			10731041,
-			10731051,
-			10731061,
-			10731071,
-			10731081,
-			10731091,
-			10731101,
-			10731111,
-			10731121,
-			10731131,
-			10731141,
-			1073114128,
-			10731151,
-			1073115128,
-			10731161,
-			10731162,
-			10731163,
-			10731171,
-			10731172,
-			10731173,
-			10731181,
-			10731191,
-			10731201,
-			10731211,
-			10731221,
-			10731231,
-			10731241,
-			10731251,
-			10731301,
-			10732011,
-			10732012,
-			10732021,
-			10732031,
-			10732041,
-			10732051,
-			10732061,
-			10732071,
-			10732081,
-			10732091,
-			10732101,
-			10732102,
-			10732111,
-			10732112,
-			10732121,
-			10732131,
-			10732141,
-			10732142,
-			10732151,
-			10732161,
-			10732171,
-			10732181,
-			10732191,
-			10732201,
-			10732202,
-			10732211,
-			10732221,
-			10732231,
-			10732251,
-			1073226102,
-			1073226103,
-			1073226104,
-			1073011011,
-			1073011141,
-			1073011151,
-			10851011,
-			1085101100,
-			10851012,
-			10851013,
-			1085101103,
-			1085101201,
-			1085101301,
-			10851021,
-			1085102101,
-			10851022,
-			1085102201,
-			10851031,
-			10851041,
-			1085104101,
-			10851051,
-			1085105101,
-			10851061,
-			1085106101,
-			10851071,
-			1085107101,
-			10851081,
-			1085107102,
-			10851091,
-			1085107103,
-			10851101,
-			1085110101,
-			10851111,
-			1085111101,
-			10851121,
-			1085112101,
-			10851131,
-			1085113101,
-			10851141,
-			1085114127,
-			10851151,
-			1085115127,
-			10851161,
-			1085116102,
-			10851162,
-			1085116202,
-			10851163,
-			1085116302,
-			1085116602,
-			1085116702,
-			10851171,
-			1085117119,
-			10851172,
-			1085117201,
-			10851173,
-			1085117301,
-			10851181,
-			1085118103,
-			10851191,
-			1085119103,
-			10851201,
-			1085120101,
-			10851211,
-			10851221,
-			10851231,
-			10851241,
-			10851251,
-			10851301,
-			1085130101,
-			10852011,
-			10852012,
-			10852021,
-			10852031,
-			10852041,
-			10852051,
-			10852061,
-			10852071,
-			10852081,
-			10852091,
-			10852101,
-			10852102,
-			10852111,
-			10852112,
-			10852121,
-			10852131,
-			10852141,
-			10852142,
-			10852151,
-			10852161,
-			10852171,
-			10852181,
-			10852191,
-			10852201,
-			10852202,
-			10852211,
-			10852221,
-			10852231,
-			10852241,
-			10852251,
-			1085226101,
-			1085011011,
-			1085011012,
-			1085011013,
-			1085011021,
-			1085011022,
-			1085011031,
-			1085011041,
-			1085011051,
-			1085011061,
-			1085011071,
-			1085011081,
-			1085011091,
-			1085011101,
-			1085011111,
-			1085011121,
-			1085011131,
-			1085011141,
-			1085011151,
-			1085011161,
-			1085011162,
-			1085011163,
-			1085011166,
-			1085011167,
-			1085011171,
-			1085011172,
-			1085011173,
-			1085011181,
-			1085011191,
-			1085011201,
-			1085011301,
-			12112241,
-			12112242,
-			12112243,
-			12112244,
-			12111011,
-			12111012,
-			12111013,
-			12111021,
-			12111022,
-			12111031,
-			12111041,
-			12111051,
-			12111061,
-			12111071,
-			12111081,
-			12111091,
-			12111101,
-			12111111,
-			12111121,
-			12111131,
-			12111141,
-			1211114131,
-			12111151,
-			1211115131,
-			12111161,
-			12111162,
-			12111163,
-			12111171,
-			12111172,
-			12111173,
-			12111181,
-			12111191,
-			12111201,
-			12111211,
-			12111221,
-			12111231,
-			12111241,
-			12111251,
-			12111301,
-			12112011,
-			12112012,
-			12112021,
-			12112031,
-			12112041,
-			12112051,
-			12112061,
-			12112071,
-			12112081,
-			12112091,
-			12112101,
-			12112102,
-			12112111,
-			12112112,
-			12112121,
-			12112131,
-			12112141,
-			12112142,
-			12112151,
-			12112161,
-			12112171,
-			12112181,
-			12112191,
-			12112201,
-			12112202,
-			12112211,
-			12112221,
-			12112231,
-			12112251,
-			1211226105,
-			1211226106,
-			1211226107,
-			1211226108,
-			1211226109,
-			1211012241,
-			1211012242,
-			1211012243,
-			1211012244,
-			1211011011,
-			1211011012,
-			1211011013,
-			1211011021,
-			1211011022,
-			1211011031,
-			1211011041,
-			1211011051,
-			1211011061,
-			1211011071,
-			1211011081,
-			1211011091,
-			1211011101,
-			1211011111,
-			1211011121,
-			1211011131,
-			1211011141,
-			1211011151,
-			1211011161,
-			1211011162,
-			1211011163,
-			1211011171,
-			1211011172,
-			1211011173,
-			1211011181,
-			1211011191,
-			1211011201,
-			1211011211,
-			1211011221,
-			1211011231,
-			1211011241,
-			1211011251,
-			1211011301,
-			1211012011,
-			1211012012,
-			1211012021,
-			1211012031,
-			1211012041,
-			1211012051,
-			1211012061,
-			1211012071,
-			1211012081,
-			1211012091,
-			1211012101,
-			1211012102,
-			1211012111,
-			1211012112,
-			1211012121,
-			1211012131,
-			1211012141,
-			1211012142,
-			1211012151,
-			1211012161,
-			1211012171,
-			1211012181,
-			1211012191,
-			1211012201,
-			1211012202,
-			1211012211,
-			1211012221,
-			1211012231,
-			1211012251
+			1284021151
 		}
 	},
 	get_id_list_by_chara_id_subtitle_id = {
@@ -51272,6 +51990,394 @@
 			},
 			[2231] = {
 				10422231
+			}
+		},
+		[1045] = {
+			[1011] = {
+				10451011
+			},
+			[1012] = {
+				10451012
+			},
+			[1013] = {
+				10451013
+			},
+			[1021] = {
+				10451021
+			},
+			[1022] = {
+				10451022
+			},
+			[1031] = {
+				10451031
+			},
+			[1041] = {
+				10451041
+			},
+			[1051] = {
+				10451051
+			},
+			[1061] = {
+				10451061
+			},
+			[1071] = {
+				10451071
+			},
+			[1081] = {
+				10451081
+			},
+			[1091] = {
+				10451091
+			},
+			[1101] = {
+				10451101
+			},
+			[1111] = {
+				10451111
+			},
+			[1121] = {
+				10451121
+			},
+			[1131] = {
+				10451131
+			},
+			[1141] = {
+				10451141
+			},
+			[1151] = {
+				10451151
+			},
+			[1161] = {
+				10451161
+			},
+			[1162] = {
+				10451162
+			},
+			[1163] = {
+				10451163
+			},
+			[1171] = {
+				10451171
+			},
+			[1172] = {
+				10451172
+			},
+			[1173] = {
+				10451173
+			},
+			[1181] = {
+				10451181
+			},
+			[1191] = {
+				10451191
+			},
+			[1201] = {
+				10451201
+			},
+			[1211] = {
+				10451211
+			},
+			[1221] = {
+				10451221
+			},
+			[1231] = {
+				10451231
+			},
+			[1241] = {
+				10451241
+			},
+			[1251] = {
+				10451251
+			},
+			[1301] = {
+				10451301
+			},
+			[2011] = {
+				10452011
+			},
+			[2012] = {
+				10452012
+			},
+			[2021] = {
+				10452021
+			},
+			[2031] = {
+				10452031
+			},
+			[2041] = {
+				10452041
+			},
+			[2051] = {
+				10452051
+			},
+			[2061] = {
+				10452061
+			},
+			[2071] = {
+				10452071
+			},
+			[2081] = {
+				10452081
+			},
+			[2091] = {
+				10452091
+			},
+			[2101] = {
+				10452101
+			},
+			[2102] = {
+				10452102
+			},
+			[2111] = {
+				10452111
+			},
+			[2112] = {
+				10452112
+			},
+			[2121] = {
+				10452121
+			},
+			[2131] = {
+				10452131
+			},
+			[2141] = {
+				10452141
+			},
+			[2142] = {
+				10452142
+			},
+			[2151] = {
+				10452151
+			},
+			[2161] = {
+				10452161
+			},
+			[2171] = {
+				10452171
+			},
+			[2181] = {
+				10452181
+			},
+			[2191] = {
+				10452191
+			},
+			[2201] = {
+				10452201
+			},
+			[2202] = {
+				10452202
+			},
+			[2211] = {
+				10452211
+			},
+			[2221] = {
+				10452221
+			},
+			[2231] = {
+				10452231
+			},
+			[101130] = {
+				1045101130
+			},
+			[114130] = {
+				1045114130
+			},
+			[115130] = {
+				1045115130
+			}
+		},
+		[1046] = {
+			[1011] = {
+				10461011
+			},
+			[1012] = {
+				10461012
+			},
+			[1013] = {
+				10461013
+			},
+			[1021] = {
+				10461021
+			},
+			[1022] = {
+				10461022
+			},
+			[1031] = {
+				10461031
+			},
+			[1041] = {
+				10461041
+			},
+			[1051] = {
+				10461051
+			},
+			[1061] = {
+				10461061
+			},
+			[1071] = {
+				10461071
+			},
+			[1081] = {
+				10461081
+			},
+			[1091] = {
+				10461091
+			},
+			[1101] = {
+				10461101
+			},
+			[1111] = {
+				10461111
+			},
+			[1121] = {
+				10461121
+			},
+			[1131] = {
+				10461131
+			},
+			[1141] = {
+				10461141
+			},
+			[1151] = {
+				10461151
+			},
+			[1161] = {
+				10461161
+			},
+			[1162] = {
+				10461162
+			},
+			[1163] = {
+				10461163
+			},
+			[1171] = {
+				10461171
+			},
+			[1172] = {
+				10461172
+			},
+			[1173] = {
+				10461173
+			},
+			[1181] = {
+				10461181
+			},
+			[1191] = {
+				10461191
+			},
+			[1201] = {
+				10461201
+			},
+			[1211] = {
+				10461211
+			},
+			[1221] = {
+				10461221
+			},
+			[1231] = {
+				10461231
+			},
+			[1241] = {
+				10461241
+			},
+			[1251] = {
+				10461251
+			},
+			[1301] = {
+				10461301
+			},
+			[2011] = {
+				10462011
+			},
+			[2012] = {
+				10462012
+			},
+			[2021] = {
+				10462021
+			},
+			[2031] = {
+				10462031
+			},
+			[2041] = {
+				10462041
+			},
+			[2051] = {
+				10462051
+			},
+			[2061] = {
+				10462061
+			},
+			[2071] = {
+				10462071
+			},
+			[2081] = {
+				10462081
+			},
+			[2091] = {
+				10462091
+			},
+			[2101] = {
+				10462101
+			},
+			[2102] = {
+				10462102
+			},
+			[2111] = {
+				10462111
+			},
+			[2112] = {
+				10462112
+			},
+			[2121] = {
+				10462121
+			},
+			[2131] = {
+				10462131
+			},
+			[2141] = {
+				10462141
+			},
+			[2142] = {
+				10462142
+			},
+			[2151] = {
+				10462151
+			},
+			[2161] = {
+				10462161
+			},
+			[2171] = {
+				10462171
+			},
+			[2181] = {
+				10462181
+			},
+			[2191] = {
+				10462191
+			},
+			[2201] = {
+				10462201
+			},
+			[2202] = {
+				10462202
+			},
+			[2211] = {
+				10462211
+			},
+			[2221] = {
+				10462221
+			},
+			[2231] = {
+				10462231
+			},
+			[101129] = {
+				1046101129
+			},
+			[114129] = {
+				1046114129
+			},
+			[115129] = {
+				1046115129
 			}
 		},
 		[1048] = {
@@ -55743,11 +56849,8 @@
 			[2251] = {
 				10852251
 			},
-			[101100] = {
-				1085101100
-			},
-			[101103] = {
-				1085101103
+			[101127] = {
+				1085101127
 			},
 			[101201] = {
 				1085101201
@@ -59954,6 +61057,9 @@
 			[2251] = {
 				12112251
 			},
+			[101133] = {
+				1211101133
+			},
 			[114131] = {
 				1211114131
 			},
@@ -60531,6 +61637,28 @@
 				1034011151
 			}
 		},
+		[104501] = {
+			[1011] = {
+				1045011011
+			},
+			[1141] = {
+				1045011141
+			},
+			[1151] = {
+				1045011151
+			}
+		},
+		[104601] = {
+			[1011] = {
+				1046011011
+			},
+			[1141] = {
+				1046011141
+			},
+			[1151] = {
+				1046011151
+			}
+		},
 		[104902] = {
 			[1011] = {
 				1049021011
@@ -60976,200 +62104,11 @@
 			[1011] = {
 				1211011011
 			},
-			[1012] = {
-				1211011012
-			},
-			[1013] = {
-				1211011013
-			},
-			[1021] = {
-				1211011021
-			},
-			[1022] = {
-				1211011022
-			},
-			[1031] = {
-				1211011031
-			},
-			[1041] = {
-				1211011041
-			},
-			[1051] = {
-				1211011051
-			},
-			[1061] = {
-				1211011061
-			},
-			[1071] = {
-				1211011071
-			},
-			[1081] = {
-				1211011081
-			},
-			[1091] = {
-				1211011091
-			},
-			[1101] = {
-				1211011101
-			},
-			[1111] = {
-				1211011111
-			},
-			[1121] = {
-				1211011121
-			},
-			[1131] = {
-				1211011131
-			},
 			[1141] = {
 				1211011141
 			},
 			[1151] = {
 				1211011151
-			},
-			[1161] = {
-				1211011161
-			},
-			[1162] = {
-				1211011162
-			},
-			[1163] = {
-				1211011163
-			},
-			[1171] = {
-				1211011171
-			},
-			[1172] = {
-				1211011172
-			},
-			[1173] = {
-				1211011173
-			},
-			[1181] = {
-				1211011181
-			},
-			[1191] = {
-				1211011191
-			},
-			[1201] = {
-				1211011201
-			},
-			[1211] = {
-				1211011211
-			},
-			[1221] = {
-				1211011221
-			},
-			[1231] = {
-				1211011231
-			},
-			[1241] = {
-				1211011241
-			},
-			[1251] = {
-				1211011251
-			},
-			[1301] = {
-				1211011301
-			},
-			[2011] = {
-				1211012011
-			},
-			[2012] = {
-				1211012012
-			},
-			[2021] = {
-				1211012021
-			},
-			[2031] = {
-				1211012031
-			},
-			[2041] = {
-				1211012041
-			},
-			[2051] = {
-				1211012051
-			},
-			[2061] = {
-				1211012061
-			},
-			[2071] = {
-				1211012071
-			},
-			[2081] = {
-				1211012081
-			},
-			[2091] = {
-				1211012091
-			},
-			[2101] = {
-				1211012101
-			},
-			[2102] = {
-				1211012102
-			},
-			[2111] = {
-				1211012111
-			},
-			[2112] = {
-				1211012112
-			},
-			[2121] = {
-				1211012121
-			},
-			[2131] = {
-				1211012131
-			},
-			[2141] = {
-				1211012141
-			},
-			[2142] = {
-				1211012142
-			},
-			[2151] = {
-				1211012151
-			},
-			[2161] = {
-				1211012161
-			},
-			[2171] = {
-				1211012171
-			},
-			[2181] = {
-				1211012181
-			},
-			[2191] = {
-				1211012191
-			},
-			[2201] = {
-				1211012201
-			},
-			[2202] = {
-				1211012202
-			},
-			[2211] = {
-				1211012211
-			},
-			[2221] = {
-				1211012221
-			},
-			[2231] = {
-				1211012231
-			},
-			[2241] = {
-				1211012241
-			},
-			[2242] = {
-				1211012242
-			},
-			[2243] = {
-				1211012243
-			},
-			[2244] = {
-				1211012244
-			},
-			[2251] = {
-				1211012251
 			}
 		},
 		[128402] = {

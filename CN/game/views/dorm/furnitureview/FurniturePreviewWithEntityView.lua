@@ -14,11 +14,22 @@ function var_0_0.OnEnter(arg_1_0)
 	if var_1_1 ~= nil then
 		for iter_1_0 = 0, var_1_1.Length - 1 do
 			if var_1_1[iter_1_0].name == var_1_0.name then
-				local var_1_3 = var_1_1[iter_1_0]
+				var_1_2 = var_1_1[iter_1_0]
 
 				break
 			end
 		end
+	end
+
+	local var_1_3 = var_1_2.transform:Find("previewCamera")
+	local var_1_4 = var_1_2.transform:Find("previewCamera_near")
+
+	if var_1_3 then
+		var_1_3.gameObject:SetActive(false)
+	end
+
+	if var_1_4 then
+		var_1_4.gameObject:SetActive(false)
 	end
 
 	arg_1_0:LoadManager()

@@ -1334,7 +1334,69 @@
 			}
 		}
 	},
+	[103301] = {
+		story_id = 0,
+		id = 103301,
+		story_reward = "",
+		story_condtion_id = 0,
+		relate_hero_id = 1061,
+		relation_des = "合作方",
+		main_hero_id = 1033
+	},
+	[103302] = {
+		story_id = 0,
+		id = 103302,
+		story_reward = "",
+		story_condtion_id = 0,
+		relate_hero_id = 1028,
+		relation_des = "同事",
+		main_hero_id = 1033
+	},
+	[103303] = {
+		story_id = 0,
+		id = 103303,
+		story_reward = "",
+		story_condtion_id = 0,
+		relate_hero_id = 1248,
+		relation_des = "同事",
+		main_hero_id = 1033
+	},
+	[103304] = {
+		story_id = 710330102,
+		id = 103304,
+		story_condtion_id = 0,
+		relate_hero_id = 1019,
+		relation_des = "同事",
+		main_hero_id = 1033,
+		story_reward = {
+			{
+				1,
+				30
+			}
+		}
+	},
+	[103305] = {
+		story_id = 710330101,
+		id = 103305,
+		story_condtion_id = 0,
+		relate_hero_id = 1066,
+		relation_des = "科研伙伴",
+		main_hero_id = 1033,
+		story_reward = {
+			{
+				1,
+				30
+			}
+		}
+	},
 	get_id_list_by_main_hero_id = {
+		[1033] = {
+			103301,
+			103302,
+			103303,
+			103304,
+			103305
+		},
 		[1049] = {
 			104901,
 			104902,
@@ -1608,6 +1670,11 @@
 		104902,
 		104903,
 		104904,
-		104905
+		104905,
+		103301,
+		103302,
+		103303,
+		103304,
+		103305
 	}
 }

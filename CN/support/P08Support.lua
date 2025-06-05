@@ -739,6 +739,12 @@ function IsConditionAchieved(arg_23_0, arg_23_1)
 		else
 			return false
 		end
+	elseif var_23_0.type == 12101 then
+		return WeekBossData:GetBossConsumeHp() / WeekBossData:GetBossTotalHp() * 100 >= var_23_0.params[1]
+	elseif var_23_0.type == 12102 then
+		return GodEaterData.hubLv >= var_23_0.params[1]
+	elseif var_23_0.type == 12103 then
+		return WeekBossData:GetIsPassDiff(var_23_0.params[1])
 	end
 
 	return var_23_1, var_23_2, var_23_3

@@ -24,7 +24,8 @@
 	CURRENCY_TYPE_SKULD_TRUST = CurrencyIdMapCfg.CURRENCY_SKULD_COIN_4_0.item_id,
 	ENOUGH_COLOR = Color.New(0.2117, 0.2274, 0.2588, 1),
 	ENOUGH_COLOR_LIGHT = Color.New(0.9137, 0.9333, 0.9539, 1),
-	LACK_COLOR = Color.New(0.8039, 0.2588, 0.1176, 1)
+	LACK_COLOR = Color.New(0.8039, 0.2588, 0.1176, 1),
+	ACTIVITY_GOD_EATER_HUB_EXP = CurrencyIdMapCfg.ACTIVITY_GOD_EATER_HUB_EXP.item_id
 }
 
 for iter_0_0, iter_0_1 in pairs(CurrencyIdMapCfg) do

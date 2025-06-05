@@ -779,6 +779,52 @@
 		},
 		obtain_way = {}
 	},
+	[6036] = {
+		action_suffix = "",
+		title = "静夜心语",
+		desc = "夜色下的钢琴边，雪儿正略显不安地等待着你，似乎有重要的话想说。",
+		obtain_word = "",
+		scene_trial = 0,
+		limit_display = 0,
+		prefix_dlc = "",
+		can_interrupt_current_anim_switch_camera = 0,
+		light_effect = "",
+		unlock_description = "",
+		prefix = "X330",
+		light_effect_delay = "",
+		id = 6036,
+		default_music = 0,
+		can_loop_switch_camera = 0,
+		impact = {},
+		scene_tag = {},
+		scene_setting = {
+			1
+		},
+		obtain_way = {}
+	},
+	[6037] = {
+		action_suffix = "",
+		title = "新的旅程",
+		desc = "褪去战场上的严肃与紧绷，亚莉莎落落大方地走来。手与手交握之时，新的联结便已产生。",
+		obtain_word = "",
+		scene_trial = 0,
+		limit_display = 0,
+		prefix_dlc = "",
+		can_interrupt_current_anim_switch_camera = 0,
+		light_effect = "",
+		unlock_description = "",
+		prefix = "X329",
+		light_effect_delay = "",
+		id = 6037,
+		default_music = 0,
+		can_loop_switch_camera = 0,
+		impact = {},
+		scene_tag = {},
+		scene_setting = {
+			1
+		},
+		obtain_way = {}
+	},
 	[6100] = {
 		action_suffix = "",
 		title = "作战中心大厅",
@@ -830,7 +876,9 @@
 			6031,
 			6032,
 			6033,
-			6034
+			6034,
+			6036,
+			6037
 		},
 		{
 			6000,
@@ -874,6 +922,8 @@
 		6032,
 		6033,
 		6034,
+		6036,
+		6037,
 		6100
 	}
 }

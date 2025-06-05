@@ -155,6 +155,12 @@
 		albumName = "Transcendence of Suffering",
 		verName = "苦岸行旅"
 	},
+	{
+		id = 27,
+		cover = "icon_CD_27",
+		albumName = "Ender Oracle",
+		verName = "神谕绝响"
+	},
 	all = {
 		1,
 		2,
@@ -181,6 +187,7 @@
 		23,
 		24,
 		25,
-		26
+		26,
+		27
 	}
 }

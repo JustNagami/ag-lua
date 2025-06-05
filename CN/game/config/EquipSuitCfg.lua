@@ -946,7 +946,7 @@
 	{
 		name = "始末之真理",
 		equip_skill_icon = "60",
-		stage_up_list = 0,
+		stage_up_list = 1,
 		power_score = 10,
 		desc = "「解构万物之形，重建万物之序。」",
 		need = 3,
@@ -962,7 +962,7 @@
 	{
 		name = "终末厄难之时",
 		equip_skill_icon = "61",
-		stage_up_list = 0,
+		stage_up_list = 1,
 		power_score = 10,
 		desc = "「以黑暗笼罩寰宇，而后——使天地毁灭。」",
 		need = 3,
@@ -1103,7 +1103,45 @@
 			69
 		}
 	},
+	{
+		name = "众武的庇佑",
+		equip_skill_icon = "70",
+		stage_up_list = 0,
+		power_score = 10,
+		desc = "「刀锋的寒光，枪口的硝烟，都是为了守护珍贵的事物。」",
+		need = 3,
+		inherit_cost_type = 1,
+		equip_type = 0,
+		id = 70,
+		icon = "70",
+		suit = 70,
+		suit_effect = {
+			70
+		}
+	},
+	{
+		name = "契血的弹痕",
+		equip_skill_icon = "71",
+		stage_up_list = 0,
+		power_score = 10,
+		desc = "「赤血因羁绊而泛起涟漪，诞于其中的子弹，会击碎未来的恶障。」",
+		need = 3,
+		inherit_cost_type = 1,
+		equip_type = 0,
+		id = 71,
+		icon = "71",
+		suit = 71,
+		suit_effect = {
+			71
+		}
+	},
 	get_id_list_by_suit = {
+		[71] = {
+			71
+		},
+		[70] = {
+			70
+		},
 		[69] = {
 			69
 		},
@@ -1386,7 +1424,9 @@
 			56,
 			60,
 			66,
-			68
+			68,
+			70,
+			71
 		}
 	},
 	all = {
@@ -1458,6 +1498,8 @@
 		66,
 		67,
 		68,
-		69
+		69,
+		70,
+		71
 	}
 }

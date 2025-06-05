@@ -2,11 +2,13 @@
 local var_0_1 = class("ActivitySummerSwimsuitPreheatEnterView", var_0_0)
 
 function var_0_1.GetUIName(arg_1_0)
-	return "Widget/Version/SummerUI_3_3/SummerUI_3_3_PreheatUI/SummerUI_3_3_PreheatMainUI"
+	return "Widget/Version/Alone_SummerUI_PreheatUI/Alone_SummerUI_PreheatMainUI"
 end
 
 function var_0_1.Init(arg_2_0)
 	var_0_1.super.Init(arg_2_0)
+
+	arg_2_0.playBtnText_.text = GetTips("SUMMER_PREHEAT_ENTER")
 end
 
 function var_0_1.AddListeners(arg_3_0)
@@ -47,7 +49,7 @@ function var_0_1.OnExit(arg_7_0)
 end
 
 function var_0_1.RefreshUI(arg_8_0)
-	arg_8_0.descText_.text = GetTips("ACTIVITY_SUMMER_SWIMSUIT_PREHEAT_TIP")
+	return
 end
 
 function var_0_1.Dispose(arg_9_0)

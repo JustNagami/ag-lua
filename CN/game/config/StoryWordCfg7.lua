@@ -7135,7 +7135,7 @@
 	},
 	[321022025] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "好像和上次来的时候不一样了……门口的花瓶是我们追出去的时候碰倒的，但电梯边上的垃圾桶本来是贴墙放的。还有这张照片……",
 		id = 321022025
 	},
@@ -7189,7 +7189,7 @@
 	},
 	[321022034] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "……这张照片被挪动过，我记得原来离书柜没这么近。",
 		id = 321022034
 	},
@@ -7207,7 +7207,7 @@
 	},
 	[321022037] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "这里还藏着一个小房间……里面那台机器，那是「莫纳德节点」吗？",
 		id = 321022037
 	},
@@ -7225,7 +7225,7 @@
 	},
 	[321022040] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "作战科的课程里没有讲，我是在情报科的图书室里看到的。",
 		id = 321022040
 	},
@@ -7237,7 +7237,7 @@
 	},
 	[321022042] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "每个光轨站都有一个超大型节点，一次可以跨越原质区运送几百吨的东西。",
 		id = 321022042
 	},
@@ -7669,13 +7669,13 @@
 	},
 	[321031050] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "可是太用力会出人命的吧……虽然管理员的格斗技术很好……",
 		id = 321031050
 	},
 	[321031051] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "唔，我是想说，为什么不用电击枪或者麻醉针之类的东西呢？",
 		id = 321031051
 	},
@@ -7927,7 +7927,7 @@
 	},
 	[321031093] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "「重新」。",
 		id = 321031093
 	},
@@ -8029,13 +8029,13 @@
 	},
 	[321041009] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我没事，薇儿姐姐。",
 		id = 321041009
 	},
 	[321041010] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "感觉我现在可以使用的神能要比以前多了，还在慢慢变多，休息一会儿再试试。",
 		id = 321041010
 	},
@@ -8077,7 +8077,7 @@
 	},
 	[321041017] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "冥王的剑翼，为了保护我才被打碎的……",
 		id = 321041017
 	},
@@ -8113,19 +8113,19 @@
 	},
 	[321041023] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员，你也拿一个吧。",
 		id = 321041023
 	},
 	[321041024] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "你认识很多人，也总能想出各种各样的办法。如果这是找到冥王的线索，你随身带一个会比较方便。",
 		id = 321041024
 	},
 	[321041025] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "……而且，我猜，你应该和我一样很想念冥王吧……",
 		id = 321041025
 	},
@@ -8149,7 +8149,7 @@
 	},
 	[321041029] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "侦探？",
 		id = 321041029
 	},
@@ -8161,7 +8161,7 @@
 	},
 	[321041031] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "哦，那位酷酷的伊里伽尔姐姐。",
 		id = 321041031
 	},
@@ -8185,7 +8185,7 @@
 	},
 	[321041035] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我会继续努力的。",
 		id = 321041035
 	},
@@ -8269,13 +8269,13 @@
 	},
 	[321041049] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "应该不能随便说吧，管理员还让我们不要告诉科尔盖，应该是公事。",
 		id = 321041049
 	},
 	[321041050] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "但我也感觉梵天前辈太热情了，就好像……这要怎么说……",
 		id = 321041050
 	},
@@ -9229,7 +9229,7 @@
 	},
 	[321061026] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "伊里伽尔姐姐没有来吗？",
 		id = 321061026
 	},
@@ -9247,7 +9247,7 @@
 	},
 	[321061029] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员去找伊里伽尔姐姐……是为了这个吗？",
 		id = 321061029
 	},
@@ -9265,7 +9265,7 @@
 	},
 	[321061032] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我也想一起去，可以吗？我不会拖后腿的。",
 		id = 321061032
 	},
@@ -9295,7 +9295,7 @@
 	},
 	[321061037] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "那就麻烦伊里伽尔姐姐了。",
 		id = 321061037
 	},
@@ -9403,7 +9403,7 @@
 	},
 	[321061055] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯，我相信你这么说不是为了吓唬我们，要对付智种视骸肯定会遇到很多危险，但我们一定会站在管理员前面的。",
 		id = 321061055
 	},
@@ -9931,13 +9931,13 @@
 	},
 	[321081011] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯……虽然管理员没让我去，但还是把那边的情况同步给我了，好让我有点参与感。",
 		id = 321081011
 	},
 	[321081012] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "他们已经开始行动了，不知道能不能成功……",
 		id = 321081012
 	},
@@ -9949,7 +9949,7 @@
 	},
 	[321081014] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "可罗波那真的会来吗？以前他每次都来看比赛，只是因为身份还没暴露吧……",
 		id = 321081014
 	},
@@ -10153,7 +10153,7 @@
 	},
 	[321081048] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "科尔盖说，曼达维亚出城了。",
 		id = 321081048
 	},
@@ -10165,7 +10165,7 @@
 	},
 	[321081050] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "那样的话，应该会提前通知吧……没说曼达维亚去干什么了，科尔盖也没有理由扣住他的车。",
 		id = 321081050
 	},
@@ -10231,7 +10231,7 @@
 	},
 	[321081061] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我们两个打不过的。而且在这里动手会波及很多人。",
 		id = 321081061
 	},
@@ -10243,13 +10243,13 @@
 	},
 	[321081063] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯，我联系科尔盖，随便编个理由中止比赛就好。",
 		id = 321081063
 	},
 	[321081064] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "不管他想干什么……希望不是现在吧。",
 		id = 321081064
 	},
@@ -10843,7 +10843,7 @@
 	},
 	[321091058] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "伽梨姐，外面怎么样了？",
 		id = 321091058
 	},
@@ -10861,7 +10861,7 @@
 	},
 	[321091061] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "像是在等什么东西……",
 		id = 321091061
 	},
@@ -11023,13 +11023,13 @@
 	},
 	[321101005] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "为什么……怎么了？",
 		id = 321101005
 	},
 	[321101006] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "对了，罗波那——",
 		id = 321101006
 	},
@@ -11047,7 +11047,7 @@
 	},
 	[321101009] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "这地方有问题……",
 		id = 321101009
 	},
@@ -11071,7 +11071,7 @@
 	},
 	[321101013] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "等等，伽梨姐，这里的人——",
 		id = 321101013
 	},
@@ -11083,7 +11083,7 @@
 	},
 	[321101015] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "诶？怎么能把他们留在这里？",
 		id = 321101015
 	},
@@ -11311,7 +11311,7 @@
 	},
 	[321102020] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我也来！",
 		id = 321102020
 	},
@@ -11401,7 +11401,7 @@
 	},
 	[321102035] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "这种问题我也不是很懂，但看他们的样子……你还记得卡兰那时候，新工业园那些员工的情况吗？",
 		id = 321102035
 	},
@@ -11413,7 +11413,7 @@
 	},
 	[321102037] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "对，我看过科尔盖的报告，那些算力被抽走的工人，样子就和这些人很像。",
 		id = 321102037
 	},
@@ -11425,7 +11425,7 @@
 	},
 	[321102039] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "也许吧……但如果是这样，被抽走的算力去哪儿了？",
 		id = 321102039
 	},
@@ -11437,7 +11437,7 @@
 	},
 	[321102041] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "你受伤了吗？",
 		id = 321102041
 	},
@@ -11449,7 +11449,7 @@
 	},
 	[321102043] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "可……罗波那应该能感觉到你受伤了才对，为什么没有追上来？",
 		id = 321102043
 	},
@@ -11479,7 +11479,7 @@
 	},
 	[321102048] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "可现在哪里是安全的？管理员和科尔盖都联系不上，城里好像也变得很奇怪了……",
 		id = 321102048
 	},
@@ -11497,7 +11497,7 @@
 	},
 	[321102051] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "梵天前辈的话确实……可是……",
 		id = 321102051
 	},
@@ -11509,7 +11509,7 @@
 	},
 	[321102053] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "可是，出了这么大的事，梵天前辈没有感觉到吗？",
 		id = 321102053
 	},
@@ -13393,7 +13393,7 @@
 	},
 	[321141012] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "「死城」吗……为什么会突然变成这样……",
 		id = 321141012
 	},
@@ -13411,7 +13411,7 @@
 	},
 	[321141015] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "抱歉……",
 		id = 321141015
 	},
@@ -13429,13 +13429,13 @@
 	},
 	[321141018] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "周围相邻的三个街区都看过了，很多地方发生了交通事故，都堵住了。",
 		id = 321141018
 	},
 	[321141019] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "只有西北边的德瓦卡公路可以通到新工业园，但路上还是有视骸。",
 		id = 321141019
 	},
@@ -13447,25 +13447,25 @@
 	},
 	[321141021] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "是的……而且也不能保证完全安全，之前我们的猜想，可能是真的……",
 		id = 321141021
 	},
 	[321141022] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "南边有一所中学，我们经过的时候，里面的所有人也都和格斗比赛会场那些人一样晕过去了。",
 		id = 321141022
 	},
 	[321141023] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我和伽梨的神能在学校附近也会流失。我大概测了一下，有影响的范围是个圆，越靠近中心，神能流失的速度越快。",
 		id = 321141023
 	},
 	[321141024] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "人类会在里面晕倒，我想也是被同样的东西影响。",
 		id = 321141024
 	},
@@ -13483,19 +13483,19 @@
 	},
 	[321141027] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "虽然我不懂原理，但我在想是不是可以这样推论。",
 		id = 321141027
 	},
 	[321141028] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "神能本质上也是从算力转化过来的，用来维持神力的运转。修正者进入那些区域，真正被抽走的也许不是神能，而是盖亚提供给我们的算力。",
 		id = 321141028
 	},
 	[321141029] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "这样就说得通了。人类没有神能，他们被抽走的就是维持生命力的算力，所以才会像那样晕倒……",
 		id = 321141029
 	},
@@ -13519,13 +13519,13 @@
 	},
 	[321141033] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "应该不会是那种东西了……影响范围是个圆的话，一般东西就在圆心。",
 		id = 321141033
 	},
 	[321141034] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "但要靠近那些区域的中心可不容易。你们肯定半路就会晕倒，我也不知道能在里面坚持多久。",
 		id = 321141034
 	},
@@ -13687,7 +13687,7 @@
 	},
 	[321141061] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "……失去了你说的那些，大家不都还是人类吗？",
 		id = 321141061
 	},
@@ -13699,7 +13699,7 @@
 	},
 	[321141063] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "艾因索菲，深空之眼。我叫奥西里斯。",
 		id = 321141063
 	},
@@ -13711,7 +13711,7 @@
 	},
 	[321141065] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我想应该没有别的「深空之眼」了吧。",
 		id = 321141065
 	},
@@ -13729,43 +13729,43 @@
 	},
 	[321141068] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "这次来夏什瓦特，我是陪我的一位上司，也是一位像我哥哥一样的人，一起过来的。",
 		id = 321141068
 	},
 	[321141069] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "他现在也在基维塔巴，也许处境比我们更危险，甚至正在面对毁掉这座城市的罪魁祸首。",
 		id = 321141069
 	},
 	[321141070] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "和我一起来的队友也是，虽然是队友，但她比我厉害多了……我很担心他们，不知道他们怎么样。",
 		id = 321141070
 	},
 	[321141071] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "还有我的另一位朋友，她很长时间都和我生活在一起，却为了保护我被坏人追杀，现在还不知道在哪里。",
 		id = 321141071
 	},
 	[321141072] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "平时我一直在受他们照顾，这次能来夏什瓦特，其实也是因为沾了他们的光。但没有他们的时候，我很多事都做不到……",
 		id = 321141072
 	},
 	[321141073] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "现在他们都不在我身边，其实我很害怕，也很自责。如果自己更有用一点，说不定就不用和他们分开，还能帮上他们的忙。",
 		id = 321141073
 	},
 	[321141074] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "……但我也知道，如果他们现在就在这里，一定不会希望我这么想。",
 		id = 321141074
 	},
@@ -14833,13 +14833,13 @@
 	},
 	[321171013] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "基地……对啊！",
 		id = 321171013
 	},
 	[321171014] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员如果和涅赫贝特主任一起行动，不管发生了什么，最有可能的不就是回基地吗？！",
 		id = 321171014
 	},
@@ -14851,13 +14851,13 @@
 	},
 	[321171016] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "应该在的。如果我是他的话……肯定会想办法把尽可能多的人聚集到一起。",
 		id = 321171016
 	},
 	[321171017] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "集中情报和力量，才能在情况未知的时候做好尽可能充分的应对……",
 		id = 321171017
 	},
@@ -14869,7 +14869,7 @@
 	},
 	[321171019] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "但是得早点确认那边的情况才行。",
 		id = 321171019
 	},
@@ -14881,13 +14881,13 @@
 	},
 	[321171021] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "这辆车可以借给我吗？我想一个人先过去看看。",
 		id = 321171021
 	},
 	[321171022] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "如果管理员他们都在，就请他们回来接你们。如果基地没法去了，那大家也不用白跑一趟。",
 		id = 321171022
 	},
@@ -14911,7 +14911,7 @@
 	},
 	[321171026] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "是的，我也觉得您留在这里比较合适，伽梨姐也是，如果遇到视骸，需要有修正者在。",
 		id = 321171026
 	},
@@ -14947,7 +14947,7 @@
 	},
 	[321171032] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "你认识管理员吗？",
 		id = 321171032
 	},
@@ -14971,7 +14971,7 @@
 	},
 	[321171036] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "……你是对科尔盖感兴趣吧？",
 		id = 321171036
 	},
@@ -14983,7 +14983,7 @@
 	},
 	[321171038] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "收集这种素材是违规的。你要跟着去的话，就不能再开相机了。",
 		id = 321171038
 	},
@@ -15019,7 +15019,7 @@
 	},
 	[321171044] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "您好。",
 		id = 321171044
 	},
@@ -15049,7 +15049,7 @@
 	},
 	[321171049] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "达克纳先生，我们要出发了，你坐后座可以吗？",
 		id = 321171049
 	},
@@ -15673,7 +15673,7 @@
 	},
 	[321191001] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "唔，管理员是个什么样的人？好难回答的问题……",
 		id = 321191001
 	},
@@ -15691,7 +15691,7 @@
 	},
 	[321191004] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "达克纳先生，我还没有说几句话，为什么你已经写了这么多了？",
 		id = 321191004
 	},
@@ -15703,7 +15703,7 @@
 	},
 	[321191006] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "这样问可能有些不礼貌，但是……发生了这么多事，为什么你还会对采访这么有热情呢？",
 		id = 321191006
 	},
@@ -15715,7 +15715,7 @@
 	},
 	[321191008] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "……达克纳先生，实际上你是个很冷血的人吗？",
 		id = 321191008
 	},
@@ -15745,7 +15745,7 @@
 	},
 	[321191013] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "「现在」应该……没关系吧？",
 		id = 321191013
 	},
@@ -15763,13 +15763,13 @@
 	},
 	[321191016] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员的话，大概是一个很复杂的人……明明年纪没有特别大，却总有很多心事。",
 		id = 321191016
 	},
 	[321191017] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "现在虽然好像能和他并肩作战了，但还是感觉离他很远……",
 		id = 321191017
 	},
@@ -15781,19 +15781,19 @@
 	},
 	[321191019] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "很多事情是机密，我也不方便问。",
 		id = 321191019
 	},
 	[321191020] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "他没有因为那些事情忽视我，其实一直都很照顾我。就算我很弱小，也会让我试着去做一些我能做到的事。",
 		id = 321191020
 	},
 	[321191021] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我不可以再给他添麻烦。只要能在他身后帮到一点小忙，我就很满足了。",
 		id = 321191021
 	},
@@ -15889,7 +15889,7 @@
 	},
 	[321191037] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "……什么？",
 		id = 321191037
 	},
@@ -15901,7 +15901,7 @@
 	},
 	[321191039] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "有一点……不过这不是什么值得报道的事情吧？",
 		id = 321191039
 	},
@@ -15991,7 +15991,7 @@
 	},
 	[321191054] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员……就是特别优秀，拯救过好多人，我比不上的。",
 		id = 321191054
 	},
@@ -16099,13 +16099,13 @@
 	},
 	[321191072] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "人生目标吗？",
 		id = 321191072
 	},
 	[321191073] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "现在的话，先让身边的大家能认可我吧……",
 		id = 321191073
 	},
@@ -16117,7 +16117,7 @@
 	},
 	[321191075] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "这种不算吗？那达克纳先生有吗？",
 		id = 321191075
 	},
@@ -16129,7 +16129,7 @@
 	},
 	[321191077] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "可是刚才大部分时间其实都是你在讲……",
 		id = 321191077
 	},
@@ -16141,7 +16141,7 @@
 	},
 	[321191079] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "请说。",
 		id = 321191079
 	},
@@ -16165,7 +16165,7 @@
 	},
 	[321191083] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "追梦？那是想要报道什么呢？",
 		id = 321191083
 	},
@@ -16177,7 +16177,7 @@
 	},
 	[321191085] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "……啊哈哈，达克纳先生还真是好奇心旺盛呢。",
 		id = 321191085
 	},
@@ -16189,7 +16189,7 @@
 	},
 	[321191087] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "诶，记者先生你不舒服吗，是晕车了？",
 		id = 321191087
 	},
@@ -16207,7 +16207,7 @@
 	},
 	[321191090] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "换我来！",
 		id = 321191090
 	},
@@ -16219,7 +16219,7 @@
 	},
 	[321191092] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我上过驾驶课。",
 		id = 321191092
 	},
@@ -16261,13 +16261,13 @@
 	},
 	[321191099] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "应该不是幻听……我也听到视骸的声音了。",
 		id = 321191099
 	},
 	[321191100] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "你们在这里等一下，我过去看看。",
 		id = 321191100
 	},
@@ -16303,7 +16303,7 @@
 	},
 	[321192001] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "你是从外面进来的？",
 		id = 321192001
 	},
@@ -16333,7 +16333,7 @@
 	},
 	[321192006] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "都没有。",
 		id = 321192006
 	},
@@ -16351,7 +16351,7 @@
 	},
 	[321192009] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "在后面。我们也别在这里说话了吧。神能被抽走，感觉有点不舒服。",
 		id = 321192009
 	},
@@ -16363,7 +16363,7 @@
 	},
 	[321192011] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "诶？你没感觉吗？",
 		id = 321192011
 	},
@@ -16417,7 +16417,7 @@
 	},
 	[321192020] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "等等……你要往哪里开？分部基地不是这条路啊。",
 		id = 321192020
 	},
@@ -16435,7 +16435,7 @@
 	},
 	[321192023] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "是我们的一个朋友……不是新计划！我们没说过这个啊，洛肯。",
 		id = 321192023
 	},
@@ -16447,7 +16447,7 @@
 	},
 	[321192025] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "你要去哪儿？",
 		id = 321192025
 	},
@@ -16459,7 +16459,7 @@
 	},
 	[321192027] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "你知道去哪里找吗？",
 		id = 321192027
 	},
@@ -16471,7 +16471,7 @@
 	},
 	[321192029] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "这……你要不还是跟我们一起走吧。这么大一座城市，还有视骸，你一个人找她太碰运气了。",
 		id = 321192029
 	},
@@ -16507,7 +16507,7 @@
 	},
 	[321192035] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我知道你很着急……可是，找人也得讲方法吧？",
 		id = 321192035
 	},
@@ -16519,7 +16519,7 @@
 	},
 	[321192037] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "所以我觉得你可以跟我们一起去找管理员，他可能会有办法。",
 		id = 321192037
 	},
@@ -16531,7 +16531,7 @@
 	},
 	[321192039] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "如果诗蔻蒂小姐找到了奈奈，奈奈身上有管理员改装的通讯中继器……",
 		id = 321192039
 	},
@@ -16543,7 +16543,7 @@
 	},
 	[321192041] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "能帮上忙就好。",
 		id = 321192041
 	},
@@ -16603,7 +16603,7 @@
 	},
 	[321201004] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "你的感想居然是这个吗……",
 		id = 321201004
 	},
@@ -16663,7 +16663,7 @@
 	},
 	[321201014] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "达克纳先生，趴在那里太危险了，相机掉下去也没法找回来了吧。",
 		id = 321201014
 	},
@@ -16735,7 +16735,7 @@
 	},
 	[321201026] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "您是从分部基地里出来的吗？管理员……#{nickname}#和涅赫贝特主任在吗？",
 		id = 321201026
 	},
@@ -16981,7 +16981,7 @@
 	},
 	[321202012] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我想到一位朋友，也不擅长被人夸奖和感谢。",
 		id = 321202012
 	},
@@ -16993,13 +16993,13 @@
 	},
 	[321202014] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "大概是，因为你救了他们吧。",
 		id = 321202014
 	},
 	[321202015] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "给予善意和接受善意，本来就是很简单的、能让人开心起来的事。",
 		id = 321202015
 	},
@@ -17077,7 +17077,7 @@
 	},
 	[321202028] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "这只是征用，用完以后还是要还回去的，如果弄坏了还得赔钱，你开慢点……",
 		id = 321202028
 	},
@@ -17095,7 +17095,7 @@
 	},
 	[321202031] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "达克纳先生又在写什么呢？",
 		id = 321202031
 	},
@@ -17107,7 +17107,7 @@
 	},
 	[321202033] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "是在画画吗？",
 		id = 321202033
 	},
@@ -17143,7 +17143,7 @@
 	},
 	[321202039] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "达克纳先生对主城区的地形很熟悉，好像也认识管理员，就带着他一起了。",
 		id = 321202039
 	},
@@ -17155,7 +17155,7 @@
 	},
 	[321202041] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "还是……有的吧？",
 		id = 321202041
 	},
@@ -17533,7 +17533,7 @@
 	},
 	[321211039] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "明白了。",
 		id = 321211039
 	},
@@ -17557,7 +17557,7 @@
 	},
 	[321211043] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "伽梨姐、卢克队长，还有那边的所有人，都有危险，我们得赶紧回去，让他们离开才行。",
 		id = 321211043
 	},
@@ -17569,7 +17569,7 @@
 	},
 	[321211045] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "只能希望不会像管理员说的那样……",
 		id = 321211045
 	},
@@ -17605,7 +17605,7 @@
 	},
 	[321211051] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "但如果是「跑」的话，可能不知道该往哪里跑，容易有歧义，我想想……",
 		id = 321211051
 	},
@@ -17719,7 +17719,7 @@
 	},
 	[321211070] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "看到了，就在前面！",
 		id = 321211070
 	},
@@ -17785,7 +17785,7 @@
 	},
 	[321221002] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "罗波那……这都是你做的吗？",
 		id = 321221002
 	},
@@ -17965,13 +17965,13 @@
 	},
 	[321221032] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "……不行，要是在这里引爆，地上的人们、洛肯、我自己……",
 		id = 321221032
 	},
 	[321221033] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "对不起，管理员。",
 		id = 321221033
 	},
@@ -18337,7 +18337,7 @@
 	},
 	[321231041] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "核心呢？弄丢了？！",
 		id = 321231041
 	},
@@ -18349,19 +18349,19 @@
 	},
 	[321231043] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "这里是……心象房间？",
 		id = 321231043
 	},
 	[321231044] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "为什么变成这样了？是因为冥王走了吗……",
 		id = 321231044
 	},
 	[321231045] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "不对，现在不是想这些的时候。得赶紧出去，处理掉核心才行……",
 		id = 321231045
 	},
@@ -18379,7 +18379,7 @@
 	},
 	[321231048] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "怎么会……出不去了？",
 		id = 321231048
 	},
@@ -18409,13 +18409,13 @@
 	},
 	[321231053] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "你……不是我……",
 		id = 321231053
 	},
 	[321231054] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "你是什么？",
 		id = 321231054
 	},
@@ -18901,7 +18901,7 @@
 	},
 	[321251005] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "我……还活着吗？为什么没有再攻击我？",
 		id = 321251005
 	},
@@ -19003,13 +19003,13 @@
 	},
 	[321251022] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "又是……这样吗？",
 		id = 321251022
 	},
 	[321251023] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "原来我已经放弃过这么多次了……",
 		id = 321251023
 	},
@@ -19021,7 +19021,7 @@
 	},
 	[321251025] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "失去了大家，我还能做到什么呢？",
 		id = 321251025
 	},
@@ -19057,7 +19057,7 @@
 	},
 	[321251031] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "……冥王的剑翼？",
 		id = 321251031
 	},
@@ -19075,7 +19075,7 @@
 	},
 	[321251034] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "不对……心象房间是意识空间，为什么会有这个？",
 		id = 321251034
 	},
@@ -19177,7 +19177,7 @@
 	},
 	[321251051] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "是你趁我没发现先抢过去的才对吧……",
 		id = 321251051
 	},
@@ -19195,37 +19195,37 @@
 	},
 	[321251054] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "……从小我就特别害怕丢东西，因为感觉它们全都是独一无二的，弄丢了就回不来了。",
 		id = 321251054
 	},
 	[321251055] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "所以我会把所有东西都摆得整整齐齐，每次出门都会仔细检查带在身上的东西。",
 		id = 321251055
 	},
 	[321251056] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "身边的人也一样，希望能和所有人好好相处，害怕哪一天突然就和谁没了联系……",
 		id = 321251056
 	},
 	[321251057] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "但偶尔还是会把东西弄丢，也会有习惯了每天相处的人，忽然再也见不到了。",
 		id = 321251057
 	},
 	[321251058] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "……其实我也知道，再用心保管的东西最后都会消失，也总会遇到大家不在我身边的时候。",
 		id = 321251058
 	},
 	[321251059] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "只是没想到这一天突然就来了……",
 		id = 321251059
 	},
@@ -19243,19 +19243,19 @@
 	},
 	[321251062] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "自己……是啊，自己。",
 		id = 321251062
 	},
 	[321251063] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我害怕把东西弄丢，就努力让所有东西保持原本的样子，我自己也是一样……觉得只要保持大家习惯的样子就很好了。",
 		id = 321251063
 	},
 	[321251064] = {
 		speaker = "奥西里斯",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "可实际上……我是什么样的？又能做到什么程度呢？",
 		id = 321251064
 	},
@@ -19345,7 +19345,7 @@
 	},
 	[321251079] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "达克纳先生的相机丢了，记忆也会被清除。杰森大叔的队友都牺牲了。洛肯因为没找到诗蔻蒂很自责。",
 		id = 321251079
 	},
@@ -22060,6 +22060,204 @@
 		prefab_name = "",
 		content = "嗯！我会努力的。",
 		id = 418111017
+	},
+	[710330101] = {
+		speaker = "大国主",
+		prefab_name = "",
+		content = "喏，最新研发完成的「全自动兔兔飞镖器」。",
+		id = 710330101
+	},
+	[710330102] = {
+		speaker = "大国主",
+		prefab_name = "",
+		content = "可以实现飞镖游戏百分百的命中率，而且完全不用自己动手。",
+		id = 710330102
+	},
+	[710330103] = {
+		speaker = "海姆达尔",
+		prefab_name = "",
+		content = "完美。",
+		id = 710330103
+	},
+	[710330104] = {
+		speaker = "大国主",
+		prefab_name = "",
+		content = "完美？",
+		id = 710330104
+	},
+	[710330105] = {
+		speaker = "大国主",
+		prefab_name = "",
+		content = "难以想象，有一天海姆达尔的口中还能说出这种评价。",
+		id = 710330105
+	},
+	[710330106] = {
+		speaker = "大国主",
+		prefab_name = "",
+		content = "唔，我记得海姆达尔喜欢赛马，难道对飞镖游戏的乐趣也……",
+		id = 710330106
+	},
+	[710330107] = {
+		speaker = "海姆达尔",
+		prefab_name = "",
+		content = "瞄准系统集成在指尖大小的地方，发射口为了降低摩擦做了神能适应的改造。",
+		id = 710330107
+	},
+	[710330108] = {
+		speaker = "海姆达尔",
+		prefab_name = "",
+		content = "上次一起发的那篇文章应用在武器上原来是这种效果，我确实还没做到这一步……",
+		id = 710330108
+	},
+	[710330109] = {
+		speaker = "大国主",
+		prefab_name = "",
+		content = "等等，你只看到了这些吗？",
+		id = 710330109
+	},
+	[710330110] = {
+		speaker = "海姆达尔",
+		prefab_name = "",
+		content = "还有什么？",
+		id = 710330110
+	},
+	[710330111] = {
+		speaker = "大国主",
+		prefab_name = "",
+		content = "还有优化手感的仿毛皮外壳，辅助平衡的兔兔耳朵，最重要的当然是飞镖本身。",
+		id = 710330111
+	},
+	[710330112] = {
+		speaker = "",
+		prefab_name = "",
+		content = "海姆达尔的视线终于从发射口移开，看向白兔形状的整个机器。",
+		id = 710330112
+	},
+	[710330113] = {
+		speaker = "海姆达尔",
+		prefab_name = "",
+		content = "但飞镖游戏不应该是亲手玩才有乐趣吗？",
+		id = 710330113
+	},
+	[710330114] = {
+		speaker = "海姆达尔",
+		prefab_name = "",
+		content = "把精力用在对视骸武器改进的话，休给你批的经费不会比我少的。",
+		id = 710330114
+	},
+	[710330115] = {
+		speaker = "大国主",
+		prefab_name = "",
+		content = "……果然我就不该来的，海姆达尔下辈子也不会懂。",
+		id = 710330115
+	},
+	[710330201] = {
+		speaker = "海姆达尔",
+		prefab_name = "",
+		content = "近期隐科组的研发总结已经全部在这里了。",
+		id = 710330201
+	},
+	[710330202] = {
+		speaker = "休",
+		prefab_name = "",
+		content = "好的，辛苦你了。",
+		id = 710330202
+	},
+	[710330203] = {
+		speaker = "海姆达尔",
+		prefab_name = "",
+		content = "没关系，份内的工作。",
+		id = 710330203
+	},
+	[710330204] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一个月后。",
+		id = 710330204
+	},
+	[710330205] = {
+		speaker = "海姆达尔",
+		prefab_name = "",
+		content = "近期隐科组的研发总结已经全部在这里了。",
+		id = 710330205
+	},
+	[710330206] = {
+		speaker = "休",
+		prefab_name = "",
+		content = "好的，辛苦你了。",
+		id = 710330206
+	},
+	[710330207] = {
+		speaker = "海姆达尔",
+		prefab_name = "",
+		content = "不辛苦，管理员那边也同步了一份。",
+		id = 710330207
+	},
+	[710330208] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一个月后。",
+		id = 710330208
+	},
+	[710330209] = {
+		speaker = "海姆达尔",
+		prefab_name = "",
+		content = "近期隐科组的研发总结已经全部在这里了，大国主偷偷改掉的发明名字我也改回去了。",
+		id = 710330209
+	},
+	[710330210] = {
+		speaker = "休",
+		prefab_name = "",
+		content = "好的，辛苦你了。",
+		id = 710330210
+	},
+	[710330211] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一个月后。",
+		id = 710330211
+	},
+	[710330212] = {
+		speaker = "海姆达尔",
+		prefab_name = "",
+		content = "近期……",
+		id = 710330212
+	},
+	[710330213] = {
+		speaker = "休",
+		prefab_name = "",
+		content = "好的，辛苦你了。",
+		id = 710330213
+	},
+	[710330214] = {
+		speaker = "海姆达尔",
+		prefab_name = "",
+		content = "近期你的行为模式数据总结分析已经做完了。",
+		id = 710330214
+	},
+	[710330215] = {
+		speaker = "休",
+		prefab_name = "",
+		content = "什么？",
+		id = 710330215
+	},
+	[710330216] = {
+		speaker = "海姆达尔",
+		prefab_name = "",
+		content = "我和大国主帮你优化了一下管理系统，可以减少无用的重复工作。",
+		id = 710330216
+	},
+	[710330217] = {
+		speaker = "海姆达尔",
+		prefab_name = "",
+		content = "现在你可以去放松下，弥弥尔会帮你回复和处理工作的。",
+		id = 710330217
+	},
+	[710330218] = {
+		speaker = "弥弥尔",
+		prefab_name = "",
+		content = "好的，辛苦你了。",
+		id = 710330218
 	},
 	[420201001] = {
 		speaker = "水果摊的阿姨",
@@ -26942,7 +27140,7 @@
 	[321331062] = {
 		speaker = "",
 		prefab_name = "",
-		content = "罗波那深深吸了口气，残存在体表的神能像是被海绵吸收的水一样流入他的肌肤，转化为一道道狰狞的鲜红纹路，攀上他的身体。",
+		content = "罗波那深深吸了口气，残存在体表的骸能像是被海绵吸收的水一样流入他的肌肤，转化为一道道狰狞的鲜红纹路，攀上他的身体。",
 		id = 321331062
 	},
 	[321331063] = {
@@ -28622,7 +28820,7 @@
 	[321351059] = {
 		speaker = "冥王",
 		prefab_name = "1111ui_story",
-		content = "查了半天，是一个疯子为了复活她老婆弄出来的。",
+		content = "查了半天，是一个疯子为了复活他老婆弄出来的。",
 		id = 321351059
 	},
 	[321351060] = {
@@ -31033,7 +31231,7 @@
 	},
 	[927011001] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "唔……已经是下午四点了啊。",
 		id = 927011001
 	},
@@ -31045,19 +31243,19 @@
 	},
 	[927011003] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "虽然在3分17秒完成了潜入，但耗时太长导致前线的作战人员需要后撤。",
 		id = 927011003
 	},
 	[927011004] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "伏击的效果不太好，没有第一时间打败敌方增援，导致战场后方受到敌方攻击。",
 		id = 927011004
 	},
 	[927011005] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "是人员选择问题吗？还是……",
 		id = 927011005
 	},
@@ -31069,19 +31267,19 @@
 	},
 	[927011007] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "想不出来，果然只是学习作战记录的话，和实战还是会有差别。",
 		id = 927011007
 	},
 	[927011008] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "这时候要是冥王在的话，应该又会让我别想着自己一个人解决问题了。",
 		id = 927011008
 	},
 	[927011009] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "……晚些时候去问问管理员吧，如果能学会战术安排，在战场上应该能帮大家更多的忙。",
 		id = 927011009
 	},
@@ -31105,25 +31303,25 @@
 	},
 	[927021004] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "嘿嘿，谢谢管理员的夸奖，但其实没有管理员的话，我想我也不能有这么大的改变。",
 		id = 927021004
 	},
 	[927021005] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "今天学到了不少，我想再去试一试沙盘模拟，我觉得我已经有通过的思路了。",
 		id = 927021005
 	},
 	[927021006] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "今后，我还想更多帮上管理员的忙，回应管理员对我的期待。",
 		id = 927021006
 	},
 	[927021007] = {
 		speaker = "奥西里斯",
-		prefab_name = "1011ui_story",
+		prefab_name = "1211ui_story",
 		content = "我会加油的！",
 		id = 927021007
 	},
@@ -31348,5 +31546,5627 @@
 		prefab_name = "",
 		content = "好好听我说话！",
 		id = 710490310
+	},
+	[419011001] = {
+		speaker = "",
+		prefab_name = "",
+		content = "艾因索菲东部某平原，晴。",
+		id = 419011001
+	},
+	[419011002] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一台贴有科尔盖骸震对策部标识的预警机以人类步行的速度在千米左右的高度上缓慢巡航，几乎整片原野都能听见垂直发动机的嗡鸣。",
+		id = 419011002
+	},
+	[419011003] = {
+		speaker = "",
+		prefab_name = "",
+		content = "从预警机的高度俯瞰，三排平直的黑色队列正随着预警机一同匀速扫向荒原远端，前后错位排列，确保每寸土地都能经过三轮精度不一的搜索。",
+		id = 419011003
+	},
+	[419011004] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "7班，你们读数显示异常，有什么发现？",
+		id = 419011004
+	},
+	[419011005] = {
+		speaker = "科尔盖士兵A",
+		prefab_name = "",
+		content = "7班报告，检测到生命能量残留，但强度太弱，没法确定是不是报告里提到的「那东西」。",
+		id = 419011005
+	},
+	[419011006] = {
+		speaker = "科尔盖士兵A",
+		prefab_name = "",
+		content = "队长，后面的队伍没读到反应吗？",
+		id = 419011006
+	},
+	[419011007] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "没有。异常读数赶紧汇报给科研中心，你们往前探一探。",
+		id = 419011007
+	},
+	[419011008] = {
+		speaker = "科尔盖士兵A",
+		prefab_name = "",
+		content = "技术官，无人机往前两百米，做一轮信号预检测和地层扫描。",
+		id = 419011008
+	},
+	[419011009] = {
+		speaker = "",
+		prefab_name = "",
+		content = "第一排队列靠左侧的位置升起一组无人机，迅速散开结成一个矩形平面，向前方荡去。",
+		id = 419011009
+	},
+	[419011010] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "任何细节上的异常都别放过。科研中心对目标的描述是「未知生物」，别被对付视骸的经验框死了。",
+		id = 419011010
+	},
+	[419011011] = {
+		speaker = "科尔盖士兵A",
+		prefab_name = "",
+		content = "动脑的事就留给科研中心吧。只要是子弹能打死的东西，管它是什么……",
+		id = 419011011
+	},
+	[419011012] = {
+		speaker = "",
+		prefab_name = "",
+		content = "士兵掂了一下手里的枪，可话还没说完，注意力就被前方不远处一块缺口奇怪、宛如被啃食过的巨大岩石吸引了。",
+		id = 419011012
+	},
+	[419011013] = {
+		speaker = "科尔盖士兵A",
+		prefab_name = "",
+		content = "什么气味……技术官——",
+		id = 419011013
+	},
+	[419011014] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "地表异常，各队戒备！",
+		id = 419011014
+	},
+	[419011015] = {
+		speaker = "",
+		prefab_name = "",
+		content = "战术终端毫无征兆传出代表高危警报的剧烈振动，迎着飞溅的碎石，士兵咆哮着举起枪。",
+		id = 419011015
+	},
+	[419011016] = {
+		speaker = "",
+		prefab_name = "",
+		content = "剧烈晃动的视野中，他只看见没飞出多远的无人机群被一条粗壮的尾巴扇飞。扑面而来的，则是更浓重的血腥味。",
+		id = 419011016
+	},
+	[419011017] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "攻击无效？",
+		id = 419011017
+	},
+	[419011018] = {
+		speaker = "",
+		prefab_name = "",
+		content = "运输机机身轻微晃动了一下，坐在后机舱里的托特眉头微微拧起，视线离开平板上播放到一半的视频。",
+		id = 419011018
+	},
+	[419011019] = {
+		speaker = "",
+		prefab_name = "",
+		content = "俯拍视角下，几头形似资料库中记载的「恐龙」模样的巨兽在科尔盖士兵的火力覆盖下毫发无伤。",
+		id = 419011019
+	},
+	[419011020] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "是的，所有常规武器都没有明显效果。神能武器……至少观察到了阻滞作用，但搜查队配备的火力有限，没能停止它们的行动。",
+		id = 419011020
+	},
+	[419011021] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "要不是那位小姐帮忙，恐怕没多少人能撤出来。",
+		id = 419011021
+	},
+	[419011022] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "我听说了，拿着红色大剑的那个，昨天就有她的目击记录。未识别的生命信号也是昨天发现的，难道跟她有什么关联吗……",
+		id = 419011022
+	},
+	[419011023] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "战场监测数据返回来没有？她用出来的神力大概在什么级别？",
+		id = 419011023
+	},
+	[419011024] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "她……她好像不是修正者。",
+		id = 419011024
+	},
+	[419011025] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "……你确定？",
+		id = 419011025
+	},
+	[419011026] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "最开始我们也以为是，但系统识别不出她的身份，甚至没在她身上检测到神能反应，这就已经很奇怪了。",
+		id = 419011026
+	},
+	[419011027] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "更奇怪的是她使用的能量，一定要说的话……还更接近那些怪物。",
+		id = 419011027
+	},
+	[419011028] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "所以上面对这个刚救了几十名士兵的「身份不明人士」起了疑心，派我过来跟她接触，看看是敌是友吗？",
+		id = 419011028
+	},
+	[419011029] = {
+		speaker = "",
+		prefab_name = "",
+		content = "托特了然地点点头，平板已经自动切换到下一条视频录像。",
+		id = 419011029
+	},
+	[419011030] = {
+		speaker = "",
+		prefab_name = "",
+		content = "画面当中，一位穿着黑色皮夹克和方格纹短裙的少女挥动着一把几乎比她人还要大的巨剑，以夸张的力量和机动性接连斩杀一头头巨兽。",
+		id = 419011030
+	},
+	[419011031] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "她救了我的兵，我当然很感谢。但如果她和那些巨兽一样可能对盖亚构成威胁，我的立场也很明确，长官。",
+		id = 419011031
+	},
+	[419011032] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "不用紧张，没有怀疑你的意思。",
+		id = 419011032
+	},
+	[419011033] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "撤离点的情况怎么样？",
+		id = 419011033
+	},
+	[419011034] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "很安全，伤员的伤势基本都稳定住了。平原四周正在布置封锁线，暂时没观察到新的巨兽。",
+		id = 419011034
+	},
+	[419011035] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "那位小姐一直在我们视野范围内。不过她警惕性很高，离营地保持了大概一公里的距离，我吩咐了士兵不要随便和她接触。",
+		id = 419011035
+	},
+	[419011036] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "嗯，能找到她就好。",
+		id = 419011036
+	},
+	[419011037] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "不过奇怪的是，区域整体的异常生命能量读数还在上升，天上地下都检查过，来源不明。",
+		id = 419011037
+	},
+	[419011038] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "源层呢？",
+		id = 419011038
+	},
+	[419011039] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "不好说，但空间结构稳定，就算源层有什么动静也不该影响到表层。",
+		id = 419011039
+	},
+	[419011040] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "快到了。托特组长，你需要多少人？",
+		id = 419011040
+	},
+	[419011041] = {
+		speaker = "",
+		prefab_name = "",
+		content = "撤离点是一片适合飞机垂直起降的平地。运输机旋转到合适的角度开始减速下降。",
+		id = 419011041
+	},
+	[419011042] = {
+		speaker = "",
+		prefab_name = "",
+		content = "透过窗户，托特看到大群士兵聚向机尾。其中有不少暂时失去行动能力的伤员。能走的士兵里也有不少人的武器或装甲被损坏，受了程度不一的伤。",
+		id = 419011042
+	},
+	[419011043] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "……你们抓紧时间协助伤员登机。那个女孩儿的事我自己来就行。",
+		id = 419011043
+	},
+	[419011044] = {
+		speaker = "",
+		prefab_name = "",
+		content = "低头看了眼终端上刚收到的消息，托特咬了咬嘴唇，正想对士官说些什么，还没着地的飞机忽然猛烈震动了一下……或者说，被什么东西重重冲撞了一下。",
+		id = 419011044
+	},
+	[419011045] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "敌袭！抬升高度！",
+		id = 419011045
+	},
+	[419011046] = {
+		speaker = "",
+		prefab_name = "",
+		content = "巨大的咆哮声穿透机身，窗外下方的士兵队伍陷入骚乱，托特不用目视也已经知道外面发生了什么。",
+		id = 419011046
+	},
+	[419011047] = {
+		speaker = "",
+		prefab_name = "",
+		content = "在飞机重新开始上升之前，她用丝线勾住舱门，用力将其拉开的同时，身体借着反作用力冲了出去。",
+		id = 419011047
+	},
+	[419011048] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "……比资料上的「推测」还难缠啊。",
+		id = 419011048
+	},
+	[419011049] = {
+		speaker = "",
+		prefab_name = "",
+		content = "丝线缠住一头巨兽，飞刀刺进它身体的瞬间，托特就感觉到了与往常战斗全然不同的违和之处。",
+		id = 419011049
+	},
+	[419011050] = {
+		speaker = "",
+		prefab_name = "",
+		content = "旁边的其他巨兽趁机冲向托特，被托特身后密集的火力压住。但正如报告中所说，哪怕是神能子弹对它们也没有显著的杀伤能力。",
+		id = 419011050
+	},
+	[419011051] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "虽说是生物，可感觉就像扎进一块钢板……真的存在「杀死一块钢板」这种事吗？",
+		id = 419011051
+	},
+	[419011052] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "怎么又是这些东西，刚才出现的只是一小部分吗？",
+		id = 419011052
+	},
+	[419011053] = {
+		speaker = "科尔盖士兵A",
+		prefab_name = "",
+		content = "队长？！你怎么下来了？",
+		id = 419011053
+	},
+	[419011054] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "废话，支援都带到了，我还留在飞机上干什么？",
+		id = 419011054
+	},
+	[419011055] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "带伤员去预备撤离点。其余人拉开距离，配合托特组长自由开火！",
+		id = 419011055
+	},
+	[419011056] = {
+		speaker = "",
+		prefab_name = "",
+		content = "地面上的士兵们迅速呈作战队形散开，抬升到高处的运输机也调整好射界，一边驶向预备撤离点，一边用机载机炮支援托特。",
+		id = 419011056
+	},
+	[419011057] = {
+		speaker = "",
+		prefab_name = "",
+		content = "虽然火力覆盖看上去声势浩大，可距离巨兽最近的托特清楚，这不过是场筹码完全不对称的消耗战而已。",
+		id = 419011057
+	},
+	[419011058] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "神能武器作用不大，你们也撤。",
+		id = 419011058
+	},
+	[419011059] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "可您——",
+		id = 419011059
+	},
+	[419011060] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "它们追不上我。这是命令。撤！",
+		id = 419011060
+	},
+	[419011061] = {
+		speaker = "",
+		prefab_name = "",
+		content = "运输机驶远，身后的士兵也听令开始撤退，托特压力骤增。正当她思考着引开巨兽的方法和路线时，视野边缘忽然闪过一抹火光。",
+		id = 419011061
+	},
+	[419011062] = {
+		speaker = "",
+		prefab_name = "",
+		content = "几发看不清质地的子弹跨过一道长距离，精准地落在两头巨兽腰间，看上去并不剧烈的爆炸却将它们震飞出去，在地上划出十多米长的痕迹。",
+		id = 419011062
+	},
+	[419011063] = {
+		speaker = "？？？",
+		prefab_name = "1045ui_story",
+		content = "看上去你的武器对「荒神」不起作用，那麻烦退开一些。",
+		id = 419011063
+	},
+	[419011064] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "荒神？",
+		id = 419011064
+	},
+	[419011065] = {
+		speaker = "",
+		prefab_name = "",
+		content = "晴空为幕，少女轻捷地跳上一处高地。旷野风动，贝雷帽在气流中翘起一些，露出她骄傲的双眼。",
+		id = 419011065
+	},
+	[419011066] = {
+		speaker = "",
+		prefab_name = "",
+		content = "更引人注目的是她手里那个与体型不相符的巨大武器。她提起武器，明亮的子弹拖着火尾凌空飞射。",
+		id = 419011066
+	},
+	[419011067] = {
+		speaker = "？？？",
+		prefab_name = "1045ui_story",
+		content = "真是的……我还以为有别的技术可以杀死荒神了，白高兴一场。",
+		id = 419011067
+	},
+	[419011068] = {
+		speaker = "？？？",
+		prefab_name = "1045ui_story",
+		content = "退远点，小心误伤！",
+		id = 419011068
+	},
+	[419011069] = {
+		speaker = "",
+		prefab_name = "",
+		content = "巨兽群并没有被这一轮火力击溃，片刻后，它们纷纷立起宛如绘制着鬼面的宽阔尾部，咆哮着向少女扑来。",
+		id = 419011069
+	},
+	[419011070] = {
+		speaker = "",
+		prefab_name = "",
+		content = "细若无物的丝线游龙般穿行而来，悄然缠住几个狂奔的怪物后角度精妙地一牵，将它们全数掀翻在地。",
+		id = 419011070
+	},
+	[419011071] = {
+		speaker = "",
+		prefab_name = "",
+		content = "少女手中的枪械变形成巨剑，顺势插进一只巨兽的脑袋，然后迅速退到托特身边，目光扫过她光洁的手腕，忍不住露出疑惑的表情。",
+		id = 419011071
+	},
+	[419011072] = {
+		speaker = "？？？",
+		prefab_name = "1045ui_story",
+		content = "感谢支援。\n居然能够跟上荒神的动作，可你又不是「神机使」，看来是身经百战……",
+		id = 419011072
+	},
+	[419011073] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "你说的每个字我都听清了，可连在一起反而没法理解。",
+		id = 419011073
+	},
+	[419011074] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "看起来，值得我们坐下来聊聊的事情还不少。",
+		id = 419011074
+	},
+	[419011075] = {
+		speaker = "？？？",
+		prefab_name = "1045ui_story",
+		content = "我也是这么想的。但至少，先把这些荒神解决掉再说吧！",
+		id = 419011075
+	},
+	[419011076] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "需要我怎么配合你？",
+		id = 419011076
+	},
+	[419011077] = {
+		speaker = "？？？",
+		prefab_name = "1045ui_story",
+		content = "离我远点。然后就像刚才那样，限制住它们的动作。\n由我来完成终结。",
+		id = 419011077
+	},
+	[419011078] = {
+		speaker = "？？？",
+		prefab_name = "1045ui_story",
+		content = "……怎么称呼？",
+		id = 419011078
+	},
+	[419011079] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "托特。",
+		id = 419011079
+	},
+	[419011080] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "托特……谢谢。\n我叫亚莉莎。",
+		id = 419011080
+	},
+	[419011081] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一手压低帽檐，少女重新将武器切换到枪形态。托特很难不注意到她的眼神，那是猎人盯住猎物的眼神。",
+		id = 419011081
+	},
+	[419011082] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "亚莉莎·阿米耶拉。",
+		id = 419011082
+	},
+	[419012001] = {
+		speaker = "",
+		prefab_name = "",
+		content = "漆黑的兽口又一次从亚莉莎手中名为「神机」的武器中探出，从怪物的尸骸上撕下什么东西，然后飞速缩回。",
+		id = 419012001
+	},
+	[419012002] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎对此似乎已经习以为常。她抬头看了眼远处驶来的科尔盖车队，走向正低头翻看着终端的托特。",
+		id = 419012002
+	},
+	[419012003] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "……真是奇怪，你们明明没有消灭荒神的手段，为什么还被派过来对付荒神？",
+		id = 419012003
+	},
+	[419012004] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "这是什么地方？和我所认识的世界，没有一点相像……",
+		id = 419012004
+	},
+	[419012005] = {
+		speaker = "",
+		prefab_name = "",
+		content = "听到亚莉莎的话，托特关掉终端上毫无起伏的神力反应检测面板，默默打量了一会儿这位已经可以确认不是修正者的少女。",
+		id = 419012005
+	},
+	[419012006] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "抱歉……但是为了让沟通更加有效，我需要先问你几个问题。",
+		id = 419012006
+	},
+	[419012007] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "可以。不过先说好，仅限我能回答的问题。",
+		id = 419012007
+	},
+	[419012008] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "那就要看对你来说什么算「机密」了。",
+		id = 419012008
+	},
+	[419012009] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "这里是盖亚的十个原质区之一，艾因索菲。你知道我在说什么吗？",
+		id = 419012009
+	},
+	[419012010] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎摇了摇头。",
+		id = 419012010
+	},
+	[419012011] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "那你知不知道十大战区、纳米机器人和「人联」？",
+		id = 419012011
+	},
+	[419012012] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "都没听过。",
+		id = 419012012
+	},
+	[419012013] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "那么……你知不知道2100年的时候发生了什么？",
+		id = 419012013
+	},
+	[419012014] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "2100？你确定你没说错？现在不是才207——",
+		id = 419012014
+	},
+	[419012015] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎恍然似的愣住了。托特则已经开始苦恼地揉起自己的太阳穴，不过很快调整好了自己的态度。",
+		id = 419012015
+	},
+	[419012016] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "明白了吗？现在合理的解释只有一个了，亚莉莎小姐。",
+		id = 419012016
+	},
+	[419012017] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "这里是和你原先生活的地方不同的，「另一个世界」。",
+		id = 419012017
+	},
+	[419012018] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "盖亚和科尔盖的情况大致就是这样。",
+		id = 419012018
+	},
+	[419012019] = {
+		speaker = "",
+		prefab_name = "",
+		content = "车队在旷野疾驰，一辆强制开着自动驾驶模式的敞篷越野车被夹在正中央，显然兼有监视和保护的意味。",
+		id = 419012019
+	},
+	[419012020] = {
+		speaker = "",
+		prefab_name = "",
+		content = "托特喝了口水，借着这个停顿的机会看了看旁边亚莉莎的反应。后者单手挂在门框上，看上去有些走神，但很快就注意到了托特的视线。",
+		id = 419012020
+	},
+	[419012021] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "我知道很多说明过于简略，所以我需要带你去一趟总部。等情报中心做完评估，依照可行性和必要性，我们会决定你能知道多少实情。",
+		id = 419012021
+	},
+	[419012022] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "都是军人，能理解。关于我那边的情况，我也只说了很少的一部分。",
+		id = 419012022
+	},
+	[419012023] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "不过，同样的道理，你们也得证明你们值得我信任。",
+		id = 419012023
+	},
+	[419012024] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "不相信我们，还坐上这辆车？",
+		id = 419012024
+	},
+	[419012025] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "我……我不认识路……总之为了收集情报，先跟你们到居住区再说。",
+		id = 419012025
+	},
+	[419012026] = {
+		speaker = "",
+		prefab_name = "",
+		content = "看着亚莉莎别过头望向窗外掩饰局促的样子，托特忍住没笑，低头又喝了口水。",
+		id = 419012026
+	},
+	[419012027] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "你不需要现在就信任我们。但如果荒神是你的敌人，那么至少在这件事上，我们目标一致。",
+		id = 419012027
+	},
+	[419012028] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "科尔盖现在关心的，也只有这件事而已。",
+		id = 419012028
+	},
+	[419012029] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "你们想做什么？",
+		id = 419012029
+	},
+	[419012030] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "当然是消灭它们……这有问题吗？",
+		id = 419012030
+	},
+	[419012031] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "消灭荒神……没有说的那么简单。\n只是打倒眼前的这些荒神，并不意味着真正解决了它们。",
+		id = 419012031
+	},
+	[419012032] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎沉默了一会儿，用力捏着自己的手指，然后坐正身子，十分严肃地看着托特。",
+		id = 419012032
+	},
+	[419012033] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "荒神本质上就是一堆「神谕细胞」。这种「生物」能够吞噬几乎所有东西，不断变异，不断成长。",
+		id = 419012033
+	},
+	[419012034] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "芬里尔暂时还没找到完全破坏神谕细胞的办法。神机使能做的，只是破坏荒神的核心，把构成它们的神谕细胞打散而已。",
+		id = 419012034
+	},
+	[419012035] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "用不了多久，那些飘散的神谕细胞就会重新组合变成新的荒神，一遍又一遍，就像重复的噩梦一样……",
+		id = 419012035
+	},
+	[419012036] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "亚莉莎。",
+		id = 419012036
+	},
+	[419012037] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "听说荒神出现以前，我那边的世界也像这里一样和平。",
+		id = 419012037
+	},
+	[419012038] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "这里也出现了荒神……恐怕也会和我们的世界一样……",
+		id = 419012038
+	},
+	[419012039] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "还没到想那么远的时候。相信我，我们，盖亚，经历过更糟糕的事。",
+		id = 419012039
+	},
+	[419012040] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "是么……",
+		id = 419012040
+	},
+	[419012041] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "毕竟这里是数据世界，不管怎样不讲道理的「规则」，都有需要遵守的底层逻辑。",
+		id = 419012041
+	},
+	[419012042] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "人类之所以擅长解决问题，就是因为他……因为我们懂得用逻辑把解法和问题关联起来。",
+		id = 419012042
+	},
+	[419012043] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "所以，我不认为荒神会是什么解决不了的麻烦。毕竟，有你在，看起来我们不用从零开始研究了。",
+		id = 419012043
+	},
+	[419012044] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "……算了，自信也不算坏事，我也会尽我所能提供帮助的。",
+		id = 419012044
+	},
+	[419012045] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "姑且提醒一下，我不是什么「荒神学」博士，所以可别指望我把情况说明得有多清楚。",
+		id = 419012045
+	},
+	[419012046] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "能把你知道的事告诉我们就够了。",
+		id = 419012046
+	},
+	[419012047] = {
+		speaker = "",
+		prefab_name = "",
+		content = "托特点点头，从终端里调出一份报告，将光屏转到亚莉莎面前。亚莉莎看上去对这种技术有些陌生，但很快理解了操作方法。",
+		id = 419012047
+	},
+	[419012048] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "这是昨天对你的目击报告。能说说吗？你是怎么到这里的，今天之前又在做什么？",
+		id = 419012048
+	},
+	[419012049] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "不知道。或者说……我对这里的记忆是从醒来之后开始的。",
+		id = 419012049
+	},
+	[419012050] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "「醒来」？",
+		id = 419012050
+	},
+	[419012051] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "是的，我原本在……另一个地方执行任务。",
+		id = 419012051
+	},
+	[419021001] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "这究竟是……荒神到底在哪……\n——！？",
+		id = 419021001
+	},
+	[419021002] = {
+		speaker = "",
+		prefab_name = "",
+		content = "听到身后草丛里的动静，亚莉莎骤然绷紧身体，转身举起大剑。",
+		id = 419021002
+	},
+	[419021003] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一只土拨鼠刚从土坑里钻出来，像是被亚莉莎的断喝吓得僵在原地，直挺着身子愣在原地。",
+		id = 419021003
+	},
+	[419021004] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一人一鼠就这么大眼瞪小眼好一会儿。土拨鼠缩了一下脑袋，见眼前这个雕塑般的人类还是没动作，才急忙蹿走了。",
+		id = 419021004
+	},
+	[419021005] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "……",
+		id = 419021005
+	},
+	[419021006] = {
+		speaker = "",
+		prefab_name = "",
+		content = "慢慢放下神机，亚莉莎叹了口气，环视这片郁郁葱葱的平原，双眼中露出些微茫然。",
+		id = 419021006
+	},
+	[419021007] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "追着废墟里的荒神，为什么忽然到这个地方来了……这到底是哪里……",
+		id = 419021007
+	},
+	[419021008] = {
+		speaker = "",
+		prefab_name = "",
+		content = "这种和空气斗智斗勇的情况已经上演不止一次了，但亚莉莎仍然没有习惯。「安全感」这种东西，失去太久就很难寻回了。",
+		id = 419021008
+	},
+	[419021009] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一片绿叶飘落在她帽檐，她摘下叶子举向天空，阳光下叶脉清晰可见——是一片真实的树叶。",
+		id = 419021009
+	},
+	[419021010] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "世界上还有留存着这么多自然的地方吗……？\n不可思议……",
+		id = 419021010
+	},
+	[419021011] = {
+		speaker = "",
+		prefab_name = "",
+		content = "远远可以看见地势较低的地方铺着一条公路，亚莉莎走过去，在路边找到一辆车。",
+		id = 419021011
+	},
+	[419021012] = {
+		speaker = "",
+		prefab_name = "",
+		content = "车子看上去很新，流线型的外壳十分美观，但没有做任何防护加强，在亚莉莎看来更像是个摆在车库里的装饰品。",
+		id = 419021012
+	},
+	[419021013] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "还有人在附近吗……等等好了。",
+		id = 419021013
+	},
+	[419021014] = {
+		speaker = "",
+		prefab_name = "",
+		content = "幸运的是，在车子旁边等了没多久，亚莉莎就听见有人接近。",
+		id = 419021014
+	},
+	[419021015] = {
+		speaker = "平民女性",
+		prefab_name = "",
+		content = "哎，霍华德，那边好像有人，要不过去问问？",
+		id = 419021015
+	},
+	[419021016] = {
+		speaker = "",
+		prefab_name = "",
+		content = "虽然对方的口音有点奇怪，但亚莉莎能明白她的意思，也能听出对方没有敌意。",
+		id = 419021016
+	},
+	[419021017] = {
+		speaker = "",
+		prefab_name = "",
+		content = "她朝声音传来的方向望去，远远看见一对夫妇牵着一位小女孩的手朝她走过来。",
+		id = 419021017
+	},
+	[419021018] = {
+		speaker = "",
+		prefab_name = "",
+		content = "似乎是注意到亚莉莎手里的武器，走到亚莉莎近前，这对夫妇的神态渐渐变得拘谨起来。",
+		id = 419021018
+	},
+	[419021019] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "平民？为什么会在这里？",
+		id = 419021019
+	},
+	[419021020] = {
+		speaker = "平民女性",
+		prefab_name = "",
+		content = "哦，是科尔盖的长官啊，这是我们的车，应该没有违停吧？",
+		id = 419021020
+	},
+	[419021021] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "我是芬里尔极东分部的亚莉莎，这是什么地方？",
+		id = 419021021
+	},
+	[419021022] = {
+		speaker = "伊迪斯",
+		prefab_name = "",
+		content = "芬里尔？科尔盖里还有这个——",
+		id = 419021022
+	},
+	[419021023] = {
+		speaker = "",
+		prefab_name = "",
+		content = "看出妻子想要问下去，男人急忙拉住她，眼神示意妻子不要多打听科尔盖的机密。",
+		id = 419021023
+	},
+	[419021024] = {
+		speaker = "霍华德",
+		prefab_name = "",
+		content = "抱歉，长官，我们是来郊游的，刚收到这一带被封锁的消息，正准备出去，没有擅闯禁区的意思。",
+		id = 419021024
+	},
+	[419021025] = {
+		speaker = "霍华德",
+		prefab_name = "",
+		content = "我们就住在南边镇上。我叫霍华德，这是我妻子伊迪斯。女儿，史黛西。需要检查我们的身份信息吗？",
+		id = 419021025
+	},
+	[419021026] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "不，我问的是……史黛西，你受伤了吗？",
+		id = 419021026
+	},
+	[419021027] = {
+		speaker = "",
+		prefab_name = "",
+		content = "注意到小女孩儿膝盖上的擦伤，亚莉莎蹲下来检查了一下，好在只是皮外伤。",
+		id = 419021027
+	},
+	[419021028] = {
+		speaker = "霍华德",
+		prefab_name = "",
+		content = "小孩子调皮，喜欢乱跑，自己摔倒磕破了。",
+		id = 419021028
+	},
+	[419021029] = {
+		speaker = "史黛西",
+		prefab_name = "",
+		content = "我没有乱跑！我刚刚真的看到了怪兽，长着好——尖的牙。我想回来告诉你们，跑得太快……才摔倒了。",
+		id = 419021029
+	},
+	[419021030] = {
+		speaker = "伊迪斯",
+		prefab_name = "",
+		content = "说谎就不乖了，史黛西。",
+		id = 419021030
+	},
+	[419021031] = {
+		speaker = "史黛西",
+		prefab_name = "",
+		content = "我没说谎，我记得可清楚了，是一种……长着两张脸的怪兽。",
+		id = 419021031
+	},
+	[419021032] = {
+		speaker = "史黛西",
+		prefab_name = "",
+		content = "怪兽的前面有一张脸，尾巴，尾巴也是脸。",
+		id = 419021032
+	},
+	[419021033] = {
+		speaker = "霍华德",
+		prefab_name = "",
+		content = "行了，科尔盖的长官在执行任务，不要乱说——",
+		id = 419021033
+	},
+	[419021034] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "抱歉，让我来问吧。\n你好，史黛西妹妹。可以告诉我你说的「怪兽」在哪里吗？",
+		id = 419021034
+	},
+	[419021035] = {
+		speaker = "",
+		prefab_name = "",
+		content = "夫妇俩疑惑地看向亚莉莎，却发现她的眼神认真得可怕。史黛西想了想，不太确定地指了个方向。",
+		id = 419021035
+	},
+	[419021036] = {
+		speaker = "史黛西",
+		prefab_name = "",
+		content = "亚莉莎姐姐知道那些怪兽吗？",
+		id = 419021036
+	},
+	[419021037] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "知道的，姐姐来这里就是为了把怪兽打跑……你要听爸爸妈妈的话，也要保护好爸爸妈妈，能做到吗？",
+		id = 419021037
+	},
+	[419021038] = {
+		speaker = "",
+		prefab_name = "",
+		content = "史黛西眼里亮闪闪的，对亚莉莎用力点了点头。亚莉莎微笑着揉了揉史黛西的脑袋，起身指了一下车子。",
+		id = 419021038
+	},
+	[419021039] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "你们赶紧回居住区吧，这里不安全。",
+		id = 419021039
+	},
+	[419021040] = {
+		speaker = "霍华德",
+		prefab_name = "",
+		content = "你要去哪儿，长官？",
+		id = 419021040
+	},
+	[419021041] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "完成我的任务。",
+		id = 419021041
+	},
+	[419021042] = {
+		speaker = "",
+		prefab_name = "",
+		content = "以完全违反直觉的轻巧姿态提起大剑，亚莉莎朝史黛西指的方向跑去，速度之快让一家三口瞠目结舌。",
+		id = 419021042
+	},
+	[419021043] = {
+		speaker = "",
+		prefab_name = "",
+		content = "直到亚莉莎消失在视野中，霍华德才回过神来，拉着妻女坐进车里。",
+		id = 419021043
+	},
+	[419021044] = {
+		speaker = "霍华德",
+		prefab_name = "",
+		content = "……记住了，刚才我们看到的可都是机密，回家以后别在网上乱说。",
+		id = 419021044
+	},
+	[419021045] = {
+		speaker = "伊迪斯",
+		prefab_name = "",
+		content = "那要是被问起来怎么办？",
+		id = 419021045
+	},
+	[419021046] = {
+		speaker = "霍华德",
+		prefab_name = "",
+		content = "谁没事会问我们这个？就说郊游挺好的，什么都没看到……",
+		id = 419021046
+	},
+	[419021047] = {
+		speaker = "伊迪斯",
+		prefab_name = "",
+		content = "不是，你看后面。",
+		id = 419021047
+	},
+	[419021048] = {
+		speaker = "",
+		prefab_name = "",
+		content = "刚系好安全带的霍华德朝后视镜看了一眼，一辆挂着科尔盖标识的黑车快速驶近……",
+		id = 419021048
+	},
+	[419021049] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "这个脚印，像是鬼面巨尾。脚印还很新，而且不止一只……",
+		id = 419021049
+	},
+	[419021050] = {
+		speaker = "",
+		prefab_name = "",
+		content = "确认了荒神的踪迹，亚莉莎心头一沉，但同时又有种找回目标的释然。",
+		id = 419021050
+	},
+	[419021051] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "没想到这么安稳和平的地方也会出现荒神……",
+		id = 419021051
+	},
+	[419021052] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "这些鬼面巨尾，是跟我一起到这个地方的吗……",
+		id = 419021052
+	},
+	[419021053] = {
+		speaker = "",
+		prefab_name = "",
+		content = "随着脚步移动，空气里开始泛起隐约的腥味。转过几处有着咬痕般缺口的嶙峋岩石，亚莉莎看着眼前的一幕，顿住脚步。",
+		id = 419021053
+	},
+	[419021054] = {
+		speaker = "",
+		prefab_name = "",
+		content = "已经看不出是什么动物的尸体碎落在地面上，几只鬼面巨尾抬起头来，对她露出森森的獠牙。",
+		id = 419021054
+	},
+	[419031001] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "……难怪昨天我们的搜查什么都没发现，原来那几只荒神被你消灭了。",
+		id = 419031001
+	},
+	[419031002] = {
+		speaker = "",
+		prefab_name = "",
+		content = "听亚莉莎说完她醒来以后的经历，托特若有所思地点了点头。",
+		id = 419031002
+	},
+	[419031003] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "那为什么要继续留在这里？监控没拍到你进入任何城镇。",
+		id = 419031003
+	},
+	[419031004] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "从我听到的消息来看，「科尔盖」是一个拥有疏散民众、维护治安的权力的组织。",
+		id = 419031004
+	},
+	[419031005] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "如果我的推测没错的话，与其到居住区漫无目的地打听，不如和你们接触更能收集到情报。",
+		id = 419031005
+	},
+	[419031006] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "而且，消灭荒神是神机使的职责。如果附近有别的神机使，知道这里有荒神出没肯定会过来。",
+		id = 419031006
+	},
+	[419031007] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "如果没有？",
+		id = 419031007
+	},
+	[419031008] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "如果没有，这里就更需要我了。\n作为这里唯一的神机使，在可能还有其他荒神存在的情况下，我不可能离开战斗区域。",
+		id = 419031008
+	},
+	[419031009] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "神机使都是信念感这么强的人吗？",
+		id = 419031009
+	},
+	[419031010] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "至少，我的同伴们都是靠着这份信念，和荒神战斗着。",
+		id = 419031010
+	},
+	[419031011] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎回头看了眼后座上自己的神机，虽然一路颠簸，但放得还算稳当。",
+		id = 419031011
+	},
+	[419031012] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "要对抗怪物，就要先把自己变成怪物……",
+		id = 419031012
+	},
+	[419031013] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "但要守护人类，不管再怎么像怪物，至少得有人类的心。",
+		id = 419031013
+	},
+	[419031014] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "有时候「幼稚」一点，倒也不算坏事。",
+		id = 419031014
+	},
+	[419031015] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "修正者都是这么能说会道的人吗？",
+		id = 419031015
+	},
+	[419031016] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "呵，也有嘴笨的。",
+		id = 419031016
+	},
+	[419031017] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "你这把神机，科研中心应该会借去研究，争取把消灭荒神的技术量产化。",
+		id = 419031017
+	},
+	[419031018] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "意思是你们也想造神机？",
+		id = 419031018
+	},
+	[419031019] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "不排除研究员会有这样的打算。",
+		id = 419031019
+	},
+	[419031020] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "那我可要泼盆冷水了。先不说你们有没有制造神机的条件，没有神机使，光造出武器也没用。其他人要是不小心碰到神机，搞不好会被吞噬掉丢了性命。",
+		id = 419031020
+	},
+	[419031021] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "而且神机就这么一把，要是在解析的过程中弄坏了，我可不知道怎么修。",
+		id = 419031021
+	},
+	[419031022] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "……我会转达的。",
+		id = 419031022
+	},
+	[419031023] = {
+		speaker = "",
+		prefab_name = "",
+		content = "视线在车载地图上停了一会儿，托特注意到侧翼的几辆车离开了车队。她皱了皱眉，打开通讯频道。",
+		id = 419031023
+	},
+	[419031024] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "指挥车，为什么有两支小队离队？",
+		id = 419031024
+	},
+	[419031025] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "平原南部出现高密度生命能量反应，疑似有强度突出的个体存在。上面派他们过去看看情况。",
+		id = 419031025
+	},
+	[419031026] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "强度突出的个体……\n情况不妙啊……恐怕不是像鬼面巨尾那样的小型敌人。",
+		id = 419031026
+	},
+	[419031027] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "什么叫「看看情况」？为什么不一起过去？",
+		id = 419031027
+	},
+	[419031028] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "车队最优先的任务是护送亚莉莎小姐回总部。",
+		id = 419031028
+	},
+	[419031029] = {
+		speaker = "",
+		prefab_name = "",
+		content = "托特看了眼亚莉莎，只见她像体操运动员般优雅地翻到后座，拿起了神机。",
+		id = 419031029
+	},
+	[419031030] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "把我在这里放下来吧。荒神就在眼前，唯独我是不能够撤退的。",
+		id = 419031030
+	},
+	[419031031] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "指挥车，这不符合亚莉莎小姐的判断和意愿，我申请带亚莉莎小姐去目标地点支援。",
+		id = 419031031
+	},
+	[419031032] = {
+		speaker = "",
+		prefab_name = "",
+		content = "频道陷入安静，托特对亚莉莎摇摇头示意再给她一点时间。又过了几秒，指挥车终于接入频道。",
+		id = 419031032
+	},
+	[419031033] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "申请通过，注意安全。",
+		id = 419031033
+	},
+	[419031034] = {
+		speaker = "科尔盖士官",
+		prefab_name = "2079ui_story",
+		content = "车队全体朝南转向，走近路，速战速决。",
+		id = 419031034
+	},
+	[419031035] = {
+		speaker = "",
+		prefab_name = "",
+		content = "看到车队整齐划一地转向，全速开上原野，亚莉莎抱着大剑，暗暗点头。",
+		id = 419031035
+	},
+	[419031036] = {
+		speaker = "",
+		prefab_name = "",
+		content = "终端上的战术地图实时闪烁着，随着距离拉近，那些象征着荒神的点位也越发醒目。",
+		id = 419031036
+	},
+	[419031037] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "那个是……快避开！",
+		id = 419031037
+	},
+	[419031038] = {
+		speaker = "",
+		prefab_name = "",
+		content = "几乎和她的声音同时，小车在草野上漂出一个极限的弧形，堪堪刹住车身。",
+		id = 419031038
+	},
+	[419031039] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎和托特同时跳出车门，在刚刚的路线上，草地被风刃犁出一条深可见土的沟壑。",
+		id = 419031039
+	},
+	[419031040] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "这些怪物还会使用异能？",
+		id = 419031040
+	},
+	[419031041] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "这就是我说的「变异」，一些较为强大的荒神会有不同的特殊能力。\n不要因为隔得远就放松警惕。",
+		id = 419031041
+	},
+	[419031042] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "现在袭击我们的这只，叫做「金刚」。\n它的速度迅猛，力量强大，要小心它的近距离攻击。",
+		id = 419031042
+	},
+	[419031043] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "报告里的突出个体吗……有把握解决吗？",
+		id = 419031043
+	},
+	[419031044] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "不算太难，但是其他小型荒神，你们最好帮忙牵制一下。",
+		id = 419031044
+	},
+	[419031045] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一枚飞弹离膛，迎着爆炸的尘烟，亚莉莎化枪为刃，破风而去。",
+		id = 419031045
+	},
+	[419032001] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "刚才你取走的东西，就是荒神的核心吗？",
+		id = 419032001
+	},
+	[419032002] = {
+		speaker = "",
+		prefab_name = "",
+		content = "看着从神机中伸出的巨口从荒神的躯体中扯出一块凝珠状的东西，托特饶有兴致地走到亚莉莎身边。",
+		id = 419032002
+	},
+	[419032003] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "芬里尔制作神机要用到核心，枪型神机的弹药也需要吞噬神谕细胞来补充，所以神机使都有回收核心的习惯。",
+		id = 419032003
+	},
+	[419032004] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "因为看上去就像把荒神吃掉了一样，所以我们也被称为「噬神者」。还挺形象的，不是吗？",
+		id = 419032004
+	},
+	[419032005] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "你刚才说，光有神机，没有神机使就没用。成为神机使很困难吗？",
+		id = 419032005
+	},
+	[419032006] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "与其说是困难……",
+		id = 419032006
+	},
+	[419032007] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎低头看着自己的腕轮，捏了一下拳头，摇了摇头。",
+		id = 419032007
+	},
+	[419032008] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "我只知道和基因有关，而且条件很苛刻。",
+		id = 419032008
+	},
+	[419032009] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎又沉默了一会儿，走到方才激战的中心，蹲下身轻轻撮起一捧荒土。",
+		id = 419032009
+	},
+	[419032010] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "托特，如果是你，你觉得自己需要多长时间来判断自己来到了一个不同的世界？",
+		id = 419032010
+	},
+	[419032011] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "时空穿越这种事毕竟闻所未闻，以我而言，或许不会立刻做出判断。",
+		id = 419032011
+	},
+	[419032012] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "不过我对自己世界的文化还算了解，大概在接触当地的人或文字之后，差不多就能够知道了。",
+		id = 419032012
+	},
+	[419032013] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "我几乎在睁眼的瞬间就意识到，我或许已经离开原本的世界了。",
+		id = 419032013
+	},
+	[419032014] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "因为穿越的过程很明显？",
+		id = 419032014
+	},
+	[419032015] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "不，因为在我生活的世界……",
+		id = 419032015
+	},
+	[419032016] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎站起身来，把那一小撮泥土在手心一点点碾碎，然后摊开手掌，认真地看着。",
+		id = 419032016
+	},
+	[419032017] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "草原、树林、野外的飞鸟和自由奔跑的动物，早就是只存在于历史记载的事情了。",
+		id = 419032017
+	},
+	[419032018] = {
+		speaker = "",
+		prefab_name = "",
+		content = "忽然间平地风起，亚莉莎手中的沙土被一点点吹向远方的草野，有几粒蹭过了托特的面颊。",
+		id = 419032018
+	},
+	[419032019] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "我们神机使的职责，并不是控制荒神不要干扰正常的生活，而是在已经被荒神占领的世界求生。",
+		id = 419032019
+	},
+	[419032020] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "这才是我一发现荒神就立刻寻找你们的原因，我知道荒神能把世界变成什么样子。如果我所掌握的知识能帮到你们的话——",
+		id = 419032020
+	},
+	[419032021] = {
+		speaker = "",
+		prefab_name = "",
+		content = "托特感到手中的容器有些震颤，抬起手来，发现只放了一点组织的试管竟然快被占满了，管壁微微颤动着。",
+		id = 419032021
+	},
+	[419032022] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "最好及时更换不同的器皿，不知道什么时候它们就可能会吞噬掉现在的容器。",
+		id = 419032022
+	},
+	[419032023] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "如果你们要作为样本带回去的话，一定要以最慎重的方式保存。",
+		id = 419032023
+	},
+	[419032024] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "你先前说消灭荒神并不代表解决问题，我本以为你是说荒神的数量不止探测到的这点……",
+		id = 419032024
+	},
+	[419032025] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "神谕细胞仍然是像谜一样的存在。\n我们世界的研究者们也没有完全破解。",
+		id = 419032025
+	},
+	[419032026] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "特别是关于如何消灭神谕细胞，可以说目前是毫无线索。",
+		id = 419032026
+	},
+	[419032027] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "这也就意味着，消灭荒神也同样如此。",
+		id = 419032027
+	},
+	[419032028] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "这下就算是科研中心那群人，大概也有得头疼了吧。",
+		id = 419032028
+	},
+	[419032029] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "你的打算呢，亚莉莎小姐，警告已经送达，你接下来准备做什么？",
+		id = 419032029
+	},
+	[419032030] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "虽然这样说有些自私，但眼下我们很需要一位神机使的力量。",
+		id = 419032030
+	},
+	[419032031] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "我既然来找你们，就是怀着想要帮上忙的心情的。",
+		id = 419032031
+	},
+	[419032032] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "我没有勉强的意思，毕竟这一切对你来说不过是意外，你肯特意送来警示已经很可贵了。",
+		id = 419032032
+	},
+	[419032033] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "如果接下来你只想寻找回家的方法，科尔盖也会为你提供支持。",
+		id = 419032033
+	},
+	[419032034] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "我提出帮忙，完全是出于自己的意愿。虽然来到这里是意外，不过既然有荒神出现，我就不会置之不理。",
+		id = 419032034
+	},
+	[419032035] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "就像我刚才说过的，我们的世界曾经因为荒神差点走向毁灭……但即便如此我们依旧没有放弃生存。",
+		id = 419032035
+	},
+	[419032036] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "虽然我作为神机使能够讨伐荒神，但我一个人的力量终究有限。迄今为止，我被太多人所拯救过。",
+		id = 419032036
+	},
+	[419032037] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "大家都在为了帮助别人尽自己所能。我也想成为那样的人。",
+		id = 419032037
+	},
+	[419032038] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "哪怕是为了这里美丽的景色和那些有一面之缘的人，我也愿意尽一份力。",
+		id = 419032038
+	},
+	[419041001] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "难得有一天假期，怎么又遇上紧急任务……",
+		id = 419041001
+	},
+	[419041002] = {
+		speaker = "",
+		prefab_name = "",
+		content = "薇儿手里拿着没吃完的甜品，一边说着一边还不甘心地频频往街道回望。",
+		id = 419041002
+	},
+	[419041003] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "「荒神」。如果真像托特说的那样，连修正者都没法杀死，那确实有必要去一趟科尔盖，见一见那位「神机使」。",
+		id = 419041003
+	},
+	[419041004] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "往好处想，攒够假期拼个长假，可以一起出去好好放松一段时间。",
+		id = 419041004
+	},
+	[419041005] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "这是你说的，那你今天开始要记得攒假期，别随便用掉啦。",
+		id = 419041005
+	},
+	[419041006] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "哎，你在看什么呢？托特前辈那边有新的消息吗？",
+		id = 419041006
+	},
+	[419041007] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我点点头，把终端递给薇儿，上面是一份录音转成的文字记录。",
+		id = 419041007
+	},
+	[419041008] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "……另一个世界？",
+		id = 419041008
+	},
+	[419041009] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "能发给我的资料，不说百分百真实，至少是科尔盖没法证伪的……",
+		id = 419041009
+	},
+	[419041010] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "好了，表情太兴奋了。穿越题材的小说是好看，可对我们就未必是好事了。",
+		id = 419041010
+	},
+	[419041011] = {
+		speaker = "",
+		prefab_name = "",
+		content = "正想把终端拿回来，我们身后突然传来一阵骚动，而且声音似乎越离越近。",
+		id = 419041011
+	},
+	[419041012] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "怎么突然聚了那么多人……管理员！",
+		id = 419041012
+	},
+	[419041013] = {
+		speaker = "",
+		prefab_name = "",
+		content = "本来不想理会，但是薇儿在我肩上轻轻按了一下，我不由得也回过头去。",
+		id = 419041013
+	},
+	[419041014] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那个人是……",
+		id = 419041014
+	},
+	[419041015] = {
+		speaker = "",
+		prefab_name = "",
+		content = "视线的尽头，一位银白色头发的少女正在被围观，还有人拍照。",
+		id = 419041015
+	},
+	[419041016] = {
+		speaker = "",
+		prefab_name = "",
+		content = "还有另一个女孩正离得挺近地对她说着什么。尽管她坐姿十分端正，还是在闪光和言语的包围中露出一丝局促。",
+		id = 419041016
+	},
+	[419041017] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "她手里拿的武器，是不是和资料里说的「神机」有点像？那个大手环也是……",
+		id = 419041017
+	},
+	[419041018] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我和薇儿对视一眼，十分确定眼前发生了什么，急忙朝银发少女跑去，一边给托特发了一条消息。",
+		id = 419041018
+	},
+	[419041019] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "——「核心城疑似出现第二位神机使，尝试接触。」",
+		id = 419041019
+	},
+	[419041020] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我和薇儿的意图实在太明显。少女似乎也发现了我们，视线跟我们在空中碰撞。",
+		id = 419041020
+	},
+	[419041021] = {
+		speaker = "",
+		prefab_name = "",
+		content = "少女手中的武器动了一下，围在她身边的所有人都没有反应，只有薇儿如临大敌般地停下了脚步，右手忍不住做出拔剑的姿势。",
+		id = 419041021
+	},
+	[419041022] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "别急，没有敌意。",
+		id = 419041022
+	},
+	[419041023] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我急忙按住薇儿的手，再看向那位银发少女。她似乎对我们的反应很满意，点了点头，礼貌地分开围观的人群，朝我们走来。",
+		id = 419041023
+	},
+	[419041024] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "你们好，我是芬里尔极致化技术开发局「BLOOD」部队的神机使，雪儿·阿朗松。",
+		id = 419041024
+	},
+	[419041025] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "深空之眼，#{nickname}#、薇儿丹蒂……进一步说明之前，我想知道你为什么会找上我们，雪儿小姐。",
+		id = 419041025
+	},
+	[419041026] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "是因为……你的腰侧有专门为携带枪械留下的空间。她，虽然看上去很放松，但是……我可以看出来，是随时可以做出战斗反应的状态。",
+		id = 419041026
+	},
+	[419041027] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "这里的人，普遍对武器感到陌生，所以你们……一定拥有特殊的身份。但是，你们的着装并不正式，所以我猜……应该是某个隐秘组织的战斗人员。",
+		id = 419041027
+	},
+	[419041028] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "根据我的经验……这类组织一般掌握着比较充足的信息，所以，我想……也是最有可能为我提供帮助的人。",
+		id = 419041028
+	},
+	[419041029] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "我还没能完全理解现在的处境。初步推断的话，是来到了一个与我认知中的「世界」不同的地方……",
+		id = 419041029
+	},
+	[419041030] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "到这里为止，你们能理解我在说什么吗？",
+		id = 419041030
+	},
+	[419041031] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "好厉害……",
+		id = 419041031
+	},
+	[419041032] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "何止是理解，感觉我们已经可以直入正题了。",
+		id = 419041032
+	},
+	[419041033] = {
+		speaker = "",
+		prefab_name = "",
+		content = "看着眼前面无表情的少女，我心里不免有些感叹。这种判断力绝对是在经年累月的严酷训练和高压环境下磨练出来的，即便在第九部门也很少能找到这样敏锐的人。",
+		id = 419041033
+	},
+	[419041034] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "大街上不方便聊天，我们换个地方怎么样？",
+		id = 419041034
+	},
+	[419041035] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "有什么为难的地方吗？",
+		id = 419041035
+	},
+	[419041036] = {
+		speaker = "",
+		prefab_name = "",
+		content = "从我们坐下开始，雪儿已经看了菜单许久，但迟迟没有开口。",
+		id = 419041036
+	},
+	[419041037] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "唔……图片上的东西，很多都不太熟悉，而且这种用餐方式也……",
+		id = 419041037
+	},
+	[419041038] = {
+		speaker = "",
+		prefab_name = "",
+		content = "从刚刚开始一直冷静淡然的少女却在此时露出了稍微有些局促的神色，似乎对我们当下正在做的事情相当陌生。",
+		id = 419041038
+	},
+	[419041039] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不熟悉？你原本生活的地方到底是……看来我们需要额外了解的事情还有很多。",
+		id = 419041039
+	},
+	[419041040] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那薇儿来点吧，我的也拜托你了。",
+		id = 419041040
+	},
+	[419041041] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "为什么是我？",
+		id = 419041041
+	},
+	[419041042] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "美食这种事，还是你比较在行嘛。",
+		id = 419041042
+	},
+	[419041043] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "其实就是懒得选吧，你就是爱在这种小事上犯懒。",
+		id = 419041043
+	},
+	[419041044] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "雪儿有什么忌口吗？",
+		id = 419041044
+	},
+	[419041045] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "忌口……没有，我什么都可以吃，谢谢。",
+		id = 419041045
+	},
+	[419041046] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "是吗，真少见，那我们点一样的吧。",
+		id = 419041046
+	},
+	[419041047] = {
+		speaker = "",
+		prefab_name = "",
+		content = "进店以来我就仔细观察着雪儿的举动，她虽然面色如常，但还是有一些不经意的动作暗示着她的心理活动。",
+		id = 419041047
+	},
+	[419041048] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "这里是你们……「深空之眼」的据点吗？",
+		id = 419041048
+	},
+	[419041049] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "只是一家餐厅而已啦，不过确实是深空之眼投资的产业没错。",
+		id = 419041049
+	},
+	[419041050] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不用紧张。就当是前菜，先给你看一样东西。",
+		id = 419041050
+	},
+	[419041051] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我从与托特的聊天记录中打开一段视频，放到雪儿面前，上面正是亚莉莎和荒神战斗的情景。",
+		id = 419041051
+	},
+	[419041052] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "……这里还有别的神机使？",
+		id = 419041052
+	},
+	[419041053] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "她说她叫亚莉莎，你不认识她吗？",
+		id = 419041053
+	},
+	[419041054] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "亚莉莎……或许是我认识的人。她现在在哪里？",
+		id = 419041054
+	},
+	[419041055] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "跟你类似，今天另一个和我们有合作的组织「科尔盖」跟她接触，现在正在一起来这座城市的路上。",
+		id = 419041055
+	},
+	[419041056] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "难怪你们会注意到我。\n是因为有她的出现吗……",
+		id = 419041056
+	},
+	[419041057] = {
+		speaker = "",
+		prefab_name = "",
+		content = "参照托特与亚莉莎对话记录中透露的信息量，我简单对雪儿说明了一下盖亚的状况。她全程只是平静地听着，对现状的理解力与接受力相当高。",
+		id = 419041057
+	},
+	[419041058] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那么，基本情况就是这样了。",
+		id = 419041058
+	},
+	[419041059] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "数字世界……\n确实无法轻易相信……",
+		id = 419041059
+	},
+	[419041060] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "光听我说可能有点难理解，有机会的话我可以带你四处看看。但眼下还有更紧急的问题要解决。",
+		id = 419041060
+	},
+	[419041061] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "可以说说你的经历吗？是怎么过来的，来到这里以后又做了什么？",
+		id = 419041061
+	},
+	[419041062] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "我吗……",
+		id = 419041062
+	},
+	[419041063] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "我当时正在执行常规的实训任务，去外面讨伐几只荒神。",
+		id = 419041063
+	},
+	[419041064] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "过程中有一只荒神逃走，我沿着踪迹追上去，但是在半途突然眼前一黑。",
+		id = 419041064
+	},
+	[419041065] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "之后的感觉很难描述，我那时进入一种无法自控的半醒状态，也没有办法记录生命体征。",
+		id = 419041065
+	},
+	[419041066] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "一定要说的话，就像是溺水和失重同时发生那样，没过多久我就失去了知觉。",
+		id = 419041066
+	},
+	[419041067] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "等再次有意识的时候……",
+		id = 419041067
+	},
+	[419041068] = {
+		speaker = "",
+		prefab_name = "",
+		content = "阳光在高楼的玻璃幕墙之间跳跃着，本就明朗的光线在这样的反复折射中变得过分耀眼。",
+		id = 419041068
+	},
+	[419041069] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "……好晃眼。",
+		id = 419041069
+	},
+	[419041070] = {
+		speaker = "",
+		prefab_name = "",
+		content = "雪儿下意识地抬起手在眼前挡了一下，意识这才逐渐回笼。",
+		id = 419041070
+	},
+	[419041071] = {
+		speaker = "",
+		prefab_name = "",
+		content = "随着意识涌来的还有声音，从未听过的鼓噪、嘈杂的市声如海潮般击打着耳膜。",
+		id = 419041071
+	},
+	[419041072] = {
+		speaker = "",
+		prefab_name = "",
+		content = "尚感沉重的脑子有些难以接受，雪儿轻轻按了按额角，这才把视线扫向身前。",
+		id = 419041072
+	},
+	[419041073] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "这是，实景训练？可是明明已经到墙外了……而且这种模拟环境，此前从没见到过。",
+		id = 419041073
+	},
+	[419041074] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "老师，你到底在说什么……而且我刚才还在任务中……",
+		id = 419041074
+	},
+	[419041075] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "首先得厘清一下状况……",
+		id = 419041075
+	},
+	[419041076] = {
+		speaker = "",
+		prefab_name = "",
+		content = "通讯的另一头毫无声息，甚至不是忙音或杂音，而是彻底的寂静。",
+		id = 419041076
+	},
+	[419041077] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "失联？现在似乎在信号外……",
+		id = 419041077
+	},
+	[419041078] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "仔细看的话，有点像是记载中灾变前的世界样貌，但是以此进行模拟训练应该没有意义。",
+		id = 419041078
+	},
+	[419041079] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "况且这份违和感……",
+		id = 419041079
+	},
+	[419041080] = {
+		speaker = "大胆的少女",
+		prefab_name = "",
+		content = "那个，你好？",
+		id = 419041080
+	},
+	[419041081] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "……欸，叫我吗？",
+		id = 419041081
+	},
+	[419041082] = {
+		speaker = "大胆的少女",
+		prefab_name = "",
+		content = "是啊，你在这里站好久了，不止我一个人有点好奇呢。",
+		id = 419041082
+	},
+	[419041083] = {
+		speaker = "",
+		prefab_name = "",
+		content = "雪儿这才发现自己不知何时被远远地围了起来，人群中投来不少好奇的目光。",
+		id = 419041083
+	},
+	[419041084] = {
+		speaker = "大胆的少女",
+		prefab_name = "",
+		content = "主要是你拿的道具实在是太显眼了。",
+		id = 419041084
+	},
+	[419041085] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "道具？",
+		id = 419041085
+	},
+	[419041086] = {
+		speaker = "大胆的少女",
+		prefab_name = "",
+		content = "就是你手里这个呀，质感像真的一样。",
+		id = 419041086
+	},
+	[419041087] = {
+		speaker = "大胆的少女",
+		prefab_name = "",
+		content = "没听说今天有什么活动呢，难道说只是你自己的爱好。",
+		id = 419041087
+	},
+	[419041088] = {
+		speaker = "大胆的少女",
+		prefab_name = "",
+		content = "近看更逼真了……好厉害的工艺，这是你自己做的吗？",
+		id = 419041088
+	},
+	[419041089] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "抱歉，我现在有些混乱，最好还是先……",
+		id = 419041089
+	},
+	[419041090] = {
+		speaker = "大胆的少女",
+		prefab_name = "",
+		content = "啊不好意思，突然搭话你一定觉得很冒昧吧，只是我对制作这些东西很有兴趣，实在忍不住。",
+		id = 419041090
+	},
+	[419041091] = {
+		speaker = "大胆的少女",
+		prefab_name = "",
+		content = "可以至少告诉我这是用的什么材质吗？",
+		id = 419041091
+	},
+	[419041092] = {
+		speaker = "",
+		prefab_name = "",
+		content = "说着少女竟然想要伸手摸摸神机，雪儿吃了一惊，向后退了一步。",
+		id = 419041092
+	},
+	[419041093] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "不可以碰神机！\n……失礼了，我还是先告辞……那是……",
+		id = 419041093
+	},
+	[419041094] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这么说你到盖亚还没过多久，和亚莉莎不是同时进来的吗？",
+		id = 419041094
+	},
+	[419041095] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我急忙给休和托特发去消息，让她们留意城里的情况。毕竟亚莉莎和荒神一同出现在东部平原，不排除有荒神随着雪儿一同出现在核心城的可能。",
+		id = 419041095
+	},
+	[419041096] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "你们刚才说的「视骸」，和荒神是不同的东西吗？",
+		id = 419041096
+	},
+	[419041097] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "就科尔盖提供的分析报告来看，不是。虽然一个由神谕细胞构成，一个由骸能构成，听上去有些相似……",
+		id = 419041097
+	},
+	[419041098] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "为什么忽然问起这个？",
+		id = 419041098
+	},
+	[419041099] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "如果有相近的地方，也许我可以在这里找到消灭荒神的办法，带回芬里尔。",
+		id = 419041099
+	},
+	[419041100] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你知道怎么回去吗？",
+		id = 419041100
+	},
+	[419041101] = {
+		speaker = "",
+		prefab_name = "",
+		content = "雪儿摇摇头，但态度看上去没什么变化。",
+		id = 419041101
+	},
+	[419041102] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "我会想办法，我不能就这么离开「BLOOD」。",
+		id = 419041102
+	},
+	[419041103] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "在找到回去的办法以前，我愿意跟你们合作。既然是要对付荒神，至少我有能派上用场的地方。",
+		id = 419041103
+	},
+	[419041104] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "谢谢，深空之眼会为你提供任何能力范围内的帮助。",
+		id = 419041104
+	},
+	[419041105] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "那是不是应该跳过用餐的环节……",
+		id = 419041105
+	},
+	[419041106] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……",
+		id = 419041106
+	},
+	[419041107] = {
+		speaker = "",
+		prefab_name = "",
+		content = "侍者正好端上来两盘主菜，色香俱全的食物与精致的摆盘让雪儿忍不住微微睁大了眼睛。",
+		id = 419041107
+	},
+	[419041108] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "这……是不是太……",
+		id = 419041108
+	},
+	[419041109] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "按接待客人的标准，这样的规格已经很低了。",
+		id = 419041109
+	},
+	[419041110] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "就当是在自己家里，随便吃就行啦。接下来还要并肩战斗呢，正好多聊聊天，互相熟悉一下。",
+		id = 419041110
+	},
+	[419041111] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "不知道你们那里是不是这样，反正在艾因索菲，一起吃顿饭就算朋友了嘛。",
+		id = 419041111
+	},
+	[419041112] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "朋友吗……",
+		id = 419041112
+	},
+	[419041113] = {
+		speaker = "",
+		prefab_name = "",
+		content = "雪儿愣愣看着薇儿帮她切了一大块肉，直到肉被放到碗里才回过神，小声说了句「谢谢」，然后用与她军人做派极不相符的文静方式小口吃了起来。",
+		id = 419041113
+	},
+	[419051001] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "咦？难得见到大国主等在门外啊。",
+		id = 419051001
+	},
+	[419051002] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "休连发了三条信息告诉我很重要，为了下个季度的经费着想，还是稍微配合她一点吧。",
+		id = 419051002
+	},
+	[419051003] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "雪儿，这位是隐科组的研究员，大国主；这是……",
+		id = 419051003
+	},
+	[419051004] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "那个穿越者对吧，我已经大概了解前因后果了。",
+		id = 419051004
+	},
+	[419051005] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "带上你的神机，先跟我来吧。",
+		id = 419051005
+	},
+	[419051006] = {
+		speaker = "",
+		prefab_name = "",
+		content = "雪儿却没有立刻移动脚步，而是微张着嘴，眼神在我们几个之间游移了几下。",
+		id = 419051006
+	},
+	[419051007] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "小，小孩子？",
+		id = 419051007
+	},
+	[419051008] = {
+		speaker = "",
+		prefab_name = "",
+		content = "眼看大国主脸色骤变，我赶紧救场。",
+		id = 419051008
+	},
+	[419051009] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不不不，忘了和你说明了，修正者觉醒以后身体就不会成长了。",
+		id = 419051009
+	},
+	[419051010] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "大国主虽然看起来年纪小，但其实已经是非常资深的科学家了。",
+		id = 419051010
+	},
+	[419051011] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "我并没有在质疑大国主阁下的专业度……！\n对不起，失态了……",
+		id = 419051011
+	},
+	[419051012] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "没关系，可以理解。对于不知情的人来说，的确有些冲击。",
+		id = 419051012
+	},
+	[419051013] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那就别嘟着嘴了，大国主。雪儿对盖亚的情况还不熟悉，你多帮忙介绍介绍。",
+		id = 419051013
+	},
+	[419051014] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "另外雪儿你要是不知道该去哪儿，可以来我办公室坐坐，楼层和门牌是……",
+		id = 419051014
+	},
+	[419051015] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "笨蛋管理员怎么想的？大楼这么绕，第一次来的人能找到位置就有鬼了。",
+		id = 419051015
+	},
+	[419051016] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "进来吧，先做个身体检查。完事以后我派台智械带你过去。",
+		id = 419051016
+	},
+	[419051017] = {
+		speaker = "",
+		prefab_name = "",
+		content = "雪儿点点头，跟大国主进入了实验室。薇儿拉了拉我的袖子，给我看了一则通知。",
+		id = 419051017
+	},
+	[419051018] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "作战科要求集合，我得去一趟。",
+		id = 419051018
+	},
+	[419051019] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "去吧，但是有什么情况提前跟我说一声，荒神的事情也等着用人。",
+		id = 419051019
+	},
+	[419051020] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "如果两边冲突严重的话，我帮你把作战科的活推掉。",
+		id = 419051020
+	},
+	[419051021] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "没问题，那我晚点也到办公室来找你吧。",
+		id = 419051021
+	},
+	[419051022] = {
+		speaker = "",
+		prefab_name = "",
+		content = "回办公室整理了一下现在的情况。科尔盖那边又传过来一些新的情报，托特和亚莉莎已经到总部了。",
+		id = 419051022
+	},
+	[419051023] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我则向科尔盖说明了雪儿的状况以及暂时将她留在深空之眼的判断，才刚收到同意的答复，办公室房门就被人推开了。",
+		id = 419051023
+	},
+	[419051024] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……这么巧，怎么一块儿过来了？",
+		id = 419051024
+	},
+	[419051025] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "抱歉，是我请求薇儿丹蒂阁下带我来找你的。",
+		id = 419051025
+	},
+	[419051026] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "哦好，那先坐吧。薇儿，你怎么换上作战服了，要出任务吗？",
+		id = 419051026
+	},
+	[419051027] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "今天值班的外勤队伍忽然被调去城郊排查荒神了。刚才情报科探查到城里出现了一些骸能信号，就临时安排我去处理一下。",
+		id = 419051027
+	},
+	[419051028] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我沉默了一下，没好意思告诉她排查荒神的任务多半是因为我发给休和科尔盖的提醒。",
+		id = 419051028
+	},
+	[419051029] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "……管理员，雪儿说她想跟我一起去。",
+		id = 419051029
+	},
+	[419051030] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "哦……啊？",
+		id = 419051030
+	},
+	[419051031] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "等会……雪儿，「视骸」的概念我应该已经说清楚了吧？你不是修正者，去了也没用啊。",
+		id = 419051031
+	},
+	[419051032] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "神机使和修正者一样，体质比普通人强很多。既然科尔盖的修正者可以协助亚莉莎讨伐荒神，我想我也可以帮助你们对付视骸。",
+		id = 419051032
+	},
+	[419051033] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "而且，大国主阁下给了我这个。",
+		id = 419051033
+	},
+	[419051034] = {
+		speaker = "",
+		prefab_name = "",
+		content = "雪儿取出一枚弹药放到我的办公桌上。我认得那是什么东西，神情变得古怪起来。",
+		id = 419051034
+	},
+	[419051035] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "神能子弹？",
+		id = 419051035
+	},
+	[419051036] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "这里的实验设备很先进，大国主阁下，她的工作效率也很高，很快就改造出了我的神机能够击发的子弹……",
+		id = 419051036
+	},
+	[419051037] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "大国主这家伙，玩心上来了是吧……明显还有更重要的事情要做啊。",
+		id = 419051037
+	},
+	[419051038] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "如果你指的是对神机和神机使的研究……大国主阁下说，她需要的数据都已经采集到了，不需要我留在隐科组。",
+		id = 419051038
+	},
+	[419051039] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "时空穿越的事同样没有头绪……她说，她有几个猜想，但现在没时间验证。",
+		id = 419051039
+	},
+	[419051040] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "这些子弹也是我拜托大国主阁下为我制作的，请你们，不要责怪大国主阁下……",
+		id = 419051040
+	},
+	[419051041] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "好吧，倒也不是真的怪她……你为什么会对视骸的事感兴趣？",
+		id = 419051041
+	},
+	[419051042] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "因为这个世界——\n是那么美丽。",
+		id = 419051042
+	},
+	[419051043] = {
+		speaker = "",
+		prefab_name = "",
+		content = "注意到我背后的落地窗，雪儿走近了些，入神地望着窗外的半座核心城以及更远处的山川海洋。",
+		id = 419051043
+	},
+	[419051044] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "这个世界，让我想起了书上说的，荒神出现以前的世界……甚至看上去比那更好。",
+		id = 419051044
+	},
+	[419051045] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "街上的人们都很放松，城市比我见过的所有废墟都要大好几倍，还可以安心地坐下来，品尝各种各样的食物。",
+		id = 419051045
+	},
+	[419051046] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "尽管这些在我的世界都很陌生，但大家都从未放弃——",
+		id = 419051046
+	},
+	[419051047] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "所以，我不希望眼前这些美好的东西被荒神破坏。\n哪怕只有一点微薄的力量，也请让我助你们一臂之力。",
+		id = 419051047
+	},
+	[419051048] = {
+		speaker = "",
+		prefab_name = "",
+		content = "从玻璃反光中注意到我和薇儿正看着她，雪儿像是不太习惯一次性说出这么多话似的低了低头。",
+		id = 419051048
+	},
+	[419051049] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "管理员……",
+		id = 419051049
+	},
+	[419051050] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我明白了。",
+		id = 419051050
+	},
+	[419051051] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我对薇儿点点头，示意她放心，然后站起身，朝雪儿做出握手的邀请。",
+		id = 419051051
+	},
+	[419051052] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "这么说，您……",
+		id = 419051052
+	},
+	[419051053] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我尊重每个人选择战斗的信念，只要你不是在勉强自己，我没有拒绝的立场。",
+		id = 419051053
+	},
+	[419051054] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "欢迎入队，雪儿。",
+		id = 419051054
+	},
+	[419051055] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "到了，骸能信号就在这条街区。",
+		id = 419051055
+	},
+	[419051056] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "这一带好空旷，和这座城市的其他地方完全不一样。",
+		id = 419051056
+	},
+	[419051057] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "因为提前封锁过，所有人都被疏散走了。",
+		id = 419051057
+	},
+	[419051058] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "城市里就是这点麻烦，万一不小心被民众看到，善后也是一项大工程。",
+		id = 419051058
+	},
+	[419051059] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "离信号源非常近了，我们分头搜寻吧，雪儿如果发现异常记得先告知我们。",
+		id = 419051059
+	},
+	[419051060] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "我会留心。",
+		id = 419051060
+	},
+	[419051061] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我们几人稍稍散开，但又维持着来得及互相支援的距离。",
+		id = 419051061
+	},
+	[419051062] = {
+		speaker = "",
+		prefab_name = "",
+		content = "雪儿转过一个拐角，一个身影闪进视野中，她正想呼叫薇儿，却发现对面是个人类。",
+		id = 419051062
+	},
+	[419051063] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "落单的人？这里很危险，还请尽快离开。",
+		id = 419051063
+	},
+	[419051064] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "……没听清吗？你好，这一带已经封锁了，为了安全考虑……",
+		id = 419051064
+	},
+	[419051065] = {
+		speaker = "",
+		prefab_name = "",
+		content = "雪儿一步步向那个人接近，我追着信号源过来，正好看到这一幕。",
+		id = 419051065
+	},
+	[419051066] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "骸能反应，别靠近他！",
+		id = 419051066
+	},
+	[419051067] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "骸能？那是什么——",
+		id = 419051067
+	},
+	[419051068] = {
+		speaker = "",
+		prefab_name = "",
+		content = "话音落下，那个「人」已经扑向了雪儿，我当即扣动扳机，将它当空击落。",
+		id = 419051068
+	},
+	[419051069] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "薇儿，发现目标，朝雪儿会合！",
+		id = 419051069
+	},
+	[419051070] = {
+		speaker = "",
+		prefab_name = "",
+		content = "更多的视骸开始在周围显现，雪儿举起神机，另一道暗红色的身影如旋风般卷入场内。",
+		id = 419051070
+	},
+	[419052001] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "薇儿，背后！",
+		id = 419052001
+	},
+	[419052002] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "我来掩护。",
+		id = 419052002
+	},
+	[419052003] = {
+		speaker = "",
+		prefab_name = "",
+		content = "青色的短剑挟着风声先一步来至薇儿身后，将意图偷袭的视骸格挡开去，薇儿及时调整好姿态，将这只视骸击杀。",
+		id = 419052003
+	},
+	[419052004] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "适应得很快啊，雪儿，已经找到和我配合的节奏了嘛。",
+		id = 419052004
+	},
+	[419052005] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "是我主动提出跟过来，如果没能帮上忙，就太对不起你们的信任了。",
+		id = 419052005
+	},
+	[419052006] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "千万别这么想。多亏了你，今天的任务比想象中顺利多了。",
+		id = 419052006
+	},
+	[419052007] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "那个……我还有个问题。",
+		id = 419052007
+	},
+	[419052008] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "怎么了？",
+		id = 419052008
+	},
+	[419052009] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "#{nickname}#不是修正者，为什么也要一起参与行动？",
+		id = 419052009
+	},
+	[419052010] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "公频开着哦。",
+		id = 419052010
+	},
+	[419052011] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "啊，我没有别的意思，你的判断和指挥都非常准确，我只是感觉这样太危险了。",
+		id = 419052011
+	},
+	[419052012] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "巡逻任务会涉及不少需要和人打交道的场合，我出面相对比较合适。而且在前线才能掌握第一手动态，避免指挥失当。",
+		id = 419052012
+	},
+	[419052013] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "要说危险，确实有一点吧。所以……",
+		id = 419052013
+	},
+	[419052014] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我可是每天都在坚持锻炼体能和射击啊！",
+		id = 419052014
+	},
+	[419052015] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "呃，任务还没结束，就不要搞怪了啦，管理员……",
+		id = 419052015
+	},
+	[419052016] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "这就是最后一只了吗？",
+		id = 419052016
+	},
+	[419052017] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "嗯，没有残余的骸能反应了，解除警戒吧。",
+		id = 419052017
+	},
+	[419052018] = {
+		speaker = "",
+		prefab_name = "",
+		content = "薇儿吐了口气，收起权钥。雪儿则还是警戒了好一会儿才慢慢放松下来。",
+		id = 419052018
+	},
+	[419052019] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "刚才那些，被附身的人……",
+		id = 419052019
+	},
+	[419052020] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "很遗憾，现在还没有能救下他们的办法，这是唯一的选择。",
+		id = 419052020
+	},
+	[419052021] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "……这样的事件，发生得很频繁吗？",
+		id = 419052021
+	},
+	[419052022] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "说不上频繁，但更高烈度的视骸活动就不是这么简单能控制住的了。",
+		id = 419052022
+	},
+	[419052023] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "深空之眼、科尔盖，还有各个原质区的修正者组织，大家共同努力才维持住了表面上的和平。",
+		id = 419052023
+	},
+	[419052024] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "就和你们想要消灭荒神一样，根除视骸是我们一直以来的愿望，可惜……看上去还有很长的路要走。",
+		id = 419052024
+	},
+	[419052025] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "……抱歉，之前是我对盖亚的想法太肤浅了。",
+		id = 419052025
+	},
+	[419052026] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "别这么想，是我没讲清楚。没办法，既不想危言耸听，又不想让你有眼见为实的机会。",
+		id = 419052026
+	},
+	[419052027] = {
+		speaker = "",
+		prefab_name = "",
+		content = "雪儿眼神中的失落和歉意看上去无比真诚，我一时间也不知道还能说些什么。",
+		id = 419052027
+	},
+	[419052028] = {
+		speaker = "",
+		prefab_name = "",
+		content = "毕竟对我来说，盖亚中的一切都已经是让我没有任何理由去回避的的现实了。我已经习惯了不去惋惜，而是专注于思考解决它们的办法。",
+		id = 419052028
+	},
+	[419052029] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我通知科尔盖来清理一下现场就可以回去了……嗯？",
+		id = 419052029
+	},
+	[419052030] = {
+		speaker = "",
+		prefab_name = "",
+		content = "打开终端时恰好看到托特的通讯，我示意薇儿和雪儿稍等。",
+		id = 419052030
+	},
+	[419052031] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "出什么事了吗？",
+		id = 419052031
+	},
+	[419052032] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "荒神蔓延的速度比预想中要快，再不扼制就要威胁到周边城镇了。我和亚莉莎要留在这边，总部的会面取消了。",
+		id = 419052032
+	},
+	[419052033] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "需要支援吗？",
+		id = 419052033
+	},
+	[419052034] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "难得问得这么主动。",
+		id = 419052034
+	},
+	[419052035] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这不是情况特殊嘛。按常理，决定要不要支援的肯定是你们，但现在对付荒神就两张牌。",
+		id = 419052035
+	},
+	[419052036] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "情况这么严峻，亏你还能笑出来。",
+		id = 419052036
+	},
+	[419052037] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "那位雪儿·阿朗松在你边上吗？要不问问她的意见？",
+		id = 419052037
+	},
+	[419052038] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我看了眼雪儿，她好像从我的只言片语中听出了我的意思，坚定地朝我点了点头。",
+		id = 419052038
+	},
+	[419052039] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "坐标发我，情报同步一份。",
+		id = 419052039
+	},
+	[419052040] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "尽快过来，我等你们。",
+		id = 419052040
+	},
+	[419061001] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "这块平原……是自然公园吧？怎么变成这样了？",
+		id = 419061001
+	},
+	[419061002] = {
+		speaker = "",
+		prefab_name = "",
+		content = "到达托特给定的坐标前，我们就在新闻上看到了平原附近的情况。科尔盖的警戒线包围了整片平原，平原上的两个小镇已经撤空。",
+		id = 419061002
+	},
+	[419061003] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "科尔盖给的战报上，有几只荒神都快冲进居民区了。幸好部队调集及时，配合亚莉莎把它们干掉了。",
+		id = 419061003
+	},
+	[419061004] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "但神谕细胞的生命能反应读数居高不下，唯一的好消息就是没有扩散出平原了。",
+		id = 419061004
+	},
+	[419061005] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "封锁线？能拦住荒神吗？",
+		id = 419061005
+	},
+	[419061006] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "科尔盖有不少黑科技，甚至有些权限方面的技术……数据世界的权限。",
+		id = 419061006
+	},
+	[419061007] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "可能没那么好理解吧，但用来构筑一些防御工事，短暂阻隔荒神，应该还是有办法的。",
+		id = 419061007
+	},
+	[419061008] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……希望能针对到神谕细胞的吞噬能力吧。",
+		id = 419061008
+	},
+	[419061009] = {
+		speaker = "",
+		prefab_name = "",
+		content = "随着车辆深入荒原，几人才知道原来村镇地区的破坏已经是竭力保护过的结果。",
+		id = 419061009
+	},
+	[419061010] = {
+		speaker = "",
+		prefab_name = "",
+		content = "广袤的平原几乎有变成白地的趋势，空气中弥漫着血腥气，但却没看见任何动物或人的遗骸。",
+		id = 419061010
+	},
+	[419061011] = {
+		speaker = "",
+		prefab_name = "",
+		content = "雪儿看着眼前不断后退的景象，微不可察地捏紧了指节。",
+		id = 419061011
+	},
+	[419061012] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "居然破坏到这种程度。",
+		id = 419061012
+	},
+	[419061013] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "神谕细胞连能量都能吞噬。在我生活的世界几乎已经没有活物了。\n照这样下去，这个世界也迟早会……",
+		id = 419061013
+	},
+	[419061014] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "有一件事，从之前清除那些视骸的时候我就有些在意。",
+		id = 419061014
+	},
+	[419061015] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "为什么不让普通民众知道这些怪物存在呢？",
+		id = 419061015
+	},
+	[419061016] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "这样他们不是能更好地保护自己吗，你们也会更方便。",
+		id = 419061016
+	},
+	[419061017] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这个解释起来就很复杂了……一方面，盖亚需要让文明在和平中发展下去，让民众知道太多危机可能会让盖亚出现问题。",
+		id = 419061017
+	},
+	[419061018] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "而且视骸之类的事，普通人就算知道也很难帮上忙，反倒是恐慌情绪可能造成更多的麻烦。",
+		id = 419061018
+	},
+	[419061019] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "所以，在事态发展到不得不公开的地步以前，由我们来解决问题就足够了。",
+		id = 419061019
+	},
+	[419061020] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "不止是视骸，绝大多数人连有我们这样一群人存在都不知道呢。",
+		id = 419061020
+	},
+	[419061021] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "我们的目标就是让他们永远不知道，一直平平淡淡地生活下去就好了。",
+		id = 419061021
+	},
+	[419061022] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "为了保护世界，付出了自己的全部吗……",
+		id = 419061022
+	},
+	[419061023] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "不用说得那么正式啦，说实话，我很多时候也只是凭着本能行动而已。",
+		id = 419061023
+	},
+	[419061024] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "无论如何，你们都为保护这个世界付出过很多。悉心保护的地方却被荒神入侵，一定很难接受。",
+		id = 419061024
+	},
+	[419061025] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "处理不同的危机是我们职责，未知的灾害也不是没有经历过，更何况这次还有你们帮忙呢。",
+		id = 419061025
+	},
+	[419061026] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "……嗯。\n就算是为了你们所珍视的这个世界，我也会尽力的。",
+		id = 419061026
+	},
+	[419061027] = {
+		speaker = "",
+		prefab_name = "",
+		content = "荒原上尘雾四逸，震耳欲聋的炮火声之后，原野似乎安静了一瞬。",
+		id = 419061027
+	},
+	[419061028] = {
+		speaker = "",
+		prefab_name = "",
+		content = "但紧接着，那些鬼魅般的身影又再度站起，发出让人不寒而栗的嘶吼。",
+		id = 419061028
+	},
+	[419061029] = {
+		speaker = "",
+		prefab_name = "",
+		content = "听到吼声，才坐下没多久的亚莉莎重新站了起来，勉强平复了一下呼吸，刚提起神机，肩膀忽然被一只手按住。",
+		id = 419061029
+	},
+	[419061030] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "支援已经在路上了，别太勉强。",
+		id = 419061030
+	},
+	[419061031] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "你们还没有歼灭荒神的手段，要是放跑了就很难收拾了，我知道没有撤退的余地。",
+		id = 419061031
+	},
+	[419061032] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "不用担心我，对「精锐」来说，这种程度才刚刚算是热身呢。",
+		id = 419061032
+	},
+	[419061033] = {
+		speaker = "",
+		prefab_name = "",
+		content = "先前被击退的金刚滚动着突破火力网向亚莉莎冲来，亚莉莎把神机调整到盾牌模式。",
+		id = 419061033
+	},
+	[419061034] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "替我掩护。",
+		id = 419061034
+	},
+	[419061035] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "……等等，数量不太对——",
+		id = 419061035
+	},
+	[419061036] = {
+		speaker = "",
+		prefab_name = "",
+		content = "就在亚莉莎冲出去的瞬间，终端上又亮起数个高强度的生命反应。",
+		id = 419061036
+	},
+	[419061037] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎心头一沉，但还是挥剑迎了上去。刚刚逼退一只金刚，一股劲风便从另一个方向袭来。",
+		id = 419061037
+	},
+	[419061038] = {
+		speaker = "",
+		prefab_name = "",
+		content = "就在亚莉莎准备硬接下这一击的时候，几发神谕细胞构筑的子弹从战场侧面射进那只金刚的外壳，直接将它掀翻在地。",
+		id = 419061038
+	},
+	[419061039] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "没来晚吧？",
+		id = 419061039
+	},
+	[419061040] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我猛打方向盘横过车身，两道身影同一时间从车内冲出，雪儿腾空而起，寄宿于神机内野兽咆哮而出，生生将一只金刚撕裂一块。",
+		id = 419061040
+	},
+	[419061041] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "……勉强合格吧。",
+		id = 419061041
+	},
+	[419061042] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "你就是……",
+		id = 419061042
+	},
+	[419061043] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "亚莉莎…！我是雪儿·阿朗松…！咦，你现在的样子是……？",
+		id = 419061043
+	},
+	[419061044] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "雪儿……你也是神机使……\n但是，你的那个神机……",
+		id = 419061044
+	},
+	[419061045] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "我是第三代神机使。原来如此…难道说你和我不是从同一时间来的…？",
+		id = 419061045
+	},
+	[419061046] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎诧异地看向雪儿，没来由想到自己刚加入极东分部时的态度，有些尴尬地笑了笑。",
+		id = 419061046
+	},
+	[419061047] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "稍后再交换情报吧。\n首先要紧的是清理眼前的荒神。\n我需要你的力量，雪儿。",
+		id = 419061047
+	},
+	[419061048] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "我会全力以赴的，前辈。\n请下达指示。",
+		id = 419061048
+	},
+	[419062001] = {
+		speaker = "",
+		prefab_name = "",
+		content = "顺利解决掉这一批荒神，但众人脸上并没有太多喜悦的表情。",
+		id = 419062001
+	},
+	[419062002] = {
+		speaker = "",
+		prefab_name = "",
+		content = "经过这半天的鏖战，科尔盖已经深刻理解到神谕细胞生命力的恐怖之处。眼下的状况与其说是胜利，倒不如说是得到了暂时喘息的机会。",
+		id = 419062002
+	},
+	[419062003] = {
+		speaker = "",
+		prefab_name = "",
+		content = "战斗结束后，亚莉莎和雪儿走到一旁，互相确认着情报。\n面对亚莉莎的问题，雪儿似乎有着自己的难处，一脸不知如何作答的表情。",
+		id = 419062003
+	},
+	[419062004] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "托特。",
+		id = 419062004
+	},
+	[419062005] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "如果你想问科研中心的进展，有消息我会通知你的，我和你一样着急。",
+		id = 419062005
+	},
+	[419062006] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "但半天时间就要他们弄清楚一种全新的生命形态……你应该知道这有多强人所难。",
+		id = 419062006
+	},
+	[419062007] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "当然，大概很少有人比我更能感同身受了。",
+		id = 419062007
+	},
+	[419062008] = {
+		speaker = "",
+		prefab_name = "",
+		content = "托特淡淡地刮了我一眼，像是在提醒我不要在这种地方开不合时宜的玩笑。",
+		id = 419062008
+	},
+	[419062009] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "时间有限，越拖越麻烦。卡玛乌部长打算拉个会商讨一下对策。",
+		id = 419062009
+	},
+	[419062010] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "你带那两位神机使去聊吧，什么该说什么该做，你帮忙协调一下。",
+		id = 419062010
+	},
+	[419062011] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你不参加吗？",
+		id = 419062011
+	},
+	[419062012] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "……你也太高看我了，我的头衔只是行动组长，没有参与决策的权力。",
+		id = 419062012
+	},
+	[419062013] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我是担心亚莉莎和雪儿都走了，你这边会不会太危险？",
+		id = 419062013
+	},
+	[419062014] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "虽然武器研究还没有头绪，但是对荒神的能量监测已经相当准确，有异动我会告知你。",
+		id = 419062014
+	},
+	[419062015] = {
+		speaker = "",
+		prefab_name = "",
+		content = "回到平原的临时指挥所，还没等来卡玛乌，大国主的通讯先打了进来。",
+		id = 419062015
+	},
+	[419062016] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "有情况？研究有成果了吗？",
+		id = 419062016
+	},
+	[419062017] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "时空穿越的问题先摆一边了。神谕细胞的研究还算有进展，有些事情想问问你们，特别是两个神机使。",
+		id = 419062017
+	},
+	[419062018] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "科尔盖采集到一些神谕细胞的样本，但常规手段没法阻止它们扩散。",
+		id = 419062018
+	},
+	[419062019] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "听说你们那边的世界还有一些类似城镇的居住区，你们没有算力屏障之类的技术，是怎么拦住荒神的？",
+		id = 419062019
+	},
+	[419062020] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "偏食因子。",
+		id = 419062020
+	},
+	[419062021] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "打进你们身体里的那个吗？",
+		id = 419062021
+	},
+	[419062022] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "是的。这是从神谕细胞里面提取出来的物质，决定了神谕细胞吞噬的「偏好」。融合了偏食因子的东西会对「捕食」具备一定抗性。",
+		id = 419062022
+	},
+	[419062023] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "居住区外围的城墙里就注入了偏食因子，可以在一段时间内避免荒神的入侵。",
+		id = 419062023
+	},
+	[419062024] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "……不过，我不知道该怎么提取，更不知道该怎么加工。",
+		id = 419062024
+	},
+	[419062025] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "有这些信息就够了，可别把科学家当成只会抄作业的笨蛋啊。",
+		id = 419062025
+	},
+	[419062026] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "你们去开会吧，实验有成果了我再叫你们，用不了太久的。",
+		id = 419062026
+	},
+	[419062027] = {
+		speaker = "",
+		prefab_name = "",
+		content = "大国主朝我们摆了摆手，自顾自地沉思着走回了实验室里。",
+		id = 419062027
+	},
+	[419062028] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "抱歉，人力有限，送你们回去的事暂时得放一放了。",
+		id = 419062028
+	},
+	[419062029] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "现在还说这个干什么？不把这里的荒神消灭掉，我也没法安心回去吧。",
+		id = 419062029
+	},
+	[419062030] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "我也同样如此，无法放任这个世界的荒神不管……！",
+		id = 419062030
+	},
+	[419062031] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……不会让你们失望的。",
+		id = 419062031
+	},
+	[419062032] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "卡玛乌也快到了，接下来，就去听听科尔盖的计划吧。",
+		id = 419062032
+	},
+	[419071001] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "提醒一下各位，没有多少时间留给我们争辩了。",
+		id = 419071001
+	},
+	[419071002] = {
+		speaker = "",
+		prefab_name = "",
+		content = "卡玛乌不轻不重地叩了两下桌子，环坐在会场里的军官、文官和技术官们终于收敛了争执。",
+		id = 419071002
+	},
+	[419071003] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "你们知道我屁股坐在什么位置上。要说平息危机，我比各位更急迫。",
+		id = 419071003
+	},
+	[419071004] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "但是在座没人有心想事成的本领，如果要争到有个百分之百可行的方案，不如我安排几张床，大家就住在这间会议室里得了。",
+		id = 419071004
+	},
+	[419071005] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我也赞同先敲定一个相对可行的方案，根据研究进展再做调整和优化。",
+		id = 419071005
+	},
+	[419071006] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "听来听去，可行的无非就那么两个。",
+		id = 419071006
+	},
+	[419071007] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "正面对抗即时歼灭的方案一，你们觉得太不可控；区块数据清除的方案二你们又觉得太激进。",
+		id = 419071007
+	},
+	[419071008] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "卡玛乌部长，你的意见呢？",
+		id = 419071008
+	},
+	[419071009] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "……正面对抗消耗太大，而且谁知道技术部门需要多少时间才能拿出更稳妥的方案？",
+		id = 419071009
+	},
+	[419071010] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "站在尽快解决问题的角度，我更倾向方案二。",
+		id = 419071010
+	},
+	[419071011] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "为了解决荒神的威胁，难道要放弃包括人们在内的一整片土地吗？",
+		id = 419071011
+	},
+	[419071012] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "我们的处境没你看见的那么好，神机使小姐。在和视骸对抗的过程中，我们已经做过太多次妥协了。",
+		id = 419071012
+	},
+	[419071013] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "如果不想满盘皆输，至少要学会取舍。",
+		id = 419071013
+	},
+	[419071014] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "可我们还有争取到更多时间的机会……这台设备，能再给大家演示一遍吗？",
+		id = 419071014
+	},
+	[419071015] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "当然，不管演示多少次，结果都是一样的。",
+		id = 419071015
+	},
+	[419071016] = {
+		speaker = "",
+		prefab_name = "",
+		content = "卡玛乌手边放着个半人高的透明器皿，器皿的顶部悬着一个发射器状的设施。",
+		id = 419071016
+	},
+	[419071017] = {
+		speaker = "",
+		prefab_name = "",
+		content = "他挥了挥手，一个技术人员上前按下几个按键，一道射线从顶部落下，那器皿内的组织很快就逐渐消解了。",
+		id = 419071017
+	},
+	[419071018] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "实在是……不可思议。\n用这种方法将神谕细胞给……",
+		id = 419071018
+	},
+	[419071019] = {
+		speaker = "",
+		prefab_name = "",
+		content = "尽管不久之后，就有些隐约的物质开始重新在器皿内凝聚，但雪儿还是忍不住赞叹了一句。",
+		id = 419071019
+	},
+	[419071020] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "科研中心短时间内能拿出的成果，这就是极限了。",
+		id = 419071020
+	},
+	[419071021] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "从微观层面破坏神谕细胞的结构，可以暂时解除神谕细胞之间的连接，但还是没法避免它们自我修复重新组合。",
+		id = 419071021
+	},
+	[419071022] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "说白了，治标不治本，而且量产它也需要大量时间。不巧的是，我们没时间了。",
+		id = 419071022
+	},
+	[419071023] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "……我同意卡玛乌部长的意见，和荒神进行消耗战，我对结果不太乐观。",
+		id = 419071023
+	},
+	[419071024] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎看了雪儿一眼，但并没有过多的表示，不同的经历让两人对事情有不同的看法，但彼此都知道这一点所以保持了互相的理解和尊重。",
+		id = 419071024
+	},
+	[419071025] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "……深空之眼的态度呢，#{nickname}#？",
+		id = 419071025
+	},
+	[419071026] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我们当然很信任双方的研究人员，希望尽可能减少损失。",
+		id = 419071026
+	},
+	[419071027] = {
+		speaker = "",
+		prefab_name = "",
+		content = "卡玛乌的表情看上去还有不少顾虑，正当我斟酌着词句打算继续说服他的时候，会场里响起了一连串的终端消息通知。",
+		id = 419071027
+	},
+	[419071028] = {
+		speaker = "",
+		prefab_name = "",
+		content = "包括卡玛乌在内，许多人低头查看终端，脸色瞬间都变得难看起来。",
+		id = 419071028
+	},
+	[419071029] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "东部平原出现了一只更高量级的荒神，强行突破数据屏障，进入平原南边的居民区了。",
+		id = 419071029
+	},
+	[419071030] = {
+		speaker = "",
+		prefab_name = "",
+		content = "接到消息后，会场里的官员们第一时间离场，各自去处理这场突发事故相关的工作。",
+		id = 419071030
+	},
+	[419071031] = {
+		speaker = "",
+		prefab_name = "",
+		content = "卡玛乌调了两支行动小组，分别由亚莉莎和雪儿带队，负责配合科尔盖的牵制力量歼灭荒神，我则带着薇儿去前线指挥部与托特会合。",
+		id = 419071031
+	},
+	[419071032] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "优先保障民众安全，有荒神袭击及时报告给我。",
+		id = 419071032
+	},
+	[419071033] = {
+		speaker = "",
+		prefab_name = "",
+		content = "通讯频道里响起几声「明白」，随后平静下来，只余下隐约的电流声。",
+		id = 419071033
+	},
+	[419071034] = {
+		speaker = "科尔盖士兵A",
+		prefab_name = "",
+		content = "C区转移完毕，无荒神迹象。",
+		id = 419071034
+	},
+	[419071035] = {
+		speaker = "科尔盖士兵B",
+		prefab_name = "",
+		content = "B区完毕。",
+		id = 419071035
+	},
+	[419071036] = {
+		speaker = "",
+		prefab_name = "",
+		content = "看着几个居民拎着行李从门里出来，亚莉莎转过拐角，发现已经到头了。",
+		id = 419071036
+	},
+	[419071037] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "E区……",
+		id = 419071037
+	},
+	[419071038] = {
+		speaker = "",
+		prefab_name = "",
+		content = "两声破碎的喊叫从不远处的街区响起，伴随而来的还有令人头皮发紧的嘶吼声。",
+		id = 419071038
+	},
+	[419071039] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "是荒神袭击！\n你们把已经转移出来的人保护好，我去营救荒神出现区域的民众！",
+		id = 419071039
+	},
+	[419071040] = {
+		speaker = "",
+		prefab_name = "",
+		content = "史黛西躲在半塌的门后，努力咬着手不让自己哭出声，透过一条门缝看向外面。",
+		id = 419071040
+	},
+	[419071041] = {
+		speaker = "",
+		prefab_name = "",
+		content = "那是她从没想象过的可怖怪物，在它的面前，一对单薄的人影瑟缩着，但是努力举起手中的木条。",
+		id = 419071041
+	},
+	[419071042] = {
+		speaker = "",
+		prefab_name = "",
+		content = "在怪物张开巨口的瞬间，她狠狠闭上眼睛，泪水无声地划过脸庞。",
+		id = 419071042
+	},
+	[419071043] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "往后躲！",
+		id = 419071043
+	},
+	[419071044] = {
+		speaker = "",
+		prefab_name = "",
+		content = "似曾相识的声音取代了预想中的惨叫，史黛西有些愣神地睁开双眼。",
+		id = 419071044
+	},
+	[419071045] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "有没有受伤？",
+		id = 419071045
+	},
+	[419071046] = {
+		speaker = "伊迪斯",
+		prefab_name = "",
+		content = "亚莉莎小姐？你，你知道这些是怎么一回事吗?",
+		id = 419071046
+	},
+	[419071047] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "是的……具体情况我没法说……抱歉，本来不该让你们看到这些，是我们救助来迟了。",
+		id = 419071047
+	},
+	[419071048] = {
+		speaker = "霍华德",
+		prefab_name = "",
+		content = "别这样说，如果不是你及时赶到，我们可能早就……",
+		id = 419071048
+	},
+	[419071049] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "史黛西呢？",
+		id = 419071049
+	},
+	[419071050] = {
+		speaker = "霍华德",
+		prefab_name = "",
+		content = "已经藏起来了。",
+		id = 419071050
+	},
+	[419071051] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "我先拦住它，你们带上史黛西先躲到安全的地方。",
+		id = 419071051
+	},
+	[419071052] = {
+		speaker = "伊迪斯",
+		prefab_name = "",
+		content = "你一个人不要紧吗，这怪物看起来……",
+		id = 419071052
+	},
+	[419071053] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "不用担心，我对付它们很有经验，你们快离开。",
+		id = 419071053
+	},
+	[419071054] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "其他镇民都已经聚集到镇口了，那边有科尔盖的士兵守卫。",
+		id = 419071054
+	},
+	[419071055] = {
+		speaker = "",
+		prefab_name = "",
+		content = "两人闻言不再多说，从后面的残壁后抱出史黛西，跌跌撞撞地朝外跑去。",
+		id = 419071055
+	},
+	[419071056] = {
+		speaker = "",
+		prefab_name = "",
+		content = "史黛西还因为大起大落的情绪而一时说不出话，趴在父亲肩头一错不错地望着亚莉莎。",
+		id = 419071056
+	},
+	[419071057] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎在与金刚的对峙中侧过头，朝她露出一个安心的微笑。",
+		id = 419071057
+	},
+	[419071058] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "你的对手是我。\n相同的痛苦，不会再重演了。",
+		id = 419071058
+	},
+	[419072001] = {
+		speaker = "",
+		prefab_name = "",
+		content = "金刚倒地的时候亚莉莎并没有什么感觉，毕竟已经重复过太多类似的事。",
+		id = 419072001
+	},
+	[419072002] = {
+		speaker = "",
+		prefab_name = "",
+		content = "取出核心，亚莉莎在周围检查一圈，就往镇口赶去。",
+		id = 419072002
+	},
+	[419072003] = {
+		speaker = "科尔盖士兵B",
+		prefab_name = "",
+		content = "亚莉莎小姐，那边的荒神……",
+		id = 419072003
+	},
+	[419072004] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "已经解决了，你们这边呢，居民都齐了吗？",
+		id = 419072004
+	},
+	[419072005] = {
+		speaker = "科尔盖士兵B",
+		prefab_name = "",
+		content = "所有镇民都已经到了，随时可以开始撤退。",
+		id = 419072005
+	},
+	[419072006] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "那就……",
+		id = 419072006
+	},
+	[419072007] = {
+		speaker = "史黛西",
+		prefab_name = "",
+		content = "亚莉莎姐姐！",
+		id = 419072007
+	},
+	[419072008] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一看见亚莉莎，史黛西从她父亲的手里挣脱出来，朝亚莉莎跑来。",
+		id = 419072008
+	},
+	[419072009] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "史黛西，刚刚是不是吓坏了？",
+		id = 419072009
+	},
+	[419072010] = {
+		speaker = "史黛西",
+		prefab_name = "",
+		content = "嗯，但是姐姐来了就不害怕了。",
+		id = 419072010
+	},
+	[419072011] = {
+		speaker = "史黛西",
+		prefab_name = "",
+		content = "亚莉莎姐姐，刚刚的怪兽，是什么呀？你是超人吗？",
+		id = 419072011
+	},
+	[419072012] = {
+		speaker = "霍华德",
+		prefab_name = "",
+		content = "史黛西，亚莉莎小姐还要工作，不要乱问。",
+		id = 419072012
+	},
+	[419072013] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "没关系……放心吧，史黛西，姐姐会把怪兽都打跑的。",
+		id = 419072013
+	},
+	[419072014] = {
+		speaker = "霍华德",
+		prefab_name = "",
+		content = "唉，刚才走得太急，都没跟你好好道谢。多谢，如果不是你来得及时……",
+		id = 419072014
+	},
+	[419072015] = {
+		speaker = "",
+		prefab_name = "",
+		content = "史黛西仰头望着父亲，眨眨眼睛似乎又要流泪，但想起亚莉莎还在旁边，把头埋进了父亲的衣角。",
+		id = 419072015
+	},
+	[419072016] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "职责而已。赶紧离开这里吧，外围马上要封锁了。",
+		id = 419072016
+	},
+	[419072017] = {
+		speaker = "史黛西",
+		prefab_name = "",
+		content = "不可以回家吗？我们什么时候才能回家？",
+		id = 419072017
+	},
+	[419072018] = {
+		speaker = "",
+		prefab_name = "",
+		content = "这一次霍华德没有打断她，大概也不知从何开口。",
+		id = 419072018
+	},
+	[419072019] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎蹲下身来，轻轻摸了摸史黛西的头。",
+		id = 419072019
+	},
+	[419072020] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "一定能回的。\n有很多人在努力，一定会没事的。",
+		id = 419072020
+	},
+	[419072021] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "在那之前，史黛西要好好和爸爸妈妈待在一起，他们可是为了你，敢站到那种怪物面前。",
+		id = 419072021
+	},
+	[419072022] = {
+		speaker = "科尔盖士兵B",
+		prefab_name = "",
+		content = "亚莉莎小姐，该出发了。",
+		id = 419072022
+	},
+	[419072023] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "你们护送队伍离开吧，我也该回去做下一步准备了。",
+		id = 419072023
+	},
+	[419072024] = {
+		speaker = "",
+		prefab_name = "",
+		content = "撤离的队伍逐渐背向夕阳远去，人群中，史黛西紧紧抓着父母的手，好像生怕他们走丢了一样。",
+		id = 419072024
+	},
+	[419072025] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎望着他们的背影，此时才突然有战胜的实感涌上心头。",
+		id = 419072025
+	},
+	[419072026] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "为了守护这个世界，一定还有更多可以做的事情……",
+		id = 419072026
+	},
+	[419081001] = {
+		speaker = "",
+		prefab_name = "",
+		content = "科尔盖的响应速度很快，几小时之内东部平原就立起了新的算力屏障，一支支全副武装的队伍从科尔盖总部出发，进入隔离区。",
+		id = 419081001
+	},
+	[419081002] = {
+		speaker = "",
+		prefab_name = "",
+		content = "又是一次任务结束，我带着两支小队回到指挥所，没顾得上卸装备就瘫进了一张躺椅。",
+		id = 419081002
+	},
+	[419081003] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "辛苦了，亚莉莎小姐，还有雪儿小姐。",
+		id = 419081003
+	},
+	[419081004] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "辛苦了。\n那只高强度反应的荒神呢？好像没有见到。",
+		id = 419081004
+	},
+	[419081005] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "我的队伍也没遇上。",
+		id = 419081005
+	},
+	[419081006] = {
+		speaker = "",
+		prefab_name = "",
+		content = "托特摇摇头，表示她也给不出答案，只是调出一张有些模糊的照片，投在指挥所的大屏幕上。",
+		id = 419081006
+	},
+	[419081007] = {
+		speaker = "",
+		prefab_name = "",
+		content = "看到照片的瞬间，亚莉莎的脸色就沉了下来，似乎对照片里的那只荒神很熟悉。",
+		id = 419081007
+	},
+	[419081008] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "最担心的事情还是出现了，荒神能够突破数据屏障，这种大范围的隔离和拦截持续不了太久。",
+		id = 419081008
+	},
+	[419081009] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "根据技术部门的实时反馈，算力屏障现在还在持续遭受侵蚀。而且随着这只荒神的出现，平原上的生命能量信号又上升了一个量级。",
+		id = 419081009
+	},
+	[419081010] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "总部的会议纪要我看过了，大家都需要时间，但恐怕真的没多少时间了。",
+		id = 419081010
+	},
+	[419081011] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "托特阁下，请问你们估算过屏障还能支撑多久吗？",
+		id = 419081011
+	},
+	[419081012] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "修补的速度已经快要跟不上侵蚀的速度了。大概还有两天。",
+		id = 419081012
+	},
+	[419081013] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "管理员……",
+		id = 419081013
+	},
+	[419081014] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "没事，我有准备。虽然时间不多，也还有出现转机的可能。",
+		id = 419081014
+	},
+	[419081015] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "如果最后一天还是这样，就请卡玛乌部长启动方案二吧。",
+		id = 419081015
+	},
+	[419081016] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "要做的话，就没必要等到最后一天了。",
+		id = 419081016
+	},
+	[419081017] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "卡玛乌部长？",
+		id = 419081017
+	},
+	[419081018] = {
+		speaker = "",
+		prefab_name = "",
+		content = "不等我们给出反应，走进指挥所的卡玛乌先扬了扬手，示意听他说完。",
+		id = 419081018
+	},
+	[419081019] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "坐在总部里看报告不是我的风格，不亲手给荒神来上一梭子总感觉不痛快。",
+		id = 419081019
+	},
+	[419081020] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "来上一梭子也解决不了问题。你刚才说，不用等了？",
+		id = 419081020
+	},
+	[419081021] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "我知道你在想什么，毕竟最早提出数据清除方案的时候我们也在场，相关的问题我们早就讨论过了。",
+		id = 419081021
+	},
+	[419081022] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "作为个人，我能理解你的完美主义，但现在已经没有「再等等」这个选项了。",
+		id = 419081022
+	},
+	[419081023] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "数据删除？这算是最后手段了吧。",
+		id = 419081023
+	},
+	[419081024] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "最后手段就是要在最后时刻到来之前果断打出去的牌。",
+		id = 419081024
+	},
+	[419081025] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "我是不知道科尔盖的权限高到什么地步，但是权限再高，最后都是要实操的。",
+		id = 419081025
+	},
+	[419081026] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "把扫描到神谕细胞的区域整个打包删除，你们能保证过程中不出任何差错吗？",
+		id = 419081026
+	},
+	[419081027] = {
+		speaker = "",
+		prefab_name = "",
+		content = "整场会议里这是大国主第一次坐正了身子，面无表情地直视着卡玛乌。",
+		id = 419081027
+	},
+	[419081028] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "这个世界上没有百分之百的承诺。",
+		id = 419081028
+	},
+	[419081029] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "兔兔机器人出问题，无非也就是炸两间办公室。但你们这个……最好还是再想想。",
+		id = 419081029
+	},
+	[419081030] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "卡玛乌部长，我也认为太过激进了。",
+		id = 419081030
+	},
+	[419081031] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "你们说的我都清楚，我说了，最后时刻。",
+		id = 419081031
+	},
+	[419081032] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "所以，现在是最后时刻了吗？",
+		id = 419081032
+	},
+	[419081033] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "我可以明说，两天时间，科尔盖破译不了神谕细胞。",
+		id = 419081033
+	},
+	[419081034] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "既然荒神已经成长到能够突破算力屏障的程度，那么晚一秒消灭它们都是让整个艾因索菲承担不必要的风险。",
+		id = 419081034
+	},
+	[419081035] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "但是，直接移除一整个区域，万一依托比尔轴……",
+		id = 419081035
+	},
+	[419081036] = {
+		speaker = "",
+		prefab_name = "",
+		content = "沉默蔓延着，但带来的不是宁静，而是暗流涌动的不安。",
+		id = 419081036
+	},
+	[419081037] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "这是没有办法的办法，我想你们应该都不是热血上头的人。",
+		id = 419081037
+	},
+	[419081038] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "如果是这样，那就……",
+		id = 419081038
+	},
+	[419081039] = {
+		speaker = "",
+		prefab_name = "",
+		content = "终端却在此时突然响起，我按下拒绝打算把话说完，但是薇儿的终端又跟着响了起来。",
+		id = 419081039
+	},
+	[419081040] = {
+		speaker = "",
+		prefab_name = "",
+		content = "然后是雪儿、亚莉莎、托特，最后我的终端竟然又响了起来，整个屋内铃声闹成一片。",
+		id = 419081040
+	},
+	[419081041] = {
+		speaker = "",
+		prefab_name = "",
+		content = "氛围顿时有点诡异起来，我们面面相觑着，连卡玛乌的神情都有一丝不自然。",
+		id = 419081041
+	},
+	[419081042] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "是大国主。",
+		id = 419081042
+	},
+	[419081043] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "咳，先接吧，或许有什么要紧事。",
+		id = 419081043
+	},
+	[419081044] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "这么久才接，这会儿任务应该结束了吧，卡玛乌怎么也在？",
+		id = 419081044
+	},
+	[419081045] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我们在讨论启用方案二的事，大国主你的事情如果不是非常紧急的话……",
+		id = 419081045
+	},
+	[419081046] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "什么，怎么突然要换那个笨办法？",
+		id = 419081046
+	},
+	[419081047] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "屏障快支撑不住了，神谕细胞的研究没有进展，笨办法也总比坐以待毙好。",
+		id = 419081047
+	},
+	[419081048] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "研究神谕细胞，一样是笨办法。那么复杂的东西这几天怎么可能钻研明白。",
+		id = 419081048
+	},
+	[419081049] = {
+		speaker = "",
+		prefab_name = "",
+		content = "大国主语气不太委婉，但是卡玛乌却没有生气，而是敏锐地捕捉到了别的信息。",
+		id = 419081049
+	},
+	[419081050] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "这么说，你有聪明的办法了?",
+		id = 419081050
+	},
+	[419081051] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "有点想法吧。我问你们，想阻挡洪水，需要明白水的分子式吗？",
+		id = 419081051
+	},
+	[419081052] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "只需要筑起堤坝就好。",
+		id = 419081052
+	},
+	[419081053] = {
+		speaker = "",
+		prefab_name = "",
+		content = "模模糊糊的，我似乎有点接上了大国主的思路。",
+		id = 419081053
+	},
+	[419081054] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "那荒神也是一样的，我们的目的是阻止它们，不一定非要把它们的性质结构全都弄明白。",
+		id = 419081054
+	},
+	[419081055] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "只要用对了材料，堤坝就能阻挡洪水，那么对于荒神……",
+		id = 419081055
+	},
+	[419081056] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "「偏食因子」？",
+		id = 419081056
+	},
+	[419081057] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "看来还是有聪明人的，这还是你们给我的思路。",
+		id = 419081057
+	},
+	[419081058] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "既然在你们的世界，可以利用偏食因子把荒神挡在外面，那反过来当然也可以……",
+		id = 419081058
+	},
+	[419081059] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "趁荒神还没蔓延的时候，把它们困在里面？",
+		id = 419081059
+	},
+	[419081060] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "以科尔盖的技术，两天时间造一个混有对应偏食因子的屏障，应该不算难吧？",
+		id = 419081060
+	},
+	[419081061] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "一个升级的屏障，不错的思路，但本质上还是拖延时间，跟之前没有本质区别。",
+		id = 419081061
+	},
+	[419081062] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "如果能同时遏制神谕细胞的活动呢？",
+		id = 419081062
+	},
+	[419081063] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "你能做到？",
+		id = 419081063
+	},
+	[419081064] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "说不好，但也许可以，所以我才发通讯过来。",
+		id = 419081064
+	},
+	[419081065] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "隔离区内有异常数据波动，我想让你们派人去探查一下。",
+		id = 419081065
+	},
+	[419081066] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "这个异常数据我们也探查到了，你觉得这有用？",
+		id = 419081066
+	},
+	[419081067] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "就是「说不好」才让你们去探查，但可能会是机会。",
+		id = 419081067
+	},
+	[419081068] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "……机会，之前为了机会我们已经用了很多时间，我不确定我们还有多少余裕去验证更多「机会」。",
+		id = 419081068
+	},
+	[419081069] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "最后说了算的还是你，大叔。我只是提个建议。你要是更喜欢那个挖大洞的笨办法，我也没意见。",
+		id = 419081069
+	},
+	[419081070] = {
+		speaker = "",
+		prefab_name = "",
+		content = "卡玛乌站起身，开始在屋内来回踱步，似乎在衡量着什么。",
+		id = 419081070
+	},
+	[419081071] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "我可以提供一点想法吗，虽然作为一个外来者，可能不是非常妥当。",
+		id = 419081071
+	},
+	[419081072] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "请讲，作为神机使，在荒神的问题上，两位是这里最有发言权的。",
+		id = 419081072
+	},
+	[419081073] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "谢谢。只不过，我要说的终究只是一种可能性……",
+		id = 419081073
+	},
+	[419081074] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "我只是在想，如果屏障不能防止有荒神出现在隔离区外，那么你们执行数据删除的时候，理论上应该也无法保证没有疏漏的神谕细胞。",
+		id = 419081074
+	},
+	[419081075] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "没有百分之百的承诺，这是我的原话。",
+		id = 419081075
+	},
+	[419081076] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "但我们做过反复演算，误差在可接受范围内。",
+		id = 419081076
+	},
+	[419081077] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "但这本质上不同样是在赌可能性吗，如果有漏网的神谕细胞，以后又要怎么办呢？",
+		id = 419081077
+	},
+	[419081078] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "所以还是要研究可复用的解决办法，不然以后再出现荒神，总不能继续搞删除这一套。",
+		id = 419081078
+	},
+	[419081079] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "既然这样，为什么不尽量留下一个完整的艾因索菲呢。",
+		id = 419081079
+	},
+	[419081080] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "卡玛乌先生，开会的时候，我就是反对方案二的。因为在我的世界，曾经有人想要去做类似的事。",
+		id = 419081080
+	},
+	[419081081] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "舍弃家园，不停后退，保留所谓「文明存续」的希望……但最后的结果，正如我所告诉过大家的那样。",
+		id = 419081081
+	},
+	[419081082] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "逃避的道路是看不到希望的。\n当然，我知道清除数据也不是容易的选择。\n但是……应该还存在别的方法。一切都还来得及。",
+		id = 419081082
+	},
+	[419081083] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "就当是我的祝愿也好，希望你们……不要轻易放弃。",
+		id = 419081083
+	},
+	[419081084] = {
+		speaker = "",
+		prefab_name = "",
+		content = "卡玛乌站定了脚步，望向我们。几秒钟后，有些无奈地叹了口气。",
+		id = 419081084
+	},
+	[419081085] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "别把我看得像什么冷血动物一样，我一开始不就说了吗，这是没有办法的办法。",
+		id = 419081085
+	},
+	[419081086] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "既然你们有想法，那就再试试吧。",
+		id = 419081086
+	},
+	[419081087] = {
+		speaker = "",
+		prefab_name = "",
+		content = "重返隔离区，或许是刚进行过一轮清理的原因，这一路倒是顺畅很多。",
+		id = 419081087
+	},
+	[419081088] = {
+		speaker = "",
+		prefab_name = "",
+		content = "但是越靠近大国主所说的地区，周围的环境就越发不对劲起来。",
+		id = 419081088
+	},
+	[419081089] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "管理员……这些荒神，不像是我们的人处理的。",
+		id = 419081089
+	},
+	[419081090] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不是，如果是我们，不可能专门留下残缺的肢体。",
+		id = 419081090
+	},
+	[419081091] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这些看起来……就像是被什么撕咬过一样。",
+		id = 419081091
+	},
+	[419081092] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "荒神确实有彼此捕食的习性，这种情况并非不可思议。",
+		id = 419081092
+	},
+	[419081093] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "但是这幅场景，就像荒神之间发生了大战一样。\n如果是这样的话……",
+		id = 419081093
+	},
+	[419081094] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "小心！这附近一定有一头格外强大的……",
+		id = 419081094
+	},
+	[419081095] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一道阴影从天落下，我们下意识地抬起头，对上了一张肖似人类的妖异面容，正是托特给我们看的那张照片上的面孔。",
+		id = 419081095
+	},
+	[419081096] = {
+		speaker = "亚莉莎",
+		prefab_name = "",
+		content = "天父——狄阿乌斯。那张照片上的荒神，果然是……！",
+		id = 419081096
+	},
+	[419081097] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "没想到你居然会出现在这个世界……\n我一定不会放你逃走的……！",
+		id = 419081097
+	},
+	[419082001] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎的惊呼刚刚脱口，整片大地就如地震一般剧烈震动起来，薇儿把剑插进地里才勉强维持了站姿。",
+		id = 419082001
+	},
+	[419082002] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "为什么突然地震了，这是天父搞的鬼吗？",
+		id = 419082002
+	},
+	[419082003] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "不，天父没有这样的力量！\n总之快跑出去，这里马上就会非常不安全。",
+		id = 419082003
+	},
+	[419082004] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我也想跑，但是这个状况……",
+		id = 419082004
+	},
+	[419082005] = {
+		speaker = "",
+		prefab_name = "",
+		content = "持续的地震，即使以修正者和神机使的体质都只能勉强站立，更遑论迅速撤退了。",
+		id = 419082005
+	},
+	[419082006] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "我带着你，我们先……",
+		id = 419082006
+	},
+	[419082007] = {
+		speaker = "",
+		prefab_name = "",
+		content = "地面似乎终于承受不住这样的摇动，在嘶哑的悲鸣中裂开了蛛网般的纹路。",
+		id = 419082007
+	},
+	[419082008] = {
+		speaker = "",
+		prefab_name = "",
+		content = "但这并不是结束，仿佛是从大地的血肉之中生长，被血管般的暗红色纹路包裹着的扭曲巨刺缓缓拔节。",
+		id = 419082008
+	},
+	[419082009] = {
+		speaker = "",
+		prefab_name = "",
+		content = "地面搏动着仿佛要活过来，但紧接着一层层连皮带肉被那巨刺掀翻撕裂，其中一个裂口正在我们脚下。",
+		id = 419082009
+	},
+	[419082010] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "周围的地形快全部被破坏了，那些荆棘一样的柱子能站吗？",
+		id = 419082010
+	},
+	[419082011] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "那应该是神谕细胞构成的，我不能确定是否安全。",
+		id = 419082011
+	},
+	[419082012] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "总比就这样落进地缝里强，谁拽我一把，先跳上去试试。",
+		id = 419082012
+	},
+	[419082013] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "我来吧，抓紧我管理员！",
+		id = 419082013
+	},
+	[419082014] = {
+		speaker = "",
+		prefab_name = "",
+		content = "薇儿拽住我的手，我们四人朝最近的落点腾空而起，眼看就要落到那荆棘之上。",
+		id = 419082014
+	},
+	[419082015] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "幸好一直在监控你们的动向，抬头！",
+		id = 419082015
+	},
+	[419082016] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "大国主！",
+		id = 419082016
+	},
+	[419082017] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一架直升机悬停在半空中，几条绳索垂落下来，我们一把抓住。",
+		id = 419082017
+	},
+	[419082018] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "等等，该不会这些东西才是你说的异常数据吧？",
+		id = 419082018
+	},
+	[419082019] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "回去再说，先爬上来。",
+		id = 419082019
+	},
+	[419082020] = {
+		speaker = "",
+		prefab_name = "",
+		content = "绳索正要往上收，一个熟悉的阴影投落下来。",
+		id = 419082020
+	},
+	[419082021] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "还真是会挑时机。",
+		id = 419082021
+	},
+	[419082022] = {
+		speaker = "",
+		prefab_name = "",
+		content = "雪儿和亚莉莎同时单手举起神机，在半空中连开几枪，稍稍阻挡了天父的身形。",
+		id = 419082022
+	},
+	[419082023] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "来得正好，可以试试我的新道具。",
+		id = 419082023
+	},
+	[419082024] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一个兔子外形的小球被抛落到我们面前，然后迅速爆开，撑起了一道屏障。",
+		id = 419082024
+	},
+	[419082025] = {
+		speaker = "",
+		prefab_name = "",
+		content = "天父正好扑过来，却落在那薄薄的屏障之上，无法寸进。",
+		id = 419082025
+	},
+	[419082026] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这是你的新发明？",
+		id = 419082026
+	},
+	[419082027] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "看起来还算有点用。我之前实验阶段调试的新屏障，这只是个样品。",
+		id = 419082027
+	},
+	[419082028] = {
+		speaker = "",
+		prefab_name = "",
+		content = "直升机不断升高，天父从屏障上滑落下去，渐渐落入那些交错的荆棘之中，但是那张脸还紧紧地盯视着我们。",
+		id = 419082028
+	},
+	[419082029] = {
+		speaker = "",
+		prefab_name = "",
+		content = "回到指挥所，我站在原地深呼吸了几下，渐渐平复了自己这一会儿大起大落的心绪。",
+		id = 419082029
+	},
+	[419082030] = {
+		speaker = "",
+		prefab_name = "",
+		content = "指挥所内外也早因为突然的异变躁动起来，从指挥所向外眺望，高耸入云的巨大荆棘把隔离区变成了一片妖异的丛林。",
+		id = 419082030
+	},
+	[419082031] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那些东西……亚莉莎先前说是神谕细胞构成的？",
+		id = 419082031
+	},
+	[419082032] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "是的。据说我们的世界就是在它们出现之后，逐渐被荒神占据的。",
+		id = 419082032
+	},
+	[419082033] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "这些东西冒出来，说明整个区域都开始「荒神化」了。",
+		id = 419082033
+	},
+	[419082034] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "所以你说的异常数据就是它们，这算好消息还是坏消息？",
+		id = 419082034
+	},
+	[419082035] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "要是全世界都长满了那应该算坏消息，现在还不一定。",
+		id = 419082035
+	},
+	[419082036] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "能帮你遏制神谕细胞活动？",
+		id = 419082036
+	},
+	[419082037] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "所以你现在可以把隔离区这附近看作一个巨大但无意识的荒神，那些荆棘就是它身体的一部分，而且还是很关键的部分。",
+		id = 419082037
+	},
+	[419082038] = {
+		speaker = "",
+		prefab_name = "",
+		content = "大国主的话在我脑中转了几个弯，我眼睛一亮。",
+		id = 419082038
+	},
+	[419082039] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你打算给这个大荒神来几针？",
+		id = 419082039
+	},
+	[419082040] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "唔，这个比喻我还挺喜欢的。",
+		id = 419082040
+	},
+	[419082041] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "透过荆棘柱把合适且足量的偏食因子注入下去，应该能对整个区域的神谕细胞起到压制作用。",
+		id = 419082041
+	},
+	[419082042] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "但是时间不多了，这听起来都是大工程，来得及吗？",
+		id = 419082042
+	},
+	[419082043] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "这不是还有科尔盖嘛，他们最喜欢搞大工程了。",
+		id = 419082043
+	},
+	[419082044] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "这个计划有一处令人担心的地方……从神谕细胞的特性来看，就算打倒所有荒神，可能也很难使神谕细胞完全消失……",
+		id = 419082044
+	},
+	[419082045] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "不用担心，在盖亚的规则下，我们能做的事还是不少的。",
+		id = 419082045
+	},
+	[419082046] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "卡玛乌部长，你觉得能行？",
+		id = 419082046
+	},
+	[419082047] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "值得一试的方案。",
+		id = 419082047
+	},
+	[419082048] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "如果能在偏食因子的效用期内，把所有已成型的荒神消灭掉，剩下的我们有办法。",
+		id = 419082048
+	},
+	[419082049] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "愿闻其详。",
+		id = 419082049
+	},
+	[419082050] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "只要这个区域内只剩下细胞，我们可以把整个屏障压缩到极致，达到神机可以吞噬的范围。",
+		id = 419082050
+	},
+	[419082051] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "……这还真是，大胆的策略，能做到吗？",
+		id = 419082051
+	},
+	[419082052] = {
+		speaker = "",
+		prefab_name = "",
+		content = "卡玛乌微微扬了下眼角，我愣了愣，跟着笑了起来。",
+		id = 419082052
+	},
+	[419082053] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "没有百分之百的承诺？",
+		id = 419082053
+	},
+	[419082054] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "我已经催着科研中心做了几遍演算，不算冒险。",
+		id = 419082054
+	},
+	[419082055] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "我们会立刻开始重新测定隔离区，疏散民众，接下来战斗还要靠你们。",
+		id = 419082055
+	},
+	[419091001] = {
+		speaker = "",
+		prefab_name = "",
+		content = "负责重新架设屏障的小队再度进入隔离区，预备投放偏食因子的直升机整装待发。",
+		id = 419091001
+	},
+	[419091002] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "搭建屏障的队伍会先在隔离区内放置数个诱导装置，把荒神尽可能集中，保障隔离效果。",
+		id = 419091002
+	},
+	[419091003] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "等屏障成形，会有直升机向隔离区内的巨型荆棘投放特制的偏食因子注射装置。",
+		id = 419091003
+	},
+	[419091004] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "偏食因子确定生效后，我们会集中进行一轮导弹轰炸，那之后就要靠你们了。",
+		id = 419091004
+	},
+	[419091005] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "各小队负责的区域和任务呢？",
+		id = 419091005
+	},
+	[419091006] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "在轰炸结束后，我们会根据实时检测结果发到各位手里。",
+		id = 419091006
+	},
+	[419091007] = {
+		speaker = "",
+		prefab_name = "",
+		content = "卡玛乌说完就不再开口，转身和众人一起看着身后的战场监控。",
+		id = 419091007
+	},
+	[419091008] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "彻底销毁神谕细胞……没想到会参与到这样的行动里来。",
+		id = 419091008
+	},
+	[419091009] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "是啊，虽然知道可能无法在我们的世界复制，但还是一点细节都不想错过。",
+		id = 419091009
+	},
+	[419091010] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "这也是为了我们自己的未来……",
+		id = 419091010
+	},
+	[419091011] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "有你和雪儿这样的人在，肯定会实现的。",
+		id = 419091011
+	},
+	[419091012] = {
+		speaker = "",
+		prefab_name = "",
+		content = "不知道谁率先发出一声惊呼，我们抬起头，看见屏幕上如穹顶般的屏障正在渐渐成形。",
+		id = 419091012
+	},
+	[419091013] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "直升机编队出发，导弹准备。",
+		id = 419091013
+	},
+	[419091014] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "各战斗分队，指挥所外待命。",
+		id = 419091014
+	},
+	[419091015] = {
+		speaker = "",
+		prefab_name = "",
+		content = "整个大厅里没有一个人说话，只有武器和装甲相互摩擦的声音。",
+		id = 419091015
+	},
+	[419091016] = {
+		speaker = "",
+		prefab_name = "",
+		content = "顷刻间，密密麻麻的人就来到了隔离区边，直升机正好如飞云般从我们头顶掠过。",
+		id = 419091016
+	},
+	[419091017] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "管理员，直升机上落下来的那些东西怎么有点像……",
+		id = 419091017
+	},
+	[419091018] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "兔子……一看就知道是大国主的设计，真亏科尔盖能造出来。",
+		id = 419091018
+	},
+	[419091019] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "本来还有些紧绷，看到这些粉色的兔兔机器人，突然轻松了一些。",
+		id = 419091019
+	},
+	[419091020] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "说不定科尔盖也想缓解一下大家的情绪呢？",
+		id = 419091020
+	},
+	[419091021] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "是吗，我总感觉是大国主递上设计图的时候就算到他们没时间改了。",
+		id = 419091021
+	},
+	[419091022] = {
+		speaker = "",
+		prefab_name = "",
+		content = "一个个滚圆的兔兔机器人掉在荆棘上，在即将落地的时候从底盘上探出一道锥体，刺入了荆棘之内。",
+		id = 419091022
+	},
+	[419091023] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "神谕细胞的活跃度正在快速下降，导弹发射准备，战斗分队在轰炸三分钟后进入隔离区。",
+		id = 419091023
+	},
+	[419091024] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "做好准备，不出意外我们应该会拿到最难的区域。",
+		id = 419091024
+	},
+	[419091025] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "最难的区域怎么能没有科尔盖的代表？",
+		id = 419091025
+	},
+	[419091026] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "托特，你怎么来了？",
+		id = 419091026
+	},
+	[419091027] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "接下来后方暂时不会有我什么事，我就递了个申请来加入你们。",
+		id = 419091027
+	},
+	[419091028] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "我也算是盖亚最早见到荒神的人之一，最后时刻当然要亲眼见证。",
+		id = 419091028
+	},
+	[419091029] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "多一个你，能给我增加很多底气。",
+		id = 419091029
+	},
+	[419091030] = {
+		speaker = "",
+		prefab_name = "",
+		content = "地面传来一阵细微的颤动，以肉眼难以捕捉的速度，一整排导弹没入隔离区内。",
+		id = 419091030
+	},
+	[419091031] = {
+		speaker = "",
+		prefab_name = "",
+		content = "光焰和硝烟同时涌起，又被屏障挡在隔离区内。我微微眯眼，同时开始看向终端上的时间。",
+		id = 419091031
+	},
+	[419091032] = {
+		speaker = "",
+		prefab_name = "",
+		content = "三分钟后，在卡玛乌的声音响起的瞬间，我已经抬起了脚。",
+		id = 419091032
+	},
+	[419092001] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "还想跑？这可不行。",
+		id = 419092001
+	},
+	[419092002] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "托特，拉住它。",
+		id = 419092002
+	},
+	[419092003] = {
+		speaker = "",
+		prefab_name = "",
+		content = "无数丝线如网般飞落，配合着薇儿的剑，一起将天父钉在了原地。",
+		id = 419092003
+	},
+	[419092004] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "亚莉莎、雪儿，就是现在！",
+		id = 419092004
+	},
+	[419092005] = {
+		speaker = "",
+		prefab_name = "",
+		content = "巨大的荒神即便最后一刻也不甘地怒吼着，一簇簇电光开始在身边凝聚。",
+		id = 419092005
+	},
+	[419092006] = {
+		speaker = "",
+		prefab_name = "",
+		content = "这时，两道纤细的影子从它头上落下，天父似有所觉地抬起头。",
+		id = 419092006
+	},
+	[419092007] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "放弃挣扎吧，我们现在没时间和你纠缠。",
+		id = 419092007
+	},
+	[419092008] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "薇儿，托特，请帮我们再控制一会儿，它支撑不了太久了。",
+		id = 419092008
+	},
+	[419092009] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "你们只管攻击就好，我们保证它一步也动不了。",
+		id = 419092009
+	},
+	[419092010] = {
+		speaker = "",
+		prefab_name = "",
+		content = "子弹如流光般从两个神机中倾泻而出，全部准确地击打在天父的面部，瞬间天父就失去了声息。",
+		id = 419092010
+	},
+	[419092011] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "雪儿，准备好了吗？",
+		id = 419092011
+	},
+	[419092012] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "没问题，我会跟着你的节奏行动。",
+		id = 419092012
+	},
+	[419092013] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "那就让我们用这一次捕食，彻底终结它。",
+		id = 419092013
+	},
+	[419092014] = {
+		speaker = "",
+		prefab_name = "",
+		content = "两道兽影游龙般从神机中激射而出，狠狠没入了天父的躯体。",
+		id = 419092014
+	},
+	[419092015] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "根据终端的显示，这就是我们区域内的最后一只了。",
+		id = 419092015
+	},
+	[419092016] = {
+		speaker = "",
+		prefab_name = "",
+		content = "又一只荒神化为尘烟，雪儿看着终端确认到。",
+		id = 419092016
+	},
+	[419092017] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "已经上报给卡玛乌了，走吧，先撤出去。",
+		id = 419092017
+	},
+	[419092018] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "1284ui_story",
+		content = "不用去帮帮其他的队伍吗？",
+		id = 419092018
+	},
+	[419092019] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "按计划行动，相信大家，而且亚莉莎和雪儿还有重要的任务。",
+		id = 419092019
+	},
+	[419092020] = {
+		speaker = "",
+		prefab_name = "",
+		content = "我们离开隔离区的时候，其他队伍也正三三两两地撤出。",
+		id = 419092020
+	},
+	[419092021] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "看，我说吧，大家都是很强的。",
+		id = 419092021
+	},
+	[419092022] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "管理员，你们先回去休息吧，我们等在这里就好。",
+		id = 419092022
+	},
+	[419092023] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "那怎么行，我们可是队友，当然要守候到最后一刻。",
+		id = 419092023
+	},
+	[419092024] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "而且你看……",
+		id = 419092024
+	},
+	[419092025] = {
+		speaker = "",
+		prefab_name = "",
+		content = "亚莉莎和雪儿顺着我手指的方向看过去，发现所有队伍都没有回去，全都站在原野上。",
+		id = 419092025
+	},
+	[419092026] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "大家都在期待着尘埃落定的时候呢。",
+		id = 419092026
+	},
+	[419092027] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "最后一只小队退出隔离区，可见的荒神已经全部被剿灭，辛苦各位。",
+		id = 419092027
+	},
+	[419092028] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "接下来还有最后一步，雪儿小姐，亚莉莎小姐。",
+		id = 419092028
+	},
+	[419092029] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "我们会全力以赴。",
+		id = 419092029
+	},
+	[419092030] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "整个流程我都已经很熟悉，不会出错的。",
+		id = 419092030
+	},
+	[419092031] = {
+		speaker = "",
+		prefab_name = "",
+		content = "卡玛乌不再说话，取而代之的是一阵嗡鸣，我们抬头一看，那些兔兔机器人震动着发出了光。",
+		id = 419092031
+	},
+	[419092032] = {
+		speaker = "",
+		prefab_name = "",
+		content = "那些机器人底部的椎体变了色，似乎有偏食因子以外的东西被注射了进去。",
+		id = 419092032
+	},
+	[419092033] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "我之前还在想他们要怎么摧毁这些荆棘柱，看来上次会议展示的技术还是派上用场了。",
+		id = 419092033
+	},
+	[419092034] = {
+		speaker = "",
+		prefab_name = "",
+		content = "那些荆棘猛烈地颤动起来，连着脚下的地面都开始摇晃。",
+		id = 419092034
+	},
+	[419092035] = {
+		speaker = "",
+		prefab_name = "",
+		content = "但是雪儿和亚莉莎稳稳站在地面，抓紧神机，目光如炬地逼视着前方。",
+		id = 419092035
+	},
+	[419092036] = {
+		speaker = "",
+		prefab_name = "",
+		content = "几秒钟后，所有震动同时停止，那些铺天盖地的荆棘在刹那间全部化为飞灰。",
+		id = 419092036
+	},
+	[419092037] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "技术组，缩圈。",
+		id = 419092037
+	},
+	[419092038] = {
+		speaker = "",
+		prefab_name = "",
+		content = "同一时间，我的身边，两道身影如电般奔出，直追着那极速缩小的屏障而去。",
+		id = 419092038
+	},
+	[419092039] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "屏障已经来到临界值，我们只能维持十秒，两位……",
+		id = 419092039
+	},
+	[419092040] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "雪儿——",
+		id = 419092040
+	},
+	[419092041] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "明白，我们一起——",
+		id = 419092041
+	},
+	[419092042] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "把这些神谕细胞全部「吞噬」。",
+		id = 419092042
+	},
+	[419092043] = {
+		speaker = "",
+		prefab_name = "",
+		content = "世界似乎并没有什么改变，除了荒原上没有了那些林立的荆棘。",
+		id = 419092043
+	},
+	[419092044] = {
+		speaker = "",
+		prefab_name = "",
+		content = "但是很奇怪，所有人在那个瞬间都觉得有什么消失了，即便用肉眼观测到神谕细胞是不可能的事。",
+		id = 419092044
+	},
+	[419092045] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "行动结束，在刚刚的扫描里，关于神谕细胞的读数归零。",
+		id = 419092045
+	},
+	[419092046] = {
+		speaker = "卡玛乌",
+		prefab_name = "",
+		content = "虽然还需要进一步验证，但我想提前说，恭喜诸位，行动成功。",
+		id = 419092046
+	},
+	[419092047] = {
+		speaker = "",
+		prefab_name = "",
+		content = "身边大概响起了欢呼声，但我听得不太真切。",
+		id = 419092047
+	},
+	[419092048] = {
+		speaker = "",
+		prefab_name = "",
+		content = "只注意到夕阳中，有两个小小的身影正向我们走来。",
+		id = 419092048
+	},
+	[419101001] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "我听见不少人在聊东部的事，不过大家都不知道到底发生了什么。",
+		id = 419101001
+	},
+	[419101002] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "科尔盖的官方说法是发生了地震，老这样不知道民众会不会觉得我们的自然灾害也太频繁了点。",
+		id = 419101002
+	},
+	[419101003] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "没人怀疑吗，还有那么多人转移出来。",
+		id = 419101003
+	},
+	[419101004] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "只要是跟这件事有接触的普通人都做了记忆清除，就算奇怪也不会有什么太大反应。",
+		id = 419101004
+	},
+	[419101005] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "还是会有反应的，偶尔会出现一些都市传说什么的。",
+		id = 419101005
+	},
+	[419101006] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "记忆清除，虽然听你们提过，但还是觉得不可思议。",
+		id = 419101006
+	},
+	[419101007] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "身边发生着这么多事，大家却一无所知，只是普通的生活着。",
+		id = 419101007
+	},
+	[419101008] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "就是要这个效果，大家平平淡淡地生活才好。",
+		id = 419101008
+	},
+	[419101009] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "有一天我们的世界也能回归平淡的生活就好了。",
+		id = 419101009
+	},
+	[419101010] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "一定会有这么一天的。\n因为这就是神机使的使命。",
+		id = 419101010
+	},
+	[419101011] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你们回去的事，科尔盖在全力研究了，我们也会催催大国主。",
+		id = 419101011
+	},
+	[419101012] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "大国主她还好吗？\n她看起来比我们还焦虑……",
+		id = 419101012
+	},
+	[419101013] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "是吗，大国主很少有什么表情，你们跟她认识不久居然能看出她的心情。",
+		id = 419101013
+	},
+	[419101014] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "可能大国主今天上午的表现很明显吧，我不太会读表情都感觉到了。",
+		id = 419101014
+	},
+	[419101015] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "研究，在进行中了。",
+		id = 419101015
+	},
+	[419101016] = {
+		speaker = "",
+		prefab_name = "",
+		content = "大国主站在实验室门口，脸色很平静的样子，一双手在兔兔零号的头上揉来揉去。",
+		id = 419101016
+	},
+	[419101017] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "有什么方向了吗，能不能透露一点？",
+		id = 419101017
+	},
+	[419101018] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "不要监视我的研究进度，给你们看肯定也看不懂……总之，肯定会把你们平安送回去的。",
+		id = 419101018
+	},
+	[419101019] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "谢谢，如果有什么要帮忙的叫我们就好。",
+		id = 419101019
+	},
+	[419101020] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "已经忙碌很久了，不用太勉强。",
+		id = 419101020
+	},
+	[419101021] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "……不会太久的，很快给你们答复。",
+		id = 419101021
+	},
+	[419101022] = {
+		speaker = "",
+		prefab_name = "",
+		content = "说完大国主就转身进了实验室，没过一会儿又推开门缝拿了两个兔兔机器人出来。",
+		id = 419101022
+	},
+	[419101023] = {
+		speaker = "大国主",
+		prefab_name = "1066ui_story",
+		content = "随手做的小东西，可以帮忙做点简单的工作，你们拿着玩吧。",
+		id = 419101023
+	},
+	[419101024] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "的确，我想大国主也有和自己较劲的意思吧。",
+		id = 419101024
+	},
+	[419101025] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "毕竟很少有能难住她的研究。",
+		id = 419101025
+	},
+	[419101026] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "不过大国主说有办法多少就是有方向了，否则她会直接说不做的。",
+		id = 419101026
+	},
+	[419101027] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这段时间你们就在深空之眼好好休息一下吧。",
+		id = 419101027
+	},
+	[419101028] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "待在这里总是要你们照顾，这些日子麻烦你们了。",
+		id = 419101028
+	},
+	[419101029] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "你们可是平定危机的功臣，大家欢迎还来不及。",
+		id = 419101029
+	},
+	[419101030] = {
+		speaker = "薇儿丹蒂",
+		prefab_name = "10102ui_story",
+		content = "对啊，你们一来就卷进了战斗，都没有好好在艾因索菲玩玩呢。",
+		id = 419101030
+	},
+	[419101031] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "功臣什么的……这是大家每个人都拼尽全力的结果。",
+		id = 419101031
+	},
+	[419101032] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "看到了你们消灭神谕细胞的场景，反而给了我们不少信心。",
+		id = 419101032
+	},
+	[419101033] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "虽然方法不能复制，但是有很多战术思路，回去以后说不定也能用上。",
+		id = 419101033
+	},
+	[419101034] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "和你们一起守护他人的感觉，也很好。",
+		id = 419101034
+	},
+	[419101035] = {
+		speaker = "",
+		prefab_name = "",
+		content = "刚吃过饭，亚莉莎就收到了来自托特的传讯。",
+		id = 419101035
+	},
+	[419101036] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "托特，有什么事吗？",
+		id = 419101036
+	},
+	[419101037] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "收到点东西，寄给你的，不知道为什么送到科尔盖来了。",
+		id = 419101037
+	},
+	[419101038] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "东西，别人给我的？",
+		id = 419101038
+	},
+	[419101039] = {
+		speaker = "托特",
+		prefab_name = "1095ui_story",
+		content = "一对父母带着一个小女孩来的，说要送给科尔盖的亚莉莎姐姐。",
+		id = 419101039
+	},
+	[419101040] = {
+		speaker = "",
+		prefab_name = "",
+		content = "赶回深空之眼，礼盒也才寄到，亚莉莎拆开盒子，发现是盒码得整整齐齐的零食，和一幅简笔画。",
+		id = 419101040
+	},
+	[419101041] = {
+		speaker = "",
+		prefab_name = "",
+		content = "画纸上，一个画风异常粗糙手臂异常粗壮的少女，扛起了半边倒塌的房子。",
+		id = 419101041
+	},
+	[419101042] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "这画上画的是你？你在她心里很魁梧嘛。",
+		id = 419101042
+	},
+	[419101043] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "「要成为像姐姐一样厉害的人。」",
+		id = 419101043
+	},
+	[419101044] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "还收获了粉丝，她以后一定会想你的。",
+		id = 419101044
+	},
+	[419101045] = {
+		speaker = "亚莉莎",
+		prefab_name = "1045ui_story",
+		content = "和人结下羁绊，在危险中守护他们，这大概就是我战斗的意义吧。",
+		id = 419101045
+	},
+	[419101046] = {
+		speaker = "雪儿",
+		prefab_name = "1046ui_story",
+		content = "不知道什么时候就会离开，但能和你们有这样一段经历，我很开心。",
+		id = 419101046
+	},
+	[419101047] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "无论以后在哪里，你们的付出都一定会有回报的。",
+		id = 419101047
+	},
+	[419101048] = {
+		speaker = "我",
+		prefab_name = "",
+		content = "等你们回去的那一天，也请带着盖亚的大家的祝福走下去吧。",
+		id = 419101048
 	}
 }

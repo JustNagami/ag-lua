@@ -2412,6 +2412,82 @@
 			-4.542
 		}
 	},
+	chat_6036 = {
+		type = "chat",
+		name = "chat_6036",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6036聊天",
+		sceneName = "",
+		position = {
+			-2.2,
+			3.11,
+			2.75
+		},
+		rotate = {
+			26.149,
+			127.102,
+			13.561
+		}
+	},
+	playerInfo_6036 = {
+		type = "playerInfo",
+		name = "playerInfo_6036",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6036玩家信息界面",
+		sceneName = "",
+		position = {
+			-2.755,
+			3.057,
+			3.34
+		},
+		rotate = {
+			21.178,
+			126.269,
+			8.523
+		}
+	},
+	chat_6037 = {
+		type = "chat",
+		name = "chat_6037",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6037聊天",
+		sceneName = "",
+		position = {
+			-0.11,
+			2.02,
+			3.33
+		},
+		rotate = {
+			1.516,
+			165.565,
+			-9.515
+		}
+	},
+	playerInfo_6037 = {
+		type = "playerInfo",
+		name = "playerInfo_6037",
+		pictureName = "",
+		multiscene = 1,
+		fieldOfView = 27,
+		desc = "6037玩家信息界面",
+		sceneName = "",
+		position = {
+			0.441,
+			1.615,
+			5.196
+		},
+		rotate = {
+			3.054,
+			174.092,
+			6.977
+		}
+	},
 	get_id_list_by_fieldOfView = {
 		[26] = {
 			"barbecue"
@@ -2564,7 +2640,11 @@
 			"chat_6033",
 			"playerInfo_6033",
 			"chat_6034",
-			"playerInfo_6034"
+			"playerInfo_6034",
+			"chat_6036",
+			"playerInfo_6036",
+			"chat_6037",
+			"playerInfo_6037"
 		}
 	}
 }

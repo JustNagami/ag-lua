@@ -2783,8 +2783,14 @@
 		spec_char = {
 			1072
 		},
-		strengthen_description = {},
-		simple_strength_description = {}
+		strengthen_description = {
+			107241,
+			220107201
+		},
+		simple_strength_description = {
+			107241,
+			"当百解·禄良装备时，获得以下效果。\n<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107202)>「瑞币」</material></color>的持续时间延长。\n<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107202)>「瑞币」</material></color>的协同攻击附加的风属性抗性降低效果可叠加。\n<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107202)>「瑞币」</material></color>效果结束时，自身以外的队友恢复奥义值，并在跟随的修正者位置产生爆炸，造成风属性伤害。爆炸会对命中的敌人附加破甲状态。\n当闪避效果不处于冷却状态时，<color=#297DE0>「辟邪奇术」</color>的最后一段攻击命中时也会触发闪避效果。<color=#297DE0>「辟邪奇术」</color>的最后一段攻击命中后，自身奥义的剩余冷却时间缩短。\n施放奥义后或连携奥义时，获得<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107201)>「财运」</material></color>。\n奥义获得率提高。\n附加<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107202)>「瑞币」</material></color>时，若全队伍评分值获得率加和高于一定值，则<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(107202)>「瑞币」</material></color>跟随的队友独立伤害提高。"
+		}
 	},
 	[107401] = {
 		simple_description = "当巡天·英招装备时，获得以下效果。\n技能一、二、三基础伤害提高。\n衍生技能可以存在三个；移动闪避后替换衍生技能不再需要神能，施放衍生技能时不再消耗神能。\n闪避后，自身独立伤害提高。",
@@ -3687,6 +3693,124 @@
 		strengthen_description = {},
 		simple_strength_description = {}
 	},
+	[104501] = {
+		simple_description = "当赤音·亚莉莎装备时，获得以下效果。\n每次施放<color=#297DE0>「斩命掠袭」</color>时，火属性伤害提高、独立伤害提高。\n当前<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(104601)>「爆发指数」</material></color>点数高于一定值时，普通攻击伤害提高、技能伤害提高。\n进入<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(104503)>「神机受控」</material></color>状态时，若不处于<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(104503)>「神机受控」</material></color>状态，则重置<color=#297DE0>「斩命掠袭」</color>的剩余冷却时间，之后一定时间内，施放<color=#297DE0>「斩命掠袭」</color>后该技能的剩余冷却时间缩短，并获得神能，以上效果在持续时间内<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(104504)>「归零架势」</material></color>成功格挡攻击时，重置效果的持续时间。",
+		id = 104501,
+		description = {
+			500104501
+		},
+		level_param = {
+			{
+				40,
+				50,
+				60,
+				70,
+				80,
+				90,
+				100
+			},
+			{
+				40,
+				50,
+				60,
+				70,
+				80,
+				90,
+				100
+			},
+			{
+				100,
+				100,
+				100,
+				100,
+				100,
+				100,
+				100
+			},
+			{
+				100,
+				100,
+				100,
+				100,
+				100,
+				100,
+				100
+			},
+			{
+				50,
+				50,
+				50,
+				50,
+				50,
+				50,
+				50
+			},
+			{
+				16,
+				20,
+				24,
+				28,
+				32,
+				36,
+				40
+			}
+		},
+		spec_char = {
+			1045
+		},
+		strengthen_description = {},
+		simple_strength_description = {}
+	},
+	[104601] = {
+		simple_description = "当血弹·雪儿装备时，获得以下效果。\n当<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(104601)>「爆发指数」</material></color>不低于一定值时，<color=#297DE0>「贯穿弹」</color>攻击命中瞬间会心率提高。\n<color=#297DE0>「回旋投掷」</color>每次攻击期间，若<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(104601)>「爆发指数」</material></color>不低于一定值时，则触发不同数量的<color=#297DE0>「贯穿弹」</color>。\n自身或者队友格挡敌人攻击成功时，对攻击者触发<color=#297DE0>「贯穿弹」</color>；通过该途径触发<color=#297DE0>「贯穿弹」</color>后的一定时间内再次触发时，<color=#297DE0>「贯穿弹」</color>攻击触发额外数量。\n通过该专属钥从途径触发的<color=#297DE0>「贯穿弹」</color>，造成冰属性伤害。\n每次施放消耗<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(104603)>「血点」</material></color>标记的攻击会对命中的敌人附加<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(104605)>「血怒」</material></color>状态；根据敌人拥有的<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(104605)>「血怒」</material></color>状态的层数，若自身生命值不高于一定值，则自身攻击命中瞬间独立伤害提高。\n生命值变为最低时，获得无敌效果；处于空中时，施放<color=#297DE0>「血之觉醒」</color>、<color=#297DE0>「血之枪弹」</color>时，获得短暂的无敌效果；处于空中时，施放普通攻击后衔接施放的<color=#297DE0>「血之迅击」</color>的下落攻击时，获得短暂的无敌效果。",
+		id = 104601,
+		description = {
+			500104601
+		},
+		level_param = {
+			{
+				120,
+				150,
+				180,
+				210,
+				240,
+				270,
+				300
+			},
+			{
+				1000,
+				1000,
+				1000,
+				1000,
+				1000,
+				1000,
+				1000
+			},
+			{
+				280,
+				350,
+				420,
+				490,
+				560,
+				630,
+				700
+			},
+			{
+				30,
+				30,
+				30,
+				30,
+				30,
+				30,
+				30
+			}
+		},
+		spec_char = {
+			1046
+		},
+		strengthen_description = {},
+		simple_strength_description = {}
+	},
 	[124801] = {
 		simple_description = "当神威·前鬼坊天狗装备时，获得以下效果。\n出场时，获得满个数的<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(124803)>「神威」</material></color>标记。\n施放<color=#297DE0>「跃电斩」</color>、普通攻击最后一段、蓄力攻击期间，自身获得霸体效果，受到伤害降低。\n普通攻击最后一段的最后一次攻击、满蓄力的蓄力攻击命中会对命中的敌人附加麻痹状态，附加<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(124806)>「电荷过载」</material></color>状态。\n自身攻击处于<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(124806)>「电荷过载」</material></color>状态的敌人时，攻击命中瞬间独立伤害提高；若处于<color=#297DE0><material=underline c=#297DE0 h=2 event=terminology args=(124806)>「电荷过载」</material></color>的敌人同时处于破甲状态或雷属性抗性降低状态，则攻击命中瞬间独立伤害额外提高。",
 		id = 124801,
@@ -4380,6 +4504,8 @@
 		102001,
 		115601,
 		108901,
+		104501,
+		104601,
 		124801,
 		113301,
 		103401,

@@ -6845,7 +6845,455 @@
 			}
 		}
 	},
+	{
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1045,
+		activity_id = 342241,
+		character = 400,
+		id = 198,
+		stage_name = "赤音·亚莉莎",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2204
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1045
+				}
+			}
+		}
+	},
+	{
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1045,
+		activity_id = 342241,
+		character = 600,
+		id = 199,
+		stage_name = "赤音·亚莉莎",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2204
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1045
+				}
+			}
+		}
+	},
+	[201] = {
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1045,
+		activity_id = 342242,
+		character = 600,
+		id = 201,
+		stage_name = "赤音·亚莉莎",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2204
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1045
+				}
+			}
+		}
+	},
+	[202] = {
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1045,
+		activity_id = 342243,
+		character = 400,
+		id = 202,
+		stage_name = "赤音·亚莉莎",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2204
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1045
+				}
+			}
+		}
+	},
+	[203] = {
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1045,
+		activity_id = 342243,
+		character = 600,
+		id = 203,
+		stage_name = "赤音·亚莉莎",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2204
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1045
+				}
+			}
+		}
+	},
+	[204] = {
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1046,
+		activity_id = 342244,
+		character = 400,
+		id = 204,
+		stage_name = "血弹·雪儿",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2206
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1046
+				}
+			}
+		}
+	},
+	[205] = {
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1046,
+		activity_id = 342244,
+		character = 600,
+		id = 205,
+		stage_name = "血弹·雪儿",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2206
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1046
+				}
+			}
+		}
+	},
+	[207] = {
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1046,
+		activity_id = 342245,
+		character = 600,
+		id = 207,
+		stage_name = "血弹·雪儿",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2206
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1046
+				}
+			}
+		}
+	},
+	[208] = {
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1046,
+		activity_id = 342246,
+		character = 400,
+		id = 208,
+		stage_name = "血弹·雪儿",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2206
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1046
+				}
+			}
+		}
+	},
+	[209] = {
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1046,
+		activity_id = 342246,
+		character = 600,
+		id = 209,
+		stage_name = "血弹·雪儿",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		affix_id = {
+			2206
+		},
+		limit_hero = {
+			{
+				1,
+				{
+					1046
+				}
+			}
+		}
+	},
+	[210] = {
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		affix_id = "",
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1045,
+		activity_id = 342247,
+		character = 400,
+		id = 210,
+		stage_name = "赤音·亚莉莎&血弹·雪儿",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		limit_hero = {
+			{
+				7,
+				{
+					1045,
+					1046
+				}
+			}
+		}
+	},
+	[211] = {
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		affix_id = "",
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1045,
+		activity_id = 342247,
+		character = 600,
+		id = 211,
+		stage_name = "赤音·亚莉莎&血弹·雪儿",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		limit_hero = {
+			{
+				7,
+				{
+					1045,
+					1046
+				}
+			}
+		}
+	},
+	[212] = {
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		affix_id = "",
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1045,
+		activity_id = 342248,
+		character = 400,
+		id = 212,
+		stage_name = "赤音·亚莉莎&血弹·雪儿",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		limit_hero = {
+			{
+				7,
+				{
+					1045,
+					1046
+				}
+			}
+		}
+	},
+	[214] = {
+		weapon = 1,
+		stage_id = 6040124,
+		score = 20000,
+		affix_id = "",
+		stage_target = 4020,
+		stage_type = 1,
+		hero = 1045,
+		activity_id = 342249,
+		character = 400,
+		id = 214,
+		stage_name = "赤音·亚莉莎&血弹·雪儿",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		limit_hero = {
+			{
+				7,
+				{
+					1045,
+					1046
+				}
+			}
+		}
+	},
+	[215] = {
+		weapon = 5,
+		stage_id = 6040126,
+		score = 20000,
+		affix_id = "",
+		stage_target = 4020,
+		stage_type = 3,
+		hero = 1045,
+		activity_id = 342249,
+		character = 600,
+		id = 215,
+		stage_name = "赤音·亚莉莎&血弹·雪儿",
+		attribute_factor = {
+			1000,
+			1000,
+			1000
+		},
+		limit_hero = {
+			{
+				7,
+				{
+					1045,
+					1046
+				}
+			}
+		}
+	},
 	get_id_list_by_activity_id = {
+		[342249] = {
+			214,
+			215
+		},
+		[342248] = {
+			212
+		},
+		[342247] = {
+			210,
+			211
+		},
+		[342246] = {
+			208,
+			209
+		},
+		[342245] = {
+			207
+		},
+		[342244] = {
+			204,
+			205
+		},
+		[342243] = {
+			202,
+			203
+		},
+		[342242] = {
+			201
+		},
+		[342241] = {
+			198,
+			199
+		},
 		[332243] = {
 			195,
 			196,
@@ -7387,6 +7835,21 @@
 		194,
 		195,
 		196,
-		197
+		197,
+		198,
+		199,
+		201,
+		202,
+		203,
+		204,
+		205,
+		207,
+		208,
+		209,
+		210,
+		211,
+		212,
+		214,
+		215
 	}
 }

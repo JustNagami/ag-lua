@@ -952,7 +952,7 @@ function var_0_0.RefreshScene(arg_65_0)
 
 		manager.loadScene:SetSceneDisableAutoChange(true)
 
-		local var_65_2 = manager.loadScene:GetHomeShouldLoadSceneName(var_65_1)
+		local var_65_2 = manager.loadScene:GetHomeShouldLoadSceneName(var_65_1, true)
 
 		manager.loadScene:SetSceneDisableAutoChange(false)
 
@@ -1165,7 +1165,7 @@ function var_0_0.RefreshBgImage(arg_90_0)
 
 		manager.loadScene:SetSceneDisableAutoChange(true)
 
-		local var_90_2 = manager.loadScene:GetHomeShouldLoadSceneName(var_90_1)
+		local var_90_2 = manager.loadScene:GetHomeShouldLoadSceneName(var_90_1, arg_90_0.isForeign_)
 
 		manager.loadScene:SetSceneDisableAutoChange(false)
 

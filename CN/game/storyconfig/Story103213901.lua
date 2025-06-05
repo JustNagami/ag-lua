@@ -6456,7 +6456,7 @@
 				arg_189_1.bgs_[var_192_0] = var_192_1
 			end
 
-			local var_192_2 = 1.5
+			local var_192_2 = 1.534
 
 			if var_192_2 < arg_189_1.time_ and arg_189_1.time_ <= var_192_2 + arg_192_0 then
 				local var_192_3 = manager.ui.mainCamera.transform.localPosition

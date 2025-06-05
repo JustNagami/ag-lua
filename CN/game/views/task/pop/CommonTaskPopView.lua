@@ -66,6 +66,7 @@ function var_0_0.OnExit(arg_8_0)
 end
 
 function var_0_0.Dispose(arg_9_0)
+	var_0_0.super.Dispose(arg_9_0)
 	arg_9_0.constVar.taskListModule:Dispose()
 	var_0_0.super.Dispose(arg_9_0)
 end

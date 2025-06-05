@@ -7147,7 +7147,7 @@
 		id = "activity_summer_swimsuit_preheat_info_describe",
 		value2 = "",
 		value = {
-			"Widget/Version/SummerUI_3_3/SummerUI_3_3_PreheatUI/SummerUI_3_3_PreheatDescription_01"
+			"Widget/Version/Alone_SummerUI_PreheatUI/Alone_SummerUI_PreheatDescription_01"
 		}
 	},
 	activity_emergency_limit = {
@@ -8115,6 +8115,72 @@
 		value2 = "",
 		value = {
 			"Widget/System/Main_T0SceneGame/102003/102003_Description_03"
+		}
+	},
+	activity_god_eater_week_boss = {
+		id = "activity_god_eater_week_boss",
+		value2 = "",
+		value = {
+			{
+				5250211,
+				20000000,
+				5250201,
+				1210201
+			},
+			{
+				5250212,
+				30000000,
+				5250201,
+				1210202
+			},
+			{
+				5250213,
+				40000000,
+				5250201,
+				1210203
+			}
+		}
+	},
+	godeater_goldminer_game_des = {
+		id = "godeater_goldminer_game_des",
+		value2 = "",
+		value = {
+			"Widget/Version/V4_2_GodEaterUI/V4_2_GodEaterUI_GoldenMiner/V4_2_GodEater_GoldenMiner_Description_01",
+			"Widget/Version/V4_2_GodEaterUI/V4_2_GodEaterUI_GoldenMiner/V4_2_GodEater_GoldenMiner_Description_02"
+		}
+	},
+	godeater_subactivity_unlock1 = {
+		id = "godeater_subactivity_unlock1",
+		value2 = "",
+		value = {
+			2
+		}
+	},
+	summer_preheat_foolproof_time = {
+		id = "summer_preheat_foolproof_time",
+		value2 = "",
+		value = {
+			15
+		}
+	},
+	summer_preheat_foolproof_range = {
+		id = "summer_preheat_foolproof_range",
+		value2 = "",
+		value = {
+			{
+				1,
+				{
+					3,
+					3
+				}
+			},
+			{
+				2,
+				{
+					2,
+					2
+				}
+			}
 		}
 	}
 }

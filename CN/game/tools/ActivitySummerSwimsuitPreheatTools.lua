@@ -1,9 +1,12 @@
 ﻿return {
 	GetCfgStageImage = function(arg_1_0)
-		local var_1_0 = "TextureBg/Version/SummerUI_3_3/SummerUI_3_3_PreheatUI/"
-		local var_1_1 = arg_1_0.pic_name
+		local var_1_0 = arg_1_0.activity_id
+		local var_1_1 = ActivityCfg[var_1_0].activity_theme
+		local var_1_2
+		local var_1_3 = var_1_1 == ActivityConst.THEME.ACTIVITY_4_2 and "TextureConfig/VersionUI/V4_2_GodEaterUI/Alone_SummerUI_PreheatUI/" or "TextureBg/Version/SummerUI_3_3/SummerUI_3_3_PreheatUI/"
+		local var_1_4 = arg_1_0.pic_name
 
-		return getSpriteWithoutAtlas(var_1_0 .. var_1_1)
+		return getSpriteWithoutAtlas(var_1_3 .. var_1_4)
 	end,
 	GetCfgMainActivityId = function(arg_2_0)
 		return ActivityTools.GetMainActivityId(arg_2_0.activity_id)

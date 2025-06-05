@@ -911,9 +911,15 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_JJT_MAP_GAME == var_5_0 then
 		OpenPageUntilLoaded("/kagutsuchiWork", {})
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_PT_SCROLL == var_5_0 then
-		OpenPageUntilLoaded("/activityPtScroll", {
-			mainActivityID = arg_5_0:GetActivityID()
-		})
+		if arg_5_0:GetActivityID() == ActivityConst.ACTIVITY_PTSCROLL_4_2 then
+			OpenPageUntilLoaded("/activityPtScroll_4_2", {
+				mainActivityID = arg_5_0:GetActivityID()
+			})
+		else
+			OpenPageUntilLoaded("/activityPtScroll", {
+				mainActivityID = arg_5_0:GetActivityID()
+			})
+		end
 	elseif BattleConst.STAGE_TYPE_NEW.ACTIVITY_ATTRIBUTE_ARENA == var_5_0 then
 		OpenPageUntilLoaded("/activityAttributeArena", {
 			activityID = arg_5_0:GetActivityID()
@@ -1107,6 +1113,14 @@ function var_0_0.QuitBattle(arg_5_0, arg_5_1, arg_5_2)
 				stage_id = var_5_110,
 				isFailed = arg_5_1
 			})
+		end
+	elseif BattleConst.STAGE_TYPE_NEW.GOD_EATER_BATTLE then
+		local var_5_113 = arg_5_0:GetViewType()
+
+		if var_5_113 == "dailyMonster" then
+			OpenPageUntilLoaded("/eatGodBattleEnterView")
+		elseif var_5_113 == "weekBoss" then
+			OpenPageUntilLoaded("/weekBossMainView")
 		end
 	end
 end

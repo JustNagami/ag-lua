@@ -378,6 +378,10 @@ function var_0_0.GetItemSourceList(arg_18_0)
 			table.remove(var_18_0, iter_18_4)
 
 			_, var_18_4 = SourceTool.GetJumpDataByServantSpecialType(arg_18_0)
+		elseif var_18_0[iter_18_4] and var_18_0[iter_18_4][1] == ViewConst.JUMP_SPECIAL_ID.GODEATER_SPECIAL_SERVANT then
+			table.remove(var_18_0, iter_18_4)
+
+			_, var_18_4 = SourceTool.GetGodEaterSourece(arg_18_0)
 		elseif var_18_0[iter_18_4] and var_18_0[iter_18_4][1] == ViewConst.JUMP_SPECIAL_ID.EQUIP_SPECIAL_SOURCE then
 			local var_18_6 = SourceTool.GetJumpDataByEquipSpecialType(var_18_0, arg_18_0)
 
@@ -528,6 +532,71 @@ function var_0_0.SortRewardItemList(arg_21_0)
 	end)
 
 	return arg_21_0
+end
+
+local function var_0_2(arg_23_0, arg_23_1, arg_23_2)
+	local var_23_0 = arg_23_2.type
+	local var_23_1 = table.indexof(arg_23_0, var_23_0)
+
+	if var_23_1 and arg_23_1[var_23_0] then
+		local var_23_2 = table.indexof(arg_23_1[var_23_0], arg_23_2.id)
+
+		if var_23_2 then
+			return var_23_1, var_23_2
+		else
+			return false
+		end
+	end
+
+	return var_23_1
+end
+
+function var_0_0.SortRewardItemList(arg_24_0)
+	local var_24_0 = {
+		ItemConst.ITEM_TYPE.HERO,
+		ItemConst.ITEM_TYPE.HERO_SKIN,
+		ItemConst.ITEM_TYPE.SCENE,
+		ItemConst.ITEM_TYPE.WEAPON_SERVANT,
+		ItemConst.ITEM_TYPE.GIFT,
+		ItemConst.ITEM_TYPE.CURRENCY,
+		ItemConst.ITEM_TYPE.PORTRAIT,
+		ItemConst.ITEM_TYPE.FRAME,
+		ItemConst.ITEM_TYPE.STICKER,
+		ItemConst.ITEM_TYPE.DORM_FURNITURE
+	}
+	local var_24_1 = {
+		[ItemConst.ITEM_TYPE.CURRENCY] = {
+			1,
+			30,
+			31,
+			32
+		}
+	}
+
+	table.sort(arg_24_0, function(arg_25_0, arg_25_1)
+		local var_25_0 = arg_25_0.id
+		local var_25_1 = arg_25_1.id
+		local var_25_2 = ItemCfg[var_25_0]
+		local var_25_3 = ItemCfg[var_25_1]
+		local var_25_4, var_25_5 = var_0_2(var_24_0, var_24_1, var_25_2)
+		local var_25_6, var_25_7 = var_0_2(var_24_0, var_24_1, var_25_3)
+
+		if var_25_4 and var_25_6 then
+			local var_25_8 = var_25_4 == var_25_6
+
+			if var_25_8 and var_25_5 and var_25_7 then
+				return var_25_5 < var_25_7
+			elseif not var_25_8 then
+				return var_25_4 < var_25_6
+			end
+		elseif var_25_4 ~= var_25_6 then
+			return var_25_6 == false
+		end
+
+		return rewardSortFunc(arg_25_0, arg_25_1)
+	end)
+
+	return arg_24_0
 end
 
 return var_0_0

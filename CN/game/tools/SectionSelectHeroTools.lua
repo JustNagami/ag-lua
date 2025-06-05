@@ -35,7 +35,8 @@ function var_0_0.CreateClassDic()
 		[BattleConst.STAGE_TYPE_NEW.AREA_BATTLE] = AreaBattleSelectHeroProxy,
 		[BattleConst.STAGE_TYPE_NEW.SEQUENTIAL_BATTLE] = SequentialBattleSelectHeroProxy,
 		[BattleConst.STAGE_TYPE_NEW.RACE_TRIAL] = ActivityRaceTrialSelectHeroProxy,
-		[BattleConst.STAGE_TYPE_NEW.OSIRIS_PLAY_GAME] = OsirisPlayGameSelectHeroProxy
+		[BattleConst.STAGE_TYPE_NEW.OSIRIS_PLAY_GAME] = OsirisPlayGameSelectHeroProxy,
+		[BattleConst.STAGE_TYPE_NEW.GOD_EATER_BATTLE] = GodEaterBattleSelectHeroProxy
 	}
 	var_0_0.sepecialProxyClassDic = {
 		[BattleConst.STAGE_TYPE_NEW.MYTHIC_FINAL] = {

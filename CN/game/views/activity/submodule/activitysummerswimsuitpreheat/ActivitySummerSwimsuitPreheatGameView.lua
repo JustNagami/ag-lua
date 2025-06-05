@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("ActivitySummerSwimsuitPreheatGameView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "Widget/Version/SummerUI_3_3/SummerUI_3_3_PreheatUI/SummerUI_3_3_PreheatGameUI"
+	return "Widget/Version/Alone_SummerUI_PreheatUI/Alone_SummerUI_PreheatGameUI"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -17,6 +17,7 @@ end
 
 function var_0_0.InitUI(arg_4_0)
 	arg_4_0:BindCfgUI()
+	arg_4_0:CreateControllerItem()
 end
 
 function var_0_0.AddUIListener(arg_5_0)
@@ -101,132 +102,190 @@ function var_0_0.StartTimer(arg_10_0)
 
 		arg_10_0.audioTimer_:Start()
 	end
+
+	arg_10_0:StopControllerTipsTimer()
+
+	local var_10_0 = GameSetting.summer_preheat_foolproof_time.value[1]
+
+	arg_10_0.canShowControllerTips_ = false
+	arg_10_0.controllerTipsTimer_ = Timer.New(function()
+		arg_10_0.canShowControllerTips_ = true
+	end, var_10_0, 1)
+
+	arg_10_0.controllerTipsTimer_:Start()
 end
 
-function var_0_0.StopTimer(arg_13_0)
-	if arg_13_0.updateTimer_ then
-		arg_13_0.updateTimer_:Stop()
+function var_0_0.StopTimer(arg_14_0)
+	if arg_14_0.updateTimer_ then
+		arg_14_0.updateTimer_:Stop()
 
-		arg_13_0.updateTimer_ = nil
+		arg_14_0.updateTimer_ = nil
 	end
 
-	if arg_13_0.audioTimer_ then
-		arg_13_0.audioTimer_:Stop()
+	if arg_14_0.audioTimer_ then
+		arg_14_0.audioTimer_:Stop()
 
-		arg_13_0.audioTimer_ = nil
+		arg_14_0.audioTimer_ = nil
+	end
+
+	arg_14_0:StopControllerTipsTimer()
+end
+
+function var_0_0.StopControllerTipsTimer(arg_15_0)
+	if arg_15_0.controllerTipsTimer_ then
+		arg_15_0.controllerTipsTimer_:Stop()
+
+		arg_15_0.controllerTipsTimer_ = nil
 	end
 end
 
 local var_0_1 = require("cjson")
 
-function var_0_0.UpdateGameState(arg_14_0)
-	local var_14_0 = FloGameLuaBridge.GetGameData()
-	local var_14_1 = var_0_1.decode(var_14_0)
+function var_0_0.UpdateGameState(arg_16_0)
+	local var_16_0 = FloGameLuaBridge.GetGameData()
+	local var_16_1 = var_0_1.decode(var_16_0)
 
-	AudioManager.Instance:SetAisacControlOfCategory("music", "phase_controller", var_14_1.percent)
+	AudioManager.Instance:SetAisacControlOfCategory("music", "phase_controller", var_16_1.percent)
 
-	local var_14_2 = var_14_1.value1
-	local var_14_3 = var_14_1.value2
+	local var_16_2 = var_16_1.value1
+	local var_16_3 = var_16_1.value2
 
-	arg_14_0.tickAudioPlayRate_ = 0.005 / math.max(math.abs(var_14_2 - arg_14_0.lastValue1_), math.abs(var_14_3 - arg_14_0.lastValue2_))
-	arg_14_0.lastValue1_ = var_14_2
-	arg_14_0.lastValue2_ = var_14_3
+	arg_16_0.tickAudioPlayRate_ = 0.005 / math.max(math.abs(var_16_2 - arg_16_0.lastValue1_), math.abs(var_16_3 - arg_16_0.lastValue2_))
+	arg_16_0.lastValue1_ = var_16_2
+	arg_16_0.lastValue2_ = var_16_3
 
-	if var_14_1.isWin then
-		arg_14_0:WinGame()
+	arg_16_0:UpdateControllerItem(var_16_1)
+
+	if var_16_1.isWin then
+		arg_16_0:WinGame()
 	end
 end
 
-function var_0_0.AudioTick(arg_15_0)
-	if not arg_15_0.tickAudioPlayRate_ then
+function var_0_0.AudioTick(arg_17_0)
+	if not arg_17_0.tickAudioPlayRate_ then
 		return
 	end
 
-	local var_15_0 = Time.time
+	local var_17_0 = Time.time
 
-	if arg_15_0.tickAudioPlayRate_ < var_15_0 - arg_15_0.lastAudioPlayTime_ then
+	if arg_17_0.tickAudioPlayRate_ < var_17_0 - arg_17_0.lastAudioPlayTime_ then
 		manager.audio:PlayEffect("minigame_activity_3_3", "minigame_activity_3_3_preheat_gear", "")
 
-		arg_15_0.lastAudioPlayTime_ = var_15_0
+		arg_17_0.lastAudioPlayTime_ = var_17_0
 	end
 end
 
-function var_0_0.StartGame(arg_16_0)
-	local var_16_0 = {
-		gameType = arg_16_0.cfg_.type,
-		winBlur = arg_16_0.cfg_.settings,
-		winDistance = arg_16_0.cfg_.settings
+function var_0_0.StartGame(arg_18_0)
+	arg_18_0:InitControllerItem()
+
+	local var_18_0 = {
+		gameType = arg_18_0.cfg_.type,
+		winBlur = arg_18_0.cfg_.settings,
+		winDistance = arg_18_0.cfg_.settings
 	}
-	local var_16_1 = var_0_1.encode(var_16_0)
+	local var_18_1 = var_0_1.encode(var_18_0)
 
-	FloGameLuaBridge.SetGameData(var_16_1)
+	FloGameLuaBridge.SetGameData(var_18_1)
 	FloGameLuaBridge.StartGame()
-	arg_16_0:StartTimer()
+	arg_18_0:StartTimer()
 
-	arg_16_0.lastValue1_ = 1
-	arg_16_0.lastValue2_ = 1
-	arg_16_0.lastAudioPlayTime_ = 0
-	arg_16_0.tickAudioPlayRate_ = nil
+	arg_18_0.lastValue1_ = 1
+	arg_18_0.lastValue2_ = 1
+	arg_18_0.lastAudioPlayTime_ = 0
+	arg_18_0.tickAudioPlayRate_ = nil
 
-	for iter_16_0 = 1, 4 do
-		local var_16_2 = arg_16_0["playImg_" .. iter_16_0]
+	for iter_18_0 = 1, 4 do
+		local var_18_2 = arg_18_0["playImg_" .. iter_18_0]
 
-		if var_16_2 then
-			var_16_2.sprite = ActivitySummerSwimsuitPreheatTools.GetCfgStageImage(arg_16_0.cfg_)
+		if var_18_2 then
+			var_18_2.sprite = ActivitySummerSwimsuitPreheatTools.GetCfgStageImage(arg_18_0.cfg_)
 		end
 	end
 end
 
-function var_0_0.StopGame(arg_17_0)
+function var_0_0.StopGame(arg_19_0)
 	FloGameLuaBridge.StopGame()
-	arg_17_0:StopTimer()
+	arg_19_0:StopTimer()
 end
 
-function var_0_0.WinGame(arg_18_0)
-	arg_18_0:StopTimer()
-	arg_18_0:StopGame()
+function var_0_0.WinGame(arg_20_0)
+	arg_20_0:StopTimer()
+	arg_20_0:StopGame()
 
-	local var_18_0 = ActivitySummerSwimsuitPreheatTools.GetCfgMainActivityId(arg_18_0.cfg_)
+	local var_20_0 = ActivitySummerSwimsuitPreheatTools.GetCfgMainActivityId(arg_20_0.cfg_)
 
-	ActivitySummerSwimsuitPreheatAction.SendStageClear(var_18_0, arg_18_0.cfg_.id, function()
-		ActivitySummerSwimsuitPreheatAction.UpdateRedPoint(var_18_0)
-		arg_18_0:GotoResult()
+	ActivitySummerSwimsuitPreheatAction.SendStageClear(var_20_0, arg_20_0.cfg_.id, function()
+		ActivitySummerSwimsuitPreheatAction.UpdateRedPoint(var_20_0)
+		arg_20_0:GotoResult()
 	end)
 end
 
-function var_0_0.GotoResult(arg_20_0)
-	if arg_20_0.isAniPlaying_ then
+function var_0_0.GotoResult(arg_22_0)
+	if arg_22_0.isAniPlaying_ then
 		return
 	end
 
-	arg_20_0:PlayEffects(function()
-		arg_20_0:Back()
+	arg_22_0:PlayEffects(function()
+		arg_22_0:Back()
 		JumpTools.GoToSystem("activitySummerSwimsuitPreheatStage", {
 			isWin = true,
-			cfgId = arg_20_0.cfgId_
+			cfgId = arg_22_0.cfgId_
 		})
 	end)
 end
 
-function var_0_0.PlayEffects(arg_22_0, arg_22_1)
-	arg_22_0.isAniPlaying_ = true
+function var_0_0.PlayEffects(arg_24_0, arg_24_1)
+	arg_24_0.isAniPlaying_ = true
 
-	arg_22_0.stateController_:SetSelectedState("win")
-	arg_22_0.signAni_:Play("SummerUI_3_3_PreheatGameUI_Dec", -1, 0)
-	arg_22_0.signAni_:Update(0)
-	arg_22_0.panelAni_:Play("shutter_02", -1, 0)
-	arg_22_0.panelAni_:Update(0)
+	arg_24_0.stateController_:SetSelectedState("win")
+	arg_24_0.signAni_:Play("SummerUI_3_3_PreheatGameUI_Dec", -1, 0)
+	arg_24_0.signAni_:Update(0)
+	arg_24_0.panelAni_:Play("shutter_02", -1, 0)
+	arg_24_0.panelAni_:Update(0)
 	manager.windowBar:HideBar()
-	AnimatorTools.PlayAnimationWithCallback(arg_22_0.panelAni_, "shutter_02", function()
-		arg_22_0.isAniPlaying_ = false
+	AnimatorTools.PlayAnimationWithCallback(arg_24_0.panelAni_, "shutter_02", function()
+		arg_24_0.isAniPlaying_ = false
 
-		arg_22_0:InitBar()
-		arg_22_1()
+		arg_24_0:InitBar()
+		arg_24_1()
 	end)
 end
 
-function var_0_0.Dispose(arg_24_0)
-	var_0_0.super.Dispose(arg_24_0)
+function var_0_0.CreateControllerItem(arg_26_0)
+	arg_26_0.controllerItemList_ = {}
+
+	local var_26_0 = arg_26_0.controllerItemPanelTrans_.childCount
+
+	for iter_26_0 = 1, var_26_0 do
+		local var_26_1 = arg_26_0.controllerItemPanelTrans_:GetChild(iter_26_0 - 1).gameObject
+		local var_26_2 = ActivitySummerSwimsuitPreheatControllerItem.New(var_26_1)
+
+		arg_26_0.controllerItemList_[iter_26_0] = var_26_2
+	end
+end
+
+function var_0_0.InitControllerItem(arg_27_0)
+	for iter_27_0, iter_27_1 in ipairs(arg_27_0.controllerItemList_) do
+		iter_27_1:InitData(arg_27_0.cfgId_, iter_27_0)
+	end
+end
+
+function var_0_0.UpdateControllerItem(arg_28_0, arg_28_1)
+	if not arg_28_0.canShowControllerTips_ then
+		return
+	end
+
+	for iter_28_0, iter_28_1 in ipairs(arg_28_0.controllerItemList_) do
+		iter_28_1:UpdateGameData(arg_28_1)
+	end
+end
+
+function var_0_0.Dispose(arg_29_0)
+	for iter_29_0, iter_29_1 in ipairs(arg_29_0.controllerItemList_) do
+		iter_29_1:Dispose()
+	end
+
+	var_0_0.super.Dispose(arg_29_0)
 end
 
 return var_0_0

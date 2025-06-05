@@ -34213,13 +34213,13 @@
 	},
 	[116021024] = {
 		speaker = "",
-		prefab_name = "1043ui_story",
+		prefab_name = "1037ui_story",
 		content = "不好意思，打扰了……",
 		id = 116021024
 	},
 	[116021025] = {
 		speaker = "",
-		prefab_name = "1043ui_story",
+		prefab_name = "1037ui_story",
 		content = "管理员，休，她们已经到会议室了，最好现在就过去。",
 		id = 116021025
 	},
@@ -36073,7 +36073,7 @@
 	},
 	[116061030] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "薇儿姐姐不是前几天刚和管理员来吃过吗……",
 		id = 116061030
 	},
@@ -36091,13 +36091,13 @@
 	},
 	[116061033] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "以管理员的体质，长时间没有修正者在附近会很危险，何况现在袭击修正者的凶手还没找到。",
 		id = 116061033
 	},
 	[116061034] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "这个女孩也是，听说只愿意和管理员说话。",
 		id = 116061034
 	},
@@ -36109,7 +36109,7 @@
 	},
 	[116061036] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "从诗蔻蒂拉住管理员开始，薇儿姐姐就握得我的手好疼，呜……",
 		id = 116061036
 	},
@@ -36121,7 +36121,7 @@
 	},
 	[116061038] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "小声点薇儿姐姐，我怕管理员的耳朵——",
 		id = 116061038
 	},
@@ -40675,7 +40675,7 @@
 	},
 	[116161025] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "是那个最近新开的塔列朗游乐园吗？前几天薇儿姐姐好像和管理员去过。",
 		id = 116161025
 	},
@@ -40687,7 +40687,7 @@
 	},
 	[116161027] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "呃，鬼屋之类的项目我恐怕就……",
 		id = 116161027
 	},
@@ -40699,7 +40699,7 @@
 	},
 	[116161029] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "谢谢薇儿姐姐……",
 		id = 116161029
 	},
@@ -40927,7 +40927,7 @@
 	},
 	[116171007] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "薇儿姐姐，你没事吧？",
 		id = 116171007
 	},
@@ -40939,7 +40939,7 @@
 	},
 	[116171009] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "这个海盗船动起来也不是很快呀，怎么会……",
 		id = 116171009
 	},
@@ -40957,7 +40957,7 @@
 	},
 	[116171012] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "往激流勇进的方向去了。",
 		id = 116171012
 	},
@@ -40969,7 +40969,7 @@
 	},
 	[116171014] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "别勉强呀，薇儿姐姐！",
 		id = 116171014
 	},
@@ -40993,7 +40993,7 @@
 	},
 	[116171018] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "管理员让我们留意可疑的人，薇儿姐姐，我们跟上去看看吧。",
 		id = 116171018
 	},
@@ -41755,7 +41755,7 @@
 	},
 	[116201021] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "薇儿姐姐，你好点了吗……？",
 		id = 116201021
 	},
@@ -41767,7 +41767,7 @@
 	},
 	[116201023] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "海盗船已经结束了，鬼屋项目就轮到我了……",
 		id = 116201023
 	},
@@ -41779,13 +41779,13 @@
 	},
 	[116201025] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "这个还好，我已经和她提前打过招呼了。只要我不被吓晕过去就没事。",
 		id = 116201025
 	},
 	[116201026] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "说起来，科尔盖的人好像也进鬼屋了，他们是在管理员改计划前进去的，看来科尔盖到这儿来的目的不是我们。",
 		id = 116201026
 	},
@@ -41797,7 +41797,7 @@
 	},
 	[116201028] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "团建戴着战术装备也太奇怪了吧？",
 		id = 116201028
 	},
@@ -42055,7 +42055,7 @@
 	},
 	[116201071] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "不是的，总之管理员你先……",
 		id = 116201071
 	},
@@ -42103,7 +42103,7 @@
 	},
 	[116211004] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "我们和科尔盖的人纠缠的时候，突然飘来了一团黑雾。薇儿姐姐被那团黑雾罩住，突然就变得不正常了……",
 		id = 116211004
 	},
@@ -42181,7 +42181,7 @@
 	},
 	[116211017] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "呜……我会努力的——！",
 		id = 116211017
 	},
@@ -42217,7 +42217,7 @@
 	},
 	[116211023] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "得想办法赶紧联系休老师……",
 		id = 116211023
 	},
@@ -42277,7 +42277,7 @@
 	},
 	[116211033] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "咦？！",
 		id = 116211033
 	},
@@ -42385,7 +42385,7 @@
 	},
 	[116211051] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "他很危险，管理员！",
 		id = 116211051
 	},
@@ -50401,7 +50401,7 @@
 	},
 	[116431037] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "诶？没有哦。当时管理员你一个人默默地去角落里消化了。",
 		id = 116431037
 	},
@@ -50431,7 +50431,7 @@
 	},
 	[116431042] = {
 		speaker = "",
-		prefab_name = "1211ui_story",
+		prefab_name = "1011ui_story",
 		content = "嗯，因为试营的过山车太火爆了，到最后都没排上队——哎？管理员你怎么了？",
 		id = 116431042
 	},
@@ -52423,13 +52423,13 @@
 	},
 	[120021042] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "虽然是第一次见面，但完全没有生分的感觉呢。",
 		id = 120021042
 	},
 	[120021043] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "四方院南岛代理人，陵光。这是北岛代理人执明的学生，麟钰……",
 		id = 120021043
 	},
@@ -52441,7 +52441,7 @@
 	},
 	[120021045] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "西岛代理人监兵，应该已经与两位见过了吧？",
 		id = 120021045
 	},
@@ -52453,7 +52453,7 @@
 	},
 	[120021047] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "嗯，如果监兵有什么失礼的地方，请不要介意……",
 		id = 120021047
 	},
@@ -52489,7 +52489,7 @@
 	},
 	[120021053] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "监兵就是坐不住的性子，请不要见怪……咦？",
 		id = 120021053
 	},
@@ -52669,7 +52669,7 @@
 	},
 	[120021083] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "你认识他吗？",
 		id = 120021083
 	},
@@ -52681,7 +52681,7 @@
 	},
 	[120021085] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "请放心，只要按方服药，他很快就能康复。",
 		id = 120021085
 	},
@@ -52825,25 +52825,25 @@
 	},
 	[120021109] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "很严重。",
 		id = 120021109
 	},
 	[120021110] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "商户遇袭并不是寻常的伤人案件……我们发现了侵蚀种视骸活动的痕迹。",
 		id = 120021110
 	},
 	[120021111] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "两位或许不知道，因为虚恒五岛飘浮在空中，很少遭遇视骸侵扰。",
 		id = 120021111
 	},
 	[120021112] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "像这样有普通人伤亡的事件，已经二十多年没有发生过了。而且这些视骸来得蹊跷，四方院和天禄贸易都没有察觉到任何征兆。",
 		id = 120021112
 	},
@@ -52855,19 +52855,19 @@
 	},
 	[120021114] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "确实如此……东岛代理人孟章正在调查这桩案子，他精于观察推断，加上有科尔盖协助，应该能够找到真相。",
 		id = 120021114
 	},
 	[120021115] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "他原本该与我们同行的，但视骸入侵并非小事，他无暇等待……",
 		id = 120021115
 	},
 	[120021116] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "……抱歉，提了些与委托无关的事情。先坐吧。",
 		id = 120021116
 	},
@@ -52885,13 +52885,13 @@
 	},
 	[120021119] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "确实事关重大，两位勿怪。",
 		id = 120021119
 	},
 	[120021120] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "首先，这份委托的发起人并不是我，而是四方院的创始人，庚辰先生。",
 		id = 120021120
 	},
@@ -52903,37 +52903,37 @@
 	},
 	[120021122] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "两位在来的路上应该见过天通引擎吧？",
 		id = 120021122
 	},
 	[120021123] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "大家都知道四方院修筑天通引擎，结束了「云歌之变」，却不知道扭转乾坤之事要付出多少代价……",
 		id = 120021123
 	},
 	[120021124] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "先生作为原初修正者的权能一直与天通引擎相连，以身体负担为代价，才令引擎正常运转。",
 		id = 120021124
 	},
 	[120021125] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "世间没有万古恒常之物，原初权能经受多年负荷，已经出了问题。",
 		id = 120021125
 	},
 	[120021126] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "我一直在寻找修复权能的办法，或者能够代替权能支撑引擎的东西，可惜一无所获……",
 		id = 120021126
 	},
 	[120021127] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "现在若是权能损毁，不仅先生有性命之忧，天通引擎也将失控，虚恒不会再有宁日了。",
 		id = 120021127
 	},
@@ -52957,19 +52957,19 @@
 	},
 	[120021131] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "嗯，记得设计天通引擎的时候，有一样组件名为「异质序核」，当时没能起到作用。",
 		id = 120021131
 	},
 	[120021132] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "上月先生忽然说序核能够修复原初权能，可我们并不知道序核的下落，只掌握了一些粗泛的数据特征。",
 		id = 120021132
 	},
 	[120021133] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "这次劳烦二位过来，就是为了借用弥弥尔系统的算力，采集和分析游离的数据信号，逆向解算出序核的位置。",
 		id = 120021133
 	},
@@ -52981,7 +52981,7 @@
 	},
 	[120021135] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "正因为事关重大，所以这些话只能当面说。希望两位不要声张，以免引起恐慌。",
 		id = 120021135
 	},
@@ -53005,7 +53005,7 @@
 	},
 	[120021139] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "这就是异质序核的样本数据。",
 		id = 120021139
 	},
@@ -53041,7 +53041,7 @@
 	},
 	[120021145] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "看起来像是完全自动化的设备，为什么我听说只有你才能使用弥弥尔系统呢？",
 		id = 120021145
 	},
@@ -53083,7 +53083,7 @@
 	},
 	[120021152] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "这……",
 		id = 120021152
 	},
@@ -53107,13 +53107,13 @@
 	},
 	[120021156] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "确实如此……鲤港有一条工程通道通往地面，环境监测、工程勘探、货物运输……时常会使用。我们就走那条通道。",
 		id = 120021156
 	},
 	[120021157] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "虚恒大地广袤，下到地面搜索可能需要花不少时间……辛苦二位了。",
 		id = 120021157
 	},
@@ -53131,7 +53131,7 @@
 	},
 	[120021160] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "事不宜迟，如果两位没有别的事需要处理，我们现在就可以出发了。",
 		id = 120021160
 	},
@@ -53143,13 +53143,13 @@
 	},
 	[120021162] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "我会联系监兵，让他在港口等我们。",
 		id = 120021162
 	},
 	[120021163] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "麟钰，你要回四方院准备一下吗？",
 		id = 120021163
 	},
@@ -53191,7 +53191,7 @@
 	},
 	[120031004] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "虚恒旧城，以前大家生活的地方……云歌之变以后，地面上的城市就废弃了。",
 		id = 120031004
 	},
@@ -53215,7 +53215,7 @@
 	},
 	[120031008] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "旧城区虽然没人居住，但时不时会有视骸出没，加上植被稀疏，栖居山野的动物一般不会来此游荡。",
 		id = 120031008
 	},
@@ -53227,7 +53227,7 @@
 	},
 	[120031010] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "或许会有……视骸除之不尽灭之不绝，如果藏匿在废墟深处，我们很难及时派人来剿灭。",
 		id = 120031010
 	},
@@ -53365,7 +53365,7 @@
 	},
 	[120031033] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "科尔盖不认为天通引擎能保虚恒永世安稳，说是为了大家的安全，打算分批将虚恒百姓撤到其他原质区。",
 		id = 120031033
 	},
@@ -53395,13 +53395,13 @@
 	},
 	[120031038] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "嗯，原本处理这件事的人应该是她，但夏什瓦特发生了一些要紧的事情，先生派执明去调查，已有旬月，现在同样联系不上。",
 		id = 120031038
 	},
 	[120031039] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "执明不仅精通科技工程，而且熟悉政务，心思缜密。外事不决，由她处理最为合适……希望她能早些回来吧。",
 		id = 120031039
 	},
@@ -53425,13 +53425,13 @@
 	},
 	[120031043] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "已经不在了。她也是修正者，名叫「烛」，我与她只在四方院曾有过几面之缘。",
 		id = 120031043
 	},
 	[120031044] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "烛与孟章是故交，曾教过他一些技术，但孟章也不知道序核下落，只知道烛曾在多座名山大川建过工坊……",
 		id = 120031044
 	},
@@ -53455,7 +53455,7 @@
 	},
 	[120031048] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "大家现在是同伴，不必这样拘礼。",
 		id = 120031048
 	},
@@ -53473,13 +53473,13 @@
 	},
 	[120031051] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "异质序核能够增幅算力，同样也能增幅我的神力，或许我能借此修复先生的权能。",
 		id = 120031051
 	},
 	[120031052] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "说实话，我并没有把握。可而今无计可为，我只能全力一试……就算用尽我全部的力量。",
 		id = 120031052
 	},
@@ -53491,7 +53491,7 @@
 	},
 	[120031054] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "见笑了……我因几分浅薄医术受先生信赖，做了一方代理。这本就是我分内的事情。",
 		id = 120031054
 	},
@@ -53659,7 +53659,7 @@
 	},
 	[120032012] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "……#{nickname}#，没受伤吧。",
 		id = 120032012
 	},
@@ -53677,13 +53677,13 @@
 	},
 	[120032015] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "你这位管理员才是「名不虚传」……",
 		id = 120032015
 	},
 	[120032016] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "勇敢是好事，但要注意自己的安全，你毕竟是人类，冲在前面太危险了。",
 		id = 120032016
 	},
@@ -53791,19 +53791,19 @@
 	},
 	[120032034] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "云歌石的特性就是这样，重力时刻都在变化，质地坚韧不易破坏。",
 		id = 120032034
 	},
 	[120032035] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "当年的虚恒，就如这一小块云歌石，无人知晓下一刻会变成什么样子。",
 		id = 120032035
 	},
 	[120032036] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "若没有天通引擎稳住云歌石，五岛像它一样翻滚碰撞，虚恒几十年的和平，朝夕间就将荡然无存。",
 		id = 120032036
 	},
@@ -53833,7 +53833,7 @@
 	},
 	[120032041] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "只能保下虚恒民众，城市基业实在是无力挽救。",
 		id = 120032041
 	},
@@ -53875,7 +53875,7 @@
 	},
 	[120032048] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "这里面是仓库，存着一些食物，大家如果饿了，可以吃一些。",
 		id = 120032048
 	},
@@ -53887,13 +53887,13 @@
 	},
 	[120032050] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "安全屋的中控室也在里面，我和监兵已经检查过了，所有设施都没有问题。",
 		id = 120032050
 	},
 	[120032051] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "今天都早些休息吧。十三个小时，日出时分就要出发了。",
 		id = 120032051
 	},
@@ -53965,7 +53965,7 @@
 	},
 	[120041012] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "#{nickname}#？这么晚了，你还没睡吗？",
 		id = 120041012
 	},
@@ -53983,13 +53983,13 @@
 	},
 	[120041015] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "哦，这个……明天若是出发太早，只怕没时间准备早餐。",
 		id = 120041015
 	},
 	[120041016] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "仓库里的干粮大多干硬不合口，所以我做了些糕点，明天路上可以填填肚子。",
 		id = 120041016
 	},
@@ -54001,25 +54001,25 @@
 	},
 	[120041018] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "只是能饱腹的水平，千万不要太期待味道……",
 		id = 120041018
 	},
 	[120041019] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "这份糕点胜在健康，营养均衡，作为早点再合适不过。",
 		id = 120041019
 	},
 	[120041020] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "#{nickname}#，我听薇儿妹妹说了，你平时十分忙碌，越是忙碌，就越该学会好好调理自己才行。",
 		id = 120041020
 	},
 	[120041021] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "不只是身体，精神也是……",
 		id = 120041021
 	},
@@ -54049,7 +54049,7 @@
 	},
 	[120041026] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "你和薇儿妹妹很亲近呢。",
 		id = 120041026
 	},
@@ -54061,7 +54061,7 @@
 	},
 	[120041028] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "你……失忆了吗？",
 		id = 120041028
 	},
@@ -54085,7 +54085,7 @@
 	},
 	[120041032] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "记忆缺失，没有感觉到不适吗？",
 		id = 120041032
 	},
@@ -54109,7 +54109,7 @@
 	},
 	[120041036] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "遇到过分乐观的病人，医生也很头疼呢。",
 		id = 120041036
 	},
@@ -54121,13 +54121,13 @@
 	},
 	[120041038] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "凡事过犹不及。缺乏危机感，总爱逞强，明明有须治疗之症却不愿意说出来……",
 		id = 120041038
 	},
 	[120041039] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "出了问题再来医治，本就已经太晚了。",
 		id = 120041039
 	},
@@ -54145,13 +54145,13 @@
 	},
 	[120041042] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "唉，越这么说越让人担心呢。",
 		id = 120041042
 	},
 	[120041043] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "……我想要你注意的，并不是你的「现在」。",
 		id = 120041043
 	},
@@ -54163,25 +54163,25 @@
 	},
 	[120041045] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "很多人都说，记忆是人活过的证明，也是应该珍视的东西。可是我见过一些不一样的……",
 		id = 120041045
 	},
 	[120041046] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "恢复记忆并不是简单的事情，开心、痛苦、珍惜、厌恶……很多时候失忆的人并非「失去」记忆，而是「放弃」了它们。",
 		id = 120041046
 	},
 	[120041047] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "即便是属于你的过往，对你而言，或许也是不可承受之重。我希望你能更坦然地面对记忆的空白……而不只是不在乎。",
 		id = 120041047
 	},
 	[120041048] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "往事已矣，无论过去发生过什么，都不要用它们来苛责自己，这样会轻松一些。",
 		id = 120041048
 	},
@@ -54205,7 +54205,7 @@
 	},
 	[120041052] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "我吗？",
 		id = 120041052
 	},
@@ -54247,7 +54247,7 @@
 	},
 	[120041059] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "……啊，请便，不用客气。",
 		id = 120041059
 	},
@@ -54265,13 +54265,13 @@
 	},
 	[120041062] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "你喜欢便好。这点心我以前只做给四方院的大家吃过，先生觉得淡了些，执明又觉得太咸，我实在说不准……",
 		id = 120041062
 	},
 	[120041063] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "不过先生向来喜欢重料，与我们一同吃饭常说清淡，我只能劝她说饮食清淡对身体好，可惜几十年还是改不掉她的口味。",
 		id = 120041063
 	},
@@ -54301,19 +54301,19 @@
 	},
 	[120041068] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "三言两语实在说不清先生其人，等你见到她，就会知道了。",
 		id = 120041068
 	},
 	[120041069] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "……但只有一样，我确定无疑。",
 		id = 120041069
 	},
 	[120041070] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "先生的信念，便是我们四方院所有人的信念。",
 		id = 120041070
 	},
@@ -54385,7 +54385,7 @@
 	},
 	[120041082] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "你们去追，我为麟钰疗伤。",
 		id = 120041082
 	},
@@ -54787,7 +54787,7 @@
 	},
 	[120042064] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "都是外伤引起的病症，没有什么大碍。只是全都失去了遇袭期间的记忆，没办法提供线索了。",
 		id = 120042064
 	},
@@ -54805,7 +54805,7 @@
 	},
 	[120042067] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "你与科尔盖查到什么了吗？",
 		id = 120042067
 	},
@@ -54937,7 +54937,7 @@
 	},
 	[120042089] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "多亏#{nickname}#和弥弥尔系统，已经有了眉目，但定位还需要一段时间。",
 		id = 120042089
 	},
@@ -54949,7 +54949,7 @@
 	},
 	[120042091] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "孟章，你接下来有什么打算吗？如果没有要紧的事情，就在这里歇息一晚吧。",
 		id = 120042091
 	},
@@ -55027,7 +55027,7 @@
 	},
 	[120051009] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "静督山？似乎很久以前听人说起过。",
 		id = 120051009
 	},
@@ -55087,7 +55087,7 @@
 	},
 	[120051019] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "麟钰，我们还是送你回四方院休养吧。",
 		id = 120051019
 	},
@@ -55171,13 +55171,13 @@
 	},
 	[120051033] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "这里生机盎然，灵气充盈，路边长着不少名贵药材，不是普通的山区。",
 		id = 120051033
 	},
 	[120051034] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "可周围环境似乎有些古怪……孟章？",
 		id = 120051034
 	},
@@ -55207,7 +55207,7 @@
 	},
 	[120051039] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "呼……真的找到了。",
 		id = 120051039
 	},
@@ -55369,7 +55369,7 @@
 	},
 	[120052005] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "看样子是成功了。",
 		id = 120052005
 	},
@@ -55393,7 +55393,7 @@
 	},
 	[120052009] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "山里或许还有视骸，难保不会再被袭击。赶紧上山拿到东西，早些离开吧。",
 		id = 120052009
 	},
@@ -55453,7 +55453,7 @@
 	},
 	[120052019] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "孟章不是莽撞的人，应该是真的发现了什么，我们就在此等候片刻吧。",
 		id = 120052019
 	},
@@ -55495,7 +55495,7 @@
 	},
 	[120052026] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "有漏网之鱼么？",
 		id = 120052026
 	},
@@ -55561,7 +55561,7 @@
 	},
 	[120061010] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "不知道序核的情况怎么样了……没能见到序核，我始终无法安心。",
 		id = 120061010
 	},
@@ -55573,13 +55573,13 @@
 	},
 	[120061012] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "是我敏感吗……也许吧。",
 		id = 120061012
 	},
 	[120061013] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "为复原先生的权能，我已试过几乎所有办法，异质序核恐怕是最后的手段了，千万不能出现意外。",
 		id = 120061013
 	},
@@ -55699,7 +55699,7 @@
 	},
 	[120061033] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "雾气古怪，大家快聚到一起！",
 		id = 120061033
 	},
@@ -56797,7 +56797,7 @@
 	},
 	[120072043] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "麟钰，薇儿？你们躲在树后面做什么？",
 		id = 120072043
 	},
@@ -56809,7 +56809,7 @@
 	},
 	[120072045] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "只有你们两个吗？孟章和#{nickname}#呢？",
 		id = 120072045
 	},
@@ -57121,7 +57121,7 @@
 	},
 	[120081048] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "孟章，你告诉我，视骸也好，空间陷阱也好，与你究竟有没有关系？",
 		id = 120081048
 	},
@@ -57151,13 +57151,13 @@
 	},
 	[120081053] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "我和监兵落入了一处陷阱空间，那片空间十分诡异，里面骸能弥漫，还有无数视骸游荡。",
 		id = 120081053
 	},
 	[120081054] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "监兵将我送了出来，自己还被困在陷阱里……拿到序核以后我们要赶紧回去找他。",
 		id = 120081054
 	},
@@ -57169,19 +57169,19 @@
 	},
 	[120081056] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "事实如此，我没有必要隐瞒……",
 		id = 120081056
 	},
 	[120081057] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "反倒是你，孟章，监兵说你这一路表现都十分反常，不像你平时的样子。",
 		id = 120081057
 	},
 	[120081058] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "失散之前你不与我们汇合，反而转身往山上跑，究竟想做什么？",
 		id = 120081058
 	},
@@ -57199,7 +57199,7 @@
 	},
 	[120081061] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "这里是烛的地界，你与她相熟，这一路上怪事频发，无怪监兵会生疑。",
 		id = 120081061
 	},
@@ -57223,13 +57223,13 @@
 	},
 	[120081065] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "直到我回到静督山，我还是没弄明白那片空间到底从何而来。",
 		id = 120081065
 	},
 	[120081066] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "三言两语真的解释不清。若是拿到序核后监兵还没脱困，你我也要闯一闯。到那时你就知道了。",
 		id = 120081066
 	},
@@ -57253,13 +57253,13 @@
 	},
 	[120081070] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "不要胡乱猜测了，抓紧时间上山吧。",
 		id = 120081070
 	},
 	[120081071] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "先拿到序核要紧，这也是监兵拜托我的事情……",
 		id = 120081071
 	},
@@ -57589,7 +57589,7 @@
 	},
 	[120091039] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "孟章你……你在做什么？",
 		id = 120091039
 	},
@@ -57601,7 +57601,7 @@
 	},
 	[120091041] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "伤害别人的事情，我无论如何不会允许，你要伤及无辜，怎么会在帮我？",
 		id = 120091041
 	},
@@ -57625,7 +57625,7 @@
 	},
 	[120091045] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "你知道我不可能放弃序核……你到底想要做什么？难道还有重于先生安危的事情吗？",
 		id = 120091045
 	},
@@ -57637,7 +57637,7 @@
 	},
 	[120091047] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "这样可说服不了我。",
 		id = 120091047
 	},
@@ -58087,13 +58087,13 @@
 	},
 	[120101005] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "……不是你的责任，#{nickname}#。",
 		id = 120101005
 	},
 	[120101006] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "没想到孟章会做这么出格的事情，与我交手时完全没有留手。",
 		id = 120101006
 	},
@@ -58105,13 +58105,13 @@
 	},
 	[120101008] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "委托由我发起，你们是我请来的，不管出现什么后果，我都会承担。",
 		id = 120101008
 	},
 	[120101009] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "等先生回来后，我会亲自说明前因后果，不会让二位因为这件事牵扯进别的麻烦。",
 		id = 120101009
 	},
@@ -58129,13 +58129,13 @@
 	},
 	[120101012] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "只是神力震荡太剧烈，需要调养一下才能恢复……并不碍事。",
 		id = 120101012
 	},
 	[120101013] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "#{nickname}#，序核不在山顶了吗？",
 		id = 120101013
 	},
@@ -58147,13 +58147,13 @@
 	},
 	[120101015] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "原来是这样，真亏你能瞒过孟章……",
 		id = 120101015
 	},
 	[120101016] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "既然序核还在山顶，你们三人先去寻找吧。",
 		id = 120101016
 	},
@@ -58165,13 +58165,13 @@
 	},
 	[120101018] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "我会赶上你们，只是我不想把孟章丢在山道上……",
 		id = 120101018
 	},
 	[120101019] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "不管他如何算计大家，又在谋划什么，人死万事空，我至少要将他安葬才是。",
 		id = 120101019
 	},
@@ -58183,19 +58183,19 @@
 	},
 	[120101021] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "多谢……",
 		id = 120101021
 	},
 	[120101022] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "孟章说的「钥匙」也不知是真是假……如果无法拿到序核，先将它看管好，往后再想办法。",
 		id = 120101022
 	},
 	[120101023] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "赶紧去吧，我先调息片刻。",
 		id = 120101023
 	},
@@ -58399,7 +58399,7 @@
 	},
 	[120102003] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "走远了吗……",
 		id = 120102003
 	},
@@ -58417,7 +58417,7 @@
 	},
 	[120102006] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "……莫非你觉得，你能骗过我吗？",
 		id = 120102006
 	},
@@ -58933,7 +58933,7 @@
 	},
 	[120112045] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "受伤了吗？",
 		id = 120112045
 	},
@@ -58951,13 +58951,13 @@
 	},
 	[120112048] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "果然如孟章所说……这次的事，真是难为你了。",
 		id = 120112048
 	},
 	[120112049] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "事后我一定好好教训孟章，居然设计如此冒险的计划。要是筋骨伤得太重，即便我能救你，只怕也会落下病根。",
 		id = 120112049
 	},
@@ -59227,13 +59227,13 @@
 	},
 	[120121024] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "还要躺多久？",
 		id = 120121024
 	},
 	[120121025] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "你若再不起来，我只好将你的骨灰葬在这里了。",
 		id = 120121025
 	},
@@ -59251,7 +59251,7 @@
 	},
 	[120121028] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "改天你来「赤炁堂」做客，我教你些更不容易识破的装死手段。",
 		id = 120121028
 	},
@@ -59263,7 +59263,7 @@
 	},
 	[120121030] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "你还想着再骗我一次？",
 		id = 120121030
 	},
@@ -59281,7 +59281,7 @@
 	},
 	[120121033] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "总要先确认你的情况，谁知道你诈死还有没有什么图谋。",
 		id = 120121033
 	},
@@ -59299,7 +59299,7 @@
 	},
 	[120121036] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "正骨活血的药。你挨了#{nickname}#三枪，血虽然是假的，可腰侧肋骨都断了吧？",
 		id = 120121036
 	},
@@ -59323,7 +59323,7 @@
 	},
 	[120121040] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "什么多此一举……怕是所有人都被你怀疑了一遍吧？",
 		id = 120121040
 	},
@@ -59335,7 +59335,7 @@
 	},
 	[120121042] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "但你还是不会放下警惕，就像监兵也在怀疑你。",
 		id = 120121042
 	},
@@ -59359,7 +59359,7 @@
 	},
 	[120121046] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "与麟钰她们汇合吗？",
 		id = 120121046
 	},
@@ -59395,7 +59395,7 @@
 	},
 	[120122002] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "这……就是序核吗？",
 		id = 120122002
 	},
@@ -59419,7 +59419,7 @@
 	},
 	[120122006] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "观测枢？",
 		id = 120122006
 	},
@@ -59437,7 +59437,7 @@
 	},
 	[120122009] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "……这真的是你第一次来吗？",
 		id = 120122009
 	},
@@ -59467,7 +59467,7 @@
 	},
 	[120122014] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "我们随时可以取走序核……孟章，你准备怎么办？",
 		id = 120122014
 	},
@@ -59479,7 +59479,7 @@
 	},
 	[120122016] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "……毕竟你常为先生解决类似的事情。",
 		id = 120122016
 	},
@@ -59491,7 +59491,7 @@
 	},
 	[120122018] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "智种视骸？就是深空之眼对付过几次的那些……",
 		id = 120122018
 	},
@@ -59515,7 +59515,7 @@
 	},
 	[120122022] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "你大费周章装死想要骗过我们，也是因为这个吗？",
 		id = 120122022
 	},
@@ -59557,7 +59557,7 @@
 	},
 	[120122029] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "……不拿走序核，你想怎么做？",
 		id = 120122029
 	},
@@ -59575,7 +59575,7 @@
 	},
 	[120122032] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "你要拿#{nickname}#的性命冒险吗？",
 		id = 120122032
 	},
@@ -59593,7 +59593,7 @@
 	},
 	[120122035] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "……可如果你做得太出格，我还是会拦住你。",
 		id = 120122035
 	},
@@ -59611,13 +59611,13 @@
 	},
 	[120131001] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "……孟章的事就说到这里吧，大家在四方院共事多年，还是不要相互猜忌为好。",
 		id = 120131001
 	},
 	[120131002] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "至于是不是有人图谋异质序核……无论如何，我们都该尽快拿到序核才是。",
 		id = 120131002
 	},
@@ -59629,7 +59629,7 @@
 	},
 	[120131004] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "偏偏是我们两个聚在一处，遇上视骸倒是不足为虑，就是不知道其他人怎么样了。",
 		id = 120131004
 	},
@@ -59647,7 +59647,7 @@
 	},
 	[120131007] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "直接破坏山体吗……我只是担心，现在序核位置不明，万一被波及……",
 		id = 120131007
 	},
@@ -59665,7 +59665,7 @@
 	},
 	[120131010] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "那就依你的吧，确保大家的安全也是我的责任。",
 		id = 120131010
 	},
@@ -59707,7 +59707,7 @@
 	},
 	[120131017] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "好险……",
 		id = 120131017
 	},
@@ -59743,7 +59743,7 @@
 	},
 	[120132002] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "你……打算做什么？",
 		id = 120132002
 	},
@@ -59851,7 +59851,7 @@
 	},
 	[120132020] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "序核，序核……",
 		id = 120132020
 	},
@@ -59887,7 +59887,7 @@
 	},
 	[120141005] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "不要勉强自己了。你和薇儿都受了伤，好好休养，交给我和孟章就好。",
 		id = 120141005
 	},
@@ -60019,7 +60019,7 @@
 	},
 	[120141027] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "咳……也许吧。",
 		id = 120141027
 	},
@@ -60055,13 +60055,13 @@
 	},
 	[120141033] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "我只是个不想放弃任何病人的医生。",
 		id = 120141033
 	},
 	[120141034] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "我只是……不想看到任何人在我面前牺牲而已。",
 		id = 120141034
 	},
@@ -60211,7 +60211,7 @@
 	},
 	[120141059] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "原来是你。",
 		id = 120141059
 	},
@@ -60289,7 +60289,7 @@
 	},
 	[120141072] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "孟章，恐怕问不出什么了。",
 		id = 120141072
 	},
@@ -60385,19 +60385,19 @@
 	},
 	[120141088] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "不行，这雾有剧毒，你和麟钰肯定撑不住的。",
 		id = 120141088
 	},
 	[120141089] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "孟章，你去追序核，这里交给我！",
 		id = 120141089
 	},
 	[120141090] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "时间紧迫，不要犹豫了。趁你的封印还没失效，快去拦住她，我随后就到。",
 		id = 120141090
 	},
@@ -60421,7 +60421,7 @@
 	},
 	[120141094] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "不要离我太远……交给我吧。",
 		id = 120141094
 	},
@@ -60913,7 +60913,7 @@
 	},
 	[120151082] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "无妨，总算没有辜负初心……",
 		id = 120151082
 	},
@@ -60973,7 +60973,7 @@
 	},
 	[120151092] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "监兵……万幸你没事。",
 		id = 120151092
 	},
@@ -60985,7 +60985,7 @@
 	},
 	[120151094] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "到底发生什么事了，为什么你们会和奥丁一起……",
 		id = 120151094
 	},
@@ -61039,7 +61039,7 @@
 	},
 	[120151103] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "只是昏迷，没有被骸能侵蚀的痕迹，休息几日就好了。",
 		id = 120151103
 	},
@@ -61123,7 +61123,7 @@
 	},
 	[120151117] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "诶？先生……我想早点开始研究，能早点为你治疗……",
 		id = 120151117
 	},
@@ -61135,7 +61135,7 @@
 	},
 	[120151119] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "这……我明白了。",
 		id = 120151119
 	},
@@ -62509,7 +62509,7 @@
 	},
 	[120421027] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "已经快十点了，没有出门去玩儿吗？",
 		id = 120421027
 	},
@@ -62521,7 +62521,7 @@
 	},
 	[120421029] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "贪睡可不好哦。还是昨晚没有休息好呢？",
 		id = 120421029
 	},
@@ -62545,7 +62545,7 @@
 	},
 	[120421033] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "这……现在的技术还做不到呢。梦到什么特别想记住的画面吗？",
 		id = 120421033
 	},
@@ -62563,13 +62563,13 @@
 	},
 	[120421036] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "梦境是心相的映射，也许藏着许多你或许意识不到的、关于你自己的事情。",
 		id = 120421036
 	},
 	[120421037] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "你梦到的，是那位管理员吗？",
 		id = 120421037
 	},
@@ -62581,7 +62581,7 @@
 	},
 	[120421039] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "呵呵，听上去，你和#{nickname}#平时经常在一起呢。",
 		id = 120421039
 	},
@@ -62599,13 +62599,13 @@
 	},
 	[120421042] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "不是管理员的话……如果是经常梦到的人，应该与你非常熟悉才对。",
 		id = 120421042
 	},
 	[120421043] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "想一想，会不会是你认识的其他人呢？对你很重要的人？很要好的伙伴？",
 		id = 120421043
 	},
@@ -62623,7 +62623,7 @@
 	},
 	[120421046] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "是很久没有联系了吗？",
 		id = 120421046
 	},
@@ -62653,7 +62653,7 @@
 	},
 	[120421051] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "抱歉……我不是有意要让你说起这些……",
 		id = 120421051
 	},
@@ -62677,7 +62677,7 @@
 	},
 	[120421055] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "她真的是一位很坚强的孩子。",
 		id = 120421055
 	},
@@ -62701,7 +62701,7 @@
 	},
 	[120421059] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "明天你们要出门去玩，我想给薇儿挑一身衣服，换换心情。",
 		id = 120421059
 	},
@@ -62719,13 +62719,13 @@
 	},
 	[120421062] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "呵呵，薇儿，做梦的事情，也对#{nickname}#说一说吧，身边的人也许更能帮上忙。另外……",
 		id = 120421062
 	},
 	[120421063] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "不介意的话，和麟钰一样叫我姐姐吧。前辈什么的，我还没有这么深的资历。",
 		id = 120421063
 	},
@@ -62743,13 +62743,13 @@
 	},
 	[120421066] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "是的……昨天回来到现在已经有近二十个小时了，麟钰还没有苏醒。",
 		id = 120421066
 	},
 	[120421067] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "我将格莫瑞驱离麟钰身体的手段也只是一时想到的办法，虽然麟钰没有出现不良症状，我还是想定期来看一看。",
 		id = 120421067
 	},
@@ -62761,7 +62761,7 @@
 	},
 	[120421069] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "也在这一层，跟我来。",
 		id = 120421069
 	},
@@ -62965,7 +62965,7 @@
 	},
 	[120421103] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "麟钰早晨刚刚醒过来。放心，英招，没有大碍。",
 		id = 120421103
 	},
@@ -63067,13 +63067,13 @@
 	},
 	[120421120] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "英招，说的太严重了，这件事不该责怪麟钰。",
 		id = 120421120
 	},
 	[120421121] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "要说也是我没照顾好她，她被格莫瑞附身都没看出问题。",
 		id = 120421121
 	},
@@ -63085,19 +63085,19 @@
 	},
 	[120421123] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "那就更不是麟钰的错了，她已经做得足够好了。",
 		id = 120421123
 	},
 	[120421124] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "格莫瑞手段诡秘难测，谁都无法断言能不受她的控制。",
 		id = 120421124
 	},
 	[120421125] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "在工坊内若非麟钰争取到时间，我们也很难令格莫瑞现身，她若一直蛰伏不出，后果只怕更加严重。",
 		id = 120421125
 	},
@@ -63199,7 +63199,7 @@
 	},
 	[120421142] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "是的，麟钰，别难过了。",
 		id = 120421142
 	},
@@ -63487,7 +63487,7 @@
 	},
 	[120431033] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "回想起来，大家平时各自在五岛忙碌，许久没有这样一起聚过了。",
 		id = 120431033
 	},
@@ -63499,7 +63499,7 @@
 	},
 	[120431035] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "三年前了吧。",
 		id = 120431035
 	},
@@ -63535,13 +63535,13 @@
 	},
 	[120431041] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "谁让你和孟章互相使绊子，吵吵闹闹的，鱼都吓跑了。",
 		id = 120431041
 	},
 	[120431042] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "还好最后先生提前做的陷阱兜住两条鲫鱼，亲自炖了鱼汤，否则那天就要饿肚子了。",
 		id = 120431042
 	},
@@ -63565,7 +63565,7 @@
 	},
 	[120431046] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "四方院组建之前，先生一直是独自生活，即便现在常住四方院，依旧不习惯受人照顾。",
 		id = 120431046
 	},
@@ -63583,13 +63583,13 @@
 	},
 	[120431049] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "那是因为先生……啊，不，没有什么。",
 		id = 120431049
 	},
 	[120431050] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "也许只是因为先生太忙了吧，这几年四方院要处理的事情有很多。",
 		id = 120431050
 	},
@@ -63613,7 +63613,7 @@
 	},
 	[120431054] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "外面下雨了吗？",
 		id = 120431054
 	},
@@ -63643,13 +63643,13 @@
 	},
 	[120431059] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "先生在后厨。她最近难得想要亲自下厨，我们也不便搅扰她兴致。",
 		id = 120431059
 	},
 	[120431060] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "虽说确实有些久了……也许在准备什么特别的菜品吧。",
 		id = 120431060
 	},
@@ -68155,7 +68155,7 @@
 	},
 	[221011001] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "先生，这壶茶有些凉了。我再去热一下吧。",
 		id = 221011001
 	},
@@ -68173,7 +68173,7 @@
 	},
 	[221011004] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "嗯？先生是有心事吗……？",
 		id = 221011004
 	},
@@ -68185,13 +68185,13 @@
 	},
 	[221011006] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "平常先生只喝滚烫的热茶，说那样才能品出茶香。可现在茶已半凉，你却依然饮了半杯……",
 		id = 221011006
 	},
 	[221011007] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "方才……是走神了吗？",
 		id = 221011007
 	},
@@ -68209,13 +68209,13 @@
 	},
 	[221011010] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "我好歹作为医生，看着先生这么多年了……想不注意到都难呢。",
 		id = 221011010
 	},
 	[221011011] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "为健康考虑，我还是不推荐你喝沸腾的热茶……可惜每次从南交来都会说起这个。",
 		id = 221011011
 	},
@@ -68227,13 +68227,13 @@
 	},
 	[221011013] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "你每次也都是这么回答的。既是你说的话，我就当真了……",
 		id = 221011013
 	},
 	[221011014] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "先生走神时，是在想刚才的新闻吗？",
 		id = 221011014
 	},
@@ -70945,7 +70945,7 @@
 	},
 	[221051032] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "「嗯，多走路对先生的身体是有好处的~要不每天都去散散步吧？」",
 		id = 221051032
 	},
@@ -74443,7 +74443,7 @@
 	},
 	[121441003] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "早安。先生在办公室吗？",
 		id = 121441003
 	},
@@ -74455,7 +74455,7 @@
 	},
 	[121441005] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "同意科尔盖的方案，对先生来说并不是很轻松的事情……我去看看她吧。",
 		id = 121441005
 	},
@@ -74467,7 +74467,7 @@
 	},
 	[121441007] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "怎么了？",
 		id = 121441007
 	},
@@ -74479,13 +74479,13 @@
 	},
 	[121441009] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "……是啊。",
 		id = 121441009
 	},
 	[121441010] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "是啊。先生她……我会照顾好她的。",
 		id = 121441010
 	},
@@ -74509,7 +74509,7 @@
 	},
 	[121441014] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "先生——",
 		id = 121441014
 	},
@@ -74521,7 +74521,7 @@
 	},
 	[121441016] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "不在吗……",
 		id = 121441016
 	},
@@ -74545,13 +74545,13 @@
 	},
 	[121441020] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "新闻你应该也看到了，赫奴姆正在公开这件事，可我实在没办法劝大家离开虚恒……",
 		id = 121441020
 	},
 	[121441021] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "我这次来并不是为了公务。先生，请让我再检查一次你的权能。",
 		id = 121441021
 	},
@@ -74563,19 +74563,19 @@
 	},
 	[121441023] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "你与奥丁从源层回来以后，大家都能察觉到你的变化，也都很担心你，昨晚天通引擎又出现了那样的情况……",
 		id = 121441023
 	},
 	[121441024] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "我还答应过会替大家照顾好你，就算许多事情我做不到，至少……原质之心和原初权能的事情，我既知情，就没办法放着不管。",
 		id = 121441024
 	},
 	[121441025] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "请不要拒绝，先生……虽然你没有说，有些事我也能够猜到的。",
 		id = 121441025
 	},
@@ -74743,7 +74743,7 @@
 	},
 	[121441053] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "天气不错呢，出门走走吧。",
 		id = 121441053
 	},
@@ -74821,7 +74821,7 @@
 	},
 	[121441066] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "藏锋，你昨天刚受了伤，怎么今天就开始执勤了？",
 		id = 121441066
 	},
@@ -74833,7 +74833,7 @@
 	},
 	[121441068] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "还是想不起来昨晚发生了什么吗？",
 		id = 121441068
 	},
@@ -74905,7 +74905,7 @@
 	},
 	[121441080] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "执明隔几年就会带工程部的人来换掉院里陈旧的设备，顺便翻新一下院子，我偶尔来玉京，也会抽时间养护花草，所以这里景色一直还不错。",
 		id = 121441080
 	},
@@ -74917,7 +74917,7 @@
 	},
 	[121441082] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "是的，我们四方代理平日都在四岛工作，若不是最近发生了不少要紧事，也不会聚在玉京。",
 		id = 121441082
 	},
@@ -74965,7 +74965,7 @@
 	},
 	[121441090] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "这……我刚才还在与先生说这件事。",
 		id = 121441090
 	},
@@ -74995,7 +74995,7 @@
 	},
 	[121441095] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "只要先生的权能不用再支撑天通引擎，也就不会损耗了。能避免继续恶化，也不算太差的结果。",
 		id = 121441095
 	},
@@ -75109,7 +75109,7 @@
 	},
 	[121441114] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "格莫瑞的事……先生，早上的那则报告……",
 		id = 121441114
 	},
@@ -75193,13 +75193,13 @@
 	},
 	[121441128] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "发现能量痕迹的地方就在离静督山不远处的另一座山上。外勤人员携带仪器分析不出有用的结论。",
 		id = 121441128
 	},
 	[121441129] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "我想，如果依靠弥弥尔系统的分析能力，或许能发现一些什么……",
 		id = 121441129
 	},
@@ -76273,13 +76273,13 @@
 	},
 	[121471020] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "等等，先生……不止是民众，科尔盖的人也在外面，要议事的话还是进来吧？",
 		id = 121471020
 	},
 	[121471021] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "监兵在外面看着，不会出问题的。",
 		id = 121471021
 	},
@@ -76291,7 +76291,7 @@
 	},
 	[121471023] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "这……好吧。",
 		id = 121471023
 	},
@@ -78511,7 +78511,7 @@
 	},
 	[121491086] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "啊，你们来了。",
 		id = 121491086
 	},
@@ -78523,19 +78523,19 @@
 	},
 	[121491088] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "离开虚恒并非小事，科尔盖还给了大家六个小时来做决定，现在还早……",
 		id = 121491088
 	},
 	[121491089] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "许多人在犹豫吧，毕竟这一去，再想回来或许就很难了。",
 		id = 121491089
 	},
 	[121491090] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "原本以为已经想清楚的事，到了将要发生的时候，心情也会不一样的。",
 		id = 121491090
 	},
@@ -78547,7 +78547,7 @@
 	},
 	[121491092] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "赫奴姆吗？他在——",
 		id = 121491092
 	},
@@ -78673,7 +78673,7 @@
 	},
 	[121491113] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "无论什么样的变化，总会有从中获益的人。我们站在决策者的立场，还要看到更多人的状况才行。",
 		id = 121491113
 	},
@@ -79321,13 +79321,13 @@
 	},
 	[121511002] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "没事的，她经历过不少事情，内心其实很坚强……",
 		id = 121511002
 	},
 	[121511003] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "这一批离开的人里有许多商户。不管是朋友还是对手，虚恒少了许多和她有交集的人，她多少会觉得有些寂寞……给她一点时间就好。",
 		id = 121511003
 	},
@@ -79351,7 +79351,7 @@
 	},
 	[121511007] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "呵呵，又到了和奥丁定期汇报的时间吗？",
 		id = 121511007
 	},
@@ -79441,7 +79441,7 @@
 	},
 	[121511022] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "没有说明撤换赫奴姆的原因，就这样让他离开吗？",
 		id = 121511022
 	},
@@ -79459,7 +79459,7 @@
 	},
 	[121511025] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "也好，如果真的要我们接管这项计划，还有许多事要询问他。",
 		id = 121511025
 	},
@@ -79495,7 +79495,7 @@
 	},
 	[121511031] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "安排在什么时候走呢？",
 		id = 121511031
 	},
@@ -79507,7 +79507,7 @@
 	},
 	[121511033] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "都在这里了，还需要核验一下你的身份。",
 		id = 121511033
 	},
@@ -79705,7 +79705,7 @@
 	},
 	[121511066] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "#{nickname}#，你要做什么？",
 		id = 121511066
 	},
@@ -79801,7 +79801,7 @@
 	},
 	[121511082] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "什么？！",
 		id = 121511082
 	},
@@ -79927,7 +79927,7 @@
 	},
 	[121511103] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "薇儿，注意保护管理员。我有种很不舒服的预感……",
 		id = 121511103
 	},
@@ -80389,7 +80389,7 @@
 	},
 	[121521034] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "她要去做什么？步伐如此匆忙。",
 		id = 121521034
 	},
@@ -80401,7 +80401,7 @@
 	},
 	[121521036] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "刚才四方院来了消息，说先生也去追查图灵的下落了。不知她们私下里是不是有过联络……",
 		id = 121521036
 	},
@@ -80413,19 +80413,19 @@
 	},
 	[121521038] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "奥丁先解决了列车附近的侵蚀种，加上各方支援来得及时，万幸没有出现伤亡。",
 		id = 121521038
 	},
 	[121521039] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "但是垂直轨道在战斗中受到了一些损伤，光轨列车暂时没办法启动了。",
 		id = 121521039
 	},
 	[121521040] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "很多人已经出售了房产、辞去了工作，现在无处可去……我通知了禄良，天禄贸易会协助四方院安置他们。",
 		id = 121521040
 	},
@@ -80437,7 +80437,7 @@
 	},
 	[121521042] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "但他还说会有很多存在会被抹去……他到底要做什么呢？",
 		id = 121521042
 	},
@@ -80467,13 +80467,13 @@
 	},
 	[121521047] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "确实很有可能，赫奴姆的身份非常便利，科尔盖因为光轨资源的调度需要而给了他很高的权限。",
 		id = 121521047
 	},
 	[121521048] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "孟章还在改进序核，让监兵在五岛排查一遍比较合适，可是现在联系不上他。",
 		id = 121521048
 	},
@@ -80485,13 +80485,13 @@
 	},
 	[121521050] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "我本以为他去调查格莫瑞的下落了，想来以他的实力不会遇到危险，可如果对上图灵的话……",
 		id = 121521050
 	},
 	[121521051] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "但愿他能和在静督山的时候一样化险为夷吧。",
 		id = 121521051
 	},
@@ -80617,13 +80617,13 @@
 	},
 	[121521072] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "为天通引擎提供能量的几台中继器下方都发生了塌陷，那些中继器布置在城区外，四周的防护很严密，但地下确实缺乏监视……",
 		id = 121521072
 	},
 	[121521073] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "重新搭设好中继器倒是不难，天通引擎的供能应该会很快恢复。可这样的手段、寻找破绽的方式……是图灵吗？",
 		id = 121521073
 	},
@@ -80701,7 +80701,7 @@
 	},
 	[121521086] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "虎韬，受到攻击的都是什么地方？",
 		id = 121521086
 	},
@@ -80713,13 +80713,13 @@
 	},
 	[121521088] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "……不，病人没事就好。现在玉京还有更重要的事。",
 		id = 121521088
 	},
 	[121521089] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "通信基站被攻击，难怪刚才联系不上先生……出了这么大的乱子，维护秩序才是最重要的，只是……",
 		id = 121521089
 	},
@@ -80809,7 +80809,7 @@
 	},
 	[121522008] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "那又为什么让我留下？还有比应对骸震更重要的事情吗？",
 		id = 121522008
 	},
@@ -80827,7 +80827,7 @@
 	},
 	[121522011] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "如果这样大动干戈是为了帮他争取登上天通引擎夺取原质之心的机会，确实是合理的解释。",
 		id = 121522011
 	},
@@ -80839,13 +80839,13 @@
 	},
 	[121522013] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "可是登上引擎的传送门在四方院后山，天通引擎外还有一层护盾，如果有人强闯，先生会收到警示——",
 		id = 121522013
 	},
 	[121522014] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "糟了，怎么现在才想起来。备用能源为了能尽量维持引擎长时间运转，不会为护盾充能了……",
 		id = 121522014
 	},
@@ -80869,7 +80869,7 @@
 	},
 	[121522018] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "夕雾？！你不在院里养伤，怎么跑出来了？",
 		id = 121522018
 	},
@@ -80887,7 +80887,7 @@
 	},
 	[121522021] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "怎么会……先生没回四方院吗？",
 		id = 121522021
 	},
@@ -80899,7 +80899,7 @@
 	},
 	[121522023] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "视骸攻打后山，难道是想登上天通引擎吗……天通引擎怎么样了？",
 		id = 121522023
 	},
@@ -80911,7 +80911,7 @@
 	},
 	[121522025] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "好，不要着急，我们一起回去……#{nickname}#、薇儿，你们呢？",
 		id = 121522025
 	},
@@ -80935,7 +80935,7 @@
 	},
 	[121522029] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "说的也是……那就在这里分开行动吧。一路小心。",
 		id = 121522029
 	},
@@ -87931,7 +87931,7 @@
 	},
 	[122092014] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "#{nickname}#？听说你跟着孟章上了天通引擎，上面怎么样了？",
 		id = 122092014
 	},
@@ -87943,7 +87943,7 @@
 	},
 	[122092016] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "图灵？！果然是他。\n你们还好吗？",
 		id = 122092016
 	},
@@ -87955,7 +87955,7 @@
 	},
 	[122092018] = {
 		speaker = "",
-		prefab_name = "1085ui_story",
+		prefab_name = "1075ui_story",
 		content = "怎么回事……你那边需要帮忙吗？",
 		id = 122092018
 	},

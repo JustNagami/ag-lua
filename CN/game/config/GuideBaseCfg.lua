@@ -3107,6 +3107,171 @@
 		ignore_group_condition = {},
 		leaps = {}
 	},
+	[121] = {
+		narrator_name = "弥弥尔",
+		group = 0,
+		not_skip_guide = 0,
+		id = 121,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			12101,
+			12102,
+			12103,
+			12104,
+			12105,
+			12106,
+			12107
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"ActivityGodEaterGameMainView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[122] = {
+		narrator_name = "弥弥尔",
+		group = 0,
+		not_skip_guide = 0,
+		id = 122,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			12201,
+			12202
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"goldMinerSelectLevelView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[123] = {
+		narrator_name = "弥弥尔",
+		group = 0,
+		not_skip_guide = 0,
+		id = 123,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			12301,
+			12302,
+			12303,
+			12305,
+			12306,
+			12307,
+			12310,
+			12311,
+			12312,
+			12313,
+			12314,
+			12315,
+			12316,
+			12318,
+			12319,
+			12320,
+			12321,
+			12322,
+			12323,
+			12324
+		},
+		open_condition = {
+			{
+				"uiNameList",
+				{
+					"civilizationGameMainView"
+				}
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[124] = {
+		narrator_name = "弥弥尔",
+		group = 0,
+		not_skip_guide = 0,
+		id = 124,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			12401,
+			12402,
+			12403,
+			12404,
+			12405
+		},
+		open_condition = {
+			{
+				"goldMiner",
+				343701
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[125] = {
+		narrator_name = "弥弥尔",
+		group = 0,
+		not_skip_guide = 0,
+		id = 125,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			12501,
+			12502
+		},
+		open_condition = {
+			{
+				"goldMiner",
+				343706
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
+	[126] = {
+		narrator_name = "弥弥尔",
+		group = 0,
+		not_skip_guide = 0,
+		id = 126,
+		narrator_icon = "mmr",
+		is_no_home = false,
+		steps = {
+			12601,
+			12602,
+			12603,
+			12604,
+			12605,
+			12606,
+			12607,
+			12608,
+			12609
+		},
+		open_condition = {
+			{
+				"civilizationGame",
+				2
+			}
+		},
+		skip_condition = {},
+		ignore_group_condition = {},
+		leaps = {}
+	},
 	[127] = {
 		narrator_name = "奥西里斯",
 		group = 0,
@@ -3524,6 +3689,12 @@
 			117,
 			119,
 			120,
+			121,
+			122,
+			123,
+			124,
+			125,
+			126,
 			127,
 			128,
 			129,
@@ -3654,6 +3825,12 @@
 		117,
 		119,
 		120,
+		121,
+		122,
+		123,
+		124,
+		125,
+		126,
 		127,
 		128,
 		129,

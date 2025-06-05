@@ -3311,6 +3311,94 @@
 		plot_title = {},
 		plot_id = {}
 	},
+	[1045] = {
+		display_model_id = "1045ui_display",
+		name = "赤音·源",
+		portrait = 2110451,
+		video_url = "",
+		hero = 1045,
+		gift = "",
+		desc = "综合考量修正者的能力和个人需求设计定制的作战服，在不影响体感的基础上，能保证作战能力的全部发挥。",
+		skin_level = 0,
+		ui_has_timeline = 0,
+		home_weapon_show = 0,
+		ui_modelId = "1045ui_tpose",
+		picture_id = "1045",
+		weapon_modelId = "1045ui_weapon",
+		display_type = 1,
+		id = 1045,
+		modelId = "1045ui_light",
+		main_model_id = "1045ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
+	[104501] = {
+		display_model_id = "104501ui_display",
+		name = "瑰色倾情",
+		portrait = 2110452,
+		video_url = "",
+		hero = 1045,
+		gift = "",
+		desc = "亚莉莎专门定制的晚礼服，长裙飘逸而大胆，展示出这位神机使平时难得一见的风采。",
+		skin_level = 0,
+		ui_has_timeline = 1,
+		home_weapon_show = 0,
+		ui_modelId = "104501ui_tpose",
+		picture_id = "104501",
+		weapon_modelId = "1045ui_weapon",
+		display_type = 2,
+		id = 104501,
+		modelId = "104501ui_light",
+		main_model_id = "104501ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
+	[1046] = {
+		display_model_id = "1046ui_display",
+		name = "血弹·源",
+		portrait = 2110461,
+		video_url = "",
+		hero = 1046,
+		gift = "",
+		desc = "综合考量修正者的能力和个人需求设计定制的作战服，在不影响体感的基础上，能保证作战能力的全部发挥。",
+		skin_level = 0,
+		ui_has_timeline = 0,
+		home_weapon_show = 0,
+		ui_modelId = "1046ui_tpose",
+		picture_id = "1046",
+		weapon_modelId = "1046ui_weapon",
+		display_type = 1,
+		id = 1046,
+		modelId = "1046ui_light",
+		main_model_id = "1046ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
+	[104601] = {
+		display_model_id = "104601ui_display",
+		name = "浮光织雪",
+		portrait = 2110462,
+		video_url = "",
+		hero = 1046,
+		gift = "",
+		desc = "为了今天的见面，雪儿特意换上的礼服，柔美起伏的裙摆线条，似乎也代表着少女的另一面。",
+		skin_level = 0,
+		ui_has_timeline = 1,
+		home_weapon_show = 0,
+		ui_modelId = "104601ui_tpose",
+		picture_id = "104601",
+		weapon_modelId = "1046ui_weapon",
+		display_type = 2,
+		id = 104601,
+		modelId = "104601ui_light",
+		main_model_id = "104601ui_main",
+		unlock_id_list = {},
+		plot_title = {},
+		plot_id = {}
+	},
 	[1073] = {
 		display_model_id = "1073ui_display",
 		name = "巧构·源",
@@ -4829,6 +4917,28 @@
 		modelId = "",
 		main_model_id = ""
 	},
+	[2129] = {
+		display_model_id = "",
+		name = "",
+		portrait = 0,
+		unlock_id_list = "",
+		video_url = "",
+		hero = 2129,
+		gift = "",
+		desc = "",
+		skin_level = 0,
+		ui_has_timeline = 0,
+		home_weapon_show = 0,
+		plot_title = "",
+		ui_modelId = "",
+		picture_id = "",
+		weapon_modelId = "",
+		plot_id = "",
+		display_type = 0,
+		id = 2129,
+		modelId = "",
+		main_model_id = ""
+	},
 	[3004] = {
 		display_model_id = "",
 		name = "",
@@ -5310,6 +5420,28 @@
 		plot_id = "",
 		display_type = 0,
 		id = 3043,
+		modelId = "",
+		main_model_id = ""
+	},
+	[3050] = {
+		display_model_id = "",
+		name = "",
+		portrait = 0,
+		unlock_id_list = "",
+		video_url = "",
+		hero = 3050,
+		gift = "",
+		desc = "",
+		skin_level = 0,
+		ui_has_timeline = 0,
+		home_weapon_show = 0,
+		plot_title = "",
+		ui_modelId = "",
+		picture_id = "",
+		weapon_modelId = "",
+		plot_id = "",
+		display_type = 0,
+		id = 3050,
 		modelId = "",
 		main_model_id = ""
 	},
@@ -6114,6 +6246,9 @@
 		[3051] = {
 			3051
 		},
+		[3050] = {
+			3050
+		},
 		[3043] = {
 			3043
 		},
@@ -6179,6 +6314,9 @@
 		},
 		[3004] = {
 			3004
+		},
+		[2129] = {
+			2129
 		},
 		[2114] = {
 			2114
@@ -6375,6 +6513,14 @@
 		[1073] = {
 			1073,
 			107301
+		},
+		[1046] = {
+			1046,
+			104601
+		},
+		[1045] = {
+			1045,
+			104501
 		},
 		[1012] = {
 			1012,
@@ -6827,6 +6973,10 @@
 		1034,
 		103401,
 		1012,
+		1045,
+		104501,
+		1046,
+		104601,
 		1073,
 		107301,
 		1085,
@@ -6896,6 +7046,7 @@
 		2087,
 		2089,
 		2114,
+		2129,
 		3004,
 		3005,
 		3006,
@@ -6918,6 +7069,7 @@
 		3041,
 		3042,
 		3043,
+		3050,
 		3051,
 		3501,
 		4010,

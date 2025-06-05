@@ -3695,14 +3695,14 @@
 		param = {
 			{
 				2200,
-				0,
-				false,
+				110,
+				true,
 				"%"
 			},
 			{
 				56.41,
-				0,
-				false,
+				2.821,
+				true,
 				"%"
 			},
 			{
@@ -5161,6 +5161,465 @@
 		maxLv = 60,
 		type = 1,
 		id = 101042305,
+		extra_param = "",
+		param = {
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101045101] = {
+		description = "处于地面进行四段攻击，造成共计<color=#E78300>{1}</color>攻击力的火属性伤害，继续施放第五段普通攻击时会跃向空中，处于空中时获得硬直效果，施放第五、六段普通攻击，造成共计<color=#E78300>{2}</color>攻击力的火属性伤害，第五段普通攻击命中时，神能获得率提高<color=#E78300>25%</color>，持续<color=#E78300>{3}</color>秒。\n处于「枪械模式」时，点按或长按普通攻击进行攻击，每次造成<color=#E78300>{4}</color>攻击力的火属性伤害。\n\n<color=#297DE0>神能：</color>处于「斩击模式」时，普通攻击命中后会获得神能。",
+		maxLv = 60,
+		type = 1,
+		id = 101045101,
+		extra_param = "",
+		param = {
+			{
+				314,
+				6.127,
+				true,
+				"%"
+			},
+			{
+				387,
+				7.446,
+				true,
+				"%"
+			},
+			{
+				2.5,
+				0,
+				false,
+				""
+			},
+			{
+				7.667,
+				0.205,
+				true,
+				"%"
+			}
+		}
+	},
+	[101045201] = {
+		description = "处于地面时，造成共计<color=#E78300>{1}</color>攻击力的火属性伤害，施放后衔接普通攻击，会从普通攻击第四段开始攻击。\n每次处于空中时，可以施放<color=#E78300>1</color>次，造成共计<color=#E78300>{2}</color>攻击力的火属性伤害，命中时若拥有通过普通攻击获得的神能获得率提高效果，则神能获得率额外提高<color=#E78300>50%</color>并刷新持续时间，施放后会自动衔接普通攻击第六段。\n「爆裂喷发」：消耗<color=#E78300>25</color>点神能，发射<color=#E78300>3</color>颗子弹，每颗造成<color=#E78300>{3}</color>攻击力的火属性伤害。",
+		maxLv = 60,
+		type = 1,
+		id = 101045201,
+		extra_param = "",
+		param = {
+			{
+				220,
+				5.64,
+				true,
+				"%"
+			},
+			{
+				850,
+				21.79,
+				true,
+				"%"
+			},
+			{
+				30,
+				0.769,
+				true,
+				"%"
+			}
+		}
+	},
+	[101045202] = {
+		description = "处于地面时，神机切换为捕食形态，造成<color=#E78300>{1}</color>攻击力的火属性伤害，捕食成功后获得<color=#E78300>20</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>。\n处于空中时，神能为满时才可施放，消耗全部神能，神机切换为捕食形态，造成<color=#E78300>{2}</color>攻击力的火属性伤害，捕食成功后获得<color=#E78300>60</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>。\n移动闪避时可以衔接施放，神机切换为捕食形态，造成<color=#E78300>{3}</color>攻击力的火属性伤害，根据冲击距离，捕食成功后最多获得<color=#E78300>90</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>。\n<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>上限<color=#E78300>100</color>点，每次<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>为满时，<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>提高<color=#E78300>1</color>级；自身<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>等级每有<color=#E78300>1</color>级，自身攻击力提高<color=#E78300>7%</color>。\n\n神机捕食形态命中特殊的敌人时，会获得不同的子弹；进入「枪械模式」时，该技能会替换为「荒神枪弹」，造成不同的伤害：\n鬼面巨尾：造成<color=#E78300>{4}</color>攻击力的物理属性伤害；\n金刚：造成<color=#E78300>{5}</color>攻击力的风属性伤害；\n天父·狄阿乌斯：造成共计<color=#E78300>{6}</color>攻击力的雷属性伤害。",
+		maxLv = 60,
+		type = 1,
+		id = 101045202,
+		extra_param = "",
+		param = {
+			{
+				100,
+				2.564,
+				true,
+				"%"
+			},
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			},
+			{
+				150,
+				3.846,
+				true,
+				"%"
+			},
+			{
+				200,
+				5.128,
+				true,
+				"%"
+			},
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			},
+			{
+				400,
+				10.246,
+				true,
+				"%"
+			}
+		}
+	},
+	[101045203] = {
+		description = "处于地面的起手动作<material=underline c=#FFFFFF h=2 event=terminology args=(104504)>「归零架势」</material>会打断处于地面的普通攻击、技能、闪避的动作，并且不会打断普通攻击前三段的连段。\n<material=underline c=#FFFFFF h=2 event=terminology args=(104504)>「归零架势」</material>会进行防御，成功格挡攻击时，获得<color=#E78300>25</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>，该效果每<color=#E78300>0.5</color>秒最多触发一次，获得无敌效果，持续<color=#E78300>{1}</color>秒；进行防御时会移除自身通过该技能和非移动闪避获得的无敌效果。\n施放<material=underline c=#FFFFFF h=2 event=terminology args=(104504)>「归零架势」</material>后的短暂时间内，「斩命掠袭」替换为「IE刃炮连爆」，「噬身怒涛」替换为「IE炼狱劫火」；<material=underline c=#FFFFFF h=2 event=terminology args=(104504)>「归零架势」</material>可以衔接施放「IE刃炮连爆」，<material=underline c=#FFFFFF h=2 event=terminology args=(104504)>「归零架势」</material>、「IE刃炮连爆」可以衔接施放「IE炼狱劫火」。\n「IE刃炮连爆」：造成共计<color=#E78300>{2}</color>攻击力的火属性伤害，施放时技能伤害提高<color=#E78300>{3}</color>，持续<color=#E78300>{4}</color>秒。\n「IE炼狱劫火」：消耗全部神能，造成<color=#E78300>{5}</color>攻击力的火属性伤害，施放时获得<material=underline c=#FFFFFF h=2 event=terminology args=(104503)>「神机受控」</material>状态，最多持续<color=#E78300>12</color>秒；该技能每消耗<color=#E78300>40</color>点神能，会心伤害提高<color=#E78300>7%</color>，持续<color=#E78300>{6}</color>秒，获得该会心伤害提高效果时，根据<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>的等级，每有<color=#E78300>1</color>级，该会心伤害额外提高<color=#E78300>7%</color>。\n<material=underline c=#FFFFFF h=2 event=terminology args=(104503)>「神机受控」</material>：根据获得该状态时的<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>，若<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>不为<color=#E78300>3</color>级，则每<color=#E78300>0.12</color>秒获得<color=#E78300>0.8</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>，若<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>为<color=#E78300>3</color>级，则每<color=#E78300>0.12</color>秒消耗<color=#E78300>1.3</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>；<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>提升或降低时退出该状态。",
+		maxLv = 60,
+		type = 1,
+		id = 101045203,
+		extra_param = "",
+		param = {
+			{
+				2,
+				0,
+				false,
+				""
+			},
+			{
+				150,
+				3.84,
+				true,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				""
+			},
+			{
+				120,
+				3.076,
+				true,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101045208] = {
+		description = "血弹·雪儿与赤音·亚莉莎的连携奥义。\n血弹·雪儿造成<color=#E78300>{1}+{2}</color>×<color=#297DE0>自身奥义等级</color>攻击力的冰属性伤害；施放时全队伍神机使技能基础伤害提高<color=#E78300>{5}</color>，持续<color=#E78300>{6}</color>秒，若自身作为队长，则自身获得攻击力提高<color=#E78300>{7}</color>，持续<color=#E78300>{8}</color>秒。\n赤音·亚莉莎造成<color=#E78300>{3}+{4}</color>×<color=#297DE0>自身奥义等级</color>攻击力的火属性伤害；施放时全队伍神机使会心率提高<color=#E78300>{9}</color>、会心伤害提高<color=#E78300>{10}</color>，持续<color=#E78300>{11}</color>秒，若自身作为队长，则自身获得伤害提高<color=#E78300>{12}</color>，持续<color=#E78300>{13}</color>秒。",
+		maxLv = 60,
+		type = 1,
+		id = 101045208,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				0,
+				false,
+				"%"
+			},
+			{
+				30.769,
+				0,
+				false,
+				"%"
+			},
+			{
+				1200,
+				0,
+				false,
+				"%"
+			},
+			{
+				30.769,
+				0,
+				false,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			},
+			{
+				80,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			},
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			},
+			{
+				120,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101045209] = {
+		description = "造成共计<color=#E78300>{1}</color>攻击力的火属性伤害；施放时自身火属性伤害提高<color=#E78300>{2}</color>，持续<color=#E78300>{3}</color>秒；若处于「枪械模式」则退出「枪械模式」。\n\n每秒自动获得<color=#E78300>2%</color>的奥义值。自身或者队友触发零时空间时、自身获得<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>时，获得<color=#E78300>10%</color>的奥义值，该效果每<color=#E78300>2</color>秒最多触发一次。",
+		maxLv = 60,
+		type = 1,
+		id = 101045209,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				30.765,
+				true,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101045305] = {
+		description = "处于「斩击模式」，非移动闪避时，会进行防御，成功格挡攻击时，获得<color=#E78300>25</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>，该效果每<color=#E78300>0.5</color>秒最多触发一次，获得无敌效果，持续<color=#E78300>{1}</color>秒；进行防御时会移除自身通过该非移动闪避和<material=underline c=#FFFFFF h=2 event=terminology args=(104504)>「归零架势」</material>获得的无敌效果。\n处于「斩击模式」，长按移动闪避时，进入「枪械模式」：获得硬直效果，普通攻击改变攻击模式，「斩命掠袭」替换为「爆裂喷发」，「贯星脉冲」替换为「斩击模式」、可以通过该替换技能退出「枪械模式」。\n处于「斩击模式」的移动闪避、处于「枪械模式」的闪避，可以闪避敌人攻击，极限闪避会触发闪避效果。\n闪避效果：进入零时空间使全场敌人动作大幅减速，持续<color=#E78300>3</color>秒；闪避效果每<color=#E78300>{2}</color>秒最多触发一次。",
+		maxLv = 60,
+		type = 1,
+		id = 101045305,
+		extra_param = "",
+		param = {
+			{
+				2,
+				0,
+				false,
+				""
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101046101] = {
+		description = "造成共计<color=#E78300>{1}</color>攻击力的冰属性伤害。\n自身造成会心<color=#E78300>100</color>次后，获得<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(104603)>「血点」</material>标记，<material=underline c=#FFFFFF h=2 event=terminology args=(104603)>「血点」</material>标记最多拥有<color=#E78300>2</color>个。\n处于地面施放普通攻击时可长按消耗<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(104603)>「血点」</material>标记施放强化普通攻击「血怒吞噬」。\n「血怒吞噬」：持续对自身和敌人造成伤害，每次对敌人造成<color=#E78300>{2}</color>攻击力的冰属性伤害，对自身造成<color=#E78300>4%</color>生命值上限的伤害，每次命中后，该技能对自身造成的伤害增加<color=#E78300>0.3%</color>的生命值上限，对敌人伤害提高<color=#E78300>3%</color>，攻击最后一段会产生爆炸攻击，造成<color=#E78300>{3}</color>攻击力的冰属性伤害，爆炸攻击命中时，根据当前损失的生命值，每损失<color=#E78300>1%</color>的生命值，爆炸攻击命中瞬间伤害提高<color=#E78300>0.3%</color>、命中后恢复<color=#E78300>0.2%</color>的生命值；该攻击不会打断普通攻击的连段。\n\n处于「枪械模式」时，普通攻击造成<color=#E78300>{4}</color>攻击力的冰属性伤害。\n\n处于空中时，造成共计<color=#E78300>{5}</color>攻击力的冰属性伤害，之后会自动衔接「血之迅击」的下落攻击。\n\n<color=#297DE0>神能：</color>不处于「枪械模式」时，处于地面的普通攻击命中后会获得神能。",
+		maxLv = 60,
+		type = 1,
+		id = 101046101,
+		extra_param = "",
+		param = {
+			{
+				392,
+				7.567,
+				true,
+				"%"
+			},
+			{
+				40,
+				1.025,
+				true,
+				"%"
+			},
+			{
+				160,
+				4.1,
+				true,
+				"%"
+			},
+			{
+				100,
+				2.564,
+				true,
+				"%"
+			},
+			{
+				72,
+				1.441,
+				true,
+				"%"
+			}
+		}
+	},
+	[101046201] = {
+		description = "处于地面时，造成<color=#E78300>{1}</color>攻击力的冰属性伤害，攻击时会跃向空中，并自动衔接下落攻击，造成共计<color=#E78300>{2}</color>攻击力的冰属性伤害，处于空中时获得硬直效果；处于空中时，可提前点击施放，立即衔接下落攻击。\n「回旋投掷」：消耗<color=#E78300>25</color>点神能，造成共计<color=#E78300>{3}</color>攻击力的冰属性伤害。",
+		maxLv = 60,
+		type = 1,
+		id = 101046201,
+		extra_param = "",
+		param = {
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			},
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			},
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			}
+		}
+	},
+	[101046202] = {
+		description = "出场时，自身会心率提高不低于<color=#E78300>40%</color>时，会心率降低至<color=#E78300>40%</color>，会心率每降低<color=#E78300>1%</color>，<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>获得率提高<color=#E78300>1%</color>，该效果提供的<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>获得率提高最高为<color=#E78300>25%</color>。\n消耗全部神能进入积蓄状态，每消耗<color=#E78300>1</color>点，获得<color=#E78300>1</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>；达到积蓄时间上限会进行捕食攻击，积蓄时可再次点击立即进行捕食攻击，造成<color=#E78300>{1}</color>攻击力的冰属性伤害，根据积蓄时间，命中后最多额外获得<color=#E78300>100</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>；施放期间获得硬直效果，受到的伤害降低<color=#E78300>{2}</color>。\n<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>上限<color=#E78300>100</color>点，每次<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>为满时，<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>提高<color=#E78300>1</color>级；根据<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>的等级，自身<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>等级分别为<color=#E78300>1、2、3</color>级时，自身会心率分别提高<color=#E78300>1%、3%、6%</color>。\n<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>、<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>为满时，施放「枪械模式」的普通攻击时，会进入<material=underline c=#FFFFFF h=2 event=terminology args=(104604)>「爆发状态」</material>，持续<color=#E78300>15</color>秒。\n<material=underline c=#FFFFFF h=2 event=terminology args=(104604)>「爆发状态」</material>：进入时，消耗<color=#E78300>20</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>，造成共计<color=#E78300>{3}</color>攻击力的冰属性伤害，之后每<color=#E78300>0.1</color>秒消耗<color=#E78300>1</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>，自身根据<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>的等级的增益效果改变为<color=#E78300>5</color>倍。\n\n神机捕食形态命中特殊的敌人时，会获得不同的子弹；进入「枪械模式」时，该技能会替换为「荒神枪弹」，造成不同的伤害：\n鬼面巨尾：造成<color=#E78300>{4}</color>攻击力的物理属性伤害；\n金刚：造成<color=#E78300>{5}</color>攻击力的风属性伤害；\n天父·狄阿乌斯：造成共计<color=#E78300>{6}</color>攻击力的雷属性伤害。\n\n处于空中时，消耗<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(104603)>「血点」</material>标记，向地面冲击，造成共计<color=#E78300>{7}</color>攻击力的冰属性伤害。",
+		maxLv = 60,
+		type = 1,
+		id = 101046202,
+		extra_param = "",
+		param = {
+			{
+				400,
+				10.256,
+				true,
+				"%"
+			},
+			{
+				80,
+				0,
+				false,
+				"%"
+			},
+			{
+				500,
+				12.82,
+				true,
+				"%"
+			},
+			{
+				200,
+				5.128,
+				true,
+				"%"
+			},
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			},
+			{
+				400,
+				10.248,
+				true,
+				"%"
+			},
+			{
+				1500,
+				38.46,
+				true,
+				"%"
+			}
+		}
+	},
+	[101046203] = {
+		description = "处于地面时，进入「枪械模式」，获得硬直效果，普通攻击改变攻击模式，「血之迅击」替换为「回旋投掷」，「血之觉醒」替换为「荒神枪弹」，「血之枪弹」替换为「形态变化」、可以通过该替换技能退出「枪械模式」。\n\n处于空中时，向地面冲击，造成共计<color=#E78300>{1}</color>攻击力的冰属性伤害；施放时，重置「血之迅击」的剩余冷却时间，该技能有<color=#E78300>16</color>秒的冷却时间。",
+		maxLv = 60,
+		type = 1,
+		id = 101046203,
+		extra_param = "",
+		param = {
+			{
+				2280,
+				58.452,
+				true,
+				"%"
+			}
+		}
+	},
+	[101046209] = {
+		description = "造成共计<color=#E78300>{1}</color>攻击力的冰属性伤害；施放时自身冰属性伤害提高<color=#E78300>{2}</color>，持续<color=#E78300>{3}</color>秒；若处于「枪械模式」则退出「枪械模式」。\n\n每秒自动获得<color=#E78300>2%</color>的奥义值。自身或者队友触发零时空间时，获得<color=#E78300>15%</color>的奥义值，该效果每<color=#E78300>0.5</color>秒最多触发一次。",
+		maxLv = 60,
+		type = 1,
+		id = 101046209,
+		extra_param = "",
+		param = {
+			{
+				1200,
+				30.769,
+				true,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[101046305] = {
+		description = "非移动闪避时，会进行防御，成功格挡攻击时，获得<color=#E78300>25</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>，该效果每<color=#E78300>0.5</color>秒最多触发一次。\n移动闪避可以闪避敌人攻击，极限闪避会触发闪避效果。\n闪避效果：进入零时空间使全场敌人动作大幅减速，持续<color=#E78300>3</color>秒；闪避效果每<color=#E78300>{1}</color>秒最多触发一次。",
+		maxLv = 60,
+		type = 1,
+		id = 101046305,
 		extra_param = "",
 		param = {
 			{
@@ -8313,30 +8772,12 @@
 		}
 	},
 	[101072203] = {
-		description = "施放普通攻击最后一段、「运势如风」、「算筹如刀」后短暂时间内，「财货如雨」会替换为「辟邪奇术」，并可以进行衔接施放，衔接施放时有不同的段数、造成不同的伤害、命中后获得点数不同的<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>，<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>点数上限<color=#E78300>50</color>点：\n普通攻击最后一段后衔接施放「辟邪奇术」：可施放一段，造成共计<color=#E78300>{4}</color>攻击力的风属性伤害，获得共计<color=#E78300>6</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>；\n「运势如风」后衔接施放「辟邪奇术」：可连续施放三段，造成共计<color=#E78300>{5}</color>攻击力的风属性伤害，获得共计<color=#E78300>10</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>；\n「算筹如刀」后衔接施放「辟邪奇术」：可连续施放五段，造成共计<color=#E78300>{6}</color>攻击力的风属性伤害，获得共计<color=#E78300>14</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>。\n\n「财货如雨」：消耗全部<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>，跃入空中使用神算子攻击敌人，根据消耗的<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>点数对敌人造成不同的伤害。\n消耗的<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>点数低于<color=#E78300>40</color>时，造成共计<color=#E78300>{1}</color>攻击力的风属性伤害；\n消耗的<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>点数不低于<color=#E78300>40</color>时，造成共计<color=#E78300>{2}</color>攻击力的风属性伤害；\n施放「财货如雨」时全队伍风属性伤害提高<color=#E78300>10%</color>，持续<color=#E78300>{3}</color>秒，每消耗<color=#E78300>1</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>，附加的风属性伤害额外提高<color=#E78300>0.6%</color>。\n\n<color=#297DE0>印记：</color>施放「辟邪奇术」最后一段命中后，获得<color=#E78300>1</color>个印记。",
+		description = "施放普通攻击最后一段、「运势如风」、「算筹如刀」后短暂时间内，「财货如雨」会替换为「辟邪奇术」，并可以进行衔接施放，衔接施放时有不同的段数、造成不同的伤害、命中后获得点数不同的<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>，<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>点数上限<color=#E78300>50</color>点：\n普通攻击最后一段后衔接施放「辟邪奇术」：可施放一段，造成共计<color=#E78300>{1}</color>攻击力的风属性伤害，获得共计<color=#E78300>6</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>；\n「运势如风」后衔接施放「辟邪奇术」：可连续施放三段，造成共计<color=#E78300>{2}</color>攻击力的风属性伤害，获得共计<color=#E78300>10</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>；\n「算筹如刀」后衔接施放「辟邪奇术」：可连续施放五段，造成共计<color=#E78300>{3}</color>攻击力的风属性伤害，获得共计<color=#E78300>14</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>。\n\n「财货如雨」：消耗全部<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>，跃入空中使用神算子攻击敌人，根据消耗的<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>点数对敌人造成不同的伤害。\n消耗的<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>点数低于<color=#E78300>40</color>时，造成共计<color=#E78300>{4}</color>攻击力的风属性伤害；\n消耗的<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>点数不低于<color=#E78300>40</color>时，造成共计<color=#E78300>{5}</color>攻击力的风属性伤害；\n施放「财货如雨」时全队伍风属性伤害提高<color=#E78300>10%</color>，持续<color=#E78300>{6}</color>秒，每消耗<color=#E78300>1</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>，附加的风属性伤害额外提高<color=#E78300>0.6%</color>。\n\n<color=#297DE0>印记：</color>施放「辟邪奇术」最后一段命中后，获得<color=#E78300>1</color>个印记。",
 		maxLv = 60,
 		type = 1,
 		id = 101072203,
 		extra_param = "",
 		param = {
-			{
-				1000,
-				25.639,
-				true,
-				"%"
-			},
-			{
-				1200,
-				30.766,
-				true,
-				"%"
-			},
-			{
-				16,
-				0,
-				false,
-				""
-			},
 			{
 				800,
 				20.512,
@@ -8354,6 +8795,24 @@
 				41.024,
 				true,
 				"%"
+			},
+			{
+				1000,
+				25.639,
+				true,
+				"%"
+			},
+			{
+				1200,
+				30.766,
+				true,
+				"%"
+			},
+			{
+				16,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -10049,6 +10508,51 @@
 				30.765,
 				true,
 				"%"
+			}
+		}
+	},
+	[101089281] = {
+		description = "生魂·奥西里斯与焚轮·帕尔瓦蒂的连携奥义。\n生魂·奥西里斯造成<color=#E78300>{1}+{2}</color>×<color=#297DE0>自身奥义等级</color>攻击力的风属性伤害；自身进入<material=underline c=#FFFFFF h=2 event=terminology args=(111101)>「冥府审判模式」</material>，全队伍伤害提高<color=#E78300>20%+0.2%</color>×<color=#297DE0>自身奥义等级</color>，持续至<material=underline c=#FFFFFF h=2 event=terminology args=(111101)>「冥府审判模式」</material>结束。\n焚轮·帕尔瓦蒂造成<color=#E78300>{3}+{4}</color>×<color=#297DE0>自身奥义等级</color>攻击力的风属性伤害；施放时全队伍攻击力提高<color=#E78300>{5}</color>，持续<color=#E78300>{6}</color>秒；施放后重置自身奥义的冷却时间。",
+		maxLv = 60,
+		type = 1,
+		id = 101089281,
+		extra_param = "",
+		param = {
+			{
+				1000,
+				50,
+				true,
+				"%"
+			},
+			{
+				25.641,
+				1.282,
+				true,
+				"%"
+			},
+			{
+				1400,
+				70,
+				true,
+				"%"
+			},
+			{
+				35.897,
+				1.795,
+				true,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				""
 			}
 		}
 	},
@@ -18004,6 +18508,291 @@
 			}
 		}
 	},
+	[110450011] = {
+		description = "自身<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>等级每有<color=#E78300>1</color>级，火属性伤害提高<color=#E78300>{1}</color>。",
+		maxLv = 1,
+		type = 1,
+		id = 110450011,
+		extra_param = "",
+		param = {
+			{
+				7,
+				7,
+				true,
+				"%"
+			}
+		}
+	},
+	[110450012] = {
+		description = "<material=underline c=#FFFFFF h=2 event=terminology args=(104504)>「归零架势」</material>、「灵动架势」成功格挡攻击时，获得的<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>改变为<color=#E78300>50</color>点。\n<material=underline c=#FFFFFF h=2 event=terminology args=(104503)>「神机受控」</material>状态获得或消耗点数效果改变为<color=#E78300>2</color>倍，也不会随<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>提升或降低而退出状态。",
+		maxLv = 1,
+		type = 1,
+		id = 110450012,
+		extra_param = "",
+		param = {}
+	},
+	[110450013] = {
+		description = "根据<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>的点数和<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>的等级，「斩命掠袭」命中瞬间基础伤害提高，<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>每有<color=#E78300>1</color>点，「斩命掠袭」命中瞬间基础伤害提高<color=#E78300>{1}</color>，<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>每<color=#E78300>1</color>级视为<color=#E78300>100</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>。",
+		maxLv = 1,
+		type = 1,
+		id = 110450013,
+		extra_param = "",
+		param = {
+			{
+				0.2,
+				0.2,
+				true,
+				"%"
+			}
+		}
+	},
+	[110450021] = {
+		description = "地面的普通攻击、技能动作衔接<material=underline c=#FFFFFF h=2 event=terminology args=(104504)>「归零架势」</material>时，会触发一次范围伤害，造成共计<color=#E78300>{1}</color>攻击力的火属性伤害，对命中的敌人附加破甲状态，防御力降低<color=#E78300>{2}</color>，持续<color=#E78300>{3}</color>秒，最多可叠加<color=#E78300>3</color>层。",
+		maxLv = 1,
+		type = 1,
+		id = 110450021,
+		extra_param = "",
+		param = {
+			{
+				250,
+				6.41,
+				true,
+				"%"
+			},
+			{
+				5,
+				5,
+				true,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[110450022] = {
+		description = "触发神格「千变战技·旋击」时，<material=underline c=#FFFFFF h=2 event=terminology args=(104503)>「神机受控」</material>的持续时间缩短<color=#E78300>0.5</color>秒。",
+		maxLv = 1,
+		type = 1,
+		id = 110450022,
+		extra_param = "",
+		param = {}
+	},
+	[110450023] = {
+		description = "地面的普通攻击动作衔接<material=underline c=#FFFFFF h=2 event=terminology args=(104504)>「归零架势」</material>时，普通攻击伤害提高<color=#E78300>{1}</color>、伤害提高<color=#E78300>{2}</color>，持续<color=#E78300>{3}</color>秒，最多可叠加<color=#E78300>3</color>层。\n地面的技能动作衔接<material=underline c=#FFFFFF h=2 event=terminology args=(104504)>「归零架势」</material>时，攻击力提高<color=#E78300>{4}</color>、技能伤害提高<color=#E78300>{5}</color>，持续<color=#E78300>{6}</color>秒，最多可叠加<color=#E78300>3</color>层。",
+		maxLv = 1,
+		type = 1,
+		id = 110450023,
+		extra_param = "",
+		param = {
+			{
+				3,
+				3,
+				true,
+				"%"
+			},
+			{
+				3,
+				3,
+				true,
+				"%"
+			},
+			{
+				7,
+				0,
+				false,
+				""
+			},
+			{
+				8,
+				8,
+				true,
+				"%"
+			},
+			{
+				8,
+				8,
+				true,
+				"%"
+			},
+			{
+				7,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[110450031] = {
+		description = "进入「枪械模式」时，普通攻击伤害提高<color=#E78300>{1}</color>，每经过<color=#E78300>1</color>秒，该效果额外提高<color=#E78300>{1}</color>，最高<color=#E78300>{2}</color>，持续至退出「枪械模式」。\n「枪械模式」的普通攻击每次命中后会获得<color=#E78300>3</color>点神能。",
+		maxLv = 1,
+		type = 1,
+		id = 110450031,
+		extra_param = "",
+		param = {
+			{
+				10,
+				10,
+				true,
+				"%"
+			},
+			{
+				200,
+				200,
+				true,
+				"%"
+			}
+		}
+	},
+	[110450032] = {
+		description = "处于「枪械模式」时，神能为满时，施放普通攻击会消耗全部神能，随机触发「荒神枪弹」，获得<color=#E78300>90</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>。",
+		maxLv = 1,
+		type = 1,
+		id = 110450032,
+		extra_param = "",
+		param = {}
+	},
+	[110450033] = {
+		description = "每次施放「枪械模式」的普通攻击时，会消耗<color=#E78300>10</color>点<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>，触发「爆裂喷发」，该次触发改变为<color=#E78300>5</color>颗子弹。",
+		maxLv = 1,
+		type = 1,
+		id = 110450033,
+		extra_param = "",
+		param = {}
+	},
+	[110460011] = {
+		description = "<material=underline c=#FFFFFF h=2 event=terminology args=(104604)>「爆发状态」</material>持续时间延长至<color=#E78300>20</color>秒。",
+		maxLv = 1,
+		type = 1,
+		id = 110460011,
+		extra_param = "",
+		param = {}
+	},
+	[110460012] = {
+		description = "每次消耗<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>时，「血之迅击」的剩余冷却时间缩短<color=#E78300>0.2</color>秒。",
+		maxLv = 1,
+		type = 1,
+		id = 110460012,
+		extra_param = "",
+		param = {}
+	},
+	[110460013] = {
+		description = "根据<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>的等级，自身<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>等级分别为<color=#E78300>1、2、3</color>级时，全队伍神机使攻击力分别提高<color=#E78300>{1}、{2}、{3}</color>。\n处于<material=underline c=#FFFFFF h=2 event=terminology args=(104604)>「爆发状态」</material>时，根据<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>的等级的增益效果固定视为<color=#E78300>3</color>级。",
+		maxLv = 1,
+		type = 1,
+		id = 110460013,
+		extra_param = "",
+		param = {
+			{
+				1.5,
+				1.5,
+				true,
+				"%"
+			},
+			{
+				4.5,
+				4.5,
+				true,
+				"%"
+			},
+			{
+				9,
+				9,
+				true,
+				"%"
+			}
+		}
+	},
+	[110460021] = {
+		description = "施放消耗<material=underline c=#FFFFFF h=2 event=terminology args=(104603)>「血点」</material>标记的攻击时，会心伤害提高<color=#E78300>{1}</color>、冰属性伤害提高<color=#E78300>{2}</color>，持续<color=#E78300>{3}</color>秒，最多可叠加<color=#E78300>4</color>层。",
+		maxLv = 1,
+		type = 1,
+		id = 110460021,
+		extra_param = "",
+		param = {
+			{
+				10,
+				10,
+				true,
+				"%"
+			},
+			{
+				10,
+				10,
+				true,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[110460022] = {
+		description = "<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>增加或减少时，造成会心获得<material=underline c=#FFFFFF h=2 event=terminology args=(104603)>「血点」</material>标记的计数计入<color=#E78300>2</color>次。",
+		maxLv = 1,
+		type = 1,
+		id = 110460022,
+		extra_param = "",
+		param = {}
+	},
+	[110460023] = {
+		description = "处于<material=underline c=#FFFFFF h=2 event=terminology args=(104604)>「爆发状态」</material>时，普通攻击第四段命中后，在锁定的敌人周围召唤多枚「贯穿弹」，每枚造成<color=#E78300>{1}</color>攻击力的冰属性伤害，召唤的「贯穿弹」数量等同于上一次「血怒吞噬」攻击命中的次数，召唤「贯穿弹」的效果每次<material=underline c=#FFFFFF h=2 event=terminology args=(104604)>「爆发状态」</material>状态期间最多触发一次。",
+		maxLv = 1,
+		type = 1,
+		id = 110460023,
+		extra_param = "",
+		param = {
+			{
+				300,
+				7.692,
+				true,
+				"%"
+			}
+		}
+	},
+	[110460031] = {
+		description = "不处于「枪械模式」时，闪避后下一次施放普通攻击第一段或施放「血之迅击」时会触发刀波攻击：\n普通攻击第一段：触发<color=#E78300>3</color>个刀波攻击，每个造成<color=#E78300>{1}</color>攻击力的冰属性伤害；\n「血之迅击」：触发刀波攻击，造成<color=#E78300>{2}</color>攻击力的冰属性伤害。",
+		maxLv = 1,
+		type = 1,
+		id = 110460031,
+		extra_param = "",
+		param = {
+			{
+				60,
+				1.538,
+				true,
+				"%"
+			},
+			{
+				100,
+				2.564,
+				true,
+				"%"
+			}
+		}
+	},
+	[110460032] = {
+		description = "不处于「枪械模式」的普通攻击、「血之迅击」、「血之迅击」的下落攻击三种攻击在<color=#E78300>3</color>秒内命中同一个敌人时，获得<color=#E78300>1</color>个<material=underline c=#FFFFFF h=2 event=terminology args=(104603)>「血点」</material>标记，该效果每<color=#E78300>15</color>秒最多触发一次。",
+		maxLv = 1,
+		type = 1,
+		id = 110460032,
+		extra_param = "",
+		param = {}
+	},
+	[110460033] = {
+		description = "提前施放「血之迅击」的下落攻击时，「血之迅击」的剩余冷却时间缩短，越提前施放下落攻击剩余冷却时间缩短越多，最多缩短<color=#E78300>4</color>秒，处于空中施放普通攻击时，会重置提前施放下落攻击的时间计时；每次触发该剩余冷却时间缩短时，神格「娴熟的技巧·连击」中的获得<material=underline c=#FFFFFF h=2 event=terminology args=(104603)>「血点」</material>标记的剩余间隔时间缩短<color=#E78300>1</color>秒。",
+		maxLv = 1,
+		type = 1,
+		id = 110460033,
+		extra_param = "",
+		param = {}
+	},
 	[110480011] = {
 		description = "「定点打击」的冷却时间缩短<color=#E78300>3</color>秒。",
 		maxLv = 1,
@@ -20166,7 +20955,7 @@
 		}
 	},
 	[110720023] = {
-		description = "<material=underline c=#FFFFFF h=2 event=terminology args=(107202)>「瑞币」</material>的协同攻击命中瞬间伤害提高<color=#E78300>{1}</color>。<material=underline c=#FFFFFF h=2 event=terminology args=(107202)>「瑞币」</material>改变为跟随所有队友。",
+		description = "<material=underline c=#FFFFFF h=2 event=terminology args=(107202)>「瑞币」</material>的协同攻击命中瞬间伤害提高<color=#E78300>{1}</color>。\n<material=underline c=#FFFFFF h=2 event=terminology args=(107202)>「瑞币」</material>改变为跟随所有队友。",
 		maxLv = 1,
 		type = 1,
 		id = 110720023,
@@ -28077,6 +28866,62 @@
 			}
 		}
 	},
+	[200001141] = {
+		description = "<material=underline c=#FFFFFF h=2 event=terminology args=(107202)>「瑞币」</material>跟随的修正者每次施放技能时，风属性攻击命中瞬间会心伤害提高<color=#E78300>{1}</color>，持续<color=#E78300>4</color>秒，该效果最多可叠加<color=#E78300>5</color>层。\n<material=underline c=#FFFFFF h=2 event=terminology args=(107202)>「瑞币」</material>跟随的修正者，对敌人附加切割状态时，风属性伤害提高<color=#E78300>{2}</color>，持续<color=#E78300>{3}</color>秒。",
+		maxLv = 1,
+		type = 1,
+		id = 200001141,
+		extra_param = "",
+		param = {
+			{
+				18,
+				18,
+				false,
+				"%"
+			},
+			{
+				12,
+				0,
+				false,
+				"%"
+			},
+			{
+				16,
+				0,
+				false,
+				""
+			}
+		}
+	},
+	[200001142] = {
+		description = "<material=underline c=#FFFFFF h=2 event=terminology args=(107202)>「瑞币」</material>的协同攻击命中瞬间伤害提高<color=#E78300>{1}</color>。\n<material=underline c=#FFFFFF h=2 event=terminology args=(107202)>「瑞币」</material>改变为跟随所有队友，跟随的队友受到的伤害降低<color=#E78300>{2}</color>。",
+		maxLv = 1,
+		type = 1,
+		id = 200001142,
+		extra_param = "",
+		param = {
+			{
+				30,
+				0,
+				false,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[200001143] = {
+		description = "神格「神算尊者·术奇」的攻击力提高效果最多可以叠加<color=#E78300>3</color>层。",
+		maxLv = 1,
+		type = 1,
+		id = 200001143,
+		extra_param = "",
+		param = {}
+	},
 	[220101101] = {
 		description = "当雏心·奥西里斯装备时，获得以下效果。\n获得所有神格的第三层效果。\n技能一基础伤害提高<color=#E78300>{1}%</color>。\n技能三基础伤害提高<color=#E78300>{2}%</color>。",
 		maxLv = 0,
@@ -29835,6 +30680,118 @@
 			"5",
 			"10",
 			"10"
+		}
+	},
+	[220107201] = {
+		description = "当百解·禄良装备时，获得以下效果。\n<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(107202)>「瑞币」</material></color>的持续时间延长<color=#E78300>{1}</color>秒。\n<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(107202)>「瑞币」</material></color>的协同攻击附加的风属性抗性降低效果可额外叠加，每次叠加风属性抗性额外降低<color=#E78300>{2}%</color>，最多可额外叠加<color=#E78300>{3}</color>层。\n<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(107202)>「瑞币」</material></color>效果结束时，自身以外的队友恢复<color=#E78300>10%</color>的奥义值，并在跟随的修正者位置产生爆炸，造成共计<color=#E78300>{4}%</color>攻击力的风属性伤害。爆炸会对命中的敌人附加破甲状态，防御力降低<color=#E78300>{5}%</color>，持续<color=#E78300>{6}</color>秒。\n当闪避效果不处于冷却状态时，<color=#297DE0>「辟邪奇术」</color>的最后一段攻击命中时也会触发闪避效果。<color=#297DE0>「辟邪奇术」</color>的最后一段攻击命中后，自身奥义的剩余冷却时间缩短<color=#E78300>{7}</color>秒。\n施放奥义后或连携奥义时，获得<color=#E78300>10</color>点<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material></color>。\n奥义获得率提高<color=#E78300>{8}%</color>。\n附加<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(107202)>「瑞币」</material></color>时，若全队伍评分值获得率加和高于<color=#E78300>60%</color>，则<color=#297DE0><material=underline c=#FFFFFF h=2 event=terminology args=(107202)>「瑞币」</material></color>跟随的队友独立伤害提高<color=#E78300>{9}%</color>，持续<color=#E78300>{10}</color>秒。",
+		maxLv = 0,
+		type = 0,
+		id = 220107201,
+		param = {
+			{
+				"0",
+				"2",
+				"1.6",
+				"8",
+				"800",
+				"15",
+				"16",
+				"0.4",
+				"30",
+				"4",
+				"24"
+			},
+			{
+				"0",
+				"3",
+				"2",
+				"8",
+				"800",
+				"15",
+				"16",
+				"0.5",
+				"30",
+				"5",
+				"24"
+			},
+			{
+				"0",
+				"4",
+				"2.4",
+				"8",
+				"800",
+				"15",
+				"16",
+				"0.6",
+				"30",
+				"6",
+				"24"
+			},
+			{
+				"0",
+				"5",
+				"2.8",
+				"8",
+				"800",
+				"15",
+				"16",
+				"0.7",
+				"30",
+				"7",
+				"24"
+			},
+			{
+				"0",
+				"6",
+				"3.2",
+				"8",
+				"800",
+				"15",
+				"16",
+				"0.8",
+				"30",
+				"8",
+				"24"
+			},
+			{
+				"0",
+				"7",
+				"3.6",
+				"8",
+				"800",
+				"15",
+				"16",
+				"0.9",
+				"30",
+				"9",
+				"24"
+			},
+			{
+				"0",
+				"8",
+				"4",
+				"8",
+				"800",
+				"15",
+				"16",
+				"1",
+				"30",
+				"10",
+				"24"
+			}
+		},
+		extra_param = {
+			"0",
+			"2/3/4/5/6/7/8",
+			"1.6%/2%/2.4%/2.8%/3.2%/3.6%/4",
+			"8",
+			"800",
+			"15",
+			"16",
+			"0.4/0.5/0.6/0.7/0.8/0.9/1",
+			"30",
+			"4%/5%/6%/7%/8%/9%/10",
+			"24"
 		}
 	},
 	[220108001] = {
@@ -33355,6 +34312,150 @@
 			"0",
 			"1200",
 			"8000/10000/12000/14000/16000/18000/20000"
+		}
+	},
+	[500104501] = {
+		description = "当赤音·亚莉莎装备时，获得以下效果。\n每次施放<color=#297DE0>「斩命掠袭」</color>时，火属性伤害提高<color=#E78300>{1}%</color>、独立伤害提高<color=#E78300>{2}%</color>，持续<color=#E78300>{3}</color>秒，最多可叠加<color=#E78300>4</color>层。\n当前<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(104601)>「爆发指数」</material></color>点数高于<color=#E78300>50</color>点时，普通攻击伤害提高<color=#E78300>{4}%</color>、技能伤害提高<color=#E78300>{5}%</color>。\n进入<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(104503)>「神机受控」</material></color>状态时，若不处于<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(104503)>「神机受控」</material></color>状态，则重置<color=#297DE0>「斩命掠袭」</color>的剩余冷却时间，之后的<color=#E78300>{6}</color>秒内，施放<color=#297DE0>「斩命掠袭」</color>后该技能的剩余冷却时间缩短<color=#E78300>90%</color>，并获得<color=#E78300>20</color>点神能，以上效果在持续时间内<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(104504)>「归零架势」</material></color>成功格挡攻击时，重置效果的持续时间，该重置效果在每次持续时间内最多可触发<color=#E78300>1</color>次。",
+		maxLv = 0,
+		type = 0,
+		id = 500104501,
+		param = {
+			{
+				"0",
+				"4",
+				"4",
+				"10",
+				"10",
+				"5",
+				"1.6"
+			},
+			{
+				"0",
+				"5",
+				"5",
+				"10",
+				"10",
+				"5",
+				"2"
+			},
+			{
+				"0",
+				"6",
+				"6",
+				"10",
+				"10",
+				"5",
+				"2.4"
+			},
+			{
+				"0",
+				"7",
+				"7",
+				"10",
+				"10",
+				"5",
+				"2.8"
+			},
+			{
+				"0",
+				"8",
+				"8",
+				"10",
+				"10",
+				"5",
+				"3.2"
+			},
+			{
+				"0",
+				"9",
+				"9",
+				"10",
+				"10",
+				"5",
+				"3.6"
+			},
+			{
+				"0",
+				"10",
+				"10",
+				"10",
+				"10",
+				"5",
+				"4"
+			}
+		},
+		extra_param = {
+			"0",
+			"4%/5%/6%/7%/8%/9%/10",
+			"4%/5%/6%/7%/8%/9%/10",
+			"10",
+			"10",
+			"5",
+			"1.6/2/2.4/2.8/3.2/3.6/4"
+		}
+	},
+	[500104601] = {
+		description = "当血弹·雪儿装备时，获得以下效果。\n当<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(104601)>「爆发指数」</material></color>不低于<color=#E78300>50</color>点时，<color=#297DE0>「贯穿弹」</color>攻击命中瞬间会心率提高<color=#E78300>{1}%</color>。\n<color=#297DE0>「回旋投掷」</color>每次攻击期间，若<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(104601)>「爆发指数」</material></color>不低于<color=#E78300>50、100</color>点，则分别触发<color=#E78300>1、2</color>枚<color=#297DE0>「贯穿弹」</color>。\n自身或者队友格挡敌人攻击成功时，对攻击者触发<color=#E78300>4</color>枚<color=#297DE0>「贯穿弹」</color>，该效果每<color=#E78300>0.5</color>秒最多触发一次；通过该途径触发<color=#297DE0>「贯穿弹」</color>后的<color=#E78300>5</color>秒内再次触发时，<color=#297DE0>「贯穿弹」</color>攻击额外触发<color=#E78300>1</color>枚，最多额外触发<color=#E78300>4</color>枚。\n通过该专属钥从途径触发的<color=#297DE0>「贯穿弹」</color>，每枚造成<color=#E78300>{2}%</color>攻击力的冰属性伤害。\n每次施放消耗<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(104603)>「血点」</material></color>标记的攻击会对命中的敌人附加<color=#E78300>1</color>层<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(104605)>「血怒」</material></color>状态，持续<color=#E78300>16</color>秒，最多可叠加<color=#E78300>4</color>层；当敌人拥有的<color=#297DE0><material=underline c=#2380BF h=2 event=terminology args=(104605)>「血怒」</material></color>状态的层数为<color=#E78300>1、2、3、4</color>层时，若自身生命值不高于<color=#E78300>25%、50%、75%、100%</color>，则自身攻击命中瞬间独立伤害提高<color=#E78300>{3}%</color>。\n生命值变为<color=#E78300>1</color>时，获得无敌效果，持续<color=#E78300>{4}</color>秒；处于空中时，施放<color=#297DE0>「血之觉醒」</color>、<color=#297DE0>「血之枪弹」</color>时，获得短暂的无敌效果；处于空中时，施放普通攻击后衔接施放的<color=#297DE0>「血之迅击」</color>的下落攻击时，获得短暂的无敌效果。",
+		maxLv = 0,
+		type = 0,
+		id = 500104601,
+		param = {
+			{
+				"0",
+				"12",
+				"100",
+				"28",
+				"3"
+			},
+			{
+				"0",
+				"15",
+				"100",
+				"35",
+				"3"
+			},
+			{
+				"0",
+				"18",
+				"100",
+				"42",
+				"3"
+			},
+			{
+				"0",
+				"21",
+				"100",
+				"49",
+				"3"
+			},
+			{
+				"0",
+				"24",
+				"100",
+				"56",
+				"3"
+			},
+			{
+				"0",
+				"27",
+				"100",
+				"63",
+				"3"
+			},
+			{
+				"0",
+				"30",
+				"100",
+				"70",
+				"3"
+			}
+		},
+		extra_param = {
+			"0",
+			"12%/15%/18%/21%/24%/27%/30",
+			"100",
+			"28%/35%/42%/49%/56%/63%/70",
+			"3"
 		}
 	},
 	[500104802] = {
@@ -38192,6 +39293,72 @@
 				0,
 				false,
 				""
+			}
+		}
+	},
+	[600000070] = {
+		description = "全属性伤害提高{1}。\n当神机使装备时，攻击力提高{2}、奥义获得率提高{3}、奥义伤害提高{4}。",
+		maxLv = 1,
+		type = 1,
+		id = 600000070,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				25,
+				0,
+				false,
+				"%"
+			},
+			{
+				40,
+				0,
+				false,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
+			}
+		}
+	},
+	[600000071] = {
+		description = "技能伤害提高{1}。\n当神机使装备时，会心率提高{2}、普通攻击伤害提高{3}、伤害提高{4}。",
+		maxLv = 1,
+		type = 1,
+		id = 600000071,
+		extra_param = "",
+		param = {
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				10,
+				0,
+				false,
+				"%"
+			},
+			{
+				20,
+				0,
+				false,
+				"%"
+			},
+			{
+				30,
+				0,
+				false,
+				"%"
 			}
 		}
 	},
@@ -50165,6 +51332,102 @@
 		extra_param = "",
 		param = {}
 	},
+	[700018101] = {
+		description = "火属性伤害提高20%",
+		maxLv = 1,
+		type = 1,
+		id = 700018101,
+		extra_param = "",
+		param = {}
+	},
+	[700018102] = {
+		description = "神能获得率提高100%",
+		maxLv = 1,
+		type = 1,
+		id = 700018102,
+		extra_param = "",
+		param = {}
+	},
+	[700018103] = {
+		description = "每次施放「IE刃炮连爆」时，获得10点「爆发指数」",
+		maxLv = 1,
+		type = 1,
+		id = 700018103,
+		extra_param = "",
+		param = {}
+	},
+	[700018104] = {
+		description = "成功触发「归零架势」或非移动闪避的格挡效果时，会自动触发反击并重置所有技能的剩余冷却时间",
+		maxLv = 1,
+		type = 1,
+		id = 700018104,
+		extra_param = "",
+		param = {}
+	},
+	[700018105] = {
+		description = "「斩击模式」的普通攻击仅保留后三段，施放空中技能和下落攻击时，会触发额外攻击",
+		maxLv = 1,
+		type = 1,
+		id = 700018105,
+		extra_param = "",
+		param = {}
+	},
+	[700018106] = {
+		description = "施放「归零架势」时，获得霸体效果，持续5秒；「IE刃炮连爆」、「IE炼狱劫火」有2条额外攻击弹道",
+		maxLv = 1,
+		type = 1,
+		id = 700018106,
+		extra_param = "",
+		param = {}
+	},
+	[700018201] = {
+		description = "冰属性伤害提高20%",
+		maxLv = 1,
+		type = 1,
+		id = 700018201,
+		extra_param = "",
+		param = {}
+	},
+	[700018202] = {
+		description = "每8秒自动获得1个「血点」标记",
+		maxLv = 1,
+		type = 1,
+		id = 700018202,
+		extra_param = "",
+		param = {}
+	},
+	[700018203] = {
+		description = "施放任意下落攻击时，伤害提高1000%，持续2秒",
+		maxLv = 1,
+		type = 1,
+		id = 700018203,
+		extra_param = "",
+		param = {}
+	},
+	[700018204] = {
+		description = "非「枪械模式」施放普通攻击和技能时，触发额外攻击",
+		maxLv = 1,
+		type = 1,
+		id = 700018204,
+		extra_param = "",
+		param = {}
+	},
+	[700018205] = {
+		description = "「血怒吞噬」会触发额外攻击，施放时会持续聚集周围的敌人并获得等同于自身生命值上限300%的护盾",
+		maxLv = 1,
+		type = 1,
+		id = 700018205,
+		extra_param = "",
+		param = {}
+	},
+	[700018206] = {
+		description = "施放「血之迅击」跃向空中后，若施放的下落攻击和前一个不同，则重置所有技能的剩余冷却时间",
+		maxLv = 1,
+		type = 1,
+		id = 700018206,
+		extra_param = "",
+		param = {}
+	},
 	[700070001] = {
 		description = "该敌方单位在5米范围有如果有敌方单位存在则范围内所有单位防御力减少{1}",
 		maxLv = 4,
@@ -59547,6 +60810,96 @@
 			}
 		}
 	},
+	[21107210121] = {
+		description = "操纵神算子施展御风奇术，对敌人进行最多五段攻击，造成共计<color=#E78300>{1}</color>攻击力的风属性伤害。",
+		maxLv = 60,
+		type = 1,
+		id = 21107210121,
+		extra_param = "",
+		param = {
+			{
+				685,
+				13.214,
+				true,
+				"%"
+			}
+		}
+	},
+	[21107220122] = {
+		description = "使用神算子快速滑行，然后进行迅猛一击，造成共计<color=#E78300>{1}</color>攻击力的风属性伤害。",
+		maxLv = 60,
+		type = 1,
+		id = 21107220122,
+		extra_param = "",
+		param = {
+			{
+				750,
+				19.23,
+				true,
+				"%"
+			}
+		}
+	},
+	[21107220223] = {
+		description = "掷出神算子对敌人进行旋转攻击，造成共计<color=#E78300>{1}</color>攻击力的风属性伤害。",
+		maxLv = 60,
+		type = 1,
+		id = 21107220223,
+		extra_param = "",
+		param = {
+			{
+				1600,
+				41.02,
+				true,
+				"%"
+			}
+		}
+	},
+	[21107220324] = {
+		description = "施放普通攻击最后一段、「运势如风」、「算筹如刀」后短暂时间内，「财货如雨」会替换为「辟邪奇术」，并可以进行衔接施放，衔接施放时有不同的段数、造成不同的伤害、命中后获得点数不同的「财运」，「财运」点数上限<color=#E78300>50</color>点：\n普通攻击最后一段后衔接施放「辟邪奇术」：可施放一段，造成共计<color=#E78300>{1}</color>攻击力的风属性伤害，获得共计<color=#E78300>6</color>点「财运」；\n「运势如风」后衔接施放「辟邪奇术」：可连续施放三段，造成共计<color=#E78300>{2}</color>攻击力的风属性伤害，获得共计<color=#E78300>10</color>点「财运」；\n「算筹如刀」后衔接施放「辟邪奇术」：可连续施放五段，造成共计<color=#E78300>{3}</color>攻击力的风属性伤害，获得共计<color=#E78300>14</color>点「财运」。\n\n「财货如雨」：消耗全部「财运」，跃入空中使用神算子攻击敌人，根据消耗的「财运」点数对敌人造成不同的伤害。\n消耗的「财运」点数低于<color=#E78300>40</color>时，造成共计<color=#E78300>{4}</color>攻击力的风属性伤害；\n消耗的「财运」点数不低于<color=#E78300>40</color>时，造成共计<color=#E78300>{5}</color>攻击力的风属性伤害；\n施放「财货如雨」时全队伍风属性伤害提高<color=#E78300>10%</color>，持续<color=#E78300>{6}</color>秒，每消耗<color=#E78300>1</color>点「财运」，附加的风属性伤害额外提高<color=#E78300>0.6%</color>。\n\n<color=#297DE0>印记：</color>施放「辟邪奇术」最后一段命中后，获得<color=#E78300>1</color>个印记。",
+		maxLv = 60,
+		type = 1,
+		id = 21107220324,
+		extra_param = "",
+		param = {
+			{
+				900,
+				23.076,
+				true,
+				"%"
+			},
+			{
+				1400,
+				35.896,
+				true,
+				"%"
+			},
+			{
+				1900,
+				48.716,
+				true,
+				"%"
+			},
+			{
+				1200,
+				30.767,
+				true,
+				"%"
+			},
+			{
+				1300,
+				33.332,
+				true,
+				"%"
+			},
+			{
+				16,
+				0,
+				false,
+				""
+			}
+		}
+	},
 	[21108010121] = {
 		description = "连续挥舞战斧攻击敌人，造成共计<color=#E78300>{1}</color>攻击力的冰属性伤害。\n\n<color=#297DE0>怒气：</color>普通攻击命中后会获得怒气。",
 		maxLv = 60,
@@ -61261,6 +62614,19 @@
 		101042208,
 		101042209,
 		101042305,
+		101045101,
+		101045201,
+		101045202,
+		101045203,
+		101045208,
+		101045209,
+		101045305,
+		101046101,
+		101046201,
+		101046202,
+		101046203,
+		101046209,
+		101046305,
 		101048101,
 		101048201,
 		101048202,
@@ -61438,6 +62804,7 @@
 		101089203,
 		101089208,
 		101089209,
+		101089281,
 		101089305,
 		101093101,
 		101093208,
@@ -61850,6 +63217,24 @@
 		110420031,
 		110420032,
 		110420033,
+		110450011,
+		110450012,
+		110450013,
+		110450021,
+		110450022,
+		110450023,
+		110450031,
+		110450032,
+		110450033,
+		110460011,
+		110460012,
+		110460013,
+		110460021,
+		110460022,
+		110460023,
+		110460031,
+		110460032,
+		110460033,
 		110480011,
 		110480012,
 		110480013,
@@ -62449,6 +63834,9 @@
 		200001138,
 		200001139,
 		200001140,
+		200001141,
+		200001142,
+		200001143,
 		220101101,
 		220101301,
 		220101601,
@@ -62476,6 +63864,7 @@
 		220106601,
 		220106701,
 		220106801,
+		220107201,
 		220108001,
 		220108101,
 		220108401,
@@ -62542,6 +63931,8 @@
 		500103901,
 		500104101,
 		500104201,
+		500104501,
+		500104601,
 		500104802,
 		500104901,
 		500105001,
@@ -62659,6 +64050,8 @@
 		600000067,
 		600000068,
 		600000069,
+		600000070,
+		600000071,
 		700000001,
 		700000101,
 		700000102,
@@ -63643,6 +65036,18 @@
 		700009967,
 		700009968,
 		700009969,
+		700018101,
+		700018102,
+		700018103,
+		700018104,
+		700018105,
+		700018106,
+		700018201,
+		700018202,
+		700018203,
+		700018204,
+		700018205,
+		700018206,
 		700070001,
 		700070002,
 		700070003,
@@ -64302,6 +65707,10 @@
 		21106820122,
 		21106820223,
 		21106820324,
+		21107210121,
+		21107220122,
+		21107220223,
+		21107220324,
 		21108010121,
 		21108011125,
 		21108011141,

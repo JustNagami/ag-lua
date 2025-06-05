@@ -16655,19 +16655,62 @@
 		end
 
 		function arg_435_1.onSingleLineUpdate_(arg_438_0)
-			local var_438_0 = 0
-			local var_438_1 = 0.55
+			local var_438_0
+			local var_438_1 = 0
 
-			if var_438_0 < arg_435_1.time_ and arg_435_1.time_ <= var_438_0 + arg_438_0 then
+			if var_438_1 < arg_435_1.time_ and arg_435_1.time_ <= var_438_1 + arg_438_0 then
+				local var_438_2 = manager.ui.mainCamera:GetComponent("CameraExtension")
+
+				if var_438_2 then
+					var_438_2.dofType = UnityEngine.Pipelines.SimPipeline.DepthOfFieldType.Disabled
+					var_438_2.radialBlurScale = 0
+					var_438_2.radialBlurGradient = 0
+					var_438_2.radialBlurIntensity = 0
+
+					if var_438_0 then
+						var_438_2.radialBlurTarget = var_438_0.transform
+					end
+				end
+			end
+
+			local var_438_3 = 0.141414597630501
+
+			if var_438_1 <= arg_435_1.time_ and arg_435_1.time_ < var_438_1 + var_438_3 then
+				local var_438_4 = (arg_435_1.time_ - var_438_1) / var_438_3
+				local var_438_5 = manager.ui.mainCamera:GetComponent("CameraExtension")
+
+				if var_438_5 then
+					var_438_5.dofType = UnityEngine.Pipelines.SimPipeline.DepthOfFieldType.Disabled
+					var_438_5.radialBlurScale = Mathf.Lerp(0, 0, var_438_4)
+					var_438_5.radialBlurGradient = Mathf.Lerp(0, 0, var_438_4)
+					var_438_5.radialBlurIntensity = Mathf.Lerp(0, 0, var_438_4)
+				end
+			end
+
+			if arg_435_1.time_ >= var_438_1 + var_438_3 and arg_435_1.time_ < var_438_1 + var_438_3 + arg_438_0 then
+				local var_438_6 = manager.ui.mainCamera:GetComponent("CameraExtension")
+
+				if var_438_6 then
+					var_438_6.dofType = UnityEngine.Pipelines.SimPipeline.DepthOfFieldType.Disabled
+					var_438_6.radialBlurScale = 0
+					var_438_6.radialBlurGradient = 0
+					var_438_6.radialBlurIntensity = 0
+				end
+			end
+
+			local var_438_7 = 0
+			local var_438_8 = 0.55
+
+			if var_438_7 < arg_435_1.time_ and arg_435_1.time_ <= var_438_7 + arg_438_0 then
 				arg_435_1.talkMaxDuration = 0
 				arg_435_1.dialogCg_.alpha = 1
 
 				arg_435_1.dialog_:SetActive(true)
 				SetActive(arg_435_1.leftNameGo_, true)
 
-				local var_438_2 = arg_435_1:FormatText(StoryNameCfg[67].name)
+				local var_438_9 = arg_435_1:FormatText(StoryNameCfg[67].name)
 
-				arg_435_1.leftNameTxt_.text = var_438_2
+				arg_435_1.leftNameTxt_.text = var_438_9
 
 				UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_435_1.leftNameTxt_.transform)
 
@@ -16685,43 +16728,43 @@
 				arg_435_1.keyicon_.color = Color.New(1, 1, 1)
 				arg_435_1.icon_.color = Color.New(1, 1, 1)
 
-				local var_438_3 = arg_435_1:GetWordFromCfg(321371103)
-				local var_438_4 = arg_435_1:FormatText(var_438_3.content)
+				local var_438_10 = arg_435_1:GetWordFromCfg(321371103)
+				local var_438_11 = arg_435_1:FormatText(var_438_10.content)
 
-				arg_435_1.text_.text = var_438_4
+				arg_435_1.text_.text = var_438_11
 
 				LuaForUtil.ClearLinePrefixSymbol(arg_435_1.text_)
 
-				local var_438_5 = 22
-				local var_438_6 = utf8.len(var_438_4)
-				local var_438_7 = var_438_5 <= 0 and var_438_1 or var_438_1 * (var_438_6 / var_438_5)
+				local var_438_12 = 22
+				local var_438_13 = utf8.len(var_438_11)
+				local var_438_14 = var_438_12 <= 0 and var_438_8 or var_438_8 * (var_438_13 / var_438_12)
 
-				if var_438_7 > 0 and var_438_1 < var_438_7 then
-					arg_435_1.talkMaxDuration = var_438_7
+				if var_438_14 > 0 and var_438_8 < var_438_14 then
+					arg_435_1.talkMaxDuration = var_438_14
 
-					if var_438_7 + var_438_0 > arg_435_1.duration_ then
-						arg_435_1.duration_ = var_438_7 + var_438_0
+					if var_438_14 + var_438_7 > arg_435_1.duration_ then
+						arg_435_1.duration_ = var_438_14 + var_438_7
 					end
 				end
 
-				arg_435_1.text_.text = var_438_4
+				arg_435_1.text_.text = var_438_11
 				arg_435_1.typewritter.percent = 0
 
 				arg_435_1.typewritter:SetDirty()
 				arg_435_1:ShowNextGo(false)
 
 				if manager.audio:GetVoiceLength("story_v_out_321371", "321371103", "story_v_out_321371.awb") ~= 0 then
-					local var_438_8 = manager.audio:GetVoiceLength("story_v_out_321371", "321371103", "story_v_out_321371.awb") / 1000
+					local var_438_15 = manager.audio:GetVoiceLength("story_v_out_321371", "321371103", "story_v_out_321371.awb") / 1000
 
-					if var_438_8 + var_438_0 > arg_435_1.duration_ then
-						arg_435_1.duration_ = var_438_8 + var_438_0
+					if var_438_15 + var_438_7 > arg_435_1.duration_ then
+						arg_435_1.duration_ = var_438_15 + var_438_7
 					end
 
-					if var_438_3.prefab_name ~= "" and arg_435_1.actors_[var_438_3.prefab_name] ~= nil then
-						local var_438_9 = LuaForUtil.PlayVoiceWithCriLipsync(arg_435_1.actors_[var_438_3.prefab_name].transform, "story_v_out_321371", "321371103", "story_v_out_321371.awb")
+					if var_438_10.prefab_name ~= "" and arg_435_1.actors_[var_438_10.prefab_name] ~= nil then
+						local var_438_16 = LuaForUtil.PlayVoiceWithCriLipsync(arg_435_1.actors_[var_438_10.prefab_name].transform, "story_v_out_321371", "321371103", "story_v_out_321371.awb")
 
-						arg_435_1:RecordAudio("321371103", var_438_9)
-						arg_435_1:RecordAudio("321371103", var_438_9)
+						arg_435_1:RecordAudio("321371103", var_438_16)
+						arg_435_1:RecordAudio("321371103", var_438_16)
 					else
 						arg_435_1:AudioAction("play", "voice", "story_v_out_321371", "321371103", "story_v_out_321371.awb")
 					end
@@ -16732,15 +16775,15 @@
 				arg_435_1:RecordContent(arg_435_1.text_.text)
 			end
 
-			local var_438_10 = math.max(var_438_1, arg_435_1.talkMaxDuration)
+			local var_438_17 = math.max(var_438_8, arg_435_1.talkMaxDuration)
 
-			if var_438_0 <= arg_435_1.time_ and arg_435_1.time_ < var_438_0 + var_438_10 then
-				arg_435_1.typewritter.percent = (arg_435_1.time_ - var_438_0) / var_438_10
+			if var_438_7 <= arg_435_1.time_ and arg_435_1.time_ < var_438_7 + var_438_17 then
+				arg_435_1.typewritter.percent = (arg_435_1.time_ - var_438_7) / var_438_17
 
 				arg_435_1.typewritter:SetDirty()
 			end
 
-			if arg_435_1.time_ >= var_438_0 + var_438_10 and arg_435_1.time_ < var_438_0 + var_438_10 + arg_438_0 then
+			if arg_435_1.time_ >= var_438_7 + var_438_17 and arg_435_1.time_ < var_438_7 + var_438_17 + arg_438_0 then
 				arg_435_1.typewritter.percent = 1
 
 				arg_435_1.typewritter:SetDirty()
@@ -17246,7 +17289,7 @@
 			local var_454_14 = 0
 
 			if var_454_14 < arg_451_1.time_ and arg_451_1.time_ <= var_454_14 + arg_454_0 then
-				arg_451_1:PlayTimeline("1111ui_story", "StoryTimeline/CharAction/public_expression/public_lipsync/publicface3201cva", "EmotionTimelineAnimator")
+				arg_451_1:PlayTimeline("1111ui_story", "StoryTimeline/CharAction/public_expression/expr_shengqiA", "EmotionTimelineAnimator")
 			end
 
 			local var_454_15 = 0

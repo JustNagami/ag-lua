@@ -18005,6 +18005,210 @@
 			0
 		}
 	},
+	[18101] = {
+		name = "重火咆哮",
+		affix_buff_id = 18101,
+		max_level = 1,
+		extra_description = "AFFIX_18101",
+		id = 18101,
+		description = {
+			700018101
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[18102] = {
+		name = "神谕增幅",
+		affix_buff_id = 18102,
+		max_level = 1,
+		extra_description = "AFFIX_18102",
+		id = 18102,
+		description = {
+			700018102
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[18103] = {
+		name = "受选者",
+		affix_buff_id = 18103,
+		max_level = 1,
+		extra_description = "AFFIX_18103",
+		id = 18103,
+		description = {
+			700018103
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[18104] = {
+		name = "闪避反击",
+		affix_buff_id = 18104,
+		max_level = 1,
+		extra_description = "AFFIX_18104",
+		id = 18104,
+		description = {
+			700018104
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[18105] = {
+		name = "坚韧之心",
+		affix_buff_id = 18105,
+		max_level = 1,
+		extra_description = "AFFIX_18105",
+		id = 18105,
+		description = {
+			700018105
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[18106] = {
+		name = "战术收割",
+		affix_buff_id = 18106,
+		max_level = 1,
+		extra_description = "AFFIX_18106",
+		id = 18106,
+		description = {
+			700018106
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[18201] = {
+		name = "冰华共鸣",
+		affix_buff_id = 18201,
+		max_level = 1,
+		extra_description = "AFFIX_18201",
+		id = 18201,
+		description = {
+			700018201
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[18202] = {
+		name = "神谕祝福",
+		affix_buff_id = 18202,
+		max_level = 1,
+		extra_description = "AFFIX_18202",
+		id = 18202,
+		description = {
+			700018202
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[18203] = {
+		name = "重火力",
+		affix_buff_id = 18203,
+		max_level = 1,
+		extra_description = "AFFIX_18203",
+		id = 18203,
+		description = {
+			700018203
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[18204] = {
+		name = "全力攻击",
+		affix_buff_id = 18204,
+		max_level = 1,
+		extra_description = "AFFIX_18204",
+		id = 18204,
+		description = {
+			700018204
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[18205] = {
+		name = "复仇捕食",
+		affix_buff_id = 18205,
+		max_level = 1,
+		extra_description = "AFFIX_18205",
+		id = 18205,
+		description = {
+			700018205
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
+	[18206] = {
+		name = "灵活调度",
+		affix_buff_id = 18206,
+		max_level = 1,
+		extra_description = "AFFIX_18206",
+		id = 18206,
+		description = {
+			700018206
+		},
+		buffid = {},
+		base = {
+			0
+		},
+		factor = {
+			0
+		}
+	},
 	[80000] = {
 		name = "物理属性修正者攻击提升",
 		affix_buff_id = 80000,
@@ -28660,6 +28864,18 @@
 		9967,
 		9968,
 		9969,
+		18101,
+		18102,
+		18103,
+		18104,
+		18105,
+		18106,
+		18201,
+		18202,
+		18203,
+		18204,
+		18205,
+		18206,
 		80000,
 		80010,
 		80020,

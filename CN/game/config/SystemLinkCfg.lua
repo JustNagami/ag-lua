@@ -3466,6 +3466,91 @@
 			"isPrefab"
 		}
 	},
+	[18001] = {
+		text_display_1 = "获取",
+		text_display_2 = "限时活动",
+		text_invalid = 0,
+		need_hide = 1,
+		asset_pend_key = "",
+		link = "/activityMain_4_2",
+		pagename = "",
+		activity_id = 341001,
+		params = "",
+		id = 18001,
+		icon = "icon_access_site_white",
+		system_id = 10301,
+		paramName = {
+			"activityID",
+			"subActivityID"
+		}
+	},
+	[18002] = {
+		text_display_1 = "",
+		text_display_2 = "",
+		text_invalid = 0,
+		need_hide = 0,
+		asset_pend_key = "",
+		link = "/activityShop",
+		pagename = "",
+		activity_id = 0,
+		params = "",
+		id = 18002,
+		icon = "",
+		system_id = 0,
+		paramName = {
+			"shopId",
+			"showShops"
+		}
+	},
+	[18003] = {
+		text_display_1 = "",
+		text_display_2 = "",
+		text_invalid = 0,
+		need_hide = 0,
+		asset_pend_key = "",
+		link = "/civilizationGameMainView",
+		pagename = "",
+		activity_id = 343731,
+		params = "",
+		id = 18003,
+		icon = "",
+		system_id = 0,
+		paramName = ""
+	},
+	[18004] = {
+		text_display_1 = "",
+		text_display_2 = "",
+		text_invalid = 0,
+		need_hide = 0,
+		asset_pend_key = "",
+		link = "/goldMinerSelectLevelView",
+		pagename = "",
+		activity_id = 343691,
+		id = 18004,
+		icon = "",
+		system_id = 0,
+		paramName = {
+			"activityID"
+		},
+		params = {
+			343691
+		}
+	},
+	[18005] = {
+		text_display_1 = "",
+		text_display_2 = "",
+		text_invalid = 0,
+		need_hide = 0,
+		asset_pend_key = "",
+		link = "/eatGodBattleEnterView",
+		pagename = "",
+		activity_id = 343751,
+		params = "",
+		id = 18005,
+		icon = "",
+		system_id = 0,
+		paramName = ""
+	},
 	[2510] = {
 		text_display_1 = "",
 		text_display_2 = "",
@@ -4215,6 +4300,21 @@
 			1
 		}
 	},
+	[410] = {
+		text_display_1 = "获取",
+		text_display_2 = "限时卡池",
+		text_invalid = 0,
+		need_hide = 0,
+		asset_pend_key = "",
+		link = "",
+		pagename = "",
+		activity_id = 0,
+		params = "",
+		id = 410,
+		icon = "",
+		system_id = 0,
+		paramName = ""
+	},
 	all = {
 		101,
 		202,
@@ -4410,6 +4510,11 @@
 		16101,
 		16121,
 		16122,
+		18001,
+		18002,
+		18003,
+		18004,
+		18005,
 		2510,
 		2511,
 		2512,
@@ -4453,6 +4558,7 @@
 		2901,
 		408,
 		409,
-		10001
+		10001,
+		410
 	}
 }

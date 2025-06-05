@@ -115,6 +115,7 @@ function var_0_0.OnEnter(arg_9_0)
 	arg_9_0.musicName_.text = IdolStageMusicCfg[arg_9_0.music].music_name
 	DIYBridge.music = arg_9_0.music
 
+	manager.audio:StopBGM()
 	arg_9_0:InitActionList()
 	arg_9_0:InitActionSlots(arg_9_0.music)
 	arg_9_0:ResetTimelineCursor()

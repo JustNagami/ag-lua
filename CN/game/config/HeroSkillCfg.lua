@@ -573,6 +573,213 @@
 			0
 		}
 	},
+	[1045101] = {
+		name = "侵蚀撕扯",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "处于地面进行四段攻击，造成火属性伤害，继续施放第五段普通攻击会跃向空中，处于空中时获得硬直效果，施放第五、六段普通攻击，造成火属性伤害，第五段普通攻击命中时，获得神能获得率提高。\n处于「枪械模式」时，造成火属性伤害。\n\n<color=#297DE0>神能：</color>处于「斩击模式」时，普通攻击命中后会获得神能。",
+		MaxUseCount = 0,
+		id = 1045101,
+		EnergyChange = 0,
+		desc = {
+			101045101
+		},
+		element_type = {
+			4
+		},
+		abilities = {
+			1045101
+		}
+	},
+	[1045201] = {
+		name = "斩命掠袭",
+		cd = 6000,
+		strengthen_desc = "",
+		simpleDesc = "处于地面时，造成火属性伤害，施放后衔接普通攻击，会从普通攻击第四段开始攻击。\n处于空中时，造成火属性伤害，命中时若拥有通过普通攻击获得的神能获得率提高效果，则神能获得率额外提高，施放后会自动衔接普通攻击第六段。\n「爆裂喷发」：消耗神能，发射子弹，造成火属性伤害。",
+		MaxUseCount = 0,
+		id = 1045201,
+		EnergyChange = 0,
+		desc = {
+			101045201
+		},
+		element_type = {
+			4
+		},
+		abilities = {
+			1045201,
+			1045062
+		}
+	},
+	[1045202] = {
+		name = "噬身怒涛",
+		cd = 3000,
+		strengthen_desc = "",
+		simpleDesc = "处于地面时，神机切换为捕食形态，造成火属性伤害，获得<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>点数。\n处于空中时，神能为满时才可施放，消耗全部神能，神机切换为捕食形态，造成火属性伤害，获得<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>点数。\n移动闪避时可以衔接施放，神机切换为捕食形态，造成火属性伤害，根据冲击距离，获得<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>点数。\n每次<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>为满时，<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>提高；根据自身<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>等级，自身攻击力提高。\n\n神机捕食形态命中特殊的敌人时，会获得不同的子弹；进入「枪械模式」时，该技能会替换为「荒神枪弹」，造成不同的伤害：\n鬼面巨尾：造成物理属性伤害；\n金刚：造成风属性伤害；\n天父·狄阿乌斯：造成雷属性伤害。",
+		MaxUseCount = 0,
+		id = 1045202,
+		EnergyChange = 0,
+		desc = {
+			101045202
+		},
+		element_type = {
+			4
+		},
+		abilities = {
+			1045202
+		}
+	},
+	[1045203] = {
+		name = "贯星脉冲",
+		cd = 500,
+		strengthen_desc = "",
+		simpleDesc = "处于地面的起手动作<material=underline c=#FFFFFF h=2 event=terminology args=(104504)>「归零架势」</material>会打断处于地面的普通攻击、技能、闪避的动作，并且不会打断普通攻击前三段的连段。\n<material=underline c=#FFFFFF h=2 event=terminology args=(104504)>「归零架势」</material>会进行防御，成功格挡攻击时，获得<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>点数，获得无敌效果。\n施放<material=underline c=#FFFFFF h=2 event=terminology args=(104504)>「归零架势」</material>后的短暂时间内，「斩命掠袭」替换为「IE刃炮连爆」，「噬身怒涛」替换为「IE炼狱劫火」；<material=underline c=#FFFFFF h=2 event=terminology args=(104504)>「归零架势」</material>可以衔接施放「IE刃炮连爆」，<material=underline c=#FFFFFF h=2 event=terminology args=(104504)>「归零架势」</material>、「IE刃炮连爆」可以衔接施放「IE炼狱劫火」。\n「IE刃炮连爆」：造成火属性伤害，施放时技能伤害提高。\n「IE炼狱劫火」：消耗全部神能，造成火属性伤害，施放时获得<material=underline c=#FFFFFF h=2 event=terminology args=(104503)>「神机受控」</material>状态；该技能消耗神能，会心伤害提高，获得该会心伤害提高效果时，根据<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>的等级，该会心伤害额外提高。\n<material=underline c=#FFFFFF h=2 event=terminology args=(104503)>「神机受控」</material>：根据获得该状态时的<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>，若<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>不为三级，则间歇获得<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>点数，若<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>为三级，则间歇消耗<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>点数；<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>提升或降低时退出该状态。",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1045203,
+		EnergyChange = 0,
+		desc = {
+			101045203
+		},
+		element_type = {
+			4
+		}
+	},
+	[1045209] = {
+		name = "神杀·屠灭绝响",
+		cd = 20000,
+		strengthen_desc = "",
+		simpleDesc = "造成火属性伤害；施放时自身火属性伤害提高；若处于「枪械模式」则退出「枪械模式」。\n\n自身或者队友触发零时空间时、自身获得<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>时，获得奥义值。",
+		MaxUseCount = 0,
+		id = 1045209,
+		EnergyChange = 0,
+		desc = {
+			101045209
+		},
+		element_type = {
+			4
+		},
+		abilities = {
+			1045209
+		}
+	},
+	[1045305] = {
+		name = "灵动架势",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "处于「斩击模式」，非移动闪避时，会进行防御，成功格挡攻击时，获得<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>点数，获得无敌效果。\n处于「斩击模式」，长按移动闪避时，进入「枪械模式」：获得硬直效果，普通攻击改变攻击模式，「斩命掠袭」替换为「爆裂喷发」，「贯星脉冲」替换为「斩击模式」、可以通过该替换技能退出「枪械模式」。\n处于「斩击模式」的移动闪避、处于「枪械模式」的闪避，可以闪避敌人攻击，极限闪避会触发闪避效果。\n闪避效果：零时空间。",
+		MaxUseCount = 2,
+		abilities = "",
+		id = 1045305,
+		EnergyChange = 0,
+		desc = {
+			101045305
+		},
+		element_type = {
+			4
+		}
+	},
+	[1046101] = {
+		name = "迅捷收割",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "造成冰属性伤害。\n自身造成会心一定次数后，获得<material=underline c=#FFFFFF h=2 event=terminology args=(104603)>「血点」</material>标记。\n处于地面施放普通攻击时可长按消耗<material=underline c=#FFFFFF h=2 event=terminology args=(104603)>「血点」</material>标记施放强化普通攻击「血怒吞噬」。\n「血怒吞噬」：持续对自身和敌人造成伤害，造成冰属性伤害，每次命中后，对自身造成的伤害增加，对敌人伤害提高，攻击最后一段会产生爆炸攻击，造成冰属性伤害，并根据当前损失的生命值，爆炸攻击命中瞬间伤害提高、命中后恢复生命值；该攻击不会打断普通攻击的连段。\n\n处于「枪械模式」时，造成冰属性伤害。\n\n处于空中时，造成冰属性伤害，之后会自动衔接「血之迅击」的下落攻击。\n\n<color=#297DE0>神能：</color>不处于「枪械模式」时，处于地面的普通攻击命中后会获得神能。",
+		MaxUseCount = 0,
+		id = 1046101,
+		EnergyChange = 0,
+		desc = {
+			101046101
+		},
+		element_type = {
+			6
+		},
+		abilities = {
+			1046101
+		}
+	},
+	[1046201] = {
+		name = "血之迅击",
+		cd = 6000,
+		strengthen_desc = "",
+		simpleDesc = "处于地面时，造成冰属性伤害，攻击时会跃向空中，并自动衔接下落攻击，造成冰属性伤害，处于空中时获得硬直效果；处于空中时，可提前点击施放，立即衔接下落攻击。\n「回旋投掷」：消耗神能，造成冰属性伤害。",
+		MaxUseCount = 0,
+		id = 1046201,
+		EnergyChange = 0,
+		desc = {
+			101046201
+		},
+		element_type = {
+			6
+		},
+		abilities = {
+			1046201
+		}
+	},
+	[1046202] = {
+		name = "血之觉醒",
+		cd = 2000,
+		strengthen_desc = "",
+		simpleDesc = "出场时，自身会心率提高不低于一定值时，会心率降低，根据会心率降低，<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>获得率提高。\n消耗全部神能进入积蓄状态，根据消耗的神能，获得<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>点数；达到积蓄时间上限会进行捕食攻击，积蓄时可再次点击立即进行捕食攻击，造成冰属性伤害，根据积蓄时间，命中后额外获得<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>点数；施放期间获得硬直效果，受到的伤害降低。\n每次<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>为满时，<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>提高；根据<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>的等级，自身会心率提高。\n<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>、<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>为满时，施放「枪械模式」的普通攻击时，会进入<material=underline c=#FFFFFF h=2 event=terminology args=(104604)>「爆发状态」</material>。\n<material=underline c=#FFFFFF h=2 event=terminology args=(104604)>「爆发状态」</material>：进入时，消耗<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>，造成冰属性伤害，之后间歇消耗<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>点数，自身根据<material=underline c=#FFFFFF h=2 event=terminology args=(104602)>「爆发阶段」</material>的等级的增益效果提高。\n\n神机捕食形态命中特殊的敌人时，会获得不同的子弹；进入「枪械模式」时，该技能会替换为「荒神枪弹」，造成不同的伤害：\n鬼面巨尾：造成物理属性伤害；\n金刚：造成风属性伤害；\n天父·狄阿乌斯：造成雷属性伤害。\n\n处于空中时，消耗<material=underline c=#FFFFFF h=2 event=terminology args=(104603)>「血点」</material>标记，造成冰属性伤害。",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1046202,
+		EnergyChange = 0,
+		desc = {
+			101046202
+		},
+		element_type = {
+			6
+		}
+	},
+	[1046203] = {
+		name = "血之枪弹",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "处于地面时，进入「枪械模式」，获得硬直效果，普通攻击改变攻击模式，「血之迅击」替换为「回旋投掷」，「血之觉醒」替换为「荒神枪弹」，「血之枪弹」替换为「形态变化」、可以通过该替换技能退出「枪械模式」。\n\n处于空中时，造成冰属性伤害；施放时，重置「血之迅击」的剩余冷却时间。",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1046203,
+		EnergyChange = 0,
+		desc = {
+			101046203
+		},
+		element_type = {
+			6
+		}
+	},
+	[1046209] = {
+		name = "神杀·血末终舞",
+		cd = 20000,
+		strengthen_desc = "",
+		simpleDesc = "造成冰属性伤害；施放时自身冰属性伤害提高；若处于「枪械模式」则退出「枪械模式」。\n\n自身或者队友触发零时空间时，获得奥义值。",
+		MaxUseCount = 0,
+		id = 1046209,
+		EnergyChange = 0,
+		desc = {
+			101046209
+		},
+		element_type = {
+			6
+		},
+		abilities = {
+			1046072
+		}
+	},
+	[1046305] = {
+		name = "灵巧身姿",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "非移动闪避时，会进行防御，成功格挡攻击时，获得<material=underline c=#FFFFFF h=2 event=terminology args=(104601)>「爆发指数」</material>点数。\n闪避效果：零时空间。",
+		MaxUseCount = 2,
+		abilities = "",
+		id = 1046305,
+		EnergyChange = 0,
+		desc = {
+			101046305
+		},
+		element_type = {
+			6
+		}
+	},
 	[1048101] = {
 		name = "迅捷射击",
 		cd = 0,
@@ -6819,13 +7026,18 @@
 	[1072101] = {
 		name = "天禄奇术",
 		cd = 0,
-		strengthen_desc = "",
 		simpleDesc = "对敌人进行最多五段攻击，造成风属性伤害。",
 		MaxUseCount = 0,
 		id = 1072101,
 		EnergyChange = 0,
 		desc = {
 			101072101
+		},
+		strengthen_desc = {
+			{
+				107221,
+				21107210121
+			}
 		},
 		element_type = {
 			2
@@ -6837,13 +7049,18 @@
 	[1072201] = {
 		name = "运势如风",
 		cd = 8000,
-		strengthen_desc = "",
 		simpleDesc = "快速滑行后迅猛一击，造成风属性伤害。",
 		MaxUseCount = 0,
 		id = 1072201,
 		EnergyChange = 0,
 		desc = {
 			101072201
+		},
+		strengthen_desc = {
+			{
+				107222,
+				21107220122
+			}
 		},
 		element_type = {
 			2
@@ -6855,13 +7072,18 @@
 	[1072202] = {
 		name = "算筹如刀",
 		cd = 16000,
-		strengthen_desc = "",
 		simpleDesc = "掷出武器对敌人进行旋转攻击，造成风属性伤害。",
 		MaxUseCount = 0,
 		id = 1072202,
 		EnergyChange = 0,
 		desc = {
 			101072202
+		},
+		strengthen_desc = {
+			{
+				107223,
+				21107220223
+			}
 		},
 		element_type = {
 			2
@@ -6873,13 +7095,18 @@
 	[1072203] = {
 		name = "财货如雨",
 		cd = 9000,
-		strengthen_desc = "",
 		simpleDesc = "施放普通攻击最后一段、一、二技能后的短暂时间内，该技能会替换为「辟邪奇术」，并可以进行衔接施放；「辟邪奇术」在上述不同时机进行衔接施放时，有不同的段数，获得不同的<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>点数。\n\n印记为满时，消耗全部<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>，跃入空中攻击敌人，根据消耗的<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>点数对敌人造成风属性伤害。\n施放「财货如雨」时全队伍风属性伤害提高，根据消耗的<material=underline c=#FFFFFF h=2 event=terminology args=(107201)>「财运」</material>点数，造成不同的风属性伤害。\n\n<color=#297DE0>印记：</color>施放「辟邪奇术」最后一段命中后，获得印记。",
 		MaxUseCount = 0,
 		id = 1072203,
 		EnergyChange = -4,
 		desc = {
 			101072203
+		},
+		strengthen_desc = {
+			{
+				107224,
+				21107220324
+			}
 		},
 		element_type = {
 			2
@@ -10479,6 +10706,20 @@
 			101089208
 		}
 	},
+	[1045208] = {
+		element_type = "",
+		name = "联结爆发",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1045208,
+		EnergyChange = 0,
+		desc = {
+			101045208
+		}
+	},
 	[1248208] = {
 		element_type = "",
 		name = "煌闪神威",
@@ -10591,6 +10832,20 @@
 			101211208
 		}
 	},
+	[1089281] = {
+		element_type = "",
+		name = "烈能共鸣",
+		cd = 0,
+		strengthen_desc = "",
+		simpleDesc = "",
+		MaxUseCount = 0,
+		abilities = "",
+		id = 1089281,
+		EnergyChange = 0,
+		desc = {
+			101089281
+		}
+	},
 	all = {
 		1050101,
 		1050201,
@@ -10620,6 +10875,18 @@
 		1066231,
 		1066209,
 		1066305,
+		1045101,
+		1045201,
+		1045202,
+		1045203,
+		1045209,
+		1045305,
+		1046101,
+		1046201,
+		1046202,
+		1046203,
+		1046209,
+		1046305,
 		1048101,
 		1048201,
 		1048211,
@@ -11152,6 +11419,7 @@
 		1024281,
 		1095281,
 		1089208,
+		1045208,
 		1248208,
 		1133208,
 		1059208,
@@ -11159,6 +11427,7 @@
 		1012208,
 		1073208,
 		1248281,
-		1211208
+		1211208,
+		1089281
 	}
 }

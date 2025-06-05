@@ -309,4 +309,38 @@ function var_0_0.GetNextRefreshTimestamp(arg_25_0)
 	return var_0_1.nextRefreshTimestamp
 end
 
+function var_0_0.GetPassportType(arg_26_0)
+	if arg_26_0:GetId() == PassportConst.VSN_42_PASSPORT_ID then
+		return PassportConst.PASSPORT_ALL_TYPE.VSN_42
+	end
+
+	return PassportConst.PASSPORT_ALL_TYPE.DEFAULT
+end
+
+function var_0_0.HasDiscount(arg_27_0)
+	local var_27_0 = PassportData:GetPayLevel()
+
+	if var_27_0 >= PassportConst.PASSPORT_USER_LEVEL.FULL_LEVEL then
+		return false, nil
+	end
+
+	local var_27_1 = arg_27_0:GetPassportType()
+
+	if var_27_1 == PassportConst.PASSPORT_ALL_TYPE.VSN_42 then
+		return true, "ACTIVITY_COLLAB_BP_DISCOUNT_TIPS"
+	end
+
+	local var_27_2 = PassportConst.PASSPORT_ALL_PAY_ID[var_27_1][PassportConst.PASSPORT_USER_TYPE.RETURN]
+
+	if var_27_0 <= PassportConst.PASSPORT_USER_LEVEL.NOT_BUY then
+		if RegressionDataNew:CheckIsCanBuyPassportPayID(var_27_2[1]) or RegressionDataNew:CheckIsCanBuyPassportPayID(var_27_2[2]) then
+			return true, nil
+		end
+	elseif var_27_0 <= PassportConst.PASSPORT_USER_LEVEL.BASE_LEVEL and RegressionDataNew:CheckIsCanBuyPassportPayID(var_27_2[3]) then
+		return true, nil
+	end
+
+	return false, nil
+end
+
 return var_0_0

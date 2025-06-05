@@ -134,6 +134,9 @@ function var_0_0.GetResidentActProgress(arg_10_0)
 	elseif arg_10_0 == ActivityConst.ACTIVITY_QUANZHOU_ENTRY then
 		var_10_0, var_10_1 = QWorldBookletTools.GetNdLevelInfo()
 		var_10_2 = string.format("%s<size=60>/%s</size>", var_10_0, var_10_1)
+	elseif arg_10_0 == ActivityConst.ACTIVITY_OSIRIS_PLAY_GAME then
+		var_10_1 = #ActivityPointRewardCfg.get_id_list_by_activity_id[arg_10_0]
+		var_10_0 = OsirisPlayGameData:GetNum()
 	end
 
 	return var_10_0, var_10_1, var_10_2

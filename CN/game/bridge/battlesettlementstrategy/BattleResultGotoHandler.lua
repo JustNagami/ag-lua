@@ -11,7 +11,7 @@ StageStrategyType = {
 	GotoRaceTrialStage = "GotoRaceTrialStage",
 	GotoSoloSurviveStage = "GotoSoloSurviveStage",
 	GotoStage = "GotoStage",
-	GotoSequentialBattleStage = "GotoSequentialBattleStage",
+	GotoEatGodStage = "GotoEatGodStage",
 	GotoActivitySwimsuitStage = "GotoActivitySwimsuitStage",
 	GotoSlayerStage = "GotoSlayerStage",
 	GotoEquipSeizureScoreStage = "GotoEquipSeizureScoreStage",
@@ -31,6 +31,7 @@ StageStrategyType = {
 	GotoDodgeBarrageStage = "GotoDodgeBarrageStage",
 	GotoAbyssStage = "GotoAbyssStage",
 	GotoOsirisPlayGameStage = "GotoOsirisPlayGameStage",
+	GotoSequentialBattleStage = "GotoSequentialBattleStage",
 	GotoActivityWorldBoss = "GotoActivityWorldBoss",
 	GotoPushSnowBallSingleBattleStage = "GotoPushSnowBallSingleBattleStage",
 	GotoSoloChallengeStage = "GotoSoloChallengeStage",
@@ -114,7 +115,8 @@ var_0_0.CustomStageStrategy = {
 	[BattleConst.STAGE_TYPE_NEW.SKULD] = StageStrategyType.GotoSkuldStage,
 	[BattleConst.STAGE_TYPE_NEW.SEA_WARFARE] = StageStrategyType.GotoSeaWarfareStage,
 	[BattleConst.STAGE_TYPE_NEW.SAND_PLAY] = StageStrategyType.GotoSandPlayStage,
-	[BattleConst.STAGE_TYPE_NEW.OSIRIS_PLAY_GAME] = StageStrategyType.GotoOsirisPlayGameStage
+	[BattleConst.STAGE_TYPE_NEW.OSIRIS_PLAY_GAME] = StageStrategyType.GotoOsirisPlayGameStage,
+	[BattleConst.STAGE_TYPE_NEW.GOD_EATER_BATTLE] = StageStrategyType.GotoEatGodStage
 }
 
 function var_0_0.Init(arg_1_0)

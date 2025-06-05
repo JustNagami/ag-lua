@@ -923,6 +923,24 @@
 			7507
 		}
 	},
+	[340011] = {
+		cost_item_list = "",
+		gift_item_list = "",
+		type = 0,
+		id = 340011,
+		title = "限时签到",
+		ui_path = "Widget/Version/V4_2_GodEaterUI/V4_2_GodEaterUI_SevenDaySign/V4_2_GodEaterUI_SevenDaySignUI",
+		limit_level = 0,
+		config_list = {
+			7501,
+			7502,
+			7503,
+			7504,
+			7505,
+			7506,
+			7507
+		}
+	},
 	all = {
 		1,
 		60011,
@@ -971,6 +989,7 @@
 		323401,
 		320012,
 		323861,
-		330011
+		330011,
+		340011
 	}
 }

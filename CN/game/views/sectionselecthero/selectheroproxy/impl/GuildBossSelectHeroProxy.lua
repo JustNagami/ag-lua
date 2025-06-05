@@ -211,6 +211,7 @@ function var_0_1.LaunchBattle(arg_13_0, arg_13_1)
 			end)
 		end
 	else
+		arg_13_1:InitChipData()
 		BattleController.GetInstance():LaunchBattle(arg_13_1)
 	end
 end

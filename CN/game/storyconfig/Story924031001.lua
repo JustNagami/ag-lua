@@ -6980,7 +6980,7 @@
 				local var_187_17 = "play"
 				local var_187_18 = "effect"
 
-				arg_184_1:AudioAction(var_187_17, var_187_18, "se_story_141", "se_story_141_watermagic", "")
+				arg_184_1:AudioAction(var_187_17, var_187_18, "se_story_141", "se_story_141_water magic", "")
 			end
 
 			local var_187_19 = 0

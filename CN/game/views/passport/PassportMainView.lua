@@ -180,6 +180,10 @@ function var_0_0.UpdateView(arg_20_0)
 	SetActive(arg_20_0.viewBtn_.gameObject, var_20_4 >= 17)
 	UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(arg_20_0.bglvTransform_)
 	ActivityNewbieTools.RefreshNewBPRecharge(arg_20_0.bpNewController_)
+
+	local var_20_5 = PassportData:HasDiscount()
+
+	SetActive(arg_20_0.discountHighlight_, var_20_5)
 end
 
 function var_0_0.UpdateNextBonus(arg_21_0, arg_21_1)

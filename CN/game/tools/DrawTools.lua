@@ -318,8 +318,12 @@ function var_0_0.GoToSelectUpHeroView(arg_18_0, arg_18_1, arg_18_2, arg_18_3)
 			poolId = arg_18_1,
 			heroIdList = var_18_0.optional_detail
 		})
-	elseif var_18_0.pool_selected_type == 9 then
+	elseif var_18_0.pool_selected_type == 9 and arg_18_1 == DrawConst.WEAPON_SERVANT_POOL_ID then
 		gameContext:Go("/drawSelect", {
+			poolID = arg_18_1
+		})
+	elseif var_18_0.pool_selected_type == 9 and arg_18_1 ~= DrawConst.WEAPON_SERVANT_POOL_ID then
+		gameContext:Go("/drawGodEaterSelect", {
 			poolID = arg_18_1
 		})
 	elseif var_18_0.pool_selected_type == 1 then
@@ -332,6 +336,75 @@ function var_0_0.GoToSelectUpHeroView(arg_18_0, arg_18_1, arg_18_2, arg_18_3)
 			heroIdList = var_18_0.optional_detail
 		})
 	end
+end
+
+function var_0_0.GetDrawBonusActivityIDList()
+	local var_19_0 = {}
+
+	for iter_19_0, iter_19_1 in ipairs(ActivityDrawBonusCfg.all) do
+		if ActivityData:GetActivityIsOpen(iter_19_1) then
+			table.insert(var_19_0, iter_19_1)
+		end
+	end
+
+	return var_19_0
+end
+
+function var_0_0.GetDrawPieceActivityIDList()
+	local var_20_0 = {}
+
+	for iter_20_0, iter_20_1 in ipairs(ActivityDrawPieceCfg.all) do
+		if ActivityData:GetActivityIsOpen(iter_20_1) then
+			table.insert(var_20_0, iter_20_1)
+		end
+	end
+
+	return var_20_0
+end
+
+function var_0_0.HasDrawBonusPoolList(arg_21_0)
+	local var_21_0 = var_0_0.GetDrawBonusActivityIDList()
+
+	for iter_21_0, iter_21_1 in ipairs(arg_21_0) do
+		local var_21_1 = var_0_0.HasDrawBonusPoolID(var_21_0, iter_21_1)
+
+		if var_21_1 then
+			return var_21_1
+		end
+	end
+end
+
+function var_0_0.HasDrawBonusPoolID(arg_22_0, arg_22_1)
+	for iter_22_0, iter_22_1 in ipairs(arg_22_0) do
+		local var_22_0 = ActivityDrawBonusCfg[iter_22_1]
+
+		if table.keyof(var_22_0.draw_pool_id, arg_22_1) then
+			return iter_22_1
+		end
+	end
+
+	return nil
+end
+
+function var_0_0.HasDrawPiecePoolID(arg_23_0, arg_23_1)
+	for iter_23_0, iter_23_1 in ipairs(arg_23_0) do
+		local var_23_0 = ActivityDrawPieceCfg[iter_23_1]
+
+		if table.keyof(var_23_0.draw_pool_id, arg_23_1) then
+			return iter_23_1
+		end
+	end
+
+	return nil
+end
+
+function var_0_0.GetBonusCnt(arg_24_0)
+	local var_24_0 = ActivityDrawBonusCfg[arg_24_0]
+	local var_24_1 = var_24_0.reward
+	local var_24_2 = var_24_0.need
+	local var_24_3 = DrawData:GetPoolBonus(arg_24_0)
+
+	return math.floor(var_24_3 / var_24_2) * var_24_1[1][2]
 end
 
 return var_0_0

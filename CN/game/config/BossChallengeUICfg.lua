@@ -4884,6 +4884,40 @@
 		},
 		model_rot_limit = {}
 	},
+	[5250201] = {
+		main_name = "天父·狄阿乌斯",
+		icon = "Bgbc4045",
+		ID = 5250201,
+		custom_affix = "",
+		descripe = "",
+		appear_ani = "",
+		weakness = "",
+		boss_id_list = {
+			4045
+		},
+		model_pos = {
+			{
+				0.5,
+				-183.5,
+				-4
+			}
+		},
+		model_rot = {
+			{
+				0,
+				0,
+				0
+			}
+		},
+		model_scale = {
+			{
+				1,
+				1,
+				1
+			}
+		},
+		model_rot_limit = {}
+	},
 	all = {
 		30083009,
 		30123019,
@@ -5000,6 +5034,7 @@
 		3091010,
 		3091011,
 		3091012,
-		3091013
+		3091013,
+		5250201
 	}
 }

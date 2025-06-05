@@ -1,7 +1,7 @@
 ﻿local var_0_0 = class("ActivitySummerSwimsuitPreheatMainView", ReduxView)
 
 function var_0_0.UIName(arg_1_0)
-	return "Widget/Version/SummerUI_3_3/SummerUI_3_3_PreheatUI/SummerUI_3_3_PreheatUI"
+	return "Widget/Version/Alone_SummerUI_PreheatUI/Alone_SummerUI_PreheatUI"
 end
 
 function var_0_0.UIParent(arg_2_0)
@@ -112,17 +112,19 @@ function var_0_0.RefreshUI(arg_12_0)
 end
 
 function var_0_0.OnClickStage(arg_13_0, arg_13_1, arg_13_2)
-	if arg_13_1 > ActivitySummerSwimsuitPreheatData.GetDay(arg_13_0.activityID_) then
+	local var_13_0 = ActivitySummerSwimsuitPreheatCfg[arg_13_2]
+
+	if not ActivityData:GetActivityIsOpen(var_13_0.activity_id) then
 		return
 	end
 
-	local var_13_0 = ActivitySummerSwimsuitPreheatCfg[arg_13_2]
-	local var_13_1 = ActivitySummerSwimsuitPreheatTools.GetCfgMainActivityId(var_13_0)
-	local var_13_2 = ActivityTools.GetRedPointKey(var_13_1) .. var_13_1
-	local var_13_3 = string.format("%s_%d_%s", RedPointConst.ACTIVITY_SUMMER_SWIMSUIT_PREHEAT_STAGE, var_13_0.id, var_13_2)
+	local var_13_1 = ActivitySummerSwimsuitPreheatCfg[arg_13_2]
+	local var_13_2 = ActivitySummerSwimsuitPreheatTools.GetCfgMainActivityId(var_13_1)
+	local var_13_3 = ActivityTools.GetRedPointKey(var_13_2) .. var_13_2
+	local var_13_4 = string.format("%s_%d_%s", RedPointConst.ACTIVITY_SUMMER_SWIMSUIT_PREHEAT_STAGE, var_13_1.id, var_13_3)
 
-	ActivitySummerSwimsuitPreheatAction.BanRedPoint(var_13_1, var_13_3)
-	JumpTools.GoToSystem("activitySummerSwimsuitPreheatStage", {
+	ActivitySummerSwimsuitPreheatAction.BanRedPoint(var_13_2, var_13_4)
+	JumpTools.OpenPageByJump("activitySummerSwimsuitPreheatStage", {
 		cfgId = arg_13_2
 	})
 end
